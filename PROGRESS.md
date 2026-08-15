@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P1 — Homepage imagery** |
+| **Phase** | **P2 — Site skeleton** |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-15 |
-| **Build** | `npm run build` passing · lint 0 errors · typecheck clean |
-| **Git** | clean tree, all work committed |
-| **Next phase** | **P2 — Site skeleton** (**not started — do not begin without being asked**) |
+| **Build** | `npm run build` passing — 9 static pages · lint 0 errors · typecheck clean |
+| **Git** | clean tree, all work committed (`4c5534e`) |
+| **Next phase** | **P3 — Product detail page ⭐** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -26,7 +26,8 @@
 | — | Static export — `output: "export"`, packaged to `canton-demo.zip` | `next.config.ts` |
 | — | Brand colour system — full token set, 4 binding colour rules, button spec | `src/app/globals.css`, `shared/Button.tsx` |
 | **P0** | Foundation — git safety net, planning docs, content model | `BUILD_PLAN.md`, `PROGRESS.md`, `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts` |
-| **P1** | Homepage imagery — 11 stock photos replace the placeholder blocks | `public/images/*.jpg`, `IMAGE_CREDITS.md`, `scripts/download-homepage-images.mjs`, `shared/MediaPlaceholder.tsx`, `en-7a4ba3ba/content.ts` |
+| **P1** | Homepage imagery — 11 stock photos replace the placeholder blocks | `public/images/*.jpg`, `IMAGE_CREDITS.md`, `scripts/download-homepage-images.mjs`, `site/MediaPlaceholder.tsx`, `src/data/home.ts` |
+| **P2** | Site skeleton — chrome in the layout, components out of the clone namespace, all routes and links wired, 404 | `src/app/layout.tsx`, `src/app/{products,projects,downloads,company,contact}/page.tsx`, `src/app/not-found.tsx`, `src/components/site/**`, `src/data/home.ts` |
 
 ### P1 detail
 
@@ -69,33 +70,76 @@ identical to before the images landed.
 
 ---
 
-## Next: P2 — Site skeleton
+### P2 detail
 
-The structural phase everything else sits on. In order:
+**File layout now** — this is the shape to build against from here on:
 
-1. **Move `SiteHeader` / `SiteFooter` into `src/app/layout.tsx`.** They currently render
-   inside `src/app/page.tsx`, so a second page would have no navigation.
-2. **Move components out of the clone namespace.**
-   `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/` → `src/components/site/`.
-3. **Point the header nav at real routes.** Every link is `href="#"` today. Set the
-   `current` flag per route so the active item picks up brand red (colour rule 1).
-   The flag is already wired in `SiteHeader.tsx` — only the data needs filling in.
-4. **Footer links to real routes.**
-5. **Custom 404** at `src/app/not-found.tsx`.
-6. **Stub pages** for `/products`, `/projects`, `/downloads`, `/company`, `/contact`.
-7. **Done when:** every nav and footer link lands on a real page, build passes, and `/`
-   still renders identically.
+```
+src/app/                 layout.tsx (chrome) · page.tsx (home) · not-found.tsx
+                         products/ projects/ downloads/ company/ contact/  ← stubs
+src/components/site/     SiteHeader SiteFooter HeroModule PageTeaserModule
+                         TextModule WelcomeIntro Spacer ArrowLink Button
+                         MediaPlaceholder icons          ← flat, no sub-folders
+src/data/                types products categories home
+```
 
-**Regression guard for steps 1–2:** the homepage geometry is verified — 21 modules at
-fixed offsets, document height 10837px at a 1512×900 viewport. Re-run that check before
-committing; the script is in
-`docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/VISUAL_QA.md`.
+`src/components/sites/www-fsb-de-bf263c85/` is gone. Git recorded every move as a
+rename, so `git log --follow` still works on each file.
+
+**Layout owns the chrome; pages own their `<main>`.** The homepage's `mt-192` and module
+rhythm are page-specific and deliberately not in the layout — new pages set their own.
+
+**Active nav item.** `SiteHeader` is now `"use client"` for one reason: `usePathname()`.
+No state, no effects. The current item renders `--color-brand` with `aria-current="page"`;
+the others render `--color-ink`. Verified on `/products/`: `rgb(227,35,34)` vs
+`rgb(18,18,18)`.
+
+**Nav label changed:** "Insights" → "Company". `/company` is a planned route, `/insights`
+is not. See the open decision below.
+
+**Homepage regression:** 21 modules, 0 offset or height mismatches, document height
+10838px. Unchanged by the restructure.
+
+---
+
+## Next: P3 — Product detail page ⭐
+
+The commercially critical page, and the test of whether building this in-house is viable.
+Route `/products/[category]/[slug]`, seven blocks:
+
+1. Breadcrumb + title + model number
+2. Hero image + gallery
+3. Spec table — **variable row count** (the samples have 5, 8 and 10 rows)
+4. Material / finishes / door types
+5. Certification badges
+6. Attachments (datasheets, CAD)
+7. Related products
+
+**Before writing the page:**
+- `generateStaticParams()` must come from `getAllProductParams()` in `src/data/products.ts`
+  — the static export cannot build a dynamic route without it.
+- `getProductBySlug()`, `getRelatedProducts()` and `findCategoryByPath()` are already
+  written and unused. Use them rather than writing new lookups.
+- The "Request a quote" button is a `Button` from `src/components/site/Button.tsx` and
+  must carry the model number into the P5 form.
+- No downloads data exists yet, so `attachmentIds` resolves to nothing — build block 6
+  to render an empty state rather than assuming files are there.
+
+**Done when:** all 3 sample products render fully, including empty states for a product
+with no gallery and no attachments, and the build emits 3 static product pages.
+
+**This phase may be worth splitting a/b** — blocks 1–4 in one session, 5–7 in the next.
 
 ---
 
 ## Open decisions
 
-None outstanding. All six from P0 were answered and are recorded in
+| # | Decision | Blocks |
+|---|---|---|
+| 7 | **The "Insights" / magazine block has no route.** The homepage has two modules for it (`text3`, `hero5` in `src/data/home.ts`) and both link to `#` — the only dead internal links left. Either add `/insights` as a phase, or drop the two modules from the homepage. | Homepage completeness |
+| 8 | **Imprint and Privacy Notice have no pages.** Both footer links currently point at `/company`. Real legal pages are usually a launch requirement in export markets. | Launch |
+
+Decisions 1–6 from P0 are answered and recorded in
 [BUILD_PLAN.md](BUILD_PLAN.md#decisions).
 
 ---

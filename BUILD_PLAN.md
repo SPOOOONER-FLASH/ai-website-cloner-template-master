@@ -29,8 +29,8 @@ The developer is not a programmer and each session has a limited budget. So:
 |---|---|---|
 | **P0** | **Foundation** — git, data structures, route planning, BUILD_PLAN, PROGRESS | ✅ Done |
 | **P1** | **Homepage imagery** — replace placeholder blocks with real hardware photography | ✅ Done |
-| **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | Next |
-| **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | |
+| **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | ✅ Done |
+| **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | Next |
 | **P4** | **Product overview + category pages + listing + filtering** | |
 | **P5** | **Contact page + inquiry form** | |
 | **P6** | **About us / company capability page** | |
@@ -77,18 +77,11 @@ sub-categories later will not change any published URL, so no search ranking is 
 Swap the placeholder blocks on `/` for real, commercially-licensed hardware photography.
 - `public/images/`, `IMAGE_CREDITS.md`, `src/components/.../content.ts`
 
-### P2 — Site skeleton
-- Move `SiteHeader` / `SiteFooter` from `page.tsx` into `src/app/layout.tsx` so every page
-  gets them for free.
-- Move components out of the clone namespace
-  `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/` → `src/components/site/`.
-- Point the header nav at real routes (every link is `href="#"` today) and set the
-  `current` flag so the active item picks up brand red.
-- Footer links to real routes.
-- Custom 404 page (`src/app/not-found.tsx`).
-- Stub pages for all 6 top-level routes so nothing 404s.
-- **Done when:** every nav and footer link lands on a real page, build passes, `/` renders
-  identically to before.
+### P2 — Site skeleton ✅
+Chrome moved into `src/app/layout.tsx`; components moved to `src/components/site/` (flat);
+homepage content to `src/data/home.ts`; nav, footer and homepage module links wired to real
+routes; five stub pages plus a custom 404. Header is `"use client"` only to read
+`usePathname()` for the active nav item.
 
 ### P3 — Product detail page ⭐
 The commercial core. Seven blocks:
@@ -172,14 +165,18 @@ Each of these has already caused, or will cause, real work. Read before planning
 - **Absolute asset paths.** The export references `/_next/...`, so it must be served from
   a domain root. A subdirectory deploy needs `basePath` + `assetPrefix` and a rebuild.
 
-### Component namespace
-Components still live under `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/`.
-That folder name records which site the layout was cloned from — meaningless for a real
-product. P2 moves them.
-
-### Header and footer are not in a layout
-`src/app/layout.tsx` renders only `<html>`/`<body>`. `SiteHeader` and `SiteFooter` are
-mounted inside `src/app/page.tsx`, so a second page would have no navigation. P2.
+### File layout (settled in P2)
+```
+src/app/                 layout.tsx (chrome) · page.tsx (home) · not-found.tsx
+                         products/ projects/ downloads/ company/ contact/
+src/components/site/     flat — SiteHeader SiteFooter HeroModule PageTeaserModule
+                         TextModule WelcomeIntro Spacer ArrowLink Button
+                         MediaPlaceholder icons
+src/data/                types products categories home
+```
+`src/app/layout.tsx` renders `SiteHeader` and `SiteFooter` around `{children}`.
+**Each page supplies its own `<main>`** — the homepage's `mt-192` and module rhythm are
+page-specific and must not leak into other pages.
 
 ### Brand colour rules — binding
 Written in full at the top of `src/app/globals.css`. Summary:
