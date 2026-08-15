@@ -1,131 +1,122 @@
-# Canton Hyland Prototype — Progress
+# Canton Hyland — Progress
 
-Internal desktop visual prototype. Layout reverse-engineered from `https://www.fsb.de/en/`;
-brand identity is Canton Hyland's own. Not for publication or deployment.
+> Read this file first in a new session. It says where we are and what to do next.
+> The full plan lives in [BUILD_PLAN.md](BUILD_PLAN.md).
 
 ---
 
-## Status
+## Current status
 
-| Phase | State |
+| | |
 |---|---|
-| Layout replication (desktop, 1512px) | Done — 21/21 modules pixel-exact |
-| Placeholder content pass | Done — line counts calibrated to the reference |
-| Static export (`out/`) | Done — `canton-demo.zip` at repo root |
-| Brand colour system | Done — this pass |
-| Header modals (language / search / mega-menu) | Not implemented (known gap) |
-| Responsive below 1376px | Carried structurally, not visually reviewed |
+| **Phase** | **0 — Foundation** |
+| **Status** | ✅ Complete |
+| **Last updated** | 2026-08-15 |
+| **Build** | `npm run build` passing · lint 0 errors · typecheck clean |
+| **Git** | clean tree, all work committed |
+| **Next phase** | 1 — Site shell and routing foundation (**not started — do not begin without being asked**) |
 
 ---
 
-## 2026-08-15 — Brand colour system landed
+## Completed
 
-Replaced the placeholder accent (`#1A1A1A`, itself a stand-in for the reference site's
-`#F4FF71`) with the full Canton Hyland palette.
-
-### Tokens — `src/app/globals.css` `@theme`
-
-```
---color-brand           #E32322   links, primary button fill, current nav item
---color-brand-hover     #C41C1B
---color-brand-active    #A11716
---color-brand-tint      #FDECEB   tags, badges          [defined, no instance yet]
---color-ink             #121212   headings, body copy
---color-ink-secondary   #6E6E73   captions, descriptions
---color-ink-tertiary    #8E8E93   decorative grey — icons, display glyphs
---color-line            #E5E5E7   rules, borders, dividers
---color-surface         #FFFFFF   primary background
---color-surface-alt     #F5F5F7   alternating blocks    [defined, no instance yet]
---color-surface-dark    #2C2C2E   footer, dark cards    [defined, no instance yet]
---radius-card           2px       rule 4 ceiling
-```
-
-Retired: `--color-white`, `--color-black`, `--color-highlight`,
-`--color-highlight-foreground`, `--color-gray`, `--color-aluminum`, `--color-stainless`,
-`--color-bronze`, `--color-red`, and the whole `--c-*` RGB-triple block. Zero stale
-references remain (`grep` verified).
-
-### Colour rules (binding — restated at the top of `globals.css`)
-
-1. **Brand red is for clickable things only** — primary button fill, links, link hover,
-   the *currently selected* nav item, form focus borders.
-2. **Never red** — headings, body copy, icons, dividers, decorative elements.
-3. **No gradients, metallic effects, glows or shadows.** Fully flat; the logo is the only
-   decorative artefact.
-4. **Card radius 0–2px, no shadow.** Hierarchy comes from whitespace and `--color-line`.
-
-Enforcement check on every pass: `grep -rni "shadow\|gradient\|rounded" src/` must return
-only comments and `--radius-card`.
-
-### Where brand red appears on `/`
-
-| Location | Count | Trigger |
+| # | Phase | Key output files |
 |---|---|---|
-| Promo-bar link label ("Project Planner") | 1 | static |
-| `ArrowLink` (5 hero + 3 text + 3 welcome + 5 footer) | 16 | static |
-| Footer legal links + "Data preferences" | 4 | static |
-| Hero module hover outline | 5 | hover |
-| Teaser card hover outline | 6 | hover |
-| Current nav item | 0 | none current on `/` |
-| Primary button fill | 0 | component built, not mounted |
-| Form focus border | 0 | no forms on the page |
+| — | Homepage prototype — layout reverse-engineered from `fsb.de`, pixel-exact at 1512px across 21 modules | `src/app/page.tsx`, `src/components/sites/www-fsb-de-bf263c85/**`, `docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/**` |
+| — | Static export — `output: "export"`, packaged to `canton-demo.zip` | `next.config.ts`, `out/` |
+| — | Brand colour system — full token set, 4 binding colour rules, button spec | `src/app/globals.css`, `src/components/sites/www-fsb-de-bf263c85/shared/Button.tsx` |
+| 0 | Foundation — git safety net, planning docs, content model. No page components, as specified. | `BUILD_PLAN.md`, `PROGRESS.md`, `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts` |
 
-21 statically red elements; 11 more turn red on hover.
+### Phase 0 detail
 
-### Files touched
+**Git** — repository already initialised in the previous session (`1700d19`), so no
+second `git init` was needed. Working tree was clean going in.
 
-| File | Change |
-|---|---|
-| `src/app/globals.css` | Token block replaced; colour rules documented; `.btn/.btn-primary/.btn-secondary/.field` added; `body` → surface/ink |
-| `shared/ArrowLink.tsx` | → `--color-brand`, hover `--color-brand-hover`, active `--color-brand-active` |
-| `shared/MediaPlaceholder.tsx` | Fill → `--color-line`; label → `--color-ink-secondary` |
-| `shared/Button.tsx` | **New** — primary/secondary per spec |
-| `en-7a4ba3ba/SiteHeader.tsx` | Promo bar → ink bg / white text / brand link; nav gains `current` flag; icons → tertiary |
-| `en-7a4ba3ba/SiteFooter.tsx` | Top rule black → `--color-line`; links → brand; headings → ink |
-| `en-7a4ba3ba/HeroModule.tsx` | Hover outline black → brand; title/body → ink |
-| `en-7a4ba3ba/PageTeaserModule.tsx` | Hover outline → brand; title → ink, subtitle → ink-secondary |
-| `en-7a4ba3ba/TextModule.tsx` | Heading/body → ink |
-| `en-7a4ba3ba/WelcomeIntro.tsx` | h1/copy → ink; chevron → tertiary; caption → ink-secondary |
+**`src/data/types.ts`** — five interfaces, no logic:
+- `Product` — model, slug, name, series, `categoryPath[]` (multi-level), summary,
+  `specs[]` (variable-length label/value rows), material, finishes, doorTypes,
+  certifications, heroImage, gallery, attachmentIds, relatedModels, seoTitle,
+  seoDescription
+- `Project` — case study: location, country, year, buildingType, architect, body,
+  productModels, images, SEO
+- `DownloadFile` — id, title, kind, format, sizeBytes, url, language, relatedModels,
+  updatedAt
+- `Category` — recursive tree node
+- Support types: `ImageRef`, `SpecRow`, `Certification`, `DownloadKind`
 
-### Verification
+**`src/data/products.ts`** — 3 samples in 3 different categories with 5/8/10 spec rows,
+so any component built on this must handle the variation from the start:
+`HY007-S` (lever on rose), `BL031` (glass patch fitting), `LC04-8570` (Euro mortise lock).
 
-- `npm run lint` — 0 errors, 1 pre-existing warning (`no-page-custom-font`, false positive
-  for an App Router root layout)
-- `npm run typecheck` — clean
-- `npm run build` — clean, static export regenerated
-- Geometry regression: **0 mismatches** across all 21 modules; document height 10838px,
-  unchanged by the recolour
+**`src/data/categories.ts`** — 6 top-level categories, each with 2–3 sub-categories:
+Mortise Locks / Lever Handles / Glass Door Fittings / Panic Exit Devices / Cylinders /
+Accessories.
 
-### Contrast measurements (WCAG 2.1)
-
-| Pair | Ratio | AA normal text (4.5) |
-|---|---|---|
-| white on ink — promo bar text | 18.73 | pass |
-| ink on white — body copy | 18.73 | pass |
-| brand on white — body links, 18px | 4.64 | pass |
-| white on brand — primary button | 4.64 | pass |
-| white on brand-hover | 5.95 | pass |
-| white on brand-active | 7.93 | pass |
-| ink-secondary on white | 5.07 | pass |
-| **brand on ink — promo bar link, 18px** | **4.04** | **fail** |
-| ink-secondary on line — placeholder label, 12px | 4.03 | fail (scaffolding only) |
-| ink-tertiary on white | 3.26 | n/a — token is non-body by definition |
-| brand on brand-tint | 4.06 | fail if used for text |
+**Helpers written now because the static export will need them:** `getAllCategoryPaths()`,
+`getAllProductParams()`, `findCategoryByPath()`, `getProductBySlug()`,
+`getProductsByCategory()`, `getRelatedProducts()`. All pure functions, all unused so far.
 
 ---
 
-## Open items
+## Next: Phase 1 — Site shell and routing foundation
 
-1. **Promo-bar link contrast 4.04:1.** Specified as `#E32322` on `#121212`. Options if it
-   needs to clear AA: lighten the on-dark link to ~`#FF5A55` (≈5.9:1), keep the label white
-   and mark it with a brand-red underline, or accept it as a decorative strip.
-2. **`--color-surface-alt` / `--color-surface-dark` / `--color-brand-tint` unused.** The
-   cloned layout has no alternating-tone blocks, no dark footer and no badges. Flipping the
-   footer to `--color-surface-dark` is a visual-design decision, not a token substitution —
-   awaiting a call.
-3. **`src/components/ui/button.tsx` is dead shadcn scaffold** and violates rules 3 and 4
-   (`rounded-lg`, focus ring shadows). Nothing imports it. Recommend deleting it so it
-   cannot be picked up by mistake alongside `shared/Button.tsx`.
-4. **Header modals** still unimplemented — three inert controls.
-5. **`no-page-custom-font` warning** — resolvable by switching to `next/font/google`, which
-   would also self-host Archivo instead of hitting the CDN.
+The structural phase everything else sits on. In order:
+
+1. **Move `SiteHeader` / `SiteFooter` into `src/app/layout.tsx`.** They currently render
+   inside `src/app/page.tsx`, so a second page would have no navigation.
+2. **Move components out of the clone namespace.**
+   `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/` → `src/components/site/`.
+   The current path records which site the layout was copied from — wrong for a real product.
+3. **Point the header nav at real routes.** Every link is `href="#"` today. Set the
+   `current` flag per route so the active item picks up brand red (colour rule 1).
+4. **Create stub pages** for `/products`, `/projects`, `/downloads`, `/company`,
+   `/contact` so nothing 404s.
+5. **Done when:** every nav link lands on a real page, `npm run build` passes, and `/`
+   renders byte-identically to now.
+
+**Regression guard for step 1–2:** the homepage geometry is verified — 21 modules at
+fixed offsets, document height 10838px at a 1512×900 viewport. After moving files, re-run
+that check before committing. The measurement script is recorded in
+`docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/VISUAL_QA.md`.
+
+---
+
+## Open decisions — need your call
+
+| # | Decision | Blocks |
+|---|---|---|
+| 1 | **The Phase 0 brief referenced a "阶段清单" that was not in the message.** The phase list in `BUILD_PLAN.md` is my draft from the route structure. Confirm or replace it. | All planning |
+| 2 | How inquiry emails get delivered — a static export cannot process form submissions | Phase 8 |
+| 3 | Category depth in URLs: is `/products/levers/hy007-s` enough, or do sub-categories need their own level? Sub-categories exist in the data; no route uses them. | Phase 3 |
+| 4 | Flip the footer to `--color-surface-dark`? Token defined, unused. | Phase 1 |
+| 5 | Delete `src/components/ui/button.tsx`? Dead shadcn scaffold, violates colour rules 3–4, name collides with `shared/Button.tsx`. | Phase 1 |
+| 6 | Real domain, for canonical URLs and sitemap | Phase 9 |
+
+---
+
+## Known pitfalls
+
+Things that will bite if forgotten. Full detail in [BUILD_PLAN.md](BUILD_PLAN.md).
+
+- **Static export.** Every `[dynamic]` route needs `generateStaticParams()`. No API
+  routes, no server actions, no server-side form handling.
+- **Sample product data is invented** — dimensions, materials and certifications alike.
+  None of it is verified. Certification claims are a legal exposure, not just a content
+  bug; they must not reach a public build unreviewed.
+- **Site-wide `noindex` is deliberate** (`src/app/layout.tsx`). This is an unpublished
+  prototype. Removing it is a Phase 9 step, not a cleanup.
+- **Spacing utilities are already pixels.** Root font-size is 62.5%, `--spacing: 0.1rem`,
+  so `p-24` means exactly 24px. Do not convert these numbers.
+- **Colour rules are binding.** See the top of `src/app/globals.css`. Guard command:
+  `grep -rni "shadow\|gradient\|rounded" src/` should return only comments and
+  `--radius-card`.
+- **Promo-bar link contrast is 4.04:1**, under WCAG AA 4.5:1 for 18px text. Specified
+  that way (`#E32322` on `#121212`) and left as specified. Options if it needs to pass:
+  lighten the on-dark link to ~`#FF5A55` (≈5.9:1), or keep white text with a red underline.
+- **`--color-surface-alt`, `--color-surface-dark`, `--color-brand-tint` are defined but
+  unused.** No alternating blocks, no dark footer, no badges in the current layout.
+- **Header modals unimplemented.** Language / search / mega-menu are three inert buttons.
+- **Responsive below 1376px** is structurally present but has never been visually reviewed.
+- **`canton-demo.zip` is gitignored** — regenerate from `out/` when you need it. Note that
+  Windows `Compress-Archive` writes backslash path separators, which breaks the directory
+  structure on most static hosts; build the zip with explicit forward-slash entry names.
