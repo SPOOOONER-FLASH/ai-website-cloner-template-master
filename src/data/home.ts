@@ -6,21 +6,27 @@ import type {
 } from "@/types/fsb-modules";
 
 /**
- * [SUB] Placeholder copy for the Canton Hyland prototype.
+ * Homepage content — Canton Hyland.
  *
- * None of this is taken from the target site. Character counts and line counts are held
- * close to the original so every module renders at the height measured during extraction
- * and the page's vertical rhythm is unchanged.
+ * Copy and imagery are the client's own material, delivered 2026-08-15:
+ *   - banner headlines from 大图文案.docx, verbatim
+ *   - company copy from 公司英文简介.docx
+ *   - product names from the client's asset pack
+ *   - every image is first-party (see IMAGE_CREDITS.md)
  *
- * Theme: Canton Hyland — Chinese door lock and architectural hardware manufacturer,
- * ANSI Grade 3 / ISO 9001, supplying overseas architects and project buyers.
+ * Line counts are still tuned to the measured module heights, so the page geometry
+ * that was verified at 1512px is preserved.
  */
 
 export const hero1: HeroModuleContent = {
   variant: "stacked",
-  media: { ratio: "2880 / 1391", src: "/images/hero-architectural-door-handle.jpg", label: "Stainless steel lever handle and lock on a panelled door" },
-  title: "Canton Hyland CH-1138 Lever Relaunch",
-  body: "The mortise range is back.",
+  media: {
+    ratio: "2880 / 1391",
+    src: "/images/company/hero-panic-exit-banner.webp",
+    label: "Hyland panic exit device fitted to a pair of emergency exit doors",
+  },
+  title: "Panic Exit Device",
+  body: "Fast release. Reliable safety. Built for emergency doors.",
   linkLabel: "Learn more",
   href: "/products",
 };
@@ -29,15 +35,23 @@ export const teaser1: PageTeaserContent = {
   heading: "Two ways to source our products",
   cards: [
     {
-      media: { ratio: "1 / 1", src: "/images/card-distributors-lever.jpg", label: "Brushed steel lever handle on a white door panel" },
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/cat-panic-exit-device.webp",
+        label: "Stainless steel panic exit device with horizontal push bar",
+      },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
       href: "/contact",
     },
     {
-      media: { ratio: "1 / 1", src: "/images/card-specifiers-lever.jpg", label: "Silver lever handle on a timber door in a contemporary interior" },
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/cat-lever-handle-lock.webp",
+        label: "Stainless steel lever handle lock set on backplate",
+      },
       title: "For specifiers",
-      subtitle: "Configure and schedule hardware in the CH Project Planner",
+      subtitle: "Build a hardware schedule with our export engineers",
       href: "/products",
     },
   ],
@@ -45,17 +59,21 @@ export const teaser1: PageTeaserContent = {
 
 export const hero2: HeroModuleContent = {
   variant: "stacked",
-  media: { ratio: "2880 / 1481", src: "/images/hero-product-collection.jpg", label: "Grey door with a slimline metal lever and Euro cylinder keyhole" },
-  title: "The Canton Hyland Product Collection Overview",
-  // 4 lines at the 332px caption column, matching the target
-  body: "More than a parts list: this is how we expect hardware to be specified, checked and signed off.",
+  media: {
+    ratio: "2880 / 1481",
+    src: "/images/company/hero-grip-handle-banner.webp",
+    label: "Hyland grip handle set fitted to a timber entrance door",
+  },
+  title: "Grip Handle Set",
+  // 4 lines at the 332px caption column, matching the measured module height
+  body: "Modern door hardware designed for comfort, durability and security.",
   linkLabel: "Learn more",
   href: "/products",
 };
 
 export const text1: TextModuleContent = {
   heading: "Projects – Where Canton Hyland Takes Shape",
-  body: "These projects show how our products perform in office towers, hotels, private residences, restaurants, academic buildings, government facilities and transport hubs across more than thirty export markets.",
+  body: "Our panic devices, lock cases, lever sets and floor springs are specified in commercial, institutional and residential buildings across more than thirty export markets, backed by master key and construction key systems.",
   linkLabel: "Overview",
   href: "/projects",
 };
@@ -63,46 +81,59 @@ export const text1: TextModuleContent = {
 export const teaser2: PageTeaserContent = {
   cards: [
     {
-      media: { ratio: "1 / 1", src: "/images/project-office-corridor.jpg", label: "Minimalist office corridor with flush doors and timber flooring" },
-      title: "Riverside Tower, Guangzhou",
-      subtitle: "Ambit Architects",
-      href: "/projects",
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/305-fire-door-panic-exit-device.webp",
+        label: "Hyland 305 fire door panic exit device with push bar and outside lever trim",
+      },
+      title: "305 Fire Door Panic Exit Device",
+      subtitle: "Single-point push bar for fire-rated escape doors",
+      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
     },
     {
-      media: { ratio: "1 / 1", src: "/images/project-civic-entrance.jpg", label: "Entrance lobby with a matt black door and minimal detailing" },
-      title: "Nanhai Civic Library, Foshan",
-      subtitle: "Studio Kepler Partners",
-      href: "/projects",
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/lc14-8550-mortise-lock-case.webp",
+        label: "Hyland LC14 four bolt mortise lock case, 85 mm centres and 50 mm backset",
+      },
+      title: "LC14 85×50 Mortise Lock Case",
+      subtitle: "Four bolt lock body for Euro profile cylinders",
+      href: "/products/mortise-locks/lc14-8550-four-bolt-mortise-lock-case",
     },
   ],
 };
 
 export const hero3: HeroModuleContent = {
   variant: "side",
-  // Source intrinsic ratio is 1940/1293; the target renders it in a 970x646 box (it floors
-  // the half-pixel). Using the rendered box keeps the module height exact — the two ratios
-  // differ by 0.08% and are visually identical.
-  media: { ratio: "970 / 646", src: "/images/hero-designed-for.jpg", label: "Close-up of a lever handle and lock case on a timber door" },
+  media: {
+    ratio: "970 / 646",
+    src: "/images/company/hero-designed-for.webp",
+    label: "Storefront door push-pull handle lock in satin stainless steel",
+  },
   title: "Designed For",
-  body: "Four certified product families",
-  linkLabel: "Download here",
-  href: "/downloads",
+  body: "Nine product families",
+  linkLabel: "Browse the catalogue",
+  href: "/products",
 };
 
 export const hero4: HeroModuleContent = {
   variant: "stacked",
-  media: { ratio: "2880 / 1920", src: "/images/hero-company-corridor.jpg", label: "Corridor of a modern building lined with glazed black doors" },
+  media: {
+    ratio: "2880 / 1920",
+    src: "/images/company/assembly-line.webp",
+    label: "Assembly and packing benches at the Canton Hyland plant in Guangdong",
+  },
   title: "About Us",
-  // 8 lines at the 332px caption column, matching the target
-  body: "For more than three decades Canton Hyland has manufactured door locks and architectural hardware in Guangdong, China. Mortise locks, levers, closers and exit devices, tested to ANSI/BHMA Grade 3 under an ISO 9001 system, shipped to specifiers in over thirty markets.",
+  // 8 lines at the 332px caption column
+  body: "Over three decades of manufacturing expertise in commercial and residential hardware: panic devices, cylindrical and tubular locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. ISO 9001 certified since 2002.",
   linkLabel: "Learn more",
   href: "/company",
 };
 
 export const text2: TextModuleContent = {
   heading: "Service + Downloads",
-  // 2 lines at the 680px copy column, matching the target
-  body: "Whether it is technical guidance, submittal support or a tailored finish: the team supplies BIM files, schedules and test documentation.",
+  // 2 lines at the 680px copy column, matching the measured module height
+  body: "We welcome OEM partnerships and develop custom solutions to specific client requirements, with technical support from our own engineering team.",
   linkLabel: "Our Services at a Glance",
   href: "/downloads",
 };
@@ -110,13 +141,21 @@ export const text2: TextModuleContent = {
 export const teaser3: PageTeaserContent = {
   cards: [
     {
-      media: { ratio: "1 / 1", src: "/images/card-contact-glass-doors.jpg", label: "Frameless glass double doors with full-height pull handles" },
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/glass-door-patch-fitting-set.webp",
+        label: "Stainless steel glass door patch fitting set with cover plates and pivots",
+      },
       title: "Get in Touch!",
       subtitle: "We'll match you with the right export engineer",
       href: "/contact",
     },
     {
-      media: { ratio: "1 / 1", src: "/images/card-faq-white-corridor.jpg", label: "Bright corridor with white doors and matching lever hardware" },
+      media: {
+        ratio: "1 / 1",
+        src: "/images/products/ansi-grade-3-keyed-deadbolt.webp",
+        label: "ANSI Grade 3 keyed deadbolt lock set with cylinder, thumbturn and strike",
+      },
       title: "Frequently Asked Questions",
       subtitle: "Quick answers on grades, standards and lead times",
       href: "/contact",
@@ -131,13 +170,17 @@ export const teaser3: PageTeaserContent = {
  */
 export const text3: TextModuleContent = {
   heading: "Insights",
-  body: "Our notes cover product development, finish selection and the standards work behind architectural hardware specification.",
+  body: "Notes on standards, finish selection and the specification detail behind architectural hardware.",
   linkLabel: "Inspiring Insights",
 };
 
 export const hero5: HeroModuleContent = {
   variant: "stacked",
-  media: { ratio: "2880 / 1757", src: "/images/hero-insights-hallway.jpg", label: "Daylit hallway in a modern apartment with flush timber doors" },
+  media: {
+    ratio: "2880 / 1757",
+    src: "/images/company/hero-storefront-banner.webp",
+    label: "Storefront door hardware installation in a commercial entrance",
+  },
   title: "Specifying Hardware for Export Projects",
   linkLabel: "Learn more",
 };

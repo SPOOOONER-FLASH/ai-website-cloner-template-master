@@ -126,9 +126,21 @@ Per-page `metadata`, `sitemap.xml`, `robots.txt`, Open Graph, Schema.org product
 alt text audit. Canonical URLs on `https://www.cantonlock.com`.
 **Do not remove `noindex` in this phase** — see decision 6.
 
-### P11 — Real assets and final content
-Replace P1's stock photography with Canton's own product shots, and placeholder copy with
-signed-off text. Verify every certification claim against a real test report.
+### P11 — Real assets and final content  *(scope reduced — see below)*
+Part of P11 was pulled forward on 2026-08-15: the client's own photography, company profile,
+category tree and 12 real products are already in. **Remaining P11 scope:**
+- Re-export or reshoot the four under-resolution images listed in IMAGE_CREDITS.md
+  (two homepage banners at 0.54-0.57x, the facility yard, the storefront banner).
+- Request un-badged product shots — every product image currently carries the Hyland logo
+  lozenge burned into the corner, which fights the flat layout.
+- Replace the B2B white-sweep product pack with styled photography on a neutral ground.
+- Replace `company/decorative-hinge-detail.webp` (306:156 slot) with **CAD line art** —
+  the brief asked for a technical line drawing and the pack contains none.
+- Fill the empty `specs` tables. Alibaba product detail pages are captcha-protected, so
+  dimensions must come from the client's catalogue.
+- Confirm real SKUs for the seven products flagged `modelTbc: true`.
+- Verify every certification claim against a real test report, and confirm which current
+  models the four existing reports cover.
 
 ---
 

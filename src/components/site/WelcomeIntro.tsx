@@ -37,7 +37,7 @@ export function WelcomeIntro() {
               Welcome
               <br />
               <span className="text-h1-light">
-                From a Guangdong Workshop to Specified Hardware Worldwide
+                Door Security and Building Hardware, Manufactured in Guangdong
               </span>
             </h1>
           </div>
@@ -46,13 +46,13 @@ export function WelcomeIntro() {
         {/* slot-2 — copy */}
         <div className="col-span-full grid grid-cols-subgrid gap sm:col-span-4 md:col-span-6 xl:col-span-6 xl:row-span-2">
           <section className="copy col-span-full text-ink xl:col-span-5">
-            {/* 13 lines at the 274px copy column, matching the target */}
+            {/* Client's own copy (公司英文简介.docx), trimmed to the 13-line column height. */}
             <div>
-              Canton Hyland builds door locks and architectural hardware for people who read the
-              submittal before they read the brochure. Mortise locks, levers, closers and exit
-              devices — tested to ANSI/BHMA Grade 3 and ISO 9001. Every family ships with the
-              schedules, finishes and certification paperwork an overseas specifier has to file.
-              Welcome to hardware that survives the approval process.
+              Canton Hyland brings over three decades of manufacturing expertise to the commercial
+              and residential hardware industry. We specialize in door security and building
+              hardware — panic devices, tubular and cylindrical locks, deadbolts, lock cases,
+              profile cylinders, door handles and patch fittings. Recognized experts in master key
+              and construction key systems. ISO 9001 certified since 2002.
             </div>
           </section>
         </div>
@@ -97,9 +97,11 @@ export function WelcomeIntro() {
         <div className="mt-48 grid gap-x gap-y-48 sm:grid-cols-2">
           <div className="grid grid-cols-12 gap-x sm:[grid-column-end:-1]">
             <div className="col-span-6">
+              {/* Stand-in for a CAD line drawing — see BUILD_PLAN.md P11. */}
               <MediaPlaceholder
                 ratio="306 / 156"
-                label="装饰图形 306:156"
+                src="/images/company/decorative-hinge-detail.webp"
+                label="Close-up of a stainless steel ball bearing door hinge"
                 className="w-[92.17%]"
               />
             </div>
@@ -107,15 +109,17 @@ export function WelcomeIntro() {
               <p>
                 Canton Hyland Hardware
                 <br />
-                Manufacturing Co., Ltd
+                (Group) Co., Ltd
               </p>
+              {/* Monochrome vector certification marks — inherits --color-ink. */}
               <MediaPlaceholder
                 ratio="87 / 46"
-                label="签名图形 87:46"
+                src="/images/company/certification-marks.svg"
+                label="ISO 9001 and ANSI/BHMA Grade 3 certification marks"
                 className="w-[min(8.57rem,11.552083vw)] sm:w-[min(8.57rem,5.95208333vw)]"
               />
             </div>
-            <div className="col-span-6 mt-48 text-c1 text-ink-secondary [grid-column-end:-1]">Grip and Grain</div>
+            <div className="col-span-6 mt-48 text-c1 text-ink-secondary [grid-column-end:-1]">Total solutions to the building industry</div>
           </div>
         </div>
       </div>

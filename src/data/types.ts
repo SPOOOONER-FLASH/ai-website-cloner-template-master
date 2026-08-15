@@ -68,8 +68,14 @@ export interface Certification {
  * ---------------------------------------------------------------------- */
 
 export interface Product {
-  /** Model number — the primary business key. e.g. "HY007-S". */
+  /** Model number — the primary business key. e.g. "305". */
   model: string;
+  /**
+   * True when `model` is a working label rather than the client's real SKU.
+   * Several products arrived as descriptive names only. Render a "model on request"
+   * note instead of the code, and never quote it back to a customer as an order code.
+   */
+  modelTbc?: boolean;
   /** URL segment, unique within its category. e.g. "hy007-s". */
   slug: string;
   /** Display name, e.g. "Solid Lever Handle on Rose". */

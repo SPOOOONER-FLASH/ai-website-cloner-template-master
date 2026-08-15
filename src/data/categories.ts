@@ -1,179 +1,141 @@
 import type { Category } from "./types";
 
 /**
- * Product category tree.
+ * Product category tree — mirrors the client's own Alibaba storefront categories,
+ * read from https://cnhyland.en.alibaba.com/productlist.html on 2026-08-15.
  *
  * The shape of this tree IS the URL structure: /products/[category]/[slug].
  * Renaming a slug changes a live URL, so treat slugs as stable once published.
  *
- * Sub-categories are drafted where the split is obvious. They are not yet used
- * by any route — /products/[category] currently means top level only. Deepening
- * to /products/[category]/[subcategory] is a later decision; see BUILD_PLAN.md.
+ * Sub-categories are a FILTER DIMENSION only (decision 3) — they never become a URL
+ * segment. They are used by the P4 listing page.
  */
 export const categories: Category[] = [
   {
-    slug: "locks",
-    name: "Mortise Locks",
-    nameZh: "门锁",
-    summary:
-      "Mortise lock bodies for timber, steel and aluminium doors, in Euro-profile and ANSI preparations.",
-    image: { ratio: "1 / 1", label: "分类图 门锁 1:1", labelZh: "门锁" },
-    children: [
-      {
-        slug: "euro-mortise",
-        name: "Euro-Profile Mortise",
-        nameZh: "欧标门锁",
-        summary: "DIN-standard lock bodies with Euro cylinder preparation.",
-        image: { ratio: "1 / 1", label: "分类图 欧标门锁 1:1" },
-      },
-      {
-        slug: "ansi-mortise",
-        name: "ANSI Mortise",
-        nameZh: "美标门锁",
-        summary: "ANSI/BHMA-prepared lock bodies for the North American market.",
-        image: { ratio: "1 / 1", label: "分类图 美标门锁 1:1" },
-      },
-      {
-        slug: "tubular-latch",
-        name: "Tubular Latches",
-        nameZh: "管状锁舌",
-        summary: "Bored-hole latches for interior passage and privacy sets.",
-        image: { ratio: "1 / 1", label: "分类图 管状锁舌 1:1" },
-      },
-    ],
-  },
-  {
-    slug: "levers",
-    name: "Lever Handles",
-    nameZh: "执手",
-    summary:
-      "Lever handles on rose and on plate, in solid brass and stainless steel, across the full finish range.",
-    image: { ratio: "1 / 1", label: "分类图 执手 1:1", labelZh: "执手" },
-    children: [
-      {
-        slug: "lever-on-rose",
-        name: "Lever on Rose",
-        nameZh: "圆座执手",
-        summary: "Concealed-fix levers on a round or square rose.",
-        image: { ratio: "1 / 1", label: "分类图 圆座执手 1:1" },
-      },
-      {
-        slug: "lever-on-plate",
-        name: "Lever on Plate",
-        nameZh: "板式执手",
-        summary: "Levers on a backplate with integrated cylinder or thumbturn aperture.",
-        image: { ratio: "1 / 1", label: "分类图 板式执手 1:1" },
-      },
-      {
-        slug: "pull-handles",
-        name: "Pull Handles",
-        nameZh: "拉手",
-        summary: "Back-to-back and single-sided pulls for entrance and glass doors.",
-        image: { ratio: "1 / 1", label: "分类图 拉手 1:1" },
-      },
-    ],
-  },
-  {
-    slug: "glass-fittings",
-    name: "Glass Door Fittings",
-    nameZh: "玻璃门夹",
-    summary:
-      "Patch fittings, clamps and floor-spring accessories for frameless toughened glass assemblies.",
-    image: { ratio: "1 / 1", label: "分类图 玻璃门夹 1:1", labelZh: "玻璃门夹" },
-    children: [
-      {
-        slug: "patch-fittings",
-        name: "Patch Fittings",
-        nameZh: "玻璃门夹具",
-        summary: "Top, bottom and corner patches for frameless glass doors.",
-        image: { ratio: "1 / 1", label: "分类图 玻璃门夹具 1:1" },
-      },
-      {
-        slug: "glass-clamps",
-        name: "Glass Clamps",
-        nameZh: "玻璃固定夹",
-        summary: "Fixed-panel clamps and sidelight connectors.",
-        image: { ratio: "1 / 1", label: "分类图 玻璃固定夹 1:1" },
-      },
-    ],
-  },
-  {
-    slug: "exit-devices",
+    slug: "panic-exit-devices",
     name: "Panic Exit Devices",
     nameZh: "逃生推杠",
     summary:
-      "Touch bars and push bars for escape routes, with matching outside access trim.",
-    image: { ratio: "1 / 1", label: "分类图 逃生推杠 1:1", labelZh: "逃生推杠" },
+      "Push bars and touch bars for escape routes, including fire-door, alarmed, double-door and two-point locking versions.",
+    image: {
+      src: "/images/products/cat-panic-exit-device.webp",
+      ratio: "1 / 1",
+      label: "Stainless steel panic exit device with horizontal push bar",
+    },
     children: [
-      {
-        slug: "touch-bars",
-        name: "Touch Bars",
-        nameZh: "触压式推杠",
-        summary: "Low-profile touch bars for single and double doors.",
-        image: { ratio: "1 / 1", label: "分类图 触压式推杠 1:1" },
-      },
-      {
-        slug: "push-bars",
-        name: "Push Bars",
-        nameZh: "横杆式推杠",
-        summary: "Cross-bar devices for high-traffic escape doors.",
-        image: { ratio: "1 / 1", label: "分类图 横杆式推杠 1:1" },
-      },
+      { slug: "fire-door", name: "Fire Door Devices", nameZh: "防火门推杠", summary: "Rated devices for fire-rated escape doors.", image: { ratio: "1 / 1", label: "Fire door panic device" } },
+      { slug: "alarmed", name: "Alarmed Devices", nameZh: "带报警推杠", summary: "Push bars with integrated exit alarm.", image: { ratio: "1 / 1", label: "Alarmed panic bar" } },
+      { slug: "multi-point", name: "Multi-Point Locking", nameZh: "多点锁推杠", summary: "Two- and three-point locking for tall or double doors.", image: { ratio: "1 / 1", label: "Two point locking exit device" } },
     ],
   },
   {
-    slug: "cylinders",
-    name: "Cylinders",
-    nameZh: "锁芯",
+    slug: "lever-handle-locks",
+    name: "Lever Handle Locks",
+    nameZh: "执手锁",
     summary:
-      "Euro-profile and rim cylinders, keyed alike and master-key ready, with anti-drill protection.",
-    image: { ratio: "1 / 1", label: "分类图 锁芯 1:1", labelZh: "锁芯" },
+      "Lever handle sets in stainless steel and zinc alloy, for commercial and residential doors, in tubular and mortise preparations.",
+    image: {
+      src: "/images/products/cat-lever-handle-lock.webp",
+      ratio: "1 / 1",
+      label: "Stainless steel lever handle lock set on backplate",
+    },
     children: [
-      {
-        slug: "euro-cylinders",
-        name: "Euro-Profile Cylinders",
-        nameZh: "欧标锁芯",
-        summary: "Double, single and thumbturn cylinders in the DIN profile.",
-        image: { ratio: "1 / 1", label: "分类图 欧标锁芯 1:1" },
-      },
-      {
-        slug: "rim-cylinders",
-        name: "Rim Cylinders",
-        nameZh: "外装锁芯",
-        summary: "Rim cylinders for night latches and surface-mounted locks.",
-        image: { ratio: "1 / 1", label: "分类图 外装锁芯 1:1" },
-      },
+      { slug: "tubular-lever", name: "Tubular Lever", nameZh: "管式执手", summary: "Bored-hole lever sets for interior doors.", image: { ratio: "1 / 1", label: "Tubular lever lock" } },
+      { slug: "mortise-lever", name: "Mortise Lever", nameZh: "插芯执手", summary: "Lever sets on plate for mortise lock cases.", image: { ratio: "1 / 1", label: "Mortise lever set" } },
     ],
   },
   {
-    slug: "accessories",
-    name: "Accessories",
-    nameZh: "配件",
+    slug: "knob-locks",
+    name: "Knob Locks",
+    nameZh: "球形锁",
     summary:
-      "Hinges, door stops, flush bolts, escutcheons and the fixings that complete a hardware schedule.",
-    image: { ratio: "1 / 1", label: "分类图 配件 1:1", labelZh: "配件" },
+      "Cylindrical and tubular knob locks for entry, privacy, passage and communication functions.",
+    image: {
+      src: "/images/products/cylindrical-knob-lock.webp",
+      ratio: "1 / 1",
+      label: "Stainless steel cylindrical knob lock set",
+    },
     children: [
-      {
-        slug: "hinges",
-        name: "Hinges",
-        nameZh: "合页",
-        summary: "Butt, concealed and pivot hinges rated for commercial traffic.",
-        image: { ratio: "1 / 1", label: "分类图 合页 1:1" },
-      },
-      {
-        slug: "door-stops",
-        name: "Door Stops",
-        nameZh: "门吸",
-        summary: "Floor and wall-mounted stops, magnetic and mechanical.",
-        image: { ratio: "1 / 1", label: "分类图 门吸 1:1" },
-      },
-      {
-        slug: "escutcheons",
-        name: "Escutcheons",
-        nameZh: "锁孔盖板",
-        summary: "Cylinder and thumbturn escutcheons matching the lever finish range.",
-        image: { ratio: "1 / 1", label: "分类图 锁孔盖板 1:1" },
-      },
+      { slug: "cylindrical-knob", name: "Cylindrical Knob", nameZh: "筒式球形锁", summary: "Heavy-duty cylindrical knob sets for commercial traffic.", image: { ratio: "1 / 1", label: "Cylindrical knob lock" } },
+      { slug: "tubular-knob", name: "Tubular Knob", nameZh: "管式球形锁", summary: "Tubular knob sets for residential and light commercial use.", image: { ratio: "1 / 1", label: "Tubular knob lock" } },
+    ],
+  },
+  {
+    slug: "mortise-locks",
+    name: "Mortise Locks & Cylinders",
+    nameZh: "插芯锁体与锁芯",
+    summary:
+      "Mortise lock cases and profile cylinders, including master key and construction key systems.",
+    image: {
+      src: "/images/products/lc14-8550-mortise-lock-case.webp",
+      ratio: "1 / 1",
+      label: "Four bolt mortise lock case with stainless steel forend",
+    },
+    children: [
+      { slug: "lock-case", name: "Mortise Lock Bodies", nameZh: "锁体", summary: "Lock cases in Euro and multi-bolt configurations.", image: { ratio: "1 / 1", label: "Mortise lock body" } },
+      { slug: "profile-cylinder", name: "Profile Cylinders", nameZh: "锁芯", summary: "Euro profile cylinders, master keyed on request.", image: { ratio: "1 / 1", label: "Profile cylinder" } },
+    ],
+  },
+  {
+    slug: "deadbolt-locks",
+    name: "Deadbolt Locks",
+    nameZh: "深栓锁",
+    summary: "Single and double cylinder deadbolts, ANSI Grade 3, for timber and steel doors.",
+    image: {
+      src: "/images/products/ansi-grade-3-keyed-deadbolt.webp",
+      ratio: "1 / 1",
+      label: "ANSI Grade 3 keyed deadbolt lock set with strike plate",
+    },
+  },
+  {
+    slug: "door-handles",
+    name: "Door Handles & Pulls",
+    nameZh: "拉手",
+    summary:
+      "Grip handle sets, storefront push-pull handles, concealed sliding door pulls and glass door pull handles.",
+    image: {
+      src: "/images/products/600-concealed-sliding-door-handle.webp",
+      ratio: "1 / 1",
+      label: "Concealed sliding door flush pull handle",
+    },
+  },
+  {
+    slug: "glass-door-fittings",
+    name: "Glass Door Fittings",
+    nameZh: "玻璃门夹具",
+    summary: "Patch fittings and pull handles for frameless toughened glass assemblies.",
+    image: {
+      src: "/images/products/glass-door-patch-fitting-set.webp",
+      ratio: "1 / 1",
+      label: "Stainless steel glass door patch fitting set",
+    },
+  },
+  {
+    slug: "floor-hinges",
+    name: "Floor Hinges",
+    nameZh: "地弹簧",
+    summary: "Concealed floor springs and pivot sets for wooden and glass doors.",
+    image: {
+      src: "/images/products/wooden-door-floor-hinge.webp",
+      ratio: "1 / 1",
+      label: "Wooden door floor hinge with cover plates and pivot brackets",
+    },
+  },
+  {
+    slug: "building-hardware",
+    name: "Building Hardware",
+    nameZh: "建筑五金配件",
+    summary:
+      "Hinges, night latches, bolts, door viewers, stoppers and the accessories that complete a hardware schedule.",
+    image: {
+      src: "/images/products/stainless-steel-door-hinge.webp",
+      ratio: "1 / 1",
+      label: "Pair of stainless steel ball bearing door hinges",
+    },
+    children: [
+      { slug: "hinges", name: "Hinges", nameZh: "合页", summary: "Ball bearing and anti-pry security hinges.", image: { ratio: "1 / 1", label: "Door hinge" } },
+      { slug: "rim-locks", name: "Night Latches & Rim Locks", nameZh: "外装门锁", summary: "Surface-mounted night latches and rim locks.", image: { ratio: "1 / 1", label: "Night latch" } },
+      { slug: "accessories", name: "Accessories", nameZh: "配件", summary: "Bolts, viewers, stoppers, chains and house numbers.", image: { ratio: "1 / 1", label: "Building hardware accessory" } },
     ],
   },
 ];
@@ -187,7 +149,7 @@ export function getTopLevelCategories(): Category[] {
   return categories;
 }
 
-/** Find a category by its path of slugs, e.g. ["levers", "lever-on-rose"]. */
+/** Find a category by its path of slugs, e.g. ["knob-locks", "tubular-knob"]. */
 export function findCategoryByPath(path: string[]): Category | undefined {
   let level: Category[] | undefined = categories;
   let found: Category | undefined;
