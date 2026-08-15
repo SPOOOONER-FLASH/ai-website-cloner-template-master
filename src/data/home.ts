@@ -22,6 +22,7 @@ export const hero1: HeroModuleContent = {
   title: "Canton Hyland CH-1138 Lever Relaunch",
   body: "The mortise range is back.",
   linkLabel: "Learn more",
+  href: "/products",
 };
 
 export const teaser1: PageTeaserContent = {
@@ -31,11 +32,13 @@ export const teaser1: PageTeaserContent = {
       media: { ratio: "1 / 1", src: "/images/card-distributors-lever.jpg", label: "Brushed steel lever handle on a white door panel" },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
+      href: "/contact",
     },
     {
       media: { ratio: "1 / 1", src: "/images/card-specifiers-lever.jpg", label: "Silver lever handle on a timber door in a contemporary interior" },
       title: "For specifiers",
       subtitle: "Configure and schedule hardware in the CH Project Planner",
+      href: "/products",
     },
   ],
 };
@@ -47,12 +50,14 @@ export const hero2: HeroModuleContent = {
   // 4 lines at the 332px caption column, matching the target
   body: "More than a parts list: this is how we expect hardware to be specified, checked and signed off.",
   linkLabel: "Learn more",
+  href: "/products",
 };
 
 export const text1: TextModuleContent = {
   heading: "Projects – Where Canton Hyland Takes Shape",
   body: "These projects show how our products perform in office towers, hotels, private residences, restaurants, academic buildings, government facilities and transport hubs across more than thirty export markets.",
   linkLabel: "Overview",
+  href: "/projects",
 };
 
 export const teaser2: PageTeaserContent = {
@@ -61,11 +66,13 @@ export const teaser2: PageTeaserContent = {
       media: { ratio: "1 / 1", src: "/images/project-office-corridor.jpg", label: "Minimalist office corridor with flush doors and timber flooring" },
       title: "Riverside Tower, Guangzhou",
       subtitle: "Ambit Architects",
+      href: "/projects",
     },
     {
       media: { ratio: "1 / 1", src: "/images/project-civic-entrance.jpg", label: "Entrance lobby with a matt black door and minimal detailing" },
       title: "Nanhai Civic Library, Foshan",
       subtitle: "Studio Kepler Partners",
+      href: "/projects",
     },
   ],
 };
@@ -79,6 +86,7 @@ export const hero3: HeroModuleContent = {
   title: "Designed For",
   body: "Four certified product families",
   linkLabel: "Download here",
+  href: "/downloads",
 };
 
 export const hero4: HeroModuleContent = {
@@ -88,6 +96,7 @@ export const hero4: HeroModuleContent = {
   // 8 lines at the 332px caption column, matching the target
   body: "For more than three decades Canton Hyland has manufactured door locks and architectural hardware in Guangdong, China. Mortise locks, levers, closers and exit devices, tested to ANSI/BHMA Grade 3 under an ISO 9001 system, shipped to specifiers in over thirty markets.",
   linkLabel: "Learn more",
+  href: "/company",
 };
 
 export const text2: TextModuleContent = {
@@ -95,6 +104,7 @@ export const text2: TextModuleContent = {
   // 2 lines at the 680px copy column, matching the target
   body: "Whether it is technical guidance, submittal support or a tailored finish: the team supplies BIM files, schedules and test documentation.",
   linkLabel: "Our Services at a Glance",
+  href: "/downloads",
 };
 
 export const teaser3: PageTeaserContent = {
@@ -103,15 +113,22 @@ export const teaser3: PageTeaserContent = {
       media: { ratio: "1 / 1", src: "/images/card-contact-glass-doors.jpg", label: "Frameless glass double doors with full-height pull handles" },
       title: "Get in Touch!",
       subtitle: "We'll match you with the right export engineer",
+      href: "/contact",
     },
     {
       media: { ratio: "1 / 1", src: "/images/card-faq-white-corridor.jpg", label: "Bright corridor with white doors and matching lever hardware" },
       title: "Frequently Asked Questions",
       subtitle: "Quick answers on grades, standards and lead times",
+      href: "/contact",
     },
   ],
 };
 
+/**
+ * ⚠ text3 and hero5 are the editorial / magazine block. There is no /insights route in
+ * the plan, so both fall back to "#". Either add the route or drop the block — see the
+ * open decision in PROGRESS.md. These are the only two dead links left on the site.
+ */
 export const text3: TextModuleContent = {
   heading: "Insights",
   body: "Our notes cover product development, finish selection and the standards work behind architectural hardware specification.",

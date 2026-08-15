@@ -1,8 +1,18 @@
 import Link from "next/link";
-import { ArrowLink } from "../shared/ArrowLink";
+import { ArrowLink } from "./ArrowLink";
 
-const LEGAL_LINKS = ["Imprint", "Newsletter", "Privacy Notice"];
-const SOCIAL_LINKS = ["Instagram", "Pinterest", "LinkedIn", "Facebook"];
+/**
+ * Imprint and Privacy Notice have no route in the plan yet — they are legal pages,
+ * not part of P2's six. They point at /company until someone writes them.
+ */
+const LEGAL_LINKS = [
+  { label: "Imprint", href: "/company" },
+  { label: "Contact", href: "/contact" },
+  { label: "Privacy Notice", href: "/company" },
+];
+
+/** External profiles. Real URLs land in P11 with the rest of the real content. */
+const SOCIAL_LINKS = ["Instagram", "LinkedIn", "Facebook", "YouTube"];
 
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
@@ -27,13 +37,13 @@ export function SiteFooter() {
           <div className="grid grid-cols grid-rows gap-x gap-y-48 md:gap-y-96">
             <nav className="col-span-full grid grid-cols-subgrid md:col-span-7 md:block lg:col-span-8 xl:col-span-12">
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
-                {LEGAL_LINKS.map((label) => (
-                  <li key={label} className="col-span-2 md:col-span-3">
+                {LEGAL_LINKS.map((link) => (
+                  <li key={link.label} className="col-span-2 md:col-span-3">
                     <Link
-                      href="#"
+                      href={link.href}
                       className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
                     >
-                      {label}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -55,7 +65,7 @@ export function SiteFooter() {
                 export documentation changes.
               </p>
               <div>
-                <ArrowLink>Sign-up here</ArrowLink>
+                <ArrowLink href="/contact">Sign-up here</ArrowLink>
               </div>
             </div>
 

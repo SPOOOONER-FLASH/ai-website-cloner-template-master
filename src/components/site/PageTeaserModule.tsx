@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MediaPlaceholder } from "../shared/MediaPlaceholder";
+import { MediaPlaceholder } from "./MediaPlaceholder";
 import type { PageTeaserContent, TeaserCardContent } from "@/types/fsb-modules";
 
 /**

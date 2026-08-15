@@ -1,13 +1,15 @@
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "../shared/icons";
+"use client";
 
-/** `current: true` marks the active section — the one nav case that gets brand red. */
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
+
 const NAV_LINKS = [
-  { label: "Products", href: "#", current: false },
-  { label: "Projects", href: "#", current: false },
-  { label: "Insights", href: "#", current: false },
-  { label: "Service + Downloads", href: "#", current: false },
+  { label: "Products", href: "/products" },
+  { label: "Projects", href: "/projects" },
+  { label: "Company", href: "/company" },
+  { label: "Service + Downloads", href: "/downloads" },
 ];
 
 /**
@@ -26,6 +28,10 @@ const NAV_LINKS = [
  *   Icons       --color-ink-tertiary. Icons are never red (rule 2).
  */
 export function SiteHeader() {
+  // "use client" only so the active nav item can be resolved. No state, no effects.
+  const pathname = usePathname();
+  const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+
   return (
     <div
       className="sticky z-10 flex-grow-0 bg-surface"
@@ -33,8 +39,10 @@ export function SiteHeader() {
     >
       <div>
         {/* Promo bar — the whole 48px strip is the link */}
+        {/* The reference site points this strip at an external configurator. We have no
+            such tool yet, so it lands on the catalogue. */}
         <Link
-          href="#"
+          href="/products"
           className="layout group relative h-[var(--h-main-nav-banner)] w-full bg-ink text-surface"
         >
           <div className="col-content grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-4">
@@ -49,20 +57,23 @@ export function SiteHeader() {
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
             <div className="col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12">
               <nav className="flex gap-64">
-                {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.label}
-                    href={link.href}
-                    aria-current={link.current ? "page" : undefined}
-                    className={cn(
-                      "text-c1 underline-offset-4 hover:underline",
-                      // Rule 1: brand red marks the current section only.
-                      link.current ? "text-brand" : "text-ink hover:text-brand-hover",
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {NAV_LINKS.map((link) => {
+                  const current = isCurrent(link.href);
+                  return (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      aria-current={current ? "page" : undefined}
+                      className={cn(
+                        "text-c1 underline-offset-4 hover:underline",
+                        // Rule 1: brand red marks the current section only.
+                        current ? "text-brand" : "text-ink hover:text-brand-hover",
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
 

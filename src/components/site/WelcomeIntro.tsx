@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { ArrowLink } from "../shared/ArrowLink";
-import { MediaPlaceholder } from "../shared/MediaPlaceholder";
-import { ChevronDownIcon } from "../shared/icons";
+import { ArrowLink } from "./ArrowLink";
+import { MediaPlaceholder } from "./MediaPlaceholder";
+import { ChevronDownIcon } from "./icons";
 
-const MORE_LINKS = ["Project Planner", "The Canton Hyland Product Overview", "Careers"];
+const MORE_LINKS = [
+  { label: "Project Planner", href: "/products" },
+  { label: "The Canton Hyland Product Overview", href: "/products" },
+  { label: "Careers", href: "/company" },
+];
 
 /**
  * Page intro block — `main`'s second child, between the two `.modules` containers.
@@ -76,9 +80,9 @@ export function WelcomeIntro() {
 
               <div className={cn(expanded ? "block" : "hidden", "sm:!block")}>
                 <ul className="flex flex-col gap-36 pointer-fine:gap-16">
-                  {MORE_LINKS.map((label) => (
-                    <li key={label}>
-                      <ArrowLink>{label}</ArrowLink>
+                  {MORE_LINKS.map((link) => (
+                    <li key={link.label}>
+                      <ArrowLink href={link.href}>{link.label}</ArrowLink>
                     </li>
                   ))}
                 </ul>

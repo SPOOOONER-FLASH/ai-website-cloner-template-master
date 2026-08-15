@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { MediaPlaceholder } from "../shared/MediaPlaceholder";
-import { ArrowLink } from "../shared/ArrowLink";
+import { MediaPlaceholder } from "./MediaPlaceholder";
+import { ArrowLink } from "./ArrowLink";
 import type { HeroModuleContent } from "@/types/fsb-modules";
 
 /**

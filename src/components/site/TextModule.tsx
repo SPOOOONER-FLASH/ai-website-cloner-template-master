@@ -1,4 +1,4 @@
-import { ArrowLink } from "../shared/ArrowLink";
+import { ArrowLink } from "./ArrowLink";
 import type { TextModuleContent } from "@/types/fsb-modules";
 
 /**
