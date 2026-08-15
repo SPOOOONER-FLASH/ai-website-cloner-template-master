@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **0 — Foundation** |
+| **Phase** | **P1 — Homepage imagery** |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-15 |
 | **Build** | `npm run build` passing · lint 0 errors · typecheck clean |
 | **Git** | clean tree, all work committed |
-| **Next phase** | 1 — Site shell and routing foundation (**not started — do not begin without being asked**) |
+| **Next phase** | **P2 — Site skeleton** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -22,43 +22,54 @@
 
 | # | Phase | Key output files |
 |---|---|---|
-| — | Homepage prototype — layout reverse-engineered from `fsb.de`, pixel-exact at 1512px across 21 modules | `src/app/page.tsx`, `src/components/sites/www-fsb-de-bf263c85/**`, `docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/**` |
-| — | Static export — `output: "export"`, packaged to `canton-demo.zip` | `next.config.ts`, `out/` |
-| — | Brand colour system — full token set, 4 binding colour rules, button spec | `src/app/globals.css`, `src/components/sites/www-fsb-de-bf263c85/shared/Button.tsx` |
-| 0 | Foundation — git safety net, planning docs, content model. No page components, as specified. | `BUILD_PLAN.md`, `PROGRESS.md`, `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts` |
+| — | Homepage prototype — layout reverse-engineered from `fsb.de`, pixel-exact at 1512px across 21 modules | `src/app/page.tsx`, `src/components/sites/www-fsb-de-bf263c85/**`, `docs/research/**` |
+| — | Static export — `output: "export"`, packaged to `canton-demo.zip` | `next.config.ts` |
+| — | Brand colour system — full token set, 4 binding colour rules, button spec | `src/app/globals.css`, `shared/Button.tsx` |
+| **P0** | Foundation — git safety net, planning docs, content model | `BUILD_PLAN.md`, `PROGRESS.md`, `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts` |
+| **P1** | Homepage imagery — 11 stock photos replace the placeholder blocks | `public/images/*.jpg`, `IMAGE_CREDITS.md`, `scripts/download-homepage-images.mjs`, `shared/MediaPlaceholder.tsx`, `en-7a4ba3ba/content.ts` |
 
-### Phase 0 detail
+### P1 detail
 
-**Git** — repository already initialised in the previous session (`1700d19`), so no
-second `git init` was needed. Working tree was clean going in.
+**11 photographs**, all from Pexels under the Pexels License (free commercial use, no
+attribution required — photographers credited anyway). Licence verified per photo from
+each photo page's JSON-LD. Full table in [IMAGE_CREDITS.md](IMAGE_CREDITS.md).
 
-**`src/data/types.ts`** — five interfaces, no logic:
-- `Product` — model, slug, name, series, `categoryPath[]` (multi-level), summary,
-  `specs[]` (variable-length label/value rows), material, finishes, doorTypes,
-  certifications, heroImage, gallery, attachmentIds, relatedModels, seoTitle,
-  seoDescription
-- `Project` — case study: location, country, year, buildingType, architect, body,
-  productModels, images, SEO
-- `DownloadFile` — id, title, kind, format, sizeBytes, url, language, relatedModels,
-  updatedAt
-- `Category` — recursive tree node
-- Support types: `ImageRef`, `SpecRow`, `Certification`, `DownloadKind`
+**`MediaPlaceholder` now switches on `src`:** photo when present, labelled block when
+absent. Both states occupy identical space, so nothing shifts when a photo arrives. The
+two decorative graphics in the Welcome block stay as placeholders on purpose — they are
+brand artwork, not photography, and stock would be wrong there.
 
-**`src/data/products.ts`** — 3 samples in 3 different categories with 5/8/10 spec rows,
-so any component built on this must handle the variation from the start:
-`HY007-S` (lever on rose), `BL031` (glass patch fitting), `LC04-8570` (Euro mortise lock).
+**Sizing.** Target was 2× display size under a 300 KB cap. Two large heroes could not hit
+300 KB at 2× without JPEG quality collapsing into visible artefacts, so the download
+script walks dimensions down before it lowers quality, with a hard quality floor of 60:
 
-**`src/data/categories.ts`** — 6 top-level categories, each with 2–3 sub-categories:
-Mortise Locks / Lever Handles / Glass Door Fittings / Panic Exit Devices / Cylinders /
-Accessories.
+| | |
+|---|---|
+| All 11 files | q=78, 1 965 KB total, largest 291 KB |
+| At full 2× | 9 of 11 |
+| Budget-limited | `hero-product-collection.jpg` @ 1.75×, `hero-company-corridor.jpg` @ 1.5× |
+| Aspect-ratio mismatches | 0 — CDN-side `fit=crop` gives each file its slot's exact ratio |
 
-**Helpers written now because the static export will need them:** `getAllCategoryPaths()`,
-`getAllProductParams()`, `findCategoryByPath()`, `getProductBySlug()`,
-`getProductsByCategory()`, `getRelatedProducts()`. All pure functions, all unused so far.
+**Alt text** written for all 11 (English, descriptive) — P10's alt audit is partly done.
+
+**Regression check:** 21 modules, 0 geometry mismatches, document height 10837px —
+identical to before the images landed.
+
+### Also done this session (housekeeping from the P0 review)
+
+- **Certification data corrected.** `EN 12209`, `EN 1906`, `EN 1935` and `CE` removed from
+  the sample products — including one that had leaked into a public-facing `seoDescription`.
+  Only ISO 9001 and ANSI/BHMA Grade 3 remain, both client-confirmed as real. The file
+  header now records the verification status of each standard.
+- **`src/components/ui/button.tsx` deleted** (decision 5). Dead shadcn scaffold, name
+  collision with `shared/Button.tsx`, violated colour rules 3–4. Build confirmed clean
+  after removal.
+- **`MediaSlot` is now an alias of `ImageRef`** — one image contract site-wide instead of
+  two near-identical shapes drifting apart.
 
 ---
 
-## Next: Phase 1 — Site shell and routing foundation
+## Next: P2 — Site skeleton
 
 The structural phase everything else sits on. In order:
 
@@ -66,57 +77,57 @@ The structural phase everything else sits on. In order:
    inside `src/app/page.tsx`, so a second page would have no navigation.
 2. **Move components out of the clone namespace.**
    `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/` → `src/components/site/`.
-   The current path records which site the layout was copied from — wrong for a real product.
 3. **Point the header nav at real routes.** Every link is `href="#"` today. Set the
    `current` flag per route so the active item picks up brand red (colour rule 1).
-4. **Create stub pages** for `/products`, `/projects`, `/downloads`, `/company`,
-   `/contact` so nothing 404s.
-5. **Done when:** every nav link lands on a real page, `npm run build` passes, and `/`
-   renders byte-identically to now.
+   The flag is already wired in `SiteHeader.tsx` — only the data needs filling in.
+4. **Footer links to real routes.**
+5. **Custom 404** at `src/app/not-found.tsx`.
+6. **Stub pages** for `/products`, `/projects`, `/downloads`, `/company`, `/contact`.
+7. **Done when:** every nav and footer link lands on a real page, build passes, and `/`
+   still renders identically.
 
-**Regression guard for step 1–2:** the homepage geometry is verified — 21 modules at
-fixed offsets, document height 10838px at a 1512×900 viewport. After moving files, re-run
-that check before committing. The measurement script is recorded in
+**Regression guard for steps 1–2:** the homepage geometry is verified — 21 modules at
+fixed offsets, document height 10837px at a 1512×900 viewport. Re-run that check before
+committing; the script is in
 `docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/VISUAL_QA.md`.
 
 ---
 
-## Open decisions — need your call
+## Open decisions
 
-| # | Decision | Blocks |
-|---|---|---|
-| 1 | **The Phase 0 brief referenced a "阶段清单" that was not in the message.** The phase list in `BUILD_PLAN.md` is my draft from the route structure. Confirm or replace it. | All planning |
-| 2 | How inquiry emails get delivered — a static export cannot process form submissions | Phase 8 |
-| 3 | Category depth in URLs: is `/products/levers/hy007-s` enough, or do sub-categories need their own level? Sub-categories exist in the data; no route uses them. | Phase 3 |
-| 4 | Flip the footer to `--color-surface-dark`? Token defined, unused. | Phase 1 |
-| 5 | Delete `src/components/ui/button.tsx`? Dead shadcn scaffold, violates colour rules 3–4, name collides with `shared/Button.tsx`. | Phase 1 |
-| 6 | Real domain, for canonical URLs and sitemap | Phase 9 |
+None outstanding. All six from P0 were answered and are recorded in
+[BUILD_PLAN.md](BUILD_PLAN.md#decisions).
 
 ---
 
 ## Known pitfalls
 
-Things that will bite if forgotten. Full detail in [BUILD_PLAN.md](BUILD_PLAN.md).
-
 - **Static export.** Every `[dynamic]` route needs `generateStaticParams()`. No API
-  routes, no server actions, no server-side form handling.
-- **Sample product data is invented** — dimensions, materials and certifications alike.
-  None of it is verified. Certification claims are a legal exposure, not just a content
-  bug; they must not reach a public build unreviewed.
-- **Site-wide `noindex` is deliberate** (`src/app/layout.tsx`). This is an unpublished
-  prototype. Removing it is a Phase 9 step, not a cleanup.
+  routes, no server actions, no server-side form handling. The P5 inquiry form posts
+  straight to Web3Forms from the browser.
+- **Web3Forms key** goes in `NEXT_PUBLIC_W3F_KEY`. It is public by nature — that is how
+  Web3Forms works — so do not treat it as a secret, but do keep it out of the repo.
+- **Stock photos are placeholders, not products.** The 11 homepage images show generic
+  hardware and interiors. They must not be read as a Canton product catalogue. P11
+  replaces them.
+- **Sample product data is invented** — dimensions, materials, finishes, cycle ratings.
+  Certifications are now correct (ISO 9001, ANSI/BHMA Grade 3 only). Every future
+  certification claim must be checked against a real test report before it ships.
+- **Site-wide `noindex` is deliberate** and stays until launch (decision 6). Removing it
+  is a launch step, not a cleanup.
 - **Spacing utilities are already pixels.** Root font-size is 62.5%, `--spacing: 0.1rem`,
   so `p-24` means exactly 24px. Do not convert these numbers.
 - **Colour rules are binding.** See the top of `src/app/globals.css`. Guard command:
   `grep -rni "shadow\|gradient\|rounded" src/` should return only comments and
   `--radius-card`.
 - **Promo-bar link contrast is 4.04:1**, under WCAG AA 4.5:1 for 18px text. Specified
-  that way (`#E32322` on `#121212`) and left as specified. Options if it needs to pass:
-  lighten the on-dark link to ~`#FF5A55` (≈5.9:1), or keep white text with a red underline.
-- **`--color-surface-alt`, `--color-surface-dark`, `--color-brand-tint` are defined but
-  unused.** No alternating blocks, no dark footer, no badges in the current layout.
+  that way and left as specified. Fix options if it ever needs to pass: lighten the
+  on-dark link to ~`#FF5A55` (≈5.9:1), or use white text with a red underline.
 - **Header modals unimplemented.** Language / search / mega-menu are three inert buttons.
-- **Responsive below 1376px** is structurally present but has never been visually reviewed.
-- **`canton-demo.zip` is gitignored** — regenerate from `out/` when you need it. Note that
-  Windows `Compress-Archive` writes backslash path separators, which breaks the directory
+- **Responsive below 1376px** is structurally present but has never been visually
+  reviewed. That is P9.
+- **`canton-demo.zip` is gitignored** — regenerate from `out/` when needed. Windows
+  `Compress-Archive` writes backslash path separators, which breaks the directory
   structure on most static hosts; build the zip with explicit forward-slash entry names.
+- **Images are not rebuilt by `npm run build`.** They are committed files. Re-run
+  `node scripts/download-homepage-images.mjs` only if a slot's aspect ratio changes.

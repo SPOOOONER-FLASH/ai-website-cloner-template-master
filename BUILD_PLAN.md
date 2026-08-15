@@ -1,24 +1,9 @@
 # Canton Hyland — Build Plan
 
-> **⚠ The phase list below is a DRAFT awaiting your confirmation.**
-> Your Phase 0 brief said "write the full content of the phase list below", but the
-> list did not come through in the message — only the route structure did. Everything
-> in **Phase list** is reconstructed from the route structure, the project background
-> and the current state of the code. Correct it and it gets replaced wholesale; nothing
-> downstream depends on it yet.
-
----
-
-## What this project is
-
 The English-language website for **Canton Hyland**, a Chinese manufacturer of door locks
 and architectural hardware selling to overseas architects and project buyers.
 
-Today it is a single-page prototype. The goal is a full multi-page catalogue site, built
-incrementally across many short sessions.
-
-**Current state:** homepage only, at `/`. Layout was reverse-engineered from `fsb.de`
-and is pixel-exact at 1512px. Brand colour system landed. Static export working.
+Built incrementally across many short sessions. **Domain:** `https://www.cantonlock.com`
 
 ---
 
@@ -27,7 +12,7 @@ and is pixel-exact at 1512px. Brand colour system landed. Static export working.
 The developer is not a programmer and each session has a limited budget. So:
 
 1. **One phase per session.** Phases are sized to finish inside one session. If a phase
-   is running long, stop at a clean commit and note where you got to.
+   runs long, stop at a clean commit and note where you got to.
 2. **Commit at the end of every phase.** The repo is the undo button.
 3. **`PROGRESS.md` is the handoff.** Read it first in a new session; it says what phase
    we are on and what to do next. Update it before finishing.
@@ -36,85 +21,136 @@ The developer is not a programmer and each session has a limited budget. So:
 
 ---
 
+## Phase list
+
+*Confirmed 2026-08-15.*
+
+| # | Phase | Status |
+|---|---|---|
+| **P0** | **Foundation** — git, data structures, route planning, BUILD_PLAN, PROGRESS | ✅ Done |
+| **P1** | **Homepage imagery** — replace placeholder blocks with real hardware photography | ✅ Done |
+| **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | Next |
+| **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | |
+| **P4** | **Product overview + category pages + listing + filtering** | |
+| **P5** | **Contact page + inquiry form** | |
+| **P6** | **About us / company capability page** | |
+| **P7** | **Project listing + project detail** (incl. related-products module) | |
+| **P8** | **Download centre** | |
+| **P9** | **Site-wide mobile responsive** | |
+| **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | |
+| **P11** | **Real assets and final content** — Canton's own product photography and signed-off copy | |
+
+**Ordering rationale (from the client):**
+- **P1 first** so the demo can be shown to management as soon as possible.
+- **P3 after the skeleton but before the other pages**, because the product detail page is
+  the key test of whether building this in-house is viable at all.
+
+---
+
 ## Route structure
 
 | Route | Page | Status |
 |---|---|---|
 | `/` | Homepage | ✅ Done |
-| `/products` | Product overview — all categories | Planned |
-| `/products/[category]` | Category listing | Planned |
-| `/products/[category]/[slug]` | Product detail | Planned |
-| `/projects` | Reference case studies, listing | Planned |
-| `/projects/[slug]` | Case study detail | Planned |
-| `/downloads` | Download centre | Planned |
-| `/company` | About us | Planned |
-| `/contact` | Contact + inquiry | Planned |
+| `/products` | Product overview — all categories | P4 |
+| `/products/[category]` | Category listing + filters | P4 |
+| `/products/[category]/[slug]` | Product detail | P3 |
+| `/projects` | Reference case studies, listing | P7 |
+| `/projects/[slug]` | Case study detail | P7 |
+| `/downloads` | Download centre | P8 |
+| `/company` | About us | P6 |
+| `/contact` | Contact + inquiry | P5 |
 
 `trailingSlash: true` is set, so every route exports as `<route>/index.html`.
 
+**No sub-category route level.** `/products/levers/hy007-s`, never
+`/products/levers/lever-on-rose/hy007-s`. Sub-categories exist in `categories.ts` as a
+**filter dimension only** (used in P4), not as a URL segment. Rationale: shorter URLs read
+better for SEO, far fewer static pages to generate, and — most importantly — re-organising
+sub-categories later will not change any published URL, so no search ranking is lost.
+
 ---
 
-## Phase list  *(draft — see warning above)*
+## Phase detail
 
-### Phase 0 — Foundation ✅
-Git safety net, planning docs, content model. **No page components.**
-- `BUILD_PLAN.md`, `PROGRESS.md`
-- `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts`
+### P1 — Homepage imagery ✅
+Swap the placeholder blocks on `/` for real, commercially-licensed hardware photography.
+- `public/images/`, `IMAGE_CREDITS.md`, `src/components/.../content.ts`
 
-### Phase 1 — Site shell and routing foundation
-The single most important structural phase; everything after it depends on it.
-- Move `SiteHeader` / `SiteFooter` out of `page.tsx` into `src/app/layout.tsx` so every
-  page gets them for free.
+### P2 — Site skeleton
+- Move `SiteHeader` / `SiteFooter` from `page.tsx` into `src/app/layout.tsx` so every page
+  gets them for free.
 - Move components out of the clone namespace
   `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/` → `src/components/site/`.
-  That path encodes which site was cloned; it is wrong for a real product.
-- Point the header nav at real routes (every link is `href="#"` today).
-- Create stub pages for all 6 top-level routes so nothing 404s.
-- **Done when:** every nav link lands on a real page, build passes, `/` is unchanged.
+- Point the header nav at real routes (every link is `href="#"` today) and set the
+  `current` flag so the active item picks up brand red.
+- Footer links to real routes.
+- Custom 404 page (`src/app/not-found.tsx`).
+- Stub pages for all 6 top-level routes so nothing 404s.
+- **Done when:** every nav and footer link lands on a real page, build passes, `/` renders
+  identically to before.
 
-### Phase 2 — `/products` overview
-Grid of the 6 top-level categories, driven by `categories.ts`.
-- Reuse the existing teaser-card pattern; no new visual language.
-- **Done when:** all 6 categories render and link to their category page.
+### P3 — Product detail page ⭐
+The commercial core. Seven blocks:
+1. Breadcrumb + title + model number
+2. Hero image + gallery
+3. Spec table — **variable row count**, see the 5/8/10-row samples
+4. Material / finishes / door types
+5. Certification badges
+6. Attachments (datasheets, CAD)
+7. Related products
+- Needs `generateStaticParams()` from `getAllProductParams()`.
+- Includes the "Request a quote" button that carries the model number into the P5 form.
+- **Done when:** all 3 sample products render fully, including empty states for products
+  with no gallery and no attachments.
 
-### Phase 3 — `/products/[category]`
-Listing of products in a category, with `generateStaticParams()`.
-- Breadcrumb, category intro, product grid.
-- **Done when:** all 6 category pages build statically and list their products.
+### P4 — Product overview, category pages, listing, filtering
+- `/products` — grid of the 6 top-level categories.
+- `/products/[category]` — product listing with **sub-category filters** (decision 3).
+- `generateStaticParams()` from `getAllCategoryPaths()`, top level only.
 
-### Phase 4 — `/products/[category]/[slug]` — product detail
-The most content-dense page and the commercial core of the site.
-- Hero image + gallery, spec table (variable rows), material/finish/door type,
-  certification badges, attachments, related products.
-- **Done when:** the 3 sample products render completely, including empty-state
-  handling for products with no gallery or no attachments.
+### P5 — Contact page + inquiry form
+Uses **Web3Forms** (decision 2). Static export stays.
+- Access key from `NEXT_PUBLIC_W3F_KEY`; placeholder until the client supplies the real one.
+- Must include: honeypot spam trap, submit success/failure states, and auto-fill of the
+  product model when arriving from a product detail page's "Request a quote".
 
-### Phase 5 — `/projects` and `/projects/[slug]`
-Case studies. Needs a `src/data/projects.ts` with 2–3 samples first.
-- **Done when:** listing filters by building type; detail links back to products used.
+### P6 — About us / company capability
+History, manufacturing, quality system, certifications. Mostly editorial.
 
-### Phase 6 — `/downloads`
-Download centre grouped by `DownloadKind`. Needs `src/data/downloads.ts`.
-- **Done when:** grouping, file-type badges and sizes render; links resolve or are
-  clearly marked as pending.
+### P7 — Projects
+Listing + detail. Needs `src/data/projects.ts` first. Detail page links back to the
+products used.
 
-### Phase 7 — `/company`
-About us — history, manufacturing, quality system, certifications.
-- Mostly editorial; reuses existing hero and text modules.
+### P8 — Download centre
+Grouped by `DownloadKind`. Needs `src/data/downloads.ts`.
 
-### Phase 8 — `/contact` and inquiry form
-⚠ **Read "Static export" under Known constraints before starting this phase.**
-A static site cannot process a form submission on its own. This phase includes choosing
-how inquiries actually get delivered.
+### P9 — Mobile responsive
+Site-wide. Responsive classes exist but have never been visually reviewed below 1376px.
 
-### Phase 9 — SEO and metadata pass
-Per-page `metadata`, `sitemap.xml`, `robots.txt`, Open Graph, structured data for
-products. **Includes removing the site-wide `noindex`** — currently set in
-`src/app/layout.tsx` because this is an unpublished prototype. Do not remove it early.
+### P10 — SEO finishing
+Per-page `metadata`, `sitemap.xml`, `robots.txt`, Open Graph, Schema.org product markup,
+alt text audit. Canonical URLs on `https://www.cantonlock.com`.
+**Do not remove `noindex` in this phase** — see decision 6.
 
-### Phase 10 — Content population and final QA
-Swap placeholder copy and placeholder image blocks for real catalogue data and real
-photography. Responsive review below 1376px. Accessibility pass.
+### P11 — Real assets and final content
+Replace P1's stock photography with Canton's own product shots, and placeholder copy with
+signed-off text. Verify every certification claim against a real test report.
+
+---
+
+## Decisions
+
+*All resolved 2026-08-15.*
+
+| # | Decision | Outcome |
+|---|---|---|
+| 1 | Phase list | Confirmed, P0–P11 above |
+| 2 | Inquiry email delivery | **Web3Forms.** Keep `output: "export"`. Free, no account system, works with a static site. Key via `NEXT_PUBLIC_W3F_KEY`. |
+| 3 | URL depth | **No sub-category level.** `/products/[category]/[slug]`. Sub-categories are a filter dimension. |
+| 4 | Footer background | **Stay white.** White + a single full-bleed top rule is part of the restrained all-white language; a dark footer would put a block of visual weight at the page bottom and break the rhythm. `--color-surface-dark` is reserved for possible dark card modules later. |
+| 5 | `src/components/ui/button.tsx` | **Deleted** in P1. Dead code, name collision with `shared/Button.tsx`, violated colour rules 3–4. |
+| 6 | Domain | `https://www.cantonlock.com` for canonical and sitemap. **`noindex` stays until launch** — the demo still carries generic placeholder content. At launch, remove the `noindex` and nothing else changes. |
 
 ---
 
@@ -127,24 +163,23 @@ Each of these has already caused, or will cause, real work. Read before planning
 `out/`. Consequences:
 
 - **Every dynamic route needs `generateStaticParams()`.** `[category]` and `[slug]` must
-  be enumerable at build time. The helpers are already written:
-  `getAllCategoryPaths()` in `categories.ts`, `getAllProductParams()` in `products.ts`.
-- **No API routes, no server actions, no server-side form handling.** This directly
-  blocks the Phase 8 inquiry form. Options, to decide then: a hosted form service
-  (Formspree / Web3Forms / Tally), a `mailto:` fallback, or dropping the static export
-  for a Node host. Decide before building the form, not after.
-- **No `next/image` optimisation** (`images.unoptimized: true`). Images ship as-is.
+  be enumerable at build time. Helpers are already written: `getAllCategoryPaths()` in
+  `categories.ts`, `getAllProductParams()` in `products.ts`.
+- **No API routes, no server actions, no server-side form handling.** The inquiry form
+  posts directly to Web3Forms from the browser (decision 2).
+- **No `next/image` optimisation** (`images.unoptimized: true`). Images ship exactly as
+  they sit in `public/` — so they must be correctly sized and compressed *before* commit.
 - **Absolute asset paths.** The export references `/_next/...`, so it must be served from
   a domain root. A subdirectory deploy needs `basePath` + `assetPrefix` and a rebuild.
 
 ### Component namespace
 Components still live under `src/components/sites/www-fsb-de-bf263c85/en-7a4ba3ba/`.
 That folder name records which site the layout was cloned from — meaningless for a real
-product and confusing in a multi-page codebase. Phase 1 moves them.
+product. P2 moves them.
 
 ### Header and footer are not in a layout
 `src/app/layout.tsx` renders only `<html>`/`<body>`. `SiteHeader` and `SiteFooter` are
-mounted inside `src/app/page.tsx`, so a second page would have no navigation. Phase 1.
+mounted inside `src/app/page.tsx`, so a second page would have no navigation. P2.
 
 ### Brand colour rules — binding
 Written in full at the top of `src/app/globals.css`. Summary:
@@ -174,36 +209,34 @@ not the 10px root.
 | (arbitrary) | `max-[24.5625em]` | 393 |
 
 ### Spacing scale
-Root font-size is 62.5%, so `1rem = 10px` and `--spacing: 0.1rem`. This makes every
-Tailwind spacing utility equal its pixel value: `p-24` is exactly 24px, `gap-64` is 64px.
-Do not "convert" these numbers — they are already pixels.
+Root font-size is 62.5%, so `1rem = 10px` and `--spacing: 0.1rem`. Every Tailwind spacing
+utility equals its pixel value: `p-24` is exactly 24px, `gap-64` is 64px. Do not "convert"
+these numbers — they are already pixels.
 
 ### Layout grid
 `.layout` is a named-line grid with bands `full | popout | outset | content`. Children
 default to the `content` band (1376px at desktop); opt out with `.col-outset` /
-`.col-popout` / `.col-full`. Inside content, `.grid-cols` is a 24-column grid with a
-16px gap. Reuse it — do not invent a second grid system.
+`.col-popout` / `.col-full`. Inside content, `.grid-cols` is a 24-column grid with a 16px
+gap. Reuse it — do not invent a second grid system.
 
 ### Images
-There is no photography. Every image slot renders through `MediaPlaceholder`
-(flat block, correct aspect ratio, labelled). `ImageRef.src` is optional by design: set
-it when a real asset exists and the placeholder disappears with no component change.
+`ImageRef.src` is optional by design. When it is set the photo renders; when it is absent
+the slot falls back to `MediaPlaceholder` (flat block, correct aspect ratio, labelled).
+This means pages can be built before their photography exists, and adding a photo later
+needs no component change. Homepage photography landed in P1; the rest of the site still
+runs on placeholders.
 
-### Sample data is not real
-`src/data/products.ts` is invented placeholder data — dimensions, materials and
-**certifications** included. Nothing there has been verified. It must not reach a public
-build unreviewed; certification claims are a legal exposure, not just a content bug.
+### Certification data is a legal exposure
+Verified and usable today:
+- **ISO 9001** — continuously certified since 2002
+- **ANSI/BHMA Grade 3**
+
+Not yet verified, removed from the sample data until the client confirms: **EN 12209**,
+**CE**. Every certification claim must be checked against a real test report before it
+reaches a public build. This is not a content bug, it is a compliance risk.
 
 ---
 
 ## Open decisions
 
-Things that need a human call before the phase that depends on them.
-
-| # | Decision | Blocks |
-|---|---|---|
-| 1 | How inquiry emails get delivered from a static site | Phase 8 |
-| 2 | Category depth in URLs — is `/products/levers/hy007-s` enough, or do we need `/products/levers/lever-on-rose/hy007-s`? Sub-categories exist in the data but no route uses them. | Phase 3 |
-| 3 | Whether to flip the footer to `--color-surface-dark` (token defined, unused) | Phase 1 |
-| 4 | Delete `src/components/ui/button.tsx`? Dead shadcn scaffold, violates colour rules 3–4, and its name collides with `shared/Button.tsx`. | Phase 1 |
-| 5 | Real domain, for canonical URLs and sitemap | Phase 9 |
+None outstanding. New questions get added here as they come up.

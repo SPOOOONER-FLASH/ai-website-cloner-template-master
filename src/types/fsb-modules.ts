@@ -1,14 +1,16 @@
 /**
- * Content shapes for the four module types the target page is assembled from.
+ * Content shapes for the four module types the homepage is assembled from.
  * Derived from docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/PAGE_TOPOLOGY.md
  */
 
-export interface MediaSlot {
-  /** The ORIGINAL asset's aspect ratio, verbatim — e.g. "2880 / 1391". */
-  ratio: string;
-  /** Placeholder label describing what belongs in this slot. */
-  label: string;
-}
+import type { ImageRef } from "@/data/types";
+
+/**
+ * The homepage uses the same image contract as the rest of the site, so there is
+ * exactly one shape to reason about: set `src` and the photo renders, omit it and
+ * the slot falls back to a labelled placeholder block.
+ */
+export type MediaSlot = ImageRef;
 
 export interface HeroModuleContent {
   /** "stacked" = popout media above a caption row; "side" = 17/7 split on the content grid. */

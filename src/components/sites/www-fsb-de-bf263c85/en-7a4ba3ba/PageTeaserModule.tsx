@@ -42,7 +42,7 @@ function TeaserCard({ media, title, subtitle, href = "#" }: TeaserCardContent) {
       href={href}
       className="w-[calc(100%*3/4-1/4*var(--grid-gap))] min-w-[calc(100%*3/4-1/4*var(--grid-gap))] snap-start -outline-offset-1 pointer-fine:w-[calc(100%*1/2-1/2*var(--grid-gap))] pointer-fine:min-w-[calc(100%*1/2-1/2*var(--grid-gap))] hover-hover:hover:outline hover-hover:hover:outline-1 hover-hover:hover:outline-brand"
     >
-      <MediaPlaceholder ratio={media.ratio} label={media.label} className="aspect-square" />
+      <MediaPlaceholder {...media} className="aspect-square" />
       {/* `hover-hover:` here is a device-capability query, not a hover state. */}
       <p className="pt-16 text-c1 hover-hover:p-16 md:pt-24 md:hover-hover:p-24">
         <strong className="text-ink">{title}</strong>

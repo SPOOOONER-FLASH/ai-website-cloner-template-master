@@ -3,10 +3,19 @@ import type { Product } from "./types";
 /**
  * Sample product records — THREE only, to prove the shape.
  *
- * ⚠ PLACEHOLDER DATA. Every dimension, material, finish and certification below
- * is invented to exercise the content model. None of it has been verified against
- * a real Canton Hyland product or a real test report. Replace with catalogue data
- * before anything here is published — certification claims especially.
+ * ⚠ EVERY CERTIFICATION CLAIM MUST BE CHECKED LINE BY LINE AGAINST A REAL TEST
+ * REPORT BEFORE LAUNCH. This is a compliance risk, not a content bug.
+ *
+ * Certification status as confirmed by the client 2026-08-15:
+ *   ISO 9001              — real, continuously certified since 2002. OK to use.
+ *   ANSI/BHMA Grade 3     — real. OK to use.
+ *   EN 12209, EN 1906,
+ *   EN 1935, CE           — NOT YET VERIFIED. Removed from this file until the
+ *                           client confirms. Do not re-add them speculatively.
+ *
+ * ⚠ Everything else here — dimensions, materials, finishes, cycle ratings — is
+ * still invented placeholder data to exercise the content model. Replace with
+ * real catalogue data in P11.
  *
  * The three samples deliberately sit in three different categories and have
  * different spec-row counts, so any listing or detail component built on top of
@@ -39,7 +48,6 @@ export const products: Product[] = [
     certifications: [
       { name: "ANSI/BHMA Grade 3", standard: "ANSI/BHMA A156.13" },
       { name: "ISO 9001", standard: "ISO 9001:2015" },
-      { name: "CE", standard: "EN 1906" },
     ],
     heroImage: { ratio: "1 / 1", label: "产品主图 HY007-S 1:1", labelZh: "HY007-S 主图" },
     gallery: [
@@ -75,7 +83,6 @@ export const products: Product[] = [
     doorTypes: ["Frameless glass"],
     certifications: [
       { name: "ISO 9001", standard: "ISO 9001:2015" },
-      { name: "CE", standard: "EN 1935" },
     ],
     heroImage: { ratio: "1 / 1", label: "产品主图 BL031 1:1", labelZh: "BL031 主图" },
     gallery: [
@@ -116,7 +123,6 @@ export const products: Product[] = [
     certifications: [
       { name: "ANSI/BHMA Grade 3", standard: "ANSI/BHMA A156.13" },
       { name: "ISO 9001", standard: "ISO 9001:2015" },
-      { name: "CE", standard: "EN 12209" },
     ],
     heroImage: { ratio: "1 / 1", label: "产品主图 LC04-8570 1:1", labelZh: "LC04-8570 主图" },
     gallery: [
@@ -129,7 +135,7 @@ export const products: Product[] = [
     relatedModels: ["HY007-S"],
     seoTitle: "LC04-8570 Euro Mortise Lock Body 85/70 | Canton Hyland",
     seoDescription:
-      "DIN mortise lock body, 85 mm centres, 70 mm backset. Reversible latch, hardened deadbolt, EN 12209. Dimensioned drawings available.",
+      "DIN mortise lock body, 85 mm centres, 70 mm backset. Reversible latch, hardened deadbolt, ANSI/BHMA Grade 3. Dimensioned drawings available.",
   },
 ];
 

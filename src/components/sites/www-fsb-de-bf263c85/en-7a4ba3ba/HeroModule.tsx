@@ -34,7 +34,7 @@ function HeroStacked({ media, title, body, linkLabel, href = "#" }: HeroModuleCo
             <div className="layout">
               <div className="col-outset px-outset md:px-0">
                 <div className="col-span-full mb-16 md:mb-48">
-                  <MediaPlaceholder ratio={media.ratio} label={media.label} />
+                  <MediaPlaceholder {...media} />
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ function HeroSide({ media, title, body, linkLabel, href = "#" }: HeroModuleConte
         <div className="layout">
           <div className="group relative col-content grid grid-cols gap-x">
             <div className="col-span-full mb-16 md:mb-0 md:[grid-column:span_8/-1] xl:col-span-17">
-              <MediaPlaceholder ratio={media.ratio} label={media.label} />
+              <MediaPlaceholder {...media} />
             </div>
 
             <div className="col-span-full grid grid-cols-subgrid gap-x gap-y-16 md:order-first md:col-span-3 xl:col-span-7">
