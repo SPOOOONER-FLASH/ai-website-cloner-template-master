@@ -1,0 +1,424 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+ * Foundation for the Canton Hyland prototype
+ * (layout extracted from www.fsb.de/en/ — site-key www-fsb-de-bf263c85 / page-key en-7a4ba3ba)
+ *
+ * Geometry tokens (grid, spacing, type scale, breakpoints) are extracted 1:1 from
+ * the layout reference via getComputedStyle(). Colour is NOT — the palette below is
+ * the Canton Hyland brand system and deliberately departs from the reference.
+ * See docs/research/www-fsb-de-bf263c85/en-7a4ba3ba/DESIGN_TOKENS.md
+ * ------------------------------------------------------------------------- */
+
+/* ===========================================================================
+ * COLOUR RULES — these are binding. Read before changing any colour.
+ * ===========================================================================
+ *
+ * 1. BRAND RED IS FOR CLICKABLE THINGS ONLY.
+ *    Permitted: primary button fill, links, link hover, the CURRENTLY SELECTED
+ *    nav item, form focus borders.
+ *    A nav item that is not the current one is --color-ink, not brand.
+ *
+ * 2. NEVER RED: headings, body copy, icons, rules/dividers, decorative elements.
+ *    If it cannot be clicked, it does not get brand red.
+ *
+ * 3. NO GRADIENTS, NO METALLIC EFFECTS, NO GLOWS, NO SHADOWS.
+ *    The page is entirely flat. The only decorative artefact is the logo itself.
+ *
+ * 4. CARD RADIUS 0–2px, NO SHADOW. Hierarchy comes from whitespace and
+ *    --color-line rules — never from elevation.
+ *
+ * Text-colour ladder:
+ *    --color-ink            headings, body copy
+ *    --color-ink-secondary  captions, descriptions, secondary text
+ *    --color-ink-tertiary   decorative grey — icons, oversized display glyphs.
+ *                           NOT for body copy.
+ * ======================================================================== */
+
+@custom-variant hover-hover (@media (hover: hover));
+@custom-variant pointer-fine (@media (pointer: fine));
+
+@theme {
+  /* -- Breakpoints ------------------------------------------------------- */
+  /* Media queries resolve `rem` against the initial 16px, not the 10px root, */
+  /* so these land on 640 / 744 / 820 / 1032 / 1376 / 1512 px exactly.        */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 40rem; /* 640  */
+  --breakpoint-sm: 46.5rem; /* 744  */
+  --breakpoint-md: 51.25rem; /* 820  */
+  --breakpoint-lg: 64.5rem; /* 1032 */
+  --breakpoint-xl: 86rem; /* 1376 */
+  --breakpoint-2xl: 94.5rem; /* 1512 */
+
+  /* -- Spacing ----------------------------------------------------------- */
+  /* Root font-size is 62.5% (10px), so 0.1rem === 1px and `p-24` === 24px,  */
+  /* reproducing the target's --space-N scale utility-for-utility.           */
+  --spacing: 0.1rem;
+
+  /* -- Colours — Canton Hyland brand system ------------------------------ */
+  /* Interactive. Brand red is reserved for these; see COLOUR RULES above.  */
+  --color-brand: #e32322; /* links, primary button fill, current nav item */
+  --color-brand-hover: #c41c1b; /* hover */
+  --color-brand-active: #a11716; /* pressed */
+  --color-brand-tint: #fdeceb; /* light fill: tags, badges */
+
+  /* Text ladder. None of these is ever red. */
+  --color-ink: #121212; /* headings, body copy */
+  --color-ink-secondary: #6e6e73; /* captions, descriptions */
+  --color-ink-tertiary: #8e8e93; /* decorative grey: icons, display glyphs */
+
+  /* Structure */
+  --color-line: #e5e5e7; /* rules, borders, dividers */
+  --color-surface: #ffffff; /* primary background */
+  --color-surface-alt: #f5f5f7; /* alternating block background */
+  --color-surface-dark: #2c2c2e; /* footer, dark cards */
+
+  /* -- Radius ------------------------------------------------------------ */
+  /* Rule 4: 0–2px only. There is no larger radius token on purpose. */
+  --radius-card: 2px;
+
+  /* -- Typography -------------------------------------------------------- */
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  /* Type scale */
+  --text-h1: clamp(2.4rem, 2.3249rem + 0.191vw, 2.6rem);
+  --leading-h1: 3.2rem;
+  --tracking-h1: 0.052rem;
+  --text-h2: clamp(2.2rem, 2.125rem + 0.191vw, 2.4rem);
+  --leading-h2: 3.2rem;
+  --tracking-h2: 0.048rem;
+  --text-h3: clamp(1.6rem, 0.191vw + 1.525rem, 1.8rem);
+  --leading-h3: 2.4rem;
+  --tracking-h3: 0.036rem;
+  --text-c1: clamp(1.6rem, 0.191vw + 1.525rem, 1.8rem);
+  --leading-c1: 2.4rem;
+  --tracking-c1: 0.036rem;
+  --text-c2: 1.2rem;
+  --leading-c2: 1.6rem;
+  --tracking-c2: 0.024rem;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Layout grid */
+  --max-content-width: 144rem;
+  --max-popout-width: 160rem;
+  --grid-columns: 24;
+  --grid-gap: 1.6rem;
+  --layout-outset: clamp(1.6rem, 1.5282vw + 0.9994rem, 3.2rem);
+  --layout-content: min(
+    calc(100vw - var(--layout-outset) * 2),
+    calc(var(--max-content-width) - 2 * var(--layout-outset))
+  );
+  --layout-popout: minmax(
+    0,
+    calc((var(--max-popout-width) - var(--layout-content)) * 0.5 - var(--layout-outset))
+  );
+  --layout-full: 1fr;
+
+  /* Chrome */
+  --h-main-nav-banner: 4.8rem;
+  --h-main-nav-menu: 9.6rem;
+  --h-main-nav: calc(var(--h-main-nav-banner) + var(--h-main-nav-menu));
+  --button-height: 4.2rem;
+}
+
+@layer base {
+  html {
+    /* 1rem === 10px, matching the target so every token keeps its source value */
+    font-size: 62.5%;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    letter-spacing: var(--tracking-c1);
+    font-weight: var(--font-weight-regular);
+  }
+
+  /* Rule 3: flat only. Nothing in this project sets box-shadow, text-shadow,
+     filter: drop-shadow, or any gradient background. Rule 4 caps radius at 2px. */
+}
+
+@layer components {
+  /* -- Type utilities ---------------------------------------------------- */
+  .text-h1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-h1);
+    letter-spacing: var(--tracking-h1);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-h1-light {
+    font-size: var(--text-h1);
+    line-height: var(--leading-h1);
+    letter-spacing: var(--tracking-h1);
+    font-weight: var(--font-weight-regular);
+  }
+  .text-h2 {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+    letter-spacing: var(--tracking-h2);
+    font-weight: var(--font-weight-regular);
+  }
+  .text-h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    letter-spacing: var(--tracking-h3);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-c1 {
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    letter-spacing: var(--tracking-c1);
+    font-weight: var(--font-weight-regular);
+  }
+  .text-c2 {
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    letter-spacing: var(--tracking-c2);
+    font-weight: var(--font-weight-regular);
+  }
+
+  /* -- Prose block ------------------------------------------------------- */
+  .copy {
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    letter-spacing: var(--tracking-c1);
+    font-weight: var(--font-weight-regular);
+  }
+  .copy > :not([hidden]) ~ :not([hidden]) {
+    margin-top: var(--leading-c1);
+  }
+  .copy > :is(h1, h2, h3, h4, h5, h6) {
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    letter-spacing: var(--tracking-h3);
+    font-weight: var(--font-weight-bold);
+  }
+  .copy > * + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 4.8rem;
+  }
+  .copy ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .copy ul > li {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .copy ul > li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: currentColor;
+  }
+  .copy p > a {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* -- Named-line layout grid -------------------------------------------- */
+  .layout {
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--layout-full)
+      [popout-start] var(--layout-popout)
+      [outset-start] var(--layout-outset)
+      [content-start] var(--layout-content)
+      [content-end] var(--layout-outset)
+      [outset-end] var(--layout-popout)
+      [popout-end] var(--layout-full)
+      [full-end];
+  }
+  /* Direct children sit on the content band unless they opt into another one. */
+  .layout > * {
+    grid-column: content;
+  }
+  .layout > .col-content {
+    grid-column: content;
+  }
+  .layout > .col-outset {
+    grid-column: outset;
+  }
+  .layout > .col-popout {
+    grid-column: popout;
+  }
+  .layout > .col-full {
+    grid-column: full;
+  }
+
+  /* 24-column inner grid */
+  .grid-cols {
+    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  }
+  .grid-rows {
+    grid-template-rows: auto 1fr;
+  }
+  .gap {
+    gap: var(--grid-gap);
+  }
+  .gap-x {
+    column-gap: var(--grid-gap);
+  }
+
+  /* The target's fractional track widths (`.w-grid-1/2` etc.) are expressed inline as
+     Tailwind arbitrary values in PageTeaserModule, so that `pointer-fine:` can vary them. */
+
+  .px-outset {
+    padding-left: var(--layout-outset);
+    padding-right: var(--layout-outset);
+  }
+  .scroll-px-outset {
+    scroll-padding-left: var(--layout-outset);
+    scroll-padding-right: var(--layout-outset);
+  }
+  .outline-offset {
+    outline-offset: max(-0.1rem, -1px);
+  }
+  .outline-offset-outset {
+    outline-offset: calc(-1 * var(--layout-outset));
+  }
+
+  /* -- Buttons ----------------------------------------------------------- */
+  /* Rule 1: brand red fills the primary button. Rule 3: no shadow, no gradient.
+     Rule 4: radius capped at --radius-card (2px). */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--button-height); /* 42px */
+    padding-inline: 2.4rem;
+    border-radius: var(--radius-card);
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    letter-spacing: var(--tracking-c1);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    cursor: pointer;
+    transition:
+      background-color 0.15s,
+      color 0.15s;
+  }
+
+  .btn-primary {
+    background-color: var(--color-brand);
+    color: var(--color-surface);
+    border: 1px solid transparent;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-brand-hover);
+  }
+  .btn-primary:active {
+    background-color: var(--color-brand-active);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-ink);
+    border: 1px solid var(--color-ink);
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+  }
+  .btn-secondary:active {
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+  }
+
+  /* -- Form focus -------------------------------------------------------- */
+  /* Rule 1: the focus border is one of the five permitted brand-red uses. */
+  .field:focus-visible,
+  .field:focus {
+    outline: none;
+    border-color: var(--color-brand);
+  }
+
+  /* -- Small utilities --------------------------------------------------- */
+  .stack {
+    display: grid;
+  }
+  .stack > * {
+    grid-area: 1 / 1;
+  }
+
+  .underscore {
+    position: relative;
+    padding-bottom: 0.3rem;
+  }
+  .underscore::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .underscore:hover::after {
+    opacity: 1;
+  }
+
+  .horizontal-snap {
+    scrollbar-width: none;
+  }
+  .horizontal-snap::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* -- Module stack ------------------------------------------------------ */
+  /* `.modules` = space-y-96, lg:space-y-136 — but a spacer module owns its own    */
+  /* gap on both sides, so the flow margin around it is zeroed.                    */
+  .modules > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 9.6rem;
+  }
+  @media (min-width: 64.5rem) {
+    .modules > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 13.6rem;
+    }
+  }
+  .modules > * + [data-content-module="spacer"],
+  .modules > [data-content-module="spacer"] + * {
+    margin-top: 0 !important;
+  }
+
+  /* -- Spacer module ----------------------------------------------------- */
+  /* Heights cascade default -> sm -> md -> lg -> xl; unset steps fall through. */
+  .spacer {
+    height: var(--spacer-h-default, 0px);
+  }
+  @media (min-width: 46.5rem) {
+    .spacer {
+      height: var(--spacer-h-sm, var(--spacer-h-default, 0px));
+    }
+  }
+  @media (min-width: 51.25rem) {
+    .spacer {
+      height: var(--spacer-h-md, var(--spacer-h-sm, var(--spacer-h-default, 0px)));
+    }
+  }
+  @media (min-width: 64.5rem) {
+    .spacer {
+      height: var(
+        --spacer-h-lg,
+        var(--spacer-h-md, var(--spacer-h-sm, var(--spacer-h-default, 0px)))
+      );
+    }
+  }
+  @media (min-width: 86rem) {
+    .spacer {
+      height: var(
+        --spacer-h-xl,
+        var(--spacer-h-lg, var(--spacer-h-md, var(--spacer-h-sm, var(--spacer-h-default, 0px))))
+      );
+    }
+  }
+}
