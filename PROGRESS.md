@@ -13,7 +13,7 @@
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
 | **Build** | `npm run check` passing — 55 static pages (one existing font-link warning) |
-| **Git** | P9 ready to commit on `main` |
+| **Git** | P9 committed in `7017305` and pushed to `origin/main` |
 | **Next phase** | **P10 — SEO finishing** |
 
 ---
