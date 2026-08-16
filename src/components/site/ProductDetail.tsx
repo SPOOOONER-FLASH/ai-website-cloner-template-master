@@ -4,6 +4,7 @@ import { getRelatedProducts } from "@/data/products";
 import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { ProductCard } from "./ProductCard";
 
 interface ProductDetailProps {
   product: Product;
@@ -260,19 +261,11 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
 
           {relatedProducts.length ? (
             relatedProducts.map((related) => (
-              <Link
+              <ProductCard
                 key={related.model}
-                href={`/products/${related.categoryPath[0]}/${related.slug}/`}
-                className="group col-span-full border border-line hover:border-brand sm:col-span-4 md:col-span-6 xl:col-span-8"
-              >
-                <MediaPlaceholder {...related.heroImage} />
-                <div className="p-24">
-                  <p className="text-h3 text-ink group-hover:underline">{related.name}</p>
-                  <p className="mt-8 text-c1 text-ink-secondary">
-                    {related.modelTbc ? "Model available on request" : `Model ${related.model}`}
-                  </p>
-                </div>
-              </Link>
+                product={related}
+                className="col-span-full sm:col-span-4 md:col-span-6 xl:col-span-8"
+              />
             ))
           ) : (
             <div className="col-span-full xl:col-span-12">

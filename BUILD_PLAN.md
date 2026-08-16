@@ -31,8 +31,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P1** | **Homepage imagery** — replace placeholder blocks with real hardware photography | ✅ Done |
 | **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | ✅ Done |
 | **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | ✅ Done |
-| **P4** | **Product overview + category pages + listing + filtering** | Next |
-| **P5** | **Contact page + inquiry form** | |
+| **P4** | **Product overview + category pages + listing + filtering** | ✅ Done |
+| **P5** | **Contact page + inquiry form** | Next |
 | **P6** | **About us / company capability page** | |
 | **P7** | **Project listing + project detail** (incl. related-products module) | |
 | **P8** | **Download centre** | |
@@ -52,8 +52,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | Route | Page | Status |
 |---|---|---|
 | `/` | Homepage | ✅ Done |
-| `/products` | Product overview — all categories | P4 |
-| `/products/[category]` | Category listing + filters | P4 |
+| `/products` | Product overview — all categories | ✅ Done |
+| `/products/[category]` | Category listing + filters | ✅ Done |
 | `/products/[category]/[slug]` | Product detail | ✅ Done |
 | `/projects` | Reference case studies, listing | P7 |
 | `/projects/[slug]` | Case study detail | P7 |
@@ -98,10 +98,13 @@ The commercial core. Seven blocks:
   specifications, gallery images and attachments render honest empty states; products
   without a confirmed SKU do not send a made-up model value to the inquiry form.
 
-### P4 — Product overview, category pages, listing, filtering
-- `/products` — grid of the 6 top-level categories.
+### P4 — Product overview, category pages, listing, filtering ✅
+- `/products` — grid of the 16 top-level categories on cantonlock.com.
 - `/products/[category]` — product listing with **sub-category filters** (decision 3).
-- `generateStaticParams()` from `getAllCategoryPaths()`, top level only.
+- `generateStaticParams()` from `getTopLevelCategories()`, top level only.
+- **Completed:** 16 top-level categories from cantonlock.com, 16 statically exported
+  category pages, client-side sub-category filtering, shared product cards and honest
+  empty states. The client-owned Hyland mark now appears in the global header.
 
 ### P5 — Contact page + inquiry form
 Uses **Web3Forms** (decision 2). Static export stays.

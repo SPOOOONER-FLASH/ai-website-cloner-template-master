@@ -134,6 +134,13 @@ All 604×800, q=78. Transcribed into `src/data/company.ts`.
 | `intertek-tubular-lock-durability.webp` | Intertek durability report 140306043GZU-001, 28 Apr 2014 | 607 SS ET |
 | `celab-ce-panic-exit-device.webp` | CELAB CE Certificate of Conformity, EN 1125:2008 | Panic exit device series |
 
+## Brand — `public/images/brand/`
+
+| File | Source | Use |
+|---|---|---|
+| `canton-hyland-logo-source.png` | 甲方自有 Logo 源图（本次会话提供；与 cantonlock.com 页眉素材一致） | Archived source strip |
+| `hyland-mark.png` | Exact crop of the client source via `scripts/process-brand-logo.mjs` | Header emblem paired with a live Archivo wordmark |
+
 ## Unused sources
 
 Available in the client pack, converted but not yet placed: `023 ETAN Anti-Pick Panic Exit

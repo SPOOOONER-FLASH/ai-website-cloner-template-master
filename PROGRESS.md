@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P3 — Product detail page** ⭐ ✅ |
+| **Phase** | **P4 — Product catalogue and filtering** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run build` passing — 21 static pages, including 12 product detail pages |
+| **Build** | `npm run build` passing — 37 static pages: 16 category pages + 12 product details |
 | **Git** | clean tree, all work committed |
-| **Next phase** | **P4 — Product overview + category pages + listing + filtering** (**not started — do not begin without being asked**) |
+| **Next phase** | **P5 — Contact page + inquiry form** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -29,6 +29,8 @@
 | **P1** | Homepage imagery — 11 stock photos replace the placeholder blocks | `public/images/*.jpg`, `IMAGE_CREDITS.md`, `scripts/download-homepage-images.mjs`, `site/MediaPlaceholder.tsx`, `src/data/home.ts` |
 | **P2** | Site skeleton — chrome in the layout, components out of the clone namespace, all routes and links wired, 404 | `src/app/layout.tsx`, `src/app/{products,projects,downloads,company,contact}/page.tsx`, `src/app/not-found.tsx`, `src/components/site/**`, `src/data/home.ts` |
 | **P3** | Product detail page — seven content blocks, 12 statically exported product routes, verified empty states and model-aware inquiry links | `src/app/products/[category]/[slug]/page.tsx`, `src/components/site/ProductDetail.tsx` |
+| **P4** | Catalogue discovery — 16 Canton categories, overview grid, static category routes, sub-category filtering and shared cards | `src/app/products/page.tsx`, `src/app/products/[category]/page.tsx`, `src/components/site/{CategoryCard,CategoryFilter,ProductCard}.tsx`, `src/data/categories.ts` |
+| — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop** — real photography, company profile, category tree and 12 real products replace all stock and invented data | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
 ### P1 detail
@@ -163,17 +165,16 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P4 — Product overview + category pages + listing + filtering
+## Next: P5 — Contact page + inquiry form
 
-Build the catalogue discovery layer using the existing real product and category data:
+Build the static-compatible inquiry flow already agreed in decision 2:
 
-1. `/products` — overview of the real top-level categories.
-2. `/products/[category]` — product listing for each category.
-3. Sub-category values remain filters only; they do not add a URL level.
-4. Reuse the P3 product-card treatment and existing site header/footer components.
-5. Generate every category route for the static export and provide clear empty states.
+1. Post directly to Web3Forms using `NEXT_PUBLIC_W3F_KEY`.
+2. Add honeypot protection and explicit submitting/success/failure states.
+3. Read `product` and `model` query parameters from P3 inquiry links.
+4. Keep `output: "export"`; no API route, server action or server-side mail handler.
 
-Do not start P4 automatically; begin it only when the next session explicitly asks for
+Do not start P5 automatically; begin it only when the next session explicitly asks for
 the next unfinished phase.
 
 ---
@@ -222,3 +223,4 @@ Decisions 1–6 from P0 are answered and recorded in
   structure on most static hosts; build the zip with explicit forward-slash entry names.
 - **Images are not rebuilt by `npm run build`.** They are committed files. Re-run
   `node scripts/download-homepage-images.mjs` only if a slot's aspect ratio changes.
+  Re-run `node scripts/process-brand-logo.mjs` only when the supplied Logo source changes.

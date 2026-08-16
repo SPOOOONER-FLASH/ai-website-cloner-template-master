@@ -6,7 +6,8 @@ import type { Product } from "./types";
  * SOURCES, and what each one actually supports:
  *   - Product names, model codes and photography: the client's asset pack delivered
  *     2026-08-15 (WeChat). First-party, no stock library.
- *   - Category tree and product range: the client's Alibaba storefront, read 2026-08-15.
+ *   - Category tree and product range: the client's cantonlock.com catalogue, checked
+ *     2026-08-16. Alibaba remains a secondary source for delivered product imagery.
  *   - Company standards claims: the client's own English profile (公司英文简介.docx).
  *
  * ⚠ SPEC TABLES ARE MOSTLY EMPTY, ON PURPOSE.
@@ -139,7 +140,7 @@ export const products: Product[] = [
     name: "Four Bolt Mortise Lock Case",
     nameZh: "四方舌插芯锁体",
     series: "Hyland LC14",
-    categoryPath: ["mortise-locks", "lock-case"],
+    categoryPath: ["lock-cases"],
     summary:
       "A four-bolt mortise lock case with 85 mm centres and 50 mm backset, for Euro profile cylinders.",
     // The only specs stated in the client's own product name. Nothing else is invented.
@@ -174,7 +175,7 @@ export const products: Product[] = [
     name: "Black Tubular Lever Lock Set",
     nameZh: "黑色管式执手锁",
     series: "Hyland Tubular",
-    categoryPath: ["lever-handle-locks", "tubular-lever"],
+    categoryPath: ["lever-handles"],
     summary:
       "A square-profile tubular lever set in matt black, with keyed outside lever and adjustable latch.",
     specs: [],
@@ -201,7 +202,7 @@ export const products: Product[] = [
     name: "Stainless Steel Lever Handle Lock",
     nameZh: "不锈钢执手锁",
     series: "Hyland Lever",
-    categoryPath: ["lever-handle-locks", "mortise-lever"],
+    categoryPath: ["lever-handles"],
     summary:
       "A stainless steel lever set on backplate, for mortise lock cases with Euro cylinder preparation.",
     specs: [],
@@ -230,7 +231,7 @@ export const products: Product[] = [
     name: "Tubular Knob Lock",
     nameZh: "管式球形锁",
     series: "Hyland Knob",
-    categoryPath: ["knob-locks", "tubular-knob"],
+    categoryPath: ["knob-locks", "tubular-locks"],
     summary:
       "A tubular knob lock set for residential and light commercial doors, in entry, privacy and passage functions.",
     specs: [],
@@ -257,7 +258,7 @@ export const products: Product[] = [
     name: "Cylindrical Knob Lock",
     nameZh: "筒式球形锁",
     series: "Hyland Knob",
-    categoryPath: ["knob-locks", "cylindrical-knob"],
+    categoryPath: ["knob-locks", "heavy-duty-cylindrical-locks"],
     summary:
       "A heavy-duty cylindrical knob lock for commercial traffic, available in communication and classroom functions.",
     specs: [],
@@ -286,7 +287,7 @@ export const products: Product[] = [
     name: "ANSI Grade 3 Keyed Deadbolt Lock Set",
     nameZh: "美标三级深栓锁",
     series: "Hyland Deadbolt",
-    categoryPath: ["deadbolt-locks"],
+    categoryPath: ["deadbolts"],
     summary:
       "A single cylinder keyed deadbolt with hardened bolt, supplied with strike plate and fixings.",
     specs: [],
@@ -319,7 +320,7 @@ export const products: Product[] = [
     name: "Glass Door Patch Fitting Set",
     nameZh: "玻璃门夹具套装",
     series: "Hyland Glass",
-    categoryPath: ["glass-door-fittings"],
+    categoryPath: ["glass-door-accessories", "patch-fittings"],
     summary:
       "A stainless steel patch fitting set for frameless toughened glass doors, with matching pivots and cover plates.",
     specs: [],
@@ -348,7 +349,7 @@ export const products: Product[] = [
     name: "Wooden Door Floor Hinge",
     nameZh: "木门地弹簧",
     series: "Hyland Floor Spring",
-    categoryPath: ["floor-hinges"],
+    categoryPath: ["door-closers"],
     summary:
       "A concealed floor spring for wooden doors, supplied with pivot brackets, cover plates and top centre.",
     specs: [],

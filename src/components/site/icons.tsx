@@ -1,4 +1,6 @@
+import Image from "next/image";
 import type { SVGProps } from "react";
+import { cn } from "@/lib/utils";
 
 /**
  * Generic line icons for the Canton Hyland prototype.
@@ -60,22 +62,23 @@ export function MenuIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 /**
- * [SUB] Text wordmark standing in for the target's logo SVG, which is a registered
- * trademark and is not copied. Sized to sit on the same 16px / 24px cap-height rail.
+ * Client-owned Hyland mark paired with a live Archivo wordmark. The long legacy raster
+ * company name is deliberately not used: this keeps the header sharp and restrained.
  */
 export function Wordmark({ className }: { className?: string }) {
   return (
-    <span
-      className={className}
-      style={{
-        fontWeight: 700,
-        letterSpacing: "0.05em",
-        lineHeight: 1,
-        whiteSpace: "nowrap",
-        textTransform: "uppercase",
-      }}
-    >
-      Canton Hyland
+    <span className={cn("flex items-center gap-12 whitespace-nowrap", className)}>
+      <Image
+        src="/images/brand/hyland-mark.png"
+        alt=""
+        width={254}
+        height={150}
+        priority
+        className="h-32 w-auto sm:h-40"
+      />
+      <span className="text-[1.4rem] font-bold uppercase leading-none tracking-[0.05em] sm:text-[1.8rem]">
+        Canton Hyland
+      </span>
     </span>
   );
 }

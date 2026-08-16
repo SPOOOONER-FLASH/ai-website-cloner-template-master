@@ -1,8 +1,9 @@
 import type { Category } from "./types";
 
 /**
- * Product category tree — mirrors the client's own Alibaba storefront categories,
- * read from https://cnhyland.en.alibaba.com/productlist.html on 2026-08-15.
+ * Product category tree — mirrors the client's own cantonlock.com catalogue,
+ * read from https://www.cantonlock.com/Index.php?a=index&c=Lists&m=home&tid=75
+ * on 2026-08-16. Prices and marketplace fields are intentionally excluded.
  *
  * The shape of this tree IS the URL structure: /products/[category]/[slug].
  * Renaming a slug changes a live URL, so treat slugs as stable once published.
@@ -29,8 +30,30 @@ export const categories: Category[] = [
     ],
   },
   {
-    slug: "lever-handle-locks",
-    name: "Lever Handle Locks",
+    slug: "night-latches-rim-locks",
+    name: "Night Latches & Rim Locks",
+    nameZh: "夜间锁与外装锁",
+    summary: "Surface-mounted night latches and rim-lock hardware from the Canton catalogue.",
+    image: {
+      src: "/images/products/night-latch-rim-lock.webp",
+      ratio: "1 / 1",
+      label: "Night latch and rim lock",
+    },
+  },
+  {
+    slug: "stainless-steel-handles",
+    name: "Stainless Steel Handles",
+    nameZh: "不锈钢拉手",
+    summary: "Stainless steel pull and grip handles for timber, metal and glass doors.",
+    image: {
+      src: "/images/products/stainless-steel-glass-door-pull-handle.webp",
+      ratio: "1 / 1",
+      label: "Stainless steel pull handle",
+    },
+  },
+  {
+    slug: "lever-handles",
+    name: "Lever Handles",
     nameZh: "执手锁",
     summary:
       "Lever handle sets in stainless steel and zinc alloy, for commercial and residential doors, in tubular and mortise preparations.",
@@ -39,10 +62,6 @@ export const categories: Category[] = [
       ratio: "1 / 1",
       label: "Stainless steel lever handle lock set on backplate",
     },
-    children: [
-      { slug: "tubular-lever", name: "Tubular Lever", nameZh: "管式执手", summary: "Bored-hole lever sets for interior doors.", image: { ratio: "1 / 1", label: "Tubular lever lock" } },
-      { slug: "mortise-lever", name: "Mortise Lever", nameZh: "插芯执手", summary: "Lever sets on plate for mortise lock cases.", image: { ratio: "1 / 1", label: "Mortise lever set" } },
-    ],
   },
   {
     slug: "knob-locks",
@@ -56,31 +75,47 @@ export const categories: Category[] = [
       label: "Stainless steel cylindrical knob lock set",
     },
     children: [
-      { slug: "cylindrical-knob", name: "Cylindrical Knob", nameZh: "筒式球形锁", summary: "Heavy-duty cylindrical knob sets for commercial traffic.", image: { ratio: "1 / 1", label: "Cylindrical knob lock" } },
-      { slug: "tubular-knob", name: "Tubular Knob", nameZh: "管式球形锁", summary: "Tubular knob sets for residential and light commercial use.", image: { ratio: "1 / 1", label: "Tubular knob lock" } },
+      { slug: "commercial-locks", name: "Commercial Locks", nameZh: "商用锁", summary: "Commercial knob-lock configurations.", image: { ratio: "1 / 1", label: "Commercial lock" } },
+      { slug: "heavy-duty-cylindrical-locks", name: "Heavy Duty Cylindrical Locks", nameZh: "重型筒式锁", summary: "Heavy-duty cylindrical lock configurations.", image: { src: "/images/products/cylindrical-knob-lock.webp", ratio: "1 / 1", label: "Heavy duty cylindrical lock" } },
+      { slug: "light-duty-cylindrical-locks", name: "Light Duty Cylindrical Locks", nameZh: "轻型筒式锁", summary: "Light-duty cylindrical lock configurations.", image: { ratio: "1 / 1", label: "Light duty cylindrical lock" } },
+      { slug: "tubular-locks", name: "Tubular Locks", nameZh: "管式锁", summary: "Tubular knob-lock configurations.", image: { src: "/images/products/tubular-knob-lock.webp", ratio: "1 / 1", label: "Tubular lock" } },
+      { slug: "wafer-locks", name: "Wafer Locks", nameZh: "片簧锁", summary: "Wafer lock configurations.", image: { ratio: "1 / 1", label: "Wafer lock" } },
     ],
   },
   {
-    slug: "mortise-locks",
-    name: "Mortise Locks & Cylinders",
-    nameZh: "插芯锁体与锁芯",
-    summary:
-      "Mortise lock cases and profile cylinders, including master key and construction key systems.",
+    slug: "door-hinges",
+    name: "Door Hinges",
+    nameZh: "门合页",
+    summary: "Door hinges listed in the Canton building-hardware catalogue.",
     image: {
-      src: "/images/products/lc14-8550-mortise-lock-case.webp",
+      src: "/images/products/stainless-steel-door-hinge.webp",
       ratio: "1 / 1",
-      label: "Four bolt mortise lock case with stainless steel forend",
+      label: "Stainless steel door hinge",
     },
-    children: [
-      { slug: "lock-case", name: "Mortise Lock Bodies", nameZh: "锁体", summary: "Lock cases in Euro and multi-bolt configurations.", image: { ratio: "1 / 1", label: "Mortise lock body" } },
-      { slug: "profile-cylinder", name: "Profile Cylinders", nameZh: "锁芯", summary: "Euro profile cylinders, master keyed on request.", image: { ratio: "1 / 1", label: "Profile cylinder" } },
-    ],
   },
   {
-    slug: "deadbolt-locks",
-    name: "Deadbolt Locks",
+    slug: "bathroom-accessories",
+    name: "Bathroom Accessories",
+    nameZh: "浴室配件",
+    summary: "Bathroom hardware and accessory products from the official Canton catalogue.",
+    image: { ratio: "1 / 1", label: "Bathroom accessory" },
+  },
+  {
+    slug: "brass-steel-hinges",
+    name: "Brass & Steel Hinges",
+    nameZh: "铜与钢合页",
+    summary: "Brass and steel hinge ranges for architectural door applications.",
+    image: {
+      src: "/images/products/stainless-steel-door-hinge.webp",
+      ratio: "1 / 1",
+      label: "Brass and steel door hinges",
+    },
+  },
+  {
+    slug: "deadbolts",
+    name: "Deadbolts",
     nameZh: "深栓锁",
-    summary: "Single and double cylinder deadbolts, ANSI Grade 3, for timber and steel doors.",
+    summary: "Single- and double-cylinder deadbolt products from the Canton catalogue.",
     image: {
       src: "/images/products/ansi-grade-3-keyed-deadbolt.webp",
       ratio: "1 / 1",
@@ -88,11 +123,21 @@ export const categories: Category[] = [
     },
   },
   {
-    slug: "door-handles",
-    name: "Door Handles & Pulls",
-    nameZh: "拉手",
-    summary:
-      "Grip handle sets, storefront push-pull handles, concealed sliding door pulls and glass door pull handles.",
+    slug: "door-closers",
+    name: "Door Closers",
+    nameZh: "闭门器",
+    summary: "Door-closing hardware, including concealed floor-spring applications.",
+    image: {
+      src: "/images/products/wooden-door-floor-hinge.webp",
+      ratio: "1 / 1",
+      label: "Concealed floor spring and door-closing hardware",
+    },
+  },
+  {
+    slug: "grip-handle-sets",
+    name: "Grip Handle Sets",
+    nameZh: "拉手套装",
+    summary: "Grip, pull and concealed handle sets for entrance and sliding doors.",
     image: {
       src: "/images/products/600-concealed-sliding-door-handle.webp",
       ratio: "1 / 1",
@@ -100,43 +145,62 @@ export const categories: Category[] = [
     },
   },
   {
-    slug: "glass-door-fittings",
-    name: "Glass Door Fittings",
+    slug: "glass-door-accessories",
+    name: "Glass Door Accessories",
     nameZh: "玻璃门夹具",
-    summary: "Patch fittings and pull handles for frameless toughened glass assemblies.",
+    summary: "Patch fittings and pull handles for frameless glass-door assemblies.",
     image: {
       src: "/images/products/glass-door-patch-fitting-set.webp",
       ratio: "1 / 1",
       label: "Stainless steel glass door patch fitting set",
     },
+    children: [
+      { slug: "patch-fittings", name: "Glass Door Patch Fittings", nameZh: "玻璃门夹", summary: "Patch fittings for frameless glass doors.", image: { src: "/images/products/glass-door-patch-fitting-set.webp", ratio: "1 / 1", label: "Glass door patch fitting" } },
+      { slug: "glass-door-handles", name: "Glass Door Handles", nameZh: "玻璃门拉手", summary: "Pull handles for glass doors.", image: { src: "/images/products/stainless-steel-glass-door-pull-handle.webp", ratio: "1 / 1", label: "Glass door pull handle" } },
+    ],
   },
   {
-    slug: "floor-hinges",
-    name: "Floor Hinges",
-    nameZh: "地弹簧",
-    summary: "Concealed floor springs and pivot sets for wooden and glass doors.",
-    image: {
-      src: "/images/products/wooden-door-floor-hinge.webp",
-      ratio: "1 / 1",
-      label: "Wooden door floor hinge with cover plates and pivot brackets",
-    },
-  },
-  {
-    slug: "building-hardware",
-    name: "Building Hardware",
+    slug: "hardware-accessories",
+    name: "Hardware Accessories",
     nameZh: "建筑五金配件",
-    summary:
-      "Hinges, night latches, bolts, door viewers, stoppers and the accessories that complete a hardware schedule.",
+    summary: "Door viewers, stoppers, transfer devices, bolts, indicators, latches and guards.",
     image: {
       src: "/images/products/stainless-steel-door-hinge.webp",
       ratio: "1 / 1",
       label: "Pair of stainless steel ball bearing door hinges",
     },
     children: [
-      { slug: "hinges", name: "Hinges", nameZh: "合页", summary: "Ball bearing and anti-pry security hinges.", image: { ratio: "1 / 1", label: "Door hinge" } },
-      { slug: "rim-locks", name: "Night Latches & Rim Locks", nameZh: "外装门锁", summary: "Surface-mounted night latches and rim locks.", image: { ratio: "1 / 1", label: "Night latch" } },
-      { slug: "accessories", name: "Accessories", nameZh: "配件", summary: "Bolts, viewers, stoppers, chains and house numbers.", image: { ratio: "1 / 1", label: "Building hardware accessory" } },
+      { slug: "armoured-lock-covers", name: "Armoured Lock Covers", nameZh: "装甲门锁护盖", summary: "Protective lock and cylinder covers.", image: { ratio: "1 / 1", label: "Armoured lock cover" } },
+      { slug: "door-viewers", name: "Door Viewers", nameZh: "猫眼", summary: "Door viewers for entrance doors.", image: { ratio: "1 / 1", label: "Door viewer" } },
+      { slug: "door-stoppers", name: "Door Stoppers", nameZh: "门吸", summary: "Floor- and wall-mounted door stoppers.", image: { ratio: "1 / 1", label: "Door stopper" } },
+      { slug: "power-transfer-devices", name: "Power Transfer Devices", nameZh: "过线器", summary: "Door power-transfer hardware.", image: { ratio: "1 / 1", label: "Door power transfer device" } },
+      { slug: "flush-bolts", name: "Door Flush Bolts", nameZh: "暗插销", summary: "Flush bolts for inactive door leaves.", image: { ratio: "1 / 1", label: "Door flush bolt" } },
+      { slug: "house-numbers", name: "House Numbers", nameZh: "门牌号", summary: "Door and gate identification numbers.", image: { ratio: "1 / 1", label: "House number" } },
+      { slug: "indicators", name: "Indicators", nameZh: "指示器", summary: "Door status and privacy indicators.", image: { ratio: "1 / 1", label: "Door indicator" } },
+      { slug: "latches", name: "Latches", nameZh: "门闩", summary: "Latch hardware and replacement components.", image: { ratio: "1 / 1", label: "Door latch" } },
+      { slug: "security-door-guards", name: "Security Door Guards", nameZh: "安全门扣", summary: "Secondary security guards for entrance doors.", image: { ratio: "1 / 1", label: "Security door guard" } },
     ],
+  },
+  {
+    slug: "lock-cases",
+    name: "Lock Cases",
+    nameZh: "锁体",
+    summary: "Mortise lock cases in multiple backset, centre-distance and bolt configurations.",
+    image: { src: "/images/products/lc14-8550-mortise-lock-case.webp", ratio: "1 / 1", label: "Mortise lock case" },
+  },
+  {
+    slug: "lock-cylinders",
+    name: "Lock Cylinders",
+    nameZh: "锁芯",
+    summary: "Profile and keyed cylinders, including master-key system applications.",
+    image: { ratio: "1 / 1", label: "Lock cylinder" },
+  },
+  {
+    slug: "sliding-hook-locks",
+    name: "Sliding Hook Locks",
+    nameZh: "推拉门钩锁",
+    summary: "Hook-lock hardware for sliding doors and narrow-stile applications.",
+    image: { ratio: "1 / 1", label: "Sliding hook lock" },
   },
 ];
 

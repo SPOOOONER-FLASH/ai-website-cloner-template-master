@@ -79,7 +79,7 @@ export function SiteHeader() {
 
             <div className="col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12">
               <Link href="/" className="flex flex-shrink-0 items-center text-ink">
-                <Wordmark className="pr-8 text-[1.6rem] sm:text-[2.4rem]" />
+                <Wordmark className="pr-8" />
               </Link>
 
               {/*

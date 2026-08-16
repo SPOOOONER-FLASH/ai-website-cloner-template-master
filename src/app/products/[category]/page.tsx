@@ -1,0 +1,70 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { CategoryFilter } from "@/components/site/CategoryFilter";
+import { getTopLevelCategories } from "@/data/categories";
+import { getProductsByCategory } from "@/data/products";
+
+interface CategoryPageProps {
+  params: Promise<{ category: string }>;
+}
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getTopLevelCategories().map((category) => ({ category: category.slug }));
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { category: categorySlug } = await params;
+  const category = getTopLevelCategories().find((item) => item.slug === categorySlug);
+
+  if (!category) return {};
+
+  return {
+    title: `${category.name} | Canton Hyland`,
+    description: category.summary,
+  };
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { category: categorySlug } = await params;
+  const category = getTopLevelCategories().find((item) => item.slug === categorySlug);
+
+  if (!category) notFound();
+
+  const products = getProductsByCategory(category.slug);
+  const options = category.children?.map(({ slug, name }) => ({ slug, name })) ?? [];
+
+  return (
+    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+      <section className="layout" aria-labelledby="category-title">
+        <div className="col-content grid w-full grid-cols gap-x-42 gap-y-24">
+          <nav aria-label="Breadcrumb" className="col-span-full flex gap-8 text-c2 text-ink-secondary">
+            <Link href="/" className="hover:text-brand-hover hover:underline">Home</Link>
+            <span aria-hidden="true">/</span>
+            <Link href="/products/" className="hover:text-brand-hover hover:underline">Products</Link>
+          </nav>
+          <div className="col-span-full mt-24 xl:col-span-10">
+            <p className="text-c1 text-ink-secondary">Canton Product Collection</p>
+            <h1 id="category-title" className="mt-8 text-h1 text-ink">{category.name}</h1>
+          </div>
+          <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
+            <p className="text-h3 text-ink">{category.summary}</p>
+            <p className="mt-24 text-c1 text-ink-secondary">
+              Product data shown here is limited to verified client records. Additional references
+              from the legacy catalogue are being prepared for structured publication.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="layout mt-144 lg:mt-288" aria-label={`${category.name} catalogue`}>
+        <div className="col-content grid w-full grid-cols gap-x-42">
+          <CategoryFilter products={products} options={options} />
+        </div>
+      </section>
+    </main>
+  );
+}
+
