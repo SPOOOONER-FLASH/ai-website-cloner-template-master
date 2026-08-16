@@ -125,21 +125,27 @@ export interface Project {
   slug: string;
   /** Project name, e.g. "Riverside Tower". */
   name: string;
+  nameEs?: string;
   nameZh?: string;
   /** City. */
-  location: string;
+  location?: string;
   /** Country, for filtering by market. */
-  country: string;
+  country?: string;
   /** Year of completion. */
-  year: number;
+  year?: number;
+  /** Separates verified built references from clearly labelled application concepts. */
+  referenceStatus: "verified-project" | "representative-application";
   /** Building type, e.g. "Office", "Library", "Hotel". Drives listing filters. */
   buildingType: string;
+  buildingTypeEs?: string;
   /** Architect or specifier credit. */
   architect?: string;
   /** One or two sentences for the listing card. */
   summary: string;
+  summaryEs?: string;
   /** Body copy for the detail page. Paragraphs as separate array entries. */
   body: string[];
+  bodyEs?: string[];
   /** Model numbers used on this project — links the case study back to the catalogue. */
   productModels: string[];
   heroImage: ImageRef;

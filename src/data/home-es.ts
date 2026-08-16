@@ -63,7 +63,7 @@ export const text1: TextModuleContent = {
   heading: "Aplicaciones de Canton Hyland",
   body: "Dispositivos antipánico, cerraduras, manillas y cierrapuertas para edificios comerciales, institucionales y residenciales en mercados de exportación.",
   linkLabel: "Ver proyectos",
-  href: "/projects",
+  href: "/es/projects",
 };
 
 export const teaser2: PageTeaserContent = {

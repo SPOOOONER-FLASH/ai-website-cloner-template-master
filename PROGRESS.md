@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P6 — About us / company capability** ✅ |
+| **Phase** | **P7 — Projects + application details** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run build` passing — 48 static pages |
-| **Git** | P6 ready for commit on `main` |
-| **Next phase** | **P7 — Project listing + project detail** (explicitly requested in this session) |
+| **Build** | `npm run build` passing — 55 static pages |
+| **Git** | P6 committed as `2dbea12`; P7 ready for commit on `main` |
+| **Next phase** | **P8 — Download centre** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -32,6 +32,7 @@
 | **P4** | Catalogue discovery — 16 Canton categories, overview grid, static category routes, sub-category filtering and shared cards | `src/app/products/page.tsx`, `src/app/products/[category]/page.tsx`, `src/components/site/{CategoryCard,CategoryFilter,ProductCard}.tsx`, `src/data/categories.ts` |
 | **P5** | Static Web3Forms inquiry flow — honeypot, explicit states, model-aware prefill, catalogue download and model-scoped certificate evidence | `src/app/contact/page.tsx`, `src/components/site/InquiryForm.tsx`, `.env.example`, `public/downloads/canton-hyland-product-catalogue-2026.pdf`, `next.config.ts` |
 | **P6** | Company capability — 1998 profile, figures, six new factory/showroom images, model-scoped credentials moved from Contact, Spanish homepage/company/contact | `src/app/company/page.tsx`, `src/components/site/CompanyOverview.tsx`, `src/app/es/**`, `src/data/{company,home-es}.ts`, `public/images/company/` |
+| **P7** | Three bilingual representative application studies, static listing/detail routes and related-product modules | `src/data/projects.ts`, `src/app/projects/**`, `src/app/es/projects/**`, `src/components/site/{ProjectCard,ProjectListing,ProjectDetail}.tsx` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
@@ -179,12 +180,11 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P7 — Projects
+## Next: P8 — Download centre
 
-Replace the `/projects` stub with a listing and statically exported detail pages. No real
-client project names, locations or completion years have been supplied, so P7 must label
-each entry as a **representative application** rather than imply a completed reference.
-Each detail page includes the related-products module required by the plan.
+Replace the `/downloads` stub with grouped catalogue, certificate, installation and
+technical-file sections backed by `src/data/downloads.ts`. Keep the existing catalogue
+PDF and model-scoped certificate warnings.
 
 ---
 
@@ -196,6 +196,7 @@ Each detail page includes the related-products module required by the plan.
 | 8 | **Imprint and Privacy Notice have no pages.** Both footer links currently point at `/company`. Real legal pages are usually a launch requirement in export markets. | Launch |
 | 9 | **Legal company name still varies by source.** The certificates say *"Canton Hyland Hardware Co., Ltd"* and the approved profile says *"Canton Hyland Hardware (Group) Co., Ltd."*. The client has provisionally approved *"Canton Hyland Hardware & Locks Co.,Ltd."* for the copyright line; final legal-page wording still needs confirmation. **Founding year is settled at 1998.** | Company page (P6), launch |
 | 10 | **Twelve products have no confirmed SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P11 completion. | P11 |
+| 11 | **No approved built-project references yet.** P7 uses clearly labelled representative applications. Real project names, locations, completion years, architect credits and installation photos are needed before these can become customer case studies. | P11 / launch |
 
 Decisions 1–6 from P0 are answered and recorded in
 [BUILD_PLAN.md](BUILD_PLAN.md#decisions).

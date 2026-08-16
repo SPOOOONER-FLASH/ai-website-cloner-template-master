@@ -14,7 +14,7 @@ const NAV_LINKS = {
   ],
   es: [
     { label: "Productos", href: "/products" },
-    { label: "Proyectos", href: "/projects" },
+    { label: "Proyectos", href: "/es/projects" },
     { label: "Empresa", href: "/es/company" },
     { label: "Servicio + Descargas", href: "/downloads" },
   ],
@@ -27,6 +27,9 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
   }
   if (pathname === "/company" || pathname.startsWith("/company/")) return "/es/company";
   if (pathname === "/contact" || pathname.startsWith("/contact/")) return "/es/contact";
+  if (pathname === "/projects" || pathname.startsWith("/projects/")) {
+    return pathname.replace(/^\/projects/, "/es/projects");
+  }
   return "/es";
 }
 

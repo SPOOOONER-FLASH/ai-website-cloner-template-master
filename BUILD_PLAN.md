@@ -34,8 +34,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P4** | **Product overview + category pages + listing + filtering** | ✅ Done |
 | **P5** | **Contact page + inquiry form** | ✅ Done |
 | **P6** | **About us / company capability page** | ✅ Done |
-| **P7** | **Project listing + project detail** (incl. related-products module) | Next |
-| **P8** | **Download centre** | |
+| **P7** | **Project listing + project detail** (incl. related-products module) | ✅ Done |
+| **P8** | **Download centre** | Next |
 | **P9** | **Site-wide mobile responsive** | |
 | **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | |
 | **P11** | **Real assets and final content** — Canton's own product photography and signed-off copy | |
@@ -55,14 +55,16 @@ The developer is not a programmer and each session has a limited budget. So:
 | `/products` | Product overview — all categories | ✅ Done |
 | `/products/[category]` | Category listing + filters | ✅ Done |
 | `/products/[category]/[slug]` | Product detail | ✅ Done |
-| `/projects` | Reference case studies, listing | P7 |
-| `/projects/[slug]` | Case study detail | P7 |
+| `/projects` | Representative applications, listing | ✅ Done |
+| `/projects/[slug]` | Application detail + related products | ✅ Done |
 | `/downloads` | Download centre | P8 |
 | `/company` | About us | P6 |
 | `/contact` | Contact + inquiry | ✅ Done |
 | `/es` | Spanish marketing homepage | ✅ Done (P6) |
 | `/es/company` | Spanish company page | ✅ Done (P6) |
 | `/es/contact` | Spanish contact + inquiry | ✅ Done (P6) |
+| `/es/projects` | Spanish applications listing | ✅ Done (P7) |
+| `/es/projects/[slug]` | Spanish application detail | ✅ Done (P7) |
 
 `trailingSlash: true` is set, so every route exports as `<route>/index.html`.
 
@@ -125,9 +127,12 @@ were moved out of Contact and into Company. A clickable Spanish marketing versio
 covers the homepage, company page and inquiry flow; the product catalogue remains English
 until final translation copy is approved.
 
-### P7 — Projects
-Listing + detail. Needs `src/data/projects.ts` first. Detail page links back to the
-products used.
+### P7 — Projects ✅
+Three bilingual representative application studies with statically exported English and
+Spanish listing/detail routes. Each detail page links back to the actual catalogue records.
+No approved customer project names, locations, dates or installation photography were
+available, so every entry is explicitly marked as a representative application rather
+than a completed reference.
 
 ### P8 — Download centre
 Grouped by `DownloadKind`. Needs `src/data/downloads.ts`.
