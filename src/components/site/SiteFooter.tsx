@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { socialLinks } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 
 /**
@@ -20,9 +21,6 @@ const LEGAL_LINKS = {
     { label: "Privacidad", href: "/es/company" },
   ],
 } as const;
-
-/** External profiles. Real URLs land in P11 with the rest of the real content. */
-const SOCIAL_LINKS = ["Instagram", "LinkedIn", "Facebook", "YouTube"];
 
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
@@ -93,9 +91,17 @@ export function SiteFooter() {
                 {isSpanish ? "Redes sociales" : "Social Media"}
               </h3>
               <ul className="space-y-24">
-                {SOCIAL_LINKS.map((label) => (
-                  <li key={label}>
-                    <ArrowLink>{label}</ArrowLink>
+                {socialLinks.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative inline-block pl-12 text-c1 text-brand hover:text-brand-hover hover:underline"
+                    >
+                      <span aria-hidden="true" className="absolute left-0 top-0">›</span>
+                      {link.label}
+                    </a>
                   </li>
                 ))}
               </ul>

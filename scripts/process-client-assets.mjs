@@ -78,6 +78,8 @@ const JOBS = [
   ["company/showroom-emergency-hardware.webp", `${NEW_FACTORY}/ba72e86166bcbc0c6a5d247c819bd3c2.png`, 3 / 2, 680],
   ["company/factory-cnc-production.webp", `${NEW_FACTORY}/6363332303cf1a1f08cb71a851d372e6.png`, 3 / 2, 680],
   ["company/factory-cnc-machining.webp", `${NEW_FACTORY}/423b142324065050bd287c2ac3090670.png`, 3 / 2, 680],
+  ["company/material-innovation-workshop.webp", `${NEW_FACTORY}/60d707460c4e98d5e20ff932b6ea1c26.png`, 3 / 2, 680],
+  ["company/factory-polishing-workshop-wide.webp", `${NEW_FACTORY}/cdc07db20390bc40cbd1d15177510484.png`, 3 / 2, 680],
   // ---- Decorative slot (306:156). No CAD line art in the pack — see BUILD_PLAN. ----
   ["company/decorative-hinge-detail.webp", `${P4}/Hinge.jpg`, 306 / 156, 306],
   // ---- Certificates (portrait 604x800, kept whole — cropping a document is wrong) ----

@@ -38,7 +38,7 @@ function HeroStacked({ media, title, body, linkLabel, href = "#" }: HeroModuleCo
                 </div>
               </div>
 
-              <div className="col-content grid w-full grid-cols gap-x">
+              <div className="col-content grid w-full grid-cols gap-x pb-32 md:pb-48">
                 <div className="col-span-full grid grid-cols-subgrid gap-x gap-y-16">
                   <div className="col-span-full md:col-span-5 xl:col-span-6">
                     <h3 className="text-h3 text-ink">{title}</h3>

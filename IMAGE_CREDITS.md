@@ -135,10 +135,13 @@ must be confirmed by the client as faithful documentary photography before publi
 | `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | Accept for demo; verify authenticity |
 | `showroom-product-gallery.webp` | ef4f1112…png | 1776×1184 | 135.3 KB | Accept for demo; verify authenticity |
 | `showroom-emergency-hardware.webp` | ba72e861…png | 2390×1593 | 177.4 KB | Accept for demo; strongest documentary image |
+| `material-innovation-workshop.webp` | 60d70746…png | 1776×1184 | 148.7 KB | Internal demo only; verify sign and facility accuracy |
+| `factory-polishing-workshop-wide.webp` | cdc07db…png | 1776×1184 | 223.7 KB | Internal demo alternate; duplicate scene |
 
-`cdc07db…png` is a duplicate of the polishing-workshop scene and was not imported.
-`60d70746…png` was not imported because its sign reads “HYDE MATERIAL INNOVATION CENTER”,
-which conflicts with the approved Canton Hyland identity.
+The client approved both previously excluded files for this internal management prototype.
+`cdc07db…png` repeats the polishing-workshop scene; `60d70746…png` contains the wording
+“HYDE MATERIAL INNOVATION CENTER”. Neither should be published until the imagery and
+facility identity have been confirmed as accurate.
 
 `certification-marks.svg` is not client material — it is a monochrome vector mark drawn to
 fill the 87:46 signature slot, showing ISO 9001 and ANSI/BHMA Grade 3. Flat, no gradients,

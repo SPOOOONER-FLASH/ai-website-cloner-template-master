@@ -152,4 +152,14 @@ export const facilityImages: ImageRef[] = [
     ratio: "3 / 2",
     label: "Showroom wall presenting emergency exit and architectural hardware",
   },
+  {
+    src: "/images/company/material-innovation-workshop.webp",
+    ratio: "3 / 2",
+    label: "Material-development workshop and sample preparation area",
+  },
+  {
+    src: "/images/company/factory-polishing-workshop-wide.webp",
+    ratio: "3 / 2",
+    label: "Wide view of the polishing workshop and extraction equipment",
+  },
 ];

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 
@@ -40,11 +40,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <section className="layout" aria-labelledby="category-title">
         <div className="col-content grid w-full grid-cols gap-x-42 gap-y-24">
-          <nav aria-label="Breadcrumb" className="col-span-full flex gap-8 text-c2 text-ink-secondary">
-            <Link href="/" className="hover:text-brand-hover hover:underline">Home</Link>
-            <span aria-hidden="true">/</span>
-            <Link href="/products/" className="hover:text-brand-hover hover:underline">Products</Link>
-          </nav>
+          <div className="col-span-full">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Products", href: "/products/" },
+                { label: category.name },
+              ]}
+            />
+          </div>
           <div className="col-span-full mt-24 xl:col-span-10">
             <p className="text-c1 text-ink-secondary">Canton Product Collection</p>
             <h1 id="category-title" className="mt-8 text-h1 text-ink">{category.name}</h1>
@@ -67,4 +71,3 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     </main>
   );
 }
-

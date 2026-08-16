@@ -61,6 +61,14 @@ export function MenuIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function CloseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M2 2 L22 22 M22 2 L2 22" stroke="currentColor" strokeWidth="1.4" />
+    </svg>
+  );
+}
+
 /**
  * Client-owned Hyland mark paired with a live Archivo wordmark. The long legacy raster
  * company name is deliberately not used: this keeps the header sharp and restrained.

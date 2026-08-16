@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P7 — Projects + application details** ✅ |
+| **Phase** | **P8 — Download centre** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
 | **Build** | `npm run build` passing — 55 static pages |
-| **Git** | P6 `2dbea12` + P7 `39773c9` committed on `main` and pushed to `origin/main` |
-| **Next phase** | **P8 — Download centre** (**not started — do not begin without being asked**) |
+| **Git** | P8 complete on `main` |
+| **Next phase** | **P9 — Site-wide mobile responsive** |
 
 ---
 
@@ -33,6 +33,7 @@
 | **P5** | Static Web3Forms inquiry flow — honeypot, explicit states, model-aware prefill, catalogue download and model-scoped certificate evidence | `src/app/contact/page.tsx`, `src/components/site/InquiryForm.tsx`, `.env.example`, `public/downloads/canton-hyland-product-catalogue-2026.pdf`, `next.config.ts` |
 | **P6** | Company capability — 1998 profile, figures, six new factory/showroom images, model-scoped credentials moved from Contact, Spanish homepage/company/contact | `src/app/company/page.tsx`, `src/components/site/CompanyOverview.tsx`, `src/app/es/**`, `src/data/{company,home-es}.ts`, `public/images/company/` |
 | **P7** | Three bilingual representative application studies, static listing/detail routes and related-product modules | `src/data/projects.ts`, `src/app/projects/**`, `src/app/es/projects/**`, `src/components/site/{ProjectCard,ProjectListing,ProjectDetail}.tsx` |
+| **P8** | Download centre with local catalogue and four model-scoped evidence files; expandable site menu, real social links, repaired certification SVG and logo crop | `src/app/downloads/page.tsx`, `src/data/{downloads,site}.ts`, `src/components/site/{Breadcrumbs,SiteMenuDrawer,ProductCategoryRail}.tsx` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
@@ -167,6 +168,19 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 **New baseline, document height 10766px:**
 `816,848,636,96,861,384,120,48,776,288,646,288,1200,288,96,48,776,288,96,48,975`
 
+### P8 detail
+
+- The download centre exposes the client-owned 2026 catalogue and four supplied report
+  scans. Each report keeps its exact tested model; no blanket product certification is implied.
+- The header menu now opens as a keyboard-accessible right-side panel and the language
+  control reads `EN | ES`. Footer and menu social links use the client-supplied URLs.
+- The broken certification mark was caused by invalid XML comment syntax and is repaired.
+  The one-pixel black edge beside the logo was removed by correcting the source crop.
+- All eight polished 2026 factory/showroom images are accepted for this internal management
+  prototype. Before publication, confirm that they faithfully represent the real facility;
+  `material-innovation-workshop.webp` contains a HYDE sign and
+  `factory-polishing-workshop-wide.webp` is a duplicate scene.
+
 ### 2026-08-16 real-content expansion
 
 - Added eight catalogue records from client-supplied imagery: `023 ETAN`, `317`, `600`,
@@ -180,11 +194,11 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P8 — Download centre
+## Next: P9 — Site-wide mobile responsive
 
-Replace the `/downloads` stub with grouped catalogue, certificate, installation and
-technical-file sections backed by `src/data/downloads.ts`. Keep the existing catalogue
-PDF and model-scoped certificate warnings.
+Review the complete English and Spanish site at the seven custom breakpoints
+393 / 640 / 744 / 820 / 1032 / 1376 / 1512px. Repair layout overflow, navigation,
+typography and media cropping without changing the established desktop design.
 
 ---
 

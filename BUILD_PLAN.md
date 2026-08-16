@@ -35,8 +35,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P5** | **Contact page + inquiry form** | ✅ Done |
 | **P6** | **About us / company capability page** | ✅ Done |
 | **P7** | **Project listing + project detail** (incl. related-products module) | ✅ Done |
-| **P8** | **Download centre** | Next |
-| **P9** | **Site-wide mobile responsive** | |
+| **P8** | **Download centre** | ✅ Done |
+| **P9** | **Site-wide mobile responsive** | Next |
 | **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | |
 | **P11** | **Real assets and final content** — Canton's own product photography and signed-off copy | |
 
@@ -57,8 +57,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | `/products/[category]/[slug]` | Product detail | ✅ Done |
 | `/projects` | Representative applications, listing | ✅ Done |
 | `/projects/[slug]` | Application detail + related products | ✅ Done |
-| `/downloads` | Download centre | P8 |
-| `/company` | About us | P6 |
+| `/downloads` | Download centre | ✅ Done |
+| `/company` | About us | ✅ Done |
 | `/contact` | Contact + inquiry | ✅ Done |
 | `/es` | Spanish marketing homepage | ✅ Done (P6) |
 | `/es/company` | Spanish company page | ✅ Done (P6) |
@@ -134,8 +134,9 @@ No approved customer project names, locations, dates or installation photography
 available, so every entry is explicitly marked as a representative application rather
 than a completed reference.
 
-### P8 — Download centre
-Grouped by `DownloadKind`. Needs `src/data/downloads.ts`.
+### P8 — Download centre ✅
+Grouped by `DownloadKind`, with the client catalogue and four model-scoped report files.
+CAD, BIM, datasheets and installation guides remain request-only until source files arrive.
 
 ### P9 — Mobile responsive
 Site-wide. Responsive classes exist but have never been visually reviewed below 1376px.

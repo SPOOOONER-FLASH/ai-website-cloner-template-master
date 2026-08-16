@@ -2,7 +2,7 @@
   <!--
     Signature slot (87:46). Monochrome, flat, no gradients or shadows — matches the
     site's colour rules. Drawn as vector so it stays crisp at any size.
-    Colour is inherited via currentColor, so it tracks --color-ink.
+    Colour is inherited via currentColor, matching the primary ink token.
   -->
   <g fill="none" stroke="currentColor" stroke-width="1">
     <rect x="0.5" y="8.5" width="40" height="29" />

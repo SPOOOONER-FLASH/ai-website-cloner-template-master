@@ -27,7 +27,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap"
         />
       </head>
-      <body className="flex min-h-full flex-col">
+      <body suppressHydrationWarning className="flex min-h-full flex-col">
         {/* Site chrome lives here so every route gets it. Each page supplies its own
             <main>, because the homepage's top margin and rhythm are page-specific. */}
         <div className="flex min-h-screen flex-col justify-between">

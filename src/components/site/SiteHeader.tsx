@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
+import { SiteMenuDrawer } from "./SiteMenuDrawer";
 
 const NAV_LINKS = {
   en: [
@@ -49,12 +51,25 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
  *   Icons       --color-ink-tertiary. Icons are never red (rule 2).
  */
 export function SiteHeader() {
-  // "use client" only so the active nav item can be resolved. No state, no effects.
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
   const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
   const locale = isSpanish ? "es" : "en";
   const homeHref = isSpanish ? "/es" : "/";
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   return (
     <div
@@ -118,12 +133,18 @@ export function SiteHeader() {
                   className="flex items-center gap-8 text-ink underline-offset-4 hover:text-brand-hover hover:underline"
                 >
                   <GlobeIcon className="h-16 w-16 text-ink-tertiary" />
-                  <span className="text-c2">{isSpanish ? "English" : "Español"}</span>
+                  <span className="text-c2">EN | ES</span>
                 </Link>
                 <button type="button" aria-label="Search" className="text-ink-tertiary">
                   <SearchIcon className="h-20 w-20" />
                 </button>
-                <button type="button" aria-label="Menu" className="stack text-ink-tertiary">
+                <button
+                  type="button"
+                  aria-label="Open menu"
+                  aria-expanded={menuOpen}
+                  onClick={() => setMenuOpen(true)}
+                  className="stack text-ink-tertiary hover:text-ink"
+                >
                   <MenuIcon className="h-16 w-22" />
                 </button>
               </nav>
@@ -136,6 +157,13 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
+      {menuOpen ? (
+        <SiteMenuDrawer
+          isSpanish={isSpanish}
+          currentPath={pathname}
+          onClose={() => setMenuOpen(false)}
+        />
+      ) : null}
     </div>
   );
 }
