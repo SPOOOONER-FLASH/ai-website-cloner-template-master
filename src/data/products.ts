@@ -1,13 +1,17 @@
 import type { Product } from "./types";
 
 /**
- * Canton Hyland product catalogue — 12 products from the client's own material.
+ * Canton Hyland product catalogue — 20 products from the client's own material.
  *
  * SOURCES, and what each one actually supports:
  *   - Product names, model codes and photography: the client's asset pack delivered
  *     2026-08-15 (WeChat). First-party, no stock library.
  *   - Category tree and product range: the client's cantonlock.com catalogue, checked
  *     2026-08-16. Alibaba remains a secondary source for delivered product imagery.
+ *   - Selected model-specific fields: stahlock.com, an alternate company storefront
+ *     the client explicitly authorised as a secondary reference on 2026-08-16. Only
+ *     fields matching an exact client-supplied model/image are used; its brand story,
+ *     broad performance claims and unrelated certification claims are excluded.
  *   - Company standards claims: the client's own English profile (公司英文简介.docx).
  *
  * ⚠ SPEC TABLES ARE MOSTLY EMPTY, ON PURPOSE.
@@ -131,6 +135,61 @@ export const products: Product[] = [
     seoTitle: "320 Two Point Locking Exit Device | Canton Hyland",
     seoDescription:
       "Two-point locking panic exit device engaging head and threshold. Canton Hyland, ISO 9001.",
+  },
+  {
+    model: "023 ETAN",
+    slug: "023-etan-anti-pick-panic-exit-device",
+    name: "Anti-Pick Panic Exit Device Trim",
+    nameZh: "防撬逃生推杠外开装置",
+    series: "Hyland 023",
+    categoryPath: ["panic-exit-devices", "exterior-trim"],
+    summary:
+      "A keyed exterior trim unit for operating a compatible panic exit device from outside the door.",
+    specs: [
+      { label: "Application", value: "Fire door accessory" },
+      { label: "Operation", value: "Keyed exterior trim" },
+    ],
+    material: "Steel",
+    finishes: ["Black powder coat", "Polished cylinder trim"],
+    doorTypes: ["Fire door", "Escape door"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/023-etan-anti-pick-panic-exit-device.webp",
+      ratio: "1 / 1",
+      label: "Hyland 023 ETAN keyed anti-pick exterior trim for a panic exit device",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["305", "309-D", "317"],
+    seoTitle: "023 ETAN Anti-Pick Panic Exit Trim | Canton Hyland",
+    seoDescription:
+      "Keyed anti-pick exterior trim for compatible fire-door panic exit devices. Manufactured by Canton Hyland under ISO 9001.",
+  },
+  {
+    model: "317",
+    slug: "317-cold-room-push-bar-exit-device",
+    name: "Cold Room Push Bar Exit Device",
+    nameZh: "冷库门逃生推杠",
+    series: "Hyland 300",
+    categoryPath: ["panic-exit-devices", "special-application"],
+    summary:
+      "A low-profile push bar and latch assembly designed for insulated cold-room and specialist enclosure doors.",
+    specs: [],
+    material: "Aluminium / steel",
+    finishes: ["Anodised silver"],
+    doorTypes: ["Cold-room door", "Insulated enclosure door"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/317-cold-room-push-bar-exit-device.webp",
+      ratio: "1 / 1",
+      label: "Hyland 317 low-profile cold room push bar exit device with latch hardware",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["305", "023 ETAN"],
+    seoTitle: "317 Cold Room Push Bar Exit Device | Canton Hyland",
+    seoDescription:
+      "Low-profile push bar exit device for insulated cold-room and specialist enclosure doors. Canton Hyland, ISO 9001.",
   },
 
   /* ---------------- Mortise ---------------- */
@@ -279,6 +338,35 @@ export const products: Product[] = [
       "Heavy-duty cylindrical knob lock for commercial doors. Canton Hyland, ISO 9001.",
   },
 
+  /* ---------------- Night latch and rim lock ---------------- */
+  {
+    model: "Night Latch & Rim Lock",
+    modelTbc: true,
+    slug: "night-latch-rim-lock",
+    name: "Night Latch & Rim Lock",
+    nameZh: "夜间锁与外装锁",
+    series: "Hyland Rim",
+    categoryPath: ["night-latches-rim-locks"],
+    summary:
+      "A surface-mounted night latch with exterior keyed cylinder and interior operating knob for entrance doors.",
+    specs: [],
+    material: "Steel / zinc alloy",
+    finishes: ["Silver", "Polished brass"],
+    doorTypes: ["Timber entrance door", "Metal entrance door"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/night-latch-rim-lock.webp",
+      ratio: "1 / 1",
+      label: "Hyland surface-mounted night latch and rim lock with keyed cylinder",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["ANSI Grade 3 Keyed Deadbolt", "Cylindrical Knob Lock"],
+    seoTitle: "Night Latch & Rim Lock | Canton Hyland",
+    seoDescription:
+      "Surface-mounted night latch and rim lock for timber and metal entrance doors. Canton Hyland, ISO 9001.",
+  },
+
   /* ---------------- Deadbolt ---------------- */
   {
     model: "ANSI Grade 3 Keyed Deadbolt",
@@ -340,6 +428,65 @@ export const products: Product[] = [
     seoDescription:
       "Stainless steel patch fitting set for frameless toughened glass doors. Canton Hyland, ISO 9001.",
   },
+  {
+    model: "Stainless Steel Glass Door Pull Handle",
+    modelTbc: true,
+    slug: "stainless-steel-glass-door-pull-handle",
+    name: "Stainless Steel Glass Door Pull Handle",
+    nameZh: "不锈钢玻璃门拉手",
+    series: "Hyland Glass",
+    categoryPath: ["glass-door-accessories", "glass-door-handles"],
+    summary:
+      "A back-to-back tubular pull handle set for frameless glass and commercial entrance doors.",
+    specs: [],
+    material: "Stainless steel",
+    finishes: ["Satin stainless", "Mirror polished"],
+    doorTypes: ["Frameless glass", "Aluminium storefront"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/stainless-steel-glass-door-pull-handle.webp",
+      ratio: "1 / 1",
+      label: "Pair of Hyland stainless steel back-to-back glass door pull handles",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["Glass Door Patch Fitting Set", "600"],
+    seoTitle: "Stainless Steel Glass Door Pull Handle | Canton Hyland",
+    seoDescription:
+      "Back-to-back stainless steel pull handle for frameless glass and storefront doors. Canton Hyland, ISO 9001.",
+  },
+
+  /* ---------------- Grip and sliding-door handles ---------------- */
+  {
+    model: "600",
+    slug: "600-concealed-sliding-door-handle",
+    name: "Concealed Sliding Door Handle",
+    nameZh: "隐藏式推拉门拉手",
+    series: "Hyland 600",
+    categoryPath: ["grip-handle-sets"],
+    summary:
+      "A recessed pull handle set for sliding and pocket doors, supplied in coordinated finish options.",
+    specs: [
+      { label: "Type", value: "Recessed pull handle" },
+      { label: "Installation", value: "Mortise mounting" },
+      { label: "Application", value: "Sliding and pocket doors" },
+    ],
+    material: "Stainless steel",
+    finishes: ["Satin stainless", "Matt black", "Antique brass", "Antique copper"],
+    doorTypes: ["Sliding door", "Pocket door"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/600-concealed-sliding-door-handle.webp",
+      ratio: "1 / 1",
+      label: "Hyland 600 recessed sliding door handles in four finishes",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["Stainless Steel Glass Door Pull Handle"],
+    seoTitle: "600 Concealed Sliding Door Handle | Canton Hyland",
+    seoDescription:
+      "Mortise-mounted stainless steel recessed pull handle for sliding and pocket doors. Canton Hyland, ISO 9001.",
+  },
 
   /* ---------------- Floor hinge ---------------- */
   {
@@ -368,6 +515,95 @@ export const products: Product[] = [
     seoTitle: "Wooden Door Floor Hinge | Canton Hyland",
     seoDescription:
       "Concealed floor spring for wooden and glass doors, with pivot brackets and cover plates. Canton Hyland, ISO 9001.",
+  },
+
+  /* ---------------- Hinges ---------------- */
+  {
+    model: "Stainless Steel Door Hinge",
+    modelTbc: true,
+    slug: "stainless-steel-door-hinge",
+    name: "Stainless Steel Door Hinge",
+    nameZh: "不锈钢门合页",
+    series: "Hyland Hinge",
+    categoryPath: ["door-hinges"],
+    summary:
+      "A square-corner stainless steel butt hinge for timber and metal architectural doors.",
+    specs: [],
+    material: "Stainless steel",
+    finishes: ["Satin stainless", "Polished stainless"],
+    doorTypes: ["Timber", "Steel"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/stainless-steel-door-hinge.webp",
+      ratio: "1 / 1",
+      label: "Pair of Hyland stainless steel square-corner butt hinges",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["Wooden Door Floor Hinge"],
+    seoTitle: "Stainless Steel Door Hinge | Canton Hyland",
+    seoDescription:
+      "Stainless steel butt hinge for timber and metal architectural doors. Canton Hyland, ISO 9001.",
+  },
+
+  /* ---------------- Hardware and bathroom accessories ---------------- */
+  {
+    model: "Stainless Steel Wall Hook",
+    modelTbc: true,
+    slug: "stainless-steel-wall-hook",
+    name: "Stainless Steel Wall Hook",
+    nameZh: "不锈钢墙面挂钩",
+    series: "Hyland Accessories",
+    categoryPath: ["bathroom-accessories"],
+    summary:
+      "A five-hook stainless steel rail for washrooms, changing rooms and utility interiors.",
+    specs: [{ label: "Hooks", value: "Five" }],
+    material: "Stainless steel",
+    finishes: ["Satin stainless"],
+    doorTypes: ["Wall-mounted interior accessory"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/stainless-steel-wall-hook.webp",
+      ratio: "1 / 1",
+      label: "Hyland stainless steel wall rail with five utility hooks",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["Stainless Steel Door Hinge"],
+    seoTitle: "Stainless Steel Wall Hook | Canton Hyland",
+    seoDescription:
+      "Five-hook stainless steel wall rail for washrooms, changing rooms and utility interiors. Canton Hyland, ISO 9001.",
+  },
+  {
+    model: "Stainless Steel Flush Bolt",
+    modelTbc: true,
+    slug: "stainless-steel-flush-bolt",
+    name: "Stainless Steel Flush Bolt",
+    nameZh: "不锈钢暗插销",
+    series: "Hyland Accessories",
+    categoryPath: ["hardware-accessories", "flush-bolts"],
+    summary:
+      "A family of mortised flush bolts for securing the inactive leaf of paired doors.",
+    specs: [
+      { label: "Width", value: "22", unit: "mm" },
+      { label: "Available lengths", value: "4, 6, 8, 10, 12", unit: "in" },
+      { label: "Installation", value: "Surface or mortise" },
+    ],
+    material: "Stainless steel",
+    finishes: ["Satin stainless", "Polished stainless"],
+    doorTypes: ["Double timber door", "Double metal door"],
+    certifications: [{ name: "ISO 9001", standard: "ISO 9001:2015" }],
+    heroImage: {
+      src: "/images/products/stainless-steel-flush-bolt.webp",
+      ratio: "1 / 1",
+      label: "Hyland stainless steel flush bolts in multiple lengths",
+    },
+    gallery: [],
+    attachmentIds: [],
+    relatedModels: ["309-D", "Stainless Steel Door Hinge"],
+    seoTitle: "Stainless Steel Flush Bolt | Canton Hyland",
+    seoDescription:
+      "Stainless steel flush bolt for inactive leaves of paired timber and metal doors. Canton Hyland, ISO 9001.",
   },
 ];
 

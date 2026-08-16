@@ -3,7 +3,7 @@ import { ArrowLink } from "@/components/site/ArrowLink";
 
 export const metadata: Metadata = {
   title: "Company | Canton Hyland",
-  description: "Three decades of door lock and architectural hardware manufacturing in Guangdong, China.",
+  description: "Door lock and architectural hardware manufacturing in Guangdong, China since 1998.",
 };
 
 /** Stub — real content lands in P6. Structure only, so navigation resolves. */
@@ -16,7 +16,7 @@ export default function CompanyPage() {
             <h1 className="text-h1 text-ink">Company</h1>
           </div>
           <div className="col-span-full xl:col-span-12">
-            <p className="text-c1 text-ink">Three decades of door lock and architectural hardware manufacturing in Guangdong, China.</p>
+            <p className="text-c1 text-ink">Door lock and architectural hardware manufacturing in Guangdong, China since 1998.</p>
             <p className="mt-24 text-c1 text-ink-secondary">
               This page is not built yet — it arrives in P6.
             </p>

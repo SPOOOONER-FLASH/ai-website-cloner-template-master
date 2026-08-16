@@ -28,7 +28,7 @@ and any image carrying platform promotional text.
 - **Never upscales.** Several sources are smaller than the slot renders at; inventing
   pixels would hide that. The `scale` column below is output width ÷ CSS display width.
 
-**31 files, 998 KB total.**
+**35 files, 1,087 KB total.**
 
 ---
 
@@ -54,7 +54,7 @@ downscaled for Alibaba. If originals do not exist, they need reshooting.
 | File group | Output | Scale | Note |
 |---|---|---|---|
 | `company/press-shop`, `polishing-line`, `assembly-line` | 1308×872 | 0.91× | Genuine factory photography and it reads as real, which is the point. But under 1× for a full-width hero, and the phone-camera look (mixed colour temperature, no styling) sits awkwardly against the minimal layout. Fine at card size, weak at hero size. |
-| All 16 `products/*.webp` | 1000×1000 | 1.47× | Clean white-background B2B pack shots. Sharp and correctly exposed. Just under 1.5×, so slightly soft on retina but perfectly usable. |
+| All 22 `products/*.webp` | 1000×1000 | 1.47× | 20 catalogue products plus 2 category images. Clean white-background B2B pack shots, sharp and correctly exposed. Just under 1.5×, so slightly soft on retina but usable for the demo. |
 | `certificates/*.webp` | 604×800 | 1× | Document scans. Legible at reading size, not at full-page zoom. Fine — they are evidence, not decoration. |
 
 ### ⚠️ Design conflict, not a resolution problem
@@ -85,6 +85,8 @@ All 1000×1000, cropped 1:1, q=78.
 | `309-d-double-door-panic-exit-device.webp` | 309-D Double Door Panic Exit Device.jpg | 6.1 KB |
 | `314-alarm-panic-bar-exit-device.webp` | 314 Alarm Panic Bar Exit Device.jpg | 39.6 KB |
 | `320-two-point-locking-exit-device.webp` | 320 Two Point Locking Exit Device.jpg | 12.8 KB |
+| `023-etan-anti-pick-panic-exit-device.webp` | 023 ETAN Anti-Pick Panic Exit Device.jpg | 15.9 KB |
+| `317-cold-room-push-bar-exit-device.webp` | 317 Cold Room Push Bar Exit Device.jpg | 20.8 KB |
 | `lc14-8550-mortise-lock-case.webp` | LC14 85×50 Four Bolt Mortise Lock Case.jpg | 24.0 KB |
 | `black-tubular-lever-lock-set.webp` | Black Tubular Lever Lock Set.jpg | 20.0 KB |
 | `stainless-steel-lever-handle-lock.webp` | Stainless Steel Lever Handle Lock.jpg | 14.5 KB |
@@ -92,9 +94,11 @@ All 1000×1000, cropped 1:1, q=78.
 | `glass-door-patch-fitting-set.webp` | Glass Door Patch Fitting Set.jpg | 26.1 KB |
 | `stainless-steel-glass-door-pull-handle.webp` | Stainless Steel Glass Door Pull Handle.jpg | 12.1 KB |
 | `600-concealed-sliding-door-handle.webp` | 600 Concealed Sliding Door Handle.jpg | 22.0 KB |
+| `stainless-steel-wall-hook.webp` | Stainless Steel Wall Hook.jpg | 11.5 KB |
 | `tubular-knob-lock.webp` | Tubular Knob Lock.jpg | 17.7 KB |
 | `cylindrical-knob-lock.webp` | Cylindrical Knob Lock.jpg | 19.9 KB |
 | `night-latch-rim-lock.webp` | Night Latch & Rim Lock.jpg | 25.9 KB |
+| `stainless-steel-flush-bolt.webp` | Bolt.jpg | 40.0 KB |
 | `wooden-door-floor-hinge.webp` | Wooden Door Floor Hinges.jpg | 38.4 KB |
 | `stainless-steel-door-hinge.webp` | Hinge.jpg | 35.2 KB |
 | `cat-panic-exit-device.webp` | Panic Exit Device.jpg | 13.9 KB |
@@ -143,6 +147,5 @@ All 604×800, q=78. Transcribed into `src/data/company.ts`.
 
 ## Unused sources
 
-Available in the client pack, converted but not yet placed: `023 ETAN Anti-Pick Panic Exit
-Device`, `317 Cold Room Push Bar Exit Device`, `Stainless Steel Wall Hook`, `Bolt`. Add
-them when the catalogue grows past 12 products.
+No remaining product JPEGs in the supplied pack are unaccounted for. Contact avatars,
+video-platform material and the temporary Word lock file remain intentionally excluded.

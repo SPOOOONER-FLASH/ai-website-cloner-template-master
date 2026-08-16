@@ -132,7 +132,7 @@ alt text audit. Canonical URLs on `https://www.cantonlock.com`.
 
 ### P11 — Real assets and final content  *(scope reduced — see below)*
 Part of P11 was pulled forward on 2026-08-15: the client's own photography, company profile,
-category tree and 12 real products are already in. **Remaining P11 scope:**
+category tree and 20 real products are already in. **Remaining P11 scope:**
 - Re-export or reshoot the four under-resolution images listed in IMAGE_CREDITS.md
   (two homepage banners at 0.54-0.57x, the facility yard, the storefront banner).
 - Request un-badged product shots — every product image currently carries the Hyland logo
@@ -142,7 +142,7 @@ category tree and 12 real products are already in. **Remaining P11 scope:**
   the brief asked for a technical line drawing and the pack contains none.
 - Fill the empty `specs` tables. Alibaba product detail pages are captcha-protected, so
   dimensions must come from the client's catalogue.
-- Confirm real SKUs for the seven products flagged `modelTbc: true`.
+- Confirm real SKUs for the twelve products flagged `modelTbc: true`.
 - Verify every certification claim against a real test report, and confirm which current
   models the four existing reports cover.
 
@@ -150,7 +150,7 @@ category tree and 12 real products are already in. **Remaining P11 scope:**
 
 ## Decisions
 
-*All resolved 2026-08-15.*
+*Decisions 1–6 resolved 2026-08-15; decision 7 resolved 2026-08-16.*
 
 | # | Decision | Outcome |
 |---|---|---|
@@ -160,6 +160,7 @@ category tree and 12 real products are already in. **Remaining P11 scope:**
 | 4 | Footer background | **Stay white.** White + a single full-bleed top rule is part of the restrained all-white language; a dark footer would put a block of visual weight at the page bottom and break the rhythm. `--color-surface-dark` is reserved for possible dark card modules later. |
 | 5 | `src/components/ui/button.tsx` | **Deleted** in P1. Dead code, name collision with `shared/Button.tsx`, violated colour rules 3–4. |
 | 6 | Domain | `https://www.cantonlock.com` for canonical and sitemap. **`noindex` stays until launch** — the demo still carries generic placeholder content. At launch, remove the `noindex` and nothing else changes. |
+| 7 | Founding year | **Use 1998 everywhere.** The client explicitly resolved the conflict in favour of the approved English company profile; older marketplace metadata is not used for this field. |
 
 ---
 

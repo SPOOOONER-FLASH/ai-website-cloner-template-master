@@ -13,9 +13,15 @@
  */
 import sharp from "sharp";
 import { mkdir, writeFile, readdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { join } from "node:path";
 
-const SRC = "C:/Users/johns/xwechat_files/wxid_kslpb8pv4u1c12_ba05/msg/file/2026-08/202608首页装修资料";
+const SOURCE_CANDIDATES = [
+  "C:/Users/johns/Desktop/202608首页装修资料",
+  "C:/Users/johns/xwechat_files/wxid_kslpb8pv4u1c12_ba05/msg/file/2026-08/202608首页装修资料",
+];
+const SRC = SOURCE_CANDIDATES.find((candidate) => existsSync(`${candidate}/15张产品图➕产品名称➕两张背景产品图➕名称`));
+if (!SRC) throw new Error("Canton client asset pack was not found in the known source locations.");
 const MAX_BYTES = 300 * 1024;
 const QUALITY = 78;
 
@@ -33,6 +39,8 @@ const JOBS = [
   ["products/309-d-double-door-panic-exit-device.webp", `${P15}/309-D Double Door Panic Exit Device.jpg`, 1, 680],
   ["products/314-alarm-panic-bar-exit-device.webp", `${P15}/    314 Alarm Panic Bar Exit Device.jpg`, 1, 680],
   ["products/320-two-point-locking-exit-device.webp", `${P15}/    320 Two Point Locking Exit Device.jpg`, 1, 680],
+  ["products/023-etan-anti-pick-panic-exit-device.webp", `${P15}/023 ETAN Anti-Pick Panic Exit Device.jpg`, 1, 680],
+  ["products/317-cold-room-push-bar-exit-device.webp", `${P15}/317 Cold Room Push Bar Exit Device.jpg`, 1, 680],
   ["products/lc14-8550-mortise-lock-case.webp", `${P15}/LC14 85×50 Four Bolt Mortise Lock Case.jpg`, 1, 680],
   ["products/black-tubular-lever-lock-set.webp", `${P15}/    Black Tubular Lever Lock Set.jpg`, 1, 680],
   ["products/stainless-steel-lever-handle-lock.webp", `${P15}/    Stainless Steel Lever Handle Lock.jpg`, 1, 680],
@@ -40,9 +48,11 @@ const JOBS = [
   ["products/glass-door-patch-fitting-set.webp", `${P15}/Glass Door Patch Fitting Set.jpg`, 1, 680],
   ["products/stainless-steel-glass-door-pull-handle.webp", `${P15}/ Stainless Steel Glass Door Pull Handle.jpg`, 1, 680],
   ["products/600-concealed-sliding-door-handle.webp", `${P15}/600 Concealed Sliding Door Handle.jpg`, 1, 680],
+  ["products/stainless-steel-wall-hook.webp", `${P15}/Stainless Steel Wall Hook.jpg`, 1, 680],
   ["products/tubular-knob-lock.webp", `${P5}/Tubular Knob Lock.jpg`, 1, 680],
   ["products/cylindrical-knob-lock.webp", `${P5}/Cylindrical Knob Lock.jpg`, 1, 680],
   ["products/night-latch-rim-lock.webp", `${P5}/Night Latch & Rim Lock.jpg`, 1, 680],
+  ["products/stainless-steel-flush-bolt.webp", `${P5}/Bolt.jpg`, 1, 680],
   ["products/wooden-door-floor-hinge.webp", `${P4}/Wooden Door Floor Hinges.jpg`, 1, 680],
   ["products/stainless-steel-door-hinge.webp", `${P4}/Hinge.jpg`, 1, 680],
   // ---- Category cards (1:1) ----

@@ -9,10 +9,10 @@
 
 | | |
 |---|---|
-| **Phase** | **P4 — Product catalogue and filtering** ✅ |
+| **Phase** | **P4 complete + pulled-forward P11 content expansion** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run build` passing — 37 static pages: 16 category pages + 12 product details |
+| **Build** | `npm run build` passing — 45 static pages: 16 category pages + 20 product details |
 | **Git** | clean tree, all work committed |
 | **Next phase** | **P5 — Contact page + inquiry form** (**not started — do not begin without being asked**) |
 
@@ -31,7 +31,7 @@
 | **P3** | Product detail page — seven content blocks, 12 statically exported product routes, verified empty states and model-aware inquiry links | `src/app/products/[category]/[slug]/page.tsx`, `src/components/site/ProductDetail.tsx` |
 | **P4** | Catalogue discovery — 16 Canton categories, overview grid, static category routes, sub-category filtering and shared cards | `src/app/products/page.tsx`, `src/app/products/[category]/page.tsx`, `src/components/site/{CategoryCard,CategoryFilter,ProductCard}.tsx`, `src/data/categories.ts` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
-| — | **Client asset drop** — real photography, company profile, category tree and 12 real products replace all stock and invented data | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
+| — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
 ### P1 detail
 
@@ -117,9 +117,10 @@ company profile and banner copy in .docx. That turned out to be better than scra
 Alibaba storefront: first-party, higher resolution, no platform watermarks, no anti-bot.
 
 **What was scraped, and what was blocked.** The Alibaba storefront *overview* and *product
-list* pages read fine — that gave the real category tree and the published company figures.
-**Product detail pages are captcha-protected** ("Captcha Interception"). Not retried, per
-instruction. The consequence is below.
+list* pages previously read fine — that gave the real category tree and the published
+company figures. On 2026-08-16 the supplied mobile storefront URL returned an internal
+access error; product detail pages remain captcha-protected ("Captcha Interception"). Not
+retried, per instruction. The consequence is below.
 
 **⚠ Spec tables are empty on purpose.** Detail pages were the only source of dimensions,
 materials and finishes. Rather than invent plausible numbers, `specs` carries only what the
@@ -129,7 +130,7 @@ a liability.** P3 must therefore render an empty-state spec block.
 
 **⚠ Certifications are deliberately NOT attached to products.** Each of the four certificate
 scans names a specific model — KD070/30-290, KD070/20-101, 607 SS ET. None names any of the
-12 products shipped. Publishing "EN 1125 certified" on model 305 because a sibling model was
+20 products now ship. Publishing "EN 1125 certified" on model 305 because a sibling model was
 tested would be a false claim. So the four reports are transcribed in `src/data/company.ts`
 as **company credentials with their exact model references**, and per-product records carry
 only ISO 9001 (company-wide, client-stated) and ANSI Grade 3 where the client's own product
@@ -143,7 +144,7 @@ name asserts it.
   browser upscales them ~2× — visibly soft, and they are the two biggest images on the
   homepage. `facility-yard` (0.71×, also looks upscaled or synthetic at source) and
   `hero-storefront-banner` (0.86×) are the other two.
-- 🟡 **The 16 product shots are acceptable** — clean, sharp, correctly exposed, 1.47× the
+- 🟡 **The 22 product/category shots are acceptable** — clean, sharp, correctly exposed, 1.47× the
   card size. Fine for the demo.
 - 🟡 **The three factory photos are genuine and read as real**, which is their value, but
   they are 0.91× at hero size and have a phone-camera look.
@@ -162,6 +163,17 @@ placeholder copy — that is content changing on purpose, not a layout regressio
 is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 **New baseline, document height 10766px:**
 `816,848,636,96,861,384,120,48,776,288,646,288,1200,288,96,48,776,288,96,48,975`
+
+### 2026-08-16 real-content expansion
+
+- Added eight catalogue records from client-supplied imagery: `023 ETAN`, `317`, `600`,
+  night latch/rim lock, glass-door pull handle, stainless hinge, wall hook and flush bolt.
+- Used Stahlock only as the client-authorised secondary reference for exact matching fields
+  on models 023/305/600 and flush bolts. Its alternate brand history, broad compliance
+  statements and unrelated product claims were not imported.
+- `src/data/company.ts`, homepage copy and company metadata now use **founded in 1998**.
+- Added four new WebP files; all product/category images remain under 300 KB. Desktop QA at
+  1512 px passed with no horizontal overflow; all four sampled new routes returned HTTP 200.
 
 ---
 
@@ -185,8 +197,8 @@ the next unfinished phase.
 |---|---|---|
 | 7 | **The "Insights" / magazine block has no route.** The homepage has two modules for it (`text3`, `hero5` in `src/data/home.ts`) and both link to `#` — the only dead internal links left. Either add `/insights` as a phase, or drop the two modules from the homepage. | Homepage completeness |
 | 8 | **Imprint and Privacy Notice have no pages.** Both footer links currently point at `/company`. Real legal pages are usually a launch requirement in export markets. | Launch |
-| 9 | 🔴 **Founding year and legal name conflict.** The client's English profile says *"founded in 1998"* and *"over three decades"*. Their own Alibaba storefront says *"Year Established: 2012"* and *"more than 25 years"*. The certificates are issued to *"Canton Hyland Hardware Co., Ltd"*, the profile says *"Canton Hyland Hardware (Group) Co., Ltd."*, Alibaba says *"Canton Hyland Hardware & Locks Co., Ltd."* — three names. Nothing on the site states a founding year until this is resolved; `src/data/company.ts` deliberately omits it. Overseas buyers do check this. | Company page (P6), launch |
-| 10 | **Seven products have no real SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P5/P11 completion. | P5, P11 |
+| 9 | **Legal company name still varies by source.** The certificates say *"Canton Hyland Hardware Co., Ltd"*, the approved profile says *"Canton Hyland Hardware (Group) Co., Ltd."*, and older Alibaba metadata used *"Canton Hyland Hardware & Locks Co., Ltd."*. The site currently follows the approved profile. **Founding year is no longer disputed: the client instructed us to use 1998 everywhere.** | Company page (P6), launch |
+| 10 | **Twelve products have no confirmed SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P5/P11 completion. | P5, P11 |
 
 Decisions 1–6 from P0 are answered and recorded in
 [BUILD_PLAN.md](BUILD_PLAN.md#decisions).

@@ -48,8 +48,8 @@ export function WelcomeIntro() {
           <section className="copy col-span-full text-ink xl:col-span-5">
             {/* Client's own copy (公司英文简介.docx), trimmed to the 13-line column height. */}
             <div>
-              Canton Hyland brings over three decades of manufacturing expertise to the commercial
-              and residential hardware industry. We specialize in door security and building
+              Canton Hyland has manufactured commercial and residential door hardware since 1998.
+              We specialize in door security and building
               hardware — panic devices, tubular and cylindrical locks, deadbolts, lock cases,
               profile cylinders, door handles and patch fittings. Recognized experts in master key
               and construction key systems. ISO 9001 certified since 2002.

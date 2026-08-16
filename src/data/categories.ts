@@ -27,6 +27,8 @@ export const categories: Category[] = [
       { slug: "fire-door", name: "Fire Door Devices", nameZh: "防火门推杠", summary: "Rated devices for fire-rated escape doors.", image: { ratio: "1 / 1", label: "Fire door panic device" } },
       { slug: "alarmed", name: "Alarmed Devices", nameZh: "带报警推杠", summary: "Push bars with integrated exit alarm.", image: { ratio: "1 / 1", label: "Alarmed panic bar" } },
       { slug: "multi-point", name: "Multi-Point Locking", nameZh: "多点锁推杠", summary: "Two- and three-point locking for tall or double doors.", image: { ratio: "1 / 1", label: "Two point locking exit device" } },
+      { slug: "exterior-trim", name: "Exterior Trim", nameZh: "外开装置", summary: "Keyed exterior trim for compatible panic exit devices.", image: { src: "/images/products/023-etan-anti-pick-panic-exit-device.webp", ratio: "1 / 1", label: "Keyed exterior panic-device trim" } },
+      { slug: "special-application", name: "Special Applications", nameZh: "特殊应用", summary: "Exit hardware for cold rooms and specialist enclosures.", image: { src: "/images/products/317-cold-room-push-bar-exit-device.webp", ratio: "1 / 1", label: "Cold-room push bar exit device" } },
     ],
   },
   {
@@ -98,7 +100,7 @@ export const categories: Category[] = [
     name: "Bathroom Accessories",
     nameZh: "浴室配件",
     summary: "Bathroom hardware and accessory products from the official Canton catalogue.",
-    image: { ratio: "1 / 1", label: "Bathroom accessory" },
+    image: { src: "/images/products/stainless-steel-wall-hook.webp", ratio: "1 / 1", label: "Stainless steel five-hook wall rail" },
   },
   {
     slug: "brass-steel-hinges",
@@ -165,9 +167,9 @@ export const categories: Category[] = [
     nameZh: "建筑五金配件",
     summary: "Door viewers, stoppers, transfer devices, bolts, indicators, latches and guards.",
     image: {
-      src: "/images/products/stainless-steel-door-hinge.webp",
+      src: "/images/products/stainless-steel-flush-bolt.webp",
       ratio: "1 / 1",
-      label: "Pair of stainless steel ball bearing door hinges",
+      label: "Stainless steel flush bolts in multiple lengths",
     },
     children: [
       { slug: "armoured-lock-covers", name: "Armoured Lock Covers", nameZh: "装甲门锁护盖", summary: "Protective lock and cylinder covers.", image: { ratio: "1 / 1", label: "Armoured lock cover" } },

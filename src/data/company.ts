@@ -3,19 +3,16 @@ import type { ImageRef } from "./types";
 /**
  * Company profile and credentials — Canton Hyland.
  *
- * `profile` is the client's own approved English copy, delivered 2026-08-15
- * (公司英文简介.docx). Not rewritten, only split into paragraphs.
- *
- * ⚠ UNRESOLVED FACTUAL CONFLICT — see PROGRESS.md open decision 9.
- * The client's English copy says "founded in 1998" and "over three decades".
- * Their Alibaba storefront says "Year Established: 2012" and "more than 25 years".
- * The two cannot both be printed. Nothing below states a founding year until the
- * client picks one. `stats.founded` is deliberately absent.
+ * `profile` is based on the client's own approved English copy, delivered
+ * 2026-08-15 (公司英文简介.docx). The client explicitly confirmed on 2026-08-16
+ * that every site reference must use 1998 as the founding year. Certification
+ * wording is narrowed to the supplied model-specific evidence; broad claims are
+ * not extended beyond the certificate scans.
  */
 
 export const profile: string[] = [
-  "Canton Hyland Hardware (Group) Co., Ltd. brings over three decades of manufacturing expertise to the commercial and residential hardware industry. Our state-of-the-art facilities house sophisticated production equipment designed to deliver superior quality and precision.",
-  "We specialize in comprehensive door security and building hardware solutions, including panic devices, cylindrical locks, tubular locks, deadbolts, lock cases, profile cylinders, door handles, patch fittings, and a complete range of building and bedroom hardware accessories. Our products meet stringent industry standards, including ANSI Grade 3 certifications and CE compliance across our product lines.",
+  "Canton Hyland Hardware (Group) Co., Ltd. was founded in 1998 and brings decades of manufacturing expertise to the commercial and residential hardware industry. Our production facilities house equipment for stamping, polishing, assembly and quality control.",
+  "We specialize in comprehensive door security and building hardware solutions, including panic devices, cylindrical locks, tubular locks, deadbolts, lock cases, profile cylinders, door handles, patch fittings, and a complete range of building and bedroom hardware accessories. Supplied credentials include model-specific Intertek test reports and a CE conformity certificate for panic exit devices.",
   "As recognized experts in master key and construction key systems, we provide sophisticated access control solutions for complex commercial and institutional projects. Since achieving ISO 9001 certification in 2002, we have maintained our commitment to quality excellence and continuous improvement.",
   "We welcome OEM partnerships and specialize in developing custom solutions tailored to specific client requirements. We invite you to visit our facilities to explore how our expertise can meet your hardware needs.",
 ];
@@ -25,6 +22,7 @@ export const profile: string[] = [
  * Ranges are kept as ranges — narrowing them would be inventing precision.
  */
 export const stats: { label: string; value: string }[] = [
+  { label: "Founded", value: "1998" },
   { label: "Workforce", value: "101–200 people" },
   { label: "Facility area", value: "3,000–5,000 m²" },
   { label: "Annual output value", value: "US$50–100 million" },

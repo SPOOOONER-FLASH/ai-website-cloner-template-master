@@ -125,7 +125,7 @@ export const hero4: HeroModuleContent = {
   },
   title: "About Us",
   // 8 lines at the 332px caption column
-  body: "Over three decades of manufacturing expertise in commercial and residential hardware: panic devices, cylindrical and tubular locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. ISO 9001 certified since 2002.",
+  body: "Manufacturing commercial and residential door hardware since 1998: panic devices, cylindrical and tubular locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. ISO 9001 certified since 2002.",
   linkLabel: "Learn more",
   href: "/company",
 };
