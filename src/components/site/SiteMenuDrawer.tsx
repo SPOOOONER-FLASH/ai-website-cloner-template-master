@@ -32,7 +32,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
 
   return (
     <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label="Site menu">
-      <button type="button" aria-label="Close menu" onClick={onClose} className="absolute inset-0 bg-ink/20" />
+      <button type="button" aria-label="Dismiss site menu" onClick={onClose} className="absolute inset-0 bg-ink/20" />
       <div className="absolute inset-y-0 right-0 w-full overflow-y-auto border-l border-line bg-surface sm:w-[88vw] xl:w-[75vw]">
         <div className="layout min-h-full py-32 sm:py-48">
           <div className="col-content flex min-h-full flex-col">
@@ -51,7 +51,10 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
                 <nav>
                   <ul className="divide-y divide-line">
                     {links[locale].map((link) => {
-                      const current = currentPath === link.href.replace(/\/$/, "") || currentPath.startsWith(link.href);
+                      const targetPath = link.href.replace(/\/$/, "") || "/";
+                      const current =
+                        currentPath === targetPath ||
+                        (targetPath !== "/" && currentPath.startsWith(`${targetPath}/`));
                       return (
                         <li key={link.href}>
                           <Link
@@ -92,4 +95,3 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
     </div>
   );
 }
-

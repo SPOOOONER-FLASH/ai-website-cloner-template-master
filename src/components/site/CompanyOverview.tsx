@@ -62,14 +62,14 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full lg:col-span-9 xl:col-span-8">
+          <div className="col-span-full lg:col-span-4 xl:col-span-8">
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
               {text.eyebrow}
             </p>
             <h1 className="mt-16 text-h1 text-ink">{text.title}</h1>
             <p className="mt-24 text-c1 text-ink">{text.intro}</p>
           </div>
-          <div className="col-span-full space-y-24 lg:col-span-13 lg:col-start-12 xl:col-span-14 xl:col-start-11">
+          <div className="col-span-full space-y-24 lg:col-span-7 lg:col-start-6 xl:col-span-14 xl:col-start-11">
             {paragraphs.map((paragraph) => (
               <p key={paragraph} className="text-c1 text-ink">
                 {paragraph}
@@ -91,11 +91,11 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x gap-y-48 border-t border-line pt-48">
-          <div className="col-span-full lg:col-span-7">
+          <div className="col-span-full lg:col-span-4 xl:col-span-7">
             <h2 className="text-h2 text-ink">{text.manufacturing}</h2>
             <p className="mt-24 text-c1 text-ink-secondary">{text.manufacturingBody}</p>
           </div>
-          <div className="col-span-full lg:col-span-15 lg:col-start-10">
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
             <MediaPlaceholder {...facilityImages[0]} />
           </div>
         </section>
@@ -111,11 +111,11 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
 
         <section className="col-content border-t border-line pt-48">
           <div className="grid grid-cols gap-x gap-y-48">
-            <div className="col-span-full lg:col-span-8 xl:col-span-7">
+            <div className="col-span-full lg:col-span-4 xl:col-span-7">
               <h2 className="text-h2 text-ink">{text.quality}</h2>
               <p className="mt-24 text-c1 text-ink-secondary">{text.qualityBody}</p>
             </div>
-            <div className="col-span-full grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 lg:col-span-14 lg:col-start-11 xl:col-span-15 xl:col-start-10">
+            <div className="col-span-full grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
               {certificates.map((certificate) => (
                 <article key={certificate.reference} className="border-t border-line pt-16">
                   <MediaPlaceholder

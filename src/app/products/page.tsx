@@ -19,7 +19,7 @@ export default function ProductsPage() {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout">
-        <div className="col-content grid w-full grid-cols gap-x-42 gap-y-24">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
           <div className="col-span-full mb-24">
             <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Products" }]} />
           </div>
@@ -70,7 +70,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="layout mt-144 lg:mt-192" aria-labelledby="category-heading">
-        <div className="col-content grid w-full grid-cols gap-x-42 gap-y-42">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-42">
           <div className="col-span-full flex items-end justify-between gap-24 border-b border-line pb-16">
             <h2 id="category-heading" className="text-h3 text-ink">Product categories</h2>
             <p className="text-c2 text-ink-secondary">

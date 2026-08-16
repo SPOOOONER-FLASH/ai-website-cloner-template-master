@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" suppressHydrationWarning className="h-full antialiased">
       <head>
         {/* [SUB] Archivo via the Google Fonts CDN, replacing the target's licensed
             Trade Gothic Next LT Pro (body) and Traffic (H1). Weights 400/600/700. */}

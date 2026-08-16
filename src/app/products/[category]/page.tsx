@@ -39,7 +39,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <section className="layout" aria-labelledby="category-title">
-        <div className="col-content grid w-full grid-cols gap-x-42 gap-y-24">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
           <div className="col-span-full">
             <Breadcrumbs
               items={[
@@ -64,7 +64,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </section>
 
       <section className="layout mt-144 lg:mt-288" aria-label={`${category.name} catalogue`}>
-        <div className="col-content grid w-full grid-cols gap-x-42">
+        <div className="col-content grid w-full grid-cols gap-x">
           <CategoryFilter products={products} options={options} />
         </div>
       </section>

@@ -36,8 +36,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P6** | **About us / company capability page** | ✅ Done |
 | **P7** | **Project listing + project detail** (incl. related-products module) | ✅ Done |
 | **P8** | **Download centre** | ✅ Done |
-| **P9** | **Site-wide mobile responsive** | Next |
-| **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | |
+| **P9** | **Site-wide mobile responsive** | ✅ Done |
+| **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | Next |
 | **P11** | **Real assets and final content** — Canton's own product photography and signed-off copy | |
 
 **Ordering rationale (from the client):**
@@ -138,8 +138,13 @@ than a completed reference.
 Grouped by `DownloadKind`, with the client catalogue and four model-scoped report files.
 CAD, BIM, datasheets and installation guides remain request-only until source files arrive.
 
-### P9 — Mobile responsive
-Site-wide. Responsive classes exist but have never been visually reviewed below 1376px.
+### P9 — Mobile responsive ✅
+The complete English and Spanish route set was audited at 393 / 640 / 744 / 820 / 1032 /
+1376 / 1512px. The inner grid now uses 4 / 8 / 12 / 24 logical columns, preserving the
+24-column, 42px-track desktop baseline while preventing mobile overflow. Navigation,
+forms, product/category rails, company content and project layouts were adjusted for the
+intermediate grids; 91 route/viewport combinations passed with no horizontal overflow,
+broken images or form-control escape.
 
 ### P10 — SEO finishing
 Per-page `metadata`, `sitemap.xml`, `robots.txt`, Open Graph, Schema.org product markup,
@@ -248,8 +253,9 @@ these numbers — they are already pixels.
 ### Layout grid
 `.layout` is a named-line grid with bands `full | popout | outset | content`. Children
 default to the `content` band (1376px at desktop); opt out with `.col-outset` /
-`.col-popout` / `.col-full`. Inside content, `.grid-cols` is a 24-column grid with a 16px
-gap. Reuse it — do not invent a second grid system.
+`.col-popout` / `.col-full`. Inside content, `.grid-cols` uses 4 / 8 / 12 / 24 logical
+columns with a 16px gap. At 1376px and above it resolves to the original 24 columns with
+42px tracks. Reuse it — do not invent a second grid system.
 
 ### Images
 `ImageRef.src` is optional by design. When it is set the photo renders; when it is absent

@@ -106,7 +106,9 @@
   /* Layout grid */
   --max-content-width: 144rem;
   --max-popout-width: 160rem;
-  --grid-columns: 24;
+  /* Responsive logical grid: 4 / 8 / 12 / 24 columns. At the 1376px
+     content width this resolves to 24 x 42px tracks with 23 x 16px gaps. */
+  --grid-columns: 4;
   --grid-gap: 1.6rem;
   --layout-outset: clamp(1.6rem, 1.5282vw + 0.9994rem, 3.2rem);
   --layout-content: min(
@@ -124,6 +126,24 @@
   --h-main-nav-menu: 9.6rem;
   --h-main-nav: calc(var(--h-main-nav-banner) + var(--h-main-nav-menu));
   --button-height: 4.2rem;
+}
+
+@media (min-width: 46.5rem) {
+  :root {
+    --grid-columns: 8;
+  }
+}
+
+@media (min-width: 51.25rem) {
+  :root {
+    --grid-columns: 12;
+  }
+}
+
+@media (min-width: 86rem) {
+  :root {
+    --grid-columns: 24;
+  }
 }
 
 @layer base {

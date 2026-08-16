@@ -22,8 +22,8 @@ export function ProjectListing({ locale = "en" }: { locale?: "en" | "es" }) {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
-          <h1 className="col-span-full text-h1 text-ink lg:col-span-11">{text.title}</h1>
-          <div className="col-span-full lg:col-span-11 lg:col-start-14">
+          <h1 className="col-span-full text-h1 text-ink lg:col-span-5 xl:col-span-11">{text.title}</h1>
+          <div className="col-span-full lg:col-span-6 lg:col-start-7 xl:col-span-11 xl:col-start-14">
             <p className="text-c1 text-ink">{text.intro}</p>
             <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">
               {text.note}

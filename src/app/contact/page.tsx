@@ -12,7 +12,7 @@ export default function ContactPage() {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full lg:col-span-8 xl:col-span-7">
+          <div className="col-span-full lg:col-span-4 xl:col-span-7">
             <h1 className="text-h1 text-ink">Contact</h1>
             <p className="mt-24 text-c1 text-ink">
               Talk to our export team about product selection, specifications, samples, OEM work
@@ -39,7 +39,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="col-span-full lg:col-span-14 lg:col-start-11 xl:col-span-15 xl:col-start-10">
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
             <Suspense
               fallback={
                 <p className="min-h-160 border-t border-line pt-16 text-c1 text-ink-secondary">

@@ -70,13 +70,13 @@ export function ProjectDetail({
               {text.projects}
             </Link>
           </nav>
-          <div className="col-span-full mt-24 lg:col-span-14">
+          <div className="col-span-full mt-24 lg:col-span-7 xl:col-span-14">
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
               {text.status}
             </p>
             <h1 className="mt-16 text-h1 text-ink">{name}</h1>
           </div>
-          <div className="col-span-full mt-24 lg:col-span-7 lg:col-start-18">
+          <div className="col-span-full mt-24 lg:col-span-4 lg:col-start-9 xl:col-span-7 xl:col-start-18">
             <p className="text-h3 text-ink">{buildingType}</p>
             <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">
               {text.note}
@@ -89,10 +89,10 @@ export function ProjectDetail({
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x gap-y-48 border-t border-line pt-48">
-          <div className="col-span-full lg:col-span-7">
+          <div className="col-span-full lg:col-span-4 xl:col-span-7">
             <h2 className="text-h2 text-ink">{text.brief}</h2>
           </div>
-          <div className="col-span-full space-y-24 lg:col-span-14 lg:col-start-11">
+          <div className="col-span-full space-y-24 lg:col-span-7 lg:col-start-6 xl:col-span-14 xl:col-start-11">
             <p className="text-h3 text-ink">{summary}</p>
             {body.map((paragraph) => (
               <p key={paragraph} className="text-c1 text-ink-secondary">
@@ -116,11 +116,11 @@ export function ProjectDetail({
 
         <section className="col-content border-t border-line pt-48">
           <div className="grid grid-cols gap-x gap-y-48">
-            <div className="col-span-full lg:col-span-7">
+            <div className="col-span-full lg:col-span-4 xl:col-span-7">
               <h2 className="text-h2 text-ink">{text.related}</h2>
               <p className="mt-24 text-c2 text-ink-secondary">{text.relatedNote}</p>
             </div>
-            <div className="col-span-full grid grid-cols-1 gap-24 sm:grid-cols-2 lg:col-span-15 lg:col-start-10 xl:grid-cols-3">
+            <div className="col-span-full grid grid-cols-1 gap-24 sm:grid-cols-2 lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10 xl:grid-cols-3">
               {relatedProducts.map((product) => (
                 <ProductCard key={product.model} product={product} />
               ))}

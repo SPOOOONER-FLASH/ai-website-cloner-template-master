@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P8 — Download centre** ✅ |
+| **Phase** | **P9 — Site-wide mobile responsive** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run build` passing — 55 static pages |
-| **Git** | P8 complete on `main` |
-| **Next phase** | **P9 — Site-wide mobile responsive** |
+| **Build** | `npm run check` passing — 55 static pages (one existing font-link warning) |
+| **Git** | P9 ready to commit on `main` |
+| **Next phase** | **P10 — SEO finishing** |
 
 ---
 
@@ -34,6 +34,7 @@
 | **P6** | Company capability — 1998 profile, figures, six new factory/showroom images, model-scoped credentials moved from Contact, Spanish homepage/company/contact | `src/app/company/page.tsx`, `src/components/site/CompanyOverview.tsx`, `src/app/es/**`, `src/data/{company,home-es}.ts`, `public/images/company/` |
 | **P7** | Three bilingual representative application studies, static listing/detail routes and related-product modules | `src/data/projects.ts`, `src/app/projects/**`, `src/app/es/projects/**`, `src/components/site/{ProjectCard,ProjectListing,ProjectDetail}.tsx` |
 | **P8** | Download centre with local catalogue and four model-scoped evidence files; expandable site menu, real social links, repaired certification SVG and logo crop | `src/app/downloads/page.tsx`, `src/data/{downloads,site}.ts`, `src/components/site/{Breadcrumbs,SiteMenuDrawer,ProductCategoryRail}.tsx` |
+| **P9** | Seven-breakpoint responsive audit across English and Spanish routes; 4/8/12/24-column logical grid, repaired mobile overflow and intermediate layouts | `src/app/globals.css`, `src/app/{contact,products,downloads}/**`, `src/components/site/{CompanyOverview,ProjectListing,ProjectDetail,SiteMenuDrawer,CategoryFilter,ProductCategoryRail}.tsx` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
@@ -181,6 +182,18 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
   `material-innovation-workshop.webp` contains a HYDE sign and
   `factory-polishing-workshop-wide.webp` is a duplicate scene.
 
+### P9 detail
+
+- Audited 13 core English/Spanish routes at all specified widths: 393, 640, 744, 820,
+  1032, 1376 and 1512px — 91 route/viewport combinations in total.
+- The shared grid now steps through 4 / 8 / 12 / 24 logical columns. Desktop retains the
+  established 24-column, 42px-track geometry; mobile no longer creates implicit columns.
+- Product navigation is collapsed by default on small screens, the site drawer has unique
+  accessible controls, and its active-state logic no longer marks Home on every route.
+- No audited route had horizontal overflow, a broken image or a form control outside the
+  viewport. Hydration warnings caused by browser extensions are suppressed at the document
+  boundary without changing rendered content.
+
 ### 2026-08-16 real-content expansion
 
 - Added eight catalogue records from client-supplied imagery: `023 ETAN`, `317`, `600`,
@@ -194,11 +207,10 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P9 — Site-wide mobile responsive
+## Next: P10 — SEO finishing
 
-Review the complete English and Spanish site at the seven custom breakpoints
-393 / 640 / 744 / 820 / 1032 / 1376 / 1512px. Repair layout overflow, navigation,
-typography and media cropping without changing the established desktop design.
+Add sitemap, robots output, canonical metadata and Schema.org markup; audit route metadata
+and alt text. Keep the site-wide `noindex` directive until the client approves launch.
 
 ---
 
@@ -244,9 +256,8 @@ Decisions 1–6 from P0 are answered and recorded in
 - **Promo-bar link contrast is 4.04:1**, under WCAG AA 4.5:1 for 18px text. Specified
   that way and left as specified. Fix options if it ever needs to pass: lighten the
   on-dark link to ~`#FF5A55` (≈5.9:1), or use white text with a red underline.
-- **Header modals unimplemented.** Language / search / mega-menu are three inert buttons.
-- **Responsive below 1376px** is structurally present but has never been visually
-  reviewed. That is P9.
+- **Header search remains unimplemented.** Language switching and the expandable site menu
+  are live; search still has no index or interaction.
 - **`canton-demo.zip` is gitignored** — regenerate from `out/` when needed. Windows
   `Compress-Archive` writes backslash path separators, which breaks the directory
   structure on most static hosts; build the zip with explicit forward-slash entry names.

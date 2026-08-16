@@ -12,7 +12,7 @@ export default function ContactoPage() {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full lg:col-span-8 xl:col-span-7">
+          <div className="col-span-full lg:col-span-4 xl:col-span-7">
             <h1 className="text-h1 text-ink">Contacto</h1>
             <p className="mt-24 text-c1 text-ink">
               Hable con nuestro equipo de exportación sobre selección de producto, muestras,
@@ -32,7 +32,7 @@ export default function ContactoPage() {
               </a>
             </div>
           </div>
-          <div className="col-span-full lg:col-span-14 lg:col-start-11 xl:col-span-15 xl:col-start-10">
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
             <Suspense fallback={<p className="text-c1 text-ink-secondary">Preparando formulario…</p>}>
               <InquiryForm locale="es" />
             </Suspense>

@@ -26,7 +26,7 @@ export default function ServiceDownloadsPage() {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <section className="layout" aria-labelledby="downloads-title">
-        <div className="col-content grid w-full grid-cols gap-x-42 gap-y-24">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
           <div className="col-span-full mb-24">
             <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Service + Downloads" }]} />
           </div>
@@ -50,7 +50,7 @@ export default function ServiceDownloadsPage() {
             const files = getDownloadsByKind(group.kind);
             return (
               <section key={group.kind} aria-labelledby={`${group.kind}-title`}>
-                <div className="grid grid-cols gap-x-42 gap-y-24">
+                <div className="grid grid-cols gap-x gap-y-24">
                   <div className="col-span-full xl:col-span-7">
                     <h2 id={`${group.kind}-title`} className="text-h3 text-ink">{group.title}</h2>
                     <p className="mt-16 text-c1 text-ink-secondary">{group.note}</p>
@@ -86,7 +86,7 @@ export default function ServiceDownloadsPage() {
           })}
 
           <section className="border-t border-line pt-48" aria-labelledby="request-files-title">
-            <div className="grid grid-cols gap-x-42 gap-y-24">
+            <div className="grid grid-cols gap-x gap-y-24">
               <div className="col-span-full xl:col-span-7">
                 <h2 id="request-files-title" className="text-h3 text-ink">Need another file?</h2>
               </div>

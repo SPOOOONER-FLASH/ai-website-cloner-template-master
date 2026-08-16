@@ -26,7 +26,7 @@ export function CategoryFilter({ products, options }: CategoryFilterProps) {
   );
 
   return (
-    <div className="col-span-full grid grid-cols gap-x-42 gap-y-64">
+    <div className="col-span-full grid grid-cols gap-x gap-y-64">
       <aside className="col-span-full xl:col-span-6" aria-label="Product filters">
         <p className="border-b border-line pb-16 text-c2 text-ink-secondary">Filter by type</p>
         <div className="flex flex-wrap gap-x-24 gap-y-12 pt-16 xl:flex-col xl:items-start">
@@ -74,4 +74,3 @@ export function CategoryFilter({ products, options }: CategoryFilterProps) {
     </div>
   );
 }
-
