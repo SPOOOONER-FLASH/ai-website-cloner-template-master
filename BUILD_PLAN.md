@@ -33,8 +33,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | ✅ Done |
 | **P4** | **Product overview + category pages + listing + filtering** | ✅ Done |
 | **P5** | **Contact page + inquiry form** | ✅ Done |
-| **P6** | **About us / company capability page** | Next |
-| **P7** | **Project listing + project detail** (incl. related-products module) | |
+| **P6** | **About us / company capability page** | ✅ Done |
+| **P7** | **Project listing + project detail** (incl. related-products module) | Next |
 | **P8** | **Download centre** | |
 | **P9** | **Site-wide mobile responsive** | |
 | **P10** | **SEO finishing** — sitemap, robots, Schema, meta, alt text | |
@@ -60,6 +60,9 @@ The developer is not a programmer and each session has a limited budget. So:
 | `/downloads` | Download centre | P8 |
 | `/company` | About us | P6 |
 | `/contact` | Contact + inquiry | ✅ Done |
+| `/es` | Spanish marketing homepage | ✅ Done (P6) |
+| `/es/company` | Spanish company page | ✅ Done (P6) |
+| `/es/contact` | Spanish contact + inquiry | ✅ Done (P6) |
 
 `trailingSlash: true` is set, so every route exports as `<route>/index.html`.
 
@@ -115,8 +118,12 @@ Uses **Web3Forms** (decision 2). Static export stays.
   product/model query prefill. The client catalogue is downloadable from the page and
   all four supplied reports are shown with their exact documented scope.
 
-### P6 — About us / company capability
-History, manufacturing, quality system, certifications. Mostly editorial.
+### P6 — About us / company capability ✅
+Approved 1998 company story, published company figures, manufacturing capability,
+client-supplied factory/showroom gallery and four model-scoped certificates. Certificates
+were moved out of Contact and into Company. A clickable Spanish marketing version now
+covers the homepage, company page and inquiry flow; the product catalogue remains English
+until final translation copy is approved.
 
 ### P7 — Projects
 Listing + detail. Needs `src/data/projects.ts` first. Detail page links back to the
@@ -148,6 +155,8 @@ category tree and 20 real products are already in. **Remaining P11 scope:**
 - Confirm real SKUs for the twelve products flagged `modelTbc: true`.
 - Verify every certification claim against a real test report, and confirm which current
   models the four existing reports cover.
+- Confirm that the polished 2026-08 factory/showroom renders are faithful documentary
+  images before public launch; they are accepted only as client-supplied demo material.
 
 ---
 

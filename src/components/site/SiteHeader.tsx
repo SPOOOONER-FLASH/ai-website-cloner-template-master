@@ -5,12 +5,30 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
 
-const NAV_LINKS = [
-  { label: "Products", href: "/products" },
-  { label: "Projects", href: "/projects" },
-  { label: "Company", href: "/company" },
-  { label: "Service + Downloads", href: "/downloads" },
-];
+const NAV_LINKS = {
+  en: [
+    { label: "Products", href: "/products" },
+    { label: "Projects", href: "/projects" },
+    { label: "Company", href: "/company" },
+    { label: "Service + Downloads", href: "/downloads" },
+  ],
+  es: [
+    { label: "Productos", href: "/products" },
+    { label: "Proyectos", href: "/projects" },
+    { label: "Empresa", href: "/es/company" },
+    { label: "Servicio + Descargas", href: "/downloads" },
+  ],
+} as const;
+
+function languageTarget(pathname: string, isSpanish: boolean): string {
+  if (isSpanish) {
+    const englishPath = pathname.replace(/^\/es/, "");
+    return englishPath || "/";
+  }
+  if (pathname === "/company" || pathname.startsWith("/company/")) return "/es/company";
+  if (pathname === "/contact" || pathname.startsWith("/contact/")) return "/es/contact";
+  return "/es";
+}
 
 /**
  * Sticky header — 136px (48px promo bar + 88px nav row).
@@ -30,6 +48,9 @@ const NAV_LINKS = [
 export function SiteHeader() {
   // "use client" only so the active nav item can be resolved. No state, no effects.
   const pathname = usePathname();
+  const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
+  const locale = isSpanish ? "es" : "en";
+  const homeHref = isSpanish ? "/es" : "/";
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
@@ -47,7 +68,7 @@ export function SiteHeader() {
         >
           <div className="col-content grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-4">
             <span className="text-c1 text-brand underline-offset-4 group-hover:text-brand-hover group-hover:underline max-lg:text-center lg:[grid-column:-2/-1]">
-              Project Planner
+              {isSpanish ? "Planificador de proyectos" : "Project Planner"}
             </span>
           </div>
         </Link>
@@ -57,7 +78,7 @@ export function SiteHeader() {
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
             <div className="col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12">
               <nav className="flex gap-64">
-                {NAV_LINKS.map((link) => {
+                {NAV_LINKS[locale].map((link) => {
                   const current = isCurrent(link.href);
                   return (
                     <Link
@@ -78,7 +99,7 @@ export function SiteHeader() {
             </div>
 
             <div className="col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12">
-              <Link href="/" className="flex flex-shrink-0 items-center text-ink">
+              <Link href={homeHref} className="flex min-w-0 flex-shrink-0 items-center text-ink">
                 <Wordmark className="pr-8" />
               </Link>
 
@@ -88,13 +109,14 @@ export function SiteHeader() {
                 visual elements — see site-header.spec.md "Known gap".
               */}
               <nav className="flex flex-grow justify-end gap-32">
-                <button
-                  type="button"
+                <Link
+                  href={languageTarget(pathname, isSpanish)}
+                  hrefLang={isSpanish ? "en" : "es"}
                   className="flex items-center gap-8 text-ink underline-offset-4 hover:text-brand-hover hover:underline"
                 >
                   <GlobeIcon className="h-16 w-16 text-ink-tertiary" />
-                  <span className="text-c2">ZH | EN</span>
-                </button>
+                  <span className="text-c2">{isSpanish ? "English" : "Español"}</span>
+                </Link>
                 <button type="button" aria-label="Search" className="text-ink-tertiary">
                   <SearchIcon className="h-20 w-20" />
                 </button>

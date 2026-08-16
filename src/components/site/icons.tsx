@@ -67,16 +67,16 @@ export function MenuIcon(props: SVGProps<SVGSVGElement>) {
  */
 export function Wordmark({ className }: { className?: string }) {
   return (
-    <span className={cn("flex items-center gap-12 whitespace-nowrap", className)}>
+    <span className={cn("flex min-w-0 items-center gap-10 whitespace-nowrap", className)}>
       <Image
         src="/images/brand/hyland-mark.png"
         alt=""
         width={254}
         height={150}
         priority
-        className="h-32 w-auto sm:h-40"
+        className="h-28 w-auto flex-none object-contain sm:h-36"
       />
-      <span className="text-[1.4rem] font-bold uppercase leading-none tracking-[0.05em] sm:text-[1.8rem]">
+      <span className="text-[1.2rem] font-bold uppercase leading-none tracking-[0.05em] sm:text-[1.6rem]">
         Canton Hyland
       </span>
     </span>

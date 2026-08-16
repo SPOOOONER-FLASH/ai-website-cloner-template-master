@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P5 — Contact page + inquiry form** ✅ |
+| **Phase** | **P6 — About us / company capability** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run build` passing — 45 static pages: 16 category pages + 20 product details |
-| **Git** | P5 committed on `main` and pushed to `origin/main` |
-| **Next phase** | **P6 — About us / company capability page** (**not started — do not begin without being asked**) |
+| **Build** | `npm run build` passing — 48 static pages |
+| **Git** | P6 ready for commit on `main` |
+| **Next phase** | **P7 — Project listing + project detail** (explicitly requested in this session) |
 
 ---
 
@@ -31,6 +31,7 @@
 | **P3** | Product detail page — seven content blocks, 12 statically exported product routes, verified empty states and model-aware inquiry links | `src/app/products/[category]/[slug]/page.tsx`, `src/components/site/ProductDetail.tsx` |
 | **P4** | Catalogue discovery — 16 Canton categories, overview grid, static category routes, sub-category filtering and shared cards | `src/app/products/page.tsx`, `src/app/products/[category]/page.tsx`, `src/components/site/{CategoryCard,CategoryFilter,ProductCard}.tsx`, `src/data/categories.ts` |
 | **P5** | Static Web3Forms inquiry flow — honeypot, explicit states, model-aware prefill, catalogue download and model-scoped certificate evidence | `src/app/contact/page.tsx`, `src/components/site/InquiryForm.tsx`, `.env.example`, `public/downloads/canton-hyland-product-catalogue-2026.pdf`, `next.config.ts` |
+| **P6** | Company capability — 1998 profile, figures, six new factory/showroom images, model-scoped credentials moved from Contact, Spanish homepage/company/contact | `src/app/company/page.tsx`, `src/components/site/CompanyOverview.tsx`, `src/app/es/**`, `src/data/{company,home-es}.ts`, `public/images/company/` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
@@ -178,15 +179,12 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P6 — About us / company capability page
+## Next: P7 — Projects
 
-Replace the `/company` stub with the approved 1998 company story, manufacturing
-capabilities, factory photography, quality-system facts and model-scoped credentials
-already held in `src/data/company.ts`. Reuse the certificate presentation and existing
-site components; do not generalise a report beyond the model printed on it.
-
-Do not start P6 automatically; begin it only when the next session explicitly asks for
-the next unfinished phase.
+Replace the `/projects` stub with a listing and statically exported detail pages. No real
+client project names, locations or completion years have been supplied, so P7 must label
+each entry as a **representative application** rather than imply a completed reference.
+Each detail page includes the related-products module required by the plan.
 
 ---
 

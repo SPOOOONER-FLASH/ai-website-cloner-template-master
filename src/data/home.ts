@@ -21,14 +21,14 @@ import type {
 export const hero1: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1391",
-    src: "/images/company/hero-panic-exit-banner.webp",
-    label: "Hyland panic exit device fitted to a pair of emergency exit doors",
+    ratio: "1920 / 754",
+    src: "/images/company/hero-modern-tubular-lock.webp",
+    label: "Modern matt-black tubular lever lock installed on a bedroom door",
   },
-  title: "Panic Exit Device",
-  body: "Fast release. Reliable safety. Built for emergency doors.",
+  title: "Modern Tubular Door Lock",
+  body: "A restrained matt-black lever set for contemporary residential interiors.",
   linkLabel: "Learn more",
-  href: "/products",
+  href: "/products/lever-handles/black-tubular-lever-lock-set",
 };
 
 export const teaser1: PageTeaserContent = {
@@ -60,15 +60,15 @@ export const teaser1: PageTeaserContent = {
 export const hero2: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1481",
-    src: "/images/company/hero-grip-handle-banner.webp",
-    label: "Hyland grip handle set fitted to a timber entrance door",
+    ratio: "2880 / 1391",
+    src: "/images/company/hero-panic-exit-banner.webp",
+    label: "Hyland panic exit device fitted to a pair of emergency exit doors",
   },
-  title: "Grip Handle Set",
+  title: "Panic Exit Devices",
   // 4 lines at the 332px caption column, matching the measured module height
-  body: "Modern door hardware designed for comfort, durability and security.",
-  linkLabel: "Learn more",
-  href: "/products",
+  body: "Our flagship safety-hardware range for fast release on commercial and emergency escape doors.",
+  linkLabel: "Explore the flagship range",
+  href: "/products/panic-exit-devices",
 };
 
 export const text1: TextModuleContent = {

@@ -6,11 +6,34 @@ import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ChevronDownIcon } from "./icons";
 
-const MORE_LINKS = [
-  { label: "Project Planner", href: "/products" },
-  { label: "The Canton Hyland Product Overview", href: "/products" },
-  { label: "Careers", href: "/company" },
-];
+const introCopy = {
+  en: {
+    welcome: "Welcome",
+    title: "Door Security and Building Hardware, Manufactured in Guangdong",
+    body: "Canton Hyland has manufactured commercial and residential door hardware since 1998. We specialize in panic devices, tubular and cylindrical locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. Recognized experts in master key and construction key systems. ISO 9001 certified since 2002.",
+    more: "More links",
+    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    tagline: "Total solutions to the building industry",
+    links: [
+      { label: "Project Planner", href: "/products" },
+      { label: "The Canton Hyland Product Overview", href: "/products" },
+      { label: "Careers", href: "/company" },
+    ],
+  },
+  es: {
+    welcome: "Bienvenido",
+    title: "Seguridad para puertas y herrajes de construcción fabricados en Guangdong",
+    body: "Canton Hyland fabrica herrajes para puertas comerciales y residenciales desde 1998. Producimos dispositivos antipánico, cerraduras tubulares y cilíndricas, cerrojos, cajas de cerradura, cilindros, manillas y herrajes para vidrio. ISO 9001 desde 2002.",
+    more: "Más enlaces",
+    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    tagline: "Soluciones integrales para la industria de la construcción",
+    links: [
+      { label: "Planificador de proyectos", href: "/products" },
+      { label: "Catálogo de productos", href: "/products" },
+      { label: "Conozca la empresa", href: "/es/company" },
+    ],
+  },
+} as const;
 
 /**
  * Page intro block — `main`'s second child, between the two `.modules` containers.
@@ -24,8 +47,9 @@ const MORE_LINKS = [
  * decorative icon, so --color-ink-tertiary — never red. The three ArrowLinks in the panel
  * carry the only brand red here.
  */
-export function WelcomeIntro() {
+export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
   const [expanded, setExpanded] = useState(false);
+  const text = introCopy[locale];
 
   return (
     <div className="layout">
@@ -34,10 +58,10 @@ export function WelcomeIntro() {
         <div className="col-span-full row-start-1 grid grid-cols-subgrid sm:col-span-4 md:col-span-6 xl:col-span-12 xl:col-start-1">
           <div className="col-span-6 row-start-1 xl:col-span-10">
             <h1 className="text-h1 text-ink">
-              Welcome
+              {text.welcome}
               <br />
               <span className="text-h1-light">
-                Door Security and Building Hardware, Manufactured in Guangdong
+                {text.title}
               </span>
             </h1>
           </div>
@@ -46,14 +70,7 @@ export function WelcomeIntro() {
         {/* slot-2 — copy */}
         <div className="col-span-full grid grid-cols-subgrid gap sm:col-span-4 md:col-span-6 xl:col-span-6 xl:row-span-2">
           <section className="copy col-span-full text-ink xl:col-span-5">
-            {/* Client's own copy (公司英文简介.docx), trimmed to the 13-line column height. */}
-            <div>
-              Canton Hyland has manufactured commercial and residential door hardware since 1998.
-              We specialize in door security and building
-              hardware — panic devices, tubular and cylindrical locks, deadbolts, lock cases,
-              profile cylinders, door handles and patch fittings. Recognized experts in master key
-              and construction key systems. ISO 9001 certified since 2002.
-            </div>
+            <div>{text.body}</div>
           </section>
         </div>
 
@@ -67,7 +84,7 @@ export function WelcomeIntro() {
                 aria-expanded={expanded}
                 className="mb-24 flex w-full justify-between gap-x-24 text-left sm:hidden sm:cursor-default"
               >
-                <h3 className="text-h3 text-ink">More links</h3>
+                <h3 className="text-h3 text-ink">{text.more}</h3>
                 <span
                   className={cn(
                     "flex h-[var(--leading-h3)] place-items-center transition-transform duration-300",
@@ -80,7 +97,7 @@ export function WelcomeIntro() {
 
               <div className={cn(expanded ? "block" : "hidden", "sm:!block")}>
                 <ul className="flex flex-col gap-36 pointer-fine:gap-16">
-                  {MORE_LINKS.map((link) => (
+                  {text.links.map((link) => (
                     <li key={link.label}>
                       <ArrowLink href={link.href}>{link.label}</ArrowLink>
                     </li>
@@ -106,11 +123,7 @@ export function WelcomeIntro() {
               />
             </div>
             <div className="col-span-6 flex flex-col justify-between text-c1 text-ink">
-              <p>
-                Canton Hyland Hardware
-                <br />
-                (Group) Co., Ltd
-              </p>
+              <p className="whitespace-pre-line">{text.company}</p>
               {/* Monochrome vector certification marks — inherits --color-ink. */}
               <MediaPlaceholder
                 ratio="87 / 46"
@@ -119,7 +132,9 @@ export function WelcomeIntro() {
                 className="w-[min(8.57rem,11.552083vw)] sm:w-[min(8.57rem,5.95208333vw)]"
               />
             </div>
-            <div className="col-span-6 mt-48 text-c1 text-ink-secondary [grid-column-end:-1]">Total solutions to the building industry</div>
+            <div className="col-span-6 mt-48 text-c1 text-ink-secondary [grid-column-end:-1]">
+              {text.tagline}
+            </div>
           </div>
         </div>
       </div>

@@ -17,6 +17,13 @@ export const profile: string[] = [
   "We welcome OEM partnerships and specialize in developing custom solutions tailored to specific client requirements. We invite you to visit our facilities to explore how our expertise can meet your hardware needs.",
 ];
 
+export const profileEs: string[] = [
+  "Canton Hyland Hardware (Group) Co., Ltd. fue fundada en 1998 y aporta décadas de experiencia a la fabricación de herrajes para edificios comerciales y residenciales. Nuestras instalaciones integran estampación, pulido, montaje y control de calidad.",
+  "Nos especializamos en soluciones completas de seguridad y herrajes para puertas: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura, cilindros de perfil, manillas, herrajes para vidrio y accesorios para edificios y dormitorios.",
+  "Como especialistas en sistemas de llave maestra y llave de obra, apoyamos proyectos comerciales e institucionales complejos. Desde la certificación ISO 9001 en 2002, mantenemos un enfoque de mejora continua y control de calidad.",
+  "Trabajamos con distribuidores, arquitectos, contratistas y socios OEM, desarrollando soluciones adaptadas a requisitos técnicos y mercados de exportación.",
+];
+
 /**
  * Figures published on the client's own Alibaba storefront, read 2026-08-15.
  * Ranges are kept as ranges — narrowing them would be inventing precision.
@@ -29,6 +36,16 @@ export const stats: { label: string; value: string }[] = [
   { label: "Quality system", value: "ISO 9001 since 2002" },
   { label: "Business type", value: "Manufacturer" },
   { label: "Location", value: "Guangdong, China" },
+];
+
+export const statsEs: { label: string; value: string }[] = [
+  { label: "Fundación", value: "1998" },
+  { label: "Equipo", value: "101–200 personas" },
+  { label: "Superficie", value: "3.000–5.000 m²" },
+  { label: "Producción anual", value: "US$50–100 millones" },
+  { label: "Sistema de calidad", value: "ISO 9001 desde 2002" },
+  { label: "Actividad", value: "Fabricante" },
+  { label: "Ubicación", value: "Guangdong, China" },
 ];
 
 export interface CertificateRecord {
@@ -106,23 +123,33 @@ export const certificates: CertificateRecord[] = [
 /** Facility photography supplied by the client. */
 export const facilityImages: ImageRef[] = [
   {
-    src: "/images/company/press-shop.webp",
+    src: "/images/company/factory-polishing-workshop.webp",
     ratio: "3 / 2",
-    label: "Row of mechanical presses on the Canton Hyland stamping floor",
+    label: "Polishing workshop with extraction equipment and production benches",
   },
   {
-    src: "/images/company/polishing-line.webp",
+    src: "/images/company/factory-assembly-quality-line.webp",
     ratio: "3 / 2",
-    label: "Polishing and finishing line with extraction ducting",
+    label: "Assembly and quality-control line for door hardware components",
   },
   {
-    src: "/images/company/assembly-line.webp",
+    src: "/images/company/factory-cnc-production.webp",
     ratio: "3 / 2",
-    label: "Assembly and packing benches with finished hardware on pallets",
+    label: "CNC production equipment in a hardware machining workshop",
   },
   {
-    src: "/images/company/facility-yard.webp",
+    src: "/images/company/factory-cnc-machining.webp",
     ratio: "3 / 2",
-    label: "Loading yard between the Canton Hyland production halls",
+    label: "Operator preparing aluminium profiles at a CNC machining centre",
+  },
+  {
+    src: "/images/company/showroom-product-gallery.webp",
+    ratio: "3 / 2",
+    label: "Canton Hyland product showroom and sample meeting room",
+  },
+  {
+    src: "/images/company/showroom-emergency-hardware.webp",
+    ratio: "3 / 2",
+    label: "Showroom wall presenting emergency exit and architectural hardware",
   },
 ];

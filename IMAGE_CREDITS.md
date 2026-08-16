@@ -116,8 +116,29 @@ All 1000×1000, cropped 1:1, q=78.
 | `hero-grip-handle-banner.webp` | 大图二.jpg | 772×397 | 28.8 KB |
 | `hero-storefront-banner.webp` | 未标题-1.jpg | 1236×754 | 41.7 KB |
 | `hero-designed-for.webp` | Storefront Door Push Pull Handle Lock.jpg | 1000×666 | 26.4 KB |
+| `hero-modern-tubular-lock.webp` | 未标题-1.jpg | 1920×754 | 59.3 KB |
 | `decorative-hinge-detail.webp` | Hinge.jpg | 1000×510 | 27.0 KB |
 | `certification-marks.svg` | **drawn for this project** | vector | 1 KB |
+
+### 2026-08 client-supplied factory / showroom set
+
+Source for every file below: **client-owned material supplied directly for the prototype**.
+WebP q=78, centre-cropped to 3:2, each under 300 KB. These files are technically suitable
+for the demo, but their highly polished / composited appearance and embedded Hyland signage
+must be confirmed by the client as faithful documentary photography before public launch.
+
+| File | Source file | Output | Size | P11 verdict |
+|---|---|---|---|---|
+| `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | Accept for demo; verify authenticity |
+| `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | Accept for demo; verify authenticity |
+| `factory-cnc-production.webp` | 63633323…png | 1776×1184 | 110.7 KB | Accept for demo; verify authenticity |
+| `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | Accept for demo; verify authenticity |
+| `showroom-product-gallery.webp` | ef4f1112…png | 1776×1184 | 135.3 KB | Accept for demo; verify authenticity |
+| `showroom-emergency-hardware.webp` | ba72e861…png | 2390×1593 | 177.4 KB | Accept for demo; strongest documentary image |
+
+`cdc07db…png` is a duplicate of the polishing-workshop scene and was not imported.
+`60d70746…png` was not imported because its sign reads “HYDE MATERIAL INNOVATION CENTER”,
+which conflicts with the approved Canton Hyland identity.
 
 `certification-marks.svg` is not client material — it is a monochrome vector mark drawn to
 fill the 87:46 signature slot, showing ISO 9001 and ANSI/BHMA Grade 3. Flat, no gradients,

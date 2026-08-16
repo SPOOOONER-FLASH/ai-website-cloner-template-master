@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
-import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
-import { certificates } from "@/data/company";
 
 export const metadata: Metadata = {
   title: "Contact | Canton Hyland",
@@ -57,45 +55,6 @@ export default function ContactPage() {
             This static website sends inquiries through Web3Forms. Submission is enabled when the
             deployment contains a valid NEXT_PUBLIC_W3F_KEY.
           </p>
-        </section>
-
-        <section className="col-content border-t border-line pt-48">
-          <div className="grid grid-cols gap-x gap-y-48">
-            <div className="col-span-full lg:col-span-8 xl:col-span-7">
-              <h2 className="text-h2 text-ink">Test reports and conformity</h2>
-              <p className="mt-24 text-c1 text-ink-secondary">
-                These documents support the exact models or series printed on each report. Please
-                ask us to confirm whether a current SKU is covered before specifying it.
-              </p>
-            </div>
-
-            <div className="col-span-full grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 lg:col-span-14 lg:col-start-11 xl:col-span-15 xl:col-start-10">
-              {certificates.map((certificate) => (
-                <article key={certificate.reference} className="border-t border-line pt-16">
-                  <MediaPlaceholder {...certificate.image} className="bg-surface-alt object-contain" />
-                  <h3 className="mt-16 text-h3 text-ink">{certificate.title}</h3>
-                  <dl className="mt-16 space-y-8 text-c2 text-ink-secondary">
-                    <div>
-                      <dt className="inline font-semibold text-ink">Scope: </dt>
-                      <dd className="inline">{certificate.coversModel}</dd>
-                    </div>
-                    <div>
-                      <dt className="inline font-semibold text-ink">Issuer: </dt>
-                      <dd className="inline">{certificate.issuer}</dd>
-                    </div>
-                    <div>
-                      <dt className="inline font-semibold text-ink">Reference: </dt>
-                      <dd className="inline">{certificate.reference}</dd>
-                    </div>
-                    <div>
-                      <dt className="inline font-semibold text-ink">Issued: </dt>
-                      <dd className="inline">{certificate.issued}</dd>
-                    </div>
-                  </dl>
-                </article>
-              ))}
-            </div>
-          </div>
         </section>
       </div>
     </main>

@@ -31,6 +31,8 @@ const P5 = `${SRC}/4)五张产品图➕产品名称➕视频➕四张证书➕�
 const CO = `${SRC}/3)四张公司图➕公司简介`;
 const P1 = `${SRC}/1)一张产品➕产品名称➕一张背景图`;
 const CERT = `${P5}/证书`;
+const NEW_FACTORY =
+  "C:/Users/johns/xwechat_files/wxid_kslpb8pv4u1c12_ba05/temp/RWTemp/2026-08/97b9ed2c0425bf523ecd62e874b0d5a0";
 
 /** dest, source, aspect ratio (w/h), CSS width the slot renders at (for the scale report) */
 const JOBS = [
@@ -67,7 +69,15 @@ const JOBS = [
   ["company/hero-panic-exit-banner.webp", `${P15}/大图一.jpg`, 2880 / 1391, 1440],
   ["company/hero-grip-handle-banner.webp", `${P15}/大图二.jpg`, 2880 / 1481, 1440],
   ["company/hero-storefront-banner.webp", `${P1}/未标题-1.jpg`, 2880 / 1757, 1440],
+  ["company/hero-modern-tubular-lock.webp", `${P1}/未标题-1.jpg`, 1920 / 754, 1440],
   ["company/hero-designed-for.webp", `${P15}/Storefront Door Push Pull Handle Lock.jpg`, 970 / 646, 970],
+  // ---- Client-supplied 2026-08 factory/showroom set (3:2 crops) ----
+  ["company/factory-polishing-workshop.webp", `${NEW_FACTORY}/e60a1601b2c6b071aa91c296e630d63e.png`, 3 / 2, 680],
+  ["company/factory-assembly-quality-line.webp", `${NEW_FACTORY}/f0315c17368e1f6d95cc8c3f5885e041.png`, 3 / 2, 680],
+  ["company/showroom-product-gallery.webp", `${NEW_FACTORY}/ef4f1112b496c2b8cbce6551409cf25b.png`, 3 / 2, 680],
+  ["company/showroom-emergency-hardware.webp", `${NEW_FACTORY}/ba72e86166bcbc0c6a5d247c819bd3c2.png`, 3 / 2, 680],
+  ["company/factory-cnc-production.webp", `${NEW_FACTORY}/6363332303cf1a1f08cb71a851d372e6.png`, 3 / 2, 680],
+  ["company/factory-cnc-machining.webp", `${NEW_FACTORY}/423b142324065050bd287c2ac3090670.png`, 3 / 2, 680],
   // ---- Decorative slot (306:156). No CAD line art in the pack — see BUILD_PLAN. ----
   ["company/decorative-hinge-detail.webp", `${P4}/Hinge.jpg`, 306 / 156, 306],
   // ---- Certificates (portrait 604x800, kept whole — cropping a document is wrong) ----
@@ -87,7 +97,7 @@ for (const d of ["products", "company", "certificates"]) {
  * Resolve by normalised name rather than hard-coding whitespace.
  */
 const index = new Map();
-for (const dir of [P15, P4, P5, CO, P1, CERT]) {
+for (const dir of [P15, P4, P5, CO, P1, CERT, NEW_FACTORY]) {
   for (const f of await readdir(dir)) {
     index.set(`${dir}|${f.trim().toLowerCase()}`, join(dir, f));
   }
@@ -154,7 +164,7 @@ console.log(`under 1.5x: ${report.filter((r) => r.scale < 1.5).length}`);
 
 // leftover sources not used, so nothing silently goes missing
 const used = new Set(JOBS.map(([, s]) => s.split("/").pop().trim().toLowerCase()));
-for (const dir of [P15, P4, P5, CO, P1, CERT]) {
+for (const dir of [P15, P4, P5, CO, P1, CERT, NEW_FACTORY]) {
   for (const f of await readdir(dir)) {
     if (/\.(jpg|jpeg|png)$/i.test(f) && !used.has(f.trim().toLowerCase())) console.log(`unused source: ${dir.split("/").pop()}/${f}`);
   }
