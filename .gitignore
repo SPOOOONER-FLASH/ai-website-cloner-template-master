@@ -44,6 +44,7 @@ next-env.d.ts
 .claude/settings.local.json
 
 # User-specific skills (not part of the template)
+.agents/
 .claude/skills/customize/
 .claude/skills/release/
 

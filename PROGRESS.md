@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P2 — Site skeleton** ✅ · **client asset drop** (part of P11, pulled forward) |
+| **Phase** | **P3 — Product detail page** ⭐ ✅ |
 | **Status** | ✅ Complete |
-| **Last updated** | 2026-08-15 |
-| **Build** | `npm run build` passing — 9 static pages · lint 0 errors · typecheck clean |
+| **Last updated** | 2026-08-16 |
+| **Build** | `npm run build` passing — 21 static pages, including 12 product detail pages |
 | **Git** | clean tree, all work committed |
-| **Next phase** | **P3 — Product detail page ⭐** (**not started — do not begin without being asked**) |
+| **Next phase** | **P4 — Product overview + category pages + listing + filtering** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -28,6 +28,7 @@
 | **P0** | Foundation — git safety net, planning docs, content model | `BUILD_PLAN.md`, `PROGRESS.md`, `src/data/types.ts`, `src/data/products.ts`, `src/data/categories.ts` |
 | **P1** | Homepage imagery — 11 stock photos replace the placeholder blocks | `public/images/*.jpg`, `IMAGE_CREDITS.md`, `scripts/download-homepage-images.mjs`, `site/MediaPlaceholder.tsx`, `src/data/home.ts` |
 | **P2** | Site skeleton — chrome in the layout, components out of the clone namespace, all routes and links wired, 404 | `src/app/layout.tsx`, `src/app/{products,projects,downloads,company,contact}/page.tsx`, `src/app/not-found.tsx`, `src/components/site/**`, `src/data/home.ts` |
+| **P3** | Product detail page — seven content blocks, 12 statically exported product routes, verified empty states and model-aware inquiry links | `src/app/products/[category]/[slug]/page.tsx`, `src/components/site/ProductDetail.tsx` |
 | — | **Client asset drop** — real photography, company profile, category tree and 12 real products replace all stock and invented data | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
 ### P1 detail
@@ -162,33 +163,18 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P3 — Product detail page ⭐
+## Next: P4 — Product overview + category pages + listing + filtering
 
-The commercially critical page, and the test of whether building this in-house is viable.
-Route `/products/[category]/[slug]`, seven blocks:
+Build the catalogue discovery layer using the existing real product and category data:
 
-1. Breadcrumb + title + model number
-2. Hero image + gallery
-3. Spec table — **variable row count** (the samples have 5, 8 and 10 rows)
-4. Material / finishes / door types
-5. Certification badges
-6. Attachments (datasheets, CAD)
-7. Related products
+1. `/products` — overview of the real top-level categories.
+2. `/products/[category]` — product listing for each category.
+3. Sub-category values remain filters only; they do not add a URL level.
+4. Reuse the P3 product-card treatment and existing site header/footer components.
+5. Generate every category route for the static export and provide clear empty states.
 
-**Before writing the page:**
-- `generateStaticParams()` must come from `getAllProductParams()` in `src/data/products.ts`
-  — the static export cannot build a dynamic route without it.
-- `getProductBySlug()`, `getRelatedProducts()` and `findCategoryByPath()` are already
-  written and unused. Use them rather than writing new lookups.
-- The "Request a quote" button is a `Button` from `src/components/site/Button.tsx` and
-  must carry the model number into the P5 form.
-- No downloads data exists yet, so `attachmentIds` resolves to nothing — build block 6
-  to render an empty state rather than assuming files are there.
-
-**Done when:** all 3 sample products render fully, including empty states for a product
-with no gallery and no attachments, and the build emits 3 static product pages.
-
-**This phase may be worth splitting a/b** — blocks 1–4 in one session, 5–7 in the next.
+Do not start P4 automatically; begin it only when the next session explicitly asks for
+the next unfinished phase.
 
 ---
 
@@ -199,7 +185,7 @@ with no gallery and no attachments, and the build emits 3 static product pages.
 | 7 | **The "Insights" / magazine block has no route.** The homepage has two modules for it (`text3`, `hero5` in `src/data/home.ts`) and both link to `#` — the only dead internal links left. Either add `/insights` as a phase, or drop the two modules from the homepage. | Homepage completeness |
 | 8 | **Imprint and Privacy Notice have no pages.** Both footer links currently point at `/company`. Real legal pages are usually a launch requirement in export markets. | Launch |
 | 9 | 🔴 **Founding year and legal name conflict.** The client's English profile says *"founded in 1998"* and *"over three decades"*. Their own Alibaba storefront says *"Year Established: 2012"* and *"more than 25 years"*. The certificates are issued to *"Canton Hyland Hardware Co., Ltd"*, the profile says *"Canton Hyland Hardware (Group) Co., Ltd."*, Alibaba says *"Canton Hyland Hardware & Locks Co., Ltd."* — three names. Nothing on the site states a founding year until this is resolved; `src/data/company.ts` deliberately omits it. Overseas buyers do check this. | Company page (P6), launch |
-| 10 | **Seven products have no real SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. The five with real codes are 305, 309-D, 314, 320 and LC14 85×50. Needed before "Request a quote" can quote a model. | P3, P5 |
+| 10 | **Seven products have no real SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P5/P11 completion. | P5, P11 |
 
 Decisions 1–6 from P0 are answered and recorded in
 [BUILD_PLAN.md](BUILD_PLAN.md#decisions).
@@ -213,12 +199,11 @@ Decisions 1–6 from P0 are answered and recorded in
   straight to Web3Forms from the browser.
 - **Web3Forms key** goes in `NEXT_PUBLIC_W3F_KEY`. It is public by nature — that is how
   Web3Forms works — so do not treat it as a secret, but do keep it out of the repo.
-- **Stock photos are placeholders, not products.** The 11 homepage images show generic
-  hardware and interiors. They must not be read as a Canton product catalogue. P11
-  replaces them.
-- **Sample product data is invented** — dimensions, materials, finishes, cycle ratings.
-  Certifications are now correct (ISO 9001, ANSI/BHMA Grade 3 only). Every future
-  certification claim must be checked against a real test report before it ships.
+- **Client product photos are B2B-platform material.** They are useful for an honest
+  prototype but several need professional reshooting in P11 to match the minimal layout.
+- **Sparse product data stays sparse.** P3 shows explicit empty states instead of
+  inferring specifications, gallery views or downloads. Every certification claim still
+  needs model-by-model verification against the original report before launch.
 - **Site-wide `noindex` is deliberate** and stays until launch (decision 6). Removing it
   is a launch step, not a cleanup.
 - **Spacing utilities are already pixels.** Root font-size is 62.5%, `--spacing: 0.1rem`,

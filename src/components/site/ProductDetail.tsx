@@ -1,0 +1,288 @@
+import Link from "next/link";
+import type { Product } from "@/data/types";
+import { getRelatedProducts } from "@/data/products";
+import { ArrowLink } from "./ArrowLink";
+import { Button } from "./Button";
+import { MediaPlaceholder } from "./MediaPlaceholder";
+
+interface ProductDetailProps {
+  product: Product;
+  categoryName: string;
+}
+
+function EmptyState({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="border-t border-line pt-16 text-c1 text-ink-secondary">
+      {children}
+    </p>
+  );
+}
+
+function ProductFact({ label, values }: { label: string; values: string[] }) {
+  return (
+    <div className="border-t border-line pt-16">
+      <dt className="text-c2 text-ink-secondary">{label}</dt>
+      <dd className="mt-16 text-c1 text-ink">
+        {values.length ? values.join(" · ") : "Information available on request"}
+      </dd>
+    </div>
+  );
+}
+
+/**
+ * The seven-block product-detail template used by every catalogue record.
+ *
+ * Product claims render only from src/data/products.ts. Missing specifications,
+ * gallery views and files stay visibly missing rather than being inferred. This is
+ * intentional: architectural hardware is bought from the schedule, so a plausible
+ * but unverified dimension is more damaging than an honest empty state.
+ */
+export function ProductDetail({ product, categoryName }: ProductDetailProps) {
+  const relatedProducts = getRelatedProducts(product);
+  const quoteParams = new URLSearchParams({ product: product.name });
+
+  if (!product.modelTbc) quoteParams.set("model", product.model);
+
+  const quoteHref = `/contact/?${quoteParams.toString()}`;
+
+  return (
+    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+      {/* 1 — Breadcrumb, title and model */}
+      <section className="layout" aria-labelledby="product-title">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+          <nav
+            aria-label="Breadcrumb"
+            className="col-span-full flex flex-wrap items-center gap-x-8 text-c2 text-ink-secondary"
+          >
+            <Link href="/" className="hover:text-brand-hover hover:underline">
+              Home
+            </Link>
+            <span aria-hidden="true">/</span>
+            <Link href="/products/" className="hover:text-brand-hover hover:underline">
+              Products
+            </Link>
+            <span aria-hidden="true">/</span>
+            <span>{categoryName}</span>
+          </nav>
+
+          <div className="col-span-full mt-24 xl:col-span-12">
+            <p className="text-c1 text-ink-secondary">{product.series}</p>
+            <h1 id="product-title" className="mt-8 text-h1 text-ink">
+              {product.name}
+            </h1>
+          </div>
+
+          <div className="col-span-full mt-24 xl:col-span-8 xl:col-start-17">
+            <p className="text-c2 text-ink-secondary">Model</p>
+            <p className="mt-8 text-h3 text-ink">
+              {product.modelTbc ? "Reference available on request" : product.model}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 2 — Hero image and gallery */}
+      <section className="layout mt-96 lg:mt-136" aria-label="Product images">
+        <div className="col-outset">
+          <div className="layout">
+            <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+              <div className="col-span-full xl:col-span-12">
+                <MediaPlaceholder {...product.heroImage} />
+              </div>
+
+              <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
+                <div>
+                  <p className="text-h3 text-ink">{product.summary}</p>
+                  <dl className="mt-48 grid grid-cols-2 gap-x gap-y-32">
+                    <ProductFact label="Material" values={[product.material].filter(Boolean)} />
+                    <ProductFact label="Door type" values={product.doorTypes} />
+                  </dl>
+                </div>
+
+                <div className="mt-64 flex flex-wrap items-center gap-16">
+                  <Button href={quoteHref}>Request a quote</Button>
+                  <Button href="/contact/" variant="secondary">
+                    Ask a technical question
+                  </Button>
+                </div>
+              </div>
+
+              <div className="col-span-full mt-16">
+                {product.gallery.length ? (
+                  <div className="grid grid-cols-2 gap-16 md:grid-cols-3 xl:grid-cols-4">
+                    {product.gallery.map((image) => (
+                      <MediaPlaceholder key={`${image.src}-${image.label}`} {...image} />
+                    ))}
+                  </div>
+                ) : (
+                  <EmptyState>
+                    Additional product views are not yet available. Request drawings or samples
+                    from our export team.
+                  </EmptyState>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3 — Variable-length specification table */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="specifications-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+          <div className="col-span-full xl:col-span-8">
+            <h2 id="specifications-heading" className="text-h3 text-ink">
+              Technical specifications
+            </h2>
+          </div>
+          <div className="col-span-full xl:col-span-12 xl:col-start-13">
+            {product.specs.length ? (
+              <dl className="border-t border-line">
+                {product.specs.map((spec) => (
+                  <div
+                    key={`${spec.label}-${spec.value}`}
+                    className="grid grid-cols-2 gap-16 border-b border-line py-16 text-c1"
+                  >
+                    <dt className="text-ink-secondary">{spec.label}</dt>
+                    <dd className="text-ink">
+                      {spec.value}
+                      {spec.unit ? ` ${spec.unit}` : ""}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            ) : (
+              <EmptyState>
+                Verified dimensions are pending the current technical catalogue. No values have
+                been inferred from similar products.
+              </EmptyState>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 4 — Material, finishes and door types */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="configuration-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+          <div className="col-span-full xl:col-span-8">
+            <h2 id="configuration-heading" className="text-h3 text-ink">
+              Configuration
+            </h2>
+          </div>
+          <dl className="col-span-full grid grid-cols-1 gap-32 sm:grid-cols-2 xl:col-span-16 xl:col-start-9 xl:grid-cols-3">
+            <ProductFact label="Material" values={[product.material].filter(Boolean)} />
+            <ProductFact label="Available finishes" values={product.finishes} />
+            <ProductFact label="Suitable door types" values={product.doorTypes} />
+          </dl>
+        </div>
+      </section>
+
+      {/* 5 — Certifications */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="certifications-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+          <div className="col-span-full xl:col-span-8">
+            <h2 id="certifications-heading" className="text-h3 text-ink">
+              Standards and certifications
+            </h2>
+          </div>
+          <div className="col-span-full xl:col-span-16 xl:col-start-9">
+            {product.certifications.length ? (
+              <ul className="grid grid-cols-1 gap-16 sm:grid-cols-2">
+                {product.certifications.map((certification) => (
+                  <li
+                    key={`${certification.name}-${certification.standard ?? ""}`}
+                    className="border border-line bg-surface-alt p-24"
+                  >
+                    <p className="text-h3 text-ink">{certification.name}</p>
+                    {certification.standard ? (
+                      <p className="mt-8 text-c1 text-ink-secondary">
+                        {certification.standard}
+                      </p>
+                    ) : null}
+                    {certification.downloadId ? (
+                      <ArrowLink
+                        href={`/downloads/#${certification.downloadId}`}
+                        className="mt-24"
+                      >
+                        View certificate
+                      </ArrowLink>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <EmptyState>
+                No product-specific certificate is published for this model. Company credentials
+                remain available through the export team.
+              </EmptyState>
+            )}
+            <p className="mt-24 text-c2 text-ink-secondary">
+              Certification scope must be checked against the named model before specification.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6 — Attachments */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="attachments-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+          <div className="col-span-full xl:col-span-8">
+            <h2 id="attachments-heading" className="text-h3 text-ink">
+              Downloads
+            </h2>
+          </div>
+          <div className="col-span-full xl:col-span-16 xl:col-start-9">
+            {product.attachmentIds.length ? (
+              <ul className="border-t border-line">
+                {product.attachmentIds.map((attachmentId) => (
+                  <li key={attachmentId} className="border-b border-line py-16">
+                    <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <EmptyState>
+                Datasheets, CAD files and installation instructions are available on request while
+                the verified download library is being prepared.
+              </EmptyState>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 7 — Related products */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="related-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+          <div className="col-span-full">
+            <h2 id="related-heading" className="text-h3 text-ink">
+              Related products
+            </h2>
+          </div>
+
+          {relatedProducts.length ? (
+            relatedProducts.map((related) => (
+              <Link
+                key={related.model}
+                href={`/products/${related.categoryPath[0]}/${related.slug}/`}
+                className="group col-span-full border border-line hover:border-brand sm:col-span-4 md:col-span-6 xl:col-span-8"
+              >
+                <MediaPlaceholder {...related.heroImage} />
+                <div className="p-24">
+                  <p className="text-h3 text-ink group-hover:underline">{related.name}</p>
+                  <p className="mt-8 text-c1 text-ink-secondary">
+                    {related.modelTbc ? "Model available on request" : `Model ${related.model}`}
+                  </p>
+                </div>
+              </Link>
+            ))
+          ) : (
+            <div className="col-span-full xl:col-span-12">
+              <EmptyState>
+                Related products will appear when the catalogue relationship has been verified.
+              </EmptyState>
+            </div>
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}

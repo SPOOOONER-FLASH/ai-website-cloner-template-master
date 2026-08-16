@@ -30,8 +30,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P0** | **Foundation** — git, data structures, route planning, BUILD_PLAN, PROGRESS | ✅ Done |
 | **P1** | **Homepage imagery** — replace placeholder blocks with real hardware photography | ✅ Done |
 | **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | ✅ Done |
-| **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | Next |
-| **P4** | **Product overview + category pages + listing + filtering** | |
+| **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | ✅ Done |
+| **P4** | **Product overview + category pages + listing + filtering** | Next |
 | **P5** | **Contact page + inquiry form** | |
 | **P6** | **About us / company capability page** | |
 | **P7** | **Project listing + project detail** (incl. related-products module) | |
@@ -54,7 +54,7 @@ The developer is not a programmer and each session has a limited budget. So:
 | `/` | Homepage | ✅ Done |
 | `/products` | Product overview — all categories | P4 |
 | `/products/[category]` | Category listing + filters | P4 |
-| `/products/[category]/[slug]` | Product detail | P3 |
+| `/products/[category]/[slug]` | Product detail | ✅ Done |
 | `/projects` | Reference case studies, listing | P7 |
 | `/projects/[slug]` | Case study detail | P7 |
 | `/downloads` | Download centre | P8 |
@@ -83,7 +83,7 @@ homepage content to `src/data/home.ts`; nav, footer and homepage module links wi
 routes; five stub pages plus a custom 404. Header is `"use client"` only to read
 `usePathname()` for the active nav item.
 
-### P3 — Product detail page ⭐
+### P3 — Product detail page ⭐ ✅
 The commercial core. Seven blocks:
 1. Breadcrumb + title + model number
 2. Hero image + gallery
@@ -94,8 +94,9 @@ The commercial core. Seven blocks:
 7. Related products
 - Needs `generateStaticParams()` from `getAllProductParams()`.
 - Includes the "Request a quote" button that carries the model number into the P5 form.
-- **Done when:** all 3 sample products render fully, including empty states for products
-  with no gallery and no attachments.
+- **Completed:** all 12 verified product records export as static detail pages. Missing
+  specifications, gallery images and attachments render honest empty states; products
+  without a confirmed SKU do not send a made-up model value to the inquiry form.
 
 ### P4 — Product overview, category pages, listing, filtering
 - `/products` — grid of the 6 top-level categories.
