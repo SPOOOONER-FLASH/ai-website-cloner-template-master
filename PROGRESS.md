@@ -13,7 +13,7 @@
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
 | **Build** | `npm run build` passing — 55 static pages |
-| **Git** | P6 committed as `2dbea12`; P7 ready for commit on `main` |
+| **Git** | P6 `2dbea12` + P7 `39773c9` committed on `main` and pushed to `origin/main` |
 | **Next phase** | **P8 — Download centre** (**not started — do not begin without being asked**) |
 
 ---
