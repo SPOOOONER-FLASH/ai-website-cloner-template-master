@@ -80,6 +80,9 @@ export function SiteFooter() {
               </ul>
             </div>
           </div>
+          <p className="mt-48 border-t border-line pt-16 text-c2 text-ink-secondary">
+            Copyright © 2020-2026 Canton Hyland Hardware &amp; Locks Co.,Ltd.
+          </p>
         </div>
       </div>
     </div>

@@ -138,6 +138,12 @@ All 604×800, q=78. Transcribed into `src/data/company.ts`.
 | `intertek-tubular-lock-durability.webp` | Intertek durability report 140306043GZU-001, 28 Apr 2014 | 607 SS ET |
 | `celab-ce-panic-exit-device.webp` | CELAB CE Certificate of Conformity, EN 1125:2008 | Panic exit device series |
 
+## Catalogue — `public/downloads/`
+
+| File | Source | Use |
+|---|---|---|
+| `canton-hyland-product-catalogue-2026.pdf` | 甲方自有 46 页产品目录（本次会话提供） | Contact-page catalogue download; original PDF retained without modification |
+
 ## Brand — `public/images/brand/`
 
 | File | Source | Use |

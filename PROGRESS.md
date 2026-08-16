@@ -9,12 +9,12 @@
 
 | | |
 |---|---|
-| **Phase** | **P4 complete + pulled-forward P11 content expansion** ✅ |
+| **Phase** | **P5 — Contact page + inquiry form** ✅ |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
 | **Build** | `npm run build` passing — 45 static pages: 16 category pages + 20 product details |
-| **Git** | clean tree, all work committed |
-| **Next phase** | **P5 — Contact page + inquiry form** (**not started — do not begin without being asked**) |
+| **Git** | P5 committed on `main` and pushed to `origin/main` |
+| **Next phase** | **P6 — About us / company capability page** (**not started — do not begin without being asked**) |
 
 ---
 
@@ -30,6 +30,7 @@
 | **P2** | Site skeleton — chrome in the layout, components out of the clone namespace, all routes and links wired, 404 | `src/app/layout.tsx`, `src/app/{products,projects,downloads,company,contact}/page.tsx`, `src/app/not-found.tsx`, `src/components/site/**`, `src/data/home.ts` |
 | **P3** | Product detail page — seven content blocks, 12 statically exported product routes, verified empty states and model-aware inquiry links | `src/app/products/[category]/[slug]/page.tsx`, `src/components/site/ProductDetail.tsx` |
 | **P4** | Catalogue discovery — 16 Canton categories, overview grid, static category routes, sub-category filtering and shared cards | `src/app/products/page.tsx`, `src/app/products/[category]/page.tsx`, `src/components/site/{CategoryCard,CategoryFilter,ProductCard}.tsx`, `src/data/categories.ts` |
+| **P5** | Static Web3Forms inquiry flow — honeypot, explicit states, model-aware prefill, catalogue download and model-scoped certificate evidence | `src/app/contact/page.tsx`, `src/components/site/InquiryForm.tsx`, `.env.example`, `public/downloads/canton-hyland-product-catalogue-2026.pdf`, `next.config.ts` |
 | — | Header brand integration — client-owned oval mark cropped from the supplied source and paired with live Archivo type | `public/images/brand/`, `scripts/process-brand-logo.mjs`, `src/components/site/icons.tsx` |
 | — | **Client asset drop + catalogue expansion** — real photography, company profile, category tree and 20 real products replace all stock and invented data; 1998 is the confirmed founding year | `public/images/{products,company,certificates}/`, `src/data/{products,categories,company,home}.ts`, `IMAGE_CREDITS.md`, `scripts/process-client-assets.mjs` |
 
@@ -177,16 +178,14 @@ is intact: 21 modules, content band 1376px, 13 images, 0 placeholders.
 
 ---
 
-## Next: P5 — Contact page + inquiry form
+## Next: P6 — About us / company capability page
 
-Build the static-compatible inquiry flow already agreed in decision 2:
+Replace the `/company` stub with the approved 1998 company story, manufacturing
+capabilities, factory photography, quality-system facts and model-scoped credentials
+already held in `src/data/company.ts`. Reuse the certificate presentation and existing
+site components; do not generalise a report beyond the model printed on it.
 
-1. Post directly to Web3Forms using `NEXT_PUBLIC_W3F_KEY`.
-2. Add honeypot protection and explicit submitting/success/failure states.
-3. Read `product` and `model` query parameters from P3 inquiry links.
-4. Keep `output: "export"`; no API route, server action or server-side mail handler.
-
-Do not start P5 automatically; begin it only when the next session explicitly asks for
+Do not start P6 automatically; begin it only when the next session explicitly asks for
 the next unfinished phase.
 
 ---
@@ -197,8 +196,8 @@ the next unfinished phase.
 |---|---|---|
 | 7 | **The "Insights" / magazine block has no route.** The homepage has two modules for it (`text3`, `hero5` in `src/data/home.ts`) and both link to `#` — the only dead internal links left. Either add `/insights` as a phase, or drop the two modules from the homepage. | Homepage completeness |
 | 8 | **Imprint and Privacy Notice have no pages.** Both footer links currently point at `/company`. Real legal pages are usually a launch requirement in export markets. | Launch |
-| 9 | **Legal company name still varies by source.** The certificates say *"Canton Hyland Hardware Co., Ltd"*, the approved profile says *"Canton Hyland Hardware (Group) Co., Ltd."*, and older Alibaba metadata used *"Canton Hyland Hardware & Locks Co., Ltd."*. The site currently follows the approved profile. **Founding year is no longer disputed: the client instructed us to use 1998 everywhere.** | Company page (P6), launch |
-| 10 | **Twelve products have no confirmed SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P5/P11 completion. | P5, P11 |
+| 9 | **Legal company name still varies by source.** The certificates say *"Canton Hyland Hardware Co., Ltd"* and the approved profile says *"Canton Hyland Hardware (Group) Co., Ltd."*. The client has provisionally approved *"Canton Hyland Hardware & Locks Co.,Ltd."* for the copyright line; final legal-page wording still needs confirmation. **Founding year is settled at 1998.** | Company page (P6), launch |
+| 10 | **Twelve products have no confirmed SKU.** They arrived as descriptive names only and are flagged `modelTbc: true` in `products.ts`. P3 displays “Reference available on request” and intentionally omits the model query parameter for them. Confirmed SKUs are still needed before P11 completion. | P11 |
 
 Decisions 1–6 from P0 are answered and recorded in
 [BUILD_PLAN.md](BUILD_PLAN.md#decisions).
@@ -211,7 +210,12 @@ Decisions 1–6 from P0 are answered and recorded in
   routes, no server actions, no server-side form handling. The P5 inquiry form posts
   straight to Web3Forms from the browser.
 - **Web3Forms key** goes in `NEXT_PUBLIC_W3F_KEY`. It is public by nature — that is how
-  Web3Forms works — so do not treat it as a secret, but do keep it out of the repo.
+  Web3Forms works — so do not treat it as a secret, but do keep the real value out of
+  the repo. Until it is set, the form deliberately shows a configuration error and
+  sends nothing.
+- **Development preview origins.** `next.config.ts` permits `127.0.0.1` and
+  `cantonlock.free.idcfengye.com` to load Next.js dev assets. Without these entries the
+  page renders but client-side form behaviour is blocked in Next.js 16.
 - **Client product photos are B2B-platform material.** They are useful for an honest
   prototype but several need professional reshooting in P11 to match the minimal layout.
 - **Sparse product data stays sparse.** P3 shows explicit empty states instead of

@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Permit the two preview origins used by this project to load dev-only HMR assets.
+  // This setting affects `next dev` only; the static export has no development endpoints.
+  allowedDevOrigins: ["127.0.0.1", "cantonlock.free.idcfengye.com"],
   // Static export: `next build` emits a fully static site to out/ that can be
   // dropped on any static host. No Node server required.
   output: "export",

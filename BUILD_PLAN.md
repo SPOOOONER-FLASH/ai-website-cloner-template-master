@@ -32,8 +32,8 @@ The developer is not a programmer and each session has a limited budget. So:
 | **P2** | **Site skeleton** — wire up all routes, nav links, footer links, 404 page | ✅ Done |
 | **P3** | ⭐ **Product detail page** — the hardest and most commercially valuable page; 7 blocks | ✅ Done |
 | **P4** | **Product overview + category pages + listing + filtering** | ✅ Done |
-| **P5** | **Contact page + inquiry form** | Next |
-| **P6** | **About us / company capability page** | |
+| **P5** | **Contact page + inquiry form** | ✅ Done |
+| **P6** | **About us / company capability page** | Next |
 | **P7** | **Project listing + project detail** (incl. related-products module) | |
 | **P8** | **Download centre** | |
 | **P9** | **Site-wide mobile responsive** | |
@@ -59,7 +59,7 @@ The developer is not a programmer and each session has a limited budget. So:
 | `/projects/[slug]` | Case study detail | P7 |
 | `/downloads` | Download centre | P8 |
 | `/company` | About us | P6 |
-| `/contact` | Contact + inquiry | P5 |
+| `/contact` | Contact + inquiry | ✅ Done |
 
 `trailingSlash: true` is set, so every route exports as `<route>/index.html`.
 
@@ -106,11 +106,14 @@ The commercial core. Seven blocks:
   category pages, client-side sub-category filtering, shared product cards and honest
   empty states. The client-owned Hyland mark now appears in the global header.
 
-### P5 — Contact page + inquiry form
+### P5 — Contact page + inquiry form ✅
 Uses **Web3Forms** (decision 2). Static export stays.
 - Access key from `NEXT_PUBLIC_W3F_KEY`; placeholder until the client supplies the real one.
 - Must include: honeypot spam trap, submit success/failure states, and auto-fill of the
   product model when arriving from a product detail page's "Request a quote".
+- **Completed:** static client-side submission flow, honeypot, explicit states and
+  product/model query prefill. The client catalogue is downloadable from the page and
+  all four supplied reports are shown with their exact documented scope.
 
 ### P6 — About us / company capability
 History, manufacturing, quality system, certifications. Mostly editorial.
