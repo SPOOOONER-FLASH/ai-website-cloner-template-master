@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The admin is a tool, never a page to be indexed. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Canton Hyland — Content Manager</title>
+  </head>
+  <body>
+    <!--
+      Decap CMS. This is a plain static page: no server, no database, no PHP.
+      It reads and writes the JSON files in content/ through the GitHub API, so every
+      edit an author makes becomes a normal commit in this repository.
+
+      Loaded from a CDN on purpose — it is an internal admin tool, not part of the public
+      site's performance budget, and pinning the version here keeps upgrades deliberate.
+    -->
+    <script src="https://unpkg.com/decap-cms@3.9.0/dist/decap-cms.js"></script>
+  </body>
+</html>

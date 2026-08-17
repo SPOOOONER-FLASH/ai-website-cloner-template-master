@@ -5,7 +5,15 @@ node_modules/
 
 # Build
 .next/
-out/
+# out/ IS committed on purpose.
+#
+# The server has no build step and the client cannot configure CI secrets, so the built
+# site ships in the repository and the server only has to "git pull". Git stores blobs by
+# content hash, so the images in out/ share storage with the identical ones in public/ —
+# the real cost per build is the HTML and JS delta, not 16 MB.
+#
+# Consequence: run "npm run build" before committing, or the deployed site lags the source.
+# scripts/predeploy-check.mjs is wired into "npm run deploy:prep" to enforce that.
 build/
 dist/
 # Static-export bundle — derived from out/, regenerate rather than track

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 46" role="img" aria-label="ISO 9001 and ANSI BHMA Grade 3 certification marks">
+  <!--
+    Signature slot (87:46). Monochrome, flat, no gradients or shadows — matches the
+    site's colour rules. Drawn as vector so it stays crisp at any size.
+    Colour is inherited via currentColor, matching the primary ink token.
+  -->
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <rect x="0.5" y="8.5" width="40" height="29" />
+    <rect x="46.5" y="8.5" width="40" height="29" />
+  </g>
+  <g fill="currentColor" font-family="Archivo, sans-serif" text-anchor="middle">
+    <text x="20.5" y="21" font-size="8" font-weight="700" letter-spacing="0.2">ISO</text>
+    <text x="20.5" y="31" font-size="8" font-weight="400" letter-spacing="0.2">9001</text>
+    <text x="66.5" y="20" font-size="6.5" font-weight="700" letter-spacing="0.2">ANSI</text>
+    <text x="66.5" y="27" font-size="6.5" font-weight="400" letter-spacing="0.2">BHMA</text>
+    <text x="66.5" y="34" font-size="5.5" font-weight="400" letter-spacing="0.2">GRADE 3</text>
+  </g>
+</svg>
