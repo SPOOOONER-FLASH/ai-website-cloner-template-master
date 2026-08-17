@@ -9,12 +9,50 @@
 
 | | |
 |---|---|
-| **Phase** | **P9 — Site-wide mobile responsive** ✅ |
+| **Phase** | **P9 ✅** · **post-P9 visual polish ✅** |
 | **Status** | ✅ Complete |
 | **Last updated** | 2026-08-16 |
-| **Build** | `npm run check` passing — 55 static pages (one existing font-link warning) |
-| **Git** | P9 committed in `7017305` and pushed to `origin/main` |
-| **Next phase** | **P10 — SEO finishing** |
+| **Build** | lint 0 errors · typecheck 0 errors · tests 2/2 · build 54 static pages |
+| **Git** | `3a9ea78`, pushed to `origin/main` |
+| **Next phase** | **P10 — SEO finishing** (**not started — do not begin without being asked**) |
+
+---
+
+## Post-P9 visual polish
+
+Started in a Codex session that was repeatedly interrupted by context compaction. The
+groundwork got built; none of it was connected. Completed and verified 2026-08-16.
+
+**What was rescued.** The work sat as *uncommitted* changes in
+`.worktrees/post-p9-visual-polish` with zero commits on its branch, and `.gitignore` had
+just been changed to exclude `.worktrees/` — so one `git clean` would have destroyed it.
+Committed as-is first (`2d9c1e9`, deliberately marked "does not compile"), then merged and
+finished in `3a9ea78`.
+
+**What was actually done now:**
+
+| Item | Result |
+|---|---|
+| 5 compile errors | Fixed — ArrowLink path, `AutoplayState` field names, two `getNextSlideIndex` arity mismatches, `.ts` import extension. Test files now excluded from `tsconfig`. |
+| Carousel | Live on both homepages. 3 slides, 6s autoplay, arrows + dots + swipe, pauses on hover / focus / hidden tab, honours `prefers-reduced-motion`. Wrap verified in both directions. |
+| Top promo strip | Removed. Header 136px → 100px, nav pins at `top: 0`. |
+| Icon rail alignment | Language / search / menu were 16 / 20 / 22×16. Now one 24px box, all icons 20×20, `MenuIcon` viewBox squared. Centre spread **0.00px** at every breakpoint. |
+| Hinge close-up | Replaced with the Hyland mark in the signature row. |
+| 9 concept images | All placed — 2 in the carousel, 7 as application photography in the galleries of the products they actually show. |
+| Motion | `--motion-fast` 180ms / `--motion-medium` 240ms, one easing. Carousel crossfade was 700ms → 240ms. |
+
+**Bonus bug found and fixed.** `--layout-content` was computed from `100vw`, which
+includes the classic scrollbar, so the grid ran ~15px wider than the usable area and the
+page scrolled sideways. It only appeared below 1440px, which is why verification at
+1512px never caught it. Now uses `100%`.
+
+**Seven-breakpoint verification** (393/640/744/820/1032/1376/1512): zero horizontal
+overflow, zero unclipped leaks, rail aligned, carousel fits, console clean on `/` and
+`/es/`.
+
+**Housekeeping still open:** `.worktrees/post-p9-visual-polish/` could not be deleted
+(node_modules locked by a running process). It is gitignored and harmless; remove the
+folder manually, then `git worktree prune`.
 
 ---
 
