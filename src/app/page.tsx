@@ -1,4 +1,5 @@
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
+import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { TextModule } from "@/components/site/TextModule";
@@ -23,7 +24,7 @@ export default function Home() {
     */
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="modules mb-96 lg:mb-136">
-        <HeroModule content={content.hero1} />
+        <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} />
       </div>
 

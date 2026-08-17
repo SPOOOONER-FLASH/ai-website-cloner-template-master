@@ -21,7 +21,7 @@ export const hero1: HeroModuleContent = {
   href: "/products/lever-handles/black-tubular-lever-lock-set",
 };
 
-export const heroCarouselEs: HeroCarouselContent = {
+export const heroCarousel: HeroCarouselContent = {
   ariaLabel: "Herrajes destacados",
   slides: [
     hero1,

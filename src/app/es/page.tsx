@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { Spacer } from "@/components/site/Spacer";
@@ -15,7 +16,7 @@ export default function SpanishHomePage() {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="modules mb-96 lg:mb-136">
-        <HeroModule content={content.hero1} />
+        <HeroCarousel content={content.heroCarousel} />
         <PageTeaserModule content={content.teaser1} />
       </div>
       <div className="mb-48 lg:mb-136">

@@ -72,25 +72,10 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <div
-      className="sticky z-10 flex-grow-0 bg-surface"
-      style={{ top: "calc(-1 * var(--h-main-nav-banner))" }}
-    >
+    // The black promo strip was removed on request. With nothing above it, the nav row
+    // pins at the very top instead of scrolling a banner away first.
+    <div className="sticky top-0 z-10 flex-grow-0 bg-surface">
       <div>
-        {/* Promo bar — the whole 48px strip is the link */}
-        {/* The reference site points this strip at an external configurator. We have no
-            such tool yet, so it lands on the catalogue. */}
-        <Link
-          href="/products"
-          className="layout group relative h-[var(--h-main-nav-banner)] w-full bg-ink text-surface"
-        >
-          <div className="col-content grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-4">
-            <span className="text-c1 text-brand underline-offset-4 group-hover:text-brand-hover group-hover:underline max-lg:text-center lg:[grid-column:-2/-1]">
-              {isSpanish ? "Planificador de proyectos" : "Project Planner"}
-            </span>
-          </div>
-        </Link>
-
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
@@ -126,26 +111,36 @@ export function SiteHeader() {
                 render `display: none` at rest. This prototype ships the controls as inert
                 visual elements — see site-header.spec.md "Known gap".
               */}
-              <nav className="flex flex-grow justify-end gap-32">
+              {/*
+                Alignment: every control sits in the same 24px-tall flex box and every icon
+                is drawn at 20x20, so the language link, search and menu share one optical
+                baseline. They previously used 16 / 20 / 16x22 icons, which is why the row
+                read as crooked on small screens.
+              */}
+              <nav className="flex flex-grow items-center justify-end gap-24 sm:gap-32">
                 <Link
                   href={languageTarget(pathname, isSpanish)}
                   hrefLang={isSpanish ? "en" : "es"}
-                  className="flex items-center gap-8 text-ink underline-offset-4 hover:text-brand-hover hover:underline"
+                  className="flex h-24 items-center gap-8 text-ink underline-offset-4 transition-colors duration-200 hover:text-brand-hover hover:underline"
                 >
-                  <GlobeIcon className="h-16 w-16 text-ink-tertiary" />
-                  <span className="text-c2">EN | ES</span>
+                  <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
+                  <span className="text-c2 leading-none">EN | ES</span>
                 </Link>
-                <button type="button" aria-label="Search" className="text-ink-tertiary">
+                <button
+                  type="button"
+                  aria-label={isSpanish ? "Buscar" : "Search"}
+                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
+                >
                   <SearchIcon className="h-20 w-20" />
                 </button>
                 <button
                   type="button"
-                  aria-label="Open menu"
+                  aria-label={isSpanish ? "Abrir menú" : "Open menu"}
                   aria-expanded={menuOpen}
                   onClick={() => setMenuOpen(true)}
-                  className="stack text-ink-tertiary hover:text-ink"
+                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
                 >
-                  <MenuIcon className="h-16 w-22" />
+                  <MenuIcon className="h-20 w-20" />
                 </button>
               </nav>
             </div>

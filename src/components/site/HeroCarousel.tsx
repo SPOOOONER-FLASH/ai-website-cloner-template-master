@@ -3,7 +3,7 @@
 import Image from "next/image";
 import type { FocusEvent, PointerEvent } from "react";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLink } from "@/components/shared/ArrowLink";
+import { ArrowLink } from "@/components/site/ArrowLink";
 import { ArrowRightIcon } from "@/components/site/icons";
 import { cn } from "@/lib/utils";
 import { getNextSlideIndex, shouldAutoplay } from "@/lib/carousel";
@@ -37,17 +37,17 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
   }, []);
 
   useEffect(() => {
-    if (!shouldAutoplay({ hovered, focusWithin, documentHidden, reducedMotion }) || slideCount < 2) {
+    if (!shouldAutoplay({ isHovered: hovered, isFocused: focusWithin, isDocumentHidden: documentHidden, reducedMotion }) || slideCount < 2) {
       return;
     }
     const timer = window.setInterval(() => {
-      setActiveIndex((current) => getNextSlideIndex(current, slideCount));
+      setActiveIndex((current) => getNextSlideIndex(current, slideCount, 1));
     }, 6000);
     return () => window.clearInterval(timer);
   }, [documentHidden, focusWithin, hovered, reducedMotion, slideCount]);
 
-  const previous = () => setActiveIndex((current) => (current - 1 + slideCount) % slideCount);
-  const next = () => setActiveIndex((current) => getNextSlideIndex(current, slideCount));
+  const previous = () => setActiveIndex((current) => getNextSlideIndex(current, slideCount, -1));
+  const next = () => setActiveIndex((current) => getNextSlideIndex(current, slideCount, 1));
 
   const handleBlur = (event: FocusEvent<HTMLElement>) => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
@@ -60,7 +60,8 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
     const distance = event.clientX - pointerStart.current;
     pointerStart.current = null;
     if (Math.abs(distance) < 48) return;
-    distance > 0 ? previous() : next();
+    if (distance > 0) previous();
+    else next();
   };
 
   const activeSlide = content.slides[activeIndex];
@@ -86,7 +87,9 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
           <div
             aria-hidden={index !== activeIndex}
             className={cn(
-              "absolute inset-0 transition-[opacity,transform] duration-700 ease-out motion-reduce:transition-none",
+              // 240ms — the agreed ceiling for the motion system. Was 700ms, which read
+              // as a slideshow dissolve rather than the restrained crossfade specified.
+              "absolute inset-0 transition-[opacity,transform] duration-[var(--motion-medium)] ease-[cubic-bezier(0.4,0,0.2,1)] motion-reduce:transition-none",
               index === activeIndex
                 ? "z-[1] translate-x-0 opacity-100"
                 : "pointer-events-none translate-x-8 opacity-0",

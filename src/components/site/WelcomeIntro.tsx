@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
@@ -114,13 +115,20 @@ export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
         <div className="mt-48 grid gap-x gap-y-48 sm:grid-cols-2">
           <div className="grid grid-cols-12 gap-x sm:[grid-column-end:-1]">
             <div className="col-span-6">
-              {/* Stand-in for a CAD line drawing — see BUILD_PLAN.md P11. */}
-              <MediaPlaceholder
-                ratio="306 / 156"
-                src="/images/company/decorative-hinge-detail.webp"
-                label="Close-up of a stainless steel ball bearing door hinge"
-                className="w-[92.17%]"
-              />
+              {/*
+                Brand block. Was a hinge close-up, which read as an unrelated product shot
+                in the signature row. The mark belongs here — this is the company signature,
+                not a catalogue slot. Flat, no shadow, inherits nothing decorative.
+              */}
+              <div className="flex h-full w-[92.17%] items-center">
+                <Image
+                  src="/images/brand/hyland-mark.png"
+                  alt="Hyland"
+                  width={254}
+                  height={150}
+                  className="h-auto w-[62%] max-w-[18rem] object-contain"
+                />
+              </div>
             </div>
             <div className="col-span-6 flex flex-col justify-between text-c1 text-ink">
               <p className="whitespace-pre-line">{text.company}</p>

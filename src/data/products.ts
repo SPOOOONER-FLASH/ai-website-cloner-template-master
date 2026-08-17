@@ -51,7 +51,18 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "Hyland 305 fire door panic exit device with push bar and outside lever trim",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/panic-exit-application.webp",
+        ratio: "1952 / 2178",
+        label: "Black push-pad exit device on a stairwell fire door beneath an illuminated exit sign",
+      },
+      {
+        src: "/images/concepts/commercial-panic-exit-application.webp",
+        ratio: "2400 / 1792",
+        label: "Panic bar on glazed double doors in a commercial building atrium",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["309-D", "314", "320"],
     seoTitle: "305 Fire Door Panic Exit Device | Canton Hyland",
@@ -77,7 +88,13 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "Hyland 309-D panic exit device set for double escape doors",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/double-door-coordinator-application.webp",
+        ratio: "1 / 1",
+        label: "Stainless double doors fitted with a door coordinator arm",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["305", "320"],
     seoTitle: "309-D Double Door Panic Exit Device | Canton Hyland",
@@ -274,7 +291,13 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "Stainless steel lever handle lock on backplate with cylinder aperture",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/lever-handle-application.webp",
+        ratio: "1 / 1",
+        label: "Satin stainless square lever handle and cylinder escutcheon on a walnut door",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["LC14 85×50", "Black Tubular Lever Lock Set"],
     seoTitle: "Stainless Steel Lever Handle Lock | Canton Hyland",
@@ -303,7 +326,13 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "Stainless steel tubular knob lock set with latch and strike plate",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/smart-lock-residential-application.webp",
+        ratio: "2400 / 930",
+        label: "Keypad entry lock on a timber front door in a residential hallway",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["Cylindrical Knob Lock", "Black Tubular Lever Lock Set"],
     seoTitle: "Tubular Knob Lock | Canton Hyland",
@@ -392,7 +421,13 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "ANSI Grade 3 keyed deadbolt lock set with cylinder, thumbturn and strike",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/deadbolt-application.webp",
+        ratio: "1 / 1",
+        label: "Matt black keyed knob lock on a dark timber door being unlocked by hand",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["Tubular Knob Lock", "Night Latch & Rim Lock"],
     seoTitle: "ANSI Grade 3 Keyed Deadbolt Lock Set | Canton Hyland",
@@ -421,7 +456,13 @@ export const products: Product[] = [
       ratio: "1 / 1",
       label: "Stainless steel glass door patch fitting set with cover plates and pivots",
     },
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/concepts/glass-patch-fitting-application.webp",
+        ratio: "1 / 1",
+        label: "Satin stainless patch fitting on a frameless glass office partition door",
+      },
+    ],
     attachmentIds: [],
     relatedModels: ["Wooden Door Floor Hinge"],
     seoTitle: "Glass Door Patch Fitting Set | Canton Hyland",

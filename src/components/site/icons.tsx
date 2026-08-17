@@ -53,10 +53,14 @@ export function SearchIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+/**
+ * Square 20x20 viewBox so it can share the header's icon rail with GlobeIcon and
+ * SearchIcon without distorting. It was 22x16, which stretched at a square size.
+ */
 export function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M0 1.2 H22 M0 8 H22 M0 14.8 H22" stroke="currentColor" strokeWidth="1.4" />
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M1 4.2 H19 M1 10 H19 M1 15.8 H19" stroke="currentColor" strokeWidth="1.4" />
     </svg>
   );
 }
