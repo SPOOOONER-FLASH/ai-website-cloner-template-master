@@ -1,4 +1,5 @@
 import type {
+  HeroCarouselContent,
   HeroModuleContent,
   PageTeaserContent,
   SpacerHeights,
@@ -29,6 +30,37 @@ export const hero1: HeroModuleContent = {
   body: "A restrained matt-black lever set for contemporary residential interiors.",
   linkLabel: "Learn more",
   href: "/products/lever-handles/black-tubular-lever-lock-set",
+};
+
+export const heroCarousel: HeroCarouselContent = {
+  ariaLabel: "Featured door hardware",
+  slides: [
+    hero1,
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1920 / 754",
+        src: "/images/concepts/hero-panic-exit-device.webp",
+        label: "Panic exit device installed on a commercial emergency door",
+      },
+      title: "Panic Exit Devices",
+      body: "Fast-release hardware engineered for dependable emergency egress in commercial buildings.",
+      linkLabel: "Explore exit devices",
+      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1920 / 754",
+        src: "/images/concepts/hero-heavy-duty-fire-door-lock.webp",
+        label: "Heavy-duty fire door lock in a commercial application",
+      },
+      title: "Heavy-Duty Fire Door Locks",
+      body: "Robust locking solutions developed for demanding fire-rated and high-traffic openings.",
+      linkLabel: "View lock solutions",
+      href: "/products/door-locks",
+    },
+  ],
 };
 
 export const teaser1: PageTeaserContent = {

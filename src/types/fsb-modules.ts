@@ -22,6 +22,11 @@ export interface HeroModuleContent {
   href?: string;
 }
 
+export interface HeroCarouselContent {
+  ariaLabel: string;
+  slides: HeroModuleContent[];
+}
+
 export interface TeaserCardContent {
   media: MediaSlot;
   title: string;

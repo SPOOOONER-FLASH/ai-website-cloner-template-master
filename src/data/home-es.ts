@@ -1,4 +1,5 @@
 import type {
+  HeroCarouselContent,
   HeroModuleContent,
   PageTeaserContent,
   TextModuleContent,
@@ -18,6 +19,37 @@ export const hero1: HeroModuleContent = {
   body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",
   linkLabel: "Ver producto",
   href: "/products/lever-handles/black-tubular-lever-lock-set",
+};
+
+export const heroCarouselEs: HeroCarouselContent = {
+  ariaLabel: "Herrajes destacados",
+  slides: [
+    hero1,
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1920 / 754",
+        src: "/images/concepts/hero-panic-exit-device.webp",
+        label: "Dispositivo antipánico instalado en una salida comercial",
+      },
+      title: "Dispositivos Antipánico",
+      body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",
+      linkLabel: "Explorar dispositivos",
+      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+    },
+    {
+      variant: "stacked",
+      media: {
+        ratio: "1920 / 754",
+        src: "/images/concepts/hero-heavy-duty-fire-door-lock.webp",
+        label: "Cerradura de alta resistencia para puerta cortafuego",
+      },
+      title: "Cerraduras Cortafuego",
+      body: "Soluciones robustas para puertas de alto tránsito y aplicaciones con resistencia al fuego.",
+      linkLabel: "Ver cerraduras",
+      href: "/products/door-locks",
+    },
+  ],
 };
 
 export const teaser1: PageTeaserContent = {
