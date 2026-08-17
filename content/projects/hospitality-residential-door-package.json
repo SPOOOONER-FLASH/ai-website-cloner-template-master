@@ -1,0 +1,45 @@
+{
+  "slug": "hospitality-residential-door-package",
+  "name": "Hospitality + Residential Door Package",
+  "nameEs": "Paquete para puertas residenciales y hoteleras",
+  "referenceStatus": "representative-application",
+  "buildingType": "Hospitality + Residential",
+  "buildingTypeEs": "Hotelero + Residencial",
+  "summary": "A coordinated lever, tubular lock and deadbolt palette for guestrooms, apartments and private interior doors.",
+  "summaryEs": "Una gama coordinada de manillas, cerraduras tubulares y cerrojos para habitaciones, apartamentos y puertas interiores.",
+  "body": [
+    "This representative package groups hardware by room function, privacy requirement and finish rather than treating every opening as the same door.",
+    "Matt-black tubular levers can establish the visual language, while stainless lever sets and keyed deadbolts cover higher-use or perimeter openings. Keying requirements are confirmed before cylinders are scheduled.",
+    "Samples and finish boards should be approved under the actual project lighting before production quantities are released."
+  ],
+  "bodyEs": [
+    "Esta propuesta agrupa el herraje según la función del espacio, la privacidad y el acabado, sin tratar todas las puertas como iguales.",
+    "Las manillas tubulares negras pueden definir el lenguaje visual; los juegos de acero inoxidable y los cerrojos cubren accesos de mayor uso o perímetro.",
+    "Las muestras y los acabados deben aprobarse bajo la iluminación real del proyecto antes de liberar la producción."
+  ],
+  "productModels": [
+    "Black Tubular Lever Lock Set",
+    "Stainless Steel Lever Handle Lock",
+    "Tubular Knob Lock",
+    "ANSI Grade 3 Keyed Deadbolt"
+  ],
+  "heroImage": {
+    "src": "/images/company/hero-modern-tubular-lock.webp",
+    "ratio": "1920 / 754",
+    "label": "Representative residential interior with a modern matt-black tubular lever lock"
+  },
+  "gallery": [
+    {
+      "src": "/images/company/hero-grip-handle-banner.webp",
+      "ratio": "2880 / 1481",
+      "label": "Representative timber doors with coordinated lever and grip hardware"
+    },
+    {
+      "src": "/images/products/ansi-grade-3-keyed-deadbolt.webp",
+      "ratio": "1 / 1",
+      "label": "ANSI Grade 3 keyed deadbolt set"
+    }
+  ],
+  "seoTitle": "Hospitality and Residential Door Hardware | Canton Hyland",
+  "seoDescription": "Representative lever, tubular lock and deadbolt package for hospitality and residential door schedules."
+}

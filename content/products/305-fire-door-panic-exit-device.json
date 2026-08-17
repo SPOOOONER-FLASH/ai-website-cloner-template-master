@@ -1,0 +1,53 @@
+{
+  "model": "305",
+  "slug": "305-fire-door-panic-exit-device",
+  "name": "Fire Door Panic Exit Device",
+  "nameZh": "防火门逃生推杠",
+  "series": "Hyland 300",
+  "categoryPath": [
+    "panic-exit-devices",
+    "fire-door"
+  ],
+  "summary": "A single-point push bar for fire-rated escape doors, with outside lever trim and a cylinder aperture.",
+  "specs": [],
+  "material": "Steel / stainless steel",
+  "finishes": [
+    "Satin stainless",
+    "Powder-coated black"
+  ],
+  "doorTypes": [
+    "Timber fire door",
+    "Steel fire door"
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001",
+      "standard": "ISO 9001:2015"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/products/305-fire-door-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 305 fire door panic exit device with push bar and outside lever trim"
+  },
+  "gallery": [
+    {
+      "src": "/images/concepts/panic-exit-application.webp",
+      "ratio": "1952 / 2178",
+      "label": "Black push-pad exit device on a stairwell fire door beneath an illuminated exit sign"
+    },
+    {
+      "src": "/images/concepts/commercial-panic-exit-application.webp",
+      "ratio": "2400 / 1792",
+      "label": "Panic bar on glazed double doors in a commercial building atrium"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [
+    "309-D",
+    "314",
+    "320"
+  ],
+  "seoTitle": "305 Fire Door Panic Exit Device | Canton Hyland",
+  "seoDescription": "Single-point panic exit device for fire-rated escape doors, with outside lever trim. Manufactured by Canton Hyland under ISO 9001."
+}

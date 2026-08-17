@@ -22,9 +22,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        // Build artefacts Next emits alongside the HTML. They are not pages and
-        // crawling them wastes budget.
-        disallow: ["/_next/", "/*.txt$"],
+        // Build artefacts Next emits alongside the HTML, plus the CMS. None are pages;
+        // crawling them wastes budget and /admin should never surface in results.
+        disallow: ["/_next/", "/admin/", "/*.txt$"],
       },
     ],
     sitemap: absoluteUrl("/sitemap.xml"),

@@ -1,0 +1,58 @@
+{
+  "model": "LC14 85×50",
+  "slug": "lc14-8550-four-bolt-mortise-lock-case",
+  "name": "Four Bolt Mortise Lock Case",
+  "nameZh": "四方舌插芯锁体",
+  "series": "Hyland LC14",
+  "categoryPath": [
+    "lock-cases"
+  ],
+  "summary": "A four-bolt mortise lock case with 85 mm centres and 50 mm backset, for Euro profile cylinders.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85",
+      "unit": "mm"
+    },
+    {
+      "label": "Backset",
+      "value": "50",
+      "unit": "mm"
+    },
+    {
+      "label": "Bolts",
+      "value": "Four"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    }
+  ],
+  "material": "Steel case, stainless steel forend",
+  "finishes": [
+    "Zinc plated",
+    "Satin stainless forend"
+  ],
+  "doorTypes": [
+    "Timber",
+    "Steel"
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001",
+      "standard": "ISO 9001:2015"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/products/lc14-8550-mortise-lock-case.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland LC14 four bolt mortise lock case, 85 mm centres and 50 mm backset"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [
+    "Stainless Steel Lever Handle Lock"
+  ],
+  "seoTitle": "LC14 85×50 Four Bolt Mortise Lock Case | Canton Hyland",
+  "seoDescription": "Four bolt mortise lock case, 85 mm centres, 50 mm backset, Euro profile cylinder. Canton Hyland, ISO 9001."
+}

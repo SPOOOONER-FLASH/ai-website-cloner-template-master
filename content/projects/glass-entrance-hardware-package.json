@@ -1,0 +1,44 @@
+{
+  "slug": "glass-entrance-hardware-package",
+  "name": "Glass Entrance Hardware Package",
+  "nameEs": "Paquete de herrajes para entradas de vidrio",
+  "referenceStatus": "representative-application",
+  "buildingType": "Retail + Workplace",
+  "buildingTypeEs": "Comercial + Oficinas",
+  "summary": "A representative frameless-glass entrance package combining patch fittings, pull handles and concealed floor hardware.",
+  "summaryEs": "Una propuesta para entradas de vidrio sin marco con herrajes patch, tiradores y mecanismos de suelo ocultos.",
+  "body": [
+    "The glass thickness, door mass, opening angle and floor build-up must be coordinated before patch fittings and floor hardware are selected.",
+    "Pull-handle centres and projection are reviewed against the architectural elevation, while visible stainless components are kept in one finish family.",
+    "Final drilling templates and glass preparation drawings must come from the confirmed product set, not from a generic detail."
+  ],
+  "bodyEs": [
+    "El espesor y peso del vidrio, el ángulo de apertura y la composición del suelo se coordinan antes de seleccionar herrajes y mecanismos.",
+    "Los centros y la proyección de los tiradores se revisan con el alzado arquitectónico y los componentes visibles mantienen una misma familia de acabado.",
+    "Las plantillas de perforación y los planos de preparación del vidrio deben proceder del conjunto de producto confirmado."
+  ],
+  "productModels": [
+    "Glass Door Patch Fitting Set",
+    "Stainless Steel Glass Door Pull Handle",
+    "Wooden Door Floor Hinge"
+  ],
+  "heroImage": {
+    "src": "/images/products/glass-door-patch-fitting-set.webp",
+    "ratio": "1 / 1",
+    "label": "Representative stainless steel patch fitting set for a frameless glass entrance"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/stainless-steel-glass-door-pull-handle.webp",
+      "ratio": "1 / 1",
+      "label": "Stainless steel pull handles for glass doors"
+    },
+    {
+      "src": "/images/products/wooden-door-floor-hinge.webp",
+      "ratio": "1 / 1",
+      "label": "Concealed floor hinge hardware"
+    }
+  ],
+  "seoTitle": "Glass Entrance Hardware Application | Canton Hyland",
+  "seoDescription": "Representative glass entrance package with patch fittings, pull handles and concealed floor hardware."
+}

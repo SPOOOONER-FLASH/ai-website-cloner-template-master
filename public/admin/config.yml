@@ -1,0 +1,228 @@
+# Decap CMS configuration — Canton Hyland
+#
+# Editors open /admin/, sign in with GitHub, and edit the JSON files under content/.
+# Every save is a commit on this repository. There is no database and no server-side
+# admin application, so there is nothing here to patch, secure or keep running.
+#
+# The field definitions below mirror src/data/types.ts. When you add a field to one,
+# add it to the other — the barrel generator asserts the shape, it does not validate it.
+
+backend:
+  name: github
+  repo: SPOOOONER-FLASH/ai-website-cloner-template-master
+  branch: main
+  # Commit messages that read sensibly in `git log` next to hand-written ones.
+  commit_messages:
+    create: "CMS: create {{collection}} “{{slug}}”"
+    update: "CMS: update {{collection}} “{{slug}}”"
+    delete: "CMS: delete {{collection}} “{{slug}}”"
+    uploadMedia: "CMS: upload {{path}}"
+    deleteMedia: "CMS: delete {{path}}"
+
+# Editorial workflow puts saves into a pull request instead of straight onto main.
+# Worth keeping: it means a mis-typed certification claim can be reviewed before it
+# reaches a build, and it gives a rollback point that is not "the whole repo".
+publish_mode: editorial_workflow
+
+media_folder: "public/images/products"
+public_folder: "/images/products"
+
+locale: "en"
+
+collections:
+  # ---------------------------------------------------------------------------
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    folder: "content/products"
+    create: true
+    # Filename must equal the slug — build-content-index.mjs fails the build otherwise,
+    # because a mismatch would silently point a URL at the wrong record.
+    slug: "{{fields.slug}}"
+    identifier_field: "name"
+    summary: "{{model}} — {{name}}"
+    sortable_fields: ["model", "name", "series"]
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "model", label: "Model number", widget: "string", hint: "The business key, e.g. 305 or LC14 85×50." }
+      - { name: "modelTbc", label: "Model number not yet confirmed", widget: "boolean", required: false, default: false, hint: "Tick if this is a working label rather than a real SKU." }
+      - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only."], hint: "Becomes part of the page address. Changing it changes a live URL." }
+      - { name: "name", label: "Product name (EN)", widget: "string" }
+      - { name: "nameZh", label: "产品名称 (中文)", widget: "string", required: false, hint: "Internal reference only. Not shown on the site." }
+      - { name: "series", label: "Series", widget: "string" }
+      - name: "categoryPath"
+        label: "Category path"
+        widget: "list"
+        field: { name: "segment", label: "Segment", widget: "string" }
+        hint: "Top-level category first, then sub-category. Must match content/categories.json."
+      - { name: "summary", label: "Summary", widget: "text", hint: "One or two sentences. Used on cards and listings." }
+      - name: "specs"
+        label: "Specification table"
+        label_singular: "Specification"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}: {{fields.value}} {{fields.unit}}"
+        fields:
+          - { name: "label", label: "Label", widget: "string" }
+          - { name: "value", label: "Value", widget: "string" }
+          - { name: "unit", label: "Unit", widget: "string", required: false }
+          - { name: "labelZh", label: "标签 (中文)", widget: "string", required: false }
+        hint: "Leave empty rather than guessing. An empty table is honest; an invented one is a liability."
+      - { name: "material", label: "Material", widget: "string" }
+      - { name: "finishes", label: "Finishes", widget: "list", field: { name: "finish", label: "Finish", widget: "string" } }
+      - { name: "doorTypes", label: "Door types", widget: "list", field: { name: "doorType", label: "Door type", widget: "string" } }
+      - name: "certifications"
+        label: "Certifications"
+        widget: "list"
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { name: "name", label: "Name", widget: "string", hint: "e.g. ISO 9001, ANSI Grade 3" }
+          - { name: "standard", label: "Standard reference", widget: "string", required: false }
+          - { name: "downloadId", label: "Linked certificate id", widget: "string", required: false }
+        hint: "⚠ Only add a certification you can evidence with a test report naming THIS model. A wrong claim here is a compliance problem, not a typo."
+      - name: "heroImage"
+        label: "Main image"
+        widget: "object"
+        fields:
+          - { name: "src", label: "Image", widget: "image", required: false, hint: "Leave empty to show a labelled placeholder block instead." }
+          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1", hint: 'CSS syntax, e.g. "1 / 1" or "3 / 2".' }
+          - { name: "label", label: "Alt text", widget: "string", hint: "Describe what is in the picture. Used by screen readers and by Google." }
+          - { name: "labelZh", label: "图注 (中文)", widget: "string", required: false }
+      - name: "gallery"
+        label: "Gallery"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "Image", widget: "image", required: false }
+          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
+          - { name: "label", label: "Alt text", widget: "string" }
+          - { name: "labelZh", label: "图注 (中文)", widget: "string", required: false }
+      - { name: "attachmentIds", label: "Attachment ids", widget: "list", required: false, field: { name: "id", label: "Download id", widget: "string" } }
+      - { name: "relatedModels", label: "Related model numbers", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
+      - { name: "seoTitle", label: "SEO title", widget: "string", hint: "Under about 60 characters. Include the brand." }
+      - { name: "seoDescription", label: "SEO description", widget: "text", hint: "Under about 155 characters." }
+
+  # ---------------------------------------------------------------------------
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "content/projects"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{buildingType}}"
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only."] }
+      - { name: "name", label: "Name (EN)", widget: "string" }
+      - { name: "nameEs", label: "Nombre (ES)", widget: "string" }
+      - name: "referenceStatus"
+        label: "Reference status"
+        widget: "select"
+        options:
+          - { label: "Verified project — client has confirmed this supply", value: "verified-project" }
+          - { label: "Representative application — illustrative, not a named supply", value: "representative-application" }
+        hint: "⚠ Only mark a project verified if the client has confirmed they supplied it. Claiming a reference you do not have is a real commercial risk."
+      - { name: "buildingType", label: "Building type (EN)", widget: "string" }
+      - { name: "buildingTypeEs", label: "Tipo de edificio (ES)", widget: "string" }
+      - { name: "summary", label: "Summary (EN)", widget: "text" }
+      - { name: "summaryEs", label: "Resumen (ES)", widget: "text" }
+      - { name: "body", label: "Body (EN)", widget: "list", field: { name: "paragraph", label: "Paragraph", widget: "text" } }
+      - { name: "bodyEs", label: "Cuerpo (ES)", widget: "list", field: { name: "paragraph", label: "Párrafo", widget: "text" } }
+      - { name: "productModels", label: "Product models used", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
+      - name: "heroImage"
+        label: "Main image"
+        widget: "object"
+        fields:
+          - { name: "src", label: "Image", widget: "image", required: false }
+          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "Alt text", widget: "string" }
+      - name: "gallery"
+        label: "Gallery"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "Image", widget: "image", required: false }
+          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "Alt text", widget: "string" }
+      - { name: "seoTitle", label: "SEO title", widget: "string" }
+      - { name: "seoDescription", label: "SEO description", widget: "text" }
+
+  # ---------------------------------------------------------------------------
+  # Single-file collections. Categories and downloads are ordered lists rather than
+  # per-item pages, and reordering is a common edit, so they stay as one file each.
+  - name: "taxonomy"
+    label: "Categories & Downloads"
+    files:
+      - name: "categories"
+        label: "Product categories"
+        file: "content/categories.json"
+        format: "json"
+        fields:
+          - name: "categories"
+            label: "Categories"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase, numbers and hyphens only."] }
+              - { name: "name", label: "Name (EN)", widget: "string" }
+              - { name: "nameZh", label: "名称 (中文)", widget: "string", required: false }
+              - { name: "summary", label: "Summary", widget: "text" }
+              - name: "image"
+                label: "Category image"
+                widget: "object"
+                fields:
+                  - { name: "src", label: "Image", widget: "image", required: false }
+                  - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
+                  - { name: "label", label: "Alt text", widget: "string" }
+              - name: "children"
+                label: "Sub-categories"
+                widget: "list"
+                required: false
+                summary: "{{fields.name}}"
+                hint: "Filters on the category page. They are NOT part of the URL, so renaming one is safe."
+                fields:
+                  - { name: "slug", label: "URL slug", widget: "string" }
+                  - { name: "name", label: "Name (EN)", widget: "string" }
+                  - { name: "nameZh", label: "名称 (中文)", widget: "string", required: false }
+                  - { name: "summary", label: "Summary", widget: "text" }
+                  - name: "image"
+                    label: "Image"
+                    widget: "object"
+                    fields:
+                      - { name: "src", label: "Image", widget: "image", required: false }
+                      - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
+                      - { name: "label", label: "Alt text", widget: "string" }
+
+      - name: "downloads"
+        label: "Download centre"
+        file: "content/downloads.json"
+        format: "json"
+        media_folder: "/public/downloads"
+        public_folder: "/downloads"
+        fields:
+          - name: "downloads"
+            label: "Files"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "id", label: "Id", widget: "string", hint: "Referenced by a product's attachment ids." }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "titleZh", label: "标题 (中文)", widget: "string", required: false }
+              - name: "kind"
+                label: "Kind"
+                widget: "select"
+                options: ["catalogue", "datasheet", "certificate", "cad", "bim", "installation", "warranty"]
+              - { name: "format", label: "File format", widget: "string", hint: "pdf, dwg, rfa, zip" }
+              - { name: "sizeBytes", label: "Size in bytes", widget: "number", value_type: "int" }
+              - { name: "url", label: "File", widget: "file" }
+              - { name: "language", label: "Language", widget: "string", default: "en" }
+              - { name: "relatedModels", label: "Related models", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
+              - { name: "updatedAt", label: "Last updated", widget: "date", format: "YYYY-MM-DD" }

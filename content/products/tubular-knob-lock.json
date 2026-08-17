@@ -1,0 +1,47 @@
+{
+  "model": "Tubular Knob Lock",
+  "modelTbc": true,
+  "slug": "tubular-knob-lock",
+  "name": "Tubular Knob Lock",
+  "nameZh": "管式球形锁",
+  "series": "Hyland Knob",
+  "categoryPath": [
+    "knob-locks",
+    "tubular-locks"
+  ],
+  "summary": "A tubular knob lock set for residential and light commercial doors, in entry, privacy and passage functions.",
+  "specs": [],
+  "material": "Stainless steel / zinc alloy",
+  "finishes": [
+    "Satin stainless",
+    "Polished brass"
+  ],
+  "doorTypes": [
+    "Timber"
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001",
+      "standard": "ISO 9001:2015"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/products/tubular-knob-lock.webp",
+    "ratio": "1 / 1",
+    "label": "Stainless steel tubular knob lock set with latch and strike plate"
+  },
+  "gallery": [
+    {
+      "src": "/images/concepts/smart-lock-residential-application.webp",
+      "ratio": "2400 / 930",
+      "label": "Keypad entry lock on a timber front door in a residential hallway"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [
+    "Cylindrical Knob Lock",
+    "Black Tubular Lever Lock Set"
+  ],
+  "seoTitle": "Tubular Knob Lock | Canton Hyland",
+  "seoDescription": "Tubular knob lock set in entry, privacy and passage functions. Canton Hyland, ISO 9001."
+}

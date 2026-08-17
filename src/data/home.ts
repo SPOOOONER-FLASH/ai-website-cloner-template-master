@@ -32,10 +32,14 @@ export const hero1: HeroModuleContent = {
   href: "/products/lever-handles/black-tubular-lever-lock-set",
 };
 
+/**
+ * Slide order is a commercial decision, not a design one: panic exit devices are the
+ * flagship line, so they hold the first frame — the one every visitor sees and the one
+ * that renders in link previews. The other two rotate behind it.
+ */
 export const heroCarousel: HeroCarouselContent = {
   ariaLabel: "Featured door hardware",
   slides: [
-    hero1,
     {
       variant: "stacked",
       media: {
@@ -48,6 +52,7 @@ export const heroCarousel: HeroCarouselContent = {
       linkLabel: "Explore exit devices",
       href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
     },
+    hero1,
     {
       variant: "stacked",
       media: {

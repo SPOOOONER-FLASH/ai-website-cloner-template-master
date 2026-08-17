@@ -1,0 +1,57 @@
+{
+  "model": "Stainless Steel Flush Bolt",
+  "modelTbc": true,
+  "slug": "stainless-steel-flush-bolt",
+  "name": "Stainless Steel Flush Bolt",
+  "nameZh": "不锈钢暗插销",
+  "series": "Hyland Accessories",
+  "categoryPath": [
+    "hardware-accessories",
+    "flush-bolts"
+  ],
+  "summary": "A family of mortised flush bolts for securing the inactive leaf of paired doors.",
+  "specs": [
+    {
+      "label": "Width",
+      "value": "22",
+      "unit": "mm"
+    },
+    {
+      "label": "Available lengths",
+      "value": "4, 6, 8, 10, 12",
+      "unit": "in"
+    },
+    {
+      "label": "Installation",
+      "value": "Surface or mortise"
+    }
+  ],
+  "material": "Stainless steel",
+  "finishes": [
+    "Satin stainless",
+    "Polished stainless"
+  ],
+  "doorTypes": [
+    "Double timber door",
+    "Double metal door"
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001",
+      "standard": "ISO 9001:2015"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/products/stainless-steel-flush-bolt.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland stainless steel flush bolts in multiple lengths"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [
+    "309-D",
+    "Stainless Steel Door Hinge"
+  ],
+  "seoTitle": "Stainless Steel Flush Bolt | Canton Hyland",
+  "seoDescription": "Stainless steel flush bolt for inactive leaves of paired timber and metal doors. Canton Hyland, ISO 9001."
+}

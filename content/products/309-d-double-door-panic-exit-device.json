@@ -1,0 +1,45 @@
+{
+  "model": "309-D",
+  "slug": "309-d-double-door-panic-exit-device",
+  "name": "Double Door Panic Exit Device",
+  "nameZh": "双门逃生推杠",
+  "series": "Hyland 300",
+  "categoryPath": [
+    "panic-exit-devices",
+    "multi-point"
+  ],
+  "summary": "A paired device set for double escape doors, coordinating the active and inactive leaf.",
+  "specs": [],
+  "material": "Steel / stainless steel",
+  "finishes": [
+    "Satin stainless"
+  ],
+  "doorTypes": [
+    "Double leaf escape door"
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001",
+      "standard": "ISO 9001:2015"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/products/309-d-double-door-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 309-D panic exit device set for double escape doors"
+  },
+  "gallery": [
+    {
+      "src": "/images/concepts/double-door-coordinator-application.webp",
+      "ratio": "1 / 1",
+      "label": "Stainless double doors fitted with a door coordinator arm"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [
+    "305",
+    "320"
+  ],
+  "seoTitle": "309-D Double Door Panic Exit Device | Canton Hyland",
+  "seoDescription": "Paired panic exit device for double escape doors. Canton Hyland, manufactured under ISO 9001."
+}

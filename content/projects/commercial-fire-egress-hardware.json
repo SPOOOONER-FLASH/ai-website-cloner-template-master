@@ -1,0 +1,45 @@
+{
+  "slug": "commercial-fire-egress-hardware",
+  "name": "Commercial Fire-Egress Hardware Package",
+  "nameEs": "Paquete de herrajes para evacuación comercial",
+  "referenceStatus": "representative-application",
+  "buildingType": "Commercial + Institutional",
+  "buildingTypeEs": "Comercial + Institucional",
+  "summary": "A representative schedule combining single-point, double-door and alarmed panic hardware for controlled escape routes.",
+  "summaryEs": "Una propuesta que combina herrajes antipánico de un punto, doble puerta y alarma para rutas de evacuación controladas.",
+  "body": [
+    "This application concept starts with the escape strategy: door handing, active and inactive leaves, fire-door requirements and the outside-access condition are confirmed before hardware selection.",
+    "The product group can combine model 305 for a single leaf, 309-D for paired doors and model 314 where an alarmed exit is required. Final compliance depends on the complete tested doorset and the exact report scope.",
+    "Canton Hyland can support distributors and project buyers with schedule review, finish coordination, samples and export documentation."
+  ],
+  "bodyEs": [
+    "La propuesta parte de la estrategia de evacuación: sentido de apertura, hojas activa e inactiva, requisitos de puerta cortafuego y acceso exterior.",
+    "La familia puede combinar el modelo 305 para una hoja, 309-D para puertas dobles y 314 cuando se requiere alarma. La conformidad final depende del conjunto ensayado y del alcance exacto del informe.",
+    "Canton Hyland apoya a distribuidores y compradores con revisión de cuadros, coordinación de acabados, muestras y documentación de exportación."
+  ],
+  "productModels": [
+    "305",
+    "309-D",
+    "314",
+    "320"
+  ],
+  "heroImage": {
+    "src": "/images/company/hero-panic-exit-banner.webp",
+    "ratio": "2880 / 1391",
+    "label": "Representative commercial escape-route doors with panic exit hardware"
+  },
+  "gallery": [
+    {
+      "src": "/images/company/showroom-emergency-hardware.webp",
+      "ratio": "3 / 2",
+      "label": "Emergency exit hardware displayed for schedule review"
+    },
+    {
+      "src": "/images/products/305-fire-door-panic-exit-device.webp",
+      "ratio": "1 / 1",
+      "label": "Model 305 fire door panic exit device"
+    }
+  ],
+  "seoTitle": "Commercial Fire-Egress Hardware Application | Canton Hyland",
+  "seoDescription": "Representative panic-exit hardware package linking models 305, 309-D, 314 and 320 for commercial escape routes."
+}

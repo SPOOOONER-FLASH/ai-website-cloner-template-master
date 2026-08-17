@@ -21,10 +21,13 @@ export const hero1: HeroModuleContent = {
   href: "/products/lever-handles/black-tubular-lever-lock-set",
 };
 
+/**
+ * Mismo orden que la versión inglesa: los dispositivos antipánico son la línea
+ * insignia y ocupan el primer fotograma.
+ */
 export const heroCarousel: HeroCarouselContent = {
   ariaLabel: "Herrajes destacados",
   slides: [
-    hero1,
     {
       variant: "stacked",
       media: {
@@ -37,6 +40,7 @@ export const heroCarousel: HeroCarouselContent = {
       linkLabel: "Explorar dispositivos",
       href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
     },
+    hero1,
     {
       variant: "stacked",
       media: {

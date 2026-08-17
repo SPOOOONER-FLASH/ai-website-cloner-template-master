@@ -1,0 +1,67 @@
+name: Build and deploy
+
+# Closes the CMS loop: an editor saves in /admin, Decap commits to main, this builds
+# the static export and uploads it to the server. No build step runs on the server, so
+# it needs neither Node nor a deploy script there.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  # A newer push supersedes an in-flight deploy rather than racing it onto the server.
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+
+      - name: Build static export
+        env:
+          # Public by design — Web3Forms keys are read by the browser. Stored as a
+          # secret only so the repository does not advertise it.
+          NEXT_PUBLIC_W3F_KEY: ${{ secrets.NEXT_PUBLIC_W3F_KEY }}
+        run: npm run build
+
+      - name: Sanity-check the export
+        run: |
+          test -f out/index.html
+          test -f out/robots.txt
+          pages=$(find out -name index.html | wc -l)
+          echo "static pages: $pages"
+          # A build that silently produces almost nothing must not reach the server.
+          if [ "$pages" -lt 40 ]; then
+            echo "::error::Only $pages pages built — expected 40+. Refusing to deploy."
+            exit 1
+          fi
+
+      - name: Deploy to server over SSH
+        # Skips cleanly on forks and before the secrets are configured, instead of
+        # failing every run with an authentication error.
+        if: ${{ secrets.SSH_HOST != '' }}
+        uses: burnett01/rsync-deployments@7.0.2
+        with:
+          # --delete removes files the build no longer produces. Safe here because the
+          # target directory holds only build output, never anything hand-uploaded.
+          switches: -avzr --delete
+          path: out/
+          remote_path: ${{ secrets.SSH_TARGET_DIR }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
