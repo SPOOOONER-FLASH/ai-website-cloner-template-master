@@ -78,12 +78,21 @@
   --radius-card: 2px;
 
   /* -- Motion ------------------------------------------------------------ */
-  /* Restrained by design: 180ms for hovers, 240ms for anything that moves a
-     larger surface (slide changes, menu panels). Nothing eases longer than this
-     — the layout is flat, so motion is feedback, not decoration. */
+  /* Duration scales with the size of the surface being moved. Small controls need
+     to feel instant; a full-bleed hero needs room to settle or it reads as a jump
+     cut. Three steps, not one:
+       fast    180ms  links, icons, small hover states
+       medium  260ms  cards, menu panels, filters
+       slow    560ms  hero crossfades — the only large surface on the site
+     Easing: decelerating quint. It leaves the start quickly and lands very softly,
+     which is what reads as "smooth" rather than "mechanical". The old
+     cubic-bezier(0.4, 0, 0.2, 1) decelerates far more abruptly at the end. */
   --motion-fast: 180ms;
-  --motion-medium: 240ms;
-  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-medium: 260ms;
+  --motion-slow: 560ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* For things that must feel crisp rather than soft — outlines, underlines. */
+  --motion-ease-crisp: cubic-bezier(0.33, 0, 0.2, 1);
 
   /* -- Typography -------------------------------------------------------- */
   --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
@@ -427,12 +436,53 @@
   .underscore {
     transition-property: color, background-color, border-color, outline-color, opacity;
     transition-duration: var(--motion-fast);
-    transition-timing-function: var(--motion-ease);
+    transition-timing-function: var(--motion-ease-crisp);
   }
 
   /* Cards lift nothing — they only change their hairline. Keep it quick. */
   [data-card] {
-    transition: outline-color var(--motion-fast) var(--motion-ease);
+    transition: outline-color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  /* -- Hero carousel ----------------------------------------------------- */
+  /* The crossfade is the one piece of motion on the site with real surface area,
+     so it gets the slow token and a very small scale settle. The incoming frame
+     starts at 1.015 and eases to 1 — under two pixels of travel at hero size.
+     Not a Ken Burns pan; just enough to stop the change reading as a hard cut. */
+  .hero-slide {
+    transition-property: opacity, transform;
+    transition-duration: var(--motion-slow);
+    transition-timing-function: var(--motion-ease);
+    /* Promote to its own layer so the fade is composited, not repainted. */
+    will-change: opacity, transform;
+    backface-visibility: hidden;
+  }
+  .hero-slide[data-active="false"] {
+    opacity: 0;
+    transform: scale(1.015);
+    pointer-events: none;
+  }
+  .hero-slide[data-active="true"] {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Dots: the fill grows from the centre rather than snapping between two colours. */
+  .hero-dot {
+    transition:
+      background-color var(--motion-medium) var(--motion-ease),
+      transform var(--motion-medium) var(--motion-ease);
+  }
+  .hero-dot[aria-current="true"] {
+    transform: scaleX(2.4);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-slide,
+    .hero-dot {
+      transition: none;
+      transform: none;
+    }
   }
 
   .horizontal-snap {

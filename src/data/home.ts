@@ -24,7 +24,7 @@ export const hero1: HeroModuleContent = {
   media: {
     ratio: "1920 / 754",
     src: "/images/company/hero-modern-tubular-lock.webp",
-    label: "Modern matt-black tubular lever lock installed on a bedroom door",
+    label: "Satin stainless square lever handle and cylinder escutcheon on a walnut door",
   },
   title: "Modern Tubular Door Lock",
   body: "A restrained matt-black lever set for contemporary residential interiors.",
@@ -152,8 +152,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "2880 / 1920",
-    src: "/images/company/assembly-line.webp",
-    label: "Assembly and packing benches at the Canton Hyland plant in Guangdong",
+    src: "/images/company/factory-assembly-quality-line.webp",
+    label: "Assembly and quality-inspection line at the Canton Hyland plant in Guangdong",
   },
   title: "About Us",
   // 8 lines at the 332px caption column

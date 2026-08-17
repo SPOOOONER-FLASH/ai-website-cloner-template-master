@@ -13,7 +13,7 @@ export const hero1: HeroModuleContent = {
   media: {
     ratio: "1920 / 754",
     src: "/images/company/hero-modern-tubular-lock.webp",
-    label: "Cerradura tubular de palanca negra instalada en una puerta de dormitorio",
+    label: "Manilla cuadrada de acero inoxidable satinado sobre una puerta de nogal",
   },
   title: "Cerradura tubular moderna",
   body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",

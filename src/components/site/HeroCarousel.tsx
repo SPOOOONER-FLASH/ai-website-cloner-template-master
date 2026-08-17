@@ -86,14 +86,11 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
         {content.slides.map((slide, index) => (
           <div
             aria-hidden={index !== activeIndex}
-            className={cn(
-              // 240ms — the agreed ceiling for the motion system. Was 700ms, which read
-              // as a slideshow dissolve rather than the restrained crossfade specified.
-              "absolute inset-0 transition-[opacity,transform] duration-[var(--motion-medium)] ease-[cubic-bezier(0.4,0,0.2,1)] motion-reduce:transition-none",
-              index === activeIndex
-                ? "z-[1] translate-x-0 opacity-100"
-                : "pointer-events-none translate-x-8 opacity-0",
-            )}
+            data-active={index === activeIndex}
+            // Timing, easing and the scale settle live in globals.css (.hero-slide).
+            // The old version slid the frame 8px sideways, which fought the crossfade;
+            // a centred scale settle reads calmer at this size.
+            className={cn("hero-slide absolute inset-0", index === activeIndex && "z-[1]")}
             key={`${slide.title}-${index}`}
           >
             {slide.media.src ? (
@@ -113,7 +110,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
           <div className="absolute bottom-0 right-0 z-[2] flex h-48 items-center border-l border-t border-line bg-surface/95">
             <button
               aria-label="Previous slide"
-              className="flex h-48 w-48 items-center justify-center border-r border-line text-ink hover:bg-ink hover:text-surface"
+              className="flex h-48 w-48 items-center justify-center border-r border-line text-ink transition-colors duration-[var(--motion-fast)] hover:bg-ink hover:text-surface"
               onClick={previous}
               type="button"
             >
@@ -124,8 +121,11 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
                 <button
                   aria-label={`Show slide ${index + 1}: ${slide.title}`}
                   aria-selected={index === activeIndex}
+                  aria-current={index === activeIndex}
+                  // .hero-dot widens the active dot instead of only recolouring it,
+                  // so the state change is legible without adding a second colour.
                   className={cn(
-                    "h-8 w-8 border border-ink transition-colors",
+                    "hero-dot h-8 w-8 border border-ink",
                     index === activeIndex ? "bg-brand" : "bg-surface",
                   )}
                   key={slide.title}
@@ -137,7 +137,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
             </div>
             <button
               aria-label="Next slide"
-              className="flex h-48 w-48 items-center justify-center border-l border-line text-ink hover:bg-ink hover:text-surface"
+              className="flex h-48 w-48 items-center justify-center border-l border-line text-ink transition-colors duration-[var(--motion-fast)] hover:bg-ink hover:text-surface"
               onClick={next}
               type="button"
             >
