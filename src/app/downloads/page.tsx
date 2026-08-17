@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { downloads, formatDownloadSize, getDownloadsByKind } from "@/data/downloads";
 import type { DownloadKind } from "@/data/types";
 
-export const metadata: Metadata = {
-  title: "Service + Downloads | Canton Hyland",
-  description: "Canton Hyland product catalogue, model-scoped test reports and technical document request service.",
-};
+export const metadata: Metadata = pageMetadata({
+  enPath: "/downloads",
+  locale: "en",
+  title: "Service + Downloads",
+  description:
+    "Canton Hyland product catalogue, model-scoped test reports and technical document request service.",
+});
 
 const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> = [
   {

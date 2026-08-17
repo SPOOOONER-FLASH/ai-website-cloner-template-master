@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
 
-export const metadata: Metadata = {
-  title: "Contact | Canton Hyland",
-  description: "Talk to an export engineer about a specification, a sample or a quotation.",
-};
+export const metadata: Metadata = pageMetadata({
+  enPath: "/contact",
+  locale: "en",
+  title: "Contact",
+  description:
+    "Talk to an export engineer about a specification, a sample or a quotation.",
+});
 
 export default function ContactPage() {
   return (

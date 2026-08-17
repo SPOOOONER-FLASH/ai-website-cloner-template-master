@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -8,10 +9,13 @@ import { ProductCategoryRail } from "@/components/site/ProductCategoryRail";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, products } from "@/data/products";
 
-export const metadata: Metadata = {
-  title: "Products | Canton Hyland",
-  description: "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalogue.",
-};
+export const metadata: Metadata = pageMetadata({
+  enPath: "/products",
+  locale: "en",
+  title: "Products",
+  description:
+    "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalogue.",
+});
 
 export default function ProductsPage() {
   const categories = getTopLevelCategories();

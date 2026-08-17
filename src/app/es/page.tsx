@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -7,10 +8,13 @@ import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import * as content from "@/data/home-es";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  enPath: "/",
+  locale: "es",
   title: "Canton Hyland — Cerraduras y herrajes arquitectónicos",
-  description: "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
-};
+  description:
+    "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
+});
 
 export default function SpanishHomePage() {
   return (

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
 
-export const metadata: Metadata = {
-  title: "Contacto | Canton Hyland",
-  description: "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos.",
-};
+export const metadata: Metadata = pageMetadata({
+  enPath: "/contact",
+  locale: "es",
+  title: "Contacto",
+  description:
+    "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos.",
+});
 
 export default function ContactoPage() {
   return (

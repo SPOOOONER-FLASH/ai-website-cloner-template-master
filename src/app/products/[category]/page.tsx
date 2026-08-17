@@ -4,6 +4,9 @@ import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
+import { absoluteUrl } from "@/data/site";
+import { pageMetadata } from "@/lib/seo";
+import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 
 interface CategoryPageProps {
   params: Promise<{ category: string }>;
@@ -21,10 +24,14 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   if (!category) return {};
 
-  return {
-    title: `${category.name} | Canton Hyland`,
+  return pageMetadata({
+    enPath: `/products/${categorySlug}`,
+    locale: "en",
+    title: category.name,
     description: category.summary,
-  };
+    image: category.image.src,
+    imageAlt: category.image.label,
+  });
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -34,9 +41,24 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   if (!category) notFound();
 
   const products = getProductsByCategory(category.slug);
+  const categoryUrl = absoluteUrl(`/products/${category.slug}/`);
   const options = category.children?.map(({ slug, name }) => ({ slug, name })) ?? [];
 
   return (
+    <>
+      <JsonLd
+        data={itemListSchema(
+          category.name,
+          products.map((p) => absoluteUrl(`/products/${p.categoryPath[0]}/${p.slug}/`)),
+        )}
+      />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: absoluteUrl("/") },
+          { name: "Products", url: absoluteUrl("/products/") },
+          { name: category.name, url: categoryUrl },
+        ])}
+      />
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <section className="layout" aria-labelledby="category-title">
         <div className="col-content grid w-full grid-cols gap-x gap-y-24">
@@ -69,5 +91,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       </section>
     </main>
+    </>
   );
 }
