@@ -7,6 +7,12 @@
 # The field definitions below mirror src/data/types.ts. When you add a field to one,
 # add it to the other — the barrel generator asserts the shape, it does not validate it.
 
+# Local mode: when the admin page is opened on localhost, Decap talks to `decap-server`
+# instead of GitHub, so there is no login and no OAuth service to set up. Run it with
+# `npm run cms`. It is ignored on the deployed site, where the GitHub backend below
+# applies — so this line is safe to leave switched on permanently.
+local_backend: true
+
 backend:
   name: github
   repo: SPOOOONER-FLASH/ai-website-cloner-template-master
