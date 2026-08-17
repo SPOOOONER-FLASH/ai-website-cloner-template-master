@@ -10,12 +10,14 @@ import { SiteMenuDrawer } from "./SiteMenuDrawer";
 const NAV_LINKS = {
   en: [
     { label: "Products", href: "/products" },
+    { label: "Product Finder", href: "/product-finder" },
     { label: "Projects", href: "/projects" },
     { label: "Company", href: "/company" },
     { label: "Service + Downloads", href: "/downloads" },
   ],
   es: [
     { label: "Productos", href: "/products" },
+    { label: "Buscador", href: "/product-finder" },
     { label: "Proyectos", href: "/es/projects" },
     { label: "Empresa", href: "/es/company" },
     { label: "Servicio + Descargas", href: "/downloads" },
@@ -80,7 +82,7 @@ export function SiteHeader() {
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
             <div className="col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12">
-              <nav className="flex gap-64">
+              <nav className="flex gap-40 xl:gap-48">
                 {NAV_LINKS[locale].map((link) => {
                   const current = isCurrent(link.href);
                   return (

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CategoryCard } from "@/components/site/CategoryCard";
+import { ProductCard } from "@/components/site/ProductCard";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 import { ProductCategoryRail } from "@/components/site/ProductCategoryRail";
 import { getTopLevelCategories } from "@/data/categories";
@@ -89,6 +90,62 @@ export default function ProductsPage() {
               productCount={getProductsByCategory(category.slug).length}
             />
           ))}
+        </div>
+      </section>
+
+      {/*
+        The full index, FSB-style: every product on one page, grouped by category.
+        Category cards tell you what exists; this tells you what you can actually order,
+        and it is the page a specifier scrolls when they do not yet know the model number.
+        Empty categories are skipped rather than rendered as an empty heading.
+      */}
+      <section className="layout mt-144 lg:mt-192" aria-labelledby="all-products-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+          <div className="col-span-full flex flex-wrap items-end justify-between gap-24 border-b border-line pb-16">
+            <h2 id="all-products-heading" className="text-h3 text-ink">
+              All products
+            </h2>
+            <p className="text-c2 text-ink-secondary">
+              {products.length} products ·{" "}
+              <Link
+                href="/product-finder/"
+                className="text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+              >
+                filter by material, finish and door type
+              </Link>
+            </p>
+          </div>
+
+          {categories.map((category) => {
+            const items = getProductsByCategory(category.slug);
+            if (!items.length) return null;
+
+            return (
+              <div key={category.slug} className="col-span-full">
+                <div className="flex flex-wrap items-baseline justify-between gap-16">
+                  <h3 className="text-h3 text-ink">
+                    <Link
+                      href={`/products/${category.slug}/`}
+                      className="underline-offset-4 hover:text-brand-hover hover:underline"
+                    >
+                      {category.name}
+                    </Link>
+                  </h3>
+                  <span className="text-c2 text-ink-tertiary">
+                    {items.length} {items.length === 1 ? "product" : "products"}
+                  </span>
+                </div>
+
+                <ul className="mt-24 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-4">
+                  {items.map((product) => (
+                    <li key={product.slug}>
+                      <ProductCard product={product} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </section>
     </main>

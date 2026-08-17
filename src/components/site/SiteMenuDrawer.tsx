@@ -6,6 +6,7 @@ const links = {
   en: [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products/" },
+    { label: "Product Finder", href: "/product-finder/" },
     { label: "Projects", href: "/projects/" },
     { label: "Company", href: "/company/" },
     { label: "Downloads", href: "/downloads/" },
@@ -14,6 +15,7 @@ const links = {
   es: [
     { label: "Inicio", href: "/es/" },
     { label: "Productos", href: "/products/" },
+    { label: "Buscador de productos", href: "/product-finder/" },
     { label: "Proyectos", href: "/es/projects/" },
     { label: "Empresa", href: "/es/company/" },
     { label: "Descargas", href: "/downloads/" },
