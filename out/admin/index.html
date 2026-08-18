@@ -1,20 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The admin is a tool, never a page to be indexed. -->
+    <!-- 后台是工具，不是给搜索引擎收录的页面。 -->
     <meta name="robots" content="noindex, nofollow" />
-    <title>Canton Hyland — Content Manager</title>
+    <title>Canton Hyland — 内容后台</title>
+    <style>
+      /* 顶部提示条。Decap 自己会占满整个视口，所以用 fixed 贴在最上面，
+         并把 CMS 的根容器往下推同样的高度，避免遮住它的顶栏。 */
+      #cms-notice {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 10000;
+        box-sizing: border-box;
+        padding: 8px 16px;
+        background: #fff8e1;
+        border-bottom: 1px solid #e0cfa0;
+        font: 13px/1.5 system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+        color: #4a3c14;
+      }
+      #cms-notice b { font-weight: 600; }
+      #nc-root { padding-top: 37px; }
+    </style>
   </head>
   <body>
+    <div id="cms-notice">
+      <b>保存后网站不会立刻更新。</b>
+      这里的改动会提交到 GitHub 仓库；线上页面是构建产物，需要有人执行一次
+      <code>npm run deploy:prep</code> 并推送，改动才会出现在网站上。详见
+      docs/CMS_REMOTE_SETUP.md。
+    </div>
     <!--
-      Decap CMS. This is a plain static page: no server, no database, no PHP.
-      It reads and writes the JSON files in content/ through the GitHub API, so every
-      edit an author makes becomes a normal commit in this repository.
+      Decap CMS。这是一个纯静态页面：没有服务器、没有数据库、没有 PHP。
+      它通过 GitHub API 读写 content/ 下的 JSON 文件，编辑者的每一次保存
+      都会变成本仓库里的一次普通提交。
 
-      Loaded from a CDN on purpose — it is an internal admin tool, not part of the public
-      site's performance budget, and pinning the version here keeps upgrades deliberate.
+      刻意从 CDN 加载 —— 它是内部管理工具，不属于公开站点的性能预算，
+      而且在这里锁定版本可以让升级变成一个有意识的动作。
     -->
     <script src="https://unpkg.com/decap-cms@3.9.0/dist/decap-cms.js"></script>
   </body>

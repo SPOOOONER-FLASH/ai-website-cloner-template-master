@@ -106,7 +106,9 @@ out/                     构建产物，已提交
 | 规格表 15/20 为空 | 等甲方目录 |
 | 7 个产品无真实 SKU | `modelTbc: true` |
 | 成立年份 1998 | 甲方已确认（2012 是阿里开店年份） |
-| CMS 仅本地可用 | 上服务器需 GitHub OAuth 中转，未做 |
+| CMS 远程登录 | 后台已全中文；GitHub 后端已配好，**只差一个 OAuth 中转服务的域名**填进 public/admin/config.yml 的 base_url。步骤见 docs/CMS_REMOTE_SETUP.md |
+| 同事发布后网站不会自动更新 | 静态导出 + out/ 提交进仓库，中间的构建这一步没有自动化。要自动化就加一个 GitHub Actions（见同一份文档的方案 B） |
+| content/categories.json 与 downloads.json 未被网站读取 | 分类和下载仍来自 src/data/{categories,downloads}.ts 的硬编码数组；只有产品和案例接上了 content/。CMS 里改这两项**不会影响页面** |
 | Web3Forms key 在 out/ 的 JS 里 | 设计上就是公开的；被刷垃圾邮件时去后台换 key |
 | P11 真实素材替换 | 甲方明确取消 |
 

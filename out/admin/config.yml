@@ -1,23 +1,39 @@
-# Decap CMS configuration — Canton Hyland
+# Decap CMS 配置 —— Canton Hyland 内容后台
 #
-# Editors open /admin/, sign in with GitHub, and edit the JSON files under content/.
-# Every save is a commit on this repository. There is no database and no server-side
-# admin application, so there is nothing here to patch, secure or keep running.
+# 编辑者打开 /admin/，用 GitHub 账号登录，改的就是 content/ 下面的 JSON 文件。
+# 每次保存都是仓库里的一次提交。没有数据库，也没有后端管理程序，
+# 所以这里没有任何需要打补丁、加固或长期运行的服务。
 #
-# The field definitions below mirror src/data/types.ts. When you add a field to one,
-# add it to the other — the barrel generator asserts the shape, it does not validate it.
+# 下面的字段定义和 src/data/types.ts 一一对应。给一边加字段时，另一边也要加 ——
+# barrel 生成器只断言结构，不做校验。
+#
+# 界面语言设为简体中文；下面所有 label / hint 也都写成中文，
+# 所以后台从菜单到字段说明全是中文。字段的 name 一律保持英文不动 ——
+# 它们是 JSON 的键名，改了会让构建失败。
+locale: "zh_Hans"
 
-# Local mode: when the admin page is opened on localhost, Decap talks to `decap-server`
-# instead of GitHub, so there is no login and no OAuth service to set up. Run it with
-# `npm run cms`. It is ignored on the deployed site, where the GitHub backend below
-# applies — so this line is safe to leave switched on permanently.
+# 本地模式：在 localhost 打开后台时，Decap 直接和 `decap-server` 通信，
+# 不走 GitHub，也就不需要登录、不需要 OAuth。用 `npm run cms` 启动。
+# 线上站点会忽略这一行（那里走下面的 GitHub 后端），所以可以一直开着。
 local_backend: true
 
 backend:
   name: github
   repo: SPOOOONER-FLASH/ai-website-cloner-template-master
   branch: main
-  # Commit messages that read sensibly in `git log` next to hand-written ones.
+
+  # ⬇⬇⬇ 同事远程登录必填 —— 步骤见 docs/CMS_REMOTE_SETUP.md ⬇⬇⬇
+  # GitHub 的 OAuth 不允许纯前端页面自己换取 token，中间必须有一个极小的中转服务
+  # （只做一次 code → token 的交换，不存任何数据）。文档里用的是 Cloudflare Worker：
+  # 免费、无需服务器、部署一次以后不用再管。
+  # 拿到 Worker 域名后，去掉下面这一行的 # 并换成自己的地址：
+  #
+  # base_url: https://canton-cms-auth.你的账号.workers.dev
+  #
+  # 本地 `npm run cms` 不需要这一行（走 local_backend）。
+  # 没填时线上 /admin/ 点“Login with GitHub”会失败 —— 这是预期行为，不是 bug。
+
+  # 提交信息，让 CMS 的提交在 `git log` 里和手写的提交读起来一致。
   commit_messages:
     create: "CMS: create {{collection}} “{{slug}}”"
     update: "CMS: update {{collection}} “{{slug}}”"
@@ -25,25 +41,23 @@ backend:
     uploadMedia: "CMS: upload {{path}}"
     deleteMedia: "CMS: delete {{path}}"
 
-# Editorial workflow puts saves into a pull request instead of straight onto main.
-# Worth keeping: it means a mis-typed certification claim can be reviewed before it
-# reaches a build, and it gives a rollback point that is not "the whole repo".
+# 编辑工作流：保存后先进入待审状态（在 GitHub 上是一个 Pull Request），
+# 点“发布”才会合并进 main。值得保留 —— 一条写错的认证声明可以在进入构建之前被拦下，
+# 而且回滚的粒度是单条内容，不是整个仓库。
 publish_mode: editorial_workflow
 
 media_folder: "public/images/products"
 public_folder: "/images/products"
 
-locale: "en"
-
 collections:
   # ---------------------------------------------------------------------------
   - name: "products"
-    label: "Products"
-    label_singular: "Product"
+    label: "产品"
+    label_singular: "产品"
     folder: "content/products"
     create: true
-    # Filename must equal the slug — build-content-index.mjs fails the build otherwise,
-    # because a mismatch would silently point a URL at the wrong record.
+    # 文件名必须等于 slug —— 否则 build-content-index.mjs 会让构建失败，
+    # 因为不一致会导致某个网址悄悄指向错误的记录。
     slug: "{{fields.slug}}"
     identifier_field: "name"
     summary: "{{model}} — {{name}}"
@@ -53,69 +67,69 @@ collections:
       indent_style: "space"
       indent_size: 2
     fields:
-      - { name: "model", label: "Model number", widget: "string", hint: "The business key, e.g. 305 or LC14 85×50." }
-      - { name: "modelTbc", label: "Model number not yet confirmed", widget: "boolean", required: false, default: false, hint: "Tick if this is a working label rather than a real SKU." }
-      - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only."], hint: "Becomes part of the page address. Changing it changes a live URL." }
-      - { name: "name", label: "Product name (EN)", widget: "string" }
-      - { name: "nameZh", label: "产品名称 (中文)", widget: "string", required: false, hint: "Internal reference only. Not shown on the site." }
-      - { name: "series", label: "Series", widget: "string" }
+      - { name: "model", label: "型号", widget: "string", hint: "业务主键，例如 305 或 LC14 85×50。" }
+      - { name: "modelTbc", label: "型号尚未确认", widget: "boolean", required: false, default: false, hint: "如果这只是一个暂用名称、不是真实 SKU，请勾选。" }
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"], hint: "会成为页面地址的一部分。改动它等于改掉一个已上线的网址。" }
+      - { name: "name", label: "产品名称（英文）", widget: "string" }
+      - { name: "nameZh", label: "产品名称（中文）", widget: "string", required: false, hint: "仅供内部对照，不会显示在网站上。" }
+      - { name: "series", label: "系列", widget: "string" }
       - name: "categoryPath"
-        label: "Category path"
+        label: "分类路径"
         widget: "list"
-        field: { name: "segment", label: "Segment", widget: "string" }
-        hint: "Top-level category first, then sub-category. Must match content/categories.json."
-      - { name: "summary", label: "Summary", widget: "text", hint: "One or two sentences. Used on cards and listings." }
+        field: { name: "segment", label: "层级", widget: "string" }
+        hint: "先填一级分类，再填子分类。必须和「分类与下载」里的分类一致。"
+      - { name: "summary", label: "简介", widget: "text", hint: "一到两句话。用在卡片和列表上。" }
       - name: "specs"
-        label: "Specification table"
-        label_singular: "Specification"
+        label: "规格表"
+        label_singular: "规格"
         widget: "list"
         required: false
         summary: "{{fields.label}}: {{fields.value}} {{fields.unit}}"
         fields:
-          - { name: "label", label: "Label", widget: "string" }
-          - { name: "value", label: "Value", widget: "string" }
-          - { name: "unit", label: "Unit", widget: "string", required: false }
-          - { name: "labelZh", label: "标签 (中文)", widget: "string", required: false }
-        hint: "Leave empty rather than guessing. An empty table is honest; an invented one is a liability."
-      - { name: "material", label: "Material", widget: "string" }
-      - { name: "finishes", label: "Finishes", widget: "list", field: { name: "finish", label: "Finish", widget: "string" } }
-      - { name: "doorTypes", label: "Door types", widget: "list", field: { name: "doorType", label: "Door type", widget: "string" } }
+          - { name: "label", label: "项目", widget: "string" }
+          - { name: "value", label: "数值", widget: "string" }
+          - { name: "unit", label: "单位", widget: "string", required: false }
+          - { name: "labelZh", label: "项目（中文）", widget: "string", required: false }
+        hint: "没有真实数据就留空，不要猜。空表是诚实的，编造的表是事故 —— 采购商会照着它下单。"
+      - { name: "material", label: "材质", widget: "string" }
+      - { name: "finishes", label: "表面处理", widget: "list", field: { name: "finish", label: "表面处理", widget: "string" } }
+      - { name: "doorTypes", label: "适用门型", widget: "list", field: { name: "doorType", label: "门型", widget: "string" } }
       - name: "certifications"
-        label: "Certifications"
+        label: "认证"
         widget: "list"
         required: false
         summary: "{{fields.name}}"
         fields:
-          - { name: "name", label: "Name", widget: "string", hint: "e.g. ISO 9001, ANSI Grade 3" }
-          - { name: "standard", label: "Standard reference", widget: "string", required: false }
-          - { name: "downloadId", label: "Linked certificate id", widget: "string", required: false }
-        hint: "⚠ Only add a certification you can evidence with a test report naming THIS model. A wrong claim here is a compliance problem, not a typo."
+          - { name: "name", label: "名称", widget: "string", hint: "例如 ISO 9001、ANSI Grade 3" }
+          - { name: "standard", label: "标准编号", widget: "string", required: false }
+          - { name: "downloadId", label: "关联的证书文件 id", widget: "string", required: false }
+        hint: "⚠ 只有当你手上有一份点名「本型号」的检测报告时，才可以在这里填认证。填错不是笔误，是合规问题。"
       - name: "heroImage"
-        label: "Main image"
+        label: "主图"
         widget: "object"
         fields:
-          - { name: "src", label: "Image", widget: "image", required: false, hint: "Leave empty to show a labelled placeholder block instead." }
-          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1", hint: 'CSS syntax, e.g. "1 / 1" or "3 / 2".' }
-          - { name: "label", label: "Alt text", widget: "string", hint: "Describe what is in the picture. Used by screen readers and by Google." }
-          - { name: "labelZh", label: "图注 (中文)", widget: "string", required: false }
+          - { name: "src", label: "图片", widget: "image", required: false, hint: "留空则显示一个带文字的占位方块。" }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1", hint: "CSS 写法，例如 1 / 1 或 3 / 2。" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string", hint: "描述图里是什么。给读屏软件和 Google 看的。" }
+          - { name: "labelZh", label: "图注（中文）", widget: "string", required: false }
       - name: "gallery"
-        label: "Gallery"
+        label: "图库"
         widget: "list"
         required: false
         fields:
-          - { name: "src", label: "Image", widget: "image", required: false }
-          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
-          - { name: "label", label: "Alt text", widget: "string" }
-          - { name: "labelZh", label: "图注 (中文)", widget: "string", required: false }
-      - { name: "attachmentIds", label: "Attachment ids", widget: "list", required: false, field: { name: "id", label: "Download id", widget: "string" } }
-      - { name: "relatedModels", label: "Related model numbers", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
-      - { name: "seoTitle", label: "SEO title", widget: "string", hint: "Under about 60 characters. Include the brand." }
-      - { name: "seoDescription", label: "SEO description", widget: "text", hint: "Under about 155 characters." }
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+          - { name: "labelZh", label: "图注（中文）", widget: "string", required: false }
+      - { name: "attachmentIds", label: "附件 id", widget: "list", required: false, field: { name: "id", label: "下载文件 id", widget: "string" } }
+      - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string", hint: "约 60 字符以内，带上品牌名。" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text", hint: "约 155 字符以内。" }
 
   # ---------------------------------------------------------------------------
   - name: "projects"
-    label: "Projects"
-    label_singular: "Project"
+    label: "应用案例"
+    label_singular: "案例"
     folder: "content/projects"
     create: true
     slug: "{{fields.slug}}"
@@ -126,109 +140,116 @@ collections:
       indent_style: "space"
       indent_size: 2
     fields:
-      - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only."] }
-      - { name: "name", label: "Name (EN)", widget: "string" }
-      - { name: "nameEs", label: "Nombre (ES)", widget: "string" }
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"] }
+      - { name: "name", label: "名称（英文）", widget: "string" }
+      - { name: "nameEs", label: "名称（西班牙语）", widget: "string" }
       - name: "referenceStatus"
-        label: "Reference status"
+        label: "案例性质"
         widget: "select"
         options:
-          - { label: "Verified project — client has confirmed this supply", value: "verified-project" }
-          - { label: "Representative application — illustrative, not a named supply", value: "representative-application" }
-        hint: "⚠ Only mark a project verified if the client has confirmed they supplied it. Claiming a reference you do not have is a real commercial risk."
-      - { name: "buildingType", label: "Building type (EN)", widget: "string" }
-      - { name: "buildingTypeEs", label: "Tipo de edificio (ES)", widget: "string" }
-      - { name: "summary", label: "Summary (EN)", widget: "text" }
-      - { name: "summaryEs", label: "Resumen (ES)", widget: "text" }
-      - { name: "body", label: "Body (EN)", widget: "list", field: { name: "paragraph", label: "Paragraph", widget: "text" } }
-      - { name: "bodyEs", label: "Cuerpo (ES)", widget: "list", field: { name: "paragraph", label: "Párrafo", widget: "text" } }
-      - { name: "productModels", label: "Product models used", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
+          - { label: "真实项目 —— 甲方已确认确有供货", value: "verified-project" }
+          - { label: "代表性应用 —— 示意用途，非指名项目", value: "representative-application" }
+        hint: "⚠ 只有甲方确认供过货，才可以标成「真实项目」。声称一个并不存在的业绩是实打实的商业风险。"
+      - { name: "buildingType", label: "建筑类型（英文）", widget: "string" }
+      - { name: "buildingTypeEs", label: "建筑类型（西班牙语）", widget: "string" }
+      - { name: "summary", label: "简介（英文）", widget: "text" }
+      - { name: "summaryEs", label: "简介（西班牙语）", widget: "text" }
+      - { name: "body", label: "正文（英文）", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" } }
+      - { name: "bodyEs", label: "正文（西班牙语）", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" } }
+      - { name: "productModels", label: "使用的产品型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
       - name: "heroImage"
-        label: "Main image"
+        label: "主图"
         widget: "object"
         fields:
-          - { name: "src", label: "Image", widget: "image", required: false }
-          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "3 / 2" }
-          - { name: "label", label: "Alt text", widget: "string" }
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
       - name: "gallery"
-        label: "Gallery"
+        label: "图库"
         widget: "list"
         required: false
         fields:
-          - { name: "src", label: "Image", widget: "image", required: false }
-          - { name: "ratio", label: "Aspect ratio", widget: "string", default: "3 / 2" }
-          - { name: "label", label: "Alt text", widget: "string" }
-      - { name: "seoTitle", label: "SEO title", widget: "string" }
-      - { name: "seoDescription", label: "SEO description", widget: "text" }
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text" }
 
   # ---------------------------------------------------------------------------
-  # Single-file collections. Categories and downloads are ordered lists rather than
-  # per-item pages, and reordering is a common edit, so they stay as one file each.
+  # 单文件集合。分类和下载是有顺序的列表，不是一条一页的内容，
+  # 而且调整顺序是常见操作，所以各自保持为一个文件。
   - name: "taxonomy"
-    label: "Categories & Downloads"
+    label: "分类与下载"
     files:
       - name: "categories"
-        label: "Product categories"
+        label: "产品分类"
         file: "content/categories.json"
         format: "json"
         fields:
           - name: "categories"
-            label: "Categories"
+            label: "分类"
             widget: "list"
             summary: "{{fields.name}}"
             fields:
-              - { name: "slug", label: "URL slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase, numbers and hyphens only."] }
-              - { name: "name", label: "Name (EN)", widget: "string" }
-              - { name: "nameZh", label: "名称 (中文)", widget: "string", required: false }
-              - { name: "summary", label: "Summary", widget: "text" }
+              - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"] }
+              - { name: "name", label: "名称（英文）", widget: "string" }
+              - { name: "nameZh", label: "名称（中文）", widget: "string", required: false }
+              - { name: "summary", label: "简介", widget: "text" }
               - name: "image"
-                label: "Category image"
+                label: "分类图片"
                 widget: "object"
                 fields:
-                  - { name: "src", label: "Image", widget: "image", required: false }
-                  - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
-                  - { name: "label", label: "Alt text", widget: "string" }
+                  - { name: "src", label: "图片", widget: "image", required: false }
+                  - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+                  - { name: "label", label: "替代文字 (alt)", widget: "string" }
               - name: "children"
-                label: "Sub-categories"
+                label: "子分类"
                 widget: "list"
                 required: false
                 summary: "{{fields.name}}"
-                hint: "Filters on the category page. They are NOT part of the URL, so renaming one is safe."
+                hint: "只是分类页上的筛选项，不构成网址的一部分，所以改名是安全的。"
                 fields:
-                  - { name: "slug", label: "URL slug", widget: "string" }
-                  - { name: "name", label: "Name (EN)", widget: "string" }
-                  - { name: "nameZh", label: "名称 (中文)", widget: "string", required: false }
-                  - { name: "summary", label: "Summary", widget: "text" }
+                  - { name: "slug", label: "网址标识 (slug)", widget: "string" }
+                  - { name: "name", label: "名称（英文）", widget: "string" }
+                  - { name: "nameZh", label: "名称（中文）", widget: "string", required: false }
+                  - { name: "summary", label: "简介", widget: "text" }
                   - name: "image"
-                    label: "Image"
+                    label: "图片"
                     widget: "object"
                     fields:
-                      - { name: "src", label: "Image", widget: "image", required: false }
-                      - { name: "ratio", label: "Aspect ratio", widget: "string", default: "1 / 1" }
-                      - { name: "label", label: "Alt text", widget: "string" }
+                      - { name: "src", label: "图片", widget: "image", required: false }
+                      - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+                      - { name: "label", label: "替代文字 (alt)", widget: "string" }
 
       - name: "downloads"
-        label: "Download centre"
+        label: "下载中心"
         file: "content/downloads.json"
         format: "json"
         media_folder: "/public/downloads"
         public_folder: "/downloads"
         fields:
           - name: "downloads"
-            label: "Files"
+            label: "文件"
             widget: "list"
             summary: "{{fields.title}}"
             fields:
-              - { name: "id", label: "Id", widget: "string", hint: "Referenced by a product's attachment ids." }
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: "titleZh", label: "标题 (中文)", widget: "string", required: false }
+              - { name: "id", label: "文件 id", widget: "string", hint: "产品里的「附件 id」引用的就是这个。" }
+              - { name: "title", label: "标题", widget: "string" }
+              - { name: "titleZh", label: "标题（中文）", widget: "string", required: false }
               - name: "kind"
-                label: "Kind"
+                label: "类型"
                 widget: "select"
-                options: ["catalogue", "datasheet", "certificate", "cad", "bim", "installation", "warranty"]
-              - { name: "format", label: "File format", widget: "string", hint: "pdf, dwg, rfa, zip" }
-              - { name: "sizeBytes", label: "Size in bytes", widget: "number", value_type: "int" }
-              - { name: "url", label: "File", widget: "file" }
-              - { name: "language", label: "Language", widget: "string", default: "en" }
-              - { name: "relatedModels", label: "Related models", widget: "list", required: false, field: { name: "model", label: "Model", widget: "string" } }
-              - { name: "updatedAt", label: "Last updated", widget: "date", format: "YYYY-MM-DD" }
+                options:
+                  - { label: "产品目录", value: "catalogue" }
+                  - { label: "技术参数表", value: "datasheet" }
+                  - { label: "认证证书", value: "certificate" }
+                  - { label: "CAD 图纸", value: "cad" }
+                  - { label: "BIM 模型", value: "bim" }
+                  - { label: "安装说明", value: "installation" }
+                  - { label: "质保文件", value: "warranty" }
+              - { name: "format", label: "文件格式", widget: "string", hint: "pdf、dwg、rfa、zip" }
+              - { name: "sizeBytes", label: "文件大小（字节）", widget: "number", value_type: "int" }
+              - { name: "url", label: "文件", widget: "file" }
+              - { name: "language", label: "语言", widget: "string", default: "en" }
+              - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+              - { name: "updatedAt", label: "最后更新日期", widget: "date", format: "YYYY-MM-DD" }
