@@ -4,7 +4,6 @@ import Image from "next/image";
 import type { FocusEvent, PointerEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLink } from "@/components/site/ArrowLink";
-import { ArrowRightIcon } from "@/components/site/icons";
 import { cn } from "@/lib/utils";
 import { getNextSlideIndex, shouldAutoplay } from "@/lib/carousel";
 import type { HeroCarouselContent } from "@/types/fsb-modules";
@@ -106,45 +105,12 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
           </div>
         ))}
 
-        {slideCount > 1 ? (
-          <div className="absolute bottom-0 right-0 z-[2] flex h-48 items-center border-l border-t border-line bg-surface/95">
-            <button
-              aria-label="Previous slide"
-              className="flex h-48 w-48 items-center justify-center border-r border-line text-ink transition-colors duration-[var(--motion-fast)] hover:bg-ink hover:text-surface"
-              onClick={previous}
-              type="button"
-            >
-              <ArrowRightIcon className="h-16 w-16 rotate-180" />
-            </button>
-            <div className="flex h-48 items-center gap-10 px-16" role="tablist" aria-label="Select slide">
-              {content.slides.map((slide, index) => (
-                <button
-                  aria-label={`Show slide ${index + 1}: ${slide.title}`}
-                  aria-selected={index === activeIndex}
-                  aria-current={index === activeIndex}
-                  // .hero-dot widens the active dot instead of only recolouring it,
-                  // so the state change is legible without adding a second colour.
-                  className={cn(
-                    "hero-dot h-8 w-8 border border-ink",
-                    index === activeIndex ? "bg-brand" : "bg-surface",
-                  )}
-                  key={slide.title}
-                  onClick={() => setActiveIndex(index)}
-                  role="tab"
-                  type="button"
-                />
-              ))}
-            </div>
-            <button
-              aria-label="Next slide"
-              className="flex h-48 w-48 items-center justify-center border-l border-line text-ink transition-colors duration-[var(--motion-fast)] hover:bg-ink hover:text-surface"
-              onClick={next}
-              type="button"
-            >
-              <ArrowRightIcon className="h-16 w-16" />
-            </button>
-          </div>
-        ) : null}
+        {/*
+          Manual controls removed on request: the strip of arrows and dots read as
+          clutter against a full-bleed image. The carousel now advances on its own.
+          Autoplay still pauses on hover, on focus, when the tab is hidden, and under
+          prefers-reduced-motion — so it is not a trap for anyone reading the caption.
+        */}
       </div>
 
       <div aria-live="polite" className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24">
