@@ -22,16 +22,14 @@ backend:
   repo: SPOOOONER-FLASH/ai-website-cloner-template-master
   branch: main
 
-  # ⬇⬇⬇ 同事远程登录必填 —— 步骤见 docs/CMS_REMOTE_SETUP.md ⬇⬇⬇
-  # GitHub 的 OAuth 不允许纯前端页面自己换取 token，中间必须有一个极小的中转服务
-  # （只做一次 code → token 的交换，不存任何数据）。文档里用的是 Cloudflare Worker：
-  # 免费、无需服务器、部署一次以后不用再管。
-  # 拿到 Worker 域名后，去掉下面这一行的 # 并换成自己的地址：
+  # OAuth 中转服务（Cloudflare Worker，sveltia-cms-auth），2026-08-19 部署。
+  # GitHub 的 OAuth 不允许纯前端页面自己换取 token，中间必须有这么一个服务；
+  # 它只做一次 code → token 的交换，不存任何数据。
+  # 换域名时要同步改 GitHub OAuth App 的 Authorization callback URL，
+  # 两边必须一致，否则登录会失败。步骤见 docs/CMS_REMOTE_SETUP.md。
+  base_url: https://canton-cms-auth.spoonerlau.workers.dev
   #
-  # base_url: https://canton-cms-auth.你的账号.workers.dev
-  #
-  # 本地 `npm run cms` 不需要这一行（走 local_backend）。
-  # 没填时线上 /admin/ 点“Login with GitHub”会失败 —— 这是预期行为，不是 bug。
+  # 本地 `npm run cms` 不走这里（走上面的 local_backend），不需要联网也不需要登录。
 
   # 提交信息，让 CMS 的提交在 `git log` 里和手写的提交读起来一致。
   commit_messages:

@@ -54,7 +54,7 @@ GitHub 不允许纯前端页面直接换取访问令牌，中间必须有一个�
    |---|---|
    | Application name | `Canton Hyland CMS` |
    | Homepage URL | `https://spoonercantonlock.stahlock.com` |
-   | Authorization callback URL | `https://canton-cms-auth.你的账号.workers.dev/callback` ← 第三步会拿到真实域名，可以先随便填，之后回来改 |
+   | Authorization callback URL | `https://canton-cms-auth.spoonerlau.workers.dev/callback` ← 必须带 `/callback` 结尾 |
 
 3. 建好后点 **Generate a new client secret**
 4. 把 **Client ID** 和 **Client Secret** 抄下来。
@@ -82,23 +82,22 @@ GitHub 不允许纯前端页面直接换取访问令牌，中间必须有一个�
 
    `ALLOWED_DOMAINS` 很重要：它限定只有我们自己的站点能用这个中转服务，
    别人拿到域名也用不了。
-5. 复制 Worker 的完整域名，形如 `https://canton-cms-auth.你的账号.workers.dev`
+5. 复制 Worker 的完整域名，形如 `https://canton-cms-auth.spoonerlau.workers.dev`
 6. 回到第二步的 OAuth App，把 **Authorization callback URL** 改成
    `<Worker 域名>/callback`，保存
 
 ---
 
-## 第四步：把域名填进配置
+## 第四步：把域名填进配置 ✅（已完成 2026-08-19）
 
-打开 `public/admin/config.yml`，找到 `backend:` 段里被注释掉的这一行，
-去掉 `#` 并换成第三步拿到的真实域名：
+已经填好了，现在 `public/admin/config.yml` 里是：
 
 ```yaml
 backend:
   name: github
   repo: SPOOOONER-FLASH/ai-website-cloner-template-master
   branch: main
-  base_url: https://canton-cms-auth.你的账号.workers.dev
+  base_url: https://canton-cms-auth.spoonerlau.workers.dev
 ```
 
 然后构建并推送：
