@@ -200,7 +200,15 @@ export interface PromoDialogConfig {
   /** Call to action. `href` may be internal or a file under /downloads. */
   ctaLabel: string;
   ctaHref: string;
-  image: ImageRef;
+  /**
+   * What fills the left panel.
+   *
+   * "logo" renders the brand lockup on black — no asset to keep in sync, and it stays
+   * sharp at any density. "image" uses `image` below, for a campaign that needs to show
+   * a specific product.
+   */
+  visual: "logo" | "image";
+  image?: ImageRef;
 }
 
 /* -------------------------------------------------------------------------

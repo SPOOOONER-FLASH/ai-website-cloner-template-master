@@ -74,6 +74,53 @@ export function CloseIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 /**
+ * The HYDE mark: two rounded uprights with a crossbar set below centre.
+ *
+ * ⚠ REDRAWN FROM A REFERENCE IMAGE, NOT THE OFFICIAL ARTWORK. The geometry was measured
+ * off a raster supplied by the client, so stroke weight and the crossbar height are
+ * close but not authoritative. Replace this with the brand's own vector before launch —
+ * a logo that is nearly right is a brand problem, not a rounding error.
+ *
+ * Drawn as strokes rather than filled paths so weight scales with the box, and rendered
+ * in `currentColor` so one component serves both the black-on-white and white-on-black
+ * lockups the client uses.
+ */
+export function HydeMark(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 88 100" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="13"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+      >
+        <line x1="10.5" y1="10.5" x2="10.5" y2="89.5" />
+        <line x1="77.5" y1="10.5" x2="77.5" y2="89.5" />
+        <line x1="10.5" y1="58" x2="77.5" y2="58" />
+      </g>
+    </svg>
+  );
+}
+
+/**
+ * The full HYDE lockup — mark plus wordmark.
+ *
+ * The wordmark is live text with wide tracking rather than traced outlines: it stays
+ * selectable and searchable, it restyles with one token, and tracing letterforms off a
+ * raster would bake in whatever the screenshot's compression did to the curves.
+ */
+export function HydeLockup({ className }: { className?: string }) {
+  return (
+    <span className={cn("flex items-center gap-16 whitespace-nowrap", className)}>
+      <HydeMark className="h-32 w-auto flex-none" aria-hidden="true" />
+      <span className="text-[2.2rem] font-light uppercase leading-none tracking-[0.28em]">
+        Hyde
+      </span>
+    </span>
+  );
+}
+
+/**
  * Client-owned Hyland mark paired with a live Archivo wordmark. The long legacy raster
  * company name is deliberately not used: this keeps the header sharp and restrained.
  */

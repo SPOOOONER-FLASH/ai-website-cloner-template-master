@@ -1,24 +1,20 @@
 {
   "enabled": true,
   "name": "2026 产品目录下载",
-  "version": 1,
+  "version": 2,
   "startAt": "",
   "endAt": "",
-  "delaySeconds": 20,
+  "delaySeconds": 10,
   "cooldownHours": 72,
   "surfaces": [
     "home",
     "products",
     "product-detail"
   ],
-  "title": "Canton Hyland",
+  "title": "Hyde",
   "titleLight": "2026 catalogue",
   "body": "Panic exit devices, mortise locks, lever handles and architectural hardware — the full range, with dimensions and finishes, in one PDF.",
   "ctaLabel": "Download the catalogue",
   "ctaHref": "/downloads/canton-hyland-product-catalogue-2026.pdf",
-  "image": {
-    "src": "/images/products/305-fire-door-panic-exit-device.webp",
-    "ratio": "1 / 1",
-    "label": "Hyland 305 fire door panic exit device with push bar and mounting hardware"
-  }
+  "visual": "logo"
 }

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { HydeLockup } from "./icons";
 
 /**
  * The site-wide promotional dialog.
@@ -128,7 +129,7 @@ export function PromoDialog() {
 
   if (!open) return null;
 
-  const { title, titleLight, body, ctaLabel, ctaHref, image } = promoDialog;
+  const { title, titleLight, body, ctaLabel, ctaHref, image, visual } = promoDialog;
   const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
 
   return (
@@ -173,7 +174,18 @@ export function PromoDialog() {
             </svg>
           </button>
 
-          <MediaPlaceholder {...image} className="h-full w-full" />
+          {visual === "logo" || !image ? (
+            /*
+              Black panel, white mark. The brand lockup is drawn, not photographed, so it
+              needs no asset, stays sharp at any density, and gives the dialog the one
+              solid black field the identity is built around.
+            */
+            <div className="flex min-h-[180px] items-center justify-center bg-ink p-24 text-surface">
+              <HydeLockup />
+            </div>
+          ) : (
+            <MediaPlaceholder {...image} className="h-full w-full" />
+          )}
 
           <div className="flex flex-col justify-between">
             <div className="px-24 pb-24 pt-24 xs:pr-32">
@@ -192,16 +204,19 @@ export function PromoDialog() {
             </div>
 
             {/*
-              The call to action is a tinted band with a text link inside it, not a filled
-              button — the reference does the same, and colour rule 3 reserves a solid
-              brand fill for the primary action on a page. Tint is --color-brand-tint, our
-              own light fill; the reference's yellow belongs to their palette, not ours.
+              A full-width band with a text link inside it rather than a filled button —
+              the reference does the same, and the site's colour rules reserve a solid
+              fill for a page's own primary action.
+
+              Black band, white link. The dialog is deliberately monochrome: the brand
+              lockup is black-and-white, and dropping red in beside it would introduce a
+              second accent that appears nowhere else in the identity.
             */}
-            <div className="bg-brand-tint px-24 py-16">
+            <div className="bg-ink px-24 py-16">
               {isFile ? (
                 <a
                   href={ctaHref}
-                  className="text-c1 text-brand underline-offset-4 transition-colors duration-200 hover:text-brand-hover hover:underline"
+                  className="text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80"
                   onClick={close}
                 >
                   {ctaLabel}
@@ -209,7 +224,7 @@ export function PromoDialog() {
               ) : (
                 <Link
                   href={ctaHref}
-                  className="text-c1 text-brand underline-offset-4 transition-colors duration-200 hover:text-brand-hover hover:underline"
+                  className="text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80"
                   onClick={close}
                 >
                   {ctaLabel}
