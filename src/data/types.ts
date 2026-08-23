@@ -155,6 +155,62 @@ export interface Project {
 }
 
 /* -------------------------------------------------------------------------
+ * News
+ * ---------------------------------------------------------------------- */
+
+/**
+ * Two kinds of article, kept in one collection.
+ *
+ * FSB splits these across /press and /magazine, and the distinction is real: a press
+ * release is a dated, factual company announcement that a journalist may quote, while
+ * an insight piece is undated marketing writing. Mixing them costs credibility in both
+ * directions — a trade editor scrolling past "5 Reasons to Choose Stainless" stops
+ * treating the feed as a newsroom.
+ *
+ * They share one collection because the record shape is identical and the site has far
+ * too little content to justify two. `kind` drives the filter and the listing label;
+ * splitting into separate routes later is a rename, not a migration.
+ */
+export type NewsKind = "press-release" | "insight";
+
+export interface NewsArticle {
+  /** URL segment, unique site-wide. e.g. "en-1125-certification-for-panic-range". */
+  slug: string;
+  title: string;
+  titleEs?: string;
+  titleZh?: string;
+  kind: NewsKind;
+  /**
+   * ISO 8601 date, "YYYY-MM-DD". Drives ordering and the dateline.
+   *
+   * On a static export "scheduled publishing" is not a thing the site can do by itself:
+   * a future date only takes effect at the next build. `getPublishedNews()` filters
+   * future dates out so a post-dated draft cannot leak, but someone still has to
+   * rebuild on the day. Say so to whoever schedules one.
+   */
+  publishedAt: string;
+  /** Kept out of the build entirely. Use for work in progress. */
+  draft?: boolean;
+  /** One or two sentences for the listing card and the meta description fallback. */
+  summary: string;
+  summaryEs?: string;
+  /** Body copy, one array entry per paragraph — same convention as Project. */
+  body: string[];
+  bodyEs?: string[];
+  heroImage: ImageRef;
+  gallery?: ImageRef[];
+  /** Model numbers this article concerns, linking it back to the catalogue. */
+  relatedModels?: string[];
+  /**
+   * Download ids for a press kit — high-resolution imagery, the full release as PDF.
+   * Journalists expect to leave with assets, not with a right-click.
+   */
+  attachmentIds?: string[];
+  seoTitle: string;
+  seoDescription: string;
+}
+
+/* -------------------------------------------------------------------------
  * Download
  * ---------------------------------------------------------------------- */
 

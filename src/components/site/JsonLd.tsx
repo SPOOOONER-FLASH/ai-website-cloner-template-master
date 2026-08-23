@@ -1,6 +1,6 @@
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
 import { stats } from "@/data/company";
-import type { Product } from "@/data/types";
+import type { NewsArticle, Product } from "@/data/types";
 
 /**
  * Schema.org structured data.
@@ -97,6 +97,43 @@ export function productSchema(product: Product, url: string) {
         }
       : {}),
   };
+}
+
+/**
+ * NewsArticle schema for a press release.
+ *
+ * `author` and `publisher` are both the company: these are corporate announcements, not
+ * bylined journalism, and inventing a writer to fill the field would be a fabricated
+ * attribution. `dateModified` is left equal to `datePublished` because the content model
+ * has no revision timestamp — claiming a later edit date we do not track would be a
+ * freshness signal we cannot back up.
+ */
+export function newsArticleSchema(article: NewsArticle, url: string) {
+  const images = [article.heroImage, ...(article.gallery ?? [])]
+    .map((image) => image.src)
+    .filter((src): src is string => Boolean(src))
+    .map((src) => absoluteUrl(src));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.summary,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    ...(images.length ? { image: images } : {}),
+    author: { "@id": `${siteUrl}/#organization` },
+    publisher: { "@id": `${siteUrl}/#organization` },
+    inLanguage: "en",
+  };
+}
+
+export function NewsArticleJsonLd({ article }: { article: NewsArticle }) {
+  return (
+    <JsonLd data={newsArticleSchema(article, absoluteUrl(`/news/${article.slug}/`))} />
+  );
 }
 
 /** Breadcrumb trail. `items` is ordered root → current, each with an absolute URL. */

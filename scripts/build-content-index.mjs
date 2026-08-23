@@ -24,6 +24,11 @@ const BANNER = `// GENERATED FILE — do not edit by hand.
 
 /** Build one barrel for a folder collection. */
 function barrel({ dir, type, typeImport, exportName, outFile }) {
+  // A collection can legitimately be empty — `news` ships as an empty newsroom rather
+  // than with invented press releases. mkdir keeps a fresh clone building before the
+  // first record exists, since git does not track empty directories.
+  mkdirSync(dir, { recursive: true });
+
   const files = readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .sort();
@@ -61,6 +66,14 @@ const projectCount = barrel({
   outFile: "projects.ts",
 });
 
+const newsCount = barrel({
+  dir: "content/news",
+  type: "NewsArticle",
+  typeImport: `import type { NewsArticle } from "../types";`,
+  exportName: "news",
+  outFile: "news.ts",
+});
+
 // Sanity check: every product slug must match its filename, otherwise the URL and the
 // file drift apart and the CMS starts editing the wrong record.
 const mismatched = readdirSync("content/products")
@@ -76,4 +89,6 @@ if (mismatched.length) {
   process.exit(1);
 }
 
-console.log(`content index: ${productCount} products, ${projectCount} projects`);
+console.log(
+  `content index: ${productCount} products, ${projectCount} projects, ${newsCount} news`,
+);

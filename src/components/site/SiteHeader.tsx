@@ -12,15 +12,22 @@ const NAV_LINKS = {
     { label: "Products", href: "/products" },
     { label: "Product Finder", href: "/product-finder" },
     { label: "Projects", href: "/projects" },
+    { label: "News", href: "/news" },
     { label: "Company", href: "/company" },
-    { label: "Service + Downloads", href: "/downloads" },
+    // Shortened from "Service + Downloads" when News was added: six labels at the old
+    // lengths needed 728px in a 653px column. This one was the longest at 175px and the
+    // least informative — the route is /downloads and the page is the download centre.
+    { label: "Downloads", href: "/downloads" },
   ],
   es: [
     { label: "Productos", href: "/products" },
     { label: "Buscador", href: "/product-finder" },
     { label: "Proyectos", href: "/es/projects" },
+    // English-only for now: the newsroom has no Spanish mirror, so this points at the
+    // English page rather than a /es URL that would 404.
+    { label: "Noticias", href: "/news" },
     { label: "Empresa", href: "/es/company" },
-    { label: "Servicio + Descargas", href: "/downloads" },
+    { label: "Descargas", href: "/downloads" },
   ],
 } as const;
 
@@ -90,11 +97,14 @@ export function SiteHeader() {
                 single-line labels then sat top-aligned in a 48px box while the wrapped
                 ones filled it, and the row read as misaligned.
 
-                Gaps are sized against that 523px: 4 × 32px leaves 651px at xl, ~29px of
-                slack. nowrap also makes a future label edit fail visibly rather than
-                silently re-wrapping one item back into the same misalignment.
+                Six labels now measure 486px unwrapped. At the xl edge the column is
+                649px, so 5 × 24px gaps leave ~44px of slack; the 32px gaps this used to
+                have left only 4px there, which is inside the noise of font rendering.
+                nowrap also makes a future label edit fail visibly — as it did when News
+                was added — rather than silently re-wrapping one item back into the same
+                misalignment.
               */}
-              <nav className="flex gap-24 whitespace-nowrap xl:gap-32">
+              <nav className="flex gap-24 whitespace-nowrap">
                 {NAV_LINKS[locale].map((link) => {
                   const current = isCurrent(link.href);
                   return (

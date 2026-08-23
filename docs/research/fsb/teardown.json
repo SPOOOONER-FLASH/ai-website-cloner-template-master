@@ -1,0 +1,636 @@
+[
+  {
+    "dimension": "FSB 官网图片素材盘点（图片类型、尺寸规格、交付方式，以及给 Canton Hyland 的拍摄下单清单）",
+    "findings": [
+      {
+        "topic": "抓取范围与素材总量",
+        "detail": "实抓 8 个页面：/en、/en/products、/en/projects、/en/about-us、/en/products/collections、/en/products/collections/fsb-1289、/en/products/aluminum、/en/projects/dinesen-apartment-new-york-city-david-thulstrup-fsb-1267。共解析出 81 个 <img>（前四页）+ 46 个 <source>，去重后 138 个唯一图片资源。/en/products/collections 单页就有 87 个 <img>。",
+        "evidence": "curl 抓取后 node 正则统计；home=13 img/21 source，products=29/19，projects=27/0，about=12/6，collections=87 img",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "全站零 CSS 背景图 —— 所有图片都是 <img>/<picture>",
+        "detail": "下载的 CSS bundle 里 url() 只出现 8 次，全部是 woff/woff2 字体（trade-gothic-next-lt-pro、traffic-kraeftig/mager）。background-image 只有一条 `background-image:none`。HTML 内联 style 里也搜不到任何 url()。这意味着 FSB 的图片 100% 走语义化 <picture>，全部可被 srcset/lazy/alt 管理。",
+        "evidence": "grep 'background-image:' *.css → 仅 `background-image:none`；grep -oE 'url\\([^)]*\\)' *.css → 仅 8 条 /build/assets/*.woff2；HTML 内 grep 'style=\"[^\"]*url(' 无匹配",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "图床与交付格式：Cloudinary f_auto → 实际发 WebP",
+        "detail": "源文件全是 png(80)/jpg(49)/jpeg(9)，无一个 avif/webp 源文件。走 res.cloudinary.com/franzschneiderbrakel/image/upload/，变换串固定为 `c_fill,dpr_auto,g_auto,w_<N>,f_auto/q_auto/f_auto/`（f_auto 出现两次，重复但无害）。实测请求带 Accept: image/avif,image/webp 时返回 Content-Type: image/webp（1440w 的公司大楼图 63,714 字节），未见 avif。Cache-Control: private, no-transform, max-age=2592000（30 天）。视频走另一家：fsb-website.fra1.digitaloceanspaces.com。",
+        "evidence": "curl -sI 带 Accept 头请求 upload/c_fill,dpr_auto,g_auto,w_1440,f_auto/q_auto/f_auto/website/company/unternnehmen_gebaeude_green.png → Content-Type: image/webp, Content-Length: 63714",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "断点体系：744 / 820 / 1032 / 1376 / 1512",
+        "detail": "所有 <source media> 只用这 5 个 min-width 值。首页/产品页用 744/820/1032/1376 四档，about-us 的宽幅 hero 多加一档 1512。744 以下为默认（mobile）分支。这套断点和常见 Tailwind（640/768/1024/1280/1536）不同，是按 iPad mini(744)/iPad(820)/笔电(1032)/桌面(1376)/大屏(1512) 的真实设备宽度定的。",
+        "evidence": "grep media= 全部取值：(min-width: 744px)、(min-width: 820px)、(min-width: 1032px)、(min-width: 1376px)、(min-width: 1512px)",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "【最关键】真正的 art direction：移动端换的是另一个物理文件，不是裁剪",
+        "detail": "首页 hero：≥1032px 用 innovation/dieter-rams/fsb-stage-desktop-center-haw-lin-services.png，2880×1391（比例 2.070，近 2:1 超宽）；≤820px 直接换成另一个文件 online-shop/dieter-rams-hero-mobile.png，1640×1640 / 1560×1560 / 720×720（1:1 正方形）。第二例：≥1032px 用 produktfamilien_uebersicht_teaser_start_stage.png 2880×1481（1.945），≤820px 换成 produktfamilien_uebersicht_teaser.png 3:2。即桌面超宽版和移动方版是分开出图/分开构图的两张片子。",
+        "evidence": "home.html <picture> 0：(min-width:1376px) srcset=…fsb-stage-desktop-center-haw-lin-services.png 2880w width=2880 height=1391；(min-width:820px) srcset=…online-shop/dieter-rams-hero-mobile.png 1640w width=1640 height=1640",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "产品目录卡 = 600×857 竖版 PNG，比例严格 0.700（7:10）",
+        "detail": "/en/products/collections 上 78 个卡片实例全部 width=600 height=857（ar=0.700），另有 7 个 758×1083（同为 0.700）。去重后 32 个唯一型号。路径模板固定：products/<型号>/teaser-image/。这是 FSB 产品网格的唯一规格 —— 竖版 7:10，不是常见的 1:1 或 4:3。",
+        "evidence": "collections.html 尺寸直方图：600x857 ×78、758x1083 ×7、600x600 ×2；样本 products/1003/teaser-image/fsb-1003-tuerdruecker-johannes-potente-edelstahl-naturfarbig-fein-gebuerstet-matt.png",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "文件命名是结构化元数据（可直接照抄的规范）",
+        "detail": "产品：fsb-<型号>-tuerdruecker-<设计师>-<材质>-<表面处理>.png，例 fsb-1004-tuerdruecker-david-chipperfield-aluminium-schwarz-c35.png。项目：<项目名>-<建筑师>-fsb-<型号>-<摄影师>-<序号>.jpg，例 piperi-house-kythnos-sigurd-larsen-fsb-1267-ana-santl-1.jpg、neue-nationalgalerie-david-chipperfield-mies-van-der-rohe-simon-menges-fsb-1.jpg。摄影师署名进文件名（sebastian-boettcher、simon-menges、philipp-jester、henrik-schipper、marcus-bredt、jorg-hempel）。",
+        "evidence": "agg.mjs 输出的 138 个唯一资源路径",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "方形瓦片有三档固定尺寸：896 / 1360 / 1548",
+        "detail": "896×896（1:1）用于 /products 的品类与主题瓦片，共 19 个；1360×1360 用于首页编辑型方图（online-shop teaser、product-finder teaser、项目方图、联系人瓦片），约 10 个；1548×1548 用于 /products 顶部三个重点方图（bauhaus-museum 特写、jung-x-fsb、fsb-afl-hero-square），共 3 个。srcset 档位：896 档 = 896/854/758/686/632/584/496/342/292/171w；1360 档 = 1360/1298/964/758/686/584/482/342/292/171w。",
+        "evidence": "products.html 中 19 个 width=896 height=896；home.html 中 6 个 1360×1360；products.html 中 3 个 1548×1548",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "项目网格是 masonry，保留原生比例不裁剪",
+        "detail": "/en/projects 25 张卡片宽度全部锁死 448px，但高度各不相同：252(×5)、298(×2)、299(×9)、280、315、336(×2)、348、351(×2)、358。对应比例 1.778(16:9)、1.503、1.498(3:2)、1.600、1.422、1.333(4:3)、1.287、1.276、1.251(5:4)。即摄影师交什么比例就用什么比例，只有两档 srcset：1344w 和 896w（=448×3 与 448×2）。",
+        "evidence": "projects.html 全部 <img> width=448，height 值分布如上；srcset 仅含 1344w|896w",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "项目详情页的图片编排模板（4 种槽位）",
+        "detail": "以 dinesen-apartment 为例：hero 1600×1067（3:2）；半栏横图 664×443（3:2）；竖图 664×1034 / 664×1079 / 664×996（比例 0.642 / 0.615 / 0.667）；全宽横图 1440×960（3:2）。单个项目共 6 张实景图，其中至少 1 张是门把手特写（alt: 'FSB 1267 door handle in the center of the picture without a key rose, in aluminum, on a honey-brown door.'）。页尾挂 600×857 的产品卡做交叉引流，再加 1200×900（4:3）联系人肖像。",
+        "evidence": "proj1.html：[2]1600x1067 [3]664x443 [4]664x1034 [5]1440x960 [6]664x1079 [7]664x996 [8]600x857 [11]1200x900 dev/company/portrait_alessa_fsb-jung.jpg",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "产品详情页（PDP）的图片套装：hero + 两张正交视图 + 家族全景",
+        "detail": "fsb-1289 页面：hero 1920×1080（16:9，loading=eager，全站唯一一个显式 eager）；两张正交视图各 664×801（ar=0.829），命名为 -top-view 和 -side-view，尺寸完全一致说明是同一套模板拍/渲的；家族全景 1440×1073（1.342），命名 -product-collection-overview-continuity；页尾 664×940 的 PDF 目录封面缩略图（940/664=1.416≈√2，即 A4 比例）。",
+        "evidence": "pdp.html：[2]1920x1080 …-aluminum-pure-hero.png loading=eager；[3][4]664x801 …-top-view.png / …-side-view.png；[5]1440x1073 …-product-collection-overview-continuity.png；[8]664x940 dev/downloads/fsb-product-collection-1289.jpg",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "表面处理色板：同一个型号拍遍所有饰面，664×664 正方形",
+        "detail": "/en/products/aluminum 页用 FSB 1267 这一个型号，拍了 9 个饰面，全部 664×664（1:1，其中一张 1440×1440）：1267-0013-pure、1267-0105-naturfarbig-glanzend、1267-0810-schwarz-c35、1267-0510-mittelbronzefarbig-c33、1267-0710-dunkelbronzefarbig-c34、1267-8120-schwarz-ahnlich-ral-9005-matt、1267-8220-weiss-ahnlich-ral-9016-glanzend、1267-8876-leichtbronzefarbig-ahnlich-c31、1267-8877-hellbronzefarbig-ahnlich-c32。文件名带官方色号（C31–C35、RAL 9005/9016）。全部无 loading=lazy（首屏同步加载）。",
+        "evidence": "material.html [5]–[13]，路径 products/oberflaeche/aluminium/1267-*.jpg",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "全宽 hero 的两种规格：3:2（1440×960）和 80:43（1600×860）",
+        "detail": "页面通栏 hero 主流是 1440×960（3:2），母版 2880×1920；srcset 三段式 = 移动 716/682/358w、744 档 1566/1402/783/701w、820+ 档 2880/1640/1440/1032/820w。about-us 顶部用更宽的 1600×860（ar=1.860=80:43），母版 3200×1720，多一档 1512px 断点，移动端给到 1280w。另有 16:9 变体 1920×1080 / 2880×1620（fsb-1138-seitenansicht-16-9，文件名直接写了 16-9）。",
+        "evidence": "home.html picture 3：2880x1920/1566x1044/716x477 company/unternnehmen_gebaeude_green.png；about.html picture 0：3200x1720/2880x1548/2752x1479/2064x1109/1640x882/1280x688 company/unternnehmen_main_klinken.png",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "内容型 hero（非通栏）用 1940/1732/1286 三段宽度",
+        "detail": "带左右留白的 hero（fsb-designed-by-hero-image、les-corbusier 的 ozmoze 图）用四档断点：1376+ = 1940/1852/970/926w，1032+ = 1732/1296/866/648w，820+ = 1286/1022/643/511w，744+ = 1566/1402/783/701w，移动 = 716/682/358w。比例统一锁在 1.500（3:2）。",
+        "evidence": "home.html picture 2 / products.html picture 2、picture 4 的 source srcset 宽度列表",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "关于页 = 竖版档案叙事图，宽度统一 800",
+        "detail": "/en/about-us 的历史叙事段落全部用 width=800 的竖图，高度各异：brakel.png 800×986（0.811，小镇航拍）、philippjester_2024_fsb_reproplakate_johannespotente_front 800×1422（0.563，复刻海报翻拍）、fsb-geschichte-03.jpg 800×1205（0.664，历史档案照）、fsb-logo-im-wandel-der-zeit.png 800×1029（0.777，logo 演变图）。srcset 只有 1200w/800w/400w 三档。横图则是 1400×933（3:2）：otl-aicher 肖像、一张 uuid 命名的图；1400×874 是 dev/company/fsb-workshop.jpg（车间）。管理层合影 800×571（1.401）。",
+        "evidence": "about.html [4]800x986 [5]800x1422 [6]800x1205 [9]800x1029 [7]1400x933 [8]1400x874 [10]1400x933 [11]800x571 people/fsb-geschaeftsfuehrung-tobias-gockeln-juergen-hess-foto-severin-wohlleben.jpg",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "工厂制造是视频不是图，4 段 720p + 7:10 竖版封面帧",
+        "detail": "/en/products/collections 挂了 4 段视频：fsb_manufacture_1~4-(720p).mp4，托管在 DigitalOcean Spaces 而非 Cloudinary，用 data-src 懒加载 + playsinline + data-pause-on-exit=\"true\"（滚出视口自动暂停）。封面帧 758×1083（ar=0.700，和产品卡完全同比例），命名带 _frame 后缀。另有档案素材 fsb-archiv-ubergriff-1~4.png 同规格。",
+        "evidence": "collections.html: data-src=\"https://fsb-website.fra1.digitaloceanspaces.com/website/products/produktfamilienseite-videos/fsb_manufacture_1-(720p).mp4\" data-pause-on-exit=\"true\"；poster 资源 …-1_frame.png 758×1083",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "创新技术图是剖面渲染图，不是 CAD 线稿",
+        "detail": "AFL/ASL/AGL 三项技术各一张方形图（896×896 或 1548×1548），alt 明确写 'Cross-section of the innovation FSB AFL®' / 'FSB ASL®' / 'FSB AGL®'。全站 HTML 内搜不到任何 .dwg/.dxf/technical drawing/Zeichnung/尺寸图 关键词 —— 线稿类内容不在网页上，只在下载区 PDF 里。",
+        "evidence": "products.html [23] innovation/afl/fsb-afl-hero-square.jpeg alt='Cross-section of the innovation FSB AFL®'、[24] fsb-asl-main-teaser.png、[26] agl_teaser.png；grep -i 'zeichnung|dwg|dxf|technical.drawing' 4 个页面 0 匹配",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "证书/文档缩略图按 A4 比例自动出图",
+        "detail": "664×1133（0.586）、664×938（0.708）、664×940（0.706）三种。后两者 ≈ 1:√2 即 A4。路径 documents/download-area/04_zertifikate/thumbnails-umwelt/ 和 dev/downloads/，明显是从 PDF 首页自动生成的缩略图，带 alt 描述（'Thumbnail of the FSB Declare Label for aluminum fittings…'）。",
+        "evidence": "material.html [3]664x1133 thumbn-fsb-declare-label-…jpg [4]664x938 thumbn-reduxa-aluminium.png；pdp.html [8]664x940 dev/downloads/fsb-product-collection-1289.jpg",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "懒加载与优先级策略",
+        "detail": "全站 loading 属性出现 184 次：183 个 lazy + 1 个 eager（PDP hero）。所有首屏 <picture> hero 干脆不写 loading 属性（默认 eager）。fetchpriority 全站只出现 1 次。decoding 出现 73 次。sizes 出现 427 次、srcset 405 次 —— 说明 srcset+sizes 是标配而非可选。",
+        "evidence": "grep -c 各属性：loading=184 (lazy 183/eager 1)、decoding=73、fetchpriority=1、sizes=427、srcset=405",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "alt 文案是设计资产，一半留空一半写满",
+        "detail": "首页+项目页 16 个 alt 中 8 个空、8 个填写。填写的极其具体，包含型号+饰面+材质+载体颜色，例：'Close-up of an FSB 1147 Wittgenstein Aluminum Pure door handle on a grey door at the Bauhaus Museum Weimar.'、'Side view of the FSB 1138. Visible are the robust round neck in Aluminum Pure and the index-finger groove in black anodized aluminum.'。纯装饰图（品类瓦片、项目网格）留空 alt。",
+        "evidence": "grep -oE 'alt=\"[^\"]*\"' home.html projects.html → 8 EMPTY / 8 FILLED",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "sizes 属性用精确 vw 值而非整数",
+        "detail": "典型值：sizes=\"(min-width: 1440px) 216px, (min-width: 1376px) 14.95vw, (min-width: 820px) 22.16vw, (min-width: 744px) 46.05vw, (min-width: 640px) 45.65vw, 43.89vw\"。小数点后两位的 vw 说明是构建时按栅格实际列宽算出来的，不是手写估值。hero 则用 sizes=\"(min-width: 1440px) 1440px, 100vw\"，说明内容区最大宽度锁 1440px。",
+        "evidence": "home.html img[0] sizes 属性原文；home.html picture 0 source sizes=\"(min-width: 1440px) 1440px, 100vw\"",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "图片类型分布（8 页 138 个唯一资源的归类计数）",
+        "detail": "产品去底竖卡 7:10 = 32；建筑实景/项目摄影 = 约 30（25 个项目各 1 张网格图 + 单项目详情 6 张）；品类与主题方瓦 896² = 19；编辑型方图 1360²/1548² = 13；表面饰面色板 664² = 9；企业/历史/档案 = 7；通栏 hero = 7；PDP 专用（hero+正交视图+家族图）= 4；视频封面帧 7:10 = 7；文档缩略图 A4 = 3；人物肖像 = 2（1200×900 联系人、800×571 管理层）；OG/meta 600×600 = 1。",
+        "evidence": "agg.mjs 按 Cloudinary 路径前缀分桶统计：products/<型号>/teaser-image=32、projects/*=约30、produkt-kategorien+produkt-themen=15、products/oberflaeche=10、company/+people/=8",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "FSB 的资源目录树本身就是一套素材分类法",
+        "detail": "Cloudinary 路径前缀即分类：website/products/<型号>/teaser-image/（目录卡）、website/products/oberflaeche/<材质>/（饰面色板）、website/produkt-kategorien/（品类瓦）、website/produkt-themen/（主题瓦）、website/projects/<项目名>/（案例摄影）、website/innovation/<技术名>/（技术剖面）、website/company/（企业与历史）、website/people/（人物）、website/magazine/<编号-标题>/（编辑内容）、website/documents/download-area/（文档缩略图）、website/online-shop/（商城与选型器入口图）、website/products/produktfamilienseite-videos/（视频与封面帧）。",
+        "evidence": "138 个唯一资源路径的一级/二级目录聚合结果",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "未确认项",
+        "detail": "(1) 未确认 FSB 是否对不支持 WebP 的 UA 回落 JPEG —— 只测了带 webp/avif 的 Accept 头。(2) 未确认全站产品型号总数，仅确认 /products/collections 一页 32 个唯一型号，全站实际更多。(3) 未确认 664×801 正交视图是实拍还是 3D 渲染，只能从两张尺寸完全一致推断为同一模板产出。(4) 未确认 1360×1360 与 1548×1548 两档方图的选用规则（可能只是不同 CMS 组件的默认值）。(5) 未测量任何图片的实际物理文件体积，除公司大楼图 1440w=63,714 字节。",
+        "evidence": "测试边界说明；curl -sI 仅发送 Accept: image/avif,image/webp,image/*,*/*",
+        "confidence": "unconfirmed"
+      }
+    ],
+    "actionable": [
+      "【摄影下单单 1｜产品去底竖卡 · 最高优先级】比例严格 7:10 竖版，交付 600×857 与 758×1083 两档，母版不低于 2400×3428，PNG 带透明通道（或纯白 #FFFFFF 底）。每个在售型号 1 张，按主推饰面拍。Canton Hyland 首批建议按 SKU 数全覆盖（FSB 单页 32 个型号）。硬性要求：同一相机高度、同一焦距、同一柔光布光、把手在画面中的占比一致 —— 这是 FSB 产品网格看起来整齐的唯一原因。",
+      "【摄影下单单 2｜饰面色板】选定 1 个最具代表性的把手型号（FSB 用 1267），把它在每一种饰面下各拍一张，664×664 正方形 JPG，母版 2000×2000。相机、构图、白平衡、布光全部锁死不动，只换产品。有几种饰面就拍几张（FSB 铝合金 9 种）。文件名必须带官方色号，格式 <型号>-<色号>-<饰面英文名>.jpg。",
+      "【摄影下单单 3｜PDP 正交视图】每个型号固定 2 张：俯视图（top view）+ 侧视图（side view），各 664×801（比例 0.829），母版 1993×2403。两张必须完全同尺寸同底同光。可实拍也可 3D 渲染，但全系列必须统一来源。另配 1 张 16:9 产品 hero，1920×1080，母版 3840×2160。",
+      "【摄影下单单 4｜建筑实景 / 项目案例】每个案例 5–6 张，且必须包含至少 1 张门把手在真实门上的特写。规格：1 张 hero 1600×1067（3:2）；1 张全宽 1440×960（3:2）；2–3 张竖构图 664×996 到 664×1079（比例 0.61–0.67）；1 张半栏横图 664×443（3:2）。注意：项目网格是 masonry 保留原生比例，所以不要求统一裁剪，但要保证同一案例内色调一致。首批建议 10–15 个案例。",
+      "【摄影下单单 5｜企业与工厂】(a) 厂区外观通栏图 1 张，3200×1720（80:43）；(b) 厂区/建筑 3:2 图 2–3 张，母版 2880×1920；(c) 车间/生产实拍横图 1400×874；(d) 历史与档案竖图 4 张，宽度 800，高度 986–1422 自由（对应航拍、海报翻拍、档案照、logo 演变）；(e) 管理层双人合影 800×571（1.40），场景选在生产线上而非会议室 —— FSB 的 alt 明确写 'on the production line'。",
+      "【摄影下单单 6｜人物】联系人/销售顾问肖像 1200×900（4:3），白墙或车间虚化背景，每人 1 张。",
+      "【摄影下单单 7｜移动端专拍 —— 最容易漏的一项】首页 hero 必须额外拍一版 1:1 正方形构图，交付 1640×1640 / 1560×1560 / 720×720。这不是桌面图的裁剪，是重新构图的另一张片子（FSB 用的是两个独立文件名：…-desktop-center… 与 …-hero-mobile.png）。桌面版按 2:1 超宽构图（2880×1391），移动版按 1:1 构图。",
+      "【视频下单】工厂制造 4 段短片，720p，无声可循环，托管走对象存储不走图床。每段配一张 758×1083（7:10 竖版）封面帧，命名加 _frame 后缀。前端用 data-src 懒加载 + playsinline + 滚出视口自动暂停。",
+      "【开发任务 1｜断点】把 Tailwind 断点从默认值改成 FSB 的 744 / 820 / 1032 / 1376 / 1512，内容区 max-width 锁 1440px。所有 <picture> 的 media 查询按这五档写。",
+      "【开发任务 2｜图床】接入 Cloudinary（或同等服务），变换串统一为 c_fill,dpr_auto,g_auto,w_<N>,f_auto/q_auto/。源文件传 PNG/JPG 即可，由 f_auto 自动发 WebP。Cache-Control 设 max-age=2592000。",
+      "【开发任务 3｜彻底禁用 CSS 背景图】FSB 全站零 background-image，所有图片走 <picture>。在 ESLint/审查清单里加一条：禁止 background-image 承载内容图，仅允许纯色。",
+      "【开发任务 4｜srcset 档位表】按槽位固化：通栏 hero = 716/682/358（mobile）· 1566/1402/783/701（744+）· 2880/1640/1440/1032/820（820+）；内容 hero 额外加 1940/1852/970/926（1376+）与 1732/1296/866/648（1032+）；896 方瓦 = 896/854/758/686/632/584/496/342/292/171；1360 方瓦 = 1360/1298/964/758/686/584/482/342/292/171；项目网格 = 1344/896 两档；800 竖图 = 1200/800/400 三档。",
+      "【开发任务 5｜sizes 自动计算】sizes 必须按栅格实际列宽算到小数点后两位（FSB 用 14.95vw / 22.16vw / 46.05vw 这类值），不要手写 25vw/50vw。hero 统一写 sizes=\"(min-width: 1440px) 1440px, 100vw\"。",
+      "【开发任务 6｜加载策略】首屏 hero 不写 loading 属性（默认 eager），其余全部 loading=\"lazy\"。全站最多 1 处 fetchpriority=\"high\"。饰面色板因在首屏内，同样不加 lazy。",
+      "【开发任务 7｜项目网格用 masonry】不要强制统一裁剪。卡片宽度锁 448px，高度由图片原生比例决定（实测跨度 1.25–1.78）。这是 FSB 项目页视觉呼吸感的来源。",
+      "【开发任务 8｜文件命名规范】产品：<品牌>-<型号>-<品类>-<设计师>-<材质>-<饰面>.png；项目：<项目名>-<建筑师>-<品牌><型号>-<摄影师>-<序号>.jpg。摄影师署名进文件名和 alt，这是 FSB 建筑摄影可信度的一部分。",
+      "【开发任务 9｜alt 规范】装饰性图（品类瓦、项目网格缩略图）alt 留空；内容性图 alt 必须写全「型号 + 饰面 + 材质 + 载体/场景」，例：'Close-up of a Canton Hyland <型号> door handle in brushed stainless steel on a walnut door at <项目>'。",
+      "【开发任务 10｜文档缩略图流水线】所有 PDF（目录、证书、CAD 图集）自动抽首页生成 664×940 缩略图（A4 比例 1:√2）挂到页面上。注意：FSB 网页上没有任何 CAD 线稿图，线稿只存在于下载区 PDF 内 —— Canton Hyland 不需要为线稿单独做网页图，但必须有 PDF 下载区。",
+      "【内容任务｜技术剖面图】每一项自研技术做 1 张方形剖面渲染图（896×896 或 1548×1548），alt 写 'Cross-section of …'。这是 FSB 把工程能力视觉化的手法，不需要摄影师，交给 3D。",
+      "【素材总量估算（首批）】按 30 个型号计：产品竖卡 30 张 + 正交视图 60 张 + PDP hero 30 张 + 饰面色板（按 8 种饰面）8 张 + 品类方瓦 12 张 + 主题方瓦 8 张 + 项目摄影 12 个案例×6 = 72 张 + 企业/历史 12 张 + 人物 4 张 + 技术剖面 3 张 ≈ 239 张成片，另加 4 段工厂视频。"
+    ]
+  },
+  {
+    "dimension": "FSB /en/press 板块（新闻稿列表页 + 单条稿 + 下载区）结构与视觉规范拆解",
+    "findings": [
+      {
+        "topic": "press vs magazine：定位完全不同，press = 企业发稿，magazine = 编辑内容",
+        "detail": "两块是并列的独立栏目，主导航里 Magazine 是一级项，Press 只在汉堡菜单第二列（和 Innovation / Fairs+Events / About Us / Downloads / Careers / Contact us 同级）。press 共 9 条，全部是产品/企业新闻（获奖、认证、新品、饰面）；magazine 共 24 条，全部是建筑师访谈、项目故事、播客、书评（如 David Chipperfield、Jasper Morrison、Tatiana Bilbao 专访）。press 页 H1 = 'Press' + 细体副行 'News from Brakel'；magazine 页 H1 = 'Magazine' + 'Current Topics and Stories'。",
+        "evidence": "https://www.fsb.de/en/press 与 https://www.fsb.de/en/magazine；<h1 class=\"text-h1\">Press<br><span class=\"text-h1-light\">News from Brakel</span></h1>；主导航 <nav class=\"flex gap-64\"> 只含 Products/Projects/Magazine/Service + Information",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "press 与 magazine 的详情页模块构成差异（这是最本质的区别）",
+        "detail": "press 详情页只有 1 个 data-content-module=\"text\" 模块 + 1 张正文配图（共 1 张内容图），带 <address> 媒体联系人、带 1 个下载、带日期。magazine 详情页是 text/media/text/media/text/media/text/media + projects-teaser 共 9 个模块、11 张 Cloudinary 图，无 <address>、无任何下载、无日期。即：press = 单页发稿单元，magazine = 图文长篇。",
+        "evidence": "pr1(/en/press/fsb-1292-gold-if-design-award-2026) data-content-module 计数=1；/en/magazine/piperi-house-kythnos-architekt-sigurd-larsen-fsb-1267 modules: text, media, text, media, text, media, text, media, projects-teaser",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "press 列表页排序：严格倒序，但列表上完全不显示日期",
+        "detail": "9 条按发布日倒序排：06/15/2026 → 03/23/2026 → 09/26/2025 → 07/02/2025 → 07/02/2025 → 02/06/2024 → 01/23/2024 → 05/06/2023 → 03/22/2023。但列表页 HTML 里搜不到任何日期字符串、无 <time> 元素、无年份分组、无筛选、无分页、无 load more。日期只出现在详情页。",
+        "evidence": "press.html 中 grep '[0-9]{2}/[0-9]{2}/[0-9]{4}' 与 '<time' 均 0 命中；各详情页 <h2 class=\"text-h3\">03/23/2026</h2> 等",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "press 列表卡片结构：图在上、文字在下，无背景色，1px 黑描边 hover",
+        "detail": "外层网格 class=\"grid grid-cols-2 gap-x gap-y-48 sm:grid-cols-3 lg:gap-y-96\"，即手机 2 列、≥744px 3 列；列间距 = --grid-gap = 1.6rem(16px)，行间距 48px，≥1032px 时 96px。卡片是整块 <a>，内含 aspect-square 的 <img>（srcset 400/800/1200w，sizes=\"(min-width:1440px) 448px, (min-width:744px) 46vw, 92vw\"），下面一个 <p class=\"pt-16 text-c1 hover-hover:p-16 md:pt-24 md:hover-hover:p-24\">，里面 <strong>标题</strong><br><span class=\"line-clamp-3\">副标题</span>。hover 效果只有 outline：outline-width:max(.1rem,1px)、outline-color:rgb(0 0 0)、outline-offset:-1px，无阴影无位移无缩放。",
+        "evidence": "press.html 卡片标记；site.css: .-outline-offset-1{outline-offset:calc(max(.1rem,1px)*-1)}、.outline-black{outline-color:rgb(var(--c-black))}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "press 列表页无 PDF、无联系人、无“全部媒体资源”入口",
+        "detail": "列表页整页只有 1 处 'download' 字样，且是导航里的 Downloads 链接；无 <address>、无 PDF/ZIP 直链。侧栏只有一个标题为 'Share' 的模块，但三个链接其实指向 FSB 自己的社媒主页（linkedin.com/company/fsb-franz-schneider-brakel、instagram.com/fsbarchitecture/、facebook.com/fsb.architecture），不是分享意图链接——德文版同一模块标题是 'Weitere Links'（更多链接），英文版把它错标成了 Share。",
+        "evidence": "press.html grep -c download = 1；/ueber-uns/presse 同位置文案为 'Weitere Links'",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "单条新闻稿的版式骨架：三段式 + 双行标题",
+        "detail": "顺序为：面包屑 Home > Press > 标题 → H1（<h1 class=\"text-h1\">粗体主标题：<br><span class=\"text-h1-light\">细体副标题</span>）→ 'Back to overview page' 返回链接（带 rotate-180 箭头）→ 左栏 slot-2：<h2 class=\"text-h2\">Franz Schneider Brakel GmbH + Co KG</h2> + <address class=\"mt-leading-h3 text-c1 not-italic\"> 媒体联系人 → 右栏 slot-4：Share（真分享意图链接）→ slot-5：Download 区块 → 正文 text 模块（左列：日期 h3 + 相关链接列表；右列：一张 800×450 配图）→ 正文 .copy 富文本 → 末尾固定 <strong>About FSB</strong> 样板段。",
+        "evidence": "pr1.html 第 1186–1350 行；slot-1 / slot-2 / slot-4 / slot-5 的 id 命名",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "新闻稿的日期是当作小标题排的，格式 MM/DD/YYYY",
+        "detail": "日期不在标题下方，而是在正文 text 模块左列顶部，用 <h2 class=\"text-h3\">03/23/2026</h2> 呈现——即 16–18px 粗体，和 'Download' 'Share' 这些区块标题同一级视觉权重。英文站用美式 MM/DD/YYYY。",
+        "evidence": "pr1.html: <h2 class=\"text-h3\">03/23/2026</h2>；pr2: 09/26/2025；p_press-fsb-les-couleurs: 03/22/2023",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "新闻稿正文只有 1 张配图，且是 16:9 侧配图不是通栏 hero",
+        "detail": "配图放在 text 模块右列 <div class=\"col-span-3 md:col-span-5 lg:col-span-4 xl:col-span-5\">，width=800 height=450（16:9），class=\"w-full h-auto\"，无圆角无边框无 figcaption。整页 Cloudinary 图只有 3 张，另 2 张是汉堡菜单里的固定 teaser 图。",
+        "evidence": "pr1.html 第 1336 行 <img ... width=\"800\" height=\"450\" class=\"w-full h-auto\">；grep res.cloudinary 去重后 3 条",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "正文富文本规范 .copy：首段加粗当导语，段间距 = 行高，H 级前 48px",
+        "detail": "正文容器 class=\"copy\"，font-size:var(--text-c1)=clamp(1.6rem,.191vw+1.525rem,1.8rem) → 16–18px，line-height 2.4rem=24px，letter-spacing .036rem。规则：.copy>:not([hidden])~:not([hidden]) 上边距 = 24px；.copy>*+:is(h1..h6) 上边距 = --space-48 = 4.8rem = 48px；.copy>:is(h1..h6) 一律降级成 text-h3（16–18px/700）；.copy ul 用 content:\"–\" 当项目符号，li padding-left = --space-20 = 2rem = 20px；.copy p>a 常态就带 underline，text-underline-offset:4px。首段是 <h3><strong>…</strong></h3> 充当导语。",
+        "evidence": "site.css .copy 相关 17 条规则；pr1.html 正文首段 <h3><strong>The product collection FSB 1292…</strong></h3>",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "每条新闻稿恰好挂 1 个 press kit：8 个 ZIP + 1 个 PDF，标签里写死格式和体积",
+        "detail": "9/9 条都有且只有一个下载，标题一律 'Press Kit: <稿件标题>'，第二行是 '<格式>, <体积>'。实测：ZIP 13,6 MB / 9,4 MB / 7,8 MB / 7,6 MB / 6,0 MB / 5,9 MB / 4,6 MB / 1,4 MB，PDF 331,0 KB。文件托管在 fsb-website.fra1.digitaloceanspaces.com，链接带 download 属性、target=\"_self\"。HEAD 实测 content-type: application/zip / application/pdf，content-length 14260575 / 338966。ZIP 内容物（是否含高清图 + 文字稿）未打开确认。",
+        "evidence": "各 press 详情页 <a href=\"https://fsb-website.fra1.digitaloceanspaces.com/website/press/...\" download=\"download\"><span>Press Kit: …<br>ZIP, 13,6 MB</span></a>；curl -I 返回头",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "没有集中式 press kit / 媒体资源中心，/en/downloads 是产品资料库不是媒体库",
+        "detail": "/en/downloads 共 93 个下载，100% 是 PDF，0 个 ZIP、0 张图片、0 个 logo 文件、0 个 CAD/BIM。分 6 类：Brochures、Product Overview、Technical Information、Certificates、Order Forms、Installation Instructions。整站没有 logo 下载页、没有高清图库、没有独立的 company profile PDF——公司简介是以每篇稿末尾的 'About FSB' 纯文本段落形式提供的（两篇稿的 About FSB 文案还不一样，pr1 是 100 年版，pr2 是 world leader 版）。",
+        "evidence": "downloads.html 中 digitaloceanspaces 链接扩展名统计：93 pdf、0 其他；grep logo 只命中 JSON-LD schema.org 的 Organization.logo",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "/en/downloads 的 download-list 模块版式（可直接拿来做 press kit 页）",
+        "detail": "每个分类是一条 layout-popout 通栏色带：<section class=\"layout-popout py-48 bg-gray\">，bg-gray = rgb(246 246 246)，上下内边距 48px。左侧分类标题 h2.text-h3；右侧 <ul> 用 md:rtl-direction + order-last 做右对齐，条目 col-span-2 / md:col-span-3 / xl:col-span-4。单个下载卡：<a href download class=\"group\"> → <div class=\"mb-8 aspect-7/10 content-center justify-items-center bg-white\"> 封面缩略图（白底、7:10 比例、下边距 8px）→ <h3 class=\"text-c2 font-bold\"> 文件名（12px/700）→ <p> 'PDF, 7.5 MB'。顶部另有 accordion 模块做 'Quick Navigation'，2 列锚点链接跳 #brochures 等。",
+        "evidence": "downloads.html data-content-module=\"download-list\" ×16 + data-content-module=\"accordion\" ×1",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "媒体联系人：有，且每条稿都硬挂同一个人，放在标题正下方的左栏",
+        "detail": "9/9 条新闻稿都有完全相同的 <address class=\"mt-leading-h3 text-c1 not-italic\">：公司名做 h2.text-h2（Franz Schneider Brakel GmbH + Co KG），下面 Anne Levy / Nieheimer Straße 38 / 33034 Brakel / Phone <a href=\"tel:+49-5272-608105\">+49 5272 608105</a> / 邮箱。邮箱用 Cloudflare email-protection 混淆（href=\"/cdn-cgi/l/email-protection#…\"，显示文本是 HTML 实体 anne.levy@fsb.de），并带 itemprop=\"telephone\" / itemprop=\"email\" 微数据。列表页和 /en/contact 都没有这个联系人——只有详情页有。",
+        "evidence": "9 个 press 详情页 <address> 抓取结果一致；/en/contact 是通用样品/技术咨询表单，无媒体联系人",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "新闻稿里的“相关链接”是标准模块，用同一个 6×10 箭头 SVG",
+        "detail": "日期下面是一个 <ul class=\"flex flex-col gap-36 pointer-fine:gap-16\">，每项 <a class=\"relative hover:underline underline-offset-4 inline-block pl-12 text-c1\">，左侧 absolute 定位一个 8px 宽的 chevron SVG（viewBox 0 0 6 10，path M1 9L5 5L1 1，stroke=currentColor，top-[.3rem]）。这个 pl-12 + 绝对定位箭头的组合是全站唯一的“链接”视觉语言——Share、Download、Back to overview、Quick Navigation 全用它，返回链接只是给箭头加 rotate-180。触屏行距 36px，精确指针 16px。",
+        "evidence": "pr1.html/pr2.html/downloads.html 中同一段 SVG 反复出现；pointer-fine:gap-16 变体",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "FSB 自己在 press 板块完全不用红色——链接是黑字下划线",
+        "detail": "press 列表页、新闻稿页、downloads 页、contact 页 HTML 里 grep 不到任何 text-red / bg-red 类。CSS 里 --c-red: 255 0 0 存在，但全站只被 .bg-red\\/10{background-color:rgb(var(--c-red)/.1)} 一条规则用到（10% 透明度浅红底，应为表单校验态）。可点击元素的视觉标识是：常态无下划线、hover 出现下划线 + text-underline-offset:4px（.copy 内的正文链接则常态就带下划线）。",
+        "evidence": "site.css 中 c-red 仅 2 处命中；press.html/pr1.html/downloads.html/contact.html grep red 类 0 命中",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "press 相关的设计 token 实测值",
+        "detail": "html{font-size:62.5%}，1rem=10px。--text-h1: clamp(2.4rem,2.3249rem+.191vw,2.6rem)=24–26px/700，--leading-h1 3.2rem=32px，--tracking-h1 .052rem；text-h1-light 同尺寸但 font-weight 400。--text-h2 22–24px/400，--text-h3 16–18px/700，--text-c1 16–18px/400（行高 24px），--text-c2 1.2rem=12px/400（行高 16px）。字体 Traffic（H1）/ Trade Gothic Next LT Pro（正文）。颜色只有 --c-white 255 255 255、--c-black 0 0 0、--c-gray 246 246 246（+ 材质色 aluminum 231/bronze 189 165 130/stainless 214 212 208）。断点 40rem=640 / 46.5rem=744 / 51.25rem=820 / 64.5rem=1032 / 86rem=1376 / 94.5rem=1512px；栅格列数 4 → 8(744) → 12(820) → 24(1376)，--grid-gap 1.6rem=16px，--max-content-width 144rem=1440px，左右留白 clamp(1.6rem, 1.5282vw+.9994rem, 3.2rem)=16–32px。CSS 里只有 .rounded-none{border-radius:0} 和 .rounded-[2px]，press 页面一个 rounded-* 类都没用。",
+        "evidence": "https://www.fsb.de/build/assets/site-N7hca7S0.css",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "FSB 自己的两个可复制的疏漏（我们应做得更好）",
+        "detail": "(1) sitemap.xml 里 9 条新闻稿只收录了 1 条（/en/press/press-fsb-1289-if-design-award-2023），其余 8 条全部缺失，press 详情页也没有 Article/NewsArticle 结构化数据（只有 Organization JSON-LD）。(2) 英文详情页的 'Back to overview page' href 写成了德文路径 /ueber-uns/presse；且 8 个 ZIP 里有 5 个文件名是 -de.zip / _de.zip（德文媒体包）却挂在英文页上。另有单位格式不统一：press 页写 '331,0 KB'（德式逗号），downloads 页写 '7.5 MB'（英式点号）。",
+        "evidence": "sitemap.xml 中 /en/press 相关 loc 仅 2 条；pr1.html <a href=\"/ueber-uns/presse\">Back to overview page</a>；pm-fsb-aluminium-pure-de.zip 等文件名",
+        "confidence": "confirmed"
+      }
+    ],
+    "actionable": [
+      "建 /press 与 /magazine（或 /journal）两条独立线，别合成一个 News：/press 只放企业发稿（新品、认证、获奖、渠道），每条必须挂媒体联系人 + 一个 press kit 下载 + 一个日期；/magazine 放项目故事和访谈，不带联系人、不带下载、不带日期。两者共用同一套卡片和排版原语，靠“有没有 press kit 和联系人”区分定位。",
+      "press 列表页用 grid-cols-2 / sm:grid-cols-3（sm=744px），column-gap 16px，row-gap 48px、≥1032px 时 96px。卡片是整块 <a>：aspect-square 图（srcset 400/800/1200w，sizes=\"(min-width:1440px) 448px,(min-width:744px) 46vw,92vw\"）+ 下方 <p>，内含 <strong>主标题</strong><br><span class=\"line-clamp-3\">副标题</span>。hover 只加 outline:1px solid #000; outline-offset:-1px，禁止阴影/位移/缩放。",
+      "标题一律做成双行：粗体主标题（结尾带冒号）+ <br> + 同字号 400 字重的副标题（对应 FSB 的 text-h1 / text-h1-light，24–26px、行高 32px、letter-spacing .052rem）。列表卡片的 strong/span 是同一套内容的复用，CMS 里就存 title 和 subtitle 两个字段。",
+      "列表页不要显示日期（FSB 就不显示），但详情页必须有：把日期做成正文左列顶部的区块级小标题，字号等同 h3（16–18px/700），中文站用 YYYY-MM-DD，英文站用 MM/DD/YYYY，全站统一一种，别像 FSB 那样 press 页用德式逗号、downloads 页用英式点号。",
+      "每条新闻稿详情页固定挂一个 press kit 下载，链接文案照抄 FSB 的两行结构：第一行 'Press Kit: <稿件标题>'，第二行 '<ZIP|PDF>, <体积>'。体积在构建期从文件真实 size 生成，别手填。ZIP 里放：全文 .docx + .pdf、300dpi 产品图（附摄影师署名和使用授权文本）、公司简介 boilerplate。目标体积区间参考 FSB 的 1.4–13.6 MB。",
+      "做一个 FSB 没有的 /press/media-kit 常设页，补上 FSB 的空缺：品牌 logo 包（SVG + EPS + PNG 三格式，含横版/竖版/单色）、产品高清图库（按系列打包 ZIP）、工厂与团队图、公司简介 PDF（EN/中英对照）、事实数据表（成立年份、产能、认证）。版式直接复用 FSB 的 download-list 模块：每类一条 background #F6F6F6、padding 48px 0 的通栏色带，左侧分类标题（16–18px/700），右侧封面缩略图卡（白底、aspect-ratio 7/10、下边距 8px）+ 12px/700 文件名 + 一行 '<格式>, <体积>'。",
+      "在每条新闻稿的左栏（标题正下方）固定放媒体联系人卡：公司全称做 h2（22–24px/400），下面 <address class=\"not-italic\"> 姓名 / 地址 / 电话 tel: 链接 / 邮箱，带 itemprop=\"telephone\" 和 itemprop=\"email\"。邮箱做混淆（构建期 HTML 实体或 JS 拼接），别明文写。同一联系人在所有稿件上复用，从单一 config 读取。",
+      "在 /press 列表页也放一份媒体联系人和 media kit 入口——FSB 只在详情页放联系人、列表页什么都没有，记者从列表页进来找不到人。列表页侧栏结构：媒体联系人 → 下载 media kit → 关注我们（社媒）。注意 FSB 把“关注我们”错标成了 Share，我们的列表页用 'Follow us'，详情页才用 'Share' 且必须是真分享意图链接（linkedin.com/sharing/share-offsite/?url=、facebook.com/sharer/sharer.php?u=）。",
+      "正文富文本按 FSB 的 .copy 规则实现：正文 16–18px / 行高 24px / letter-spacing .036rem；块级元素间距 = 24px；小标题前置间距 48px；富文本内所有 h1–h6 一律降级渲染成 16–18px/700（不做视觉层级爆炸）；ul 用 content:\"–\" 当项目符号、li 左内边距 20px；正文内链接常态就带下划线、text-underline-offset 4px。首段用加粗导语。",
+      "统一“链接”这一个原语并全站复用：inline-block、padding-left 12px、左侧绝对定位一个 8px 宽的 chevron（viewBox 0 0 6 10, path M1 9L5 5L1 1, stroke=currentColor），常态无下划线、hover 加下划线 + underline-offset 4px；返回链接给箭头加 rotate-180。触屏列表行距 36px，@media(pointer:fine) 收到 16px。Share / Download / 相关链接 / 快速导航全部走这一个组件。",
+      "重新审视我们“品牌红只用于可点击元素”这条规则：FSB 在整个 press 板块一个红都不用，链接靠黑字 + hover 下划线表达。建议把红收窄为“仅用于 CTA 按钮和当前态指示”，press 板块内的正文链接、下载链接、面包屑全部走黑字下划线，否则一页十几个下载链接全变红会直接破坏发丝线白纸的观感。",
+      "每条新闻稿结尾固定加 About Canton Hyland 样板段（加粗小标题 + 一段 150–200 字），且全站只维护一份文案从 config 注入——FSB 两条稿的 About FSB 文案不一致，我们不要重蹈。",
+      "补 FSB 缺的 SEO 基建：把每一条新闻稿都写进 sitemap.xml（FSB 9 条只收录了 1 条），每条稿加 NewsArticle JSON-LD（headline / datePublished / image / publisher / author），press kit 的 ZIP/PDF 直链在页面上暴露且允许抓取。",
+      "检查语言一致性，别犯 FSB 的错：英文页的“返回列表”链接必须指向 /en/press 而不是中文路径；英文页挂的 press kit 必须是英文版文件（FSB 的 8 个 ZIP 里 5 个是 -de.zip 挂在英文页上）；文件体积单位在中英文站各自用对应的小数分隔符，由同一个格式化函数按 locale 输出。",
+      "栅格与排版基线直接对齐 FSB：html{font-size:62.5%} 让 1rem=10px；断点 640/744/820/1032/1376/1512px；栅格列数 4→8(744)→12(820)→24(1376)；--grid-gap 16px；内容最大宽 1440px；左右留白 clamp(16px, 1.5282vw+9.994px, 32px)。border-radius 全线 0（FSB press 页零个 rounded 类），我们的 0–2px 规则在 press 板块直接取 0。"
+    ]
+  },
+  {
+    "dimension": "FSB Newsletter 弹窗（触发/尺寸/遮罩/关闭/冷却/元素构成）+ /en/newsletter 订阅表单",
+    "findings": [
+      {
+        "topic": "弹窗组件的位置与实现方式",
+        "detail": "弹窗不是独立 JS 库，是 Alpine.js 组件，直接内联在每个页面 </body> 前、livewireScriptConfig 脚本之前：<div x-data=\"newsletterPopup({ csrfToken: '...', site: 'de_en' })\" class=\"relative\">。壳子（遮罩+定位+关闭按钮）是静态 HTML，内容体是空的 <div x-html=\"popupHtml\" class=\"w-full\">，运行时由 AJAX 填充。整站只有一个 CSS(site-N7hca7S0.css, 58651 B) 和一个 JS(site-81BdwTOp.js, 352183 B)。",
+        "evidence": "https://www.fsb.de/en 页面源码；本地副本 C:\\Users\\johns\\AppData\\Local\\Temp\\claude\\C--Users-johns-Downloads-ai-website-cloner-template-master\\56793c17-e381-46ee-ad13-a68d79c189d7\\scratchpad\\fsb\\home.html",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "触发方式：纯定时 20 秒，不是滚动/退出意图",
+        "detail": "JS 里 Alpine data 工厂 u0（注册名 newsletterPopup）含 popupDelay:2e4。init() 先 loadState() 读 localStorage，然后 setTimeout(()=>{ fetch('/newsletter-popup', {method:'POST', body: JSON.stringify({_token, site, lastSeenTimestamp, lastSeenVersion})}) ... }, this.popupDelay)。全文没有 scroll / mouseleave / mouseout / beforeunload 监听，所以**既不是滚动触发也不是退出意图**，就是进页面后 20000ms 定时。",
+        "evidence": "site-81BdwTOp.js @ offset 271201：u0=kl(t=>({...popupDelay:2e4...init(){this.loadState(),setTimeout(()=>{fetch(\"/newsletter-popup\",...)},this.popupDelay)}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "实际可见时间 ≈ 21 秒（20s 定时 + 1s 过渡延迟）",
+        "detail": "x-show 的进场过渡是 x-transition:enter=\"transition ease-out duration-300 delay-1000\"，这三个类在 CSS 里都真实存在：.delay-1000{transition-delay:1s}、.duration-300{transition-duration:.3s}、.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}。所以 20s 定时 + 网络往返 + 1s 延迟后才开始 300ms 淡入。退场是 duration-200 + ease-in，只做 opacity-0/opacity-100，没有位移。",
+        "evidence": "home.html 弹窗壳子 x-transition 属性；site.css 中 .delay-1000{transition-delay:1s} / .duration-300{transition-duration:.3s} / .duration-200{transition-duration:.2s}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "是否显示由服务端决定，不是前端判断",
+        "detail": "前端把 localStorage 里的 lastSeenTimestamp / lastSeenVersion 原样 POST 给 /newsletter-popup，服务端返回 {popup: <html>|null, lastSeenTimestamp, lastSeenVersion}。只有 i.popup 为真才 isVisible=true 并写回 localStorage。前端自己不做任何时间比较。",
+        "evidence": "site.js: .then(i=>{i.popup&&(this.popupHtml=i.popup,this.isVisible=!0,this.saveState({lastSeenTimestamp:i.lastSeenTimestamp??-1,lastSeenVersion:i.lastSeenVersion??-1}))})",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "冷却期实测：正好 72 小时",
+        "detail": "用不同 lastSeenTimestamp 打 /newsletter-popup 实测：age=72.0h → popup:null（压制）；age=73.0h → 返回 2752 字符 HTML（显示）。更粗粒度验证：0h/1h/24h/48h/72h 全部压制，96h/7d/14d/30d/60d/180d 全部显示。所以冷却窗口是精确的 72h（3 天），不是 7 天也不是 30 天。",
+        "evidence": "POST https://www.fsb.de/newsletter-popup，body {_token, site:\"de_en\", lastSeenTimestamp:<now-N>, lastSeenVersion:1770115982}，逐档探测结果",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "localStorage 键名与结构（无自身过期）",
+        "detail": "键名固定为 newsletter_popup（不是 cookie）。值为 JSON：{\"lastSeenTimestamp\":1787484107,\"lastSeenVersion\":1770115982}，两个都是秒级 epoch。loadState 读不到或解析失败时回落到 -1/-1。localStorage 本身没有 TTL，靠服务端比对时间戳。",
+        "evidence": "site.js: localStorage.getItem(\"newsletter_popup\") / localStorage.setItem(\"newsletter_popup\",JSON.stringify(i))；实测响应 popup.json",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "内容版本号可强制绕过 72h 冷却",
+        "detail": "lastSeenVersion 是弹窗内容的更新时间戳（EN 站 1770115982 = 2026-02-03T12:13Z，DE 站 1769679945 = 2026-01-29T09:45Z，两站不同）。实测：lastSeenTimestamp 传当前时间（本该压制）但 lastSeenVersion 传 1 → 服务端仍返回 HTML。即编辑一次弹窗内容，所有用户立刻重新看到，冷却清零。",
+        "evidence": "POST /newsletter-popup with {lastSeenTimestamp:now, lastSeenVersion:1} → popup=SHOWN；对比 {lastSeenTimestamp:now, lastSeenVersion:1770115982} → popup=null",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "写 localStorage 的时机是「展示时」而非「关闭时」",
+        "detail": "saveState 在 fetch 的 .then 里、isVisible=true 的同一句执行；closePopup(){this.isVisible=!1} 只切显示，不碰存储。也就是说弹窗一露面 72h 计时就开始，用户即使不点关闭直接跳走也算「已看过」。",
+        "evidence": "site.js: i.popup&&(this.popupHtml=i.popup,this.isVisible=!0,this.saveState({...})) 与 closePopup(){this.isVisible=!1}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "位置：桌面端贴左下角，移动端居中（和常见做法相反）",
+        "detail": "外层 class=\"fixed inset-0 z-50 flex items-center justify-center xs:items-end xs:justify-start\"。xs 在此配置是 min-width 变体：.xs\\:items-end{align-items:flex-end} 和 .xs\\:justify-start{justify-content:flex-start} 都包在 @media(min-width:40rem)（=640px）里。所以 <640px 是垂直+水平居中，≥640px 变成 flex-end + flex-start = **左下角**。滚动容器 py-24 + xs:pb-0，内层 px-24 + xs:px-0，所以桌面端卡片左边和下边是完全贴死视口边缘（0 偏移）。",
+        "evidence": "site.css @media(min-width:40rem){...\\.xs\\:items-end{align-items:flex-end}.xs\\:justify-start{justify-content:flex-start}...\\.xs\\:px-0{padding-left:0;padding-right:0}.xs\\:pb-0{padding-bottom:0}}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "尺寸：max-width 600px 硬像素，卡片圆角 0、无阴影、无边框",
+        "detail": "内层 class=\"relative w-full max-w-[600px] px-24 xs:px-0\"，.max-w-\\[600px\\]{max-width:600px}（是字面 px，不是 rem）。滚动容器 max-h-screen(100vh) + overflow-y-auto。卡片本体 class=\"grid w-full gap-0 bg-white xs:grid-cols-2\"：白底、gap:0、无任何 rounded-* / shadow-* / border-* 类。z-index 用 .z-50{z-index:50}（对比导航/搜索/语言三个 modal 用的是 z-10）。",
+        "evidence": "site.css: .max-w-\\[600px\\]{max-width:600px} / .gap-0{gap:0} / .bg-white{background-color:rgb(var(--c-white))} / .z-50{z-index:50}；弹窗 HTML 无 rounded/shadow 类",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "遮罩：纯黑 75%，无模糊 —— 全站唯一的重色块",
+        "detail": "遮罩层 <div class=\"fixed inset-0 cursor-pointer bg-black/75\"></div>，CSS 为 .bg-black\\/75{background-color:rgb(var(--c-black) / .75)}，--c-black: 0 0 0 → rgba(0,0,0,0.75)。没有 backdrop-blur，没有渐变。注意这和导航/搜索/语言 modal 用的 bg-gray/50 不同（那三个用 --c-gray: 246 246 246 的 50%，是淡灰）。遮罩 div 本身没有 click 事件，关闭靠内层的 @click.outside=\"closePopup()\"，cursor-pointer 只是视觉暗示。",
+        "evidence": "site.css: .bg-black\\/75{background-color:rgb(var(--c-black) / .75)}；:root{--c-black: 0 0 0}；对比 home.html 中语言/搜索 modal 的 class=\"fixed inset-0 bg-gray/50\"",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "关闭按钮：右上 16px、24×24 黑色描边 X，无背景无圆无 aria-label",
+        "detail": "<button @click=\"closePopup()\" class=\"absolute right-16 top-16\"> 内含 <svg class=\"size-24\" viewBox=\"0 0 24 24\"><path d=\"M24 23 12.7 11.6 23.3 1l-.7-.7L12 10.9 1.4.3.7 1l10.6 10.6L0 23l.7.7L12 12.3l11.3 11.3.7-.6z\"/></svg>。.right-16{right:var(--space-16)}、.top-16{top:var(--space-16)}、--space-16:1.6rem，html font-size:62.5% → 1rem=10px，所以是 16px/16px。.size-24{width:var(--space-24);height:var(--space-24)} = 24×24px。path 无 fill 属性 → 默认黑色实心。按钮没有背景、边框、圆角、hover 态，也没有 aria-label 或 sr-only 文本。它定位在包裹 x-html 的 .relative 上，因此桌面端压在右侧文案栏顶部，移动端压在图片上。",
+        "evidence": "home.html 弹窗关闭按钮标记；site.css .right-16/.top-16/.size-24 与 --space-16:1.6rem、--space-24:2.4rem、html{font-size:62.5%}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "图片：左栏，intrinsic 600×534（≈1.124:1 / 9:8），object-cover 撑满",
+        "detail": "<picture> 两个 <source>：≥640px 用 sizes=\"276px\" width=600 height=534；默认 sizes=\"100vw\" width=1200 height=1068（同比例）。<img class=\"size-full object-cover\">，所以真实渲染比例由右栏文字高度决定，600×534 只用于占位防 CLS。图源走 Cloudinary：res.cloudinary.com/franzschneiderbrakel/image/upload/c_fill%2Cdpr_auto%2Cg_auto%2Cw_600%2Cf_auto/q_auto/f_auto/website/dev/teaser/foster-and-partners_mz.png。注意两点瑕疵：sizes 声明 276px 但 2 栏均分实际是 300px；alt 文本在英文站仍是德文 \"Foto des FSB 1291 Türdrückers liegend auf Skizzen.\"",
+        "evidence": "POST /newsletter-popup 返回的 popup HTML（本地 popup.json）",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "标题层级：h1 双行双字体，粗体行 + 另一套字体的常规体行",
+        "detail": "<h1 class=\"text-h1 xs:pr-32\">FSB Newsletter<br><span class=\"text-h1-light\">Stay in touch:</span></h1>。.text-h1{font-size:var(--text-h1);line-height:var(--leading-h1);letter-spacing:var(--tracking-h1);font-weight:var(--font-weight-bold)}，.text-h1-light 同尺寸但 font-weight:var(--font-weight-regular) **并且换字体** .text-h1-light{font-family:Traffic,sans-serif}（正文默认是 html{font-family:Trade Gothic Next LT Pro,sans-serif}）。取值：--text-h1: clamp(2.4rem,2.3249rem + .191vw,2.6rem) = 24→26px；--leading-h1:3.2rem=32px；--tracking-h1:.052rem=0.52px；bold=700 / regular=400。xs:pr-32 = ≥640px 时 padding-right:3.2rem(32px)，专门给右上角关闭按钮让位。德文站标题同样是英文 \"FSB Newsletter / Stay in touch:\"。",
+        "evidence": "popup.json 内容体；site.css .text-h1 / .text-h1-light{font-family:Traffic,sans-serif} / :root{--text-h1:clamp(2.4rem,2.3249rem + .191vw,2.6rem);--leading-h1:3.2rem;--tracking-h1:.052rem}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "正文与内边距",
+        "detail": "正文包在 <div class=\"copy\"><p>…</p></div>，.copy{font-size:var(--text-c1);line-height:var(--leading-c1);letter-spacing:var(--tracking-c1);font-weight:var(--font-weight-regular)} → --text-c1: clamp(1.6rem,.191vw + 1.525rem,1.8rem)=16→18px、--leading-c1:2.4rem=24px、--tracking-c1:.036rem=0.36px、weight 400。右栏结构 <div class=\"flex flex-col justify-between\">（把 CTA 顶到底部），上半块 class=\"flex flex-col gap-y-24 px-16 py-24\" = 左右 16px、上下 24px、标题与正文间距 24px。EN 文案：\"Choose from Architecture, Processing, or Retail and get our latest innovations, services and inspiring projects delivered straight to your inbox.\"",
+        "evidence": "popup.json；site.css .copy / :root{--text-c1:clamp(1.6rem,.191vw + 1.525rem,1.8rem);--leading-c1:2.4rem;--tracking-c1:.036rem}；--space-16:1.6rem、--space-24:2.4rem",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "CTA 不是按钮，是通栏淡黄色块里的一个文字链接；黄色 = #F4FF71",
+        "detail": "<div class=\"bg-highlight p-16 xs:py-24\"> 包一个 <a href=\"/en/newsletter\" class=\"relative hover:underline underline-offset-4 inline-block pl-12 text-c1\">，里面有绝对定位小箭头 <svg class=\"absolute left-0 top-[.3rem] h-auto w-8\" viewBox=\"0 0 6 10\"><path d=\"M1 9L5 5L1 1\" stroke=\"currentColor\"/></svg> + <span>Sign-up</span>（德文站是 Jetzt abonnieren）。颜色：.bg-highlight{background-color:rgb(var(--c-highlight))}，:root{--c-highlight: 244 255 113} → **rgb(244,255,113) = #F4FF71**（偏荧光黄绿，不是米黄）。这块是右栏通栏满宽、贴底、无圆角无边框；内边距 p-16(16px)，≥640px 时 xs:py-24 把上下改成 24px。链接文字继承默认黑色，箭头 stroke:currentColor，宽 w-8=8px、top-[.3rem]=3px。**没有** hover 变底色，只有 hover 下划线（underline-offset:4px）。",
+        "evidence": "popup.json / popup-de.json；site.css .bg-highlight{background-color:rgb(var(--c-highlight))}，:root{--c-highlight: 244 255 113}，.pl-12{padding-left:var(--space-12)}，.underline-offset-4{text-underline-offset:4px}",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "响应式断点映射（和默认 Tailwind 不同，必须对齐）",
+        "detail": "从生成的 CSS 反推：xs=@media(min-width:40rem)=640px，sm=46.5rem=744px，md=51.25rem=820px，lg=64.5rem=1032px，xl=86rem=1376px，另有 94.5rem=1512px。还有 max-xs 变体 = @media not all and (min-width:40rem)。注意 html{font-size:62.5%}（1rem=10px）用于内容尺寸，但媒体查询里的 rem 按初始值 16px 计算，所以 40rem=640px —— 这一点被弹窗图片的 <source media=\"(min-width: 640px)\"> 交叉验证。另有 @media(max-width:24.5625em){html{font-size:calc(10 / 393 * 100vw)}}，即 393px 以下整站按视口等比缩放。",
+        "evidence": "site.css 中 .xs\\:grid-cols-2 位于 @media(min-width:40rem)；.sm\\:bottom-20 位于 @media(min-width:46.5rem)；.md\\:static 位于 @media(min-width:51.25rem)；.lg\\:col-span-3 位于 @media(min-width:64.5rem)；.xl\\:col-span-10 位于 @media(min-width:86rem)",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "无障碍：这个弹窗比 FSB 自己的其他 modal 弱一大截",
+        "detail": "newsletterPopup 外层**没有** role=\"dialog\"、没有 aria-modal、没有 aria-labelledby、没有 x-trap（即无焦点陷阱、无 noscroll 滚动锁）、没有 x-on:keydown.escape。而同一份 HTML 里的语言/搜索/导航 modal 三者都有 role=\"dialog\" aria-modal=\"true\" x-id=\"['modal-title']\" :aria-labelledby x-trap.noscroll.inert 和 keydown.escape。关闭按钮也无可访问名称。这是可以直接抄结构但不该抄行为的地方。",
+        "evidence": "home.html 中 newsletterPopup 块 vs 同文件 openLanguage/openSearch/openMenu 三个 modal 的属性对比",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "弹窗在所有页面都注入，包括 newsletter 页和订阅成功页",
+        "evidence": "grep -c newsletterPopup：/en=1, /en/newsletter=1, /=1, /en/products=1, /en/projects=1, /en/newsletter/successfully-subscribed=1；且 POST body 只含 {_token, site, lastSeenTimestamp, lastSeenVersion}，不含当前 URL",
+        "detail": "组件被无条件渲染到每个页面底部，且请求体里不带页面路径，所以服务端也无从做页面级排除。结果就是用户已经在 /en/newsletter 填表、甚至已经落到 successfully-subscribed 成功页，20 秒后照样弹「订阅我们的 newsletter」。这是一个明显可以做得更好的点。",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "/en/newsletter 表单字段清单",
+        "detail": "<form class=\"grid w-full grid-cols gap gap-y-48\" action=\"https://www.fsb.de/newsletter-form\" method=\"POST\" data-type=\"newsletter-form\">，纯原生 POST，JS bundle 里搜不到 newsletter-form 处理逻辑。字段：① 隐藏 _token(CSRF)、successPageUrl=https://www.fsb.de/en/newsletter/successfully-subscribed、language=en；② firstName 文本 required（标签 \"First Name *\"）；③ lastName 文本 required（\"Last Name *\"）；④ email 类型 email required（\"Email *\"）；⑤ list[] 三个 checkbox，legend \"Which topics are you interested in?*\"，Architecture=18 / Retail=22 / Processing=26（单个 input 上没有 required 属性）；⑥ optIn checkbox required value=1，文案含指向 /en/privacy-notice 的链接；⑦ 提交按钮 <button type=\"submit\">Submit</button>。fieldset legend 分组：\"Your contact data\"（text-h3，且 sticky top-[var(--h-main-nav-banner)]）。",
+        "evidence": "https://www.fsb.de/en/newsletter 源码；本地 newsletter.html",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "表单反垃圾：Turnstile + 蜜罐 + 加密时间戳，三层",
+        "detail": "① Cloudflare Turnstile：<div class=\"cf-turnstile\" data-sitekey=\"0x4AAAAAABg9s0riKBf6txLZ\"> 配合 https://challenges.cloudflare.com/turnstile/v0/api.js；② 蜜罐：<div id=\"full_name_V0NTL6vZrNohSvry_wrap\" style=\"display: none\" aria-hidden=\"true\"> 内含 name=\"full_name_<8位随机>\" autocomplete=\"nope\" tabindex=\"-1\"（字段名每次请求随机化）；③ 提交耗时校验：同一隐藏容器内 name=\"valid_from\"，值是 Laravel 加密串（base64 的 {iv,value,mac,tag} JSON），tabindex=\"-1\"。",
+        "evidence": "newsletter.html 表单块；data-sitekey=\"0x4AAAAAABg9s0riKBf6txLZ\"；valid_from value 为 eyJpdiI6...\"mac\"/\"tag\" 结构",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "表单控件样式：发丝线下划线输入框 + 浮动标签 + 实心方块 checkbox",
+        "detail": "输入框 .input--field{width:100%;min-height:var(--leading-c1);resize:none;border-radius:0;border-bottom-width:max(.1rem,1px);border-color:rgb(var(--c-black));padding-bottom:var(--space-8);padding-left:0} —— 只有下边框、1px 黑（用 max(.1rem,1px) 保证 10px 根字号下不塌成 0）、圆角 0、左内边距 0。标签是浮动式：.input--label{pointer-events:none;position:absolute;left:0;top:var(--space-16);transition:left .3s ease,top .3s ease,font-size .3s ease}，靠 .input:has(.input--field:focus, .input--field:not(.empty)) 上浮（配合 placeholder=\" \" 和初始 class=\"empty\"）。Checkbox：.checkbox{display:flex;align-items:flex-start;gap:var(--space-8)}，.checkbox--field{appearance:none;width:16px;height:16px;border-radius:0;border-width:max(.1rem,1px);border-color:黑;margin-top:var(--space-2);flex-shrink:0;cursor:pointer}，选中态 .checkbox--field:checked{background-color:rgb(var(--c-black))} —— **纯黑实心方块，没有对勾图形**。",
+        "evidence": "site.css 中 .input--field / .input--label / .checkbox / .checkbox--field / .checkbox--field:checked 规则",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "提交按钮不是按钮外观，和普通文字链完全同款",
+        "detail": "<button type=\"submit\" class=\"relative inline-block pl-12 text-left text-c1 underline-offset-4 hover:underline\"> + 同一个 6×10 viewBox 的箭头 SVG + <span>Submit</span>。也就是说 FSB 全站没有实心/描边按钮这个组件，主行动点一律是「小箭头 + 文字 + hover 下划线」，pl-12=12px 给箭头留位。弹窗 CTA 和表单提交用的是同一套原子。",
+        "evidence": "newsletter.html 提交按钮标记；与 popup.json 中 CTA <a> 的 class 串 \"relative hover:underline underline-offset-4 inline-block pl-12 text-c1\" 高度一致",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "重要修正：品牌红在抓到的页面里基本没被用",
+        "detail": "色板只有 8 个 token：:root{--c-white:255 255 255;--c-black:0 0 0;--c-gray:246 246 246;--c-stainless-steel:214 212 208;--c-aluminum:231 231 231;--c-bronze:189 165 130;--c-highlight:244 255 113;--c-red:255 0 0}。整份 CSS 里 --c-red 只出现 2 次，且唯一被生成的工具类是 .bg-red\\/10{background-color:rgb(var(--c-red) / .1)}；没有 .text-red / .border-red / .stroke-red。在 home.html 和 newsletter.html 里 grep 不到任何 red 相关 class。可点击元素统一是黑色文字 + hover 下划线（.underscore 是另一种：伪元素 1px 底线 opacity 0→1，transition .3s）。整个弹窗里饱和度最高的颜色是 #F4FF71，不是红色。",
+        "evidence": "site.css :root 色板；site.css 中 --c-red 仅 2 处出现；grep -oE '[a-z-]*red[a-z0-9/-]*' home.html newsletter.html 只命中 configured/fired/required 等单词",
+        "confidence": "likely"
+      }
+    ],
+    "actionable": [
+      "把 popup 冷却做成服务端判定 + localStorage 键 newsletter_popup，值 {\"lastSeenTimestamp\":<epoch秒>,\"lastSeenVersion\":<epoch秒>}，冷却窗口写死 72h（259200s）。前端只负责原样上报这两个值，不做时间比较——这样运营改文案时 bump version 就能立刻对全量用户重新曝光。",
+      "把触发实现成 setTimeout 20000ms + 进场 transition-delay 1s / duration 300ms ease-out(cubic-bezier(0,0,.2,1))，退场 duration 200ms ease-in(cubic-bezier(.4,0,1,1))，只做 opacity 不做位移。明确不做滚动触发和退出意图——FSB 一个都没用。",
+      "写 localStorage 的时机放在「弹窗展示成功」那一刻，不要放在关闭回调里，否则用户直接跳走会导致下次访问重复弹。",
+      "定位按 FSB 的反直觉做法：<640px 用 items-center justify-center 居中；≥640px 用 items-end justify-start 贴左下角，并把外层 py 的 padding-bottom 和内层的左右 padding 在断点处清零，让卡片真正贴死视口左下角。",
+      "遮罩用 rgba(0,0,0,0.75) 纯黑，不要模糊、不要渐变。注意这是全站唯一允许的重色块——其余 modal（导航/搜索/语言）用的是浅灰 rgba(246,246,246,0.5)，两套要区分开，别统一成一个值。",
+      "卡片规格：max-width 600px（字面 px 不用 rem）、background #FFFFFF、border-radius 0、无 box-shadow、无 border、grid gap 0；外层 z-index 50，其余 modal 用 10。滚动容器 max-height 100vh + overflow-y auto。",
+      "栅格：<640px 单列（图在上、文在下），≥640px 两列等分（图左文右）。图片用 object-fit:cover + width/height 100% 撑满栅格单元，并给 intrinsic width/height 属性（FSB 用 600×534，≈1.124:1）防 CLS。",
+      "关闭按钮：绝对定位 top:16px right:16px，24×24px，黑色实心 X 路径，无背景无边框无圆角。同时给标题在 ≥640px 加 padding-right:32px 给它让位（移动端不加，因为那时按钮压在图片上）。",
+      "CTA 严禁做成实心按钮。做成通栏满宽的 #F4FF71（rgb 244 255 113）色块贴右栏底部，内边距 16px、≥640px 上下改 24px；块内是「绝对定位 8px 宽箭头 SVG（viewBox 0 0 6 10，path M1 9L5 5L1 1，stroke=currentColor）+ padding-left 12px 的文字」，文字继承黑色，只在 hover 时加下划线（text-underline-offset:4px），不要 hover 换底色。",
+      "对齐 FSB 的断点数值，不要用 Tailwind 默认值：xs=640px、sm=744px、md=820px、lg=1032px、xl=1376px、2xl=1512px；根字号 62.5%（1rem=10px）使 space-N 的数字直接等于 px；再加 @media(max-width:24.5625em){html{font-size:calc(10 / 393 * 100vw)}} 做小屏等比缩放。",
+      "字体层级照抄：标题 clamp(2.4rem,2.3249rem + .191vw,2.6rem)/line-height 3.2rem/letter-spacing .052rem，第一行 weight 700，第二行 weight 400 且换成另一套字体；正文 clamp(1.6rem,.191vw + 1.525rem,1.8rem)/2.4rem/.036rem weight 400。",
+      "补上 FSB 自己漏掉的无障碍：给弹窗加 role=\"dialog\" aria-modal=\"true\" aria-labelledby=<标题id>、焦点陷阱、打开时锁滚动、Escape 关闭、关闭按钮加 aria-label。FSB 其他三个 modal 都有这些，唯独 newsletter 弹窗没有——抄结构别抄这个缺陷。",
+      "做页面级排除：在订阅页和订阅成功页不注入弹窗，并把当前路径一起发给后端以便服务端也能排除。FSB 在这两个页面照弹，是可以直接超过它的点。",
+      "订阅表单按这套字段实现：firstName(required)、lastName(required)、email(type=email, required)、兴趣多选 list[]（三个主题，各带稳定数值 value）、隐私同意 optIn(required, value=1) 且文案内嵌隐私政策链接；隐藏字段带 CSRF token、successPageUrl、language。",
+      "表单反垃圾照三层做：Cloudflare Turnstile + 字段名随机化的蜜罐（放在 display:none + aria-hidden 容器里，autocomplete=\"nope\" tabindex=\"-1\"）+ 一个服务端加密的 valid_from 时间戳做提交耗时校验。",
+      "输入控件统一成发丝线风格：只保留 border-bottom，宽度用 max(.1rem,1px) 防止 10px 根字号下塌陷，border-radius 0，padding-left 0，padding-bottom 8px；标签用 placeholder=\" \" + :has() 驱动的浮动标签，transition .3s ease。Checkbox 用 appearance:none 的 16×16 方框，1px 黑边、圆角 0，选中态直接填充纯黑不画对勾。",
+      "提交按钮和所有主行动点统一成「箭头 + 文字 + hover 下划线」，不要引入实心/描边按钮组件——FSB 全站没有这个东西。",
+      "重新审视「品牌红只用于可点击元素」这条规则：FSB 的 CSS 里 --c-red 只生成了一个 .bg-red/10，抓到的页面里一次都没用，可点击元素全是黑字 + hover 下划线，最高饱和度出现在 CTA 的 #F4FF71 上。如果 Canton Hyland 要把红当交互色，那是主动偏离 FSB 而不是复刻它，需要和设计确认；也可以考虑改用一个类似 highlight 的高饱和色块承担 CTA。",
+      "补一个 FSB 没做好的细节：弹窗图片的 sizes 声明和实际渲染宽度对不上（声明 276px、实际两列均分为 300px），且英文站沿用了德文 alt 文本。我们自己实现时把 sizes 算准，并给每个语言版本单独维护 alt。"
+    ]
+  },
+  {
+    "dimension": "FSB /en/magazine — 内容营销板块（列表页 + 文章详情页）结构与视觉规范",
+    "findings": [
+      {
+        "topic": "列表页卡片：文字在上、图片在下（与常规博客卡相反）",
+        "detail": "卡片是一个 <a>，class=\"bg-gray flex flex-col justify-between\"。DOM 顺序是先 <p> 文字块、后 <img>。因为 justify-between + flex-col，文字贴顶、图片贴底，卡片高度被同行最高者拉齐时空白出现在文字和图片之间（用 gap-y 控制）。背景 bg-gray = rgb(246 246 246) = #F6F6F6。卡片无 border、无 border-radius、无 box-shadow。",
+        "evidence": "https://www.fsb.de/en/magazine ；card class=\"bg-gray flex flex-col justify-between hover-hover:hover:outline-1 -outline-offset-1 hover-hover:hover:outline hover-hover:hover:outline-black gap-y-8 col-span-1 sm:col-span-2 xl:gap-y-64\"；site.css `.bg-gray{background-color:rgb(var(--c-gray))}` + `:root{--c-gray: 246 246 246}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "卡片图片一律 1:1，用 Cloudinary 焦点裁切",
+        "detail": "21 张卡片图全部 class=\"w-full h-auto object-cover aspect-square\"，width=\"1200\" height=\"1200\"。URL 参数为 c_fill,dpr_auto,g_xy_center,x_<焦点X>,y_<焦点Y>,z_1,w_<宽>,ar_1:1,f_auto/q_auto。srcset 三档：1200w / 800w / 400w。sizes=\"(min-width: 1440px) 680px, (min-width: 744px) 46vw, 92vw\"。首张 loading=\"eager\"，其余 loading=\"lazy\"。",
+        "evidence": "magazine.html：`...c_fill%2Cdpr_auto%2Cg_xy_center%2Cx_1160%2Cy_652%2Cz_1%2Cw_1200%2Car_1:1%2Cf_auto/q_auto/...` width=\"1200\" height=\"1200\"",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "卡片文字只有两行：粗体标题 + 最多 3 行副标题。没有日期、没有分类标签、没有作者、没有“阅读更多”",
+        "detail": "整块文字是单个 <p class=\"text-c1 text-pretty ...\">，内含 <strong>标题</strong><br><span class=\"line-clamp-3\">副标题</span>。line-clamp-3 = -webkit-line-clamp:3。text-c1 = clamp(1.6rem,.191vw+1.525rem,1.8rem) / line-height 2.4rem / letter-spacing .036rem / weight 400，即 16–18px、行高 24px。全页 0 个 <time>、0 个 datetime 属性、0 个分类 badge。",
+        "evidence": "magazine.html card markup；site.css `.text-c1{font-size:var(--text-c1);line-height:var(--leading-c1);letter-spacing:var(--tracking-c1);font-weight:var(--font-weight-regular)}`，`--text-c1: clamp(1.6rem, .191vw + 1.525rem, 1.8rem)`；grep `<time|datetime=` → 0 命中",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "一行几个：6 栏栅格上的 2 种卡片尺寸，前 2 篇是大卡",
+        "detail": "容器 class=\"grid grid-cols-2 gap-x gap-y-24 sm:grid-cols-6 md:gap-y-48 lg:gap-y-96\"。共 21 张卡。前 2 张：col-span-full sm:col-span-3（<744px 一行 1 个，≥744px 一行 2 个），文字内边距 p-16 sm:p-24，图文间距 gap-y-24 xl:gap-y-144。后 19 张：col-span-1 sm:col-span-2（<744px 一行 2 个，≥744px 一行 3 个），文字内边距 p-16 lg:p-24 hyphens-auto，图文间距 gap-y-8 xl:gap-y-64。列间距 gap-x = var(--grid-gap) = 1.6rem = 16px；行间距 24px → 48px(≥820) → 96px(≥1032)。",
+        "evidence": "magazine.html 容器与 21 个 <a> 的 class；site.css `.gap-x{column-gap:var(--grid-gap)}`、`--grid-gap: 1.6rem`、`.gap-y-24{row-gap:var(--space-24)}`、`--space-24: 2.4rem`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "没有任何分类 / 筛选 / 分页 / 加载更多",
+        "detail": "21 篇文章全部一次性渲染在同一个 grid 里，页面上不存在 filter 控件、tab、下拉、tag 云或分页器。grep filter|categor|paginat|load more|page= 在整页 HTML 中只命中 2 次 \"categor\"，且都是文章 slug/标题里的 \"contemporary sacred architecture\"，不是分类 UI。分类信息只存在于文章详情页的 JSON-LD keywords 字段，前端从不展示。",
+        "evidence": "magazine.html grep 结果；art1.html JSON-LD `\"keywords\":\"David Chipperfield, James Simon Gallery, ... , Berlin museums\"`；art2 keywords `\"production, factory tour, insights, regional, models, employees, made in germany, materials, machinery, architecture\"`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "列表页页头：h1 双行（粗+细同字号）+ 左右两栏 slot（导语 / 分享）",
+        "detail": "<h1 class=\"text-h1\">Magazine<br><span class=\"text-h1-light\">Current Topics and Stories</span></h1>。text-h1 与 text-h1-light 字号行高完全相同（clamp 24–26px / 行高 32px / 字距 .52px），只差 font-weight 700 vs 400。h1 下方一行两栏：左栏 slot-2 是导语（h2.text-h3「Captivating Insights」+ 一段正文），右栏 slot-4 是「Share」社交链接折叠块（Instagram/Facebook/Pinterest）。<main> 用 mt-48 lg:mt-192、space-y-48 lg:space-y-136。",
+        "evidence": "magazine.html `<main class=\"isolate mt-48 flex-grow space-y-48 justify-self-start lg:mt-192 lg:space-y-136\">`；site.css `.text-h1-light{...font-weight:var(--font-weight-regular)}`，`--text-h1: clamp(2.4rem, 2.3249rem + .191vw, 2.6rem)`，`--leading-h1: 3.2rem`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "详情页页头没有大图之前的元信息：无日期、无作者行、无面包屑分类",
+        "detail": "h1 沿用「粗体标题 + text-h1-light 副标题」双行结构，紧跟 mt-24 的返回链接「Back to overview page」（class=\"relative hover:underline underline-offset-4 inline-block pl-12 text-c1\"，左侧绝对定位 6×10 viewBox 的 chevron SVG，class=\"absolute left-0 top-[.3rem] h-auto w-8 rotate-180\"），右侧是 Share 块（Xing / LinkedIn / Facebook）。页面正文里没有任何可见发布日期。",
+        "evidence": "art1.html <main> 起始段；art2.html 同结构；两篇文章正文纯文本中提取年份 token：art1 只有 ['2019','2021']（是访谈内容里提到的年份），art2 为 []",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "日期/作者存在于 JSON-LD 但刻意不渲染；可见署名是「第一个 text 模块的 h2」，由编辑手写",
+        "detail": "JSON-LD Article 节点带 author / datePublished / dateModified / keywords，但这些都不出现在 DOM 可见文本里。可见的署名是正文第一个 data-content-module=\"text\" 的 <h2 class=\"text-h3\">，art1 写「Interview: Jasmin Jouhar」，art2 写「Author: Ansgar Steinhausen」。注意它和 JSON-LD 的 author 并不一致（art1 JSON-LD 是 Philippa Boltze，art2 是 Ariane Zwinge）——说明署名是自由文本字段，不是结构化元数据。",
+        "evidence": "art1.html JSON-LD `\"author\":{\"@type\":\"Person\",\"name\":\"Philippa Boltze\"},\"datePublished\":\"2019-05-01T00:00:00+02:00\",\"dateModified\":\"2025-10-22T12:15:44+02:00\"`；正文第一个 text 模块 `<h2 class=\"text-h3\">Interview: Jasmin Jouhar</h2>`。两个作者名在 <main> 内均搜索不到。",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "详情页是「模块流」而非富文本：7 种模块类型，模块间距 96px / 136px",
+        "detail": "正文包在 <div class=\"modules\"> 里，每个模块是 <div class=\"layout\" data-content-module=\"<type>\">。观察到的 type 全集：text、media、quote、product、spacer、projects-teaser、page-teaser。.modules 的子元素间距 = --space-96 (9.6rem = 96px)，≥1032px 升到 --space-136 (13.6rem = 136px)。art1 有 16 个模块，art2 有 21 个。",
+        "evidence": "art1/art2 grep `data-content-module=\"...\"`；site.css `.modules>:not([hidden])~:not([hidden]){margin-top:calc(var(--space-96)*...)}` 及 `@media(min-width:64.5rem){... var(--space-136) ...}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "正文是单栏，宽度只占内容区 50%；仅在 ≥1376px 有可选的双栏变体",
+        "detail": "text 模块分两行：第一行是标题块，<h2 class=\"text-h3\"> 放在 col-span-full space-y-24 xl:col-span-6 里；第二行是正文，容器 class=\"col-span-full grid grid-cols-subgrid gap sm:col-span-4 md:col-span-6 xl:col-span-12\"，即在 8/12/24 栏主栅格上恒定占 50%。里面是 <section class=\"col-span-full copy\">。1440px 视口下内容区 = 1440-2×32 = 1376px，正文列约 688px。可选变体在 section 上加 \"xl:copy-columns gap xl:columns-2\"，≥1376px 时用 CSS multi-column 分两栏，并靠 margin-bottom 负值控制断栏。art1 16 个模块里有 3 个用了双栏。",
+        "evidence": "art1.html text 模块 markup；site.css `.xl\\:columns-2{columns:2}`、`.xl\\:copy-columns{margin-bottom:calc(var(--leading-c1)*-1)}`、`.xl\\:copy-columns>*{margin-bottom:var(--leading-c1)}`；`--grid-columns` 在 4 → 8(≥46.5rem) → 12(≥51.25rem) → 24(≥86rem)",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": ".copy 的排版规则：正文 16–18px/24px，内部标题降级为 text-h3，标题上下留白 48px / 24px",
+        "detail": ".copy 本身 = text-c1 参数（16–18px、行高 24px、字距 .36px、weight 400）。规则：.copy>*+h1~h6 { margin-top: var(--space-48) = 48px }；.copy>h1~h6 { 强制 text-h3 参数 + weight 700 }；.copy>h*+* { margin-top: var(--leading-h3) = 24px }。也就是说文章里所有层级的小标题都渲染成同一个 16–18px 粗体，不做多级字号。",
+        "evidence": "site.css `.copy{font-size:var(--text-c1);line-height:var(--leading-c1);letter-spacing:var(--tracking-c1);font-weight:var(--font-weight-regular)}.copy>*+:is(h1,h2,h3,h4,h5,h6){margin-top:var(--space-48)}.copy>:is(h1,h2,h3,h4,h5,h6){font-size:var(--text-h3);...font-weight:var(--font-weight-bold)}.copy>:is(h1,h2,h3,h4,h5,h6)+*{margin-top:var(--leading-h3)}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "首图有两种宽度档：layout-popout（最大 1600px）或 layout-full（满视口出血），且不在 modules 流里",
+        "detail": "首图在 <main> 里、<div class=\"modules\"> 之前，包在 <div class=\"layout\"><div class=\"layout-popout|layout-full mb-24 sm:mb-48 xl:mb-96\">。art1 用 layout-popout（--max-popout-width: 160rem = 1600px），比例 1.64（img 1600×976）；art2 用 layout-full（grid-column:full，100% 宽），比例 16:9（img 1920×1080，≥1512px 走 3840×2160 源）。art2 首图带 loading=\"eager\" decoding=\"async\" fetchpriority=\"high\"。图注嵌在一个内层 <div class=\"layout\"> 里，因此对齐到内容列而不是图片宽度。",
+        "evidence": "art1.html `<div class=\"layout-popout mb-24 sm:mb-48 xl:mb-96\">`；art2.html `<div class=\"layout-full mb-24 sm:mb-48 xl:mb-96\">`；site.css `.layout .layout-full{grid-column:full;width:100%}`、`.layout .layout-popout{grid-column:popout}`、`--max-popout-width: 160rem`、`--max-content-width: 144rem`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "正文图片只有三种版式：整栏单图、横向 snap 双图组、以及 quote 里的竖构图人像",
+        "detail": "(1) 整栏单图：<div class=\"layout\" data-content-module=\"media\"> 下直接一个 <figure>，落在 content 列（最大 1376px），img 1440×878（ratio 1.640）。(2) 双图组：<div class=\"layout-outset\"> + <div class=\"horizontal-snap flex snap-x snap-mandatory scroll-px-outset flex-row gap-16 overflow-auto px-outset [scrollbar-width:none]\">，每个 figure class=\"w-grid-3/4 min-w-grid-3/4 snap-start pointer-fine:w-grid-1/2 md:w-grid-1/2\"，即手机 75% 宽可横滑、桌面并排各 50%，img 664×405（ratio 1.640）。(3) 人像：quote 模块里 684×903（ratio 0.757 ≈ 3:4）；art2 还有一张 media 竖图 ratio 0.80（4:5）。",
+        "evidence": "art1/art2 各 media 模块 markup；site.css `.w-grid-3\\/4{width:calc(100% * 3/4 - 1/4 * var(--grid-gap))}`、`.w-grid-1\\/2{width:calc(100% * 1/2 - 1/2 * var(--grid-gap))}`、`.px-outset{padding-left:var(--layout-outset);padding-right:var(--layout-outset)}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "横图统一是 1.64（非 16:9 非 3:2），且每张图用 <picture> + 6 个断点 source",
+        "detail": "横向图片在两篇文章里全部是 ratio 1.640：1440×878、664×405、2752×1678/1679、2540×1549、2060×1256、1640×1000、1400×854。每个 <picture> 有 6 个 <source>，media 条件依次为 (min-width:1512px)、1376px、1032px、820px、744px、无条件兜底，每个 source 各带自己的 srcset/sizes/width/height。唯一的例外是 art2 的 layout-full 首图（16:9）和竖构图（0.757 / 0.80）。",
+        "evidence": "art1.html media 模块 `<source media=\"(min-width: 1512px)\" ... width=\"2752\" height=\"1678\">` 等 6 条；各 img 的 width/height 属性",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "每篇文章的图片用量：11–12 张编辑图（不含产品图）",
+        "detail": "art1（Chipperfield 访谈）：首图 1 + quote 人像 1 + 整栏单图 1 + 4 组横滑双图 8 = 11 张，另有 2 张产品图，<main> 内 <img> 共 13。art2（工厂探访）：首图 1 + 竖图 1 + 整栏单图 4 + 3 组横滑双图 6 = 12 张，另有产品图 2 + 项目 teaser 1 + 相关文章 3，<main> 内 <img> 共 20。图注是 figcaption 内的两个 <p>：一句说明 + 一行「© 摄影师」。",
+        "evidence": "art1/art2 逐模块统计；figcaption 示例 `<p>Entrance area of the James-Simon-Gallery</p><p>© Ute Zscharnt for David Chipperfield Architects</p>`；figcaption class=\"mt-8 w-grid-3/4 text-c2 md:w-grid-1/2\"（正文图）与 \"mt-8 text-c2 sm:w-grid-5/6 xl:w-grid-1/2\"（首图）",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "有「相关文章」模块，但不是自动的，且卡片方向与列表页相反",
+        "detail": "data-content-module=\"page-teaser\"，标题 <h2 class=\"text-h3 mb-24 md:mb-48\">Additional news from Brakel</h2>，下面 layout-outset + 横向 snap 行，3 张卡，figure class 含 md:w-grid-1/3（桌面一行 3 个）。卡片是「图在上、文字在下」：img（1:1，896×896）在前，<p class=\"pt-16 text-c1 hover-hover:p-16 md:pt-24 md:hover-hover:p-24\"> 在后，同样是 <strong>标题</strong><br><span class=\"line-clamp-3\">副标题</span>。卡片本身没有 bg-gray，只有 hover 时的 1px 黑描边。关键：art2 有这个模块，art1 完全没有——说明是编辑手动插入的模块，不是系统自动推荐。",
+        "evidence": "art2.html `<div class=\"layout\" data-content-module=\"page-teaser\">`；卡片 class=\"hover-hover:hover:outline-1 col-span-1 -outline-offset-1 hover-hover:hover:outline hover-hover:hover:outline-black sm:col-span-2 w-grid-3/4 min-w-grid-3/4 snap-start pointer-fine:w-full md:w-grid-1/3\"；art1 grep `/en/magazine/` 在 <main> 内 → 空集",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "文章还会插入 product 模块（灰色通栏）和 projects-teaser 模块，把内容营销直接接到产品页",
+        "detail": "product 模块：<div class=\"layout-popout py-96 bg-gray\">，即最大 1600px 宽的浅灰色带、上下 96px 内边距，内含 h2.text-h3 小标题 + 产品卡。产品卡 figure 是 bg-white，图片容器 aspect-7/10，figcaption 用绝对定位把型号（左上 left-16 top-16，容器查询 @[25.6rem] 时变 left-24 top-24 且字号从 text-c2 升到 text-c1）、设计师名（左下）、材质色块（右下，aspect-square w-12 / @:w-24，hover 出 tooltip）压在图上。art1 有 1 个 product 模块，art2 有 2 个 + 1 个 projects-teaser（项目图 1440×1272，h3 项目名 + text-c1 建筑事务所 + 右侧 FSB 型号）。",
+        "evidence": "art2.html `<div class=\"layout-popout py-96 bg-gray\">` 内 `<a href=\"/en/products/collections/fsb-1076\">`；figcaption `<span class=\"absolute left-16 top-16 text-c2 @[25.6rem]:left-24 @[25.6rem]:top-24 @[25.6rem]:text-c1\">FSB 1004</span>`；site.css `.aspect-7\\/10{aspect-ratio:7 / 10}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "引用模块：22–24px 常规字重（不是粗体）+ 可选人像，宽度很窄",
+        "detail": "<blockquote class=\"grid w-full grid-cols gap-x gap-y-48\">。第一行放引文 <p class=\"col-span-full text-h2 md:col-span-5 xl:col-span-6\">，text-h2 = clamp(2.2rem,…,2.4rem) 即 22–24px、行高 32px、weight 400（注意是常规字重）。第二行放 <footer class=\"col-span-2 md:col-span-3 xl:col-span-8\"><p class=\"text-h3\">姓名</p></footer> + 可选 <figure class=\"col-span-2 space-y-8 md:col-span-3 xl:col-span-4\"> 人像（684×903）+ <figcaption class=\"text-c2\">© 摄影师</figcaption>。引文用中文/西文弯引号「“…”」，不靠 CSS 伪元素。",
+        "evidence": "art1.html quote 模块完整 markup；site.css `.text-h2{font-size:var(--text-h2);line-height:var(--leading-h2);letter-spacing:var(--tracking-h2);font-weight:var(--font-weight-regular)}`，`--text-h2: clamp(2.2rem, 2.125rem + .191vw, 2.4rem)`，`--leading-h2: 3.2rem`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "重要修正：FSB 全站不用红色做可点击元素——链接是黑色 + hover 下划线",
+        "detail": ":root 确实定义了 --c-red: 255 0 0（纯红），但在 site.css 里唯一引用它的规则是 .bg-red/10（10% 透明度背景）和一个未被使用的 .text-[#ff0000]。不存在 .text-red 或 .border-red。在抓取的 4 个页面（首页 / 列表页 / 2 篇文章）的全部 class 属性里，搜索 red、bg-red、text-red、ff0000 均为 0 命中。所有链接的可点击性靠：文字色 rgb(var(--c-black))、hover:underline + underline-offset-4，以及卡片的 1px 内描边。",
+        "evidence": "site.css `:root{--c-white: 255 255 255;--c-black: 0 0 0;--c-gray: 246 246 246;--c-stainless-steel: 214 212 208;--c-aluminum: 231 231 231;--c-bronze: 189 165 130;--c-highlight: 244 255 113;--c-red: 255 0 0}`；引用 --c-red 的规则仅 `.bg-red\\/10{background-color:rgb(var(--c-red) / .1)}`；4 个 HTML 文件 grep ff0000 → 0",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "Hover 反馈的确切实现：1px 内偏移黑色 outline，且只在有指针悬停能力的设备生效",
+        "detail": ".outline{outline-style:solid} + .outline{outline-width:max(.1rem,1px)} + outline-color:rgb(var(--c-black))，配合 .-outline-offset-1{outline-offset:calc(max(.1rem,1px)*-1)} 让描边画在卡片内侧、不撑开布局。整条规则包在 @media(hover:hover) 里（Tailwind 自定义变体 hover-hover:），触屏设备完全不触发。另外 hover-hover:p-16 / md:hover-hover:p-24 这类 class 说明：相关文章卡的文字内边距也是「只有能 hover 的设备才加」。注意 HTML 里写的 outline-1 在 CSS 里并无对应规则（无效 class），实际宽度由 .outline 决定。",
+        "evidence": "site.css `@media(hover:hover){...\\.hover-hover\\:hover\\:outline:hover{outline-style:solid;outline-width:max(.1rem,1px);outline-color:rgb(var(--c-black))}}`、`.-outline-offset-1{outline-offset:calc(max(.1rem,1px)*-1)}`；grep -F \"outline-1\" site.css → 0 命中",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "圆角与阴影：全站 0 圆角，唯一的 2px 圆角工具类未被使用；卡片无阴影",
+        "detail": "site.css 里 border-radius 只出现 5 次：4 次是 0，1 次是 .rounded-[2px]{border-radius:2px}。Tailwind 的 .shadow 规则存在但在 magazine/article 页面的 class 属性中未出现。这印证了 Canton Hyland 现有方向（0–2px 圆角、无阴影）是对的——但更准确的复刻是「0 圆角」，2px 只是备用。",
+        "evidence": "site.css `grep -o 'border-radius:[^;}]*'` → 4× `border-radius:0`, 1× `border-radius:2px`；`.rounded-none{border-radius:0}`、`.rounded-\\[2px\\]{border-radius:2px}`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "栅格与断点系统（复刻的地基）",
+        "detail": "--grid-columns：4（基础）→ 8（≥46.5rem=744px）→ 12（≥51.25rem=820px）→ 24（≥86rem=1376px）。--grid-gap: 1.6rem = 16px（媒体查询里的 rem 按 16px 算，元素里的 rem 按 html font-size 算）。--layout-outset: clamp(1.6rem, 1.5282vw+.9994rem, 3.2rem) 即 16→32px。--max-content-width: 144rem = 1440px，--max-popout-width: 160rem = 1600px。.layout 是一个命名线栅格：full / popout / outset / content / outset / popout / full，子元素默认落在 content。断点全集（由 <source media> 反证）：640 / 744 / 820 / 1032 / 1376 / 1512。html{font-size:62.5%} 即 1rem=10px，窄屏还有 html{font-size:calc(10 / 393 * 100vw)} 做流体缩放。",
+        "evidence": "site.css `.layout{display:grid;grid-template-columns:[full-start] var(--layout-full) [popout-start] var(--layout-popout) [outset-start] var(--layout-outset) [content-start] var(--layout-content) [content-end] ...}`；`@media(min-width:46.5rem){*,:before,:after{--grid-columns: 8}}` / `51.25rem{--grid-columns: 12}` / `86rem{--grid-columns: 24}`；art1 `<source media=\"(min-width: 1512px)\">` 等",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "字体与字阶只有 5 级，且 h1/h2 差别极小",
+        "detail": "字体：Trade Gothic Next LT Pro（400/700）为正文与标题，另有 Traffic（400/700）。字阶只有 h1 / h2 / h3 / c1 / c2 五级：h1 24–26px、行高 32px、字距 .52px；h2 22–24px、行高 32px、字距 .48px、weight 400；h3 16–18px、行高 24px、字距 .36px、weight 700；c1 与 h3 同字号但 weight 400；c2 固定 12px、行高 16px、字距 .24px。也就是说 h3 和正文 c1 是同一个字号，只靠字重区分——这是 FSB「极扁平字阶」的核心。",
+        "evidence": "site.css `@font-face{...font-family:Trade Gothic Next LT Pro...}`（400 与 700 各一条）、`html{font-family:Trade Gothic Next LT Pro,sans-serif}`；`--text-h3: clamp(1.6rem, .191vw + 1.525rem, 1.8rem)` 与 `--text-c1: clamp(1.6rem, .191vw + 1.525rem, 1.8rem)` 完全相同；`--text-c2: 1.2rem`",
+        "confidence": "confirmed"
+      },
+      {
+        "topic": "不要照抄的 bug：英文文章的返回链接指向德文列表页",
+        "detail": "两篇英文文章的「Back to overview page」链接都写成 href=\"/magazin\"（德文路径，无 /en 前缀），而不是 /en/magazine。实测 https://www.fsb.de/magazin 返回 200，即用户会被丢到德文版列表页、丢失语言态。复刻时应指向本地化后的列表路由。",
+        "evidence": "art1.html 与 art2.html 均含 `<a href=\"/magazin\" target=\"_self\" rel=\"\" class=\"relative hover:underline underline-offset-4 inline-block pl-12 text-c1\">...<span>Back to overview page</span></a>`；curl -o /dev/null -w '%{http_code}' https://www.fsb.de/magazin → 200",
+        "confidence": "confirmed"
+      }
+    ],
+    "actionable": [
+      "把 Magazine 卡片改成「文字在上、图片在下」：<a class=\"bg-[#F6F6F6] flex flex-col justify-between\">，DOM 顺序 <p> 在前 <img> 在后。文字块只放两行——<strong>标题</strong><br><span class=\"line-clamp-3\">副标题</span>，不要日期、不要分类 badge、不要「阅读更多」按钮。",
+      "列表页栅格用 grid-cols-2 sm:grid-cols-6，列间距固定 16px，行间距 24px → 48px(≥820) → 96px(≥1032)。前 2 篇用 col-span-full sm:col-span-3（大卡，p-16 sm:p-24，图文间距 gap-y-24 xl:gap-y-144），其余用 col-span-1 sm:col-span-2（小卡，p-16 lg:p-24 hyphens-auto，gap-y-8 xl:gap-y-64）。",
+      "所有卡片缩略图统一裁成 1:1，输出 1200×1200，srcset 三档 1200/800/400w，sizes=\"(min-width:1440px) 680px, (min-width:744px) 46vw, 92vw\"。首图 loading=eager，其余 lazy。给 CMS 的图片字段加「焦点坐标」，用 object-position 或裁切参数保证方脸不被切掉。",
+      "不要做分类筛选器和分页。文章总量控制在 20 篇上下、一页出完。分类词只写进 JSON-LD 的 keywords 供 SEO 用，前端不渲染标签。",
+      "不要在卡片和文章页显示发布日期。日期只放进 JSON-LD 的 datePublished/dateModified。署名做成一个自由文本字段，渲染成正文第一个模块的 h2（如「Interview: 张三」「Author: 李四」），而不是独立的作者行。",
+      "把详情页正文改造成模块流而不是一坨富文本。先实现 5 个模块类型：text（标题+正文）、media（单图 / 双图横滑）、quote（引文+可选人像）、product（灰底通栏产品带）、page-teaser（相关文章）。模块间距 96px，≥1032px 时 136px。",
+      "正文列宽锁在内容区的 50%（1440px 视口下约 688px），不要满宽。text 模块做成两行：h2 用 16–18px 粗体单独占一行，正文 section 在下面。再给编辑一个「≥1376px 分双栏」的开关（CSS columns:2 + 负 margin-bottom 控制断栏）。",
+      "文章首图做两个宽度档：popout（最大 1600px）和 full（满视口出血），都带 mb-24 sm:mb-48 xl:mb-96。图注嵌进一层内容列容器里对齐正文，12px 字号、mt-8，内容写成两个 <p>：说明句 + 「© 摄影师」。首图加 fetchpriority=\"high\" loading=\"eager\"。",
+      "横构图正文图统一按 1.64 出片（如 1440×878、664×405），不要用 16:9 或 3:2。竖构图用 3:4（684×903）或 4:5。每张图输出 <picture> + 6 个 source，media 断点用 1512 / 1376 / 1032 / 820 / 744 / 兜底。",
+      "双图并排模块用横向 snap 而不是网格：容器 layout-outset + flex snap-x snap-mandatory overflow-auto，figure 在手机上 w-grid-3/4（75%，露出下一张的边）、桌面 w-grid-1/2。scrollbar 隐藏，配 scroll-padding = 页面 outset。",
+      "按每篇 11–12 张编辑图来备素材：1 张首图 + 1 张竖构图/人像 + 3–4 张整栏横图 + 3–4 组横滑双图。这是内容生产的硬成本，要提前跟客户对齐拍摄量。",
+      "相关文章模块做成编辑手选、不自动推荐（FSB 两篇里只有一篇有）。卡片方向与列表页相反：图在上文字在下，图 1:1，卡片无灰底、只有 hover 时 1px 黑描边，桌面一行 3 个横滑。标题用 16–18px 粗体 + mb-24 md:mb-48。",
+      "补一个 product 模块：最大 1600px 宽的 #F6F6F6 通栏、上下 padding 96px，内含小标题 + 产品卡（白底、图片容器 aspect-7/10、型号绝对定位左上、设计师左下、材质色块右下带 hover tooltip）。这是 FSB 把文章导流到产品页的核心变现动作，目前我们缺这一块。",
+      "【纠正现有设计前提】品牌红不要用在链接上——FSB 定义了 --c-red 但全站零使用，链接一律黑字 + hover 下划线（underline-offset 4px）。请重新确认 Canton Hyland 的「品牌红只用于可点击元素」是有意偏离还是误解；若要保留红色，至少把 Magazine 板块的链接改成黑字下划线以贴合参考语言。",
+      "把 hover 反馈统一成：outline: solid max(0.1rem,1px) #000 + outline-offset: -1px，并整条包进 @media (hover:hover)，触屏不触发。别用 border（会撑布局），别用 shadow。同时把「hover 才出现的内边距」这种细节也放进同一个媒体查询。",
+      "圆角一律 0，不要 2px（FSB 的 2px 工具类存在但从未使用）。全站禁用 box-shadow。",
+      "把设计 token 对齐成 FSB 那套：栅格 4/8/12/24 列（断点 744/820/1376），gap 16px，页边距 clamp(16px,…,32px)，内容最大宽 1440px、popout 1600px；字阶只留 5 级，且 h3 与正文同字号仅靠 700/400 区分。",
+      "文章页返回链接务必指向本地化路由（/en/magazine），不要复刻 FSB 那个指向 /magazin 的多语言 bug。"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { absoluteUrl } from "@/data/site";
+import { NewsDetail } from "@/components/site/NewsDetail";
+import { NewsArticleJsonLd } from "@/components/site/JsonLd";
+import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
+
+type NewsPageProps = { params: Promise<{ slug: string }> };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getAllNewsParams();
+}
+
+export async function generateMetadata({ params }: NewsPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getNewsBySlug(slug);
+  if (!article) return {};
+  return {
+    title: { absolute: article.seoTitle },
+    description: article.seoDescription,
+    alternates: { canonical: `/news/${slug}/` },
+    openGraph: {
+      type: "article",
+      url: absoluteUrl(`/news/${slug}/`),
+      title: article.seoTitle,
+      description: article.seoDescription,
+      publishedTime: article.publishedAt,
+    },
+  };
+}
+
+export default async function NewsArticlePage({ params }: NewsPageProps) {
+  const { slug } = await params;
+  const article = getNewsBySlug(slug);
+
+  // generateStaticParams only emits published slugs, so this also covers the case of a
+  // draft or post-dated article being reached directly.
+  if (!article || !getPublishedNews().some((a) => a.slug === slug)) notFound();
+
+  return (
+    <>
+      {/*
+        FSB ships no Article schema on its press pages and lists only one of its nine
+        releases in sitemap.xml. Both are free to get right, and a release without
+        NewsArticle markup is invisible to Google News and to the AI answer engines that
+        now cite dated company announcements.
+      */}
+      <NewsArticleJsonLd article={article} />
+      <NewsDetail article={article} />
+    </>
+  );
+}

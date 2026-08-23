@@ -174,6 +174,57 @@ collections:
       - { name: "seoDescription", label: "SEO 描述", widget: "text" }
 
   # ---------------------------------------------------------------------------
+  - name: "news"
+    label: "新闻"
+    label_singular: "新闻"
+    folder: "content/news"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: "title"
+    summary: "{{publishedAt}} · {{title}}"
+    sortable_fields: ["publishedAt", "title", "kind"]
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"], hint: "会成为页面地址的一部分。发布之后不要再改，改了等于换掉一个已上线的网址。" }
+      - { name: "title", label: "标题（英文）", widget: "string" }
+      - { name: "titleZh", label: "标题（中文）", widget: "string", required: false, hint: "仅供内部对照，不显示在网站上。" }
+      - name: "kind"
+        label: "类型"
+        widget: "select"
+        default: "press-release"
+        options:
+          - { label: "新闻稿 —— 有日期的公司公告，记者可能引用", value: "press-release" }
+          - { label: "技术文章 —— 内容营销，不是公告", value: "insight" }
+        hint: "两者不要混。把营销文章标成新闻稿，会让真正的公告在记者眼里一起贬值。"
+      - { name: "publishedAt", label: "发布日期", widget: "date", format: "YYYY-MM-DD", hint: "⚠ 填未来的日期不会自动定时发布 —— 本站是静态站，到那天必须有人重新构建一次才会出现。" }
+      - { name: "draft", label: "草稿（不发布到网站）", widget: "boolean", required: false, default: true, hint: "勾着就不会进构建。写完确认无误再取消勾选。" }
+      - { name: "summary", label: "摘要", widget: "text", hint: "一到两句。用在列表卡片和搜索结果描述上。" }
+      - { name: "body", label: "正文", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" }, hint: "一段一条。第一段会自动加粗作为导语 —— 把最重要的事实放在第一段。" }
+      - name: "heroImage"
+        label: "配图"
+        widget: "object"
+        hint: "新闻稿只用一张 16:9 的配图，不是通栏大图。建议 1600×900。"
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "16 / 9" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - name: "gallery"
+        label: "正文配图"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "16 / 9" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - { name: "relatedModels", label: "相关产品型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" }, hint: "填型号，页面会自动链到对应产品页。" }
+      - { name: "attachmentIds", label: "媒体资料包 (press kit)", widget: "list", required: false, field: { name: "id", label: "下载文件 id", widget: "string" }, hint: "先在「分类与下载」里传文件，再把它的 id 填在这里。记者需要能直接下走高清图和稿件。" }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string", hint: "约 60 字符以内。" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text", hint: "约 155 字符以内。" }
+
+  # ---------------------------------------------------------------------------
   # 单文件集合。分类和下载是有顺序的列表，不是一条一页的内容，
   # 而且调整顺序是常见操作，所以各自保持为一个文件。
   - name: "taxonomy"

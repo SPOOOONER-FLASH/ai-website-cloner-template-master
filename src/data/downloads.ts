@@ -83,3 +83,16 @@ export function getDownloadsByKind(kind: DownloadKind): DownloadFile[] {
   return downloads.filter((file) => file.kind === kind);
 }
 
+/**
+ * Resolve attachment ids to files, in the order given.
+ *
+ * Unknown ids are dropped rather than throwing: an article referencing a press kit that
+ * has not been uploaded yet should render without its download block, not fail the whole
+ * build. The id is a plain string in the CMS, so a typo is a matter of when, not if.
+ */
+export function getDownloadsByIds(ids: readonly string[]): DownloadFile[] {
+  return ids
+    .map((id) => downloads.find((file) => file.id === id))
+    .filter((file): file is DownloadFile => Boolean(file));
+}
+

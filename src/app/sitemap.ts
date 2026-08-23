@@ -3,6 +3,7 @@ import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { categories } from "@/data/categories";
 import { getAllProductParams } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
+import { getPublishedNews } from "@/data/news";
 
 /**
  * Emits /sitemap.xml at build time (works under `output: "export"`).
@@ -25,6 +26,7 @@ const PRIORITY = {
   category: 0.8,
   section: 0.7,
   projectDetail: 0.6,
+  newsDetail: 0.6,
   support: 0.5,
 } as const;
 
@@ -61,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/products", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
+    ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/contact", PRIORITY.support),
   ];
@@ -77,6 +80,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const { slug } of getAllProjectParams()) {
     urls.push(...entry(`/projects/${slug}`, PRIORITY.projectDetail));
+  }
+
+  // Every published release, not just one of them — FSB lists 1 of its 9 and the rest
+  // are invisible to search. lastModified is the publication date, since the content
+  // model tracks no revision timestamp.
+  for (const article of getPublishedNews()) {
+    urls.push(
+      ...entry(`/news/${article.slug}`, PRIORITY.newsDetail).map((row) => ({
+        ...row,
+        lastModified: new Date(article.publishedAt),
+      })),
+    );
   }
 
   return urls;
