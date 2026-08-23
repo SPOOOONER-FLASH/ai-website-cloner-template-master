@@ -9,7 +9,12 @@
     "fire-door"
   ],
   "summary": "A single-point push bar for fire-rated escape doors, with outside lever trim and a cylinder aperture.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Length",
+      "value": "1040mm"
+    }
+  ],
   "material": "Steel / stainless steel",
   "finishes": [
     "Satin stainless",

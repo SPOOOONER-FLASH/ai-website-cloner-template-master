@@ -9,7 +9,40 @@
     "special-application"
   ],
   "summary": "A low-profile push bar and latch assembly designed for insulated cold-room and specialist enclosure doors.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Application",
+      "value": "Cold Storage Door, Freezer Door, Cold Chain Warehouse Door"
+    },
+    {
+      "label": "Installation",
+      "value": "Inside Door Installation"
+    },
+    {
+      "label": "Opening Method",
+      "value": "Press from Inside"
+    },
+    {
+      "label": "Key Required",
+      "value": "No Key Required from Inside"
+    },
+    {
+      "label": "Function",
+      "value": "Emergency Escape, Quick Release"
+    },
+    {
+      "label": "Outside Handle",
+      "value": "Optional"
+    },
+    {
+      "label": "Type",
+      "value": "Inside Release Push Bar"
+    },
+    {
+      "label": "Customization",
+      "value": "Available"
+    }
+  ],
   "material": "Aluminium / steel",
   "finishes": [
     "Anodised silver"
