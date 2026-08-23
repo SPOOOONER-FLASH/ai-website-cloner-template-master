@@ -1,0 +1,200 @@
+{
+  "needReshoot": [
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 1,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615144M38.gif",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 2,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615144I24.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 3,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615144RT.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 4,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615144c35.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 5,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-220926151449615.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "305",
+      "name": "Fire Door Panic Exit Device",
+      "seq": 6,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-220926151450424.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=387&lang=en"
+    },
+    {
+      "model": "320",
+      "name": "Two Point Locking Exit Device",
+      "seq": 1,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615255E27.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=391&lang=en"
+    },
+    {
+      "model": "320",
+      "name": "Two Point Locking Exit Device",
+      "seq": 2,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-220926152556292.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=391&lang=en"
+    },
+    {
+      "model": "320",
+      "name": "Two Point Locking Exit Device",
+      "seq": 3,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220926/2-22092615255S11.jpg",
+      "wm": "www.cantonlock.com",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=391&lang=en"
+    },
+    {
+      "model": "600",
+      "name": "Concealed Sliding Door Handle",
+      "seq": 1,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220927/2-22092GH00IZ.jpg",
+      "wm": "www.hydeland.cn",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=506&lang=en"
+    },
+    {
+      "model": "600",
+      "name": "Concealed Sliding Door Handle",
+      "seq": 2,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220927/2-22092GH00K36.jpg",
+      "wm": "www.hydeland.cn",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=506&lang=en"
+    },
+    {
+      "model": "600",
+      "name": "Concealed Sliding Door Handle",
+      "seq": 3,
+      "url": "https://www.cantonlock.com/uploads/allimg/20220927/2-22092GH00R18.jpg",
+      "wm": "www.hydeland.cn",
+      "legacy": "https://www.cantonlock.com/index.php?m=home&c=View&a=index&aid=506&lang=en"
+    }
+  ],
+  "conflicts": [
+    {
+      "model": "023 ETAN",
+      "field": "material",
+      "ours": "Steel",
+      "legacy": "steel material with spray painting , different finishes are available ."
+    },
+    {
+      "model": "023 ETAN",
+      "field": "doorTypes",
+      "ours": "Fire door, Escape door",
+      "legacy": "Fire door , panic door ."
+    },
+    {
+      "model": "023 ETAN",
+      "field": "finishes",
+      "ours": "Black powder coat, Polished cylinder trim",
+      "legacy": "Zinc-plated, black or chrome-plated."
+    },
+    {
+      "model": "305",
+      "field": "material",
+      "ours": "Steel / stainless steel",
+      "legacy": "Iron material and Aluminium"
+    },
+    {
+      "model": "305",
+      "field": "finishes",
+      "ours": "Satin stainless, Powder-coated black",
+      "legacy": "spray painting"
+    },
+    {
+      "model": "314",
+      "field": "material",
+      "ours": "Aluminium / steel",
+      "legacy": "Painted Iron / SS304 Optional"
+    },
+    {
+      "model": "314",
+      "field": "doorTypes",
+      "ours": "Timber, Steel, Aluminium",
+      "legacy": "Single-Leaf Door"
+    },
+    {
+      "model": "317",
+      "field": "material",
+      "ours": "Aluminium / steel",
+      "legacy": "Iron"
+    },
+    {
+      "model": "317",
+      "field": "finishes",
+      "ours": "Anodised silver",
+      "legacy": "Polished Surface"
+    },
+    {
+      "model": "320",
+      "field": "material",
+      "ours": "Steel / stainless steel",
+      "legacy": "Iron"
+    },
+    {
+      "model": "600",
+      "field": "material",
+      "ours": "Stainless steel",
+      "legacy": "304 stainless steel"
+    }
+  ],
+  "claims": [
+    {
+      "model": "305",
+      "label": "Certification",
+      "value": "EN1205"
+    },
+    {
+      "model": "320",
+      "label": "Certification",
+      "value": "EN1125"
+    }
+  ],
+  "done": [
+    {
+      "model": "023 ETAN",
+      "name": "Anti-Pick Panic Exit Device Trim",
+      "gallery": 3,
+      "specs": 2
+    },
+    {
+      "model": "314",
+      "name": "Alarm Panic Bar Exit Device",
+      "gallery": 5,
+      "specs": 8
+    },
+    {
+      "model": "317",
+      "name": "Cold Room Push Bar Exit Device",
+      "gallery": 5,
+      "specs": 8
+    }
+  ]
+}
