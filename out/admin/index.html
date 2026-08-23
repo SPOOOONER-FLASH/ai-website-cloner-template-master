@@ -7,30 +7,72 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>Canton Hyland — 内容后台</title>
     <style>
-      /* 顶部提示条。Decap 自己会占满整个视口，所以用 fixed 贴在最上面，
-         并把 CMS 的根容器往下推同样的高度，避免遮住它的顶栏。 */
+      /*
+        提示卡片放右下角，不放顶部。
+        之前是贴顶的 fixed 长条，靠给 #nc-root 加 padding-top 把界面推下去 ——
+        但 Decap 的编辑器工具栏（“修改已保存”“发布”那一排）自己也是 fixed 定位的，
+        父元素的 padding 推不动它，结果被提示条压住了一半。
+        右下角的卡片不参与 Decap 的布局，压不到任何按钮，而且可以关掉。
+      */
       #cms-notice {
         position: fixed;
-        inset: 0 0 auto 0;
+        right: 16px;
+        bottom: 16px;
         z-index: 10000;
+        max-width: 330px;
         box-sizing: border-box;
-        padding: 8px 16px;
+        padding: 12px 34px 12px 14px;
         background: #fff8e1;
-        border-bottom: 1px solid #e0cfa0;
-        font: 13px/1.5 system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+        border: 1px solid #e0cfa0;
+        border-radius: 2px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+        font: 13px/1.6 system-ui, -apple-system, "Microsoft YaHei", sans-serif;
         color: #4a3c14;
       }
+      #cms-notice[hidden] { display: none; }
       #cms-notice b { font-weight: 600; }
-      #nc-root { padding-top: 37px; }
+      #cms-notice code {
+        background: #f3e6bf;
+        padding: 0 3px;
+        border-radius: 2px;
+        font-size: 12px;
+      }
+      #cms-notice-close {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        border: 0;
+        background: none;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 1;
+        color: #8a7a45;
+        padding: 2px 4px;
+      }
+      #cms-notice-close:hover { color: #4a3c14; }
     </style>
   </head>
   <body>
     <div id="cms-notice">
+      <button id="cms-notice-close" type="button" aria-label="关闭提示">×</button>
       <b>保存后网站不会立刻更新。</b>
-      这里的改动会提交到 GitHub 仓库；线上页面是构建产物，需要有人执行一次
-      <code>npm run deploy:prep</code> 并推送，改动才会出现在网站上。详见
-      docs/CMS_REMOTE_SETUP.md。
+      改动会提交到 GitHub 仓库；线上页面是构建产物，需要有人执行一次
+      <code>npm run deploy:prep</code> 并推送才会生效。详见 docs/CMS_REMOTE_SETUP.md。
     </div>
+    <script>
+      // 关掉后记住选择，但只记一天 —— 这条提示解释的是一个每次发布都仍然成立的
+      // 约束，永久隐藏会让新同事再也看不到它。
+      (function () {
+        var KEY = "cms-notice-dismissed-until";
+        var el = document.getElementById("cms-notice");
+        var until = Number(localStorage.getItem(KEY) || 0);
+        if (until > Date.now()) el.hidden = true;
+        document.getElementById("cms-notice-close").addEventListener("click", function () {
+          el.hidden = true;
+          localStorage.setItem(KEY, String(Date.now() + 24 * 60 * 60 * 1000));
+        });
+      })();
+    </script>
     <!--
       Decap CMS。这是一个纯静态页面：没有服务器、没有数据库、没有 PHP。
       它通过 GitHub API 读写 content/ 下的 JSON 文件，编辑者的每一次保存

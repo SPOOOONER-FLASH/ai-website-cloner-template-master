@@ -82,7 +82,19 @@ export function SiteHeader() {
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
             <div className="col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12">
-              <nav className="flex gap-40 xl:gap-48">
+              {/*
+                `whitespace-nowrap` is load-bearing. Unwrapped, the five labels need
+                523px and the gaps at xl were 4 × 48px, for 715px inside a 680px column,
+                so flex shrank the two longest ("Product Finder", "Service + Downloads")
+                onto a second line. Since flex stretches every item to the tallest, the
+                single-line labels then sat top-aligned in a 48px box while the wrapped
+                ones filled it, and the row read as misaligned.
+
+                Gaps are sized against that 523px: 4 × 32px leaves 651px at xl, ~29px of
+                slack. nowrap also makes a future label edit fail visibly rather than
+                silently re-wrapping one item back into the same misalignment.
+              */}
+              <nav className="flex gap-24 whitespace-nowrap xl:gap-32">
                 {NAV_LINKS[locale].map((link) => {
                   const current = isCurrent(link.href);
                   return (
