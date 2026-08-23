@@ -1,0 +1,74 @@
+{
+  "model": "DV08 SN",
+  "slug": "dv08-sn-door-viewer",
+  "name": "Door viewer",
+  "series": "Door viewer",
+  "categoryPath": [
+    "hardware-accessories",
+    "door-viewers"
+  ],
+  "summary": "Zinc alloy door viewer.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "zinc alloy"
+    },
+    {
+      "label": "Finish",
+      "value": "CP, PB, SC, SN, N, AB, AC, ORB"
+    },
+    {
+      "label": "Function",
+      "value": "Monitoring Outdoor"
+    }
+  ],
+  "material": "zinc alloy",
+  "finishes": [
+    "CP",
+    "PB",
+    "SC",
+    "SN",
+    "N",
+    "AB",
+    "AC",
+    "ORB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/dv08-sn-door-viewer.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland DV08 SN door viewer"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/dv08-sn-door-viewer-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV08 SN door viewer, view 2"
+    },
+    {
+      "src": "/images/products/dv08-sn-door-viewer-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV08 SN door viewer, view 3"
+    },
+    {
+      "src": "/images/products/dv08-sn-door-viewer-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV08 SN door viewer, view 4"
+    },
+    {
+      "src": "/images/products/dv08-sn-door-viewer-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV08 SN door viewer, view 5"
+    },
+    {
+      "src": "/images/products/dv08-sn-door-viewer-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV08 SN door viewer, view 6"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DV08 SN Door viewer | Canton Hyland",
+  "seoDescription": "Zinc alloy door viewer."
+}

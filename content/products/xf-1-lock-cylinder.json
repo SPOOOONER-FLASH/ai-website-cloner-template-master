@@ -1,0 +1,67 @@
+{
+  "model": "XF-1",
+  "slug": "xf-1-lock-cylinder",
+  "name": "Lock Cylinder",
+  "series": "Lock Cylinder",
+  "categoryPath": [
+    "lock-cylinders"
+  ],
+  "summary": "Hardened Steel (HRC58) lock cylinder.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Hardened Steel (HRC58)"
+    },
+    {
+      "label": "Function",
+      "value": "Anti-Drill & Anti-Pry Cylinder Protection"
+    },
+    {
+      "label": "Installation",
+      "value": "Concealed Internal Fixing (Through-bolt)"
+    },
+    {
+      "label": "Application",
+      "value": "Armored Doors / Security Doors / Entrance Doors"
+    }
+  ],
+  "material": "Hardened Steel (HRC58)",
+  "finishes": [],
+  "doorTypes": [
+    "Armored Doors",
+    "Security Doors",
+    "Entrance Doors"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/xf-1-lock-cylinder.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland XF-1 lock cylinder"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/xf-1-lock-cylinder-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland XF-1 lock cylinder, view 2"
+    },
+    {
+      "src": "/images/products/xf-1-lock-cylinder-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland XF-1 lock cylinder, view 3"
+    },
+    {
+      "src": "/images/products/xf-1-lock-cylinder-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland XF-1 lock cylinder, view 4"
+    },
+    {
+      "src": "/images/products/xf-1-lock-cylinder-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland XF-1 lock cylinder, view 5"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "XF-1 Lock Cylinder | Canton Hyland",
+  "seoDescription": "Hardened Steel (HRC58) lock cylinder."
+}

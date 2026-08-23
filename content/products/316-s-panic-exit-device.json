@@ -1,0 +1,58 @@
+{
+  "model": "316-S",
+  "slug": "316-s-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Panic exit device.",
+  "specs": [
+    {
+      "label": "Door Type",
+      "value": "Single Door"
+    },
+    {
+      "label": "Application",
+      "value": "Fire Doors, Emergency Exit Doors"
+    },
+    {
+      "label": "Installation",
+      "value": "Surface Mounted"
+    }
+  ],
+  "material": "",
+  "finishes": [],
+  "doorTypes": [
+    "Single Door",
+    "Fire Doors",
+    "Emergency Exit Doors"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/316-s-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 316-S panic exit device"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/316-s-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 316-S panic exit device, view 2"
+    },
+    {
+      "src": "/images/products/316-s-panic-exit-device-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 316-S panic exit device, view 3"
+    },
+    {
+      "src": "/images/products/316-s-panic-exit-device-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 316-S panic exit device, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "316-S Panic Exit Device | Canton Hyland",
+  "seoDescription": "Panic exit device."
+}

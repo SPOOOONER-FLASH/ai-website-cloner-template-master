@@ -1,0 +1,74 @@
+{
+  "model": "DSL02",
+  "slug": "dsl02-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Stainless Steel 304 panic exit device.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304"
+    },
+    {
+      "label": "Installation",
+      "value": "Surface Mounted"
+    },
+    {
+      "label": "Application",
+      "value": "Fire Doors / Commercial Double Doors"
+    },
+    {
+      "label": "Function",
+      "value": "Automatic Door Sequencing"
+    },
+    {
+      "label": "Feature",
+      "value": "Adjustable Closing Force"
+    },
+    {
+      "label": "Usage",
+      "value": "Schools / Hospitals / Office Buildings / Commercial Projects"
+    }
+  ],
+  "material": "Stainless Steel 304",
+  "finishes": [],
+  "doorTypes": [
+    "Fire Doors",
+    "Commercial Double Doors"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/dsl02-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland DSL02 panic exit device"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/dsl02-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DSL02 panic exit device, view 2"
+    },
+    {
+      "src": "/images/products/dsl02-panic-exit-device-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DSL02 panic exit device, view 3"
+    },
+    {
+      "src": "/images/products/dsl02-panic-exit-device-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DSL02 panic exit device, view 4"
+    },
+    {
+      "src": "/images/products/dsl02-panic-exit-device-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DSL02 panic exit device, view 5"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DSL02 Panic Exit Device | Canton Hyland",
+  "seoDescription": "Stainless Steel 304 panic exit device."
+}

@@ -312,3 +312,55 @@ collections:
               - { name: "language", label: "语言", widget: "string", default: "en" }
               - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
               - { name: "updatedAt", label: "最后更新日期", widget: "date", format: "YYYY-MM-DD" }
+
+  # ---------------------------------------------------------------------------
+  # 网站设置。三项都是单文件集合 —— 它们各自只有一份，没有"列表"可言。
+  - name: "site"
+    label: "网站设置"
+    files:
+      - name: "promo"
+        label: "弹窗公告"
+        file: "content/promo.json"
+        format: "json"
+        fields:
+          - { name: "enabled", label: "启用弹窗", widget: "boolean", default: true, hint: "关掉之后弹窗完全不渲染，不只是隐藏。" }
+          - { name: "name", label: "活动名称（仅后台可见）", widget: "string" }
+          - name: "version"
+            label: "版本号"
+            widget: "number"
+            value_type: "int"
+            hint: "⚠ 改这个数字会让所有人重新看到弹窗，冷却清零。换一轮新活动时 +1；只是改错别字就别动它，否则每个访客都会被再打扰一次。"
+          - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
+          - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
+          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
+          - { name: "cooldownHours", label: "关掉后隔多少小时再弹", widget: "number", value_type: "int", default: 72 }
+          - name: "surfaces"
+            label: "在哪些页面显示"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "首页", value: "home" }
+              - { label: "产品列表页", value: "products" }
+              - { label: "产品详情页", value: "product-detail" }
+              - { label: "案例页", value: "projects" }
+              - { label: "新闻页", value: "news" }
+            hint: "一个都不选就等于不显示 —— 这比默认全站显示安全。"
+          - { name: "title", label: "标题（粗体行）", widget: "string" }
+          - { name: "titleLight", label: "标题（细体行）", widget: "string", required: false }
+          - { name: "body", label: "正文", widget: "text" }
+          - { name: "ctaLabel", label: "按钮文字", widget: "string" }
+          - { name: "ctaHref", label: "按钮链接", widget: "string", hint: "站内路径如 /contact/，或下载文件如 /downloads/xxx.pdf。" }
+          - name: "visual"
+            label: "左侧画面"
+            widget: "select"
+            options:
+              - { label: "品牌标识（黑底白字，无需素材）", value: "logo" }
+              - { label: "自选图片", value: "image" }
+          - name: "image"
+            label: "图片（左侧选「自选图片」时才用）"
+            widget: "object"
+            required: false
+            fields:
+              - { name: "src", label: "图片", widget: "image", required: false }
+              - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+              - { name: "label", label: "替代文字 (alt)", widget: "string", required: false }

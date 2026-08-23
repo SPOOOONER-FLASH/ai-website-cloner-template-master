@@ -6,6 +6,11 @@
     <!-- 后台是工具，不是给搜索引擎收录的页面。 -->
     <meta name="robots" content="noindex, nofollow" />
     <title>Canton Hyland — 内容后台</title>
+    <!--
+      后台皮肤。独立成文件而不是内联，因为它已经有几百行，
+      而且升级 Decap 时需要单独对着它核对选择器。
+    -->
+    <link rel="stylesheet" href="/admin/admin.css" />
     <style>
       /*
         提示卡片放右下角，不放顶部。
@@ -82,5 +87,10 @@
       而且在这里锁定版本可以让升级变成一个有意识的动作。
     -->
     <script src="https://unpkg.com/decap-cms@3.9.0/dist/decap-cms.js"></script>
+    <!--
+      预览模板。必须排在上面那个 bundle 之后 —— 它调用 window.CMS 和 window.h，
+      两个都是 bundle 加载时才挂上去的。
+    -->
+    <script src="/admin/preview.js"></script>
   </body>
 </html>

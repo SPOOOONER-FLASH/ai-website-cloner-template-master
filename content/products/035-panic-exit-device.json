@@ -1,0 +1,40 @@
+{
+  "model": "035",
+  "slug": "035-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Aluminium panic exit device.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "aluminium"
+    },
+    {
+      "label": "Use",
+      "value": "Fire door"
+    }
+  ],
+  "material": "aluminium",
+  "finishes": [],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/035-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 035 panic exit device"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/035-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 035 panic exit device, view 2"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "035 Panic Exit Device | Canton Hyland",
+  "seoDescription": "Aluminium panic exit device."
+}

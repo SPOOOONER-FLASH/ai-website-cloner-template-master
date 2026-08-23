@@ -1,0 +1,58 @@
+{
+  "model": "016",
+  "slug": "016-exterior-trim",
+  "name": "Exterior Trim",
+  "series": "Exterior Trim",
+  "categoryPath": [
+    "panic-exit-devices",
+    "exterior-trim"
+  ],
+  "summary": "Exterior trim.",
+  "specs": [
+    {
+      "label": "Finish",
+      "value": "Powder Coating"
+    },
+    {
+      "label": "Color",
+      "value": "Black"
+    },
+    {
+      "label": "Customization",
+      "value": "OEM & ODM Available"
+    }
+  ],
+  "material": "",
+  "finishes": [
+    "Powder Coating",
+    "Black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/016-exterior-trim.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 016 exterior trim"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/016-exterior-trim-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 016 exterior trim, view 2"
+    },
+    {
+      "src": "/images/products/016-exterior-trim-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 016 exterior trim, view 3"
+    },
+    {
+      "src": "/images/products/016-exterior-trim-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 016 exterior trim, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "016 Exterior Trim | Canton Hyland",
+  "seoDescription": "Exterior trim."
+}

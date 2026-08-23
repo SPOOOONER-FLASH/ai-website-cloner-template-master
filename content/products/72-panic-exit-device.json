@@ -1,0 +1,67 @@
+{
+  "model": "72",
+  "slug": "72-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Iron panic exit device, 65mm backset.",
+  "specs": [
+    {
+      "label": "Application",
+      "value": "Fire door"
+    },
+    {
+      "label": "Material",
+      "value": "Iron"
+    },
+    {
+      "label": "Finish",
+      "value": "SS"
+    },
+    {
+      "label": "Backset",
+      "value": "65mm"
+    },
+    {
+      "label": "Color",
+      "value": "Painted optional."
+    }
+  ],
+  "material": "Iron",
+  "finishes": [
+    "SS",
+    "Painted optional."
+  ],
+  "doorTypes": [
+    "Fire door"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/72-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 72 panic exit device"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/72-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 72 panic exit device, view 2"
+    },
+    {
+      "src": "/images/products/72-panic-exit-device-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 72 panic exit device, view 3"
+    },
+    {
+      "src": "/images/products/72-panic-exit-device-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 72 panic exit device, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "72 Panic Exit Device | Canton Hyland",
+  "seoDescription": "Iron panic exit device, 65mm backset."
+}

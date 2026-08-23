@@ -252,8 +252,46 @@ for (const rec of records) {
   });
 }
 
+/**
+ * Collapse records that would land on the same slug.
+ *
+ * The legacy site lists some products more than once — model 70SN appears five times as
+ * a lock cylinder, every copy with identical specifications and a different photo set.
+ * Writing them out separately used to mean last-writer-wins, silently losing six
+ * records; giving them -2/-3 suffixes instead would publish five near-identical pages,
+ * which is duplicate content to a search engine and a confusing catalogue to a buyer.
+ *
+ * Same model plus same category is treated as one product, and the duplicate listings
+ * contribute their photography to it.
+ */
+const merged = new Map();
+const mergedFrom = [];
+
+for (const entry of plan) {
+  const existingEntry = merged.get(entry.slug);
+  if (!existingEntry) {
+    merged.set(entry.slug, entry);
+    continue;
+  }
+  const before = existingEntry.images.length;
+  existingEntry.images = [...new Set([...existingEntry.images, ...entry.images])];
+  existingEntry.droppedImages += entry.droppedImages;
+  // Prefer whichever copy actually carried a spec table.
+  if (!existingEntry.specs.length && entry.specs.length) existingEntry.specs = entry.specs;
+  mergedFrom.push(
+    `${entry.slug} ← aid ${entry.aid} (${entry.images.length} 图, 合并后 ${before} → ${existingEntry.images.length})`,
+  );
+}
+
+plan.length = 0;
+plan.push(...merged.values());
+
 console.log(`旧站记录 ${records.length}`);
 console.log(`可导入   ${plan.length}`);
+if (mergedFrom.length) {
+  console.log(`合并重复 ${mergedFrom.length} 条（同型号同分类，旧站重复挂牌）:`);
+  mergedFrom.forEach((m) => console.log(`   ${m}`));
+}
 console.log(`跳过     重复 ${skipped.duplicate.length} · 无分类 ${skipped.noCategory.length} · 无型号 ${skipped.noModel.length}`);
 console.log(`图片     可用 ${plan.reduce((s, p) => s + p.images.length, 0)} · 因水印丢弃 ${plan.reduce((s, p) => s + p.droppedImages, 0)}`);
 console.log(`规格行   ${plan.reduce((s, p) => s + p.specs.length, 0)}`);

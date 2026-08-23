@@ -1,0 +1,56 @@
+{
+  "model": "DC01",
+  "slug": "dc01-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Iron with zinc-plated finish panic exit device.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Iron with zinc-plated finish"
+    },
+    {
+      "label": "Function",
+      "value": "Automatic closing / speed & force control"
+    },
+    {
+      "label": "Application",
+      "value": "Fire doors / double doors"
+    },
+    {
+      "label": "Installation",
+      "value": "Surface mounted, screw fixed"
+    }
+  ],
+  "material": "Iron with zinc-plated finish",
+  "finishes": [],
+  "doorTypes": [
+    "Fire doors",
+    "double doors"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/dc01-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland DC01 panic exit device"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/dc01-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DC01 panic exit device, view 2"
+    },
+    {
+      "src": "/images/products/dc01-panic-exit-device-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DC01 panic exit device, view 3"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DC01 Panic Exit Device | Canton Hyland",
+  "seoDescription": "Iron with zinc-plated finish panic exit device."
+}

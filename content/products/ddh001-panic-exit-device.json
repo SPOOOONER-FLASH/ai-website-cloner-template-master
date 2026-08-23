@@ -1,0 +1,39 @@
+{
+  "model": "DDH001",
+  "slug": "ddh001-panic-exit-device",
+  "name": "Panic Exit Device",
+  "series": "Panic Exit Device",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "summary": "Iron panic exit device, 175x53x73mm.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Iron"
+    },
+    {
+      "label": "Application",
+      "value": "Fire double door"
+    },
+    {
+      "label": "Size",
+      "value": "175x53x73mm"
+    }
+  ],
+  "material": "Iron",
+  "finishes": [],
+  "doorTypes": [
+    "Fire double door"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "ratio": "1 / 1",
+    "label": "Hyland DDH001 panic exit device"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DDH001 Panic Exit Device | Canton Hyland",
+  "seoDescription": "Iron panic exit device, 175x53x73mm."
+}

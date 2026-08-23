@@ -1,0 +1,58 @@
+{
+  "model": "DC02",
+  "slug": "dc02-door-coordinator",
+  "name": "Door Coordinator",
+  "series": "Door Coordinator",
+  "categoryPath": [
+    "hardware-accessories"
+  ],
+  "summary": "Zinc-Plated Steel door coordinator.",
+  "specs": [
+    {
+      "label": "Application",
+      "value": "Double-Leaf Doors"
+    },
+    {
+      "label": "Material",
+      "value": "Zinc-Plated Steel"
+    },
+    {
+      "label": "Color",
+      "value": "Silver"
+    },
+    {
+      "label": "Surface Finish",
+      "value": "Zinc Plated"
+    }
+  ],
+  "material": "Zinc-Plated Steel",
+  "finishes": [
+    "Silver",
+    "Zinc Plated"
+  ],
+  "doorTypes": [
+    "Double-Leaf Doors"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/dc02-door-coordinator.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland DC02 door coordinator"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/dc02-door-coordinator-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DC02 door coordinator, view 2"
+    },
+    {
+      "src": "/images/products/dc02-door-coordinator-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DC02 door coordinator, view 3"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DC02 Door Coordinator | Canton Hyland",
+  "seoDescription": "Zinc-Plated Steel door coordinator."
+}
