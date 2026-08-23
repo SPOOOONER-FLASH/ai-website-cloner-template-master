@@ -259,6 +259,74 @@ ws.cell(
     value="另外：旧站共有 424 个产品，我们网站目前 20 个。是否继续批量导入，等甲方定。",
 ).font = NOTE
 
+# ── 5. Products carrying no photography at all ──────────────────────────────────
+no_image = DATA.get("noImage", [])
+if no_image:
+    ws = sheet(
+        wb,
+        "⑤缺图产品清单",
+        f"没有任何图片的产品 —— 共 {len(no_image)} 个",
+        "这些产品在旧站上只有 2022 那批水印图，按约定未采用，所以详情页现在显示占位方块。"
+        "这是拍照或重新导出的工作清单，可直接按分类分批处理。",
+        ["型号", "产品名称", "分类", "旧站有几张水印图", "旧站产品页"],
+        [22, 30, 26, 18, 62],
+    )
+
+    row = 5
+    # Group by category so the client can brief a shoot one category at a time.
+    for item in sorted(no_image, key=lambda x: (x["category"], x["model"])):
+        row = write_row(
+            ws,
+            row,
+            [
+                item["model"],
+                item["name"],
+                item["category"],
+                item["dropped"] or "—",
+                item["legacyUrl"],
+            ],
+            fill=FILL_WARN,
+        )
+
+    for r in range(5, row):
+        cell = ws.cell(row=r, column=5)
+        if cell.value:
+            cell.font = LINK
+            cell.hyperlink = cell.value
+
+    ws.cell(row=row + 1, column=1, value="合计").font = Font(name=FONT, size=10, bold=True)
+    total_cell = ws.cell(row=row + 1, column=2, value=f"=COUNTA(A5:A{row - 1})")
+    total_cell.font = Font(name=FONT, size=10, bold=True)
+
+    ws.cell(
+        row=row + 3,
+        column=1,
+        value="两条路：① 甲方提供无水印原图（最快，图本来就存在，只是被水印毁了）；"
+        "② 重新拍摄。建议先做前 100 个高频型号，不必一次拍完 282 个。",
+    ).font = NOTE
+
+# ── 6. Products with no specification table ─────────────────────────────────────
+no_spec = DATA.get("noSpec", [])
+if no_spec:
+    ws = sheet(
+        wb,
+        "⑥缺规格产品",
+        f"规格表为空的产品 —— 共 {len(no_spec)} 个",
+        "旧站这些页面本身就没有规格行。详情页显示「尺寸待确认」的空状态，"
+        "没有从相似产品推断任何数值。",
+        ["型号", "产品名称", "分类", "需要甲方提供"],
+        [22, 34, 26, 40],
+    )
+
+    row = 5
+    for item in sorted(no_spec, key=lambda x: (x["category"], x["model"])):
+        row = write_row(
+            ws,
+            row,
+            [item["model"], item["name"], item["category"], "材质、尺寸、表面处理"],
+            fill=FILL_WARN,
+        )
+
 OUT.parent.mkdir(parents=True, exist_ok=True)
 wb.save(OUT)
 print(f"→ {OUT.relative_to(ROOT)}")
