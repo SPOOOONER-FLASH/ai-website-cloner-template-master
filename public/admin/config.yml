@@ -77,6 +77,16 @@ collections:
         field: { name: "segment", label: "层级", widget: "string" }
         hint: "先填一级分类，再填子分类。必须和「分类与下载」里的分类一致。"
       - { name: "summary", label: "简介", widget: "text", hint: "一到两句话。用在卡片和列表上。" }
+      - name: "description"
+        label: "产品详情描述"
+        widget: "markdown"
+        required: false
+        # 只开放这几个按钮。粗体、标题、列表、链接够用了；
+        # 关掉的是「代码块」和「HTML 源码」—— 从阿里或别的平台复制过来的内容
+        # 会带着内联样式和字体标签一起进来，那正是一个页面上出现三种字体的原因。
+        buttons: ["bold", "italic", "heading-two", "heading-three", "bulleted-list", "numbered-list", "link"]
+        editor_components: []
+        hint: "长篇介绍。支持加粗、标题、项目符号和链接。留空则详情页只显示上面那句简介，不会有空白模块。"
       - name: "specs"
         label: "规格表"
         label_singular: "规格"

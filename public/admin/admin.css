@@ -1,0 +1,270 @@
+/*
+  后台皮肤 —— 把 Decap 的默认界面改成接近 UEESHOP 的观感。
+  ===========================================================================
+
+  为什么可以这样改：Decap 用 emotion 生成类名，但保留了组件名后缀
+  （css-a1b2c3-SidebarNavLink），所以 [class*="-SidebarNavLink"] 这种属性选择器
+  是稳定的。版本在 index.html 里锁死在 3.9.0，升级时需要重新核对这些选择器。
+
+  ⚠ 这里的圆角和阴影不违反站点设计规则。那套规则（0-2px 圆角、无阴影、
+  品牌红只用于可点击元素）约束的是对外的网站；后台是内部工具，甲方明确要求
+  照 UEESHOP 的样子做，两者是不同的设计语境。
+
+  排版目标（甲方原话）：页面太长、要宽一点、要让不懂代码的同事能用。
+  所以短字段两栏并排、内容区放宽、字段说明始终可见而不是折叠起来。
+*/
+
+:root {
+  --ad-bg: #eef1f6;
+  --ad-card: #ffffff;
+  --ad-line: #e6eaf0;
+  --ad-ink: #1f2329;
+  --ad-ink-2: #646a73;
+  --ad-ink-3: #8f959e;
+  --ad-green: #07c160;
+  --ad-green-dark: #06ad56;
+  --ad-green-tint: #e8f9f0;
+  --ad-amber-tint: #fff8e1;
+  --ad-radius: 8px;
+  --ad-shadow: 0 1px 3px rgba(31, 35, 41, 0.06);
+}
+
+/* ---------- 全局 ---------- */
+
+#nc-root,
+#nc-root input,
+#nc-root textarea,
+#nc-root select,
+#nc-root button {
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+#nc-root [class*="-AppMainContainer"],
+#nc-root [class*="-CollectionContainer"] {
+  background: var(--ad-bg);
+}
+
+/*
+  内容区放宽。Decap 默认给主容器一个较窄的 max-width，在 1512px 的屏幕上
+  两侧各留了两百多像素的空白，同时把表单挤成很长的一条。
+*/
+#nc-root [class*="-AppMainContainer"] {
+  max-width: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ---------- 顶栏 ---------- */
+
+#nc-root [class*="-AppHeader"] {
+  background: var(--ad-card);
+  border-bottom: 1px solid var(--ad-line);
+  box-shadow: none;
+}
+
+#nc-root [class*="-AppHeaderContent"] {
+  max-width: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#nc-root [class*="-AppHeaderNavLink"] {
+  color: var(--ad-ink-2);
+  border-radius: 6px;
+}
+
+#nc-root [class*="-AppHeaderNavLink"]:hover {
+  background: var(--ad-bg);
+  color: var(--ad-ink);
+}
+
+/* ---------- 左侧菜单 ---------- */
+
+#nc-root [class*="-SidebarContainer"] {
+  background: var(--ad-card);
+  border: 1px solid var(--ad-line);
+  border-radius: var(--ad-radius);
+  box-shadow: var(--ad-shadow);
+}
+
+#nc-root [class*="-SidebarHeading"] {
+  color: var(--ad-ink-3);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+#nc-root [class*="-SidebarNavLink"] {
+  border-radius: 6px;
+  color: var(--ad-ink-2);
+  font-weight: 500;
+  margin: 2px 8px;
+  padding: 10px 12px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+#nc-root [class*="-SidebarNavLink"]:hover {
+  background: var(--ad-bg);
+  color: var(--ad-ink);
+}
+
+/* 选中项做成 UEESHOP 那种绿色实心块 */
+#nc-root [class*="sidebarNavLinkActive"] {
+  background: var(--ad-green);
+  color: #fff;
+}
+
+#nc-root [class*="sidebarNavLinkActive"]:hover {
+  background: var(--ad-green-dark);
+  color: #fff;
+}
+
+#nc-root [class*="sidebarNavLinkActive"] svg {
+  fill: #fff;
+}
+
+/* ---------- 列表页 ---------- */
+
+#nc-root [class*="-CollectionTopContainer"] {
+  background: var(--ad-card);
+  border: 1px solid var(--ad-line);
+  border-radius: var(--ad-radius);
+  box-shadow: var(--ad-shadow);
+}
+
+#nc-root [class*="-CollectionTopHeading"] {
+  color: var(--ad-ink);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* 主按钮统一成绿色实心 */
+#nc-root [class*="-CollectionTopNewButton"],
+#nc-root [class*="-ToolbarButton"][class*="Publish"] {
+  background: var(--ad-green);
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#nc-root [class*="-CollectionTopNewButton"]:hover {
+  background: var(--ad-green-dark);
+  color: #fff;
+}
+
+#nc-root [class*="-GridCard"] {
+  border: 1px solid var(--ad-line);
+  border-radius: var(--ad-radius);
+  box-shadow: var(--ad-shadow);
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+
+#nc-root [class*="-GridCard"]:hover {
+  border-color: #c9d3e0;
+  box-shadow: 0 4px 12px rgba(31, 35, 41, 0.1);
+}
+
+#nc-root [class*="-SearchInput"] {
+  border-radius: 6px;
+}
+
+/* ---------- 编辑页：这是"页面太长"的主战场 ---------- */
+
+#nc-root [class*="-EditorContainer"] {
+  background: var(--ad-bg);
+}
+
+#nc-root [class*="-ToolbarContainer"] {
+  background: var(--ad-card);
+  border-bottom: 1px solid var(--ad-line);
+}
+
+#nc-root [class*="-ControlPaneContainer"] {
+  max-width: none;
+  padding: 20px 24px 60px;
+}
+
+/*
+  短字段两栏并排。
+
+  产品表单有二十多个字段，默认一字排开要滚很久。这里让表单容器变成两栏网格，
+  再把天然需要整行的控件（列表、对象、富文本、多行文本、图片）跨回整行 ——
+  一个 6 行的规格表塞进半栏没法看。
+*/
+@media (min-width: 1100px) {
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+    align-items: start;
+  }
+
+  /* 含复杂控件的字段占满整行 */
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has(textarea),
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has([class*="-ListControl"]),
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has([class*="-ObjectControl"]),
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has([class*="-ObjectWidgetTopBar"]),
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has([class*="markdown"]),
+  #nc-root [class*="-ControlPaneContainer"] > div:first-of-type > [class*="-ControlContainer"]:has([class*="-FileWidgetButton"]) {
+    grid-column: 1 / -1;
+  }
+}
+
+/*
+  每个字段做成一张小卡片，边界清楚，同事不容易填错行。
+
+  间距刻意收紧：产品表单有 19 个字段，默认边距下整页高度接近 5000px。
+  卡片本身已经把字段分隔开了，再靠大间距区分就是浪费纵向空间。
+*/
+#nc-root [class*="-ControlContainer"] {
+  background: var(--ad-card);
+  border: 1px solid var(--ad-line);
+  border-radius: var(--ad-radius);
+  box-shadow: var(--ad-shadow);
+  margin-bottom: 12px;
+  padding: 12px 14px 14px;
+}
+
+#nc-root [class*="-FieldLabel"] {
+  color: var(--ad-ink);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/*
+  字段说明常显，不缩成灰色小字。
+  这是给不写代码的同事看的 —— 规格表和认证那两条提示是有分量的警告，
+  藏起来就没意义了。
+*/
+#nc-root [class*="-ControlHint"] {
+  background: var(--ad-amber-tint);
+  border-radius: 4px;
+  color: #5c4a12;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 8px;
+  padding: 8px 10px;
+}
+
+#nc-root [class*="-ControlContainer"] input[type="text"],
+#nc-root [class*="-ControlContainer"] input[type="number"],
+#nc-root [class*="-ControlContainer"] textarea,
+#nc-root [class*="-ControlContainer"] select {
+  border-radius: 6px;
+}
+
+/* ---------- 预览面板 ---------- */
+
+#nc-root [class*="-PreviewPaneContainer"] {
+  background: var(--ad-bg);
+  border-left: 1px solid var(--ad-line);
+}
+
+#nc-root [class*="-PreviewPaneFrame"] {
+  background: var(--ad-card);
+  border-radius: var(--ad-radius);
+}

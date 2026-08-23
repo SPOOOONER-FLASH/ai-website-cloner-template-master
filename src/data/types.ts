@@ -92,6 +92,20 @@ export interface Product {
   /** One or two sentences for cards and listings. */
   summary: string;
   summaryZh?: string;
+  /**
+   * Long-form product copy, as Markdown.
+   *
+   * Optional and usually absent: the imported catalogue supplies a spec table but no
+   * prose, and the site does not invent any. When present it renders under the summary
+   * on the detail page.
+   *
+   * Markdown rather than raw HTML because the CMS writes this field and pasted HTML from
+   * a marketplace listing brings inline styles, font tags and tracking pixels with it —
+   * which is how a B2B catalogue ends up with three typefaces on one page. The editor
+   * still offers bold, italic, headings, lists and links; it just cannot smuggle in
+   * arbitrary markup.
+   */
+  description?: string;
   /** Full spec table. Row count varies by product type. */
   specs: SpecRow[];
   /** Base material, e.g. "Solid brass". */

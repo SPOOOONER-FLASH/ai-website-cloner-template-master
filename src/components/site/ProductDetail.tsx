@@ -5,6 +5,7 @@ import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
+import { Prose } from "./Prose";
 
 interface ProductDetailProps {
   product: Product;
@@ -94,6 +95,11 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
               <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
                 <div>
                   <p className="text-h3 text-ink">{product.summary}</p>
+                  {/* CMS-authored long copy. Absent on every imported record — the legacy
+                      catalogue carries specifications, not prose, and none is invented. */}
+                  {product.description ? (
+                    <Prose markdown={product.description} className="mt-24" />
+                  ) : null}
                   <dl className="mt-48 grid grid-cols-2 gap-x gap-y-32">
                     <ProductFact label="Material" values={[product.material].filter(Boolean)} />
                     <ProductFact label="Door type" values={product.doorTypes} />
