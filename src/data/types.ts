@@ -155,6 +155,55 @@ export interface Project {
 }
 
 /* -------------------------------------------------------------------------
+ * Promotional dialog
+ * ---------------------------------------------------------------------- */
+
+/** Which routes the dialog is allowed to interrupt. */
+export type PromoSurface = "home" | "products" | "product-detail" | "projects" | "news";
+
+/**
+ * The site-wide promotional dialog, modelled on FSB's newsletter popup.
+ *
+ * FSB decides visibility on the server: the browser posts its last-seen timestamp and
+ * the server answers with the markup or with nothing. A static export has no server, so
+ * every rule here is evaluated in the browser instead. The visible behaviour matches;
+ * what changes is that a determined visitor can clear localStorage and see it again,
+ * which is an acceptable trade for a marketing dialog.
+ */
+export interface PromoDialogConfig {
+  /** Master switch. False means the component renders nothing at all. */
+  enabled: boolean;
+  /** Internal label — never rendered, only to identify the campaign in the CMS. */
+  name: string;
+  /**
+   * Bump to force the dialog back in front of people who already dismissed it.
+   *
+   * FSB derives this from the content's edit time, so editing the copy resets everyone's
+   * cooldown. Here it is manual and deliberate: changing a typo should not re-interrupt
+   * every visitor, but a new campaign should.
+   */
+  version: number;
+  /** ISO dates, inclusive. Empty means no bound on that end. */
+  startAt?: string;
+  endAt?: string;
+  /** Seconds after load before it appears. FSB uses 20. */
+  delaySeconds: number;
+  /** Hours before a dismissed dialog may return. FSB uses 72. */
+  cooldownHours: number;
+  /** Routes it may appear on. Empty array means nowhere — a safer default than everywhere. */
+  surfaces: PromoSurface[];
+  /** Bold first line. */
+  title: string;
+  /** Second line, set in the lighter weight. */
+  titleLight?: string;
+  body: string;
+  /** Call to action. `href` may be internal or a file under /downloads. */
+  ctaLabel: string;
+  ctaHref: string;
+  image: ImageRef;
+}
+
+/* -------------------------------------------------------------------------
  * News
  * ---------------------------------------------------------------------- */
 

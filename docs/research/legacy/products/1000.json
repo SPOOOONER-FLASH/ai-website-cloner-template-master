@@ -1,0 +1,39 @@
+{
+  "aid": "1000",
+  "title": "JU-071-Door Closer",
+  "model": "JU-071",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Aluminum"
+    }
+  ],
+  "claimsForReview": [],
+  "unmatched": [
+    {
+      "label": "Door Width",
+      "value": "850mm"
+    },
+    {
+      "label": "Capacity",
+      "value": "25-45KG"
+    },
+    {
+      "label": "Closing Force",
+      "value": "14N.m"
+    },
+    {
+      "label": "Max opening angle",
+      "value": "180°"
+    }
+  ],
+  "images": [
+    "https://www.cantonlock.com/uploads/allimg/20221103/2-2211031J913318.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221103/2-2211031J9124M.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221103/2-2211031J914a0.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221103/2-2211031J915594.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221103/2-2211031J916107.jpg"
+  ],
+  "imageCount": 5,
+  "label": "JU-071"
+}

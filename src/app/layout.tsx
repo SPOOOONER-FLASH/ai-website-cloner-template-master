@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import {
   absoluteUrl,
@@ -83,6 +84,9 @@ export default function RootLayout({
           {children}
           <SiteFooter />
         </div>
+        {/* Last in the body so it cannot appear above the page's own content in the
+            reading order before a visitor has even seen the page. */}
+        <PromoDialog />
       </body>
     </html>
   );

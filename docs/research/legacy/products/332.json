@@ -1,0 +1,37 @@
+{
+  "aid": "332",
+  "title": "JU-072-Door Closer",
+  "model": "JU-072",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Aluminum"
+    }
+  ],
+  "claimsForReview": [],
+  "unmatched": [
+    {
+      "label": "Door Width",
+      "value": "1050mm"
+    },
+    {
+      "label": "Capacity",
+      "value": "40-65KG"
+    },
+    {
+      "label": "Closing Force",
+      "value": "28N.m"
+    },
+    {
+      "label": "Max opening angle",
+      "value": "180°"
+    }
+  ],
+  "images": [
+    "https://www.cantonlock.com/uploads/allimg/20221102/2-221102160335I7.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221102/2-2211021556493J.jpg",
+    "https://www.cantonlock.com/uploads/allimg/20221102/2-221102155A1P5.jpg"
+  ],
+  "imageCount": 3,
+  "label": "JU-072"
+}
