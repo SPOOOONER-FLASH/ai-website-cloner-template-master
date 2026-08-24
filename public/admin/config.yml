@@ -689,3 +689,26 @@ collections:
               - { name: "facebookPixelId", label: "Facebook 像素 ID", widget: "string", required: false }
               - { name: "tiktokPixelId", label: "TikTok 像素 ID", widget: "string", required: false }
             hint: "留空就完全不输出对应代码。填了才会加载 —— 空着的 ID 如果也渲染出脚本，等于每次打开页面都向对方发一次什么都没统计到的请求。"
+
+      - name: "faq"
+        label: "常见问题"
+        file: "content/faq.json"
+        format: "json"
+        fields:
+          - name: "groups"
+            label: "问题分组"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "分组标题", widget: "string" }
+              - name: "items"
+                label: "问题"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { name: "question", label: "问题", widget: "string" }
+                  - name: "answer"
+                    label: "回答"
+                    widget: "text"
+                    required: false
+                    hint: "⚠ 留空的问题不会显示在网站上，也不会进结构化数据 —— 这是刻意的。起订量、交期、付款方式、OEM 政策这些只有甲方能回答，编一个听起来合理的答案会被采购商拿去引用。不确定就留空，页面上少一条比错一条好。"

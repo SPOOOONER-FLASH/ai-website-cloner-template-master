@@ -1,4 +1,5 @@
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
+import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
 import type { NewsArticle, Product } from "@/data/types";
 
@@ -159,4 +160,31 @@ export function itemListSchema(name: string, urls: string[]) {
     numberOfItems: urls.length,
     itemListElement: urls.map((url, i) => ({ "@type": "ListItem", position: i + 1, url })),
   };
+}
+
+/**
+ * FAQPage structured data.
+ *
+ * Only answered questions are emitted — the same set the page renders. Google treats a
+ * FAQPage whose answers do not appear on the page as a spam signal, so the two must not
+ * be allowed to drift apart.
+ */
+export function FaqJsonLd() {
+  const groups = getAnsweredFaq();
+  const items = groups.flatMap((group) => group.items);
+  if (!items.length) return null;
+
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: items.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
+      }}
+    />
+  );
 }

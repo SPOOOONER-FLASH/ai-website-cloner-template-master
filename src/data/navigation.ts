@@ -46,6 +46,18 @@ export interface SiteSettings {
     facebookPixelId: string;
     tiktokPixelId: string;
   };
+  /**
+   * The Alibaba storefront.
+   *
+   * This site's job is to produce enquiries by email and to hand buyers who already work
+   * through Alibaba a direct route there — those are the two ways a customer actually
+   * reaches this company. An empty storefront hides the link rather than rendering a
+   * dead one.
+   */
+  alibaba: {
+    storefront: string;
+    label: string;
+  };
 }
 
 export const headerNav = navigation.header as NavLink[];

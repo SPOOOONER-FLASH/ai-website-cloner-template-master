@@ -2,6 +2,7 @@ import { products } from "@/data/products";
 import { projects } from "@/data/projects";
 import { news } from "@/data/news";
 import { categories } from "@/data/categories";
+import { faqGroups, getUnansweredFaq } from "@/data/faq";
 import type { Product } from "@/data/types";
 
 /**
@@ -68,6 +69,7 @@ export function buildHealthReport(): HealthSection[] {
   }
   const emptyCategories = categories.filter((c) => !productsPerCategory.get(c.slug));
 
+  const unansweredFaq = getUnansweredFaq();
   const draftNews = news.filter((n) => n.draft).length;
   const verifiedProjects = projects.filter(
     (p) => p.referenceStatus === "verified-project",
@@ -165,6 +167,15 @@ export function buildHealthReport(): HealthSection[] {
               ? "新闻板块已建好但还没有内容，列表页显示空状态。"
               : undefined,
           tone: news.length === 0 ? "warn" : "good",
+        },
+        {
+          label: "常见问题未回答",
+          value: unansweredFaq.length,
+          total: faqGroups.reduce((n, g) => n + g.items.length, 0),
+          action: unansweredFaq.length
+            ? `不会显示在网站上，等甲方回答：${unansweredFaq.map((q) => q.question).join("；")}`
+            : undefined,
+          tone: unansweredFaq.length ? "warn" : "good",
         },
         {
           label: "新闻草稿",

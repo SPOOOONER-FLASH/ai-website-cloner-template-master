@@ -1,0 +1,80 @@
+{
+  "groups": [
+    {
+      "title": "Ordering and samples",
+      "items": [
+        {
+          "question": "What is your minimum order quantity?",
+          "answer": ""
+        },
+        {
+          "question": "What are your lead times?",
+          "answer": ""
+        },
+        {
+          "question": "Can I order samples before placing a production order?",
+          "answer": ""
+        },
+        {
+          "question": "What payment terms do you accept?",
+          "answer": ""
+        },
+        {
+          "question": "Can I order through Alibaba instead of by email?",
+          "answer": "Yes. Our verified storefront carries the same catalogue and is often the faster route if you already buy through Alibaba — trade assurance, messaging and payment are handled there. For project schedules, custom finishes or master key systems, email is usually better because those need a technical conversation first."
+        }
+      ]
+    },
+    {
+      "title": "Products and specification",
+      "items": [
+        {
+          "question": "Do you provide dimensional drawings?",
+          "answer": "Dimensional drawings are available for most products on request. Send the model number and we will reply with what we hold for it. Where a drawing is not yet published on this site, it is because we have not verified it against the current production tooling — not because it does not exist."
+        },
+        {
+          "question": "Can you supply master key and construction key systems?",
+          "answer": "Yes. Master key and construction key systems are a long-standing specialism. These are planned per project rather than ordered from a catalogue, so start with the door schedule and we will work back from it."
+        },
+        {
+          "question": "Which finishes are available?",
+          "answer": "Available finishes are listed on each product page under Configuration. Where a product page shows no finishes, that information has not yet been verified for that model and we would rather leave it blank than guess."
+        },
+        {
+          "question": "Can you produce to our own design or branding (OEM / ODM)?",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "title": "Standards and certification",
+      "items": [
+        {
+          "question": "Is Canton Hyland ISO 9001 certified?",
+          "answer": "Yes. The company has held ISO 9001 certification since 2002."
+        },
+        {
+          "question": "Are your panic exit devices EN 1125 certified?",
+          "answer": "Test reports exist for specific models rather than for the range as a whole. We publish each report with the exact model it names, and we do not extend a certificate from one model to a sibling product. Ask about the model you intend to specify and we will send the report that covers it, or tell you plainly if there is not one."
+        },
+        {
+          "question": "Can you supply test reports and certificates for a tender?",
+          "answer": "Yes. Tell us the models on the schedule and we will send the reports that name them, with their issue dates and scope."
+        }
+      ]
+    },
+    {
+      "title": "The company",
+      "items": [
+        {
+          "question": "Where are your products manufactured?",
+          "answer": "In Guangdong, China. Canton Hyland Hardware (Group) Co., Ltd. has manufactured commercial and residential door hardware since 1998."
+        },
+        {
+          "question": "Do you export worldwide?",
+          "answer": ""
+        }
+      ]
+    }
+  ]
+}

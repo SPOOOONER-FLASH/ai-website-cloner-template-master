@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { socialLinks } from "@/data/site";
-import { siteSettings } from "@/data/navigation";
+import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
 
 /**
@@ -85,6 +85,38 @@ export function SiteFooter() {
                   {isSpanish ? "Solicitar información" : "Sign-up here"}
                 </ArrowLink>
               </div>
+            </div>
+
+            {/*
+              The two routes a buyer actually uses. Email is the one this site is built
+              to produce; Alibaba is where anyone who already sources that way expects to
+              find us, and until now the site did not link there at all.
+            */}
+            <div className="col-span-2 space-y-24 sm:col-span-4 md:col-span-7 md:row-start-2 lg:col-span-8 xl:col-span-12">
+              <h3 className="text-h3 text-ink">
+                {isSpanish ? "Cómo comprar" : "How to buy"}
+              </h3>
+              <ul className="space-y-16">
+                {footerNav.map((link) => (
+                  <li key={link.href}>
+                    <ArrowLink href={localisedHref(link.href, locale)}>
+                      {navLabel(link, locale)}
+                    </ArrowLink>
+                  </li>
+                ))}
+                {siteSettings.alibaba.storefront ? (
+                  <li>
+                    <a
+                      href={siteSettings.alibaba.storefront}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {siteSettings.alibaba.label}
+                    </a>
+                  </li>
+                ) : null}
+              </ul>
             </div>
 
             <div className="col-span-2 space-y-24 sm:col-span-4 md:row-span-2 md:[grid-column-end:-1] lg:[grid-column:span_3/-1] xl:[grid-column:span_4/-1]">

@@ -82,8 +82,8 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
 }) {
   const [query, setQuery] = useState("");
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
-  const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const fetchStarted = useRef(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const restoreFocusTo = useRef<Element | null>(null);
 
@@ -91,18 +91,37 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     ? { heading: "Introduce tu búsqueda", label: "Buscar", close: "Cerrar", empty: "Sin resultados", loading: "Cargando…" }
     : { heading: "Enter your search term", label: "Search", close: "Close", empty: "No results", loading: "Loading…" };
 
-  // Fetch the index once, on first open.
+  /*
+    Loading is derived, not stored. An open dialog with no index yet IS the loading
+    state, so keeping a second boolean in sync with it would only create a way for the
+    two to disagree — and setting it inside the effect was a synchronous state update
+    that cascaded a render before the fetch had even begun.
+
+    The in-flight guard is a ref for the same reason.
+  */
+  const loading = open && index === null;
+
   useEffect(() => {
-    if (!open || index || loading) return;
-    setLoading(true);
-    fetch("/search-index.json")
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((data: IndexEntry[]) => setIndex(data))
-      // A failed index leaves the dialog usable but empty rather than throwing into the
-      // page. Search is not worth breaking a product page over.
-      .catch(() => setIndex([]))
-      .finally(() => setLoading(false));
-  }, [open, index, loading]);
+    if (!open || index || fetchStarted.current) return;
+    fetchStarted.current = true;
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const response = await fetch("/search-index.json");
+        const data: IndexEntry[] = response.ok ? await response.json() : [];
+        if (!cancelled) setIndex(data);
+      } catch {
+        // A failed index leaves the dialog usable but empty rather than throwing into
+        // the page. Search is not worth breaking a product page over.
+        if (!cancelled) setIndex([]);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [open, index]);
 
   useEffect(() => {
     if (!open) return;
