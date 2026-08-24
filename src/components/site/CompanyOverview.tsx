@@ -20,6 +20,7 @@ const copy = {
     context: "Materials + technical context",
     contextBody:
       "These representative studies express architectural and finish context through metal, limestone, timber and glass. They are editorial concepts, not photographs of Canton Hyland facilities or completed client projects.",
+    contextImageNote: "Representative material study — editorial concept",
     gallery: "Architectural + material studies",
     quality: "Quality and test evidence",
     qualityBody:
@@ -39,6 +40,7 @@ const copy = {
     context: "Materiales + contexto técnico",
     contextBody:
       "Estos estudios representativos expresan el contexto arquitectónico y de acabados mediante metal, piedra caliza, madera y vidrio. Son conceptos editoriales, no fotografías de las instalaciones de Canton Hyland ni de proyectos terminados de clientes.",
+    contextImageNote: "Estudio representativo de materiales — concepto editorial",
     gallery: "Estudios arquitectónicos + materiales",
     quality: "Calidad y ensayos",
     qualityBody:
@@ -79,6 +81,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
                 companyEditorialStudies[0].labelEs,
               )}
             />
+            <p className="mt-8 text-c2 text-ink-secondary">{text.contextImageNote}</p>
           </div>
           <div className="col-span-full space-y-24 lg:col-span-7 lg:col-start-6 xl:col-span-14 xl:col-start-11">
             {paragraphs.map((paragraph) => (
