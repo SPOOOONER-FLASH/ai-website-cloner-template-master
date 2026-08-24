@@ -5,6 +5,7 @@ import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
+import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 
 interface ProductDetailProps {
@@ -113,6 +114,21 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
                   </Button>
                 </div>
               </div>
+
+              {/* Videos sit above the still gallery — motion outranks stills when both
+                  exist, and a page with neither shows only the gallery's empty state. */}
+              {product.videos?.length ? (
+                <div className="col-span-full mt-16 grid grid-cols-1 gap-16 md:grid-cols-2">
+                  {product.videos.map((video) => (
+                    <figure key={video.src}>
+                      <ProductVideo video={video} />
+                      <figcaption className="mt-8 text-c2 text-ink-secondary">
+                        {video.label}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
 
               <div className="col-span-full mt-16">
                 {product.gallery.length ? (

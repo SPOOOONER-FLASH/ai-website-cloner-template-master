@@ -1,4 +1,7 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element --
+   本文件里的 <img> 全部指向 SVG。next/image 的位图优化对矢量没有意义，
+   而且 output:"export" 下图片优化本来就是关闭的；用 next/image 载入 SVG
+   还需要开启 dangerouslyAllowSVG，那是为了这条 lint 规则而放宽一项安全设置。*/
 import type { SVGProps } from "react";
 import { cn } from "@/lib/utils";
 
@@ -74,70 +77,80 @@ export function CloseIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 /**
- * The HYDE mark: two rounded uprights with a crossbar set below centre.
+ * The HYDE lockup — the brand's own master artwork, not a redrawing.
  *
- * ⚠ REDRAWN FROM A REFERENCE IMAGE, NOT THE OFFICIAL ARTWORK. The geometry was measured
- * off a raster supplied by the client, so stroke weight and the crossbar height are
- * close but not authoritative. Replace this with the brand's own vector before launch —
- * a logo that is nearly right is a brand problem, not a rounding error.
+ * Files come from the v1.1 brand kit (2026-08-23) and are used as supplied. Everything
+ * below follows its stated rules rather than taste:
  *
- * Drawn as strokes rather than filled paths so weight scales with the box, and rendered
- * in `currentColor` so one component serves both the black-on-white and white-on-black
- * lockups the client uses.
+ *   · The horizontal lockup is the approved primary for web.
+ *   · Minimum 120px wide on screen. The 4:1 artwork means height drives that, so no
+ *     class here may take it below 30px tall. `h-32` leaves a small margin.
+ *   · Clearspace is one stem width — 34 of the 240-unit height, so ~14% of rendered
+ *     height on every side. Callers add it; the artwork itself has none baked in.
+ *   · Reverse (white) artwork is a separate file, not a CSS filter on the black one.
+ *
+ * The kit ships outline geometry with no live fonts, so an `<img>` is enough and the
+ * wordmark cannot break on a machine missing a typeface. It is intentionally not an
+ * inline SVG: the file is the brand's deliverable, and keeping it byte-identical means
+ * a future kit update is a file swap rather than a re-transcription.
  */
-export function HydeMark(props: SVGProps<SVGSVGElement>) {
+export function HydeLockup({
+  className,
+  variant = "black",
+}: {
+  className?: string;
+  /** "white" is the approved reverse artwork for dark grounds. */
+  variant?: "black" | "white" | "graphite";
+}) {
   return (
-    <svg viewBox="0 0 88 100" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <g
-        stroke="currentColor"
-        strokeWidth="13"
-        strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
-      >
-        <line x1="10.5" y1="10.5" x2="10.5" y2="89.5" />
-        <line x1="77.5" y1="10.5" x2="77.5" y2="89.5" />
-        <line x1="10.5" y1="58" x2="77.5" y2="58" />
-      </g>
-    </svg>
+    <img
+      src={`/images/brand/hyde/hyde-logo-horizontal-${variant}.svg`}
+      alt="HYDE"
+      width={960}
+      height={240}
+      className={cn("h-32 w-auto flex-none", className)}
+    />
+  );
+}
+
+/** The H icon alone. Approved for avatars, nameplates and other small placements. */
+export function HydeIcon({
+  className,
+  variant = "black",
+}: {
+  className?: string;
+  variant?: "black" | "white";
+}) {
+  return (
+    <img
+      src={`/images/brand/hyde/hyde-logo-icon-${variant}.svg`}
+      alt=""
+      aria-hidden="true"
+      className={cn("h-24 w-auto flex-none", className)}
+    />
   );
 }
 
 /**
- * The full HYDE lockup — mark plus wordmark.
+ * The header lockup.
  *
- * The wordmark is live text with wide tracking rather than traced outlines: it stays
- * selectable and searchable, it restyles with one token, and tracing letterforms off a
- * raster would bake in whatever the screenshot's compression did to the curves.
- */
-export function HydeLockup({ className }: { className?: string }) {
-  return (
-    <span className={cn("flex items-center gap-16 whitespace-nowrap", className)}>
-      <HydeMark className="h-32 w-auto flex-none" aria-hidden="true" />
-      <span className="text-[2.2rem] font-light uppercase leading-none tracking-[0.28em]">
-        Hyde
-      </span>
-    </span>
-  );
-}
-
-/**
- * Client-owned Hyland mark paired with a live Archivo wordmark. The long legacy raster
- * company name is deliberately not used: this keeps the header sharp and restrained.
+ * ⚠ The logo now reads HYDE while the site's copy, page titles and legal name still read
+ * "Canton Hyland". That mismatch is deliberate for now — replacing the logo was the
+ * instruction — but it is a live inconsistency a visitor can see, and it needs a
+ * decision: is HYDE the brand and Canton Hyland the company behind it, or is the copy
+ * being renamed too? Until that is settled the wordmark below carries no company name,
+ * which is at least not contradictory.
  */
 export function Wordmark({ className }: { className?: string }) {
   return (
-    <span className={cn("flex min-w-0 items-center gap-10 whitespace-nowrap", className)}>
-      <Image
-        src="/images/brand/hyland-mark.png"
-        alt=""
-        width={254}
-        height={150}
-        priority
-        className="h-28 w-auto flex-none object-contain sm:h-36"
-      />
-      <span className="text-[1.2rem] font-bold uppercase leading-none tracking-[0.05em] sm:text-[1.6rem]">
-        Canton Hyland
-      </span>
+    <span className={cn("flex min-w-0 items-center whitespace-nowrap", className)}>
+      {/*
+        Height is not responsive on purpose. The artwork is 4:1, so `h-28` rendered it
+        112px wide on a 393px viewport — under the kit's 120px screen minimum. 32px gives
+        128px at every size, which clears the minimum with a margin and still leaves room
+        for the icon rail on the narrowest supported width.
+      */}
+      <HydeLockup className="h-32" />
     </span>
   );
 }

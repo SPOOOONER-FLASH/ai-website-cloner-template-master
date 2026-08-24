@@ -181,7 +181,7 @@ export function PromoDialog() {
               solid black field the identity is built around.
             */
             <div className="flex min-h-[180px] items-center justify-center bg-ink p-24 text-surface">
-              <HydeLockup />
+              <HydeLockup variant="white" className="h-36" />
             </div>
           ) : (
             <MediaPlaceholder {...image} className="h-full w-full" />

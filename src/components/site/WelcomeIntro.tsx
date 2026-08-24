@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
-import { ChevronDownIcon } from "./icons";
+import { ChevronDownIcon, HydeLockup } from "./icons";
 
 const introCopy = {
   en: {
@@ -121,13 +120,7 @@ export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
                 not a catalogue slot. Flat, no shadow, inherits nothing decorative.
               */}
               <div className="flex h-full w-[92.17%] items-center">
-                <Image
-                  src="/images/brand/hyland-mark.png"
-                  alt="Hyland"
-                  width={254}
-                  height={150}
-                  className="h-auto w-[62%] max-w-[18rem] object-contain"
-                />
+                <HydeLockup className="h-auto w-[62%] max-w-[18rem]" />
               </div>
             </div>
             <div className="col-span-6 flex flex-col justify-between text-c1 text-ink">

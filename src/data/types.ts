@@ -39,6 +39,32 @@ export interface ImageRef {
 }
 
 /**
+ * A product video.
+ *
+ * `src` takes either a file this site serves (`/videos/305-operation.mp4`) or a YouTube
+ * or Vimeo watch/share URL. Both are supported because the two have opposite costs and
+ * the right answer differs per video:
+ *
+ *   Self-hosted plays with no third party involved and no cookie banner implication, but
+ *   every megabyte lives in the repository and is pushed to the server on each deploy.
+ *   Fine for a short clip, wrong for a 200 MB factory tour.
+ *
+ *   YouTube and Vimeo carry the bandwidth, but embed a third-party frame. The renderer
+ *   uses youtube-nocookie / Vimeo DNT so nothing is set until the visitor presses play.
+ *
+ * `poster` matters more than it looks: without one the player shows a black rectangle
+ * until the visitor interacts, which on a catalogue page reads as a broken image.
+ */
+export interface VideoRef {
+  /** Local path under /public, or a YouTube/Vimeo URL. */
+  src: string;
+  /** Still frame shown before playback. Strongly recommended for self-hosted files. */
+  poster?: ImageRef;
+  /** Describes the video for people who cannot see it, and labels the player. */
+  label: string;
+}
+
+/**
  * One row of the spec table. Products have different numbers of rows, so this
  * is a plain list rather than a fixed set of fields — a lock body and a glass
  * clamp share almost no attributes.
@@ -120,6 +146,11 @@ export interface Product {
   heroImage: ImageRef;
   /** Additional images for the detail-page gallery. */
   gallery: ImageRef[];
+  /**
+   * Product videos — operation, installation, factory footage. Optional, and absent on
+   * every imported record because the legacy catalogue had none.
+   */
+  videos?: VideoRef[];
   /** Download ids (see downloads data) — datasheets, CAD, installation guides. */
   attachmentIds: string[];
   /** Model numbers of related products. Resolved at render time, not stored as objects. */

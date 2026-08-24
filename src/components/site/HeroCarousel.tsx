@@ -66,17 +66,26 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
   const activeSlide = content.slides[activeIndex];
 
   return (
+    /*
+      `layout` is load-bearing and was missing.
+
+      This section previously carried `col-outset`, but its parent `.modules` is not a
+      grid — it only manages vertical rhythm — so the band class resolved to nothing and
+      the carousel ran edge to edge, caption included. Establishing the grid here puts
+      both the image and the caption on the content band, which is where every other
+      module on the page sits and which gives the hero the margins the reference has.
+    */
     <section
       aria-label={content.ariaLabel}
       aria-roledescription="carousel"
-      className="col-outset"
+      className="layout"
       onBlur={handleBlur}
       onFocus={() => setFocusWithin(true)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="relative aspect-[1920/754] touch-pan-y overflow-hidden bg-surface-alt"
+        className="col-content relative aspect-[1920/754] touch-pan-y overflow-hidden bg-surface-alt"
         onPointerDown={(event) => {
           pointerStart.current = event.clientX;
         }}

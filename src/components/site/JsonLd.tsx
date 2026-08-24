@@ -35,7 +35,7 @@ export function organisationSchema() {
     name: siteName,
     legalName,
     url: siteUrl,
-    logo: absoluteUrl("/images/brand/hyland-mark.png"),
+    logo: absoluteUrl("/images/brand/hyde/hyde-logo-horizontal-black.svg"),
     description:
       "Manufacturer of panic exit devices, mortise locks, lever handles, knob locks, glass door fittings and floor hinges for commercial and residential buildings.",
     address: {
