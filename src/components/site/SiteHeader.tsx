@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { headerNav, localisedHref, navLabel } from "@/data/navigation";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
+import { SearchDialog } from "./SearchDialog";
 import { SiteMenuDrawer } from "./SiteMenuDrawer";
 
 /**
@@ -50,6 +51,7 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
   const locale = isSpanish ? "es" : "en";
   const homeHref = isSpanish ? "/es" : "/";
@@ -142,6 +144,8 @@ export function SiteHeader() {
                 <button
                   type="button"
                   aria-label={isSpanish ? "Buscar" : "Search"}
+                  aria-expanded={searchOpen}
+                  onClick={() => setSearchOpen(true)}
                   className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
                 >
                   <SearchIcon className="h-20 w-20" />
@@ -172,6 +176,7 @@ export function SiteHeader() {
           onClose={() => setMenuOpen(false)}
         />
       ) : null}
+      <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} locale={locale} />
     </div>
   );
 }

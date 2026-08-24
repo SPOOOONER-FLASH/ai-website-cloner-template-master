@@ -35,8 +35,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run typecheck && npm run build",
-    "prebuild": "node scripts/build-content-index.mjs",
-    "content": "node scripts/build-content-index.mjs",
+    "prebuild": "node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
+    "content": "node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
     "cms": "node scripts/cms.mjs",
     "deploy:prep": "npm run build && node scripts/predeploy-check.mjs"
   },
