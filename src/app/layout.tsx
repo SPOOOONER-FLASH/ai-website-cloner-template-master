@@ -41,14 +41,17 @@ export const metadata: Metadata = {
     description: defaultDescription.en,
     images: [
       {
-        url: absoluteUrl("/images/company/hero-modern-tubular-lock.webp"),
-        width: 1920,
-        height: 754,
-        alt: "Canton Hyland door hardware",
+        url: absoluteUrl("/images/editorial/hero-cultural-entrance.webp"),
+        width: 2400,
+        height: 943,
+        alt: "Neutral architectural entrance with stone, glass, and metal details",
       },
     ],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    images: [absoluteUrl("/images/editorial/hero-cultural-entrance.webp")],
+  },
   // Driven by the single `indexable` flag in src/data/site.ts, not hard-coded here.
   robots: indexable
     ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }

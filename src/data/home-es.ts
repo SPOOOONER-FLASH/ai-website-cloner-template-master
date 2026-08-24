@@ -11,9 +11,9 @@ export { spacers };
 export const hero1: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "1920 / 754",
-    src: "/images/company/hero-modern-tubular-lock.webp",
-    label: "Manilla cuadrada de acero inoxidable satinado sobre una puerta de nogal",
+    ratio: "2400 / 943",
+    src: "/images/editorial/hero-warm-residential-entry.webp",
+    label: "Umbral residencial de madera y piedra caliza con puerta acristalada",
   },
   title: "Cerradura tubular moderna",
   body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",
@@ -31,9 +31,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "1920 / 754",
-        src: "/images/concepts/hero-panic-exit-device.webp",
-        label: "Dispositivo antipánico instalado en una salida comercial",
+        ratio: "2400 / 943",
+        src: "/images/editorial/hero-cultural-entrance.webp",
+        label: "Entrada arquitectónica de piedra, vidrio y metal con luz natural neutra",
       },
       title: "Dispositivos Antipánico",
       body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",
@@ -44,9 +44,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "1920 / 754",
-        src: "/images/concepts/hero-heavy-duty-fire-door-lock.webp",
-        label: "Cerradura de alta resistencia para puerta cortafuego",
+        ratio: "2400 / 943",
+        src: "/images/editorial/hero-civic-corridor.webp",
+        label: "Pasillo de edificio público con particiones acristaladas y puertas de evacuación",
       },
       title: "Cerraduras Cortafuego",
       body: "Soluciones robustas para puertas de alto tránsito y aplicaciones con resistencia al fuego.",
@@ -62,8 +62,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/cat-panic-exit-device.webp",
-        label: "Dispositivo antipánico de acero inoxidable con barra horizontal",
+        src: "/images/editorial/material-brushed-steel.webp",
+        label: "Estudio de material de acero inoxidable cepillado con grano direccional",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
@@ -72,8 +72,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/cat-lever-handle-lock.webp",
-        label: "Juego de manilla de acero inoxidable sobre placa",
+        src: "/images/editorial/material-metal-stone-detail.webp",
+        label: "Estudio representativo de unión entre metal, piedra, madera y vidrio",
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
@@ -85,9 +85,9 @@ export const teaser1: PageTeaserContent = {
 export const hero2: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1391",
-    src: "/images/company/hero-panic-exit-banner.webp",
-    label: "Dispositivo antipánico Hyland instalado en puertas de emergencia",
+    ratio: "2400 / 1159",
+    src: "/images/editorial/home-commercial-egress.webp",
+    label: "Arquitectura de ruta de evacuación comercial con puertas dobles y pasillo tranquilo",
   },
   title: "Dispositivos antipánico",
   body: "Nuestra gama principal de seguridad para salidas rápidas en edificios comerciales.",
@@ -130,9 +130,9 @@ export const teaser2: PageTeaserContent = {
 export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
-    ratio: "970 / 646",
-    src: "/images/company/hero-designed-for.webp",
-    label: "Cerradura de empuje y tiro para puerta comercial",
+    ratio: "3 / 2",
+    src: "/images/editorial/home-design-context.webp",
+    label: "Ritmo arquitectónico de puertas y encuentros de madera, piedra y metal",
   },
   title: "Diseñado para",
   body: "Nueve familias de producto",
@@ -144,8 +144,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/company/factory-assembly-quality-line.webp",
-    label: "Línea de montaje y control de calidad de herrajes",
+    src: "/images/company/factory-cnc-production.webp",
+    label: "Equipos de mecanizado CNC de Canton Hyland en un taller de herrajes",
   },
   title: "Nuestra empresa",
   body: "Fabricamos herrajes comerciales y residenciales desde 1998, con ISO 9001 desde 2002 y capacidad OEM para mercados internacionales.",
@@ -165,8 +165,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/glass-door-patch-fitting-set.webp",
-        label: "Juego de herrajes para puerta de vidrio",
+        src: "/images/editorial/material-bronze-patina.webp",
+        label: "Superficie de bronce con pátina natural y variación tonal",
       },
       title: "Cuéntenos su proyecto",
       subtitle: "Le pondremos en contacto con el equipo de exportación adecuado",
@@ -175,8 +175,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/ansi-grade-3-keyed-deadbolt.webp",
-        label: "Cerrojo con llave ANSI Grade 3",
+        src: "/images/editorial/industrial-precision-parts.webp",
+        label: "Estudio material representativo generado de forma neutral de componentes de precisión",
       },
       title: "Documentación y normas",
       subtitle: "Consulte grados, ensayos, acabados y plazos",
@@ -195,9 +195,9 @@ export const text3: TextModuleContent = {
 export const hero5: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "3 / 2",
-    src: "/images/company/showroom-emergency-hardware.webp",
-    label: "Exposición de herrajes de seguridad y evacuación",
+    ratio: "2400 / 1464",
+    src: "/images/editorial/home-editorial-insight.webp",
+    label: "Estudio abstracto de luz arquitectónica con superficies de vidrio y metal",
   },
   title: "Especificación de herrajes",
   linkLabel: "Hablar con exportación",

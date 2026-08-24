@@ -13,7 +13,8 @@ import type {
  *   - banner headlines from 大图文案.docx, verbatim
  *   - company copy from 公司英文简介.docx
  *   - product names from the client's asset pack
- *   - every image is first-party (see IMAGE_CREDITS.md)
+ *   - product and manufacturing imagery is first-party; editorial imagery is representative
+ *     generated work (see IMAGE_CREDITS.md)
  *
  * Line counts are still tuned to the measured module heights, so the page geometry
  * that was verified at 1512px is preserved.
@@ -22,9 +23,9 @@ import type {
 export const hero1: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "1920 / 754",
-    src: "/images/company/hero-modern-tubular-lock.webp",
-    label: "Satin stainless square lever handle and cylinder escutcheon on a walnut door",
+    ratio: "2400 / 943",
+    src: "/images/editorial/hero-warm-residential-entry.webp",
+    label: "Warm timber and limestone residential threshold with a glazed door",
   },
   title: "Modern Tubular Door Lock",
   body: "A restrained matt-black lever set for contemporary residential interiors.",
@@ -43,9 +44,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "1920 / 754",
-        src: "/images/concepts/hero-panic-exit-device.webp",
-        label: "Panic exit device installed on a commercial emergency door",
+        ratio: "2400 / 943",
+        src: "/images/editorial/hero-cultural-entrance.webp",
+        label: "Cool neutral architectural entrance with stone, glass, and metal details",
       },
       title: "Panic Exit Devices",
       body: "Fast-release hardware engineered for dependable emergency egress in commercial buildings.",
@@ -56,9 +57,9 @@ export const heroCarousel: HeroCarouselContent = {
     {
       variant: "stacked",
       media: {
-        ratio: "1920 / 754",
-        src: "/images/concepts/hero-heavy-duty-fire-door-lock.webp",
-        label: "Heavy-duty fire door lock in a commercial application",
+        ratio: "2400 / 943",
+        src: "/images/editorial/hero-civic-corridor.webp",
+        label: "Public-building corridor with glazed partitions and fire-egress doors",
       },
       title: "Heavy-Duty Fire Door Locks",
       body: "Robust locking solutions developed for demanding fire-rated and high-traffic openings.",
@@ -74,8 +75,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/cat-panic-exit-device.webp",
-        label: "Stainless steel panic exit device with horizontal push bar",
+        src: "/images/editorial/material-brushed-steel.webp",
+        label: "Brushed stainless steel material study with directional grain",
       },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
@@ -84,8 +85,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/cat-lever-handle-lock.webp",
-        label: "Stainless steel lever handle lock set on backplate",
+        src: "/images/editorial/material-metal-stone-detail.webp",
+        label: "Representative metal, stone, timber, and glass junction study",
       },
       title: "For specifiers",
       subtitle: "Build a hardware schedule with our export engineers",
@@ -97,9 +98,9 @@ export const teaser1: PageTeaserContent = {
 export const hero2: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1391",
-    src: "/images/company/hero-panic-exit-banner.webp",
-    label: "Hyland panic exit device fitted to a pair of emergency exit doors",
+    ratio: "2400 / 1159",
+    src: "/images/editorial/home-commercial-egress.webp",
+    label: "Commercial escape-route architecture with paired doors and a quiet corridor",
   },
   title: "Panic Exit Devices",
   // 4 lines at the 332px caption column, matching the measured module height
@@ -143,9 +144,9 @@ export const teaser2: PageTeaserContent = {
 export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
-    ratio: "970 / 646",
-    src: "/images/company/hero-designed-for.webp",
-    label: "Storefront door push-pull handle lock in satin stainless steel",
+    ratio: "3 / 2",
+    src: "/images/editorial/home-design-context.webp",
+    label: "Architectural door rhythm with timber, stone, and metal junctions",
   },
   title: "Designed For",
   body: "Nine product families",
@@ -156,9 +157,9 @@ export const hero3: HeroModuleContent = {
 export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1920",
-    src: "/images/company/factory-assembly-quality-line.webp",
-    label: "Assembly and quality-inspection line at the Canton Hyland plant in Guangdong",
+    ratio: "3 / 2",
+    src: "/images/company/factory-cnc-production.webp",
+    label: "Canton Hyland CNC machining equipment in a hardware workshop",
   },
   title: "About Us",
   // 8 lines at the 332px caption column
@@ -180,8 +181,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/glass-door-patch-fitting-set.webp",
-        label: "Stainless steel glass door patch fitting set with cover plates and pivots",
+        src: "/images/editorial/material-bronze-patina.webp",
+        label: "Bronze surface with natural patina and tonal variation",
       },
       title: "Get in Touch!",
       subtitle: "We'll match you with the right export engineer",
@@ -190,8 +191,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/ansi-grade-3-keyed-deadbolt.webp",
-        label: "ANSI Grade 3 keyed deadbolt lock set with cylinder, thumbturn and strike",
+        src: "/images/editorial/industrial-precision-parts.webp",
+        label: "Representative generated-neutral precision-components material study",
       },
       title: "Frequently Asked Questions",
       subtitle: "Quick answers on grades, standards and lead times",
@@ -214,9 +215,9 @@ export const text3: TextModuleContent = {
 export const hero5: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "2880 / 1757",
-    src: "/images/company/hero-storefront-banner.webp",
-    label: "Storefront door hardware installation in a commercial entrance",
+    ratio: "2400 / 1464",
+    src: "/images/editorial/home-editorial-insight.webp",
+    label: "Abstract architectural light study with glass and metal surfaces",
   },
   title: "Specifying Hardware for Export Projects",
   linkLabel: "Learn more",
