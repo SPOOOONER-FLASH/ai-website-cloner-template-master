@@ -276,6 +276,8 @@ export interface PromoCard {
   ctaLabel: string;
   ctaLabelEs?: string;
   ctaHref: string;
+  /** Optional locale-specific destination for campaigns whose target has a Spanish route. */
+  ctaHrefEs?: string;
   /**
    * What fills the left panel.
    *

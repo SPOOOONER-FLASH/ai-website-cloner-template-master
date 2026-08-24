@@ -174,8 +174,10 @@ function PromoCardBlock({
   locale: "en" | "es";
   onDismiss: (href: string) => void;
 }) {
-  const { ctaHref, image, visual } = card;
-  const { title, titleLight, body, ctaLabel } = localisePromoCardCopy(card, locale);
+  const { image, visual } = card;
+  const dismissalKey = card.ctaHref;
+  const { title, titleLight, body, ctaLabel, ctaHref, closeLabel } =
+    localisePromoCardCopy(card, locale);
   // A catalogue PDF is a file, not a route — Link would try to client-navigate to it.
   const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
   const isExternal = /^https?:/i.test(ctaHref);
@@ -192,8 +194,8 @@ function PromoCardBlock({
     <div className="relative border border-line bg-surface">
       <button
         type="button"
-        onClick={() => onDismiss(ctaHref)}
-        aria-label={`Close: ${title}`}
+        onClick={() => onDismiss(dismissalKey)}
+        aria-label={closeLabel}
         className="absolute right-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-200 hover:text-ink-secondary"
       >
         <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">

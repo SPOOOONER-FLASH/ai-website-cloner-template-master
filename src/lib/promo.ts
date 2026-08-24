@@ -10,10 +10,13 @@ export function selectActivePromoCard(
 
 export function localisePromoCardCopy(card: PromoCard, locale: "en" | "es") {
   const spanish = locale === "es";
+  const title = spanish ? card.titleEs ?? card.title : card.title;
   return {
-    title: spanish ? card.titleEs ?? card.title : card.title,
+    title,
     titleLight: spanish ? card.titleLightEs ?? card.titleLight : card.titleLight,
     body: spanish ? card.bodyEs ?? card.body : card.body,
     ctaLabel: spanish ? card.ctaLabelEs ?? card.ctaLabel : card.ctaLabel,
+    ctaHref: spanish ? card.ctaHrefEs ?? card.ctaHref : card.ctaHref,
+    closeLabel: `${spanish ? "Cerrar" : "Close"}: ${title}`,
   };
 }
