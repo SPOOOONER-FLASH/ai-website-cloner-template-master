@@ -196,20 +196,16 @@ export const teaser3: PageTeaserContent = {
       },
       title: "Frequently Asked Questions",
       subtitle: "Quick answers on grades, standards and lead times",
-      href: "/contact",
+      href: "/faq",
     },
   ],
 };
 
-/**
- * ⚠ text3 and hero5 are the editorial / magazine block. There is no /insights route in
- * the plan, so both fall back to "#". Either add the route or drop the block — see the
- * open decision in PROGRESS.md. These are the only two dead links left on the site.
- */
 export const text3: TextModuleContent = {
-  heading: "Insights",
-  body: "Notes on standards, finish selection and the specification detail behind architectural hardware.",
-  linkLabel: "Inspiring Insights",
+  heading: "Engineering for Export",
+  body: "Finish selection, master-key systems and specification detail for each market.",
+  linkLabel: "Contact us",
+  href: "/contact",
 };
 
 export const hero5: HeroModuleContent = {
@@ -219,8 +215,9 @@ export const hero5: HeroModuleContent = {
     src: "/images/editorial/home-editorial-insight.webp",
     label: "Abstract architectural light study with glass and metal surfaces",
   },
-  title: "Specifying Hardware for Export Projects",
-  linkLabel: "Learn more",
+  title: "Hardware Specification",
+  linkLabel: "Talk to export",
+  href: "/contact",
 };
 
 /** Spacer heights in px, matched to the measured values at each breakpoint. */
