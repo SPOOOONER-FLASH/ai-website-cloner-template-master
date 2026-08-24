@@ -59,7 +59,9 @@
 
 ## 四、当前状态
 
-**产品 431 个 · 静态页面 473 个 · 规格 1007 行 · 图片 608 张**
+**产品 431 个 · 静态页面 471 个 · 规格 1023 行 · 图片 1342 张**
+
+> 2026-08-24 更新：硬盘 PSD 导入 + SEO 重写完成，见下方「近期变更」。
 
 ### 已完成
 
@@ -71,37 +73,79 @@
 | FAQ `/faq` | ✅ 15 问，8 已答、7 等甲方 |
 | 价格表索取 `/request/price-list` | ✅ 五字段短表单 |
 | 站内搜索 | ✅ 461 条索引，构建期生成，浏览器匹配 |
-| 弹窗 | ✅ 5 秒触发、两张卡片、**可分别关闭**、非模态 |
+| 弹窗 | ✅ **停留 10 秒触发、30 分钟冷却**、两张卡片、可分别关闭、非模态 |
 | 产品视频 | ✅ YouTube/Vimeo 链接或自托管 mp4，自动识别 |
 | 产品富文本描述 | ✅ Markdown，限定按钮（防止粘贴带进字体标签） |
 | 内容健康度看板 `/status` | ✅ 构建期算真数，非模拟 |
 | CMS 五大栏目 | ✅ 产品 / 案例 / 新闻 / 分类与下载 / 网站设置（弹窗·导航·基础设置·FAQ） |
 | CMS 皮肤 + 可视化预览 + 两栏表单 | ✅ UEESHOP 风格 |
 | 阿里店铺入口 | ✅ 页尾「How to buy」 |
+| SEO 元数据 | ✅ 471 页全部有 canonical + hreflang + OG + Twitter card，字段长度达标 |
+| `/llms.txt` | ✅ 构建期从目录数据生成，供 AI 答案引擎读取 |
+
+### 近期变更（2026-08-24）
+
+| 变更 | 结果 |
+|---|---|
+| 从硬盘 PSD 提取无水印原图 | 有图产品 **150 → 319**，完全缺图 **281 → 112** |
+| SEO 字段按 Google/Bing 长度重写 | 构建产物有问题的页面 **427 → 1**（剩下那个是 `/admin`，本就 Disallow） |
+| 筛选器属性归一 | 材质 71 → 41、表面处理 97 → 78、门型 101 → 87 |
+| 规格标签合并同义词 | 38 → 32 个标签，`Application` 覆盖 80 → 130 个产品 |
+| 新增 `/llms.txt` | 从目录数据生成，`indexable=false` 时降级为暂存声明 |
+| 新增 `public/seo/og-default.png` | 132 个页面此前没有社交卡片图 |
+| sitemap 补齐 | 加入 `/product-finder`、`/faq`、`/request/price-list` |
+
+**新增脚本**（都是先报告、加 `--write` 才落盘）：
+
+```
+scripts/import-drive-images.mjs      从硬盘 PSD 提取无水印图并挂到产品上
+scripts/lib/psd.mjs                  PSD 图层读取（无第三方依赖）
+scripts/lib/psdflatten.mjs           跳过水印层/角标层重新合成
+scripts/lib/debadge.mjs              没有 PSD 时按白底涂掉角标
+scripts/lib/marks.mjs                四种品牌标记检测
+scripts/audit-seo.mjs                读 out/ 的 HTML 审计标题/描述/OG/结构化数据
+scripts/generate-product-seo.mjs     重写 431 个产品的 seoTitle / seoDescription
+scripts/normalise-product-data.mjs   材质/表面处理/门型大小写归一
+scripts/consolidate-spec-labels.mjs  规格表同义标签合并
+scripts/build-og-image.mjs           生成默认 OG 图
+```
 
 ### 未完成 / 已知问题
 
-1. **282 个产品没有任何图片**（431 中的 65%）。旧站只有 2022 那批水印图，按约定跳过。
-   → **见第五节，硬盘里有解。**
-2. **44 个产品规格表为空** —— 旧站页面本身就没有。
-3. **`content/categories.json` 与 `downloads.json` 改了不生效** ——
+1. **112 个产品仍无图片**（431 中的 26%）。这些型号在硬盘上要么没有目录，要么目录里
+   只有 `雷茵/`（第三方品牌，不可用）。**需要甲方补拍或确认型号对应关系**，
+   对不上的清单在 `docs/research/legacy/drive-match.json` 的 `unmatched`（151 条）。
+2. **84 张已发布图片带 2022 年 `www.cantonlock.com` 斜向水印**，数据里标了
+   `sourceNote: "2022-watermarked"`。甲方同意先用，拿到干净原片后按这个字段批量替换：
+   `grep -rl '2022-watermarked' content/products/`
+3. **44 个产品规格表为空**，且规格中位数只有 2 行，整体偏薄。
+4. **`content/categories.json` 与 `downloads.json` 改了不生效** ——
    前台仍读 `src/data/{categories,downloads}.ts` 的硬编码数组。
    **这是后台里唯一「看着能用其实没用」的地方，优先修。**
-4. **新闻详情路由暂存为 `src/app/news/[slug]/page.tsx.template`** ——
+5. **Product Finder 的结果区完全靠客户端渲染** —— 构建出的 HTML 里有目录数据但
+   **0 个产品链接**。已补 ItemList 结构化数据兜底，但要让爬虫和 AI 引擎跟到具体型号，
+   需要服务端渲染初始列表，或在页面底部加一个静态型号索引。
+   **这是可见的设计改动，等甲方点头再做。**
+6. **属性字段里混进了 44 个整句话**（例如 material 填成
+   "steel material with spray painting, different finishes are available."），
+   每一条在筛选器里都是一个独立勾选框。归一脚本只报告不擅自改写：
+   `node scripts/normalise-product-data.mjs`
+7. **门型有 11 组单复数重复**（Fire Door / Fire Doors 等），同上，需人工定夺。
+8. **12 行规格值填的是门的构造而不是用途**（"Single Door" 填在 Use 里），
+   `node scripts/consolidate-spec-labels.mjs` 会列出来。
+9. **新闻详情路由暂存为 `src/app/news/[slug]/page.tsx.template`** ——
    静态导出下空数组会让构建失败，写完第一篇后 `git mv` 启用，同目录有 README。
-5. `hero-designed-for.webp` 源图裁坏了（右侧 PUSH 被切）。
-6. `aid 1608` 未导入：旧站列表页标型号 `024`，详情页规格块写 `023 ETAN`，自相矛盾。
-7. 全站 noindex，等正式域名。
+10. `hero-designed-for.webp` 源图裁坏了（右侧 PUSH 被切）。
+11. `aid 1608` 未导入：旧站列表页标型号 `024`，详情页规格块写 `023 ETAN`，自相矛盾。
+12. 全站 noindex，等正式域名。**`indexable` 一旦翻成 true，sitemap、robots.txt、
+    llms.txt 三者同时生效**，已实测过输出（sitemap 467 条 URL）。
 
 ---
 
-## 五、★ 硬盘素材：282 缺图问题的解法
+## 五、★ 硬盘素材：缺图问题怎么解决的（已完成，方法值得记住）
 
-甲方 F 盘已接入，两个目录：
-
-### `F:\新网站资料`（80.4 GB，**这个是重点**）
-
-按品类编号组织，**二级目录名就是型号**：
+甲方 F 盘两个目录，重点是 `F:\新网站资料`（80.4 GB），按品类编号组织，
+**二级目录名就是型号**：
 
 ```
 1-逃生锁/001, 015, 023, 305, 307, ...
@@ -110,25 +154,49 @@
 24-工厂图    27-场景图    26-详情页模板
 ```
 
-**已实测的匹配结果**（脚本产物在 `docs/research/legacy/drive-match.json`）：
+### 关键发现：JPG 上有三种品牌标记，但 PSD 里它们是独立图层
+
+硬盘上的 JPG 是导出产物，烧进了三种标记：
+
+| 标记 | 形态 | 占比 |
+|---|---|---|
+| **STAHLOCK** | 另一品牌标准字，15% 不透明度横跨画面中央 | 1187 张候选图里 584 张 |
+| **Hyland 红色角标** | 母公司 logo，压在影棚白底的角上 | 416 张 |
+| **www.cantonlock.com** | 2022 批次的斜向重复域名水印 | 116 张 |
+| **RAYEN 雷茵** | 第三方品牌，只存在于 `雷茵/` 子目录 | 按路径排除，从不导入 |
+
+一开始试过对 STAHLOCK 做信号处理反解（水印 α 只有 0.22–0.33，数值上可行），
+但**每张图的水印位置都不同**，配准反复撞到搜索边界并把母版洗白，投入产出比不划算。
+
+**真正的解法是 PSD**：每张 JPG 旁边的修图源文件把水印保留为独立图层——
+名字是固定哈希 `3d7a87fbe2efd9bad39f10e51879a18a`，不透明度 38/255。
+Hyland 角标同样是独立图层（角落的小图层，含约 16% 红色像素）。
+**跳过这些图层重新合成 PSD，得到的是精确原图而不是估计值。**
+
+1187 张候选图里 1094 张有配套 PSD；最终发布的 699 张图里 683 张走 PSD 路线，
+16 张退回 JPG + 白底涂抹角标（`scripts/lib/debadge.mjs`，产品贴太近时会拒绝处理而不是瞎猜）。
+
+### 结果
 
 | | |
 |---|---|
-| 硬盘型号目录 | 402 |
-| 能对上站上产品 | **251** |
-| **其中能补上当前完全缺图的产品** | **171 个**（占 282 缺口的 61%） |
-| 对不上 | 151（部分是站上没有的型号，部分是命名差异如 `023` vs `023 ET`） |
+| 有图产品 | 150 → **319** |
+| 完全缺图 | 281 → **112** |
+| 发布图片 | 608 → **1342** 张 |
+| 标记为 2022 水印 | 84 张（`sourceNote: "2022-watermarked"`） |
 
-**下一步怎么做**（建议作为最高优先级）：
+### 教训（下次别再踩）
 
-1. 复用 `scripts/import-legacy-images.mjs` 的处理逻辑（转 webp、1000px、60KB 预算自适应降质）。
-2. 按 `drive-match.json` 的 matched 列表，把每个型号目录里的图导进
-   `public/images/products/`，写进对应产品的 `heroImage` / `gallery`。
-3. **必须先目检**：用 sharp 拼 contact sheet 一次看几十张，确认没有水印、没有错图。
-   之前就靠这个方法发现过「冷库门场景照混进 023 ETAN」和「PUSH 被裁掉」。
-4. 151 个对不上的，导出清单给甲方确认型号对应关系。
+1. **排序不要用像素启发式覆盖客户自己的顺序。** 试过用「照片 vs 图纸」分类器重排，
+   结果把安装说明书扫描件排成了主图。硬盘上 `首图` 就是客户指定的主图，
+   数字前缀就是他们的序列——直接用。
+2. **一个型号可能在两个品类目录下**（9082E、F101），按 slug 合并候选目录，
+   否则同一产品会被处理两次，第二次只覆盖前几个文件、留下孤儿文件。
+3. **每张渲染结果都要重新做标记检测**，不能假设 PSD 一定干净。
+4. **导入前后都拼 contact sheet 目检。** 之前靠这个方法发现过
+   「冷库门场景照混进 023 ETAN」和「PUSH 被裁掉」。
 
-`24-工厂图`、`27-场景图` 可用于公司页和应用场景页。
+`24-工厂图`、`27-场景图` 尚未使用，可用于公司页和应用场景页。
 
 ### `F:\网站资料`（旧的，2022）
 
@@ -147,12 +215,32 @@
 |---|---|
 | 标题堆关键词到 128 字符上限 | 我们 SEO 标题偏短，可加型号+材质+认证+用途 |
 | 副标题另 128 字符 | 对应我们的 `summary` |
-| 自定义属性（Type/Material/Certification/Color/Finish/Application/MOQ） | 和我们 `specs` 结构一致，可直接映射 |
+| 自定义属性（Type/Material/Certification/Color/Finish/Application/MOQ） | 和我们 `specs` 结构一致。**已按这套做过一轮对齐**，见下方覆盖率表 |
 | 阶梯价（200/500/1000 三档） | 我们不公开价格，但可做「MOQ 分档」展示 |
 | 发货期按数量分档（≤200 → 8 天） | FAQ 的「交期」答案可以用这个结构 |
 | 「Frequently bought together」 | **甲方明确要的相关产品推荐，见下** |
 | FAQ 直接写在商品详情页底部 | 我们已有独立 FAQ 页，可考虑产品页也放几条 |
 | 产品详情页底部「更多选择」放同系列型号图 | 同上，相关产品 |
+
+### 对照阿里属性集，我们的数据覆盖率（431 个产品）
+
+| 阿里属性 | 我们的字段 | 覆盖 | 备注 |
+|---|---|---|---|
+| Material | `material` + specs "Material" | **84%** | 已归一大小写，71 → 41 个值 |
+| Finish | `finishes` + specs "Finish" | **51%** | 97 → 78 个值 |
+| Application | specs "Application" | **30%** | 原来被拆成 5 个标签，已合并 |
+| Type / Function | specs "Type" / "Function" | 10% | 两者含义不同，未合并 |
+| Color | specs "Color" | 4% | 与 Finish 不同，未合并 |
+| Certification | `certifications` | **5%** | 只能写点名该型号的报告，不可外推 |
+| MOQ | —— | **0%** | 甲方未提供，建议从阿里后台导出 |
+
+**最值得补的三项**（都要甲方给数据，不能猜）：
+
+1. **MOQ 与交期分档** —— 阿里后台已有（≤200 → 8 天那种结构），导出即可用，
+   同时能填上 FAQ 里空着的「起订量」「交期」两问。
+2. **Application** —— 只有 30% 的产品写了用途。这是采购商最常搜的维度
+   （"hotel door lock"、"fire door panic bar"），补齐性价比最高。
+3. **规格行本身** —— 中位数只有 2 行，44 个产品完全为空。
 
 ---
 
@@ -164,7 +252,8 @@
    目前详情页底部有 Related products 但仅靠手填的 `relatedModels`，大部分产品是空的。
    建议：手填优先，空则自动按同分类补齐。
 2. **Service 聚合栏目** —— 把「报价 / 图纸 / 价格表 / FAQ / 联系」聚到一处，加进主导航。
-3. **Robots.txt / LLMs.txt 后台管理**
+3. ~~**Robots.txt / LLMs.txt**~~ —— `/llms.txt` 与 `robots.txt` 都已在构建期生成，
+   随 `indexable` 开关联动。**后台可视化管理这两个文件尚未做**（目前改要动代码）。
 4. **展会日程页**（广交会 / Big 5 / Intersec）
 5. **Newsletter 订阅落地页 + 页脚订阅位**
 6. **资质证书展示页**（四份报告目前只在下载中心）
@@ -225,13 +314,27 @@ src/data/                    类型与查询
   navigation.ts              导航 + 站点设置
 src/lib/
   content-health.ts          /status 看板的数据
-  seo.ts                     每页 metadata
+  seo.ts                     每页 metadata + defaultOgImage
+  product-finder.ts          筛选器分面（valuesFor 不做归一，靠数据层保证一致）
+src/app/
+  sitemap.ts  robots.ts  llms.txt/route.ts   三者都随 indexable 联动
+public/seo/og-default.png    社交卡片兜底图，由 build-og-image.mjs 生成
 scripts/
   build-content-index.mjs    生成产品 barrel（prebuild）
   build-search-index.mjs     生成搜索索引（prebuild）
-  import-legacy-images.mjs   图片导入（含自适应压缩，可复用于硬盘素材）
+  import-drive-images.mjs    ★ 从硬盘 PSD 提取无水印图（第五节）
+  lib/psd.mjs                PSD 图层读取，无第三方依赖
+  lib/psdflatten.mjs         跳过水印层/角标层重新合成
+  lib/debadge.mjs            没有 PSD 时按白底涂掉角标
+  lib/marks.mjs              四种品牌标记检测
+  audit-seo.mjs              ★ 读 out/ 的 HTML 审计 SEO，改完必跑
+  generate-product-seo.mjs   重写 431 个产品的 seoTitle / seoDescription
+  normalise-product-data.mjs 材质/表面处理/门型大小写归一
+  consolidate-spec-labels.mjs 规格表同义标签合并
+  build-og-image.mjs         生成默认 OG 图
+  import-legacy-images.mjs   旧站图片导入（历史，已被 import-drive-images 取代）
   import-legacy-catalogue.mjs 旧站产品导入
-  legacy_report_xlsx.py      甲方报告
+  legacy_report_xlsx.py      甲方报告（⚠ 本机 python 是商店占位程序，跑不了）
   recalc-excel.ps1           Excel 公式校验（LibreOffice 缺失时用 Excel COM）
 public/admin/                Decap CMS：config.yml / admin.css / preview.js
 docs/research/legacy/        旧站抓取产物 + 迁移报告 + drive-match.json
@@ -242,11 +345,34 @@ docs/research/fsb/           FSB 拆解结论（teardown.json，89 条发现）
 
 ## 十、给新会话的开场建议
 
-最高价值的三件事，按顺序：
+硬盘导图和 SEO 两件已经做完。**按当前价值排序，接下来最高的三件：**
 
-1. **把硬盘里那 171 个能补缺图的产品导进来**（第五节，已有匹配结果和可复用脚本）。
-   这是目前对站点质量提升最大的一件事。
-2. **修分类与下载的接线**（第四节问题 3），消掉后台唯一的假功能。
-3. **相关产品推荐**（第七节 1），甲方明确要，且数据已具备。
+1. **修分类与下载的接线**（第四节问题 4）——
+   `content/{categories,downloads}.json` 改了不生效，前台仍读 `src/data/` 的硬编码数组。
+   这是后台里唯一「看着能用其实没用」的地方，同事在 CMS 改了会以为生效了。
+2. **相关产品推荐**（第七节 1）—— 甲方明确要，数据已具备。
+   手填 `relatedModels` 优先，为空则按同分类自动补齐。
+3. **Service 聚合栏目**（第七节 2）—— 把报价/图纸/价格表/FAQ/联系聚到一处进主导航。
+   这直接服务于「产生询盘」这个唯一指标。
 
-动手前先 `git log --oneline -5` 确认 Codex 没有未合并的改动。
+**需要甲方给数据才能推进的**（可以一次性问齐）：
+
+- 112 个产品的图片（硬盘上没有，见第四节问题 1）
+- MOQ 与交期分档（阿里后台可导出，同时能填 FAQ 里空着的两问）
+- Application 用途字段（只有 30% 的产品有）
+- 44 个属性字段里的整句话要改写成值（第四节问题 6）
+- 门型单复数、12 行填错位置的规格值（第四节问题 7、8）
+
+### 动手前
+
+```bash
+git log --oneline -5     # 确认 Codex 没有未合并的改动
+npm run check            # lint + typecheck + build
+```
+
+### 收尾前
+
+```bash
+node scripts/audit-seo.mjs   # 目标：只剩 /admin 一个页面有问题
+npm run deploy:prep          # 必跑，否则线上是旧的
+```
