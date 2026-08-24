@@ -295,12 +295,11 @@ Use this exact final order of factual assets:
 /images/company/showroom-product-gallery.webp
 /images/company/showroom-emergency-hardware.webp
 /images/company/material-innovation-workshop.webp
-/images/company/facility-yard.webp
 ```
 
-The CNC view must remain first because `CompanyOverview` uses `facilityImages[0]` as its large manufacturing image. Keep the lower-resolution yard view last in the supporting grid. Exclude `press-shop.webp`, polishing, assembly and operator-led CNC views because people or possible distant people are visible.
+The CNC view must remain first because `CompanyOverview` uses `facilityImages[0]` as its large manufacturing image. Exclude `press-shop.webp`, polishing, assembly, operator-led CNC views, and `facility-yard.webp` because people are visible. Original-detail review confirmed an operator in the yard image's right-side forklift, so the gallery intentionally remains at four safe images.
 
-Expected: exactly five unoccupied first-party references remain; no generated factory scene is introduced and labels remain literal and evidence-based.
+Expected: exactly four unoccupied first-party references remain; no generated factory scene is introduced and labels remain literal and evidence-based.
 
 - [ ] **Step 2: Run type checking and the content build**
 
