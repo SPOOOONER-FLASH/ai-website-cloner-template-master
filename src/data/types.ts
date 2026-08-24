@@ -34,6 +34,8 @@ export interface ImageRef {
   ratio: string;
   /** Alt text when `src` is set; placeholder caption when it is not. */
   label: string;
+  /** Spanish alt text; Spanish routes fall back to `label` when it is absent. */
+  labelEs?: string;
   /** Chinese source caption, for internal review. */
   labelZh?: string;
   /**

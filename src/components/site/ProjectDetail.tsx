@@ -53,6 +53,8 @@ export function ProjectDetail({
   const projectsHref = spanish ? "/es/projects/" : "/projects/";
   const contactHref = spanish ? "/es/contact/" : "/contact/";
   const homeHref = spanish ? "/es/" : "/";
+  const localiseImageLabel = (label: string, labelEs?: string) =>
+    spanish ? labelEs ?? label : label;
   const relatedProducts = project.productModels
     .map(getProductByModel)
     .filter((product) => product !== undefined);
@@ -85,7 +87,11 @@ export function ProjectDetail({
         </section>
 
         <section className="col-outset">
-          <MediaPlaceholder {...project.heroImage} className="max-h-[76rem]" />
+          <MediaPlaceholder
+            {...project.heroImage}
+            label={localiseImageLabel(project.heroImage.label, project.heroImage.labelEs)}
+            className="max-h-[76rem]"
+          />
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x gap-y-48 border-t border-line pt-48">
@@ -109,7 +115,11 @@ export function ProjectDetail({
           <h2 className="text-h2 text-ink">{text.gallery}</h2>
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2">
             {project.gallery.map((image) => (
-              <MediaPlaceholder key={`${image.src}-${image.label}`} {...image} />
+              <MediaPlaceholder
+                key={`${image.src}-${image.label}`}
+                {...image}
+                label={localiseImageLabel(image.label, image.labelEs)}
+              />
             ))}
           </div>
         </section>

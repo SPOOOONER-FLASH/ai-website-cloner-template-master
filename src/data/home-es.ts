@@ -35,7 +35,7 @@ export const heroCarousel: HeroCarouselContent = {
         src: "/images/editorial/hero-cultural-entrance.webp",
         label: "Entrada arquitectónica de piedra, vidrio y metal con luz natural neutra",
       },
-      title: "Dispositivos Antipánico",
+      title: "Dispositivos antipánico",
       body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",
       linkLabel: "Explorar dispositivos",
       href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
@@ -111,7 +111,7 @@ export const teaser2: PageTeaserContent = {
         label: "Estudio representativo de evacuación comercial con puertas dobles de salida",
       },
       title: "Evacuación comercial",
-      subtitle: "Estudio representativo de herrajes para circulación y salidas reglamentarias",
+      subtitle: "Estudio representativo de herrajes para circulación y rutas de evacuación con criterios normativos",
       href: "/es/projects/commercial-fire-egress-hardware",
     },
     {
@@ -144,12 +144,12 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/company/factory-cnc-production.webp",
-    label: "Equipos de mecanizado CNC de Canton Hyland en un taller de herrajes",
+    src: "/images/editorial/home-material-library.webp",
+    label: "Estudio representativo de una biblioteca de materiales con piedra caliza, metal cepillado, bronce y roble",
   },
-  title: "Nuestra empresa",
-  body: "Fabricamos herrajes comerciales y residenciales desde 1998, con ISO 9001 desde 2002 y capacidad OEM para mercados internacionales.",
-  linkLabel: "Conocer Canton Hyland",
+  title: "Materiales + ingeniería",
+  body: "La coordinación de acabados, la planificación de llaves maestras y la documentación de exportación apoyan cuadros de herrajes comerciales y residenciales en mercados internacionales.",
+  linkLabel: "Cómo trabajamos",
   href: "/es/company",
 };
 
@@ -187,7 +187,7 @@ export const teaser3: PageTeaserContent = {
 
 export const text3: TextModuleContent = {
   heading: "Ingeniería para exportación",
-  body: "Selección de acabados, sistemas de llave y detalle de especificación para cada mercado.",
+  body: "Selección de acabados, sistemas de llave maestra y detalles de especificación para cada mercado.",
   linkLabel: "Contactar",
   href: "/es/contact",
 };

@@ -4,7 +4,7 @@
   "nameEs": "Paquete para puertas residenciales y hoteleras",
   "referenceStatus": "representative-application",
   "buildingType": "Hospitality + Residential",
-  "buildingTypeEs": "Hotelero + Residencial",
+  "buildingTypeEs": "Hotelería + vivienda",
   "summary": "A coordinated lever, tubular lock and deadbolt palette for guestrooms, apartments and private interior doors.",
   "summaryEs": "Una gama coordinada de manillas, cerraduras tubulares y cerrojos para habitaciones, apartamentos y puertas interiores.",
   "body": [
@@ -26,18 +26,21 @@
   "heroImage": {
     "src": "/images/editorial/project-hospitality-residential.webp",
     "ratio": "3 / 2",
-    "label": "Representative hospitality/residential corridor with coordinated timber doors"
+    "label": "Representative hospitality/residential corridor with coordinated timber doors",
+    "labelEs": "Pasillo representativo de hotelería y vivienda con puertas de madera coordinadas"
   },
   "gallery": [
     {
       "src": "/images/editorial/architecture-boutique-hotel.webp",
       "ratio": "3 / 2",
-      "label": "Representative boutique-hospitality threshold in timber, bronze and stone"
+      "label": "Representative boutique-hospitality threshold in timber, bronze and stone",
+      "labelEs": "Umbral representativo de hotel boutique en madera, bronce y piedra"
     },
     {
       "src": "/images/products/ansi-grade-3-keyed-deadbolt.webp",
       "ratio": "1 / 1",
-      "label": "ANSI Grade 3 keyed deadbolt set"
+      "label": "ANSI Grade 3 keyed deadbolt set",
+      "labelEs": "Juego de cerrojo con llave ANSI Grade 3"
     }
   ],
   "seoTitle": "Hospitality and Residential Door Hardware | Canton Hyland",

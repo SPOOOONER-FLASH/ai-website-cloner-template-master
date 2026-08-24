@@ -199,6 +199,8 @@ Source for every file below: **client-owned material supplied directly for the p
 WebP q=78, centre-cropped to 3:2, each under 300 KB. These files are technically suitable
 for the demo, but their highly polished / composited appearance and embedded Hyland signage
 must be confirmed by the client as faithful documentary photography before public launch.
+They remain archived for client review, but the public homepage and Company routes do not
+reference them; those surfaces use clearly identified representative editorial studies instead.
 
 | File | Source file | Output | Size | P11 verdict |
 |---|---|---|---|---|

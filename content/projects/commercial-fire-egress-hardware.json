@@ -26,18 +26,21 @@
   "heroImage": {
     "src": "/images/editorial/project-commercial-egress.webp",
     "ratio": "3 / 2",
-    "label": "Representative commercial/institutional entrance hall with paired egress doors"
+    "label": "Representative commercial/institutional entrance hall with paired egress doors",
+    "labelEs": "Vestíbulo representativo comercial e institucional con puertas dobles de evacuación"
   },
   "gallery": [
     {
       "src": "/images/editorial/industrial-precision-parts.webp",
       "ratio": "3 / 2",
-      "label": "Representative editorial study of precision-machined architectural components"
+      "label": "Representative editorial study of precision-machined architectural components",
+      "labelEs": "Estudio editorial representativo de componentes arquitectónicos mecanizados con precisión"
     },
     {
       "src": "/images/products/305-fire-door-panic-exit-device.webp",
       "ratio": "1 / 1",
-      "label": "Model 305 fire door panic exit device"
+      "label": "Model 305 fire door panic exit device",
+      "labelEs": "Dispositivo antipánico modelo 305 para puerta cortafuego"
     }
   ],
   "seoTitle": "Commercial Fire-Egress Hardware Application | Canton Hyland",

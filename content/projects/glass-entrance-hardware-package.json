@@ -25,18 +25,21 @@
   "heroImage": {
     "src": "/images/editorial/project-glass-entrance.webp",
     "ratio": "3 / 2",
-    "label": "Representative frameless glass entrance opening onto an interior courtyard"
+    "label": "Representative frameless glass entrance opening onto an interior courtyard",
+    "labelEs": "Entrada representativa de vidrio sin marco abierta a un patio interior"
   },
   "gallery": [
     {
-      "src": "/images/editorial/architecture-coastal-residence.webp",
+      "src": "/images/editorial/home-design-context.webp",
       "ratio": "3 / 2",
-      "label": "Representative coastal residence entrance in stone, timber and bronze"
+      "label": "Representative architectural junction study in timber, limestone and metal",
+      "labelEs": "Estudio arquitectónico representativo de encuentros entre madera, piedra caliza y metal"
     },
     {
       "src": "/images/products/wooden-door-floor-hinge.webp",
       "ratio": "1 / 1",
-      "label": "Concealed floor hinge hardware"
+      "label": "Concealed floor hinge hardware",
+      "labelEs": "Herraje de cierrapuertas de suelo oculto"
     }
   ],
   "seoTitle": "Glass Entrance Hardware Application | Canton Hyland",

@@ -80,6 +80,7 @@ export const certificates: CertificateRecord[] = [
       src: "/images/certificates/intertek-en1125-panic-device.webp",
       ratio: "604 / 800",
       label: "Intertek EN 1125 test report for Hyland panic exit device KD070/30-290",
+      labelEs: "Informe de ensayo Intertek EN 1125 del dispositivo antipánico Hyland KD070/30-290",
     },
   },
   {
@@ -92,6 +93,7 @@ export const certificates: CertificateRecord[] = [
       src: "/images/certificates/intertek-en1154-floor-spring.webp",
       ratio: "604 / 800",
       label: "Intertek EN 1154 test report for floor spring KD070/20-101",
+      labelEs: "Informe de ensayo Intertek EN 1154 del cierrapuertas de suelo KD070/20-101",
     },
   },
   {
@@ -104,6 +106,7 @@ export const certificates: CertificateRecord[] = [
       src: "/images/certificates/intertek-tubular-lock-durability.webp",
       ratio: "604 / 800",
       label: "Intertek durability test report for tubular door lock 607 SS ET",
+      labelEs: "Informe Intertek de durabilidad de la cerradura tubular 607 SS ET",
     },
   },
   {
@@ -116,25 +119,32 @@ export const certificates: CertificateRecord[] = [
       src: "/images/certificates/celab-ce-panic-exit-device.webp",
       ratio: "604 / 800",
       label: "CELAB CE certificate of conformity for Hyland panic exit devices",
+      labelEs: "Certificado CE de conformidad CELAB para dispositivos antipánico Hyland",
     },
   },
 ];
 
-/** Facility photography supplied by the client. */
-export const facilityImages: ImageRef[] = [
+/**
+ * Representative editorial studies used for atmosphere only. These are not
+ * documentary photographs of Canton Hyland facilities or completed projects.
+ */
+export const companyEditorialStudies: ImageRef[] = [
   {
-    src: "/images/company/factory-cnc-production.webp",
+    src: "/images/editorial/home-material-library.webp",
     ratio: "3 / 2",
-    label: "CNC production equipment in a hardware machining workshop",
+    label: "Representative architectural material-library study in limestone, brushed metal, bronze and oak",
+    labelEs: "Estudio representativo de una biblioteca de materiales con piedra caliza, metal cepillado, bronce y roble",
   },
   {
-    src: "/images/company/showroom-product-gallery.webp",
+    src: "/images/editorial/home-design-context.webp",
     ratio: "3 / 2",
-    label: "Product showroom with hardware displays and meeting table",
+    label: "Representative architectural junction study in timber, limestone and metal",
+    labelEs: "Estudio arquitectónico representativo de encuentros entre madera, piedra caliza y metal",
   },
   {
-    src: "/images/company/showroom-emergency-hardware.webp",
+    src: "/images/editorial/industrial-precision-parts.webp",
     ratio: "3 / 2",
-    label: "Emergency exit and architectural hardware showroom display",
+    label: "Representative editorial study of precision-machined metal forms",
+    labelEs: "Estudio editorial representativo de formas metálicas mecanizadas con precisión",
   },
 ];

@@ -16,13 +16,20 @@ export function ProjectCard({
     : project.buildingType;
   const summary = spanish ? project.summaryEs ?? project.summary : project.summary;
   const href = spanish ? `/es/projects/${project.slug}/` : `/projects/${project.slug}/`;
+  const imageLabel = spanish
+    ? project.heroImage.labelEs ?? project.heroImage.label
+    : project.heroImage.label;
 
   return (
     <Link
       href={href}
       className="group flex flex-col border border-line bg-surface hover:border-brand"
     >
-      <MediaPlaceholder {...project.heroImage} className="aspect-[3/2]" />
+      <MediaPlaceholder
+        {...project.heroImage}
+        label={imageLabel}
+        className="aspect-[3/2]"
+      />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
           {spanish ? "Aplicación representativa" : "Representative application"}

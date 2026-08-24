@@ -158,13 +158,12 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/company/factory-cnc-production.webp",
-    label: "Canton Hyland CNC machining equipment in a hardware workshop",
+    src: "/images/editorial/home-material-library.webp",
+    label: "Representative material-library study in limestone, brushed metal, bronze and oak",
   },
-  title: "About Us",
-  // 8 lines at the 332px caption column
-  body: "Manufacturing commercial and residential door hardware since 1998: panic devices, cylindrical and tubular locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. ISO 9001 certified since 2002.",
-  linkLabel: "Learn more",
+  title: "Materials + Engineering",
+  body: "Finish coordination, master-key planning and export documentation support commercial and residential hardware schedules across international markets.",
+  linkLabel: "How we work",
   href: "/company",
 };
 
