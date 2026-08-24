@@ -4,7 +4,7 @@
 
 **Goal:** Generate and integrate an original, people-free editorial image system that shifts the Canton Hyland site toward architecture, materials, and calm industrial credibility.
 
-**Architecture:** New generated assets live in a dedicated `public/images/editorial/` namespace so existing first-party and technical imagery remains recoverable. Homepage and representative-project data files are remapped to the new assets; Company continues to use factual first-party photography, curated to avoid people where practical.
+**Architecture:** New generated assets live in a dedicated `public/images/editorial/` namespace so existing first-party and technical imagery remains recoverable. Homepage and representative-project data files are remapped to the new assets. Because the polished factory/showroom set still needs documentary-authenticity confirmation, public Company surfaces use clearly disclosed architectural/material studies while factual profile, statistics, and certificate evidence remain separate.
 
 **Tech Stack:** Next.js 16 App Router, React 19, TypeScript, static JSON content, built-in ImageGen, Sharp, npm verification scripts.
 
@@ -79,10 +79,11 @@ Expected: `public/images/editorial/` exists and contains no inherited source-sit
 - Create: `public/images/editorial/project-hospitality-residential.webp`
 - Create: `public/images/editorial/architecture-boutique-hotel.webp`
 - Create: `public/images/editorial/architecture-coastal-residence.webp`
+- Create: `public/images/editorial/home-material-library.webp`
 
 **Interfaces:**
 - Consumes: prompt constraints from the design spec
-- Produces: eleven original architecture assets with stable slugs and website-ready WebP encoding
+- Produces: twelve original architecture assets with stable slugs and website-ready WebP encoding
 
 - [ ] **Step 1: Generate each architecture asset with one built-in ImageGen call**
 
@@ -124,6 +125,7 @@ project-glass-entrance.webp: 1800×1200
 project-hospitality-residential.webp: 1800×1200
 architecture-boutique-hotel.webp: 1800×1200
 architecture-coastal-residence.webp: 1800×1200
+home-material-library.webp: 1800×1200
 ```
 
 Expected: final files use the exact slugs listed above and remain visually clean at desktop width.
@@ -211,11 +213,11 @@ Map:
 ```text
 hero2 -> /images/editorial/home-commercial-egress.webp
 hero3 -> /images/editorial/home-design-context.webp
-hero4 -> /images/company/factory-cnc-production.webp
+hero4 -> /images/editorial/home-material-library.webp
 hero5 -> /images/editorial/home-editorial-insight.webp
 ```
 
-Expected: About Us uses real first-party manufacturing photography with no people; generated architecture is not called a Canton Hyland project.
+Expected: Materials + Engineering uses a representative material-library study and does not imply that generated imagery documents a Canton Hyland factory or completed project.
 
 - [ ] **Step 4: Replace conceptual teaser media while retaining technical product cards**
 
@@ -277,30 +279,35 @@ npm run content
 
 Expected: exit code 0 and generated project data reflects the new image paths.
 
-### Task 6: Curate the Company gallery without falsifying facilities
+### Task 6: Build a launch-safe Company editorial context without falsifying facilities
 
 **Files:**
 - Modify: `src/data/company.ts`
+- Modify: `src/components/site/CompanyOverview.tsx`
+- Modify: `src/data/home.ts`
+- Modify: `src/data/home-es.ts`
 
 **Interfaces:**
-- Consumes: existing first-party company assets only
-- Produces: a people-free or effectively unoccupied Company gallery
+- Consumes: approved representative editorial assets plus factual company copy and certificates
+- Produces: a people-free, bilingual architectural/material study group with an explicit non-documentary disclosure
 
-- [ ] **Step 1: Replace people-led facility references with unoccupied first-party views**
+- [ ] **Step 1: Remove all unverified factory/showroom imagery from public route references**
 
-Use this exact final order of factual assets:
+The archived factory/showroom files remain recoverable under `public/images/company/`, but public homepage and Company data must not reference them until the client confirms their facility identity and embedded signage.
+
+- [ ] **Step 2: Use this exact final editorial order**
 
 ```text
-/images/company/factory-cnc-production.webp
-/images/company/showroom-product-gallery.webp
-/images/company/showroom-emergency-hardware.webp
+/images/editorial/home-material-library.webp
+/images/editorial/home-design-context.webp
+/images/editorial/industrial-precision-parts.webp
 ```
 
-The CNC view must remain first because `CompanyOverview` uses `facilityImages[0]` as its large manufacturing image. Exclude `press-shop.webp`, polishing, assembly, operator-led CNC views, and `facility-yard.webp` because people are visible. Original-detail review confirmed an operator in the yard image's right-side forklift. Also exclude `material-innovation-workshop.webp`: its embedded HYDE facility sign and identity remain unverified, and the provenance register limits it to internal-demo use. The public gallery therefore intentionally remains at three safe images.
+Rename the collection to `companyEditorialStudies`. The first image is the large context visual. Change the visible section copy to state that these are representative editorial concepts—not Canton Hyland facilities, production documentation, or completed client projects. Provide Spanish `labelEs` values and select them on Spanish routes.
 
-Expected: exactly three unoccupied first-party references with publishable provenance remain; no generated factory scene is introduced and labels remain literal and evidence-based.
+Expected: exactly three people-free editorial studies appear, the documentary-authenticity gate is removed from public routes, and factual company claims remain grounded in approved copy and model-scoped evidence rather than generated imagery.
 
-- [ ] **Step 2: Run type checking and the content build**
+- [ ] **Step 3: Run type checking and the content build**
 
 Run:
 

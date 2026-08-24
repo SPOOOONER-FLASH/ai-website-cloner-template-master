@@ -62,6 +62,7 @@ Create fifteen distinct editorial assets:
 13. `material-brushed-steel` — brushed stainless macro study.
 14. `material-bronze-patina` — naturally varied bronze surface study.
 15. `material-metal-stone-detail` — architectural junction of metal, stone, timber, and glass.
+16. `home-material-library` — empty architectural material library in limestone, brushed metal, bronze, oak, and glass.
 
 ## Page mapping
 
@@ -70,7 +71,7 @@ Create fifteen distinct editorial assets:
 - Replace all three carousel scenes with assets 1–3.
 - Replace the large panic-device application banner with asset 4.
 - Replace the side-by-side `Designed For` image with asset 5.
-- Use the real, no-person `factory-cnc-production.webp` for the factual About section.
+- Use asset 16 for the materials-and-engineering section, with copy that identifies it as a representative editorial study rather than factory documentation.
 - Replace the Insights banner with asset 6.
 - Use material and architecture assets for sourcing/contact teaser cards where the card is conceptual rather than product-specific.
 
@@ -82,8 +83,10 @@ Create fifteen distinct editorial assets:
 
 ### Company
 
-- Curate the gallery toward first-party, no-person images: CNC production, showroom displays, material innovation, facility yard, and unoccupied equipment views.
-- Generated imagery must not be presented as the Canton Hyland factory.
+- Do not publish the highly polished client-supplied factory/showroom set until the client confirms that the facilities and embedded Hyland signage are documentary-accurate.
+- Use a clearly disclosed architectural/material study group instead: asset 16, `home-design-context`, and `industrial-precision-parts`.
+- Keep factual company profile copy, statistics, and model-scoped certificate scans separate from these atmospheric studies.
+- Generated imagery must never be presented as the Canton Hyland factory, production process, or a completed client project.
 
 ### Brand assets
 
