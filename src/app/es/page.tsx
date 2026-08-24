@@ -11,7 +11,7 @@ import * as content from "@/data/home-es";
 export const metadata: Metadata = pageMetadata({
   enPath: "/",
   locale: "es",
-  title: "Canton Hyland — Cerraduras y herrajes arquitectónicos",
+  title: "Cerraduras y herrajes arquitectónicos",
   description:
     "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
 });
