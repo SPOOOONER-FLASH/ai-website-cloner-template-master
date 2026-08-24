@@ -1,34 +1,105 @@
-# Image Credits
+# Image Credits and Provenance
 
-Every image in `public/images/` and where it came from.
-
----
-
-## Licence
-
-**All images are the client's own material — 甲方自有素材.** Delivered by Canton Hyland on
-2026-08-15 as a WeChat asset pack (the same photography used on their Alibaba storefront,
-`https://cnhyland.en.alibaba.com/`). No stock library, no third-party licence, no Alibaba
-CDN hotlinking — every file is downloaded, converted and served from this repo.
-
-The previous stock photography from Pexels has been **removed**.
-
-Excluded on instruction: Wangwang / sales-contact avatars, prices, MOQ, transaction data,
-and any image carrying platform promotional text.
+This register separates client-supplied factual material, project-created or processed
+assets, and AI-generated editorial imagery. Provenance, processing, and permitted use are
+recorded by source set; no blanket ownership or processing statement applies to every file
+under `public/images/`.
 
 ---
 
-## Processing
+## Provenance classes and permitted use
 
-`scripts/process-client-assets.mjs` converts the pack to WebP.
+### Client-supplied factual material
 
-- Format WebP, quality 78, hard cap 300 KB (largest file is 114 KB — WebP is far more
-  efficient than the source JPEGs)
-- Cover-crop to each slot's aspect ratio, centre gravity
-- **Never upscales.** Several sources are smaller than the slot renders at; inventing
-  pixels would hide that. The `scale` column below is output width ÷ CSS display width.
+Product pack shots, selected company photography, certificate scans, catalogue documents,
+and approved brand material described below were supplied by or on behalf of Canton Hyland,
+or recovered from the client's own legacy properties. These assets remain distinct from
+generated editorial imagery. Product, certificate, factory, and facility claims must be
+supported only by the applicable first-party source material and any per-file verification
+notes below.
 
-**35 files, 1,087 KB total.**
+### Project-created and processed assets
+
+Some repository assets are crops, format conversions, or project-created vectors derived
+from approved source material. Their processing does not change the provenance of the
+source. Project-created graphics must not be described as client-supplied photography or
+used on their own as certification evidence.
+
+### AI-generated editorial imagery
+
+The files under `public/images/editorial/` were generated on 2026-08-24 with the built-in
+ImageGen workflow from text-only prompts, then processed with Sharp as WebP quality 86. No
+stock, web, FSB, Canton Hyland, or other reference images were supplied to the generation
+workflow.
+
+These files are representative editorial concepts. They are not photographs of completed
+Canton Hyland or HYDE projects, actual installations, named buildings, Canton Hyland
+facilities, factory operations, manufacturing or inspection processes, branded products,
+dimensional evidence, compliance evidence, or certification evidence.
+
+Use these images only for architectural atmosphere, conceptual material studies, or clearly
+labelled representative applications. Where a caption or media label is shown, use language
+such as “Representative application study” or “Conceptual material study”; do not use “our
+project”, “our factory”, “our process”, “completed project”, or a named location.
+
+The generated set was prompted and visually reviewed to exclude people, silhouettes, hands,
+faces, human reflections, readable text, logos, watermarks, brands, and certification marks.
+This no-people statement applies to the generated editorial set, not automatically to every
+archived first-party source stored elsewhere in the repository.
+
+The previous Pexels stock photography was **removed**. The generated editorial set is not
+part of the client asset pack delivered on 2026-08-15.
+
+Excluded on instruction from client-derived material: Wangwang / sales-contact avatars,
+prices, MOQ, transaction data, and any image carrying platform promotional text.
+
+---
+
+## Processing by source set
+
+### Client asset-pack processing
+
+`scripts/process-client-assets.mjs` converts the original client asset-pack subset to WebP.
+The quality, crop, and size statements in the corresponding tables apply only to that
+documented subset; they do not apply to generated editorial imagery, later legacy-site
+imports, source documents, vectors, or brand masters.
+
+### Generated editorial processing
+
+The fifteen generated editorial sources were converted with the repository Sharp dependency
+using `fit: "cover"` and WebP quality 86 at the exact output dimensions listed below. The
+eleven architecture images used attention-aware cover cropping. The industrial and material
+images used cover cropping; the corrected `industrial-precision-parts.webp` was additionally
+normalised to opaque sRGB before encoding.
+
+The final editorial set contains 15 WebP files totalling 3,147,938 bytes.
+
+---
+
+## AI-generated editorial inventory — `public/images/editorial/`
+
+| File | Role | Output | Bytes | Generated | Method |
+|---|---|---:|---:|---|---|
+| `hero-cultural-entrance.webp` | Architectural editorial | 2400×943 | 119,540 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `hero-warm-residential-entry.webp` | Architecture / warm threshold | 2400×943 | 265,160 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `hero-civic-corridor.webp` | Architectural editorial | 2400×943 | 109,892 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `home-commercial-egress.webp` | Architectural editorial | 2400×1159 | 243,648 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `home-design-context.webp` | Architecture / material junctions | 1800×1200 | 253,806 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `home-editorial-insight.webp` | Architectural light / material study | 2400×1464 | 185,346 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `project-commercial-egress.webp` | Representative application concept | 1800×1200 | 205,920 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `project-glass-entrance.webp` | Representative application concept | 1800×1200 | 167,582 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `project-hospitality-residential.webp` | Warm interior / representative application | 1800×1200 | 113,086 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `architecture-boutique-hotel.webp` | Warm interior / architectural detail | 1800×1200 | 260,270 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `architecture-coastal-residence.webp` | Architectural editorial | 1800×1200 | 272,070 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `industrial-precision-parts.webp` | Industrial / material still life | 1800×1200 | 204,458 | 2026-08-24 | Built-in ImageGen, text-only; one QA replacement; Sharp cover, opaque sRGB, WebP q=86 |
+| `material-brushed-steel.webp` | Material macro | 1600×1600 | 179,238 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
+| `material-bronze-patina.webp` | Material macro | 1600×1600 | 391,848 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
+| `material-metal-stone-detail.webp` | Architectural material junction | 1600×1600 | 176,074 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
+
+Visual QA of the final WebP files found no visible people, silhouettes, hands, faces, distant
+figures, or human reflections, and no readable text, logo, watermark, or brand mark. This
+review does not convert the images into factual project or manufacturing evidence; the
+representative-use restrictions above remain mandatory.
 
 ---
 
@@ -54,13 +125,14 @@ downscaled for Alibaba. If originals do not exist, they need reshooting.
 | File group | Output | Scale | Note |
 |---|---|---|---|
 | `company/press-shop`, `polishing-line`, `assembly-line` | 1308×872 | 0.91× | Genuine factory photography and it reads as real, which is the point. But under 1× for a full-width hero, and the phone-camera look (mixed colour temperature, no styling) sits awkwardly against the minimal layout. Fine at card size, weak at hero size. |
-| All 22 `products/*.webp` | 1000×1000 | 1.47× | 20 catalogue products plus 2 category images. Clean white-background B2B pack shots, sharp and correctly exposed. Just under 1.5×, so slightly soft on retina but usable for the demo. |
+| Original 22-image product prototype subset | 1000×1000 | 1.47× | 20 catalogue products plus 2 category images from the first prototype set. Clean white-background B2B pack shots, sharp and correctly exposed. Just under 1.5×, so slightly soft on retina but usable for the demo. This is not an inventory of later legacy-site imports. |
 | `certificates/*.webp` | 604×800 | 1× | Document scans. Legible at reading size, not at full-page zoom. Fine — they are evidence, not decoration. |
 
 ### ⚠️ Design conflict, not a resolution problem
 
-**Every product image has the client's own Hyland logo badge burned into the top-left
-corner.** It is their own trademark so there is no licensing issue, but on a site whose
+**Every product image in the original 22-image prototype subset has the client's own Hyland
+logo badge burned into the top-left corner.** It is their own trademark so there is no
+licensing issue, but on a site whose
 whole visual language is flat white space and a single hairline rule, a glossy red-and-
 chrome logo lozenge repeated across every card is the loudest thing on the page. It also
 duplicates the wordmark already in the header.
@@ -75,9 +147,10 @@ product photography on a neutral ground.**
 
 ---
 
-## Products — `public/images/products/`
+## Original product prototype subset — `public/images/products/`
 
-All 1000×1000, cropped 1:1, q=78.
+The following 22 rows document the original prototype subset only, not the complete current
+contents of `public/images/products/`. These listed files are 1000×1000, cropped 1:1, q=78.
 
 | File | Source file (client pack) | Size |
 |---|---|---|
@@ -174,6 +247,7 @@ All 604×800, q=78. Transcribed into `src/data/company.ts`.
 |---|---|---|
 | `canton-hyland-logo-source.png` | 甲方自有 Logo 源图（本次会话提供；与 cantonlock.com 页眉素材一致） | Archived source strip |
 | `hyland-mark.png` | Exact crop of the client source via `scripts/process-brand-logo.mjs` | Header emblem paired with a live Archivo wordmark |
+| `hyde/hyde-logo-stacked-black-1600.png` | Approved HYDE stacked raster master supplied directly for this project; copied byte-for-byte into the repository on 2026-08-24 | Archival/reference raster; not AI-generated; 1600×1322 RGBA PNG with transparency, 25,100 bytes; SHA-256 `91B6D85E8F4AB8F8FC3E4FDAB6576E298C5BFC4080F75BB4AD9BBB88571D94EE` |
 
 ## Unused sources
 
