@@ -121,22 +121,22 @@ export const teaser2: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/305-fire-door-panic-exit-device.webp",
-        label: "Hyland 305 fire door panic exit device with push bar and outside lever trim",
+        src: "/images/editorial/project-commercial-egress.webp",
+        label: "Representative commercial egress application study with paired fire-exit doors",
       },
-      title: "305 Fire Door Panic Exit Device",
-      subtitle: "Single-point push bar for fire-rated escape doors",
-      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+      title: "Commercial Fire Egress",
+      subtitle: "Representative hardware application study for code-conscious circulation",
+      href: "/projects/commercial-fire-egress-hardware",
     },
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/lc14-8550-mortise-lock-case.webp",
-        label: "Hyland LC14 four bolt mortise lock case, 85 mm centres and 50 mm backset",
+        src: "/images/editorial/project-hospitality-residential.webp",
+        label: "Representative hospitality and residential door-hardware application study",
       },
-      title: "LC14 85×50 Mortise Lock Case",
-      subtitle: "Four bolt lock body for Euro profile cylinders",
-      href: "/products/mortise-locks/lc14-8550-four-bolt-mortise-lock-case",
+      title: "Hospitality + Residential",
+      subtitle: "Warm entry and corridor studies for coordinated door packages",
+      href: "/projects/hospitality-residential-door-package",
     },
   ],
 };

@@ -107,22 +107,22 @@ export const teaser2: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/305-fire-door-panic-exit-device.webp",
-        label: "Dispositivo antipánico 305 para puerta cortafuego",
+        src: "/images/editorial/project-commercial-egress.webp",
+        label: "Estudio representativo de evacuación comercial con puertas dobles de salida",
       },
-      title: "Dispositivo antipánico 305",
-      subtitle: "Barra de un punto para puertas de evacuación resistentes al fuego",
-      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+      title: "Evacuación comercial",
+      subtitle: "Estudio representativo de herrajes para circulación y salidas reglamentarias",
+      href: "/es/projects/commercial-fire-egress-hardware",
     },
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/products/lc14-8550-mortise-lock-case.webp",
-        label: "Caja de cerradura LC14 de cuatro bulones",
+        src: "/images/editorial/project-hospitality-residential.webp",
+        label: "Estudio representativo de herrajes para hotelería y vivienda",
       },
-      title: "Caja de cerradura LC14 85×50",
-      subtitle: "Cuerpo para cilindro de perfil europeo",
-      href: "/products/mortise-locks/lc14-8550-four-bolt-mortise-lock-case",
+      title: "Hotelería + vivienda",
+      subtitle: "Estudios de acceso y pasillo para conjuntos coordinados de herrajes",
+      href: "/es/projects/hospitality-residential-door-package",
     },
   ],
 };
