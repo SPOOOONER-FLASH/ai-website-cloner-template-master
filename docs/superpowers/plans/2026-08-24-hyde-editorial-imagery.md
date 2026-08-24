@@ -202,7 +202,7 @@ Map the root Open Graph and Twitter preview from the old product-room composite 
 /images/editorial/hero-cultural-entrance.webp
 ```
 
-Expected: shared links use the new architectural art direction; titles, descriptions, locale metadata, and image dimensions remain otherwise unchanged.
+Expected: shared links use the new architectural art direction; set the image metadata to the actual `2400×943` dimensions and use an accurate architectural alt label while leaving titles, descriptions, and locale metadata unchanged.
 
 - [ ] **Step 3: Update large homepage modules**
 
@@ -219,7 +219,18 @@ Expected: About Us uses real first-party manufacturing photography with no peopl
 
 - [ ] **Step 4: Replace conceptual teaser media while retaining technical product cards**
 
-Use material/editorial images only for cards whose copy describes sourcing, contact, standards, or editorial insight. Keep model-specific cards on first-party product images.
+Use this exact mapping for conceptual cards in both locales:
+
+```text
+teaser1.cards[0] -> /images/editorial/material-brushed-steel.webp
+teaser1.cards[1] -> /images/editorial/material-metal-stone-detail.webp
+teaser2.cards[0] -> keep the real 305 product image
+teaser2.cards[1] -> keep the real LC14 product image
+teaser3.cards[0] -> /images/editorial/material-bronze-patina.webp
+teaser3.cards[1] -> /images/editorial/industrial-precision-parts.webp
+```
+
+Use accurate localized media labels. Do not call the generated precision-parts still life a Canton Hyland factory, inspection, or production photograph.
 
 Expected: the page reaches the approved mix without weakening technical credibility.
 
