@@ -123,43 +123,23 @@ export const certificates: CertificateRecord[] = [
 /** Facility photography supplied by the client. */
 export const facilityImages: ImageRef[] = [
   {
-    src: "/images/company/factory-polishing-workshop.webp",
-    ratio: "3 / 2",
-    label: "Polishing workshop with extraction equipment and production benches",
-  },
-  {
-    src: "/images/company/factory-assembly-quality-line.webp",
-    ratio: "3 / 2",
-    label: "Assembly and quality-control line for door hardware components",
-  },
-  {
     src: "/images/company/factory-cnc-production.webp",
     ratio: "3 / 2",
     label: "CNC production equipment in a hardware machining workshop",
   },
   {
-    src: "/images/company/factory-cnc-machining.webp",
-    ratio: "3 / 2",
-    label: "Operator preparing aluminium profiles at a CNC machining centre",
-  },
-  {
     src: "/images/company/showroom-product-gallery.webp",
     ratio: "3 / 2",
-    label: "Canton Hyland product showroom and sample meeting room",
+    label: "Product showroom with hardware displays and meeting table",
   },
   {
     src: "/images/company/showroom-emergency-hardware.webp",
     ratio: "3 / 2",
-    label: "Showroom wall presenting emergency exit and architectural hardware",
+    label: "Emergency exit and architectural hardware showroom display",
   },
   {
     src: "/images/company/material-innovation-workshop.webp",
     ratio: "3 / 2",
-    label: "Material-development workshop and sample preparation area",
-  },
-  {
-    src: "/images/company/factory-polishing-workshop-wide.webp",
-    ratio: "3 / 2",
-    label: "Wide view of the polishing workshop and extraction equipment",
+    label: "Material innovation center with sample displays and production floor",
   },
 ];
