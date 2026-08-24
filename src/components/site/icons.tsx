@@ -134,12 +134,10 @@ export function HydeIcon({
 /**
  * The header lockup.
  *
- * ⚠ The logo now reads HYDE while the site's copy, page titles and legal name still read
- * "Canton Hyland". That mismatch is deliberate for now — replacing the logo was the
- * instruction — but it is a live inconsistency a visitor can see, and it needs a
- * decision: is HYDE the brand and Canton Hyland the company behind it, or is the copy
- * being renamed too? Until that is settled the wordmark below carries no company name,
- * which is at least not contradictory.
+ * Naming, settled with the client 2026-08-24: HYDE is the brand, Canton Hyland Hardware
+ * (Group) Co., Ltd is the company behind it. So the header carries the brand alone and
+ * the legal name appears where a legal name belongs — the footer, the company page and
+ * the Organization structured data. That is a normal arrangement, not a loose end.
  */
 export function Wordmark({ className }: { className?: string }) {
   return (

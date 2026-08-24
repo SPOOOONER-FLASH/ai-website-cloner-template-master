@@ -1,0 +1,16 @@
+{
+  "header": [
+    { "label": "Products", "labelEs": "Productos", "href": "/products" },
+    { "label": "Product Finder", "labelEs": "Buscador", "href": "/product-finder" },
+    { "label": "Projects", "labelEs": "Proyectos", "href": "/projects" },
+    { "label": "News", "labelEs": "Noticias", "href": "/news" },
+    { "label": "Company", "labelEs": "Empresa", "href": "/company" },
+    { "label": "Downloads", "labelEs": "Descargas", "href": "/downloads" }
+  ],
+  "footer": [
+    { "label": "Contact", "labelEs": "Contacto", "href": "/contact" },
+    { "label": "Downloads", "labelEs": "Descargas", "href": "/downloads" },
+    { "label": "Company", "labelEs": "Empresa", "href": "/company" },
+    { "label": "Projects", "labelEs": "Proyectos", "href": "/projects" }
+  ]
+}

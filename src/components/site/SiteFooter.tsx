@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { socialLinks } from "@/data/site";
+import { siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
 
 /**
@@ -107,8 +108,15 @@ export function SiteFooter() {
               </ul>
             </div>
           </div>
+          {/*
+            The copyright line is now content, not a literal — and fixing that surfaced a
+            real inconsistency: this line said "Canton Hyland Hardware & Locks Co.,Ltd."
+            while src/data/site.ts said "Canton Hyland Hardware (Group) Co., Ltd." Two
+            company names on one site. The (Group) form matches the client's own English
+            profile, so that is the one kept, and there is now a single place to edit it.
+          */}
           <p className="mt-48 border-t border-line pt-16 text-c2 text-ink-secondary">
-            Copyright © 2020-2026 Canton Hyland Hardware &amp; Locks Co.,Ltd.
+            {siteSettings.copyright}
           </p>
         </div>
       </div>

@@ -4,32 +4,20 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { headerNav, localisedHref, navLabel } from "@/data/navigation";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SiteMenuDrawer } from "./SiteMenuDrawer";
 
-const NAV_LINKS = {
-  en: [
-    { label: "Products", href: "/products" },
-    { label: "Product Finder", href: "/product-finder" },
-    { label: "Projects", href: "/projects" },
-    { label: "News", href: "/news" },
-    { label: "Company", href: "/company" },
-    // Shortened from "Service + Downloads" when News was added: six labels at the old
-    // lengths needed 728px in a 653px column. This one was the longest at 175px and the
-    // least informative — the route is /downloads and the page is the download centre.
-    { label: "Downloads", href: "/downloads" },
-  ],
-  es: [
-    { label: "Productos", href: "/products" },
-    { label: "Buscador", href: "/product-finder" },
-    { label: "Proyectos", href: "/es/projects" },
-    // English-only for now: the newsroom has no Spanish mirror, so this points at the
-    // English page rather than a /es URL that would 404.
-    { label: "Noticias", href: "/news" },
-    { label: "Empresa", href: "/es/company" },
-    { label: "Descargas", href: "/downloads" },
-  ],
-} as const;
+/**
+ * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
+ *
+ * 这里原本是写死的两份数组（英文一份、西班牙文一份）。搬进内容层之后，
+ * 同事在后台改一次即可，不必找人改代码 —— 后台那个栏目才算是真的能用，
+ * 而不是摆着好看。
+ *
+ * 西班牙语路径由 localisedHref 统一处理：只有 /company /contact /projects
+ * 有西语版，其余（新闻、下载、产品）指回英文页，而不是指向一个会 404 的 /es 地址。
+ */
 
 function languageTarget(pathname: string, isSpanish: boolean): string {
   if (isSpanish) {
@@ -105,12 +93,13 @@ export function SiteHeader() {
                 misalignment.
               */}
               <nav className="flex gap-24 whitespace-nowrap">
-                {NAV_LINKS[locale].map((link) => {
-                  const current = isCurrent(link.href);
+                {headerNav.map((link) => {
+                  const href = localisedHref(link.href, locale);
+                  const current = isCurrent(href);
                   return (
                     <Link
-                      key={link.label}
-                      href={link.href}
+                      key={link.href}
+                      href={href}
                       aria-current={current ? "page" : undefined}
                       className={cn(
                         "text-c1 underline-offset-4 hover:underline",
@@ -118,7 +107,7 @@ export function SiteHeader() {
                         current ? "text-brand" : "text-ink hover:text-brand-hover",
                       )}
                     >
-                      {link.label}
+                      {navLabel(link, locale)}
                     </Link>
                   );
                 })}

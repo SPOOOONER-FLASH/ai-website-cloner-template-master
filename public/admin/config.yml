@@ -384,3 +384,62 @@ collections:
               - { name: "src", label: "图片", widget: "image", required: false }
               - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
               - { name: "label", label: "替代文字 (alt)", widget: "string", required: false }
+
+      - name: "navigation"
+        label: "导航菜单"
+        file: "content/navigation.json"
+        format: "json"
+        fields:
+          - name: "header"
+            label: "页首导航"
+            widget: "list"
+            summary: "{{fields.label}} → {{fields.href}}"
+            fields:
+              - { name: "label", label: "菜单名（英文）", widget: "string" }
+              - { name: "labelEs", label: "菜单名（西班牙语）", widget: "string", required: false, hint: "留空则西语站也显示英文，不会漏掉这一项。" }
+              - { name: "href", label: "链接地址", widget: "string", hint: "站内路径，如 /products。西语版会自动加 /es 前缀 —— 但只对有西语页的栏目（公司、联系、案例）生效，其余指回英文页而不是指向一个会 404 的地址。" }
+            hint: "⚠ 页首横排空间有限。六个菜单名在最窄的桌面断点下约占 486px，可用 649px。再加项或改长名字前先在电脑上看一眼有没有换行错位。"
+          - name: "footer"
+            label: "页尾导航"
+            widget: "list"
+            summary: "{{fields.label}} → {{fields.href}}"
+            fields:
+              - { name: "label", label: "菜单名（英文）", widget: "string" }
+              - { name: "labelEs", label: "菜单名（西班牙语）", widget: "string", required: false }
+              - { name: "href", label: "链接地址", widget: "string" }
+
+      - name: "settings"
+        label: "基础设置"
+        file: "content/site-settings.json"
+        format: "json"
+        fields:
+          - { name: "brandName", label: "品牌名", widget: "string", hint: "显示为 logo 的那个名字。目前是 HYDE。" }
+          - { name: "legalName", label: "公司全称", widget: "string", hint: "法律主体名称，用在页尾、公司页和结构化数据里。HYDE 是品牌，这里填品牌背后的公司。" }
+          - { name: "copyright", label: "版权信息", widget: "string", hint: "页尾最底下那一行。" }
+          - name: "contact"
+            label: "联系方式"
+            widget: "object"
+            fields:
+              - { name: "email", label: "联系邮箱", widget: "string", required: false }
+              - { name: "phone", label: "电话", widget: "string", required: false }
+              - { name: "address", label: "公司地址", widget: "string", required: false }
+              - { name: "city", label: "城市", widget: "string", required: false }
+              - { name: "province", label: "省/州", widget: "string", required: false }
+              - { name: "postcode", label: "邮政编码", widget: "string", required: false }
+              - { name: "country", label: "国家", widget: "string", required: false }
+          - name: "social"
+            label: "社交主页"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { name: "label", label: "平台名", widget: "string" }
+              - { name: "href", label: "主页链接", widget: "string" }
+          - name: "analytics"
+            label: "统计与追踪代码"
+            widget: "object"
+            fields:
+              - { name: "googleAnalyticsId", label: "Google Analytics ID", widget: "string", required: false, hint: "形如 G-XXXXXXXXXX。" }
+              - { name: "googleSiteVerification", label: "Google 站点验证码", widget: "string", required: false }
+              - { name: "facebookPixelId", label: "Facebook 像素 ID", widget: "string", required: false }
+              - { name: "tiktokPixelId", label: "TikTok 像素 ID", widget: "string", required: false }
+            hint: "留空就完全不输出对应代码。填了才会加载 —— 空着的 ID 如果也渲染出脚本，等于每次打开页面都向对方发一次什么都没统计到的请求。"

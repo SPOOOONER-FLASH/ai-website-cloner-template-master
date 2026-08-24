@@ -1,12 +1,10 @@
-/** Client's own social profiles, used by the footer and the menu drawer. */
-export const socialLinks = [
-  { label: "Instagram", href: "https://www.instagram.com/hylandlocks/" },
-  { label: "Facebook", href: "https://www.facebook.com/Cantonhylandlocks" },
-  { label: "eBay", href: "https://www.ebay.com/usr/le888458?_tab=feedback" },
-  { label: "Tumblr", href: "https://www.tumblr.com/dashboard" },
-  { label: "X", href: "https://x.com/iiiponso/followers" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/feed/" },
-] as const;
+/**
+ * 社交主页。现在由后台「网站设置」维护 —— 换个账号不该需要改代码。
+ * 导出名保持不变，页脚和菜单抽屉的调用处一行都不用动。
+ */
+import { siteSettings } from "./navigation";
+
+export const socialLinks = siteSettings.social;
 
 /**
  * Single source of truth for site-level SEO values.
@@ -41,7 +39,7 @@ export const siteUrl = "https://spoonercantonlock.stahlock.com";
 export const indexable = false;
 
 export const siteName = "Canton Hyland";
-export const legalName = "Canton Hyland Hardware (Group) Co., Ltd.";
+export const legalName = siteSettings.legalName;
 
 /** Locale routing. The Spanish site is a PARTIAL mirror — see hasSpanishMirror below. */
 export const locales = ["en", "es"] as const;
