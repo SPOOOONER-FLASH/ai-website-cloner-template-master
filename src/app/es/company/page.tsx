@@ -5,7 +5,7 @@ import { CompanyOverview } from "@/components/site/CompanyOverview";
 export const metadata: Metadata = pageMetadata({
   enPath: "/company",
   locale: "es",
-  title: "Empresa",
+  title: "Empresa — Fabricante de herrajes",
   description:
     "Fabricación de cerraduras y herrajes arquitectónicos en Guangdong desde 1998.",
 });

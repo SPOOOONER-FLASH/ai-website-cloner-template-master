@@ -352,7 +352,7 @@ collections:
             hint: "⚠ 改这个数字会让所有人重新看到弹窗，冷却清零。换一轮新活动时 +1；只是改错别字就别动它，否则每个访客都会被再打扰一次。"
           - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
           - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
-          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
+          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 20 }
           - { name: "cooldownMinutes", label: "关掉后隔多少分钟再弹", widget: "number", value_type: "int", default: 30 }
           - name: "surfaces"
             label: "在哪些页面显示"
@@ -369,16 +369,19 @@ collections:
             label: "弹窗卡片"
             widget: "list"
             summary: "{{fields.title}} → {{fields.ctaLabel}}"
-            # 多张卡片会叠在一起显示，共用一个关闭按钮。
-            # 之所以不是多个独立弹窗：aria-modal 声明「我之外的一切都不可交互」，
-            # 同屏两个这样的声明互相矛盾，读屏软件没有定义好的行为。
-            hint: "⚠ 建议最多两张。每张约 290px 高，三张在手机上会超出屏幕（虽然可以滚动，但体验很差）。"
+            # 前台一次只显示一张；关闭当前卡片后，才显示下一张。
+            hint: "建议最多两张。前台会逐张显示，避免在手机上遮挡建筑图片和正文。"
             fields:
               - { name: "title", label: "标题（粗体行）", widget: "string" }
+              - { name: "titleEs", label: "标题（西班牙语）", widget: "string", required: false }
               - { name: "titleLight", label: "标题（细体行）", widget: "string", required: false }
+              - { name: "titleLightEs", label: "标题细体（西班牙语）", widget: "string", required: false }
               - { name: "body", label: "正文", widget: "text" }
+              - { name: "bodyEs", label: "正文（西班牙语）", widget: "text", required: false }
               - { name: "ctaLabel", label: "按钮文字", widget: "string" }
+              - { name: "ctaLabelEs", label: "按钮文字（西班牙语）", widget: "string", required: false }
               - { name: "ctaHref", label: "按钮链接", widget: "string", hint: "站内路径如 /contact/，或下载文件如 /downloads/xxx.pdf。" }
+              - { name: "ctaHrefEs", label: "按钮链接（西班牙语）", widget: "string", required: false, hint: "西语站有独立页面时填写，例如 /es/contact/；留空则沿用英文链接。" }
               - name: "visual"
                 label: "左侧画面"
                 widget: "select"
@@ -598,7 +601,7 @@ collections:
             hint: "⚠ 改这个数字会让所有人重新看到弹窗，冷却清零。换一轮新活动时 +1；只是改错别字就别动它，否则每个访客都会被再打扰一次。"
           - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
           - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
-          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
+          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 20 }
           - { name: "cooldownMinutes", label: "关掉后隔多少分钟再弹", widget: "number", value_type: "int", default: 30 }
           - name: "surfaces"
             label: "在哪些页面显示"

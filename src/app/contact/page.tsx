@@ -6,7 +6,7 @@ import { InquiryForm } from "@/components/site/InquiryForm";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "en",
-  title: "Contact",
+  title: "Contact the Export Team",
   description:
     "Talk to an export engineer about a specification, a sample or a quotation.",
 });

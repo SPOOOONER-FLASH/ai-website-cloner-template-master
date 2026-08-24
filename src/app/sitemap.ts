@@ -61,10 +61,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [
     ...entry("/", PRIORITY.home, "weekly"),
     ...entry("/products", PRIORITY.section, "weekly"),
+    // The finder is a real landing page, not a widget: it is the page that ranks for
+    // attribute queries ("panic bar 1000mm stainless") rather than model numbers.
+    ...entry("/product-finder", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
+    // Both of these answer questions buyers actually search, and /faq already emits
+    // FAQPage structured data — leaving them out of the sitemap wasted that.
+    ...entry("/faq", PRIORITY.support),
+    ...entry("/request/price-list", PRIORITY.support),
     ...entry("/contact", PRIORITY.support),
   ];
 

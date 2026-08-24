@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Proyectos y aplicaciones",
   description:
-    "Paquetes representativos de herrajes para proyectos internacionales.",
+    "Paquetes representativos de herrajes para proyectos internacionales: barras antipánico, cerraduras de embutir, manillas y bisagras por tipo de edificio.",
 });
 
 export default function ProyectosPage() {

@@ -13,7 +13,7 @@ import { getProductsByCategory, products } from "@/data/products";
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
   locale: "en",
-  title: "Products",
+  title: "Products — Door Hardware Catalogue",
   description:
     "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalogue.",
 });

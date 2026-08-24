@@ -5,7 +5,7 @@ import { NewsListing } from "@/components/site/NewsListing";
 export const metadata: Metadata = pageMetadata({
   enPath: "/news",
   locale: "en",
-  title: "News + Press",
+  title: "News & Press Releases",
   description:
     "Company announcements, certification news and technical notes from Canton Hyland, manufacturer of panic exit devices and architectural door hardware.",
 });

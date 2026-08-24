@@ -5,7 +5,7 @@ import { CompanyOverview } from "@/components/site/CompanyOverview";
 export const metadata: Metadata = pageMetadata({
   enPath: "/company",
   locale: "en",
-  title: "Company",
+  title: "Company — Door Hardware Manufacturer",
   description:
     "Door lock and architectural hardware manufacturing in Guangdong, China since 1998.",
 });

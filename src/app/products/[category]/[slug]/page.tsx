@@ -5,6 +5,7 @@ import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
+import { defaultOgImage } from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -38,9 +39,17 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       url,
       title: product.seoTitle,
       description: product.seoDescription,
+      // 112 products still have no photography. Falling back to the shared card keeps
+      // their links from pasting into chat as a grey box.
       images: product.heroImage.src
         ? [{ url: absoluteUrl(product.heroImage.src), alt: product.heroImage.label }]
-        : undefined,
+        : [{ url: absoluteUrl(defaultOgImage), width: 1200, height: 630, alt: "HYDE architectural door hardware" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.seoTitle,
+      description: product.seoDescription,
+      images: [absoluteUrl(product.heroImage.src ?? defaultOgImage)],
     },
   };
 }

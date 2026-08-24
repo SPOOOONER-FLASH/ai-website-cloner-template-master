@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from "@/data/site";
+import { defaultOgImage } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/site/ProjectDetail";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
@@ -32,6 +33,16 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
       url: absoluteUrl(`/projects/${slug}/`),
       title: project.seoTitle,
       description: project.seoDescription,
+      // These three pages were the last ones shipping without a card image.
+      images: project.heroImage?.src
+        ? [{ url: absoluteUrl(project.heroImage.src), alt: project.heroImage.label }]
+        : [{ url: absoluteUrl(defaultOgImage), width: 1200, height: 630, alt: "HYDE architectural door hardware" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.seoTitle,
+      description: project.seoDescription,
+      images: [absoluteUrl(project.heroImage?.src ?? defaultOgImage)],
     },
   };
 }

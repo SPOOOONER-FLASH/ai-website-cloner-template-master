@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
+import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
@@ -11,7 +11,10 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/product-finder",
   locale: "en",
-  title: "Product Finder",
+  // The count comes from the catalogue rather than being typed in, so the title cannot
+  // go stale as products are added. This page is what ranks for attribute searches
+  // ("stainless steel panic bar 1000mm") rather than for a model number.
+  title: `Product Finder — ${products.length} Door Hardware Models`,
   description:
     "Filter the Canton Hyland catalogue by category, series, material, finish, door type and certification to build a hardware schedule.",
 });
@@ -35,6 +38,20 @@ export default function ProductFinderPage() {
           { name: "Products", url: absoluteUrl("/products/") },
           { name: "Product Finder", url: absoluteUrl("/product-finder/") },
         ])}
+      />
+
+      {/*
+        The results grid is rendered by a client component, so the built HTML carries the
+        catalogue as serialised data but not one crawlable product link. This ItemList is
+        what tells a crawler — and an answer engine — what the page actually indexes.
+        Categories rather than all 431 products: the category pages are the crawl path to
+        individual models, and a 431-entry list would add ~60 KB to every load.
+      */}
+      <JsonLd
+        data={itemListSchema(
+          "Canton Hyland product categories",
+          categories.map((category) => absoluteUrl(`/products/${category.slug}/`)),
+        )}
       />
 
       <div className="layout">

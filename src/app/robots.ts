@@ -21,7 +21,10 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        // /llms.txt has to be listed explicitly: the blanket "*.txt" rule below would
+        // otherwise block the one .txt file on this site that is meant to be read. The
+        // more specific Allow wins for Google and Bing alike.
+        allow: ["/", "/llms.txt"],
         // Build artefacts Next emits alongside the HTML, plus the CMS. None are pages;
         // crawling them wastes budget and /admin should never surface in results.
         disallow: ["/_next/", "/admin/", "/*.txt$"],

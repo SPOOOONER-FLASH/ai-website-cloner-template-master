@@ -10,6 +10,15 @@ import { absoluteUrl, defaultDescription, hasSpanishMirror, type Locale } from "
  *
  * `enPath` is always the English path ("/company"), even when building the Spanish page.
  */
+/**
+ * Shared social card, used whenever a page has no image of its own.
+ *
+ * Built by scripts/build-og-image.mjs from the HYDE logotype and the brand tokens. It
+ * exists because a link with no og:image pastes into WhatsApp, LinkedIn or Slack as a
+ * grey box — a wasted impression on a site whose purpose is collecting enquiries.
+ */
+export const defaultOgImage = "/seo/og-default.png";
+
 export function pageMetadata(opts: {
   enPath: string;
   locale: Locale;
@@ -29,6 +38,9 @@ export function pageMetadata(opts: {
   // at a 404 is an SEO error, not a harmless extra tag.
   const bilingual = hasSpanishMirror(opts.enPath);
 
+  const image = opts.image ?? defaultOgImage;
+  const imageAlt = opts.image ? (opts.imageAlt ?? opts.title) : "HYDE architectural door hardware";
+
   return {
     title: opts.title,
     description,
@@ -44,9 +56,15 @@ export function pageMetadata(opts: {
       description,
       locale: opts.locale,
       alternateLocale: opts.locale === "es" ? ["en"] : ["es"],
-      ...(opts.image
-        ? { images: [{ url: absoluteUrl(opts.image), alt: opts.imageAlt ?? opts.title }] }
-        : {}),
+      images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: imageAlt }],
+    },
+    // X/Twitter ignores og:image sizing hints and wants its own card type; without this
+    // the link renders as a small thumbnail rather than the full-width card.
+    twitter: {
+      card: "summary_large_image",
+      title: opts.title,
+      description,
+      images: [absoluteUrl(image)],
     },
   };
 }

@@ -32,7 +32,6 @@
  *   node scripts/import-drive-images.mjs             # dry run: report only
  *   node scripts/import-drive-images.mjs --write     # convert, write, attach
  *   node scripts/import-drive-images.mjs --write --limit 5
- *   node scripts/import-drive-images.mjs --contact-sheets   # render review sheets
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -42,7 +41,6 @@ import { debadge } from "./lib/debadge.mjs";
 import { marks } from "./lib/marks.mjs";
 
 const write = process.argv.includes("--write");
-const sheets = process.argv.includes("--contact-sheets");
 const limitArg = process.argv.indexOf("--limit");
 const LIMIT = limitArg > 0 ? Number(process.argv[limitArg + 1]) : Infinity;
 
@@ -234,7 +232,6 @@ async function shape(rgb, W, H) {
   return "scene";
 }
 
-const SHAPE_RANK = { studio: 0, scene: 1, drawing: 2 };
 
 /* ------------------------------------------------------------------ dedupe */
 
