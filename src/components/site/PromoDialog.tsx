@@ -5,14 +5,17 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
+import { localisePromoCardCopy, selectActivePromoCard } from "@/lib/promo";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { HydeLockup } from "./icons";
 
 /**
- * The site-wide promotional stack.
+ * The site-wide promotional rail.
  *
- * Two offers sit in the bottom-left corner after a short delay, each pointing at its own
- * destination and each dismissible on its own.
+ * Offers appear one at a time in the bottom-right corner after a short delay. Each points
+ * at its own destination and can be dismissed independently; the next offer then takes its
+ * place. Showing one compact card preserves the architectural imagery and keeps the mobile
+ * viewport usable.
  *
  * That last requirement is why this is NOT a modal any more. An earlier version put both
  * cards inside one `aria-modal="true"` dialog with a full-screen overlay, which is the
@@ -20,7 +23,7 @@ import { HydeLockup } from "./icons";
  * closes independently the modal reading breaks down: `aria-modal` asserts the rest of
  * the page is inert, and a dimmed page you cannot interact with but are expected to keep
  * reading is a contradiction. So the overlay is gone, there is no focus trap, and the
- * stack is an ordinary complementary region the visitor can ignore.
+ * rail is an ordinary complementary region the visitor can ignore.
  *
  * What survives from the modal version: Escape still closes everything, every control is
  * reachable by keyboard, and each card is labelled.
@@ -131,7 +134,7 @@ export function PromoDialog() {
     });
   }, []);
 
-  // Escape clears the whole stack. Nothing is trapped, so this is a convenience, not a
+  // Escape clears the whole rail. Nothing is trapped, so this is a convenience, not a
   // requirement — but a visitor who hits Escape expects everything floating to go away.
   useEffect(() => {
     if (!open) return;
@@ -142,35 +145,37 @@ export function PromoDialog() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open, dismissAll]);
 
-  const visible = promoDialog.cards.filter((card) => !dismissed.includes(card.ctaHref));
+  const activeCard = selectActivePromoCard(promoDialog.cards, dismissed);
+  const locale = pathname.startsWith("/es") ? "es" : "en";
 
-  if (!open || !visible.length) return null;
+  if (!open || !activeCard) return null;
 
   return (
     /*
       `complementary` rather than `dialog`: this is supporting content beside the page,
-      not something the visitor has to deal with before continuing. Bottom-left on
-      desktop, bottom-centre on mobile — the corner keeps it clear of the content column.
+      not something the visitor has to deal with before continuing. A single compact card
+      sits at bottom-right on desktop and stays inset from both mobile edges.
     */
     <aside
-      aria-label="Offers"
-      className="fixed bottom-0 left-0 z-40 flex w-full max-w-[420px] flex-col gap-16 p-16 xs:p-24"
+      aria-label={locale === "es" ? "Oferta destacada" : "Featured offer"}
+      className="fixed bottom-16 left-16 right-16 z-40 xs:bottom-24 xs:left-auto xs:right-24 xs:w-[360px]"
     >
-      {visible.map((card) => (
-        <PromoCardBlock key={card.ctaHref} card={card} onDismiss={dismissCard} />
-      ))}
+      <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
     </aside>
   );
 }
 
 function PromoCardBlock({
   card,
+  locale,
   onDismiss,
 }: {
   card: PromoCard;
+  locale: "en" | "es";
   onDismiss: (href: string) => void;
 }) {
-  const { title, titleLight, body, ctaLabel, ctaHref, image, visual } = card;
+  const { ctaHref, image, visual } = card;
+  const { title, titleLight, body, ctaLabel } = localisePromoCardCopy(card, locale);
   // A catalogue PDF is a file, not a route — Link would try to client-navigate to it.
   const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
   const isExternal = /^https?:/i.test(ctaHref);

@@ -30,7 +30,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "node --test src/lib/carousel.test.ts",
+    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",

@@ -375,9 +375,13 @@ collections:
             hint: "⚠ 建议最多两张。每张约 290px 高，三张在手机上会超出屏幕（虽然可以滚动，但体验很差）。"
             fields:
               - { name: "title", label: "标题（粗体行）", widget: "string" }
+              - { name: "titleEs", label: "标题（西班牙语）", widget: "string", required: false }
               - { name: "titleLight", label: "标题（细体行）", widget: "string", required: false }
+              - { name: "titleLightEs", label: "标题细体（西班牙语）", widget: "string", required: false }
               - { name: "body", label: "正文", widget: "text" }
+              - { name: "bodyEs", label: "正文（西班牙语）", widget: "text", required: false }
               - { name: "ctaLabel", label: "按钮文字", widget: "string" }
+              - { name: "ctaLabelEs", label: "按钮文字（西班牙语）", widget: "string", required: false }
               - { name: "ctaHref", label: "按钮链接", widget: "string", hint: "站内路径如 /contact/，或下载文件如 /downloads/xxx.pdf。" }
               - name: "visual"
                 label: "左侧画面"

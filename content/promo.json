@@ -1,10 +1,10 @@
 {
   "enabled": true,
   "name": "联系我们 + 产品目录下载",
-  "version": 5,
+  "version": 6,
   "startAt": "",
   "endAt": "",
-  "delaySeconds": 10,
+  "delaySeconds": 20,
   "cooldownMinutes": 30,
   "surfaces": [
     "home",
@@ -16,17 +16,25 @@
   "cards": [
     {
       "title": "Talk to us",
+      "titleEs": "Hable con nosotros",
       "titleLight": "About your project",
+      "titleLightEs": "Sobre su proyecto",
       "body": "Send the door schedule and our export team will come back with model numbers, finishes and lead times.",
+      "bodyEs": "Envíe el cuadro de puertas y nuestro equipo de exportación responderá con modelos, acabados y plazos.",
       "ctaLabel": "Contact us",
+      "ctaLabelEs": "Contactar",
       "ctaHref": "/contact/",
       "visual": "logo"
     },
     {
       "title": "2026 catalogue",
+      "titleEs": "Catálogo 2026",
       "titleLight": "The full range",
+      "titleLightEs": "La gama completa",
       "body": "Panic exit devices, mortise locks, lever handles and architectural hardware, with dimensions and finishes.",
+      "bodyEs": "Dispositivos antipánico, cerraduras de embutir, manillas y herrajes arquitectónicos, con dimensiones y acabados.",
       "ctaLabel": "Download the catalogue",
+      "ctaLabelEs": "Descargar el catálogo",
       "ctaHref": "/downloads/canton-hyland-product-catalogue-2026.pdf",
       "visual": "logo"
     }
