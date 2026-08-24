@@ -4,8 +4,25 @@
     {
       "name": "canton-hyland-prototype",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "-p", "3001"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3001"
+      ],
       "port": 3001
+    },
+    {
+      "name": "canton-hyland-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "out",
+        "-l",
+        "3002"
+      ],
+      "port": 3002
     }
   ]
 }

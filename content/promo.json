@@ -1,10 +1,10 @@
 {
   "enabled": true,
   "name": "联系我们 + 产品目录下载",
-  "version": 6,
+  "version": 7,
   "startAt": "",
   "endAt": "",
-  "delaySeconds": 20,
+  "delaySeconds": 10,
   "cooldownMinutes": 30,
   "surfaces": [
     "home",
