@@ -66,13 +66,14 @@ imports, source documents, vectors, or brand masters.
 
 ### Generated editorial processing
 
-The fifteen generated editorial sources were converted with the repository Sharp dependency
+The sixteen generated editorial sources were converted with the repository Sharp dependency
 using `fit: "cover"` and WebP quality 86 at the exact output dimensions listed below. The
-eleven architecture images used attention-aware cover cropping. The industrial and material
-images used cover cropping; the corrected `industrial-precision-parts.webp` was additionally
-normalised to opaque sRGB before encoding.
+original eleven architecture images used attention-aware cover cropping; the exact-ratio
+material-library source used standard cover resizing. The industrial and material images used
+cover cropping; the corrected `industrial-precision-parts.webp` was additionally normalised to
+opaque sRGB before encoding.
 
-The final editorial set contains 15 WebP files totalling 3,147,938 bytes.
+The final editorial set contains 16 WebP files totalling 3,338,144 bytes.
 
 ---
 
@@ -86,6 +87,7 @@ The final editorial set contains 15 WebP files totalling 3,147,938 bytes.
 | `home-commercial-egress.webp` | Architectural editorial | 2400×1159 | 243,648 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-design-context.webp` | Architecture / material junctions | 1800×1200 | 253,806 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-editorial-insight.webp` | Architectural light / material study | 2400×1464 | 185,346 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
+| `home-material-library.webp` | Architectural material-library study | 1800×1200 | 190,206 | 2026-08-24 | Built-in ImageGen, text-only; Sharp exact-ratio cover, opaque sRGB, WebP q=86 |
 | `project-commercial-egress.webp` | Representative application concept | 1800×1200 | 205,920 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-glass-entrance.webp` | Representative application concept | 1800×1200 | 167,582 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-hospitality-residential.webp` | Warm interior / representative application | 1800×1200 | 113,086 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
