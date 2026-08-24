@@ -71,6 +71,15 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             <h1 className="mt-16 text-h1 text-ink">{text.title}</h1>
             <p className="mt-24 text-c1 text-ink">{text.intro}</p>
           </div>
+          <div className="col-span-full lg:hidden">
+            <MediaPlaceholder
+              {...companyEditorialStudies[0]}
+              label={localiseImageLabel(
+                companyEditorialStudies[0].label,
+                companyEditorialStudies[0].labelEs,
+              )}
+            />
+          </div>
           <div className="col-span-full space-y-24 lg:col-span-7 lg:col-start-6 xl:col-span-14 xl:col-start-11">
             {paragraphs.map((paragraph) => (
               <p key={paragraph} className="text-c1 text-ink">
@@ -97,7 +106,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             <h2 className="text-h2 text-ink">{text.context}</h2>
             <p className="mt-24 text-c1 text-ink-secondary">{text.contextBody}</p>
           </div>
-          <div className="col-span-full lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
+          <div className="hidden lg:col-span-7 lg:col-start-6 lg:block xl:col-span-15 xl:col-start-10">
             <MediaPlaceholder
               {...companyEditorialStudies[0]}
               label={localiseImageLabel(

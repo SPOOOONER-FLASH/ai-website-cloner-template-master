@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
-    title: `${project.nameEs ?? project.name} | Canton Hyland`,
+    title: { absolute: `${project.nameEs ?? project.name} | Canton Hyland` },
     description: project.summaryEs ?? project.summary,
   };
 }

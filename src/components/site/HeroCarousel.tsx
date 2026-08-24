@@ -85,7 +85,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="col-content relative aspect-[1920/754] touch-pan-y overflow-hidden bg-surface-alt"
+        className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt sm:aspect-[1920/754]"
         onPointerDown={(event) => {
           pointerStart.current = event.clientX;
         }}
