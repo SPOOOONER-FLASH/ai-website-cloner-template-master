@@ -13,7 +13,7 @@ export const hero1: HeroModuleContent = {
   media: {
     ratio: "2400 / 943",
     src: "/images/editorial/hero-warm-residential-entry.webp",
-    label: "Umbral residencial de madera y piedra caliza con puerta acristalada",
+    label: "Umbral residencial de madera y piedra caliza abierto hacia un patio ajardinado",
   },
   title: "Cerradura tubular moderna",
   body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",
@@ -176,7 +176,7 @@ export const teaser3: PageTeaserContent = {
       media: {
         ratio: "1 / 1",
         src: "/images/editorial/industrial-precision-parts.webp",
-        label: "Estudio material representativo generado de forma neutral de componentes de precisión",
+        label: "Estudio editorial representativo de componentes mecanizados de precisión",
       },
       title: "Documentación y normas",
       subtitle: "Consulte grados, ensayos, acabados y plazos",

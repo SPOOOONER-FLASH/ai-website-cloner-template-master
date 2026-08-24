@@ -25,7 +25,7 @@ export const hero1: HeroModuleContent = {
   media: {
     ratio: "2400 / 943",
     src: "/images/editorial/hero-warm-residential-entry.webp",
-    label: "Warm timber and limestone residential threshold with a glazed door",
+    label: "Warm timber and limestone residential threshold opening to a planted courtyard",
   },
   title: "Modern Tubular Door Lock",
   body: "A restrained matt-black lever set for contemporary residential interiors.",
@@ -192,7 +192,7 @@ export const teaser3: PageTeaserContent = {
       media: {
         ratio: "1 / 1",
         src: "/images/editorial/industrial-precision-parts.webp",
-        label: "Representative generated-neutral precision-components material study",
+        label: "Representative editorial study of precision-machined components",
       },
       title: "Frequently Asked Questions",
       subtitle: "Quick answers on grades, standards and lead times",
