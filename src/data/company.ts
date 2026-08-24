@@ -137,9 +137,4 @@ export const facilityImages: ImageRef[] = [
     ratio: "3 / 2",
     label: "Emergency exit and architectural hardware showroom display",
   },
-  {
-    src: "/images/company/material-innovation-workshop.webp",
-    ratio: "3 / 2",
-    label: "Material innovation center with sample displays and production floor",
-  },
 ];

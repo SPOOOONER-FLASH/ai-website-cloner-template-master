@@ -294,12 +294,11 @@ Use this exact final order of factual assets:
 /images/company/factory-cnc-production.webp
 /images/company/showroom-product-gallery.webp
 /images/company/showroom-emergency-hardware.webp
-/images/company/material-innovation-workshop.webp
 ```
 
-The CNC view must remain first because `CompanyOverview` uses `facilityImages[0]` as its large manufacturing image. Exclude `press-shop.webp`, polishing, assembly, operator-led CNC views, and `facility-yard.webp` because people are visible. Original-detail review confirmed an operator in the yard image's right-side forklift, so the gallery intentionally remains at four safe images.
+The CNC view must remain first because `CompanyOverview` uses `facilityImages[0]` as its large manufacturing image. Exclude `press-shop.webp`, polishing, assembly, operator-led CNC views, and `facility-yard.webp` because people are visible. Original-detail review confirmed an operator in the yard image's right-side forklift. Also exclude `material-innovation-workshop.webp`: its embedded HYDE facility sign and identity remain unverified, and the provenance register limits it to internal-demo use. The public gallery therefore intentionally remains at three safe images.
 
-Expected: exactly four unoccupied first-party references remain; no generated factory scene is introduced and labels remain literal and evidence-based.
+Expected: exactly three unoccupied first-party references with publishable provenance remain; no generated factory scene is introduced and labels remain literal and evidence-based.
 
 - [ ] **Step 2: Run type checking and the content build**
 
