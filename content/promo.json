@@ -1,11 +1,11 @@
 {
   "enabled": true,
   "name": "联系我们 + 产品目录下载",
-  "version": 4,
+  "version": 5,
   "startAt": "",
   "endAt": "",
-  "delaySeconds": 5,
-  "cooldownHours": 72,
+  "delaySeconds": 10,
+  "cooldownMinutes": 30,
   "surfaces": [
     "home",
     "products",

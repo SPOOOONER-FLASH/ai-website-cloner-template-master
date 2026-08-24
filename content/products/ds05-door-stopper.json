@@ -29,10 +29,17 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/ds05-door-stopper.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DS05 door stopper"
+    "label": "Hyland DS05 Door Stopper"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/ds05-door-stopper-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DS05 Door Stopper, view 2"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "DS05 Door Stopper | Canton Hyland",

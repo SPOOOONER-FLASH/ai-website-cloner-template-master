@@ -17,13 +17,50 @@
   "finishes": [],
   "doorTypes": [],
   "certifications": [],
-  "heroImage": {
-    "ratio": "1 / 1",
-    "label": "Hyland 9082E stainless steel handle"
-  },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 2"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 3"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 4"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 5"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 6"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 7"
+    },
+    {
+      "src": "/images/products/9082e-stainless-steel-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9082E Stainless Steel Handle, view 8"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "9082E Stainless Steel Handle | Canton Hyland",
-  "seoDescription": "Stainless steel stainless steel handle."
+  "seoDescription": "Stainless steel stainless steel handle.",
+  "heroImage": {
+    "src": "/images/products/9082e-stainless-steel-handle.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 9082E Stainless Steel Handle"
+  }
 }

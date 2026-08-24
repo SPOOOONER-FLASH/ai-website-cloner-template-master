@@ -29,10 +29,27 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/dv11-door-viewer.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DV11 door viewer"
+    "label": "Hyland DV11 Door viewer"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/dv11-door-viewer-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV11 Door viewer, view 2"
+    },
+    {
+      "src": "/images/products/dv11-door-viewer-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV11 Door viewer, view 3"
+    },
+    {
+      "src": "/images/products/dv11-door-viewer-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV11 Door viewer, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "DV11 Door viewer | Canton Hyland",

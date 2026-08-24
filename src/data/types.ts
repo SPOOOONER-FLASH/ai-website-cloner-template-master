@@ -36,6 +36,17 @@ export interface ImageRef {
   label: string;
   /** Chinese source caption, for internal review. */
   labelZh?: string;
+  /**
+   * Marks an asset that should be replaced once a better original exists. Never
+   * rendered — it is a handle for tooling.
+   *
+   * The only value in use is `"2022-watermarked"`, set by
+   * scripts/import-drive-images.mjs on images from the 2022 shoot, which carry a
+   * diagonal www.cantonlock.com tile baked into the photograph. The client chose to
+   * publish those rather than leave the products blank, on the condition that they stay
+   * findable: this field is how a later pass locates them without re-inspecting pixels.
+   */
+  sourceNote?: string;
 }
 
 /**
@@ -233,8 +244,14 @@ export interface PromoDialogConfig {
   endAt?: string;
   /** Seconds after load before it appears. FSB uses 20. */
   delaySeconds: number;
-  /** Hours before a dismissed dialog may return. FSB uses 72. */
-  cooldownHours: number;
+  /**
+   * Minutes before a dismissed dialog may return.
+   *
+   * Minutes rather than hours because the client asked for a 30-minute window, which an
+   * hours field cannot express. Short windows mean the same visitor can be interrupted
+   * more than once in a session — that is the intent here, not an oversight.
+   */
+  cooldownMinutes: number;
   /** Routes it may appear on. Empty array means nowhere — a safer default than everywhere. */
   surfaces: PromoSurface[];
   /**

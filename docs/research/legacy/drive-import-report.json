@@ -1,0 +1,224 @@
+{
+ "generated": null,
+ "products": [
+  {
+   "slug": "9082e-stainless-steel-handle",
+   "model": "9082E",
+   "sources": [
+    "1-逃生锁/9082E",
+    "5-不锈钢插芯锁/9082E"
+   ],
+   "candidates": 16,
+   "kept": [
+    {
+     "rel": "图/首图.jpg",
+     "out": "9082e-stainless-steel-handle.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 5
+    },
+    {
+     "rel": "1-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 10
+    },
+    {
+     "rel": "图/1-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 10
+    },
+    {
+     "rel": "2-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 7
+    },
+    {
+     "rel": "2-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-5.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 6
+    },
+    {
+     "rel": "3-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-6.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 33
+    },
+    {
+     "rel": "4-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-7.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 12
+    },
+    {
+     "rel": "5-9082E.jpg",
+     "out": "9082e-stainless-steel-handle-8.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 43
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "图/2-9082E.jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "图/3-9082E.jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "3-9082E.jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "4-9082E.jpg",
+     "why": "duplicate"
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "f101-glass-door-patch-fittings",
+   "model": "F101",
+   "sources": [
+    "7-防盗锁/F101",
+    "13-玻璃门夹/F101"
+   ],
+   "candidates": 14,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "f101-glass-door-patch-fittings.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    },
+    {
+     "rel": "首图.jpg",
+     "out": "f101-glass-door-patch-fittings-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 8
+    },
+    {
+     "rel": "1-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 26
+    },
+    {
+     "rel": "2-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 7
+    },
+    {
+     "rel": "3-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-5.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 22
+    },
+    {
+     "rel": "5-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-6.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    },
+    {
+     "rel": "6-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-7.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 26
+    },
+    {
+     "rel": "7-F101.jpg",
+     "out": "f101-glass-door-patch-fittings-8.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 44
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "4-F101.jpg",
+     "why": "stahlock-survived",
+     "wm": 0.281
+    }
+   ],
+   "result": "filled"
+  }
+ ],
+ "totals": {
+  "products": 2,
+  "filled": 2,
+  "images": 16,
+  "kb": 298,
+  "rejected": 5,
+  "viaPsd": 16,
+  "viaJpg": 0,
+  "tagged2022": 3
+ }
+}

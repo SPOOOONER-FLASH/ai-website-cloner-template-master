@@ -353,7 +353,7 @@ collections:
           - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
           - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
           - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
-          - { name: "cooldownHours", label: "关掉后隔多少小时再弹", widget: "number", value_type: "int", default: 72 }
+          - { name: "cooldownMinutes", label: "关掉后隔多少分钟再弹", widget: "number", value_type: "int", default: 30 }
           - name: "surfaces"
             label: "在哪些页面显示"
             widget: "select"
@@ -599,7 +599,7 @@ collections:
           - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
           - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
           - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
-          - { name: "cooldownHours", label: "关掉后隔多少小时再弹", widget: "number", value_type: "int", default: 72 }
+          - { name: "cooldownMinutes", label: "关掉后隔多少分钟再弹", widget: "number", value_type: "int", default: 30 }
           - name: "surfaces"
             label: "在哪些页面显示"
             widget: "select"

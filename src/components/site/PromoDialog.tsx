@@ -74,7 +74,7 @@ function isSuppressed(now: number): boolean {
   const state = readState();
   if (!state) return false;
   if (state.version !== promoDialog.version) return false;
-  return now - state.lastSeen < promoDialog.cooldownHours * 60 * 60 * 1000;
+  return now - state.lastSeen < promoDialog.cooldownMinutes * 60 * 1000;
 }
 
 export function PromoDialog() {

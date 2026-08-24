@@ -29,10 +29,17 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/dv09-door-viewer.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DV09 door viewer"
+    "label": "Hyland DV09 Door viewer"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/dv09-door-viewer-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV09 Door viewer, view 2"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "DV09 Door viewer | Canton Hyland",

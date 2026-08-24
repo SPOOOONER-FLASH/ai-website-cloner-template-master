@@ -43,10 +43,22 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/ch01-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland CH01 brass and steel hinges"
+    "label": "Hyland CH01 Brass and Steel Hinges"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/ch01-brass-and-steel-hinges-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland CH01 Brass and Steel Hinges, view 2"
+    },
+    {
+      "src": "/images/products/ch01-brass-and-steel-hinges-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland CH01 Brass and Steel Hinges, view 3"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "CH01 Brass and Steel Hinges | Canton Hyland",

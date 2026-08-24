@@ -29,10 +29,33 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/500-indicator.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 500 indicator"
+    "label": "Hyland 500 Indicator"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/500-indicator-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 2"
+    },
+    {
+      "src": "/images/products/500-indicator-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 3"
+    },
+    {
+      "src": "/images/products/500-indicator-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 4",
+      "sourceNote": "2022-watermarked"
+    },
+    {
+      "src": "/images/products/500-indicator-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 5"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "500 Indicator | Canton Hyland",
