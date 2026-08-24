@@ -40,7 +40,7 @@ function TeaserCard({ media, title, subtitle, href = "#" }: TeaserCardContent) {
     // 3/4 width by default, 1/2 (= 680px at the 1376px track) on mouse devices.
     <Link
       href={href}
-      className="w-[calc(100%*3/4-1/4*var(--grid-gap))] min-w-[calc(100%*3/4-1/4*var(--grid-gap))] snap-start -outline-offset-1 pointer-fine:w-[calc(100%*1/2-1/2*var(--grid-gap))] pointer-fine:min-w-[calc(100%*1/2-1/2*var(--grid-gap))] hover-hover:hover:outline hover-hover:hover:outline-1 hover-hover:hover:outline-brand"
+      className="w-[calc(100%*3/4-1/4*var(--grid-gap))] min-w-[calc(100%*3/4-1/4*var(--grid-gap))] snap-start -outline-offset-1 pointer-fine:w-[calc(100%*1/2-1/2*var(--grid-gap))] pointer-fine:min-w-[calc(100%*1/2-1/2*var(--grid-gap))] hover-hover:hover:outline hover-hover:hover:outline-1 hover-hover:hover:outline-ink"
     >
       <MediaPlaceholder {...media} className="aspect-square" />
       {/* `hover-hover:` here is a device-capability query, not a hover state. */}

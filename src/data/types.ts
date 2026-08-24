@@ -237,6 +237,21 @@ export interface PromoDialogConfig {
   cooldownHours: number;
   /** Routes it may appear on. Empty array means nowhere — a safer default than everywhere. */
   surfaces: PromoSurface[];
+  /**
+   * The offers, shown stacked.
+   *
+   * Two cards go inside ONE dialog rather than being two dialogs. That is not a styling
+   * choice: `aria-modal="true"` asserts that everything outside the element is inert, so
+   * two of them on screen at once are mutually contradictory and a screen reader has no
+   * defined behaviour. One dialog containing a stack keeps the focus trap, the Escape
+   * handler and the overlay working exactly once each.
+   *
+   * An empty array renders nothing, same as `enabled: false`.
+   */
+  cards: PromoCard[];
+}
+
+export interface PromoCard {
   /** Bold first line. */
   title: string;
   /** Second line, set in the lighter weight. */

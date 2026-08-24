@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
+import type { PromoCard } from "@/data/types";
+import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { HydeLockup } from "./icons";
 
@@ -127,10 +129,7 @@ export function PromoDialog() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open, close]);
 
-  if (!open) return null;
-
-  const { title, titleLight, body, ctaLabel, ctaHref, image, visual } = promoDialog;
-  const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
+  if (!open || !promoDialog.cards.length) return null;
 
   return (
     <div
@@ -150,21 +149,32 @@ export function PromoDialog() {
         className="absolute inset-0 cursor-pointer bg-[rgba(0,0,0,0.72)]"
       />
 
+      {/*
+        One dialog, one close button, one focus trap — containing a stack of cards.
+
+        Two offers do NOT get two dialogs. `aria-modal="true"` asserts that everything
+        outside the element is inert, so two of them at once are mutually contradictory
+        and no screen reader has defined behaviour for it. Stacking inside a single
+        dialog gives the visual the client asked for and keeps the semantics valid.
+
+        `max-h-screen` plus scroll matters more with two cards than it did with one: at
+        600px wide two cards are roughly 580px tall, which does not fit under a phone's
+        browser chrome.
+      */}
       <div className="relative max-h-screen w-full max-w-[600px] overflow-y-auto px-24 py-24 xs:px-0 xs:pb-0">
         <div
           ref={dialogRef}
           role="dialog"
           aria-modal="true"
-          aria-labelledby="promo-title"
-          aria-describedby="promo-body"
-          className="relative grid w-full gap-0 bg-surface xs:grid-cols-2"
+          aria-labelledby="promo-title-0"
+          className="relative"
         >
           <button
             ref={closeRef}
             type="button"
             onClick={close}
             aria-label="Close"
-            className="absolute right-16 top-16 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-200 hover:text-brand-hover"
+            className="absolute right-16 top-16 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-200 hover:text-ink-secondary"
           >
             <svg viewBox="0 0 24 24" className="h-24 w-24" aria-hidden="true" focusable="false">
               <path
@@ -174,64 +184,86 @@ export function PromoDialog() {
             </svg>
           </button>
 
-          {visual === "logo" || !image ? (
-            /*
-              Black panel, white mark. The brand lockup is drawn, not photographed, so it
-              needs no asset, stays sharp at any density, and gives the dialog the one
-              solid black field the identity is built around.
-            */
-            <div className="flex min-h-[180px] items-center justify-center bg-ink p-24 text-surface">
-              <HydeLockup variant="white" className="h-36" />
-            </div>
-          ) : (
-            <MediaPlaceholder {...image} className="h-full w-full" />
-          )}
-
-          <div className="flex flex-col justify-between">
-            <div className="px-24 pb-24 pt-24 xs:pr-32">
-              <h2 id="promo-title" className="text-h3 text-ink">
-                {title}
-                {titleLight ? (
-                  <>
-                    <br />
-                    <span className="font-normal">{titleLight}</span>
-                  </>
-                ) : null}
-              </h2>
-              <p id="promo-body" className="mt-16 text-c1 text-ink-secondary">
-                {body}
-              </p>
-            </div>
-
-            {/*
-              A full-width band with a text link inside it rather than a filled button —
-              the reference does the same, and the site's colour rules reserve a solid
-              fill for a page's own primary action.
-
-              Black band, white link. The dialog is deliberately monochrome: the brand
-              lockup is black-and-white, and dropping red in beside it would introduce a
-              second accent that appears nowhere else in the identity.
-            */}
-            <div className="bg-ink px-24 py-16">
-              {isFile ? (
-                <a
-                  href={ctaHref}
-                  className="text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80"
-                  onClick={close}
-                >
-                  {ctaLabel}
-                </a>
-              ) : (
-                <Link
-                  href={ctaHref}
-                  className="text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80"
-                  onClick={close}
-                >
-                  {ctaLabel}
-                </Link>
-              )}
-            </div>
+          {/*
+            A hairline between cards rather than a gap: the stack has to read as one
+            object sitting in the corner, and a gap would make it two floating panels.
+          */}
+          <div className="divide-y divide-line bg-surface">
+            {promoDialog.cards.map((card, index) => (
+              <PromoCardBlock key={card.ctaHref} card={card} index={index} onNavigate={close} />
+            ))}
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PromoCardBlock({
+  card,
+  index,
+  onNavigate,
+}: {
+  card: PromoCard;
+  index: number;
+  onNavigate: () => void;
+}) {
+  const { title, titleLight, body, ctaLabel, ctaHref, image, visual } = card;
+  // A catalogue PDF is a file, not a route — Link would try to client-navigate to it.
+  const isFile = /^https?:|\.(pdf|zip|dwg|rfa)$/i.test(ctaHref);
+
+  const ctaClass =
+    "text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80";
+
+  return (
+    <div className="grid w-full gap-0 xs:grid-cols-2">
+      {visual === "logo" || !image ? (
+        /*
+          Black panel, white mark. The brand lockup is drawn, not photographed, so it
+          needs no asset, stays sharp at any density, and gives the dialog the one solid
+          black field the identity is built around.
+        */
+        <div className="flex min-h-[132px] items-center justify-center bg-ink p-24 text-surface">
+          <HydeLockup variant="white" className="h-28" />
+        </div>
+      ) : (
+        <MediaPlaceholder {...image} className="h-full w-full" />
+      )}
+
+      <div className="flex flex-col justify-between">
+        {/* Only the first card clears the close button, so only it needs the gutter. */}
+        <div className={cn("px-24 pb-16 pt-20", index === 0 && "xs:pr-32")}>
+          <h2 id={`promo-title-${index}`} className="text-h3 text-ink">
+            {title}
+            {titleLight ? (
+              <>
+                <br />
+                <span className="font-normal">{titleLight}</span>
+              </>
+            ) : null}
+          </h2>
+          <p className="mt-8 text-c1 text-ink-secondary">{body}</p>
+        </div>
+
+        {/*
+          A full-width band with a text link inside it rather than a filled button — the
+          reference does the same, and the site's colour rules reserve a solid fill for a
+          page's own primary action.
+
+          Black band, white link. The dialog is deliberately monochrome: the brand lockup
+          is black-and-white, and dropping red in beside it would introduce a second
+          accent that appears nowhere else in the identity.
+        */}
+        <div className="bg-ink px-24 py-16">
+          {isFile ? (
+            <a href={ctaHref} className={ctaClass} onClick={onNavigate}>
+              {ctaLabel}
+            </a>
+          ) : (
+            <Link href={ctaHref} className={ctaClass} onClick={onNavigate}>
+              {ctaLabel}
+            </Link>
+          )}
         </div>
       </div>
     </div>

@@ -57,7 +57,7 @@ function HeroStacked({ media, title, body, linkLabel, href = "#" }: HeroModuleCo
             <Link
               href={href}
               aria-label={title}
-              className="outline-offset absolute inset-0 -mb-outset pb-outset hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-brand"
+              className="outline-offset absolute inset-0 -mb-outset pb-outset hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-ink"
             />
           </div>
         </div>
@@ -91,7 +91,7 @@ function HeroSide({ media, title, body, linkLabel, href = "#" }: HeroModuleConte
             <Link
               href={href}
               aria-label={title}
-              className="outline-offset-outset absolute inset-0 hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-brand"
+              className="outline-offset absolute inset-0 hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-ink"
             />
           </div>
         </div>

@@ -1,7 +1,7 @@
 {
   "enabled": true,
-  "name": "2026 产品目录下载",
-  "version": 2,
+  "name": "联系我们 + 产品目录下载",
+  "version": 3,
   "startAt": "",
   "endAt": "",
   "delaySeconds": 10,
@@ -9,12 +9,26 @@
   "surfaces": [
     "home",
     "products",
-    "product-detail"
+    "product-detail",
+    "projects",
+    "news"
   ],
-  "title": "Hyde",
-  "titleLight": "2026 catalogue",
-  "body": "Panic exit devices, mortise locks, lever handles and architectural hardware — the full range, with dimensions and finishes, in one PDF.",
-  "ctaLabel": "Download the catalogue",
-  "ctaHref": "/downloads/canton-hyland-product-catalogue-2026.pdf",
-  "visual": "logo"
+  "cards": [
+    {
+      "title": "Talk to us",
+      "titleLight": "About your project",
+      "body": "Send the door schedule and our export team will come back with model numbers, finishes and lead times.",
+      "ctaLabel": "Contact us",
+      "ctaHref": "/contact/",
+      "visual": "logo"
+    },
+    {
+      "title": "2026 catalogue",
+      "titleLight": "The full range",
+      "body": "Panic exit devices, mortise locks, lever handles and architectural hardware, with dimensions and finishes.",
+      "ctaLabel": "Download the catalogue",
+      "ctaHref": "/downloads/canton-hyland-product-catalogue-2026.pdf",
+      "visual": "logo"
+    }
+  ]
 }
