@@ -64,7 +64,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Heavy-Duty Fire Door Locks",
       body: "Robust locking solutions developed for demanding fire-rated and high-traffic openings.",
       linkLabel: "View lock solutions",
-      href: "/products/door-locks",
+      href: "/products/lock-cases",
     },
   ],
 };

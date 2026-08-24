@@ -51,7 +51,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Cerraduras Cortafuego",
       body: "Soluciones robustas para puertas de alto tránsito y aplicaciones con resistencia al fuego.",
       linkLabel: "Ver cerraduras",
-      href: "/products/door-locks",
+      href: "/products/lock-cases",
     },
   ],
 };
