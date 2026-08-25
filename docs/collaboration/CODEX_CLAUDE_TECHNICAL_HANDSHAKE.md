@@ -373,10 +373,33 @@ Codex 的初步推荐是 **路线 2：静态公共站 + 托管数据库/Auth/Sto
   需要服务器 shell、面板或运维负责人定位并停止无变化覆盖。
 - CDN 与正式缓存头仍未配置。理想策略是内容哈希 JS/CSS 一年 immutable，HTML 短缓存；
   当前稳定文件名图片在完成版本化前先用较短 max-age + stale-while-revalidate。
-- 本轮收益是本地/静态产物与确定性网络行为；正式生产 LCP、TTFB 和 RSC 200 必须在推送上线后
-  用新冷会话复测，不能拿本地毫秒级静态服务器冒充真实用户性能。
+- 处理步骤、缓存边界、发布链路收敛和验收命令见
+  `docs/deployment/STATIC_SITE_PERFORMANCE_RUNBOOK.md`。
 
-### 10.5 动态化边界
+### 10.5 生产部署与冷会话复测
+
+- [`36f24b30`](https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master/commit/36f24b30fd54e434aaaa6332002ceca51af0199e)
+  已推送到 `main`；[Build and deploy run 32823802147](https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master/actions/runs/32823802147)
+  与 [CI run 32823802146](https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master/actions/runs/32823802146)
+  均成功。Build and deploy 的 lint、typecheck、test、build、fresh-export test 与 sanity 全部通过；
+  SSH deploy step 因该 run 未获得 `SSH_HOST` 而明确跳过，其他三个部署 secret 的状态未知。
+- 生产随后由**非本次 GitHub Actions SSH deploy step 的机制**更新；具体发布任务或写入者尚待
+  服务器/托管面板权限确认。生产首页为 85,034 B，SHA-256
+  `6BA2A28D52DCC14174CD52E2A52DE928D0C2724C3F3B41532E814F941ECD317F`，与
+  `36f24b30:out/index.html` 完全一致。
+- 393×852、DPR1 的线上冷会话只首发 1 张 Hero，使用 800w / 14,502 B 候选；`sizes` 为
+  `(min-width: 1440px) 1376px, (min-width: 640px) 96vw, 184vw`。浏览器控制台 0 error、
+  0 warning。
+- 线上联系页、分类页和产品详情页的点号式 RSC payload 均为 200；此前 Windows 静态导出造成的
+  持续预取 404 已关闭。
+- 但生产冷加载仍受源站限制：一次移动样本的 TTFB 约 4.99 秒、FCP/LCP 约 7.00 秒；同轮三次
+  HTML 响应头样本约 5.62、1.73、3.05 秒，且没有明确 `Cache-Control`。相同内容的 ETag 与
+  Last-Modified 仍约每 5–10 秒改变。因此“图片是否太大”的答案是：原来确有显著图片调度与尺寸
+  问题，现已修复；当前剩余主瓶颈是源站首字节、无效重复覆盖和缓存策略。
+- 以上性能数字是 2026-08-25 在同一网络环境下，以 393×852、DPR1、新浏览器上下文和冷加载取得
+  的现场样本，不代表长期真实用户分位数；生产验收仍应接入真实用户 75 分位监控。
+
+### 10.6 动态化边界
 
 数据库与登录技术上都能做，但这轮没有把 471 个公共页面改成 SSR/查库。双方建议的下一期是：
 

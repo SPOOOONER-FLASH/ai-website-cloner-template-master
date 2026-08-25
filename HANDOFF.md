@@ -38,9 +38,27 @@
 2. **没有服务端**，所以询盘走 Web3Forms 直接 POST，搜索靠构建期索引 + 浏览器匹配。
 3. **`out/` 目前仍提交进仓库**。改完必须 `npm run deploy:prep`，并完整提交旧文件删除、
    新 chunk、平铺 RSC 与响应式图片；不要只提交已跟踪文件。
-4. CMS 发布到 `main` 会触发 GitHub Actions 的 Linux 构建；SSH 发布步骤只有在四个部署 secrets
-   配齐时才执行。生产环境曾出现另一条静态同步链路，故每次发布后仍必须比对线上 HTML 指纹、
-   RSC 200 和资源 URL，不能只看 workflow 显示 Success。
+4. CMS 发布到 `main` 会触发 GitHub Actions 的 Linux 构建；当前 workflow 只用 `SSH_HOST`
+   判断是否**尝试** SSH 发布，其余 secret 缺失仍会在执行时失败。rsync 写入 secret 指定的
+   `SSH_TARGET_DIR`，但该值和服务器拓扑不可见，不能断言它直接写 live。workflow 本身未显式
+   实现版本化 release、原子切换或上一版归档，故在服务器方案核实前不要仅靠填 secret 启用。
+   生产环境还存在一个未确认的发布/写入机制；每次发布后必须比对线上 HTML 指纹、RSC 200 和
+   资源 URL，不能只看 workflow 显示 Success。
+
+### 2026-08-25 生产发布与性能实测
+
+- 性能修复提交 `36f24b30` 已进入 `main`。Build and deploy 与 CI 均通过；但该 run 未获得
+  `SSH_HOST`，所以 Actions 的 SSH deploy step 明确跳过；其余三个部署 secret 的状态未知。
+  生产随后由**非本次 GitHub Actions SSH deploy step 的机制**更新，具体发布任务或写入者仍待
+  服务器/托管面板权限确认。
+- 上线后生产首页与该提交的 `out/index.html` 字节数和 SHA-256 完全一致；首页只首发 1 张 Hero，
+  393px DPR1 使用 14,502 B 的 800w 候选，联系页及分类/产品详情静态路由的点号 RSC payload
+  抽查均为 200。
+- 前端图片与 RSC 阻塞已经关闭，但生产 HTML 首字节仍在同轮样本中波动约 1.7–5.6 秒；响应未见
+  明确 `Cache-Control`，而相同内容的 ETag / Last-Modified 仍约每 5–10 秒变化。剩余瓶颈属于
+  源站、未知发布/写入机制与缓存配置，不应再用扩大图片压缩或把静态站改成数据库 SSR 来掩盖。
+- 服务器负责人按 `docs/deployment/STATIC_SITE_PERFORMANCE_RUNBOOK.md` 定位发布/写入者、统一发布链路、
+  配置缓存并复测；在拿到服务器 shell 或控制面板权限前，仓库侧不能诚实宣称这部分已经修复。
 
 ---
 
