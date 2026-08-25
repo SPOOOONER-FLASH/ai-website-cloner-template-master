@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   // Emit out/index.html style directory routes so paths resolve without a rewrite rule.
   trailingSlash: true,
+  // Multiple documented root layouts give / and /es their correct static html[lang].
+  // The global 404 convention is required because there is no longer one shared root.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

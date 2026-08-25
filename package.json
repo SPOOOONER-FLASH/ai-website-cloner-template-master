@@ -30,8 +30,8 @@
     "dev": "next dev",
     "build": "next build && node scripts/normalize-next-export-segments.mjs",
     "start": "next start",
-    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/cms-config.test.ts",
-    "test:export": "node --test src/components/site/static-export-performance.test.ts && npm run export:segments:check",
+    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/cms-config.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts",
+    "test:export": "node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && npm run export:segments:check",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
@@ -41,6 +41,7 @@
     "assets:editorial": "node scripts/generate-editorial-srcsets.mjs",
     "assets:editorial:check": "node scripts/generate-editorial-srcsets.mjs --check",
     "export:segments:check": "node scripts/normalize-next-export-segments.mjs --check",
+    "seo:audit": "node scripts/audit-seo.mjs --all",
     "cms": "node scripts/cms.mjs",
     "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs"
   },
@@ -64,6 +65,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "schema-dts": "^2.0.0",
     "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5"

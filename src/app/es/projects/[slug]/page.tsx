@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/data/site";
+import { defaultOgImage } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/site/ProjectDetail";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
@@ -15,9 +17,33 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
+  const title = `${project.nameEs ?? project.name} | Canton Hyland`;
+  const description = project.summaryEs ?? project.summary;
+  const enUrl = absoluteUrl(`/projects/${slug}/`);
+  const esUrl = absoluteUrl(`/es/projects/${slug}/`);
+  const image = absoluteUrl(project.heroImage?.src ?? defaultOgImage);
   return {
-    title: { absolute: `${project.nameEs ?? project.name} | Canton Hyland` },
-    description: project.summaryEs ?? project.summary,
+    title: { absolute: title },
+    description,
+    alternates: {
+      canonical: `/es/projects/${slug}/`,
+      languages: { en: enUrl, es: esUrl, "x-default": enUrl },
+    },
+    openGraph: {
+      type: "article",
+      url: esUrl,
+      title,
+      description,
+      locale: "es",
+      alternateLocale: ["en"],
+      images: [{ url: image, alt: project.heroImage?.label ?? "Herrajes arquitectónicos HYDE" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
   };
 }
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+/* eslint-disable @next/next/no-page-custom-font -- each root document owns the same CDN font link */
+import "../globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
@@ -50,6 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: defaultTitle.en,
+    description: defaultDescription.en,
     images: [absoluteUrl("/images/editorial/hero-cultural-entrance.webp")],
   },
   // Driven by the single `indexable` flag in src/data/site.ts, not hard-coded here.
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     : { index: false, follow: false },
 };
 
-export default function RootLayout({
+export default function EnglishRootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

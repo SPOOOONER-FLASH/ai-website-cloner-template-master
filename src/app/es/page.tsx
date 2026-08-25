@@ -7,14 +7,22 @@ import { Spacer } from "@/components/site/Spacer";
 import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import * as content from "@/data/home-es";
+import { siteName } from "@/data/site";
 
-export const metadata: Metadata = pageMetadata({
-  enPath: "/",
-  locale: "es",
-  title: "Cerraduras y herrajes arquitectónicos",
-  description:
-    "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
-});
+const title = "Cerraduras y herrajes arquitectónicos";
+
+export const metadata: Metadata = {
+  ...pageMetadata({
+    enPath: "/",
+    locale: "es",
+    title,
+    description:
+      "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
+  }),
+  // This page shares the /es segment with its root layout, so the layout title template
+  // does not run here. Keep the brand suffix explicit in the shipped home-page title.
+  title: { absolute: `${title} | ${siteName}` },
+};
 
 export default function SpanishHomePage() {
   return (

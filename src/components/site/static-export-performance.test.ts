@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import { join } from "node:path";
 
@@ -49,15 +49,22 @@ test("the mobile hero accounts for its wide-source object-cover crop", () => {
 
 test("nested route segment payloads use the flat filenames requested by Next", () => {
   const contactExport = join(repositoryRoot, "out", "contact");
+  const entries = readdirSync(contactExport, { withFileTypes: true });
+  const pagePayloads = entries.filter(
+    (entry) => entry.isFile() && /^__next\..+\.__PAGE__\.txt$/u.test(entry.name),
+  );
+  const nestedSegmentDirectories = entries.filter(
+    (entry) => entry.isDirectory() && entry.name.startsWith("__next."),
+  );
 
   assert.equal(
-    existsSync(join(contactExport, "__next.contact.__PAGE__.txt")),
-    true,
-    "missing the flat contact segment payload requested by the client router",
+    pagePayloads.length,
+    1,
+    `expected one flat contact page payload, found ${pagePayloads.map((entry) => entry.name).join(", ")}`,
   );
-  assert.equal(
-    existsSync(join(contactExport, "__next.contact")),
-    false,
+  assert.deepEqual(
+    nestedSegmentDirectories,
+    [],
     "Windows-only nested segment directory must be normalized away",
   );
 });

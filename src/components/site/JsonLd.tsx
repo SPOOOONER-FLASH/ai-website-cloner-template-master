@@ -2,6 +2,18 @@ import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
 import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
 import type { NewsArticle, Product } from "@/data/types";
+import { serializeJsonLd } from "@/lib/json-ld";
+import type {
+  BreadcrumbList,
+  FAQPage,
+  ItemList,
+  NewsArticle as SchemaNewsArticle,
+  Organization,
+  Product as SchemaProduct,
+  Thing,
+  WebSite,
+  WithContext,
+} from "schema-dts";
 
 /**
  * Schema.org structured data.
@@ -15,17 +27,16 @@ import type { NewsArticle, Product } from "@/data/types";
  *   - certifications appear only where a scanned certificate names that exact model
  */
 
-export function JsonLd({ data }: { data: object }) {
+export function JsonLd({ data }: { data: WithContext<Thing> }) {
   return (
     <script
       type="application/ld+json"
-      // Schema payloads are built from our own typed data, never user input.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }}
     />
   );
 }
 
-export function organisationSchema() {
+export function organisationSchema(): WithContext<Organization> {
   const facility = stats.find((s) => s.label === "Facility area")?.value;
   const workforce = stats.find((s) => s.label === "Workforce")?.value;
 
@@ -55,7 +66,7 @@ export function organisationSchema() {
   };
 }
 
-export function websiteSchema() {
+export function websiteSchema(): WithContext<WebSite> {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -71,7 +82,7 @@ export function websiteSchema() {
  * Product schema. Deliberately omits `offers` — no price or stock is published, and
  * emitting an empty/placeholder offer is a common way to earn a Search Console penalty.
  */
-export function productSchema(product: Product, url: string) {
+export function productSchema(product: Product, url: string): WithContext<SchemaProduct> {
   const specs = product.specs.filter((s) => s.value);
 
   return {
@@ -109,7 +120,10 @@ export function productSchema(product: Product, url: string) {
  * has no revision timestamp — claiming a later edit date we do not track would be a
  * freshness signal we cannot back up.
  */
-export function newsArticleSchema(article: NewsArticle, url: string) {
+export function newsArticleSchema(
+  article: NewsArticle,
+  url: string,
+): WithContext<SchemaNewsArticle> {
   const images = [article.heroImage, ...(article.gallery ?? [])]
     .map((image) => image.src)
     .filter((src): src is string => Boolean(src))
@@ -138,7 +152,9 @@ export function NewsArticleJsonLd({ article }: { article: NewsArticle }) {
 }
 
 /** Breadcrumb trail. `items` is ordered root → current, each with an absolute URL. */
-export function breadcrumbSchema(items: { name: string; url: string }[]) {
+export function breadcrumbSchema(
+  items: { name: string; url: string }[],
+): WithContext<BreadcrumbList> {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -152,7 +168,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
 }
 
 /** Category listing as an ItemList, so Google understands the collection. */
-export function itemListSchema(name: string, urls: string[]) {
+export function itemListSchema(name: string, urls: string[]): WithContext<ItemList> {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -174,17 +190,15 @@ export function FaqJsonLd() {
   const items = groups.flatMap((group) => group.items);
   if (!items.length) return null;
 
-  return (
-    <JsonLd
-      data={{
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: items.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: { "@type": "Answer", text: item.answer },
-        })),
-      }}
-    />
-  );
+  const data: WithContext<FAQPage> = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return <JsonLd data={data} />;
 }

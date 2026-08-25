@@ -4,6 +4,7 @@ import { categories } from "@/data/categories";
 import { getAllProductParams } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
+import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
 
 /**
  * Emits /sitemap.xml at build time (works under `output: "export"`).
@@ -33,29 +34,25 @@ const PRIORITY = {
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!indexable) return [];
 
-  const now = new Date();
-
   /** One entry per locale pair, with reciprocal hreflang. */
   const entry = (
     path: string,
     priority: number,
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly",
+    lastModified?: Date,
   ): MetadataRoute.Sitemap => {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
     const en = absoluteUrl(`${clean}/`);
     const es = absoluteUrl(`/es${clean}/`);
 
-    // English-only sections get one row and no alternates. Listing a Spanish URL that
-    // does not exist would put 404s in the sitemap and trigger hreflang errors.
-    if (!hasSpanishMirror(path)) {
-      return [{ url: en, lastModified: now, changeFrequency, priority }];
-    }
-
-    const languages = { en, es, "x-default": en };
-    return [
-      { url: en, lastModified: now, changeFrequency, priority, alternates: { languages } },
-      { url: es, lastModified: now, changeFrequency, priority, alternates: { languages } },
-    ];
+    return buildLocaleSitemapEntries({
+      en,
+      es,
+      bilingual: hasSpanishMirror(path),
+      priority,
+      changeFrequency,
+      lastModified,
+    });
   };
 
   const urls: MetadataRoute.Sitemap = [
@@ -93,12 +90,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // are invisible to search. lastModified is the publication date, since the content
   // model tracks no revision timestamp.
   for (const article of getPublishedNews()) {
-    urls.push(
-      ...entry(`/news/${article.slug}`, PRIORITY.newsDetail).map((row) => ({
-        ...row,
-        lastModified: new Date(article.publishedAt),
-      })),
-    );
+    urls.push(...entry(
+      `/news/${article.slug}`,
+      PRIORITY.newsDetail,
+      "monthly",
+      new Date(article.publishedAt),
+    ));
   }
 
   return urls;

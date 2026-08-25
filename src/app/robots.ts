@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, indexable } from "@/data/site";
+import { buildRobotsRules } from "@/lib/seo-policy";
 
 /**
  * Emits /robots.txt at build time (works under `output: "export"`).
@@ -11,25 +12,12 @@ import { absoluteUrl, indexable } from "@/data/site";
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  if (!indexable) {
-    return {
-      rules: [{ userAgent: "*", disallow: "/" }],
-    };
-  }
+  const rules = buildRobotsRules(indexable);
+
+  if (!indexable) return { rules };
 
   return {
-    rules: [
-      {
-        userAgent: "*",
-        // /llms.txt has to be listed explicitly: the blanket "*.txt" rule below would
-        // otherwise block the one .txt file on this site that is meant to be read. The
-        // more specific Allow wins for Google and Bing alike.
-        allow: ["/", "/llms.txt"],
-        // Build artefacts Next emits alongside the HTML, plus the CMS. None are pages;
-        // crawling them wastes budget and /admin should never surface in results.
-        disallow: ["/_next/", "/admin/", "/*.txt$"],
-      },
-    ],
+    rules,
     sitemap: absoluteUrl("/sitemap.xml"),
     host: absoluteUrl("/").replace(/\/$/, ""),
   };

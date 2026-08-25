@@ -39,6 +39,10 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
             {article.title}
           </h1>
 
+          <p className="col-span-full max-w-[72ch] text-h4 text-ink-secondary xl:col-span-16">
+            {article.summary}
+          </p>
+
           <div className="col-span-full">
             <Link
               href="/news/"

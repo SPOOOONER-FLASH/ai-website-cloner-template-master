@@ -58,6 +58,8 @@ next-env.d.ts
 
 # Local temp files
 temp/
+.playwright-cli/
+output/playwright/
 
 # Local feature worktrees
 .worktrees/
