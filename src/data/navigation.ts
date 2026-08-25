@@ -57,6 +57,12 @@ export interface SiteSettings {
   alibaba: {
     storefront: string;
     label: string;
+    /**
+     * Storefront search path, with {q} for the query. Lives in content so it can be
+     * corrected without a deploy — the storefront serves a captcha to non-browsers, so
+     * nothing here can verify Alibaba's URL shape automatically.
+     */
+    searchTemplate?: string;
   };
 }
 

@@ -151,6 +151,7 @@ collections:
           - { name: "label", label: "视频说明", widget: "string", hint: "例如「305 推杠开门演示」。会显示在视频下方，也给读屏软件用。" }
       - { name: "attachmentIds", label: "附件 id", widget: "list", required: false, field: { name: "id", label: "下载文件 id", widget: "string" } }
       - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+      - { name: "alibabaUrl", label: "阿里巴巴商品链接", widget: "string", required: false, hint: "从阿里后台复制该型号的商品页链接。留空时，产品页会自动链到店铺内搜索该型号——填了具体链接更好，买家点过去直接就是这个产品。" }
       - { name: "seoTitle", label: "SEO 标题", widget: "string", hint: "约 60 字符以内，带上品牌名。" }
       - { name: "seoDescription", label: "SEO 描述", widget: "text", hint: "约 155 字符以内。" }
 

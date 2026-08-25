@@ -168,6 +168,16 @@ export interface Product {
   attachmentIds: string[];
   /** Model numbers of related products. Resolved at render time, not stored as objects. */
   relatedModels: string[];
+  /**
+   * The product's own listing on the client's Alibaba storefront.
+   *
+   * Optional, and empty on every imported record. When set, the detail page links
+   * straight to that listing; when absent it falls back to a storefront search seeded
+   * with the model number. See src/lib/alibaba.ts — the fallback exists because asking
+   * the client to paste 431 URLs before the site can send anyone to Alibaba would mean
+   * it never sends anyone to Alibaba.
+   */
+  alibabaUrl?: string;
   /** <title> for the detail page. Keep under ~60 chars. */
   seoTitle: string;
   /** <meta name="description">. Keep under ~155 chars. */

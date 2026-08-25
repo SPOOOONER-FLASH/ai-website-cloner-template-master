@@ -13,6 +13,7 @@ import {
   selectionToParams,
   sortForDisplay,
   toggleValue,
+  FACET_PARAM_NAMES,
   PRIMARY_FACETS,
   SECONDARY_FACETS,
   type Facet,
@@ -55,11 +56,22 @@ export function ProductFinder({
   // Mirror state back into the address bar without adding history entries — otherwise
   // every ticked box costs the user another press of the back button.
   useEffect(() => {
-    const next = selectionToParams(selection, query, page).toString();
+    const next = selectionToParams(selection, query, page);
+
+    // Carry over any parameter this component does not own. It used to rebuild the whole
+    // query string, which silently dropped things like `?promo=1` — the flag that lets
+    // the client preview the promo dialog past its own cooldown. Anything not a facet,
+    // `q` or `page` belongs to somebody else and is none of this component's business.
+    const owned = new Set([...next.keys()]);
+    for (const [key, value] of new URLSearchParams(window.location.search)) {
+      if (!owned.has(key) && !FACET_PARAM_NAMES.has(key)) next.set(key, value);
+    }
+
+    const qs = next.toString();
     window.history.replaceState(
       null,
       "",
-      next ? `${window.location.pathname}?${next}` : window.location.pathname,
+      qs ? `${window.location.pathname}?${qs}` : window.location.pathname,
     );
   }, [selection, query, page]);
 
@@ -258,8 +270,8 @@ export function ProductFinder({
         ) : (
           <>
             <div className="mt-24 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-3">
-              {current.items.map((product) => (
-                <ProductCard key={product.slug} product={product} />
+              {current.items.map((product, i) => (
+                <ProductCard key={product.slug} product={product} priority={i < 3} />
               ))}
             </div>
 

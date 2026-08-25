@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import { getRelatedProducts } from "@/data/products";
 import { ArrowLink } from "./ArrowLink";
+import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
@@ -47,6 +48,7 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
   if (!product.modelTbc) quoteParams.set("model", product.model);
 
   const quoteHref = `/contact/?${quoteParams.toString()}`;
+  const alibaba = alibabaLinkFor(product);
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
@@ -90,7 +92,8 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
           <div className="layout">
             <div className="col-content grid w-full grid-cols gap-x gap-y-48">
               <div className="col-span-full xl:col-span-12">
-                <MediaPlaceholder {...product.heroImage} />
+                {/* The LCP element on every product page — never lazy. */}
+                <MediaPlaceholder {...product.heroImage} priority />
               </div>
 
               <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
@@ -113,6 +116,33 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
                     Ask a technical question
                   </Button>
                 </div>
+
+                {/*
+                  The second of the two routes this site exists to feed. Until now the
+                  only Alibaba link anywhere was in the footer, pointing at the
+                  storefront's front page — so a buyer who had just read this spec table
+                  had to go and find the model again by searching. This lands them on
+                  THIS model.
+                */}
+                {alibaba && (
+                  <div className="mt-32 border-t border-line pt-24">
+                    <a
+                      href={alibaba.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {alibaba.kind === "listing"
+                        ? `Order ${product.model} on Alibaba`
+                        : `Find ${product.model} on our Alibaba storefront`}
+                    </a>
+                    <p className="mt-8 max-w-[52ch] text-c2 text-ink-secondary">
+                      {alibaba.kind === "listing"
+                        ? "Opens this model's listing, with current pricing, MOQ and lead time."
+                        : "Opens our storefront already searched for this model — trade assurance, tiered pricing and order tracking are handled there."}
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Videos sit above the still gallery — motion outranks stills when both

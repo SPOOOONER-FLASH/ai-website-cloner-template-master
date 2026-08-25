@@ -168,6 +168,19 @@ export interface Page<T> {
   to: number;
 }
 
+/**
+ * Every query parameter this module owns.
+ *
+ * The finder mirrors its state into the address bar, and needs to know which keys are
+ * its own so it can leave everyone else's alone —  was being wiped on every
+ * keystroke before this existed.
+ */
+export const FACET_PARAM_NAMES = new Set<string>([
+  ...(Object.keys(FACET_LABELS) as string[]),
+  "q",
+  "page",
+]);
+
 /** Slices results into one page, clamping an out-of-range page rather than 404ing. */
 export function paginate<T>(items: T[], page: number, size = PAGE_SIZE): Page<T> {
   const total = items.length;

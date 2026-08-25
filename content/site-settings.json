@@ -45,6 +45,7 @@
   },
   "alibaba": {
     "storefront": "https://cnhyland.en.alibaba.com/",
-    "label": "Buy on Alibaba"
+    "label": "Buy on Alibaba",
+    "searchTemplate": "search/product?SearchText={q}"
   }
 }

@@ -3,13 +3,12 @@ import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { Button } from "@/components/site/Button";
 import { CategoryCard } from "@/components/site/CategoryCard";
-import { ProductCard } from "@/components/site/ProductCard";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 import { ProductCategoryRail } from "@/components/site/ProductCategoryRail";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, products } from "@/data/products";
-import { sortForDisplay } from "@/lib/product-finder";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
@@ -20,14 +19,41 @@ export const metadata: Metadata = pageMetadata({
 });
 
 /**
- * How many cards each category shows on this overview.
+ * Four pre-filtered ways into the Finder.
  *
- * This page is an index of 16 categories, not a listing — the listings (the category
- * pages and the Product Finder) are the ones capped at 20 a page. Repeating 20 here
- * would put 245 cards on one screen and miss the point of capping them at all, so each
- * category previews a tidy two rows of four and links through for the rest.
+ * Counts come from the catalogue rather than being written down, so adding products
+ * cannot leave a wrong number on the page. The facets chosen are the ones a hardware
+ * schedule is actually written in.
  */
-const PREVIEW_PER_CATEGORY = 8;
+function finderEntries() {
+  const byMaterial = (value: string) =>
+    products.filter((p) => p.material?.toLowerCase().includes(value)).length;
+
+  return [
+    {
+      label: "Stainless steel",
+      href: "/product-finder/?material=" + encodeURIComponent("Stainless Steel"),
+      count: byMaterial("stainless"),
+    },
+    {
+      label: "Fire doors",
+      href: "/product-finder/?doorType=" + encodeURIComponent("Fire Door"),
+      count: products.filter((p) => p.doorTypes?.some((d) => /fire/i.test(d))).length,
+    },
+    {
+      label: "Panic exit devices",
+      href: "/product-finder/?category=panic-exit-devices",
+      count: getProductsByCategory("panic-exit-devices").length,
+    },
+    {
+      label: "Lock cases",
+      href: "/product-finder/?category=lock-cases",
+      count: getProductsByCategory("lock-cases").length,
+    },
+  ].filter((entry) => entry.count > 0);
+}
+
+const FINDER_ENTRIES = finderEntries();
 
 export default function ProductsPage() {
   const categories = getTopLevelCategories();
@@ -105,74 +131,74 @@ export default function ProductsPage() {
       </section>
 
       {/*
-        The full index, FSB-style: every product on one page, grouped by category.
-        Category cards tell you what exists; this tells you what you can actually order,
-        and it is the page a specifier scrolls when they do not yet know the model number.
-        Empty categories are skipped rather than rendered as an empty heading.
+        The gateway to the Product Finder.
+
+        This section used to be the full index — every one of the 431 products, grouped
+        by category, on one page. That is the FSB pattern, and it suits FSB: they sell a
+        few dozen handles to architects who browse. This catalogue is 431 records across
+        16 categories, and rendering it here meant one page requesting hundreds of
+        photographs before a buyer had narrowed anything.
+
+        The categories above already answer "what do you make". What a buyer needs next
+        is a way to narrow by the attributes on their schedule — material, finish, door
+        type — and that is the Finder. So this block sells the Finder rather than
+        duplicating the catalogue in front of it.
       */}
-      <section className="layout mt-144 lg:mt-192" aria-labelledby="all-products-heading">
+      <section className="layout mt-144 lg:mt-192" aria-labelledby="finder-gateway-heading">
         <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full flex flex-wrap items-end justify-between gap-24 border-b border-line pb-16">
-            <h2 id="all-products-heading" className="text-h3 text-ink">
-              All products
+          <div className="col-span-full border-t border-line pt-48 xl:col-span-13">
+            <p className="text-c1 text-ink-secondary">Find the right model</p>
+            <h2 id="finder-gateway-heading" className="mt-8 text-h1 text-ink">
+              {products.length} models. Narrow them by what is on your schedule.
             </h2>
-            <p className="text-c2 text-ink-secondary">
-              {products.length} products ·{" "}
-              <Link
-                href="/product-finder/"
-                className="text-brand underline-offset-4 hover:text-brand-hover hover:underline"
-              >
-                filter by material, finish and door type
-              </Link>
+            <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
+              The Product Finder filters the full catalogue by category, type, series,
+              material, finish, door type and certification. Filters combine, counts
+              update as you go, and the address bar keeps your selection — so a narrowed
+              view can be pasted straight into an email to a colleague.
             </p>
+
+            <div className="mt-32 flex flex-wrap items-center gap-16">
+              <Button href="/product-finder/">Open the Product Finder</Button>
+              <Button href="/contact/" variant="secondary">
+                Ask an export engineer
+              </Button>
+            </div>
           </div>
 
-          {categories.map((category) => {
-            const items = sortForDisplay(getProductsByCategory(category.slug));
-            if (!items.length) return null;
-
-            const shown = items.slice(0, PREVIEW_PER_CATEGORY);
-            const remaining = items.length - shown.length;
-
-            return (
-              <div key={category.slug} className="col-span-full">
-                <div className="flex flex-wrap items-baseline justify-between gap-16">
-                  <h3 className="text-h3 text-ink">
-                    <Link
-                      href={`/products/${category.slug}/`}
-                      className="underline-offset-4 hover:text-brand-hover hover:underline"
-                    >
-                      {category.name}
-                    </Link>
-                  </h3>
-                  <span className="text-c2 text-ink-tertiary">
-                    {items.length} {items.length === 1 ? "product" : "products"}
-                  </span>
-                </div>
-
-                <ul className="mt-24 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-4">
-                  {shown.map((product) => (
-                    <li key={product.slug}>
-                      <ProductCard product={product} />
-                    </li>
-                  ))}
-                </ul>
-
-                {remaining > 0 && (
-                  <p className="mt-24">
-                    <Link
-                      href={`/products/${category.slug}/`}
-                      className="text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
-                    >
-                      See all {items.length} {category.name.toLowerCase()} →
-                    </Link>
-                  </p>
-                )}
-              </div>
-            );
-          })}
+          {/*
+            Direct entries into a pre-filtered Finder. These are the four dimensions
+            buyers actually open with, and each link arrives with that facet already
+            applied rather than dropping them into an empty filter rail.
+          */}
+          <div className="col-span-full xl:col-span-10 xl:col-start-15">
+            <p className="border-b border-line pb-16 text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+              Start from a filter
+            </p>
+            <ul className="mt-24 grid grid-cols-1 gap-16 sm:grid-cols-2 xl:grid-cols-1">
+              {FINDER_ENTRIES.map((entry) => (
+                <li key={entry.href} className="border-b border-line pb-16">
+                  <Link
+                    href={entry.href}
+                    className="group flex items-baseline justify-between gap-16"
+                  >
+                    <span className="text-c1 text-ink group-hover:text-brand">
+                      {entry.label}
+                    </span>
+                    <span className="flex-none text-c2 text-ink-tertiary">
+                      {entry.count} models
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-24 text-c2 text-ink-secondary">
+              Or browse a category above — each one lists its models 20 to a page.
+            </p>
+          </div>
         </div>
       </section>
+
     </main>
   );
 }

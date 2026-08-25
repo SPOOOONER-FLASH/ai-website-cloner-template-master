@@ -6,10 +6,15 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 interface ProductCardProps {
   product: Product;
   className?: string;
+  /**
+   * Pass on the cards in the first visible row so their photographs are fetched eagerly.
+   * A 20-card grid is right to lazy-load; its first row is not — see MediaPlaceholder.
+   */
+  priority?: boolean;
 }
 
 /** Shared catalogue card for listings and related products. */
-export function ProductCard({ product, className }: ProductCardProps) {
+export function ProductCard({ product, className, priority }: ProductCardProps) {
   return (
     <Link
       href={`/products/${product.categoryPath[0]}/${product.slug}/`}
@@ -18,7 +23,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         className,
       )}
     >
-      <MediaPlaceholder {...product.heroImage} />
+      <MediaPlaceholder {...product.heroImage} priority={priority} />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
           {product.name}

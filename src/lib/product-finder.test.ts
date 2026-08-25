@@ -13,6 +13,7 @@ import {
   sortForDisplay,
   toggleValue,
   FACET_LABELS,
+  FACET_PARAM_NAMES,
   PAGE_SIZE,
   PRIMARY_FACETS,
   SECONDARY_FACETS,
@@ -165,4 +166,15 @@ test("the rail carries only category and type; the rest sit behind the panel", (
   assert.equal(SECONDARY_FACETS.includes("series" as FacetKey), true);
   const all = [...PRIMARY_FACETS, ...SECONDARY_FACETS].sort();
   assert.deepEqual(all, (Object.keys(FACET_LABELS) as FacetKey[]).sort());
+});
+
+test("the finder claims only its own query parameters", () => {
+  // It mirrors state into the address bar by rebuilding the query string, so it has to
+  // know which keys are its own — otherwise it wipes things like ?promo=1 on every
+  // keystroke, which is exactly what it used to do.
+  for (const key of Object.keys(FACET_LABELS)) assert.ok(FACET_PARAM_NAMES.has(key));
+  assert.ok(FACET_PARAM_NAMES.has("q"));
+  assert.ok(FACET_PARAM_NAMES.has("page"));
+  assert.equal(FACET_PARAM_NAMES.has("promo"), false);
+  assert.equal(FACET_PARAM_NAMES.has("utm_source"), false);
 });

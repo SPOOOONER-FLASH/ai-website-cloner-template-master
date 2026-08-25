@@ -11,6 +11,16 @@ interface MediaPlaceholderProps {
   /** Browser layout hint used with the curated editorial srcset. */
   sizes?: string;
   className?: string;
+  /**
+   * Set on images that are above the fold.
+   *
+   *  is right for a 20-card grid and wrong for its first row: the
+   * browser has to finish layout before it knows those images are in view, so the
+   * request that should start first starts last. Eager + high fetchpriority puts them in
+   * the queue alongside the stylesheet instead. Use it on a handful of images only —
+   * marking everything priority is the same as marking nothing.
+   */
+  priority?: boolean;
 }
 
 /**
@@ -37,6 +47,7 @@ export function MediaPlaceholder({
   src,
   sizes,
   className,
+  priority,
 }: MediaPlaceholderProps) {
   if (src) {
     const responsive = getResponsiveEditorialImageProps(src, sizes);
@@ -45,8 +56,9 @@ export function MediaPlaceholder({
       <img
         {...responsive}
         alt={label}
-        loading="lazy"
-        decoding="async"
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : undefined}
+        decoding={priority ? "sync" : "async"}
         className={cn("w-full object-cover", className)}
         style={{ aspectRatio: ratio }}
       />

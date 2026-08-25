@@ -14,7 +14,8 @@ export function CategoryCard({ category, productCount, index }: CategoryCardProp
       href={`/products/${category.slug}/`}
       className="group col-span-full flex flex-col border border-line bg-surface hover:border-brand sm:col-span-12 xl:col-span-6"
     >
-      <MediaPlaceholder {...category.image} />
+      {/* The first row of category cards is above the fold on /products. */}
+      <MediaPlaceholder {...category.image} priority={index < 3} />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <div className="flex items-start justify-between gap-24">
           <h2 className="text-h3 text-ink group-hover:text-brand-hover group-hover:underline">

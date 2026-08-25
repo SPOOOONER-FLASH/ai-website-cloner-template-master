@@ -73,7 +73,24 @@ function writeState(state: StoredState) {
  * in front of someone who dismissed it — including the client checking their own site,
  * which is worth remembering before wondering why "the popup is gone again".
  */
+/**
+ * `?promo=1` shows the dialog regardless of the cooldown, and does not write state.
+ *
+ * Without it the only person who cannot check the promo is the person who just looked at
+ * it — which is the client, every time. It caused two rounds of "the popup is gone
+ * again" when nothing was wrong. Harmless in production: the worst a visitor can do with
+ * it is see an offer they were going to be shown anyway.
+ */
+function forcedOpen(): boolean {
+  try {
+    return new URLSearchParams(window.location.search).get("promo") === "1";
+  } catch {
+    return false;
+  }
+}
+
 function isSuppressed(now: number): boolean {
+  if (forcedOpen()) return false;
   const state = readState();
   if (!state) return false;
   if (state.version !== promoDialog.version) return false;
@@ -103,11 +120,15 @@ export function PromoDialog() {
       setDismissed(carried);
       setOpen(true);
 
-      writeState({
-        lastSeen: Date.now(),
-        version: promoDialog.version,
-        dismissed: carried,
-      });
+      // A forced preview must not start a real cooldown, or checking the promo would
+      // hide it from the next genuine visit on that browser.
+      if (!forcedOpen()) {
+        writeState({
+          lastSeen: Date.now(),
+          version: promoDialog.version,
+          dismissed: carried,
+        });
+      }
     }, promoDialog.delaySeconds * 1000);
 
     return () => window.clearTimeout(timer);
