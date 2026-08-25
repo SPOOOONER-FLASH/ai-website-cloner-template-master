@@ -126,6 +126,25 @@ function writeValidStagingFixture(root, mutate = () => {}) {
         },
       ],
     },
+    news: {
+      route: "/news/door-hardware-guide/",
+      lang: "en",
+      heading: "Door Hardware Guide",
+      visibleText: "A documented guide to commercial door hardware.",
+      jsonLd: [
+        ...globalSchemas(),
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          headline: "Door Hardware Guide",
+          description: "A documented guide to commercial door hardware.",
+          url: `${ORIGIN}/news/door-hardware-guide/`,
+          mainEntityOfPage: { "@type": "WebPage", "@id": `${ORIGIN}/news/door-hardware-guide/` },
+          datePublished: "2026-08-20",
+          publisher: { "@id": `${ORIGIN}/#organization` },
+        },
+      ],
+    },
     robots: "User-Agent: *\nDisallow: /\n",
     sitemap: '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
   };
@@ -134,6 +153,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
   writeFile(root, "index.html", publicDocument(state.home));
   writeFile(root, "es/index.html", publicDocument(state.spanish));
   writeFile(root, "products/lock/index.html", publicDocument(state.product));
+  writeFile(root, "news/door-hardware-guide/index.html", publicDocument(state.news));
   writeFile(root, "admin/index.html", '<!doctype html><html lang="zh-CN"><head><meta name="robots" content="noindex,nofollow"></head><body>CMS</body></html>');
   writeFile(root, "status/index.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"></head><body><h1>Status</h1></body></html>');
   writeFile(root, "404.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"></head><body><h1>404</h1></body></html>');
@@ -156,6 +176,7 @@ function withIndexableFixture(mutate, assertion) {
     state.home.noindex = false;
     state.spanish.noindex = false;
     state.product.noindex = false;
+    state.news.noindex = false;
     state.robots = [
       "User-Agent: *",
       "Allow: /",
@@ -167,6 +188,7 @@ function withIndexableFixture(mutate, assertion) {
       <url><loc>${ORIGIN}/</loc></url>
       <url><loc>${ORIGIN}/es/</loc></url>
       <url><loc>${ORIGIN}/products/lock/</loc></url>
+      <url><loc>${ORIGIN}/news/door-hardware-guide/</loc><lastmod>2026-08-20T00:00:00.000Z</lastmod></url>
     </urlset>`;
     mutate(state);
   }, assertion);
@@ -266,6 +288,97 @@ test("reports structured data that does not match visible page content", () => {
   });
 });
 
+test("reports malformed nested FAQ Question and Answer nodes", () => {
+  withFixture((state) => {
+    state.product.visibleText = [
+      "Commercial mortise lock case.",
+      "Wrong type question Visible answer one.",
+      "Visible answer two.",
+      "Missing answer question",
+      "Wrong answer type question Visible answer three.",
+      "Missing answer text question",
+    ].join(" ");
+    state.product.jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        null,
+        {
+          "@type": "Thing",
+          name: "Wrong type question",
+          acceptedAnswer: { "@type": "Answer", text: "Visible answer one." },
+        },
+        {
+          "@type": "Question",
+          name: "   ",
+          acceptedAnswer: { "@type": "Answer", text: "Visible answer two." },
+        },
+        {
+          "@type": "Question",
+          name: "Missing answer question",
+        },
+        {
+          "@type": "Question",
+          name: "Wrong answer type question",
+          acceptedAnswer: { "@type": "Thing", text: "Visible answer three." },
+        },
+        {
+          "@type": "Question",
+          name: "Missing answer text question",
+          acceptedAnswer: { "@type": "Answer", text: "   " },
+        },
+      ],
+    });
+  }, (result) => {
+    const codes = issueCodes(result);
+    assert.ok(codes.includes("jsonld-faq-question-type-invalid"));
+    assert.ok(codes.includes("jsonld-faq-question-name-missing"));
+    assert.ok(codes.includes("jsonld-faq-answer-missing"));
+    assert.ok(codes.includes("jsonld-faq-answer-type-invalid"));
+    assert.ok(codes.includes("jsonld-faq-answer-text-missing"));
+  });
+});
+
+test("reports malformed BreadcrumbList and ItemList child records", () => {
+  withFixture((state) => {
+    state.product.jsonLd[3].itemListElement = [
+      { "@type": "Thing", position: 0, name: "   ", item: "" },
+      { "@type": "ListItem", position: 3, name: "Lock", item: `${ORIGIN}/products/lock/` },
+    ];
+    state.product.jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      numberOfItems: 2,
+      itemListElement: [
+        { "@type": "Thing", position: 1, url: "" },
+        { "@type": "ListItem", position: 3, url: `${ORIGIN}/products/lock/` },
+      ],
+    });
+  }, (result) => {
+    const codes = issueCodes(result);
+    assert.ok(codes.includes("jsonld-list-item-type-invalid"));
+    assert.ok(codes.includes("jsonld-list-item-position-invalid"));
+    assert.ok(codes.includes("jsonld-breadcrumb-item-name-missing"));
+    assert.ok(codes.includes("jsonld-breadcrumb-item-url-missing"));
+    assert.ok(codes.includes("jsonld-item-list-url-missing"));
+  });
+});
+
+test("accepts JSON-LD graph nodes that inherit the graph context", () => {
+  withFixture((state) => {
+    state.home.jsonLd = [{
+      "@context": "https://schema.org",
+      "@graph": globalSchemas().map((schema) => {
+        const node = { ...schema };
+        delete node["@context"];
+        return node;
+      }),
+    }];
+  }, (result) => {
+    assert.equal(issueCodes(result).includes("jsonld-context-missing"), false);
+  });
+});
+
 test("requires staging robots, noindex pages, and an empty sitemap to agree", () => {
   withFixture((state) => {
     state.home.noindex = false;
@@ -281,6 +394,39 @@ test("accepts an indexable export only when robots, public pages, and sitemap ag
   withIndexableFixture(() => {}, (result) => {
     assert.deepEqual(result.semanticIssues, []);
     assert.equal(result.summary.releaseState, "indexable");
+  });
+});
+
+test("reports sitemap lastmod on a page without a tracked content date", () => {
+  withIndexableFixture((state) => {
+    state.sitemap = state.sitemap.replace(
+      `<url><loc>${ORIGIN}/products/lock/</loc></url>`,
+      `<url><loc>${ORIGIN}/products/lock/</loc><lastmod>2026-08-20</lastmod></url>`,
+    );
+  }, (result) => {
+    assert.ok(issueCodes(result).includes("sitemap-lastmod-untracked"));
+  });
+});
+
+test("reports sitemap lastmod that differs from NewsArticle datePublished", () => {
+  withIndexableFixture((state) => {
+    state.sitemap = state.sitemap.replace(
+      "<lastmod>2026-08-20T00:00:00.000Z</lastmod>",
+      "<lastmod>2026-08-21T00:00:00.000Z</lastmod>",
+    );
+  }, (result) => {
+    assert.ok(issueCodes(result).includes("sitemap-lastmod-mismatch"));
+  });
+});
+
+test("reports malformed sitemap lastmod values", () => {
+  withIndexableFixture((state) => {
+    state.sitemap = state.sitemap.replace(
+      "<lastmod>2026-08-20T00:00:00.000Z</lastmod>",
+      "<lastmod>not-a-date</lastmod>",
+    );
+  }, (result) => {
+    assert.ok(issueCodes(result).includes("sitemap-lastmod-invalid"));
   });
 });
 

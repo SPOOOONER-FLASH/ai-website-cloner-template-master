@@ -178,9 +178,17 @@ function parsePage(outDir, file) {
 }
 
 function parseSitemap(xml) {
-  return [...xml.matchAll(/<loc\b[^>]*>([\s\S]*?)<\/loc>/giu)]
-    .map((match) => decodeHtml(match[1]).trim())
-    .filter(Boolean);
+  return [...xml.matchAll(/<url\b[^>]*>([\s\S]*?)<\/url>/giu)]
+    .map((match) => {
+      const entry = match[1];
+      const loc = (entry.match(/<loc\b[^>]*>([\s\S]*?)<\/loc>/iu) ?? ["", ""])[1];
+      const lastModified = (entry.match(/<lastmod\b[^>]*>([\s\S]*?)<\/lastmod>/iu) ?? ["", ""])[1];
+      return {
+        loc: decodeHtml(loc).trim(),
+        lastModified: decodeHtml(lastModified).trim(),
+      };
+    })
+    .filter(({ loc }) => Boolean(loc));
 }
 
 function parseRobots(source) {
@@ -209,11 +217,14 @@ function socialTitleMatchesDocument(socialTitle, documentTitle) {
   return socialTitle === documentTitle || documentTitle.startsWith(`${socialTitle} |`);
 }
 
-function schemaNodes(value) {
-  if (Array.isArray(value)) return value.flatMap(schemaNodes);
+function schemaNodes(value, inheritedContext) {
+  if (Array.isArray(value)) return value.flatMap((entry) => schemaNodes(entry, inheritedContext));
   if (!value || typeof value !== "object") return [];
-  if (Array.isArray(value["@graph"])) return value["@graph"].flatMap(schemaNodes);
-  return [value];
+  const context = value["@context"] ?? inheritedContext;
+  if (Array.isArray(value["@graph"])) {
+    return value["@graph"].flatMap((entry) => schemaNodes(entry, context));
+  }
+  return [{ node: value, context }];
 }
 
 function sameOriginInternalTarget(value, origin) {
@@ -238,8 +249,19 @@ function requiredSchemaFields(node) {
   };
   return (requiredByType[type] ?? []).filter((field) => {
     const value = node[field];
-    return value === undefined || value === null || value === "" || (Array.isArray(value) && value.length === 0);
+    return value === undefined
+      || value === null
+      || (typeof value === "string" && value.trim() === "")
+      || (Array.isArray(value) && value.length === 0);
   });
+}
+
+function isSchemaObject(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function isNonEmptyString(value) {
+  return typeof value === "string" && value.trim() !== "";
 }
 
 /**
@@ -396,8 +418,8 @@ export function auditBuild({ outDir }) {
         return;
       }
 
-      for (const node of schemaNodes(script.data)) {
-        if (!node["@context"]) addIssue(page, "jsonld-context-missing", `Script ${scriptIndex + 1} has no @context`);
+      for (const { node, context } of schemaNodes(script.data)) {
+        if (!context) addIssue(page, "jsonld-context-missing", `Script ${scriptIndex + 1} has no @context`);
         if (!node["@type"]) addIssue(page, "jsonld-type-missing", `Script ${scriptIndex + 1} has no @type`);
         for (const field of requiredSchemaFields(node)) {
           addIssue(page, "jsonld-required-field-missing", `${node["@type"] ?? "Schema"}.${field}`);
@@ -431,14 +453,32 @@ export function auditBuild({ outDir }) {
         }
         if (node["@type"] === "FAQPage") {
           const questions = Array.isArray(node.mainEntity) ? node.mainEntity : [node.mainEntity];
-          for (const question of questions.filter(Boolean)) {
-            const questionText = normalizedVisibleText(question.name);
-            if (questionText && !page.visibleText.includes(questionText)) {
-              addIssue(page, "jsonld-faq-question-not-visible", String(question.name));
+          for (const [questionIndex, question] of questions.entries()) {
+            const location = `FAQPage.mainEntity[${questionIndex}]`;
+            if (!isSchemaObject(question) || question["@type"] !== "Question") {
+              addIssue(page, "jsonld-faq-question-type-invalid", `${location} must be a Question`);
             }
-            const answerText = normalizedVisibleText(question.acceptedAnswer?.text);
+            if (!isNonEmptyString(question?.name)) {
+              addIssue(page, "jsonld-faq-question-name-missing", `${location}.name`);
+            }
+            const answer = question?.acceptedAnswer;
+            if (!isSchemaObject(answer)) {
+              addIssue(page, "jsonld-faq-answer-missing", `${location}.acceptedAnswer`);
+            } else {
+              if (answer["@type"] !== "Answer") {
+                addIssue(page, "jsonld-faq-answer-type-invalid", `${location}.acceptedAnswer must be an Answer`);
+              }
+              if (!isNonEmptyString(answer.text)) {
+                addIssue(page, "jsonld-faq-answer-text-missing", `${location}.acceptedAnswer.text`);
+              }
+            }
+            const questionText = normalizedVisibleText(question?.name);
+            if (questionText && !page.visibleText.includes(questionText)) {
+              addIssue(page, "jsonld-faq-question-not-visible", String(question?.name));
+            }
+            const answerText = normalizedVisibleText(answer?.text);
             if (answerText && !page.visibleText.includes(answerText)) {
-              addIssue(page, "jsonld-faq-answer-not-visible", String(question.acceptedAnswer?.text));
+              addIssue(page, "jsonld-faq-answer-not-visible", String(answer.text));
             }
           }
         }
@@ -447,7 +487,22 @@ export function auditBuild({ outDir }) {
           if (!sameUrl(finalItem, canonical)) {
             addIssue(page, "jsonld-breadcrumb-current-url-mismatch", `${finalItem} != ${canonical}`);
           }
-          for (const item of node.itemListElement) {
+          for (const [itemIndex, item] of node.itemListElement.entries()) {
+            const location = `BreadcrumbList.itemListElement[${itemIndex}]`;
+            if (!isSchemaObject(item) || item["@type"] !== "ListItem") {
+              addIssue(page, "jsonld-list-item-type-invalid", `${location} must be a ListItem`);
+            }
+            if (!Number.isInteger(item?.position) || item.position !== itemIndex + 1) {
+              addIssue(page, "jsonld-list-item-position-invalid", `${location}.position must be ${itemIndex + 1}`);
+            }
+            if (!isNonEmptyString(item?.name)) {
+              addIssue(page, "jsonld-breadcrumb-item-name-missing", `${location}.name`);
+            }
+            if (!isNonEmptyString(item?.item)) {
+              addIssue(page, "jsonld-breadcrumb-item-url-missing", `${location}.item`);
+            } else if (!normalizeAbsoluteUrl(item.item)) {
+              addIssue(page, "jsonld-breadcrumb-item-url-invalid", `${location}.item: ${item.item}`);
+            }
             const target = sameOriginInternalTarget(item?.item, siteOrigin);
             if (target && !canonicalPageByUrl.has(target)) {
               addIssue(page, "jsonld-internal-url-target-missing", item.item);
@@ -458,7 +513,19 @@ export function auditBuild({ outDir }) {
           if (node.numberOfItems !== undefined && node.numberOfItems !== node.itemListElement.length) {
             addIssue(page, "jsonld-item-count-mismatch", `${node.numberOfItems} != ${node.itemListElement.length}`);
           }
-          for (const item of node.itemListElement) {
+          for (const [itemIndex, item] of node.itemListElement.entries()) {
+            const location = `ItemList.itemListElement[${itemIndex}]`;
+            if (!isSchemaObject(item) || item["@type"] !== "ListItem") {
+              addIssue(page, "jsonld-list-item-type-invalid", `${location} must be a ListItem`);
+            }
+            if (!Number.isInteger(item?.position) || item.position !== itemIndex + 1) {
+              addIssue(page, "jsonld-list-item-position-invalid", `${location}.position must be ${itemIndex + 1}`);
+            }
+            if (!isNonEmptyString(item?.url)) {
+              addIssue(page, "jsonld-item-list-url-missing", `${location}.url`);
+            } else if (!normalizeAbsoluteUrl(item.url)) {
+              addIssue(page, "jsonld-item-list-url-invalid", `${location}.url: ${item.url}`);
+            }
             const target = sameOriginInternalTarget(item?.url, siteOrigin);
             if (target && !canonicalPageByUrl.has(target)) {
               addIssue(page, "jsonld-internal-url-target-missing", item.url);
@@ -472,7 +539,8 @@ export function auditBuild({ outDir }) {
   const robotsPath = resolve(absoluteOut, "robots.txt");
   const sitemapPath = resolve(absoluteOut, "sitemap.xml");
   const robots = parseRobots(existsSync(robotsPath) ? readFileSync(robotsPath, "utf8") : "");
-  const sitemapUrls = parseSitemap(existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "");
+  const sitemapEntries = parseSitemap(existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "");
+  const sitemapUrls = sitemapEntries.map(({ loc }) => loc);
   const sitemapCounts = new Map();
   for (const url of sitemapUrls) {
     const normalized = normalizeAbsoluteUrl(url);
@@ -508,6 +576,35 @@ export function auditBuild({ outDir }) {
         addIssue(undefined, "sitemap-url-target-missing", sitemapUrl || "Invalid sitemap URL");
       }
     }
+    for (const { loc, lastModified } of sitemapEntries) {
+      if (!lastModified) continue;
+      const lastModifiedTime = Date.parse(lastModified);
+      if (!Number.isFinite(lastModifiedTime)) {
+        addIssue(undefined, "sitemap-lastmod-invalid", `${loc}: ${lastModified}`);
+        continue;
+      }
+      const page = canonicalPageByUrl.get(normalizeAbsoluteUrl(loc));
+      if (!page) continue;
+      const trackedDates = page.jsonLd.flatMap((script) => (
+        script.data
+          ? schemaNodes(script.data)
+            .map(({ node }) => node)
+            .filter((node) => node["@type"] === "NewsArticle" && isNonEmptyString(node.datePublished))
+            .map((node) => node.datePublished)
+          : []
+      ));
+      if (trackedDates.length === 0) {
+        addIssue(page, "sitemap-lastmod-untracked", `${loc} has no tracked publication date`);
+        continue;
+      }
+      const matchesTrackedDate = trackedDates.some((date) => {
+        const trackedTime = Date.parse(date);
+        return Number.isFinite(trackedTime) && trackedTime === lastModifiedTime;
+      });
+      if (!matchesTrackedDate) {
+        addIssue(page, "sitemap-lastmod-mismatch", `${lastModified} != ${trackedDates.join(", ")}`);
+      }
+    }
   }
 
   for (const page of pages.filter((candidate) => !candidate.public)) {
@@ -522,7 +619,7 @@ export function auditBuild({ outDir }) {
     pages: pages.map((page) => {
       const resultPage = { ...page };
       resultPage.jsonLdTypes = page.jsonLd.flatMap((script) => (
-        script.data ? schemaNodes(script.data).map((node) => node["@type"]).filter(Boolean) : []
+        script.data ? schemaNodes(script.data).map(({ node }) => node["@type"]).filter(Boolean) : []
       ));
       delete resultPage.file;
       delete resultPage.html;
