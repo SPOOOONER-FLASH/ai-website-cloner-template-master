@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "name": "联系我们 + 产品目录下载",
-  "version": 8,
+  "version": 9,
   "startAt": "",
   "endAt": "",
   "delaySeconds": 10,
@@ -12,7 +12,9 @@
     "product-detail",
     "product-finder",
     "projects",
-    "news"
+    "news",
+    "company",
+    "downloads"
   ],
   "cards": [
     {

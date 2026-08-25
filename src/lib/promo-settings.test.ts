@@ -56,16 +56,42 @@ test("promo dialog has no stale hours-based cooldown field", () => {
 
 test("bumping the campaign is what re-shows it to people who dismissed it", () => {
   assert.equal(typeof promo.version, "number");
-  assert.ok(promo.version >= 8, "version should not go backwards; it defeats the cooldown on purpose.");
+  assert.ok(promo.version >= 9, "version should not go backwards; it defeats the cooldown on purpose.");
 });
 
-test("the promo shows on the Product Finder", () => {
+test("the promo shows on every section the client asked for", () => {
   // The finder is where a buyer is deliberately narrowing the catalogue, so the client
   // asked for the card there too. This needs BOTH the surface listed here and a matching
   // branch in promoSurfaceFor — the route used to fall through and match nothing, so the
   // dialog was silently absent no matter what this file said.
   assert.ok(
-    promo.surfaces.includes("product-finder"),
-    "product-finder must be listed in content/promo.json surfaces",
+    promo.surfaces.includes("product-finder") &&
+      promo.surfaces.includes("company") &&
+      promo.surfaces.includes("downloads"),
+    "client asked for the finder, company and downloads pages too",
   );
+});
+
+test("every listed surface is a route promoSurfaceFor can actually recognise", () => {
+  // This pairing is the failure mode worth guarding. A surface listed here that
+  // promoSurfaceFor cannot produce is silently dead — the config looks right, the CMS
+  // shows it ticked, and the dialog simply never appears. That is exactly what happened
+  // to product-finder before its branch existed.
+  const producible = new Set<string>([
+    "home",
+    "products",
+    "product-detail",
+    "product-finder",
+    "projects",
+    "news",
+    "company",
+    "downloads",
+  ]);
+  for (const surface of promo.surfaces) {
+    assert.ok(
+      producible.has(surface),
+      `"${surface}" is listed in content/promo.json but promoSurfaceFor never returns it — ` +
+        "add a branch in src/data/promo.ts or the dialog will silently never show there.",
+    );
+  }
 });
