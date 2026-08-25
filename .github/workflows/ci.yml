@@ -49,5 +49,11 @@ jobs:
       - name: Type check
         run: npm run typecheck
 
+      # The suite existed but nothing ran it, so a failing assertion could sit in the
+      # repository unnoticed — which is how the promo timing got changed twice without
+      # anyone being told. It runs before the build because it is the faster signal.
+      - name: Test
+        run: npm test
+
       - name: Build
         run: npm run build

@@ -42,7 +42,7 @@ const MERGE = new Map([
 const LOOKS_LIKE_DOOR_TYPE = /^(single|double|outswing|inswing|wooden|metal|timber|steel|glass)\b/i;
 
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
-let changedFiles = 0, changedRows = 0, merged = 0;
+let changedFiles = 0, merged = 0;
 const review = [];
 const beforeCounts = {};
 const afterCounts = {};
@@ -65,7 +65,6 @@ for (const f of files) {
       }
       row.label = target;
       touched = true;
-      changedRows++;
       merged++;
     }
     afterCounts[row.label] = (afterCounts[row.label] ?? 0) + 1;

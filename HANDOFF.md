@@ -89,8 +89,11 @@
 |---|---|
 | 从硬盘 PSD 提取无水印原图 | 有图产品 **150 → 319**，完全缺图 **281 → 112** |
 | SEO 字段按 Google/Bing 长度重写 | 构建产物有问题的页面 **427 → 1**（剩下那个是 `/admin`，本就 Disallow） |
-| 筛选器属性归一 | 材质 71 → 41、表面处理 97 → 78、门型 101 → 87 |
+| 筛选器属性归一 | 大小写合并；筛选器实际选项数见下方「属性字段现状」 |
 | 规格标签合并同义词 | 38 → 32 个标签，`Application` 覆盖 80 → 130 个产品 |
+| Product Finder 改造 | 分页 50/页；左栏只留 Category + Type；无图产品排到最后 |
+| 双 agent 协作锁 | `scripts/agent-lock.mjs` + pre-commit hook，见 AGENTS.md |
+| 弹窗时序锁进测试 | `src/lib/promo-settings.test.ts`；`npm test` 已接入 CI |
 | 新增 `/llms.txt` | 从目录数据生成，`indexable=false` 时降级为暂存声明 |
 | 新增 `public/seo/og-default.png` | 132 个页面此前没有社交卡片图 |
 | sitemap 补齐 | 加入 `/product-finder`、`/faq`、`/request/price-list` |
@@ -125,10 +128,20 @@ scripts/build-og-image.mjs           生成默认 OG 图
 5. **Product Finder 的结果区完全靠客户端渲染** —— 构建出的 HTML 里有目录数据但
    **0 个产品链接**。已补 ItemList 结构化数据兜底，但要让爬虫和 AI 引擎跟到具体型号，
    需要服务端渲染初始列表，或在页面底部加一个静态型号索引。
-   **这是可见的设计改动，等甲方点头再做。**
-6. **属性字段里混进了 44 个整句话**（例如 material 填成
-   "steel material with spray painting, different finishes are available."），
-   每一条在筛选器里都是一个独立勾选框。归一脚本只报告不擅自改写：
+   **这是可见的设计改动，等甲方点头再做。**（分页本身已完成，不影响这一条。）
+6. **属性字段里混进了 44 个整句话**，每一条在筛选器里都是一个独立勾选框。
+
+   ⚠ 之前这份文档写「材质 71 → 41」是不准确的：41 是**值型条目**去重后的数量，
+   自由文本那些并没有被归一化，仍然在筛选器里。现状：
+
+   | 字段 | 筛选器选项总数 | 其中值型 | 其中自由文本（需人工改写） |
+   |---|---|---|---|
+   | material | 63 | 41 | **22** |
+   | finishes | 92 | 78 | **14** |
+   | doorTypes | 95 | 87 | **8** |
+
+   例如 material 填成 "steel material with spray painting, different finishes are
+   available."。归一脚本只报告不擅自改写——把句子改写成值是编辑判断：
    `node scripts/normalise-product-data.mjs`
 7. **门型有 11 组单复数重复**（Fire Door / Fire Doors 等），同上，需人工定夺。
 8. **12 行规格值填的是门的构造而不是用途**（"Single Door" 填在 Use 里），

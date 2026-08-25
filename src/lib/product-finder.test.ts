@@ -1,14 +1,21 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+import type { Product } from "@/data/types";
 import {
   buildFacets,
   countActive,
   filterProducts,
   matchesQuery,
+  paginate,
   selectionFromParams,
   selectionToParams,
+  sortForDisplay,
   toggleValue,
+  FACET_LABELS,
+  PRIMARY_FACETS,
+  SECONDARY_FACETS,
+  type FacetKey,
 } from "./product-finder.ts";
 
 /** Minimal fixtures — only the fields the finder reads. */
@@ -86,4 +93,71 @@ test("selection survives a round trip through URL params", () => {
   assert.deepEqual(parsed.selection, selection);
   assert.equal(parsed.query, "lever");
   assert.equal(countActive(selection), 3);
+});
+
+/* -------------------------------------------------------------------------
+ * Display order and pagination
+ * ---------------------------------------------------------------------- */
+
+const withPhoto = (slug: string, src?: string) =>
+  ({ slug, model: slug, name: slug, series: "", categoryPath: [], summary: "",
+     specs: [], material: "", finishes: [], doorTypes: [], certifications: [],
+     heroImage: src ? { src, ratio: "1 / 1", label: slug } : { ratio: "1 / 1", label: slug },
+     gallery: [], attachmentIds: [], relatedModels: [], seoTitle: "", seoDescription: "" }) as unknown as Product;
+
+test("sortForDisplay puts photographed products first and keeps incoming order", () => {
+  const list = [
+    withPhoto("a"),
+    withPhoto("b", "/images/b.webp"),
+    withPhoto("c"),
+    withPhoto("d", "/images/d.webp"),
+  ];
+  assert.deepEqual(
+    sortForDisplay(list).map((p) => p.slug),
+    ["b", "d", "a", "c"],
+  );
+});
+
+test("sortForDisplay does not drop the products without photography", () => {
+  const list = [withPhoto("a"), withPhoto("b", "/images/b.webp")];
+  assert.equal(sortForDisplay(list).length, 2);
+});
+
+test("paginate slices 50 per page and reports the range", () => {
+  const items = Array.from({ length: 120 }, (_, i) => i);
+  const first = paginate(items, 1);
+  assert.equal(first.items.length, 50);
+  assert.deepEqual([first.page, first.pageCount, first.from, first.to], [1, 3, 1, 50]);
+
+  const last = paginate(items, 3);
+  assert.equal(last.items.length, 20);
+  assert.deepEqual([last.from, last.to], [101, 120]);
+});
+
+test("paginate clamps an out-of-range page instead of showing nothing", () => {
+  const items = Array.from({ length: 10 }, (_, i) => i);
+  assert.equal(paginate(items, 99).page, 1 + 0); // only one page exists
+  assert.equal(paginate(items, 0).page, 1);
+  assert.equal(paginate(items, -5).page, 1);
+});
+
+test("paginate reports an empty result honestly", () => {
+  const empty = paginate([], 1);
+  assert.deepEqual([empty.total, empty.pageCount, empty.from, empty.to], [0, 1, 0, 0]);
+});
+
+test("page survives a round trip through the URL, and page 1 stays implicit", () => {
+  assert.equal(selectionToParams({}, "", 1).toString(), "");
+  assert.equal(selectionToParams({}, "", 4).get("page"), "4");
+  assert.equal(selectionFromParams(new URLSearchParams("page=4")).page, 4);
+  assert.equal(selectionFromParams(new URLSearchParams("")).page, 1);
+  assert.equal(selectionFromParams(new URLSearchParams("page=abc")).page, 1);
+});
+
+test("the rail carries only category and type; the rest sit behind the panel", () => {
+  assert.deepEqual(PRIMARY_FACETS, ["category", "subCategory"]);
+  assert.equal(PRIMARY_FACETS.includes("material" as FacetKey), false);
+  assert.equal(SECONDARY_FACETS.includes("series" as FacetKey), true);
+  const all = [...PRIMARY_FACETS, ...SECONDARY_FACETS].sort();
+  assert.deepEqual(all, (Object.keys(FACET_LABELS) as FacetKey[]).sort());
 });

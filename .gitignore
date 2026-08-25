@@ -61,3 +61,7 @@ temp/
 
 # Local feature worktrees
 .worktrees/
+
+# Working-tree lock shared by the two agents. Local by design — see scripts/agent-lock.mjs.
+.agent-lock.json
+.agent-lock.note
