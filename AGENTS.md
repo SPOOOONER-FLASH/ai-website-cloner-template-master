@@ -61,36 +61,40 @@ docs/
 scripts/            # Asset download scripts
 ```
 
-## TWO AGENTS SHARE THIS WORKING TREE — READ BEFORE EDITING ANYTHING
+## CLAUDE AND CODEX SHARE THIS WORKING TREE — LIGHTWEIGHT HANDOFF
 
-Claude and Codex both work on this repository, on the **same checkout**, taking turns.
-They are not on separate branches, so git never reports a conflict. The failure mode is
-a **silent overwrite**: one agent sets a value because the client asked for it, the other
-changes it while working on something adjacent, and nothing anywhere says so. This has
-already happened twice to `content/promo.json` (`delaySeconds` 10 → 20 → 10).
+Claude and Codex work on the same checkout. The client prioritizes short feedback loops:
+there is **no global agent lock** and either agent may work on non-overlapping files. Speed
+must not become silent overwrite, accidental bulk staging, or a rebuild that drops the
+other agent's committed source.
 
-### Before you start working
-
-```bash
-node scripts/agent-lock.mjs status                        # is anyone mid-task?
-node scripts/agent-lock.mjs claim <claude|codex> --task "what you are doing"
-```
-
-If it refuses, **the other agent is mid-task**. Do not force it because you are impatient
-— pick up something in your own area, or stop and ask the human. Only `--force` when you
-know for certain the other side has stopped.
-
-### When you finish
+### Before editing
 
 ```bash
-node scripts/agent-lock.mjs release
+git status --short
+git log --oneline -5
+git diff --name-only
+git log -5 -- docs/collaboration/agent-updates/
 ```
 
-That prints a hand-off line telling the other agent the tree is free. **Release as soon as
-you stop working**, not at the end of the session — a held lock blocks the other side.
+- Treat every unfamiliar uncommitted path as the other agent's work. Do not restore,
+  format, move, stage, or commit it.
+- Before touching an already modified file, inspect `git diff -- <file>`. If the work
+  overlaps, wait for its focused commit or review it read-only; do not overwrite it.
+- Ownership below is the default routing rule, not a reason to ignore an explicit client
+  request or a review finding.
 
-A `pre-commit` hook refuses commits while the other agent holds the lock. Enable it once
-per clone: `git config core.hooksPath .githooks`
+### Finish and communicate quickly
+
+- Commit each finished, tested objective promptly; do not accumulate unrelated work.
+- Stage only explicit paths with `git add -- <paths>`. Never use unreviewed bulk staging in
+  a dirty shared tree.
+- Include one short update under `docs/collaboration/agent-updates/` in the same commit.
+  Record agent, scope, tests, untouched work, risks, and the next useful assist/review.
+- A local commit is not a push, deployment, or production verification. State each one
+  separately.
+- Review the other agent's finished commit read-only when useful. Put any fix in a new,
+  focused commit so authorship and rollback stay clear.
 
 ### Who owns what
 
@@ -100,10 +104,13 @@ per clone: `git config core.hooksPath .githooks`
 | `src/app/es/**` (Spanish copy) | Codex |
 | `content/**`, `scripts/**`, `src/data/**`, `src/lib/**` | Claude |
 | `content/promo.json` | Codex: card copy only. Claude: timing only. |
-| Building and committing `out/` | **One side per session — agree first** |
+| Building and committing `out/` | **The current release builder; use the rule below** |
 
-`out/` is committed and a rebuild touches ~2350 files. If both sides rebuild, whoever
-commits last decides what ships, and nobody can see whose source changes made it in.
+`out/` is committed and a rebuild touches ~2350 files. Normal work should commit source
+first. If `out/` is already dirty, that agent has the release-build baton; the other agent
+must not rebuild or touch `out/`. The release builder incorporates the latest committed
+source from both agents, runs `npm run deploy:prep`, commits the complete generated diff,
+and records production verification separately. This is a soft handoff, not a lock.
 
 ### Decisions the client made are locked by tests, not by comments
 
@@ -112,7 +119,7 @@ believe a locked value should change, change the test in the same commit so the 
 is deliberate and reviewable. `npm test` runs in CI.
 
 ## MOST IMPORTANT NOTES
-- When launching Claude Code agent teams, ALWAYS have each teammate work in their own worktree branch and merge everyone's work at the end, resolving any merge conflicts smartly since you are basically serving the orchestrator role and have full context to our goals, work given, work achieved, and desired outcomes.
+- The primary Claude/Codex sessions use the lightweight shared-tree protocol above. When launching agent teams, give each spawned teammate its own worktree branch and merge at the end; do not let multiple teammates write the shared checkout.
 - After editing `AGENTS.md`, run `bash scripts/sync-agent-rules.sh` to regenerate platform-specific instruction files.
 - After editing `.claude/skills/clone-website/SKILL.md`, run `node scripts/sync-skills.mjs` to regenerate the skill for all platforms.
 

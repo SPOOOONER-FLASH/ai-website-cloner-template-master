@@ -12,6 +12,10 @@
 - **不卖给建筑商/建筑师。** 目标客户是海外经销商和项目采购。
 - **最终目的是引流到两个地方：邮箱询盘、阿里巴巴店铺。** 成交在那两个渠道发生，不在本站。
 - 所以本站的定位是**品牌展示 + 产品展示**，衡量标准是「产生多少封询盘 / 多少人点去阿里」。
+- 网站是公司的线上门面：用高格调视觉、可信而详尽的品牌叙事和丰富准确的产品矩阵建立采购信任；
+  同时持续增强 SEO 与 GEO/AEO，让传统搜索和 AI 答案引擎都更容易发现、理解并引用 HYDE。
+- 站内成交、购物车、订单和开放会员不是当前目标。若未来增加登录，首期唯一用户是甲方
+  HYDE / Cantonlock 内部员工；目前静态站足以完成业务目标，登录与数据库继续暂缓。
 
 **这条推翻了早期按 FSB 做对标时的一些判断。** FSB 是德国高端品牌，面向建筑师做规格制定，
 所以它有 BIM 库、招标文本、门专业规划服务。这些对我们**价值很低**，不要照抄。
@@ -111,8 +115,8 @@
 | SEO 字段按 Google/Bing 长度重写 | 构建产物有问题的页面 **427 → 1**（剩下那个是 `/admin`，本就 Disallow） |
 | 筛选器属性归一 | 大小写合并；筛选器实际选项数见下方「属性字段现状」 |
 | 规格标签合并同义词 | 38 → 32 个标签，`Application` 覆盖 80 → 130 个产品 |
-| Product Finder 改造 | 分页 50/页；左栏只留 Category + Type；无图产品排到最后 |
-| 双 agent 协作锁 | `scripts/agent-lock.mjs` + pre-commit hook，见 AGENTS.md |
+| Product Finder 改造 | 分页 20/页；分类页与 Finder 共用分页；无图产品排到最后 |
+| 双 agent 轻量协作 | 无全局锁；完成即小提交；每个提交附独立 update；`out/` 使用构建接力棒 |
 | 弹窗时序锁进测试 | `src/lib/promo-settings.test.ts`；`npm test` 已接入 CI |
 | 新增 `/llms.txt` | 从目录数据生成，`indexable=false` 时降级为暂存声明 |
 | 新增 `public/seo/og-default.png` | 132 个页面此前没有社交卡片图 |
@@ -310,7 +314,9 @@ Hyland 角标同样是独立图层（角落的小图层，含约 16% 红色像�
 
 ### 需要后端，暂缓
 
-询盘存储、客户 CRM、业务员分配、流量统计、转化率、SEO 检测评分、会员登录。
+当前不做全动态重写。询盘存储、客户 CRM、业务员分配、流量统计与转化率都等真实业务量证明需要
+后再立项。如果未来增加登录，首期只服务甲方 HYDE / Cantonlock 内部员工，不开放客户/经销商
+注册，不做站内订单、实时库存或私价。
 
 ---
 
@@ -335,12 +341,15 @@ npm run cms          # 本地开后台，localhost:3001/admin/index.html，不�
 ### 与 Codex 并行
 
 甲方同时让 Codex 在做**设计与图片替换**（editorial 图片、品牌资产）。
-两边都往 `main` 提交，已发生过 `.git/index.lock` 冲突。
+两边直接在同一 checkout 工作并往 `main` 做小提交；不再使用全局 agent lock。
 
-- 提交前先 `git log --oneline -5` 看有没有别人的新 commit。
+- 开工前读 `git status --short`、`git log --oneline -5`、现有 diff 与最新
+  `docs/collaboration/agent-updates/`；陌生未提交文件默认属于对方，不碰。
+- 做完立刻提交一个主题；只精确暂存自己的路径，并在同一提交附一份独立 update。
 - Codex 主要动 `public/images/editorial/`、`docs/superpowers/`、品牌资产。
 - 我方主要动 `src/`、`content/`、`scripts/`、`public/admin/`。
-- 目前无实质冲突，但**提交前重新构建**，确保 `out/` 包含对方的新资源。
+- 普通改动先提交源码；只有当前 release builder 生成并提交 `out/`。一旦看到 `out/` 已脏，另一方
+  不再 build，避免两次构建互相覆盖。
 
 ---
 
@@ -383,6 +392,7 @@ scripts/
 public/admin/                Decap CMS：config.yml / admin.css / preview.js
 docs/research/legacy/        旧站抓取产物 + 迁移报告 + drive-match.json
 docs/research/fsb/           FSB 拆解结论（teardown.json，89 条发现）
+docs/collaboration/agent-updates/  Claude/Codex 每个完成任务的短交接记录
 ```
 
 ---
@@ -410,9 +420,14 @@ docs/research/fsb/           FSB 拆解结论（teardown.json，89 条发现）
 ### 动手前
 
 ```bash
-git log --oneline -5     # 确认 Codex 没有未合并的改动
-npm run check            # lint + typecheck + build
+git status --short
+git log --oneline -5
+git diff --name-only
+git log -5 -- docs/collaboration/agent-updates/
 ```
+
+不要为了开始一个小任务先跑完整 build；先做与改动相称的定向验证。完整 build / `out/` 由当前
+release builder 在发布收口时统一完成。
 
 ### 收尾前
 
