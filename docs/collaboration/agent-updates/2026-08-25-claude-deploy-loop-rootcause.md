@@ -50,6 +50,17 @@ ETag 与 Last-Modified 全变 → `chown` 再执行，循环自持。
 - 仓库根目录有 20 项未跟踪的陈旧站点副本（早期部署残留）。未对外提供，但需单独确认后清理。
 - 若将来启用 Actions 的 SSH deploy step，会与秒级任务互相覆盖，两者不可并存。
 
+## 甲方决策（2026-08-25）
+
+- 采纳方案 A：为现有计划任务加护栏 + 短轮询（30 秒或 1 分钟）。**由甲方在宝塔面板执行，
+  Agent 不代改服务器。**
+- 方案 B（GitHub webhook）记入 runbook §2.3.1，标记为未实施的后续可选项。
+  两位 Agent 不要擅自实施：它需要把面板端口 8889 开放公网，且宝塔 WebHook 不校验 GitHub 签名。
+  相对方案 A 只多赚约 28 秒，建议与正式域名切换、面板 SSL 一并考虑。
+- 已确认与本次密钥事故无关的事实：CMS 走 GitHub OAuth（Cloudflare Worker 中转），
+  服务器 `git remote` 走 HTTPS，两者都不使用 SSH 密钥；被覆盖的是服务器出站身份，
+  `authorized_keys` 未受影响。
+
 ## 建议另一方下一步协助或复核
 
 1. 独立复核 §2.2 的循环机制推断（`chown` → git 索引 uid/gid → 全量 checkout），
