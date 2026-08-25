@@ -19,10 +19,15 @@ export function promoSurfaceFor(pathname: string): PromoSurface | null {
   const path = pathname.replace(/^\/es(?=\/|$)/, "") || "/";
 
   if (path === "/") return "home";
+  // Checked before the /products rules: /product-finder is its own section, and without
+  // this it matched nothing and the dialog silently never appeared there.
+  if (path === "/product-finder" || path.startsWith("/product-finder/")) return "product-finder";
   if (/^\/products\/[^/]+\/[^/]+\/?$/.test(path)) return "product-detail";
   if (path === "/products" || path.startsWith("/products/")) return "products";
   if (path === "/projects" || path.startsWith("/projects/")) return "projects";
   if (path === "/news" || path.startsWith("/news/")) return "news";
+  if (path === "/company" || path.startsWith("/company/")) return "company";
+  if (path === "/downloads" || path.startsWith("/downloads/")) return "downloads";
   return null;
 }
 

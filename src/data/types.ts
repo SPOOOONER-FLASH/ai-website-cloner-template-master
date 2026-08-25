@@ -227,7 +227,15 @@ export interface Project {
  * ---------------------------------------------------------------------- */
 
 /** Which routes the dialog is allowed to interrupt. */
-export type PromoSurface = "home" | "products" | "product-detail" | "projects" | "news";
+export type PromoSurface =
+  | "home"
+  | "products"
+  | "product-detail"
+  | "product-finder"
+  | "projects"
+  | "news"
+  | "company"
+  | "downloads";
 
 /**
  * The site-wide promotional dialog, modelled on FSB's newsletter popup.

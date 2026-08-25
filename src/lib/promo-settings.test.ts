@@ -18,8 +18,15 @@ import { readFileSync } from "node:fs";
 const AGREED = {
   /** Seconds on the page before the dialog appears. Client's instruction, 2026-08-24. */
   delaySeconds: 10,
-  /** Minutes before a dismissed dialog may return. Client's instruction, 2026-08-24. */
-  cooldownMinutes: 30,
+  /**
+   * Minutes before a dismissed dialog may return. Zero, by the client's instruction on
+   * 2026-08-25: they want it on every qualifying page load, with no cooldown at all.
+   *
+   * Zero is a real setting rather than a disabled feature — `now - lastSeen < 0` is
+   * never true, so nothing is ever suppressed. It does mean a visitor who dismisses the
+   * card meets it again on the next page. That is the client's call, not an oversight.
+   */
+  cooldownMinutes: 0,
 };
 
 const promo = JSON.parse(readFileSync("content/promo.json", "utf8"));
@@ -49,5 +56,16 @@ test("promo dialog has no stale hours-based cooldown field", () => {
 
 test("bumping the campaign is what re-shows it to people who dismissed it", () => {
   assert.equal(typeof promo.version, "number");
-  assert.ok(promo.version >= 7, "version should not go backwards; it defeats the cooldown on purpose.");
+  assert.ok(promo.version >= 8, "version should not go backwards; it defeats the cooldown on purpose.");
+});
+
+test("the promo shows on the Product Finder", () => {
+  // The finder is where a buyer is deliberately narrowing the catalogue, so the client
+  // asked for the card there too. This needs BOTH the surface listed here and a matching
+  // branch in promoSurfaceFor — the route used to fall through and match nothing, so the
+  // dialog was silently absent no matter what this file said.
+  assert.ok(
+    promo.surfaces.includes("product-finder"),
+    "product-finder must be listed in content/promo.json surfaces",
+  );
 });
