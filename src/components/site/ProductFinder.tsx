@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ProductCard } from "@/components/site/ProductCard";
+import { Pagination } from "@/components/site/Pagination";
 import {
   buildFacets,
   countActive,
@@ -19,26 +20,6 @@ import {
   type Selection,
 } from "@/lib/product-finder";
 import type { Product } from "@/data/types";
-
-/**
- * Page numbers to render, with gaps.
- *
- * 431 products at 50 a page is nine buttons, which fits — but the catalogue grows and a
- * filtered view can produce any count, so this collapses the middle rather than letting
- * the control wrap into three lines. Always shows the first and last page so the ends of
- * the result set stay one click away.
- */
-function pageNumbers(page: number, count: number): (number | null)[] {
-  if (count <= 7) return Array.from({ length: count }, (_, i) => i + 1);
-  const out: (number | null)[] = [1];
-  const from = Math.max(2, page - 1);
-  const to = Math.min(count - 1, page + 1);
-  if (from > 2) out.push(null);
-  for (let n = from; n <= to; n++) out.push(n);
-  if (to < count - 1) out.push(null);
-  out.push(count);
-  return out;
-}
 
 /**
  * Product Finder.
@@ -282,56 +263,12 @@ export function ProductFinder({
               ))}
             </div>
 
-            {current.pageCount > 1 && (
-              <nav
-                aria-label="Product pages"
-                className="mt-64 flex flex-wrap items-center justify-between gap-16 border-t border-line pt-24"
-              >
-                <button
-                  type="button"
-                  onClick={() => goToPage(current.page - 1)}
-                  disabled={current.page === 1}
-                  className="text-c1 text-brand underline-offset-4 hover:underline disabled:cursor-default disabled:text-ink-tertiary disabled:no-underline"
-                >
-                  ← Previous
-                </button>
-
-                <ol className="flex flex-wrap items-center gap-8">
-                  {pageNumbers(current.page, current.pageCount).map((n, i) =>
-                    n === null ? (
-                      <li key={`gap-${i}`} aria-hidden="true" className="px-4 text-ink-tertiary">
-                        …
-                      </li>
-                    ) : (
-                      <li key={n}>
-                        <button
-                          type="button"
-                          onClick={() => goToPage(n)}
-                          aria-current={n === current.page ? "page" : undefined}
-                          className={cn(
-                            "min-w-32 px-8 py-4 text-c1",
-                            n === current.page
-                              ? "bg-ink text-surface"
-                              : "text-ink hover:text-brand",
-                          )}
-                        >
-                          {n}
-                        </button>
-                      </li>
-                    ),
-                  )}
-                </ol>
-
-                <button
-                  type="button"
-                  onClick={() => goToPage(current.page + 1)}
-                  disabled={current.page === current.pageCount}
-                  className="text-c1 text-brand underline-offset-4 hover:underline disabled:cursor-default disabled:text-ink-tertiary disabled:no-underline"
-                >
-                  Next →
-                </button>
-              </nav>
-            )}
+            <Pagination
+              page={current.page}
+              pageCount={current.pageCount}
+              onChange={goToPage}
+              label="Product pages"
+            />
           </>
         )}
       </section>

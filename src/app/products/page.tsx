@@ -9,6 +9,7 @@ import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 import { ProductCategoryRail } from "@/components/site/ProductCategoryRail";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, products } from "@/data/products";
+import { sortForDisplay } from "@/lib/product-finder";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
@@ -17,6 +18,16 @@ export const metadata: Metadata = pageMetadata({
   description:
     "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalogue.",
 });
+
+/**
+ * How many cards each category shows on this overview.
+ *
+ * This page is an index of 16 categories, not a listing — the listings (the category
+ * pages and the Product Finder) are the ones capped at 20 a page. Repeating 20 here
+ * would put 245 cards on one screen and miss the point of capping them at all, so each
+ * category previews a tidy two rows of four and links through for the rest.
+ */
+const PREVIEW_PER_CATEGORY = 8;
 
 export default function ProductsPage() {
   const categories = getTopLevelCategories();
@@ -117,8 +128,11 @@ export default function ProductsPage() {
           </div>
 
           {categories.map((category) => {
-            const items = getProductsByCategory(category.slug);
+            const items = sortForDisplay(getProductsByCategory(category.slug));
             if (!items.length) return null;
+
+            const shown = items.slice(0, PREVIEW_PER_CATEGORY);
+            const remaining = items.length - shown.length;
 
             return (
               <div key={category.slug} className="col-span-full">
@@ -137,12 +151,23 @@ export default function ProductsPage() {
                 </div>
 
                 <ul className="mt-24 grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-4">
-                  {items.map((product) => (
+                  {shown.map((product) => (
                     <li key={product.slug}>
                       <ProductCard product={product} />
                     </li>
                   ))}
                 </ul>
+
+                {remaining > 0 && (
+                  <p className="mt-24">
+                    <Link
+                      href={`/products/${category.slug}/`}
+                      className="text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                    >
+                      See all {items.length} {category.name.toLowerCase()} →
+                    </Link>
+                  </p>
+                )}
               </div>
             );
           })}

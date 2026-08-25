@@ -63,8 +63,14 @@ export const SECONDARY_FACETS: FacetKey[] = [
   "certification",
 ];
 
-/** Results per page. */
-export const PAGE_SIZE = 50;
+/**
+ * Results per page.
+ *
+ * 20, set by the client. The number is a page-weight decision more than a browsing
+ * one: every card carries a photograph, so this is what bounds how many images a
+ * single view can ask for.
+ */
+export const PAGE_SIZE = 20;
 
 /** Every value a product contributes to a given facet. */
 function valuesFor(product: Product, key: FacetKey): string[] {

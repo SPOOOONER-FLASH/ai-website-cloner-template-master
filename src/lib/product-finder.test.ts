@@ -13,6 +13,7 @@ import {
   sortForDisplay,
   toggleValue,
   FACET_LABELS,
+  PAGE_SIZE,
   PRIMARY_FACETS,
   SECONDARY_FACETS,
   type FacetKey,
@@ -123,15 +124,19 @@ test("sortForDisplay does not drop the products without photography", () => {
   assert.equal(sortForDisplay(list).length, 2);
 });
 
-test("paginate slices 50 per page and reports the range", () => {
+test("paginate slices PAGE_SIZE per page and reports the range", () => {
   const items = Array.from({ length: 120 }, (_, i) => i);
   const first = paginate(items, 1);
-  assert.equal(first.items.length, 50);
-  assert.deepEqual([first.page, first.pageCount, first.from, first.to], [1, 3, 1, 50]);
+  assert.equal(first.items.length, PAGE_SIZE);
+  assert.deepEqual([first.page, first.pageCount, first.from, first.to], [1, 6, 1, 20]);
 
-  const last = paginate(items, 3);
+  const last = paginate(items, 6);
   assert.equal(last.items.length, 20);
   assert.deepEqual([last.from, last.to], [101, 120]);
+});
+
+test("the client asked for 20 a page; changing it is a decision, not a tweak", () => {
+  assert.equal(PAGE_SIZE, 20);
 });
 
 test("paginate clamps an out-of-range page instead of showing nothing", () => {

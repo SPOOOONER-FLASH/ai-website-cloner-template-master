@@ -71,7 +71,14 @@ export function SiteFooter() {
               </ul>
             </nav>
 
-            <div className="col-span-2 flex flex-col items-start gap-y-24 sm:col-span-4 md:col-span-7 md:row-start-2 lg:col-span-8 lg:grid lg:grid-cols-2 lg:gap-x xl:col-span-12">
+            {/*
+              The three blocks below share one grid row, so their column spans have to
+              add up to the column count at every breakpoint — 12 from md, 24 from xl.
+              They previously summed to 14 / 16 / 28, which left no room for Social Media
+              and auto-placement pushed it onto a row of its own, 411px below the other
+              two headings. Keep these three in sync when changing any one of them.
+            */}
+            <div className="col-span-2 flex flex-col items-start gap-y-24 sm:col-span-4 md:col-span-5 md:row-start-2 lg:grid lg:grid-cols-2 lg:gap-x xl:col-span-10">
               <h3 className="text-h3 text-ink md:hidden">
                 {isSpanish ? "Boletín" : "Newsletter"}
               </h3>
@@ -92,7 +99,7 @@ export function SiteFooter() {
               to produce; Alibaba is where anyone who already sources that way expects to
               find us, and until now the site did not link there at all.
             */}
-            <div className="col-span-2 space-y-24 sm:col-span-4 md:col-span-7 md:row-start-2 lg:col-span-8 xl:col-span-12">
+            <div className="col-span-2 space-y-24 sm:col-span-4 md:col-span-4 md:row-start-2 xl:col-span-7">
               <h3 className="text-h3 text-ink">
                 {isSpanish ? "Cómo comprar" : "How to buy"}
               </h3>
@@ -119,7 +126,7 @@ export function SiteFooter() {
               </ul>
             </div>
 
-            <div className="col-span-2 space-y-24 sm:col-span-4 md:row-span-2 md:[grid-column-end:-1] lg:[grid-column:span_3/-1] xl:[grid-column:span_4/-1]">
+            <div className="col-span-2 space-y-24 sm:col-span-4 md:row-start-2 md:[grid-column:span_3/-1] xl:[grid-column:span_7/-1]">
               <h3 className="text-h3 text-ink">
                 {isSpanish ? "Redes sociales" : "Social Media"}
               </h3>
