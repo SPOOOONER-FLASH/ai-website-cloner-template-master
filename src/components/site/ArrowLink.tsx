@@ -6,6 +6,8 @@ interface ArrowLinkProps {
   href?: string;
   children: React.ReactNode;
   className?: string;
+  /** Disable speculative route loading for low-intent or automatically changing links. */
+  prefetch?: boolean;
   /** Also react when an ancestor `.group` is hovered — used inside hero modules. */
   groupHover?: boolean;
 }
@@ -21,10 +23,17 @@ interface ArrowLinkProps {
  *
  * Geometry is unchanged: inline-block, height 24px, label 18px/24px w400 ls .36px.
  */
-export function ArrowLink({ href = "#", children, className, groupHover }: ArrowLinkProps) {
+export function ArrowLink({
+  href = "#",
+  children,
+  className,
+  prefetch,
+  groupHover,
+}: ArrowLinkProps) {
   return (
     <Link
       href={href}
+      prefetch={prefetch}
       className={cn(
         "relative inline-block pl-12 text-c1 text-brand underline-offset-4",
         "hover:text-brand-hover hover:underline active:text-brand-active",

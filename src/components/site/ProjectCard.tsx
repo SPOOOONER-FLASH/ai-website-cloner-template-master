@@ -29,6 +29,7 @@ export function ProjectCard({
         {...project.heroImage}
         label={imageLabel}
         className="aspect-[3/2]"
+        sizes="(min-width: 1440px) 453px, (min-width: 744px) 48vw, 96vw"
       />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">

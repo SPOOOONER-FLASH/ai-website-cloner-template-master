@@ -44,6 +44,9 @@ jobs:
           NEXT_PUBLIC_W3F_KEY: ${{ secrets.NEXT_PUBLIC_W3F_KEY }}
         run: npm run build
 
+      - name: Verify the fresh static export
+        run: npm run test:export
+
       - name: Sanity-check the export
         run: |
           test -f out/index.html

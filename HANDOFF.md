@@ -1,7 +1,7 @@
 # 交接说明 — Canton Hyland / HYDE 官网
 
 > 新会话请**先读这一份**，再按需读 PROGRESS.md 和 BUILD_PLAN.md。
-> 最后更新：2026-08-24
+> 最后更新：2026-08-25
 
 ---
 
@@ -27,7 +27,7 @@
 | | |
 |---|---|
 | 框架 | Next.js 16 App Router，**`output: "export"` 静态导出** |
-| 部署 | 服务器只 `git pull`，**不跑 Node、没有数据库** |
+| 部署 | 公共站仍是纯静态；`main` push 后 GitHub Actions 在 Ubuntu 构建，配置 SSH secrets 时才 rsync；服务器**不跑 Node、没有数据库** |
 | CMS | Decap CMS，编辑写 GitHub 上的 JSON，每次保存 = 一次提交 |
 | 域名 | 现为 `spoonercantonlock.stahlock.com`（临时），正式域名 `cantonlock.com` 未启用 |
 | 索引 | **`indexable = false`，全站 noindex** — 这是决定不是疏漏，等正式域名 |
@@ -36,9 +36,11 @@
 
 1. **每个动态路由必须有 `generateStaticParams()`**，且不能返回空数组（会构建失败）。
 2. **没有服务端**，所以询盘走 Web3Forms 直接 POST，搜索靠构建期索引 + 浏览器匹配。
-3. **`out/` 提交进仓库**。改完必须 `npm run deploy:prep` 再提交，否则线上是旧的。
-4. 「保存 ≠ 上线」：同事在 CMS 发布只是把内容写进仓库，**还需要有人构建并推送**。
-   自动化方案（GitHub Actions）尚未做，见待办。
+3. **`out/` 目前仍提交进仓库**。改完必须 `npm run deploy:prep`，并完整提交旧文件删除、
+   新 chunk、平铺 RSC 与响应式图片；不要只提交已跟踪文件。
+4. CMS 发布到 `main` 会触发 GitHub Actions 的 Linux 构建；SSH 发布步骤只有在四个部署 secrets
+   配齐时才执行。生产环境曾出现另一条静态同步链路，故每次发布后仍必须比对线上 HTML 指纹、
+   RSC 200 和资源 URL，不能只看 workflow 显示 Success。
 
 ---
 
@@ -97,6 +99,7 @@
 | 新增 `/llms.txt` | 从目录数据生成，`indexable=false` 时降级为暂存声明 |
 | 新增 `public/seo/og-default.png` | 132 个页面此前没有社交卡片图 |
 | sitemap 补齐 | 加入 `/product-finder`、`/faq`、`/request/price-list` |
+| 首屏与静态导出性能修复 | Hero 首次只挂 1 张；16 张 editorial 生成 48 个响应式候选；Windows RSC 平铺；build 后产物测试接入 CI/deploy |
 
 **新增脚本**（都是先报告、加 `--write` 才落盘）：
 
@@ -111,6 +114,14 @@ scripts/generate-product-seo.mjs     重写 431 个产品的 seoTitle / seoDescr
 scripts/normalise-product-data.mjs   材质/表面处理/门型大小写归一
 scripts/consolidate-spec-labels.mjs  规格表同义标签合并
 scripts/build-og-image.mjs           生成默认 OG 图
+```
+
+**性能与可移植静态产物脚本：**
+
+```text
+scripts/generate-editorial-srcsets.mjs       生成/校验 48 个白名单 editorial WebP 候选
+scripts/normalize-next-export-segments.mjs   平铺 Next 16.3 Windows 错误生成的 RSC segment
+npm run test:export                          build 后检查 Hero/srcset/产品图隔离/RSC 产物
 ```
 
 ### 未完成 / 已知问题
@@ -335,6 +346,8 @@ public/seo/og-default.png    社交卡片兜底图，由 build-og-image.mjs 生�
 scripts/
   build-content-index.mjs    生成产品 barrel（prebuild）
   build-search-index.mjs     生成搜索索引（prebuild）
+  generate-editorial-srcsets.mjs  生成/校验 responsive editorial 白名单
+  normalize-next-export-segments.mjs  规范化 Windows static-export RSC 路径
   import-drive-images.mjs    ★ 从硬盘 PSD 提取无水印图（第五节）
   lib/psd.mjs                PSD 图层读取，无第三方依赖
   lib/psdflatten.mjs         跳过水印层/角标层重新合成

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { getResponsiveEditorialImageProps } from "./editorial-images";
 
 interface MediaPlaceholderProps {
   /** Aspect ratio, CSS syntax — e.g. "2880 / 1391", "1 / 1". Reserves the space either way. */
@@ -7,6 +8,8 @@ interface MediaPlaceholderProps {
   label: string;
   /** Path under /public. When present the photo renders and the placeholder disappears. */
   src?: string;
+  /** Browser layout hint used with the curated editorial srcset. */
+  sizes?: string;
   className?: string;
 }
 
@@ -28,12 +31,19 @@ interface MediaPlaceholderProps {
  * anything. Files are sized and compressed at download time instead — see
  * scripts/download-homepage-images.mjs.
  */
-export function MediaPlaceholder({ ratio, label, src, className }: MediaPlaceholderProps) {
+export function MediaPlaceholder({
+  ratio,
+  label,
+  src,
+  sizes,
+  className,
+}: MediaPlaceholderProps) {
   if (src) {
+    const responsive = getResponsiveEditorialImageProps(src, sizes);
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={src}
+        {...responsive}
         alt={label}
         loading="lazy"
         decoding="async"

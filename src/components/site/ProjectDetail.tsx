@@ -91,6 +91,7 @@ export function ProjectDetail({
             {...project.heroImage}
             label={localiseImageLabel(project.heroImage.label, project.heroImage.labelEs)}
             className="max-h-[76rem]"
+            sizes="(min-width: 1600px) 1440px, 100vw"
           />
         </section>
 
@@ -119,6 +120,7 @@ export function ProjectDetail({
                 key={`${image.src}-${image.label}`}
                 {...image}
                 label={localiseImageLabel(image.label, image.labelEs)}
+                sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
               />
             ))}
           </div>

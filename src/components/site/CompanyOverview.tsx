@@ -80,6 +80,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
               )}
+              sizes="96vw"
             />
             <p className="mt-8 text-c2 text-ink-secondary">{text.contextImageNote}</p>
           </div>
@@ -116,6 +117,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
               )}
+              sizes="(min-width: 1440px) 860px, 62vw"
             />
           </div>
         </section>
@@ -128,6 +130,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
                 key={image.src}
                 {...image}
                 label={localiseImageLabel(image.label, image.labelEs)}
+                sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
               />
             ))}
           </div>

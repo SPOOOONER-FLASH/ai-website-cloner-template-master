@@ -57,3 +57,6 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Verify the fresh static export
+        run: npm run test:export
