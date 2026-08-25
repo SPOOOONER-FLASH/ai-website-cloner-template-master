@@ -17,6 +17,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      # GitHub does not permit the secrets context directly in an `if` condition.
+      # Promote only the host to the job environment so the deploy step can be
+      # skipped safely when production SSH secrets have not been configured.
+      DEPLOY_HOST: ${{ secrets.SSH_HOST }}
 
     steps:
       - uses: actions/checkout@v4
@@ -54,7 +59,7 @@ jobs:
       - name: Deploy to server over SSH
         # Skips cleanly on forks and before the secrets are configured, instead of
         # failing every run with an authentication error.
-        if: ${{ secrets.SSH_HOST != '' }}
+        if: ${{ env.DEPLOY_HOST != '' }}
         uses: burnett01/rsync-deployments@7.0.2
         with:
           # --delete removes files the build no longer produces. Safe here because the
@@ -62,6 +67,6 @@ jobs:
           switches: -avzr --delete
           path: out/
           remote_path: ${{ secrets.SSH_TARGET_DIR }}
-          remote_host: ${{ secrets.SSH_HOST }}
+          remote_host: ${{ env.DEPLOY_HOST }}
           remote_user: ${{ secrets.SSH_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
