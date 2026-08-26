@@ -5,20 +5,39 @@
 
 ## ⚠️ 回滚路径已于 2026-08-26 失效
 
-甲方已在时代虚拟主机上**移除了老站**。实测  现返回 404。
-**把 DNS 改回去已经没有意义**——那边没有站点在服务了。
+甲方已在时代虚拟主机上**移除了老站**。实测 `107.150.107.47` 现返回 404。
+**把 DNS 改回去已经没有意义** —— 那边没有站点在服务了。
 
 出问题只能往前修，不能退回。下面的原回滚方案仅作历史记录保留。
 
 ### 现在真正的止损手段
 
-1. **配置层面**：服务器上每次改动都留了 ，
-    等。
-    回去再  即可。
-2. **内容层面**： 后跑一次
-   。
-3. **整站层面**：预览站  仍在同机运行，
-   内容一致，可临时把 DNS 指过去应急。
+**1. 配置层面** — 服务器上每次改动都留了备份：
+
+```bash
+# nginx 站点配置（启用 SSL 之前的版本）
+cp /www/server/panel/vhost/nginx/cantonlock.com.conf.bak-before-ssl \
+   /www/server/panel/vhost/nginx/cantonlock.com.conf
+nginx -t && nginx -s reload
+```
+
+同目录下还有 `.bak` / `.bak2`，以及
+`extension/cantonlock.com/cache.conf.bak`（移除 HSTS 之前）
+与 `cache.conf.bak2`（加回 HSTS 之前）。
+
+**2. 内容层面** — 回到任意一个旧提交：
+
+```bash
+cd /www/wwwroot/cantonlock.com
+git reset --hard <旧提交>
+chown -R www:www .
+```
+
+注意：自动拉取脚本每 5 分钟会把 HEAD 拉回 `origin/main`。
+要长期停在旧版本，得先注释掉 crontab 里那条 `cantonlock-deploy.sh`。
+
+**3. 整站层面** — 预览站 `spoonercantonlock.stahlock.com` 仍在同机运行、
+内容一致，紧急时可把 DNS 临时指过去。
 
 ## ~~一键回滚（已失效，见上）~~
 
