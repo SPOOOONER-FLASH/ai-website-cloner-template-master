@@ -44,8 +44,8 @@ const introCopy = {
  * interactive affordance here at all.
  *
  * COLOUR: h1, copy and the accordion heading are --color-ink (rule 2). The chevron is a
- * decorative icon, so --color-ink-tertiary — never red. The three ArrowLinks in the panel
- * carry the only brand red here.
+ * decorative icon, so --color-ink-tertiary. The three ArrowLinks in the panel
+ * carry the only interactive accent here, now rendered in monochrome ink.
  */
 export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
   const [expanded, setExpanded] = useState(false);

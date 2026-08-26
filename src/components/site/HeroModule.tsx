@@ -15,11 +15,9 @@ import type { HeroModuleContent } from "@/types/fsb-modules";
  *                    the link pinned to the bottom via `mt-auto`.
  *
  * COLOUR:
- *   Title / body   --color-ink. Never red (rule 2), even though the whole module is a link —
- *                  turning a heading and a paragraph red would break the text ladder.
- *   Hover outline  --color-brand. This is a hover affordance on a clickable element
- *                  (rule 1, "link hover"), not a static divider, so red is correct here.
- *                  1px, no shadow, no radius (rules 3–4).
+ *   Title / body   --color-ink, preserving the editorial text ladder even when the whole
+ *                  module is a link.
+ *   Hover outline  resolves to the same architectural ink and stays 1px square.
  */
 export function HeroModule({ content }: { content: HeroModuleContent }) {
   return content.variant === "stacked" ? <HeroStacked {...content} /> : <HeroSide {...content} />;

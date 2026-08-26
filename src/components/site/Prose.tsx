@@ -32,7 +32,7 @@ export function Prose({ markdown, className }: { markdown: string; className?: s
         "[&_ul]:mb-16 [&_ul]:list-disc [&_ul]:pl-20",
         "[&_ol]:mb-16 [&_ol]:list-decimal [&_ol]:pl-20",
         "[&_li]:mb-4",
-        // Rule 1: brand red marks a clickable thing, and a link is the clickable thing.
+        // Links stay monochrome and use the underline as their interaction cue.
         "[&_a]:text-brand [&_a]:underline-offset-4 hover:[&_a]:underline",
         className,
       )}

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const TONE_STYLE = {
   good: { dot: "#07c160", chip: "#e8f9f0", text: "#0a7a3f" },
   warn: { dot: "#f0a020", chip: "#fff8e1", text: "#8a6100" },
-  bad: { dot: "#e32322", chip: "#fdeceb", text: "#a11716" },
+  bad: { dot: "#11110f", chip: "#efefeb", text: "#11110f" },
 } as const;
 
 function StatCard({
@@ -206,7 +206,7 @@ export default function StatusPage() {
               </span>
               <span
                 style={{
-                  color: row.count ? "#1f2329" : "#e32322",
+                  color: row.count ? "#1f2329" : "#11110f",
                   fontSize: 13,
                   fontWeight: 600,
                   textAlign: "right",

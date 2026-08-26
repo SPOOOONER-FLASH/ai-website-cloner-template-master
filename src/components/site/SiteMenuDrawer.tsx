@@ -35,7 +35,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
   return (
     <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label="Site menu">
       <button type="button" aria-label="Dismiss site menu" onClick={onClose} className="absolute inset-0 bg-ink/20" />
-      <div className="absolute inset-y-0 right-0 w-full overflow-y-auto border-l border-line bg-surface sm:w-[88vw] xl:w-[75vw]">
+      <div className="hard-shadow-drawer absolute inset-y-0 right-0 w-[calc(100%-1.2rem)] overflow-y-auto bg-surface sm:w-[88vw] xl:w-[75vw]">
         <div className="layout min-h-full py-32 sm:py-48">
           <div className="col-content flex min-h-full flex-col">
             <div className="flex items-center justify-between border-b border-line pb-24">
@@ -63,7 +63,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
                             href={link.href}
                             onClick={onClose}
                             aria-current={current ? "page" : undefined}
-                            className={`block py-18 text-h2 underline-offset-4 hover:text-brand-hover hover:underline ${current ? "text-brand" : "text-ink"}`}
+                            className={`nav-marker nav-marker-inset block py-18 text-h2 text-ink no-underline ${current ? "current-underline" : ""}`}
                           >
                             {link.label}
                           </Link>

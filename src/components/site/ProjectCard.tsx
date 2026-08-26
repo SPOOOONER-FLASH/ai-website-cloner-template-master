@@ -23,7 +23,7 @@ export function ProjectCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col border border-line bg-surface hover:border-brand"
+      className="hard-shadow-card group flex flex-col bg-surface"
     >
       <MediaPlaceholder
         {...project.heroImage}
@@ -35,7 +35,7 @@ export function ProjectCard({
         <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
           {spanish ? "Aplicación representativa" : "Representative application"}
         </p>
-        <h2 className="mt-16 text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
+        <h2 className="title-marker mt-16 text-h3 text-ink">
           {name}
         </h2>
         <p className="mt-8 text-c2 text-ink-secondary">{buildingType}</p>

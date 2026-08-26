@@ -19,13 +19,13 @@ export function ProductCard({ product, className, priority }: ProductCardProps) 
     <Link
       href={`/products/${product.categoryPath[0]}/${product.slug}/`}
       className={cn(
-        "group flex flex-col border border-line bg-surface transition-colors hover:border-brand",
+        "hard-shadow-card group flex flex-col bg-surface",
         className,
       )}
     >
       <MediaPlaceholder {...product.heroImage} priority={priority} />
       <div className="flex flex-1 flex-col border-t border-line p-24">
-        <p className="text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
+        <p className="title-marker text-h3 text-ink">
           {product.name}
         </p>
         <p className="mt-8 text-c1 text-ink-secondary">

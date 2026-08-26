@@ -27,7 +27,7 @@ type AnchorProps = BaseProps & {
  *   secondary  transparent, 1px --color-ink border, --color-ink text
  *              hover fills --color-ink with --color-surface text
  *
- * The primary-button fill is one of the five permitted uses of brand red.
+ * The primary-button fill is solid ink in the monochrome A + D direction.
  * Radius is --radius-card (2px, rule 4). No shadow, no gradient (rule 3).
  *
  * NOTE: the cloned reference page contains no primary/secondary button instances —

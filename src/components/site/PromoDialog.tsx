@@ -207,12 +207,7 @@ function PromoCardBlock({
     "text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80";
 
   return (
-    /*
-      A hairline border instead of a drop shadow. The card floats over white page content
-      and needs an edge, but the site's visual language has no shadows anywhere else and
-      adding one here would make this the only soft object on the page.
-    */
-    <div className="relative border border-line bg-surface">
+    <div className="hard-shadow-panel relative bg-surface">
       <button
         type="button"
         onClick={() => onDismiss(dismissalKey)}

@@ -27,9 +27,9 @@ const LEGAL_LINKS = {
  * Footer — 313px, `py-48`, full-bleed top rule.
  *
  * COLOUR:
- *   Top rule    --color-line (rule 2: dividers are never red; was a 1px black rule).
- *   Links       --color-brand (rule 1). The `.underscore` bar uses currentColor, so it
- *               tracks the link colour automatically.
+ *   Top rule    --color-line.
+ *   Links       resolve to ink. The `.underscore` bar uses currentColor, so it tracks
+ *               the label automatically without introducing another accent colour.
  *   Headings    --color-ink.
  *   "Data preferences" stays a text button styled as a link, matching the reference —
  *   it is not a .btn. See Button.tsx for the button system.

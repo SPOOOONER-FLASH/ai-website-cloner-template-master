@@ -15,7 +15,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
   return (
     <Link
       href={`/news/${article.slug}/`}
-      className="group flex flex-col border border-line bg-surface hover:border-brand"
+      className="hard-shadow-card group flex flex-col bg-surface"
     >
       <MediaPlaceholder {...article.heroImage} className="aspect-[16/9]" />
       <div className="flex flex-1 flex-col border-t border-line p-24">
@@ -27,7 +27,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
             {formatNewsDate(article.publishedAt)}
           </time>
         </div>
-        <h2 className="mt-16 text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
+        <h2 className="title-marker mt-16 text-h3 text-ink">
           {article.title}
         </h2>
         <p className="mt-24 border-t border-line pt-16 text-c1 text-ink-secondary">

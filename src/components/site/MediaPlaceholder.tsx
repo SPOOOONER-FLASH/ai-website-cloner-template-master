@@ -34,7 +34,8 @@ interface MediaPlaceholderProps {
  * point of `ImageRef.src` being optional.
  *
  * COLOUR (rules 2–4): the placeholder is decorative scaffolding — fill --color-line,
- * label --color-ink-secondary, never brand red. Flat: no border, no shadow, no radius.
+ * label --color-ink-secondary. The media itself stays flat so the surrounding framed
+ * card, rather than the photograph, owns the offset-plane depth.
  *
  * A plain <img> rather than next/image: the build is a static export with
  * `images.unoptimized: true`, so next/image would add markup without optimising

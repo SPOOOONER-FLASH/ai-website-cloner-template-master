@@ -11,28 +11,21 @@
  * ------------------------------------------------------------------------- */
 
 /* ===========================================================================
- * COLOUR RULES — these are binding. Read before changing any colour.
+ * MONOCHROME BRAND RULES — A + D preview direction.
  * ===========================================================================
  *
- * 1. BRAND RED IS FOR CLICKABLE THINGS ONLY.
- *    Permitted: primary button fill, links, link hover, the CURRENTLY SELECTED
- *    nav item, form focus borders.
- *    A nav item that is not the current one is --color-ink, not brand.
+ * 1. UI accents are black, warm white and mineral grey. Product photography may
+ *    retain its real material colour; interface red is intentionally removed.
  *
- * 2. NEVER RED: headings, body copy, icons, rules/dividers, decorative elements.
- *    If it cannot be clicked, it does not get brand red.
+ * 2. Navigation and editorial titles reveal a short, 2px black underline on
+ *    hover or keyboard focus. Current navigation remains identifiable by weight.
  *
- * 3. NO GRADIENTS, NO METALLIC EFFECTS, NO GLOWS, NO SHADOWS.
- *    The page is entirely flat. The only decorative artefact is the logo itself.
+ * 3. Cards and floating panels use a 1px black frame plus one hard, unblurred
+ *    offset plane. No gradients, glow, soft shadow or rounded SaaS-card styling.
  *
- * 4. CARD RADIUS 0–2px, NO SHADOW. Hierarchy comes from whitespace and
- *    --color-line rules — never from elevation.
- *
- * Text-colour ladder:
- *    --color-ink            headings, body copy
- *    --color-ink-secondary  captions, descriptions, secondary text
- *    --color-ink-tertiary   decorative grey — icons, oversized display glyphs.
- *                           NOT for body copy.
+ * 4. Motion is restrained: on hover-capable devices a card reveals its frame,
+ *    moves 2px up-left and gains an offset plane. Reduced-motion visitors get
+ *    the same interaction state without the animated translation.
  * ======================================================================== */
 
 @custom-variant hover-hover (@media (hover: hover));
@@ -55,20 +48,22 @@
   /* reproducing the target's --space-N scale utility-for-utility.           */
   --spacing: 0.1rem;
 
-  /* -- Colours — Canton Hyland brand system ------------------------------ */
-  /* Interactive. Brand red is reserved for these; see COLOUR RULES above.  */
-  --color-brand: #e32322; /* links, primary button fill, current nav item */
-  --color-brand-hover: #c41c1b; /* hover */
-  --color-brand-active: #a11716; /* pressed */
-  --color-brand-tint: #fdeceb; /* light fill: tags, badges */
+  /* -- Colours — Canton Hyland monochrome system ------------------------- */
+  /* Existing semantic `brand` utilities stay usable, but now resolve to ink. */
+  --color-brand: #11110f;
+  --color-brand-hover: #000000;
+  --color-brand-active: #343430;
+  --color-brand-tint: #efefeb;
 
   /* Text ladder. None of these is ever red. */
-  --color-ink: #121212; /* headings, body copy */
+  --color-ink: #11110f; /* headings, body copy */
   --color-ink-secondary: #6e6e73; /* captions, descriptions */
   --color-ink-tertiary: #8e8e93; /* decorative grey: icons, display glyphs */
 
   /* Structure */
-  --color-line: #e5e5e7; /* rules, borders, dividers */
+  --color-line: #deddd8; /* rules, borders, dividers */
+  --color-frame: #11110f; /* 1px architectural frames */
+  --color-shadow-hard: #d4d4ce; /* unblurred offset plane */
   --color-surface: #ffffff; /* primary background */
   --color-surface-alt: #f5f5f7; /* alternating block background */
   --color-surface-dark: #2c2c2e; /* footer, dark cards */
@@ -183,8 +178,7 @@
     font-weight: var(--font-weight-regular);
   }
 
-  /* Rule 3: flat only. Nothing in this project sets box-shadow, text-shadow,
-     filter: drop-shadow, or any gradient background. Rule 4 caps radius at 2px. */
+  /* Depth is reserved for the hard offset-plane utilities below. Text remains flat. */
 
   /* Site-wide reduced-motion honour. The carousel also checks this in JS to stop
      its autoplay timer; this rule covers every CSS transition and animation. */
@@ -340,8 +334,7 @@
   }
 
   /* -- Buttons ----------------------------------------------------------- */
-  /* Rule 1: brand red fills the primary button. Rule 3: no shadow, no gradient.
-     Rule 4: radius capped at --radius-card (2px). */
+  /* Primary actions are black; controls stay square and free of soft effects. */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -387,7 +380,7 @@
   }
 
   /* -- Form focus -------------------------------------------------------- */
-  /* Rule 1: the focus border is one of the five permitted brand-red uses. */
+  /* Focus remains high-contrast in the monochrome system. */
   .field:focus-visible,
   .field:focus {
     outline: none;
@@ -421,10 +414,123 @@
     opacity: 1;
   }
 
+  /* -- A: short underline / thin frame ----------------------------------- */
+  .nav-marker,
+  .title-marker {
+    position: relative;
+  }
+
+  .current-underline {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .nav-marker {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .title-marker {
+    display: block;
+    padding-bottom: 1.4rem;
+  }
+
+  .nav-marker::after,
+  .title-marker::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: min(6.4rem, 100%);
+    height: 0.2rem;
+    background-color: var(--color-frame);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition:
+      opacity var(--motion-fast) var(--motion-ease-crisp),
+      transform var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .nav-marker::after {
+    bottom: -0.8rem;
+  }
+
+  .nav-marker-inset::after {
+    bottom: 0.8rem;
+  }
+
+  /* -- D: hard offset plane ---------------------------------------------- */
+  .hard-shadow-panel,
+  .hard-shadow-drawer {
+    border-color: var(--color-frame);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .hard-shadow-card {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    transition:
+      transform var(--motion-fast) var(--motion-ease-crisp),
+      box-shadow var(--motion-fast) var(--motion-ease-crisp),
+      border-color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .hard-shadow-panel {
+    box-shadow: 1rem 1rem 0 var(--color-shadow-hard);
+  }
+
+  .hard-shadow-drawer {
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+    box-shadow: -1rem 1rem 0 var(--color-shadow-hard);
+  }
+
+  .hard-shadow-card:focus-visible {
+    border-color: var(--color-frame);
+    box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
+    transform: translate(-0.2rem, -0.2rem);
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.5rem;
+  }
+
+  .hard-shadow-card:focus-visible .title-marker::after,
+  .nav-marker:focus-visible::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .hard-shadow-card:hover {
+      border-color: var(--color-frame);
+      transform: translate(-0.2rem, -0.2rem);
+      box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
+    }
+
+    .hard-shadow-card:hover .title-marker::after,
+    .nav-marker:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  @media (max-width: 39.999rem) {
+    .hard-shadow-card:focus-visible {
+      box-shadow: 0.4rem 0.4rem 0 var(--color-shadow-hard);
+      transform: none;
+    }
+
+    .hard-shadow-panel {
+      box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
+    }
+  }
+
   /* -- Motion ------------------------------------------------------------ */
-  /* One restrained system, 180–240ms. Colour, opacity, outline and transform
-     only — rule 3 still forbids shadows and gradients, so nothing here fades a
-     shadow in. Links, cards, menus and slide changes all share these tokens. */
+  /* One restrained system, 180–260ms. Links, framed cards, menus and slide
+     changes share the same crisp motion language. */
   .motion-hover {
     transition-property: color, background-color, border-color, outline-color, opacity, transform;
     transition-duration: var(--motion-fast);
@@ -439,7 +545,7 @@
     transition-timing-function: var(--motion-ease-crisp);
   }
 
-  /* Cards lift nothing — they only change their hairline. Keep it quick. */
+  /* Non-framed legacy cards still use a quick outline-only transition. */
   [data-card] {
     transition: outline-color var(--motion-fast) var(--motion-ease-crisp);
   }
@@ -478,6 +584,19 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .hard-shadow-card,
+    .hard-shadow-card:hover,
+    .hard-shadow-card:focus-visible,
+    .nav-marker::after,
+    .title-marker::after {
+      transition: none;
+    }
+
+    .hard-shadow-card:hover,
+    .hard-shadow-card:focus-visible {
+      transform: none;
+    }
+
     .hero-slide,
     .hero-dot {
       transition: none;

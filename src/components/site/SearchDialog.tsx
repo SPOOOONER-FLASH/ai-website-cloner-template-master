@@ -208,7 +208,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
           role="dialog"
           aria-modal="true"
           aria-labelledby="search-heading"
-          className="bg-surface p-32 shadow-[0_1px_24px_rgba(0,0,0,0.08)]"
+          className="hard-shadow-panel bg-surface p-32"
         >
           <div className="flex items-start justify-between gap-24">
             <h2 id="search-heading" className="text-h3 text-ink">

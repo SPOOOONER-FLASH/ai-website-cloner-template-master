@@ -41,12 +41,9 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
  * NO shadow / background / height change between states (rule 3).
  *
  * COLOUR:
- *   Promo bar   background --color-ink (#121212), text --color-surface (#FFFFFF),
- *               the link label --color-brand. A red fill here would out-shout the
- *               main visual, so the bar stays near-black and only the link is red.
- *   Nav items   --color-ink. Only the CURRENT item goes --color-brand (rule 1) —
- *               on `/` nothing is current, so they all render ink.
- *   Icons       --color-ink-tertiary. Icons are never red (rule 2).
+ *   Nav items use architectural ink. The CURRENT item is semibold; the short
+ *   A-style black underline is revealed only on hover or keyboard focus.
+ *   Utility icons remain tertiary grey and darken to ink on interaction.
  */
 export function SiteHeader() {
   const pathname = usePathname();
@@ -104,9 +101,8 @@ export function SiteHeader() {
                       href={href}
                       aria-current={current ? "page" : undefined}
                       className={cn(
-                        "text-c1 underline-offset-4 hover:underline",
-                        // Rule 1: brand red marks the current section only.
-                        current ? "text-brand" : "text-ink hover:text-brand-hover",
+                        "nav-marker text-c1 text-ink no-underline",
+                        current && "current-underline",
                       )}
                     >
                       {navLabel(link, locale)}
@@ -136,7 +132,7 @@ export function SiteHeader() {
                 <Link
                   href={languageTarget(pathname, isSpanish)}
                   hrefLang={isSpanish ? "en" : "es"}
-                  className="flex h-24 items-center gap-8 text-ink underline-offset-4 transition-colors duration-200 hover:text-brand-hover hover:underline"
+                  className="nav-marker flex h-24 items-center gap-8 text-ink no-underline transition-colors duration-200 hover:text-brand-hover"
                 >
                   <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
                   <span className="text-c2 leading-none">EN | ES</span>

@@ -16,10 +16,8 @@ interface ArrowLinkProps {
  * The site's single link affordance: an 8px chevron pinned at `left: 0 / top: .3rem`
  * with the label offset by `padding-left: 12px`.
  *
- * COLOUR (rule 1): this is a link, so it carries brand red — `--color-brand`, going to
- * `--color-brand-hover` on hover. The chevron is `currentColor` and therefore tracks the
- * label; that is intentional. It reads as part of the link, not as a decorative icon,
- * so rule 2's "icons are never red" does not apply to it.
+ * COLOUR: the link and its currentColor chevron both resolve to architectural ink.
+ * Hover uses an underline instead of a colour flash, keeping the interface monochrome.
  *
  * Geometry is unchanged: inline-block, height 24px, label 18px/24px w400 ls .36px.
  */

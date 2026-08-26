@@ -8,7 +8,7 @@ import type { TextModuleContent } from "@/types/fsb-modules";
  * subgrid), prose + arrow link right.
  *
  * COLOUR: heading and body are --color-ink (rule 2). The ArrowLink carries the only
- * brand red in this module.
+ * monochrome action colour in this module.
  */
 export function TextModule({ content }: { content: TextModuleContent }) {
   return (
