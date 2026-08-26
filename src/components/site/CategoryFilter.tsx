@@ -54,7 +54,11 @@ export function CategoryFilter({ products, options }: CategoryFilterProps) {
 
   return (
     <div className="col-span-full grid grid-cols gap-x gap-y-64">
-      <aside className="col-span-full xl:col-span-6" aria-label="Product filters">
+      {/* Same independent scroll as the Product Finder rail — see the note there. */}
+      <aside
+        className="col-span-full xl:sticky xl:top-96 xl:col-span-6 xl:max-h-[calc(100vh-12rem)] xl:self-start xl:overflow-y-auto xl:overscroll-contain xl:pr-16 xl:[scrollbar-width:thin]"
+        aria-label="Product filters"
+      >
         <p className="border-b border-line pb-16 text-c2 text-ink-secondary">Filter by type</p>
         <div className="flex flex-wrap gap-x-24 gap-y-12 pt-16 xl:flex-col xl:items-start">
           {[{ slug: "all", name: "All products" }, ...options].map((option) => {

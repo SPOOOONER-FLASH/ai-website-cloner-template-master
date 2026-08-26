@@ -150,7 +150,20 @@ export function ProductFinder({
   return (
     <div className="col-content grid w-full grid-cols gap-x gap-y-48">
       {/* Filter rail */}
-      <aside className="col-span-full xl:col-span-6">
+      {/*
+        The rail scrolls inside itself on desktop.
+
+        With "More filters" open the rail runs to several hundred rows, and because it
+        shared the page's scroll the only way to reach the bottom of it was to scroll the
+        results grid past twenty cards — you lost sight of what you were filtering while
+        choosing the filter. Sticky + its own overflow keeps the two independent: the rail
+        holds its position and scrolls on its own, the grid scrolls normally.
+
+        Only from `xl`, where the two sit side by side. Below that they are stacked, a
+        fixed-height scrolling box would trap the page scroll on touch, and the rail is
+        short anyway because it collapses.
+      */}
+      <aside className="col-span-full xl:sticky xl:col-span-6 xl:self-start xl:top-96 xl:max-h-[calc(100vh-12rem)] xl:overflow-y-auto xl:overscroll-contain xl:pr-16 xl:[scrollbar-width:thin]">
         <div className="flex items-baseline justify-between gap-16 border-b border-line pb-16">
           <h2 className="text-h3 text-ink">Filters</h2>
           {activeCount > 0 && (
