@@ -21,13 +21,20 @@ export type RobotsPolicyRule = {
   disallow: string | string[];
 };
 
-export function buildRobotsRules(indexable: boolean): RobotsPolicyRule[] {
+/**
+ * @param indexNowKey  Bing verifies domain ownership by fetching /<key>.txt, so that one
+ *   file must be exempt from the blanket *.txt disallow. Passed in rather than imported
+ *   to keep this module free of path aliases — it is unit-tested with plain node --test.
+ */
+export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPolicyRule[] {
   if (!indexable) return [{ userAgent: "*", disallow: "/" }];
 
   return [
     {
       userAgent: "*",
-      allow: ["/", "/llms.txt"],
+      // The IndexNow key file must stay fetchable — the blanket *.txt disallow below
+      // would otherwise hide the one file Bing uses to verify domain ownership.
+      allow: ["/", "/llms.txt", ...(indexNowKey ? [`/${indexNowKey}.txt`] : [])],
       // Keep the editor and generated RSC payloads out of search results without
       // blocking /_next/static CSS and JavaScript that crawlers need to render pages.
       disallow: ["/admin/", "/*.txt$"],

@@ -63,7 +63,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
                             href={link.href}
                             onClick={onClose}
                             aria-current={current ? "page" : undefined}
-                            className={`nav-marker nav-marker-inset block py-18 text-h2 text-ink no-underline ${current ? "current-underline" : ""}`}
+                            className={`nav-marker nav-marker-inset block py-18 text-h2 text-ink no-underline ${current ? "current-nav" : ""}`}
                           >
                             {link.label}
                           </Link>

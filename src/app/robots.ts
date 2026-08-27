@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, indexable } from "@/data/site";
+import { absoluteUrl, analytics, indexable } from "@/data/site";
 import { buildRobotsRules } from "@/lib/seo-policy";
 
 /**
@@ -12,7 +12,7 @@ import { buildRobotsRules } from "@/lib/seo-policy";
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  const rules = buildRobotsRules(indexable);
+  const rules = buildRobotsRules(indexable, analytics.indexNowKey);
 
   if (!indexable) return { rules };
 

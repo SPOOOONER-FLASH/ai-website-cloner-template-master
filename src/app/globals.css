@@ -418,7 +418,8 @@
   .short-marker,
   .short-marker-group,
   .nav-marker,
-  .title-marker {
+  .title-marker,
+  .home-accent-marker {
     --marker-bottom: -0.4rem;
     --marker-left: 0;
     --marker-width: min(6.4rem, 100%);
@@ -426,7 +427,7 @@
     text-decoration: none;
   }
 
-  .current-underline {
+  .current-nav {
     font-weight: var(--font-weight-semibold);
   }
 
@@ -445,6 +446,10 @@
     padding-bottom: 1.4rem;
   }
 
+  .home-accent-marker {
+    display: inline-block;
+  }
+
   .short-marker-arrow {
     --marker-left: 1.2rem;
     --marker-width: min(6.4rem, calc(100% - 1.2rem));
@@ -458,7 +463,8 @@
   .short-marker::after,
   .short-marker-group::after,
   .nav-marker::after,
-  .title-marker::after {
+  .title-marker::after,
+  .home-accent-marker::after {
     content: "";
     position: absolute;
     bottom: var(--marker-bottom);
@@ -497,6 +503,39 @@
       border-color var(--motion-fast) var(--motion-ease-crisp);
   }
 
+  /* Homepage modules follow the same A + D contract as catalogue cards. At
+     rest the border is transparent and there is no shadow. The module modifier
+     places that invisible frame 16px outside the editorial content, preserving
+     the original text and image alignment. */
+  .home-accent-surface {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    transition:
+      transform var(--motion-fast) var(--motion-ease-crisp),
+      box-shadow var(--motion-fast) var(--motion-ease-crisp),
+      border-color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .home-accent-module {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 46.5rem) {
+    .home-accent-module {
+      margin: -1.6rem;
+      padding: 1.6rem;
+    }
+  }
+
+  /* Each module owns one title marker. Its internal CTA delegates focus and
+     hover state to that title instead of drawing a confusing second line. */
+  .home-accent-surface .home-accent-action::after {
+    display: none;
+  }
+
   .hard-shadow-panel {
     box-shadow: 1rem 1rem 0 var(--color-shadow-hard);
   }
@@ -516,9 +555,27 @@
     outline-offset: 0.5rem;
   }
 
+  .home-accent-surface:focus-visible,
+  .home-accent-surface:has(:focus-visible) {
+    border-color: var(--color-frame);
+    box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
+    transform: translate(-0.2rem, -0.2rem);
+  }
+
+  .home-accent-surface:focus-visible {
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.5rem;
+  }
+
   .hard-shadow-card:focus-visible .title-marker::after,
   .short-marker:focus-visible::after,
   .nav-marker:focus-visible::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .home-accent-surface:focus-visible .home-accent-marker::after,
+  .home-accent-surface:has(:focus-visible) .home-accent-marker::after {
     opacity: 1;
     transform: scaleX(1);
   }
@@ -542,6 +599,17 @@
       box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
     }
 
+    .home-accent-surface:hover {
+      border-color: var(--color-frame);
+      transform: translate(-0.2rem, -0.2rem);
+      box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
+    }
+
+    .home-accent-surface:hover .home-accent-marker::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
     .hard-shadow-card:hover .title-marker::after,
     .short-marker:hover::after,
     .short-marker-surface:hover .short-marker-group::after,
@@ -550,9 +618,6 @@
       transform: scaleX(1);
     }
 
-    .short-marker-surface:hover .short-marker-group {
-      color: var(--color-brand-hover);
-    }
   }
 
   .short-marker:disabled::after,
@@ -563,6 +628,12 @@
 
   @media (max-width: 39.999rem) {
     .hard-shadow-card:focus-visible {
+      box-shadow: 0.4rem 0.4rem 0 var(--color-shadow-hard);
+      transform: none;
+    }
+
+    .home-accent-surface:focus-visible,
+    .home-accent-surface:has(:focus-visible) {
       box-shadow: 0.4rem 0.4rem 0 var(--color-shadow-hard);
       transform: none;
     }
@@ -630,10 +701,12 @@
     .hard-shadow-card,
     .hard-shadow-card:hover,
     .hard-shadow-card:focus-visible,
+    .home-accent-surface,
     .short-marker::after,
     .short-marker-group::after,
     .nav-marker::after,
     .title-marker::after,
+    .home-accent-marker::after,
     .copy p > a,
     .inline-marker,
     .inline-marker-scope a {
@@ -641,7 +714,10 @@
     }
 
     .hard-shadow-card:hover,
-    .hard-shadow-card:focus-visible {
+    .hard-shadow-card:focus-visible,
+    .home-accent-surface:hover,
+    .home-accent-surface:focus-visible,
+    .home-accent-surface:has(:focus-visible) {
       transform: none;
     }
 

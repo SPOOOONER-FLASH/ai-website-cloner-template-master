@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { cn } from "@/lib/utils";
 import type { PageTeaserContent, TeaserCardContent } from "@/types/fsb-modules";
 
 /**
@@ -12,10 +13,17 @@ import type { PageTeaserContent, TeaserCardContent } from "@/types/fsb-modules";
  * COLOUR:
  *   Heading        --color-ink.
  *   Card title     --color-ink; card subtitle --color-ink-secondary (the text ladder).
- *   Hover outline  --color-brand — a hover affordance on a link (rule 1).
- *   The card has no shadow and no radius; separation comes from whitespace (rules 3–4).
+ *   Homepage accent cards stay neutral at rest and reveal the shared 1px frame,
+ *   title marker and hard offset plane on hover or keyboard focus.
+ *   The first, carousel-adjacent teaser remains the quieter legacy treatment.
  */
-export function PageTeaserModule({ content }: { content: PageTeaserContent }) {
+export function PageTeaserModule({
+  content,
+  homeAccent = false,
+}: {
+  content: PageTeaserContent;
+  homeAccent?: boolean;
+}) {
   return (
     <div className="layout" data-content-module="page-teaser">
       {content.heading ? (
@@ -25,7 +33,7 @@ export function PageTeaserModule({ content }: { content: PageTeaserContent }) {
       <div className="col-outset">
         <div className="horizontal-snap flex snap-x snap-mandatory gap-16 overflow-auto overscroll-x-contain px-outset scroll-px-outset pointer-fine:flex-wrap">
           {content.cards.map((card) => (
-            <TeaserCard key={card.title} {...card} />
+            <TeaserCard key={card.title} {...card} homeAccent={homeAccent} />
           ))}
         </div>
       </div>
@@ -33,14 +41,25 @@ export function PageTeaserModule({ content }: { content: PageTeaserContent }) {
   );
 }
 
-function TeaserCard({ media, title, subtitle, href = "#" }: TeaserCardContent) {
+function TeaserCard({
+  media,
+  title,
+  subtitle,
+  href = "#",
+  homeAccent = false,
+}: TeaserCardContent & { homeAccent?: boolean }) {
   return (
     // Fractional track widths use arbitrary values rather than hand-written classes:
     // a variant like `pointer-fine:` only applies to a Tailwind-generated utility.
     // 3/4 width by default, 1/2 (= 680px at the 1376px track) on mouse devices.
     <Link
       href={href}
-      className="w-[calc(100%*3/4-1/4*var(--grid-gap))] min-w-[calc(100%*3/4-1/4*var(--grid-gap))] snap-start -outline-offset-1 pointer-fine:w-[calc(100%*1/2-1/2*var(--grid-gap))] pointer-fine:min-w-[calc(100%*1/2-1/2*var(--grid-gap))] hover-hover:hover:outline hover-hover:hover:outline-1 hover-hover:hover:outline-ink"
+      className={cn(
+        "w-[calc(100%*3/4-1/4*var(--grid-gap))] min-w-[calc(100%*3/4-1/4*var(--grid-gap))] snap-start -outline-offset-1 pointer-fine:w-[calc(100%*1/2-1/2*var(--grid-gap))] pointer-fine:min-w-[calc(100%*1/2-1/2*var(--grid-gap))]",
+        homeAccent
+          ? "home-accent-surface"
+          : "hover-hover:hover:outline hover-hover:hover:outline-1 hover-hover:hover:outline-ink",
+      )}
     >
       <MediaPlaceholder
         {...media}
@@ -49,7 +68,11 @@ function TeaserCard({ media, title, subtitle, href = "#" }: TeaserCardContent) {
       />
       {/* `hover-hover:` here is a device-capability query, not a hover state. */}
       <p className="pt-16 text-c1 hover-hover:p-16 md:pt-24 md:hover-hover:p-24">
-        <strong className="text-ink">{title}</strong>
+        <strong
+          className={cn("inline-block text-ink", homeAccent && "home-accent-marker")}
+        >
+          {title}
+        </strong>
         <br />
         <span className="line-clamp-3 text-ink-secondary">{subtitle}</span>
       </p>

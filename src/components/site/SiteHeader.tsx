@@ -102,7 +102,7 @@ export function SiteHeader() {
                       aria-current={current ? "page" : undefined}
                       className={cn(
                         "nav-marker text-c1 text-ink no-underline",
-                        current && "current-underline",
+                        current && "current-nav",
                       )}
                     >
                       {navLabel(link, locale)}

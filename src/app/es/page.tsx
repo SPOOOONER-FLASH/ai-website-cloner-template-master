@@ -32,27 +32,27 @@ export default function SpanishHomePage() {
         <PageTeaserModule content={content.teaser1} />
       </div>
       <div className="mb-48 lg:mb-136">
-        <WelcomeIntro locale="es" />
+        <WelcomeIntro locale="es" homeAccent />
       </div>
       <div className="modules">
         <Spacer heights={content.spacers.s96} />
-        <HeroModule content={content.hero2} />
+        <HeroModule content={content.hero2} homeAccent />
         <Spacer heights={content.spacers.s384} />
-        <TextModule content={content.text1} />
+        <TextModule content={content.text1} homeAccent />
         <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser2} />
+        <PageTeaserModule content={content.teaser2} homeAccent />
         <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero3} />
+        <HeroModule content={content.hero3} homeAccent />
         <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero4} />
+        <HeroModule content={content.hero4} homeAccent />
         <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text2} />
+        <TextModule content={content.text2} homeAccent />
         <Spacer heights={content.spacers.s48} />
-        <PageTeaserModule content={content.teaser3} />
+        <PageTeaserModule content={content.teaser3} homeAccent />
         <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text3} />
+        <TextModule content={content.text3} homeAccent />
         <Spacer heights={content.spacers.s48} />
-        <HeroModule content={content.hero5} />
+        <HeroModule content={content.hero5} homeAccent />
       </div>
     </main>
   );

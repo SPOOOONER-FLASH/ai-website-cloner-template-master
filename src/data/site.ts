@@ -9,9 +9,8 @@ export const socialLinks = siteSettings.social;
 /**
  * Single source of truth for site-level SEO values.
  *
- * ⚠ INDEXING IS DELIBERATELY OFF. See `indexable` below — this is a decision, not an
- * oversight. Flipping one boolean turns the whole site indexable when the real domain
- * is ready; nothing else needs editing.
+ * Indexing is ON — the site is live on cantonlock.com. `indexable` below is the master
+ * switch; flipping it to false takes the whole site out of search in one edit.
  */
 
 /**
@@ -19,22 +18,19 @@ export const socialLinks = siteSettings.social;
  * from this, so it must be the address the site should be indexed under — not
  * whichever host happens to be serving it.
  *
- * Currently the staging subdomain. Change to https://www.cantonlock.com at launch.
+ * Live on the production domain since 2026-08-26. The apex is canonical; www 301s to it.
  */
 export const siteUrl = "https://cantonlock.com";
 
 /**
  * Master switch for search indexing.
  *
- * `false` while the site lives on a staging subdomain. Letting Google index
- * `spoonercantonlock.stahlock.com` would be actively harmful: when the real domain
- * launches, the two would compete as duplicate content and the staging URL would
- * already hold whatever authority was earned. Worse, it would attach the Canton Hyland
- * catalogue to the Stahlock domain, which is a different brand.
+ * Kept false for the whole staging period: indexing spoonercantonlock.stahlock.com
+ * would have attached this catalogue to a different brand and then competed with the
+ * real domain as duplicate content. Turned on when cantonlock.com went live.
  *
- * Set to `true` only when:
- *   1. the site is on its final domain (siteUrl updated), AND
- *   2. placeholder copy and unverified certification claims have been signed off.
+ * It also gates analytics (see above) and llms.txt, so a staging clone stays silent
+ * on every surface at once rather than needing three separate switches.
  */
 export const indexable = true;
 
@@ -48,7 +44,12 @@ export const analytics = {
   /** Google Analytics 4 measurement ID. */
   ga4Id: "G-RBTE7KF82P",
   /** Microsoft Clarity project ID — session replay and heatmaps. */
-  clarityId: "y8t7weui0k",
+  clarityId: "y8utyrgvv0",
+  /**
+   * IndexNow key. Bing and Yandex fetch https://cantonlock.com/<key>.txt to prove
+   * we own the domain, then accept instant submissions instead of waiting for a crawl.
+   */
+  indexNowKey: "6bb09b9b67d0e605a292835469627988",
 };
 
 export const siteName = "Canton Hyland";

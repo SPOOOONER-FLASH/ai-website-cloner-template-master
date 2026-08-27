@@ -47,17 +47,28 @@ const introCopy = {
  * decorative icon, so --color-ink-tertiary. The three ArrowLinks in the panel
  * carry the only interactive accent here, now rendered in monochrome ink.
  */
-export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
+export function WelcomeIntro({
+  locale = "en",
+  homeAccent = false,
+}: {
+  locale?: "en" | "es";
+  homeAccent?: boolean;
+}) {
   const [expanded, setExpanded] = useState(false);
   const text = introCopy[locale];
 
   return (
     <div className="layout">
-      <div className="col-content grid w-full grid-cols gap-x gap-y-24 xl:gap-y-96">
+      <div
+        className={cn(
+          "col-content grid w-full grid-cols gap-x gap-y-24 xl:gap-y-96",
+          homeAccent && "home-accent-surface home-accent-module",
+        )}
+      >
         {/* slot-1 — headline */}
         <div className="col-span-full row-start-1 grid grid-cols-subgrid sm:col-span-4 md:col-span-6 xl:col-span-12 xl:col-start-1">
           <div className="col-span-6 row-start-1 xl:col-span-10">
-            <h1 className="text-h1 text-ink">
+            <h1 className={cn("text-h1 text-ink", homeAccent && "home-accent-marker")}>
               {text.welcome}
               <br />
               <span className="text-h1-light">
@@ -99,7 +110,12 @@ export function WelcomeIntro({ locale = "en" }: { locale?: "en" | "es" }) {
                 <ul className="flex flex-col gap-36 pointer-fine:gap-16">
                   {text.links.map((link) => (
                     <li key={link.label}>
-                      <ArrowLink href={link.href}>{link.label}</ArrowLink>
+                      <ArrowLink
+                        href={link.href}
+                        className={cn(homeAccent && "home-accent-action")}
+                      >
+                        {link.label}
+                      </ArrowLink>
                     </li>
                   ))}
                 </ul>
