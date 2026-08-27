@@ -285,13 +285,13 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
                         href={entry.href}
                         onClick={close}
                         className={cn(
-                          "group flex items-baseline justify-between gap-16 py-12",
+                          "group short-marker-surface flex items-baseline justify-between gap-16 py-12",
                           "hover:bg-surface-alt",
                         )}
                       >
                         <span className="min-w-0">
-                          <span className="block truncate text-c1 text-ink group-hover:underline">
-                            {entry.title}
+                          <span className="short-marker short-marker-group inline-block max-w-full text-c1 text-ink">
+                            <span className="block truncate">{entry.title}</span>
                           </span>
                           <span className="block truncate text-c2 text-ink-secondary">
                             {entry.subtitle}

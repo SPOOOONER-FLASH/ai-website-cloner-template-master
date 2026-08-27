@@ -266,9 +266,28 @@
     left: 0;
     color: currentColor;
   }
-  .copy p > a {
-    text-decoration-line: underline;
-    text-underline-offset: 4px;
+  /* Inline copy needs to keep natural wrapping, so it uses the same short-line
+     motion as a clipped background rather than an inline-block pseudo-element. */
+  .copy p > a,
+  .inline-marker,
+  .inline-marker-scope a {
+    color: var(--color-brand);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: left calc(100% - 0.1rem);
+    background-repeat: no-repeat;
+    background-size: 0 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    transition:
+      color var(--motion-fast) var(--motion-ease-crisp),
+      background-size var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .copy p > a:focus-visible,
+  .inline-marker:focus-visible,
+  .inline-marker-scope a:focus-visible {
+    background-size: min(6.4rem, 100%) 0.2rem;
   }
 
   /* -- Named-line layout grid -------------------------------------------- */
@@ -395,54 +414,58 @@
     grid-area: 1 / 1;
   }
 
-  .underscore {
-    position: relative;
-    padding-bottom: 0.3rem;
-  }
-  .underscore::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: currentColor;
-    opacity: 0;
-    transition: opacity var(--motion-medium) var(--motion-ease);
-  }
-  .underscore:hover::after {
-    opacity: 1;
-  }
-
   /* -- A: short underline / thin frame ----------------------------------- */
+  .short-marker,
+  .short-marker-group,
   .nav-marker,
   .title-marker {
+    --marker-bottom: -0.4rem;
+    --marker-left: 0;
+    --marker-width: min(6.4rem, 100%);
     position: relative;
+    text-decoration: none;
   }
 
   .current-underline {
     font-weight: var(--font-weight-semibold);
   }
 
+  .short-marker,
   .nav-marker {
     display: inline-block;
-    text-decoration: none;
+  }
+
+  .nav-marker {
+    --marker-bottom: -0.8rem;
   }
 
   .title-marker {
+    --marker-bottom: 0;
     display: block;
     padding-bottom: 1.4rem;
   }
 
+  .short-marker-arrow {
+    --marker-left: 1.2rem;
+    --marker-width: min(6.4rem, calc(100% - 1.2rem));
+  }
+
+  .short-marker-group,
+  .short-marker-compact {
+    --marker-bottom: -0.4rem;
+  }
+
+  .short-marker::after,
+  .short-marker-group::after,
   .nav-marker::after,
   .title-marker::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: min(6.4rem, 100%);
+    bottom: var(--marker-bottom);
+    left: var(--marker-left);
+    width: var(--marker-width);
     height: 0.2rem;
-    background-color: var(--color-frame);
+    background-color: currentColor;
     opacity: 0;
     transform: scaleX(0);
     transform-origin: left center;
@@ -451,12 +474,8 @@
       transform var(--motion-fast) var(--motion-ease-crisp);
   }
 
-  .nav-marker::after {
-    bottom: -0.8rem;
-  }
-
-  .nav-marker-inset::after {
-    bottom: 0.8rem;
+  .nav-marker-inset {
+    --marker-bottom: 0.8rem;
   }
 
   /* -- D: hard offset plane ---------------------------------------------- */
@@ -498,12 +517,25 @@
   }
 
   .hard-shadow-card:focus-visible .title-marker::after,
+  .short-marker:focus-visible::after,
   .nav-marker:focus-visible::after {
     opacity: 1;
     transform: scaleX(1);
   }
 
+  .short-marker-surface:focus-visible .short-marker-group::after,
+  .short-marker-surface:has(:focus-visible) .short-marker-group::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
   @media (hover: hover) and (pointer: fine) {
+    .copy p > a:hover,
+    .inline-marker:hover,
+    .inline-marker-scope a:hover {
+      background-size: min(6.4rem, 100%) 0.2rem;
+    }
+
     .hard-shadow-card:hover {
       border-color: var(--color-frame);
       transform: translate(-0.2rem, -0.2rem);
@@ -511,10 +543,22 @@
     }
 
     .hard-shadow-card:hover .title-marker::after,
+    .short-marker:hover::after,
+    .short-marker-surface:hover .short-marker-group::after,
     .nav-marker:hover::after {
       opacity: 1;
       transform: scaleX(1);
     }
+
+    .short-marker-surface:hover .short-marker-group {
+      color: var(--color-brand-hover);
+    }
+  }
+
+  .short-marker:disabled::after,
+  .short-marker[aria-disabled="true"]::after {
+    opacity: 0;
+    transform: scaleX(0);
   }
 
   @media (max-width: 39.999rem) {
@@ -538,8 +582,7 @@
   }
 
   a,
-  button,
-  .underscore {
+  button {
     transition-property: color, background-color, border-color, outline-color, opacity;
     transition-duration: var(--motion-fast);
     transition-timing-function: var(--motion-ease-crisp);
@@ -587,8 +630,13 @@
     .hard-shadow-card,
     .hard-shadow-card:hover,
     .hard-shadow-card:focus-visible,
+    .short-marker::after,
+    .short-marker-group::after,
     .nav-marker::after,
-    .title-marker::after {
+    .title-marker::after,
+    .copy p > a,
+    .inline-marker,
+    .inline-marker-scope a {
       transition: none;
     }
 

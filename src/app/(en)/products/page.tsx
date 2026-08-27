@@ -88,23 +88,23 @@ export default function ProductsPage() {
 
       <section className="layout mt-96 lg:mt-144" aria-label="Featured hardware applications">
         <div className="col-outset grid gap-16 px-outset md:grid-cols-2 md:px-0">
-          <Link href="/products/panic-exit-devices/" className="group block">
+          <Link href="/products/panic-exit-devices/" className="group short-marker-surface block">
             <MediaPlaceholder
               src="/images/company/hero-panic-exit-banner.webp"
               ratio="1024 / 397"
               label="Panic exit hardware installed in a commercial interior"
             />
-            <span className="mt-16 block text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
+            <span className="short-marker short-marker-group mt-16 inline-block text-h3 text-ink">
               Panic exit devices — fast release for emergency doors
             </span>
           </Link>
-          <Link href="/products/lever-handles/" className="group block">
+          <Link href="/products/lever-handles/" className="group short-marker-surface block">
             <MediaPlaceholder
               src="/images/company/hero-grip-handle-banner.webp"
               ratio="1024 / 397"
               label="Lever and grip handle sets installed on timber doors"
             />
-            <span className="mt-16 block text-h3 text-ink group-hover:text-brand-hover group-hover:underline">
+            <span className="short-marker short-marker-group mt-16 inline-block text-h3 text-ink">
               Lever and grip handle systems
             </span>
           </Link>

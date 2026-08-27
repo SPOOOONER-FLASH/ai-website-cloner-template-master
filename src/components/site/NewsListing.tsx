@@ -45,7 +45,7 @@ export function NewsListing() {
               </p>
               <a
                 href="/contact/"
-                className="mt-24 inline-block text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                className="short-marker short-marker-compact mt-24 text-c1 text-brand hover:text-brand-hover"
               >
                 Contact us
               </a>

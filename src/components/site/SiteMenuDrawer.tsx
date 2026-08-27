@@ -79,7 +79,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, onClose }: SiteMenuDraw
                 <ul className="grid grid-cols-2 gap-x-24 gap-y-20">
                   {socialLinks.map((link) => (
                     <li key={link.label}>
-                      <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-c1 text-brand hover:text-brand-hover hover:underline">
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover">
                         {link.label}
                       </a>
                     </li>

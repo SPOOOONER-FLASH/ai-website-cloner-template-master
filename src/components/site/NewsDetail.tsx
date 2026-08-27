@@ -46,7 +46,7 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
           <div className="col-span-full">
             <Link
               href="/news/"
-              className="text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+              className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
             >
               &larr; Back to all news
             </Link>
@@ -78,7 +78,7 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
               <p className="mt-8 text-c1 text-ink">Canton Hyland</p>
               <Link
                 href="/contact/"
-                className="mt-8 inline-block text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                className="short-marker short-marker-compact mt-8 text-c1 text-brand hover:text-brand-hover"
               >
                 Contact us
               </Link>
@@ -94,7 +94,7 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
                     <li key={product.slug}>
                       <Link
                         href={`/products/${product.categoryPath[0]}/${product.slug}/`}
-                        className="text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                        className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
                         {product.model} — {product.name}
                       </Link>
@@ -144,9 +144,9 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
                       <a
                         href={file.url}
                         download
-                        className="flex items-baseline justify-between gap-16 py-16 text-c1 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                        className="group short-marker-surface flex items-baseline justify-between gap-16 py-16 text-c1 text-brand hover:text-brand-hover"
                       >
-                        <span>{file.title}</span>
+                        <span className="short-marker short-marker-group">{file.title}</span>
                         <span className="whitespace-nowrap text-c2 text-ink-tertiary">
                           {file.format.toUpperCase()}, {formatDownloadSize(file.sizeBytes)}
                         </span>

@@ -174,7 +174,7 @@ export function ProductFinder({
                 setQuery("");
                 setPage(1);
               }}
-              className="text-c2 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+              className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
             >
               Clear all ({activeCount})
             </button>
@@ -241,7 +241,7 @@ export function ProductFinder({
                         return next;
                       })
                     }
-                    className="mt-24 text-c2 text-brand underline-offset-4 hover:text-brand-hover hover:underline"
+                    className="short-marker short-marker-compact mt-24 text-c2 text-brand hover:text-brand-hover"
                   >
                     Clear these ({secondaryActive})
                   </button>
@@ -273,7 +273,7 @@ export function ProductFinder({
               Try removing a filter, or{" "}
               <a
                 href="/contact/"
-                className="text-brand underline underline-offset-4 hover:text-brand-hover"
+                className="inline-marker text-brand hover:text-brand-hover"
               >
                 ask an export engineer
               </a>{" "}

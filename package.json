@@ -30,7 +30,7 @@
     "dev": "next dev",
     "build": "next build && node scripts/normalize-next-export-segments.mjs",
     "start": "next start",
-    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/cms-config.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts",
+    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/cms-config.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts",
     "test:export": "node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && npm run export:segments:check",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",

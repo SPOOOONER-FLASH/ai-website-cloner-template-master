@@ -14,9 +14,9 @@ export function ProductCategoryRail({ categories }: { categories: Category[] }) 
             <li key={category.slug}>
               <Link
                 href={`/products/${category.slug}/`}
-                className="flex items-start justify-between gap-16 py-14 text-c1 text-ink hover:text-brand-hover hover:underline"
+                className="group short-marker-surface flex items-start justify-between gap-16 py-14 text-c1 text-ink hover:text-brand-hover"
               >
-                <span>{category.name}</span>
+                <span className="short-marker short-marker-group">{category.name}</span>
                 <span aria-hidden="true">›</span>
               </Link>
             </li>

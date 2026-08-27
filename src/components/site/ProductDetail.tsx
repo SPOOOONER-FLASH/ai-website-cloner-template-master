@@ -59,11 +59,11 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
             aria-label="Breadcrumb"
             className="col-span-full flex flex-wrap items-center gap-x-8 text-c2 text-ink-secondary"
           >
-            <Link href="/" className="hover:text-brand-hover hover:underline">
+            <Link href="/" className="short-marker short-marker-compact hover:text-brand-hover">
               Home
             </Link>
             <span aria-hidden="true">/</span>
-            <Link href="/products/" className="hover:text-brand-hover hover:underline">
+            <Link href="/products/" className="short-marker short-marker-compact hover:text-brand-hover">
               Products
             </Link>
             <span aria-hidden="true">/</span>
@@ -130,7 +130,7 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
                       href={alibaba.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     >
                       {alibaba.kind === "listing"
                         ? `Order ${product.model} on Alibaba`

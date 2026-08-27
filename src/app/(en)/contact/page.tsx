@@ -34,7 +34,7 @@ export default function ContactPage() {
                 accessories.
               </p>
               <a
-                className="underscore mt-16 inline-block text-c1 text-brand hover:text-brand-hover"
+                className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
                 href="/downloads/canton-hyland-product-catalogue-2026.pdf"
                 download
               >

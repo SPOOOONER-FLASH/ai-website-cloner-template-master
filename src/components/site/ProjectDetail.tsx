@@ -64,11 +64,11 @@ export function ProjectDetail({
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
           <nav className="col-span-full flex flex-wrap gap-x-8 text-c2 text-ink-secondary">
-            <Link href={homeHref} className="hover:text-brand-hover hover:underline">
+            <Link href={homeHref} className="short-marker short-marker-compact hover:text-brand-hover">
               {text.home}
             </Link>
             <span aria-hidden="true">/</span>
-            <Link href={projectsHref} className="hover:text-brand-hover hover:underline">
+            <Link href={projectsHref} className="short-marker short-marker-compact hover:text-brand-hover">
               {text.projects}
             </Link>
           </nav>

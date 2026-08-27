@@ -179,7 +179,9 @@ export function PromoDialog() {
     */
     <aside
       aria-label={locale === "es" ? "Oferta destacada" : "Featured offer"}
-      className="fixed bottom-16 left-16 right-16 z-40 xs:bottom-24 xs:left-auto xs:right-24 xs:w-[360px]"
+      // Passive promotion stays below the sticky header's z-10 stacking context, so
+      // user-requested search and menu overlays inside that header always remain usable.
+      className="fixed bottom-16 left-16 right-16 z-[5] xs:bottom-24 xs:left-auto xs:right-24 xs:w-[360px]"
     >
       <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
     </aside>
@@ -204,7 +206,7 @@ function PromoCardBlock({
   const isExternal = /^https?:/i.test(ctaHref);
 
   const ctaClass =
-    "text-c1 text-surface underline-offset-4 transition-opacity duration-200 hover:underline hover:opacity-80";
+    "short-marker short-marker-compact text-c1 text-surface transition-opacity duration-200 hover:opacity-80";
 
   return (
     <div className="hard-shadow-panel relative bg-surface">

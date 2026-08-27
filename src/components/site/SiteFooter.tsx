@@ -28,8 +28,8 @@ const LEGAL_LINKS = {
  *
  * COLOUR:
  *   Top rule    --color-line.
- *   Links       resolve to ink. The `.underscore` bar uses currentColor, so it tracks
- *               the label automatically without introducing another accent colour.
+ *   Links       resolve to ink. The shared short marker uses currentColor, so it tracks
+ *               normal and inverted labels without another accent colour.
  *   Headings    --color-ink.
  *   "Data preferences" stays a text button styled as a link, matching the reference —
  *   it is not a .btn. See Button.tsx for the button system.
@@ -54,7 +54,7 @@ export function SiteFooter() {
                   <li key={link.label} className="col-span-2 md:col-span-3">
                     <Link
                       href={link.href}
-                      className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     >
                       {link.label}
                     </Link>
@@ -63,7 +63,7 @@ export function SiteFooter() {
                 <li className="col-span-2 md:col-span-3">
                   <button
                     type="button"
-                    className="underscore inline-block appearance-none text-c1 text-brand hover:text-brand-hover"
+                    className="short-marker short-marker-compact appearance-none text-c1 text-brand hover:text-brand-hover"
                   >
                     {isSpanish ? "Preferencias de datos" : "Data preferences"}
                   </button>
@@ -117,7 +117,7 @@ export function SiteFooter() {
                       href={siteSettings.alibaba.storefront}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underscore inline-block text-c1 text-brand hover:text-brand-hover"
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     >
                       {siteSettings.alibaba.label}
                     </a>
@@ -137,7 +137,7 @@ export function SiteFooter() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative inline-block pl-12 text-c1 text-brand hover:text-brand-hover hover:underline"
+                      className="short-marker short-marker-arrow relative pl-12 text-c1 text-brand hover:text-brand-hover"
                     >
                       <span aria-hidden="true" className="absolute left-0 top-0">›</span>
                       {link.label}

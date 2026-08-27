@@ -12,7 +12,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         <span key={`${item.label}-${index}`} className="flex items-center gap-8">
           {index ? <span aria-hidden="true">&gt;</span> : null}
           {item.href ? (
-            <Link href={item.href} className="underline-offset-4 hover:text-brand-hover hover:underline">
+            <Link href={item.href} className="short-marker short-marker-compact hover:text-brand-hover">
               {item.label}
             </Link>
           ) : (
@@ -23,4 +23,3 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
     </nav>
   );
 }
-

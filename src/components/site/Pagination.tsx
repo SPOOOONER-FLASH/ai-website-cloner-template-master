@@ -58,7 +58,7 @@ export function Pagination({
         type="button"
         onClick={() => onChange(page - 1)}
         disabled={page === 1}
-        className="text-c1 text-brand underline-offset-4 hover:underline disabled:cursor-default disabled:text-ink-tertiary disabled:no-underline"
+        className="short-marker short-marker-compact text-c1 text-brand disabled:cursor-default disabled:text-ink-tertiary"
       >
         ← Previous
       </button>
@@ -92,7 +92,7 @@ export function Pagination({
         type="button"
         onClick={() => onChange(page + 1)}
         disabled={page === pageCount}
-        className="text-c1 text-brand underline-offset-4 hover:underline disabled:cursor-default disabled:text-ink-tertiary disabled:no-underline"
+        className="short-marker short-marker-compact text-c1 text-brand disabled:cursor-default disabled:text-ink-tertiary"
       >
         Next →
       </button>

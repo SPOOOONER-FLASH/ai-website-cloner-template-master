@@ -70,8 +70,8 @@ export function CategoryFilter({ products, options }: CategoryFilterProps) {
                 aria-pressed={selected}
                 onClick={() => choose(option.slug)}
                 className={cn(
-                  "text-left text-c1 underline-offset-4 hover:text-brand-hover hover:underline",
-                  selected ? "text-brand" : "text-ink",
+                  "short-marker short-marker-compact text-left text-c1 hover:text-brand-hover",
+                  selected ? "font-semibold text-brand" : "text-ink",
                 )}
               >
                 {option.name}

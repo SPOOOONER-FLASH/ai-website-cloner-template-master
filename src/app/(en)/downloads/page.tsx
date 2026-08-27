@@ -65,10 +65,10 @@ export default function ServiceDownloadsPage() {
                         <a
                           href={file.url}
                           download
-                          className="group grid gap-12 py-24 sm:grid-cols-[1fr_auto] sm:items-start sm:gap-24"
+                          className="group short-marker-surface grid gap-12 py-24 sm:grid-cols-[1fr_auto] sm:items-start sm:gap-24"
                         >
                           <span>
-                            <span className="block text-c1 font-semibold text-ink group-hover:text-brand-hover group-hover:underline">
+                            <span className="short-marker short-marker-group inline-block text-c1 font-semibold text-ink">
                               {file.title}
                             </span>
                             {file.relatedModels.length ? (
