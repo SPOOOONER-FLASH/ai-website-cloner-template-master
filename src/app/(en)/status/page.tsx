@@ -19,6 +19,9 @@ import { projects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "内容健康度 | Canton Hyland",
   robots: { index: false, follow: false },
+  alternates: null,
+  openGraph: null,
+  twitter: null,
 };
 
 const TONE_STYLE = {
