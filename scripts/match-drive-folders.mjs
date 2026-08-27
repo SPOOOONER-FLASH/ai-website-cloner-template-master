@@ -21,7 +21,7 @@
  *   node scripts/match-drive-folders.mjs            # report
  *   node scripts/match-drive-folders.mjs --write    # append to drive-match.json
  */
-import { readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = "F:/新网站资料";

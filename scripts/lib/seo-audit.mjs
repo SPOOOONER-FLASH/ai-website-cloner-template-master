@@ -589,7 +589,9 @@ export function auditBuild({ outDir }) {
         script.data
           ? schemaNodes(script.data)
             .map(({ node }) => node)
-            .filter((node) => node["@type"] === "NewsArticle" && isNonEmptyString(node.datePublished))
+            // TechArticle as well as NewsArticle: an evergreen guide carries its own
+            // datePublished and is typed TechArticle so it is not treated as news.
+            .filter((node) => (node["@type"] === "NewsArticle" || node["@type"] === "TechArticle") && isNonEmptyString(node.datePublished))
             .map((node) => node.datePublished)
           : []
       ));
