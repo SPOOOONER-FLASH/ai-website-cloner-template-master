@@ -18,10 +18,22 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/d101-ss-deadbolts.webp",
     "ratio": "1 / 1",
-    "label": "Hyland D101 SS deadbolts"
+    "label": "Hyland D101 SS Deadbolts"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/d101-ss-deadbolts-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D101 SS Deadbolts, view 2"
+    },
+    {
+      "src": "/images/products/d101-ss-deadbolts-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D101 SS Deadbolts, view 3"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "D101 SS Deadbolts | Canton Hyland",

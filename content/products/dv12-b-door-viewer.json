@@ -29,10 +29,28 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/dv12-b-door-viewer.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DV12-B door viewer"
+    "label": "Hyland DV12-B Door viewer"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/dv12-b-door-viewer-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV12-B Door viewer, view 2"
+    },
+    {
+      "src": "/images/products/dv12-b-door-viewer-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV12-B Door viewer, view 3",
+      "sourceNote": "2022-watermarked"
+    },
+    {
+      "src": "/images/products/dv12-b-door-viewer-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DV12-B Door viewer, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "DV12-B Door viewer — ABS/Plastic | Canton Hyland",

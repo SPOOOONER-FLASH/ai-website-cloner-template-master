@@ -36,10 +36,27 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/598-tubular-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 598 tubular lock"
+    "label": "Hyland 598 Tubular Lock"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/598-tubular-lock-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 598 Tubular Lock, view 2"
+    },
+    {
+      "src": "/images/products/598-tubular-lock-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 598 Tubular Lock, view 3"
+    },
+    {
+      "src": "/images/products/598-tubular-lock-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 598 Tubular Lock, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "598 Tubular Lock — Stainless Steel | Canton Hyland",

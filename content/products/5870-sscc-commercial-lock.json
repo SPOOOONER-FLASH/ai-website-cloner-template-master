@@ -29,10 +29,22 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/5870-sscc-commercial-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 5870 SSCC commercial lock"
+    "label": "Hyland 5870 SSCC Commercial Lock"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/5870-sscc-commercial-lock-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5870 SSCC Commercial Lock, view 2"
+    },
+    {
+      "src": "/images/products/5870-sscc-commercial-lock-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5870 SSCC Commercial Lock, view 3"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "5870 SSCC Commercial Lock — Knob Locks | Canton Hyland",

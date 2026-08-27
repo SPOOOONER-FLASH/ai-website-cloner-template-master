@@ -40,6 +40,13 @@ function productIssues(product: Product) {
   return {
     noSpecs: product.specs.length === 0,
     noHero: !product.heroImage?.src,
+    /*
+      An image carrying a sourceNote is publishable but dated — the 2022 shoot has the
+      cantonlock.com domain tiled across it. The client asked for these to go live rather
+      than leaving a grey block, on the condition that the site can list them again when
+      there is budget to re-photograph. This metric is that list.
+    */
+    datedImagery: [product.heroImage, ...product.gallery].some((image) => image?.sourceNote),
     noGallery: product.gallery.length === 0,
     modelTbc: Boolean(product.modelTbc),
     noMaterial: isBlank(product.material),
@@ -95,6 +102,13 @@ export function buildHealthReport(): HealthSection[] {
           tone: tone(count("noHero")),
         },
         {
+          label: "图片是旧拍摄，待重拍",
+          value: count("datedImagery"),
+          total,
+          action: "带 sourceNote 标记，多为 2022 年那批（图上有 cantonlock.com 水印）。重拍后替换即可，脚本按此字段定位。",
+          tone: tone(count("datedImagery"), 1, 200),
+        },
+        {
           label: "没有图库（只有主图）",
           value: count("noGallery"),
           total,
@@ -133,7 +147,7 @@ export function buildHealthReport(): HealthSection[] {
           value: count("hasCertifications"),
           total,
           action:
-            "每一条都必须对应一份点名该型号的检测报告。我们手上的四份报告只覆盖 KD070/30-290、KD070/20-101、607 SS ET。",
+            "每一条都必须对应一份点名该型号的检测报告。我们自己的报告只覆盖 KD070/30-290 与 607 SS ET；地弹簧那份 EN 1154 的申请人是 KALE，不是我们的，已撤下。ANSI/BHMA 没有。",
           tone: count("hasCertifications") > 0 ? "warn" : "good",
         },
         {

@@ -2,177 +2,241 @@
  "generated": null,
  "products": [
   {
-   "slug": "9082e-stainless-steel-handle",
-   "model": "9082E",
+   "slug": "575-abet-tubular-lock",
+   "model": "575 ABET",
    "sources": [
-    "1-逃生锁/9082E",
-    "5-不锈钢插芯锁/9082E"
+    "/2-球锁/三柱式球锁/575/575 ABET/图"
    ],
-   "candidates": 16,
+   "candidates": 5,
    "kept": [
     {
-     "rel": "图/首图.jpg",
-     "out": "9082e-stainless-steel-handle.webp",
+     "rel": "首图.jpg",
+     "out": "575-abet-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 28
+    },
+    {
+     "rel": "1-575 ABET.jpg",
+     "out": "575-abet-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 20
+    },
+    {
+     "rel": "2-575 ABET.jpg",
+     "out": "575-abet-tubular-lock-3.webp",
      "via": "psd",
      "shape": "drawing",
      "droppedWatermark": 1,
      "droppedBadge": 0,
      "tagged2022": false,
-     "kb": 5
+     "kb": 11
     },
     {
-     "rel": "1-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-2.webp",
+     "rel": "3-575 ABET.jpg",
+     "out": "575-abet-tubular-lock-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 24
+    },
+    {
+     "rel": "4-575 ABET.jpg",
+     "out": "575-abet-tubular-lock-5.webp",
+     "via": "jpg",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 52
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "578-acet-light-duty-cylindrical-lock",
+   "model": "578 ACET",
+   "sources": [
+    "/2-球锁/三柱式球锁/578/578 ACET"
+   ],
+   "candidates": 7,
+   "kept": [
+    {
+     "rel": "1-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 37
+    },
+    {
+     "rel": "2-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 41
+    },
+    {
+     "rel": "3-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 50
+    },
+    {
+     "rel": "4-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 42
+    },
+    {
+     "rel": "5-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-5.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 44
+    },
+    {
+     "rel": "6-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-6.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 38
+    },
+    {
+     "rel": "7-578 ACET.jpg",
+     "out": "578-acet-light-duty-cylindrical-lock-7.webp",
      "via": "psd",
      "shape": "drawing",
      "droppedWatermark": 0,
      "droppedBadge": 1,
      "tagged2022": false,
-     "kb": 10
-    },
+     "kb": 36
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "5807-sscl-commercial-lock",
+   "model": "5807 SSCL",
+   "sources": [
+    "/2-球锁/功能锁/5807 SSCL/图"
+   ],
+   "candidates": 8,
+   "kept": [
     {
-     "rel": "图/1-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-3.webp",
+     "rel": "首图.jpg",
+     "out": "5807-sscl-commercial-lock.webp",
      "via": "psd",
      "shape": "drawing",
      "droppedWatermark": 1,
      "droppedBadge": 0,
      "tagged2022": false,
-     "kb": 10
+     "kb": 19
     },
     {
-     "rel": "2-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-4.webp",
+     "rel": "2-5807 SSCL.jpg",
+     "out": "5807-sscl-commercial-lock-2.webp",
      "via": "psd",
      "shape": "drawing",
-     "droppedWatermark": 0,
-     "droppedBadge": 1,
-     "tagged2022": false,
-     "kb": 7
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 16
     },
     {
-     "rel": "2-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-5.webp",
+     "rel": "3-5807 SSCL.jpg",
+     "out": "5807-sscl-commercial-lock-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 21
+    },
+    {
+     "rel": "4-5807 SSCL.jpg",
+     "out": "5807-sscl-commercial-lock-4.webp",
      "via": "psd",
      "shape": "drawing",
-     "droppedWatermark": 0,
+     "droppedWatermark": 1,
      "droppedBadge": 1,
-     "tagged2022": false,
-     "kb": 6
+     "tagged2022": true,
+     "kb": 19
     },
     {
-     "rel": "3-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-6.webp",
+     "rel": "6-5807 SSCL.jpg",
+     "out": "5807-sscl-commercial-lock-5.webp",
      "via": "psd",
      "shape": "scene",
-     "droppedWatermark": 0,
-     "droppedBadge": 1,
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
      "tagged2022": false,
-     "kb": 33
+     "kb": 62
     },
     {
-     "rel": "4-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-7.webp",
-     "via": "psd",
-     "shape": "drawing",
-     "droppedWatermark": 0,
-     "droppedBadge": 1,
-     "tagged2022": false,
-     "kb": 12
-    },
-    {
-     "rel": "5-9082E.jpg",
-     "out": "9082e-stainless-steel-handle-8.webp",
+     "rel": "7-5807 SSCL.jpg",
+     "out": "5807-sscl-commercial-lock-6.webp",
      "via": "psd",
      "shape": "scene",
-     "droppedWatermark": 0,
-     "droppedBadge": 1,
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
      "tagged2022": false,
-     "kb": 43
+     "kb": 60
     }
    ],
    "rejected": [
     {
-     "rel": "图/2-9082E.jpg",
+     "rel": "1-5807 SSCL.jpg",
      "why": "duplicate"
     },
     {
-     "rel": "图/3-9082E.jpg",
-     "why": "duplicate"
-    },
-    {
-     "rel": "3-9082E.jpg",
-     "why": "duplicate"
-    },
-    {
-     "rel": "4-9082E.jpg",
+     "rel": "5-5807 SSCL.jpg",
      "why": "duplicate"
     }
    ],
    "result": "filled"
   },
   {
-   "slug": "f101-glass-door-patch-fittings",
-   "model": "F101",
+   "slug": "5807-sscr-commercial-lock",
+   "model": "5807 SSCR",
    "sources": [
-    "7-防盗锁/F101",
-    "13-玻璃门夹/F101"
+    "/2-球锁/功能锁/5807 SSCR"
    ],
-   "candidates": 14,
+   "candidates": 2,
    "kept": [
     {
      "rel": "首图.jpg",
-     "out": "f101-glass-door-patch-fittings.webp",
-     "via": "psd",
-     "shape": "drawing",
-     "droppedWatermark": 1,
-     "droppedBadge": 0,
-     "tagged2022": false,
-     "kb": 18
-    },
-    {
-     "rel": "首图.jpg",
-     "out": "f101-glass-door-patch-fittings-2.webp",
-     "via": "psd",
-     "shape": "drawing",
-     "droppedWatermark": 1,
-     "droppedBadge": 0,
-     "tagged2022": false,
-     "kb": 8
-    },
-    {
-     "rel": "1-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-3.webp",
-     "via": "psd",
-     "shape": "drawing",
-     "droppedWatermark": 1,
-     "droppedBadge": 0,
-     "tagged2022": true,
-     "kb": 26
-    },
-    {
-     "rel": "2-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-4.webp",
-     "via": "psd",
-     "shape": "drawing",
-     "droppedWatermark": 1,
-     "droppedBadge": 0,
-     "tagged2022": true,
-     "kb": 7
-    },
-    {
-     "rel": "3-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-5.webp",
-     "via": "psd",
-     "shape": "studio",
-     "droppedWatermark": 1,
-     "droppedBadge": 0,
-     "tagged2022": true,
-     "kb": 22
-    },
-    {
-     "rel": "5-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-6.webp",
+     "out": "5807-sscr-commercial-lock.webp",
      "via": "psd",
      "shape": "drawing",
      "droppedWatermark": 1,
@@ -181,44 +245,1661 @@
      "kb": 21
     },
     {
-     "rel": "6-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-7.webp",
+     "rel": "1-5807 SSCR.jpg",
+     "out": "5807-sscr-commercial-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 57
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "5807-ssel-commercial-lock",
+   "model": "5807 SSEL",
+   "sources": [
+    "/2-球锁/功能锁/5807 SSEL/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "5807-ssel-commercial-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "1-5807 SSEL.jpg",
+     "why": "stahlock-survived",
+     "wm": 0.077
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "5807-ssr-commercial-lock",
+   "model": "5807 SSR",
+   "sources": [
+    "/2-球锁/功能锁/5807 SSR"
+   ],
+   "candidates": 3,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "5807-ssr-commercial-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 22
+    },
+    {
+     "rel": "1-5807 SSR.jpg",
+     "out": "5807-ssr-commercial-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 56
+    },
+    {
+     "rel": "2-5807 SSR.jpg",
+     "out": "5807-ssr-commercial-lock-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 76
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "5831-sset-heavy-duty-cylindrical-lock",
+   "model": "5831 SSET",
+   "sources": [
+    "/2-球锁/大档盖球锁/5831 SSET/旧"
+   ],
+   "candidates": 12,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "5831-sset-heavy-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 17
+    },
+    {
+     "rel": "2-5831 SSET-s .jpg",
+     "out": "5831-sset-heavy-duty-cylindrical-lock-2.webp",
+     "via": "jpg",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 17
+    },
+    {
+     "rel": "3-5831 SSET-s .jpg",
+     "out": "5831-sset-heavy-duty-cylindrical-lock-3.webp",
+     "via": "jpg",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 30
+    },
+    {
+     "rel": "6-5831 SSET-s .jpg",
+     "out": "5831-sset-heavy-duty-cylindrical-lock-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 13
+    },
+    {
+     "rel": "e-5831 SSET-s .jpg",
+     "out": "5831-sset-heavy-duty-cylindrical-lock-5.webp",
+     "via": "jpg",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 24
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "1-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "4-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "5-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "a-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "b-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "c-5831 SSET-s .jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "d-5831 SSET-s .jpg",
+     "why": "duplicate"
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "587-pbbk-light-duty-cylindrical-lock",
+   "model": "587 PBBK",
+   "sources": [
+    "/2-球锁/小档盖球锁/587/587 PBBK/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "587-pbbk-light-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 34
+    },
+    {
+     "rel": "1-587 PBBK.jpg",
+     "out": "587-pbbk-light-duty-cylindrical-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 39
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "587-pbet-light-duty-cylindrical-lock",
+   "model": "587 PBET",
+   "sources": [
+    "/2-球锁/小档盖球锁/587/587 PBET/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "587-pbet-light-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 34
+    },
+    {
+     "rel": "1-587 PBET.jpg",
+     "out": "587-pbet-light-duty-cylindrical-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 56
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "587-pbps-light-duty-cylindrical-lock",
+   "model": "587 PBPS",
+   "sources": [
+    "/2-球锁/小档盖球锁/587/587 PBPS"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "587-pbps-light-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 33
+    },
+    {
+     "rel": "1-587 PBPS.jpg",
+     "out": "587-pbps-light-duty-cylindrical-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 59
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "5870-sscc-commercial-lock",
+   "model": "5870 SSCC",
+   "sources": [
+    "/2-球锁/功能锁/5870 SSCC"
+   ],
+   "candidates": 3,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "5870-sscc-commercial-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 23
+    },
+    {
+     "rel": "1-5870 SSCC.jpg",
+     "out": "5870-sscc-commercial-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 63
+    },
+    {
+     "rel": "2-5870 SSCC.jpg",
+     "out": "5870-sscc-commercial-lock-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 56
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "5871-sset-heavy-duty-cylindrical-lock",
+   "model": "5871 SSET",
+   "sources": [
+    "/2-球锁/建筑锁/5871 SSET/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "5871-sset-heavy-duty-cylindrical-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "1-5871 SSET.jpg",
+     "out": "5871-sset-heavy-duty-cylindrical-lock-2.webp",
      "via": "psd",
      "shape": "scene",
      "droppedWatermark": 1,
      "droppedBadge": 0,
      "tagged2022": false,
      "kb": 26
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "592-pbbk-tubular-lock",
+   "model": "592 PBBK",
+   "sources": [
+    "/2-球锁/三柱式球锁/592/592 PBBK"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "592-pbbk-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 33
     },
     {
-     "rel": "7-F101.jpg",
-     "out": "f101-glass-door-patch-fittings-8.webp",
+     "rel": "1-592 PBBK.jpg",
+     "out": "592-pbbk-tubular-lock-2.webp",
      "via": "psd",
      "shape": "scene",
      "droppedWatermark": 1,
      "droppedBadge": 0,
      "tagged2022": false,
-     "kb": 44
+     "kb": 57
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "592-pbet-tubular-lock",
+   "model": "592 PBET",
+   "sources": [
+    "/2-球锁/三柱式球锁/592/592 PBET"
+   ],
+   "candidates": 3,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "592-pbet-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 33
+    },
+    {
+     "rel": "1-592 PBET.jpg",
+     "out": "592-pbet-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 49
     }
    ],
    "rejected": [
     {
-     "rel": "4-F101.jpg",
-     "why": "stahlock-survived",
-     "wm": 0.281
+     "rel": "a-592 PBET.jpg",
+     "why": "duplicate"
     }
    ],
+   "result": "filled"
+  },
+  {
+   "slug": "592-pbps-tubular-lock",
+   "model": "592 PBPS",
+   "sources": [
+    "/2-球锁/三柱式球锁/592/592 PBPS"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "592-pbps-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 32
+    },
+    {
+     "rel": "1-592 PBPS.jpg",
+     "out": "592-pbps-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 52
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "598-tubular-lock",
+   "model": "598",
+   "sources": [
+    "/2-球锁/三柱式球锁/598/598 SNET/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "598-tubular-lock.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    },
+    {
+     "rel": "1-598 SNET.jpg",
+     "out": "598-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "2-598 SNET.jpg",
+     "out": "598-tubular-lock-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 17
+    },
+    {
+     "rel": "3-598 SNET.jpg",
+     "out": "598-tubular-lock-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 11
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "4-598 SNET.jpg",
+     "why": "stahlock-survived",
+     "wm": 0.039
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "607-pbbk-tubular-lock",
+   "model": "607 PBBK",
+   "sources": [
+    "/2-球锁/三柱式球锁/607/607 PBBK/图"
+   ],
+   "candidates": 7,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "607-pbbk-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 31
+    },
+    {
+     "rel": "1-607 PBBK.jpg",
+     "out": "607-pbbk-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 26
+    },
+    {
+     "rel": "2-607 PBBK.jpg",
+     "out": "607-pbbk-tubular-lock-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 25
+    },
+    {
+     "rel": "3-607 PBBK.jpg",
+     "out": "607-pbbk-tubular-lock-4.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 40
+    },
+    {
+     "rel": "4-607 PBBK.jpg",
+     "out": "607-pbbk-tubular-lock-5.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    },
+    {
+     "rel": "5-607 PBBK.jpg",
+     "out": "607-pbbk-tubular-lock-6.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 30
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "6-607 PBBK.jpg",
+     "why": "duplicate"
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "609-pbet-tubular-lock",
+   "model": "609 PBET",
+   "sources": [
+    "/2-球锁/三柱式球锁/609 PBET"
+   ],
+   "candidates": 6,
+   "kept": [
+    {
+     "rel": "1-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 34
+    },
+    {
+     "rel": "2-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 35
+    },
+    {
+     "rel": "3-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 47
+    },
+    {
+     "rel": "4-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 54
+    },
+    {
+     "rel": "5-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock-5.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 41
+    },
+    {
+     "rel": "6-609 PBET.jpg",
+     "out": "609-pbet-tubular-lock-6.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 0,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 42
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "70610-ab-grip-handle-set",
+   "model": "70610 AB",
+   "sources": [
+    "/6-套锁/70610/70610AB/图"
+   ],
+   "candidates": 9,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "70610-ab-grip-handle-set.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    },
+    {
+     "rel": "1-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 76
+    },
+    {
+     "rel": "2-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 56
+    },
+    {
+     "rel": "3-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-4.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 28
+    },
+    {
+     "rel": "4-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-5.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 25
+    },
+    {
+     "rel": "5-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-6.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 17
+    },
+    {
+     "rel": "6-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-7.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 34
+    },
+    {
+     "rel": "7-70610AB.jpg",
+     "out": "70610-ab-grip-handle-set-8.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "70710-pb-grip-handle-set",
+   "model": "70710 PB",
+   "sources": [
+    "/6-套锁/70710/70710PB/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "70710-pb-grip-handle-set.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 15
+    },
+    {
+     "rel": "1-70710PB.jpg",
+     "out": "70710-pb-grip-handle-set-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 35
+    },
+    {
+     "rel": "2-70710PB.jpg",
+     "out": "70710-pb-grip-handle-set-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 19
+    },
+    {
+     "rel": "3-70710PB.jpg",
+     "out": "70710-pb-grip-handle-set-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 66
+    },
+    {
+     "rel": "4-70710PB.jpg",
+     "out": "70710-pb-grip-handle-set-5.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 47
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "70710-sn-grip-handle-set",
+   "model": "70710 SN",
+   "sources": [
+    "/6-套锁/70710/70710SN"
+   ],
+   "candidates": 4,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "70710-sn-grip-handle-set.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 8
+    },
+    {
+     "rel": "1-70710SN.jpg",
+     "out": "70710-sn-grip-handle-set-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    },
+    {
+     "rel": "2-70710SN.jpg",
+     "out": "70710-sn-grip-handle-set-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 60
+    },
+    {
+     "rel": "3-70710SN.jpg",
+     "out": "70710-sn-grip-handle-set-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 54
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "70720-sm-grip-handle-set",
+   "model": "70720 SM",
+   "sources": [
+    "/6-套锁/70720/70720 SM"
+   ],
+   "candidates": 4,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "70720-sm-grip-handle-set.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 11
+    },
+    {
+     "rel": "1-70720 SM.jpg",
+     "out": "70720-sm-grip-handle-set-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 59
+    },
+    {
+     "rel": "2-70720 SM.jpg",
+     "out": "70720-sm-grip-handle-set-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 51
+    },
+    {
+     "rel": "3-70720 SM.jpg",
+     "out": "70720-sm-grip-handle-set-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "803-pbet-lever-handle",
+   "model": "803 PBET",
+   "sources": [
+    "/3-执手锁/803/803 PBET/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "803-pbet-lever-handle.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 23
+    },
+    {
+     "rel": "1-803 PBET.jpg",
+     "out": "803-pbet-lever-handle-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 23
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "803-sbet-lever-handle",
+   "model": "803 SBET",
+   "sources": [
+    "/3-执手锁/803/803 SBET"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "803-sbet-lever-handle.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "1-803 SBET.jpg",
+     "out": "803-sbet-lever-handle-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "836-lever-handle",
+   "model": "836",
+   "sources": [
+    "/3-执手锁/836 SNET/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "836-lever-handle.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 15
+    },
+    {
+     "rel": "1-836 SNET.jpg",
+     "out": "836-lever-handle-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 36
+    },
+    {
+     "rel": "2-836 SNET.jpg",
+     "out": "836-lever-handle-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 17
+    },
+    {
+     "rel": "3-836 SNET.jpg",
+     "out": "836-lever-handle-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 16
+    },
+    {
+     "rel": "4-836 SNET.jpg",
+     "out": "836-lever-handle-5.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 29
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "d101-ab-deadbolts",
+   "model": "D101 AB",
+   "sources": [
+    "/2-球锁/呆锁/D101/D101 AB/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "d101-ab-deadbolts.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 22
+    },
+    {
+     "rel": "1-D101 AB.jpg",
+     "out": "d101-ab-deadbolts-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 47
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "d101-ac-deadbolts",
+   "model": "D101 AC",
+   "sources": [
+    "/2-球锁/呆锁/D101/D101 AC/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "d101-ac-deadbolts.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 27
+    },
+    {
+     "rel": "1-D101 AC.jpg",
+     "out": "d101-ac-deadbolts-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 26
+    },
+    {
+     "rel": "2-D101 AC.jpg",
+     "out": "d101-ac-deadbolts-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 46
+    },
+    {
+     "rel": "4-D101 AC.jpg",
+     "out": "d101-ac-deadbolts-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 49
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "3-D101 AC.jpg",
+     "why": "duplicate"
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "d101-dspb-deadbolts",
+   "model": "D101 DSPB",
+   "sources": [
+    "/2-球锁/呆锁/D101/D101 DSPB/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "d101-dspb-deadbolts.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 25
+    },
+    {
+     "rel": "1-D101 DSPB.jpg",
+     "out": "d101-dspb-deadbolts-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 57
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "d101-pb-deadbolts",
+   "model": "D101 PB",
+   "sources": [
+    "/2-球锁/呆锁/D101/D101 PB/图"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "d101-pb-deadbolts.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 22
+    },
+    {
+     "rel": "1-D101 PB.jpg",
+     "out": "d101-pb-deadbolts-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 57
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "d101-ss-deadbolts",
+   "model": "D101 SS",
+   "sources": [
+    "/2-球锁/呆锁/D101/D101 SS/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "d101-ss-deadbolts.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 19
+    },
+    {
+     "rel": "3-D101 SS.jpg",
+     "out": "d101-ss-deadbolts-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 27
+    },
+    {
+     "rel": "4-D101 SS.jpg",
+     "out": "d101-ss-deadbolts-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 54
+    }
+   ],
+   "rejected": [
+    {
+     "rel": "1-D101 SS.jpg",
+     "why": "duplicate"
+    },
+    {
+     "rel": "2-D101 SS.jpg",
+     "why": "duplicate"
+    }
+   ],
+   "result": "filled"
+  },
+  {
+   "slug": "dv08-door-viewer",
+   "model": "DV08",
+   "sources": [
+    "/17-猫眼/DV08 SN"
+   ],
+   "candidates": 10,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "dv08-door-viewer.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    },
+    {
+     "rel": "1-DV08 SN.jpg",
+     "out": "dv08-door-viewer-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 33
+    },
+    {
+     "rel": "2-DV08 SN.jpg",
+     "out": "dv08-door-viewer-3.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 72
+    },
+    {
+     "rel": "3-DV08 SN.jpg",
+     "out": "dv08-door-viewer-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 11
+    },
+    {
+     "rel": "4-DV08 SN.jpg",
+     "out": "dv08-door-viewer-5.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 17
+    },
+    {
+     "rel": "5-DV08 SN.jpg",
+     "out": "dv08-door-viewer-6.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 27
+    },
+    {
+     "rel": "6-DV08 SN.jpg",
+     "out": "dv08-door-viewer-7.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 16
+    },
+    {
+     "rel": "7-DV08 SN.jpg",
+     "out": "dv08-door-viewer-8.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 13
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "dv12-b-door-viewer",
+   "model": "DV12-B",
+   "sources": [
+    "/17-猫眼/DV12/DV12-B"
+   ],
+   "candidates": 4,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "dv12-b-door-viewer.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 16
+    },
+    {
+     "rel": "1-DV12-B.jpg",
+     "out": "dv12-b-door-viewer-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 54
+    },
+    {
+     "rel": "2-DV12-B.jpg",
+     "out": "dv12-b-door-viewer-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 1,
+     "tagged2022": true,
+     "kb": 23
+    },
+    {
+     "rel": "3-DV12-B.jpg",
+     "out": "dv12-b-door-viewer-4.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 15
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "dv12-s-door-viewer",
+   "model": "DV12-S",
+   "sources": [
+    "/17-猫眼/DV12/DV12-S"
+   ],
+   "candidates": 4,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "dv12-s-door-viewer.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 12
+    },
+    {
+     "rel": "1-DV12-S.jpg",
+     "out": "dv12-s-door-viewer-2.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 1,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "2-DV12-S.jpg",
+     "out": "dv12-s-door-viewer-3.webp",
+     "via": "psd",
+     "shape": "studio",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 15
+    },
+    {
+     "rel": "3-DV12-S.jpg",
+     "out": "dv12-s-door-viewer-4.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 39
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "fb001-ac-door-flush-bolt",
+   "model": "FB001 AC",
+   "sources": [
+    "/14-插销/FB001/FB001 AC"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "fb001-ac-door-flush-bolt.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 21
+    },
+    {
+     "rel": "1-FB001 AC.jpg",
+     "out": "fb001-ac-door-flush-bolt-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 49
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "fb001-ss-door-flush-bolt",
+   "model": "FB001 SS",
+   "sources": [
+    "/14-插销/FB001/FB001 SS"
+   ],
+   "candidates": 1,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "fb001-ss-door-flush-bolt.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 16
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "fb005-door-flush-bolt",
+   "model": "FB005",
+   "sources": [
+    "/14-插销/FB005 AC"
+   ],
+   "candidates": 2,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "fb005-door-flush-bolt.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    },
+    {
+     "rel": "1-FB005 AC.jpg",
+     "out": "fb005-door-flush-bolt-2.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 57
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "lh853-snet-lever-handle",
+   "model": "LH853 SNET",
+   "sources": [
+    "/3-执手锁/LH853/LH853 SNET/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "lh853-snet-lever-handle.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 18
+    },
+    {
+     "rel": "1-LH853 SNET.jpg",
+     "out": "lh853-snet-lever-handle-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "2-LH853 SNET.jpg",
+     "out": "lh853-snet-lever-handle-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 13
+    },
+    {
+     "rel": "3-LH853 SNET.jpg",
+     "out": "lh853-snet-lever-handle-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 33
+    },
+    {
+     "rel": "4-LH853 SNET.jpg",
+     "out": "lh853-snet-lever-handle-5.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 28
+    }
+   ],
+   "rejected": [],
+   "result": "filled"
+  },
+  {
+   "slug": "lh854-lever-handle",
+   "model": "LH854",
+   "sources": [
+    "/3-执手锁/LH854 SNET/图"
+   ],
+   "candidates": 5,
+   "kept": [
+    {
+     "rel": "首图.jpg",
+     "out": "lh854-lever-handle.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 20
+    },
+    {
+     "rel": "1-LH854 SNET.jpg",
+     "out": "lh854-lever-handle-2.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 19
+    },
+    {
+     "rel": "2-LH854 SNET.jpg",
+     "out": "lh854-lever-handle-3.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": true,
+     "kb": 29
+    },
+    {
+     "rel": "3-LH854 SNET.jpg",
+     "out": "lh854-lever-handle-4.webp",
+     "via": "psd",
+     "shape": "drawing",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 15
+    },
+    {
+     "rel": "4-LH854 SNET.jpg",
+     "out": "lh854-lever-handle-5.webp",
+     "via": "psd",
+     "shape": "scene",
+     "droppedWatermark": 1,
+     "droppedBadge": 0,
+     "tagged2022": false,
+     "kb": 24
+    }
+   ],
+   "rejected": [],
    "result": "filled"
   }
  ],
  "totals": {
-  "products": 2,
-  "filled": 2,
-  "images": 16,
-  "kb": 298,
-  "rejected": 5,
-  "viaPsd": 16,
-  "viaJpg": 0,
-  "tagged2022": 3
+  "products": 38,
+  "filled": 38,
+  "images": 136,
+  "kb": 4363,
+  "rejected": 16,
+  "viaPsd": 132,
+  "viaJpg": 4,
+  "tagged2022": 36
  }
 }

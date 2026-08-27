@@ -18,10 +18,28 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
+    "src": "/images/products/d101-ac-deadbolts.webp",
     "ratio": "1 / 1",
-    "label": "Hyland D101 AC deadbolts"
+    "label": "Hyland D101 AC Deadbolts"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/d101-ac-deadbolts-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D101 AC Deadbolts, view 2",
+      "sourceNote": "2022-watermarked"
+    },
+    {
+      "src": "/images/products/d101-ac-deadbolts-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D101 AC Deadbolts, view 3"
+    },
+    {
+      "src": "/images/products/d101-ac-deadbolts-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D101 AC Deadbolts, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "D101 AC Deadbolts | Canton Hyland",
