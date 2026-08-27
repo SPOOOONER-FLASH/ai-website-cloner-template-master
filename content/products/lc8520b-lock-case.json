@@ -6,8 +6,25 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A stainless steel mortise lock case with 85mm centre distance and 20mm backset, for interior wooden and metal doors.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "20mm"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless steel"
+    },
+    {
+      "label": "Application",
+      "value": "Interior wooden and metal doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

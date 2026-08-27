@@ -16,9 +16,11 @@ export default function robots(): MetadataRoute.Robots {
 
   if (!indexable) return { rules };
 
+  // No `host:` directive. Bing Webmaster Tools' robots.txt tester flags it as an error —
+  // it is a Yandex extension that Google ignores, and the canonical tags on all 471 pages
+  // already state the preferred host.
   return {
     rules,
     sitemap: absoluteUrl("/sitemap.xml"),
-    host: absoluteUrl("/").replace(/\/$/, ""),
   };
 }

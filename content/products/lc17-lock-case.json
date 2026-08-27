@@ -6,8 +6,25 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "An aluminium and steel mortise lock case with 16mm backset, sliding hook function, for sliding doors.",
+  "specs": [
+    {
+      "label": "Backset",
+      "value": "16mm"
+    },
+    {
+      "label": "Material",
+      "value": "Aluminium and steel"
+    },
+    {
+      "label": "Function",
+      "value": "Sliding hook"
+    },
+    {
+      "label": "Application",
+      "value": "Sliding doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

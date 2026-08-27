@@ -6,8 +6,21 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case with 85mm centre distance and 30mm backset, passage function.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "30mm"
+    },
+    {
+      "label": "Function",
+      "value": "Passage"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

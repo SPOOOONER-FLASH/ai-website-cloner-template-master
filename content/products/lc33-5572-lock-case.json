@@ -6,8 +6,21 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case, euro profile cylinder preparation, panic exit function, for emergency and escape doors.",
+  "specs": [
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    },
+    {
+      "label": "Function",
+      "value": "Panic exit"
+    },
+    {
+      "label": "Application",
+      "value": "Emergency and escape doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

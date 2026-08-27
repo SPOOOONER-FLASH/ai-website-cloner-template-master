@@ -6,8 +6,25 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case with 85mm centre distance and 50mm backset, passage function, for wooden and metal doors.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "50mm"
+    },
+    {
+      "label": "Function",
+      "value": "Passage"
+    },
+    {
+      "label": "Application",
+      "value": "Wooden and metal doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

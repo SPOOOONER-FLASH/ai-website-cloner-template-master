@@ -9,7 +9,16 @@
     "multi-point"
   ],
   "summary": "A paired device set for double escape doors, coordinating the active and inactive leaf.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Application",
+      "value": "Fire-rated double escape doors"
+    },
+    {
+      "label": "Function",
+      "value": "Push bar, active and inactive leaf"
+    }
+  ],
   "material": "Steel /Stainless Steel",
   "finishes": [
     "Satin Stainless"

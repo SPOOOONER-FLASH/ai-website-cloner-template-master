@@ -6,8 +6,25 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "An aluminium mortise lock case with 85mm centre distance and 40mm backset, for wooden and metal doors.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "40mm"
+    },
+    {
+      "label": "Material",
+      "value": "Aluminium case"
+    },
+    {
+      "label": "Application",
+      "value": "Wooden and metal doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

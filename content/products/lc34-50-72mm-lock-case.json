@@ -6,8 +6,29 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "An iron mortise lock case with 72mm centre distance and 50mm backset, euro profile cylinder preparation.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "72mm"
+    },
+    {
+      "label": "Backset",
+      "value": "50mm"
+    },
+    {
+      "label": "Material",
+      "value": "Iron case"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    },
+    {
+      "label": "Latch",
+      "value": "Square latch"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

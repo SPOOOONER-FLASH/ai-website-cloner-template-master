@@ -6,8 +6,21 @@
   "categoryPath": [
     "deadbolts"
   ],
-  "summary": "Deadbolts.",
-  "specs": [],
+  "summary": "A stainless steel deadbolt, single cylinder function, for entrance doors.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless steel body"
+    },
+    {
+      "label": "Function",
+      "value": "Single cylinder"
+    },
+    {
+      "label": "Application",
+      "value": "Entrance doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

@@ -6,8 +6,29 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case with 85mm centre distance and 60mm backset, euro profile cylinder preparation, four round bolts, for wooden doors.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    },
+    {
+      "label": "Bolts",
+      "value": "Four round bolts"
+    },
+    {
+      "label": "Application",
+      "value": "Wooden doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

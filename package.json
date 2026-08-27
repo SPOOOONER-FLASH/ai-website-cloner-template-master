@@ -43,6 +43,8 @@
     "export:segments:check": "node scripts/normalize-next-export-segments.mjs --check",
     "seo:audit": "node scripts/audit-seo.mjs --all",
     "cms": "node scripts/cms.mjs",
+    "content:enrich": "node scripts/enrich-product-specs.mjs",
+    "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs"
   },
   "dependencies": {

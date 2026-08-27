@@ -6,8 +6,29 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "An aluminium mortise lock case with 85mm centre distance and 30mm backset, euro profile cylinder preparation, for aluminium, wooden and metal doors.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "30mm"
+    },
+    {
+      "label": "Material",
+      "value": "Aluminium case"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    },
+    {
+      "label": "Application",
+      "value": "Aluminium, wooden and metal doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

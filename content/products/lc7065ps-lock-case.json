@@ -6,8 +6,25 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case with 70mm backset, euro profile cylinder preparation, passage function.",
+  "specs": [
+    {
+      "label": "Backset",
+      "value": "70mm"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Euro profile"
+    },
+    {
+      "label": "Function",
+      "value": "Passage"
+    },
+    {
+      "label": "Type",
+      "value": "Horizontal case"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],

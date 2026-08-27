@@ -6,8 +6,17 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "summary": "Lock case.",
-  "specs": [],
+  "summary": "A mortise lock case, passage function, for wooden and metal doors.",
+  "specs": [
+    {
+      "label": "Function",
+      "value": "Passage"
+    },
+    {
+      "label": "Application",
+      "value": "Wooden and metal doors"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
