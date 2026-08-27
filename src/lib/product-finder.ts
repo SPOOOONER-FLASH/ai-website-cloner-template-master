@@ -72,6 +72,23 @@ export const SECONDARY_FACETS: FacetKey[] = [
  */
 export const PAGE_SIZE = 20;
 
+/**
+ * Three consecutive page choices for the shared catalogue pager.
+ *
+ * First and Last are separate controls, so the numeric rail can stay calm and stable
+ * instead of mixing ellipses with distant endpoints. The current page sits in the
+ * centre whenever there is room; the window pins to either edge at the beginning and
+ * end of the result set.
+ */
+export function visiblePageNumbers(page: number, count: number): number[] {
+  if (count <= 0) return [];
+  if (count <= 3) return Array.from({ length: count }, (_, index) => index + 1);
+
+  const current = Math.min(Math.max(Math.trunc(page) || 1, 1), count);
+  const start = Math.min(Math.max(current - 1, 1), count - 2);
+  return [start, start + 1, start + 2];
+}
+
 /** Every value a product contributes to a given facet. */
 function valuesFor(product: Product, key: FacetKey): string[] {
   switch (key) {

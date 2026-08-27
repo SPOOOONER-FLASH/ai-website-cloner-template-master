@@ -1,25 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-
-/**
- * Page numbers to render, with gaps.
- *
- * A filtered view can produce any count, so the middle collapses rather than letting the
- * control wrap into three lines. The first and last page are always shown, so both ends
- * of the result set stay one click away.
- */
-export function pageNumbers(page: number, count: number): (number | null)[] {
-  if (count <= 7) return Array.from({ length: count }, (_, i) => i + 1);
-  const out: (number | null)[] = [1];
-  const from = Math.max(2, page - 1);
-  const to = Math.min(count - 1, page + 1);
-  if (from > 2) out.push(null);
-  for (let n = from; n <= to; n++) out.push(n);
-  if (to < count - 1) out.push(null);
-  out.push(count);
-  return out;
-}
+import { visiblePageNumbers } from "@/lib/product-finder";
 
 /**
  * Shared pager for the catalogue listings.
@@ -50,52 +32,63 @@ export function Pagination({
     <nav
       aria-label={label}
       className={cn(
-        "mt-64 flex flex-wrap items-center justify-between gap-16 border-t border-line pt-24",
+        "catalogue-pager mt-64 border-t border-line pt-24",
         className,
       )}
     >
-      <button
-        type="button"
-        onClick={() => onChange(page - 1)}
-        disabled={page === 1}
-        className="short-marker short-marker-compact text-c1 text-brand disabled:cursor-default disabled:text-ink-tertiary"
-      >
-        ← Previous
-      </button>
+      <div className="catalogue-pager-side catalogue-pager-side-start">
+        <button
+          type="button"
+          onClick={() => onChange(1)}
+          disabled={page === 1}
+          className="short-marker short-marker-compact text-c1 text-ink disabled:cursor-default disabled:text-ink-tertiary"
+        >
+          First
+        </button>
+        <button
+          type="button"
+          onClick={() => onChange(page - 1)}
+          disabled={page === 1}
+          className="short-marker short-marker-compact text-c1 text-ink disabled:cursor-default disabled:text-ink-tertiary"
+        >
+          ← Previous
+        </button>
+      </div>
 
-      <ol className="flex flex-wrap items-center gap-8">
-        {pageNumbers(page, pageCount).map((n, i) =>
-          n === null ? (
-            <li key={`gap-${i}`} aria-hidden="true" className="px-4 text-ink-tertiary">
-              …
-            </li>
-          ) : (
-            <li key={n}>
-              <button
-                type="button"
-                onClick={() => onChange(n)}
-                aria-current={n === page ? "page" : undefined}
-                aria-label={`Page ${n}`}
-                className={cn(
-                  "min-w-32 px-8 py-4 text-c1",
-                  n === page ? "bg-ink text-surface" : "text-ink hover:text-brand",
-                )}
-              >
-                {n}
-              </button>
-            </li>
-          ),
-        )}
+      <ol className="catalogue-pager-pages flex items-center gap-8">
+        {visiblePageNumbers(page, pageCount).map((n) => (
+          <li key={n}>
+            <button
+              type="button"
+              onClick={() => onChange(n)}
+              aria-current={n === page ? "page" : undefined}
+              aria-label={`Page ${n}`}
+              className="catalogue-pager-page min-w-38 px-10 py-6 text-c1"
+            >
+              {n}
+            </button>
+          </li>
+        ))}
       </ol>
 
-      <button
-        type="button"
-        onClick={() => onChange(page + 1)}
-        disabled={page === pageCount}
-        className="short-marker short-marker-compact text-c1 text-brand disabled:cursor-default disabled:text-ink-tertiary"
-      >
-        Next →
-      </button>
+      <div className="catalogue-pager-side catalogue-pager-side-end">
+        <button
+          type="button"
+          onClick={() => onChange(page + 1)}
+          disabled={page === pageCount}
+          className="short-marker short-marker-compact text-c1 text-ink disabled:cursor-default disabled:text-ink-tertiary"
+        >
+          Next →
+        </button>
+        <button
+          type="button"
+          onClick={() => onChange(pageCount)}
+          disabled={page === pageCount}
+          className="short-marker short-marker-compact text-c1 text-ink disabled:cursor-default disabled:text-ink-tertiary"
+        >
+          Last
+        </button>
+      </div>
     </nav>
   );
 }

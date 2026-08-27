@@ -663,6 +663,101 @@
     }
   }
 
+  /* -- Catalogue pagination --------------------------------------------- */
+  /* First/Previous and Next/Last anchor the two edges. Three consecutive
+     page choices stay centred, so the control never jumps when the catalogue
+     grows. Like product cards, page buttons are flat at rest and reveal the
+     thin frame + hard offset plane only on hover or keyboard focus. */
+  .catalogue-pager {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .catalogue-pager-side {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .catalogue-pager-side-end {
+    justify-content: flex-end;
+  }
+
+  .catalogue-pager-page {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: var(--color-ink);
+    box-shadow: none;
+    transition:
+      color var(--motion-fast) var(--motion-ease-crisp),
+      background-color var(--motion-fast) var(--motion-ease-crisp),
+      border-color var(--motion-fast) var(--motion-ease-crisp),
+      box-shadow var(--motion-fast) var(--motion-ease-crisp),
+      transform var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .catalogue-pager-page[aria-current="page"] {
+    border-color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .catalogue-pager-page:focus-visible {
+    border-color: var(--color-frame);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
+    transform: translate(-0.2rem, -0.2rem);
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.4rem;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .catalogue-pager-page:not([aria-current="page"]):hover {
+      border-color: var(--color-frame);
+      box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
+      transform: translate(-0.2rem, -0.2rem);
+    }
+  }
+
+  @keyframes catalogue-page-enter {
+    from {
+      opacity: 0.45;
+      transform: translateY(0.8rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .catalogue-page-enter {
+    animation: catalogue-page-enter var(--motion-medium) var(--motion-ease) both;
+  }
+
+  @media (max-width: 39.999rem) {
+    .catalogue-pager {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.4rem 1.6rem;
+    }
+
+    .catalogue-pager-pages {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      justify-self: center;
+    }
+
+    .catalogue-pager-side {
+      grid-row: 2;
+      gap: 1.2rem;
+    }
+
+    .catalogue-pager-side-end {
+      justify-self: end;
+    }
+  }
+
   /* -- Motion ------------------------------------------------------------ */
   /* One restrained system, 180–260ms. Links, framed cards, menus and slide
      changes share the same crisp motion language. */
@@ -726,19 +821,30 @@
     .short-marker-group::after,
     .nav-marker::after,
     .title-marker::after,
-    .home-accent-marker::after,
-    .home-editorial-media > img,
+     .home-accent-marker::after,
+     .catalogue-pager-page,
+     .catalogue-page-enter,
+     .home-editorial-media > img,
     .copy p > a,
     .inline-marker,
     .inline-marker-scope a {
       transition: none;
     }
 
+    .catalogue-page-enter {
+      animation: none;
+    }
+
     .hard-shadow-card:hover,
     .hard-shadow-card:focus-visible,
     .home-accent-surface:hover,
     .home-accent-surface:focus-visible,
-    .home-accent-surface:has(:focus-visible) {
+     .home-accent-surface:has(:focus-visible) {
+      transform: none;
+    }
+
+    .catalogue-pager-page:hover,
+    .catalogue-pager-page:focus-visible {
       transform: none;
     }
 

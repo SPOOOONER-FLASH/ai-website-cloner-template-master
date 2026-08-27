@@ -1,0 +1,30 @@
+{
+  "slug": "door-hardware-schedule-guide",
+  "title": "The Door Schedule: How Hardware Is Actually Specified",
+  "kind": "insight",
+  "publishedAt": "2026-08-27",
+  "summary": "Projects do not buy locks. They buy door types, and each door type is a set of hardware that has to agree with itself. The document that decides this is the door schedule, and it is worth understanding before you quote against one.",
+  "body": [
+    "A manufacturer's catalogue is organised by product: lock cases here, lever handles there, closers somewhere else. A building is not organised that way. A building is a list of doors, and every door needs a set of hardware whose parts have to agree with each other — the same backset, the same handing, the same fire rating, the same finish. The document that records this is the door hardware schedule, and on a commercial project it is what the order is actually written from.",
+    "If you sell into projects and have never seen one, this is roughly what a row looks like. A door type, say a fire-rated cross-corridor door leaf. Its dimensions and handing. Then a hardware set: a lock case with a stated backset and centre distance, a lever set on the plate that matches that centre distance, a euro cylinder keyed into the building's master system, a pair of hinges rated for the leaf weight, a closer with the right power size, and — because it is on an escape route — an exit device rather than a lock on the egress side. One row. Seven line items. Every one of them has to be compatible with the other six.",
+    "Two consequences follow, and they are the reason this document is worth understanding.",
+    "The first is that a project buyer is never comparing your lock against a competitor's lock. They are comparing whether your lock fits the set. A case with an 85 mm centre distance and a 55 mm backset is either right for the plate and the door preparation already specified, or it is not, and no amount of quality argument moves that. This is why the dimensional questions arrive before the price questions, and why a supplier who answers them slowly loses the enquiry before quoting.",
+    "The second is that hardware sets are where the quantities live. A schedule does not say two hundred locks. It says thirty of set HW-01, ninety of HW-02, and so on, and each set expands into its line items. A distributor pricing from a schedule needs the sets to expand cleanly into products they can order, which means a manufacturer who can supply the whole set is worth more than a cheaper one who supplies part of it — not because of loyalty, but because a split set means two lead times, two shipments and a coordination risk that lands on the distributor.",
+    "The practical implication for anyone reading a schedule for the first time: read down the set, not across the catalogue. Take one hardware set and satisfy every line in it before moving to the next. If a line cannot be matched, say so at that point rather than at quotation, because a set with a gap is more useful to the buyer as an early question than as a late surprise.",
+    "There are three questions worth asking before you quote against a schedule at all. Which sets are on escape routes, because those are governed by regulation rather than preference and the hardware is not interchangeable with the rest. Whether there is a master key system, because if there is, the cylinders are a single coordinated order and not a per-door line item. And what the finish is across the project, because finish is usually specified once for the whole building and then repeated silently in every row.",
+    "Our catalogue is organised by product because that is how a catalogue has to be organised. But the enquiries that turn into orders almost never arrive product by product. They arrive as a schedule, or as a photograph of one, and the answer that wins is the one that reads the set rather than the line. If you have a schedule, send it — the useful reply is which sets we can complete, which we can complete except for one item, and which we cannot, and that reply is faster than a line-by-line quotation."
+  ],
+  "heroImage": {
+    "src": "/images/company/hero-panic-exit-banner.webp",
+    "ratio": "1024 / 397",
+    "label": "Panic exit hardware installed on a commercial cross-corridor door"
+  },
+  "relatedModels": [
+    "001",
+    "LC04 85*60",
+    "607 PBBK",
+    "F100 SS"
+  ],
+  "seoTitle": "Reading a Door Hardware Schedule | Canton Hyland",
+  "seoDescription": "What a door hardware schedule is, how hardware sets expand into line items, and the three questions to ask before quoting against one."
+}

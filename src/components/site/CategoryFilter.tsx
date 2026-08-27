@@ -98,7 +98,10 @@ export function CategoryFilter({ products, options }: CategoryFilterProps) {
 
         {current.total ? (
           <>
-            <div className="mt-24 grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-3 xl:gap-42">
+            <div
+              key={`${active}-page-${current.page}`}
+              className="catalogue-page-enter mt-24 grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-3 xl:gap-42"
+            >
               {current.items.map((product, i) => (
                 <ProductCard key={product.slug} product={product} priority={i < 3} />
               ))}

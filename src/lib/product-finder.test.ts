@@ -12,6 +12,7 @@ import {
   selectionToParams,
   sortForDisplay,
   toggleValue,
+  visiblePageNumbers,
   FACET_LABELS,
   FACET_PARAM_NAMES,
   PAGE_SIZE,
@@ -19,6 +20,16 @@ import {
   SECONDARY_FACETS,
   type FacetKey,
 } from "./product-finder.ts";
+
+test("visiblePageNumbers keeps a three-page window with direct first and last controls", () => {
+  assert.deepEqual(visiblePageNumbers(1, 22), [1, 2, 3]);
+  assert.deepEqual(visiblePageNumbers(2, 22), [1, 2, 3]);
+  assert.deepEqual(visiblePageNumbers(3, 22), [2, 3, 4]);
+  assert.deepEqual(visiblePageNumbers(21, 22), [20, 21, 22]);
+  assert.deepEqual(visiblePageNumbers(22, 22), [20, 21, 22]);
+  assert.deepEqual(visiblePageNumbers(1, 2), [1, 2]);
+  assert.deepEqual(visiblePageNumbers(1, 0), []);
+});
 
 /** Minimal fixtures — only the fields the finder reads. */
 const make = (over) => ({

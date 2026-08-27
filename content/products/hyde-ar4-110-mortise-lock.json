@@ -1,0 +1,94 @@
+{
+  "model": "AR4-110",
+  "slug": "hyde-ar4-110-mortise-lock",
+  "name": "Security Mortise Lock Body",
+  "nameEs": "Cerradura de embutir de seguridad",
+  "series": "HYDE Argentina AR-4",
+  "categoryPath": [
+    "lock-cases"
+  ],
+  "summary": "A narrow mortise lock body configured for the Argentina AR-4 market collection, with latch and square deadbolt.",
+  "summaryEs": "Cerradura de embutir estrecha para la colección Argentina AR-4, con picaporte y cerrojo cuadrado.",
+  "specs": [
+    {
+      "label": "Factory reference",
+      "value": "6840"
+    },
+    {
+      "label": "Nominal lock body",
+      "value": "68 × 40",
+      "unit": "mm"
+    },
+    {
+      "label": "Faceplate",
+      "value": "25 × 210",
+      "unit": "mm"
+    },
+    {
+      "label": "Latch options",
+      "value": "Copper-plated zinc alloy or brass"
+    },
+    {
+      "label": "Key options",
+      "value": "Zinc alloy or brass; two keys"
+    }
+  ],
+  "specsEs": [
+    {
+      "label": "Referencia de fábrica",
+      "value": "6840"
+    },
+    {
+      "label": "Caja nominal",
+      "value": "68 × 40",
+      "unit": "mm"
+    },
+    {
+      "label": "Frente",
+      "value": "25 × 210",
+      "unit": "mm"
+    },
+    {
+      "label": "Opciones de picaporte",
+      "value": "Aleación de zinc cobreada o latón"
+    },
+    {
+      "label": "Opciones de llave",
+      "value": "Aleación de zinc o latón; dos llaves"
+    }
+  ],
+  "material": "Nickel-plated iron lock case",
+  "finishes": [
+    "Nickel-plated"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/argentina-ar4/hyde-ar4-110.webp",
+    "ratio": "1 / 1",
+    "label": "HYDE AR4-110 security mortise lock body",
+    "labelEs": "Cerradura de embutir de seguridad HYDE AR4-110"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/argentina-ar4/hyde-ar4-110-2.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 mortise lock body, alternate view",
+      "labelEs": "Cerradura HYDE AR4-110, vista alternativa"
+    },
+    {
+      "src": "/images/products/argentina-ar4/hyde-ar4-110-3.webp",
+      "ratio": "1 / 1",
+      "label": "HYDE AR4-110 mortise lock body with key",
+      "labelEs": "Cerradura HYDE AR4-110 con llave"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [
+    "AR4-140",
+    "AR4-101",
+    "AR4-1121"
+  ],
+  "seoTitle": "AR4-110 Security Mortise Lock | HYDE Argentina",
+  "seoDescription": "HYDE AR4-110 narrow security mortise lock body for Argentina-market distribution and OEM enquiries. Request specifications and a quotation."
+}
