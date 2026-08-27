@@ -35,7 +35,7 @@
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build && npm run test:export",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:export",
     "prebuild": "node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
     "content": "node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
     "assets:editorial": "node scripts/generate-editorial-srcsets.mjs",

@@ -7,6 +7,11 @@ const root = process.cwd();
 const read = (...segments: string[]) => readFileSync(join(root, ...segments), "utf8");
 const css = read("src", "app", "globals.css");
 
+/** The CMS file is the single source for the tree — see src/data/categories.ts. */
+const categories: { slug: string; image?: { src?: string } }[] = JSON.parse(
+  read("content", "categories.json"),
+).categories;
+
 test("homepage accent surfaces are visually neutral until hover or keyboard focus", () => {
   assert.match(
     css,
@@ -52,17 +57,22 @@ test("homepage editorial heroes use image motion without a framed surface", () =
   assert.doesNotMatch(css, /\.home-editorial-surface:hover\s*\{[\s\S]*?box-shadow/);
 });
 
-test("all catalogue category tiles ship with a real cover image", () => {
-  const categories = read("src", "data", "categories.ts");
+/*
+  This used to grep the source text of src/data/categories.ts for two slugs that had
+  once shipped without a cover. It broke the moment that module started reading
+  content/categories.json — the data was still correct, only its spelling had moved.
 
-  assert.match(
-    categories,
-    /slug: "lock-cylinders"[\s\S]*?image: \{ src: "\/images\/products\/70sn-lock-cylinder\.webp"/,
-  );
-  assert.match(
-    categories,
-    /slug: "sliding-hook-locks"[\s\S]*?image: \{ src: "\/images\/products\/881-ss-sliding-hook-lock\.webp"/,
-  );
+  Asserting on the data instead makes it both robust and stronger: it now covers all
+  sixteen tiles rather than the two that happened to fail once, so a new category added
+  through the CMS without a cover is caught too. Children are deliberately excluded —
+  they are a filter dimension, never a tile.
+*/
+test("all catalogue category tiles ship with a real cover image", () => {
+  const uncovered = categories
+    .filter((category) => !category.image?.src)
+    .map((category) => category.slug);
+
+  assert.deepEqual(uncovered, [], `categories with no cover image: ${uncovered.join(", ")}`);
 });
 
 test("current navigation is bold at rest without a persistent underline", () => {
