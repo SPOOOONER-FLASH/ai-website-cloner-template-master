@@ -1,3 +1,8 @@
 User-Agent: *
-Disallow: /
+Allow: /
+Allow: /llms.txt
+Disallow: /admin/
+Disallow: /*.txt$
 
+Host: https://cantonlock.com
+Sitemap: https://cantonlock.com/sitemap.xml

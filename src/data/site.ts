@@ -21,7 +21,7 @@ export const socialLinks = siteSettings.social;
  *
  * Currently the staging subdomain. Change to https://www.cantonlock.com at launch.
  */
-export const siteUrl = "https://spoonercantonlock.stahlock.com";
+export const siteUrl = "https://cantonlock.com";
 
 /**
  * Master switch for search indexing.
@@ -36,7 +36,7 @@ export const siteUrl = "https://spoonercantonlock.stahlock.com";
  *   1. the site is on its final domain (siteUrl updated), AND
  *   2. placeholder copy and unverified certification claims have been signed off.
  */
-export const indexable = false;
+export const indexable = true;
 
 export const siteName = "Canton Hyland";
 export const legalName = siteSettings.legalName;
