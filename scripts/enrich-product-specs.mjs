@@ -184,7 +184,13 @@ function summaryFrom(product, rows) {
   const phrase = head.join(" ");
   let text = `${article(phrase)} ${phrase}`;
   const tail = [];
-  if (cylinder) tail.push(`${cylinder.toLowerCase()} cylinder preparation`);
+  // "Solid Brass Cylinder" already carries the noun; appending gave "cylinder cylinder".
+  if (cylinder) {
+    const prepared = cylinder.toLowerCase();
+    tail.push(
+      prepared.includes("cylinder") ? `prepared for a ${prepared}` : `${prepared} cylinder preparation`,
+    );
+  }
   if (bolts) tail.push(bolts.toLowerCase());
   if (fn) tail.push(`${fn.toLowerCase()} function`);
   if (tail.length) text += `, ${tail.join(", ")}`;
