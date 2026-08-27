@@ -41,7 +41,7 @@
 
 ## 四、当前状态
 
-产品 431 · 静态页 473 · 图片 1342 张 · 测试 47 通过
+产品 431 · 静态页 479 · 图片 1342 张 · 测试 47 通过
 
 **已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
@@ -105,15 +105,35 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 甲方确认后期会给：**尺寸 / 用途 / finish**，届时每页差异化。
 到货后跑 `npm run content:enrich` 之前先扩 `CITED` 表，别手改 431 个 JSON。
 
+## 八·六、后缀码：甲方确认一次就能差异化 85 个页面
+
+目录里自带图例，**不是猜的**：
+
+| 证据 | 出处 |
+|---|---|
+| `PB=Polish Brass` | 6094 PBBK 的 Finish 字段 |
+| `SN=Satin Nickel` | 70710 SN |
+| `SC= Satin chrome` | 70610 SC |
+| `BN Black Nickle` | 9211 BNAC |
+| `Satin Stainless Steel (SS)` | 9080E |
+| W = 白色 | 甲方微信 2026-08-27 |
+
+**已确认**：PB / AB / AC / SN / SC / CP / SS / SSS / PSS / BN / SB / W。
+**待确认**：F（甲方说「应该是木把手吧」，不确定）、WL、SP、以及 ET / PS / BK 三个功能后缀。
+甲方确认后跑一个脚本即可给 32 个 stainless-steel-handles、30 个 lever-handles
+逐型号补 Finish，正文就不再重复。
+
 ## 九、怎么干活
 
 ```bash
-npm run check        # lint + typecheck + build，提交前必跑
+npm run check        # lint + typecheck + **test** + build + test:export，提交前必跑
+                     # ⚠ 真读输出，别只 grep 测试行——构建失败会被漏掉
 npm test             # 47 个测试
 npm run deploy:prep  # 构建并校验 out/ 是最新
 node scripts/audit-seo.mjs   # 读 out/ 的 HTML 审计 SEO
 npm run content:enrich       # 由型号命名规则+甲方 worldbid 文案补规格表
 npm run seo:indexnow         # 推送到服务器之后再跑
+npm run assets:editorial     # 加了编辑图必跑，否则 prebuild 直接终止构建
 ```
 
 **协作**：Claude 与 Codex 共用一个工作树，无锁。开工前 `git log --oneline -5`，
@@ -136,11 +156,15 @@ npm run seo:indexnow         # 推送到服务器之后再跑
 
 ## 十、下一个会话建议顺序
 
-1. **继续写指南文章** —— 第 1 篇已上线（backset/中心距）。选题见 `docs/content/EDITORIAL_PLAN.md`。
+1. **等西语术语表复核回来，然后铺 es 路由**
+   `docs/content/revision-terminologia-es.docx` 已发给甲方找母语同学看。
+   确认后：加 `src/app/es/products/**` 路由 + `SPANISH_MIRROR_PREFIXES` 加前缀，
+   471 → 900+ 页，hreflang 自动配对。**术语没确认前不要上线**——上线即进 sitemap。
+2. **确认后缀码对照表** —— 见第八·六节，甲方确认后可差异化 85 个重复页
+3. **继续写指南文章** —— 已上线 3 篇，选题见 `docs/content/EDITORIAL_PLAN.md`。
    ⚠ 选题 1（EN 1125 vs ANSI）要重写角度：我们没有 ANSI/BHMA，EN 1125 只覆盖一个型号。
-   讲标准本身可以，**任何"我们已认证"的暗示都不行**。Claude 撰稿，Codex 版式。
-2. **西语铺开**（第五节 2）——甲方问能否批量翻译，可以，方案见 `docs/content/SPANISH_PLAN.md`
-3. **修剩下 75 个产品的图**（见第七节）
+   讲标准本身可以，**任何"我们已认证"的暗示都不行**。
+4. **修剩下 75 个产品的图**（见第七节）
 
 **服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
 ⚠ **每次部署后必须去 Cloudflare 手动 Purge**。Cache Rule 设的是
