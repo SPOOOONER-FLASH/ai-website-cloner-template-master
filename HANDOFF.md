@@ -48,14 +48,18 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 |---|---|
 | GA4 | `G-RBTE7KF82P` 已收数据 |
 | Clarity | `y8utyrgvv0` 已收数据 |
-| IndexNow | key `6bb09b9b67d0e605a292835469627988`，验证文件在 `public/` |
+| IndexNow | key 文件在 `public/`；`npm run seo:indexnow` 推送后手动跑（读 out/sitemap.xml，467 条） |
 | GSC | 820 已索引 / 961 未索引 |
 | Bing | 533 indexed，86 errors |
 
 ## 五、⚠ 最要紧的两件未完成
 
-**1. GSC「重复网页，用户未选定规范网页」525 页**
-数量最大的未索引原因。需要逐类排查 canonical 是否自指。
+**1. 正文重复 → GSC 525「重复网页」+ Bing「内容过少」**
+**不是 canonical 问题**：471 页 canonical 全部自指，已验证。真因是正文本身重复。
+已修 36 个（44 个空规格表 → 18）。剩下的靠数据解决不了，需要甲方定：
+32 个 stainless-steel-handles / 30 个 lever-handles / 18 个 bathroom-accessories
+各自 summary 完全相同、只有 1 行 Material——给尺寸用途，或合并成带变体的单页。
+⚠ finish 后缀（SNET/PBET）不可推断，21 个样本 4 个矛盾，别再试。
 
 **2. 西语只有 7 / 471 页**
 `/es/` 导航的 href 全指向英文页，两个语区形成闭环。
@@ -66,9 +70,9 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | 类型 | 页数 | 说明 |
 |---|---|---|
 | `<h1>` 缺失 | 4 | 需定位是哪 4 页 |
-| meta 描述过短 | 26 | 多为分类页 |
-| 标题过短 | 25 | 同上 |
-| 内容过少 | 25 | 44 个产品规格表为空 |
+| meta 描述过短 | 26 | 建成品里只有 14 页 <110 字符：/contact/ 74、/company/ 82、/products/knob-locks/ 91、/downloads/ 98 |
+| 标题过短 | 25 | 建成品里 19 页 <40 字符，多为 d101-* 系列。差额是旧站 index.php URL，301 后自然消失 |
+| 内容过少 | 25 | 已修大部分，见第五节 1 |
 | `<img>` 缺 alt | 4 | |
 
 ## 七、需要甲方给数据才能推进
@@ -94,6 +98,8 @@ npm run check        # lint + typecheck + build，提交前必跑
 npm test             # 47 个测试
 npm run deploy:prep  # 构建并校验 out/ 是最新
 node scripts/audit-seo.mjs   # 读 out/ 的 HTML 审计 SEO
+npm run content:enrich       # 由型号命名规则+甲方 worldbid 文案补规格表
+npm run seo:indexnow         # 推送到服务器之后再跑
 ```
 
 **协作**：Claude 与 Codex 共用一个工作树，无锁。开工前 `git log --oneline -5`，
