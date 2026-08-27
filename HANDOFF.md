@@ -48,7 +48,7 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 |---|---|
 | GA4 | `G-RBTE7KF82P` 已收数据 |
 | Clarity | `y8utyrgvv0` 已收数据 |
-| IndexNow | key 文件在 `public/`；`npm run seo:indexnow` 推送后手动跑（读 out/sitemap.xml，467 条） |
+| IndexNow | 2026-08-27 首次提交成功，467 条 200 OK。`npm run seo:indexnow`，**推送并确认服务器已 pull 之后再跑** |
 | GSC | 820 已索引 / 961 未索引 |
 | Bing | 533 indexed，86 errors |
 
@@ -91,6 +91,11 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 
 **不做**：经销商查询 · 网站装修拖拽编辑器
 
+## 八·五、甲方明确的下一批数据
+
+甲方确认后期会给：**尺寸 / 用途 / finish**，届时每页差异化。
+到货后跑 `npm run content:enrich` 之前先扩 `CITED` 表，别手改 431 个 JSON。
+
 ## 九、怎么干活
 
 ```bash
@@ -122,10 +127,28 @@ npm run seo:indexnow         # 推送到服务器之后再跑
 
 ## 十、下一个会话建议顺序
 
-1. **排查 GSC 525 个重复网页**（第五节 1）
-2. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
+1. **写指南文章** —— 见 `docs/content/EDITORIAL_PLAN.md`，选题 1–3 优先。
+   基础设施全就绪（`/news/[slug]/`、`kind:"insight"`→TechArticle、`relatedModels` 内链），
+   `content/news/` 是 0 篇。Claude 撰稿，Codex 版式。
+2. **Cloudflare 缓存 HTML** —— 见下方「未做的一件外部配置」，性能第一优先，但要在 CF 后台改。
+3. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
    前台仍读 `src/data/` 硬编码数组，是后台唯一的假功能
-3. **西语铺开**（第五节 2）
+4. **西语铺开**（第五节 2）
+
+**未做的一件外部配置（需要 Cloudflare 后台，代码改不了）**
+
+实测 `cf-cache-status: DYNAMIC`，HTML 完全没走边缘缓存，每个访客都回源到法兰克福。
+源站已经发 `Cache-Control: public, max-age=300`，但 Cloudflare 默认只缓存静态扩展名，
+HTML 必须显式加 Cache Rule：
+
+    Rules → Caching rules → Create rule
+    表达式  (http.request.uri.path.extension eq "") or (ends_with(http.request.uri.path, "/"))
+    Cache eligibility        Eligible for cache
+    Edge TTL                 Override origin → 1 hour
+    Browser TTL              Respect origin
+
+发布后必须 Purge Everything，之后每次部署也要 purge（或改用 Cache Tag）。
+验证：`curl -sI https://cantonlock.com/ | grep cf-cache-status` 应为 HIT。
 
 **服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
 ⚠ 证书 **2026-12-14 到期**且已开 HSTS（一年）——过期未续则网站完全打不开，
