@@ -144,12 +144,16 @@ export function WelcomeIntro({
             </div>
             <div className="col-span-6 flex flex-col justify-between text-c1 text-ink">
               <p className="whitespace-pre-line">{text.company}</p>
-              {/* Monochrome vector certification marks — inherits --color-ink. */}
+              {/*
+                Monochrome vector certification mark — inherits --color-ink.
+                Was two marks; the ANSI/BHMA Grade 3 box was removed on 2026-08-27 after
+                the client confirmed no such certification exists. Ratio narrowed to match.
+              */}
               <MediaPlaceholder
-                ratio="87 / 46"
+                ratio="41 / 46"
                 src="/images/company/certification-marks.svg"
-                label="ISO 9001 and ANSI/BHMA Grade 3 certification marks"
-                className="w-[min(8.57rem,11.552083vw)] sm:w-[min(8.57rem,5.95208333vw)]"
+                label="ISO 9001 certification mark"
+                className="w-[min(4.04rem,5.446vw)] sm:w-[min(4.04rem,2.806vw)]"
               />
             </div>
             <div className="col-span-6 mt-48 text-c1 text-ink-secondary [grid-column-end:-1]">

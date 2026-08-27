@@ -59,7 +59,21 @@ export interface CertificateRecord {
   issued: string;
   /** The EXACT model the document covers. Do not generalise this to a product family. */
   coversModel: string;
-  image: ImageRef;
+  /**
+   * Whether the scan may be published and offered as a download.
+   *
+   * False for all current records. Both issuers restrict redistribution: the Intertek
+   * reports carry "Only the Client is authorized to permit copying or distribution of
+   * this report and then only in its entirety", and this site was publishing page 1 of a
+   * 13-page report. The same clause requires written Intertek approval before their name
+   * or marks are used in advertising. CELAB's certificate carries an equivalent notice.
+   *
+   * Stating the facts below — standard, issuer, report number, model, date — is not
+   * redistribution and stays public. Flip an entry to true once the issuer's written
+   * permission is on file.
+   */
+  publish: boolean;
+  image?: ImageRef;
 }
 
 /**
@@ -68,6 +82,23 @@ export interface CertificateRecord {
  * for model 305, so these are presented as company credentials — they are NOT
  * attached to individual product records. Mapping current SKUs to test reports
  * needs the client to confirm which models each report still covers.
+ *
+ * ⚠ A FOURTH RECORD WAS REMOVED, DO NOT RESTORE IT.
+ *
+ * The EN 1154 floor spring report (Intertek 151120057GZU-001, model KD070/20-101) named
+ * KALE KILIT VE KALIP SANAYI A.S of Istanbul as the applicant and KALE ARCO as the trade
+ * mark; Canton Hyland appears only as the contract manufacturer. It is a customer's
+ * document, published here by mistake, and the scan has been deleted from the repository
+ * along with its /downloads entry.
+ *
+ * The three that remain ARE Canton Hyland's own — the EN 1125 report names Canton Hyland
+ * as both applicant and manufacturer with HYLAND as the trade mark, and the 607 SS ET
+ * report is rendered to Canton Hyland. The client's message that "EN 1125 is a KALE
+ * model" is mistaken; only the floor spring was KALE's. They are withheld for a different
+ * reason — see `publish` above.
+ *
+ * There is no ANSI/BHMA certification. The client has confirmed this outright, so no
+ * product record may carry an ANSI grade.
  */
 export const certificates: CertificateRecord[] = [
   {
@@ -76,25 +107,7 @@ export const certificates: CertificateRecord[] = [
     reference: "130722068GZU-001",
     issued: "7 November 2013",
     coversModel: "KD070/30-290",
-    image: {
-      src: "/images/certificates/intertek-en1125-panic-device.webp",
-      ratio: "604 / 800",
-      label: "Intertek EN 1125 test report for Hyland panic exit device KD070/30-290",
-      labelEs: "Informe de ensayo Intertek EN 1125 del dispositivo antipánico Hyland KD070/30-290",
-    },
-  },
-  {
-    title: "EN 1154 — Controlled door closing devices",
-    issuer: "Intertek Testing Services Shenzhen Ltd., Guangzhou Branch",
-    reference: "151120057GZU-001",
-    issued: "17 June 2016",
-    coversModel: "KD070/20-101",
-    image: {
-      src: "/images/certificates/intertek-en1154-floor-spring.webp",
-      ratio: "604 / 800",
-      label: "Intertek EN 1154 test report for floor spring KD070/20-101",
-      labelEs: "Informe de ensayo Intertek EN 1154 del cierrapuertas de suelo KD070/20-101",
-    },
+    publish: false,
   },
   {
     title: "Tubular door lock durability test",
@@ -102,12 +115,7 @@ export const certificates: CertificateRecord[] = [
     reference: "140306043GZU-001",
     issued: "28 April 2014",
     coversModel: "607 SS ET",
-    image: {
-      src: "/images/certificates/intertek-tubular-lock-durability.webp",
-      ratio: "604 / 800",
-      label: "Intertek durability test report for tubular door lock 607 SS ET",
-      labelEs: "Informe Intertek de durabilidad de la cerradura tubular 607 SS ET",
-    },
+    publish: false,
   },
   {
     title: "CE Certificate of Conformity — EN 1125:2008",
@@ -115,12 +123,7 @@ export const certificates: CertificateRecord[] = [
     reference: "See certificate",
     issued: "2010",
     coversModel: "Panic exit device series",
-    image: {
-      src: "/images/certificates/celab-ce-panic-exit-device.webp",
-      ratio: "604 / 800",
-      label: "CELAB CE certificate of conformity for Hyland panic exit devices",
-      labelEs: "Certificado CE de conformidad CELAB para dispositivos antipánico Hyland",
-    },
+    publish: false,
   },
 ];
 

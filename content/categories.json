@@ -204,7 +204,7 @@
       "image": {
         "src": "/images/products/ansi-grade-3-keyed-deadbolt.webp",
         "ratio": "1 / 1",
-        "label": "ANSI Grade 3 keyed deadbolt lock set with strike plate"
+        "label": "Keyed deadbolt lock set with strike plate"
       }
     },
     {
@@ -384,8 +384,9 @@
       "nameZh": "锁芯",
       "summary": "Profile and keyed cylinders, including master-key system applications.",
       "image": {
+        "src": "/images/products/70sn-lock-cylinder.webp",
         "ratio": "1 / 1",
-        "label": "Lock cylinder"
+        "label": "Hyland 70SN profile lock cylinder with keys"
       }
     },
     {
@@ -394,8 +395,9 @@
       "nameZh": "推拉门钩锁",
       "summary": "Hook-lock hardware for sliding doors and narrow-stile applications.",
       "image": {
+        "src": "/images/products/881-ss-sliding-hook-lock.webp",
         "ratio": "1 / 1",
-        "label": "Sliding hook lock"
+        "label": "Hyland 881 SS sliding hook lock set"
       }
     }
   ]

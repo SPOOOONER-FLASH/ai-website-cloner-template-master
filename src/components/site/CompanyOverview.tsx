@@ -145,14 +145,21 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             <div className="col-span-full grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
               {certificates.map((certificate) => (
                 <article key={certificate.reference} className="border-t border-line pt-16">
-                  <MediaPlaceholder
-                    {...certificate.image}
-                    label={localiseImageLabel(
-                      certificate.image.label,
-                      certificate.image.labelEs,
-                    )}
-                    className="bg-surface-alt object-contain"
-                  />
+                  {/*
+                    The scan renders only when the issuer's written permission is on file.
+                    See the `publish` note in src/data/company.ts — the report facts below
+                    are ours to state, the documents are not ours to redistribute.
+                  */}
+                  {certificate.publish && certificate.image ? (
+                    <MediaPlaceholder
+                      {...certificate.image}
+                      label={localiseImageLabel(
+                        certificate.image.label,
+                        certificate.image.labelEs,
+                      )}
+                      className="bg-surface-alt object-contain"
+                    />
+                  ) : null}
                   <h3 className="mt-16 text-h3 text-ink">{certificate.title}</h3>
                   <dl className="mt-16 space-y-8 text-c2 text-ink-secondary">
                     {[

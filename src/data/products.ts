@@ -27,7 +27,9 @@ import type { Product } from "./types";
  * credentials in src/data/company.ts and NOT attached to individual products.
  * Per-product entries carry only:
  *   - ISO 9001, stated company-wide by the client and dated 2002
- *   - ANSI Grade 3, only where the client's own product name asserts it
+ *   - no ANSI/BHMA grade anywhere: the client confirmed on 2026-08-27 that there is no
+ *     BHMA certification, and the one record whose name asserted "ANSI Grade 3" has been
+ *     renamed. Do not reintroduce a grade from a product name.
  * Every claim still needs checking against a real test report before launch.
  */
 /**

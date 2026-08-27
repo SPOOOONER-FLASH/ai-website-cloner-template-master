@@ -108,7 +108,7 @@ collections:
         required: false
         summary: "{{fields.name}}"
         fields:
-          - { name: "name", label: "名称", widget: "string", hint: "例如 ISO 9001、ANSI Grade 3" }
+          - { name: "name", label: "名称", widget: "string", hint: "例如 ISO 9001（只填真实持有的认证）" }
           - { name: "standard", label: "标准编号", widget: "string", required: false }
           - { name: "downloadId", label: "关联的证书文件 id", widget: "string", required: false }
         hint: "⚠ 只有当你手上有一份点名「本型号」的检测报告时，才可以在这里填认证。填错不是笔误，是合规问题。"
