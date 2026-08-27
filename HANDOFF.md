@@ -1,437 +1,128 @@
-# 交接说明 — Canton Hyland / HYDE 官网
+# 交接 — Canton Hyland / HYDE 官网
 
-> 新会话请**先读这一份**，再按需读 PROGRESS.md 和 BUILD_PLAN.md。
-> 最后更新：2026-08-25
+> 新会话先读这份，再按需读 `docs/collaboration/agent-updates/`（Claude × Codex 互通进度）。
+> 最后更新：2026-08-27
 
----
+## 一、这个站是干什么的
 
-## 一、这个站是干什么的（最重要，会改变优先级判断）
+**不卖给建筑商。** 目标是海外经销商和项目采购，衡量标准是**产生多少封询盘 / 多少人点去阿里**。
+成交发生在邮箱和阿里，不在本站。所以 FSB 那套 BIM 库、招标文本、门规划服务**价值很低，不要抄**。
 
-甲方 2026-08-24 明确：
+**HYDE 是品牌**，Canton Hyland Hardware (Group) Co., Ltd. 是公司主体。
 
-- **不卖给建筑商/建筑师。** 目标客户是海外经销商和项目采购。
-- **最终目的是引流到两个地方：邮箱询盘、阿里巴巴店铺。** 成交在那两个渠道发生，不在本站。
-- 所以本站的定位是**品牌展示 + 产品展示**，衡量标准是「产生多少封询盘 / 多少人点去阿里」。
-- 网站是公司的线上门面：用高格调视觉、可信而详尽的品牌叙事和丰富准确的产品矩阵建立采购信任；
-  同时持续增强 SEO 与 GEO/AEO，让传统搜索和 AI 答案引擎都更容易发现、理解并引用 HYDE。
-- 站内成交、购物车、订单和开放会员不是当前目标。若未来增加登录，首期唯一用户是甲方
-  HYDE / Cantonlock 内部员工；目前静态站足以完成业务目标，登录与数据库继续暂缓。
-
-**这条推翻了早期按 FSB 做对标时的一些判断。** FSB 是德国高端品牌，面向建筑师做规格制定，
-所以它有 BIM 库、招标文本、门专业规划服务。这些对我们**价值很低**，不要照抄。
-真正值钱的是：拿到联系方式、把人送到阿里、让人相信这家工厂是真的。
-
-品牌关系：**HYDE 是品牌**，Canton Hyland Hardware (Group) Co., Ltd. 是背后的公司主体。
-页头只放 HYDE 标识，公司全称出现在页尾、公司页和 Organization 结构化数据里。
-
----
-
-## 二、技术底座与硬约束
+## 二、硬约束
 
 | | |
 |---|---|
-| 框架 | Next.js 16 App Router，**`output: "export"` 静态导出** |
-| 部署 | 公共站仍是纯静态；`main` push 后 GitHub Actions 在 Ubuntu 构建，配置 SSH secrets 时才 rsync；服务器**不跑 Node、没有数据库** |
-| CMS | Decap CMS，编辑写 GitHub 上的 JSON，每次保存 = 一次提交 |
-| 域名 | 现为 `spoonercantonlock.stahlock.com`（临时），正式域名 `cantonlock.com` 未启用 |
-| 索引 | **`indexable = false`，全站 noindex** — 这是决定不是疏漏，等正式域名 |
+| 框架 | Next.js 16 App Router，`output: "export"` 静态导出 |
+| 正式域名 | **cantonlock.com**（已上线，Cloudflare CDN + Sectigo 证书） |
+| 服务器 | 腾讯云法兰克福 `43.131.27.225`，宝塔 + nginx，与 stahlock.com 共用 |
+| 部署 | 推送 GitHub → 服务器 crontab 每 5 分钟 `git pull` → nginx 发 `out/` |
+| CMS | Decap，编辑写 GitHub JSON |
 
-### 由静态导出衍生的规则
+**由静态导出衍生的规则**
 
-1. **每个动态路由必须有 `generateStaticParams()`**，且不能返回空数组（会构建失败）。
-2. **没有服务端**，所以询盘走 Web3Forms 直接 POST，搜索靠构建期索引 + 浏览器匹配。
-3. **`out/` 目前仍提交进仓库**。改完必须 `npm run deploy:prep`，并完整提交旧文件删除、
-   新 chunk、平铺 RSC 与响应式图片；不要只提交已跟踪文件。
-4. CMS 发布到 `main` 会触发 GitHub Actions 的 Linux 构建；当前 workflow 只用 `SSH_HOST`
-   判断是否**尝试** SSH 发布，其余 secret 缺失仍会在执行时失败。rsync 写入 secret 指定的
-   `SSH_TARGET_DIR`，但该值和服务器拓扑不可见，不能断言它直接写 live。workflow 本身未显式
-   实现版本化 release、原子切换或上一版归档，故在服务器方案核实前不要仅靠填 secret 启用。
-   生产环境还存在一个未确认的发布/写入机制；每次发布后必须比对线上 HTML 指纹、RSC 200 和
-   资源 URL，不能只看 workflow 显示 Success。
+1. 每个动态路由必须有 `generateStaticParams()`，且不能返回空数组。
+2. 没有服务端：询盘走 Web3Forms，搜索靠构建期索引。
+3. **`out/` 提交进仓库**，改完必须 `npm run deploy:prep` 再提交。
+4. 「CMS 保存 ≠ 上线」，还需要有人构建并推送。
 
-### 2026-08-25 生产发布与性能实测
+## 三、内容纪律（违反会造成商业风险）
 
-- 性能修复提交 `36f24b30` 已进入 `main`。Build and deploy 与 CI 均通过；但该 run 未获得
-  `SSH_HOST`，所以 Actions 的 SSH deploy step 明确跳过；其余三个部署 secret 的状态未知。
-  生产随后由**非本次 GitHub Actions SSH deploy step 的机制**更新，具体发布任务或写入者仍待
-  服务器/托管面板权限确认。
-- 上线后生产首页与该提交的 `out/index.html` 字节数和 SHA-256 完全一致；首页只首发 1 张 Hero，
-  393px DPR1 使用 14,502 B 的 800w 候选，联系页及分类/产品详情静态路由的点号 RSC payload
-  抽查均为 200。
-- 前端图片与 RSC 阻塞已经关闭，但生产 HTML 首字节仍在同轮样本中波动约 1.7–5.6 秒；响应未见
-  明确 `Cache-Control`，而相同内容的 ETag / Last-Modified 仍约每 5–10 秒变化。剩余瓶颈属于
-  源站、未知发布/写入机制与缓存配置，不应再用扩大图片压缩或把静态站改成数据库 SSR 来掩盖。
-- 服务器负责人按 `docs/deployment/STATIC_SITE_PERFORMANCE_RUNBOOK.md` 定位发布/写入者、统一发布链路、
-  配置缓存并复测；在拿到服务器 shell 或控制面板权限前，仓库侧不能诚实宣称这部分已经修复。
-
----
-
-## 三、内容纪律（**违反会造成商业风险，不是代码风格问题**）
-
-这一条是这个项目最重要的约定，历次会话都在遵守：
-
-- **没有真实数据就留空，不要猜。** 空的规格表是诚实的，编造的规格表是事故 ——
-  采购商会照着它下单。
-- **认证只能对应点名该型号的检测报告。** 手上四份报告只覆盖
-  KD070/30-290、KD070/20-101、607 SS ET。不能把兄弟型号的证书套用过去。
+- **没有真实数据就留空，不要猜。** 空规格表是诚实的，编造的是事故——采购商照着下单。
+- **认证只能对应点名该型号的检测报告。** 手上四份只覆盖 KD070/30-290、KD070/20-101、607 SS ET。
 - **案例只有甲方确认供过货才能标「真实项目」**，否则一律「代表性应用」。
-- **FAQ 里商业性答案（起订量、交期、付款方式、OEM 政策）留空等甲方填**，
-  未回答的不渲染、不进结构化数据。
-- 已知需要甲方拍板的冲突都记在 `docs/research/legacy/旧站素材迁移报告.xlsx`。
-
----
+- **FAQ 商业性答案（起订量、交期、付款、OEM）留空等甲方填。**
 
 ## 四、当前状态
 
-**产品 431 个 · 静态页面 471 个 · 规格 1023 行 · 图片 1342 张**
+产品 431 · 静态页 471 · 图片 1342 张 · 测试 47 通过
 
-> 2026-08-24 更新：硬盘 PSD 导入 + SEO 重写完成，见下方「近期变更」。
+**已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
+SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
+（20/页 + 分面折叠 + 独立滚动）、阿里深链接、GA4 + Clarity、旧站 URL 301。
 
-### 已完成
-
-| 模块 | 状态 |
-|---|---|
-| 首页、产品总览/分类/详情、选型器、案例、下载中心、公司、联系 | ✅ |
-| 西语版（首页、公司、联系、案例） | ✅ |
-| 新闻 `/news`（press-release / insight 两类） | ✅ 结构完成，**0 篇内容** |
-| FAQ `/faq` | ✅ 15 问，8 已答、7 等甲方 |
-| 价格表索取 `/request/price-list` | ✅ 五字段短表单 |
-| 站内搜索 | ✅ 461 条索引，构建期生成，浏览器匹配 |
-| 弹窗 | ✅ **停留 10 秒触发、30 分钟冷却**、两张卡片、可分别关闭、非模态 |
-| 产品视频 | ✅ YouTube/Vimeo 链接或自托管 mp4，自动识别 |
-| 产品富文本描述 | ✅ Markdown，限定按钮（防止粘贴带进字体标签） |
-| 内容健康度看板 `/status` | ✅ 构建期算真数，非模拟 |
-| CMS 五大栏目 | ✅ 产品 / 案例 / 新闻 / 分类与下载 / 网站设置（弹窗·导航·基础设置·FAQ） |
-| CMS 皮肤 + 可视化预览 + 两栏表单 | ✅ UEESHOP 风格 |
-| 阿里店铺入口 | ✅ 页尾「How to buy」 |
-| SEO 元数据 | ✅ 471 页全部有 canonical + hreflang + OG + Twitter card，字段长度达标 |
-| `/llms.txt` | ✅ 构建期从目录数据生成，供 AI 答案引擎读取 |
-
-### 近期变更（2026-08-24）
-
-| 变更 | 结果 |
-|---|---|
-| 从硬盘 PSD 提取无水印原图 | 有图产品 **150 → 319**，完全缺图 **281 → 112** |
-| SEO 字段按 Google/Bing 长度重写 | 构建产物有问题的页面 **427 → 1**（剩下那个是 `/admin`，本就 Disallow） |
-| 筛选器属性归一 | 大小写合并；筛选器实际选项数见下方「属性字段现状」 |
-| 规格标签合并同义词 | 38 → 32 个标签，`Application` 覆盖 80 → 130 个产品 |
-| Product Finder 改造 | 分页 20/页；分类页与 Finder 共用分页；无图产品排到最后 |
-| 双 agent 轻量协作 | 无全局锁；完成即小提交；每个提交附独立 update；`out/` 使用构建接力棒 |
-| 弹窗时序锁进测试 | `src/lib/promo-settings.test.ts`；`npm test` 已接入 CI |
-| 新增 `/llms.txt` | 从目录数据生成，`indexable=false` 时降级为暂存声明 |
-| 新增 `public/seo/og-default.png` | 132 个页面此前没有社交卡片图 |
-| sitemap 补齐 | 加入 `/product-finder`、`/faq`、`/request/price-list` |
-| 首屏与静态导出性能修复 | Hero 首次只挂 1 张；16 张 editorial 生成 48 个响应式候选；Windows RSC 平铺；build 后产物测试接入 CI/deploy |
-
-**新增脚本**（都是先报告、加 `--write` 才落盘）：
-
-```
-scripts/import-drive-images.mjs      从硬盘 PSD 提取无水印图并挂到产品上
-scripts/lib/psd.mjs                  PSD 图层读取（无第三方依赖）
-scripts/lib/psdflatten.mjs           跳过水印层/角标层重新合成
-scripts/lib/debadge.mjs              没有 PSD 时按白底涂掉角标
-scripts/lib/marks.mjs                四种品牌标记检测
-scripts/audit-seo.mjs                读 out/ 的 HTML 审计标题/描述/OG/结构化数据
-scripts/generate-product-seo.mjs     重写 431 个产品的 seoTitle / seoDescription
-scripts/normalise-product-data.mjs   材质/表面处理/门型大小写归一
-scripts/consolidate-spec-labels.mjs  规格表同义标签合并
-scripts/build-og-image.mjs           生成默认 OG 图
-```
-
-**性能与可移植静态产物脚本：**
-
-```text
-scripts/generate-editorial-srcsets.mjs       生成/校验 48 个白名单 editorial WebP 候选
-scripts/normalize-next-export-segments.mjs   平铺 Next 16.3 Windows 错误生成的 RSC segment
-npm run test:export                          build 后检查 Hero/srcset/产品图隔离/RSC 产物
-```
-
-### 未完成 / 已知问题
-
-1. **112 个产品仍无图片**（431 中的 26%）。这些型号在硬盘上要么没有目录，要么目录里
-   只有 `雷茵/`（第三方品牌，不可用）。**需要甲方补拍或确认型号对应关系**，
-   对不上的清单在 `docs/research/legacy/drive-match.json` 的 `unmatched`（151 条）。
-2. **84 张已发布图片带 2022 年 `www.cantonlock.com` 斜向水印**，数据里标了
-   `sourceNote: "2022-watermarked"`。甲方同意先用，拿到干净原片后按这个字段批量替换：
-   `grep -rl '2022-watermarked' content/products/`
-3. **44 个产品规格表为空**，且规格中位数只有 2 行，整体偏薄。
-4. **`content/categories.json` 与 `downloads.json` 改了不生效** ——
-   前台仍读 `src/data/{categories,downloads}.ts` 的硬编码数组。
-   **这是后台里唯一「看着能用其实没用」的地方，优先修。**
-5. **Product Finder 的结果区完全靠客户端渲染** —— 构建出的 HTML 里有目录数据但
-   **0 个产品链接**。已补 ItemList 结构化数据兜底，但要让爬虫和 AI 引擎跟到具体型号，
-   需要服务端渲染初始列表，或在页面底部加一个静态型号索引。
-   **这是可见的设计改动，等甲方点头再做。**（分页本身已完成，不影响这一条。）
-6. **属性字段里混进了 44 个整句话**，每一条在筛选器里都是一个独立勾选框。
-
-   ⚠ 之前这份文档写「材质 71 → 41」是不准确的：41 是**值型条目**去重后的数量，
-   自由文本那些并没有被归一化，仍然在筛选器里。现状：
-
-   | 字段 | 筛选器选项总数 | 其中值型 | 其中自由文本（需人工改写） |
-   |---|---|---|---|
-   | material | 63 | 41 | **22** |
-   | finishes | 92 | 78 | **14** |
-   | doorTypes | 95 | 87 | **8** |
-
-   例如 material 填成 "steel material with spray painting, different finishes are
-   available."。归一脚本只报告不擅自改写——把句子改写成值是编辑判断：
-   `node scripts/normalise-product-data.mjs`
-7. **门型有 11 组单复数重复**（Fire Door / Fire Doors 等），同上，需人工定夺。
-8. **12 行规格值填的是门的构造而不是用途**（"Single Door" 填在 Use 里），
-   `node scripts/consolidate-spec-labels.mjs` 会列出来。
-9. **新闻详情路由暂存为 `src/app/news/[slug]/page.tsx.template`** ——
-   静态导出下空数组会让构建失败，写完第一篇后 `git mv` 启用，同目录有 README。
-10. `hero-designed-for.webp` 源图裁坏了（右侧 PUSH 被切）。
-11. `aid 1608` 未导入：旧站列表页标型号 `024`，详情页规格块写 `023 ETAN`，自相矛盾。
-12. 全站 noindex，等正式域名。**`indexable` 一旦翻成 true，sitemap、robots.txt、
-    llms.txt 三者同时生效**，已实测过输出（sitemap 467 条 URL）。
-
----
-
-## 五、★ 硬盘素材：缺图问题怎么解决的（已完成，方法值得记住）
-
-甲方 F 盘两个目录，重点是 `F:\新网站资料`（80.4 GB），按品类编号组织，
-**二级目录名就是型号**：
-
-```
-1-逃生锁/001, 015, 023, 305, 307, ...
-3-执手锁/3431 SSET, 803, 808 SNET, ...
-10-锁芯/45, 47BSIK, 54 SNDK, ...
-24-工厂图    27-场景图    26-详情页模板
-```
-
-### 关键发现：JPG 上有三种品牌标记，但 PSD 里它们是独立图层
-
-硬盘上的 JPG 是导出产物，烧进了三种标记：
-
-| 标记 | 形态 | 占比 |
-|---|---|---|
-| **STAHLOCK** | 另一品牌标准字，15% 不透明度横跨画面中央 | 1187 张候选图里 584 张 |
-| **Hyland 红色角标** | 母公司 logo，压在影棚白底的角上 | 416 张 |
-| **www.cantonlock.com** | 2022 批次的斜向重复域名水印 | 116 张 |
-| **RAYEN 雷茵** | 第三方品牌，只存在于 `雷茵/` 子目录 | 按路径排除，从不导入 |
-
-一开始试过对 STAHLOCK 做信号处理反解（水印 α 只有 0.22–0.33，数值上可行），
-但**每张图的水印位置都不同**，配准反复撞到搜索边界并把母版洗白，投入产出比不划算。
-
-**真正的解法是 PSD**：每张 JPG 旁边的修图源文件把水印保留为独立图层——
-名字是固定哈希 `3d7a87fbe2efd9bad39f10e51879a18a`，不透明度 38/255。
-Hyland 角标同样是独立图层（角落的小图层，含约 16% 红色像素）。
-**跳过这些图层重新合成 PSD，得到的是精确原图而不是估计值。**
-
-1187 张候选图里 1094 张有配套 PSD；最终发布的 699 张图里 683 张走 PSD 路线，
-16 张退回 JPG + 白底涂抹角标（`scripts/lib/debadge.mjs`，产品贴太近时会拒绝处理而不是瞎猜）。
-
-### 结果
+**分析与站长工具**
 
 | | |
 |---|---|
-| 有图产品 | 150 → **319** |
-| 完全缺图 | 281 → **112** |
-| 发布图片 | 608 → **1342** 张 |
-| 标记为 2022 水印 | 84 张（`sourceNote: "2022-watermarked"`） |
+| GA4 | `G-RBTE7KF82P` 已收数据 |
+| Clarity | `y8utyrgvv0` 已收数据 |
+| IndexNow | key `6bb09b9b67d0e605a292835469627988`，验证文件在 `public/` |
+| GSC | 820 已索引 / 961 未索引 |
+| Bing | 533 indexed，86 errors |
 
-### 教训（下次别再踩）
+## 五、⚠ 最要紧的三件未完成
 
-1. **排序不要用像素启发式覆盖客户自己的顺序。** 试过用「照片 vs 图纸」分类器重排，
-   结果把安装说明书扫描件排成了主图。硬盘上 `首图` 就是客户指定的主图，
-   数字前缀就是他们的序列——直接用。
-2. **一个型号可能在两个品类目录下**（9082E、F101），按 slug 合并候选目录，
-   否则同一产品会被处理两次，第二次只覆盖前几个文件、留下孤儿文件。
-3. **每张渲染结果都要重新做标记检测**，不能假设 PSD 一定干净。
-4. **导入前后都拼 contact sheet 目检。** 之前靠这个方法发现过
-   「冷库门场景照混进 023 ETAN」和「PUSH 被裁掉」。
+**1. 181 个产品页对爬虫不可见（42%）**
+`CategoryFilter` 用 React state 分页，服务端 HTML 只输出 20 个链接。
+GPTBot / PerplexityBot / ClaudeBot 跟链接、不读 sitemap，所以这 181 页它们看不到。
+**修法**：服务端渲染全部锚点，分页只控制可见性；或在网格下补一个纯文本型号列表。
+`/product-finder/` 与 `/products/` 同样是 0 个产品锚点。
 
-`24-工厂图`、`27-场景图` 尚未使用，可用于公司页和应用场景页。
+**2. GSC「重复网页，用户未选定规范网页」525 页**
+数量最大的未索引原因。需要逐类排查 canonical 是否自指。
 
-### `F:\网站资料`（旧的，2022）
+**3. 西语只有 7 / 471 页**
+`/es/` 导航的 href 全指向英文页，两个语区形成闭环。
+`SPANISH_MIRROR_PREFIXES` 在 `src/data/site.ts`，加前缀即自动生成 hreflang 与 sitemap。
 
-含 `产品图片` / `产品描述` / `类目分类` / `国内站`。优先级低于上面那个。
+## 六、Bing 报的 86 个错误
 
----
+| 类型 | 页数 | 说明 |
+|---|---|---|
+| `<h1>` 缺失 | 4 | 需定位是哪 4 页 |
+| meta 描述过短 | 26 | 多为分类页 |
+| 标题过短 | 25 | 同上 |
+| 内容过少 | 25 | 44 个产品规格表为空 |
+| `<img>` 缺 alt | 4 | |
 
-## 六、阿里巴巴：能做什么、不能做什么
+## 七、需要甲方给数据才能推进
 
-- **不能抓取。** curl 和真实浏览器都试过，`cnhyland.en.alibaba.com` 与移动版
-  均返回 captcha 拦截页（33 处拦截标记）。**解验证码是硬性禁区，不要再试。**
-- 数据要么甲方从卖家后台导出（阿里后台有「导出」功能，出 Excel），要么手工复制。
-- **可以学 Alibaba 的**（甲方从自己后台截图提供，已确认）：
+- 112 个产品无图（硬盘上没有）
+- MOQ 与交期分档（阿里后台可导出，同时能填 FAQ 空着的两问）
+- Application 用途字段（只有 30% 的产品有）
+- 44 个属性字段里的整句话要改写成值
+- 阿根廷四款锁（Elabora 代工）的型号与规格
 
-| 阿里的做法 | 我们能借鉴什么 |
-|---|---|
-| 标题堆关键词到 128 字符上限 | 我们 SEO 标题偏短，可加型号+材质+认证+用途 |
-| 副标题另 128 字符 | 对应我们的 `summary` |
-| 自定义属性（Type/Material/Certification/Color/Finish/Application/MOQ） | 和我们 `specs` 结构一致。**已按这套做过一轮对齐**，见下方覆盖率表 |
-| 阶梯价（200/500/1000 三档） | 我们不公开价格，但可做「MOQ 分档」展示 |
-| 发货期按数量分档（≤200 → 8 天） | FAQ 的「交期」答案可以用这个结构 |
-| 「Frequently bought together」 | **甲方明确要的相关产品推荐，见下** |
-| FAQ 直接写在商品详情页底部 | 我们已有独立 FAQ 页，可考虑产品页也放几条 |
-| 产品详情页底部「更多选择」放同系列型号图 | 同上，相关产品 |
+## 八、甲方已确认的待办
 
-### 对照阿里属性集，我们的数据覆盖率（431 个产品）
+**要做**：相关产品推荐 · Service 聚合栏目 · 展会日程页 · Newsletter · 资质证书页 ·
+材料内容线 · 应用场景页 · 图片 ALT 批量管理 · 首页「当季主打市场」模块（方案待定，
+倾向四宫格而非轮播）
 
-| 阿里属性 | 我们的字段 | 覆盖 | 备注 |
-|---|---|---|---|
-| Material | `material` + specs "Material" | **84%** | 已归一大小写，71 → 41 个值 |
-| Finish | `finishes` + specs "Finish" | **51%** | 97 → 78 个值 |
-| Application | specs "Application" | **30%** | 原来被拆成 5 个标签，已合并 |
-| Type / Function | specs "Type" / "Function" | 10% | 两者含义不同，未合并 |
-| Color | specs "Color" | 4% | 与 Finish 不同，未合并 |
-| Certification | `certifications` | **5%** | 只能写点名该型号的报告，不可外推 |
-| MOQ | —— | **0%** | 甲方未提供，建议从阿里后台导出 |
+**不做**：经销商查询 · 网站装修拖拽编辑器
 
-**最值得补的三项**（都要甲方给数据，不能猜）：
-
-1. **MOQ 与交期分档** —— 阿里后台已有（≤200 → 8 天那种结构），导出即可用，
-   同时能填上 FAQ 里空着的「起订量」「交期」两问。
-2. **Application** —— 只有 30% 的产品写了用途。这是采购商最常搜的维度
-   （"hotel door lock"、"fire door panic bar"），补齐性价比最高。
-3. **规格行本身** —— 中位数只有 2 行，44 个产品完全为空。
-
----
-
-## 七、甲方已确认的待办（按他勾选的）
-
-### 要做
-
-1. **相关产品推荐** —— 每个产品页放「类似产品」。数据已有（`relatedModels` 字段 + 同分类），
-   目前详情页底部有 Related products 但仅靠手填的 `relatedModels`，大部分产品是空的。
-   建议：手填优先，空则自动按同分类补齐。
-2. **Service 聚合栏目** —— 把「报价 / 图纸 / 价格表 / FAQ / 联系」聚到一处，加进主导航。
-3. ~~**Robots.txt / LLMs.txt**~~ —— `/llms.txt` 与 `robots.txt` 都已在构建期生成，
-   随 `indexable` 开关联动。**后台可视化管理这两个文件尚未做**（目前改要动代码）。
-4. **展会日程页**（广交会 / Big 5 / Intersec）
-5. **Newsletter 订阅落地页 + 页脚订阅位**
-6. **资质证书展示页**（四份报告目前只在下载中心）
-7. **材料 / 表面处理内容线**（1007 行规格里已有数据，是聚合不是新写）
-8. **应用场景页**（酒店 / 医院 / 学校 / 机场）
-9. **图片 ALT 批量管理**
-
-### 明确不做
-
-- ❌ 经销商查询
-- ❌ 网站装修（可视化拖拽编辑器）
-
-### 需要后端，暂缓
-
-当前不做全动态重写。询盘存储、客户 CRM、业务员分配、流量统计与转化率都等真实业务量证明需要
-后再立项。如果未来增加登录，首期只服务甲方 HYDE / Cantonlock 内部员工，不开放客户/经销商
-注册，不做站内订单、实时库存或私价。
-
----
-
-## 八、怎么干活
+## 九、怎么干活
 
 ```bash
 npm run check        # lint + typecheck + build，提交前必跑
-npm run deploy:prep  # 构建并校验 out/ 是最新的
-npm run cms          # 本地开后台，localhost:3001/admin/index.html，不需要登录
+npm test             # 47 个测试
+npm run deploy:prep  # 构建并校验 out/ 是最新
+node scripts/audit-seo.mjs   # 读 out/ 的 HTML 审计 SEO
 ```
 
-### 验证纪律
+**协作**：Claude 与 Codex 共用一个工作树，无锁。开工前 `git log --oneline -5`，
+只 `git add -- <明确路径>`，每次提交附一份 `docs/collaboration/agent-updates/`。
 
-- **改了页面就要实测，不要凭 CSS 猜。** 用浏览器工具量 `getBoundingClientRect`、
-  `getComputedStyle`、`scrollWidth - clientWidth`。之前靠实测抓到过导航折行、
-  hero 溢出、logo 低于品牌最小尺寸、搜索排序错误。
-- **dev server 的 CSS 可能陈旧**（新文件的 Tailwind 任意值类不生成）。
-  遇到样式不生效先跑 `npm run build`，再用 `npx serve out`（**不要加 `-s`**，
-  那是 SPA 模式会把所有路径重写到首页）验证生产产物。
-- 断点：393 / 640 / 744 / 820 / 1032 / 1376 / 1512。桌面导航在 <1376 隐藏。
+**验证纪律**：改了页面就实测，别凭 CSS 猜。用浏览器量 `getBoundingClientRect`。
+本地验证生产产物用 `npx serve out`（**不要加 `-s`**，那是 SPA 模式会重写所有路径）。
 
-### 与 Codex 并行
+**踩过的坑**
 
-甲方同时让 Codex 在做**设计与图片替换**（editorial 图片、品牌资产）。
-两边直接在同一 checkout 工作并往 `main` 做小提交；不再使用全局 agent lock。
+- `.git/index.lock` 反复出现（0 字节陈旧锁）→ 确认无 git 进程后 `rm -f` 即可。
+- 改 crontab 用 `crontab <file>`，**不要用管道**，引号会被吃掉（曾误删腾讯云监控条目）。
+- 写含反引号的文档用脚本文件，不要用 `node -e` 内联（反引号会被 bash 当命令替换）。
+- nginx 子 `location` 一旦有 `add_header`，父级安全头会全部丢失，需在每个 location 重复声明。
+- 本机 python 是商店占位程序，跑不了。
 
-- 开工前读 `git status --short`、`git log --oneline -5`、现有 diff 与最新
-  `docs/collaboration/agent-updates/`；陌生未提交文件默认属于对方，不碰。
-- 做完立刻提交一个主题；只精确暂存自己的路径，并在同一提交附一份独立 update。
-- Codex 主要动 `public/images/editorial/`、`docs/superpowers/`、品牌资产。
-- 我方主要动 `src/`、`content/`、`scripts/`、`public/admin/`。
-- 普通改动先提交源码；只有当前 release builder 生成并提交 `out/`。一旦看到 `out/` 已脏，另一方
-  不再 build，避免两次构建互相覆盖。
+## 十、下一个会话建议顺序
 
----
+1. **修 181 个不可见产品页**（第五节 1）——对 GEO 影响最大
+2. **排查 GSC 525 个重复网页**（第五节 2）
+3. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
+   前台仍读 `src/data/` 硬编码数组，是后台唯一的假功能
 
-## 九、关键文件地图
-
-```
-content/                     内容源（CMS 编辑这里）
-  products/*.json            431 个产品
-  faq.json  promo.json  navigation.json  site-settings.json
-  categories.json  downloads.json        ← ⚠ 改了不生效，待接线
-src/data/                    类型与查询
-  types.ts                   所有内容模型
-  navigation.ts              导航 + 站点设置
-src/lib/
-  content-health.ts          /status 看板的数据
-  seo.ts                     每页 metadata + defaultOgImage
-  product-finder.ts          筛选器分面（valuesFor 不做归一，靠数据层保证一致）
-src/app/
-  sitemap.ts  robots.ts  llms.txt/route.ts   三者都随 indexable 联动
-public/seo/og-default.png    社交卡片兜底图，由 build-og-image.mjs 生成
-scripts/
-  build-content-index.mjs    生成产品 barrel（prebuild）
-  build-search-index.mjs     生成搜索索引（prebuild）
-  generate-editorial-srcsets.mjs  生成/校验 responsive editorial 白名单
-  normalize-next-export-segments.mjs  规范化 Windows static-export RSC 路径
-  import-drive-images.mjs    ★ 从硬盘 PSD 提取无水印图（第五节）
-  lib/psd.mjs                PSD 图层读取，无第三方依赖
-  lib/psdflatten.mjs         跳过水印层/角标层重新合成
-  lib/debadge.mjs            没有 PSD 时按白底涂掉角标
-  lib/marks.mjs              四种品牌标记检测
-  audit-seo.mjs              ★ 读 out/ 的 HTML 审计 SEO，改完必跑
-  generate-product-seo.mjs   重写 431 个产品的 seoTitle / seoDescription
-  normalise-product-data.mjs 材质/表面处理/门型大小写归一
-  consolidate-spec-labels.mjs 规格表同义标签合并
-  build-og-image.mjs         生成默认 OG 图
-  import-legacy-images.mjs   旧站图片导入（历史，已被 import-drive-images 取代）
-  import-legacy-catalogue.mjs 旧站产品导入
-  legacy_report_xlsx.py      甲方报告（⚠ 本机 python 是商店占位程序，跑不了）
-  recalc-excel.ps1           Excel 公式校验（LibreOffice 缺失时用 Excel COM）
-public/admin/                Decap CMS：config.yml / admin.css / preview.js
-docs/research/legacy/        旧站抓取产物 + 迁移报告 + drive-match.json
-docs/research/fsb/           FSB 拆解结论（teardown.json，89 条发现）
-docs/collaboration/agent-updates/  Claude/Codex 每个完成任务的短交接记录
-```
-
----
-
-## 十、给新会话的开场建议
-
-硬盘导图和 SEO 两件已经做完。**按当前价值排序，接下来最高的三件：**
-
-1. **修分类与下载的接线**（第四节问题 4）——
-   `content/{categories,downloads}.json` 改了不生效，前台仍读 `src/data/` 的硬编码数组。
-   这是后台里唯一「看着能用其实没用」的地方，同事在 CMS 改了会以为生效了。
-2. **相关产品推荐**（第七节 1）—— 甲方明确要，数据已具备。
-   手填 `relatedModels` 优先，为空则按同分类自动补齐。
-3. **Service 聚合栏目**（第七节 2）—— 把报价/图纸/价格表/FAQ/联系聚到一处进主导航。
-   这直接服务于「产生询盘」这个唯一指标。
-
-**需要甲方给数据才能推进的**（可以一次性问齐）：
-
-- 112 个产品的图片（硬盘上没有，见第四节问题 1）
-- MOQ 与交期分档（阿里后台可导出，同时能填 FAQ 里空着的两问）
-- Application 用途字段（只有 30% 的产品有）
-- 44 个属性字段里的整句话要改写成值（第四节问题 6）
-- 门型单复数、12 行填错位置的规格值（第四节问题 7、8）
-
-### 动手前
-
-```bash
-git status --short
-git log --oneline -5
-git diff --name-only
-git log -5 -- docs/collaboration/agent-updates/
-```
-
-不要为了开始一个小任务先跑完整 build；先做与改动相称的定向验证。完整 build / `out/` 由当前
-release builder 在发布收口时统一完成。
-
-### 收尾前
-
-```bash
-node scripts/audit-seo.mjs   # 目标：只剩 /admin 一个页面有问题
-npm run deploy:prep          # 必跑，否则线上是旧的
-```
+**服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
+⚠ 证书 **2026-12-14 到期**且已开 HSTS（一年）——过期未续则网站完全打不开，
+建议到期前换 Let's Encrypt 自动续期。
