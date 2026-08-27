@@ -29,30 +29,30 @@ export default function SpanishHomePage() {
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="modules mb-96 lg:mb-136">
         <HeroCarousel content={content.heroCarousel} />
-        <PageTeaserModule content={content.teaser1} />
+        <PageTeaserModule content={content.teaser1} homeAccent />
       </div>
       <div className="mb-48 lg:mb-136">
-        <WelcomeIntro locale="es" homeAccent />
+        <WelcomeIntro locale="es" />
       </div>
       <div className="modules">
         <Spacer heights={content.spacers.s96} />
-        <HeroModule content={content.hero2} homeAccent />
+        <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />
-        <TextModule content={content.text1} homeAccent />
+        <TextModule content={content.text1} />
         <Spacer heights={content.spacers.s48} />
         <PageTeaserModule content={content.teaser2} homeAccent />
         <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero3} homeAccent />
+        <HeroModule content={content.hero3} homeEditorial />
         <Spacer heights={content.spacers.s288lg} />
-        <HeroModule content={content.hero4} homeAccent />
+        <HeroModule content={content.hero4} homeEditorial />
         <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text2} homeAccent />
+        <TextModule content={content.text2} />
         <Spacer heights={content.spacers.s48} />
         <PageTeaserModule content={content.teaser3} homeAccent />
         <Spacer heights={content.spacers.s288xl} />
-        <TextModule content={content.text3} homeAccent />
+        <TextModule content={content.text3} />
         <Spacer heights={content.spacers.s48} />
-        <HeroModule content={content.hero5} homeAccent />
+        <HeroModule content={content.hero5} homeEditorial />
       </div>
     </main>
   );

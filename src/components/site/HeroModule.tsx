@@ -7,9 +7,9 @@ import type { HeroModuleContent } from "@/types/fsb-modules";
 /**
  * `data-content-module="hero"` — 5 instances.
  *
- * Two layouts, both wrapped in an `absolute inset-0` link. Homepage callers opt into
- * the shared A + D surface: neutral at rest, then one title marker, thin frame and hard
- * offset plane on pointer hover or keyboard focus.
+ * Two layouts, both wrapped in an `absolute inset-0` link. Homepage editorial callers
+ * opt into restrained image motion plus the shared CTA marker. True cards use the
+ * stronger A + D framed surface elsewhere; these large narrative blocks stay flat.
  *
  * variant "stacked": media spans the 1440px outset band, caption row sits on the 1376px
  *                    content band as 6 + 6 of 24 columns.
@@ -24,13 +24,26 @@ import type { HeroModuleContent } from "@/types/fsb-modules";
 type HeroModuleProps = {
   content: HeroModuleContent;
   homeAccent?: boolean;
+  homeEditorial?: boolean;
 };
 
-export function HeroModule({ content, homeAccent = false }: HeroModuleProps) {
+export function HeroModule({
+  content,
+  homeAccent = false,
+  homeEditorial = false,
+}: HeroModuleProps) {
   return content.variant === "stacked" ? (
-    <HeroStacked {...content} homeAccent={homeAccent} />
+    <HeroStacked
+      {...content}
+      homeAccent={homeAccent}
+      homeEditorial={homeEditorial}
+    />
   ) : (
-    <HeroSide {...content} homeAccent={homeAccent} />
+    <HeroSide
+      {...content}
+      homeAccent={homeAccent}
+      homeEditorial={homeEditorial}
+    />
   );
 }
 
@@ -41,7 +54,8 @@ function HeroStacked({
   linkLabel,
   href = "#",
   homeAccent = false,
-}: HeroModuleContent & { homeAccent?: boolean }) {
+  homeEditorial = false,
+}: HeroModuleContent & { homeAccent?: boolean; homeEditorial?: boolean }) {
   return (
     <div className="layout" data-content-module="hero">
       <div className="col-outset">
@@ -50,11 +64,18 @@ function HeroStacked({
             className={cn(
               "group relative col-outset",
               homeAccent && "home-accent-surface home-accent-module",
+              homeEditorial && "home-editorial-surface",
+              homeEditorial && "short-marker-surface",
             )}
           >
             <div className="layout">
               <div className="col-outset px-outset md:px-0">
-                <div className="col-span-full mb-16 md:mb-48">
+                <div
+                  className={cn(
+                    "col-span-full mb-16 md:mb-48",
+                    homeEditorial && "home-editorial-media",
+                  )}
+                >
                   <MediaPlaceholder
                     {...media}
                     sizes="(min-width: 1600px) 1440px, 100vw"
@@ -73,7 +94,7 @@ function HeroStacked({
                   <div className="col-span-full md:[grid-column:span_3/-1] xl:[grid-column:span_6/-1]">
                     <ArrowLink
                       href={href}
-                      groupHover={!homeAccent}
+                      groupHover={!homeAccent || homeEditorial}
                       className={cn(homeAccent && "home-accent-action")}
                     >
                       {linkLabel}
@@ -89,7 +110,7 @@ function HeroStacked({
               aria-label={title}
               className={cn(
                 "outline-offset absolute inset-0 -mb-outset pb-outset",
-                !homeAccent &&
+                !homeAccent && !homeEditorial &&
                   "hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-ink",
               )}
             />
@@ -107,7 +128,8 @@ function HeroSide({
   linkLabel,
   href = "#",
   homeAccent = false,
-}: HeroModuleContent & { homeAccent?: boolean }) {
+  homeEditorial = false,
+}: HeroModuleContent & { homeAccent?: boolean; homeEditorial?: boolean }) {
   return (
     <div className="layout" data-content-module="hero">
       <div className="col-outset">
@@ -116,9 +138,16 @@ function HeroSide({
             className={cn(
               "group relative col-content grid grid-cols gap-x",
               homeAccent && "home-accent-surface home-accent-module",
+              homeEditorial && "home-editorial-surface",
+              homeEditorial && "short-marker-surface",
             )}
           >
-            <div className="col-span-full mb-16 md:mb-0 md:[grid-column:span_8/-1] xl:col-span-17">
+            <div
+              className={cn(
+                "col-span-full mb-16 md:mb-0 md:[grid-column:span_8/-1] xl:col-span-17",
+                homeEditorial && "home-editorial-media",
+              )}
+            >
               <MediaPlaceholder
                 {...media}
                 sizes="(min-width: 1440px) 960px, (min-width: 744px) 66vw, 100vw"
@@ -135,7 +164,7 @@ function HeroSide({
               <div className="col-span-full mt-auto md:mb-48">
                 <ArrowLink
                   href={href}
-                  groupHover={!homeAccent}
+                  groupHover={!homeAccent || homeEditorial}
                   className={cn(homeAccent && "home-accent-action")}
                 >
                   {linkLabel}
@@ -148,7 +177,7 @@ function HeroSide({
               aria-label={title}
               className={cn(
                 "outline-offset absolute inset-0",
-                !homeAccent &&
+                !homeAccent && !homeEditorial &&
                   "hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-ink",
               )}
             />

@@ -536,6 +536,22 @@
     display: none;
   }
 
+  /* Large editorial blocks remain planar. Their photograph supplies the motion while
+     the existing ArrowLink supplies the only short marker, so the module never reads
+     as an oversized product card. */
+  .home-editorial-media {
+    overflow: hidden;
+  }
+
+  .home-editorial-media > img {
+    transform: scale(1);
+    transition: transform var(--motion-medium) var(--motion-ease);
+  }
+
+  .home-editorial-surface:has(:focus-visible) .home-editorial-media > img {
+    transform: scale(1.012);
+  }
+
   .hard-shadow-panel {
     box-shadow: 1rem 1rem 0 var(--color-shadow-hard);
   }
@@ -608,6 +624,10 @@
     .home-accent-surface:hover .home-accent-marker::after {
       opacity: 1;
       transform: scaleX(1);
+    }
+
+    .home-editorial-surface:hover .home-editorial-media > img {
+      transform: scale(1.012);
     }
 
     .hard-shadow-card:hover .title-marker::after,
@@ -707,6 +727,7 @@
     .nav-marker::after,
     .title-marker::after,
     .home-accent-marker::after,
+    .home-editorial-media > img,
     .copy p > a,
     .inline-marker,
     .inline-marker-scope a {
@@ -718,6 +739,11 @@
     .home-accent-surface:hover,
     .home-accent-surface:focus-visible,
     .home-accent-surface:has(:focus-visible) {
+      transform: none;
+    }
+
+    .home-editorial-surface:hover .home-editorial-media > img,
+    .home-editorial-surface:has(:focus-visible) .home-editorial-media > img {
       transform: none;
     }
 

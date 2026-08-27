@@ -195,14 +195,14 @@ export const categories: Category[] = [
     name: "Lock Cylinders",
     nameZh: "锁芯",
     summary: "Profile and keyed cylinders, including master-key system applications.",
-    image: { ratio: "1 / 1", label: "Lock cylinder" },
+    image: { src: "/images/products/70sn-lock-cylinder.webp", ratio: "1 / 1", label: "Hyland 70SN profile lock cylinder with keys" },
   },
   {
     slug: "sliding-hook-locks",
     name: "Sliding Hook Locks",
     nameZh: "推拉门钩锁",
     summary: "Hook-lock hardware for sliding doors and narrow-stile applications.",
-    image: { ratio: "1 / 1", label: "Sliding hook lock" },
+    image: { src: "/images/products/881-ss-sliding-hook-lock.webp", ratio: "1 / 1", label: "Hyland 881 SS sliding hook lock set" },
   },
 ];
 

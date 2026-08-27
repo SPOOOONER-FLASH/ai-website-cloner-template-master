@@ -27,12 +27,42 @@ test("homepage accent surfaces are visually neutral until hover or keyboard focu
   );
 });
 
-test("the ten post-carousel homepage modules opt into the accent in both locales", () => {
+test("homepage interaction hierarchy separates cards from editorial modules", () => {
   for (const page of [read("src", "app", "(en)", "page.tsx"), read("src", "app", "es", "page.tsx")]) {
-    assert.equal(page.match(/homeAccent/g)?.length, 10);
-    assert.match(page, /<HeroCarousel[\s\S]*?<PageTeaserModule content=\{content\.teaser1\} \/>/);
-    assert.doesNotMatch(page, /<PageTeaserModule content=\{content\.teaser1\} homeAccent/);
+    assert.equal(page.match(/homeAccent/g)?.length, 3);
+    assert.equal(page.match(/homeEditorial/g)?.length, 4);
+    assert.match(page, /<PageTeaserModule content=\{content\.teaser1\} homeAccent \/>/);
+    assert.match(page, /<PageTeaserModule content=\{content\.teaser2\} homeAccent \/>/);
+    assert.match(page, /<PageTeaserModule content=\{content\.teaser3\} homeAccent \/>/);
+    assert.doesNotMatch(page, /<WelcomeIntro[^>]*homeAccent/);
+    assert.doesNotMatch(page, /<TextModule[^>]*homeAccent/);
+    assert.doesNotMatch(page, /<HeroModule[^>]*homeAccent/);
   }
+});
+
+test("homepage editorial heroes use image motion without a framed surface", () => {
+  const hero = read("src", "components", "site", "HeroModule.tsx");
+
+  assert.match(hero, /homeEditorial\?: boolean/);
+  assert.match(hero, /homeEditorial && "home-editorial-surface"/);
+  assert.match(hero, /homeEditorial && "home-editorial-media"/);
+  assert.match(hero, /!homeAccent && !homeEditorial/);
+  assert.match(css, /\.home-editorial-media\s*>\s*img/);
+  assert.match(css, /\.home-editorial-surface:hover[\s\S]*?\.home-editorial-media\s*>\s*img/);
+  assert.doesNotMatch(css, /\.home-editorial-surface:hover\s*\{[\s\S]*?box-shadow/);
+});
+
+test("all catalogue category tiles ship with a real cover image", () => {
+  const categories = read("src", "data", "categories.ts");
+
+  assert.match(
+    categories,
+    /slug: "lock-cylinders"[\s\S]*?image: \{ src: "\/images\/products\/70sn-lock-cylinder\.webp"/,
+  );
+  assert.match(
+    categories,
+    /slug: "sliding-hook-locks"[\s\S]*?image: \{ src: "\/images\/products\/881-ss-sliding-hook-lock\.webp"/,
+  );
 });
 
 test("current navigation is bold at rest without a persistent underline", () => {
