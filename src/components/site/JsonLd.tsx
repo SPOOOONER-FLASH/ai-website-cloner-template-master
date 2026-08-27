@@ -9,6 +9,7 @@ import type {
   FAQPage,
   ItemList,
   NewsArticle as SchemaNewsArticle,
+  TechArticle as SchemaTechArticle,
   Organization,
   Product as SchemaProduct,
   Thing,
@@ -137,7 +138,7 @@ export function productSchema(product: Product, url: string): WithContext<Schema
 export function newsArticleSchema(
   article: NewsArticle,
   url: string,
-): WithContext<SchemaNewsArticle> {
+): WithContext<SchemaNewsArticle | SchemaTechArticle> {
   const images = [article.heroImage, ...(article.gallery ?? [])]
     .map((image) => image.src)
     .filter((src): src is string => Boolean(src))
@@ -145,7 +146,15 @@ export function newsArticleSchema(
 
   return {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    /*
+      A specification guide is not news. NewsArticle is freshness-weighted and scoped to
+      Google News; an evergreen piece like "EN 1125 vs ANSI 156.3" declared as NewsArticle
+      decays in relevance by the month and never qualifies for the surface it claims.
+      TechArticle is the type for standards, backset tables and installation guidance, and
+      it is also what an answer engine looks for when deciding whether a page is reference
+      material worth citing.
+    */
+    "@type": article.kind === "insight" ? "TechArticle" : "NewsArticle",
     headline: article.title,
     description: article.summary,
     url,
