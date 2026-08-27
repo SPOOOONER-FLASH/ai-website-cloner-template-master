@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
+import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
@@ -102,6 +103,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <section className="layout mt-144 lg:mt-288" aria-label={`${category.name} catalogue`}>
         <div className="col-content grid w-full grid-cols gap-x">
           <CategoryFilter products={products} options={options} />
+          <ProductIndexList products={products} label={`${products.length} ${category.name.toLowerCase()}`} />
         </div>
       </section>
     </main>

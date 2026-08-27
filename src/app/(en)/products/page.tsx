@@ -7,6 +7,7 @@ import { Button } from "@/components/site/Button";
 import { CategoryCard } from "@/components/site/CategoryCard";
 import { MediaPlaceholder } from "@/components/site/MediaPlaceholder";
 import { ProductCategoryRail } from "@/components/site/ProductCategoryRail";
+import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, products } from "@/data/products";
 
@@ -196,6 +197,8 @@ export default function ProductsPage() {
               Or browse a category above — each one lists its models 20 to a page.
             </p>
           </div>
+
+          <ProductIndexList products={products} label={`All ${products.length} models`} />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { ProductFinderClient } from "@/components/site/ProductFinderClient";
+import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { products } from "@/data/products";
@@ -83,6 +84,12 @@ export default function ProductFinderPage() {
 
       <div className="layout mt-48">
         <ProductFinderClient products={products} categoryNames={categoryNameMap()} />
+      </div>
+
+      <div className="layout mt-48">
+        <div className="col-content grid w-full grid-cols gap-x">
+          <ProductIndexList products={products} label={`All ${products.length} models`} />
+        </div>
       </div>
     </main>
   );

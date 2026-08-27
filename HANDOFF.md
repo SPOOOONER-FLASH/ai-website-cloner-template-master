@@ -40,7 +40,7 @@
 
 **已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
-（20/页 + 分面折叠 + 独立滚动）、阿里深链接、GA4 + Clarity、旧站 URL 301。
+（20/页 + 分面折叠 + 独立滚动）、全部 431 个产品链接服务端渲染（`ProductIndexList`）、阿里深链接、GA4 + Clarity、旧站 URL 301。
 
 **分析与站长工具**
 
@@ -52,18 +52,12 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | GSC | 820 已索引 / 961 未索引 |
 | Bing | 533 indexed，86 errors |
 
-## 五、⚠ 最要紧的三件未完成
+## 五、⚠ 最要紧的两件未完成
 
-**1. 181 个产品页对爬虫不可见（42%）**
-`CategoryFilter` 用 React state 分页，服务端 HTML 只输出 20 个链接。
-GPTBot / PerplexityBot / ClaudeBot 跟链接、不读 sitemap，所以这 181 页它们看不到。
-**修法**：服务端渲染全部锚点，分页只控制可见性；或在网格下补一个纯文本型号列表。
-`/product-finder/` 与 `/products/` 同样是 0 个产品锚点。
-
-**2. GSC「重复网页，用户未选定规范网页」525 页**
+**1. GSC「重复网页，用户未选定规范网页」525 页**
 数量最大的未索引原因。需要逐类排查 canonical 是否自指。
 
-**3. 西语只有 7 / 471 页**
+**2. 西语只有 7 / 471 页**
 `/es/` 导航的 href 全指向英文页，两个语区形成闭环。
 `SPANISH_MIRROR_PREFIXES` 在 `src/data/site.ts`，加前缀即自动生成 hreflang 与 sitemap。
 
@@ -105,6 +99,10 @@ node scripts/audit-seo.mjs   # 读 out/ 的 HTML 审计 SEO
 **协作**：Claude 与 Codex 共用一个工作树，无锁。开工前 `git log --oneline -5`，
 只 `git add -- <明确路径>`，每次提交附一份 `docs/collaboration/agent-updates/`。
 
+**文档纪律**：所有 `.md`（HANDOFF、agent-updates、docs/）写成最简洁的形式——表格与短句优先，
+不写背景铺陈、不复述已知信息、不写礼貌用语。改完一件事就在 HANDOFF 里删掉对应的待办，
+不要另起一段说「已完成」。目标是下一个 worker 用最少 token 读懂现状。
+
 **验证纪律**：改了页面就实测，别凭 CSS 猜。用浏览器量 `getBoundingClientRect`。
 本地验证生产产物用 `npx serve out`（**不要加 `-s`**，那是 SPA 模式会重写所有路径）。
 
@@ -118,10 +116,10 @@ node scripts/audit-seo.mjs   # 读 out/ 的 HTML 审计 SEO
 
 ## 十、下一个会话建议顺序
 
-1. **修 181 个不可见产品页**（第五节 1）——对 GEO 影响最大
-2. **排查 GSC 525 个重复网页**（第五节 2）
-3. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
+1. **排查 GSC 525 个重复网页**（第五节 1）
+2. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
    前台仍读 `src/data/` 硬编码数组，是后台唯一的假功能
+3. **西语铺开**（第五节 2）
 
 **服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
 ⚠ 证书 **2026-12-14 到期**且已开 HSTS（一年）——过期未续则网站完全打不开，
