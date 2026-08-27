@@ -30,13 +30,18 @@
 ## 三、内容纪律（违反会造成商业风险）
 
 - **没有真实数据就留空，不要猜。** 空规格表是诚实的，编造的是事故——采购商照着下单。
-- **认证只能对应点名该型号的检测报告。** 手上四份只覆盖 KD070/30-290、KD070/20-101、607 SS ET。
+- **认证：只有两份是我们自己的。** 2026-08-27 逐份核对原件：
+  EN 1154 地弹簧那份 applicant 是 KALE KILIT、商标 KALE ARCO，**是客户的，已删除，别恢复**；
+  EN 1125（KD070/30-290）与 607 SS ET 耐久两份是我们的（applicant/manufacturer 都是 Canton Hyland）。
+  三份均**停止公开下载**——Intertek 明文限制"仅可整份分发，用其名称做广告需书面批准"，
+  我们之前发的是 13 页里的第 1 页。文字记录保留，`CertificateRecord.publish` 改 true 即可恢复。
+  **ANSI/BHMA 完全没有**，甲方确认，首页徽标与产品名已清除。
 - **案例只有甲方确认供过货才能标「真实项目」**，否则一律「代表性应用」。
 - **FAQ 商业性答案（起订量、交期、付款、OEM）留空等甲方填。**
 
 ## 四、当前状态
 
-产品 431 · 静态页 471 · 图片 1342 张 · 测试 47 通过
+产品 431 · 静态页 473 · 图片 1342 张 · 测试 47 通过
 
 **已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
@@ -77,7 +82,11 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 
 ## 七、需要甲方给数据才能推进
 
-- 112 个产品无图（硬盘上没有）
+- **75 个产品无图**（原 113，2026-08-27 从 F 盘补了 38 个）。
+  剩下的多为同型号不同表面处理（607 ABET/BNET/FET/WBK/WLET，F 盘只有 607 PBBK）——
+  **不能拿别的表面处理的照片顶替**。要么补拍，要么合并成带变体的单页。
+- 77 张图是 2022 旧拍（带 cantonlock.com 水印），已按甲方要求先上线。
+  `/status/` 有「图片是旧拍摄，待重拍」一栏，读 `ImageRef.sourceNote`，重拍后可批量定位。
 - MOQ 与交期分档（阿里后台可导出，同时能填 FAQ 空着的两问）
 - Application 用途字段（只有 30% 的产品有）
 - 44 个属性字段里的整句话要改写成值
@@ -127,29 +136,16 @@ npm run seo:indexnow         # 推送到服务器之后再跑
 
 ## 十、下一个会话建议顺序
 
-1. **写指南文章** —— 见 `docs/content/EDITORIAL_PLAN.md`，选题 1–3 优先。
-   基础设施全就绪（`/news/[slug]/`、`kind:"insight"`→TechArticle、`relatedModels` 内链），
-   `content/news/` 是 0 篇。Claude 撰稿，Codex 版式。
-2. **Cloudflare 缓存 HTML** —— 见下方「未做的一件外部配置」，性能第一优先，但要在 CF 后台改。
-3. **修分类与下载的接线** —— `content/{categories,downloads}.json` 改了不生效，
-   前台仍读 `src/data/` 硬编码数组，是后台唯一的假功能
-4. **西语铺开**（第五节 2）
-
-**未做的一件外部配置（需要 Cloudflare 后台，代码改不了）**
-
-实测 `cf-cache-status: DYNAMIC`，HTML 完全没走边缘缓存，每个访客都回源到法兰克福。
-源站已经发 `Cache-Control: public, max-age=300`，但 Cloudflare 默认只缓存静态扩展名，
-HTML 必须显式加 Cache Rule：
-
-    Rules → Caching rules → Create rule
-    表达式  (http.request.uri.path.extension eq "") or (ends_with(http.request.uri.path, "/"))
-    Cache eligibility        Eligible for cache
-    Edge TTL                 Override origin → 1 hour
-    Browser TTL              Respect origin
-
-发布后必须 Purge Everything，之后每次部署也要 purge（或改用 Cache Tag）。
-验证：`curl -sI https://cantonlock.com/ | grep cf-cache-status` 应为 HIT。
+1. **继续写指南文章** —— 第 1 篇已上线（backset/中心距）。选题见 `docs/content/EDITORIAL_PLAN.md`。
+   ⚠ 选题 1（EN 1125 vs ANSI）要重写角度：我们没有 ANSI/BHMA，EN 1125 只覆盖一个型号。
+   讲标准本身可以，**任何"我们已认证"的暗示都不行**。Claude 撰稿，Codex 版式。
+2. **西语铺开**（第五节 2）——甲方问能否批量翻译，可以，方案见 `docs/content/SPANISH_PLAN.md`
+3. **修剩下 75 个产品的图**（见第七节）
 
 **服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
+⚠ **每次部署后必须去 Cloudflare 手动 Purge**。Cache Rule 设的是
+"Ignore cache-control header, Edge TTL 2 hours"，不清缓存最多 2 小时看不到新内容。
+`curl -sI https://cantonlock.com/ | grep cf-cache-status` 应为 HIT（已验证生效）。
+
 ⚠ 证书 **2026-12-14 到期**且已开 HSTS（一年）——过期未续则网站完全打不开，
 建议到期前换 Let's Encrypt 自动续期。
