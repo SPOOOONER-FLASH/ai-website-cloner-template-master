@@ -9,7 +9,40 @@
     "lever-handles"
   ],
   "summary": "A square-profile tubular lever set in matt black, with keyed outside lever and adjustable latch.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance, privacy, passage or dummy"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    }
+  ],
   "material": "Zinc Alloy",
   "finishes": [
     "Matt Black"

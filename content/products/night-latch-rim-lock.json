@@ -9,7 +9,40 @@
     "night-latches-rim-locks"
   ],
   "summary": "A surface-mounted night latch with exterior keyed cylinder and interior operating knob for entrance doors.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Door thickness",
+      "value": "35mm to 55mm standard; 30mm to 60mm on request"
+    },
+    {
+      "label": "Latch extension",
+      "value": "13mm, with inside deadlocking button"
+    },
+    {
+      "label": "Deadbolt throw",
+      "value": "25mm on rim deadbolt versions"
+    },
+    {
+      "label": "Chassis",
+      "value": "Zinc die-cast case, zinc-plated steel internal components"
+    },
+    {
+      "label": "Strike",
+      "value": "Angle strike standard for inward-opening doors; flat strike available"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Single cylinder, double cylinder or self-locking"
+    },
+    {
+      "label": "Feature",
+      "value": "Anti-picking slide gate on single-cylinder deadlock"
+    }
+  ],
   "material": "Steel /Zinc Alloy",
   "finishes": [
     "Silver",
