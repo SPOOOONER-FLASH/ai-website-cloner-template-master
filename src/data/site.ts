@@ -38,6 +38,19 @@ export const siteUrl = "https://cantonlock.com";
  */
 export const indexable = true;
 
+/**
+ * Analytics property IDs.
+ *
+ * Only loaded when `indexable` is true — a staging host must not report into the
+ * production property. An empty string disables that tool entirely.
+ */
+export const analytics = {
+  /** Google Analytics 4 measurement ID. */
+  ga4Id: "G-RBTE7KF82P",
+  /** Microsoft Clarity project ID — session replay and heatmaps. */
+  clarityId: "y8t7weui0k",
+};
+
 export const siteName = "Canton Hyland";
 export const legalName = siteSettings.legalName;
 

@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
+import { Analytics } from "@/components/site/Analytics";
 import {
   absoluteUrl,
   defaultDescription,
@@ -82,6 +83,7 @@ export default function SpanishRootLayout({
           <SiteFooter />
         </div>
         <PromoDialog />
+        <Analytics />
       </body>
     </html>
   );

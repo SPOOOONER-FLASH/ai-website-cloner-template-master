@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
+import { Analytics } from "@/components/site/Analytics";
 import {
   absoluteUrl,
   defaultDescription,
@@ -93,6 +94,7 @@ export default function EnglishRootLayout({
         {/* Last in the body so it cannot appear above the page's own content in the
             reading order before a visitor has even seen the page. */}
         <PromoDialog />
+        <Analytics />
       </body>
     </html>
   );
