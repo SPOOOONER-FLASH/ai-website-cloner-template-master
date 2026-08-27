@@ -8,8 +8,11 @@ import { ChevronDownIcon, HydeLockup } from "./icons";
 
 const introCopy = {
   en: {
-    welcome: "Welcome",
-    title: "Door Security and Building Hardware, Manufactured in Guangdong",
+    // The H1 renders `welcome` then `title` as its two lines. "Welcome" held the first and
+    // most heavily weighted line of the only H1 on the site's highest-authority page while
+    // carrying no search value; the category and the role sit there now instead.
+    welcome: "Panic Exit Devices, Locks and Door Hardware",
+    title: "Manufactured in Guangdong since 1998",
     body: "Canton Hyland has manufactured commercial and residential door hardware since 1998. We specialize in panic devices, tubular and cylindrical locks, deadbolts, lock cases, profile cylinders, door handles and patch fittings. Recognized experts in master key and construction key systems. ISO 9001 certified since 2002.",
     more: "More links",
     company: "Canton Hyland Hardware\n(Group) Co., Ltd",
@@ -21,8 +24,8 @@ const introCopy = {
     ],
   },
   es: {
-    welcome: "Bienvenido",
-    title: "Seguridad para puertas y herrajes de construcción fabricados en Guangdong",
+    welcome: "Barras antipánico, cerraduras y herrajes para puertas",
+    title: "Fabricados en Guangdong desde 1998",
     body: "Canton Hyland fabrica herrajes para puertas comerciales y residenciales desde 1998. Producimos dispositivos antipánico, cerraduras tubulares y cilíndricas, cerrojos, cajas de cerradura, cilindros, manillas y herrajes para vidrio. ISO 9001 desde 2002.",
     more: "Más enlaces",
     company: "Canton Hyland Hardware\n(Group) Co., Ltd",

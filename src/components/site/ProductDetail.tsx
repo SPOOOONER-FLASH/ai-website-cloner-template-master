@@ -72,8 +72,15 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
 
           <div className="col-span-full mt-24 xl:col-span-12">
             <p className="text-c1 text-ink-secondary">{product.series}</p>
+            {/*
+              The H1 carries the model, because that is what a buyer types. 40 records are
+              named "Lock Case" and 38 "Lever Handle" — an H1 of just the name gave dozens
+              of pages the same heading, which is half of why Google groups them as
+              duplicates. `modelTbc` records have no real SKU yet, so they keep the plain
+              name rather than showing a working label as if it were orderable.
+            */}
             <h1 id="product-title" className="mt-8 text-h1 text-ink">
-              {product.name}
+              {product.modelTbc ? product.name : `${product.model} ${product.name}`}
             </h1>
           </div>
 

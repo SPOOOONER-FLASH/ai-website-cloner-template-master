@@ -1,4 +1,5 @@
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
+import { siteSettings } from "@/data/navigation";
 import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
 import type { NewsArticle, Product } from "@/data/types";
@@ -57,6 +58,17 @@ export function organisationSchema(): WithContext<Organization> {
     },
     ...(workforce ? { numberOfEmployees: { "@type": "QuantitativeValue", description: workforce } } : {}),
     ...(facility ? { areaServed: "Worldwide" } : {}),
+    /*
+      sameAs is how a search engine or an LLM decides that cantonlock.com, "Canton
+      Hyland", "HYDE" and the Alibaba storefront are one company rather than four.
+      Sourced from the footer so there is one list to maintain, and filtered to profile
+      URLs: the footer previously carried https://linkedin.com/feed/ and
+      https://tumblr.com/dashboard, which are the signed-in user's own pages, not the
+      company's. A sameAs pointing at a login screen is a broken identity claim, so those
+      were removed rather than asserted here. Add the real LinkedIn company page and X
+      handle to content/site-settings.json when the client supplies them.
+    */
+    sameAs: siteSettings.social.map((link) => link.href),
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "certification",
@@ -88,7 +100,9 @@ export function productSchema(product: Product, url: string): WithContext<Schema
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `${product.name}${product.modelTbc ? "" : ` ${product.model}`}`.trim(),
+    // Model first, matching both the H1 and `seoTitle`. The audit test asserts this string
+    // is visible on the page, so the three must be changed together or not at all.
+    name: `${product.modelTbc ? "" : `${product.model} `}${product.name}`.trim(),
     ...(product.modelTbc ? {} : { model: product.model, sku: product.model, mpn: product.model }),
     description: product.summary,
     url,
