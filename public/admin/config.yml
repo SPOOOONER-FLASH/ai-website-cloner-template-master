@@ -27,7 +27,12 @@ backend:
   # 它只做一次 code → token 的交换，不存任何数据。
   # 换域名时要同步改 GitHub OAuth App 的 Authorization callback URL，
   # 两边必须一致，否则登录会失败。步骤见 docs/CMS_REMOTE_SETUP.md。
-  base_url: https://canton-cms-auth.spoonerlau.workers.dev
+  # 2026-08-28 由 canton-cms-auth.spoonerlau.workers.dev 换成自有子域名。
+  # 换的原因不是原地址坏了，而是 workers.dev 在部分网络下不可达；auth.cantonlock.com
+  # 与主站同一个 Cloudflare zone，主站通它就通。
+  # ⚠ 这个值必须和 GitHub OAuth App 的 Authorization callback URL 同源
+  #（现为 https://auth.cantonlock.com/callback），改一边就要改另一边，否则登录直接断。
+  base_url: https://auth.cantonlock.com
   #
   # 本地 `npm run cms` 不走这里（走上面的 local_backend），不需要联网也不需要登录。
 
