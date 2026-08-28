@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
-import { getRelatedProducts } from "@/data/products";
+import { getRelatedProducts, products } from "@/data/products";
+import { relatedBlock } from "@/lib/related-products";
 import { ArrowLink } from "./ArrowLink";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
@@ -42,7 +43,12 @@ function ProductFact({ label, values }: { label: string; values: string[] }) {
  * but unverified dimension is more damaging than an honest empty state.
  */
 export function ProductDetail({ product, categoryName }: ProductDetailProps) {
-  const relatedProducts = getRelatedProducts(product);
+  const related = relatedBlock({
+    product,
+    curated: getRelatedProducts(product),
+    catalogue: products,
+    categoryName,
+  });
   const quoteParams = new URLSearchParams({ product: product.name });
 
   if (!product.modelTbc) quoteParams.set("model", product.model);
@@ -309,32 +315,29 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
         </div>
       </section>
 
-      {/* 7 — Related products */}
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="related-heading">
-        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full">
-            <h2 id="related-heading" className="text-h3 text-ink">
-              Related products
-            </h2>
-          </div>
+      {/* 7 — Related products.
+          Omitted entirely when the product has no siblings — an empty-state sentence here
+          would be identical on every such page, which is a slice of the duplicate-content
+          problem this section is meant to help with. */}
+      {related ? (
+        <section className="layout mt-144 lg:mt-288" aria-labelledby="related-heading">
+          <div className="col-content grid w-full grid-cols gap-x gap-y-48">
+            <div className="col-span-full">
+              <h2 id="related-heading" className="text-h3 text-ink">
+                {related.heading}
+              </h2>
+            </div>
 
-          {relatedProducts.length ? (
-            relatedProducts.map((related) => (
+            {related.items.map((item) => (
               <ProductCard
-                key={related.model}
-                product={related}
+                key={item.slug}
+                product={item}
                 className="col-span-full sm:col-span-4 md:col-span-6 xl:col-span-8"
               />
-            ))
-          ) : (
-            <div className="col-span-full xl:col-span-12">
-              <EmptyState>
-                Related products will appear when the catalogue relationship has been verified.
-              </EmptyState>
-            </div>
-          )}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }
