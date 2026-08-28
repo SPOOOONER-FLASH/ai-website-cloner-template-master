@@ -96,7 +96,7 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 
 ## 八、甲方已确认的待办
 
-**已确认启动**：相关产品推荐 · Service 聚合栏目 · 展会日程页 · Newsletter 界面系统 ·
+**已确认启动**：Service 聚合栏目 · 展会日程页 · Newsletter 界面系统 ·
 资质证书页（Kale 文件除外）· 材料内容线 · 应用场景页 · 图片 ALT 批量管理 ·
 429 个西班牙语产品路由。西语术语可先上线，甲方后续提供修订。
 
@@ -121,11 +121,17 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | `BN Black Nickle` | 9211 BNAC |
 | `Satin Stainless Steel (SS)` | 9080E |
 | W = 白色 | 甲方微信 2026-08-27 |
+| F = 喷木纹球 | 甲方确认 2026-08-28 |
+| WL = 白色喷漆球 | 甲方确认 2026-08-28 |
+| SP = 抛亮光 / Shiny Polish | 甲方确认 2026-08-28 |
+| ET = 门锁功能 / Entrance Lock | 甲方确认 2026-08-28 |
+| PS = 通道功能 / Passage Lock | 甲方确认 2026-08-28 |
+| BK = 浴室功能 / Privacy Lock | 甲方确认 2026-08-28 |
 
-**已确认**：PB / AB / AC / SN / SC / CP / SS / SSS / PSS / BN / SB / W。
-**待确认**：F（甲方说「应该是木把手吧」，不确定）、WL、SP、以及 ET / PS / BK 三个功能后缀。
-甲方确认后跑一个脚本即可给 32 个 stainless-steel-handles、30 个 lever-handles
-逐型号补 Finish，正文就不再重复。
+**已确认**：PB / AB / AC / SN / SC / CP / SS / SSS / PSS / BN / SB / W / F / WL / SP / ET / PS / BK。
+下一步单独提交后缀解析：用 F / WL / SP 选择对应首图及补 Finish；用 ET / PS / BK
+补 Function。先生成 dry-run 对照表，逐条校验实际存在的图片文件，再写产品 JSON，不能仅凭
+字符串批量覆盖现有甲方已选首图。
 
 ## 九、怎么干活
 
