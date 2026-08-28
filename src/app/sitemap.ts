@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/faq", PRIORITY.support),
     ...entry("/request/price-list", PRIORITY.support),
     ...entry("/contact", PRIORITY.support),
+    ...entry("/newsletter", PRIORITY.support, "monthly"),
   ];
 
   // Top-level category listings only — sub-categories are a filter dimension, not a URL.

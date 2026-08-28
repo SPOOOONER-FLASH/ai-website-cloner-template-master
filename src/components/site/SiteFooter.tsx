@@ -88,7 +88,7 @@ export function SiteFooter() {
                   : "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes."}
               </p>
               <div>
-                <ArrowLink href={isSpanish ? "/es/contact" : "/contact"}>
+                <ArrowLink href={isSpanish ? "/es/contact" : "/newsletter"}>
                   {isSpanish ? "Solicitar información" : "Sign-up here"}
                 </ArrowLink>
               </div>
