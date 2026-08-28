@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [
     ...entry("/", PRIORITY.home, "weekly"),
     ...entry("/products", PRIORITY.section, "weekly"),
+    ...entry("/products/argentina-ar4", PRIORITY.category, "weekly"),
     // The finder is a real landing page, not a widget: it is the page that ranks for
     // attribute queries ("panic bar 1000mm stainless") rather than model numbers.
     ...entry("/product-finder", PRIORITY.section, "weekly"),

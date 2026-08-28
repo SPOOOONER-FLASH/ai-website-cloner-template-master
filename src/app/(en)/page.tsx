@@ -4,6 +4,7 @@ import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { TextModule } from "@/components/site/TextModule";
 import { Spacer } from "@/components/site/Spacer";
+import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import * as content from "@/data/home";
 
 /**
@@ -33,6 +34,7 @@ export default function Home() {
       </div>
 
       <div className="modules">
+        <ArgentinaAr4Showcase />
         <Spacer heights={content.spacers.s96} />
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

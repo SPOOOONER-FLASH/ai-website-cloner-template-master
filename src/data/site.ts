@@ -3,6 +3,9 @@
  * 导出名保持不变，页脚和菜单抽屉的调用处一行都不用动。
  */
 import { siteSettings } from "./navigation";
+import { hasSpanishMirror } from "../lib/spanish-mirror";
+
+export { hasSpanishMirror };
 
 export const socialLinks = siteSettings.social;
 
@@ -78,27 +81,17 @@ export function absoluteUrl(path: string): string {
  * ⚠ THE SPANISH SITE IS A PARTIAL MIRROR, NOT A FULL ONE.
  *
  * Built in Spanish:  /  /company  /contact  /projects  /projects/[slug]
- * English only:      /products and everything under it, /downloads
+ *                    /products/argentina-ar4 (a market-specific collection)
+ * English only:      the general /products catalogue and product details, /downloads
  *
  * This matters for SEO correctness. An `hreflang` pointing at a URL that 404s is worse
  * than no `hreflang` at all — Search Console reports it as an error and can discount the
  * whole language cluster. So alternates are only declared for paths that genuinely exist
  * in both languages.
  *
- * When the Spanish product catalogue is built, add its prefix here and the hreflang tags
- * and sitemap entries start appearing automatically.
+ * Exact-path mirrors belong in SPANISH_MIRROR_PATHS. When the full Spanish product
+ * catalogue exists, add the /products prefix and remove the exact-path exception.
  */
-const SPANISH_MIRROR_PREFIXES = ["/", "/company", "/contact", "/projects"];
-
-/** True when the given ENGLISH path also exists under /es. */
-export function hasSpanishMirror(enPath: string): boolean {
-  const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
-  if (clean === "/") return true;
-  return SPANISH_MIRROR_PREFIXES.some(
-    (prefix) => prefix !== "/" && (clean === prefix || clean.startsWith(`${prefix}/`)),
-  );
-}
-
 /**
  * Locale alternates for a given path, used for hreflang.
  * `enPath` is the English path; the Spanish mirror is the same path under /es.

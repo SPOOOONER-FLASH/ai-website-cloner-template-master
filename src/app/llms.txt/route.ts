@@ -65,6 +65,7 @@ function body(): string {
     "",
     "## Key pages",
     "",
+    `- [HYDE Argentina AR-4](${absoluteUrl("/products/argentina-ar4/")}): four mortise lock bodies selected for Argentina-market distribution and OEM enquiries.`,
     `- [Product finder](${absoluteUrl("/product-finder/")}): filter the catalogue by material, finish, door type and certification.`,
     `- [Downloads](${absoluteUrl("/downloads/")}): catalogue PDF, model-scoped test reports, technical document requests.`,
     `- [Company](${absoluteUrl("/company/")}): manufacturing, capacity and quality management.`,
