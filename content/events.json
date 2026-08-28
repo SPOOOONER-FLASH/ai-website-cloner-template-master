@@ -1,0 +1,57 @@
+{
+  "events": [
+    {
+      "slug": "canton-fair-autumn-2026",
+      "name": "140th Canton Fair — Phase I",
+      "market": "China + international buyers",
+      "city": "Guangzhou, China",
+      "venue": "China Import and Export Fair Complex",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-19",
+      "status": "planned-visit",
+      "statusLabel": "Planned buyer meetings",
+      "summary": "Canton Hyland plans to be available for door-hardware and export meetings during Phase I. Meeting details are confirmed directly; no public booth number is claimed.",
+      "sourceUrl": "https://www.cantonfair.org.cn/en-US?area=CG05",
+      "published": true
+    },
+    {
+      "slug": "bau-munich-2027",
+      "name": "BAU 2027",
+      "market": "Europe",
+      "city": "Munich, Germany",
+      "venue": "Trade Fair Center Messe München",
+      "startDate": "2027-01-11",
+      "endDate": "2027-01-15",
+      "status": "planned-visit",
+      "statusLabel": "Planned market visit",
+      "summary": "A planned visit for market research and pre-arranged distributor or specification meetings. Attendance details will be updated when travel and meeting schedules are confirmed.",
+      "sourceUrl": "https://bau-muenchen.com/en/",
+      "published": true
+    },
+    {
+      "slug": "feicon-brazil-2027",
+      "name": "FEICON 2027",
+      "market": "Brazil + Latin America",
+      "city": "São Paulo, Brazil",
+      "venue": "São Paulo Expo",
+      "startDate": "2027-04-06",
+      "endDate": "2027-04-09",
+      "status": "planned-visit",
+      "statusLabel": "Planned market visit",
+      "summary": "A planned Brazil market visit focused on distributors, construction channels and door-hardware requirements. Meeting details remain subject to confirmation.",
+      "sourceUrl": "https://www.feicon.com.br/",
+      "published": true
+    },
+    {
+      "slug": "japan-market-visit-2027",
+      "name": "Japan building-industry visit",
+      "market": "Japan",
+      "city": "To be confirmed",
+      "venue": "Event to be confirmed",
+      "status": "researching",
+      "statusLabel": "Internal planning",
+      "summary": "The exact exhibition, city and dates have not yet been confirmed.",
+      "published": false
+    }
+  ]
+}
