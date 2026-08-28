@@ -344,6 +344,50 @@ collections:
   - name: "site"
     label: "网站设置"
     files:
+      - name: "events"
+        label: "展会与市场访问"
+        file: "content/events.json"
+        format: "json"
+        fields:
+          - name: "events"
+            label: "日程"
+            widget: "list"
+            summary: "{{fields.startDate}} — {{fields.name}}"
+            fields:
+              - { name: "slug", label: "网址标识", widget: "string", pattern: ["^[a-z0-9-]+$", "只能使用小写字母、数字和连字符。"] }
+              - { name: "name", label: "活动名称", widget: "string" }
+              - { name: "market", label: "目标市场", widget: "string" }
+              - { name: "city", label: "城市 / 国家", widget: "string" }
+              - { name: "venue", label: "场馆", widget: "string" }
+              - { name: "startDate", label: "开始日期", widget: "date", format: "YYYY-MM-DD", required: false }
+              - { name: "endDate", label: "结束日期", widget: "date", format: "YYYY-MM-DD", required: false }
+              - name: "status"
+                label: "我方状态"
+                widget: "select"
+                options:
+                  - { label: "计划参观 / 会面", value: "planned-visit" }
+                  - { label: "已确认参展", value: "exhibiting" }
+                  - { label: "内部调研", value: "researching" }
+                hint: "只有拿到参展确认和展位号后才能选「已确认参展」。"
+              - { name: "statusLabel", label: "前台状态文字", widget: "string" }
+              - { name: "summary", label: "说明", widget: "text" }
+              - { name: "sourceUrl", label: "主办方日期来源", widget: "string", required: false }
+              - { name: "published", label: "前台显示", widget: "boolean", default: false, hint: "日期、官方来源和我方状态都确认后再打开。" }
+      - name: "imageAltOverrides"
+        label: "图片 ALT 批量管理"
+        file: "content/image-alt-overrides.json"
+        format: "json"
+        fields:
+          - name: "overrides"
+            label: "图片替代文字覆盖"
+            widget: "list"
+            required: false
+            summary: "{{fields.src}} — {{fields.label}}"
+            hint: "按图片的公开路径集中覆盖产品、分类、案例和新闻中的 ALT。相同路径只能填写一次，重复会让构建失败，避免后台顺序暗中决定结果。"
+            fields:
+              - { name: "src", label: "图片公开路径", widget: "string", hint: "必须是 /images/ 开头的完整路径，例如 /images/products/model-100.webp。" }
+              - { name: "label", label: "ALT（英文）", widget: "string", hint: "描述画面本身和准确型号；不要堆关键词，也不要写图片/照片。" }
+              - { name: "labelEs", label: "ALT（西班牙语）", widget: "string", required: false, hint: "没有人工审核的西语可先留空，前台会继续使用原文。" }
       - name: "promo"
         label: "弹窗公告"
         file: "content/promo.json"
