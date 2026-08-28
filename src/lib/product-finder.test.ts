@@ -21,12 +21,22 @@ import {
   type FacetKey,
 } from "./product-finder.ts";
 
-test("visiblePageNumbers keeps a three-page window with direct first and last controls", () => {
-  assert.deepEqual(visiblePageNumbers(1, 22), [1, 2, 3]);
-  assert.deepEqual(visiblePageNumbers(2, 22), [1, 2, 3]);
-  assert.deepEqual(visiblePageNumbers(3, 22), [2, 3, 4]);
-  assert.deepEqual(visiblePageNumbers(21, 22), [20, 21, 22]);
-  assert.deepEqual(visiblePageNumbers(22, 22), [20, 21, 22]);
+test("visiblePageNumbers exposes the first and last page around a three-page window", () => {
+  assert.deepEqual(visiblePageNumbers(1, 22), [1, 2, 3, "ellipsis-end", 22]);
+  assert.deepEqual(visiblePageNumbers(2, 22), [1, 2, 3, "ellipsis-end", 22]);
+  assert.deepEqual(visiblePageNumbers(3, 22), [1, 2, 3, 4, "ellipsis-end", 22]);
+  assert.deepEqual(visiblePageNumbers(11, 22), [
+    1,
+    "ellipsis-start",
+    10,
+    11,
+    12,
+    "ellipsis-end",
+    22,
+  ]);
+  assert.deepEqual(visiblePageNumbers(21, 22), [1, "ellipsis-start", 20, 21, 22]);
+  assert.deepEqual(visiblePageNumbers(22, 22), [1, "ellipsis-start", 20, 21, 22]);
+  assert.deepEqual(visiblePageNumbers(1, 4), [1, 2, 3, 4]);
   assert.deepEqual(visiblePageNumbers(1, 2), [1, 2]);
   assert.deepEqual(visiblePageNumbers(1, 0), []);
 });

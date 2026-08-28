@@ -63,7 +63,7 @@ export const locales = ["en", "es"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultTitle: Record<Locale, string> = {
-  en: "Canton Hyland — Panic Exit Devices & Door Hardware Manufacturer",
+  en: "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
   es: "Canton Hyland — Fabricante de barras antipánico y herrajes",
 };
 

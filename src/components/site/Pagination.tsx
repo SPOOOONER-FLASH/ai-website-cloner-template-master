@@ -56,19 +56,29 @@ export function Pagination({
       </div>
 
       <ol className="catalogue-pager-pages flex items-center gap-8">
-        {visiblePageNumbers(page, pageCount).map((n) => (
-          <li key={n}>
-            <button
-              type="button"
-              onClick={() => onChange(n)}
-              aria-current={n === page ? "page" : undefined}
-              aria-label={`Page ${n}`}
-              className="catalogue-pager-page min-w-38 px-10 py-6 text-c1"
+        {visiblePageNumbers(page, pageCount).map((item) =>
+          typeof item === "number" ? (
+            <li key={item}>
+              <button
+                type="button"
+                onClick={() => onChange(item)}
+                aria-current={item === page ? "page" : undefined}
+                aria-label={`Page ${item}`}
+                className="catalogue-pager-page min-w-38 px-10 py-6 text-c1"
+              >
+                {item}
+              </button>
+            </li>
+          ) : (
+            <li
+              key={item}
+              className="catalogue-pager-ellipsis min-w-20 text-center text-c1 text-ink-tertiary"
             >
-              {n}
-            </button>
-          </li>
-        ))}
+              <span aria-hidden="true">…</span>
+              <span className="sr-only">More pages</span>
+            </li>
+          ),
+        )}
       </ol>
 
       <div className="catalogue-pager-side catalogue-pager-side-end">

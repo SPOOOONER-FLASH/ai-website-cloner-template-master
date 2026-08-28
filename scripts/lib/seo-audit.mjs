@@ -1,8 +1,8 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { relative, resolve, sep } from "node:path";
 
-const TITLE = { min: 30, max: 65 };
-const DESCRIPTION = { min: 70, max: 170 };
+const TITLE = { min: 30, max: 62 };
+const DESCRIPTION = { min: 70, max: 165 };
 const NON_PUBLIC_ROUTES = new Set(["/admin/", "/status/", "/404/", "/_not-found/"]);
 
 function decodeHtml(value = "") {

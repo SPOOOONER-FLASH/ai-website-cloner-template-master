@@ -1,7 +1,7 @@
 # 交接 — Canton Hyland / HYDE 官网
 
 > 新会话先读这份，再按需读 `docs/collaboration/agent-updates/`（Claude × Codex 互通进度）。
-> 最后更新：2026-08-27
+> 最后更新：2026-08-28
 
 ## 一、这个站是干什么的
 
@@ -41,11 +41,14 @@
 
 ## 四、当前状态
 
-产品 431 · 静态页 479 · 图片 1342 张 · 测试 47 通过
+产品 435 · 公开内容页 476 · 静态页 481 · 图片 1593 张 · 测试 51 通过
 
 **已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
-（20/页 + 分面折叠 + 独立滚动）、全部 431 个产品链接服务端渲染（`ProductIndexList`）、阿里深链接、GA4 + Clarity、旧站 URL 301。
+（20/页 + 分面折叠 + 独立滚动 + `1 2 3 … 22` 总页数提示）、全部 435 个产品链接服务端渲染（`ProductIndexList`）、阿里深链接、GA4 + Clarity、旧站 URL 301。
+
+**2026-08-28 已上线**：`HYDE Argentina AR-4` 首页市场橱窗、四款长期产品页、英西双语集合页、
+响应式营销图、ItemList/Breadcrumb JSON-LD、Sitemap/hreflang/llms.txt 与 IndexNow 提交。
 
 **分析与站长工具**
 
@@ -90,13 +93,14 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 - MOQ 与交期分档（阿里后台可导出，同时能填 FAQ 空着的两问）
 - Application 用途字段（只有 30% 的产品有）
 - 44 个属性字段里的整句话要改写成值
-- 阿根廷四款锁（Elabora 代工）的型号与规格
 
 ## 八、甲方已确认的待办
 
-**要做**：相关产品推荐 · Service 聚合栏目 · 展会日程页 · Newsletter · 资质证书页 ·
-材料内容线 · 应用场景页 · 图片 ALT 批量管理 · 首页「当季主打市场」模块（方案待定，
-倾向四宫格而非轮播）
+**已确认启动**：相关产品推荐 · Service 聚合栏目 · 展会日程页 · Newsletter 界面系统 ·
+资质证书页（Kale 文件除外）· 材料内容线 · 应用场景页 · 图片 ALT 批量管理 ·
+429 个西班牙语产品路由。西语术语可先上线，甲方后续提供修订。
+
+**已完成**：首页「当季主打市场」采用 AR-4 建筑主视觉 + 四宫格；四款产品同时保留长期产品页。
 
 **不做**：经销商查询 · 网站装修拖拽编辑器
 
@@ -166,10 +170,10 @@ npm run assets:editorial     # 加了编辑图必跑，否则 prebuild 直接终
 
 ## 十、下一个会话建议顺序
 
-1. **等西语术语表复核回来，然后铺 es 路由**
-   `docs/content/revision-terminologia-es.docx` 已发给甲方找母语同学看。
-   确认后：加 `src/app/es/products/**` 路由 + `SPANISH_MIRROR_PREFIXES` 加前缀，
-   471 → 900+ 页，hreflang 自动配对。**术语没确认前不要上线**——上线即进 sitemap。
+1. **铺 429 个西语产品路由**
+   甲方 2026-08-28 明确授权先上线，后续收到母语术语修订再更新。
+   加 `src/app/es/products/**` 路由 + `SPANISH_MIRROR_PREFIXES` 对应前缀；上线前仍需检查
+   nameEs/summaryEs/specsEs 回退、canonical、hreflang、JSON-LD 与 Sitemap 是否逐页一致。
 2. **确认后缀码对照表** —— 见第八·六节，甲方确认后可差异化 85 个重复页
 3. **继续写指南文章** —— 已上线 3 篇，选题见 `docs/content/EDITORIAL_PLAN.md`。
    ⚠ 选题 1（EN 1125 vs ANSI）要重写角度：我们没有 ANSI/BHMA，EN 1125 只覆盖一个型号。

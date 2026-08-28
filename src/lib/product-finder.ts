@@ -72,21 +72,38 @@ export const SECONDARY_FACETS: FacetKey[] = [
  */
 export const PAGE_SIZE = 20;
 
+export type VisiblePageItem = number | "ellipsis-start" | "ellipsis-end";
+
 /**
- * Three consecutive page choices for the shared catalogue pager.
+ * Three consecutive page choices plus the distant endpoints of the catalogue.
  *
- * First and Last are separate controls, so the numeric rail can stay calm and stable
- * instead of mixing ellipses with distant endpoints. The current page sits in the
- * centre whenever there is room; the window pins to either edge at the beginning and
- * end of the result set.
+ * The endpoints communicate the real catalogue depth (`1 2 3 … 22`) while the moving
+ * window keeps the control compact (`1 … 10 11 12 … 22`). Ellipses are separate tokens
+ * so the component can render them as inert text rather than misleading buttons.
  */
-export function visiblePageNumbers(page: number, count: number): number[] {
+export function visiblePageNumbers(page: number, count: number): VisiblePageItem[] {
   if (count <= 0) return [];
-  if (count <= 3) return Array.from({ length: count }, (_, index) => index + 1);
+  if (count <= 4) return Array.from({ length: count }, (_, index) => index + 1);
 
   const current = Math.min(Math.max(Math.trunc(page) || 1, 1), count);
   const start = Math.min(Math.max(current - 1, 1), count - 2);
-  return [start, start + 1, start + 2];
+  const window = [start, start + 1, start + 2];
+  const items: VisiblePageItem[] = [];
+
+  if (start > 1) {
+    items.push(1);
+    if (start > 2) items.push("ellipsis-start");
+  }
+
+  items.push(...window);
+
+  const windowEnd = window.at(-1) ?? count;
+  if (windowEnd < count) {
+    if (windowEnd < count - 1) items.push("ellipsis-end");
+    items.push(count);
+  }
+
+  return items;
 }
 
 /** Every value a product contributes to a given facet. */

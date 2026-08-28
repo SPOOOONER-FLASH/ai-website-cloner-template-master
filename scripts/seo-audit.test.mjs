@@ -23,12 +23,16 @@ function publicDocument({
   noindex = true,
   heading,
   visibleText = "",
+  title: suppliedTitle,
+  description: suppliedDescription,
 }) {
-  const title = lang === "es" ? "Herrajes arquitectónicos para proyectos" : "Architectural hardware for projects";
+  const title = suppliedTitle
+    ?? (lang === "es" ? "Herrajes arquitectónicos para proyectos" : "Architectural hardware for projects");
   const visibleHeading = heading ?? title;
-  const description = lang === "es"
-    ? "Herrajes arquitectónicos documentados para entradas, rutas de evacuación y programas de puertas comerciales."
-    : "Documented architectural hardware for entrances, egress routes, and commercial door schedules.";
+  const description = suppliedDescription
+    ?? (lang === "es"
+      ? "Herrajes arquitectónicos documentados para entradas, rutas de evacuación y programas de puertas comerciales."
+      : "Documented architectural hardware for entrances, egress routes, and commercial door schedules.");
   const links = alternates
     .map(({ language, href }, index) => index % 2
       ? `<link hrefLang="${language}" href="${href}" rel="alternate">`
@@ -202,6 +206,17 @@ test("accepts a valid staging export and ignores hrefLang on ordinary anchors", 
   withFixture(() => {}, (result) => {
     assert.deepEqual(result.semanticIssues, []);
     assert.equal(result.pages.find((page) => page.route === "/")?.alternates.length, 3);
+  });
+});
+
+test("reports copy that exceeds the 62-character title and 165-character description budgets", () => {
+  withFixture((state) => {
+    state.home.title = "T".repeat(63);
+    state.home.description = "D".repeat(166);
+  }, (result) => {
+    const homeWarnings = result.qualityWarnings.filter(({ route }) => route === "/");
+    assert.ok(homeWarnings.some(({ code }) => code === "title-length"));
+    assert.ok(homeWarnings.some(({ code }) => code === "description-length"));
   });
 });
 
