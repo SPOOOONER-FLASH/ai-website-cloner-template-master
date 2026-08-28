@@ -10,9 +10,14 @@ import type { NewsArticle, NewsKind } from "./types";
  * one — see PROGRESS.md, "宁可留空，不可编造".
  */
 /** Records live in content/news/*.json — see products.ts for the rationale. */
-import { news } from "./generated/news";
+import { news as generatedNews } from "./generated/news";
+import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 
-export { news };
+export const news: NewsArticle[] = generatedNews.map((article) => ({
+  ...article,
+  heroImage: applyImageAltOverride(article.heroImage),
+  gallery: article.gallery ? applyImageAltOverrides(article.gallery) : undefined,
+}));
 
 /**
  * What the site is allowed to show.

@@ -344,6 +344,21 @@ collections:
   - name: "site"
     label: "网站设置"
     files:
+      - name: "imageAltOverrides"
+        label: "图片 ALT 批量管理"
+        file: "content/image-alt-overrides.json"
+        format: "json"
+        fields:
+          - name: "overrides"
+            label: "图片替代文字覆盖"
+            widget: "list"
+            required: false
+            summary: "{{fields.src}} — {{fields.label}}"
+            hint: "按图片的公开路径集中覆盖产品、分类、案例和新闻中的 ALT。相同路径只能填写一次，重复会让构建失败，避免后台顺序暗中决定结果。"
+            fields:
+              - { name: "src", label: "图片公开路径", widget: "string", hint: "必须是 /images/ 开头的完整路径，例如 /images/products/model-100.webp。" }
+              - { name: "label", label: "ALT（英文）", widget: "string", hint: "描述画面本身和准确型号；不要堆关键词，也不要写图片/照片。" }
+              - { name: "labelEs", label: "ALT（西班牙语）", widget: "string", required: false, hint: "没有人工审核的西语可先留空，前台会继续使用原文。" }
       - name: "promo"
         label: "弹窗公告"
         file: "content/promo.json"

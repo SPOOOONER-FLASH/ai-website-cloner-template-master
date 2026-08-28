@@ -1,4 +1,5 @@
 import categoriesFile from "../../content/categories.json";
+import { applyImageAltOverride } from "./image-alt-overrides";
 import type { Category } from "./types";
 
 /**
@@ -12,7 +13,17 @@ import type { Category } from "./types";
  * Sub-categories are a FILTER DIMENSION only (decision 3) — they never become a URL
  * segment. They are used by the P4 listing page.
  */
-export const categories = categoriesFile.categories as Category[];
+function applyCategoryImageAltOverrides(category: Category): Category {
+  return {
+    ...category,
+    image: applyImageAltOverride(category.image),
+    children: category.children?.map(applyCategoryImageAltOverrides),
+  };
+}
+
+export const categories = (categoriesFile.categories as Category[]).map(
+  applyCategoryImageAltOverrides,
+);
 
 /* -------------------------------------------------------------------------
  * Lookup helpers — pure functions over the tree, no side effects.

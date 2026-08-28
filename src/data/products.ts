@@ -38,9 +38,18 @@ import { canonicalCategorySlug } from "./category-aliases";
  * The barrel is regenerated from disk on every build (npm prebuild), so it cannot
  * drift from what is actually in content/.
  */
-import { products } from "./generated/products";
+import { products as generatedProducts } from "./generated/products";
+import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 
-export { products };
+export const products: Product[] = generatedProducts.map((product) => ({
+  ...product,
+  heroImage: applyImageAltOverride(product.heroImage),
+  gallery: applyImageAltOverrides(product.gallery),
+  videos: product.videos?.map((video) => ({
+    ...video,
+    poster: video.poster ? applyImageAltOverride(video.poster) : undefined,
+  })),
+}));
 
 /* -------------------------------------------------------------------------
  * Lookup helpers — pure functions, no side effects.
