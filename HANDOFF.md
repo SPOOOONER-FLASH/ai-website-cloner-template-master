@@ -153,6 +153,16 @@ npm run assets:editorial     # 加了编辑图必跑，否则 prebuild 直接终
 - 写含反引号的文档用脚本文件，不要用 `node -e` 内联（反引号会被 bash 当命令替换）。
 - nginx 子 `location` 一旦有 `add_header`，父级安全头会全部丢失，需在每个 location 重复声明。
 - 本机 python 是商店占位程序，跑不了。
+- **CMS 登录白屏（2026-08-28 排查了一轮）**。三处必须同源，改一处就要改另外两处：
+  Worker 的 `ALLOWED_DOMAINS` · `config.yml` 的 `base_url` · GitHub OAuth App 的 callback。
+  换域名后只改了站点没改 Worker，登录就全断。
+  症状极具误导性：Worker 拒绝时返回 **HTTP 200、1504 字节、可见文字为零**（内容全在
+  `<script>` 里），浏览器渲染成纯白，看起来像 about:blank，完全不像域名问题。
+  排查方法：`curl -o /dev/null -w "%{redirect_url}"` 打
+  `<base_url>/auth?provider=github&site_id=<域名>&scope=repo`，能 302 到 github.com 才算通。
+- **`*.workers.dev` 在国内部分网络不可达**（同事的 Mac 上 Edge 报 `ERR_TIMED_OUT`）。
+  已改用 `auth.cantonlock.com`（同一个 Cloudflare zone，主站通它就通）。
+  ⚠ 别被"另一台设备能用"误导——那台多半走的手机流量，不是同一条网络。
 
 ## 十、下一个会话建议顺序
 
