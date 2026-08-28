@@ -7,7 +7,6 @@
     "knob-locks",
     "heavy-duty-cylindrical-locks"
   ],
-  "summary": "Stainless steel heavy duty cylindrical lock.",
   "specs": [
     {
       "label": "Material",
@@ -44,6 +43,14 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to deadbolts"
+    },
+    {
+      "label": "Finish",
+      "value": "Stainless steel"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless Steel",
@@ -96,7 +103,16 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos"
+    },
+    {
+      "label": "Acabado",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera.",
+  "summary": "A stainless steel knob lock, entrance function."
 }

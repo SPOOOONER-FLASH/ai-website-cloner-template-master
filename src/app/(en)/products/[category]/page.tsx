@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -8,6 +8,10 @@ import { getProductsByCategory } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
+import {
+  canonicalCategorySlug,
+  getLegacyCategoryParams,
+} from "@/data/category-aliases";
 
 interface CategoryPageProps {
   params: Promise<{ category: string }>;
@@ -16,12 +20,16 @@ interface CategoryPageProps {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getTopLevelCategories().map((category) => ({ category: category.slug }));
+  return [
+    ...getTopLevelCategories().map((category) => ({ category: category.slug })),
+    ...getLegacyCategoryParams(),
+  ];
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category: categorySlug } = await params;
-  const category = getTopLevelCategories().find((item) => item.slug === categorySlug);
+  const canonicalSlug = canonicalCategorySlug(categorySlug);
+  const category = getTopLevelCategories().find((item) => item.slug === canonicalSlug);
 
   if (!category) return {};
 
@@ -40,7 +48,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const description = full.length <= 165 ? full : category.summary;
 
   return pageMetadata({
-    enPath: `/products/${categorySlug}`,
+    enPath: `/products/${canonicalSlug}`,
     locale: "en",
     title,
     description,
@@ -51,7 +59,13 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category: categorySlug } = await params;
-  const category = getTopLevelCategories().find((item) => item.slug === categorySlug);
+  const canonicalSlug = canonicalCategorySlug(categorySlug);
+
+  if (canonicalSlug !== categorySlug) {
+    permanentRedirect(`/products/${canonicalSlug}/`);
+  }
+
+  const category = getTopLevelCategories().find((item) => item.slug === canonicalSlug);
 
   if (!category) notFound();
 

@@ -7,7 +7,7 @@
     "knob-locks",
     "tubular-locks"
   ],
-  "summary": "Brass or Stainless Steel tubular lock.",
+  "summary": "A brass or stainless steel knob lock with 60mm / 70mm adjustable backset, passage function, for residential use.",
   "specs": [
     {
       "label": "Material",
@@ -48,6 +48,10 @@
     {
       "label": "Application",
       "value": "Residential use"
+    },
+    {
+      "label": "Finish",
+      "value": "Polished brass"
     }
   ],
   "material": "Brass Or Stainless Steel",
@@ -112,6 +116,10 @@
     {
       "label": "Aplicación",
       "value": "Uso residencial"
+    },
+    {
+      "label": "Acabado",
+      "value": "Latón pulido"
     }
   ],
   "summaryEs": "Una cerradura de pomo de latón o acero inoxidable, entrada de 60 mm / 70 mm regulable, función paso libre, para uso residencial."

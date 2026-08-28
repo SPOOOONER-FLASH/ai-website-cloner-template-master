@@ -2,13 +2,13 @@
   "model": "AR4-101",
   "slug": "hyde-ar4-101-mortise-lock",
   "name": "Standard Mortise Lock Body",
-  "nameEs": "Cerradura de embutir estándar",
+  "nameEs": "Cerraduras de embutir",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
   "summary": "A compact key-operated mortise lock body in the Argentina AR-4 market collection.",
-  "summaryEs": "Cerradura de embutir compacta accionada por llave para la colección Argentina AR-4.",
+  "summaryEs": "Una caja de cerradura de embutir.",
   "specs": [
     {
       "label": "Factory reference",
@@ -35,26 +35,24 @@
   ],
   "specsEs": [
     {
-      "label": "Referencia de fábrica",
+      "label": "Factory reference",
       "value": "7240"
     },
     {
-      "label": "Frente",
-      "value": "18 × 183",
-      "unit": "mm"
+      "label": "Faceplate",
+      "value": "18 × 183"
     },
     {
-      "label": "Profundidad de caja",
-      "value": "63",
-      "unit": "mm"
+      "label": "Case depth",
+      "value": "63"
     },
     {
-      "label": "Opciones de picaporte",
-      "value": "Aleación de zinc cobreada o latón"
+      "label": "Latch options",
+      "value": "Copper-plated zinc alloy or brass"
     },
     {
-      "label": "Opciones de llave",
-      "value": "Aleación de zinc o latón; dos llaves"
+      "label": "Key options",
+      "value": "Zinc alloy or brass; two keys"
     }
   ],
   "material": "Nickel-plated iron lock case",

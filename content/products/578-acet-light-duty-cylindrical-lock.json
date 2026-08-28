@@ -7,7 +7,7 @@
     "knob-locks",
     "light-duty-cylindrical-locks"
   ],
-  "summary": "Stainless steel light duty cylindrical lock.",
+  "summary": "A stainless steel knob lock, 5-pin tumbler, brass plug, two nickel-plated brass keys cylinder preparation, entrance — keyed outside function, for standard residential use.",
   "specs": [
     {
       "label": "Material",
@@ -44,6 +44,14 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to the deadbolt series, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique copper"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless Steel",
@@ -131,7 +139,15 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con la serie de cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Cobre antiguo"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, para uso residencial estándar."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera, para uso residencial estándar."
 }

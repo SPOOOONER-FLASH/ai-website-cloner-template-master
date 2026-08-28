@@ -48,6 +48,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to deadbolts"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless Steel201/304",
@@ -108,7 +112,11 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable 201/304, para para baños y otras puertas de privacidad."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable 201/304, función entrada — con llave por fuera, para para baños y otras puertas de privacidad."
 }

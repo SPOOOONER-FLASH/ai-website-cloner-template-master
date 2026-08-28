@@ -19,6 +19,10 @@
     {
       "label": "Finish",
       "value": "Zinc-plated, black or chrome-plated."
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "steel material with spray painting , different finishes are available .",
@@ -70,7 +74,11 @@
     {
       "label": "Acabado",
       "value": "Zinc-plated, black or chrome-plated."
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una barra antipánico, para fire door , panic door ."
+  "summaryEs": "Una barra antipánico, función entrada — con llave por fuera, para fire door , panic door ."
 }

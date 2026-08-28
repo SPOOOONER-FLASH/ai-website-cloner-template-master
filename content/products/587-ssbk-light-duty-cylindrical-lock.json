@@ -7,7 +7,7 @@
     "knob-locks",
     "light-duty-cylindrical-locks"
   ],
-  "summary": "Stainless steel light duty cylindrical lock.",
+  "summary": "A stainless steel knob lock, prepared for a solid brass/zinc & brass cylinder, privacy — bathroom, turn button inside function, for standard residential use.",
   "specs": [
     {
       "label": "Material",
@@ -48,6 +48,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to the deadbolt series, or master keyed"
+    },
+    {
+      "label": "Function",
+      "value": "Privacy — bathroom, turn button inside"
     }
   ],
   "material": "Stainless Steel",
@@ -127,7 +131,11 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con la serie de cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Función",
+      "value": "Privacidad — baño, botón de giro interior"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, para uso residencial estándar."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, función privacidad — baño, botón de giro interior, para uso residencial estándar."
 }

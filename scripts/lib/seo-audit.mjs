@@ -151,6 +151,7 @@ function parsePage(outDir, file) {
   const mainSections = [...body.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/giu)].map((match) => match[1]);
   const visibleContent = mainSections.length > 0 ? mainSections.join(" ") : body;
   const h1Texts = elementTexts(visibleContent, "h1");
+  const redirectMatch = html.match(/NEXT_REDIRECT;replace;([^;]+);(\d{3});/u);
 
   return {
     file,
@@ -174,6 +175,8 @@ function parsePage(outDir, file) {
     h1: h1Texts.length,
     h1Texts,
     visibleText: normalizedVisibleText(visibleContent),
+    redirectTarget: redirectMatch?.[1] ?? "",
+    redirectStatus: redirectMatch ? Number(redirectMatch[2]) : undefined,
   };
 }
 
@@ -277,7 +280,8 @@ export function auditBuild({ outDir }) {
   const pages = collectHtmlFiles(absoluteOut)
     .map((file) => parsePage(absoluteOut, file))
     .sort((left, right) => left.route.localeCompare(right.route));
-  const publicPages = pages.filter((page) => page.public);
+  const redirectPages = pages.filter((page) => page.public && page.redirectTarget);
+  const publicPages = pages.filter((page) => page.public && !page.redirectTarget);
   const semanticIssues = [];
   const qualityWarnings = [];
   const addIssue = (page, code, detail) => semanticIssues.push({ route: page?.route ?? "(release)", code, detail });
@@ -355,6 +359,33 @@ export function auditBuild({ outDir }) {
       }
     } catch {
       // Already reported above.
+    }
+  }
+
+  for (const page of redirectPages) {
+    if (page.redirectStatus !== 308) {
+      addIssue(page, "redirect-status-invalid", `Expected 308, found ${page.redirectStatus ?? "missing"}`);
+    }
+
+    let targetUrl;
+    try {
+      targetUrl = new URL(page.redirectTarget, siteOrigin || undefined);
+    } catch {
+      addIssue(page, "redirect-target-invalid", page.redirectTarget || "Missing redirect target");
+      continue;
+    }
+
+    if (siteOrigin && targetUrl.origin !== siteOrigin) {
+      addIssue(page, "redirect-origin-mismatch", `${targetUrl.origin} != ${siteOrigin}`);
+    }
+    if (!publicPageByRoute.has(targetUrl.pathname)) {
+      addIssue(page, "redirect-target-missing", targetUrl.pathname);
+    }
+
+    if (page.canonical.length !== 1) {
+      addIssue(page, "redirect-canonical-count", `Expected one canonical, found ${page.canonical.length}`);
+    } else if (!sameUrl(page.canonical[0], targetUrl.toString())) {
+      addIssue(page, "redirect-canonical-mismatch", `${page.canonical[0]} != ${targetUrl}`);
     }
   }
 
@@ -576,6 +607,12 @@ export function auditBuild({ outDir }) {
         addIssue(undefined, "sitemap-url-target-missing", sitemapUrl || "Invalid sitemap URL");
       }
     }
+    for (const page of redirectPages) {
+      const retiredUrl = siteOrigin ? normalizeAbsoluteUrl(new URL(page.route, siteOrigin).toString()) : "";
+      if (retiredUrl && sitemapCounts.has(retiredUrl)) {
+        addIssue(page, "sitemap-redirect-url", retiredUrl);
+      }
+    }
     for (const { loc, lastModified } of sitemapEntries) {
       if (!lastModified) continue;
       const lastModifiedTime = Date.parse(lastModified);
@@ -635,6 +672,7 @@ export function auditBuild({ outDir }) {
     summary: {
       pages: pages.length,
       publicPages: publicPages.length,
+      redirectPages: redirectPages.length,
       jsonLdPages: publicPages.filter((page) => page.jsonLd.length > 0).length,
       alternateLinkPages: publicPages.filter((page) => page.alternates.length > 0).length,
       semanticIssues: semanticIssues.length,

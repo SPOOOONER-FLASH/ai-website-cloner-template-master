@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
+import {
+  canonicalCategorySlug,
+  getLegacyProductParams,
+} from "@/data/category-aliases";
 
 type ProductPageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -14,7 +18,7 @@ type ProductPageProps = {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getAllProductParams();
+  return [...getAllProductParams(), ...getLegacyProductParams()];
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -23,7 +27,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) return {};
 
-  const path = `/products/${category}/${slug}/`;
+  const canonicalCategory = canonicalCategorySlug(category);
+  const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
 
   return {
@@ -56,13 +61,19 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { category, slug } = await params;
+  const canonicalCategory = canonicalCategorySlug(category);
+
+  if (canonicalCategory !== category) {
+    permanentRedirect(`/products/${canonicalCategory}/${slug}/`);
+  }
+
   const product = getProductBySlug(category, slug);
 
   if (!product) notFound();
 
-  const categoryRecord = findCategoryByPath([category]);
+  const categoryRecord = findCategoryByPath([canonicalCategory]);
   const categoryName = categoryRecord?.name ?? "Products";
-  const url = absoluteUrl(`/products/${category}/${slug}/`);
+  const url = absoluteUrl(`/products/${canonicalCategory}/${slug}/`);
 
   return (
     <>
@@ -71,7 +82,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         data={breadcrumbSchema([
           { name: "Home", url: absoluteUrl("/") },
           { name: "Products", url: absoluteUrl("/products/") },
-          { name: categoryName, url: absoluteUrl(`/products/${category}/`) },
+          { name: categoryName, url: absoluteUrl(`/products/${canonicalCategory}/`) },
           { name: product.name, url },
         ])}
       />

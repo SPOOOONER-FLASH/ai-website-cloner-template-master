@@ -7,7 +7,6 @@
     "knob-locks",
     "heavy-duty-cylindrical-locks"
   ],
-  "summary": "Stainless steel heavy duty cylindrical lock.",
   "specs": [
     {
       "label": "Material",
@@ -98,5 +97,6 @@
       "value": "Admite llave igual con los cerrojos"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable.",
+  "summary": "A stainless steel knob lock."
 }

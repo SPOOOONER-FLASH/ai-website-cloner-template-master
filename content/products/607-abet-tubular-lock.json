@@ -7,7 +7,6 @@
     "knob-locks",
     "tubular-locks"
   ],
-  "summary": "Stainless steel/Brass/Solid steel tubular lock.",
   "specs": [
     {
       "label": "Material",
@@ -48,6 +47,14 @@
     {
       "label": "Application",
       "value": "Residential use"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique brass"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless steel/Brass/Solid steel",
@@ -104,7 +111,16 @@
     {
       "label": "Aplicación",
       "value": "Uso residencial"
+    },
+    {
+      "label": "Acabado",
+      "value": "Latón antiguo"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, latón o acero macizo, entrada de 60 mm / 70 mm regulable, para uso residencial."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, latón o acero macizo, entrada de 60 mm / 70 mm regulable, función entrada — con llave por fuera, para uso residencial.",
+  "summary": "A stainless steel/brass/solid steel knob lock in antique brass with 60mm / 70mm adjustable backset, prepared for a brass cylinder, entrance function, for residential use."
 }

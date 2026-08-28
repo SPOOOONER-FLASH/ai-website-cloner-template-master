@@ -7,7 +7,7 @@
     "knob-locks",
     "tubular-locks"
   ],
-  "summary": "Stainless Steel tubular lock.",
+  "summary": "A stainless steel knob lock with 60mm / 70mm adjustable backset, prepared for a brass cylinder, entrance — keyed outside function, for residential use.",
   "specs": [
     {
       "label": "Material",
@@ -52,6 +52,10 @@
     {
       "label": "Application",
       "value": "Residential use"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless Steel",
@@ -144,7 +148,11 @@
     {
       "label": "Aplicación",
       "value": "Uso residencial"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, entrada de 60 mm / 70 mm regulable, para uso residencial."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, entrada de 60 mm / 70 mm regulable, función entrada — con llave por fuera, para uso residencial."
 }

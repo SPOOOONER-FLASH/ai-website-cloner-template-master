@@ -60,6 +60,12 @@ function publicDocument({
   </body></html>`;
 }
 
+function redirectDocument({ target, status = 308 }) {
+  return `<!doctype html><html id="__next_error__"><head>
+    <link href="${ORIGIN}${target}" rel="canonical">
+  </head><body><script>NEXT_REDIRECT;replace;${target};${status};</script></body></html>`;
+}
+
 function globalSchemas() {
   return [
     {
@@ -151,6 +157,7 @@ function writeValidStagingFixture(root, mutate = () => {}) {
     },
     robots: "User-Agent: *\nDisallow: /\n",
     sitemap: '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
+    redirects: [],
   };
 
   mutate(state);
@@ -161,6 +168,13 @@ function writeValidStagingFixture(root, mutate = () => {}) {
   writeFile(root, "admin/index.html", '<!doctype html><html lang="zh-CN"><head><meta name="robots" content="noindex,nofollow"></head><body>CMS</body></html>');
   writeFile(root, "status/index.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"></head><body><h1>Status</h1></body></html>');
   writeFile(root, "404.html", '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"></head><body><h1>404</h1></body></html>');
+  for (const redirect of state.redirects) {
+    writeFile(
+      root,
+      `${redirect.route.replace(/^\//u, "")}index.html`,
+      redirectDocument(redirect),
+    );
+  }
   writeFile(root, "robots.txt", state.robots);
   writeFile(root, "sitemap.xml", state.sitemap);
 }
@@ -232,6 +246,19 @@ test("reports route, social, language, and reciprocal alternate mismatches", () 
     assert.ok(codes.includes("og-url-mismatch"));
     assert.ok(codes.includes("html-lang-mismatch"));
     assert.ok(codes.includes("hreflang-not-reciprocal"));
+  });
+});
+
+test("accepts a permanent static-export redirect and audits its target separately", () => {
+  withFixture((state) => {
+    state.redirects.push({ route: "/retired/", target: "/products/lock/", status: 308 });
+  }, (result) => {
+    assert.deepEqual(result.semanticIssues, []);
+    assert.equal(result.summary.redirectPages, 1);
+    assert.equal(
+      result.pages.find((page) => page.route === "/retired/")?.redirectTarget,
+      "/products/lock/",
+    );
   });
 });
 

@@ -6,7 +6,6 @@
   "categoryPath": [
     "lever-handles"
   ],
-  "summary": "Zinc alloy lever handle, 60/70mm backset.",
   "specs": [
     {
       "label": "Material",
@@ -38,11 +37,15 @@
     },
     {
       "label": "Function",
-      "value": "Entrance, privacy, passage or dummy"
+      "value": "Entrance — keyed outside"
     },
     {
       "label": "Keying",
       "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Polished brass"
     }
   ],
   "material": "Zinc Alloy",
@@ -90,12 +93,17 @@
     },
     {
       "label": "Función",
-      "value": "Entrada, privacidad, paso libre o falsa"
+      "value": "Entrada — con llave por fuera"
     },
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Latón pulido"
     }
   ],
-  "summaryEs": "Una manija de palanca de zamak, entrada de 60/70 mm, función entrada, privacidad, paso libre o falsa."
+  "summaryEs": "Una manija de palanca de zamak, entrada de 60/70 mm, función entrada — con llave por fuera.",
+  "summary": "A zinc alloy lever handle in polished brass with 60/70mm backset, entrance function."
 }

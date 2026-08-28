@@ -1,4 +1,5 @@
 import type { Product } from "./types";
+import { canonicalCategorySlug } from "./category-aliases";
 
 /**
  * Canton Hyland product catalogue — 20 products from the client's own material.
@@ -52,12 +53,14 @@ export function getProductByModel(model: string): Product | undefined {
 
 /** Find one product by its top-level category slug and its own slug — the URL pair. */
 export function getProductBySlug(categorySlug: string, slug: string): Product | undefined {
-  return products.find((p) => p.categoryPath[0] === categorySlug && p.slug === slug);
+  const canonicalSlug = canonicalCategorySlug(categorySlug);
+  return products.find((p) => p.categoryPath[0] === canonicalSlug && p.slug === slug);
 }
 
 /** All products whose category path starts with the given slug. */
 export function getProductsByCategory(categorySlug: string): Product[] {
-  return products.filter((p) => p.categoryPath[0] === categorySlug);
+  const canonicalSlug = canonicalCategorySlug(categorySlug);
+  return products.filter((p) => p.categoryPath[0] === canonicalSlug);
 }
 
 /**

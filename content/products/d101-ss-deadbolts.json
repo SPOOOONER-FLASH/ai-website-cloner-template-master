@@ -6,7 +6,6 @@
   "categoryPath": [
     "deadbolts"
   ],
-  "summary": "A deadbolt, prepared for a solid brass cylinder.",
   "specs": [
     {
       "label": "Cylinder",
@@ -35,6 +34,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed to pair with an entrance bored lock"
+    },
+    {
+      "label": "Finish",
+      "value": "Stainless steel"
     }
   ],
   "material": "",
@@ -91,7 +94,12 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con una cerradura de entrada de perforación"
+    },
+    {
+      "label": "Acabado",
+      "value": "Acero inoxidable"
     }
   ],
-  "summaryEs": "Un cerrojo."
+  "summaryEs": "Un cerrojo.",
+  "summary": "A deadbolt in stainless steel, prepared for a solid brass cylinder."
 }

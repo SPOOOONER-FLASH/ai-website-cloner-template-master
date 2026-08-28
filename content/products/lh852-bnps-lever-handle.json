@@ -6,7 +6,7 @@
   "categoryPath": [
     "lever-handles"
   ],
-  "summary": "Zinc alloy lever handle, 60/70mm backset.",
+  "summary": "A zinc alloy lever handle with 60/70mm backset, passage function.",
   "specs": [
     {
       "label": "Material",
@@ -43,6 +43,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Black nickel"
     }
   ],
   "material": "Zinc Alloy",
@@ -112,6 +116,10 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Níquel negro"
     }
   ],
   "summaryEs": "Una manija de palanca de zamak, entrada de 60/70 mm, función paso libre."

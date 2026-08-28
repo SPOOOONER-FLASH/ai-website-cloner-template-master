@@ -52,6 +52,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to deadbolts"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Iron+Stainless Steel",
@@ -135,7 +139,11 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de hierro y acero inoxidable, entrada de 60mm/70mm."
+  "summaryEs": "Una cerradura de pomo de hierro y acero inoxidable, entrada de 60mm/70mm, función entrada — con llave por fuera."
 }

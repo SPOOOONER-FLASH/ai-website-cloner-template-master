@@ -85,7 +85,12 @@ git log -5 -- docs/collaboration/agent-updates/
 ```
 
 - Treat every unfamiliar uncommitted path as the other agent's work. Do not restore,
-  format, move, stage, or commit it.
+  format, move, stage, or commit it — **and do not delete it**. `rm -rf` from Git Bash
+  bypasses the Recycle Bin, and an untracked path is not in git history either, so the
+  work is simply gone. Claude destroyed `tmp/codex-ar4-workbook-inspect` this way on
+  2026-08-27 while tidying `git status`.
+- Scratch work goes in `tmp/<agent>-<purpose>/`, which is gitignored. It is yours to
+  delete only if the prefix is your own name. `ls` it before removing anything.
 - Before touching an already modified file, inspect `git diff -- <file>`. If the work
   overlaps, wait for its focused commit or review it read-only; do not overwrite it.
 - Ownership below is the default routing rule, not a reason to ignore an explicit client

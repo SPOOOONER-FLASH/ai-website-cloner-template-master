@@ -2,13 +2,13 @@
   "model": "AR4-1121",
   "slug": "hyde-ar4-1121-hook-bolt-lock",
   "name": "Hook-Bolt Mortise Lock",
-  "nameEs": "Cerradura de embutir con gancho",
+  "nameEs": "Cerraduras de embutir",
   "series": "HYDE Argentina AR-4",
   "categoryPath": [
     "lock-cases"
   ],
   "summary": "A compact hook-bolt mortise lock with a 40 mm backset for the Argentina AR-4 market collection.",
-  "summaryEs": "Cerradura de embutir compacta con gancho y entrada de 40 mm para la colección Argentina AR-4.",
+  "summaryEs": "Una caja de cerradura de embutir, entrada de 40.",
   "specs": [
     {
       "label": "Factory reference",
@@ -35,26 +35,24 @@
   ],
   "specsEs": [
     {
-      "label": "Referencia de fábrica",
-      "value": "Caja de gancho de 40 mm"
+      "label": "Factory reference",
+      "value": "40 hook-bolt lock body"
     },
     {
-      "label": "Frente",
-      "value": "25 × 140",
-      "unit": "mm"
+      "label": "Faceplate",
+      "value": "25 × 140"
     },
     {
       "label": "Entrada",
-      "value": "40",
-      "unit": "mm"
+      "value": "40"
     },
     {
-      "label": "Gancho",
-      "value": "Hierro niquelado"
+      "label": "Hook bolt",
+      "value": "Nickel-plated iron"
     },
     {
-      "label": "Opciones de llave",
-      "value": "Aleación de zinc o latón; dos llaves"
+      "label": "Key options",
+      "value": "Zinc alloy or brass; two keys"
     }
   ],
   "material": "Nickel-plated iron lock case",

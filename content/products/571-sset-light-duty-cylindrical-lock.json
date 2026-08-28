@@ -44,6 +44,14 @@
     {
       "label": "Keying",
       "value": "Can be keyed alike to the deadbolt series, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Stainless steel"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
     }
   ],
   "material": "Stainless Steel",
@@ -96,7 +104,15 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con la serie de cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, para uso residencial estándar."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera, para uso residencial estándar."
 }

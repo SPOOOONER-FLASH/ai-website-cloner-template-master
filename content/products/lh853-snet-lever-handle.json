@@ -38,11 +38,15 @@
     },
     {
       "label": "Function",
-      "value": "Entrance, privacy, passage or dummy"
+      "value": "Entrance — keyed outside"
     },
     {
       "label": "Keying",
       "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin nickel"
     }
   ],
   "material": "Zinc Alloy",
@@ -112,12 +116,16 @@
     },
     {
       "label": "Función",
-      "value": "Entrada, privacidad, paso libre o falsa"
+      "value": "Entrada — con llave por fuera"
     },
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Níquel satinado"
     }
   ],
-  "summaryEs": "Una manija de palanca de zamak, entrada de 60 mm, función entrada, privacidad, paso libre o falsa."
+  "summaryEs": "Una manija de palanca de zamak, entrada de 60 mm, función entrada — con llave por fuera."
 }

@@ -6,7 +6,6 @@
   "categoryPath": [
     "deadbolts"
   ],
-  "summary": "A deadbolt, prepared for a solid brass cylinder.",
   "specs": [
     {
       "label": "Cylinder",
@@ -35,6 +34,10 @@
     {
       "label": "Keying",
       "value": "Can be keyed to pair with an entrance bored lock"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique copper"
     }
   ],
   "material": "",
@@ -97,7 +100,12 @@
     {
       "label": "Amaestramiento",
       "value": "Admite llave igual con una cerradura de entrada de perforación"
+    },
+    {
+      "label": "Acabado",
+      "value": "Cobre antiguo"
     }
   ],
-  "summaryEs": "Un cerrojo."
+  "summaryEs": "Un cerrojo.",
+  "summary": "A deadbolt in antique copper, prepared for a solid brass cylinder."
 }

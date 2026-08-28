@@ -147,15 +147,58 @@ function functionFromSuffix(model) {
   return /ps$/i.test(model.replace(/\s+/g, "")) ? "Passage" : null;
 }
 
-/** A summary is boilerplate when it is just the category name written as a sentence. */
-const BOILERPLATE = /^(lock case|deadbolts?|panic exit device|d-panic exit device|s-panic exit device)\.$/i;
+/**
+ * A summary is boilerplate when it says nothing that distinguishes this model.
+ *
+ * The named patterns are the category name written as a sentence. The frequency test
+ * catches the rest: a sentence shared by five or more products is, by definition, not
+ * about any one of them — 32 stainless handles all read "Stainless steel stainless steel
+ * handle." A threshold rather than a list means the next family imported with the same
+ * habit is caught without editing this file.
+ */
+const BOILERPLATE_PATTERN =
+  /^(lock case|deadbolts?|panic exit device|d-panic exit device|s-panic exit device)\.$/i;
+const DUPLICATE_THRESHOLD = 5;
+
+const summaryCounts = new Map();
+for (const file of readdirSync(DIR)) {
+  const { summary } = JSON.parse(readFileSync(`${DIR}/${file}`, "utf8"));
+  if (summary) summaryCounts.set(summary, (summaryCounts.get(summary) ?? 0) + 1);
+}
+
+const isBoilerplate = (summary) =>
+  // No summary at all counts: the record needs one written, not protected.
+  !summary?.trim() ||
+  BOILERPLATE_PATTERN.test(summary) ||
+  (summaryCounts.get(summary) ?? 0) >= DUPLICATE_THRESHOLD;
 
 /** Singular head noun per category, so a rewritten summary does not read "A deadbolts". */
 const NOUN = {
   "lock-cases": "mortise lock case",
   deadbolts: "deadbolt",
   "panic-exit-devices": "panic exit device",
+  "stainless-steel-handles": "stainless steel lever handle",
+  "lever-handles": "lever handle",
+  "knob-locks": "knob lock",
+  "night-latches-rim-locks": "rim night latch",
+  "grip-handle-sets": "grip handle set",
+  "bathroom-accessories": "bathroom accessory",
+  "brass-steel-hinges": "hinge",
+  "door-hinges": "hinge",
+  "door-closers": "door closer",
+  "lock-cylinders": "profile cylinder",
 };
+
+/**
+ * Whether a value can be folded into a sentence.
+ *
+ * 44 records hold a whole English clause where a value belongs — model 001's Material is
+ * "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device." and the
+ * family write-ups give Cylinder as "5-pin tumbler, brass plug, two nickel-plated brass
+ * keys". Both are correct in the spec table and both wreck a sentence. The row still
+ * renders; it just does not get quoted inline.
+ */
+const short = (value) => value.length <= 40 && !/[.;]/.test(value.replace(/\.$/, ""));
 
 /** "Iron case" / "Stainless steel body" read as adjectives once the noun is stripped. */
 function asAdjective(material) {
@@ -175,9 +218,17 @@ function summaryFrom(product, rows) {
   const app = get("Application");
   const bolts = get("Bolts");
 
+  const finish = get("Finish");
+
   const head = [];
-  if (material) head.push(asAdjective(material));
+  if (material && short(material)) head.push(asAdjective(material));
   head.push(NOUN[product.categoryPath[0]] ?? product.name.toLowerCase());
+  // The finish is what separates 3431 SNET from 6491 ABET, so it belongs in the sentence
+  // rather than only in the table — otherwise the whole family reads identically.
+  // ...but not when it restates the material: "a stainless steel knob lock in stainless
+  // steel" is worse than saying it once.
+  const finishAdds = finish && !material?.toLowerCase().includes(finish.toLowerCase());
+  if (finish && finishAdds && short(finish)) head.push(`in ${finish.toLowerCase()}`);
   if (centre && backset) head.push(`with ${centre} centre distance and ${backset} backset`);
   else if (backset) head.push(`with ${backset} backset`);
 
@@ -185,16 +236,18 @@ function summaryFrom(product, rows) {
   let text = `${article(phrase)} ${phrase}`;
   const tail = [];
   // "Solid Brass Cylinder" already carries the noun; appending gave "cylinder cylinder".
-  if (cylinder) {
+  if (cylinder && short(cylinder)) {
     const prepared = cylinder.toLowerCase();
     tail.push(
       prepared.includes("cylinder") ? `prepared for a ${prepared}` : `${prepared} cylinder preparation`,
     );
   }
   if (bolts) tail.push(bolts.toLowerCase());
-  if (fn) tail.push(`${fn.toLowerCase()} function`);
+  // The decoded function carries an em-dash gloss — "Entrance — keyed outside" — which
+  // reads as an aside in a table and as a derailment in a sentence. Keep the word only.
+  if (fn) tail.push(`${fn.toLowerCase().split(" — ")[0]} function`);
   if (tail.length) text += `, ${tail.join(", ")}`;
-  if (app) text += `, for ${app.toLowerCase()}`;
+  if (app && short(app)) text += `, for ${app.toLowerCase()}`;
   return `${text}.`;
 }
 
@@ -233,7 +286,7 @@ for (const file of readdirSync(DIR)) {
     filledSpecs += 1;
   }
 
-  if (rows.length && BOILERPLATE.test(product.summary ?? "")) {
+  if (rows.length >= 3 && isBoilerplate(product.summary)) {
     product.summary = summaryFrom(product, rows);
     filledSummaries += 1;
   }

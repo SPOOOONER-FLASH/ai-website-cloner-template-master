@@ -82,9 +82,9 @@
       "nameZh": "不锈钢拉手",
       "summary": "Stainless steel pull and grip handles for timber, metal and glass doors.",
       "image": {
-        "src": "/images/products/stainless-steel-glass-door-pull-handle.webp",
+        "src": "/images/products/9001-stainless-steel-handle.webp",
         "ratio": "1 / 1",
-        "label": "Stainless steel pull handle"
+        "label": "Model 9001 stainless steel lever handle"
       }
     },
     {
@@ -164,17 +164,6 @@
       ]
     },
     {
-      "slug": "door-hinges",
-      "name": "Door Hinges",
-      "nameZh": "门合页",
-      "summary": "Door hinges listed in the Canton building-hardware catalogue.",
-      "image": {
-        "src": "/images/products/stainless-steel-door-hinge.webp",
-        "ratio": "1 / 1",
-        "label": "Stainless steel door hinge"
-      }
-    },
-    {
       "slug": "bathroom-accessories",
       "name": "Bathroom Accessories",
       "nameZh": "浴室配件",
@@ -187,13 +176,13 @@
     },
     {
       "slug": "brass-steel-hinges",
-      "name": "Brass & Steel Hinges",
-      "nameZh": "铜与钢合页",
-      "summary": "Brass and steel hinge ranges for architectural door applications.",
+      "name": "Brass & Steel Door Hinges",
+      "nameZh": "铜与钢门合页",
+      "summary": "Brass, stainless-steel and steel hinge ranges for architectural door applications.",
       "image": {
         "src": "/images/products/stainless-steel-door-hinge.webp",
         "ratio": "1 / 1",
-        "label": "Brass and steel door hinges"
+        "label": "Brass, stainless-steel and steel door hinges"
       }
     },
     {
@@ -235,9 +224,9 @@
       "nameZh": "玻璃门夹具",
       "summary": "Patch fittings and pull handles for frameless glass-door assemblies.",
       "image": {
-        "src": "/images/products/glass-door-patch-fitting-set.webp",
+        "src": "/images/products/stainless-steel-glass-door-pull-handle.webp",
         "ratio": "1 / 1",
-        "label": "Stainless steel glass door patch fitting set"
+        "label": "Stainless steel pull handles for frameless glass doors"
       },
       "children": [
         {
