@@ -66,6 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/company", PRIORITY.section),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
+    ...entry("/services", PRIORITY.section),
     // Both of these answer questions buyers actually search, and /faq already emits
     // FAQPage structured data — leaving them out of the sitemap wasted that.
     ...entry("/faq", PRIORITY.support),
