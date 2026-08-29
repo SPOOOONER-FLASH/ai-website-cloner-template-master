@@ -18,3 +18,12 @@ test("certificate page names all three HYDE records and never restores the KALE 
   assert.match(source, /exact model scope/i);
   assert.doesNotMatch(source, /KALE|151120057GZU-001|KD070\/20-101/);
 });
+
+test("downloads lists every HYDE certificate as a model-scoped request", () => {
+  const source = readFileSync("src/app/(en)/downloads/page.tsx", "utf8");
+  assert.match(source, /certificates\.map/);
+  assert.match(source, /Request verified copy/i);
+  assert.match(source, /coversModel/);
+  assert.match(source, /reference/);
+  assert.doesNotMatch(source, /KALE|151120057GZU-001|KD070\/20-101/);
+});

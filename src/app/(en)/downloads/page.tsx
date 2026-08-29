@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { certificates } from "@/data/company";
 import { downloads, formatDownloadSize, getDownloadsByKind } from "@/data/downloads";
 import type { DownloadKind } from "@/data/types";
 
@@ -18,11 +19,6 @@ const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> 
     kind: "catalogue",
     title: "Product catalogue",
     note: "The current English product catalogue supplied by Canton Hyland.",
-  },
-  {
-    kind: "certificate",
-    title: "Test reports and certificates",
-    note: "Each document is labelled with its exact tested model. A report does not automatically certify other catalogue products.",
   },
 ];
 
@@ -88,6 +84,53 @@ export default function ServiceDownloadsPage() {
               </section>
             );
           })}
+
+          <section aria-labelledby="certificate-title">
+            <div className="grid grid-cols gap-x gap-y-24">
+              <div className="col-span-full xl:col-span-7">
+                <h2 id="certificate-title" className="text-h3 text-ink">
+                  Test reports and certificates
+                </h2>
+                <p className="mt-16 text-c1 text-ink-secondary">
+                  Three HYDE records are available for verification. Each record retains its exact
+                  model scope; it does not certify other catalogue products.
+                </p>
+              </div>
+              <ul className="col-span-full divide-y divide-line border-t border-line xl:col-span-15 xl:col-start-10">
+                {certificates.map((certificate) => {
+                  const request = new URLSearchParams({
+                    subject: "certificate-request",
+                    reference: certificate.reference,
+                    model: certificate.coversModel,
+                  });
+
+                  return (
+                    <li key={`${certificate.reference}-${certificate.coversModel}`}>
+                      <Link
+                        href={`/contact/?${request.toString()}`}
+                        className="group short-marker-surface grid gap-12 py-24 sm:grid-cols-[1fr_auto] sm:items-start sm:gap-24"
+                      >
+                        <span>
+                          <span className="short-marker short-marker-group inline-block text-c1 font-semibold text-ink">
+                            {certificate.title}
+                          </span>
+                          <span className="mt-8 block text-c2 text-ink-secondary">
+                            Exact model scope: {certificate.coversModel}
+                          </span>
+                          <span className="mt-4 block text-c2 text-ink-secondary">
+                            {certificate.issuer} · Reference {certificate.reference} · {certificate.issued}
+                          </span>
+                        </span>
+                        <span className="text-c2 font-semibold uppercase text-ink">
+                          Request verified copy
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
 
           <section className="border-t border-line pt-48" aria-labelledby="request-files-title">
             <div className="grid grid-cols gap-x gap-y-24">
