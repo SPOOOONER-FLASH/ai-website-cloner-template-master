@@ -69,6 +69,7 @@ function body(): string {
     `- [Product finder](${absoluteUrl("/product-finder/")}): filter the catalogue by material, finish, door type and certification.`,
     `- [Downloads](${absoluteUrl("/downloads/")}): catalogue PDF, model-scoped test reports, technical document requests.`,
     `- [Company](${absoluteUrl("/company/")}): manufacturing, capacity and quality management.`,
+    `- [Certifications](${absoluteUrl("/certifications/")}): model-scoped test evidence and conformity records.`,
     `- [Projects](${absoluteUrl("/projects/")}): representative hardware packages by building type.`,
     `- [FAQ](${absoluteUrl("/faq/")}): ordering, lead times, samples and documentation.`,
     `- [Contact](${absoluteUrl("/contact/")}): enquiry form routed to the export team.`,

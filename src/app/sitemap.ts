@@ -64,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/product-finder", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
+    ...entry("/certifications", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),
