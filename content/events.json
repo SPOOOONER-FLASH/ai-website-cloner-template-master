@@ -43,15 +43,18 @@
       "published": true
     },
     {
-      "slug": "japan-market-visit-2027",
-      "name": "Japan building-industry visit",
+      "slug": "tool-japan-2026",
+      "name": "16th TOOL JAPAN",
       "market": "Japan",
-      "city": "To be confirmed",
-      "venue": "Event to be confirmed",
-      "status": "researching",
-      "statusLabel": "Internal planning",
-      "summary": "The exact exhibition, city and dates have not yet been confirmed.",
-      "published": false
+      "city": "Chiba, Japan",
+      "venue": "Makuhari Messe",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-09",
+      "status": "planned-visit",
+      "statusLabel": "Planned market visit",
+      "summary": "A planned visit to compare professional tools and hardware channels and meet prospective distribution partners. Canton Hyland is not claiming an exhibition stand.",
+      "sourceUrl": "https://www.tooljapan.jp/en-gb.html",
+      "published": true
     }
   ]
 }

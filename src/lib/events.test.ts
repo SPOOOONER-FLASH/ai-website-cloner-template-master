@@ -29,7 +29,12 @@ test("published exhibition dates match the current organiser schedules", () => {
     [bySlug.get("feicon-brazil-2027")?.startDate, bySlug.get("feicon-brazil-2027")?.endDate],
     ["2027-04-06", "2027-04-09"],
   );
-  assert.equal(bySlug.get("japan-market-visit-2027")?.published, false);
+  assert.deepEqual(
+    [bySlug.get("tool-japan-2026")?.startDate, bySlug.get("tool-japan-2026")?.endDate],
+    ["2026-10-07", "2026-10-09"],
+  );
+  assert.equal(bySlug.get("tool-japan-2026")?.published, true);
+  assert.equal(bySlug.get("tool-japan-2026")?.sourceUrl, "https://www.tooljapan.jp/en-gb.html");
 });
 
 test("public events have organiser sources and do not claim an unverified exhibition stand", () => {
