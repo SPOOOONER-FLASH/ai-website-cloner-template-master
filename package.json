@@ -30,7 +30,7 @@
     "dev": "next dev",
     "build": "next build && node scripts/normalize-next-export-segments.mjs",
     "start": "next start",
-    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts",
+    "test": "node --test src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts",
     "test:export": "node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && npm run export:segments:check",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",

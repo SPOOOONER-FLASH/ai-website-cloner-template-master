@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { headerNav, localisedHref, navLabel } from "@/data/navigation";
+import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SearchDialog } from "./SearchDialog";
 import { SiteMenuDrawer } from "./SiteMenuDrawer";
@@ -33,6 +33,38 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
   return "/es";
 }
 
+type ShelfName = "company" | "buy";
+
+const companyShelfLinks = {
+  en: [
+    { label: "Company overview", detail: "Manufacturing since 1998", href: "/company" },
+    { label: "Projects", detail: "Representative applications", href: "/projects" },
+    { label: "Services", detail: "Selection and specification support", href: "/services" },
+    { label: "Events", detail: "Meet HYDE in global markets", href: "/events" },
+    { label: "Certificates", detail: "Verified model-scoped reports", href: "/certifications" },
+  ],
+  es: [
+    { label: "La empresa", detail: "Fabricación desde 1998", href: "/company" },
+    { label: "Proyectos", detail: "Aplicaciones representativas", href: "/projects" },
+    { label: "Servicios", detail: "Selección y apoyo técnico", href: "/services" },
+    { label: "Ferias", detail: "Encuentre HYDE en mercados globales", href: "/events" },
+    { label: "Certificados", detail: "Informes verificados por modelo", href: "/certifications" },
+  ],
+} as const;
+
+const buyShelfLinks = {
+  en: [
+    { label: "Contact", detail: "Talk to an export specialist", href: "/contact" },
+    { label: "Downloads", detail: "Catalogue and verified documents", href: "/downloads" },
+    { label: "Price list", detail: "Request export pricing", href: "/request/price-list" },
+  ],
+  es: [
+    { label: "Contacto", detail: "Hable con un especialista de exportación", href: "/contact" },
+    { label: "Descargas", detail: "Catálogo y documentos verificados", href: "/downloads" },
+    { label: "Lista de precios", detail: "Solicite precios de exportación", href: "/request/price-list" },
+  ],
+} as const;
+
 /**
  * Sticky header — 136px (48px promo bar + 88px nav row).
  *
@@ -47,12 +79,20 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
  */
 export function SiteHeader() {
   const pathname = usePathname();
+  const headerRef = useRef<HTMLDivElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [openShelf, setOpenShelf] = useState<ShelfName | null>(null);
   const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
   const locale = isSpanish ? "es" : "en";
   const homeHref = isSpanish ? "/es" : "/";
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const companyCurrent = companyShelfLinks[locale].some((link) =>
+    isCurrent(localisedHref(link.href, locale)),
+  );
+  const buyCurrent = buyShelfLinks[locale].some((link) =>
+    isCurrent(localisedHref(link.href, locale)),
+  );
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -67,10 +107,35 @@ export function SiteHeader() {
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    if (!openShelf) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenShelf(null);
+    };
+    const onPointerDown = (event: PointerEvent) => {
+      if (!headerRef.current?.contains(event.target as Node)) setOpenShelf(null);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [openShelf]);
+
   return (
     // The black promo strip was removed on request. With nothing above it, the nav row
     // pins at the very top instead of scrolling a banner away first.
-    <div className="sticky top-0 z-10 flex-grow-0 bg-surface">
+    <div
+      ref={headerRef}
+      className="relative sticky top-0 z-10 flex-grow-0 bg-surface"
+      onMouseLeave={() => setOpenShelf(null)}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpenShelf(null);
+      }}
+    >
       <div>
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
@@ -95,11 +160,58 @@ export function SiteHeader() {
                 {headerNav.map((link) => {
                   const href = localisedHref(link.href, locale);
                   const current = isCurrent(href);
+
+                  if (link.href === "/company") {
+                    return (
+                      <button
+                        key={link.href}
+                        type="button"
+                        aria-controls="company-shelf"
+                        aria-expanded={openShelf === "company"}
+                        aria-haspopup="true"
+                        aria-current={companyCurrent ? "page" : undefined}
+                        onClick={() => setOpenShelf("company")}
+                        onFocus={() => setOpenShelf("company")}
+                        onMouseEnter={() => setOpenShelf("company")}
+                        className={cn(
+                          "nav-marker bg-transparent text-c1 text-ink",
+                          companyCurrent && "current-nav",
+                        )}
+                      >
+                        {navLabel(link, locale)}
+                      </button>
+                    );
+                  }
+
+                  if (link.href === "/downloads") {
+                    return (
+                      <button
+                        key={link.href}
+                        type="button"
+                        aria-controls="buy-shelf"
+                        aria-expanded={openShelf === "buy"}
+                        aria-haspopup="true"
+                        aria-current={buyCurrent ? "page" : undefined}
+                        onClick={() => setOpenShelf("buy")}
+                        onFocus={() => setOpenShelf("buy")}
+                        onMouseEnter={() => setOpenShelf("buy")}
+                        className={cn(
+                          "nav-marker bg-transparent text-c1 text-ink",
+                          buyCurrent && "current-nav",
+                        )}
+                      >
+                        {isSpanish ? "Comprar ahora" : "Buy it now"}
+                      </button>
+                    );
+                  }
+
                   return (
                     <Link
                       key={link.href}
                       href={href}
                       aria-current={current ? "page" : undefined}
+                      onFocus={() => setOpenShelf(null)}
+                      onMouseEnter={() => setOpenShelf(null)}
                       className={cn(
                         "nav-marker text-c1 text-ink no-underline",
                         current && "current-nav",
@@ -117,11 +229,6 @@ export function SiteHeader() {
                 <Wordmark className="pr-8" />
               </Link>
 
-              {/*
-                The language / search / menu panels are overlays on the reference site and
-                render `display: none` at rest. This prototype ships the controls as inert
-                visual elements — see site-header.spec.md "Known gap".
-              */}
               {/*
                 Alignment: every control sits in the same 24px-tall flex box and every icon
                 is drawn at 20x20, so the language link, search and menu share one optical
@@ -141,7 +248,10 @@ export function SiteHeader() {
                   type="button"
                   aria-label={isSpanish ? "Buscar" : "Search"}
                   aria-expanded={searchOpen}
-                  onClick={() => setSearchOpen(true)}
+                  onClick={() => {
+                    setOpenShelf(null);
+                    setSearchOpen(true);
+                  }}
                   className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
                 >
                   <SearchIcon className="h-20 w-20" />
@@ -150,7 +260,10 @@ export function SiteHeader() {
                   type="button"
                   aria-label={isSpanish ? "Abrir menú" : "Open menu"}
                   aria-expanded={menuOpen}
-                  onClick={() => setMenuOpen(true)}
+                  onClick={() => {
+                    setOpenShelf(null);
+                    setMenuOpen(true);
+                  }}
                   className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
                 >
                   <MenuIcon className="h-20 w-20" />
@@ -165,6 +278,90 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
+
+      <section
+        id="company-shelf"
+        aria-label={isSpanish ? "Empresa" : "Company"}
+        aria-hidden={openShelf !== "company"}
+        className={cn("header-shelf", openShelf === "company" && "header-shelf-open")}
+      >
+        <div className="header-shelf-clip">
+          <div className="layout py-32">
+            <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
+              <div>
+                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
+                  {isSpanish ? "Empresa" : "Company"}
+                </p>
+                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
+                  {isSpanish
+                    ? "La fábrica, sus mercados y el apoyo técnico detrás de HYDE."
+                    : "The factory, markets and technical support behind HYDE."}
+                </p>
+              </div>
+              <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-5">
+                {companyShelfLinks[locale].map((link) => {
+                  const href = localisedHref(link.href, locale);
+                  return (
+                    <Link
+                      key={link.href}
+                      href={href}
+                      onClick={() => setOpenShelf(null)}
+                      aria-current={isCurrent(href) ? "page" : undefined}
+                      className="header-shelf-link border-t border-line pt-16 text-ink no-underline"
+                    >
+                      <span className="short-marker text-c1">{link.label}</span>
+                      <span className="mt-8 block text-c2 text-ink-secondary">{link.detail}</span>
+                    </Link>
+                  );
+                })}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="buy-shelf"
+        aria-label={isSpanish ? "Comprar ahora" : "Buy it now"}
+        aria-hidden={openShelf !== "buy"}
+        className={cn("header-shelf", openShelf === "buy" && "header-shelf-open")}
+      >
+        <div className="header-shelf-clip">
+          <div className="layout py-32">
+            <div className="col-content grid gap-24 xl:grid-cols-4">
+              {buyShelfLinks[locale].map((link) => {
+                const href = localisedHref(link.href, locale);
+                return (
+                  <Link
+                    key={link.href}
+                    href={href}
+                    onClick={() => setOpenShelf(null)}
+                    aria-current={isCurrent(href) ? "page" : undefined}
+                    className="header-shelf-link flex min-h-96 flex-col justify-between border-t border-line py-16 text-ink no-underline"
+                  >
+                    <span className="flex items-center justify-between gap-16 text-h3">
+                      <span className="short-marker">{link.label}</span>
+                      <span aria-hidden="true">›</span>
+                    </span>
+                    <span className="mt-16 text-c2 text-ink-secondary">{link.detail}</span>
+                  </Link>
+                );
+              })}
+              <a
+                href={siteSettings.alibaba.storefront}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpenShelf(null)}
+                className="alibaba-hard-cta"
+              >
+                <span>{siteSettings.alibaba.label}</span>
+                <span aria-hidden="true">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {menuOpen ? (
         <SiteMenuDrawer
           isSpanish={isSpanish}

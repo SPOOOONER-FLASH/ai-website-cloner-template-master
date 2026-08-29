@@ -484,6 +484,92 @@
     --marker-bottom: 0.8rem;
   }
 
+  /* -- Architectural navigation shelf ----------------------------------- */
+  /* The panel is always positioned over the page rather than entering normal
+     flow, so opening it never moves the hero or changes the scroll position. */
+  .header-shelf {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 0fr;
+    border-bottom: 1px solid transparent;
+    background-color: var(--color-surface);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.8rem);
+    visibility: hidden;
+    transition:
+      grid-template-rows var(--motion-medium) var(--motion-ease),
+      opacity var(--motion-fast) var(--motion-ease-crisp),
+      transform var(--motion-medium) var(--motion-ease),
+      visibility 0s linear var(--motion-medium);
+  }
+
+  .header-shelf-open {
+    grid-template-rows: 1fr;
+    border-bottom-color: var(--color-line);
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .header-shelf-clip {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .header-shelf-link {
+    transition:
+      color var(--motion-fast) var(--motion-ease-crisp),
+      border-color var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .header-shelf-link:focus-visible {
+    border-color: var(--color-ink);
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.5rem;
+  }
+
+  /* D is reserved for the highest-intent outbound action. The hard plane is
+     visible at rest; active state presses the black surface back onto it. */
+  .alibaba-hard-cta {
+    display: flex;
+    min-height: 9.6rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    border: 1px solid var(--color-ink);
+    background-color: var(--color-ink);
+    box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
+    color: var(--color-surface);
+    font-size: var(--text-h3);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--leading-h3);
+    padding: 1.6rem 2.4rem;
+    text-decoration: none;
+    transform: translate(-0.2rem, -0.2rem);
+    transition:
+      box-shadow var(--motion-fast) var(--motion-ease-crisp),
+      transform var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .alibaba-hard-cta:focus-visible {
+    box-shadow: 1.2rem 1.2rem 0 var(--color-shadow-hard);
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.6rem;
+    transform: translate(-0.5rem, -0.5rem);
+  }
+
+  .alibaba-hard-cta:active {
+    box-shadow: 0.2rem 0.2rem 0 var(--color-shadow-hard);
+    transform: translate(0.5rem, 0.5rem);
+  }
+
   /* -- D: hard offset plane ---------------------------------------------- */
   .hard-shadow-panel,
   .hard-shadow-drawer {
@@ -636,6 +722,20 @@
     .nav-marker:hover::after {
       opacity: 1;
       transform: scaleX(1);
+    }
+
+    .header-shelf-link:hover {
+      border-color: var(--color-ink);
+    }
+
+    .header-shelf-link:hover .short-marker::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    .alibaba-hard-cta:hover {
+      box-shadow: 1.2rem 1.2rem 0 var(--color-shadow-hard);
+      transform: translate(-0.5rem, -0.5rem);
     }
 
   }
@@ -831,6 +931,12 @@
       transition: none;
     }
 
+    .header-shelf,
+    .header-shelf-link,
+    .alibaba-hard-cta {
+      transition: none;
+    }
+
     .catalogue-page-enter {
       animation: none;
     }
@@ -845,6 +951,12 @@
 
     .catalogue-pager-page:hover,
     .catalogue-pager-page:focus-visible {
+      transform: none;
+    }
+
+    .alibaba-hard-cta:hover,
+    .alibaba-hard-cta:focus-visible,
+    .alibaba-hard-cta:active {
       transform: none;
     }
 
