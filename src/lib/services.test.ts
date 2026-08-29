@@ -24,3 +24,16 @@ test("service copy routes buyers to existing enquiry and selection tools", () =>
   assert.match(page, /href="\/product-finder"/);
   assert.match(page, /href="\/downloads"/);
 });
+
+test("the service brief is written plainly and the whole panel opens an enquiry", () => {
+  const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
+
+  assert.doesNotMatch(page, /The first useful package/);
+  assert.match(page, /Prepare your enquiry/);
+  assert.match(page, /Start with these four details/);
+  assert.match(page, /Send this brief/);
+  assert.match(
+    page,
+    /<Link[\s\S]*?href="\/contact"[\s\S]*?Start with these four details[\s\S]*?<\/Link>/,
+  );
+});

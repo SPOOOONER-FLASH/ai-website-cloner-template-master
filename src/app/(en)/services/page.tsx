@@ -92,18 +92,27 @@ export default function ServicesPage() {
               priority
             />
           </div>
-          <aside className="col-span-full flex flex-col justify-between border border-line p-24 lg:col-span-4 lg:col-start-9 xl:col-span-8 xl:col-start-17">
+          <Link
+            href="/contact"
+            aria-label="Send a service brief to Canton Hyland"
+            className="home-accent-surface short-marker-surface group col-span-full flex flex-col justify-between border border-line p-24 text-ink no-underline outline-offset-4 lg:col-span-4 lg:col-start-9 xl:col-span-8 xl:col-start-17"
+          >
             <div>
-              <p className="text-kicker text-ink-secondary">Before we begin</p>
-              <h2 className="mt-24 text-h2 text-ink">The first useful package</h2>
+              <p className="text-kicker text-ink-secondary">Prepare your enquiry</p>
+              <h2 className="mt-24 text-h2 text-ink">Start with these four details</h2>
             </div>
-            <ul className="mt-48 space-y-16 border-t border-line pt-16 text-c1 text-ink-secondary">
-              <li>Door or application type</li>
-              <li>Model, drawing or reference photograph</li>
-              <li>Function and finish</li>
-              <li>Quantity and destination market</li>
-            </ul>
-          </aside>
+            <div className="mt-48 border-t border-line pt-16">
+              <ul className="space-y-16 text-c1 text-ink-secondary">
+                <li>Door or application type</li>
+                <li>Model, drawing or reference photograph</li>
+                <li>Function and finish</li>
+                <li>Quantity and destination market</li>
+              </ul>
+              <span className="short-marker short-marker-arrow mt-32 inline-block text-c1 text-ink">
+                Send this brief
+              </span>
+            </div>
+          </Link>
         </section>
 
         <section className="col-content grid grid-cols gap-x gap-y-48 border-t border-line pt-32">
