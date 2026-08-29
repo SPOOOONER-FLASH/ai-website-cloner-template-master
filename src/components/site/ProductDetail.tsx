@@ -5,8 +5,8 @@ import { relatedBlock } from "@/lib/related-products";
 import { ArrowLink } from "./ArrowLink";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
-import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
+import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 
@@ -106,7 +106,7 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
             <div className="col-content grid w-full grid-cols gap-x gap-y-48">
               <div className="col-span-full xl:col-span-12">
                 {/* The LCP element on every product page — never lazy. */}
-                <MediaPlaceholder {...product.heroImage} priority />
+                <ProductImageZoom {...product.heroImage} priority />
               </div>
 
               <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
@@ -177,7 +177,7 @@ export function ProductDetail({ product, categoryName }: ProductDetailProps) {
                 {product.gallery.length ? (
                   <div className="grid grid-cols-2 gap-16 md:grid-cols-3 xl:grid-cols-4">
                     {product.gallery.map((image) => (
-                      <MediaPlaceholder key={`${image.src}-${image.label}`} {...image} />
+                      <ProductImageZoom key={`${image.src}-${image.label}`} {...image} />
                     ))}
                   </div>
                 ) : (
