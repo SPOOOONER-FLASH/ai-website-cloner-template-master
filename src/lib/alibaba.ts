@@ -56,7 +56,9 @@ export function alibabaLinkFor(product: Product): AlibabaLink | null {
   if (!base) return null;
 
   // The model is the term a buyer would type; the name alone matches dozens of listings.
-  const query = [product.model, product.name].filter(Boolean).join(" ").trim();
+  const query =
+    product.alibabaSearchTerm?.trim() ||
+    [product.model, product.name].filter(Boolean).join(" ").trim();
   if (!query) return { href: base, kind: "search" };
 
   const template = siteSettings.alibaba?.searchTemplate?.trim() || DEFAULT_SEARCH_TEMPLATE;

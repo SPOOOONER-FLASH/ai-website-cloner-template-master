@@ -178,6 +178,11 @@ export interface Product {
    * it never sends anyone to Alibaba.
    */
   alibabaUrl?: string;
+  /**
+   * Exact storefront search term when Alibaba uses a different numeric catalogue code.
+   * This remains a search result, not a claimed direct listing URL.
+   */
+  alibabaSearchTerm?: string;
   /** <title> for the detail page. Keep under ~60 chars. */
   seoTitle: string;
   /** <meta name="description">. Keep under ~155 chars. */
