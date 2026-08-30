@@ -120,8 +120,8 @@ The client asked which images are acceptable and which must be reshot. Verdicts:
 
 | File | Output | Scale | Problem |
 |---|---|---|---|
-| `company/hero-grip-handle-banner.webp` | 772×397 | **0.54×** | Source is only 1024×397. The slot renders 1440 CSS px wide, so the browser upscales ~2×. Visibly soft on any screen, badly so on retina. |
-| `company/hero-panic-exit-banner.webp` | 822×397 | **0.57×** | Same source problem. |
+| `company/hero-grip-handle-banner.webp` | 772×397 | **Superseded** | Replaced in the public Products index by the 2017×780 versioned editorial asset below. The original remains documented for provenance. |
+| `company/hero-panic-exit-banner.webp` | 822×397 | **Superseded** | Replaced in the public Products index by the 2016×780 versioned editorial asset below. The original remains documented for provenance. |
 | `company/facility-yard.webp` | 1024×683 | **0.71×** | Also looks upscaled or synthetic at source — soft edges, uniform lighting. Worth checking whether an original exists. |
 | `company/hero-storefront-banner.webp` | 1236×754 | **0.86×** | 1920×754 source, but the 16:10 hero crop eats the width. |
 
@@ -196,11 +196,19 @@ contents of `public/images/products/`. These listed files are 1000×1000, croppe
 | `facility-yard.webp` | 公司图 大图.jpg | 1024×683 | 74.5 KB |
 | `hero-panic-exit-banner.webp` | 大图一.jpg | 822×397 | 31.8 KB |
 | `hero-grip-handle-banner.webp` | 大图二.jpg | 772×397 | 28.8 KB |
+| `hero-panic-exit-banner-v2.webp` | AI-generated architectural editorial study; Codex built-in image generation, 2026-08-30; no external source asset | 2016×780 | 150.7 KB |
+| `hero-grip-handle-banner-v2.webp` | AI-generated architectural editorial study; Codex built-in image generation, 2026-08-30; no external source asset | 2017×780 | 117.9 KB |
 | `hero-storefront-banner.webp` | 未标题-1.jpg | 1236×754 | 41.7 KB |
 | `hero-designed-for.webp` | Storefront Door Push Pull Handle Lock.jpg | 1000×666 | 26.4 KB |
 | `hero-modern-tubular-lock.webp` | 未标题-1.jpg | 1920×754 | 59.3 KB |
 | `decorative-hinge-detail.webp` | Hinge.jpg | 1000×510 | 27.0 KB |
 | `certification-marks.svg` | **drawn for this project** | vector | 1 KB |
+
+The two versioned Products-index banners are representative visual studies, not evidence of
+a completed HYDE project or a specific manufactured model. They were generated as two unique
+scenes: a timber-and-glass commercial exit fitted with clearly readable panic bars, and a
+separate warm-oak threshold fitted with one brushed-stainless lever set. Neither image contains
+people, readable signs, third-party logos or copied source material.
 
 ### 2026-08 client-supplied factory / showroom set
 

@@ -182,11 +182,11 @@ name asserts it.
 **⚠ Image quality — the client asked for a verdict on each.** Full table in
 [IMAGE_CREDITS.md](IMAGE_CREDITS.md). Summary:
 
-- 🔴 **Four images must be re-exported or reshot.** `hero-grip-handle-banner` (0.54× the
-  slot width) and `hero-panic-exit-banner` (0.57×) come from 1024×397 sources and the
-  browser upscales them ~2× — visibly soft, and they are the two biggest images on the
-  homepage. `facility-yard` (0.71×, also looks upscaled or synthetic at source) and
-  `hero-storefront-banner` (0.86×) are the other two.
+- 🟢 **The two Products-index banners were replaced on 2026-08-30.** The public route now
+  uses unique 2016×780 and 2017×780 architectural editorial studies with readable panic-exit
+  and lever hardware. The superseded 822×397 and 772×397 sources remain in the archive only.
+  `facility-yard` (0.71×, also looks upscaled or synthetic at source) and
+  `hero-storefront-banner` (0.86×) remain the two unresolved re-export candidates.
 - 🟡 **The 22 product/category shots are acceptable** — clean, sharp, correctly exposed, 1.47× the
   card size. Fine for the demo.
 - 🟡 **The three factory photos are genuine and read as real**, which is their value, but

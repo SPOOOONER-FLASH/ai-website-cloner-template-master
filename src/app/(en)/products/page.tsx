@@ -91,7 +91,7 @@ export default function ProductsPage() {
         <div className="col-outset grid gap-16 px-outset md:grid-cols-2 md:px-0">
           <Link href="/products/panic-exit-devices/" className="group short-marker-surface block">
             <MediaPlaceholder
-              src="/images/company/hero-panic-exit-banner.webp"
+              src="/images/company/hero-panic-exit-banner-v2.webp"
               ratio="1024 / 397"
               label="Panic exit hardware installed in a commercial interior"
             />
@@ -101,7 +101,7 @@ export default function ProductsPage() {
           </Link>
           <Link href="/products/lever-handles/" className="group short-marker-surface block">
             <MediaPlaceholder
-              src="/images/company/hero-grip-handle-banner.webp"
+              src="/images/company/hero-grip-handle-banner-v2.webp"
               ratio="1024 / 397"
               label="Lever and grip handle sets installed on timber doors"
             />
