@@ -86,3 +86,17 @@ test("current navigation is bold at rest without a persistent underline", () => 
   assert.doesNotMatch(header, /current-underline/);
   assert.doesNotMatch(drawer, /current-underline/);
 });
+
+test("homepage mobile disclosure preserves heading order", () => {
+  const welcome = read("src", "components", "site", "WelcomeIntro.tsx");
+
+  assert.match(welcome, /<h2 className="text-h3 text-ink">\{text\.more\}<\/h2>/);
+  assert.doesNotMatch(welcome, /<h3 className="text-h3 text-ink">\{text\.more\}<\/h3>/);
+});
+
+test("homepage product CTA names its destination", () => {
+  const home = read("src", "data", "home.ts");
+
+  assert.match(home, /linkLabel:\s*"View Modern Tubular Door Lock"/);
+  assert.doesNotMatch(home, /linkLabel:\s*"Learn more"/);
+});

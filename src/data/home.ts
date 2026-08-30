@@ -29,7 +29,7 @@ export const hero1: HeroModuleContent = {
   },
   title: "Modern Tubular Door Lock",
   body: "A restrained matt-black lever set for contemporary residential interiors.",
-  linkLabel: "Learn more",
+  linkLabel: "View Modern Tubular Door Lock",
   href: "/products/lever-handles/black-tubular-lever-lock-set",
 };
 

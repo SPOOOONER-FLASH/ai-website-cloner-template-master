@@ -98,7 +98,7 @@ export function WelcomeIntro({
                 aria-expanded={expanded}
                 className="mb-24 flex w-full justify-between gap-x-24 text-left sm:hidden sm:cursor-default"
               >
-                <h3 className="text-h3 text-ink">{text.more}</h3>
+                <h2 className="text-h3 text-ink">{text.more}</h2>
                 <span
                   className={cn(
                     "flex h-[var(--leading-h3)] place-items-center transition-transform duration-300",
