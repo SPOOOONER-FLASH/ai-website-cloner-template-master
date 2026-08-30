@@ -200,6 +200,17 @@ const NOUN = {
  */
 const short = (value) => value.length <= 40 && !/[.;]/.test(value.replace(/\.$/, ""));
 
+/**
+ * Lower-cases prose but leaves designations alone. "Antique brass (US5)" must not become
+ * "antique brass (us5)" — US5 is the printed finish designation and lower-casing it makes
+ * it both wrong and unsearchable.
+ */
+const soften = (value) =>
+  value
+    .split(/(\s+)/)
+    .map((word) => (/[A-Z]{2,}|\d/.test(word) ? word : word.toLowerCase()))
+    .join("");
+
 /** "Iron case" / "Stainless steel body" read as adjectives once the noun is stripped. */
 function asAdjective(material) {
   return material.toLowerCase().replace(/\s+(case|body|construction)$/, "");
@@ -221,14 +232,14 @@ function summaryFrom(product, rows) {
   const finish = get("Finish");
 
   const head = [];
-  if (material && short(material)) head.push(asAdjective(material));
+  if (material && short(material)) head.push(soften(asAdjective(material)));
   head.push(NOUN[product.categoryPath[0]] ?? product.name.toLowerCase());
   // The finish is what separates 3431 SNET from 6491 ABET, so it belongs in the sentence
   // rather than only in the table — otherwise the whole family reads identically.
   // ...but not when it restates the material: "a stainless steel knob lock in stainless
   // steel" is worse than saying it once.
   const finishAdds = finish && !material?.toLowerCase().includes(finish.toLowerCase());
-  if (finish && finishAdds && short(finish)) head.push(`in ${finish.toLowerCase()}`);
+  if (finish && finishAdds && short(finish)) head.push(`in ${soften(finish)}`);
   if (centre && backset) head.push(`with ${centre} centre distance and ${backset} backset`);
   else if (backset) head.push(`with ${backset} backset`);
 

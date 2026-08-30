@@ -7,7 +7,6 @@
     "knob-locks",
     "light-duty-cylindrical-locks"
   ],
-  "summary": "A stainless steel knob lock, 5-pin tumbler, brass plug, two nickel-plated brass keys cylinder preparation, entrance — keyed outside function, for standard residential use.",
   "specs": [
     {
       "label": "Material",
@@ -47,7 +46,7 @@
     },
     {
       "label": "Finish",
-      "value": "Antique brass"
+      "value": "Antique brass (US5)"
     },
     {
       "label": "Function",
@@ -107,12 +106,13 @@
     },
     {
       "label": "Acabado",
-      "value": "Latón antiguo"
+      "value": "Latón antiguo (US5)"
     },
     {
       "label": "Función",
       "value": "Entrada — con llave por fuera"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera, para uso residencial estándar."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera, para uso residencial estándar.",
+  "summary": "A stainless steel knob lock in antique brass (US5), entrance function, for standard residential use."
 }

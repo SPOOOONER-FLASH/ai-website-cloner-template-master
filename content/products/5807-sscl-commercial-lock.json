@@ -7,7 +7,6 @@
     "knob-locks",
     "commercial-locks"
   ],
-  "summary": "A stainless steel 304/201 knob lock, communication lock function.",
   "specs": [
     {
       "label": "Material",
@@ -82,5 +81,6 @@
       "value": "SS"
     }
   ],
-  "summaryEs": "Una cerradura de pomo de acero inoxidable 304/201, función COMMUNICATION LOCK."
+  "summaryEs": "Una cerradura de pomo de acero inoxidable 304/201, función COMMUNICATION LOCK.",
+  "summary": "A stainless steel 304/201 knob lock, communication lock function."
 }

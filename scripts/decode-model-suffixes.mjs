@@ -30,57 +30,101 @@ const DIR = "content/products";
 const DRY = process.argv.includes("--dry");
 
 /**
- * Confirmed by the client, 2026-08-27. Longest first so SSS is not read as SS + S.
+ * The printed finish table, "Breakdown of Finish / 表面处理一览表", page 42 of the Hyland
+ * catalogue. Transcribed from the client's own page, including the US designations it
+ * prints alongside each code.
  *
- * F and WL are a sprayed coating rather than a plating — 喷木纹球 and 白色喷漆球, a
- * wood-grain and a white paint finish on the knob. They are listed here because the
- * client named them; anything they did not name is absent on purpose.
+ * US numbers are the trade's finish-naming standard, not a certification: US32D names a
+ * satin stainless finish the way "RAL 9010" names a white. Publishing them says nothing
+ * about product approval — see the certificates note in src/data/company.ts.
+ *
+ * Longest code first so SSS is not read as SS + S.
  */
 const FINISHES = [
-  ["PSS", "Polished stainless steel"],
+  // stainless and chrome
   ["SSS", "Satin stainless steel"],
-  ["ORB", "Oil-rubbed bronze"],
-  ["WL", "White sprayed"],
-  ["MB", "Matt black"],
-  ["PB", "Polished brass"],
-  ["AB", "Antique brass"],
-  ["AC", "Antique copper"],
-  ["SN", "Satin nickel"],
-  ["SC", "Satin chrome"],
-  ["CP", "Chrome plated"],
-  ["SS", "Stainless steel"],
+  ["PSS", "Polished stainless steel"],
+  ["PSC", "Polished satin chrome"],
+  ["SS", "Satin stainless steel (US32D)"],
+  ["SP", "Polished stainless steel (US32)"],
+  ["SC", "Satin chrome (US26D)"],
+  ["CR", "Bright chrome (US26)"],
+  // brass and copper
+  ["PB", "Polished brass (US3)"],
+  ["SB", "Satin brass (US4)"],
+  ["AB", "Antique brass (US5)"],
+  ["AC", "Antique copper (US11)"],
+  // nickel
+  ["DC", "Satin nickel (US15)"],
+  ["AN", "Antique nickel (US15A)"],
+  ["NI", "Bright nickel"],
   ["BN", "Black nickel"],
-  ["SB", "Satin brass"],
-  ["SP", "Bright polished"],
+  ["SN", "Satin nickel"],
+  // bronze and black
+  ["ABR", "Oil-rubbed bronze (US10B)"],
+  ["ABL", "Antique black"],
+  ["ORB", "Oil-rubbed bronze"],
+  ["MB", "Matt black"],
+  // painted and sprayed coatings rather than platings
+  ["WL", "White painted"],
+  ["GRL", "Grey painted"],
+  ["BRL", "Brown painted"],
+  ["BLL", "Blue painted"],
+  ["HGL", "Golden finish"],
+  ["GL", "Golden painted"],
+  ["IL", "Ivory painted"],
+  ["BL", "Black painted"],
+  ["RL", "Red painted"],
   ["W", "White"],
   ["F", "Wood-grain sprayed"],
 ];
 
-/** Confirmed by the client, 2026-08-27. */
+/**
+ * The printed function tables, pages 40 and 41 of the Hyland catalogue: "Functions for
+ * cylindrical door locks / 圆筒式功能说明" and "Functions for tubular door locks /
+ * 三柱式功能说明". Only the codes those pages actually print in brackets are here.
+ *
+ * Exit Latch and Communicating Lock appear on the same pages with no code letters, so
+ * they are absent. CL, EL, R and S turn up as suffixes in the catalogue and are NOT
+ * assumed to mean them.
+ */
 const FUNCTIONS = [
-  ["SET", null], // handled below: SET is a finish S* plus ET, never a function on its own
   ["ET", "Entrance — keyed outside"],
   ["PS", "Passage — latch only, no cylinder"],
   ["BK", "Privacy — bathroom, turn button inside"],
+  ["CR", "Classroom — key releases the outside knob"],
+  ["SR", "Storeroom — outside knob always rigid"],
+  ["PT", "Patio — locked by inside button"],
 ];
 
-const FUNCTION_CODES = FUNCTIONS.filter(([, label]) => label);
+/**
+ * Both printed tables are titled for CYLINDRICAL and TUBULAR door locks, so their codes
+ * describe knob and lever hardware and nothing else. A mortise lock case has no knob and
+ * no turn button, so reading BK on Lc8530BK as a privacy function was wrong — that is a
+ * variant letter this table cannot speak to.
+ *
+ * PS is the exception: the client's own trade listings gloss LC7065PS, LC06 85-50PS and
+ * LC8520-PS as passage cases, so it is confirmed for lock cases independently.
+ */
+const KNOB_AND_LEVER = /^(knob-locks|lever-handles|grip-handle-sets|stainless-steel-handles)/;
+const appliesTo = (code, categoryPath) =>
+  code === "PS" || KNOB_AND_LEVER.test(categoryPath.join("/"));
 
 /**
  * Splits the trailing letter run into finish and function.
  * Returns null unless the whole run is accounted for.
  */
-function decode(model) {
+function decode(model, categoryPath) {
   const compact = model.replace(/[\s-]+/g, "").toUpperCase();
   const hit = /^(.*\d)([A-Z]+)$/.exec(compact);
   if (!hit) return null;
 
   let rest = hit[2];
   let fn = null;
-  for (const [code, label] of FUNCTION_CODES) {
+  for (const [code, label] of FUNCTIONS) {
     // A run may be nothing but the function — LC8520PS is a passage case in no stated
     // finish — so full consumption is allowed here, unlike the finish pass below.
-    if (rest.endsWith(code)) {
+    if (rest.endsWith(code) && appliesTo(code, categoryPath)) {
       rest = rest.slice(0, -code.length);
       fn = label;
       break;
@@ -102,7 +146,42 @@ function decode(model) {
   return { finish, fn };
 }
 
+/**
+ * Values this script emitted under an earlier, less precise reading of the codes.
+ *
+ * ⚠ SCOPED BY LABEL, and that scoping is the whole point. "Stainless steel" is a
+ * superseded FINISH label and also a perfectly good MATERIAL value on 40-odd records. An
+ * earlier version of this set was unscoped and stripped Material rows off 32 products,
+ * emptying their spec tables. Only Finish and Function rows are ever touched here.
+ *
+ *   SS was "Stainless steel"  → the printed table says satin stainless, US32D
+ *   SP was "Bright polished"  → the printed table says polished stainless, US32
+ *   WL was "White sprayed"    → the printed table says white painted
+ *   the plain brass and chrome names now carry their US designations
+ */
+const SUPERSEDED = {
+  Finish: new Set([
+    "Stainless steel",
+    "Bright polished",
+    "White sprayed",
+    "Chrome plated",
+    "Polished brass",
+    "Satin brass",
+    "Antique brass",
+    "Antique copper",
+    "Satin chrome",
+  ]),
+  Function: new Set(["Privacy — bathroom, turn button inside"]),
+};
+
+const wasOurs = (row) => SUPERSEDED[row.label]?.has(row.value) ?? false;
+const CURRENT_LABELS = new Set([
+  ...FINISHES.map(([, label]) => label),
+  ...FUNCTIONS.map(([, label]) => label),
+]);
+
 let updated = 0;
+let withdrawn = 0;
 let finishes = 0;
 let functions = 0;
 const undecoded = new Map();
@@ -110,11 +189,23 @@ const undecoded = new Map();
 for (const file of readdirSync(DIR)) {
   const path = `${DIR}/${file}`;
   const product = JSON.parse(readFileSync(path, "utf8"));
-  const decoded = decode(product.model);
+  const decoded = decode(product.model, product.categoryPath);
 
   if (!decoded) {
     const tail = /^(.*\d)([A-Z]+)$/.exec(product.model.replace(/[\s-]+/g, "").toUpperCase());
     if (tail) undecoded.set(tail[2], (undecoded.get(tail[2]) ?? 0) + 1);
+    /*
+      A row this script wrote earlier must be withdrawn when the code no longer decodes.
+      Lc8530BK was given a privacy function before BK was scoped to knob and lever
+      hardware; leaving it would keep a claim the table can no longer support.
+    */
+    const rows = product.specs ?? [];
+    const kept = rows.filter((r) => !wasOurs(r));
+    if (kept.length !== rows.length) {
+      product.specs = kept;
+      withdrawn += rows.length - kept.length;
+      if (!DRY) writeFileSync(path, `${JSON.stringify(product, null, 2)}\n`);
+    }
     continue;
   }
 
@@ -128,6 +219,8 @@ for (const file of readdirSync(DIR)) {
     is already a single specific fact.
   */
   const isMenu = (value) => /,/.test(value) && / or /.test(value);
+  const isOurs = (label, value) =>
+    (SUPERSEDED[label]?.has(value) ?? false) || CURRENT_LABELS.has(value);
 
   const put = (label, value) => {
     const existing = rows.find((r) => r.label === label);
@@ -136,7 +229,7 @@ for (const file of readdirSync(DIR)) {
       changed = true;
       return true;
     }
-    if (isMenu(existing.value)) {
+    if (isMenu(existing.value) || isOurs(label, existing.value)) {
       existing.value = value;
       changed = true;
       return true;
@@ -156,6 +249,7 @@ for (const file of readdirSync(DIR)) {
 console.log(`products updated : ${updated}`);
 console.log(`  Finish rows added   : ${finishes}`);
 console.log(`  Function rows added : ${functions}`);
+console.log(`  superseded rows withdrawn : ${withdrawn}`);
 console.log(`\nsuffixes this table does not cover: ${undecoded.size}`);
 for (const [code, count] of [...undecoded.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20)) {
   console.log(`  ${String(count).padStart(3)}  ${code}`);

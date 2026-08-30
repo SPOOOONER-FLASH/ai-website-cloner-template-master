@@ -6,7 +6,6 @@
   "categoryPath": [
     "lock-cylinders"
   ],
-  "summary": "A solid brass profile cylinder, privacy — bathroom, turn button inside function.",
   "specs": [
     {
       "label": "Material",
@@ -19,10 +18,6 @@
     {
       "label": "Finish",
       "value": "PB. CP. SS. SC. AB. AC"
-    },
-    {
-      "label": "Function",
-      "value": "Privacy — bathroom, turn button inside"
     }
   ],
   "material": "Solid Brass",
@@ -80,11 +75,8 @@
     {
       "label": "Acabado",
       "value": "PB. CP. SS. SC. AB. AC"
-    },
-    {
-      "label": "Función",
-      "value": "Privacidad — baño, botón de giro interior"
     }
   ],
-  "summaryEs": "Un cilindro de latón macizo, función privacidad — baño, botón de giro interior."
+  "summaryEs": "Un cilindro de latón macizo.",
+  "summary": "A solid brass profile cylinder."
 }
