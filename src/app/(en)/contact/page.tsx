@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Contact the Export Team",
   description:
-    "Talk to an export engineer about a specification, a sample or a quotation.",
+    "Talk to an export engineer about a specification, a sample or a quotation. Include door type, finish, applicable standard, quantity and destination market.",
 });
 
 export default function ContactPage() {

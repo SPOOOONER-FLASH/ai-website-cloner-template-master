@@ -9,7 +9,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Certification + Test Evidence",
   description:
-    "Model-scoped HYDE test reports and conformity records, with issuer, reference, issue date and exact product scope.",
+    "Model-scoped HYDE test reports and conformity records with issuer, reference and exact product scope. Intertek reports and CE conformity for panic exit devices.",
 });
 
 const fields = [

@@ -7,7 +7,28 @@
     "panic-exit-devices"
   ],
   "summary": "Panic exit device.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Steel or stainless steel"
+    },
+    {
+      "label": "Inner Material",
+      "value": "Iron"
+    },
+    {
+      "label": "Length",
+      "value": "900mm"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin nickel, chrome, antique brass, polished brass, etc."
+    },
+    {
+      "label": "Application",
+      "value": "Building industry machinery"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -59,7 +80,29 @@
   "seoTitle": "303 Panic Exit Device — Panic Exit Devices | Canton Hyland",
   "seoDescription": "Canton Hyland 303 panic exit device. Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
   "nameEs": "Barras antipánico",
-  "summaryEs": "Una barra antipánico.",
+  "summaryEs": "Una barra antipánico de steel or stainless steel, para building industry machinery.",
   "seoTitleEs": "303 Barras antipánico | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 303 barras antipánico. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 303 barras antipánico. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Steel or stainless steel"
+    },
+    {
+      "label": "Inner Material",
+      "value": "Hierro"
+    },
+    {
+      "label": "Longitud",
+      "value": "900 mm"
+    },
+    {
+      "label": "Acabado",
+      "value": "Satin nickel, chrome, antique brass, polished brass, etc."
+    },
+    {
+      "label": "Aplicación",
+      "value": "Building industry machinery"
+    }
+  ]
 }

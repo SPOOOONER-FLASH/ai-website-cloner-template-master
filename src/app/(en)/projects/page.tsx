@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Projects + Applications",
   description:
-    "Representative hardware application studies for commercial, hospitality, residential and glass-door schedules.",
+    "Representative hardware application studies for commercial, hospitality, residential and glass-door schedules. Each study lists the exact catalogue models used.",
 });
 
 export default function ProjectsPage() {

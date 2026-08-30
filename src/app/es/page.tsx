@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "es",
     title,
     description:
-      "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998.",
+      "Fabricante de cerraduras, dispositivos antipánico y herrajes para proyectos internacionales desde 1998. ISO 9001 desde 2002; producción OEM en Guangdong.",
   }),
   // This page shares the /es segment with its root layout, so the layout title template
   // does not run here. Keep the brand suffix explicit in the shipped home-page title.

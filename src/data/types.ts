@@ -242,6 +242,9 @@ export interface Project {
   gallery: ImageRef[];
   seoTitle: string;
   seoDescription: string;
+  /** Spanish SERP copy. Kept separate from summaryEs so the visible intro stays untouched. */
+  seoTitleEs?: string;
+  seoDescriptionEs?: string;
 }
 
 /* -------------------------------------------------------------------------

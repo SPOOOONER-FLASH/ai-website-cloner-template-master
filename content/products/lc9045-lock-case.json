@@ -7,7 +7,36 @@
     "lock-cases"
   ],
   "summary": "Lock case.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Iron"
+    },
+    {
+      "label": "Latch",
+      "value": "Copper"
+    },
+    {
+      "label": "Spindle Hole",
+      "value": "Copper Construction"
+    },
+    {
+      "label": "Strike Plate Material",
+      "value": "Stainless Steel"
+    },
+    {
+      "label": "Centre distance",
+      "value": "45mm"
+    },
+    {
+      "label": "Backset",
+      "value": "90mm"
+    },
+    {
+      "label": "Finish",
+      "value": "PB/AB/AC/SS/SN, all available"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -29,7 +58,37 @@
   "seoTitle": "Lc9045 Lock Case — Lock Cases | Canton Hyland",
   "seoDescription": "Canton Hyland Lc9045 lock case. Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
   "nameEs": "Cerraduras de embutir",
-  "summaryEs": "Una caja de cerradura de embutir.",
+  "summaryEs": "Una caja de cerradura de embutir de hierro, distancia entre ejes de 45 mm y entrada de 90 mm.",
   "seoTitleEs": "Lc9045 Cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland Lc9045 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland Lc9045 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Hierro"
+    },
+    {
+      "label": "Picaporte",
+      "value": "Copper"
+    },
+    {
+      "label": "Spindle Hole",
+      "value": "Copper Construction"
+    },
+    {
+      "label": "Strike Plate Material",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Distancia entre ejes",
+      "value": "45 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "90 mm"
+    },
+    {
+      "label": "Acabado",
+      "value": "PB/AB/AC/SS/SN, all available"
+    }
+  ]
 }

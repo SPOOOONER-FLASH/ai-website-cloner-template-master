@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Exhibitions + Market Visits",
   description:
-    "Confirmed organiser dates and Canton Hyland meeting plans for TOOL JAPAN, Canton Fair, BAU Munich and FEICON Brazil.",
+    "Confirmed organiser dates and Canton Hyland meeting plans for TOOL JAPAN, Canton Fair, BAU Munich and FEICON Brazil. Buyer meetings with our export team.",
 });
 
 export default function EventsPage() {

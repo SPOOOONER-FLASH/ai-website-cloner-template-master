@@ -42,10 +42,15 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   // Several category summaries stop around 65 characters. The count is read from the
   // catalogue, and the closing clause repeats copy already published site-wide.
+  // Summaries above ~83 chars overflow the 165-char budget with the full tail and used
+  // to ship bare; the compact tail keeps the manufactured-in-Guangdong fact on those pages.
   const count = getProductsByCategory(category.slug).length;
   const tail = `${count} models manufactured in Guangdong, China and exported to over thirty markets.`;
+  const compactTail = `${count} models made in Guangdong, China.`;
   const full = `${category.summary} ${tail}`;
-  const description = full.length <= 165 ? full : category.summary;
+  const compact = `${category.summary} ${compactTail}`;
+  const description =
+    full.length <= 165 ? full : compact.length <= 165 ? compact : category.summary;
 
   return pageMetadata({
     enPath: `/products/${canonicalSlug}`,

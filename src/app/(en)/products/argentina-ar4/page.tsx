@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "HYDE Argentina AR-4 Mortise Lock Collection",
   description:
-    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programmes and OEM enquiries.",
+    "Four HYDE mortise lock bodies selected for Argentina-market distributors, private-label programmes and OEM enquiries. Models AR4-110, AR4-140, AR4-101 and AR4-1121.",
   image: "/images/editorial/argentina-ar4-entry.webp",
   imageAlt: "HYDE Argentina AR-4 mortise lock collection",
 });

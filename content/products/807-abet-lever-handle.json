@@ -46,6 +46,10 @@
     {
       "label": "Finish",
       "value": "Antique brass (US5)"
+    },
+    {
+      "label": "Surface Finish Options",
+      "value": "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)"
     }
   ],
   "material": "Zinc Alloy",
@@ -102,6 +106,10 @@
     {
       "label": "Acabado",
       "value": "Latón antiguo (US5)"
+    },
+    {
+      "label": "Surface Finish Options",
+      "value": "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)"
     }
   ],
   "summaryEs": "Una manija de palanca de zamak, entrada de 60/70 mm, función entrada — con llave por fuera.",

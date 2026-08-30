@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Empresa — Fabricante de herrajes",
   description:
-    "Fabricación de cerraduras y herrajes arquitectónicos en Guangdong desde 1998.",
+    "Fabricación de cerraduras y herrajes arquitectónicos en Guangdong desde 1998. ISO 9001 desde 2002, con producción OEM para mercados de exportación.",
 });
 
 export default function EmpresaPage() {

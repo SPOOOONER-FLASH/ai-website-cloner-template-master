@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Service + Downloads",
   description:
-    "Canton Hyland product catalogue, model-scoped test reports and technical document request service.",
+    "Download the 46-page Canton Hyland catalogue covering locks, handles, panic exit devices, glass hardware and closers, plus model-scoped test reports.",
 });
 
 const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> = [

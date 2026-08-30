@@ -33,7 +33,12 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const summary = category.summaryEs ?? category.summary;
   const count = getProductsByCategory(category.slug).length;
   const tail = `${count} modelos fabricados en Guangdong, China y exportados a más de treinta mercados.`;
+  // Las fichas largas desbordan los 165 caracteres con la cola completa y se publicaban
+  // solas; la cola compacta mantiene el dato de fábrica en Guangdong en esas páginas.
+  const compactTail = `${count} modelos fabricados en Guangdong, China.`;
   const full = `${summary} ${tail}`;
+  const compact = `${summary} ${compactTail}`;
+  const description = full.length <= 165 ? full : compact.length <= 165 ? compact : summary;
 
   /*
     The layout appends " | Canton Hyland" (16 chars). Spanish category names run long —
@@ -48,7 +53,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     enPath: `/products/${slug}`,
     locale: "es",
     title,
-    description: full.length <= 165 ? full : summary,
+    description,
     image: category.image.src,
     imageAlt: category.image.labelEs ?? category.image.label,
   });

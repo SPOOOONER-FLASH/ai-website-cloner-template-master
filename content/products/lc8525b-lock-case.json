@@ -14,6 +14,26 @@
     {
       "label": "Backset",
       "value": "25mm"
+    },
+    {
+      "label": "Material",
+      "value": "Iron"
+    },
+    {
+      "label": "Latch",
+      "value": "Copper"
+    },
+    {
+      "label": "Spindle Hole",
+      "value": "Copper Construction"
+    },
+    {
+      "label": "Strike Plate Material",
+      "value": "Stainless Steel"
+    },
+    {
+      "label": "Finish",
+      "value": "PB/AB/AC/SS/SN, all available"
     }
   ],
   "material": "",
@@ -39,9 +59,29 @@
     {
       "label": "Entrada",
       "value": "25 mm"
+    },
+    {
+      "label": "Material",
+      "value": "Hierro"
+    },
+    {
+      "label": "Picaporte",
+      "value": "Copper"
+    },
+    {
+      "label": "Spindle Hole",
+      "value": "Copper Construction"
+    },
+    {
+      "label": "Strike Plate Material",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Acabado",
+      "value": "PB/AB/AC/SS/SN, all available"
     }
   ],
-  "summaryEs": "Una caja de cerradura de embutir, distancia entre ejes de 85 mm y entrada de 25 mm.",
+  "summaryEs": "Una caja de cerradura de embutir de hierro, distancia entre ejes de 85 mm y entrada de 25 mm.",
   "summary": "A mortise lock case with 85mm centre distance and 25mm backset.",
   "seoTitleEs": "Lc8525B Cerraduras de embutir | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland Lc8525B cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."

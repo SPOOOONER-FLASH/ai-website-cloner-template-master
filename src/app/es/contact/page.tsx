@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Contacto — Equipo de exportación",
   description:
-    "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos.",
+    "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos. Indique tipo de puerta, acabado, norma y cantidad.",
 });
 
 export default function ContactoPage() {
