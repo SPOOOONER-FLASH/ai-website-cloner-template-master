@@ -40,14 +40,17 @@ import { canonicalCategorySlug } from "./category-aliases";
  */
 import { products as generatedProducts } from "./generated/products";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
+import { brandProductImageRef, brandProductImageRefs } from "./product-image-branding";
 
 export const products: Product[] = generatedProducts.map((product) => ({
   ...product,
-  heroImage: applyImageAltOverride(product.heroImage),
-  gallery: applyImageAltOverrides(product.gallery),
+  heroImage: brandProductImageRef(applyImageAltOverride(product.heroImage)),
+  gallery: brandProductImageRefs(applyImageAltOverrides(product.gallery)),
   videos: product.videos?.map((video) => ({
     ...video,
-    poster: video.poster ? applyImageAltOverride(video.poster) : undefined,
+    poster: video.poster
+      ? brandProductImageRef(applyImageAltOverride(video.poster))
+      : undefined,
   })),
 }));
 

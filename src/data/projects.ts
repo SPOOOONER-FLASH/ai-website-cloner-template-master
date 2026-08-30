@@ -11,11 +11,12 @@ import type { Project } from "./types";
 /** Records live in content/projects/*.json — see products.ts for the rationale. */
 import { projects as generatedProjects } from "./generated/projects";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
+import { brandProductImageRef, brandProductImageRefs } from "./product-image-branding";
 
 export const projects: Project[] = generatedProjects.map((project) => ({
   ...project,
-  heroImage: applyImageAltOverride(project.heroImage),
-  gallery: applyImageAltOverrides(project.gallery),
+  heroImage: brandProductImageRef(applyImageAltOverride(project.heroImage)),
+  gallery: brandProductImageRefs(applyImageAltOverrides(project.gallery)),
 }));
 
 export function getProjectBySlug(slug: string): Project | undefined {

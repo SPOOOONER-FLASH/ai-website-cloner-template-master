@@ -1,5 +1,6 @@
 import categoriesFile from "../../content/categories.json";
 import { applyImageAltOverride } from "./image-alt-overrides";
+import { brandProductImageRef } from "./product-image-branding";
 import type { Category } from "./types";
 
 /**
@@ -16,7 +17,7 @@ import type { Category } from "./types";
 function applyCategoryImageAltOverrides(category: Category): Category {
   return {
     ...category,
-    image: applyImageAltOverride(category.image),
+    image: brandProductImageRef(applyImageAltOverride(category.image)),
     children: category.children?.map(applyCategoryImageAltOverrides),
   };
 }

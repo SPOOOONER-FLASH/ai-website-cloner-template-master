@@ -86,7 +86,7 @@ test("project editorial images are responsive while technical product anchors st
       tag.includes("/images/editorial/"),
     );
     const productTags = imageTags.filter((tag) =>
-      tag.includes("/images/products/"),
+      tag.includes("/images/products-hyde/"),
     );
 
     assert.ok(editorialTags.length > 0, `${slug} should contain editorial imagery`);
