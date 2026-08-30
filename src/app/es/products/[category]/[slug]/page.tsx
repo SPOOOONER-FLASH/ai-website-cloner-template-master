@@ -31,11 +31,20 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     Built from the Spanish record rather than from the English seoTitle/seoDescription,
     which are generated separately and in English. A model number is not translated —
     it is the order code — so it leads the title in both languages.
+
+    seoTitleEs/seoDescriptionEs come from scripts/generate-product-seo.mjs, which
+    assembles them from the product's own fields with glossary-checked Spanish; the
+    inline pair below is only the fallback for a record the generator has not run on.
   */
-  const title = `${product.modelTbc ? name : `${product.model} ${name}`} | Canton Hyland`;
-  const metaTitle = title.length <= 62 ? title : `${product.model} | Canton Hyland`;
+  const metaTitle =
+    product.seoTitleEs ??
+    (() => {
+      const title = `${product.modelTbc ? name : `${product.model} ${name}`} | Canton Hyland`;
+      return title.length <= 62 ? title : `${product.model} | Canton Hyland`;
+    })();
   const metaDescription =
-    summary.length <= 165 ? summary : `${summary.slice(0, 160).trimEnd()}…`;
+    product.seoDescriptionEs ??
+    (summary.length <= 165 ? summary : `${summary.slice(0, 160).trimEnd()}…`);
 
   return {
     title: { absolute: metaTitle },

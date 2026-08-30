@@ -35,10 +35,19 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const tail = `${count} modelos fabricados en Guangdong, China y exportados a más de treinta mercados.`;
   const full = `${summary} ${tail}`;
 
+  /*
+    The layout appends " | Canton Hyland" (16 chars). Spanish category names run long —
+    "Cerraduras de gancho para correderas" alone is 36 — so the qualifier only survives
+    when the final title stays inside the ~62-char budget; otherwise the name carries
+    the title alone. Seven category titles were over budget before this.
+  */
+  const qualified = `${name} — Fabricante y proveedor`;
+  const title = `${qualified} | Canton Hyland`.length <= 62 ? qualified : name;
+
   return pageMetadata({
     enPath: `/products/${slug}`,
     locale: "es",
-    title: `${name} — Fabricante y proveedor`,
+    title,
     description: full.length <= 165 ? full : summary,
     image: category.image.src,
     imageAlt: category.image.labelEs ?? category.image.label,
