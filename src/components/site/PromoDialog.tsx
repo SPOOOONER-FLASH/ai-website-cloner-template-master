@@ -5,7 +5,13 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { promoDialog, promoIsInWindow, promoSurfaceFor } from "@/data/promo";
 import type { PromoCard } from "@/data/types";
-import { localisePromoCardCopy, selectActivePromoCard } from "@/lib/promo";
+import {
+  addSessionDismissal,
+  localisePromoCardCopy,
+  readSessionDismissals,
+  selectActivePromoCard,
+  writeSessionDismissals,
+} from "@/lib/promo";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { HydeLockup } from "./icons";
 
@@ -29,14 +35,20 @@ import { HydeLockup } from "./icons";
  * reachable by keyboard, and each card is labelled.
  */
 
-/** Written on FIRST SHOW, not on dismissal. Appearing IS the impression. */
+/**
+ * localStorage keeps ONLY the cooldown bookkeeping ({ lastSeen, version }), written on
+ * FIRST SHOW. Dismissals live in sessionStorage via src/lib/promo.ts: closing a card
+ * silences it for the rest of the browser session, and the next session shows it again.
+ * The client's standing instruction is cooldownMinutes: 0, so a dismissal must never be
+ * permanent — keeping dismissals in localStorage did exactly that, and produced three
+ * rounds of "the popup is gone" (2026-08-30: even ?promo=1 looked broken, because the
+ * forced preview still carried the permanent dismissals).
+ */
 const STORAGE_KEY = "canton-promo";
 
 interface StoredState {
   lastSeen: number;
   version: number;
-  /** ctaHref of every card dismissed during this cooldown window. */
-  dismissed?: string[];
 }
 
 function readState(): StoredState | null {
@@ -50,7 +62,6 @@ function readState(): StoredState | null {
     return {
       lastSeen: parsed.lastSeen,
       version: parsed.version,
-      dismissed: Array.isArray(parsed.dismissed) ? parsed.dismissed : [],
     };
   } catch {
     // Private-mode Safari throws on localStorage; a promo stack is not worth an error.
@@ -67,19 +78,16 @@ function writeState(state: StoredState) {
 }
 
 /**
- * The cooldown check.
- *
- * A version bump beats the cooldown outright. That is the only way to get the stack back
- * in front of someone who dismissed it — including the client checking their own site,
- * which is worth remembering before wondering why "the popup is gone again".
+ * The cooldown check. A version bump still beats the cooldown outright — that remains
+ * the way to re-show the rail to everyone mid-session — but it is no longer the only
+ * way back: dismissals expire with the browser session now.
  */
 /**
- * `?promo=1` shows the dialog regardless of the cooldown, and does not write state.
- *
- * Without it the only person who cannot check the promo is the person who just looked at
- * it — which is the client, every time. It caused two rounds of "the popup is gone
- * again" when nothing was wrong. Harmless in production: the worst a visitor can do with
- * it is see an offer they were going to be shown anyway.
+ * `?promo=1` shows the dialog regardless of the cooldown AND of session dismissals, and
+ * does not write state. Without it the only person who cannot check the promo is the
+ * person who just looked at it — which is the client, every time. Harmless in
+ * production: the worst a visitor can do with it is see an offer they were going to be
+ * shown anyway.
  */
 function forcedOpen(): boolean {
   try {
@@ -110,9 +118,9 @@ export function PromoDialog() {
     if (isSuppressed(Date.now())) return;
 
     const timer = window.setTimeout(() => {
-      const previous = readState();
-      const carried =
-        previous?.version === promoDialog.version ? (previous.dismissed ?? []) : [];
+      // Session-scoped dismissals only; a forced preview ignores even those, so the
+      // client can always check the rail with ?promo=1 no matter what they closed.
+      const carried = forcedOpen() ? [] : readSessionDismissals(window.sessionStorage);
 
       // Both state updates happen here, inside the timeout, rather than in a second
       // effect that reads storage after `open` flips. A separate effect would set state
@@ -126,7 +134,6 @@ export function PromoDialog() {
         writeState({
           lastSeen: Date.now(),
           version: promoDialog.version,
-          dismissed: carried,
         });
       }
     }, promoDialog.delaySeconds * 1000);
@@ -134,25 +141,18 @@ export function PromoDialog() {
     return () => window.clearTimeout(timer);
   }, [allowedHere, pathname]);
 
-  /** Dismissing one card remembers it, so it stays gone across pages in this window. */
+  /** Dismissing one card silences it for the rest of this browser session — no further. */
   const dismissCard = useCallback((href: string) => {
     setDismissed((current) => (current.includes(href) ? current : [...current, href]));
-    const state = readState();
-    writeState({
-      lastSeen: state?.lastSeen ?? Date.now(),
-      version: promoDialog.version,
-      dismissed: [...new Set([...(state?.dismissed ?? []), href])],
-    });
+    addSessionDismissal(window.sessionStorage, href);
   }, []);
 
   const dismissAll = useCallback(() => {
     setOpen(false);
-    const state = readState();
-    writeState({
-      lastSeen: state?.lastSeen ?? Date.now(),
-      version: promoDialog.version,
-      dismissed: promoDialog.cards.map((c) => c.ctaHref),
-    });
+    writeSessionDismissals(
+      window.sessionStorage,
+      promoDialog.cards.map((c) => c.ctaHref),
+    );
   }, []);
 
   // Escape clears the whole rail. Nothing is trapped, so this is a convenience, not a
