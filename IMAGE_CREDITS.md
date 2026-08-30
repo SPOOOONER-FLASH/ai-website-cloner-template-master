@@ -27,10 +27,10 @@ used on their own as certification evidence.
 
 ### AI-generated editorial imagery
 
-The files under `public/images/editorial/` were generated on 2026-08-24 with the built-in
-ImageGen workflow from text-only prompts, then processed with Sharp as WebP quality 86. No
-stock, web, FSB, Canton Hyland, or other reference images were supplied to the generation
-workflow.
+The confirmed generated files under `public/images/editorial/` were produced in documented
+batches on 2026-08-24 and 2026-08-29 with the built-in ImageGen workflow from text-only
+prompts, then processed with Sharp as WebP quality 86. No stock, web, FSB, Canton Hyland,
+or other reference images were supplied to those generation workflows.
 
 These files are representative editorial concepts. They are not photographs of completed
 Canton Hyland or HYDE projects, actual installations, named buildings, Canton Hyland
@@ -66,14 +66,17 @@ imports, source documents, vectors, or brand masters.
 
 ### Generated editorial processing
 
-The sixteen generated editorial sources were converted with the repository Sharp dependency
+The twenty confirmed generated editorial sources were converted with the repository Sharp dependency
 using `fit: "cover"` and WebP quality 86 at the exact output dimensions listed below. The
 original eleven architecture images used attention-aware cover cropping; the exact-ratio
 material-library source used standard cover resizing. The industrial and material images used
-cover cropping; the corrected `industrial-precision-parts.webp` was additionally normalised to
-opaque sRGB before encoding.
+cover cropping; the corrected `industrial-precision-parts.webp` and the four 2026-08-29
+homepage/news images were additionally normalised to opaque sRGB before encoding.
 
-The final editorial set contains 16 WebP files totalling 3,338,144 bytes.
+The directory contains 21 WebP files totalling 4,237,004 bytes: 20 confirmed text-only
+ImageGen derivatives totalling 4,137,636 bytes, plus `argentina-ar4-entry.webp` (99,368
+bytes), whose generation/source note was not preserved with its 2026-08-27 commit and is
+therefore kept outside the confirmed inventory below pending provenance confirmation.
 
 ---
 
@@ -88,6 +91,7 @@ The final editorial set contains 16 WebP files totalling 3,338,144 bytes.
 | `home-design-context.webp` | Architecture / material junctions | 1800×1200 | 253,806 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-editorial-insight.webp` | Architectural light / material study | 2400×1464 | 185,346 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-material-library.webp` | Architectural material-library study | 1800×1200 | 190,206 | 2026-08-24 | Built-in ImageGen, text-only; Sharp exact-ratio cover, opaque sRGB, WebP q=86 |
+| `home-panic-exit-bars.webp` | Representative commercial panic-exit application | 2400×943 | 160,580 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
 | `project-commercial-egress.webp` | Representative application concept | 1800×1200 | 205,920 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-glass-entrance.webp` | Representative application concept | 1800×1200 | 167,582 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-hospitality-residential.webp` | Warm interior / representative application | 1800×1200 | 113,086 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
@@ -97,6 +101,9 @@ The final editorial set contains 16 WebP files totalling 3,338,144 bytes.
 | `material-brushed-steel.webp` | Material macro | 1600×1600 | 179,238 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
 | `material-bronze-patina.webp` | Material macro | 1600×1600 | 391,848 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
 | `material-metal-stone-detail.webp` | Architectural material junction | 1600×1600 | 176,074 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover, WebP q=86 |
+| `news-door-schedule-doors.webp` | Representative coordinated door-schedule study | 2400×943 | 83,564 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
+| `news-finish-function-library.webp` | Representative finish and function library | 1800×1200 | 334,320 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
+| `news-mortise-lock-inspection.webp` | Representative mortise-lock dimensional study | 1800×1200 | 221,028 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
 
 Visual QA of the final WebP files found no visible people, silhouettes, hands, faces, distant
 figures, or human reflections, and no readable text, logo, watermark, or brand mark. This

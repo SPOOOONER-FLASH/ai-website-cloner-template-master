@@ -45,8 +45,8 @@ export const heroCarousel: HeroCarouselContent = {
       variant: "stacked",
       media: {
         ratio: "2400 / 943",
-        src: "/images/editorial/hero-cultural-entrance.webp",
-        label: "Cool neutral architectural entrance with stone, glass, and metal details",
+        src: "/images/editorial/home-panic-exit-bars.webp",
+        label: "Representative commercial fire-exit doors with clearly visible panic push bars",
       },
       title: "Panic Exit Devices",
       body: "Fast-release hardware engineered for dependable emergency egress in commercial buildings.",

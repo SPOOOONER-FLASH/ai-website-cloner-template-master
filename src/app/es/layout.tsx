@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     description: defaultDescription.es,
     images: [
       {
-        url: absoluteUrl("/images/editorial/hero-cultural-entrance.webp"),
+        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
         width: 2400,
         height: 943,
-        alt: "Entrada arquitectónica de piedra, vidrio y detalles metálicos",
+        alt: "Estudio representativo de puertas cortafuego comerciales con barras antipánico visibles",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle.es,
     description: defaultDescription.es,
-    images: [absoluteUrl("/images/editorial/hero-cultural-entrance.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
   },
   robots: indexable
     ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }

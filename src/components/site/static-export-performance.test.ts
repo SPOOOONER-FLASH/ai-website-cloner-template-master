@@ -37,7 +37,7 @@ test("every editorial image in the initial home export has responsive candidates
 
 test("the mobile hero accounts for its wide-source object-cover crop", () => {
   const html = readFileSync(homeExport, "utf8");
-  const heroTag = (html.match(/<img\b[^>]*hero-cultural-entrance[^>]*>/i) ?? [])[0];
+  const heroTag = (html.match(/<img\b[^>]*home-panic-exit-bars[^>]*>/i) ?? [])[0];
 
   assert.ok(heroTag, "expected the initial Hero image in the static export");
   assert.match(

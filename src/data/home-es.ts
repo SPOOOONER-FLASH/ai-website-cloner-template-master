@@ -32,8 +32,8 @@ export const heroCarousel: HeroCarouselContent = {
       variant: "stacked",
       media: {
         ratio: "2400 / 943",
-        src: "/images/editorial/hero-cultural-entrance.webp",
-        label: "Entrada arquitectónica de piedra, vidrio y metal con luz natural neutra",
+        src: "/images/editorial/home-panic-exit-bars.webp",
+        label: "Estudio representativo de puertas cortafuego comerciales con barras antipánico claramente visibles",
       },
       title: "Dispositivos antipánico",
       body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",

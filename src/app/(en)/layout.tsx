@@ -43,10 +43,10 @@ export const metadata: Metadata = {
     description: defaultDescription.en,
     images: [
       {
-        url: absoluteUrl("/images/editorial/hero-cultural-entrance.webp"),
+        url: absoluteUrl("/images/editorial/home-panic-exit-bars.webp"),
         width: 2400,
         height: 943,
-        alt: "Neutral architectural entrance with stone, glass, and metal details",
+        alt: "Representative commercial fire-exit doors with visible panic push bars",
       },
     ],
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle.en,
     description: defaultDescription.en,
-    images: [absoluteUrl("/images/editorial/hero-cultural-entrance.webp")],
+    images: [absoluteUrl("/images/editorial/home-panic-exit-bars.webp")],
   },
   // Driven by the single `indexable` flag in src/data/site.ts, not hard-coded here.
   robots: indexable
