@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const canonicalCategory = canonicalCategorySlug(category);
   const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
+  const spanishUrl = absoluteUrl(`/es${path}`);
 
   return {
     // seoTitle already carries the brand, so opt out of the layout's "%s | Canton Hyland".
@@ -37,7 +38,11 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     description: product.seoDescription,
     alternates: {
       canonical: path,
-      // No Spanish product pages exist yet, so no hreflang here. See site.ts.
+      languages: {
+        en: url,
+        es: spanishUrl,
+        "x-default": url,
+      },
     },
     openGraph: {
       type: "website",

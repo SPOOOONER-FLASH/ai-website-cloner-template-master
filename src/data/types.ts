@@ -120,6 +120,8 @@ export interface Product {
   /** Display name, e.g. "Solid Lever Handle on Rose". */
   name: string;
   nameZh?: string;
+  /** Spanish display name for the /es mirror. */
+  nameEs?: string;
   /** Product family/series this belongs to, e.g. "Hyland 007". */
   series: string;
   /**
@@ -131,6 +133,8 @@ export interface Product {
   /** One or two sentences for cards and listings. */
   summary: string;
   summaryZh?: string;
+  /** Spanish summary, composed from the spec rows rather than translated. */
+  summaryEs?: string;
   /**
    * Long-form product copy, as Markdown.
    *
@@ -147,6 +151,13 @@ export interface Product {
   description?: string;
   /** Full spec table. Row count varies by product type. */
   specs: SpecRow[];
+  /**
+   * The Spanish side, composed from `specs` rather than translated — see
+   * scripts/translate-products-es.mjs. Absent where the record has no rows to compose
+   * from, in which case the /es page falls back to the English text rather than
+   * showing a gap.
+   */
+  specsEs?: SpecRow[];
   /** Base material, e.g. "Solid brass". */
   material: string;
   /** Surface finish(es), e.g. ["Satin stainless", "Matt black (PVD)"]. */
@@ -413,6 +424,12 @@ export interface Category {
   /** Display name, e.g. "Mortise Locks". */
   name: string;
   nameZh?: string;
+  /**
+   * Latin American trade Spanish, for the /es mirror. Written rather than translated —
+   * see src/data/es-glossary.ts for the register and the terminology decisions.
+   */
+  nameEs?: string;
+  summaryEs?: string;
   /** Short description for the category landing page. */
   summary: string;
   /** Lead image for the category card. */

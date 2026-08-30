@@ -81,16 +81,17 @@ export function absoluteUrl(path: string): string {
  * ⚠ THE SPANISH SITE IS A PARTIAL MIRROR, NOT A FULL ONE.
  *
  * Built in Spanish:  /  /company  /contact  /projects  /projects/[slug]
- *                    /products/argentina-ar4 (a market-specific collection)
- * English only:      the general /products catalogue and product details, /downloads
+ *                    /products  /products/[category]  /products/[category]/[slug]
+ * English only:      /downloads, /news, /faq and the rest of the support pages
  *
  * This matters for SEO correctness. An `hreflang` pointing at a URL that 404s is worse
  * than no `hreflang` at all — Search Console reports it as an error and can discount the
  * whole language cluster. So alternates are only declared for paths that genuinely exist
  * in both languages.
  *
- * Exact-path mirrors belong in SPANISH_MIRROR_PATHS. When the full Spanish product
- * catalogue exists, add the /products prefix and remove the exact-path exception.
+ * The fifteen canonical product categories and all current product details are mirrored.
+ * The list itself lives in src/lib/spanish-mirror.ts so it can be unit-tested without
+ * pulling in path aliases.
  */
 /**
  * Locale alternates for a given path, used for hreflang.

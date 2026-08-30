@@ -32,8 +32,24 @@ test("sitemap entries omit invented freshness unless a real date is supplied", (
   assert.equal(withDate.every((entry) => entry.lastModified === publishedAt), true);
 });
 
-test("the Argentina AR-4 collection is bilingual without claiming a full Spanish catalogue", () => {
+/*
+  This assertion previously locked the opposite: /products/argentina-ar4 mirrored while
+  /products and /products/lock-cases did not, because only the Argentina collection had
+  Spanish routes. The client approved the full Spanish catalogue on 2026-08-30 and
+  src/app/es/products/ now builds the index, all fifteen canonical categories and every product
+  detail, so the claim this test protects has genuinely changed.
+
+  What it still protects is the rule that made it worth writing: hreflang is only
+  declared for paths that exist in both languages. /downloads has no Spanish route and
+  must stay false.
+*/
+test("the Spanish catalogue mirrors /products, and hreflang stops where the routes do", () => {
+  assert.equal(hasSpanishMirror("/products"), true);
+  assert.equal(hasSpanishMirror("/products/lock-cases"), true);
+  assert.equal(hasSpanishMirror("/products/lock-cases/lc8520ps-lock-case"), true);
   assert.equal(hasSpanishMirror("/products/argentina-ar4"), true);
-  assert.equal(hasSpanishMirror("/products"), false);
-  assert.equal(hasSpanishMirror("/products/lock-cases"), false);
+
+  assert.equal(hasSpanishMirror("/downloads"), false);
+  assert.equal(hasSpanishMirror("/news"), false);
+  assert.equal(hasSpanishMirror("/faq"), false);
 });

@@ -4,12 +4,14 @@ import { useEffect, useId, useRef, useState } from "react";
 import type { PointerEvent as ReactPointerEvent } from "react";
 import { X } from "lucide-react";
 import type { ImageRef } from "@/data/types";
+import type { Locale } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 type ProductImageZoomProps = ImageRef & {
   priority?: boolean;
   className?: string;
+  locale?: Locale;
 };
 
 /**
@@ -26,11 +28,26 @@ export function ProductImageZoom({
   label,
   priority,
   className,
+  locale = "en",
 }: ProductImageZoomProps) {
   const [open, setOpen] = useState(false);
   const inspectionHintId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const copy =
+    locale === "es"
+      ? {
+          enlarge: `Ampliar imagen: ${label}`,
+          hint: "Mueva el puntero sobre la imagen para examinar los detalles. Actívela para abrir la imagen completa.",
+          dialog: `Imagen ampliada: ${label}`,
+          close: "Cerrar imagen ampliada",
+        }
+      : {
+          enlarge: `Enlarge ${label}`,
+          hint: "Move across the image to inspect details. Activate to open the full image.",
+          dialog: `Large image: ${label}`,
+          close: "Close large image",
+        };
 
   function moveZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
     if (event.pointerType !== "mouse") return;
@@ -85,7 +102,7 @@ export function ProductImageZoom({
       <button
         ref={triggerRef}
         type="button"
-        aria-label={`Enlarge ${label}`}
+        aria-label={copy.enlarge}
         aria-haspopup="dialog"
         aria-describedby={inspectionHintId}
         onClick={() => setOpen(true)}
@@ -104,7 +121,7 @@ export function ProductImageZoom({
           className="product-pointer-zoom"
         />
         <span id={inspectionHintId} className="sr-only">
-          Move across the image to inspect details. Activate to open the full image.
+          {copy.hint}
         </span>
       </button>
 
@@ -113,7 +130,7 @@ export function ProductImageZoom({
           className="fixed inset-0 z-[60] grid place-items-center bg-ink/92 p-16 sm:p-32"
           role="dialog"
           aria-modal="true"
-          aria-label={`Large image: ${label}`}
+          aria-label={copy.dialog}
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) setOpen(false);
           }}
@@ -121,7 +138,7 @@ export function ProductImageZoom({
           <button
             ref={closeRef}
             type="button"
-            aria-label="Close large image"
+            aria-label={copy.close}
             onClick={() => setOpen(false)}
             className="absolute right-16 top-16 grid size-48 place-items-center border border-surface bg-ink text-surface outline-offset-4 hover:bg-surface hover:text-ink focus-visible:outline-2 focus-visible:outline-surface sm:right-32 sm:top-24"
           >

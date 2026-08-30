@@ -95,24 +95,34 @@ export function websiteSchema(): WithContext<WebSite> {
  * Product schema. Deliberately omits `offers` — no price or stock is published, and
  * emitting an empty/placeholder offer is a common way to earn a Search Console penalty.
  */
-export function productSchema(product: Product, url: string): WithContext<SchemaProduct> {
-  const specs = product.specs.filter((s) => s.value);
+export function productSchema(
+  product: Product,
+  url: string,
+  locale: "en" | "es" = "en",
+  categoryName?: string,
+): WithContext<SchemaProduct> {
+  const es = locale === "es";
+  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs).filter(
+    (spec) => spec.value,
+  );
+  const name = (es && product.nameEs) || product.name;
+  const description = (es && product.summaryEs) || product.summary;
 
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     // Model first, matching both the H1 and `seoTitle`. The audit test asserts this string
     // is visible on the page, so the three must be changed together or not at all.
-    name: `${product.modelTbc ? "" : `${product.model} `}${product.name}`.trim(),
+    name: `${product.modelTbc ? "" : `${product.model} `}${name}`.trim(),
     ...(product.modelTbc ? {} : { model: product.model, sku: product.model, mpn: product.model }),
-    description: product.summary,
+    description,
     url,
     image: [absoluteUrl(product.heroImage.src ?? ""), ...product.gallery.map((g) => absoluteUrl(g.src ?? ""))].filter(
       (s) => s !== siteUrl,
     ),
     brand: { "@type": "Brand", name: siteName },
     manufacturer: { "@id": `${siteUrl}/#organization` },
-    category: product.categoryPath.join(" / "),
+    category: categoryName ?? product.categoryPath.join(" / "),
     material: product.material,
     ...(specs.length
       ? {

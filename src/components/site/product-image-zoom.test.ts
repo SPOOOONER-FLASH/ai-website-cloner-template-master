@@ -13,12 +13,16 @@ const zoom = readFileSync(
 
 test("product hero and gallery images use the same accessible zoom surface", () => {
   assert.match(detail, /import \{ ProductImageZoom \}/);
-  assert.match(detail, /<ProductImageZoom \{\.\.\.product\.heroImage\} priority \/>/);
-  assert.match(detail, /<ProductImageZoom key=\{`\$\{image\.src\}-\$\{image\.label\}`\} \{\.\.\.image\} \/>/);
+  assert.match(detail, /<ProductImageZoom \{\.\.\.heroImage\} priority locale=\{locale\} \/>/);
+  assert.match(
+    detail,
+    /<ProductImageZoom key=\{`\$\{image\.src\}-\$\{image\.label\}`\} \{\.\.\.image\} locale=\{locale\} \/>/,
+  );
 });
 
 test("zoom opens an on-demand dialog and supports keyboard dismissal", () => {
-  assert.match(zoom, /aria-label=\{`Enlarge \$\{label\}`\}/);
+  assert.match(zoom, /aria-label=\{copy\.enlarge\}/);
+  assert.match(zoom, /Ampliar imagen/);
   assert.match(zoom, /role="dialog"/);
   assert.match(zoom, /aria-modal="true"/);
   assert.match(zoom, /event\.key === "Escape"/);

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
+import type { Locale } from "@/data/site";
 import { sortForDisplay } from "@/lib/product-finder";
 
 interface ProductIndexListProps {
   products: Product[];
   /** Summary line, e.g. "All 67 mortise lock models". */
   label: string;
+  locale?: Locale;
 }
 
 /**
@@ -20,23 +22,27 @@ interface ProductIndexListProps {
  * HTML: the element's content ships in the markup whether or not it is open, and it needs
  * no JavaScript to expand.
  */
-export function ProductIndexList({ products, label }: ProductIndexListProps) {
+export function ProductIndexList({ products, label, locale = "en" }: ProductIndexListProps) {
+  const es = locale === "es";
+  const base = es ? "/es" : "";
   if (!products.length) return null;
   const items = sortForDisplay(products);
 
   return (
     <details className="col-span-full mt-64 border-t border-line pt-24">
       <summary className="cursor-pointer text-c2 text-ink-secondary hover:text-brand">
-        {label} — full model index
+        {label} — {es ? "índice completo de modelos" : "full model index"}
       </summary>
       <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-8 sm:grid-cols-2 xl:grid-cols-3">
         {items.map((product) => (
           <li key={product.slug}>
             <Link
-              href={`/products/${product.categoryPath[0]}/${product.slug}/`}
+              href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
               className="text-c2 text-ink-secondary hover:text-brand"
             >
-              {product.modelTbc ? product.name : `${product.model} — ${product.name}`}
+              {product.modelTbc
+                ? (es && product.nameEs) || product.name
+                : `${product.model} — ${(es && product.nameEs) || product.name}`}
             </Link>
           </li>
         ))}

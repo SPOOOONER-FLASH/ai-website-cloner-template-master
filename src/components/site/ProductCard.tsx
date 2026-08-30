@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
+import type { Locale } from "@/data/site";
+import { localiseProductValues } from "@/lib/spanish-product";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
@@ -11,28 +13,39 @@ interface ProductCardProps {
    * A 20-card grid is right to lazy-load; its first row is not — see MediaPlaceholder.
    */
   priority?: boolean;
+  locale?: Locale;
 }
 
 /** Shared catalogue card for listings and related products. */
-export function ProductCard({ product, className, priority }: ProductCardProps) {
+export function ProductCard({ product, className, priority, locale = "en" }: ProductCardProps) {
+  const es = locale === "es";
+  const material = localiseProductValues([product.material].filter(Boolean), locale);
+  const heroImage = {
+    ...product.heroImage,
+    label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
+  };
   return (
     <Link
-      href={`/products/${product.categoryPath[0]}/${product.slug}/`}
+      href={`${es ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
       className={cn(
         "hard-shadow-card group flex flex-col bg-surface",
         className,
       )}
     >
-      <MediaPlaceholder {...product.heroImage} priority={priority} />
+      <MediaPlaceholder {...heroImage} priority={priority} />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="title-marker text-h3 text-ink">
-          {product.name}
+          {(es && product.nameEs) || product.name}
         </p>
         <p className="mt-8 text-c1 text-ink-secondary">
-          {product.modelTbc ? "Reference available on request" : `Model ${product.model}`}
+          {product.modelTbc
+            ? es
+              ? "Referencia disponible a pedido"
+              : "Reference available on request"
+            : `${es ? "Modelo" : "Model"} ${product.model}`}
         </p>
         <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">
-          {product.material}
+          {material.join(" · ")}
         </p>
       </div>
     </Link>
