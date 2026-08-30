@@ -912,6 +912,23 @@
     transform: scaleX(2.4);
   }
 
+  /* Product imagery — selected D direction. Fine pointers pan a single, intact
+     image by changing its transform origin. Touch and keyboard keep the existing
+     click-to-dialog path, so the enhancement never blocks inspection. */
+  .product-pointer-zoom {
+    transform-origin: var(--product-zoom-x, 50%) var(--product-zoom-y, 50%);
+    transition:
+      transform 560ms var(--motion-ease),
+      transform-origin 150ms linear;
+    will-change: transform;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    button:hover > .product-pointer-zoom {
+      transform: scale(1.72);
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .hard-shadow-card,
     .hard-shadow-card:hover,
@@ -925,6 +942,7 @@
      .catalogue-pager-page,
      .catalogue-page-enter,
      .home-editorial-media > img,
+    .product-pointer-zoom,
     .copy p > a,
     .inline-marker,
     .inline-marker-scope a {
@@ -968,6 +986,10 @@
     .hero-slide,
     .hero-dot {
       transition: none;
+      transform: none;
+    }
+
+    button:hover > .product-pointer-zoom {
       transform: none;
     }
   }

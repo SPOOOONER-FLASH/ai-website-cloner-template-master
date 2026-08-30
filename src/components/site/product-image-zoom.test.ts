@@ -26,6 +26,21 @@ test("zoom opens an on-demand dialog and supports keyboard dismissal", () => {
   assert.match(zoom, /loading="eager"/);
 });
 
+test("fine pointers get the selected full-image pan zoom without a decorative loupe", () => {
+  assert.match(zoom, /onPointerMove=\{moveZoomOrigin\}/);
+  assert.match(zoom, /onPointerLeave=\{resetZoomOrigin\}/);
+  assert.match(zoom, /event\.pointerType !== "mouse"/);
+  assert.match(zoom, /--product-zoom-x/);
+  assert.match(zoom, /product-pointer-zoom/);
+  assert.doesNotMatch(zoom, /ZoomIn/);
+});
+
+test("pointer zoom remains progressive enhancement over the existing dialog", () => {
+  assert.match(zoom, /onClick=\{\(\) => setOpen\(true\)\}/);
+  assert.match(zoom, /aria-describedby=\{inspectionHintId\}/);
+  assert.match(zoom, /Move across the image to inspect details/);
+});
+
 test("missing images remain honest placeholders rather than zoom controls", () => {
   assert.match(zoom, /if \(!src\)/);
   assert.match(zoom, /<MediaPlaceholder/);

@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { ZoomIn, X } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
+import type { PointerEvent as ReactPointerEvent } from "react";
+import { X } from "lucide-react";
 import type { ImageRef } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
@@ -27,8 +28,26 @@ export function ProductImageZoom({
   className,
 }: ProductImageZoomProps) {
   const [open, setOpen] = useState(false);
+  const inspectionHintId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+
+  function moveZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
+    if (event.pointerType !== "mouse") return;
+
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const x = Math.min(100, Math.max(0, ((event.clientX - bounds.left) / bounds.width) * 100));
+    const y = Math.min(100, Math.max(0, ((event.clientY - bounds.top) / bounds.height) * 100));
+    const image = event.currentTarget.querySelector<HTMLElement>(".product-pointer-zoom");
+    image?.style.setProperty("--product-zoom-x", `${x}%`);
+    image?.style.setProperty("--product-zoom-y", `${y}%`);
+  }
+
+  function resetZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
+    const image = event.currentTarget.querySelector<HTMLElement>(".product-pointer-zoom");
+    image?.style.setProperty("--product-zoom-x", "50%");
+    image?.style.setProperty("--product-zoom-y", "50%");
+  }
 
   useEffect(() => {
     if (!open) return;
@@ -68,7 +87,10 @@ export function ProductImageZoom({
         type="button"
         aria-label={`Enlarge ${label}`}
         aria-haspopup="dialog"
+        aria-describedby={inspectionHintId}
         onClick={() => setOpen(true)}
+        onPointerMove={moveZoomOrigin}
+        onPointerLeave={resetZoomOrigin}
         className={cn(
           "group relative block w-full cursor-zoom-in overflow-hidden text-left outline-offset-4 focus-visible:outline-2 focus-visible:outline-ink",
           className,
@@ -79,11 +101,10 @@ export function ProductImageZoom({
           ratio={ratio}
           label={label}
           priority={priority}
-          className="transition-transform duration-300 ease-out group-hover:scale-[1.015] group-focus-visible:scale-[1.015] motion-reduce:transition-none"
+          className="product-pointer-zoom"
         />
-        <span className="absolute bottom-12 right-12 grid size-40 place-items-center border border-ink bg-surface text-ink shadow-[4px_4px_0_var(--color-line)] transition-transform duration-200 group-hover:-translate-x-2 group-hover:-translate-y-2 group-focus-visible:-translate-x-2 group-focus-visible:-translate-y-2 motion-reduce:transition-none">
-          <ZoomIn aria-hidden="true" size={19} strokeWidth={1.5} />
-          <span className="sr-only">Open large image</span>
+        <span id={inspectionHintId} className="sr-only">
+          Move across the image to inspect details. Activate to open the full image.
         </span>
       </button>
 
