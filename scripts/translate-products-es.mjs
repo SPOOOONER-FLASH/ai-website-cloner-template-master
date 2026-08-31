@@ -75,6 +75,13 @@ const NUMERIC_RULES = [
     /^([\d\s./]+mm(?:\s*\/\s*[\d\s./]+mm)?) adjustable, latch and deadbolt both$/i,
     (m, sp) => `${sp(m[1])} regulable, tanto el picaporte como el cerrojo`,
   ],
+  // "35–50mm" / "8-12mm" — a range; Spanish spells it out rather than keeping the dash.
+  [/^([\d.]+)\s*[–-]\s*([\d.]+)\s*mm$/i, (m) => `de ${m[1]} a ${m[2]} mm`],
+  // "60mm (2-3/8”)" — the imperial equivalent in brackets is printed, not translated.
+  [/^([\d.]+)\s*mm\s*(\(.+\))$/i, (m) => `${m[1]} mm ${m[2]}`],
+  // "90-180°" and "180°" — degrees need no translation, only the range spelled out.
+  [/^(\d+)\s*[–-]\s*(\d+)\s*°$/i, (m) => `de ${m[1]} a ${m[2]}°`],
+  [/^(\d+)\s*°$/i, (m) => `${m[1]}°`],
   // "32x300x600 mm" — a dimension triple; only the separator is language.
   [/^([\d.]+)\s*[x×]\s*([\d.]+)\s*[x×]\s*([\d.]+)\s*mm$/i, (m) => `${m[1]} × ${m[2]} × ${m[3]} mm`],
 ];

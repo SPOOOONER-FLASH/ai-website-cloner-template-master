@@ -63,6 +63,24 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   Width: "Ancho",
   "Available lengths": "Longitudes disponibles",
   Hooks: "Ganchos",
+  // arrived with the stahlock import
+  "Key options": "Opciones de llave",
+  "Spindle Hole": "Orificio del cuadradillo",
+  "Strike Plate Material": "Material del cerradero",
+  "Opening Angle": "Ángulo de apertura",
+  "Max opening angle": "Ángulo máximo de apertura",
+  Diameter: "Diámetro",
+  "Viewing Angle": "Ángulo de visión",
+  "Rosette Diameter": "Diámetro del rosetón",
+  "Door Width": "Ancho de puerta",
+  Capacity: "Capacidad",
+  "Handle Material": "Material de la manija",
+  "Tube Thickness": "Espesor del tubo",
+  Opening: "Apertura",
+  Includes: "Incluye",
+  "Latch options": "Opciones de picaporte",
+  "Spindle Material": "Material del cuadradillo",
+  "Key Material": "Material de la llave",
 };
 
 /**
@@ -118,6 +136,25 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Oil-rubbed bronze": "Bronce envejecido",
   "White sprayed": "Pintado en blanco",
   "Wood-grain sprayed": "Pintado imitación madera",
+  Copper: "Cobre",
+  "Copper Construction": "Construcción en cobre",
+  "Iron and aluminum": "Hierro y aluminio",
+  "Spray painted": "Pintado con pistola",
+  "PB/AB/AC/SS/SN, all available":
+    "PB/AB/AC/SS/SN, todos disponibles",
+  "Adjustable 60–70mm": "Regulable de 60 a 70 mm",
+  "Includes 3 brass keys": "Incluye 3 llaves de latón",
+  "3 nickel-plated brass keys": "3 llaves de latón niqueladas",
+  "Brass cylinder with 2 brass keys": "Cilindro de latón con 2 llaves de latón",
+  "Used in combination with push bar and lock":
+    "Se usa en combinación con la barra antipánico y la cerradura",
+  "Suitable for all types of doors": "Apto para todo tipo de puertas",
+  "Safety lock with cylinder": "Cerradura de seguridad con cilindro",
+  "Spray painted; various finishes available (MOQ required)":
+    "Pintado con pistola; otros acabados disponibles (sujeto a pedido mínimo)",
+  "Spray painted; multiple finishes available (MOQ required)":
+    "Pintado con pistola; varios acabados disponibles (sujeto a pedido mínimo)",
+  "OEM available with MOQ": "OEM disponible con pedido mínimo",
   // the printed finish table, with its US designations kept verbatim
   "Satin stainless steel (US32D)": "Acero inoxidable satinado (US32D)",
   "Polished stainless steel (US32)": "Acero inoxidable pulido (US32)",
