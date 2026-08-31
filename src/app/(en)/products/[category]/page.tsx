@@ -36,9 +36,17 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   // Bare category names came out at ~25 characters once the brand suffix was added,
   // leaving more than half the title budget unused. The qualifier is the one buyers
   // actually type — "panic exit device manufacturer" — and it is a plain statement of
-  // what this company is, not a claim.
+  // what this company is, not a claim. Long names that overflow with the full qualifier
+  // fall back to the short "— Manufacturer" form rather than shipping bare.
   const withRole = `${category.name} — Manufacturer & Supplier`;
-  const title = withRole.length + " | Canton Hyland".length <= 62 ? withRole : category.name;
+  const withManufacturer = `${category.name} — Manufacturer`;
+  const titleBudget = 62 - " | Canton Hyland".length;
+  const title =
+    withRole.length <= titleBudget
+      ? withRole
+      : withManufacturer.length <= titleBudget
+        ? withManufacturer
+        : category.name;
 
   // Several category summaries stop around 65 characters. The count is read from the
   // catalogue, and the closing clause repeats copy already published site-wide.

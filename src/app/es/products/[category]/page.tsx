@@ -44,10 +44,18 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     The layout appends " | Canton Hyland" (16 chars). Spanish category names run long —
     "Cerraduras de gancho para correderas" alone is 36 — so the qualifier only survives
     when the final title stays inside the ~62-char budget; otherwise the name carries
-    the title alone. Seven category titles were over budget before this.
+    the title alone. Seven category titles were over budget before this. Names that
+    overflow with the full qualifier fall back to the short "— Fabricante" form.
   */
   const qualified = `${name} — Fabricante y proveedor`;
-  const title = `${qualified} | Canton Hyland`.length <= 62 ? qualified : name;
+  const qualifiedShort = `${name} — Fabricante`;
+  const titleBudget = 62 - " | Canton Hyland".length;
+  const title =
+    qualified.length <= titleBudget
+      ? qualified
+      : qualifiedShort.length <= titleBudget
+        ? qualifiedShort
+        : name;
 
   return pageMetadata({
     enPath: `/products/${slug}`,
