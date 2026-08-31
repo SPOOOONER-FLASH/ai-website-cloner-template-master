@@ -34,7 +34,7 @@ function languageTarget(pathname: string, isSpanish: boolean): string {
   return "/es";
 }
 
-type ShelfName = "company" | "buy";
+type ShelfName = "products" | "company" | "buy";
 
 const companyShelfLinks = {
   en: [
@@ -161,6 +161,34 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 {headerNav.map((link) => {
                   const href = localisedHref(link.href, locale);
                   const current = isCurrent(href);
+
+                  if (link.href === "/products") {
+                    /*
+                      A link, not a button. Chanel opens its panel on hover but the top
+                      item still navigates, and the same applies here: /products/ is a
+                      real page with its own copy and 435 indexed links, so turning the
+                      nav item into a button to get a panel would cost the page its
+                      entry point. Hover and focus open the shelf; the click goes through.
+                    */
+                    return (
+                      <Link
+                        key={link.href}
+                        href={href}
+                        aria-current={current ? "page" : undefined}
+                        aria-expanded={openShelf === "products"}
+                        aria-controls="products-shelf"
+                        onFocus={() => setOpenShelf("products")}
+                        onMouseEnter={() => setOpenShelf("products")}
+                        onClick={() => setOpenShelf(null)}
+                        className={cn(
+                          "nav-marker text-c1 text-ink no-underline",
+                          current && "current-nav",
+                        )}
+                      >
+                        {navLabel(link, locale)}
+                      </Link>
+                    );
+                  }
 
                   if (link.href === "/company") {
                     return (
@@ -352,6 +380,76 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           </nav>
         </div>
       </div>
+
+      <section
+        id="products-shelf"
+        aria-label={isSpanish ? "Productos" : "Products"}
+        aria-hidden={openShelf !== "products"}
+        className={cn("header-shelf", openShelf === "products" && "header-shelf-open")}
+      >
+        <div className="header-shelf-clip">
+          <div className="layout py-32">
+            <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
+              <div>
+                <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
+                  {isSpanish ? "Productos" : "Products"}
+                </p>
+                <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
+                  {isSpanish
+                    ? "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una."
+                    : "Fifteen product families. The number is how many verified records each one holds."}
+                </p>
+                <Link
+                  href={localisedHref("/product-finder", locale)}
+                  onClick={() => setOpenShelf(null)}
+                  className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
+                >
+                  {isSpanish ? "Buscador de productos" : "Product Finder"}
+                </Link>
+              </div>
+              {/* Four columns of fifteen: the whole catalogue reachable in one hover
+                  from any page, which is what the drawer already gives on a phone. */}
+              <nav className="grid gap-x-24 gap-y-16 sm:grid-cols-2 xl:grid-cols-4">
+                {categories.map((category) => {
+                  const href = localisedHref(`/products/${category.slug}`, locale);
+                  return (
+                    <div key={category.slug}>
+                      <Link
+                        href={href}
+                        onClick={() => setOpenShelf(null)}
+                        aria-current={isCurrent(href) ? "page" : undefined}
+                        className="header-shelf-link block border-t border-line pt-12 text-ink no-underline"
+                      >
+                        <span className="short-marker text-c1">
+                          {isSpanish ? category.labelEs : category.label}
+                        </span>
+                        <span className="ml-8 text-c2 tabular-nums text-ink-tertiary">
+                          {category.count}
+                        </span>
+                      </Link>
+                      {category.children.length > 0 ? (
+                        <ul className="mt-6">
+                          {category.children.map((child) => (
+                            <li key={child.slug}>
+                              <Link
+                                href={`${href}?type=${child.slug}`}
+                                onClick={() => setOpenShelf(null)}
+                                className="block py-2 text-c2 text-ink-secondary no-underline hover:text-ink"
+                              >
+                                {isSpanish ? child.labelEs : child.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         id="company-shelf"
