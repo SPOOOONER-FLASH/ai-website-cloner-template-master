@@ -90,12 +90,35 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文件是否存在**，
 不能凭字符串批量覆盖甲方已选的首图。
 
+### 3. EH01 是 75 个「无图产品」里唯一已经有照片的
+
+`content/products/eh01-lever-handle.json` 的 `heroImage` 有 `label` 没有 `src`，
+所以被计入「75 个无图」。但磁盘上有 **8 张**
+（`public/images/products/eh01-lever-handle-{2..9}.webp`，`products-hyde/` 水印版同样 8 张，
+编号从 -2 起、无基准文件）。全量扫过 435 个产品：75 个缺 `heroImage.src`，
+**只有 EH01 带相册**，所以真实缺口是 74。它有 18 行规格，是 lever-handles 里最全的两个之一,
+只差「指定哪张当首图」—— 属编辑决定，与八·六「首图应该是黑色款」同类。
+
+### 4. 页脚移动端挤压（Codex 的 Footer 批次未覆盖）
+
+`docs/superpowers/specs/2026-08-31-hyde-sales-imagery-watermark-footer-design.md`
+已批准并认领 `SiteFooter.tsx`，覆盖了「How to buy 精简为 Contact / FAQ / Alibaba / 邮箱」。
+但甲方真正抱怨的「底部不对齐、How to buy 太拥挤」是另一回事：
+
+> 页脚三块在移动端是 4 栏网格里的 `col-span-2`，各占一半宽 ——
+> 375px 上每栏只有 163px，Newsletter 与 How to buy 并排硬挤。
+> **精简链接不解决它**，需要 `sm` 以下改 `col-span-full` 单列堆叠。
+
 ### 已关闭
 
 | | |
 |---|---|
-| 西语规格表英文残留 | 2026-08-31 清零。274 → 0 行，426 页全覆盖 |
+| 西语规格表英文残留 | 2026-08-31 清零。274 → 0 行，426 页全覆盖。独立复核 3076 行仅剩 6 个 finish 代码串（`CP, PB, SC…`），按设计不译 |
 | tid 类目映射 | 2026-08-30 上线，2026-08-31 复测 11 条全中 |
+| 移动端无导航 | 2026-08-31 修。`xl` 以下新增横滚 nav rail；抽屉重排为 购买 → 15 个类目 → 背景页 |
+| 首页轮播指向单个 SKU | 2026-08-31 修。三帧全部指类目，`home-destinations.test.ts` 锁死 |
+| 搜索框无默认建议 | 2026-08-31 修。6 类目 + 5 型号，英西双语，查无结果时也给去处 |
+| 字阶塌陷（h3 与正文同值） | 2026-08-31 修。h1 手机端 24→28，h3 16→19，c2 12→13，`type-scale.test.ts` 锁死 |
 
 ## 六、Bing 报的 86 个错误
 
