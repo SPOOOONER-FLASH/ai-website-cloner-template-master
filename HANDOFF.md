@@ -41,9 +41,9 @@
 
 ## 四、当前状态
 
-产品 435 · 公开内容页 476 · 静态页 481 · 图片 1593 张 · 测试 51 通过
+产品 435 · 静态页 **938**（公开 930，其中西语 459）· 产品图 1479 张 · 测试 **114 + 25** 全过
 
-**已完成**：全站页面、西语 7 页、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
+**已完成**：全站页面、**西语全目录 459 页**、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
 （20/页 + 分面折叠 + 独立滚动 + `1 2 3 … 22` 总页数提示）、全部 435 个产品链接服务端渲染（`ProductIndexList`）、阿里深链接、GA4 + Clarity、旧站 URL 301。
 
@@ -60,18 +60,33 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | GSC | 820 已索引 / 961 未索引 |
 | Bing | 533 indexed，86 errors |
 
-## 五、⚠ 最要紧的两件未完成
+## 五、⚠ 下一个会话的三件事（按价值排序）
 
-**1. 正文重复 → GSC 525「重复网页」+ Bing「内容过少」**
-**不是 canonical 问题**：471 页 canonical 全部自指，已验证。真因是正文本身重复。
-已修 36 个（44 个空规格表 → 18）。剩下的靠数据解决不了，需要甲方定：
-32 个 stainless-steel-handles / 30 个 lever-handles / 18 个 bathroom-accessories
-各自 summary 完全相同、只有 1 行 Material——给尺寸用途，或合并成带变体的单页。
-⚠ finish 后缀（SNET/PBET）不可推断，21 个样本 4 个矛盾，别再试。
+### 1. 西语规格表还有 9% 是英文 —— 不依赖任何人，今天就能做
 
-**2. 西语只有 7 / 471 页**
-`/es/` 导航的 href 全指向英文页，两个语区形成闭环。
-`SPANISH_MIRROR_PREFIXES` 在 `src/data/site.ts`，加前缀即自动生成 hreflang 与 sitemap。
+    未译规格行   274 / 3040（9%，最初 25%）
+    受影响页面   129 / 426（30%，最初 88%）
+    剩余词条     352 个，基本都只出现 1 次，是真长尾
+
+**做法**：`node scripts/translate-products-es.mjs`（不加 --write）会列出所有未命中的词条
+及其出现次数；在 `src/data/es-glossary.ts` 补词条，再 `--write`。**先补标签再补取值** ——
+标签是每行的左栏，一个缺失标签出现在所有带该属性的产品上，一个缺失取值只出现一次。
+
+⚠ **不要机翻**。查不到的词条脚本会原样留英文并计数，这是设计，不是 bug。
+术语表用的是拉美外贸西语（`entrada` 不是 `retranqueo`，`manija` 不是 `manilla`）。
+母语复核件在 `docs/content/revision-terminologia-es.docx`，甲方在找人看。
+
+### 2. tid 映射还没部署到服务器 —— 单项性价比最高的 SEO 动作
+
+`deploy/nginx/legacy-redirects.conf` 已含 11 条旧分类 → 新分类的映射，
+**但服务器上的还是旧版**。实测 `tid=97` 仍落在 `/products/` 而不是 `/products/lock-cases/`，
+而 GSC 显示 **tid=97 一个就带 456 条内链**。全部倒进通用 hub，Google 读作 soft 404。
+
+**需要人在服务器上做**：更新该 conf 并 reload nginx。代码侧已就绪，无需再改。
+
+### 3. 还有 9 个 0 规格 + 27 个 1–2 行
+
+图纸里还有尺寸没读完，见第八·七节。
 
 ## 六、Bing 报的 86 个错误
 
@@ -133,6 +148,30 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 补 Function。先生成 dry-run 对照表，逐条校验实际存在的图片文件，再写产品 JSON，不能仅凭
 字符串批量覆盖现有甲方已选首图。
 
+## 八·七、图纸里的尺寸：已做 20 个，剩下的没有便宜的自动化
+
+产品图库里混着**带尺寸标注的 CAD 图纸**，此前从没读过。它是我们手上最权威的来源
+（甲方自己的生产图），而且**它推翻过已发布的数据** —— 五个玻璃门拉手都写着
+`Size = 32x300x600 mm`（stahlock 一条文案复制到整个系列），五张图纸没有一张出现 300mm。
+
+已读 20 个产品的图纸，写进 `scripts/cad-dimensions.mjs`，每条都带 `drawing` 字段指明
+出处，可随时复查。**LC07 那张图独立验证了 LC 命名规则** —— 图上直接印着 85 和 45。
+
+⚠ **自动识别哪张图是图纸，我没做成。** 三种判据都试过：
+
+| 判据 | 失败方式 |
+|---|---|
+| 纯黑墨水 | 漏掉每一张细线图 —— 图纸的线是抗锯齿的灰，不是纯黑 |
+| 长直线（尺寸线） | 把深色照片全捞进来，每一行都有长暗色游程 |
+| 纸白 + 无中间灰 | 白底摄影棚照片照样通过 |
+
+同一张营销拼图被逐产品重新编码，**哈希去重也救不了**（248 张候选去重后仍是 246 张）。
+
+**现状**：248 张候选人工读了 28 张，命中约 20 张真图纸。剩余清单在
+`tmp/claude-cad/worklist.json`（A 组 = 规格 ≤3 行，B 组 = 有尺寸行待核对）。
+**这一步要么继续人眼读，要么上 OCR。别再花时间调像素判据了。**
+完整任务书（含写入格式与三条纪律）：`docs/collaboration/tasks/cad-drawing-extraction.md`
+
 ## 九、怎么干活
 
 ```bash
@@ -176,15 +215,10 @@ npm run assets:editorial     # 加了编辑图必跑，否则 prebuild 直接终
 
 ## 十、下一个会话建议顺序
 
-1. **铺 429 个西语产品路由**
-   甲方 2026-08-28 明确授权先上线，后续收到母语术语修订再更新。
-   加 `src/app/es/products/**` 路由 + `SPANISH_MIRROR_PREFIXES` 对应前缀；上线前仍需检查
-   nameEs/summaryEs/specsEs 回退、canonical、hreflang、JSON-LD 与 Sitemap 是否逐页一致。
-2. **确认后缀码对照表** —— 见第八·六节，甲方确认后可差异化 85 个重复页
-3. **继续写指南文章** —— 已上线 3 篇，选题见 `docs/content/EDITORIAL_PLAN.md`。
-   ⚠ 选题 1（EN 1125 vs ANSI）要重写角度：我们没有 ANSI/BHMA，EN 1125 只覆盖一个型号。
-   讲标准本身可以，**任何"我们已认证"的暗示都不行**。
-4. **修剩下 75 个产品的图**（见第七节）
+**见第五节的三件事。** 顺序就是那个顺序：西语补词条（不依赖任何人）→ tid 映射
+（需要服务器）→ 继续读图纸（见第八·七节）。
+
+第八·六节的后缀码对照表已由甲方确认并全部落地，不必再问。
 
 **服务器相关**：回滚与止损见 `docs/deployment/CANTONLOCK_ROLLBACK.md`。
 ⚠ **每次部署后必须去 Cloudflare 手动 Purge**。Cache Rule 设的是
