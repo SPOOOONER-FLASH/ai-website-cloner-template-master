@@ -1,0 +1,284 @@
+{
+  "_readme": [
+    "Buyer questions in the buyer's own words, for answer-engine coverage (GEO).",
+    "",
+    "WHY THIS EXISTS. Our Schema is already complete — Product, FAQPage, BreadcrumbList,",
+    "ItemList, Organization, WebSite and ContactPoint all emit, and llms.txt is generated",
+    "from the catalogue. What we cannot show is that any page ANSWERS what a buyer asks.",
+    "An assistant summarising 'panic exit device manufacturer China MOQ' quotes whichever",
+    "page contains the answer; if no page contains it, more markup changes nothing.",
+    "",
+    "THE PERSONA IS NOT A CONSUMER. The widely circulated version of this exercise uses a",
+    "25-year-old shopping for desk organisers. Ours is a hardware importer or a project",
+    "buyer building a door schedule: they ask about backset, handing, fire rating, MOQ,",
+    "cylinder standard and lead time, and they compare against Assa Abloy, Dorma, Kale and",
+    "the cheaper Guangdong factories. Questions here are written in their register —",
+    "colloquial where a buyer would be colloquial, technical where they would be technical.",
+    "",
+    "HOW `needs` WORKS. Each question names what would answer it, so coverage can be",
+    "measured instead of guessed. scripts/audit-question-coverage.mjs reads this file and",
+    "reports real numbers.",
+    "  spec  — a spec row on the product records; coverage = share of that category",
+    "          carrying the label",
+    "  faq   — a question in content/faq.json; covered only when its answer is non-empty",
+    "  page  — a route that exists and says something on the subject",
+    "  gap   — nothing on the site answers this today. These are the deliverable.",
+    "",
+    "Do not invent answers to close a gap. Empty is honest; invented is an incident —",
+    "a buyer orders against it. See AGENTS.md, 内容纪律."
+  ],
+
+  "universal": {
+    "_note": "Asked of every category. A buyer asks these before they ask about product.",
+    "questions": [
+      { "q": "What is your minimum order quantity?", "needs": { "kind": "faq", "match": "minimum order" } },
+      { "q": "How long before you can ship after I place the order?", "needs": { "kind": "faq", "match": "lead time" } },
+      { "q": "Can I get a sample first? Do I pay for it?", "needs": { "kind": "faq", "match": "sample" } },
+      { "q": "What payment terms do you take — TT, LC, 30% deposit?", "needs": { "kind": "faq", "match": "payment terms" } },
+      { "q": "Can you put my brand on it instead of HYDE?", "needs": { "kind": "faq", "match": "OEM" } },
+      { "q": "Do you actually make these or are you a trading company?", "needs": { "kind": "faq", "match": "manufactured" } },
+      { "q": "Do you ship to my country?", "needs": { "kind": "faq", "match": "export worldwide" } },
+      { "q": "Can I just buy through Alibaba instead of emailing?", "needs": { "kind": "faq", "match": "Alibaba" } },
+      { "q": "Can you send the drawings with dimensions?", "needs": { "kind": "faq", "match": "dimensional drawings" } },
+      { "q": "I need test reports for a tender — can you supply them?", "needs": { "kind": "faq", "match": "test reports" } },
+      { "q": "Which finishes can I get this in?", "needs": { "kind": "spec", "label": "Finish" } },
+      { "q": "What is it actually made of — solid brass or plated zinc?", "needs": { "kind": "spec", "label": "Material" } },
+      { "q": "Where is this meant to be used — commercial, residential, fire door?", "needs": { "kind": "spec", "label": "Application" } },
+      { "q": "How many open/close cycles is it rated for?", "needs": { "kind": "spec", "label": "Cycle life" } },
+      { "q": "How do you pack it, and how many per carton?", "needs": { "kind": "gap", "why": "Packing appears on 6 of 435 records; a buyer needs carton quantity and gross weight to cost freight." } },
+      { "q": "What is the HS code for customs?", "needs": { "kind": "gap", "why": "No HS codes anywhere on the site. Every importer needs one to clear goods and to estimate duty." } },
+      { "q": "What warranty do you give?", "needs": { "kind": "gap", "why": "No warranty statement on any page. Commonly the second question after price." } },
+      { "q": "Can I get spare parts and replacement cylinders later?", "needs": { "kind": "gap", "why": "No spare-parts or after-sales page." } },
+      { "q": "How do you compare with Assa Abloy or Dorma on this?", "needs": { "kind": "gap", "why": "No comparison content. Answer engines have nothing to quote when a buyer asks a versus question." } },
+      { "q": "How do I install it? Is there a template?", "needs": { "kind": "spec", "label": "Installation" } }
+    ]
+  },
+
+  "categories": [
+    {
+      "slug": "panic-exit-devices",
+      "questions": [
+        { "q": "Is this certified to EN 1125?", "needs": { "kind": "faq", "match": "EN 1125" } },
+        { "q": "Can I use it on a fire door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Does it work on a double door with both leaves?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Push bar or touch bar — what is the difference and which do I need?", "needs": { "kind": "gap", "why": "No explainer page. This is the single most asked comparison in the category." } },
+        { "q": "Can it be opened from outside with a key?", "needs": { "kind": "spec", "label": "Trim" } },
+        { "q": "Does it come with an alarm?", "needs": { "kind": "spec", "label": "Feature" } },
+        { "q": "What width of door does the bar fit?", "needs": { "kind": "spec", "label": "Door Width" } },
+        { "q": "Is there a version that locks at top and bottom as well?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Will it hold up in a cold room or outdoors?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "What is the outside trim made of and can I get it in stainless?", "needs": { "kind": "spec", "label": "Trim" } }
+      ]
+    },
+    {
+      "slug": "lock-cases",
+      "questions": [
+        { "q": "What backset do you have? I need 45 and 60.", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "What is the centre distance between the handle and the cylinder?", "needs": { "kind": "spec", "label": "Centre distance" } },
+        { "q": "Does it take a euro profile cylinder?", "needs": { "kind": "spec", "label": "Cylinder" } },
+        { "q": "How far does the deadbolt throw?", "needs": { "kind": "spec", "label": "Deadbolt throw" } },
+        { "q": "What door thickness does it suit?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is it handed, or can it be used left and right?", "needs": { "kind": "spec", "label": "Handing" } },
+        { "q": "What size spindle does it take — 8mm square?", "needs": { "kind": "spec", "label": "Spindle" } },
+        { "q": "Is the forend stainless or plated steel?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "Does the strike plate come with it?", "needs": { "kind": "spec", "label": "Strike" } },
+        { "q": "Will your case fit a lock body from another brand's faceplate cutout?", "needs": { "kind": "gap", "why": "No interchange or cross-reference table. Replacement buyers ask this first." } }
+      ]
+    },
+    {
+      "slug": "knob-locks",
+      "questions": [
+        { "q": "What is the difference between your heavy duty and light duty range?", "needs": { "kind": "gap", "why": "Sub-categories exist as filters but nothing explains the difference in words." } },
+        { "q": "Entry, privacy, passage — which one is which?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "What is the backset?", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "What is the cross bore diameter for the door prep?", "needs": { "kind": "spec", "label": "Cross bore" } },
+        { "q": "Can it be master keyed with the rest of the building?", "needs": { "kind": "spec", "label": "Keying" } },
+        { "q": "What door thickness does it take?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is the chassis steel or zinc?", "needs": { "kind": "spec", "label": "Chassis" } },
+        { "q": "Is it ANSI Grade 1, 2 or 3?", "needs": { "kind": "gap", "why": "We hold no ANSI/BHMA certification (client confirmed). A buyer will still ask; the honest answer needs to exist somewhere rather than being silence." } },
+        { "q": "How many keys come with each lock?", "needs": { "kind": "spec", "label": "Key options" } },
+        { "q": "Is the latch adjustable between 60 and 70mm?", "needs": { "kind": "spec", "label": "Latch" } }
+      ]
+    },
+    {
+      "slug": "lever-handles",
+      "questions": [
+        { "q": "Is it a tubular or a mortise lever set?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Is it solid stainless or zinc alloy with a coating?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "How long is the lever?", "needs": { "kind": "spec", "label": "Lever length" } },
+        { "q": "What is the rose diameter?", "needs": { "kind": "spec", "label": "Rose diameter" } },
+        { "q": "Will the matt black finish wear off?", "needs": { "kind": "gap", "why": "No finish-durability or salt-spray statement. Matt black is the finish buyers most distrust." } },
+        { "q": "Does it come with the spindle and screws?", "needs": { "kind": "spec", "label": "Spindle" } },
+        { "q": "Is it suitable for a bathroom with a thumbturn?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Can I get the handle and the lock case as one order?", "needs": { "kind": "gap", "why": "No cross-category bundle or 'commonly ordered with' content." } },
+        { "q": "Does it work on a 40mm door?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is it left or right handed?", "needs": { "kind": "spec", "label": "Handing" } }
+      ]
+    },
+    {
+      "slug": "night-latches-rim-locks",
+      "questions": [
+        { "q": "Does it lock automatically when the door shuts?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Can I open it from inside without a key in an emergency?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "What is the case size?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "How many keys are supplied?", "needs": { "kind": "spec", "label": "Key options" } },
+        { "q": "Will it fit a door that opens outwards?", "needs": { "kind": "spec", "label": "Handing" } },
+        { "q": "Is the cylinder replaceable with a euro one?", "needs": { "kind": "spec", "label": "Cylinder" } },
+        { "q": "What is the backset from the door edge?", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "Is the body brass or painted steel?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "Does it come with the strike box for the frame?", "needs": { "kind": "spec", "label": "Strike" } },
+        { "q": "Can it be keyed alike across a block of flats?", "needs": { "kind": "spec", "label": "Keying" } }
+      ]
+    },
+    {
+      "slug": "lock-cylinders",
+      "questions": [
+        { "q": "What lengths do you have — 70mm, 80mm?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "Is it a euro profile or an oval?", "needs": { "kind": "spec", "label": "Type" } },
+        { "q": "Can you supply them keyed alike?", "needs": { "kind": "spec", "label": "Keying" } },
+        { "q": "How many pins? Is it anti-drill or anti-bump?", "needs": { "kind": "gap", "why": "No security-feature spec on cylinders. This is the deciding question in the category." } },
+        { "q": "Is it double cylinder or thumbturn on one side?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Is the body brass?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "Can I order a master key system for a whole project?", "needs": { "kind": "faq", "match": "master key" } },
+        { "q": "How many keys per cylinder?", "needs": { "kind": "spec", "label": "Key options" } },
+        { "q": "Do the offsets come in 30/40, 35/45?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "Do you have a European standard certification for these?", "needs": { "kind": "gap", "why": "No EN 1303 statement. Tenders in Europe and Latin America ask for it by number." } }
+      ]
+    },
+    {
+      "slug": "door-closers",
+      "questions": [
+        { "q": "What door weight and width will it handle?", "needs": { "kind": "spec", "label": "Capacity" } },
+        { "q": "Is the closing speed adjustable?", "needs": { "kind": "spec", "label": "Feature" } },
+        { "q": "Does it have hold-open?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Is this a floor spring or an overhead closer?", "needs": { "kind": "spec", "label": "Type" } },
+        { "q": "What is the maximum opening angle?", "needs": { "kind": "spec", "label": "Max opening angle" } },
+        { "q": "Can it be used on a fire door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Will it leak oil in a hot climate?", "needs": { "kind": "gap", "why": "No temperature-range statement. Buyers in Gulf and Latin American markets ask this specifically." } },
+        { "q": "Is it EN 1154 certified, and what power size?", "needs": { "kind": "gap", "why": "The EN 1154 report on file belongs to another company and was removed. We have no closer certification to state — say so rather than staying silent." } },
+        { "q": "Does it suit a glass door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "What is included — arm, cover, fixing plate?", "needs": { "kind": "gap", "why": "No box-contents statement for closers." } }
+      ]
+    },
+    {
+      "slug": "deadbolts",
+      "questions": [
+        { "q": "Single or double cylinder?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "How far does the bolt throw?", "needs": { "kind": "spec", "label": "Deadbolt throw" } },
+        { "q": "What backset?", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "What door thickness?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is the bolt hardened against sawing?", "needs": { "kind": "gap", "why": "No security-feature detail. The whole point of a deadbolt." } },
+        { "q": "Can it be keyed alike with the knob lock on the same door?", "needs": { "kind": "spec", "label": "Keying" } },
+        { "q": "Is the strike reinforced for the frame?", "needs": { "kind": "spec", "label": "Strike" } },
+        { "q": "What finishes?", "needs": { "kind": "spec", "label": "Finish" } },
+        { "q": "Does it fit a standard 54mm cross bore?", "needs": { "kind": "spec", "label": "Cross bore" } },
+        { "q": "Only seven models — is that the whole range?", "needs": { "kind": "gap", "why": "Deadbolts is our thinnest category at 7 records. Either the range is thin or the catalogue is incomplete; a buyer cannot tell." } }
+      ]
+    },
+    {
+      "slug": "brass-steel-hinges",
+      "questions": [
+        { "q": "What sizes do you have — 4 inch, 5 inch?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "How thick is the leaf?", "needs": { "kind": "spec", "label": "Thickness" } },
+        { "q": "Ball bearing or plain?", "needs": { "kind": "spec", "label": "Type" } },
+        { "q": "Is it solid brass or brass plated steel?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "How many hinges per door do I need?", "needs": { "kind": "gap", "why": "No selection guidance. An easy explainer that answer engines would quote." } },
+        { "q": "What door weight will three of these carry?", "needs": { "kind": "gap", "why": "No load rating on hinges." } },
+        { "q": "Are they fire rated?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Do the screws come with them?", "needs": { "kind": "gap", "why": "No box-contents statement." } },
+        { "q": "Are they sold in pairs or singly?", "needs": { "kind": "gap", "why": "Unit of sale is not stated anywhere and it changes the quoted price by 2x." } },
+        { "q": "Will stainless ones rust near the coast?", "needs": { "kind": "gap", "why": "No corrosion-grade statement (304 vs 201 vs 316), which is exactly what coastal buyers ask." } }
+      ]
+    },
+    {
+      "slug": "stainless-steel-handles",
+      "questions": [
+        { "q": "What grade of stainless — 304 or 201?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "What is the overall length and the fixing centres?", "needs": { "kind": "spec", "label": "Fixing centre" } },
+        { "q": "What tube diameter?", "needs": { "kind": "spec", "label": "Tube diameter" } },
+        { "q": "Will it fit a glass door, and what glass thickness?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Is it back to back or single sided?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Satin or mirror polish?", "needs": { "kind": "spec", "label": "Finish" } },
+        { "q": "How far does it stand off the door?", "needs": { "kind": "spec", "label": "Standoff" } },
+        { "q": "Will it corrode in a swimming pool or coastal building?", "needs": { "kind": "gap", "why": "No corrosion-grade statement, and 35 records in this category are exactly where it matters." } },
+        { "q": "Do the fixings come with it?", "needs": { "kind": "gap", "why": "No box-contents statement." } },
+        { "q": "Can you make a custom length for our project?", "needs": { "kind": "spec", "label": "Customization" } }
+      ]
+    },
+    {
+      "slug": "glass-door-accessories",
+      "questions": [
+        { "q": "What glass thickness do the patch fittings take — 10mm, 12mm?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Do I need a floor spring with these patch fittings?", "needs": { "kind": "gap", "why": "No cross-category compatibility content between patch fittings and floor springs, though we sell both." } },
+        { "q": "Is the fitting stainless or aluminium with a cover?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "Top patch, bottom patch, corner — which do I need for one door?", "needs": { "kind": "gap", "why": "No assembly or set-composition guide. A frameless door needs a specific combination." } },
+        { "q": "What is the handle length for a glass door?", "needs": { "kind": "spec", "label": "Length" } },
+        { "q": "Does it come with the glass gaskets?", "needs": { "kind": "gap", "why": "No box-contents statement." } },
+        { "q": "Can it take a lock?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "What finish options are there?", "needs": { "kind": "spec", "label": "Finish" } },
+        { "q": "Is it suitable for a shopfront that gets heavy use?", "needs": { "kind": "spec", "label": "Cycle life" } },
+        { "q": "Do you supply the whole set for one door as a package?", "needs": { "kind": "gap", "why": "Same set-composition gap; the buyer wants one line on a quote, not eight." } }
+      ]
+    },
+    {
+      "slug": "bathroom-accessories",
+      "questions": [
+        { "q": "Is it stainless or chrome plated brass?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "What are the dimensions?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "Is it wall mounted, and do fixings come with it?", "needs": { "kind": "spec", "label": "Installation" } },
+        { "q": "Will the finish survive a humid bathroom?", "needs": { "kind": "gap", "why": "No corrosion or humidity statement on 45 records in a category defined by humidity." } },
+        { "q": "Can I buy a matching set — towel bar, hook, paper holder?", "needs": { "kind": "gap", "why": "No series or matching-set grouping, though the catalogue clearly contains families." } },
+        { "q": "Is it suitable for a hotel?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "What finishes?", "needs": { "kind": "spec", "label": "Finish" } },
+        { "q": "Is it concealed fixing or visible screws?", "needs": { "kind": "spec", "label": "Installation" } },
+        { "q": "What projection from the wall?", "needs": { "kind": "spec", "label": "Projection" } },
+        { "q": "Do you do grab rails rated for disabled access?", "needs": { "kind": "gap", "why": "Accessibility products are a distinct tender requirement and we say nothing about them." } }
+      ]
+    },
+    {
+      "slug": "grip-handle-sets",
+      "questions": [
+        { "q": "What are the fixing centres on the plate?", "needs": { "kind": "spec", "label": "Fixing centre" } },
+        { "q": "Does it include the lock, or just the handle set?", "needs": { "kind": "gap", "why": "No box-contents statement; this category is the one most often mis-ordered because of it." } },
+        { "q": "What door thickness?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is it for an entrance door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Is it handed?", "needs": { "kind": "spec", "label": "Handing" } },
+        { "q": "What is the plate material and finish?", "needs": { "kind": "spec", "label": "Material" } },
+        { "q": "Can it take a euro cylinder?", "needs": { "kind": "spec", "label": "Cylinder" } },
+        { "q": "What is the backset?", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "Can I get a matching interior lever on the other side?", "needs": { "kind": "gap", "why": "No matching-set content across grip sets and lever handles." } },
+        { "q": "Only eleven models — do you have more?", "needs": { "kind": "gap", "why": "Thin category (11 records); a buyer cannot tell if that is the range or the publishing gap." } }
+      ]
+    },
+    {
+      "slug": "hardware-accessories",
+      "questions": [
+        { "q": "What viewing angle does the door viewer give?", "needs": { "kind": "spec", "label": "Viewing Angle" } },
+        { "q": "What door thickness does the viewer suit?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "How long is the flush bolt?", "needs": { "kind": "spec", "label": "Length" } },
+        { "q": "Is the door stopper floor or wall mounted?", "needs": { "kind": "spec", "label": "Installation" } },
+        { "q": "Do you have a power transfer for an electric strike?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Is the indicator a vacant/engaged type for a toilet?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Are the house numbers stainless and how big?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "Is the security guard chain or bar type?", "needs": { "kind": "spec", "label": "Type" } },
+        { "q": "This category has fifty different things in it — how do I find what I need?", "needs": { "kind": "gap", "why": "Fifty unlike products under one heading. Nine sub-categories exist as filters but the category page does not lead with them." } },
+        { "q": "Do you have magnetic catches and door seals too?", "needs": { "kind": "gap", "why": "Range boundaries are not stated; a buyer cannot tell what we do NOT make." } }
+      ]
+    },
+    {
+      "slug": "sliding-hook-locks",
+      "questions": [
+        { "q": "Is this for a sliding door or a pocket door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "What backset?", "needs": { "kind": "spec", "label": "Backset" } },
+        { "q": "Does the hook engage automatically?", "needs": { "kind": "spec", "label": "Function" } },
+        { "q": "Can it take a euro cylinder?", "needs": { "kind": "spec", "label": "Cylinder" } },
+        { "q": "What door thickness?", "needs": { "kind": "spec", "label": "Door thickness" } },
+        { "q": "Is the strike included for the jamb?", "needs": { "kind": "spec", "label": "Strike" } },
+        { "q": "What is the case size?", "needs": { "kind": "spec", "label": "Size" } },
+        { "q": "Is it suitable for an aluminium sliding door?", "needs": { "kind": "spec", "label": "Application" } },
+        { "q": "Only three models — is that everything?", "needs": { "kind": "gap", "why": "Smallest category at 3 records. Either state that it is a niche line or expand it." } },
+        { "q": "Do you have the matching handle for a sliding door?", "needs": { "kind": "gap", "why": "No matching-set content." } }
+      ]
+    }
+  ]
+}
