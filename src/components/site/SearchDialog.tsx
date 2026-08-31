@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import {
+  suggestedCategories,
+  suggestedProducts,
+  suggestionHref,
+  suggestionLabel,
+} from "@/data/search-suggestions";
 
 /**
  * Site search.
@@ -88,8 +94,26 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
   const restoreFocusTo = useRef<Element | null>(null);
 
   const t = locale === "es"
-    ? { heading: "Introduce tu búsqueda", label: "Buscar", close: "Cerrar", empty: "Sin resultados", loading: "Cargando…" }
-    : { heading: "Enter your search term", label: "Search", close: "Close", empty: "No results", loading: "Loading…" };
+    ? {
+        heading: "Introduce tu búsqueda",
+        label: "Buscar",
+        close: "Cerrar",
+        empty: "Sin resultados",
+        loading: "Cargando…",
+        placeholder: "Modelo, categoría o tipo de puerta",
+        browse: "Categorías principales",
+        popular: "Modelos más consultados",
+      }
+    : {
+        heading: "Enter your search term",
+        label: "Search",
+        close: "Close",
+        empty: "No results",
+        loading: "Loading…",
+        placeholder: "Model, category or door type",
+        browse: "Main categories",
+        popular: "Most-requested models",
+      };
 
   /*
     Loading is derived, not stored. An open dialog with no index yet IS the loading
@@ -202,13 +226,22 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         className="absolute inset-0 cursor-pointer bg-[rgba(246,246,246,0.92)]"
       />
 
-      <div className="relative mt-[12vh] w-full max-w-[720px] px-24">
+      {/*
+        The panel scrolls, the page behind it does not (body overflow is locked while the
+        dialog is open). Before the suggestions existed the panel was always short enough
+        to fit; now it is not, and on a 812px phone everything below the second suggested
+        model was simply unreachable — no scroll container, no way down.
+
+        4vh on a phone rather than 12vh for the same reason: vertical room is the scarce
+        thing there, and the panel is the only thing on screen.
+      */}
+      <div className="relative mt-[4vh] w-full max-w-[720px] px-16 sm:mt-[12vh] sm:px-24">
         <div
           ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-labelledby="search-heading"
-          className="hard-shadow-panel bg-surface p-32"
+          className="hard-shadow-panel max-h-[92vh] overflow-y-auto bg-surface p-24 sm:max-h-[76vh] sm:p-32"
         >
           <div className="flex items-start justify-between gap-24">
             <h2 id="search-heading" className="text-h3 text-ink">
@@ -251,6 +284,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 autoComplete="off"
+                placeholder={t.placeholder}
                 className="w-full appearance-none bg-transparent text-c1 text-ink outline-none placeholder:text-ink-tertiary"
               />
               <button
@@ -265,7 +299,56 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
             </div>
           </form>
 
-          <div aria-live="polite" className="mt-24 max-h-[46vh] overflow-y-auto">
+          {/*
+            Before anyone types. An empty box asked the visitor to already know a model
+            number or a category name — most arrivals know neither, they know "the push
+            bar for a fire door". Also shown when a query returns nothing, because that is
+            exactly the moment a visitor needs somewhere else to go.
+
+            Rendered outside the aria-live region: it is standing content, not a response
+            to what was typed, and announcing it on open would talk over the input label.
+          */}
+          {!query.trim() || (!loading && !results.length) ? (
+            <div className="mt-32 border-t border-line pt-24">
+              <p className="drawer-eyebrow">{t.browse}</p>
+              <ul className="mt-16 flex flex-wrap gap-8">
+                {suggestedCategories.map((suggestion) => (
+                  <li key={suggestion.href}>
+                    <Link
+                      href={suggestionHref(suggestion, locale)}
+                      onClick={close}
+                      className="search-chip"
+                    >
+                      {suggestionLabel(suggestion, locale)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="drawer-eyebrow mt-32">{t.popular}</p>
+              <ul className="mt-8 divide-y divide-line border-t border-line">
+                {suggestedProducts.map((suggestion) => (
+                  <li key={suggestion.href}>
+                    <Link
+                      href={suggestionHref(suggestion, locale)}
+                      onClick={close}
+                      className="drawer-link"
+                    >
+                      <span>{suggestionLabel(suggestion, locale)}</span>
+                      <span aria-hidden="true" className="drawer-chevron">
+                        ›
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
+          {/* One scroll container, not two. The panel above scrolls now, and a nested
+              46vh box inside it meant a drag near the results either moved the wrong list
+              or hit the end of the inner one and stopped. */}
+          <div aria-live="polite" className="mt-24">
             {loading ? <p className="text-c2 text-ink-secondary">{t.loading}</p> : null}
 
             {!loading && query.trim() && !results.length ? (
