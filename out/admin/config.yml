@@ -485,7 +485,8 @@ collections:
             label: "联系方式"
             widget: "object"
             fields:
-              - { name: "email", label: "联系邮箱", widget: "string", required: false }
+              - { name: "email", label: "联系邮箱", widget: "string", required: false, hint: "销售/商务邮箱，显示在页脚并写入结构化数据 contactPoint。" }
+              - { name: "technicalEmail", label: "技术咨询邮箱", widget: "string", required: false, hint: "显示在产品页询价按钮下方；留空则产品页回落到上面的联系邮箱。" }
               - { name: "phone", label: "电话", widget: "string", required: false }
               - { name: "address", label: "公司地址", widget: "string", required: false }
               - { name: "city", label: "城市", widget: "string", required: false }
