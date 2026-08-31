@@ -231,9 +231,18 @@ function summaryFrom(product, rows) {
 
   const finish = get("Finish");
 
+  const noun = NOUN[product.categoryPath[0]] ?? product.name.toLowerCase();
+
   const head = [];
-  if (material && short(material)) head.push(soften(asAdjective(material)));
-  head.push(NOUN[product.categoryPath[0]] ?? product.name.toLowerCase());
+  /*
+    ...and not when the noun already contains it. "stainless-steel-handles" has the head
+    noun "stainless steel lever handle", so prefixing its Material produced "a stainless
+    steel stainless steel lever handle". The category name and the material are the same
+    fact here; say it once.
+  */
+  const adjective = material && short(material) ? soften(asAdjective(material)) : null;
+  if (adjective && !noun.includes(adjective)) head.push(adjective);
+  head.push(noun);
   // The finish is what separates 3431 SNET from 6491 ABET, so it belongs in the sentence
   // rather than only in the table — otherwise the whole family reads identically.
   // ...but not when it restates the material: "a stainless steel knob lock in stainless
@@ -242,6 +251,17 @@ function summaryFrom(product, rows) {
   if (finish && finishAdds && short(finish)) head.push(`in ${soften(finish)}`);
   if (centre && backset) head.push(`with ${centre} centre distance and ${backset} backset`);
   else if (backset) head.push(`with ${backset} backset`);
+  else {
+    /*
+      Where a family shares everything else, the drawing is the only differentiator left:
+      32 stainless handles were identical until their lever length and rose came off the
+      CAD. Only one measurement goes in the sentence — the rest stay in the table.
+    */
+    const lever = get("Lever length");
+    const rose = get("Rose diameter") ?? get("Rose size");
+    if (lever && rose) head.push(`with a ${lever} lever on a ${rose} rose`);
+    else if (lever) head.push(`with a ${lever} lever`);
+  }
 
   const phrase = head.join(" ");
   let text = `${article(phrase)} ${phrase}`;
