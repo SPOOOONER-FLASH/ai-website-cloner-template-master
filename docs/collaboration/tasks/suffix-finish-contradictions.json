@@ -1,0 +1,351 @@
+{
+  "generatedBy": "see docs/collaboration/tasks/model-suffix-codes.md",
+  "note": "Products whose model suffix names a finish that their own Finish row does not contain. Same failure as the five glass-door handles: one family-wide finish menu copied onto every variant, so the variant loses its own finish. NOT a list of edits to apply blindly — the suffix could be wrong on some of these. Confirm per product before writing, and never overwrite a hero image the client chose without checking the file exists.",
+  "count": 28,
+  "products": [
+    {
+      "model": "45BN",
+      "slug": "45bn-lock-cylinder",
+      "code": "BN",
+      "finishRow": "PB. CP. SS. SC. AB. AC",
+      "heroImage": "/images/products/45bn-lock-cylinder.webp",
+      "gallery": [
+        "/images/products/45bn-lock-cylinder-2.webp",
+        "/images/products/45bn-lock-cylinder-3.webp",
+        "/images/products/45bn-lock-cylinder-4.webp",
+        "/images/products/45bn-lock-cylinder-5.webp",
+        "/images/products/45bn-lock-cylinder-6.webp"
+      ]
+    },
+    {
+      "model": "575 ABET",
+      "slug": "575-abet-tubular-lock",
+      "code": "AB",
+      "finishRow": "AB/AC/PB/SB/SS/SP/SC,other available",
+      "heroImage": "/images/products/575-abet-tubular-lock.webp",
+      "gallery": [
+        "/images/products/575-abet-tubular-lock-2.webp",
+        "/images/products/575-abet-tubular-lock-3.webp",
+        "/images/products/575-abet-tubular-lock-4.webp",
+        "/images/products/575-abet-tubular-lock-5.webp"
+      ]
+    },
+    {
+      "model": "575 CPET",
+      "slug": "575-cpet-tubular-lock",
+      "code": "CP",
+      "finishRow": "AB/AC/PB/SB/SS/SP/SC,other available",
+      "heroImage": "/images/products/575-cpet-tubular-lock.webp",
+      "gallery": [
+        "/images/products/575-cpet-tubular-lock-2.webp",
+        "/images/products/575-cpet-tubular-lock-3.webp",
+        "/images/products/575-cpet-tubular-lock-4.webp",
+        "/images/products/575-cpet-tubular-lock-5.webp"
+      ]
+    },
+    {
+      "model": "576 PBPS",
+      "slug": "576-pbps-tubular-lock",
+      "code": "PB",
+      "finishRow": "PB brass polish",
+      "heroImage": null,
+      "gallery": []
+    },
+    {
+      "model": "5807 SSCL",
+      "slug": "5807-sscl-commercial-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/5807-sscl-commercial-lock.webp",
+      "gallery": [
+        "/images/products/5807-sscl-commercial-lock-2.webp",
+        "/images/products/5807-sscl-commercial-lock-3.webp",
+        "/images/products/5807-sscl-commercial-lock-4.webp",
+        "/images/products/5807-sscl-commercial-lock-5.webp",
+        "/images/products/5807-sscl-commercial-lock-6.webp"
+      ]
+    },
+    {
+      "model": "5807 SSCR",
+      "slug": "5807-sscr-commercial-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/5807-sscr-commercial-lock.webp",
+      "gallery": [
+        "/images/products/5807-sscr-commercial-lock-2.webp"
+      ]
+    },
+    {
+      "model": "5807 SSEL",
+      "slug": "5807-ssel-commercial-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/5807-ssel-commercial-lock.webp",
+      "gallery": []
+    },
+    {
+      "model": "5807 SSR",
+      "slug": "5807-ssr-commercial-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/5807-ssr-commercial-lock.webp",
+      "gallery": [
+        "/images/products/5807-ssr-commercial-lock-2.webp",
+        "/images/products/5807-ssr-commercial-lock-3.webp"
+      ]
+    },
+    {
+      "model": "587 MBET",
+      "slug": "587-mbet-light-duty-cylindrical-lock",
+      "code": "MB",
+      "finishRow": "Satin nickel, chrome, antique brass, polished brass,all available",
+      "heroImage": "/images/products/587-mbet-light-duty-cylindrical-lock.webp",
+      "gallery": [
+        "/images/products/587-mbet-light-duty-cylindrical-lock-4.webp"
+      ]
+    },
+    {
+      "model": "587 SSBK",
+      "slug": "587-ssbk-light-duty-cylindrical-lock",
+      "code": "SS",
+      "finishRow": "Satin nickel, chrome, antique brass, polished brass,all available",
+      "heroImage": "/images/products/587-ssbk-light-duty-cylindrical-lock.webp",
+      "gallery": [
+        "/images/products/587-ssbk-light-duty-cylindrical-lock-2.webp",
+        "/images/products/587-ssbk-light-duty-cylindrical-lock-3.webp",
+        "/images/products/587-ssbk-light-duty-cylindrical-lock-4.webp"
+      ]
+    },
+    {
+      "model": "587 SSET",
+      "slug": "587-sset-light-duty-cylindrical-lock",
+      "code": "SS",
+      "finishRow": "Satin nickel, chrome, antique brass, polished brass,all available",
+      "heroImage": "/images/products/587-sset-light-duty-cylindrical-lock.webp",
+      "gallery": [
+        "/images/products/587-sset-light-duty-cylindrical-lock-2.webp",
+        "/images/products/587-sset-light-duty-cylindrical-lock-3.webp",
+        "/images/products/587-sset-light-duty-cylindrical-lock-4.webp",
+        "/images/products/587-sset-light-duty-cylindrical-lock-5.webp"
+      ]
+    },
+    {
+      "model": "5870 ACET",
+      "slug": "5870-acet-heavy-duty-cylindrical-lock",
+      "code": "AC",
+      "finishRow": "Satin nickel, chrome, antique brass, polished brass,all available",
+      "heroImage": "/images/products/5870-acet-heavy-duty-cylindrical-lock.webp",
+      "gallery": [
+        "/images/products/5870-acet-heavy-duty-cylindrical-lock-2.webp",
+        "/images/products/5870-acet-heavy-duty-cylindrical-lock-3.webp",
+        "/images/products/5870-acet-heavy-duty-cylindrical-lock-4.webp"
+      ]
+    },
+    {
+      "model": "5870 SSCC",
+      "slug": "5870-sscc-commercial-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/5870-sscc-commercial-lock.webp",
+      "gallery": [
+        "/images/products/5870-sscc-commercial-lock-2.webp",
+        "/images/products/5870-sscc-commercial-lock-3.webp"
+      ]
+    },
+    {
+      "model": "5870 SSPS",
+      "slug": "5870-ssps-heavy-duty-cylindrical-lock",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": null,
+      "gallery": []
+    },
+    {
+      "model": "5874 ACET",
+      "slug": "5874-acet-heavy-duty-cylindrical-lock",
+      "code": "AC",
+      "finishRow": "Satin nickel, chrome, antique brass, polished brass,all available",
+      "heroImage": "/images/products/5874-acet-heavy-duty-cylindrical-lock.webp",
+      "gallery": [
+        "/images/products/5874-acet-heavy-duty-cylindrical-lock-2.webp",
+        "/images/products/5874-acet-heavy-duty-cylindrical-lock-3.webp",
+        "/images/products/5874-acet-heavy-duty-cylindrical-lock-4.webp"
+      ]
+    },
+    {
+      "model": "65SN",
+      "slug": "65sn-lock-cylinder",
+      "code": "SN",
+      "finishRow": "PB. CP. SS. SC. AB. AC",
+      "heroImage": "/images/products/65sn-lock-cylinder.webp",
+      "gallery": [
+        "/images/products/65sn-lock-cylinder-2.webp",
+        "/images/products/65sn-lock-cylinder-3.webp",
+        "/images/products/65sn-lock-cylinder-4.webp",
+        "/images/products/65sn-lock-cylinder-5.webp",
+        "/images/products/65sn-lock-cylinder-6.webp",
+        "/images/products/65sn-lock-cylinder-7.webp",
+        "/images/products/65sn-lock-cylinder-8.webp"
+      ]
+    },
+    {
+      "model": "70MB",
+      "slug": "70mb-lock-cylinder",
+      "code": "MB",
+      "finishRow": "PB. CP. SS. SC. AB. AC",
+      "heroImage": "/images/products/70mb-lock-cylinder.webp",
+      "gallery": [
+        "/images/products/70mb-lock-cylinder-2.webp",
+        "/images/products/70mb-lock-cylinder-3.webp",
+        "/images/products/70mb-lock-cylinder-4.webp",
+        "/images/products/70mb-lock-cylinder-5.webp"
+      ]
+    },
+    {
+      "model": "70SN",
+      "slug": "70sn-lock-cylinder",
+      "code": "SN",
+      "finishRow": "PB. CP. SS. SC. AB. AC",
+      "heroImage": "/images/products/70sn-lock-cylinder.webp",
+      "gallery": [
+        "/images/products/70sn-lock-cylinder-2.webp",
+        "/images/products/70sn-lock-cylinder-3.webp",
+        "/images/products/70sn-lock-cylinder-4.webp",
+        "/images/products/70sn-lock-cylinder-5.webp",
+        "/images/products/70sn-lock-cylinder-6.webp",
+        "/images/products/70sn-lock-cylinder-7.webp",
+        "/images/products/70sn-lock-cylinder-8.webp",
+        "/images/products/70sn-lock-cylinder-9.webp",
+        "/images/products/70sn-lock-cylinder-10.webp",
+        "/images/products/70sn-lock-cylinder-11.webp",
+        "/images/products/70sn-lock-cylinder-12.webp",
+        "/images/products/70sn-lock-cylinder-13.webp",
+        "/images/products/70sn-lock-cylinder-14.webp",
+        "/images/products/70sn-lock-cylinder-15.webp",
+        "/images/products/70sn-lock-cylinder-16.webp",
+        "/images/products/70sn-lock-cylinder-17.webp",
+        "/images/products/70sn-lock-cylinder-18.webp",
+        "/images/products/70sn-lock-cylinder-19.webp",
+        "/images/products/70sn-lock-cylinder-20.webp",
+        "/images/products/70sn-lock-cylinder-21.webp",
+        "/images/products/70sn-lock-cylinder-22.webp",
+        "/images/products/70sn-lock-cylinder-23.webp",
+        "/images/products/70sn-lock-cylinder-24.webp"
+      ]
+    },
+    {
+      "model": "804 PBET",
+      "slug": "804-pbet-lever-handle",
+      "code": "PB",
+      "finishRow": "AB/AC/PB/SB/SS/SP/SC all available",
+      "heroImage": null,
+      "gallery": []
+    },
+    {
+      "model": "805PBET",
+      "slug": "805pbet-lever-handle",
+      "code": "PB",
+      "finishRow": "AB/AC/PB/SB/SS/SP/SC all available",
+      "heroImage": null,
+      "gallery": []
+    },
+    {
+      "model": "80SN",
+      "slug": "80sn-lock-cylinder",
+      "code": "SN",
+      "finishRow": "PB. CP. SS. SC. AB. AC",
+      "heroImage": "/images/products/80sn-lock-cylinder.webp",
+      "gallery": [
+        "/images/products/80sn-lock-cylinder-2.webp",
+        "/images/products/80sn-lock-cylinder-3.webp",
+        "/images/products/80sn-lock-cylinder-4.webp",
+        "/images/products/80sn-lock-cylinder-5.webp",
+        "/images/products/80sn-lock-cylinder-6.webp",
+        "/images/products/80sn-lock-cylinder-7.webp"
+      ]
+    },
+    {
+      "model": "881 SS",
+      "slug": "881-ss-sliding-hook-lock",
+      "code": "SS",
+      "finishRow": "SS/AC/AB/BN available",
+      "heroImage": "/images/products/881-ss-sliding-hook-lock.webp",
+      "gallery": [
+        "/images/products/881-ss-sliding-hook-lock-2.webp",
+        "/images/products/881-ss-sliding-hook-lock-3.webp",
+        "/images/products/881-ss-sliding-hook-lock-4.webp",
+        "/images/products/881-ss-sliding-hook-lock-5.webp",
+        "/images/products/881-ss-sliding-hook-lock-6.webp"
+      ]
+    },
+    {
+      "model": "8827 SSET",
+      "slug": "8827-sset-lever-handle",
+      "code": "SS",
+      "finishRow": "Satin / Chrome / Black / Gold (customizable",
+      "heroImage": "/images/products/8827-sset-lever-handle.webp",
+      "gallery": [
+        "/images/products/8827-sset-lever-handle-2.webp"
+      ]
+    },
+    {
+      "model": "8828 SSET",
+      "slug": "8828-sset-lever-handle",
+      "code": "SS",
+      "finishRow": "Satin / Chrome / Black / Gold (customizable",
+      "heroImage": "/images/products/8828-sset-lever-handle.webp",
+      "gallery": [
+        "/images/products/8828-sset-lever-handle-2.webp"
+      ]
+    },
+    {
+      "model": "DV08 SN",
+      "slug": "dv08-sn-door-viewer",
+      "code": "SN",
+      "finishRow": "CP, PB, SC, SN, N, AB, AC, ORB",
+      "heroImage": "/images/products/dv08-sn-door-viewer.webp",
+      "gallery": [
+        "/images/products/dv08-sn-door-viewer-2.webp",
+        "/images/products/dv08-sn-door-viewer-3.webp",
+        "/images/products/dv08-sn-door-viewer-4.webp",
+        "/images/products/dv08-sn-door-viewer-5.webp",
+        "/images/products/dv08-sn-door-viewer-6.webp"
+      ]
+    },
+    {
+      "model": "FB001 AC",
+      "slug": "fb001-ac-door-flush-bolt",
+      "code": "AC",
+      "finishRow": "BP/AB/AC/NP/NB/CB/CP/SN/BC",
+      "heroImage": "/images/products/fb001-ac-door-flush-bolt.webp",
+      "gallery": [
+        "/images/products/fb001-ac-door-flush-bolt-2.webp"
+      ]
+    },
+    {
+      "model": "GL125 SS",
+      "slug": "gl125-ss-glass-door-patch-fittings",
+      "code": "SS",
+      "finishRow": "SS",
+      "heroImage": "/images/products/gl125-ss-glass-door-patch-fittings.webp",
+      "gallery": [
+        "/images/products/gl125-ss-glass-door-patch-fittings-2.webp",
+        "/images/products/gl125-ss-glass-door-patch-fittings-3.webp",
+        "/images/products/gl125-ss-glass-door-patch-fittings-4.webp",
+        "/images/products/gl125-ss-glass-door-patch-fittings-6.webp"
+      ]
+    },
+    {
+      "model": "S02 CP",
+      "slug": "s02-cp-sliding-hook-lock",
+      "code": "CP",
+      "finishRow": "SS/AC/AB/BN available",
+      "heroImage": "/images/products/s02-cp-sliding-hook-lock.webp",
+      "gallery": [
+        "/images/products/s02-cp-sliding-hook-lock-2.webp",
+        "/images/products/s02-cp-sliding-hook-lock-3.webp",
+        "/images/products/s02-cp-sliding-hook-lock-4.webp"
+      ]
+    }
+  ]
+}

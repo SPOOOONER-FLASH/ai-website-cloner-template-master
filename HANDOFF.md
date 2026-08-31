@@ -129,29 +129,12 @@ ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文�
 甲方确认后期会给：**尺寸 / 用途 / finish**，届时每页差异化。
 到货后跑 `npm run content:enrich` 之前先扩 `CITED` 表，别手改 431 个 JSON。
 
-## 八·六、后缀码：甲方确认一次就能差异化 85 个页面
+## 八·六、后缀码
 
-目录里自带图例，**不是猜的**：
-
-| 证据 | 出处 |
-|---|---|
-| `PB=Polish Brass` | 6094 PBBK 的 Finish 字段 |
-| `SN=Satin Nickel` | 70710 SN |
-| `SC= Satin chrome` | 70610 SC |
-| `BN Black Nickle` | 9211 BNAC |
-| `Satin Stainless Steel (SS)` | 9080E |
-| W = 白色 | 甲方微信 2026-08-27 |
-| F = 喷木纹球 | 甲方确认 2026-08-28 |
-| WL = 白色喷漆球 | 甲方确认 2026-08-28 |
-| SP = 抛亮光 / Shiny Polish | 甲方确认 2026-08-28 |
-| ET = 门锁功能 / Entrance Lock | 甲方确认 2026-08-28 |
-| PS = 通道功能 / Passage Lock | 甲方确认 2026-08-28 |
-| BK = 浴室功能 / Privacy Lock | 甲方确认 2026-08-28 |
-
-**已确认**：PB / AB / AC / SN / SC / CP / SS / SSS / PSS / BN / SB / W / F / WL / SP / ET / PS / BK。
-下一步单独提交后缀解析：用 F / WL / SP 选择对应首图及补 Finish；用 ET / PS / BK
-补 Function。先生成 dry-run 对照表，逐条校验实际存在的图片文件，再写产品 JSON，不能仅凭
-字符串批量覆盖现有甲方已选首图。
+**唯一口径：`docs/collaboration/tasks/model-suffix-codes.md`** —— 含证据分级、
+已确认 18 + 1 个码（2026-08-31 新增 MB = Matt Black，证据 `564 MB` 自己的 Finish 字段）、
+7 个仍未确认的码，以及 **28 个型号的 Finish 行与自身后缀矛盾**的清单
+（`suffix-finish-contradictions.json`）。那 28 条是玻璃拉手 300mm 的同一类事故。
 
 ## 八·七、图纸里的尺寸：已做 27 个，筛选判据已解决
 
