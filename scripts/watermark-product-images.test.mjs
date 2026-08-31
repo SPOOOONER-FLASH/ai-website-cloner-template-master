@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { resolve } from "node:path";
 import test from "node:test";
 
 import {
@@ -104,25 +105,29 @@ test("adaptive placement chooses the quietest corner unless a legacy badge wins"
 });
 
 test("derived output preserves the relative product path", () => {
+  const fixtureRoot = resolve("tmp/codex-watermark-path-test");
+  const sourceRoot = resolve(fixtureRoot, "public/images/products");
+  const outputRoot = resolve(fixtureRoot, "output");
   const output = resolveSafeOutputPath(
-    "C:/repo/public/images/products/argentina-ar4/hyde-ar4-110.webp",
-    "C:/repo/public/images/products",
-    "C:/repo/tmp/codex-watermark-preview",
+    resolve(sourceRoot, "argentina-ar4/hyde-ar4-110.webp"),
+    sourceRoot,
+    outputRoot,
   );
 
   assert.equal(
     output.replaceAll("\\", "/"),
-    "C:/repo/tmp/codex-watermark-preview/argentina-ar4/hyde-ar4-110.webp",
+    resolve(outputRoot, "argentina-ar4/hyde-ar4-110.webp").replaceAll("\\", "/"),
   );
 });
 
 test("derived output rejects files outside the product image root", () => {
+  const fixtureRoot = resolve("tmp/codex-watermark-path-test");
   assert.throws(
     () =>
       resolveSafeOutputPath(
-        "C:/repo/public/images/editorial/hero.webp",
-        "C:/repo/public/images/products",
-        "C:/repo/tmp/codex-watermark-preview",
+        resolve(fixtureRoot, "public/images/editorial/hero.webp"),
+        resolve(fixtureRoot, "public/images/products"),
+        resolve(fixtureRoot, "output"),
       ),
     /outside the product image root/,
   );
