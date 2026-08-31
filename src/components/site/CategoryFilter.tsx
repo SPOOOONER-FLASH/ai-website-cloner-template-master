@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useSyncExternalStore } from "react";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { cn } from "@/lib/utils";
+import { categoryViewFromParams, categoryViewToParams } from "@/lib/catalogue-return";
 import { paginate, sortForDisplay } from "@/lib/product-finder";
+import { CatalogueReturnRestorer } from "./CatalogueNavigation";
 import { ProductCard } from "./ProductCard";
 import { Pagination } from "./Pagination";
 
@@ -17,6 +19,25 @@ interface CategoryFilterProps {
   products: Product[];
   options: FilterOption[];
   locale?: Locale;
+}
+
+const LOCATION_CHANGE_EVENT = "hyde:catalogue-location-change";
+
+function subscribeToLocation(listener: () => void) {
+  window.addEventListener("popstate", listener);
+  window.addEventListener(LOCATION_CHANGE_EVENT, listener);
+  return () => {
+    window.removeEventListener("popstate", listener);
+    window.removeEventListener(LOCATION_CHANGE_EVENT, listener);
+  };
+}
+
+function browserSearch() {
+  return window.location.search;
+}
+
+function serverSearch() {
+  return "";
 }
 
 /** The filter rail's own words. Product text comes from the records. */
@@ -55,8 +76,12 @@ const COPY = {
  */
 export function CategoryFilter({ products, options, locale = "en" }: CategoryFilterProps) {
   const t = COPY[locale];
-  const [active, setActive] = useState("all");
-  const [page, setPage] = useState(1);
+  const search = useSyncExternalStore(subscribeToLocation, browserSearch, serverSearch);
+  const validTypes = useMemo(() => new Set(options.map((option) => option.slug)), [options]);
+  const { active, page } = useMemo(
+    () => categoryViewFromParams(new URLSearchParams(search), validTypes),
+    [search, validTypes],
+  );
   const top = useRef<HTMLDivElement | null>(null);
 
   const visibleProducts = useMemo(
@@ -71,13 +96,24 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
 
   const current = paginate(visibleProducts, page);
 
-  const choose = (slug: string) => {
-    setActive(slug);
-    setPage(1); // a narrower filter can have fewer pages than the one being left
+  const setView = (nextActive: string, nextPage: number) => {
+    const params = categoryViewToParams(new URLSearchParams(window.location.search), {
+      active: nextActive,
+      page: nextPage,
+    });
+    const query = params.toString();
+    window.history.replaceState(
+      null,
+      "",
+      `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`,
+    );
+    window.dispatchEvent(new Event(LOCATION_CHANGE_EVENT));
   };
 
+  const choose = (slug: string) => setView(slug, 1);
+
   const goToPage = (next: number) => {
-    setPage(next);
+    setView(active, next);
     top.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -140,6 +176,7 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
               onChange={goToPage}
               label={t.pages}
             />
+            <CatalogueReturnRestorer readyKey={`${active}:${current.page}`} />
           </>
         ) : (
           <p className="mt-24 border-t border-line pt-24 text-c1 text-ink-secondary">

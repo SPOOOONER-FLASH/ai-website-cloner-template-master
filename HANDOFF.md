@@ -6,8 +6,11 @@
 但**没有部署到正式服务器**：GitHub 发布任务中的 `DEPLOY_HOST` 为空，公网
 `https://cantonlock.com/events/` 仍是旧 HTML；这不是 Cloudflare 单纯缓存问题。
 
-当前工作树另有约 **5,350** 个未提交路径，主要是产品 JSON 与 `out/`，属于其他会话/构建者的
-参数、水印和发布产物。**不要 restore、clean、批量 stage，也不要重新运行 `deploy:prep` 覆盖它们。**
+2026-08-31 后续源代码已加入产品返回记忆：同一浏览器会话内从详情返回英文/西语类目或
+Product Finder 时，恢复筛选、页码、原卡片与滚动位置；关闭会话后清除。`out/` 与正式站尚未更新。
+
+当前工作树另有 **5,164** 个未提交路径，核对时全部属于 `out/`，是其他会话/构建者的
+水印和发布产物。**不要 restore、clean、批量 stage，也不要重新运行 `deploy:prep` 覆盖它们。**
 先确认来源、审阅差异和发布 baton，再做下一次构建。
 
 下一位 Codex 的完整优先级、验收条件和未完成指令见：
@@ -60,6 +63,7 @@
 **已完成**：全站页面、**西语全目录 459 页**、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
 （20/页 + 分面折叠 + 独立滚动 + `1 2 3 … 22` 总页数提示）、全部 435 个产品链接服务端渲染（`ProductIndexList`）、阿里深链接、GA4 + Clarity、旧站 URL 301。
+产品详情返回记忆为 session-only：类目页与 Finder 的筛选、页码和原卡片滚动位置可恢复。
 
 **2026-08-28 已上线**：`HYDE Argentina AR-4` 首页市场橱窗、四款长期产品页、英西双语集合页、
 响应式营销图、ItemList/Breadcrumb JSON-LD、Sitemap/hreflang/llms.txt 与 IndexNow 提交。

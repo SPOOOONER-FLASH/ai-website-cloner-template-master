@@ -8,6 +8,7 @@ import { ArrowLink } from "./ArrowLink";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
+import { CatalogueReturnLink } from "./CatalogueNavigation";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
@@ -44,6 +45,7 @@ const COPY = {
     orEmail: "Or email us about this model:",
     home: "Home",
     products: "Products",
+    backToResults: "← Back to previous results",
     ask: "Ask a technical question",
     viewCertificate: "View certificate",
     noViews:
@@ -82,6 +84,7 @@ const COPY = {
     orEmail: "O escríbanos sobre este modelo:",
     home: "Inicio",
     products: "Productos",
+    backToResults: "← Volver a los resultados anteriores",
     ask: "Consultar a un ingeniero",
     viewCertificate: "Ver certificado",
     noViews:
@@ -168,6 +171,8 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   if (!product.modelTbc) quoteParams.set("model", product.model);
 
   const quoteHref = `${base}/contact/?${quoteParams.toString()}`;
+  const productHref = `${base}/products/${product.categoryPath[0]}/${product.slug}/`;
+  const categoryHref = `${base}/products/${product.categoryPath[0]}/`;
   const alibaba = alibabaLinkFor(product);
   const relatedHeading = related
     ? related.source === "curated"
@@ -194,10 +199,22 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
               {t.products}
             </Link>
             <span aria-hidden="true">/</span>
-            <span>{categoryName}</span>
+            <Link href={categoryHref} className="short-marker short-marker-compact hover:text-brand-hover">
+              {categoryName}
+            </Link>
           </nav>
 
-          <div className="col-span-full mt-24 xl:col-span-12">
+          <div className="col-span-full mt-16">
+            <CatalogueReturnLink
+              productHref={productHref}
+              fallbackHref={categoryHref}
+              className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
+            >
+              {t.backToResults}
+            </CatalogueReturnLink>
+          </div>
+
+          <div className="col-span-full mt-8 xl:col-span-12">
             <p className="text-c1 text-ink-secondary">{product.series}</p>
             {/*
               The H1 carries the model, because that is what a buyer types. 40 records are

@@ -1,8 +1,8 @@
-import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { cn } from "@/lib/utils";
+import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 interface ProductCardProps {
@@ -19,14 +19,15 @@ interface ProductCardProps {
 /** Shared catalogue card for listings and related products. */
 export function ProductCard({ product, className, priority, locale = "en" }: ProductCardProps) {
   const es = locale === "es";
+  const href = `${es ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`;
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   const heroImage = {
     ...product.heroImage,
     label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
   };
   return (
-    <Link
-      href={`${es ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
+    <CatalogueProductLink
+      href={href}
       className={cn(
         "hard-shadow-card group flex flex-col bg-surface",
         className,
@@ -48,7 +49,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
           {material.join(" · ")}
         </p>
       </div>
-    </Link>
+    </CatalogueProductLink>
   );
 }
 

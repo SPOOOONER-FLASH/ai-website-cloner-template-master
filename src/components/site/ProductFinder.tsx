@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Pagination } from "@/components/site/Pagination";
+import { CatalogueReturnRestorer } from "@/components/site/CatalogueNavigation";
 import {
   buildFacets,
   countActive,
@@ -297,6 +298,7 @@ export function ProductFinder({
               onChange={goToPage}
               label="Product pages"
             />
+            <CatalogueReturnRestorer readyKey={`finder:${current.page}:${current.from}`} />
           </>
         )}
       </section>

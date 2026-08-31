@@ -22,11 +22,8 @@
 ## 共享工作树警戒
 
 开始写交接时远端是 `fd87680c2`；本地另有已提交的 Claude 变更 `34664b516f`。
-在这两个已提交成果之上，`git status --porcelain` 仍有约 5,350 条：
-
-- 大量 `content/products/*.json`；
-- 大量已生成的 `out/`；
-- 可能属于 Stahlock 参数、水印批处理和另一位 release builder。
+后续复核时，`git status --porcelain` 有 5,164 条，全部位于 `out/`，属于水印批处理和
+另一位 release builder。此前的产品 JSON 已由其他会话提交，不再是当前脏树的一部分。
 
 这些都不是本次展会提交的文件。下一位必须先运行：
 
@@ -120,6 +117,9 @@ git log -5 -- docs/collaboration/agent-updates/
 AR-4 橱窗、新闻、Footer。重点查横向溢出、文字裁切、粘滞滚动、手势冲突、CLS、动画卡顿与
 `prefers-reduced-motion`。不得只在桌面截图验收。
 
+- 产品详情返回必须在同一浏览器会话内恢复来源（类目或 Product Finder）、筛选、页码、原卡片和
+  滚动位置；浏览器后退与页面内返回链接都要测，英文、西语都要测。关闭标签页/浏览器后不保留。
+
 ## P1：产品、类目、链接与证书
 
 ### Argentina AR-4 / Alibaba
@@ -184,7 +184,7 @@ npm run assets:watermark:check
 
 ## 下一位建议的执行顺序
 
-1. 保护并辨认 5,350 条脏树；确认 release baton。
+1. 保护 5,164 条 `out/` 脏树；确认 release baton。
 2. 恢复正式部署并上线 `1215dd7c2`，做公网验证。
 3. 按 Footer 精简与移动端阻断问题做一个小提交、一次部署。
 4. 分批人工修水印，每一类图片一个小提交；先产品白底图，再尺寸图，再生活场景。
