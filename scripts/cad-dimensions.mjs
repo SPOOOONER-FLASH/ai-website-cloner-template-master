@@ -341,6 +341,73 @@ const FROM_DRAWINGS = {
       ["Case depth", "40.5mm"],
     ],
   },
+
+  /*
+    ---- 2026-08-31 batch, read off the speckle ranking ---------------------
+    Opened by rank from docs/collaboration/tasks/cad-drawing-ranked.json.
+    Every figure below is printed on the drawing; nothing is inferred from a
+    sibling model. Where a drawing dimensions something it does not name, the
+    row is left out rather than given a term it might not deserve.
+  */
+
+  "lh1033-ss-stainless-steel-handle": {
+    drawing: "lh1033-ss-stainless-steel-handle-6.webp",
+    specs: [
+      ["Lever length", "135mm"],
+      ["Rose diameter", "53mm"],
+      ["Lever section", "19mm"],
+      ["Rose thickness", "9mm"],
+      ["Spindle", "8mm"],
+      ["Projection", "68mm"],
+    ],
+  },
+
+  "lh1016-stainless-steel-handle": {
+    drawing: "lh1016-stainless-steel-handle-4.webp",
+    specs: [
+      ["Lever length", "130mm"],
+      ["Rose diameter", "53mm"],
+      ["Rose thickness", "9mm"],
+      ["Spindle", "9mm"],
+    ],
+    /*
+      The drawing also carries "138–165mm" across the assembled pair and "55mm"
+      from the lever tip to the rose. The first is the span over both roses and a
+      door, not a property of the handle; the second is unnamed and could be the
+      lever's straight run or its offset. Neither is written.
+    */
+  },
+
+  "bh33-bathroom-accessories": {
+    drawing: "bh33-bathroom-accessories-3.webp",
+    specs: [
+      ["Tube diameter", "12mm"],
+      ["Projection", "200mm"],
+      ["Height", "110mm"],
+    ],
+    /*
+      The drawing is titled "Length: 600" and the record already reads
+      "450mm/600mm". That is not a contradiction — the drawing details the 600
+      variant of a two-length product — so the Length row is left alone.
+    */
+  },
+
+  "026-panic-exit-device": {
+    drawing: "026-panic-exit-device-8.webp",
+    specs: [
+      ["Plate width", "22mm"],
+      ["Height", "118mm"],
+      ["Projection", "55mm"],
+    ],
+    /*
+      ⚠ Needs a human decision, deliberately NOT written.
+      The record says "Rosette Diameter = 65mm". The drawing prints 66 against
+      the round mounting element on the right. One millimetre is exactly the
+      difference this task exists to respect, and the two figures may not even
+      measure the same part — the 66 sits on the cylinder housing, not on the
+      rose. Ask the client which is the rosette before touching that row.
+    */
+  },
 };
 
 let updated = 0;

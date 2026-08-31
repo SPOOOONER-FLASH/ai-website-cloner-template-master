@@ -23,6 +23,18 @@
     {
       "label": "Rosette Diameter",
       "value": "65mm"
+    },
+    {
+      "label": "Plate width",
+      "value": "22mm"
+    },
+    {
+      "label": "Height",
+      "value": "118mm"
+    },
+    {
+      "label": "Projection",
+      "value": "55mm"
     }
   ],
   "material": "Zinc Alloy",
@@ -92,6 +104,18 @@
     {
       "label": "Diámetro del rosetón",
       "value": "65 mm"
+    },
+    {
+      "label": "Ancho de la placa",
+      "value": "22 mm"
+    },
+    {
+      "label": "Alto",
+      "value": "118 mm"
+    },
+    {
+      "label": "Saliente",
+      "value": "55 mm"
     }
   ],
   "summaryEs": "Una barra antipánico de zamak.",
