@@ -120,7 +120,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
               </h1>
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
-              <p className="text-h3 text-ink">{summary}</p>
+              <p className="text-lead text-ink">{summary}</p>
               <p className="mt-24 text-c1 text-ink-secondary">
                 Aquí solo se publican fichas verificadas. El resto del catálogo histórico
                 se está preparando para su publicación estructurada.
@@ -129,7 +129,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
           </div>
         </section>
 
-        <section className="layout mt-144 lg:mt-288" aria-label={`Catálogo — ${name}`}>
+        <section className="layout mt-64 md:mt-144 lg:mt-288" aria-label={`Catálogo — ${name}`}>
           <div className="col-content grid w-full grid-cols gap-x">
             <CategoryFilter products={products} options={options} locale="es" />
             <ProductIndexList

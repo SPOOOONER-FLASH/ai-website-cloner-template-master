@@ -117,17 +117,17 @@
   */
   --text-h1: clamp(2.8rem, 1.529vw + 2.229rem, 3.2rem);
   --leading-h1: clamp(3.6rem, 1.529vw + 3.029rem, 4rem);
-  --tracking-h1: 0.052rem;
+  --tracking-h1: -0.02rem;
   --text-h2: clamp(2.4rem, 1.529vw + 1.829rem, 2.8rem);
   --leading-h2: clamp(3.2rem, 1.529vw + 2.629rem, 3.6rem);
-  --tracking-h2: 0.048rem;
+  --tracking-h2: 0rem;
   /* The step that was missing. h3 is now unmistakably above body copy at every width. */
   --text-h3: clamp(1.9rem, 0.382vw + 1.757rem, 2rem);
   --leading-h3: 2.6rem;
-  --tracking-h3: 0.02rem;
+  --tracking-h3: 0rem;
   --text-c1: clamp(1.6rem, 0.191vw + 1.525rem, 1.7rem);
   --leading-c1: 2.5rem;
-  --tracking-c1: 0.02rem;
+  --tracking-c1: 0rem;
   /* 12px is below the floor for secondary text on a phone held at arm's length. */
   --text-c2: 1.3rem;
   --leading-c2: 1.8rem;
@@ -234,13 +234,26 @@
     font-size: var(--text-h2);
     line-height: var(--leading-h2);
     letter-spacing: var(--tracking-h2);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-semibold);
   }
   .text-h3 {
     font-size: var(--text-h3);
     line-height: var(--leading-h3);
     letter-spacing: var(--tracking-h3);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
+  }
+  /*
+    Lead paragraph — one step above body, at body weight.
+    Category pages used `.text-h3` for the summary sentence, which set a three-line
+    paragraph in semibold directly under the h1 and gave the page two competing headings
+    and no obvious entry point. A lead earns its prominence from size and full-strength
+    ink, not from weight; bold is reserved for things that are actually headings.
+  */
+  .text-lead {
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    letter-spacing: var(--tracking-h3);
+    font-weight: var(--font-weight-regular);
   }
   .text-c1 {
     font-size: var(--text-c1);
@@ -269,7 +282,7 @@
     font-size: var(--text-h3);
     line-height: var(--leading-h3);
     letter-spacing: var(--tracking-h3);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   .copy > * + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: 4.8rem;
