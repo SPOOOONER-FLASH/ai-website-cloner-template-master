@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { getRelatedProducts, products } from "@/data/products";
+import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { ArrowLink } from "./ArrowLink";
 import { alibabaLinkFor } from "@/lib/alibaba";
@@ -40,6 +41,7 @@ const COPY = {
     quote: "Request a quote",
     images: "Product images",
     breadcrumb: "Breadcrumb",
+    orEmail: "Or email us about this model:",
     home: "Home",
     products: "Products",
     ask: "Ask a technical question",
@@ -77,6 +79,7 @@ const COPY = {
     quote: "Solicitar cotización",
     images: "Imágenes del producto",
     breadcrumb: "Ruta de navegación",
+    orEmail: "O escríbanos sobre este modelo:",
     home: "Inicio",
     products: "Productos",
     ask: "Consultar a un ingeniero",
@@ -251,6 +254,24 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     {t.ask}
                   </Button>
                 </div>
+
+                {/*
+                  A direct address at the point of highest intent. The two buttons above
+                  both lead to a form, and the Alibaba link below leads off-site; a buyer
+                  who would rather write from their own mailbox had nowhere to go, and the
+                  model number is right here to quote. Renders only once an address is set.
+                */}
+                {siteSettings.contact.technicalEmail || siteSettings.contact.email ? (
+                  <p className="mt-16 text-c2 text-ink-secondary">
+                    {t.orEmail}{" "}
+                    <a
+                      href={`mailto:${siteSettings.contact.technicalEmail || siteSettings.contact.email}?subject=${encodeURIComponent(`${product.model} — ${name}`)}`}
+                      className="text-brand hover:text-brand-hover"
+                    >
+                      {siteSettings.contact.technicalEmail || siteSettings.contact.email}
+                    </a>
+                  </p>
+                ) : null}
 
                 {/*
                   The second of the two routes this site exists to feed. Until now the

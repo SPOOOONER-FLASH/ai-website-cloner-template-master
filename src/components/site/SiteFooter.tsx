@@ -123,6 +123,23 @@ export function SiteFooter() {
                     </a>
                   </li>
                 ) : null}
+                {/*
+                  Sits directly under the Alibaba link on purpose. Every enquiry route on
+                  this site was previously a form or a hand-off to the storefront, which
+                  loses the buyer who wants to write from their own mailbox — and gives an
+                  answer engine nothing to quote. Renders only once an address is set in
+                  content/site-settings.json.
+                */}
+                {siteSettings.contact.email ? (
+                  <li>
+                    <a
+                      href={`mailto:${siteSettings.contact.email}`}
+                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {siteSettings.contact.email}
+                    </a>
+                  </li>
+                ) : null}
               </ul>
             </div>
 

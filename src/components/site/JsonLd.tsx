@@ -70,6 +70,43 @@ export function organisationSchema(): WithContext<Organization> {
       handle to content/site-settings.json when the client supplies them.
     */
     sameAs: siteSettings.social.map((link) => link.href),
+    /*
+      An address a machine can quote.
+
+      Without this, an answer engine asked "how do I contact Canton Hyland" has nothing to
+      return but "use the form on their website" — and every enquiry route on the site was
+      either a form or a hand-off to Alibaba. A contactPoint is the one place where an
+      email address becomes structured, citable data rather than decoration.
+
+      Emitted only when content/site-settings.json actually carries an address. An empty
+      contactPoint is worse than none: it tells a crawler the field was considered and
+      left blank.
+    */
+    ...(siteSettings.contact?.email
+      ? {
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              contactType: "sales",
+              email: siteSettings.contact.email,
+              ...(siteSettings.contact.phone ? { telephone: siteSettings.contact.phone } : {}),
+              areaServed: "Worldwide",
+              availableLanguage: ["en", "es", "zh-CN"],
+            },
+            ...(siteSettings.contact.technicalEmail
+              ? [
+                  {
+                    "@type": "ContactPoint" as const,
+                    contactType: "technical support",
+                    email: siteSettings.contact.technicalEmail,
+                    areaServed: "Worldwide",
+                    availableLanguage: ["en", "es", "zh-CN"],
+                  },
+                ]
+              : []),
+          ],
+        }
+      : {}),
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "certification",

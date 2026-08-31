@@ -27,7 +27,14 @@ export interface SiteSettings {
   legalName: string;
   copyright: string;
   contact: {
+    /**
+     * Sales enquiries. Rendered in the footer, on /contact and as the Organization
+     * contactPoint, so a buyer who does not want to go through Alibaba has somewhere to
+     * write and an answer engine has an address it can quote.
+     */
     email: string;
+    /** Technical questions — drawings, dimensions, compatibility. Optional. */
+    technicalEmail?: string;
     phone: string;
     address: string;
     city: string;

@@ -13,6 +13,9 @@ const eslintConfig = defineConfig([
     "build/**",
     ".worktrees/**",
     "next-env.d.ts",
+    // Agent scratch space — gitignored, throwaway, and not worth a lint gate.
+    // See the tmp/<agent>-<purpose>/ convention in AGENTS.md.
+    "tmp/**",
   ]),
 ]);
 
