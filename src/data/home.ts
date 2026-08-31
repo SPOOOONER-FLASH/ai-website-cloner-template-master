@@ -70,13 +70,13 @@ export const heroCarousel: HeroCarouselContent = {
 };
 
 export const teaser1: PageTeaserContent = {
-  heading: "Two ways to source our products",
+  heading: "Source by range or by project",
   cards: [
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-brushed-steel.webp",
-        label: "Brushed stainless steel material study with directional grain",
+        src: "/images/editorial/hyde-source-by-range-2026.webp",
+        label: "Unbranded export sample box with lever handle, hinge and mortise lock case",
       },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
@@ -85,8 +85,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-metal-stone-detail.webp",
-        label: "Representative metal, stone, timber, and glass junction study",
+        src: "/images/editorial/hyde-source-by-project-2026.webp",
+        label: "Door hardware specification mockup with lock, hinge, lever, finish samples and blank schedule",
       },
       title: "For specifiers",
       subtitle: "Build a hardware schedule with our export engineers",
@@ -145,11 +145,11 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/home-design-context.webp",
-    label: "Architectural door rhythm with timber, stone, and metal junctions",
+    src: "/images/editorial/hyde-nine-families-2026.webp",
+    label: "Nine door-hardware families arranged on a modular architectural sample board",
   },
-  title: "Designed For",
-  body: "Nine product families",
+  title: "Designed for",
+  body: "Nine hardware families, one coordinated schedule",
   linkLabel: "Browse the catalogue",
   href: "/products",
 };
@@ -158,8 +158,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/home-material-library.webp",
-    label: "Representative material-library study in limestone, brushed metal, bronze and oak",
+    src: "/images/editorial/hyde-materials-engineering-2026.webp",
+    label: "Door-hardware engineering samples with lock case, hinge, closer, lever, fasteners and finish coupons",
   },
   title: "Materials + Engineering",
   body: "Finish coordination, master-key planning and export documentation support commercial and residential hardware schedules across international markets.",
@@ -180,21 +180,21 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-bronze-patina.webp",
-        label: "Bronze surface with natural patina and tonal variation",
+        src: "/images/editorial/hyde-engineering-contact-2026.webp",
+        label: "Door-hardware sample workbench with lock case, hinge, lever, finish chips and blank project schedule",
       },
-      title: "Get in Touch!",
-      subtitle: "We'll match you with the right export engineer",
+      title: "Send us your hardware requirements",
+      subtitle: "We'll match your project with the right export engineer",
       href: "/contact",
     },
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/industrial-precision-parts.webp",
-        label: "Representative editorial study of precision-machined components",
+        src: "/images/editorial/hyde-installation-faq-2026.webp",
+        label: "Mortise lock, butt hinge and door closer components arranged for installation support",
       },
-      title: "Frequently Asked Questions",
-      subtitle: "Quick answers on grades, standards and lead times",
+      title: "Specify with confidence",
+      subtitle: "Answers on installation, finishes, standards and lead times",
       href: "/faq",
     },
   ],

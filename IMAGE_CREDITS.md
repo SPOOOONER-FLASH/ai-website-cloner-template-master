@@ -73,8 +73,8 @@ material-library source used standard cover resizing. The industrial and materia
 cover cropping; the corrected `industrial-precision-parts.webp` and the four 2026-08-29
 homepage/news images were additionally normalised to opaque sRGB before encoding.
 
-The directory contains 21 WebP files totalling 4,237,004 bytes: 20 confirmed text-only
-ImageGen derivatives totalling 4,137,636 bytes, plus `argentina-ar4-entry.webp` (99,368
+The directory contains 27 WebP files totalling 5,486,764 bytes: 26 confirmed text-only
+ImageGen derivatives totalling 5,387,396 bytes, plus `argentina-ar4-entry.webp` (99,368
 bytes), whose generation/source note was not preserved with its 2026-08-27 commit and is
 therefore kept outside the confirmed inventory below pending provenance confirmation.
 
@@ -92,6 +92,12 @@ therefore kept outside the confirmed inventory below pending provenance confirma
 | `home-editorial-insight.webp` | Architectural light / material study | 2400×1464 | 185,346 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `home-material-library.webp` | Architectural material-library study | 1800×1200 | 190,206 | 2026-08-24 | Built-in ImageGen, text-only; Sharp exact-ratio cover, opaque sRGB, WebP q=86 |
 | `home-panic-exit-bars.webp` | Representative commercial panic-exit application | 2400×943 | 160,580 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
+| `hyde-source-by-range-2026.webp` | Coordinated hardware range / sample-kit editorial | 1254×1254 | 347,888 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; final edit removed keys and pseudo-engraving; Sharp square crop, WebP q=86 |
+| `hyde-source-by-project-2026.webp` | Project schedule and finish-board editorial | 1254×1254 | 136,120 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; blank non-readable schedule; Sharp square crop, WebP q=86 |
+| `hyde-nine-families-2026.webp` | Nine-family coordinated hardware board | 1536×1024 | 175,700 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; no model or specification claims; Sharp WebP q=86 |
+| `hyde-materials-engineering-2026.webp` | Material samples and hardware engineering workbench | 1536×1024 | 180,134 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; no manufacturing-process claim; Sharp WebP q=86 |
+| `hyde-engineering-contact-2026.webp` | Buyer requirements and engineering review still life | 1254×1254 | 237,420 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; final edit removed keys and pseudo-engraving; Sharp square crop, WebP q=86 |
+| `hyde-installation-faq-2026.webp` | Exploded installation-components editorial | 1254×1254 | 172,498 | 2026-08-31 | Built-in ImageGen, text-only; first-party HYDE product geometry used as visual reference; no dimensions, standards, or certification claims; Sharp square crop, WebP q=86 |
 | `project-commercial-egress.webp` | Representative application concept | 1800×1200 | 205,920 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-glass-entrance.webp` | Representative application concept | 1800×1200 | 167,582 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |
 | `project-hospitality-residential.webp` | Warm interior / representative application | 1800×1200 | 113,086 | 2026-08-24 | Built-in ImageGen, text-only; Sharp cover/attention, WebP q=86 |

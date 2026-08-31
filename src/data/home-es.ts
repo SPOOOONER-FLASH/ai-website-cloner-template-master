@@ -57,13 +57,13 @@ export const heroCarousel: HeroCarouselContent = {
 };
 
 export const teaser1: PageTeaserContent = {
-  heading: "Dos formas de trabajar con nosotros",
+  heading: "Compre por gama o por proyecto",
   cards: [
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-brushed-steel.webp",
-        label: "Estudio de material de acero inoxidable cepillado con grano direccional",
+        src: "/images/editorial/hyde-source-by-range-2026.webp",
+        label: "Caja de muestras de herrajes con manilla, bisagra y cerradura de embutir",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
@@ -72,8 +72,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-metal-stone-detail.webp",
-        label: "Estudio representativo de unión entre metal, piedra, madera y vidrio",
+        src: "/images/editorial/hyde-source-by-project-2026.webp",
+        label: "Muestra de puerta para especificación con cerradura, bisagra, manilla, acabados y cuadro en blanco",
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
@@ -131,11 +131,11 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/home-design-context.webp",
-    label: "Ritmo arquitectónico de puertas y encuentros de madera, piedra y metal",
+    src: "/images/editorial/hyde-nine-families-2026.webp",
+    label: "Nueve familias de herrajes ordenadas en un tablero modular de muestras",
   },
   title: "Diseñado para",
-  body: "Nueve familias de producto",
+  body: "Nueve familias, un solo cuadro coordinado",
   linkLabel: "Ver catálogo",
   href: "/es/products",
 };
@@ -144,8 +144,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/home-material-library.webp",
-    label: "Estudio representativo de una biblioteca de materiales con piedra caliza, metal cepillado, bronce y roble",
+    src: "/images/editorial/hyde-materials-engineering-2026.webp",
+    label: "Muestras de ingeniería de herrajes con cerradura, bisagra, cierrapuertas, manilla, tornillería y acabados",
   },
   title: "Materiales + ingeniería",
   body: "La coordinación de acabados, la planificación de llaves maestras y la documentación de exportación apoyan cuadros de herrajes comerciales y residenciales en mercados internacionales.",
@@ -165,22 +165,22 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/material-bronze-patina.webp",
-        label: "Superficie de bronce con pátina natural y variación tonal",
+        src: "/images/editorial/hyde-engineering-contact-2026.webp",
+        label: "Mesa de muestras con cerradura, bisagra, manilla, acabados y cuadro de proyecto en blanco",
       },
-      title: "Cuéntenos su proyecto",
-      subtitle: "Le pondremos en contacto con el equipo de exportación adecuado",
+      title: "Envíenos sus requisitos de herrajes",
+      subtitle: "Asignaremos su proyecto al especialista de exportación adecuado",
       href: "/es/contact",
     },
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/industrial-precision-parts.webp",
-        label: "Estudio editorial representativo de componentes mecanizados de precisión",
+        src: "/images/editorial/hyde-installation-faq-2026.webp",
+        label: "Cerradura de embutir, bisagra y cierrapuertas organizados para resolver dudas de instalación",
       },
-      title: "Documentación y normas",
-      subtitle: "Consulte grados, ensayos, acabados y plazos",
-      href: "/es/company",
+      title: "Especifique con confianza",
+      subtitle: "Respuestas sobre instalación, acabados, normas y plazos",
+      href: "/faq",
     },
   ],
 };
