@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Deliver the exact four-item footer and replace the five ambiguous homepage editorial positions with five sales-relevant, visually verified HYDE assets, while leaving the completed Panic Exit Devices hero untouched.
+**Goal:** Deliver the exact four-item footer and replace the five ambiguous homepage editorial groups with six unique, sales-relevant, visually verified HYDE assets, while leaving the completed Panic Exit Devices hero untouched.
 
-**Architecture:** Keep navigation truth in `content/navigation.json`, keep compact footer presentation local to `SiteFooter.module.css`, and reuse the existing responsive editorial pipeline for selected imagery. Generate three preview directions per editorial position, score them against the approved semantic rubric, promote only the best five into the repository, and preserve traceable credits and configuration.
+**Architecture:** Keep navigation truth in `content/navigation.json`, keep compact footer presentation local to `SiteFooter.module.css`, and reuse the existing responsive editorial pipeline for selected imagery. Generate three preview directions per editorial group; the first group is a two-panel composition that produces two square assets. Score all groups against the approved semantic rubric, promote six unique finals, and preserve traceable credits and configuration.
 
 **Tech Stack:** Next.js 16 App Router, React 19, TypeScript strict, CSS Modules, Node test runner, built-in ImageGen, Sharp-based editorial asset pipeline, Playwright/browser QA.
 
@@ -110,7 +110,7 @@ Expected: all five groups have traceable references; `rg "Panic Exit|home-commer
 - [ ] Score 0–5 on product semantics, hardware correctness, artifact absence, crop resilience, and absence of pseudo-text/marks; record totals and reasons.
 - [ ] Continue with the highest-scoring valid candidate per group; explicit user choice before release overrides scoring.
 
-Expected: fifteen reviewed previews and exactly five selected candidates; no invalid image is promoted.
+Expected: fifteen reviewed candidate compositions and exactly five selected compositions; the first selected composition yields two unique final assets, for six finals total. No invalid image is promoted.
 
 ---
 
@@ -123,7 +123,7 @@ Expected: fifteen reviewed previews and exactly five selected candidates; no inv
 - Read: `src/data/home-es.ts`
 - Read: `src/components/site/editorial-images.config.json`
 
-- [ ] Assert five affected English and Spanish slots use five distinct new asset basenames with matching semantic alt text.
+- [ ] Assert six affected English and Spanish media slots use six distinct new asset basenames with matching semantic alt text.
 - [ ] Assert none equals a Panic Exit asset.
 - [ ] Assert every selected basename is present in responsive config and `IMAGE_CREDITS.md`.
 
@@ -137,7 +137,8 @@ Expected: FAIL because selected assets are not installed yet.
 
 **Files:**
 
-- Create: `public/images/editorial/hyde-specification-paths-2026.webp`
+- Create: `public/images/editorial/hyde-source-by-range-2026.webp`
+- Create: `public/images/editorial/hyde-source-by-project-2026.webp`
 - Create: `public/images/editorial/hyde-nine-families-2026.webp`
 - Create: `public/images/editorial/hyde-materials-engineering-2026.webp`
 - Create: `public/images/editorial/hyde-engineering-contact-2026.webp`
@@ -151,7 +152,7 @@ Expected: FAIL because selected assets are not installed yet.
 - Modify: `src/data/home-editorial-assets.test.ts`
 - Create: `docs/collaboration/agent-updates/2026-08-31-codex-home-editorial-five.md`
 
-- [ ] Copy only five selected full-resolution outputs into the repository using the versioned filenames above.
+- [ ] Split the selected Two ways diptych into two square finals, then copy six unique final assets into the repository using the versioned filenames above.
 - [ ] Generate responsive WebP assets; do not alter Panic assets or their configuration.
 - [ ] Replace five English and Spanish paths and rewrite alt/captions to describe visible hardware and sales purpose without unsupported claims.
 - [ ] Add ImageGen provenance, date, prompt purpose, and reference roles to `IMAGE_CREDITS.md`.
@@ -159,7 +160,7 @@ Expected: FAIL because selected assets are not installed yet.
 
 Run: `npm run assets:editorial`, `node --test src/data/home-editorial-assets.test.ts`, and `npm run typecheck`.
 
-Expected: PASS; five responsive asset families exist and bilingual data points to intended files.
+Expected: PASS; six responsive asset families exist and bilingual data points to intended files.
 
 ---
 
@@ -167,7 +168,7 @@ Expected: PASS; five responsive asset families exist and bilingual data points t
 
 - [ ] Run the local site without producing or staging `out/`.
 - [ ] Inspect homepage and footer at desktop, tablet, and mobile widths with a real browser.
-- [ ] Verify five images clearly indicate door hardware and adjacent sales action, preserve focal hardware under responsive crops, have no pseudo-text/marks, and create no horizontal overflow.
+- [ ] Verify six images clearly indicate door hardware and adjacent sales action, preserve focal hardware under responsive crops, have no pseudo-text/marks, and create no horizontal overflow.
 - [ ] Verify footer order is Contact, FAQ, Buy on Alibaba, email; links are keyboard reachable; Alibaba CTA is compact; reduced-motion remains stable.
 - [ ] Run focused tests, full `npm test`, lint, typecheck, and `git diff --check` on owned paths.
 - [ ] Update the agent record, commit, and push only editorial/footer paths. State source-only; `out/` remains with release builder.
