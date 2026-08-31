@@ -1,6 +1,22 @@
 {
   "events": [
     {
+      "slug": "expo-nacional-ferretera-guadalajara-2026",
+      "name": "Expo Nacional Ferretera 2026",
+      "market": "Mexico + Latin America",
+      "city": "Guadalajara, Mexico",
+      "venue": "Expo Guadalajara",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-05",
+      "status": "planned-visit",
+      "statusLabel": "Intended participation — unconfirmed",
+      "summary": "Canton Hyland intends to participate in Mexico's major hardware, construction and electrical-industry meeting to develop distributor and buyer relationships. A stand, meeting point and appointment schedule have not yet been confirmed.",
+      "sourceUrl": "https://www.expoferretera.com.mx/es-mx/expositores.html",
+      "relatedHref": "/products/",
+      "relatedLabel": "Explore the HYDE product catalogue",
+      "published": true
+    },
+    {
       "slug": "canton-fair-autumn-2026",
       "name": "140th Canton Fair — Phase I",
       "market": "China + international buyers",
@@ -12,6 +28,8 @@
       "statusLabel": "Planned buyer meetings",
       "summary": "Canton Hyland plans to be available for door-hardware and export meetings during Phase I. Meeting details are confirmed directly; no public booth number is claimed.",
       "sourceUrl": "https://www.cantonfair.org.cn/en-US?area=CG05",
+      "relatedHref": "/contact/",
+      "relatedLabel": "Arrange a buyer meeting",
       "published": true
     },
     {
@@ -26,6 +44,8 @@
       "statusLabel": "Planned market visit",
       "summary": "A planned visit for market research and pre-arranged distributor or specification meetings. Attendance details will be updated when travel and meeting schedules are confirmed.",
       "sourceUrl": "https://bau-muenchen.com/en/",
+      "relatedHref": "/projects/",
+      "relatedLabel": "View architectural applications",
       "published": true
     },
     {
@@ -40,6 +60,8 @@
       "statusLabel": "Planned market visit",
       "summary": "A planned Brazil market visit focused on distributors, construction channels and door-hardware requirements. Meeting details remain subject to confirmation.",
       "sourceUrl": "https://www.feicon.com.br/",
+      "relatedHref": "/services/",
+      "relatedLabel": "Plan an export hardware brief",
       "published": true
     },
     {
@@ -54,6 +76,24 @@
       "statusLabel": "Planned market visit",
       "summary": "A planned visit to compare professional tools and hardware channels and meet prospective distribution partners. Canton Hyland is not claiming an exhibition stand.",
       "sourceUrl": "https://www.tooljapan.jp/en-gb.html",
+      "relatedHref": "/products/",
+      "relatedLabel": "Browse product families",
+      "published": true
+    },
+    {
+      "slug": "expo-ferretera-argentina-2027",
+      "name": "ExpoFerretera Argentina 2027",
+      "market": "Argentina + Southern Cone",
+      "city": "Buenos Aires, Argentina",
+      "venue": "La Rural Trade Center",
+      "startDate": "2027-10-20",
+      "endDate": "2027-10-23",
+      "status": "planned-visit",
+      "statusLabel": "Intended participation — unconfirmed",
+      "summary": "Canton Hyland intends to participate as part of the HYDE Argentina market programme, connecting its lock and architectural-hardware range with regional distributors. A stand and appointment timetable have not yet been confirmed.",
+      "sourceUrl": "https://expoferretera.ar.messefrankfurt.com/buenosaires/es.html",
+      "relatedHref": "/products/argentina-ar4/",
+      "relatedLabel": "See the HYDE Argentina AR-4 collection",
       "published": true
     }
   ]

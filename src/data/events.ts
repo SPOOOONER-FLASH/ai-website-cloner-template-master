@@ -14,6 +14,8 @@ export interface TradeEvent {
   statusLabel: string;
   summary: string;
   sourceUrl?: string;
+  relatedHref?: string;
+  relatedLabel?: string;
   published: boolean;
 }
 

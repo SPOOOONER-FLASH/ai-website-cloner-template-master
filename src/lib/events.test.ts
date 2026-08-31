@@ -9,6 +9,8 @@ type EventFixture = {
   status: string;
   published: boolean;
   sourceUrl?: string;
+  relatedHref?: string;
+  relatedLabel?: string;
 };
 
 test("published exhibition dates match the current organiser schedules", () => {
@@ -35,6 +37,29 @@ test("published exhibition dates match the current organiser schedules", () => {
   );
   assert.equal(bySlug.get("tool-japan-2026")?.published, true);
   assert.equal(bySlug.get("tool-japan-2026")?.sourceUrl, "https://www.tooljapan.jp/en-gb.html");
+
+  assert.deepEqual(
+    [
+      bySlug.get("expo-nacional-ferretera-guadalajara-2026")?.startDate,
+      bySlug.get("expo-nacional-ferretera-guadalajara-2026")?.endDate,
+    ],
+    ["2026-09-03", "2026-09-05"],
+  );
+  assert.equal(
+    bySlug.get("expo-nacional-ferretera-guadalajara-2026")?.sourceUrl,
+    "https://www.expoferretera.com.mx/es-mx/expositores.html",
+  );
+  assert.deepEqual(
+    [
+      bySlug.get("expo-ferretera-argentina-2027")?.startDate,
+      bySlug.get("expo-ferretera-argentina-2027")?.endDate,
+    ],
+    ["2027-10-20", "2027-10-23"],
+  );
+  assert.equal(
+    bySlug.get("expo-ferretera-argentina-2027")?.sourceUrl,
+    "https://expoferretera.ar.messefrankfurt.com/buenosaires/es.html",
+  );
 });
 
 test("public events have organiser sources and do not claim an unverified exhibition stand", () => {
@@ -44,6 +69,8 @@ test("public events have organiser sources and do not claim an unverified exhibi
 
   for (const event of data.events.filter((item) => item.published)) {
     assert.match(event.sourceUrl ?? "", /^https:\/\//);
+    assert.match(event.relatedHref ?? "", /^\//);
+    assert.ok(event.relatedLabel?.trim());
     assert.notEqual(event.status, "exhibiting");
   }
 });

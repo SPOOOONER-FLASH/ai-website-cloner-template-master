@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Exhibitions + Market Visits",
   description:
-    "Confirmed organiser dates and Canton Hyland meeting plans for TOOL JAPAN, Canton Fair, BAU Munich and FEICON Brazil. Buyer meetings with our export team.",
+    "Confirmed organiser dates and Canton Hyland market plans across Mexico, Japan, China, Germany, Brazil and Argentina. Request buyer meetings with our export team.",
 });
 
 export default function EventsPage() {
@@ -68,6 +68,12 @@ export default function EventsPage() {
                 >
                   Verify organiser dates
                 </a>
+                <Link
+                  href={event.relatedHref!}
+                  className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
+                >
+                  {event.relatedLabel}
+                </Link>
               </div>
             </article>
           ))}
@@ -78,8 +84,8 @@ export default function EventsPage() {
             Meeting information still needed
           </h2>
           <p className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15 text-c1 text-ink-secondary">
-            Booth or meeting point, staff contact, appointment hours and the exact Japan event.
-            Once supplied, these can be updated from the CMS without redesigning the page.
+            Booth or meeting point, staff contact and appointment hours. Once supplied, these can
+            be updated from the CMS without redesigning the page.
           </p>
         </section>
       </div>
