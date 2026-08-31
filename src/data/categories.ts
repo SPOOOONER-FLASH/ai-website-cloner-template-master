@@ -1,6 +1,8 @@
 import categoriesFile from "../../content/categories.json";
 import { applyImageAltOverride } from "./image-alt-overrides";
 import { brandProductImageRef } from "./product-image-branding";
+// Safe: products.ts does not import this module, so there is no cycle.
+import { products } from "./products";
 import type { Category } from "./types";
 
 /**
@@ -40,6 +42,16 @@ export interface MenuCategory {
   slug: string;
   label: string;
   labelEs: string;
+  /**
+   * Sub-categories, for the menu's second level.
+   *
+   * These are a filter dimension, never a URL segment (see the note at the top of this
+   * file), so a child's destination is `/products/<parent>/?type=<child>` — the same
+   * query the filter rail on the category page writes. Only four of the fifteen
+   * categories have any; the rest link straight through.
+   */
+  children: { slug: string; label: string; labelEs: string; count: number }[];
+  count: number;
 }
 
 /**
@@ -52,11 +64,37 @@ export interface MenuCategory {
  * labels.
  */
 export function getMenuCategories(): MenuCategory[] {
-  return categories.map((category) => ({
-    slug: category.slug,
-    label: category.name,
-    labelEs: category.nameEs ?? category.name,
-  }));
+  return categories.map((category) => {
+    const inCategory = products.filter((p) => p.categoryPath[0] === category.slug);
+
+    /*
+      A sub-category with no products is dropped, not shown as an empty branch. Two are
+      currently empty — `wafer-locks` and `armoured-lock-covers` — and a menu entry that
+      leads to "no products match this filter" is a defect, not a placeholder.
+
+      The counts that survive are rendered next to each label. Some of them are small
+      (panic exit devices has five sub-types covering 12 of its 42 records, the other 30
+      being untagged), and showing that honestly is the point: it tells the buyer where
+      the range actually is, and it makes the tagging gap visible instead of hiding it
+      behind a menu that implies even coverage.
+    */
+    const children = (category.children ?? [])
+      .map((child) => ({
+        slug: child.slug,
+        label: child.name,
+        labelEs: child.nameEs ?? child.name,
+        count: inCategory.filter((p) => p.categoryPath[1] === child.slug).length,
+      }))
+      .filter((child) => child.count > 0);
+
+    return {
+      slug: category.slug,
+      label: category.name,
+      labelEs: category.nameEs ?? category.name,
+      count: inCategory.length,
+      children,
+    };
+  });
 }
 
 /** Find a category by its path of slugs, e.g. ["knob-locks", "tubular-knob"]. */

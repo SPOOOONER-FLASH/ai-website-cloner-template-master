@@ -12,7 +12,8 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| _（空 = 没人占用批量写入）_ | | | |
+| claude | `SiteHeader.tsx` `SiteMenuDrawer.tsx` `globals.css` | 汉堡二级类目、字重/字距层级 | 2026-08-31 |
+| claude | `content/faq.json` `docs/research/buyer-questions/**` | 买家问题题库 + 覆盖审计 | 2026-08-31 |
 
 ## 规则
 

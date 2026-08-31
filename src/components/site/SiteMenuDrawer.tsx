@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import type { MenuCategory } from "@/data/categories";
 import { siteSettings } from "@/data/navigation";
 import { socialLinks } from "@/data/site";
@@ -110,10 +113,13 @@ export function SiteMenuDrawer({
 }: SiteMenuDrawerProps) {
   const locale = isSpanish ? "es" : "en";
   const t = COPY[locale];
+  /* One open branch at a time. Fifteen categories with several expanded at once is the
+     scrolling wall this menu was rebuilt to get rid of. */
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
   const productHref = (slug: string) => (isSpanish ? `/es/products/${slug}/` : `/products/${slug}/`);
 
   const renderLink = (
-    { label, href }: { label: string; href: string },
+    { label, href, count }: { label: string; href: string; count?: number },
     secondary = false,
   ) => {
     const current = isCurrent(currentPath, href);
@@ -132,8 +138,15 @@ export function SiteMenuDrawer({
             .join(" ")}
         >
           <span>{label}</span>
-          <span aria-hidden="true" className="drawer-chevron">
-            ›
+          <span className="drawer-link-trail">
+            {/* The count is the useful half of the row: it is the difference between
+                "Deadbolts" and "Deadbolts, of which we have seven". */}
+            {typeof count === "number" ? (
+              <span className="drawer-count">{count}</span>
+            ) : null}
+            <span aria-hidden="true" className="drawer-chevron">
+              ›
+            </span>
           </span>
         </Link>
       </li>
@@ -205,13 +218,71 @@ export function SiteMenuDrawer({
               <ul className="mt-16 divide-y divide-line border-y border-line">
                 {catalogueLinks[locale].map((link) => renderLink(link))}
               </ul>
-              <ul className="mt-8 sm:grid sm:grid-cols-2 sm:gap-x-32">
+              {/*
+                Two levels, the way Chanel's mobile menu drills from Skincare into
+                Serums. Four of the fifteen categories have sub-categories; those get a
+                disclosure rather than a link, so the visitor can reach "Fire Door
+                Devices" without first landing on 42 panic devices and hunting the filter
+                rail. The other eleven are flat and link straight through — an expander
+                that opens onto nothing is worse than no expander.
+              */}
+              <ul className="mt-8">
                 {categories.map((category) => {
                   const href = productHref(category.slug);
-                  return renderLink({
-                    label: isSpanish ? category.labelEs : category.label,
-                    href,
-                  });
+                  const label = isSpanish ? category.labelEs : category.label;
+                  if (!category.children.length) {
+                    return renderLink({ label, href, count: category.count });
+                  }
+
+                  const expanded = openCategory === category.slug;
+                  return (
+                    <li key={category.slug}>
+                      <button
+                        type="button"
+                        aria-expanded={expanded}
+                        aria-controls={`drawer-sub-${category.slug}`}
+                        onClick={() => setOpenCategory(expanded ? null : category.slug)}
+                        className="drawer-link w-full bg-transparent text-left"
+                      >
+                        <span>{label}</span>
+                        <span className="drawer-link-trail">
+                          <span className="drawer-count">{category.count}</span>
+                          <span
+                            aria-hidden="true"
+                            className={`drawer-chevron drawer-chevron-toggle${
+                              expanded ? " drawer-chevron-open" : ""
+                            }`}
+                          >
+                            ›
+                          </span>
+                        </span>
+                      </button>
+                      {expanded ? (
+                        <ul id={`drawer-sub-${category.slug}`} className="drawer-sublist">
+                          {/* The whole range first: a filter is a narrowing, so the
+                              unnarrowed list has to stay one tap away. */}
+                          {renderLink(
+                            {
+                              label: isSpanish ? `Todo: ${label}` : `All ${label}`,
+                              href,
+                              count: category.count,
+                            },
+                            true,
+                          )}
+                          {category.children.map((child) =>
+                            renderLink(
+                              {
+                                label: isSpanish ? child.labelEs : child.label,
+                                href: `${href}?type=${child.slug}`,
+                                count: child.count,
+                              },
+                              true,
+                            ),
+                          )}
+                        </ul>
+                      ) : null}
+                    </li>
+                  );
                 })}
               </ul>
             </section>

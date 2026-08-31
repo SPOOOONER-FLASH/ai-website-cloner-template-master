@@ -53,7 +53,7 @@
           }
         },
         {
-          "slug": "special-application",
+          "slug": "special-applications",
           "name": "Special Applications",
           "nameZh": "特殊应用",
           "summary": "Exit hardware for cold rooms and specialist enclosures.",
@@ -250,7 +250,7 @@
       },
       "children": [
         {
-          "slug": "patch-fittings",
+          "slug": "glass-door-patch-fittings",
           "name": "Glass Door Patch Fittings",
           "nameZh": "玻璃门夹",
           "summary": "Patch fittings for frameless glass doors.",
@@ -327,7 +327,7 @@
           }
         },
         {
-          "slug": "flush-bolts",
+          "slug": "door-flush-bolts",
           "name": "Door Flush Bolts",
           "nameZh": "暗插销",
           "summary": "Flush bolts for inactive door leaves.",
