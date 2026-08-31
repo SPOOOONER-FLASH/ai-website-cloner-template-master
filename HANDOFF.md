@@ -1,5 +1,19 @@
 # 交接 — Canton Hyland / HYDE 官网
 
+## 2026-08-31 Codex 停工点（下一位先读）
+
+本轮已提交并推送墨西哥、阿根廷两项“意向参展”内容：`1215dd7c2`。CI 与静态导出通过，
+但**没有部署到正式服务器**：GitHub 发布任务中的 `DEPLOY_HOST` 为空，公网
+`https://cantonlock.com/events/` 仍是旧 HTML；这不是 Cloudflare 单纯缓存问题。
+
+当前工作树另有约 **5,350** 个未提交路径，主要是产品 JSON 与 `out/`，属于其他会话/构建者的
+参数、水印和发布产物。**不要 restore、clean、批量 stage，也不要重新运行 `deploy:prep` 覆盖它们。**
+先确认来源、审阅差异和发布 baton，再做下一次构建。
+
+下一位 Codex 的完整优先级、验收条件和未完成指令见：
+[`docs/collaboration/agent-updates/2026-08-31-codex-stop-point-and-open-work.md`](docs/collaboration/agent-updates/2026-08-31-codex-stop-point-and-open-work.md)。
+本节优先于下文的旧状态数字；完成正式发布、图片人工复核和最终审计后，再据实重写整份交接。
+
 > 新会话先读这份，再按需读 `docs/collaboration/agent-updates/`（Claude × Codex 互通进度）。
 > 最后更新：2026-08-31
 
@@ -139,30 +153,26 @@ ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文�
 补 Function。先生成 dry-run 对照表，逐条校验实际存在的图片文件，再写产品 JSON，不能仅凭
 字符串批量覆盖现有甲方已选首图。
 
-## 八·七、图纸里的尺寸：已做 20 个，剩下的没有便宜的自动化
+## 八·七、图纸里的尺寸：已做 27 个，筛选判据已解决
 
 产品图库里混着**带尺寸标注的 CAD 图纸**，此前从没读过。它是我们手上最权威的来源
 （甲方自己的生产图），而且**它推翻过已发布的数据** —— 五个玻璃门拉手都写着
 `Size = 32x300x600 mm`（stahlock 一条文案复制到整个系列），五张图纸没有一张出现 300mm。
 
-已读 20 个产品的图纸，写进 `scripts/cad-dimensions.mjs`，每条都带 `drawing` 字段指明
+已读 27 个产品的图纸，写进 `scripts/cad-dimensions.mjs`，每条都带 `drawing` 字段指明
 出处，可随时复查。**LC07 那张图独立验证了 LC 命名规则** —— 图上直接印着 85 和 45。
 
-⚠ **自动识别哪张图是图纸，我没做成。** 三种判据都试过：
+**判据 2026-08-31 解决了。** 前三次都在量墨水本身，都失败。真正的分开点是墨水
+**有多孤立**：产品照的暗像素周围还是暗像素（物体内部），图纸的暗像素周围是纸。
+`scripts/score-cad-drawings.mjs` 算这个（speckle）。全库 1478 张实测：
+19 张已确认图纸 0.53–0.99，14 张已确认照片 0.01–0.18，中间无样本。
+按排序开 8 张命中 8 张；按旧清单开 6 张命中 0 张。
 
-| 判据 | 失败方式 |
-|---|---|
-| 纯黑墨水 | 漏掉每一张细线图 —— 图纸的线是抗锯齿的灰，不是纯黑 |
-| 长直线（尺寸线） | 把深色照片全捞进来，每一行都有长暗色游程 |
-| 纸白 + 无中间灰 | 白底摄影棚照片照样通过 |
+⚠ 反例：`lc9045-lock-case.webp` 是真图纸但排第 1074（深色渲染图，只印了两个数字）。
+分数低只能用来排先后，不能当"不是图纸"的证据。
 
-同一张营销拼图被逐产品重新编码，**哈希去重也救不了**（248 张候选去重后仍是 246 张）。
-
-**现状**：248 张候选人工读了 28 张，命中约 20 张真图纸。剩余清单在
-`docs/collaboration/tasks/cad-drawing-worklist.json`（A 组 27 个 = 规格 ≤3 行，
-B 组 87 个 = 有尺寸行待核对）。⚠ 早先的版本把它放在 `tmp/` —— 那是 gitignore 的，
-别的 agent 永远收不到，已移到跟踪路径。
-**这一步要么继续人眼读，要么上 OCR。别再花时间调像素判据了。**
+**待读清单**：`docs/collaboration/tasks/cad-drawing-ranked.json` —— 82 个产品 / 90 张图。
+旧的 candidates（248 张）和 worklist 已废弃。
 完整任务书（含写入格式与三条纪律）：`docs/collaboration/tasks/cad-drawing-extraction.md`
 
 ## 九、怎么干活

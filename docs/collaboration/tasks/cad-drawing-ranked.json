@@ -1,0 +1,941 @@
+{
+  "generatedBy": "node scripts/score-cad-drawings.mjs",
+  "note": "Images with speckle >= 0.40 that nobody has read yet. Validated against 19 hand-read drawings (18 scored in the top 84 of 1478) and 14 confirmed photographs (all below 0.18). Sorted by how little the product already has. Still open the image: the score is a hint, not a verdict.",
+  "knownException": "lc9045-lock-case.webp is a real drawing that scores like a photograph — a dark render with two figures printed on it. A low score is not proof.",
+  "products": [
+    {
+      "slug": "lh1033-ss-stainless-steel-handle",
+      "model": "LH1033 SS",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/lh1033-ss-stainless-steel-handle-6.webp",
+          "speckle": 0.876
+        },
+        {
+          "image": "public/images/products/lh1033-ss-stainless-steel-handle-8.webp",
+          "speckle": 0.423
+        }
+      ]
+    },
+    {
+      "slug": "bh33-bathroom-accessories",
+      "model": "BH33",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh33-bathroom-accessories-3.webp",
+          "speckle": 0.83
+        }
+      ]
+    },
+    {
+      "slug": "bh35-bathroom-accessories",
+      "model": "BH35",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh35-bathroom-accessories-3.webp",
+          "speckle": 0.753
+        }
+      ]
+    },
+    {
+      "slug": "bh22-bathroom-accessories",
+      "model": "BH22",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh22-bathroom-accessories-3.webp",
+          "speckle": 0.729
+        }
+      ]
+    },
+    {
+      "slug": "026-panic-exit-device",
+      "model": "026",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/026-panic-exit-device-8.webp",
+          "speckle": 0.726
+        }
+      ]
+    },
+    {
+      "slug": "bh26-bathroom-accessories",
+      "model": "BH26",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh26-bathroom-accessories-4.webp",
+          "speckle": 0.681
+        }
+      ]
+    },
+    {
+      "slug": "bh20-bathroom-accessories",
+      "model": "BH20",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh20-bathroom-accessories-4.webp",
+          "speckle": 0.675
+        }
+      ]
+    },
+    {
+      "slug": "lh1016-stainless-steel-handle",
+      "model": "LH1016",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/lh1016-stainless-steel-handle-4.webp",
+          "speckle": 0.653
+        },
+        {
+          "image": "public/images/products/lh1016-stainless-steel-handle-6.webp",
+          "speckle": 0.676
+        }
+      ]
+    },
+    {
+      "slug": "bh23-bathroom-accessories",
+      "model": "BH23",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh23-bathroom-accessories-3.webp",
+          "speckle": 0.642
+        }
+      ]
+    },
+    {
+      "slug": "bh12-bathroom-accessories",
+      "model": "BH12",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh12-bathroom-accessories.webp",
+          "speckle": 0.632
+        }
+      ]
+    },
+    {
+      "slug": "bh18-bathroom-accessories",
+      "model": "BH18",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh18-bathroom-accessories-5.webp",
+          "speckle": 0.61
+        }
+      ]
+    },
+    {
+      "slug": "lh1056-ss-stainless-steel-handle",
+      "model": "LH1056 SS",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/lh1056-ss-stainless-steel-handle-8.webp",
+          "speckle": 0.509
+        }
+      ]
+    },
+    {
+      "slug": "301-panic-exit-device",
+      "model": "301",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/301-panic-exit-device-5.webp",
+          "speckle": 0.457
+        }
+      ]
+    },
+    {
+      "slug": "bh19-bathroom-accessories",
+      "model": "BH19",
+      "specRows": 4,
+      "drawings": [
+        {
+          "image": "public/images/products/bh19-bathroom-accessories-3.webp",
+          "speckle": 0.442
+        }
+      ]
+    },
+    {
+      "slug": "bh30-bathroom-accessories",
+      "model": "BH30",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh30-bathroom-accessories.webp",
+          "speckle": 0.944
+        }
+      ]
+    },
+    {
+      "slug": "bh37-bathroom-accessories",
+      "model": "BH37",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh37-bathroom-accessories-3.webp",
+          "speckle": 0.812
+        }
+      ]
+    },
+    {
+      "slug": "bh36-bathroom-accessories",
+      "model": "BH36",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh36-bathroom-accessories-3.webp",
+          "speckle": 0.806
+        }
+      ]
+    },
+    {
+      "slug": "bh25-bathroom-accessories",
+      "model": "BH25",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh25-bathroom-accessories-3.webp",
+          "speckle": 0.795
+        }
+      ]
+    },
+    {
+      "slug": "bh13-bathroom-accessories",
+      "model": "BH13",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh13-bathroom-accessories-3.webp",
+          "speckle": 0.694
+        }
+      ]
+    },
+    {
+      "slug": "bh04-bathroom-accessories",
+      "model": "BH04",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh04-bathroom-accessories-4.webp",
+          "speckle": 0.673
+        }
+      ]
+    },
+    {
+      "slug": "f132-glass-door-patch-fittings",
+      "model": "F132",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/f132-glass-door-patch-fittings-4.webp",
+          "speckle": 0.67
+        }
+      ]
+    },
+    {
+      "slug": "bh01-bathroom-accessories",
+      "model": "BH01",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh01-bathroom-accessories-5.webp",
+          "speckle": 0.652
+        }
+      ]
+    },
+    {
+      "slug": "bh14-bathroom-accessories",
+      "model": "BH14",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh14-bathroom-accessories-5.webp",
+          "speckle": 0.592
+        }
+      ]
+    },
+    {
+      "slug": "lc14-85-50mm-lock-case",
+      "model": "Lc14 85×50mm",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/lc14-85-50mm-lock-case-4.webp",
+          "speckle": 0.553
+        }
+      ]
+    },
+    {
+      "slug": "lc04-85-60-lock-case",
+      "model": "LC04 85*60",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/lc04-85-60-lock-case-2.webp",
+          "speckle": 0.515
+        }
+      ]
+    },
+    {
+      "slug": "313-panic-exit-device",
+      "model": "313",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/313-panic-exit-device-3.webp",
+          "speckle": 0.507
+        }
+      ]
+    },
+    {
+      "slug": "bh02-bathroom-accessories",
+      "model": "BH02",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh02-bathroom-accessories-4.webp",
+          "speckle": 0.498
+        }
+      ]
+    },
+    {
+      "slug": "hy008-lock-case",
+      "model": "HY008",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/hy008-lock-case-3.webp",
+          "speckle": 0.498
+        },
+        {
+          "image": "public/images/products/hy008-lock-case-4.webp",
+          "speckle": 0.497
+        }
+      ]
+    },
+    {
+      "slug": "bh52-bathroom-accessories",
+      "model": "BH52",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh52-bathroom-accessories-3.webp",
+          "speckle": 0.477
+        }
+      ]
+    },
+    {
+      "slug": "bh50-bathroom-accessories",
+      "model": "BH50",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh50-bathroom-accessories-3.webp",
+          "speckle": 0.476
+        }
+      ]
+    },
+    {
+      "slug": "bh31-bathroom-accessories",
+      "model": "BH31",
+      "specRows": 5,
+      "drawings": [
+        {
+          "image": "public/images/products/bh31-bathroom-accessories.webp",
+          "speckle": 0.421
+        },
+        {
+          "image": "public/images/products/bh31-bathroom-accessories-3.webp",
+          "speckle": 0.742
+        }
+      ]
+    },
+    {
+      "slug": "9082e-stainless-steel-handle",
+      "model": "9082E",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/9082e-stainless-steel-handle-3.webp",
+          "speckle": 0.994
+        }
+      ]
+    },
+    {
+      "slug": "bh32-bathroom-accessories",
+      "model": "BH32",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/bh32-bathroom-accessories-3.webp",
+          "speckle": 0.784
+        }
+      ]
+    },
+    {
+      "slug": "bh17-bathroom-accessories",
+      "model": "BH17",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/bh17-bathroom-accessories-3.webp",
+          "speckle": 0.717
+        }
+      ]
+    },
+    {
+      "slug": "bh03-bathroom-accessories",
+      "model": "BH03",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/bh03-bathroom-accessories-3.webp",
+          "speckle": 0.676
+        }
+      ]
+    },
+    {
+      "slug": "bh16-bathroom-accessories",
+      "model": "BH16",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/bh16-bathroom-accessories-4.webp",
+          "speckle": 0.594
+        }
+      ]
+    },
+    {
+      "slug": "039-panic-exit-device",
+      "model": "039",
+      "specRows": 6,
+      "drawings": [
+        {
+          "image": "public/images/products/039-panic-exit-device-2.webp",
+          "speckle": 0.469
+        }
+      ]
+    },
+    {
+      "slug": "lc7065-lock-case",
+      "model": "Lc7065",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/lc7065-lock-case-3.webp",
+          "speckle": 0.899
+        }
+      ]
+    },
+    {
+      "slug": "bh11-bathroom-accessories",
+      "model": "BH11",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/bh11-bathroom-accessories-3.webp",
+          "speckle": 0.784
+        }
+      ]
+    },
+    {
+      "slug": "bh10-bathroom-accessories",
+      "model": "BH10",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/bh10-bathroom-accessories-3.webp",
+          "speckle": 0.775
+        }
+      ]
+    },
+    {
+      "slug": "lc8525-lock-case",
+      "model": "Lc8525",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/lc8525-lock-case-3.webp",
+          "speckle": 0.718
+        },
+        {
+          "image": "public/images/products/lc8525-lock-case-7.webp",
+          "speckle": 0.456
+        }
+      ]
+    },
+    {
+      "slug": "bh09-bathroom-accessories",
+      "model": "BH09",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/bh09-bathroom-accessories-3.webp",
+          "speckle": 0.678
+        }
+      ]
+    },
+    {
+      "slug": "hy006dk-lock-case",
+      "model": "HY006DK",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/hy006dk-lock-case-4.webp",
+          "speckle": 0.627
+        },
+        {
+          "image": "public/images/products/hy006dk-lock-case-5.webp",
+          "speckle": 0.559
+        }
+      ]
+    },
+    {
+      "slug": "310-panic-exit-device",
+      "model": "310",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/310-panic-exit-device-8.webp",
+          "speckle": 0.521
+        }
+      ]
+    },
+    {
+      "slug": "nc182-stainless-steel-handle",
+      "model": "NC182",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/nc182-stainless-steel-handle-6.webp",
+          "speckle": 0.474
+        }
+      ]
+    },
+    {
+      "slug": "027-panic-exit-device",
+      "model": "027",
+      "specRows": 7,
+      "drawings": [
+        {
+          "image": "public/images/products/027-panic-exit-device-8.webp",
+          "speckle": 0.461
+        }
+      ]
+    },
+    {
+      "slug": "bh05-bathroom-accessories",
+      "model": "BH05",
+      "specRows": 8,
+      "drawings": [
+        {
+          "image": "public/images/products/bh05-bathroom-accessories-5.webp",
+          "speckle": 0.669
+        }
+      ]
+    },
+    {
+      "slug": "bh08-bathroom-accessories",
+      "model": "BH08",
+      "specRows": 8,
+      "drawings": [
+        {
+          "image": "public/images/products/bh08-bathroom-accessories-3.webp",
+          "speckle": 0.644
+        }
+      ]
+    },
+    {
+      "slug": "hy006et-lock-case",
+      "model": "HY006ET",
+      "specRows": 8,
+      "drawings": [
+        {
+          "image": "public/images/products/hy006et-lock-case-4.webp",
+          "speckle": 0.633
+        },
+        {
+          "image": "public/images/products/hy006et-lock-case-5.webp",
+          "speckle": 0.573
+        }
+      ]
+    },
+    {
+      "slug": "lc17-lock-case",
+      "model": "Lc17",
+      "specRows": 8,
+      "drawings": [
+        {
+          "image": "public/images/products/lc17-lock-case.webp",
+          "speckle": 0.474
+        }
+      ]
+    },
+    {
+      "slug": "9007s-stainless-steel-handle",
+      "model": "9007S",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/9007s-stainless-steel-handle-6.webp",
+          "speckle": 0.883
+        }
+      ]
+    },
+    {
+      "slug": "9005e-stainless-steel-handle",
+      "model": "9005E",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/9005e-stainless-steel-handle-8.webp",
+          "speckle": 0.846
+        }
+      ]
+    },
+    {
+      "slug": "lh854-lever-handle",
+      "model": "LH854",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/lh854-lever-handle-4.webp",
+          "speckle": 0.756
+        }
+      ]
+    },
+    {
+      "slug": "bh07-bathroom-accessories",
+      "model": "BH07",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/bh07-bathroom-accessories-5.webp",
+          "speckle": 0.692
+        }
+      ]
+    },
+    {
+      "slug": "bh06-bathroom-accessories",
+      "model": "BH06",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/bh06-bathroom-accessories-4.webp",
+          "speckle": 0.686
+        }
+      ]
+    },
+    {
+      "slug": "gl125-ss-glass-door-patch-fittings",
+      "model": "GL125 SS",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/gl125-ss-glass-door-patch-fittings-3.webp",
+          "speckle": 0.522
+        }
+      ]
+    },
+    {
+      "slug": "lc8520ps-lock-case",
+      "model": "Lc8520PS",
+      "specRows": 9,
+      "drawings": [
+        {
+          "image": "public/images/products/lc8520ps-lock-case-2.webp",
+          "speckle": 0.412
+        }
+      ]
+    },
+    {
+      "slug": "lc33-5572-lock-case",
+      "model": "Lc33-5572",
+      "specRows": 10,
+      "drawings": [
+        {
+          "image": "public/images/products/lc33-5572-lock-case-2.webp",
+          "speckle": 0.832
+        }
+      ]
+    },
+    {
+      "slug": "816-snet-lever-handle",
+      "model": "816 SNET",
+      "specRows": 10,
+      "drawings": [
+        {
+          "image": "public/images/products/816-snet-lever-handle-8.webp",
+          "speckle": 0.643
+        }
+      ]
+    },
+    {
+      "slug": "6491abet-lever-handle",
+      "model": "6491ABET",
+      "specRows": 10,
+      "drawings": [
+        {
+          "image": "public/images/products/6491abet-lever-handle-4.webp",
+          "speckle": 0.569
+        }
+      ]
+    },
+    {
+      "slug": "598-tubular-lock",
+      "model": "598",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/598-tubular-lock-4.webp",
+          "speckle": 0.94
+        }
+      ]
+    },
+    {
+      "slug": "lh853-snet-lever-handle",
+      "model": "LH853 SNET",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/lh853-snet-lever-handle-3.webp",
+          "speckle": 0.731
+        }
+      ]
+    },
+    {
+      "slug": "587-sset-light-duty-cylindrical-lock",
+      "model": "587 SSET",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/587-sset-light-duty-cylindrical-lock-3.webp",
+          "speckle": 0.448
+        }
+      ]
+    },
+    {
+      "slug": "70610-sc-grip-handle-set",
+      "model": "70610 SC",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/70610-sc-grip-handle-set-4.webp",
+          "speckle": 0.44
+        }
+      ]
+    },
+    {
+      "slug": "595-acbk-tubular-lock",
+      "model": "595 ACBK",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/595-acbk-tubular-lock-4.webp",
+          "speckle": 0.408
+        }
+      ]
+    },
+    {
+      "slug": "595-acet-tubular-lock",
+      "model": "595 ACET",
+      "specRows": 11,
+      "drawings": [
+        {
+          "image": "public/images/products/595-acet-tubular-lock-4.webp",
+          "speckle": 0.404
+        }
+      ]
+    },
+    {
+      "slug": "808-snet-lever-handle",
+      "model": "808 SNET",
+      "specRows": 12,
+      "drawings": [
+        {
+          "image": "public/images/products/808-snet-lever-handle-5.webp",
+          "speckle": 0.682
+        },
+        {
+          "image": "public/images/products/808-snet-lever-handle-6.webp",
+          "speckle": 0.636
+        }
+      ]
+    },
+    {
+      "slug": "575-cpet-tubular-lock",
+      "model": "575 CPET",
+      "specRows": 12,
+      "drawings": [
+        {
+          "image": "public/images/products/575-cpet-tubular-lock-3.webp",
+          "speckle": 0.587
+        }
+      ]
+    },
+    {
+      "slug": "587-ssbk-light-duty-cylindrical-lock",
+      "model": "587 SSBK",
+      "specRows": 12,
+      "drawings": [
+        {
+          "image": "public/images/products/587-ssbk-light-duty-cylindrical-lock-3.webp",
+          "speckle": 0.448
+        }
+      ]
+    },
+    {
+      "slug": "575-abet-tubular-lock",
+      "model": "575 ABET",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/575-abet-tubular-lock-3.webp",
+          "speckle": 0.757
+        }
+      ]
+    },
+    {
+      "slug": "8827-sset-lever-handle",
+      "model": "8827 SSET",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/8827-sset-lever-handle-2.webp",
+          "speckle": 0.62
+        }
+      ]
+    },
+    {
+      "slug": "8828-sset-lever-handle",
+      "model": "8828 SSET",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/8828-sset-lever-handle-2.webp",
+          "speckle": 0.496
+        }
+      ]
+    },
+    {
+      "slug": "607-ssbk-tubular-lock",
+      "model": "607 SSBK",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/607-ssbk-tubular-lock-3.webp",
+          "speckle": 0.457
+        }
+      ]
+    },
+    {
+      "slug": "607-pbet-tubular-lock",
+      "model": "607 PBET",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/607-pbet-tubular-lock-4.webp",
+          "speckle": 0.446
+        }
+      ]
+    },
+    {
+      "slug": "607-sset-tubular-lock",
+      "model": "607 SSET",
+      "specRows": 13,
+      "drawings": [
+        {
+          "image": "public/images/products/607-sset-tubular-lock-3.webp",
+          "speckle": 0.446
+        }
+      ]
+    },
+    {
+      "slug": "5831-sset-heavy-duty-cylindrical-lock",
+      "model": "5831 SSET",
+      "specRows": 14,
+      "drawings": [
+        {
+          "image": "public/images/products/5831-sset-heavy-duty-cylindrical-lock-4.webp",
+          "speckle": 0.732
+        }
+      ]
+    },
+    {
+      "slug": "lh852-bnbk-lever-handle",
+      "model": "LH852 BNBK",
+      "specRows": 14,
+      "drawings": [
+        {
+          "image": "public/images/products/lh852-bnbk-lever-handle-4.webp",
+          "speckle": 0.671
+        }
+      ]
+    },
+    {
+      "slug": "lh852-bnps-lever-handle",
+      "model": "LH852 BNPS",
+      "specRows": 14,
+      "drawings": [
+        {
+          "image": "public/images/products/lh852-bnps-lever-handle-3.webp",
+          "speckle": 0.669
+        }
+      ]
+    },
+    {
+      "slug": "564-night-latch-and-rim-lock",
+      "model": "564",
+      "specRows": 14,
+      "drawings": [
+        {
+          "image": "public/images/products/564-night-latch-and-rim-lock-7.webp",
+          "speckle": 0.489
+        }
+      ]
+    },
+    {
+      "slug": "5835-night-latch-and-rim-lock",
+      "model": "5835",
+      "specRows": 16,
+      "drawings": [
+        {
+          "image": "public/images/products/5835-night-latch-and-rim-lock-3.webp",
+          "speckle": 0.622
+        }
+      ]
+    },
+    {
+      "slug": "5836-night-latch-and-rim-lock",
+      "model": "5836",
+      "specRows": 16,
+      "drawings": [
+        {
+          "image": "public/images/products/5836-night-latch-and-rim-lock-3.webp",
+          "speckle": 0.6
+        }
+      ]
+    },
+    {
+      "slug": "eh01-lever-handle",
+      "model": "EH01",
+      "specRows": 18,
+      "drawings": [
+        {
+          "image": "public/images/products/eh01-lever-handle-3.webp",
+          "speckle": 0.462
+        }
+      ]
+    }
+  ]
+}

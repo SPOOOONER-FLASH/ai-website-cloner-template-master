@@ -245,6 +245,102 @@ const FROM_DRAWINGS = {
       ["Spindle", "8mm"],
     ],
   },
+
+  /*
+    2026-08-31 batch. Found with scripts/score-cad-drawings.mjs rather than by opening the
+    248-image shortlist one at a time; eight images opened, eight were drawings.
+
+    Two of these drawings show the EXTERIOR TRIM that ships with a panic device, not the
+    device. The rows are labelled as plate and lever so nobody reads 300 mm as the width of
+    a panic bar.
+  */
+  "036-panic-exit-device": {
+    drawing: "036-panic-exit-device-2.webp",
+    specs: [
+      ["Width", "200mm"],
+      ["Height", "190mm"],
+      ["Bar section", "4mm"],
+      ["Plate width", "20mm"],
+    ],
+  },
+  "001-panic-exit-device": {
+    drawing: "001-panic-exit-device-3.webp",
+    specs: [
+      ["Plate size", "300 × 75mm"],
+      ["Plate thickness", "1.5mm"],
+      ["Grip centre distance", "179mm"],
+      ["Projection", "60mm"],
+      ["Cylinder cutout", "Ø32mm"],
+    ],
+  },
+  // Prints bare figures with no unit; the whole drawing set is millimetres.
+  "030-panic-exit-device": {
+    drawing: "030-panic-exit-device-2.webp",
+    specs: [
+      ["Plate size", "178 × 52mm"],
+      ["Lever length", "140mm"],
+      ["Lever section", "22.5mm"],
+      ["Projection", "40mm"],
+    ],
+  },
+  "9003e-stainless-steel-handle": {
+    drawing: "9003e-stainless-steel-handle-6.webp",
+    specs: [
+      ["Lever length", "133mm"],
+      ["Rose diameter", "53mm"],
+      ["Lever section", "19mm"],
+      ["Rose thickness", "8mm"],
+      ["Spindle", "8mm"],
+      ["Projection", "62mm"],
+    ],
+  },
+  /*
+    9003E and 9007S are the same rose and the same spindle, and differ by one millimetre of
+    lever and one of projection — 133/62 against 132/63. Read off two drawings, not copied.
+  */
+  "9007s-stainless-steel-handle": {
+    drawing: "9007s-stainless-steel-handle-5.webp",
+    specs: [
+      ["Lever length", "132mm"],
+      ["Rose diameter", "53mm"],
+      ["Lever section", "19mm"],
+      ["Rose thickness", "8mm"],
+      ["Spindle", "8mm"],
+      ["Projection", "63mm"],
+    ],
+  },
+  // Bare figures again; the lever is an oval section, so 38 is its height, not a diameter.
+  "nc182-stainless-steel-handle": {
+    drawing: "nc182-stainless-steel-handle-4.webp",
+    specs: [
+      ["Lever length", "86mm"],
+      ["Lever section", "38mm"],
+      ["Lever drop", "49mm"],
+      ["Spindle", "8mm"],
+    ],
+  },
+  "bh41-bathroom-accessories": {
+    drawing: "bh41-bathroom-accessories-2.webp",
+    specs: [
+      ["Height", "45mm"],
+      ["Projection", "45mm"],
+      ["Standoff", "18.5mm"],
+      ["Bar section", "8mm"],
+    ],
+  },
+  /*
+    A floor-spring cement case. The drawing CONFIRMS the existing Size row rather than
+    replacing it — 129 × 321.5 is the cover plate — so no plate row is added here. What the
+    record was missing is that the plate overhangs a smaller body, and how deep that body is.
+  */
+  "f101-glass-door-patch-fittings": {
+    drawing: "f101-glass-door-patch-fittings-6.webp",
+    specs: [
+      ["Plate thickness", "1mm"],
+      ["Footprint", "308 × 108mm"],
+      ["Case depth", "40.5mm"],
+    ],
+  },
 };
 
 let updated = 0;
@@ -260,19 +356,24 @@ for (const file of readdirSync(DIR)) {
   let specs = [...(product.specs ?? [])];
   const before = specs.length;
 
+  let removedHere = 0;
   for (const label of entry.remove ?? []) {
     const had = specs.length;
     specs = specs.filter((s) => s.label !== label);
-    removed += had - specs.length;
+    removedHere += had - specs.length;
   }
+  removed += removedHere;
   for (const [label, value] of entry.specs) {
     if (specs.some((s) => s.label.toLowerCase() === label.toLowerCase())) continue;
     specs.push({ label, value });
   }
-  if (specs.length === before && !(entry.remove ?? []).length) continue;
+  // Report what actually changed. Counting every entry with a `remove` list as an update
+  // made a re-run look like it had rewritten thirteen products when it had rewritten none.
+  const gained = specs.length - before + removedHere;
+  if (!gained) continue;
 
   product.specs = specs;
-  added += entry.specs.length;
+  added += gained;
   updated += 1;
   if (!DRY) writeFileSync(path, `${JSON.stringify(product, null, 2)}\n`);
 }

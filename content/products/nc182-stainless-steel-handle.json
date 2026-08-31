@@ -18,6 +18,22 @@
     {
       "label": "Cylinder",
       "value": "Brass"
+    },
+    {
+      "label": "Lever length",
+      "value": "86mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "38mm"
+    },
+    {
+      "label": "Lever drop",
+      "value": "49mm"
+    },
+    {
+      "label": "Spindle",
+      "value": "8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -73,6 +89,22 @@
     {
       "label": "Cilindro",
       "value": "Latón"
+    },
+    {
+      "label": "Longitud de la manija",
+      "value": "86 mm"
+    },
+    {
+      "label": "Sección de la manija",
+      "value": "38 mm"
+    },
+    {
+      "label": "Caída de la manija",
+      "value": "49 mm"
+    },
+    {
+      "label": "Cuadradillo",
+      "value": "8 mm"
     }
   ],
   "summaryEs": "Una manija de acero inoxidable de acero inoxidable.",

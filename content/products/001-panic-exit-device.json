@@ -19,6 +19,26 @@
     {
       "label": "Finish",
       "value": "SS"
+    },
+    {
+      "label": "Plate size",
+      "value": "300 × 75mm"
+    },
+    {
+      "label": "Plate thickness",
+      "value": "1.5mm"
+    },
+    {
+      "label": "Grip centre distance",
+      "value": "179mm"
+    },
+    {
+      "label": "Projection",
+      "value": "60mm"
+    },
+    {
+      "label": "Cylinder cutout",
+      "value": "Ø32mm"
     }
   ],
   "material": "304SS",
@@ -89,6 +109,26 @@
     {
       "label": "Acabado",
       "value": "SS"
+    },
+    {
+      "label": "Medida de la placa",
+      "value": "300 × 75 mm"
+    },
+    {
+      "label": "Espesor de la placa",
+      "value": "1,5 mm"
+    },
+    {
+      "label": "Distancia entre centros del asa",
+      "value": "179 mm"
+    },
+    {
+      "label": "Saliente",
+      "value": "60 mm"
+    },
+    {
+      "label": "Recorte para el cilindro",
+      "value": "Ø 32 mm"
     }
   ],
   "summaryEs": "Una barra antipánico, para puerta cortafuego.",
