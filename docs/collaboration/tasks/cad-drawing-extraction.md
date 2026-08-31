@@ -1,7 +1,11 @@
 # 任务 · 从产品图纸提取尺寸（Codex / Kimi）
 
-> 派给：Codex 或 Kimi，二选一或分工。Claude 已做完 20 个，方法和坑都在下面。
+> 派给：Codex 或 Kimi，二选一或分工。Claude 已做完 19 个，方法和坑都在下面。
 > 前置阅读：`HANDOFF.md` 第八·七节、`scripts/cad-dimensions.mjs` 的头注。
+>
+> ⚠ **先 `git pull`。** 本任务的全部文件都在 `origin/main` 上。第一版任务书曾把清单
+> 指向 `tmp/claude-cad/` —— 那是 `.gitignore` 里的目录，**永远不会同步给别的 agent**。
+> 已改为下面这些跟踪路径。（这是 Claude 的疏忽，不是你的检出有问题。）
 
 ## 为什么这件事值得做
 
@@ -19,10 +23,10 @@
 
 | | |
 |---|---|
-| 已读并写入 | 20 个产品（见 `scripts/cad-dimensions.mjs` 的 `FROM_DRAWINGS`） |
-| 候选图片 | 248 张，清单 `tmp/claude-cad/candidates.json` |
+| 已读并写入 | 19 个产品（见 `scripts/cad-dimensions.mjs` 的 `FROM_DRAWINGS`，也列在 worklist 的 `alreadyRead`） |
+| 候选图片 | 248 张，清单 `docs/collaboration/tasks/cad-drawing-candidates.json` |
 | 已人工过目 | 28 张，命中约 20 张真图纸 |
-| 待办清单 | `tmp/claude-cad/worklist.json` —— A 组（规格 ≤3 行，收益最大）+ B 组（已有尺寸行，需核对是否与图纸矛盾） |
+| 待办清单 | `docs/collaboration/tasks/cad-drawing-worklist.json` —— A 组 27 个（规格 ≤3 行，收益最大）+ B 组 87 个（已有尺寸行，需核对是否与图纸矛盾） |
 | 剩余缺口 | 9 个产品 0 行规格 · 27 个 1–2 行 |
 
 ## ⚠ 别重走的三条弯路

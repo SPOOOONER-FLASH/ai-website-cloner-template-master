@@ -168,7 +168,9 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 同一张营销拼图被逐产品重新编码，**哈希去重也救不了**（248 张候选去重后仍是 246 张）。
 
 **现状**：248 张候选人工读了 28 张，命中约 20 张真图纸。剩余清单在
-`tmp/claude-cad/worklist.json`（A 组 = 规格 ≤3 行，B 组 = 有尺寸行待核对）。
+`docs/collaboration/tasks/cad-drawing-worklist.json`（A 组 27 个 = 规格 ≤3 行，
+B 组 87 个 = 有尺寸行待核对）。⚠ 早先的版本把它放在 `tmp/` —— 那是 gitignore 的，
+别的 agent 永远收不到，已移到跟踪路径。
 **这一步要么继续人眼读，要么上 OCR。别再花时间调像素判据了。**
 完整任务书（含写入格式与三条纪律）：`docs/collaboration/tasks/cad-drawing-extraction.md`
 

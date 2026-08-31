@@ -1,0 +1,1456 @@
+{
+  "generatedBy": "scripts/cad-dimensions.mjs workflow — see docs/collaboration/tasks/cad-drawing-extraction.md",
+  "note": "candidateImages are SHORTLISTED, not confirmed drawings. Roughly one in three is a photograph; open it before trusting it.",
+  "alreadyRead": [
+    "100-glass-door-handle",
+    "102-glass-door-handle",
+    "104-glass-door-handle",
+    "106-glass-door-handle",
+    "107-glass-door-handle",
+    "19-130mm-glass-door-handle",
+    "9082e-stainless-steel-handle",
+    "9005e-stainless-steel-handle",
+    "9004s-stainless-steel-handle",
+    "bh38-bathroom-accessories",
+    "bh39-bathroom-accessories",
+    "bh42-bathroom-accessories",
+    "bh54-bathroom-accessories",
+    "bh21-bathroom-accessories",
+    "lc07-85-45mm-lock-case",
+    "lc9045-lock-case",
+    "027-panic-exit-device",
+    "ds01-door-stopper",
+    "9014-stainless-steel-handle"
+  ],
+  "groupA": [
+    {
+      "model": "308-D",
+      "slug": "308-d-d-panic-exit-device",
+      "category": "panic-exit-devices/special-applications",
+      "specRows": 0,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/308-d-d-panic-exit-device.webp"
+      ]
+    },
+    {
+      "model": "308-S",
+      "slug": "308-s-s-panic-exit-device",
+      "category": "panic-exit-devices/special-applications",
+      "specRows": 0,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/308-s-s-panic-exit-device.webp"
+      ]
+    },
+    {
+      "model": "Stainless Steel Wall Hook",
+      "slug": "stainless-steel-wall-hook",
+      "category": "bathroom-accessories",
+      "specRows": 1,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/stainless-steel-wall-hook.webp"
+      ]
+    },
+    {
+      "model": "023 ETAN",
+      "slug": "023-etan-anti-pick-panic-exit-device",
+      "category": "panic-exit-devices/exterior-trim",
+      "specRows": 2,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/023-etan-anti-pick-panic-exit-device.webp"
+      ]
+    },
+    {
+      "model": "036",
+      "slug": "036-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 2,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/036-panic-exit-device.webp",
+        "public/images/products/036-panic-exit-device-3.webp",
+        "public/images/products/036-panic-exit-device-2.webp"
+      ]
+    },
+    {
+      "model": "309-S",
+      "slug": "309-s-s-panic-exit-device",
+      "category": "panic-exit-devices/special-applications",
+      "specRows": 2,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/309-s-s-panic-exit-device-3.webp",
+        "public/images/products/309-s-s-panic-exit-device-5.webp",
+        "public/images/products/309-s-s-panic-exit-device-6.webp",
+        "public/images/products/309-s-s-panic-exit-device-2.webp"
+      ]
+    },
+    {
+      "model": "FB013",
+      "slug": "fb013-door-flush-bolt",
+      "category": "hardware-accessories/door-flush-bolts",
+      "specRows": 2,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/fb013-door-flush-bolt.webp"
+      ]
+    },
+    {
+      "model": "SS027",
+      "slug": "ss027-brass-and-steel-hinges",
+      "category": "brass-steel-hinges",
+      "specRows": 2,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/ss027-brass-and-steel-hinges.webp"
+      ]
+    },
+    {
+      "model": "9007S",
+      "slug": "9007s-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9007s-stainless-steel-handle-6.webp",
+        "public/images/products/9007s-stainless-steel-handle-5.webp",
+        "public/images/products/9007s-stainless-steel-handle-4.webp",
+        "public/images/products/9007s-stainless-steel-handle-8.webp"
+      ]
+    },
+    {
+      "model": "9003E",
+      "slug": "9003e-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9003e-stainless-steel-handle-6.webp",
+        "public/images/products/9003e-stainless-steel-handle-5.webp"
+      ]
+    },
+    {
+      "model": "BH41",
+      "slug": "bh41-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/bh41-bathroom-accessories-2.webp",
+        "public/images/products/bh41-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "NC182",
+      "slug": "nc182-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/nc182-stainless-steel-handle-4.webp",
+        "public/images/products/nc182-stainless-steel-handle-6.webp",
+        "public/images/products/nc182-stainless-steel-handle.webp",
+        "public/images/products/nc182-stainless-steel-handle-2.webp"
+      ]
+    },
+    {
+      "model": "FB005",
+      "slug": "fb005-door-flush-bolt",
+      "category": "hardware-accessories/door-flush-bolts",
+      "specRows": 3,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/fb005-door-flush-bolt.webp"
+      ]
+    },
+    {
+      "model": "030",
+      "slug": "030-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/030-panic-exit-device-2.webp"
+      ]
+    },
+    {
+      "model": "001",
+      "slug": "001-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/001-panic-exit-device.webp",
+        "public/images/products/001-panic-exit-device-3.webp"
+      ]
+    },
+    {
+      "model": "9008E",
+      "slug": "9008e-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9008e-stainless-steel-handle-4.webp"
+      ]
+    },
+    {
+      "model": "DV08",
+      "slug": "dv08-door-viewer",
+      "category": "hardware-accessories/door-viewers",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/dv08-door-viewer-8.webp"
+      ]
+    },
+    {
+      "model": "S03",
+      "slug": "s03-sliding-hook-lock",
+      "category": "sliding-hook-locks",
+      "specRows": 3,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/s03-sliding-hook-lock-2.webp"
+      ]
+    },
+    {
+      "model": "033",
+      "slug": "033-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/033-panic-exit-device-3.webp"
+      ]
+    },
+    {
+      "model": "S02 CP",
+      "slug": "s02-cp-sliding-hook-lock",
+      "category": "sliding-hook-locks",
+      "specRows": 3,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/s02-cp-sliding-hook-lock-2.webp"
+      ]
+    },
+    {
+      "model": "9015",
+      "slug": "9015-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9015-stainless-steel-handle-3.webp",
+        "public/images/products/9015-stainless-steel-handle-6.webp",
+        "public/images/products/9015-stainless-steel-handle.webp"
+      ]
+    },
+    {
+      "model": "9005S",
+      "slug": "9005s-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9005s-stainless-steel-handle-4.webp"
+      ]
+    },
+    {
+      "model": "9001",
+      "slug": "9001-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/9001-stainless-steel-handle-4.webp"
+      ]
+    },
+    {
+      "model": "NCD",
+      "slug": "ncd-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/ncd-stainless-steel-handle.webp"
+      ]
+    },
+    {
+      "model": "NC013",
+      "slug": "nc013-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/nc013-stainless-steel-handle.webp",
+        "public/images/products/nc013-stainless-steel-handle-2.webp"
+      ]
+    },
+    {
+      "model": "NCB",
+      "slug": "ncb-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "specRows": 3,
+      "dimensionalRows": [],
+      "candidateImages": [
+        "public/images/products/ncb-stainless-steel-handle.webp"
+      ]
+    },
+    {
+      "model": "70BK",
+      "slug": "70bk-lock-cylinder",
+      "category": "lock-cylinders",
+      "specRows": 3,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/70bk-lock-cylinder.webp"
+      ]
+    }
+  ],
+  "groupB": [
+    {
+      "model": "310",
+      "slug": "310-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/310-panic-exit-device-7.webp",
+        "public/images/products/310-panic-exit-device.webp",
+        "public/images/products/310-panic-exit-device-4.webp",
+        "public/images/products/310-panic-exit-device-3.webp",
+        "public/images/products/310-panic-exit-device-2.webp",
+        "public/images/products/310-panic-exit-device-6.webp",
+        "public/images/products/310-panic-exit-device-8.webp"
+      ]
+    },
+    {
+      "model": "330",
+      "slug": "330-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/330-panic-exit-device-3.webp",
+        "public/images/products/330-panic-exit-device-2.webp",
+        "public/images/products/330-panic-exit-device.webp",
+        "public/images/products/330-panic-exit-device-4.webp",
+        "public/images/products/330-panic-exit-device-5.webp",
+        "public/images/products/330-panic-exit-device-6.webp"
+      ]
+    },
+    {
+      "model": "BH34",
+      "slug": "bh34-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh34-bathroom-accessories-3.webp",
+        "public/images/products/bh34-bathroom-accessories.webp",
+        "public/images/products/bh34-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "EH01",
+      "slug": "eh01-lever-handle",
+      "category": "lever-handles",
+      "specRows": 18,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/eh01-lever-handle-2.webp",
+        "public/images/products/eh01-lever-handle-3.webp"
+      ]
+    },
+    {
+      "model": "320",
+      "slug": "320-two-point-locking-exit-device",
+      "category": "panic-exit-devices/multi-point",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/320-two-point-locking-exit-device.webp"
+      ]
+    },
+    {
+      "model": "BH10",
+      "slug": "bh10-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Thickness",
+        "Diameter"
+      ],
+      "candidateImages": [
+        "public/images/products/bh10-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "BH11",
+      "slug": "bh11-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh11-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "Lc8520PS",
+      "slug": "lc8520ps-lock-case",
+      "category": "lock-cases",
+      "specRows": 9,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc8520ps-lock-case.webp",
+        "public/images/products/lc8520ps-lock-case-2.webp"
+      ]
+    },
+    {
+      "model": "BH13",
+      "slug": "bh13-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh13-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "EPT01",
+      "slug": "ept01-door-power-transfer-devices",
+      "category": "hardware-accessories/power-transfer-devices",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Width"
+      ],
+      "candidateImages": [
+        "public/images/products/ept01-door-power-transfer-devices-2.webp",
+        "public/images/products/ept01-door-power-transfer-devices-3.webp",
+        "public/images/products/ept01-door-power-transfer-devices-4.webp",
+        "public/images/products/ept01-door-power-transfer-devices.webp"
+      ]
+    },
+    {
+      "model": "BH19",
+      "slug": "bh19-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh19-bathroom-accessories-3.webp",
+        "public/images/products/bh19-bathroom-accessories-5.webp"
+      ]
+    },
+    {
+      "model": "BH37",
+      "slug": "bh37-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh37-bathroom-accessories-3.webp",
+        "public/images/products/bh37-bathroom-accessories.webp"
+      ]
+    },
+    {
+      "model": "DV12-S",
+      "slug": "dv12-s-door-viewer",
+      "category": "hardware-accessories/door-viewers",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Diameter"
+      ],
+      "candidateImages": [
+        "public/images/products/dv12-s-door-viewer.webp"
+      ]
+    },
+    {
+      "model": "BH14",
+      "slug": "bh14-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh14-bathroom-accessories-5.webp"
+      ]
+    },
+    {
+      "model": "BH18",
+      "slug": "bh18-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/bh18-bathroom-accessories-5.webp",
+        "public/images/products/bh18-bathroom-accessories.webp",
+        "public/images/products/bh18-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "8827 SSET",
+      "slug": "8827-sset-lever-handle",
+      "category": "lever-handles",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/8827-sset-lever-handle-2.webp"
+      ]
+    },
+    {
+      "model": "8828 SSET",
+      "slug": "8828-sset-lever-handle",
+      "category": "lever-handles",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/8828-sset-lever-handle-2.webp"
+      ]
+    },
+    {
+      "model": "598",
+      "slug": "598-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/598-tubular-lock-4.webp"
+      ]
+    },
+    {
+      "model": "Lc8530BK",
+      "slug": "lc8530bk-lock-case",
+      "category": "lock-cases",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc8530bk-lock-case.webp"
+      ]
+    },
+    {
+      "model": "70750 PB",
+      "slug": "70750-pb-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70750-pb-grip-handle-set-5.webp",
+        "public/images/products/70750-pb-grip-handle-set.webp"
+      ]
+    },
+    {
+      "model": "302",
+      "slug": "302-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/302-panic-exit-device.webp",
+        "public/images/products/302-panic-exit-device-4.webp",
+        "public/images/products/302-panic-exit-device-3.webp"
+      ]
+    },
+    {
+      "model": "BH22",
+      "slug": "bh22-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh22-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "F132",
+      "slug": "f132-glass-door-patch-fittings",
+      "category": "glass-door-accessories/glass-door-patch-fittings",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/f132-glass-door-patch-fittings-4.webp"
+      ]
+    },
+    {
+      "model": "BH36",
+      "slug": "bh36-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh36-bathroom-accessories-3.webp",
+        "public/images/products/bh36-bathroom-accessories.webp"
+      ]
+    },
+    {
+      "model": "70610 AB",
+      "slug": "70610-ab-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70610-ab-grip-handle-set.webp",
+        "public/images/products/70610-ab-grip-handle-set-6.webp"
+      ]
+    },
+    {
+      "model": "BH09",
+      "slug": "bh09-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh09-bathroom-accessories-3.webp",
+        "public/images/products/bh09-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "BH20",
+      "slug": "bh20-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh20-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "BH02",
+      "slug": "bh02-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh02-bathroom-accessories.webp",
+        "public/images/products/bh02-bathroom-accessories-6.webp",
+        "public/images/products/bh02-bathroom-accessories-4.webp",
+        "public/images/products/bh02-bathroom-accessories-5.webp"
+      ]
+    },
+    {
+      "model": "BH23",
+      "slug": "bh23-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh23-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "Lc8525",
+      "slug": "lc8525-lock-case",
+      "category": "lock-cases",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc8525-lock-case-3.webp",
+        "public/images/products/lc8525-lock-case-7.webp",
+        "public/images/products/lc8525-lock-case.webp"
+      ]
+    },
+    {
+      "model": "BH25",
+      "slug": "bh25-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh25-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "808 SNET",
+      "slug": "808-snet-lever-handle",
+      "category": "lever-handles",
+      "specRows": 12,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/808-snet-lever-handle-5.webp",
+        "public/images/products/808-snet-lever-handle-6.webp"
+      ]
+    },
+    {
+      "model": "BH08",
+      "slug": "bh08-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh08-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "BH26",
+      "slug": "bh26-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/bh26-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "BH04",
+      "slug": "bh04-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh04-bathroom-accessories-4.webp",
+        "public/images/products/bh04-bathroom-accessories.webp",
+        "public/images/products/bh04-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "595 ACET",
+      "slug": "595-acet-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/595-acet-tubular-lock-4.webp"
+      ]
+    },
+    {
+      "model": "BH05",
+      "slug": "bh05-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Thickness",
+        "Width"
+      ],
+      "candidateImages": [
+        "public/images/products/bh05-bathroom-accessories-2.webp",
+        "public/images/products/bh05-bathroom-accessories-7.webp",
+        "public/images/products/bh05-bathroom-accessories-5.webp",
+        "public/images/products/bh05-bathroom-accessories.webp"
+      ]
+    },
+    {
+      "model": "BH35",
+      "slug": "bh35-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/bh35-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "575 ABET",
+      "slug": "575-abet-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/575-abet-tubular-lock-3.webp"
+      ]
+    },
+    {
+      "model": "EH02",
+      "slug": "eh02-lever-handle",
+      "category": "lever-handles",
+      "specRows": 18,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/eh02-lever-handle-3.webp"
+      ]
+    },
+    {
+      "model": "BH03",
+      "slug": "bh03-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 6,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh03-bathroom-accessories-3.webp",
+        "public/images/products/bh03-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "BH16",
+      "slug": "bh16-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 6,
+      "dimensionalRows": [
+        "Size",
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh16-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "Lc7065",
+      "slug": "lc7065-lock-case",
+      "category": "lock-cases",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc7065-lock-case-3.webp"
+      ]
+    },
+    {
+      "model": "BH17",
+      "slug": "bh17-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 6,
+      "dimensionalRows": [
+        "Size",
+        "Length",
+        "Thickness"
+      ],
+      "candidateImages": [
+        "public/images/products/bh17-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "BH07",
+      "slug": "bh07-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 9,
+      "dimensionalRows": [
+        "Thickness",
+        "Width"
+      ],
+      "candidateImages": [
+        "public/images/products/bh07-bathroom-accessories-5.webp",
+        "public/images/products/bh07-bathroom-accessories.webp",
+        "public/images/products/bh07-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "564",
+      "slug": "564-night-latch-and-rim-lock",
+      "category": "night-latches-rim-locks",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/564-night-latch-and-rim-lock-7.webp"
+      ]
+    },
+    {
+      "model": "816 SNET",
+      "slug": "816-snet-lever-handle",
+      "category": "lever-handles",
+      "specRows": 10,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/816-snet-lever-handle-8.webp"
+      ]
+    },
+    {
+      "model": "LH852 BNPS",
+      "slug": "lh852-bnps-lever-handle",
+      "category": "lever-handles",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/lh852-bnps-lever-handle-3.webp"
+      ]
+    },
+    {
+      "model": "LC04 85*60",
+      "slug": "lc04-85-60-lock-case",
+      "category": "lock-cases",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc04-85-60-lock-case-5.webp",
+        "public/images/products/lc04-85-60-lock-case-2.webp"
+      ]
+    },
+    {
+      "model": "LH852 BNBK",
+      "slug": "lh852-bnbk-lever-handle",
+      "category": "lever-handles",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/lh852-bnbk-lever-handle-4.webp"
+      ]
+    },
+    {
+      "model": "595 ACBK",
+      "slug": "595-acbk-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/595-acbk-tubular-lock-4.webp"
+      ]
+    },
+    {
+      "model": "607 PBET",
+      "slug": "607-pbet-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/607-pbet-tubular-lock-4.webp"
+      ]
+    },
+    {
+      "model": "607 SSET",
+      "slug": "607-sset-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/607-sset-tubular-lock-3.webp"
+      ]
+    },
+    {
+      "model": "FB016",
+      "slug": "fb016-door-flush-bolt",
+      "category": "hardware-accessories/door-flush-bolts",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Length",
+        "Width"
+      ],
+      "candidateImages": [
+        "public/images/products/fb016-door-flush-bolt.webp"
+      ]
+    },
+    {
+      "model": "5831 SSET",
+      "slug": "5831-sset-heavy-duty-cylindrical-lock",
+      "category": "knob-locks/heavy-duty-cylindrical-locks",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/5831-sset-heavy-duty-cylindrical-lock-4.webp"
+      ]
+    },
+    {
+      "model": "315",
+      "slug": "315-pry-latch",
+      "category": "hardware-accessories/latches",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/315-pry-latch-2.webp"
+      ]
+    },
+    {
+      "model": "314",
+      "slug": "314-alarm-panic-bar-exit-device",
+      "category": "panic-exit-devices/alarmed",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/314-alarm-panic-bar-exit-device-2.webp"
+      ]
+    },
+    {
+      "model": "70720 SM",
+      "slug": "70720-sm-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 10,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70720-sm-grip-handle-set.webp",
+        "public/images/products/70720-sm-grip-handle-set-4.webp"
+      ]
+    },
+    {
+      "model": "BH01",
+      "slug": "bh01-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh01-bathroom-accessories-5.webp",
+        "public/images/products/bh01-bathroom-accessories-2.webp"
+      ]
+    },
+    {
+      "model": "70780 AB",
+      "slug": "70780-ab-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70780-ab-grip-handle-set.webp",
+        "public/images/products/70780-ab-grip-handle-set-2.webp"
+      ]
+    },
+    {
+      "model": "575 CPET",
+      "slug": "575-cpet-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 12,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/575-cpet-tubular-lock-3.webp"
+      ]
+    },
+    {
+      "model": "70710 PB",
+      "slug": "70710-pb-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70710-pb-grip-handle-set.webp"
+      ]
+    },
+    {
+      "model": "607 SSBK",
+      "slug": "607-ssbk-tubular-lock",
+      "category": "knob-locks/tubular-locks",
+      "specRows": 13,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/607-ssbk-tubular-lock-3.webp"
+      ]
+    },
+    {
+      "model": "Keyed Deadbolt Lock Set",
+      "slug": "ansi-grade-3-keyed-deadbolt-lock-set",
+      "category": "deadbolts",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/ansi-grade-3-keyed-deadbolt.webp"
+      ]
+    },
+    {
+      "model": "Single oval cylinder",
+      "slug": "single-oval-cylinder-lock-cylinder",
+      "category": "lock-cylinders",
+      "specRows": 7,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/single-oval-cylinder-lock-cylinder-4.webp"
+      ]
+    },
+    {
+      "model": "70710 SN",
+      "slug": "70710-sn-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70710-sn-grip-handle-set.webp"
+      ]
+    },
+    {
+      "model": "1073S",
+      "slug": "1073s-night-latch-and-rim-lock",
+      "category": "night-latches-rim-locks",
+      "specRows": 14,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/1073s-night-latch-and-rim-lock-2.webp"
+      ]
+    },
+    {
+      "model": "BH52",
+      "slug": "bh52-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size",
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh52-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "Lc33-5572",
+      "slug": "lc33-5572-lock-case",
+      "category": "lock-cases",
+      "specRows": 10,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc33-5572-lock-case-2.webp"
+      ]
+    },
+    {
+      "model": "LH853 SNET",
+      "slug": "lh853-snet-lever-handle",
+      "category": "lever-handles",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/lh853-snet-lever-handle-3.webp"
+      ]
+    },
+    {
+      "model": "812 SSET",
+      "slug": "812-sset-lever-handle",
+      "category": "lever-handles",
+      "specRows": 10,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/812-sset-lever-handle-6.webp",
+        "public/images/products/812-sset-lever-handle-2.webp",
+        "public/images/products/812-sset-lever-handle.webp"
+      ]
+    },
+    {
+      "model": "70722 DC",
+      "slug": "70722-dc-grip-handle-set",
+      "category": "grip-handle-sets",
+      "specRows": 11,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/70722-dc-grip-handle-set-2.webp"
+      ]
+    },
+    {
+      "model": "BH50",
+      "slug": "bh50-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size",
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh50-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "BH33",
+      "slug": "bh33-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh33-bathroom-accessories.webp",
+        "public/images/products/bh33-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "BH06",
+      "slug": "bh06-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 9,
+      "dimensionalRows": [
+        "Thickness",
+        "Width"
+      ],
+      "candidateImages": [
+        "public/images/products/bh06-bathroom-accessories-4.webp"
+      ]
+    },
+    {
+      "model": "LH854",
+      "slug": "lh854-lever-handle",
+      "category": "lever-handles",
+      "specRows": 9,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/lh854-lever-handle-4.webp"
+      ]
+    },
+    {
+      "model": "6491ABET",
+      "slug": "6491abet-lever-handle",
+      "category": "lever-handles",
+      "specRows": 10,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/6491abet-lever-handle-4.webp"
+      ]
+    },
+    {
+      "model": "BH30",
+      "slug": "bh30-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size",
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh30-bathroom-accessories-6.webp"
+      ]
+    },
+    {
+      "model": "5835",
+      "slug": "5835-night-latch-and-rim-lock",
+      "category": "night-latches-rim-locks",
+      "specRows": 16,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/5835-night-latch-and-rim-lock-3.webp"
+      ]
+    },
+    {
+      "model": "BH29",
+      "slug": "bh29-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/bh29-bathroom-accessories.webp"
+      ]
+    },
+    {
+      "model": "BH31",
+      "slug": "bh31-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Size",
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/bh31-bathroom-accessories-3.webp"
+      ]
+    },
+    {
+      "model": "Lc17",
+      "slug": "lc17-lock-case",
+      "category": "lock-cases",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/lc17-lock-case.webp"
+      ]
+    },
+    {
+      "model": "Lc8520B",
+      "slug": "lc8520b-lock-case",
+      "category": "lock-cases",
+      "specRows": 8,
+      "dimensionalRows": [
+        "Backset",
+        "Centre distance"
+      ],
+      "candidateImages": [
+        "public/images/products/lc8520b-lock-case.webp"
+      ]
+    },
+    {
+      "model": "5836",
+      "slug": "5836-night-latch-and-rim-lock",
+      "category": "night-latches-rim-locks",
+      "specRows": 16,
+      "dimensionalRows": [
+        "Backset",
+        "Deadbolt throw"
+      ],
+      "candidateImages": [
+        "public/images/products/5836-night-latch-and-rim-lock-3.webp"
+      ]
+    },
+    {
+      "model": "BH27",
+      "slug": "bh27-bathroom-accessories",
+      "category": "bathroom-accessories",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Size"
+      ],
+      "candidateImages": [
+        "public/images/products/bh27-bathroom-accessories.webp"
+      ]
+    },
+    {
+      "model": "303",
+      "slug": "303-panic-exit-device",
+      "category": "panic-exit-devices",
+      "specRows": 5,
+      "dimensionalRows": [
+        "Length"
+      ],
+      "candidateImages": [
+        "public/images/products/303-panic-exit-device.webp"
+      ]
+    },
+    {
+      "model": "L001",
+      "slug": "l001-latch",
+      "category": "hardware-accessories/latches",
+      "specRows": 4,
+      "dimensionalRows": [
+        "Backset"
+      ],
+      "candidateImages": [
+        "public/images/products/l001-latch.webp"
+      ]
+    }
+  ]
+}
