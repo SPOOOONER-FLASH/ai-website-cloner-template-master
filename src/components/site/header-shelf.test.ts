@@ -1,12 +1,18 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
 const componentRoot = join(process.cwd(), "src", "components", "site");
 const header = readFileSync(join(componentRoot, "SiteHeader.tsx"), "utf8");
 const drawer = readFileSync(join(componentRoot, "SiteMenuDrawer.tsx"), "utf8");
+const footer = readFileSync(join(componentRoot, "SiteFooter.tsx"), "utf8");
 const css = readFileSync(join(process.cwd(), "src", "app", "globals.css"), "utf8");
+const navigation = JSON.parse(
+  readFileSync(join(process.cwd(), "content", "navigation.json"), "utf8"),
+) as {
+  footer: Array<{ label: string; labelEs: string; href: string }>;
+};
 
 test("desktop navigation exposes the two architectural shelves accessibly", () => {
   assert.match(header, /aria-controls="company-shelf"/);
@@ -45,4 +51,39 @@ test("mobile drawer mirrors the expanded company and buying routes", () => {
   assert.match(drawer, /Comprar ahora/);
   assert.match(drawer, /Price list/);
   assert.match(drawer, /Lista de precios/);
+});
+
+test("footer exposes only the four direct buying destinations", () => {
+  assert.deepEqual(
+    navigation.footer,
+    [
+      { label: "Contact", labelEs: "Contacto", href: "/contact" },
+      { label: "FAQ", labelEs: "Preguntas frecuentes", href: "/faq" },
+    ],
+  );
+  assert.match(footer, /alibaba-hard-cta[^\n]*styles\.alibabaCta/);
+  assert.match(footer, /siteSettings\.alibaba\.label/);
+  assert.match(footer, /mailto:\$\{siteSettings\.contact\.email\}/);
+});
+
+test("removing footer shortcuts does not remove their destination pages", () => {
+  for (const route of [
+    "downloads",
+    "company",
+    "certifications",
+    "projects",
+    "services",
+    "events",
+  ]) {
+    assert.equal(
+      existsSync(join(process.cwd(), "src", "app", "(en)", route, "page.tsx")),
+      true,
+      `expected /${route}/ page to remain available`,
+    );
+  }
+  assert.equal(
+    existsSync(join(process.cwd(), "src", "app", "(en)", "request", "price-list", "page.tsx")),
+    true,
+    "expected /request/price-list/ page to remain available",
+  );
 });

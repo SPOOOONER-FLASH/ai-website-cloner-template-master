@@ -1,0 +1,10 @@
+.alibabaCta {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 0;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  padding: 1.2rem 1.6rem;
+  font-size: var(--text-c1);
+  line-height: var(--leading-c1);
+}

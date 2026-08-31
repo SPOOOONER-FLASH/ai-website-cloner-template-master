@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
+import styles from "./SiteFooter.module.css";
 
 /**
  * Imprint and Privacy Notice have no route in the plan yet — they are legal pages,
@@ -54,7 +55,7 @@ export function SiteFooter() {
                   <li key={link.label} className="col-span-2 md:col-span-3">
                     <Link
                       href={link.href}
-                      className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                      className={`alibaba-hard-cta ${styles.alibabaCta}`}
                     >
                       {link.label}
                     </Link>
