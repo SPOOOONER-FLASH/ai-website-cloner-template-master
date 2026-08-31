@@ -109,9 +109,26 @@ stop, audit, or ask. Read the two lines below and start working.
 | A file you need is already modified | Overlap, possibly | `git diff -- <file>`. Different lines → work. Same lines → stop on that file only, and go do something else on your list. |
 | Anything else unfamiliar | Someone's work in progress | Leave it. Do not restore, clean, format, move, or delete it. |
 
-**Do not spend turns re-auditing.** Two commands settle it — `git status --short` and
-`git log --oneline -5`. If they do not settle it, the answer is "not mine, carry on",
-not another investigation.
+**Do not spend turns re-auditing.** Three commands settle it — `git status --short`,
+`git log --oneline -5`, and `cat docs/collaboration/NOW.md`. If they do not settle it,
+the answer is "not mine, carry on", not another investigation.
+
+### The claim board
+
+`docs/collaboration/NOW.md` answers one question: *whose are these files?* Add a row
+before a **bulk** write (more than three files, or any glob — `content/products/*.json`,
+`out/`, `public/images/**`, a cross-directory rename). Delete your own row when that work
+is committed. Never delete someone else's.
+
+One row costs ~50 tokens. On 2026-08-31 Codex stopped a trade-show task to work out who
+had added ~140 product JSONs and a full `out/` diff mid-session; that investigation cost
+thousands of tokens and a halt. The row would have cost fifty.
+
+**It is not a lock and it grants nothing.** The client asked for short feedback loops and
+explicitly ruled out locks — a lock blocks the other agent's commit. If the board shows
+someone on a path you wanted, go do something else on your list; do not wait, and do not
+ask. If a row looks stale, assume they forgot to delete it and carry on under the dirty-tree
+rules above.
 
 **Do not wait for the other agent.** If your part is done and theirs is not, commit yours
 and report. Whoever finishes last commits last; there is no merge ceremony.
@@ -128,6 +145,13 @@ file disagree, the task file wins and `HANDOFF.md` should be reduced to a pointe
 
 Checkpoint every two or three finished objectives: commit, write the update, and let the
 context shrink. A long unbroken session is not thoroughness, it is an un-saved file.
+
+**No agent here can watch its own context meter.** There is no "compact at 80%" any of us
+can schedule — compaction is something the harness does to us, and it is lossy: it
+summarises a transcript only this session can read. The checkpoint above is the version
+that works, because an agent-update is durable, is shared with the other two agents, and
+survives the session ending. Treat "am I getting long?" as "have I committed and written
+the update yet?" — if yes, a fresh session costs almost nothing; if no, that is the bug.
 
 ### Finish and communicate quickly
 
