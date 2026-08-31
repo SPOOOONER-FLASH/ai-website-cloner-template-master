@@ -102,7 +102,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             {companyStats.map((stat) => (
               <div key={stat.label} className="border-t border-line pt-16">
                 <dt className="text-c2 text-ink-secondary">{stat.label}</dt>
-                <dd className="mt-8 text-h3 text-ink">{stat.value}</dd>
+                <dd className="mt-8 text-lead tabular-nums text-ink">{stat.value}</dd>
               </div>
             ))}
           </dl>

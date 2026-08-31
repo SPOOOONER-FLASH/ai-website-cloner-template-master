@@ -79,7 +79,7 @@ export function ProjectDetail({
             <h1 className="mt-16 text-h1 text-ink">{name}</h1>
           </div>
           <div className="col-span-full mt-24 lg:col-span-4 lg:col-start-9 xl:col-span-7 xl:col-start-18">
-            <p className="text-h3 text-ink">{buildingType}</p>
+            <p className="text-lead text-ink">{buildingType}</p>
             <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">
               {text.note}
             </p>
@@ -100,7 +100,7 @@ export function ProjectDetail({
             <h2 className="text-h2 text-ink">{text.brief}</h2>
           </div>
           <div className="col-span-full space-y-24 lg:col-span-7 lg:col-start-6 xl:col-span-14 xl:col-start-11">
-            <p className="text-h3 text-ink">{summary}</p>
+            <p className="text-lead text-ink">{summary}</p>
             {body.map((paragraph) => (
               <p key={paragraph} className="text-c1 text-ink-secondary">
                 {paragraph}

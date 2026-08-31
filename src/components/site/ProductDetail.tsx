@@ -230,7 +230,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
 
           <div className="col-span-full mt-24 xl:col-span-8 xl:col-start-17">
             <p className="text-c2 text-ink-secondary">{t.model}</p>
-            <p className="mt-8 text-h3 text-ink">
+            <p className="mt-8 text-lead tabular-nums text-ink">
               {product.modelTbc ? t.referenceOnRequest : product.model}
             </p>
           </div>
@@ -249,7 +249,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
 
               <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
                 <div>
-                  <p className="text-h3 text-ink">{summary}</p>
+                  <p className="text-lead text-ink">{summary}</p>
                   {/* CMS-authored long copy. Absent on every imported record — the legacy
                       catalogue carries specifications, not prose, and none is invented. */}
                   {!es && product.description ? (
@@ -366,7 +366,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     className="grid grid-cols-2 gap-16 border-b border-line py-16 text-c1"
                   >
                     <dt className="text-ink-secondary">{spec.label}</dt>
-                    <dd className="text-ink">
+                    <dd className="tabular-nums text-ink">
                       {spec.value}
                       {spec.unit ? ` ${spec.unit}` : ""}
                     </dd>
@@ -416,7 +416,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     key={`${certification.name}-${certification.standard ?? ""}`}
                     className="border border-line bg-surface-alt p-24"
                   >
-                    <p className="text-h3 text-ink">{certification.name}</p>
+                    <p className="text-c1 font-semibold text-ink">{certification.name}</p>
                     {certification.standard ? (
                       <p className="mt-8 text-c1 text-ink-secondary">
                         {certification.standard}

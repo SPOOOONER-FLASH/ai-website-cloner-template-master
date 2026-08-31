@@ -61,9 +61,24 @@ test("footer exposes only the four direct buying destinations", () => {
       { label: "FAQ", labelEs: "Preguntas frecuentes", href: "/faq" },
     ],
   );
-  assert.match(footer, /alibaba-hard-cta[^\n]*styles\.alibabaCta/);
   assert.match(footer, /siteSettings\.alibaba\.label/);
   assert.match(footer, /mailto:\$\{siteSettings\.contact\.email\}/);
+
+  /*
+    The legal row is plain text, not buttons.
+
+    This previously asserted `alibaba-hard-cta ... styles.alibabaCta` on Imprint, Contact
+    and Privacy Notice. That is the black hard-shadow storefront CTA, and it rendered the
+    legal row as three black slabs sitting next to a plain "Data preferences" — the
+    lowest-priority links on the page reading as its primary action. The client rejected
+    it on sight, 2026-08-31, and asked for the same marker treatment as the text beside it.
+
+    The class itself is not going away: it belongs to the one Alibaba button in the
+    header, which is what it was built for. The assertion below pins it out of the footer
+    so the styling cannot drift back.
+  */
+  assert.doesNotMatch(footer, /alibaba-hard-cta/);
+  assert.match(footer, /short-marker short-marker-compact[^\n]*text-brand/);
 });
 
 test("removing footer shortcuts does not remove their destination pages", () => {
