@@ -153,8 +153,14 @@ the update yet?" — if yes, a fresh session costs almost nothing; if no, that i
   a dirty shared tree.
 - Include one short update under `docs/collaboration/agent-updates/` in the same commit.
   Record agent, scope, tests, untouched work, risks, and the next useful assist/review.
+- **Push as soon as a commit is green. Do not sit on work.** The server pulls every five
+  minutes, so an unpushed commit helps nobody and an unpushed *branch* is invisible to the
+  other agents, who will then redo it. Client instruction, 2026-08-31: "做完你就立即推送部署".
+  Run the checks, commit, `git push`, and say so. If the checks do not pass, fix or revert —
+  do not leave the work parked locally as a third option.
 - A local commit is not a push, deployment, or production verification. State each one
-  separately.
+  separately. Pushing source is not deploying either: `out/` still has to be rebuilt and
+  committed by whoever holds the release baton, and Cloudflare still has to be purged.
 - Review the other agent's finished commit read-only when useful. Put any fix in a new,
   focused commit so authorship and rollback stay clear.
 
