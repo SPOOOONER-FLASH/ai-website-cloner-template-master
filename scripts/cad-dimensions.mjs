@@ -103,6 +103,137 @@ const FROM_DRAWINGS = {
       ["Slot width", "20mm"],
     ],
   },
+  "9082e-stainless-steel-handle": {
+    drawing: "9082e-stainless-steel-handle-2.webp",
+    specs: [
+      ["Plate size", "168 × 45mm"],
+      ["Lever length", "135mm"],
+      ["Lever section", "19mm"],
+      ["Cylinder cutout", "17 × 33mm, 10mm keyway"],
+      ["Fixing screws", "60mm and 16mm"],
+    ],
+  },
+  "9005e-stainless-steel-handle": {
+    drawing: "9005e-stainless-steel-handle-7.webp",
+    specs: [
+      ["Lever length", "130mm"],
+      ["Rose diameter", "53mm"],
+      ["Rose thickness", "8mm"],
+      ["Lever section", "19mm"],
+      ["Projection", "62mm"],
+      ["Spindle", "8mm"],
+    ],
+  },
+  "9004s-stainless-steel-handle": {
+    drawing: "9004s-stainless-steel-handle-6.webp",
+    specs: [
+      ["Lever length", "135mm"],
+      ["Rose size", "53mm square"],
+      ["Rose thickness", "8mm"],
+      ["Lever section", "20mm"],
+      ["Projection", "63mm"],
+      ["Spindle", "8mm"],
+    ],
+  },
+  "bh38-bathroom-accessories": {
+    drawing: "bh38-bathroom-accessories-4.webp",
+    specs: [
+      ["Rose diameter", "48mm"],
+      ["Projection", "48mm"],
+      ["Hook arm", "40mm"],
+      ["Tube diameter", "8mm"],
+      ["Rose depth", "20mm"],
+    ],
+  },
+  "bh39-bathroom-accessories": {
+    drawing: "bh39-bathroom-accessories-2.webp",
+    specs: [
+      ["Rose size", "45mm square"],
+      ["Projection", "45mm"],
+      ["Hook arm", "40mm"],
+      ["Tube diameter", "8mm"],
+      ["Rose depth", "18.5mm"],
+    ],
+  },
+  "bh42-bathroom-accessories": {
+    drawing: "bh42-bathroom-accessories-3.webp",
+    specs: [
+      ["Rose diameter", "48mm"],
+      ["Projection", "48mm"],
+      ["Tube diameter", "8mm"],
+      ["Rose depth", "20mm"],
+    ],
+  },
+  "bh54-bathroom-accessories": {
+    drawing: "bh54-bathroom-accessories-3.webp",
+    specs: [
+      ["Overall length", "82mm"],
+      ["Projection", "56mm"],
+      ["Rose diameter", "50mm"],
+      ["Rose depth", "14mm"],
+      ["Upper hook", "30mm"],
+      ["Tube diameter", "22mm, 8mm at the tip"],
+    ],
+  },
+  "bh21-bathroom-accessories": {
+    drawing: "bh21-bathroom-accessories-4.webp",
+    specs: [
+      ["Width", "152mm"],
+      ["Drop", "96mm"],
+      ["Rose diameter", "45mm"],
+      ["Rose depth", "10mm"],
+      ["Stem", "22mm"],
+      ["Bar section", "6mm"],
+    ],
+  },
+  "lc07-85-45mm-lock-case": {
+    drawing: "lc07-85-45mm-lock-case.webp",
+    // Independent confirmation of the LC naming convention decoded in
+    // scripts/decode-model-suffixes.mjs: the drawing prints 85 and 45 for LC07 85×45.
+    specs: [
+      ["Faceplate", "240 × 23mm"],
+      ["Case height", "173mm"],
+      ["Case depth", "72mm"],
+      ["Latch throw", "26mm"],
+      ["Bolt projection", "18.5mm"],
+    ],
+  },
+  "lc9045-lock-case": {
+    drawing: "lc9045-lock-case.webp",
+    /*
+      The two figures the drawing prints, described as the drawing describes them.
+      LC9045 was deliberately left out of the suffix decoder because 90 is not a euro
+      centre distance and the pattern could not be read with confidence — this horizontal
+      case measures faceplate-to-cylinder instead, which is why. Stated positionally
+      rather than labelled "backset", because the drawing does not label it either.
+    */
+    specs: [
+      ["Faceplate to cylinder centre", "90mm"],
+      ["Cylinder centre to back", "45mm"],
+    ],
+  },
+  "027-panic-exit-device": {
+    drawing: "027-panic-exit-device-5.webp",
+    specs: [
+      ["Lever length", "122mm"],
+      ["Plate width", "75mm"],
+      ["Fixing centres", "52.5mm"],
+      ["Plate height", "77.5mm"],
+      ["Lever drop", "58mm"],
+      ["Spindle length", "60mm"],
+    ],
+  },
+  "ds01-door-stopper": {
+    drawing: "ds01-door-stopper.webp",
+    specs: [
+      ["Height", "96mm"],
+      ["Projection", "70mm"],
+      ["Base diameter", "34mm"],
+      ["Body diameter", "24mm"],
+      ["Stem diameter", "10mm"],
+      ["Footprint", "46mm"],
+    ],
+  },
   "9014-stainless-steel-handle": {
     drawing: "9014-stainless-steel-handle.webp",
     specs: [

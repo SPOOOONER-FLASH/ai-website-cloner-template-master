@@ -35,6 +35,14 @@
     {
       "label": "Finish",
       "value": "PB/AB/AC/SS/SN, all available"
+    },
+    {
+      "label": "Faceplate to cylinder centre",
+      "value": "90mm"
+    },
+    {
+      "label": "Cylinder centre to back",
+      "value": "45mm"
     }
   ],
   "material": "",
@@ -89,6 +97,14 @@
     {
       "label": "Acabado",
       "value": "PB/AB/AC/SS/SN, todos disponibles"
+    },
+    {
+      "label": "Del frente al centro del cilindro",
+      "value": "90 mm"
+    },
+    {
+      "label": "Del centro del cilindro al fondo",
+      "value": "45 mm"
     }
   ]
 }

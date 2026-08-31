@@ -8,6 +8,7 @@ import {
   stats,
   statsEs,
 } from "@/data/company";
+import { siteSettings } from "@/data/navigation";
 
 type Locale = "en" | "es";
 
@@ -31,6 +32,7 @@ const copy = {
     issued: "Issued",
     cta: "Discuss a project or arrange a factory visit",
     contact: "Contact our export team",
+    writeDirect: "Or write to us directly:",
   },
   es: {
     eyebrow: "Canton Hyland",
@@ -51,6 +53,7 @@ const copy = {
     issued: "Emisión",
     cta: "Hablemos de su proyecto o de una visita a fábrica",
     contact: "Contactar con exportación",
+    writeDirect: "O escríbanos directamente:",
   },
 } as const;
 
@@ -185,6 +188,23 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <div className="mt-24">
             <ArrowLink href={contactHref}>{text.contact}</ArrowLink>
           </div>
+          {/*
+            The brand mailbox belongs on the company page rather than on a product page:
+            this is where someone is asking about the company, not about a model. Sales
+            and technical enquiries have their own addresses in the footer and beside the
+            quote button, so the three do not compete.
+          */}
+          {siteSettings.contact.brandEmail ? (
+            <p className="mt-24 text-c1 text-ink-secondary">
+              {text.writeDirect}{" "}
+              <a
+                href={`mailto:${siteSettings.contact.brandEmail}`}
+                className="text-brand hover:text-brand-hover"
+              >
+                {siteSettings.contact.brandEmail}
+              </a>
+            </p>
+          ) : null}
         </section>
       </div>
     </main>

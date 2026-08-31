@@ -35,6 +35,8 @@ export interface SiteSettings {
     email: string;
     /** Technical questions — drawings, dimensions, compatibility. Optional. */
     technicalEmail?: string;
+    /** The brand mailbox, shown on the company page. Optional. */
+    brandEmail?: string;
     phone: string;
     address: string;
     city: string;
