@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Product } from "@/data/types";
+import type { FinderProduct } from "@/lib/product-finder";
 
 /**
  * Browser-only wrapper for the finder.
@@ -23,7 +23,7 @@ const ProductFinder = dynamic(
 );
 
 export function ProductFinderClient(props: {
-  products: Product[];
+  products: FinderProduct[];
   categoryNames: Record<string, string>;
 }) {
   return <ProductFinder {...props} />;

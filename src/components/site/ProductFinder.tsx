@@ -20,8 +20,8 @@ import {
   type Facet,
   type FacetKey,
   type Selection,
+  type FinderProduct,
 } from "@/lib/product-finder";
-import type { Product } from "@/data/types";
 
 /**
  * Product Finder.
@@ -37,7 +37,7 @@ export function ProductFinder({
   products,
   categoryNames,
 }: {
-  products: Product[];
+  products: FinderProduct[];
   /** slug -> display name, so facets read "Panic Exit Devices" not "panic-exit-devices". */
   categoryNames: Record<string, string>;
 }) {

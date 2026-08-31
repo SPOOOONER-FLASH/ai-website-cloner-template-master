@@ -106,8 +106,60 @@ export function visiblePageNumbers(page: number, count: number): VisiblePageItem
   return items;
 }
 
+/**
+ * The subset of a product the finder actually reads.
+ *
+ * WHY THIS EXISTS. The finder is a client component, so whatever it is handed is
+ * serialised into the RSC flight payload embedded in the page. Handing it the full
+ * `Product` put every spec row, every Spanish spec row, every gallery entry and every
+ * SEO string for all 435 records into an inline <script>: /product-finder/ exported at
+ * **1.29 MB, 94% of it that payload**, and Bing Site Scan flagged five URLs as
+ * "Html size is too long" (soft limit 1 MB) — above that a crawler may not take the
+ * whole page.
+ *
+ * None of those fields are read here. Project to this shape at the page boundary.
+ * The functions below are generic over it so the category page, which passes full
+ * products from a server component, keeps working unchanged.
+ */
+export type FinderProduct = Pick<
+  Product,
+  | "slug"
+  | "model"
+  | "modelTbc"
+  | "name"
+  | "nameEs"
+  | "nameZh"
+  | "series"
+  | "categoryPath"
+  | "material"
+  | "finishes"
+  | "doorTypes"
+  | "certifications"
+  | "heroImage"
+  | "summary"
+>;
+
+export function toFinderProduct(product: Product): FinderProduct {
+  return {
+    slug: product.slug,
+    model: product.model,
+    modelTbc: product.modelTbc,
+    name: product.name,
+    nameEs: product.nameEs,
+    nameZh: product.nameZh,
+    series: product.series,
+    categoryPath: product.categoryPath,
+    material: product.material,
+    finishes: product.finishes,
+    doorTypes: product.doorTypes,
+    certifications: product.certifications,
+    heroImage: product.heroImage,
+    summary: product.summary,
+  };
+}
+
 /** Every value a product contributes to a given facet. */
-function valuesFor(product: Product, key: FacetKey): string[] {
+function valuesFor(product: FinderProduct, key: FacetKey): string[] {
   switch (key) {
     case "category":
       return product.categoryPath[0] ? [product.categoryPath[0]] : [];
@@ -133,7 +185,7 @@ function valuesFor(product: Product, key: FacetKey): string[] {
  * (a satin lever AND a timber door). That is what every faceted search does, and getting
  * it backwards produces a finder that returns nothing as soon as you tick two boxes.
  */
-export function matches(product: Product, selection: Selection): boolean {
+export function matches(product: FinderProduct, selection: Selection): boolean {
   return (Object.entries(selection) as [FacetKey, string[] | undefined][]).every(
     ([key, chosen]) => {
       if (!chosen?.length) return true;
@@ -144,7 +196,7 @@ export function matches(product: Product, selection: Selection): boolean {
 }
 
 /** Free-text search across the fields a buyer actually types into. */
-export function matchesQuery(product: Product, query: string): boolean {
+export function matchesQuery(product: FinderProduct, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
   const haystack = [
@@ -162,16 +214,16 @@ export function matchesQuery(product: Product, query: string): boolean {
   return q.split(/\s+/).every((term) => haystack.includes(term));
 }
 
-export function filterProducts(
-  products: Product[],
+export function filterProducts<T extends FinderProduct>(
+  products: T[],
   selection: Selection,
   query = "",
-): Product[] {
+): T[] {
   return products.filter((p) => matches(p, selection) && matchesQuery(p, query));
 }
 
 /** A product with no `heroImage.src` renders as a grey placeholder block. */
-export function hasHeroImage(product: Product): boolean {
+export function hasHeroImage(product: FinderProduct): boolean {
   return Boolean(product.heroImage?.src);
 }
 
@@ -185,9 +237,9 @@ export function hasHeroImage(product: Product): boolean {
  * Within each group the incoming order is preserved, so this composes with search
  * relevance instead of overriding it.
  */
-export function sortForDisplay(products: Product[]): Product[] {
-  const withImage: Product[] = [];
-  const without: Product[] = [];
+export function sortForDisplay<T extends FinderProduct>(products: T[]): T[] {
+  const withImage: T[] = [];
+  const without: T[] = [];
   for (const p of products) (hasHeroImage(p) ? withImage : without).push(p);
   return [...withImage, ...without];
 }
@@ -239,7 +291,7 @@ export function paginate<T>(items: T[], page: number, size = PAGE_SIZE): Page<T>
  * stainless" makes every other finish read "(0)" and the UI looks broken.
  */
 export function buildFacets(
-  products: Product[],
+  products: FinderProduct[],
   selection: Selection = {},
   query = "",
 ): Facet[] {

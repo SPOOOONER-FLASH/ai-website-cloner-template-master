@@ -1,4 +1,4 @@
-import type { Product } from "@/data/types";
+import type { FinderProduct } from "@/lib/product-finder";
 import type { Locale } from "@/data/site";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { cn } from "@/lib/utils";
@@ -6,7 +6,9 @@ import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 interface ProductCardProps {
-  product: Product;
+  /* The narrow shape, not the full record: this card reads a dozen fields and a full
+     Product still satisfies it structurally, so server callers pass theirs unchanged. */
+  product: FinderProduct;
   className?: string;
   /**
    * Pass on the cards in the first visible row so their photographs are fetched eagerly.
