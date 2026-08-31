@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildLocaleSitemapEntries, buildRobotsRules } from "./seo-policy.ts";
 import { hasSpanishMirror } from "./spanish-mirror.ts";
+import { localisedHref } from "./spanish-mirror.ts";
 
 test("the staging robots policy remains a hard site-wide block", () => {
   assert.deepEqual(buildRobotsRules(false), [{ userAgent: "*", disallow: "/" }]);
@@ -52,4 +53,30 @@ test("the Spanish catalogue mirrors /products, and hreflang stops where the rout
   assert.equal(hasSpanishMirror("/downloads"), false);
   assert.equal(hasSpanishMirror("/news"), false);
   assert.equal(hasSpanishMirror("/faq"), false);
+});
+
+/*
+  The navigation and hreflang must agree about which paths have a Spanish twin.
+
+  They did not, and the failure was silent: `localisedHref` kept its own
+  Set(["/company","/contact","/projects"]) while hreflang read spanish-mirror.ts. When
+  the Spanish catalogue shipped, every one of the 459 Spanish pages declared a Spanish
+  alternate in its head while its own menu linked back into the English tree. Nothing
+  errored — the links resolved, they were just the wrong language.
+
+  This asserts the two agree by construction rather than by coincidence.
+*/
+test("the navigation prefixes exactly the paths that have a Spanish mirror", () => {
+  const mirrored = ["/products", "/company", "/contact", "/projects"];
+  for (const href of mirrored) {
+    assert.equal(hasSpanishMirror(href), true, `${href} should mirror`);
+    assert.equal(localisedHref(href, "es"), `/es${href}`, `${href} should be prefixed`);
+    assert.equal(localisedHref(href, "en"), href, `${href} must not be prefixed in English`);
+  }
+
+  // No Spanish route: a Spanish visitor gets the English page, never a 404.
+  for (const href of ["/downloads", "/news", "/product-finder", "/certifications"]) {
+    assert.equal(hasSpanishMirror(href), false, `${href} should not mirror`);
+    assert.equal(localisedHref(href, "es"), href, `${href} must stay English`);
+  }
 });

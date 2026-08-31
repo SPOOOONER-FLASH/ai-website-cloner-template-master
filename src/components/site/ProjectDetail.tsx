@@ -134,7 +134,7 @@ export function ProjectDetail({
             </div>
             <div className="col-span-full grid grid-cols-1 gap-24 sm:grid-cols-2 lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10 xl:grid-cols-3">
               {relatedProducts.map((product) => (
-                <ProductCard key={product.model} product={product} />
+                <ProductCard key={product.model} product={product} locale={locale} />
               ))}
             </div>
           </div>

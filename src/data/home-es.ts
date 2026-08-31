@@ -18,7 +18,7 @@ export const hero1: HeroModuleContent = {
   title: "Cerradura tubular moderna",
   body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",
   linkLabel: "Ver producto",
-  href: "/products/lever-handles/black-tubular-lever-lock-set",
+  href: "/es/products/lever-handles/black-tubular-lever-lock-set",
 };
 
 /**
@@ -38,7 +38,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Dispositivos antipánico",
       body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",
       linkLabel: "Explorar dispositivos",
-      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+      href: "/es/products/panic-exit-devices/305-fire-door-panic-exit-device",
     },
     hero1,
     {
@@ -51,7 +51,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Cajas de cerradura",
       body: "Cuerpos de cerradura con distintas entradas, distancias entre ejes y configuraciones de bulones para cuadros de puertas comerciales.",
       linkLabel: "Ver cajas de cerradura",
-      href: "/products/lock-cases",
+      href: "/es/products/lock-cases",
     },
   ],
 };
@@ -77,7 +77,7 @@ export const teaser1: PageTeaserContent = {
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
-      href: "/products",
+      href: "/es/products",
     },
   ],
 };
@@ -92,7 +92,7 @@ export const hero2: HeroModuleContent = {
   title: "Dispositivos antipánico",
   body: "Nuestra gama principal de seguridad para salidas rápidas en edificios comerciales.",
   linkLabel: "Explorar la gama principal",
-  href: "/products/panic-exit-devices",
+  href: "/es/products/panic-exit-devices",
 };
 
 export const text1: TextModuleContent = {
@@ -137,7 +137,7 @@ export const hero3: HeroModuleContent = {
   title: "Diseñado para",
   body: "Nueve familias de producto",
   linkLabel: "Ver catálogo",
-  href: "/products",
+  href: "/es/products",
 };
 
 export const hero4: HeroModuleContent = {

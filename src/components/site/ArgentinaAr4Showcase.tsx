@@ -43,7 +43,7 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
 
   return (
     <Link
-      href={`/products/${product.categoryPath[0]}/${product.slug}/`}
+      href={`${locale === "es" ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
       className="hard-shadow-card group flex flex-col bg-surface"
     >
       <MediaPlaceholder

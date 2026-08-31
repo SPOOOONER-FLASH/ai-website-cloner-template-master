@@ -1,5 +1,6 @@
 import navigation from "../../content/navigation.json";
 import settings from "../../content/site-settings.json";
+import { localisedHref } from "../lib/spanish-mirror";
 
 /**
  * Navigation and site settings, editable from the CMS.
@@ -81,12 +82,9 @@ export function navLabel(link: NavLink, locale: "en" | "es"): string {
 }
 
 /**
- * Spanish routes exist for only part of the site. Where they do, prefix; where they do
- * not, send Spanish visitors to the English page rather than to a 404.
+ * Re-exported so components keep asking one module about navigation. The implementation
+ * sits in src/lib/spanish-mirror.ts next to `hasSpanishMirror`, which it has to agree
+ * with — it used to keep a second copy of that list here, and they drifted. See the note
+ * there.
  */
-const SPANISH_ROUTES = new Set(["/company", "/contact", "/projects"]);
-
-export function localisedHref(href: string, locale: "en" | "es"): string {
-  if (locale === "en") return href;
-  return SPANISH_ROUTES.has(href) ? `/es${href}` : href;
-}
+export { localisedHref };

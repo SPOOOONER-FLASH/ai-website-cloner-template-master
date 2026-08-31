@@ -23,7 +23,7 @@ export default function ArgentinaAr4SpanishPage() {
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined);
   const urls = products.map((product) =>
-    absoluteUrl(`/products/${product.categoryPath[0]}/${product.slug}/`),
+    absoluteUrl(`/es/products/${product.categoryPath[0]}/${product.slug}/`),
   );
 
   return (
@@ -32,7 +32,7 @@ export default function ArgentinaAr4SpanishPage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Inicio", url: absoluteUrl("/es/") },
-          { name: "Productos", url: absoluteUrl("/products/") },
+          { name: "Productos", url: absoluteUrl("/es/products/") },
           { name: "HYDE Argentina AR-4", url: absoluteUrl("/es/products/argentina-ar4/") },
         ])}
       />
@@ -42,7 +42,7 @@ export default function ArgentinaAr4SpanishPage() {
           <Breadcrumbs
             items={[
               { label: "Inicio", href: "/es/" },
-              { label: "Productos", href: "/products/" },
+              { label: "Productos", href: "/es/products/" },
               { label: "HYDE Argentina AR-4" },
             ]}
           />

@@ -24,3 +24,21 @@ export function hasSpanishMirror(enPath: string): boolean {
     (prefix) => prefix !== "/" && (clean === prefix || clean.startsWith(`${prefix}/`)),
   );
 }
+
+/**
+ * The Spanish href for a navigation target.
+ *
+ * Lives here, next to `hasSpanishMirror`, because it is the same fact asked a different
+ * way. It used to live in src/data/navigation.ts with its own hard-coded
+ * Set(["/company","/contact","/projects"]), and when the Spanish catalogue shipped that
+ * copy was not updated: hreflang advertised a Spanish alternate on all 459 Spanish pages
+ * while the menu on those pages linked back into the English tree. Nothing errored. One
+ * module, one list.
+ *
+ * Where no Spanish route exists the English href is returned unchanged — a Spanish
+ * reader gets the English page rather than a 404.
+ */
+export function localisedHref(href: string, locale: "en" | "es"): string {
+  if (locale === "en") return href;
+  return hasSpanishMirror(href) ? `/es${href}` : href;
+}

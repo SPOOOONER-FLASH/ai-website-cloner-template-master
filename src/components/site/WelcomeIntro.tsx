@@ -31,8 +31,8 @@ const introCopy = {
     company: "Canton Hyland Hardware\n(Group) Co., Ltd",
     tagline: "Soluciones integrales para la industria de la construcción",
     links: [
-      { label: "Planificador de proyectos", href: "/products" },
-      { label: "Catálogo de productos", href: "/products" },
+      { label: "Planificador de proyectos", href: "/es/products" },
+      { label: "Catálogo de productos", href: "/es/products" },
       { label: "Conozca la empresa", href: "/es/company" },
     ],
   },
