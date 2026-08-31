@@ -1,7 +1,7 @@
 # 交接 — Canton Hyland / HYDE 官网
 
 > 新会话先读这份，再按需读 `docs/collaboration/agent-updates/`（Claude × Codex 互通进度）。
-> 最后更新：2026-08-28
+> 最后更新：2026-08-31
 
 ## 一、这个站是干什么的
 
@@ -60,33 +60,24 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | GSC | 820 已索引 / 961 未索引 |
 | Bing | 533 indexed，86 errors |
 
-## 五、⚠ 下一个会话的三件事（按价值排序）
+## 五、⚠ 下一个会话该做什么
 
-### 1. 西语规格表还有 9% 是英文 —— 不依赖任何人，今天就能做
+### 1. 还有 9 个 0 规格 + 27 个 1–2 行 —— 唯一剩下的内容缺口
 
-    未译规格行   274 / 3040（9%，最初 25%）
-    受影响页面   129 / 426（30%，最初 88%）
-    剩余词条     352 个，基本都只出现 1 次，是真长尾
+图纸里还有尺寸没读完，见第八·七节。完整任务书：`docs/collaboration/tasks/cad-drawing-extraction.md`
 
-**做法**：`node scripts/translate-products-es.mjs`（不加 --write）会列出所有未命中的词条
-及其出现次数；在 `src/data/es-glossary.ts` 补词条，再 `--write`。**先补标签再补取值** ——
-标签是每行的左栏，一个缺失标签出现在所有带该属性的产品上，一个缺失取值只出现一次。
+### 2. 后缀码差异化 85 个页面
 
-⚠ **不要机翻**。查不到的词条脚本会原样留英文并计数，这是设计，不是 bug。
-术语表用的是拉美外贸西语（`entrada` 不是 `retranqueo`，`manija` 不是 `manilla`）。
-母语复核件在 `docs/content/revision-terminologia-es.docx`，甲方在找人看。
+第八·六节已列全 18 个已确认后缀。下一步：F / WL / SP 选首图并补 Finish，
+ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文件是否存在**，
+不能凭字符串批量覆盖甲方已选的首图。
 
-### 2. tid 映射还没部署到服务器 —— 单项性价比最高的 SEO 动作
+### 已关闭
 
-`deploy/nginx/legacy-redirects.conf` 已含 11 条旧分类 → 新分类的映射，
-**但服务器上的还是旧版**。实测 `tid=97` 仍落在 `/products/` 而不是 `/products/lock-cases/`，
-而 GSC 显示 **tid=97 一个就带 456 条内链**。全部倒进通用 hub，Google 读作 soft 404。
-
-**需要人在服务器上做**：更新该 conf 并 reload nginx。代码侧已就绪，无需再改。
-
-### 3. 还有 9 个 0 规格 + 27 个 1–2 行
-
-图纸里还有尺寸没读完，见第八·七节。
+| | |
+|---|---|
+| 西语规格表英文残留 | 2026-08-31 清零。274 → 0 行，426 页全覆盖 |
+| tid 类目映射 | 2026-08-30 上线，2026-08-31 复测 11 条全中 |
 
 ## 六、Bing 报的 86 个错误
 
@@ -95,7 +86,7 @@ SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Pr
 | `<h1>` 缺失 | 4 | 需定位是哪 4 页 |
 | meta 描述过短 | 26 | 建成品里只有 14 页 <110 字符：/contact/ 74、/company/ 82、/products/knob-locks/ 91、/downloads/ 98 |
 | 标题过短 | 25 | 建成品里 19 页 <40 字符，多为 d101-* 系列。差额是旧站 index.php URL，301 后自然消失 |
-| 内容过少 | 25 | 已修大部分，见第五节 1 |
+| 内容过少 | 25 | 已修大部分 |
 | `<img>` 缺 alt | 4 | |
 
 ## 七、需要甲方给数据才能推进

@@ -68,7 +68,7 @@ const NUMERIC_RULES = [
     /^([\d\s./]+mm) to ([\d\s./]+mm) standard; ([\d\s./]+mm) to ([\d\s./]+mm) on request$/i,
     (m, sp) => `de ${sp(m[1])} a ${sp(m[2])} de serie; de ${sp(m[3])} a ${sp(m[4])} bajo pedido`,
   ],
-  [/^([\d.]+)\s*mm$/i, (m) => `${m[1]} mm`],
+  [/^([\d.]+)\s*mm$/i, (m) => `${DIM(m[1])} mm`],
   // "60/70mm" — one unit shared by two figures, which is how the catalogue writes it.
   [/^([\d]+(?:\s*\/\s*[\d]+)+)\s*mm$/i, (m) => `${m[1].replace(/\s*\/\s*/g, "/")} mm`],
   [
@@ -76,15 +76,93 @@ const NUMERIC_RULES = [
     (m, sp) => `${sp(m[1])} regulable, tanto el picaporte como el cerrojo`,
   ],
   // "35–50mm" / "8-12mm" — a range; Spanish spells it out rather than keeping the dash.
-  [/^([\d.]+)\s*[–-]\s*([\d.]+)\s*mm$/i, (m) => `de ${m[1]} a ${m[2]} mm`],
+  [/^([\d.]+)\s*[–-]\s*([\d.]+)\s*mm$/i, (m) => `de ${DIM(m[1])} a ${DIM(m[2])} mm`],
   // "60mm (2-3/8”)" — the imperial equivalent in brackets is printed, not translated.
-  [/^([\d.]+)\s*mm\s*(\(.+\))$/i, (m) => `${m[1]} mm ${m[2]}`],
+  // The bracket must actually be a measurement; an English aside in there is not.
+  [
+    /^([\d.]+)\s*mm\s*(\([\d\s./'"”″＂+×x,-]+\))$/i,
+    (m) => `${DIM(m[1])} mm ${m[2]}`,
+  ],
   // "90-180°" and "180°" — degrees need no translation, only the range spelled out.
   [/^(\d+)\s*[–-]\s*(\d+)\s*°$/i, (m) => `de ${m[1]} a ${m[2]}°`],
   [/^(\d+)\s*°$/i, (m) => `${m[1]}°`],
   // "32x300x600 mm" — a dimension triple; only the separator is language.
-  [/^([\d.]+)\s*[x×]\s*([\d.]+)\s*[x×]\s*([\d.]+)\s*mm$/i, (m) => `${m[1]} × ${m[2]} × ${m[3]} mm`],
+  [
+    /^([\d.]+)\s*[x×]\s*([\d.]+)\s*[x×]\s*([\d.]+)\s*mm$/i,
+    (m) => `${DIM(m[1])} × ${DIM(m[2])} × ${DIM(m[3])} mm`,
+  ],
+  /*
+    The catalogue writes hinge sizes eleven different ways -- 4"x3"x2.0MM, 4.0''x3.0''x2.0mm,
+    3.5"x3.5"x2.5MM. Only the separators and the decimal mark are language: Spanish trade
+    writes 2,5 mm. Listing each string as a glossary entry would be a hundred entries that
+    say nothing, and the next catalogue revision would miss again.
+  */
+  [
+    /^([\d.]+)\s*(?:''|["”″＂])\s*[x×*]\s*([\d.]+)\s*(?:''|["”″＂])\s*[x×*]\s*([\d.]+)\s*mm$/i,
+    (m) => DIM(m[1]) + "” × " + DIM(m[2]) + "” × " + DIM(m[3]) + " mm",
+  ],
+  // "100*100mm", "280*215*100mm", "18 x 183", "129*321.5mm" -- figures and a separator.
+  [
+    /^[\d.]+(?:\s*[x×*]\s*[\d.]+)+\s*(mm)?$/i,
+    (m) => JOIN(m[0].replace(/\s*mm$/i, "")) + (m[1] ? " mm" : ""),
+  ],
+  // "103 mm x 66 mm" -- the unit repeated on each figure; Spanish states it once.
+  [
+    /^[\d.]+\s*mm(?:\s*[x×*]\s*[\d.]+\s*mm)+$/i,
+    (m) => JOIN(m[0].replace(/\s*mm/gi, "")) + " mm",
+  ],
+  // "300mm,400mm,500mm,600mm" and "12mm, 14mm, 16mm" -- a size list, unit stated once.
+  [
+    /^[\d.]+(?:\s*mm?)?(?:\s*[,/]\s*[\d.]+(?:\s*mm?)?)+\s*$/i,
+    (m) =>
+      m[0]
+        .split(/\s*[,/]\s*/)
+        .map((n) => DIM(n.replace(/\s*mm?$/i, "")))
+        .join(" / ") + " mm",
+  ],
+  // "8in/10in/12in/24in" and "8 in" -- inches, written with the prime the trade prints.
+  [
+    /^[\d.]+\s*in(?:\s*[,/]\s*[\d.]+\s*in)*$/i,
+    (m) =>
+      m[0]
+        .split(/\s*[,/]\s*/)
+        .map((n) => DIM(n.replace(/\s*in$/i, "")) + "”")
+        .join(" / "),
+  ],
+  // '3", 4", 5", 6"' -- already primes; only the separator and decimal mark move.
+  [
+    /^[\d.]+\s*(?:''|["”″＂])(?:\s*[,/]\s*[\d.]+\s*(?:''|["”″＂]))+$/,
+    (m) =>
+      m[0]
+        .split(/\s*[,/]\s*/)
+        .map((n) => DIM(n.replace(/\s*(?:''|["”″＂])$/, "")) + "”")
+        .join(" / "),
+  ],
+  // "042mm", "f44x24mm" -- the diameter sign carries the meaning, the rest is figures.
+  [
+    /^[Øøф⌀]\s*([\d.]+(?:\s*[x×*]\s*[\d.]+)*)\s*(mm)?$/i,
+    (m) => "Ø " + JOIN(m[1]) + (m[2] ? " mm" : ""),
+  ],
+  // "180 Degrees" / "180 degree/200 degree" -- the word is language, the figure is not.
+  [/^(\d+)\s*degrees?$/i, (m) => m[1] + "°"],
+  [/^(\d+)\s*degrees?\s*\/\s*(\d+)\s*degrees?$/i, (m) => m[1] + "° / " + m[2] + "°"],
+  // "90-180 deg" with the sign on both ends; the existing range rule allows it on one.
+  [/^(\d+)\s*°\s*[–-]\s*(\d+)\s*°$/, (m) => "de " + m[1] + " a " + m[2] + "°"],
+  [/^(\d+)\s*°\s+or\s+(\d+)\s*°$/i, (m) => m[1] + "° o " + m[2] + "°"],
 ];
+
+/** Spanish writes the decimal mark as a comma: 2.5 mm is 2,5 mm on a Latin American quote. */
+function DIM(n) {
+  return n.trim().replace(".", ",");
+}
+
+/** Joins a dimension run with the multiplication sign the trade prints. */
+function JOIN(text) {
+  return text
+    .split(/\s*[x×*]\s*/i)
+    .map(DIM)
+    .join(" × ");
+}
 
 /**
  * A finish or option CODE rather than a word — "SSS/PSS", "PB.AB.AC.CP.SN", "SS".
@@ -94,7 +172,18 @@ const NUMERIC_RULES = [
  */
 const IS_CODE = /^[A-Z0-9]{1,5}(\s*[./,+&-]\s*[A-Z0-9]{1,5})*\.?$/;
 
-function translateValue(text) {
+/*
+  The catalogue carries invisible whitespace — "110<U+202F>mm (L) × 66<U+202F>mm (W)" uses a
+  narrow no-break space where the eye sees a plain one. An exact-match glossary cannot see
+  the difference and reports the term missing; adding a second entry per variant would grow
+  the file without adding a word of Spanish. Normalise once, at the door.
+*/
+function normalise(text) {
+  return text.replace(/[\u00a0\u2007\u202f\u2009]/g, " ");
+}
+
+function translateValue(input) {
+  const text = normalise(input);
   const exact = glossary.values[text];
   if (exact) return exact;
   if (IS_CODE.test(text.trim())) return text.trim();
@@ -105,7 +194,7 @@ function translateValue(text) {
   );
   if (folded) return glossary.values[folded];
 
-  const spaced = (s) => s.replace(/(\d)\s*mm\b/g, "$1 mm");
+  const spaced = (s) => s.replace(/(\d)\s*mm\b/g, "$1 mm").replace(/(\d)\.(\d)/g, "$1,$2");
   for (const [pattern, build] of NUMERIC_RULES) {
     if (!build) continue;
     const hit = pattern.exec(text);
@@ -117,7 +206,7 @@ function translateValue(text) {
 function value(text) {
   const hit = translateValue(text);
   if (hit) return hit;
-  note(text);
+  note(normalise(text));
   return text;
 }
 
@@ -207,8 +296,8 @@ for (const file of readdirSync(DIR)) {
   const product = JSON.parse(readFileSync(path, "utf8"));
 
   const specsEs = (product.specs ?? []).map((row) => {
-    const label = glossary.labels[row.label];
-    if (!label) note(`LABEL: ${row.label}`);
+    const label = glossary.labels[normalise(row.label)];
+    if (!label) note(`LABEL: ${normalise(row.label)}`);
     return { label: label ?? row.label, value: value(row.value) };
   });
 
@@ -227,5 +316,7 @@ const sorted = [...missing.entries()].sort((a, b) => b[1] - a[1]);
 const untranslatedUses = sorted.reduce((n, [, count]) => n + count, 0);
 console.log(`products given Spanish fields : ${translated}`);
 console.log(`terms with no glossary entry  : ${sorted.length}, used ${untranslatedUses} times`);
-for (const [term, count] of sorted.slice(0, 25)) console.log(`  ${String(count).padStart(4)}  ${term}`);
+const shown = process.argv.includes("--all") ? sorted : sorted.slice(0, 25);
+for (const [term, count] of shown) console.log(`  ${String(count).padStart(4)}  ${term}`);
+if (shown.length < sorted.length) console.log(`  … ${sorted.length - shown.length} more; re-run with --all`);
 if (!write) console.log("\nReport only. Re-run with --write.");
