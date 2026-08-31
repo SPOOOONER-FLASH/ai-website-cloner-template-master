@@ -4,6 +4,9 @@
 import type { NewsArticle } from "../types";
 import item0 from "../../../content/news/door-hardware-schedule-guide.json";
 import item1 from "../../../content/news/mortise-lock-backset-and-centre-distance-guide.json";
-import item2 from "../../../content/news/reading-door-hardware-model-numbers.json";
+import item2 from "../../../content/news/push-bar-or-touch-bar-panic-exit-devices.json";
+import item3 from "../../../content/news/reading-door-hardware-model-numbers.json";
+import item4 from "../../../content/news/stainless-steel-grades-304-201-316.json";
+import item5 from "../../../content/news/what-a-frameless-glass-door-needs.json";
 
-export const news = [item0, item1, item2] as unknown as NewsArticle[];
+export const news = [item0, item1, item2, item3, item4, item5] as unknown as NewsArticle[];
