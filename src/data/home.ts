@@ -27,10 +27,10 @@ export const hero1: HeroModuleContent = {
     src: "/images/editorial/hero-warm-residential-entry.webp",
     label: "Warm timber and limestone residential threshold opening to a planted courtyard",
   },
-  title: "Modern Tubular Door Lock",
-  body: "A restrained matt-black lever set for contemporary residential interiors.",
-  linkLabel: "View Modern Tubular Door Lock",
-  href: "/products/lever-handles/black-tubular-lever-lock-set",
+  title: "Lever Handles",
+  body: "Tubular and mortise lever sets in stainless steel, brass and matt-black finishes for residential and light commercial doors.",
+  linkLabel: "View lever handles",
+  href: "/products/lever-handles",
 };
 
 /**
@@ -51,7 +51,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Panic Exit Devices",
       body: "Fast-release hardware engineered for dependable emergency egress in commercial buildings.",
       linkLabel: "Explore exit devices",
-      href: "/products/panic-exit-devices/305-fire-door-panic-exit-device",
+      href: "/products/panic-exit-devices",
     },
     hero1,
     {

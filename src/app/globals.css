@@ -484,6 +484,111 @@
     --marker-bottom: 0.8rem;
   }
 
+  /* -- Mobile / tablet navigation rail ----------------------------------- */
+  /* The inline desktop nav is hidden below xl (1376px), which left a hamburger as
+     the ONLY route to anything on every phone, every tablet and a 1280px laptop.
+     A visitor who lands on a product page from search should not have to guess that
+     a menu exists.
+
+     Horizontal scroll rather than wrap: the six labels measure ~430px at 14px and the
+     content band on a 375px phone is 343px, so wrapping would put one item on a second
+     line and double the header height on the smallest screen that can least afford it.
+     The right-edge fade is what tells the visitor the row continues. */
+  .nav-rail {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    white-space: nowrap;
+    /* Fade only the trailing edge. A leading fade would clip the first label, which is
+       the one item guaranteed to be on screen. */
+    mask-image: linear-gradient(to right, #000 calc(100% - 2.4rem), transparent 100%);
+  }
+
+  .nav-rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-rail > * {
+    scroll-snap-align: start;
+  }
+
+  .nav-rail-item {
+    flex: none;
+    padding-block: 1.4rem;
+    color: var(--color-ink);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.028rem;
+    text-decoration: none;
+  }
+
+  /* The client's single highest-intent destination, so it is the one rail item that
+     carries weight rather than colour — the palette has no accent to spend here. */
+  .nav-rail-item-emphasis {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .nav-rail-cta {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-block: 0.8rem;
+    border: 1px solid var(--color-ink);
+    background-color: var(--color-ink);
+    padding: 0.6rem 1.4rem;
+    color: var(--color-surface);
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 2rem;
+    text-decoration: none;
+  }
+
+  .nav-rail-cta:focus-visible {
+    outline: 0.2rem solid var(--color-frame);
+    outline-offset: 0.3rem;
+  }
+
+  /* -- Drawer ------------------------------------------------------------ */
+  /* Section label. Chanel's mobile menu is legible at a glance because the group
+     headings are small and quiet and the ITEMS carry the size; ours had it backwards —
+     nine primary links at 24px with the buying routes pushed below all of them. */
+  .drawer-eyebrow {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.12em;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: var(--color-ink-secondary);
+  }
+
+  .drawer-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding-block: 1.3rem;
+    color: var(--color-ink);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+  }
+
+  /* Secondary group — the trust-and-background pages. Same size, quieter colour, so
+     the eye separates them from the catalogue without a second type step. */
+  .drawer-link-secondary {
+    color: var(--color-ink-secondary);
+  }
+
+  .drawer-link > .drawer-chevron {
+    flex: none;
+    color: var(--color-ink-tertiary);
+  }
+
   /* -- Architectural navigation shelf ----------------------------------- */
   /* The panel is always positioned over the page rather than entering normal
      flow, so opening it never moves the hero or changes the scroll position. */

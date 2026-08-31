@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 /* eslint-disable @next/next/no-page-custom-font -- global 404 bypasses both root layouts */
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { ArrowLink } from "@/components/site/ArrowLink";
 
@@ -24,7 +25,7 @@ export default function GlobalNotFound() {
       </head>
       <body className="flex min-h-full flex-col">
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader />
+          <SiteHeader categories={getMenuCategories()} />
           <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
             <div className="layout">
               <div className="col-content grid w-full grid-cols gap-x gap-y-24">

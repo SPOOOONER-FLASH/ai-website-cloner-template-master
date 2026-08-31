@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 /* eslint-disable @next/next/no-page-custom-font -- each root document owns the same CDN font link */
 import "../globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
@@ -78,7 +79,7 @@ export default function SpanishRootLayout({
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         <div className="flex min-h-screen flex-col justify-between">
-          <SiteHeader />
+          <SiteHeader categories={getMenuCategories()} />
           {children}
           <SiteFooter />
         </div>

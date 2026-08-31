@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import type { MenuCategory } from "@/data/categories";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SearchDialog } from "./SearchDialog";
@@ -77,7 +78,7 @@ const buyShelfLinks = {
  *   A-style black underline is revealed only on hover or keyboard focus.
  *   Utility icons remain tertiary grey and darken to ink on interaction.
  */
-export function SiteHeader() {
+export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -277,6 +278,79 @@ export function SiteHeader() {
             </div>
           </div>
         </div>
+
+        {/*
+          Mobile and tablet nav rail.
+
+          The row above is `max-xl:hidden`, so below 1376px the header used to offer a
+          wordmark, a language link, a magnifier and a hamburger — nothing that names a
+          destination. Most of this site's traffic arrives on a product page from search
+          and leaves from there; a menu you have to discover is a menu most of them never
+          open. See .nav-rail in globals.css for why this scrolls rather than wraps.
+        */}
+        <div className="layout border-t border-line bg-surface xl:hidden">
+          <nav
+            aria-label={isSpanish ? "Navegación principal" : "Main navigation"}
+            className="nav-rail col-content"
+          >
+            {headerNav.map((link) => {
+              const href = localisedHref(link.href, locale);
+
+              /*
+                The catalogue is 435 models across 15 categories, so the finder is the
+                fastest route to a specific one — it carries weight here for the same
+                reason it does nowhere else on the site.
+              */
+              if (link.href === "/product-finder") {
+                return (
+                  <Link
+                    key={link.href}
+                    href={href}
+                    aria-current={isCurrent(href) ? "page" : undefined}
+                    className={cn(
+                      "nav-rail-item nav-rail-item-emphasis",
+                      isCurrent(href) && "current-nav",
+                    )}
+                  >
+                    {navLabel(link, locale)}
+                  </Link>
+                );
+              }
+
+              /*
+                Opens the drawer rather than linking out. The drawer leads with the buying
+                block, so this reaches Alibaba, the price list, Contact and the mailbox in
+                one more tap — sending it straight to the storefront would drop the buyer
+                who wants a quote by email, and email is what this site is built to produce.
+              */
+              if (link.href === "/downloads") {
+                return (
+                  <button
+                    key={link.href}
+                    type="button"
+                    aria-expanded={menuOpen}
+                    onClick={() => setMenuOpen(true)}
+                    className="nav-rail-cta"
+                  >
+                    {isSpanish ? "Comprar ahora" : "Buy it now"}
+                    <span aria-hidden="true">›</span>
+                  </button>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.href}
+                  href={href}
+                  aria-current={isCurrent(href) ? "page" : undefined}
+                  className={cn("nav-rail-item", isCurrent(href) && "current-nav")}
+                >
+                  {navLabel(link, locale)}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
       </div>
 
       <section
@@ -366,6 +440,7 @@ export function SiteHeader() {
         <SiteMenuDrawer
           isSpanish={isSpanish}
           currentPath={pathname}
+          categories={categories}
           onClose={() => setMenuOpen(false)}
         />
       ) : null}

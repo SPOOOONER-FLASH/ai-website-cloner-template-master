@@ -97,6 +97,11 @@ test("homepage mobile disclosure preserves heading order", () => {
 test("homepage product CTA names its destination", () => {
   const home = read("src", "data", "home.ts");
 
-  assert.match(home, /linkLabel:\s*"View Modern Tubular Door Lock"/);
+  /*
+    2026-08-31: the frame now opens the lever-handle category rather than one SKU
+    (see home-destinations.test.ts), so the label moved with it. The rule this test
+    exists for is unchanged — the CTA says where it goes, never "Learn more".
+  */
+  assert.match(home, /linkLabel:\s*"View lever handles"/);
   assert.doesNotMatch(home, /linkLabel:\s*"Learn more"/);
 });

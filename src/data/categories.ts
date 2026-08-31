@@ -35,6 +35,30 @@ export function getTopLevelCategories(): Category[] {
   return categories;
 }
 
+/** Slug plus both display names — everything the menu needs and nothing else. */
+export interface MenuCategory {
+  slug: string;
+  label: string;
+  labelEs: string;
+}
+
+/**
+ * The catalogue as the mobile menu needs it.
+ *
+ * Passed down from the server layouts rather than imported by the drawer directly.
+ * `categories` carries summaries, images and the whole sub-category tree — 15KB of JSON
+ * plus the alt-override and watermark modules it pulls in — and the drawer is client
+ * code, so importing it there would ship all of that to every visitor to render fifteen
+ * labels.
+ */
+export function getMenuCategories(): MenuCategory[] {
+  return categories.map((category) => ({
+    slug: category.slug,
+    label: category.name,
+    labelEs: category.nameEs ?? category.name,
+  }));
+}
+
 /** Find a category by its path of slugs, e.g. ["knob-locks", "tubular-knob"]. */
 export function findCategoryByPath(path: string[]): Category | undefined {
   let level: Category[] | undefined = categories;

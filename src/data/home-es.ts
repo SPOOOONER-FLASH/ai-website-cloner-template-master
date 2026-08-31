@@ -15,10 +15,10 @@ export const hero1: HeroModuleContent = {
     src: "/images/editorial/hero-warm-residential-entry.webp",
     label: "Umbral residencial de madera y piedra caliza abierto hacia un patio ajardinado",
   },
-  title: "Cerradura tubular moderna",
-  body: "Una manilla negra de líneas limpias para interiores residenciales contemporáneos.",
-  linkLabel: "Ver producto",
-  href: "/es/products/lever-handles/black-tubular-lever-lock-set",
+  title: "Manijas de palanca",
+  body: "Juegos de manija tubulares y de embutir en acero inoxidable, latón y negro mate para puertas residenciales y comerciales ligeras.",
+  linkLabel: "Ver manijas de palanca",
+  href: "/es/products/lever-handles",
 };
 
 /**
@@ -38,7 +38,7 @@ export const heroCarousel: HeroCarouselContent = {
       title: "Dispositivos antipánico",
       body: "Herrajes de liberación rápida para una evacuación fiable en edificios comerciales.",
       linkLabel: "Explorar dispositivos",
-      href: "/es/products/panic-exit-devices/305-fire-door-panic-exit-device",
+      href: "/es/products/panic-exit-devices",
     },
     hero1,
     {
