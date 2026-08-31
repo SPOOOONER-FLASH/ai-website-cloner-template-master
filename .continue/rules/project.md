@@ -96,6 +96,39 @@ git log -5 -- docs/collaboration/agent-updates/
 - Ownership below is the default routing rule, not a reason to ignore an explicit client
   request or a review finding.
 
+### A dirty tree is not a blocker
+
+You will open this repo and find thousands of paths you did not touch. That is normal here:
+`out/` alone is ~2350 files, and another agent may be mid-build. It is **not** a signal to
+stop, audit, or ask. Read the two lines below and start working.
+
+| What you see | What it means | What you do |
+|---|---|---|
+| `out/` is dirty | Someone holds the release-build baton | Do not build, do not run `deploy:prep`, do not stage `out/`. Commit source; say in your update that the build is theirs. |
+| Files staged that are not yours | Another agent is mid-commit | Commit with `git commit -- <your paths>`. Pathspec form ignores the rest of the index, so their staging survives untouched. |
+| A file you need is already modified | Overlap, possibly | `git diff -- <file>`. Different lines → work. Same lines → stop on that file only, and go do something else on your list. |
+| Anything else unfamiliar | Someone's work in progress | Leave it. Do not restore, clean, format, move, or delete it. |
+
+**Do not spend turns re-auditing.** Two commands settle it — `git status --short` and
+`git log --oneline -5`. If they do not settle it, the answer is "not mine, carry on",
+not another investigation.
+
+**Do not wait for the other agent.** If your part is done and theirs is not, commit yours
+and report. Whoever finishes last commits last; there is no merge ceremony.
+
+### Write it down or it did not happen
+
+Anything said only in a chat turn is gone at the next context compaction. Anything in
+`AGENTS.md`, `HANDOFF.md`, `docs/collaboration/tasks/` or an agent-update is re-read by
+every session that follows.
+
+So: a decision, a confirmed fact, a piece of evidence, or a hand-off **goes in a tracked
+file in the same commit as the work**. One fact, one place — when `HANDOFF.md` and a task
+file disagree, the task file wins and `HANDOFF.md` should be reduced to a pointer.
+
+Checkpoint every two or three finished objectives: commit, write the update, and let the
+context shrink. A long unbroken session is not thoroughness, it is an un-saved file.
+
 ### Finish and communicate quickly
 
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
