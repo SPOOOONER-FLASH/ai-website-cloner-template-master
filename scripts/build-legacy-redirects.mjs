@@ -28,6 +28,29 @@ import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
 
 const OUT = "deploy/nginx/legacy-redirects.conf";
 
+/**
+ * Legacy category ids, recovered from Bing Webmaster Tools' "duplicate titles" export on
+ * 2026-08-31. That report pairs each failing URL with its old <title>, and the titles are
+ * the DedeCMS category names — the table the original scrape missed.
+ *
+ * Only ids whose title maps onto a category that exists today. "Factory" (tid=89) and
+ * "Contact us" (tid=91) are not product categories and are listed here deliberately,
+ * pointing at the pages that replaced them.
+ */
+const LEGACY_CATEGORY_TIDS = {
+  75: "/products/",
+  89: "/company/",
+  91: "/contact/",
+  97: "/products/lock-cases/",
+  99: "/products/knob-locks/",
+  101: "/products/knob-locks/",
+  105: "/products/knob-locks/",
+  119: "/products/glass-door-accessories/",
+  123: "/products/panic-exit-devices/",
+  131: "/products/brass-steel-hinges/",
+  133: "/products/hardware-accessories/",
+};
+
 /* --- live products, indexed by every identifier the old site might have used ----- */
 const byKey = new Map();
 for (const file of readdirSync("content/products").filter((f) => f.endsWith(".json"))) {
@@ -70,11 +93,19 @@ const lines = [
   ...pairs.map(([aid, url]) => `    ${aid} "${url}";`),
   "}",
   "",
-  "# Category listings (tid=NNN). The scrape did not capture the tid -> category table,",
-  "# so these go to the catalogue hub rather than guessing a category and landing the",
-  "# visitor somewhere wrong.",
+  "# Category listings (tid=NNN).",
+  "#",
+  "# The original scrape never captured the tid -> category table, so every tid fell",
+  "# through to /products/. Bing Webmaster Tools handed it over by accident: its",
+  "# \"duplicate titles\" export lists each failing URL beside its <title>, and those",
+  "# titles are the old DedeCMS category names. Eleven ids recovered that way.",
+  "#",
+  "# tid=97 alone carries 456 internal links in Search Console. Landing all of them on",
+  "# the generic hub reads to Google as a soft 404; landing them on Lock Cases does not.",
   "map $arg_tid $legacy_category_url {",
   "    default \"\";",
+  ...Object.entries(LEGACY_CATEGORY_TIDS).map(([tid, url]) => `    ${tid} "${url}";`),
+  "    # Not recovered: still the hub rather than a guess.",
   "    ~^\\d+$ \"/products/\";",
   "}",
   "",
