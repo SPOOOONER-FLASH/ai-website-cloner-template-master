@@ -112,11 +112,36 @@ const drawerCards = {
   ],
 } as const;
 
+/*
+  Four facts, all published elsewhere on the site.
+
+  Manufacturing location and year: the company record. ISO 9001: the certificates page.
+  Lead time: client-confirmed 2026-09-01, the same figure the category pages and the FAQ
+  carry. OEM: the services page. Nothing here is an MOQ, a price or a certification scope,
+  because those are either unpublished or model-specific — see the honesty rule in
+  JsonLd.tsx, which this follows.
+*/
+const factoryFacts = {
+  en: [
+    { label: "Manufacturing", value: "Zhongshan, Guangdong — since 1998" },
+    { label: "Quality system", value: "ISO 9001 certified" },
+    { label: "Lead time", value: "From 30 days after order confirmation" },
+    { label: "Custom work", value: "OEM and private label, own tooling" },
+  ],
+  es: [
+    { label: "Fabricación", value: "Zhongshan, Guangdong — desde 1998" },
+    { label: "Sistema de calidad", value: "Certificación ISO 9001" },
+    { label: "Plazo de producción", value: "Desde 30 días tras confirmar el pedido" },
+    { label: "Personalización", value: "OEM y marca propia, molde propio" },
+  ],
+} as const;
+
 const COPY = {
   en: {
     buy: "Buy it now",
     catalogue: "Products",
     company: "Company",
+    factory: "The factory",
     follow: "Follow us",
     close: "Close menu",
     dismiss: "Dismiss site menu",
@@ -127,6 +152,7 @@ const COPY = {
     buy: "Comprar ahora",
     catalogue: "Productos",
     company: "Empresa",
+    factory: "La fábrica",
     follow: "Síganos",
     close: "Cerrar menú",
     dismiss: "Cerrar el menú",
@@ -376,6 +402,40 @@ export function SiteMenuDrawer({
               <ul className="mt-16 sm:grid sm:grid-cols-2 sm:gap-x-32">
                 {companyLinks[locale].map((link) => renderLink(link, true))}
               </ul>
+            </section>
+
+            {/*
+              Factory facts, desktop only. Option B, chosen by the client 2026-09-01.
+
+              On 2026-09-01 a customer building a quotation could not find an address
+              anywhere on the site. The drawer is the one panel reachable from all 941
+              pages, so putting "who we are, where, how fast, can you customise" here
+              gives those four questions a site-wide answer position rather than one page
+              they have to find.
+
+              These four are also, exactly, what an answer engine gets asked about a
+              manufacturer and what it can quote — every value is published elsewhere on
+              the site and none of it is a claim we cannot evidence.
+            */}
+            <section className="hidden pt-40 xl:block">
+              <p className="drawer-eyebrow">{t.factory}</p>
+              <dl className="mt-16 border-t border-line">
+                {factoryFacts[locale].map((fact) => (
+                  <div
+                    key={fact.label}
+                    className="grid grid-cols-2 gap-16 border-b border-line py-12 text-c2"
+                  >
+                    <dt className="text-ink-secondary">{fact.label}</dt>
+                    <dd className="text-ink">{fact.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <address className="mt-16 not-italic text-c2 text-ink-secondary">
+                {siteSettings.contact.manufacturingEntity}
+                <br />
+                {siteSettings.contact.address}, {siteSettings.contact.city},{" "}
+                {siteSettings.contact.province}
+              </address>
             </section>
 
             <section className="mt-auto border-t border-line pt-24">

@@ -182,10 +182,64 @@ function normalise(text) {
   return text.replace(/[\u00a0\u2007\u202f\u2009]/g, " ");
 }
 
+/**
+ * A finish list — "Polished Brass (PB), Antique Brass (AB) — all available".
+ *
+ * Composed rather than listed. scripts/expand-finish-codes.mjs turns bare codes into
+ * "Name (CODE)" pairs, which produced 19 new unique English strings the moment it ran;
+ * adding 19 literals to the glossary would mean adding a twentieth the next time one
+ * more model is offered in one more finish. The name is translated, the bracketed order
+ * code is left exactly as it is — it is what the buyer writes on a purchase order and is
+ * identical in every language — and the trailing clause is translated once.
+ */
+/**
+ * Split "Polished Brass (PB)" into its name and its code.
+ *
+ * Done with string operations rather than a regular expression on purpose: the pattern
+ * needs escaped literal brackets, and every layer between here and the file — shell
+ * quoting, template literals — had a go at those backslashes and won. `endsWith` cannot
+ * be mis-escaped.
+ */
+function splitFinishPart(part) {
+  if (!part.endsWith(")")) return null;
+  const open = part.lastIndexOf(" (");
+  if (open < 1) return null;
+
+  const name = part.slice(0, open);
+  const code = part.slice(open + 2, -1);
+  if (!code || code.length > 3 || code !== code.toUpperCase()) return null;
+  if (!/^[A-Z]+$/.test(code)) return null;
+  return { name, code };
+}
+
+function translateFinishList(text) {
+  const tail = / — (all|other) available$/.exec(text);
+  const body = tail ? text.slice(0, tail.index) : text;
+  if (!body.includes("(")) return null;
+
+  const parts = body.split(", ").map((part) => {
+    const split = splitFinishPart(part);
+    if (!split) return null;
+    const name = glossary.values[split.name];
+    return name ? `${name} (${split.code})` : null;
+  });
+  if (parts.some((p) => p === null)) return null;
+
+  const suffix = tail
+    ? tail[1] === "all"
+      ? " — todos disponibles"
+      : " — otros disponibles"
+    : "";
+  return parts.join(", ") + suffix;
+}
+
 function translateValue(input) {
   const text = normalise(input);
   const exact = glossary.values[text];
   if (exact) return exact;
+
+  const finishes = translateFinishList(text);
+  if (finishes) return finishes;
   if (IS_CODE.test(text.trim())) return text.trim();
 
   // The client writes the same material a dozen ways; casing is not meaning.

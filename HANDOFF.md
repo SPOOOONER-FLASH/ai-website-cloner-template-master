@@ -125,6 +125,32 @@ ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文�
 | 内容过少 | 25 | 已修大部分 |
 | `<img>` 缺 alt | 4 | |
 
+## 六·五、2026-09-01 结论：瓶颈已经从代码转到数据
+
+结构工程基本做完了 —— Schema、canonical、301、hreflang、图片 sitemap、面包屑、
+商业意图词、五条商务 FAQ 全部上线，AI 已引用 9 次。**再投代码的边际收益在快速下降。**
+
+真正卡住的是字段覆盖率，量出来是这样：
+
+```
+Packing         1%   还缺 429      ← 报价与运费全卡在这
+Cycle life     23%   还缺 333
+Backset        33%   还缺 291
+Function       38%   还缺 271
+Door thickness 37%   还缺 272
+Application    49%   还缺 222
+Finish         66%   还缺 150
+Material       90%   还缺  45
+```
+
+`available on request` 只有 48 行 / 48 个产品 —— **不是主要问题，「根本没有那一行」才是。**
+
+给美工同事的填写表（从真实数据生成，可打印 PDF）：
+[`docs/research/DATA_GAP_SHEET.html`](docs/research/DATA_GAP_SHEET.html)
+
+完整复盘、Gemini 35 条对账、Claude × Codex 分工：
+[`docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md`](docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md)
+
 ## 七、需要甲方给数据才能推进
 
 - **75 个产品无图**（原 113，2026-08-27 从 F 盘补了 38 个）。

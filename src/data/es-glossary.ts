@@ -285,6 +285,19 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Polished Stainless Steel": "Acero inoxidable pulido",
   Chrome: "Cromo",
   "Chrome Plated": "Cromado",
+  /*
+    The rest of the finish set, in the title case scripts/expand-finish-codes.mjs writes.
+    The order code stays in brackets after the name and is never translated — it is what
+    the buyer puts on a purchase order and is identical in every language.
+    translate-products-es.mjs composes the comma list from these, so a finish offered on
+    one more model needs no new entry, and a finish we have never named needs exactly one.
+  */
+  "Satin Chrome": "Cromo satinado",
+  "Satin Brass": "Latón satinado",
+  "Bright Polished": "Pulido brillante",
+  "Black Nickel": "Níquel negro",
+  "Nickel Plated": "Niquelado",
+  "Oil Rubbed Bronze": "Bronce envejecido",
   "Matt Black": "Negro mate",
   White: "Blanco",
   "All Available": "Todos disponibles",
