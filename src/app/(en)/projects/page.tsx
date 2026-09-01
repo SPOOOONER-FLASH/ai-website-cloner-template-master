@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Door Hardware Applications by Building Type",
   description:
-    "Which hardware a commercial, hospitality, residential or glass-door schedule actually takes, and where each part sits on the door. Every model listed is one we manufacture.",
+    "Which hardware a commercial, hospitality, residential or glass-door schedule takes, and where each part sits on the door. Every model listed is one we make.",
 });
 
 export default function ProjectsPage() {

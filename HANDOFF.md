@@ -149,6 +149,19 @@ Material       90%   还缺  45
 完整复盘、Gemini 35 条对账、Claude × Codex 分工：
 [`docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md`](docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md)
 
+## 六·六、FSB 20 维对比报告：逐条回应（2026-09-01）
+
+9 条已完成或当日完成 · 5 条被数据卡住 · **4 条我判断不该按它说的做** · 2 条需甲方决策。
+
+不该做的四条：设计师背书（我们没有大师 IP，替代品是车间实拍）·
+分面静态聚合页（447 页还没被抓，再造 URL 只会让队列更长）·
+「缺 JSON-LD」（与事实相反，Bing AI 已引用 9 次）· ESG 声明（没报告就是编造）。
+
+**对标的正确用法是看清差距，不是照着变成对方。** 把 20 条都补齐会得到一个更差的 FSB。
+该问的是：FSB 用设计师建立信任，我们用什么？答案是车间和数据。
+
+全文：[`docs/collaboration/agent-updates/2026-09-01-claude-fsb-20-point-response.md`](docs/collaboration/agent-updates/2026-09-01-claude-fsb-20-point-response.md)
+
 ## 七、需要甲方给数据才能推进
 
 - **75 个产品无图**（原 113，2026-08-27 从 F 盘补了 38 个）。
