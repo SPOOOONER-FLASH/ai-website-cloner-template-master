@@ -3,6 +3,7 @@ import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { siteSettings } from "@/data/navigation";
+import { representatives } from "@/data/representatives";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
@@ -53,6 +54,45 @@ export default function ContactPage() {
               <p className="mt-8 text-c2 text-ink-tertiary">
                 {siteSettings.contact.addressZh}
               </p>
+            </div>
+
+            {/*
+              Overseas representatives.
+
+              Labelled "representative contacts", not offices — see the note in
+              src/data/representatives.ts. Two of these addresses are residential and one
+              is a fairground, and a buyer who looks one up will find that; the wording
+              has to survive the check.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Representative contacts</h2>
+              <p className="mt-8 text-c2 text-ink-secondary">
+                Manufacturing is in Zhongshan. These are the people to reach in each market.
+              </p>
+              <ul className="mt-24 space-y-24">
+                {representatives.map((rep) => (
+                  <li key={`${rep.region}-${rep.city}`}>
+                    <p className="text-c2 uppercase tracking-wide text-ink-tertiary">
+                      {rep.region}
+                    </p>
+                    <p className="mt-4 text-c1 text-ink">{rep.city}</p>
+                    <address className="mt-4 not-italic text-c1 text-ink-secondary">
+                      {rep.address}
+                    </address>
+                    {rep.phone ? (
+                      <a
+                        href={`tel:${rep.phone.replace(/\s/g, "")}`}
+                        className="short-marker short-marker-compact mt-8 inline-block text-c1 text-brand hover:text-brand-hover"
+                      >
+                        {rep.phone}
+                      </a>
+                    ) : null}
+                    {rep.note ? (
+                      <p className="mt-8 max-w-[46ch] text-c2 text-ink-secondary">{rep.note}</p>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="mt-48 border-t border-line pt-24">
