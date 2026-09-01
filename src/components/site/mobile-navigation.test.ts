@@ -24,12 +24,23 @@ test("a nav rail names destinations on every viewport below xl", () => {
   assert.match(header, /className="layout border-t border-line bg-surface xl:hidden"/);
   assert.match(header, /className="nav-rail col-content"/);
 
-  // Not a second copy of the labels: both rows read the same CMS-backed array.
-  assert.match(header, /headerNav\.map/g);
+  /*
+    Not a second copy of the labels: both rows read the same CMS-backed array.
+
+    This used to require the literal `headerNav.map` twice. The rail now reads
+    `headerNav.filter(...).map(...)` — 2026-09-01, dropping Projects so "Buy it now"
+    fits inside 375px — which is still the same array and still not a restated label
+    list, so the assertion counts uses of `headerNav` rather than one exact call shape.
+    Hard-coding a label list in the rail would leave only one use and fail here.
+  */
   assert.ok(
-    (header.match(/headerNav\.map/g) ?? []).length >= 2,
-    "the rail should map headerNav, not restate the labels",
+    (header.match(/headerNav\b/g) ?? []).length >= 2,
+    "the rail should derive from headerNav, not restate the labels",
   );
+  assert.match(header, /headerNav[\s\S]{0,200}?\.map\(/);
+
+  // The rail deliberately omits Projects; the desktop row and the drawer still carry it.
+  assert.match(header, /\.filter\(\(link\) => link\.href !== "\/projects"\)/);
 });
 
 test("the rail scrolls rather than wraps, and hides its scrollbar", () => {

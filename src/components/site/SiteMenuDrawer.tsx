@@ -70,6 +70,48 @@ const companyLinks = {
   ],
 } as const;
 
+/*
+  The two cards in the desktop drawer.
+
+  Product Finder first because it is the only tool on the site that answers "which model
+  do I need" rather than "what do you make", and Projects second because it is the
+  evidence. Both images are already in the editorial set and carry responsive variants.
+*/
+const drawerCards = {
+  en: [
+    {
+      href: "/product-finder/",
+      image: "/images/editorial/material-bronze-patina.webp",
+      alt: "Bronze surface study showing patina and machining marks",
+      title: "Product Finder",
+      body: "Filter 435 models by category, material, finish and door type.",
+    },
+    {
+      href: "/projects/",
+      image: "/images/editorial/project-glass-entrance.webp",
+      alt: "Frameless glass entrance with stainless pull handles",
+      title: "Projects",
+      body: "How the hardware is specified on real buildings.",
+    },
+  ],
+  es: [
+    {
+      href: "/product-finder/",
+      image: "/images/editorial/material-bronze-patina.webp",
+      alt: "Estudio de superficie en bronce con pátina y marcas de mecanizado",
+      title: "Buscador de productos",
+      body: "Filtre 435 modelos por categoría, material, acabado y tipo de puerta.",
+    },
+    {
+      href: "/es/projects/",
+      image: "/images/editorial/project-glass-entrance.webp",
+      alt: "Entrada de vidrio sin marco con tiradores de acero inoxidable",
+      title: "Proyectos",
+      body: "Cómo se especifican los herrajes en edificios reales.",
+    },
+  ],
+} as const;
+
 const COPY = {
   en: {
     buy: "Buy it now",
@@ -209,11 +251,17 @@ export function SiteMenuDrawer({
             </section>
 
             {/*
-              The catalogue itself. Fifteen categories is a long list on a phone, and it
-              is still the shortest route to the page the visitor came for — two columns
-              from 744px so it stops being a scroll on anything wider than a phone.
+              The catalogue, on phones and tablets only.
+
+              Below 1376px the header collapses to a wordmark and a hamburger, so this is
+              the only way to reach a category — it has to be here. At 1376px and above
+              the header opens a products shelf that already lists all fifteen families
+              and their sub-types, and repeating them in the drawer made it a long scroll
+              saying nothing the page behind it was not already showing. FSB's desktop
+              menu is short for the same reason: the nav carries the catalogue, the menu
+              carries everything else.
             */}
-            <section className="pt-40">
+            <section className="pt-40 xl:hidden">
               <p className="drawer-eyebrow">{t.catalogue}</p>
               <ul className="mt-16 divide-y divide-line border-y border-line">
                 {catalogueLinks[locale].map((link) => renderLink(link))}
@@ -284,6 +332,42 @@ export function SiteMenuDrawer({
                     </li>
                   );
                 })}
+              </ul>
+            </section>
+
+            {/*
+              Two picture cards, desktop only.
+
+              Taking the fifteen categories out above left the drawer nearly empty at
+              1376px and wider, and an empty panel reads as unfinished rather than as
+              restraint. FSB fills the same space with two images that each lead
+              somewhere — not decoration, but the two destinations a visitor who opened
+              the menu instead of using the nav is most likely to want.
+
+              Hidden below xl because on a phone this space belongs to the catalogue,
+              and two 4:3 images there would push Company and the mailbox off the screen.
+            */}
+            <section className="hidden pt-40 xl:block">
+              <ul className="grid grid-cols-2 gap-x-24">
+                {drawerCards[locale].map((card) => (
+                  <li key={card.href}>
+                    <Link href={card.href} onClick={onClose} className="drawer-card">
+                      {/* Plain img for the same reason as MediaPlaceholder: static export
+                          with images.unoptimized, so next/image adds markup without
+                          optimising anything. */}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={card.image}
+                        alt={card.alt}
+                        loading="lazy"
+                        decoding="async"
+                        className="drawer-card-image"
+                      />
+                      <p className="drawer-card-title">{card.title}</p>
+                      <p className="drawer-card-body">{card.body}</p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </section>
 

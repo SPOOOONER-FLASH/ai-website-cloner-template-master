@@ -1247,3 +1247,47 @@
     }
   }
 }
+
+@layer components {
+  /*
+    Desktop drawer picture cards.
+
+    Sized so two sit side by side in the 46vw panel without the drawer needing its own
+    scrollbar at 900px tall. The image is the only thing that moves on hover — the type
+    stays put, because a caption that shifts under the cursor reads as a glitch.
+  */
+  .drawer-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .drawer-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: var(--color-surface-alt);
+    transition: opacity var(--motion-fast) var(--motion-ease-crisp);
+  }
+
+  .drawer-card:hover .drawer-card-image,
+  .drawer-card:focus-visible .drawer-card-image {
+    opacity: 0.82;
+  }
+
+  .drawer-card-title {
+    margin-top: 1.2rem;
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-ink);
+  }
+
+  .drawer-card-body {
+    margin-top: 0.4rem;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+  }
+}

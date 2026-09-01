@@ -321,7 +321,25 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             aria-label={isSpanish ? "Navegación principal" : "Main navigation"}
             className="nav-rail col-content"
           >
-            {headerNav.map((link) => {
+            {headerNav
+              /*
+                Two changes to what the phone rail shows, both about the same 375px.
+
+                Projects comes out. The rail scrolls horizontally and anything past the
+                fold is a link most visitors never see; Projects is the least
+                load-bearing of the six — three reference pages the client does not treat
+                as a selling surface — so it goes, and stays in the desktop row and the
+                drawer.
+
+                "Buy it now" moves to the front. Even with five items it ended at 464px
+                on a 375px screen: present, but off the edge, which for the one control
+                that leads to an order is the same as absent. Reading order is not
+                sacred here — the rail is a shelf of destinations, not a sentence — and
+                the item most likely to be wanted belongs where the eye lands first.
+              */
+              .filter((link) => link.href !== "/projects")
+              .sort((a, b) => Number(b.href === "/downloads") - Number(a.href === "/downloads"))
+              .map((link) => {
               const href = localisedHref(link.href, locale);
 
               /*
