@@ -43,17 +43,39 @@ export default function ContactPage() {
               where the eye goes after the heading.
             */}
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Factory address</h2>
-              <p className="mt-8 text-c1 text-ink">{siteSettings.contact.manufacturingEntity}</p>
-              <address className="mt-4 not-italic text-c1 text-ink-secondary">
-                {siteSettings.contact.address}
-                <br />
-                {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
-                {siteSettings.contact.country}
-              </address>
-              <p className="mt-8 text-c2 text-ink-tertiary">
-                {siteSettings.contact.addressZh}
+              <h2 className="text-h3 text-ink">Addresses</h2>
+              <p className="mt-8 text-c2 text-ink-secondary">
+                Office for correspondence and documents; factory for production and
+                inspection visits.
               </p>
+
+              <div className="mt-24">
+                <p className="text-c2 text-ink-secondary">Office</p>
+                <address className="mt-4 not-italic text-c1 text-ink">
+                  {siteSettings.contact.address}
+                  <br />
+                  {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
+                  {siteSettings.contact.country}
+                </address>
+                <p className="mt-4 text-c2 text-ink-tertiary">
+                  {siteSettings.contact.addressZh}
+                </p>
+              </div>
+
+              {siteSettings.contact.factoryAddress ? (
+                <div className="mt-24">
+                  <p className="text-c2 text-ink-secondary">Factory</p>
+                  <address className="mt-4 not-italic text-c1 text-ink">
+                    {siteSettings.contact.factoryAddress}
+                    <br />
+                    {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
+                    {siteSettings.contact.country}
+                  </address>
+                  <p className="mt-4 text-c2 text-ink-tertiary">
+                    {siteSettings.contact.factoryAddressZh}
+                  </p>
+                </div>
+              ) : null}
             </div>
 
             {/*

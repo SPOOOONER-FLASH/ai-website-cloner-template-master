@@ -47,13 +47,16 @@ export interface SiteSettings {
      */
     postcode: string;
     /**
-     * The registered manufacturing entity, which is not the same legal person as the
-     * brand: the plant operates as 中山市雷茵五金制品有限公司 in Zhongshan, while the
-     * site trades as Canton Hyland / HYDE. A quotation, a customs declaration and a
-     * courier booking all need the manufacturing name and street, so both are published.
+     * Two addresses, because they are two places.
+     *
+     * `address` is the registered office in Xiaolan; `factoryAddress` is the plant on
+     * Haiwei Road. The client asked for the manufacturing company's own name to come off
+     * the site for now — the plant is new this year and still being fitted out, and a
+     * legal name attached to a half-equipped building is a claim they do not want to
+     * make yet. The streets are published; the entity is not.
      */
-    manufacturingEntity?: string;
-    manufacturingEntityZh?: string;
+    factoryAddress?: string;
+    factoryAddressZh?: string;
     /** The same street in Chinese, for freight forwarders and domestic couriers. */
     addressZh?: string;
     country: string;

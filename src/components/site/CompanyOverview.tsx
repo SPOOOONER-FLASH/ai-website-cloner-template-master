@@ -126,12 +126,21 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
             <div className="border-t border-line pt-16">
               <p className="text-c2 text-ink-secondary">
-                {locale === "es" ? "Fábrica" : "Manufacturing"}
+                {locale === "es" ? "Fábrica" : "Factory"}
               </p>
-              <p className="mt-8 text-c1 text-ink">
-                {siteSettings.contact.manufacturingEntity}
+              <address className="mt-8 not-italic text-c2 text-ink-secondary">
+                {siteSettings.contact.factoryAddress ?? siteSettings.contact.address}
+                <br />
+                {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
+                {siteSettings.contact.country}
+              </address>
+            </div>
+
+            <div className="border-t border-line pt-16">
+              <p className="text-c2 text-ink-secondary">
+                {locale === "es" ? "Oficina" : "Office"}
               </p>
-              <address className="mt-4 not-italic text-c2 text-ink-secondary">
+              <address className="mt-8 not-italic text-c2 text-ink-secondary">
                 {siteSettings.contact.address}
                 <br />
                 {siteSettings.contact.city}, {siteSettings.contact.province},{" "}

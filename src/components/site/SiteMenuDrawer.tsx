@@ -431,10 +431,8 @@ export function SiteMenuDrawer({
                 ))}
               </dl>
               <address className="mt-16 not-italic text-c2 text-ink-secondary">
-                {siteSettings.contact.manufacturingEntity}
-                <br />
-                {siteSettings.contact.address}, {siteSettings.contact.city},{" "}
-                {siteSettings.contact.province}
+                {siteSettings.contact.factoryAddress ?? siteSettings.contact.address},{" "}
+                {siteSettings.contact.city}, {siteSettings.contact.province}
               </address>
             </section>
 

@@ -99,6 +99,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         label: "Buscar",
         close: "Cerrar",
         empty: "Sin resultados",
+        emptyNear: "Sin coincidencia exacta. Los modelos más cercanos que publicamos:",
         loading: "Cargando…",
         placeholder: "Modelo, categoría o tipo de puerta",
         browse: "Categorías principales",
@@ -109,6 +110,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         label: "Search",
         close: "Close",
         empty: "No results",
+        emptyNear: "No exact match. The closest models we publish:",
         loading: "Loading…",
         placeholder: "Model, category or door type",
         browse: "Main categories",
@@ -200,6 +202,39 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
       .slice(0, MAX_RESULTS)
       .map((r) => r.entry);
   }, [index, query]);
+
+  /**
+   * What to offer when nothing matches.
+   *
+   * A buyer typed "D103" and got "No results". That was strictly correct — we publish
+   * D101 and D102 and no D103 — and completely useless: the catalogue has six deadbolts
+   * whose model numbers differ from what they typed by one character, and the dialog
+   * showed none of them.
+   *
+   * So on an empty result set, retry on the leading run of letters-and-digits with the
+   * last character dropped, repeatedly, until something matches or the stem gets too
+   * short to mean anything. "D103" -> "D10" finds D101 and D102; "LC8531" -> "LC853"
+   * finds the LC85 series. Three characters is the floor, below which a stem matches half
+   * the catalogue and the suggestions stop being suggestions.
+   */
+  const nearMatches = useMemo(() => {
+    if (!index || results.length) return [];
+    const raw = query.trim().toLowerCase();
+    if (!/^[a-z]*\d/.test(raw.replace(/[\s-]/g, ""))) return [];
+
+    let stem = raw.replace(/[\s-]/g, "");
+    while (stem.length > 3) {
+      stem = stem.slice(0, -1);
+      const hits = index
+        .map((entry) => ({ entry, s: score(entry, [stem]) }))
+        .filter((r) => r.s > 0)
+        .sort((a, b) => b.s - a.s)
+        .slice(0, 6)
+        .map((r) => r.entry);
+      if (hits.length) return hits;
+    }
+    return [];
+  }, [index, query, results.length]);
 
   const totalMatches = useMemo(() => {
     if (!index) return 0;
@@ -352,7 +387,28 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
             {loading ? <p className="text-c2 text-ink-secondary">{t.loading}</p> : null}
 
             {!loading && query.trim() && !results.length ? (
-              <p className="text-c2 text-ink-secondary">{t.empty}</p>
+              <>
+                <p className="text-c2 text-ink-secondary">
+                  {nearMatches.length ? t.emptyNear : t.empty}
+                </p>
+                {nearMatches.length ? (
+                  <ul className="mt-16 divide-y divide-line border-y border-line">
+                    {nearMatches.map((entry) => (
+                      <li key={entry.href}>
+                        <Link href={entry.href} onClick={close} className="drawer-link">
+                          <span>
+                            {entry.subtitle ? `${entry.subtitle} — ` : ""}
+                            {entry.title}
+                          </span>
+                          <span aria-hidden="true" className="drawer-chevron">
+                            ›
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </>
             ) : null}
 
             {results.length ? (

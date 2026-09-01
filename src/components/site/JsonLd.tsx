@@ -56,8 +56,12 @@ export function organisationSchema(): WithContext<Organization> {
       The manufacturing address, from content/site-settings.json.
 
       It was region + country only, which is not an address a buyer or an answer engine
-      can act on — and the city field said Guangzhou while the plant is in Zhongshan.
-      Both are now the registered manufacturing address supplied by the client.
+      can act on — and the city field said Guangzhou while both sites are in Zhongshan.
+
+      This emits the OFFICE (`address`), not the plant: schema.org's PostalAddress on an
+      Organization is the registered address for correspondence, and the factory on
+      Haiwei Road is a second location rather than a replacement. Both are published in
+      the page copy on /contact/ and /company/.
 
       Every part is emitted only if it is actually set. The postcode in particular is
       left blank rather than guessed: this object is machine-read and a wrong postcode is
