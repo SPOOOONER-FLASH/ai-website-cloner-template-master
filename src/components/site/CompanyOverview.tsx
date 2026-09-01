@@ -1,4 +1,5 @@
 import { ArrowLink } from "./ArrowLink";
+import { representatives } from "@/data/representatives";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import {
   certificates,
@@ -18,6 +19,7 @@ const copy = {
     title: "Hardware manufacturing since 1998",
     intro: "Door security, architectural hardware and OEM production for global building projects.",
     facts: "Company at a glance",
+    where: "Where we are",
     context: "Materials + technical context",
     contextBody:
       "These representative studies express architectural and finish context through metal, limestone, timber and glass. They are editorial concepts, not photographs of Canton Hyland facilities or completed client projects.",
@@ -39,6 +41,7 @@ const copy = {
     title: "Fabricación de herrajes desde 1998",
     intro: "Seguridad para puertas, herrajes arquitectónicos y producción OEM para proyectos internacionales.",
     facts: "La empresa en cifras",
+    where: "Dónde estamos",
     context: "Materiales + contexto técnico",
     contextBody:
       "Estos estudios representativos expresan el contexto arquitectónico y de acabados mediante metal, piedra caliza, madera y vidrio. Son conceptos editoriales, no fotografías de las instalaciones de Canton Hyland ni de proyectos terminados de clientes.",
@@ -106,6 +109,60 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               </div>
             ))}
           </dl>
+        </section>
+
+        {/*
+          Where the company actually is.
+
+          The factory address lives on /contact/ because that is where someone raising a
+          quotation looks for it, but "where are you" is a company question and this is
+          the company page — a buyer researching a supplier before enquiring never opens
+          the contact form. The overseas entries are representative contacts, not
+          offices; see the note in src/data/representatives.ts for why that wording is
+          load-bearing rather than modest.
+        */}
+        <section className="col-content border-t border-line pt-48">
+          <h2 className="text-h2 text-ink">{text.where}</h2>
+          <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="border-t border-line pt-16">
+              <p className="text-c2 text-ink-secondary">
+                {locale === "es" ? "Fábrica" : "Manufacturing"}
+              </p>
+              <p className="mt-8 text-c1 text-ink">
+                {siteSettings.contact.manufacturingEntity}
+              </p>
+              <address className="mt-4 not-italic text-c2 text-ink-secondary">
+                {siteSettings.contact.address}
+                <br />
+                {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
+                {siteSettings.contact.country}
+              </address>
+            </div>
+            {representatives.map((rep) => (
+              <div key={`${rep.region}-${rep.city}`} className="border-t border-line pt-16">
+                <p className="text-c2 text-ink-secondary">
+                  {locale === "es" ? rep.regionEs : rep.region}
+                </p>
+                <p className="mt-8 text-c1 text-ink">{rep.city}</p>
+                <address className="mt-4 not-italic text-c2 text-ink-secondary">
+                  {rep.address}
+                </address>
+                {rep.phone ? (
+                  <a
+                    href={`tel:${rep.phone.replace(/\s/g, "")}`}
+                    className="short-marker short-marker-compact mt-8 inline-block text-c2 text-brand hover:text-brand-hover"
+                  >
+                    {rep.phone}
+                  </a>
+                ) : null}
+              </div>
+            ))}
+          </div>
+          <p className="mt-24 max-w-[62ch] text-c2 text-ink-secondary">
+            {locale === "es"
+              ? "Fabricamos en Zhongshan. Fuera de China trabajamos con representantes: son puntos de contacto, no filiales."
+              : "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries."}
+          </p>
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x gap-y-48 border-t border-line pt-48">

@@ -258,7 +258,7 @@ export function SiteMenuDrawer({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
-                className="alibaba-hard-cta mt-16"
+                className="alibaba-hard-cta alibaba-hard-cta-compact mt-16"
               >
                 <span>{siteSettings.alibaba.label}</span>
                 <span aria-hidden="true">›</span>

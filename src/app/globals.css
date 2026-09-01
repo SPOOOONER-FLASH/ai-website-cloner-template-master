@@ -1291,3 +1291,34 @@
     color: var(--color-ink-secondary);
   }
 }
+
+@layer components {
+  /*
+    The drawer's Alibaba button.
+
+    The full-size CTA is 96px tall with a 19px face and a 9px offset plane. That is right
+    in the header shelf, where it sits in a wide row beside three text columns and has to
+    hold its own. In the drawer it is the first thing in a 46vw panel with nothing beside
+    it, and at full size it read as a black slab rather than a button — the client called
+    it out on 2026-09-01.
+
+    Same treatment, smaller: the hard plane and the invert are what make it recognisably
+    the storefront button, so those stay. Only the mass changes.
+  */
+  .alibaba-hard-cta-compact {
+    min-height: 5.6rem;
+    padding: 1.2rem 1.8rem;
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
+  }
+
+  .alibaba-hard-cta-compact:focus-visible {
+    box-shadow: 0.8rem 0.8rem 0 var(--color-shadow-hard);
+    transform: translate(-0.4rem, -0.4rem);
+  }
+
+  .alibaba-hard-cta-compact:active {
+    box-shadow: 0.2rem 0.2rem 0 var(--color-shadow-hard);
+  }
+}
