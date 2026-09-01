@@ -39,7 +39,7 @@ type ShelfName = "products" | "company" | "buy";
 const companyShelfLinks = {
   en: [
     { label: "Company overview", detail: "Manufacturing since 1998", href: "/company" },
-    { label: "Projects", detail: "Representative applications", href: "/projects" },
+    { label: "Applications", detail: "What each building type takes", href: "/projects" },
     { label: "Services", detail: "Selection and specification support", href: "/services" },
     { label: "Events", detail: "Meet HYDE in global markets", href: "/events" },
     { label: "Certificates", detail: "Verified model-scoped reports", href: "/certifications" },

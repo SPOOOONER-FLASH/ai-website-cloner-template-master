@@ -158,6 +158,32 @@
   <tr><td>开模费与打样周期</td><td>OEM 客户最常问的两个数字</td><td class="w"></td></tr>
 </table>
 
+<h2>六、按价值排序的七项（甲方 2026-09-01 指定顺序）</h2>
+<p class="small">上面几节是逐个型号的细活；这七项是「拿到就能立刻上站」的整批数据，按对生意的影响排序。</p>
+<table>
+  <tr><th>#</th><th>项目</th><th>为什么排这个位置</th><th>填写 / 附件</th></tr>
+  <tr><td>1</td><td>装箱数据</td><td>覆盖率只有 1%。买家算不出运费就问不出价，这是所有数据里最卡脖子的一项</td><td class="w"></td></tr>
+  <tr><td>2</td><td>不锈钢等级 304 / 201 / 316</td><td>横跨不锈钢拉手 35、铰链 26、卫浴 45 个产品。沿海与泳池项目一定会问</td><td class="w"></td></tr>
+  <tr><td>3</td><td>8 个表面代码全称</td><td>见第四节。其余 15 个已自动展开并译成西语，就差这 8 个</td><td class="w"></td></tr>
+  <tr><td>4</td><td>检测报告编号 + 机构 + 标准版本</td><td>AI 引用需要「事实锚点」。没有编号的认证一律不写</td><td class="w"></td></tr>
+  <tr><td>5</td><td>质保 / HS 编码 / 开模费 / 打样周期</td><td>质保和 HS 每个进口商都问；开模费和打样周期是 OEM 客户问得最多的两个数字</td><td class="w"></td></tr>
+  <tr><td>6</td><td>真实项目名（可隐去客户名）</td><td>保留国家 / 建筑类型 / 用了哪些型号即可。我们是 OEM 代工，客户名不能公开是行业常态，但「哪种楼用过哪些型号」可以说</td><td class="w"></td></tr>
+  <tr><td>7</td><td>38 条外链改深链</td><td><strong>这是唯一能加速 Google 收录那 447 个页面的杠杆。</strong>不需要填表，需要有人去 worldbid / traderscity 后台改链接</td><td class="w"></td></tr>
+</table>
+
+<h2>七、第 7 项的具体清单（不用填，照着改链接）</h2>
+<p class="small">
+  Search Console 显示我们全部 102 条外链<strong>都指向首页</strong>，一条深链都没有。
+  而这些来源页本身就是在讲某一个具体型号 —— 把链接从首页改成对应产品页，每条只需在对方后台编辑一次。
+  完整 38 条见仓库 <code>docs/research/BACKLINK_DEEPLINKS.md</code>，格式是「型号 / 应指向的网址 / 来源 listing」。
+</p>
+<table>
+  <tr><th>做什么</th><th>怎么做</th></tr>
+  <tr><td>登录 worldbid.com 后台</td><td>找到清单里列出的 listing，把正文里指向 cantonlock.com 首页的链接改成该型号的产品页网址</td></tr>
+  <tr><td>登录 traderscity.com 后台</td><td>同上</td></tr>
+  <tr><td>改完告诉技术同事</td><td>我们会在 Search Console 里跟踪这批页面的收录变化</td></tr>
+</table>
+
 <footer>
   填完把这份交回给技术同事即可，不需要自己改网站。<br>
   由 <code>scripts/build-data-gap-sheet.mjs</code> 生成 —— 补完数据后重跑，清单会自动变短。

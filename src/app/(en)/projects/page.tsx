@@ -5,9 +5,9 @@ import { ProjectListing } from "@/components/site/ProjectListing";
 export const metadata: Metadata = pageMetadata({
   enPath: "/projects",
   locale: "en",
-  title: "Projects + Applications",
+  title: "Door Hardware Applications by Building Type",
   description:
-    "Representative hardware application studies for commercial, hospitality, residential and glass-door schedules. Each study lists the exact catalogue models used.",
+    "Which hardware a commercial, hospitality, residential or glass-door schedule actually takes, and where each part sits on the door. Every model listed is one we manufacture.",
 });
 
 export default function ProjectsPage() {

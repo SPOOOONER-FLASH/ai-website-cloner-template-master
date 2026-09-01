@@ -54,7 +54,7 @@ const catalogueLinks = {
 const companyLinks = {
   en: [
     { label: "Company", href: "/company/" },
-    { label: "Projects", href: "/projects/" },
+    { label: "Applications", href: "/projects/" },
     { label: "Services", href: "/services/" },
     { label: "Certificates", href: "/certifications/" },
     { label: "Events", href: "/events/" },
@@ -62,7 +62,7 @@ const companyLinks = {
   ],
   es: [
     { label: "Empresa", href: "/es/company/" },
-    { label: "Proyectos", href: "/es/projects/" },
+    { label: "Aplicaciones", href: "/es/projects/" },
     { label: "Servicios", href: "/services/" },
     { label: "Certificados", href: "/certifications/" },
     { label: "Ferias", href: "/events/" },
