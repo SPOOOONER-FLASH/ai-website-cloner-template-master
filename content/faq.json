@@ -5,7 +5,7 @@
       "items": [
         {
           "question": "What is your minimum order quantity?",
-          "answer": ""
+          "answer": "It depends on the model, the finish and whether the order is stock or made to your specification. Most models fall between 300 and 5,000 pieces. Some items already listed on our Alibaba storefront carry a lower published minimum. Send the models you need and the quantities you have in mind, and the export team will confirm the minimum for that exact line before you commit to anything."
         },
         {
           "question": "What are your lead times?",
@@ -22,6 +22,10 @@
         {
           "question": "Can I order through Alibaba instead of by email?",
           "answer": "Yes. Our verified storefront carries the same catalogue and is often the faster route if you already buy through Alibaba — trade assurance, messaging and payment are handled there. For project schedules, custom finishes or master key systems, email is usually better because those need a technical conversation first."
+        },
+        {
+          "question": "How is shipping quoted, and can you ship duty paid?",
+          "answer": "Freight is quoted per shipment, because it depends on the destination, the weight and volume of the order and whether it goes by air or by sea. Both are available: air for samples and urgent replenishment, sea freight for full production orders. On our Alibaba storefront the freight for an order is calculated automatically at checkout for the main destination countries, which is the quickest way to see a landed figure. Duty-paid (DDP) shipping is available on many lanes, including the United States and much of Europe; elsewhere the default is DAP, with duties and clearance in your name. Tell the export team the destination city and the quantity and they will quote the modes side by side."
         }
       ]
     },

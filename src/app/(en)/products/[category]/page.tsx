@@ -30,6 +30,23 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category: categorySlug } = await params;
   const canonicalSlug = canonicalCategorySlug(categorySlug);
+  /*
+    Retired slug: this route exists only to redirect (see category-aliases.ts).
+
+    Keep the canonical pointing at the live page while marking the stub noindex. An
+    earlier version returned robots alone, which replaced the whole metadata object and
+    left the canonical falling back to the site root — scripts/seo-audit.test.mjs caught
+    it as redirect-canonical-mismatch. noindex and canonical do different jobs here and
+    both are needed: one keeps the stub out of the index, the other tells anything that
+    does reach it where the real page is.
+  */
+  if (canonicalSlug !== categorySlug) {
+    return {
+      robots: { index: false, follow: true },
+      alternates: { canonical: `/products/${canonicalSlug}/` },
+    };
+  }
+
   const category = getTopLevelCategories().find((item) => item.slug === canonicalSlug);
 
   if (!category) return {};

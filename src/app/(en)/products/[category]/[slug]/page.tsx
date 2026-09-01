@@ -28,6 +28,15 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   if (!product) return {};
 
   const canonicalCategory = canonicalCategorySlug(category);
+
+  // Retired slug: redirect stub. noindex, but keep the canonical pointing at the real
+  // page — see the fuller note in the category route.
+  if (canonicalCategory !== category) {
+    return {
+      robots: { index: false, follow: true },
+      alternates: { canonical: `/products/${canonicalCategory}/${slug}/` },
+    };
+  }
   const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
   const spanishUrl = absoluteUrl(`/es${path}`);

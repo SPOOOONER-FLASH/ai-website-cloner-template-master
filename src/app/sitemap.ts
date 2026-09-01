@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { categories } from "@/data/categories";
-import { getAllProductParams } from "@/data/products";
+import { getAllProductParams, getProductBySlug } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
 import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: number,
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly",
     lastModified?: Date,
+    images?: string[],
   ): MetadataRoute.Sitemap => {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
     const en = absoluteUrl(`${clean}/`);
@@ -52,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
       changeFrequency,
       lastModified,
+      images,
     });
   };
 
@@ -82,9 +84,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push(...entry(`/products/${category.slug}`, PRIORITY.category, "weekly"));
   }
 
-  // Product detail: the commercial core, highest priority after the homepage.
+  /*
+    Product detail: the commercial core, highest priority after the homepage.
+
+    Each entry carries its hero image. A crawler indexing the page does not thereby index
+    the photograph on it — pages and images are separate paths — and buyers in this trade
+    routinely search Google Images for a shape before they have a model number. 360 of
+    the 435 records have a photograph; the rest are still awaiting one and are emitted
+    without an image rather than with a placeholder.
+  */
   for (const { category, slug } of getAllProductParams()) {
-    urls.push(...entry(`/products/${category}/${slug}`, PRIORITY.productDetail));
+    const product = getProductBySlug(category, slug);
+    const hero = product?.heroImage?.src;
+    urls.push(
+      ...entry(
+        `/products/${category}/${slug}`,
+        PRIORITY.productDetail,
+        "monthly",
+        undefined,
+        hero ? [absoluteUrl(hero)] : undefined,
+      ),
+    );
   }
 
   for (const { slug } of getAllProjectParams()) {
