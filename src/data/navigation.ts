@@ -41,7 +41,21 @@ export interface SiteSettings {
     address: string;
     city: string;
     province: string;
+    /**
+     * Left empty unless the client supplies it. This reaches the Organization JSON-LD,
+     * where a guessed postcode would be a public claim rather than a placeholder.
+     */
     postcode: string;
+    /**
+     * The registered manufacturing entity, which is not the same legal person as the
+     * brand: the plant operates as 中山市雷茵五金制品有限公司 in Zhongshan, while the
+     * site trades as Canton Hyland / HYDE. A quotation, a customs declaration and a
+     * courier booking all need the manufacturing name and street, so both are published.
+     */
+    manufacturingEntity?: string;
+    manufacturingEntityZh?: string;
+    /** The same street in Chinese, for freight forwarders and domestic couriers. */
+    addressZh?: string;
     country: string;
   };
   social: NavLink[];

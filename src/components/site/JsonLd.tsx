@@ -52,8 +52,22 @@ export function organisationSchema(): WithContext<Organization> {
     logo: absoluteUrl("/images/brand/hyde/hyde-logo-horizontal-black.svg"),
     description:
       "Manufacturer of panic exit devices, mortise locks, lever handles, knob locks, glass door fittings and floor hinges for commercial and residential buildings.",
+    /*
+      The manufacturing address, from content/site-settings.json.
+
+      It was region + country only, which is not an address a buyer or an answer engine
+      can act on — and the city field said Guangzhou while the plant is in Zhongshan.
+      Both are now the registered manufacturing address supplied by the client.
+
+      Every part is emitted only if it is actually set. The postcode in particular is
+      left blank rather than guessed: this object is machine-read and a wrong postcode is
+      a public claim, not a typo.
+    */
     address: {
       "@type": "PostalAddress",
+      ...(siteSettings.contact?.address ? { streetAddress: siteSettings.contact.address } : {}),
+      ...(siteSettings.contact?.city ? { addressLocality: siteSettings.contact.city } : {}),
+      ...(siteSettings.contact?.postcode ? { postalCode: siteSettings.contact.postcode } : {}),
       addressRegion: "Guangdong",
       addressCountry: "CN",
     },

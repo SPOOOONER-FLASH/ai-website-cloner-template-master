@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
+import { siteSettings } from "@/data/navigation";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
@@ -26,6 +27,33 @@ export default function ContactPage() {
               Include the door type, required finish, applicable standard, quantity and destination
               market so we can prepare a useful first response.
             </p>
+
+            {/*
+              The manufacturing address, on the page people reach when they need it.
+
+              A customer building a quotation on 2026-09-01 could not find an address
+              anywhere on the site: it was region-and-country in the JSON-LD and nowhere
+              in the copy. An export quotation, a customs declaration and a courier
+              booking all need the street; a buyer who cannot find one on a factory's own
+              site reasonably wonders whether it is a factory.
+
+              Placed above the catalogue block rather than below the form, because
+              someone hunting for an address is scanning, not reading, and this column is
+              where the eye goes after the heading.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Factory address</h2>
+              <p className="mt-8 text-c1 text-ink">{siteSettings.contact.manufacturingEntity}</p>
+              <address className="mt-4 not-italic text-c1 text-ink-secondary">
+                {siteSettings.contact.address}
+                <br />
+                {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
+                {siteSettings.contact.country}
+              </address>
+              <p className="mt-8 text-c2 text-ink-tertiary">
+                {siteSettings.contact.addressZh}
+              </p>
+            </div>
 
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Current product catalogue</h2>
