@@ -120,7 +120,17 @@ console.log(
     `(text is taken from rendered HTML with tags stripped — meta and JSON-LD do not count)\n`,
 );
 
-console.log(`chrome — on every page, so credited to none: ${[...chrome].join(", ") || "none"}
+/*
+  Two different questions, and they need separate answers.
+
+  "Is the word on the page at all?" is what an answer engine needs — it can only quote
+  what is written. "Does this page say it and its siblings not?" is what ranking one
+  category above another needs. A shared sourcing line answers the first and, by
+  definition, scores zero on the second. Reporting only the second would make a real
+  improvement look like no change, so both are printed.
+*/
+console.log(`present on EVERY category page (quotable, but does not differentiate):`);
+console.log(`   ${[...chrome].join(", ") || "none"}
 `);
 
 console.log(

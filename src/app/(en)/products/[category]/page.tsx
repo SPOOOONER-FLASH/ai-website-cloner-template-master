@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categorySourcingLine } from "@/data/category-sourcing";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -53,12 +54,30 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   // Summaries above ~83 chars overflow the 165-char budget with the full tail and used
   // to ship bare; the compact tail keeps the manufactured-in-Guangdong fact on those pages.
   const count = getProductsByCategory(category.slug).length;
-  const tail = `${count} models manufactured in Guangdong, China and exported to over thirty markets.`;
-  const compactTail = `${count} models made in Guangdong, China.`;
+  // "Lead time from 30 days" (client-confirmed 2026-09-01) is the answer to the question
+  // buyers ask before any other, and a snippet is where they read it. It replaces the
+  // export-markets clause rather than joining it: both do not fit inside 165 characters,
+  // and a delivery date outranks a market count for someone deciding whether to enquire.
+  const tail = `${count} models manufactured in Guangdong, China. Lead time from 30 days.`;
+  const compactTail = `${count} models made in Guangdong. Lead time from 30 days.`;
+  // A long summary cannot keep both facts. Lead time is the one that survives: it is
+  // what the buyer is deciding on, and the factory location is already on every page.
+  const leadOnlyTail = `${count} models. Lead time from 30 days.`;
+  const bareTail = `${count} models made in Guangdong, China.`;
   const full = `${category.summary} ${tail}`;
   const compact = `${category.summary} ${compactTail}`;
+  const leadOnly = `${category.summary} ${leadOnlyTail}`;
+  const bare = `${category.summary} ${bareTail}`;
   const description =
-    full.length <= 165 ? full : compact.length <= 165 ? compact : category.summary;
+    full.length <= 165
+      ? full
+      : compact.length <= 165
+        ? compact
+        : leadOnly.length <= 165
+          ? leadOnly
+          : bare.length <= 165
+            ? bare
+            : category.summary;
 
   return pageMetadata({
     enPath: `/products/${canonicalSlug}`,
@@ -85,6 +104,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const products = getProductsByCategory(category.slug);
   const categoryUrl = absoluteUrl(`/products/${category.slug}/`);
   const options = category.children?.map(({ slug, name }) => ({ slug, name })) ?? [];
+  const sourcing = categorySourcingLine(category.slug, "en");
 
   return (
     <>
@@ -123,6 +143,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               Product data shown here is limited to verified client records. Additional references
               from the legacy catalogue are being prepared for structured publication.
             </p>
+            {/* Sourcing facts, every clause published elsewhere — see category-sourcing.ts. */}
+            {sourcing ? <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p> : null}
           </div>
         </div>
       </section>

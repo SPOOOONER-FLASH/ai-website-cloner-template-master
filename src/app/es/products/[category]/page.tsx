@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categorySourcingLine } from "@/data/category-sourcing";
 import { notFound } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
@@ -32,13 +33,28 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const name = category.nameEs ?? category.name;
   const summary = category.summaryEs ?? category.summary;
   const count = getProductsByCategory(category.slug).length;
-  const tail = `${count} modelos fabricados en Guangdong, China y exportados a más de treinta mercados.`;
-  // Las fichas largas desbordan los 165 caracteres con la cola completa y se publicaban
-  // solas; la cola compacta mantiene el dato de fábrica en Guangdong en esas páginas.
-  const compactTail = `${count} modelos fabricados en Guangdong, China.`;
+  // "Plazo desde 30 días" (confirmado por el cliente 2026-09-01) responde a la primera
+  // pregunta de cualquier comprador, y el snippet es donde la lee. Sustituye a la
+  // cláusula de mercados: ambas no caben en 165 caracteres, y una fecha de entrega pesa
+  // más que un recuento de mercados para quien decide si escribe o no.
+  const tail = `${count} modelos fabricados en Guangdong, China. Plazo desde 30 días.`;
+  const compactTail = `${count} modelos fabricados en Guangdong. Plazo desde 30 días.`;
+  const leadOnlyTail = `${count} modelos. Plazo desde 30 días.`;
+  const bareTail = `${count} modelos fabricados en Guangdong, China.`;
   const full = `${summary} ${tail}`;
   const compact = `${summary} ${compactTail}`;
-  const description = full.length <= 165 ? full : compact.length <= 165 ? compact : summary;
+  const leadOnly = `${summary} ${leadOnlyTail}`;
+  const bare = `${summary} ${bareTail}`;
+  const description =
+    full.length <= 165
+      ? full
+      : compact.length <= 165
+        ? compact
+        : leadOnly.length <= 165
+          ? leadOnly
+          : bare.length <= 165
+            ? bare
+            : summary;
 
   /*
     The layout appends " | Canton Hyland" (16 chars). Spanish category names run long —
@@ -75,6 +91,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
   const products = getProductsByCategory(category.slug);
   const name = category.nameEs ?? category.name;
   const summary = category.summaryEs ?? category.summary;
+  const sourcing = categorySourcingLine(category.slug, "es");
   const categoryUrl = absoluteUrl(`/es/products/${category.slug}/`);
   const options =
     category.children?.map((child) => ({ slug: child.slug, name: child.nameEs ?? child.name })) ??
@@ -125,6 +142,9 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
                 Aquí solo se publican fichas verificadas. El resto del catálogo histórico
                 se está preparando para su publicación estructurada.
               </p>
+              {sourcing ? (
+                <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p>
+              ) : null}
             </div>
           </div>
         </section>
