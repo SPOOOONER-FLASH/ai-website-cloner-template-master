@@ -347,7 +347,19 @@ export function SiteMenuDrawer({
                             renderLink(
                               {
                                 label: isSpanish ? child.labelEs : child.label,
-                                href: `${href}?type=${child.slug}`,
+                                /*
+                                  The static collection page, not the filter query.
+
+                                  ?type= renders the same list but canonicalises to the
+                                  category, so a menu full of them passed no link equity
+                                  to anything and left 19 real pages unreachable except
+                                  from the sitemap — which is how pages end up in
+                                  "discovered, not indexed". Spanish keeps the filter
+                                  because /collections/ is English-only for now.
+                                */
+                                href: isSpanish
+                                  ? `${href}?type=${child.slug}`
+                                  : `/collections/${category.slug}-${child.slug}/`,
                                 count: child.count,
                               },
                               true,

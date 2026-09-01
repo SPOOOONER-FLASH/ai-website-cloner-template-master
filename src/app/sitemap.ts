@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { categories } from "@/data/categories";
-import { getAllProductParams, getProductBySlug, getProductsByCategory } from "@/data/products";
+import { getAllProductParams, getProductBySlug, getProductsByCategory, products } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
 import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
@@ -92,6 +92,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     under the category listing: these serve a narrower query and should not compete with
     the page a buyer browsing the range actually wants.
   */
+  /*
+    Sub-category collections. Only those the catalogue declares AND that hold products —
+    the same rule the menu uses, so the sitemap never lists a page the build skipped.
+  */
+  for (const category of categories) {
+    for (const child of category.children ?? []) {
+      const count = products.filter(
+        (p) => p.categoryPath[0] === category.slug && p.categoryPath[1] === child.slug,
+      ).length;
+      if (!count) continue;
+      urls.push({
+        url: absoluteUrl(`/collections/${category.slug}-${child.slug}/`),
+        changeFrequency: "monthly",
+        priority: PRIORITY.category,
+      });
+    }
+  }
+
   for (const category of categories) {
     if (getProductsByCategory(category.slug).length < 3) continue;
     urls.push({

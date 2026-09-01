@@ -461,7 +461,22 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                           {category.children.map((child) => (
                             <li key={child.slug}>
                               <Link
-                                href={`${href}?type=${child.slug}`}
+                                /*
+                                  The static collection page, not the filter query.
+
+                                  This shelf is server-rendered on all 974 pages, so it
+                                  is the one place a crawler reliably sees sub-category
+                                  links. Pointing it at ?type= gave those 19 pages no
+                                  inbound link at all — they existed only in the sitemap,
+                                  which is precisely how a page ends up "discovered, not
+                                  indexed". Spanish keeps the filter: /collections/ is
+                                  English-only for now.
+                                */
+                                href={
+                                  isSpanish
+                                    ? `${href}?type=${child.slug}`
+                                    : `/collections/${category.slug}-${child.slug}/`
+                                }
                                 onClick={() => setOpenShelf(null)}
                                 className="block py-2 text-c2 text-ink-secondary no-underline hover:text-ink"
                               >
