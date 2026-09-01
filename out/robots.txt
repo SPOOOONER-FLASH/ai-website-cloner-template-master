@@ -5,4 +5,39 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /*.txt$
 
+User-Agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
+User-Agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
+User-Agent: Claude-User
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
+User-Agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
+User-Agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
 Sitemap: https://cantonlock.com/sitemap.xml
