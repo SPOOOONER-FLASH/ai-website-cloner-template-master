@@ -1,0 +1,111 @@
+{
+  "_comment": [
+    "Quotation job for Novalux S.A. (Guayaquil, Ecuador) - enquiry 20501300349, 2026-08-25.",
+    "Buyer asked for 301 / 307 / 310 / 311 at 500 pcs each, CIF Guayaquil, one price per model.",
+    "Prices are deliberately absent: this issue carries specifications only, per the client.",
+    "To quote prices later, add \"unitPrice\": <number> to each item and rebuild - the amount",
+    "and total columns are formulas and fill themselves in.",
+    "Specs are written out per item rather than pulled from the catalogue: the scraped",
+    "entries carry duplicate rows and a typo, and every bullet has to fit one line on A4.",
+    "Build:  py scripts/build-quotation.py docs/quotations/novalux-sa-20260901.json"
+  ],
+  "outFile": "~/Desktop/hyde/20260901 Quotation - Novalux SA - Panic Exit Devices.xlsx",
+  "sheetName": "Quotation",
+  "company": {
+    "legalName": "Canton Hyland Hardware (Group) Co., Ltd.",
+    "addressLine": "Yifeng Industry Park, Xiaolan, Zhongshan, Guangdong, China   ·   T +86 20 3887 7900",
+    "email": "hyde@cantonlock.com",
+    "siteUrl": "https://cantonlock.com",
+    "logo": "/public/images/brand/hyde/hyde-logo-horizontal-black.svg"
+  },
+  "meta": {
+    "number": "HY20260901-NVX",
+    "date": "September 1, 2026"
+  },
+  "buyer": {
+    "name": "Novalux S.A.",
+    "lines": [
+      "Attn: Julio",
+      "Guayaquil, Guayas, Ecuador",
+      "novaluxsa@gmail.com",
+      "Ref: enquiry 20501300349"
+    ]
+  },
+  "terms": [
+    { "label": "Incoterm", "value": "CIF Guayaquil, Ecuador (sea freight)" },
+    { "label": "Prices", "value": "To be advised - this issue carries specifications only" },
+    { "label": "Payment", "value": "100% T/T before shipment" },
+    { "label": "Lead time", "value": "30 days from receipt of down payment" },
+    { "label": "Packing", "value": "Blank box; OEM colour box from MOQ 3,000 pcs" },
+    { "label": "Validity", "value": "30 days from date of issue" }
+  ],
+  "items": [
+    {
+      "slug": "301-panic-exit-device",
+      "title": "301",
+      "qty": 500,
+      "unit": "PCS",
+      "image": "/images/products-hyde/301-panic-exit-device-2.webp",
+      "specs": [
+        "Material: iron body with stainless steel components",
+        "Finish: powder-coated black with red push bar",
+        "Bar length: 900 mm standard",
+        "Application: single door, surface mounted",
+        "Reversible for left- and right-hand doors"
+      ]
+    },
+    {
+      "slug": "307-panic-exit-device",
+      "title": "307",
+      "qty": 500,
+      "unit": "PCS",
+      "image": "/images/products-hyde/307-panic-exit-device.webp",
+      "specs": [
+        "Material: ABS end caps with aluminium push bar",
+        "Bar length: 1000 mm standard",
+        "Fire rating: 2.5 hours",
+        "Set: push bar, mortise lock body, brass cylinder, lever handle",
+        "Handle option: 015 or 9080E",
+        "Cylinder length to suit door thickness - please confirm",
+        "Reversible for left- and right-hand doors"
+      ]
+    },
+    {
+      "slug": "310-panic-exit-device",
+      "title": "310",
+      "qty": 500,
+      "unit": "PCS",
+      "image": "/images/products-hyde/310-panic-exit-device.webp",
+      "specs": [
+        "Material: iron, painted finish",
+        "Bar length: 900 mm",
+        "Fire rating: 1.5 hours",
+        "Application: single door, cross-bar type",
+        "Colour: red or black - to be confirmed at order"
+      ]
+    },
+    {
+      "slug": "311-panic-exit-device",
+      "title": "311",
+      "qty": 500,
+      "unit": "PCS",
+      "image": "/images/products-hyde/311-panic-exit-device-4.webp",
+      "specs": [
+        "Material: ABS push bar cover with aluminium tube",
+        "Bar length: 900 mm (other lengths available)",
+        "Centre distance: 72 mm and 92 mm, with cylinder hole",
+        "Set: push bar, lock body, brass cylinder, stainless steel handle",
+        "Handle option 015: iron with ABS, 9 x 9 mm spindle",
+        "Cylinder option 73 mm: ET knob/key or DK key/key, brass, SN",
+        "Lock body option LC6572: 65 mm backset, 72 mm centres"
+      ]
+    }
+  ],
+  "notes": [
+    "Quantities shown are the 500 pcs per model stated in your enquiry and can be revised.",
+    "Each model links to its page on cantonlock.com - full photo sets and drawings are there.",
+    "Optional handles, cylinders and lock bodies are priced separately; please confirm the combination per model.",
+    "Certification and installation documents are available on request for tender submissions."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the configuration per model and we will issue the priced CIF Guayaquil quotation."
+}
