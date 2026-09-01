@@ -89,14 +89,43 @@ export function getAdaptiveMarkGeometry(imageWidth, imageHeight) {
   };
 }
 
+export function getLegacyRepairRegion(legacyBrand, imageWidth, imageHeight) {
+  const { bounds, sampleHeight, sampleWidth } = legacyBrand;
+  const scaleX = imageWidth / sampleWidth;
+  const scaleY = imageHeight / sampleHeight;
+  const redLeft = bounds.minX * scaleX;
+  const redRight = (bounds.maxX + 1) * scaleX;
+  const redTop = bounds.minY * scaleY;
+  const redBottom = (bounds.maxY + 1) * scaleY;
+  const redWidth = redRight - redLeft;
+  const redHeight = redBottom - redTop;
+  // The detected red script is only the middle of the former Hyland badge.
+  // Its black oval sits above/alongside it, while the registered symbol and
+  // small tagline extend much farther right and below. Keep the repaired core
+  // comfortably outside all of those pixels so edge feathering can never let
+  // a half oval or tagline show through.
+  const left = clamp(Math.floor(redLeft - redWidth * 0.45), 0, imageWidth - 1);
+  const top = clamp(Math.floor(redTop - redHeight), 0, imageHeight - 1);
+  const right = clamp(Math.ceil(redRight + redWidth * 0.55), left + 1, imageWidth);
+  const bottom = clamp(
+    Math.ceil(redBottom + redHeight * 2.3),
+    top + 1,
+    imageHeight,
+  );
+
+  return { height: bottom - top, left, top, width: right - left };
+}
+
 function isLegacyRed(r, g, b) {
   return r > 105 && r - g > 28 && r - b > 18 && r > g * 1.2;
 }
 
-export function findLegacyBrandCorner({ data, width, height, channels }) {
+export function findLegacyBrandRegion({ data, width, height, channels }) {
   if (!data || !width || !height || channels < 3) return undefined;
 
-  const heightLimit = Math.max(1, Math.floor(height * 0.32));
+  // The legacy Hyland badge sits tight to the top edge. The previous 32% band
+  // admitted ordinary red product labels and fire-door signs much lower in a scene.
+  const heightLimit = Math.max(1, Math.floor(height * 0.2));
   const mask = new Uint8Array(width * heightLimit);
   for (let y = 0; y < heightLimit; y += 1) {
     for (let x = 0; x < width; x += 1) {
@@ -156,28 +185,62 @@ export function findLegacyBrandCorner({ data, width, height, channels }) {
     const heightRatio = componentHeight / height;
     const aspectRatio = componentWidth / componentHeight;
     const centreX = (minX + maxX) / 2;
+    const centreY = (minY + maxY) / 2;
     const isInLeftCorner = centreX <= width * 0.27;
     const isInRightCorner = centreX >= width * 0.73;
+    const regionLeft = Math.max(0, minX - Math.ceil(componentWidth * 0.45));
+    const regionRight = Math.min(width - 1, maxX + Math.ceil(componentWidth * 0.45));
+    const regionTop = Math.max(0, minY - Math.ceil(componentHeight * 0.8));
+    const regionBottom = Math.min(
+      heightLimit - 1,
+      maxY + Math.ceil(componentHeight * 1.4),
+    );
+    let darkPixels = 0;
+    let regionPixels = 0;
+
+    for (let y = regionTop; y <= regionBottom; y += 1) {
+      for (let x = regionLeft; x <= regionRight; x += 1) {
+        const pixelOffset = (y * width + x) * channels;
+        const red = data[pixelOffset];
+        const green = data[pixelOffset + 1];
+        const blue = data[pixelOffset + 2];
+        if (red < 105 && green < 105 && blue < 105) darkPixels += 1;
+        regionPixels += 1;
+      }
+    }
+    const darkRatio = regionPixels ? darkPixels / regionPixels : 0;
 
     if (
       count >= 12 &&
       widthRatio >= 0.055 &&
       widthRatio <= 0.2 &&
       heightRatio >= 0.018 &&
-      heightRatio <= 0.1 &&
-      aspectRatio >= 1.8 &&
+      heightRatio <= 0.075 &&
+      aspectRatio >= 2.2 &&
       aspectRatio <= 6 &&
+      centreY <= height * 0.16 &&
+      darkRatio >= 0.12 &&
       (isInLeftCorner || isInRightCorner)
     ) {
       candidates.push({
+        aspectRatio,
+        bounds: { maxX, maxY, minX, minY },
         corner: isInLeftCorner ? "top-left" : "top-right",
-        score: count * aspectRatio,
+        count,
+        darkRatio,
+        heightRatio,
+        score: count * aspectRatio * darkRatio,
+        widthRatio,
       });
     }
   }
 
   candidates.sort((left, right) => right.score - left.score);
-  return candidates[0]?.corner;
+  return candidates[0];
+}
+
+export function findLegacyBrandCorner(image) {
+  return findLegacyBrandRegion(image)?.corner;
 }
 
 export function chooseWatermarkCorner(metrics, legacyCorner) {
@@ -237,31 +300,6 @@ async function sha256(filePath) {
   return createHash("sha256").update(buffer).digest("hex");
 }
 
-async function createWatermarkBuffers(geometry, logoPath) {
-  const plate = await sharp({
-    create: {
-      width: geometry.plateWidth,
-      height: geometry.plateHeight,
-      channels: 4,
-      // Legacy marks include a red script badge plus a faint grey tagline. A fully
-      // opaque cover is required; anything translucent leaves the old identity visible.
-      background: { r: 255, g: 255, b: 255, alpha: 1 },
-    },
-  })
-    .png()
-    .toBuffer();
-
-  const logo = await sharp(logoPath)
-    .resize(geometry.logoWidth, geometry.logoHeight, {
-      fit: "contain",
-      withoutEnlargement: false,
-    })
-    .png()
-    .toBuffer();
-
-  return { logo, plate };
-}
-
 async function createAdaptiveLogoBuffer(geometry, logoPath) {
   const svg = await fs.readFile(logoPath, "utf8");
   const translucentSvg = svg.replace("<svg ", '<svg opacity="0.82" ');
@@ -274,6 +312,207 @@ async function createAdaptiveLogoBuffer(geometry, logoPath) {
     .toBuffer();
 }
 
+async function createLegacyRepairBuffer({
+  imageHeight,
+  imageWidth,
+  inputPath,
+  region,
+}) {
+  const gap = Math.max(4, Math.round(Math.min(imageWidth, imageHeight) * 0.008));
+  const inwardLeft = region.left < imageWidth / 2
+    ? region.left + region.width + gap
+    : region.left - region.width - gap;
+  const belowTop = region.top + region.height + gap;
+  const candidates = [
+    { left: inwardLeft, name: "inward", top: region.top },
+    { left: region.left, name: "below", top: belowTop },
+    { left: inwardLeft, name: "inward-below", top: belowTop },
+  ].filter(
+    (candidate) =>
+      candidate.left >= 0 &&
+      candidate.top >= 0 &&
+      candidate.left + region.width <= imageWidth &&
+      candidate.top + region.height <= imageHeight,
+  );
+
+  if (!candidates.length) {
+    throw new Error(`No safe repair sample beside legacy mark: ${inputPath}`);
+  }
+
+  const destination = await sharp(inputPath)
+    .rotate()
+    .extract(region)
+    .removeAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const edgeDifference = (candidateData, channels) => {
+    let difference = 0;
+    let comparisons = 0;
+    const comparePixel = (x, y) => {
+      const offset = (y * region.width + x) * channels;
+      for (let channel = 0; channel < Math.min(3, channels); channel += 1) {
+        difference += Math.abs(
+          destination.data[offset + channel] - candidateData[offset + channel],
+        );
+        comparisons += 1;
+      }
+    };
+
+    for (let x = 0; x < region.width; x += 1) {
+      comparePixel(x, 0);
+      comparePixel(x, region.height - 1);
+    }
+    for (let y = 1; y < region.height - 1; y += 1) {
+      comparePixel(0, y);
+      comparePixel(region.width - 1, y);
+    }
+    return comparisons ? difference / comparisons : Number.POSITIVE_INFINITY;
+  };
+
+  const analyzed = [];
+  for (const candidate of candidates) {
+    const extracted = await sharp(inputPath)
+      .rotate()
+      .extract({
+        height: region.height,
+        left: candidate.left,
+        top: candidate.top,
+        width: region.width,
+      })
+      .removeAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    const buffer = await sharp(extracted.data, { raw: extracted.info }).png().toBuffer();
+    const stats = await sharp(extracted.data, { raw: extracted.info }).stats();
+    const channels = stats.channels.slice(0, 3);
+    const channelMeans = channels.map((channel) => channel.mean);
+    const mean = channelMeans.reduce((sum, value) => sum + value, 0) / channelMeans.length;
+    const stdev = channels.reduce((sum, channel) => sum + channel.stdev, 0) / channels.length;
+    analyzed.push({
+      ...candidate,
+      buffer,
+      channelMeans,
+      entropy: stats.entropy,
+      edgeDifference: edgeDifference(extracted.data, extracted.info.channels),
+      mean,
+      // A quiet-looking patch can still be the wrong wall, door, or product.
+      // Matching all four destination edges keeps architectural lines and
+      // colour gradients continuous; entropy only breaks near ties.
+      score:
+        edgeDifference(extracted.data, extracted.info.channels) +
+        stats.entropy * 0.35 +
+        stdev / 80,
+      stdev,
+    });
+  }
+
+  analyzed.sort((left, right) => left.score - right.score);
+  const selected = analyzed[0];
+  const useBoundaryFill = shouldUseBoundaryFill(selected.edgeDifference);
+  let repairSource = selected.buffer;
+
+  if (useBoundaryFill) {
+    const channels = destination.info.channels;
+    const filled = Buffer.alloc(region.width * region.height * channels);
+    const sourceOffset = (x, y, channel) =>
+      (y * region.width + x) * channels + channel;
+
+    for (let y = 0; y < region.height; y += 1) {
+      for (let x = 0; x < region.width; x += 1) {
+        for (let channel = 0; channel < channels; channel += 1) {
+          const outputOffset = sourceOffset(x, y, channel);
+          if (
+            x === 0 ||
+            y === 0 ||
+            x === region.width - 1 ||
+            y === region.height - 1
+          ) {
+            filled[outputOffset] = destination.data[outputOffset];
+            continue;
+          }
+
+          const horizontal = x / (region.width - 1);
+          const vertical = y / (region.height - 1);
+          const left = destination.data[sourceOffset(0, y, channel)];
+          const right = destination.data[sourceOffset(region.width - 1, y, channel)];
+          const top = destination.data[sourceOffset(x, 0, channel)];
+          const bottom = destination.data[sourceOffset(x, region.height - 1, channel)];
+          const topLeft = destination.data[sourceOffset(0, 0, channel)];
+          const topRight = destination.data[
+            sourceOffset(region.width - 1, 0, channel)
+          ];
+          const bottomLeft = destination.data[
+            sourceOffset(0, region.height - 1, channel)
+          ];
+          const bottomRight = destination.data[
+            sourceOffset(region.width - 1, region.height - 1, channel)
+          ];
+          const edgeBlend =
+            (1 - horizontal) * left +
+            horizontal * right +
+            (1 - vertical) * top +
+            vertical * bottom;
+          const cornerBlend =
+            (1 - horizontal) * (1 - vertical) * topLeft +
+            horizontal * (1 - vertical) * topRight +
+            (1 - horizontal) * vertical * bottomLeft +
+            horizontal * vertical * bottomRight;
+          filled[outputOffset] = clamp(Math.round(edgeBlend - cornerBlend), 0, 255);
+        }
+      }
+    }
+
+    repairSource = await sharp(filled, {
+      raw: {
+        channels,
+        height: region.height,
+        width: region.width,
+      },
+    })
+      .png()
+      .toBuffer();
+  }
+
+  const feather = clamp(Math.round(Math.min(region.width, region.height) * 0.045), 4, 8);
+  const mask = Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${region.width}" height="${region.height}">
+      <defs><filter id="soft"><feGaussianBlur stdDeviation="${Math.max(1.5, feather / 2)}"/></filter></defs>
+      <rect x="${feather}" y="${feather}" width="${Math.max(1, region.width - feather * 2)}" height="${Math.max(1, region.height - feather * 2)}" rx="${Math.ceil(feather / 2)}" fill="white" filter="url(#soft)"/>
+    </svg>`,
+  );
+  const buffer = await sharp(repairSource)
+    .ensureAlpha()
+    .composite([{ input: mask, blend: "dest-in" }])
+    .png()
+    .toBuffer();
+
+  return {
+    buffer,
+    mean: selected.mean,
+    mode: useBoundaryFill ? "boundary-fill" : "edge-matched-clone",
+    sample: {
+      edgeDifference: selected.edgeDifference,
+      height: region.height,
+      left: selected.left,
+      name: selected.name,
+      top: selected.top,
+      width: region.width,
+    },
+  };
+}
+
+export function shouldPreferLocalRepair(sample) {
+  return (
+    Number.isFinite(sample?.edgeDifference) &&
+    sample.edgeDifference <= 10
+  );
+}
+
+export function shouldUseBoundaryFill(edgeDifference) {
+  return Number.isFinite(edgeDifference) && edgeDifference > 4;
+}
+
 async function analyzeWatermarkPlacement({ inputPath, imageWidth, imageHeight }) {
   const { data, info } = await sharp(inputPath)
     .rotate()
@@ -281,17 +520,22 @@ async function analyzeWatermarkPlacement({ inputPath, imageWidth, imageHeight })
     .removeAlpha()
     .raw()
     .toBuffer({ resolveWithObject: true });
-  const legacyCorner = findLegacyBrandCorner({
+  const legacyBrand = findLegacyBrandRegion({
     channels: info.channels,
     data,
     height: info.height,
     width: info.width,
   });
 
-  if (legacyCorner) {
+  if (legacyBrand) {
     return {
-      corner: legacyCorner,
-      strategy: "legacy-cover",
+      corner: legacyBrand.corner,
+      legacyBrand: {
+        ...legacyBrand,
+        sampleHeight: info.height,
+        sampleWidth: info.width,
+      },
+      strategy: "legacy-repair",
       variant: "black",
     };
   }
@@ -362,9 +606,11 @@ async function watermarkImage({
   inputRoot,
   logoPath,
   outputRoot,
+  repairRoot,
+  requireRepairRoot,
   whiteLogoPath,
 }) {
-  const image = sharp(inputPath).rotate();
+  let image = sharp(inputPath).rotate();
   const metadata = await image.metadata();
   if (!metadata.width || !metadata.height) {
     throw new Error(`Unable to read image dimensions: ${inputPath}`);
@@ -375,31 +621,68 @@ async function watermarkImage({
     imageHeight: metadata.height,
     imageWidth: metadata.width,
   });
-  const geometry =
-    placement.strategy === "legacy-cover"
-      ? getWatermarkGeometry(metadata.width, metadata.height)
-      : getAdaptiveMarkGeometry(metadata.width, metadata.height);
+  const geometry = getAdaptiveMarkGeometry(metadata.width, metadata.height);
   const outputPath = resolveSafeOutputPath(inputPath, inputRoot, outputRoot);
   const composites = [];
+  let repair;
 
-  if (placement.strategy === "legacy-cover") {
-    const { logo, plate } = await createWatermarkBuffers(geometry, logoPath);
-    const platePosition = getCornerPosition(
-      placement.corner,
+  if (placement.strategy === "legacy-repair") {
+    const region = getLegacyRepairRegion(
+      placement.legacyBrand,
       metadata.width,
       metadata.height,
-      geometry.plateWidth,
-      geometry.plateHeight,
-      geometry.margin,
     );
+    const repairedPath = repairRoot
+      ? resolveSafeOutputPath(inputPath, inputRoot, repairRoot)
+      : undefined;
+    const hasDeepRepair = repairedPath
+      ? await fs.stat(repairedPath).then((stat) => stat.isFile()).catch(() => false)
+      : false;
+
+    if (requireRepairRoot && !hasDeepRepair) {
+      throw new Error(`Missing required deep-inpaint repair: ${inputPath}`);
+    }
+    const localRepair = await createLegacyRepairBuffer({
+      imageHeight: metadata.height,
+      imageWidth: metadata.width,
+      inputPath,
+      region,
+    });
+    if (hasDeepRepair && !shouldPreferLocalRepair(localRepair.sample)) {
+      const stats = await sharp(repairedPath).rotate().extract(region).stats();
+      repair = {
+        mean:
+          stats.channels.slice(0, 3).reduce((sum, channel) => sum + channel.mean, 0) /
+          3,
+        mode: "lama-inpaint",
+        repairedPath,
+      };
+      image = sharp(repairedPath).rotate();
+    } else {
+      repair = localRepair;
+    }
+    placement.variant = repair.mean >= 150 ? "black" : "white";
+    const selectedLogoPath = placement.variant === "white" ? whiteLogoPath : logoPath;
+    const logo = await createAdaptiveLogoBuffer(geometry, selectedLogoPath);
+    const redCentreY =
+      ((placement.legacyBrand.bounds.minY + placement.legacyBrand.bounds.maxY + 1) / 2) *
+      (metadata.height / placement.legacyBrand.sampleHeight);
+    if (repair.buffer) {
+      composites.push({ input: repair.buffer, left: region.left, top: region.top });
+    }
     composites.push(
-      { input: plate, ...platePosition },
       {
         input: logo,
-        left:
-          platePosition.left + Math.round((geometry.plateWidth - geometry.logoWidth) / 2),
-        top:
-          platePosition.top + Math.round((geometry.plateHeight - geometry.logoHeight) / 2),
+        left: clamp(
+          region.left + Math.round((region.width - geometry.logoWidth) / 2),
+          0,
+          metadata.width - geometry.logoWidth,
+        ),
+        top: clamp(
+          Math.round(redCentreY - geometry.logoHeight / 2),
+          0,
+          metadata.height - geometry.logoHeight,
+        ),
       },
     );
   } else {
@@ -440,6 +723,17 @@ async function watermarkImage({
       strategy: placement.strategy,
       variant: placement.variant,
     },
+    repair: repair
+      ? {
+          mode: repair.mode,
+          region: getLegacyRepairRegion(
+            placement.legacyBrand,
+            metadata.width,
+            metadata.height,
+          ),
+          sample: repair.sample,
+        }
+      : undefined,
     sourceSha256: await sha256(inputPath),
     outputSha256: await sha256(outputPath),
   };
@@ -459,6 +753,8 @@ function parseArguments(argumentsList) {
     logoPath: valueFor("--logo", DEFAULT_LOGO),
     whiteLogoPath: valueFor("--white-logo", DEFAULT_WHITE_LOGO),
     outputRoot: valueFor("--output-root", DEFAULT_OUTPUT_ROOT),
+    repairRoot: valueFor("--repair-root", undefined),
+    requireRepairRoot: flags.has("--require-repair-root"),
     manifestPath: valueFor(
       "--manifest",
       path.join(valueFor("--output-root", DEFAULT_OUTPUT_ROOT), "watermark-manifest.json"),
@@ -522,6 +818,8 @@ async function main() {
         inputRoot,
         logoPath: options.logoPath,
         outputRoot,
+        repairRoot: options.repairRoot,
+        requireRepairRoot: options.requireRepairRoot,
         whiteLogoPath: options.whiteLogoPath,
       }),
     );
@@ -533,7 +831,7 @@ async function main() {
     manifestPath,
     `${JSON.stringify(
       {
-        schemaVersion: 2,
+        schemaVersion: 3,
         sourceRoot: path.relative(PROJECT_ROOT, inputRoot).replaceAll("\\", "/"),
         logo: path.relative(PROJECT_ROOT, options.logoPath).replaceAll("\\", "/"),
         count: records.length,

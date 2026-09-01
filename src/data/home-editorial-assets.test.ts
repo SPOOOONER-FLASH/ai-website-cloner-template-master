@@ -17,7 +17,7 @@ const editorialConfig = JSON.parse(
 const expectedAssets = [
   "/images/editorial/hyde-source-by-range-2026.webp",
   "/images/editorial/hyde-source-by-project-2026.webp",
-  "/images/editorial/hyde-nine-families-2026.webp",
+  "/images/editorial/hyde-nine-families-showroom-2026.webp",
   "/images/editorial/hyde-materials-engineering-2026.webp",
   "/images/editorial/hyde-engineering-contact-2026.webp",
   "/images/editorial/hyde-installation-faq-2026.webp",

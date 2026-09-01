@@ -78,6 +78,16 @@ ImageGen derivatives totalling 5,387,396 bytes, plus `argentina-ar4-entry.webp` 
 bytes), whose generation/source note was not preserved with its 2026-08-27 commit and is
 therefore kept outside the confirmed inventory below pending provenance confirmation.
 
+### Retouched first-party showroom photography
+
+`hyde-nine-families-showroom-2026.webp` is derived from the client-supplied
+`company/showroom-emergency-hardware.webp` photograph. The obsolete illuminated oval
+sign was removed with a tightly scoped generative object-removal pass; the photographed
+showroom, wall-mounted products, camera perspective, lighting, and product geometry were
+kept as the factual source. The derivative was visually reviewed at full size and exported
+as opaque 1536×1024 WebP. It is used as a real multi-family showroom context, not as
+dimensional, certification, or model-specific evidence.
+
 ---
 
 ## AI-generated editorial inventory — `public/images/editorial/`

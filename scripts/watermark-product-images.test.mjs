@@ -6,8 +6,11 @@ import {
   chooseWatermarkCorner,
   findLegacyBrandCorner,
   getAdaptiveMarkGeometry,
+  getLegacyRepairRegion,
   getWatermarkGeometry,
   resolveSafeOutputPath,
+  shouldPreferLocalRepair,
+  shouldUseBoundaryFill,
 } from "./watermark-product-images.mjs";
 
 test("watermark geometry stays proportional on catalogue images", () => {
@@ -118,6 +121,76 @@ test("derived output preserves the relative product path", () => {
     output.replaceAll("\\", "/"),
     resolve(outputRoot, "argentina-ar4/hyde-ar4-110.webp").replaceAll("\\", "/"),
   );
+});
+
+test("a red fire-door sign below the logo band is not a legacy badge", () => {
+  const width = 100;
+  const height = 100;
+  const channels = 3;
+  const data = new Uint8Array(width * height * channels).fill(215);
+
+  for (let y = 22; y <= 28; y += 1) {
+    for (let x = 76; x <= 94; x += 1) {
+      const offset = (y * width + x) * channels;
+      data[offset] = 205;
+      data[offset + 1] = 35;
+      data[offset + 2] = 42;
+    }
+  }
+
+  assert.equal(
+    findLegacyBrandCorner({ channels, data, height, width }),
+    undefined,
+  );
+});
+
+test("a top-corner red banner without a dark oval is not a legacy badge", () => {
+  const width = 100;
+  const height = 100;
+  const channels = 3;
+  const data = new Uint8Array(width * height * channels).fill(244);
+
+  for (let y = 5; y <= 10; y += 1) {
+    for (let x = 4; x <= 23; x += 1) {
+      const offset = (y * width + x) * channels;
+      data[offset] = 205;
+      data[offset + 1] = 35;
+      data[offset + 2] = 42;
+    }
+  }
+
+  assert.equal(
+    findLegacyBrandCorner({ channels, data, height, width }),
+    undefined,
+  );
+});
+
+test("legacy repair core contains the oval, registered symbol, and tagline", () => {
+  assert.deepEqual(
+    getLegacyRepairRegion(
+      {
+        bounds: { maxX: 47, maxY: 25, minX: 16, minY: 15 },
+        sampleHeight: 256,
+        sampleWidth: 256,
+      },
+      800,
+      800,
+    ),
+    { height: 149, left: 5, top: 12, width: 200 },
+  );
+});
+
+test("a matching real background is preferred over generative inpainting", () => {
+  assert.equal(shouldPreferLocalRepair({ edgeDifference: 0 }), true);
+  assert.equal(shouldPreferLocalRepair({ edgeDifference: 9.9 }), true);
+  assert.equal(shouldPreferLocalRepair({ edgeDifference: 10.1 }), false);
+  assert.equal(shouldPreferLocalRepair(undefined), false);
+});
+
+test("a visible clone-edge mismatch uses a boundary-continuous fill", () => {
+  assert.equal(shouldUseBoundaryFill(0), false);
+  assert.equal(shouldUseBoundaryFill(4), false);
+  assert.equal(shouldUseBoundaryFill(7.32), true);
 });
 
 test("derived output rejects files outside the product image root", () => {

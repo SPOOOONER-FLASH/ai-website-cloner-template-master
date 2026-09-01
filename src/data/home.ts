@@ -145,8 +145,8 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-nine-families-2026.webp",
-    label: "Nine door-hardware families arranged on a modular architectural sample board",
+    src: "/images/editorial/hyde-nine-families-showroom-2026.webp",
+    label: "Real showroom display presenting coordinated door-hardware families",
   },
   title: "Designed for",
   body: "Nine hardware families, one coordinated schedule",
