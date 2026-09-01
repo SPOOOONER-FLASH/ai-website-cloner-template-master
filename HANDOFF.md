@@ -1,17 +1,15 @@
 # 交接 — Canton Hyland / HYDE 官网
 
-## 2026-08-31 Codex 停工点（下一位先读）
+## 2026-09-01 Codex 发布点（下一位先读）
 
-本轮已提交并推送墨西哥、阿根廷两项“意向参展”内容：`1215dd7c2`。CI 与静态导出通过，
-但**没有部署到正式服务器**：GitHub 发布任务中的 `DEPLOY_HOST` 为空，公网
-`https://cantonlock.com/events/` 仍是旧 HTML；这不是 Cloudflare 单纯缓存问题。
+正式发布 `43e2040cc6` 已推送，服务器计划任务在 2026-09-01 14:10 UTC 拉取。绕过 Cloudflare
+直连 `43.131.27.225` 后，首页与 564 MB 页面 Git blob 均与该提交完全一致；正式域名无查询参数
+首页、564 MB、023 ET 与三张关键图片均已验证。Cloudflare 首页和新展厅图已返回新内容 `HIT`。
 
-2026-08-31 后续源代码已加入产品返回记忆：同一浏览器会话内从详情返回英文/西语类目或
-Product Finder 时，恢复筛选、页码、原卡片与滚动位置；关闭会话后清除。`out/` 与正式站尚未更新。
-
-当前工作树另有 **5,164** 个未提交路径，核对时全部属于 `out/`，是其他会话/构建者的
-水印和发布产物。**不要 restore、clean、批量 stage，也不要重新运行 `deploy:prep` 覆盖它们。**
-先确认来源、审阅差异和发布 baton，再做下一次构建。
+本次上线包括：产品返回会话记忆、墨西哥/阿根廷“意向参展”、真实展厅首页图、564 MB 黑色首图，
+以及 1,485 张逐组修复的 HYDE 产品衍生图。IndexNow 已提交 sitemap 中 933 个 URL，返回 200。
+GitHub workflow 的 SSH 步骤仍因 `SSH_HOST` 为空而跳过；正式部署由服务器每五分钟的受控 `git pull`
+完成。`out/` 已构建、审计、提交并推送，发布接力棒空闲；陌生脏文件仍按 `AGENTS.md` 保护。
 
 下一位 Codex 的完整优先级、验收条件和未完成指令见：
 [`docs/collaboration/agent-updates/2026-08-31-codex-stop-point-and-open-work.md`](docs/collaboration/agent-updates/2026-08-31-codex-stop-point-and-open-work.md)。
@@ -58,7 +56,7 @@ Product Finder 时，恢复筛选、页码、原卡片与滚动位置；关闭�
 
 ## 四、当前状态
 
-产品 435 · 静态页 **938**（公开 930，其中西语 459）· 产品图 1479 张 · 测试 **114 + 25** 全过
+产品 435 · 静态页 **941**（公开内容页 933，其中西语 459）· HYDE 产品衍生图 1,485 张 · 测试 **151 + 25** 全过
 
 **已完成**：全站页面、**西语全目录 459 页**、FAQ、价格表索取、站内搜索、弹窗、CMS 五栏目、
 SEO 元数据（471 页全带 canonical/hreflang/OG/JSON-LD）、`llms.txt`、Product Finder
