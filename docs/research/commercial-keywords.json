@@ -1,0 +1,165 @@
+{
+  "_readme": [
+    "Commercial-intent keyword library, built from evidence rather than from a keyword tool.",
+    "",
+    "TWO SOURCES, BOTH REAL:",
+    "1. Google Search Console 'most common referring anchor text', exported 2026-08-31.",
+    "   These are the words other sites and our own legacy pages actually use to link to",
+    "   us. They are the closest thing we have to observed demand, and they cost nothing.",
+    "2. The category names we publish, which is what a crawler currently matches against.",
+    "",
+    "WHAT THE ANCHOR DATA SAYS. The top four anchors are 'english', 'home' and two bare",
+    "URLs — navigational, carrying no topic. Descriptive anchors begin at rank 5 and are",
+    "almost all SINGULAR head terms: lock cylinder, lever handle, lock case, panic exit",
+    "device, door closer, sliding hook lock, grip handle set, stainless steel handle.",
+    "Our category names are plural. 'deadbolts' is the one anchor that arrives plural,",
+    "and it is also the one that matches our page name exactly.",
+    "",
+    "HOW MUCH THAT MATTERS — SAY IT HONESTLY. Google stems singular and plural together;",
+    "'lever handle' and 'Lever Handles' are not two different queries to it. Do NOT rewrite",
+    "page titles chasing the singular form. What the anchor list is genuinely good for is",
+    "confirming WHICH of our fifteen categories carry external link equity at all, and",
+    "which five have never been linked with a descriptive word by anybody.",
+    "",
+    "INTENT TIERS. `informational` answers a question, `commercial` compares or qualifies a",
+    "supplier, `transactional` asks to buy. A B2B hardware buyer moves through all three,",
+    "and our pages currently speak almost entirely in product nouns with no supplier or",
+    "buying vocabulary in the body copy. That is the measurable gap, not the plural.",
+    "",
+    "Run scripts/audit-keyword-coverage.mjs against the built export for real numbers.",
+    "Do not add a term here because it looks good in a report — add it when a real buyer",
+    "or a real referring link used it."
+  ],
+
+  "anchorTextSource": {
+    "exported": "2026-08-31",
+    "note": "Rank from the Search Console referring-anchor report. Ranks 1-4, 6, 9, 11 and 18-24 are navigational or bare URLs and are excluded from the per-category rows below.",
+    "navigationalShare": "The four most common anchors carry no topic at all — english, home, and two bare cantonlock.com URLs."
+  },
+
+  "intentModifiers": {
+    "commercial": [
+      "manufacturer",
+      "supplier",
+      "factory",
+      "exporter",
+      "OEM",
+      "ODM",
+      "wholesale"
+    ],
+    "transactional": [
+      "price",
+      "quote",
+      "MOQ",
+      "minimum order",
+      "lead time",
+      "sample",
+      "bulk",
+      "catalogue"
+    ],
+    "qualifying": [
+      "commercial grade",
+      "fire rated",
+      "EN 1125",
+      "stainless steel",
+      "export"
+    ]
+  },
+
+  "categories": [
+    {
+      "slug": "lock-cylinders",
+      "published": "Lock Cylinders",
+      "anchor": "lock cylinder",
+      "anchorRank": 5,
+      "note": "Highest-ranked descriptive anchor we have. This category carries more external link equity than any other and should be treated as a priority landing page."
+    },
+    {
+      "slug": "knob-locks",
+      "published": "Knob Locks",
+      "anchor": "knob lock series",
+      "anchorRank": 7,
+      "note": "Arrives as 'series', which is legacy-catalogue vocabulary rather than buyer vocabulary."
+    },
+    {
+      "slug": "lever-handles",
+      "published": "Lever Handles",
+      "anchor": "lever handle",
+      "anchorRank": 8
+    },
+    {
+      "slug": "deadbolts",
+      "published": "Deadbolts",
+      "anchor": "deadbolts",
+      "anchorRank": 10,
+      "note": "The only anchor that arrives plural and matches our page name exactly. Also our thinnest category at 7 records — link equity pointing at a near-empty page."
+    },
+    {
+      "slug": "stainless-steel-handles",
+      "published": "Stainless Steel Handles",
+      "anchor": "stainless steel handle",
+      "anchorRank": 12
+    },
+    {
+      "slug": "lock-cases",
+      "published": "Lock Cases",
+      "anchor": "lock case",
+      "anchorRank": 13
+    },
+    {
+      "slug": "panic-exit-devices",
+      "published": "Panic Exit Devices",
+      "anchor": "panic exit device",
+      "anchorRank": 14,
+      "note": "The client's flagship line sits at rank 14, below lock cylinders and knob locks. Worth knowing before spending anywhere else."
+    },
+    {
+      "slug": "door-closers",
+      "published": "Door Closers",
+      "anchor": "door closer",
+      "anchorRank": 15
+    },
+    {
+      "slug": "sliding-hook-locks",
+      "published": "Sliding Hook Locks",
+      "anchor": "sliding hook lock",
+      "anchorRank": 16,
+      "note": "Three products, and yet it has a descriptive anchor. Either expand the range or accept the page is a stub with inbound links."
+    },
+    {
+      "slug": "grip-handle-sets",
+      "published": "Grip Handle Sets",
+      "anchor": "grip handle set",
+      "anchorRank": 17
+    },
+    {
+      "slug": "night-latches-rim-locks",
+      "published": "Night Latches & Rim Locks",
+      "anchor": null,
+      "note": "No descriptive anchor in the export. 22 products and nobody links to it by name."
+    },
+    {
+      "slug": "bathroom-accessories",
+      "published": "Bathroom Accessories",
+      "anchor": null,
+      "note": "No descriptive anchor. 45 products — our third-largest category, invisible to referring links."
+    },
+    {
+      "slug": "brass-steel-hinges",
+      "published": "Brass & Steel Door Hinges",
+      "anchor": null,
+      "note": "No descriptive anchor. The ampersand in the published name is also a poor match for how anyone types or links."
+    },
+    {
+      "slug": "glass-door-accessories",
+      "published": "Glass Door Accessories",
+      "anchor": null
+    },
+    {
+      "slug": "hardware-accessories",
+      "published": "Hardware Accessories",
+      "anchor": null,
+      "note": "Fifty unlike products under a name nobody would ever search or link with."
+    }
+  ]
+}
