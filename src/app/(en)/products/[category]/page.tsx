@@ -173,7 +173,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <ProductIndexList products={products} label={`${products.length} ${category.name.toLowerCase()}`} />
         </div>
       </section>
-      <SpecMatrix products={products} categorySlug={category.slug} />
+      <SpecMatrix products={products} categorySlug={category.slug} showCompareLink />
     </main>
     </>
   );

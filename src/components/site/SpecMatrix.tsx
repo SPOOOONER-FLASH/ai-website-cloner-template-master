@@ -11,11 +11,13 @@ import type { Locale } from "@/data/site";
  * choosing inside a range is comparing, and every product page we had asked them to hold
  * the other model in their head.
  *
- * NO NEW URLS. This renders inside the existing category page rather than at
- * /compare/… . 447 of our pages are sitting in Search Console as "discovered, not
- * indexed" because Google has not spent the crawl budget on them yet; minting a few
- * hundred more URLs while that is true would make the queue longer, not the site better.
- * When those 447 are indexed this is worth revisiting.
+ * WHERE IT RENDERS. Twice: inside the category page, and as the body of the standalone
+ * /compare/<category>/ page. It shipped category-only first, because 447 of our pages
+ * are still "discovered, not indexed" and minting URLs against a crawl queue that is
+ * already backed up can make things worse rather than better. The client decided to
+ * publish the standalone pages too — a comparison query wants a page titled like a
+ * comparison — so the scope was held to one page per category rather than one per pair.
+ * The category page links out; the compare page does not link to itself.
  *
  * WHAT IT SHOWS. The columns are chosen from the data, not fixed: the labels most of
  * this category actually carries, so lock cases compare on backset and centre distance
@@ -37,6 +39,7 @@ const COPY = {
       "The specifications that differ between models, side by side. An empty cell means we have not published that figure for that model yet.",
     model: "Model",
     more: (n: number) => `Showing the first ${MAX_ROWS} of ${n} models — open a product for its full table.`,
+    openCompare: "Open the full comparison page",
   },
   es: {
     heading: "Comparar modelos de esta gama",
@@ -44,6 +47,7 @@ const COPY = {
       "Las especificaciones que distinguen un modelo de otro, en paralelo. Una celda vacía significa que aún no publicamos ese dato para ese modelo.",
     model: "Modelo",
     more: (n: number) => `Se muestran los primeros ${MAX_ROWS} de ${n} modelos — abra un producto para su tabla completa.`,
+    openCompare: "Abrir la página de comparación",
   },
 } as const;
 
@@ -54,10 +58,13 @@ export function SpecMatrix({
   products,
   categorySlug,
   locale = "en",
+  showCompareLink = false,
 }: {
   products: Product[];
   categorySlug: string;
   locale?: Locale;
+  /** Category pages link out to the standalone /compare/ page; that page does not. */
+  showCompareLink?: boolean;
 }) {
   if (products.length < MIN_ROWS) return null;
   const t = COPY[locale];
@@ -173,6 +180,15 @@ export function SpecMatrix({
 
         {rows.length > MAX_ROWS ? (
           <p className="mt-16 text-c2 text-ink-secondary">{t.more(rows.length)}</p>
+        ) : null}
+
+        {showCompareLink && !es ? (
+          <Link
+            href={`/compare/${categorySlug}/`}
+            className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"
+          >
+            {t.openCompare}
+          </Link>
         ) : null}
       </div>
     </section>

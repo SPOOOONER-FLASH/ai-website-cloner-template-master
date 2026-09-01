@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { categories } from "@/data/categories";
-import { getAllProductParams, getProductBySlug } from "@/data/products";
+import { getAllProductParams, getProductBySlug, getProductsByCategory } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
 import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
@@ -82,6 +82,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Top-level category listings only — sub-categories are a filter dimension, not a URL.
   for (const category of categories) {
     urls.push(...entry(`/products/${category.slug}`, PRIORITY.category, "weekly"));
+  }
+
+  /*
+    Comparison pages, English only.
+
+    One per category with three or more models — the route 404s below that, so listing a
+    URL the build does not emit would put a dead entry in the sitemap. Priority sits
+    under the category listing: these serve a narrower query and should not compete with
+    the page a buyer browsing the range actually wants.
+  */
+  for (const category of categories) {
+    if (getProductsByCategory(category.slug).length < 3) continue;
+    urls.push({
+      url: absoluteUrl(`/compare/${category.slug}/`),
+      changeFrequency: "monthly",
+      priority: PRIORITY.support,
+    });
   }
 
   /*
