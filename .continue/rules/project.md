@@ -158,6 +158,13 @@ the update yet?" — if yes, a fresh session costs almost nothing; if no, that i
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
 - Stage only explicit paths with `git add -- <paths>`. Never use unreviewed bulk staging in
   a dirty shared tree.
+- **Write the commit message to a file first, then `git commit -F <file>`.** Never chain a
+  heredoc behind `&&` after `git add`: if the add fails — a stale `.git/index.lock` is
+  enough — the `&&` short-circuits, the heredoc never runs, and a later append writes a
+  file containing only the tail. On 2026-09-01 that shipped commit `1bff2077` with a
+  warning line as its subject and the whole explanation missing. It was already pushed,
+  and rewriting a pushed commit to fix a message is not worth interrupting another agent,
+  so the message stayed wrong. Write the file, check it exists, then commit.
 - Include one short update under `docs/collaboration/agent-updates/` in the same commit.
   Record agent, scope, tests, untouched work, risks, and the next useful assist/review.
 - **Push as soon as a commit is green. Do not sit on work.** The server pulls every five
