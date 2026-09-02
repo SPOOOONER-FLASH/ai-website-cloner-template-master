@@ -10,6 +10,15 @@ import {
   suggestionHref,
   suggestionLabel,
 } from "@/data/search-suggestions";
+import {
+  categoryHrefOf,
+  matchRanges,
+  normaliseModel,
+  queryTerms,
+  score,
+  suggestRanges,
+  type SearchIndexEntry,
+} from "@/lib/search-matching";
 
 /**
  * Site search.
@@ -23,16 +32,12 @@ import {
  * 166KB is more than the rest of the page weight combined.
  */
 
-interface IndexEntry {
-  type: "product" | "category" | "project" | "news" | "download" | "page";
-  title: string;
-  subtitle: string;
-  href: string;
-  /** Pre-lowercased haystack. */
-  text: string;
-  /** Products only, pre-lowercased. Absent when the model is still provisional. */
-  model?: string;
-}
+/**
+ * The matching rules live in src/lib/search-matching.ts so they can be tested against
+ * the real index. Every one of them exists because somebody typed something into this
+ * box and told us what went wrong; see search-matching.test.ts for the cases.
+ */
+type IndexEntry = SearchIndexEntry;
 
 const TYPE_LABEL: Record<IndexEntry["type"], string> = {
   product: "Product",
@@ -44,52 +49,6 @@ const TYPE_LABEL: Record<IndexEntry["type"], string> = {
 };
 
 const MAX_RESULTS = 24;
-
-/** `/products/deadbolts/d101-ab-deadbolts/` -> `/products/deadbolts/`. */
-function categoryHrefOf(href: string): string | null {
-  const match = /^(\/es)?\/products\/([a-z0-9-]+)\/[^/]+\/$/.exec(href);
-  return match ? `${match[1] ?? ""}/products/${match[2]}/` : null;
-}
-
-/** Model numbers are compared without spaces or hyphens: "D101 AB" === "d101-ab". */
-const normaliseModel = (s: string) => s.toLowerCase().replace(/[\s-]/g, "");
-
-/**
- * Scores one entry against the already-lowercased query terms.
- *
- * Every term must appear somewhere, so "stainless lever" does not return all 214
- * stainless products. Beyond that the ranking is deliberately crude — a title match
- * outranks a body match, and an exact model match outranks everything, which covers the
- * two ways people actually search a hardware catalogue: by name, or by model number.
- */
-function score(entry: IndexEntry, terms: string[]): number {
-  const title = entry.title.toLowerCase();
-
-  let total = 0;
-  for (const term of terms) {
-    if (!entry.text.includes(term)) return 0;
-
-    /*
-      The model boost scores against the model field alone, never the subtitle. The
-      subtitle reads "305 · Hyland 300", so scoring the whole string treated "hyland"
-      and "panic" as model hits and pushed every product above the category page that
-      should have led the results.
-    */
-    if (entry.model === term) total += 80;
-    else if (entry.model?.startsWith(term)) total += 40;
-
-    if (title === term) total += 50;
-    else if (title.startsWith(term)) total += 30;
-    else if (title.includes(term)) total += 20;
-    else total += 5;
-  }
-
-  // A category is a better answer than any one product under it.
-  if (entry.type === "category") total += 15;
-  if (entry.type === "page") total += 10;
-
-  return total;
-}
 
 export function SearchDialog({ open, onClose, locale = "en" }: {
   open: boolean;
@@ -215,7 +174,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
 
   const results = useMemo(() => {
     if (!index) return [];
-    const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    const terms = queryTerms(query);
     if (!terms.length) return [];
 
     return index
@@ -271,35 +230,10 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
    * they turn a wall of SKUs into a choice between Deadbolts, Door Closers and Door
    * Stoppers.
    */
-  const matchedCategories = useMemo(() => {
-    if (!index) return [];
-    const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
-    if (!terms.length) return [];
-    return index
-      .filter((e) => e.type === "category")
-      /*
-        THE NAME, AND AT THE START OF A WORD IN IT.
-
-        The general matcher scores against `text`, which for a category includes its
-        description and the models under it — so "d" pulled in Grip Handle Sets, whose
-        name contains no "d" at all. As a result row that is merely weak; as a chip
-        labelled "matching ranges" it is a false statement about the catalogue.
-
-        Requiring the name is not enough on its own: "d" appears mid-word in Sliding Hook
-        Locks, Lock Cylinders and Stainless Steel Handles, which put eleven of fifteen
-        ranges on screen and told the reader nothing. A term has to START a word — "d"
-        then means Deadbolts and the three ranges with "Door" in the name, which is what
-        somebody typing "d" is looking for.
-      */
-      .filter((e) => {
-        const words = e.title.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-        return terms.every((t) => words.some((w) => w.startsWith(t)));
-      })
-      .map((entry) => ({ entry, s: score(entry, terms) }))
-      .filter((r) => r.s > 0)
-      .sort((a, b) => b.s - a.s || a.entry.title.localeCompare(b.entry.title))
-      .map((r) => r.entry);
-  }, [index, query]);
+  const matchedCategories = useMemo(
+    () => (index ? matchRanges(index, queryTerms(query)) : []),
+    [index, query],
+  );
 
   /**
    * Categories to offer when the term matches nothing — the "explore the categories"
@@ -309,16 +243,10 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
    * is close to a range name still lands on the range. Three characters is the floor
    * again: below that a stem matches whatever happens to contain the letter.
    */
-  const nearCategories = useMemo(() => {
-    if (!index || results.length) return [];
-    let stem = normaliseModel(query.trim());
-    while (stem.length >= 3) {
-      const hits = index.filter((e) => e.type === "category" && e.text.includes(stem));
-      if (hits.length) return hits.slice(0, 6);
-      stem = stem.slice(0, -1);
-    }
-    return [];
-  }, [index, query, results.length]);
+  const nearCategories = useMemo(
+    () => (index && !results.length ? suggestRanges(index, query) : []),
+    [index, query, results.length],
+  );
 
   /**
    * WHERE ENTER GOES — and, more importantly, when it refuses to pick a product.
@@ -381,7 +309,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
 
   const totalMatches = useMemo(() => {
     if (!index) return 0;
-    const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    const terms = queryTerms(query);
     if (!terms.length) return 0;
     return index.filter((e) => score(e, terms) > 0).length;
   }, [index, query]);
@@ -544,11 +472,19 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
                   </Link>
                 ) : null}
 
-                {nearCategories.length ? (
+                {/*
+                  Minus whatever the link above already offers. On "lv" the suggestion,
+                  the link and the standing menu all said Lever Handles — the same
+                  destination three times in one screen, which reads as padding rather
+                  than as help.
+                */}
+                {nearCategories.filter((e) => e.href !== enterTarget?.entry.href).length ? (
                   <>
                     <p className="mt-24 text-c2 text-ink-secondary">{t.emptyCategories}</p>
                     <ul className="mt-16 flex flex-wrap gap-8">
-                      {nearCategories.map((entry) => (
+                      {nearCategories
+                        .filter((e) => e.href !== enterTarget?.entry.href)
+                        .map((entry) => (
                         <li key={entry.href}>
                           <Link href={entry.href} onClick={close} className="search-chip">
                             {entry.title}
