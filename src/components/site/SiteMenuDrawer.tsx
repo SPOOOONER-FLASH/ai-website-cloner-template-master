@@ -81,15 +81,15 @@ const drawerCards = {
   en: [
     {
       href: "/product-finder/",
-      image: "/images/editorial/material-bronze-patina.webp",
-      alt: "Bronze surface study showing patina and machining marks",
+      image: "/images/editorial/drawer-product-finder-exhibition-2026.webp",
+      alt: "Architectural hardware families arranged across a trade-show display wall",
       title: "Product Finder",
       body: "Filter 435 models by category, material, finish and door type.",
     },
     {
       href: "/projects/",
-      image: "/images/editorial/project-glass-entrance.webp",
-      alt: "Frameless glass entrance with stainless pull handles",
+      image: "/images/editorial/drawer-projects-door-sample-2026.webp",
+      alt: "Full-height door hardware sample surrounded by exhibition display racks",
       title: "Projects",
       body: "How the hardware is specified on real buildings.",
     },
@@ -97,15 +97,15 @@ const drawerCards = {
   es: [
     {
       href: "/product-finder/",
-      image: "/images/editorial/material-bronze-patina.webp",
-      alt: "Estudio de superficie en bronce con pátina y marcas de mecanizado",
+      image: "/images/editorial/drawer-product-finder-exhibition-2026.webp",
+      alt: "Familias de herrajes arquitectónicos organizadas en un expositor de feria",
       title: "Buscador de productos",
       body: "Filtre 435 modelos por categoría, material, acabado y tipo de puerta.",
     },
     {
       href: "/es/projects/",
-      image: "/images/editorial/project-glass-entrance.webp",
-      alt: "Entrada de vidrio sin marco con tiradores de acero inoxidable",
+      image: "/images/editorial/drawer-projects-door-sample-2026.webp",
+      alt: "Muestra de puerta a escala real rodeada de expositores de herrajes",
       title: "Proyectos",
       body: "Cómo se especifican los herrajes en edificios reales.",
     },
