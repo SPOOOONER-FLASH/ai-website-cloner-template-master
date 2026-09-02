@@ -55,7 +55,18 @@ const hasHero = (p) => Boolean(p.heroImage && p.heroImage.src);
 const galleryCount = (p) => (p.gallery ?? []).length;
 const thinSummary = (p) => !p.summary || p.summary.trim().length < 40;
 
-const noHero = products.filter((p) => !hasHero(p));
+/*
+  "No hero image" is not one problem, it is two, and they go to different people.
+
+  A record with no hero and no gallery has no photograph anywhere — somebody has to
+  photograph the part. A record with no hero but a gallery already HAS photographs; what
+  is missing is the decision about which one leads. Today that is exactly one product
+  (EH01, eight images on disk), and putting it on a shooting list would send someone to
+  photograph a product we have already photographed eight times.
+*/
+const noPhotoAtAll = products.filter((p) => !hasHero(p) && galleryCount(p) === 0);
+const heroUnpicked = products.filter((p) => !hasHero(p) && galleryCount(p) > 0);
+const noHero = [...noPhotoAtAll, ...heroUnpicked];
 const noGallery = products.filter((p) => hasHero(p) && galleryCount(p) === 0);
 const noSummary = products.filter(thinSummary);
 const blank = products.filter((p) => !hasHero(p) && !(p.specs ?? []).length);
@@ -154,7 +165,8 @@ const html = `<!doctype html>
 <h2>一、总览：缺什么，缺多少</h2>
 <table class="cov">
   <tr><th>项目</th><th>现状</th><th></th><th>还缺</th><th>谁能做</th></tr>
-  <tr><td>主图（每个产品必须有一张）</td><td class="n">${pct(total - noHero.length, total)}%</td><td><span class="bar" style="width:${Math.round(pct(total - noHero.length, total) * 0.6)}px"></span></td><td class="n">${noHero.length} 个</td><td>美工 / 拍照</td></tr>
+  <tr><td>主图 —— 一张照片都没有，需要拍</td><td class="n">${pct(total - noHero.length, total)}%</td><td><span class="bar" style="width:${Math.round(pct(total - noHero.length, total) * 0.6)}px"></span></td><td class="n">${noPhotoAtAll.length} 个</td><td>美工 / 拍照</td></tr>
+  <tr><td>主图 —— 照片有了，只差指定封面</td><td class="n">—</td><td></td><td class="n">${heroUnpicked.length} 个</td><td>编辑决定，不用拍</td></tr>
   <tr><td>细节图（第 2、3 张）</td><td class="n">${pct(total - noGallery.length - noHero.length, total)}%</td><td><span class="bar" style="width:${Math.round(pct(total - noGallery.length - noHero.length, total) * 0.6)}px"></span></td><td class="n">${noGallery.length} 个</td><td>美工 / 拍照</td></tr>
   <tr><td>一句话介绍（列表和搜索结果会显示）</td><td class="n">${pct(total - noSummary.length, total)}%</td><td><span class="bar" style="width:${Math.round(pct(total - noSummary.length, total) * 0.6)}px"></span></td><td class="n">${noSummary.length} 个</td><td>业务 / 美工</td></tr>
 </table>
@@ -190,12 +202,35 @@ const html = `<!doctype html>
     .join("\n")}
 </table>
 
-<h2>四、${noHero.length} 个产品没有主图</h2>
+<h2>四、${noPhotoAtAll.length} 个产品一张照片都没有</h2>
 <p class="small">按类目分组。拍完在最后一栏打勾，文件名用型号即可，我们来改成正式名。</p>
 <table>
   <tr><th>型号</th><th>名称</th><th>材质（已知的）</th><th>已拍 ✓</th></tr>
-  ${groupedRows(noHero, (p) => p.material ?? "")}
+  ${groupedRows(noPhotoAtAll, (p) => p.material ?? "")}
 </table>
+
+${
+  heroUnpicked.length
+    ? `<h2>四·五、${heroUnpicked.length} 个产品照片已经拍好了，只差指定哪张当封面</h2>
+<div class="now">
+  <strong>这几个不用再拍。</strong> 图已经在我们服务器上，只是没人指定哪一张当产品页的第一张图，
+  所以页面上现在是空的。请在「选哪张」一栏写图片编号（例如 <code>-3</code>），或者直接说
+  「用侧面那张」。这是一个编辑决定，不是拍摄任务，五分钟就能定完。
+</div>
+<table>
+  <tr><th>型号</th><th>名称</th><th>现有图片</th><th>选哪张</th></tr>
+  ${heroUnpicked
+    .map(
+      (p) =>
+        `<tr><td class="m">${esc(p.model ?? "—")}</td><td>${esc(p.name)}</td>` +
+        `<td>${galleryCount(p)} 张（编号 ${(p.gallery ?? [])
+          .map((g) => (g.src.match(/-(\d+)\.webp$/) ?? [, "?"])[1])
+          .join(" / ")}）</td><td class="w"></td></tr>`,
+    )
+    .join("\n")}
+</table>`
+    : ""
+}
 
 <h2>五、${noGallery.length} 个产品只有一张图</h2>
 <p class="small">
