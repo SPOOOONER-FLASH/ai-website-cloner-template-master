@@ -74,6 +74,7 @@ FIRST, LAST = "B", "I"
 PICTURE_COL_PX = 159   # D width in pixels, used to centre the product image
 ROW_PX = 165           # minimum product row height in pixels
 SPEC_CHARS_PER_LINE = 54  # characters that fit one line of column E at 8pt
+NOTE_CHARS_PER_LINE = 150  # characters that fit one line of B:I at 9pt
 
 
 def px_to_pt(px: float) -> float:
@@ -176,6 +177,19 @@ def place_image(ws, path: Path, col_letter: str, row: int, *, box_px: int,
 
 # --- content -------------------------------------------------------------------
 
+def resolve_company(job: dict) -> dict:
+    """The seller block, inline or shared.
+
+    `company` may be a path to a shared JSON file so the letterhead lives in one place:
+    the office address changed once already, and a per-job copy means every past job
+    file quietly keeps quoting the old one.
+    """
+    company = job["company"]
+    if isinstance(company, str):
+        company = json.loads((ROOT / company).read_text(encoding="utf-8"))
+    return company
+
+
 def load_product(slug: str) -> dict:
     path = ROOT / "content" / "products" / f"{slug}.json"
     if not path.exists():
@@ -229,7 +243,7 @@ def resolve_image(product: dict, item: dict) -> Path | None:
 
 
 def product_url(job: dict, product: dict) -> str:
-    base = job["company"].get("siteUrl", "https://cantonlock.com").rstrip("/")
+    base = resolve_company(job).get("siteUrl", "https://cantonlock.com").rstrip("/")
     category = "/".join(product.get("categoryPath", []))
     return f"{base}/products/{category}/{product['slug']}/"
 
@@ -245,7 +259,7 @@ def build(job: dict, out_path: Path) -> Path:
     for col, width in COLS.items():
         ws.column_dimensions[col].width = width
 
-    company, buyer = job["company"], job["buyer"]
+    company, buyer = resolve_company(job), job["buyer"]
     meta, terms = job.get("meta", {}), job.get("terms", [])
 
     # -- letterhead ------------------------------------------------------------
@@ -265,10 +279,12 @@ def build(job: dict, out_path: Path) -> Path:
     ws.row_dimensions[6].height = px_to_pt(16)
     ws.row_dimensions[7].height = px_to_pt(16)
     cell(ws, span(ws, 6, FIRST, "E"), company["legalName"], size=10, bold=True)
-    cell(ws, span(ws, 7, FIRST, "E"), company["addressLine"], size=9, color=MUTED)
-    cell(ws, span(ws, 6, "F", LAST), company["email"], size=9, color=MUTED, align="right")
-    cell(ws, span(ws, 7, "F", LAST), company["siteUrl"], size=9, color=MUTED,
-         align="right", link=company["siteUrl"])
+    cell(ws, span(ws, 6, "F", LAST),
+         f"{company['email']}   ·   {company['siteUrl'].split('//')[-1]}",
+         size=9, color=MUTED, align="right", link=company["siteUrl"])
+    # The address gets the whole width: merged to E it was clipped mid phone number,
+    # and a clipped address on a quotation is worse than a long line.
+    cell(ws, span(ws, 7, FIRST, LAST), company["addressLine"], size=9, color=MUTED)
     rule(ws, 7)
 
     # -- buyer / commercial terms ---------------------------------------------
@@ -372,8 +388,12 @@ def build(job: dict, out_path: Path) -> Path:
     cell(ws, span(ws, row, FIRST, LAST), "NOTES", size=8, bold=True, color=MUTED)
     for note in job.get("notes", []):
         row += 1
-        ws.row_dimensions[row].height = px_to_pt(15)
-        cell(ws, span(ws, row, FIRST, LAST), f"•  {note}", size=9)
+        # A merged cell never auto-fits, so a long note printed straight off the right
+        # edge with no ellipsis. Wrap it and size the row from the wrapped line count.
+        lines = max(1, -(-len(note) // NOTE_CHARS_PER_LINE))
+        ws.row_dimensions[row].height = px_to_pt(lines * 13 + 3)
+        cell(ws, span(ws, row, FIRST, LAST), f"•  {note}", size=9, wrap=True,
+             valign="top")
 
     row += 2
     cell(ws, span(ws, row, FIRST, LAST), job.get("closing", ""), size=9, color=MUTED,

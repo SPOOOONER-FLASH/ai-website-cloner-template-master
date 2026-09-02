@@ -11,13 +11,7 @@
   ],
   "outFile": "~/Desktop/hyde/20260901 Quotation - Novalux SA - Panic Exit Devices.xlsx",
   "sheetName": "Quotation",
-  "company": {
-    "legalName": "Canton Hyland Hardware (Group) Co., Ltd.",
-    "addressLine": "Yifeng Industry Park, Xiaolan, Zhongshan, Guangdong, China   ·   T +86 20 3887 7900",
-    "email": "hyde@cantonlock.com",
-    "siteUrl": "https://cantonlock.com",
-    "logo": "/public/images/brand/hyde/hyde-logo-horizontal-black.svg"
-  },
+  "company": "docs/quotations/_company.json",
   "meta": {
     "number": "HY20260901-NVX",
     "date": "September 1, 2026"
@@ -32,12 +26,30 @@
     ]
   },
   "terms": [
-    { "label": "Incoterm", "value": "CIF Guayaquil, Ecuador (sea freight)" },
-    { "label": "Prices", "value": "To be advised - this issue carries specifications only" },
-    { "label": "Payment", "value": "100% T/T before shipment" },
-    { "label": "Lead time", "value": "30 days from receipt of down payment" },
-    { "label": "Packing", "value": "Blank box; OEM colour box from MOQ 3,000 pcs" },
-    { "label": "Validity", "value": "30 days from date of issue" }
+    {
+      "label": "Incoterm",
+      "value": "CIF Guayaquil, Ecuador (sea freight)"
+    },
+    {
+      "label": "Prices",
+      "value": "To be advised - this issue carries specifications only"
+    },
+    {
+      "label": "Payment",
+      "value": "100% T/T before shipment"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of down payment"
+    },
+    {
+      "label": "Packing",
+      "value": "Blank box; OEM colour box from MOQ 3,000 pcs"
+    },
+    {
+      "label": "Validity",
+      "value": "30 days from date of issue"
+    }
   ],
   "items": [
     {

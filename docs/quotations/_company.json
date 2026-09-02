@@ -1,0 +1,13 @@
+{
+  "_comment": [
+    "Seller letterhead, shared by every quotation job file.",
+    "Kept out of the individual jobs because the office address changed once already:",
+    "a per-job copy means old job files quietly keep quoting the old address.",
+    "Source of truth is content/site-settings.json - update both together."
+  ],
+  "legalName": "Canton Hyland Hardware (Group) Co., Ltd.",
+  "addressLine": "No. 28 Lehe Road, Lianfeng Community, Xiaolan Town, Zhongshan, Guangdong, China   ·   T +1 703 967 7493",
+  "email": "hyde@cantonlock.com",
+  "siteUrl": "https://cantonlock.com",
+  "logo": "/public/images/brand/hyde/hyde-logo-horizontal-black.svg"
+}

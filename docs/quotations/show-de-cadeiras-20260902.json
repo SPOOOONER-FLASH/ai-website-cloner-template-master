@@ -1,0 +1,84 @@
+{
+  "_comment": [
+    "Quotation job for A.A.M Comercio de Moveis Ltda (trade name Show de Cadeiras), Santos/SP, Brazil.",
+    "Source: buyer's own file 'Proforma Kit Fechadura-Porta de Vidro-Atualizado.xlsx', two lines,",
+    "100 pcs each, price column headed 'USD (FOB)'. That workbook is a furniture supplier's",
+    "template the buyer reuses - its terms and bank block belong to Foshan Winner Furniture,",
+    "NOT to us, so none of it is carried over here.",
+    "Buyer line 1 (patch clamps + pivots photo): installation kit, 8/10 mm hinged tempered glass,",
+    "cylinder lock, 201 stainless steel, polished -> our Glass Door Patch Fitting Set.",
+    "Buyer line 2 (D-shape lock photo): SU304/zinc alloy, 10-15 mm frameless glass, works with",
+    "clamps and floor springs, mirror/satin/titanium/PVC -> our GL125 SS. Two mismatches are",
+    "called out in the notes rather than papered over: our GL125 SS covers 8-10 mm glass and its",
+    "keeper is the glass-to-glass variant, while the buyer's photo shows a wall keeper.",
+    "Prices absent by default; add \"unitPrice\" per item and rebuild to issue the priced version.",
+    "Build:  py scripts/build-quotation.py docs/quotations/show-de-cadeiras-20260902.json"
+  ],
+  "outFile": "~/Desktop/hyde/20260902 Quotation - Show de Cadeiras - Glass Door Hardware.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": {
+    "number": "HY20260902-AAM",
+    "date": "September 2, 2026"
+  },
+  "buyer": {
+    "name": "A.A.M Comércio de Móveis Ltda",
+    "lines": [
+      "Show de Cadeiras   ·   CNPJ 22.104.588/0001-66",
+      "Attn: Ibrahim",
+      "Av. Ana Costa 130, Gonzaga, Santos - SP, Brazil",
+      "CEP 11.060-002",
+      "compras@donni.com.br   ·   ibrahim@donni.com.br"
+    ]
+  },
+  "terms": [
+    { "label": "Incoterm", "value": "FOB Guangzhou or Shenzhen, China" },
+    { "label": "Discharge", "value": "Santos, Brazil" },
+    { "label": "Prices", "value": "To be advised - this issue carries specifications only" },
+    { "label": "Payment", "value": "100% T/T before shipment" },
+    { "label": "Lead time", "value": "30 days from receipt of down payment" },
+    { "label": "Validity", "value": "30 days from date of issue" }
+  ],
+  "items": [
+    {
+      "slug": "glass-door-patch-fitting-set",
+      "title": "Patch Fitting Kit",
+      "qty": 100,
+      "unit": "SET",
+      "image": "/images/products-hyde/glass-door-patch-fitting-set.webp",
+      "specs": [
+        "Installation kit for frameless tempered glass hinged doors",
+        "Glass thickness: 8 and 10 mm",
+        "Material: stainless steel, 201 stainless inner components",
+        "Finish: polished (mirror) or satin - please confirm",
+        "Includes top and bottom patch fittings, pivots, cover plates",
+        "Cylinder lock included; keys nickel plated",
+        "Your proforma line 1"
+      ]
+    },
+    {
+      "slug": "gl125-ss-glass-door-patch-fittings",
+      "title": "GL125 SS",
+      "qty": 100,
+      "unit": "PCS",
+      "image": "/images/products-hyde/gl125-ss-glass-door-patch-fittings.webp",
+      "specs": [
+        "Glass door lock, 76 x 60 mm body, D-shape",
+        "Main body: stainless steel 304; inner body: stainless steel 201",
+        "Deadbolt: steel   ·   Cylinder: brass   ·   Keys: nickel plated",
+        "Glass thickness: 8-10 mm (see note on your 10-15 mm requirement)",
+        "Keeper: glass-to-glass, double door - wall keeper on request",
+        "Suitable for left- and right-hand usage",
+        "Your proforma line 2"
+      ]
+    }
+  ],
+  "notes": [
+    "Both lines of your proforma are matched above; quantities are the 100 pcs each you stated.",
+    "GL125 SS is supplied for 8-10 mm glass with a glass-to-glass keeper. Your line 2 asks for 10-15 mm and shows a wall keeper - please confirm and we will quote the correct variant.",
+    "The black finish in 201 stainless steel noted on your sheet is available; please confirm which line it applies to.",
+    "Carton dimensions, N.W., G.W. and CBM will be supplied with the priced offer so you can complete the freight columns of your proforma.",
+    "Individual patch fittings (F110, F113, F114, F123) can be quoted separately if you prefer to specify the kit by component."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the two points above and we will issue the priced FOB offer for shipment to Santos."
+}
