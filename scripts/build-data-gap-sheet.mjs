@@ -13,7 +13,8 @@
  * Usage: node scripts/build-data-gap-sheet.mjs
  */
 
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
 
 const DIR = "content/products";
 const products = readdirSync(DIR)
@@ -197,5 +198,19 @@ ${coverage
 const out = "docs/research/DATA_GAP_SHEET.html";
 writeFileSync(out, html);
 console.log(`wrote ${out}`);
+
+/*
+  --out also drops a Chinese-named copy in a hand-off folder. The colleague who fills
+  this in does not have the repo and should not have to be told which of two English
+  filenames is theirs, so the copy is named the way it is referred to in conversation.
+*/
+const outFlag = process.argv.indexOf("--out");
+if (outFlag > -1 && process.argv[outFlag + 1]) {
+  const dir = process.argv[outFlag + 1];
+  mkdirSync(dir, { recursive: true });
+  const copy = join(dir, "产品数据待补清单.html");
+  writeFileSync(copy, html);
+  console.log(`copied to ${copy}`);
+}
 console.log(`  ${total} products · ${noSpecs.length} with no specs · ${onRequest.length} with "on request"`);
 for (const c of coverage) console.log(`  ${c.label.padEnd(16)} ${String(c.pct).padStart(3)}%  missing ${c.missing}`);

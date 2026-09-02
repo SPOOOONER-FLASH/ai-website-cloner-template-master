@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>美工工作需求补足表 — Canton Hyland</title>
+<style>
+  @page { size: A4; margin: 14mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; color: #11110f; font-size: 11pt; line-height: 1.5; margin: 0; }
+  h1 { font-size: 20pt; margin: 0 0 4px; }
+  h2 { font-size: 13pt; margin: 22px 0 6px; padding-top: 10px; border-top: 1.5px solid #11110f; page-break-after: avoid; }
+  p.lead { margin: 0 0 14px; color: #444; }
+  .rule { color: #7a6f4f; background: #faf8f2; border: 1px solid #ddd5bd; padding: 8px 10px; margin: 10px 0 14px; font-size: 10pt; }
+  .now { background: #f4f7fb; border: 1px solid #c6d4e6; padding: 8px 10px; margin: 10px 0 14px; font-size: 10pt; }
+  table { border-collapse: collapse; width: 100%; font-size: 10pt; margin-top: 6px; }
+  th, td { border: 1px solid #c9c9c4; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #f2f2ef; font-weight: 600; }
+  td.m { font-family: ui-monospace, Consolas, monospace; white-space: nowrap; }
+  td.w { min-width: 90px; background: #fffdf7; }
+  tr.grp td { background: #ecece8; font-weight: 600; }
+  tr { page-break-inside: avoid; }
+  .cov td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar { display: inline-block; height: 8px; background: #11110f; vertical-align: middle; }
+  .small { font-size: 9.5pt; color: #555; }
+  ol.spec { font-size: 10pt; margin: 8px 0 0 18px; padding: 0; }
+  ol.spec li { margin-bottom: 4px; }
+  footer { margin-top: 24px; padding-top: 10px; border-top: 1px solid #c9c9c4; font-size: 9.5pt; color: #555; }
+</style>
+</head>
+<body>
+
+<h1>美工工作需求补足表</h1>
+<p class="lead">Canton Hyland · 第二份 · 共 435 个产品 · 由 scripts/build-design-brief.mjs 从实际数据生成</p>
+
+<div class="now">
+  <strong>这份表和上一份《产品数据待补清单》分工不同。</strong><br>
+  上一份要的是<strong>数字</strong> —— 装箱、中心距、循环寿命、不锈钢等级。那些要等工程或车间确认。<br>
+  这一份要的是<strong>图片和文字</strong> —— 拍照、补细节图、写一句话介绍。这部分不需要等任何人签字，今天就能开始。<br>
+  两份表互不重叠，可以同时进行。
+</div>
+
+<div class="rule">
+  <strong>三条规矩：</strong><br>
+  1. <strong>不确定就留空。</strong> 空白我们能识别并继续追；填错的内容会被客户照着下单。<br>
+  2. <strong>照片必须是这个型号本身。</strong> 同系列拿相近型号顶替，等于给买家发错货的图。<br>
+  3. <strong>不要自己加水印。</strong> 水印由脚本统一压，自己加的会被二次覆盖。
+</div>
+
+<h2>一、总览：缺什么，缺多少</h2>
+<table class="cov">
+  <tr><th>项目</th><th>现状</th><th></th><th>还缺</th><th>谁能做</th></tr>
+  <tr><td>主图（每个产品必须有一张）</td><td class="n">83%</td><td><span class="bar" style="width:50px"></span></td><td class="n">75 个</td><td>美工 / 拍照</td></tr>
+  <tr><td>细节图（第 2、3 张）</td><td class="n">67%</td><td><span class="bar" style="width:40px"></span></td><td class="n">69 个</td><td>美工 / 拍照</td></tr>
+  <tr><td>一句话介绍（列表和搜索结果会显示）</td><td class="n">71%</td><td><span class="bar" style="width:43px"></span></td><td class="n">126 个</td><td>业务 / 美工</td></tr>
+</table>
+<p class="small">
+  没有主图的页面对买家来说就是一个空框。这是全站可见度最差的一类页面，也是最容易补的一类 ——
+  不需要任何技术信息，只需要把货摆在白背景上拍一张。
+</p>
+
+<h2>二、按类目分配拍摄任务</h2>
+<p class="small">按缺图数量排序。同一类目的产品放在一起拍，一次布光可以拍完一整行。</p>
+<table class="cov">
+  <tr><th>类目</th><th>中文</th><th>产品数</th><th>缺主图</th><th>缺细节图</th><th>缺介绍</th></tr>
+  <tr><td>knob-locks</td><td>球形锁</td><td class="n">67</td><td class="n">33</td><td class="n">2</td><td class="n">7</td></tr>
+<tr><td>lever-handles</td><td>执手锁 / 门把手</td><td class="n">40</td><td class="n">15</td><td class="n">2</td><td class="n">6</td></tr>
+<tr><td>lock-cases</td><td>锁体</td><td class="n">45</td><td class="n">12</td><td class="n">15</td><td class="n">8</td></tr>
+<tr><td>panic-exit-devices</td><td>逃生推杆</td><td class="n">42</td><td class="n">3</td><td class="n">5</td><td class="n">22</td></tr>
+<tr><td>glass-door-accessories</td><td>玻璃门配件</td><td class="n">20</td><td class="n">3</td><td class="n">1</td><td class="n">3</td></tr>
+<tr><td>grip-handle-sets</td><td>大拉手套装</td><td class="n">11</td><td class="n">2</td><td class="n">1</td><td class="n">2</td></tr>
+<tr><td>stainless-steel-handles</td><td>不锈钢拉手</td><td class="n">35</td><td class="n">2</td><td class="n">6</td><td class="n">1</td></tr>
+<tr><td>door-closers</td><td>闭门器</td><td class="n">9</td><td class="n">2</td><td class="n">6</td><td class="n">8</td></tr>
+<tr><td>hardware-accessories</td><td>五金配件</td><td class="n">50</td><td class="n">1</td><td class="n">17</td><td class="n">39</td></tr>
+<tr><td>brass-steel-hinges</td><td>铰链</td><td class="n">26</td><td class="n">1</td><td class="n">12</td><td class="n">7</td></tr>
+<tr><td>bathroom-accessories</td><td>卫浴配件</td><td class="n">45</td><td class="n">1</td><td class="n">1</td><td class="n">—</td></tr>
+<tr><td>night-latches-rim-locks</td><td>碰锁 / 外装锁</td><td class="n">22</td><td class="n">—</td><td class="n">1</td><td class="n">8</td></tr>
+<tr><td>lock-cylinders</td><td>锁芯</td><td class="n">13</td><td class="n">—</td><td class="n">—</td><td class="n">12</td></tr>
+<tr><td>sliding-hook-locks</td><td>移门钩锁</td><td class="n">3</td><td class="n">—</td><td class="n">—</td><td class="n">3</td></tr>
+<tr><td>deadbolts</td><td>单锁舌</td><td class="n">7</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+</table>
+
+<h2>三、3 个页面既没有图也没有规格（最优先）</h2>
+<p class="small">
+  这几页现在只有一个标题。买家打开看不到任何东西，搜索引擎也判定为空页。
+  拍一张图 + 上一份表里的规格，两边都补上才算完成。
+</p>
+<table>
+  <tr><th>型号</th><th>名称</th><th>类目</th><th>已拍 ✓</th></tr>
+  <tr><td class="m">Lc16</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc31</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc45*85</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+</table>
+
+<h2>四、75 个产品没有主图</h2>
+<p class="small">按类目分组。拍完在最后一栏打勾，文件名用型号即可，我们来改成正式名。</p>
+<table>
+  <tr><th>型号</th><th>名称</th><th>材质（已知的）</th><th>已拍 ✓</th></tr>
+  
+      <tr class="grp"><td colspan="4">球形锁 · 33 个</td></tr>
+      <tr><td class="m">201 PBET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">571 SSET</td><td>Light Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5733 SSET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">576 PBPS</td><td>Tubular Lock</td><td>Brass Or Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5790 PBBSET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5807 E</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5807 F</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5832 PBBSET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5833 SSET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">586 ABET</td><td>Light Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">587 ABET</td><td>Light Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">587 FET</td><td>Light Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">587 WLET</td><td>Light Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5870 ABET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">5870 SSPS</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel 201/304</td><td class="w"></td></tr>
+<tr><td class="m">5874 BNAC</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">592 ABET</td><td>Tubular Lock</td><td>Brass Or Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">607 ABET</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 BNET</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 FET</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 KET</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 PBPS</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 WBK</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">607 WLET</td><td>Tubular Lock</td><td>Stainless steel/Brass/Solid steel</td><td class="w"></td></tr>
+<tr><td class="m">6082 SN</td><td>Tubular Lock</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">6094 PBBK</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel201/304</td><td class="w"></td></tr>
+<tr><td class="m">6094 PBET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel201/304</td><td class="w"></td></tr>
+<tr><td class="m">6094 PBPS</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel201/304</td><td class="w"></td></tr>
+<tr><td class="m">9211 BNAC</td><td>Heavy Duty Cylindrical Lock</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">9212 BNBS</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel+Brass</td><td class="w"></td></tr>
+<tr><td class="m">9216 AC</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel+Brass</td><td class="w"></td></tr>
+<tr><td class="m">9217 BNAC</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel+Brass</td><td class="w"></td></tr>
+<tr><td class="m">9221 BSET</td><td>Heavy Duty Cylindrical Lock</td><td>Stainless Steel+Brass</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">执手锁 / 门把手 · 15 个</td></tr>
+      <tr><td class="m">3431 SNET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">6491 SSET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">801 PBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">804 PBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">805PBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">807 ABET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">809 PBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">809 SBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">822 SNET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">823 PBET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">EH01</td><td>Lever Handle</td><td></td><td class="w"></td></tr>
+<tr><td class="m">LH852 SSET</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">LH853 BK</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">LH853 BNBK</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+<tr><td class="m">LH853 PS</td><td>Lever Handle</td><td>Zinc Alloy</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">锁体 · 12 个</td></tr>
+      <tr><td class="m">Lc02 85×40mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc03 85×45mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc06 85×50mm PS</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc08 85×55mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc09 85×60mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc16</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc21 85×50mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc22 85×45mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc31</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc32 65×72mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc34 50×72mm</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+<tr><td class="m">Lc45*85</td><td>Lock Case</td><td></td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">玻璃门配件 · 3 个</td></tr>
+      <tr><td class="m">100-30MM</td><td>Glass Door Handle</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">102-30MM</td><td>Glass Door Handle</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">105-600</td><td>Glass Door Handle</td><td>Stainless Steel</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">逃生推杆 · 3 个</td></tr>
+      <tr><td class="m">301-S</td><td>S-Panic Exit Device</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">302-S</td><td>S-Panic Exit Device</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">DDH001</td><td>Panic Exit Device</td><td>Iron</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">大拉手套装 · 2 个</td></tr>
+      <tr><td class="m">70900 BK</td><td>Grip Handle Set</td><td>Aluminum</td><td class="w"></td></tr>
+<tr><td class="m">70900 ET</td><td>Grip Handle Set</td><td>Aluminum</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">不锈钢拉手 · 2 个</td></tr>
+      <tr><td class="m">HD02</td><td>Stainless Steel Handle</td><td>Stainless Steel</td><td class="w"></td></tr>
+<tr><td class="m">HD03</td><td>Stainless Steel Handle</td><td>Stainless Steel</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">闭门器 · 2 个</td></tr>
+      <tr><td class="m">JU-071</td><td>Door Closer</td><td>Aluminum</td><td class="w"></td></tr>
+<tr><td class="m">JU-088A</td><td>Door Closer</td><td>Aluminum</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">五金配件 · 1 个</td></tr>
+      <tr><td class="m">400</td><td>Indicator</td><td>Zinc Alloy</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">卫浴配件 · 1 个</td></tr>
+      <tr><td class="m">BH15</td><td>Bathroom Accessories</td><td>Stainless Steel</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">铰链 · 1 个</td></tr>
+      <tr><td class="m">F100 SS</td><td>Door Hinge</td><td>Iron</td><td class="w"></td></tr>
+</table>
+
+<h2>五、69 个产品只有一张图</h2>
+<p class="small">
+  只有一张正面图的产品，买家看不到锁舌、背板、安装孔位。至少补两张：<strong>侧面</strong>（看厚度和锁舌）
+  和 <strong>背面或分解</strong>（看孔位和配件）。这一节可以在第四节做完之后再做。
+</p>
+<table>
+  <tr><th>型号</th><th>名称</th><th>建议补拍</th><th>已拍 ✓</th></tr>
+  
+      <tr class="grp"><td colspan="4">五金配件 · 17 个</td></tr>
+      <tr><td class="m">DS013</td><td>Door Stopper</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">DS02</td><td>Door Stopper</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">DS022</td><td>Door Stopper</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">DS09</td><td>Door Stopper</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Dust Proof 01</td><td>Door viewer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Dust Proof 02</td><td>Door viewer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">F006</td><td>Security Door Guard</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">FB001 SS</td><td>Door Flush Bolt</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">FB012</td><td>Door Flush Bolt</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L001</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L003</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L005</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L006</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L015</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L018</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">L021</td><td>Latch</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Stainless Steel Flush Bolt</td><td>Stainless Steel Flush Bolt</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">锁体 · 15 个</td></tr>
+      <tr><td class="m">AI8530</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">AR4-101</td><td>Standard Mortise Lock Body</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">AR4-140</td><td>Slim Mortise Lock Body</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc04 85×60mm</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc07 85×45mm</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">LC14 85×50</td><td>Four Bolt Mortise Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc17</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc6860</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc7065PS</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc8520B</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc8525B</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc8530BK</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc8530PS</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc8535B</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Lc9230</td><td>Lock Case</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">铰链 · 12 个</td></tr>
+      <tr><td class="m">B024</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Brass Piano Hinge</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SS026</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SS027</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH012</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH013</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH017</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH018</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH019</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH020</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">SSH022</td><td>Brass and Steel Hinges</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Stainless Steel Door Hinge</td><td>Stainless Steel Door Hinge</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">不锈钢拉手 · 6 个</td></tr>
+      <tr><td class="m">9007</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">9011E</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">9012E</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">9014 SSBK</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">9016S</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">9021</td><td>Stainless Steel Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">闭门器 · 6 个</td></tr>
+      <tr><td class="m">JU-061</td><td>Door Closer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">JU-072</td><td>Door Closer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">JU-073</td><td>Door Closer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">JU-088</td><td>Door Closer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">JU-093</td><td>Door Closer</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Wooden Door Floor Hinge</td><td>Wooden Door Floor Hinge</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">逃生推杆 · 5 个</td></tr>
+      <tr><td class="m">307</td><td>Panic Exit Device</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">308-D</td><td>D-Panic Exit Device</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">308-S</td><td>S-Panic Exit Device</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">320</td><td>Two Point Locking Exit Device</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">X2</td><td>Panic Exit Device</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">球形锁 · 2 个</td></tr>
+      <tr><td class="m">5807 SSEL</td><td>Commercial Lock</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Cylindrical Knob Lock</td><td>Cylindrical Knob Lock</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">执手锁 / 门把手 · 2 个</td></tr>
+      <tr><td class="m">816 PBET</td><td>Lever Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+<tr><td class="m">Black Tubular Lever Lock Set</td><td>Black Tubular Lever Lock Set</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">大拉手套装 · 1 个</td></tr>
+      <tr><td class="m">600</td><td>Concealed Sliding Door Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">碰锁 / 外装锁 · 1 个</td></tr>
+      <tr><td class="m">Night Latch &amp; Rim Lock</td><td>Night Latch &amp; Rim Lock</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">玻璃门配件 · 1 个</td></tr>
+      <tr><td class="m">Stainless Steel Glass Door Pull Handle</td><td>Stainless Steel Glass Door Pull Handle</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">卫浴配件 · 1 个</td></tr>
+      <tr><td class="m">Stainless Steel Wall Hook</td><td>Stainless Steel Wall Hook</td><td>侧面 + 背面／分解</td><td class="w"></td></tr>
+</table>
+
+<h2>六、126 个产品没有一句话介绍</h2>
+<p class="small">
+  这一句会出现在列表页、搜索结果和 Google 摘要里。写 20–40 个字，说清楚
+  <strong>是什么 + 用在什么门上 + 有什么特点</strong>，不要写「质量优良、价格实惠」这类话 ——
+  搜索引擎和买家都会跳过。<br>
+  好例子：「适用于 35–50mm 木门与铁门的不锈钢球形锁，钥匙外开、内侧旋钮反锁。」
+</p>
+<table>
+  <tr><th>型号</th><th>名称</th><th>类目</th><th>一句话介绍</th></tr>
+  
+      <tr class="grp"><td colspan="4">五金配件 · 39 个</td></tr>
+      <tr><td class="m">200</td><td>Indicator</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">315</td><td>Pry Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">400</td><td>Indicator</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">500</td><td>Indicator</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DC02</td><td>Door Coordinator</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS01</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS010</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS011</td><td>Door Flush Bolt</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS013</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS02</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS022</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS05</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DS09</td><td>Door Stopper</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">Dust Proof 01</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">Dust Proof 02</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV07</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV08</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV08 SN</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV10</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV12-B</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">DV12-S</td><td>Door viewer</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">F001</td><td>Security Door Guard</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">F002</td><td>Security Door Guard</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">F004</td><td>Security Door Guard</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">F005</td><td>Security Door Guard</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">F006</td><td>Security Door Guard</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">FB013</td><td>Door Flush Bolt</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">FB014</td><td>Door Flush Bolt</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">FB015</td><td>Door Flush Bolt</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">FB016</td><td>Door Flush Bolt</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L001</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L003</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L004</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L005</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L006</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L015</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L018</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">L021</td><td>Latch</td><td>五金配件</td><td class="w"></td></tr>
+<tr><td class="m">NO01</td><td>Gate House No</td><td>五金配件</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">逃生推杆 · 22 个</td></tr>
+      <tr><td class="m">001</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">015</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">016</td><td>Exterior Trim</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">026</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">027</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">028</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">030</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">033</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">035</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">036</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">037</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">039</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">301-S</td><td>S-Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">308-D</td><td>D-Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">308-S</td><td>S-Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">310</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">313</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">72</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">9080E</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">DDH001</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">DSL02</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+<tr><td class="m">X2</td><td>Panic Exit Device</td><td>逃生推杆</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">锁芯 · 12 个</td></tr>
+      <tr><td class="m">45BN</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">47BSIK</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">54 DK</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">56 SN</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">65SN</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">70ANTI-THEFT</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">70BK</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">70MB</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">70PB ANTI-THEFT</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">70SN</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">80SN</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+<tr><td class="m">XF-1</td><td>Lock Cylinder</td><td>锁芯</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">碰锁 / 外装锁 · 8 个</td></tr>
+      <tr><td class="m">260</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">556</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">558</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">559</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">564 MB</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">F102</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">H101</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+<tr><td class="m">H102</td><td>Night Latch And Rim Lock</td><td>碰锁 / 外装锁</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">锁体 · 8 个</td></tr>
+      <tr><td class="m">HY-0SS</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">AR4-1121</td><td>Hook-Bolt Mortise Lock</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc16</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc31</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc45*85</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc6860</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc7065</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+<tr><td class="m">Lc7065S</td><td>Lock Case</td><td>锁体</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">闭门器 · 8 个</td></tr>
+      <tr><td class="m">JU-051</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-061</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-071</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-072</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-073</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-088</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-088A</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+<tr><td class="m">JU-093</td><td>Door Closer</td><td>闭门器</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">球形锁 · 7 个</td></tr>
+      <tr><td class="m">5790 PBBSET</td><td>Heavy Duty Cylindrical Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">5807 E</td><td>Heavy Duty Cylindrical Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">5832 PBBSET</td><td>Heavy Duty Cylindrical Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">5874 BNAC</td><td>Heavy Duty Cylindrical Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">607 SPET</td><td>Tubular Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">9211 BNAC</td><td>Heavy Duty Cylindrical Lock</td><td>球形锁</td><td class="w"></td></tr>
+<tr><td class="m">Cylindrical Knob Lock</td><td>Cylindrical Knob Lock</td><td>球形锁</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">铰链 · 7 个</td></tr>
+      <tr><td class="m">B024</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">B025</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">F100 SS</td><td>Door Hinge</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">SS026</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">SSH013</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">SSH016</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+<tr><td class="m">SSH020</td><td>Brass and Steel Hinges</td><td>铰链</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">执手锁 / 门把手 · 6 个</td></tr>
+      <tr><td class="m">EH01</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+<tr><td class="m">EH02</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+<tr><td class="m">EH03</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+<tr><td class="m">LH853 BK</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+<tr><td class="m">LH853 PS</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+<tr><td class="m">LH853 SNET</td><td>Lever Handle</td><td>执手锁 / 门把手</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">玻璃门配件 · 3 个</td></tr>
+      <tr><td class="m">100-30MM</td><td>Glass Door Handle</td><td>玻璃门配件</td><td class="w"></td></tr>
+<tr><td class="m">102-30MM</td><td>Glass Door Handle</td><td>玻璃门配件</td><td class="w"></td></tr>
+<tr><td class="m">19-130MM</td><td>Glass Door Handle</td><td>玻璃门配件</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">移门钩锁 · 3 个</td></tr>
+      <tr><td class="m">881 SS</td><td>Sliding Hook Lock</td><td>移门钩锁</td><td class="w"></td></tr>
+<tr><td class="m">S02 CP</td><td>Sliding Hook Lock</td><td>移门钩锁</td><td class="w"></td></tr>
+<tr><td class="m">S03</td><td>Sliding Hook Lock</td><td>移门钩锁</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">大拉手套装 · 2 个</td></tr>
+      <tr><td class="m">70900 BK</td><td>Grip Handle Set</td><td>大拉手套装</td><td class="w"></td></tr>
+<tr><td class="m">70900 ET</td><td>Grip Handle Set</td><td>大拉手套装</td><td class="w"></td></tr>
+
+      <tr class="grp"><td colspan="4">不锈钢拉手 · 1 个</td></tr>
+      <tr><td class="m">9007</td><td>Stainless Steel Handle</td><td>不锈钢拉手</td><td class="w"></td></tr>
+</table>
+
+<h2>七、拍摄规格（照着这个拍，我们不用返工）</h2>
+<ol class="spec">
+  <li><strong>正方形。</strong> 1:1 裁切，全站 435 张产品图都是正方形，非正方形会被裁掉两边。</li>
+  <li><strong>最短边不低于 1200px。</strong> 成品站上是 800×800，留出裁切余量。手机也可以，锁定曝光即可。</li>
+  <li><strong>纯白或极浅灰背景</strong>，不要影棚渐变，不要桌面木纹，不要手。</li>
+  <li><strong>产品占画面约 70–80%</strong>，四边留白均匀。</li>
+  <li><strong>不要加水印、不要加 logo、不要加型号文字。</strong> 水印由脚本统一压在右下角。</li>
+  <li><strong>JPG 或 PNG 原图即可</strong>，我们转 WebP。不要先自己压缩。</li>
+  <li><strong>文件名写型号</strong>，例如 <code>LC16.jpg</code>、<code>LC16-2.jpg</code>（第二张）、<code>LC16-3.jpg</code>。</li>
+</ol>
+
+<h2>八、还有一件事：站上少了一个在卖的型号</h2>
+<div class="rule">
+  外链站 worldbid 上有一条 <strong>d103-ac</strong> 的产品条目，但我们网站的目录里没有 D103 ——
+  只有 D101（5 个变体）和 D102。<br>
+  <strong>要确认的是：D103 是不是在卖？</strong> 如果在卖，请给型号、名称、材质、表面处理和一张图，
+  我们建页面。如果早就停产，请告诉我们，我们去把那条外链改掉 —— 现在买家点进去会找不到东西。
+</div>
+
+<h2>九、交付方式</h2>
+<p class="small">
+  图片按类目建文件夹（<code>knob-locks/</code>、<code>lever-handles/</code> …），文字直接填在这张表打印稿上
+  或回一份 Excel 都可以。<strong>不用等全部做完再给</strong> —— 拍完一个类目就发一个类目，
+  我们收到就能上线，不必攒到最后。
+</p>
+
+<footer>
+  由 scripts/build-design-brief.mjs 于构建数据生成，请勿手改本文件。<br>
+  数据来源 content/products（435 条记录）。配套文件：《产品数据待补清单》DATA_GAP_SHEET.html。
+</footer>
+
+</body>
+</html>

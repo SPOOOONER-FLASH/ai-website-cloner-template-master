@@ -48,7 +48,8 @@
     "cms": "node scripts/cms.mjs",
     "content:enrich": "node scripts/enrich-product-specs.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
-    "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs"
+    "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs",
+    "sheets": "node scripts/build-data-gap-sheet.mjs && node scripts/build-design-brief.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

@@ -146,6 +146,37 @@ that works, because an agent-update is durable, is shared with the other two age
 survives the session ending. Treat "am I getting long?" as "have I committed and written
 the update yet?" — if yes, a fresh session costs almost nothing; if no, that is the bug.
 
+#### Auto-compaction: what is already true, and what is on us
+
+Client instruction, 2026-09-02: "自动压缩，artifacts 请保留."
+
+Half of that is already handled by the tool and needs nothing from us. **Claude Code
+compacts on its own**, on the ratio of estimated tokens to the window — around 85% it
+warns, around 93% it compacts — and it is on unless `CLAUDE_CODE_DISABLE_AUTO_COMPACT` is
+set. It will not cut in the middle of a tool call, and it keeps the most recent messages.
+Nobody needs to add that logic to this repo; it is not ours to add, and a session that
+believes it is scheduling its own compaction is wrong about what it can see.
+
+The half that IS on us is the second clause. Compaction preserves a *summary of the
+conversation*; it preserves nothing about the work except what was already written to
+disk. So an artifact is not "kept" because it was mentioned in chat — it is kept because
+it is a tracked file. Before a session gets long, these must exist on disk, not in the
+transcript:
+
+| Artifact | Where it lives |
+|---|---|
+| A decision, and why the alternative was rejected | the agent-update, or a comment at the code it explains |
+| A measurement (coverage %, page counts, a URL that 301s) | the script that produced it, so it can be re-run |
+| A generated deliverable (fill-in sheets, audits, reports) | a generator under `scripts/`, never a one-off paste |
+| Work handed to the other agent or the client | `docs/collaboration/` |
+
+The generator rule is the one that actually gets broken. A sheet pasted into chat and
+saved by hand is gone the moment its numbers go stale, and no later session can tell
+whether "75 products have no photograph" is still true. A sheet with a generator in
+`scripts/` is re-derivable forever — `npm run sheets` reprints both fill-in sheets from
+`content/products` in one second. Write the generator, then run it; do not write the
+output.
+
 ### Finish and communicate quickly
 
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
