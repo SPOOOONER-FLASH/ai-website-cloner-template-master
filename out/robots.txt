@@ -40,4 +40,11 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /*.txt$
 
+User-Agent: CCBot
+Allow: /
+Allow: /llms.txt
+Allow: /6bb09b9b67d0e605a292835469627988.txt
+Disallow: /admin/
+Disallow: /*.txt$
+
 Sitemap: https://cantonlock.com/sitemap.xml
