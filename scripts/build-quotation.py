@@ -242,10 +242,47 @@ def resolve_image(product: dict, item: dict) -> Path | None:
     return path if path.exists() else None
 
 
+def product_path(product: dict) -> str:
+    """Site path for a product page.
+
+    The route is /products/<TOP-LEVEL category>/<slug>/ -- only the FIRST segment of
+    categoryPath, never the whole path. Joining every segment happens to work for a
+    one-segment category such as ["panic-exit-devices"], which is why the first batch
+    of quotations linked correctly, and it produced a 404 on the very first two-segment
+    category (["glass-door-accessories", "glass-door-patch-fittings"]) that went out to
+    a buyer. `verify_product_links` below is the part that stops this recurring.
+    """
+    category = (product.get("categoryPath") or ["products"])[0]
+    return f"/products/{category}/{product['slug']}/"
+
+
 def product_url(job: dict, product: dict) -> str:
     base = resolve_company(job).get("siteUrl", "https://cantonlock.com").rstrip("/")
-    category = "/".join(product.get("categoryPath", []))
-    return f"{base}/products/{category}/{product['slug']}/"
+    return f"{base}{product_path(product)}"
+
+
+def verify_product_links(products: list[dict]) -> None:
+    """Refuse to build a quotation whose product links do not exist.
+
+    A dead link in a document already emailed to a buyer cannot be recalled, so this is
+    a hard failure, not a warning. The check is offline: it looks for the page in the
+    committed static export, which is what the live site serves. If `out/` has not been
+    built in this checkout there is nothing to check against, and the build says so
+    rather than pretending it verified something.
+    """
+    export = ROOT / "out"
+    if not (export / "products").is_dir():
+        print("warning: no out/ export in this checkout - product links NOT verified")
+        return
+
+    missing = [
+        f"{product['model']} -> {product_path(product)}"
+        for product in products
+        if not (export / product_path(product).strip("/") / "index.html").exists()
+    ]
+    if missing:
+        sys.exit("product pages do not exist for these links:\n  "
+                 + "\n  ".join(missing))
 
 
 # --- build ---------------------------------------------------------------------
@@ -315,6 +352,8 @@ def build(job: dict, out_path: Path) -> Path:
     for col, label in headers:
         cell(ws, f"{col}{table_head}", label, size=8, bold=True, color="FFFFFF",
              fill=HEAD_BG, align="center", wrap=True)
+
+    verify_product_links([load_product(item["slug"]) for item in job["items"]])
 
     box = Border(left=thin(), right=thin(), top=thin(), bottom=thin())
     row = table_head
