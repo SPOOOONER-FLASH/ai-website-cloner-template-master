@@ -205,9 +205,22 @@ output.
   do not leave the work parked locally as a third option.
 - A local commit is not a push, deployment, or production verification. State each one
   separately. Pushing source is not deploying either: `out/` still has to be rebuilt and
-  committed by whoever holds the release baton, and Cloudflare still has to be purged.
+  committed by whoever holds the release baton. Cloudflare purge is client-only; use the
+  rule below.
 - Review the other agent's finished commit read-only when useful. Put any fix in a new,
   focused commit so authorship and rollback stay clear.
+
+### Cloudflare purge is client-only
+
+- Agents must not open the Cloudflare dashboard to click `Purge Everything`, automate the
+  dashboard, obtain or use an API token, or call the zone purge endpoint. The client performs
+  the zone-wide purge manually.
+- Never imply that a zone-wide purge happened without direct evidence. A dashboard login page,
+  a timed-out control session, an absent API token, a fresh edge cache key, and a successful
+  origin deployment are five different facts.
+- The release builder still owns `npm run deploy:prep`, the complete tracked `out/` commit,
+  push, server/origin proof and public edge verification. Finish the release note with one
+  short reminder for the client to purge; do not spend turns troubleshooting Cloudflare purge.
 
 ### Who owns what
 
