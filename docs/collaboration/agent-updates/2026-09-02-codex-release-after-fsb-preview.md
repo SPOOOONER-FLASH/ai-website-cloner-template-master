@@ -12,4 +12,14 @@
 - **Cloudflare:** 未登录 dashboard、未尝试自动控制、未使用 API Token、未调用 zone purge。
   Agent 不声明全区 purge；甲方手动执行。
 
-公网 origin/edge 验证在 output commit 推送并由服务器拉取后单独记录。
+## 推送与公网验证
+
+- **Output commit:** `476854e01a` 已推送 `origin/main`；服务器于 2026-09-02 10:45 UTC
+  自动拉取。
+- **Origin:** 直连 `43.131.27.225`（TLS/SNI `cantonlock.com`）的首页 SHA-256 与
+  `out/index.html` 完全一致，且包含新构建 ID `DxX1LiM31twlVdcJvQoyU`。
+- **Cloudflare edge:** 公网首页二次请求为 `HIT`、`Age: 177`，`Last-Modified` 为
+  10:45:04 UTC，包含新构建 ID。公网 `/products/` 包含 15 个 `/compare/` 入口。
+- Edge 首页与源站的字节哈希不同，是 Cloudflare Email Address Obfuscation 把
+  `mailto:lock@cantonlock.com` 改写为 `/cdn-cgi/l/email-protection`；不是旧构建。
+- 没有执行也没有声称执行全区 `Purge Everything`；仍由甲方手动完成。
