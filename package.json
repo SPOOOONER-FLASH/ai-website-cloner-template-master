@@ -50,7 +50,7 @@
     "content:workbook": "node scripts/build-supplier-workbook.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs",
-    "sheets": "node scripts/build-data-gap-sheet.mjs && node scripts/build-design-brief.mjs"
+    "sheets": "npm run content:workbook && node scripts/build-design-brief.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

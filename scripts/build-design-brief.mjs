@@ -2,11 +2,13 @@
 /**
  * The SECOND fill-in sheet: photography, gallery and copy — not numbers.
  *
- * scripts/build-data-gap-sheet.mjs already asks for the specification figures (packing,
- * backset, cycle life, stainless grade). This one asks for the things a 美工 colleague can
- * actually produce without a production drawing in front of them: a photograph of a
- * product that currently has none, extra views for a product that has exactly one, and a
- * sentence of description for a page that has none.
+ * scripts/build-supplier-workbook.mjs already asks for the specification figures and the
+ * buyer questions behind them (packing, backset, cycle life, stainless grade). This one
+ * asks for the things a 美工 colleague can actually produce without a production drawing
+ * in front of them: a photograph of a product that currently has none, extra views for a
+ * product that has exactly one, and a sentence of description for a page that has none.
+ * The workbook has no photography section and this has no specification section; they do
+ * not overlap.
  *
  * WHY IT IS SEPARATE. The two jobs go to different people on different days. Mixing
  * "photograph these 75 models" into a table of missing millimetres produced a document
@@ -149,8 +151,8 @@ const html = `<!doctype html>
 <p class="lead">Canton Hyland · 第二份 · 共 ${total} 个产品 · 由 scripts/build-design-brief.mjs 从实际数据生成</p>
 
 <div class="now">
-  <strong>这份表和上一份《产品数据待补清单》分工不同。</strong><br>
-  上一份要的是<strong>数字</strong> —— 装箱、中心距、循环寿命、不锈钢等级。那些要等工程或车间确认。<br>
+  <strong>这份表和《供应商信息工作表》分工不同。</strong><br>
+  那一份要的是<strong>数字</strong> —— 装箱、中心距、循环寿命、不锈钢等级、检测报告编号。那些要等工程或车间确认。<br>
   这一份要的是<strong>图片和文字</strong> —— 拍照、补细节图、写一句话介绍。这部分不需要等任何人签字，今天就能开始。<br>
   两份表互不重叠，可以同时进行。
 </div>
@@ -282,7 +284,7 @@ ${
 
 <footer>
   由 scripts/build-design-brief.mjs 于构建数据生成，请勿手改本文件。<br>
-  数据来源 content/products（${total} 条记录）。配套文件：《产品数据待补清单》DATA_GAP_SHEET.html。
+  数据来源 content/products（${total} 条记录）。配套文件：《供应商信息工作表》SUPPLIER_WORKBOOK.html。
 </footer>
 
 </body>
