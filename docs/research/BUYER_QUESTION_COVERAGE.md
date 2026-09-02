@@ -4,7 +4,7 @@
 
 题库在 `docs/research/buyer-questions.json`。**这不是要再补 Schema** —— Product / FAQPage / BreadcrumbList / ItemList / Organization / WebSite 已经在 471 页上输出，`llms.txt` 也是从目录生成的。任何标记都无法提供一个**没有写在任何地方的答案**。
 
-**170 个问题：完整回答 29 · 部分 58 · 无答案 83**
+**170 个问题：完整回答 34 · 部分 58 · 无答案 78**
 
 「部分」是最值得先处理的一档：数据在一部分记录上有、另一部分没有。对答案引擎来说这比干净的空白更糟 —— 它看起来是可引用的来源，直到引到缺的那条为止。
 
@@ -12,7 +12,7 @@
 
 | 范围 | 完整 | 部分 | 无 | 合计 |
 |---|---|---|---|---|
-| 通用（每个类目都问） | 5 | 5 | 10 | 20 |
+| 通用（每个类目都问） | 10 | 5 | 5 | 20 |
 | Panic Exit Devices | 1 | 5 | 4 | 10 |
 | Lock Cases | 0 | 5 | 5 | 10 |
 | Knob Locks | 1 | 6 | 3 | 10 |
@@ -33,11 +33,11 @@
 
 | | 买家会怎么问 | 现状 |
 |---|---|---|
-| ✗ | What is your minimum order quantity? | FAQ question exists but its answer is empty |
-| ✗ | How long before you can ship after I place the order? | FAQ question exists but its answer is empty |
-| ✗ | Can I get a sample first? Do I pay for it? | FAQ question exists but its answer is empty |
-| ✗ | What payment terms do you take — TT, LC, 30% deposit? | FAQ question exists but its answer is empty |
-| ✗ | Can you put my brand on it instead of HYDE? | FAQ question exists but its answer is empty |
+| ✓ | What is your minimum order quantity? | answered in the FAQ |
+| ✓ | How long before you can ship after I place the order? | answered in the FAQ |
+| ✓ | Can I get a sample first? Do I pay for it? | answered in the FAQ |
+| ✓ | What payment terms do you take — TT, LC, 30% deposit? | answered in the FAQ |
+| ✓ | Can you put my brand on it instead of HYDE? | answered in the FAQ |
 | ✓ | Do you actually make these or are you a trading company? | answered in the FAQ |
 | ✓ | Do you ship to my country? | answered in the FAQ |
 | ✓ | Can I just buy through Alibaba instead of emailing? | answered in the FAQ |
@@ -231,7 +231,7 @@
 | ✓ | Is it suitable for a hotel? | Application on 44/45 records |
 | ✓ | What finishes? | Finish on 44/45 records |
 | ~ | Is it concealed fixing or visible screws? | Installation on 6/45 records |
-| ~ | What projection from the wall? | Projection on 5/45 records |
+| ~ | What projection from the wall? | Projection on 6/45 records |
 | ✗ | Do you do grab rails rated for disabled access? | Accessibility products are a distinct tender requirement and we say nothing about them. |
 
 ## Grip Handle Sets

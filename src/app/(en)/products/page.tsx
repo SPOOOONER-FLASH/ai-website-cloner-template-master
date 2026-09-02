@@ -132,6 +132,50 @@ export default function ProductsPage() {
       </section>
 
       {/*
+        THE COMPARISON PAGES NEED A DOOR.
+
+        /compare/<category>/ shipped linked from one place: a text link underneath the
+        spec table at the bottom of each category page. That is a correct link and an
+        invisible one — the client, who commissioned the pages, could not find them, and
+        a buyer who has not already scrolled past a 24-row table certainly will not.
+
+        Fifteen links in one block fixes both halves at once. A visitor deciding between
+        models now has somewhere obvious to go, and each compare page gains an inbound
+        link from a page Google already crawls — which is the thing 447 "discovered,
+        not indexed" pages were missing.
+      */}
+      <section className="layout mt-96 lg:mt-136" aria-labelledby="compare-index-heading">
+        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+          <div className="col-span-full flex items-end justify-between gap-24 border-b border-line pb-16">
+            <h2 id="compare-index-heading" className="text-h3 text-ink">
+              Compare models side by side
+            </h2>
+            <p className="text-c2 text-ink-secondary">One table per category</p>
+          </div>
+          <div className="col-span-full">
+            <p className="max-w-[68ch] text-c1 text-ink-secondary">
+              Every model in a range on one row each, across the specifications that
+              differ between them — backset, centre distance, door thickness, finish.
+            </p>
+            <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
+              {categories
+                .filter((category) => getProductsByCategory(category.slug).length >= 3)
+                .map((category) => (
+                  <li key={category.slug}>
+                    <Link
+                      href={`/compare/${category.slug}/`}
+                      className="short-marker short-marker-compact text-c1 text-ink hover:text-brand-hover"
+                    >
+                      Compare {category.name.toLowerCase()}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/*
         The gateway to the Product Finder.
 
         This section used to be the full index — every one of the 431 products, grouped

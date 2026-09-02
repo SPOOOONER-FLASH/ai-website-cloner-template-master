@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import {
@@ -86,6 +87,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
   onClose: () => void;
   locale?: "en" | "es";
 }) {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -100,6 +102,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         close: "Cerrar",
         empty: "Sin resultados",
         emptyNear: "Sin coincidencia exacta. Los modelos más cercanos que publicamos:",
+        enterHint: "· Pulse Intro para abrir el primero",
         loading: "Cargando…",
         placeholder: "Modelo, categoría o tipo de puerta",
         browse: "Categorías principales",
@@ -111,6 +114,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         close: "Close",
         empty: "No results",
         emptyNear: "No exact match. The closest models we publish:",
+        enterHint: "· Press Enter to open the first",
         loading: "Loading…",
         placeholder: "Model, category or door type",
         browse: "Main categories",
@@ -298,14 +302,26 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
           </div>
 
           {/*
-            A form so Enter behaves, but submit is a no-op: results are already live
-            below. Without preventDefault the browser would reload the page and lose them.
+            ENTER OPENS THE TOP RESULT.
+
+            Submit used to preventDefault and then do nothing unless exactly one result
+            was showing, which from the visitor's side was indistinguishable from a broken
+            box: they typed a model, pressed Enter, and the page did not move. Every
+            search field they have ever used goes somewhere on Enter.
+
+            There is no /search?q= page to send them to — the index is client-side and the
+            site is a static export — so the destination is the best match we already
+            computed. Failing that, the closest model; failing that, nothing, because
+            navigating somewhere arbitrary is worse than staying put.
           */}
           <form
             className="mt-32"
             onSubmit={(event) => {
               event.preventDefault();
-              if (results.length === 1) close();
+              const target = results[0] ?? nearMatches[0];
+              if (!target) return;
+              close();
+              router.push(target.href);
             }}
           >
             <label htmlFor="site-search" className="block text-c2 text-ink-secondary">
@@ -334,11 +350,86 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
             </div>
           </form>
 
+          {/* One scroll container, not two. The panel above scrolls now, and a nested
+              46vh box inside it meant a drag near the results either moved the wrong list
+              or hit the end of the inner one and stopped. */}
+          <div aria-live="polite" className="mt-24">
+            {loading ? <p className="text-c2 text-ink-secondary">{t.loading}</p> : null}
+
+            {!loading && query.trim() && !results.length ? (
+              <>
+                <p className="text-c2 text-ink-secondary">
+                  {nearMatches.length ? t.emptyNear : t.empty}
+                </p>
+                {nearMatches.length ? (
+                  <ul className="mt-16 divide-y divide-line border-y border-line">
+                    {nearMatches.map((entry) => (
+                      <li key={entry.href}>
+                        <Link href={entry.href} onClick={close} className="drawer-link">
+                          <span>
+                            {entry.subtitle ? `${entry.subtitle} — ` : ""}
+                            {entry.title}
+                          </span>
+                          <span aria-hidden="true" className="drawer-chevron">
+                            ›
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </>
+            ) : null}
+
+            {results.length ? (
+              <>
+                <p className="text-c2 text-ink-secondary">
+                  {totalMatches}
+                  {totalMatches > MAX_RESULTS ? ` (showing ${MAX_RESULTS})` : ""}
+                  <span className="ml-8 text-ink-tertiary">{t.enterHint}</span>
+                </p>
+                <ul className="mt-16 divide-y divide-line border-t border-line">
+                  {results.map((entry) => (
+                    <li key={entry.href}>
+                      <Link
+                        href={entry.href}
+                        onClick={close}
+                        className={cn(
+                          "group short-marker-surface flex items-baseline justify-between gap-16 py-12",
+                          "hover:bg-surface-alt",
+                        )}
+                      >
+                        <span className="min-w-0">
+                          <span className="short-marker short-marker-group inline-block max-w-full text-c1 text-ink">
+                            <span className="block truncate">{entry.title}</span>
+                          </span>
+                          <span className="block truncate text-c2 text-ink-secondary">
+                            {entry.subtitle}
+                          </span>
+                        </span>
+                        <span className="flex-none text-c2 text-ink-tertiary">
+                          {TYPE_LABEL[entry.type]}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
+          </div>
+
           {/*
             Before anyone types. An empty box asked the visitor to already know a model
             number or a category name — most arrivals know neither, they know "the push
             bar for a fire door". Also shown when a query returns nothing, because that is
             exactly the moment a visitor needs somewhere else to go.
+
+            IT RENDERS AFTER THE RESULTS, NOT BEFORE. When it was first, a query that
+            found nothing pushed the near-miss suggestions below six category chips and
+            six popular models — off the bottom of a phone screen. The visitor who typed
+            D103 saw "MAIN CATEGORIES" and concluded the box was broken, which is the
+            correct conclusion to draw from what was visible. The answer to what you typed
+            belongs above the standing menu.
 
             Rendered outside the aria-live region: it is standing content, not a response
             to what was typed, and announcing it on open would talk over the input label.
@@ -379,73 +470,6 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
               </ul>
             </div>
           ) : null}
-
-          {/* One scroll container, not two. The panel above scrolls now, and a nested
-              46vh box inside it meant a drag near the results either moved the wrong list
-              or hit the end of the inner one and stopped. */}
-          <div aria-live="polite" className="mt-24">
-            {loading ? <p className="text-c2 text-ink-secondary">{t.loading}</p> : null}
-
-            {!loading && query.trim() && !results.length ? (
-              <>
-                <p className="text-c2 text-ink-secondary">
-                  {nearMatches.length ? t.emptyNear : t.empty}
-                </p>
-                {nearMatches.length ? (
-                  <ul className="mt-16 divide-y divide-line border-y border-line">
-                    {nearMatches.map((entry) => (
-                      <li key={entry.href}>
-                        <Link href={entry.href} onClick={close} className="drawer-link">
-                          <span>
-                            {entry.subtitle ? `${entry.subtitle} — ` : ""}
-                            {entry.title}
-                          </span>
-                          <span aria-hidden="true" className="drawer-chevron">
-                            ›
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-              </>
-            ) : null}
-
-            {results.length ? (
-              <>
-                <p className="text-c2 text-ink-secondary">
-                  {totalMatches}
-                  {totalMatches > MAX_RESULTS ? ` (showing ${MAX_RESULTS})` : ""}
-                </p>
-                <ul className="mt-16 divide-y divide-line border-t border-line">
-                  {results.map((entry) => (
-                    <li key={entry.href}>
-                      <Link
-                        href={entry.href}
-                        onClick={close}
-                        className={cn(
-                          "group short-marker-surface flex items-baseline justify-between gap-16 py-12",
-                          "hover:bg-surface-alt",
-                        )}
-                      >
-                        <span className="min-w-0">
-                          <span className="short-marker short-marker-group inline-block max-w-full text-c1 text-ink">
-                            <span className="block truncate">{entry.title}</span>
-                          </span>
-                          <span className="block truncate text-c2 text-ink-secondary">
-                            {entry.subtitle}
-                          </span>
-                        </span>
-                        <span className="flex-none text-c2 text-ink-tertiary">
-                          {TYPE_LABEL[entry.type]}
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : null}
-          </div>
         </div>
       </div>
     </div>

@@ -44,7 +44,11 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
   return (
     <Link
       href={`${locale === "es" ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
-      className="hard-shadow-card group flex flex-col bg-surface"
+      className={cn(
+        "hard-shadow-card group flex flex-col bg-surface",
+        // Rail card on a phone, grid cell from `sm` up. See the track below.
+        "w-[74%] min-w-[74%] flex-none snap-start sm:w-auto sm:min-w-0",
+      )}
     >
       <MediaPlaceholder
         {...product.heroImage}
@@ -115,9 +119,25 @@ export function ArgentinaAr4Showcase({
           </div>
         </div>
 
+        {/*
+          A SCROLL RAIL ON A PHONE, A GRID EVERYWHERE ELSE.
+
+          `grid-cols-1` stacked four cards with a square image each: about three and a
+          half screens of scrolling on a 375px phone for one seasonal module, and the
+          homepage sections after it were effectively unreachable. Four models side by
+          side is also the honest shape of the message — this is one collection, not four
+          separate announcements.
+
+          Same idiom as PageTeaserModule: a native scroll-snap track, no JS and no arrows.
+          Cards sit at 74% so the next one is always visibly cut off at the right edge,
+          which is what tells a thumb there is more. From `sm` the track becomes the grid
+          it always was and nothing scrolls.
+        */}
         <div
           className={cn(
-            "col-span-full mt-16 grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-4",
+            "horizontal-snap col-span-full mt-16 flex snap-x snap-mandatory gap-16",
+            "overflow-x-auto overscroll-x-contain",
+            "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible xl:grid-cols-4",
             products.length < ar4Models.length && "border border-line p-24",
           )}
         >
