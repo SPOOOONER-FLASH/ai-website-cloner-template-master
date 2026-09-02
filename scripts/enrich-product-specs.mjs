@@ -161,7 +161,7 @@ const BOILERPLATE_PATTERN =
 const DUPLICATE_THRESHOLD = 5;
 
 const summaryCounts = new Map();
-for (const file of readdirSync(DIR)) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   const { summary } = JSON.parse(readFileSync(`${DIR}/${file}`, "utf8"));
   if (summary) summaryCounts.set(summary, (summaryCounts.get(summary) ?? 0) + 1);
 }
@@ -286,7 +286,7 @@ let filledSpecs = 0;
 let filledSummaries = 0;
 const stillEmpty = [];
 
-for (const file of readdirSync(DIR)) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   const path = `${DIR}/${file}`;
   const product = JSON.parse(readFileSync(path, "utf8"));
   const rows = [...(product.specs ?? [])];

@@ -1,0 +1,1593 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产品资料补充表 — Canton Hyland</title>
+<style>
+  @page { size: A4; margin: 14mm 12mm; }
+  * { box-sizing: border-box; }
+  :root { --ink:#11110f; --dim:#5c5c56; --line:#d6d6d0; --paper:#fff; --tint:#faf8f2; --edge:#ddd5bd; --accent:#7a6f4f; }
+  body { font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif; color:var(--ink); background:#f4f4f1;
+         font-size:15px; line-height:1.65; margin:0; padding:0 0 120px; }
+  .wrap { max-width:940px; margin:0 auto; padding:0 20px; background:var(--paper); }
+  header.top { padding:32px 0 20px; }
+  h1 { font-size:28px; margin:0 0 6px; }
+  h2 { font-size:20px; margin:40px 0 4px; padding-top:14px; border-top:2px solid var(--ink); }
+  h3 { font-size:17px; margin:26px 0 8px; }
+  p.lead { margin:0; color:var(--dim); }
+  p.note { color:var(--dim); font-size:14px; margin:6px 0 14px; }
+  .rule { background:var(--tint); border:1px solid var(--edge); padding:14px 16px; margin:18px 0; border-radius:4px; }
+  .rule strong { color:var(--accent); }
+  .steps { counter-reset:s; list-style:none; padding:0; margin:14px 0 0; }
+  .steps li { counter-increment:s; padding:6px 0 6px 34px; position:relative; }
+  .steps li::before { content:counter(s); position:absolute; left:0; top:8px; width:22px; height:22px; border-radius:50%;
+    background:var(--ink); color:#fff; text-align:center; font-size:13px; line-height:22px; }
+
+  .f { padding:12px 0 14px; border-bottom:1px solid var(--line); }
+  .f label { display:block; font-weight:600; }
+  .qid { display:block; color:#a09a86; font:11px ui-monospace,Consolas,monospace; letter-spacing:.02em; }
+  .f .why { margin:3px 0 0; font-size:13px; color:var(--accent); }
+  .f .hint { margin:3px 0 0; font-size:13px; color:var(--dim); }
+  .f input, .f textarea { display:block; width:100%; margin:8px 0 0; padding:8px 10px;
+    border:1px solid var(--line); border-radius:3px; font:inherit; background:#fffdf7; }
+  .f input:focus, .f textarea:focus { outline:2px solid var(--accent); outline-offset:-1px; background:#fff; }
+  .f.done input, .f.done textarea { background:#f3f8f1; border-color:#9dbb92; }
+  .f.tech { opacity:.62; }
+  .f.tech label { font-weight:500; }
+
+  section.cat { border-left:3px solid var(--edge); padding-left:16px; margin:22px 0; }
+  .badge { font-size:12px; font-weight:400; color:var(--dim); background:var(--tint); border:1px solid var(--edge);
+    padding:1px 7px; border-radius:9px; margin-left:6px; vertical-align:middle; }
+
+  table { border-collapse:collapse; width:100%; font-size:14px; margin:10px 0 4px; }
+  th, td { border:1px solid var(--line); padding:6px 9px; text-align:left; vertical-align:top; }
+  th { background:#f2f2ef; font-weight:600; }
+  td.m { font:13px ui-monospace,Consolas,monospace; }
+  td.n { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .bar { display:inline-block; height:8px; background:var(--ink); vertical-align:middle; }
+  td.cell input { width:100%; padding:5px 7px; border:1px solid var(--line); border-radius:3px; font:inherit; background:#fffdf7; }
+  td.cell input:focus { outline:2px solid var(--accent); outline-offset:-1px; }
+  td.cell input.filled { background:#f3f8f1; border-color:#9dbb92; }
+
+  #bar { position:fixed; left:0; right:0; bottom:0; background:var(--ink); color:#fff; z-index:50;
+    box-shadow:0 -2px 12px rgba(0,0,0,.25); }
+  #bar .in { max-width:940px; margin:0 auto; padding:10px 20px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  #bar .grow { flex:1 1 200px; font-size:14px; }
+  #bar button { font:inherit; padding:9px 16px; border:0; border-radius:4px; cursor:pointer; background:#fff; color:var(--ink); font-weight:600; }
+  #bar button.ghost { background:transparent; color:#fff; border:1px solid #6a6a63; font-weight:400; }
+  #bar button:hover { opacity:.88; }
+  #prog { height:5px; background:#3a3a35; }
+  #prog i { display:block; height:100%; background:#c9b984; width:0; transition:width .2s; }
+  #say { font-size:13px; color:#c9c9c2; }
+
+  @media print {
+    body { background:#fff; font-size:10.5pt; padding:0; }
+    .wrap { max-width:none; padding:0; }
+    #bar, .noprint { display:none !important; }
+    h2 { page-break-after:avoid; } .f, tr, section.cat { page-break-inside:avoid; }
+    .f input, .f textarea { background:#fff; border:0; border-bottom:1px solid #999; border-radius:0; height:26px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>产品资料补充表</h1>
+  <p class="lead">Canton Hyland · 共 435 个产品 · 由网站真实数据生成，不是通用模板</p>
+</header>
+
+<div class="rule noprint">
+  <strong>怎么用（三步）</strong>
+  <ol class="steps">
+    <li>知道的就填，不知道的<strong>留空跳过</strong>。填过的框会变绿。</li>
+    <li>随时可以关掉，内容自动存在这台电脑上，下次打开还在。</li>
+    <li>填完点最下面的 <strong>【复制全部】</strong>，粘贴到微信发给技术同事就行。</li>
+  </ol>
+</div>
+
+<div class="rule">
+  <strong>三条规矩，比填得多更重要</strong><br>
+  1. <strong>不确定就留空。</strong>空白我们能识别并继续追；填错的数字会被客户照着下单。<br>
+  2. <strong>不要从同系列别的型号推。</strong>100 和 107 都是 148mm，102 是 147mm —— 差一毫米就是另一个型号。<br>
+  3. <strong>认证只写我们自己有报告的。</strong>没有报告编号的认证一律不写。
+</div>
+
+<h2>第一部分 · 全公司只填一次</h2>
+<p class="note">这几项不分型号，一次说清就能立刻上站，是整份表里最值钱的部分。</p>
+
+<div class="f" data-pri="1">
+  <span class="qid">A1</span>
+  <label for="A1">装箱数据</label>
+  <p class="why">覆盖率只有 1%（435 个里 6 个）。买家算不出运费就问不出价——所有数据里最卡脖子的一项。</p>
+  <p class="hint">每箱数量 / 毛重 / 箱规（长×宽×高）。按品类写也行。</p>
+  <textarea id="A1" data-field="A1" data-q="装箱数据" rows="3"></textarea>
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A2</span>
+  <label for="A2">不锈钢等级 304 / 201 / 316</label>
+  <p class="why">横跨不锈钢拉手 35 个、铰链 26 个、卫浴 45 个。沿海和泳池项目一定会问。</p>
+  <p class="hint">按型号或按系列写都行，例：拉手 304、铰链 201。</p>
+  <textarea id="A2" data-field="A2" data-q="不锈钢等级 304 / 201 / 316" rows="3"></textarea>
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A3</span>
+  <label for="A3">检测报告：机构 + 报告号 + 标准版本</label>
+  <p class="why">AI 引用需要「事实锚点」——一个报告号比十句形容词管用。</p>
+  <p class="hint">只写我们真有报告的。没有报告编号的认证一律不写。</p>
+  <textarea id="A3" data-field="A3" data-q="检测报告：机构 + 报告号 + 标准版本" rows="3"></textarea>
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A4</span>
+  <label for="A4">盐雾测试做过多少小时</label>
+  <p class="why">表面处理会不会掉色、会不会锈，买家只认这一个数字。</p>
+  <p class="hint">做过就写小时数和是哪个型号；没做过留空。</p>
+  <input id="A4" data-field="A4" data-q="盐雾测试做过多少小时" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A5</span>
+  <label for="A5">循环寿命测过多少次</label>
+  <p class="why">435 个产品里只有 102 个有这一项。</p>
+  <p class="hint">第三方测的还是自测的，一并写上。</p>
+  <input id="A5" data-field="A5" data-q="循环寿命测过多少次" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A6</span>
+  <label for="A6">质保期</label>
+  <p class="why">通常是询价后第二个问题，仅次于价格。</p>
+  <p class="hint">几年？涵盖什么、不涵盖什么？</p>
+  <input id="A6" data-field="A6" data-q="质保期" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A7</span>
+  <label for="A7">HS 编码</label>
+  <p class="why">每个进口商清关和估税都要用。</p>
+  <p class="hint">各品类的海关编码。过去的报关单上就有。</p>
+  <input id="A7" data-field="A7" data-q="HS 编码" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A8</span>
+  <label for="A8">开模费与打样周期</label>
+  <p class="why">OEM 客户问得最多的两个数字。</p>
+  <p class="hint">两个数字：开一套模多少钱、打样要几天。</p>
+  <input id="A8" data-field="A8" data-q="开模费与打样周期" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A9</span>
+  <label for="A9">配件和替换锁芯</label>
+  <p class="why">工程客户要考虑五年后怎么维修。</p>
+  <p class="hint">后期能不能单独买？哪些件常备？</p>
+  <input id="A9" data-field="A9" data-q="配件和替换锁芯" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">A10</span>
+  <label for="A10">真实项目（客户名可以隐去）</label>
+  <p class="why">我们是 OEM 代工，客户名不公开是行业常态，但「哪种楼用过哪些型号」可以说。</p>
+  <p class="hint">保留国家 / 建筑类型 / 用了哪些型号即可，例：智利，连锁酒店 120 间房，用 607 SSET。</p>
+  <textarea id="A10" data-field="A10" data-q="真实项目（客户名可以隐去）" rows="3"></textarea>
+</div>
+
+<h2>第二部分 · 8 个表面处理代码</h2>
+<p class="note">
+  另外 15 个代码（PB / AB / AC / SN / SC / CP / SB / SP / BN / MB / SS / SSS / PSS / NP / ORB）
+  已经自动展开成英文全称并译成西班牙语。下面这 8 个查不到出处，现在按原样显示在网站上 —— 请写出英文全称。
+</p>
+<table>
+  <tr><th style="width:80px">代码</th><th>英文全称</th><th>中文</th></tr>
+  <tr><td class="m">BP</td>
+    <td class="cell"><input data-field="B-BP-en" data-q="表面代码 BP 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-BP-zh" data-q="表面代码 BP 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">NB</td>
+    <td class="cell"><input data-field="B-NB-en" data-q="表面代码 NB 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-NB-zh" data-q="表面代码 NB 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">CB</td>
+    <td class="cell"><input data-field="B-CB-en" data-q="表面代码 CB 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-CB-zh" data-q="表面代码 CB 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">BC</td>
+    <td class="cell"><input data-field="B-BC-en" data-q="表面代码 BC 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-BC-zh" data-q="表面代码 BC 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">GP</td>
+    <td class="cell"><input data-field="B-GP-en" data-q="表面代码 GP 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-GP-zh" data-q="表面代码 GP 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">BRN</td>
+    <td class="cell"><input data-field="B-BRN-en" data-q="表面代码 BRN 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-BRN-zh" data-q="表面代码 BRN 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">N</td>
+    <td class="cell"><input data-field="B-N-en" data-q="表面代码 N 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-N-zh" data-q="表面代码 N 的中文" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">PVD</td>
+    <td class="cell"><input data-field="B-PVD-en" data-q="表面代码 PVD 的英文全称" type="text" autocomplete="off"></td>
+    <td class="cell"><input data-field="B-PVD-zh" data-q="表面代码 PVD 的中文" type="text" autocomplete="off"></td></tr>
+</table>
+
+<h2>第三部分 · 分品类问答</h2>
+<p class="note">
+  下面每一条都是买家真的会问、而网站现在答不上来的问题。一条答一次，整个品类通用；
+  某几个型号特殊，就在答案里注明型号。「目前 X/Y」是这一项已经写了的型号数。
+</p>
+<section class="cat" id="cat-panic-exit-devices">
+  <h3>逃生推杠（Panic Exit Devices） <span class="badge">全缺 4 · 半缺 5</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-panic-exit-devices-1</span>
+  <label for="C-panic-exit-devices-1">哪些逃生推杠能用在防火门上？</label>
+  
+  <p class="hint">写型号，或写「全部 / 都不能」。不确定就留空。 · 目前 31/42 个型号有</p>
+  <input id="C-panic-exit-devices-1" data-field="C-panic-exit-devices-1" data-q="哪些逃生推杠能用在防火门上？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-panic-exit-devices-2</span>
+  <label for="C-panic-exit-devices-2">哪些型号是双开门（对开门）用的？单门的又是哪些？</label>
+  
+  <p class="hint">目前 7/42 个型号有</p>
+  <input id="C-panic-exit-devices-2" data-field="C-panic-exit-devices-2" data-q="哪些型号是双开门（对开门）用的？单门的又是哪些？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-panic-exit-devices-3</span>
+  <label for="C-panic-exit-devices-3">推杠（push bar）和触压杆（touch bar）有什么区别？我们各有哪些型号？</label>
+  
+  <p class="hint">这是这个品类买家问得最多的对比。两三句话说明白就够。</p>
+  <input id="C-panic-exit-devices-3" data-field="C-panic-exit-devices-3" data-q="推杠（push bar）和触压杆（touch bar）有什么区别？我们各有哪些型号？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-panic-exit-devices-4</span>
+  <label for="C-panic-exit-devices-4">外面能不能用钥匙打开？带外执手的是哪些型号？</label>
+  
+  <p class="hint">目前 42 个型号一条都没写</p>
+  <input id="C-panic-exit-devices-4" data-field="C-panic-exit-devices-4" data-q="外面能不能用钥匙打开？带外执手的是哪些型号？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-panic-exit-devices-5</span>
+  <label for="C-panic-exit-devices-5">有没有带报警的版本？</label>
+  
+  <p class="hint">目前 2/42 个型号有</p>
+  <input id="C-panic-exit-devices-5" data-field="C-panic-exit-devices-5" data-q="有没有带报警的版本？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-panic-exit-devices-6</span>
+  <label for="C-panic-exit-devices-6">推杠适配的门宽范围是多少？</label>
+  
+  <p class="hint">例：700–1100mm。不同长度的杆分别写。 · 目前 42 个型号一条都没写</p>
+  <input id="C-panic-exit-devices-6" data-field="C-panic-exit-devices-6" data-q="推杠适配的门宽范围是多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-panic-exit-devices-7</span>
+  <label for="C-panic-exit-devices-7">有没有上下同时锁的（两点 / 三点锁）版本？</label>
+  
+  <p class="hint">目前 7/42 个型号有</p>
+  <input id="C-panic-exit-devices-7" data-field="C-panic-exit-devices-7" data-q="有没有上下同时锁的（两点 / 三点锁）版本？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-panic-exit-devices-8</span>
+  <label for="C-panic-exit-devices-8">能不能用在冷库或室外？做过温度范围吗？</label>
+  
+  <p class="hint">目前 31/42 个型号有</p>
+  <input id="C-panic-exit-devices-8" data-field="C-panic-exit-devices-8" data-q="能不能用在冷库或室外？做过温度范围吗？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-panic-exit-devices-9</span>
+  <label for="C-panic-exit-devices-9">外执手什么材质？有没有不锈钢的？</label>
+  
+  <p class="hint">目前 42 个型号一条都没写</p>
+  <input id="C-panic-exit-devices-9" data-field="C-panic-exit-devices-9" data-q="外执手什么材质？有没有不锈钢的？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-night-latches-rim-locks">
+  <h3>外装门锁 / 弹子锁（Night Latches &amp; Rim Locks） <span class="badge">全缺 1 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-night-latches-rim-locks-1</span>
+  <label for="C-night-latches-rim-locks-1">锁壳尺寸多大？</label>
+  
+  <p class="hint">目前 2/22 个型号有</p>
+  <input id="C-night-latches-rim-locks-1" data-field="C-night-latches-rim-locks-1" data-q="锁壳尺寸多大？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-night-latches-rim-locks-2</span>
+  <label for="C-night-latches-rim-locks-2">配几条钥匙？</label>
+  
+  <p class="hint">目前 4/22 个型号有</p>
+  <input id="C-night-latches-rim-locks-2" data-field="C-night-latches-rim-locks-2" data-q="配几条钥匙？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-night-latches-rim-locks-3</span>
+  <label for="C-night-latches-rim-locks-3">锁芯能不能换成欧标的？</label>
+  
+  <p class="hint">目前 9/22 个型号有</p>
+  <input id="C-night-latches-rim-locks-3" data-field="C-night-latches-rim-locks-3" data-q="锁芯能不能换成欧标的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-night-latches-rim-locks-4</span>
+  <label for="C-night-latches-rim-locks-4">从门边到锁孔的距离（backset）？</label>
+  
+  <p class="hint">目前 16/22 个型号有</p>
+  <input id="C-night-latches-rim-locks-4" data-field="C-night-latches-rim-locks-4" data-q="从门边到锁孔的距离（backset）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-night-latches-rim-locks-5</span>
+  <label for="C-night-latches-rim-locks-5">整栋公寓能不能做一样的钥匙（keyed alike）？</label>
+  
+  <p class="hint">目前 22 个型号一条都没写</p>
+  <input id="C-night-latches-rim-locks-5" data-field="C-night-latches-rim-locks-5" data-q="整栋公寓能不能做一样的钥匙（keyed alike）？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-stainless-steel-handles">
+  <h3>不锈钢拉手（Stainless Steel Handles） <span class="badge">全缺 7 · 半缺 2</span></h3>
+  
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-1</span>
+  <label for="C-stainless-steel-handles-1">拉手总长和孔距分别多少？</label>
+  
+  <p class="hint">目前 35 个型号一条都没写</p>
+  <input id="C-stainless-steel-handles-1" data-field="C-stainless-steel-handles-1" data-q="拉手总长和孔距分别多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-2</span>
+  <label for="C-stainless-steel-handles-2">管径多少？</label>
+  
+  <p class="hint">例：Φ25、Φ32。 · 目前 35 个型号一条都没写</p>
+  <input id="C-stainless-steel-handles-2" data-field="C-stainless-steel-handles-2" data-q="管径多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-3</span>
+  <label for="C-stainless-steel-handles-3">能不能装在玻璃门上？适配玻璃厚度多少？</label>
+  
+  <p class="hint">目前 35 个型号一条都没写</p>
+  <input id="C-stainless-steel-handles-3" data-field="C-stainless-steel-handles-3" data-q="能不能装在玻璃门上？适配玻璃厚度多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-stainless-steel-handles-4</span>
+  <label for="C-stainless-steel-handles-4">是对拉（双面）还是单面？</label>
+  
+  <p class="hint">目前 1/35 个型号有</p>
+  <input id="C-stainless-steel-handles-4" data-field="C-stainless-steel-handles-4" data-q="是对拉（双面）还是单面？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-stainless-steel-handles-5</span>
+  <label for="C-stainless-steel-handles-5">拉丝还是镜面？</label>
+  
+  <p class="hint">目前 4/35 个型号有</p>
+  <input id="C-stainless-steel-handles-5" data-field="C-stainless-steel-handles-5" data-q="拉丝还是镜面？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-6</span>
+  <label for="C-stainless-steel-handles-6">拉手离门面多远（standoff）？</label>
+  
+  <p class="hint">目前 35 个型号一条都没写</p>
+  <input id="C-stainless-steel-handles-6" data-field="C-stainless-steel-handles-6" data-q="拉手离门面多远（standoff）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-7</span>
+  <label for="C-stainless-steel-handles-7">泳池或海边建筑会不会腐蚀？用的是哪一级不锈钢？</label>
+  
+  <p class="hint">这 35 个产品正是最需要这句话的地方。</p>
+  <input id="C-stainless-steel-handles-7" data-field="C-stainless-steel-handles-7" data-q="泳池或海边建筑会不会腐蚀？用的是哪一级不锈钢？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-8</span>
+  <label for="C-stainless-steel-handles-8">配不配安装配件？</label>
+  
+  
+  <input id="C-stainless-steel-handles-8" data-field="C-stainless-steel-handles-8" data-q="配不配安装配件？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-stainless-steel-handles-9</span>
+  <label for="C-stainless-steel-handles-9">能不能按项目做非标长度？起订量多少？</label>
+  
+  <p class="hint">目前 35 个型号一条都没写</p>
+  <input id="C-stainless-steel-handles-9" data-field="C-stainless-steel-handles-9" data-q="能不能按项目做非标长度？起订量多少？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-lever-handles">
+  <h3>执手锁（Lever Handles） <span class="badge">全缺 5 · 半缺 1</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-lever-handles-1</span>
+  <label for="C-lever-handles-1">是实心不锈钢，还是锌合金加涂层？</label>
+  
+  <p class="hint">目前 35/40 个型号有</p>
+  <input id="C-lever-handles-1" data-field="C-lever-handles-1" data-q="是实心不锈钢，还是锌合金加涂层？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lever-handles-2</span>
+  <label for="C-lever-handles-2">执手（把手）多长？</label>
+  
+  <p class="hint">目前 40 个型号一条都没写</p>
+  <input id="C-lever-handles-2" data-field="C-lever-handles-2" data-q="执手（把手）多长？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lever-handles-3</span>
+  <label for="C-lever-handles-3">座盘（rose）直径多少？</label>
+  
+  <p class="hint">目前 40 个型号一条都没写</p>
+  <input id="C-lever-handles-3" data-field="C-lever-handles-3" data-q="座盘（rose）直径多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lever-handles-4</span>
+  <label for="C-lever-handles-4">哑黑（matt black）会不会掉色？做过什么测试？</label>
+  
+  <p class="hint">哑黑是买家最不放心的一种表面。做过盐雾或耐磨就写小时数，没做过就留空。</p>
+  <input id="C-lever-handles-4" data-field="C-lever-handles-4" data-q="哑黑（matt black）会不会掉色？做过什么测试？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lever-handles-5</span>
+  <label for="C-lever-handles-5">配不配方钢和螺丝？</label>
+  
+  <p class="hint">目前 40 个型号一条都没写</p>
+  <input id="C-lever-handles-5" data-field="C-lever-handles-5" data-q="配不配方钢和螺丝？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lever-handles-6</span>
+  <label for="C-lever-handles-6">执手和锁体能一起下单吗？哪个执手配哪个锁体？</label>
+  
+  <p class="hint">写配套关系即可。</p>
+  <input id="C-lever-handles-6" data-field="C-lever-handles-6" data-q="执手和锁体能一起下单吗？哪个执手配哪个锁体？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-knob-locks">
+  <h3>球形锁（Knob Locks） <span class="badge">全缺 3 · 半缺 6</span></h3>
+  
+<div class="f" data-pri="1">
+  <span class="qid">C-knob-locks-1</span>
+  <label for="C-knob-locks-1">重型和轻型球形锁到底差在哪？</label>
+  
+  <p class="hint">网站上只有筛选标签，没有一句话解释。用买家听得懂的话写。</p>
+  <input id="C-knob-locks-1" data-field="C-knob-locks-1" data-q="重型和轻型球形锁到底差在哪？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-2</span>
+  <label for="C-knob-locks-2">执手锁 / 通道 / 卫生间三种功能，各是哪些型号？</label>
+  
+  <p class="hint">目前 52/67 个型号有</p>
+  <input id="C-knob-locks-2" data-field="C-knob-locks-2" data-q="执手锁 / 通道 / 卫生间三种功能，各是哪些型号？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-3</span>
+  <label for="C-knob-locks-3">球形锁的 backset 是多少？</label>
+  
+  <p class="hint">例：60mm / 70mm。 · 目前 30/67 个型号有</p>
+  <input id="C-knob-locks-3" data-field="C-knob-locks-3" data-q="球形锁的 backset 是多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-knob-locks-4</span>
+  <label for="C-knob-locks-4">门板开孔（cross bore）直径多少？</label>
+  
+  <p class="hint">例：54mm。 · 目前 67 个型号一条都没写</p>
+  <input id="C-knob-locks-4" data-field="C-knob-locks-4" data-q="门板开孔（cross bore）直径多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-5</span>
+  <label for="C-knob-locks-5">能不能和整栋楼做总钥匙（master key）？</label>
+  
+  <p class="hint">目前 36/67 个型号有</p>
+  <input id="C-knob-locks-5" data-field="C-knob-locks-5" data-q="能不能和整栋楼做总钥匙（master key）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-6</span>
+  <label for="C-knob-locks-6">球形锁适配门厚？</label>
+  
+  <p class="hint">目前 34/67 个型号有</p>
+  <input id="C-knob-locks-6" data-field="C-knob-locks-6" data-q="球形锁适配门厚？" type="text" autocomplete="off">
+</div>
+<div class="f tech" data-pri="9"><span class="qid">技术侧</span><label>是不是 ANSI Grade 1 / 2 / 3？</label>
+  <p class="hint">甲方已确认我们没有 ANSI/BHMA 认证，技术侧会写一句诚实说明。你不用填。</p></div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-8</span>
+  <label for="C-knob-locks-8">每把锁配几条钥匙？</label>
+  
+  <p class="hint">目前 5/67 个型号有</p>
+  <input id="C-knob-locks-8" data-field="C-knob-locks-8" data-q="每把锁配几条钥匙？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-knob-locks-9</span>
+  <label for="C-knob-locks-9">锁舌是不是 60 / 70mm 可调？</label>
+  
+  <p class="hint">目前 42/67 个型号有</p>
+  <input id="C-knob-locks-9" data-field="C-knob-locks-9" data-q="锁舌是不是 60 / 70mm 可调？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-bathroom-accessories">
+  <h3>卫浴配件（Bathroom Accessories） <span class="badge">全缺 3 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-bathroom-accessories-1</span>
+  <label for="C-bathroom-accessories-1">尺寸多少？</label>
+  
+  <p class="hint">目前 15/45 个型号有</p>
+  <input id="C-bathroom-accessories-1" data-field="C-bathroom-accessories-1" data-q="尺寸多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-bathroom-accessories-2</span>
+  <label for="C-bathroom-accessories-2">是不是壁挂？配不配膨胀螺丝？</label>
+  
+  <p class="hint">目前 6/45 个型号有</p>
+  <input id="C-bathroom-accessories-2" data-field="C-bathroom-accessories-2" data-q="是不是壁挂？配不配膨胀螺丝？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-bathroom-accessories-3</span>
+  <label for="C-bathroom-accessories-3">潮湿浴室里表面会不会坏？做过盐雾测试吗？多少小时？</label>
+  
+  <p class="hint">这 45 个产品的品类定义就是潮湿环境，这句话必须有。</p>
+  <input id="C-bathroom-accessories-3" data-field="C-bathroom-accessories-3" data-q="潮湿浴室里表面会不会坏？做过盐雾测试吗？多少小时？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-bathroom-accessories-4</span>
+  <label for="C-bathroom-accessories-4">有没有配套系列（毛巾杆 + 挂钩 + 纸巾架）？系列叫什么名字？</label>
+  
+  <p class="hint">目录里明显有成套的，只是网站没归组。</p>
+  <input id="C-bathroom-accessories-4" data-field="C-bathroom-accessories-4" data-q="有没有配套系列（毛巾杆 + 挂钩 + 纸巾架）？系列叫什么名字？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-bathroom-accessories-5</span>
+  <label for="C-bathroom-accessories-5">暗装还是明装螺丝？</label>
+  
+  <p class="hint">目前 6/45 个型号有</p>
+  <input id="C-bathroom-accessories-5" data-field="C-bathroom-accessories-5" data-q="暗装还是明装螺丝？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-bathroom-accessories-6</span>
+  <label for="C-bathroom-accessories-6">离墙出挑多少？</label>
+  
+  <p class="hint">目前 6/45 个型号有</p>
+  <input id="C-bathroom-accessories-6" data-field="C-bathroom-accessories-6" data-q="离墙出挑多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-bathroom-accessories-7</span>
+  <label for="C-bathroom-accessories-7">有没有无障碍扶手？承重多少？</label>
+  
+  <p class="hint">这是招标里的独立条目，我们目前一个字都没说。</p>
+  <input id="C-bathroom-accessories-7" data-field="C-bathroom-accessories-7" data-q="有没有无障碍扶手？承重多少？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-brass-steel-hinges">
+  <h3>铰链（Brass &amp; Steel Door Hinges） <span class="badge">全缺 5 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-brass-steel-hinges-1</span>
+  <label for="C-brass-steel-hinges-1">铰链有哪些尺寸？</label>
+  
+  <p class="hint">例：4 寸、5 寸。 · 目前 16/26 个型号有</p>
+  <input id="C-brass-steel-hinges-1" data-field="C-brass-steel-hinges-1" data-q="铰链有哪些尺寸？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-brass-steel-hinges-2</span>
+  <label for="C-brass-steel-hinges-2">页片厚度多少？</label>
+  
+  <p class="hint">目前 8/26 个型号有</p>
+  <input id="C-brass-steel-hinges-2" data-field="C-brass-steel-hinges-2" data-q="页片厚度多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-brass-steel-hinges-3</span>
+  <label for="C-brass-steel-hinges-3">轴承的还是普通的？</label>
+  
+  <p class="hint">目前 6/26 个型号有</p>
+  <input id="C-brass-steel-hinges-3" data-field="C-brass-steel-hinges-3" data-q="轴承的还是普通的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-brass-steel-hinges-4</span>
+  <label for="C-brass-steel-hinges-4">一扇门要用几个铰链？</label>
+  
+  <p class="hint">一段选型建议即可，AI 很容易引用这种内容。</p>
+  <input id="C-brass-steel-hinges-4" data-field="C-brass-steel-hinges-4" data-q="一扇门要用几个铰链？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-brass-steel-hinges-5</span>
+  <label for="C-brass-steel-hinges-5">三个铰链能承多重的门？</label>
+  
+  
+  <input id="C-brass-steel-hinges-5" data-field="C-brass-steel-hinges-5" data-q="三个铰链能承多重的门？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-brass-steel-hinges-6</span>
+  <label for="C-brass-steel-hinges-6">是不是防火级别的？</label>
+  
+  <p class="hint">目前 8/26 个型号有</p>
+  <input id="C-brass-steel-hinges-6" data-field="C-brass-steel-hinges-6" data-q="是不是防火级别的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-brass-steel-hinges-7</span>
+  <label for="C-brass-steel-hinges-7">配不配螺丝？</label>
+  
+  
+  <input id="C-brass-steel-hinges-7" data-field="C-brass-steel-hinges-7" data-q="配不配螺丝？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-brass-steel-hinges-8</span>
+  <label for="C-brass-steel-hinges-8">按对卖还是按只卖？</label>
+  
+  <p class="hint">这一项直接决定报价差一倍，必须写清楚。</p>
+  <input id="C-brass-steel-hinges-8" data-field="C-brass-steel-hinges-8" data-q="按对卖还是按只卖？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-brass-steel-hinges-9</span>
+  <label for="C-brass-steel-hinges-9">不锈钢铰链在海边会不会生锈？是 304、201 还是 316？</label>
+  
+  <p class="hint">沿海项目一定问。按型号或按系列写都行。</p>
+  <input id="C-brass-steel-hinges-9" data-field="C-brass-steel-hinges-9" data-q="不锈钢铰链在海边会不会生锈？是 304、201 还是 316？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-deadbolts">
+  <h3>单锁舌（Deadbolts） <span class="badge">全缺 4 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-deadbolts-1</span>
+  <label for="C-deadbolts-1">单面还是双面钥匙？</label>
+  
+  <p class="hint">目前 1/7 个型号有</p>
+  <input id="C-deadbolts-1" data-field="C-deadbolts-1" data-q="单面还是双面钥匙？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-deadbolts-2</span>
+  <label for="C-deadbolts-2">单锁舌的 backset 多少？</label>
+  
+  <p class="hint">目前 6/7 个型号有</p>
+  <input id="C-deadbolts-2" data-field="C-deadbolts-2" data-q="单锁舌的 backset 多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-deadbolts-3</span>
+  <label for="C-deadbolts-3">单锁舌适配门厚？</label>
+  
+  <p class="hint">目前 6/7 个型号有</p>
+  <input id="C-deadbolts-3" data-field="C-deadbolts-3" data-q="单锁舌适配门厚？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-deadbolts-4</span>
+  <label for="C-deadbolts-4">锁舌有没有防锯芯？</label>
+  
+  <p class="hint">这是单锁舌存在的意义所在。</p>
+  <input id="C-deadbolts-4" data-field="C-deadbolts-4" data-q="锁舌有没有防锯芯？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-deadbolts-5</span>
+  <label for="C-deadbolts-5">锁扣片有没有加强？</label>
+  
+  <p class="hint">目前 7 个型号一条都没写</p>
+  <input id="C-deadbolts-5" data-field="C-deadbolts-5" data-q="锁扣片有没有加强？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-deadbolts-6</span>
+  <label for="C-deadbolts-6">有哪些表面处理？</label>
+  
+  <p class="hint">目前 5/7 个型号有</p>
+  <input id="C-deadbolts-6" data-field="C-deadbolts-6" data-q="有哪些表面处理？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-deadbolts-7</span>
+  <label for="C-deadbolts-7">适不适配标准 54mm 开孔？</label>
+  
+  <p class="hint">目前 7 个型号一条都没写</p>
+  <input id="C-deadbolts-7" data-field="C-deadbolts-7" data-q="适不适配标准 54mm 开孔？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-deadbolts-8</span>
+  <label for="C-deadbolts-8">单锁舌只有 7 个型号，这是全部吗？</label>
+  
+  <p class="hint">还有型号没上网站就把型号列出来；是全部就写「全部」。</p>
+  <input id="C-deadbolts-8" data-field="C-deadbolts-8" data-q="单锁舌只有 7 个型号，这是全部吗？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-door-closers">
+  <h3>闭门器 / 地弹簧（Door Closers） <span class="badge">全缺 8 · 半缺 2</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-door-closers-1</span>
+  <label for="C-door-closers-1">适配门重和门宽是多少？</label>
+  
+  <p class="hint">目前 6/9 个型号有</p>
+  <input id="C-door-closers-1" data-field="C-door-closers-1" data-q="适配门重和门宽是多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-2</span>
+  <label for="C-door-closers-2">关门速度可不可调？几段调节？</label>
+  
+  <p class="hint">目前 9 个型号一条都没写</p>
+  <input id="C-door-closers-2" data-field="C-door-closers-2" data-q="关门速度可不可调？几段调节？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-3</span>
+  <label for="C-door-closers-3">有没有定位（hold-open）功能？</label>
+  
+  <p class="hint">目前 9 个型号一条都没写</p>
+  <input id="C-door-closers-3" data-field="C-door-closers-3" data-q="有没有定位（hold-open）功能？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-4</span>
+  <label for="C-door-closers-4">哪些是地弹簧，哪些是闭门器？</label>
+  
+  <p class="hint">买家连这个都分不出来——一个都没标。 · 目前 9 个型号一条都没写</p>
+  <input id="C-door-closers-4" data-field="C-door-closers-4" data-q="哪些是地弹簧，哪些是闭门器？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-door-closers-5</span>
+  <label for="C-door-closers-5">最大开启角度？</label>
+  
+  <p class="hint">目前 6/9 个型号有</p>
+  <input id="C-door-closers-5" data-field="C-door-closers-5" data-q="最大开启角度？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-6</span>
+  <label for="C-door-closers-6">能不能用在防火门上？</label>
+  
+  <p class="hint">目前 9 个型号一条都没写</p>
+  <input id="C-door-closers-6" data-field="C-door-closers-6" data-q="能不能用在防火门上？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-7</span>
+  <label for="C-door-closers-7">高温地区会不会漏油？工作温度范围多少？</label>
+  
+  <p class="hint">中东和拉美买家专门问这个。</p>
+  <input id="C-door-closers-7" data-field="C-door-closers-7" data-q="高温地区会不会漏油？工作温度范围多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-8</span>
+  <label for="C-door-closers-8">闭门器的力度等级是几级（EN 1–7）？</label>
+  
+  <p class="hint">力度等级请填。EN 1154 认证我们目前没有（之前那份报告属于别的公司，已撤下），认证栏留空即可。</p>
+  <input id="C-door-closers-8" data-field="C-door-closers-8" data-q="闭门器的力度等级是几级（EN 1–7）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-9</span>
+  <label for="C-door-closers-9">适不适合玻璃门？</label>
+  
+  <p class="hint">目前 9 个型号一条都没写</p>
+  <input id="C-door-closers-9" data-field="C-door-closers-9" data-q="适不适合玻璃门？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-door-closers-10</span>
+  <label for="C-door-closers-10">一套里包含什么？连杆、盖板、装配片都有吗？</label>
+  
+  
+  <input id="C-door-closers-10" data-field="C-door-closers-10" data-q="一套里包含什么？连杆、盖板、装配片都有吗？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-grip-handle-sets">
+  <h3>面板执手套装（Grip Handle Sets） <span class="badge">全缺 5 · 半缺 1</span></h3>
+  
+<div class="f" data-pri="1">
+  <span class="qid">C-grip-handle-sets-1</span>
+  <label for="C-grip-handle-sets-1">面板孔距（fixing centres）多少？</label>
+  
+  <p class="hint">目前 11 个型号一条都没写</p>
+  <input id="C-grip-handle-sets-1" data-field="C-grip-handle-sets-1" data-q="面板孔距（fixing centres）多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-grip-handle-sets-2</span>
+  <label for="C-grip-handle-sets-2">一套里含不含锁体？还是只有执手面板？</label>
+  
+  <p class="hint">这个品类最常被下错单，就是因为这一项。</p>
+  <input id="C-grip-handle-sets-2" data-field="C-grip-handle-sets-2" data-q="一套里含不含锁体？还是只有执手面板？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-grip-handle-sets-3</span>
+  <label for="C-grip-handle-sets-3">是不是入户门用的？</label>
+  
+  <p class="hint">目前 1/11 个型号有</p>
+  <input id="C-grip-handle-sets-3" data-field="C-grip-handle-sets-3" data-q="是不是入户门用的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-grip-handle-sets-4</span>
+  <label for="C-grip-handle-sets-4">能不能装欧标锁芯？</label>
+  
+  <p class="hint">目前 11 个型号一条都没写</p>
+  <input id="C-grip-handle-sets-4" data-field="C-grip-handle-sets-4" data-q="能不能装欧标锁芯？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-grip-handle-sets-5</span>
+  <label for="C-grip-handle-sets-5">内侧能不能配一个同款执手？配哪个型号？</label>
+  
+  
+  <input id="C-grip-handle-sets-5" data-field="C-grip-handle-sets-5" data-q="内侧能不能配一个同款执手？配哪个型号？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-grip-handle-sets-6</span>
+  <label for="C-grip-handle-sets-6">面板执手套装只有 11 个型号，还有更多吗？</label>
+  
+  <p class="hint">有没上网站的就列型号。</p>
+  <input id="C-grip-handle-sets-6" data-field="C-grip-handle-sets-6" data-q="面板执手套装只有 11 个型号，还有更多吗？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-glass-door-accessories">
+  <h3>玻璃门配件（Glass Door Accessories） <span class="badge">全缺 6 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-glass-door-accessories-1</span>
+  <label for="C-glass-door-accessories-1">驳接件适配多厚的玻璃？10mm？12mm？</label>
+  
+  <p class="hint">目前 9/20 个型号有</p>
+  <input id="C-glass-door-accessories-1" data-field="C-glass-door-accessories-1" data-q="驳接件适配多厚的玻璃？10mm？12mm？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-2</span>
+  <label for="C-glass-door-accessories-2">用这些驳接件是不是必须配地弹簧？</label>
+  
+  <p class="hint">两样我们都卖，但网站没说它们要一起用。</p>
+  <input id="C-glass-door-accessories-2" data-field="C-glass-door-accessories-2" data-q="用这些驳接件是不是必须配地弹簧？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-glass-door-accessories-3</span>
+  <label for="C-glass-door-accessories-3">夹具是不锈钢，还是铝件加盖板？</label>
+  
+  <p class="hint">目前 17/20 个型号有</p>
+  <input id="C-glass-door-accessories-3" data-field="C-glass-door-accessories-3" data-q="夹具是不锈钢，还是铝件加盖板？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-4</span>
+  <label for="C-glass-door-accessories-4">上夹、下夹、转角夹——做一扇门要哪几个？</label>
+  
+  <p class="hint">一扇无框玻璃门需要固定的组合，写清楚怎么配。</p>
+  <input id="C-glass-door-accessories-4" data-field="C-glass-door-accessories-4" data-q="上夹、下夹、转角夹——做一扇门要哪几个？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-glass-door-accessories-5</span>
+  <label for="C-glass-door-accessories-5">玻璃门拉手多长？</label>
+  
+  <p class="hint">目前 5/20 个型号有</p>
+  <input id="C-glass-door-accessories-5" data-field="C-glass-door-accessories-5" data-q="玻璃门拉手多长？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-6</span>
+  <label for="C-glass-door-accessories-6">配不配玻璃胶垫？</label>
+  
+  
+  <input id="C-glass-door-accessories-6" data-field="C-glass-door-accessories-6" data-q="配不配玻璃胶垫？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-7</span>
+  <label for="C-glass-door-accessories-7">玻璃门夹能不能带锁？</label>
+  
+  <p class="hint">目前 20 个型号一条都没写</p>
+  <input id="C-glass-door-accessories-7" data-field="C-glass-door-accessories-7" data-q="玻璃门夹能不能带锁？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-glass-door-accessories-8</span>
+  <label for="C-glass-door-accessories-8">有哪些表面处理？</label>
+  
+  <p class="hint">目前 12/20 个型号有</p>
+  <input id="C-glass-door-accessories-8" data-field="C-glass-door-accessories-8" data-q="有哪些表面处理？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-9</span>
+  <label for="C-glass-door-accessories-9">商铺门这种高频使用扛得住吗？做过多少次寿命测试？</label>
+  
+  <p class="hint">目前 20 个型号一条都没写</p>
+  <input id="C-glass-door-accessories-9" data-field="C-glass-door-accessories-9" data-q="商铺门这种高频使用扛得住吗？做过多少次寿命测试？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-glass-door-accessories-10</span>
+  <label for="C-glass-door-accessories-10">能不能整门一套打包供货？一套包含哪些件？</label>
+  
+  <p class="hint">买家想要报价单上一行，而不是八行。</p>
+  <input id="C-glass-door-accessories-10" data-field="C-glass-door-accessories-10" data-q="能不能整门一套打包供货？一套包含哪些件？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-hardware-accessories">
+  <h3>五金配件（Hardware Accessories） <span class="badge">全缺 3 · 半缺 7</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-1</span>
+  <label for="C-hardware-accessories-1">猫眼视角多少度？</label>
+  
+  <p class="hint">目前 7/50 个型号有</p>
+  <input id="C-hardware-accessories-1" data-field="C-hardware-accessories-1" data-q="猫眼视角多少度？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-2</span>
+  <label for="C-hardware-accessories-2">猫眼适配门厚？</label>
+  
+  <p class="hint">目前 3/50 个型号有</p>
+  <input id="C-hardware-accessories-2" data-field="C-hardware-accessories-2" data-q="猫眼适配门厚？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-3</span>
+  <label for="C-hardware-accessories-3">插销多长？</label>
+  
+  <p class="hint">目前 13/50 个型号有</p>
+  <input id="C-hardware-accessories-3" data-field="C-hardware-accessories-3" data-q="插销多长？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-4</span>
+  <label for="C-hardware-accessories-4">门吸装地上还是墙上？</label>
+  
+  <p class="hint">目前 2/50 个型号有</p>
+  <input id="C-hardware-accessories-4" data-field="C-hardware-accessories-4" data-q="门吸装地上还是墙上？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-5</span>
+  <label for="C-hardware-accessories-5">有没有电锁用的过线盒（power transfer）？</label>
+  
+  <p class="hint">目前 14/50 个型号有</p>
+  <input id="C-hardware-accessories-5" data-field="C-hardware-accessories-5" data-q="有没有电锁用的过线盒（power transfer）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-6</span>
+  <label for="C-hardware-accessories-6">指示锁是不是「有人 / 无人」那种卫生间用的？</label>
+  
+  <p class="hint">目前 14/50 个型号有</p>
+  <input id="C-hardware-accessories-6" data-field="C-hardware-accessories-6" data-q="指示锁是不是「有人 / 无人」那种卫生间用的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-hardware-accessories-7</span>
+  <label for="C-hardware-accessories-7">门牌号是不锈钢的吗？多大尺寸？</label>
+  
+  <p class="hint">目前 9/50 个型号有</p>
+  <input id="C-hardware-accessories-7" data-field="C-hardware-accessories-7" data-q="门牌号是不锈钢的吗？多大尺寸？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-hardware-accessories-8</span>
+  <label for="C-hardware-accessories-8">防盗链是链条式还是杆式？</label>
+  
+  <p class="hint">目前 50 个型号一条都没写</p>
+  <input id="C-hardware-accessories-8" data-field="C-hardware-accessories-8" data-q="防盗链是链条式还是杆式？" type="text" autocomplete="off">
+</div>
+<div class="f tech" data-pri="9"><span class="qid">技术侧</span><label>这个品类下有五十种不同的东西，买家怎么找？</label>
+  <p class="hint">网站导航问题，技术侧处理。你不用填。</p></div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-hardware-accessories-10</span>
+  <label for="C-hardware-accessories-10">我们做不做磁碰珠和门缝密封条？</label>
+  
+  <p class="hint">写「做」或「不做」都有用——买家需要知道我们的范围边界。</p>
+  <input id="C-hardware-accessories-10" data-field="C-hardware-accessories-10" data-q="我们做不做磁碰珠和门缝密封条？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-lock-cases">
+  <h3>锁体（Lock Cases） <span class="badge">全缺 5 · 半缺 5</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cases-1</span>
+  <label for="C-lock-cases-1">锁体的锁舌中心距（backset）有哪些规格？</label>
+  
+  <p class="hint">全系列统一的话，写「统一 XXmm」即可。 · 目前 32/45 个型号有</p>
+  <input id="C-lock-cases-1" data-field="C-lock-cases-1" data-q="锁体的锁舌中心距（backset）有哪些规格？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cases-2</span>
+  <label for="C-lock-cases-2">执手孔到锁芯孔的中心距是多少？</label>
+  
+  <p class="hint">例：72mm、85mm。 · 目前 29/45 个型号有</p>
+  <input id="C-lock-cases-2" data-field="C-lock-cases-2" data-q="执手孔到锁芯孔的中心距是多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cases-3</span>
+  <label for="C-lock-cases-3">配不配欧标锁芯（euro profile）？</label>
+  
+  <p class="hint">目前 11/45 个型号有</p>
+  <input id="C-lock-cases-3" data-field="C-lock-cases-3" data-q="配不配欧标锁芯（euro profile）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cases-4</span>
+  <label for="C-lock-cases-4">方舌伸出多长？</label>
+  
+  <p class="hint">例：20mm；双舌的写双舌。 · 目前 45 个型号一条都没写</p>
+  <input id="C-lock-cases-4" data-field="C-lock-cases-4" data-q="方舌伸出多长？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cases-5</span>
+  <label for="C-lock-cases-5">锁体适配门厚多少？</label>
+  
+  <p class="hint">目前 45 个型号一条都没写</p>
+  <input id="C-lock-cases-5" data-field="C-lock-cases-5" data-q="锁体适配门厚多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cases-6</span>
+  <label for="C-lock-cases-6">分不分左右手？还是通用可换向？</label>
+  
+  <p class="hint">目前 2/45 个型号有</p>
+  <input id="C-lock-cases-6" data-field="C-lock-cases-6" data-q="分不分左右手？还是通用可换向？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cases-7</span>
+  <label for="C-lock-cases-7">方钢（spindle）多大？8mm 方还是别的？</label>
+  
+  <p class="hint">目前 45 个型号一条都没写</p>
+  <input id="C-lock-cases-7" data-field="C-lock-cases-7" data-q="方钢（spindle）多大？8mm 方还是别的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cases-8</span>
+  <label for="C-lock-cases-8">锁面板（forend）是不锈钢还是镀层钢？</label>
+  
+  <p class="hint">目前 28/45 个型号有</p>
+  <input id="C-lock-cases-8" data-field="C-lock-cases-8" data-q="锁面板（forend）是不锈钢还是镀层钢？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cases-9</span>
+  <label for="C-lock-cases-9">配不配锁扣片（strike plate）？</label>
+  
+  <p class="hint">目前 45 个型号一条都没写</p>
+  <input id="C-lock-cases-9" data-field="C-lock-cases-9" data-q="配不配锁扣片（strike plate）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cases-10</span>
+  <label for="C-lock-cases-10">我们的锁体能替换别的品牌吗？开孔尺寸一样的有哪些？</label>
+  
+  <p class="hint">换锁的买家第一个就问这个。有对照关系就写，没有就留空。</p>
+  <input id="C-lock-cases-10" data-field="C-lock-cases-10" data-q="我们的锁体能替换别的品牌吗？开孔尺寸一样的有哪些？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-lock-cylinders">
+  <h3>锁芯（Lock Cylinders） <span class="badge">全缺 4 · 半缺 4</span></h3>
+  
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cylinders-1</span>
+  <label for="C-lock-cylinders-1">锁芯有哪些长度？</label>
+  
+  <p class="hint">例：70mm、80mm。 · 目前 10/13 个型号有</p>
+  <input id="C-lock-cylinders-1" data-field="C-lock-cylinders-1" data-q="锁芯有哪些长度？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cylinders-2</span>
+  <label for="C-lock-cylinders-2">是欧标（euro profile）还是椭圆（oval）？</label>
+  
+  <p class="hint">目前 13 个型号一条都没写</p>
+  <input id="C-lock-cylinders-2" data-field="C-lock-cylinders-2" data-q="是欧标（euro profile）还是椭圆（oval）？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cylinders-3</span>
+  <label for="C-lock-cylinders-3">能不能做同一把钥匙（keyed alike）供货？</label>
+  
+  <p class="hint">目前 13 个型号一条都没写</p>
+  <input id="C-lock-cylinders-3" data-field="C-lock-cylinders-3" data-q="能不能做同一把钥匙（keyed alike）供货？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cylinders-4</span>
+  <label for="C-lock-cylinders-4">几个弹子？防钻、防撞匙吗？</label>
+  
+  <p class="hint">这是锁芯品类的决定性问题。有就写，没有就留空。</p>
+  <input id="C-lock-cylinders-4" data-field="C-lock-cylinders-4" data-q="几个弹子？防钻、防撞匙吗？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cylinders-5</span>
+  <label for="C-lock-cylinders-5">双面钥匙还是一面旋钮？</label>
+  
+  <p class="hint">目前 1/13 个型号有</p>
+  <input id="C-lock-cylinders-5" data-field="C-lock-cylinders-5" data-q="双面钥匙还是一面旋钮？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cylinders-6</span>
+  <label for="C-lock-cylinders-6">每个锁芯配几条钥匙？</label>
+  
+  <p class="hint">目前 1/13 个型号有</p>
+  <input id="C-lock-cylinders-6" data-field="C-lock-cylinders-6" data-q="每个锁芯配几条钥匙？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="2">
+  <span class="qid">C-lock-cylinders-7</span>
+  <label for="C-lock-cylinders-7">偏心长度有 30/40、35/45 这些吗？</label>
+  
+  <p class="hint">目前 10/13 个型号有</p>
+  <input id="C-lock-cylinders-7" data-field="C-lock-cylinders-7" data-q="偏心长度有 30/40、35/45 这些吗？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-lock-cylinders-8</span>
+  <label for="C-lock-cylinders-8">锁芯有没有欧标认证（EN 1303）？</label>
+  
+  <p class="hint">有报告才写：机构 + 报告号 + 标准版本。没有就留空。</p>
+  <input id="C-lock-cylinders-8" data-field="C-lock-cylinders-8" data-q="锁芯有没有欧标认证（EN 1303）？" type="text" autocomplete="off">
+</div>
+</section>
+<section class="cat" id="cat-sliding-hook-locks">
+  <h3>推拉门钩锁（Sliding Hook Locks） <span class="badge">全缺 10 · 半缺 0</span></h3>
+  
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-1</span>
+  <label for="C-sliding-hook-locks-1">这是推拉门用的还是隐藏门（口袋门）用的？</label>
+  
+  <p class="hint">钩锁 3 个型号一条规格都没有，下面每一项都空着。 · 目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-1" data-field="C-sliding-hook-locks-1" data-q="这是推拉门用的还是隐藏门（口袋门）用的？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-2</span>
+  <label for="C-sliding-hook-locks-2">钩锁的 backset 多少？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-2" data-field="C-sliding-hook-locks-2" data-q="钩锁的 backset 多少？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-3</span>
+  <label for="C-sliding-hook-locks-3">钩舌是不是自动弹出？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-3" data-field="C-sliding-hook-locks-3" data-q="钩舌是不是自动弹出？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-4</span>
+  <label for="C-sliding-hook-locks-4">钩锁能不能装欧标锁芯？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-4" data-field="C-sliding-hook-locks-4" data-q="钩锁能不能装欧标锁芯？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-5</span>
+  <label for="C-sliding-hook-locks-5">钩锁适配门厚？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-5" data-field="C-sliding-hook-locks-5" data-q="钩锁适配门厚？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-6</span>
+  <label for="C-sliding-hook-locks-6">配不配门框上的锁扣？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-6" data-field="C-sliding-hook-locks-6" data-q="配不配门框上的锁扣？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-7</span>
+  <label for="C-sliding-hook-locks-7">钩锁锁壳尺寸多大？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-7" data-field="C-sliding-hook-locks-7" data-q="钩锁锁壳尺寸多大？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-8</span>
+  <label for="C-sliding-hook-locks-8">适不适合铝合金推拉门？</label>
+  
+  <p class="hint">目前 3 个型号一条都没写</p>
+  <input id="C-sliding-hook-locks-8" data-field="C-sliding-hook-locks-8" data-q="适不适合铝合金推拉门？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-9</span>
+  <label for="C-sliding-hook-locks-9">钩锁只有 3 个型号，就这些吗？</label>
+  
+  <p class="hint">有没上网站的就列型号。</p>
+  <input id="C-sliding-hook-locks-9" data-field="C-sliding-hook-locks-9" data-q="钩锁只有 3 个型号，就这些吗？" type="text" autocomplete="off">
+</div>
+
+<div class="f" data-pri="1">
+  <span class="qid">C-sliding-hook-locks-10</span>
+  <label for="C-sliding-hook-locks-10">有没有配套的推拉门拉手？</label>
+  
+  
+  <input id="C-sliding-hook-locks-10" data-field="C-sliding-hook-locks-10" data-q="有没有配套的推拉门拉手？" type="text" autocomplete="off">
+</div>
+</section>
+
+<h2>第四部分 · 9 个产品一行规格都没有</h2>
+<p class="note">这些页面对买家和搜索引擎都近乎空白，优先级最高。有图纸的，把图纸编号写进「主要尺寸」也行。</p>
+<table>
+  <tr><th style="width:34%">型号</th><th>材质</th><th>主要尺寸</th></tr>
+  <tr><td class="m">308-D</td>
+      <td class="cell"><input data-field="D-308-d-mat" data-q="308-D 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-308-d-dim" data-q="308-D 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">308-S</td>
+      <td class="cell"><input data-field="D-308-s-mat" data-q="308-S 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-308-s-dim" data-q="308-S 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Glass Door Patch Fitting Set</td>
+      <td class="cell"><input data-field="D-glass-door-patch-fitting-set-mat" data-q="Glass Door Patch Fitting Set 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-glass-door-patch-fitting-set-dim" data-q="Glass Door Patch Fitting Set 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Lc16</td>
+      <td class="cell"><input data-field="D-lc16-mat" data-q="Lc16 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-lc16-dim" data-q="Lc16 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Lc31</td>
+      <td class="cell"><input data-field="D-lc31-mat" data-q="Lc31 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-lc31-dim" data-q="Lc31 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Lc45*85</td>
+      <td class="cell"><input data-field="D-lc45-85-mat" data-q="Lc45*85 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-lc45-85-dim" data-q="Lc45*85 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Stainless Steel Door Hinge</td>
+      <td class="cell"><input data-field="D-stainless-steel-door-hinge-mat" data-q="Stainless Steel Door Hinge 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-stainless-steel-door-hinge-dim" data-q="Stainless Steel Door Hinge 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Stainless Steel Glass Door Pull Handle</td>
+      <td class="cell"><input data-field="D-stainless-steel-glass-door-pull-handle-mat" data-q="Stainless Steel Glass Door Pull Handle 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-stainless-steel-glass-door-pull-handle-dim" data-q="Stainless Steel Glass Door Pull Handle 的主要尺寸" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Wooden Door Floor Hinge</td>
+      <td class="cell"><input data-field="D-wooden-door-floor-hinge-mat" data-q="Wooden Door Floor Hinge 的材质" type="text" autocomplete="off"></td>
+      <td class="cell"><input data-field="D-wooden-door-floor-hinge-dim" data-q="Wooden Door Floor Hinge 的主要尺寸" type="text" autocomplete="off"></td></tr>
+</table>
+
+<h2 data-secpri="2">第五部分 · 48 个产品写着「按需询问」</h2>
+<p class="note" data-secpri="2">
+  「available on request」这句话对搜索引擎等于没有内容。请写真实值；
+  确实要按单确认的，写「按单确认」也可以，但要具体到哪一项。
+</p>
+<table data-secpri="2">
+  <tr><th style="width:26%">型号</th><th style="width:22%">缺的是哪一项</th><th>真实值</th></tr>
+  <tr><td class="m">1073D</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-1073d" data-q="1073D 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">1073S</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-1073s" data-q="1073S 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">260</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-260" data-q="260 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">556</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-556" data-q="556 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">558</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-558" data-q="558 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">559</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-559" data-q="559 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">564 MB</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-564-mb" data-q="564 MB 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">564</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-564" data-q="564 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5681</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5681" data-q="5681 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5682</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5682" data-q="5682 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5683</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5683" data-q="5683 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5688</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5688" data-q="5688 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5689</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5689" data-q="5689 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">575 ABET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-575-abet" data-q="575 ABET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">575 CPET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-575-cpet" data-q="575 CPET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">576 PBPS</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-576-pbps" data-q="576 PBPS 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5833</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5833" data-q="5833 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5835</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5835" data-q="5835 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">5836</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-5836" data-q="5836 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">592 ABET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-592-abet" data-q="592 ABET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">592 PBBK</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-592-pbbk" data-q="592 PBBK 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">592 PBET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-592-pbet" data-q="592 PBET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">592 PBPS</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-592-pbps" data-q="592 PBPS 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">592 SSET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-592-sset" data-q="592 SSET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">595 ACBK</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-595-acbk" data-q="595 ACBK 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">595 ACET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-595-acet" data-q="595 ACET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">598</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-598" data-q="598 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 ABET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-abet" data-q="607 ABET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 BNET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-bnet" data-q="607 BNET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 FET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-fet" data-q="607 FET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 KET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-ket" data-q="607 KET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 PBBK</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-pbbk" data-q="607 PBBK 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 PBET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-pbet" data-q="607 PBET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 PBPS</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-pbps" data-q="607 PBPS 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 SPET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-spet" data-q="607 SPET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 SSBK</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-ssbk" data-q="607 SSBK 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 SSET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-sset" data-q="607 SSET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 WBK</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-wbk" data-q="607 WBK 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">607 WLET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-607-wlet" data-q="607 WLET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">6082 SN</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-6082-sn" data-q="6082 SN 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">609 PBET</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-609-pbet" data-q="609 PBET 的锁扣片" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">F102</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-f102" data-q="F102 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">G559</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-g559" data-q="G559 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">H101</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-h101" data-q="H101 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">H102</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-h102" data-q="H102 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Night Latch &amp; Rim Lock</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-night-latch-rim-lock" data-q="Night Latch &amp; Rim Lock 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">S564</td><td>适配门厚</td>
+      <td class="cell"><input data-field="E-s564" data-q="S564 的适配门厚" type="text" autocomplete="off"></td></tr>
+<tr><td class="m">Tubular Knob Lock</td><td>锁扣片</td>
+      <td class="cell"><input data-field="E-tubular-knob-lock" data-q="Tubular Knob Lock 的锁扣片" type="text" autocomplete="off"></td></tr>
+</table>
+
+<h2 data-secpri="2">附录 A · 全站字段覆盖率（只看，不用填）</h2>
+<p class="note" data-secpri="2">这是第四、第五部分之外的长期功课：这些字段每补一个型号，就多一个页面能被搜到。按这个顺序补，影响的页面最多。</p>
+<table data-secpri="2">
+  <tr><th>字段</th><th>中文</th><th>怎么写</th><th>已有</th><th></th><th>还缺</th></tr>
+  <tr><td class="m">Material</td><td>材质</td><td>锌合金 / 不锈钢 304 / 黄铜 / 铁 —— 写牌号，不要只写「金属」</td>
+    <td class="n">90%</td><td><span class="bar" style="width:54px"></span></td>
+    <td class="n">45 个</td></tr>
+<tr><td class="m">Finish</td><td>表面处理</td><td>写代码即可：PB / AB / SN / SS，脚本会自动展开成全称</td>
+    <td class="n">66%</td><td><span class="bar" style="width:40px"></span></td>
+    <td class="n">150 个</td></tr>
+<tr><td class="m">Application</td><td>用在什么门上</td><td>木门 / 铁门 / 铝合金门 / 防火门 / 玻璃门 —— 可多选</td>
+    <td class="n">49%</td><td><span class="bar" style="width:29px"></span></td>
+    <td class="n">222 个</td></tr>
+<tr><td class="m">Door thickness</td><td>适配门厚</td><td>例：35–50mm。有非标范围也写</td>
+    <td class="n">37%</td><td><span class="bar" style="width:22px"></span></td>
+    <td class="n">272 个</td></tr>
+<tr><td class="m">Function</td><td>功能</td><td>执手 / 通道 / 卫生间 / 钥匙进入 / 自锁</td>
+    <td class="n">38%</td><td><span class="bar" style="width:23px"></span></td>
+    <td class="n">271 个</td></tr>
+<tr><td class="m">Backset</td><td>锁舌中心到门边</td><td>例：60mm。锁体、球形锁、单锁舌都要</td>
+    <td class="n">33%</td><td><span class="bar" style="width:20px"></span></td>
+    <td class="n">291 个</td></tr>
+<tr><td class="m">Cycle life</td><td>循环寿命</td><td>例：200,000 次。没做过测试就留空，不要猜</td>
+    <td class="n">23%</td><td><span class="bar" style="width:14px"></span></td>
+    <td class="n">333 个</td></tr>
+<tr><td class="m">Installation</td><td>安装方式</td><td>壁挂 / 暗装 / 明装；有开孔图或纸模板也写上</td>
+    <td class="n">5%</td><td><span class="bar" style="width:3px"></span></td>
+    <td class="n">412 个</td></tr>
+<tr><td class="m">Packing</td><td>装箱</td><td>每箱几个、毛重、箱规 —— 报价和运费全靠这个</td>
+    <td class="n">1%</td><td><span class="bar" style="width:1px"></span></td>
+    <td class="n">429 个</td></tr>
+</table>
+
+<h2 data-secpri="2">附录 B · 不用你填（技术侧的活）</h2>
+<table data-secpri="2">
+  <tr><th style="width:42%">事项</th><th>谁做、怎么做</th></tr>
+  <tr><td>和 Assa Abloy、Dorma 这类大牌比，我们怎么说？</td><td>技术侧起草、销售确认后上站。你不用填。</td></tr>
+<tr><td>是不是 ANSI Grade 1 / 2 / 3？</td><td>甲方已确认我们没有 ANSI/BHMA 认证，技术侧会写一句诚实说明。你不用填。</td></tr>
+<tr><td>这个品类下有五十种不同的东西，买家怎么找？</td><td>网站导航问题，技术侧处理。你不用填。</td></tr>
+  <tr><td>38 条外链改深链</td><td><strong>这是唯一能加速 Google 收录那 447 个页面的杠杆。</strong>Search Console 显示我们 102 条外链全部指向首页，一条深链都没有。需要有人登录 worldbid.com / traderscity.com 后台，把正文里指向首页的链接改成对应型号的产品页。完整清单见 <code>docs/research/BACKLINK_DEEPLINKS.md</code>。</td></tr>
+</table>
+
+<footer style="margin:36px 0 0; padding:14px 0; border-top:1px solid var(--line); color:var(--dim); font-size:13px">
+  填完点最下面的【复制全部】发回给技术同事即可，不需要自己改网站。<br>
+  由 <code>scripts/build-supplier-workbook.mjs</code> 生成 —— 数据补进去之后重跑，这份表会自动变短。
+</footer>
+
+</div>
+
+<div id="bar" class="noprint">
+  <div id="prog"><i></i></div>
+  <div class="in">
+    <div class="grow">已填 <b id="n">0</b> / <span id="t">0</span> 项 <span id="say"></span></div>
+    <button type="button" id="only" class="ghost">只看重点</button>
+    <button type="button" id="print" class="ghost">打印 / 存 PDF</button>
+    <button type="button" id="save" class="ghost">导出文件</button>
+    <button type="button" id="copy">复制全部</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var KEY = "chy-workbook-v1";
+  var all = [].slice.call(document.querySelectorAll("[data-field]"));
+  document.getElementById("t").textContent = all.length;
+
+  /* localStorage can be unavailable (private window, some browsers on file://).
+     The workbook must still work then; it just will not remember. */
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { return {}; }
+  }
+  function persist() {
+    var out = {};
+    all.forEach(function (el) { if (el.value.trim()) out[el.dataset.field] = el.value.trim(); });
+    try {
+      localStorage.setItem(KEY, JSON.stringify(out));
+      document.getElementById("say").textContent = "· 已自动保存";
+    } catch (e) {
+      document.getElementById("say").textContent = "· 这台电脑不能自动保存，填完请马上导出";
+    }
+  }
+
+  function mark(el) {
+    var on = el.value.trim().length > 0;
+    if (el.closest("td")) el.classList.toggle("filled", on);
+    var f = el.closest(".f");
+    if (f) f.classList.toggle("done", on);
+  }
+
+  function count() {
+    var n = all.filter(function (el) { return el.value.trim(); }).length;
+    document.getElementById("n").textContent = n;
+    document.querySelector("#prog i").style.width = (n / all.length * 100) + "%";
+    return n;
+  }
+
+  var saved = load();
+  all.forEach(function (el) {
+    if (saved[el.dataset.field]) el.value = saved[el.dataset.field];
+    mark(el);
+  });
+
+  var timer, dirty = false;
+  document.addEventListener("input", function (e) {
+    if (!e.target.dataset || !e.target.dataset.field) return;
+    mark(e.target); count(); dirty = true;
+    clearTimeout(timer); timer = setTimeout(persist, 400);
+  });
+
+  window.addEventListener("beforeunload", function (e) {
+    if (!dirty) return;
+    e.preventDefault(); e.returnValue = "";
+  });
+
+  /* The export is also the machine's input: "[id] question" then "  -> answer". */
+  function heading(el) {
+    var n = el;
+    while (n && n !== document.body) {
+      var p = n.previousElementSibling;
+      while (p) { if (p.tagName === "H2") return p.textContent.trim(); p = p.previousElementSibling; }
+      n = n.parentElement;
+    }
+    return "";
+  }
+
+  function text() {
+    var n = count();
+    var lines = ["Canton Hyland 产品资料补充表",
+                 "填写人：____________   日期：____________",
+                 "已填 " + n + " / " + all.length + " 项", ""];
+    var head = "";
+    all.forEach(function (el) {
+      var v = el.value.trim();
+      if (!v) return;
+      var h = heading(el);
+      if (h && h !== head) { head = h; lines.push("=== " + h + " ===", ""); }
+      lines.push("[" + el.dataset.field + "] " + (el.dataset.q || ""));
+      lines.push("  → " + v.replace(/\s*\n\s*/g, " / "), "");
+    });
+    if (n === 0) lines.push("（还没有填写任何内容）");
+    return lines.join("\n");
+  }
+
+  document.getElementById("copy").onclick = function () {
+    var t = text(), ta = document.createElement("textarea");
+    ta.value = t; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    if (ok) { dirty = false; alert("已复制。打开微信粘贴，发给技术同事就行。"); return; }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(t).then(function () {
+        dirty = false; alert("已复制。打开微信粘贴，发给技术同事就行。");
+      }, function () { alert("这台电脑不让复制，请改用【导出文件】。"); });
+      return;
+    }
+    alert("这台电脑不让复制，请改用【导出文件】。");
+  };
+
+  document.getElementById("save").onclick = function () {
+    var blob = new Blob(["\ufeff" + text()], { type: "text/plain;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "产品资料补充表-已填.txt";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    dirty = false;
+    alert("已保存到「下载」文件夹，文件名：产品资料补充表-已填.txt");
+  };
+
+  document.getElementById("print").onclick = function () { window.print(); };
+
+  var onlyKey = false;
+  document.getElementById("only").onclick = function () {
+    onlyKey = !onlyKey;
+    this.textContent = onlyKey ? "显示全部" : "只看重点";
+    [].forEach.call(document.querySelectorAll(".f"), function (f) {
+      f.style.display = onlyKey && f.dataset.pri !== "1" ? "none" : "";
+    });
+    [].forEach.call(document.querySelectorAll("[data-secpri]"), function (n) {
+      n.style.display = onlyKey ? "none" : "";
+    });
+    [].forEach.call(document.querySelectorAll("section.cat"), function (s) {
+      var vis = [].slice.call(s.querySelectorAll(".f")).some(function (f) {
+        return f.style.display !== "none";
+      });
+      s.style.display = vis ? "" : "none";
+    });
+  };
+
+  count();
+})();
+</script>
+</body>
+</html>

@@ -28,7 +28,11 @@ interface ProductRecord {
 }
 
 const products = new Map<string, ProductRecord>();
-for (const file of fs.readdirSync(path.join(root, "content/products"))) {
+// Filter to .json: the directory can pick up scratch subdirectories, and readdirSync
+// hands those back too. Every other reader in the repo already filters.
+for (const file of fs
+  .readdirSync(path.join(root, "content/products"))
+  .filter((f) => f.endsWith(".json"))) {
   const record = JSON.parse(
     fs.readFileSync(path.join(root, "content/products", file), "utf8"),
   ) as ProductRecord;

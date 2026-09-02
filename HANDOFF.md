@@ -1,6 +1,27 @@
 # 交接 — Canton Hyland / HYDE 官网
 
-## 2026-09-01 Codex 发布点（下一位先读）
+## 2026-09-02 Claude 发布点（下一位先读）
+
+`8fa393b8f2` 已推送。977 页，语义问题 0，编辑告警 0，predeploy-check 通过。
+IndexNow 已提交 969 条，返回 200 —— **Bing / Yandex / Naver / Seznam 不需要人手再做任何事**。
+**发布接力棒空闲**（`out/` 干净）。**部署后要 purge Cloudflare。**
+
+| 本次 | 结果 |
+|---|---|
+| 搜索按回车没反应 | 已修 —— 提交处理器原本只在恰好一条结果时关弹窗，其余什么都不做 |
+| 近似型号建议看不到 | 已修 —— 原本排在六个类目胶囊和六个热门型号之后，被挤出手机屏幕 |
+| AR4 手机端太占位置 | 已改 scroll-snap 横轨，区块高度 2300 → 937；桌面端无变化 |
+| `/compare/` 找不到入口 | `/products/` 新增 15 条入链 |
+| 美工填写表 | `scripts/build-design-brief.mjs` → 74 个要拍照 · 1 个只差选封面 · 69 个只有一张图 · 126 个没有介绍 |
+| 手动提交清单 | `scripts/build-submit-list.mjs` → Google 配额排序，第一组 34 条新页面 |
+
+细节与踩坑：[`docs/collaboration/agent-updates/2026-09-02-claude-search-enter-ar4-rail-and-handoff-sheets.md`](docs/collaboration/agent-updates/2026-09-02-claude-search-enter-ar4-rail-and-handoff-sheets.md)
+
+给甲方同事的表格集中在 `C:\Users\johns\Desktop\hyde\`，`npm run sheets` 重跑。
+
+---
+
+## 2026-09-01 Codex 发布点
 
 正式发布 `43e2040cc6` 已推送，服务器计划任务在 2026-09-01 14:10 UTC 拉取。绕过 Cloudflare
 直连 `43.131.27.225` 后，首页与 564 MB 页面 Git blob 均与该提交完全一致；正式域名无查询参数
@@ -97,6 +118,10 @@ ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文�
 **只有 EH01 带相册**，所以真实缺口是 74。它有 18 行规格，是 lever-handles 里最全的两个之一,
 只差「指定哪张当首图」—— 属编辑决定，与八·六「首图应该是黑色款」同类。
 
+> 2026-09-02：这个区分已经写进 `scripts/build-design-brief.mjs`，美工表第四节列 74 个
+> 要拍的，第四·五节单独列 EH01 并注明「不用再拍，只要选一张」。把它放进拍摄清单，
+> 等于派人去拍一个已经拍过八次的产品。
+
 ### 4. 页脚移动端挤压（Codex 的 Footer 批次未覆盖）
 
 `docs/superpowers/specs/2026-08-31-hyde-sales-imagery-watermark-footer-design.md`
@@ -112,6 +137,11 @@ ET / PS / BK 补 Function。**先出 dry-run 对照表并逐条核对图片文�
 西语英文残留 · tid 类目映射 · 移动端无导航 · 首页轮播指向单个 SKU · 搜索框无默认建议 ·
 字阶塌陷与字重倒挂 · 26 个产品筛选不可达 —— 全部 2026-08-31 前完成并由测试锁定。
 细节见 `docs/collaboration/agent-updates/2026-08-3*`，不在这里重复。
+
+2026-09-01：工厂/办公室地址拆分 · 撤下制造主体名 · `/compare/` 15 页 · `/collections/` 19 页 ·
+搜索近似型号建议 · FAQ 五个商务问题（MOQ / 交期 / 样品 / 付款 / OEM）。
+
+2026-09-02：搜索按回车无反应 · 近似建议被挤出屏幕 · AR4 手机端纵向堆叠 · `/compare/` 无入口。
 
 ## 六、Bing 报的 86 个错误
 
@@ -143,8 +173,10 @@ Material       90%   还缺  45
 
 `available on request` 只有 48 行 / 48 个产品 —— **不是主要问题，「根本没有那一行」才是。**
 
-给美工同事的填写表（从真实数据生成，可打印 PDF）：
-[`docs/research/DATA_GAP_SHEET.html`](docs/research/DATA_GAP_SHEET.html)
+给供货同事的填写表（**唯一一份**，双击浏览器打开就能填，自动保存，填完点【复制全部】发微信）：
+[`docs/research/SUPPLIER_WORKBOOK.html`](docs/research/SUPPLIER_WORKBOOK.html) —— 216 个填写框。
+它把「规格缺口」和「买家问题库」合成了一份：同一个事实只问一次。
+重跑 `node scripts/build-supplier-workbook.mjs`，补进数据后表会自动变短。
 
 完整复盘、Gemini 35 条对账、Claude × Codex 分工：
 [`docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md`](docs/collaboration/agent-updates/2026-09-01-claude-fsb-benchmark-and-division-of-labour.md)
@@ -178,9 +210,9 @@ Material       90%   还缺  45
   （304/201/316，沿海与泳池项目必问）· 成套搭配（玻璃门一樘需要哪几件）。
   另需两个边界声明：**HS 编码**（每个进口商都要）与**保修**。
 
-> 以上缺口的完整量化在 [`docs/research/BUYER_QUESTION_COVERAGE.md`](docs/research/BUYER_QUESTION_COVERAGE.md)
-> —— 170 个买家问题，完整回答 29 / 部分 58 / 无 83。
-> 补完数据后跑 `node scripts/audit-question-coverage.mjs --markdown` 重新计数。
+> 以上缺口已全部并进 [`docs/research/SUPPLIER_WORKBOOK.html`](docs/research/SUPPLIER_WORKBOOK.html)
+> —— 170 个买家问题，完整回答 34 / 部分 58 / 无 78，待答的 136 条都在第三部分里逐条问。
+> 随时跑 `node scripts/audit-question-coverage.mjs` 看数字（只打印，不写文件）。
 > **不要为了让数字好看去编答案。**
 
 ## 八、甲方已确认的待办

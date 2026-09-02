@@ -1,0 +1,597 @@
+{
+  "_readme": [
+    "docs/research/buyer-questions.json 的中文对照，只覆盖尚未回答的题。",
+    "英文是 GEO 的正本（买家的原话），中文只是给供货同事看的问法，两者不必逐字对应。",
+    "who: supplier = 工厂/业务填；tech = 技术侧写，工作表里只读；field = 归到全站字段覆盖表里。",
+    "键是「品类slug :: 英文原文」——同一句问法会出现在不同品类下，只用原文会撞车。",
+    "scripts/build-supplier-workbook.mjs 缺哪条会报哪条。"
+  ],
+  "questions": {
+    "universal :: Which finishes can I get this in?": {
+      "zh": "有哪些表面处理颜色？",
+      "who": "field"
+    },
+    "universal :: What is it actually made of — solid brass or plated zinc?": {
+      "zh": "到底什么材质——实心黄铜还是镀层锌合金？",
+      "who": "field"
+    },
+    "universal :: Where is this meant to be used — commercial, residential, fire door?": {
+      "zh": "用在什么场合——商用 / 住宅 / 防火门？",
+      "who": "field"
+    },
+    "universal :: How many open/close cycles is it rated for?": {
+      "zh": "标称多少次开关寿命？",
+      "who": "field"
+    },
+    "universal :: How do you pack it, and how many per carton?": {
+      "zh": "怎么装箱？每箱几只？",
+      "who": "supplier",
+      "hint": "每箱数量 / 毛重 / 箱规（长×宽×高）。买家算不出运费就问不出价——这是所有数据里最卡脖子的一项。按品类写也行。"
+    },
+    "universal :: What is the HS code for customs?": {
+      "zh": "各品类的海关 HS 编码是多少？",
+      "who": "supplier",
+      "hint": "过去的报关单上就有，问报关行也行。例：锁具 8301.40。"
+    },
+    "universal :: What warranty do you give?": {
+      "zh": "质保几年？涵盖什么、不涵盖什么？",
+      "who": "supplier"
+    },
+    "universal :: Can I get spare parts and replacement cylinders later?": {
+      "zh": "后期能不能单独买配件和替换锁芯？哪些件常备？",
+      "who": "supplier"
+    },
+    "universal :: How do you compare with Assa Abloy or Dorma on this?": {
+      "zh": "和 Assa Abloy、Dorma 这类大牌比，我们怎么说？",
+      "who": "tech",
+      "hint": "技术侧起草、销售确认后上站。你不用填。"
+    },
+    "universal :: How do I install it? Is there a template?": {
+      "zh": "怎么安装？有没有开孔图或纸模板？",
+      "who": "field"
+    },
+    "panic-exit-devices :: Can I use it on a fire door?": {
+      "zh": "哪些逃生推杠能用在防火门上？",
+      "who": "supplier",
+      "hint": "写型号，或写「全部 / 都不能」。不确定就留空。"
+    },
+    "panic-exit-devices :: Does it work on a double door with both leaves?": {
+      "zh": "哪些型号是双开门（对开门）用的？单门的又是哪些？",
+      "who": "supplier"
+    },
+    "panic-exit-devices :: Push bar or touch bar — what is the difference and which do I need?": {
+      "zh": "推杠（push bar）和触压杆（touch bar）有什么区别？我们各有哪些型号？",
+      "who": "supplier",
+      "hint": "这是这个品类买家问得最多的对比。两三句话说明白就够。"
+    },
+    "panic-exit-devices :: Can it be opened from outside with a key?": {
+      "zh": "外面能不能用钥匙打开？带外执手的是哪些型号？",
+      "who": "supplier"
+    },
+    "panic-exit-devices :: Does it come with an alarm?": {
+      "zh": "有没有带报警的版本？",
+      "who": "supplier"
+    },
+    "panic-exit-devices :: What width of door does the bar fit?": {
+      "zh": "推杠适配的门宽范围是多少？",
+      "who": "supplier",
+      "hint": "例：700–1100mm。不同长度的杆分别写。"
+    },
+    "panic-exit-devices :: Is there a version that locks at top and bottom as well?": {
+      "zh": "有没有上下同时锁的（两点 / 三点锁）版本？",
+      "who": "supplier"
+    },
+    "panic-exit-devices :: Will it hold up in a cold room or outdoors?": {
+      "zh": "能不能用在冷库或室外？做过温度范围吗？",
+      "who": "supplier"
+    },
+    "panic-exit-devices :: What is the outside trim made of and can I get it in stainless?": {
+      "zh": "外执手什么材质？有没有不锈钢的？",
+      "who": "supplier"
+    },
+    "lock-cases :: What backset do you have? I need 45 and 60.": {
+      "zh": "锁体的锁舌中心距（backset）有哪些规格？",
+      "who": "supplier",
+      "hint": "全系列统一的话，写「统一 XXmm」即可。"
+    },
+    "lock-cases :: What is the centre distance between the handle and the cylinder?": {
+      "zh": "执手孔到锁芯孔的中心距是多少？",
+      "who": "supplier",
+      "hint": "例：72mm、85mm。"
+    },
+    "lock-cases :: Does it take a euro profile cylinder?": {
+      "zh": "配不配欧标锁芯（euro profile）？",
+      "who": "supplier"
+    },
+    "lock-cases :: How far does the deadbolt throw?": {
+      "zh": "方舌伸出多长？",
+      "who": "supplier",
+      "hint": "例：20mm；双舌的写双舌。"
+    },
+    "lock-cases :: What door thickness does it suit?": {
+      "zh": "锁体适配门厚多少？",
+      "who": "supplier"
+    },
+    "lock-cases :: Is it handed, or can it be used left and right?": {
+      "zh": "分不分左右手？还是通用可换向？",
+      "who": "supplier"
+    },
+    "lock-cases :: What size spindle does it take — 8mm square?": {
+      "zh": "方钢（spindle）多大？8mm 方还是别的？",
+      "who": "supplier"
+    },
+    "lock-cases :: Is the forend stainless or plated steel?": {
+      "zh": "锁面板（forend）是不锈钢还是镀层钢？",
+      "who": "supplier"
+    },
+    "lock-cases :: Does the strike plate come with it?": {
+      "zh": "配不配锁扣片（strike plate）？",
+      "who": "supplier"
+    },
+    "lock-cases :: Will your case fit a lock body from another brand's faceplate cutout?": {
+      "zh": "我们的锁体能替换别的品牌吗？开孔尺寸一样的有哪些？",
+      "who": "supplier",
+      "hint": "换锁的买家第一个就问这个。有对照关系就写，没有就留空。"
+    },
+    "knob-locks :: What is the difference between your heavy duty and light duty range?": {
+      "zh": "重型和轻型球形锁到底差在哪？",
+      "who": "supplier",
+      "hint": "网站上只有筛选标签，没有一句话解释。用买家听得懂的话写。"
+    },
+    "knob-locks :: Entry, privacy, passage — which one is which?": {
+      "zh": "执手锁 / 通道 / 卫生间三种功能，各是哪些型号？",
+      "who": "supplier"
+    },
+    "knob-locks :: What is the backset?": {
+      "zh": "球形锁的 backset 是多少？",
+      "who": "supplier",
+      "hint": "例：60mm / 70mm。"
+    },
+    "knob-locks :: What is the cross bore diameter for the door prep?": {
+      "zh": "门板开孔（cross bore）直径多少？",
+      "who": "supplier",
+      "hint": "例：54mm。"
+    },
+    "knob-locks :: Can it be master keyed with the rest of the building?": {
+      "zh": "能不能和整栋楼做总钥匙（master key）？",
+      "who": "supplier"
+    },
+    "knob-locks :: What door thickness does it take?": {
+      "zh": "球形锁适配门厚？",
+      "who": "supplier"
+    },
+    "knob-locks :: Is it ANSI Grade 1, 2 or 3?": {
+      "zh": "是不是 ANSI Grade 1 / 2 / 3？",
+      "who": "tech",
+      "hint": "甲方已确认我们没有 ANSI/BHMA 认证，技术侧会写一句诚实说明。你不用填。"
+    },
+    "knob-locks :: How many keys come with each lock?": {
+      "zh": "每把锁配几条钥匙？",
+      "who": "supplier"
+    },
+    "knob-locks :: Is the latch adjustable between 60 and 70mm?": {
+      "zh": "锁舌是不是 60 / 70mm 可调？",
+      "who": "supplier"
+    },
+    "lever-handles :: Is it solid stainless or zinc alloy with a coating?": {
+      "zh": "是实心不锈钢，还是锌合金加涂层？",
+      "who": "supplier"
+    },
+    "lever-handles :: How long is the lever?": {
+      "zh": "执手（把手）多长？",
+      "who": "supplier"
+    },
+    "lever-handles :: What is the rose diameter?": {
+      "zh": "座盘（rose）直径多少？",
+      "who": "supplier"
+    },
+    "lever-handles :: Will the matt black finish wear off?": {
+      "zh": "哑黑（matt black）会不会掉色？做过什么测试？",
+      "who": "supplier",
+      "hint": "哑黑是买家最不放心的一种表面。做过盐雾或耐磨就写小时数，没做过就留空。"
+    },
+    "lever-handles :: Does it come with the spindle and screws?": {
+      "zh": "配不配方钢和螺丝？",
+      "who": "supplier"
+    },
+    "lever-handles :: Can I get the handle and the lock case as one order?": {
+      "zh": "执手和锁体能一起下单吗？哪个执手配哪个锁体？",
+      "who": "supplier",
+      "hint": "写配套关系即可。"
+    },
+    "night-latches-rim-locks :: What is the case size?": {
+      "zh": "锁壳尺寸多大？",
+      "who": "supplier"
+    },
+    "night-latches-rim-locks :: How many keys are supplied?": {
+      "zh": "配几条钥匙？",
+      "who": "supplier"
+    },
+    "night-latches-rim-locks :: Is the cylinder replaceable with a euro one?": {
+      "zh": "锁芯能不能换成欧标的？",
+      "who": "supplier"
+    },
+    "night-latches-rim-locks :: What is the backset from the door edge?": {
+      "zh": "从门边到锁孔的距离（backset）？",
+      "who": "supplier"
+    },
+    "night-latches-rim-locks :: Can it be keyed alike across a block of flats?": {
+      "zh": "整栋公寓能不能做一样的钥匙（keyed alike）？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: What lengths do you have — 70mm, 80mm?": {
+      "zh": "锁芯有哪些长度？",
+      "who": "supplier",
+      "hint": "例：70mm、80mm。"
+    },
+    "lock-cylinders :: Is it a euro profile or an oval?": {
+      "zh": "是欧标（euro profile）还是椭圆（oval）？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: Can you supply them keyed alike?": {
+      "zh": "能不能做同一把钥匙（keyed alike）供货？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: How many pins? Is it anti-drill or anti-bump?": {
+      "zh": "几个弹子？防钻、防撞匙吗？",
+      "who": "supplier",
+      "hint": "这是锁芯品类的决定性问题。有就写，没有就留空。"
+    },
+    "lock-cylinders :: Is it double cylinder or thumbturn on one side?": {
+      "zh": "双面钥匙还是一面旋钮？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: How many keys per cylinder?": {
+      "zh": "每个锁芯配几条钥匙？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: Do the offsets come in 30/40, 35/45?": {
+      "zh": "偏心长度有 30/40、35/45 这些吗？",
+      "who": "supplier"
+    },
+    "lock-cylinders :: Do you have a European standard certification for these?": {
+      "zh": "锁芯有没有欧标认证（EN 1303）？",
+      "who": "supplier",
+      "hint": "有报告才写：机构 + 报告号 + 标准版本。没有就留空。"
+    },
+    "door-closers :: What door weight and width will it handle?": {
+      "zh": "适配门重和门宽是多少？",
+      "who": "supplier"
+    },
+    "door-closers :: Is the closing speed adjustable?": {
+      "zh": "关门速度可不可调？几段调节？",
+      "who": "supplier"
+    },
+    "door-closers :: Does it have hold-open?": {
+      "zh": "有没有定位（hold-open）功能？",
+      "who": "supplier"
+    },
+    "door-closers :: Is this a floor spring or an overhead closer?": {
+      "zh": "哪些是地弹簧，哪些是闭门器？",
+      "who": "supplier",
+      "hint": "买家连这个都分不出来——一个都没标。"
+    },
+    "door-closers :: What is the maximum opening angle?": {
+      "zh": "最大开启角度？",
+      "who": "supplier"
+    },
+    "door-closers :: Can it be used on a fire door?": {
+      "zh": "能不能用在防火门上？",
+      "who": "supplier"
+    },
+    "door-closers :: Will it leak oil in a hot climate?": {
+      "zh": "高温地区会不会漏油？工作温度范围多少？",
+      "who": "supplier",
+      "hint": "中东和拉美买家专门问这个。"
+    },
+    "door-closers :: Is it EN 1154 certified, and what power size?": {
+      "zh": "闭门器的力度等级是几级（EN 1–7）？",
+      "who": "supplier",
+      "hint": "力度等级请填。EN 1154 认证我们目前没有（之前那份报告属于别的公司，已撤下），认证栏留空即可。"
+    },
+    "door-closers :: Does it suit a glass door?": {
+      "zh": "适不适合玻璃门？",
+      "who": "supplier"
+    },
+    "door-closers :: What is included — arm, cover, fixing plate?": {
+      "zh": "一套里包含什么？连杆、盖板、装配片都有吗？",
+      "who": "supplier"
+    },
+    "deadbolts :: Single or double cylinder?": {
+      "zh": "单面还是双面钥匙？",
+      "who": "supplier"
+    },
+    "deadbolts :: What backset?": {
+      "zh": "单锁舌的 backset 多少？",
+      "who": "supplier"
+    },
+    "deadbolts :: What door thickness?": {
+      "zh": "单锁舌适配门厚？",
+      "who": "supplier"
+    },
+    "deadbolts :: Is the bolt hardened against sawing?": {
+      "zh": "锁舌有没有防锯芯？",
+      "who": "supplier",
+      "hint": "这是单锁舌存在的意义所在。"
+    },
+    "deadbolts :: Is the strike reinforced for the frame?": {
+      "zh": "锁扣片有没有加强？",
+      "who": "supplier"
+    },
+    "deadbolts :: What finishes?": {
+      "zh": "有哪些表面处理？",
+      "who": "supplier"
+    },
+    "deadbolts :: Does it fit a standard 54mm cross bore?": {
+      "zh": "适不适配标准 54mm 开孔？",
+      "who": "supplier"
+    },
+    "deadbolts :: Only seven models — is that the whole range?": {
+      "zh": "单锁舌只有 7 个型号，这是全部吗？",
+      "who": "supplier",
+      "hint": "还有型号没上网站就把型号列出来；是全部就写「全部」。"
+    },
+    "brass-steel-hinges :: What sizes do you have — 4 inch, 5 inch?": {
+      "zh": "铰链有哪些尺寸？",
+      "who": "supplier",
+      "hint": "例：4 寸、5 寸。"
+    },
+    "brass-steel-hinges :: How thick is the leaf?": {
+      "zh": "页片厚度多少？",
+      "who": "supplier"
+    },
+    "brass-steel-hinges :: Ball bearing or plain?": {
+      "zh": "轴承的还是普通的？",
+      "who": "supplier"
+    },
+    "brass-steel-hinges :: How many hinges per door do I need?": {
+      "zh": "一扇门要用几个铰链？",
+      "who": "supplier",
+      "hint": "一段选型建议即可，AI 很容易引用这种内容。"
+    },
+    "brass-steel-hinges :: What door weight will three of these carry?": {
+      "zh": "三个铰链能承多重的门？",
+      "who": "supplier"
+    },
+    "brass-steel-hinges :: Are they fire rated?": {
+      "zh": "是不是防火级别的？",
+      "who": "supplier"
+    },
+    "brass-steel-hinges :: Do the screws come with them?": {
+      "zh": "配不配螺丝？",
+      "who": "supplier"
+    },
+    "brass-steel-hinges :: Are they sold in pairs or singly?": {
+      "zh": "按对卖还是按只卖？",
+      "who": "supplier",
+      "hint": "这一项直接决定报价差一倍，必须写清楚。"
+    },
+    "brass-steel-hinges :: Will stainless ones rust near the coast?": {
+      "zh": "不锈钢铰链在海边会不会生锈？是 304、201 还是 316？",
+      "who": "supplier",
+      "hint": "沿海项目一定问。按型号或按系列写都行。"
+    },
+    "stainless-steel-handles :: What is the overall length and the fixing centres?": {
+      "zh": "拉手总长和孔距分别多少？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: What tube diameter?": {
+      "zh": "管径多少？",
+      "who": "supplier",
+      "hint": "例：Φ25、Φ32。"
+    },
+    "stainless-steel-handles :: Will it fit a glass door, and what glass thickness?": {
+      "zh": "能不能装在玻璃门上？适配玻璃厚度多少？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: Is it back to back or single sided?": {
+      "zh": "是对拉（双面）还是单面？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: Satin or mirror polish?": {
+      "zh": "拉丝还是镜面？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: How far does it stand off the door?": {
+      "zh": "拉手离门面多远（standoff）？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: Will it corrode in a swimming pool or coastal building?": {
+      "zh": "泳池或海边建筑会不会腐蚀？用的是哪一级不锈钢？",
+      "who": "supplier",
+      "hint": "这 35 个产品正是最需要这句话的地方。"
+    },
+    "stainless-steel-handles :: Do the fixings come with it?": {
+      "zh": "配不配安装配件？",
+      "who": "supplier"
+    },
+    "stainless-steel-handles :: Can you make a custom length for our project?": {
+      "zh": "能不能按项目做非标长度？起订量多少？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: What glass thickness do the patch fittings take — 10mm, 12mm?": {
+      "zh": "驳接件适配多厚的玻璃？10mm？12mm？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Do I need a floor spring with these patch fittings?": {
+      "zh": "用这些驳接件是不是必须配地弹簧？",
+      "who": "supplier",
+      "hint": "两样我们都卖，但网站没说它们要一起用。"
+    },
+    "glass-door-accessories :: Is the fitting stainless or aluminium with a cover?": {
+      "zh": "夹具是不锈钢，还是铝件加盖板？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Top patch, bottom patch, corner — which do I need for one door?": {
+      "zh": "上夹、下夹、转角夹——做一扇门要哪几个？",
+      "who": "supplier",
+      "hint": "一扇无框玻璃门需要固定的组合，写清楚怎么配。"
+    },
+    "glass-door-accessories :: What is the handle length for a glass door?": {
+      "zh": "玻璃门拉手多长？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Does it come with the glass gaskets?": {
+      "zh": "配不配玻璃胶垫？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Can it take a lock?": {
+      "zh": "玻璃门夹能不能带锁？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: What finish options are there?": {
+      "zh": "有哪些表面处理？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Is it suitable for a shopfront that gets heavy use?": {
+      "zh": "商铺门这种高频使用扛得住吗？做过多少次寿命测试？",
+      "who": "supplier"
+    },
+    "glass-door-accessories :: Do you supply the whole set for one door as a package?": {
+      "zh": "能不能整门一套打包供货？一套包含哪些件？",
+      "who": "supplier",
+      "hint": "买家想要报价单上一行，而不是八行。"
+    },
+    "bathroom-accessories :: What are the dimensions?": {
+      "zh": "尺寸多少？",
+      "who": "supplier"
+    },
+    "bathroom-accessories :: Is it wall mounted, and do fixings come with it?": {
+      "zh": "是不是壁挂？配不配膨胀螺丝？",
+      "who": "supplier"
+    },
+    "bathroom-accessories :: Will the finish survive a humid bathroom?": {
+      "zh": "潮湿浴室里表面会不会坏？做过盐雾测试吗？多少小时？",
+      "who": "supplier",
+      "hint": "这 45 个产品的品类定义就是潮湿环境，这句话必须有。"
+    },
+    "bathroom-accessories :: Can I buy a matching set — towel bar, hook, paper holder?": {
+      "zh": "有没有配套系列（毛巾杆 + 挂钩 + 纸巾架）？系列叫什么名字？",
+      "who": "supplier",
+      "hint": "目录里明显有成套的，只是网站没归组。"
+    },
+    "bathroom-accessories :: Is it concealed fixing or visible screws?": {
+      "zh": "暗装还是明装螺丝？",
+      "who": "supplier"
+    },
+    "bathroom-accessories :: What projection from the wall?": {
+      "zh": "离墙出挑多少？",
+      "who": "supplier"
+    },
+    "bathroom-accessories :: Do you do grab rails rated for disabled access?": {
+      "zh": "有没有无障碍扶手？承重多少？",
+      "who": "supplier",
+      "hint": "这是招标里的独立条目，我们目前一个字都没说。"
+    },
+    "grip-handle-sets :: What are the fixing centres on the plate?": {
+      "zh": "面板孔距（fixing centres）多少？",
+      "who": "supplier"
+    },
+    "grip-handle-sets :: Does it include the lock, or just the handle set?": {
+      "zh": "一套里含不含锁体？还是只有执手面板？",
+      "who": "supplier",
+      "hint": "这个品类最常被下错单，就是因为这一项。"
+    },
+    "grip-handle-sets :: Is it for an entrance door?": {
+      "zh": "是不是入户门用的？",
+      "who": "supplier"
+    },
+    "grip-handle-sets :: Can it take a euro cylinder?": {
+      "zh": "能不能装欧标锁芯？",
+      "who": "supplier"
+    },
+    "grip-handle-sets :: Can I get a matching interior lever on the other side?": {
+      "zh": "内侧能不能配一个同款执手？配哪个型号？",
+      "who": "supplier"
+    },
+    "grip-handle-sets :: Only eleven models — do you have more?": {
+      "zh": "面板执手套装只有 11 个型号，还有更多吗？",
+      "who": "supplier",
+      "hint": "有没上网站的就列型号。"
+    },
+    "hardware-accessories :: What viewing angle does the door viewer give?": {
+      "zh": "猫眼视角多少度？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: What door thickness does the viewer suit?": {
+      "zh": "猫眼适配门厚？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: How long is the flush bolt?": {
+      "zh": "插销多长？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: Is the door stopper floor or wall mounted?": {
+      "zh": "门吸装地上还是墙上？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: Do you have a power transfer for an electric strike?": {
+      "zh": "有没有电锁用的过线盒（power transfer）？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: Is the indicator a vacant/engaged type for a toilet?": {
+      "zh": "指示锁是不是「有人 / 无人」那种卫生间用的？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: Are the house numbers stainless and how big?": {
+      "zh": "门牌号是不锈钢的吗？多大尺寸？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: Is the security guard chain or bar type?": {
+      "zh": "防盗链是链条式还是杆式？",
+      "who": "supplier"
+    },
+    "hardware-accessories :: This category has fifty different things in it — how do I find what I need?": {
+      "zh": "这个品类下有五十种不同的东西，买家怎么找？",
+      "who": "tech",
+      "hint": "网站导航问题，技术侧处理。你不用填。"
+    },
+    "hardware-accessories :: Do you have magnetic catches and door seals too?": {
+      "zh": "我们做不做磁碰珠和门缝密封条？",
+      "who": "supplier",
+      "hint": "写「做」或「不做」都有用——买家需要知道我们的范围边界。"
+    },
+    "sliding-hook-locks :: Is this for a sliding door or a pocket door?": {
+      "zh": "这是推拉门用的还是隐藏门（口袋门）用的？",
+      "who": "supplier",
+      "hint": "钩锁 3 个型号一条规格都没有，下面每一项都空着。"
+    },
+    "sliding-hook-locks :: What backset?": {
+      "zh": "钩锁的 backset 多少？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: Does the hook engage automatically?": {
+      "zh": "钩舌是不是自动弹出？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: Can it take a euro cylinder?": {
+      "zh": "钩锁能不能装欧标锁芯？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: What door thickness?": {
+      "zh": "钩锁适配门厚？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: Is the strike included for the jamb?": {
+      "zh": "配不配门框上的锁扣？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: What is the case size?": {
+      "zh": "钩锁锁壳尺寸多大？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: Is it suitable for an aluminium sliding door?": {
+      "zh": "适不适合铝合金推拉门？",
+      "who": "supplier"
+    },
+    "sliding-hook-locks :: Only three models — is that everything?": {
+      "zh": "钩锁只有 3 个型号，就这些吗？",
+      "who": "supplier",
+      "hint": "有没上网站的就列型号。"
+    },
+    "sliding-hook-locks :: Do you have the matching handle for a sliding door?": {
+      "zh": "有没有配套的推拉门拉手？",
+      "who": "supplier"
+    }
+  }
+}
