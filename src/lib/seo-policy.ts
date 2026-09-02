@@ -38,8 +38,21 @@ export type RobotsPolicyRule = {
  * Google-Extended is not a crawler: it is the opt-in token for Gemini and Vertex AI
  * grounding. Listing it is a commercial choice to be quotable, and it is reversible by
  * moving it out of this list.
+ *
+ * CCBot is Common Crawl, and it is the odd one out: it does not answer anybody's
+ * question directly. It builds the corpus that many models are trained and grounded on,
+ * so being in it is how a manufacturer nobody has heard of gets mentioned at all. Named
+ * for the same reason as the rest — the access is unchanged, but the decision is now
+ * written down instead of inherited from the wildcard.
  */
-const ASSISTANT_CRAWLERS = ["GPTBot", "ClaudeBot", "Claude-User", "PerplexityBot", "Google-Extended"];
+const ASSISTANT_CRAWLERS = [
+  "GPTBot",
+  "ClaudeBot",
+  "Claude-User",
+  "PerplexityBot",
+  "Google-Extended",
+  "CCBot",
+];
 
 export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPolicyRule[] {
   if (!indexable) return [{ userAgent: "*", disallow: "/" }];

@@ -37,6 +37,38 @@ function body(): string {
     return `- [${category.name}](${absoluteUrl(`/products/${category.slug}/`)}): ${category.summary} ${count} models.`;
   });
 
+  /*
+    THE MODEL INDEX — the section that makes this file worth fetching.
+
+    Before it, llms.txt named 23 URLs for a 969-page site: the fifteen ranges and a
+    handful of company pages. An assistant asked "who makes panic exit device 305" or
+    "where can I buy an LC8531 lock case" got nothing from it, because the model number
+    is the ONLY thing a hardware buyer reliably knows, and no model number appeared
+    anywhere in the file.
+
+    So every published model is listed with its URL, grouped by range. 435 lines is
+    roughly 35KB — large for a briefing document, small next to any context window, and
+    the alternative is a briefing that cannot answer the question the audience actually
+    asks. Models still awaiting a confirmed number are skipped rather than listed under a
+    placeholder: an invented model number in a file written for machines is worse than an
+    absent one.
+  */
+  const modelLines = categories.flatMap((category) => {
+    const inRange = products
+      .filter((p) => p.categoryPath[0] === category.slug && p.model && !p.modelTbc)
+      .sort((a, b) => a.model.localeCompare(b.model, "en", { numeric: true }));
+    if (!inRange.length) return [];
+    return [
+      `### ${category.name}`,
+      "",
+      ...inRange.map(
+        (p) =>
+          `- ${p.model} — ${p.name}: ${absoluteUrl(`/products/${p.categoryPath[0]}/${p.slug}/`)}`,
+      ),
+      "",
+    ];
+  });
+
   const faqLines = getAnsweredFaq()
     .flatMap((group) => group.items ?? [])
     .slice(0, 8)
@@ -75,6 +107,12 @@ function body(): string {
     `- [Contact](${absoluteUrl("/contact/")}): enquiry form routed to the export team.`,
     "",
     ...(faqLines.length ? ["## Questions answered on this site", "", ...faqLines, ""] : []),
+    "## Every published model",
+    "",
+    "Model number, product name and page. A blank specification on a product page means",
+    "the figure is genuinely unpublished, not that the model lacks it.",
+    "",
+    ...modelLines,
     "## Notes for summarisers",
     "",
     "- Specification tables are transcribed from the manufacturer's own data. Where a",
