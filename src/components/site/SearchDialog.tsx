@@ -45,6 +45,15 @@ const TYPE_LABEL: Record<IndexEntry["type"], string> = {
 
 const MAX_RESULTS = 24;
 
+/** `/products/deadbolts/d101-ab-deadbolts/` -> `/products/deadbolts/`. */
+function categoryHrefOf(href: string): string | null {
+  const match = /^(\/es)?\/products\/([a-z0-9-]+)\/[^/]+\/$/.exec(href);
+  return match ? `${match[1] ?? ""}/products/${match[2]}/` : null;
+}
+
+/** Model numbers are compared without spaces or hyphens: "D101 AB" === "d101-ab". */
+const normaliseModel = (s: string) => s.toLowerCase().replace(/[\s-]/g, "");
+
 /**
  * Scores one entry against the already-lowercased query terms.
  *
@@ -100,9 +109,14 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         heading: "Introduce tu búsqueda",
         label: "Buscar",
         close: "Cerrar",
-        empty: "Sin resultados",
+        empty: (q: string) =>
+          `Sin resultados para «${q}». Pruebe otro término o explore las categorías.`,
         emptyNear: "Sin coincidencia exacta. Los modelos más cercanos que publicamos:",
-        enterHint: "· Pulse Intro para abrir el primero",
+        emptyCategories: "Estas gamas son lo más cercano a lo que busca:",
+        matchedRanges: "Gamas que coinciden",
+        enterExact: "Pulse Intro para abrirlo",
+        enterBroad: (name: string) => `Pulse Intro para ver la gama ${name}`,
+        seeRange: (name: string) => `Ver toda la gama ${name}`,
         loading: "Cargando…",
         placeholder: "Modelo, categoría o tipo de puerta",
         browse: "Categorías principales",
@@ -112,9 +126,14 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         heading: "Enter your search term",
         label: "Search",
         close: "Close",
-        empty: "No results",
+        empty: (q: string) =>
+          `No results for “${q}”. Try another term, or explore the categories below.`,
         emptyNear: "No exact match. The closest models we publish:",
-        enterHint: "· Press Enter to open the first",
+        emptyCategories: "These ranges are the closest to what you asked for:",
+        matchedRanges: "Matching ranges",
+        enterExact: "Press Enter to open it",
+        enterBroad: (name: string) => `Press Enter for the ${name} range`,
+        seeRange: (name: string) => `See the whole ${name} range`,
         loading: "Loading…",
         placeholder: "Model, category or door type",
         browse: "Main categories",
@@ -240,6 +259,126 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     return [];
   }, [index, query, results.length]);
 
+  /**
+   * Every category the term matches, computed over the WHOLE index rather than the
+   * capped result list.
+   *
+   * This is the "which family?" answer. Typing "d" matches 464 entries; the twenty-four
+   * that fit on screen are all products, because a product scores its model AND its
+   * title while a category scores only its title. So the ranges themselves — the thing
+   * the reader is most likely to want from a one-letter query — were ranked off the
+   * bottom of their own result list. Pulled out and shown as chips above the results,
+   * they turn a wall of SKUs into a choice between Deadbolts, Door Closers and Door
+   * Stoppers.
+   */
+  const matchedCategories = useMemo(() => {
+    if (!index) return [];
+    const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    if (!terms.length) return [];
+    return index
+      .filter((e) => e.type === "category")
+      /*
+        THE NAME, AND AT THE START OF A WORD IN IT.
+
+        The general matcher scores against `text`, which for a category includes its
+        description and the models under it — so "d" pulled in Grip Handle Sets, whose
+        name contains no "d" at all. As a result row that is merely weak; as a chip
+        labelled "matching ranges" it is a false statement about the catalogue.
+
+        Requiring the name is not enough on its own: "d" appears mid-word in Sliding Hook
+        Locks, Lock Cylinders and Stainless Steel Handles, which put eleven of fifteen
+        ranges on screen and told the reader nothing. A term has to START a word — "d"
+        then means Deadbolts and the three ranges with "Door" in the name, which is what
+        somebody typing "d" is looking for.
+      */
+      .filter((e) => {
+        const words = e.title.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+        return terms.every((t) => words.some((w) => w.startsWith(t)));
+      })
+      .map((entry) => ({ entry, s: score(entry, terms) }))
+      .filter((r) => r.s > 0)
+      .sort((a, b) => b.s - a.s || a.entry.title.localeCompare(b.entry.title))
+      .map((r) => r.entry);
+  }, [index, query]);
+
+  /**
+   * Categories to offer when the term matches nothing — the "explore the categories"
+   * answer rather than a dead end.
+   *
+   * Same shortening as above but restricted to category entries, so a misspelling that
+   * is close to a range name still lands on the range. Three characters is the floor
+   * again: below that a stem matches whatever happens to contain the letter.
+   */
+  const nearCategories = useMemo(() => {
+    if (!index || results.length) return [];
+    let stem = normaliseModel(query.trim());
+    while (stem.length >= 3) {
+      const hits = index.filter((e) => e.type === "category" && e.text.includes(stem));
+      if (hits.length) return hits.slice(0, 6);
+      stem = stem.slice(0, -1);
+    }
+    return [];
+  }, [index, query, results.length]);
+
+  /**
+   * WHERE ENTER GOES — and, more importantly, when it refuses to pick a product.
+   *
+   * The first version opened `results[0]` unconditionally. Typing a single "d" matched
+   * 464 entries and Enter opened D101 AB: out of four hundred candidates it committed to
+   * one SKU, on the strength of a one-character query. That is not a search result, it is
+   * a guess wearing the costume of one, and the buyer who lands on a random deadbolt
+   * concludes the catalogue is tiny.
+   *
+   * So Enter only opens a product when the query IDENTIFIES a product — the typed string
+   * is a model number, or exactly one thing matched. Otherwise it BROADENS: to the
+   * category that matched by name, or, when the only things we can offer are products,
+   * to the range they all sit in. "D103" does not exist, but all six near misses are
+   * deadbolts, so Enter goes to the deadbolt range rather than to whichever variant
+   * happened to sort first.
+   *
+   * When even that is not determinable, Enter does nothing and the standing category
+   * menu below stays on screen. Going nowhere is a better answer than going somewhere
+   * arbitrary.
+   */
+  const enterTarget = useMemo((): { entry: IndexEntry; broad: boolean } | null => {
+    if (!index) return null;
+    const typed = normaliseModel(query.trim());
+    if (!typed) return null;
+
+    // 1. The query names a model.
+    const exact = results.find((e) => e.model && normaliseModel(e.model) === typed);
+    if (exact) return { entry: exact, broad: false };
+
+    // 2. One thing matched, so there is nothing to be ambiguous about.
+    if (results.length === 1) return { entry: results[0], broad: false };
+
+    /*
+      3. Exactly ONE range matches the name. "deadbolt" is unambiguous, so Enter opens
+         the deadbolt range. "d" matches Deadbolts, Door Closers and Door Stoppers — three
+         families, no single answer — so Enter must not pick one; those are offered as
+         chips above the results instead, and the reader chooses.
+    */
+    const named = matchedCategories.length ? matchedCategories : nearCategories;
+    if (named.length === 1) return { entry: named[0], broad: true };
+
+    /*
+      4. No range matched by name, but everything we can offer sits in one. "D103" does
+         not exist and matches no category, yet all six near misses are deadbolts — so
+         the range is the honest answer, not whichever variant happened to sort first.
+    */
+    const pool = results.length ? results : nearMatches;
+    if (pool.length) {
+      const hrefs = new Set(pool.map((e) => categoryHrefOf(e.href)).filter(Boolean));
+      if (hrefs.size === 1) {
+        const [href] = [...hrefs];
+        const found = index.find((e) => e.type === "category" && e.href === href);
+        if (found) return { entry: found, broad: true };
+      }
+    }
+
+    return null;
+  }, [index, query, results, nearMatches, nearCategories, matchedCategories]);
+
   const totalMatches = useMemo(() => {
     if (!index) return 0;
     const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
@@ -318,10 +457,9 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
             className="mt-32"
             onSubmit={(event) => {
               event.preventDefault();
-              const target = results[0] ?? nearMatches[0];
-              if (!target) return;
+              if (!enterTarget) return;
               close();
-              router.push(target.href);
+              router.push(enterTarget.entry.href);
             }}
           >
             <label htmlFor="site-search" className="block text-c2 text-ink-secondary">
@@ -358,27 +496,90 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
 
             {!loading && query.trim() && !results.length ? (
               <>
-                <p className="text-c2 text-ink-secondary">
-                  {nearMatches.length ? t.emptyNear : t.empty}
-                </p>
+                {/*
+                  Three answers to "nothing matched", in descending order of usefulness:
+                  the models whose numbers are one character away, the ranges whose names
+                  are close, and — when neither exists, which is the "LV on a lock site"
+                  case — a sentence naming what was typed and pointing at the standing
+                  category menu below. What must never happen again is the bare
+                  "No results" that sent the reader looking for a bug in the box.
+                */}
                 {nearMatches.length ? (
-                  <ul className="mt-16 divide-y divide-line border-y border-line">
-                    {nearMatches.map((entry) => (
-                      <li key={entry.href}>
-                        <Link href={entry.href} onClick={close} className="drawer-link">
-                          <span>
-                            {entry.subtitle ? `${entry.subtitle} — ` : ""}
+                  <>
+                    <p className="text-c2 text-ink-secondary">{t.emptyNear}</p>
+                    <ul className="mt-16 divide-y divide-line border-y border-line">
+                      {nearMatches.map((entry) => (
+                        <li key={entry.href}>
+                          <Link href={entry.href} onClick={close} className="drawer-link">
+                            <span>
+                              {entry.subtitle ? `${entry.subtitle} — ` : ""}
+                              {entry.title}
+                            </span>
+                            <span aria-hidden="true" className="drawer-chevron">
+                              ›
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <p className="text-c2 text-ink-secondary">{t.empty(query.trim())}</p>
+                )}
+
+                {/*
+                  The range Enter would open, as something clickable. A keyboard hint is
+                  no use to a thumb, and this is the one screen where the reader has
+                  nothing else to click: the near misses are variants they did not ask
+                  for, and the standing menu below does not contain the range their
+                  model number belongs to.
+                */}
+                {enterTarget?.broad ? (
+                  <Link
+                    href={enterTarget.entry.href}
+                    onClick={close}
+                    className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"
+                  >
+                    {t.seeRange(enterTarget.entry.title)}
+                  </Link>
+                ) : null}
+
+                {nearCategories.length ? (
+                  <>
+                    <p className="mt-24 text-c2 text-ink-secondary">{t.emptyCategories}</p>
+                    <ul className="mt-16 flex flex-wrap gap-8">
+                      {nearCategories.map((entry) => (
+                        <li key={entry.href}>
+                          <Link href={entry.href} onClick={close} className="search-chip">
                             {entry.title}
-                          </span>
-                          <span aria-hidden="true" className="drawer-chevron">
-                            ›
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
                 ) : null}
               </>
+            ) : null}
+
+            {/*
+              The families first, the individual models after. A buyer who types "d" or
+              "lever" is almost never asking for one SKU; they are asking which ranges we
+              make. Answering that with twenty-four product rows and no visible range is
+              how the box came to look like it had guessed.
+            */}
+            {results.length && matchedCategories.length > 1 ? (
+              <div className="mb-24">
+                <p className="drawer-eyebrow">{t.matchedRanges}</p>
+                <ul className="mt-8 flex flex-wrap gap-8">
+                  {matchedCategories.map((entry) => (
+                    <li key={entry.href}>
+                      <Link href={entry.href} onClick={close} className="search-chip">
+                        {entry.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ) : null}
 
             {results.length ? (
@@ -386,7 +587,16 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
                 <p className="text-c2 text-ink-secondary">
                   {totalMatches}
                   {totalMatches > MAX_RESULTS ? ` (showing ${MAX_RESULTS})` : ""}
-                  <span className="ml-8 text-ink-tertiary">{t.enterHint}</span>
+                  {/* The hint says where Enter actually goes, because where it goes
+                      depends on how specific the query was. */}
+                  {enterTarget ? (
+                    <span className="ml-8 text-ink-tertiary">
+                      ·{" "}
+                      {enterTarget.broad
+                        ? t.enterBroad(enterTarget.entry.title)
+                        : t.enterExact}
+                    </span>
+                  ) : null}
                 </p>
                 <ul className="mt-16 divide-y divide-line border-t border-line">
                   {results.map((entry) => (
