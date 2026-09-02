@@ -7,7 +7,7 @@ import { absoluteUrl } from "@/data/site";
 import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
 import {
-  canonicalCategorySlug,
+  canonicalProductCategory,
   getLegacyProductParams,
 } from "@/data/category-aliases";
 
@@ -23,20 +23,27 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { category, slug } = await params;
-  const product = getProductBySlug(category, slug);
+  const canonicalCategory = canonicalProductCategory(category, slug);
 
-  if (!product) return {};
+  /*
+    THE REDIRECT CHECK COMES BEFORE THE LOOKUP, AND THAT ORDER IS LOAD-BEARING.
 
-  const canonicalCategory = canonicalCategorySlug(category);
-
-  // Retired slug: redirect stub. noindex, but keep the canonical pointing at the real
-  // page — see the fuller note in the category route.
+    A moved product no longer resolves under its OLD category — `getProductBySlug` looks
+    at `categoryPath[0]`, which now names the new home. So looking it up first and
+    bailing on `!product` would return `{}` for exactly the paths that need a canonical,
+    dropping it to the site root; that is the redirect-canonical-mismatch the SEO audit
+    caught once already. A retired path is a redirect stub whether or not the product is
+    findable at the old address, so answer that first.
+  */
   if (canonicalCategory !== category) {
     return {
       robots: { index: false, follow: true },
       alternates: { canonical: `/products/${canonicalCategory}/${slug}/` },
     };
   }
+
+  const product = getProductBySlug(category, slug);
+  if (!product) return {};
   const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
   const spanishUrl = absoluteUrl(`/es${path}`);
@@ -75,7 +82,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { category, slug } = await params;
-  const canonicalCategory = canonicalCategorySlug(category);
+  const canonicalCategory = canonicalProductCategory(category, slug);
 
   if (canonicalCategory !== category) {
     permanentRedirect(`/products/${canonicalCategory}/${slug}/`);

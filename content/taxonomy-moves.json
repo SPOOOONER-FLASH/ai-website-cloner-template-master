@@ -1,0 +1,48 @@
+{
+  "_readme": [
+    "Catalogue routes that changed shape and must keep resolving.",
+    "",
+    "ONE SOURCE, TWO CONSUMERS. src/data/category-aliases.ts reads this to emit the",
+    "browser-side redirect stub Next generates under output:'export', and",
+    "scripts/build-taxonomy-redirects.mjs reads it to write the real 301s in",
+    "deploy/nginx/taxonomy-redirects.conf. Before this file the nginx conf was",
+    "hand-maintained beside a hardcoded TypeScript table, which is two places for one",
+    "fact — the arrangement that silently drifts the first time somebody edits one.",
+    "",
+    "categoryAliases: a whole category slug was retired. Everything under it moves.",
+    "productMoves: a single product changed category while BOTH categories stay live.",
+    "The second kind cannot be expressed as a category alias, because the old category",
+    "is not retired — only that one product left it.",
+    "",
+    "Never delete an entry. The old URL stays indexed for months and a removed entry",
+    "turns a 301 back into a 404, which is the thing this file exists to prevent."
+  ],
+
+  "categoryAliases": {
+    "door-hinges": {
+      "canonical": "brass-steel-hinges",
+      "productSlugs": ["f100-ss-door-hinge", "stainless-steel-door-hinge"]
+    }
+  },
+
+  "productMoves": [
+    {
+      "slug": "315-pry-latch",
+      "from": "hardware-accessories",
+      "to": "panic-exit-devices",
+      "why": "美工 review 2026-09-02: 放回逃生锁类目. The photograph is a push-bar exit device with its strike and fixings; it was filed under hardware-accessories/latches, where no buyer shopping for a panic device would look."
+    },
+    {
+      "slug": "600-concealed-sliding-door-handle",
+      "from": "grip-handle-sets",
+      "to": "stainless-steel-handles",
+      "why": "美工 review 2026-09-02: 这个放在不锈钢拉手的类目. A recessed stainless flush pull, not a grip handle set."
+    },
+    {
+      "slug": "ansi-grade-3-keyed-deadbolt-lock-set",
+      "from": "deadbolts",
+      "to": "grip-handle-sets",
+      "why": "美工 review 2026-09-02: 这个调回大拉手的类目. The set is an entrance handleset — grip handle, thumb latch and deadbolt together — so it belongs with the handlesets rather than among the bare deadbolt bodies."
+    }
+  ]
+}

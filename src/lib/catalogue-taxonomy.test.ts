@@ -52,10 +52,20 @@ test("Door Hinges is merged into Brass & Steel Door Hinges without losing produc
 
 test("legacy hinge URLs resolve to the merged canonical category", () => {
   assert.equal(canonicalCategorySlug("door-hinges"), "brass-steel-hinges");
-  assert.deepEqual(getLegacyProductParams(), [
-    { category: "door-hinges", slug: "f100-ss-door-hinge" },
-    { category: "door-hinges", slug: "stainless-steel-door-hinge" },
-  ]);
+
+  /*
+    Containment, not equality. This test is about the hinge merge; asserting the exact
+    contents of the whole legacy list made it fail the moment three unrelated products
+    were moved between categories in 2026-09, which told us nothing about hinges. The
+    move table has its own test in src/data/taxonomy-moves.test.ts.
+  */
+  const legacy = getLegacyProductParams();
+  for (const slug of ["f100-ss-door-hinge", "stainless-steel-door-hinge"]) {
+    assert.ok(
+      legacy.some((p) => p.category === "door-hinges" && p.slug === slug),
+      `${slug} must still be built under the retired door-hinges path`,
+    );
+  }
 });
 
 test("category cover images belong to the category they introduce", () => {

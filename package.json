@@ -30,7 +30,7 @@
     "dev": "next dev",
     "build": "next build && node scripts/normalize-next-export-segments.mjs",
     "start": "next start",
-    "test": "node --test scripts/watermark-product-images.test.mjs scripts/stahlock-cited-policy.test.mjs src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-dismissal.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/search-matching.test.ts src/lib/catalogue-return.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/product-image-branding.test.ts src/lib/spanish-product.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/editorial-image-uniqueness.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/data/home-destinations.test.ts src/data/home-editorial-assets.test.ts src/data/search-suggestions.test.ts src/data/subcategory-integrity.test.ts src/app/type-scale.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts src/components/site/mobile-navigation.test.ts",
+    "test": "node --test scripts/watermark-product-images.test.mjs scripts/stahlock-cited-policy.test.mjs src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-dismissal.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/search-matching.test.ts src/lib/catalogue-return.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/product-image-branding.test.ts src/lib/spanish-product.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/editorial-image-uniqueness.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/data/home-destinations.test.ts src/data/home-editorial-assets.test.ts src/data/search-suggestions.test.ts src/data/subcategory-integrity.test.ts src/data/taxonomy-moves.test.ts src/app/type-scale.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts src/components/site/mobile-navigation.test.ts",
     "test:export": "node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && npm run export:segments:check",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",
@@ -50,7 +50,8 @@
     "content:workbook": "node scripts/build-supplier-workbook.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "deploy:prep": "npm run build && npm run test:export && node scripts/predeploy-check.mjs",
-    "sheets": "npm run content:workbook && node scripts/build-design-brief.mjs"
+    "sheets": "npm run content:workbook && node scripts/build-design-brief.mjs",
+    "redirects:taxonomy": "node scripts/build-taxonomy-redirects.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
