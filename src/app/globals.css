@@ -1332,4 +1332,242 @@
   .alibaba-hard-cta-compact:active {
     box-shadow: 0.2rem 0.2rem 0 var(--color-shadow-hard);
   }
+
+  /* -- Guided configurator ----------------------------------------------- */
+  /*
+    The motion here is doing a job, not decorating one. A new question arrives as a
+    staggered entrance so it reads as a NEW question rather than the same page with
+    different words; the preview cross-fades so an abstract choice acquires a picture
+    before it is made. Both are cheap — transform and opacity only, no layout — and both
+    are switched off entirely under prefers-reduced-motion at the end of this block.
+  */
+  .config-crumb {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+    transition:
+      color 180ms var(--motion-ease-crisp),
+      border-color 180ms var(--motion-ease-crisp);
+  }
+
+  .config-crumb-current {
+    color: var(--color-ink);
+    border-color: var(--color-ink);
+  }
+
+  .config-crumb-done {
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .config-crumb-done:hover,
+  .config-crumb-done:focus-visible {
+    border-color: var(--color-ink);
+    color: var(--color-brand-hover);
+  }
+
+  .config-reset {
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+
+  .config-reset:hover {
+    color: var(--color-ink);
+  }
+
+  .config-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  @media (min-width: 40rem) {
+    .config-options {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64.5rem) {
+    .config-options {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .config-option,
+  .config-result {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    width: 100%;
+    min-height: 8.8rem;
+    padding: 1.2rem;
+    text-align: left;
+    text-decoration: none;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    transition:
+      border-color 180ms var(--motion-ease-crisp),
+      transform 180ms var(--motion-ease-crisp),
+      box-shadow 180ms var(--motion-ease-crisp);
+  }
+
+  .config-option:hover,
+  .config-option:focus-visible,
+  .config-result:hover,
+  .config-result:focus-visible {
+    border-color: var(--color-ink);
+    transform: translate(-0.2rem, -0.2rem);
+    box-shadow: 0.4rem 0.4rem 0 var(--color-shadow-hard);
+  }
+
+  .config-option:active,
+  .config-result:active {
+    transform: translate(0, 0);
+    box-shadow: 0 0 0 var(--color-shadow-hard);
+  }
+
+  .config-option-media {
+    display: block;
+    flex: 0 0 6.4rem;
+    width: 6.4rem;
+    overflow: hidden;
+    background: var(--color-surface-alt);
+  }
+
+  .config-option-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+
+  .config-option-label {
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    color: var(--color-ink);
+  }
+
+  .config-option-count,
+  .config-result-model {
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .config-result-model {
+    font-family: var(--font-mono, ui-monospace, monospace);
+    color: var(--color-ink);
+  }
+
+  /*
+    Capped, because the image inside is square.
+    Below `xl` the aside is `col-span-full`, so without a maximum the preview became a
+    1206 × 1206 block on a tablet — a screen and a half of one photograph, with the
+    question it illustrates scrolled off the top. It is a supporting image; it should
+    never be the largest thing on the page.
+  */
+  .config-preview {
+    overflow: hidden;
+    max-width: 32rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface-alt);
+  }
+
+  @media (min-width: 90rem) {
+    .config-preview {
+      max-width: none;
+    }
+  }
+
+  .config-preview-media {
+    animation: config-fade 420ms var(--motion-ease-crisp) both;
+  }
+
+  .config-count {
+    font-size: var(--text-h3);
+    line-height: 1;
+    color: var(--color-ink);
+  }
+
+  .config-cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 5.6rem;
+    padding: 1.2rem 2.4rem;
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    color: var(--color-surface);
+    background: var(--color-ink);
+    text-decoration: none;
+    box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
+    transition:
+      transform 180ms var(--motion-ease-crisp),
+      box-shadow 180ms var(--motion-ease-crisp);
+  }
+
+  .config-cta:hover,
+  .config-cta:focus-visible {
+    transform: translate(-0.2rem, -0.2rem);
+    box-shadow: 0.8rem 0.8rem 0 var(--color-shadow-hard);
+  }
+
+  .config-option-in {
+    animation: config-rise 380ms var(--motion-ease-crisp) both;
+  }
+
+  @keyframes config-rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.8rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes config-fade {
+    from {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /*
+    Reduced motion removes the movement, not the interface. The stagger and the
+    cross-fade exist to make a change legible; somebody who has asked for less motion
+    still needs the change to be legible, so the elements arrive at their final state
+    immediately rather than not arriving.
+  */
+  @media (prefers-reduced-motion: reduce) {
+    .config-option-in,
+    .config-preview-media {
+      animation: none;
+    }
+
+    .config-option,
+    .config-result,
+    .config-cta,
+    .config-crumb {
+      transition: none;
+    }
+
+    .config-option:hover,
+    .config-result:hover,
+    .config-cta:hover {
+      transform: none;
+    }
+  }
 }

@@ -203,8 +203,28 @@ export default function ProductsPage() {
               view can be pasted straight into an email to a colleague.
             </p>
 
+            {/*
+              Two tools, and the distinction is worth stating rather than leaving the
+              reader to discover: the Finder assumes you know the vocabulary, the
+              configurator supplies it one question at a time. Clarity shows both kinds of
+              visitor, and until now only the first had a tool.
+            */}
+            <p className="mt-24 text-c1 text-ink-secondary">
+              Not sure which attributes to filter on? The{" "}
+              <Link
+                href="/configurator/"
+                className="short-marker short-marker-compact text-brand hover:text-brand-hover"
+              >
+                guided configurator
+              </Link>{" "}
+              asks one question at a time and never offers a choice that leads nowhere.
+            </p>
+
             <div className="mt-32 flex flex-wrap items-center gap-16">
               <Button href="/product-finder/">Open the Product Finder</Button>
+              <Button href="/configurator/" variant="secondary">
+                Guided selection
+              </Button>
               <Button href="/contact/" variant="secondary">
                 Ask an export engineer
               </Button>

@@ -70,6 +70,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // The finder is a real landing page, not a widget: it is the page that ranks for
     // attribute queries ("panic bar 1000mm stainless") rather than model numbers.
     ...entry("/product-finder", PRIORITY.section, "weekly"),
+    // Guided selection, bilingual. Same tier as the Finder: both are catalogue entry
+    // points rather than content, and both are how a buyer reaches a model.
+    ...entry("/configurator", PRIORITY.section, "weekly"),
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
     ...entry("/certifications", PRIORITY.support),

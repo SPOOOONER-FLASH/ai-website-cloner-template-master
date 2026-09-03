@@ -23,6 +23,8 @@ const SPANISH_MIRROR_PREFIXES = [
   // Same day: the sub-category collections. These needed Spanish names for the 21
   // children first — see scripts/add-subcategory-es-names.mjs.
   "/collections",
+  // The guided configurator, bilingual from the day it shipped.
+  "/configurator",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */

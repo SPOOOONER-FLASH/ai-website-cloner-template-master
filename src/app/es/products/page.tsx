@@ -140,9 +140,28 @@ export default function ProductosPage() {
                 podemos completar, cuáles quedan a falta de una pieza y cuáles no
                 fabricamos. Es más rápido que cotizar línea por línea.
               </p>
-              <div className="mt-32">
+              {/* Mirrors the English catalogue index — the configurator's only inbound
+                  link on this side, and the reason it is not an orphan page. */}
+              <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
+                ¿No sabe por qué atributo filtrar? El{" "}
+                <Link
+                  href="/es/configurator/"
+                  className="short-marker short-marker-compact text-brand hover:text-brand-hover"
+                >
+                  configurador guiado
+                </Link>{" "}
+                pregunta de una en una y nunca ofrece una opción que no lleve a ningún
+                sitio.
+              </p>
+              <div className="mt-32 flex flex-wrap items-center gap-24">
                 <Link href="/es/contact/" className="text-c1 text-brand hover:text-brand-hover">
                   Escribir al equipo de exportación
+                </Link>
+                <Link
+                  href="/es/configurator/"
+                  className="text-c1 text-brand hover:text-brand-hover"
+                >
+                  Abrir el configurador
                 </Link>
               </div>
             </div>
