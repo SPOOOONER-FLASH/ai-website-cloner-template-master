@@ -108,21 +108,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         (p) => p.categoryPath[0] === category.slug && p.categoryPath[1] === child.slug,
       ).length;
       if (!count) continue;
-      urls.push({
-        url: absoluteUrl(`/collections/${category.slug}-${child.slug}/`),
-        changeFrequency: "monthly",
-        priority: PRIORITY.category,
-      });
+      // Both locales since 2026-09-03; `entry()` emits the pair with reciprocal hreflang.
+      urls.push(
+        ...entry(`/collections/${category.slug}-${child.slug}`, PRIORITY.category, "monthly"),
+      );
     }
   }
 
+  /*
+    Comparison tables, both locales. `entry()` rather than a bare push because these now
+    have a Spanish mirror — it emits the pair with reciprocal hreflang, which a hand-built
+    single URL would not, and a Spanish page absent from the sitemap is the thing the
+    graph audit calls `indexable-not-in-sitemap`.
+  */
   for (const category of categories) {
     if (getProductsByCategory(category.slug).length < 3) continue;
-    urls.push({
-      url: absoluteUrl(`/compare/${category.slug}/`),
-      changeFrequency: "monthly",
-      priority: PRIORITY.support,
-    });
+    urls.push(...entry(`/compare/${category.slug}`, PRIORITY.support, "monthly"));
   }
 
   /*

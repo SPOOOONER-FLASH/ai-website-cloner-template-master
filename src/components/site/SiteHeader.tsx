@@ -464,17 +464,20 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                                 /*
                                   The static collection page, not the filter query.
 
-                                  This shelf is server-rendered on all 974 pages, so it
-                                  is the one place a crawler reliably sees sub-category
-                                  links. Pointing it at ?type= gave those 19 pages no
+                                  This shelf is server-rendered on every page, so it is
+                                  the one place a crawler reliably sees sub-category
+                                  links. Pointing it at ?type= gave those pages no
                                   inbound link at all — they existed only in the sitemap,
                                   which is precisely how a page ends up "discovered, not
-                                  indexed". Spanish keeps the filter: /collections/ is
-                                  English-only for now.
+                                  indexed".
+
+                                  Spanish joined on 2026-09-03, when /es/collections/
+                                  shipped. Until then it kept the filter, because a link
+                                  to a page that does not exist is worse than a weak one.
                                 */
                                 href={
                                   isSpanish
-                                    ? `${href}?type=${child.slug}`
+                                    ? `/es/collections/${category.slug}-${child.slug}/`
                                     : `/collections/${category.slug}-${child.slug}/`
                                 }
                                 onClick={() => setOpenShelf(null)}

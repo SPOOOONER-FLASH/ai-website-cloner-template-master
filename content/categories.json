@@ -19,7 +19,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Fire door panic device"
-          }
+          },
+          "nameEs": "Barras antipánico para puertas cortafuegos"
         },
         {
           "slug": "alarmed",
@@ -29,7 +30,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Alarmed panic bar"
-          }
+          },
+          "nameEs": "Barras antipánico con alarma"
         },
         {
           "slug": "multi-point",
@@ -39,7 +41,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Two point locking exit device"
-          }
+          },
+          "nameEs": "Cierre multipunto"
         },
         {
           "slug": "exterior-trim",
@@ -50,7 +53,8 @@
             "src": "/images/products/023-etan-anti-pick-panic-exit-device.webp",
             "ratio": "1 / 1",
             "label": "Keyed exterior panic-device trim"
-          }
+          },
+          "nameEs": "Manillas exteriores para antipánico"
         },
         {
           "slug": "special-applications",
@@ -61,7 +65,8 @@
             "src": "/images/products/317-cold-room-push-bar-exit-device.webp",
             "ratio": "1 / 1",
             "label": "Cold-room push bar exit device"
-          }
+          },
+          "nameEs": "Aplicaciones especiales"
         }
       ],
       "nameEs": "Barras antipánico",
@@ -125,7 +130,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Commercial lock"
-          }
+          },
+          "nameEs": "Cerraduras comerciales"
         },
         {
           "slug": "heavy-duty-cylindrical-locks",
@@ -136,7 +142,8 @@
             "src": "/images/products/cylindrical-knob-lock.webp",
             "ratio": "1 / 1",
             "label": "Heavy duty cylindrical lock"
-          }
+          },
+          "nameEs": "Cerraduras cilíndricas de servicio pesado"
         },
         {
           "slug": "light-duty-cylindrical-locks",
@@ -146,7 +153,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Light duty cylindrical lock"
-          }
+          },
+          "nameEs": "Cerraduras cilíndricas de servicio ligero"
         },
         {
           "slug": "tubular-locks",
@@ -157,7 +165,8 @@
             "src": "/images/products/tubular-knob-lock.webp",
             "ratio": "1 / 1",
             "label": "Tubular lock"
-          }
+          },
+          "nameEs": "Cerraduras tubulares"
         },
         {
           "slug": "wafer-locks",
@@ -167,7 +176,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Wafer lock"
-          }
+          },
+          "nameEs": "Cerraduras de oblea"
         }
       ],
       "nameEs": "Cerraduras de pomo",
@@ -258,7 +268,8 @@
             "src": "/images/products/glass-door-patch-fitting-set.webp",
             "ratio": "1 / 1",
             "label": "Glass door patch fitting"
-          }
+          },
+          "nameEs": "Herrajes de fijación para puertas de vidrio"
         },
         {
           "slug": "glass-door-handles",
@@ -269,7 +280,8 @@
             "src": "/images/products/stainless-steel-glass-door-pull-handle.webp",
             "ratio": "1 / 1",
             "label": "Glass door pull handle"
-          }
+          },
+          "nameEs": "Manijas para puertas de vidrio"
         }
       ],
       "nameEs": "Herrajes para puertas de vidrio",
@@ -294,7 +306,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Armoured lock cover"
-          }
+          },
+          "nameEs": "Escudos de seguridad"
         },
         {
           "slug": "door-viewers",
@@ -304,7 +317,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door viewer"
-          }
+          },
+          "nameEs": "Mirillas"
         },
         {
           "slug": "door-stoppers",
@@ -314,7 +328,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door stopper"
-          }
+          },
+          "nameEs": "Topes de puerta"
         },
         {
           "slug": "power-transfer-devices",
@@ -324,7 +339,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door power transfer device"
-          }
+          },
+          "nameEs": "Pasacables para puertas"
         },
         {
           "slug": "door-flush-bolts",
@@ -334,7 +350,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door flush bolt"
-          }
+          },
+          "nameEs": "Pasadores embutidos"
         },
         {
           "slug": "house-numbers",
@@ -344,7 +361,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "House number"
-          }
+          },
+          "nameEs": "Números para viviendas"
         },
         {
           "slug": "indicators",
@@ -354,7 +372,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door indicator"
-          }
+          },
+          "nameEs": "Indicadores de libre/ocupado"
         },
         {
           "slug": "latches",
@@ -364,7 +383,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Door latch"
-          }
+          },
+          "nameEs": "Picaportes"
         },
         {
           "slug": "security-door-guards",
@@ -374,7 +394,8 @@
           "image": {
             "ratio": "1 / 1",
             "label": "Security door guard"
-          }
+          },
+          "nameEs": "Cadenas de seguridad"
         }
       ],
       "nameEs": "Accesorios de herrajes",

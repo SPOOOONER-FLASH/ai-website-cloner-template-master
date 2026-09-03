@@ -89,6 +89,45 @@ export default function ProductosPage() {
           </div>
         </section>
 
+        {/*
+          Mirrors the English catalogue index. The comparison pages had exactly one
+          inbound link each — from the spec table at the bottom of their own category
+          page — which is how a page ends up crawled but never ranked. Fifteen links from
+          the page a buyer lands on fixes that and gives the reader somewhere obvious to
+          go when they are choosing between models rather than browsing.
+        */}
+        <section className="layout mt-96 lg:mt-136" aria-labelledby="comparar">
+          <div className="col-content grid w-full grid-cols gap-x gap-y-24">
+            <div className="col-span-full flex items-end justify-between gap-24 border-b border-line pb-16">
+              <h2 id="comparar" className="text-h3 text-ink">
+                Comparar modelos en paralelo
+              </h2>
+              <p className="text-c2 text-ink-secondary">Una tabla por categoría</p>
+            </div>
+            <div className="col-span-full">
+              <p className="max-w-[68ch] text-c1 text-ink-secondary">
+                Todos los modelos de una gama, una fila cada uno, con las especificaciones
+                que los distinguen — distancia al eje, entrepuntos, espesor de puerta,
+                acabado.
+              </p>
+              <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
+                {categories
+                  .filter((category) => getProductsByCategory(category.slug).length >= 3)
+                  .map((category) => (
+                    <li key={category.slug}>
+                      <Link
+                        href={`/es/compare/${category.slug}/`}
+                        className="short-marker short-marker-compact text-c1 text-ink hover:text-brand-hover"
+                      >
+                        Comparar {(category.nameEs ?? category.name).toLowerCase()}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="layout mt-144 lg:mt-192" aria-labelledby="consulta">
           <div className="col-content grid w-full grid-cols gap-x gap-y-48">
             <div className="col-span-full border-t border-line pt-48 xl:col-span-13">

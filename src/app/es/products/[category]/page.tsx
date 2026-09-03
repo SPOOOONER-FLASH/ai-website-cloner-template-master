@@ -160,7 +160,12 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
             />
           </div>
         </section>
-        <SpecMatrix products={products} categorySlug={category.slug} locale="es" />
+        <SpecMatrix
+          products={products}
+          categorySlug={category.slug}
+          locale="es"
+          showCompareLink
+        />
       </main>
     </>
   );

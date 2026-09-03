@@ -182,9 +182,15 @@ export function SpecMatrix({
           <p className="mt-16 text-c2 text-ink-secondary">{t.more(rows.length)}</p>
         ) : null}
 
-        {showCompareLink && !es ? (
+        {/*
+          Both locales now. The `!es` guard was correct while /es/compare/ did not exist —
+          it kept a Spanish category page from linking into a 404. The Spanish mirror
+          shipped 2026-09-03, so the guard would now be hiding a real page from exactly
+          the readers it was written for.
+        */}
+        {showCompareLink ? (
           <Link
-            href={`/compare/${categorySlug}/`}
+            href={es ? `/es/compare/${categorySlug}/` : `/compare/${categorySlug}/`}
             className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"
           >
             {t.openCompare}

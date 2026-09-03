@@ -10,7 +10,20 @@
  * `/products/argentina-ar4` exact-path exception redundant, since the prefix now covers
  * it — the market collection keeps its own route, but no longer needs its own entry.
  */
-const SPANISH_MIRROR_PREFIXES = ["/", "/company", "/contact", "/projects", "/products"];
+const SPANISH_MIRROR_PREFIXES = [
+  "/",
+  "/company",
+  "/contact",
+  "/projects",
+  "/products",
+  // 2026-09-03: the comparison tables mirror. SpecMatrix already rendered in Spanish;
+  // only the page was missing, so an English buyer had fifteen comparison pages and a
+  // Spanish one had none.
+  "/compare",
+  // Same day: the sub-category collections. These needed Spanish names for the 21
+  // children first — see scripts/add-subcategory-es-names.mjs.
+  "/collections",
+];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */
 const SPANISH_MIRROR_PATHS = new Set<string>();

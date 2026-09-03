@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { getRelatedProducts, products } from "@/data/products";
+import { getRelatedProducts, products, publishedProducts } from "@/data/products";
 import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { ArrowLink } from "./ArrowLink";
@@ -189,16 +189,20 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const categoryHref = `${base}/products/${product.categoryPath[0]}/`;
 
   /*
-    Comparison pages are English-only and exist only where a range holds enough models to
-    make a table — SpecMatrix renders nothing under three rows, so linking to a range
-    below that would send the reader to an empty page. The same three-row floor is
-    applied here rather than assumed.
+    Comparison pages exist in both locales since 2026-09-03, and only where a range holds
+    enough models to make a table — SpecMatrix renders nothing under three rows, so
+    linking to a range below that would send the reader to an empty page. The same
+    three-row floor is applied here rather than assumed.
+
+    The count is over PUBLISHED products, matching what the comparison page itself lists;
+    counting the withheld ones would offer a link to a table that turns out to be shorter
+    than the floor.
   */
-  const categoryCount = products.filter(
+  const categoryCount = publishedProducts.filter(
     (p) => p.categoryPath[0] === product.categoryPath[0],
   ).length;
   const compareHref =
-    !es && categoryCount >= 3 ? `/compare/${product.categoryPath[0]}/` : null;
+    categoryCount >= 3 ? `${base}/compare/${product.categoryPath[0]}/` : null;
   const alibaba = alibabaLinkFor(product);
   const relatedHeading = related
     ? related.source === "curated"
