@@ -1,11 +1,40 @@
 import type { PromoCard } from "@/data/types";
 
 /** Select one compact promotion so campaign cards never stack over page imagery. */
+/** `/es/contact/` and `/contact` both normalise to `/contact/`. */
+function samePage(href: string, pathname: string): boolean {
+  const strip = (value: string) =>
+    (value.replace(/^\/es(?=\/|$)/, "") || "/").replace(/\/*$/, "/");
+  return strip(href) === strip(pathname);
+}
+
+/**
+ * The next card to show — never one whose call to action is the page already open.
+ *
+ * MEASURED, NOT GUESSED. Clarity recorded visitors on /contact/ clicking the promo card's
+ * "Contact us" button three times in three seconds — 00:40, 00:41, 00:42 — and getting
+ * nothing, because the button links to the page they were already on. Clarity classes
+ * those as dead clicks, and the repetition is what a person does when they believe
+ * something is broken. Several sessions did it.
+ *
+ * A promotion offering the page you are reading is not merely useless; it is the most
+ * prominent control on the screen doing nothing when pressed, which is indistinguishable
+ * from a broken site. The card is skipped rather than the whole rail hidden, so the
+ * catalogue card still gets its turn on the contact page.
+ *
+ * `pathname` is optional so existing callers and tests that do not care about location
+ * keep working unchanged.
+ */
 export function selectActivePromoCard(
   cards: PromoCard[],
   dismissedHrefs: string[],
+  pathname?: string,
 ): PromoCard | undefined {
-  return cards.find((card) => !dismissedHrefs.includes(card.ctaHref));
+  return cards.find(
+    (card) =>
+      !dismissedHrefs.includes(card.ctaHref) &&
+      !(pathname && samePage(card.ctaHref, pathname)),
+  );
 }
 
 export function localisePromoCardCopy(card: PromoCard, locale: "en" | "es") {

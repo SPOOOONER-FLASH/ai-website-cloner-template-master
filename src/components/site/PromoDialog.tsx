@@ -166,7 +166,7 @@ export function PromoDialog() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open, dismissAll]);
 
-  const activeCard = selectActivePromoCard(promoDialog.cards, dismissed);
+  const activeCard = selectActivePromoCard(promoDialog.cards, dismissed, pathname);
   const locale = pathname.startsWith("/es") ? "es" : "en";
 
   if (!open || !activeCard) return null;

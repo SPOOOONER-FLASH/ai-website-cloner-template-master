@@ -42,6 +42,25 @@ export function SiteFooter() {
   const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
   const locale = isSpanish ? "es" : "en";
 
+  /*
+    A FOOTER LINK TO THE PAGE YOU ARE ALREADY ON IS A DEAD CLICK.
+
+    Clarity recorded visitors on /contact/ clicking a "Contact" element three times in
+    three seconds — 00:40, 00:41, 00:42 — with nothing happening, across several
+    sessions. The cause is here: the footer carries "Contact" twice, and on /contact/
+    both point at the current page. Somebody scrolls to the bottom looking for the
+    address, sees the word they want, clicks, and the page does not move. So they click
+    again. That is what a person does when they think something is broken, and from
+    where they are sitting it is.
+
+    Rendered as plain text instead of a link, with aria-current so assistive technology
+    is told the same thing the styling says. Nothing to press, nothing to fail.
+  */
+  const isCurrent = (href: string) => {
+    const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
+    return strip(href) === strip(pathname);
+  };
+
   return (
     <div className="mt-48 flex-grow-0 sm:mt-96">
       {/* Full-bleed rule: the border spans the viewport, the inner .layout bands the content. */}
@@ -52,12 +71,18 @@ export function SiteFooter() {
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
                 {LEGAL_LINKS[locale].map((link) => (
                   <li key={link.label} className="col-span-2 md:col-span-3">
-                    <Link
-                      href={link.href}
-                      className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
-                    >
-                      {link.label}
-                    </Link>
+                    {isCurrent(link.href) ? (
+                      <span aria-current="page" className="text-c1 text-ink-secondary">
+                        {link.label}
+                      </span>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
                 <li className="col-span-2 md:col-span-3">
@@ -104,13 +129,20 @@ export function SiteFooter() {
                 {isSpanish ? "Cómo comprar" : "How to buy"}
               </h3>
               <ul className="space-y-16">
-                {footerNav.map((link) => (
-                  <li key={link.href}>
-                    <ArrowLink href={localisedHref(link.href, locale)}>
-                      {navLabel(link, locale)}
-                    </ArrowLink>
-                  </li>
-                ))}
+                {footerNav.map((link) => {
+                  const href = localisedHref(link.href, locale);
+                  return (
+                    <li key={link.href}>
+                      {isCurrent(href) ? (
+                        <span aria-current="page" className="text-c1 text-ink-secondary">
+                          {navLabel(link, locale)}
+                        </span>
+                      ) : (
+                        <ArrowLink href={href}>{navLabel(link, locale)}</ArrowLink>
+                      )}
+                    </li>
+                  );
+                })}
                 {siteSettings.alibaba.storefront ? (
                   <li>
                     <a

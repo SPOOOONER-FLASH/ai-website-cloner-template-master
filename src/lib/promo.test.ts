@@ -76,3 +76,24 @@ test("localisePromoCardCopy gives the dismiss control a localized name", () => {
   );
   assert.equal(localisePromoCardCopy(card, "en").closeLabel, "Close: Talk to us");
 });
+
+test("a promo card is never offered on the page it links to", () => {
+  /*
+    Clarity recorded visitors on /contact/ clicking the card's "Contact us" button three
+    times in three seconds and getting nothing. Dead clicks on the most prominent control
+    on the screen read as a broken site, so the card has to stand down on its own page.
+  */
+  const cards = [
+    { ctaHref: "/contact/" },
+    { ctaHref: "/downloads/canton-hyland-product-catalogue-2026.pdf" },
+  ] as Parameters<typeof selectActivePromoCard>[0];
+
+  assert.equal(selectActivePromoCard(cards, [], "/contact/")?.ctaHref, cards[1].ctaHref);
+  // Trailing slash and the Spanish prefix are the same page.
+  assert.equal(selectActivePromoCard(cards, [], "/contact")?.ctaHref, cards[1].ctaHref);
+  assert.equal(selectActivePromoCard(cards, [], "/es/contact/")?.ctaHref, cards[1].ctaHref);
+  // Anywhere else, it leads as before.
+  assert.equal(selectActivePromoCard(cards, [], "/products/")?.ctaHref, "/contact/");
+  // No pathname given: unchanged behaviour for callers that do not pass one.
+  assert.equal(selectActivePromoCard(cards, [])?.ctaHref, "/contact/");
+});
