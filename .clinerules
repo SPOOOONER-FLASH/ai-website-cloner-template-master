@@ -206,6 +206,30 @@ output.
 - Review the other agent's finished commit read-only when useful. Put any fix in a new,
   focused commit so authorship and rollback stay clear.
 
+### Check for an installed skill before starting design, SEO or copy work
+
+Client instruction, 2026-09-03: "每次你自己先检测有没有可用的，就用上助力."
+
+35 skills are installed; `docs/collaboration/SKILLS.md` says what each one is for and
+which of the ten downloaded repositories it came from. Before a task in one of those
+areas, look at whether one covers it — `redesign-skill` before auditing a page by eye,
+`geo-audit` before writing another bespoke audit script, `cro` before guessing at a
+conversion problem, `copywriting` before drafting 126 product summaries by hand.
+
+The reason is not tooling enthusiasm. A skill carries a checklist somebody built from
+doing the thing many times, and it catches the case you would not have thought to check.
+`impeccable` ships 61 DETERMINISTIC detector rules for AI-generated design — those are
+more reliable than my judgement about whether a page looks templated, because they do not
+depend on my judgement at all.
+
+**Skills are not free, so do not install indiscriminately.** Every installed skill's name
+and description loads into context at session start. The ten repositories hold 1,586
+skills between them — roughly 110k tokens if installed wholesale, which would crowd out
+the actual work and make the choice worse by offering too many. Install per project need.
+
+`npx skills add <repo>` is the real installer; a hand-copied zip has no update path. See
+SKILLS.md for per-repository commands.
+
 ### Anything the client must do by hand goes in the runbook, in full
 
 `docs/collaboration/CLIENT-RUNBOOK.md` is the one place that tells Spooner what to do on
