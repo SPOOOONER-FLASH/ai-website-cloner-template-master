@@ -54,6 +54,22 @@
 <priority>0.7</priority>
 </url>
 <url>
+<loc>https://cantonlock.com/configurator/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/configurator/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/configurator/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/configurator/" />
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/es/configurator/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/configurator/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/configurator/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/configurator/" />
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
 <loc>https://cantonlock.com/projects/</loc>
 <xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/projects/" />
 <xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/projects/" />
