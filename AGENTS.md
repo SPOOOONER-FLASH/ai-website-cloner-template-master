@@ -203,6 +203,21 @@ output.
 - Review the other agent's finished commit read-only when useful. Put any fix in a new,
   focused commit so authorship and rollback stay clear.
 
+### Anything the client must do by hand goes in the runbook, in full
+
+`docs/collaboration/CLIENT-RUNBOOK.md` is the one place that tells Spooner what to do on
+the server, in Cloudflare, in Search Console and in Clarity. When you finish work that
+needs a manual step, add or update the section there — do not leave the instructions in a
+chat reply, which is gone at the next compaction.
+
+Write it for somebody who is not a developer and is being asked to run a command that can
+take the site down. Every step names **where to click, what to type, what success looks
+like, and what to do when it does not appear**. A command whose success is silent says so.
+A command that can break the site is preceded by its check (`nginx -t` before
+`nginx -s reload`) and by an explicit "stop here and send me a screenshot" if the check
+fails. "Reload nginx" is not an instruction; it is an assumption that the reader already
+knows what you know.
+
 ### Cloudflare purge is client-only
 
 - Agents must not open the Cloudflare dashboard to click `Purge Everything`, automate the
