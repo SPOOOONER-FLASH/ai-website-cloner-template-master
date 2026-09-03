@@ -34,6 +34,13 @@ const COPY = {
     configuration: "Configuration",
     certifications: "Standards and certifications",
     downloads: "Downloads",
+    nextSteps: "Next steps",
+    compareRange: "Compare every model in this range",
+    compareHelp:
+      "One table, one row per model, across the specifications that differ between them.",
+    faqLink: "Ordering, lead times and samples",
+    faqHelp:
+      "Minimum order quantity, production lead time, sample policy, payment terms and OEM work — answered in full.",
     material: "Material",
     finishes: "Available finishes",
     doorTypes: "Suitable door types",
@@ -73,6 +80,13 @@ const COPY = {
     configuration: "Configuración",
     certifications: "Normas y certificaciones",
     downloads: "Descargas",
+    nextSteps: "Siguientes pasos",
+    compareRange: "Comparar todos los modelos de esta gama",
+    compareHelp:
+      "Una tabla, una fila por modelo, con las especificaciones que los distinguen.",
+    faqLink: "Pedidos, plazos y muestras",
+    faqHelp:
+      "Pedido mínimo, plazo de producción, política de muestras, condiciones de pago y trabajo OEM — respondido en detalle.",
     material: "Material",
     finishes: "Acabados disponibles",
     doorTypes: "Tipos de puerta compatibles",
@@ -173,6 +187,18 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const quoteHref = `${base}/contact/?${quoteParams.toString()}`;
   const productHref = `${base}/products/${product.categoryPath[0]}/${product.slug}/`;
   const categoryHref = `${base}/products/${product.categoryPath[0]}/`;
+
+  /*
+    Comparison pages are English-only and exist only where a range holds enough models to
+    make a table — SpecMatrix renders nothing under three rows, so linking to a range
+    below that would send the reader to an empty page. The same three-row floor is
+    applied here rather than assumed.
+  */
+  const categoryCount = products.filter(
+    (p) => p.categoryPath[0] === product.categoryPath[0],
+  ).length;
+  const compareHref =
+    !es && categoryCount >= 3 ? `/compare/${product.categoryPath[0]}/` : null;
   const alibaba = alibabaLinkFor(product);
   const relatedHeading = related
     ? related.source === "curated"
@@ -400,7 +426,17 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
         </div>
       </section>
 
-      {/* 5 — Certifications */}
+      {/*
+        5 — Certifications, ONLY where a certificate actually exists.
+
+        Twenty of 435 models carry one. The other 415 rendered a heading, a sentence
+        saying there is nothing, and a second sentence about checking scope — three
+        lines that told the reader the site has no answer, repeated identically on 415
+        pages. The client's instruction was blunt and correct: take it down until there
+        is something to show. A section that only ever says "nothing here" is worse than
+        no section, and 415 identical paragraphs are duplicate content besides.
+      */}
+      {product.certifications.length ? (
       <section className="layout mt-144 lg:mt-288" aria-labelledby="certifications-heading">
         <div className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full xl:col-span-8">
@@ -442,27 +478,50 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
           </div>
         </div>
       </section>
+      ) : null}
 
-      {/* 6 — Attachments */}
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="attachments-heading">
+      {/*
+        6 — What used to be "Downloads", now something that exists.
+
+        Not one product of 435 has an attachment, so this slot rendered the same
+        "available on request while the library is being prepared" sentence on every
+        page on the site — a promise with nothing behind it, in the position a buyer
+        looks for a datasheet.
+
+        The client's call was to put the work already done here instead: the answered
+        buyer questions on /faq/, and the comparison table for this range. Both are real
+        pages with real content, and both are the next thing somebody reading a spec
+        table actually wants — "how do I order this" and "how does it differ from the
+        one next to it". It also earns the comparison pages an inbound link from all 435
+        product pages rather than from the catalogue index alone.
+      */}
+      <section className="layout mt-144 lg:mt-288" aria-labelledby="next-steps-heading">
         <div className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full xl:col-span-8">
-            <h2 id="attachments-heading" className="text-h3 text-ink">
-              {t.downloads}
+            <h2 id="next-steps-heading" className="text-h3 text-ink">
+              {t.nextSteps}
             </h2>
           </div>
           <div className="col-span-full xl:col-span-16 xl:col-start-9">
-            {product.attachmentIds.length ? (
-              <ul className="border-t border-line">
-                {product.attachmentIds.map((attachmentId) => (
-                  <li key={attachmentId} className="border-b border-line py-16">
-                    <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <EmptyState>{t.noDownloads}</EmptyState>
-            )}
+            <ul className="border-t border-line">
+              {product.attachmentIds.map((attachmentId) => (
+                <li key={attachmentId} className="border-b border-line py-16">
+                  <ArrowLink href={`/downloads/#${attachmentId}`}>{attachmentId}</ArrowLink>
+                </li>
+              ))}
+              {compareHref ? (
+                <li className="border-b border-line py-16">
+                  <ArrowLink href={compareHref}>{t.compareRange}</ArrowLink>
+                  <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">
+                    {t.compareHelp}
+                  </p>
+                </li>
+              ) : null}
+              <li className="border-b border-line py-16">
+                <ArrowLink href={es ? "/es/faq/" : "/faq/"}>{t.faqLink}</ArrowLink>
+                <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.faqHelp}</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

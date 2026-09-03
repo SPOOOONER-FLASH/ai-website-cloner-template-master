@@ -5,7 +5,7 @@ import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/Json
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { getTopLevelCategories } from "@/data/categories";
-import { products as allProducts } from "@/data/products";
+import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 
@@ -44,7 +44,7 @@ function collections(): Collection[] {
   const out: Collection[] = [];
   for (const category of getTopLevelCategories()) {
     for (const child of category.children ?? []) {
-      const count = allProducts.filter(
+      const count = publishedProducts.filter(
         (p) => p.categoryPath[0] === category.slug && p.categoryPath[1] === child.slug,
       ).length;
       if (!count) continue;
@@ -67,8 +67,15 @@ function find(slug: string): Collection | undefined {
   return collections().find((c) => c.slug === slug);
 }
 
+/*
+  Published only. This page renders an ItemList in JSON-LD, so listing a product that is
+  withheld for having no photograph would advertise a noindex page to a crawler as a
+  member of a collection — the SEO gate catches it as `jsonld-internal-url-target-missing`.
+  A sub-category that empties out entirely stops being built, which is the same rule the
+  page already applied to the two sub-categories that hold nothing.
+*/
 function productsIn(collection: Collection) {
-  return allProducts.filter(
+  return publishedProducts.filter(
     (p) =>
       p.categoryPath[0] === collection.category.slug &&
       p.categoryPath[1] === collection.child.slug,

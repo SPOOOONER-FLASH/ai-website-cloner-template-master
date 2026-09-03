@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { categories } from "@/data/categories";
-import { getAllProductParams, getProductBySlug, getProductsByCategory, products } from "@/data/products";
+import {
+  getAllProductParams,
+  getProductBySlug,
+  getProductsByCategory,
+  isPublished,
+  products,
+} from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
 import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
@@ -130,7 +136,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   */
   for (const { category, slug } of getAllProductParams()) {
     const product = getProductBySlug(category, slug);
-    const hero = product?.heroImage?.src;
+    /*
+      A product with no photograph is unpublished: taken out of every listing and marked
+      noindex, so advertising it here would be asking a crawler to index a page we have
+      told it not to — the exact contradiction the SEO audit flags as
+      `noindex-in-sitemap`. The page is still built; it is simply not promoted.
+    */
+    if (!product || !isPublished(product)) continue;
+    const hero = product.heroImage?.src;
     urls.push(
       ...entry(
         `/products/${category}/${slug}`,

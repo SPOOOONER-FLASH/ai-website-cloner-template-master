@@ -33,6 +33,11 @@ if (asJson) {
 
   console.log(`release state: ${summary.releaseState}`);
   console.log(`pages built: ${summary.pages} (${summary.publicPages} public content pages)`);
+  if (summary.withheldPages) {
+    // Deliberately noindex and out of the sitemap — currently the products with no
+    // photograph. Printed so the number cannot grow unnoticed.
+    console.log(`  withheld on purpose: ${summary.withheldPages}`);
+  }
   console.log(`  with JSON-LD: ${summary.jsonLdPages}`);
   console.log(`  with real alternate link tags: ${summary.alternateLinkPages}`);
   console.log(`  semantic issues: ${summary.semanticIssues}`);

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
-import { getAllProductParams, getProductBySlug } from "@/data/products";
+import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
@@ -49,6 +49,24 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   return {
     title: { absolute: metaTitle },
     description: metaDescription,
+    /*
+      Mirrors the English route: a product with no photograph is unpublished, so this
+      page is noindex too.
+
+      Doing only the English side left 75 Spanish pages indexable and absent from the
+      sitemap, which the SEO gate caught as `sitemap-missing-page` ×150. Worth
+      remembering as a shape rather than as one bug — every indexability decision here
+      has two pages, and the Spanish one is the easy half to forget.
+    */
+    ...(isPublished(product)
+      ? {}
+      : {
+          robots: { index: false, follow: true },
+          // Marks the noindex as deliberate. scripts/lib/seo-audit.mjs treats a public
+          // page as withheld only when this is present, so an ACCIDENTAL noindex still
+          // fails the gate — which is the whole reason that check exists.
+          other: { "canton-withheld": "awaiting-photography" },
+        }),
     alternates: {
       canonical: path,
       languages: {

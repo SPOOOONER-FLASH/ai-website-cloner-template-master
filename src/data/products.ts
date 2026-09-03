@@ -54,6 +54,35 @@ export const products: Product[] = generatedProducts.map((product) => ({
   })),
 }));
 
+/**
+ * A product without a photograph is not published.
+ *
+ * WHY THIS IS A RULE AND NOT A FLAG. 75 records have no hero image, and a product page
+ * with no photograph is a page a buyer cannot use: they arrive from a search for a model
+ * number, find a name and a half-filled spec table, and leave. The client's instruction
+ * was to take them down until there is a photograph.
+ *
+ * Deriving it from the data rather than hand-setting a `hidden` flag means the reverse
+ * also happens on its own — the moment a photograph lands in the record, the product
+ * publishes itself. Nobody has to remember to flip anything back, which is exactly the
+ * kind of bookkeeping that gets forgotten and leaves finished work invisible.
+ *
+ * WHAT UNPUBLISHED MEANS HERE. Out of every listing, the finder, the sitemap, the search
+ * index and llms.txt — but the page is still BUILT, and marked noindex. That is
+ * deliberate: deleting the route would 404 any link that already exists in the wild,
+ * including the model numbers sitting in old quotations and on the trade directories.
+ * A quiet page is recoverable; a 404 throws away whatever the URL had earned.
+ *
+ * The current list is printed by `npm run sheets` (section four of the design brief),
+ * which is also the sheet asking for the photographs.
+ */
+export function isPublished(product: Product): boolean {
+  return Boolean(product.heroImage?.src);
+}
+
+/** Everything a visitor should be able to find by browsing. */
+export const publishedProducts: Product[] = products.filter(isPublished);
+
 /* -------------------------------------------------------------------------
  * Lookup helpers — pure functions, no side effects.
  * ---------------------------------------------------------------------- */
@@ -69,10 +98,16 @@ export function getProductBySlug(categorySlug: string, slug: string): Product | 
   return products.find((p) => p.categoryPath[0] === canonicalSlug && p.slug === slug);
 }
 
-/** All products whose category path starts with the given slug. */
+/**
+ * All PUBLISHED products whose category path starts with the given slug.
+ *
+ * This is the browsing path — category pages, the comparison tables, the collections —
+ * so it hides the photograph-less records. `getProductBySlug` deliberately does not, so
+ * a direct link to one still resolves instead of 404ing.
+ */
 export function getProductsByCategory(categorySlug: string): Product[] {
   const canonicalSlug = canonicalCategorySlug(categorySlug);
-  return products.filter((p) => p.categoryPath[0] === canonicalSlug);
+  return publishedProducts.filter((p) => p.categoryPath[0] === canonicalSlug);
 }
 
 /**
@@ -82,7 +117,9 @@ export function getProductsByCategory(categorySlug: string): Product[] {
 export function getRelatedProducts(product: Product): Product[] {
   return product.relatedModels
     .map(getProductByModel)
-    .filter((p): p is Product => p !== undefined);
+    .filter((p): p is Product => p !== undefined)
+    // Never recommend a page we have taken down for having no photograph.
+    .filter(isPublished);
 }
 
 /**

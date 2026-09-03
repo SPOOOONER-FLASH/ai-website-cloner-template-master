@@ -49,6 +49,15 @@ export default function ContactPage() {
                 inspection visits.
               </p>
 
+              {/*
+                The Chinese line is gone from both addresses.
+
+                It was there as a courtesy for a courier, but this page is read by export
+                buyers in thirty markets and a script none of them read is noise in the
+                middle of the one block they came for. The Chinese wording is still held
+                in content/site-settings.json for quotations and shipping documents —
+                removed from the page, not from the record.
+              */}
               <div className="mt-24">
                 <p className="text-c2 text-ink-secondary">Office</p>
                 <address className="mt-4 not-italic text-c1 text-ink">
@@ -57,9 +66,6 @@ export default function ContactPage() {
                   {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
                   {siteSettings.contact.country}
                 </address>
-                <p className="mt-4 text-c2 text-ink-tertiary">
-                  {siteSettings.contact.addressZh}
-                </p>
               </div>
 
               {siteSettings.contact.factoryAddress ? (
@@ -71,9 +77,6 @@ export default function ContactPage() {
                     {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
                     {siteSettings.contact.country}
                   </address>
-                  <p className="mt-4 text-c2 text-ink-tertiary">
-                    {siteSettings.contact.factoryAddressZh}
-                  </p>
                 </div>
               ) : null}
             </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
-import { getAllProductParams, getProductBySlug } from "@/data/products";
+import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
@@ -44,6 +44,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const product = getProductBySlug(category, slug);
   if (!product) return {};
+
   const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
   const spanishUrl = absoluteUrl(`/es${path}`);
@@ -52,6 +53,28 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     // seoTitle already carries the brand, so opt out of the layout's "%s | Canton Hyland".
     title: { absolute: product.seoTitle },
     description: product.seoDescription,
+    /*
+      Unpublished — no photograph yet. The record is out of every listing, the sitemap,
+      the search index and llms.txt; noindex here completes that, so a crawler is not
+      asked to rank a page a buyer cannot use.
+
+      Only `robots` changes. Everything else — canonical, hreflang, Open Graph, Twitter —
+      is emitted exactly as for a published page, because a metadata object that returns
+      early loses those and Next falls back to the layout defaults, which point at the
+      site root. That is how this first attempt produced 650 og/twitter mismatches.
+
+      The canonical still points at itself: the page is real and returns the moment a
+      photograph lands. Pointing it elsewhere would hand its history to another URL.
+    */
+    ...(isPublished(product)
+      ? {}
+      : {
+          robots: { index: false, follow: true },
+          // Marks the noindex as deliberate. scripts/lib/seo-audit.mjs treats a public
+          // page as withheld only when this is present, so an ACCIDENTAL noindex still
+          // fails the gate — which is the whole reason that check exists.
+          other: { "canton-withheld": "awaiting-photography" },
+        }),
     alternates: {
       canonical: path,
       languages: {

@@ -158,6 +158,12 @@ function parsePage(outDir, file) {
     route,
     html,
     public: !NON_PUBLIC_ROUTES.has(route),
+    /*
+      Deliberately withheld — see the `withheldPages` note. Only counts alongside an
+      actual noindex, so the marker on its own cannot exempt an indexable page from
+      anything.
+    */
+    withheld: Boolean(firstMeta(meta, "canton-withheld").trim()),
     title,
     description: firstMeta(meta, "description").trim(),
     lang: (htmlAttributes.lang ?? "").toLowerCase(),
@@ -281,7 +287,31 @@ export function auditBuild({ outDir }) {
     .map((file) => parsePage(absoluteOut, file))
     .sort((left, right) => left.route.localeCompare(right.route));
   const redirectPages = pages.filter((page) => page.public && page.redirectTarget);
-  const publicPages = pages.filter((page) => page.public && !page.redirectTarget);
+
+  /*
+    WITHHELD PAGES — noindex on purpose, and the page says so.
+
+    A product with no photograph is unpublished: out of every listing, the sitemap, the
+    search index and llms.txt, and noindex on the page. 75 records are in that state
+    while the photographs are being taken.
+
+    They cannot be treated as ordinary public pages — the gate would report every one of
+    them twice, as `indexable-page-noindex` and `sitemap-missing-page`. But simply
+    exempting any noindex page would gut the check: catching an ACCIDENTAL noindex is the
+    only reason it exists, and an accident is indistinguishable from an intention if the
+    only evidence is the noindex itself.
+
+    So the intention has to be declared. `<meta name="canton-withheld">` is written by the
+    product routes alongside the noindex; a page that is noindex WITHOUT it is still an
+    error. The marker is cheap, it travels with the page into the export, and it makes
+    the difference reviewable in the HTML rather than in somebody's memory.
+  */
+  const withheldPages = pages.filter(
+    (page) => page.public && !page.redirectTarget && page.withheld,
+  );
+  const publicPages = pages.filter(
+    (page) => page.public && !page.redirectTarget && !page.withheld,
+  );
   const semanticIssues = [];
   const qualityWarnings = [];
   const addIssue = (page, code, detail) => semanticIssues.push({ route: page?.route ?? "(release)", code, detail });
@@ -349,7 +379,21 @@ export function auditBuild({ outDir }) {
   }
   const siteOrigin = [...originCounts.entries()].sort((left, right) => right[1] - left[1])[0]?.[0] ?? "";
   const canonicalPageByUrl = new Map();
-  const publicPageByRoute = new Map(publicPages.map((page) => [page.route, page]));
+  /*
+    Withheld pages are included here on purpose.
+
+    This map answers "does this URL resolve to a page we built", which is the question a
+    redirect target or an internal link asks. A withheld page is built and serves a 200 —
+    it is merely noindex — so a redirect pointing at one is correct, not broken. Leaving
+    it out reported `/products/door-hinges/f100-ss-door-hinge/` as having a missing
+    target when the target was right there.
+
+    What withheld pages must NOT do is satisfy the sitemap and indexability checks, and
+    those iterate `publicPages`, which still excludes them.
+  */
+  const publicPageByRoute = new Map(
+    [...publicPages, ...withheldPages].map((page) => [page.route, page]),
+  );
   for (const page of publicPages) {
     const canonical = normalizeAbsoluteUrl(page.canonical[0] ?? "");
     if (canonical) canonicalPageByUrl.set(canonical, page);
@@ -595,6 +639,17 @@ export function auditBuild({ outDir }) {
     if (robots.sitemaps.length === 0) {
       addIssue(undefined, "robots-sitemap-missing", "Indexable robots policy must declare the sitemap");
     }
+    /*
+      The marker must never be able to exempt a page on its own. A page that declares
+      itself withheld while staying indexable is the failure mode this guards: it would
+      be quietly dropped from the sitemap check while crawlers went on indexing it.
+    */
+    for (const page of withheldPages) {
+      if (!page.noindex) {
+        addIssue(page, "withheld-page-indexable", "Declares canton-withheld but is not noindex");
+      }
+    }
+
     for (const page of publicPages) {
       if (page.noindex) addIssue(page, "indexable-page-noindex", "Public page is noindex in an indexable release");
       const canonical = normalizeAbsoluteUrl(page.canonical[0] ?? "");
@@ -673,6 +728,7 @@ export function auditBuild({ outDir }) {
       pages: pages.length,
       publicPages: publicPages.length,
       redirectPages: redirectPages.length,
+      withheldPages: withheldPages.length,
       jsonLdPages: publicPages.filter((page) => page.jsonLd.length > 0).length,
       alternateLinkPages: publicPages.filter((page) => page.alternates.length > 0).length,
       semanticIssues: semanticIssues.length,

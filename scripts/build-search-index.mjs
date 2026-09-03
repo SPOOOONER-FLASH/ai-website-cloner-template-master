@@ -53,6 +53,16 @@ const entries = [];
 
 // ── Products ────────────────────────────────────────────────────────────────────
 for (const p of readCollection("content/products")) {
+  /*
+    Unpublished products stay out of search.
+
+    A record with no photograph is taken out of every listing and marked noindex — see
+    `isPublished` in src/data/products.ts. Leaving it findable here would put the one
+    page we decided not to show at the top of the results for its own model number,
+    which is precisely the search somebody types.
+  */
+  if (!p.heroImage?.src) continue;
+
   const specTerms = (p.specs ?? []).flatMap((s) => [s.label, s.value]);
   entries.push(
     entry(

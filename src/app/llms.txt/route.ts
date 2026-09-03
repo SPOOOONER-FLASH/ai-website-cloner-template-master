@@ -1,6 +1,6 @@
 import { absoluteUrl, indexable, legalName, siteName } from "@/data/site";
 import { categories } from "@/data/categories";
-import { products } from "@/data/products";
+import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
 
 /**
@@ -33,7 +33,7 @@ function body(): string {
   }
 
   const categoryLines = categories.map((category) => {
-    const count = products.filter((p) => p.categoryPath[0] === category.slug).length;
+    const count = publishedProducts.filter((p) => p.categoryPath[0] === category.slug).length;
     return `- [${category.name}](${absoluteUrl(`/products/${category.slug}/`)}): ${category.summary} ${count} models.`;
   });
 
@@ -54,7 +54,8 @@ function body(): string {
     absent one.
   */
   const modelLines = categories.flatMap((category) => {
-    const inRange = products
+    // Published only: an answer engine must not be pointed at a page marked noindex.
+    const inRange = publishedProducts
       .filter((p) => p.categoryPath[0] === category.slug && p.model && !p.modelTbc)
       .sort((a, b) => a.model.localeCompare(b.model, "en", { numeric: true }));
     if (!inRange.length) return [];
@@ -87,7 +88,7 @@ function body(): string {
     "## Key facts",
     "",
     `- Manufacturer, not a trading company. Operating since 1998.`,
-    `- ${products.length} published models across ${categories.length} categories.`,
+    `- ${publishedProducts.length} published models across ${categories.length} categories.`,
     "- Quality management certified to ISO 9001.",
     "- Test reports are published per model, not per range — see the download centre.",
     "",
