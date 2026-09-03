@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-/* eslint-disable @next/next/no-page-custom-font -- global 404 bypasses both root layouts */
+import { archivo } from "./fonts";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
@@ -14,15 +14,8 @@ export const metadata: Metadata = {
 
 export default function GlobalNotFound() {
   return (
-    <html lang="en" className="h-full antialiased">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap"
-        />
-      </head>
+    <html lang="en" className={`h-full antialiased ${archivo.variable}`}>
+      <head></head>
       <body className="flex min-h-full flex-col">
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />

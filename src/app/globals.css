@@ -90,7 +90,18 @@
   --motion-ease-crisp: cubic-bezier(0.33, 0, 0.2, 1);
 
   /* -- Typography -------------------------------------------------------- */
-  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  /*
+    `--font-archivo` is set by next/font/google (src/app/fonts.ts), which self-hosts the
+    files. The literal name stays as the second entry so anything rendered outside a
+    layout that carries the variable still asks for Archivo before falling back.
+  */
+  /*
+    `--font-archivo` is set by next/font/google (src/app/fonts.ts), which self-hosts the
+    files and already appends the fallback stack to that value. So the literal name goes
+    in var()'s own fallback slot, not after it — written after, the whole stack ends up
+    duplicated in the computed value for every element on the page.
+  */
+  --font-sans: var(--font-archivo, "Archivo, ui-sans-serif, system-ui, sans-serif");
 }
 
 :root {

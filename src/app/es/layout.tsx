@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-/* eslint-disable @next/next/no-page-custom-font -- each root document owns the same CDN font link */
+import { archivo } from "../fonts";
 import "../globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
@@ -66,14 +66,8 @@ export default function SpanishRootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning className="h-full antialiased">
+    <html lang="es" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap"
-        />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />
       </head>

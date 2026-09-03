@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-/* eslint-disable @next/next/no-page-custom-font -- each root document owns the same CDN font link */
+import { archivo } from "../fonts";
 import "../globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
@@ -69,16 +69,8 @@ export default function EnglishRootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="h-full antialiased">
+    <html lang="en" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
-        {/* [SUB] Archivo via the Google Fonts CDN, replacing the target's licensed
-            Trade Gothic Next LT Pro (body) and Traffic (H1). Weights 400/600/700. */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap"
-        />
         {/* Organisation + WebSite schema, emitted once site-wide. Page-level schema
             (Product, BreadcrumbList, ItemList) is added by the individual pages. */}
         <JsonLd data={organisationSchema()} />
