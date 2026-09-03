@@ -33,7 +33,59 @@
 （三个产品换了类目，旧网址要跳到新网址）。文件已经推到服务器上了，
 **但 nginx 还没读它**，所以那 6 条现在不生效 —— 旧网址目前是 404。
 
-### 操作步骤（宝塔面板）
+### ⚠ 2026-09-03 更正：光 reload 是不够的
+
+你那次 `nginx -t` 和 `nginx -s reload` **执行得完全正确**，输出也对。但三条新的
+301 依然返回 200 —— 原因是我上一版手册漏了一步：
+
+**nginx 读的不是仓库里的文件。** 它读的是
+
+```
+/www/server/panel/vhost/nginx/extension/cantonlock.com/10-taxonomy-redirects.conf
+```
+
+`git pull` 只更新仓库目录，不会碰这个路径。所以 reload 重新读的还是**旧文件** ——
+而且它会报告成功，这是最容易误判的地方。
+
+现在有一条命令一次做完：复制 → 备份 → 测试 → 重载 → 验证。**用它，不要手动
+复制。**
+
+### 操作步骤（宝塔面板）— 推荐：一条命令
+
+**① 打开宝塔终端**（左侧菜单最下 **「终端」**；没有就去「软件商店」搜 `终端` 装 Web终端）
+
+**② 找到仓库在服务器上的位置**，粘贴这一行回车：
+
+```bash
+find /www/wwwroot -maxdepth 3 -name "install-nginx-redirects.sh" 2>/dev/null
+```
+
+会打印出一个路径，例如
+`/www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh`。
+
+> 如果**什么都没打印**，说明服务器上的代码还没更新到最新。先跑
+> `cd /www/wwwroot/cantonlock.com && git pull`，再重来这一步。
+
+**③ 执行它**（把下面的路径换成上一步打印出来的那个）：
+
+```bash
+bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
+```
+
+**成功时最后一行是：**
+
+```
+All redirects live. Now purge Cloudflare — it caches 301s.
+```
+
+**失败时**它会自己把旧配置**还原回去、不重载**，网站不受影响 —— 把整屏截图发我。
+
+**④ 然后去 Cloudflare purge**（第 2 节）。⚠ **Cloudflare 会缓存 301**，不 purge
+的话你在浏览器里测还是旧结果。
+
+---
+
+### 手动方式（只在脚本跑不了时用）
 
 **① 打开宝塔终端**
 
