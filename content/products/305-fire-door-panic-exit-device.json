@@ -1,69 +1,14 @@
 {
-  "model": "305",
-  "slug": "305-fire-door-panic-exit-device",
-  "name": "Fire Door Panic Exit Device",
-  "nameZh": "防火门逃生推杠",
-  "series": "Hyland 300",
+  "finishes": [],
+  "heroImage": {
+    "src": "/images/products/2-305.jpg",
+    "ratio": "1 / 1",
+    "label": "Hyland 305 fire door panic exit device with push bar and outside lever trim"
+  },
   "categoryPath": [
     "panic-exit-devices",
     "fire-door"
   ],
-  "summary": "A single-point push bar for fire-rated escape doors, with outside lever trim and a cylinder aperture.",
-  "specs": [
-    {
-      "label": "Length",
-      "value": "1040mm"
-    },
-    {
-      "label": "Material",
-      "value": "Iron and aluminum"
-    },
-    {
-      "label": "Finish",
-      "value": "Spray painted"
-    }
-  ],
-  "material": "Steel /Stainless Steel",
-  "finishes": [
-    "Satin Stainless",
-    "Powder-Coated Black"
-  ],
-  "doorTypes": [
-    "Timber Fire Door",
-    "Steel Fire Door"
-  ],
-  "certifications": [
-    {
-      "name": "ISO 9001",
-      "standard": "ISO 9001:2015"
-    }
-  ],
-  "heroImage": {
-    "src": "/images/products/305-fire-door-panic-exit-device.webp",
-    "ratio": "1 / 1",
-    "label": "Hyland 305 fire door panic exit device with push bar and outside lever trim"
-  },
-  "gallery": [
-    {
-      "src": "/images/concepts/panic-exit-application.webp",
-      "ratio": "1952 / 2178",
-      "label": "Black push-pad exit device on a stairwell fire door beneath an illuminated exit sign"
-    },
-    {
-      "src": "/images/concepts/commercial-panic-exit-application.webp",
-      "ratio": "2400 / 1792",
-      "label": "Panic bar on glazed double doors in a commercial building atrium"
-    }
-  ],
-  "attachmentIds": [],
-  "relatedModels": [
-    "309-D",
-    "314",
-    "320"
-  ],
-  "seoTitle": "305 Fire Door Panic Exit Device | Canton Hyland",
-  "seoDescription": "Canton Hyland 305 fire door panic exit device in Steel /Stainless Steel. Finishes: Satin Stainless, Powder-Coated Black. For timber fire door, steel fire door appli…",
-  "nameEs": "Barras antipánico",
   "specsEs": [
     {
       "label": "Longitud",
@@ -78,7 +23,59 @@
       "value": "Pintado con pistola"
     }
   ],
-  "summaryEs": "Una barra antipánico de hierro y aluminio.",
+  "summary": "A single-point push bar for fire-rated escape doors, with outside lever trim and a cylinder aperture.",
+  "material": "Iron and aluminum",
   "seoTitleEs": "305 Barras antipánico | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 305 barras antipánico. Acabados: Satin Stainless, Powder-Coated Black. Fabricado en Guangdong, China y exportado a más de treinta mercados."
+  "model": "305",
+  "doorTypes": [
+    "Timber Fire Door",
+    "Steel Fire Door"
+  ],
+  "name": "Fire Door Panic Exit Device",
+  "slug": "305-fire-door-panic-exit-device",
+  "seoDescriptionEs": "Canton Hyland 305 barras antipánico. Acabados: Satin Stainless, Powder-Coated Black. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "gallery": [
+    {
+      "src": "/images/products/14-305.jpg",
+      "ratio": "1952 / 2178",
+      "label": "Black push-pad exit device on a stairwell fire door beneath an illuminated exit sign"
+    },
+    {
+      "src": "/images/products/7-305.jpg",
+      "ratio": "2400 / 1792",
+      "label": "Panic bar on glazed double doors in a commercial building atrium"
+    }
+  ],
+  "summaryEs": "Una barra antipánico de hierro y aluminio.",
+  "relatedModels": [
+    "309-D",
+    "314",
+    "320"
+  ],
+  "attachmentIds": [],
+  "series": "Hyland 300",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Iron and aluminum"
+    },
+    {
+      "label": "Length",
+      "value": "1040mm"
+    },
+    {
+      "label": "Finish",
+      "value": "Spray painted"
+    },
+    {
+      "label": "Certification: ",
+      "value": "EN1205 compliant"
+    }
+  ],
+  "nameEs": "Barras antipánico",
+  "certifications": [],
+  "nameZh": "防火门逃生推杠",
+  "seoTitle": "305 Fire Door Panic Exit Device | Canton Hyland",
+  "description": "**Push Bar Features:**\n\nTurn handle for locking/unlocking.\n\nAdjustable length to fit various door widths\n\nAvailable in multiple colors\n\nIntegrated lock and counter lock system",
+  "seoDescription": "Canton Hyland 305 fire door panic exit device in Steel /Stainless Steel. Finishes: Satin Stainless, Powder-Coated Black. For timber fire door, steel fire door appli…"
 }
