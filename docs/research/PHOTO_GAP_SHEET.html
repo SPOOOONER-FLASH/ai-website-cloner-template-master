@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>产品照片对不上的清单 — Canton Hyland</title>
+<style>
+  @page { size: A4; margin: 14mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; color: #11110f; font-size: 11pt; line-height: 1.5; margin: 0; }
+  h1 { font-size: 20pt; margin: 0 0 4px; }
+  h2 { font-size: 13pt; margin: 22px 0 6px; padding-top: 10px; border-top: 1.5px solid #11110f; page-break-after: avoid; }
+  p.lead { margin: 0 0 14px; color: #444; }
+  .ok { background: #f2f8f2; border: 1px solid #cfe3cf; padding: 8px 10px; margin: 10px 0 14px; font-size: 10pt; }
+  .rule { color: #7a6f4f; background: #faf8f2; border: 1px solid #ddd5bd; padding: 8px 10px; margin: 10px 0 14px; font-size: 10pt; }
+  table { border-collapse: collapse; width: 100%; font-size: 10pt; margin-top: 6px; }
+  th, td { border: 1px solid #c9c9c4; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #f2f2ef; font-weight: 600; }
+  td.m { font-family: ui-monospace, Consolas, monospace; white-space: nowrap; }
+  td.w { min-width: 110px; background: #fffdf7; }
+  .small { font-size: 9.5pt; color: #555; }
+  footer { margin-top: 24px; padding-top: 10px; border-top: 1px solid #c9c9c4; font-size: 9.5pt; color: #555; }
+</style>
+</head>
+<body>
+
+<h1>产品照片对不上的清单</h1>
+<p class="lead">Canton Hyland · 本次共 47 个型号文件夹 · 由 scripts/build-photo-gap-sheet.mjs 生成</p>
+
+<div class="ok">
+  <strong>已经导入成功的不在这份表里。</strong> 39 个文件夹已经
+  对上产品并上线，图片已按站点规格转换（1000×1000 WebP）并压好水印。
+  <br>这份表只列**需要人来决定**的部分。
+</div>
+
+<div class="rule">
+  <strong>为什么不自动猜。</strong> 文件夹叫 <code>308</code>，而我们目录里有
+  <code>308-D</code> 和 <code>308-S</code> 两个型号。猜错的后果不是排版难看，
+  是买家照着图下单拿到另一个产品。所以宁可列出来问，不自动匹配。
+</div>
+
+<h2>一、8 个文件夹在目录里找不到对应型号</h2>
+<p class="small">
+  两种可能：<strong>(a)</strong> 这个产品我们网站上还没有，需要建；
+  <strong>(b)</strong> 文件夹名和网站上的型号写法不一样。<br>
+  请在最后一栏写清楚是哪一种，如果是 (b) 就写出网站上的正确型号。
+</p>
+<table>
+  <tr><th>文件夹名</th><th>图库</th><th>视频</th><th>目录里相近的型号</th><th>该怎么处理</th></tr>
+  <tr><td class="m">308</td><td>6 张</td><td>0</td><td class="m">308-D / 308-S</td><td class="w"></td></tr>
+<tr><td class="m">312</td><td>6 张</td><td>0</td><td class="m">—</td><td class="w"></td></tr>
+<tr><td class="m">SH01</td><td>8 张</td><td>1</td><td class="m">—</td><td class="w"></td></tr>
+<tr><td class="m">024</td><td>5 张</td><td>1</td><td class="m">—</td><td class="w"></td></tr>
+<tr><td class="m">301-B</td><td>6 张</td><td>1</td><td class="m">301</td><td class="w"></td></tr>
+<tr><td class="m">303-H</td><td>4 张</td><td>0</td><td class="m">303</td><td class="w"></td></tr>
+<tr><td class="m">303-J</td><td>6 张</td><td>0</td><td class="m">303</td><td class="w"></td></tr>
+<tr><td class="m">304</td><td>1 张</td><td>0</td><td class="m">—</td><td class="w"></td></tr>
+</table>
+
+<h2>二、1 个文件夹缺主图</h2>
+<p class="small">图库有图但没有 <code>主图.jpg</code>。产品页的第一张图就是主图，缺了页面顶部是空的。</p>
+<table>
+  <tr><th>型号</th><th>图库</th><th>补主图 ✓</th></tr>
+  <tr><td class="m">028</td><td>5 张</td><td class="w"></td></tr>
+</table>
+
+<h2>三、3 个产品这一批里没有文件夹，仍然没有照片</h2>
+<p class="small">这些型号在网站上是有的，但这次没有收到对应的文件夹，所以页面上依然没有图。</p>
+<table>
+  <tr><th>型号</th><th>名称</th><th>已拍 ✓</th></tr>
+  <tr><td class="m">301-S</td><td>S-Panic Exit Device</td><td class="w"></td></tr>
+<tr><td class="m">302-S</td><td>S-Panic Exit Device</td><td class="w"></td></tr>
+<tr><td class="m">DDH001</td><td>Panic Exit Device</td><td class="w"></td></tr>
+</table>
+
+<h2>四、34 个产品视频 —— 网站目前放不了</h2>
+<div class="rule">
+  这次的文件夹里有视频，<strong>这是网站现在完全没有的素材</strong>。但产品页还没有
+  播放器，所以它们暂时没有上线。<br><br>
+  <strong>要不要做，是甲方的决定</strong> —— 做的话需要：转码成网页格式、生成封面图、
+  在产品页加播放器、并考虑加载体积（视频比整页其他内容加起来还大）。
+  一句话说清楚要不要做，我就做。
+</div>
+<table>
+  <tr><th>型号</th><th>视频文件</th><th>对应产品</th></tr>
+  <tr><td class="m">305</td><td class="m">305.mp4</td><td>Fire Door Panic Exit Device</td></tr>
+<tr><td class="m">307</td><td class="m">307.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">309-S</td><td class="m">309-S.mp4</td><td>S-Panic Exit Device</td></tr>
+<tr><td class="m">310</td><td class="m">MAH09974.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">311</td><td class="m">311.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">313</td><td class="m">313.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">314</td><td class="m">314.mp4</td><td>Alarm Panic Bar Exit Device</td></tr>
+<tr><td class="m">315</td><td class="m">315.mp4</td><td>Pry Latch</td></tr>
+<tr><td class="m">316-D</td><td class="m">316-D.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">316-S</td><td class="m">316-S.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">317</td><td class="m">317.mp4</td><td>Cold Room Push Bar Exit Device</td></tr>
+<tr><td class="m">DC01</td><td class="m">DC01.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">DC02</td><td class="m">DC02.mp4</td><td>Door Coordinator</td></tr>
+<tr><td class="m">SH01</td><td class="m">SH01.mp4</td><td><em>目录里没有</em></td></tr>
+<tr><td class="m">015</td><td class="m">015.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">016</td><td class="m">016.mp4</td><td>Exterior Trim</td></tr>
+<tr><td class="m">023 ET</td><td class="m">023ET.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">023 ETAN</td><td class="m">023 ETAN.mp4</td><td>Anti-Pick Panic Exit Device Trim</td></tr>
+<tr><td class="m">023 PS</td><td class="m">023 PS.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">024</td><td class="m">024.mp4</td><td><em>目录里没有</em></td></tr>
+<tr><td class="m">026</td><td class="m">026.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">027</td><td class="m">027.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">028</td><td class="m">00183.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">030</td><td class="m">030.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">033</td><td class="m">033.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">035</td><td class="m">035.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">036</td><td class="m">036.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">037</td><td class="m">037.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">039</td><td class="m">039.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">301</td><td class="m">301.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">301-B</td><td class="m">301-B.mp4</td><td><em>目录里没有</em></td></tr>
+<tr><td class="m">302</td><td class="m">302.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">303</td><td class="m">303.mp4</td><td>Panic Exit Device</td></tr>
+<tr><td class="m">72</td><td class="m">72.mp4</td><td>Panic Exit Device</td></tr>
+</table>
+
+<footer>
+  由 <code>scripts/build-photo-gap-sheet.mjs</code> 生成。文件夹补齐之后重跑导入，
+  这份清单会自动变短。
+</footer>
+
+</body>
+</html>
