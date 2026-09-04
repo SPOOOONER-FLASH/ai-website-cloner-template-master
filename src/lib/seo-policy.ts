@@ -80,9 +80,19 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
   // The IndexNow key file must stay fetchable — the blanket *.txt disallow would
   // otherwise hide the one file Bing uses to verify domain ownership.
   const allow = ["/", "/llms.txt", ...(indexNowKey ? [`/${indexNowKey}.txt`] : [])];
-  // Keep the editor and generated RSC payloads out of search results without blocking
-  // /_next/static CSS and JavaScript that crawlers need to render pages.
-  const disallow = ["/admin/", "/*.txt$"];
+  /*
+    Keep the editor and generated RSC payloads out of search results without blocking
+    /_next/static CSS and JavaScript that crawlers need to render pages.
+
+    `/cdn-cgi/` is Cloudflare's, not ours, and nothing under it is a page. Bing's Site
+    Scan reported `/cdn-cgi/l/email-protection` as a 4xx on 2026-09-04 — a URL that does
+    not exist in our export, because Cloudflare's Email Address Obfuscation invents it at
+    the edge when it rewrites a `mailto:`. The obfuscation itself is now switched off
+    around our own addresses (see EmailLink), which stops the URL being generated at all;
+    this line covers everything else Cloudflare mounts there, and the ones already in
+    Bing's index.
+  */
+  const disallow = ["/admin/", "/cdn-cgi/", "/*.txt$"];
 
   return [
     { userAgent: "*", allow, disallow },

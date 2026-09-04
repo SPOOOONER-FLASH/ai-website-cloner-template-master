@@ -13,6 +13,7 @@ import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
+import { EmailLink } from "./EmailLink";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -421,12 +422,11 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                 {siteSettings.contact.technicalEmail || siteSettings.contact.email ? (
                   <p className="mt-16 text-c2 text-ink-secondary">
                     {t.orEmail}{" "}
-                    <a
-                      href={`mailto:${siteSettings.contact.technicalEmail || siteSettings.contact.email}?subject=${encodeURIComponent(`${product.model} — ${name}`)}`}
+                    <EmailLink
+                      address={siteSettings.contact.technicalEmail || siteSettings.contact.email}
+                      subject={`${product.model} — ${name}`}
                       className="text-brand hover:text-brand-hover"
-                    >
-                      {siteSettings.contact.technicalEmail || siteSettings.contact.email}
-                    </a>
+                    />
                   </p>
                 ) : null}
 

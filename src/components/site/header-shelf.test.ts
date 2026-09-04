@@ -62,7 +62,20 @@ test("footer exposes only the four direct buying destinations", () => {
     ],
   );
   assert.match(footer, /siteSettings\.alibaba\.label/);
-  assert.match(footer, /mailto:\$\{siteSettings\.contact\.email\}/);
+  /*
+    The footer still publishes the address. It renders through <EmailLink> rather than a
+    bare anchor since 2026-09-04 — the component wraps the link in Cloudflare's
+    `<!--email_off-->` directive so the edge stops rewriting it into
+    `/cdn-cgi/l/email-protection`, which Bing was reporting as a 404 and which hid the
+    address from every crawler that does not run JavaScript.
+
+    Asserted on the component and the address, not on the `mailto:` string: the point of
+    this line is that the footer offers a direct email route, and pinning the exact anchor
+    markup would fail again the next time that route is implemented differently while
+    still being there.
+  */
+  assert.match(footer, /<EmailLink/);
+  assert.match(footer, /address=\{siteSettings\.contact\.email\}/);
 
   /*
     The legal row is plain text, not buttons.

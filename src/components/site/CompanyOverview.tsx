@@ -10,6 +10,7 @@ import {
   statsEs,
 } from "@/data/company";
 import { siteSettings } from "@/data/navigation";
+import { EmailLink } from "./EmailLink";
 
 type Locale = "en" | "es";
 
@@ -263,12 +264,10 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           {siteSettings.contact.brandEmail ? (
             <p className="mt-24 text-c1 text-ink-secondary">
               {text.writeDirect}{" "}
-              <a
-                href={`mailto:${siteSettings.contact.brandEmail}`}
+              <EmailLink
+                address={siteSettings.contact.brandEmail}
                 className="text-brand hover:text-brand-hover"
-              >
-                {siteSettings.contact.brandEmail}
-              </a>
+              />
             </p>
           ) : null}
         </section>

@@ -288,84 +288,95 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
           something — it says which of the two tools you are in and hands you the other.
         */}
         <FinderModeSwitch active="configurator" locale={locale} />
-        <ol className="mt-24 flex flex-wrap items-center gap-x-8 gap-y-8">
-          {path.map((key, index) => {
-            const stepDef = steps.find((s) => s.key === key) as ConfiguratorStep;
-            const answer = answers[key];
-            const current = step?.key === key;
-            return (
-              <li key={key} className="flex items-center gap-8">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="text-ink-tertiary">
-                    ›
-                  </span>
-                ) : null}
-                {answer ? (
-                  <button
-                    type="button"
-                    onClick={() => go(reviseAt(answers, key))}
-                    className="config-crumb config-crumb-done"
-                    title={`${t.back}: ${stepDef.question}`}
-                  >
-                    {humanise(answer)}
-                  </button>
-                ) : (
-                  <span
-                    aria-current={current ? "step" : undefined}
-                    className={cn("config-crumb", current && "config-crumb-current")}
-                  >
-                    {stepDef.question}
-                  </span>
-                )}
-              </li>
-            );
-          })}
-          {Object.keys(answers).length ? (
-            <li className="ml-8">
+
+        {/*
+          ── ONE CONTROL, NOT THREE ──────────────────────────────────────
+
+          This row was previously two blocks stacked, and they were showing the same five
+          things: a rail of question chips separated by chevrons, and under it a grey band
+          holding five em dashes. Measured at 1440: the band was 1,361px wide around
+          290px of content — a thousand pixels of empty grey — and the five identical
+          dashes told a reader nothing about which five decisions were coming.
+
+          So the rail, the schedule line and the revise control are now one thing: five
+          columns, each with its number, the name of the decision, and either the answer
+          or a dash. It fills the width with information instead of grey, it teaches the
+          shape of the task before the first click, and every answered column is the
+          button that changes it.
+
+          The schedule line idea is still FSB's — their article number assembles segment
+          by segment as you answer, and that is the mechanic worth having. Ours assembles
+          the line a specifier writes onto a door schedule, and now it is labelled the way
+          a schedule is.
+        */}
+        <div className="mt-32">
+          <div className="flex flex-wrap items-baseline justify-between gap-16">
+            <h2 className="text-c2 uppercase tracking-[0.1em] text-ink-secondary">
+              {t.schedule}
+            </h2>
+            {Object.keys(answers).length ? (
               <button type="button" onClick={() => go({})} className="config-reset">
                 {t.restart}
               </button>
-            </li>
-          ) : null}
-        </ol>
+            ) : null}
+          </div>
 
-        {/*
-          ── The schedule line ───────────────────────────────────────────
+          <ol className="config-rail mt-12" aria-live="polite">
+            {/*
+              Driven by specificationLine rather than by mapping steps directly. It
+              returns one slot per step, in step order, present whether answered or not —
+              which is exactly the invariant this row depends on, and it is the one that
+              already has a test walking the real catalogue. Iterating steps here instead
+              would leave that test guarding a function nothing calls.
+            */}
+            {specificationLine(answers, steps).map(({ key, value: answer }, index) => {
+              const stepDef = steps[index] as ConfiguratorStep;
+              const current = step?.key === key;
+              /*
+                A step this configuration will never be asked — because the products left
+                do not differ on it — is still shown, greyed. Hiding it would make the row
+                change length as you answer, and the reader would lose the shape of the
+                task they are partway through.
+              */
+              const asked = path.includes(key);
 
-          Taken from FSB, where an article number assembles segment by segment as you
-          answer, and it is the mechanic that makes their tool feel like machinery rather
-          than a form. Ours assembles the line a specifier writes into a door schedule,
-          which is the same effect against something usable at the end of it.
-
-          Rendered from the first paint with every position present, so the row settles
-          into place rather than growing — see `.spec-slot-empty` for the width floor that
-          keeps it from reflowing on each answer.
-        */}
-        <div className="mt-24">
-          <h2 className="sr-only">{t.schedule}</h2>
-          <p className="spec-line" aria-live="polite">
-            {specificationLine(answers, steps).map(({ key, value }, index) => (
-              <span key={key} className="contents">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="spec-sep">
-                    ·
-                  </span>
-                ) : null}
-                <span
-                  /*
-                    `key` on the resolved slot restarts the one-off entrance animation
-                    when — and only when — that slot's value changes. Animating the whole
-                    line on every answer would read as the page reloading.
-                  */
-                  key={`${key}:${value ?? ""}`}
-                  className={cn("spec-slot", value ? "spec-slot-resolved" : "spec-slot-empty")}
+              return (
+                <li
+                  key={key}
+                  className={cn(
+                    "config-rail-cell",
+                    current && "config-rail-cell-current",
+                    !asked && !answer && "config-rail-cell-skipped",
+                  )}
+                  aria-current={current ? "step" : undefined}
                 >
-                  {value ? humanise(value) : "—"}
-                </span>
-              </span>
-            ))}
-          </p>
-          <p className="mt-8 max-w-[64ch] text-c2 text-ink-secondary">{t.scheduleHelp}</p>
+                  <span className="config-rail-index">{index + 1}</span>
+                  <span className="config-rail-label">{stepDef.label}</span>
+                  {answer ? (
+                    <button
+                      type="button"
+                      onClick={() => go(reviseAt(answers, key))}
+                      className="config-rail-value config-rail-value-set"
+                      title={`${t.back}: ${stepDef.question}`}
+                    >
+                      {/*
+                        Keyed on the value so the one-off entrance runs when this column
+                        resolves, and only then. Animating the whole row on every answer
+                        would read as the page reloading.
+                      */}
+                      <span key={answer} className="spec-slot-resolved">
+                        {humanise(answer)}
+                      </span>
+                    </button>
+                  ) : (
+                    <span className="config-rail-value config-rail-value-empty">—</span>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+
+          <p className="mt-12 max-w-[64ch] text-c2 text-ink-secondary">{t.scheduleHelp}</p>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { representatives } from "@/data/representatives";
 import { siteSettings } from "@/data/navigation";
+import { EmailLink } from "@/components/site/EmailLink";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
@@ -91,7 +92,15 @@ export default function ContactoPage() {
                     label: "OEM, marca propia y todo lo demás",
                   },
                 ]
-                  .filter((row) => row.email)
+                  /*
+                    A type predicate, not a bare truthiness filter. The rows are built
+                    from optional settings fields, and the compiler cannot see that this
+                    line removes the undefined ones — it used to not matter because a
+                    template literal swallows undefined, and it started mattering the
+                    moment the address became a typed prop. Saying what the filter
+                    guarantees is better than asserting it away at the call site.
+                  */
+                  .filter((row): row is { label: string; email: string } => Boolean(row.email))
                   .map((row) => (
                     <div
                       key={row.email}
@@ -99,12 +108,7 @@ export default function ContactoPage() {
                     >
                       <dt className="text-c2 text-ink-secondary">{row.label}</dt>
                       <dd>
-                        <a
-                          href={`mailto:${row.email}`}
-                          className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
-                        >
-                          {row.email}
-                        </a>
+                        <EmailLink address={row.email} className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover" />
                       </dd>
                     </div>
                   ))}
@@ -135,12 +139,7 @@ export default function ContactoPage() {
                         {rep.phone}
                       </a>
                     ) : null}
-                    <a
-                      href={`mailto:${rep.email}`}
-                      className="short-marker short-marker-compact mt-4 block text-c1 text-brand hover:text-brand-hover"
-                    >
-                      {rep.email}
-                    </a>
+                    <EmailLink address={rep.email} className="short-marker short-marker-compact mt-4 block text-c1 text-brand hover:text-brand-hover" />
                     {rep.noteEs ? (
                       <p className="mt-8 max-w-[46ch] text-c2 text-ink-secondary">
                         {rep.noteEs}

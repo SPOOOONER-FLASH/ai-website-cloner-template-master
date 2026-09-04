@@ -38,6 +38,15 @@ export interface ConfiguratorStep {
   key: StepKey;
   /** The question, in the buyer's words rather than the database's. */
   question: string;
+  /**
+   * One or two words naming the decision, for the column head on the schedule line.
+   *
+   * Separate from `question` because they do different jobs. The question is asked once,
+   * in full, above the options — "What door does it go on?" — while the label sits above
+   * a value in a five-column row and has to stay readable at 12px. A truncated question
+   * makes a poor label, and a label makes a curt question.
+   */
+  label: string;
   /** Shown under the question when the term needs explaining. */
   hint?: string;
 }
@@ -46,24 +55,29 @@ export const STEPS: readonly ConfiguratorStep[] = [
   {
     key: "category",
     question: "What are you specifying?",
+    label: "Category",
     hint: "The kind of hardware, not the model.",
   },
   {
     key: "subCategory",
     question: "Which type?",
+    label: "Type",
   },
   {
     key: "material",
     question: "What should it be made of?",
+    label: "Material",
     hint: "Stainless resists corrosion; zinc alloy and iron cost less on volume.",
   },
   {
     key: "doorType",
     question: "What door does it go on?",
+    label: "Door type",
   },
   {
     key: "finish",
     question: "Which finish?",
+    label: "Finish",
     hint: "Ask us about any finish you need that is not listed — most are available to order.",
   },
 ] as const;
@@ -72,18 +86,21 @@ export const STEPS_ES: readonly ConfiguratorStep[] = [
   {
     key: "category",
     question: "¿Qué está especificando?",
+    label: "Categoría",
     hint: "El tipo de herraje, no el modelo.",
   },
-  { key: "subCategory", question: "¿De qué tipo?" },
+  { key: "subCategory", question: "¿De qué tipo?", label: "Tipo" },
   {
     key: "material",
     question: "¿De qué material?",
+    label: "Material",
     hint: "El acero inoxidable resiste la corrosión; el zamak y el hierro cuestan menos en volumen.",
   },
-  { key: "doorType", question: "¿En qué puerta se instala?" },
+  { key: "doorType", question: "¿En qué puerta se instala?", label: "Tipo de puerta" },
   {
     key: "finish",
     question: "¿Qué acabado?",
+    label: "Acabado",
     hint: "Consúltenos cualquier acabado que no aparezca — casi todos se fabrican bajo pedido.",
   },
 ] as const;

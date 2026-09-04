@@ -6,6 +6,7 @@ import type { MenuCategory } from "@/data/categories";
 import { siteSettings } from "@/data/navigation";
 import { socialLinks } from "@/data/site";
 import { CloseIcon, Wordmark } from "./icons";
+import { EmailLink } from "./EmailLink";
 
 /**
  * Site menu.
@@ -267,12 +268,10 @@ export function SiteMenuDrawer({
                 {buyingLinks[locale].map((link) => renderLink(link))}
               </ul>
               {siteSettings.contact.email ? (
-                <a
-                  href={`mailto:${siteSettings.contact.email}`}
+                <EmailLink
+                  address={siteSettings.contact.email}
                   className="short-marker short-marker-compact mt-20 inline-block text-c1 text-brand hover:text-brand-hover"
-                >
-                  {siteSettings.contact.email}
-                </a>
+                />
               ) : null}
             </section>
 

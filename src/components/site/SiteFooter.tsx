@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
+import { EmailLink } from "./EmailLink";
 
 /**
  * Imprint and Privacy Notice have no route in the plan yet — they are legal pages,
@@ -164,12 +165,10 @@ export function SiteFooter() {
                 */}
                 {siteSettings.contact.email ? (
                   <li>
-                    <a
-                      href={`mailto:${siteSettings.contact.email}`}
+                    <EmailLink
+                      address={siteSettings.contact.email}
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
-                    >
-                      {siteSettings.contact.email}
-                    </a>
+                    />
                   </li>
                 ) : null}
               </ul>
