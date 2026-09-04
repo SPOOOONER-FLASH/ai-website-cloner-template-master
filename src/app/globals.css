@@ -1716,6 +1716,89 @@
     width: 11rem;
   }
 
+
+  /*
+    ── The shortlist ─────────────────────────────────────────────────────────
+
+    The candidates still in play, as photographs, losing tiles as the field narrows.
+
+    THE COLUMN COUNT FALLS WITH THE COUNT, which is the whole point: the same panel width
+    divided among fewer tiles makes each surviving one bigger, so narrowing is felt as the
+    remaining products growing rather than as a number changing. A fixed three-column grid
+    would have left two candidates as two small squares and a hole.
+
+    Driven by `data-count` rather than an inline style so the breakpoints stay in CSS with
+    the rest of the layout, and so the component ships one attribute instead of a computed
+    style string.
+  */
+  .config-shortlist {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /*
+    One or two candidates go full panel width. At that point the reader is comparing two
+    parts rather than scanning a set, and a 190px square is not enough to compare a lock
+    case in.
+  */
+  .config-shortlist[data-count="1"],
+  .config-shortlist[data-count="2"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .config-shortlist[data-count="3"],
+  .config-shortlist[data-count="4"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .config-shortlist > li {
+    overflow: hidden;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface-alt);
+  }
+
+
+  /*
+    ── Product gallery ───────────────────────────────────────────────────────
+
+    Detail views under the hero, with the client's own first view given the weight they
+    gave it. See the note in ProductDetail for why the old uniform grid was the problem.
+
+    The lead spans two columns and two rows, so it is a large square among small squares
+    rather than a wide letterbox — these are 1:1 product photographs and stretching one to
+    2:1 would crop a lock case in half.
+  */
+  .product-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem;
+  }
+
+  @media (min-width: 48rem) {
+    .product-gallery {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .product-gallery-lead {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  /*
+    A single detail view has nothing to lead, so it does not take the feature size — one
+    photograph at double scale beside three empty columns reads as a layout that lost its
+    other images.
+  */
+  .product-gallery > :only-child.product-gallery-lead {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .config-option-in,
     .config-preview-media {

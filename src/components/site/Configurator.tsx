@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { ProductVideo } from "./ProductVideo";
 import { FinderModeSwitch } from "./FinderModeSwitch";
 import { cn } from "@/lib/utils";
 import type { FinderProduct } from "@/lib/product-finder";
@@ -60,7 +61,10 @@ const COPY = {
     back: "Change",
     matchOne: "1 model matches",
     matchMany: (n: number) => `${n} models match`,
-    narrowing: (n: number) => `${n} products`,
+    narrowing: (n: number) => `${n} ${n === 1 ? "product" : "products"}`,
+    unitOne: "product",
+    unitMany: "products",
+    nothingMatches: "No model matches this combination.",
     seeProduct: "Open the product page",
     quote: "Request a quote for this configuration",
     quoteHelp:
@@ -79,7 +83,10 @@ const COPY = {
     back: "Cambiar",
     matchOne: "1 modelo coincide",
     matchMany: (n: number) => `${n} modelos coinciden`,
-    narrowing: (n: number) => `${n} productos`,
+    narrowing: (n: number) => `${n} ${n === 1 ? "producto" : "productos"}`,
+    unitOne: "producto",
+    unitMany: "productos",
+    nothingMatches: "Ningún modelo coincide con esta combinación.",
     seeProduct: "Abrir la ficha del producto",
     quote: "Solicitar cotización de esta configuración",
     quoteHelp:
@@ -183,11 +190,30 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
   );
 
   /*
-    The preview follows the leading candidate. It is deliberately taken from the products
-    still matching rather than from the option being hovered: the picture should show
-    where the reader IS, not where a passing cursor might go.
+    ── THE PREVIEW SHOWS THE FIELD, NOT A PRODUCT ─────────────────────────────
+
+    It used to show one photograph — the first remaining candidate — which was arbitrary
+    (the reader has not chosen it and cannot tell why it is the one on screen) and, worse,
+    it hid the only thing the tool actually does. Narrowing 435 products to 6 is the whole
+    value, and a single unchanging square communicates none of it.
+
+    So the panel now shows the CANDIDATES THEMSELVES, and loses tiles as the field
+    shrinks: nine, then six, then two, then one — large, with its demonstration clip if it
+    has one. The convergence is the interface.
+
+    This is the one place where copying FSB exactly would have been the weaker choice.
+    Their preview composes a single imaginary product from Cloudinary layers because their
+    configurator builds a made-to-order handle. Ours selects from 435 things that already
+    exist and have been photographed, so the honest and more useful picture is the actual
+    shortlist getting shorter. It is also the thing they cannot do.
+
+    Capped at 9. Past that the tiles are too small to recognise a part in, and the count
+    beneath already says how many there really are — a wall of 60 thumbnails would say
+    "lots", which the number says better.
   */
-  const preview = left.find((p) => p.heroImage?.src) ?? null;
+  const candidates = useMemo(() => left.filter((p) => p.heroImage?.src).slice(0, 9), [left]);
+  /* One left: show it properly, with its clip if there is one. */
+  const settled = left.length === 1 ? left[0] : null;
 
   return (
     <div className="grid w-full grid-cols gap-x gap-y-48">
@@ -408,28 +434,90 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
 
       {/* ── Live preview ──────────────────────────────────────────────── */}
       <aside className="col-span-full xl:col-span-8 xl:col-start-17">
-        <div className="config-preview">
-          {preview?.heroImage?.src ? (
-            /*
-              Keyed on the slug so a different product genuinely remounts and the
-              cross-fade runs. Keyed on nothing, React reuses the element and swaps the
-              src, which reads as a flicker rather than a change.
-            */
-            <div key={preview.slug} className="config-preview-media">
-              <MediaPlaceholder
-                {...preview.heroImage}
-                ratio="1 / 1"
-                sizes="(min-width: 1440px) 420px, 100vw"
-              />
-            </div>
-          ) : (
-            <p className="p-24 text-c2 text-ink-secondary">{t.noPhoto}</p>
-          )}
-        </div>
+        {settled ? (
+          /*
+            One product left. It gets the whole panel, and its demonstration clip if it
+            has one — a guided selection that ends on a hand actually working the lock
+            answers the question the narrowing was for, which a still cannot.
+          */
+          <div key={settled.slug}>
+            {settled.videos?.[0] ? (
+              <div className="config-preview config-preview-media">
+                <ProductVideo video={settled.videos[0]} />
+              </div>
+            ) : settled.heroImage?.src ? (
+              <div className="config-preview config-preview-media">
+                <MediaPlaceholder
+                  {...settled.heroImage}
+                  ratio="1 / 1"
+                  sizes="(min-width: 1440px) 420px, 100vw"
+                />
+              </div>
+            ) : (
+              <p className="config-preview p-24 text-c2 text-ink-secondary">{t.noPhoto}</p>
+            )}
+            <p className="mt-12 text-c2 text-ink">
+              {settled.modelTbc ? "" : `${settled.model} — `}
+              {(locale === "es" && settled.nameEs) || settled.name}
+            </p>
+          </div>
+        ) : candidates.length ? (
+          /*
+            Keyed on the slug list so the grid genuinely remounts when the field changes
+            and the tiles re-stagger. Keyed on nothing, React reuses the elements and
+            swaps their `src`, which reads as a flicker rather than as narrowing.
+          */
+          <ul
+            key={candidates.map((p) => p.slug).join()}
+            className="config-shortlist"
+            data-count={candidates.length}
+          >
+            {candidates.map((product, index) => (
+              <li
+                key={product.slug}
+                className="config-option-in"
+                style={{ animationDelay: `${Math.min(index, 9) * 34}ms` }}
+              >
+                <MediaPlaceholder
+                  {...product.heroImage}
+                  ratio="1 / 1"
+                  sizes="(min-width: 1440px) 140px, 30vw"
+                />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          /*
+            TWO DIFFERENT EMPTINESSES, AND THEY WERE SAYING THE SAME THING.
+
+            "Photography for this model is being prepared" is true when candidates exist
+            and none of them has a photograph yet. It is simply false when NOTHING
+            matches — and that is the state a stale shared URL lands on, because a
+            configuration is meant to be pasted into an email and a product can be
+            withdrawn between sending and opening. Telling that reader we are working on
+            the photographs sends them to wait for something that will never arrive.
+
+            The narrowing model guarantees no CHOICE leads to zero, and this is the case
+            it cannot cover: a URL assembled somewhere else.
+          */
+          <p className="config-preview p-24 text-c2 text-ink-secondary">
+            {left.length ? t.noPhoto : t.nothingMatches}
+          </p>
+        )}
 
         <p className="mt-16 text-c2 text-ink-secondary">
           <span className="config-count tabular-nums">{count}</span>{" "}
-          {Object.keys(answers).length ? t.narrowing(count).replace(`${count} `, "") : t.allProducts}
+          {/*
+            The unit, not the sentence with its number cut off. It used to build
+            "1 products" and then strip the leading "1 ", which produced "products" beside
+            a large animated 1 — and the whole point of that number is the moment it
+            reaches one.
+          */}
+          {Object.keys(answers).length
+            ? count === 1
+              ? t.unitOne
+              : t.unitMany
+            : t.allProducts}
         </p>
 
         {Object.keys(answers).length ? (

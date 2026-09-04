@@ -14,6 +14,9 @@ import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
 
+/** Target for the "watch it work" cue in the text column. One per page. */
+const VIDEO_ANCHOR = "demonstration";
+
 interface ProductDetailProps {
   product: Product;
   categoryName: string;
@@ -48,6 +51,7 @@ const COPY = {
     referenceOnRequest: "Reference available on request",
     quote: "Request a quote",
     images: "Product images",
+    watch: "Watch it work",
     breadcrumb: "Breadcrumb",
     orEmail: "Or email us about this model:",
     home: "Home",
@@ -94,6 +98,7 @@ const COPY = {
     referenceOnRequest: "Referencia disponible a pedido",
     quote: "Solicitar cotización",
     images: "Imágenes del producto",
+    watch: "Véalo funcionar",
     breadcrumb: "Ruta de navegación",
     orEmail: "O escríbanos sobre este modelo:",
     home: "Inicio",
@@ -275,11 +280,96 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
               <div className="col-span-full xl:col-span-12">
                 {/* The LCP element on every product page — never lazy. */}
                 <ProductImageZoom {...heroImage} priority locale={locale} />
+
+                {/*
+                  ── THE DEMONSTRATION, DIRECTLY UNDER THE PHOTOGRAPH ──────────
+
+                  Measured on /products/panic-exit-devices/015-panic-exit-device/ at
+                  1440×950: the clip used to begin at y=1349, which is 737px below the
+                  hero and BELOW THE TWO BUY BUTTONS. A buyer had to scroll past the
+                  request-a-quote block to discover that a film of the part working
+                  existed at all.
+
+                  That is the wrong order for this reader. A specifier's questions arrive
+                  as: what is it, DOES IT DO WHAT I NEED, will it fit, how do I order.
+                  The photograph answers the first, the spec table answers the third, the
+                  buttons answer the fourth — and the only thing on the page that answers
+                  the second is thirty seconds of a gloved hand pressing the bar. Putting
+                  the purchase request in front of the evidence asks for the decision
+                  before supplying what it rests on.
+
+                  It also renders full column width now. The old block was
+                  `md:grid-cols-2`, and 34 of the 35 products with a clip have exactly
+                  one — so every one of them drew a half-width video beside an empty half.
+                */}
+                {product.videos?.length ? (
+                  <div id={VIDEO_ANCHOR} className="mt-16 scroll-mt-96 space-y-16">
+                    {product.videos.map((video) => (
+                      <figure key={video.src} className="m-0">
+                        <ProductVideo video={video} />
+                        <figcaption className="mt-8 text-c2 text-ink-secondary">
+                          {video.label}
+                          {video.durationSeconds ? (
+                            <span className="text-ink-tertiary">
+                              {" · "}
+                              {Math.floor(video.durationSeconds / 60)}:
+                              {String(video.durationSeconds % 60).padStart(2, "0")}
+                            </span>
+                          ) : null}
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                ) : null}
               </div>
 
               <div className="col-span-full flex flex-col justify-between xl:col-span-10 xl:col-start-15">
                 <div>
                   <p className="text-lead text-ink">{summary}</p>
+
+                  {/*
+                    ── THE CUE THAT A DEMONSTRATION EXISTS ─────────────────────
+
+                    Moving the clip under the hero put it in the right place structurally
+                    and barely moved it up the page: measured at 1440×950 it went from
+                    y=1349 to y=1301, because the hero photograph is 673px square and the
+                    furniture above it is 612px — so THE HERO ITSELF ALREADY RUNS PAST THE
+                    FOLD. Nothing below a full-column square is reachable without
+                    scrolling, and no amount of reordering underneath it changes that.
+
+                    So the signal goes where the reader is actually looking on the first
+                    screen — beside the photograph, under the summary — and the clip stays
+                    where it belongs. The runtime is stated so the reader knows what they
+                    are committing to before they press anything.
+
+                    An anchor rather than a scroll handler: it works before hydration, it
+                    can be opened in a new tab, and scroll-margin-top on the target keeps
+                    the sticky header off it.
+                  */}
+                  {product.videos?.[0] ? (
+                    <a
+                      href={`#${VIDEO_ANCHOR}`}
+                      /*
+                        Spelled out, because the two spans concatenate for a screen reader
+                        into "Watch it work0:35". The gap is visual only; the accessible
+                        name has to carry the pause the layout provides.
+                      */
+                      aria-label={
+                        product.videos[0].durationSeconds
+                          ? `${t.watch} — ${Math.floor(product.videos[0].durationSeconds / 60)} min ${product.videos[0].durationSeconds % 60} s`
+                          : t.watch
+                      }
+                      className="short-marker short-marker-compact mt-16 inline-flex items-baseline gap-8 text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {t.watch}
+                      {product.videos[0].durationSeconds ? (
+                        <span className="text-c2 tabular-nums text-ink-tertiary">
+                          {Math.floor(product.videos[0].durationSeconds / 60)}:
+                          {String(product.videos[0].durationSeconds % 60).padStart(2, "0")}
+                        </span>
+                      ) : null}
+                    </a>
+                  ) : null}
                   {/* CMS-authored long copy. Absent on every imported record — the legacy
                       catalogue carries specifications, not prose, and none is invented. */}
                   {!es && product.description ? (
@@ -348,26 +438,33 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                 )}
               </div>
 
-              {/* Videos sit above the still gallery — motion outranks stills when both
-                  exist, and a page with neither shows only the gallery's empty state. */}
-              {product.videos?.length ? (
-                <div className="col-span-full mt-16 grid grid-cols-1 gap-16 md:grid-cols-2">
-                  {product.videos.map((video) => (
-                    <figure key={video.src}>
-                      <ProductVideo video={video} />
-                      <figcaption className="mt-8 text-c2 text-ink-secondary">
-                        {video.label}
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
-              ) : null}
-
               <div className="col-span-full mt-16">
                 {product.gallery.length ? (
-                  <div className="grid grid-cols-2 gap-16 md:grid-cols-3 xl:grid-cols-4">
-                    {gallery.map((image) => (
-                      <ProductImageZoom key={`${image.src}-${image.label}`} {...image} locale={locale} />
+                  /*
+                    ── THE GALLERY HAS A FIRST VIEW ────────────────────────────
+
+                    It was `grid-cols-2 md:grid-cols-3 xl:grid-cols-4` — every view at
+                    identical size, which gives seven photographs of the same lock no
+                    reading order at all. The eye has to inspect each one to find out
+                    which is worth looking at.
+
+                    The client's own filenames carry their order (`2-015.jpg`,
+                    `3-015.jpg`, …) and the import preserves it, so the first gallery
+                    image is the view they chose to put first. Giving it two columns makes
+                    that choice visible and produces a rhythm — one large, then a run of
+                    small — instead of a uniform field.
+
+                    Below `md` the grid is two columns and the feature spans both, which
+                    is the same relationship at phone width rather than a different one.
+                  */
+                  <div className="product-gallery">
+                    {gallery.map((image, index) => (
+                      <div
+                        key={`${image.src}-${image.label}`}
+                        className={index === 0 ? "product-gallery-lead" : undefined}
+                      >
+                        <ProductImageZoom {...image} locale={locale} />
+                      </div>
                     ))}
                   </div>
                 ) : (

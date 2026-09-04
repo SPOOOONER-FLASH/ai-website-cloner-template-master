@@ -14,10 +14,19 @@ const zoom = readFileSync(
 test("product hero and gallery images use the same accessible zoom surface", () => {
   assert.match(detail, /import \{ ProductImageZoom \}/);
   assert.match(detail, /<ProductImageZoom \{\.\.\.heroImage\} priority locale=\{locale\} \/>/);
-  assert.match(
-    detail,
-    /<ProductImageZoom key=\{`\$\{image\.src\}-\$\{image\.label\}`\} \{\.\.\.image\} locale=\{locale\} \/>/,
-  );
+  /*
+    The gallery renders every view through the same component as the hero, with the same
+    locale. That is the invariant worth protecting — a gallery view that quietly became a
+    plain <img> would lose the zoom, and inspecting a detail is why these images exist.
+
+    Matched on the props rather than on an exact source line: the previous assertion
+    pinned the whole element including its `key`, so wrapping each view in a grid cell —
+    which moved the key to the wrapper and changed nothing about the zoom — failed a test
+    named for something the change did not touch. A test that breaks on layout is a test
+    that will be edited to pass rather than read.
+  */
+  assert.match(detail, /<ProductImageZoom \{\.\.\.image\} locale=\{locale\} \/>/);
+  assert.match(detail, /gallery\.map\(/);
 });
 
 test("zoom opens an on-demand dialog and supports keyboard dismissal", () => {

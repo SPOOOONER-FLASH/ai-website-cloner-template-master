@@ -156,6 +156,14 @@ export type FinderProduct = Pick<
   | "certifications"
   | "heroImage"
   | "summary"
+  /*
+    Carried so the configurator can END ON A MOVING PICTURE. 35 products have a
+    demonstration clip, and a guided tool that finishes on a hand actually working the
+    lock answers the question the whole narrowing was for. It is a small field on a large
+    array — 435 entries — so it is deliberately the LAST thing added: everything else
+    here is needed to filter, this is needed only to finish.
+  */
+  | "videos"
 >;
 
 export function toFinderProduct(product: Product): FinderProduct {
@@ -174,6 +182,8 @@ export function toFinderProduct(product: Product): FinderProduct {
     certifications: product.certifications,
     heroImage: product.heroImage,
     summary: product.summary,
+    /* Only the first clip. A configurator result is one product, not a playlist. */
+    videos: product.videos?.length ? [product.videos[0]] : undefined,
   };
 }
 
