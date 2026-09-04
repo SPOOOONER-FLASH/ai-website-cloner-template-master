@@ -55,6 +55,31 @@
     {
       "label": "Customization",
       "value": "OEM & ODM available"
+    },
+    {
+      "label": "Pieces per carton",
+      "value": "24",
+      "unit": ""
+    },
+    {
+      "label": "Carton size",
+      "value": "30.2×26×40.4",
+      "unit": "cm"
+    },
+    {
+      "label": "Carton volume",
+      "value": "0.0317",
+      "unit": "m³"
+    },
+    {
+      "label": "Gross weight",
+      "value": "19.6",
+      "unit": "kg"
+    },
+    {
+      "label": "Net weight",
+      "value": "18.6",
+      "unit": "kg"
     }
   ],
   "material": "Iron Case",
@@ -163,5 +188,6 @@
   ],
   "summaryEs": "Una cerradura de sobreponer de hierro.",
   "seoTitleEs": "5688 Cerraduras de sobreponer | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 5688 cerraduras de sobreponer. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 5688 cerraduras de sobreponer. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "packingSource": "装箱表 photographed 2026-09-04, see content/packing-data.json"
 }

@@ -97,6 +97,14 @@ function pickSummary(features) {
       if (sentence.length < MIN || sentence.length > MAX) continue;
       if (CERTIFICATION.test(sentence)) continue;
       if (FILLER.test(sentence)) continue;
+      /*
+        A line still wearing its bullet is a list item, not a sentence, and it arrives
+        without the subject the list heading supplied. "• Suit for mortise type lock body"
+        passes every other guard here — it names a product noun and it is the right length
+        — and as a product's entire description it says nothing about what the product IS.
+        Publishing it would put a bullet character at the start of a Google snippet.
+      */
+      if (/^[•·*\-–—]/.test(sentence)) continue;
 
       let score = 0;
       if (PRODUCT_NOUN.test(sentence)) score += 100;

@@ -192,7 +192,18 @@ function buildDescription(p) {
       duplicated tail at least finished. A description reaching the reader half-written
       says nobody looked at it.
     */
-    if (`${parts.join(" ")} ${sentence}`.length <= DESC_MAX) parts.push(sentence);
+    /*
+      AND IT GOES IN SECOND, AHEAD OF THE ATTRIBUTE CLAUSES.
+
+      fitToBudget drops from the end, so position is priority. A sentence somebody checked
+      — "External handle for panic bar systems" — outranks "Available in BN finish." for
+      the characters available, because the first tells a searcher what the thing is and
+      the second tells them something they can read off the page once they arrive.
+
+      Appended last, it was competing for leftovers and losing on every product that had
+      finishes and door types recorded, which is most of them.
+    */
+    if (`${lead} ${sentence}`.length <= DESC_MAX) parts.splice(1, 0, sentence);
   }
 
   // Published boilerplate, longest that still fits, then progressively shorter.

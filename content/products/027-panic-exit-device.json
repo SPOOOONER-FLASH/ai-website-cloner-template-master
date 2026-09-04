@@ -35,6 +35,21 @@
     {
       "label": "Spindle length",
       "value": "60mm"
+    },
+    {
+      "label": "Pieces per carton",
+      "value": "20",
+      "unit": ""
+    },
+    {
+      "label": "Carton size",
+      "value": "37×29×41",
+      "unit": "cm"
+    },
+    {
+      "label": "Carton volume",
+      "value": "0.044",
+      "unit": "m³"
     }
   ],
   "material": "Zinc Alloy",
@@ -129,5 +144,6 @@
       "durationSeconds": 27,
       "uploadDate": "2026-09-04"
     }
-  ]
+  ],
+  "packingSource": "装箱表 photographed 2026-09-04, see content/packing-data.json"
 }

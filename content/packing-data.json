@@ -1,0 +1,44 @@
+{
+  "_source": {
+    "what": "装箱表 photographed by the client and sent 2026-09-04. A working shipping worksheet, not a specification document.",
+    "columns": "序号 | 型号 | 包装 | 每箱数量 | 毛重(kg) | 净重(kg) | 箱规(cm) | 单箱体积(m³)",
+    "columnNote": "The two unlabelled numeric columns are read as gross and net weight: on every row the first is 0.9–1.1 kg higher than the second, which is a carton, and no other pair of quantities behaves that way. Stated here because the header was obscured in the photograph by a second sheet of paper lying across it.",
+    "arithmeticCheck": "单箱体积 was recomputed from 箱规 for every row. 14 of 18 rows with both agree to the digit (49×20×35 → 0.0343, 47×25.5×14 → 0.016779, 31×21.6×16.4 → 0.01098144). Rows 3, 6, 22 and 23 do not, and are marked accordingly — the sheet's own volume was kept and the discrepancy recorded rather than silently corrected.",
+    "transcribedBy": "Claude, 2026-09-04, from the photograph. Not verified against the original spreadsheet."
+  },
+
+  "_whyNotAppliedWholesale": [
+    "FINISH CHANGES THE CARTON, on this sheet's own evidence. Rows 6 and 7 are 808 SS ET and 808 PB ET — the same lock in two finishes — at 57.2×19.1×47.5 and 42×35×31.8. Nothing about that is a rounding difference. So a packing row CANNOT be spread across a model's finish variants, which is what would have let 70710-AB cover 70710 PB and 70710 SN, and D101 cover its five finishes. That inference was the obvious shortcut and this sheet disproves it.",
+    "SEVERAL MODELS APPEAR TWICE WITH DIFFERENT PACKING. 607 SS ET is row 3 (吸塑 blister, 24 per carton, 44×40×39) and again in row 4 (纸盒 carton, 30 per carton, 49×20×35). 026 执手锁 is rows 22 and 23, at 24 and 16 per carton. 808 SSBK is rows 20 and 21, at 24 and 17. Which is current is not visible in the photograph, and a packing figure on a product page is quoted into a proforma and a bill of lading.",
+    "MOST ROWS ARE NOT OUR PRODUCTS. LOKSET, 坚士 575, 广城 70MM 锁芯, 江门 1119, 江门 0419 and DS05(余凯利) are other manufacturers' goods moving through the same warehouse. Rows 12-15 and 19 name a generic part (锁体50*85, 闭门器, 合页) rather than a model."
+  ],
+
+  "rows": [
+    { "n": 2, "model": "921", "packing": "", "perCarton": 30, "grossKg": 21, "netKg": null, "cartonCm": null, "volumeM3": 0.039490125, "status": "obscured", "note": "Row partly hidden by the paper lying across the sheet. Model may be 921x." },
+    { "n": 3, "model": "607 SS ET", "packing": "吸塑", "perCarton": 24, "grossKg": 17, "netKg": 15, "cartonCm": "44×40×39", "volumeM3": 0.07254, "status": "conflicts-with-row-4", "note": "44×40×39 computes to 0.06864, not the 0.07254 printed. Blister packing; row 4 is the same model in a carton." },
+    { "n": 4, "model": "607、609 SS ET", "packing": "纸盒", "perCarton": 30, "grossKg": 18, "netKg": 17, "cartonCm": "49×20×35", "volumeM3": 0.0343, "status": "conflicts-with-row-3", "note": "Two models on one row. Volume matches the dimensions exactly." },
+    { "n": 5, "model": "D101、D102", "packing": "纸盒", "perCarton": 30, "grossKg": 14, "netKg": 13, "cartonCm": "24×21×34", "volumeM3": 0.0171, "status": "finish-unspecified", "note": "We carry D101 in AB, AC, DSPB, PB and SS, and D102 in SS. The row names no finish, and rows 6/7 show finish changing the carton." },
+    { "n": 6, "model": "808 SS ET", "packing": "纸盒", "perCarton": 24, "grossKg": 28, "netKg": 24, "cartonCm": "57.2×19.1×47.5", "volumeM3": 0.05, "status": "no-such-model", "note": "Computes to 0.05189; sheet rounds to 0.05. We carry 808 SNET, not SS ET." },
+    { "n": 7, "model": "808 PB ET", "packing": "纸盒", "perCarton": 24, "grossKg": 20.5, "netKg": 19.5, "cartonCm": "42×35×31.8", "volumeM3": 0.046746, "status": "no-such-model", "note": "Volume matches exactly. Same lock as row 6 in another finish, and a completely different carton — this row is the evidence for the finish rule above." },
+    { "n": 8, "model": "70710-AB", "packing": "纸盒", "perCarton": 12, "grossKg": 21, "netKg": 19, "cartonCm": "50×19×36", "volumeM3": 0.0342, "status": "no-such-model", "note": "We carry 70710 PB and 70710 SN. No AB." },
+    { "n": 9, "model": "LOKSET 50mm", "packing": "纸盒", "perCarton": 60, "grossKg": 23, "netKg": 21, "cartonCm": "56×24×30", "volumeM3": 0.04032, "status": "other-manufacturer" },
+    { "n": 10, "model": "坚士575 PB ET", "packing": "纸盒", "perCarton": 30, "grossKg": 21, "netKg": 19, "cartonCm": "50×19×36", "volumeM3": 0.0342, "status": "other-manufacturer" },
+    { "n": 11, "model": "广城70MM SS锁芯", "packing": "纸盒", "perCarton": 48, "grossKg": 11.7, "netKg": 10.7, "cartonCm": "30×20×20", "volumeM3": 0.012, "status": "other-manufacturer" },
+    { "n": 12, "model": "锁体50*85", "packing": "纸盒", "perCarton": 25, "grossKg": 16.5, "netKg": 15.5, "cartonCm": "51×25×14", "volumeM3": 0.01785, "status": "generic-part", "note": "A lock case at 50 mm backset / 85 mm centres. Several of our models are that size; the row does not say which." },
+    { "n": 13, "model": "锁体60*85", "packing": "纸盒", "perCarton": 20, "grossKg": 13.85, "netKg": 12.85, "cartonCm": "47×25.5×14", "volumeM3": 0.016779, "status": "generic-part" },
+    { "n": 14, "model": "闭门器", "packing": "纸盒", "perCarton": 10, "grossKg": 16.82, "netKg": 15.82, "cartonCm": "47.5×28.5×18", "volumeM3": 0.0243675, "status": "generic-part", "note": "\"Door closer\" — we carry nine, in two body sizes." },
+    { "n": 15, "model": "合页4*4*2\"MM-PN-SS", "packing": "纸盒", "perCarton": 50, "grossKg": 23.1, "netKg": 22.15, "cartonCm": "31×21.6×16.4", "volumeM3": 0.01098144, "status": "generic-part", "note": "A 4×4×2 mm hinge in polished nickel on stainless. Matches a size we carry, but not a model number." },
+    { "n": 16, "model": "江门1119 SS", "packing": "纸盒", "perCarton": 20, "grossKg": 10.2, "netKg": 9.2, "cartonCm": "33×33×33", "volumeM3": 0.035937, "status": "other-manufacturer" },
+    { "n": 17, "model": "江门0419 S/S", "packing": "纸盒", "perCarton": 20, "grossKg": 10.8, "netKg": 9.8, "cartonCm": "34×34×33", "volumeM3": 0.038148, "status": "other-manufacturer" },
+    { "n": 18, "model": "5688、5689", "packing": "纸盒", "perCarton": 24, "grossKg": 19.6, "netKg": 18.6, "cartonCm": "30.2×26×40.4", "volumeM3": 0.03172208, "status": "ok", "appliesTo": ["5688", "5689"], "note": "Both models are ours, both appear once, and the volume matches the dimensions exactly." },
+    { "n": 19, "model": "25*85 SS、20勾锁", "packing": "纸盒", "perCarton": 50, "grossKg": 22.7, "netKg": 21.7, "cartonCm": "46×24.5×20", "volumeM3": 0.02254, "status": "generic-part", "note": "A 20 mm backset hook lock at 85 mm centres. LC8520 is that size; the row does not name it." },
+    { "n": 20, "model": "808 SSBK", "packing": "纸盒", "perCarton": 24, "grossKg": 23.5, "netKg": 21.5, "cartonCm": null, "volumeM3": 0.054405, "status": "sheet-broken", "note": "The spreadsheet's own columns are shifted on this row: 0.054405 sits under 箱规 and the volume cell reads #REF!. Carton dimensions are simply not recoverable from the photograph." },
+    { "n": 21, "model": "808 SSBK", "packing": "纸盒", "perCarton": 17, "grossKg": 23.5, "netKg": 21.5, "cartonCm": null, "volumeM3": 0.054405, "status": "sheet-broken", "note": "Duplicate of row 20 at a different quantity, same #REF!." },
+    { "n": 22, "model": "026执手锁", "packing": "纸盒", "perCarton": 24, "grossKg": 14.5, "netKg": 13.5, "cartonCm": "45×37.5×33", "volumeM3": 0.06, "status": "conflicts-with-row-23", "note": "Computes to 0.0557, sheet says 0.06." },
+    { "n": 23, "model": "026执手锁", "packing": "纸盒", "perCarton": 16, "grossKg": 10, "netKg": 9, "cartonCm": "45×37×22", "volumeM3": 0.04, "status": "conflicts-with-row-22", "note": "Computes to 0.0366, sheet says 0.04." },
+    { "n": 24, "model": "027", "packing": "", "perCarton": 20, "grossKg": null, "netKg": null, "cartonCm": "37×29×41", "volumeM3": null, "status": "ok", "appliesTo": ["027"], "note": "Handwritten. Weights blank on the sheet; quantity and carton are legible and unambiguous. 37×29×41 computes to 0.043993 m³, recorded as derived rather than as the sheet's own figure." },
+    { "n": 26, "model": "DS05(余凯利)", "packing": "", "perCarton": 100, "grossKg": 10, "netKg": 9, "cartonCm": "29×24×20.5", "volumeM3": null, "status": "other-manufacturer" },
+    { "n": 27, "model": "CE1073DR", "packing": "", "perCarton": 12, "grossKg": 19.3, "netKg": 18.3, "cartonCm": "35.5×22.6×27.6", "volumeM3": null, "status": "no-such-model" },
+    { "n": 28, "model": "(锁体, handwritten and illegible)", "packing": "", "perCarton": 50, "grossKg": null, "netKg": null, "cartonCm": "26×21×14", "volumeM3": null, "status": "obscured" }
+  ]
+}

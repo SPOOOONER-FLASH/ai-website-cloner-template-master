@@ -13,6 +13,7 @@
 | # | 事情 | 多久做一次 | 大约耗时 |
 |---|---|---|---|
 | 1 | nginx reload（让 301 重定向生效） | 有新重定向时 | 2 分钟 |
+| 1b | **改 index.php 跳转规则（2026-09-04 新增，只做一次）** | 一次性 | 5 分钟 |
 | 2 | Cloudflare 全区 purge | 每次发布后 | 1 分钟 |
 | 3 | Google Search Console 手动提交 | 有新页面时 | 每天 10 分钟 |
 | 4 | Bing / Clarity 设置 | 一次性 | 5 分钟 |
@@ -143,6 +144,121 @@ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://cantonlock.c
 
 **我在交接里写「⚠ nginx 需要 reload」的时候。** 只有 `deploy/nginx/` 下的文件
 变了才需要，普通发布不需要。
+
+---
+
+---
+
+## 1b. 改 index.php 跳转规则（2026-09-04 新增，只做一次）
+
+### 为什么要做
+
+9 月 4 日的 Search Console 导出里有一条很清楚的东西：
+
+> `https://www.cantonlock.com/index.php?lang=es` —— **31 次展示，平均排名 4.97**
+
+这是**旧的西班牙语首页**，也是全站排名最好的几个 URL 之一。它现在 301 到
+**英文的** `/products/`。也就是说：一个西语买家在 Google 上搜到我们、点进来，
+落在一个英文栏目页上。访客和排名一起浪费掉。
+
+还有第二个问题：光秃秃的 `index.php`（旧首页）也被送到 `/products/`。
+那是在回答没人问的问题，还丢掉了首页自己积累的排名。
+
+`deploy/install-nginx-redirects.sh` 已经把需要的三个变量装好了（第 1 步做过就有）。
+**只剩这一个 location 块要手工改** —— 因为它在宝塔管理的主配置文件里，
+安装脚本按设计不碰那个文件。
+
+### 第一步：打开配置文件
+
+1. 打开宝塔面板 → 左边菜单 **网站**
+2. 找到 `cantonlock.com` 这一行，点最右边的 **设置**
+3. 弹出窗口里点上方的 **配置文件**
+
+你会看到一大段配置。**先什么都别改。**
+
+### 第二步：备份（重要）
+
+**在改任何东西之前**，在文本框里点一下，按 `Ctrl+A` 全选、`Ctrl+C` 复制，
+粘贴到一个记事本里存起来。
+
+万一改坏了，把这份贴回去就恢复原状。这一步花 20 秒，省的是网站下线。
+
+### 第三步：找到要改的那三行
+
+在配置文件里按 `Ctrl+F` 搜 `index.php`。你要找的是这一段：
+
+```nginx
+location ~* ^/index\.php$ {
+    if ($legacy_product_url != "") { return 301 $legacy_product_url; }
+    if ($legacy_category_url != "") { return 301 $legacy_category_url; }
+    return 301 /products/;
+}
+```
+
+**如果搜不到 `index.php`**，说明配置和我以为的不一样 —— 停在这里，
+把整个配置文件截图发我，不要继续。
+
+### 第四步：把中间三行换掉
+
+把上面那段里的**三行**（两行 `if` 加最后一行 `return`）替换成下面这三行。
+`location` 那一行和最后那个 `}` 不要动：
+
+```nginx
+    if ($legacy_product_url != "")  { return 301 $legacy_lang_prefix$legacy_product_url; }
+    if ($legacy_category_url != "") { return 301 $legacy_lang_prefix$legacy_category_url; }
+    return 301 $legacy_lang_home$legacy_fallback_path;
+```
+
+改完这一段应该长这样：
+
+```nginx
+location ~* ^/index\.php$ {
+    if ($legacy_product_url != "")  { return 301 $legacy_lang_prefix$legacy_product_url; }
+    if ($legacy_category_url != "") { return 301 $legacy_lang_prefix$legacy_category_url; }
+    return 301 $legacy_lang_home$legacy_fallback_path;
+}
+```
+
+**逐字对照一遍。** 少一个 `$` 或者少一个分号，nginx 会拒绝启动。
+
+### 第五步：保存
+
+点弹窗右下角的 **保存**。
+
+**宝塔在保存时会自动跑一次 `nginx -t` 语法检查：**
+
+- **看到「保存成功」** → 语法没问题，配置已经生效，继续第六步。
+- **看到红色报错**（通常写着 `nginx: [emerg]` 或 `configuration file test failed`）
+  → **不要再点保存，也不要再改**。把第二步存的备份全选贴回去、保存，
+  然后把报错截图发我。这个过程中网站不会中断 —— nginx 只在检查通过后才换配置。
+
+### 第六步：验证（在服务器终端里）
+
+宝塔 → 左边菜单 **终端**，把下面整段粘进去按回车：
+
+```bash
+for u in "index.php?lang=es" "index.php" "index.php?lang=es&tid=97" "index.php?tid=97" "index.php?tid=999"; do printf "%-30s " "$u"; curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" -H "Host: cantonlock.com" "http://127.0.0.1/$u"; done
+```
+
+**应该看到这五行**（`->` 后面的地址要完全一样）：
+
+```
+index.php?lang=es              301 -> https://cantonlock.com/es/
+index.php                      301 -> https://cantonlock.com/
+index.php?lang=es&tid=97       301 -> https://cantonlock.com/es/products/lock-cases/
+index.php?tid=97               301 -> https://cantonlock.com/products/lock-cases/
+index.php?tid=999              301 -> https://cantonlock.com/products/
+```
+
+- **五行都对** → 完成了。接着做第 2 步（Cloudflare purge），因为 Cloudflare 会缓存
+  301，不清缓存的话外面看到的还是旧跳转。
+- **有任何一行不对，或者出现 `404` / `200` / `500`** → 把整段输出截图发我。
+  网站此刻是正常的（这几条只是旧 URL 的跳转），不用紧张，也不要自己回滚。
+
+### 这一步做完之后
+
+不需要再做第二次。以后 `deploy/nginx/` 下的文件变了，跑第 1 步的安装脚本就够了 ——
+这三个变量在那个脚本装的文件里，会跟着一起更新。
 
 ---
 
