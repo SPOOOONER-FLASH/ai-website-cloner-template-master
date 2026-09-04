@@ -1551,6 +1551,171 @@
     still needs the change to be legible, so the elements arrive at their final state
     immediately rather than not arriving.
   */
+
+  /*
+    ── Catalogue / Configurator switch ───────────────────────────────────────
+
+    Two ways into the same 435 products, and the reader has to be able to see both
+    without discovering one of them by accident.
+
+    It is two LINKS to two real routes, not a tab widget over client state. Under
+    `output: "export"` a client-only tab would leave one of the two modes with no URL
+    of its own — nothing to link to, nothing to submit, nothing for a crawler to reach.
+    Both pages already exist and already rank separately; this only makes the pair
+    visible from either one.
+
+    `aria-current="page"` rather than a disabled button on the active side: the reader is
+    already there, so there is nothing to press, and a dead-looking control that does
+    nothing is the shape of the dead clicks Clarity found in the footer.
+  */
+  .finder-mode {
+    display: inline-flex;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+  }
+
+  .finder-mode > * + * {
+    border-left: 1px solid var(--color-line);
+  }
+
+  .finder-mode-item {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+    text-decoration: none;
+    transition:
+      color 180ms var(--motion-ease-crisp),
+      background-color 180ms var(--motion-ease-crisp);
+  }
+
+  .finder-mode-item:hover,
+  .finder-mode-item:focus-visible {
+    color: var(--color-ink);
+    background: var(--color-brand-tint);
+  }
+
+  .finder-mode-item[aria-current="page"] {
+    color: var(--color-surface);
+    background: var(--color-ink);
+  }
+
+  /*
+    ── The schedule line ─────────────────────────────────────────────────────
+
+    FSB compose an article number in front of the reader and each segment resolves as
+    a question is answered. Ours resolves the line a specifier writes into a door
+    schedule, which is the same mechanic against something they can use at the end.
+
+    Unresolved positions keep their width, so the line does not reflow on every answer —
+    a row of text that jumps sideways as you work down it is the thing that makes an
+    assembling display feel unreliable rather than precise.
+  */
+  .spec-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.8rem 1.2rem;
+    padding: 1.6rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface-alt);
+  }
+
+  .spec-slot {
+    font-size: var(--text-c1);
+    line-height: var(--leading-c1);
+    color: var(--color-ink);
+  }
+
+  .spec-slot-empty {
+    color: var(--color-ink-tertiary);
+    /* Holds roughly the width of a resolved value so the row settles rather than grows. */
+    min-width: 6ch;
+  }
+
+  .spec-sep {
+    color: var(--color-ink-tertiary);
+    user-select: none;
+  }
+
+  /*
+    A newly resolved slot lifts into place once. Only the slot that changed animates —
+    re-running the whole line on every answer would read as the page reloading, which is
+    the opposite of what an assembling identifier is meant to convey.
+  */
+  @media (prefers-reduced-motion: no-preference) {
+    .spec-slot-resolved {
+      animation: spec-slot-in 320ms var(--motion-ease-crisp) both;
+    }
+  }
+
+  @keyframes spec-slot-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.4rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /*
+    ── What an option means ──────────────────────────────────────────────────
+
+    Clamped to three lines so a long definition cannot make one card twice the height of
+    its neighbours; the full sentence stays in the DOM, so a screen reader and a crawler
+    both get all of it. See OPTION_NOTES in src/lib/configurator.ts for why these are
+    written at all.
+  */
+  .config-option-note {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    font-size: var(--text-c2);
+    line-height: var(--leading-c2);
+    color: var(--color-ink-secondary);
+  }
+
+  /*
+    With a note in the body the card is a block of text, not a row with a thumbnail, and
+    the grid has to give it room. Three columns at 1440 leave about 40 characters per
+    line once the thumbnail and gaps are taken out — a definition set that narrow reads as
+    a column of fragments. Two columns put the measure back around 70 characters, which is
+    where prose belongs, and the thumbnail grows with the card.
+  */
+  .config-options-noted {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 64.5rem) {
+    .config-options-noted {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .config-option-with-note {
+    align-items: flex-start;
+    min-height: 12rem;
+  }
+
+  /*
+    11rem, not the 6.4rem the un-noted cards use.
+
+    These are white-background studio photographs and the part sits small inside its
+    square frame, so at 80px a satin lock case on white rendered as an empty grey box —
+    the thumbnail was taking up space and carrying no information. At 110px the silhouette
+    is legible, which is the entire reason a picture is on the card. The two-column grid
+    pays for it: even at 11rem the text still has around 70 characters to work with.
+  */
+  .config-option-with-note .config-option-media {
+    flex: 0 0 11rem;
+    width: 11rem;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .config-option-in,
     .config-preview-media {

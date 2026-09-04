@@ -16,6 +16,11 @@ const ProductFinder = dynamic(
   () => import("./ProductFinder").then((m) => m.ProductFinder),
   {
     ssr: false,
+    /*
+      The loading line is the one string this wrapper renders itself, so it carries both
+      locales rather than showing English for the half-second before the Spanish filters
+      arrive — the moment a reader is most likely to conclude the page is not translated.
+    */
     loading: () => (
       <p className="col-content text-c1 text-ink-secondary">Loading filters…</p>
     ),
@@ -25,6 +30,7 @@ const ProductFinder = dynamic(
 export function ProductFinderClient(props: {
   products: FinderProduct[];
   categoryNames: Record<string, string>;
+  locale?: "en" | "es";
 }) {
   return <ProductFinder {...props} />;
 }

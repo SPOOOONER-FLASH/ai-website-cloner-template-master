@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Configurator } from "@/components/site/Configurator";
+import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
+import { HardwareGlossary } from "@/components/site/HardwareGlossary";
 import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
@@ -70,13 +70,19 @@ export default function ConfiguradorPage() {
 
         <section className="layout mt-64 lg:mt-96" aria-label="Selección guiada">
           <div className="col-content">
-            <Suspense
-              fallback={<p className="text-c1 text-ink-secondary">Cargando el catálogo…</p>}
-            >
-              <Configurator products={products} locale="es" />
-            </Suspense>
+            {/*
+              Loaded with ssr: false, NOT wrapped in Suspense.
+
+              It was in a Suspense boundary until 2026-09-04 and the fallback never
+              resolved: under `output: "export"` there is no server to stream the boundary
+              from, so "Cargando el catálogo…" was the whole page in production for as
+              long as the route existed. See ConfiguratorClient for the full account.
+            */}
+            <ConfiguratorClient products={products} locale="es" />
           </div>
         </section>
+
+        <HardwareGlossary locale="es" />
       </main>
     </>
   );

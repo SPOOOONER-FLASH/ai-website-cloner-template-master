@@ -47,6 +47,25 @@ export const FACET_LABELS: Record<FacetKey, string> = {
 };
 
 /**
+ * The same facets in Spanish trade language.
+ *
+ * Not literal translations. "Acabado" is what a Spanish-speaking specifier writes for a
+ * finish; "terminado" would be understood and would read as a translation. Same list as
+ * FACET_LABELS by construction — the Record<FacetKey, string> type means adding a facet
+ * fails to compile until this one has it too, which is the only reliable way to keep a
+ * mirrored UI from silently falling behind.
+ */
+export const FACET_LABELS_ES: Record<FacetKey, string> = {
+  category: "Categoría",
+  subCategory: "Tipo",
+  series: "Serie",
+  material: "Material",
+  finish: "Acabado",
+  doorType: "Tipo de puerta",
+  certification: "Certificación",
+};
+
+/**
  * The rail shows two facets; the rest live behind a "More filters" panel.
  *
  * All seven at once produced a column hundreds of rows long — 41 materials, 78 finishes,

@@ -294,3 +294,188 @@ export function reviseAt(answers: Answers, key: StepKey): Answers {
   }
   return out;
 }
+
+/**
+ * What each choice actually means, in a sentence.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS EXISTS
+ *
+ * The configurator asks "what are you specifying?" and offers `night-latches-rim-locks`
+ * and `lock-cases`. A specifier knows the difference. An architect's assistant pricing a
+ * refurbishment, or a distributor's buyer opening a new category, does not — and the
+ * whole premise of a guided tool is that it can be used by somebody who cannot answer the
+ * Finder's questions cold. Offering a term without defining it hands that reader the same
+ * problem in a friendlier layout.
+ *
+ * FSB does this on every option in their configurator, and it is the part of their tool
+ * that is genuinely hard to copy: it is writing, not code.
+ *
+ * ---------------------------------------------------------------------------
+ * WHAT IS AND IS NOT IN HERE
+ *
+ * These are DEFINITIONS OF TRADE TERMS, not claims about our products. "A mortise lock
+ * case is let into a pocket cut in the edge of the door" is true of every mortise lock
+ * ever made; it commits this company to nothing and can be checked against any hardware
+ * reference. Nothing here says a Canton Hyland product is certified, rated, tested or
+ * suitable for a given use — those claims live with the certificates that name a model.
+ *
+ * Values with no entry simply show no note. A definition invented to fill the gap would
+ * be the one sentence on the page nobody had checked.
+ */
+export const OPTION_NOTES: Record<string, string> = {
+  /* Categories */
+  "panic-exit-devices":
+    "A bar across the inside face of the door that unlatches under pressure, so a person leaving in a crowd needs no handle, no key and no instruction.",
+  "lock-cases":
+    "The mechanism itself, let into a pocket cut in the edge of the door. Handles and cylinders are ordered separately and fit to it.",
+  "knob-locks":
+    "Lock and handle in one assembly, bored straight through the door face. The commonest lock on an interior door because it needs two holes and no chiselling.",
+  "lever-handles":
+    "Handles on roses or backplates, fitted to a lock case bought separately. A lever can be opened with an elbow or a closed fist, which a knob cannot.",
+  "stainless-steel-handles":
+    "Pull and door handles in stainless steel, for entrances and glass doors where the handle is the visible hardware.",
+  "night-latches-rim-locks":
+    "Mounted on the face of the door rather than inside it. Latches behind you on closing, and can be held open when a door needs to stay free.",
+  "door-closers":
+    "Controls the door's swing and closes it every time. Needed wherever a door must not be left standing open.",
+  "brass-steel-hinges":
+    "Carries the door's weight and its whole life of movement. The item most often under-specified, and the one that fails first when it is.",
+  "glass-door-accessories":
+    "Patch fittings, clamps and locks that grip toughened glass without a frame, holding the leaf at its corners.",
+  "lock-cylinders":
+    "The keyed part. Changing the cylinder rekeys the door without touching the lock case.",
+  deadbolts:
+    "A bolt thrown by key or thumbturn with no spring behind it, so it cannot be pushed back. Fitted above a latch, not instead of one.",
+  "bathroom-accessories":
+    "Grab rails, hooks, holders and shelves — the fittings a washroom needs beyond its door.",
+  "hardware-accessories":
+    "Strikes, spindles, screws, stops and the parts that make the rest fit.",
+  "grip-handle-sets": "A long pull on the outside with a lock behind it, for a main entrance door.",
+  "sliding-hook-locks":
+    "For a sliding leaf, where a bolt cannot travel straight out. A hook swings from the case into the keep.",
+
+  /* Sub-categories */
+  "tubular-locks": "Latch and spindle in a slim tube. Lighter duty than cylindrical, and quicker to fit.",
+  "heavy-duty-cylindrical-locks":
+    "A chassis inside the door with the working parts around the spindle. The pattern used in schools, hospitals and offices, where one door is opened thousands of times a year.",
+  "light-duty-cylindrical-locks":
+    "The same pattern, built for a residential opening rather than a corridor in constant use.",
+  "commercial-locks":
+    "Cylindrical locks in the function sets a commercial specification asks for — classroom, storeroom, entrance, passage.",
+  "door-viewers": "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.",
+  "door-flush-bolts":
+    "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.",
+  "glass-door-handles": "Pulls fixed through drilled toughened glass, with no frame to fix to.",
+  "glass-door-patch-fittings":
+    "Corner castings that clamp toughened glass and carry the pivot, lock or rail.",
+  latches: "The sprung bolt that holds a door closed without locking it.",
+  "door-stoppers": "Stops the leaf, and the handle on it, before either reaches the wall.",
+  "security-door-guards":
+    "Lets the door open a few centimetres on a restrictor, so a caller can be spoken to before being let in.",
+  indicators: "Shows occupied or vacant from outside, for a cubicle or a washroom.",
+  "exterior-trim":
+    "The outside handle for a panic device: the escape bar works from inside regardless, and this decides whether the door can also be opened from outside.",
+  "multi-point": "Throws several bolts up and down the leaf from one turn, pulling a tall door tight.",
+  "fire-door": "Devices for openings that must hold a fire back and still let people out.",
+  alarmed: "Sounds when the bar is pushed, for a door that is a legal exit but not a normal one.",
+  "power-transfer-devices":
+    "Carries current from frame to leaf, so an electrified lock keeps working as the door swings.",
+  "special-applications": "Devices for openings the standard patterns do not cover.",
+  "house-numbers": "Numerals and letters for the outside of the building.",
+};
+
+export const OPTION_NOTES_ES: Record<string, string> = {
+  "panic-exit-devices":
+    "Una barra en la cara interior de la puerta que abre al ser empujada, de modo que quien sale entre una multitud no necesita manilla, ni llave, ni instrucciones.",
+  "lock-cases":
+    "El mecanismo en sí, embutido en una caja abierta en el canto de la puerta. Las manillas y los cilindros se piden aparte y se montan sobre él.",
+  "knob-locks":
+    "Cerradura y pomo en un solo conjunto, taladrado a través de la hoja. Es la cerradura más común en puerta interior porque necesita dos taladros y ningún rebaje.",
+  "lever-handles":
+    "Manillas sobre roseta o placa, para una cerradura que se compra por separado. Una manilla se abre con el codo o con el puño cerrado; un pomo no.",
+  "stainless-steel-handles":
+    "Tiradores y manillones en acero inoxidable, para accesos y puertas de vidrio donde el tirador es el herraje visible.",
+  "night-latches-rim-locks":
+    "Se montan sobre la cara de la puerta, no dentro. Cierran al batir, y pueden dejarse en resbalón cuando la puerta debe quedar libre.",
+  "door-closers":
+    "Controla el barrido de la puerta y la cierra siempre. Necesario donde una puerta no puede quedarse abierta.",
+  "brass-steel-hinges":
+    "Soporta el peso de la hoja y todo su movimiento. Es la pieza que más se subespecifica, y la primera que falla cuando ocurre.",
+  "glass-door-accessories":
+    "Herrajes de sujeción, pinzas y cerraduras que agarran el vidrio templado sin marco, sosteniendo la hoja por las esquinas.",
+  "lock-cylinders":
+    "La parte con llave. Cambiar el cilindro amaestra de nuevo la puerta sin tocar la cerradura.",
+  deadbolts:
+    "Un pestillo accionado por llave o pomo giratorio, sin muelle detrás, de modo que no puede empujarse hacia dentro. Se instala sobre el resbalón, no en su lugar.",
+  "bathroom-accessories":
+    "Barras de apoyo, perchas, portarrollos y repisas — los accesorios que un aseo necesita más allá de su puerta.",
+  "hardware-accessories":
+    "Cerraderos, cuadradillos, tornillos, topes y las piezas que hacen encajar el resto.",
+  "grip-handle-sets": "Un manillón largo por fuera con cerradura detrás, para puerta de acceso principal.",
+  "sliding-hook-locks":
+    "Para hoja corredera, donde un pestillo no puede salir en línea recta. Un gancho gira desde la caja hasta el cerradero.",
+
+  "tubular-locks": "Resbalón y cuadradillo en un tubo estrecho. Menos servicio que la cilíndrica, y más rápida de instalar.",
+  "heavy-duty-cylindrical-locks":
+    "Un chasis dentro de la puerta con el mecanismo alrededor del cuadradillo. Es el modelo de colegios, hospitales y oficinas, donde una misma puerta se abre miles de veces al año.",
+  "light-duty-cylindrical-locks":
+    "El mismo modelo, dimensionado para una puerta de vivienda y no para un pasillo en uso constante.",
+  "commercial-locks":
+    "Cerraduras cilíndricas en las funciones que pide una especificación comercial — aula, almacén, acceso, paso libre.",
+  "door-viewers": "Una lente gran angular a través de la hoja, para ver quién llama sin abrir.",
+  "door-flush-bolts":
+    "Mantiene cerrada la hoja pasiva de una puerta de dos hojas, embutido a haces para que nada sobresalga del canto.",
+  "glass-door-handles": "Tiradores pasantes sobre vidrio templado taladrado, sin marco donde fijar.",
+  "glass-door-patch-fittings":
+    "Herrajes de esquina que aprietan el vidrio templado y alojan el pivote, la cerradura o el travesaño.",
+  latches: "El pestillo de muelle que mantiene la puerta cerrada sin bloquearla.",
+  "door-stoppers": "Detiene la hoja, y la manilla que lleva, antes de que ninguna alcance la pared.",
+  "security-door-guards":
+    "Permite abrir unos centímetros sobre un limitador, para hablar con quien llama antes de dejarle pasar.",
+  indicators: "Indica libre u ocupado desde fuera, para una cabina o un aseo.",
+  "exterior-trim":
+    "La manilla exterior de un dispositivo antipánico: la barra funciona desde dentro en cualquier caso, y esto decide si además se puede abrir desde fuera.",
+  "multi-point": "Lanza varios puntos arriba y abajo de la hoja con un solo giro, apretando una puerta alta.",
+  "fire-door": "Dispositivos para huecos que deben contener el fuego y aun así dejar salir a la gente.",
+  alarmed: "Suena al empujar la barra, para una puerta que es salida legal pero no de uso normal.",
+  "power-transfer-devices":
+    "Lleva corriente del marco a la hoja, para que una cerradura eléctrica siga funcionando mientras la puerta gira.",
+  "special-applications": "Dispositivos para huecos que los modelos estándar no cubren.",
+  "house-numbers": "Números y letras para el exterior del edificio.",
+};
+
+export function noteFor(value: string, locale: "en" | "es" = "en"): string | undefined {
+  return locale === "es" ? OPTION_NOTES_ES[value] : OPTION_NOTES[value];
+}
+
+/**
+ * The configuration as the line a specifier would write on a door schedule.
+ *
+ * ---------------------------------------------------------------------------
+ * This is the piece taken from FSB, and the reason it is worth taking.
+ *
+ * Their configurator composes an article number in front of you — `12 · 1003 · 02310 ·
+ * 0105` — and each segment resolves as you answer. Watching a real identifier assemble is
+ * what makes their tool feel like machinery rather than a form, and it is the single most
+ * imitable thing on that site.
+ *
+ * We cannot compose an article number the way they do: their product images are Cloudinary
+ * layer stacks (`l_product-finder:dk:ros:...`) composited per component, and ours are
+ * whole-product photographs. But we have something that assembles just as legibly and is
+ * more use at the end — THE SCHEDULE LINE. It is the sentence these buyers actually write
+ * into a door schedule, and by the last answer they can copy it straight out.
+ *
+ * Unanswered positions are returned as null rather than dropped, so the line holds its
+ * final shape from the first render and the reader can see how many decisions are left
+ * without counting steps.
+ */
+export function specificationLine(
+  answers: Answers,
+  steps: readonly ConfiguratorStep[] = STEPS,
+): { key: StepKey; value: string | null }[] {
+  return steps.map((step) => ({
+    key: step.key,
+    value: answers[step.key] ?? null,
+  }));
+}

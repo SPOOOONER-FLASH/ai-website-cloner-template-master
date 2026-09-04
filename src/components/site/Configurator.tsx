@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { FinderModeSwitch } from "./FinderModeSwitch";
 import { cn } from "@/lib/utils";
 import type { FinderProduct } from "@/lib/product-finder";
 import {
@@ -12,9 +13,11 @@ import {
   answersFromParams,
   answersToParams,
   nextStep,
+  noteFor,
   optionsFor,
   remaining,
   reviseAt,
+  specificationLine,
   stepPath,
   type Answers,
   type ConfiguratorStep,
@@ -53,7 +56,6 @@ interface ConfiguratorProps {
 
 const COPY = {
   en: {
-    eyebrow: "Guided selection",
     restart: "Start again",
     back: "Change",
     matchOne: "1 model matches",
@@ -68,9 +70,11 @@ const COPY = {
     step: "Step",
     of: "of",
     noPhoto: "Photography for this model is being prepared.",
+    schedule: "Your specification so far",
+    scheduleHelp:
+      "This is the line that goes on a door schedule. It fills in as you answer, and you can copy it straight out.",
   },
   es: {
-    eyebrow: "Selección guiada",
     restart: "Empezar de nuevo",
     back: "Cambiar",
     matchOne: "1 modelo coincide",
@@ -85,12 +89,26 @@ const COPY = {
     step: "Paso",
     of: "de",
     noPhoto: "La fotografía de este modelo está en preparación.",
+    schedule: "Su especificación hasta aquí",
+    scheduleHelp:
+      "Esta es la línea que va en una relación de puertas. Se completa a medida que responde, y puede copiarla tal cual.",
   },
 } as const;
 
-/** Slugs read better as words in the answer summary. */
+/**
+ * Slugs read better as words.
+ *
+ * The hyphen is not the test. It used to be, and a one-word slug fell straight through:
+ * the first question listed "Hardware accessories", "Panic exit devices" and then
+ * `deadbolts`, lower-case, in a column of capitalised labels. A value is a slug when it
+ * is entirely lower-case, whether or not it happens to contain a hyphen.
+ *
+ * Values that are already prose — "Stainless Steel", "Polished Brass" — carry their own
+ * capitalisation from the catalogue and are returned untouched, so this never overrides an
+ * editor's choice.
+ */
 const humanise = (value: string) =>
-  value.includes("-") && value === value.toLowerCase()
+  value === value.toLowerCase()
     ? value.replace(/-/g, " ").replace(/^./, (c) => c.toUpperCase())
     : value;
 
@@ -173,10 +191,15 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
 
   return (
     <div className="grid w-full grid-cols gap-x gap-y-48">
-      {/* ── Progress rail ─────────────────────────────────────────────── */}
+      {/* ── Mode, progress rail, schedule line ────────────────────────── */}
       <div className="col-span-full">
-        <p className="text-c2 uppercase tracking-[0.12em] text-ink-secondary">{t.eyebrow}</p>
-        <ol className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-8">
+        {/*
+          The switch stands where an eyebrow used to. An eyebrow reading "Guided selection"
+          only restated the heading below it; the switch occupies the same line and does
+          something — it says which of the two tools you are in and hands you the other.
+        */}
+        <FinderModeSwitch active="configurator" locale={locale} />
+        <ol className="mt-24 flex flex-wrap items-center gap-x-8 gap-y-8">
           {path.map((key, index) => {
             const stepDef = steps.find((s) => s.key === key) as ConfiguratorStep;
             const answer = answers[key];
@@ -216,6 +239,45 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
             </li>
           ) : null}
         </ol>
+
+        {/*
+          ── The schedule line ───────────────────────────────────────────
+
+          Taken from FSB, where an article number assembles segment by segment as you
+          answer, and it is the mechanic that makes their tool feel like machinery rather
+          than a form. Ours assembles the line a specifier writes into a door schedule,
+          which is the same effect against something usable at the end of it.
+
+          Rendered from the first paint with every position present, so the row settles
+          into place rather than growing — see `.spec-slot-empty` for the width floor that
+          keeps it from reflowing on each answer.
+        */}
+        <div className="mt-24">
+          <h2 className="sr-only">{t.schedule}</h2>
+          <p className="spec-line" aria-live="polite">
+            {specificationLine(answers, steps).map(({ key, value }, index) => (
+              <span key={key} className="contents">
+                {index > 0 ? (
+                  <span aria-hidden="true" className="spec-sep">
+                    ·
+                  </span>
+                ) : null}
+                <span
+                  /*
+                    `key` on the resolved slot restarts the one-off entrance animation
+                    when — and only when — that slot's value changes. Animating the whole
+                    line on every answer would read as the page reloading.
+                  */
+                  key={`${key}:${value ?? ""}`}
+                  className={cn("spec-slot", value ? "spec-slot-resolved" : "spec-slot-empty")}
+                >
+                  {value ? humanise(value) : "—"}
+                </span>
+              </span>
+            ))}
+          </p>
+          <p className="mt-8 max-w-[64ch] text-c2 text-ink-secondary">{t.scheduleHelp}</p>
+        </div>
       </div>
 
       {/* ── Question, or the result ───────────────────────────────────── */}
@@ -232,8 +294,26 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
               restarts the stagger. Without it the options mutate in place and the change
               of question is easy to miss.
             */}
-            <ul key={step.key} className="config-options mt-32">
-              {options.map((option, index) => (
+            {/*
+              Two columns rather than three when the options carry definitions — see
+              .config-options-noted for the measure this is protecting.
+            */}
+            <ul
+              key={step.key}
+              className={cn(
+                "config-options mt-32",
+                options.some((o) => noteFor(o.value, locale)) && "config-options-noted",
+              )}
+            >
+              {options.map((option, index) => {
+                /*
+                  What the term means, where we have written one. See OPTION_NOTES in
+                  src/lib/configurator.ts: these are trade definitions, not product
+                  claims, and a value with no entry shows nothing rather than a sentence
+                  invented to fill the card.
+                */
+                const note = noteFor(option.value, locale);
+                return (
                 <li
                   key={option.value}
                   className="config-option-in"
@@ -242,7 +322,7 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                   <button
                     type="button"
                     onClick={() => choose(step.key, option.value)}
-                    className="config-option"
+                    className={cn("config-option", note && "config-option-with-note")}
                     /*
                       Spelled out, because the computed name from the markup is the label
                       and the bare count run together — "Tubular locks16". The number is
@@ -263,10 +343,12 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                     <span className="config-option-body">
                       <span className="config-option-label">{humanise(option.value)}</span>
                       <span className="config-option-count">{option.count}</span>
+                      {note ? <span className="config-option-note">{note}</span> : null}
                     </span>
                   </button>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           </>
         ) : (

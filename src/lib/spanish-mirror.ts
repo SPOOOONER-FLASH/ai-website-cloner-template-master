@@ -25,6 +25,12 @@ const SPANISH_MIRROR_PREFIXES = [
   "/collections",
   // The guided configurator, bilingual from the day it shipped.
   "/configurator",
+  /*
+    The faceted catalogue. Added 2026-09-04 alongside the Catalogue/Configurator switch:
+    the switch offers the other mode from either page, and offering a Spanish reader a
+    link to a route that only exists in English is a dead link dressed as a feature.
+  */
+  "/product-finder",
   // The FAQ. The page a buyer needs before they can do business at all — minimum order,
   // lead time, samples, payment terms, OEM.
   "/faq",

@@ -85,6 +85,37 @@ function buildTitle(p) {
 }
 
 /**
+ * Assembles the longest description that fits, WITHOUT EVER CUTTING A WORD.
+ *
+ * The old ending was `base.slice(0, DESC_MAX - 1) + "…"`, and ten products shipped
+ * snippets reading "For timber fire door, steel fire door appli…". A description that
+ * stops mid-word is the clearest possible signal that nobody read it, on the one piece of
+ * copy a searcher sees before deciding whether to click.
+ *
+ * So it drops whole clauses instead — each is an independently true sentence, so a
+ * shorter description says less rather than saying something wrong — and it retries the
+ * boilerplate at every length. Dropping a clause frees characters, and the point of
+ * freeing them is to spend them, not to return a bare lead: without the retry, model 305
+ * lost both its applications clause AND the manufacturing sentence that would then have
+ * fitted comfortably.
+ *
+ * `parts[0]` — brand, model, what the thing is — always survives. That is the minimum a
+ * snippet has to carry, and it is short enough that nothing here can threaten it.
+ */
+function fitToBudget(parts, tails) {
+  for (let keep = parts.length; keep >= 1; keep -= 1) {
+    const base = parts.slice(0, keep).join(" ");
+    if (base.length > DESC_MAX) continue;
+    for (const tail of tails) {
+      const full = `${base} ${tail}`;
+      if (full.length <= DESC_MAX) return full;
+    }
+    return base;
+  }
+  return parts[0].slice(0, DESC_MAX);
+}
+
+/**
  * Description: a factual opening built from the product's own attributes, then as much
  * of the published company boilerplate as still fits under the budget.
  */
@@ -116,6 +147,54 @@ function buildDescription(p) {
     parts.push(`For ${list.join(", ")} applications.`);
   }
 
+  /*
+    THE CHECKED SENTENCE GOES IN FRONT OF THE BOILERPLATE.
+
+    Measured 2026-09-04: 47% of all meta-description text on this site was one of the four
+    tail sentences below, identical across 410 of 435 products — and Google renders about
+    155 characters, so more than half of what a searcher read was the same clause they had
+    just read on the previous result. Meanwhile 217 products carried a human-checked
+    summary saying what the part actually does, and not one of those sentences reached a
+    snippet.
+
+    That is the whole fix: put the sentence that distinguishes the product where the
+    duplicated one used to sit. The tail is not removed — it is simply last in line for the
+    remaining characters, which is where boilerplate belongs.
+
+    THE GUARDS. A summary is used only when it earns its place:
+      - long enough to be a sentence rather than a fragment;
+      - not already said by the clauses above, or the snippet repeats itself in 150
+        characters, which is worse than the boilerplate it replaced;
+      - free of the spacing damage that marks a summary as unedited catalogue paste
+        ("spray painting , different finishes"), because a snippet is the first sentence
+        of ours a stranger ever reads.
+    Everything rejected here keeps the previous behaviour exactly.
+  */
+  const summary = clean(p.summary ?? "");
+  const said = parts.join(" ").toLowerCase();
+  const words = summary.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 4);
+  const overlap = words.length ? words.filter((w) => said.includes(w)).length / words.length : 1;
+
+  if (
+    summary.length >= 40 &&
+    summary.length <= 130 &&
+    overlap < 0.6 &&
+    !/\s[,.]/.test(summary) &&
+    /^[A-Z]/.test(summary)
+  ) {
+    const sentence = summary.endsWith(".") ? summary : `${summary}.`;
+    /*
+      IT GOES IN WHOLE OR NOT AT ALL.
+
+      The first cut pushed it unconditionally and let the length cap deal with the
+      overflow, which produced snippets ending "…applications. A ke…" — a sentence cut
+      after two words. That is strictly worse than the boilerplate it displaced: the
+      duplicated tail at least finished. A description reaching the reader half-written
+      says nobody looked at it.
+    */
+    if (`${parts.join(" ")} ${sentence}`.length <= DESC_MAX) parts.push(sentence);
+  }
+
   // Published boilerplate, longest that still fits, then progressively shorter.
   const tails = [
     "Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
@@ -124,12 +203,7 @@ function buildDescription(p) {
     "Made in Guangdong, China.",
   ];
 
-  const base = parts.join(" ");
-  for (const tail of tails) {
-    const full = `${base} ${tail}`;
-    if (full.length <= DESC_MAX) return full;
-  }
-  return base.length <= DESC_MAX ? base : base.slice(0, DESC_MAX - 1).trimEnd() + "…";
+  return fitToBudget(parts, tails);
 }
 
 /* ------------------------------------------------------------------------ *
@@ -244,12 +318,7 @@ function buildDescriptionEs(p) {
     "Fabricado en Guangdong, China.",
   ];
 
-  const base = parts.join(" ");
-  for (const tail of tails) {
-    const full = `${base} ${tail}`;
-    if (full.length <= DESC_MAX) return full;
-  }
-  return base.length <= DESC_MAX ? base : base.slice(0, DESC_MAX - 1).trimEnd() + "…";
+  return fitToBudget(parts, tails);
 }
 
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));

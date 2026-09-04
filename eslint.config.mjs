@@ -16,6 +16,16 @@ const eslintConfig = defineConfig([
     // Agent scratch space — gitignored, throwaway, and not worth a lint gate.
     // See the tmp/<agent>-<purpose>/ convention in AGENTS.md.
     "tmp/**",
+    /*
+      Installed skills are vendored third-party code. Fifteen of their `.cjs` scripts use
+      require(), which this config forbids for our own TypeScript — so `npm run check`
+      was failing on files nobody here wrote and nobody here should edit. The only other
+      ways out were patching vendored code that `npx skills add` overwrites on the next
+      update, or weakening the rule for the whole project. Neither is worth it to lint
+      somebody else's installer.
+    */
+    ".agents/skills/**",
+    ".claude/skills/**",
   ]),
 ]);
 

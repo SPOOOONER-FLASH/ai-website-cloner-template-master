@@ -4,6 +4,7 @@ import { toFinderProduct } from "@/lib/product-finder";
 import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
@@ -65,7 +66,10 @@ export default function ProductFinderPage() {
             ]}
           />
           <h1 className="mt-24 text-h1 text-ink">Product Finder</h1>
-          <p className="mt-16 max-w-[68ch] text-c1 text-ink-secondary">
+          <div className="mt-24">
+            <FinderModeSwitch active="catalogue" />
+          </div>
+          <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
             Narrow the catalogue by the attributes that appear on a hardware schedule.
             Filters combine, counts update as you go, and the address bar keeps your
             selection so you can send it to a colleague.

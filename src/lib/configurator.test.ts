@@ -6,8 +6,12 @@ import {
   answersFromParams,
   answersToParams,
   nextStep,
+  noteFor,
   normaliseFinishes,
   optionsFor,
+  specificationLine,
+  OPTION_NOTES,
+  OPTION_NOTES_ES,
   remaining,
   reviseAt,
   stepPath,
@@ -176,5 +180,80 @@ test("the finish step offers finishes, not code strings", () => {
       option.value.toLowerCase() !== "all available",
       "the placeholder reached the reader",
     );
+  }
+});
+
+test("the schedule line holds every position from the first render", () => {
+  /*
+    The point of the line is that it has its final shape before it has its final content
+    — a reader can see how many decisions are left without counting steps, and the row
+    does not grow sideways as it fills. So an unanswered step is a null slot, never a
+    missing one.
+  */
+  const empty = specificationLine({});
+  assert.equal(empty.length, STEPS.length);
+  assert.ok(empty.every((slot) => slot.value === null));
+
+  const partial = specificationLine({ category: "panic-exit-devices", material: "Stainless Steel" });
+  assert.equal(partial.length, STEPS.length, "the line must not shrink as it fills");
+  assert.deepEqual(
+    partial.map((s) => s.value),
+    ["panic-exit-devices", null, "Stainless Steel", null, null],
+  );
+  assert.deepEqual(
+    partial.map((s) => s.key),
+    STEPS.map((s) => s.key),
+    "slots stay in step order, so the line reads the same way every time",
+  );
+});
+
+test("every category and sub-category the configurator can offer has a definition", () => {
+  /*
+    THE POINT OF THIS TEST. The notes exist because a reader who cannot answer the
+    Finder's questions cold is the whole reason the configurator exists — and a step that
+    offers `night-latches-rim-locks` with no explanation hands that reader the same
+    problem in a friendlier layout.
+
+    A category added to the catalogue with no note fails here rather than shipping as a
+    bare slug. Values are read from the real catalogue, so the check cannot drift from
+    what the tool actually shows.
+
+    doorType and material are deliberately NOT checked: they are free text with 95 and 64
+    distinct values, most of them one-offs ("Bathroom Hotel", "Stainless steel/Brass/Solid
+    steel"). Requiring a definition for each would demand 159 sentences about values that
+    should be normalised in the data first. That cleanup is on the fill-in sheet.
+  */
+  const offered = new Set<string>();
+  for (const key of ["category", "subCategory"] as const) {
+    for (const option of optionsFor(catalogue, {}, key)) offered.add(option.value);
+  }
+  assert.ok(offered.size > 20, "expected the catalogue to offer both levels of taxonomy");
+
+  const undefinedTerms = [...offered].filter((value) => !noteFor(value));
+  assert.deepEqual(
+    undefinedTerms,
+    [],
+    `these choices would be shown as a bare slug with no explanation: ${undefinedTerms.join(", ")}`,
+  );
+
+  // Both locales, or a Spanish reader gets a term with no definition where an English one has it.
+  const untranslated = [...offered].filter((value) => !noteFor(value, "es"));
+  assert.deepEqual(untranslated, [], `missing Spanish definitions: ${untranslated.join(", ")}`);
+});
+
+test("the definitions describe the trade, never the certification of our products", () => {
+  /*
+    These sentences are trade definitions, and that is exactly why they are safe to
+    publish: "a mortise lock case is let into the edge of the door" is true of every
+    mortise lock ever made. A sentence that reached for EN 1125, ANSI or "certified"
+    would stop being a definition and become a product claim on a page where no
+    certificate names a model — the same rule scripts/stahlock-cited-policy.mjs enforces
+    on imported spec rows.
+  */
+  const CLAIM = /\b(?:certif(?:ied|ication)|EN\s?1\d{3,4}|ANSI|BHMA|UL[\s-]?listed|approved|tested to)\b/i;
+  for (const [locale, notes] of [["en", OPTION_NOTES], ["es", OPTION_NOTES_ES]] as const) {
+    for (const [term, note] of Object.entries(notes)) {
+      assert.ok(!CLAIM.test(note), `${locale}/${term} makes a certification claim: "${note}"`);
+    }
   }
 });

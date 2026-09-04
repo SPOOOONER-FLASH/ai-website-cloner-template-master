@@ -15,6 +15,8 @@ import {
   sortForDisplay,
   toggleValue,
   FACET_PARAM_NAMES,
+  FACET_LABELS,
+  FACET_LABELS_ES,
   PRIMARY_FACETS,
   SECONDARY_FACETS,
   type Facet,
@@ -33,14 +35,71 @@ import {
  * The selection lives in the URL, so a filtered view can be bookmarked and — more to the
  * point for a B2B site — pasted into an email to a specifier.
  */
+/**
+ * Every string the reader sees, in both locales.
+ *
+ * Collected here rather than inline because the Spanish mirror of this page is a
+ * translation of the SAME component: two copies of the filter UI would drift the moment
+ * one of them gained a facet, and the drift would be invisible until a Spanish-speaking
+ * buyer hit it.
+ *
+ * The trade terms follow the glossary the Spanish catalogue already uses — "acabado" for
+ * finish, "serie" for series — rather than a literal rendering of the English label.
+ */
+const COPY = {
+  en: {
+    clearAll: (n: number) => `Clear all (${n})`,
+    search: "Search",
+    searchPlaceholder: "Model, name or finish…",
+    moreFilters: "More filters",
+    moreFiltersHint: "Series, material, finish, door type and certification.",
+    clearThese: (n: number) => `Clear these (${n})`,
+    product: "product",
+    products: "products",
+    matching: " matching your filters",
+    inCatalogue: " in the catalogue",
+    showing: (from: number, to: number) => ` · showing ${from}–${to}`,
+    emptyTitle: "Nothing matches this combination.",
+    emptyTry: "Try removing a filter, or ",
+    emptyAsk: "ask an export engineer",
+    emptyTail: " — the catalogue on this site is a subset of what we manufacture.",
+    contactHref: "/contact/",
+    pages: "Product pages",
+    facets: FACET_LABELS,
+  },
+  es: {
+    clearAll: (n: number) => `Borrar todo (${n})`,
+    search: "Buscar",
+    searchPlaceholder: "Modelo, nombre o acabado…",
+    moreFilters: "Más filtros",
+    moreFiltersHint: "Serie, material, acabado, tipo de puerta y certificación.",
+    clearThese: (n: number) => `Borrar estos (${n})`,
+    product: "producto",
+    products: "productos",
+    matching: " coinciden con sus filtros",
+    inCatalogue: " en el catálogo",
+    showing: (from: number, to: number) => ` · mostrando ${from}–${to}`,
+    emptyTitle: "Nada coincide con esta combinación.",
+    emptyTry: "Pruebe a quitar un filtro, o ",
+    emptyAsk: "consulte a un ingeniero de exportación",
+    emptyTail: " — el catálogo de este sitio es una parte de lo que fabricamos.",
+    contactHref: "/es/contact/",
+    pages: "Páginas de productos",
+    facets: FACET_LABELS_ES,
+  },
+} as const;
+
 export function ProductFinder({
   products,
   categoryNames,
+  locale = "en",
 }: {
   products: FinderProduct[];
   /** slug -> display name, so facets read "Panic Exit Devices" not "panic-exit-devices". */
   categoryNames: Record<string, string>;
+  locale?: "en" | "es";
 }) {
+  const t = COPY[locale];
   // Seeded lazily from the address bar. This component is loaded with ssr: false, so it
   // only ever renders in the browser — there is no server pass to disagree with, and no
   // setState-in-an-effect needed to catch up afterwards.
@@ -121,7 +180,7 @@ export function ProductFinder({
   const renderFacet = (facet: Facet) => (
     <fieldset key={facet.key} className="mt-32 border-0 p-0">
       <legend className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
-        {facet.label}
+        {t.facets[facet.key]}
       </legend>
       <div className="mt-12 flex flex-col gap-8">
         {facet.options.map((option) => {
@@ -177,13 +236,13 @@ export function ProductFinder({
               }}
               className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
             >
-              Clear all ({activeCount})
+              {t.clearAll(activeCount)}
             </button>
           )}
         </div>
 
         <label className="mt-24 block">
-          <span className="text-c2 text-ink-secondary">Search</span>
+          <span className="text-c2 text-ink-secondary">{t.search}</span>
           <input
             type="search"
             value={query}
@@ -191,7 +250,7 @@ export function ProductFinder({
               setQuery(event.target.value);
               setPage(1);
             }}
-            placeholder="Model, name or finish…"
+            placeholder={t.searchPlaceholder}
             className="mt-8 min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink placeholder:text-ink-secondary focus:border-brand focus:outline-none"
           />
         </label>
@@ -213,7 +272,7 @@ export function ProductFinder({
               className="flex w-full items-center justify-between gap-12 text-c1 text-ink hover:text-brand"
             >
               <span className="flex items-center gap-8">
-                More filters
+                {t.moreFilters}
                 {secondaryActive > 0 && (
                   <span className="inline-flex h-20 min-w-20 items-center justify-center rounded-full bg-brand px-6 text-c2 text-surface">
                     {secondaryActive}
@@ -226,7 +285,7 @@ export function ProductFinder({
             </button>
 
             <p className="mt-8 text-c2 text-ink-secondary">
-              Series, material, finish, door type and certification.
+              {t.moreFiltersHint}
             </p>
 
             {moreOpen && (
@@ -244,7 +303,7 @@ export function ProductFinder({
                     }
                     className="short-marker short-marker-compact mt-24 text-c2 text-brand hover:text-brand-hover"
                   >
-                    Clear these ({secondaryActive})
+                    {t.clearThese(secondaryActive)}
                   </button>
                 )}
               </div>
@@ -257,28 +316,28 @@ export function ProductFinder({
       <section className="col-span-full xl:col-span-18">
         <div ref={resultsTop} className="scroll-mt-96" />
         <p className="border-b border-line pb-16 text-c1 text-ink-secondary" aria-live="polite">
-          {current.total} {current.total === 1 ? "product" : "products"}
-          {activeCount > 0 || query ? " matching your filters" : " in the catalogue"}
+          {current.total} {current.total === 1 ? t.product : t.products}
+          {activeCount > 0 || query ? t.matching : t.inCatalogue}
           {current.pageCount > 1 && (
             <span className="text-ink-tertiary">
               {" "}
-              · showing {current.from}–{current.to}
+              {t.showing(current.from, current.to)}
             </span>
           )}
         </p>
 
         {current.total === 0 ? (
           <div className="mt-48 text-c1 text-ink-secondary">
-            <p className="text-ink">Nothing matches this combination.</p>
+            <p className="text-ink">{t.emptyTitle}</p>
             <p className="mt-12">
-              Try removing a filter, or{" "}
+              {t.emptyTry}
               <a
-                href="/contact/"
+                href={t.contactHref}
                 className="inline-marker text-brand hover:text-brand-hover"
               >
-                ask an export engineer
-              </a>{" "}
-              — the catalogue on this site is a subset of what we manufacture.
+                {t.emptyAsk}
+              </a>
+              {t.emptyTail}
             </p>
           </div>
         ) : (
@@ -296,7 +355,7 @@ export function ProductFinder({
               page={current.page}
               pageCount={current.pageCount}
               onChange={goToPage}
-              label="Product pages"
+              label={t.pages}
             />
             <CatalogueReturnRestorer readyKey={`finder:${current.page}:${current.from}`} />
           </>

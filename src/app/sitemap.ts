@@ -134,11 +134,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /*
     Product detail: the commercial core, highest priority after the homepage.
 
-    Each entry carries its hero image. A crawler indexing the page does not thereby index
-    the photograph on it — pages and images are separate paths — and buyers in this trade
-    routinely search Google Images for a shape before they have a model number. 360 of
-    the 435 records have a photograph; the rest are still awaiting one and are emitted
-    without an image rather than with a placeholder.
+    Each entry carries every photograph and video on the page — see below. A crawler
+    indexing the page does not thereby index the media on it; pages, images and videos are
+    three separate paths.
   */
   for (const { category, slug } of getAllProductParams()) {
     const product = getProductBySlug(category, slug);
@@ -149,7 +147,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `noindex-in-sitemap`. The page is still built; it is simply not promoted.
     */
     if (!product || !isPublished(product)) continue;
-    const hero = product.heroImage?.src;
+    /*
+      Every photograph on the page, not only the hero.
+
+      Buyers in this trade search Google Images for a shape — a patch fitting, a lock case
+      forend — before they have a model number, and the shape they recognise is often the
+      third gallery view rather than the catalogue hero. Listing the hero alone offered a
+      crawler 360 pictures out of the 1,584 the site publishes.
+
+      Every one carries alt text (verified: 0 of 1,584 missing), which is what makes them
+      worth listing at all — an image sitemap entry for a picture with no description asks
+      a crawler to index something it cannot caption.
+    */
+    const images = [
+      product.heroImage?.src,
+      ...product.gallery.map((g) => g.src),
+      ...(product.videos ?? []).map((v) => v.poster?.src),
+    ].filter((src): src is string => Boolean(src));
     /*
       Demonstration clips, listed so they can earn a video result of their own.
 
@@ -174,7 +188,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         PRIORITY.productDetail,
         "monthly",
         undefined,
-        hero ? [absoluteUrl(hero)] : undefined,
+        images.length ? images.map(absoluteUrl) : undefined,
         videos.length ? videos : undefined,
       ),
     );

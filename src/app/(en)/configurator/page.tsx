@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Configurator } from "@/components/site/Configurator";
+import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
+import { HardwareGlossary } from "@/components/site/HardwareGlossary";
 import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
@@ -88,17 +88,18 @@ export default function ConfiguratorPage() {
         <section className="layout mt-64 lg:mt-96" aria-label="Guided selection">
           <div className="col-content">
             {/*
-              Suspense because the component reads searchParams — under `output: "export"`
-              Next requires that boundary, and it is what lets a shared configuration URL
-              hydrate into the right step instead of always starting from question one.
+              Loaded with ssr: false, NOT wrapped in Suspense.
+
+              It was in a Suspense boundary until 2026-09-04 and the fallback never
+              resolved: under `output: "export"` there is no server to stream the boundary
+              from, so "Loading the catalogue…" was the whole page in production for as long as
+              the route existed. See ConfiguratorClient for the full account.
             */}
-            <Suspense
-              fallback={<p className="text-c1 text-ink-secondary">Loading the catalogue…</p>}
-            >
-              <Configurator products={products} />
-            </Suspense>
+            <ConfiguratorClient products={products} />
           </div>
         </section>
+
+        <HardwareGlossary />
       </main>
     </>
   );
