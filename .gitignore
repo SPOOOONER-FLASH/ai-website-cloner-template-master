@@ -56,6 +56,20 @@ next-env.d.ts
 .claude/skills/customize/
 .claude/skills/release/
 
+# Skills installed by `npx skills add`.
+#
+# The installer writes the skill into .agents/skills/ — already ignored above — and then
+# drops a SYMLINK into .claude/skills/ so Claude Code finds it. Committing those symlinks
+# would hand the other agents 73 links pointing into a directory git does not carry, which
+# is worse than not having them: a broken link looks like a missing file rather than an
+# uninstalled skill. Whoever wants them runs the same one-line install; see
+# docs/collaboration/SKILLS.md for the exact commands.
+#
+# `skills-lock.json` is NOT ignored — it is source text recording which repository and
+# which content hash each skill came from, which is what makes the install reproducible.
+.claude/skills/
+.continue/skills/
+
 # Local temp files
 temp/
 .playwright-cli/
