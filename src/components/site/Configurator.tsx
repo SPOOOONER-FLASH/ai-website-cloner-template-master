@@ -150,6 +150,67 @@ function useCountUp(target: number, ms = 380): number {
   return value;
 }
 
+/**
+ * Reveals a string left to right, holding the unresolved tail as em dashes.
+ *
+ * WHAT IT IS FOR. Reaching one model is the payoff of the whole questionnaire, and the
+ * model number arriving as a plain text swap is the one moment in the tool that reads as
+ * nothing happening. Resolving it makes the arrival legible — and it uses the same
+ * character the schedule line above already uses for a position not yet decided, so the
+ * two are speaking the same language rather than the number acquiring an effect of
+ * its own.
+ *
+ * NOT A SCRAMBLE. No random glyphs: this is a real orderable part number, and characters
+ * that are briefly wrong before becoming right is exactly the wrong impression to give
+ * about a field a buyer is going to copy into a purchase order.
+ *
+ * 360ms, and it does not run at all under `prefers-reduced-motion` — the reader still
+ * gets the number, immediately, which is the point of the reduced-motion request rather
+ * than an exception to it.
+ */
+function useResolvedText(text: string, ms = 360): string {
+  const [shown, setShown] = useState(text);
+  const target = useRef(text);
+
+  useEffect(() => {
+    /*
+      Nothing to do when the text is already what is on screen — which is also the
+      reduced-motion path, since `shown` is seeded from `text` and never touched.
+      Returning early rather than calling setState keeps this effect from scheduling a
+      render that would produce the value it already has.
+    */
+    if (target.current === text && shown === text) return;
+    target.current = text;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setShown(text);
+      return;
+    }
+
+    const start = performance.now();
+    let frame = 0;
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - start) / ms);
+      const eased = 1 - (1 - t) ** 3;
+      const upto = Math.round(text.length * eased);
+      /* Spaces stay spaces, so the shape of the number is visible before its digits. */
+      setShown(
+        text.slice(0, upto) +
+          [...text.slice(upto)].map((c) => (c === " " ? " " : "—")).join(""),
+      );
+      if (t < 1) frame = requestAnimationFrame(tick);
+      else setShown(text);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+    // `shown` is deliberately not a dependency: it changes on every frame of the
+    // animation, and listing it would restart the animation from each frame it produced.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text, ms]);
+
+  return shown;
+}
+
 export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -214,6 +275,8 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
   const candidates = useMemo(() => left.filter((p) => p.heroImage?.src).slice(0, 9), [left]);
   /* One left: show it properly, with its clip if there is one. */
   const settled = left.length === 1 ? left[0] : null;
+  /* Resolves when the field reaches one; empty otherwise, so the hook stays unconditional. */
+  const resolvedModel = useResolvedText(settled && !settled.modelTbc ? `${settled.model} — ` : "");
 
   return (
     <div className="grid w-full grid-cols gap-x gap-y-48">
@@ -457,7 +520,9 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
               <p className="config-preview p-24 text-c2 text-ink-secondary">{t.noPhoto}</p>
             )}
             <p className="mt-12 text-c2 text-ink">
-              {settled.modelTbc ? "" : `${settled.model} — `}
+              {settled.modelTbc ? null : (
+                <span className="config-settled-model tabular-nums">{resolvedModel}</span>
+              )}
               {(locale === "es" && settled.nameEs) || settled.name}
             </p>
           </div>
@@ -467,11 +532,16 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
             and the tiles re-stagger. Keyed on nothing, React reuses the elements and
             swaps their `src`, which reads as a flicker rather than as narrowing.
           */
-          <ul
-            key={candidates.map((p) => p.slug).join()}
-            className="config-shortlist"
-            data-count={candidates.length}
-          >
+          /*
+            NO key ON THE LIST — the tiles are keyed individually by slug.
+
+            It used to key the <ul> on the whole slug list, which remounted every tile on
+            every answer: the survivors flashed out and back in alongside the ones that
+            were actually eliminated. That reads as the panel reloading, which is the
+            opposite of narrowing. Keyed per tile, React keeps the candidates that
+            survived and only the new arrivals run the entrance.
+          */
+          <ul className="config-shortlist" data-count={candidates.length}>
             {candidates.map((product, index) => (
               <li
                 key={product.slug}

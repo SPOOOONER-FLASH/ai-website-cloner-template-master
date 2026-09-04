@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HYDE Products and Menu Concepts</title>
+    <link rel="icon" href="data:," />
+    <style>
+      :root {
+        --paper: #f7f7f5;
+        --white: #ffffff;
+        --ink: #10110f;
+        --muted: #666762;
+        --line: #d7d8d3;
+        --brand: #c43a2d;
+        --acid: #ecff53;
+        --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 100%; min-height: 100%; background: var(--paper); color: var(--ink); }
+      body { font-family: var(--font); font-size: 16px; line-height: 1.35; }
+      a { color: inherit; text-decoration: none; }
+      img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      button { font: inherit; }
+
+      .canvas {
+        width: 1600px;
+        height: 1000px;
+        overflow: hidden;
+        background: var(--white);
+      }
+
+      .header {
+        height: 82px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 32px;
+        padding: 0 64px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.98);
+      }
+
+      .header-nav, .header-tools { display: flex; align-items: center; gap: 30px; }
+      .header-nav { font-size: 15px; }
+      .header-tools { justify-content: flex-end; color: var(--muted); font-size: 13px; }
+      .wordmark { display: flex; align-items: center; gap: 13px; font-weight: 700; letter-spacing: 0.22em; font-size: 20px; }
+      .mark { width: 44px; height: 18px; position: relative; }
+      .mark::before, .mark::after { content: ""; position: absolute; left: 0; bottom: 0; background: currentColor; }
+      .mark::before { width: 44px; height: 5px; border-radius: 0 0 0 4px; }
+      .mark::after { width: 5px; height: 18px; border-radius: 0 0 0 4px; }
+      .icon-search { width: 20px; height: 20px; border: 2px solid currentColor; border-radius: 50%; position: relative; }
+      .icon-search::after { content: ""; position: absolute; width: 9px; height: 2px; background: currentColor; right: -7px; bottom: -4px; transform: rotate(48deg); }
+      .icon-menu { width: 25px; height: 17px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; position: relative; }
+      .icon-menu::after { content: ""; position: absolute; left: 0; right: 0; top: 7px; border-top: 1.5px solid currentColor; }
+      .icon-close { width: 24px; height: 24px; position: relative; }
+      .icon-close::before, .icon-close::after { content: ""; position: absolute; left: 11px; top: -2px; width: 1.5px; height: 28px; background: currentColor; }
+      .icon-close::before { transform: rotate(45deg); }
+      .icon-close::after { transform: rotate(-45deg); }
+
+      .title-xl { margin: 0; max-width: 900px; font-size: 64px; line-height: 0.98; letter-spacing: -0.04em; font-weight: 600; }
+      .title-lg { margin: 0; font-size: 48px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; }
+      .title-md { margin: 0; font-size: 31px; line-height: 1.08; letter-spacing: -0.025em; font-weight: 600; }
+      .body-lg { max-width: 630px; margin: 0; color: var(--muted); font-size: 20px; line-height: 1.45; }
+      .body { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+      .link-arrow { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 4px; border-bottom: 1px solid var(--ink); font-weight: 600; }
+      .link-arrow::after { content: "↗"; font-size: 18px; font-weight: 400; }
+      .meta { color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+      .rule-top { border-top: 1px solid var(--line); }
+      .object-contain { object-fit: contain; }
+      .warm-field { background: #eeeeeb; }
+
+      .products-main { height: 918px; padding: 50px 64px 48px; }
+
+      /* Products A — one hero image answers scope, HTML answers meaning. */
+      .products-a .intro { display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: end; gap: 80px; height: 160px; }
+      .products-a .hero-atlas { height: 522px; margin-top: 34px; background: #efefed; }
+      .products-a .hero-atlas img { object-fit: cover; }
+      .products-a .role-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; padding-top: 28px; }
+      .products-a .role { display: grid; grid-template-columns: 100px 1fr; gap: 18px; }
+      .products-a .role strong { font-size: 15px; }
+
+      /* Products B — the family index sits beside the image instead of over it. */
+      .products-b { display: grid; grid-template-columns: 380px 1fr; gap: 58px; }
+      .products-b .rail { display: flex; flex-direction: column; height: 100%; }
+      .products-b .family-list { list-style: none; padding: 0; margin: 42px 0 0; border-top: 1px solid var(--line); }
+      .products-b .family-list li { display: flex; justify-content: space-between; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+      .products-b .family-list span { color: var(--muted); font-size: 12px; }
+      .products-b .rail-link { margin-top: auto; }
+      .products-b .map-stage { display: grid; grid-template-rows: 1fr 95px; height: 818px; background: #efefed; }
+      .products-b .map-stage img { object-fit: contain; padding: 8px 18px; }
+      .products-b .map-note { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 40px; align-items: center; padding: 22px 28px; background: var(--ink); color: var(--white); }
+      .products-b .map-note p { margin: 0; color: #c7c8c4; }
+
+      /* Products C — a repeatable visual grammar, not unrelated hero shots. */
+      .products-c .intro { display: grid; grid-template-columns: 1fr 0.82fr; gap: 90px; align-items: start; }
+      .products-c .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+      .products-c .principles div { padding-top: 10px; border-top: 1px solid var(--ink); }
+      .products-c .principles strong { display: block; margin-bottom: 8px; font-size: 15px; }
+      .products-c .series-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 52px; }
+      .products-c figure { margin: 0; }
+      .products-c .series-image { height: 422px; background: #efefed; }
+      .products-c .series-image img { object-fit: cover; }
+      .products-c figcaption { padding: 18px 3px 0; }
+      .products-c figcaption strong { display: block; font-size: 18px; }
+      .products-c figcaption span { display: block; margin-top: 5px; color: var(--muted); font-size: 14px; }
+      .products-c .maker-strip { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; padding: 20px 24px; background: var(--acid); }
+      .products-c .maker-strip strong { font-size: 22px; }
+
+      /* Products D — images have separate informational jobs. */
+      .products-d .intro { display: grid; grid-template-columns: 1fr 0.68fr; gap: 110px; align-items: end; }
+      .products-d .journey { display: grid; grid-template-columns: 1.1fr 1.5fr 0.9fr; gap: 16px; margin-top: 38px; }
+      .products-d .journey figure { margin: 0; }
+      .products-d .journey figure:nth-child(2) { margin-top: 58px; }
+      .products-d .journey-image { height: 490px; background: #efefed; }
+      .products-d .journey img { object-fit: cover; }
+      .products-d .journey figure:first-child img,
+      .products-d .journey figure:last-child img { object-fit: contain; }
+      .products-d .journey figcaption { padding-top: 14px; display: grid; grid-template-columns: 100px 1fr; gap: 12px; }
+      .products-d .journey figcaption strong { font-size: 15px; }
+      .products-d .journey figcaption span { color: var(--muted); font-size: 13px; }
+
+      /* Full-screen menu surfaces. */
+      .menu-main { height: 918px; padding: 52px 64px 46px; }
+      .menu-header { border-bottom-color: transparent; }
+      .menu-nav-link { font-size: 25px; line-height: 1.15; letter-spacing: -0.02em; }
+      .menu-nav-link small { display: block; margin-top: 6px; color: var(--muted); font-size: 13px; letter-spacing: 0; }
+      .menu-group-title { margin: 0 0 18px; font-size: 13px; font-weight: 600; }
+      .menu-list { list-style: none; padding: 0; margin: 0; }
+      .menu-list li { margin: 0 0 14px; font-size: 18px; }
+      .menu-list.compact li { margin-bottom: 10px; font-size: 15px; }
+
+      /* Menu A — closest to FSB's calm split, rebuilt around buyer jobs. */
+      .menu-a { display: grid; grid-template-columns: 520px 1fr; gap: 92px; }
+      .menu-a .editorial-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-content: start; }
+      .menu-a figure { margin: 0; }
+      .menu-a .card-image { height: 260px; background: #efefed; }
+      .menu-a figcaption { padding-top: 14px; }
+      .menu-a figcaption strong { display: block; font-size: 18px; }
+      .menu-a figcaption span { display: block; margin-top: 5px; color: var(--muted); font-size: 14px; line-height: 1.35; }
+      .menu-a .menu-content { display: flex; flex-direction: column; }
+      .menu-a .menu-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 52px; padding-top: 12px; }
+      .menu-a .primary-list { list-style: none; padding: 0; margin: 0; }
+      .menu-a .primary-list li { margin-bottom: 22px; }
+      .menu-a .contact-line { display: grid; grid-template-columns: 1fr auto; align-items: end; margin-top: auto; padding-top: 28px; border-top: 1px solid var(--line); }
+      .menu-a .contact-line a { font-size: 24px; letter-spacing: -0.02em; }
+
+      /* Menu B — product families are visual context, links stay short. */
+      .menu-b { display: grid; grid-template-columns: 760px 1fr; gap: 72px; }
+      .menu-b .product-panel { display: grid; grid-template-rows: 1fr auto; height: 760px; background: #efefed; }
+      .menu-b .product-panel img { object-fit: contain; padding: 18px; }
+      .menu-b .panel-copy { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: var(--ink); color: var(--white); }
+      .menu-b .panel-copy span { color: #c7c8c4; font-size: 14px; }
+      .menu-b .link-field { display: flex; flex-direction: column; padding-top: 10px; }
+      .menu-b .big-links { list-style: none; padding: 0; margin: 0; }
+      .menu-b .big-links li { padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 31px; letter-spacing: -0.025em; }
+      .menu-b .utility-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: auto; }
+
+      /* Menu C — applications first, one documentary image, minimal text. */
+      .menu-c { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 72px; }
+      .menu-c .application-image { height: 790px; position: relative; }
+      .menu-c .application-image img { object-fit: cover; }
+      .menu-c .image-label { position: absolute; left: 24px; right: 24px; bottom: 24px; display: flex; justify-content: space-between; align-items: end; padding: 18px 20px; background: rgba(16, 17, 15, 0.92); color: var(--white); }
+      .menu-c .image-label span { max-width: 330px; color: #d0d1cc; font-size: 14px; }
+      .menu-c .application-links { display: flex; flex-direction: column; }
+      .menu-c .application-links h1 { max-width: 520px; }
+      .menu-c .project-list { list-style: none; padding: 0; margin: 42px 0 0; }
+      .menu-c .project-list li { padding: 17px 0; border-top: 1px solid var(--line); }
+      .menu-c .project-list li:last-child { border-bottom: 1px solid var(--line); }
+      .menu-c .project-list a { display: flex; justify-content: space-between; font-size: 23px; }
+      .menu-c .global-links { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: auto; color: var(--muted); font-size: 14px; }
+
+      /* Menu D — service-led entry point for buyers who do not know a SKU. */
+      .menu-d { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 100px; }
+      .menu-d .question { display: flex; flex-direction: column; }
+      .menu-d .question h1 { max-width: 760px; font-size: 72px; }
+      .menu-d .answer-list { list-style: none; padding: 0; margin: 56px 0 0; }
+      .menu-d .answer-list li { border-top: 1px solid var(--ink); }
+      .menu-d .answer-list li:last-child { border-bottom: 1px solid var(--ink); }
+      .menu-d .answer-list a { display: grid; grid-template-columns: 1fr auto; align-items: center; padding: 19px 0; font-size: 24px; }
+      .menu-d .answer-list small { display: block; margin-top: 4px; color: var(--muted); font-size: 14px; }
+      .menu-d .service-rail { display: flex; flex-direction: column; }
+      .menu-d .service-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+      .menu-d .rfq-block { margin-top: auto; padding: 28px; background: var(--acid); }
+      .menu-d .rfq-block strong { display: block; max-width: 420px; font-size: 27px; line-height: 1.15; }
+      .menu-d .rfq-block a { display: inline-block; margin-top: 46px; padding-bottom: 4px; border-bottom: 1px solid var(--ink); font-weight: 600; }
+
+      @media (max-width: 900px) {
+        .canvas { width: 100vw; height: auto; min-height: 100vh; }
+        .header { grid-template-columns: 1fr auto; padding: 0 24px; }
+        .header-nav { display: none; }
+        .header .wordmark { justify-self: start; }
+        .header-tools { grid-column: 2; }
+        .products-main, .menu-main { height: auto; min-height: calc(100vh - 82px); padding: 34px 24px; }
+        .title-xl, .menu-d .question h1 { font-size: 44px; }
+        .products-a .intro, .products-b, .products-c .intro, .products-d .intro,
+        .menu-a, .menu-b, .menu-c, .menu-d { grid-template-columns: 1fr; }
+        .products-a .intro { height: auto; }
+        .products-a .hero-atlas { height: 310px; }
+        .products-a .role-row { grid-template-columns: 1fr; gap: 18px; }
+        .products-a .role { grid-template-columns: 78px 1fr; }
+        .products-b .map-stage { height: auto; min-height: 620px; }
+        .products-c .series-grid, .products-d .journey { grid-template-columns: 1fr 1fr; }
+        .menu-a .editorial-pair { display: none; }
+        .menu-a .menu-columns { grid-template-columns: 1fr 1fr; gap: 34px 24px; }
+        .menu-a .contact-line { grid-template-columns: 1fr; gap: 22px; margin-top: 42px; }
+        .menu-b .product-panel, .menu-c .application-image { height: 520px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const img = (name, alt, className = "") => `<img src="/public/images/editorial/${name}" alt="${alt}" class="${className}" />`;
+      const header = (menu = false) => `
+        <header class="header ${menu ? "menu-header" : ""}">
+          <nav class="header-nav" aria-label="Primary">
+            <a href="#">Products</a><a href="#">Product Finder</a><a href="#">Applications</a>
+            <a href="#">News</a><a href="#">Company</a><a href="#">Buy it now</a>
+          </nav>
+          <div class="wordmark"><span class="mark" aria-hidden="true"></span><span>HYDE</span></div>
+          <div class="header-tools"><span>EN | ES</span><span class="icon-search" aria-hidden="true"></span><span class="${menu ? "icon-close" : "icon-menu"}" aria-hidden="true"></span></div>
+        </header>`;
+
+      const concepts = {
+        "products-01": `
+          <div class="canvas">${header()}
+            <main class="products-main products-a">
+              <section class="intro">
+                <h1 class="title-xl">Hardware for the whole opening.</h1>
+                <div><p class="body-lg">Nine coordinated families, shown as one system before the catalogue asks you to choose a model.</p><p style="margin:22px 0 0"><a class="link-arrow" href="#">Explore all product families</a></p></div>
+              </section>
+              <figure class="hero-atlas">${img("hyde-editorial-product-range-10.webp", "Nine-family architectural-hardware atlas")}</figure>
+              <section class="role-row rule-top">
+                <div class="role"><strong>Overview</strong><p class="body">The complete range and its true scale hierarchy.</p></div>
+                <div class="role"><strong>Families</strong><p class="body">Lever handles, locks, panic hardware, closers, hinges, glass and accessories.</p></div>
+                <div class="role"><strong>Next step</strong><p class="body">Filter by opening, material, finish or function in Product Finder.</p></div>
+              </section>
+            </main>
+          </div>`,
+
+        "products-02": `
+          <div class="canvas">${header()}
+            <main class="products-main products-b">
+              <aside class="rail">
+                <h1 class="title-lg">Door &amp; window hardware</h1>
+                <p class="body" style="margin-top:22px">A category map for the complete opening. Start with the family, then move to installation and technical detail.</p>
+                <ol class="family-list">
+                  <li><a href="#">Lever handles</a><span>Opening furniture</span></li>
+                  <li><a href="#">Panic exit devices</a><span>Egress</span></li>
+                  <li><a href="#">Lock cases</a><span>Mechanisms</span></li>
+                  <li><a href="#">Door control</a><span>Closing</span></li>
+                  <li><a href="#">Hinges</a><span>Movement</span></li>
+                  <li><a href="#">Glass door hardware</a><span>Frameless</span></li>
+                  <li><a href="#">Pull handles</a><span>Entrance</span></li>
+                  <li><a href="#">Cylinders &amp; deadbolts</a><span>Security</span></li>
+                  <li><a href="#">Hardware accessories</a><span>Completion</span></li>
+                </ol>
+                <p class="rail-link"><a class="link-arrow" href="#">Open Product Finder</a></p>
+              </aside>
+              <section class="map-stage">
+                ${img("hyde-editorial-product-range-10.webp", "Complete architectural-hardware category map")}
+                <div class="map-note"><strong>One image answers “what do you make?”</strong><p>Model names, standards and specifications remain searchable HTML—not text baked into a picture.</p></div>
+              </section>
+            </main>
+          </div>`,
+
+        "products-03": `
+          <div class="canvas">${header()}
+            <main class="products-main products-c">
+              <section class="intro">
+                <div><h1 class="title-lg">Designed as a system.</h1><p class="body-lg" style="margin-top:18px">Every family uses the same photographic grammar, so shape and function—not styling noise—do the differentiating.</p></div>
+                <div class="principles">
+                  <div><strong>One field</strong><p class="body">Warm gray, one lens height, no text over product.</p></div>
+                  <div><strong>Four views</strong><p class="body">Family, installed use, construction and detail.</p></div>
+                  <div><strong>One schedule</strong><p class="body">Coordinated finishes across the opening.</p></div>
+                </div>
+              </section>
+              <section class="series-grid">
+                <figure><div class="series-image">${img("hyde-editorial-product-range-01.webp", "Lever handle family")}</div><figcaption><strong>Lever series</strong><span>Opening furniture · four finish directions</span></figcaption></figure>
+                <figure><div class="series-image">${img("hyde-editorial-product-range-06.webp", "Architectural hinge family")}</div><figcaption><strong>Hinges</strong><span>Butt, heavy-duty and pivot geometries</span></figcaption></figure>
+                <figure><div class="series-image">${img("hyde-editorial-product-range-04.webp", "Glass door hardware family")}</div><figcaption><strong>Glass hardware</strong><span>Patch, lock and pull-handle family</span></figcaption></figure>
+                <figure><div class="series-image">${img("hyde-editorial-product-range-05.webp", "Door closer family")}</div><figcaption><strong>Door control</strong><span>Surface, slide-track and concealed systems</span></figcaption></figure>
+              </section>
+              <section class="maker-strip"><strong>Engineered by Canton Hyland</strong><span>From range selection to a coordinated hardware schedule →</span></section>
+            </main>
+          </div>`,
+
+        "products-04": `
+          <div class="canvas">${header()}
+            <main class="products-main products-d">
+              <section class="intro"><h1 class="title-lg">From family to installed opening.</h1><p class="body-lg">Each image gets one job: scope, application or construction. No single photograph is forced to explain everything.</p></section>
+              <section class="journey">
+                <figure><div class="journey-image">${img("hyde-editorial-product-range-10.webp", "Hardware family overview")}</div><figcaption><strong>Range</strong><span>Start with all families and realistic relative scale.</span></figcaption></figure>
+                <figure><div class="journey-image">${img("hyde-editorial-exhibition-wall-09.webp", "Installed sample door and hardware wall")}</div><figcaption><strong>Application</strong><span>See how the families meet on an installed door condition.</span></figcaption></figure>
+                <figure><div class="journey-image">${img("hyde-editorial-product-range-02.webp", "Mortise lockset construction")}</div><figcaption><strong>Technical</strong><span>Then inspect the lock body, faceplate, strike and lever set.</span></figcaption></figure>
+              </section>
+            </main>
+          </div>`,
+
+        "menu-01": `
+          <div class="canvas">${header(true)}
+            <main class="menu-main menu-a">
+              <section class="editorial-pair">
+                <figure><div class="card-image">${img("hyde-editorial-exhibition-wall-01.webp", "Full hardware sample wall")}</div><figcaption><strong>Product Finder</strong><span>Filter 435 models by family, finish and door condition.</span></figcaption></figure>
+                <figure><div class="card-image">${img("hyde-editorial-exhibition-wall-09.webp", "Installed sample doors")}</div><figcaption><strong>Applications</strong><span>See how coordinated hardware works on real openings.</span></figcaption></figure>
+              </section>
+              <section class="menu-content">
+                <div class="menu-columns">
+                  <div><h2 class="menu-group-title">Specify</h2><ul class="primary-list"><li><a class="menu-nav-link" href="#">Products<small>Nine product families</small></a></li><li><a class="menu-nav-link" href="#">Product Finder<small>Filter and compare</small></a></li><li><a class="menu-nav-link" href="#">Applications<small>By opening type</small></a></li></ul></div>
+                  <div><h2 class="menu-group-title">Source</h2><ul class="menu-list"><li><a href="#">Projects</a></li><li><a href="#">Services</a></li><li><a href="#">Downloads</a></li><li><a href="#">Certificates</a></li></ul></div>
+                  <div><h2 class="menu-group-title">Company</h2><ul class="menu-list"><li><a href="#">About us</a></li><li><a href="#">Factory</a></li><li><a href="#">News</a></li><li><a href="#">Events</a></li></ul></div>
+                </div>
+                <div class="contact-line"><div><p class="meta">Export desk</p><a href="#">lock@cantonlock.com</a></div><a class="link-arrow" href="#">Start an enquiry</a></div>
+              </section>
+            </main>
+          </div>`,
+
+        "menu-02": `
+          <div class="canvas">${header(true)}
+            <main class="menu-main menu-b">
+              <section class="product-panel">${img("hyde-editorial-product-range-10.webp", "Nine architectural hardware families")}<div class="panel-copy"><strong>Product families</strong><span>435 models · 15 catalogue categories</span></div></section>
+              <section class="link-field">
+                <ul class="big-links"><li><a href="#">Products</a></li><li><a href="#">Product Finder</a></li><li><a href="#">Applications</a></li><li><a href="#">Projects</a></li><li><a href="#">Company</a></li></ul>
+                <div class="utility-row rule-top" style="padding-top:24px"><div><h2 class="menu-group-title">Resources</h2><ul class="menu-list compact"><li>Downloads</li><li>Certificates</li><li>News</li></ul></div><div><h2 class="menu-group-title">Buy &amp; contact</h2><ul class="menu-list compact"><li>Request a price list</li><li>Contact export</li><li>Alibaba storefront</li></ul></div></div>
+              </section>
+            </main>
+          </div>`,
+
+        "menu-03": `
+          <div class="canvas">${header(true)}
+            <main class="menu-main menu-c">
+              <section class="application-image">${img("hyde-editorial-exhibition-wall-10.webp", "Installed sample door with dense hardware bays")}<div class="image-label"><strong>Specify the whole opening</strong><span>Installed samples connect hardware families to the door condition they serve.</span></div></section>
+              <section class="application-links"><h1 class="title-lg">Start with the application.</h1><p class="body-lg" style="margin-top:18px">For buyers who know the door before they know the model.</p><ul class="project-list"><li><a href="#"><span>Commercial egress</span><span>↗</span></a></li><li><a href="#"><span>Glass entrances</span><span>↗</span></a></li><li><a href="#"><span>Hospitality &amp; residential</span><span>↗</span></a></li><li><a href="#"><span>Heavy-use public buildings</span><span>↗</span></a></li></ul><div class="global-links"><a href="#">All products</a><a href="#">Product Finder</a><a href="#">Projects</a><a href="#">Downloads</a><a href="#">Company</a><a href="#">Contact</a></div></section>
+            </main>
+          </div>`,
+
+        "menu-04": `
+          <div class="canvas">${header(true)}
+            <main class="menu-main menu-d">
+              <section class="question"><h1 class="title-xl">What are you trying to specify?</h1><ul class="answer-list"><li><a href="#"><span>I know the model<small>Search by number or product name</small></span><span>→</span></a></li><li><a href="#"><span>I know the door<small>Choose an opening and build the hardware set</small></span><span>→</span></a></li><li><a href="#"><span>I need an engineer<small>Send the door schedule to our export team</small></span><span>→</span></a></li></ul></section>
+              <aside class="service-rail"><div class="service-groups"><div><h2 class="menu-group-title">Explore</h2><ul class="menu-list"><li>Products</li><li>Applications</li><li>Projects</li><li>News</li></ul></div><div><h2 class="menu-group-title">Evidence</h2><ul class="menu-list"><li>Factory</li><li>Certificates</li><li>Downloads</li><li>Services</li></ul></div></div><div class="rfq-block"><strong>One export contact from sample review to production order.</strong><a href="#">lock@cantonlock.com ↗</a></div></aside>
+            </main>
+          </div>`,
+      };
+
+      const concept = new URLSearchParams(location.search).get("concept") || "products-01";
+      document.getElementById("app").innerHTML = concepts[concept] || concepts["products-01"];
+    </script>
+  </body>
+</html>

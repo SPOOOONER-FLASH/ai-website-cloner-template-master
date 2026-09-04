@@ -81,15 +81,15 @@ const drawerCards = {
   en: [
     {
       href: "/product-finder/",
-      image: "/images/editorial/drawer-product-finder-exhibition-2026.webp",
-      alt: "Architectural hardware families arranged across a trade-show display wall",
+      image: "/images/editorial/hyde-editorial-exhibition-wall-01.webp",
+      alt: "Dense oak sample wall presenting coordinated architectural hardware families",
       title: "Product Finder",
       body: "Filter 435 models by category, material, finish and door type.",
     },
     {
       href: "/projects/",
-      image: "/images/editorial/drawer-projects-door-sample-2026.webp",
-      alt: "Full-height door hardware sample surrounded by exhibition display racks",
+      image: "/images/editorial/hyde-editorial-exhibition-wall-09.webp",
+      alt: "Installed door samples framed by populated architectural hardware displays",
       title: "Projects",
       body: "How the hardware is specified on real buildings.",
     },
@@ -97,15 +97,15 @@ const drawerCards = {
   es: [
     {
       href: "/product-finder/",
-      image: "/images/editorial/drawer-product-finder-exhibition-2026.webp",
-      alt: "Familias de herrajes arquitectónicos organizadas en un expositor de feria",
+      image: "/images/editorial/hyde-editorial-exhibition-wall-01.webp",
+      alt: "Expositor denso en roble con familias coordinadas de herrajes arquitectónicos",
       title: "Buscador de productos",
       body: "Filtre 435 modelos por categoría, material, acabado y tipo de puerta.",
     },
     {
       href: "/es/projects/",
-      image: "/images/editorial/drawer-projects-door-sample-2026.webp",
-      alt: "Muestra de puerta a escala real rodeada de expositores de herrajes",
+      image: "/images/editorial/hyde-editorial-exhibition-wall-09.webp",
+      alt: "Puertas de muestra instaladas entre expositores completos de herrajes arquitectónicos",
       title: "Proyectos",
       body: "Cómo se especifican los herrajes en edificios reales.",
     },

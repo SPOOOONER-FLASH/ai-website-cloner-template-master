@@ -44,3 +44,25 @@ test("the flagship homepage and three news stories use four purpose-built images
     );
   }
 });
+
+test("the three newest News cards use distinct editorial images matched to their subjects", () => {
+  const latestNewsSources = [
+    readJson("content/news/ansi-grade-1-vs-en-1125-exit-devices.json").heroImage.src,
+    readJson("content/news/narrow-stile-aluminium-door-lock-sag.json").heroImage.src,
+    readJson("content/news/push-bar-or-touch-bar-panic-exit-devices.json").heroImage.src,
+  ];
+
+  assert.deepEqual(latestNewsSources, [
+    "/images/editorial/hyde-editorial-exhibition-wall-02.webp",
+    "/images/editorial/hyde-editorial-product-range-02.webp",
+    "/images/editorial/hyde-editorial-product-range-03.webp",
+  ]);
+  assert.equal(new Set(latestNewsSources).size, 3);
+
+  for (const source of latestNewsSources) {
+    assert.ok(
+      fs.existsSync(path.join(root, "public", source)),
+      `${source} must exist in the public editorial library`,
+    );
+  }
+});

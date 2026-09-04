@@ -131,8 +131,8 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-nine-families-showroom-2026.webp",
-    label: "Exposición real de familias coordinadas de herrajes para puertas",
+    src: "/images/editorial/hyde-editorial-product-range-10.webp",
+    label: "Atlas ilustrativo de nueve familias coordinadas de herrajes para puertas",
   },
   title: "Diseñado para",
   body: "Nueve familias, un solo cuadro coordinado",

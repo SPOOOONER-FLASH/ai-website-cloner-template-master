@@ -14,6 +14,7 @@
 |---|---|---|---|
 | 1 | nginx reload（让 301 重定向生效） | 有新重定向时 | 2 分钟 |
 | 1b | **改 index.php 跳转规则（2026-09-04 新增，只做一次）** | 一次性 | 5 分钟 |
+| 1c | **⚠ 撤销上一版的 TLS 改动（我诊断错了）** | 一次性 | 2 分钟 |
 | 2 | Cloudflare 全区 purge | 每次发布后 | 1 分钟 |
 | 3 | Google Search Console 手动提交 | 有新页面时 | 每天 10 分钟 |
 | 4 | Bing / Clarity 设置 | 一次性 | 5 分钟 |
@@ -185,18 +186,31 @@ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://cantonlock.c
 
 ### 第三步：找到要改的那三行
 
-在配置文件里按 `Ctrl+F` 搜 `index.php`。你要找的是这一段：
+在配置文件里按 `Ctrl+F`，搜 **`LEGACY-REDIRECT-START`**。
+
+> **这一步我上一版写错了，抱歉。** 上一版让你搜 `index.php` —— 但配置文件第 9 行
+> 就有一句 `index index.php index.html …`，那是 nginx 的默认首页设置，
+> **和跳转规则毫无关系**。搜索框会先跳到那一行（显示「1 of 1」），
+> 于是你看到的和我写的对不上。
+>
+> `LEGACY-REDIRECT-START` 在整个文件里只出现一次，直接落在正确的位置。
+
+搜到之后，你会看到被两行注释包起来的一段：
 
 ```nginx
+#LEGACY-REDIRECT-START 旧 DedeCMS URL 的 301，见 0.legacy-redirects.conf
 location ~* ^/index\.php$ {
     if ($legacy_product_url != "") { return 301 $legacy_product_url; }
     if ($legacy_category_url != "") { return 301 $legacy_category_url; }
     return 301 /products/;
 }
+#LEGACY-REDIRECT-END
 ```
 
-**如果搜不到 `index.php`**，说明配置和我以为的不一样 —— 停在这里，
-把整个配置文件截图发我，不要继续。
+在服务器上这一段大约在第 27–33 行。
+
+**如果搜不到 `LEGACY-REDIRECT-START`**，停在这里，把整个配置文件截图发我，
+不要继续。
 
 ### 第四步：把中间三行换掉
 
@@ -237,8 +251,25 @@ location ~* ^/index\.php$ {
 宝塔 → 左边菜单 **终端**，把下面整段粘进去按回车：
 
 ```bash
-for u in "index.php?lang=es" "index.php" "index.php?lang=es&tid=97" "index.php?tid=97" "index.php?tid=999"; do printf "%-30s " "$u"; curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" -H "Host: cantonlock.com" "http://127.0.0.1/$u"; done
+for u in "index.php?lang=es" "index.php" "index.php?lang=es&tid=97" "index.php?tid=97" "index.php?tid=999"; do printf "%-30s " "$u"; curl -sk -o /dev/null -w "%{http_code} -> %{redirect_url}\n" --resolve "cantonlock.com:443:127.0.0.1" "https://cantonlock.com/$u"; done
 ```
+
+> **⚠ 2026-09-04 更正：必须走 443，不能走 80。**
+> 我上一版写的是 `http://127.0.0.1`，那条命令**测不到这段规则**。
+> 配置第 22–26 行有：
+>
+> ```nginx
+> if ($server_port !~ 443){
+>     rewrite ^(/.*)$ https://$host$1 permanent;
+> }
+> ```
+>
+> 80 端口的请求在到达跳转规则之前就被强制跳到 https 了 —— 这条 `rewrite`
+> 在 nginx 的 rewrite 阶段执行，**早于 location 处理**。所以测出来会是
+> `index.php?lang=es → https://cantonlock.com/index.php?lang=es`，
+> 五行全是「原样加个 https」，看起来像没生效，其实是根本没测到那段。
+>
+> `--resolve` 让 curl 连本机的 443，`-k` 跳过证书域名校验。
 
 **应该看到这五行**（`->` 后面的地址要完全一样）：
 
@@ -259,6 +290,99 @@ index.php?tid=999              301 -> https://cantonlock.com/products/
 
 不需要再做第二次。以后 `deploy/nginx/` 下的文件变了，跑第 1 步的安装脚本就够了 ——
 这三个变量在那个脚本装的文件里，会跟着一起更新。
+
+---
+
+---
+
+## 1c. 网站卡顿：先撤销我上一版的改动（2026-09-04 更正）
+
+### 请先做这一件：把那五行删掉
+
+如果你已经加了这几行，**全部删掉**：
+
+```nginx
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    resolver 223.5.5.5 119.29.29.29 valid=300s;
+    resolver_timeout 5s;
+    ssl_session_cache shared:SSL:20m;
+    ssl_session_timeout 1d;
+```
+
+删完保存，`nginx -t` 会通过。
+
+### 我错在哪
+
+**我把诊断做在了源站上，而访客根本不碰那台机器。**
+
+`cantonlock.com` 的 A 记录指向 `172.67.136.43` / `104.21.62.132` —— 这是
+**Cloudflare 的 IP**。域名是橙云代理状态，**TLS 由 Cloudflare 的边缘节点终止**。
+
+两条命令就能看出来：
+
+| 连谁 | 证书签发者 |
+|---|---|
+| `cantonlock.com`（访客走的） | **Google Trust Services** —— Cloudflare 的边缘证书 |
+| `43.131.27.225`（源站） | Sectigo —— 宝塔里那张 |
+
+**两张不同的证书。** 所以源站 nginx 上的 `ssl_stapling` 和 `ssl_session_cache`
+对访客的握手速度**没有任何影响** —— 那是 Cloudflare 到源站之间才会用到的东西，
+而 Cloudflare 对源站是长连接复用的，本来就不怎么握手。
+
+我测出来的 `OCSP response: no response sent` 是 **Cloudflare 边缘的行为**，
+不是你服务器的，也不是你服务器能改的。
+
+顺带：`ssl_session_cache shared:SSL:20m` 报错是另一回事 ——
+`SSL` 这个共享内存区名在这台机器上已经被声明成 10m 了（`stahlock.com`
+和它共用一台服务器）。同一个名字全局只能有一个大小。**这也说明会话缓存本来就已经开着。**
+
+### 那到底为什么慢
+
+实测（从你这台机器，重复三次）：
+
+| | 连接 | TLS 握手 | 首字节 | 整页 |
+|---|---|---|---|---|
+| 走 Cloudflare | 0.21 秒 | 1.07–1.56 秒 | 1.32–1.82 秒 | 2.3–2.5 秒 |
+| 直连源站 | 0.21 秒 | 1.11–1.15 秒 | 1.41–1.69 秒 | 1.9–2.2 秒 |
+
+**两条路一样慢**，而且 `CF-RAY` 的结尾是 **`MIA`** —— 迈阿密。
+
+**Cloudflare 免费版把中国大陆的访问调度到了美国东岸。** 从广东到迈阿密单程约
+210 毫秒，TLS 1.3 理论上一个往返就够，实测却花了 900 毫秒 ——
+多出来的是国际线路的丢包重传。
+
+**这不是 nginx 能改的，也不是服务器的问题。**
+
+### 重要：这可能不是你买家的体验
+
+**你在中国测一个卖到海外的网站。** Search Console 的国家分布是：
+印度、美国、越南、德国、西班牙。**一个西班牙的买家会落在马德里或巴黎的节点上，
+不会绕到迈阿密。**
+
+所以在花钱解决之前，先确认海外访客到底慢不慢 —— Search Console 的
+**「核心网页指标」** 报告用的是真实访客数据，那个数字才代表买家的体验。
+你下次登录时点开看一下，把截图发我。
+
+### 真要解决，只有这几条路（都不在宝塔里）
+
+| 方案 | 代价 | 适合谁 |
+|---|---|---|
+| 什么都不做 | 0 | **如果海外指标是绿的，这就是正确答案** |
+| Cloudflare 域名改「灰云」（关代理） | 失去 CDN 和 DDoS 防护，源站 IP 暴露 | 只有中国访客是主力时 |
+| Cloudflare 中国网络 | 企业版价格 + 需要 ICP 备案 | 中国是正式市场时 |
+
+### 我这边确实能修的一件
+
+产品页首屏要下载 **1.2 MB**，其中约 **570 KB 是 JavaScript** ——
+一个静态站不该有这么多。这个和线路无关，在任何地方都省下来，
+归我改，不用你操作。
+
+### 对不起
+
+这一节上一版让你在服务器上白改了一次，还撞出一个 `nginx -t` 失败。
+根因是我拿边缘的测量结果去开源站的药方 —— **同一个域名，两台机器，
+我没有先确认我在测哪一台。**
 
 ---
 

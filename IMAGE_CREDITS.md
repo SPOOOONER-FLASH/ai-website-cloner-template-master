@@ -120,6 +120,8 @@ dimensional, certification, or model-specific evidence.
 | `news-door-schedule-doors.webp` | Representative coordinated door-schedule study | 2400×943 | 83,564 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
 | `news-finish-function-library.webp` | Representative finish and function library | 1800×1200 | 334,320 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
 | `news-mortise-lock-inspection.webp` | Representative mortise-lock dimensional study | 1800×1200 | 221,028 | 2026-08-29 | Built-in ImageGen, text-only; Sharp cover, opaque sRGB, WebP q=86 |
+| `hyde-editorial-product-range-01.webp`–`hyde-editorial-product-range-10.webp` | Ten-image architectural-hardware product grammar, ending in a complete nine-family atlas | 1536×1024 each | See `docs/design-references/2026-09-04-hyde-editorial-library/manifest.json` | 2026-09-04 | Built-in ImageGen; FSB-inspired editorial principles without copied assets or affiliation; prompt sidecars on canonical WebPs; Sharp WebP q=86 |
+| `hyde-editorial-exhibition-wall-01.webp`–`hyde-editorial-exhibition-wall-10.webp` | Ten dense exhibition and showroom sample-wall studies | 1536×1024 each | See `docs/design-references/2026-09-04-hyde-editorial-library/manifest.json` | 2026-09-04 | Built-in ImageGen; first-party trade-show photos used only as density and mounting reference; prompt sidecars on canonical WebPs; Sharp WebP q=86 |
 
 Visual QA of the final WebP files found no visible people, silhouettes, hands, faces, distant
 figures, or human reflections, and no readable text, logo, watermark, or brand mark. This

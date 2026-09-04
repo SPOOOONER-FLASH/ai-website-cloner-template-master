@@ -179,6 +179,34 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   const finishes = localiseProductValues(product.finishes, locale);
   const doorTypes = localiseProductValues(product.doorTypes, locale);
+
+  /*
+    Material, finishes and door types — but only the ones the specification table does
+    not already state.
+
+    Measured across the catalogue: 348 of 435 products carry Material as a spec row AND
+    printed it again as a standalone fact, and 108 did the same with door types. Showing
+    both is not thoroughness, it is the reader checking whether two numbers that look
+    alike are the same number.
+
+    Matching on the label rather than on a fixed list of which fact to suppress: spec
+    labels are editorial and vary ("Application", "Suitable door types", "Door type"), and
+    a product whose table gains a Material row should stop repeating it without anyone
+    having to notice.
+  */
+  const specLabels = new Set(specs.map((s) => s.label.trim().toLowerCase()));
+  const covers = (...patterns: RegExp[]) =>
+    [...specLabels].some((label) => patterns.some((p) => p.test(label)));
+
+  const uncoveredFacts = [
+    { label: t.material, values: material, covered: covers(/^material$/) },
+    { label: t.finishes, values: finishes, covered: covers(/finish/) },
+    {
+      label: t.doorTypes,
+      values: doorTypes,
+      covered: covers(/door type/, /^application/, /suitable/),
+    },
+  ].filter((fact) => !fact.covered && fact.values.length);
   const related = relatedBlock({
     product,
     curated: getRelatedProducts(product),
@@ -375,14 +403,6 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                   {!es && product.description ? (
                     <Prose markdown={product.description} className="mt-24" />
                   ) : null}
-                  <dl className="mt-48 grid grid-cols-2 gap-x gap-y-32">
-                    <ProductFact
-                      label={t.material}
-                      values={material}
-                      fallback={t.onRequest}
-                    />
-                    <ProductFact label={t.doorTypes} values={doorTypes} fallback={t.onRequest} />
-                  </dl>
                 </div>
 
                 <div className="mt-64 flex flex-wrap items-center gap-16">
@@ -436,6 +456,72 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     </p>
                   </div>
                 )}
+
+                {/*
+                  ── THE SPECIFICATION TABLE, BESIDE THE PHOTOGRAPH ────────────
+
+                  It was a full-width section 1,400px further down, and the column it now
+                  sits in ended in a column of white space — the page read as loose
+                  because it was: the reader had finished the right-hand column while the
+                  photograph beside it was still going.
+
+                  It also removes a duplication rather than just moving one. 348 of 435
+                  products printed their Material TWICE — once in a facts block here, once
+                  as a row in the table down there — and a third time in a "Configuration"
+                  section below that. Three blocks, two of them saying what the table
+                  already said, separated by enough scrolling that nobody could see they
+                  agreed. The facts block and the Configuration section are gone; the
+                  table is the one place a specification lives.
+
+                  This is the arrangement in the 2026-08-31 type mock-up, which the client
+                  asked for by name: lead, buttons, then the table, all beside the image.
+                */}
+                <div className="mt-48 border-t border-line pt-24">
+                  <h2 id="specifications-heading" className="text-h3 text-ink">
+                    {t.specifications}
+                  </h2>
+                  {specs.length ? (
+                    <dl className="mt-16 border-t border-line">
+                      {specs.map((spec) => (
+                        <div
+                          key={`${spec.label}-${spec.value}`}
+                          className="grid grid-cols-2 gap-16 border-b border-line py-12 text-c1"
+                        >
+                          <dt className="text-ink-secondary">{spec.label}</dt>
+                          <dd className="tabular-nums text-ink">
+                            {spec.value}
+                            {spec.unit ? ` ${spec.unit}` : ""}
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
+                  ) : (
+                    <div className="mt-16">
+                      <EmptyState>{t.noSpecs}</EmptyState>
+                    </div>
+                  )}
+
+                  {/*
+                    Only the facts the table does not already carry.
+
+                    Finishes are almost never a spec row and belong here; Material almost
+                    always is. Filtering rather than hard-coding which to show means a
+                    product whose data improves stops repeating itself automatically,
+                    instead of waiting for somebody to notice and delete a line.
+                  */}
+                  {uncoveredFacts.length ? (
+                    <dl className="mt-32 grid grid-cols-1 gap-24 sm:grid-cols-2">
+                      {uncoveredFacts.map((fact) => (
+                        <ProductFact
+                          key={fact.label}
+                          label={fact.label}
+                          values={fact.values}
+                          fallback={t.onRequest}
+                        />
+                      ))}
+                    </dl>
+                  ) : null}
+                </div>
               </div>
 
               <div className="col-span-full mt-16">
@@ -473,57 +559,6 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* 3 — Variable-length specification table */}
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="specifications-heading">
-        <div className="col-content grid w-full grid-cols gap-x gap-y-24">
-          <div className="col-span-full xl:col-span-8">
-            <h2 id="specifications-heading" className="text-h3 text-ink">
-              {t.specifications}
-            </h2>
-          </div>
-          <div className="col-span-full xl:col-span-12 xl:col-start-13">
-            {specs.length ? (
-              <dl className="border-t border-line">
-                {specs.map((spec) => (
-                  <div
-                    key={`${spec.label}-${spec.value}`}
-                    className="grid grid-cols-2 gap-16 border-b border-line py-16 text-c1"
-                  >
-                    <dt className="text-ink-secondary">{spec.label}</dt>
-                    <dd className="tabular-nums text-ink">
-                      {spec.value}
-                      {spec.unit ? ` ${spec.unit}` : ""}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            ) : (
-              <EmptyState>{t.noSpecs}</EmptyState>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* 4 — Material, finishes and door types */}
-      <section className="layout mt-144 lg:mt-288" aria-labelledby="configuration-heading">
-        <div className="col-content grid w-full grid-cols gap-x gap-y-48">
-          <div className="col-span-full xl:col-span-8">
-            <h2 id="configuration-heading" className="text-h3 text-ink">
-              {t.configuration}
-            </h2>
-          </div>
-          <dl className="col-span-full grid grid-cols-1 gap-32 sm:grid-cols-2 xl:col-span-16 xl:col-start-9 xl:grid-cols-3">
-            <ProductFact
-              label={t.material}
-              values={material}
-              fallback={t.onRequest}
-            />
-            <ProductFact label={t.finishes} values={finishes} fallback={t.onRequest} />
-            <ProductFact label={t.doorTypes} values={doorTypes} fallback={t.onRequest} />
-          </dl>
         </div>
       </section>
 

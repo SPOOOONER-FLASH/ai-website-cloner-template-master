@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 
@@ -17,11 +17,19 @@ const editorialConfig = JSON.parse(
 const expectedAssets = [
   "/images/editorial/hyde-source-by-range-2026.webp",
   "/images/editorial/hyde-source-by-project-2026.webp",
-  "/images/editorial/hyde-nine-families-showroom-2026.webp",
+  "/images/editorial/hyde-editorial-product-range-10.webp",
   "/images/editorial/hyde-materials-engineering-2026.webp",
   "/images/editorial/hyde-engineering-contact-2026.webp",
   "/images/editorial/hyde-installation-faq-2026.webp",
 ] as const;
+
+const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((kind) =>
+  Array.from(
+    { length: 10 },
+    (_, index) =>
+      `/images/editorial/hyde-editorial-${kind}-${String(index + 1).padStart(2, "0")}.webp`,
+  ),
+);
 
 test("English and Spanish home data use six unique sales-semantic editorial assets", () => {
   assert.equal(new Set(expectedAssets).size, 6);
@@ -57,4 +65,31 @@ test("every new homepage source has responsive candidates and provenance", () =>
 test("Spanish FAQ card falls back to the existing English FAQ route", () => {
   assert.match(homeEs, /href: "\/faq"/);
   assert.doesNotMatch(homeEs, /href: "\/es\/faq"/);
+});
+
+test("the approved product-range and exhibition-wall library ships 20 sourced responsive images", () => {
+  assert.equal(approvedEditorialLibrary.length, 20);
+  assert.equal(new Set(approvedEditorialLibrary).size, 20);
+
+  for (const asset of approvedEditorialLibrary) {
+    const config = editorialConfig[asset];
+    assert.ok(config, `missing responsive config for ${asset}`);
+    assert.deepEqual(config, { sourceWidth: 1536, variants: [480, 960, 1440] });
+    assert.ok(existsSync(join(repositoryRoot, "public", asset)), `missing canonical ${asset}`);
+    assert.ok(
+      existsSync(join(repositoryRoot, "public", `${asset}.json`)),
+      `missing prompt provenance for ${asset}`,
+    );
+
+    for (const width of config.variants) {
+      const responsive = asset.replace(
+        "/images/editorial/",
+        "/images/editorial/responsive/",
+      ).replace(/\.webp$/, `-${width}w.webp`);
+      assert.ok(
+        existsSync(join(repositoryRoot, "public", responsive)),
+        `missing responsive derivative ${responsive}`,
+      );
+    }
+  }
 });

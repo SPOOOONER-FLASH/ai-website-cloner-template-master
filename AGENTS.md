@@ -203,29 +203,29 @@ output.
 - Review the other agent's finished commit read-only when useful. Put any fix in a new,
   focused commit so authorship and rollback stay clear.
 
-### Check for an installed skill before starting design, SEO or copy work
+### Automatically use the right installed skills
 
-Client instruction, 2026-09-03: "每次你自己先检测有没有可用的，就用上助力."
+Client instruction, 2026-09-04: Spooner must **not** have to name or request a skill.
+Every agent automatically checks the skills exposed in its current session before any
+design, UX, image, video, copy, SEO/GEO, CRO, marketing, analytics, site-building, or
+release task. Select and read the smallest relevant set, announce the selection and why,
+then follow it through verification. If a selected skill changes the workflow or pauses
+implementation for a design decision, say so immediately.
 
-35 skills are installed; `docs/collaboration/SKILLS.md` says what each one is for and
-which of the ten downloaded repositories it came from. Before a task in one of those
-areas, look at whether one covers it — `redesign-skill` before auditing a page by eye,
-`geo-audit` before writing another bespoke audit script, `cro` before guessing at a
-conversion problem, `copywriting` before drafting 126 product summaries by hand.
+Use one primary method skill and one verification/review skill when that improves the
+result; do not stack overlapping collections for appearance's sake. Examples:
+`redesign-skill` or `impeccable` before a page redesign, `imagegen-frontend-web` plus
+image QA for editorial visuals, `geo-audit` before inventing another GEO audit,
+`cro` before changing a conversion path, and `copywriting` before bulk product copy.
+`impeccable` includes deterministic anti-slop detectors, so changed web UI runs its
+detector once in the finishing pass in addition to the normal project checks.
 
-The reason is not tooling enthusiasm. A skill carries a checklist somebody built from
-doing the thing many times, and it catches the case you would not have thought to check.
-`impeccable` ships 61 DETERMINISTIC detector rules for AI-generated design — those are
-more reliable than my judgement about whether a page looks templated, because they do not
-depend on my judgement at all.
-
-**Skills are not free, so do not install indiscriminately.** Every installed skill's name
-and description loads into context at session start. The ten repositories hold 1,586
-skills between them — roughly 110k tokens if installed wholesale, which would crowd out
-the actual work and make the choice worse by offering too many. Install per project need.
-
-`npx skills add <repo>` is the real installer; a hand-copied zip has no update path. See
-SKILLS.md for per-repository commands.
+If no installed skill fits, continue with documented expert judgment; do not make the
+client search for one. Installing a new skill, plugin, MCP server, runtime, or anything
+requiring a login/API key/global configuration is a separate action: curate it, explain
+the overlap and cost, and obtain authority where required. Never install a whole large
+collection just because it exists. `docs/collaboration/SKILLS.md` is the registry and
+update guide; `npx skills add <repo>` is the maintainable installer.
 
 ### Anything the client must do by hand goes in the runbook, in full
 
