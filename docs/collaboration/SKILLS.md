@@ -32,9 +32,28 @@
 
 ---
 
-## 已安装（35 个 = 原有 13 + 新增 22）
+## 已安装（2026-09-04 用官方 CLI 重装）
 
-位置 `~/.claude/skills/`
+**位置 `.agents/skills/`（项目内，已在 `.gitignore` 第 55 行忽略）**，
+`npx skills add` 会同时为 Claude Code 建软链接。
+
+最初那 22 个是从 `Downloads/skills/` 手工拷到 `~/.claude/skills/` 的 —— 能用，
+但**没有更新路径**。现在改用官方 CLI 重装，四个仓库共 73 个 skill：
+
+```bash
+npx skills add pbakaus/impeccable                 # 1
+npx skills add Leonxlnx/taste-skill               # 13
+npx skills add nextlevelbuilder/ui-ux-pro-max-skill  # 7
+npx skills add coreyhaines31/marketingskills      # 50
+```
+
+同一条命令重跑即更新。
+
+### 关于 open-design
+
+甲方列在「按需」。它**不是 skill 包**，是 MCP 服务器加桌面应用
+（`od mcp install claude`，需要先装 `od` CLI 或桌面版）。装它会改变整个会话的
+工具面，和上面四个「加载一份清单」的性质不同。**没有装**，需要时再说。
 
 | 组 | skill |
 |---|---|
