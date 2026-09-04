@@ -6,3 +6,4 @@
 - **Checks:** `assets:editorial:check` 99/99；`npm run check` 全绿（166 unit、25 export、980 页、SEO semantic 0、editorial warnings 0）；Playwright 实页裁切检查通过。
 - **Untouched:** `docs/research/DESIGN_BRIEF.html`、`public/search-index.json`、`scripts/__pycache__/` 的陌生改动未暂存、未清理。
 - **Next:** 本会话继续提交源码与完整 `out/` 发布产物并推送；Cloudflare 全区 purge 仍由客户执行。
+- **Next visual baseline:** 客户确认两种方向“非常非常好”：深色背景的成套五金平铺，以及浅色工作台上的真实安装关系；下次视觉深化从这两类真实、成套、尺度可信的构图继续。
