@@ -103,6 +103,17 @@
 </url>
 <url>
 <loc>https://cantonlock.com/certifications/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/certifications/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/certifications/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/certifications/" />
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/es/certifications/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/certifications/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/certifications/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/certifications/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -113,6 +124,17 @@
 </url>
 <url>
 <loc>https://cantonlock.com/downloads/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/downloads/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/downloads/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/downloads/" />
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/es/downloads/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/downloads/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/downloads/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/downloads/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -128,6 +150,17 @@
 </url>
 <url>
 <loc>https://cantonlock.com/faq/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/faq/" />
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/es/faq/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/faq/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
