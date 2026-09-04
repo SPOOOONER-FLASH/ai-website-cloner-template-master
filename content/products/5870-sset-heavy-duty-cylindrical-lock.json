@@ -60,28 +60,38 @@
   "heroImage": {
     "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 5870 SSET heavy duty cylindrical lock"
+    "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock"
   },
   "gallery": [
     {
       "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5870 SSET heavy duty cylindrical lock, view 2"
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 2"
     },
     {
       "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5870 SSET heavy duty cylindrical lock, view 3"
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 3"
     },
     {
       "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5870 SSET heavy duty cylindrical lock, view 4"
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 4"
     },
     {
       "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5870 SSET heavy duty cylindrical lock, view 5"
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 5"
+    },
+    {
+      "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 6"
+    },
+    {
+      "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5870 SSET Heavy Duty Cylindrical Lock, view 7"
     }
   ],
   "attachmentIds": [],
@@ -138,5 +148,18 @@
   "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera.",
   "summary": "A stainless steel knob lock in satin stainless steel (US32D), entrance function.",
   "seoTitleEs": "5870 SSET Cerraduras de pomo | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 5870 SSET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 5870 SSET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [
+    {
+      "src": "/videos/products/5870-sset-heavy-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/5870-sset-heavy-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "5870 SSET Heavy Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "5870 SSET Heavy Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 18,
+      "uploadDate": "2026-09-04"
+    }
+  ]
 }

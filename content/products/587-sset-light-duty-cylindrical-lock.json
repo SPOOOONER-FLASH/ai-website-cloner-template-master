@@ -66,28 +66,28 @@
   "heroImage": {
     "src": "/images/products/587-sset-light-duty-cylindrical-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 587 SSET light duty cylindrical lock"
+    "label": "Hyland 587 SSET Light Duty Cylindrical Lock"
   },
   "gallery": [
     {
       "src": "/images/products/587-sset-light-duty-cylindrical-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 587 SSET light duty cylindrical lock, view 2"
+      "label": "Hyland 587 SSET Light Duty Cylindrical Lock, view 2"
     },
     {
       "src": "/images/products/587-sset-light-duty-cylindrical-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 587 SSET light duty cylindrical lock, view 3"
+      "label": "Hyland 587 SSET Light Duty Cylindrical Lock, view 3"
     },
     {
       "src": "/images/products/587-sset-light-duty-cylindrical-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 587 SSET light duty cylindrical lock, view 4"
+      "label": "Hyland 587 SSET Light Duty Cylindrical Lock, view 4"
     },
     {
       "src": "/images/products/587-sset-light-duty-cylindrical-lock-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 587 SSET light duty cylindrical lock, view 5"
+      "label": "Hyland 587 SSET Light Duty Cylindrical Lock, view 5"
     }
   ],
   "attachmentIds": [],
@@ -144,5 +144,18 @@
   "summaryEs": "Una cerradura de pomo de acero inoxidable, función entrada — con llave por fuera, para uso residencial estándar.",
   "seoTitleEs": "587 SSET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 587 SSET cerraduras de pomo en acero inoxidable. Acabados: Satin Nickel, Chrome, Antique Brass, Polished Brass. Fabricado en Guangdong, China.",
-  "summary": "A stainless steel knob lock, prepared for a solid brass/zinc & brass cylinder, entrance function, for standard residential use."
+  "summary": "A stainless steel knob lock, prepared for a solid brass/zinc & brass cylinder, entrance function, for standard residential use.",
+  "videos": [
+    {
+      "src": "/videos/products/587-sset-light-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/587-sset-light-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "587 SSET Light Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "587 SSET Light Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 23,
+      "uploadDate": "2026-09-04"
+    }
+  ]
 }

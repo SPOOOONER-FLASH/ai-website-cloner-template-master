@@ -87,23 +87,38 @@
   "heroImage": {
     "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 5874 ACET heavy duty cylindrical lock"
+    "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock"
   },
   "gallery": [
     {
       "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5874 ACET heavy duty cylindrical lock, view 2"
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 2"
     },
     {
       "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5874 ACET heavy duty cylindrical lock, view 3"
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 3"
     },
     {
       "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 5874 ACET heavy duty cylindrical lock, view 4"
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 4"
+    },
+    {
+      "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 5"
+    },
+    {
+      "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 6"
+    },
+    {
+      "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 5874 ACET Heavy Duty Cylindrical Lock, view 7"
     }
   ],
   "attachmentIds": [],
@@ -179,5 +194,18 @@
   ],
   "summaryEs": "Una cerradura de pomo de hierro y acero inoxidable, entrada de 60 / 70 mm, función entrada — con llave por fuera.",
   "seoTitleEs": "5874 ACET Cerraduras de pomo | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 5874 ACET cerraduras de pomo. Acabados: Satin Nickel, Chrome, Antique Brass, Polished Brass. Fabricado en Guangdong, China. Solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 5874 ACET cerraduras de pomo. Acabados: Satin Nickel, Chrome, Antique Brass, Polished Brass. Fabricado en Guangdong, China. Solicite presupuesto.",
+  "videos": [
+    {
+      "src": "/videos/products/5874-acet-heavy-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/5874-acet-heavy-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "5874 ACET Heavy Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "5874 ACET Heavy Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 17,
+      "uploadDate": "2026-09-04"
+    }
+  ]
 }

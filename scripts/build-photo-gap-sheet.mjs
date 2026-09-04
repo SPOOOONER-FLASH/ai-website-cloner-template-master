@@ -10,9 +10,10 @@
  *      the catalogue, or the folder is named differently from the model on the site.
  *   2. A product in that category with no folder at all — still no photograph.
  *
- * Plus the videos, which nothing on the site can show yet. They are listed rather than
- * quietly ignored, because 34 product videos is an asset the site does not currently have
- * anywhere and the decision to build a player is the client's, not mine.
+ * Plus the videos. As of 2026-09-04 every clip whose folder matched a product IS live —
+ * transcoded to 720p and playing on the product page — so this section now reports the
+ * remainder: clips whose folder matched no product, which are the only ones still unused.
+ * A clip is worth no more than the page it can hang on.
  *
  * Output: docs/research/PHOTO_GAP_SHEET.html, prints to A4 from a browser.
  *
@@ -170,20 +171,26 @@ ${
     : ""
 }
 
-<h2>四、${withVideo.reduce((n, f) => n + f.videos.length, 0)} 个产品视频 —— 网站目前放不了</h2>
+<h2>四、产品视频：${withVideo.filter((f) => f.product).length} 个已上线，${withVideo.filter((f) => !f.product).length} 个还没有归处</h2>
+<div class="ok">
+  <strong>对得上产品的视频已经上线了。</strong> 原片是 1080p / 50fps / 约 10 Mbps，
+  45 段共 1,577 MB；转成网页规格（720p / 30fps）之后是 80 MB，小了 20 倍，
+  白底棚拍看不出差别。
+  <br><br>
+  <strong>不影响打开速度。</strong> 播放器写的是 <code>preload="none"</code> ——
+  访客打开产品页时视频一个字节都不下载，只下载一张封面图（约 38 KB），
+  按下播放才开始传。
+</div>
 <div class="rule">
-  这次的文件夹里有视频，<strong>这是网站现在完全没有的素材</strong>。但产品页还没有
-  播放器，所以它们暂时没有上线。<br><br>
-  <strong>要不要做，是甲方的决定</strong> —— 做的话需要：转码成网页格式、生成封面图、
-  在产品页加播放器、并考虑加载体积（视频比整页其他内容加起来还大）。
-  一句话说清楚要不要做，我就做。
+  下面标着「等型号确认」的视频<strong>还播不了，因为它们的型号在目录里找不到对应产品</strong>
+  —— 和第一张表是同一批。把型号确认下来，视频会跟着照片一起自动上线，不用再发一次文件。
 </div>
 <table>
-  <tr><th>型号</th><th>视频文件</th><th>对应产品</th></tr>
+  <tr><th>型号</th><th>视频文件</th><th>状态</th></tr>
   ${withVideo
     .map(
       (f) =>
-        `<tr><td class="m">${esc(f.model)}</td><td class="m">${esc(f.videos.join(", "))}</td><td>${f.product ? esc(f.product.name) : "<em>目录里没有</em>"}</td></tr>`,
+        `<tr><td class="m">${esc(f.model)}</td><td class="m">${esc(f.videos.join(", "))}</td><td>${f.product ? `已上线 — ${esc(f.product.name)}` : "<strong>等型号确认</strong>"}</td></tr>`,
     )
     .join("\n")}
 </table>

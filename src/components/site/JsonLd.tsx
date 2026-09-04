@@ -172,6 +172,7 @@ export function productSchema(
   );
   const name = (es && product.nameEs) || product.name;
   const description = (es && product.summaryEs) || product.summary;
+  const videos = videoObjects(product);
 
   return {
     "@context": "https://schema.org",
@@ -198,7 +199,47 @@ export function productSchema(
           })),
         }
       : {}),
+    /*
+      The demonstration clip, declared so it can appear as a video result and so an answer
+      engine knows a moving picture of this part exists.
+
+      `subjectOf` and not `video`: the clip is a work ABOUT the product, which is what
+      subjectOf means. Google reads VideoObject from either, and subjectOf is the one that
+      is still true if the same clip is later reused on a category page.
+
+      Only self-hosted files with a measured duration are emitted. Google will not build a
+      video result without name, description, thumbnailUrl, uploadDate and duration, and a
+      VideoObject missing them is a block of markup that earns nothing and can be reported
+      as an error in Search Console — worse than no markup at all.
+    */
+    ...(videos.length ? { subjectOf: videos } : {}),
   };
+}
+
+/** ISO 8601 duration — `PT1M26S`. The only format schema.org's `duration` accepts. */
+function isoDuration(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `PT${m ? `${m}M` : ""}${s || !m ? `${s}S` : ""}`;
+}
+
+function videoObjects(product: Product) {
+  return (product.videos ?? [])
+    .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds && v.uploadDate)
+    .map((v) => ({
+      "@type": "VideoObject" as const,
+      name: v.label,
+      /*
+        The product's own summary, because the clip shows the product doing the thing the
+        summary describes. Writing a second description here would be inventing copy no
+        person has checked, on a page where the checked version is already sitting.
+      */
+      description: product.summary || v.label,
+      thumbnailUrl: absoluteUrl(v.poster!.src ?? ""),
+      contentUrl: absoluteUrl(v.src),
+      uploadDate: v.uploadDate!,
+      duration: isoDuration(v.durationSeconds!),
+    }));
 }
 
 /**

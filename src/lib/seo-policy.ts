@@ -14,6 +14,26 @@ export type SitemapPolicyEntry = {
   priority?: number;
   alternates?: { languages: Record<string, string> };
   images?: string[];
+  videos?: SitemapVideo[];
+};
+
+/**
+ * One <video:video> entry. The field names are Google's, not ours — they go into the XML
+ * verbatim, so they stay snake_case.
+ *
+ * title, thumbnail_loc and description are REQUIRED by the video sitemap schema, plus one
+ * of content_loc or player_loc. An entry missing any of them is rejected for the whole
+ * URL, not just the video, which is why the caller filters before building one.
+ */
+export type SitemapVideo = {
+  title: string;
+  thumbnail_loc: string;
+  description: string;
+  content_loc?: string;
+  player_loc?: string;
+  /** Seconds. Google accepts 1 to 28800. */
+  duration?: number;
+  publication_date?: string;
 };
 
 export type RobotsPolicyRule = {
@@ -87,6 +107,7 @@ export function buildLocaleSitemapEntries({
   changeFrequency = "monthly",
   lastModified,
   images,
+  videos,
 }: {
   en: string;
   es: string;
@@ -104,10 +125,23 @@ export function buildLocaleSitemapEntries({
    * Both locales get the same list; the image is the same file either way.
    */
   images?: string[];
+  /**
+   * Demonstration clips on this page, emitted as <video:video>.
+   *
+   * Same argument as images, one step further: a video sitemap is how a clip becomes
+   * eligible for a video result at all, and this catalogue's clips answer the question a
+   * spec table cannot — what the part does when a person's hand is on it.
+   *
+   * Both locales list the same file. The clip has no spoken commentary, so there is
+   * nothing in it that is English rather than Spanish; only the title and description
+   * differ, and those come from the page.
+   */
+  videos?: SitemapVideo[];
 }): SitemapPolicyEntry[] {
   const shared = {
     ...(lastModified ? { lastModified } : {}),
     ...(images?.length ? { images } : {}),
+    ...(videos?.length ? { videos } : {}),
     changeFrequency,
     priority,
   };

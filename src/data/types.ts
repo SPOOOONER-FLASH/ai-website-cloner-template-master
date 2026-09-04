@@ -75,6 +75,16 @@ export interface VideoRef {
   poster?: ImageRef;
   /** Describes the video for people who cannot see it, and labels the player. */
   label: string;
+  /**
+   * Runtime of the file this site serves, in seconds.
+   *
+   * Present for self-hosted clips only. Google's video structured data will not produce a
+   * video result without a duration, and measuring it off the delivered file rather than
+   * the camera original means the number cannot disagree with what a visitor watches.
+   */
+  durationSeconds?: number;
+  /** ISO date this site published the clip. Also required by video structured data. */
+  uploadDate?: string;
 }
 
 /**

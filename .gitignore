@@ -81,3 +81,6 @@ output/playwright/
 # Agent scratch space. Named tmp/<agent>-<purpose>/ so neither agent deletes the other's
 # work — see AGENTS.md. Never tracked, so a deletion here is unrecoverable.
 tmp/
+
+# Python bytecode from scripts/*.py
+__pycache__/

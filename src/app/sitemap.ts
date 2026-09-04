@@ -10,7 +10,7 @@ import {
 } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
-import { buildLocaleSitemapEntries } from "@/lib/seo-policy";
+import { buildLocaleSitemapEntries, type SitemapVideo } from "@/lib/seo-policy";
 
 /**
  * Emits /sitemap.xml at build time (works under `output: "export"`).
@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly",
     lastModified?: Date,
     images?: string[],
+    videos?: SitemapVideo[],
   ): MetadataRoute.Sitemap => {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
     const en = absoluteUrl(`${clean}/`);
@@ -60,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency,
       lastModified,
       images,
+      videos,
     });
   };
 
@@ -148,6 +150,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     */
     if (!product || !isPublished(product)) continue;
     const hero = product.heroImage?.src;
+    /*
+      Demonstration clips, listed so they can earn a video result of their own.
+
+      Filtered to the ones carrying every field Google requires: a video entry missing a
+      thumbnail, a duration or a publication date is not partially accepted — it
+      invalidates the whole <url> block, taking the page listing with it. Products with a
+      clip but incomplete metadata are simply listed without one.
+    */
+    const videos: SitemapVideo[] = (product.videos ?? [])
+      .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds && v.uploadDate)
+      .map((v) => ({
+        title: v.label,
+        thumbnail_loc: absoluteUrl(v.poster!.src ?? ""),
+        description: product.summary || v.label,
+        content_loc: absoluteUrl(v.src),
+        duration: v.durationSeconds!,
+        publication_date: v.uploadDate!,
+      }));
     urls.push(
       ...entry(
         `/products/${category}/${slug}`,
@@ -155,6 +175,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "monthly",
         undefined,
         hero ? [absoluteUrl(hero)] : undefined,
+        videos.length ? videos : undefined,
       ),
     );
   }
