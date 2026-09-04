@@ -66,12 +66,30 @@ export const NEWS_KIND_LABEL: Record<NewsKind, string> = {
 };
 
 /**
+ * The same two kinds in Spanish.
+ *
+ * "Nota técnica" rather than a literal rendering of "Insight": these articles are what a
+ * Spanish-speaking specifier calls a technical note, and the English word names a
+ * publishing category that has no equivalent in that trade.
+ */
+export const NEWS_KIND_LABEL_ES: Record<NewsKind, string> = {
+  "press-release": "Nota de prensa",
+  insight: "Nota técnica",
+};
+
+/**
  * "15 March 2026" — spelled-out month, because 03/04/2026 reads as two different dates
  * either side of the Atlantic and this site sells into both.
  */
-export function formatNewsDate(iso: string): string {
+export function formatNewsDate(iso: string, locale: "en" | "es" = "en"): string {
   const [year, month, day] = iso.split("-").map(Number);
-  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString("en-GB", {
+  /*
+    es-ES rather than any Latin American locale: they agree on this format ("15 de marzo
+    de 2026") and es-ES is the one guaranteed to be present in every runtime. The point of
+    spelling the month out is the same in both languages — 03/04/2026 is two different
+    dates depending on who reads it, and this catalogue sells into both conventions.
+  */
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(locale === "es" ? "es-ES" : "en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",

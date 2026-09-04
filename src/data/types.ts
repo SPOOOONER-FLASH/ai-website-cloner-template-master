@@ -396,6 +396,16 @@ export interface NewsArticle {
   attachmentIds?: string[];
   seoTitle: string;
   seoDescription: string;
+  /**
+   * Spanish snippet copy for the /es/news mirror.
+   *
+   * Separate fields rather than a translation of seoTitle at render time: a meta
+   * description is written to a character budget Google actually renders, and Spanish
+   * runs roughly 20% longer than English for the same content. A machine-shortened
+   * English sentence would either overflow that budget or stop mid-word.
+   */
+  seoTitleEs?: string;
+  seoDescriptionEs?: string;
 }
 
 /* -------------------------------------------------------------------------

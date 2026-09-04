@@ -21,7 +21,23 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
   return {
     title: { absolute: article.seoTitle },
     description: article.seoDescription,
-    alternates: { canonical: `/news/${slug}/` },
+    /*
+      hreflang, without which the two locales are duplicates rather than translations.
+    
+      The export audit catches a missing pair as `hreflang-pair-missing`, and it caught
+      exactly this when the Spanish mirror shipped: sixteen article pages, eight in each
+      language, each declaring a canonical and neither pointing at the other. Written out
+      here rather than taken from pageMetadata because these routes build their metadata
+      by hand for the article-specific Open Graph fields.
+    */
+    alternates: {
+      canonical: `/news/${slug}/`,
+      languages: {
+        en: absoluteUrl(`/news/${slug}/`),
+        es: absoluteUrl(`/es/news/${slug}/`),
+        "x-default": absoluteUrl(`/news/${slug}/`),
+      },
+    },
     openGraph: {
       type: "article",
       url: absoluteUrl(`/news/${slug}/`),

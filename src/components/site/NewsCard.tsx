@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { NEWS_KIND_LABEL, formatNewsDate } from "@/data/news";
+import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 /**
@@ -11,20 +11,28 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
  * this company is active cannot tell without opening each item. Dates are cheap and
  * the whole point of a dateline.
  */
-export function NewsCard({ article }: { article: NewsArticle }) {
+export function NewsCard({
+  article,
+  locale = "en",
+}: {
+  article: NewsArticle;
+  locale?: "en" | "es";
+}) {
+  const es = locale === "es";
+  const base = es ? "/es" : "";
   return (
     <Link
-      href={`/news/${article.slug}/`}
+      href={`${base}/news/${article.slug}/`}
       className="hard-shadow-card group flex flex-col bg-surface"
     >
       <MediaPlaceholder {...article.heroImage} className="aspect-[16/9]" />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <div className="flex flex-wrap items-baseline gap-x-16 gap-y-4">
           <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-            {NEWS_KIND_LABEL[article.kind]}
+            {(es ? NEWS_KIND_LABEL_ES : NEWS_KIND_LABEL)[article.kind]}
           </p>
           <time dateTime={article.publishedAt} className="text-c2 text-ink-tertiary">
-            {formatNewsDate(article.publishedAt)}
+            {formatNewsDate(article.publishedAt, locale)}
           </time>
         </div>
         <h2 className="title-marker mt-16 text-h3 text-ink">

@@ -254,6 +254,7 @@ function videoObjects(product: Product) {
 export function newsArticleSchema(
   article: NewsArticle,
   url: string,
+  locale: "en" | "es" = "en",
 ): WithContext<SchemaNewsArticle | SchemaTechArticle> {
   const images = [article.heroImage, ...(article.gallery ?? [])]
     .map((image) => image.src)
@@ -271,8 +272,14 @@ export function newsArticleSchema(
       material worth citing.
     */
     "@type": article.kind === "insight" ? "TechArticle" : "NewsArticle",
-    headline: article.title,
-    description: article.summary,
+    /*
+      The headline and description a reader of THIS page sees. Emitting the English ones
+      on the Spanish mirror would make the markup disagree with the visible text, which
+      is the same failure the audit checks for on FAQ answers — and here it would also
+      offer an answer engine an English sentence as the summary of a Spanish page.
+    */
+    headline: (locale === "es" && article.titleEs) || article.title,
+    description: (locale === "es" && article.summaryEs) || article.summary,
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
@@ -280,14 +287,19 @@ export function newsArticleSchema(
     ...(images.length ? { image: images } : {}),
     author: { "@id": `${siteUrl}/#organization` },
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: "en",
+    inLanguage: locale,
   };
 }
 
-export function NewsArticleJsonLd({ article }: { article: NewsArticle }) {
-  return (
-    <JsonLd data={newsArticleSchema(article, absoluteUrl(`/news/${article.slug}/`))} />
-  );
+export function NewsArticleJsonLd({
+  article,
+  locale = "en",
+}: {
+  article: NewsArticle;
+  locale?: "en" | "es";
+}) {
+  const path = locale === "es" ? `/es/news/${article.slug}/` : `/news/${article.slug}/`;
+  return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
 }
 
 /** Breadcrumb trail. `items` is ordered root → current, each with an absolute URL. */

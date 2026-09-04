@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { NEWS_KIND_LABEL, formatNewsDate } from "@/data/news";
+import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -15,7 +15,60 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
  * inside the text band, and the reason holds here: a company announcement is a document,
  * and giving it the same visual weight as a product launch page overstates it.
  */
-export function NewsDetail({ article }: { article: NewsArticle }) {
+/**
+ * Every string this page shows, in both locales.
+ *
+ * The Spanish mirror renders THIS component with locale="es" rather than a translated
+ * copy of it. A second implementation drifts the first time the layout changes, and the
+ * drift is only visible to somebody reading Spanish — which is to say, to nobody working
+ * on this repository.
+ */
+const COPY = {
+  en: {
+    home: "Home",
+    news: "News + Press",
+    back: "← Back to all news",
+    pressEnquiries: "Press enquiries",
+    contact: "Contact us",
+    mentioned: "Products mentioned",
+    pressKit: "Press kit",
+    aboutTitle: "About Canton Hyland",
+    about:
+      " — Canton Hyland manufactures panic exit devices, locks and architectural door hardware for commercial and institutional projects, supplying specifiers and distributors internationally.",
+  },
+  es: {
+    home: "Inicio",
+    news: "Noticias y prensa",
+    back: "← Volver a todas las noticias",
+    pressEnquiries: "Consultas de prensa",
+    contact: "Contacto",
+    mentioned: "Productos mencionados",
+    pressKit: "Dossier de prensa",
+    aboutTitle: "Sobre Canton Hyland",
+    about:
+      " — Canton Hyland fabrica dispositivos antipánico, cerraduras y herrajes arquitectónicos para obra comercial e institucional, y suministra a prescriptores y distribuidores en todo el mundo.",
+  },
+} as const;
+
+export function NewsDetail({
+  article,
+  locale = "en",
+}: {
+  article: NewsArticle;
+  locale?: "en" | "es";
+}) {
+  const t = COPY[locale];
+  const base = locale === "es" ? "/es" : "";
+  const es = locale === "es";
+  /*
+    Falls back to the English field when a translation is missing rather than rendering
+    an empty heading. An untranslated article reads as English on a Spanish page, which is
+    visibly incomplete — and visibly incomplete is the state that gets fixed.
+  */
+  const title = (es && article.titleEs) || article.title;
+  const summary = (es && article.summaryEs) || article.summary;
+  const body = (es && article.bodyEs?.length === article.body.length && article.bodyEs) || article.body;
+
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
@@ -28,27 +81,27 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
           <div className="col-span-full">
             <Breadcrumbs
               items={[
-                { label: "Home", href: "/" },
-                { label: "News + Press", href: "/news/" },
-                { label: article.title },
+                { label: t.home, href: `${base}/` },
+                { label: t.news, href: `${base}/news/` },
+                { label: title },
               ]}
             />
           </div>
 
           <h1 className="col-span-full mt-16 text-h1 text-ink xl:col-span-18">
-            {article.title}
+            {title}
           </h1>
 
           <p className="col-span-full max-w-[72ch] text-h4 text-ink-secondary xl:col-span-16">
-            {article.summary}
+            {summary}
           </p>
 
           <div className="col-span-full">
             <Link
-              href="/news/"
+              href={`${base}/news/`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
             >
-              &larr; Back to all news
+              {t.back}
             </Link>
           </div>
         </section>
@@ -57,18 +110,18 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
           {/* Left column: the dateline, the contact route, and any linked products. */}
           <div className="col-span-full lg:col-span-4 xl:col-span-8">
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-              {NEWS_KIND_LABEL[article.kind]}
+              {(es ? NEWS_KIND_LABEL_ES : NEWS_KIND_LABEL)[article.kind]}
             </p>
             <time
               dateTime={article.publishedAt}
               className="mt-8 block text-h3 text-ink"
             >
-              {formatNewsDate(article.publishedAt)}
+              {formatNewsDate(article.publishedAt, locale)}
             </time>
 
             <div className="mt-32 border-t border-line pt-16">
               <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                Press enquiries
+                {t.pressEnquiries}
               </p>
               {/*
                 No named press officer. The client has not nominated one, and putting an
@@ -77,26 +130,26 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
               */}
               <p className="mt-8 text-c1 text-ink">Canton Hyland</p>
               <Link
-                href="/contact/"
+                href={`${base}/contact/`}
                 className="short-marker short-marker-compact mt-8 text-c1 text-brand hover:text-brand-hover"
               >
-                Contact us
+                {t.contact}
               </Link>
             </div>
 
             {related.length > 0 ? (
               <div className="mt-32 border-t border-line pt-16">
                 <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                  Products mentioned
+                  {t.mentioned}
                 </p>
                 <ul className="mt-8 space-y-8">
                   {related.map((product) => (
                     <li key={product.slug}>
                       <Link
-                        href={`/products/${product.categoryPath[0]}/${product.slug}/`}
+                        href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                         className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
-                        {product.model} — {product.name}
+                        {product.model} — {(es && product.nameEs) || product.name}
                       </Link>
                     </li>
                   ))}
@@ -113,7 +166,7 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
 
         <section className="col-content grid w-full grid-cols gap-x">
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            {article.body.map((paragraph, index) => (
+            {body.map((paragraph, index) => (
               <p
                 key={index}
                 className={
@@ -137,7 +190,7 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
 
             {attachments.length > 0 ? (
               <div className="mt-48 border-t border-line pt-24">
-                <h2 className="text-h3 text-ink">Press kit</h2>
+                <h2 className="text-h3 text-ink">{t.pressKit}</h2>
                 <ul className="mt-16 divide-y divide-line border-y border-line">
                   {attachments.map((file) => (
                     <li key={file.id}>
@@ -160,10 +213,8 @@ export function NewsDetail({ article }: { article: NewsArticle }) {
             {/* Standing boilerplate, the paragraph a journalist pastes at the end. */}
             <div className="mt-48 border-t border-line pt-24">
               <p className="text-c1 text-ink-secondary">
-                <strong className="font-semibold text-ink">About Canton Hyland</strong>{" "}
-                — Canton Hyland manufactures panic exit devices, locks and architectural
-                door hardware for commercial and institutional projects, supplying
-                specifiers and distributors internationally.
+                <strong className="font-semibold text-ink">{t.aboutTitle}</strong>
+                {t.about}
               </p>
             </div>
           </div>

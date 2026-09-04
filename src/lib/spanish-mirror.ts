@@ -31,6 +31,14 @@ const SPANISH_MIRROR_PREFIXES = [
     link to a route that only exists in English is a dead link dressed as a feature.
   */
   "/product-finder",
+  /*
+    The newsroom and its eight technical articles, translated 2026-09-04. These are the
+    pages an answer engine is most likely to cite — they are reference material rather
+    than catalogue — so a Spanish reader arriving on one matters more here than on most
+    routes. Article slugs stay in English in both locales: translating the path would
+    break every hreflang pair and every link already sent to a customer.
+  */
+  "/news",
   // The FAQ. The page a buyer needs before they can do business at all — minimum order,
   // lead time, samples, payment terms, OEM.
   "/faq",
