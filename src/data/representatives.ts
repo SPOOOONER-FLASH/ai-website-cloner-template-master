@@ -26,6 +26,16 @@ export interface Representative {
   address: string;
   /** Present only where the client supplied a direct line. */
   phone?: string;
+  /**
+   * Where mail for this market actually lands.
+   *
+   * Client decision, 2026-09-03. North America goes to a person, not a shared mailbox —
+   * the account manager reads it directly, which for two contact points in one time zone
+   * is faster than a queue. China and Germany route to the company addresses, which are
+   * split by function rather than by region: hyde@ for general enquiries, lock@ for
+   * orders and pricing, tec@ for drawings and specification.
+   */
+  email: string;
   /** Why this address exists, in the buyer's terms. Kept honest and short. */
   note?: string;
   noteEs?: string;
@@ -38,6 +48,7 @@ export const representatives: Representative[] = [
     city: "Los Angeles, California",
     address: "960 W. 7th Street, Los Angeles, CA 90017",
     phone: "+1 703 967 7493",
+    email: "spoonerlau@gmail.com",
     note: "Account manager for North America. Call or email for pricing, samples and shipping to US destinations.",
     noteEs:
       "Responsable de cuentas para Norteamérica. Llame o escriba para precios, muestras y envíos a destinos de EE. UU.",
@@ -48,6 +59,7 @@ export const representatives: Representative[] = [
     city: "Arlington, Virginia",
     address: "550 14th St S, Arlington, VA 22202",
     phone: "+1 703 967 7493",
+    email: "spoonerlau@gmail.com",
     note: "East-coast contact point, in the Washington D.C. metro area.",
     noteEs: "Punto de contacto en la costa este, área metropolitana de Washington D. C.",
   },
@@ -56,6 +68,7 @@ export const representatives: Representative[] = [
     regionEs: "Alemania",
     city: "Cologne",
     address: "Koelnmesse, Messeplatz 1, 50679 Cologne",
+    email: "hyde@cantonlock.com",
     note: "Where we exhibit in Germany. Meetings can be arranged around the Cologne fair calendar.",
     noteEs:
       "Donde exponemos en Alemania. Se pueden concertar reuniones en torno al calendario ferial de Colonia.",
@@ -65,6 +78,7 @@ export const representatives: Representative[] = [
     regionEs: "Alemania",
     city: "Remagen",
     address: "Bachstraße 2, 53424 Remagen",
+    email: "hyde@cantonlock.com",
     note: "Contact point for the Rhineland region.",
     noteEs: "Punto de contacto para la región de Renania.",
   },

@@ -43,31 +43,24 @@ export default function ContactPage() {
               where the eye goes after the heading.
             */}
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Addresses</h2>
+              <h2 className="text-h3 text-ink">Address</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
-                Office for correspondence and documents; factory for production and
-                inspection visits.
+                Manufacturing, and where inspection visits are received.
               </p>
 
               {/*
-                The Chinese line is gone from both addresses.
+                THE OFFICE ADDRESS IS NOT PUBLISHED. Client decision, 2026-09-03.
 
-                It was there as a courtesy for a courier, but this page is read by export
-                buyers in thirty markets and a script none of them read is noise in the
-                middle of the one block they came for. The Chinese wording is still held
-                in content/site-settings.json for quotations and shipping documents —
-                removed from the page, not from the record.
+                Two earlier decisions led here. The Chinese line came off both addresses
+                because this page is read by buyers in thirty markets and a script none of
+                them read is noise in the block they came for. Now the Lehe Road office
+                comes off entirely: publishing two addresses in one town invites the
+                question of which one is the company, and the factory is the answer that
+                matters to an importer — it is the one they can visit and audit.
+
+                Both are still held in content/site-settings.json for quotations and
+                shipping documents. Removed from the page, not from the record.
               */}
-              <div className="mt-24">
-                <p className="text-c2 text-ink-secondary">Office</p>
-                <address className="mt-4 not-italic text-c1 text-ink">
-                  {siteSettings.contact.address}
-                  <br />
-                  {siteSettings.contact.city}, {siteSettings.contact.province},{" "}
-                  {siteSettings.contact.country}
-                </address>
-              </div>
-
               {siteSettings.contact.factoryAddress ? (
                 <div className="mt-24">
                   <p className="text-c2 text-ink-secondary">Factory</p>
@@ -79,6 +72,55 @@ export default function ContactPage() {
                   </address>
                 </div>
               ) : null}
+            </div>
+
+            {/*
+              THE MAILBOXES, SPLIT BY WHAT YOU ARE WRITING ABOUT — not by seniority.
+
+              One address for everything means every technical drawing request queues
+              behind every price enquiry, and the buyer who needs a DXF waits on somebody
+              reading order confirmations. Naming the function is also the fastest way to
+              tell a specifier they are in the right place.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Email us directly</h2>
+              <p className="mt-8 text-c2 text-ink-secondary">
+                Written to by market from Zhongshan and Germany. Pick the one that matches
+                what you need — it reaches the right desk first time.
+              </p>
+              <dl className="mt-24">
+                {[
+                  {
+                    email: siteSettings.contact.email,
+                    label: "Orders, pricing and samples",
+                  },
+                  {
+                    email: siteSettings.contact.technicalEmail,
+                    label: "Drawings, specification and test reports",
+                  },
+                  {
+                    email: siteSettings.contact.brandEmail,
+                    label: "OEM, private label and everything else",
+                  },
+                ]
+                  .filter((row) => row.email)
+                  .map((row) => (
+                    <div
+                      key={row.email}
+                      className="flex flex-wrap items-baseline justify-between gap-x-24 gap-y-4 border-b border-line py-12"
+                    >
+                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
+                      <dd>
+                        <a
+                          href={`mailto:${row.email}`}
+                          className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                        >
+                          {row.email}
+                        </a>
+                      </dd>
+                    </div>
+                  ))}
+              </dl>
             </div>
 
             {/*
@@ -112,6 +154,13 @@ export default function ContactPage() {
                         {rep.phone}
                       </a>
                     ) : null}
+                    {/* Where mail for this market lands — see representatives.ts. */}
+                    <a
+                      href={`mailto:${rep.email}`}
+                      className="short-marker short-marker-compact mt-4 block text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {rep.email}
+                    </a>
                     {rep.note ? (
                       <p className="mt-8 max-w-[46ch] text-c2 text-ink-secondary">{rep.note}</p>
                     ) : null}

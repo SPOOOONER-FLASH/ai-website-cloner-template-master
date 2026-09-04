@@ -51,21 +51,12 @@ export default function ContactoPage() {
               exist. Only the labels are Spanish.
             */}
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Direcciones</h2>
+              <h2 className="text-h3 text-ink">Dirección</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
-                Oficina para correspondencia y documentación; fábrica para producción y
-                visitas de inspección.
+                Fabricación, y donde se reciben las visitas de inspección.
               </p>
 
-              <div className="mt-24">
-                <p className="text-c2 text-ink-secondary">Oficina</p>
-                <address className="mt-4 not-italic text-c1 text-ink">
-                  {siteSettings.contact.address}
-                  <br />
-                  Zhongshan, Guangdong, China
-                </address>
-              </div>
-
+              {/* La oficina de Lehe Road no se publica — ver la nota en la página inglesa. */}
               {siteSettings.contact.factoryAddress ? (
                 <div className="mt-24">
                   <p className="text-c2 text-ink-secondary">Fábrica</p>
@@ -76,6 +67,48 @@ export default function ContactoPage() {
                   </address>
                 </div>
               ) : null}
+            </div>
+
+            {/* Los buzones, separados por asunto — ver la nota en la página inglesa. */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Escríbanos directamente</h2>
+              <p className="mt-8 text-c2 text-ink-secondary">
+                Atendidos desde Zhongshan y Alemania. Elija el que corresponda a su
+                consulta y llegará al escritorio correcto a la primera.
+              </p>
+              <dl className="mt-24">
+                {[
+                  {
+                    email: siteSettings.contact.email,
+                    label: "Pedidos, precios y muestras",
+                  },
+                  {
+                    email: siteSettings.contact.technicalEmail,
+                    label: "Planos, especificación e informes de ensayo",
+                  },
+                  {
+                    email: siteSettings.contact.brandEmail,
+                    label: "OEM, marca propia y todo lo demás",
+                  },
+                ]
+                  .filter((row) => row.email)
+                  .map((row) => (
+                    <div
+                      key={row.email}
+                      className="flex flex-wrap items-baseline justify-between gap-x-24 gap-y-4 border-b border-line py-12"
+                    >
+                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
+                      <dd>
+                        <a
+                          href={`mailto:${row.email}`}
+                          className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+                        >
+                          {row.email}
+                        </a>
+                      </dd>
+                    </div>
+                  ))}
+              </dl>
             </div>
 
             <div className="mt-48 border-t border-line pt-24">
@@ -102,6 +135,12 @@ export default function ContactoPage() {
                         {rep.phone}
                       </a>
                     ) : null}
+                    <a
+                      href={`mailto:${rep.email}`}
+                      className="short-marker short-marker-compact mt-4 block text-c1 text-brand hover:text-brand-hover"
+                    >
+                      {rep.email}
+                    </a>
                     {rep.noteEs ? (
                       <p className="mt-8 max-w-[46ch] text-c2 text-ink-secondary">
                         {rep.noteEs}

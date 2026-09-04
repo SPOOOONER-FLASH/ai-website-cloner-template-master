@@ -41,8 +41,15 @@ test("sitemap entries omit invented freshness unless a real date is supplied", (
   detail, so the claim this test protects has genuinely changed.
 
   What it still protects is the rule that made it worth writing: hreflang is only
-  declared for paths that exist in both languages. /downloads has no Spanish route and
-  must stay false.
+  declared for paths that exist in both languages.
+
+  UPDATED 2026-09-04, on the client's instruction to finish the Spanish side rather than
+  wait for Codex. /faq, /downloads, /certifications, /compare, /collections and
+  /configurator all now have Spanish routes, so the assertions that they must NOT mirror
+  were locking a decision that has been deliberately reversed. /news is the one that still
+  holds: eight technical articles of long-form prose, which is real translation rather
+  than data rendering, and a machine-translated article about EN 1125 is worse than an
+  English one.
 */
 test("the Spanish catalogue mirrors /products, and hreflang stops where the routes do", () => {
   assert.equal(hasSpanishMirror("/products"), true);
@@ -50,9 +57,17 @@ test("the Spanish catalogue mirrors /products, and hreflang stops where the rout
   assert.equal(hasSpanishMirror("/products/lock-cases/lc8520ps-lock-case"), true);
   assert.equal(hasSpanishMirror("/products/argentina-ar4"), true);
 
-  assert.equal(hasSpanishMirror("/downloads"), false);
+  // Shipped 2026-09-03/04.
+  assert.equal(hasSpanishMirror("/faq"), true);
+  assert.equal(hasSpanishMirror("/downloads"), true);
+  assert.equal(hasSpanishMirror("/certifications"), true);
+  assert.equal(hasSpanishMirror("/compare/deadbolts"), true);
+  assert.equal(hasSpanishMirror("/collections/knob-locks-tubular-locks"), true);
+  assert.equal(hasSpanishMirror("/configurator"), true);
+
+  // Still English-only. An hreflang pointing at a 404 is worse than no hreflang.
   assert.equal(hasSpanishMirror("/news"), false);
-  assert.equal(hasSpanishMirror("/faq"), false);
+  assert.equal(hasSpanishMirror("/product-finder"), false);
 });
 
 /*
@@ -67,7 +82,16 @@ test("the Spanish catalogue mirrors /products, and hreflang stops where the rout
   This asserts the two agree by construction rather than by coincidence.
 */
 test("the navigation prefixes exactly the paths that have a Spanish mirror", () => {
-  const mirrored = ["/products", "/company", "/contact", "/projects"];
+  const mirrored = [
+    "/products",
+    "/company",
+    "/contact",
+    "/projects",
+    "/faq",
+    "/downloads",
+    "/certifications",
+    "/configurator",
+  ];
   for (const href of mirrored) {
     assert.equal(hasSpanishMirror(href), true, `${href} should mirror`);
     assert.equal(localisedHref(href, "es"), `/es${href}`, `${href} should be prefixed`);
@@ -75,7 +99,7 @@ test("the navigation prefixes exactly the paths that have a Spanish mirror", () 
   }
 
   // No Spanish route: a Spanish visitor gets the English page, never a 404.
-  for (const href of ["/downloads", "/news", "/product-finder", "/certifications"]) {
+  for (const href of ["/news", "/product-finder"]) {
     assert.equal(hasSpanishMirror(href), false, `${href} should not mirror`);
     assert.equal(localisedHref(href, "es"), href, `${href} must stay English`);
   }

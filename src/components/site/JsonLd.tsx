@@ -58,10 +58,15 @@ export function organisationSchema(): WithContext<Organization> {
       It was region + country only, which is not an address a buyer or an answer engine
       can act on — and the city field said Guangzhou while both sites are in Zhongshan.
 
-      This emits the OFFICE (`address`), not the plant: schema.org's PostalAddress on an
-      Organization is the registered address for correspondence, and the factory on
-      Haiwei Road is a second location rather than a replacement. Both are published in
-      the page copy on /contact/ and /company/.
+      It emitted the OFFICE (`address`) while both addresses were published. On
+      2026-09-03 the client withdrew the Lehe Road office from the site, and structured
+      data has to follow: an Organization whose PostalAddress names a street the page
+      never mentions is a claim the site does not make, and it is the exact shape of
+      thing an answer engine surfaces and a buyer then cannot verify.
+
+      So the plant on Haiwei Road is now the address, with the office kept as a fallback
+      only if the factory is ever cleared. Both remain in content/site-settings.json for
+      quotations and shipping documents.
 
       Every part is emitted only if it is actually set. The postcode in particular is
       left blank rather than guessed: this object is machine-read and a wrong postcode is
@@ -69,7 +74,12 @@ export function organisationSchema(): WithContext<Organization> {
     */
     address: {
       "@type": "PostalAddress",
-      ...(siteSettings.contact?.address ? { streetAddress: siteSettings.contact.address } : {}),
+      ...(siteSettings.contact?.factoryAddress || siteSettings.contact?.address
+        ? {
+            streetAddress:
+              siteSettings.contact?.factoryAddress || siteSettings.contact?.address,
+          }
+        : {}),
       ...(siteSettings.contact?.city ? { addressLocality: siteSettings.contact.city } : {}),
       ...(siteSettings.contact?.postcode ? { postalCode: siteSettings.contact.postcode } : {}),
       addressRegion: "Guangdong",
@@ -273,8 +283,13 @@ export function itemListSchema(name: string, urls: string[]): WithContext<ItemLi
  * FAQPage whose answers do not appear on the page as a spam signal, so the two must not
  * be allowed to drift apart.
  */
-export function FaqJsonLd() {
-  const groups = getAnsweredFaq();
+export function FaqJsonLd({ locale = "en" }: { locale?: "en" | "es" } = {}) {
+  /*
+    Same call the page makes, with the same locale. The audit asserts every answer in this
+    markup is visible in the rendered text; emitting English answers beside a Spanish page
+    would break that on all fifteen questions at once.
+  */
+  const groups = getAnsweredFaq(locale);
   const items = groups.flatMap((group) => group.items);
   if (!items.length) return null;
 

@@ -25,6 +25,13 @@ const SPANISH_MIRROR_PREFIXES = [
   "/collections",
   // The guided configurator, bilingual from the day it shipped.
   "/configurator",
+  // The FAQ. The page a buyer needs before they can do business at all — minimum order,
+  // lead time, samples, payment terms, OEM.
+  "/faq",
+  // The technical library and the certificate register. Both are what a specifier asks
+  // for before naming a product in a tender.
+  "/downloads",
+  "/certifications",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */

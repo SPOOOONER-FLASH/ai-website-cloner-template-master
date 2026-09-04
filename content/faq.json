@@ -5,80 +5,114 @@
       "items": [
         {
           "question": "What is your minimum order quantity?",
-          "answer": "It depends on the model, the finish and whether the order is stock or made to your specification. Most models fall between 300 and 5,000 pieces. Some items already listed on our Alibaba storefront carry a lower published minimum. Send the models you need and the quantities you have in mind, and the export team will confirm the minimum for that exact line before you commit to anything."
+          "answer": "It depends on the model, the finish and whether the order is stock or made to your specification. Most models fall between 300 and 5,000 pieces. Some items already listed on our Alibaba storefront carry a lower published minimum. Send the models you need and the quantities you have in mind, and the export team will confirm the minimum for that exact line before you commit to anything.",
+          "questionEs": "¿Cuál es el pedido mínimo?",
+          "answerEs": "Depende del modelo, del acabado y de si el pedido sale de stock o se fabrica según su especificación. La mayoría de los modelos se sitúa entre 300 y 5.000 piezas. Algunos artículos ya publicados en nuestra tienda de Alibaba tienen un mínimo publicado más bajo. Envíenos los modelos que necesita y las cantidades que maneja, y el equipo de exportación le confirmará el mínimo de esa línea concreta antes de que usted se comprometa a nada."
         },
         {
           "question": "What are your lead times?",
-          "answer": "Production lead time starts at 30 days from order confirmation. The exact date depends on the models, the quantity and the finishes on the order — tell our export team what you need and they will confirm a date before you pay a deposit."
+          "answer": "Production lead time starts at 30 days from order confirmation. The exact date depends on the models, the quantity and the finishes on the order — tell our export team what you need and they will confirm a date before you pay a deposit.",
+          "questionEs": "¿Cuáles son los plazos de entrega?",
+          "answerEs": "El plazo de producción parte de 30 días desde la confirmación del pedido. La fecha exacta depende de los modelos, la cantidad y los acabados que lleve el pedido — díganos qué necesita y el equipo de exportación le confirmará una fecha antes de que pague ninguna señal."
         },
         {
           "question": "Can I order samples before placing a production order?",
-          "answer": "Yes, and samples are normally charged. We quote the sample price with the freight for your address, and the sample cost is credited against your first production order — so if the sample leads to business, it costs you nothing in the end. Tell the export team the models and finishes you want to see and they will confirm the price and the despatch date. For a model already in stock a sample usually ships within days; a sample in a finish we do not hold takes as long as a short production run."
+          "answer": "Yes, and samples are normally charged. We quote the sample price with the freight for your address, and the sample cost is credited against your first production order — so if the sample leads to business, it costs you nothing in the end. Tell the export team the models and finishes you want to see and they will confirm the price and the despatch date. For a model already in stock a sample usually ships within days; a sample in a finish we do not hold takes as long as a short production run.",
+          "questionEs": "¿Puedo pedir muestras antes de hacer un pedido de producción?",
+          "answerEs": "Sí, y las muestras normalmente se cobran. Cotizamos el precio de la muestra junto con el flete a su dirección, y ese importe se descuenta de su primer pedido de producción — de modo que, si la muestra acaba en negocio, no le cuesta nada. Indique al equipo de exportación los modelos y acabados que quiere ver y le confirmarán precio y fecha de expedición. Un modelo que tenemos en stock suele salir en pocos días; una muestra en un acabado que no mantenemos tarda lo mismo que una serie corta de producción."
         },
         {
           "question": "What payment terms do you accept?",
-          "answer": "We work with the instruments the trade uses — T/T with a deposit and the balance against shipping documents or before despatch, and irrevocable L/C at sight for larger orders. The split is not a fixed rule: it moves with the order value, the production time the models need, the materials and finishes involved, and how the goods clear and ship to your country. We also quote on the trade term you prefer — EXW at our factory, FOB at the port, or DDP delivered — and the term you choose changes both the price and where your responsibility begins. Send the models, the quantities and the destination, and the export team will put the terms in writing on the proforma before you commit to anything."
+          "answer": "We work with the instruments the trade uses — T/T with a deposit and the balance against shipping documents or before despatch, and irrevocable L/C at sight for larger orders. The split is not a fixed rule: it moves with the order value, the production time the models need, the materials and finishes involved, and how the goods clear and ship to your country. We also quote on the trade term you prefer — EXW at our factory, FOB at the port, or DDP delivered — and the term you choose changes both the price and where your responsibility begins. Send the models, the quantities and the destination, and the export team will put the terms in writing on the proforma before you commit to anything.",
+          "questionEs": "¿Qué condiciones de pago aceptan?",
+          "answerEs": "Trabajamos con los instrumentos habituales del comercio exterior: transferencia bancaria (T/T) con señal y el saldo contra documentos de embarque o antes de la expedición, y carta de crédito irrevocable a la vista para pedidos mayores. El reparto no es una regla fija: se mueve con el importe del pedido, el tiempo de producción que exijan los modelos, los materiales y acabados implicados, y cómo despache y embarque la mercancía hacia su país. También cotizamos en el incoterm que usted prefiera — EXW en fábrica, FOB en puerto o DDP entregado — y el término que elija cambia tanto el precio como el punto donde empieza su responsabilidad. Envíe modelos, cantidades y destino, y el equipo de exportación dejará las condiciones por escrito en la factura proforma antes de que usted se comprometa a nada."
         },
         {
           "question": "Can I order through Alibaba instead of by email?",
-          "answer": "Yes. Our verified storefront carries the same catalogue and is often the faster route if you already buy through Alibaba — trade assurance, messaging and payment are handled there. For project schedules, custom finishes or master key systems, email is usually better because those need a technical conversation first."
+          "answer": "Yes. Our verified storefront carries the same catalogue and is often the faster route if you already buy through Alibaba — trade assurance, messaging and payment are handled there. For project schedules, custom finishes or master key systems, email is usually better because those need a technical conversation first.",
+          "questionEs": "¿Puedo comprar por Alibaba en lugar de por correo?",
+          "answerEs": "Sí. Nuestra tienda verificada tiene el mismo catálogo y suele ser la vía más rápida si usted ya compra por Alibaba — la garantía comercial, la mensajería y el pago se gestionan allí. Para planillas de proyecto, acabados a medida o sistemas de llave maestra, el correo suele funcionar mejor, porque esos casos requieren antes una conversación técnica."
         },
         {
           "question": "How is shipping quoted, and can you ship duty paid?",
-          "answer": "Freight is quoted per shipment, because it depends on the destination, the weight and volume of the order and whether it goes by air or by sea. Both are available: air for samples and urgent replenishment, sea freight for full production orders. On our Alibaba storefront the freight for an order is calculated automatically at checkout for the main destination countries, which is the quickest way to see a landed figure. Duty-paid (DDP) shipping is available on many lanes, including the United States and much of Europe; elsewhere the default is DAP, with duties and clearance in your name. Tell the export team the destination city and the quantity and they will quote the modes side by side."
+          "answer": "Freight is quoted per shipment, because it depends on the destination, the weight and volume of the order and whether it goes by air or by sea. Both are available: air for samples and urgent replenishment, sea freight for full production orders. On our Alibaba storefront the freight for an order is calculated automatically at checkout for the main destination countries, which is the quickest way to see a landed figure. Duty-paid (DDP) shipping is available on many lanes, including the United States and much of Europe; elsewhere the default is DAP, with duties and clearance in your name. Tell the export team the destination city and the quantity and they will quote the modes side by side.",
+          "questionEs": "¿Cómo se cotiza el transporte? ¿Pueden enviar con derechos pagados?",
+          "answerEs": "El flete se cotiza por envío, porque depende del destino, del peso y volumen del pedido y de si va por aire o por mar. Ambas vías están disponibles: aéreo para muestras y reposiciones urgentes, marítimo para pedidos de producción completos. En nuestra tienda de Alibaba el flete se calcula automáticamente en el momento de la compra para los principales países de destino, que es la forma más rápida de ver una cifra puesta en destino. El envío con derechos pagados (DDP) está disponible en muchas rutas, incluidos Estados Unidos y buena parte de Europa; en el resto el criterio por defecto es DAP, con los derechos y el despacho de aduana a su nombre. Indique al equipo de exportación la ciudad de destino y la cantidad y le cotizarán las modalidades en paralelo."
         }
-      ]
+      ],
+      "titleEs": "Pedidos y muestras"
     },
     {
       "title": "Products and specification",
       "items": [
         {
           "question": "Do you provide dimensional drawings?",
-          "answer": "Dimensional drawings are available for most products on request. Send the model number and we will reply with what we hold for it. Where a drawing is not yet published on this site, it is because we have not verified it against the current production tooling — not because it does not exist."
+          "answer": "Dimensional drawings are available for most products on request. Send the model number and we will reply with what we hold for it. Where a drawing is not yet published on this site, it is because we have not verified it against the current production tooling — not because it does not exist.",
+          "questionEs": "¿Facilitan planos acotados?",
+          "answerEs": "Hay planos acotados disponibles para la mayoría de los productos, bajo petición. Envíe el número de modelo y le responderemos con lo que tengamos de él. Si un plano todavía no está publicado en este sitio es porque no lo hemos verificado contra el utillaje de producción actual, no porque no exista."
         },
         {
           "question": "Can you supply master key and construction key systems?",
-          "answer": "Yes. Master key and construction key systems are a long-standing specialism. These are planned per project rather than ordered from a catalogue, so start with the door schedule and we will work back from it."
+          "answer": "Yes. Master key and construction key systems are a long-standing specialism. These are planned per project rather than ordered from a catalogue, so start with the door schedule and we will work back from it.",
+          "questionEs": "¿Suministran sistemas de llave maestra y llave de obra?",
+          "answerEs": "Sí. Los sistemas de llave maestra y de llave de obra son una especialidad de largo recorrido. Se planifican por proyecto en lugar de pedirse de catálogo, así que empiece por la planilla de herrajes y trabajamos hacia atrás desde ahí."
         },
         {
           "question": "Which finishes are available?",
-          "answer": "Available finishes are listed on each product page under Configuration. Where a product page shows no finishes, that information has not yet been verified for that model and we would rather leave it blank than guess."
+          "answer": "Available finishes are listed on each product page under Configuration. Where a product page shows no finishes, that information has not yet been verified for that model and we would rather leave it blank than guess.",
+          "questionEs": "¿Qué acabados hay disponibles?",
+          "answerEs": "Los acabados disponibles figuran en cada ficha de producto, en el apartado de configuración. Cuando una ficha no muestra acabados es porque ese dato aún no se ha verificado para ese modelo, y preferimos dejarlo en blanco antes que suponerlo."
         },
         {
           "question": "Can you produce to our own design or branding (OEM / ODM)?",
-          "answer": "Yes — this is a large part of what the factory does. We manufacture under our customers own brands and to their drawings: your logo on the product and on the packaging, your finish, your packing and your carton markings. If a mould exists for the form you want, we can produce it; if it does not, we tool one. We publish 435 models across 15 product families and the tooling behind them is our own, which is why a change of lever profile, rosette, plate or finish is a normal request here rather than a special project. Send a sample, a drawing or even a photograph of what you need and our engineering team will tell you what is required to make it. Tooling cost, sampling time and the minimum that makes a custom run worthwhile depend entirely on the part, so they are quoted per project — ask, and you will get real numbers rather than a range."
+          "answer": "Yes — this is a large part of what the factory does. We manufacture under our customers own brands and to their drawings: your logo on the product and on the packaging, your finish, your packing and your carton markings. If a mould exists for the form you want, we can produce it; if it does not, we tool one. We publish 435 models across 15 product families and the tooling behind them is our own, which is why a change of lever profile, rosette, plate or finish is a normal request here rather than a special project. Send a sample, a drawing or even a photograph of what you need and our engineering team will tell you what is required to make it. Tooling cost, sampling time and the minimum that makes a custom run worthwhile depend entirely on the part, so they are quoted per project — ask, and you will get real numbers rather than a range.",
+          "questionEs": "¿Pueden fabricar con nuestro diseño o nuestra marca (OEM / ODM)?",
+          "answerEs": "Sí — es una parte importante de lo que hace la fábrica. Fabricamos bajo la marca de nuestros clientes y según sus planos: su logotipo en el producto y en el embalaje, su acabado, su empaque y su marcaje de cajas. Si existe un molde para la forma que usted quiere, podemos producirla; si no existe, lo fabricamos. Publicamos 435 modelos en 15 familias de producto y el utillaje que hay detrás es propio, que es la razón por la que cambiar el perfil de una manilla, una roseta, una placa o un acabado aquí es una petición normal y no un proyecto especial. Envíe una muestra, un plano o incluso una fotografía de lo que necesita y nuestro equipo de ingeniería le dirá qué hace falta para fabricarlo. El coste del molde, el plazo de muestreo y el mínimo que hace rentable una serie a medida dependen enteramente de la pieza, así que se cotizan por proyecto — pregunte y obtendrá cifras reales, no un rango."
         }
-      ]
+      ],
+      "titleEs": "Producto y especificación"
     },
     {
       "title": "Standards and certification",
       "items": [
         {
           "question": "Is Canton Hyland ISO 9001 certified?",
-          "answer": "Yes. The company has held ISO 9001 certification since 2002."
+          "answer": "Yes. The company has held ISO 9001 certification since 2002.",
+          "questionEs": "¿Canton Hyland tiene la certificación ISO 9001?",
+          "answerEs": "Sí. La empresa mantiene la certificación ISO 9001 desde 2002."
         },
         {
           "question": "Are your panic exit devices EN 1125 certified?",
-          "answer": "Test reports exist for specific models rather than for the range as a whole, and we do not extend a report from one model to a sibling product. The reports are issued for the exclusive use of the party that commissioned them and may only be passed on in full, so we send them on request against a named model rather than publishing extracts. Tell us the model you intend to specify and we will send the report that covers it, or say plainly that there is not one."
+          "answer": "Test reports exist for specific models rather than for the range as a whole, and we do not extend a report from one model to a sibling product. The reports are issued for the exclusive use of the party that commissioned them and may only be passed on in full, so we send them on request against a named model rather than publishing extracts. Tell us the model you intend to specify and we will send the report that covers it, or say plainly that there is not one.",
+          "questionEs": "¿Sus barras antipánico están certificadas según EN 1125?",
+          "answerEs": "Los informes de ensayo existen para modelos concretos, no para la gama en conjunto, y no extendemos el informe de un modelo a un producto hermano. Los informes se emiten para uso exclusivo de quien los encargó y solo pueden cederse íntegros, por lo que los enviamos bajo petición contra un modelo nombrado en lugar de publicar extractos. Díganos el modelo que piensa especificar y le enviaremos el informe que lo cubre, o le diremos claramente que no lo hay."
         },
         {
           "question": "Can you supply test reports and certificates for a tender?",
-          "answer": "Yes. Tell us the models on the schedule and we will send the reports that name them, with their issue dates and scope."
+          "answer": "Yes. Tell us the models on the schedule and we will send the reports that name them, with their issue dates and scope.",
+          "questionEs": "¿Pueden facilitar informes de ensayo y certificados para una licitación?",
+          "answerEs": "Sí. Díganos los modelos que figuran en la planilla y le enviaremos los informes que los nombran, con sus fechas de emisión y su alcance."
         }
-      ]
+      ],
+      "titleEs": "Normas y certificación"
     },
     {
       "title": "The company",
       "items": [
         {
           "question": "Where are your products manufactured?",
-          "answer": "In Guangdong, China. Canton Hyland Hardware (Group) Co., Ltd. has manufactured commercial and residential door hardware since 1998."
+          "answer": "In Guangdong, China. Canton Hyland Hardware (Group) Co., Ltd. has manufactured commercial and residential door hardware since 1998.",
+          "questionEs": "¿Dónde se fabrican sus productos?",
+          "answerEs": "En Guangdong, China. Canton Hyland Hardware (Group) Co., Ltd. fabrica herrajes de puerta comerciales y residenciales desde 1998."
         },
         {
           "question": "Do you export worldwide?",
-          "answer": "Yes. Our panic devices, lock cases, lever sets and floor springs are specified in commercial, institutional and residential buildings across more than thirty export markets. Tell us the destination country and our export team will confirm documentation and shipping for it."
+          "answer": "Yes. Our panic devices, lock cases, lever sets and floor springs are specified in commercial, institutional and residential buildings across more than thirty export markets. Tell us the destination country and our export team will confirm documentation and shipping for it.",
+          "questionEs": "¿Exportan a todo el mundo?",
+          "answerEs": "Sí. Nuestras barras antipánico, cerraduras de embutir, juegos de manilla y cierrapuertas de suelo están especificados en edificios comerciales, institucionales y residenciales en más de treinta mercados de exportación. Díganos el país de destino y el equipo de exportación le confirmará la documentación y el transporte para ese mercado."
         }
-      ]
+      ],
+      "titleEs": "La empresa"
     }
   ]
 }
