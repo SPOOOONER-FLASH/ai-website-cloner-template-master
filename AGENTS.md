@@ -242,17 +242,69 @@ A command that can break the site is preceded by its check (`nginx -t` before
 fails. "Reload nginx" is not an instruction; it is an assumption that the reader already
 knows what you know.
 
-### Cloudflare purge is client-only
+### Never generate an imagined metal product. Ever.
 
-- Agents must not open the Cloudflare dashboard to click `Purge Everything`, automate the
-  dashboard, obtain or use an API token, or call the zone purge endpoint. The client performs
-  the zone-wide purge manually.
-- Never imply that a zone-wide purge happened without direct evidence. A dashboard login page,
-  a timed-out control session, an absent API token, a fresh edge cache key, and a successful
-  origin deployment are five different facts.
-- The release builder still owns `npm run deploy:prep`, the complete tracked `out/` commit,
-  push, server/origin proof and public edge verification. Finish the release note with one
-  short reminder for the client to purge; do not spend turns troubleshooting Cloudflare purge.
+Client instruction, 2026-09-04, after the client's own principal rejected a set of
+AI-generated product images on sight:
+
+> 金属的孔位不对，螺丝不对，安装不上去，都不能用。
+> AI 可以把现有的图片清晰化、白化，但是它不能想象产品。
+
+**This is not a quality bar that better prompting clears. It is a category rule.**
+
+A garment or a shoe tolerates invented detail — a buyer reads it as styling. **Door
+hardware does not.** Hole positions, thread pitch, spindle squares, backset, fixing
+centres and mounting faces are all fixed before the mould is cut. A generated lever with
+plausible-looking fixing holes is a part that **cannot be installed**, and the people who
+buy this have spent years with these objects in their hands. They identify the model,
+then they see it is deformed, and the conclusion they draw is not "nice render" — it is
+that this supplier does not know their own product. Getting it wrong costs a buyer a
+whole container, because metal cannot be adjusted after the fact.
+
+That is also why this matters more here than the same mistake would on a fashion site:
+**the photograph is the specification's first draft.**
+
+#### What is forbidden
+
+- Generating a product that does not exist, in any style, for any purpose — hero,
+  editorial, category art, social, a mock-up, "just for the preview".
+- Adding, removing or restyling any component of a real product: swapping a hinge for a
+  cylinder, adding a decorative escutcheon, changing a lever profile, inventing screws.
+- Assembling a "set" the factory does not sell as a set, or mixing finishes within one
+  image. If the customer orders black, every part in the frame is black.
+- Putting a heavy industrial product beside our light hardware. We are a 小五金 factory;
+  a frame that mixes the two reads as a catalogue somebody assembled from stock images.
+
+#### What is allowed, and is the actual job
+
+- **Cleaning up a real photograph**: cutting out, white or grey field, exposure,
+  straightening, perspective correction, dust and reflection removal, consistent shadow.
+- **Composing real photographs** into an overview, at true relative scale, on one field.
+- **Correcting the client's own exhibition photographs** — angle, crop, keystone,
+  colour. The client's principal supplies these; the products and the stand in them are
+  real, and only the photography needs work.
+
+#### The test before any image ships
+
+Ask: *could a buyer take this image to a workshop and order the part in it?* If the
+answer needs a caveat, the image does not ship. When in doubt, publish the client's
+imperfect real photograph rather than a beautiful invented one — see the honesty rule in
+`src/components/site/JsonLd.tsx`, which is the same principle applied to markup.
+
+### Cloudflare purge: deploy, say one line, stop
+
+Client instruction, 2026-09-04: "purge 一会我来就行，写进纪律你们 agent 不要动，
+每次结尾你们确保 deploy 了 out/ 就行，然后写一句记得 purge，其他的别浪费 token 了."
+
+So: build `out/`, commit it, push it, and end with a single line reminding the client to
+purge. Nothing else.
+
+Do not open the Cloudflare dashboard, automate it, seek an API token, call the zone purge
+endpoint, or investigate why an edge response looks stale. Do not report edge-cache
+状态 as evidence of anything. **Never imply a purge happened.** The five facts that get
+confused with each other — a dashboard login page, a timed-out control session, an absent
+API token, a fresh edge cache key, and a successful origin deployment — are five
+different things, and none of them is a purge.
 
 ### Who owns what
 
