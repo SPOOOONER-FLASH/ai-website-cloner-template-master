@@ -12,7 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| _（空 = 没人占用批量写入）_ | | | |
+| Codex | `src/app/(en)/products/`, `src/app/es/products/`, `src/components/site/`, `src/data/home*`, 三篇最新 `content/news/`, `public/images/editorial/hyde-real-*`, `scripts/compose-hyde-real-atlas.mjs`, `docs/superpowers/`, `out/` | Products A+B+C+D、Hamburger D + 隐藏 A；实拍替换与完整发布 | 2026-09-04 10:15 PT |
 
 > 2026-08-31 claude 已交还发布接力棒：941 页已构建、提交并推送（6b66bfdd）。
 > ⚠ 那次构建里含 Codex 尚未提交的首页改动（home.ts / home-es.ts /

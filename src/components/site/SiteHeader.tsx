@@ -92,6 +92,8 @@ const buyShelfLinks = {
 export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const pathname = usePathname();
   const headerRef = useRef<HTMLDivElement>(null);
+  const menuTriggerRef = useRef<HTMLButtonElement>(null);
+  const menuOpenerRef = useRef<HTMLButtonElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [openShelf, setOpenShelf] = useState<ShelfName | null>(null);
@@ -108,16 +110,20 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
   useEffect(() => {
     if (!menuOpen) return;
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMenuOpen(false);
-    };
-    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
-      document.removeEventListener("keydown", onKeyDown);
-      document.body.style.overflow = "";
+      document.body.style.overflow = previousOverflow;
     };
   }, [menuOpen]);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+    requestAnimationFrame(() => {
+      if (menuOpenerRef.current?.isConnected) menuOpenerRef.current.focus();
+      else menuTriggerRef.current?.focus();
+    });
+  };
 
   useEffect(() => {
     if (!openShelf) return;
@@ -299,8 +305,11 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 <button
                   type="button"
                   aria-label={isSpanish ? "Abrir menú" : "Open menu"}
+                  ref={menuTriggerRef}
+                  aria-controls="site-menu-dialog"
                   aria-expanded={menuOpen}
-                  onClick={() => {
+                  onClick={(event) => {
+                    menuOpenerRef.current = event.currentTarget;
                     setOpenShelf(null);
                     setMenuOpen(true);
                   }}
@@ -375,8 +384,8 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               }
 
               /*
-                Opens the drawer rather than linking out. The drawer leads with the buying
-                block, so this reaches Alibaba, the price list, Contact and the mailbox in
+                Opens the sourcing drawer rather than linking out. This reaches
+                Alibaba, the price list, Contact and the mailbox in
                 one more tap — sending it straight to the storefront would drop the buyer
                 who wants a quote by email, and email is what this site is built to produce.
               */
@@ -386,7 +395,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     key={link.href}
                     type="button"
                     aria-expanded={menuOpen}
-                    onClick={() => setMenuOpen(true)}
+                    onClick={(event) => {
+                      menuOpenerRef.current = event.currentTarget;
+                      setMenuOpen(true);
+                    }}
                     className="nav-rail-cta"
                   >
                     {isSpanish ? "Comprar ahora" : "Buy it now"}
@@ -586,7 +598,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           isSpanish={isSpanish}
           currentPath={pathname}
           categories={categories}
-          onClose={() => setMenuOpen(false)}
+          onClose={closeMenu}
         />
       ) : null}
       <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} locale={locale} />

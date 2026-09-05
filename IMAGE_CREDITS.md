@@ -1,5 +1,22 @@
 # Image Credits and Provenance
 
+## 2026-09-05: real photographs for Products and navigation
+
+The `hyde-real-product-atlas.webp`, `hyde-real-{lever,hinge,pull,control,lock,panic,cylinder}-plate.webp`
+and `hyde-real-application-detail.webp` assets are deterministic compositions of original
+client/legacy catalogue photographs. `scripts/compose-hyde-real-atlas.mjs` records each
+complete-object crop, and per-file JSON sidecars record SHA-256 source hashes. Only crop,
+uniform resize, white background layout and WebP conversion are performed. No generative
+product changes or imagined components are allowed. The atlas shows independent catalogue
+references; its layout does not establish an assembled set or dimensional scale.
+
+These replace six generated homepage editorial images, imagery on the redesigned Products
+routes/menu backup, and the three latest News cards. Older generated assets remain in the
+archive; prior statements permitting imagined metal products are superseded by AGENTS.md.
+The client's supplied trade-fair originals were not available at their former temporary
+paths during this release. The application chapter uses the source-pack storefront push/pull
+lock photograph; it is not described as an installed door or a factory/exhibition record.
+
 This register separates client-supplied factual material, project-created or processed
 assets, and AI-generated editorial imagery. Provenance, processing, and permitted use are
 recorded by source set; no blanket ownership or processing statement applies to every file

@@ -6,6 +6,7 @@ import test from "node:test";
 const componentRoot = join(process.cwd(), "src", "components", "site");
 const header = readFileSync(join(componentRoot, "SiteHeader.tsx"), "utf8");
 const drawer = readFileSync(join(componentRoot, "SiteMenuDrawer.tsx"), "utf8");
+const menuConfig = readFileSync(join(componentRoot, "menu-experience.ts"), "utf8");
 const footer = readFileSync(join(componentRoot, "SiteFooter.tsx"), "utf8");
 const css = readFileSync(join(process.cwd(), "src", "app", "globals.css"), "utf8");
 const navigation = JSON.parse(
@@ -45,7 +46,7 @@ test("Alibaba is the only permanently emphasized hard-shadow shelf action", () =
 
 test("mobile drawer mirrors the expanded company and buying routes", () => {
   for (const route of ["/news/", "/services/", "/events/", "/certifications/"]) {
-    assert.match(drawer, new RegExp(route.replaceAll("/", "\\/")));
+    assert.match(menuConfig, new RegExp(route.replaceAll("/", "\\/")));
   }
   assert.match(drawer, /Buy it now/);
   assert.match(drawer, /Comprar ahora/);

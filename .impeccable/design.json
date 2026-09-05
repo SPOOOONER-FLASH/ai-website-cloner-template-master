@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "title": "HYDE Web Design System",
+  "extensions": {
+    "motion": [
+      { "name": "motion-fast", "value": "180ms", "purpose": "Small interface state transitions." },
+      { "name": "motion-medium", "value": "260ms", "purpose": "Larger interface transitions." },
+      { "name": "motion-slow", "value": "560ms", "purpose": "Authored hero transitions." },
+      { "name": "motion-ease", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Decelerating surface motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "46.5rem" },
+      { "name": "md", "value": "51.25rem" },
+      { "name": "lg", "value": "64.5rem" },
+      { "name": "xl", "value": "86rem" }
+    ]
+  },
+  "narrative": {
+    "overview": "Restrained industrial-editorial system with actual catalogue photography. Product geometry, components and finishes must remain factual.",
+    "rules": [
+      { "name": "Evidence", "body": "Only actual client/catalogue metal products. Atlas layout establishes neither measured dimensions nor a sold kit.", "section": "imagery" },
+      { "name": "Menu variants", "body": "D is live; A is compiled backup. Never duplicate both in the accessibility tree.", "section": "components" }
+    ]
+  }
+}

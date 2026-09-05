@@ -62,8 +62,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-source-by-range-2026.webp",
-        label: "Caja de muestras de herrajes con manilla, bisagra y cerradura de embutir",
+        src: "/images/editorial/hyde-real-lever-plate.webp",
+        label: "Fotografía original de una manija de acero inoxidable",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
@@ -72,8 +72,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-source-by-project-2026.webp",
-        label: "Muestra de puerta para especificación con cerradura, bisagra, manilla, acabados y cuadro en blanco",
+        src: "/images/editorial/hyde-real-application-detail.webp",
+        label: "Fotografía original de un mecanismo de cerradura de empuje y tracción",
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
@@ -131,8 +131,8 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-editorial-product-range-10.webp",
-    label: "Atlas ilustrativo de nueve familias coordinadas de herrajes para puertas",
+    src: "/images/editorial/hyde-real-product-atlas.webp",
+    label: "Fotografías reales del catálogo de nueve familias de herrajes para puertas",
   },
   title: "Diseñado para",
   body: "Nueve familias, un solo cuadro coordinado",
@@ -144,8 +144,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-materials-engineering-2026.webp",
-    label: "Muestras de ingeniería de herrajes con cerradura, bisagra, cierrapuertas, manilla, tornillería y acabados",
+    src: "/images/editorial/hyde-real-cylinder-plate.webp",
+    label: "Fotografía original de un cilindro de cerradura",
   },
   title: "Materiales + ingeniería",
   body: "La coordinación de acabados, la planificación de llaves maestras y la documentación de exportación apoyan cuadros de herrajes comerciales y residenciales en mercados internacionales.",
@@ -165,8 +165,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-engineering-contact-2026.webp",
-        label: "Mesa de muestras con cerradura, bisagra, manilla, acabados y cuadro de proyecto en blanco",
+        src: "/images/editorial/hyde-real-control-plate.webp",
+        label: "Fotografía original de herrajes de control de puertas",
       },
       title: "Envíenos sus requisitos de herrajes",
       subtitle: "Asignaremos su proyecto al especialista de exportación adecuado",
@@ -175,8 +175,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-installation-faq-2026.webp",
-        label: "Cerradura de embutir, bisagra y cierrapuertas organizados para resolver dudas de instalación",
+        src: "/images/editorial/hyde-real-hinge-plate.webp",
+        label: "Fotografía original de bisagras de acero inoxidable",
       },
       title: "Especifique con confianza",
       subtitle: "Respuestas sobre instalación, acabados, normas y plazos",

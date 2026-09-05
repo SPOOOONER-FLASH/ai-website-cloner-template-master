@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Complete product cropped from its first-party source and uniformly resized on white.",
+  "sources": [
+    {
+      "source": "public/images/products/9001-stainless-steel-handle.webp",
+      "sha256": "fa61d03daad7aae14f996d40078c95dc565bcc5b700e7ece19ce759c4a2a3774"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}

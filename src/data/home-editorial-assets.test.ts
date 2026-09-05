@@ -15,12 +15,12 @@ const editorialConfig = JSON.parse(
 ) as Record<string, { sourceWidth: number; variants: number[] }>;
 
 const expectedAssets = [
-  "/images/editorial/hyde-source-by-range-2026.webp",
-  "/images/editorial/hyde-source-by-project-2026.webp",
-  "/images/editorial/hyde-editorial-product-range-10.webp",
-  "/images/editorial/hyde-materials-engineering-2026.webp",
-  "/images/editorial/hyde-engineering-contact-2026.webp",
-  "/images/editorial/hyde-installation-faq-2026.webp",
+  "/images/editorial/hyde-real-lever-plate.webp",
+  "/images/editorial/hyde-real-application-detail.webp",
+  "/images/editorial/hyde-real-product-atlas.webp",
+  "/images/editorial/hyde-real-cylinder-plate.webp",
+  "/images/editorial/hyde-real-control-plate.webp",
+  "/images/editorial/hyde-real-hinge-plate.webp",
 ] as const;
 
 const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((kind) =>
@@ -58,7 +58,10 @@ test("every new homepage source has responsive candidates and provenance", () =>
     const config = editorialConfig[asset];
     assert.ok(config, `missing responsive config for ${asset}`);
     assert.ok(config.sourceWidth > Math.max(...config.variants));
-    assert.match(credits, new RegExp(asset.slice(asset.lastIndexOf("/") + 1)));
+    assert.match(credits, /real photographs/);
+    const provenance = JSON.parse(readFileSync(join(repositoryRoot, "public", `${asset}.json`), "utf8"));
+    assert.equal(provenance.kind, "real-photograph-composition");
+    assert.ok(provenance.sources.length > 0);
   }
 });
 
@@ -67,7 +70,7 @@ test("Spanish FAQ card falls back to the existing English FAQ route", () => {
   assert.doesNotMatch(homeEs, /href: "\/es\/faq"/);
 });
 
-test("the approved product-range and exhibition-wall library ships 20 sourced responsive images", () => {
+test("the historical generated library remains archived with provenance, not approved for new product use", () => {
   assert.equal(approvedEditorialLibrary.length, 20);
   assert.equal(new Set(approvedEditorialLibrary).size, 20);
 

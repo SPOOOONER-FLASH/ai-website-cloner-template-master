@@ -29,8 +29,9 @@ requesting a quotation.
 - Product Finder filters may progressively enhance navigation and must remain shareable.
 - Never invent compatibility, dimensions, certification scope, price, MOQ, lead time,
   payment terms, customer names, project claims, or availability.
-- Exact SKU pages use verified first-party product records and images. Generated imagery
-  is editorial only and must never be presented as exact model evidence.
+- Every metal product image uses real client/catalogue photography. Never generate
+  imagined hardware, even for editorial concepts. Cleanup and composition must preserve
+  product geometry, components and documented finishes; never imply an unverified sold set.
 - English and Spanish information architecture must remain aligned.
 - The shared worktree and committed `out/` release process follow `AGENTS.md`.
 
@@ -46,7 +47,8 @@ layouts, brand marks, claims, or implied affiliation.
 - Current catalogue surfaces: `src/app/(en)/products/`, `src/app/es/products/`.
 - Finder, comparison, configurator, downloads, contact, and certification routes.
 - First-party product photography under `public/images/products/`.
-- Conceptual editorial imagery under `public/images/editorial/`.
+- Real-photo compositions and provenance sidecars under `public/images/editorial/hyde-real-*`.
+  Older generated concepts there are archives, not permission for product imagery.
 - Current design tokens and interaction rules in `src/app/globals.css`.
 
 ## Product Principles
@@ -54,6 +56,7 @@ layouts, brand marks, claims, or implied affiliation.
 2. Give each visual one job: range, form, installation, technical structure, or conversion.
 3. Use a repeatable photography grammar so the catalogue reads as one product family.
 4. Reveal complexity progressively without hiding the direct route for expert buyers.
-5. Treat generated visuals as clearly described editorial concepts, not product proof.
+5. Treat product photography as evidence: only real parts and actual client exhibition
+   photographs; no imagined products, invented installation or unsupported scale claims.
 6. Every prominent path should end in an exact category, model, comparison, download, or
    contact action instead of decorative browsing.

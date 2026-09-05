@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { CategoryCard } from "@/components/site/CategoryCard";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
+import { ProductsEditorialOverview } from "@/components/site/ProductsEditorialOverview";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory, products } from "@/data/products";
@@ -27,6 +26,9 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ProductosPage() {
   const categories = getTopLevelCategories();
+  const categoryCounts = Object.fromEntries(
+    categories.map((category) => [category.slug, getProductsByCategory(category.slug).length]),
+  );
 
   return (
     <>
@@ -43,51 +45,12 @@ export default function ProductosPage() {
         )}
       />
 
-      <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
-        <div className="layout">
-          <div className="col-content grid w-full grid-cols gap-x gap-y-24">
-            <div className="col-span-full mb-24">
-              <Breadcrumbs items={[{ label: "Inicio", href: "/es/" }, { label: "Productos" }]} />
-            </div>
-            <div className="col-span-full xl:col-span-10">
-              <p className="text-c1 text-ink-secondary">Colección Canton</p>
-              <h1 className="mt-8 text-h1 text-ink">
-                Cerraduras y herrajes arquitectónicos para puertas
-              </h1>
-            </div>
-            <div className="col-span-full xl:col-span-7 xl:col-start-12">
-              <h2 className="text-h3 text-ink">
-                Un solo fabricante para todo el herraje de una puerta.
-              </h2>
-              <p className="mt-24 text-c1 text-ink-secondary">
-                Canton Hyland fabrica cerraduras y herrajes para proyectos comerciales y
-                residenciales, con desarrollo OEM para formas y mecanismos nuevos.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <section className="layout mt-96 lg:mt-144" aria-labelledby="categorias">
-          <div className="col-content grid w-full grid-cols gap-x gap-y-42">
-            <div className="col-span-full flex items-end justify-between gap-24 border-b border-line pb-16">
-              <h2 id="categorias" className="text-h3 text-ink">
-                Categorías de producto
-              </h2>
-              <p className="text-c2 text-ink-secondary">
-                {categories.length} categorías · {products.length} fichas verificadas
-              </p>
-            </div>
-            {categories.map((category, index) => (
-              <CategoryCard
-                key={category.slug}
-                category={category}
-                index={index}
-                productCount={getProductsByCategory(category.slug).length}
-                locale="es"
-              />
-            ))}
-          </div>
-        </section>
+      <main className="isolate mt-32 flex-grow justify-self-start lg:mt-64">
+        <ProductsEditorialOverview
+          locale="es"
+          totalProducts={products.length}
+          categoryCounts={categoryCounts}
+        />
 
         {/*
           Mirrors the English catalogue index. The comparison pages had exactly one
@@ -96,7 +59,7 @@ export default function ProductosPage() {
           the page a buyer lands on fixes that and gives the reader somewhere obvious to
           go when they are choosing between models rather than browsing.
         */}
-        <section className="layout mt-96 lg:mt-136" aria-labelledby="comparar">
+        <section className="layout mt-128 lg:mt-176" aria-labelledby="comparar">
           <div className="col-content grid w-full grid-cols gap-x gap-y-24">
             <div className="col-span-full flex items-end justify-between gap-24 border-b border-line pb-16">
               <h2 id="comparar" className="text-h3 text-ink">

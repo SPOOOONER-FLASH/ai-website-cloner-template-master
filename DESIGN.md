@@ -31,14 +31,17 @@ design literacy, not a lifestyle shop or a software dashboard.
 ## Photography grammar
 
 - Product-atlas images share a cool neutral field, consistent camera height, one soft
-  directional light, restrained contact shadows, complete silhouettes, and real-world
-  scale tiers. Long pull handles anchor; lever handles establish rhythm; small parts act
+  directional light, restrained contact shadows, complete silhouettes, and clear visual
+  scale tiers without implying dimensional scale. Long pull handles anchor; lever handles establish rhythm; small parts act
   as punctuation. Objects do not overlap.
-- Exhibition-wall images use plausible modular display panels filled with varied hardware
-  families. Handles face the viewer; mechanisms are installable; hinges vary by size and
-  construction; panic devices and closers remain in believable scale.
-- Exact product pages use first-party photography. Generated images are labeled and
-  described as representative editorial compositions.
+- Exhibition-wall images must originate from actual client photographs. Only crop,
+  perspective, exposure and colour correction are permitted, not invented displays.
+- All metal product imagery uses real catalogue/client photographs with original geometry,
+  components and finishes preserved. Generated hardware is forbidden even for editorial
+  concepts. Compositions do not establish a sold set or dimensional scale.
+- Current Products application imagery is an actual source-pack push/pull mechanism
+  photograph, not a claim of a completed installation or exhibition. The supplied exhibition
+  temporary paths are unavailable; retain this honest fallback until originals are recovered.
 
 ## Components and interaction
 
@@ -53,6 +56,38 @@ design literacy, not a lifestyle shop or a software dashboard.
 
 ## Content hierarchy
 
-Range overview answers what HYDE makes. Family views explain form and scope. Installed
-views explain application. Technical views explain structure. Downloads and contact close
+Range overview answers what HYDE makes. Family views explain form and scope. Application
+photographs explain relevant mechanisms; installation claims require an actual installation
+photograph. Technical views explain structure. Downloads and contact close
 the specification or sourcing task. No single photograph is asked to do all five jobs.
+
+## Layout
+
+Products begins with an asymmetric introduction and a contained 18:13 real-photo atlas,
+capped at 64vh. Its caption and catalogue count remain HTML. The nine-family directory
+has one column below 820px, two from 820px and three from 1376px. The engineering series
+uses two columns below 1032px and four above, with contained 3:2 photographs. Application
+and technical chapters stack on small screens and alternate image/text from 1376px.
+Downloads and contact end the editorial sequence; comparisons and the full index remain.
+
+The independently scrolling menu is calc(100% - 1.2rem) wide, 90vw from 744px and 82vw
+from 1376px. RFQ routes sit beside supporting navigation from 1032px. Below 1376px,
+a native disclosure exposes the complete product families and nested category controls.
+
+## Components
+
+### Products overview
+
+Use secondary ink for readable photograph captions. Family alternatives have no decorative
+sequence numbers; the range/application/technical photo chapters retain meaningful order.
+Photographs preserve complete objects through contained framing; application imagery uses
+the actual source-pack push/pull mechanism, without an invented installation claim.
+
+### Site menu
+
+MENU_VARIANT selects rfq-concierge (D): Product Finder, Configurator and Contact first,
+then Explore/Evidence, export email, buying and social links. specify-source-company (A)
+is a compiled alternative; its two photographic cards appear only from 1376px. Never
+render both variants and hide one with CSS. Focus starts on Close; Tab stays in the dialog;
+Escape, backdrop and Close dismiss it and restore the actual opener. Preserve the ink
+edge and unblurred offset plane. Access must not depend on animation.

@@ -55,20 +55,15 @@ test("Product Finder carries weight in the rail", () => {
   assert.match(css, /\.nav-rail-item-emphasis\s*\{\s*font-weight:\s*var\(--font-weight-semibold\);\s*\}/);
 });
 
-test("the drawer opens on the buying block, not on navigation", () => {
-  const buy = drawer.indexOf("{t.buy}");
-  const catalogue = drawer.indexOf("{t.catalogue}");
-  const company = drawer.indexOf("{t.company}");
+test("the drawer opens on the approved buyer question before utility navigation", () => {
+  const question = drawer.indexOf("experience.title");
+  const categories = drawer.indexOf("categories.map");
+  const storefront = drawer.indexOf("alibaba-hard-cta");
 
-  assert.ok(buy > 0 && catalogue > 0 && company > 0, "all three drawer sections render");
-  assert.ok(buy < catalogue, "Buy it now precedes the catalogue");
-  assert.ok(catalogue < company, "the catalogue precedes the background pages");
-
-  // The storefront is the first thing under the first heading.
-  assert.ok(
-    drawer.indexOf("alibaba-hard-cta") < catalogue,
-    "the Alibaba call to action sits inside the buying block",
-  );
+  assert.ok(question > 0, "the selected menu experience renders its question first");
+  assert.ok(categories > question, "full mobile category access follows the buyer paths");
+  assert.ok(storefront > question, "the Alibaba utility action does not outrank the RFQ paths");
+  assert.match(drawer, /experience\.primary\.map/);
 });
 
 test("the drawer lists the catalogue itself, not just a Products hub link", () => {

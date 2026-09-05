@@ -6,7 +6,7 @@ test("certification registry is a public route linked from the site drawer", () 
   const pagePath = "src/app/(en)/certifications/page.tsx";
   assert.equal(existsSync(pagePath), true);
 
-  const menu = readFileSync("src/components/site/SiteMenuDrawer.tsx", "utf8");
+  const menu = readFileSync("src/components/site/menu-experience.ts", "utf8");
   const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
   assert.match(menu, /Certificates[^\n]+\/certifications\//);
   assert.match(sitemap, /entry\("\/certifications"/);

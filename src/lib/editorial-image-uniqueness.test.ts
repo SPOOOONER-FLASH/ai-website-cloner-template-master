@@ -53,9 +53,9 @@ test("the three newest News cards use distinct editorial images matched to their
   ];
 
   assert.deepEqual(latestNewsSources, [
-    "/images/editorial/hyde-editorial-exhibition-wall-02.webp",
-    "/images/editorial/hyde-editorial-product-range-02.webp",
-    "/images/editorial/hyde-editorial-product-range-03.webp",
+    "/images/editorial/hyde-real-panic-plate.webp",
+    "/images/editorial/hyde-real-lock-plate.webp",
+    "/images/editorial/hyde-real-application-detail.webp",
   ]);
   assert.equal(new Set(latestNewsSources).size, 3);
 

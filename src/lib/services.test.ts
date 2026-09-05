@@ -25,7 +25,7 @@ test("the service hub is crawlable and reachable without crowding the header", (
     person, and must not be pushed into the top nav — so it now checks the two routes
     that actually carry it: the site menu drawer, and the desktop Company shelf.
   */
-  const drawer = readFileSync("src/components/site/SiteMenuDrawer.tsx", "utf8");
+  const drawer = readFileSync("src/components/site/menu-experience.ts", "utf8");
   const header = readFileSync("src/components/site/SiteHeader.tsx", "utf8");
   assert.match(drawer, /href: "\/services\/"/);
   assert.match(header, /href: "\/services"/);

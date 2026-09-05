@@ -1,5 +1,16 @@
 # HYDE products, menu, and editorial-image direction
 
+## Production approval and superseding photography rule — 2026-09-05
+
+The client selected Products A+B+C+D and Hamburger D, with A retained as a code-level
+backup. Production implementation and full static deployment are authorized; the older
+preview-only boundary below is historical. Brand line: Engineered by Canton Hyland.
+
+The newer AGENTS.md ban on imagined metal products overrides all earlier concept-image
+permissions in this document. Only original product/exhibition photographs and honest
+cleanup/composition are permitted. Existing generated concepts are an archive, not approved
+product evidence. See the production plan and current release handoff for actual assets.
+
 ## Decision already made
 
 Use Scheme A for the approved image replacement: one neutral product-family atlas and one

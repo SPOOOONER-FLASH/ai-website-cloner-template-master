@@ -75,8 +75,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-source-by-range-2026.webp",
-        label: "Unbranded export sample box with lever handle, hinge and mortise lock case",
+        src: "/images/editorial/hyde-real-lever-plate.webp",
+        label: "Original catalogue photograph of a stainless-steel lever handle",
       },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
@@ -85,8 +85,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-source-by-project-2026.webp",
-        label: "Door hardware specification mockup with lock, hinge, lever, finish samples and blank schedule",
+        src: "/images/editorial/hyde-real-application-detail.webp",
+        label: "Original catalogue photograph of push/pull door lock hardware",
       },
       title: "For specifiers",
       subtitle: "Build a hardware schedule with our export engineers",
@@ -145,8 +145,8 @@ export const hero3: HeroModuleContent = {
   variant: "side",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-editorial-product-range-10.webp",
-    label: "Illustrative product atlas presenting nine coordinated door-hardware families",
+    src: "/images/editorial/hyde-real-product-atlas.webp",
+    label: "Real catalogue photographs presenting nine door-hardware families",
   },
   title: "Designed for",
   body: "Nine hardware families, one coordinated schedule",
@@ -158,8 +158,8 @@ export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
     ratio: "3 / 2",
-    src: "/images/editorial/hyde-materials-engineering-2026.webp",
-    label: "Door-hardware engineering samples with lock case, hinge, closer, lever, fasteners and finish coupons",
+    src: "/images/editorial/hyde-real-cylinder-plate.webp",
+    label: "Original catalogue photograph of a lock cylinder",
   },
   title: "Materials + Engineering",
   body: "Finish coordination, master-key planning and export documentation support commercial and residential hardware schedules across international markets.",
@@ -180,8 +180,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-engineering-contact-2026.webp",
-        label: "Door-hardware sample workbench with lock case, hinge, lever, finish chips and blank project schedule",
+        src: "/images/editorial/hyde-real-control-plate.webp",
+        label: "Original catalogue photograph of door-control hardware",
       },
       title: "Send us your hardware requirements",
       subtitle: "We'll match your project with the right export engineer",
@@ -190,8 +190,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-installation-faq-2026.webp",
-        label: "Mortise lock, butt hinge and door closer components arranged for installation support",
+        src: "/images/editorial/hyde-real-hinge-plate.webp",
+        label: "Original catalogue photograph of stainless-steel hinges",
       },
       title: "Specify with confidence",
       subtitle: "Answers on installation, finishes, standards and lead times",
