@@ -124,13 +124,29 @@ for (const [path, retiredAt] of Object.entries(manifest)) {
   if (!restored.includes(path)) {
     pruned.push(path);
     delete manifest[path];
-    if (!check) {
-      try {
-        execFileSync("git", ["rm", "-q", "--ignore-unmatch", "--", path]);
-      } catch {
-        /* Untracked or already gone; nothing to do. */
-      }
-    }
+  }
+}
+
+/*
+  ONE `git rm`, NOT ONE PER FILE.
+
+  The first version called `git rm` inside the loop. Each call takes and releases
+  .git/index.lock, and on 2026-09-05 that left a stale zero-byte lock behind twice in one
+  session — both times immediately after `npm run deploy:prep`, both times blocking the
+  very next `git add` with "Another git process seems to be running". Nothing was running;
+  the lock was simply never cleaned up after the last call in the loop.
+
+  A stale lock in a shared checkout is worse than slow: the other agent cannot tell it
+  from a live commit in progress, and deleting someone else's live lock destroys their
+  work. So the fix is to hold the lock exactly once. It is also much faster.
+*/
+if (!check && pruned.length) {
+  try {
+    execFileSync("git", ["rm", "-q", "--ignore-unmatch", "--", ...pruned], {
+      maxBuffer: 64 * 1024 * 1024,
+    });
+  } catch {
+    /* Untracked or already gone; nothing to do. */
   }
 }
 
