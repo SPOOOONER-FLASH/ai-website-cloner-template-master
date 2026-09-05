@@ -33,7 +33,7 @@
  * Usage:  node scripts/build-render-brief.mjs [--out tmp/claude-render]
  */
 
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 const args = process.argv.slice(2);
