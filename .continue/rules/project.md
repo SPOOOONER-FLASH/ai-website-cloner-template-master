@@ -249,6 +249,37 @@ A command that can break the site is preceded by its check (`nginx -t` before
 fails. "Reload nginx" is not an instruction; it is an assumption that the reader already
 knows what you know.
 
+### Professional, not decorated. The buyer is purchasing confidence.
+
+Client's principal, 2026-09-05:
+
+> 真的是不需要花里胡哨，就让别人看起来专业，特别是五金方面，我们给别人专业的感觉，
+> 他就会下单。因为金属太不容易自己手动了，工厂给人专业感觉，他们会睡得安稳。
+
+That last clause is the whole brief, and it is a statement about risk rather than taste.
+A buyer ordering a container of door hardware from a factory they have never visited
+cannot inspect it, cannot adjust it on arrival, and cannot fix a wrong backset with a
+file. What they are actually buying is the belief that this supplier will not make a
+mistake. **Every design decision on this site either raises or lowers that belief**, and
+decoration is neutral at best — an animation does not make a hole position correct, and
+a page that looks like it is trying to impress reads as a page compensating for
+something.
+
+So the test for any addition is not "does this look good" but **"does this make a
+cautious buyer more willing to sign"**. Concretely:
+
+- A stated dimension beats a hero animation. A spec table beats a gradient.
+- Consistency IS the argument. Fifteen product plates shot identically say "this is a
+  factory with a process"; fifteen shot differently say "these came from somewhere".
+- Say what is not known. A dash where a dimension is missing costs less trust than a
+  plausible number, because the buyer who catches one invented figure discounts all of
+  them.
+- Restraint reads as confidence. FSB spends a 1440px hero on one lever and no effects;
+  that restraint is the most expensive-looking thing on their site.
+
+This is the same principle as the image rule below, applied to everything else: the
+photograph is the specification's first draft, and the whole site is the factory's.
+
 ### Never generate an imagined metal product. Ever.
 
 Client instruction, 2026-09-04, after the client's own principal rejected a set of
