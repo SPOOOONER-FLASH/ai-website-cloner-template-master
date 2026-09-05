@@ -4,6 +4,14 @@
   "kind": "insight",
   "publishedAt": "2026-08-27",
   "summary": "Projects do not buy locks. They buy door types, and each door type is a set of hardware that has to agree with itself. The document that decides this is the door schedule, and it is worth understanding before you quote against one.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
   "body": [
     "A manufacturer's catalogue is organised by product: lock cases here, lever handles there, closers somewhere else. A building is not organised that way. A building is a list of doors, and every door needs a set of hardware whose parts have to agree with each other — the same backset, the same handing, the same fire rating, the same finish. The document that records this is the door hardware schedule, and on a commercial project it is what the order is actually written from.",
     "If you sell into projects and have never seen one, this is roughly what a row looks like. A door type, say a fire-rated cross-corridor door leaf. Its dimensions and handing. Then a hardware set: a lock case with a stated backset and centre distance, a lever set on the plate that matches that centre distance, a euro cylinder keyed into the building's master system, a pair of hinges rated for the leaf weight, a closer with the right power size, and — because it is on an escape route — an exit device rather than a lock on the egress side. One row. Seven line items. Every one of them has to be compatible with the other six.",

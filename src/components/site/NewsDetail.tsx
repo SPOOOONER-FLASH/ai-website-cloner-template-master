@@ -119,6 +119,40 @@ export function NewsDetail({
               {formatNewsDate(article.publishedAt, locale)}
             </time>
 
+            {/*
+              THE BYLINE.
+
+              Visible because the structured data names a Person, and markup that asserts
+              an author the page never shows is the same drift the FAQ answers are
+              guarded against. The credential shown is the one held; nothing here claims
+              engineering authority, and where a factory engineer reviews a piece a
+              reviewer line can be added beside this — empty until a real name exists.
+            */}
+            {article.author ? (
+              <p className="mt-16 text-c2 text-ink-secondary">
+                <span className="text-ink">
+                  {article.author.url ? (
+                    <a
+                      href={article.author.url}
+                      rel="author noopener noreferrer"
+                      target="_blank"
+                      className="short-marker"
+                    >
+                      {article.author.name}
+                    </a>
+                  ) : (
+                    article.author.name
+                  )}
+                </span>
+                <span className="mt-4 block">
+                  {(es && article.author.roleEs) || article.author.role}
+                </span>
+                {article.author.credential ? (
+                  <span className="block text-ink-tertiary">{article.author.credential}</span>
+                ) : null}
+              </p>
+            ) : null}
+
             <div className="mt-32 border-t border-line pt-16">
               <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
                 {t.pressEnquiries}

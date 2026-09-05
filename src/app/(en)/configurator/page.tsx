@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ConfiguratorIntro } from "@/components/site/ConfiguratorIntro";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
 import { HardwareGlossary } from "@/components/site/HardwareGlossary";
@@ -66,21 +66,7 @@ export default function ConfiguratorPage() {
               </h1>
             </div>
             <div className="col-span-full xl:col-span-10 xl:col-start-15">
-              <p className="text-lead text-ink">
-                A few questions about the door, and the catalogue narrows to the models
-                that fit. Every option shown leads somewhere — you cannot reach an empty
-                result.
-              </p>
-              <p className="mt-16 text-c2 text-ink-secondary">
-                Already know what you need?{" "}
-                <Link
-                  href="/product-finder/"
-                  className="short-marker short-marker-compact text-brand hover:text-brand-hover"
-                >
-                  Filter the catalogue directly
-                </Link>
-                .
-              </p>
+              <ConfiguratorIntro />
             </div>
           </div>
         </section>

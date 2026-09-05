@@ -4,6 +4,14 @@
   "kind": "insight",
   "publishedAt": "2026-08-27",
   "summary": "Two numbers decide whether a lock case fits the door in front of you. They are printed in the model number, and getting them wrong is the most common reason a container of hardware cannot be installed.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
   "body": [
     "A distributor sends a purchase order for four hundred mortise lock cases. The model number is right, the finish is right, the price is agreed. Eight weeks later the cases arrive on site, the installer offers one up to a prepared door, and the handle spindle sits fifteen millimetres from where the hole is. Nothing is defective. The cases were simply made for a different door preparation, and the only clue was two digits in the model number that nobody read.",
     "This happens often enough that it is worth spelling out exactly what those digits mean, because once you can read them you can specify a lock case from its name alone.",

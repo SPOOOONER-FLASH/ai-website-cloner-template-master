@@ -1,4 +1,5 @@
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
+import { SiteFacts } from "@/components/site/SiteFacts";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -31,6 +32,10 @@ export default function Home() {
 
       <div className="mb-48 lg:mb-136">
         <WelcomeIntro />
+      </div>
+
+      <div className="mb-48 lg:mb-136">
+        <SiteFacts />
       </div>
 
       <div className="modules">

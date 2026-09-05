@@ -361,6 +361,26 @@ export interface PromoCard {
  */
 export type NewsKind = "press-release" | "insight";
 
+/**
+ * A named author for an article.
+ *
+ * Present only where a real person wrote or edited the piece, with the credential that
+ * person actually holds. An invented byline is the same class of error as an invented
+ * dimension: a reader who checks one and finds it false discounts everything else on the
+ * page, and E-E-A-T is precisely the signal being checked.
+ */
+export interface ArticleAuthor {
+  name: string;
+  nameZh?: string;
+  /** Function at the company, e.g. "Digital Communications, Canton Hyland". */
+  role: string;
+  roleEs?: string;
+  /** The qualification held, stated plainly. Omit rather than approximate. */
+  credential?: string;
+  /** A profile that resolves, so the author is an entity and not a string. */
+  url?: string;
+}
+
 export interface NewsArticle {
   /** URL segment, unique site-wide. e.g. "en-1125-certification-for-panic-range". */
   slug: string;
@@ -377,6 +397,8 @@ export interface NewsArticle {
    * rebuild on the day. Say so to whoever schedules one.
    */
   publishedAt: string;
+  /** Named author. Absent on corporate announcements, which are authored by the company. */
+  author?: ArticleAuthor;
   /** Kept out of the build entirely. Use for work in progress. */
   draft?: boolean;
   /** One or two sentences for the listing card and the meta description fallback. */

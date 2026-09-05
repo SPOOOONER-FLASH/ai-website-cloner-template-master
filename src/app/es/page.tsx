@@ -6,6 +6,7 @@ import { PageTeaserModule } from "@/components/site/PageTeaserModule";
 import { Spacer } from "@/components/site/Spacer";
 import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
+import { SiteFacts } from "@/components/site/SiteFacts";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
@@ -34,6 +35,10 @@ export default function SpanishHomePage() {
       </div>
       <div className="mb-48 lg:mb-136">
         <WelcomeIntro locale="es" />
+      </div>
+
+      <div className="mb-48 lg:mb-136">
+        <SiteFacts locale="es" />
       </div>
       <div className="modules">
         <ArgentinaAr4Showcase locale="es" />

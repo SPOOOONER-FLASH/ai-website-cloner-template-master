@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ConfiguratorIntro } from "@/components/site/ConfiguratorIntro";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ConfiguratorClient } from "@/components/site/ConfiguratorClient";
 import { HardwareGlossary } from "@/components/site/HardwareGlossary";
@@ -49,21 +49,7 @@ export default function ConfiguradorPage() {
               </h1>
             </div>
             <div className="col-span-full xl:col-span-10 xl:col-start-15">
-              <p className="text-lead text-ink">
-                Unas preguntas sobre la puerta y el catálogo se reduce a los modelos que
-                encajan. Toda opción que se muestra lleva a algún sitio — no es posible
-                llegar a un resultado vacío.
-              </p>
-              <p className="mt-16 text-c2 text-ink-secondary">
-                ¿Ya sabe lo que necesita?{" "}
-                <Link
-                  href="/es/products/"
-                  className="short-marker short-marker-compact text-brand hover:text-brand-hover"
-                >
-                  Ver el catálogo completo
-                </Link>
-                .
-              </p>
+              <ConfiguratorIntro locale="es" />
             </div>
           </div>
         </section>

@@ -246,9 +246,13 @@ function videoObjects(product: Product) {
 /**
  * NewsArticle schema for a press release.
  *
- * `author` and `publisher` are both the company: these are corporate announcements, not
- * bylined journalism, and inventing a writer to fill the field would be a fabricated
- * attribution. `dateModified` is left equal to `datePublished` because the content model
+ * `publisher` is always the company. `author` is a named Person where the record carries
+ * one and falls back to the company where it does not — which is the same rule as before,
+ * now that a real name exists to use. The credential emitted is the one that person
+ * actually holds; a hardware-engineering title on a communications graduate would be a
+ * fabricated attribution, and E-E-A-T is exactly the signal a reader checks it against.
+ *
+ * `dateModified` is left equal to `datePublished` because the content model
  * has no revision timestamp — claiming a later edit date we do not track would be a
  * freshness signal we cannot back up.
  */
@@ -286,7 +290,31 @@ export function newsArticleSchema(
     datePublished: article.publishedAt,
     dateModified: article.publishedAt,
     ...(images.length ? { image: images } : {}),
-    author: { "@id": `${siteUrl}/#organization` },
+    /*
+      A Person with a jobTitle, an employer and a URL that resolves — the difference
+      between an author string and an author entity. Google's guidance on who wrote a page
+      asks for exactly those, and an answer engine deciding whether to cite a technical
+      article looks for a person to attribute it to.
+    */
+    author: article.author
+      ? {
+          "@type": "Person",
+          name: article.author.name,
+          jobTitle:
+            (locale === "es" && article.author.roleEs) || article.author.role,
+          worksFor: { "@id": `${siteUrl}/#organization` },
+          ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
+          ...(article.author.credential
+            ? {
+                hasCredential: {
+                  "@type": "EducationalOccupationalCredential",
+                  credentialCategory: "degree",
+                  name: article.author.credential,
+                },
+              }
+            : {}),
+        }
+      : { "@id": `${siteUrl}/#organization` },
     publisher: { "@id": `${siteUrl}/#organization` },
     inLanguage: locale,
   };

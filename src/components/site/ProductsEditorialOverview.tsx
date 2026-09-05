@@ -44,7 +44,13 @@ export function ProductsEditorialOverview({
           </div>
 
           <div className="col-span-full xl:col-span-13">
-            <h1 id="products-overview-title" className="text-h1 text-ink">
+            {/*
+              The page opener uses the display step, not h1's size — see --text-d1 in
+              globals.css. Measured against the approved comps, the opener was rendering
+              at half their size with a body-text line-height, which is why the shipped
+              page reads flat beside them. Rollback: change `text-d1` back to `text-h1`.
+            */}
+            <h1 id="products-overview-title" className="text-d1 text-ink">
               {architecture.title}
             </h1>
           </div>

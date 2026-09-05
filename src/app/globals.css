@@ -126,6 +126,31 @@
     Desktop maxima move far less than the mobile minima (h1 26 → 32px), so the module
     geometry measured at 1512px stays close to where it was verified.
   */
+  /*
+    DISPLAY — the step ABOVE h1, added 2026-09-05.
+
+    The 08-31 rework fixed the bottom of this scale, where h3 and c1 had collided. The top
+    was left alone, and measuring it against the approved design comps showed why that was
+    only half the job: at 1600px the comps set the page opener at 64px against a 19px
+    lede — a contrast of 3.4. Shipped, h1 renders at 32px against a 20px lede, a contrast
+    of 1.6, with h2 only 4px below it. At 1.6 the headline and the body are the same size
+    to the eye, so a page has no opening, and "no opening" is what reads as a document
+    rather than a designed page. Editorial openers run 4 to 8.
+
+    h1 is NOT changed: it is doing its job on cards and section headings across a thousand
+    pages, and moving it would move all of them. Display is a separate step used ONCE per
+    page, on the opener only.
+
+    Leading is near 1.0 because that is what a display size wants — `--leading-h1` is 1.25
+    of its size, which is a body-text setting applied to a headline, and it is the second
+    half of why the shipped opener looks flat.
+
+    ROLLBACK: remove `.text-d1` from the page that uses it. The token can stay; nothing
+    else reads it.
+  */
+  --text-d1: clamp(4rem, 3.176vw + 1.541rem, 6.4rem);
+  --leading-d1: clamp(4.2rem, 3.047vw + 1.841rem, 6.5rem);
+  --tracking-d1: -0.19rem;
   --text-h1: clamp(2.8rem, 1.529vw + 2.229rem, 3.2rem);
   --leading-h1: clamp(3.6rem, 1.529vw + 3.029rem, 4rem);
   --tracking-h1: -0.02rem;
@@ -229,6 +254,15 @@
 
 @layer components {
   /* -- Type utilities ---------------------------------------------------- */
+  /* The page opener. One per page — see the token comment for why h1 is untouched. */
+  .text-d1 {
+    font-size: var(--text-d1);
+    line-height: var(--leading-d1);
+    letter-spacing: var(--tracking-d1);
+    font-weight: var(--font-weight-bold);
+    text-wrap: balance;
+  }
+
   .text-h1 {
     font-size: var(--text-h1);
     line-height: var(--leading-h1);
