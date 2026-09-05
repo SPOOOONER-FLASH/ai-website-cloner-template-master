@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Complete product cropped from its first-party source and uniformly resized on white.",
+  "sources": [
+    {
+      "source": "public/images/products/wooden-door-floor-hinge.webp",
+      "sha256": "711dab0547f3cd5785485108f7772d377389f5d980d28b647ce1e3734f1a3794"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}

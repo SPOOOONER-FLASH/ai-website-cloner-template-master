@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Complete product cropped from its first-party source and uniformly resized on white.",
+  "sources": [
+    {
+      "source": "public/images/products/stainless-steel-door-hinge.webp",
+      "sha256": "f1d68e43fc968e69dc86322327a281692395e88327e1e092451f091dd0505395"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}

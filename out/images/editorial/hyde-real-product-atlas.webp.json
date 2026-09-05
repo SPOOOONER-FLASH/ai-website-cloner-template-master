@@ -1,0 +1,44 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Independent complete catalogue products composed on white; crops defined in script.",
+  "sources": [
+    {
+      "source": "public/images/products/9001-stainless-steel-handle.webp",
+      "sha256": "fa61d03daad7aae14f996d40078c95dc565bcc5b700e7ece19ce759c4a2a3774"
+    },
+    {
+      "source": "public/images/products/305-fire-door-panic-exit-device.webp",
+      "sha256": "4bfd8fc189b3eadbba7ca6bb290ee9e5c0088eb5ad17ddd39985ce1d8c83e974"
+    },
+    {
+      "source": "public/images/products/stainless-steel-door-hinge.webp",
+      "sha256": "f1d68e43fc968e69dc86322327a281692395e88327e1e092451f091dd0505395"
+    },
+    {
+      "source": "public/images/products/lc14-85-50mm-lock-case.webp",
+      "sha256": "08b146871eeeda6d6ea461ebbab16a90d569976d353d9a1276ef5623a1e1daa3"
+    },
+    {
+      "source": "public/images/products/stainless-steel-glass-door-pull-handle.webp",
+      "sha256": "9070323737dedc61cae6674e727915e8ec8e617fd3320294173278e40ee32241"
+    },
+    {
+      "source": "public/images/products/600-concealed-sliding-door-handle.webp",
+      "sha256": "f2c17e29625141aebd87b8f50c5d1bb7cc875bfb7456b2f4998b96f571f9a56f"
+    },
+    {
+      "source": "public/images/products/70sn-lock-cylinder.webp",
+      "sha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac"
+    },
+    {
+      "source": "public/images/products/wooden-door-floor-hinge.webp",
+      "sha256": "711dab0547f3cd5785485108f7772d377389f5d980d28b647ce1e3734f1a3794"
+    },
+    {
+      "source": "public/images/products/../products-hyde/stainless-steel-flush-bolt.webp",
+      "sha256": "b8eaee6158ee43765a92fa1de8381102123f7082b4b0624062140d965441623b"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Complete product cropped from its first-party source and uniformly resized on white.",
+  "sources": [
+    {
+      "source": "public/images/products/lc14-85-50mm-lock-case.webp",
+      "sha256": "08b146871eeeda6d6ea461ebbab16a90d569976d353d9a1276ef5623a1e1daa3"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}
