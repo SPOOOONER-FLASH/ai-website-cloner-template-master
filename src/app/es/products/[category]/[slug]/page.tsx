@@ -4,7 +4,7 @@ import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
-import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
+import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
 
 type ProductPageProps = {
@@ -111,6 +111,7 @@ export default async function ProductoPage({ params }: ProductPageProps) {
   return (
     <>
       <JsonLd data={productSchema(product, url, "es", categoryName)} />
+      <ProductFaqJsonLd product={product} locale="es" />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Inicio", url: absoluteUrl("/es/") },

@@ -4,7 +4,7 @@ import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
-import { JsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
+import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
 import {
   canonicalProductCategory,
@@ -122,6 +122,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   return (
     <>
       <JsonLd data={productSchema(product, url)} />
+      <ProductFaqJsonLd product={product} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: absoluteUrl("/") },

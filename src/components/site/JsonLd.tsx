@@ -4,6 +4,7 @@ import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
 import type { NewsArticle, Product } from "@/data/types";
 import { serializeJsonLd } from "@/lib/json-ld";
+import { productFaqItems } from "@/lib/product-faq";
 import type {
   BreadcrumbList,
   FAQPage,
@@ -327,6 +328,42 @@ export function itemListSchema(name: string, urls: string[]): WithContext<ItemLi
     numberOfItems: urls.length,
     itemListElement: urls.map((url, i) => ({ "@type": "ListItem", position: i + 1, url })),
   };
+}
+
+/**
+ * FAQPage structured data for one product.
+ *
+ * Built from `productFaqItems`, which composes questions out of the product's own spec
+ * rows — see src/lib/product-faq.ts for why that is the only safe way to put a FAQPage on
+ * several hundred pages. The same items render visibly in ProductDetail; this markup must
+ * never be emitted without them, which is why both take their content from one function
+ * rather than from two lists somebody has to keep in step.
+ *
+ * Returns null on products with too few stated facts. About sixty of 435 fall out that
+ * way, and that is the feature: a page with nothing to say does not get markup claiming
+ * otherwise.
+ */
+export function ProductFaqJsonLd({
+  product,
+  locale = "en",
+}: {
+  product: Product;
+  locale?: "en" | "es";
+}) {
+  const items = productFaqItems(product, locale);
+  if (!items.length) return null;
+
+  const data: WithContext<FAQPage> = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return <JsonLd data={data} />;
 }
 
 /**

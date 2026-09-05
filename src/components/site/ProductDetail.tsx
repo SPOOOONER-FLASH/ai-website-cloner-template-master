@@ -4,6 +4,7 @@ import type { Locale } from "@/data/site";
 import { getRelatedProducts, products, publishedProducts } from "@/data/products";
 import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
+import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
 import { ArrowLink } from "./ArrowLink";
 import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
@@ -198,6 +199,8 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const specLabels = new Set(specs.map((s) => s.label.trim().toLowerCase()));
   const covers = (...patterns: RegExp[]) =>
     [...specLabels].some((label) => patterns.some((p) => p.test(label)));
+
+  const faqItems = productFaqItems(product, locale);
 
   const uncoveredFacts = [
     { label: t.material, values: material, covered: covers(/^material$/) },
@@ -520,6 +523,36 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                         />
                       ))}
                     </dl>
+                  ) : null}
+
+                  {/*
+                    ── COMMON QUESTIONS ────────────────────────────────────────
+
+                    Composed from this product's own spec rows by productFaqItems, and
+                    mirrored exactly by ProductFaqJsonLd. The two read from one function
+                    on purpose: Google treats a FAQPage whose answers are not visible on
+                    the page as a spam signal, and a few hundred product pages is exactly
+                    the scale at which that judgement gets made about a whole site.
+
+                    Rendered as a description list rather than an accordion. An accordion
+                    hides the answers behind a click, and the point of this block is that
+                    the answers are on the page — for a reader, for a crawler, and for the
+                    audit that checks the two agree.
+                  */}
+                  {faqItems.length ? (
+                    <div className="mt-48 border-t border-line pt-24">
+                      <h2 id="product-faq-heading" className="text-h3 text-ink">
+                        {productFaqHeading(locale)}
+                      </h2>
+                      <dl className="mt-16">
+                        {faqItems.map((item) => (
+                          <div key={item.question} className="border-b border-line py-16">
+                            <dt className="text-c1 text-ink">{item.question}</dt>
+                            <dd className="mt-4 text-c2 text-ink-secondary">{item.answer}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </div>
                   ) : null}
                 </div>
               </div>

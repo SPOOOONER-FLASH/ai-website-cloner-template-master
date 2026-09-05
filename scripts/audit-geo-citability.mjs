@@ -64,7 +64,25 @@ const visible = (html) =>
 /** A figure with a unit, a standard, or a model number — the things worth quoting. */
 const CONCRETE =
   /\b\d[\d.,]*\s?(?:mm|cm|m|kg|g|pieces?|pcs|days?|weeks?|months?|years?|hours?|%|°|×|x)\b|\bEN\s?1\d{3,4}\b|\bISO\s?\d{4}\b|\b\d{3,4}\s?(?:SS|ET|PS|MB)\b/i;
-const HEDGE = /\b(?:may|might|can be|could|typically|generally|usually|up to|around|approximately)\b/i;
+/*
+  "can be" was in this list and it was the wrong call.
+
+  It fired on all four flagged sentences on /configurator, and every one of them is a
+  capability, not a hedge: "a lever can be opened with an elbow or a closed fist, which a
+  knob cannot"; "lets the door open a few centimetres on a restrictor, so a caller can be
+  spoken to". Those sentences are the reason an architect specifies a lever over a knob.
+  Acting on the score would have meant rewriting correct, useful copy to satisfy an
+  instrument — which is the failure mode this measure exists to catch, aimed at the wrong
+  target.
+
+  The remaining terms all mark genuine uncertainty about a value. "can be" marks what a
+  product is able to do, and a hardware catalogue is largely made of those.
+
+  Note for whoever reads the configurator's score next: removing this term lifts that page
+  from 33 to 45, and the page still has ZERO concrete figures. That, not the wording, is
+  what is actually wrong with it.
+*/
+const HEDGE = /\b(?:may|might|could|typically|generally|usually|up to|around|approximately)\b/i;
 const ENTITY = /\b(?:Canton Hyland|HYDE|Zhongshan|Guangdong)\b/;
 
 const groups = new Map();
