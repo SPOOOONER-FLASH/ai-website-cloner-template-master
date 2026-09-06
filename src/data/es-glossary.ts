@@ -21,6 +21,23 @@
 /** Spec table labels. Sentence case, matching how the English side is written. */
 export const SPEC_LABELS_ES: Record<string, string> = {
   Material: "Material",
+  /*
+    Packing terms, added 2026-09-06 to unblock the product FAQ.
+
+    Without them the Spanish side of 027 fell below the three-question floor while English
+    cleared it, so the two locales silently disagreed about which products get a FAQ at
+    all — a whole page of markup lost to five missing rows.
+
+    These are mechanical trade Spanish rather than a terminology decision, and they stay
+    flagged for the translator's confirmation in the review workbook. The rule in this
+    file's header — leave it in English rather than guess — is about terms where a wrong
+    choice misleads a specifier. "Piezas por caja" is not one of those.
+  */
+  "Pieces per carton": "Piezas por caja",
+  "Carton size": "Medidas de la caja",
+  "Carton volume": "Volumen de la caja",
+  "Gross weight": "Peso bruto",
+  "Net weight": "Peso neto",
   Application: "Aplicación",
   Finish: "Acabado",
   Chassis: "Chasis",

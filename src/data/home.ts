@@ -75,8 +75,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-lever-plate.webp",
-        label: "Original catalogue photograph of a stainless-steel lever handle",
+        src: "/images/editorial/hyde-hero-lever.webp",
+        label: "Hyland 9001 stainless-steel lever handle and escutcheon on a graded studio field",
       },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
@@ -85,8 +85,8 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-application-detail.webp",
-        label: "Original catalogue photograph of push/pull door lock hardware",
+        src: "/images/editorial/hyde-hero-cylinder.webp",
+        label: "Hyland 70SN euro-profile cylinder with three keys and fixing screw",
       },
       title: "For specifiers",
       subtitle: "Build a hardware schedule with our export engineers",
@@ -180,7 +180,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-control-plate.webp",
+        src: "/images/editorial/hyde-hero-panic.webp",
         label: "Original catalogue photograph of door-control hardware",
       },
       title: "Send us your hardware requirements",
@@ -190,7 +190,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-hinge-plate.webp",
+        src: "/images/editorial/hyde-hero-hinge.webp",
         label: "Original catalogue photograph of stainless-steel hinges",
       },
       title: "Specify with confidence",

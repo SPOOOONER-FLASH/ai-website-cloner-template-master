@@ -1,223 +1,538 @@
 {
-  "/images/editorial/hyde-real-product-atlas.webp": { "sourceWidth": 1800, "variants": [480, 960, 1440] },
-  "/images/editorial/hyde-real-lever-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-hinge-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-pull-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-control-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-lock-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-panic-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-cylinder-plate.webp": { "sourceWidth": 1200, "variants": [480, 960] },
-  "/images/editorial/hyde-real-application-detail.webp": { "sourceWidth": 1000, "variants": [480, 960] },
+  "/images/editorial/hyde-real-product-atlas.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-real-lever-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-hinge-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-pull-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-control-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-lock-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-panic-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-cylinder-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-application-detail.webp": {
+    "sourceWidth": 1000,
+    "variants": [
+      480,
+      960
+    ]
+  },
   "/images/editorial/argentina-ar4-entry.webp": {
     "sourceWidth": 1672,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/architecture-boutique-hotel.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/architecture-coastal-residence.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/drawer-product-finder-exhibition-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/drawer-projects-door-sample-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hero-civic-corridor.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/hero-cultural-entrance.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/hero-warm-residential-entry.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/home-commercial-egress.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/home-design-context.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/home-editorial-insight.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/home-material-library.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/home-panic-exit-bars.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-01.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-02.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-03.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-04.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-05.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-06.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-07.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-08.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-09.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-10.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-01.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-02.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-03.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-04.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-05.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-06.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-07.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-08.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-09.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-editorial-product-range-10.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-engineering-contact-2026.webp": {
     "sourceWidth": 1254,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/hyde-installation-faq-2026.webp": {
     "sourceWidth": 1254,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/hyde-materials-engineering-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-nine-families-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-nine-families-showroom-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/hyde-source-by-project-2026.webp": {
     "sourceWidth": 1254,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/hyde-source-by-range-2026.webp": {
     "sourceWidth": 1254,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/industrial-precision-parts.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/material-bronze-patina.webp": {
     "sourceWidth": 1600,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/material-brushed-steel.webp": {
     "sourceWidth": 1600,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/material-metal-stone-detail.webp": {
     "sourceWidth": 1600,
-    "variants": [400, 800, 1200]
+    "variants": [
+      400,
+      800,
+      1200
+    ]
   },
   "/images/editorial/news-door-schedule-doors.webp": {
     "sourceWidth": 2400,
-    "variants": [480, 800, 1600]
+    "variants": [
+      480,
+      800,
+      1600
+    ]
   },
   "/images/editorial/news-aluminium-door-lock-sag-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/news-exit-device-standards-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/news-finish-function-library.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/news-mortise-lock-inspection.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/news-push-bar-touch-bar-2026.webp": {
     "sourceWidth": 1536,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/project-commercial-egress.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/project-glass-entrance.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   },
   "/images/editorial/project-hospitality-residential.webp": {
     "sourceWidth": 1800,
-    "variants": [480, 960, 1440]
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-lever.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-hinge.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-cylinder.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-panic.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-knob.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-lockcase.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
   }
 }

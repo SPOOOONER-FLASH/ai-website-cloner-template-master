@@ -64,7 +64,8 @@
     "rayen:assets": "node scripts/import-rayen-assets.mjs",
     "rayen:site": "node scripts/build-rayen-site.mjs",
     "rayen:images": "node scripts/build-rayen-product-images.mjs",
-    "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check"
+    "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check",
+    "seo:anchors": "node scripts/audit-anchor-text.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

@@ -19,6 +19,9 @@ import { EmailLink } from "./EmailLink";
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
 
+/* The generated 62-page book. One place, so a rename cannot leave a dead button. */
+const CATALOGUE_PDF = "/downloads/hyde-export-catalogue-2026.pdf";
+
 interface ProductDetailProps {
   product: Product;
   categoryName: string;
@@ -52,6 +55,7 @@ const COPY = {
     onRequest: "Information available on request",
     referenceOnRequest: "Reference available on request",
     quote: "Request a quote",
+    downloadCatalogue: "Download the export catalogue (PDF)",
     images: "Product images",
     watch: "Watch it work",
     breadcrumb: "Breadcrumb",
@@ -99,6 +103,7 @@ const COPY = {
     onRequest: "Información disponible a pedido",
     referenceOnRequest: "Referencia disponible a pedido",
     quote: "Solicitar cotización",
+    downloadCatalogue: "Descargar el catálogo de exportación (PDF)",
     images: "Imágenes del producto",
     watch: "Véalo funcionar",
     breadcrumb: "Ruta de navegación",
@@ -410,9 +415,25 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                 </div>
 
                 <div className="mt-64 flex flex-wrap items-center gap-16">
+                  {/*
+                    ── THREE ENTRY POINTS, NOT ONE ─────────────────────────────
+
+                    B2B buyers arrive at different readiness. One wants a price, one wants
+                    the catalogue to read offline before involving anyone, one wants a
+                    person. A single "Contact us" makes the last two either leave or use
+                    the wrong door, and an enquiry that starts with the wrong question
+                    costs the export desk a round trip.
+
+                    One primary, two secondary — not four equal buttons. The download is
+                    the useful addition here because it is the only one that costs the
+                    buyer nothing and still moves them forward.
+                  */}
                   <Button href={quoteHref}>{t.quote}</Button>
                   <Button href={`${base}/contact/`} variant="secondary">
                     {t.ask}
+                  </Button>
+                  <Button href={CATALOGUE_PDF} variant="secondary">
+                    {t.downloadCatalogue}
                   </Button>
                 </div>
 

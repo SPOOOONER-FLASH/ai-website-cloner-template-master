@@ -62,7 +62,7 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-lever-plate.webp",
+        src: "/images/editorial/hyde-hero-lever.webp",
         label: "Fotografía original de una manija de acero inoxidable",
       },
       title: "Para distribuidores",
@@ -72,7 +72,7 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-application-detail.webp",
+        src: "/images/editorial/hyde-hero-cylinder.webp",
         label: "Fotografía original de un mecanismo de cerradura de empuje y tracción",
       },
       title: "Para prescriptores",
@@ -165,7 +165,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-control-plate.webp",
+        src: "/images/editorial/hyde-hero-panic.webp",
         label: "Fotografía original de herrajes de control de puertas",
       },
       title: "Envíenos sus requisitos de herrajes",
@@ -175,7 +175,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-real-hinge-plate.webp",
+        src: "/images/editorial/hyde-hero-hinge.webp",
         label: "Fotografía original de bisagras de acero inoxidable",
       },
       title: "Especifique con confianza",

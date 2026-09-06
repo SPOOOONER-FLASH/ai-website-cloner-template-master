@@ -61,6 +61,21 @@ const QUESTIONS: Array<{
   enA: (model: string, value: string) => string;
   esA: (model: string, value: string) => string;
 }> = [
+  /*
+    First, and only where a record states it. Eighteen models are called Panic Exit Device
+    here and Trim Handle on the client's own stahlock.com, and a buyer arriving from a
+    panic-bar search on one of those pages is looking at the outside lever without being
+    told so. "What type is the 015" is that buyer's actual first question, so it is the
+    first question — see scripts/add-trim-handle-type.mjs for why the page was not simply
+    renamed instead.
+  */
+  {
+    labels: ["Type", "Product Type", "Lock Type"],
+    en: (m) => `What type of hardware is the ${m}?`,
+    es: (m) => `¿Qué tipo de herraje es el ${m}?`,
+    enA: (m, v) => `The ${m} is a ${v}.`,
+    esA: (m, v) => `El ${m} es un ${v}.`,
+  },
   {
     labels: ["Material"],
     en: (m) => `What is the ${m} made from?`,
