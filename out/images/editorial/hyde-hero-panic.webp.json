@@ -1,0 +1,18 @@
+{
+  "kind": "real-photograph-on-editorial-field",
+  "grammar": "void-dark",
+  "field": "#171614 → #5a5653, vertical",
+  "fieldMeasuredFrom": "FSB heroes fetched 2026-09-05 at w_1440 (dieter-rams stage; designed-by; produktfamilien_uebersicht)",
+  "objectMeanLuminance": 186,
+  "productGeometry": "Original pixels retained. Uniform resize and complete-object crop only — no redraw, no restyle, no recombination.",
+  "addedByThisScript": [
+    "graded backdrop",
+    "cast shadow derived from the object's own silhouette"
+  ],
+  "sources": [
+    {
+      "source": "public\\images\\products\\305-fire-door-panic-exit-device.webp",
+      "sha256": "4bfd8fc189b3eadbba7ca6bb290ee9e5c0088eb5ad17ddd39985ce1d8c83e974"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "real-photograph-on-editorial-field",
+  "grammar": "void-dark",
+  "field": "#171614 → #5a5653, vertical",
+  "fieldMeasuredFrom": "FSB heroes fetched 2026-09-05 at w_1440 (dieter-rams stage; designed-by; produktfamilien_uebersicht)",
+  "objectMeanLuminance": 159,
+  "productGeometry": "Original pixels retained. Uniform resize and complete-object crop only — no redraw, no restyle, no recombination.",
+  "addedByThisScript": [
+    "graded backdrop",
+    "cast shadow derived from the object's own silhouette"
+  ],
+  "sources": [
+    {
+      "source": "public\\images\\products\\587-pbet-light-duty-cylindrical-lock.webp",
+      "sha256": "e4042a673a132a910dd1c4d2d917b6360567277da5e3032652d4a45dec6b3244"
+    }
+  ]
+}

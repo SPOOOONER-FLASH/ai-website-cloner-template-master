@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227 392" role="img" aria-labelledby="t d">
+  <title id="t">Lc07 85×45mm Lock Case — dimensioned drawing</title>
+  <desc id="d">Faceplate 240 × 23mm. Backset 45mm, centre distance 85mm. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <path d="M0.00 0.00 L3.00 0.00 L3.00 240.00 L0.00 240.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M3.00 33.50 L75.00 33.50 L75.00 206.50 L3.00 206.50 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <line x1="-10.00" y1="77.50" x2="85.00" y2="77.50" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="-10.00" y1="162.50" x2="85.00" y2="162.50" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="48.00" y1="23.50" x2="48.00" y2="216.50" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <path d="M44.00 73.50 L52.00 73.50 L52.00 81.50 L44.00 81.50 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <circle cx="48.00" cy="162.50" r="8.50" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="3" y1="30.5" x2="3" y2="7.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="48" y1="30.5" x2="48" y2="7.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="3" y1="11.5" x2="15.34" y2="11.5" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="35.66" y1="11.5" x2="48" y2="11.5" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M3.00 11.50 L7.20 12.68 L7.20 10.32 Z" fill="#16150f"/>
+    <path d="M48.00 11.50 L43.80 10.32 L43.80 12.68 Z" fill="#16150f"/>
+    <text x="25.5" y="15.35" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">45</text>
+    <line x1="78" y1="77.5" x2="105" y2="77.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="78" y1="162.5" x2="105" y2="162.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="101" y1="77.5" x2="101" y2="112.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="101" y1="127.7" x2="101" y2="162.5" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M101.00 77.50 L99.82 81.70 L102.18 81.70 Z" fill="#16150f"/>
+    <path d="M101.00 162.50 L102.18 158.30 L99.82 158.30 Z" fill="#16150f"/>
+    <text x="101" y="120" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 101 120)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">85</text>
+    <line x1="78" y1="33.5" x2="135" y2="33.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="78" y1="206.5" x2="135" y2="206.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="131" y1="33.5" x2="131" y2="112.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="131" y1="127.7" x2="131" y2="206.5" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M131.00 33.50 L129.82 37.70 L132.18 37.70 Z" fill="#16150f"/>
+    <path d="M131.00 206.50 L132.18 202.30 L129.82 202.30 Z" fill="#16150f"/>
+    <text x="131" y="120" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 131 120)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">173</text>
+    <line x1="3" y1="209.5" x2="3" y2="234.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="75" y1="209.5" x2="75" y2="234.5" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="3" y1="230.5" x2="28.840000000000003" y2="230.5" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="49.16" y1="230.5" x2="75" y2="230.5" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M3.00 230.50 L7.20 231.68 L7.20 229.32 Z" fill="#16150f"/>
+    <path d="M75.00 230.50 L70.80 229.32 L70.80 231.68 Z" fill="#16150f"/>
+    <text x="39" y="234.35" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">72</text>
+    <line x1="-3" y1="0" x2="-30" y2="0" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="-3" y1="240" x2="-30" y2="240" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="-26" y1="0" x2="-26" y2="112.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="-26" y1="127.7" x2="-26" y2="240" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M-26.00 0.00 L-27.18 4.20 L-24.82 4.20 Z" fill="#16150f"/>
+    <path d="M-26.00 240.00 L-24.82 235.80 L-27.18 235.80 Z" fill="#16150f"/>
+    <text x="-26" y="120" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 -26 120)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">240</text>
+    </g>
+    <text x="76" y="370" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

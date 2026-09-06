@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 752" role="img" aria-labelledby="t d">
+  <title id="t">100 Glass Door Handle — dimensioned drawing</title>
+  <desc id="d">Length 600mm, centre distance 148mm, tube Ø32mm. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <path d="M60.00 0.00 L92.00 0.00 L92.00 600.00 L60.00 600.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M0.00 211.00 L60.00 211.00 L60.00 241.00 L0.00 241.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M0.00 359.00 L60.00 359.00 L60.00 389.00 L0.00 389.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <line x1="-10.00" y1="226.00" x2="108.00" y2="226.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="-10.00" y1="374.00" x2="108.00" y2="374.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="95" y1="0" x2="126" y2="0" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="95" y1="600" x2="126" y2="600" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="122" y1="0" x2="122" y2="292.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="122" y1="307.7" x2="122" y2="600" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M122.00 0.00 L120.82 4.20 L123.18 4.20 Z" fill="#16150f"/>
+    <path d="M122.00 600.00 L123.18 595.80 L120.82 595.80 Z" fill="#16150f"/>
+    <text x="122" y="300" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 122 300)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">600</text>
+    <line x1="-3" y1="226" x2="-30" y2="226" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="-3" y1="374" x2="-30" y2="374" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="-26" y1="226" x2="-26" y2="292.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="-26" y1="307.7" x2="-26" y2="374" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M-26.00 226.00 L-27.18 230.20 L-24.82 230.20 Z" fill="#16150f"/>
+    <path d="M-26.00 374.00 L-24.82 369.80 L-27.18 369.80 Z" fill="#16150f"/>
+    <text x="-26" y="300" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 -26 300)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">148</text>
+    <line x1="76" y1="84.00000000000001" x2="152.8" y2="48" stroke="#8e8a80" stroke-width="0.7"/>
+    <circle cx="76" cy="84.00000000000001" r="1.6" fill="#16150f"/>
+    <text x="156.8" y="48" font-size="11" fill="#16150f" text-anchor="start" dominant-baseline="central" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">Ø32</text>
+    <line x1="0" y1="603" x2="0" y2="626" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="60" y1="603" x2="60" y2="626" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="622" x2="19.84" y2="622" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="40.16" y1="622" x2="60" y2="622" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 622.00 L4.20 623.18 L4.20 620.82 Z" fill="#16150f"/>
+    <path d="M60.00 622.00 L55.80 620.82 L55.80 623.18 Z" fill="#16150f"/>
+    <text x="30" y="625.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">60</text>
+    </g>
+    <text x="76" y="730" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

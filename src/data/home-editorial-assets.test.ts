@@ -14,13 +14,23 @@ const editorialConfig = JSON.parse(
   ),
 ) as Record<string, { sourceWidth: number; variants: number[] }>;
 
+/*
+  Updated 2026-09-06 when the client asked for no white grounds on the homepage or
+  /products, keeping white for Product Finder only. Four of the six flat-white plates were
+  replaced by graded ones under scripts/compose-editorial-plate.mjs — the products in them
+  are the same photographs, only the field changed.
+
+  The list is pinned rather than derived on purpose: it is the one place that says which
+  six images the homepage is supposed to carry, so an image quietly disappearing from
+  home.ts fails here instead of leaving a gap on the page.
+*/
 const expectedAssets = [
-  "/images/editorial/hyde-real-lever-plate.webp",
-  "/images/editorial/hyde-real-application-detail.webp",
+  "/images/editorial/hyde-hero-lever.webp",
+  "/images/editorial/hyde-hero-cylinder.webp",
   "/images/editorial/hyde-real-product-atlas.webp",
   "/images/editorial/hyde-real-cylinder-plate.webp",
-  "/images/editorial/hyde-real-control-plate.webp",
-  "/images/editorial/hyde-real-hinge-plate.webp",
+  "/images/editorial/hyde-hero-lockcase.webp",
+  "/images/editorial/hyde-hero-hinge.webp",
 ] as const;
 
 const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((kind) =>
@@ -60,7 +70,18 @@ test("every new homepage source has responsive candidates and provenance", () =>
     assert.ok(config.sourceWidth > Math.max(...config.variants));
     assert.match(credits, /real photographs/);
     const provenance = JSON.parse(readFileSync(join(repositoryRoot, "public", `${asset}.json`), "utf8"));
-    assert.equal(provenance.kind, "real-photograph-composition");
+    /*
+      Two vocabularies, one meaning. `real-photograph-composition` is written by the atlas
+      composer and `real-photograph-on-editorial-field` by compose-editorial-plate.mjs;
+      both assert the same thing, which is the only claim this test cares about — the
+      product pixels are the client's own photograph and only the field was added.
+    */
+    assert.ok(
+      ["real-photograph-composition", "real-photograph-on-editorial-field"].includes(
+        provenance.kind,
+      ),
+      `${asset} claims provenance "${provenance.kind}", which is not a real-photograph kind`,
+    );
     assert.ok(provenance.sources.length > 0);
   }
 });

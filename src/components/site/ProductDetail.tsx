@@ -10,6 +10,7 @@ import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
 import { CatalogueReturnLink } from "./CatalogueNavigation";
+import { ProductDrawing } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
@@ -560,6 +561,8 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     the answers are on the page — for a reader, for a crawler, and for the
                     audit that checks the two agree.
                   */}
+                  <ProductDrawing slug={product.slug} locale={locale} />
+
                   {faqItems.length ? (
                     <div className="mt-48 border-t border-line pt-24">
                       <h2 id="product-faq-heading" className="text-h3 text-ink">

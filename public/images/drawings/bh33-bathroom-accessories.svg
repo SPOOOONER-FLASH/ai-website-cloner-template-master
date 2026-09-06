@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 602" role="img" aria-labelledby="t d">
+  <title id="t">BH33 Bathroom Accessories — dimensioned drawing</title>
+  <desc id="d">Length 450mm, projection 200mm from the wall, tube Ø12mm, height 110mm. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <path d="M188.00 0.00 L200.00 0.00 L200.00 450.00 L188.00 450.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M0.00 6.00 L188.00 6.00 L188.00 26.00 L0.00 26.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <path d="M0.00 424.00 L188.00 424.00 L188.00 444.00 L0.00 444.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <line x1="0" y1="-14" x2="0" y2="464" stroke="#8e8a80" stroke-width="1.6"/>
+    <line x1="203" y1="0" x2="234" y2="0" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="203" y1="450" x2="234" y2="450" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="230" y1="0" x2="230" y2="217.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="230" y1="232.7" x2="230" y2="450" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M230.00 0.00 L228.82 4.20 L231.18 4.20 Z" fill="#16150f"/>
+    <path d="M230.00 450.00 L231.18 445.80 L228.82 445.80 Z" fill="#16150f"/>
+    <text x="230" y="225" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 230 225)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">450</text>
+    <line x1="0" y1="453" x2="0" y2="478" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="200" y1="453" x2="200" y2="478" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="474" x2="86.76" y2="474" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="113.24" y1="474" x2="200" y2="474" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 474.00 L4.20 475.18 L4.20 472.82 Z" fill="#16150f"/>
+    <path d="M200.00 474.00 L195.80 472.82 L195.80 475.18 Z" fill="#16150f"/>
+    <text x="100" y="477.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">200</text>
+    <line x1="194" y1="225" x2="226.4" y2="189" stroke="#8e8a80" stroke-width="0.7"/>
+    <circle cx="194" cy="225" r="1.6" fill="#16150f"/>
+    <text x="230.4" y="189" font-size="11" fill="#16150f" text-anchor="start" dominant-baseline="central" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">Ø12</text>
+    </g>
+    <text x="76" y="580" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

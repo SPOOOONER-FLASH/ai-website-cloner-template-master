@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 227" role="img" aria-labelledby="t d">
+  <title id="t">001 Panic Exit Device — dimensioned drawing</title>
+  <desc id="d">Plate 300 × 75mm, grip centres 179mm. Cylinder cutout Ø32mm. Projection 60mm. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <path d="M0.00 0.00 L300.00 0.00 L300.00 75.00 L0.00 75.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <line x1="60.50" y1="-10.00" x2="60.50" y2="85.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="239.50" y1="-10.00" x2="239.50" y2="85.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <circle cx="150.00" cy="37.50" r="16.00" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <circle cx="60.50" cy="37.50" r="5.00" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <circle cx="239.50" cy="37.50" r="5.00" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="60.5" y1="78" x2="60.5" y2="103" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="239.5" y1="78" x2="239.5" y2="103" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="60.5" y1="99" x2="136.76" y2="99" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="163.24" y1="99" x2="239.5" y2="99" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M60.50 99.00 L64.70 100.18 L64.70 97.82 Z" fill="#16150f"/>
+    <path d="M239.50 99.00 L235.30 97.82 L235.30 100.18 Z" fill="#16150f"/>
+    <text x="150" y="102.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">179</text>
+    <line x1="0" y1="78" x2="0" y2="131" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="300" y1="78" x2="300" y2="131" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="127" x2="136.76" y2="127" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="163.24" y1="127" x2="300" y2="127" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 127.00 L4.20 128.18 L4.20 125.82 Z" fill="#16150f"/>
+    <path d="M300.00 127.00 L295.80 125.82 L295.80 128.18 Z" fill="#16150f"/>
+    <text x="150" y="130.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">300</text>
+    <line x1="303" y1="0" x2="330" y2="0" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="303" y1="75" x2="330" y2="75" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="326" y1="0" x2="326" y2="29.8" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="326" y1="45.2" x2="326" y2="75" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M326.00 0.00 L324.82 4.20 L327.18 4.20 Z" fill="#16150f"/>
+    <path d="M326.00 75.00 L327.18 70.80 L324.82 70.80 Z" fill="#16150f"/>
+    <text x="326" y="37.5" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 326 37.5)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">75</text>
+    <line x1="161.2" y1="26.3" x2="201.2" y2="-14" stroke="#8e8a80" stroke-width="0.7"/>
+    <circle cx="161.2" cy="26.3" r="1.6" fill="#16150f"/>
+    <text x="205.2" y="-14" font-size="11" fill="#16150f" text-anchor="start" dominant-baseline="central" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">Ø32</text>
+    </g>
+    <text x="76" y="205" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

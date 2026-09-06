@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 320" role="img" aria-labelledby="t d">
+  <title id="t">5835 Night Latch And Rim Lock — bolt detail</title>
+  <desc id="d">Backset 50mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <line x1="25" y1="-10" x2="25" y2="96" stroke="#8e8a80" stroke-width="1.6" stroke-dasharray="10 5"/>
+    <path d="M12.00 23.00 L25.00 23.00 L25.00 37.00 L12.00 37.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <path d="M0.00 53.00 L25.00 53.00 L25.00 67.00 L0.00 67.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <line x1="-14.00" y1="45.00" x2="106.00" y2="45.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="75.00" y1="-10.00" x2="75.00" y2="96.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <circle cx="75.00" cy="45.00" r="15.00" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="25" y1="93" x2="25" y2="116" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="75" y1="93" x2="75" y2="116" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="112" x2="39.84" y2="112" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="60.16" y1="112" x2="75" y2="112" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M25.00 112.00 L29.20 113.18 L29.20 110.82 Z" fill="#16150f"/>
+    <path d="M75.00 112.00 L70.80 110.82 L70.80 113.18 Z" fill="#16150f"/>
+    <text x="50" y="115.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">50</text>
+    <line x1="12" y1="93" x2="12" y2="142" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="93" x2="25" y2="142" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="12" y1="138" x2="8.34" y2="138" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="28.66" y1="138" x2="25" y2="138" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M12.00 138.00 L16.20 139.18 L16.20 136.82 Z" fill="#16150f"/>
+    <path d="M25.00 138.00 L20.80 136.82 L20.80 139.18 Z" fill="#16150f"/>
+    <text x="18.5" y="141.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">13</text>
+    <line x1="0" y1="93" x2="0" y2="168" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="93" x2="25" y2="168" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="164" x2="2.34" y2="164" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="22.66" y1="164" x2="25" y2="164" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 164.00 L4.20 165.18 L4.20 162.82 Z" fill="#16150f"/>
+    <path d="M25.00 164.00 L20.80 162.82 L20.80 165.18 Z" fill="#16150f"/>
+    <text x="12.5" y="167.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">25</text>
+    <text x="25" y="196" font-size="10" fill="#8e8a80" text-anchor="middle" font-family="'Archivo',Arial,sans-serif">closing edge</text>
+    </g>
+    <text x="76" y="298" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

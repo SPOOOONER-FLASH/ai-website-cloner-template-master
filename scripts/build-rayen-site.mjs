@@ -78,19 +78,55 @@ const HYDE_FAVICON_PAYLOAD =
 
 const targetFiles = walk(TARGET);
 let rewritten = 0;
+/* Files another process held open; collected so the run reports them instead of dying. */
+const unreadable = [];
 
 for (const file of targetFiles) {
   const ext = file.slice(file.lastIndexOf("."));
   if (!REWRITABLE.has(ext)) continue;
-  const before = readFileSync(file, "utf8");
+  /*
+    A FAILED READ MUST NOT KILL THE RELEASE.
+
+    On 2026-09-06 this threw `UNKNOWN, errno -4094` on a file that plainly existed, and
+    because `npm run build` chains this after `next build`, the whole deploy:prep aborted
+    before a single release check ran — 1,029 pages built and thrown away over one
+    cosmetic find-and-replace on a secondary site.
+
+    The cause is two agents building in one checkout: Windows returns that errno when
+    another process has the file open. It is transient, so one retry clears it. What must
+    never happen again is a whole release dying for it, so a file that still cannot be
+    read is counted and skipped rather than thrown.
+  */
+  let before;
+  try {
+    before = readFileSync(file, "utf8");
+  } catch {
+    try {
+      before = readFileSync(file, "utf8");
+    } catch (error) {
+      unreadable.push(`${file} (${error.code ?? "unknown"})`);
+      continue;
+    }
+  }
+
   const after = before
     .replace(ZH_HREF, "/")
     .replace(HYDE_FAVICON, "")
     .replace(HYDE_FAVICON_PAYLOAD, "");
   if (after !== before) {
-    writeFileSync(file, after, "utf8");
-    rewritten += 1;
+    try {
+      writeFileSync(file, after, "utf8");
+      rewritten += 1;
+    } catch (error) {
+      unreadable.push(`${file} (write: ${error.code ?? "unknown"})`);
+    }
   }
+}
+
+if (unreadable.length) {
+  console.warn(`\n⚠ ${unreadable.length} file(s) could not be rewritten — another process holds them:`);
+  for (const line of unreadable.slice(0, 5)) console.warn(`   ${line}`);
+  console.warn("   Re-run this script alone when the tree is quiet; the main build is unaffected.\n");
 }
 
 /* ------------------------------------- 3. bring the assets the pages cite */

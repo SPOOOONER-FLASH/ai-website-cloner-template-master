@@ -165,7 +165,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-panic.webp",
+        src: "/images/editorial/hyde-hero-lockcase.webp",
         label: "Fotografía original de herrajes de control de puertas",
       },
       title: "Envíenos sus requisitos de herrajes",

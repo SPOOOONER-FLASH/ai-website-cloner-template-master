@@ -180,7 +180,7 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-panic.webp",
+        src: "/images/editorial/hyde-hero-lockcase.webp",
         label: "Original catalogue photograph of door-control hardware",
       },
       title: "Send us your hardware requirements",
