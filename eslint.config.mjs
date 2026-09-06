@@ -10,6 +10,12 @@ const eslintConfig = defineConfig([
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
+    /*
+      The RAYEN 雷茵 export, same reasoning as out/: it is build output, it is committed,
+      and it contains Next's minified runtime. Linting it produced 2,100 warnings and 10
+      errors from _buildManifest.js and friends — code we did not write and cannot fix.
+    */
+    "out-rayen/**",
     "build/**",
     ".worktrees/**",
     "next-env.d.ts",

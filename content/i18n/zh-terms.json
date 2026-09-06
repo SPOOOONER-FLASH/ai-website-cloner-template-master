@@ -1,0 +1,1014 @@
+{
+  "_readme": [
+    "RAYEN 雷茵中文站的术语表。scripts/build-chinese-mirror.mjs 读它，把 content/products/*.json",
+    "翻译成 src/data/generated/products-zh.json。这里是唯一的中文词源 —— 不要把中文写进产品 JSON，",
+    "也不要在页面里硬编码中文型号名。",
+    "",
+    "specLabels 必须覆盖 100% 的规格行标签，src/lib/chinese-mirror.test.ts 会失败在缺失的那一条上。",
+    "值的翻译是 phrases（整串精确匹配，先试）+ tokens（长优先的子串替换）。尺寸、毫米、Ø 直接透传 ——",
+    "它们本来就不需要翻译，而且是中国买家真正要看的东西。",
+    "",
+    "series 里所有 Hyland/HYDE 开头的条目都必须映射成品牌中立的中文系列名。雷茵站上不能出现出口品牌的",
+    "型号前缀 —— 那是另一个牌子的东西。"
+  ],
+  "specLabels": {
+    "Material": "材质",
+    "Finish": "表面处理",
+    "Application": "适用场景",
+    "Function": "功能",
+    "Door thickness": "适用门厚",
+    "Chassis": "锁芯座",
+    "Handing": "开向",
+    "Backset": "背距",
+    "Trim": "外装件",
+    "Cylinder": "锁芯",
+    "Cycle life": "耐久次数",
+    "Keying": "钥匙系统",
+    "Latch": "锁舌",
+    "Size": "尺寸",
+    "Feature": "特点",
+    "Length": "长度",
+    "Strike": "锁扣板",
+    "Deadbolt throw": "方舌伸出",
+    "Centre distance": "中心距",
+    "Latch extension": "锁舌伸出",
+    "Thickness": "厚度",
+    "Installation": "安装方式",
+    "Key options": "钥匙选项",
+    "Color": "颜色",
+    "Projection": "出墙距离",
+    "Spindle Hole": "方轴孔",
+    "Strike Plate Material": "锁扣板材质",
+    "Opening Angle": "开启角度",
+    "Lever length": "执手长度",
+    "Cross bore": "锁孔直径",
+    "Width": "宽度",
+    "Tube diameter": "管径",
+    "Rose diameter": "圆盖直径",
+    "Customization": "定制",
+    "Lever section": "执手截面",
+    "Type": "类型",
+    "Spindle": "方轴",
+    "Rose thickness": "圆盖厚度",
+    "Diameter": "直径",
+    "Viewing Angle": "可视角度",
+    "Rosette Diameter": "圆盖直径",
+    "Standoff": "支撑柱",
+    "Door Type": "门型",
+    "Packing": "包装",
+    "Door Width": "门宽",
+    "Capacity": "承重",
+    "Max opening angle": "最大开启角度",
+    "Handle Material": "执手材质",
+    "Operation": "操作方式",
+    "Height": "高度",
+    "Tube Thickness": "管壁厚度",
+    "Fixing centre": "固定孔距",
+    "Glass gap": "玻璃间隙",
+    "Opening": "开启方式",
+    "OEM / ODM": "OEM / ODM",
+    "Rose depth": "圆盖深度",
+    "Lens": "镜片",
+    "Faceplate": "面板",
+    "Plate size": "面板尺寸",
+    "Product Type": "产品类型",
+    "Structure": "结构",
+    "OEM & ODM": "OEM / ODM",
+    "Color Options": "可选颜色",
+    "Deadbolt": "方舌",
+    "Surface Finish": "表面处理",
+    "Trim Material": "外装件材质",
+    "Included Accessories": "随附配件",
+    "Installation Method": "安装方式",
+    "Factory reference": "工厂编号",
+    "Bolts": "插销",
+    "Plate thickness": "面板厚度",
+    "Plate width": "面板宽度",
+    "Pieces per carton": "每箱数量",
+    "Carton size": "箱规",
+    "Carton volume": "箱体积",
+    "Bar section": "推杠截面",
+    "Bar Length": "推杠长度",
+    "Fire Rating": "耐火等级",
+    "Handling": "开向",
+    "Push Bar Material": "推杠材质",
+    "Latch Material": "锁舌材质",
+    "Accessories": "配件",
+    "Suitable for": "适用于",
+    "Options": "可选项",
+    "Style": "款式",
+    "Backplate Material": "底板材质",
+    "Handle Design": "执手造型",
+    "Lock Type Compatibility": "适配锁型",
+    "Case depth": "锁体进深",
+    "Lock Type": "锁型",
+    "Lock Cylinder": "锁芯",
+    "Surface Treatment": "表面处理",
+    "Latch options": "锁舌选项",
+    "Size1": "尺寸 1",
+    "Size2": "尺寸 2",
+    "Size3": "尺寸 3",
+    "Size4": "尺寸 4",
+    "Size5": "尺寸 5",
+    "Size6": "尺寸 6",
+    "Size7": "尺寸 7",
+    "Grip centre distance": "拉手中心距",
+    "Cylinder cutout": "锁芯开孔",
+    "Lever drop": "执手下垂长度",
+    "Includes": "包含",
+    "Use": "用途",
+    "Housing Material": "外壳材质",
+    "Main Body Material": "主体材质",
+    "Outside Lever": "外执手",
+    "Opening Direction": "开启方向",
+    "Opening Method": "开启方式",
+    "Gross weight": "毛重",
+    "Net weight": "净重",
+    "Market": "市场",
+    "Case & Strike Plate": "锁体与锁扣板",
+    "Latch & Puller": "锁舌与拉杆",
+    "Key Types": "钥匙类型",
+    "Finishes": "表面处理",
+    "Product Name": "产品名称",
+    "Durability": "耐久性",
+    "Rose size": "圆盖尺寸",
+    "Design": "设计",
+    "Hooks": "挂钩",
+    "Mounting": "安装",
+    "Sizes": "尺寸",
+    "Hook arm": "钩臂",
+    "Features": "特点",
+    "Exposed Trim Material": "外露件材质",
+    "Footprint": "底座尺寸",
+    "Suitable Door Thickness": "适用门厚",
+    "Specifications": "规格",
+    "Compatible With": "适配",
+    "Spindle Material": "方轴材质",
+    "Key Material": "钥匙材质",
+    "Fixing centres": "固定孔距",
+    "Plate height": "面板高度",
+    "Spindle length": "方轴长度",
+    "Grip length": "拉手长度",
+    "Grip section": "拉手截面",
+    "Slot width": "槽宽",
+    "Inner Material": "内部材质",
+    "Handle": "执手",
+    "Set Includes": "套装包含",
+    "2. Dual center distances": "双中心距",
+    "Alarm Function": "报警功能",
+    "Unlocking Method": "开锁方式",
+    "Optional Function": "可选功能",
+    "Locking System": "锁定系统",
+    "Available Versions": "可选版本",
+    "Key Required": "是否需要钥匙",
+    "Outside Handle": "外执手",
+    "Latch Bolt Material": "斜舌材质",
+    "Thumbturn Button": "旋钮",
+    "Lock Cylinder Housing": "锁芯外壳",
+    "Cylinder Core": "锁芯芯体",
+    "Tail Bar": "尾片",
+    "Cylinder Decorative Ring": "锁芯装饰圈",
+    "Decorative Plate": "装饰板",
+    "Screws": "螺丝",
+    "Body": "主体",
+    "Finishes Available": "可选表面处理",
+    "Key": "钥匙",
+    "OEM & Sample": "OEM 与样品",
+    "Process": "工艺",
+    "Surface Finish Options": "可选表面处理",
+    "Fixing screws": "固定螺丝",
+    "Rosette": "圆盖",
+    "Applications": "适用场景",
+    "Rosette Size": "圆盖尺寸",
+    "Drop": "下垂长度",
+    "Stem": "立柱",
+    "Overall length": "总长",
+    "Upper hook": "上钩",
+    "LOGO": "LOGO",
+    "OEM /ODM": "OEM / ODM",
+    "Closing Sequence": "关门顺序",
+    "Installation Position": "安装位置",
+    "Base diameter": "底座直径",
+    "Body diameter": "主体直径",
+    "Stem diameter": "立柱直径",
+    "Roller Material": "滚轮材质",
+    "Lens Cover": "镜盖",
+    "Lens Cover Material": "镜盖材质",
+    "Available Diameters": "可选直径",
+    "Cover material": "盖板材质",
+    "Diameter size": "直径尺寸",
+    "Viewing angle": "可视角度",
+    "Cover": "盖板",
+    "Door Thickness Range": "适用门厚范围",
+    "Applicable Door Thickness": "适用门厚",
+    "Weight": "重量",
+    "Depth": "进深",
+    "Hardware Finish": "五金表面处理",
+    "Additional Info": "补充说明",
+    "Mounting Style": "安装形式",
+    "Mounting Location": "安装位置",
+    "Burglar Rated": "防盗等级",
+    "Rated Opening Compliant": "认证开口合规",
+    "BAA Compliant": "符合 BAA",
+    "Country of Origin": "原产地",
+    "Pin Material": "销轴材质",
+    "Max Bearing Capacity": "最大承重",
+    "Closing Force": "闭门力",
+    "Lengths": "长度",
+    "Main body": "主体",
+    "Inner body": "内体",
+    "Glass door thickness": "玻璃门厚度",
+    "Cylinder material": "锁芯材质",
+    "Key material": "钥匙材质",
+    "Model": "型号",
+    "Latch Components": "锁舌组件",
+    "Suitable For": "适用于",
+    "Nominal lock body": "标称锁体",
+    "Hook bolt": "钩舌",
+    "Lock case": "锁体",
+    "Hole Count": "孔数",
+    "Case height": "锁体高度",
+    "Latch throw": "斜舌伸出",
+    "Bolt projection": "舌伸出",
+    "Deadbolt Material": "方舌材质",
+    "Center Distance": "中心距",
+    "Faceplate to cylinder centre": "面板至锁芯中心",
+    "Cylinder centre to back": "锁芯中心至后端",
+    "Mechanism": "机构",
+    "Keys Supplied": "随附钥匙",
+    "Key Type": "钥匙类型",
+    "Cylinder Type": "锁芯类型",
+    "Spring": "弹簧",
+    "OEM": "OEM",
+    "Available lengths": "可选长度",
+    "Compatibility": "兼容性",
+    "Finish & Color": "表面处理与颜色"
+  },
+  "productNames": {
+    "Bathroom Accessories": "浴室配件",
+    "Lock Case": "锁体",
+    "Lever Handle": "执手锁",
+    "Stainless Steel Handle": "不锈钢拉手",
+    "Panic Exit Device": "逃生推杠",
+    "Tubular Lock": "管状锁",
+    "Brass and Steel Hinges": "铜/钢合页",
+    "Heavy Duty Cylindrical Lock": "重型球锁",
+    "Night Latch And Rim Lock": "外装门锁",
+    "Night Latch & Rim Lock": "外装门锁",
+    "Lock Cylinder": "锁芯",
+    "Door viewer": "猫眼",
+    "Light Duty Cylindrical Lock": "轻型球锁",
+    "Grip Handle Set": "大拉手套装",
+    "Glass Door Handle": "玻璃门拉手",
+    "Door Flush Bolt": "门插销",
+    "Glass Door Patch Fittings": "玻璃门夹",
+    "Glass Door Patch Fitting Set": "玻璃门夹套装",
+    "Door Closer": "闭门器",
+    "Latch": "锁舌",
+    "Door Stopper": "门碰",
+    "Deadbolts": "呆锁",
+    "Commercial Lock": "商用锁",
+    "Security Door Guard": "防盗链",
+    "S-Panic Exit Device": "S 型逃生推杠",
+    "D-Panic Exit Device": "D 型逃生推杠",
+    "Indicator": "指示锁",
+    "Sliding Hook Lock": "移门钩锁",
+    "Exterior Trim": "外开装置",
+    "Anti-Pick Panic Exit Device Trim": "防撬逃生推杠外装置",
+    "Fire Door Panic Exit Device": "防火门逃生推杠",
+    "Double Door Panic Exit Device": "双门逃生推杠",
+    "Alarm Panic Bar Exit Device": "报警逃生推杠",
+    "Pry Latch": "撬压式锁舌",
+    "Cold Room Push Bar Exit Device": "冷库推杠",
+    "Two Point Locking Exit Device": "两点锁逃生推杠",
+    "Concealed Sliding Door Handle": "隐藏式移门拉手",
+    "Keyed Deadbolt Lock Set": "带钥匙呆锁套装",
+    "Black Tubular Lever Lock Set": "黑色管状执手锁套装",
+    "Cylindrical Knob Lock": "球形门锁",
+    "Tubular Knob Lock": "管状球锁",
+    "Door Coordinator": "顺位器",
+    "Door Power Transfer Devices": "过线器",
+    "Door Hinge": "合页",
+    "Standard Mortise Lock Body": "标准插芯锁体",
+    "Security Mortise Lock Body": "防盗插芯锁体",
+    "Hook-Bolt Mortise Lock": "钩舌插芯锁",
+    "Slim Mortise Lock Body": "窄边插芯锁体",
+    "Four Bolt Mortise Lock Case": "四舌插芯锁体",
+    "Gate House No": "门牌号",
+    "Stainless Steel Door Hinge": "不锈钢合页",
+    "Stainless Steel Flush Bolt": "不锈钢插销",
+    "Stainless Steel Glass Door Pull Handle": "不锈钢玻璃门拉手",
+    "Stainless Steel Lever Handle Lock": "不锈钢执手锁",
+    "Stainless Steel Wall Hook": "不锈钢挂钩",
+    "Wooden Door Floor Hinge": "木门地弹簧"
+  },
+  "series": {
+    "Hyland 300": "300 系列",
+    "Hyland 023": "023 系列",
+    "Hyland 600": "600 系列",
+    "Hyland LC14": "LC14 系列",
+    "Hyland Knob": "球锁系列",
+    "Hyland Glass": "玻璃门系列",
+    "Hyland Accessories": "五金配件系列",
+    "Hyland Deadbolt": "呆锁系列",
+    "Hyland Tubular": "管状锁系列",
+    "Hyland Rim": "外装锁系列",
+    "Hyland Hinge": "合页系列",
+    "Hyland Lever": "执手系列",
+    "Hyland Floor Spring": "地弹簧系列",
+    "HYDE Argentina AR-4": "AR-4 系列"
+  },
+  "phrases": {
+    "All Available": "全部可选",
+    "Other Available": "其他可选",
+    "Custom Colors Available": "可定制颜色",
+    "Custom Finish": "定制表面处理",
+    "Multiple Finish": "多种表面处理",
+    "PB Are Available": "可选抛光铜",
+    "BN Available": "可选黑镍",
+    "SC All Available": "缎面铬全部可选",
+    "Pb=polish Brass": "PB=抛光铜",
+    "Pb=polished Brass": "PB=抛光铜",
+    "Sc= Satin Chrome": "SC=缎面铬",
+    "Sn=satin Nickel": "SN=缎面镍",
+    "BN Black Nickle": "BN=黑镍",
+    "PB Brass Polish": "PB=抛光铜",
+    "Satin+Polished": "缎面+抛光",
+    "Matte Black.（Custom colors available.）": "哑黑（可定制颜色）",
+    "Gold (Customizable": "金色（可定制）",
+    "SC ；other Available": "缎面铬；其他可选",
+    "CP other finish to order": "镀铬；其他表面处理可订制",
+    "SC (Custom Available)": "缎面铬（可定制）",
+    "black or chrome-plated.": "黑色或镀铬",
+    "black or other finish also is available.": "黑色，其他表面处理亦可",
+    "Painted optional.": "可选喷涂",
+    "Stainless steel/Brass/Solid steel": "不锈钢 / 黄铜 / 实心钢",
+    "Brass Or Stainless Steel": "黄铜或不锈钢",
+    "steel material with spray painting , different finishes are available .": "钢材喷涂，可选多种表面处理",
+    "for lavatory or other privacy doors": "适用于卫生间等需要私密的门",
+    "Suitable for left & right usage": "左右开通用",
+    "Residential And Commercial Use": "住宅与商用",
+    "Light Commercial Use": "轻商用",
+    "Wall-mounted interior accessory": "壁挂式室内配件",
+    "KFC Lock Bodies": "快餐店门锁体",
+    "Aluminum Narrow Door Lock Bodies": "铝合金窄边门锁体",
+    "bathroom...": "卫生间",
+    "panic door .": "逃生门",
+    "Fully reversible, left or right hand": "完全可逆，左右开通用",
+    "Non-handed, left or right hand": "不分左右，左右开通用",
+    "35mm to 45mm adjustable": "35–45mm 可调",
+    "60mm / 70mm adjustable": "60mm / 70mm 可调",
+    "60mm / 70mm adjustable, latch and deadbolt both": "60mm / 70mm 可调，斜舌与方舌同步",
+    "35mm to 55mm standard; 30mm to 60mm on request": "标准 35–55mm；可订 30–60mm",
+    "Zinc die-casting electro-plated or solid brass": "锌合金压铸电镀或实心黄铜",
+    "Forged solid brass or zinc die-casting electro-plated": "锻造实心黄铜或锌合金压铸电镀",
+    "Zinc die-cast case, zinc-plated steel internal components": "锌合金压铸外壳，内部件为镀锌钢",
+    "Solid steel chassis and latch case, zinc plated": "实心钢锁芯座与锁舌壳，镀锌",
+    "Solid steel, zinc plated for corrosion resistance": "实心钢，镀锌防腐",
+    "Solid steel internal construction, corrosion protected": "内部实心钢结构，做防腐处理",
+    "Wrought stainless steel or brass": "锻造不锈钢或黄铜",
+    "Entrance — keyed outside": "入户功能 —— 外侧用钥匙",
+    "Privacy — bathroom, turn button inside": "浴室功能 —— 内侧旋钮，无钥匙",
+    "Satin Stainless Steel (SSS), Polished Stainless Steel (PSS)": "缎面不锈钢（SSS）、抛光不锈钢（PSS）",
+    "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选",
+    "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Chrome Plated (CP), Satin Nickel (SN)": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、镀铬（CP）、缎面镍（SN）",
+    "Satin nickel, chrome, antique brass, polished brass,all available": "缎面镍、镀铬、仿古铜、抛光铜均可选",
+    "Can be keyed alike with deadbolts, or master keyed": "可与呆锁同花，或配总钥匙",
+    "Can be keyed alike to deadbolts": "可与呆锁同花",
+    "Can be keyed alike to the deadbolt series, or master keyed": "可与呆锁系列同花，或配总钥匙",
+    "Deadlocking on keyed functions": "带钥匙功能具备防撬锁死",
+    "Residential use": "住宅用",
+    "Standard residential use": "标准住宅用",
+    "Commercial offices, schools and heavy-duty residential": "商用办公楼、学校及重型住宅",
+    "57mm curved lip standard; 70mm available on request": "57mm 弧形唇边为标准；可订 70mm",
+    "Angle strike standard for inward-opening doors; flat strike available": "内开门标配斜角锁扣板；可选平板锁扣板",
+    "5-pin tumbler, brass plug, two nickel-plated brass keys": "5 弹子，黄铜锁芯，配两把镀镍黄铜钥匙",
+    "13mm, with inside deadlocking button": "13mm，内侧带锁死按钮",
+    "25mm on rim deadbolt versions": "外装呆锁版本为 25mm",
+    "25mm, with hardened steel insert to resist sawing": "25mm，内嵌淬火钢防锯断",
+    "Anti-picking slide gate on single-cylinder deadlock": "单锁芯呆锁带防技术开启滑板",
+    "Single cylinder, double cylinder or self-locking": "单锁芯、双锁芯或自锁",
+    "51mm — replaces most existing locksets": "51mm —— 可替换大多数现有锁具",
+    "No exposed exterior fixings; free-turning cylinder ring resists wrenching": "外侧无外露固定件；空转锁芯圈防扭拧",
+    "Brass cylinder": "黄铜锁芯",
+    "Copper": "红铜",
+    "Copper Construction": "红铜结构",
+    "Available": "可选",
+    "Euro profile": "欧标锁芯",
+    "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.": "304 不锈钢电镀，用于逃生推杠"
+  },
+  "tokens": [
+    [
+      "304SS",
+      "304 不锈钢"
+    ],
+    [
+      "304 Stainless Steel",
+      "304 不锈钢"
+    ],
+    [
+      "Stainless Steel 316",
+      "316 不锈钢"
+    ],
+    [
+      "Stainless Steel 304/201",
+      "304/201 不锈钢"
+    ],
+    [
+      "Stainless Steel 201/304",
+      "201/304 不锈钢"
+    ],
+    [
+      "Stainless Steel201/304",
+      "201/304 不锈钢"
+    ],
+    [
+      "201 / 304 Stainless steel",
+      "201/304 不锈钢"
+    ],
+    [
+      "201/304 Stainless Steel",
+      "201/304 不锈钢"
+    ],
+    [
+      "Stainless Steel 304",
+      "304 不锈钢"
+    ],
+    [
+      "Satin Stainless Steel",
+      "缎面不锈钢"
+    ],
+    [
+      "Stainless steel",
+      "不锈钢"
+    ],
+    [
+      "Stainless Steel",
+      "不锈钢"
+    ],
+    [
+      "Aluminium Alloy",
+      "铝合金"
+    ],
+    [
+      "Aluminum Alloy",
+      "铝合金"
+    ],
+    [
+      "Zinc Alloy",
+      "锌合金"
+    ],
+    [
+      "Zinc-Plated Steel",
+      "镀锌钢"
+    ],
+    [
+      "Nickel Plated Iron",
+      "镀镍铁"
+    ],
+    [
+      "Nickel-plated iron lock case",
+      "镀镍铁锁体"
+    ],
+    [
+      "Carbon Steel",
+      "碳钢"
+    ],
+    [
+      "Hardened Steel",
+      "淬火钢"
+    ],
+    [
+      "Solid Brass",
+      "实心黄铜"
+    ],
+    [
+      "Antique Brass",
+      "仿古铜"
+    ],
+    [
+      "Polished Brass",
+      "抛光铜"
+    ],
+    [
+      "Antique Copper",
+      "仿古红铜"
+    ],
+    [
+      "Satin Nickel",
+      "缎面镍"
+    ],
+    [
+      "Stain Nickel",
+      "缎面镍"
+    ],
+    [
+      "Black Nickel",
+      "黑镍"
+    ],
+    [
+      "Satin Chrome",
+      "缎面铬"
+    ],
+    [
+      "Mirror Polished",
+      "镜面抛光"
+    ],
+    [
+      "Polished Stainless",
+      "抛光不锈钢"
+    ],
+    [
+      "Satin Stainless",
+      "缎面不锈钢"
+    ],
+    [
+      "Brushed Satin",
+      "拉丝缎面"
+    ],
+    [
+      "Powder-Coated Black",
+      "黑色粉末喷涂"
+    ],
+    [
+      "Black Powder Coat",
+      "黑色粉末喷涂"
+    ],
+    [
+      "Powder Coating",
+      "粉末喷涂"
+    ],
+    [
+      "Anodised Silver",
+      "阳极氧化银"
+    ],
+    [
+      "Spray Painting Silver Color",
+      "银色喷涂"
+    ],
+    [
+      "Gray Spray Painted",
+      "灰色喷涂"
+    ],
+    [
+      "Spray Painting",
+      "喷涂"
+    ],
+    [
+      "Spray Coated",
+      "喷涂"
+    ],
+    [
+      "Zinc Plated",
+      "镀锌"
+    ],
+    [
+      "Zinc-Plated",
+      "镀锌"
+    ],
+    [
+      "Nickel-plated",
+      "镀镍"
+    ],
+    [
+      "Matte Black",
+      "哑黑"
+    ],
+    [
+      "Matt Black",
+      "哑黑"
+    ],
+    [
+      "Aluminium",
+      "铝"
+    ],
+    [
+      "Aluminum",
+      "铝"
+    ],
+    [
+      "Plastic",
+      "塑料"
+    ],
+    [
+      "Brass",
+      "黄铜"
+    ],
+    [
+      "Steel",
+      "钢"
+    ],
+    [
+      "Iron",
+      "铁"
+    ],
+    [
+      "Silver",
+      "银色"
+    ],
+    [
+      "Bronze",
+      "青铜"
+    ],
+    [
+      "Black",
+      "黑色"
+    ],
+    [
+      "White",
+      "白色"
+    ],
+    [
+      "Gold",
+      "金色"
+    ],
+    [
+      "Red",
+      "红色"
+    ],
+    [
+      "Chrome",
+      "镀铬"
+    ],
+    [
+      "Painting",
+      "喷涂"
+    ],
+    [
+      "Painted",
+      "喷涂"
+    ],
+    [
+      "Satin",
+      "缎面"
+    ],
+    [
+      "Fire Doors",
+      "防火门"
+    ],
+    [
+      "Fire Door",
+      "防火门"
+    ],
+    [
+      "Fireproof Doors",
+      "防火门"
+    ],
+    [
+      "Timber Fire Door",
+      "木质防火门"
+    ],
+    [
+      "Steel Fire Door",
+      "钢质防火门"
+    ],
+    [
+      "Fire Double Door",
+      "防火双开门"
+    ],
+    [
+      "Emergency Exit Doors",
+      "紧急疏散门"
+    ],
+    [
+      "Emergency Exit Door",
+      "紧急疏散门"
+    ],
+    [
+      "Commercial Emergency Exit Door",
+      "商用紧急疏散门"
+    ],
+    [
+      "Double Leaf Escape Door",
+      "双扇疏散门"
+    ],
+    [
+      "Escape Door",
+      "疏散门"
+    ],
+    [
+      "Cold-Room Door",
+      "冷库门"
+    ],
+    [
+      "Insulated Enclosure Door",
+      "保温围护门"
+    ],
+    [
+      "Toilet Cubicle Door",
+      "卫生间隔断门"
+    ],
+    [
+      "Restroom Door",
+      "卫生间门"
+    ],
+    [
+      "Bathroom Hotel",
+      "酒店卫生间"
+    ],
+    [
+      "Hotel Bathroom",
+      "酒店卫生间"
+    ],
+    [
+      "Bathroom Bath Partition Hardware",
+      "卫浴隔断五金"
+    ],
+    [
+      "Bathroom",
+      "卫生间"
+    ],
+    [
+      "Living Room",
+      "客厅"
+    ],
+    [
+      "Bedroom",
+      "卧室"
+    ],
+    [
+      "Apartment",
+      "公寓"
+    ],
+    [
+      "Household",
+      "家用"
+    ],
+    [
+      "Hotel",
+      "酒店"
+    ],
+    [
+      "Office Door",
+      "办公室门"
+    ],
+    [
+      "Office",
+      "办公室"
+    ],
+    [
+      "Offices",
+      "办公楼"
+    ],
+    [
+      "Shops",
+      "商铺"
+    ],
+    [
+      "Malls",
+      "商场"
+    ],
+    [
+      "Supermarkets",
+      "超市"
+    ],
+    [
+      "Public Building",
+      "公共建筑"
+    ],
+    [
+      "Commercial Buildings",
+      "商业建筑"
+    ],
+    [
+      "Commercial Entrance Door",
+      "商用入户门"
+    ],
+    [
+      "Commercial Entry Systems",
+      "商用门系统"
+    ],
+    [
+      "Commercial Double Doors",
+      "商用双开门"
+    ],
+    [
+      "Commercial Door",
+      "商用门"
+    ],
+    [
+      "Aluminum Storefront Doors",
+      "铝合金店面门"
+    ],
+    [
+      "Aluminum Storefront Door",
+      "铝合金店面门"
+    ],
+    [
+      "Aluminium Storefront",
+      "铝合金店面门"
+    ],
+    [
+      "Residential Doors",
+      "住宅门"
+    ],
+    [
+      "Security Doors",
+      "防盗门"
+    ],
+    [
+      "Armored Doors",
+      "装甲门"
+    ],
+    [
+      "Entrance Doors",
+      "入户门"
+    ],
+    [
+      "Entrance Door Lock",
+      "入户门锁"
+    ],
+    [
+      "Timber Entrance Door",
+      "木质入户门"
+    ],
+    [
+      "Metal Entrance Door",
+      "金属入户门"
+    ],
+    [
+      "Interior Doors",
+      "室内门"
+    ],
+    [
+      "Interior Door",
+      "室内门"
+    ],
+    [
+      "Passage Door",
+      "通道门"
+    ],
+    [
+      "Wooden Doors",
+      "木门"
+    ],
+    [
+      "Wooden Door",
+      "木门"
+    ],
+    [
+      "Double Timber Door",
+      "木质双开门"
+    ],
+    [
+      "Double Metal Door",
+      "金属双开门"
+    ],
+    [
+      "Double-Leaf Doors",
+      "双扇门"
+    ],
+    [
+      "Double Doors",
+      "双开门"
+    ],
+    [
+      "Double Door",
+      "双开门"
+    ],
+    [
+      "Single Door",
+      "单开门"
+    ],
+    [
+      "Metal Doors",
+      "金属门"
+    ],
+    [
+      "Metal Door",
+      "金属门"
+    ],
+    [
+      "Iron Door",
+      "铁门"
+    ],
+    [
+      "Sliding Door",
+      "移门"
+    ],
+    [
+      "Pocket Door",
+      "推拉门"
+    ],
+    [
+      "Swing Doors",
+      "平开门"
+    ],
+    [
+      "Outswing Doors",
+      "外开门"
+    ],
+    [
+      "Cafe Doors",
+      "咖啡厅门"
+    ],
+    [
+      "Kitchen Doors",
+      "厨房门"
+    ],
+    [
+      "Furniture Door",
+      "家具门"
+    ],
+    [
+      "Cabinet Doors",
+      "柜门"
+    ],
+    [
+      "Frameless Glass",
+      "无框玻璃"
+    ],
+    [
+      "Glass Doors",
+      "玻璃门"
+    ],
+    [
+      "Glass Door",
+      "玻璃门"
+    ],
+    [
+      "Door Safety",
+      "门体安全"
+    ],
+    [
+      "Door Security",
+      "门体防盗"
+    ],
+    [
+      "Door Lock",
+      "门锁"
+    ],
+    [
+      "Windows",
+      "窗"
+    ],
+    [
+      "Window",
+      "窗"
+    ],
+    [
+      "Doors",
+      "门"
+    ],
+    [
+      "Timber",
+      "木质"
+    ],
+    [
+      "Cylindrical Door Lock",
+      "球形门锁"
+    ],
+    [
+      "Tubular Lock",
+      "管状锁"
+    ],
+    [
+      "Lever Handle Lock",
+      "执手锁"
+    ],
+    [
+      "Lever Handle",
+      "执手"
+    ],
+    [
+      "Entrance",
+      "入户"
+    ],
+    [
+      "Passage",
+      "通道"
+    ],
+    [
+      "Privacy",
+      "浴室（无钥匙）"
+    ],
+    [
+      "Storeroom",
+      "储藏室"
+    ],
+    [
+      "Classroom",
+      "教室"
+    ],
+    [
+      "Keyed Alike",
+      "同花"
+    ],
+    [
+      "Keyed Different",
+      "异花"
+    ],
+    [
+      "Master Key",
+      "总钥匙"
+    ],
+    [
+      "cycles",
+      "次"
+    ],
+    [
+      "Reversible",
+      "左右通用"
+    ]
+  ]
+}

@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* ===========================================================================
+ * RAYEN 雷茵 — 中文站样式
+ * ===========================================================================
+ *
+ * 为什么不复用 src/app/globals.css：那份是 HYDE 的单色系统，开头就写着
+ * "interface red is intentionally removed"。雷茵的商标本身是黑字加一块红 ——
+ * 用 HYDE 的调色板等于把另一个牌子的规矩套在这个牌子上。两份样式表各自独立，
+ * 改这里不会碰到已上线的 cantonlock.com。
+ *
+ * 视觉取向（见 2026-09-06 的方案讨论）：
+ *   悍高的克制 —— 一屏一件事、大留白、零动效、不做轮播。
+ *   顶固的骨架 —— 清楚的两级栏目、页脚大 sitemap。
+ *   红色是标记，不是装饰：只用在当前项下划线、强调数字、主按钮。铺满一屏的红
+ *   会让页面看起来在推销，而这个站要的是"这家厂不会出错"。
+ * ======================================================================== */
+
+@theme {
+  /* -- 颜色 -------------------------------------------------------------- */
+  --color-ink: #111111; /* 正文与标题 */
+  --color-ink-2: #5a5a5a; /* 说明文字 */
+  --color-ink-3: #8a8a8a; /* 次要标注、表头 */
+  --color-accent: #e60012; /* 商标红。用得越少越值钱 */
+  --color-line: #e2e2e2;
+  --color-line-strong: #111111;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f6f6f6;
+  --color-surface-dark: #111111;
+
+  /* -- 字体 --------------------------------------------------------------
+   * 中文用系统字体栈，一个字节都不下载。
+   *
+   * 这不是省事，是这台服务器在法兰克福。一份思源黑体子集也有几百 KB，中国访客要
+   * 跨半个地球取它，而 PingFang / 微软雅黑 在买家自己的机器上已经存在且渲染更好。
+   * src/app/fonts.ts 里那段关于 fonts.googleapis.com 在中国被墙、首屏白屏 24 秒的
+   * 记录，是同一个教训的上一集。
+   *
+   * Archivo 只用在拉丁字母和型号数字上（RAYEN、001、300 × 75mm），中文回落到系统栈。
+   * ------------------------------------------------------------------- */
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  --font-latin: var(--font-archivo), system-ui, sans-serif;
+
+  --radius-card: 2px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    /* 中文正文比拉丁文需要更松的行距，1.5 以下会糊成一块。 */
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  /* 型号、尺寸、英文缩写走拉丁字体，和中文并排时不会忽大忽小。 */
+  .latin {
+    font-family: var(--font-latin);
+    letter-spacing: 0.04em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* 页面宽度。1280 是给规格表留的 —— 再窄的话八列参数在笔记本上要横向滚动。 */
+  .shell {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: 40px;
+    }
+  }
+
+  /* 栏目小标题：英文在上，中文在下。顶固和悍高都用这个结构，中国工业站的通用语法。 */
+  .eyebrow {
+    font-family: var(--font-latin);
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+
+  /* 当前导航项的红色短下划线。悬停时也是它 —— 只有一种强调方式。 */
+  .navlink {
+    position: relative;
+    padding-block: 6px;
+  }
+
+  .navlink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 180ms ease;
+  }
+
+  .navlink:hover::after,
+  .navlink[data-current="true"]::after {
+    transform: scaleX(1);
+  }
+
+  /* 卡片：1px 边框，无圆角无阴影无渐变。金属件的照片自己会说话。 */
+  .card {
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+    transition: border-color 180ms ease;
+  }
+
+  .card:hover {
+    border-color: var(--color-line-strong);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 1px solid var(--color-ink);
+    transition:
+      background-color 180ms ease,
+      color 180ms ease;
+  }
+
+  .btn-solid {
+    background: var(--color-ink);
+    color: #ffffff;
+  }
+
+  .btn-solid:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .btn-ghost:hover {
+    background: var(--color-ink);
+    color: #ffffff;
+  }
+
+  /* 规格表。窄屏横向滚动，绝不压缩数字换行 —— 一个折行的 300 × 75mm 会被读错。 */
+  .spec-scroll {
+    overflow-x: auto;
+  }
+
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  .spec-table th,
+  .spec-table td {
+    border-bottom: 1px solid var(--color-line);
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .spec-table th {
+    width: 200px;
+    color: var(--color-ink-2);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

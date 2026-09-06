@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Codex | ProductsEditorialOverview, SiteMenuDrawer, editorial composition components/styles, design docs, out/ | Approved Products A→B→C→D and full-page D/A menu; real catalogue photos | 2026-09-06 |
 
 > 2026-08-31 claude 已交还发布接力棒：941 页已构建、提交并推送（6b66bfdd）。
 > ⚠ 那次构建里含 Codex 尚未提交的首页改动（home.ts / home-es.ts /

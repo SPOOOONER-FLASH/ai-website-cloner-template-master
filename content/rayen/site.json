@@ -1,0 +1,72 @@
+{
+  "_readme": [
+    "RAYEN 雷茵中文站的唯一事实来源。src/data/rayen.ts 读它。",
+    "",
+    "规则：这里只放能核实的东西。客户 2026-09-06 明确说「成立年份 2026，其他都不写」——",
+    "所以没有厂房面积、没有产线数、没有出口国家数、没有年产能，也不要因为页面看起来空就补一个。",
+    "空字符串会在页面上渲染成一条短横线并从结构化数据里剔除，这是设计好的行为，不是 bug。",
+    "见 AGENTS.md「Say what is not known」。",
+    "",
+    "phone / wechat / alibaba1688 现在是空的：cantonlock 的美国号码和 lock@cantonlock.com 是 HYDE 的，",
+    "不是雷茵的，放上去就是错的。这三条列在 CLIENT-RUNBOOK 的待补清单里。"
+  ],
+
+  "brand": {
+    "latin": "RAYEN",
+    "zh": "雷茵",
+    "legalName": "中山市雷茵五金制品有限公司",
+    "foundedYear": 2026,
+    "tagline": "机械门锁与门控五金制造",
+    "positioning": "中山小榄的机械门锁工厂。逃生推杠、球锁、执手锁、插芯锁体、玻璃门夹与门控配件，支持来图来样加工。"
+  },
+
+  "contact": {
+    "addressZh": "广东省中山市小榄镇联丰社区乐和路 28 号二楼之二",
+    "city": "中山市",
+    "province": "广东省",
+    "country": "中国",
+    "phone": "",
+    "wechat": "",
+    "email": "",
+    "alibaba1688": ""
+  },
+
+  "capabilities": [
+    { "label": "来图加工", "detail": "按买方图纸开模与生产" },
+    { "label": "来样加工", "detail": "按买方样品复制结构与尺寸" },
+    { "label": "OEM / ODM", "detail": "贴牌与联合开发" }
+  ],
+
+  "certifications": [
+    {
+      "code": "ISO 14001",
+      "label": "ISO 14001 环境管理体系",
+      "note": "1688 工商资质栏展示。证书扫描件待提供后在本页放出。",
+      "scan": ""
+    },
+    {
+      "code": "CCC",
+      "label": "CCC 强制性产品认证",
+      "note": "1688 工商资质栏展示。证书扫描件待提供后在本页放出。",
+      "scan": ""
+    }
+  ],
+
+  "exportBrands": [
+    {
+      "name": "HYDE",
+      "url": "https://www.cantonlock.com/",
+      "note": "面向海外经销商与项目采购的出口品牌，英文 / 西班牙文站。"
+    },
+    {
+      "name": "Stahlock",
+      "url": "https://www.stahlock.com/",
+      "note": "另一条出口线的英文站。"
+    }
+  ],
+
+  "preview": {
+    "host": "spoonercantonlock.stahlock.com",
+    "note": "临时预览域名，正式域名待定。迁移时只改 src/data/rayen.ts 里的 siteUrl 和 nginx 的 server_name。"
+  }
+}

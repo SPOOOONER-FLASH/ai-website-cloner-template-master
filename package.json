@@ -28,15 +28,15 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/normalize-next-export-segments.mjs",
+    "build": "next build && node scripts/normalize-next-export-segments.mjs && node scripts/build-rayen-site.mjs",
     "start": "next start",
-    "test": "node --test scripts/watermark-product-images.test.mjs scripts/stahlock-cited-policy.test.mjs src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-dismissal.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/configurator.test.ts src/lib/search-matching.test.ts src/lib/catalogue-return.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/product-image-branding.test.ts src/lib/spanish-product.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/editorial-image-uniqueness.test.ts src/lib/product-faq.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/data/home-destinations.test.ts src/data/home-editorial-assets.test.ts src/data/search-suggestions.test.ts src/data/subcategory-integrity.test.ts src/data/taxonomy-moves.test.ts src/app/type-scale.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts src/components/site/mobile-navigation.test.ts src/components/site/products-architecture.test.ts src/components/site/menu-experience.test.ts",
+    "test": "node --test scripts/watermark-product-images.test.mjs scripts/stahlock-cited-policy.test.mjs src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-dismissal.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/configurator.test.ts src/lib/search-matching.test.ts src/lib/catalogue-return.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/product-image-branding.test.ts src/lib/spanish-product.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/editorial-image-uniqueness.test.ts src/lib/product-faq.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/data/home-destinations.test.ts src/data/home-editorial-assets.test.ts src/data/search-suggestions.test.ts src/data/subcategory-integrity.test.ts src/data/taxonomy-moves.test.ts src/app/type-scale.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts src/components/site/mobile-navigation.test.ts src/components/site/products-architecture.test.ts src/components/site/menu-experience.test.ts src/lib/rayen-paths.test.ts",
     "test:export": "node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && node scripts/audit-dead-links.mjs && npm run export:segments:check",
     "assets:concepts": "node scripts/process-concept-assets.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:export",
-    "prebuild": "npm run assets:watermark:check && node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
+    "prebuild": "npm run assets:watermark:check && node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs && node scripts/build-chinese-mirror.mjs",
     "content": "node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
     "assets:editorial": "node scripts/generate-editorial-srcsets.mjs",
     "assets:editorial:check": "node scripts/generate-editorial-srcsets.mjs --check",
@@ -58,7 +58,13 @@
     "seo:graph": "node scripts/audit-seo-geo.mjs",
     "seo:citability": "node scripts/audit-geo-citability.mjs",
     "es:sheet": "node scripts/build-spanish-review-sheet.mjs && py scripts/build_spanish_workbook.py docs/collaboration/spanish-review.json",
-    "catalogue": "node scripts/build-catalogue-plates.mjs && py scripts/build_catalogue.py"
+    "catalogue": "node scripts/build-catalogue-plates.mjs && py scripts/build_catalogue.py",
+    "rayen:mirror": "node scripts/build-chinese-mirror.mjs",
+    "rayen:mirror:report": "node scripts/build-chinese-mirror.mjs --report",
+    "rayen:assets": "node scripts/import-rayen-assets.mjs",
+    "rayen:site": "node scripts/build-rayen-site.mjs",
+    "rayen:images": "node scripts/build-rayen-product-images.mjs",
+    "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

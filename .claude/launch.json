@@ -23,6 +23,17 @@
         "3002"
       ],
       "port": 3002
+    },
+    {
+      "name": "rayen-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "out-rayen",
+        "-l",
+        "3003"
+      ],
+      "port": 3003
     }
   ]
 }
