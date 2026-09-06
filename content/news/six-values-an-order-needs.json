@@ -1,0 +1,48 @@
+{
+  "slug": "six-values-an-order-needs",
+  "title": "The Six Values a Hardware Order Actually Needs",
+  "kind": "insight",
+  "publishedAt": "2026-09-06",
+  "summary": "Most enquiries arrive with a model number and a quantity, and most of those go back with a question. Six values decide whether a part can be installed, and an enquiry carrying all six can be quoted the same day.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "A model number is not an order. It names a family and a form; it does not say which of the variants inside that family fits the door in front of you. The gap between the two is where a week goes, because the questions are asked one at a time by email across an eight-hour time difference.",
+    "Six values close the gap: model, finish, backset, centre distance, handing, door thickness. Written in that order they read as one reference — 9001-SSS-60-72-L-45 — and every one of them is a fact about the opening rather than a preference. Nothing on that line is negotiable after the mortise is cut.",
+    "Model is the family. Finish is the code, not the word: SSS and PSS are both \"stainless\", they are a satin and a mirror, and they do not sit next to each other on the same floor. Where a US equivalent exists we publish it beside the code, because a schedule written to US32D and a factory reading SSS are describing the same part and should not have to discover that by correspondence.",
+    "Backset is the distance from the face of the door edge to the centre of the spindle, and it is set by the door, not by the lock. A 60mm backset lock in a door prepared for 45mm does not go in. Centre distance is the gap between the spindle and the cylinder, and it is what decides whether the handle and the key hole line up with the holes already drilled in the plate.",
+    "Handing is a letter — left, right or universal — and it is discussed in its own article because the two conventions in use disagree. Door thickness is the one people assume is standard and is not: our records carry ranges like 35–45mm adjustable and 35–50mm, because the spindle and the fixing screws have a working travel and a 60mm door is outside it.",
+    "What happens when a value is missing depends on which one. A missing finish delays a quotation. A missing backset delays a shipment, because it is not visible until the case is offered up to the door and by then the container has landed. That asymmetry is the argument for writing all six at enquiry rather than the ones that feel important.",
+    "Two of the six are frequently unknown at enquiry, and saying so is a valid answer. \"Door thickness to be confirmed\" is a line an export engineer can work with — it flags the risk and keeps the rest of the quotation moving. A blank is not the same thing: a blank gets filled in by whoever is in the most hurry.",
+    "Our guided selector asks four of the six and returns a published model with its specification rather than a category, so the reference can be pasted straight into a schedule. Where a figure is not published for a model, the specification table shows a dash rather than a plausible number — the dash is a question for us, and it is cheaper to ask it now than to answer it on site."
+  ],
+  "heroImage": {
+    "src": "/images/editorial/news-door-schedule-doors.webp",
+    "ratio": "3 / 2",
+    "label": "A corridor of prepared door openings, each requiring its own hardware schedule line",
+    "labelEs": "Un pasillo de huecos preparados, cada uno con su propia línea en el cuadro de herrajes"
+  },
+  "relatedModels": ["9001", "LC07 85×45mm", "70SN", "587 PBET"],
+  "seoTitle": "The Six Values a Door Hardware Order Needs | Canton Hyland",
+  "seoDescription": "Model, finish, backset, centre distance, handing and door thickness. Six values decide whether a lock can be installed — and which one is missing decides whether you lose a day or a container.",
+  "titleEs": "Los seis datos que un pedido de herrajes realmente necesita",
+  "summaryEs": "La mayoría de las consultas llegan con un número de modelo y una cantidad, y la mayoría vuelven con una pregunta. Seis datos deciden si una pieza se puede instalar, y una consulta que los lleva todos se cotiza el mismo día.",
+  "bodyEs": [
+    "Un número de modelo no es un pedido. Nombra una familia y una forma; no dice cuál de las variantes de esa familia encaja en la puerta que usted tiene delante. En esa distancia se va una semana, porque las preguntas se hacen de una en una por correo con ocho horas de diferencia horaria.",
+    "Seis datos cierran esa distancia: modelo, acabado, entrada, distancia entre ejes, mano y espesor de puerta. Escritos en ese orden se leen como una sola referencia —9001-SSS-60-72-L-45— y cada uno es un hecho sobre el hueco, no una preferencia. Nada de esa línea es negociable después de abrir la caja en la puerta.",
+    "El modelo es la familia. El acabado es el código, no la palabra: SSS y PSS son los dos «acero inoxidable», uno es satinado y el otro espejo, y no conviven en la misma planta. Donde existe equivalente US lo publicamos junto al código, porque un cuadro escrito en US32D y una fábrica leyendo SSS describen la misma pieza y no deberían descubrirlo por correspondencia.",
+    "La entrada (backset) es la distancia desde la cara del canto de la puerta hasta el centro del cuadradillo, y la fija la puerta, no la cerradura. Una cerradura de 60mm de entrada no entra en una puerta preparada para 45mm. La distancia entre ejes es el hueco entre el cuadradillo y el cilindro, y es lo que decide si la manija y el bocallave coinciden con los agujeros ya taladrados en la placa.",
+    "La mano es una letra —izquierda, derecha o universal— y tiene artículo propio porque las dos convenciones en uso se contradicen. El espesor de puerta es el que todo el mundo supone estándar y no lo es: nuestras fichas llevan rangos como 35–45mm regulable y 35–50mm, porque el cuadradillo y los tornillos tienen un recorrido útil y una puerta de 60mm queda fuera.",
+    "Qué ocurre cuando falta un dato depende de cuál. Un acabado que falta retrasa una cotización. Una entrada que falta retrasa un embarque, porque no se ve hasta que se presenta la caja en la puerta y para entonces el contenedor ya llegó. Esa asimetría es el argumento para escribir los seis en la consulta y no solo los que parecen importantes.",
+    "Dos de los seis suelen ser desconocidos al consultar, y decirlo es una respuesta válida. «Espesor de puerta por confirmar» es una línea con la que un ingeniero de exportación puede trabajar: señala el riesgo y deja avanzar el resto de la cotización. Un hueco en blanco no es lo mismo: un blanco lo rellena quien más prisa tiene.",
+    "Nuestro selector guiado pregunta cuatro de los seis y devuelve un modelo publicado con su ficha, no una categoría, para que la referencia se pegue directamente en un cuadro. Donde una cifra no está publicada para un modelo, la ficha muestra un guion en lugar de un número plausible: el guion es una pregunta para nosotros, y sale más barato hacerla ahora que responderla en obra."
+  ],
+  "seoTitleEs": "Los seis datos que necesita un pedido de herrajes | Canton Hyland",
+  "seoDescriptionEs": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor."
+}
