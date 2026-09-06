@@ -33,9 +33,10 @@ project or exhibition. A later exhibition-wall pass requires recovered original 
   zero semantic errors and dead links; three non-blocking editorial length warnings.
 - [x] Desktop 1440×950 / mobile 390×844 EN/ES browser validation.
 - [x] Independent finish review closed: ship verdict for all three resolved findings.
-- [ ] Commit and push owned source with concise handoff.
-- [ ] npm run deploy:prep; commit complete generated out/ and push.
-- [ ] Record release state; remove only own NOW row after release.
+- [x] Commit and push owned source with concise handoff: 2cc2c226ec.
+- [x] npm run deploy:prep; complete out/ release by Claude: 014f385582; integrated
+  source/out main verified at 46b86a60c1 on 2026-09-06.
+- [x] Record release state and origin HTML verification; remove own obsolete NOW row.
 
 ## Release discipline
 

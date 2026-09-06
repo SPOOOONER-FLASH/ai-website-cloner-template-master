@@ -41,3 +41,15 @@
   unintegrated; inspect their actual source preservation before any later replacement.
 - Claude's scene/compositing and Spanish-workbook commits were left intact. No Cloudflare
   access or purge was attempted. Codex keeps the out/ claim until the release commit.
+
+## Release closure — 2026-09-06
+
+- Source: 2cc2c226ec. Claude completed the client-directed full out/ release in 014f385582,
+  rebuilding with the committed catalogue PDF; see his release-build-for-codex handoff.
+- Latest integrated source/out commit 46b86a60c1 matches remote main (git ls-remote).
+  Worktree was clean on resumption. No redundant rebuild or UI changes in this closure.
+- Direct HTTPS origin check (43.131.27.225 with cantonlock.com hostname) returned 200
+  for /products/; downloaded HTML was checked for the approved brand line and real atlas.
+  No Cloudflare access, edge-cache investigation or purge.
+- Removed the obsolete Codex NOW claim. Products/menu release is complete; animation
+  remains deferred and must explain real products, not invent unseen hardware geometry.
