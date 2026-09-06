@@ -136,10 +136,90 @@ async function cutOut(file) {
     const gapY = Math.max(main.minY - b.maxY, b.minY - main.maxY, 0);
     return Math.hypot(gapX, gapY) < Math.max(width, height) * 0.06;
   };
-  const keep = areas.map(
-    (area, id) =>
-      !(area < biggest * 0.25 && bounds[id].maxY < height * 0.2 && !near(bounds[id])),
-  );
+  /*
+    ── COMPONENTS THAT ARE JUST TRAPPED BACKDROP ───────────────────────────────
+
+    Both defects below were invisible for as long as every plate went onto a light
+    field, and both became glaring the moment the client asked for dark grounds. That is
+    the useful thing about a dark field: it is a test.
+
+    1. ENCLOSED WHITE. The flood fill only reaches white that connects to the frame edge.
+       Backdrop trapped between a lever and its rose, or under a knob, is never reached,
+       so it survives as foreground — a white blob under the product on a dark ground.
+       Any component whose own pixels are nearly all near-white is backdrop, not part: a
+       real metal part has shading, and even a polished one has an edge darker than 247.
+
+    2. THE WATERMARK, again. The isolation test above is measured from the LARGEST
+       component, and on a photograph where the logo sits close to a big part it passes
+       `near` and rides through. A component that is small, high, AND almost entirely
+       saturated colour is the red Hyland oval — metal in this catalogue is neutral, so
+       saturation is the property that separates a logo from a part far more reliably
+       than position does.
+  */
+  /*
+    The component test below could not reach the trapped backdrop at all: white caught
+    under a knob touches the product's own anti-aliased edge, so labelling puts the two in
+    ONE component and there is nothing to discard. It has to be decided per pixel.
+
+    250 rather than the fill's 247, deliberately. The fill can afford to be generous
+    because it only ever walks in from the frame; this test applies everywhere, including
+    inside the part, so it has to stay above every real highlight. Measured across these
+    photographs the brightest metal — polished brass, chrome — tops out in the low 240s,
+    because a specular highlight on a curved surface is still a surface. Paper backdrop is
+    a flat 253-255.
+
+    A blanket "every near-white pixel is background" would have hollowed out a
+    white-painted product, and this catalogue has those. So the background GROWS inward
+    instead: a near-white pixel becomes background only when it already touches
+    background. Paper reached through a thin gap gets eaten; the middle of a white part
+    never touches the outside and is never reached.
+  */
+  const PAPER = 250;
+  const isPaper = (p) =>
+    data[p * channels] >= PAPER &&
+    data[p * channels + 1] >= PAPER &&
+    data[p * channels + 2] >= PAPER;
+
+  const frontier = [];
+  for (let p = 0; p < width * height; p += 1) if (background[p]) frontier.push(p);
+  while (frontier.length) {
+    const p = frontier.pop();
+    const x = p % width;
+    const y = (p - x) / width;
+    const step = (nx, ny) => {
+      if (nx < 0 || ny < 0 || nx >= width || ny >= height) return;
+      const n = ny * width + nx;
+      if (background[n] || !isPaper(n)) return;
+      background[n] = 1;
+      frontier.push(n);
+    };
+    step(x + 1, y);
+    step(x - 1, y);
+    step(x, y + 1);
+    step(x, y - 1);
+  }
+
+  const stats = areas.map(() => ({ white: 0, saturated: 0 }));
+  for (let p = 0; p < width * height; p += 1) {
+    if (background[p]) continue;
+    const id = label[p];
+    const r = data[p * channels];
+    const g = data[p * channels + 1];
+    const b = data[p * channels + 2];
+    if (r >= 244 && g >= 244 && b >= 244) stats[id].white += 1;
+    if (Math.max(r, g, b) - Math.min(r, g, b) > 60) stats[id].saturated += 1;
+  }
+
+  const keep = areas.map((area, id) => {
+    if (area < biggest * 0.25 && bounds[id].maxY < height * 0.2 && !near(bounds[id])) return false;
+    /* Trapped backdrop: overwhelmingly near-white, and not the product itself. */
+    if (area < biggest * 0.5 && stats[id].white / area > 0.9) return false;
+    /* The logo: small, high, and mostly colour on a catalogue of neutral metal. */
+    if (area < biggest * 0.2 && bounds[id].maxY < height * 0.35 && stats[id].saturated / area > 0.5) {
+      return false;
+    }
+    return true;
+  });
 
   let minX = width;
   let minY = height;

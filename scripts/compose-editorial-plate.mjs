@@ -192,12 +192,96 @@ const sha256 = (file) =>
 
 /* ------------------------------------------------------------------- compose */
 
+/**
+ * Why this photograph should not go on the dark field, or null.
+ *
+ * ONE measurement, plus a reviewed list. It started as two measurements and the second
+ * one had to go, which is the useful part of this note.
+ *
+ * The halo test works and is calibrated on real numbers: pale flat pixels as a share of
+ * the cut-out come out at 1.6% and 2.7% on plates that look right, 6.9% on one that is
+ * fine, and 12.6% on 037-panic-exit-device, which is the one carrying a baked-in paper
+ * shadow. The threshold sits at 10%, between the highest good and the lowest bad.
+ *
+ * The second test was "saturated colour high in the frame is the Hyland logo", on the
+ * reasoning that metal here is neutral. Measured, it says b024-brass-and-steel-hinges is
+ * 23% logo — because BRASS IS SATURATED, and a brass hinge is more saturated than a small
+ * red oval ever is as a share of the frame. It would have thrown out the best plate in
+ * the set to catch a defect on another. Deleted rather than tuned: a detector that ranks
+ * a product below a watermark is not measuring what it claims to.
+ *
+ * So the watermark cases go in a reviewed list, the way NOT_A_PRODUCT_PHOTOGRAPH above
+ * already handles the sources no statistic could separate either.
+ */
+const WATERMARK_SURVIVES_CUTOUT = new Set([
+  /* Hyland oval sits close enough to the cylinder body that the isolation test keeps it. */
+  "70sn-lock-cylinder",
+]);
+
+async function darkFieldRisk(object, slug) {
+  if (WATERMARK_SURVIVES_CUTOUT.has(slug)) return "a burned-in watermark survives the cut-out";
+
+  const { data, info } = await sharp(object.buffer)
+    .resize(200, null, { fit: "inside" })
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  let solid = 0;
+  let halo = 0;
+  for (let i = 0; i < info.width * info.height; i += 1) {
+    if (data[i * 4 + 3] < 200) continue;
+    solid += 1;
+    const r = data[i * 4];
+    const g = data[i * 4 + 1];
+    const b = data[i * 4 + 2];
+    const max = Math.max(r, g, b);
+    const min = Math.min(r, g, b);
+    /* Pale and flat: paper carrying a shadow, not a lit surface. */
+    if (min >= 232 && max - min < 12) halo += 1;
+  }
+  if (!solid) return null;
+  if (halo / solid > 0.1) {
+    return String(Math.round((halo / solid) * 100)) + "% of the cut-out is baked-in paper shadow";
+  }
+  return null;
+}
+
 async function compose(file, out, forced) {
   const object = await cutOut(file);
   const lum = await objectLuminance(object);
 
   /* void-light unless somebody asked for otherwise — see the header for why. */
-  const grammar = forced ?? "void-light";
+  let grammar = forced ?? "void-light";
+
+  /*
+    ── THE DARK FIELD IS A TEST, AND SOME PHOTOGRAPHS FAIL IT ──────────────────
+
+    Two defects live in the source photographs and are invisible on a light field,
+    because they are the same colour as it:
+
+      - a soft shadow the supplier baked onto the paper. It survives the cut-out because
+        it is 235–248, not white, and on a dark ground it becomes a pale smear under the
+        part;
+      - the burned-in Hyland logo, on the frames where it sits close enough to a large
+        part that the isolation test in product-cutout.mjs cannot separate it.
+
+    Neither can be removed without painting over the client's photograph, and painting
+    over a photograph to make it prettier is the first step of the thing AGENTS.md
+    forbids. So they are not removed — the plate is moved to the field where the defect
+    does not show, and the downgrade is reported rather than hidden.
+
+    Measured on the cut-out itself, so it is a property of the photograph and not a
+    judgement about it.
+  */
+  if (grammar === "void-dark") {
+    const flaw = await darkFieldRisk(object, basename(file, ".webp"));
+    if (flaw) {
+      grammar = "void-light";
+      console.log(`  ${basename(file)}: ${flaw} — using void-light instead`);
+    }
+  }
+
   const g = GRAMMARS[grammar];
 
   const scale = (FRAME.width * g.objectSpan) / Math.max(object.width, object.height);
