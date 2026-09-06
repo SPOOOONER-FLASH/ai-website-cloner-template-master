@@ -109,8 +109,10 @@
 
 - `src/components/site/SiteMenuDrawer.tsx`、`ProductsEditorialOverview.tsx`（M）
 - `src/components/site/EditorialAtlas.tsx`、`EditorialCatalogue.module.css`（??）
-- `scripts/lib/product-cutout.mjs`（M）—— **现在是语法错误状态**，
-  171 行附近两段注释被合到了一起，`npm run lint` 全量跑会挂在这里。像是编辑到一半。
+- `scripts/lib/product-cutout.mjs` —— 我 03:00 左右撞见它处于语法错误状态
+  （171 行附近两段注释被合到了一起，`npm run lint` 全量跑会挂在这里），
+  那是编辑到一半的瞬间。**Codex 随后已在 `fbd9d71170` 提交，现在是好的。**
+  记在这里只是说明我那次 lint 为什么没全绿，不是一个待办。
 
 由此产生的既有失败，**不是我这次引入的**：
 
@@ -122,7 +124,13 @@
 
 ## 发布状态
 
-- `out/`（HYDE）和 `out-rayen/`（雷茵）**都已构建并提交**。我拿了发布接力棒。
+- **只提交了 `out-rayen/`（雷茵），没有提交 `out/`（HYDE）。**
+  我构建时工作树里有 Codex 未提交的 `SiteMenuDrawer.tsx` / `ProductsEditorialOverview.tsx`，
+  把它们烤进 `out/` 会让线上内容在 git 里找不到对应源码 —— NOW.md 记着 2026-08-31
+  已经踩过一次。所以构建后 `git checkout -- out/` 把它还原到 HEAD，
+  并 `git clean` 掉我自己产生的 13 个孤儿 chunk。**`out/` 现在与 HEAD 一致，
+  发布接力棒是空闲的**，Codex 提交源码后重建即可。
+- `out-rayen/` 与 `out/` 是各自独立的 document root，互不引用，所以单独提交是安全的。
 - 已推送。服务器 5 分钟一次 `git pull` 会拉到。
 - **雷茵站还看不到，需要客户在宝塔里做一次一次性操作** ——
   把 `spoonercantonlock.stahlock.com` 的网站目录指到
