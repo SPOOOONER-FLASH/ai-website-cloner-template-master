@@ -1,5 +1,8 @@
+"use client";
+
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Locale } from "@/data/site";
-import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
+import { rollFrame, siteFacts, siteFactsHeading } from "@/lib/site-facts";
 
 /**
  * The factory in figures — a row of counted facts, on the page that gets quoted.
@@ -18,17 +21,108 @@ import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
  * read as a specification. One hairline above, one below, nothing else.
  *
  * ---------------------------------------------------------------------------
+ * THE ANIMATION, AND THE ONE RULE IT MUST NOT BREAK
+ *
+ * The true value is ALWAYS what the server renders. A strip that ships `0` in its HTML
+ * and reaches 361 only after JavaScript runs would be a strip whose whole purpose —
+ * being the quotable numbers on the most-quoted page — is destroyed by its own
+ * decoration: an answer engine reading the static export would quote zero. So the count
+ * is something that happens to a number already on screen, never a way of revealing it.
+ *
+ * Three consequences fall out of that:
+ *
+ *   · The roll only runs when the strip ENTERS the viewport from outside. If it is
+ *     already on screen at mount, it just stands there at its real value — because
+ *     restarting it from zero would be a visible 361 → 0 → 361 flicker, which is worse
+ *     than no animation and briefly displays a false figure.
+ *
+ *   · Only the facts that carry `countTo` roll. See the field's comment in
+ *     src/lib/site-facts.ts: 1998 is a year, ISO 9001 is not a number, and 101–200 is a
+ *     range. Those three never count.
+ *
+ *   · NOTHING FADES OR SLIDES IN. There is no entrance animation, and that is a
+ *     correction rather than a preference. The first version of this had the figures at
+ *     `opacity-0` until an IntersectionObserver revealed them, and measuring it found
+ *     opacity stuck at 0 with the strip fully scrolled into view — an observer does not
+ *     deliver callbacks in a hidden document, and there are several other ways for it not
+ *     to run. The failure mode of a reveal is INVISIBLE CONTENT, and the content here is
+ *     the six numbers this site most wants quoted. A roll degrades to a static correct
+ *     number; a reveal degrades to nothing at all. Only the first is acceptable on this
+ *     strip, so the reveal is gone.
+ *
+ * `prefers-reduced-motion` skips the roll.
+ *
+ * ---------------------------------------------------------------------------
  * ROLLBACK
  *
  * Remove the one <SiteFacts /> line from the page. Nothing else references it, and the
  * figures are computed, so there is no orphaned copy left behind to go stale.
  */
+
 export function SiteFacts({ locale = "en" }: { locale?: Locale }) {
-  const facts = siteFacts(locale);
+  /* Build-time data: memoised so the effect below has a stable dependency. */
+  const facts = useMemo(() => siteFacts(locale), [locale]);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  /* null means "not rolling" — render the real value. */
+  const [rolled, setRolled] = useState<Record<number, number> | null>(null);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    let frame = 0;
+    let settled = 0;
+    let observer: IntersectionObserver | undefined;
+    const start = () => {
+      const t0 = performance.now();
+      const step = (now: number) => {
+        const { values, done } = rollFrame(facts, now - t0);
+        setRolled(done ? null : values);
+        if (!done) frame = requestAnimationFrame(step);
+      };
+      frame = requestAnimationFrame(step);
+    };
+
+    /*
+      The opening decision runs on the next frame rather than in the effect body.
+
+      Two reasons, and only one of them is the lint rule. Setting state synchronously here
+      cascades an extra render before paint; deferring by a frame also puts the
+      `getBoundingClientRect` read after the browser's first layout, which is when the
+      strip's real position is actually known.
+    */
+    settled = requestAnimationFrame(() => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      /*
+        Already on screen: leave it alone. Rolling from here would replace a
+        correct 361 with 0 one frame after hydration — a visible lie, however brief.
+      */
+      const box = node.getBoundingClientRect();
+      if (box.top < window.innerHeight && box.bottom > 0) return;
+
+      observer = new IntersectionObserver(
+        (entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          observer?.disconnect();
+          start();
+        },
+        { threshold: 0.25 },
+      );
+      observer.observe(node);
+    });
+
+    return () => {
+      observer?.disconnect();
+      if (settled) cancelAnimationFrame(settled);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, [facts]);
+
   if (!facts.length) return null;
 
   return (
-    <section className="layout" aria-labelledby="site-facts-heading">
+    <section ref={sectionRef} className="layout" aria-labelledby="site-facts-heading">
       {/*
         `col-content`, NOT `col-span-full`.
 
@@ -48,11 +142,18 @@ export function SiteFacts({ locale = "en" }: { locale?: Locale }) {
           same thing the layout does.
         */}
         <dl className="mt-24 grid grid-cols-2 gap-x-24 gap-y-40 border-t border-ink pt-32 sm:grid-cols-3 lg:grid-cols-6">
-          {facts.map((fact) => (
+          {facts.map((fact, index) => (
             <div key={fact.label}>
               <dt className="sr-only">{fact.label}</dt>
               <dd>
-                <span className="block text-h2 tabular-nums text-ink">{fact.value}</span>
+                {/*
+                  `aria-live` is deliberately absent. A screen reader does not need to be
+                  told a number six times on its way to its real value; it needs the real
+                  value, which is what is in the DOM before and after the roll.
+                */}
+                <span className="block text-h2 tabular-nums text-ink">
+                  {rolled?.[index] !== undefined ? rolled[index] : fact.value}
+                </span>
                 <span className="mt-8 block max-w-[18ch] text-c2 text-ink-secondary">
                   {fact.label}
                 </span>

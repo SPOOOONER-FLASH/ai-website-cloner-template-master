@@ -3,6 +3,8 @@ import { stats } from "../data/company.ts";
 import { publishedProducts } from "../data/products.ts";
 import type { Locale } from "../data/site.ts";
 
+export { ROLL_MS, STAGGER_MS, rollFrame } from "./fact-roll.ts";
+
 /**
  * The figures the homepage and the export desk can state, counted rather than typed.
  *
@@ -35,6 +37,24 @@ export interface SiteFact {
   label: string;
   /** Where the figure comes from, for anyone who wants to check it. */
   source: string;
+  /**
+   * The number to roll up to when the strip animates, or undefined for "do not roll".
+   *
+   * This is a property of the FACT, not of the display, which is why it lives here and
+   * not in the component. Of the six figures on the strip only three are quantities that
+   * can meaningfully count from nothing: the model count, the category count and the
+   * video count. The other three cannot, and a component guessing from the string would
+   * get all three wrong:
+   *
+   *   1998        a year. Rolling 0 → 1998 is not "counting", it is a slot machine, and
+   *               it reads as a company that opened some time after the Bronze Age.
+   *   ISO 9001    not a number at all.
+   *   101–200     a range. There is no single value to arrive at.
+   *
+   * So the data says which ones are countable and the component obeys. Adding a fact
+   * without this field gets the safe behaviour — it appears, it does not roll.
+   */
+  countTo?: number;
 }
 
 const COPY = {
@@ -67,8 +87,8 @@ export function siteFacts(locale: Locale = "en"): SiteFact[] {
   const withVideo = products.filter((p) => (p.videos ?? []).length).length;
 
   const facts: SiteFact[] = [
-    { value: String(products.length), label: t.models, source: "content/products" },
-    { value: String(categories.length), label: t.families, source: "content/categories.json" },
+    { value: String(products.length), label: t.models, source: "content/products", countTo: products.length },
+    { value: String(categories.length), label: t.families, source: "content/categories.json", countTo: categories.length },
   ];
 
   /*
@@ -77,7 +97,12 @@ export function siteFacts(locale: Locale = "en"): SiteFact[] {
     rather than hidden in a ternary somebody has to decode later.
   */
   if (withVideo >= 10) {
-    facts.push({ value: String(withVideo), label: t.withVideo, source: "content/products" });
+    facts.push({
+      value: String(withVideo),
+      label: t.withVideo,
+      source: "content/products",
+      countTo: withVideo,
+    });
   }
 
   const founded = stat("Founded");
