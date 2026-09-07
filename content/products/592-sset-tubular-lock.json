@@ -60,28 +60,38 @@
   "heroImage": {
     "src": "/images/products/592-sset-tubular-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 592 SSET tubular lock"
+    "label": "Hyland 592 SSET Tubular Lock"
   },
   "gallery": [
     {
       "src": "/images/products/592-sset-tubular-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 592 SSET tubular lock, view 2"
+      "label": "Hyland 592 SSET Tubular Lock, view 2"
     },
     {
       "src": "/images/products/592-sset-tubular-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 592 SSET tubular lock, view 3"
+      "label": "Hyland 592 SSET Tubular Lock, view 3"
     },
     {
       "src": "/images/products/592-sset-tubular-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 592 SSET tubular lock, view 4"
+      "label": "Hyland 592 SSET Tubular Lock, view 4"
     },
     {
       "src": "/images/products/592-sset-tubular-lock-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 592 SSET tubular lock, view 5"
+      "label": "Hyland 592 SSET Tubular Lock, view 5"
+    },
+    {
+      "src": "/images/products/592-sset-tubular-lock-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 592 SSET Tubular Lock, view 6"
+    },
+    {
+      "src": "/images/products/592-sset-tubular-lock-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 592 SSET Tubular Lock, view 7"
     }
   ],
   "attachmentIds": [],
@@ -138,5 +148,14 @@
   "summaryEs": "Una cerradura de pomo de acero inoxidable, entrada de 60 mm / 70 mm regulable, función entrada — con llave por fuera, para uso residencial.",
   "summary": "A stainless steel knob lock in satin stainless steel (US32D) with 60mm / 70mm adjustable backset, entrance function, for residential use.",
   "seoTitleEs": "592 SSET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 592 SSET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 592 SSET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Introduction:"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2132",
+    "model": "592 SSET",
+    "fetchedAt": "2026-09-04"
+  }
 }

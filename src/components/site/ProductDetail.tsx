@@ -366,6 +366,34 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                   <p className="text-lead text-ink">{summary}</p>
 
                   {/*
+                    ── VERIFIED FEATURE BULLETS ────────────────────────────────
+
+                    The client's own checked copy from stahlock.com, cached since
+                    2026-09-04 and until now never written into a product record — see
+                    scripts/apply-stahlock-feature-lists.mjs. 194 products gain it; lever
+                    handles and knob locks previously had no feature text at all.
+
+                    English only. Rendering these on the Spanish page would put English
+                    prose under a Spanish heading, which is the drift the FAQ markup is
+                    guarded against. Spanish gets them when the translator returns them.
+                  */}
+                  {!es && product.features?.length ? (
+                    <ul className="mt-24 border-t border-line pt-16">
+                      {product.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="grid grid-cols-[1.2rem_1fr] gap-x-8 border-b border-line py-12 text-c1 text-ink"
+                        >
+                          <span aria-hidden="true" className="text-ink-tertiary">
+                            ·
+                          </span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+
+                  {/*
                     ── THE CUE THAT A DEMONSTRATION EXISTS ─────────────────────
 
                     Moving the clip under the hero put it in the right place structurally
@@ -429,7 +457,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     the useful addition here because it is the only one that costs the
                     buyer nothing and still moves them forward.
                   */}
-                  <Button href={quoteHref}>{t.quote}</Button>
+                  <Button href={quoteHref} rel="nofollow">{t.quote}</Button>
                   <Button href={`${base}/contact/`} variant="secondary">
                     {t.ask}
                   </Button>

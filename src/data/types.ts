@@ -175,6 +175,15 @@ export interface Product {
   /** Door types this suits, e.g. ["Timber", "Steel", "Frameless glass"]. */
   doorTypes: string[];
   /** Standards and approvals. */
+  /**
+   * Verified feature bullets, taken from the client's own stahlock.com storefront.
+   *
+   * English only. The Spanish page deliberately does not render these — English prose on
+   * a Spanish product page is the same error as English answers in Spanish FAQ markup.
+   * They go to the translator with the rest; until then Spanish simply lacks the block.
+   */
+  features?: string[];
+  featuresSource?: { site: string; url: string; model?: string; fetchedAt?: string };
   certifications: Certification[];
   /** Lead image — cards, listing thumbnails, detail hero. */
   heroImage: ImageRef;

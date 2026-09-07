@@ -16,6 +16,17 @@ type ButtonProps = BaseProps &
 
 type AnchorProps = BaseProps & {
   href: string;
+  /**
+   * Passed through to the anchor. Added for `nofollow` on the quote CTA.
+   *
+   * Every product page links to `/contact/?product=…&model=…`, so 870 pages generate 870
+   * distinct crawlable URLs for one page. Search Console reports all 69 it has found as
+   * "alternate page with proper canonical" — Google is handling them correctly, and that
+   * is exactly the problem: it is spending crawl budget confirming 870 times that they
+   * are the contact page, on a site where 415 real pages are still "discovered, not
+   * indexed". `nofollow` keeps the link working for a person and stops the crawl.
+   */
+  rel?: string;
 };
 
 /**
@@ -44,7 +55,7 @@ export function Button(props: ButtonProps | AnchorProps) {
 
   if (props.href !== undefined) {
     return (
-      <Link href={props.href} className={classes}>
+      <Link href={props.href} rel={props.rel} className={classes}>
         {props.children}
       </Link>
     );

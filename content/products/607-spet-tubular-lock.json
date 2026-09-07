@@ -69,23 +69,43 @@
   "heroImage": {
     "src": "/images/products/607-spet-tubular-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 607 SPET tubular lock"
+    "label": "Hyland 607 SPET Tubular Lock"
   },
   "gallery": [
     {
       "src": "/images/products/607-spet-tubular-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SPET tubular lock, view 2"
+      "label": "Hyland 607 SPET Tubular Lock, view 2"
     },
     {
       "src": "/images/products/607-spet-tubular-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SPET tubular lock, view 3"
+      "label": "Hyland 607 SPET Tubular Lock, view 3"
     },
     {
       "src": "/images/products/607-spet-tubular-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SPET tubular lock, view 4"
+      "label": "Hyland 607 SPET Tubular Lock, view 4"
+    },
+    {
+      "src": "/images/products/607-spet-tubular-lock-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 607 SPET Tubular Lock, view 5"
+    },
+    {
+      "src": "/images/products/607-spet-tubular-lock-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 607 SPET Tubular Lock, view 6"
+    },
+    {
+      "src": "/images/products/607-spet-tubular-lock-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 607 SPET Tubular Lock, view 7"
+    },
+    {
+      "src": "/images/products/607-spet-tubular-lock-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 607 SPET Tubular Lock, view 8"
     }
   ],
   "attachmentIds": [],
@@ -149,5 +169,17 @@
   ],
   "summaryEs": "Una cerradura de pomo de acero inoxidable, entrada de 60 mm / 70 mm regulable, función entrada — con llave por fuera, para uso residencial.",
   "seoTitleEs": "607 SPET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 607 SPET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 607 SPET cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Key Features:",
+    "Door Thickness: 35–45mm (1-3/8” to 1-3/4”)",
+    "Backset: Adjustable 60mm or 70mm (2-3/8” or 2-3/4”); 70mm strike optional",
+    "Handing: Fully reversible for left or right-hand doors"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2143",
+    "model": "607 SPET",
+    "fetchedAt": "2026-09-04"
+  }
 }

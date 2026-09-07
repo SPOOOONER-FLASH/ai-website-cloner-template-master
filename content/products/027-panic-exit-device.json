@@ -153,5 +153,17 @@
       "uploadDate": "2026-09-04"
     }
   ],
-  "packingSource": "装箱表 photographed 2026-09-04, see content/packing-data.json"
+  "packingSource": "装箱表 photographed 2026-09-04, see content/packing-data.json",
+  "features": [
+    "External handle for panic bar systems",
+    "Key-operated locking/unlocking",
+    "Adjustable length to suit door thickness",
+    "Available in various colors"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1942",
+    "model": "027",
+    "fetchedAt": "2026-09-04"
+  }
 }

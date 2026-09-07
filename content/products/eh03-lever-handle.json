@@ -96,23 +96,38 @@
   "heroImage": {
     "src": "/images/products/eh03-lever-handle.webp",
     "ratio": "1 / 1",
-    "label": "Hyland EH03 lever handle"
+    "label": "Hyland EH03 Lever Handle"
   },
   "gallery": [
     {
       "src": "/images/products/eh03-lever-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland EH03 lever handle, view 2"
+      "label": "Hyland EH03 Lever Handle, view 2"
     },
     {
       "src": "/images/products/eh03-lever-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland EH03 lever handle, view 3"
+      "label": "Hyland EH03 Lever Handle, view 3"
     },
     {
       "src": "/images/products/eh03-lever-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland EH03 lever handle, view 4"
+      "label": "Hyland EH03 Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/eh03-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland EH03 Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/eh03-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland EH03 Lever Handle, view 6"
+    },
+    {
+      "src": "/images/products/eh03-lever-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland EH03 Lever Handle, view 7"
     }
   ],
   "attachmentIds": [],
@@ -197,5 +212,20 @@
   "summaryEs": "Una manija de palanca, entrada de 60 mm / 70 mm regulable, función entrada, privacidad, paso libre o falsa.",
   "seoTitleEs": "EH03 Manijas de palanca | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland EH03 manijas de palanca. Para puerta de madera. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "summarySource": "https://stahlock.com/index.php?id=2410"
+  "summarySource": "https://stahlock.com/index.php?id=2410",
+  "features": [
+    "• Iron backplate with aluminum alloy lever handle",
+    "• Elegant twisted handle design",
+    "• Matte black finish, durable and corrosion-resistant",
+    "• Compatible with Euro profile cylinder mortise locks",
+    "• Suitable for wooden and metal doors",
+    "• Reversible handle for left or right opening doors",
+    "• Easy installation and maintenance"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2410",
+    "model": "EH03",
+    "fetchedAt": "2026-09-04"
+  }
 }

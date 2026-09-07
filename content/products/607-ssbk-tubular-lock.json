@@ -68,33 +68,38 @@
   "heroImage": {
     "src": "/images/products/607-ssbk-tubular-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 607 SSBK tubular lock"
+    "label": "Hyland 607 SSBK Tubular Lock"
   },
   "gallery": [
     {
       "src": "/images/products/607-ssbk-tubular-lock-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SSBK tubular lock, view 2"
+      "label": "Hyland 607 SSBK Tubular Lock, view 2"
     },
     {
       "src": "/images/products/607-ssbk-tubular-lock-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SSBK tubular lock, view 3"
+      "label": "Hyland 607 SSBK Tubular Lock, view 3"
     },
     {
       "src": "/images/products/607-ssbk-tubular-lock-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SSBK tubular lock, view 4"
+      "label": "Hyland 607 SSBK Tubular Lock, view 4"
     },
     {
       "src": "/images/products/607-ssbk-tubular-lock-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SSBK tubular lock, view 5"
+      "label": "Hyland 607 SSBK Tubular Lock, view 5"
     },
     {
       "src": "/images/products/607-ssbk-tubular-lock-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 607 SSBK tubular lock, view 6"
+      "label": "Hyland 607 SSBK Tubular Lock, view 6"
+    },
+    {
+      "src": "/images/products/607-ssbk-tubular-lock-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 607 SSBK Tubular Lock, view 7"
     }
   ],
   "attachmentIds": [],
@@ -159,5 +164,20 @@
   "summaryEs": "Una cerradura de pomo de acero inoxidable, latón o acero macizo, entrada de 60 mm / 70 mm regulable, función privacidad — baño, botón de giro interior, para uso residencial.",
   "summary": "A stainless steel/brass/solid steel knob lock in satin stainless steel (US32D) with 60mm / 70mm adjustable backset, prepared for a brass cylinder, privacy function, for residential use.",
   "seoTitleEs": "607 SSBK Cerraduras de pomo | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland 607 SSBK cerraduras de pomo. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland 607 SSBK cerraduras de pomo. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Key Features:",
+    "Latch Bolt: 12mm (1/2”) throw, deadlocking for keyed functions",
+    "Door Thickness: Adjustable 35–45mm (1-3/8” to 1-3/4”)",
+    "Backset: Adjustable 60mm or 70mm (2-3/8” or 2-3/4”)",
+    "Optional Latch: 1” round drive-in 4-way latch (upon request)",
+    "Strike Plate: 57mm curved lip standard, 70mm optional",
+    "Handing: Reversible for left or right-hand doors"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2142",
+    "model": "607 SSBK",
+    "fetchedAt": "2026-09-04"
+  }
 }

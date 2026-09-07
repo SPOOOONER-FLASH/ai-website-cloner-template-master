@@ -71,23 +71,33 @@
   "heroImage": {
     "src": "/images/products/lh852-bnps-lever-handle.webp",
     "ratio": "1 / 1",
-    "label": "Hyland LH852 BNPS lever handle"
+    "label": "Hyland LH852 BNPS Lever Handle"
   },
   "gallery": [
     {
       "src": "/images/products/lh852-bnps-lever-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland LH852 BNPS lever handle, view 2"
+      "label": "Hyland LH852 BNPS Lever Handle, view 2"
     },
     {
       "src": "/images/products/lh852-bnps-lever-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland LH852 BNPS lever handle, view 3"
+      "label": "Hyland LH852 BNPS Lever Handle, view 3"
     },
     {
       "src": "/images/products/lh852-bnps-lever-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland LH852 BNPS lever handle, view 4"
+      "label": "Hyland LH852 BNPS Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/lh852-bnps-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH852 BNPS Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/lh852-bnps-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH852 BNPS Lever Handle, view 6"
     }
   ],
   "attachmentIds": [],
@@ -156,5 +166,18 @@
   "summaryEs": "Una manija de palanca de zamak, entrada de 60/70 mm, función paso libre, para para puertas de paso.",
   "summary": "A zinc alloy lever handle in black nickel with 60/70mm backset, passage function.",
   "seoTitleEs": "LH852 BNPS Manijas de palanca — Zamak | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland LH852 BNPS manijas de palanca en zamak. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland LH852 BNPS manijas de palanca en zamak. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Economical and easy to install, ideal for residential applications",
+    "Key or thumb-turn simultaneously locks/unlocks both knobs",
+    "Locking: turn thumb-turn counter-clockwise or key clockwise; reverse to unlock",
+    "Zinc-plated steel latch and chassis for corrosion resistance",
+    "Exposed trim available in stainless steel or brass"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1977",
+    "model": "LH852 BNPS",
+    "fetchedAt": "2026-09-04"
+  }
 }

@@ -63,23 +63,28 @@
   "heroImage": {
     "src": "/images/products/d102-ss-deadbolts.webp",
     "ratio": "1 / 1",
-    "label": "Hyland D102 SS deadbolts"
+    "label": "Hyland D102 SS Deadbolts"
   },
   "gallery": [
     {
       "src": "/images/products/d102-ss-deadbolts-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland D102 SS deadbolts, view 2"
+      "label": "Hyland D102 SS Deadbolts, view 2"
     },
     {
       "src": "/images/products/d102-ss-deadbolts-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland D102 SS deadbolts, view 3"
+      "label": "Hyland D102 SS Deadbolts, view 3"
     },
     {
       "src": "/images/products/d102-ss-deadbolts-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland D102 SS deadbolts, view 4"
+      "label": "Hyland D102 SS Deadbolts, view 4"
+    },
+    {
+      "src": "/images/products/d102-ss-deadbolts-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D102 SS Deadbolts, view 5"
     }
   ],
   "attachmentIds": [],
@@ -140,5 +145,28 @@
   "summaryEs": "Un cerrojo, entrada de Regulable a 2-3/8” o 2-3/4” (60 o 70 mm).",
   "summary": "A deadbolt in satin stainless steel (US32D), prepared for a solid brass cylinder.",
   "seoTitleEs": "D102 SS Cerrojos | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland D102 SS cerrojos. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland D102 SS cerrojos. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Key Features",
+    "Robust Construction",
+    "Interior parts: Zinc-plated steel",
+    "Exterior trim: Available in stainless steel, brass, or steel",
+    "Free-turning cylinder trim resists wrench attacks",
+    "Secure Deadbolt",
+    "1” (25mm) zinc die-cast bolt",
+    "Hardened steel roller insert enhances resistance to sawing",
+    "Precision Cylinder",
+    "5-pin tumbler mechanism, easy to rekey",
+    "Solid brass plug",
+    "Includes two nickel-plated brass keys",
+    "Reversible Design",
+    "Fully reversible handing",
+    "Ideal for left or right door installation without extra adjustment"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1914",
+    "model": "D102 SS",
+    "fetchedAt": "2026-09-04"
+  }
 }

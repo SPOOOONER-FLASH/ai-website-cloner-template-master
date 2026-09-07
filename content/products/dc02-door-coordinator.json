@@ -164,5 +164,14 @@
       "durationSeconds": 33,
       "uploadDate": "2026-09-04"
     }
-  ]
+  ],
+  "features": [
+    "This mechanical door coordinator is designed for double-leaf door systems. It controls the correct closing sequence, ensuring that the inactive leaf closes first and the active leaf closes afterward."
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2432",
+    "model": "DC02",
+    "fetchedAt": "2026-09-04"
+  }
 }
