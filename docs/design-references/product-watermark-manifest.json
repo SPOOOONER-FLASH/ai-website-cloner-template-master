@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 1666,
+  "count": 1793,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-2.webp",
@@ -9369,6 +9369,181 @@
       "outputSha256": "b60515904ff30cbac61490bdebef3da7308e3d5af872237bb8c38411ba61f9ab"
     },
     {
+      "source": "public/images/products/3431-sset-lever-handle-2.webp",
+      "output": "public/images/products-hyde/3431-sset-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "99d30b3add88274f632e1b8b0e3fdc3edd95e6749facb659c2c367dbea5796e5",
+      "outputSha256": "7de18977c59c1adb1bd13d362832658af45e752acb4eece7d31b94ba6048d10d"
+    },
+    {
+      "source": "public/images/products/3431-sset-lever-handle-3.webp",
+      "output": "public/images/products-hyde/3431-sset-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "2dae9cd687fddfe85798ae9efd0ce67960769f84feb1e55f04ae39f17c0e17ee",
+      "outputSha256": "300afdbf4e360d8ad55df62ace244b125a87b239f27694a2f8edf98d90b6a07f"
+    },
+    {
+      "source": "public/images/products/3431-sset-lever-handle-4.webp",
+      "output": "public/images/products-hyde/3431-sset-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 16.9377990430622,
+          "height": 169,
+          "left": 10,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "262e92582b9d8d51366d199f085a971a1aba1d8cd11876567eb6c7c1f5aa5586",
+      "outputSha256": "eabc35e3e0cc62a87d247b079135477006c1b4dece9d90149f2fd1eed59854a3"
+    },
+    {
+      "source": "public/images/products/3431-sset-lever-handle-5.webp",
+      "output": "public/images/products-hyde/3431-sset-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 11.389952153110048,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "27ca30a57c1cac62bbd3242c4c515afb7efe9fa7cc594589e7abaad440a4fcbf",
+      "outputSha256": "3081f1d55f42663035eb00084d3839cc4aed2a3b779f62f8eeb3eeb871eebc23"
+    },
+    {
+      "source": "public/images/products/3431-sset-lever-handle.webp",
+      "output": "public/images/products-hyde/3431-sset-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0.041866028708133975,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "078f9a7b8a6078bedb37e304d4e85cc1bf64ce9d9e6da4ba284c273b8014b557",
+      "outputSha256": "f3786625a6c4a00a162d6e87ea1a0b3dcbad78d4f807a5ca5e3ad149335f985b"
+    },
+    {
       "source": "public/images/products/45bn-lock-cylinder-2.webp",
       "output": "public/images/products-hyde/45bn-lock-cylinder-2.webp",
       "width": 800,
@@ -11626,6 +11801,24 @@
       "outputSha256": "a6681b49b1a6425b0fa60ee3e7a5313699e2bb0b4b39ae4a2b880d5ac4899588"
     },
     {
+      "source": "public/images/products/575-acet-tubular-lock.webp",
+      "output": "public/images/products-hyde/575-acet-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c65a56e869f567aa5bdbd42a52aa75fb950ed45e8b2327aa2429c54b8cc114b6",
+      "outputSha256": "44cb2a28747293630867eb9631b63b906bfe07d878742b1a34512368c3131a28"
+    },
+    {
       "source": "public/images/products/575-cpet-tubular-lock-2.webp",
       "output": "public/images/products-hyde/575-cpet-tubular-lock-2.webp",
       "width": 800,
@@ -11782,6 +11975,24 @@
       },
       "sourceSha256": "4270a6dade1b4b1bb9b5d90eb0819cf18756630c0729b311a86a57edf421ba81",
       "outputSha256": "176fcdcbca025f31a45ec1fe30df93364a858a52c68659a2bf7bbd28c174c6a2"
+    },
+    {
+      "source": "public/images/products/575-sset-tubular-lock.webp",
+      "output": "public/images/products-hyde/575-sset-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "757ab5e6a52ba0ca375c0b17380790c36f4bcab9455c4019d9d0237952d5d2b6",
+      "outputSha256": "172c8a818c1022329dcacd0cfb787273b6a6265174a2a487894077a64cc946a6"
     },
     {
       "source": "public/images/products/578-acet-light-duty-cylindrical-lock-2.webp",
@@ -11993,6 +12204,567 @@
       },
       "sourceSha256": "ba686ef671b8e697ef3067cf600083ae19b6a60e2b42445a73001a94f37cb1be",
       "outputSha256": "0ae9f977d15e7db22dff4805554a92660ae803ea49ddf8c4030991f50faf61a4"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock-2.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 30.181818181818183,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "c8140833e91de2e22cbefb689562a393dba4e88de04df11a035d8e68b481418e",
+      "outputSha256": "1fa6d1c5573ccb90c9d9fa9384a6c65b94cf5debae784ef395d0b9393ced97eb"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock-3.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.1958874458874459,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "caed1edbc10aa5a25ea40e67bd998ffbad3f6747b74f6315e98013171f493468",
+      "outputSha256": "b6ada3f2ea71af4b419a94a87ef79338132d4300994ad8d534076e345e84ea94"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock-4.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.2132034632034632,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "f2f9e5af9fcddd129e7241c0c11c29cd4163a4c36e48e0ef5c8efdc5b0c1d0c4",
+      "outputSha256": "f35ba8a536fe0c692bc8c65c23b4c86124e567454560b4e0b159d07cbc336b3f"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock-5.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0aac663c075e318f2f4ea9bf2ac557733c5da9c8adde1996e8f7ef3b85a49b93",
+      "outputSha256": "b3ef696bd0405422aecfa84831cd6d70381170943f648867ed78ef2fe953c9a6"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock-6.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.2694805194805195,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "3525305734dff9c00338a8e71c6704c79e7d6a5b70b57bb4c65fb3d5f13f2410",
+      "outputSha256": "f8a066287e247752151fee8ba12b506ddf3809c72112a13d394a3a1acea9c329"
+    },
+    {
+      "source": "public/images/products/578-snbk-light-duty-cylindrical-lock.webp",
+      "output": "public/images/products-hyde/578-snbk-light-duty-cylindrical-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.2305194805194805,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "79d48961e729d9c8dabd18616090567da7d7f0f9a8d2d47c526fe06316ef6045",
+      "outputSha256": "1147507212c34fd7a6c84dbe2cffa0dcf24748eea84a89f3b5db9ed4a26a7c2c"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-2.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "5893fa137a3aad5fedb960a190e501ed03091344bc84547320e03a104c265add",
+      "outputSha256": "6ac5ebb5f0789f9b9f2782d4d606cd69e589f673e2c1a02b5628c92dc56d47ba"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-3.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.20887445887445888,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "64f8ef0ca0797db174d7089f194639ecc449f8a5e881466c0659952fad44cd7d",
+      "outputSha256": "2741328579d8af5cbcfc1e82df82916a8a28c4615495d6aad2f54c6943e4d3c3"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-4.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 7.094516594516595,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "f0400308c96a050b09d88d5ec1a454fcc11cdc29f517a1482576d82552b4d0db",
+      "outputSha256": "ce3b52896df82facc295e6bfe6f0d453f437e9e500598b76fc926a3e55948d2b"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-5.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "67386e2d44f0a117bb29dab65c37b2abaad0d99ac043a5e2463e159305f69ade",
+      "outputSha256": "8fc19d9a645111d61b2312e55cf00d5d99cf3a511d3f1d4f66d466a92c973ba5"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-6.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 42.84163059163059,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "4732ca766082a76787720fe193dfbe8a9f8d29e2b31cec2869a25156d652b4c2",
+      "outputSha256": "6e665b603c6ff39114598dc567dab60187fcb15c9409de929768a64bf93459ea"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock-7.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 30.374098124098126,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "9cdd8e20a288875df42f21f6a4c7e0dc57938cffa482f6fec679c96501a18d60",
+      "outputSha256": "e549ad09320a400c579934ef70d0ff6ce5e460d924a6faa3968d3f8133473f64"
+    },
+    {
+      "source": "public/images/products/578-snet-light-duty-cylindrical-lock.webp",
+      "output": "public/images/products-hyde/578-snet-light-duty-cylindrical-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.2305194805194805,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "c4be8381a88570de8d991e2329930b53b007255e023e6d3c55328b353723ae62",
+      "outputSha256": "300e302f22877d5631e4386328a848bb1898ccee575dd0f4e0a6c6eb36aeb48f"
+    },
+    {
+      "source": "public/images/products/578-sset-light-duty-cylindrical-lock-2.webp",
+      "output": "public/images/products-hyde/578-sset-light-duty-cylindrical-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 26.439393939393938,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "a6e0d1759b341379a9d410b2c0b2864b7a8b5a3eb16df4d1fedb929800028734",
+      "outputSha256": "d985f2d393434f7a309b3984a31b883ffbb271a29fe9ac5c0ba0056c4aede52b"
+    },
+    {
+      "source": "public/images/products/578-sset-light-duty-cylindrical-lock-3.webp",
+      "output": "public/images/products-hyde/578-sset-light-duty-cylindrical-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.48665223665223667,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "871a74866b66041f9e81547dc0ab384aafb4f6952f66a16e2f9187ef95e8614b",
+      "outputSha256": "02a6f718150449cb742f742f527603bd2c2f9617d576023453aa1b0e32bc8fdb"
+    },
+    {
+      "source": "public/images/products/578-sset-light-duty-cylindrical-lock-4.webp",
+      "output": "public/images/products-hyde/578-sset-light-duty-cylindrical-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 14.329365079365079,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "cc33176c36aab46b379a868399f34791a95e51e31edfed82667e2da0f8c6aadf",
+      "outputSha256": "20a0c1bdf2ca809241c5a13ddfeeb2ca0a6fd73a17060e5fb27ec594dc7dd5e3"
+    },
+    {
+      "source": "public/images/products/578-sset-light-duty-cylindrical-lock.webp",
+      "output": "public/images/products-hyde/578-sset-light-duty-cylindrical-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.12842712842712842,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "a9f1bc6bebde0be59cdd202e713e26d1c3690fb4c386d3462e71c6fcdb94abb1",
+      "outputSha256": "dcb65b876755a33fd0f94ecf54c2d4f619bab19028852f67ce009c573d2a5037"
     },
     {
       "source": "public/images/products/5807-sscl-commercial-lock-2.webp",
@@ -12802,6 +13574,164 @@
       },
       "sourceSha256": "7fe3178849f698e22e85c023e3af9fe1dec916865a5db403d45dec9c92d4805c",
       "outputSha256": "70ed496830e6eb2f5da0f4b7e29abd17d65bc05b36c3c988abe8547d26df8022"
+    },
+    {
+      "source": "public/images/products/587-mbbk-light-duty-cylindrical-lock-2.webp",
+      "output": "public/images/products-hyde/587-mbbk-light-duty-cylindrical-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "955db46b73adb721e8874dde363f32d7c9f678d28645ffbd0df91966922de301",
+      "outputSha256": "f073c9f5001980af3dc1d143fde3c9241f4d892ce4eede4ecf76dedde3b67500"
+    },
+    {
+      "source": "public/images/products/587-mbbk-light-duty-cylindrical-lock-3.webp",
+      "output": "public/images/products-hyde/587-mbbk-light-duty-cylindrical-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.3495670995670996,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "63f5cf66beee93fb4f5b2163a0693925a7dd7f7c562bd94f5e964e345532a38c",
+      "outputSha256": "aeca8dadacf799d2a224e0f460a666d95b3fd3b8e95bcfde0d2c854f3d29f157"
+    },
+    {
+      "source": "public/images/products/587-mbbk-light-duty-cylindrical-lock-4.webp",
+      "output": "public/images/products-hyde/587-mbbk-light-duty-cylindrical-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "3012fb803665c2368e87dd74d5725fae738eebdf824ec2e514d1e2f8a8a34cfc",
+      "outputSha256": "29c7813ba0aca2d4eb86db3eaf572b3a342852a81c7b257e204a950393393e80"
+    },
+    {
+      "source": "public/images/products/587-mbbk-light-duty-cylindrical-lock-5.webp",
+      "output": "public/images/products-hyde/587-mbbk-light-duty-cylindrical-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6b2b11300e057392693baf12b02c54d9a62d8c4ea8ebe9cb0144cca3ffdff8b0",
+      "outputSha256": "3427982a5bba6a91ba9e960f5b7a24fa3bde6b47f72b8ff687d4a6e58e584325"
+    },
+    {
+      "source": "public/images/products/587-mbbk-light-duty-cylindrical-lock.webp",
+      "output": "public/images/products-hyde/587-mbbk-light-duty-cylindrical-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "648fe29d45476c03e874bf03ea91c066acc384df453f8ec6faacfabadddb254e",
+      "outputSha256": "123daf15d12ed162aece477e2dad9e13285577323bd0caf62b914d1bee354803"
     },
     {
       "source": "public/images/products/587-mbet-light-duty-cylindrical-lock-2.webp",
@@ -15334,6 +16264,289 @@
       "outputSha256": "84878ceec847bf555f5269dbdc4945ada7bd62c0f81060f73a363b119b170324"
     },
     {
+      "source": "public/images/products/598-acet-tubular-lock.webp",
+      "output": "public/images/products-hyde/598-acet-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5a46a768487cdf9f1cc4869c73e8a3b63c6584d13c08301a300037423da995da",
+      "outputSha256": "2c9390c00047e6ad9a33b89caa28e4c32a39d5724aa6222f63b88610c9bd0649"
+    },
+    {
+      "source": "public/images/products/598-snbk-tubular-lock-2.webp",
+      "output": "public/images/products-hyde/598-snbk-tubular-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "79a75f2f675168285caede48de3fa70f0335c617f30609d4c589a3864fdbd173",
+      "outputSha256": "4be1b6fd7fc1016af5a8a67cc26edb232485c62359f2811a8403d9b42e462af8"
+    },
+    {
+      "source": "public/images/products/598-snbk-tubular-lock-3.webp",
+      "output": "public/images/products-hyde/598-snbk-tubular-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fcfb307ef63c5da415d3068215e58922e0ac25c324159080caf9ad8b7ef7c7ac",
+      "outputSha256": "eb8c59809dae24d9855e3b975196dda4ba664d33da7ea02e9cd261a6418b7334"
+    },
+    {
+      "source": "public/images/products/598-snbk-tubular-lock-4.webp",
+      "output": "public/images/products-hyde/598-snbk-tubular-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "13739409413e63d29ab017471f860c6db5e3ea2dce3e4871d58199ad9eff4b39",
+      "outputSha256": "fe40ad5e0b052678548e2e4df32055031de08dcaa9a9fc98137bcf346d716223"
+    },
+    {
+      "source": "public/images/products/598-snbk-tubular-lock.webp",
+      "output": "public/images/products-hyde/598-snbk-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bf7327a0882ec212b1a8295b1f3a7d6f2c19ff5f02ef9c28fbe44d411f45fd5e",
+      "outputSha256": "3c9d00bcc6d2a8655ed3212b9593be2202b097f9009e986a2e26bb380e0389a7"
+    },
+    {
+      "source": "public/images/products/598-snet-tubular-lock-2.webp",
+      "output": "public/images/products-hyde/598-snet-tubular-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 3.986652236652237,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "3690b5d15729495cc83ccde682a181483cc76969304813ed4dd54c0ee3a72093",
+      "outputSha256": "c2b8a4693c060f1ab8a7556a003c94f175f68332e521053564bb8785a2e24942"
+    },
+    {
+      "source": "public/images/products/598-snet-tubular-lock-3.webp",
+      "output": "public/images/products-hyde/598-snet-tubular-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "311e1e95ce46d10fdc3a15ed067819d9ccb8562723e14e4a594c1d2fcb44673f",
+      "outputSha256": "44cee32e3ae6a72bd89f226280763d5af914f666ea84ad00bb2fa7a4def44659"
+    },
+    {
+      "source": "public/images/products/598-snet-tubular-lock-4.webp",
+      "output": "public/images/products-hyde/598-snet-tubular-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 119,
+          "left": 0,
+          "top": 19,
+          "width": 189
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 119,
+          "left": 197,
+          "name": "inward",
+          "top": 19,
+          "width": 189
+        }
+      },
+      "sourceSha256": "e6a388c41a6735ca27fa0925dbba84477038a89636cdf75defe0e40e41ef047b",
+      "outputSha256": "c6d51ad359eadf647b7cfee3facf322cd1a3291a785a3c2964523f4aa61cb7b2"
+    },
+    {
+      "source": "public/images/products/598-snet-tubular-lock-5.webp",
+      "output": "public/images/products-hyde/598-snet-tubular-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 119,
+          "left": 0,
+          "top": 19,
+          "width": 189
+        },
+        "sample": {
+          "edgeDifference": 10.500544662309368,
+          "height": 119,
+          "left": 0,
+          "name": "below",
+          "top": 146,
+          "width": 189
+        }
+      },
+      "sourceSha256": "a69632fb133df96dc60ff5e92d387cf516954f8e9543e475815cd77c998a8508",
+      "outputSha256": "745b73f99974097a20cff9e26335309ac2826efc3a8214d52348747e7fb3d056"
+    },
+    {
+      "source": "public/images/products/598-snet-tubular-lock.webp",
+      "output": "public/images/products-hyde/598-snet-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "4295dcf17ccae8590d28f3dd2765c9340574487cf4451323c32bea693b734f58",
+      "outputSha256": "be57ab54e8b44e5b7177501bea6b046b61c838e8be33f9a1d07c8d169f619601"
+    },
+    {
+      "source": "public/images/products/598-sset-tubular-lock.webp",
+      "output": "public/images/products-hyde/598-sset-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "44d15f3dedc1eebd310a2438525575e04cf1d5a22f079acc89a879773956e6f6",
+      "outputSha256": "daee6a859f607a4056ba23e533f5899170c45c1a9c5191914810a4bca4abfb8b"
+    },
+    {
       "source": "public/images/products/598-tubular-lock-2.webp",
       "output": "public/images/products-hyde/598-tubular-lock-2.webp",
       "width": 800,
@@ -15614,6 +16827,164 @@
       },
       "sourceSha256": "f2c17e29625141aebd87b8f50c5d1bb7cc875bfb7456b2f4998b96f571f9a56f",
       "outputSha256": "e3896214e16aa3889a00bed49fed2c07990e69185c01486ce453fbcf40f4a4e1"
+    },
+    {
+      "source": "public/images/products/607-acbk-tubular-lock-2.webp",
+      "output": "public/images/products-hyde/607-acbk-tubular-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0.2261904761904762,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "a12a6ce5a44010a2ce778ab502e7e72d6408056a47bb0dc5c4abdce58f785516",
+      "outputSha256": "9ef8520d00764369c3971b059775417c15ab80de01b19b95eee7d75565ad4e15"
+    },
+    {
+      "source": "public/images/products/607-acbk-tubular-lock-3.webp",
+      "output": "public/images/products-hyde/607-acbk-tubular-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "0fdce59a1450f1aac8f68915a23881ac05b27f2610c58642f36fb98a99d6a2fb",
+      "outputSha256": "9d891650b801bf055a0ef283fd2a53e1360862c13b464083230b2cfc13ad9a52"
+    },
+    {
+      "source": "public/images/products/607-acbk-tubular-lock-4.webp",
+      "output": "public/images/products-hyde/607-acbk-tubular-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "30000f39424c4ab1e79cdc3898c035b026a725a3e503995c2f30d5693f2915bd",
+      "outputSha256": "07a04994bed34b3a07839834434e50fe56ea76d2f747cdf8191a2b0297606fe5"
+    },
+    {
+      "source": "public/images/products/607-acbk-tubular-lock-5.webp",
+      "output": "public/images/products-hyde/607-acbk-tubular-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 2.893939393939394,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "eda31fc11caaf9bb10196f39b12cde2585a8453205c665501ac6b8217cbb88d7",
+      "outputSha256": "38d79ee8f25360ceeb51974edcf9e1cbd12cb32dba146c4160358aad0ac3ea68"
+    },
+    {
+      "source": "public/images/products/607-acbk-tubular-lock.webp",
+      "output": "public/images/products-hyde/607-acbk-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "a27200771e26b337d569de2aca4c683134a950bbbd773d4f5bf9465c67c97434",
+      "outputSha256": "feab5bf3bf1cd23805a5dad5b9d4113206feb2c7ba6d489d42e4e21fd7e6274b"
     },
     {
       "source": "public/images/products/607-pbbk-tubular-lock-2.webp",
@@ -16860,6 +18231,41 @@
       "outputSha256": "30d4a9efffa987f9f1298ee6ffccbf76a52095257d7d00b689ea8876778a16b6"
     },
     {
+      "source": "public/images/products/607-ssps-tubular-lock.webp",
+      "output": "public/images/products-hyde/607-ssps-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 186,
+          "left": 0,
+          "top": 15,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 186,
+          "left": 269,
+          "name": "inward",
+          "top": 15,
+          "width": 261
+        }
+      },
+      "sourceSha256": "afea69c4ac3d5c73c37dc96d335953b505922986c4e7bdeaaf0a13ea3150fc45",
+      "outputSha256": "2818189bcaa614c4e11538693f2e4ec042dc487ec3e90adebe42dc2c5a758a40"
+    },
+    {
       "source": "public/images/products/609-pbet-tubular-lock-2.webp",
       "output": "public/images/products-hyde/609-pbet-tubular-lock-2.webp",
       "width": 1000,
@@ -17034,6 +18440,409 @@
       },
       "sourceSha256": "0ea0b59b32827d92756416f25ff9a752c4a669a058ef355455af5377f3b21e5d",
       "outputSha256": "e519955661d2d670a9ead7c337427c664e8d34aaff39a942128a9a5e9c1b12f5"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock-2.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "b5854ea04a0f4fe204b2545415db5ad5a5d5208eac04701b8d2a6d550b36b8f2",
+      "outputSha256": "356645221b14c6106e5f23fd0938cef80b789fd0ec0d79c67d5299d547f9e94d"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock-3.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 38.79906204906205,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "0f3ed4703230074cd49c722ee9f299125268599d5ced14bd80981deed20e2d60",
+      "outputSha256": "06f3541e9157e3b296ec0a6e70461b67062ea3bd241530bfb984d751faa5d6c2"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock-4.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "560385559d75d5cbe4a271df7e4e2e11afc6d99abf90e374430221bae08d5c0a",
+      "outputSha256": "55b32164eb879fd100a29beddbaafd06ceb3d5b67f1f662223f73b19c8915655"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock-5.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 44.84776334776335,
+          "height": 203,
+          "left": 0,
+          "name": "below",
+          "top": 222,
+          "width": 261
+        }
+      },
+      "sourceSha256": "9805493bf0c6549d51b590d679e5f310c07e1239ae8f3c38319632b35446169d",
+      "outputSha256": "54b38ad5286c8ec3bf5d1f91123bf05e2be0933f2ea314c7b032b17a7e3c1704"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock-6.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "22c0237e6a0c217279303d63c9d36d0138f7bde81cd763c33df6a7e8cab754cb",
+      "outputSha256": "79b9b2fa41794e7ce14d66e0ebfe11d1a353f0ae5a87018f27b787df259a4b94"
+    },
+    {
+      "source": "public/images/products/609-sset-tubular-lock.webp",
+      "output": "public/images/products-hyde/609-sset-tubular-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 203,
+          "left": 0,
+          "top": 11,
+          "width": 261
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 203,
+          "left": 269,
+          "name": "inward",
+          "top": 11,
+          "width": 261
+        }
+      },
+      "sourceSha256": "0d2952ff3092427650ad73b791f48dfa441aae2407e8ffd877b9523d71c355bb",
+      "outputSha256": "2ccee81f16d4787508fcc724770d6a50edbabd299eacdc4a2d0044999d9d9ba8"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle-2.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 254,
+          "name": "inward",
+          "top": 31,
+          "width": 227
+        }
+      },
+      "sourceSha256": "690d82a62009c2a1984810048c1d754e28423f97e8aa43298dc1572b6f6bb7eb",
+      "outputSha256": "f55e42e2cd6d4ab7b2c14506a3cab77ed29cdc20fa92a5652d158f873d6884bb"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle-3.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 254,
+          "name": "inward",
+          "top": 31,
+          "width": 227
+        }
+      },
+      "sourceSha256": "51f2dd9e3577c6236f12ac33a1e492c45b792eb413b3152e54c81c77cdcc9131",
+      "outputSha256": "c9fb67b14855135d6a4451d3f02fabd102a4e1c4966f02607eb9acf2125a1fdc"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle-4.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 0.96684350132626,
+          "height": 152,
+          "left": 19,
+          "name": "below",
+          "top": 191,
+          "width": 227
+        }
+      },
+      "sourceSha256": "2dcc0e301dac8d6b4ca4c89acbbb370e02e514cf7bd3822264dca96fed8c1540",
+      "outputSha256": "790ceaf9252c0c09e75d082cde942d3b9640e3490b09754eb25beb7ced16b8e3"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle-5.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 14.848806366047745,
+          "height": 152,
+          "left": 254,
+          "name": "inward",
+          "top": 31,
+          "width": 227
+        }
+      },
+      "sourceSha256": "b140633f239ba3c355009c7f08d8bcaa6a35b22904cdbe88b35e770272f21b9c",
+      "outputSha256": "9fbe8c7ca693bcf63441843febac903bab8a0bce19cd2b84a47b3beaa764662b"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle-6.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 1.5530503978779842,
+          "height": 152,
+          "left": 19,
+          "name": "below",
+          "top": 191,
+          "width": 227
+        }
+      },
+      "sourceSha256": "dc17ed4a953fa218d520ef1ecae29d8e94192064dd778b7ab242507a9d1b9cde",
+      "outputSha256": "b34616c2bb6299124e026e427dd2b59e6d4b820e9a8b364b44dfc0f14df13007"
+    },
+    {
+      "source": "public/images/products/6491-snet-lever-handle.webp",
+      "output": "public/images/products-hyde/6491-snet-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 19,
+          "top": 31,
+          "width": 227
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 254,
+          "name": "inward",
+          "top": 31,
+          "width": 227
+        }
+      },
+      "sourceSha256": "1582d7f86264ba618f5e764c0e7aacea906a4f413f02bd075ef146c466bd3080",
+      "outputSha256": "6f5adc28906027cdcbaa3622ed19e18fec5e9385ae8a27c0528d8a02a0fbc3fc"
     },
     {
       "source": "public/images/products/6491abet-lever-handle-2.webp",
@@ -20371,6 +22180,325 @@
       "outputSha256": "1bade34b803e5bf4e56d06d7274757c2c14d23173128460836feaa2334eee6bd"
     },
     {
+      "source": "public/images/products/807-abbk-lever-handle-2.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "da42b127f07bb0a5b868a64257c4004f56ea14c804c314248da4d44badc8df98",
+      "outputSha256": "40e6049c15c02f1e12ae34a1c15cb27c5ca3e3d678e3c70f2723495ab5c7f20a"
+    },
+    {
+      "source": "public/images/products/807-abbk-lever-handle-3.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "f919ba5ba683448924bb580e8ebbb48e477c5ebb474da195648e7112bbad0e2b",
+      "outputSha256": "75431e4c44ab95893f0b781a59ce1c5c12253b146c034b41da81942fefe79609"
+    },
+    {
+      "source": "public/images/products/807-abbk-lever-handle-4.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "850c064013ab652cc9cfcf433c6657d76cbb1e56b5424d8adce21b42a632469b",
+      "outputSha256": "c987290d8b9c2999a880c39fdedb8941a85627c11ef8e76d2aa7baccb85e54b9"
+    },
+    {
+      "source": "public/images/products/807-abbk-lever-handle-5.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 30.607274401473298,
+          "height": 152,
+          "left": 223,
+          "name": "inward-below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "6d68c016aaac15f7b2f569b7f92c193fe8981f2ffc5eed7f058ed029140322dd",
+      "outputSha256": "9cfdfdfd3b9ed253ad6d0730f1b7954f8985d3595c3b4d3eccf562a8ea569e02"
+    },
+    {
+      "source": "public/images/products/807-abbk-lever-handle-6.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 7.3406998158379375,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "1b6818cc6483012ec22e2d57ba424b4e73cf153f1d2969eb939fb225a4265df6",
+      "outputSha256": "70637aee1a6e1f0d7b97f60e31f9b72085cefec85b87e50a336a44534dff4ba9"
+    },
+    {
+      "source": "public/images/products/807-abbk-lever-handle.webp",
+      "output": "public/images/products-hyde/807-abbk-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2f0ad14ee0d227bc01cf0701cd7e53e8a51e2477a10b63ca779f8a2fb6f08c53",
+      "outputSha256": "fbfc237369ab66a4bc3ef0b8efb1a9bd3de76b024799a5c45f0b3644ea618e06"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-2.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2737353423af4f4942a364f42df9f6e98a8a89d8eb2324a3c78e351368055f30",
+      "outputSha256": "27283116f10a7afb2034f64f1767327cffa93b96e455be4f20a2c7baf5cdea31"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-3.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9537b93f240787439ad3234d5caaa9b34d980daf0971b7ca405c243f494bc771",
+      "outputSha256": "ed2d779b10b90e482d0cd561bac467c340645748018230e678d64479f94db8a1"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-4.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5bbb776b532c3dbe553da12033f521fa21ffc0c375a2e80e37d31b7e1f2cc33d",
+      "outputSha256": "8a4b1a763ade94fc308e56b196189583635d410c5e249dae36991c20512906f7"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-5.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f1ea2288a052b2e752871b3fd632c196dd24d0b4b45c11b01f2d774fc0666a7a",
+      "outputSha256": "17d7f2a250c5fc8622fbb30bff368ce320e554d973b40c19c1f10f44f9591322"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-6.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0f85fa9040911de1a37454b429c4d77eaa916423d7f3a376eba67cd31566e5de",
+      "outputSha256": "d90b4f1a1980410e35ccbcdf79484cfd390481ab804c10200fc9eb80f7fe3a97"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle-7.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ef29e9b83d5a795815ef89d32af636069559d5120ca9db696131b6de2b6cc82a",
+      "outputSha256": "1a67aa5982a8ea1e9e9250b0c1661475304f91dde13685c339666cc6f8468722"
+    },
+    {
+      "source": "public/images/products/808-abet-lever-handle.webp",
+      "output": "public/images/products-hyde/808-abet-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "34709559d4c02cd59aa7040fc9a055dc1b53edda82dd2b486052fd6a432d60b2",
+      "outputSha256": "6914909d2d2dbae08fe126cb64f5281cf83b389410601fbd38dba4a8718161ba"
+    },
+    {
       "source": "public/images/products/808-snet-lever-handle-2.webp",
       "output": "public/images/products-hyde/808-snet-lever-handle-2.webp",
       "width": 1000,
@@ -20581,6 +22709,78 @@
       },
       "sourceSha256": "e2731d559224505b9420ec4fdadb582738156719d07975a9ba436c54b6a6b099",
       "outputSha256": "114270d2b397ac08a135809c280fdffb2b596caa6a25e40a9e2620fc55ce67bc"
+    },
+    {
+      "source": "public/images/products/808-snps-lever-handle-2.webp",
+      "output": "public/images/products-hyde/808-snps-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3fdeae7319416320e374a72155a62f0e096718e92252096663722afbb2bdb6e3",
+      "outputSha256": "1a517da1e834d5d1f4f1b7e290f02ff0aa3b8106d3c1c4d08268963a5d6bea19"
+    },
+    {
+      "source": "public/images/products/808-snps-lever-handle-3.webp",
+      "output": "public/images/products-hyde/808-snps-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "18827efe588c698b6a83da99698a3e651a02cf71b374e800fe7de0d8b414e8be",
+      "outputSha256": "9c8cc178936e24cf447c4e967479428b819519c796b7ccea6c9567b66dde00b7"
+    },
+    {
+      "source": "public/images/products/808-snps-lever-handle-4.webp",
+      "output": "public/images/products-hyde/808-snps-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "089710239b23a6d664b8f453485c2e424758302fc49dd4c0d89888310d073a9e",
+      "outputSha256": "065acee7aa4d49458486cc6214547165bd76f88027abd37e448794ebf4cd1271"
+    },
+    {
+      "source": "public/images/products/808-snps-lever-handle.webp",
+      "output": "public/images/products-hyde/808-snps-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "286817ea670cb9f53546143932957f1074580566fbf93bf89cd02557bcd589e2",
+      "outputSha256": "66c5f652ff251b4e76d11ae6525b0bb942e98bf9256e69d9fcf2c1c79e615fdd"
     },
     {
       "source": "public/images/products/80sn-lock-cylinder-2.webp",
@@ -21656,6 +23856,251 @@
       "outputSha256": "9d40f282ea20b2631d4dff13b2318e2ab5b5228abe744541e29646cde48099c2"
     },
     {
+      "source": "public/images/products/836-snet-lever-handle-2.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0.21961325966850828,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "04845ced4dd6c058ee474a70ca1cb37f1013c962615f5d93e2944e94ec30571a",
+      "outputSha256": "5c130ed5f64aec668ae7f630c7b5b73e4bc0f1c7d98a38fb09f52491ca246684"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle-3.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "2794ea245593c6b6f9867ba3d0bcb99fd4add1ea521ba30f09532d2e87463a66",
+      "outputSha256": "fdc83d898777d69b6dc4cce06ac7040200e91c621a50e141642f4e0b1bde9724"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle-4.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "ed098f90b6faaecf12d6b3d5ebae9ba7fd042e79408b3d7f703b76149b34d4d6",
+      "outputSha256": "e2a6468d538a6b62f46d8524af539b41039854d04fa5da366e12aca155b24a55"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle-5.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "03c7b72d6d3a6f48aeca0d9f6dc46022e1716f9b7b110c4219ce49a8adfbfb04",
+      "outputSha256": "b3db93d051b64dea26aedbd7c1d516e56fd6def43c2cdd6fef59bbceb08fdbdf"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle-6.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 38.15239410681399,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "c7e4649762a6f4e8a6a72479a88e97a656b38b45d10bce0ebb2b402e4468dc0a",
+      "outputSha256": "874142c33d5e8dc25abc6cd01ab92a2b9cacd0a014a2392039078b9c7dde52e3"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle-7.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 7,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "49619bc45fb2f98f48f894b96cc01c63a7833af140c61418935af26b80442b82",
+      "outputSha256": "da4564ca55df1f39b73c99ec3370c37d43bbd6e6f42e575bea4a77023a04e3e7"
+    },
+    {
+      "source": "public/images/products/836-snet-lever-handle.webp",
+      "output": "public/images/products-hyde/836-snet-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "cd87e937f8c0b1447571aaf59284efe2cdf0229eb86888c411422fead2902ca9",
+      "outputSha256": "1da45e14f8e4195c29453a4611a8b8bf26e6baa4311504534d23a2b79cf25f43"
+    },
+    {
       "source": "public/images/products/853-snbk-lever-handle-2.webp",
       "output": "public/images/products-hyde/853-snbk-lever-handle-2.webp",
       "width": 800,
@@ -21812,6 +24257,164 @@
       },
       "sourceSha256": "559b504643b04539aa9f44c28969cc340cbcc273295626fbbc93e068599da883",
       "outputSha256": "ff1305a2ed7fd38d9620f9633e395ba2d4501c34bbcea1257d78d91b8e251d5a"
+    },
+    {
+      "source": "public/images/products/853-ssbk-lever-handle-2.webp",
+      "output": "public/images/products-hyde/853-ssbk-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 5.053030303030303,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "e94cfbeea33a16298bf0588a1c0028ec323610bd93fb1f42a0ee503949e8a8a0",
+      "outputSha256": "b93713922aceea183cf2917bcc6d9d3912a9d78bfcc4e5d2f968c74c15ab7382"
+    },
+    {
+      "source": "public/images/products/853-ssbk-lever-handle-3.webp",
+      "output": "public/images/products-hyde/853-ssbk-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 12.88755980861244,
+          "height": 169,
+          "left": 10,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "c4167cdd0a3607144cd79acf2f1337832655c13900b29fa903afff340a944591",
+      "outputSha256": "bd15c7a0652aac347da6e16c58d11b7d368486f766116ae4be1fc7f777759456"
+    },
+    {
+      "source": "public/images/products/853-ssbk-lever-handle-4.webp",
+      "output": "public/images/products-hyde/853-ssbk-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "b9c7646b213149f14baf665e9a0c6b9f3390ce469bd7ef032771cbed7bf9067c",
+      "outputSha256": "52259d4e7fa4f48a488e44c3819c2c3bb5320d8ae2015d10a15929c353da1409"
+    },
+    {
+      "source": "public/images/products/853-ssbk-lever-handle-5.webp",
+      "output": "public/images/products-hyde/853-ssbk-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fb60269d6e79d3e28770cb5b652d46e59777b7ff93462539f38ba56c6cfe09fa",
+      "outputSha256": "0b58a0283f7d1315db7a3d8b378ca8782722a6f5572c3aa40ef38920c60f9e40"
+    },
+    {
+      "source": "public/images/products/853-ssbk-lever-handle.webp",
+      "output": "public/images/products-hyde/853-ssbk-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "28d146f170ce6738a22460fa4b84d1c31f3ce2351185f02d15ed13d27e5e4522",
+      "outputSha256": "3a83bfc05b8f6de901dba331f2b50de9b8d417e192e329d0e00a4257ec2da852"
     },
     {
       "source": "public/images/products/881-ss-sliding-hook-lock-2.webp",
@@ -29991,6 +32594,166 @@
       },
       "sourceSha256": "f693fc2aab90b959cb76804b140de66b0b420ebfb4f020a8c0e8d03647c22c92",
       "outputSha256": "02ee58e15f562d7f85248ee35920e3b2e6e910187213dde6ce8bb363456a7f55"
+    },
+    {
+      "source": "public/images/products/d102-ac-deadbolts-2.webp",
+      "output": "public/images/products-hyde/d102-ac-deadbolts-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ee9042744b049e1c78147473539da382eb71b66c8685ecfeb30159a7c36d52b6",
+      "outputSha256": "f0ed59dfa70e7b51172eca8dfffd766a2300d50f7a6a453f55b4ddfa1df33773"
+    },
+    {
+      "source": "public/images/products/d102-ac-deadbolts-3.webp",
+      "output": "public/images/products-hyde/d102-ac-deadbolts-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 5,
+          "top": 11,
+          "width": 220
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 233,
+          "name": "inward",
+          "top": 11,
+          "width": 220
+        }
+      },
+      "sourceSha256": "707e73ff9d41a5e18415ea57e13472450181428c02c4924705527a1a28e2b478",
+      "outputSha256": "550b8273cfee3922a15a335e6e09f75df6d42a2a42810f7d9f87ed56b65c6a08"
+    },
+    {
+      "source": "public/images/products/d102-ac-deadbolts-4.webp",
+      "output": "public/images/products-hyde/d102-ac-deadbolts-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "a215791f2157b441249f73fc7031aefc0815b67d20089378d68a1a640168f96a",
+      "outputSha256": "896c5810a79aa17f5c5959019dd710a50fa54d1e570740851db5997ee0bbc01d"
+    },
+    {
+      "source": "public/images/products/d102-ac-deadbolts.webp",
+      "output": "public/images/products-hyde/d102-ac-deadbolts.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 5,
+          "top": 11,
+          "width": 220
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 233,
+          "name": "inward",
+          "top": 11,
+          "width": 220
+        }
+      },
+      "sourceSha256": "4279fe7d5ea4416ae33de0a6c81dc6ed57272e6319d838091b27691eb51a9a1d",
+      "outputSha256": "55f9159dc2433f84b2f37be54b3eb51009d9d409be964b01df70246960ba5741"
+    },
+    {
+      "source": "public/images/products/d102-pb-deadbolts-2.webp",
+      "output": "public/images/products-hyde/d102-pb-deadbolts-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "0fec2c7a845c8042e21388a2f6e5ac3de53de6872e654756dbbf7765e1e87187",
+      "outputSha256": "f9424391d9f2156ad9e1af18defab08bb5509e42c72db3e22e508e61d8da8c72"
+    },
+    {
+      "source": "public/images/products/d102-pb-deadbolts-3.webp",
+      "output": "public/images/products-hyde/d102-pb-deadbolts-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f6075285e816f770b270509d0e1844095bfb7cc4490a8c9e318de05a7c8c98a2",
+      "outputSha256": "0658cc4926a71dfea2189e36c863a8a05910cc2273df6b2952cf2462978fb7a9"
+    },
+    {
+      "source": "public/images/products/d102-pb-deadbolts.webp",
+      "output": "public/images/products-hyde/d102-pb-deadbolts.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "908ad9997eb337ca2d0834d27ec963668aaafc9a2628b7904a310ef46a4eff4a",
+      "outputSha256": "00946e212c2b1ba7972d4f343efc8fe4e8fe97d55c42d71b4560a8ee64b72c8a"
     },
     {
       "source": "public/images/products/d102-ss-deadbolts-2.webp",
@@ -39509,6 +42272,234 @@
       "outputSha256": "6e6345e86a1764fb0150ba5b284d43033c353470bb089c2a7f7ef2a307b0a731"
     },
     {
+      "source": "public/images/products/lh852-bnet-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "05110fafc6a39e9c90da634ab5b9d55ddcba4048c08bef8b6654627c20db4e65",
+      "outputSha256": "57fdad6c6ea1631e01b5f6cc078a9e9d414005197861deddb136f8fa6c9a1386"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0.141804788213628,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "2c826e0e26cdbb2c9bfe64698ff4370a7935881ff324db7a3c7574607717a9bc",
+      "outputSha256": "940426f98b4614de001c5e3f0b7cbf3bc43c7f0fff07985950c96bbe8f00906d"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "d62524df3ace7214cf038d59b46f8ea092bf2bc463dd38269ab854b3230aea2b",
+      "outputSha256": "736cc6559a0208c9a792bdcbf99b8fb0cc6aae800339ca764f1ce4ceb74aaa20"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 44.75828729281768,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "5c5ab3590060350f8e578c6e658afe26855e903be0e177a2d9974945f25bdd9c",
+      "outputSha256": "5fe9490f3953e5fac7a8f6aebe41e5b1c54ee0b970c28bd922b7dba86d844335"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 5.067219152854512,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "c77d76ba710c11ee440f3044e2c78f0e2b23c0541947c8a082050a99f69129da",
+      "outputSha256": "87e41ab329df533d846cb94d116fbabef0436e29a96e20e996101b519c3ef7f7"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle-7.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 16.271178637200737,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "e7365d7f78bb593239e717f9dbfc2f360e1b2877081b25e8d2cfd785af4cc102",
+      "outputSha256": "224fb03aa0eda033c4a838d614467b6b2eae02181fcf709f26b8933931a48555"
+    },
+    {
+      "source": "public/images/products/lh852-bnet-lever-handle.webp",
+      "output": "public/images/products-hyde/lh852-bnet-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2a0335aab83076b0c5cc61c97a952176a4f220643789f22e64747e5b0e33f367",
+      "outputSha256": "3bf2485cd28ce4d9d1ed9a1ac9b470e2380954e8d6c3281dc5458b605dca1c67"
+    },
+    {
       "source": "public/images/products/lh852-bnps-lever-handle-2.webp",
       "output": "public/images/products-hyde/lh852-bnps-lever-handle-2.webp",
       "width": 1000,
@@ -39700,6 +42691,216 @@
       },
       "sourceSha256": "5f705181e9f39f50a5ed76616049cf420f3b14285a594a7ffc2f1a63af5638af",
       "outputSha256": "ad30a45c3bb21ca914c8c428ebf98a3e337b25f484d74249e9a97aff737ec6f6"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "d6c4208dd3444fcfd7791696415f91d9047a55ab2b4cd1a8f5e74ec73511d1f5",
+      "outputSha256": "63ab3606710fa4f12237be9f8f103a10c08cc401acdad6dc7fe9c0665cd94a71"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "d34ae7007ed217c90bea6032890d6d07325fcc6aae274a5bda14ceaae37c80ed",
+      "outputSha256": "9c11ccce42456ddcf4dfa6cc848246ec338cc2ebc6ef93183db096ec42611c4a"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "b0064fca8a714dab3db6c266c09eef27a4713af6601514c7ec34bf1ae35515c3",
+      "outputSha256": "5aa6d3d48437c0d881b250535e0bae3cb4e429e0f913f0a0d4377ff39ec7997a"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 11.03391472868217,
+          "height": 135,
+          "left": 0,
+          "name": "below",
+          "top": 178,
+          "width": 211
+        }
+      },
+      "sourceSha256": "dd95596d7a8f59d84bdb3d150bceaeac1b6394324648b9a9c2b2de0c01a59b70",
+      "outputSha256": "ff18280f22b30efcd8903b3ba7692144c163cdc8a98a87c54139e9f417f84891"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0.7107558139534884,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "e5d48388d9d26614d965bda302f695ad0e92cfaf4a5261aff5d9f7cc5348f26b",
+      "outputSha256": "1be328af7cfa9696cd9944e1951f4985153d48d0dff974a7d2034df6329d4e0a"
+    },
+    {
+      "source": "public/images/products/lh853-snbk-lever-handle.webp",
+      "output": "public/images/products-hyde/lh853-snbk-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "72810dff18fcf8e9901a56c35901b67119018bc3bb5a7a10b0d897edbf8a9dfc",
+      "outputSha256": "344a559aec6bb709abb1c33ae86236179dda60a97dcf13f07e4048d6d453bac5"
     },
     {
       "source": "public/images/products/lh853-snet-lever-handle-2.webp",
@@ -39912,6 +43113,216 @@
       "outputSha256": "b1d09e93f53716fe409fce6b7da6fce2d718cf15983b7ce64f60996e4c1a4157"
     },
     {
+      "source": "public/images/products/lh853-snps-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "9dfd80a3fdfe9947fc209f1075fdb3f34941186c7f774498e80abc118fc27d0e",
+      "outputSha256": "9f981b7d925cdfffba2cf32dedf1deb3e8e813e43b7439cd1c90b6eaabc385f3"
+    },
+    {
+      "source": "public/images/products/lh853-snps-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "5e90e211c34a01968497a7acdf001c745ad6940b4d1c48ba085e165a982fa80c",
+      "outputSha256": "663f2c0b8bf6cc579aff010a18ee2d69e1d6af2f802607b5134a30f277f04124"
+    },
+    {
+      "source": "public/images/products/lh853-snps-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "bd1f6af38a51802bc838fcc2a8eb1f43b686de5f35497302066d72d1d590c405",
+      "outputSha256": "29d1016e2eabea339fdbde0f4f467856cdbe3d9e26b28b80cb6ae6c09746ef04"
+    },
+    {
+      "source": "public/images/products/lh853-snps-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 46.349806201550386,
+          "height": 135,
+          "left": 0,
+          "name": "below",
+          "top": 178,
+          "width": 211
+        }
+      },
+      "sourceSha256": "2bda49bbbe851165ca3ffc15d130411278dce11e9d66d120a6a48e8fbc33bf7e",
+      "outputSha256": "bf17a16d4eed775e6c86859cd8b5799ce6abe42bc8ffb72f492efe1ba08d2e6e"
+    },
+    {
+      "source": "public/images/products/lh853-snps-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0.39825581395348836,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "ba4f54d88e1c5051c93616b2e8a4f0c65ece7a84b1ee40355bd814d5b40a033d",
+      "outputSha256": "64559b0b755a4ea82b501b54735c30102fb0642ddae1e10eea109bf841eabdf0"
+    },
+    {
+      "source": "public/images/products/lh853-snps-lever-handle.webp",
+      "output": "public/images/products-hyde/lh853-snps-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "b360da53ece339ee833118509f5fce41f507e3d5bf500ceda2ba0843f8f3a9b7",
+      "outputSha256": "4bbb8cb7846c4c1ca2746c1ebf102b58291da595819284c104f4e56e6392984f"
+    },
+    {
       "source": "public/images/products/lh854-lever-handle-2.webp",
       "output": "public/images/products-hyde/lh854-lever-handle-2.webp",
       "width": 800,
@@ -40000,6 +43411,496 @@
       },
       "sourceSha256": "93067c477fbeae51531164e9a53cf0439035f56ab8544fe404f1974970d03797",
       "outputSha256": "d5703cd0c3c397abdb31717b2f8c8b986267feb8f607e37dbbb93b6bd967317b"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "c5e3f12ad03f20badd3d637277232134898314555c87ebcfaeddc38529c2313f",
+      "outputSha256": "57b16fe1449a2631a873c4cbd5cd93b0dae9660c48789a8fec0b754410de4994"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 42.18168604651163,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "c67938d27a729fc63da4b04f85fd3ab4947edadb49be5d3a7f93e776e614ecea",
+      "outputSha256": "bfdc2f9120be712a16ff46eeb864c2e6536da72def8e475620c6453221bd15a0"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "7bed403a5badaf2b5581d2450440ccf73b7f7a750a0a93a7e3872774a8af8f68",
+      "outputSha256": "ad287d7888760c15ed47fa34cc71f4afa6acaadcf203e5c61e0b87ce410bd519"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 45.56734496124031,
+          "height": 135,
+          "left": 0,
+          "name": "below",
+          "top": 178,
+          "width": 211
+        }
+      },
+      "sourceSha256": "d1d2d19908947e18fa4e0555296d799909b907d665ecadb9681e7b0d5cdd0dbf",
+      "outputSha256": "02425baea375186b2a864cc2368687b0a7e55aa09c5b272fe9264f85571f881d"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 9.332364341085272,
+          "height": 135,
+          "left": 0,
+          "name": "below",
+          "top": 178,
+          "width": 211
+        }
+      },
+      "sourceSha256": "68872f72c468a05a3d09cd7ec2ab3157b3820ce102a3e33f80be55241a865a5b",
+      "outputSha256": "8bedd8e365b7876e6a67368113cd0f575fb296fa8f7d3aaeb7ffb6ddb8a23f8b"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle-7.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "3cd0bce337ee573fa0c1736300a1acc5392de684a2d969b273167e6b252eacb8",
+      "outputSha256": "b2fa787d764304410b31af405c62e816ce04fa04ff9c14d9dc8b98dff41e65fa"
+    },
+    {
+      "source": "public/images/products/lh854-snet-lever-handle.webp",
+      "output": "public/images/products-hyde/lh854-snet-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 135,
+          "left": 0,
+          "top": 35,
+          "width": 211
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 135,
+          "left": 219,
+          "name": "inward",
+          "top": 35,
+          "width": 211
+        }
+      },
+      "sourceSha256": "4a2a6e4b8317285c9b51960529e2bee9b72f0fd106fd3563a36e709d17150238",
+      "outputSha256": "f136444c89db80571b9857590c4d3818c24d635435c1bbcbfbc4062d5fc0d792"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "fd5630b3be4f0de6a5294023ca7e08a803ec904f4a1f523d4bd5b51b6a4c66b8",
+      "outputSha256": "0d8c271107730c8cc935a718af3e38d76b9b4ba6228019039d1d717af9f2d5dd"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "0eba963ded53a86def8e01cb036e9eb58d664ae8206d5531be51fc52a1dc9384",
+      "outputSha256": "3895735e6ba4306dc31564168b383faa27b27ad7aa319953f90df7d5a2716e21"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 1.0311004784688995,
+          "height": 169,
+          "left": 10,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "c8e3ecc1d66ee0db0d994738240891b4bf929c9c6c1b253ea655a44127dc6d13",
+      "outputSha256": "6fd934cbe27138795fbb96b5aacef97739827601324e6a1ceed7a6357213fc60"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 36.31020733652313,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "9109bf965288002cab7bd649ca772cc6c36a64693dab8e269c47d6fb295253ef",
+      "outputSha256": "190b3199a3fcc9da47d1c856c74adcb97b6e59677a32c999a1bd6d62a7d1dd59"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 6.6830143540669855,
+          "height": 169,
+          "left": 10,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "4e7747cd356ba1c5580966369c6c955205f311fe8efd05e2d2890e94d06db3dc",
+      "outputSha256": "cdc255ab9c659953608310489aa5c7fde846c6fe99fbca3703db239e7ab9e95d"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle-7.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 64.22208931419458,
+          "height": 169,
+          "left": 10,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "16ffc3614fe99628e7ded9ed7c041fa799cf872c8c9663d8d5e7cf22aca41de6",
+      "outputSha256": "a85551638ccabd396cfe1f125e64f52687892db21fb9434f3cda8bdecd406c91"
+    },
+    {
+      "source": "public/images/products/lh855-bnbk-lever-handle.webp",
+      "output": "public/images/products-hyde/lh855-bnbk-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 10,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 269,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "7870418f88ff5bbbb6f60f25b04c20279d8d537b68efbc8fc548d1bc851a9439",
+      "outputSha256": "d7a255e5f942936322e592a52debfd4634644a5ba4fb59bc2b3ca8df49ce2c7f"
     },
     {
       "source": "public/images/products/lh855-lever-handle-2.webp",

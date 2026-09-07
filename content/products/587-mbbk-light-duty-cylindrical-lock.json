@@ -1,0 +1,112 @@
+{
+  "model": "587 MBBK",
+  "slug": "587-mbbk-light-duty-cylindrical-lock",
+  "name": "Light Duty Cylindrical Lock",
+  "series": "Light Duty Cylindrical Lock",
+  "categoryPath": [
+    "knob-locks",
+    "light-duty-cylindrical-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "stainless steel"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin nickel, chrome, antique brass, polished brass,all available"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Solid brass/Zinc & brass cylinder"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Latch",
+      "value": "Deadlocking on keyed functions"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Standard residential use"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike to the deadbolt series, or master keyed"
+    },
+    {
+      "label": "Function",
+      "value": "Privacy — bathroom, turn button inside"
+    },
+    {
+      "label": "Key Types",
+      "value": "Nickel-plated brass, solid brass, brushed nickel"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "MB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 587 MBBK Light Duty Cylindrical Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "587 MBBK Light Duty Cylindrical Lock | Canton Hyland",
+  "seoDescription": "Canton Hyland 587 MBBK light duty cylindrical lock in Stainless Steel. Available in MB finish. Manufactured in Guangdong, China and exported to over thirty markets.",
+  "nameEs": "Cerraduras de pomo",
+  "seoTitleEs": "587 MBBK Cerraduras de pomo — Acero inoxidable | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 587 MBBK cerraduras de pomo en acero inoxidable. Acabado MB. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "summary": "Light Duty Cylindrical Lock in satin nickel, chrome, antique brass, polished brass,all available, privacy function.",
+  "features": [
+    "Technical Features",
+    "Latch Bolt: 12mm (1/2”) throw, dead-locking on keyed models",
+    "Door Thickness: Adjustable for 35–50mm (1-3/8” to 2”) doors",
+    "Backset: Standard 60mm (2-3/8”); 70mm (2-3/4”) & 90mm (3-9/16”) optional",
+    "Handing: Fully reversible for left or right-hand doors",
+    "Product Highlights",
+    "Economical Choice – Ideal for light-duty residential applications",
+    "Durable Performance – Tested for 200,000+ cycles",
+    "Keying Options:",
+    "• Keyed alike with deadbolt series",
+    "• Group keying for convenience",
+    "• Master keyed for facility or family use",
+    "Corrosion Resistance – Zinc-plated solid steel chassis & latch case",
+    "High-Security Cylinder – 5-pin tumbler with brass plug and 2 nickel-plated brass keys",
+    "Trim Material – Electroplated zinc die-cast or solid brass"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2159",
+    "model": "587 MBET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "587 MBET",
+    "slug": "587-mbet-light-duty-cylindrical-lock",
+    "finishFrom": "sibling 587 MBET",
+    "functionFrom": "suffix BK",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

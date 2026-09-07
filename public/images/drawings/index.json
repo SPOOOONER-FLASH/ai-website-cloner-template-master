@@ -89,6 +89,31 @@
   "note": "Case 100 × 100mm, backset 60mm, bolt throw 25mm.",
   "partial": false
  },
+ "575-abet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "575-acet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "575-cpet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "575-sset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "576-pbps-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
  "5833-night-latch-and-rim-lock": {
   "shape": "boltDetail",
   "note": "Backset 50mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
@@ -104,10 +129,155 @@
   "note": "Backset 50mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true
  },
+ "592-abet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "592-pbbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "592-pbet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "592-pbps-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "592-sset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "595-acbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "595-acet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "598-acet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "598-snbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "598-snet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "598-sset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "598-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
  "600-concealed-sliding-door-handle": {
   "shape": "boltDetail",
   "note": "Backset 60mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true
+ },
+ "607-abet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-acbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-bnet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-fet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-ket-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-pbbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-pbet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-pbps-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-spet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-ssbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-sset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-ssps-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-wbk-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "607-wlet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "6082-sn-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "609-pbet-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
+ "609-sset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
  },
  "70610-ab-grip-handle-set": {
   "shape": "boltDetail",
@@ -189,6 +359,16 @@
   "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true
  },
+ "d102-ac-deadbolts": {
+  "shape": "boltDetail",
+  "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
+  "partial": true
+ },
+ "d102-pb-deadbolts": {
+  "shape": "boltDetail",
+  "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
+  "partial": true
+ },
  "d102-ss-deadbolts": {
   "shape": "boltDetail",
   "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
@@ -208,5 +388,10 @@
   "shape": "boltDetail",
   "note": "Backset 40mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true
+ },
+ "tubular-knob-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
  }
 }

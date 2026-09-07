@@ -1,0 +1,96 @@
+{
+  "model": "807 ABBK",
+  "slug": "807-abbk-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Backset",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Privacy — bathroom, turn button inside"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique brass (US5)"
+    },
+    {
+      "label": "Surface Finish Options",
+      "value": "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "AB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 807 ABBK Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "807 ABBK Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland 807 ABBK lever handle in Zinc Alloy. Lever Handle in antique brass (us5), privacy function. Available in AB finish. Made in Guangdong, China.",
+  "nameEs": "Manijas de palanca",
+  "summary": "Lever Handle in antique brass (us5), privacy function.",
+  "seoTitleEs": "807 ABBK Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 807 ABBK manijas de palanca en zamak. Acabado AB. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Ideal for bedrooms and privacy rooms",
+    "Button-lock mechanism: press to lock, release to unlock",
+    "Durable, heavy-duty construction",
+    "Multiple finishes available to match interior styles"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1960",
+    "model": "807 ABET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "807 ABET",
+    "slug": "807-abet-lever-handle",
+    "finishFrom": "sibling 807 ABET",
+    "functionFrom": "suffix BK",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

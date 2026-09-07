@@ -1,0 +1,89 @@
+{
+  "model": "609 SSET",
+  "slug": "609-sset-tubular-lock",
+  "name": "Tubular Lock",
+  "series": "Tubular Lock",
+  "categoryPath": [
+    "knob-locks",
+    "tubular-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless steel/Brass/Solid steel"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Brass cylinder"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Strike",
+      "value": "57mm curved lip standard; 70mm available on request"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin stainless steel (US32D)"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    }
+  ],
+  "material": "Stainless steel/Brass/Solid steel",
+  "finishes": [
+    "SS"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 609 SSET Tubular Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "609 SSET Tubular Lock — Knob Locks | Canton Hyland",
+  "seoDescription": "Canton Hyland 609 SSET tubular lock. Tubular Lock in satin stainless steel (us32d), entrance function. Available in SS finish. Made in Guangdong, China.",
+  "nameEs": "Cerraduras de pomo",
+  "summary": "Tubular Lock in satin stainless steel (us32d), entrance function.",
+  "seoTitleEs": "609 SSET Cerraduras de pomo | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 609 SSET cerraduras de pomo. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "609 PBET",
+    "slug": "609-pbet-tubular-lock",
+    "finishFrom": "19 records use SS",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

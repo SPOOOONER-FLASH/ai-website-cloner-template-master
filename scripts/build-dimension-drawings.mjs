@@ -406,6 +406,79 @@ const RECIPES = {
       note: `Length ${length}mm, projection ${projection}mm from the wall, tube Ø${tube}mm${height ? `, height ${height}mm` : ""}.`,
     };
   },
+
+  /*
+    DOOR PREPARATION — the plan section a joiner drills from.
+
+    This one recipe covers more products than every other combined, and it took counting
+    to see: 52 of 52 lever handles publish both Backset and Door thickness, and so do 39
+    knob locks and 16 rim locks. The earlier recipes all wanted a part outline, and none
+    of those families publishes one — but the outline is not what gets measured on site.
+    The hole is.
+
+    So this draws the door in plan, seen from above: the leaf at its published thickness,
+    the edge at the left, and the spindle centre line at Backset from that edge. Those two
+    numbers ARE the preparation. A cross bore is drawn only where published, and the
+    faceplate rebate only where a Latch extension is.
+
+    The leaf is drawn 190mm deep into the door — enough to show the relationship and short
+    of implying a door width, which is not ours to state.
+  */
+  doorPrep: (specs) => {
+    const backset = mm(get(specs, "Backset"));
+    const thickness = mm(get(specs, "Door thickness", "Suitable Door Thickness", "Door Thickness Range"));
+    if (!backset || !thickness) return null;
+
+    const crossBore = dia(get(specs, "Cross bore", "Cross Bore"));
+    const latch = mm(get(specs, "Latch extension", "Latch throw"));
+
+    /*
+      A DRAWING HAS TO SAY MORE THAN THE TABLE ABOVE IT.
+
+      With only Backset and Door thickness this draws a rectangle with two numbers on it —
+      and both numbers are already in the spec table two inches higher up the page. That is
+      not a technical drawing, it is the same fact rendered twice, and 55 of the first 90 it
+      produced were exactly that.
+      Restraint reads as confidence; a picture that adds nothing reads as padding, which is
+      the opposite. So a third feature has to be published — the bore to drill, the latch
+      projection, or the strike — before this earns its place on a page. 35 of the 90 clear
+      that bar; the other 55 wait for the factory to supply a cross bore.
+    */
+    const strike = get(specs, "Strike");
+    if (!crossBore && !latch && !strike) return null;
+    const depth = 190;
+    const spindleX = backset;
+    const midY = thickness / 2;
+
+    const body = [
+      /* The leaf, in plan. Left edge is the door edge the lock goes into. */
+      rect(0, 0, depth, thickness),
+
+      centreLine(spindleX, -14, spindleX, thickness + 14),
+      centreLine(-14, midY, depth + 14, midY),
+
+      ...(crossBore ? [circle(spindleX, midY, crossBore / 2, { width: HAIR_W })] : []),
+      ...(latch ? [rect(-latch, midY - 6, latch, 12, { width: HAIR_W })] : []),
+
+      dimH(0, spindleX, thickness + 26, `${backset}`, { from: thickness }),
+      dimV(0, thickness, depth + 28, `${thickness}`, { from: depth }),
+      ...(crossBore
+        ? [leader(spindleX + crossBore / 2 * 0.7, midY - crossBore / 2 * 0.7, spindleX + crossBore * 1.8, -18, `Ø${crossBore}`)]
+        : []),
+      ...(latch ? [dimH(-latch, 0, -26, `${latch}`, { from: midY })] : []),
+    ].join("\n    ");
+
+    return {
+      body,
+      width: depth,
+      height: thickness,
+      offsetX: latch ? latch + 10 : 0,
+      note:
+        `Door preparation: backset ${backset}mm, door thickness ${thickness}mm` +
+        `${crossBore ? `, cross bore Ø${crossBore}mm` : ""}` +
+        `${latch ? `, latch extension ${latch}mm` : ""}.`,
+    };
+  },
 };
 
 /* ------------------------------------------------------------------------ run */
@@ -428,7 +501,7 @@ const skipped = new Map();
   drawing of the wrong object made entirely of correct numbers — the worst possible
   outcome here, because every figure on it would check out.
 */
-const ORDER = ["lockCase", "platedTrim", "rimLock", "pullHandle", "grabRail", "boltDetail"];
+const ORDER = ["lockCase", "platedTrim", "rimLock", "pullHandle", "grabRail", "boltDetail", "doorPrep"];
 
 for (const product of products) {
   const family = product.categoryPath?.[0];

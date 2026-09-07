@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 187" role="img" aria-labelledby="t d">
+  <title id="t">607 PBBK Tubular Lock — dimensioned drawing</title>
+  <desc id="d">Door preparation: backset 60mm, door thickness 35mm. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <path d="M0.00 0.00 L190.00 0.00 L190.00 35.00 L0.00 35.00 Z" fill="none" stroke="#16150f" stroke-width="1.6" stroke-linejoin="round"/>
+    <line x1="60.00" y1="-14.00" x2="60.00" y2="49.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="-14.00" y1="17.50" x2="204.00" y2="17.50" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="0" y1="38" x2="0" y2="65" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="60" y1="38" x2="60" y2="65" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="61" x2="19.84" y2="61" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="40.16" y1="61" x2="60" y2="61" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 61.00 L4.20 62.18 L4.20 59.82 Z" fill="#16150f"/>
+    <path d="M60.00 61.00 L55.80 59.82 L55.80 62.18 Z" fill="#16150f"/>
+    <text x="30" y="64.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">60</text>
+    <line x1="193" y1="0" x2="222" y2="0" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="193" y1="35" x2="222" y2="35" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="218" y1="0" x2="218" y2="9.8" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="218" y1="25.2" x2="218" y2="35" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M218.00 0.00 L216.82 4.20 L219.18 4.20 Z" fill="#16150f"/>
+    <path d="M218.00 35.00 L219.18 30.80 L216.82 30.80 Z" fill="#16150f"/>
+    <text x="218" y="17.5" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 218 17.5)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">35</text>
+    </g>
+    <text x="76" y="165" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

@@ -1,0 +1,102 @@
+{
+  "model": "808 SNPS",
+  "slug": "808-snps-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin nickel, chrome, antique brass, polished brass,all available"
+    },
+    {
+      "label": "Backset",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Passage"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Latch",
+      "value": "60/70mm adjustable tubular latch"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "SN"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 808 SNPS Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "808 SNPS Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland 808 SNPS lever handle in Zinc Alloy. Lever Handle in satin nickel, chrome, antique brass, polished brass,all available, passage function.",
+  "nameEs": "Manijas de palanca",
+  "summary": "Lever Handle in satin nickel, chrome, antique brass, polished brass,all available, passage function.",
+  "seoTitleEs": "808 SNPS Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 808 SNPS manijas de palanca en zamak. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Economical and easy to install",
+    "Durable design with over 200,000 life cycles",
+    "Can be keyed alike with deadbolts for enhanced security",
+    "Supports master keying for family or facility use",
+    "Zinc-plated steel chassis and latch case for corrosion resistance",
+    "Available functions: Entrance, Privacy, Passage, Dummy"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1961",
+    "model": "808 SNET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "808 SNET",
+    "slug": "808-snet-lever-handle",
+    "finishFrom": "sibling 808 SNET",
+    "functionFrom": "suffix PS",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

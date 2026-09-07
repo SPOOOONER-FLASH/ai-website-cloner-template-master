@@ -1,0 +1,102 @@
+{
+  "model": "808 ABET",
+  "slug": "808-abet-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique brass (US5)"
+    },
+    {
+      "label": "Backset",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Latch",
+      "value": "60/70mm adjustable tubular latch"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "AB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 808 ABET Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "808 ABET Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland 808 ABET lever handle in Zinc Alloy. Lever Handle in antique brass (us5), entrance function. Available in AB finish. Made in Guangdong, China.",
+  "nameEs": "Manijas de palanca",
+  "summary": "Lever Handle in antique brass (us5), entrance function.",
+  "seoTitleEs": "808 ABET Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 808 ABET manijas de palanca en zamak. Acabado AB. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Economical and easy to install",
+    "Durable design with over 200,000 life cycles",
+    "Can be keyed alike with deadbolts for enhanced security",
+    "Supports master keying for family or facility use",
+    "Zinc-plated steel chassis and latch case for corrosion resistance",
+    "Available functions: Entrance, Privacy, Passage, Dummy"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1961",
+    "model": "808 SNET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "808 SNET",
+    "slug": "808-snet-lever-handle",
+    "finishFrom": "9 records use AB",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

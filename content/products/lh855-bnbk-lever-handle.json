@@ -1,0 +1,97 @@
+{
+  "model": "LH855 BNBK",
+  "slug": "lh855-bnbk-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Backset",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Privacy — bathroom, turn button inside"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Black nickel"
+    },
+    {
+      "label": "Application",
+      "value": "For privacy doors"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "BN"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland LH855 BNBK Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "LH855 BNBK Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland LH855 BNBK lever handle in Zinc Alloy. Lever Handle in black nickel, privacy function. Available in BN finish. Made in Guangdong, China.",
+  "nameEs": "Manijas de palanca",
+  "summary": "Lever Handle in black nickel, privacy function.",
+  "seoTitleEs": "LH855 BNBK Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland LH855 BNBK manijas de palanca en zamak. Acabado BN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Affordable and easy to install, ideal for residential applications",
+    "Lock/unlock both knobs via key or thumb-turn",
+    "Simple operation: turn to lock or unlock",
+    "Zinc-plated steel latch and chassis for enhanced durability",
+    "Trim options: wrought stainless steel or brass"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1985",
+    "model": "LH855 SNBK",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "LH855 SNBK",
+    "slug": "lh855-snbk-lever-handle",
+    "finishFrom": "4 records use BN",
+    "functionFrom": "suffix BK",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

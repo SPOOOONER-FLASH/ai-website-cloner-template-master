@@ -1,0 +1,111 @@
+{
+  "model": "D102 PB",
+  "slug": "d102-pb-deadbolts",
+  "name": "Deadbolts",
+  "series": "Deadbolts",
+  "categoryPath": [
+    "deadbolts"
+  ],
+  "specs": [
+    {
+      "label": "Cylinder",
+      "value": "Solid Brass Cylinder"
+    },
+    {
+      "label": "Deadbolt throw",
+      "value": "25mm, zinc die-cast with hardened steel roller insert"
+    },
+    {
+      "label": "Chassis",
+      "value": "Zinc plated steel internal components"
+    },
+    {
+      "label": "Trim",
+      "value": "Stainless steel, brass or steel"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Feature",
+      "value": "Free-turning cylinder trim prevents wrenching; cylinder removable for rekeying"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed to pair with an entrance bored lock"
+    },
+    {
+      "label": "Finish",
+      "value": "Polished brass (US3)"
+    },
+    {
+      "label": "Trim Material",
+      "value": "Stainless Steel / Brass / Steel"
+    },
+    {
+      "label": "Key options",
+      "value": "2 Nickel-Plated Brass Keys"
+    },
+    {
+      "label": "Door thickness",
+      "value": "1-3/8” to 1-3/4” (35mm–45mm)"
+    },
+    {
+      "label": "Backset",
+      "value": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+    }
+  ],
+  "material": "",
+  "finishes": [
+    "PB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland D102 PB Deadbolts"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "D102 PB Deadbolts | Canton Hyland",
+  "seoDescription": "Canton Hyland D102 PB deadbolts. Available in PB finish. Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
+  "nameEs": "Cerrojos",
+  "summary": "Deadbolts in polished brass (us3).",
+  "seoTitleEs": "D102 PB Cerrojos | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland D102 PB cerrojos. Acabado PB. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "features": [
+    "Key Features",
+    "Robust Construction",
+    "Interior parts: Zinc-plated steel",
+    "Exterior trim: Available in stainless steel, brass, or steel",
+    "Free-turning cylinder trim resists wrench attacks",
+    "Secure Deadbolt",
+    "1” (25mm) zinc die-cast bolt",
+    "Hardened steel roller insert enhances resistance to sawing",
+    "Precision Cylinder",
+    "5-pin tumbler mechanism, easy to rekey",
+    "Solid brass plug",
+    "Includes two nickel-plated brass keys",
+    "Reversible Design",
+    "Fully reversible handing",
+    "Ideal for left or right door installation without extra adjustment"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1914",
+    "model": "D102 SS",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "D102 SS",
+    "slug": "d102-ss-deadbolts",
+    "finishFrom": "14 records use PB",
+    "functionFrom": "family has no function suffix",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

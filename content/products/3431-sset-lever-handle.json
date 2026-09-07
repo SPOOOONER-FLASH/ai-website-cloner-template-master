@@ -1,0 +1,80 @@
+{
+  "model": "3431 SSET",
+  "slug": "3431-sset-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Backset",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin stainless steel (US32D)"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "SS"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 3431 SSET Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "3431 SSET Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland 3431 SSET lever handle in Zinc Alloy. Lever Handle in satin stainless steel (us32d), entrance function. Available in SS finish.",
+  "nameEs": "Manijas de palanca",
+  "seoTitleEs": "3431 SSET Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 3431 SSET manijas de palanca en zamak. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "summary": "Lever Handle in satin stainless steel (us32d), entrance function.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "3431 SNET",
+    "slug": "3431-snet-lever-handle",
+    "finishFrom": "19 records use SS",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

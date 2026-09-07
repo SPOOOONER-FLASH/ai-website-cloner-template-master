@@ -1,0 +1,105 @@
+{
+  "model": "575 ACET",
+  "slug": "575-acet-tubular-lock",
+  "name": "Tubular Lock",
+  "series": "Tubular Lock",
+  "categoryPath": [
+    "knob-locks",
+    "tubular-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless Steel"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Brass cylinder"
+    },
+    {
+      "label": "Finish",
+      "value": "Antique copper (US11)"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Strike",
+      "value": "57mm curved lip standard; 70mm available on request"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    },
+    {
+      "label": "Latch",
+      "value": "12mm throw, deadlocking for keyed functions"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "AC"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 575 ACET Tubular Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "575 ACET Tubular Lock — Stainless Steel | Canton Hyland",
+  "seoDescription": "Canton Hyland 575 ACET tubular lock in Stainless Steel. Tubular Lock in antique copper (us11), entrance function. Available in AC finish. Made in Guangdong, China.",
+  "nameEs": "Cerraduras de pomo",
+  "summary": "Tubular Lock in antique copper (us11), entrance function.",
+  "seoTitleEs": "575 ACET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 575 ACET cerraduras de pomo en acero inoxidable. Acabado AC. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "features": [
+    "Economical and easy to install",
+    "200,000+ cycle durability",
+    "Can be keyed alike or master keyed",
+    "Zinc-plated steel chassis and latch case for corrosion resistance"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2131",
+    "model": "575 ABET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [],
+  "derivedFrom": {
+    "model": "575 ABET",
+    "slug": "575-abet-tubular-lock",
+    "finishFrom": "5 records use AC",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "model": "598 SSET",
+  "slug": "598-sset-tubular-lock",
+  "name": "Tubular Lock",
+  "series": "Tubular Lock",
+  "categoryPath": [
+    "knob-locks",
+    "tubular-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless Steel"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Brass cylinder"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin stainless steel (US32D)"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Strike",
+      "value": "57mm curved lip standard; 70mm available on request"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "SS"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 598 SSET Tubular Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "598 SSET Tubular Lock — Stainless Steel | Canton Hyland",
+  "seoDescription": "Canton Hyland 598 SSET tubular lock in Stainless Steel. Tubular Lock in satin stainless steel (us32d), entrance function. Available in SS finish.",
+  "nameEs": "Cerraduras de pomo",
+  "summary": "Tubular Lock in satin stainless steel (us32d), entrance function.",
+  "seoTitleEs": "598 SSET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 598 SSET cerraduras de pomo en acero inoxidable. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "598",
+    "slug": "598-tubular-lock",
+    "finishFrom": "19 records use SS",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

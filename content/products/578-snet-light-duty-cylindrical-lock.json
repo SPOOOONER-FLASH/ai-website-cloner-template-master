@@ -1,0 +1,85 @@
+{
+  "model": "578 SNET",
+  "slug": "578-snet-light-duty-cylindrical-lock",
+  "name": "Light Duty Cylindrical Lock",
+  "series": "Light Duty Cylindrical Lock",
+  "categoryPath": [
+    "knob-locks",
+    "light-duty-cylindrical-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless steel"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Cylinder",
+      "value": "5-pin tumbler, brass plug, two nickel-plated brass keys"
+    },
+    {
+      "label": "Latch",
+      "value": "Deadlocking on keyed functions"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Standard residential use"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike to the deadbolt series, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin nickel"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "SN"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 578 SNET Light Duty Cylindrical Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "578 SNET Light Duty Cylindrical Lock | Canton Hyland",
+  "seoDescription": "Canton Hyland 578 SNET light duty cylindrical lock in Stainless Steel. Light Duty Cylindrical Lock in satin nickel, entrance function. Available in SN finish.",
+  "nameEs": "Cerraduras de pomo",
+  "summary": "Light Duty Cylindrical Lock in satin nickel, entrance function.",
+  "seoTitleEs": "578 SNET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 578 SNET cerraduras de pomo en acero inoxidable. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "578 ACET",
+    "slug": "578-acet-light-duty-cylindrical-lock",
+    "finishFrom": "12 records use SN",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

@@ -3818,6 +3818,71 @@
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "3431-sset-lever-handle",
+      "model": "3431 SSET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "3431 SSET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "400-indicator",
       "model": "400",
       "name": "指示锁",
@@ -5519,6 +5584,85 @@
       "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "575-acet-tubular-lock",
+      "model": "575 ACET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古红铜 (US11)"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "12mm throw, deadlocking for keyed functions"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "AC"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "575 ACET 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "575-cpet-tubular-lock",
       "model": "575 CPET",
       "name": "管状锁",
@@ -5624,6 +5768,85 @@
       ],
       "relatedModels": [],
       "seoTitle": "575 CPET 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "575-sset-tubular-lock",
+      "model": "575 SSET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "12mm throw, deadlocking for keyed functions"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "575 SSET 管状锁",
       "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
@@ -5795,6 +6018,219 @@
       ],
       "relatedModels": [],
       "seoTitle": "578 ACET 轻型球锁",
+      "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
+    },
+    {
+      "slug": "578-snbk-light-duty-cylindrical-lock",
+      "model": "578 SNBK",
+      "name": "轻型球锁",
+      "nameEn": "Light Duty Cylindrical Lock",
+      "series": "轻型球锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "light-duty-cylindrical-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "轻型筒式锁"
+      ],
+      "summary": "不锈钢轻型球锁。耐久次数 200,000 次。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁芯",
+          "value": "5 弹子，黄铜锁芯，配两把镀镍黄铜钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "带钥匙功能具备防撬锁死"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "标准住宅用"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁系列同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "578 SNBK 轻型球锁",
+      "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
+    },
+    {
+      "slug": "578-snet-light-duty-cylindrical-lock",
+      "model": "578 SNET",
+      "name": "轻型球锁",
+      "nameEn": "Light Duty Cylindrical Lock",
+      "series": "轻型球锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "light-duty-cylindrical-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "轻型筒式锁"
+      ],
+      "summary": "不锈钢轻型球锁。耐久次数 200,000 次。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁芯",
+          "value": "5 弹子，黄铜锁芯，配两把镀镍黄铜钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "带钥匙功能具备防撬锁死"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "标准住宅用"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁系列同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "578 SNET 轻型球锁",
+      "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
+    },
+    {
+      "slug": "578-sset-light-duty-cylindrical-lock",
+      "model": "578 SSET",
+      "name": "轻型球锁",
+      "nameEn": "Light Duty Cylindrical Lock",
+      "series": "轻型球锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "light-duty-cylindrical-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "轻型筒式锁"
+      ],
+      "summary": "不锈钢轻型球锁。耐久次数 200,000 次。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁芯",
+          "value": "5 弹子，黄铜锁芯，配两把镀镍黄铜钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "带钥匙功能具备防撬锁死"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "标准住宅用"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁系列同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "578 SSET 轻型球锁",
       "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
     },
     {
@@ -6959,6 +7395,81 @@
       "gallery": [],
       "relatedModels": [],
       "seoTitle": "587 FET 轻型球锁",
+      "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
+    },
+    {
+      "slug": "587-mbbk-light-duty-cylindrical-lock",
+      "model": "587 MBBK",
+      "name": "轻型球锁",
+      "nameEn": "Light Duty Cylindrical Lock",
+      "series": "轻型球锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "light-duty-cylindrical-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "轻型筒式锁"
+      ],
+      "summary": "不锈钢轻型球锁。耐久次数 200,000 次。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍、镀铬、仿古铜、抛光铜均可选"
+        },
+        {
+          "label": "锁芯",
+          "value": "Solid brass/Zinc & brass cylinder"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁舌",
+          "value": "带钥匙功能具备防撬锁死"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "标准住宅用"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁系列同花，或配总钥匙"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "钥匙类型",
+          "value": "Nickel-plated brass, solid brass, brushed nickel"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "MB"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "587 MBBK 轻型球锁",
       "seoDescription": "不锈钢轻型球锁。耐久次数 200,000 次。"
     },
     {
@@ -8846,6 +9357,306 @@
       "seoDescription": "黄铜或不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "598-acet-tubular-lock",
+      "model": "598 ACET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古红铜 (US11)"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "AC"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "598 ACET 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "598-snbk-tubular-lock",
+      "model": "598 SNBK",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "598 SNBK 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "598-snet-tubular-lock",
+      "model": "598 SNET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "598 SNET 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "598-sset-tubular-lock",
+      "model": "598 SSET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "598 SSET 管状锁",
+      "seoDescription": "不锈钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "598-tubular-lock",
       "model": "598",
       "name": "管状锁",
@@ -9195,6 +10006,85 @@
       "gallery": [],
       "relatedModels": [],
       "seoTitle": "607 ABET 管状锁",
+      "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "607-acbk-tubular-lock",
+      "model": "607 ACBK",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢 / 黄铜 / 实心钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古红铜 (US11)"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "Adjustable 60–70mm"
+        }
+      ],
+      "material": "不锈钢 / 黄铜 / 实心钢",
+      "finishes": [
+        "AC"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "607 ACBK 管状锁",
       "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
@@ -10002,6 +10892,85 @@
       "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "607-ssps-tubular-lock",
+      "model": "607 SSPS",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢 / 黄铜 / 实心钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        },
+        {
+          "label": "功能",
+          "value": "通道"
+        },
+        {
+          "label": "锁舌",
+          "value": "Adjustable 60–70mm"
+        }
+      ],
+      "material": "不锈钢 / 黄铜 / 实心钢",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "607 SSPS 管状锁",
+      "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "607-wbk-tubular-lock",
       "model": "607 WBK",
       "name": "管状锁",
@@ -10312,6 +11281,81 @@
       "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "609-sset-tubular-lock",
+      "model": "609 SSET",
+      "name": "管状锁",
+      "nameEn": "Tubular Lock",
+      "series": "管状锁系列",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "categoryNames": [
+        "球形锁",
+        "管式锁"
+      ],
+      "summary": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "不锈钢 / 黄铜 / 实心钢"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "背距",
+          "value": "60mm / 70mm 可调"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢锁芯座与锁舌壳，镀锌"
+        },
+        {
+          "label": "外装件",
+          "value": "锻造不锈钢或黄铜"
+        },
+        {
+          "label": "锁扣板",
+          "value": "57mm 弧形唇边为标准；可订 70mm"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        }
+      ],
+      "material": "不锈钢 / 黄铜 / 实心钢",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "609 SSET 管状锁",
+      "seoDescription": "不锈钢 / 黄铜 / 实心钢管状锁。背距 60mm / 70mm 可调，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "6094-pbbk-heavy-duty-cylindrical-lock",
       "model": "6094 PBBK",
       "name": "重型球锁",
@@ -10529,6 +11573,71 @@
       "relatedModels": [],
       "seoTitle": "6094 PBPS 重型球锁",
       "seoDescription": "201/304 不锈钢重型球锁，适用于适用于卫生间等需要私密的门。耐久次数 200,000 次。"
+    },
+    {
+      "slug": "6491-snet-lever-handle",
+      "model": "6491 SNET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "6491 SNET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
       "slug": "6491-sset-lever-handle",
@@ -12500,6 +13609,75 @@
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "807-abbk-lever-handle",
+      "model": "807 ABBK",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古铜 (US5)"
+        },
+        {
+          "label": "可选表面处理",
+          "value": "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "AB"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "807 ABBK 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "807-abet-lever-handle",
       "model": "807 ABET",
       "name": "执手锁",
@@ -12564,6 +13742,79 @@
       "gallery": [],
       "relatedModels": [],
       "seoTitle": "807 ABET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "808-abet-lever-handle",
+      "model": "808 ABET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古铜 (US5)"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "60/70mm adjustable tubular latch"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "AB"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "808 ABET 执手锁",
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
@@ -12662,6 +13913,79 @@
       ],
       "relatedModels": [],
       "seoTitle": "808 SNET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "808-snps-lever-handle",
+      "model": "808 SNPS",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍、镀铬、仿古铜、抛光铜均可选"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "通道"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "锁舌",
+          "value": "60/70mm adjustable tubular latch"
+        },
+        {
+          "label": "适用场景",
+          "value": "住宅用"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "808 SNPS 执手锁",
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
@@ -13331,6 +14655,71 @@
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "836-snet-lever-handle",
+      "model": "836 SNET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "836 SNET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "853-snbk-lever-handle",
       "model": "853 SNBK",
       "name": "执手锁",
@@ -13417,6 +14806,71 @@
       ],
       "relatedModels": [],
       "seoTitle": "853 SNBK 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "853-ssbk-lever-handle",
+      "model": "853 SSBK",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面不锈钢 (US32D)"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SS"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "853 SSBK 执手锁",
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
@@ -20164,6 +21618,152 @@
       "relatedModels": [],
       "seoTitle": "D101 SS 呆锁",
       "seoDescription": "呆锁。背距 60mm or 70mm (2-3/8” or 2-3/4”)，适用门厚 35–45mm (1-3/8” to 1-3/4”)。"
+    },
+    {
+      "slug": "d102-ac-deadbolts",
+      "model": "D102 AC",
+      "name": "呆锁",
+      "nameEn": "Deadbolts",
+      "series": "呆锁系列",
+      "categoryPath": [
+        "deadbolts"
+      ],
+      "categoryNames": [
+        "深栓锁"
+      ],
+      "summary": "呆锁。背距 Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)，适用门厚 1-3/8” to 1-3/4” (35mm–45mm)。",
+      "specs": [
+        {
+          "label": "锁芯",
+          "value": "Solid Brass Cylinder"
+        },
+        {
+          "label": "方舌伸出",
+          "value": "25mm, zinc die-cast with hardened steel roller insert"
+        },
+        {
+          "label": "锁芯座",
+          "value": "Zinc plated steel internal components"
+        },
+        {
+          "label": "外装件",
+          "value": "不锈钢, 黄铜 or 钢"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "特点",
+          "value": "Free-turning cylinder trim prevents wrenching; cylinder removable for rekeying"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "Can be keyed to pair with an entrance bored lock"
+        },
+        {
+          "label": "表面处理",
+          "value": "仿古红铜 (US11)"
+        },
+        {
+          "label": "外装件材质",
+          "value": "不锈钢 / 黄铜 / 钢"
+        },
+        {
+          "label": "钥匙选项",
+          "value": "2 Nickel-Plated Brass Keys"
+        },
+        {
+          "label": "适用门厚",
+          "value": "1-3/8” to 1-3/4” (35mm–45mm)"
+        },
+        {
+          "label": "背距",
+          "value": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+        }
+      ],
+      "material": "",
+      "finishes": [
+        "AC"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "D102 AC 呆锁",
+      "seoDescription": "呆锁。背距 Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)，适用门厚 1-3/8” to 1-3/4” (35mm–45mm)。"
+    },
+    {
+      "slug": "d102-pb-deadbolts",
+      "model": "D102 PB",
+      "name": "呆锁",
+      "nameEn": "Deadbolts",
+      "series": "呆锁系列",
+      "categoryPath": [
+        "deadbolts"
+      ],
+      "categoryNames": [
+        "深栓锁"
+      ],
+      "summary": "呆锁。背距 Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)，适用门厚 1-3/8” to 1-3/4” (35mm–45mm)。",
+      "specs": [
+        {
+          "label": "锁芯",
+          "value": "Solid Brass Cylinder"
+        },
+        {
+          "label": "方舌伸出",
+          "value": "25mm, zinc die-cast with hardened steel roller insert"
+        },
+        {
+          "label": "锁芯座",
+          "value": "Zinc plated steel internal components"
+        },
+        {
+          "label": "外装件",
+          "value": "不锈钢, 黄铜 or 钢"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "特点",
+          "value": "Free-turning cylinder trim prevents wrenching; cylinder removable for rekeying"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "Can be keyed to pair with an entrance bored lock"
+        },
+        {
+          "label": "表面处理",
+          "value": "抛光铜 (US3)"
+        },
+        {
+          "label": "外装件材质",
+          "value": "不锈钢 / 黄铜 / 钢"
+        },
+        {
+          "label": "钥匙选项",
+          "value": "2 Nickel-Plated Brass Keys"
+        },
+        {
+          "label": "适用门厚",
+          "value": "1-3/8” to 1-3/4” (35mm–45mm)"
+        },
+        {
+          "label": "背距",
+          "value": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+        }
+      ],
+      "material": "",
+      "finishes": [
+        "PB"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "D102 PB 呆锁",
+      "seoDescription": "呆锁。背距 Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)，适用门厚 1-3/8” to 1-3/4” (35mm–45mm)。"
     },
     {
       "slug": "d102-ss-deadbolts",
@@ -28035,6 +29635,87 @@
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "lh852-bnet-lever-handle",
+      "model": "LH852 BNET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "黑镍"
+        },
+        {
+          "label": "锁芯",
+          "value": "黄铜锁芯"
+        },
+        {
+          "label": "锁舌",
+          "value": "Adjustable 60–70mm"
+        },
+        {
+          "label": "开向",
+          "value": "Fully reversible for left or right-hand doors"
+        },
+        {
+          "label": "适用场景",
+          "value": "For Privacy doors"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "BN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "LH852 BNET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "lh852-bnps-lever-handle",
       "model": "LH852 BNPS",
       "name": "执手锁",
@@ -28374,6 +30055,75 @@
       "seoDescription": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "lh853-snbk-lever-handle",
+      "model": "LH853 SNBK",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "适用场景",
+          "value": "For entrance doors"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "LH853 SNBK 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "lh853-snet-lever-handle",
       "model": "LH853 SNET",
       "name": "执手锁",
@@ -28467,6 +30217,75 @@
       "seoDescription": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。"
     },
     {
+      "slug": "lh853-snps-lever-handle",
+      "model": "LH853 SNPS",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "通道"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        },
+        {
+          "label": "适用场景",
+          "value": "For entrance doors"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "LH853 SNPS 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60mm，适用门厚 35–45mm 可调。"
+    },
+    {
       "slug": "lh854-lever-handle",
       "model": "LH854",
       "name": "执手锁",
@@ -28549,6 +30368,140 @@
       ],
       "relatedModels": [],
       "seoTitle": "LH854 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "lh854-snet-lever-handle",
+      "model": "LH854 SNET",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "入户功能 —— 外侧用钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "缎面镍"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "SN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "LH854 SNET 执手锁",
+      "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
+    },
+    {
+      "slug": "lh855-bnbk-lever-handle",
+      "model": "LH855 BNBK",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。",
+      "specs": [
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "背距",
+          "value": "60/70mm"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35–45mm 可调"
+        },
+        {
+          "label": "耐久次数",
+          "value": "200,000 次"
+        },
+        {
+          "label": "锁芯座",
+          "value": "实心钢，镀锌防腐"
+        },
+        {
+          "label": "外装件",
+          "value": "锌合金压铸电镀或实心黄铜"
+        },
+        {
+          "label": "开向",
+          "value": "完全可逆，左右开通用"
+        },
+        {
+          "label": "功能",
+          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+        },
+        {
+          "label": "钥匙系统",
+          "value": "可与呆锁同花，或配总钥匙"
+        },
+        {
+          "label": "表面处理",
+          "value": "黑镍"
+        },
+        {
+          "label": "适用场景",
+          "value": "For privacy doors"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "BN"
+      ],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [],
+      "seoTitle": "LH855 BNBK 执手锁",
       "seoDescription": "锌合金执手锁。背距 60/70mm，适用门厚 35–45mm 可调。"
     },
     {
