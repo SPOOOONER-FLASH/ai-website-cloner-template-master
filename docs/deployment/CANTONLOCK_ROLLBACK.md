@@ -62,9 +62,19 @@ chown -R www:www .
 | 自动拉取 | ✅ 系统 crontab，5 分钟，带护栏 |
 | 缓存头 | ✅ 三段策略，无重复头 |
 
-## 已知问题：HTTPS 尚未可用
+## ~~已知问题：HTTPS 尚未可用~~ → 已解决（2026-09-07 实测）
 
-**现象**：浏览器访问 `https://www.cantonlock.com` 报
+> **这一节记的是历史，不是待办。** 2026-09-07 实测两个主机名，证书均校验通过：
+>
+> | 地址 | 结果 |
+> |---|---|
+> | `https://www.cantonlock.com/` | 301 → `https://cantonlock.com/`，`ssl_verify_result=0` |
+> | `https://cantonlock.com/` | 200，`ssl_verify_result=0` |
+>
+> 证书已装好，www 也已正确并到 apex。**不需要再按下面的步骤操作。**
+> 下面的诊断保留，因为根因分析对以后再遇到同类问题有用。
+
+**当时的现象**：浏览器访问 `https://www.cantonlock.com` 报
 `NET::ERR_CERT_AUTHORITY_INVALID`，点继续后是 nginx 的 `404 Not Found`。
 
 **根因**：`/www/server/panel/vhost/nginx/cantonlock.com.conf` 只有
