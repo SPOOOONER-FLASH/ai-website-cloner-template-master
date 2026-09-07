@@ -13,6 +13,8 @@
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
 
+Codex 2026-09-07: video trial withdrawn before push. Local out/ and out-rayen/ rebuilt without trial media; npm run check passed. Later concurrent source edits make predeploy freshness fail. Release baton returned: next builder incorporates those changes before publishing. See 2026-09-07-codex-motion-withdrawal.md.
+
 > 2026-08-31 claude 已交还发布接力棒：941 页已构建、提交并推送（6b66bfdd）。
 > ⚠ 那次构建里含 Codex 尚未提交的首页改动（home.ts / home-es.ts /
 > editorial-images.config.json 与六张 webp）。**Codex 请提交这几个文件**，

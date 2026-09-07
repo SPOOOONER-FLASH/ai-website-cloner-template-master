@@ -182,6 +182,16 @@ output.
 
 ### Finish and communicate quickly
 
+Client instruction, 2026-09-07: "不打断，你继续工作，做完一条推送一条，写进纪律。"
+Continue already-authorized work without waiting for repeated approval. Divide long work
+into independently publishable stages; finish and verify each stage, commit its source
+and generated export, push promptly, then continue the next stage. Report concrete stage
+results without turning progress updates into permission gates. Preserve genuine missing
+facts and conflicts; elapsed time never supplies missing evidence. For Blender geometry,
+follow `docs/collaboration/tasks/2026-09-07-blender-undimensioned-features.md`: exact published
+dimensions, documented neutral closure dimensions with non-featured faces, and omission
+of all optional undocumented features. Verify orthographic geometry before beauty renders.
+
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
 - Stage only explicit paths with `git add -- <paths>`. Never use unreviewed bulk staging in
   a dirty shared tree.
