@@ -34,6 +34,21 @@ export function ArrowLink({
       prefetch={prefetch}
       className={cn(
         "short-marker short-marker-arrow relative inline-block pl-12 text-c1 text-brand",
+        /*
+          TOUCH HEIGHT.
+
+          Measured on the homepage at 375px: every one of these rendered 25px tall — and
+          these are the primary calls to action, "Explore exit devices", "Talk to export",
+          "Contact us". Apple and WCAG 2.5.8 both put the minimum at 44px, so the most
+          important links on the page were the hardest to hit on the device most visitors
+          use.
+
+          Padding on the link rather than margin on the row, so the whole strip is
+          tappable and not just the glyph height. Removed from `sm` up, where this is a
+          mouse target and the extra leading would loosen every editorial block that uses
+          one of these.
+        */
+        "py-10 sm:py-0",
         "hover:text-brand-hover active:text-brand-active",
         groupHover && "short-marker-group",
         className,

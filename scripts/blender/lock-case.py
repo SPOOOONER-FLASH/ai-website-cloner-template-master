@@ -96,7 +96,25 @@ def box(name, size, location):
     bpy.ops.mesh.primitive_cube_add(size=1, location=location)
     ob = bpy.context.object
     ob.name = name
-    ob.scale = (size[0] / 2, size[1] / 2, size[2] / 2)
+    """
+    EVERY DIMENSION WAS COMING OUT HALF SIZE, AND THE RENDER IS WHAT CAUGHT IT.
+
+    `primitive_cube_add(size=1)` builds a cube of EDGE LENGTH 1 — Blender's default is 2,
+    which is where the habit of halving comes from. Scaling that unit cube by size/2 gave
+    every part half its published dimension: an 173mm case body rendered 86.5mm tall.
+
+    The bug was invisible in isolation because everything shrank together and the
+    proportions between the boxes stayed right. What gave it away was the two bores: they
+    are positioned by centre distance in absolute millimetres, so they did NOT shrink, and
+    at ±42.5mm in a case that was silently 86.5mm tall they landed on the top and bottom
+    edges instead of a quarter of the way in. A drawing of the same numbers had them
+    comfortably inside.
+
+    A model whose scale is wrong by a constant factor is the most dangerous kind of wrong
+    here: it looks entirely plausible, and a buyer measuring off the render orders a part
+    that is twice the size of the picture.
+    """
+    ob.scale = (size[0], size[1], size[2])
     bpy.ops.object.transform_apply(scale=True)
     return ob
 
@@ -215,16 +233,40 @@ black = metal("case_black", (0.055, 0.055, 0.058), 0.52, metallic=0.85)
 faceplate.data.materials.append(steel)
 case.data.materials.append(black)
 
+"""
+BEVEL FIRST, MATERIALS AFTER — and select before every operator.
+
+The first version appended the materials and then ran shade_smooth and a bevel in a loop
+that only set `objects.active`. `bpy.ops.object.*` acts on the SELECTION, not on the
+active object alone, so with nothing selected the operators applied to whatever Blender
+still had selected from the boolean step — and the case came back with no material at
+all, rendering as white plastic instead of the near-black it was given.
+
+Selecting explicitly, and assigning materials after the mesh is final, removes both the
+ordering question and the silent-no-op.
+"""
 for ob in (faceplate, case):
+    bpy.ops.object.select_all(action="DESELECT")
+    ob.select_set(True)
     bpy.context.view_layer.objects.active = ob
     bpy.ops.object.shade_smooth()
-    bpy.ops.object.modifier_add(type="BEVEL")
-    ob.modifiers["Bevel"].width = 0.0006
-    ob.modifiers["Bevel"].segments = 2
-    bpy.ops.object.modifier_apply(modifier="Bevel")
+    bevel = ob.modifiers.new(name="Bevel", type="BEVEL")
+    bevel.width = 0.0006
+    bevel.segments = 2
+    bpy.ops.object.modifier_apply(modifier=bevel.name)
+
+faceplate.data.materials.clear()
+case.data.materials.clear()
+faceplate.data.materials.append(steel)
+case.data.materials.append(black)
 
 
 # ---------------------------------------------------------------------- the studio
+
+# The part's own size drives the camera, the lights and the sweep, so the studio is the
+# same relative studio for a 173mm case and a 600mm pull. Defined before anything uses it.
+_extent = max(CASE_HEIGHT, FACEPLATE_L, FACEPLATE_THICKNESS + CASE_DEPTH)
+
 
 """
 The same field the photographs use, so a render and a photograph can sit on one page.
@@ -242,19 +284,19 @@ world.node_tree.nodes["Background"].inputs[1].default_value = 0.6
 
 # A floor, not a wall: rotated 90deg about X it stood up behind the part and split the
 # frame into a light top and a dark bottom, which is a horizon, not a studio sweep.
-backdrop = box("backdrop", (2.0, 2.0, 0.002), (0, 0.30, -0.16))
+backdrop = box("backdrop", (_extent*14, _extent*14, 0.0004), (0, _extent*1.6, -_extent*0.9))
 backdrop.data.materials.append(metal("ground", (0.16, 0.155, 0.148), 0.62, metallic=0.0))
 
-bpy.ops.object.light_add(type="AREA", location=(-0.42, -0.38, 0.42))
+bpy.ops.object.light_add(type="AREA", location=(-_extent*2.2, -_extent*2.0, _extent*2.2))
 key = bpy.context.object
-key.data.energy = 45
-key.data.size = 0.75
+key.data.energy = _extent * _extent * 900
+key.data.size = _extent * 4
 key.rotation_euler = (math.radians(52), 0, math.radians(-42))
 
-bpy.ops.object.light_add(type="AREA", location=(0.55, -0.2, -0.15))
+bpy.ops.object.light_add(type="AREA", location=(_extent*2.9, -_extent*1.1, -_extent*0.8))
 fill = bpy.context.object
-fill.data.energy = 12
-fill.data.size = 1.1
+fill.data.energy = _extent * _extent * 240
+fill.data.size = _extent * 6
 fill.rotation_euler = (math.radians(96), 0, math.radians(66))
 
 #
@@ -268,7 +310,24 @@ fill.rotation_euler = (math.radians(96), 0, math.radians(66))
 # centre distance are both square to the lens, which is what makes the render checkable
 # against the spec table instead of merely decorative.
 
-bpy.ops.object.camera_add(location=(0.62, 0.04, 0.16))
+"""
+FRAME THE CAMERA FROM THE MODEL, NOT FROM A TYPED-IN DISTANCE.
+
+The camera sat at a hand-tuned (0.62, 0.04, 0.16), chosen while every dimension was
+silently half size. Fixing the scale doubled the object and the same coordinates now
+cropped it. Hand-tuning again would only work until the next product with a different
+case height — and this script is meant to serve every lock case the catalogue publishes.
+
+So the distance is computed: take the part's own extent, and back off far enough that it
+subtends a little less than the lens's field of view. `0.62` in the numerator leaves the
+margin FSB leaves around a hero — the object owns about two thirds of the frame and the
+rest is field.
+"""
+_lens = 85.0
+_sensor = 36.0
+_distance = (_extent / 0.62) * (_lens / _sensor)
+
+bpy.ops.object.camera_add(location=(_distance * 0.94, -_distance * 0.10, _distance * 0.30))
 cam = bpy.context.object
 cam.data.lens = 85  # Compression, so the case is described rather than dramatised.
 bpy.context.scene.camera = cam

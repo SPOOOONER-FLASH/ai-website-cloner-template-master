@@ -1,0 +1,2949 @@
+{
+ "001-panic-exit-device": {
+  "model": "001",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Plate size": "300 × 75mm",
+   "Plate thickness": "1.5mm",
+   "Grip centre distance": "179mm",
+   "Projection": "60mm",
+   "Cylinder cutout": "Ø32mm"
+  }
+ },
+ "015-panic-exit-device": {
+  "model": "015",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Door thickness": "Up to 80mm"
+  }
+ },
+ "026-panic-exit-device": {
+  "model": "026",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Height": "118mm",
+   "Projection": "55mm"
+  }
+ },
+ "027-panic-exit-device": {
+  "model": "027",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Lever length": "122mm",
+   "Fixing centres": "52.5mm"
+  }
+ },
+ "028-panic-exit-device": {
+  "model": "028",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Door thickness": "35–55mm"
+  }
+ },
+ "030-panic-exit-device": {
+  "model": "030",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Plate size": "178 × 52mm",
+   "Lever length": "140mm",
+   "Lever section": "22.5mm",
+   "Projection": "40mm"
+  }
+ },
+ "036-panic-exit-device": {
+  "model": "036",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Width": "200mm",
+   "Height": "190mm"
+  }
+ },
+ "037-panic-exit-device": {
+  "model": "037",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Door thickness": "35–55mm"
+  }
+ },
+ "039-panic-exit-device": {
+  "model": "039",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Door thickness": "45–50mm"
+  }
+ },
+ "100-glass-door-handle": {
+  "model": "100",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Length": "600mm",
+   "Centre distance": "148mm",
+   "Tube diameter": "32mm",
+   "Fixing centre": "30mm"
+  }
+ },
+ "102-glass-door-handle": {
+  "model": "102",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "10–12 mm",
+   "Length": "600mm",
+   "Centre distance": "147mm",
+   "Tube diameter": "32mm",
+   "Fixing centre": "30mm"
+  }
+ },
+ "104-glass-door-handle": {
+  "model": "104",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "10–12 mm",
+   "Length": "600mm",
+   "Centre distance": "149mm at the head, 133mm at the foot — tapered",
+   "Tube diameter": "32mm, tapering to 19mm",
+   "Fixing centre": "34mm"
+  }
+ },
+ "105-600-glass-door-handle": {
+  "model": "105-600",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Size": "25x25x600 mm"
+  }
+ },
+ "106-glass-door-handle": {
+  "model": "106",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "10–12 mm",
+   "Length": "600mm",
+   "Centre distance": "125mm",
+   "Tube diameter": "32mm, tapering to 18.5mm",
+   "Fixing centre": "30mm"
+  }
+ },
+ "107-glass-door-handle": {
+  "model": "107",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "10–12 mm",
+   "Length": "600mm",
+   "Centre distance": "148mm",
+   "Tube diameter": "32mm",
+   "Fixing centre": "30mm"
+  }
+ },
+ "1073d-night-latch-and-rim-lock": {
+  "model": "1073D",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "1073s-night-latch-and-rim-lock": {
+  "model": "1073S",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "19-130mm-glass-door-handle": {
+  "model": "19-130MM",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Plate size": "200 × 65mm",
+   "Plate thickness": "1.2mm",
+   "Grip centre distance": "148mm",
+   "Projection": "60mm"
+  }
+ },
+ "260-night-latch-and-rim-lock": {
+  "model": "260",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "60mm (2-3/8”)"
+  }
+ },
+ "302-panic-exit-device": {
+  "model": "302",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "1040mm(length can be adjusted)"
+  }
+ },
+ "302-s-s-panic-exit-device": {
+  "model": "302-S",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "1040mm(length can be adjusted)"
+  }
+ },
+ "303-panic-exit-device": {
+  "model": "303",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "900mm"
+  }
+ },
+ "305-fire-door-panic-exit-device": {
+  "model": "305",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "1040mm"
+  }
+ },
+ "307-panic-exit-device": {
+  "model": "307",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Size": "1000mm"
+  }
+ },
+ "310-panic-exit-device": {
+  "model": "310",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "900MM"
+  }
+ },
+ "314-alarm-panic-bar-exit-device": {
+  "model": "314",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "650mm / 800mm / 1000mm, Customizable"
+  }
+ },
+ "315-pry-latch": {
+  "model": "315",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "800mm / 1000mm"
+  }
+ },
+ "320-two-point-locking-exit-device": {
+  "model": "320",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "Different length according to customer request"
+  }
+ },
+ "330-panic-exit-device": {
+  "model": "330",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Length": "Different length according to customer request"
+  }
+ },
+ "3431-snet-lever-handle": {
+  "model": "3431 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "3431-sset-lever-handle": {
+  "model": "3431 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "45bn-lock-cylinder": {
+  "model": "45BN",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "45MM"
+  }
+ },
+ "47bsik-lock-cylinder": {
+  "model": "47BSIK",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "47mm"
+  }
+ },
+ "556-night-latch-and-rim-lock": {
+  "model": "556",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "60mm (2-3/8”)"
+  }
+ },
+ "558-night-latch-and-rim-lock": {
+  "model": "558",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "60mm (2-3/8”)"
+  }
+ },
+ "559-night-latch-and-rim-lock": {
+  "model": "559",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "60mm (2-3/8”)"
+  }
+ },
+ "564-mb-night-latch-and-rim-lock": {
+  "model": "564 MB",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "564-night-latch-and-rim-lock": {
+  "model": "564",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "2-3/8\" (60mm)",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5681-night-latch-and-rim-lock": {
+  "model": "5681",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5682-night-latch-and-rim-lock": {
+  "model": "5682",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5683-night-latch-and-rim-lock": {
+  "model": "5683",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "2-3/8＂(60mm)",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5688-night-latch-and-rim-lock": {
+  "model": "5688",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Size": "100*100mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5689-night-latch-and-rim-lock": {
+  "model": "5689",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Size": "100×100mm"
+  }
+ },
+ "575-abet-tubular-lock": {
+  "model": "575 ABET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "575-acet-tubular-lock": {
+  "model": "575 ACET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "575-cpet-tubular-lock": {
+  "model": "575 CPET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "575-sset-tubular-lock": {
+  "model": "575 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "576-pbps-tubular-lock": {
+  "model": "576 PBPS",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "5807-sscl-commercial-lock": {
+  "model": "5807 SSCL",
+  "family": "knob-locks",
+  "dims": {
+   "Door thickness": "35–45mm (1-3/8” to 1-3/4”)"
+  }
+ },
+ "5807-sscr-commercial-lock": {
+  "model": "5807 SSCR",
+  "family": "knob-locks",
+  "dims": {
+   "Door thickness": "35–45mm"
+  }
+ },
+ "5807-ssel-commercial-lock": {
+  "model": "5807 SSEL",
+  "family": "knob-locks",
+  "dims": {
+   "Door thickness": "35–45mm"
+  }
+ },
+ "5807-ssr-commercial-lock": {
+  "model": "5807 SSR",
+  "family": "knob-locks",
+  "dims": {
+   "Door thickness": "35–45mm"
+  }
+ },
+ "5831-sset-heavy-duty-cylindrical-lock": {
+  "model": "5831 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60 / 70 / 80 / 90 mm (Adjustable)",
+   "Door thickness": "35–50 mm"
+  }
+ },
+ "5833-night-latch-and-rim-lock": {
+  "model": "5833",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "50mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "5835-night-latch-and-rim-lock": {
+  "model": "5835",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "50mm"
+  }
+ },
+ "5836-night-latch-and-rim-lock": {
+  "model": "5836",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available",
+   "Backset": "50mm"
+  }
+ },
+ "5870-acet-heavy-duty-cylindrical-lock": {
+  "model": "5870 ACET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm/70mm",
+   "Door thickness": "35–50mm"
+  }
+ },
+ "5870-sscc-commercial-lock": {
+  "model": "5870 SSCC",
+  "family": "knob-locks",
+  "dims": {
+   "Door thickness": "35–45mm"
+  }
+ },
+ "5870-ssps-heavy-duty-cylindrical-lock": {
+  "model": "5870 SSPS",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "70mm"
+  }
+ },
+ "5874-acet-heavy-duty-cylindrical-lock": {
+  "model": "5874 ACET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm/70mm",
+   "Door thickness": "35–50mm"
+  }
+ },
+ "592-abet-tubular-lock": {
+  "model": "592 ABET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "592-pbbk-tubular-lock": {
+  "model": "592 PBBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "592-pbet-tubular-lock": {
+  "model": "592 PBET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "592-pbps-tubular-lock": {
+  "model": "592 PBPS",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "592-sset-tubular-lock": {
+  "model": "592 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "595-acbk-tubular-lock": {
+  "model": "595 ACBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "595-acet-tubular-lock": {
+  "model": "595 ACET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "598-acet-tubular-lock": {
+  "model": "598 ACET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "598-snbk-tubular-lock": {
+  "model": "598 SNBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "598-snet-tubular-lock": {
+  "model": "598 SNET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "598-sset-tubular-lock": {
+  "model": "598 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "598-tubular-lock": {
+  "model": "598",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "6-3-3mm-brass-and-steel-hinges": {
+  "model": "6*3*3mm",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "3 mm （Customizable）",
+   "Size": "6*3*3mm（Customizable）",
+   "Opening Angle": "180 Degrees"
+  }
+ },
+ "600-concealed-sliding-door-handle": {
+  "model": "600",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "607-abet-tubular-lock": {
+  "model": "607 ABET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-acbk-tubular-lock": {
+  "model": "607 ACBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-bnet-tubular-lock": {
+  "model": "607 BNET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-fet-tubular-lock": {
+  "model": "607 FET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-ket-tubular-lock": {
+  "model": "607 KET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-pbbk-tubular-lock": {
+  "model": "607 PBBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-pbet-tubular-lock": {
+  "model": "607 PBET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-pbps-tubular-lock": {
+  "model": "607 PBPS",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-spet-tubular-lock": {
+  "model": "607 SPET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-ssbk-tubular-lock": {
+  "model": "607 SSBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-sset-tubular-lock": {
+  "model": "607 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-ssps-tubular-lock": {
+  "model": "607 SSPS",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-wbk-tubular-lock": {
+  "model": "607 WBK",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "607-wlet-tubular-lock": {
+  "model": "607 WLET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "6082-sn-tubular-lock": {
+  "model": "6082 SN",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "609-pbet-tubular-lock": {
+  "model": "609 PBET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "609-sset-tubular-lock": {
+  "model": "609 SSET",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "6491-snet-lever-handle": {
+  "model": "6491 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "6491-sset-lever-handle": {
+  "model": "6491 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "6491abet-lever-handle": {
+  "model": "6491ABET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "65sn-lock-cylinder": {
+  "model": "65SN",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "65MM"
+  }
+ },
+ "70610-ab-grip-handle-set": {
+  "model": "70610 AB",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70610-sc-grip-handle-set": {
+  "model": "70610 SC",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70710-pb-grip-handle-set": {
+  "model": "70710 PB",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70710-sn-grip-handle-set": {
+  "model": "70710 SN",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70720-sm-grip-handle-set": {
+  "model": "70720 SM",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70722-dc-grip-handle-set": {
+  "model": "70722 DC",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70750-pb-grip-handle-set": {
+  "model": "70750 PB",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70780-ab-grip-handle-set": {
+  "model": "70780 AB",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70900-bk-grip-handle-set": {
+  "model": "70900 BK",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70900-et-grip-handle-set": {
+  "model": "70900 ET",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable, latch and deadbolt both",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Deadbolt throw": "25mm, with hardened steel insert to resist sawing",
+   "Latch extension": "13mm",
+   "Cross bore": "51mm — replaces most existing locksets"
+  }
+ },
+ "70anti-theft-lock-cylinder": {
+  "model": "70ANTI-THEFT",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "70MM"
+  }
+ },
+ "70bk-lock-cylinder": {
+  "model": "70BK",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "70MM"
+  }
+ },
+ "70mb-lock-cylinder": {
+  "model": "70MB",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "70MM"
+  }
+ },
+ "70pb-anti-theft-lock-cylinder": {
+  "model": "70PB ANTI-THEFT",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "70MM"
+  }
+ },
+ "70sn-lock-cylinder": {
+  "model": "70SN",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "70MM"
+  }
+ },
+ "72-panic-exit-device": {
+  "model": "72",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Backset": "65mm"
+  }
+ },
+ "801-pbet-lever-handle": {
+  "model": "801 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "803-pbet-lever-handle": {
+  "model": "803 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "803-sbet-lever-handle": {
+  "model": "803 SBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "804-pbet-lever-handle": {
+  "model": "804 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "805pbet-lever-handle": {
+  "model": "805PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "807-abbk-lever-handle": {
+  "model": "807 ABBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "807-abet-lever-handle": {
+  "model": "807 ABET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "808-abet-lever-handle": {
+  "model": "808 ABET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "808-snet-lever-handle": {
+  "model": "808 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "808-snps-lever-handle": {
+  "model": "808 SNPS",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "809-pbet-lever-handle": {
+  "model": "809 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "809-sbet-lever-handle": {
+  "model": "809 SBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "80sn-lock-cylinder": {
+  "model": "80SN",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "80MM"
+  }
+ },
+ "812-sset-lever-handle": {
+  "model": "812 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "816-pbet-lever-handle": {
+  "model": "816 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "816-snet-lever-handle": {
+  "model": "816 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "822-snet-lever-handle": {
+  "model": "822 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "823-pbet-lever-handle": {
+  "model": "823 PBET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "836-lever-handle": {
+  "model": "836",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "836-snet-lever-handle": {
+  "model": "836 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "853-snbk-lever-handle": {
+  "model": "853 SNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "853-ssbk-lever-handle": {
+  "model": "853 SSBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "881-ss-sliding-hook-lock": {
+  "model": "881 SS",
+  "family": "sliding-hook-locks",
+  "dims": {
+   "Length": "160mm"
+  }
+ },
+ "8826-snbk-lever-handle": {
+  "model": "8826 SNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "8826-snet-lever-handle": {
+  "model": "8826 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "8827-sset-lever-handle": {
+  "model": "8827 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60–70mm Adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "8828-sset-lever-handle": {
+  "model": "8828 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60–70mm Adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "9001-stainless-steel-handle": {
+  "model": "9001",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9002e-stainless-steel-handle": {
+  "model": "9002E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9003e-stainless-steel-handle": {
+  "model": "9003E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "133mm",
+   "Rose diameter": "53mm",
+   "Lever section": "19mm",
+   "Rose thickness": "8mm",
+   "Spindle": "8mm",
+   "Projection": "62mm"
+  }
+ },
+ "9004-stainless-steel-handle": {
+  "model": "9004",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9004s-stainless-steel-handle": {
+  "model": "9004S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "135mm",
+   "Rose thickness": "8mm",
+   "Lever section": "20mm",
+   "Projection": "63mm",
+   "Spindle": "8mm"
+  }
+ },
+ "9005e-stainless-steel-handle": {
+  "model": "9005E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "130mm",
+   "Rose diameter": "53mm",
+   "Rose thickness": "8mm",
+   "Lever section": "19mm",
+   "Projection": "62mm",
+   "Spindle": "8mm"
+  }
+ },
+ "9005s-stainless-steel-handle": {
+  "model": "9005S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9006s-stainless-steel-handle": {
+  "model": "9006S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9007s-stainless-steel-handle": {
+  "model": "9007S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "132mm",
+   "Rose diameter": "53mm",
+   "Lever section": "19mm",
+   "Rose thickness": "8mm",
+   "Spindle": "8mm",
+   "Projection": "63mm"
+  }
+ },
+ "9008e-stainless-steel-handle": {
+  "model": "9008E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9008s-stainless-steel-handle": {
+  "model": "9008S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9011e-stainless-steel-handle": {
+  "model": "9011E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9012e-stainless-steel-handle": {
+  "model": "9012E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9014-ssbk-stainless-steel-handle": {
+  "model": "9014 SSBK",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9014-stainless-steel-handle": {
+  "model": "9014",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "135mm",
+   "Projection": "60mm",
+   "Rose diameter": "53mm",
+   "Rose thickness": "9mm",
+   "Lever section": "19mm",
+   "Spindle": "8mm"
+  }
+ },
+ "9014s-stainless-steel-handle": {
+  "model": "9014S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9015-stainless-steel-handle": {
+  "model": "9015",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9016s-stainless-steel-handle": {
+  "model": "9016S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9020s-stainless-steel-handle": {
+  "model": "9020S",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9021-stainless-steel-handle": {
+  "model": "9021",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "9082e-stainless-steel-handle": {
+  "model": "9082E",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Plate size": "168 × 45mm",
+   "Lever length": "135mm",
+   "Lever section": "19mm",
+   "Cylinder cutout": "17 × 33mm, 10mm keyway"
+  }
+ },
+ "ai8530-lock-case": {
+  "model": "AI8530",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "30mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "ansi-grade-3-keyed-deadbolt-lock-set": {
+  "model": "Keyed Deadbolt Lock Set",
+  "family": "grip-handle-sets",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert"
+  }
+ },
+ "b024-brass-and-steel-hinges": {
+  "model": "B024",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "2.0-3.5mm",
+   "Opening Angle": "90-180°"
+  }
+ },
+ "b025-brass-and-steel-hinges": {
+  "model": "B025",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Opening Angle": "90-180°",
+   "Size": "Customizable upon customer request"
+  }
+ },
+ "bh01-bathroom-accessories": {
+  "model": "BH01",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "300mm/400mm/500m/600mm/700mm/800mm/900mm/1000mm"
+  }
+ },
+ "bh02-bathroom-accessories": {
+  "model": "BH02",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "300mm/400mm/500m/600mm/700mm/800mm/900mm/1000mm"
+  }
+ },
+ "bh03-bathroom-accessories": {
+  "model": "BH03",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "415mm"
+  }
+ },
+ "bh04-bathroom-accessories": {
+  "model": "BH04",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "415mm"
+  }
+ },
+ "bh05-bathroom-accessories": {
+  "model": "BH05",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "2.5mm",
+   "Width": "30 mm"
+  }
+ },
+ "bh06-bathroom-accessories": {
+  "model": "BH06",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "2.5mm",
+   "Width": "30 mm"
+  }
+ },
+ "bh07-bathroom-accessories": {
+  "model": "BH07",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "2.5mm",
+   "Width": "25 mm"
+  }
+ },
+ "bh08-bathroom-accessories": {
+  "model": "BH08",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "180mm",
+   "Thickness": "2.0mm"
+  }
+ },
+ "bh09-bathroom-accessories": {
+  "model": "BH09",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "200mm",
+   "Thickness": "2.0mm"
+  }
+ },
+ "bh10-bathroom-accessories": {
+  "model": "BH10",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "1.8mm",
+   "Diameter": "48 mm"
+  }
+ },
+ "bh11-bathroom-accessories": {
+  "model": "BH11",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "45mm",
+   "Thickness": "2.0mm"
+  }
+ },
+ "bh13-bathroom-accessories": {
+  "model": "BH13",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "2.8mm"
+  }
+ },
+ "bh14-bathroom-accessories": {
+  "model": "BH14",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "0.8mm"
+  }
+ },
+ "bh15-bathroom-accessories": {
+  "model": "BH15",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "80mm/100mm",
+   "Thickness": "1.2mm",
+   "Size": "80mm / 100mm (L) × 38mm (W) × 1.2mm (T)"
+  }
+ },
+ "bh16-bathroom-accessories": {
+  "model": "BH16",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "70mm",
+   "Thickness": "1.0mm",
+   "Size": "70mm (L) × 48mm (W) × 1.0mm (T)"
+  }
+ },
+ "bh17-bathroom-accessories": {
+  "model": "BH17",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "44mm",
+   "Thickness": "2.5mm",
+   "Size": "44 × 42 × 2.5mm"
+  }
+ },
+ "bh18-bathroom-accessories": {
+  "model": "BH18",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "165 × 55 × 45mm"
+  }
+ },
+ "bh19-bathroom-accessories": {
+  "model": "BH19",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "1.0mm"
+  }
+ },
+ "bh20-bathroom-accessories": {
+  "model": "BH20",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "1.0mm"
+  }
+ },
+ "bh21-bathroom-accessories": {
+  "model": "BH21",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Width": "152mm",
+   "Rose diameter": "45mm"
+  }
+ },
+ "bh22-bathroom-accessories": {
+  "model": "BH22",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "2.0mm"
+  }
+ },
+ "bh23-bathroom-accessories": {
+  "model": "BH23",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Thickness": "1.5mm"
+  }
+ },
+ "bh24-bathroom-accessories": {
+  "model": "BH24",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "280*215*100mm"
+  }
+ },
+ "bh25-bathroom-accessories": {
+  "model": "BH25",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "250*260*120mm",
+   "Thickness": "0.8mm"
+  }
+ },
+ "bh26-bathroom-accessories": {
+  "model": "BH26",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "110*55mm"
+  }
+ },
+ "bh27-bathroom-accessories": {
+  "model": "BH27",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "130*55*50mm"
+  }
+ },
+ "bh28-bathroom-accessories": {
+  "model": "BH28",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "300*135*60mm / 300*135*100mm / 400*135*60mm / 400*135*100mm"
+  }
+ },
+ "bh29-bathroom-accessories": {
+  "model": "BH29",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "200* 200mm / 250*250mm",
+   "Sizes": "200 × 200 mm, 250 × 250 mm"
+  }
+ },
+ "bh30-bathroom-accessories": {
+  "model": "BH30",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "335mm",
+   "Size": "335 × 320 mm"
+  }
+ },
+ "bh31-bathroom-accessories": {
+  "model": "BH31",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "285mm",
+   "Size": "285mm (L) × 410mm (H)"
+  }
+ },
+ "bh32-bathroom-accessories": {
+  "model": "BH32",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "600mm"
+  }
+ },
+ "bh33-bathroom-accessories": {
+  "model": "BH33",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "450mm/600mm",
+   "Tube diameter": "12mm",
+   "Projection": "200mm",
+   "Height": "110mm"
+  }
+ },
+ "bh34-bathroom-accessories": {
+  "model": "BH34",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "300mm,400mm,500mm,600mm"
+  }
+ },
+ "bh35-bathroom-accessories": {
+  "model": "BH35",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Size": "162*92mm"
+  }
+ },
+ "bh36-bathroom-accessories": {
+  "model": "BH36",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "100mm",
+   "Thickness": "3.5mm"
+  }
+ },
+ "bh37-bathroom-accessories": {
+  "model": "BH37",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "180mm",
+   "Thickness": "3.5mm"
+  }
+ },
+ "bh38-bathroom-accessories": {
+  "model": "BH38",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Rose diameter": "48mm",
+   "Projection": "48mm",
+   "Tube diameter": "8mm"
+  }
+ },
+ "bh39-bathroom-accessories": {
+  "model": "BH39",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Projection": "45mm",
+   "Tube diameter": "8mm"
+  }
+ },
+ "bh41-bathroom-accessories": {
+  "model": "BH41",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Height": "45mm",
+   "Projection": "45mm"
+  }
+ },
+ "bh42-bathroom-accessories": {
+  "model": "BH42",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Rose diameter": "48mm",
+   "Projection": "48mm",
+   "Tube diameter": "8mm"
+  }
+ },
+ "bh50-bathroom-accessories": {
+  "model": "BH50",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "400mm",
+   "Size": "400×355 mm"
+  }
+ },
+ "bh52-bathroom-accessories": {
+  "model": "BH52",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Length": "350mm",
+   "Size": "350 × 320 mm"
+  }
+ },
+ "bh54-bathroom-accessories": {
+  "model": "BH54",
+  "family": "bathroom-accessories",
+  "dims": {
+   "Projection": "56mm",
+   "Rose diameter": "50mm",
+   "Tube diameter": "22mm, 8mm at the tip"
+  }
+ },
+ "bl027-brass-and-steel-hinges": {
+  "model": "BL027",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "3.5\"x2.28\"x1.6MM"
+  }
+ },
+ "bl028-brass-and-steel-hinges": {
+  "model": "BL028",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4\"x3\"x2.5MM",
+   "Opening Angle": "90-180°"
+  }
+ },
+ "bl030-brass-and-steel-hinges": {
+  "model": "BL030",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "3.5mm",
+   "Size": "Customized Size Available",
+   "Opening Angle": "180°"
+  }
+ },
+ "bl031-brass-and-steel-hinges": {
+  "model": "BL031",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "3.3 mm",
+   "Opening Angle": "180° / 360° Rotation"
+  }
+ },
+ "black-tubular-lever-lock-set": {
+  "model": "Black Tubular Lever Lock Set",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "brass-piano-hinge-brass-and-steel-hinges": {
+  "model": "Brass Piano Hinge",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Width": "1\"1-1/4 \"2 \"、3\""
+  }
+ },
+ "ch01-brass-and-steel-hinges": {
+  "model": "CH01",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "34*140*28mm/28*118*22mm/25*118*18mm/19*95*13mm/16*70*11mm"
+  }
+ },
+ "d101-ab-deadbolts": {
+  "model": "D101 AB",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "Adjustable 1-3/8” to 1-3/4” (35mm–45mm)",
+   "Backset": "Adjustable 2-3/8” or 2-3/4” (60mm or 70mm)"
+  }
+ },
+ "d101-ac-deadbolts": {
+  "model": "D101 AC",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "Adjustable 35–45mm (1-3/8” to 1-3/4”)",
+   "Backset": "Adjustable 60mm or 70mm (2-3/8” or 2-3/4”)"
+  }
+ },
+ "d101-dspb-deadbolts": {
+  "model": "D101 DSPB",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "Adjustable 35–45mm (1-3/8” to 1-3/4”)",
+   "Backset": "Adjustable 60mm or 70mm (2-3/8” or 2-3/4”)"
+  }
+ },
+ "d101-pb-deadbolts": {
+  "model": "D101 PB",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "Adjustable 35–45 mm (1-3/8” to 1-3/4”)",
+   "Backset": "Adjustable 60 mm or 70 mm (2-3/8” or 2-3/4”)"
+  }
+ },
+ "d101-ss-deadbolts": {
+  "model": "D101 SS",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "35–45mm (1-3/8” to 1-3/4”)",
+   "Backset": "60mm or 70mm (2-3/8” or 2-3/4”)"
+  }
+ },
+ "d102-ac-deadbolts": {
+  "model": "D102 AC",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "1-3/8” to 1-3/4” (35mm–45mm)",
+   "Backset": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+  }
+ },
+ "d102-pb-deadbolts": {
+  "model": "D102 PB",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "1-3/8” to 1-3/4” (35mm–45mm)",
+   "Backset": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+  }
+ },
+ "d102-ss-deadbolts": {
+  "model": "D102 SS",
+  "family": "deadbolts",
+  "dims": {
+   "Deadbolt throw": "25mm, zinc die-cast with hardened steel roller insert",
+   "Door thickness": "1-3/8” to 1-3/4” (35mm–45mm)",
+   "Backset": "Adjustable to 2-3/8” or 2-3/4” (60mm or 70mm)"
+  }
+ },
+ "ddh001-panic-exit-device": {
+  "model": "DDH001",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Size": "175x53x73mm"
+  }
+ },
+ "ds01-door-stopper": {
+  "model": "DS01",
+  "family": "hardware-accessories",
+  "dims": {
+   "Height": "96mm",
+   "Projection": "70mm"
+  }
+ },
+ "ds010-door-stopper": {
+  "model": "DS010",
+  "family": "hardware-accessories",
+  "dims": {
+   "Size": "Ø42mm"
+  }
+ },
+ "ds013-door-stopper": {
+  "model": "DS013",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "110mm",
+   "Size": "110 × 66 mm"
+  }
+ },
+ "ds05-door-stopper": {
+  "model": "DS05",
+  "family": "hardware-accessories",
+  "dims": {
+   "Size": "ф44×24mm"
+  }
+ },
+ "ds09-door-stopper": {
+  "model": "DS09",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "42mm",
+   "Size": "42mm (L) × 35mm (H)"
+  }
+ },
+ "dust-proof-01-door-viewer": {
+  "model": "Dust Proof 01",
+  "family": "hardware-accessories",
+  "dims": {
+   "Size": "16mm"
+  }
+ },
+ "dust-proof-02-door-viewer": {
+  "model": "Dust Proof 02",
+  "family": "hardware-accessories",
+  "dims": {
+   "Size": "16mm"
+  }
+ },
+ "dv05-door-viewer": {
+  "model": "DV05",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "12mm / 14mm / 16mm",
+   "Door thickness": "35–55mm / 60–100mm"
+  }
+ },
+ "dv07-door-viewer": {
+  "model": "DV07",
+  "family": "hardware-accessories",
+  "dims": {
+   "Door thickness": "25-28mm"
+  }
+ },
+ "dv08-sn-door-viewer": {
+  "model": "DV08 SN",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "28mm",
+   "Length": "60–95mm"
+  }
+ },
+ "dv09-door-viewer": {
+  "model": "DV09",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "12mm / 14mm / 16mm"
+  }
+ },
+ "dv10-door-viewer": {
+  "model": "DV10",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "12mm / 14mm / 16mm"
+  }
+ },
+ "dv11-door-viewer": {
+  "model": "DV11",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "12mm / 14mm / 16mm"
+  }
+ },
+ "dv12-s-door-viewer": {
+  "model": "DV12-S",
+  "family": "hardware-accessories",
+  "dims": {
+   "Diameter": "28mm",
+   "Door thickness": "35–55mm"
+  }
+ },
+ "eh01-lever-handle": {
+  "model": "EH01",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "eh02-lever-handle": {
+  "model": "EH02",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "eh03-lever-handle": {
+  "model": "EH03",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "ept01-door-power-transfer-devices": {
+  "model": "EPT01",
+  "family": "hardware-accessories",
+  "dims": {
+   "Width": "0.88”"
+  }
+ },
+ "f001-security-door-guard": {
+  "model": "F001",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "110mm",
+   "Size": "110 mm (L) × 66 mm (W)"
+  }
+ },
+ "f002-security-door-guard": {
+  "model": "F002",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "103mm",
+   "Size": "103 mm × 66 mm"
+  }
+ },
+ "f004-security-door-guard": {
+  "model": "F004",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "115mm",
+   "Size": "115 mm (L) × 53 mm (W)"
+  }
+ },
+ "f005-security-door-guard": {
+  "model": "F005",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "83mm"
+  }
+ },
+ "f101-glass-door-patch-fittings": {
+  "model": "F101",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Size": "129*321.5mm",
+   "Plate thickness": "1mm",
+   "Case depth": "40.5mm"
+  }
+ },
+ "f102-night-latch-and-rim-lock": {
+  "model": "F102",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "f110-glass-door-patch-fittings": {
+  "model": "F110",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f111-glass-door-patch-fittings": {
+  "model": "F111",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f112-glass-door-patch-fittings": {
+  "model": "F112",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f113-glass-door-patch-fittings": {
+  "model": "F113",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f114-glass-door-patch-fittings": {
+  "model": "F114",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f123-glass-door-patch-fittings": {
+  "model": "F123",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Door thickness": "8-12mm"
+  }
+ },
+ "f132-glass-door-patch-fittings": {
+  "model": "F132",
+  "family": "glass-door-accessories",
+  "dims": {
+   "Size": "55*60mm",
+   "Door thickness": "8-12mm"
+  }
+ },
+ "fb001-ac-door-flush-bolt": {
+  "model": "FB001 AC",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "8in/10in/12in/24in"
+  }
+ },
+ "fb001-ss-door-flush-bolt": {
+  "model": "FB001 SS",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "8 in",
+   "Thickness": "30–45 mm"
+  }
+ },
+ "fb005-door-flush-bolt": {
+  "model": "FB005",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "6in/8in/10in/12in/24in"
+  }
+ },
+ "fb012-door-flush-bolt": {
+  "model": "FB012",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "3in/4in/5in/6in/8in/10in",
+   "Width": "30 mm"
+  }
+ },
+ "fb016-door-flush-bolt": {
+  "model": "FB016",
+  "family": "hardware-accessories",
+  "dims": {
+   "Length": "7in",
+   "Width": "24 mm"
+  }
+ },
+ "g559-night-latch-and-rim-lock": {
+  "model": "G559",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "h101-night-latch-and-rim-lock": {
+  "model": "H101",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "h102-night-latch-and-rim-lock": {
+  "model": "H102",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "hd02-stainless-steel-handle": {
+  "model": "HD02",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Length": "64/56/128/192/284"
+  }
+ },
+ "hd03-stainless-steel-handle": {
+  "model": "HD03",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Length": "64/56/128/192/284"
+  }
+ },
+ "hyde-ar4-101-mortise-lock": {
+  "model": "AR4-101",
+  "family": "lock-cases",
+  "dims": {
+   "Faceplate": "18 × 183",
+   "Case depth": "63"
+  }
+ },
+ "hyde-ar4-110-mortise-lock": {
+  "model": "AR4-110",
+  "family": "lock-cases",
+  "dims": {
+   "Faceplate": "25 × 210"
+  }
+ },
+ "hyde-ar4-1121-hook-bolt-lock": {
+  "model": "AR4-1121",
+  "family": "lock-cases",
+  "dims": {
+   "Faceplate": "25 × 140",
+   "Backset": "40"
+  }
+ },
+ "hyde-ar4-140-mortise-lock": {
+  "model": "AR4-140",
+  "family": "lock-cases",
+  "dims": {
+   "Faceplate": "20 × 190"
+  }
+ },
+ "ih01-brass-and-steel-hinges": {
+  "model": "IH01",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "3mm",
+   "Size": "Custom Sizes Available",
+   "Opening Angle": "180° / 360° Rotation",
+   "Hole Count": "10 Holes"
+  }
+ },
+ "l001-latch": {
+  "model": "L001",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "90mm"
+  }
+ },
+ "l003-latch": {
+  "model": "L003",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70mm"
+  }
+ },
+ "l004-latch": {
+  "model": "L004",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70mm/90mm"
+  }
+ },
+ "l005-latch": {
+  "model": "L005",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70mm"
+  }
+ },
+ "l006-latch": {
+  "model": "L006",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70mm"
+  }
+ },
+ "l015-latch": {
+  "model": "L015",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "90MM"
+  }
+ },
+ "l018-latch": {
+  "model": "L018",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70MM"
+  }
+ },
+ "l021-latch": {
+  "model": "L021",
+  "family": "hardware-accessories",
+  "dims": {
+   "Backset": "60/70MM"
+  }
+ },
+ "lc02-85-40mm-lock-case": {
+  "model": "Lc02 85×40mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "40mm"
+  }
+ },
+ "lc03-85-45mm-lock-case": {
+  "model": "Lc03 85×45mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "45mm"
+  }
+ },
+ "lc04-85-60-lock-case": {
+  "model": "LC04 85*60",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "60mm"
+  }
+ },
+ "lc04-85-60mm-lock-case": {
+  "model": "Lc04 85×60mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "60mm"
+  }
+ },
+ "lc04-85-70-lock-case": {
+  "model": "LC04 85*70",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "70mm",
+   "Centre distance": "85mm"
+  }
+ },
+ "lc07-85-45mm-lock-case": {
+  "model": "Lc07 85×45mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "45mm",
+   "Faceplate": "240 × 23mm",
+   "Case height": "173mm",
+   "Case depth": "72mm"
+  }
+ },
+ "lc08-85-55mm-lock-case": {
+  "model": "Lc08 85×55mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "55mm"
+  }
+ },
+ "lc09-85-60mm-lock-case": {
+  "model": "Lc09 85×60mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "60mm"
+  }
+ },
+ "lc14-85-50mm-lock-case": {
+  "model": "Lc14 85×50mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "50mm"
+  }
+ },
+ "lc14-8550-four-bolt-mortise-lock-case": {
+  "model": "LC14 85×50",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85",
+   "Backset": "50"
+  }
+ },
+ "lc17-lock-case": {
+  "model": "Lc17",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "16mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc21-85-50mm-lock-case": {
+  "model": "Lc21 85×50mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "50mm"
+  }
+ },
+ "lc22-85-45mm-lock-case": {
+  "model": "Lc22 85×45mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "45mm"
+  }
+ },
+ "lc32-65-72mm-lock-case": {
+  "model": "Lc32 65×72mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "72mm",
+   "Backset": "65mm"
+  }
+ },
+ "lc33-5572-lock-case": {
+  "model": "Lc33-5572",
+  "family": "lock-cases",
+  "dims": {
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "72mm",
+   "Backset": "55mm"
+  }
+ },
+ "lc34-50-72mm-lock-case": {
+  "model": "Lc34 50×72mm",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "72mm",
+   "Backset": "50mm"
+  }
+ },
+ "lc5845-lock-case": {
+  "model": "LC5845",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "45mm",
+   "Center Distance": "58mm"
+  }
+ },
+ "lc6860-lock-case": {
+  "model": "Lc6860",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "60mm",
+   "Centre distance": "68mm"
+  }
+ },
+ "lc7065-lock-case": {
+  "model": "Lc7065",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "70mm",
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "65mm"
+  }
+ },
+ "lc7065ps-lock-case": {
+  "model": "Lc7065PS",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "70mm",
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "65mm"
+  }
+ },
+ "lc7065s-lock-case": {
+  "model": "Lc7065S",
+  "family": "lock-cases",
+  "dims": {
+   "Backset": "70mm",
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "65mm"
+  }
+ },
+ "lc8520b-lock-case": {
+  "model": "Lc8520B",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "20mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8520ps-lock-case": {
+  "model": "Lc8520PS",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "20mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8525-lock-case": {
+  "model": "Lc8525",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "25mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8525b-lock-case": {
+  "model": "Lc8525B",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "25mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8530bk-lock-case": {
+  "model": "Lc8530BK",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "30mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8530ps-lock-case": {
+  "model": "Lc8530PS",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "30mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc8535b-lock-case": {
+  "model": "Lc8535B",
+  "family": "lock-cases",
+  "dims": {
+   "Centre distance": "85mm",
+   "Backset": "35mm",
+   "Spindle Hole": "Copper Construction"
+  }
+ },
+ "lc9045-lock-case": {
+  "model": "Lc9045",
+  "family": "lock-cases",
+  "dims": {
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "45mm",
+   "Backset": "90mm"
+  }
+ },
+ "lc9230-lock-case": {
+  "model": "Lc9230",
+  "family": "lock-cases",
+  "dims": {
+   "Spindle Hole": "Copper Construction",
+   "Centre distance": "92mm",
+   "Backset": "30mm"
+  }
+ },
+ "lh1016-stainless-steel-handle": {
+  "model": "LH1016",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "130mm",
+   "Rose diameter": "53mm",
+   "Rose thickness": "9mm",
+   "Spindle": "9mm"
+  }
+ },
+ "lh1033-ss-stainless-steel-handle": {
+  "model": "LH1033 SS",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "135mm",
+   "Rose diameter": "53mm",
+   "Lever section": "19mm",
+   "Rose thickness": "9mm",
+   "Spindle": "8mm",
+   "Projection": "68mm"
+  }
+ },
+ "lh1056-ss-stainless-steel-handle": {
+  "model": "LH1056 SS",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "lh852-bnbk-lever-handle": {
+  "model": "LH852 BNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh852-bnet-lever-handle": {
+  "model": "LH852 BNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh852-bnps-lever-handle": {
+  "model": "LH852 BNPS",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh852-sset-lever-handle": {
+  "model": "LH852 SSET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-bk-lever-handle": {
+  "model": "LH853 BK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-bnbk-lever-handle": {
+  "model": "LH853 BNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-ps-lever-handle": {
+  "model": "LH853 PS",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-snbk-lever-handle": {
+  "model": "LH853 SNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-snet-lever-handle": {
+  "model": "LH853 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh853-snps-lever-handle": {
+  "model": "LH853 SNPS",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh854-lever-handle": {
+  "model": "LH854",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh854-snet-lever-handle": {
+  "model": "LH854 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh855-bnbk-lever-handle": {
+  "model": "LH855 BNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh855-lever-handle": {
+  "model": "LH855",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh855-snbk-lever-handle": {
+  "model": "LH855 SNBK",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "lh855-snet-lever-handle": {
+  "model": "LH855 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "nc013-stainless-steel-handle": {
+  "model": "NC013",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "nc046-stainless-steel-handle": {
+  "model": "NC046",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "nc053-stainless-steel-handle": {
+  "model": "NC053",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "nc068-stainless-steel-handle": {
+  "model": "NC068",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "nc181-stainless-steel-handle": {
+  "model": "NC181",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "nc182-stainless-steel-handle": {
+  "model": "NC182",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm",
+   "Lever length": "86mm",
+   "Lever section": "38mm",
+   "Spindle": "8mm"
+  }
+ },
+ "ncb-stainless-steel-handle": {
+  "model": "NCB",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "ncd-stainless-steel-handle": {
+  "model": "NCD",
+  "family": "stainless-steel-handles",
+  "dims": {
+   "Door thickness": "35–50mm"
+  }
+ },
+ "night-latch-rim-lock": {
+  "model": "Night Latch & Rim Lock",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "no01-gate-house-no": {
+  "model": "NO01",
+  "family": "hardware-accessories",
+  "dims": {
+   "Sizes": "3”, 4”, 5”, 6”"
+  }
+ },
+ "s02-cp-sliding-hook-lock": {
+  "model": "S02 CP",
+  "family": "sliding-hook-locks",
+  "dims": {
+   "Length": "100mm"
+  }
+ },
+ "s03-sliding-hook-lock": {
+  "model": "S03",
+  "family": "sliding-hook-locks",
+  "dims": {
+   "Length": "100mm"
+  }
+ },
+ "s564-night-latch-and-rim-lock": {
+  "model": "S564",
+  "family": "night-latches-rim-locks",
+  "dims": {
+   "Backset": "40mm",
+   "Door thickness": "35mm to 55mm standard; 30mm to 60mm on request",
+   "Latch extension": "13mm, with inside deadlocking button",
+   "Deadbolt throw": "25mm on rim deadbolt versions",
+   "Strike": "Angle strike standard for inward-opening doors; flat strike available"
+  }
+ },
+ "s802-snet-lever-handle": {
+  "model": "S802 SNET",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60/70mm",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "single-oval-cylinder-lock-cylinder": {
+  "model": "Single oval cylinder",
+  "family": "lock-cylinders",
+  "dims": {
+   "Size": "30mm (extension sizes optional)"
+  }
+ },
+ "ss027-brass-and-steel-hinges": {
+  "model": "SS027",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4.0''x3.0''x2.0mm"
+  }
+ },
+ "ssh011-brass-and-steel-hinges": {
+  "model": "SSH011",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4.0''x3.0''x2.0mm"
+  }
+ },
+ "ssh015-brass-and-steel-hinges": {
+  "model": "SSH015",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "2x2x2"
+  }
+ },
+ "ssh016-brass-and-steel-hinges": {
+  "model": "SSH016",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Opening Angle": "90-180°"
+  }
+ },
+ "ssh017-brass-and-steel-hinges": {
+  "model": "SSH017",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4\"x3\"x2.5MM",
+   "Opening Angle": "90°–180°"
+  }
+ },
+ "ssh018-brass-and-steel-hinges": {
+  "model": "SSH018",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "2.0-3.5MM",
+   "Size": "102x72.5x2.5MM"
+  }
+ },
+ "ssh019-brass-and-steel-hinges": {
+  "model": "SSH019",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "2.0-3.5MM",
+   "Size": "102x72.5x2.5MM"
+  }
+ },
+ "ssh020-brass-and-steel-hinges": {
+  "model": "SSH020",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Opening Angle": "90-180°"
+  }
+ },
+ "ssh022-brass-and-steel-hinges": {
+  "model": "SSH022",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4\"x3\"x2.5MM",
+   "Opening Angle": "90-180°"
+  }
+ },
+ "ssh023-brass-and-steel-hinges": {
+  "model": "SSH023",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Thickness": "2.0mm / 3.0mm",
+   "Size": "3.5”×3.5”×3.0mm / 4”×3”×3.0mm / 4”×4”×3.0mm (Custom Available)",
+   "Opening Angle": "180°"
+  }
+ },
+ "ssh031-brass-and-steel-hinges": {
+  "model": "SSH031",
+  "family": "brass-steel-hinges",
+  "dims": {
+   "Size": "4” × 3”",
+   "Opening Angle": "180° (90° each direction)"
+  }
+ },
+ "stainless-steel-flush-bolt": {
+  "model": "Stainless Steel Flush Bolt",
+  "family": "hardware-accessories",
+  "dims": {
+   "Width": "22"
+  }
+ },
+ "stainless-steel-lever-handle-lock": {
+  "model": "Stainless Steel Lever Handle Lock",
+  "family": "lever-handles",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable"
+  }
+ },
+ "tubular-knob-lock": {
+  "model": "Tubular Knob Lock",
+  "family": "knob-locks",
+  "dims": {
+   "Backset": "60mm / 70mm adjustable",
+   "Door thickness": "35mm to 45mm adjustable",
+   "Strike": "57mm curved lip standard; 70mm available on request"
+  }
+ },
+ "x2-panic-exit-device": {
+  "model": "X2",
+  "family": "panic-exit-devices",
+  "dims": {
+   "Door thickness": "Up to 90mm"
+  }
+ }
+}
