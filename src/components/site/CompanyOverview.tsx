@@ -1,4 +1,5 @@
 import { ArrowLink } from "./ArrowLink";
+import { CapabilityChain } from "./CapabilityChain";
 import { representatives } from "@/data/representatives";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import {
@@ -111,6 +112,14 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             ))}
           </dl>
         </section>
+
+        {/*
+          The chain goes directly under the figures, because the figures are what it
+          produces. A buyer who has just read "101–200 people" and "3,000–5,000 m²" is
+          holding two numbers and no picture of what happens between them; seven steps
+          answer that before the question turns into an email.
+        */}
+        <CapabilityChain locale={locale} />
 
         {/*
           Where the company actually is.

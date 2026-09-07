@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+/*
+  Do not scan our own build output.
+
+  Tailwind v4 auto-detects sources and skips whatever .gitignore lists. `out/` and
+  `out-rayen/` are COMMITTED here — the static export is part of the repo — so
+  auto-detection walked ~2,350 generated HTML files and treated them as authorship.
+
+  That is wrong twice over. It is circular (last build decides this build's CSS, so a
+  deleted class never actually leaves), and it is fragile: Next serialises the RSC
+  payload into `self.__next_f.push([1,"..."])` string chunks, and a class name that
+  lands on a chunk boundary is split. On 2026-09-07 exactly one file —
+  out-rayen/products/stainless-steel-handles/index.html — carried
+  `border-[var(--color-li` + a chunk break, Tailwind extracted it as a candidate, and
+  emitted `border-color: var(--color-li"])</script>...` into globals.css. PostCSS then
+  failed to parse the stylesheet it had just been handed, and `next dev` returned 500
+  on every route. One truncated string in one generated file took the whole site down
+  locally, and nothing in source had changed.
+
+  So the exclusion is not tidiness. Source is source; build output is not.
+*/
+@source not "../../out";
+@source not "../../out-rayen";
+
 /* ---------------------------------------------------------------------------
  * Foundation for the Canton Hyland prototype
  * (layout extracted from www.fsb.de/en/ — site-key www-fsb-de-bf263c85 / page-key en-7a4ba3ba)
