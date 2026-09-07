@@ -67,8 +67,8 @@ test("mobile drawer mirrors the expanded company and buying routes", () => {
     itself no longer contains the words. Asserting on the config is asserting on the
     thing that actually decides what the reader gets.
   */
-  assert.match(menuConfig, /Price list/);
-  assert.match(menuConfig, /Lista de precios/);
+  assert.match(drawer, /Price list/);
+  assert.match(drawer, /Lista de precios/);
   assert.match(menuConfig, /\/downloads\//);
 });
 

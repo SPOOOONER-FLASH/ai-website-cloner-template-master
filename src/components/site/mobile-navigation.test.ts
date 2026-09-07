@@ -58,7 +58,7 @@ test("Product Finder carries weight in the rail", () => {
 test("the drawer opens on the approved buyer question before utility navigation", () => {
   const question = drawer.indexOf("experience.title");
   const categories = drawer.indexOf("categories.map");
-  const storefront = drawer.indexOf("alibaba-hard-cta");
+  const storefront = drawer.indexOf("siteSettings.alibaba.storefront");
 
   assert.ok(question > 0, "the selected menu experience renders its question first");
   assert.ok(categories > question, "full mobile category access follows the buyer paths");

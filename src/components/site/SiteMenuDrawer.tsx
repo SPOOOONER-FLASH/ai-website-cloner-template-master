@@ -65,7 +65,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: 
     const target = href.replace(/\/$/, "");
     const current = currentPath === target || currentPath.startsWith(`${target}/`);
     return <li key={href}><Link href={href} onClick={onClose} aria-current={current ? "page" : undefined}
-      className={styles.menuLink}>{label}{typeof count === "number" ? ` · ${count}` : ""}</Link></li>;
+      className={`${styles.menuLink}${current ? " current-nav" : ""}`}>{label}{typeof count === "number" ? ` · ${count}` : ""}</Link></li>;
   };
 
   const contact = <div className={styles.contact}>
@@ -112,7 +112,7 @@ export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: 
             <h2 id="site-menu-title" className="sr-only">{experience.title}</h2>
             <div className={styles.backupCards}>
               {experience.cards.map((card, index) => <div key={card.href}>
-                {index === 0 ? <EditorialAtlas locale={locale} /> :
+                {index === 0 ? <EditorialAtlas locale={locale} onNavigate={onClose} /> :
                   <Link href={card.href} onClick={onClose}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={card.image} alt={card.alt} loading="lazy" decoding="async" />

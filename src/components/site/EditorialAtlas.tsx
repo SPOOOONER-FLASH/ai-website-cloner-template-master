@@ -15,11 +15,11 @@ export const atlasSubjects = [
   ["flush", "/images/products-hyde/600-concealed-sliding-door-handle.webp", "600-concealed-sliding-door-handle", "600", "stainless-steel-handles"],
 ] as const;
 
-export function EditorialAtlas({ locale, priority = false }: { locale: "en" | "es"; priority?: boolean }) {
+export function EditorialAtlas({ locale, priority = false, onNavigate }: { locale: "en" | "es"; priority?: boolean; onNavigate?: () => void }) {
   return <div className={styles.atlas}>
     {atlasSubjects.map(([position, image, slug, model, category]) => (
       <Link key={slug} href={`${locale === "es" ? "/es" : ""}/products/${category}/${slug}/`}
-        className={styles[position]} title={model}>
+        className={styles[position]} title={model} onClick={onNavigate}>
         <MediaPlaceholder src={image.startsWith("/") ? image : `/images/editorial/${image}.webp`}
           ratio="3 / 2" label={`${locale === "es" ? "Ver producto" : "View product"}: ${model}`}
           sizes="(max-width: 767px) 40vw, 30vw" priority={priority} />
