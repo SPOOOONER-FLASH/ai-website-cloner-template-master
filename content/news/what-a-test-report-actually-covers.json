@@ -1,0 +1,50 @@
+{
+  "slug": "what-a-test-report-actually-covers",
+  "title": "A Test Report Covers a Model, Not a Range",
+  "kind": "insight",
+  "publishedAt": "2026-09-07",
+  "summary": "Our EN 1125 report covers one exit device: KD070/30-290. Our durability report covers one lock: 607 SS ET. Neither covers the family it sits in, and a supplier who lets you believe otherwise has handed you a problem that surfaces at handover.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "There is a sentence that appears on hardware websites everywhere, and it is doing more work than it looks: \"CE certified\", \"EN 1125 approved\", \"tested to ANSI Grade 1\". Read as a claim about a company it sounds like a credential. Read as a claim about a product it is unfinished, because certification does not attach to companies or to ranges. It attaches to the specific configuration that went into the test rig.",
+    "Our own documents are a good illustration, so here they are with their scope stated. An EN 1125 report on panic exit devices operated by a horizontal bar, issued by Intertek Testing Services Shenzhen Ltd., Guangzhou Branch, reference 130722068GZU-001, 7 November 2013 — it covers model KD070/30-290. A tubular door lock durability test from the same laboratory, reference 140306043GZU-001, 28 April 2014 — it covers 607 SS ET. A CE Certificate of Conformity to EN 1125:2008 from CELAB in Italy, 2010, covering the panic exit device series.",
+    "Notice what that list does not say. It does not say every panic device we make is EN 1125 tested. It does not say the 607 family is durability tested — it says one member of it is, in stainless steel, in the ET function. Change the finish, change the function suffix, change the backset, and you have changed the product the report describes, sometimes trivially and sometimes not. Which of those changes matter is a question for the laboratory and the standard, not for a salesperson.",
+    "This is also why the dates matter and why we print them. A 2013 report is a real report; it is also thirteen years old, and standards get revised. If a project needs current evidence against the current edition of a standard, the honest answer is that a re-test is required, and the useful answer tells you that before the order rather than after the inspector asks.",
+    "The related distinction that catches people is between a test report and a certificate. A report is a laboratory's record of what happened to a sample: this device, these cycles, this result. A certificate of conformity is a body attesting that a product meets a standard, usually with an ongoing factory-production-control obligation behind it. They are different instruments with different weight, and \"we have the paperwork\" collapses the difference in a way that only helps the seller.",
+    "Separately from the product documents, our quality management system has been certified to ISO 9001 since 2002. That is a real and useful thing, and it is worth being precise about what it means: ISO 9001 says the factory has a documented, audited process for doing what it says it does. It is not a performance rating for any product. A factory can hold ISO 9001 and ship a lock that was never tested to anything, entirely consistently.",
+    "We publish the test documents' facts — title, issuer, reference number, issue date and the exact model covered — rather than the scans themselves, because the reports are the issuing laboratory's to distribute and republishing somebody else's document is not ours to do. If your specification needs the document in hand, ask and we will arrange it through the proper route. What is on our certifications page is everything you need to verify it exists and to see precisely how far it reaches.",
+    "The practical upshot for anyone specifying: ask for the report that covers the model number you are actually buying, in the configuration you are actually buying it in, and read the scope line before the headline. If a supplier answers that question with a family name instead of a model number, that is the answer. Third-party inspection before shipment is welcome here and does not need negotiating — name the inspector and we will book the date."
+  ],
+  "heroImage": {
+    "src": "/images/editorial/news-mortise-lock-inspection.webp",
+    "ratio": "3 / 2",
+    "label": "A mortise lock case with vernier caliper, height gauge and dimensioned drawings — dimensional checks run against the same drawings the catalogue publishes.",
+    "labelEs": "Caja de cerradura de embutir con pie de rey, gramil y planos acotados — los controles dimensionales se hacen contra los mismos planos que publica el catálogo."
+  },
+  "relatedModels": [
+    "607 SSET"
+  ],
+  "seoTitle": "What a Door Hardware Test Report Covers | Canton Hyland",
+  "seoDescription": "EN 1125, CE and durability reports certify one model in one configuration, not a product family. How to read the scope line, why report dates matter, and the difference between a test report, a certificate of conformity and ISO 9001.",
+  "titleEs": "Un informe de ensayo cubre un modelo, no una gama",
+  "summaryEs": "Nuestro informe EN 1125 cubre un dispositivo: KD070/30-290. Nuestro informe de durabilidad cubre una cerradura: 607 SS ET. Ninguno cubre la familia a la que pertenece, y un proveedor que le deje creer lo contrario le ha entregado un problema que aparece en la recepción de obra.",
+  "bodyEs": [
+    "Hay una frase que aparece en webs de herrajes por todas partes, y hace más trabajo del que parece: «certificado CE», «homologado EN 1125», «ensayado según ANSI Grade 1». Leída como afirmación sobre una empresa suena a credencial. Leída como afirmación sobre un producto está incompleta, porque la certificación no se adhiere a empresas ni a gamas. Se adhiere a la configuración concreta que entró en el banco de ensayo.",
+    "Nuestros propios documentos lo ilustran bien, así que aquí están con su alcance declarado. Un informe EN 1125 sobre dispositivos antipánico accionados por barra horizontal, emitido por Intertek Testing Services Shenzhen Ltd., delegación de Cantón, referencia 130722068GZU-001, 7 de noviembre de 2013 — cubre el modelo KD070/30-290. Un ensayo de durabilidad de cerradura tubular del mismo laboratorio, referencia 140306043GZU-001, 28 de abril de 2014 — cubre el 607 SS ET. Un Certificado CE de Conformidad con EN 1125:2008 de CELAB, Italia, 2010, que cubre la serie de dispositivos antipánico.",
+    "Fíjese en lo que esa lista no dice. No dice que todos los antipánico que fabricamos estén ensayados según EN 1125. No dice que la familia 607 esté ensayada a durabilidad: dice que lo está un miembro de ella, en acero inoxidable, en función ET. Cambie el acabado, cambie el sufijo de función, cambie la distancia al eje, y habrá cambiado el producto que describe el informe, a veces de forma trivial y a veces no. Cuáles de esos cambios importan es una pregunta para el laboratorio y la norma, no para un comercial.",
+    "Por eso también importan las fechas, y por eso las imprimimos. Un informe de 2013 es un informe real; también tiene trece años, y las normas se revisan. Si una obra necesita evidencia vigente frente a la edición actual de una norma, la respuesta honesta es que hace falta un reensayo, y la respuesta útil se la da antes del pedido y no después de que pregunte el inspector.",
+    "La distinción asociada que despista es la que hay entre informe de ensayo y certificado. Un informe es el registro de un laboratorio de lo que le ocurrió a una muestra: este dispositivo, estos ciclos, este resultado. Un certificado de conformidad es un organismo que atestigua que un producto cumple una norma, normalmente con una obligación continuada de control de producción en fábrica detrás. Son instrumentos distintos con pesos distintos, y «tenemos los papeles» borra esa diferencia de un modo que sólo beneficia a quien vende.",
+    "Al margen de los documentos de producto, nuestro sistema de gestión de calidad está certificado según ISO 9001 desde 2002. Es algo real y útil, y conviene ser preciso sobre qué significa: ISO 9001 dice que la fábrica tiene un proceso documentado y auditado para hacer lo que dice que hace. No es una calificación de prestaciones de ningún producto. Una fábrica puede tener ISO 9001 y enviar una cerradura que nunca se ensayó contra nada, de forma perfectamente coherente.",
+    "Publicamos los datos de los documentos —título, emisor, número de referencia, fecha de emisión y el modelo exacto cubierto— en lugar de los escaneos, porque los informes son del laboratorio emisor y republicar el documento de un tercero no nos corresponde. Si su pliego necesita el documento en mano, pídalo y lo gestionamos por la vía adecuada. Lo que hay en nuestra página de certificaciones es todo lo necesario para verificar que existe y para ver exactamente hasta dónde llega.",
+    "La conclusión práctica para quien especifica: pida el informe que cubre el número de modelo que realmente va a comprar, en la configuración en que realmente lo va a comprar, y lea la línea de alcance antes que el titular. Si un proveedor responde a esa pregunta con el nombre de una familia en lugar de un número de modelo, ésa es la respuesta. La inspección por tercero antes del embarque es bienvenida aquí y no hay que negociarla: diga qué inspector y reservamos la fecha."
+  ],
+  "seoTitleEs": "Qué cubre realmente un informe de ensayo | Canton Hyland",
+  "seoDescriptionEs": "Los informes EN 1125, CE y de durabilidad certifican un modelo en una configuración, no una familia de producto. Cómo leer la línea de alcance, por qué importan las fechas, y la diferencia entre informe de ensayo, certificado de conformidad e ISO 9001."
+}

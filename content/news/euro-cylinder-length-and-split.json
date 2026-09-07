@@ -1,0 +1,48 @@
+{
+  "slug": "euro-cylinder-length-and-split",
+  "title": "70 Is the Total, Not the Split",
+  "kind": "insight",
+  "publishedAt": "2026-09-07",
+  "summary": "The number in 70SN is the overall length of the cylinder in millimetres. It says nothing about how that 70mm is divided either side of the cam — and the division is the part that decides whether the key turns once the door is hung.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "A euro-profile cylinder is described by one number in almost every catalogue in the industry, ours included: 45, 50, 55, 60, 65, 70, 80. That number is the overall length in millimetres, measured end to end. It is genuinely useful and it is genuinely incomplete, because two cylinders of exactly 70mm can be completely different parts.",
+    "The cam sits somewhere along that length — the little bar that turns and throws the bolt, driven by the fixing screw that passes through it. The length is divided either side of that cam, and the two halves are quoted as a split: 35/35, 30/40, 40/30. All three are 70mm cylinders. Only one of them fits your door.",
+    "Which one depends on what is in front of and behind the lock case. Measure from the fixing-screw hole in the edge of the door — that is the cam centre — outward to the finished face on each side, and include everything the cylinder has to pass through: the door leaf, any escutcheon or rose, a decorative plate, a security rosette. The outside measurement is the outside half; the inside measurement is the inside half. Round each up to the next 5mm that a cylinder is actually made in.",
+    "Getting it short is obvious on site: the key will not enter far enough, or it enters and will not turn because the cam cannot clear. Getting it long is the more expensive mistake, because it looks fine. A cylinder standing proud of the escutcheon is the single easiest thing on a door to attack — it gives a tool something to grip and lever against — and on an external door that projection is what an insurer or a specification will pick up on. As a working rule, keep projection to about 3mm or less on the outside face.",
+    "This is also why a cylinder is the wrong item to standardise across a mixed order. Doors on one project are rarely one thickness: a 40mm internal leaf, a 45mm entrance leaf and a glazed screen with a 10mm patch fitting all take different splits, and a pallet of one size means somebody on site is going to force something.",
+    "Here is the part of this we should say plainly about our own catalogue. Our cylinder pages publish the overall length — 45mm, 47mm, 54mm, 56mm, 65mm, 70mm, 80mm — the material, the finish options and the key count. They do not publish the split, because the split is an order variable rather than a property of the model. We would rather say that than print a default like 35/35 that would be right often enough to be believed and wrong often enough to cost somebody a container.",
+    "So the practical route is short. Tell us the door thickness and what is mounted on each face, and our engineering desk will come back with the split, or confirm the one you have specified. If you already work in splits, send them as splits — 30/40 outside/inside is unambiguous in a way that \"70mm\" is not. Either way, say which side is outside; a 30/40 and a 40/30 are the same cylinder installed backwards, and backwards means the reinforced half is facing the wrong way.",
+    "One last thing worth confirming at the same time, because it costs nothing to ask and it is the second most common cylinder omission: keying. Our cylinders ship keyed to differ with three keys as standard, and five is available. Keyed alike within a group, or a master key suite across a building, is a decision that has to be made before the cylinders are pinned — not after they arrive."
+  ],
+  "heroImage": {
+    "src": "/images/editorial/hyde-real-cylinder-plate.webp",
+    "ratio": "3 / 2",
+    "label": "A solid brass euro-profile cylinder photographed with its cam, fixing screw and three keys — the fixing screw passes through the cam, and the cam is the point the two halves of the length are measured from.",
+    "labelEs": "Cilindro de perfil europeo en latón macizo fotografiado con su leva, el tornillo de fijación y tres llaves — el tornillo atraviesa la leva, y la leva es el punto desde el que se miden las dos mitades de la longitud."
+  },
+  "relatedModels": ["70SN", "65SN", "80SN", "45BN"],
+  "seoTitle": "Euro Cylinder Size: Length vs Split (35/35, 30/40) | Canton Hyland",
+  "seoDescription": "A 70mm euro cylinder can be 35/35, 30/40 or 40/30. How to measure from the cam for the split your door needs, why projection over 3mm is a security problem, and what our catalogue does and does not publish.",
+  "titleEs": "70 es el total, no el reparto",
+  "summaryEs": "El número de 70SN es la longitud total del cilindro en milímetros. No dice nada sobre cómo se reparten esos 70 mm a cada lado de la leva — y ese reparto es lo que decide si la llave gira una vez colgada la puerta.",
+  "bodyEs": [
+    "Un cilindro de perfil europeo se describe con un solo número en casi todos los catálogos del sector, el nuestro incluido: 45, 50, 55, 60, 65, 70, 80. Ese número es la longitud total en milímetros, medida de extremo a extremo. Es realmente útil y realmente incompleto, porque dos cilindros de exactamente 70 mm pueden ser piezas completamente distintas.",
+    "La leva se sitúa en algún punto de esa longitud — la pletina que gira y mueve el pestillo, accionada por el tornillo de fijación que la atraviesa. La longitud se reparte a cada lado de esa leva, y las dos mitades se indican como un reparto: 35/35, 30/40, 40/30. Los tres son cilindros de 70 mm. Sólo uno encaja en su puerta.",
+    "Cuál de ellos depende de lo que haya delante y detrás de la caja de cerradura. Mida desde el taladro del tornillo de fijación en el canto de la puerta — ése es el centro de la leva — hacia afuera hasta la cara acabada de cada lado, e incluya todo lo que el cilindro debe atravesar: la hoja, cualquier bocallave o roseta, una placa decorativa, un escudo de seguridad. La medida exterior es la mitad exterior; la interior, la mitad interior. Redondee cada una al alza al siguiente múltiplo de 5 mm en que realmente se fabrican los cilindros.",
+    "Quedarse corto se nota en obra: la llave no entra lo suficiente, o entra y no gira porque la leva no libra. Pasarse de largo es el error más caro, porque a la vista está bien. Un cilindro que sobresale del escudo es lo más fácil de atacar en una puerta — le da a una herramienta algo que agarrar y apalancar — y en una puerta exterior ese saliente es lo que una aseguradora o un pliego van a señalar. Como regla de trabajo, mantenga el saliente en unos 3 mm o menos en la cara exterior.",
+    "Por eso mismo el cilindro es la pieza equivocada para estandarizar en un pedido mixto. Las puertas de una obra rara vez tienen un solo espesor: una hoja interior de 40 mm, una hoja de entrada de 45 mm y una mampara acristalada con una pinza de 10 mm admiten repartos distintos, y un palé de una sola medida significa que alguien en obra va a forzar algo.",
+    "Y aquí la parte que conviene decir con claridad sobre nuestro propio catálogo. Nuestras fichas de cilindro publican la longitud total — 45, 47, 54, 56, 65, 70 y 80 mm —, el material, los acabados y el número de llaves. No publican el reparto, porque el reparto es una variable de pedido y no una propiedad del modelo. Preferimos decirlo así antes que imprimir un 35/35 por defecto que acertaría lo bastante como para que se lo crean y fallaría lo bastante como para costarle a alguien un contenedor.",
+    "Así que el camino práctico es corto. Indíquenos el espesor de la puerta y qué va montado en cada cara, y nuestra oficina técnica le devolverá el reparto, o le confirmará el que usted haya especificado. Si ya trabaja con repartos, mándelos como repartos: 30/40 exterior/interior es inequívoco de un modo que \"70 mm\" no lo es. En cualquier caso, diga cuál es el lado exterior; un 30/40 y un 40/30 son el mismo cilindro instalado al revés, y al revés significa que la mitad reforzada mira hacia donde no debe.",
+    "Una última cosa que conviene confirmar a la vez, porque preguntarlo no cuesta nada y es la segunda omisión más frecuente en un cilindro: el amaestramiento. Nuestros cilindros se sirven con llave distinta y tres llaves de serie, y hay opción de cinco. Llave igual dentro de un grupo, o un sistema de llave maestra para todo un edificio, es una decisión que hay que tomar antes de espigar los cilindros — no cuando ya han llegado."
+  ],
+  "seoTitleEs": "Medida de cilindro europeo: longitud y reparto | Canton Hyland",
+  "seoDescriptionEs": "Un cilindro europeo de 70 mm puede ser 35/35, 30/40 o 40/30. Cómo medir desde la leva el reparto que necesita su puerta, por qué un saliente de más de 3 mm es un problema de seguridad, y qué publica y qué no nuestro catálogo."
+}

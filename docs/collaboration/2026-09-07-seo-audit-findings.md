@@ -82,9 +82,9 @@ Site Scan 报的重复标题、薄内容、缺 h1 全部是它的。
 
 ## 三、robots.txt 与图片 sitemap：都是通的
 
-**robots.txt** 明确列出七个 AI 爬虫并全部 `Allow`：
+**robots.txt** 明确列出**六个**具名 AI 爬虫并全部 `Allow`：
 `GPTBot`、`ClaudeBot`、`Claude-User`、`PerplexityBot`、`Google-Extended`、`CCBot`，
-加通配 `*`。只 `Disallow` 了 `/admin/`、`/cdn-cgi/` 和 `*.txt$`
+另有通配 `*`（通配不是爬虫，不计入六个之内）。只 `Disallow` 了 `/admin/`、`/cdn-cgi/` 和 `*.txt$`
 （后者挡的是 Next.js 的 RSC 数据文件；`llms.txt` 和站点验证文件用更具体的 `Allow` 放行，
 按最长匹配优先规则它们是通的）。Sitemap 已声明。
 
