@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { hasSpanishMirror } from "@/lib/spanish-mirror";
 import type { MenuCategory } from "@/data/categories";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
@@ -17,21 +18,40 @@ import { SiteMenuDrawer } from "./SiteMenuDrawer";
  * 同事在后台改一次即可，不必找人改代码 —— 后台那个栏目才算是真的能用，
  * 而不是摆着好看。
  *
- * 西班牙语路径由 localisedHref 统一处理：只有 /company /contact /projects
- * 有西语版，其余（新闻、下载、产品）指回英文页，而不是指向一个会 404 的 /es 地址。
+ * 西班牙语路径由 localisedHref 统一处理，指向真实存在的西语页；没有西语版的
+ * 指回英文页，而不是指向一个会 404 的 /es 地址。
+ *
+ * ⚠ 这里原本写着「只有 /company /contact /projects 有西语版」。那句话在西语镜像
+ * 扩到产品、对比、集合、配置器、检索与新闻之后就不成立了，但没人回来改它，
+ * 于是它变成了一条会误导下一个人的注释 —— 唯一的真相来源是
+ * src/lib/spanish-mirror.ts 的 SPANISH_MIRROR_PREFIXES。
  */
 
+/**
+ * Where the language switch goes: the SAME page in the other language, when it exists.
+ *
+ * This used to name three prefixes — company, contact, projects — and send everything else
+ * to /es, which meant a reader on a product page, a comparison table, a collection, the
+ * configurator, the finder or any news article was returned to the Spanish homepage and
+ * had to navigate back. The Spanish mirror had grown to cover all of those and this
+ * function had not, so the switch silently became a "start over" button on most of the
+ * site.
+ *
+ * `hasSpanishMirror` is the list that already decides which English paths have a Spanish
+ * twin — it is what the hreflang tags are built from. Reading it here means the switch and
+ * the hreflang can never disagree, and a route added to the mirror is switchable the same
+ * day rather than whenever somebody remembers this file.
+ *
+ * The fallback is still the homepage, because a link to a page that does not exist is
+ * worse than a link that starts over. It now only fires where there genuinely is no
+ * Spanish page.
+ */
 function languageTarget(pathname: string, isSpanish: boolean): string {
   if (isSpanish) {
     const englishPath = pathname.replace(/^\/es/, "");
     return englishPath || "/";
   }
-  if (pathname === "/company" || pathname.startsWith("/company/")) return "/es/company";
-  if (pathname === "/contact" || pathname.startsWith("/contact/")) return "/es/contact";
-  if (pathname === "/projects" || pathname.startsWith("/projects/")) {
-    return pathname.replace(/^\/projects/, "/es/projects");
-  }
-  return "/es";
+  return hasSpanishMirror(pathname) ? `/es${pathname === "/" ? "" : pathname}` : "/es";
 }
 
 type ShelfName = "products" | "company" | "buy";

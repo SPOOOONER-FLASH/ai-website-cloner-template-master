@@ -214,10 +214,44 @@ async function cutOut(file) {
     if (area < biggest * 0.25 && bounds[id].maxY < height * 0.2 && !near(bounds[id])) return false;
     /* Trapped backdrop: overwhelmingly near-white, and not the product itself. */
     if (area < biggest * 0.5 && stats[id].white / area > 0.9) return false;
-    /* The logo: small, high, and mostly colour on a catalogue of neutral metal. */
-    if (area < biggest * 0.2 && bounds[id].maxY < height * 0.35 && stats[id].saturated / area > 0.5) {
+    /*
+      THE LOGO: small, high, and carrying colour on a catalogue of neutral metal.
+
+      This shipped with a 0.5 saturation threshold and the Hyland oval walked straight
+      through it onto the live homepage. Measured on 70sn-lock-cylinder, the logo
+      component is area 6,984 (0.071 of the main mass), maxY 0.13h — and only 0.20
+      saturated, because it is a dark oval with red lettering, not a block of red. Rule
+      one nearly caught it too and was overruled by `near()`, the logo sitting close
+      enough to the cylinder to read as part of it.
+
+      0.12 is chosen with the margin measured rather than guessed: the logo sits at 0.20.
+
+      The size and position guards are what make a low threshold safe. Brass runs
+      saturated at 0.91 and gold at 0.90 across a whole part, so on saturation alone a
+      brass hinge would be erased — but a hinge IS the main mass, so `area < biggest * 0.2`
+      never offers it to this rule. What the three conditions together describe is a small
+      coloured mark floating near the top of a frame, which in this catalogue is a
+      watermark and nothing else.
+    */
+    if (area < biggest * 0.2 && bounds[id].maxY < height * 0.22 && stats[id].saturated / area > 0.12) {
       return false;
     }
+
+    /*
+      THE TAGLINE UNDER THE LOGO.
+
+      Fixing the oval left a grey smudge above the cylinder: the "Total solutions to the
+      building industry" line, which is neutral grey and so invisible to the colour rule
+      above. Measured on 70sn-lock-cylinder it is five fragments of 46–130px — 0.001 of
+      the main mass — all sitting at y 107–113 while the product itself starts at y 132.
+
+      So the discriminator is geometric and needs no colour at all: a speck that is BOTH
+      tiny and floating entirely clear of the product, above it. A real component is never
+      both. A key ring, a loose screw, a strike plate — the small things that legitimately
+      appear beside a product — either touch the main mass or sit beside and below it, and
+      none of them is a thousandth of its area.
+    */
+    if (area < biggest * 0.01 && bounds[id].maxY < main.minY) return false;
     return true;
   });
 

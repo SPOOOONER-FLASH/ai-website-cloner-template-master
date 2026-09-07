@@ -29,7 +29,16 @@ export function SiteFacts({ locale = "en" }: { locale?: Locale }) {
 
   return (
     <section className="layout" aria-labelledby="site-facts-heading">
-      <div className="col-span-full">
+      {/*
+        `col-content`, NOT `col-span-full`.
+
+        `.layout > *` already places a child in the content column, but `col-span-full` is
+        Tailwind for `grid-column: 1 / -1` and overrides it — which pushed this strip out
+        to the full bleed and clipped the first and last figures at the viewport edges on
+        the live homepage. Naming the column explicitly says which one is intended, and
+        cannot be undone by a utility that happens to sort later.
+      */}
+      <div className="col-content">
         <h2 id="site-facts-heading" className="drawer-eyebrow">
           {siteFactsHeading(locale)}
         </h2>
