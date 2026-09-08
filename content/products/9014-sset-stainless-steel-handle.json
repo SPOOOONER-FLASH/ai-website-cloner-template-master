@@ -1,0 +1,118 @@
+{
+  "model": "9014 SSET",
+  "slug": "9014-sset-stainless-steel-handle",
+  "name": "Stainless Steel Handle",
+  "series": "Stainless Steel Handle",
+  "categoryPath": [
+    "stainless-steel-handles"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Stainless Steel"
+    },
+    {
+      "label": "Cylinder",
+      "value": "Brass Cylinder"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin stainless steel (US32D)"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35–50mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "SS"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/9014-sset-stainless-steel-handle.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 9014 SSET Stainless Steel Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 2"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 3"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 4"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 5"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 6"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 7"
+    },
+    {
+      "src": "/images/products/9014-sset-stainless-steel-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 9014 SSET Stainless Steel Handle, view 8"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "9014 SSET Stainless Steel Handle | Canton Hyland",
+  "seoDescription": "Canton Hyland 9014 SSET stainless steel handle in Stainless Steel. Stainless Steel Handle in satin stainless steel (us32d), entrance function.",
+  "nameEs": "Manijas de acero inoxidable",
+  "seoTitleEs": "9014 SSET Manijas de acero inoxidable | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 9014 SSET manijas de acero inoxidable en acero inoxidable. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "summary": "Stainless Steel Handle in satin stainless steel (us32d), entrance function.",
+  "features": [
+    "Introduction:",
+    "Made from high-quality 304 stainless steel with material certification, this door handle is ideal for modern entry door locks. Contact us for more details."
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=2066",
+    "model": "9014 SSBK",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9014-sset-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9014-sset-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9014 SSET Stainless Steel Handle, demonstration still"
+      },
+      "label": "9014 SSET Stainless Steel Handle — product demonstration",
+      "durationSeconds": 31,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "derivedFrom": {
+    "model": "9014 SSBK",
+    "slug": "9014-ssbk-stainless-steel-handle",
+    "finishFrom": "sibling 9014 SSBK",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

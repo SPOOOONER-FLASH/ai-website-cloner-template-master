@@ -1,5 +1,6 @@
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
+import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -41,6 +42,13 @@ export default function Home() {
       <div className="modules">
         <ArgentinaAr4Showcase />
         <Spacer heights={content.spacers.s96} />
+        {/*
+          307 and 311 sit directly above the panic-exit hero: the flagship pair first, then
+          the range they belong to. Reversing that order would introduce the family before
+          giving a reason to care about it.
+        */}
+        <FlagshipTooling />
+
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />
         <TextModule content={content.text1} />

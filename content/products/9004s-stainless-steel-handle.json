@@ -136,5 +136,18 @@
     "url": "https://stahlock.com/index.php?id=2071",
     "model": "9004S",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9004s-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9004s-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9004S Stainless Steel Handle, demonstration still"
+      },
+      "label": "9004S Stainless Steel Handle — product demonstration",
+      "durationSeconds": 31,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

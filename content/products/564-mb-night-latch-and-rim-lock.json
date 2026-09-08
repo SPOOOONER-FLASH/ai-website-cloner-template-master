@@ -249,5 +249,18 @@
     "url": "https://stahlock.com/index.php?id=2413",
     "model": "564 MB",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/564-mb-night-latch-and-rim-lock.mp4",
+      "poster": {
+        "src": "/images/products/564-mb-night-latch-and-rim-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "564 MB Night Latch And Rim Lock, demonstration still"
+      },
+      "label": "564 MB Night Latch And Rim Lock — product demonstration",
+      "durationSeconds": 45,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

@@ -78,5 +78,18 @@
     "url": "https://stahlock.com/index.php?id=2096",
     "model": "NC068",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/nc068-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/nc068-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "NC068 Stainless Steel Handle, demonstration still"
+      },
+      "label": "NC068 Stainless Steel Handle — product demonstration",
+      "durationSeconds": 31,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

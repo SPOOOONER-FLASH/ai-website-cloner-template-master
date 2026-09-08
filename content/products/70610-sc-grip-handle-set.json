@@ -168,5 +168,18 @@
     "url": "https://stahlock.com/index.php?id=2191",
     "model": "70610 SC",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/70610-sc-grip-handle-set.mp4",
+      "poster": {
+        "src": "/images/products/70610-sc-grip-handle-set-video.webp",
+        "ratio": "16 / 9",
+        "label": "70610 SC Grip Handle Set, demonstration still"
+      },
+      "label": "70610 SC Grip Handle Set — product demonstration",
+      "durationSeconds": 35,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

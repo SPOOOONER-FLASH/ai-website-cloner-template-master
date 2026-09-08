@@ -76,6 +76,8 @@ const WANTED = [
   "575 ACET", "575 SSET", "578 SNBK", "578 SNET", "578 SSET", "592 BSET",
   "598 ACET", "598 SNBK", "598 SNET", "598 SSET", "607 ACBK", "607 SSPS",
   "609 SSET", "D01 AB", "D101 BS", "D102 AC", "D102 PB", "D103 AC",
+  /* The 2026-09-08 WeChat drop: folders with photographs and no product record. */
+  "70720 PB", "9014 SSET", "70900 MBBK", "70900 MBET", "1073D MB",
 ];
 
 const parse = (model) => {

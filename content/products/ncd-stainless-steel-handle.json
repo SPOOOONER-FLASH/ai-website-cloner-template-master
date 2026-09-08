@@ -73,5 +73,18 @@
     "url": "https://stahlock.com/index.php?id=2100",
     "model": "NCD",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/ncd-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/ncd-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "NCD Stainless Steel Handle, demonstration still"
+      },
+      "label": "NCD Stainless Steel Handle — product demonstration",
+      "durationSeconds": 25,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

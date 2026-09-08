@@ -78,5 +78,18 @@
     "url": "https://stahlock.com/index.php?id=2083",
     "model": "9014S",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9014s-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9014s-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9014S Stainless Steel Handle, demonstration still"
+      },
+      "label": "9014S Stainless Steel Handle — product demonstration",
+      "durationSeconds": 30,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

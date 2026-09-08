@@ -177,5 +177,18 @@
     "url": "https://stahlock.com/index.php?id=2109",
     "model": "G559",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/g559-night-latch-and-rim-lock.mp4",
+      "poster": {
+        "src": "/images/products/g559-night-latch-and-rim-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "G559 Night Latch And Rim Lock, demonstration still"
+      },
+      "label": "G559 Night Latch And Rim Lock — product demonstration",
+      "durationSeconds": 39,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

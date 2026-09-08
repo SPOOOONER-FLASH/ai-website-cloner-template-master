@@ -110,5 +110,18 @@
     "url": "https://stahlock.com/index.php?id=2098",
     "model": "NC182",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/nc182-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/nc182-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "NC182 Stainless Steel Handle, demonstration still"
+      },
+      "label": "NC182 Stainless Steel Handle — product demonstration",
+      "durationSeconds": 24,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

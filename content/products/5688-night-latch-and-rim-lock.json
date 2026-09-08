@@ -208,5 +208,18 @@
     "url": "https://stahlock.com/index.php?id=2118",
     "model": "5688",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/5688-night-latch-and-rim-lock.mp4",
+      "poster": {
+        "src": "/images/products/5688-night-latch-and-rim-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "5688 Night Latch And Rim Lock, demonstration still"
+      },
+      "label": "5688 Night Latch And Rim Lock — product demonstration",
+      "durationSeconds": 37,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

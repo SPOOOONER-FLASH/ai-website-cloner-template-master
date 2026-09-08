@@ -1,0 +1,100 @@
+{
+  "model": "70720 PB",
+  "slug": "70720-pb-grip-handle-set",
+  "name": "Grip Handle Set",
+  "series": "Grip Handle Set",
+  "categoryPath": [
+    "grip-handle-sets"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable, latch and deadbolt both"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Deadbolt throw",
+      "value": "25mm, with hardened steel insert to resist sawing"
+    },
+    {
+      "label": "Latch extension",
+      "value": "13mm"
+    },
+    {
+      "label": "Cross bore",
+      "value": "51mm — replaces most existing locksets"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel internal construction, corrosion protected"
+    },
+    {
+      "label": "Trim",
+      "value": "Forged solid brass or zinc die-casting electro-plated"
+    },
+    {
+      "label": "Handing",
+      "value": "Non-handed, left or right hand"
+    },
+    {
+      "label": "Feature",
+      "value": "No exposed exterior fixings; free-turning cylinder ring resists wrenching"
+    },
+    {
+      "label": "Finish",
+      "value": "Polished brass (US3)"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "PB"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/70720-pb-grip-handle-set.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 70720 PB Grip Handle Set"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/70720-pb-grip-handle-set-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 70720 PB Grip Handle Set, view 2"
+    },
+    {
+      "src": "/images/products/70720-pb-grip-handle-set-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 70720 PB Grip Handle Set, view 3"
+    },
+    {
+      "src": "/images/products/70720-pb-grip-handle-set-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 70720 PB Grip Handle Set, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "70720 PB Grip Handle Set — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland 70720 PB grip handle set in Zinc Alloy. Grip Handle Set in polished brass (us3). Available in PB finish. Made in Guangdong, China.",
+  "nameEs": "Juegos de manija con placa",
+  "summary": "Grip Handle Set in polished brass (us3).",
+  "seoTitleEs": "70720 PB Juegos de manija con placa — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 70720 PB juegos de manija con placa en zamak. Acabado PB. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "70720 SM",
+    "slug": "70720-sm-grip-handle-set",
+    "finishFrom": "15 records use PB",
+    "functionFrom": "family has no function suffix",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

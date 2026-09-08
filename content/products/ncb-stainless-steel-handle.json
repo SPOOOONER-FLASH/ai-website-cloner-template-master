@@ -78,5 +78,18 @@
     "url": "https://stahlock.com/index.php?id=2099",
     "model": "NCB",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/ncb-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/ncb-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "NCB Stainless Steel Handle, demonstration still"
+      },
+      "label": "NCB Stainless Steel Handle — product demonstration",
+      "durationSeconds": 24,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

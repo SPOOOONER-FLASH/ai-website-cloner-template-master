@@ -78,5 +78,18 @@
     "url": "https://stahlock.com/index.php?id=2067",
     "model": "9002E",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9002e-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9002e-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9002E Stainless Steel Handle, demonstration still"
+      },
+      "label": "9002E Stainless Steel Handle — product demonstration",
+      "durationSeconds": 27,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

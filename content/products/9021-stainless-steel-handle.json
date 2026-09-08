@@ -83,5 +83,18 @@
     "url": "https://stahlock.com/index.php?id=2088",
     "model": "9021",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9021-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9021-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9021 Stainless Steel Handle, demonstration still"
+      },
+      "label": "9021 Stainless Steel Handle — product demonstration",
+      "durationSeconds": 24,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

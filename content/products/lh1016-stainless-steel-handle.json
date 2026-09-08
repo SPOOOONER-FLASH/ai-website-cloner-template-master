@@ -121,5 +121,18 @@
     "url": "https://stahlock.com/index.php?id=2089",
     "model": "LH1016",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/lh1016-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh1016-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH1016 Stainless Steel Handle, demonstration still"
+      },
+      "label": "LH1016 Stainless Steel Handle — product demonstration",
+      "durationSeconds": 19,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

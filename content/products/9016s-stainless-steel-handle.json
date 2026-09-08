@@ -83,5 +83,18 @@
     "url": "https://stahlock.com/index.php?id=2086",
     "model": "9016S",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/9016s-stainless-steel-handle.mp4",
+      "poster": {
+        "src": "/images/products/9016s-stainless-steel-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "9016S Stainless Steel Handle, demonstration still"
+      },
+      "label": "9016S Stainless Steel Handle — product demonstration",
+      "durationSeconds": 19,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }
