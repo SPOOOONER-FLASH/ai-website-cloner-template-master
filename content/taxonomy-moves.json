@@ -13,18 +13,23 @@
     "productMoves: a single product changed category while BOTH categories stay live.",
     "The second kind cannot be expressed as a category alias, because the old category",
     "is not retired — only that one product left it.",
+    "productMerges: two records described ONE product and one of them was retired. The",
+    "old slug 301s to the survivor inside the same category. Distinct from productMoves,",
+    "where the product is fine and only its category changed — here the page itself is",
+    "gone because it should never have existed twice.",
     "",
     "Never delete an entry. The old URL stays indexed for months and a removed entry",
     "turns a 301 back into a 404, which is the thing this file exists to prevent."
   ],
-
   "categoryAliases": {
     "door-hinges": {
       "canonical": "brass-steel-hinges",
-      "productSlugs": ["f100-ss-door-hinge", "stainless-steel-door-hinge"]
+      "productSlugs": [
+        "f100-ss-door-hinge",
+        "stainless-steel-door-hinge"
+      ]
     }
   },
-
   "productMoves": [
     {
       "slug": "315-pry-latch",
@@ -43,6 +48,20 @@
       "from": "deadbolts",
       "to": "grip-handle-sets",
       "why": "美工 review 2026-09-02: 这个调回大拉手的类目. The set is an entrance handleset — grip handle, thumb latch and deadbolt together — so it belongs with the handlesets rather than among the bare deadbolt bodies."
+    }
+  ],
+  "productMerges": [
+    {
+      "from": "lc14-8550-four-bolt-mortise-lock-case",
+      "to": "lc14-85-50mm-lock-case",
+      "category": "lock-cases",
+      "why": "同一个四圆柱锁体两条记录. Both are LC14, 85mm centre distance, 50mm backset, euro profile, four round bolts. The survivor carries eight photographs and the full spec table; the retired one carried a hero and four spec rows. Google reported 462 pages as 'duplicate, user has not selected canonical' — this is one of the pairs feeding it."
+    },
+    {
+      "from": "lc04-85-60mm-lock-case",
+      "to": "lc04-85-60-lock-case",
+      "category": "lock-cases",
+      "why": "同一个 LC04 两条记录. Identical specs (85mm centre distance, 60mm backset, euro profile, four round bolts, wooden doors). The survivor carries six gallery photographs; the retired one carried a hero only."
     }
   ]
 }

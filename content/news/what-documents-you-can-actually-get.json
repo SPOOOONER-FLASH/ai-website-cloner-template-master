@@ -1,0 +1,48 @@
+{
+  "slug": "what-documents-you-can-actually-get",
+  "title": "Cutsheets, CAD and BIM: What We Have and What We Do Not",
+  "kind": "insight",
+  "publishedAt": "2026-09-08",
+  "summary": "People arrive here searching for a cutsheet, a DWG, a BIM object or a ficha técnica. Some of that we publish today, some of it we can send on request, and one of it does not exist yet. Saying which is which is more useful than a download page that promises everything.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "A recurring shape appears in the queries that reach this site: people are not looking for a product, they are looking for a file. A cutsheet for a lock. A DraftSight or DWG model. A BIM object with a ficha técnica. A sample PDF. In one case somebody pasted an entire bill-of-materials line — drawing number, position, material, application — straight into a search box, which is what a purchasing engineer does when they are trying to find the part that satisfies a drawing. Those are all the same request underneath: give me something I can put into my own document.",
+    "So here is the honest inventory, in the order of how much of it exists.",
+    "Dimensioned line drawings: 79 of them, published on the product pages that have them. They are drawn 1:1 from the dimensions the catalogue publishes for that model — backset, centre distance, faceplate, case size, fixing centres — and they are orthographic, so nothing is foreshortened and a measurement taken off one is a real measurement. They exist for 79 models rather than for the whole catalogue for one reason: those are the models where the factory has given us enough published dimensions to draw without inventing anything. A drawing with a guessed hole position is worse than no drawing, because it will be believed.",
+    "Specifications: on every product page, as a table rather than as prose. Backset, centre distance, material, finish codes, cycle life where it has been tested, door thickness range, handing. Where a value is missing it is missing, not estimated. If you need those in a spreadsheet rather than a page, ask and we will send them.",
+    "Catalogues: two PDFs, both current. The Canton Hyland product catalogue and a HYDE export catalogue with specifications and an index. The second one matters more than it sounds, because it is a text PDF rather than a scan — the words in it are selectable and searchable, which means a search engine and an AI assistant can read it. The old scanned catalogue contained zero words as far as any machine was concerned.",
+    "Test documents: available on request, with their exact scope. We publish the facts of each one — laboratory, reference number, issue date and the specific model covered — and send the document through the proper route when a specification needs it. There is a separate article on why the scope line matters more than the headline.",
+    "Now the part we do not have. There is no BIM library. No Revit families, no IFC objects, no ficha técnica in the form an architect's model wants. If you need a hardware item represented inside a BIM model today, we can give you the dimensioned drawing and the specification and your modeller can build the object from them, and that is the truthful answer rather than a promise with a date attached. The same goes for native CAD: we publish drawings as SVG, which any CAD package will import and which is dimensionally exact, but we do not maintain a DWG library per model.",
+    "Two practical notes for anyone assembling a submittal. First, ask for documents by model number in the configuration you are buying — finish and function suffix included — because a drawing of the 60mm backset version is not a drawing of the 45mm one. Second, tell us what the document is for. A cutsheet for a client approval, a drawing for a door manufacturer's machining setup and a specification for a tender each need a different thing emphasised, and we would rather send the right one than the largest one."
+  ],
+  "heroImage": {
+    "src": "/images/editorial/hyde-editorial-product-range-07.webp",
+    "ratio": "3 / 2",
+    "label": "Representative editorial study of the published range — the specifications and drawings behind these pages are what a submittal is actually assembled from.",
+    "labelEs": "Estudio editorial representativo de la gama publicada — las especificaciones y los planos que hay detrás de estas páginas son con lo que realmente se arma una documentación de obra."
+  },
+  "relatedModels": ["Lc07 85×45mm", "70SN"],
+  "seoTitle": "Door Hardware Cutsheets, CAD and BIM: What Exists | Canton Hyland",
+  "seoDescription": "79 dimensioned 1:1 drawings, full specification tables and two text-searchable catalogue PDFs are published; test documents come on request with their exact scope. There is no BIM library — and here is what to use instead.",
+  "titleEs": "Fichas, CAD y BIM: qué tenemos y qué no",
+  "summaryEs": "Hay quien llega aquí buscando una ficha técnica, un DWG, un objeto BIM o una ficha para un modelo. Parte de eso lo publicamos hoy, parte lo enviamos a petición, y una parte todavía no existe. Decir cuál es cuál es más útil que una página de descargas que lo promete todo.",
+  "bodyEs": [
+    "En las consultas que llegan a este sitio se repite una forma: no buscan un producto, buscan un archivo. Una ficha técnica de una cerradura. Un modelo de DraftSight o un DWG. Un objeto BIM con su ficha técnica. Un PDF de muestra. En un caso alguien pegó una línea entera de lista de materiales — número de plano, posición, material, aplicación — directamente en el buscador, que es lo que hace un ingeniero de compras cuando intenta encontrar la pieza que satisface un plano. Todas son la misma petición por debajo: deme algo que pueda meter en mi propio documento.",
+    "Así que aquí está el inventario honesto, ordenado por cuánto existe de cada cosa.",
+    "Planos acotados: 79, publicados en las fichas de producto que los tienen. Están dibujados 1:1 a partir de las cotas que el catálogo publica para ese modelo — distancia al eje, distancia entre centros, frente, tamaño de caja, entrejes de fijación — y son ortográficos, así que nada está escorzado y una medida tomada sobre uno es una medida real. Existen para 79 modelos y no para todo el catálogo por una razón: son los modelos en los que la fábrica nos ha dado suficientes cotas publicadas como para dibujar sin inventar nada. Un plano con un taladro adivinado es peor que ningún plano, porque se lo van a creer.",
+    "Especificaciones: en cada ficha de producto, como tabla y no como prosa. Distancia al eje, distancia entre centros, material, códigos de acabado, ciclos de vida cuando se han ensayado, rango de espesor de puerta, mano. Donde falta un valor, falta: no se estima. Si los necesita en hoja de cálculo en lugar de en una página, pídalos y se los enviamos.",
+    "Catálogos: dos PDF, ambos vigentes. El catálogo de producto de Canton Hyland y un catálogo de exportación HYDE con especificaciones e índice. El segundo importa más de lo que parece, porque es un PDF de texto y no un escaneo: sus palabras se pueden seleccionar y buscar, lo que significa que un buscador y un asistente de IA pueden leerlo. El catálogo escaneado antiguo, para cualquier máquina, contenía cero palabras.",
+    "Documentos de ensayo: a petición, con su alcance exacto. Publicamos los datos de cada uno — laboratorio, número de referencia, fecha de emisión y el modelo concreto que cubre — y enviamos el documento por la vía adecuada cuando un pliego lo necesita. Hay un artículo aparte sobre por qué la línea de alcance importa más que el titular.",
+    "Y ahora la parte que no tenemos. No hay biblioteca BIM. Ni familias de Revit, ni objetos IFC, ni ficha técnica en la forma que quiere el modelo de un arquitecto. Si hoy necesita representar un herraje dentro de un modelo BIM, podemos darle el plano acotado y la especificación y su modelador puede construir el objeto a partir de ellos; ésa es la respuesta veraz, en lugar de una promesa con una fecha puesta. Lo mismo con el CAD nativo: publicamos los planos en SVG, que cualquier programa de CAD importa y que es dimensionalmente exacto, pero no mantenemos una biblioteca DWG por modelo.",
+    "Dos notas prácticas para quien esté armando una documentación. Primera: pida los documentos por número de modelo en la configuración que va a comprar, sufijo de acabado y de función incluidos, porque un plano de la versión de 60 mm de entrada no es el plano de la de 45. Segunda: díganos para qué es el documento. Una ficha para la aprobación de un cliente, un plano para el mecanizado en el fabricante de puertas y una especificación para una licitación necesitan cada uno que se destaque algo distinto, y preferimos enviarle el correcto antes que el más grande."
+  ],
+  "seoTitleEs": "Fichas técnicas, CAD y BIM de herrajes: qué existe | Canton Hyland",
+  "seoDescriptionEs": "79 planos acotados 1:1, tablas de especificación completas y dos catálogos PDF con texto buscable están publicados; los documentos de ensayo se envían a petición con su alcance exacto. No hay biblioteca BIM — y aquí está qué usar en su lugar."
+}

@@ -27582,54 +27582,6 @@
       "seoDescription": "锁体。背距 60mm，中心距 85mm。"
     },
     {
-      "slug": "lc04-85-60mm-lock-case",
-      "model": "Lc04 85×60mm",
-      "name": "锁体",
-      "nameEn": "Lock Case",
-      "series": "锁体系列",
-      "categoryPath": [
-        "lock-cases"
-      ],
-      "categoryNames": [
-        "锁体"
-      ],
-      "summary": "锁体。背距 60mm，中心距 85mm。",
-      "specs": [
-        {
-          "label": "中心距",
-          "value": "85mm"
-        },
-        {
-          "label": "背距",
-          "value": "60mm"
-        },
-        {
-          "label": "锁芯",
-          "value": "欧标锁芯"
-        },
-        {
-          "label": "插销",
-          "value": "Four round bolts"
-        },
-        {
-          "label": "适用场景",
-          "value": "木门"
-        }
-      ],
-      "material": "",
-      "finishes": [],
-      "doorTypes": [],
-      "heroImage": {
-        "src": "/images/products-rayen/lc04-85-60mm-lock-case.webp",
-        "ratio": "1 / 1",
-        "label": "雷茵 Lc04 85×60mm 锁体"
-      },
-      "gallery": [],
-      "relatedModels": [],
-      "seoTitle": "Lc04 85×60mm 锁体",
-      "seoDescription": "锁体。背距 60mm，中心距 85mm。"
-    },
-    {
       "slug": "lc04-85-70-lock-case",
       "model": "LC04 85*70",
       "name": "锁体",
@@ -27958,58 +27910,6 @@
       "relatedModels": [],
       "seoTitle": "Lc14 85×50mm 锁体",
       "seoDescription": "锁体。背距 50mm，中心距 85mm。"
-    },
-    {
-      "slug": "lc14-8550-four-bolt-mortise-lock-case",
-      "model": "LC14 85×50",
-      "name": "四舌插芯锁体",
-      "nameEn": "Four Bolt Mortise Lock Case",
-      "series": "LC14 系列",
-      "categoryPath": [
-        "lock-cases"
-      ],
-      "categoryNames": [
-        "锁体"
-      ],
-      "summary": "Steel case, stainless steel forend四舌插芯锁体，适用于木质。背距 50，中心距 85。",
-      "specs": [
-        {
-          "label": "中心距",
-          "value": "85"
-        },
-        {
-          "label": "背距",
-          "value": "50"
-        },
-        {
-          "label": "插销",
-          "value": "Four"
-        },
-        {
-          "label": "锁芯",
-          "value": "欧标锁芯"
-        }
-      ],
-      "material": "Steel case, stainless steel forend",
-      "finishes": [
-        "镀锌",
-        "Satin Stainless Forend"
-      ],
-      "doorTypes": [
-        "木质",
-        "钢"
-      ],
-      "heroImage": {
-        "src": "/images/products-rayen/lc14-8550-mortise-lock-case.webp",
-        "ratio": "1 / 1",
-        "label": "雷茵 LC14 85×50 四舌插芯锁体"
-      },
-      "gallery": [],
-      "relatedModels": [
-        "Stainless Steel Lever Handle Lock"
-      ],
-      "seoTitle": "LC14 85×50 四舌插芯锁体",
-      "seoDescription": "Steel case, stainless steel forend四舌插芯锁体，适用于木质。背距 50，中心距 85。"
     },
     {
       "slug": "lc16-lock-case",
@@ -32867,7 +32767,7 @@
       },
       "gallery": [],
       "relatedModels": [
-        "LC14 85×50",
+        "Lc14 85×50mm",
         "Black Tubular Lever Lock Set"
       ],
       "seoTitle": "Stainless Steel Lever Handle Lock 不锈钢执手锁",

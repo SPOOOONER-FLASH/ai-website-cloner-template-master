@@ -44,8 +44,31 @@ interface ProductMove {
   why: string;
 }
 
+/**
+ * Two records described one product; one of them was retired.
+ *
+ * The third kind, and the one the other two could not express. A merge does not move a
+ * product between categories and does not retire a category — it retires a SLUG inside a
+ * live category, because the catalogue held the same part twice under two spellings of
+ * its model number. `canonicalProductCategory` cannot help here: the category was always
+ * right, it is the page that should not have existed.
+ */
+interface ProductMerge {
+  from: string;
+  to: string;
+  category: string;
+  why: string;
+}
+
 const CATEGORY_ALIASES: Record<string, CategoryAlias> = moves.categoryAliases;
 const PRODUCT_MOVES: readonly ProductMove[] = moves.productMoves;
+const PRODUCT_MERGES: readonly ProductMerge[] = moves.productMerges ?? [];
+
+/** The surviving slug for a retired duplicate, or the slug unchanged. */
+export function canonicalProductSlug(category: string, slug: string): string {
+  const merged = PRODUCT_MERGES.find((m) => m.from === slug && m.category === category);
+  return merged ? merged.to : slug;
+}
 
 export function canonicalCategorySlug(slug: string): string {
   return CATEGORY_ALIASES[slug]?.canonical ?? slug;
@@ -74,5 +97,6 @@ export function getLegacyProductParams(): { category: string; slug: string }[] {
       alias.productSlugs.map((slug) => ({ category, slug })),
     ),
     ...PRODUCT_MOVES.map((m) => ({ category: m.from, slug: m.slug })),
+    ...PRODUCT_MERGES.map((m) => ({ category: m.category, slug: m.from })),
   ];
 }

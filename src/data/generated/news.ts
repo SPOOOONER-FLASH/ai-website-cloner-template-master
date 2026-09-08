@@ -3,18 +3,21 @@
 // Edit the JSON in content/ instead, or use the CMS at /admin.
 import type { NewsArticle } from "../types";
 import item0 from "../../../content/news/ansi-grade-1-vs-en-1125-exit-devices.json";
-import item1 from "../../../content/news/door-hardware-schedule-guide.json";
-import item2 from "../../../content/news/euro-cylinder-length-and-split.json";
-import item3 from "../../../content/news/handing-left-right-and-universal.json";
-import item4 from "../../../content/news/mortise-lock-backset-and-centre-distance-guide.json";
-import item5 from "../../../content/news/narrow-stile-aluminium-door-lock-sag.json";
-import item6 from "../../../content/news/push-bar-or-touch-bar-panic-exit-devices.json";
-import item7 from "../../../content/news/reading-door-hardware-model-numbers.json";
-import item8 from "../../../content/news/six-values-an-order-needs.json";
-import item9 from "../../../content/news/stainless-steel-grades-304-201-316.json";
-import item10 from "../../../content/news/trim-handle-or-panic-bar.json";
-import item11 from "../../../content/news/what-a-frameless-glass-door-needs.json";
-import item12 from "../../../content/news/what-a-test-report-actually-covers.json";
-import item13 from "../../../content/news/what-oem-actually-changes.json";
+import item1 from "../../../content/news/cross-referencing-a-lock-you-already-buy.json";
+import item2 from "../../../content/news/door-hardware-schedule-guide.json";
+import item3 from "../../../content/news/door-stop-holder-or-flush-bolt.json";
+import item4 from "../../../content/news/euro-cylinder-length-and-split.json";
+import item5 from "../../../content/news/handing-left-right-and-universal.json";
+import item6 from "../../../content/news/mortise-lock-backset-and-centre-distance-guide.json";
+import item7 from "../../../content/news/narrow-stile-aluminium-door-lock-sag.json";
+import item8 from "../../../content/news/push-bar-or-touch-bar-panic-exit-devices.json";
+import item9 from "../../../content/news/reading-door-hardware-model-numbers.json";
+import item10 from "../../../content/news/six-values-an-order-needs.json";
+import item11 from "../../../content/news/stainless-steel-grades-304-201-316.json";
+import item12 from "../../../content/news/trim-handle-or-panic-bar.json";
+import item13 from "../../../content/news/what-a-frameless-glass-door-needs.json";
+import item14 from "../../../content/news/what-a-test-report-actually-covers.json";
+import item15 from "../../../content/news/what-documents-you-can-actually-get.json";
+import item16 from "../../../content/news/what-oem-actually-changes.json";
 
-export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13] as unknown as NewsArticle[];
+export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16] as unknown as NewsArticle[];

@@ -68,6 +68,18 @@ for (const move of moves.productMoves) {
   );
 }
 
+/*
+  Merged duplicates: one product, two records, one of them retired. The redirect stays
+  inside the category — unlike a move, nothing changed category; the page simply should
+  not have existed twice.
+*/
+for (const merge of moves.productMerges ?? []) {
+  lines.push(`# merged duplicate: ${merge.from} -> ${merge.to}`);
+  lines.push(
+    ...rule(`/products/${merge.category}/${merge.from}`, `/products/${merge.category}/${merge.to}/`),
+  );
+}
+
 const conf = lines.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
 
 if (process.argv.includes("--check")) {
@@ -89,6 +101,7 @@ const ruleCount = (conf.match(/return 301/g) ?? []).length;
 console.log(
   `wrote ${OUT} — ${ruleCount} rules ` +
     `(${Object.keys(moves.categoryAliases).length} retired categories, ` +
-    `${moves.productMoves.length} moved products)`,
+    `${moves.productMoves.length} moved products, ` +
+    `${(moves.productMerges ?? []).length} merged duplicates)`,
 );
 console.log("⚠ nginx must be reloaded on the server for these to take effect.");

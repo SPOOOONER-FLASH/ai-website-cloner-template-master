@@ -28,7 +28,12 @@
     "label": "A corridor of prepared door openings, each requiring its own hardware schedule line",
     "labelEs": "Un pasillo de huecos preparados, cada uno con su propia línea en el cuadro de herrajes"
   },
-  "relatedModels": ["9001", "LC07 85×45mm", "70SN", "587 PBET"],
+  "relatedModels": [
+    "9001",
+    "Lc07 85×45mm",
+    "70SN",
+    "587 PBET"
+  ],
   "seoTitle": "The Six Values a Door Hardware Order Needs | Canton Hyland",
   "seoDescription": "Model, finish, backset, centre distance, handing and door thickness. Six values decide whether a lock can be installed — and which one is missing decides whether you lose a day or a container.",
   "titleEs": "Los seis datos que un pedido de herrajes realmente necesita",

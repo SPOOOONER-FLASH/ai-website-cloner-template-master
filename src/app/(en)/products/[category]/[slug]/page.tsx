@@ -8,6 +8,7 @@ import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/com
 import { defaultOgImage } from "@/lib/seo";
 import {
   canonicalProductCategory,
+  canonicalProductSlug,
   getLegacyProductParams,
 } from "@/data/category-aliases";
 
@@ -35,10 +36,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     caught once already. A retired path is a redirect stub whether or not the product is
     findable at the old address, so answer that first.
   */
-  if (canonicalCategory !== category) {
+  const canonicalSlug = canonicalProductSlug(canonicalCategory, slug);
+
+  if (canonicalCategory !== category || canonicalSlug !== slug) {
     return {
       robots: { index: false, follow: true },
-      alternates: { canonical: `/products/${canonicalCategory}/${slug}/` },
+      alternates: { canonical: `/products/${canonicalCategory}/${canonicalSlug}/` },
     };
   }
 
@@ -107,8 +110,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const { category, slug } = await params;
   const canonicalCategory = canonicalProductCategory(category, slug);
 
-  if (canonicalCategory !== category) {
-    permanentRedirect(`/products/${canonicalCategory}/${slug}/`);
+  /*
+    Two retirements, one check, and the order still matters for the same reason spelled
+    out in generateMetadata above.
+
+    A MERGED slug is the second kind: the catalogue held one product under two spellings
+    of its model number and one record was deleted, so `getProductBySlug` finds nothing
+    at the old address. Answer the redirect first or the page 404s instead of pointing at
+    the survivor — and a 404 throws away every link and every impression the retired URL
+    had earned, which is the opposite of why the records were merged.
+  */
+  const canonicalSlug = canonicalProductSlug(canonicalCategory, slug);
+
+  if (canonicalCategory !== category || canonicalSlug !== slug) {
+    permanentRedirect(`/products/${canonicalCategory}/${canonicalSlug}/`);
   }
 
   const product = getProductBySlug(category, slug);

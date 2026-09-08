@@ -1,0 +1,48 @@
+{
+  "slug": "cross-referencing-a-lock-you-already-buy",
+  "title": "Cross-Referencing a Lock You Already Buy",
+  "kind": "insight",
+  "publishedAt": "2026-09-08",
+  "summary": "A lot of the searches that reach us are somebody else's model number — another factory's rim lock, another brand's hinge, a part code off an old invoice. They are all the same question: what do I order to get this again. Six dimensions decide the answer, and the model number is not one of them.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "Look at the search terms that bring people to a hardware factory's site and a pattern appears immediately: a great many of them are another company's model numbers. A rim lock from one brand, a concealed hinge from another, a latch code off a twenty-year-old carton, a part reference from a catalogue that is out of print. Nobody types those hoping to read about us. They type them because they have a part that works, the supplier is gone or slow or expensive, and they need to know what to order to get the same thing again.",
+    "It is a good question and it has a precise answer, which is that a lock is defined by its geometry and not by its name. Two locks with the same six numbers are interchangeable regardless of what either is called. Two locks with the same name and one different number are not.",
+    "For a mortise lock, those six are: backset, from the face of the door to the centre of the spindle; centre distance, between the spindle and the cylinder or keyhole; faceplate length and width; case height and depth; spindle size, almost always 8mm square but worth confirming; and door thickness range. Get those six and the substitution works. Miss the centre distance and the handle and the cylinder will not both line up with the holes already cut in the door — and the door is the thing you cannot change.",
+    "For a rim lock or night latch the list is shorter but the same in character: backset, case size, whether the cylinder is single or double, latch extension, and the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them.",
+    "For a hinge: leaf height and width, knuckle count, pin type, and whether it is a fixed pin or loose. A hinge that is 3mm taller than the mortise already routed into the frame is a hinge that does not fit, and nothing about the finish or the grade changes that.",
+    "What does not carry across, and should be ignored when cross-referencing: the model number itself, the finish name, and the grade designation. Finish naming is not standardised between factories — one supplier's satin nickel is another's brushed nickel is another's SN — so match a finish by looking at a sample rather than by matching a word. Grade designations are standard-specific: an ANSI grade and an EN classification measure different things under different tests and neither translates into the other by arithmetic.",
+    "The practical route, and it is short. Measure the part you have, or photograph it beside a ruler with the faceplate visible. Send those numbers, the door thickness, and whether it is a left or right hand door. Our engineering desk will come back with the model that matches, or — and this is the part worth saying — with a straight answer that we do not make one. A near-miss recommended as an equivalent is how a container of unusable metal happens, and we would rather lose the line than send it.",
+    "One more thing, for anyone replacing a part in an existing building rather than specifying a new one: check the strike and the keep before you order the lock. In a retrofit the frame is the constraint, not the door, and the item that most often makes a substitution fail is not the lock body at all — it is the strike plate cutout, which was made for the old part and will not be remade."
+  ],
+  "heroImage": {
+    "src": "/images/editorial/hyde-real-lock-plate.webp",
+    "ratio": "3 / 2",
+    "label": "A lock case photographed with its faceplate visible — the dimensions on this face are what decide whether a substitution fits a door that is already cut.",
+    "labelEs": "Una caja de cerradura fotografiada con el frente a la vista — las cotas de esta cara son las que deciden si una sustitución encaja en una puerta ya mecanizada."
+  },
+  "relatedModels": ["Lc07 85×45mm", "5681", "SSH017"],
+  "seoTitle": "How to Cross-Reference a Door Lock to an Equivalent | Canton Hyland",
+  "seoDescription": "Six dimensions decide whether one mortise lock substitutes for another: backset, centre distance, faceplate, case size, spindle and door thickness. Why model numbers, finish names and grade designations do not carry across, and what to check first in a retrofit.",
+  "titleEs": "Encontrar el equivalente de una cerradura que ya compra",
+  "summaryEs": "Muchas de las búsquedas que llegan hasta nosotros son el número de modelo de otro fabricante: la cerradura de sobreponer de otra fábrica, la bisagra de otra marca, un código sacado de una factura antigua. Todas son la misma pregunta: qué pido para volver a tener esto. Seis cotas deciden la respuesta, y el número de modelo no es una de ellas.",
+  "bodyEs": [
+    "Mire los términos de búsqueda que llevan a alguien a la web de una fábrica de herrajes y aparece un patrón enseguida: buena parte de ellos son números de modelo de otras empresas. La cerradura de sobreponer de una marca, la bisagra oculta de otra, un código de picaporte sacado de una caja de hace veinte años, una referencia de un catálogo descatalogado. Nadie escribe eso esperando leer sobre nosotros. Lo escribe porque tiene una pieza que funciona, el proveedor ya no está o es lento o es caro, y necesita saber qué pedir para volver a tener lo mismo.",
+    "Es una buena pregunta y tiene una respuesta precisa: una cerradura se define por su geometría, no por su nombre. Dos cerraduras con las mismas seis cifras son intercambiables se llamen como se llamen. Dos cerraduras con el mismo nombre y una cifra distinta, no.",
+    "Para una cerradura de embutir esas seis son: la distancia al eje, desde la cara de la puerta al centro del cuadradillo; la distancia entre centros, entre el cuadradillo y el cilindro o el bocallave; largo y ancho del frente; alto y fondo de la caja; la medida del cuadradillo, casi siempre 8 mm cuadrado pero conviene confirmarlo; y el rango de espesor de puerta. Con esas seis la sustitución funciona. Falle la distancia entre centros y la manilla y el cilindro no coincidirán a la vez con los taladros ya hechos en la puerta — y la puerta es lo que no se puede cambiar.",
+    "Para una cerradura de sobreponer la lista es más corta pero igual de carácter: distancia al eje, tamaño de caja, si el cilindro es simple o doble, salida del picaporte, y el tipo de cerradero, porque un cerradero de sobreponer y un recibidor de pestillo son piezas distintas y el marco ya está preparado para una de ellas.",
+    "Para una bisagra: alto y ancho de pala, número de nudillos, tipo de pasador, y si es fijo o extraíble. Una bisagra 3 mm más alta que la caja ya fresada en el marco es una bisagra que no entra, y ni el acabado ni el grado cambian eso.",
+    "Lo que no se traslada, y conviene ignorar al buscar equivalencias: el propio número de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas —el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero—, así que iguale un acabado mirando una muestra, no igualando una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas con ensayos distintos, y ninguno se convierte en el otro con una cuenta.",
+    "La vía práctica es corta. Mida la pieza que tiene, o fotografíela junto a una regla con el frente a la vista. Envíe esas cotas, el espesor de la puerta, y si la puerta es de mano izquierda o derecha. Nuestra oficina técnica le devolverá el modelo que coincide o —y esto es lo que merece la pena decir— una respuesta clara de que no lo fabricamos. Recomendar un «casi» como equivalente es como acaba llegando un contenedor de metal inservible, y preferimos perder la línea a enviarlo.",
+    "Una cosa más, para quien sustituye una pieza en un edificio existente y no especifica uno nuevo: compruebe el cerradero y el recibidor antes de pedir la cerradura. En una reforma la restricción es el marco, no la puerta, y lo que más veces hace fracasar una sustitución no es el cuerpo de la cerradura, sino el hueco del cerradero, que se hizo para la pieza antigua y no se va a rehacer."
+  ],
+  "seoTitleEs": "Cómo encontrar el equivalente de una cerradura | Canton Hyland",
+  "seoDescriptionEs": "Seis cotas deciden si una cerradura de embutir sustituye a otra: distancia al eje, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma."
+}
