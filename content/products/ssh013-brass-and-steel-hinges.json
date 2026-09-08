@@ -50,9 +50,25 @@
   "heroImage": {
     "src": "/images/products/ssh013-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland SSH013 brass and steel hinges"
+    "label": "Hyland SSH013 Brass and Steel Hinges"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/ssh013-brass-and-steel-hinges-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH013 Brass and Steel Hinges, view 2"
+    },
+    {
+      "src": "/images/products/ssh013-brass-and-steel-hinges-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH013 Brass and Steel Hinges, view 3"
+    },
+    {
+      "src": "/images/products/ssh013-brass-and-steel-hinges-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH013 Brass and Steel Hinges, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "SSH013 Brass and Steel Hinges | Canton Hyland",
@@ -94,5 +110,19 @@
   ],
   "summaryEs": "Una bisagra de acero inoxidable, función fijación de puerta.",
   "seoTitleEs": "SSH013 Bisagras de latón y acero | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland SSH013 bisagras de latón y acero en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland SSH013 bisagras de latón y acero en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [
+    {
+      "src": "/videos/products/ssh013-brass-and-steel-hinges.mp4",
+      "poster": {
+        "src": "/images/products/ssh013-brass-and-steel-hinges-video.webp",
+        "ratio": "16 / 9",
+        "label": "SSH013 Brass and Steel Hinges, demonstration still"
+      },
+      "label": "SSH013 Brass and Steel Hinges — product demonstration",
+      "durationSeconds": 45,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

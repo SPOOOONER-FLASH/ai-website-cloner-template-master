@@ -51,18 +51,28 @@
   "heroImage": {
     "src": "/images/products/lc5845-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland LC5845 lock case"
+    "label": "Hyland LC5845 Lock Case"
   },
   "gallery": [
     {
       "src": "/images/products/lc5845-lock-case-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland LC5845 lock case, view 2"
+      "label": "Hyland LC5845 Lock Case, view 2"
     },
     {
       "src": "/images/products/lc5845-lock-case-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland LC5845 lock case, view 3"
+      "label": "Hyland LC5845 Lock Case, view 3"
+    },
+    {
+      "src": "/images/products/lc5845-lock-case-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LC5845 Lock Case, view 4"
+    },
+    {
+      "src": "/images/products/lc5845-lock-case-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LC5845 Lock Case, view 5"
     }
   ],
   "attachmentIds": [],
@@ -113,5 +123,19 @@
     "url": "https://stahlock.com/index.php?id=2415",
     "model": "LC5845",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/lc5845-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/lc5845-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "LC5845 Lock Case, demonstration still"
+      },
+      "label": "LC5845 Lock Case — product demonstration",
+      "durationSeconds": 34,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

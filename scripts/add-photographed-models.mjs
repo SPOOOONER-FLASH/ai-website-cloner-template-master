@@ -46,16 +46,62 @@ const WRITE = process.argv.includes("--write");
  * catalogue's own name for that family. Both are the client's classification.
  */
 const WANTED = [
-  { model: "069", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "9007E", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "9010E", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "9087 SS", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "LH1083", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "LH1083 SS", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "LH1085 SS", category: "stainless-steel-handles", sub: "stainless-steel-handles" },
-  { model: "DH02 AB", category: "grip-handle-sets", sub: "grip-handle-sets" },
-  { model: "DH02 PB", category: "grip-handle-sets", sub: "grip-handle-sets" },
+  { model: "069", category: "stainless-steel-handles" },
+  { model: "9007E", category: "stainless-steel-handles" },
+  { model: "9010E", category: "stainless-steel-handles" },
+  { model: "9087 SS", category: "stainless-steel-handles" },
+  { model: "LH1083", category: "stainless-steel-handles" },
+  { model: "LH1083 SS", category: "stainless-steel-handles" },
+  { model: "LH1085 SS", category: "stainless-steel-handles" },
+  { model: "DH02 AB", category: "grip-handle-sets" },
+  { model: "DH02 PB", category: "grip-handle-sets" },
 ];
+
+/**
+ * `--from <folder>` reads the wanted list off disk instead of the literal above.
+ *
+ * The literal was fine for nine models named in a chat message. The 2026-09-08 drop
+ * brought 115 folders across four categories with 49 unmatched, and transcribing 49 model
+ * numbers by hand is both tedious and exactly the kind of step that introduces a typo
+ * nobody catches until a page exists under a model number the factory never made.
+ *
+ * So a folder is the input: its name is the model, and the category comes from the map
+ * below, which is a translation of the client's own folder names into our slugs — not an
+ * inference about any individual product. A folder with no photographs in it is skipped,
+ * because a record with no image publishes nothing and only adds a row to the fill-in
+ * sheet.
+ */
+const CATEGORY_BY_FOLDER = {
+  "brass & steel door hinges": "brass-steel-hinges",
+  "lock cylinders": "lock-cylinders",
+  "door closers": "door-closers",
+  "lock cases": "lock-cases",
+  "stainless steel handles": "stainless-steel-handles",
+  "grip handle sets": "grip-handle-sets",
+  "night latches & rim locks": "night-latches-rim-locks",
+};
+
+const fromRoots = process.argv.flatMap((a, i) =>
+  a === "--from" && process.argv[i + 1] ? [process.argv[i + 1]] : [],
+);
+
+for (const root of fromRoots) {
+  const folder = root.split(/[/\\]/).filter(Boolean).pop() ?? "";
+  const category = CATEGORY_BY_FOLDER[folder.toLowerCase()];
+  if (!category) {
+    console.error(`× ${folder} 没有对应类目，跳过整个文件夹`);
+    continue;
+  }
+  for (const entry of readdirSync(root, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    /* A folder with no picture in it cannot produce a publishable record. */
+    const hasImage = readdirSync(join(root, entry.name), { recursive: true }).some((f) =>
+      /\.(jpe?g|png|webp)$/i.test(String(f)),
+    );
+    if (!hasImage) continue;
+    WANTED.push({ model: entry.name.trim(), category });
+  }
+}
 
 /**
  * The catalogue's display name for a family — the one MOST of its records use.
@@ -81,13 +127,27 @@ const products = readdirSync(DIR)
   .filter((f) => f.endsWith(".json"))
   .map((f) => JSON.parse(readFileSync(join(DIR, f), "utf8")));
 
-const known = new Set(products.map((p) => p.model.replace(/\s+/g, "").toUpperCase()));
+/**
+ * The same reduction import-client-product-photos.mjs matches on — case, separators and a
+ * trailing unit removed.
+ *
+ * It has to be the same reduction, or this script creates a record for a model the
+ * importer would have matched to an existing product, and the catalogue ends up carrying
+ * "LC02 85×40mm" and "LC02 85_40" as two products that are one product.
+ */
+const normalise = (s) =>
+  String(s ?? "")
+    .toUpperCase()
+    .replace(/[\s_\-×*]/g, "")
+    .replace(/MM$/, "");
+
+const known = new Set(products.map((p) => normalise(p.model)));
 
 const created = [];
 const refused = [];
 
 for (const want of WANTED) {
-  const key = want.model.replace(/\s+/g, "").toUpperCase();
+  const key = normalise(want.model);
   if (known.has(key)) {
     refused.push([want.model, "目录里已有这个型号"]);
     continue;

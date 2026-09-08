@@ -52,7 +52,31 @@ if (!roots.length) {
   process.exit(1);
 }
 
-const normalise = (s) => String(s ?? "").toUpperCase().replace(/[\s_-]/g, "");
+/**
+ * A model number reduced to its identity, with notation differences removed.
+ *
+ * Case, spaces, underscores and hyphens were always ignored. Two more classes of
+ * difference were added on 2026-09-08, when 60 of 115 folders in the lock-case and
+ * cylinder drop reported as "no product carries this model" and most of them were our own
+ * products under a different keyboard:
+ *
+ *   × * x  between two numbers  The client writes `LC02 85_40`, the catalogue carries
+ *                               `Lc02 85×40mm`, and an older record says `LC04 85*60`.
+ *                               All three name one lock case. The multiplication sign is
+ *                               punctuation between two dimensions, not part of the name.
+ *   a trailing MM               `85×40mm` and `85_40` are the same two numbers with the
+ *                               unit written once or not at all.
+ *
+ * This is still exact matching, not fuzzy: nothing is truncated, no prefix is guessed and
+ * no distance is computed. Two strings match only when they are the same characters once
+ * separators and a trailing unit are removed — `308` still does NOT become `308-D`, which
+ * is the mistake the whole script exists to prevent.
+ */
+const normalise = (s) =>
+  String(s ?? "")
+    .toUpperCase()
+    .replace(/[\s_\-×*]/g, "")
+    .replace(/MM$/, "");
 
 /* --------------------------------------------------------------- catalogue */
 

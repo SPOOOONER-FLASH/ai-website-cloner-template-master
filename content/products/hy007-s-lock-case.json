@@ -73,33 +73,53 @@
   "heroImage": {
     "src": "/images/products/hy007-s-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland HY007-S lock case"
+    "label": "Hyland HY007-S Lock Case"
   },
   "gallery": [
     {
       "src": "/images/products/hy007-s-lock-case-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland HY007-S lock case, view 2"
+      "label": "Hyland HY007-S Lock Case, view 2"
     },
     {
       "src": "/images/products/hy007-s-lock-case-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland HY007-S lock case, view 3"
+      "label": "Hyland HY007-S Lock Case, view 3"
     },
     {
       "src": "/images/products/hy007-s-lock-case-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland HY007-S lock case, view 4"
+      "label": "Hyland HY007-S Lock Case, view 4"
     },
     {
       "src": "/images/products/hy007-s-lock-case-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland HY007-S lock case, view 5"
+      "label": "Hyland HY007-S Lock Case, view 5"
+    },
+    {
+      "src": "/images/products/hy007-s-lock-case-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland HY007-S Lock Case, view 6"
     },
     {
       "src": "/images/products/hy007-s-lock-case-7.webp",
       "ratio": "1 / 1",
-      "label": "Hyland HY007-S lock case, view 7"
+      "label": "Hyland HY007-S Lock Case, view 7"
+    },
+    {
+      "src": "/images/products/hy007-s-lock-case-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland HY007-S Lock Case, view 8"
+    },
+    {
+      "src": "/images/products/hy007-s-lock-case-9.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland HY007-S Lock Case, view 9"
+    },
+    {
+      "src": "/images/products/hy007-s-lock-case-10.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland HY007-S Lock Case, view 10"
     }
   ],
   "attachmentIds": [],
@@ -171,5 +191,19 @@
     "url": "https://stahlock.com/index.php?id=2427",
     "model": "HY007-S",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/hy007-s-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/hy007-s-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "HY007-S Lock Case, demonstration still"
+      },
+      "label": "HY007-S Lock Case — product demonstration",
+      "durationSeconds": 45,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

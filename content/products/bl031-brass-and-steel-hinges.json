@@ -79,33 +79,38 @@
   "heroImage": {
     "src": "/images/products/bl031-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland BL031 brass and steel hinges"
+    "label": "Hyland BL031 Brass and Steel Hinges"
   },
   "gallery": [
     {
       "src": "/images/products/bl031-brass-and-steel-hinges-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL031 brass and steel hinges, view 2"
+      "label": "Hyland BL031 Brass and Steel Hinges, view 2"
     },
     {
       "src": "/images/products/bl031-brass-and-steel-hinges-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL031 brass and steel hinges, view 3"
+      "label": "Hyland BL031 Brass and Steel Hinges, view 3"
     },
     {
       "src": "/images/products/bl031-brass-and-steel-hinges-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL031 brass and steel hinges, view 4"
+      "label": "Hyland BL031 Brass and Steel Hinges, view 4"
     },
     {
       "src": "/images/products/bl031-brass-and-steel-hinges-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL031 brass and steel hinges, view 5"
+      "label": "Hyland BL031 Brass and Steel Hinges, view 5"
     },
     {
       "src": "/images/products/bl031-brass-and-steel-hinges-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL031 brass and steel hinges, view 6"
+      "label": "Hyland BL031 Brass and Steel Hinges, view 6"
+    },
+    {
+      "src": "/images/products/bl031-brass-and-steel-hinges-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland BL031 Brass and Steel Hinges, view 7"
     }
   ],
   "attachmentIds": [],
@@ -169,5 +174,19 @@
   ],
   "summaryEs": "Una bisagra de acero inoxidable 304.",
   "seoTitleEs": "BL031 Bisagras de latón y acero | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland BL031 bisagras de latón y acero en acero inoxidable 304. Acabados: Black, Silver, Bronze, Gold. Para puerta de madera. Fabricado en Guangdong, China."
+  "seoDescriptionEs": "Canton Hyland BL031 bisagras de latón y acero en acero inoxidable 304. Acabados: Black, Silver, Bronze, Gold. Para puerta de madera. Fabricado en Guangdong, China.",
+  "videos": [
+    {
+      "src": "/videos/products/bl031-brass-and-steel-hinges.mp4",
+      "poster": {
+        "src": "/images/products/bl031-brass-and-steel-hinges-video.webp",
+        "ratio": "16 / 9",
+        "label": "BL031 Brass and Steel Hinges, demonstration still"
+      },
+      "label": "BL031 Brass and Steel Hinges — product demonstration",
+      "durationSeconds": 46,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

@@ -39,7 +39,23 @@ test("Door Hinges is merged into Brass & Steel Door Hinges without losing produc
   const mergedProducts = products.filter(
     (product) => product.categoryPath[0] === "brass-steel-hinges",
   );
-  assert.equal(mergedProducts.length, 26);
+  /*
+    A floor, not a fixed count.
+
+    This asserted exactly 26 — the size of the family on the day the merge happened — and
+    on 2026-09-08 it failed at 29 because the client sent photographs for three more
+    hinges (AAH024, BL029, SSH021). Nothing was wrong; the catalogue had grown.
+
+    A frozen count does not express what this test is named after. "Without losing
+    products" means the family never shrinks below what the merge produced, and a
+    catalogue that gains a hinge should not have to edit an assertion to say so. What must
+    never happen is the number going DOWN, or products reappearing under the old slug —
+    both of which are still checked.
+  */
+  assert.ok(
+    mergedProducts.length >= 26,
+    `brass-steel-hinges holds ${mergedProducts.length}; the merge produced 26 and must never lose any`,
+  );
   assert.ok(mergedProducts.some((product) => product.slug === "f100-ss-door-hinge"));
   assert.ok(
     mergedProducts.some((product) => product.slug === "stainless-steel-door-hinge"),

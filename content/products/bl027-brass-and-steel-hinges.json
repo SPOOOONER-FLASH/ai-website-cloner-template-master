@@ -30,23 +30,33 @@
   "heroImage": {
     "src": "/images/products/bl027-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland BL027 brass and steel hinges"
+    "label": "Hyland BL027 Brass and Steel Hinges"
   },
   "gallery": [
     {
       "src": "/images/products/bl027-brass-and-steel-hinges-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL027 brass and steel hinges, view 2"
+      "label": "Hyland BL027 Brass and Steel Hinges, view 2"
     },
     {
       "src": "/images/products/bl027-brass-and-steel-hinges-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL027 brass and steel hinges, view 3"
+      "label": "Hyland BL027 Brass and Steel Hinges, view 3"
     },
     {
       "src": "/images/products/bl027-brass-and-steel-hinges-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland BL027 brass and steel hinges, view 4"
+      "label": "Hyland BL027 Brass and Steel Hinges, view 4"
+    },
+    {
+      "src": "/images/products/bl027-brass-and-steel-hinges-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland BL027 Brass and Steel Hinges, view 5"
+    },
+    {
+      "src": "/images/products/bl027-brass-and-steel-hinges-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland BL027 Brass and Steel Hinges, view 6"
     }
   ],
   "attachmentIds": [],
@@ -70,5 +80,19 @@
   ],
   "summaryEs": "Una bisagra de hierro.",
   "seoTitleEs": "BL027 Bisagras de latón y acero — Hierro | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland BL027 bisagras de latón y acero en hierro. Acabado BL. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland BL027 bisagras de latón y acero en hierro. Acabado BL. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [
+    {
+      "src": "/videos/products/bl027-brass-and-steel-hinges.mp4",
+      "poster": {
+        "src": "/images/products/bl027-brass-and-steel-hinges-video.webp",
+        "ratio": "16 / 9",
+        "label": "BL027 Brass and Steel Hinges, demonstration still"
+      },
+      "label": "BL027 Brass and Steel Hinges — product demonstration",
+      "durationSeconds": 13,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

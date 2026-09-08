@@ -28,9 +28,35 @@
   "heroImage": {
     "src": "/images/products/lc6860-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland Lc6860 lock case"
+    "label": "Hyland Lc6860 Lock Case"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/lc6860-lock-case-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland Lc6860 Lock Case, view 2"
+    },
+    {
+      "src": "/images/products/lc6860-lock-case-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland Lc6860 Lock Case, view 3"
+    },
+    {
+      "src": "/images/products/lc6860-lock-case-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland Lc6860 Lock Case, view 4"
+    },
+    {
+      "src": "/images/products/lc6860-lock-case-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland Lc6860 Lock Case, view 5"
+    },
+    {
+      "src": "/images/products/lc6860-lock-case-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland Lc6860 Lock Case, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "Lc6860 Lock Case — Lock Cases | Canton Hyland",
@@ -64,5 +90,19 @@
     "url": "https://stahlock.com/index.php?id=2054",
     "model": "Lc6860",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/lc6860-lock-case.mp4",
+      "poster": {
+        "src": "/images/products/lc6860-lock-case-video.webp",
+        "ratio": "16 / 9",
+        "label": "Lc6860 Lock Case, demonstration still"
+      },
+      "label": "Lc6860 Lock Case — product demonstration",
+      "durationSeconds": 30,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

@@ -62,13 +62,38 @@
   "heroImage": {
     "src": "/images/products/ssh016-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland SSH016 brass and steel hinges"
+    "label": "Hyland SSH016 Brass and Steel Hinges"
   },
   "gallery": [
     {
       "src": "/images/products/ssh016-brass-and-steel-hinges-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland SSH016 brass and steel hinges, view 2"
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 2"
+    },
+    {
+      "src": "/images/products/ssh016-brass-and-steel-hinges-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 3"
+    },
+    {
+      "src": "/images/products/ssh016-brass-and-steel-hinges-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 4"
+    },
+    {
+      "src": "/images/products/ssh016-brass-and-steel-hinges-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 5"
+    },
+    {
+      "src": "/images/products/ssh016-brass-and-steel-hinges-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 6"
+    },
+    {
+      "src": "/images/products/ssh016-brass-and-steel-hinges-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland SSH016 Brass and Steel Hinges, view 7"
     }
   ],
   "attachmentIds": [],
@@ -135,5 +160,19 @@
     "url": "https://stahlock.com/index.php?id=2397",
     "model": "SSH016",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/ssh016-brass-and-steel-hinges.mp4",
+      "poster": {
+        "src": "/images/products/ssh016-brass-and-steel-hinges-video.webp",
+        "ratio": "16 / 9",
+        "label": "SSH016 Brass and Steel Hinges, demonstration still"
+      },
+      "label": "SSH016 Brass and Steel Hinges — product demonstration",
+      "durationSeconds": 45,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

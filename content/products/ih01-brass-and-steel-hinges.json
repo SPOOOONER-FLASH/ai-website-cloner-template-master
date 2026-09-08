@@ -68,28 +68,33 @@
   "heroImage": {
     "src": "/images/products/ih01-brass-and-steel-hinges.webp",
     "ratio": "1 / 1",
-    "label": "Hyland IH01 brass and steel hinges"
+    "label": "Hyland IH01 Brass and Steel Hinges"
   },
   "gallery": [
     {
       "src": "/images/products/ih01-brass-and-steel-hinges-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland IH01 brass and steel hinges, view 2"
+      "label": "Hyland IH01 Brass and Steel Hinges, view 2"
     },
     {
       "src": "/images/products/ih01-brass-and-steel-hinges-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland IH01 brass and steel hinges, view 3"
+      "label": "Hyland IH01 Brass and Steel Hinges, view 3"
     },
     {
       "src": "/images/products/ih01-brass-and-steel-hinges-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland IH01 brass and steel hinges, view 4"
+      "label": "Hyland IH01 Brass and Steel Hinges, view 4"
     },
     {
       "src": "/images/products/ih01-brass-and-steel-hinges-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland IH01 brass and steel hinges, view 5"
+      "label": "Hyland IH01 Brass and Steel Hinges, view 5"
+    },
+    {
+      "src": "/images/products/ih01-brass-and-steel-hinges-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland IH01 Brass and Steel Hinges, view 6"
     }
   ],
   "attachmentIds": [],
@@ -155,5 +160,19 @@
     "url": "https://stahlock.com/index.php?id=2423",
     "model": "IH01",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "videos": [
+    {
+      "src": "/videos/products/ih01-brass-and-steel-hinges.mp4",
+      "poster": {
+        "src": "/images/products/ih01-brass-and-steel-hinges-video.webp",
+        "ratio": "16 / 9",
+        "label": "IH01 Brass and Steel Hinges, demonstration still"
+      },
+      "label": "IH01 Brass and Steel Hinges — product demonstration",
+      "durationSeconds": 46,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "description": ""
 }

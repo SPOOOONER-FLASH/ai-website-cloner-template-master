@@ -28,33 +28,13 @@
   "heroImage": {
     "src": "/images/products/47bsik-lock-cylinder.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 47BSIK lock cylinder"
+    "label": "Hyland 47BSIK Lock Cylinder"
   },
   "gallery": [
     {
       "src": "/images/products/47bsik-lock-cylinder-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 47BSIK lock cylinder, view 2"
-    },
-    {
-      "src": "/images/products/47bsik-lock-cylinder-3.webp",
-      "ratio": "1 / 1",
-      "label": "Hyland 47BSIK lock cylinder, view 3"
-    },
-    {
-      "src": "/images/products/47bsik-lock-cylinder-4.webp",
-      "ratio": "1 / 1",
-      "label": "Hyland 47BSIK lock cylinder, view 4"
-    },
-    {
-      "src": "/images/products/47bsik-lock-cylinder-5.webp",
-      "ratio": "1 / 1",
-      "label": "Hyland 47BSIK lock cylinder, view 5"
-    },
-    {
-      "src": "/images/products/47bsik-lock-cylinder-6.webp",
-      "ratio": "1 / 1",
-      "label": "Hyland 47BSIK lock cylinder, view 6"
+      "label": "Hyland 47BSIK Lock Cylinder, view 2"
     }
   ],
   "attachmentIds": [],
@@ -89,5 +69,6 @@
     "url": "https://stahlock.com/index.php?id=1997",
     "model": "47 BSIK",
     "fetchedAt": "2026-09-04"
-  }
+  },
+  "description": ""
 }

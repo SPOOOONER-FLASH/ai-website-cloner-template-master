@@ -1,0 +1,13 @@
+{
+  "kind": "client-selected-source-photo-edit",
+  "approvedUse": "Client asked to select from supplied images for Materials + Engineering, 2026-09-08",
+  "sources": [
+    {
+      "path": "docs/design-references/client-home-20260908/lc04-selection-original.png",
+      "sha256": "df424ffb4dcaf68fd4baf8429114524dfc56cee399fc589850941ba8c30a4cdf",
+      "catalogueSlug": "lc04-85-60-lock-case"
+    }
+  ],
+  "processing": "WebP encoding and responsive resizing only; no crop or generated edits during import.",
+  "limitation": "Client-supplied edited image. Not an untouched photograph, CAD model, dimension drawing or proof of installation compatibility."
+}
