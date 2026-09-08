@@ -145,9 +145,9 @@ export const hero3: HeroModuleContent = {
 export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "3 / 2",
-    src: "/images/editorial/hyde-real-cylinder-plate.webp",
-    label: "Fotografía original de un cilindro de cerradura",
+    ratio: "1 / 1",
+    src: "/images/editorial/hyde-client-lc04-selection.webp",
+    label: "Cerradura de embutir con cuatro pestillos, cerradero y caja de cerradero",
   },
   title: "Materiales + ingeniería",
   body: "La coordinación de acabados, la planificación de llaves maestras y la documentación de exportación apoyan cuadros de herrajes comerciales y residenciales en mercados internacionales.",
@@ -177,8 +177,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-hinge.webp",
-        label: "Fotografía original de bisagras de acero inoxidable",
+        src: "/images/editorial/hyde-client-black-hinge.webp",
+        label: "Bisagra negra con orificios de fijación alternados sobre fondo claro",
       },
       title: "Especifique con confianza",
       subtitle: "Respuestas sobre instalación, acabados, normas y plazos",

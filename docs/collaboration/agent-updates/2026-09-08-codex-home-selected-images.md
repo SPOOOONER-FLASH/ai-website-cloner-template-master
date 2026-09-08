@@ -1,0 +1,8 @@
+# Codex — two client-selected homepage images
+
+- EN/ES Materials + Engineering now uses the client's square LC04 four-bolt case / strike / strike-box image; Specify with confidence uses the supplied black hinge on a pale ground. Preserve full square compositions and existing links/copy. User explicitly requested immediate push without further review.
+- Originals: docs/design-references/client-home-20260908/. Reproduction: node scripts/import-client-home-20260908.mjs. Two canonical WebPs, four responsive derivatives, SHA-256 provenance sidecars, editorial config, EN/ES home data, pinned asset test and IMAGE_CREDITS updated. These client-selected edits are not described as untouched photography or dimensional CAD.
+- npm run check passed (1121 exported pages; no semantic errors or broken internal links/assets). Impeccable source detector passed. retain-previous-assets and predeploy freshness passed. Browser check not completed: old port 3017 was offline, local static server restarted; user then explicitly waived further review.
+- Release includes regenerated out/ and out-rayen/ incorporating currently committed catalogue changes. Cloudflare purge remains client-only. Server pull not independently verified in this step.
+- Separate scene-image jobs still pending; three traceable Blender models remain unfinished. New evidence: 9004S gallery view 6 gives the 10mm front-bar depth, and LC04 gallery view 2 dimensions the strike separately from the case; do not assume the strike's 300mm length is a published lock-faceplate length.
+- Other agents' unrelated source work and prior untracked image/model experiments remain untouched.

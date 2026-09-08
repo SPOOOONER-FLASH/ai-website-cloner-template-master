@@ -159,9 +159,9 @@ export const hero3: HeroModuleContent = {
 export const hero4: HeroModuleContent = {
   variant: "stacked",
   media: {
-    ratio: "3 / 2",
-    src: "/images/editorial/hyde-real-cylinder-plate.webp",
-    label: "Original catalogue photograph of a lock cylinder",
+    ratio: "1 / 1",
+    src: "/images/editorial/hyde-client-lc04-selection.webp",
+    label: "Four-bolt mortise lock case with strike plate and strike box",
   },
   title: "Materials + Engineering",
   body: "Finish coordination, master-key planning and export documentation support commercial and residential hardware schedules across international markets.",
@@ -192,8 +192,8 @@ export const teaser3: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-hinge.webp",
-        label: "Original catalogue photograph of stainless-steel hinges",
+        src: "/images/editorial/hyde-client-black-hinge.webp",
+        label: "Black door hinge with staggered fixing holes on a light background",
       },
       title: "Specify with confidence",
       subtitle: "Answers on installation, finishes, standards and lead times",

@@ -1,0 +1,13 @@
+{
+  "kind": "client-selected-source-photo-edit",
+  "approvedUse": "Client asked to select from supplied images for Specify with confidence, 2026-09-08",
+  "sources": [
+    {
+      "path": "docs/design-references/client-home-20260908/black-hinge-original.png",
+      "sha256": "076380f371a81484f956ca29ad5f9cbdf2b35f55a5f71f29dbb1d1f4b9d0acb3",
+      "catalogueSlug": "bl028-brass-and-steel-hinges"
+    }
+  ],
+  "processing": "WebP encoding and responsive resizing only; no crop or generated edits during import.",
+  "limitation": "Client-supplied edited image. Not an untouched photograph, CAD model, dimension drawing or proof of installation compatibility."
+}

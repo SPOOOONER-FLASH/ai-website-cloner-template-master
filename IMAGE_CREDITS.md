@@ -307,3 +307,6 @@ All 604×800, q=78. Transcribed into `src/data/company.ts`.
 
 No remaining product JPEGs in the supplied pack are unaccounted for. Contact avatars,
 video-platform material and the temporary Word lock file remain intentionally excluded.
+# Client-selected homepage edits — 2026-09-08
+
+`hyde-client-lc04-selection.webp` and `hyde-client-black-hinge.webp` were selected from the client's supplied images for Materials + Engineering and Specify with confidence, respectively, in English and Spanish. These are source-photo-based edited images, not untouched real photographs or dimensionally certified product models. The original PNGs are retained in `docs/design-references/client-home-20260908/`; each published asset has a SHA-256 provenance sidecar. `node scripts/import-client-home-20260908.mjs` reproduces WebP encoding and responsive sizes without changing the composition. This approval is specific to these two supplied images and does not approve the separate scene-generation drafts.

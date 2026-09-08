@@ -36,9 +36,9 @@ const expectedAssets = [
   "/images/editorial/hyde-real-lever-set-dark.webp",
   "/images/editorial/hyde-real-cylinder-dark.webp",
   "/images/editorial/hyde-real-product-atlas.webp",
-  "/images/editorial/hyde-real-cylinder-plate.webp",
+  "/images/editorial/hyde-client-lc04-selection.webp",
   "/images/editorial/hyde-hero-lockcase.webp",
-  "/images/editorial/hyde-hero-hinge.webp",
+  "/images/editorial/hyde-client-black-hinge.webp",
 ] as const;
 
 const approvedEditorialLibrary = ["product-range", "exhibition-wall"].flatMap((kind) =>
@@ -94,6 +94,9 @@ test("every new homepage source has responsive candidates and provenance", () =>
           two say "only the field was added"; this one says nothing was added at all.
         */
         "real-photograph-as-supplied",
+        // Explicitly selected by the client on 2026-09-08; derived image edits,
+        // not asserted to be untouched photographs or manufacturing geometry.
+        "client-selected-source-photo-edit",
       ].includes(provenance.kind),
       `${asset} claims provenance "${provenance.kind}", which is not a real-photograph kind`,
     );
