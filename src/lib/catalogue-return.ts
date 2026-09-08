@@ -31,13 +31,32 @@ function pathSegments(url: URL): string[] {
   return url.pathname.split("/").filter(Boolean);
 }
 
+/**
+ * The pages a product page is allowed to send the reader back to.
+ *
+ * A whitelist rather than "anything internal", because this value comes out of
+ * sessionStorage and ends up in `router.push`: a page that could write any path in there
+ * is a page that can be made to bounce a visitor somewhere they did not choose.
+ *
+ * `/configurator` was added on 2026-09-08 and its absence was a real defect, not an
+ * omission of principle. The configurator's results linked to product pages with a bare
+ * `next/link`, and even after that was fixed the state was still discarded here, so
+ * "← Back to previous results" fell through to its fallback: the category listing. A
+ * buyer who had answered five questions to narrow 520 models to three, opened one, and
+ * pressed back, arrived at a category containing everything — and had to answer the five
+ * questions again. The configurator keeps its answers in the query string, so once the
+ * URL is allowed through, the remembered link restores exactly those three results.
+ */
 function isCatalogueListingUrl(value: string): boolean {
   const url = internalUrl(value);
   if (!url) return false;
   const segments = pathSegments(url);
   return (
     (segments[0] === "product-finder" && segments.length === 1) ||
+    (segments[0] === "configurator" && segments.length === 1) ||
     (segments[0] === "products" && segments.length <= 2) ||
+    (segments[0] === "es" && segments[1] === "configurator" && segments.length === 2) ||
+    (segments[0] === "es" && segments[1] === "product-finder" && segments.length === 2) ||
     (segments[0] === "es" && segments[1] === "products" && segments.length <= 3)
   );
 }

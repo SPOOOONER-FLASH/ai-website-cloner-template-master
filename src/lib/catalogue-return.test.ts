@@ -99,3 +99,49 @@ test("invalid category state falls back to the first unfiltered page", () => {
     { active: "all", page: 1 },
   );
 });
+
+/*
+  The configurator is a listing too.
+
+  Added 2026-09-08 after the client reported that "back to previous results" from a
+  product page dropped them into the category listing instead of the configuration they
+  had built. Two things were wrong and both are now covered: the configurator's result
+  links did not record a return position (fixed in Configurator.tsx), and this module
+  rejected /configurator as a listing URL so the position was discarded even once it was
+  offered.
+
+  The Spanish mirror is asserted alongside the English one because that is exactly the
+  kind of pair where one gets fixed and the other is noticed months later by a buyer.
+*/
+test("a configuration is a place worth returning to, in both locales", () => {
+  for (const [listing, product] of [
+    [
+      "/configurator/?category=hardware-accessories&subCategory=door-stoppers&material=Stainless+Steel",
+      "/products/hardware-accessories/ds01-door-stopper/",
+    ],
+    [
+      "/es/configurator/?category=hardware-accessories&material=Stainless+Steel",
+      "/es/products/hardware-accessories/ds01-door-stopper/",
+    ],
+  ] as const) {
+    const storage = new MemoryStorage();
+    rememberCatalogueReturn(storage, { listingUrl: listing, productHref: product, scrollY: 620 });
+
+    const remembered = readCatalogueReturn(storage, product);
+    assert.ok(remembered, `${listing} should be remembered, not discarded`);
+    assert.equal(
+      remembered.listingUrl,
+      listing,
+      "the answers live in the query string — dropping it returns an empty configurator",
+    );
+    assert.equal(remembered.scrollY, 620);
+  }
+});
+
+test("the product finder is remembered in Spanish as well as English", () => {
+  const storage = new MemoryStorage();
+  const listing = "/es/product-finder/?category=deadbolts";
+  const product = "/es/products/deadbolts/d102-ac-deadbolts/";
+  rememberCatalogueReturn(storage, { listingUrl: listing, productHref: product, scrollY: 40 });
+  assert.equal(readCatalogueReturn(storage, product)?.listingUrl, listing);
+});

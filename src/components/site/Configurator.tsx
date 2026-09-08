@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CatalogueProductLink } from "./CatalogueNavigation";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MediaPlaceholder } from "./MediaPlaceholder";
@@ -463,7 +464,21 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                   className="config-option-in"
                   style={{ animationDelay: `${Math.min(index, 12) * 40}ms` }}
                 >
-                  <Link
+                  {/*
+                    CatalogueProductLink, not a bare Link.
+
+                    A bare Link records nothing, so the product page's "back to previous
+                    results" had no remembered position to return to and fell through to
+                    its fallback — the category listing. A buyer who had answered five
+                    questions to narrow 520 models down to three, opened one of them, and
+                    pressed back, landed in a category of everything and had to answer the
+                    five questions again.
+
+                    This link stores `pathname + search` before navigating, and the
+                    configurator keeps its answers in the query string, so the remembered
+                    URL restores the exact same three results.
+                  */}
+                  <CatalogueProductLink
                     href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                     className="config-result"
                   >
@@ -485,7 +500,7 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
                       </span>
                       <span className="config-option-count">{t.seeProduct} ›</span>
                     </span>
-                  </Link>
+                  </CatalogueProductLink>
                 </li>
               ))}
             </ul>
