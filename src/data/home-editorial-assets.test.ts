@@ -24,9 +24,17 @@ const editorialConfig = JSON.parse(
   six images the homepage is supposed to carry, so an image quietly disappearing from
   home.ts fails here instead of leaving a gap on the page.
 */
+/*
+  Updated again 2026-09-07. The client supplied two of their own photographs on a dark
+  ground — a complete lever lockset and a euro cylinder with its keys — and asked for them
+  in the "Source by range or by project" cards, replacing the two graded plates that were
+  there. Those two are published byte-for-byte: nothing composed, nothing regraded, no
+  field added. `hyde-hero-lever` and `hyde-hero-cylinder` are still in the menu drawer via
+  menu-experience.ts and were deliberately left alone; only the homepage cards changed.
+*/
 const expectedAssets = [
-  "/images/editorial/hyde-hero-lever.webp",
-  "/images/editorial/hyde-hero-cylinder.webp",
+  "/images/editorial/hyde-real-lever-set-dark.webp",
+  "/images/editorial/hyde-real-cylinder-dark.webp",
   "/images/editorial/hyde-real-product-atlas.webp",
   "/images/editorial/hyde-real-cylinder-plate.webp",
   "/images/editorial/hyde-hero-lockcase.webp",
@@ -77,9 +85,16 @@ test("every new homepage source has responsive candidates and provenance", () =>
       product pixels are the client's own photograph and only the field was added.
     */
     assert.ok(
-      ["real-photograph-composition", "real-photograph-on-editorial-field"].includes(
-        provenance.kind,
-      ),
+      [
+        "real-photograph-composition",
+        "real-photograph-on-editorial-field",
+        /*
+          Added 2026-09-07 and the strongest of the three: the client's own file,
+          published byte-for-byte, with no crop, resize, regrade or added field. The other
+          two say "only the field was added"; this one says nothing was added at all.
+        */
+        "real-photograph-as-supplied",
+      ].includes(provenance.kind),
       `${asset} claims provenance "${provenance.kind}", which is not a real-photograph kind`,
     );
     assert.ok(provenance.sources.length > 0);

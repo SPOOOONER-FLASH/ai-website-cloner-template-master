@@ -1,76 +1,4 @@
 {
-  "/images/editorial/hyde-real-product-atlas.webp": {
-    "sourceWidth": 1800,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-real-lever-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-hinge-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-pull-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-control-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-lock-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-panic-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-cylinder-plate.webp": {
-    "sourceWidth": 1200,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-real-application-detail.webp": {
-    "sourceWidth": 1000,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/argentina-ar4-entry.webp": {
-    "sourceWidth": 1672,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
   "/images/editorial/architecture-boutique-hotel.webp": {
     "sourceWidth": 1800,
     "variants": [
@@ -81,6 +9,14 @@
   },
   "/images/editorial/architecture-coastal-residence.webp": {
     "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/argentina-ar4-entry.webp": {
+    "sourceWidth": 1672,
     "variants": [
       480,
       960,
@@ -335,6 +271,54 @@
       1200
     ]
   },
+  "/images/editorial/hyde-hero-cylinder.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-hinge.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-knob.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-lever.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-lockcase.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-hero-panic.webp": {
+    "sourceWidth": 1600,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
   "/images/editorial/hyde-installation-faq-2026.webp": {
     "sourceWidth": 1254,
     "variants": [
@@ -365,6 +349,86 @@
       480,
       960,
       1440
+    ]
+  },
+  "/images/editorial/hyde-real-application-detail.webp": {
+    "sourceWidth": 1000,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-control-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-cylinder-dark.webp": {
+    "sourceWidth": 1254,
+    "variants": [
+      400,
+      800,
+      1200
+    ]
+  },
+  "/images/editorial/hyde-real-cylinder-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-hinge-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-lever-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-lever-set-dark.webp": {
+    "sourceWidth": 1254,
+    "variants": [
+      400,
+      800,
+      1200
+    ]
+  },
+  "/images/editorial/hyde-real-lock-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-panic-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-real-product-atlas.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/hyde-real-pull-plate.webp": {
+    "sourceWidth": 1200,
+    "variants": [
+      480,
+      960
     ]
   },
   "/images/editorial/hyde-source-by-project-2026.webp": {
@@ -415,20 +479,20 @@
       1200
     ]
   },
-  "/images/editorial/news-door-schedule-doors.webp": {
-    "sourceWidth": 2400,
-    "variants": [
-      480,
-      800,
-      1600
-    ]
-  },
   "/images/editorial/news-aluminium-door-lock-sag-2026.webp": {
     "sourceWidth": 1536,
     "variants": [
       480,
       960,
       1440
+    ]
+  },
+  "/images/editorial/news-door-schedule-doors.webp": {
+    "sourceWidth": 2400,
+    "variants": [
+      480,
+      800,
+      1600
     ]
   },
   "/images/editorial/news-exit-device-standards-2026.webp": {
@@ -481,54 +545,6 @@
   },
   "/images/editorial/project-hospitality-residential.webp": {
     "sourceWidth": 1800,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-lever.webp": {
-    "sourceWidth": 1600,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-hinge.webp": {
-    "sourceWidth": 1600,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-cylinder.webp": {
-    "sourceWidth": 1600,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-panic.webp": {
-    "sourceWidth": 1600,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-knob.webp": {
-    "sourceWidth": 1600,
-    "variants": [
-      480,
-      960,
-      1440
-    ]
-  },
-  "/images/editorial/hyde-hero-lockcase.webp": {
-    "sourceWidth": 1600,
     "variants": [
       480,
       960,

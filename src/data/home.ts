@@ -75,8 +75,9 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-lever.webp",
-        label: "Hyland 9001 stainless-steel lever handle and escutcheon on a graded studio field",
+        src: "/images/editorial/hyde-real-lever-set-dark.webp",
+        label:
+          "A complete tubular lever lockset laid out on a dark ground: two levers on roses with the spindle and mechanism visible, the tubular latch, the strike box, the strike plate and three fixing screws — every part in one finish",
       },
       title: "For distributors",
       subtitle: "Order from the Canton Hyland export catalogue",
@@ -85,8 +86,9 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-cylinder.webp",
-        label: "Hyland 70SN euro-profile cylinder with three keys and fixing screw",
+        src: "/images/editorial/hyde-real-cylinder-dark.webp",
+        label:
+          "A euro-profile cylinder with a thumbturn photographed on a dark ground beside its fixing screw and three keys — the screw passes through the cam, the point a cylinder's two halves are measured from",
       },
       title: "For specifiers",
       subtitle: "Build a hardware schedule with our export engineers",

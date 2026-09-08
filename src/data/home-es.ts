@@ -62,8 +62,9 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-lever.webp",
-        label: "Fotografía original de una manija de acero inoxidable",
+        src: "/images/editorial/hyde-real-lever-set-dark.webp",
+        label:
+          "Juego completo de cerradura tubular de manilla sobre fondo oscuro: dos manillas sobre roseta con el cuadradillo y el mecanismo a la vista, el picaporte tubular, el cerradero, la placa y tres tornillos de fijación — todas las piezas en un mismo acabado",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
@@ -72,8 +73,9 @@ export const teaser1: PageTeaserContent = {
     {
       media: {
         ratio: "1 / 1",
-        src: "/images/editorial/hyde-hero-cylinder.webp",
-        label: "Fotografía original de un mecanismo de cerradura de empuje y tracción",
+        src: "/images/editorial/hyde-real-cylinder-dark.webp",
+        label:
+          "Cilindro de perfil europeo con pomo fotografiado sobre fondo oscuro junto a su tornillo de fijación y tres llaves — el tornillo atraviesa la leva, el punto desde el que se miden las dos mitades del cilindro",
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
