@@ -1,0 +1,85 @@
+{
+  "model": "592 BSET",
+  "slug": "592-bset-tubular-lock",
+  "name": "Tubular Lock",
+  "series": "Tubular Lock",
+  "categoryPath": [
+    "knob-locks",
+    "tubular-locks"
+  ],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Brass or Stainless Steel"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel chassis and latch case, zinc plated"
+    },
+    {
+      "label": "Trim",
+      "value": "Wrought stainless steel or brass"
+    },
+    {
+      "label": "Strike",
+      "value": "57mm curved lip standard; 70mm available on request"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Application",
+      "value": "Residential use"
+    },
+    {
+      "label": "Finish",
+      "value": "Satin Brass"
+    },
+    {
+      "label": "Function",
+      "value": "Entrance — keyed outside"
+    }
+  ],
+  "material": "Brass Or Stainless Steel",
+  "finishes": [
+    "BS"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "",
+    "ratio": "1 / 1",
+    "label": "Hyland 592 BSET Tubular Lock"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "592 BSET Tubular Lock — Knob Locks | Canton Hyland",
+  "seoDescription": "Canton Hyland 592 BSET tubular lock in Brass Or Stainless Steel. Tubular Lock in satin brass, entrance function. Available in BS finish. Made in Guangdong, China.",
+  "nameEs": "Cerraduras de pomo",
+  "summary": "Tubular Lock in satin brass, entrance function.",
+  "seoTitleEs": "592 BSET Cerraduras de pomo | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland 592 BSET cerraduras de pomo. Acabado BS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "videos": [],
+  "derivedFrom": {
+    "model": "592 ABET",
+    "slug": "592-abet-tubular-lock",
+    "finishFrom": "client-confirmed 2026-09-08",
+    "functionFrom": "suffix ET",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

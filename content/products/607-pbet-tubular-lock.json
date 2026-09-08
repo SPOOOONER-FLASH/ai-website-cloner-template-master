@@ -175,5 +175,18 @@
     "model": "607 PBET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/607-pbet-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/607-pbet-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "607 PBET Tubular Lock, demonstration still"
+      },
+      "label": "607 PBET Tubular Lock — product demonstration",
+      "durationSeconds": 12,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

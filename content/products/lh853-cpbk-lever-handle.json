@@ -1,0 +1,110 @@
+{
+  "model": "LH853 CPBK",
+  "slug": "lh853-cpbk-lever-handle",
+  "name": "Lever Handle",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "summary": "Lever Handle in chrome plated, privacy function.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc alloy"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm"
+    },
+    {
+      "label": "Door thickness",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Cycle life",
+      "value": "200,000 cycles"
+    },
+    {
+      "label": "Chassis",
+      "value": "Solid steel, zinc plated for corrosion resistance"
+    },
+    {
+      "label": "Trim",
+      "value": "Zinc die-casting electro-plated or solid brass"
+    },
+    {
+      "label": "Handing",
+      "value": "Fully reversible, left or right hand"
+    },
+    {
+      "label": "Function",
+      "value": "Privacy — bathroom, turn button inside"
+    },
+    {
+      "label": "Keying",
+      "value": "Can be keyed alike with deadbolts, or master keyed"
+    },
+    {
+      "label": "Finish",
+      "value": "Chrome Plated"
+    },
+    {
+      "label": "Application",
+      "value": "For entrance doors"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "CP"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/lh853-cpbk-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland LH853 CPBK Lever Handle"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "LH853 CPBK Lever Handle — Zinc Alloy | Canton Hyland",
+  "seoDescription": "Canton Hyland LH853 CPBK lever handle in Zinc Alloy. Lever Handle in chrome plated, privacy function. Available in CP finish. Made in Guangdong, China.",
+  "nameEs": "Manijas de palanca",
+  "seoTitleEs": "LH853 CPBK Manijas de palanca — Zamak | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland LH853 CPBK manijas de palanca en zamak. Acabado CP. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "summarySource": "https://stahlock.com/index.php?id=1980",
+  "features": [
+    "Economical and easy to install, ideal for residential use",
+    "Key or thumb-turn locks/unlocks both knobs",
+    "Turn thumb-turn counterclockwise or key clockwise to lock; reverse to unlock",
+    "Zinc-plated steel chassis and latch for corrosion resistance",
+    "Exposed trim available in stainless steel or brass"
+  ],
+  "featuresSource": {
+    "site": "stahlock.com",
+    "url": "https://stahlock.com/index.php?id=1980",
+    "model": "LH853 SNET",
+    "fetchedAt": "2026-09-04"
+  },
+  "videos": [
+    {
+      "src": "/videos/products/lh853-cpbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh853-cpbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH853 CPBK Lever Handle, demonstration still"
+      },
+      "label": "LH853 CPBK Lever Handle — product demonstration",
+      "durationSeconds": 31,
+      "uploadDate": "2026-09-08"
+    }
+  ],
+  "derivedFrom": {
+    "model": "LH853 SNBK",
+    "slug": "lh853-snbk-lever-handle",
+    "finishFrom": "client-confirmed 2026-09-08",
+    "functionFrom": "suffix BK",
+    "createdAt": "2026-09-07",
+    "script": "scripts/add-finish-variants.mjs"
+  }
+}

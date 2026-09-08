@@ -158,5 +158,18 @@
     "model": "592 SSET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/592-sset-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/592-sset-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "592 SSET Tubular Lock, demonstration still"
+      },
+      "label": "592 SSET Tubular Lock — product demonstration",
+      "durationSeconds": 25,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

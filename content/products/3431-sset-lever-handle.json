@@ -55,11 +55,32 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/3431-sset-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland 3431 SSET Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/3431-sset-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 3431 SSET Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/3431-sset-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 3431 SSET Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/3431-sset-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 3431 SSET Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/3431-sset-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 3431 SSET Lever Handle, view 5"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "3431 SSET Lever Handle — Zinc Alloy | Canton Hyland",
@@ -68,7 +89,19 @@
   "seoTitleEs": "3431 SSET Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 3431 SSET manijas de palanca en zamak. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "summary": "Lever Handle in satin stainless steel (us32d), entrance function.",
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/3431-sset-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/3431-sset-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "3431 SSET Lever Handle, demonstration still"
+      },
+      "label": "3431 SSET Lever Handle — product demonstration",
+      "durationSeconds": 28,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "3431 SNET",
     "slug": "3431-snet-lever-handle",

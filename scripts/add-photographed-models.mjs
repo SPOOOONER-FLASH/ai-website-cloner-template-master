@@ -71,6 +71,9 @@ const WANTED = [
  * because a record with no image publishes nothing and only adds a row to the fill-in
  * sheet.
  */
+/** The client's structural folder names — never a model number. */
+const STRUCTURAL_FOLDERS = new Set(["图库", "视频", "主图", "gallery", "video", "videos"]);
+
 const CATEGORY_BY_FOLDER = {
   "brass & steel door hinges": "brass-steel-hinges",
   "lock cylinders": "lock-cylinders",
@@ -79,6 +82,15 @@ const CATEGORY_BY_FOLDER = {
   "stainless steel handles": "stainless-steel-handles",
   "grip handle sets": "grip-handle-sets",
   "night latches & rim locks": "night-latches-rim-locks",
+  /* The 2026-09-08 full-catalogue drop added the remaining families. */
+  "door hinge": "brass-steel-hinges",
+  deadbolts: "deadbolts",
+  "lever handles": "lever-handles",
+  "panic exit devices": "panic-exit-devices",
+  "tubular locks": "knob-locks",
+  "heavy duty cylindrical locks": "knob-locks",
+  "light duty cylindrical locks": "knob-locks",
+  "commercial locks": "knob-locks",
 };
 
 const fromRoots = process.argv.flatMap((a, i) =>
@@ -94,6 +106,17 @@ for (const root of fromRoots) {
   }
   for (const entry of readdirSync(root, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
+    /*
+      Skip the client's own structural folder names.
+
+      Most category archives are `<category>/<model>/主图.jpg`, but a single-product one
+      is `<category>/主图.jpg` + `图库/` + `视频/` — and scanning that as a container of
+      models yields "图库" and "视频" as model numbers. The image check below does not
+      catch it, because 图库 is precisely the folder that is full of images. On 2026-09-08
+      that shipped a product record whose model was the Chinese word for "gallery", with
+      the slug `-brass-and-steel-hinges`.
+    */
+    if (STRUCTURAL_FOLDERS.has(entry.name.trim())) continue;
     /* A folder with no picture in it cannot produce a publishable record. */
     const hasImage = readdirSync(join(root, entry.name), { recursive: true }).some((f) =>
       /\.(jpe?g|png|webp)$/i.test(String(f)),
@@ -205,7 +228,24 @@ for (const want of WANTED) {
     seoTitle: "",
     seoDescription: "",
   };
-  delete record.heroImage;
+  /*
+    A photography-pending hero, NOT a deleted key.
+
+    `ImageRef.src` is optional by design and MediaPlaceholder renders a labelled block at
+    the right aspect ratio when it is absent — that is the mechanism this catalogue
+    already uses for 80 records awaiting photographs, and `isPublished()` reads
+    `heroImage?.src`, so an empty hero still counts as unpublished.
+
+    Deleting the key instead broke that design on 2026-09-08. Seven records shipped with
+    no `heroImage` at all, `applyImageAltOverride` read `.src` off undefined, and the
+    production build failed while collecting `/es/certifications` — a route with no
+    product photograph on it, which is what made the message so hard to read back to its
+    cause. Matching the established shape costs two lines and cannot do that.
+  */
+  record.heroImage = {
+    ratio: "1 / 1",
+    label: `Hyland ${want.model} ${name.toLowerCase()}`,
+  };
   delete record.drawing;
   delete record.specsEs;
   delete record.summaryEs;

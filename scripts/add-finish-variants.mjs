@@ -60,6 +60,45 @@ import { join } from "node:path";
 const WRITE = process.argv.includes("--write");
 const DIR = "content/products";
 
+/**
+ * Finish codes the client named directly, because the catalogue could not.
+ *
+ * ---------------------------------------------------------------------------
+ * THIS IS A HIGHER TIER THAN PRECEDENT, NOT A LOWER ONE
+ *
+ * The three tiers below it read the catalogue and infer. This one does not infer: the
+ * client answered the question on 2026-09-08, in these words — "MB matt black, 黑色。CP
+ * chrome, 亮光。BS satin brass, 铜砂光". A supplier telling you what their own finish code
+ * means is better evidence than thirteen records agreeing, which is why the refusal
+ * existed in the first place. It was never "these codes are unknowable"; it was "nobody
+ * here is entitled to name them".
+ *
+ * It sits after the sibling and precedent lookups anyway, so an existing published
+ * phrasing always wins. Changing what a live product page says about its own finish is a
+ * different act from naming a code that had no name, and this script is only licensed for
+ * the second.
+ *
+ * ---------------------------------------------------------------------------
+ * TWO THINGS THE ANSWER SETTLED, BEYOND THE NAMES
+ *
+ * CP is the bright one. `SC` is already published as "Satin Chrome", so the pair is
+ * polished/satin rather than two unrelated platings — the client's 亮光 is what fixes
+ * that, and `Chrome Plated` is kept as the wording because product pages already use it.
+ *
+ * BS and SB are the same finish under two codes. `SB: "Satin Brass"` is in the trade-name
+ * table in src/lib/configurator.ts and `BS` is what the September folders are named with.
+ * Both are recorded here so neither spelling silently fails to resolve; see the note in
+ * docs/collaboration/2026-09-08-finish-codes.md, because two codes for one finish is a
+ * data question for the factory, not something to quietly normalise away.
+ */
+const CLIENT_CONFIRMED_ON = "2026-09-08";
+const CLIENT_CONFIRMED = {
+  MB: "Matt Black",
+  CP: "Chrome Plated",
+  BS: "Satin Brass",
+  SB: "Satin Brass",
+};
+
 /** Verified against the 587, LH852 and 607 families — see the header. */
 const FUNCTION_BY_SUFFIX = {
   ET: "Entrance — keyed outside",
@@ -160,6 +199,10 @@ for (const wanted of WANTED) {
   } else {
     const p = precedent(q.finish);
     if (p) { finishValue = p.value; finishSource = `${p.records} records use ${q.finish}`; }
+    else if (CLIENT_CONFIRMED[q.finish]) {
+      finishValue = CLIENT_CONFIRMED[q.finish];
+      finishSource = `client-confirmed ${CLIENT_CONFIRMED_ON}`;
+    }
   }
   if (!finishValue) {
     refused.push([wanted, `表面处理代码 ${q.finish} 在目录里零先例——不能替它命名`]);

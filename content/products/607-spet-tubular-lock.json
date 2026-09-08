@@ -182,5 +182,18 @@
     "model": "607 SPET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/607-spet-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/607-spet-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "607 SPET Tubular Lock, demonstration still"
+      },
+      "label": "607 SPET Tubular Lock — product demonstration",
+      "durationSeconds": 35,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

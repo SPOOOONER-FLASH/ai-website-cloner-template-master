@@ -161,5 +161,18 @@
     "model": "808 SNET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/808-snet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/808-snet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "808 SNET Lever Handle, demonstration still"
+      },
+      "label": "808 SNET Lever Handle — product demonstration",
+      "durationSeconds": 38,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

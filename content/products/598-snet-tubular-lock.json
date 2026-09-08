@@ -77,7 +77,19 @@
   "summary": "Tubular Lock in satin nickel, entrance function.",
   "seoTitleEs": "598 SNET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 598 SNET cerraduras de pomo en acero inoxidable. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/598-snet-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/598-snet-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "598 SNET Tubular Lock, demonstration still"
+      },
+      "label": "598 SNET Tubular Lock — product demonstration",
+      "durationSeconds": 22,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "598",
     "slug": "598-tubular-lock",

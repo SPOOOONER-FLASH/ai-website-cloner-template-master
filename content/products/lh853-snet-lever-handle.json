@@ -157,5 +157,18 @@
     "model": "LH853 SNET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/lh853-snet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh853-snet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH853 SNET Lever Handle, demonstration still"
+      },
+      "label": "LH853 SNET Lever Handle — product demonstration",
+      "durationSeconds": 45,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

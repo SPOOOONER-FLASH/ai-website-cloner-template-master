@@ -159,5 +159,18 @@
     "model": "595 ACET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/595-acet-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/595-acet-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "595 ACET Tubular Lock, demonstration still"
+      },
+      "label": "595 ACET Tubular Lock — product demonstration",
+      "durationSeconds": 34,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

@@ -141,6 +141,15 @@ const FINISH_NAMES: Record<string, string> = {
   SC: "Satin Chrome",
   CP: "Chrome Plated",
   SB: "Satin Brass",
+  /*
+    Same finish, second code. The client names it BS (2026-09-08: "BS, satin brass,
+    铜砂光") and the September product folders are spelled that way, while the catalogue's
+    own records use SB. Both resolve, because a buyer reading a bare "BS" in the finish
+    step learns nothing — and picking one spelling to be correct would leave the other
+    silently unexpanded. Whether the factory should retire one of the two is a question
+    for them; see docs/collaboration/2026-09-08-finish-codes.md.
+  */
+  BS: "Satin Brass",
   SP: "Bright Polished",
   BN: "Black Nickel",
   MB: "Matt Black",

@@ -233,5 +233,18 @@
     "model": "EH02",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/eh02-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/eh02-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "EH02 Lever Handle, demonstration still"
+      },
+      "label": "EH02 Lever Handle — product demonstration",
+      "durationSeconds": 26,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

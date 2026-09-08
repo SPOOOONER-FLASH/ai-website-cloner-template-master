@@ -158,5 +158,18 @@
     "model": "816 PBET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/816-pbet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/816-pbet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "816 PBET Lever Handle, demonstration still"
+      },
+      "label": "816 PBET Lever Handle — product demonstration",
+      "durationSeconds": 23,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

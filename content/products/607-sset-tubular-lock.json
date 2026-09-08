@@ -190,5 +190,18 @@
     "model": "607 SSET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/607-sset-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/607-sset-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "607 SSET Tubular Lock, demonstration still"
+      },
+      "label": "607 SSET Tubular Lock — product demonstration",
+      "durationSeconds": 21,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

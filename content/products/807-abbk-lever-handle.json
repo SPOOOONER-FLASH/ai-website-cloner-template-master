@@ -59,11 +59,37 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/807-abbk-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland 807 ABBK Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/807-abbk-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 807 ABBK Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/807-abbk-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 807 ABBK Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/807-abbk-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 807 ABBK Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/807-abbk-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 807 ABBK Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/807-abbk-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 807 ABBK Lever Handle, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "807 ABBK Lever Handle — Zinc Alloy | Canton Hyland",
@@ -84,7 +110,19 @@
     "model": "807 ABET",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/807-abbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/807-abbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "807 ABBK Lever Handle, demonstration still"
+      },
+      "label": "807 ABBK Lever Handle — product demonstration",
+      "durationSeconds": 38,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "807 ABET",
     "slug": "807-abet-lever-handle",

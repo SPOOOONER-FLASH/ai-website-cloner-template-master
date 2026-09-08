@@ -185,5 +185,18 @@
     "model": "LH852 BNBK",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/lh852-bnbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh852-bnbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH852 BNBK Lever Handle, demonstration still"
+      },
+      "label": "LH852 BNBK Lever Handle — product demonstration",
+      "durationSeconds": 32,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

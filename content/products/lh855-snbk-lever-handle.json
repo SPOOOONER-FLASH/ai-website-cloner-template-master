@@ -156,5 +156,18 @@
     "model": "LH855 SNBK",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/lh855-snbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh855-snbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH855 SNBK Lever Handle, demonstration still"
+      },
+      "label": "LH855 SNBK Lever Handle — product demonstration",
+      "durationSeconds": 15,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

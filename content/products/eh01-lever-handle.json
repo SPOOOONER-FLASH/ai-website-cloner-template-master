@@ -248,5 +248,18 @@
     "model": "EH01",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/eh01-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/eh01-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "EH01 Lever Handle, demonstration still"
+      },
+      "label": "EH01 Lever Handle — product demonstration",
+      "durationSeconds": 26,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

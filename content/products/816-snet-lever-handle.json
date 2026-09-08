@@ -148,5 +148,18 @@
     "model": "816 SNET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/816-snet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/816-snet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "816 SNET Lever Handle, demonstration still"
+      },
+      "label": "816 SNET Lever Handle — product demonstration",
+      "durationSeconds": 23,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

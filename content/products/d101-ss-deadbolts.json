@@ -178,5 +178,18 @@
     "model": "D101 SS",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/d101-ss-deadbolts.mp4",
+      "poster": {
+        "src": "/images/products/d101-ss-deadbolts-video.webp",
+        "ratio": "16 / 9",
+        "label": "D101 SS Deadbolts, demonstration still"
+      },
+      "label": "D101 SS Deadbolts — product demonstration",
+      "durationSeconds": 24,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

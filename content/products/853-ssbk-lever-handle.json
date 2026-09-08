@@ -55,11 +55,32 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/853-ssbk-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland 853 SSBK Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/853-ssbk-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 853 SSBK Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/853-ssbk-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 853 SSBK Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/853-ssbk-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 853 SSBK Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/853-ssbk-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 853 SSBK Lever Handle, view 5"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "853 SSBK Lever Handle — Zinc Alloy | Canton Hyland",
@@ -81,7 +102,19 @@
     "model": "853 SNBK",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/853-ssbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/853-ssbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "853 SSBK Lever Handle, demonstration still"
+      },
+      "label": "853 SSBK Lever Handle — product demonstration",
+      "durationSeconds": 19,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "853 SNBK",
     "slug": "853-snbk-lever-handle",

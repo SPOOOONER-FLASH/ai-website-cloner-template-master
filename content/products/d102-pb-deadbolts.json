@@ -63,11 +63,22 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/d102-pb-deadbolts.webp",
     "ratio": "1 / 1",
     "label": "Hyland D102 PB Deadbolts"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/d102-pb-deadbolts-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D102 PB Deadbolts, view 2"
+    },
+    {
+      "src": "/images/products/d102-pb-deadbolts-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland D102 PB Deadbolts, view 3"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "D102 PB Deadbolts | Canton Hyland",

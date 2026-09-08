@@ -149,5 +149,18 @@
     "model": "812 SSET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/812-sset-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/812-sset-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "812 SSET Lever Handle, demonstration still"
+      },
+      "label": "812 SSET Lever Handle — product demonstration",
+      "durationSeconds": 30,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

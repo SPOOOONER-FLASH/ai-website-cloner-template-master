@@ -154,5 +154,18 @@
     "model": "595 ACBK",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/595-acbk-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/595-acbk-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "595 ACBK Tubular Lock, demonstration still"
+      },
+      "label": "595 ACBK Tubular Lock — product demonstration",
+      "durationSeconds": 18,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

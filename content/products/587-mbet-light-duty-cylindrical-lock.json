@@ -181,5 +181,18 @@
     "model": "587 MBET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/587-mbet-light-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/587-mbet-light-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "587 MBET Light Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "587 MBET Light Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 36,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

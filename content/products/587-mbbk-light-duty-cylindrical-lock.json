@@ -64,11 +64,32 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/587-mbbk-light-duty-cylindrical-lock.webp",
     "ratio": "1 / 1",
     "label": "Hyland 587 MBBK Light Duty Cylindrical Lock"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/587-mbbk-light-duty-cylindrical-lock-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 587 MBBK Light Duty Cylindrical Lock, view 2"
+    },
+    {
+      "src": "/images/products/587-mbbk-light-duty-cylindrical-lock-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 587 MBBK Light Duty Cylindrical Lock, view 3"
+    },
+    {
+      "src": "/images/products/587-mbbk-light-duty-cylindrical-lock-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 587 MBBK Light Duty Cylindrical Lock, view 4"
+    },
+    {
+      "src": "/images/products/587-mbbk-light-duty-cylindrical-lock-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 587 MBBK Light Duty Cylindrical Lock, view 5"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "587 MBBK Light Duty Cylindrical Lock | Canton Hyland",
@@ -100,7 +121,19 @@
     "model": "587 MBET",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/587-mbbk-light-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/587-mbbk-light-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "587 MBBK Light Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "587 MBBK Light Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 21,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "587 MBET",
     "slug": "587-mbet-light-duty-cylindrical-lock",

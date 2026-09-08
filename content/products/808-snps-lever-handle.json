@@ -63,11 +63,27 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/808-snps-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland 808 SNPS Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/808-snps-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 808 SNPS Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/808-snps-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 808 SNPS Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/808-snps-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 808 SNPS Lever Handle, view 4"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "808 SNPS Lever Handle — Zinc Alloy | Canton Hyland",

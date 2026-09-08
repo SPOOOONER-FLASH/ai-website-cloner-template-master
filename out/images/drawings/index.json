@@ -134,6 +134,11 @@
   "note": "Door preparation: backset 60mm, door thickness 35mm.",
   "partial": false
  },
+ "592-bset-tubular-lock": {
+  "shape": "doorPrep",
+  "note": "Door preparation: backset 60mm, door thickness 35mm.",
+  "partial": false
+ },
  "592-pbbk-tubular-lock": {
   "shape": "doorPrep",
   "note": "Door preparation: backset 60mm, door thickness 35mm.",
@@ -334,6 +339,16 @@
   "note": "Backset 60mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true
  },
+ "70900-mbbk-grip-handle-set": {
+  "shape": "boltDetail",
+  "note": "Backset 60mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
+  "partial": true
+ },
+ "70900-mbet-grip-handle-set": {
+  "shape": "boltDetail",
+  "note": "Backset 60mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
+  "partial": true
+ },
  "bh33-bathroom-accessories": {
   "shape": "grabRail",
   "note": "Length 450mm, projection 200mm from the wall, tube Ø12mm, height 110mm.",
@@ -345,6 +360,11 @@
   "partial": true
  },
  "d101-ac-deadbolts": {
+  "shape": "boltDetail",
+  "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
+  "partial": true
+ },
+ "d101-bs-deadbolts": {
   "shape": "boltDetail",
   "note": "Backset 60mm to the cylinder centre. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn.",
   "partial": true

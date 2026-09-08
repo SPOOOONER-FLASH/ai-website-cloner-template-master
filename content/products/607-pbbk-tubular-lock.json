@@ -180,5 +180,18 @@
     "model": "607 PBBK",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/607-pbbk-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/607-pbbk-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "607 PBBK Tubular Lock, demonstration still"
+      },
+      "label": "607 PBBK Tubular Lock — product demonstration",
+      "durationSeconds": 16,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

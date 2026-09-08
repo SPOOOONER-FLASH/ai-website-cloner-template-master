@@ -152,5 +152,18 @@
     "model": "6491ABET",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/6491abet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/6491abet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "6491ABET Lever Handle, demonstration still"
+      },
+      "label": "6491ABET Lever Handle — product demonstration",
+      "durationSeconds": 27,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

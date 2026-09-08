@@ -59,11 +59,42 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/lh855-bnbk-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland LH855 BNBK Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 6"
+    },
+    {
+      "src": "/images/products/lh855-bnbk-lever-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH855 BNBK Lever Handle, view 7"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "LH855 BNBK Lever Handle — Zinc Alloy | Canton Hyland",
@@ -85,7 +116,19 @@
     "model": "LH855 SNBK",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/lh855-bnbk-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh855-bnbk-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH855 BNBK Lever Handle, demonstration still"
+      },
+      "label": "LH855 BNBK Lever Handle — product demonstration",
+      "durationSeconds": 23,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "LH855 SNBK",
     "slug": "lh855-snbk-lever-handle",

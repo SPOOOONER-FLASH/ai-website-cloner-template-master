@@ -96,7 +96,19 @@
     "model": "607 PBBK",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/607-acbk-tubular-lock.mp4",
+      "poster": {
+        "src": "/images/products/607-acbk-tubular-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "607 ACBK Tubular Lock, demonstration still"
+      },
+      "label": "607 ACBK Tubular Lock — product demonstration",
+      "durationSeconds": 23,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "607 PBBK",
     "slug": "607-pbbk-tubular-lock",

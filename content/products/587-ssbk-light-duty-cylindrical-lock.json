@@ -181,5 +181,18 @@
     "model": "587 SSBK",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/587-ssbk-light-duty-cylindrical-lock.mp4",
+      "poster": {
+        "src": "/images/products/587-ssbk-light-duty-cylindrical-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "587 SSBK Light Duty Cylindrical Lock, demonstration still"
+      },
+      "label": "587 SSBK Light Duty Cylindrical Lock — product demonstration",
+      "durationSeconds": 19,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }

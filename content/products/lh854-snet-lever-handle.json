@@ -55,11 +55,42 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/lh854-snet-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland LH854 SNET Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/lh854-snet-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/lh854-snet-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/lh854-snet-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/lh854-snet-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/lh854-snet-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 6"
+    },
+    {
+      "src": "/images/products/lh854-snet-lever-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH854 SNET Lever Handle, view 7"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "LH854 SNET Lever Handle — Zinc Alloy | Canton Hyland",
@@ -68,7 +99,19 @@
   "summary": "Lever Handle in satin nickel, entrance function.",
   "seoTitleEs": "LH854 SNET Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland LH854 SNET manijas de palanca en zamak. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/lh854-snet-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh854-snet-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH854 SNET Lever Handle, demonstration still"
+      },
+      "label": "LH854 SNET Lever Handle — product demonstration",
+      "durationSeconds": 36,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "LH854",
     "slug": "lh854-lever-handle",

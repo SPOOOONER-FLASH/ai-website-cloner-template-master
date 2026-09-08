@@ -60,11 +60,37 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "",
+    "src": "/images/products/lh853-snps-lever-handle.webp",
     "ratio": "1 / 1",
     "label": "Hyland LH853 SNPS Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/lh853-snps-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH853 SNPS Lever Handle, view 2"
+    },
+    {
+      "src": "/images/products/lh853-snps-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH853 SNPS Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/lh853-snps-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH853 SNPS Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/lh853-snps-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH853 SNPS Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/lh853-snps-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland LH853 SNPS Lever Handle, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "LH853 SNPS Lever Handle — Zinc Alloy | Canton Hyland",
@@ -86,7 +112,19 @@
     "model": "LH853 SNET",
     "fetchedAt": "2026-09-04"
   },
-  "videos": [],
+  "videos": [
+    {
+      "src": "/videos/products/lh853-snps-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh853-snps-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH853 SNPS Lever Handle, demonstration still"
+      },
+      "label": "LH853 SNPS Lever Handle — product demonstration",
+      "durationSeconds": 25,
+      "uploadDate": "2026-09-08"
+    }
+  ],
   "derivedFrom": {
     "model": "LH853 SNET",
     "slug": "lh853-snet-lever-handle",

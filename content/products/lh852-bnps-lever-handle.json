@@ -180,5 +180,18 @@
     "model": "LH852 BNPS",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/lh852-bnps-lever-handle.mp4",
+      "poster": {
+        "src": "/images/products/lh852-bnps-lever-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "LH852 BNPS Lever Handle, demonstration still"
+      },
+      "label": "LH852 BNPS Lever Handle — product demonstration",
+      "durationSeconds": 33,
+      "uploadDate": "2026-09-08"
+    }
+  ]
 }
