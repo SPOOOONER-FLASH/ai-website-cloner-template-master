@@ -1,0 +1,674 @@
+
+> ai-website-clone-template@0.4.0 check
+> npm run lint && npm run typecheck && npm test && npm run build && npm run test:export
+
+
+> ai-website-clone-template@0.4.0 lint
+> eslint
+
+
+C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\src\components\site\SiteHeader.tsx
+  7:10  warning  'hasSpanishMirror' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+> ai-website-clone-template@0.4.0 typecheck
+> tsc --noEmit
+
+
+> ai-website-clone-template@0.4.0 test
+> node --test scripts/watermark-product-images.test.mjs scripts/stahlock-cited-policy.test.mjs src/lib/carousel.test.ts src/lib/promo.test.ts src/lib/promo-dismissal.test.ts src/lib/promo-settings.test.ts src/lib/product-finder.test.ts src/lib/configurator.test.ts src/lib/search-matching.test.ts src/lib/catalogue-return.test.ts src/lib/related-products.test.ts src/lib/catalogue-taxonomy.test.ts src/lib/argentina-ar4-alibaba.test.ts src/lib/image-alt-overrides.test.ts src/lib/product-image-branding.test.ts src/lib/spanish-product.test.ts src/lib/newsletter.test.ts src/lib/services.test.ts src/lib/events.test.ts src/lib/certifications-page.test.ts src/lib/cms-config.test.ts src/lib/editorial-image-uniqueness.test.ts src/lib/fact-roll.test.ts src/lib/published-counts.test.ts src/lib/utils.test.ts src/lib/product-faq.test.ts src/lib/json-ld.test.ts src/lib/seo-policy.test.ts src/data/capability.test.ts src/data/home-destinations.test.ts src/data/home-editorial-assets.test.ts src/data/search-suggestions.test.ts src/data/product-naming.test.ts src/data/subcategory-integrity.test.ts src/data/taxonomy-moves.test.ts src/app/sitemap-escaping.test.ts src/app/type-scale.test.ts src/components/site/overlay-layering.test.ts src/components/site/short-marker.test.ts src/components/site/home-accent.test.ts src/components/site/product-image-zoom.test.ts src/components/site/header-shelf.test.ts src/components/site/mobile-navigation.test.ts src/components/site/products-architecture.test.ts src/components/site/menu-experience.test.ts src/lib/rayen-paths.test.ts
+
+✔ certification filtering uses whole claims rather than substrings (0.8068ms)
+✔ known Stahlock aliases collapse to the site's canonical labels (0.101ms)
+✔ different values for the same canonical field are held for review (0.5369ms)
+✔ watermark geometry stays proportional on catalogue images (1.1764ms)
+✔ watermark geometry remains inside a small image (0.1363ms)
+✔ adaptive logo is smaller than the legacy-cover plate (0.875ms)
+✔ legacy red-script badge is detected in either top corner (1.3482ms)
+✔ plain scenes do not invent a legacy badge (0.4088ms)
+✔ adaptive placement chooses the quietest corner unless a legacy badge wins (0.2035ms)
+✔ derived output preserves the relative product path (0.2908ms)
+✔ a red fire-door sign below the logo band is not a legacy badge (0.2628ms)
+✔ a top-corner red banner without a dark oval is not a legacy badge (0.3284ms)
+✔ legacy repair core contains the oval, registered symbol, and tagline (0.3007ms)
+✔ a matching real background is preferred over generative inpainting (0.1212ms)
+✔ a visible clone-edge mismatch uses a boundary-continuous fill (0.0595ms)
+✔ derived output rejects files outside the product image root (0.3551ms)
+(node:46484) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/app/sitemap-escaping.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the built sitemap contains no unescaped ampersand (6.6601ms)
+✔ the built sitemap has no characters XML cannot carry (7.626ms)
+✔ every element the sitemap opens, it closes (11.1787ms)
+(node:5720) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/app/type-scale.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ each type level is clearly larger than the one below it (3.8086ms)
+✔ a page title is legible as a title on a phone (0.1583ms)
+✔ weight never increases as the heading level goes down (0.2584ms)
+✔ reading sizes carry no positive letter-spacing (0.1563ms)
+✔ line height moves with size, so nothing sets larger text on a shorter slug (0.2374ms)
+(node:43736) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/header-shelf.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ desktop navigation exposes the two architectural shelves accessibly (0.6725ms)
+✔ shelves animate as full-width layers without moving page content (1.9757ms)
+✔ Alibaba is the only permanently emphasized hard-shadow shelf action (0.2437ms)
+✔ mobile drawer mirrors the expanded company and buying routes (1.2237ms)
+✔ footer exposes only the four direct buying destinations (0.9314ms)
+✔ removing footer shortcuts does not remove their destination pages (1.2137ms)
+(node:60260) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/home-accent.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ homepage accent surfaces are visually neutral until hover or keyboard focus (0.924ms)
+✔ homepage interaction hierarchy separates cards from editorial modules (0.7712ms)
+✔ homepage editorial heroes use image motion without a framed surface (0.4328ms)
+✔ all catalogue category tiles ship with a real cover image (0.5774ms)
+✔ current navigation is bold at rest without a persistent underline (0.5293ms)
+✔ homepage mobile disclosure preserves heading order (0.2653ms)
+✔ homepage product CTA names its destination (0.6236ms)
+(node:70280) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/menu-experience.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ RFQ Concierge is live while Specify Source Company remains switchable (1.8095ms)
+✔ RFQ Concierge routes three buyer states to truthful existing tools (0.4621ms)
+✔ menu variants keep the real bilingual discovery and evidence routes (0.3446ms)
+✔ the drawer renders one selected variant inside a focus-safe dialog (1.5511ms)
+(node:6780) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/mobile-navigation.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a nav rail names destinations on every viewport below xl (1.0676ms)
+✔ the rail scrolls rather than wraps, and hides its scrollbar (0.3911ms)
+✔ Product Finder carries weight in the rail (0.1808ms)
+✔ the drawer opens on the approved buyer question before utility navigation (0.124ms)
+✔ the drawer lists the catalogue itself, not just a Products hub link (0.1279ms)
+✔ drawer items are list-sized, not headline-sized (0.1823ms)
+(node:21580) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/overlay-layering.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ requested overlays stay above the passive promotional rail (1.0643ms)
+(node:23860) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/product-image-zoom.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ product hero and gallery images use the same accessible zoom surface (1.5096ms)
+✔ zoom opens an on-demand dialog and supports keyboard dismissal (0.249ms)
+✔ fine pointers get the selected full-image pan zoom without a decorative loupe (0.1722ms)
+✔ pointer zoom remains progressive enhancement over the existing dialog (0.151ms)
+✔ missing images remain honest placeholders rather than zoom controls (0.1627ms)
+(node:5988) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/products-architecture.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the editorial map exposes exactly nine real product families (1.3511ms)
+✔ English and Spanish maps preserve canonical category routes (0.6202ms)
+✔ the Products story gives range, application, and technical imagery one job each (1.0234ms)
+✔ the editorial architecture makes no designer or certification claim (0.3591ms)
+✔ both Products routes render one shared editorial system without losing discovery (0.8447ms)
+(node:69724) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/short-marker.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the shared short marker is monochrome and keyboard-equivalent (2.3135ms)
+✔ group markers belong only to an explicit interactive surface (81.42ms)
+✔ legacy underline utilities cannot recreate the double-line interaction (34.2705ms)
+(node:67424) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/capability.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the chain is a sequence, numbered without gaps (1.4676ms)
+✔ every step is written in both published locales (0.3735ms)
+✔ a figure is present only where something was actually counted (0.286ms)
+✔ the model figure is whatever it was handed, never a literal (0.1624ms)
+✔ the component counts the catalogue rather than passing a number (0.7839ms)
+✔ both locales have the surrounding copy the section needs (0.3505ms)
+(node:52384) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/home-destinations.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ src/data/home.ts hero and carousel frames link to categories, not single products (1.553ms)
+✔ src/data/home-es.ts hero and carousel frames link to categories, not single products (0.6202ms)
+✔ every homepage product destination is a category that exists (1.7635ms)
+(node:53336) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/home-editorial-assets.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ English and Spanish home data use six unique sales-semantic editorial assets (0.9335ms)
+✔ new homepage asset labels describe visible door-hardware sales context (1.1531ms)
+✔ every new homepage source has responsive candidates and provenance (1.7182ms)
+✔ Spanish FAQ card falls back to the existing English FAQ route (0.1869ms)
+✔ the historical generated library remains archived with provenance, not approved for new product use (17.3776ms)
+(node:17732) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/product-naming.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ no record is named after a folder rather than a product (3.7529ms)
+✔ models sharing a letter prefix in one category share a product name (2.0188ms)
+✔ a slug spells out the model it belongs to (0.5195ms)
+(node:45164) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/search-suggestions.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every suggested category is a real category (1.0851ms)
+✔ every suggested model still has a photograph and a real spec table (0.2576ms)
+✔ suggestions span categories rather than crowding one (0.2395ms)
+✔ both locales get a label and a resolvable path (0.2885ms)
+(node:51876) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/subcategory-integrity.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every product sub-category is declared by its category (1.4421ms)
+✔ no two sub-category slugs differ only by a trailing s (0.187ms)
+✔ empty sub-categories are known and stay hidden from the menu (0.7133ms)
+(node:636) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/data/taxonomy-moves.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the 2026-09-02 review placements still hold (1.5923ms)
+✔ BH01 does not claim a door type, because it mounts on a wall (1.4786ms)
+✔ every move keeps its old URL resolving (0.4126ms)
+✔ a move names two different, non-empty categories (0.195ms)
+✔ the nginx conf is in step with the move table (0.5692ms)
+(node:66572) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/argentina-ar4-alibaba.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ AR-4 Alibaba exits use the confirmed numeric catalogue lookup (2.4445ms)
+(node:50800) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/carousel.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ getNextSlideIndex wraps in both directions (0.8559ms)
+✔ shouldAutoplay pauses for every interruption condition (0.1696ms)
+✔ speculative carousel loading respects data saver and 2G connections (0.1038ms)
+✔ getRenderedSlideIndexes initially exposes only the active slide (0.7126ms)
+✔ getRenderedSlideIndexes keeps exactly the two crossfade frames (0.1086ms)
+✔ getRenderedSlideIndexes deduplicates and rejects invalid frames (0.0808ms)
+(node:20760) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/catalogue-return.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a category result remembers its page, filter, product and scroll position for this session (2.6365ms)
+✔ a product detail URL cannot be recorded as if it were a catalogue listing (0.8728ms)
+✔ restoration is consumed once, while the detail return link can rearm it (0.568ms)
+✔ category page state round-trips through the URL without deleting campaign parameters (0.388ms)
+✔ invalid category state falls back to the first unfiltered page (0.2055ms)
+✔ a configuration is a place worth returning to, in both locales (0.439ms)
+✔ the product finder is remembered in Spanish as well as English (0.217ms)
+(node:41668) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/catalogue-taxonomy.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Door Hinges is merged into Brass & Steel Door Hinges without losing products (1.9453ms)
+✔ legacy hinge URLs resolve to the merged canonical category (0.2556ms)
+✔ category cover images belong to the category they introduce (0.1071ms)
+(node:63428) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/certifications-page.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ certification registry is a public route linked from the site drawer (1.4021ms)
+✔ certificate page names all three HYDE records and never restores the KALE report (0.3874ms)
+✔ downloads lists every HYDE certificate as a model-scoped request (0.2874ms)
+(node:23252) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/cms-config.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the CMS config has no duplicate sibling keys (12.3005ms)
+✔ no collection name appears twice (0.8139ms)
+✔ no content file is edited by two different entries (0.2222ms)
+✔ the promo panel edits the fields the site actually reads (0.1417ms)
+(node:44224) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/configurator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the catalogue is big enough for this test to mean anything (0.6235ms)
+✔ no offered option ever leads to zero products (28.2952ms)
+✔ a step with one answer or none is never asked (17.686ms)
+✔ the walk always ends with something to show (7.6177ms)
+✔ going back to an earlier step drops the answers that depended on it (0.6421ms)
+✔ a configuration survives a round trip through the URL (0.2596ms)
+✔ the progress rail lists the steps that will actually be asked (0.8136ms)
+✔ withheld products are not offered by the configurator (0.294ms)
+✔ the finish step offers finishes, not code strings (0.5928ms)
+✔ the schedule line holds every position from the first render (0.2272ms)
+✔ every category and sub-category the configurator can offer has a definition (0.3692ms)
+✔ the definitions describe the trade, never the certification of our products (0.3718ms)
+(node:45196) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/editorial-image-uniqueness.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the flagship homepage and three news stories use four purpose-built images (3.8295ms)
+✔ the three newest News cards use distinct editorial images matched to their subjects (2.2184ms)
+(node:30192) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/events.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ published exhibition dates match the current organiser schedules (1.9043ms)
+✔ public events have organiser sources and do not claim an unverified exhibition stand (0.9604ms)
+(node:68776) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/fact-roll.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ only facts that declare countTo are ever rolled (1.4659ms)
+✔ the roll starts at zero and ends exactly on the published figures (0.1833ms)
+✔ no figure ever overshoots or goes backwards (1.4783ms)
+✔ figures start in reading order, left to right (0.1267ms)
+✔ it stays finished once finished, however late the frame arrives (0.0834ms)
+✔ a strip with nothing countable reports done immediately (0.1113ms)
+(node:53396) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/image-alt-overrides.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a central image override updates English and Spanish alt text without changing the asset (0.9961ms)
+✔ images without a matching central override remain unchanged (0.109ms)
+✔ duplicate image paths fail fast instead of making CMS order decide the alt text (0.2822ms)
+(node:56896) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/json-ld.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ serializeJsonLd neutralizes a closing script sequence without changing parsed data (0.9867ms)
+(node:3096) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/newsletter.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ newsletter signup stays compatible with the static export and requires consent (0.8564ms)
+✔ newsletter has a crawlable route and the footer links directly to it (0.4849ms)
+(node:69264) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/product-faq.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every answer quotes a value the product actually states (15.9349ms)
+✔ a page carries three to six questions, or none at all (2.3162ms)
+✔ questions are unique within a page (2.3531ms)
+✔ no two products share an identical answer set (1.6699ms)
+✔ Spanish questions are Spanish, and are emitted for the same products (2.9117ms)
+(node:68980) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/product-finder.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ visiblePageNumbers exposes the first and last page around a three-page window (1.2029ms)
+✔ values within one facet are OR'd (0.2874ms)
+✔ different facets are AND'd (0.1024ms)
+✔ an empty selection returns everything (0.2272ms)
+✔ facet counts ignore that facet's own selection (6.8026ms)
+✔ facets with a single value are dropped (0.2108ms)
+✔ toggling twice returns to the original state (0.1888ms)
+✔ query matches across model and name, all terms required (0.1986ms)
+✔ selection survives a round trip through URL params (0.2754ms)
+✔ sortForDisplay puts photographed products first and keeps incoming order (0.2354ms)
+✔ sortForDisplay does not drop the products without photography (0.0861ms)
+✔ paginate slices PAGE_SIZE per page and reports the range (0.1421ms)
+✔ the client asked for 20 a page; changing it is a decision, not a tweak (0.0389ms)
+✔ paginate clamps an out-of-range page instead of showing nothing (0.0595ms)
+✔ paginate reports an empty result honestly (0.1885ms)
+✔ page survives a round trip through the URL, and page 1 stays implicit (0.0956ms)
+✔ the rail carries only category and type; the rest sit behind the panel (0.0912ms)
+✔ the finder claims only its own query parameters (0.0938ms)
+(node:51220) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/product-image-branding.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ product image sources resolve to the non-destructive HYDE derivative tree (0.675ms)
+✔ non-product and already branded sources stay unchanged (0.104ms)
+✔ branding preserves image metadata and does not mutate the source object (0.6526ms)
+(node:43624) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/promo-dismissal.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ dismissals round-trip through the session store (1.4799ms)
+✔ adding the same dismissal twice does not duplicate it (0.1872ms)
+✔ a fresh session store starts empty — dismissal never persists across sessions (0.1262ms)
+✔ corrupt or foreign content reads as no dismissals (0.1858ms)
+✔ a throwing store (private mode) degrades to empty reads and ignored writes (0.2058ms)
+(node:7176) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/promo-settings.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ promo dialog keeps the client's agreed timing (0.5562ms)
+✔ promo dialog has no stale hours-based cooldown field (0.0914ms)
+✔ bumping the campaign is what re-shows it to people who dismissed it (0.1191ms)
+✔ the promo shows on every section the client asked for (0.1646ms)
+✔ every listed surface is a route promoSurfaceFor can actually recognise (0.1278ms)
+(node:66988) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/promo.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ selectActivePromoCard exposes only the first undismissed offer (0.5526ms)
+✔ localisePromoCardCopy uses Spanish campaign copy with English fallback (0.6117ms)
+✔ localisePromoCardCopy sends a Spanish campaign to its Spanish route (0.1025ms)
+✔ localisePromoCardCopy gives the dismiss control a localized name (0.0826ms)
+✔ a promo card is never offered on the page it links to (0.1891ms)
+(node:63160) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/published-counts.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every model count written into the FAQ matches the published catalogue (80.4736ms)
+✔ the family count in the FAQ matches content/categories.json (1.1601ms)
+(node:14792) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/rayen-paths.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ RAYEN 源码里存在页面文件 (0.5518ms)
+✔ 内部链接一律经过 zhPath()，不手写 href (2.9062ms)
+✔ 不引用 HYDE 水印图目录 (1.9488ms)
+✔ zh-terms 覆盖全部规格标签 (343.9428ms)
+(node:68412) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/related-products.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ neighbours follow the product and wrap past the end (10.9281ms)
+✔ every member of a group gets a distinct slice — the point of rotating (0.3493ms)
+✔ a product never lists itself (1.223ms)
+✔ a group of one yields nothing (0.1313ms)
+✔ a group smaller than LIMIT+1 returns what it has, without repeats (0.1108ms)
+✔ curated relations win and are labelled as such (0.1482ms)
+✔ series siblings are preferred over the wider category, and named honestly (0.1282ms)
+✔ a product alone in its series falls back to the category (0.091ms)
+✔ a category of one returns null so the caller can omit the section (0.1113ms)
+✔ blank series is not treated as a series (0.1525ms)
+✔ never more than LIMIT items (0.1164ms)
+(node:44096) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/search-matching.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a two-letter term does not match the middle of a word (2.1407ms)
+✔ two-letter finish codes still match, because they are whole words (2.8719ms)
+✔ a three-letter-or-longer term may match inside a word (0.8826ms)
+✔ matching ranges come from the range name, at a word start (9.9138ms)
+✔ an unambiguous range name matches exactly one range (0.9239ms)
+✔ a term we do not stock still suggests the closest range by its letters (0.5723ms)
+✔ gibberish suggests nothing rather than something arbitrary (0.6947ms)
+✔ a product href resolves to its category href (0.3894ms)
+✔ category href derivation ignores anything that is not a product URL (0.1442ms)
+✔ word and subsequence helpers behave at the edges (0.1918ms)
+(node:68420) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/seo-policy.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the staging robots policy remains a hard site-wide block (1.9828ms)
+✔ the launch robots policy keeps render assets crawlable and the CMS private (0.1833ms)
+✔ sitemap entries omit invented freshness unless a real date is supplied (0.1674ms)
+✔ the Spanish catalogue mirrors /products, and hreflang stops where the routes do (0.1918ms)
+✔ the navigation prefixes exactly the paths that have a Spanish mirror (0.1459ms)
+(node:62456) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/services.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the service hub is crawlable and reachable without crowding the header (1.6132ms)
+✔ service copy routes buyers to existing enquiry and selection tools (0.5247ms)
+✔ the service brief is written plainly and the whole panel opens an enquiry (0.3561ms)
+(node:44444) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/spanish-product.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ known catalogue facts use the reviewed Latin American trade glossary (0.9371ms)
+✔ unknown factual values stay visible instead of being guessed (0.0999ms)
+✔ English routes retain the source catalogue wording (0.0786ms)
+(node:59156) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/lib/utils.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a type-scale class survives being combined with a colour (5.131ms)
+✔ two type-scale classes still conflict, last one wins (0.1438ms)
+✔ real colour conflicts are still resolved (0.0968ms)
+✔ ordinary Tailwind merging is untouched (0.1081ms)
+ℹ tests 225
+ℹ suites 0
+ℹ pass 225
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2037.4576
+
+> ai-website-clone-template@0.4.0 prebuild
+> npm run assets:drawings && npm run assets:watermark:check && node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs && node scripts/build-chinese-mirror.mjs
+
+
+> ai-website-clone-template@0.4.0 assets:drawings
+> node scripts/build-dimension-drawings.mjs
+
+84 drawing(s) from 573 products
+
+not drawn:
+    63  lever-handles
+    62  hardware-accessories
+    56  lock-cases
+    56  knob-locks
+    45  panic-exit-devices
+    45  lock-cylinders
+    44  bathroom-accessories
+    43  stainless-steel-handles
+    29  brass-steel-hinges
+    20  glass-door-accessories
+     9  night-latches-rim-locks
+     9  door-closers
+     3  sliding-hook-locks
+     3  grip-handle-sets
+     2  deadbolts
+
+A family with no recipe needs one; a product with no dimensions needs the factory.
+
+-> public/images/drawings
+
+> ai-website-clone-template@0.4.0 assets:watermark:check
+> node scripts/watermark-product-images.mjs --check --manifest=docs/design-references/product-watermark-manifest.json
+
+Verified 2562 HYDE-branded product image derivatives.
+Verified 206 responsive editorial WebPs.
+content index: 573 products, 3 projects, 17 news
+search index: 531 entries, 349KB — product 488, category 15, project 3, news 17, download 2, page 6
+products-zh.json：573 个型号，3524 条规格行，365 条值仍含英文（node scripts/build-chinese-mirror.mjs --report 看清单）
+
+> ai-website-clone-template@0.4.0 build
+> next build && node scripts/normalize-next-export-segments.mjs && node scripts/build-rayen-site.mjs
+
+▲ Next.js 16.3.0 (Turbopack)
+✓ Running next.config.ts took 41ms
+- Experiments (use with caution):
+  ✓ globalNotFound
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 10.9s
+  Running TypeScript ...
+  Finished TypeScript in 7.6s ...
+  Collecting page data using 31 workers ...
+  Generating static pages using 31 workers (0/1924) ...
+  Generating static pages using 31 workers (481/1924)
+  Generating static pages using 31 workers (962/1924)
+  Generating static pages using 31 workers (1443/1924)
+✓ Generating static pages using 31 workers (1924/1924) in 5.7s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /certifications
+├   /collections/[collection]
+│ ├ ● /collections/panic-exit-devices-fire-door
+│ ├ ● /collections/panic-exit-devices-alarmed
+│ ├ ● /collections/panic-exit-devices-multi-point
+│ └ ● [+16 more paths]
+├ ○ /company
+├   /compare/[category]
+│ ├ ● /compare/panic-exit-devices
+│ ├ ● /compare/night-latches-rim-locks
+│ ├ ● /compare/stainless-steel-handles
+│ └ ● [+12 more paths]
+├ ○ /configurator
+├ ○ /contact
+├ ○ /downloads
+├ ○ /es
+├ ○ /es/certifications
+├   /es/collections/[collection]
+│ ├ ● /es/collections/panic-exit-devices-fire-door
+│ ├ ● /es/collections/panic-exit-devices-alarmed
+│ ├ ● /es/collections/panic-exit-devices-multi-point
+│ └ ● [+16 more paths]
+├ ○ /es/company
+├   /es/compare/[category]
+│ ├ ● /es/compare/panic-exit-devices
+│ ├ ● /es/compare/night-latches-rim-locks
+│ ├ ● /es/compare/stainless-steel-handles
+│ └ ● [+12 more paths]
+├ ○ /es/configurator
+├ ○ /es/contact
+├ ○ /es/downloads
+├ ○ /es/faq
+├ ○ /es/news
+├   /es/news/[slug]
+│ ├ ● /es/news/cross-referencing-a-lock-you-already-buy
+│ ├ ● /es/news/door-stop-holder-or-flush-bolt
+│ ├ ● /es/news/what-documents-you-can-actually-get
+│ └ ● [+14 more paths]
+├ ○ /es/product-finder
+├ ○ /es/products
+├   /es/products/[category]
+│ ├ ● /es/products/panic-exit-devices
+│ ├ ● /es/products/night-latches-rim-locks
+│ ├ ● /es/products/stainless-steel-handles
+│ └ ● [+12 more paths]
+├   /es/products/[category]/[slug]
+│ ├ ● /es/products/panic-exit-devices/001-panic-exit-device
+│ ├ ● /es/products/panic-exit-devices/015-panic-exit-device
+│ ├ ● /es/products/panic-exit-devices/016-exterior-trim
+│ └ ● [+570 more paths]
+├ ○ /es/products/argentina-ar4
+├ ○ /es/projects
+├   /es/projects/[slug]
+│ ├ ● /es/projects/commercial-fire-egress-hardware
+│ ├ ● /es/projects/glass-entrance-hardware-package
+│ └ ● /es/projects/hospitality-residential-door-package
+├ ○ /events
+├ ○ /faq
+├ ○ /icon.svg
+├ ○ /llms.txt
+├ ○ /news
+├   /news/[slug]
+│ ├ ● /news/cross-referencing-a-lock-you-already-buy
+│ ├ ● /news/door-stop-holder-or-flush-bolt
+│ ├ ● /news/what-documents-you-can-actually-get
+│ └ ● [+14 more paths]
+├ ○ /newsletter
+├ ○ /product-finder
+├ ○ /products
+├   /products/[category]
+│ ├ ● /products/panic-exit-devices
+│ ├ ● /products/night-latches-rim-locks
+│ ├ ● /products/stainless-steel-handles
+│ └ ● [+13 more paths]
+├   /products/[category]/[slug]
+│ ├ ● /products/panic-exit-devices/001-panic-exit-device
+│ ├ ● /products/panic-exit-devices/015-panic-exit-device
+│ ├ ● /products/panic-exit-devices/016-exterior-trim
+│ └ ● [+578 more paths]
+├ ○ /products/argentina-ar4
+├ ○ /projects
+├   /projects/[slug]
+│ ├ ● /projects/commercial-fire-egress-hardware
+│ ├ ● /projects/glass-entrance-hardware-package
+│ └ ● /projects/hospitality-residential-door-package
+├ ○ /request/price-list
+├ ○ /robots.txt
+├ ○ /services
+├ ○ /sitemap.xml
+├ ○ /status
+├ ○ /zh
+├ ○ /zh/company
+├ ○ /zh/contact
+├ ○ /zh/icon.svg
+├ ○ /zh/oem
+├ ○ /zh/products
+├   /zh/products/[category]
+│ ├ ● /zh/products/panic-exit-devices
+│ ├ ● /zh/products/night-latches-rim-locks
+│ ├ ● /zh/products/stainless-steel-handles
+│ └ ● [+12 more paths]
+├   /zh/products/[category]/[slug]
+│ ├ ● /zh/products/panic-exit-devices/001-panic-exit-device
+│ ├ ● /zh/products/panic-exit-devices/015-panic-exit-device
+│ ├ ● /zh/products/panic-exit-devices/016-exterior-trim
+│ └ ● [+570 more paths]
+└ ○ /zh/quality
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Normalized 1917 Next segment payloads from 1917 directories.
+out-rayen/：594 个页面，重写 2376 个文件的 /zh 前缀，复制 1200 个静态资源。已从 out/ 移除 zh/。
+
+> ai-website-clone-template@0.4.0 test:export
+> node --test src/components/site/static-export-performance.test.ts scripts/seo-audit.test.mjs && node scripts/audit-seo.mjs --check && node scripts/audit-dead-links.mjs && npm run export:segments:check
+
+✔ accepts a valid staging export and ignores hrefLang on ordinary anchors (48.4269ms)
+✔ reports copy that exceeds the 62-character title and 165-character description budgets (23.1925ms)
+✔ reports route, social, language, and reciprocal alternate mismatches (15.7046ms)
+✔ accepts a permanent static-export redirect and audits its target separately (19.2813ms)
+✔ reports a built bilingual pair when both pages lose every alternate link (16.4901ms)
+✔ reports a bilingual pair when both pages retain only self alternates (19.1693ms)
+✔ reports malformed, unsafe, and route-inconsistent JSON-LD (14.6802ms)
+✔ reports structured data that does not match visible page content (14.0338ms)
+✔ reports malformed nested FAQ Question and Answer nodes (15.2224ms)
+✔ reports malformed BreadcrumbList and ItemList child records (15.8554ms)
+✔ accepts JSON-LD graph nodes that inherit the graph context (16.4126ms)
+✔ requires staging robots, noindex pages, and an empty sitemap to agree (15.1306ms)
+✔ accepts an indexable export only when robots, public pages, and sitemap agree (14.7397ms)
+✔ reports sitemap lastmod on a page without a tracked content date (15.0815ms)
+✔ reports sitemap lastmod that differs from NewsArticle datePublished (19.3347ms)
+✔ reports malformed sitemap lastmod values (32.2585ms)
+✔ machine-readable results omit local paths and full extracted page content (24.6888ms)
+✔ reports blocked render assets and public pages omitted from an indexable sitemap (16.4255ms)
+✔ reports an indexable sitemap URL that has no exported canonical page (15.3461ms)
+✔ the committed export satisfies the semantic SEO contract (1344.8488ms)
+(node:71116) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/johns/Downloads/ai-website-cloner-template-master/tmp/codex-111-validation/src/components/site/static-export-performance.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-validation\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the initial home export renders one carousel frame (1.445ms)
+✔ every editorial image in the initial home export has responsive candidates (1.1317ms)
+✔ the mobile hero accounts for its wide-source object-cover crop (0.6015ms)
+✔ nested route segment payloads use the flat filenames requested by Next (0.4907ms)
+✔ project editorial images are responsive while technical product anchors stay untouched (1.9192ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1848.789
+release state: indexable
+pages built: 1326 (1142 public content pages)
+  withheld on purpose: 170
+  with JSON-LD: 1142
+  with real alternate link tags: 1138
+  semantic issues: 0
+  editorial quality warnings: 29
+
+title length      {"min":31,"p50":51,"p90":59,"max":78}
+description length {"min":115,"p50":148,"p90":162,"max":262}
+
+semantic issues (CI-blocking):
+  none
+
+editorial quality warnings (report-only):
+    18  description-length
+    11  title-length
+dead-link audit — 1326 pages, 97895 internal links, 28434 asset references
+
+✔ every internal link, asset, hreflang, canonical and JSON-LD URL resolves.
+
+> ai-website-clone-template@0.4.0 export:segments:check
+> node scripts/normalize-next-export-segments.mjs --check
+
+Next segment payload layout is already portable.

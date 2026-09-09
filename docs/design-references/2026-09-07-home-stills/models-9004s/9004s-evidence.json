@@ -1,0 +1,44 @@
+{
+  "source": "public\\images\\products\\9004s-stainless-steel-handle-6.webp",
+  "sha256": "f7c2a444c7552ff944e37d89cb03b0bda0ff65f8801f99409ac931af9d307777",
+  "parameters_mm": {
+    "lever_length": 135,
+    "lever_height": 20,
+    "front_bar_depth": 10,
+    "neck_width": 20,
+    "projection_from_rose_back": 63,
+    "rose_size": 53,
+    "rose_depth": 8
+  },
+  "status": "Published exterior shell only; incomplete product CAD",
+  "omitted": [
+    "edge radii",
+    "inset rose trim",
+    "set screw",
+    "fixing holes",
+    "rose interior",
+    "spring cassette",
+    "spindle of unknown length",
+    "escutcheon dimensions"
+  ],
+  "measured_objects": [
+    {
+      "name": "Rose \u2014 53 x 53 x 8 mm",
+      "dimensions_mm": [
+        52.99999937415123,
+        52.99999937415123,
+        8.00000037997961
+      ],
+      "closed_mesh": true
+    },
+    {
+      "name": "Lever \u2014 135 x 20 / 10 mm front bar",
+      "dimensions_mm": [
+        135.00000536441803,
+        19.999999552965164,
+        54.999999701976776
+      ],
+      "closed_mesh": true
+    }
+  ]
+}

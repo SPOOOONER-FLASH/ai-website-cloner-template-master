@@ -1,0 +1,50 @@
+{
+  "id": "01-selection",
+  "slug": "9004s-stainless-steel-handle",
+  "mood": "limestone",
+  "cropTop": 0,
+  "purpose": "Distributor selection",
+  "label": "9004S / Stainless steel",
+  "width": 1.14,
+  "x": 0.62,
+  "y": 0.02,
+  "texture": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\tmp\\codex-editorial-still-inputs\\01-selection.png",
+  "textureWidth": 604,
+  "textureHeight": 454,
+  "sourceRecord": "content/products/9004s-stainless-steel-handle.json",
+  "sourceImage": "/images/products/9004s-stainless-steel-handle.webp",
+  "sourceSha256": "3977e8a96ea5a7d2b63e04cb877b6cabbb43ef3b91fbb7da18917a007061a720",
+  "technique": "Original photograph on an alpha plate inside a Blender still-life set. No reconstructed product geometry or simulated installation.",
+  "scope": "Design preview, not a dimensional model or a completed project photograph.",
+  "productDimensions": [
+    {
+      "label": "Door thickness",
+      "value": "35–50mm"
+    },
+    {
+      "label": "Lever length",
+      "value": "135mm"
+    },
+    {
+      "label": "Rose size",
+      "value": "53mm square"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "8mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "20mm"
+    },
+    {
+      "label": "Projection",
+      "value": "63mm"
+    },
+    {
+      "label": "Spindle",
+      "value": "8mm"
+    }
+  ],
+  "outputDirectory": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-07-home-stills"
+}

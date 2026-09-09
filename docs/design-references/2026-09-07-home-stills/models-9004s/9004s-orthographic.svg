@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+<rect width="1200" height="850" fill="#f8f7f3"/>
+<g font-family="Arial,sans-serif" fill="#232323"><text x="60" y="55" font-size="28">9004S — published exterior dimensions</text>
+<text x="60" y="86" font-size="16">Millimetres. Catalogue gallery view 6. Omitted details are listed in the Blender file.</text>
+<text x="60" y="142" font-size="20">FRONT</text><text x="60" y="480" font-size="20">TOP / PROJECTION</text></g>
+<g transform="translate(230 280) scale(4)" fill="none" stroke="#222" stroke-width=".45"><rect x="-26.5" y="-26.5" width="53" height="53"/><rect x="-10" y="-10" width="135" height="20"/>
+<path d="M -10 -15 V -38 M 125 -15 V -38 M -10 -35 H125 M-32 -26.5 H-42 M-32 26.5 H-42 M-38 -26.5 V26.5"/>
+<g fill="#222" stroke="none" font-family="Arial" font-size="5"><text x="49" y="-39">135</text><text x="-50" y="2">53</text><text x="130" y="2">20</text></g></g>
+<g transform="translate(230 520) scale(4)" fill="none" stroke="#222" stroke-width=".45"><rect x="-26.5" y="0" width="53" height="8"/><path d="M -10 8 H 10 V 53 H 125 V 63 H -10 Z"/>
+<path d="M -32 0 H-42 M -16 63 H-42 M -38 0 V63"/>
+<g fill="#222" stroke="none" font-family="Arial" font-size="5"><text x="-51" y="33">63</text><text x="29" y="6">8</text><text x="-5" y="31">20</text><text x="129" y="60">10</text></g></g>
+<text x="60" y="824" font-family="Arial" font-size="15" fill="#555">No inferred fixing holes, internal mechanism, trim dimensions or edge radii.</text></svg>

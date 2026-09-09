@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen edit",
+  "status": "review-drafts-not-published",
+  "jobs": [
+    {
+      "key": "still_square_dark",
+      "path": "public/images/products/9004s-stainless-steel-handle.webp",
+      "prompt": "Edit reference image 1, the exact real 9004S square lever and separate square keyhole escutcheon. Reference image 2 is STYLE ONLY, do not import its cylinder, keys or screw. Create an exquisite restrained editorial product still-life on charcoal fine matte paper, matching reference 2 lighting and understated metallic clarity. Product must be photo-preserved, its same original camera view, outline, relative proportions, flat rectangular lever section, 90 degree bend, top set screw, both nested square roses and exact keyhole cutout. Keep the lever assembly upper area and escutcheon below, preserving existing relative scale. Only replace white background, refine exposure and remove JPEG fringe, introduce credible short soft contact shadows. No redesigned metal, no added parts, no altered geometry, no gold recoloring. Broad upper-left softbox with restrained silver highlights, subtle brushed metal; ample breathing room around entire product. Square premium product photograph, no typography/logo/border. Treat original product pixels and silhouette as a protected photographic layer."
+    },
+    {
+      "key": "still_hinge_light",
+      "path": "public/images/products/ssh017-brass-and-steel-hinges.webp",
+      "prompt": "Edit reference image 1, exact real SSH017 lift-off flag hinge. Reference image 2 is STYLE ONLY, never import its hardware. Make a premium editorial product still-life on a cool neutral pale gray matte seamless field, quiet subtle grain, wide upper-left softbox and short soft realistic shadow to lower right. Preserve exact source product camera viewpoint and silhouette and dimensions relative to each other, including staggered upper right leaf and lower left leaf, barrel length and join position, precisely five countersunk holes in each leaf at their source locations. Original product is a protected photographic layer: clean and lightly enhance exposure and metal grain only, absolutely no redesign, no extra holes/screws, no rearranging leaves, no opening mechanism or inventing unseen sides. Center single product occupying about 65 percent of a square frame with generous gray margins. Brushed satin steel, restrained clear highlights and natural imperfections, no CGI plastic shine. No text, logo, border, props."
+    },
+    {
+      "key": "still_knob_dark",
+      "path": "public/images/products/tubular-knob-lock.webp",
+      "prompt": "Edit reference image 1: preserve the exact pictured actual tubular ball knob lock assembly as photographic subject. Reference image 2 is STYLE ONLY (charcoal backdrop and metallic light), do not import cylinder keys or screw. Replace white field and separate upper-left catalogue logo with premium dark graphite fine matte paper and realistic soft contact shadow. Keep original assembly camera view and geometry exactly: front spherical knob to left, its silver circular rose, rear knob to upper right, exposed yellow zinc mechanism unchanged, latch faceplate at right with exactly its two empty holes and original latch tongue. Do not reverse/mirror/rotate assembly, do not change knob silhouette, keyway, mechanism, material colors or relative sizes. Preserve all original visible product detail, retouch exposure and remove compression fringe only. Reframe the whole unchanged assembly centrally into square image occupying 70 percent of width, ample quiet charcoal negative space. Broad upper-left softbox brings restrained silver brush highlights, true zinc yellow remains only on original internal chassis. Premium architectural hardware still life, no added accessories, no invented screws/strike/keys, no text/logos/borders. It must remain clearly the identical real product photograph."
+    }
+  ]
+}

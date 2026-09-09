@@ -1,0 +1,540 @@
+{
+  "task": "111",
+  "threadId": "01a075c9-7e36-7390-bfa9-e180a0af8a3d",
+  "sourceOfTruth": "https://cantonlock.com/product-finder/",
+  "userDecision": "2026-09-09: no factory CAD held by client; use the Product Finder gallery as the authority for image content.",
+  "imageMethod": "Built-in imagegen edits of the saved real product photographs. No claim of pixel-perfect preservation or manufacturing geometry.",
+  "recovered": [
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/01-selection.blend",
+      "bytes": 186596,
+      "sha256": "593017db64aecee3ebb56d10847df10e6f86d699fe28a109d519416f8d508718",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/01-selection.json",
+      "bytes": 1507,
+      "sha256": "ec4ae8172a4dafb487d3fad6604ae9d1d7a2b49d091e03f4a58038293e682ccc",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/01-selection.png",
+      "bytes": 1616550,
+      "sha256": "203b532bd908a8031f129537a224230df33e468f1fcb4fe6a0aade7aa70bb97f",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/02-specification.blend",
+      "bytes": 469131,
+      "sha256": "c2171d42670033b8fa591236c9909dbfd6dd5ebe85eea1d02e0867118a73786a",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/02-specification.json",
+      "bytes": 1061,
+      "sha256": "8cd42cd6db747270eddf7d3450e54f0038d5138214d4ccb6f6f7451ced963a04",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/02-specification.png",
+      "bytes": 1822705,
+      "sha256": "44d54e5b866b49445cff234be7a0ffb8bc212d9f6607f87cb21a47666cff685a",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/03-material.blend",
+      "bytes": 241337,
+      "sha256": "1dc14a0133f622cbca310db447147e7b10585d39eb134073fb653c5ca26b7549",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/03-material.json",
+      "bytes": 1115,
+      "sha256": "a79a807aad5821f0b46050481a4375f1c97a62968130d3f7e0f02cb71ff5b492",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/03-material.png",
+      "bytes": 1613402,
+      "sha256": "d62830d2e1ccfbe955e2a8692458ea1ff4a3e44499da630ae661038e08114d05",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/01-light_bl028.png",
+      "bytes": 1552273,
+      "sha256": "076380f371a81484f956ca29ad5f9cbdf2b35f55a5f71f29dbb1d1f4b9d0acb3",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/02-panic301.png",
+      "bytes": 2205950,
+      "sha256": "6f8d6aba99a36deab66583ad2a62eb5b3ac0fd794c322c7ecf3f04db0a985d40",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/03-panic300.png",
+      "bytes": 1795817,
+      "sha256": "26a32c4cef270cf90af1c928755903c27bb14b91166a84aef610f61d8c34c967",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/04-lc14single.png",
+      "bytes": 1300917,
+      "sha256": "3e715a5eba743810f113430435d192e63e5eaeb1caac94c2f03fde200ee8333b",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/manifest.json",
+      "bytes": 6261,
+      "sha256": "0e19d41b4dd1862a2fd19e88f88f045604593fdce638cb7a4e0473d79cf7c0ed",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/egress-four-bolt/README.md",
+      "bytes": 1124,
+      "sha256": "b124f92e16b69df02a1ee2d98d4d97ac2e2d926409b8c768ebf8f898370443cf",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/metal-series/01-9004s-charcoal.png",
+      "bytes": 1970615,
+      "sha256": "78198617dcb9e4958f8b2577ca3c392abc01a8d2bb395b5b24c8c15bbb2f2213",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/metal-series/02-ssh017-pale-gray.png",
+      "bytes": 2183975,
+      "sha256": "239079f94d768f37934faf3a6a3e0c270e8c0c245c7b99c24b030a6d20179ce9",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/metal-series/03-tubular-knob-charcoal.png",
+      "bytes": 1997330,
+      "sha256": "2ad7a5836b925c84d6fc8de7b1a8972c7a34a4748603617cc2ba79b1a85bfd5e",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/metal-series/prompts.json",
+      "bytes": 3917,
+      "sha256": "fbfe8733e9989062a1583280ee87fc1d57476a7034e4ae89ac258a0d41910244",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/metal-series/README.md",
+      "bytes": 1328,
+      "sha256": "423345d8610a6c9d3f448f112135c37913adcd1fbdbfb52ad363423d848102e1",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/models-9004s/9004s-evidence.json",
+      "bytes": 1113,
+      "sha256": "961ddcc6cc2e85221e4d11f5bd1082604609f23f751a3aa721ac8d3aba4e06d4",
+      "releaseStatus": "incomplete-exterior-study"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/models-9004s/9004s-orthographic.svg",
+      "bytes": 1554,
+      "sha256": "e89f93257c33480aa1a5b3a4c017f904ad3896c56efec18db053d8d2158d9f00",
+      "releaseStatus": "incomplete-exterior-study"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/models-9004s/9004s-preview.png",
+      "bytes": 1744946,
+      "sha256": "f16022c28d447cdf0ffa26b5df8828ae5e4836e3aa7125eb271b7aa94c7effe2",
+      "releaseStatus": "incomplete-exterior-study"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/models-9004s/9004s-published-shell.blend",
+      "bytes": 94959,
+      "sha256": "f7b4c088acefd0dd5ff8b060972c54d6dffb775e2acf41aeb78839a1402f43a5",
+      "releaseStatus": "incomplete-exterior-study"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/models-9004s/README.md",
+      "bytes": 2029,
+      "sha256": "9ff1a8d72bd5c199780d1904956e0e3aa8de843e6583555333076e853879111e",
+      "releaseStatus": "incomplete-exterior-study"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/01-stone-selection-scene.png",
+      "bytes": 2545287,
+      "sha256": "fa61a00cda805f5d5f095fe416f14301c9fb573a9aa4bc36a49c1c34a82d5cf3",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/02-sample-box-prompt.json",
+      "bytes": 2326,
+      "sha256": "ccd13ce2c040e0560dee02822e89b85369a002f64dd47fbfc3a4ada6923420c0",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/02-sample-box.png",
+      "bytes": 2860577,
+      "sha256": "a48dde477936ecb55412c2a9f9684eb4c11590959aefb3edbec05d8b08f60f63",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/archive.json",
+      "bytes": 2972,
+      "sha256": "bf244854e985c0e8592232bfdddfefcf79497e19500159b95a558a5b71fb1708",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/manifest.json",
+      "bytes": 1182,
+      "sha256": "0871613201803893842bba692637ed9cded76eec1c410fdca1a57f6275ca477b",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/README.md",
+      "bytes": 1128,
+      "sha256": "4ee1ca529e7bdc22e532e597e796613b1df6072af27904273d80535c5ee4dd6d",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/9004s-reference.webp",
+      "bytes": 14138,
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/box-original.png",
+      "bytes": 2960582,
+      "sha256": "51b7045c17472dcb75aa324a0387679fd5f05a6f9c448293e633090f040c575a",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/client-hinge-reference.png",
+      "bytes": 1552273,
+      "sha256": "076380f371a81484f956ca29ad5f9cbdf2b35f55a5f71f29dbb1d1f4b9d0acb3",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/lc04-reference.webp",
+      "bytes": 22736,
+      "sha256": "6b1b197ea784702c92a11e04ad8208f714764a6eb9090038fc4f0383396da1e1",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/stone-original.png",
+      "bytes": 2650678,
+      "sha256": "5b6b5edb596778929a2bf710976fd53985bea3758b1bf908f95cac47f81deaf0",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/wood-original.png",
+      "bytes": 2090752,
+      "sha256": "1f4ef5cdfcc8d051f1345a45c1ce217bc7a99603dc076c58058250c5209283fa",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/01-edited.png",
+      "bytes": 2048822,
+      "sha256": "b3f72211a5bfe95a53a2e812aa3fb6bc819714a0d3b46e76088a0cdc57b5d558",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/01-original.webp",
+      "bytes": 24222,
+      "sha256": "edbea10e58eaf86f07e67b4e30fac06fce8f7ca16fcb1b7fd1ac0c516cfbe890",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/02-edited.png",
+      "bytes": 1591924,
+      "sha256": "df424ffb4dcaf68fd4baf8429114524dfc56cee399fc589850941ba8c30a4cdf",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/02-original.webp",
+      "bytes": 14372,
+      "sha256": "d1db08db42c0f73d86a0699d812cedc31c7c25f76614d964db0ad1a41cd5fb87",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/03-edited.png",
+      "bytes": 1602855,
+      "sha256": "048c0d636b8d0482a52b84ba181efe8f3c9fc9a9025b81d506a19a623fefb419",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/03-original.webp",
+      "bytes": 8200,
+      "sha256": "e62792a695acf34e92b57d4521380eda38df0e93c08220fd66d0a97de828c824",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/build-review.mjs",
+      "bytes": 2082,
+      "sha256": "612fe754c35b3918fe3434d57a5dba050c76166feb43698226fb09a10a2c6623",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/manifest.json",
+      "bytes": 5196,
+      "sha256": "6f8e474d306d91bb0032f0ce38946e8c88cf7ad0d77e14acdb47047fae86c700",
+      "releaseStatus": "historical-private-draft"
+    },
+    {
+      "file": "docs/design-references/2026-09-07-home-stills/source-corrections/review.html",
+      "bytes": 2044,
+      "sha256": "9d65723a71cd162a339f76b454119fb12cf38bc3f8e8064daf4e7e99f5285c88",
+      "releaseStatus": "historical-private-draft"
+    }
+  ],
+  "catalogue": [
+    {
+      "model": "LC04 85*60",
+      "url": "https://cantonlock.com/products/lock-cases/lc04-85-60-lock-case/",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "85mm"
+        },
+        {
+          "label": "Backset",
+          "value": "60mm"
+        },
+        {
+          "label": "Cylinder",
+          "value": "Euro profile"
+        },
+        {
+          "label": "Bolts",
+          "value": "Four round bolts"
+        },
+        {
+          "label": "Application",
+          "value": "Wooden doors"
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/products/lc04-85-60-lock-case.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case.webp",
+          "sha256": "6b1b197ea784702c92a11e04ad8208f714764a6eb9090038fc4f0383396da1e1",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/lc04-85-60-lock-case-2.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case-2.webp",
+          "sha256": "6170c0d337899f10d0bbbe500c806ebf2ad2d6c098c4f87e3fe1ce08b3fcac7c",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/lc04-85-60-lock-case-3.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case-3.webp",
+          "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/lc04-85-60-lock-case-4.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case-4.webp",
+          "sha256": "2aefe27b055d976839e6ce18ee5ad5147796cc2c4eb146e45527520a793184c1",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/lc04-85-60-lock-case-5.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case-5.webp",
+          "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/lc04-85-60-lock-case-6.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/lc04-85-60-lock-case-6.webp",
+          "sha256": "4bf1d896476d4e6b69152fb6c45858f5feebb9ed910ebf73abb5f116bda49106",
+          "width": 1000,
+          "height": 1000
+        }
+      ],
+      "candidate": {
+        "file": "docs/design-references/2026-09-09-111-recovery/01-stone-lc04-draft.png",
+        "sha256": "51788af0deba17a636f390f47368eaa02c2d7235edbed7f50edb83da99a3cf2b",
+        "width": 1254,
+        "height": 1254,
+        "releaseStatus": "private-review-candidate",
+        "qa": "四圆柱锁舌、上二下三固定孔、面板全长已目视对照。细小冲压轮廓与反光并非逐像素锁定，保留为候选。"
+      }
+    },
+    {
+      "model": "BL028",
+      "url": "https://cantonlock.com/products/brass-steel-hinges/bl028-brass-and-steel-hinges/",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/201"
+        },
+        {
+          "label": "Size",
+          "value": "4\"x3\"x2.5MM"
+        },
+        {
+          "label": "Function",
+          "value": "fix the door"
+        },
+        {
+          "label": "Opening Angle",
+          "value": "90-180°"
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges.webp",
+          "sha256": "a0103ae00fe34d31f7150f0e06930d508ee310d2b95fae5e41762a601cdcdced",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-2.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-2.webp",
+          "sha256": "d76124779f385bb65d1413d7f3b70af2fde6c00992c65e6b22cf89cd1d6615bf",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-3.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-3.webp",
+          "sha256": "74d78de92e9d4ad158d497e82485a78394e2ab581c583c35a8162a442012fb52",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-4.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-4.webp",
+          "sha256": "c09df26d7b2c13b6c0d8918d2ffc61e5e90fec6c263a0f3bd66f60517b96782d",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-5.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-5.webp",
+          "sha256": "0dd38f73b026a02db3a073f0d59a4b3bb2a69de38a36f65916220b6f61d0612c",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-6.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-6.webp",
+          "sha256": "5e334923793ea1e861817933b3c88d7db3953dc127bc7c79bc9cdda8573fbfad",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/bl028-brass-and-steel-hinges-7.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/bl028-brass-and-steel-hinges-7.webp",
+          "sha256": "e7ebf8e563c69b7cbda49e3403b978cd532b002327237d67b0e991a951a582f7",
+          "width": 1000,
+          "height": 1000
+        }
+      ],
+      "candidate": {
+        "file": "docs/design-references/2026-09-09-111-recovery/02-box-bl028-draft.png",
+        "sha256": "b2054983b664996b68fb3b0a21ee2670beff7d5179d1d2c5a7eb282891e0438d",
+        "width": 1254,
+        "height": 1254,
+        "releaseStatus": "private-review-candidate",
+        "qa": "八孔交错关系及轴节布局已目视对照。采用单款产品避免虚构混装套装。孔径与边缘倒角不能从生成图证明。"
+      }
+    },
+    {
+      "model": "9004S",
+      "url": "https://cantonlock.com/products/stainless-steel-handles/9004s-stainless-steel-handle/",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35–50mm"
+        },
+        {
+          "label": "Cylinder",
+          "value": "Brass"
+        },
+        {
+          "label": "Lever length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "53mm square"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "8mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "20mm"
+        },
+        {
+          "label": "Projection",
+          "value": "63mm"
+        },
+        {
+          "label": "Spindle",
+          "value": "8mm"
+        }
+      ],
+      "images": [
+        {
+          "source": "/images/products/9004s-stainless-steel-handle.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle.webp",
+          "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/9004s-stainless-steel-handle-2.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle-2.webp",
+          "sha256": "400dc5aa7c6430dd2907c1c89bde4cb45f39783b73d3f37dff261d0ba76701a6",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/9004s-stainless-steel-handle-3.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle-3.webp",
+          "sha256": "cd3fad97f36fb833bc6745d4db40e57c530fe159993bbbfb110535e428f19408",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/9004s-stainless-steel-handle-4.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle-4.webp",
+          "sha256": "a7d62f472757a0d051476a8f4a23d0478e861480c147a8740404f5dcbb8032a8",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/9004s-stainless-steel-handle-5.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle-5.webp",
+          "sha256": "62d36ef2ec161574132921e1071ca89052bddb5fb9679bce7d079165f76c7509",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "source": "/images/products/9004s-stainless-steel-handle-6.webp",
+          "snapshot": "docs/design-references/2026-09-09-111-recovery/references/9004s-stainless-steel-handle-6.webp",
+          "sha256": "f7c2a444c7552ff944e37d89cb03b0bda0ff65f8801f99409ac931af9d307777",
+          "width": 1000,
+          "height": 1000
+        }
+      ],
+      "candidate": {
+        "file": "docs/design-references/2026-09-09-111-recovery/03-wood-9004s-candidate.png",
+        "sha256": "d058d1fee0039834001f279cccb190f6e14e298485735e7e9e2342c0ebb60f2f",
+        "width": 1254,
+        "height": 1254,
+        "releaseStatus": "private-review-candidate",
+        "qa": "保留原图直柄、内嵌方底座和上方紧定螺钉；已修正钥匙孔中的白底残留。样品陈列不证明门锁安装配套关系。"
+      }
+    }
+  ]
+}

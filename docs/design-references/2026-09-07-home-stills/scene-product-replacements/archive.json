@@ -1,0 +1,49 @@
+{
+  "method": "Built-in imagegen photographic edits; archived without pixel processing",
+  "generatedImagesAreNotCAD": true,
+  "sources": [
+    {
+      "originalSource": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/New folder (2)/exec-4eea0ca8-d56f-4ebb-a675-7facf87d6347.png",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/stone-original.png",
+      "sha256": "5b6b5edb596778929a2bf710976fd53985bea3758b1bf908f95cac47f81deaf0"
+    },
+    {
+      "originalSource": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/New folder (2)/exec-4e313ee4-6d40-4122-ba32-894ed2861d44.png",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/box-original.png",
+      "sha256": "51b7045c17472dcb75aa324a0387679fd5f05a6f9c448293e633090f040c575a"
+    },
+    {
+      "originalSource": "C:/Users/johns/.codex/generated_images/01a0570e-5f9e-7ea1-9127-cf4f6d0adb76/New folder (2)/exec-4e0ec391-de79-46e0-ad61-c6494b8dab75.png",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/wood-original.png",
+      "sha256": "1f4ef5cdfcc8d051f1345a45c1ce217bc7a99603dc076c58058250c5209283fa"
+    },
+    {
+      "originalSource": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\public\\images\\products\\lc04-85-60-lock-case.webp",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/lc04-reference.webp",
+      "sha256": "6b1b197ea784702c92a11e04ad8208f714764a6eb9090038fc4f0383396da1e1"
+    },
+    {
+      "originalSource": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\public\\images\\products\\9004s-stainless-steel-handle.webp",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/9004s-reference.webp",
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4"
+    },
+    {
+      "originalSource": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\client-home-20260908\\black-hinge-original.png",
+      "snapshot": "docs/design-references/2026-09-07-home-stills/scene-product-replacements/references/client-hinge-reference.png",
+      "sha256": "076380f371a81484f956ca29ad5f9cbdf2b35f55a5f71f29dbb1d1f4b9d0acb3"
+    }
+  ],
+  "drafts": [
+    {
+      "file": "01-stone-selection-scene.png",
+      "sha256": "fa61a00cda805f5d5f095fe416f14301c9fb573a9aa4bc36a49c1c34a82d5cf3",
+      "releaseStatus": "draft-only"
+    },
+    {
+      "file": "02-sample-box.png",
+      "sha256": "a48dde477936ecb55412c2a9f9684eb4c11590959aefb3edbec05d8b08f60f63",
+      "releaseStatus": "draft-only"
+    }
+  ],
+  "note": "Catalogue snapshots captured 2026-09-08 for the box and wood retries. Earlier stone generation used mutable catalogue paths; its exact prior source bytes are not asserted."
+}

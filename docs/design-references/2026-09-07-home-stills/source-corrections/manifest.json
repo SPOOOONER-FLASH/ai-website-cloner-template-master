@@ -1,0 +1,35 @@
+[
+  {
+    "key": "verified_ju051",
+    "source": "public/images/products/ju-051-door-closer.webp",
+    "prompt": "BACKGROUND REPLACEMENT ONLY of the supplied real JU-051 product photograph. Mask and PROTECT ALL METAL PIXELS. Keep the exact photograph of the closer and arm, same silhouette, same view, same coordinates and proportions inside the original square composition. Preserve original tall narrow arm triangle (apex near x380 y105 in 800px source), original body x350..685 y525..710 and arm shoe x100..240 y640..705. Do not widen the arm opening, do not change hardware or mounting feet, end hex recess, valve holes, pivot screw, joints, original silver coated aluminum color or fine original texture. The product is not to be regenerated or redesigned, only background replaced and gentle photographic exposure balancing. Replace white with charcoal gray matte studio ground, soft broad side-light from upper-left, subtle contact shadows directly under existing product surfaces, clean elegant architectural hardware editorial photograph. No extra screws, no hinge, no lock, no tools, no props, no text. Preserve original existing camera angle; it is a photographed catalogue object on a dark editorial field, not a new 3D scene. Square image with generous margin. Source image is the sole authority for every mechanical feature.",
+    "name": "JU-051",
+    "url": "https://cantonlock.com/products/door-closers/ju-051-door-closer/",
+    "generated": "C:/Users/johns/.codex/generated_images/01a075c9-7e36-7390-bfa9-e180a0af8a3d/exec-5631553f-78d0-4851-a469-002bb3150711.png",
+    "output": "01-edited.png",
+    "original": "01-original.webp",
+    "status": "source-referenced edit; visual review only; not dimensionally certified; not deployed"
+  },
+  {
+    "key": "verified_lc04",
+    "source": "public/images/products/lc04-85-60-lock-case.webp",
+    "prompt": "Perform strict photographic BACKGROUND REPLACEMENT of attached real LC04 85x60 catalogue photograph. PROTECT ALL EXISTING PRODUCT PIXELS and silhouette. Keep the exact three pictured objects in the identical layout and original view: left folded strike box, middle long strike with stepped side lip and exact holes and two cutouts, right lock case with FOUR ROUND CYLINDRICAL bolts projecting left, original spring latch, original black stamped case openings, screws, Euro cylinder cutout, original faceplate fixing holes. Do NOT invent a cylinder, keys, handle, second latch, replacement rectangle bolt or any new parts. Do NOT adjust camera angle or redraw product features. Remove only separate top-left Hyland logo and all surrounding white background. Replace it with very light neutral cool gray seamless matte studio field, subtle soft short shadows consistent with existing photograph; balanced broad upper-left softbox, retain existing metal colors and optical detail. Premium restrained European architectural hardware catalogue still life. Same square canvas, source layout, scale and proportion unchanged. Exposure cleanup and mild noise cleanup only on metal, no reconstructed new details. Product fidelity is higher priority than photorealistic relighting.",
+    "name": "LC04 85x60",
+    "url": "https://cantonlock.com/products/lock-cases/lc04-85-60-lock-case/",
+    "generated": "C:/Users/johns/.codex/generated_images/01a075c9-7e36-7390-bfa9-e180a0af8a3d/exec-bb0f06e8-560e-45ea-82cd-3110252924cc.png",
+    "output": "02-edited.png",
+    "original": "02-original.webp",
+    "status": "source-referenced edit; visual review only; not dimensionally certified; not deployed"
+  },
+  {
+    "key": "verified_bl028",
+    "source": "public/images/products/bl028-brass-and-steel-hinges-2.webp",
+    "prompt": "BACKGROUND REPLACEMENT ONLY. Keep attached real BL028 black hinge photograph as an immutable protected foreground: same exact camera position, same leaf sizes, same 8 countersunk holes with source staggered positions, same center barrel with all original seams and rings, same black coating, original highlights and geometry. Do not mirror, flatten, rotate, change angle or generate new surfaces. This is the actual product photograph; do not reconstruct it. Change only white background into quiet deep graphite matte studio field with slight tonal separation so black silhouette remains clear, very subtle short grounding shadow, soft broad directional upper-left illumination, restrained editorial architectural hardware finish, absolutely no added screws, accessories or other objects. Preserve same scale and placement in square canvas. All original holes remain real open holes and show the new backdrop, no shifting hole positions to improve symmetry. No typography or logos. Preserve the source photograph down to mechanical detail; accuracy outranks stylization.",
+    "name": "BL028",
+    "url": "https://cantonlock.com/products/brass-steel-hinges/bl028-brass-and-steel-hinges/",
+    "generated": "C:/Users/johns/.codex/generated_images/01a075c9-7e36-7390-bfa9-e180a0af8a3d/exec-92c74e69-bc36-4817-9195-29141e48db0d.png",
+    "output": "03-edited.png",
+    "original": "03-original.webp",
+    "status": "source-referenced edit; visual review only; not dimensionally certified; not deployed"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "id": "02-specification",
+  "slug": "70sn-lock-cylinder",
+  "mood": "paper",
+  "cropTop": 120,
+  "purpose": "Specification support",
+  "label": "70SN / 70 mm",
+  "width": 1.1,
+  "x": 0.59,
+  "y": 0.02,
+  "texture": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\tmp\\codex-editorial-still-inputs\\02-specification.png",
+  "textureWidth": 767,
+  "textureHeight": 590,
+  "sourceRecord": "content/products/70sn-lock-cylinder.json",
+  "sourceImage": "/images/products/70sn-lock-cylinder.webp",
+  "sourceSha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac",
+  "technique": "Original photograph on an alpha plate inside a Blender still-life set. No reconstructed product geometry or simulated installation.",
+  "scope": "Design preview, not a dimensional model or a completed project photograph.",
+  "productDimensions": [
+    {
+      "label": "Size",
+      "value": "70MM"
+    }
+  ],
+  "outputDirectory": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-07-home-stills"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "Drafts only; not published as catalogue photography or dimensionally certified",
+  "brief": "Preserve client scene composition, lighting, materials, props and positions. Replace incorrect hardware from actual catalogue photographs. No closers; black hinges on pale backing.",
+  "generation": "Built-in imagegen. Prior parallel batch terminated without returned files. Subsequent calls are sequential.",
+  "drafts": [
+    {
+      "file": "01-stone-selection-scene.png",
+      "qa": "Rejected for production: LC04 faceplate lost fixing holes; bolt end appearance is ambiguous; composition drift includes cropped timber sample. Preserve only as an iteration record."
+    },
+    {
+      "file": "02-sample-box.png",
+      "prompt": "02-sample-box-prompt.json",
+      "qa": "Pale liner improves contrast. LC04 retains two upper and three lower fixing holes and four closed-end bolts. Hinge middle hole arrangement still differs from supplied reference; not approved as geometrically faithful product photography."
+    }
+  ],
+  "next": "Correct remaining source-image feature drift before website placement. Three-dimensional CAD cannot be validated by imagegen output."
+}

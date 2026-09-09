@@ -1,0 +1,11 @@
+C:\Users\johns\Downloads\ai-website-cloner-template-master\scripts\blender\9004s-published-shell.py:58: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True
+C:\Users\johns\Downloads\ai-website-cloner-template-master\scripts\blender\9004s-published-shell.py:115: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Soft studio'); world.use_nodes=True
+00:01.937  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+00:07.984  render           | Saved: 'C:\Users\johns\Downloads\ai-website-cloner-template-master\tmp\codex-111-model-check\9004s-preview.png'
+Info: Saved as "9004s-published-shell.blend"
+BLENDER_OK 9004S published shell, mesh dimensions and closed solids verified
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

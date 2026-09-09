@@ -1,0 +1,26 @@
+{
+  "id": "03-material",
+  "slug": "ssh017-brass-and-steel-hinges",
+  "mood": "stone",
+  "cropTop": 0,
+  "purpose": "Material and construction detail",
+  "label": "SSH017 / Stainless steel",
+  "width": 0.61,
+  "x": 0.62,
+  "y": 0.02,
+  "texture": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\tmp\\codex-editorial-still-inputs\\03-material.png",
+  "textureWidth": 460,
+  "textureHeight": 601,
+  "sourceRecord": "content/products/ssh017-brass-and-steel-hinges.json",
+  "sourceImage": "/images/products/ssh017-brass-and-steel-hinges.webp",
+  "sourceSha256": "cfb890a7c083c9d91a521c43adb32a3f666e3b09bd194ef3508f9b67335d957f",
+  "technique": "Original photograph on an alpha plate inside a Blender still-life set. No reconstructed product geometry or simulated installation.",
+  "scope": "Design preview, not a dimensional model or a completed project photograph.",
+  "productDimensions": [
+    {
+      "label": "Size",
+      "value": "4\"x3\"x2.5MM"
+    }
+  ],
+  "outputDirectory": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-07-home-stills"
+}
