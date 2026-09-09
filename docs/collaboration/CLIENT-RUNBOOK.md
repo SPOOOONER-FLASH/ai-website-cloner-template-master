@@ -20,6 +20,7 @@
 | 4 | Bing / Clarity 设置 | 一次性 | 5 分钟 |
 | 5 | 装 / 更新 skills | 想更新时 | 3 分钟 |
 | 6 | **雷茵中文站上预览域名（2026-09-06 新增，只做一次）** | 一次性 | 5 分钟 |
+| 7 | **两台机器怎么同步（2026-09-09 新增）** | 每次开工/收工 | 1 分钟 |
 
 ---
 
@@ -701,3 +702,51 @@ EN 1154 检测报告，上面印着：
 `content/rayen/product-image-cleanup.json` 的 `refused` 里。
 
 `npm run sheets` 生成的美工填写表已经在统计要补拍的型号，这 78 个在里面。
+
+---
+
+## 7. 两台机器怎么同步（2026-09-09 新增）
+
+甲方 2026-09-09：「在那台机器上办公，做雷茵的东西，然后这里后续再同步过来」。
+那台机器上的目录是 `C:\Users\86132\Downloads\ai-website-cloner-template-master-main`，
+已确认是 **clone**（不是下载的 zip），所以 `git pull` 能用。
+
+### 为什么要有这一节
+
+两台机器改同一个仓库，最容易出的事不是冲突报错，而是**两边各自改了同一批文件，
+谁后推谁就把对方覆盖掉**，而且 git 不会拦你 —— 它只在同一行冲突时才报。
+`content/products/` 有 587 个 JSON、`out/` 一次动几千个文件，这种覆盖发生了很难发现。
+
+规矩只有一条：**开工前先拉，收工后就推。中间不要两台同时改。**
+
+### 每次在那台机器上开工前
+
+打开那个目录，在里面开一个终端（在文件夹地址栏输入 `cmd` 回车），粘贴：
+
+```bash
+git pull
+```
+
+**成功的样子**：打印 `Updating xxxxxxx..xxxxxxx` 加一串文件名，
+或者 `Already up to date.`（表示这边没有新东西，也是正常的）。
+
+**看到 `error: Your local changes to the following files would be overwritten by merge`**：
+那台机器上有没提交的改动。**停下来截图发我**，不要用 `git checkout` 或 `git reset` ——
+那两条命令会直接丢掉那些改动。
+
+### 每次在那台机器上收工后
+
+```bash
+git add -A
+git commit -m "描述这次做了什么"
+git push
+```
+
+**成功的样子**：最后打印 `main -> main`。
+
+**看到 `rejected` / `non-fast-forward`**：这边先推了新东西。先 `git pull` 再 `git push`。
+
+### 服务器怎么拿到
+
+两台机器谁推都一样 —— 服务器每 5 分钟自己 `git pull` 一次。
+推完等 5 分钟，网站就更新了。**记得 purge Cloudflare。**

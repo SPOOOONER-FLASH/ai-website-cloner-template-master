@@ -7,6 +7,8 @@ import {
   getCategory,
   getProduct,
   getRelatedProducts,
+  getStyleFamily,
+  isLeverHandle,
   legalName,
   products,
   zhPath,
@@ -57,6 +59,9 @@ export default async function RayenProductPage({ params }: Props) {
 
   const category = getCategory(categorySlug);
   const related = getRelatedProducts(product);
+  const family = getStyleFamily(product);
+  const familyLevers = family.filter(isLeverHandle);
+  const familyHandles = family.filter((item) => !isLeverHandle(item));
   const images = [product.heroImage, ...product.gallery].filter(
     (image): image is NonNullable<typeof image> => Boolean(image?.src),
   );
@@ -157,6 +162,34 @@ export default async function RayenProductPage({ params }: Props) {
               </div>
             </div>
           </div>
+
+
+          {family.length ? (
+            <section className="mt-16 border-t border-[var(--color-line)] pt-10 md:mt-24">
+              {/*
+                同款式搭配 — the client's own framing, from the note that came with the
+                image packs: 「有门把手的表示此款式搭配有同风格的门把手」. It sits ABOVE
+                同类型号 because it answers a different and better question. 同类型号 is
+                "what else could I buy instead"; this is "what else do I need to order
+                so the doors behind this one match". The second is the one that grows an
+                order, and it is the one a buyer cannot work out from a catalogue on
+                their own.
+              */}
+              <h2 className="text-[18px]">同款式搭配</h2>
+              <p className="mt-2 max-w-[60ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">
+                {isLeverHandle(product)
+                  ? "本款执手属于同一设计款式，可与下列拉手成套使用。"
+                  : familyLevers.length
+                    ? `本款配套同风格门把手 ${familyLevers.map((item) => item.model).join("、")}，可成套下单。`
+                    : "同一设计款式下的其他型号，安装面与线条一致。"}
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+                {[...familyLevers, ...familyHandles].map((item) => (
+                  <ProductCard key={item.slug} product={item} />
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           {related.length ? (
             <section className="mt-16 border-t border-[var(--color-line)] pt-10 md:mt-24">

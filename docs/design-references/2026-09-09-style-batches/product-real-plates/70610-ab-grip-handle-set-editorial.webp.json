@@ -1,0 +1,18 @@
+{
+  "kind": "real-photograph-on-editorial-field",
+  "grammar": "void-light",
+  "field": "#f2f2f2 → #e2e2e2, radial from above",
+  "fieldMeasuredFrom": "FSB heroes fetched 2026-09-05 at w_1440 (dieter-rams stage; designed-by; produktfamilien_uebersicht)",
+  "objectMeanLuminance": 81,
+  "productGeometry": "Original pixels retained. Uniform resize and complete-object crop only — no redraw, no restyle, no recombination.",
+  "addedByThisScript": [
+    "graded backdrop",
+    "cast shadow derived from the object's own silhouette"
+  ],
+  "sources": [
+    {
+      "source": "public\\images\\products\\70610-ab-grip-handle-set.webp",
+      "sha256": "c7970951314acfd1237fca13c1a2574c8528de5ce3db50d0bb358698883d3c6b"
+    }
+  ]
+}

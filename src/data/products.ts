@@ -42,7 +42,20 @@ import { products as generatedProducts } from "./generated/products";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 import { brandProductImageRef, brandProductImageRefs } from "./product-image-branding";
 
-export const products: Product[] = generatedProducts.map((product) => ({
+/**
+ * True when a record belongs on the HYDE English/Spanish catalogue.
+ *
+ * One `content/products` directory feeds three brands. Almost every record carries no
+ * `sites` field and belongs to all of them; the exception is the supplier handle import
+ * of 2026-09-08, which the client scoped to RAYEN. Filtering here rather than at each of
+ * the twenty call sites means the sitemap, search index, finder, counts and llms.txt all
+ * agree without any of them knowing this rule exists.
+ */
+function onHydeCatalogue(product: Product): boolean {
+  return !product.sites || product.sites.includes("hyde");
+}
+
+export const products: Product[] = generatedProducts.filter(onHydeCatalogue).map((product) => ({
   ...product,
   heroImage: brandProductImageRef(applyImageAltOverride(product.heroImage)),
   gallery: brandProductImageRefs(applyImageAltOverrides(product.gallery)),

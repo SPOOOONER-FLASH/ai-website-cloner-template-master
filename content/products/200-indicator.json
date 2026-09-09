@@ -56,38 +56,43 @@
   "heroImage": {
     "src": "/images/products/200-indicator.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 200 indicator"
+    "label": "Hyland 200 Indicator"
   },
   "gallery": [
     {
       "src": "/images/products/200-indicator-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 2"
+      "label": "Hyland 200 Indicator, view 2"
     },
     {
       "src": "/images/products/200-indicator-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 3"
+      "label": "Hyland 200 Indicator, view 3"
     },
     {
       "src": "/images/products/200-indicator-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 4"
+      "label": "Hyland 200 Indicator, view 4"
     },
     {
       "src": "/images/products/200-indicator-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 5"
+      "label": "Hyland 200 Indicator, view 5"
     },
     {
       "src": "/images/products/200-indicator-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 6"
+      "label": "Hyland 200 Indicator, view 6"
     },
     {
       "src": "/images/products/200-indicator-7.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 200 indicator, view 7"
+      "label": "Hyland 200 Indicator, view 7"
+    },
+    {
+      "src": "/images/products/200-indicator-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 200 Indicator, view 8"
     }
   ],
   "attachmentIds": [],
@@ -151,5 +156,18 @@
     "model": "200",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/200-indicator.mp4",
+      "poster": {
+        "src": "/images/products/200-indicator-video.webp",
+        "ratio": "16 / 9",
+        "label": "200 Indicator, demonstration still"
+      },
+      "label": "200 Indicator — product demonstration",
+      "durationSeconds": 34,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

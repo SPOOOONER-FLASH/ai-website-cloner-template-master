@@ -96,6 +96,24 @@ const CATEGORY_BY_FOLDER = {
   "glass door handles": "glass-door-accessories",
   "door flush bolts": "hardware-accessories",
   latches: "hardware-accessories",
+  /*
+    2026-09-09, the last eight archives — the client says the catalogue is complete
+    after these.
+
+    Six of them land in `hardware-accessories`, which is where this catalogue keeps the
+    items that are not a lock: viewers, stoppers, indicators, guards, house numbers and
+    power transfer. The client files them as separate families because that is how a
+    factory organises production; the site groups them because that is how a buyer
+    browses. Both are right, and this map is the join between the two.
+  */
+  "bathroom accessories": "bathroom-accessories",
+  "sliding hook locks": "sliding-hook-locks",
+  "door viewers": "hardware-accessories",
+  "door stoppers": "hardware-accessories",
+  indicators: "hardware-accessories",
+  "security door guards": "hardware-accessories",
+  "house numbers": "hardware-accessories",
+  "power transfer devices": "hardware-accessories",
 };
 
 const fromRoots = process.argv.flatMap((a, i) =>

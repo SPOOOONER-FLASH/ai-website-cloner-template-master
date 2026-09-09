@@ -199,6 +199,27 @@ export interface Product {
   /** Model numbers of related products. Resolved at render time, not stored as objects. */
   relatedModels: string[];
   /**
+   * The design family this model belongs to, e.g. "1130".
+   *
+   * Supplier ranges pair a pull handle with a lever handle drawn in the same language,
+   * and a buyer specifying a door wants both. Storing the family rather than a list of
+   * partner models means the pairing is written once and both directions are derived;
+   * two hand-maintained lists drift, and the way you find out is a lever page that does
+   * not mention the handle whose page recommends it.
+   *
+   * Absent on the imported catalogue, which carries no family data.
+   */
+  styleFamily?: string;
+  /**
+   * Which sites may list this product. Absent means all of them, which is every record
+   * except the supplier handle import.
+   *
+   * One content/products directory feeds three brands. The 2026-09-08 handle packs are
+   * for RAYEN's Chinese site by the client's explicit instruction; putting them on the
+   * English export sites too would be widening the brief on the agent's own judgement.
+   */
+  sites?: string[];
+  /**
    * The product's own listing on the client's Alibaba storefront.
    *
    * Optional, and empty on every imported record. When set, the detail page links

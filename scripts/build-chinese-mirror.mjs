@@ -241,7 +241,16 @@ const products = [];
 
 for (const file of files) {
   const product = readJson(join(PRODUCTS_DIR, file));
-  const nameZh = translateName(product.name);
+  /*
+    A record's own nameZh wins over the dictionary.
+
+    The dictionary is keyed on the ENGLISH name, so every model sharing a name gets the
+    same Chinese one — right for the imported catalogue, wrong for the 2026-09-08 handle
+    import, where 「不锈钢拉手」 and 「门拉手」 are both "Stainless Steel Handle" upstream
+    but sit in different categories here. Per-record beats per-name whenever the record
+    bothered to say.
+  */
+  const nameZh = product.nameZh || translateName(product.name);
   const modelLabel = `雷茵 ${product.model} ${nameZh}`.trim();
 
   const specs = (product.specs ?? [])
@@ -283,6 +292,7 @@ for (const file of files) {
     heroImage,
     gallery,
     relatedModels: product.relatedModels ?? [],
+    styleFamily: product.styleFamily ?? "",
     // No brand suffix here — the route's metadata template appends "| RAYEN 雷茵".
     // Baking a second, differently-worded suffix in produced titles that disagreed with
     // every other page on the site.

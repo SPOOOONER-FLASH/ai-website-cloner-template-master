@@ -15,6 +15,7 @@
 | Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
 | Codex | scripts/blender/editorial-stills.py, scripts/build-editorial-stills.mjs, docs/design-references/2026-09-07-home-stills | Three real-photo architectural still-life previews; no carousel change | 2026-09-07 |
+| Codex | `docs/design-references/2026-09-09-style-batches/` | Two reference-derived image libraries: 20 real-product plates + 20 original architecture scenes | 2026-09-09 |
 
 > ⚠ 2026-09-08：甲方通知 Codex 下线（服务器崩溃），并指示 Claude 直接部署。
 > 上面两行 Codex 的认领因此是**停在半途的记录**，不是进行中的工作——保留是因为

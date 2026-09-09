@@ -82,9 +82,40 @@
   "heroImage": {
     "src": "/images/products/600-concealed-sliding-door-handle.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 600 recessed sliding door handles in four finishes"
+    "label": "Hyland 600 Concealed Sliding Door Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 2"
+    },
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 3"
+    },
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 4"
+    },
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 5"
+    },
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 6"
+    },
+    {
+      "src": "/images/products/600-concealed-sliding-door-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 600 Concealed Sliding Door Handle, view 7"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [
     "Stainless Steel Glass Door Pull Handle"
@@ -160,5 +191,18 @@
     "model": "600",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/600-concealed-sliding-door-handle.mp4",
+      "poster": {
+        "src": "/images/products/600-concealed-sliding-door-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "600 Concealed Sliding Door Handle, demonstration still"
+      },
+      "label": "600 Concealed Sliding Door Handle — product demonstration",
+      "durationSeconds": 21,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

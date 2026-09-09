@@ -35,6 +35,7 @@ export type RayenProduct = {
   heroImage?: RayenImage;
   gallery: RayenImage[];
   relatedModels: string[];
+  styleFamily: string;
   seoTitle: string;
   seoDescription: string;
 };
@@ -157,6 +158,32 @@ export const siteFacts = [
   { value: String(products.length), unit: "个", label: "在售型号" },
   { value: String(rayen.brand.foundedYear), unit: "年", label: "公司成立" },
 ];
+
+
+/**
+ * The other models in this model's design family.
+ *
+ * The supplier ships a pull handle and a lever handle drawn in the same language, and
+ * the client's own note put it plainly: 「有门把手的表示此款式搭配有同风格的门把手」.
+ * That is a real specifying decision — somebody choosing a handle for an entrance door
+ * usually needs the matching lever for the doors behind it, and finding out later that
+ * there was one costs a second order.
+ *
+ * Derived from styleFamily rather than stored per model, so the two directions cannot
+ * disagree: whatever the handle says about the lever, the lever says about the handle.
+ */
+export function getStyleFamily(product: RayenProduct): RayenProduct[] {
+  if (!product.styleFamily) return [];
+  return products.filter(
+    (candidate) =>
+      candidate.styleFamily === product.styleFamily && candidate.slug !== product.slug,
+  );
+}
+
+/** True when this record is a lever handle — the family block calls those out by name. */
+export function isLeverHandle(product: RayenProduct): boolean {
+  return product.categoryPath[0] === "lever-handles";
+}
 
 /** Related models a buyer might compare, resolved to records that exist. */
 export function getRelatedProducts(product: RayenProduct, limit = 4): RayenProduct[] {

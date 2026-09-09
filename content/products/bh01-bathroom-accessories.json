@@ -63,6 +63,11 @@
       "src": "/images/products/bh01-bathroom-accessories-5.webp",
       "ratio": "1 / 1",
       "label": "Hyland BH01 Bathroom Accessories, view 5"
+    },
+    {
+      "src": "/images/products/bh01-bathroom-accessories-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland BH01 Bathroom Accessories, view 6"
     }
   ],
   "attachmentIds": [],
@@ -95,5 +100,18 @@
   "summaryEs": "Un accesorio de baño de acero inoxidable, para baño.",
   "seoTitleEs": "BH01 Accesorios de baño — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland BH01 accesorios de baño en acero inoxidable. Acabados: SSS, PSS. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/bh01-bathroom-accessories.mp4",
+      "poster": {
+        "src": "/images/products/bh01-bathroom-accessories-video.webp",
+        "ratio": "16 / 9",
+        "label": "BH01 Bathroom Accessories, demonstration still"
+      },
+      "label": "BH01 Bathroom Accessories — product demonstration",
+      "durationSeconds": 32,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

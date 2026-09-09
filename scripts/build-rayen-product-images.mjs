@@ -41,7 +41,7 @@
  *   node scripts/build-rayen-product-images.mjs --sample    # contact sheet for eyeballing
  */
 
-import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -157,6 +157,7 @@ async function ringStats(image, width, height, box, background) {
 }
 
 async function analyse(file) {
+  if (neverWatermarked(file)) return { file, status: "already-clean", background: [255, 255, 255] };
   const source = join(SOURCE_DIR, file);
   const image = sharp(source);
   const { width, height } = await image.metadata();
@@ -241,6 +242,56 @@ async function analyse(file) {
 
 mkdirSync(TARGET_DIR, { recursive: true });
 
+/*
+  Images that never had a Hyland mark to lose.
+
+  The 2026-09-08 supplier import came straight from the maker's own packs, so there is
+  no oval on them — but the detector looks for saturated red in the top-left corner, and
+  seven of these tripped it on things that are simply in the photograph (warm timber, a
+  red sign at the end of a corridor). It then refused them for a busy surround, and the
+  gallery quietly lost seven frames.
+
+  Widening the detector's thresholds would have fixed these seven and started missing
+  real ovals elsewhere. Provenance is the better discriminator: we know exactly which
+  files this import produced, because it produced them.
+*/
+const importedSlugs = JSON.parse(
+  readFileSync(join(root, "content", "rayen", "union-handles.json"), "utf8"),
+).models.map((model) => model.slug);
+
+const neverWatermarked = (file) =>
+  importedSlugs.some((slug) => file === `${slug}.webp` || file.startsWith(`${slug}-`));
+/**
+ * One image write, with one retry.
+ *
+ * On Windows this loop dies partway through with
+ * "unable to open for write / Invalid argument" on an arbitrary file — a transient
+ * lock, most likely the on-access virus scanner holding the handle it just wrote. The
+ * first version let that kill the run at file 300 of 2645, which is the worst possible
+ * behaviour: the manifest from the previous run stays on disk, so nothing looks broken,
+ * and 2000 images silently keep their old content.
+ *
+ * So: retry once, then record the failure and carry on. The run finishes, the summary
+ * names what did not get written, and the exit code is non-zero so nobody mistakes it
+ * for a clean pass.
+ */
+async function writeImage(pipeline, target) {
+  try {
+    await pipeline.clone().toFile(target);
+    return true;
+  } catch {
+    await new Promise((resolve) => setTimeout(resolve, 250));
+    try {
+      await pipeline.clone().toFile(target);
+      return true;
+    } catch (error) {
+      writeFailures.push(`${target}: ${error.message.slice(0, 120)}`);
+      return false;
+    }
+  }
+}
+
+const writeFailures = [];
 const files = readdirSync(SOURCE_DIR).filter((f) => f.endsWith(".webp")).sort();
 const results = [];
 
@@ -264,12 +315,12 @@ for (const file of files) {
     })
       .webp()
       .toBuffer();
-    await sharp(source)
-      .composite([{ input: patch, left: box.left, top: box.top }])
-      .webp({ quality: 82 })
-      .toFile(target);
+    await writeImage(
+      sharp(source).composite([{ input: patch, left: box.left, top: box.top }]).webp({ quality: 82 }),
+      target,
+    );
   } else if (result.status === "already-clean") {
-    await sharp(source).webp({ quality: 82 }).toFile(target);
+    await writeImage(sharp(source).webp({ quality: 82 }), target);
   }
   // "refused" and "unreadable" write nothing: src/data/rayen.ts treats a missing file as
   // "this model has no usable photograph yet" and renders the empty state.
@@ -301,6 +352,11 @@ if (!checkOnly) {
     `products-rayen/：清掉水印 ${counts.cleanable ?? 0} 张，本来就干净 ${counts["already-clean"] ?? 0} 张，` +
       `拒绝处理 ${counts.refused ?? 0} 张（角落里可能是产品）。清单见 ${MANIFEST.replace(root, ".")}`,
   );
+  if (writeFailures.length) {
+    console.error(`⚠ ${writeFailures.length} 张写入失败（重试一次后仍失败）：`);
+    for (const failure of writeFailures.slice(0, 10)) console.error(`  ${failure}`);
+    process.exitCode = 1;
+  }
 } else {
   const missing = results.filter(
     (r) => r.status !== "refused" && !existsSync(join(TARGET_DIR, r.file)),

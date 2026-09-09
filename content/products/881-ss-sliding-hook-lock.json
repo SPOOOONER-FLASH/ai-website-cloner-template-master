@@ -33,8 +33,7 @@
   "heroImage": {
     "src": "/images/products/881-ss-sliding-hook-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 881 SS Sliding Hook Lock",
-    "sourceNote": "2022-watermarked"
+    "label": "Hyland 881 SS Sliding Hook Lock"
   },
   "gallery": [
     {
@@ -84,5 +83,18 @@
   ],
   "seoTitleEs": "881 SS Cerraduras de gancho para correderas | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 881 SS cerraduras de gancho para correderas en zamak. Acabados: SS, AC, AB, BN Available. Fabricado en Guangdong, China. Solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/881-ss-sliding-hook-lock.mp4",
+      "poster": {
+        "src": "/images/products/881-ss-sliding-hook-lock-video.webp",
+        "ratio": "16 / 9",
+        "label": "881 SS Sliding Hook Lock, demonstration still"
+      },
+      "label": "881 SS Sliding Hook Lock — product demonstration",
+      "durationSeconds": 36,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

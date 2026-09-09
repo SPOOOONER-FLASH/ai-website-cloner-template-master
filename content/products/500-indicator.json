@@ -51,13 +51,22 @@
     {
       "src": "/images/products/500-indicator-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 500 Indicator, view 4",
-      "sourceNote": "2022-watermarked"
+      "label": "Hyland 500 Indicator, view 4"
     },
     {
       "src": "/images/products/500-indicator-5.webp",
       "ratio": "1 / 1",
       "label": "Hyland 500 Indicator, view 5"
+    },
+    {
+      "src": "/images/products/500-indicator-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 6"
+    },
+    {
+      "src": "/images/products/500-indicator-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 500 Indicator, view 7"
     }
   ],
   "attachmentIds": [],
@@ -85,5 +94,18 @@
   ],
   "seoTitleEs": "500 Accesorios de herrajes — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 500 accesorios de herrajes en acero inoxidable. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/500-indicator.mp4",
+      "poster": {
+        "src": "/images/products/500-indicator-video.webp",
+        "ratio": "16 / 9",
+        "label": "500 Indicator, demonstration still"
+      },
+      "label": "500 Indicator — product demonstration",
+      "durationSeconds": 27,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }
