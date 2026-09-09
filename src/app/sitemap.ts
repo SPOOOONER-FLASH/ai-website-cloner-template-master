@@ -27,6 +27,37 @@ import { buildLocaleSitemapEntries, type SitemapVideo } from "@/lib/seo-policy";
 export const dynamic = "force-static";
 
 /** Relative priority within the site. Not a ranking factor, but it does guide crawl order. */
+/**
+ * Escapes text that Next drops into the sitemap without escaping it.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS HAS TO BE DONE HERE
+ *
+ * Next serialises `<video:title>` and `<video:description>` by string interpolation —
+ * `node_modules/next/dist/build/webpack/loaders/metadata/resolve-route-data.js`, around
+ * line 130 — with no escaping at all. A URL cannot contain a bare `&` and survives; a
+ * product summary can, and ours do: "Supports top & bottom bolt linkage",
+ * "solid brass/zinc & brass cylinder", "suitable for left & right usage".
+ *
+ * Ten of them shipped, and Google's Search Console reported the whole file as
+ * unreadable — "我们无法阅读您的 Sitemap 文件", parse error at line 3740 — on 2026-09-08.
+ * An XML parser stops at the first bare `&`, so ten characters of product copy cost the
+ * indexing of all 1,142 URLs. Zero pages and zero videos discovered.
+ *
+ * Escaping at the call site rather than post-processing `out/sitemap.xml` keeps the fix
+ * where the data enters: a later field that also carries prose gets the same treatment by
+ * being wrapped, and there is no second file that has to be remembered. `sitemap-escaping.test.ts`
+ * asserts the built file has no bare ampersand left.
+ */
+function xmlText(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 const PRIORITY = {
   home: 1.0,
   productDetail: 0.9,
@@ -175,9 +206,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const videos: SitemapVideo[] = (product.videos ?? [])
       .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds && v.uploadDate)
       .map((v) => ({
-        title: v.label,
+        title: xmlText(v.label),
         thumbnail_loc: absoluteUrl(v.poster!.src ?? ""),
-        description: product.summary || v.label,
+        description: xmlText(product.summary || v.label),
         content_loc: absoluteUrl(v.src),
         duration: v.durationSeconds!,
         publication_date: v.uploadDate!,
