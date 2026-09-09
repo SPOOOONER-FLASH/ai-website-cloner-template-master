@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | 导入玻璃门/插销/斜舌四个类目并重出构建 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
 | Codex | scripts/blender/editorial-stills.py, scripts/build-editorial-stills.mjs, docs/design-references/2026-09-07-home-stills | Three real-photo architectural still-life previews; no carousel change | 2026-09-07 |
 

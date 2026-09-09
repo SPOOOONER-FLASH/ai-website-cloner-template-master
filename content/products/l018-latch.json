@@ -42,10 +42,30 @@
   "heroImage": {
     "src": "/images/products/l018-latch.webp",
     "ratio": "1 / 1",
-    "label": "Hyland L018 Latch",
-    "sourceNote": "2022-watermarked"
+    "label": "Hyland L018 Latch"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/l018-latch-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland L018 Latch, view 2"
+    },
+    {
+      "src": "/images/products/l018-latch-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland L018 Latch, view 3"
+    },
+    {
+      "src": "/images/products/l018-latch-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland L018 Latch, view 4"
+    },
+    {
+      "src": "/images/products/l018-latch-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland L018 Latch, view 5"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "L018 Latch — Zinc Alloy | Canton Hyland",

@@ -37,8 +37,7 @@
   "heroImage": {
     "src": "/images/products/f123-glass-door-patch-fittings.webp",
     "ratio": "1 / 1",
-    "label": "Hyland F123 Glass Door Patch Fittings",
-    "sourceNote": "2022-watermarked"
+    "label": "Hyland F123 Glass Door Patch Fittings"
   },
   "gallery": [
     {
@@ -59,25 +58,27 @@
     {
       "src": "/images/products/f123-glass-door-patch-fittings-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland F123 Glass Door Patch Fittings, view 5",
-      "sourceNote": "2022-watermarked"
+      "label": "Hyland F123 Glass Door Patch Fittings, view 5"
     },
     {
       "src": "/images/products/f123-glass-door-patch-fittings-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland F123 Glass Door Patch Fittings, view 6",
-      "sourceNote": "2022-watermarked"
+      "label": "Hyland F123 Glass Door Patch Fittings, view 6"
     },
     {
       "src": "/images/products/f123-glass-door-patch-fittings-7.webp",
       "ratio": "1 / 1",
-      "label": "Hyland F123 Glass Door Patch Fittings, view 7",
-      "sourceNote": "2022-watermarked"
+      "label": "Hyland F123 Glass Door Patch Fittings, view 7"
     },
     {
       "src": "/images/products/f123-glass-door-patch-fittings-8.webp",
       "ratio": "1 / 1",
       "label": "Hyland F123 Glass Door Patch Fittings, view 8"
+    },
+    {
+      "src": "/images/products/f123-glass-door-patch-fittings-9.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F123 Glass Door Patch Fittings, view 9"
     }
   ],
   "attachmentIds": [],
@@ -109,5 +110,18 @@
   ],
   "seoTitleEs": "F123 Herrajes para puertas de vidrio | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland F123 herrajes para puertas de vidrio. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/f123-glass-door-patch-fittings.mp4",
+      "poster": {
+        "src": "/images/products/f123-glass-door-patch-fittings-video.webp",
+        "ratio": "16 / 9",
+        "label": "F123 Glass Door Patch Fittings, demonstration still"
+      },
+      "label": "F123 Glass Door Patch Fittings — product demonstration",
+      "durationSeconds": 43,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

@@ -57,28 +57,43 @@
   "heroImage": {
     "src": "/images/products/gl125-ss-glass-door-patch-fittings.webp",
     "ratio": "1 / 1",
-    "label": "Hyland GL125 SS glass door patch fittings"
+    "label": "Hyland GL125 SS Glass Door Patch Fittings"
   },
   "gallery": [
     {
       "src": "/images/products/gl125-ss-glass-door-patch-fittings-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland GL125 SS glass door patch fittings, view 2"
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 2"
     },
     {
       "src": "/images/products/gl125-ss-glass-door-patch-fittings-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland GL125 SS glass door patch fittings, view 3"
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 3"
     },
     {
       "src": "/images/products/gl125-ss-glass-door-patch-fittings-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland GL125 SS glass door patch fittings, view 4"
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 4"
+    },
+    {
+      "src": "/images/products/gl125-ss-glass-door-patch-fittings-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 5"
     },
     {
       "src": "/images/products/gl125-ss-glass-door-patch-fittings-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland GL125 SS glass door patch fittings, view 6"
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 6"
+    },
+    {
+      "src": "/images/products/gl125-ss-glass-door-patch-fittings-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 7"
+    },
+    {
+      "src": "/images/products/gl125-ss-glass-door-patch-fittings-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland GL125 SS Glass Door Patch Fittings, view 8"
     }
   ],
   "attachmentIds": [],
@@ -145,5 +160,18 @@
     "model": "GL125 SS",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/gl125-ss-glass-door-patch-fittings.mp4",
+      "poster": {
+        "src": "/images/products/gl125-ss-glass-door-patch-fittings-video.webp",
+        "ratio": "16 / 9",
+        "label": "GL125 SS Glass Door Patch Fittings, demonstration still"
+      },
+      "label": "GL125 SS Glass Door Patch Fittings — product demonstration",
+      "durationSeconds": 27,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

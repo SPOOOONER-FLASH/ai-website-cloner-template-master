@@ -62,13 +62,23 @@
   "heroImage": {
     "src": "/images/products/106-glass-door-handle.webp",
     "ratio": "1 / 1",
-    "label": "Hyland 106 glass door handle"
+    "label": "Hyland 106 Glass Door Handle"
   },
   "gallery": [
     {
+      "src": "/images/products/106-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 106 Glass Door Handle, view 2"
+    },
+    {
       "src": "/images/products/106-glass-door-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland 106 glass door handle, view 3"
+      "label": "Hyland 106 Glass Door Handle, view 3"
+    },
+    {
+      "src": "/images/products/106-glass-door-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 106 Glass Door Handle, view 4"
     }
   ],
   "attachmentIds": [],
@@ -136,5 +146,18 @@
     "model": "106",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/106-glass-door-handle.mp4",
+      "poster": {
+        "src": "/images/products/106-glass-door-handle-video.webp",
+        "ratio": "16 / 9",
+        "label": "106 Glass Door Handle, demonstration still"
+      },
+      "label": "106 Glass Door Handle — product demonstration",
+      "durationSeconds": 13,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

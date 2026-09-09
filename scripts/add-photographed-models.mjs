@@ -91,6 +91,11 @@ const CATEGORY_BY_FOLDER = {
   "heavy duty cylindrical locks": "knob-locks",
   "light duty cylindrical locks": "knob-locks",
   "commercial locks": "knob-locks",
+  /* Second 2026-09-08 drop. */
+  "glass door patch fittings": "glass-door-accessories",
+  "glass door handles": "glass-door-accessories",
+  "door flush bolts": "hardware-accessories",
+  latches: "hardware-accessories",
 };
 
 const fromRoots = process.argv.flatMap((a, i) =>
@@ -144,6 +149,37 @@ function familyName(category, products) {
   return best ? best[0] : null;
 }
 
+/**
+ * What to call this model — asking its own siblings before asking its category.
+ *
+ * A category's most common name is only the right answer when the category holds one kind
+ * of thing. `hardware-accessories` does not: it carries door viewers, door stoppers, flush
+ * bolts, latches and pry latches, and "Door viewer" wins the count. So on 2026-09-08 a
+ * flush bolt was created as `fb001-door-viewer` and a latch as `l002-door-viewer` — a URL
+ * a buyer would read as the wrong product, sitting next to `fb001-ac-door-flush-bolt` and
+ * `l001-latch`, which the catalogue had named correctly all along.
+ *
+ * The correct name was one row away the whole time. Model numbers here carry a letter
+ * prefix that is the product type — FB is a flush bolt, L is a latch, DS a door stopper —
+ * so a sibling sharing that prefix knows what this is. Falling back to the family count
+ * only when there is no sibling keeps the old behaviour for single-kind categories like
+ * `lock-cylinders`, where it was right.
+ */
+function nameFor(model, category, products) {
+  const prefix = String(model).trim().toUpperCase().match(/^[A-Z]+/)?.[0];
+  if (prefix) {
+    const tally = new Map();
+    for (const p of products) {
+      if ((p.categoryPath ?? [])[0] !== category || !p.name) continue;
+      if (p.model.trim().toUpperCase().match(/^[A-Z]+/)?.[0] !== prefix) continue;
+      tally.set(p.name, (tally.get(p.name) ?? 0) + 1);
+    }
+    const [best] = [...tally].sort((a, b) => b[1] - a[1]);
+    if (best) return best[0];
+  }
+  return familyName(category, products);
+}
+
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 const products = readdirSync(DIR)
@@ -176,7 +212,7 @@ for (const want of WANTED) {
     continue;
   }
 
-  const name = familyName(want.category, products);
+  const name = nameFor(want.model, want.category, products);
   if (!name) {
     refused.push([want.model, `类目 ${want.category} 在目录里没有任何记录，无法取family名`]);
     continue;

@@ -39,18 +39,43 @@
   "heroImage": {
     "src": "/images/products/f110-glass-door-patch-fittings.webp",
     "ratio": "1 / 1",
-    "label": "Hyland F110 glass door patch fittings"
+    "label": "Hyland F110 Glass Door Patch Fittings"
   },
   "gallery": [
     {
       "src": "/images/products/f110-glass-door-patch-fittings-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland F110 glass door patch fittings, view 2"
+      "label": "Hyland F110 Glass Door Patch Fittings, view 2"
     },
     {
       "src": "/images/products/f110-glass-door-patch-fittings-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland F110 glass door patch fittings, view 3"
+      "label": "Hyland F110 Glass Door Patch Fittings, view 3"
+    },
+    {
+      "src": "/images/products/f110-glass-door-patch-fittings-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F110 Glass Door Patch Fittings, view 4"
+    },
+    {
+      "src": "/images/products/f110-glass-door-patch-fittings-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F110 Glass Door Patch Fittings, view 5"
+    },
+    {
+      "src": "/images/products/f110-glass-door-patch-fittings-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F110 Glass Door Patch Fittings, view 6"
+    },
+    {
+      "src": "/images/products/f110-glass-door-patch-fittings-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F110 Glass Door Patch Fittings, view 7"
+    },
+    {
+      "src": "/images/products/f110-glass-door-patch-fittings-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland F110 Glass Door Patch Fittings, view 8"
     }
   ],
   "attachmentIds": [],
@@ -82,5 +107,18 @@
   ],
   "seoTitleEs": "F110 Herrajes para puertas de vidrio | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland F110 herrajes para puertas de vidrio. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/f110-glass-door-patch-fittings.mp4",
+      "poster": {
+        "src": "/images/products/f110-glass-door-patch-fittings-video.webp",
+        "ratio": "16 / 9",
+        "label": "F110 Glass Door Patch Fittings, demonstration still"
+      },
+      "label": "F110 Glass Door Patch Fittings — product demonstration",
+      "durationSeconds": 35,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }
