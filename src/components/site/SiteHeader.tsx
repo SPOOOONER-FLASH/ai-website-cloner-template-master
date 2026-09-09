@@ -5,9 +5,10 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { hasSpanishMirror } from "@/lib/spanish-mirror";
+import { LocalePicker } from "./LocalePicker";
 import type { MenuCategory } from "@/data/categories";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
-import { GlobeIcon, MenuIcon, SearchIcon, Wordmark } from "./icons";
+import { MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SearchDialog } from "./SearchDialog";
 import { SiteMenuDrawer } from "./SiteMenuDrawer";
 
@@ -27,32 +28,16 @@ import { SiteMenuDrawer } from "./SiteMenuDrawer";
  * src/lib/spanish-mirror.ts 的 SPANISH_MIRROR_PREFIXES。
  */
 
-/**
- * Where the language switch goes: the SAME page in the other language, when it exists.
- *
- * This used to name three prefixes — company, contact, projects — and send everything else
- * to /es, which meant a reader on a product page, a comparison table, a collection, the
- * configurator, the finder or any news article was returned to the Spanish homepage and
- * had to navigate back. The Spanish mirror had grown to cover all of those and this
- * function had not, so the switch silently became a "start over" button on most of the
- * site.
- *
- * `hasSpanishMirror` is the list that already decides which English paths have a Spanish
- * twin — it is what the hreflang tags are built from. Reading it here means the switch and
- * the hreflang can never disagree, and a route added to the mirror is switchable the same
- * day rather than whenever somebody remembers this file.
- *
- * The fallback is still the homepage, because a link to a page that does not exist is
- * worse than a link that starts over. It now only fires where there genuinely is no
- * Spanish page.
- */
-function languageTarget(pathname: string, isSpanish: boolean): string {
-  if (isSpanish) {
-    const englishPath = pathname.replace(/^\/es/, "");
-    return englishPath || "/";
-  }
-  return hasSpanishMirror(pathname) ? `/es${pathname === "/" ? "" : pathname}` : "/es";
-}
+/*
+  The language switch moved to src/lib/locale-picker.ts on 2026-09-08, as `languageChoices`,
+  when the bare EN | ES link became the location-and-language panel.
+
+  Its rule is unchanged and its explanation travelled with it: the switch goes to the SAME
+  page in the other language when one exists, and to the Spanish home only when it does
+  not, decided by `hasSpanishMirror` so the switch and the hreflang tags can never
+  disagree. The new module adds one thing this file could not — it tells the reader which
+  of those two is about to happen, before they lose their place.
+*/
 
 type ShelfName = "products" | "company" | "buy";
 
@@ -302,14 +287,17 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 read as crooked on small screens.
               */}
               <nav className="flex flex-grow items-center justify-end gap-24 sm:gap-32">
-                <Link
-                  href={languageTarget(pathname, isSpanish)}
-                  hrefLang={isSpanish ? "en" : "es"}
-                  className="nav-marker flex h-24 items-center gap-8 text-ink no-underline transition-colors duration-200 hover:text-brand-hover"
-                >
-                  <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
-                  <span className="text-c2 leading-none">EN | ES</span>
-                </Link>
+                {/*
+                  The bare EN | ES link became a panel on 2026-09-08, at the client's
+                  request and modelled on FSB's "Choose your location and language".
+
+                  It still switches language on exactly the rule `languageTarget` encodes —
+                  see the comment there and `hasSpanishMirror` — but it now also answers
+                  the question a reader actually opens a location menu to ask, which is who
+                  they talk to. `src/lib/locale-picker.ts` records why that is a better use
+                  of the space than the globe animation the client asked about.
+                */}
+                <LocalePicker locale={isSpanish ? "es" : "en"} />
                 <button
                   type="button"
                   aria-label={isSpanish ? "Buscar" : "Search"}

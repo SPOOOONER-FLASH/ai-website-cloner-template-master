@@ -1983,3 +1983,24 @@
     }
   }
 }
+
+/*
+  The location-and-language panel arriving from under the header.
+
+  A slide rather than a fade, because the sheet comes FROM the control that opened it and
+  the short travel is what says so. 180ms and a plain ease-out — see the comment in
+  LocalePicker.tsx for why there is no globe here and no staggered rows.
+
+  `motion-safe` is applied at the call site via Tailwind's variant, so a reduced-motion
+  reader gets the panel with no travel at all rather than a shortened version of it.
+*/
+@keyframes locale-picker-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

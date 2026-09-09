@@ -1,0 +1,80 @@
+{
+  "model": "DS011",
+  "slug": "ds011-door-stopper",
+  "name": "Door Stopper",
+  "series": "Door Flush Bolt",
+  "categoryPath": [
+    "hardware-accessories",
+    "door-flush-bolts"
+  ],
+  "summary": "Brass door flush bolt.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Brass"
+    },
+    {
+      "label": "Finish",
+      "value": "BP, Antique Brass (AB), Antique Copper (AC), Nickel Plated (NP), NB, CB, Chrome Plated (CP), Satin Nickel (SN), BC"
+    }
+  ],
+  "material": "Brass",
+  "finishes": [
+    "BP.AB.AC.NP.NB.CB.CP.SN.BC"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/ds011-door-stopper.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland DS011 Door Flush Bolt"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/ds011-door-stopper-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DS011 Door Flush Bolt, view 2"
+    },
+    {
+      "src": "/images/products/ds011-door-stopper-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DS011 Door Flush Bolt, view 3"
+    },
+    {
+      "src": "/images/products/ds011-door-stopper-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland DS011 Door Flush Bolt, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "DS011 Door Stopper — Brass | Canton Hyland",
+  "seoDescription": "Canton Hyland DS011 door stopper in Brass. Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
+  "nameEs": "Accesorios de herrajes",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Latón"
+    },
+    {
+      "label": "Acabado",
+      "value": "BP, Antique Brass (AB), Antique Copper (AC), Nickel Plated (NP), NB, CB, Chrome Plated (CP), Satin Nickel (SN), BC"
+    }
+  ],
+  "seoTitleEs": "DS011 Accesorios de herrajes — Latón | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland DS011 accesorios de herrajes en latón. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/ds011-door-stopper.mp4",
+      "poster": {
+        "src": "/images/products/ds011-door-stopper-video.webp",
+        "ratio": "16 / 9",
+        "label": "DS011 Door Flush Bolt, demonstration still"
+      },
+      "label": "DS011 Door Flush Bolt — product demonstration",
+      "durationSeconds": 16,
+      "uploadDate": "2026-09-09"
+    }
+  ]
+}

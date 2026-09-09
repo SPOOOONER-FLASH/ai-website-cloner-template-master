@@ -12,9 +12,15 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | 导入玻璃门/插销/斜舌四个类目并重出构建 | 2026-09-08 |
+| Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
 | Codex | scripts/blender/editorial-stills.py, scripts/build-editorial-stills.mjs, docs/design-references/2026-09-07-home-stills | Three real-photo architectural still-life previews; no carousel change | 2026-09-07 |
+
+> ⚠ 2026-09-08：甲方通知 Codex 下线（服务器崩溃），并指示 Claude 直接部署。
+> 上面两行 Codex 的认领因此是**停在半途的记录**，不是进行中的工作——保留是因为
+> 那是他们的记录，但下一个会话不必等它们。他们未提交的 HeroCarousel.tsx 与
+> static-export-performance.test.ts 经哈希核对只有行尾符差异，内容与 HEAD 一致，
+> 所以本次构建没有烤进任何未提交的源码改动。
 
 Claude 2026-09-07: 已接棒重跑并提交 1,095 页发布构建（含产能链段与三篇文章），接力棒交还，无人持棒。
 

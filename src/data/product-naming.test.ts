@@ -77,20 +77,22 @@ test("models sharing a letter prefix in one category share a product name", () =
   }
 
   /*
-  Discrepancies that are open questions for the factory, not defects to fix here.
+    Discrepancies that are open questions for the factory, not defects to fix here.
 
-  DS011 is named "Door Flush Bolt" while the seven other DS records are door stoppers, and
-  its slug says flush bolt too. The evidence points the other way: Bing's keyword report
-  for 2026-09-08 contains a real buyer query, "door stopper ds013 vs ds011", comparing the
-  two as stoppers. But the specs do not settle it — DS011 is brass with a finish list and
-  no dimensions — and what a product IS cannot be inferred from a prefix and a search
-  query. Renaming it on that basis would be exactly the invented-fact failure this
-  catalogue is built to avoid, so it is listed, not changed. Remove the entry when the
-  factory answers.
-*/
-const AWAITING_FACTORY = new Set(["hardware-accessories::DS::DS011"]);
+    Empty as of 2026-09-08. The one entry it held was DS011, which this test found on the
+    day it was written: named "Door Flush Bolt" while the seven other DS records were door
+    stoppers. The evidence pointed the other way — Bing's keyword report carried a real
+    buyer query, "door stopper ds013 vs ds011", comparing the two as stoppers — but a
+    prefix and a search query cannot establish what a product IS, so it was listed rather
+    than renamed. The factory confirmed it is a door stopper the same day and
+    `scripts/rename-product-slug.mjs` moved it, with a 301 from the old URL.
 
-const disagreements: string[] = [];
+    Add an entry here only for a discrepancy that is genuinely a question for the factory,
+    with the evidence written down, and delete it when they answer.
+  */
+  const AWAITING_FACTORY = new Set<string>();
+
+  const disagreements: string[] = [];
   for (const [key, group] of groups) {
     if (group.length < 3) continue;
     const tally = new Map<string, number>();

@@ -372,7 +372,7 @@ import item366 from "../../../content/products/dh02-ab-grip-handle-set.json";
 import item367 from "../../../content/products/dh02-pb-grip-handle-set.json";
 import item368 from "../../../content/products/ds01-door-stopper.json";
 import item369 from "../../../content/products/ds010-door-stopper.json";
-import item370 from "../../../content/products/ds011-door-flush-bolt.json";
+import item370 from "../../../content/products/ds011-door-stopper.json";
 import item371 from "../../../content/products/ds013-door-stopper.json";
 import item372 from "../../../content/products/ds02-door-stopper.json";
 import item373 from "../../../content/products/ds022-door-stopper.json";

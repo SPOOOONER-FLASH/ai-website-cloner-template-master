@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 2449,
+  "count": 2562,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-2.webp",
@@ -3646,362 +3646,534 @@
     {
       "source": "public/images/products/100-glass-door-handle-2.webp",
       "output": "public/images/products-hyde/100-glass-door-handle-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a8aaa5d29687430c2a046cde0b47980a937a955ca226ddc6e416091285320ecb",
+      "outputSha256": "9821af590cdcaca71e86b3ffddc782c0cec519ccf56885eeef1850ee4bfc0e10"
+    },
+    {
+      "source": "public/images/products/100-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/100-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
+      "sourceSha256": "b54197841911492b877a46475f4b296ec4e530524fb359f61843a85dff6b1654",
+      "outputSha256": "73c45b31e6e2eb511621881e9449888818e4f437db0dbf4ff2720d7cd1780608"
+    },
+    {
+      "source": "public/images/products/100-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/100-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "e66fb9af1152ff6e5d6ab6c40ab63165fa1928d3a88bf04e16197b06b50b48b3",
-      "outputSha256": "fb53a709d7ff09598f85c18d91784b6f8ce791801eda676b1af79a043fd16e74"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "67e2c19e9679495501fa55312aad4cf43e3462c8288850a68bb74a67d17de387",
+      "outputSha256": "61dbe4faac964e48ddda672343d1287ee9e0a51aa56def1b6ecddd109358a235"
+    },
+    {
+      "source": "public/images/products/100-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/100-glass-door-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6f2fcce3eec5e0732750d49c43f6f983512344fe0b35402404ccd4532fa2d4a4",
+      "outputSha256": "05046e83f456e9e189e6a3e304175c8e808cacaab565ccafec90171a5b42b02a"
+    },
+    {
+      "source": "public/images/products/100-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/100-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8ff2b84fb64fd90162a0c62cc5b8576c7ac80f92860db04e8589cd64da7f0135",
+      "outputSha256": "5ae94894290be5c6a7c19328fb31a2504fd386594e43f1f0f6e588974d82bfec"
     },
     {
       "source": "public/images/products/100-glass-door-handle.webp",
       "output": "public/images/products-hyde/100-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 7.3163398692810455,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
-      },
-      "sourceSha256": "105182ab2fc38e2b8aaba1cd47a0751e9b40f836516ee4da0cc4a1e89e66fdd1",
-      "outputSha256": "971d5cb2d6e541d300cd2a51763510e4acb5feabb2eb1d4df4e942f1142e8504"
+      "sourceSha256": "14a6864407609f2893da07eb11a527708673b63785111e404950914142aeb8fd",
+      "outputSha256": "c488f50270dd4b3187f28d43582c64d7cc3874a13e929f9ed5f076a8b0b47e69"
     },
     {
       "source": "public/images/products/102-glass-door-handle-2.webp",
       "output": "public/images/products-hyde/102-glass-door-handle-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ee296a8d1ee07c06689538d0e0043a94bd7341d8f635f898834be63bcaffbf1e",
+      "outputSha256": "bc849dbbfa0301911f9f6144bc5ee99f88b18af41ab5d682afdba2140a9eab09"
+    },
+    {
+      "source": "public/images/products/102-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/102-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
+      "sourceSha256": "accba221816da7da4c008ca33c5a976f4637e04282fd3e848810431bac1399f3",
+      "outputSha256": "c2a564239ceeca0f19b5c3c1ad8f0aad6ccc120f0b8f9940cfd7487bf9deb1c1"
+    },
+    {
+      "source": "public/images/products/102-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/102-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "e9a1136ef9b4bf6cc2f4d7e2cbd68fad2f96e0c006e2fef8e44efdf2f1ef4ded",
-      "outputSha256": "03259fa041b6f6dbcb2cf2576de4e1c7357906d861ea8b0eadfd26ad9ba16560"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "734b1cddf8f697e7e63a73e02b3607430dba1f87eb8b15b6b17f5e9ca33e26b2",
+      "outputSha256": "1dd060316605a3a3ce1c2382b25a3a647927c600b38ab6e2b07f107db5d26c79"
+    },
+    {
+      "source": "public/images/products/102-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/102-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "430bdc3b2723330439211be506ab36f0ce179fc48cb849d9b08aff7691f6f28d",
+      "outputSha256": "d07d4c4ddcf5fdc0fd75c4d0ac83e6ee455238aa3700388172e858fa21902ab3"
     },
     {
       "source": "public/images/products/102-glass-door-handle.webp",
       "output": "public/images/products-hyde/102-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 7.15359477124183,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
-      },
-      "sourceSha256": "0f0d0c89960cf1aa48aea67d24e6007a50bf5575c527ac88fcabc869e0d00b23",
-      "outputSha256": "6149ff12bc505e112816e47d918c287445bfeb43ebfae224495a536adfe51107"
+      "sourceSha256": "fbf8a615132361830e39df97255257c70b69a6a57a1c7521fb6758ba0e1e7e3f",
+      "outputSha256": "2289c60ba7ee1af75ebfbc633d7a896cf02c54e7518319ab1cbefc103e298417"
     },
     {
       "source": "public/images/products/104-glass-door-handle-2.webp",
       "output": "public/images/products-hyde/104-glass-door-handle-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 154,
-          "name": "inward",
-          "top": 21,
-          "width": 148
-        }
-      },
-      "sourceSha256": "2f40b1cb8ea4705a7628227e1e4d3ddaca1fd43173136991ebdeb2c38113255f",
-      "outputSha256": "efe7fc1be8a4d254163860bf150c11e0de3549620edee8308746d7146540853e"
+      "sourceSha256": "a58f9fde559980cfd6729f79913adc8be39d2cf51e495e60fa0da069a32ccc57",
+      "outputSha256": "305e9c12b3dc528135bb5ed531240441d64c61236615bda819e641684cee61a4"
     },
     {
       "source": "public/images/products/104-glass-door-handle-3.webp",
       "output": "public/images/products-hyde/104-glass-door-handle-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
+      "sourceSha256": "fa3335a6c2a3ea81a5c6c062c94b2b95d788ce30e44442220569eb9e26756d5e",
+      "outputSha256": "87446586922ad0b8d3756f95ed3192ec85e632cfd109c3fad7afea720366150a"
+    },
+    {
+      "source": "public/images/products/104-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/104-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
       },
-      "sourceSha256": "cd47af6735cc7cc933928aec455d6ae0a9f8212ba6ca2892eac7f629b5abfaa9",
-      "outputSha256": "81d8e0573ff23d456e5cd6786d0f42fe0d823b9fa5e541ab5673375e5ac1d7a4"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1ba2c9e189f7a1e55d580e17f3b0d4855338f04633853dfdb379c5c85254743d",
+      "outputSha256": "c155f59b5600e91b1c372ea3002b47f4f4b63a6296adc9e1e76b8828de8b8fd2"
     },
     {
       "source": "public/images/products/104-glass-door-handle.webp",
       "output": "public/images/products-hyde/104-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 7.169281045751634,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
+      "sourceSha256": "f796533dbe340878cbe142c17041e913f82ecb92efa22c083f554cbee5f5b502",
+      "outputSha256": "7c575e33aef73b333b39c8e5403a5e92bc3439f5cbc6d49db32e865161dc54a1"
+    },
+    {
+      "source": "public/images/products/105-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/105-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "e8f976ae2735778085f19601a64262e0edc833f471c6e4ed1962e88aa88c5169",
-      "outputSha256": "b572b62ad0674322d4be7f2b72da929dde43ff9b4e7e7e634cf1531d645468f0"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e9bd1f8d31f5a48af62080eb64cfcd109cc8d45fa37479a0bc7d991b19ae1a54",
+      "outputSha256": "88e65be0f95a70cd20a1f53f5b212b91bead78bd36bf71ad724219010ce4f6b6"
+    },
+    {
+      "source": "public/images/products/105-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/105-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "cf322d524e1ca8f6699e2ef04de5e74a5f554434b99c935014beead81c780582",
+      "outputSha256": "eec3bb23854b5b0b085334ecdbd47e38fafa3926f2e95afabc86cb9ad2760bb4"
+    },
+    {
+      "source": "public/images/products/105-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/105-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "c86936d4a23d7da3d66da157e6be51748bfaa450e12d83410ab8e2d76e316d19",
+      "outputSha256": "ed230bdcc07b5686103906feb7c9268712fc0015f63768397c325b611a023571"
+    },
+    {
+      "source": "public/images/products/105-glass-door-handle.webp",
+      "output": "public/images/products-hyde/105-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "51e417c05b4e1f2a4f8cfefddc3026d622be2156ad7bef4d42d553165fa93c83",
+      "outputSha256": "ae04def7380843e6cb77472979b338d45f9d9e4bae3d05660641a14bb550f02a"
+    },
+    {
+      "source": "public/images/products/106-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/106-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "77452ab1924c50f9ad63a3f960b3577fa4fedcee0dea210a0a3ecf7122188cea",
+      "outputSha256": "d55f8e1bc5d361a380bff396d4fa6c9705faeae05c5360d138cf9b61d27e3711"
     },
     {
       "source": "public/images/products/106-glass-door-handle-3.webp",
       "output": "public/images/products-hyde/106-glass-door-handle-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f3a4a2c39c596b6988969a283cf10ea4b150a134467ca28ae057d4e716ba55d2",
+      "outputSha256": "ec65f7c2bb8db6defda0c603c315fe3984007fb4391bbcf7b5ab2d12199ee480"
+    },
+    {
+      "source": "public/images/products/106-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/106-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
+      "sourceSha256": "3bd0ccfef9cd9e172733178b5c7ce7205a74f08efe6ba7ce821be82a1c877f05",
+      "outputSha256": "3a4cc118a1ac4b9cd7ad987172a6c7605995bdab44865d8fd5c0ec31cbecdd83"
+    },
+    {
+      "source": "public/images/products/106-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/106-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
       },
-      "sourceSha256": "e5828c1a205614f081bdbe7c503eac338968ec2baa2a0424a8bc459a27be8541",
-      "outputSha256": "883cc3437762da506f1cec06bb48e7316c221cd1d682dffe5ed5c7c626ca17f2"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5876820c1cb7f1dab80ccebd043c61253a3853479cf09cb9d8891683c2bc493e",
+      "outputSha256": "a1c649432be6e9ae587b564c0fe65e1a3a200fa9101e71dd32999fdbbc177861"
     },
     {
       "source": "public/images/products/106-glass-door-handle.webp",
       "output": "public/images/products-hyde/106-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 7.174509803921569,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
-        }
-      },
-      "sourceSha256": "be04b7460e3a7434f91fd7499afe713dc841abd175b35430d3cc4b97d4debe8c",
-      "outputSha256": "93b7b87af18053e45cbcc04b9660bb7189ba346b74c7d3ba7a7f61ac87941c9e"
+      "sourceSha256": "4c3d411cd8cafffd2cb0b75c159f4f7bb3c1da4165dc97b49135819e1f4b47cf",
+      "outputSha256": "34ef03f9dbfe27bc5daef4e354352988bee3b19f8e8d14c89c8e4e18cd811729"
     },
     {
       "source": "public/images/products/107-glass-door-handle-2.webp",
       "output": "public/images/products-hyde/107-glass-door-handle-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 154,
-          "name": "inward",
-          "top": 21,
-          "width": 148
-        }
-      },
-      "sourceSha256": "2def788dd41b394012538cc85f50fa63ab9da1c4a0aef409b82430b3bed74df3",
-      "outputSha256": "050b1fe1dc54c3025eb4c2636fbfcc46f614b2faa3900db16499020aef18fe7e"
+      "sourceSha256": "68998e4ccd3d085c370c6a4119f7760e5c30d0186968f2642176b9ca6965c8b2",
+      "outputSha256": "712314029ea657f0f5a1188fa11a9b7e974ea8f296890dcaa38d255e1781a981"
     },
     {
       "source": "public/images/products/107-glass-door-handle-3.webp",
       "output": "public/images/products-hyde/107-glass-door-handle-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c276bb468988eba830700c43d62972c5184cf72b8661b755b544283815dd9855",
+      "outputSha256": "b2147858346d69fd95f8a5832012f3b6c9c144c34045e8024caf894733865068"
+    },
+    {
+      "source": "public/images/products/107-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/107-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f15be58599158ea3d81fa45cc282a804cb929a0e7d85d50d55210857a06c0def",
+      "outputSha256": "02d9207291e82e71fcbf7c9bd5452356a61d63e857b2e1fe317195ba313c3204"
+    },
+    {
+      "source": "public/images/products/107-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/107-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2d1158d0227245ca602a623c4be14e32eff19d7ff2863514d013e64f2fae3f69",
+      "outputSha256": "44c769fb8f102ae44c58c673bf291cb64b704a1f4ada21dcf78a614e97d59191"
+    },
+    {
+      "source": "public/images/products/107-glass-door-handle.webp",
+      "output": "public/images/products-hyde/107-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ab71d693cd1c974f87544472d00c10d5a8203ed525c176d6f9a5e589e806c833",
+      "outputSha256": "f4234ce8333a70577bce360f0d8abb0b24ed62a89ab2591985ff0b23afcd1396"
+    },
+    {
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-2.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
@@ -4011,32 +4183,32 @@
       "repair": {
         "mode": "edge-matched-clone",
         "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
+          "height": 169,
+          "left": 2,
+          "top": 23,
+          "width": 251
         },
         "sample": {
           "edgeDifference": 0,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
+          "height": 169,
+          "left": 261,
+          "name": "inward",
+          "top": 23,
+          "width": 251
         }
       },
-      "sourceSha256": "6d8346e3fe6010b35630f63ae5c77db2d9e862974cdfd255f1bf0ae9c3bf942b",
-      "outputSha256": "1028c791a1559f4c0ed28945d1002e5d5d71a59663ad448e472137d8d4570582"
+      "sourceSha256": "60345a9e3702d05dc5a5edda57e1673e6047344dedec2c106f15d54f0b4d6b17",
+      "outputSha256": "882765ee03f9b414666bfbe7618965d4085d68c4c64c87c0906ec325a6e8c999"
     },
     {
-      "source": "public/images/products/107-glass-door-handle.webp",
-      "output": "public/images/products-hyde/107-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-3.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock-3.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
@@ -4044,24 +4216,112 @@
         "variant": "black"
       },
       "repair": {
-        "mode": "boundary-fill",
+        "mode": "edge-matched-clone",
         "region": {
-          "height": 109,
-          "left": 0,
-          "top": 21,
-          "width": 148
+          "height": 169,
+          "left": 2,
+          "top": 23,
+          "width": 251
         },
         "sample": {
-          "edgeDifference": 7.3392156862745095,
-          "height": 109,
-          "left": 0,
-          "name": "below",
-          "top": 136,
-          "width": 148
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 261,
+          "name": "inward",
+          "top": 23,
+          "width": 251
         }
       },
-      "sourceSha256": "f2d028d8d0c3d7e9e9dd7f87598074a71d6da748d7c61672199cf0e1326acfb7",
-      "outputSha256": "42be32658e7596225744209efa76f0e6a8ace5a5bbc7fe1e6a8c9afdf880f3aa"
+      "sourceSha256": "daa2a8ff7d17b2e9dda20ebc0dbc2931b84c3b9002421b1381ce3d2d0c7e489b",
+      "outputSha256": "3241c51b92fedf047ecc2d7735128320761d45d3d0150ceb44f463d6dd6a858f"
+    },
+    {
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-4.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 2,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 261,
+          "name": "inward",
+          "top": 23,
+          "width": 251
+        }
+      },
+      "sourceSha256": "41c2af848c1178c314c643e2ac9ffe1a1cfdd797490294ed1aa9b6d9cf23bd74",
+      "outputSha256": "59ff6b05878b7032c7501b03039d4bfddb2ec8d165cecd6a35b6745ff1832e93"
+    },
+    {
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-5.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 2,
+          "top": 23,
+          "width": 251
+        },
+        "sample": {
+          "edgeDifference": 28.976874003189792,
+          "height": 169,
+          "left": 2,
+          "name": "below",
+          "top": 200,
+          "width": 251
+        }
+      },
+      "sourceSha256": "5497bde7040ece37b0eeae05773bf49366a93edd3c415d40f6adfc12f1b541d5",
+      "outputSha256": "5973065292fffea9d122662f295e3320baf19f78a2956d6c90d19fbf032d2cda"
+    },
+    {
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-6.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e16170da9bbdbec4d579ce95260f84335033bbda39ae490a46675151d3055686",
+      "outputSha256": "430cb2711c3198634a9f5da35205e3c1a8e9c288d938c6a3eaf641c7e884d59c"
     },
     {
       "source": "public/images/products/1073d-mb-night-latch-and-rim-lock-video.webp",
@@ -4080,6 +4340,24 @@
       },
       "sourceSha256": "3d2994be0fc2626eb8d47355749f19dee9d92afa1ec6d31f706d746a53fa88ef",
       "outputSha256": "b1e05b863b44db3a4cd1e818d6dd5e65d679d2f164b13f6fcfc8dbb7e3afa1bd"
+    },
+    {
+      "source": "public/images/products/1073d-mb-night-latch-and-rim-lock.webp",
+      "output": "public/images/products-hyde/1073d-mb-night-latch-and-rim-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7fcc599987b6131cc973eda745b57b6faa2cf4cbf574efd3a35dab6fe6bc1f33",
+      "outputSha256": "b458ab3d2c498440457d7904be5d77207450a46f52d29d91e7cb690fb557667c"
     },
     {
       "source": "public/images/products/1073d-night-latch-and-rim-lock-2.webp",
@@ -4538,6 +4816,222 @@
       "outputSha256": "48bd599837739ce5a9c6c3cc003104dcbd9929997db5c090c20389f1b144f2b7"
     },
     {
+      "source": "public/images/products/108-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7db1c71e6e3d6e9bc4465ebcefcc5442ff248716d3dcfeeb4319a0df59e6818a",
+      "outputSha256": "034e5d5b9fe73ebe7a59745405a4242f713be2aa2ebb977b6a3dd9a05f21a395"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8507f7880fee6de9afc45692599dedce13041197808b206ec0298295f6c1b828",
+      "outputSha256": "03c56337c1a6ae197129e757639ec0d4075576833bad37b705bbcf14a68238f8"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a34bb26ffe559a26ed65a095604035b236cf8f4abb8800e8ea753eabdbbaa3de",
+      "outputSha256": "972e9eb6d4ecac052c973182fae4d4bcb67661bedd9049e91c1e850c3f7d9a56"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "088de348f34a68ce5b36f2e140a98b7b4e3776473a59a7d827b55b42c169435a",
+      "outputSha256": "e551abd749a29168026603b987977e81ff637c5fdcb2a00f754323c008af9fa0"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "1ae9531c04044b9f7c7eb656c760bd80a463e496a7cf5fff1d678944d776eddf",
+      "outputSha256": "14f4c8805f9700ec63dc731249fe04c456df207c45d8a8f615c3a14fb9ab2636"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle-7.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3568832e56a9b76ceeb6974161a20b7ab0b0c0cc3a4caef51a62fd89434579d6",
+      "outputSha256": "8d9c0563820b797a15ecc7602ce0c92d7bdaed3482547b6a0ccdd05735f04129"
+    },
+    {
+      "source": "public/images/products/108-glass-door-handle.webp",
+      "output": "public/images/products-hyde/108-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c0b901a5f42d58f8d355814d3323fa0e1fc1dbd0755dcf1f96f479ea85f664aa",
+      "outputSha256": "c6abdd5be2bc5cacc31ca76e6a081da42372b247866290593be6d1ff32f76b1e"
+    },
+    {
+      "source": "public/images/products/109-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/109-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7a9ba49760a6398568c025cc6eccfb534fe244971aa9f690e00e8e67006ad02d",
+      "outputSha256": "f584a5add4e424747ebd8e62b3e2c1a189a2a41223e4c08f682132b4a3f2e1c4"
+    },
+    {
+      "source": "public/images/products/109-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/109-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3c5bb03bdd66668d6d8c116c74b2f818754c4005f86d62c45de725e88f05b8cf",
+      "outputSha256": "281e923342e332511ca4e05e1af72977ddd1f39db76251b047699fe1b33446a5"
+    },
+    {
+      "source": "public/images/products/109-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/109-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d0b08b1ce7bfe2d180c210bf08e31b562f8156eff12c13c9774bbac87ba5da78",
+      "outputSha256": "a618e4c516da94290527b8893ac0df68c1f7736e4ba151c0464c8a2371a2c225"
+    },
+    {
+      "source": "public/images/products/109-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/109-glass-door-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "498e462b3dfe866adb3da38cad17fb7016020b5225912aa0c26352d31d31d6f4",
+      "outputSha256": "2957661c39d7793a970d802a433cdcc1428d5779601159dd59ef713d82f48f46"
+    },
+    {
+      "source": "public/images/products/109-glass-door-handle.webp",
+      "output": "public/images/products-hyde/109-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "acb78deae7b40768bbbf55edaab976004bb2203074196f016938a0affdd4749d",
+      "outputSha256": "278f082f2db0f1be034e994d842bdfe1b755b2dc598765000a882417feb244d9"
+    },
+    {
       "source": "public/images/products/110-lock-case-2.webp",
       "output": "public/images/products-hyde/110-lock-case-2.webp",
       "width": 1000,
@@ -4548,29 +5042,12 @@
         "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
-        "strategy": "legacy-repair",
-        "variant": "black"
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "de864a8dbaf46805ab68a07226f2418500c776b5599fe3357d0cb5e4545d6221",
-      "outputSha256": "5dffc2a0a73464a94ea2b27e913ab4f8674e4e83267ea3b237912c0e6ae3a5a6"
+      "sourceSha256": "0c9a4ac8eee5ffbe22631e38f6a6e37ed5a525ec4f2b882696345efcf2eb43c7",
+      "outputSha256": "49933ddfcf8b01e4bc2e2e01fa4e75de63228045e8481ff5eb5ea397388f61c4"
     },
     {
       "source": "public/images/products/110-lock-case-3.webp",
@@ -4584,28 +5061,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "5d261a7de0ced885f5239ada1d2dba9a3194d4b4d98440ac229133b6137246aa",
-      "outputSha256": "dd75530d3c97ef19faa32bcdb1e25d6d2a197ecf8dddf9952bf5d20ae2d99f39"
+      "sourceSha256": "00bcbb8075b3900e75af95eaed1e1047a4bb065048fb8e26613c6524882247d6",
+      "outputSha256": "b4ed70320fdaca58250135d49b584a00317eb65ba490e9cf335742e5827e1eb6"
     },
     {
       "source": "public/images/products/110-lock-case-4.webp",
@@ -4619,28 +5079,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 6.266574585635359,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "d8759409574e1453c1d31847f16fc1c43744e5bdfaa0959535847f12ce28fd99",
-      "outputSha256": "b4035a057ac1d409a4a101b0fe6aa65d96554676bae3465d3950628427caa908"
+      "sourceSha256": "7d997503ae85645f602114a7baae279a09b4ae51972806788a8c1bbf6698d5c7",
+      "outputSha256": "182889e8de20b4e03c86b273eb5235799804c61fd3e63a37136b4730bde6e443"
     },
     {
       "source": "public/images/products/110-lock-case-5.webp",
@@ -4654,28 +5097,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "229bdb75488947d7f96939745b699bc660b54317b24ff74b98690e936dd878b7",
-      "outputSha256": "265bae5b12f6d8ab025e7e955e2191b8cab2ea48362ce3e17b12d66f40cef1f2"
+      "sourceSha256": "9751195307c9a61a5fe550f27afa52c24fb5038cbccd7c2a087aa0e0ffdeae56",
+      "outputSha256": "3e188fbad32aee2b8110057e3ce91717471bd80e5098fcc8596a9f7177162fb6"
     },
     {
       "source": "public/images/products/110-lock-case-6.webp",
@@ -4689,28 +5115,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
-        "variant": "white"
+        "strategy": "adaptive-mark",
+        "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 15.118324125230203,
-          "height": 152,
-          "left": 3,
-          "name": "below",
-          "top": 171,
-          "width": 212
-        }
-      },
-      "sourceSha256": "ae3c7cb63861992df14410c24c0d6f29392468eaf71950fa3bd5b4a8a51f1127",
-      "outputSha256": "b2d723bbfacd2da20f7211f4d34e4ddf805b9e53be8863cd064c33b571451d0e"
+      "sourceSha256": "4b22a9ebf6dd2a85f9191b76bc9eedf48ae615db006b11fa8495565c7238be56",
+      "outputSha256": "a13d8e7ce6d82adf1aaf5b79e65ef3263df3e3ae1de34fdccc700fe856cb6b93"
     },
     {
       "source": "public/images/products/110-lock-case-7.webp",
@@ -4724,28 +5133,11 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0.5741252302025782,
-          "height": 152,
-          "left": 223,
-          "name": "inward",
-          "top": 11,
-          "width": 212
-        }
-      },
-      "sourceSha256": "1ea5286631f8448ede023fb459878c6b2395d6210de9acde19c653568b8e7726",
-      "outputSha256": "f9948db5f2ef1b450d815f2950e2cd7f231dffe6c0cf904cd90292514e296b1d"
+      "sourceSha256": "b280585db54518095d635331b716ea01e3c399bdcef05587f9d7e08855bbc011",
+      "outputSha256": "a432304aac8b888c8b7976d3949bb016d6b525ec01501dd3bfcd2c97a4118d25"
     },
     {
       "source": "public/images/products/110-lock-case-video.webp",
@@ -4777,28 +5169,83 @@
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 152,
-          "left": 3,
-          "top": 11,
-          "width": 212
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 152,
-          "left": 3,
-          "name": "below",
-          "top": 171,
-          "width": 212
-        }
+      "sourceSha256": "632838f3aecb64a718a49a9c15a938286329653fbc93ac2d76b56ff9f2b4d22c",
+      "outputSha256": "d0fc8d35584ab1e976f82aebc4e18bb1acf3d7ea02754c734609b94a33419590"
+    },
+    {
+      "source": "public/images/products/112-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/112-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "eff3fe536b5938622e8d8ea4b7b4f87d54e017b889f5b72806ef83f8d0aed603",
-      "outputSha256": "41275568f50df4bf214796bd4fea8d5dbcfeeb23c8e38c618e52ef96e78d32c3"
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b8ade8e9e372be96e965d58dfe4e95d8baaec3453e8c963afc2af39885412562",
+      "outputSha256": "b5f547822b89ddf212274734277b96c61ef2776c51f6e6d58b4744968a728883"
+    },
+    {
+      "source": "public/images/products/112-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/112-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "daab4f30c4f8fb1a4e02f16debcabb5e9d82730380c404c40a4ad030d1102391",
+      "outputSha256": "b1c9fa1b46291741b3c7b912bf522b8836d9c6dec243976e5b780d3f582f055e"
+    },
+    {
+      "source": "public/images/products/112-glass-door-handle-video.webp",
+      "output": "public/images/products-hyde/112-glass-door-handle-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3e31004677eebfa77acfdd7e6c237f4304ff328a49929adb10ae29e6466f3c17",
+      "outputSha256": "66febb0d8b9bdc9d06855814ee6609fd9aefcd2579142feccf2e5fc7a8da1651"
+    },
+    {
+      "source": "public/images/products/112-glass-door-handle.webp",
+      "output": "public/images/products-hyde/112-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "62b129c9f857f0495873bed109182280f4df996f04d416d0be5a86c01cd09c8b",
+      "outputSha256": "1b2b22bb8cf91887a7fcb1d9e262bef0979036d0a91ec19be648e0f8a463372f"
     },
     {
       "source": "public/images/products/1121-lock-case-2.webp",
@@ -5312,74 +5759,92 @@
     {
       "source": "public/images/products/19-130mm-glass-door-handle-2.webp",
       "output": "public/images/products-hyde/19-130mm-glass-door-handle-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "c7db669589c97f4e0e04ed9b565feaf8954492152c552ccbcc5539e68672058d",
+      "outputSha256": "7517ab37aef102b4cb1db949334d95676a025961c176394d464423d9cba517e6"
+    },
+    {
+      "source": "public/images/products/19-130mm-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/19-130mm-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "8e5daaf77c016035a52a3fe7c8a1b3ad9d5ac52c8c0f01df2dd4f1c2bc5c8ad8",
-      "outputSha256": "a10227f9ee15d2f7a38d4f7929ebf4172ca38ede7b66f56c5626e9d8552bb40e"
+      "sourceSha256": "7f1e82b7ede773799a64ae33519180c3d8abe071f595957fce89ae712df870e1",
+      "outputSha256": "6532779204b0955b01ee13872d1ebcfa999d4088633c236af20dc854e1b4dd9c"
     },
     {
-      "source": "public/images/products/19-130mm-glass-door-handle-3.webp",
-      "output": "public/images/products-hyde/19-130mm-glass-door-handle-3.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/19-130mm-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/19-130mm-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "bottom-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "13fb9411b92305aa58d43546089a77f9fb3423964d3143b4e23ff422c9409d91",
-      "outputSha256": "680d08fc5418b59382dd5619bac5466bee7486f9961e792608f585860791439e"
+      "sourceSha256": "0501afe521afb6f9ffb397a0fef370638ad74cee6a9fd0ce30b167ade1f77fe1",
+      "outputSha256": "84e52204825953216c08f96041e417c4b21d4aac3e486ac5b8af1a0b23f2df8f"
     },
     {
-      "source": "public/images/products/19-130mm-glass-door-handle-4.webp",
-      "output": "public/images/products-hyde/19-130mm-glass-door-handle-4.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/19-130mm-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/19-130mm-glass-door-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "bc41a220624ce237036050b0a05b757677ed1864a22d987c9087563442c33a0d",
-      "outputSha256": "9f09cd85279567e86d4a27620c88552a332581ca8816c25c52fd0f614da7a202"
+      "sourceSha256": "f448edffab203175f9cca39d6b6e16c2872777072aeb964b54acc126b4aa5c86",
+      "outputSha256": "72a4c677af2e16e532d01356aad5e9267164082881dcabb8828d0e804129e2ef"
     },
     {
       "source": "public/images/products/19-130mm-glass-door-handle.webp",
       "output": "public/images/products-hyde/19-130mm-glass-door-handle.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "top-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "f85efedda9e0209513fe3e66b1e312e4950b4a7ac2c747a9fb616891a14ff70c",
-      "outputSha256": "fea1e16c30ee416ac9607184a56216433da484e70bca367eaddc9fe17b7302fa"
+      "sourceSha256": "cffe1a191290d8b8532ed4ba4520c9e9f752c418f35c3e676c7653444884485b",
+      "outputSha256": "3547816173ed6734716934d2ae23da98bf5c94966bfb0db7b7ce7efbc532c77d"
     },
     {
       "source": "public/images/products/200-indicator-2.webp",
@@ -10793,6 +11258,76 @@
       "outputSha256": "f3786625a6c4a00a162d6e87ea1a0b3dcbad78d4f807a5ca5e3ad149335f985b"
     },
     {
+      "source": "public/images/products/410-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/410-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 25.414805624483044,
+          "height": 169,
+          "left": 9,
+          "name": "below",
+          "top": 204,
+          "width": 236
+        }
+      },
+      "sourceSha256": "b6ce29427e24388ab1c4a7a47c801c28a32d4a66d8d5e989997a0f7826847cb1",
+      "outputSha256": "ec2bc8353d47291be50d97b3dcfb5f333ccf100f2a1d97387746b368ffb1b61e"
+    },
+    {
+      "source": "public/images/products/410-glass-door-handle.webp",
+      "output": "public/images/products-hyde/410-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "f601a92ee16e879327c3a8de186aaafecd8bd2038d5c8a8b79dcd32cc3560723",
+      "outputSha256": "a8da20aba725d6b5d3aa13dfd4c9a39b32b7c2d48c80c9e998e2e4229efab76c"
+    },
+    {
       "source": "public/images/products/45-bnik-lock-cylinder-2.webp",
       "output": "public/images/products-hyde/45-bnik-lock-cylinder-2.webp",
       "width": 1000,
@@ -13398,6 +13933,24 @@
       },
       "sourceSha256": "5c7c47bd88b04d802c4c026db94356464565d8dd85fdf6aff5ce50ee063e27a4",
       "outputSha256": "0684cd3da1a6823888cb5129fee72b256de5cd693f1a54666197eb96e85b5dcf"
+    },
+    {
+      "source": "public/images/products/5687-night-latch-and-rim-lock.webp",
+      "output": "public/images/products-hyde/5687-night-latch-and-rim-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f6b8f43ec7b4ca325ae7ffec54ea82accf15dcb84ab5b7769f828f97a99aef0d",
+      "outputSha256": "7aa398c99101c19eea980559adb5bcd7d101b6fc288621eaa7e312fa50cc6484"
     },
     {
       "source": "public/images/products/5688-night-latch-and-rim-lock-2.webp",
@@ -16686,6 +17239,24 @@
       },
       "sourceSha256": "49a0a3bd27aeeb08fe95e6110c32a180ef5ea2fae6e0e334554386664a14246f",
       "outputSha256": "88f8bb7b25d1784f2de852e3e59f9341ea2b125979f30fa23c15dd39531d6808"
+    },
+    {
+      "source": "public/images/products/5834-night-latch-and-rim-lock.webp",
+      "output": "public/images/products-hyde/5834-night-latch-and-rim-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ed66130c7332c93bb7acdc25aca0b3c758975797b6cca9cc70cef1075ae8e70a",
+      "outputSha256": "3d555ea9932939aea5f346040b3e35c8980db7324fc67fb70043c5c4a40de89b"
     },
     {
       "source": "public/images/products/5835-night-latch-and-rim-lock-2.webp",
@@ -48570,50 +49141,50 @@
       "outputSha256": "f38faa2529955b116b0e749f9155096a8a1c0014443bbc7a17b67589554b7569"
     },
     {
-      "source": "public/images/products/ds011-door-flush-bolt-2.webp",
-      "output": "public/images/products-hyde/ds011-door-flush-bolt-2.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/ds011-door-stopper-2.webp",
+      "output": "public/images/products-hyde/ds011-door-stopper-2.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "25e07c17013f41eb725ec273bd77bd6a4d23aa8ec6fd576768ad952f4a3c0c89",
-      "outputSha256": "467c2803d0e602d3696cc8fb530be74b25424e38720bf6f0b5ba3a4ef11187fd"
+      "sourceSha256": "cd150e89477f5d5628182fec86411efc6b763aac188d08e3da669bc11eeaf99f",
+      "outputSha256": "7906c72c7f2a85bfdb0b388750e3c019eaec92e73727a952a699101029ebee39"
     },
     {
-      "source": "public/images/products/ds011-door-flush-bolt-3.webp",
-      "output": "public/images/products-hyde/ds011-door-flush-bolt-3.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/ds011-door-stopper-3.webp",
+      "output": "public/images/products-hyde/ds011-door-stopper-3.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "white"
       },
-      "sourceSha256": "31ad181c9def9e142328a63fb7a7d66b3af1ed0223d92f8380c182ed522e1444",
-      "outputSha256": "ba0d44273e9b5ff744d8d78079789792e75d29b6bf008d0be718f1011cdab89f"
+      "sourceSha256": "dafce1bb55cfebcf01050481009323648eab9a0a5a97a1d3776a638252089ec9",
+      "outputSha256": "5b1b44cd255face0b496f782779e8f7fd8da420e7882a513fb5aee8f4022700d"
     },
     {
-      "source": "public/images/products/ds011-door-flush-bolt-4.webp",
-      "output": "public/images/products-hyde/ds011-door-flush-bolt-4.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/ds011-door-stopper-4.webp",
+      "output": "public/images/products-hyde/ds011-door-stopper-4.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
@@ -48623,40 +49194,58 @@
       "repair": {
         "mode": "boundary-fill",
         "region": {
-          "height": 68,
-          "left": 677,
-          "top": 50,
-          "width": 123
+          "height": 142,
+          "left": 841,
+          "top": 0,
+          "width": 159
         },
         "sample": {
-          "edgeDifference": 33.91710758377425,
-          "height": 68,
-          "left": 677,
-          "name": "below",
-          "top": 124,
-          "width": 123
+          "edgeDifference": 57.10535117056856,
+          "height": 142,
+          "left": 674,
+          "name": "inward",
+          "top": 0,
+          "width": 159
         }
       },
-      "sourceSha256": "2db9637f04d2bd5a252b1ad5ab6a204891c2f12032eedc0497cf11c5f83bb732",
-      "outputSha256": "1aff5af4d210cb49ab010d0ec07f8874675c545492e31c5a4b1855ebaddc5aa3"
+      "sourceSha256": "0a6d30099d98cdc25d3ddf49e96439fd786391550820eb9e62319557f59a2fdc",
+      "outputSha256": "6ee1b2925dafcbd5c8bf9596c393adcf9d0af814734d5c164cbb47739ba0478b"
     },
     {
-      "source": "public/images/products/ds011-door-flush-bolt.webp",
-      "output": "public/images/products-hyde/ds011-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/ds011-door-stopper-video.webp",
+      "output": "public/images/products-hyde/ds011-door-stopper-video.webp",
+      "width": 1280,
+      "height": 720,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cd92152c4c5cd578af75f1f0c17b5684209b60f72b17ff702861e0ed2ca6006d",
+      "outputSha256": "2c66391bb199e113856abbbcb013d3b4ac30c067562f949f887b68863aa002fb"
+    },
+    {
+      "source": "public/images/products/ds011-door-stopper.webp",
+      "output": "public/images/products-hyde/ds011-door-stopper.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "ffa4404694d539582f1e9d1b85a40df8c98236a2439b6ed9bbeec2c4e7eefc70",
-      "outputSha256": "fae9b2e7d797c86ff53dd99928933f5d205e1024dc7904d54c8b6952fe303c3b"
+      "sourceSha256": "338ec536b8a8bfb734e9de48f868bba819b1b9221de4932a001248fa98c4077c",
+      "outputSha256": "2d83eeaa234fdd4dad2feffecedde5181bf55c8fa89144da88e90ecc30ff2aa7"
     },
     {
       "source": "public/images/products/ds013-door-stopper.webp",
@@ -51811,92 +52400,92 @@
     {
       "source": "public/images/products/f101-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f101-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
+        "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "1778711bf44a25863af69ddbf329996fa742e1a3c05667e6c4676e061926c6b4",
-      "outputSha256": "ef62b25d9fe3045457dee74e83129ca471a4e14d4aab8d12400cb8da551f8ad3"
+      "sourceSha256": "04ee21b902909001e598f1fbde05e4d3280c19b421797c743ebc03d2da8595ba",
+      "outputSha256": "cb12ec096b6e098d5f7154f3ec0b1f624617ac6aef949a2005725e6068b91d8f"
     },
     {
       "source": "public/images/products/f101-glass-door-patch-fittings-4.webp",
       "output": "public/images/products-hyde/f101-glass-door-patch-fittings-4.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "3d0deb08f75d086bfcdfa288f521dd5d4c32331e3b96607039dfc24dacb500cd",
-      "outputSha256": "01190ca38942b538a85ec814e6be8417b2179244d76af23a8c3c1c0dfcefa930"
+      "sourceSha256": "c59add7c8acca5a59d1edd85540d096f7c904635fe3951d25695e8344c8eb294",
+      "outputSha256": "e33ee250f9038d82399634c05def3bd833a1f0af617886e1f065c8f98eb537c9"
     },
     {
       "source": "public/images/products/f101-glass-door-patch-fittings-5.webp",
       "output": "public/images/products-hyde/f101-glass-door-patch-fittings-5.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "d6dbe76422fdbd84b74b162884aa18c2c547a20f286464b54f209a07852c2c90",
-      "outputSha256": "ed301563739e6d0393ac3653f84fa88dfdfef704f670584bce9cb18a20ac8c48"
-    },
-    {
-      "source": "public/images/products/f101-glass-door-patch-fittings-6.webp",
-      "output": "public/images/products-hyde/f101-glass-door-patch-fittings-6.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "4865d4eb97d228d09b22010a54b6199dcc5cb7d2935148e5ad18ea26baa673e8",
-      "outputSha256": "fa5d5cb89d4e0e5f98cfd2a2490510b3158e89224610f14b446d9ca78e8795f6"
-    },
-    {
-      "source": "public/images/products/f101-glass-door-patch-fittings-7.webp",
-      "output": "public/images/products-hyde/f101-glass-door-patch-fittings-7.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "bottom-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "2778f0ceb48bd8bcf86be2756153f4ab4f3c337b412b0788f5832abbf4a5660c",
-      "outputSha256": "faeda3db7f976bcf436f3eb92106e07fae20614a6980fc27c0f421dd10aeddab"
+      "sourceSha256": "5ff1afaae97becdd51d67f427c55cfced25d51c7b86e3d04bd1cf894af99d8c0",
+      "outputSha256": "142ccb3c94f4dad0945a1442af70dfe16d30aa5c6a072a55b83e4da898290e6c"
+    },
+    {
+      "source": "public/images/products/f101-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f101-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df736e16be13382ba17da269e5638e408c93883ff19746ec088d5eb378b6096c",
+      "outputSha256": "5316de37ab9a86ca6d883625ac3f488ce035d730ec4d498f3e292950b98d4186"
+    },
+    {
+      "source": "public/images/products/f101-glass-door-patch-fittings-7.webp",
+      "output": "public/images/products-hyde/f101-glass-door-patch-fittings-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c507252b5164f8398bd3bdae8514e7795bbc46972edeb0a60732bae00311f6c3",
+      "outputSha256": "beda5c43d09be055fe61a06481f70b23f82bb88a32b4d33c15a96bda0a304db2"
     },
     {
       "source": "public/images/products/f101-glass-door-patch-fittings-8.webp",
@@ -51915,6 +52504,24 @@
       },
       "sourceSha256": "ca58d9137b549830042f52849afa6dfd99d8bdac6b1575cc824be47c6561122e",
       "outputSha256": "93a7eb4a0b1ecd44ac894e5f3e770c3afb2268d6456984e1f1eb0efb7d4721b7"
+    },
+    {
+      "source": "public/images/products/f101-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f101-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c0b5295ce98c1d58aef5bd99f825a454bcbdf000779b396b801992810c989acc",
+      "outputSha256": "354e6f91f939f80e8d23813e01494ce51885fb6e310aa3c50a4e8fe0df3c468f"
     },
     {
       "source": "public/images/products/f101-glass-door-patch-fittings.webp",
@@ -52200,846 +52807,1045 @@
     {
       "source": "public/images/products/f110-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f110-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "902a63eb7d07617ba988c9d472a1890f42b57bee4e9c2d9e699d407768ae9ff2",
-      "outputSha256": "9d433a1bfb1887c1fff2de92181956e0ad1b34b925585da26e868eee8c9ae66c"
+      "sourceSha256": "d5affeb045802b56f55fc5b2575f4a6f83277e501609d05bd2e8374756ba5bea",
+      "outputSha256": "0f59315b800edb91e65680e3f53c0d0deaf8dd3c0bd079108063576f98e14e59"
     },
     {
       "source": "public/images/products/f110-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f110-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
-        "variant": "white"
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 95,
-          "left": 647,
-          "top": 15,
-          "width": 151
-        },
-        "sample": {
-          "edgeDifference": 20.53483606557377,
-          "height": 95,
-          "left": 647,
-          "name": "below",
-          "top": 116,
-          "width": 151
-        }
+      "sourceSha256": "5bf19043ecf8253b5ce5a986aa7d89ed9d66c28ba28dd3e008894b7dcad94fd7",
+      "outputSha256": "63d236602fca8e2878f54fadd52e95c49b48ab5425db3e197a2e9badd1830178"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-4.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "d117d649f131d44734684b656c27280f6c254c668a32a6f8984217b1a1c28285",
-      "outputSha256": "00375ec7a846cd33326265f0480c16fdd4efdfad60887eb4adba988cd6712f02"
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d4e2ef4c4f1e90e82f0a6563e5b86fd16723a8ad7060e4fd45c1d6ab2c15457c",
+      "outputSha256": "fcc7a61501ed9fa1fc730ce1d6eda365ca4fced4fa4d398828b18056b8f246cd"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9a412f1b3bbae88406abdc28ec60cc42facc32a148f7b7a9b4553b4166f29a87",
+      "outputSha256": "c679e3743d9cb5988e34a68738c56fcd7566c04d517d8bcf23445fe23439916a"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3ddcced535cd7bbed383ee09b86ab0773d31d7041486d1176a99ec0a020b24c0",
+      "outputSha256": "0fe232f6fdad160f35032e77eaba9eab3444d3187b3fe04ae62f26ef44709a75"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-7.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5457ffb91b315e96c78865b0396cdcd9b1e405772ee92eb0e2f31f44f46b332d",
+      "outputSha256": "0a6fdd3e019b54c465b3ad33abebd2bd11b2d8b3f9c44bd853ad9b659f961326"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-8.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-8.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f86c85516d53007907ac5826575b2fb9f1c39f17de41b9f8edaa448d5e7fbd71",
+      "outputSha256": "d43de06cb7e1866fd76eb788c723a6daa5a495801ecd0097bd69f8eb6f5eeafe"
+    },
+    {
+      "source": "public/images/products/f110-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f110-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b32ea45207cd0a091fc7b80da6d76d6a075f2ae616864a8c3f552818810e030f",
+      "outputSha256": "e5766b1eaac3cf19fe010ef018f2be7bb0ccb9fb1797040e2acaa7cf4891c49d"
     },
     {
       "source": "public/images/products/f110-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f110-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "ff706a99adfb0926efd4113ed6543d1e8efd3a3c78b4081bde24d2c9cececab7",
-      "outputSha256": "66491743a1312c2b279d0db12858c5ce822e64d2a55c753fa73ceaca221a75f3"
+      "sourceSha256": "8f7cd36f3812c7b0783cd9e5a13e6b1250cff6e205011f616a580af53e742b3b",
+      "outputSha256": "02e2f7c82656126586100e9a280eb69e21be8c16b3a5da7d32a83a5cea3e0dd9"
     },
     {
       "source": "public/images/products/f111-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f111-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "fb3dabdbbe2a002c9f9b846540f3c9e775f5962c890258e3eb0166e10f327f08",
-      "outputSha256": "4f036fc72ce67642691ba423b0217466bcbc305aeaa31d04fffa2b685e7f59e8"
+      "sourceSha256": "f6133b5bd71e001e5d8043c0dbb1872d859c7ea020cc0c832087495b48e44794",
+      "outputSha256": "7960d404d7cd53291df3d151604cdb3db9e17e0894836eb1b8afc773c59d476f"
     },
     {
       "source": "public/images/products/f111-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f111-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "524d0bfecca247581c044a820f08ad30b4107c4f0a1805982246158d2df39feb",
+      "outputSha256": "c106f258e0165f090b9531748d106ed40a92b9a857030c879c25bcd93a4b5636"
+    },
+    {
+      "source": "public/images/products/f111-glass-door-patch-fittings-4.webp",
+      "output": "public/images/products-hyde/f111-glass-door-patch-fittings-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5e5112dddcdc022e6aeb02bf4771e31ce58516d6daa666eff16b77eee6895519",
+      "outputSha256": "90e9b249f81dae907165b6532b5b1b3b6a479b92baa15e5207fb93fd734b3a09"
+    },
+    {
+      "source": "public/images/products/f111-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/f111-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c988d42282e198e9623278d6b85ee4f3ea5784f62eb45f4089b18964dfd7ea1d",
+      "outputSha256": "2174c6bd21b2a824c50470a0cb43fd88e09696f8b27b3439ab4bcf2eb20fc93c"
+    },
+    {
+      "source": "public/images/products/f111-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f111-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "66fbafab7f16b55d24c150fe214733fe450cc27dab47fa9301d6553725fb5ef1",
+      "outputSha256": "ebc55a9d5adec2b46d8f85abbd82096d181af455ebd65e0f7fddd6c9ff1be3bf"
+    },
+    {
+      "source": "public/images/products/f111-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f111-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 9.367055771725033,
-          "height": 109,
-          "left": 635,
-          "name": "below",
-          "top": 136,
-          "width": 150
-        }
-      },
-      "sourceSha256": "d29547fd3ed353d7ec3f61a01524f418badfffe8ecc32eaee670a8b431734083",
-      "outputSha256": "968b747d505a6e1acf43fe96dd87582fb8346ec24d976cd1a8c95b5dd6287650"
+      "sourceSha256": "2c9d50865fc51fc0b2c0251d6cde9d9599cde4fadc86fb2a6eaee02318bb67a1",
+      "outputSha256": "3e2e9be1b154b89b836b491be9cc102b7e932de939a773253b10f26cff44652c"
     },
     {
       "source": "public/images/products/f111-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f111-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "a86e886aace866f1b773081e9c43fa01016f8a0230509d90e6ea10ec468b3a19",
-      "outputSha256": "3de6cfe3b7c887fb178363d1359d0a85793b25a5203e70c7134e9e694aa2d7bf"
+      "sourceSha256": "07402cafd8ddb34070a5fcc8db48bb78812d4cd38c4d211e2bf338811be7b09a",
+      "outputSha256": "aa6bf21d5d89124e86ef74ac2fae665b8397b54fb876732af13802457638252e"
     },
     {
       "source": "public/images/products/f112-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f112-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6d9f93ea48621f782c1f6d576cad567e869b9bc64252e93762dcaf49bd9f195c",
+      "outputSha256": "0ff1629d7c6a640972f9b50abe220716cf29c2ba3d5f21264607e78c00833887"
+    },
+    {
+      "source": "public/images/products/f112-glass-door-patch-fittings-3.webp",
+      "output": "public/images/products-hyde/f112-glass-door-patch-fittings-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f08051a9a30432e51d17f4892fd8e16dcd36ebb0878634d616f281c5fa72912f",
+      "outputSha256": "348d06439a1627e324e9d8149b88b1cef03ceb4d195e8666180343756280f5cf"
+    },
+    {
+      "source": "public/images/products/f112-glass-door-patch-fittings-4.webp",
+      "output": "public/images/products-hyde/f112-glass-door-patch-fittings-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8b2e293dbdecd209cb68abee5cada6e0ae2900af523d0cff3fe6116b9a37d685",
+      "outputSha256": "af1e5a42619dd5fa1f810150d22fbdfc34e22d4595c23b5bd5bdc06875bf83d9"
+    },
+    {
+      "source": "public/images/products/f112-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/f112-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4deacc7d490987807fba6993fb2f43492413541c094e86705ceb5b240d6e1d62",
+      "outputSha256": "0534b4b1369362cf1a9da03cf3174898109c95ab1bb900610838a9e9b4151934"
+    },
+    {
+      "source": "public/images/products/f112-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f112-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "685c11b99f3170a849eda67ecf06cb2498390294a1d1dcb8a0e83980456c1354",
+      "outputSha256": "28df3849caec9ebc539a1c1165b1b7ab7d799b1b6424dd89d812eed77eb8405c"
+    },
+    {
+      "source": "public/images/products/f112-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f112-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "a3df2a18c878c186a661d08df2c6c0768178d1f8c9427dbd5fb6bbe9daa2678f",
-      "outputSha256": "012cea962c042ef5958d5957ac642ecd305983405bcd384047a629109048cd9f"
+      "sourceSha256": "4250b27cb64d08475105b542ae337f39626e30c8cfe8969e7a16cde8baaf7557",
+      "outputSha256": "de6ac99deda5bba7140eeb2cd7176a064ac63d22999d4923b6a49071119ba279"
     },
     {
       "source": "public/images/products/f112-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f112-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "38b8ad65533c8a0df88d7faac0efabb3262e6d0b57e8b2ec46175a74e954bf31",
-      "outputSha256": "f9fcbc84b17ce3c69a6c4c295c86eef12fd16135e176d9e4f818080ebe844f0d"
+      "sourceSha256": "8556fdf5d343c71d4cae392b74864f9f5add3edd92d730418d8d179cc02a5091",
+      "outputSha256": "f0669624ee786c6db3cde12af39dcaf3a59c22bb0fe6b7684741e4f2fc9b3be2"
     },
     {
       "source": "public/images/products/f113-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f113-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "7487e3f88fcda11d77865d729408da363bfdf46975df59945e8a063da8e1ff1f",
-      "outputSha256": "c3c11ec50a629da9cfa38d3f2ae4fc9be1f7426809c30b159a11328e46b45d26"
+      "sourceSha256": "ace444d4c647fe9f3d5fff224ebcb183f08fe81e7479ec44ab8135fe2b8fbba5",
+      "outputSha256": "a780d19ca6264ec19b7e4ecc273aae0d4a07959feeecc2c041bf50a871d92ff3"
     },
     {
       "source": "public/images/products/f113-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f113-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "9f2eba92f44cb287f8ebce6003682570a69a4348b84372e687c480c45efe65f9",
-      "outputSha256": "7e6529941573aea39780eb7add4efd2dc8578d5d420164a31ba6df910435fa76"
+      "sourceSha256": "aa433c3c21f503b73a347a2432c31007274fc69b263ff1e3b537db16819824a1",
+      "outputSha256": "18b4e0a2916c9d713b35cb62ca678ed96d0fde4fcecf5d391ba2cba41f2d20bc"
     },
     {
       "source": "public/images/products/f113-glass-door-patch-fittings-4.webp",
       "output": "public/images/products-hyde/f113-glass-door-patch-fittings-4.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "571570f2f0cebe0a9b0a1f6458a1f02398207feb15f4a468bbb73af2bce08c5e",
+      "outputSha256": "f92ad048996e235d29b9db7d1f56f7055d5ff195385696fced4118d14b2f3d64"
+    },
+    {
+      "source": "public/images/products/f113-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/f113-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 11.234111543450064,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
+      "sourceSha256": "091862ea8f51bc7c2cc43f8c42b4a0d1f35310bb58f6691f829dbd66c2b6d2a0",
+      "outputSha256": "3ad6cf36545ac953d1d14b46a3667658d05659f595b1bab205f8f6bdb96bd27a"
+    },
+    {
+      "source": "public/images/products/f113-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f113-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "235ece79c7738b4c285f3b26418f044624672c49caaa36e9a278191cedd48d29",
-      "outputSha256": "93b97bac00b4da09b3087864c0c748bf9dd903594343d6c61d609aacc79b8c2c"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0b02ad64e7df05a4c6d1f254e40d60ea0ce9f919ead1e1b3112a3170d6ae37d1",
+      "outputSha256": "e4333ca1f42bb21b85c2814ef3d7ce5f7873352124d8b63602958296d872453f"
+    },
+    {
+      "source": "public/images/products/f113-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f113-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5b3f3fe33a4665147741dfc66ce2ed39e9abaf5fd85782fe954774b7a2d17410",
+      "outputSha256": "48c203e6e2a2832f8e8b1825e2a499194fa76c9a38182a9fb37dffb2a2d73b9c"
     },
     {
       "source": "public/images/products/f113-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f113-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 95,
-          "left": 635,
-          "top": 25,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 95,
-          "left": 479,
-          "name": "inward",
-          "top": 25,
-          "width": 150
-        }
-      },
-      "sourceSha256": "b48c6670f903e5009c334b2cf9a4b219465fb3f7d6ff30705bdf91e3c1525a4b",
-      "outputSha256": "fee39684c681a05551827defbac321dd26fae3b426cec7173508312f394a2389"
+      "sourceSha256": "575b23f70277cd115264ea0c8d82deb150d610ad8275f973e4ab8472b8dfc9c7",
+      "outputSha256": "8d3755ff303f4add8193eb3123e6004a38d0d0fe3698ea4266b594e5abb8e4a6"
     },
     {
       "source": "public/images/products/f114-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f114-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 95,
-          "left": 22,
-          "top": 25,
-          "width": 151
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 95,
-          "left": 179,
-          "name": "inward",
-          "top": 25,
-          "width": 151
-        }
-      },
-      "sourceSha256": "465c0529fa135b8789a0f1ed053a0a4b447c501de9f48cc4335de0a9459abfec",
-      "outputSha256": "8bc481ce96b519f3900589075d51e4550f4d4f2dd6e95bff452b097ba2efc99d"
+      "sourceSha256": "eb362e9e47250ec724b5a56c212f1471390c2855b0b8a1518781a19fb49d07c4",
+      "outputSha256": "f3f964e89f639925695afc91d4024803ce8798713ebebca371470cd681a5d9b9"
     },
     {
       "source": "public/images/products/f114-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f114-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5ffbc1c7ef214cc054a244eb6c289de13c24fd0b1d0f7ebc22d623ff38d20458",
+      "outputSha256": "88ec53b9d089f5470020699ff3a21619fed62eeed3051c25544506c833b1d004"
+    },
+    {
+      "source": "public/images/products/f114-glass-door-patch-fittings-4.webp",
+      "output": "public/images/products-hyde/f114-glass-door-patch-fittings-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c72142d10619d4b70b717406097b84da044b0ca44ccde145e45c20f2073ee058",
+      "outputSha256": "b565fea3ec0c0c95a24f6782409f6a74612d48516cb5580a7986a1f8c54cd052"
+    },
+    {
+      "source": "public/images/products/f114-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/f114-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cd59ba155a3d3a9b88cb40dbe37fd0411eb58a1609822309bff025dca8ccc7e1",
+      "outputSha256": "ec90354fa24b6eab91b7b12fcac65efcd3a76f277b3b0e4aaeaedb7950d44482"
+    },
+    {
+      "source": "public/images/products/f114-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f114-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "white"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 95,
-          "left": 0,
-          "top": 12,
-          "width": 151
-        },
-        "sample": {
-          "edgeDifference": 0.4098360655737705,
-          "height": 95,
-          "left": 0,
-          "name": "below",
-          "top": 113,
-          "width": 151
-        }
+      "sourceSha256": "18bbcf5432acfd4d589faf1859615bfe57d61bac027e4653c290411c50c75c76",
+      "outputSha256": "2cb8971210cfa85f5c15a76bcb13a4312e9e6e2cff582d79a8e993a4538210c0"
+    },
+    {
+      "source": "public/images/products/f114-glass-door-patch-fittings-7.webp",
+      "output": "public/images/products-hyde/f114-glass-door-patch-fittings-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "9c1f4bf97af9e04f6c922cbf99645cb41965f98ec294d47ef1874f9e4c2e0945",
-      "outputSha256": "733f0d4a95ecadbce9341dd2b781c548e390c97315f691e05b5868469c4264b2"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8556ab187f31546a4986f54ab65b6909b5552d299b04bfa1be0a1b8f191609c6",
+      "outputSha256": "c6a120923491ef89d88b80529180a1c505ac5adbf13ca39edb7070964f2a6a28"
+    },
+    {
+      "source": "public/images/products/f114-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f114-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "701c5868bb4fa01f404218f60325d2f949e4108701483c41b573a3323c14c22b",
+      "outputSha256": "50ec7f4a886a442d4a62801dc2eb3d49a1697220d6aa2fe74bb4d2a8bbad6724"
     },
     {
       "source": "public/images/products/f114-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f114-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 22,
-          "top": 21,
-          "width": 151
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 179,
-          "name": "inward",
-          "top": 21,
-          "width": 151
-        }
-      },
-      "sourceSha256": "698eb7a2ec6f0e3d597a4800aee027b7538ed3647bd3ad6923b0373f3f64f870",
-      "outputSha256": "5fc2484b146876fd9591c765e1c7bbae967c01943cc4237d5409007f1b601279"
+      "sourceSha256": "a764085e19ee2cf4bfcf72fc687bda00db5ddfbd33725edccbf0113909f81ea4",
+      "outputSha256": "15ac8839a8ad0cefdea89aaeb19b520a630cf364772b8d30fa101270d457dc7f"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
-        "strategy": "adaptive-mark",
+        "strategy": "legacy-repair",
         "variant": "black"
       },
-      "sourceSha256": "42614d7b1244ff4a98565ed91310b16ac42ba0af6bbb804c3117748141a9e590",
-      "outputSha256": "e6517260e1a9e3bb72534ceb2298a52973ddb9b3d324f14f1bf2e47643b2cc2b"
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 1.71712158808933,
+          "height": 169,
+          "left": 9,
+          "name": "below",
+          "top": 204,
+          "width": 236
+        }
+      },
+      "sourceSha256": "5d3ee6d01a6f14ab4b28d2fc422aad9116fd90a93a3163418eed8de790bef713",
+      "outputSha256": "b2ee611e502838218dd7bf8dc63e2045928de44872367db134a8002d8200640d"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "e0df155c9f4863a7ef942e8c4af57497af54f9b36e413270b2a55c5b8b8164fe",
-      "outputSha256": "f1fb96b47d9ee890e0c3c3e44cadaa6c86dc398d7284942b3cbc75477e3aa3d9"
+      "sourceSha256": "ea0fa33b56817d71ca240f5c3f83239a8cfa377c52c4dd02f7217f2fefaac971",
+      "outputSha256": "0d752374e4662f9199835ea771da818186cbb670cf7fc2c2db3501a5cfb0b171"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-4.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-4.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "9ca1a301194db541a8563e161534e6972cc2eb7f6399794a86c46a0f02b2056d",
-      "outputSha256": "474613b79dd6c0de5885c0727ae6251b2d4d0c97d14934cbe233a2c0c303e39f"
+      "sourceSha256": "d2b015b36cc7c2316cc572ff9231f52be26a5aa2c4ede393ce6a66a3c106bf75",
+      "outputSha256": "fc4c0fd631f19abbaa8dc493004c028f6b665fb8690bcaa1958988ed639e1d7f"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-5.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-5.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "6ed68b23671809264f7e045c6bb9850c6266a68e4396a0f7a1acdf8580c341da",
-      "outputSha256": "37f40ac8e9bb9d814d9f16c20dc2adf5d84a1327b9dbf89758d7bf52a04be7bb"
+      "sourceSha256": "a1cb2a406a390b377435ffc67013e720e7b8b17d4e2a6351f286f1ad17f4a393",
+      "outputSha256": "4647e51a19f3a0946a618459ec595e4aef5093bbee1e15bf3fb8a978935317a1"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-6.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-6.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "top-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "322e118637dc2f1ebe03f7a28fdea09bcd7122fabab329f969a1e8c389c73de8",
-      "outputSha256": "d6663de704fc10ce0ac8335a21832c45e2741a83edd82f80f63dbd30acf7677f"
+      "sourceSha256": "10b088d79aeb4b8a82b3124e2e3f829b26d0aaef7f676106e7a3cd1f67dbe102",
+      "outputSha256": "9ccd685cd50d3c3e900c3ccbc5c3ecab210ef64b6f7d7a1e3ae685ea2a0980b9"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-7.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-7.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "top-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "29746d7aa9f112c5e78047a3ef0f7c2963f2c2c52f660ee8ca2be9dc98c53e41",
-      "outputSha256": "c8ed5dfd48f0bedc4fa6f1dc27956abc84b2df1f95cd7d956660d989b39a87da"
+      "sourceSha256": "b6bb8548ddb1cb7d8d8e3b16ca6b1685ef302ca5d3693b70a5c4cacfde51aec0",
+      "outputSha256": "cd5cf4e35bf562ceafc98e49ae517864bcf43d2926b36d5f297c6992883d5f50"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings-8.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings-8.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "924ee8977305f408e5f5c9f216103c701fbd0487be2ed1500acac4a1d212a318",
-      "outputSha256": "914fb778d67f70b54aa646d3a9e780e47bd430b03f45a854facd939409fa5430"
+      "sourceSha256": "4b02205f723a401d61a5e8c8b5133d22c3bd331dbf332f0156042be15c920272",
+      "outputSha256": "2f2ce688f6823e5a515502cfad6469bd5557e63589f6b182acd0d7568fd502cb"
+    },
+    {
+      "source": "public/images/products/f123-glass-door-patch-fittings-9.webp",
+      "output": "public/images/products-hyde/f123-glass-door-patch-fittings-9.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0c5d97195f07ccd1b3c7ce85eccd5e7d924ee39ae70fb72d625c18dd6d8a429d",
+      "outputSha256": "1ca492d8cb39e6d4010fb97f4b469ba8045e0e1c7090e6bf6813c911d5e2673c"
+    },
+    {
+      "source": "public/images/products/f123-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f123-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4abf325dd0d73c00503a69ee8fad1227ce234732b1ae17965d28d1077fdb6361",
+      "outputSha256": "9a865fe090c60d3617fb91bcaf9e570c3cde1f723abcc7b95bb9d256252fa6fd"
     },
     {
       "source": "public/images/products/f123-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f123-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "9155be4092751988fe3abbe41e0c086cf6b407012bb1b5be04caee545052868c",
-      "outputSha256": "8f5873ad8ac5adc2070bb36a4f7612fadea39c5b326d08f3bce8f599e1507f38"
+      "sourceSha256": "612f51dfcb0827fe798d58de02b0849128f90af3011411804cd9caf86de2e1ae",
+      "outputSha256": "3c548674a0b11ec1059e5fae9d4bbc5a9be1540adb4df3bf40b3608cd6b082ad"
     },
     {
       "source": "public/images/products/f132-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/f132-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 1.2295719844357977,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "10962a0ea520f98f8880568373d5ab6e0e4b2fc98ad407fead3dc6afb344df48",
-      "outputSha256": "871b0eeb54903867bf10aad5942531e23afc6b2b232862a3dee1826bb9efad57"
+      "sourceSha256": "18cd2bb55e0083b6c2cc5f9da06e96dee0c92fc8043581354feaa26a2b29f274",
+      "outputSha256": "592a92e2cd652a217bbba8694e9a02f8e0f44ea2e23b72fefb098ba645dff8f9"
     },
     {
       "source": "public/images/products/f132-glass-door-patch-fittings-3.webp",
       "output": "public/images/products-hyde/f132-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 635,
-          "name": "below",
-          "top": 136,
-          "width": 150
-        }
-      },
-      "sourceSha256": "ed562f5606a9a6a2f74b5c255e7a07970c4afb4efa0e72da38cc2ed313954b98",
-      "outputSha256": "6b18d38c4422d80413c018b0445c42aa43a35260f557791b171865dd459b36fc"
+      "sourceSha256": "8ddc9b419d835b1e26cb8f9e19263329a65993349d2f926038cedddcaae4cd62",
+      "outputSha256": "6ef9d747f198598d61a641bd79b7e72679a712ef9bb0eeaa9b8d4085d7aae988"
     },
     {
       "source": "public/images/products/f132-glass-door-patch-fittings-4.webp",
       "output": "public/images/products-hyde/f132-glass-door-patch-fittings-4.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "858c6db4ae758cab123501c452a7c0e87310578afd2b93a605d0bf6355d4cfd5",
-      "outputSha256": "787dbff505e0c53954bb27468fbb6032c7e99b547b461492dc482f803898aecf"
+      "sourceSha256": "8d2228484bc37824117a22a572db74aa6b68a1624f01045e883ef92b1856d0a8",
+      "outputSha256": "c050e8c2e9bd7b830ff27eef6d1fbfe034ae9054893719db48bee7249098fc10"
     },
     {
       "source": "public/images/products/f132-glass-door-patch-fittings-5.webp",
       "output": "public/images/products-hyde/f132-glass-door-patch-fittings-5.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "42ae81891cbd4cc1151bdc0881328975bcbd3a4953adaa3f0a664041178812d8",
+      "outputSha256": "079964d167a6e444425e2e9bcbc24d9bb64a594809dd2c6fb75662010086abbe"
+    },
+    {
+      "source": "public/images/products/f132-glass-door-patch-fittings-6.webp",
+      "output": "public/images/products-hyde/f132-glass-door-patch-fittings-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ae8d4216c3f975f57c9eeb3688d4dcf39400408bdd6a539203a3e68829150c3e",
+      "outputSha256": "123383464d9aa07fe99fb35b6892fd863c1a2117aa2bad39ce9d6e7122d24d39"
+    },
+    {
+      "source": "public/images/products/f132-glass-door-patch-fittings-7.webp",
+      "output": "public/images/products-hyde/f132-glass-door-patch-fittings-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7f51a1c9fd7b644b1e20597135d9d0668b0f423b11f352e06bb896c02456a652",
+      "outputSha256": "0c1599e27265c1937d673c9243b86f6514cb1d0280777fa39ba1f02638202577"
+    },
+    {
+      "source": "public/images/products/f132-glass-door-patch-fittings-8.webp",
+      "output": "public/images/products-hyde/f132-glass-door-patch-fittings-8.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ff9206a75782c2a03786edad4c357068dd48a0451f137e208b289c8ebe85bd38",
+      "outputSha256": "4a4a76e3bc9d915843b12fe6959740a7dc827982a0c9d797d084c28c770791e3"
+    },
+    {
+      "source": "public/images/products/f132-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/f132-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
-        "strategy": "legacy-repair",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "boundary-fill",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 10.987029831387808,
-          "height": 109,
-          "left": 635,
-          "name": "below",
-          "top": 136,
-          "width": 150
-        }
-      },
-      "sourceSha256": "469632fa45fb9cc37f4d69afd022fa3e210aa589aae36f611111dbc959d6aba0",
-      "outputSha256": "f937b29cb3cabc2da45107710d4677fcbe635509b13bbabab842bbb87e19d681"
+      "sourceSha256": "2a87adfd0d6affec87e1c7ab42a8dbd4c8ad21407ce36f5107aeb66067c0938b",
+      "outputSha256": "6c0889343cede4e53a783ae0de46cda85b45c2c361dd01d00eaaa7be2d618d91"
     },
     {
       "source": "public/images/products/f132-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/f132-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "5515c09cde2d429153b0195d561880a203875c05d08f7677be07c85eed7aa6b4",
-      "outputSha256": "276b41e0ec4f9ee5b6e9752361705fe98a3d07ab2b67fa3cb9882eb073c67171"
+      "sourceSha256": "35cc9e1c06c9cb5f1a5fe869ad5e04d10709f9de228857d972f13b401754cebd",
+      "outputSha256": "034aaefc009793aa6736740f326ee16bc0eeafd324812819235e083f23aebb4e"
     },
     {
       "source": "public/images/products/fb001-ac-door-flush-bolt-2.webp",
@@ -53078,6 +53884,132 @@
       "outputSha256": "14a4525024ef8ac4d71ed7f623fac3b47e1bdec0e1db80abd9d323d4d37e1a5b"
     },
     {
+      "source": "public/images/products/fb001-door-flush-bolt-2.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ff57faaa86f18901efe9577ef2d2bb4598d379bfc9924ff80f82f2a8432a4f53",
+      "outputSha256": "d4bb8f3323fa55f2699ee851930bfa7ae331a036369cc5fc3d2c7ec4a43e6f8f"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt-3.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f314cecc2529f1896267fdbc3a58ff2a70c23d3539282e827f10c3fd3e68edf2",
+      "outputSha256": "87032a0cff73678204a9dd69016d1fce04c22824d090a48dccd6194b8920d71e"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt-4.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "d646035d77007f32b37c5ab64cc8ea4dcad85d08810e23ccc0ddc4fd2d86739e",
+      "outputSha256": "01cc8fed5d5197f49080a6df24bc6d32b347867bd84565a28fda20046e305dab"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt-5.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9271525e4ce9ef2c053b565b3cb7f6a8450c058117b2302a01cca33aebf70907",
+      "outputSha256": "82fc30587b668baf02ea47a3b133760cd3abb04ba751a20e513a01b2be7835c1"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt-6.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3592a133a8e15b18d3f525d4888ea8d44373df956b143c24c414e7d9ccecff8d",
+      "outputSha256": "f54ea34489aa97c7cd1c2c137686cf4c7d5c2656b8ffee5a52cc84b5489c705a"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt-7.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e1c0b51f3b1e9e8a470407be81f9ccfb2cf660f2f0582d6d6f416da40dc0d3c",
+      "outputSha256": "c11eddc5b53fcf6da59a3bfc1dca0f6dd33cecfda73ad3056e91ea746b886db0"
+    },
+    {
+      "source": "public/images/products/fb001-door-flush-bolt.webp",
+      "output": "public/images/products-hyde/fb001-door-flush-bolt.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4394d3b79708745d77a3fbc4bd985ed8f33d208c534a6e46093413d094fb80de",
+      "outputSha256": "6a2e8edc7b2c569da51f189049d5a4aad4e0e54a3345042efbbb177026fc5614"
+    },
+    {
       "source": "public/images/products/fb001-ss-door-flush-bolt.webp",
       "output": "public/images/products-hyde/fb001-ss-door-flush-bolt.webp",
       "width": 800,
@@ -53094,6 +54026,42 @@
       },
       "sourceSha256": "57e48dce15f8594cc671bfd9068fa96704c0cbe6610219b5865c2498472f0c7c",
       "outputSha256": "ffeeb84192828c9254a9a0fb3d1ff493639d69d7f90d720d40dd2d050db691fa"
+    },
+    {
+      "source": "public/images/products/fb005-ac-door-flush-bolt-2.webp",
+      "output": "public/images/products-hyde/fb005-ac-door-flush-bolt-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "300a40d50cb8b771cff5c92a599b4e0a94e9c6c9e7fb7f2f7ae19da4f7897239",
+      "outputSha256": "f75ffceaa203781a3223ed1e56ed0f3d9087a34ab32088956730347a2d863724"
+    },
+    {
+      "source": "public/images/products/fb005-ac-door-flush-bolt.webp",
+      "output": "public/images/products-hyde/fb005-ac-door-flush-bolt.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e102fb8232eb048990676b7761c64ed898a37d7d79d0671e666f60aa0f5b025",
+      "outputSha256": "ce9061edb3746f0cfbcd6fa9f7b5408da793f6fa34fcf1a3b107ef31f4533f2b"
     },
     {
       "source": "public/images/products/fb005-door-flush-bolt-2.webp",
@@ -53132,112 +54100,148 @@
       "outputSha256": "5cbf307665fec4421378caa774134715b54994973fded75e766ccd4bee9cdc4c"
     },
     {
-      "source": "public/images/products/fb012-door-flush-bolt.webp",
-      "output": "public/images/products-hyde/fb012-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/fb012-door-flush-bolt-2.webp",
+      "output": "public/images/products-hyde/fb012-door-flush-bolt-2.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "18c083982a40004f8d2ae4ca99e0be5eeda0bfd43f8a9132f07777f50da18d3c",
-      "outputSha256": "2197f081990458b0bf37b043f2ce04b80442066bce5b90321eb5c3b3557786aa"
+      "sourceSha256": "3893d0a20f4ed34ab0f700d8e55259427d9c3ebe78d285edd5098eff629ad49d",
+      "outputSha256": "73dad37fae5326b701b1f5ab29f13de9b996292614507bc9027d2848fc1633bb"
+    },
+    {
+      "source": "public/images/products/fb012-door-flush-bolt.webp",
+      "output": "public/images/products-hyde/fb012-door-flush-bolt.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "07ca3bb3e9aab3ce53dcf342da767494fa71c7ff6ebf87100f8e7a3108fa56bc",
+      "outputSha256": "1cfa1b66f159131a747e3530290a308fad878530957e523989d0d94a24154526"
     },
     {
       "source": "public/images/products/fb013-door-flush-bolt-2.webp",
       "output": "public/images/products-hyde/fb013-door-flush-bolt-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "36049c1365eee65806d9819d7fa77edef9307e9859aa9995cf8dc5d86e4bd20d",
-      "outputSha256": "c6079bc309e8fd035b59441e23f1a98350aa17a0b1de6db4b7e42b2fee829b88"
+      "sourceSha256": "f8195c62b147fb809900b22c3ffcb91bcd87f22739a7ce8d2f59f79bcc06ec58",
+      "outputSha256": "1953315d1b6e4a19ff37c8f4d15720e776491e5880419d648cd1db2aad0c3e8c"
     },
     {
       "source": "public/images/products/fb013-door-flush-bolt-3.webp",
       "output": "public/images/products-hyde/fb013-door-flush-bolt-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "d9449676fbd08e0c4a67cc6c38586477987429c83572dc5ce0200e07fea6a554",
-      "outputSha256": "142f3dacf83eb9437a61f53d14889b0025f90f5ab9412d61192f5ea09705c1ca"
+      "sourceSha256": "5f82a834f3d720fdd07e93dfc3d8c5a6abe9b6ab9bfce049364e4efd2a997943",
+      "outputSha256": "305fd71c1e2e5ff0763e317f0641636367ec9f5228a78f050c0b59514d9ef22f"
+    },
+    {
+      "source": "public/images/products/fb013-door-flush-bolt-4.webp",
+      "output": "public/images/products-hyde/fb013-door-flush-bolt-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "960a6cc3c07a6f3da95637ab12c87437ec96f30ef180ad558dd26415b427d445",
+      "outputSha256": "49b20535ac52ff9cd45f8a2631a9658d9b09ac81d00da860535dd8bc0c0eca0d"
     },
     {
       "source": "public/images/products/fb013-door-flush-bolt.webp",
       "output": "public/images/products-hyde/fb013-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "bottom-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "5e65fcec11da4a715a60394c91dba8fcd663ae62c0101987aea6403bc11f33b5",
-      "outputSha256": "88e92fc9bc266cee39b6b2857ad2b4ce0e73a7da3a2ce5dc5e38d265ac8b3d18"
+      "sourceSha256": "7614bf1f636f999c003b65df1db72968685e378f678d53c0ccbb667c6b1b8cd8",
+      "outputSha256": "2c37b1e12509f638d38f0b156cdc4e5248a428f9faac649173f70eae6281ebe3"
     },
     {
       "source": "public/images/products/fb014-door-flush-bolt-2.webp",
       "output": "public/images/products-hyde/fb014-door-flush-bolt-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-right",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "61b899e8a345a7d9f2678cc5a2fcb2a8ca62d907857b639c65b450e1454e6f9e",
-      "outputSha256": "c34de6bcfd1259d4f253cb6584e3abbed678d2e59e7552edd52fc0c281fc8752"
-    },
-    {
-      "source": "public/images/products/fb014-door-flush-bolt-3.webp",
-      "output": "public/images/products-hyde/fb014-door-flush-bolt-3.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "330fa25968da0fc7e03ad9c642ebdbf9abf5f482997c18ccb19b0375b793c114",
-      "outputSha256": "6ed220af2c1933c212affe959cb8151e2c7db567ade4911002425e0c537ddc62"
+      "sourceSha256": "bf8418fcb4e7c966a6ab899a4305b68fdfe7a1b09309c2def8eed28242117c0e",
+      "outputSha256": "ce8443b72981ae86aabc21f340217bfcf42633947fca3fba8a6ab3d0834a21cc"
+    },
+    {
+      "source": "public/images/products/fb014-door-flush-bolt-3.webp",
+      "output": "public/images/products-hyde/fb014-door-flush-bolt-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "878e3aab7e71e34654b6281d5066cbbd3504dc5bec5b1b25f8a0734b8b9abf65",
+      "outputSha256": "34b31f5516a505c05ca6b228a864f2ff6d5db1fa83618ac708d28edea83ccaba"
     },
     {
       "source": "public/images/products/fb014-door-flush-bolt-4.webp",
@@ -53296,110 +54300,355 @@
     {
       "source": "public/images/products/fb014-door-flush-bolt.webp",
       "output": "public/images/products-hyde/fb014-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "06a89fb08cd1cc74f6df755f1cbfd51693d920d374ba3fe8825bda5a409aa70f",
+      "outputSha256": "98f15e60b0cadd52e7d906aa09eef7661bf817c59bc5215d50b5ffa622bc5ed5"
+    },
+    {
+      "source": "public/images/products/fb015-door-flush-bolt-2.webp",
+      "output": "public/images/products-hyde/fb015-door-flush-bolt-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 85,
+          "left": 0,
+          "top": 27,
+          "width": 133
+        },
+        "sample": {
+          "edgeDifference": 10.515432098765432,
+          "height": 85,
+          "left": 0,
+          "name": "below",
+          "top": 120,
+          "width": 133
+        }
+      },
+      "sourceSha256": "21544b0921d091a312224f474e5502f80a142822a0482fb5d6288809c43872c2",
+      "outputSha256": "c943371814c0dd83048198e571ff4c5332a7eec4839079284c5314eba0341cde"
+    },
+    {
+      "source": "public/images/products/fb015-door-flush-bolt.webp",
+      "output": "public/images/products-hyde/fb015-door-flush-bolt.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "760da13b9bfff873faf2d130da3cd67d123ab98f04fd15e0995a9edc01b353a9",
+      "outputSha256": "9d789fb7f249bb59e43cf11a8128c10876d56c3c4d9c53aae90fc0c2e4ff71b2"
+    },
+    {
+      "source": "public/images/products/fb016-door-flush-bolt-2.webp",
+      "output": "public/images/products-hyde/fb016-door-flush-bolt-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d0ec1d6fa77cbbe4e3d8a5c0f78efc025e6405672d03ed1117ea3dd4d8040978",
+      "outputSha256": "63a3e90e5805e67a7ae9e02969bca8466ec92280c7fb17929661c62ecff09587"
+    },
+    {
+      "source": "public/images/products/fb016-door-flush-bolt-3.webp",
+      "output": "public/images/products-hyde/fb016-door-flush-bolt-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e25924615c9d86d34931dbae1ae78cb91c4b883878a7e90b7f230f3cd841ec09",
+      "outputSha256": "d31da780fd614dc41471c8c56c9aa7d8d7995102e5115b5e8f25cee12b17fcd2"
+    },
+    {
+      "source": "public/images/products/fb016-door-flush-bolt-video.webp",
+      "output": "public/images/products-hyde/fb016-door-flush-bolt-video.webp",
+      "width": 960,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 115,
+        "logoHeight": 29
       },
       "placement": {
         "corner": "bottom-right",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "8b81d5ca42ee2ec6ad0d4f0f0a916ddeaf5c12406dd62feec3448851f42509d6",
-      "outputSha256": "8a1d35b5a226d5a5869ba7c09af7b0d53e1e40f05f8cab045eb6814882f22d9c"
-    },
-    {
-      "source": "public/images/products/fb015-door-flush-bolt-2.webp",
-      "output": "public/images/products-hyde/fb015-door-flush-bolt-2.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-right",
-        "strategy": "adaptive-mark",
-        "variant": "white"
-      },
-      "sourceSha256": "9813b12d3041c2c3479306cde618de96b8b11f354a89bcceeda283566cf4eac7",
-      "outputSha256": "c232f5908c2b31f0007cedc173fbf5ac16652e8ca8da4a24b8b18ca8611db4d2"
-    },
-    {
-      "source": "public/images/products/fb015-door-flush-bolt.webp",
-      "output": "public/images/products-hyde/fb015-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "a6cff615f4b451438cc0a810429b7457d66f7d1f2c7df93f18483ab18b6ad8dd",
-      "outputSha256": "5b1d02085184cca0fb1d98877c9732e937bfb2c045c7bd19ed9eb52db99af557"
-    },
-    {
-      "source": "public/images/products/fb016-door-flush-bolt-2.webp",
-      "output": "public/images/products-hyde/fb016-door-flush-bolt-2.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-right",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "3b1b03d0647f6ad4c8f7f8957b79e9cbc3faceb77a07ebc76bc45436a29b1e97",
-      "outputSha256": "a7ca44d86c0b4348eb44d90310b054899ae3430aa5c02c5395cf236c53667f8e"
-    },
-    {
-      "source": "public/images/products/fb016-door-flush-bolt-3.webp",
-      "output": "public/images/products-hyde/fb016-door-flush-bolt-3.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "white"
-      },
-      "sourceSha256": "1c0a33cb23321b84a2cc6589d27f4a98ccb7c036322e878a057ffde8fb3972e1",
-      "outputSha256": "231e4b49a89a09e1b354517ec6b06166209c8156fd77ccd9fc37217c267f839a"
+      "sourceSha256": "909c4bcf58b773a732f61ca98b2285e31bb0eff7f9da17b6a9093fe9004b3e1b",
+      "outputSha256": "79fa72e9b41e296ec8b4341e6b84e8fba0774eccd2a4e22019e1bae94ef5be8d"
     },
     {
       "source": "public/images/products/fb016-door-flush-bolt.webp",
       "output": "public/images/products-hyde/fb016-door-flush-bolt.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "722a85b278010b9cb61e80de7a7fa9b3c482a439342078dc1e0a5fdf3fcf0b23",
-      "outputSha256": "05ae20db5c1c4e4cda9f5c79fb857e17cc1ec6e607da0954fbc3e349fd5f9ea2"
+      "sourceSha256": "49395e9530d92b3433279f1d147797e509f59fbb9b258f3554d51a933bf286a0",
+      "outputSha256": "9ed16604c6a0684ca4d4dcfd593673fd3cf978a622dc9b7a53fb0f6e2d90bf93"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "2e5b00c8abbdab3a159c96f5b13715d3fbe5ed3766a36c072a3c0681c416eda3",
+      "outputSha256": "34b682fd610144378a73bd1edff9d36efa061790d470c188fac8d100858d384e"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 1.565343258891646,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "36ac654a4738de188016f25cd3c06c7928892aaf50c5384408a81255126d485c",
+      "outputSha256": "98abf1ac743fcbe172412686a615b37fb15737af481c514e5c2c88dbaa6c83dc"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 43.464019851116625,
+          "height": 169,
+          "left": 9,
+          "name": "below",
+          "top": 204,
+          "width": 236
+        }
+      },
+      "sourceSha256": "b37e3cc6416cf3265fd5381234dc2ea792f8981336c9d6936b90eeac72e79c3c",
+      "outputSha256": "a7014d8f986f2727065385eff415930621d3b3f262ae25a342348788981128b8"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 10.51157981803143,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "ba287fae41132dc729c9d546497a2144eef77d9b622a9331625595a88fdb163f",
+      "outputSha256": "fc4c94dd9f6bd929aa267fc7dd9e150b14a3a9d906046e1fecbe2cfb0749fc7d"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "white"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 37.13068651778329,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "ca895e1266feb56fcd454aa62864a5fd270b98a2636544652a4b103de3bc8d27",
+      "outputSha256": "0386b359ad940e4b9988f2da35fc64bc189ed254a2f85ac983ec6f2e8dd999a7"
+    },
+    {
+      "source": "public/images/products/g130-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g130-glass-door-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 169,
+          "left": 9,
+          "top": 27,
+          "width": 236
+        },
+        "sample": {
+          "edgeDifference": 12.351116625310175,
+          "height": 169,
+          "left": 253,
+          "name": "inward",
+          "top": 27,
+          "width": 236
+        }
+      },
+      "sourceSha256": "2909b7c5923af8015c55155d1745ad4eb4edd259a6239ce7f0c67abd7eeea3cc",
+      "outputSha256": "269c7f201176a88e2336560d805ff8aff739ef81efbba9a2c3158c0880218c7c"
     },
     {
       "source": "public/images/products/g559-night-latch-and-rim-lock-2.webp",
@@ -53685,47 +54934,12 @@
     {
       "source": "public/images/products/gl125-ss-glass-door-patch-fittings-2.webp",
       "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
-      },
-      "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
-        "variant": "black"
-      },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "060f4e9a499fc3898a3a4f58ee0164047ac3e80a8872c5b357d884410ee1b9f6",
-      "outputSha256": "3e04d9fdebfcad75a89cb0cc0dfef8c712944b647c291ca3068699514861b330"
-    },
-    {
-      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-3.webp",
-      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-3.webp",
-      "width": 800,
-      "height": 800,
-      "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
@@ -53735,127 +54949,200 @@
       "repair": {
         "mode": "edge-matched-clone",
         "region": {
-          "height": 81,
+          "height": 118,
           "left": 0,
-          "top": 3,
-          "width": 119
+          "top": 0,
+          "width": 147
         },
         "sample": {
-          "edgeDifference": 2.3223905723905722,
-          "height": 81,
-          "left": 125,
+          "edgeDifference": 2.0456273764258555,
+          "height": 118,
+          "left": 155,
           "name": "inward",
-          "top": 3,
-          "width": 119
+          "top": 0,
+          "width": 147
         }
       },
-      "sourceSha256": "61b837762c7bec375d48baba59beae411ee7bc58cf99e525afd23805e77d2790",
-      "outputSha256": "7dc6ec3811613385a857caed184c3bc970f0fb8e247fbf09d0d98466b41b9cbb"
+      "sourceSha256": "636256663183e00d7678ae53d396c07220a04f542a575ee62040cb861b8ea5b8",
+      "outputSha256": "ac6345ba8b49b46fced3e682377f6530da970878994acdf3834beaccce63eacc"
     },
     {
-      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-4.webp",
-      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-4.webp",
-      "width": 800,
-      "height": 800,
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-3.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-3.webp",
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
+        "corner": "top-left",
         "strategy": "legacy-repair",
         "variant": "black"
       },
       "repair": {
         "mode": "boundary-fill",
         "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
+          "height": 118,
+          "left": 0,
+          "top": 0,
+          "width": 147
         },
         "sample": {
-          "edgeDifference": 22.477950713359274,
-          "height": 109,
-          "left": 635,
+          "edgeDifference": 37.742712294043095,
+          "height": 118,
+          "left": 0,
           "name": "below",
-          "top": 136,
-          "width": 150
+          "top": 126,
+          "width": 147
         }
       },
-      "sourceSha256": "0a768612bafc548243eb9e60373bd17721b3454802f784cca89eacbf80606576",
-      "outputSha256": "e6cda807efdb214175c0ba08e51609b4557ad0131c03dfef18d9821afc01b289"
+      "sourceSha256": "081ac1f7a7bfd7f85e79f98b92778f3dbf6cad42093bf1f97fb982b11b08b2b0",
+      "outputSha256": "25206e671689da6de23d11fe2a7d8f803c1be2d8d64174716b56f125d1e86e83"
+    },
+    {
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-4.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "boundary-fill",
+        "region": {
+          "height": 118,
+          "left": 0,
+          "top": 0,
+          "width": 147
+        },
+        "sample": {
+          "edgeDifference": 7.221799746514575,
+          "height": 118,
+          "left": 155,
+          "name": "inward",
+          "top": 0,
+          "width": 147
+        }
+      },
+      "sourceSha256": "d38cafe5dc00c0ca38fdf75c24a76f2e5cc8ff7b587cf5de5fe1c7501d36b856",
+      "outputSha256": "8a2ae7d61920e505916904926df2f55aa05805f2966b3b4c3f761541c7187572"
+    },
+    {
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-5.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f00e90c170630780e29038aa7a5e133f0ba29fd53cd6989c221cf4963d6739ca",
+      "outputSha256": "879a57375adc3ada9625a5bf21f5e98ffde41c848f6c2139504b51f7d0c7b2e6"
     },
     {
       "source": "public/images/products/gl125-ss-glass-door-patch-fittings-6.webp",
       "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-6.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 1.7094682230869,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
+      "sourceSha256": "6cbf34bdfe0d066fe20e6d215eda66754dc44553608c9ec2be35b773277e9409",
+      "outputSha256": "5edefa25254cb44ff9e34589a82b384c465c86bd5839809c3d62b6a3eb823eaa"
+    },
+    {
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-7.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
-      "sourceSha256": "6af67eabeac397c6a5a8a21c917a06924d85d89eb1d2b512d8fcb461d767c66a",
-      "outputSha256": "18cc317053b98ad9b9f1c5a9a45a161c03d623d7ae006b08fff588c3e1d8d1a7"
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0f4d45e1b8ef81e756743efc80241c6c9c825e2a089ed3b68facd26029ea68f5",
+      "outputSha256": "05850d8a409d8e88cb3159e376969bb801d5e586fbda9bdd0311789634071515"
+    },
+    {
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-8.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-8.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "670d18cd7a6f98a2a1bb8216937458518b963d75962853e57688e2b7d12d0d9c",
+      "outputSha256": "040019bf4fda22b121185a2c2767cba96ffb3b6f7e0f21acf3a317b122813fe4"
+    },
+    {
+      "source": "public/images/products/gl125-ss-glass-door-patch-fittings-video.webp",
+      "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2ff36d41e5157f6e2d3f95be56fc5ce9df500ae3ee66d268940d06ad917dff23",
+      "outputSha256": "275a4d064d9bc7b1c553f275a165b63f1e6cc0e35aecfd8b46827f9261ae9ca8"
     },
     {
       "source": "public/images/products/gl125-ss-glass-door-patch-fittings.webp",
       "output": "public/images/products-hyde/gl125-ss-glass-door-patch-fittings.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-right",
-        "strategy": "legacy-repair",
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "repair": {
-        "mode": "edge-matched-clone",
-        "region": {
-          "height": 109,
-          "left": 635,
-          "top": 21,
-          "width": 150
-        },
-        "sample": {
-          "edgeDifference": 0,
-          "height": 109,
-          "left": 479,
-          "name": "inward",
-          "top": 21,
-          "width": 150
-        }
-      },
-      "sourceSha256": "72bdc924d75d843dd16c6b2e5e2736af206a46cbe25c342e63a43bba49a246f8",
-      "outputSha256": "3db69f3df09cf6d4aceddbdc9fa82ba2332f836a9a3100b5b5f3d50ef9309497"
+      "sourceSha256": "5109e1b7f1b59271f48873f15df50ef6fa2039aff41185390da0970149633aed",
+      "outputSha256": "83c10fe5f03bc620c26fdc401f4863ce6962f77688749454e03680ca04aa20c9"
     },
     {
       "source": "public/images/products/glass-door-patch-fitting-set.webp",
@@ -56519,74 +57806,92 @@
     {
       "source": "public/images/products/l001-latch.webp",
       "output": "public/images/products-hyde/l001-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "0f2e3b3bea2b10ff04fd780c4514a7561cc32d1e0124e84a32c772d139b89686",
-      "outputSha256": "877002b07262b6df7aebffcbb2e8856f67878322d706dd8caee080f148e7b850"
+      "sourceSha256": "ab51a4149416b4a10c22ea9eab27dc91f7b5f9cfc4ca3558ffff115ed74eb5fc",
+      "outputSha256": "85bc26f3db90f675ec0a3375c4308b1e277709ad43a38a151d6c0484cb3d2642"
+    },
+    {
+      "source": "public/images/products/l002-latch.webp",
+      "output": "public/images/products-hyde/l002-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8b3a3fa5cacfbce4a9539828d064da1de6ae42a747edeebf53b33cde98d45bbe",
+      "outputSha256": "2968f7008ef7a815cef33226a8747d6df360d9354dac2656498ffdbb5579bb2b"
     },
     {
       "source": "public/images/products/l003-latch.webp",
       "output": "public/images/products-hyde/l003-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "f171358f4accf2b8fa9629b37946e0d49aa1755f67bb488b14c641de5efb3e36",
-      "outputSha256": "c8f15c0ce2ff3260003867a86e455cfcc662f98c534fd53f8c4c43dd76d8cfd8"
+      "sourceSha256": "285bc2d2959f7872795c37e240fcf5187f9de9a5693db2633a217e15f0d73180",
+      "outputSha256": "3fb7de69b98a094221be4b2fd3d7713b8a5de974f4a233e628fe380262aaa196"
     },
     {
       "source": "public/images/products/l004-latch-2.webp",
       "output": "public/images/products-hyde/l004-latch-2.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "fcfdb8d6ad9acd345efbc708231ffa62f4852ae8548a83b90d045fdbee51d5cd",
-      "outputSha256": "cc587c282f2b3c1ecf12ea6fc7d0f2d05f9bb8674ef6dde766f47a3cc68aaa7e"
+      "sourceSha256": "caee553c3082fa8fb6d740d0637fd361f61fc83417ed1508ceed8b9e12670c39",
+      "outputSha256": "54bddb7008da7658172c4f6f2e2e53a7687a66cf1a3f08ff987983112e763efd"
     },
     {
       "source": "public/images/products/l004-latch-3.webp",
       "output": "public/images/products-hyde/l004-latch-3.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "9753b3d0ad5886ab11cb111d89b815c83be08874e1af9b11765562337e228c8d",
-      "outputSha256": "75dd4560e1d9bbda44e3e4d668bd913739464f988a8058187c177c6ca3a1b42d"
+      "sourceSha256": "5db545b96bb28d7de9e88df37637128dbf492ed862ea0af5b64d00ef10706889",
+      "outputSha256": "a62e65f62483be1820c0d60f0538de248f947292bcd600f5667187523d225d88"
     },
     {
       "source": "public/images/products/l004-latch-4.webp",
@@ -56609,110 +57914,380 @@
     {
       "source": "public/images/products/l004-latch.webp",
       "output": "public/images/products-hyde/l004-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "5f74bc3a4532b0dd40271e755445c3df3c21c661eddbc8fe83191948d805e7fa",
-      "outputSha256": "0ca6f77c6f8a14012f5a91992cccc741958dfe6f3366e8d915f5c51286c7fb46"
+      "sourceSha256": "ed5f2725b1d1e1f6b622c12c47e6cac37ad4433fb92d27f92c050652e34257a9",
+      "outputSha256": "a555040eb6ad0df6817287d25a0b941f7b6f93404c4c544bed724af03101dc89"
     },
     {
       "source": "public/images/products/l005-latch.webp",
       "output": "public/images/products-hyde/l005-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "49290e90ab60598eacc4f61b21c53bfe44888cacce0ab82c6789042cfd24262c",
-      "outputSha256": "a20e2d06195ff093b3744ea9f46091c66edc9fb7a80409f3b84053e7101518dd"
+      "sourceSha256": "fbd0475b89d63d5db52fc4c39e39eeb77b6ba04c12da449db2b4d59f3f4b86c6",
+      "outputSha256": "f0b40d8c2b0d6c5b850b1f8490448b6893872eef8c1da7389ad3e632412a6105"
     },
     {
       "source": "public/images/products/l006-latch.webp",
       "output": "public/images/products-hyde/l006-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2415239dabd04b4038c8c248bdb5e2a3225560d23117666ca6bfc08f72ad6b63",
+      "outputSha256": "62b94e4c24e6ace3ec4e2fd25f41f3d8945a4aa1bfddf758bbee7cb53f43bbf9"
+    },
+    {
+      "source": "public/images/products/l008-latch.webp",
+      "output": "public/images/products-hyde/l008-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "48180b6de3dd823d3dea90f16e725822fc737c3bb7fa23e4cb79d240e6dc7317",
-      "outputSha256": "c751881a510be1a3f1ed5b9d312fb1e5e042bc11d5a1574c99578b368bcaae0a"
+      "sourceSha256": "3aaf20ea74ea6cf2e4cd8ff730da20d6b5140e06f80f0119c7a5b13fa389df45",
+      "outputSha256": "37caba2925249d78cc4b77deb924ebb4e3e4fe370697177b3429647273520b50"
+    },
+    {
+      "source": "public/images/products/l009-latch.webp",
+      "output": "public/images/products-hyde/l009-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "64c3d5a985404bb38d4f1abf52755b4f4e5f5c47f24dab9bde8a8849aeb5dca3",
+      "outputSha256": "53a3af1c4abe7bbe89fd9582244a188348c59f0d85e96858fe6fb0ef6ef7e74c"
+    },
+    {
+      "source": "public/images/products/l010-latch.webp",
+      "output": "public/images/products-hyde/l010-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c8a47e19463cfaa4e8bacfabc7c1cc91d2f351c6ba7694d016f5dc6be3464f9b",
+      "outputSha256": "db19c928fcaba2c92e2b255ac9eb53668be8f7f74038b58edc70dd25f6724900"
     },
     {
       "source": "public/images/products/l015-latch.webp",
       "output": "public/images/products-hyde/l015-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "42cc2dc53a28baf2c50a9cd68cadb638fba72fcd1187899ec82153816de9f1a5",
-      "outputSha256": "66485c521aecdb3ded5eddff1cecf5b4c3afe910b991da9f0dd74cfd58509ab5"
+      "sourceSha256": "d5efb10f8e2a735c39cee4cdc98d1ca47fa879160e8d44e9657f4f0ff704d53f",
+      "outputSha256": "438d78a3bb81d7635d1d3322c2aadee9ee34397f599bbe29120c05fb25ddba89"
+    },
+    {
+      "source": "public/images/products/l016-latch.webp",
+      "output": "public/images/products-hyde/l016-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b00230e2ec07b3359a1fac85058855698d80de0ea118a86ad1b40c55ffa0c577",
+      "outputSha256": "a46b0aca56223cdf254ef63a9ed1334a28d9869c884f4a3edfdeda175a009783"
+    },
+    {
+      "source": "public/images/products/l018-latch-2.webp",
+      "output": "public/images/products-hyde/l018-latch-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e968c6c3c589422f2b69a67eb43bc581a910350c2f674768bf32f9ae8109e385",
+      "outputSha256": "87d7c687d5beb188db08644a4f0f9206e30785d559b4e9692b0feb1b71af564b"
+    },
+    {
+      "source": "public/images/products/l018-latch-3.webp",
+      "output": "public/images/products-hyde/l018-latch-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1f9069cad309ce5fcdc91da68112b32e66f057f81bd079224c56acfc86d822cd",
+      "outputSha256": "f23324211ed165a9edf825531920ad5c360496cbede6909dfe8a6178dedaa170"
+    },
+    {
+      "source": "public/images/products/l018-latch-4.webp",
+      "output": "public/images/products-hyde/l018-latch-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "391da29949186b741e018ad80024977aa2e655a2d928bdf5ca4e528939219e4c",
+      "outputSha256": "2f0a8eb15c7587da9ab0c0693ac9dbfc3858827eaedaacfd43b7c76ee3831626"
+    },
+    {
+      "source": "public/images/products/l018-latch-5.webp",
+      "output": "public/images/products-hyde/l018-latch-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "733f495fdea4c821596ba66d56324e5181432f258210ae5ebff3dc07a8bfaba4",
+      "outputSha256": "6b25cc027fae46ef48aa6ed1740390286b7f5fb524d17c07482ae8a6a8e51f07"
     },
     {
       "source": "public/images/products/l018-latch.webp",
       "output": "public/images/products-hyde/l018-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "3c9379a1914a82e0c9a75351b563adc61a852bf779ccb8e32c2fb46c7f7ee853",
-      "outputSha256": "e319449b8513b29b0c425a38cd44aea58caf4e37d5079081a3c27f8dd1d06345"
+      "sourceSha256": "4b5d197d444b3ec9b42184b68d2cde5ec749dd588cfda15e2dbf3ed442b4ba83",
+      "outputSha256": "d46b8237ce3dd84461a2ebda586ec9b6a519acb14a64f2feabd533db81cc1edb"
+    },
+    {
+      "source": "public/images/products/l019-latch.webp",
+      "output": "public/images/products-hyde/l019-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9c4cae59c983a729ab47b558c2a8edb9b3c6eb1fdc7330bf0c1f9fe80d15bbef",
+      "outputSha256": "bca06b99190d0ae4bbfd6b89ffbe6f33372e914251225d7b53a3007785083c16"
+    },
+    {
+      "source": "public/images/products/l021-latch-2.webp",
+      "output": "public/images/products-hyde/l021-latch-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b1c665817eece40c75e96d1a601fc70f94b44dc25578031224669651913e33d2",
+      "outputSha256": "da08a13e38d4bf2b928b1daa05372976e192b557e0d760bf5b85ad96d33894c6"
+    },
+    {
+      "source": "public/images/products/l021-latch-3.webp",
+      "output": "public/images/products-hyde/l021-latch-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "1a1628165be995d105cbb704d5246e6d0ff2b42c1390b1acfeb8b5307786da44",
+      "outputSha256": "ebca1574aac2499c25e966f01670441164cadf736f2e40647c7d5243ae4c97a3"
     },
     {
       "source": "public/images/products/l021-latch.webp",
       "output": "public/images/products-hyde/l021-latch.webp",
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 1000,
       "geometry": {
-        "margin": 20,
-        "logoWidth": 96,
-        "logoHeight": 24
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
         "corner": "top-left",
         "strategy": "adaptive-mark",
         "variant": "black"
       },
-      "sourceSha256": "a82937b3c4b70ae225ec6ba032753b651d86f571f2607081a5dbe0c114d2b12b",
-      "outputSha256": "afb659bfa6033b3a269fd889d571cf6a41915e6064f96dee411ce34a6dfb5b12"
+      "sourceSha256": "68f27eaf6e7cf0b408104fff56bfdcc71a6c5558bbb7405d3206b262a0cc4a2c",
+      "outputSha256": "aca0bd54584b7d1f1aa95991264fc9c858e4c3e58b60de845a34257c4a9e9aad"
+    },
+    {
+      "source": "public/images/products/l023-latch.webp",
+      "output": "public/images/products-hyde/l023-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1f10bf304be22f52582dd50cb74adef4f5830eda70364e292d4fb1e1c8c31c2b",
+      "outputSha256": "c708cc5de45fa5f9cdd4282139902d0c48548373135b96da80e0bfee8189ca6c"
+    },
+    {
+      "source": "public/images/products/l024-latch.webp",
+      "output": "public/images/products-hyde/l024-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4b1db2905e03b9afa522e4165c8906a963bedb739d4399f47e48bf2ce38b34af",
+      "outputSha256": "f56cd2ee8ea7b1ce0cf438665bca4335e71980030e6e63e84bd3e2098b7ef5a5"
+    },
+    {
+      "source": "public/images/products/l025-latch.webp",
+      "output": "public/images/products-hyde/l025-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3e04758e10d2d350ede882f3a72ac9b3d101d1d0347bb22d75ace15c428d4d2c",
+      "outputSha256": "6893b71ed4e5d75b6e3a0afef6db8050038562be20d47dbea34de21ef8f5d040"
+    },
+    {
+      "source": "public/images/products/l026-latch.webp",
+      "output": "public/images/products-hyde/l026-latch.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6f8bdc86cacdd7c813ba911b8e923a46387a9adb2e9c26ac25b52e38e2df4401",
+      "outputSha256": "43b0d3d06b36fd927be752c3804d0759f614b698407af091113a8da386358fdd"
     },
     {
       "source": "public/images/products/lc02-85-40mm-lock-case-2.webp",

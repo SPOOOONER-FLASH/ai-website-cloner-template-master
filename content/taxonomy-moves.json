@@ -62,6 +62,12 @@
       "to": "lc04-85-60-lock-case",
       "category": "lock-cases",
       "why": "同一个 LC04 两条记录. Identical specs (85mm centre distance, 60mm backset, euro profile, four round bolts, wooden doors). The survivor carries six gallery photographs; the retired one carried a hero only."
+    },
+    {
+      "from": "ds011-door-flush-bolt",
+      "to": "ds011-door-stopper",
+      "category": "hardware-accessories",
+      "why": "工厂 2026-09-08 确认 DS011 是门吸不是插销。Bing 关键词表里的真实买家搜索「door stopper ds013 vs ds011」也是这么理解的。"
     }
   ]
 }
