@@ -26,6 +26,18 @@ function publishedCount(): number {
   for (const file of readdirSync(PRODUCT_DIR)) {
     if (!file.endsWith(".json")) continue;
     const record = JSON.parse(readFileSync(`${PRODUCT_DIR}/${file}`, "utf8"));
+    /*
+      Records scoped away from HYDE do not count. content/products is now a shared
+      catalogue: `sites` decides which site a record appears on, and since 2026-09-09 the
+      RAYEN-only supplier ranges live here too but never reach cantonlock.com. Counting the
+      directory would have this FAQ answer quote 592 models to a buyer who can browse 571 —
+      the same staleness the test was written to catch, arriving from the other direction.
+
+      Mirrors the filter in src/data/products.ts. Absent `sites` means every site, which is
+      what the 571 pre-existing records have.
+    */
+    const sites: string[] | undefined = record.sites;
+    if (sites && !sites.includes("hyde")) continue;
     /* Mirrors isPublished() in src/data/products.ts: a page without a photograph is noindex. */
     if (record.heroImage?.src) published += 1;
   }

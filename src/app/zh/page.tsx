@@ -13,7 +13,10 @@ export const metadata: Metadata = {
  * Home page.
  *
  * The order of the blocks is the argument, and the argument is「这家工厂是真的」:
- *   1. a real photograph of the press hall, not a render
+ *   1. a real photograph of a real door — 2026-09-10 换掉了原来的冲床车间全景。
+ *      甲方原话「换一张漂亮的做首页，换掉那个工厂机械」。车间照讲的是「我们能造」，
+ *      但首屏第一眼要回答的是「你们造的东西什么样」——买家要先想要这个东西，
+ *      才会关心它在哪造的。车间照没有删，移到走进雷茵页，那里正是讲产能的地方。
  *   2. three numbers that can be checked against this same site
  *   3. what we actually make, as a grid you can click into
  *   4. what we can do to order (来图/来样/OEM) — the 1688 buyer's first question
@@ -41,12 +44,17 @@ export default function RayenHomePage() {
           <div className="relative h-[62vh] min-h-[420px] w-full overflow-hidden bg-[var(--color-surface-dark)]">
             {/* eslint-disable-next-line @next/next/no-img-element -- static export, no optimiser */}
             <img
-              src="/images/rayen/factory-press-hall-wide.webp"
-              alt="雷茵五金冲床车间纵深全景"
-              className="h-full w-full object-cover opacity-75"
+              src="/images/rayen/hero-brass-handles.webp"
+              alt="青铜色门扇上的一对黄铜大拉手"
+              className="h-full w-full object-cover opacity-90"
               fetchPriority="high"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10" />
+            {/*
+              遮罩比原来轻。原图是冲床车间，本身灰绿、细节杂，要压暗才压得住白字；
+              这张是暖棕青铜门加黄铜拉手，压狠了整块发脏，铜的光泽正是它好看的地方。
+              只在下半部加渐变，正好盖住文字区，上半部让铜色露出来。
+            */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
             <div className="absolute inset-0 flex items-end pb-12 md:pb-20">
               <Shell>
                 <p className="latin text-[12px] tracking-[0.3em] text-white/70">

@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 3115,
+  "count": 3272,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -58123,6 +58123,564 @@
       "outputSha256": "879b885920757539f2a86299956eba96e3a1f9b2c4ac8e3f344f1b49d0a20aca"
     },
     {
+      "source": "public/images/products/g1229-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7deaa26d8be23daba1ccf00e8b9fed95f718b625b01dd891d3adb2ce009860ee",
+      "outputSha256": "66d64069031abf21a1d082f5350c9326e13be9f19e6e14046aeb8f6f85a556bf"
+    },
+    {
+      "source": "public/images/products/g1229-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e1a62480964e027660bf60e6a1332b526c1e3b33fb436eabcf1f977ceb57d854",
+      "outputSha256": "a4d619dc90e2cb3c9a3d2716af01a7471515833eb54ab77971774be28ee24335"
+    },
+    {
+      "source": "public/images/products/g1229-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle-4.webp",
+      "width": 1178,
+      "height": 1573,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e1bfb22890b6053c1b8fee0d3f67d9a27aff47683d0ee12bed8a854c3a8b3179",
+      "outputSha256": "a1b7f8d347da9b7cd6c12838d3689b77113934be4b6a484384ebfa97e74afc68"
+    },
+    {
+      "source": "public/images/products/g1229-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle-5.webp",
+      "width": 1178,
+      "height": 1573,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c4ff436be41b439ea1136079be166a2500eeeec15974480bd8b1a66f1d4e5766",
+      "outputSha256": "3614f4c54a8869a28600c3d48f4d987e591daa61324fc5db243870db49842d71"
+    },
+    {
+      "source": "public/images/products/g1229-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle-6.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3e00fecb14c73da3c70890b5d012fa5b204b278deeb85ef1985e48fb94afa6ce",
+      "outputSha256": "07fbde5e62c013705d8d87c391e4a6e7aafde7c41656518de2da27783d824545"
+    },
+    {
+      "source": "public/images/products/g1229-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g1229-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "760f40b394fccaa79ded5612f11eb201dd70ab7a611f1d38025f80748b6d19ad",
+      "outputSha256": "5a3f4f606e1701d0c3254bf83a0a589e58e44741425fa96f0755131b4d1169d4"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-10.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-10.webp",
+      "width": 1272,
+      "height": 839,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b335e0828ea876dda60ab0cfc7a0ee868e4785474f2c7cbd63c2a4908679420f",
+      "outputSha256": "49e39bfd8eeb9d2f02798780523bd0e884722c4f126aeae04689f001f2d4328d"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-11.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-11.webp",
+      "width": 1283,
+      "height": 855,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "34b853f6f8ee9d0af3c2fcbe2e5bbed21708d3bb17d93af947cb0c8c9c164b46",
+      "outputSha256": "8220c7736875ef92f6248fa01fca5d06749570a039c88180fe9dfe5a684958e6"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-12.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-12.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ac8330c03025a81cdf2d579ece8d5193dd44c1bc8c00213d201b3bb170cc8fe9",
+      "outputSha256": "f499924fbac60a1756031abba9a4a6f9fd92f1f166b9fce5c87eed7d8796156b"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-13.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-13.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "daf2f84e3e61ad4002d2160ec6ddba9dd14098abd1904fa360f53aa10b468cda",
+      "outputSha256": "c3a4ab1b68afbf3544fec88462d402f1df85f4d44e95421c0eb88b9ce9ff2e0e"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "d1b7138fbcaf16c7b701915922cd04413f231440c203f39d2242e12c44f8a87f",
+      "outputSha256": "5976d982b7cbc236ed5436e0dee1e1aa4d7c22a21d1caf8450277bf28319d891"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7b2607310616274be2fc3be41cf31a9069462c511403432a7c23f00f0172bcb1",
+      "outputSha256": "a8651cde1ea25630352d03132cb5a5ed74d6eaf3269fe2f276b993cfb6419bd9"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-4.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9491def84d85f979a1ea78ee962b755949857c66d0d78e25a40c057368cd418b",
+      "outputSha256": "8e978a3eb8874dd0b072bbeff87e27ba8703ff75b8903e7f5519d575f8fedb22"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-5.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "5575822aeefcb73cd0eb84790844c45a4b1f84f697f5d8de36491ef3f19f3d74",
+      "outputSha256": "c5b1422587a3c788e1a7f03b3a2be12f7e5d20a76bdf75b5e427dedd1f2b2f7c"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-6.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b7d99449af6ac57b584aaa4590845a923b2f1933fe4cd47c6ba90ca748a47902",
+      "outputSha256": "31d8619fcebbf2375a53f3aa5518d4c3b4ca1924e17fc78ba7e5a4e48cf98e51"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-7.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-7.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c7a18870751d82e7789c35086f079b78ea3f71b65144f285fe196ba93fe02d1c",
+      "outputSha256": "e8ccd6ae5e8814178a66e47e3516aedeacc4d19ee610b1d2b18cab760a64efa7"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-8.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-8.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "69f9382a8a5b8fdbb121f2c81796eb9cd889526a2be58bbe22e1b42d7af2d915",
+      "outputSha256": "7991f87286ab7fb86a551b114f0a3e0d7fe612524b4eb3a9ce1a9ab68c33e4df"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle-9.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle-9.webp",
+      "width": 1400,
+      "height": 1869,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cebcf5afb1ab628884841eb827263ed44f7c25ed3c2ea064db62501cf5f6f984",
+      "outputSha256": "01a330e50c45ac2be18ae9a0789033d22097beb3a7064a9a4ac1d7dbbc4d1c00"
+    },
+    {
+      "source": "public/images/products/g1234-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g1234-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "479b0abf89783011feb560e10208b983cd130705895130b47cf2f8ebe8d2681f",
+      "outputSha256": "6591b7b362752d3255174e70747fa6642dfb7c88602b1eaeb69568b47191cfac"
+    },
+    {
+      "source": "public/images/products/g1239-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g1239-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "38ab48c590ba1214ac44f3503f6bb82cf3cd996dd7ec7b189d14fb9c3855d17c",
+      "outputSha256": "34151f93e783294e290f475c9526546a735c6a87e687da8a006f286543aba1f9"
+    },
+    {
+      "source": "public/images/products/g1239-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g1239-glass-door-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6080de664f04a8beaf09ed3d018c08c872bc1b32402196d599eec8af6b44d051",
+      "outputSha256": "8720c8407d76fd144137eee77f14fc621110192bd595255c1d0a1d5f1968c53b"
+    },
+    {
+      "source": "public/images/products/g1239-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g1239-glass-door-handle-4.webp",
+      "width": 1400,
+      "height": 1869,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9e5f953fbd162fdf04f60b2dd0c976ccc161b26ac9e67ae6501da6a5c1dc26a0",
+      "outputSha256": "6415e578fedc87335a91a3f1dc5734f1e3d5a2e49decf1b110e9c1b684bafed1"
+    },
+    {
+      "source": "public/images/products/g1239-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g1239-glass-door-handle-5.webp",
+      "width": 1258,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "02814d8a7f1abf36887f1a10350cb377c61f5a95daab9c2b4b31c9de09cc09fc",
+      "outputSha256": "53c7e5e5491745d8b24632f844954aad7f4c0d5de30eea083954921aae9a49e8"
+    },
+    {
+      "source": "public/images/products/g1239-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g1239-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "12dd3f81983d73495fa983a2e2774dbc065a9e7fe81738c150d1632068116b95",
+      "outputSha256": "ba9bbbad618a510d29db07602b8019eaf193932e9e42d16eb02d0f93d7f3901f"
+    },
+    {
+      "source": "public/images/products/g1255-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g1255-glass-door-handle-2.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4bc3860215b451a2489ae812e08b3dc0dd1836e6b37a0891a19c97fd14097b94",
+      "outputSha256": "9ceea39d1a885893c9928b8bc0565eab702eaac69cb4b796d69f03f129c333ee"
+    },
+    {
+      "source": "public/images/products/g1255-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g1255-glass-door-handle.webp",
+      "width": 1259,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "8c38bc4777e350e11978f2b8b0fd2cc54b5140277977a648c6934ae751dd8f80",
+      "outputSha256": "9616993e0e69ce3ea10d6336ed4d16047c28c945f4cf2a2f6a6b51f3a4c21da8"
+    },
+    {
+      "source": "public/images/products/g1266-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g1266-glass-door-handle-2.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "d157a53690da6461943a924c840cb119d203a398b8c50046e203219420424e92",
+      "outputSha256": "83528003a76b09624222b6cbe7854d91178dda5edd9ed5c91a437238c3142d5d"
+    },
+    {
+      "source": "public/images/products/g1266-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g1266-glass-door-handle-3.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "03f6461dc0ebc883045177b4ff436cc0c2fb8f94e4a32a2e95a7fd0e3f342f57",
+      "outputSha256": "efa98afddda6f92501b5908037488a92dc9a9d5af31161400d643b119e516973"
+    },
+    {
+      "source": "public/images/products/g1266-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g1266-glass-door-handle-4.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "64a7d1125312c82a74c6efe0a1d466c090e84c1b593bc439a7e3e1ad5ebec90c",
+      "outputSha256": "64d61f5d298abb78600ce753852f67215727f62a055d4a4ae7ccf3d66151f6a8"
+    },
+    {
+      "source": "public/images/products/g1266-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g1266-glass-door-handle-5.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c8d3c1a21a078c817c0da59b55babbd27837cf4cdce1f4243acc676774982eb2",
+      "outputSha256": "1b8e898c8bf0ebd7bdfbf2dd8a833be0449a491b044197eec934bf1f2ff61663"
+    },
+    {
+      "source": "public/images/products/g1266-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g1266-glass-door-handle.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4c92abf092e15226fac2cd73363dd16297e2495a1702f47aa7de5d0b8e4f6e71",
+      "outputSha256": "0fc6792c2ee61183ca4241b8b767012ed7de33851db0013ec4c91c4f3d5dbec4"
+    },
+    {
       "source": "public/images/products/g1289-glass-door-handle-10.webp",
       "output": "public/images/products-hyde/g1289-glass-door-handle-10.webp",
       "width": 1180,
@@ -58783,6 +59341,420 @@
       "outputSha256": "73b4ce99bf6ba4719178d4364e38afc0cd79ed1d2289e116422c7ad5c9f30c64"
     },
     {
+      "source": "public/images/products/g2690-glass-door-handle-10.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-10.webp",
+      "width": 893,
+      "height": 1573,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "fa862f49cce01f365e2389c82f738ea82fcd4a89c92752bc8cec15c3b5e1577c",
+      "outputSha256": "3ff06baff43273b9224c81abea417b34b77715d74c203c08b9f0b2eb62be91d5"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-11.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-11.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2b4be5caaa8daa884ca3c85ce797a2f34c66e700b98496f344eba9596fb191aa",
+      "outputSha256": "7cc28e7881c5fc2ed03685ac4c0cedc01918b723d3dae75c103244c6d00ea791"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-12.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-12.webp",
+      "width": 1400,
+      "height": 1094,
+      "geometry": {
+        "margin": 27,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c294c1e6e09241cff14f86fdcad9192060fa1ae351b9d087bca340a1afd256d5",
+      "outputSha256": "8b7611cb499c12bcddb2c5ce55532d7a6395228c1c82e7646aad7d2c8ac1b5bb"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-13.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-13.webp",
+      "width": 1400,
+      "height": 1791,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1b7f62ba1c190029ebe1ecdad4fd4e120aff70d536e9cf7f2a2188f4e4c8ffc8",
+      "outputSha256": "9c450a5ad312371ca370119f55abaee486ae6be289dfcac5b8c342e0f1517bdb"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-14.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-14.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f0692c49d738f0053351d021932f04ecb3026637eaa8914582d9a6b28234a216",
+      "outputSha256": "43bfbdc6120df5cdd8e55d6745327a7031d0be029fcb915f3df0bd60f940332a"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-15.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-15.webp",
+      "width": 1259,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f862d4190d9ddd5b5125e29e6af1c9fd57cb7b21399a424e1fdcc7a5104a4887",
+      "outputSha256": "2be2e826394381ba8e1cfd1c500da44a57c0734483d18d074349c0fc107ca63f"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-16.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-16.webp",
+      "width": 1259,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "eb3800d74d25c33b1a1b9de47b753b76eb94ef13f73984d26a2c078f86a36bf6",
+      "outputSha256": "d289e3ccad9b202e57049b91e86b7122698e98a0bcf18158d43587dd5a25d6e4"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-17.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-17.webp",
+      "width": 1259,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "be35357dc45f147d0e0320c9d90fdf791a65ddb001b2bedeb124e1d6b23a06eb",
+      "outputSha256": "64ce555e713b72a5a15d0cabf1793eabc11c3706bc92e0cc4fa2fbd184612c01"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-18.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-18.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "621133b26950e2c245ee136e2e78545ee92068a1794462dfd57aa0c3e0bee1ab",
+      "outputSha256": "e1e8b3178de2ab0b6ea4f8d816509e63717aa0921c4d98b406aafdef24f3196a"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-19.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-19.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "865dc03467dd051db146b44062b2514a0f1bcea8be65f976ef47c7f77c5b188e",
+      "outputSha256": "3ad4de7b04dc22c42ffde4ccce67a4aabb4ba4537999a650443c03f667e664b3"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "fec4f64681e23355ce2bb1bcbd02f8966795346c20c91d56ee23f17d0925034f",
+      "outputSha256": "0156fa2ece56fcc34dee5b2a0a78ece745dbad7ad78dfb39e9b02081aea9d370"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-20.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-20.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f766b99cc6997068baafad52928b40c82f2631c4abfafaaa087760fd72725225",
+      "outputSha256": "69b0a78a6481f87d79bd080c0514e1fbea02047cd9afa327a2deb71fa439e0bd"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-21.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-21.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "52293131b1876bbfb833b7026c04ef89f6b7c4f058a4b67ee31c0592844bc298",
+      "outputSha256": "d52dd4ffe6b6e664f0dc570a78f739bd2c263d0e3d721f1458c666e5d3693fba"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-22.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-22.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "52293131b1876bbfb833b7026c04ef89f6b7c4f058a4b67ee31c0592844bc298",
+      "outputSha256": "d52dd4ffe6b6e664f0dc570a78f739bd2c263d0e3d721f1458c666e5d3693fba"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-23.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-23.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e552526236f32bd67c0bc840fc1833ecc7b7aee4c6c7034f105da80ac707a416",
+      "outputSha256": "8209b671c056348bbaa8aa328dbdffb21fe3e954730a9963fb0bc0fc5d563055"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "52ccf6a0a010707cfae4ff0666e457d46f4b606d97e7a253ef4a5042d49d192d",
+      "outputSha256": "a257bf98e749e42530cfe746f9cc71a13f5c1aada05a9f239af9d91e67d22abf"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-4.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e82d6f439405b25c929eeeaeeacdaab6cb4b5bcec861f7212b025446bf4de42a",
+      "outputSha256": "6dc948f15fe9a502377cfff59c98ebab6e87bf712a78e928232993972e359da1"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-5.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "634b34cdbf9b06658ebd778ddd5dff308ebf8d856465396a445616aa07b49c24",
+      "outputSha256": "b08edbd0375f49a1727cd19fffeaeb6c1e9172fee44eba8aa1b1653bfb17a0ac"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-6.webp",
+      "width": 893,
+      "height": 1573,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "72628c1e337fdb96a1c864aa8afb38acb3a6c9c37c7fdbfa55eaf072f46cf3aa",
+      "outputSha256": "dc650f325c6b539a3e83f58a6aeb8efcb21bf060668fa42cfc2c10decfb07144"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-7.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-7.webp",
+      "width": 893,
+      "height": 1573,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9dfcc5258b372f84c0905d4eb9cfdbe2712052543aaaca0151f53ab34ae44590",
+      "outputSha256": "7342f24ef203072245f09b4c183825d39b76a4e1af73c4312ea94ce9bf84995f"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-8.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-8.webp",
+      "width": 893,
+      "height": 1573,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9dfcc5258b372f84c0905d4eb9cfdbe2712052543aaaca0151f53ab34ae44590",
+      "outputSha256": "7342f24ef203072245f09b4c183825d39b76a4e1af73c4312ea94ce9bf84995f"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle-9.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle-9.webp",
+      "width": 893,
+      "height": 1573,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "5b43c5e3035bb265fda22842f8bd614fd6444508ab0a1ed08cc9bd65ba464313",
+      "outputSha256": "5de4e5fb0e5b959720d9481e92f934f2737bc572b774fe061e83f437cffb2af8"
+    },
+    {
+      "source": "public/images/products/g2690-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g2690-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "a5ce60f682812b5c0333212df47cd7f857f48b3d5889f493473f727fe7634f3c",
+      "outputSha256": "af144316163b978c391016eef88a4508797a4d3a2316753a63c3b5f73f06085b"
+    },
+    {
       "source": "public/images/products/g2750-glass-door-handle-10.webp",
       "output": "public/images/products-hyde/g2750-glass-door-handle-10.webp",
       "width": 1400,
@@ -59051,6 +60023,384 @@
       },
       "sourceSha256": "091f9429bc2175e071aaed5fec8b968fd776d0d0fd28a05caa81b1ee6190eaf1",
       "outputSha256": "b25cbc3cbce5a1e9af76813cc126fea6f0d0fdcf5dca616c26adb0ae07c5dba2"
+    },
+    {
+      "source": "public/images/products/g2888-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g2888-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "fcaeaa834290f26a0e209ea2da07fbe43623bfbd7381497bc93c5e05067733d9",
+      "outputSha256": "446b2c55df858f43a354b92270f9864d6f85b8bf11599e48647a9686be4df69e"
+    },
+    {
+      "source": "public/images/products/g2888-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g2888-glass-door-handle-3.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f4fb23d4b91b33de02cb19f8aace98e3d8b814a35b6143b04a5f6ee8e3dce3e0",
+      "outputSha256": "d86cfd8272f4d1dd3dd7ba149fb2f9d82c127d2a5b9b577a0e1b5d9113ffcd0c"
+    },
+    {
+      "source": "public/images/products/g2888-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g2888-glass-door-handle-4.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1815b10c61a3fddc29267a04068cab0eb92dde0c769bef4aa9700f82a3120bff",
+      "outputSha256": "7f48c01afbe955a21e5853ec3674a921f9399e0aed632554f95f26e4fc4cc3c5"
+    },
+    {
+      "source": "public/images/products/g2888-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g2888-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6a5a3e3861acdd654b2cff2199ca3a65bf2ed7397669b6902fc68f6e14983a99",
+      "outputSha256": "937b058725a4a91474e069a6404187a232dabda583f2cd0ed00e6b1a14880b41"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "bed848d6829e6cba7a71e3122d441f2f91cc204ceb77228ed2ceaa5aeddd1bf7",
+      "outputSha256": "ed75261d28f505d1d79973603c015f17948ce3bc5d70c85537915232b4094395"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cf257f82ffc6f98f5bab34d009497a03d068efb3186f75b538df289c4bd4c0d1",
+      "outputSha256": "694c36758d9bd0d7ee8aee2edd63dbf3dc051f6c026c6a42390e52062f14bb5b"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6c65b7fb9ce202584cc71458eb992d1f6c0f69006f9e78dfb2238864d2397b98",
+      "outputSha256": "2076bb748199d8bb4a91d99a821d0849a0ad8b4e4aef5333bbc8bf4e69214b6d"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle-5.webp",
+      "width": 1400,
+      "height": 2098,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "43e6d773ecc8c1236998a1e2c7b11348bd5677399a8405b46424180c65cf1a38",
+      "outputSha256": "2b51ec0c1d3477071978a2b726f25683a87f8acf2ac2496483809a73883727b5"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle-6.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8e7fa9f45e9f5a43a7cb40fe066cfc2c5c07e68af3bdc2063c408124217cb4eb",
+      "outputSha256": "e9d2733c61768e151677ce16e36d33272896d332b0866587fd10d4030a9375a1"
+    },
+    {
+      "source": "public/images/products/g3078-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g3078-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7f2a255031ac712070dc3fbbda1da9f5223ab2c95b52c55938df1f033b1e169b",
+      "outputSha256": "c3cae4ba6dc7a7400dffd0f5c2cd3ba98e668c8777c1e696b2cdf94969eb5a71"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-10.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-10.webp",
+      "width": 1400,
+      "height": 1050,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "99bdf46716dd62e05bcd81b156928b6f6d3fd7375f68bcfd816e6b125f02366a",
+      "outputSha256": "2fab5ffb5a14a2983da9d84c7596c1af9b1509dc2da9132d961ee7d4ade370ea"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-11.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-11.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7d24bb2ff643c1d7eda914dd60c96e755d91044ebab54d063515bd0f49ff3794",
+      "outputSha256": "826447b4bfe02f4e82a80baaf308e01a45da95aa38467d4d483dccf3f78efbfe"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6c541a09a626f15dbde5fab8058ea989561767963209b5d95fcaf1000e14683c",
+      "outputSha256": "199ebf136b35baa530e8d36f58b6c94e04f1cfea8fd8feb6542e824e11b825a6"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "be5b74b3d7487206fce2da4cd5dea36adcab66948b1b88aa846d0f85893d4041",
+      "outputSha256": "00748eebe2a8d1f2c5c39d4ea0f366102d01d72b6e1269c506999645af243f22"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-4.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-4.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "be5b74b3d7487206fce2da4cd5dea36adcab66948b1b88aa846d0f85893d4041",
+      "outputSha256": "00748eebe2a8d1f2c5c39d4ea0f366102d01d72b6e1269c506999645af243f22"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-5.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-5.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9a7eacc6566dca1fcc1d125b343e709fe3a7767f2b36a136763074ea06b8bbec",
+      "outputSha256": "90e7650c809480681040174412fe33fea82e82d8c4081b2ab779904c4e6cf403"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-6.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-6.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "8b0becca854e9d9ea8fede07dffb0fd83bb31f7a0423c9dfc66b3c27d7fc8237",
+      "outputSha256": "73cbc15e13c5ee678dfc4ed68e57795ce44e9db53fb2945be6809bf9517a6a3e"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-7.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-7.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7de073a8f2f035fab2945222db286b78adf71b817d1f15aebd451e8a411f4e90",
+      "outputSha256": "30aff2de696449dd57aae553b7ea4566a2a8d202271d3cf6251b8424aabf2d43"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-8.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-8.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b95f09556ee400dfdba08610fdf20cae0cdd8bd1e2686248765eefe20859b16b",
+      "outputSha256": "e8524b4eed03d9adde8b8ee52a70054e73fa5cb2283c1d9977176102bb952746"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle-9.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle-9.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "eaf93d47d4e388cfef6f60f2ac4c601b0318116f9d068ba879bd8bf97f7b349d",
+      "outputSha256": "738287fbabba25433b374f71e068f286682d026bed5857cf274213a494637b35"
+    },
+    {
+      "source": "public/images/products/g3321-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g3321-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6c541a09a626f15dbde5fab8058ea989561767963209b5d95fcaf1000e14683c",
+      "outputSha256": "199ebf136b35baa530e8d36f58b6c94e04f1cfea8fd8feb6542e824e11b825a6"
     },
     {
       "source": "public/images/products/g559-night-latch-and-rim-lock-2.webp",
@@ -59332,6 +60682,60 @@
       },
       "sourceSha256": "aa997c3c5e14d35d6eabda2d1255b83c6d9643aa53617951145236fb913e45e5",
       "outputSha256": "fb820aef56e3c28844031b944ba816a76d2d0efbf690666b995cc449789952ba"
+    },
+    {
+      "source": "public/images/products/g7110-glass-door-handle-2.webp",
+      "output": "public/images/products-hyde/g7110-glass-door-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7ac1d7ff0c45cc4610a222e119586202728dea7a882aa9ab6c1856ac6ac9d304",
+      "outputSha256": "b7b91335a165902328e87c8cb812c35f4b707356499ad5943ebb9fb4310b0d5e"
+    },
+    {
+      "source": "public/images/products/g7110-glass-door-handle-3.webp",
+      "output": "public/images/products-hyde/g7110-glass-door-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "268991fc56acfc0b0a86138ffc1fbdcb13ece680e3e71047bd2bc8316b48fa16",
+      "outputSha256": "2aa283b6aee5174b86b2c48034aafe76246d37193705e04b03b6169ea1471c75"
+    },
+    {
+      "source": "public/images/products/g7110-glass-door-handle.webp",
+      "output": "public/images/products-hyde/g7110-glass-door-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "303c733c64f4f7cf633fdcc5c7f0f8da13dcafcb437f1d7acb558dc80751fdbb",
+      "outputSha256": "ecd455415be3598b3792347169800048d73ae0143ba987ad5683379cb55736d8"
     },
     {
       "source": "public/images/products/g777-glass-door-handle-10.webp",
@@ -76612,6 +78016,186 @@
       "outputSha256": "fa8f6a0623706992eeb2fd154e501bfabdf78aad53590ff2058d567670ef5b88"
     },
     {
+      "source": "public/images/products/pre-hb110-grab-bar-10.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-10.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c4cdb99223741fe87fced4b73c22b04fe045992324f453fdd68d96c1903d35cb",
+      "outputSha256": "78bea7385ddd0eba7f85968baab8b1550f9e290e7ffa16d63e1cbbcbec88f29d"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-2.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-2.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "18fb31ef090a3bc021cd42cf069472e88795ac6943e00c31786ad73a6211d995",
+      "outputSha256": "c7d26c0685573e277f4ab1dbbe2bdffe185777bc833abe63fb2e043aff547ee8"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-3.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-3.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "18fb31ef090a3bc021cd42cf069472e88795ac6943e00c31786ad73a6211d995",
+      "outputSha256": "c7d26c0685573e277f4ab1dbbe2bdffe185777bc833abe63fb2e043aff547ee8"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-4.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-4.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "866abc85e8fe7148770e2dd5416153a41461467e3c3e1aede48c855e5b699148",
+      "outputSha256": "312d55a353d38cb11b553bdd112492b3768324f629dc75d6ecf12bb6a0b9d2dd"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-5.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-5.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "866abc85e8fe7148770e2dd5416153a41461467e3c3e1aede48c855e5b699148",
+      "outputSha256": "312d55a353d38cb11b553bdd112492b3768324f629dc75d6ecf12bb6a0b9d2dd"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-6.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-6.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "965daea3bb63ffaee83caec044b117842785a7678ced2abe45ae570878afeb3f",
+      "outputSha256": "cd709438d8cfb7a153adce240ce367e80b179862e08e6fb0661f7bcbb964e4a8"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-7.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-7.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "965daea3bb63ffaee83caec044b117842785a7678ced2abe45ae570878afeb3f",
+      "outputSha256": "cd709438d8cfb7a153adce240ce367e80b179862e08e6fb0661f7bcbb964e4a8"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-8.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-8.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9faedc321d1300bb10002f7cfa855056fdd5ee0951d8af8159bbe7f2e854415f",
+      "outputSha256": "e1a9514c2a9c3c1475dbf34d23f06080ecff0981ce0c4d0634c4b8fdb83adb64"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar-9.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar-9.webp",
+      "width": 1400,
+      "height": 1049,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "53f51bc278a2b8a22e9d9bc781b64ec9bf1a87bcbde79ef1e182bfe791a7ad1f",
+      "outputSha256": "37ff1fcf3f737077c096a4345b1eeab80c315b9e2abbc2ac5e8545445924cdfe"
+    },
+    {
+      "source": "public/images/products/pre-hb110-grab-bar.webp",
+      "output": "public/images/products-hyde/pre-hb110-grab-bar.webp",
+      "width": 150,
+      "height": 600,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ba505de71d7cf0c33242e004119b920a9335d7b7dcc8ac2d563af36f3279a211",
+      "outputSha256": "e5a48a0f3c1f52e1093be990edda4bc6db5d08f39ce3a7b0234d0e0024f6fe8e"
+    },
+    {
       "source": "public/images/products/pre-w160-stainless-steel-handle-2.webp",
       "output": "public/images/products-hyde/pre-w160-stainless-steel-handle-2.webp",
       "width": 544,
@@ -80426,6 +82010,258 @@
       "outputSha256": "bca7942d607c98ed3a9fe819a7b9ccbb51baa2f5345088bf891b9ad07920d4cc"
     },
     {
+      "source": "public/images/products/t1050-stainless-steel-handle-10.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-10.webp",
+      "width": 1400,
+      "height": 1869,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0a4a4d9498152910879469554658986d3496acdf3c03f4a88703331f59dd7c08",
+      "outputSha256": "4601f814084831d29e3dab51e7f6367766dcd07a582d85287c4c4b3cfcbf3dca"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-11.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-11.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b0399445e12affbce317628344dd694dba48140a1b645abc6b03003321a4e295",
+      "outputSha256": "e6dafa4e128fb8e3d623458ef12f2276b92d11971b59eb4f5c61aeca6afb8bdc"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-12.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-12.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f882642c0d32c3d071de883bcc77ca7be142bf9810bfd75e84e7b3c507007cc2",
+      "outputSha256": "97cfed9db205fc6133aeae947b741d5e87294b25b56ab96d5423a13eea52fe1d"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-13.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-13.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f5aaa7e55f8afba8700335ff1c5c3bcd78613f79a069a63178bb86d25d583eea",
+      "outputSha256": "45821254ca86c3c2d116c8e25408ef8fe71ab5384c0213b1640310349865c537"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-14.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-14.webp",
+      "width": 1400,
+      "height": 1050,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "db372400f50ab8a9b32b50a8c7921ab7ff5bf8e40e41ed1e8bdfa5fb23c67f4e",
+      "outputSha256": "1be92d1837a4b123fa36605bddf4235f54ff4c1551f0b5b34d85e4065afff178"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e5026fcb1bc127bc95090709c632bd0afabe51d10190e8d48eeec82fa98abf64",
+      "outputSha256": "84f42d7d72f304f6745e4996e11c1427d1edea90f7b84325a74ccac156e1be24"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "27a5af5e4a0ff5f308cb3b5bc99f01c2e0c3d3bc14e817ba0ad10cb45ce5ccde",
+      "outputSha256": "ac750f02b87a89ca78636dd26a17c40cb235d2eee258e34f54140d1fef962bb4"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-4.webp",
+      "width": 1400,
+      "height": 2099,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5efe2eb2ec3522259c715f51e076fcb74f5d50c461f1372831d90dff85ee020a",
+      "outputSha256": "0b314cf79c7a801ca151a2f78523834b8817de4b8eb87e811020e781fb8f8b1d"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-5.webp",
+      "width": 1400,
+      "height": 2099,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f11c1a8cf3aabb20ee7d39530406435c53f60d08c56eed0dc9a2aadb7df345f6",
+      "outputSha256": "9c8646fe3dec6f0aa30398c1653c71daa70e502b551e5a1cb43b5dd11417ac0e"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-6.webp",
+      "width": 1400,
+      "height": 2099,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "44e171fcac26a3b74b30842ce7bb13e6e9efd864ba729cf951064eb189240cb3",
+      "outputSha256": "f6d79c61d6f6be31d768af7cd82f72a6fb8e749b3c0ea58c3c429bf61dd00108"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-7.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-7.webp",
+      "width": 1400,
+      "height": 2099,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cbcac9484eb15e17474374fb2423b237d946bdee76b8a4c3f29fc4edf2e2d482",
+      "outputSha256": "66aa8253d00ad11a6b79f14fd4a7f7188d9225789c41451532872c567a77ee44"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-8.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-8.webp",
+      "width": 1400,
+      "height": 2099,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1f0b4a9cc8c17452b596326390e0f9fe148f25447130e27cf9658236539d259c",
+      "outputSha256": "6a3449cfad895c4bc6aeec652e74182c4d2d4cfdfe8a2bda0fc1cfb18ea1db36"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle-9.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle-9.webp",
+      "width": 1400,
+      "height": 1869,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "435bd9eaa89a29415ace27e91b1c7de24729f8af0ec6ee8dc8b1faafd19b7bfd",
+      "outputSha256": "2b284d75190c84f5d396c9adbe3982c86ab8cd72d5060cdc25adc439e5280b02"
+    },
+    {
+      "source": "public/images/products/t1050-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1050-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "56204d731e7f99af642dc53a466e0814b1124e2dbe60047287df4f9cc2a3de9c",
+      "outputSha256": "45f329820d06de17ab2b49fb6108d4d1c01bad8b7e29d86e76dbc66624df098c"
+    },
+    {
       "source": "public/images/products/t1130-stainless-steel-handle-2.webp",
       "output": "public/images/products-hyde/t1130-stainless-steel-handle-2.webp",
       "width": 893,
@@ -80568,6 +82404,564 @@
       },
       "sourceSha256": "682e9b747503d0910797b39147ac08484d5594581c3cc6ce55d2d7a59763d1e4",
       "outputSha256": "3b704c54a5da0730f26094ed628120aff8e69ee5898c6cf3cc2a80fc23708a90"
+    },
+    {
+      "source": "public/images/products/t1224-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1224-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "8fdbdecb855c2a8aada7a80f67afb72309ee92d25179303d06d8bcdd121ef583",
+      "outputSha256": "d94c2c7ec017f7bd43ef05f3e9bf105371080a06e288cc755cf017da345e8a55"
+    },
+    {
+      "source": "public/images/products/t1224-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1224-stainless-steel-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f2e6fbeb9da58a03327a60f1a9bcc904508a6eb64c4e388cb6f34ff81b11927e",
+      "outputSha256": "4d2ebcf99dc9ee86563f3a5599976dd7e66f4e95a4d48928c7fe1c34ff49f011"
+    },
+    {
+      "source": "public/images/products/t1224-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1224-stainless-steel-handle-4.webp",
+      "width": 1178,
+      "height": 1573,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "57cadae07de0c5d93045e9568d89e66e5050243f40b37a9a5d6d5ac4b79247f2",
+      "outputSha256": "0f00c2872d0ff68ab13bb99a2af1f908d6076e1712da8031fb8f44192b67ecd3"
+    },
+    {
+      "source": "public/images/products/t1224-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1224-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "2373e0364d3886b87129c346834d5e6881df8833a8078dfa9507c9aa54009467",
+      "outputSha256": "d78d12d8260bd7809bce473c682b3ecb9a36b9c06f71f4706fc462091e495fc1"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-10.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-10.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bb0c80d23de46e88ee08b197f38b27734f5fbc2fdb0fec31f2b8bc64f747be6e",
+      "outputSha256": "882aa234a6ac63d94097f62107d33b4ec68455f1929a2af9f661fae1f0efe810"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-11.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-11.webp",
+      "width": 1124,
+      "height": 1573,
+      "geometry": {
+        "margin": 28,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f4abd91f18fd4c9011de35ad407d07aef31c5a781402459b72705b0d7bfdae0a",
+      "outputSha256": "3da01289101e7e26cede0b3d4148b8c7c5b1211abf87163cd5f5666166da72da"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-12.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-12.webp",
+      "width": 1124,
+      "height": 1573,
+      "geometry": {
+        "margin": 28,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "da26b1e445a5608a461740ad7bef5c854302f1efde10ea4d26c2ec81833bf1cc",
+      "outputSha256": "5934bcbd89047d291fb472fe3df649a9d629ff9ba583fccc7100bda6aa231fc6"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "57a8d76f761e54a85041488a71d7b25ead2ae99d0353aa454941508d948f8c16",
+      "outputSha256": "02514331dc87a2acb282d1280ff51a40462f56243e8d1de19e116518e35efd86"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f7b8d3191908738df0815c7ef4152447e7bc7d2e05285684543cb7ed5bbcaaa7",
+      "outputSha256": "128b610ebb4680991d0e565564e6d309af46f41a254bd3e29ae5635514fc35d4"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ad19fa37b65e7e448c3450911dc4afe1b5b5b6c42ad52a5fe9f8f750bb72fabb",
+      "outputSha256": "b92f86db5bb3f622f496be7849b5f3ea3db8fc440bbd087abbe84296de86ff21"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-5.webp",
+      "width": 1178,
+      "height": 1573,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "4b16a35a71ed7767dd1812c5f424036ae1a5289c3804c620469fe4648f732f2b",
+      "outputSha256": "24e1f7f2943b0f4c45130613a0df5b9318079b1b44a6fcb032964e7db90fbb18"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-6.webp",
+      "width": 1400,
+      "height": 922,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "125060b9336a806355629783521cbbc775280bbb72ee2cd7b0428b2e3801d5c0",
+      "outputSha256": "52fe61e284d16c99d9dc4f0bf398efa85b383778d1b97a013e743269b3e4a1f6"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-7.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-7.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "70ddbef11487e7ee6335528eba2c5ebd65597bca937e8dc7028249976aff88c8",
+      "outputSha256": "35837c2cd06199c1a235424c9304e055ba5d1bed0e5cdd5294fa262310649b3f"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-8.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-8.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c319f5002bf92dfc6886899799887cf5555a94d54e3eddd714326ceb3f7e4a78",
+      "outputSha256": "2df3f580444de50fb6c970ad2d68ecc34aded182bec829e80bd91fe7122fd448"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle-9.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle-9.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c319f5002bf92dfc6886899799887cf5555a94d54e3eddd714326ceb3f7e4a78",
+      "outputSha256": "2df3f580444de50fb6c970ad2d68ecc34aded182bec829e80bd91fe7122fd448"
+    },
+    {
+      "source": "public/images/products/t1225-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1225-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "30edff14c6bdb0e2ae1f6994b49aed784781eeca4a0bf663b85467eeb139df71",
+      "outputSha256": "b39ee210c8c786831e0a4c0dac74f05d0b866c98154f3ef95728e0c23d4e50a9"
+    },
+    {
+      "source": "public/images/products/t1255-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1255-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "86f284aa0214b9b8ccd3a706183e1bd2312561e5003e6b19a27db8469d30b9d6",
+      "outputSha256": "d9a9f4acaed90ac1aa3c22965a52bd46c240e40fadb51ee14ee95bd7c50c3f26"
+    },
+    {
+      "source": "public/images/products/t1255-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1255-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "1710eb38878042c5143ea98327767a4e40640f78829c7026bb1401f79f48e3d2",
+      "outputSha256": "1852817a8cabf9b1194e69f5fb760403ffba81eb9018914469321307ea447592"
+    },
+    {
+      "source": "public/images/products/t1255-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1255-stainless-steel-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "30c5ccc0a1b3b2f01558f14433c08a6206cbd19b8d2abf41b424ff82066541ca",
+      "outputSha256": "be8b5b98ec7b920becd593e70a6361901c30543c600f629c905a6bd2b79d9a77"
+    },
+    {
+      "source": "public/images/products/t1255-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1255-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ea685af66e538412c91ca9f1b9efb34fb7ef755eb3daec629942668357b1fcea",
+      "outputSha256": "861ccd12099848e4e2f46d734d55db59446e55cda2506d73db9fd687971f5296"
+    },
+    {
+      "source": "public/images/products/t1266-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1266-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6610f1bd82b01827e1daa46f000d2eb7e628aaeabace9cf2ca6a3fefe3238c44",
+      "outputSha256": "a40751f371445f30602b5797307948213b1d1d336a17ed31e208bb73b41fc4e1"
+    },
+    {
+      "source": "public/images/products/t1266-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1266-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "865abe8ce8b22fde488f7fdf888feed78a8e227c8013affd8450e4f6f1871c59",
+      "outputSha256": "56c5419ee194df4308f4d49c5eed7be614b632582b2e88a11569f011e7b3375d"
+    },
+    {
+      "source": "public/images/products/t1266-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1266-stainless-steel-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "82107f91c2c278afdcfc2d13bc2b609131f89a6d70be36192df3d3d39623505b",
+      "outputSha256": "23e7fdc6b42f1e8181dae878cc94beeeb32c106a735e58e0d480eb78c4b0869b"
+    },
+    {
+      "source": "public/images/products/t1266-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t1266-stainless-steel-handle-5.webp",
+      "width": 1182,
+      "height": 1577,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "60cc4f9dbf830cb2090ee5c4ed549cb938fac6e1c96f68fcbc86e85a53ceb751",
+      "outputSha256": "ed1e14ee139d781dc037b52e7e724c3ba17bf1e7ca9387daaf13b080f4876087"
+    },
+    {
+      "source": "public/images/products/t1266-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1266-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6610f1bd82b01827e1daa46f000d2eb7e628aaeabace9cf2ca6a3fefe3238c44",
+      "outputSha256": "a40751f371445f30602b5797307948213b1d1d336a17ed31e208bb73b41fc4e1"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "bba59cdf9046c241332510380c09ec33936e431f7f80a77c87adedc00321afad",
+      "outputSha256": "11f1ad88212b97729f2269062dd23c4c39dd43c113f75b61c1fc031fabd653b4"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "818462bc7712ea19e440ed2a2f59c519ac50621d7b8021f8824b0157bba9c872",
+      "outputSha256": "f22429f6b3279b1f9cadece7fa33f4e5f73a82c862535d053212731c2dfe3f6f"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5b300a61d4fe30350c6729a1b525c872c9cc505a03448011d4bceabd5dca5397",
+      "outputSha256": "70521d67ca15407c8e9fdd0ed6472e20448c2cee0af260443e0c547c61670ef4"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle-5.webp",
+      "width": 1259,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "aedba2e876ef1d036bbaf28e643065b55a20f5c6337deff44e4885a61656e9d0",
+      "outputSha256": "ecfd044b8c6d38369c697641233bcf77518f87f3a7a419ed000266c03fc78889"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle-6.webp",
+      "width": 1259,
+      "height": 1574,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "383f8191b9f23f56026f9901560bcb1ccfa2a5153d88a9443e1b1426c7bb5651",
+      "outputSha256": "20b33036fc04996b65748605e4fe52e9864aa7f73ffc132246477c3e46709d9f"
+    },
+    {
+      "source": "public/images/products/t1780-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t1780-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "0e6ccac0d3a1339c6b29ac22287357adda92e75c2418913e7f6ac5c737930788",
+      "outputSha256": "7eeb3b1c6fe4805a0e35c658fb18487753c171d138459185e7e9e1374d6f8fa2"
     },
     {
       "source": "public/images/products/t2110-stainless-steel-handle-2.webp",
@@ -81020,6 +83414,258 @@
       "outputSha256": "606606bdf6b0c291f04315e383c6e2be80e3bd5c31a3b9ff43f0f4d933fcf683"
     },
     {
+      "source": "public/images/products/t2888-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t2888-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b6e419b4a03e195c2c0b4e66bd585066b97e5a1d845b5b08c8b6842d424e16cd",
+      "outputSha256": "69ad12212abdc91ef6d176a2ed557b1172dc8abd109d4dcbaae5b666c74c5669"
+    },
+    {
+      "source": "public/images/products/t2888-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t2888-stainless-steel-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d6c6e390e5c7ea95494b38c9da42ed66d0ac1915e22b7e3d768eccb271a30f7e",
+      "outputSha256": "5e12e452484ab4c2a97dc08be496e4954f11c83ddba3b68153931cd19cb84446"
+    },
+    {
+      "source": "public/images/products/t2888-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t2888-stainless-steel-handle-4.webp",
+      "width": 1400,
+      "height": 2100,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8c0d08d95f7641feaf1dcc666eb24898a90a8fc7f6e47bb195b7dc62c9eaaba2",
+      "outputSha256": "e89c073893c79363bfb16bedbaad04064aa4be4967b908161dacb90b578975f5"
+    },
+    {
+      "source": "public/images/products/t2888-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t2888-stainless-steel-handle-5.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c111290e592175136a1c8e8d3cba58109d80831f6af8ca690189a8a12cdd433c",
+      "outputSha256": "c2c9ca696e5aeb956ae870305f9ca6f1a64f7b7de1136e0f52c748780e72567a"
+    },
+    {
+      "source": "public/images/products/t2888-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t2888-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "761673a5133295951106f3a1cf96e3e991207ba5ff174b49a9141105d3025367",
+      "outputSha256": "4e1b77c2f3cb0dc88be9234dec87286e4bca022634310556f7fba3e148120961"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "177edcd6f093c629a8237825fd9de20bae681fa6dfdaaafddf730f7845622ada",
+      "outputSha256": "0d0cdc648ddf4edfd696f15f8ccee879ef754477e0f1f12c041be396dcc322f8"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7e72786e90e4f9c7f1e3b4e95eebf09ba74107d993542c3c03d23228f4e2a844",
+      "outputSha256": "d04b2c89938135c4c0ec6eb92c766ef7225781c5024ec0ef20bc77a839ca0aa9"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-4.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c244d99506b2ce5ba4f008d9965de6fb5b6b7c6a9cf5d213f66bce0b5102ede8",
+      "outputSha256": "3c4902a0bc6fd4d0e93b7aca1af5ba52aac0f088e612e3ac9dbfae69eb7be34e"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-5.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c244d99506b2ce5ba4f008d9965de6fb5b6b7c6a9cf5d213f66bce0b5102ede8",
+      "outputSha256": "3c4902a0bc6fd4d0e93b7aca1af5ba52aac0f088e612e3ac9dbfae69eb7be34e"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-6.webp",
+      "width": 1400,
+      "height": 1869,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "138156660f9b75da5b8428d1c8f1fcc8eef6a003620f3433afa59c332a65f808",
+      "outputSha256": "ffe4c8955da43677ad8feebb95584a636df8a7c1c7c50359f218f6bec05ad6b5"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-7.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-7.webp",
+      "width": 1258,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "22b43bbbbdd413a53007b1517c7a58b02464fbfd6304226ec10e29cd61f53169",
+      "outputSha256": "31ddfdda5c35102a34a64d93944fdb402292a26cbc65fd149b72a2754bcc592e"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-8.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-8.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "31886a109dc630efba313213e083f1830b0c3fd1e004b49fbc1ed059bfd1e01b",
+      "outputSha256": "c0e9a3790c1c1694a0220ad9c19d68ee8a7ce7e68830d66471232f2277ce9a82"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle-9.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle-9.webp",
+      "width": 1180,
+      "height": 1573,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d878d07b30f6494db5bf8d76c81502244f9384ae9fb57d5d9a23e2096aba7d1d",
+      "outputSha256": "14f496d892ca39e58dd5ede37fefcd84386916295ee00e291a817978a22f599d"
+    },
+    {
+      "source": "public/images/products/t2930-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t2930-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "177edcd6f093c629a8237825fd9de20bae681fa6dfdaaafddf730f7845622ada",
+      "outputSha256": "0d0cdc648ddf4edfd696f15f8ccee879ef754477e0f1f12c041be396dcc322f8"
+    },
+    {
       "source": "public/images/products/t2973-stainless-steel-handle-2.webp",
       "output": "public/images/products-hyde/t2973-stainless-steel-handle-2.webp",
       "width": 783,
@@ -81090,6 +83736,186 @@
       },
       "sourceSha256": "15f51ab5fc3464b6a824b422eeed4bb169a37894b5556fb1cdbc009f50c29b42",
       "outputSha256": "604d8ac0884c48d71bce1c6e1af2f709ad3c1dc72674517923b06b50464432f9"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "a3055959bc4ede004dd1b82d92e172ca0973d3be9541e0a4362130c452f6b45f",
+      "outputSha256": "0470e831efd6d1196c2c990b6d405c458bdbc15639f15526cf426f240c377195"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-3.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "4550ddec394ffaf9a3061067b28e803d60a1eaa4bbb164d34dba5186906f8b4a",
+      "outputSha256": "9c2b93c0ef643c088e28e3866552f99c06573bb72a20766d1287ea3c9b16753f"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-4.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b9caa7a2b721ce1ad950dffcb6144dab59a3393089db1954373636549d77ebf7",
+      "outputSha256": "31d6032a4caa8051d71d9bb4834f8bea89afb0fa05520d82936e679e7f5ee066"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-5.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "0f8a84cf44e58000247244bf8344492edbb3f461ef16b0d2a10fc59f26475127",
+      "outputSha256": "273e2819140c5de960b28884395ceb8bd941fe4c1762f982ce82f7b6f9917847"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-6.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bc99dbced5582c4baafb14bab4291965a83d646c982894ae955f9ceb807e7a10",
+      "outputSha256": "bb1768dbdd235fe553c1c73b0ced81d08169e40b9296e328052dab32788aaff8"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle-7.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle-7.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c6b3872994b6a3d53c984e3aff928537c430fb151a34c1488ed7db6b3f42a297",
+      "outputSha256": "c8c00b6fed4431c03469b11d0708f15c2fdf4a3c186af21f6b45bd7baca51f40"
+    },
+    {
+      "source": "public/images/products/t3321-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t3321-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "8e599bb2b2538ff43a5c61567dae474e36c923b808efd6ef1d9e6e2ef9a3a4c1",
+      "outputSha256": "67bfff0437dd4f08e569d5870aab637b30ec23334dc986ed84afb6d64b989dac"
+    },
+    {
+      "source": "public/images/products/t7110-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/t7110-stainless-steel-handle-2.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3b39de63194c66b2f08e68b225d6fed5f6ee4b718ed0631655f725f579b3e2dd",
+      "outputSha256": "2e299e4023fc9f2e5f84a519417454f7764093c2896cc779ea7baf56d803c016"
+    },
+    {
+      "source": "public/images/products/t7110-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/t7110-stainless-steel-handle-3.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bd19c3e43ae41c4bf298eddf3e937eaf9d3b6096da77b45979b28c232378712e",
+      "outputSha256": "c97c26199bee3fba791b97bb68f6ea057d39baf8cedd02721c3ca0424700cad7"
+    },
+    {
+      "source": "public/images/products/t7110-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/t7110-stainless-steel-handle.webp",
+      "width": 893,
+      "height": 1259,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 107,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9515c8f2da1ec86f2033157c2d2573a765d87f3cf478a59113a1931b1d28cb4b",
+      "outputSha256": "ef0bbba546b4bb8773f934e421b2b6eb91541ea0cb58f8c5bdb13e89840d7af7"
     },
     {
       "source": "public/images/products/tubular-knob-lock.webp",

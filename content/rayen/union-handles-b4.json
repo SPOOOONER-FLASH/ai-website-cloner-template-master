@@ -1,0 +1,820 @@
+{
+  "_readme": [
+    "第四批供应商图包（大拉手系列 + 浴缸扶手），27 个型号里上架 20 个。只上雷茵站。",
+    "node scripts/ingest-union-handles.mjs union-handles-b4.json",
+    "",
+    "== 一个型号，里面有长的短的 ==",
+    "甲方 2026-09-10 指着 G2690 的一屏说：「这个是一个型号，里面有长的短的」。",
+    "他给的截图里 G2690-10-121-L600、G2690-20-121-A、G2690-20-130-A 是同一个 G2690 的",
+    "长度和表面处理变体，不是不同型号。所以压缩包名带 L600 / L800 / L300 L700 的，",
+    "合并成一条记录，长度写进「可选长度」这一行，不拆成多个 SKU。",
+    "拆开的话买家会在目录里看到同一个拉手出现四次，而真正要选的是长度。",
+    "",
+    "== 规格来源 ==",
+    "全部从各自的尺寸图上读。G1266、G2888 没有图纸，规格留空。",
+    "G1255 和 T1050 的图纸上还有「断面形状」，split 脚本的词表已处理。",
+    "",
+    "== G / T 前缀 ==",
+    "沿用第一批定下的规则：G* 产品图是玻璃门扇、图纸不画门 → 玻璃门拉手；",
+    "T* 产品图是实体门扇、图纸画门扇断面并标出墙距离 → 门拉手。",
+    "这批 T* 的图纸全部带灰色门扇断面，和规则一致。"
+  ],
+  "sourceRoot": "C:/Users/johns/Desktop/雷茵-第四批-按型号",
+  "sites": [
+    "rayen"
+  ],
+  "models": [
+    {
+      "model": "G1229",
+      "slug": "g1229-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G1229xD901SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "34mm"
+        },
+        {
+          "label": "Projection",
+          "value": "64mm"
+        }
+      ]
+    },
+    {
+      "model": "G1234",
+      "slug": "g1234-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G1234xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=500mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Available lengths",
+          "value": "L300 / L700"
+        },
+        {
+          "label": "Grip section",
+          "value": "22mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "40mm"
+        },
+        {
+          "label": "Projection",
+          "value": "64.5mm"
+        }
+      ]
+    },
+    {
+      "model": "G1239",
+      "slug": "g1239-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G1239xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "478mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "56.9mm"
+        },
+        {
+          "label": "Projection",
+          "value": "20.4mm"
+        }
+      ]
+    },
+    {
+      "model": "G1255",
+      "slug": "g1255-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G1255xD901SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1000mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1300mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "20mm"
+        },
+        {
+          "label": "Projection",
+          "value": "36mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "25 × 61mm"
+        }
+      ]
+    },
+    {
+      "model": "G2690",
+      "slug": "g2690-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G2690x16D900_A_SZoW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1660–2160mm（可调）"
+        },
+        {
+          "label": "Second centre",
+          "value": "P1=750mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "700mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "71mm"
+        },
+        {
+          "label": "Available lengths",
+          "value": "L600 / L1660–2160"
+        }
+      ]
+    },
+    {
+      "model": "G3078",
+      "slug": "g3078-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G3078x5D922SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=782mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Available lengths",
+          "value": "L600 / L800"
+        },
+        {
+          "label": "Grip length",
+          "value": "550mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "40mm"
+        },
+        {
+          "label": "Projection",
+          "value": "70mm"
+        }
+      ]
+    },
+    {
+      "model": "G3321",
+      "slug": "g3321-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G3321x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "500mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "G7110",
+      "slug": "g7110-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G7110x5D922SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "500mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "T1050",
+      "slug": "t1050-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1050xD900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=473mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "500mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "35mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "53.1mm"
+        }
+      ]
+    },
+    {
+      "model": "T1224",
+      "slug": "t1224-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1224xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=540mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "75mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "51.5mm"
+        }
+      ]
+    },
+    {
+      "model": "T1225",
+      "slug": "t1225-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1225xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=507mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "42mm"
+        }
+      ]
+    },
+    {
+      "model": "T1255",
+      "slug": "t1255-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1255x21D900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=500mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "35mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "25 × 60mm"
+        }
+      ]
+    },
+    {
+      "model": "T1266",
+      "slug": "t1266-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1266xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=540mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Projection",
+          "value": "37mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "18 × 50mm"
+        }
+      ]
+    },
+    {
+      "model": "T1780",
+      "slug": "t1780-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T1780x15D921SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=570mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "610mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "32 × 70mm"
+        },
+        {
+          "label": "Grip width",
+          "value": "114mm"
+        }
+      ]
+    },
+    {
+      "model": "T2888",
+      "slug": "t2888-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T2888xD920SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=580mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "67mm"
+        }
+      ]
+    },
+    {
+      "model": "T2930",
+      "slug": "t2930-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T2930xD900SZXW (1).jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "35mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "T3321",
+      "slug": "t3321-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T3321x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "500mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "52mm"
+        }
+      ]
+    },
+    {
+      "model": "T7110",
+      "slug": "t7110-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "T7110x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "500mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "G1266",
+      "slug": "g1266-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "G2888",
+      "slug": "g2888-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "PRE_HB110",
+      "slug": "pre-hb110-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "浴缸扶手",
+      "categoryPath": [
+        "care-grab-bars",
+        "fixed-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Polished stainless",
+        "Satin stainless"
+      ],
+      "drawing": "PRE_HB110xB900SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "450mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=370mm（两端各 P=30mm）"
+        },
+        {
+          "label": "Tube section",
+          "value": "32mm"
+        },
+        {
+          "label": "Projection",
+          "value": "52mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "30 × 61mm"
+        }
+      ]
+    }
+  ],
+  "heldBack": [
+    {
+      "model": "G2110",
+      "reason": "已上架，本批图并入原记录"
+    },
+    {
+      "model": "T2110",
+      "reason": "已上架，本批图并入原记录"
+    },
+    {
+      "model": "G1159",
+      "reason": "已上架，本批图并入原记录"
+    },
+    {
+      "model": "USG1",
+      "reason": "系列合影，前三批已按同样理由 heldBack"
+    },
+    {
+      "model": "G2930",
+      "reason": "仅两张图且无图纸，等补产品图"
+    }
+  ]
+}
