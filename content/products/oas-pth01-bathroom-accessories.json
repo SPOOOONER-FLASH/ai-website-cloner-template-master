@@ -1,0 +1,69 @@
+{
+  "model": "OAS_PTH01",
+  "slug": "oas-pth01-bathroom-accessories",
+  "name": "Bathroom Accessories",
+  "nameZh": "暗藏纸巾盒",
+  "series": "Bathroom Accessories",
+  "categoryPath": [
+    "bathroom-accessories"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle.",
+  "specs": [
+    {
+      "label": "Face plate",
+      "value": "345 × 345mm"
+    },
+    {
+      "label": "Wall cutout",
+      "value": "327 × 306mm"
+    },
+    {
+      "label": "Depth",
+      "value": "131.8mm"
+    },
+    {
+      "label": "Minimum wall depth",
+      "value": "134mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/oas-pth01-bathroom-accessories.webp",
+    "ratio": "1 / 1",
+    "label": "OAS_PTH01 Bathroom Accessories"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/oas-pth01-bathroom-accessories-2.webp",
+      "ratio": "1 / 1",
+      "label": "OAS_PTH01 Bathroom Accessories, view 2"
+    },
+    {
+      "src": "/images/products/oas-pth01-bathroom-accessories-3.webp",
+      "ratio": "1 / 1",
+      "label": "OAS_PTH01 Bathroom Accessories, view 3"
+    },
+    {
+      "src": "/images/products/oas-pth01-bathroom-accessories-4.webp",
+      "ratio": "1 / 1",
+      "label": "OAS_PTH01 Bathroom Accessories, view 4"
+    },
+    {
+      "src": "/images/products/oas-pth01-bathroom-accessories-5.webp",
+      "ratio": "1 / 1",
+      "label": "OAS_PTH01 Bathroom Accessories, view 5"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "OAS_PTH01 Bathroom Accessories | RAYEN",
+  "seoDescription": "Stainless Steel pull handle."
+}

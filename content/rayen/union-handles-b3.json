@@ -1,0 +1,157 @@
+{
+  "_readme": [
+    "第三批供应商图包：14 个型号里能上架的 8 个。只上雷茵站。",
+    "node scripts/ingest-union-handles.mjs union-handles-b3.json",
+    "",
+    "== 这一批的分类是客户给的，不是我猜的 ==",
+    "压缩包名字直接写了品名：「不锈钢精铸门把手UL780」「指示锁PRE-W173」",
+    "「移门拉手（铝材质）PRE-W160-02-L2000 L1000」「移门拉手（黄铜材质）PRE-W150」",
+    "「不锈钢精铸一字型淋浴门拉手PRE-G600」。包名比我看图判断权威，直接用。",
+    "",
+    "这也纠正了第二批的一个错：PRE_G600 我按图纸归成了「双层毛巾杆」——",
+    "图纸上确实是两条平行杆。但包名说是淋浴门拉手：一条是拉手、一条是毛巾杆，",
+    "这是淋浴房门上很常见的二合一。已在 union-handles-b2.json 里改过来了。",
+    "",
+    "== 移门拉手放在哪 ==",
+    "PRE150（黄铜）和 PRE_W160（铝）是移门用的嵌入式拉手，材质都不是不锈钢，",
+    "但站上没有「移门拉手」这个类目，最接近的是 stainless-steel-handles",
+    "（该类目实际是大拉手类目，44 个型号）。材质栏如实写黄铜 / 铝，不写不锈钢。",
+    "如果以后这类越来越多，值得单开一个「移门拉手」类目，现在两个型号还不够。",
+    "",
+    "== PRE150 图纸上还有日文 ==",
+    "「ドア切カキ図」（门开孔图）和「※( )内サイズは45mm用です」（括号内尺寸用于 45mm 门厚）。",
+    "两条都已经写进 specs 的中文里，图上的日文由 split 脚本的词表处理。"
+  ],
+
+  "sourceRoot": "C:/Users/johns/Desktop/雷茵-第三批-按型号",
+  "sites": ["rayen"],
+
+  "models": [
+    {
+      "model": "UL780",
+      "slug": "ul780-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "material": "Investment-cast stainless steel",
+      "finishes": ["Satin stainless", "Matt black", "Antique brass"],
+      "drawing": "UL780xL900SZW.jpg",
+      "specs": [
+        { "label": "Lever length", "value": "143mm" },
+        { "label": "Lever drop", "value": "58.5mm" },
+        { "label": "Lever section", "value": "25mm" },
+        { "label": "Lever thickness", "value": "8.5mm" },
+        { "label": "Rose size", "value": "52mm" },
+        { "label": "Spindle", "value": "P=34mm" }
+      ]
+    },
+    {
+      "model": "UL680",
+      "slug": "ul680-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "material": "Investment-cast stainless steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "drawing": "UL680xL900SZW.jpg",
+      "specs": [
+        { "label": "Lever length", "value": "141mm" },
+        { "label": "Lever drop", "value": "61.5mm" },
+        { "label": "Lever section", "value": "24mm" },
+        { "label": "Lever thickness", "value": "8.5mm" },
+        { "label": "Rose size", "value": "50mm (square)" },
+        { "label": "Spindle", "value": "P=34mm" }
+      ]
+    },
+    {
+      "model": "UL1066",
+      "slug": "ul1066-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless"],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "PRE_W173",
+      "slug": "pre-w173-indicator",
+      "name": "Indicator",
+      "nameZh": "指示锁",
+      "categoryPath": ["hardware-accessories", "indicators"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "drawing": "PRE_W173xL900SZW (1).jpg",
+      "specs": [
+        { "label": "Rose diameter", "value": "35mm" },
+        { "label": "Rose thickness", "value": "6mm" },
+        { "label": "Spindle", "value": "P=25mm" },
+        { "label": "Projection", "value": "22.5mm" }
+      ]
+    },
+    {
+      "model": "PRE150",
+      "slug": "pre150-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "移门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Brass",
+      "finishes": ["Antique brass", "Satin brass"],
+      "drawing": "PRE150x19D900SZW.jpg",
+      "specs": [
+        { "label": "Face plate", "value": "50 × 180mm" },
+        { "label": "Fixing centre", "value": "P=75mm (×2)" },
+        { "label": "Door cutout", "value": "42 × 174mm (46mm for 45mm doors)" },
+        { "label": "Door thickness", "value": "40mm (45mm version available)" },
+        { "label": "Recess depth", "value": "26mm (20mm variant)" }
+      ]
+    },
+    {
+      "model": "PRE_W160",
+      "slug": "pre-w160-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "移门长拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Aluminium",
+      "finishes": ["Anodised silver", "Matt black"],
+      "drawing": "PRE_W160xD900SZW.jpg",
+      "specs": [
+        { "label": "Available lengths", "value": "2000mm / 1000mm" },
+        { "label": "Section", "value": "32.4 × 36mm" },
+        { "label": "Fixing pitch", "value": "200mm (150mm at each end)" },
+        { "label": "Projection", "value": "45mm" }
+      ]
+    },
+    {
+      "model": "MUL2101",
+      "slug": "mul2101-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless"],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "MTR2110",
+      "slug": "mtr2110-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless"],
+      "drawing": null,
+      "specs": []
+    }
+  ],
+
+  "heldBack": [
+    { "model": "PRE_G600", "reason": "同型号在第二批已上架，本批 16 张图并入那条记录" },
+    { "model": "LAMOE", "reason": "两张品牌图，不是产品" },
+    { "model": "UL1043", "reason": "只有一张图" },
+    { "model": "UL1019", "reason": "只有一张图" },
+    { "model": "PRE_W173_04", "reason": "只有一张图，是 PRE_W173 的配套件编号" }
+  ]
+}

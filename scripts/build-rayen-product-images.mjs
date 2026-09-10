@@ -41,6 +41,7 @@
  *   node scripts/build-rayen-product-images.mjs --sample    # contact sheet for eyeballing
  */
 
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -50,6 +51,15 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE_DIR = join(root, "public", "images", "products");
 const TARGET_DIR = join(root, "public", "images", "products-rayen");
 const MANIFEST = join(root, "content", "rayen", "product-image-cleanup.json");
+
+/** SHA of a file, or undefined when it is gone — a rename by the other session, usually. */
+async function sha256OrUndefined(file) {
+  try {
+    return createHash("sha256").update(readFileSync(file)).digest("hex");
+  } catch {
+    return undefined;
+  }
+}
 
 const args = new Set(process.argv.slice(2));
 const checkOnly = args.has("--check");
@@ -295,13 +305,53 @@ const writeFailures = [];
 const files = readdirSync(SOURCE_DIR).filter((f) => f.endsWith(".webp")).sort();
 const results = [];
 
+/*
+  INCREMENTAL, AND TOLERANT OF FILES THAT VANISH MID-RUN — same reasoning as the HYDE
+  watermark script, same day, same cause.
+
+  Two sessions share this checkout. Re-analysing all 2,600 images to add 90 takes long
+  enough that the other session can finish a rename inside the window, and a source file
+  that disappears between the directory listing and the read used to kill the run.
+
+  `hashes` records the source SHA for every decision already made. When the source has not
+  changed and the output is still on disk, the previous decision is reused untouched —
+  which also means the expensive corner analysis is not repeated for a photograph nobody
+  edited. A vanished source is skipped and reported.
+*/
+const priorHashes = new Map();
+try {
+  const prior = JSON.parse(readFileSync(MANIFEST, "utf8"));
+  for (const [name, entry] of Object.entries(prior.hashes ?? {})) priorHashes.set(name, entry);
+} catch {
+  // No manifest yet: full rebuild.
+}
+
+const vanished = [];
+let reused = 0;
+const hashes = {};
+
 for (const file of files) {
+  const source = join(SOURCE_DIR, file);
+  const target = join(TARGET_DIR, file);
+
+  const sourceHash = await sha256OrUndefined(source);
+  if (sourceHash === undefined) {
+    vanished.push(file);
+    continue;
+  }
+
+  const prior = priorHashes.get(file);
+  if (prior && prior.source === sourceHash && (prior.status === "refused" || existsSync(target))) {
+    results.push({ file, status: prior.status, reason: prior.reason });
+    hashes[file] = prior;
+    reused += 1;
+    continue;
+  }
+
   const result = await analyse(file);
   results.push(result);
+  hashes[file] = { source: sourceHash, status: result.status, reason: result.reason };
   if (checkOnly) continue;
-
-  const target = join(TARGET_DIR, file);
-  const source = join(SOURCE_DIR, file);
 
   if (result.status === "cleanable") {
     const { box, background } = result;
@@ -338,10 +388,15 @@ if (!checkOnly) {
           "scripts/build-rayen-product-images.mjs 生成，不要手改。",
           "refused 里的图片角落有内容延伸出检测窗口 —— 可能是产品本体，自动填充会把产品涂掉，",
           "所以这些图不进雷茵站。需要的话由美工手工裁切后放回 public/images/products/。",
+          "",
+          "hashes 是增量重跑的账本：记住每张源图的 SHA 和当时的判定。源图没变、产物还在，",
+          "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
+          "而那个长窗口正是另一个会话重命名时撞车的原因。",
         ],
         generated: new Date().toISOString().slice(0, 10),
         counts,
         refused,
+        hashes,
       },
       null,
       2,
@@ -352,6 +407,19 @@ if (!checkOnly) {
     `products-rayen/：清掉水印 ${counts.cleanable ?? 0} 张，本来就干净 ${counts["already-clean"] ?? 0} 张，` +
       `拒绝处理 ${counts.refused ?? 0} 张（角落里可能是产品）。清单见 ${MANIFEST.replace(root, ".")}`,
   );
+  console.log(`复用 ${reused} 张未变更的判定，重算 ${files.length - reused - vanished.length} 张。`);
+  if (vanished.length) {
+    console.warn(
+      [
+        `⚠ ${vanished.length} 张源图在本次运行中消失（多半是另一个会话正在重命名），已跳过：`,
+        ...vanished.slice(0, 8).map((name) => `  ${name}`),
+        vanished.length > 8 ? "  …" : "",
+        "  重跑一次即可收进来。",
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+  }
   if (writeFailures.length) {
     console.error(`⚠ ${writeFailures.length} 张写入失败（重试一次后仍失败）：`);
     for (const failure of writeFailures.slice(0, 10)) console.error(`  ${failure}`);

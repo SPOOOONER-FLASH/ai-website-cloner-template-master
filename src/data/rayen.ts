@@ -35,6 +35,7 @@ export type RayenProduct = {
   heroImage?: RayenImage;
   gallery: RayenImage[];
   relatedModels: string[];
+  sites: string[];
   styleFamily: string;
   seoTitle: string;
   seoDescription: string;
@@ -49,7 +50,25 @@ export type RayenCategory = {
 };
 
 export const rayen = rayenFile;
-export const products = mirror.products as RayenProduct[];
+
+/**
+ * The RAYEN catalogue — this brand's own models only.
+ *
+ * 甲方 2026-09-09：「把所有 hyde 的都下架，只保留雷茵」。
+ *
+ * 在这之前雷茵站展示的是全部 598 个型号，其中 584 个是 HYDE 出口目录里的。
+ * 结果是雷茵自己的新品被埋在别人的目录里 —— 甲方看着自己的站说「没看到新的雷茵产品」，
+ * 而那些产品其实早就上线了，只是在 26 个玻璃门产品里排到了后面。
+ *
+ * 所以这里从「默认全收」翻成「明确标记才收」：只有 sites 里含 "rayen" 的记录才进这个站。
+ * 反过来 src/data/products.ts 那边过滤掉只上雷茵的记录，两边各自只看自己的。
+ *
+ * 翻回去是改这一行 —— 但翻回去之前先想清楚：目录共用的好处是同一个型号的规格表只维护
+ * 一遍，代价是两个品牌对外展示同一批货。甲方选了后者更重要。
+ */
+export const products = (mirror.products as RayenProduct[]).filter((product) =>
+  (product.sites ?? []).includes("rayen"),
+);
 
 /* ---------------------------------------------------------------------------
  * The site's own identity. Kept here rather than in content/site-settings.json,

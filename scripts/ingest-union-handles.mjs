@@ -35,7 +35,22 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const manifest = JSON.parse(readFileSync(join(root, "content", "rayen", "union-handles.json"), "utf8"));
+/*
+  Which manifest to ingest. Defaults to the first batch so the existing npm script and
+  every earlier invocation keep working; the second batch passes its own file.
+
+  Two manifests rather than one merged file because they are different consignments with
+  different evidence: batch 1 is the Japanese UNION door hardware, batch 2 is grab bars and
+  bathroom fittings from OAS / PRE / HG. Merging them would bury which decision belonged to
+  which delivery, and the `heldBack` reasons only make sense next to their own batch.
+*/
+const manifestArg = process.argv.slice(2).find((a) => !a.startsWith("--"));
+const manifestPath = manifestArg
+  ? (manifestArg.includes("/") || manifestArg.includes("\\")
+      ? manifestArg
+      : join(root, "content", "rayen", manifestArg))
+  : join(root, "content", "rayen", "union-handles.json");
+const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const IMAGE_DIR = join(root, "public", "images", "products");
 const PRODUCT_DIR = join(root, "content", "products");
 

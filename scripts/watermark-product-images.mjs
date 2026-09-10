@@ -810,20 +810,83 @@ async function main() {
     throw new Error("Refusing to overwrite the source product image directory.");
   }
 
+  /*
+    INCREMENTAL, AND TOLERANT OF FILES THAT VANISH MID-RUN.
+
+    Two sessions share this checkout: one works on HYDE, one on RAYEN, and both regenerate
+    derivatives from the same public/images/products/. The old full-rebuild loop made that
+    unsafe in two ways, and both bit on 2026-09-10:
+
+      1. Adding 90 new photographs re-encoded all 2,600, which takes long enough that the
+         other session finished a rename in the middle of it.
+      2. When a rename removed a file this run had already listed, sharp threw
+         "Input file is missing" and the whole run died — leaving the previous manifest on
+         disk looking valid while the derivatives were half old, half new.
+
+    So: reuse the existing record whenever the source hash and the output both still match,
+    and treat a disappeared input as "skip and report" rather than a crash. A rename by the
+    other session now costs a warning line, not a dead run, and the normal case touches
+    only the files that actually changed.
+  */
+  const previous = new Map();
+  try {
+    const priorManifest = JSON.parse(await fs.readFile(options.manifestPath, "utf8"));
+    for (const record of priorManifest.files ?? []) previous.set(record.source, record);
+  } catch {
+    // No manifest yet, or an unreadable one: fall through to a full rebuild.
+  }
+
   const records = [];
+  const vanished = [];
+  let reused = 0;
   for (const inputPath of inputs) {
-    records.push(
-      await watermarkImage({
-        inputPath,
-        inputRoot,
-        logoPath: options.logoPath,
-        outputRoot,
-        repairRoot: options.repairRoot,
-        requireRepairRoot: options.requireRepairRoot,
-        whiteLogoPath: options.whiteLogoPath,
-      }),
+    const source = path.relative(PROJECT_ROOT, inputPath).replaceAll("\\", "/");
+    const prior = previous.get(source);
+    if (prior) {
+      const [sourceHash, outputHash] = await Promise.all([
+        sha256(inputPath).catch(() => undefined),
+        sha256(path.resolve(PROJECT_ROOT, prior.output)).catch(() => undefined),
+      ]);
+      if (sourceHash === undefined) {
+        vanished.push(source);
+        continue;
+      }
+      if (sourceHash === prior.sourceSha256 && outputHash === prior.outputSha256) {
+        records.push(prior);
+        reused += 1;
+        continue;
+      }
+    }
+
+    try {
+      records.push(
+        await watermarkImage({
+          inputPath,
+          inputRoot,
+          logoPath: options.logoPath,
+          outputRoot,
+          repairRoot: options.repairRoot,
+          requireRepairRoot: options.requireRepairRoot,
+          whiteLogoPath: options.whiteLogoPath,
+        }),
+      );
+    } catch (error) {
+      if (/missing|ENOENT|no such file/i.test(String(error?.message))) {
+        vanished.push(source);
+        continue;
+      }
+      throw error;
+    }
+  }
+
+  if (vanished.length) {
+    console.warn(
+      `⚠ ${vanished.length} 个源文件在本次运行中消失（多半是另一个会话正在重命名），已跳过：\n  ` +
+        `${vanished.slice(0, 8).join("\n  ")}${vanished.length > 8 ? "\n  …" : ""}\n` +
+        `  重跑一次即可收进来。`,
     );
   }
+  console.log(`复用 ${reused} 张未变更的衍生图，重算 ${records.length - reused} 张。`);
 
   const manifestPath = options.manifestPath;
   await fs.mkdir(path.dirname(manifestPath), { recursive: true });

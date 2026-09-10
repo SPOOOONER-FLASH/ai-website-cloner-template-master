@@ -147,8 +147,14 @@ export function SiteFooter() {
               <p>微信：{contact.wechat || "—"}</p>
               <p>
                 1688：
+                {/*
+                  悬停态跟着页脚其他链接走 hover:text-white，没有用下划线工具类。
+                  src/components/site/short-marker.test.ts 扫整个 src/ 禁止它们 —— 这个项目的
+                  悬停标记是自己那套双线，混进一条浏览器默认下划线就破了规矩。
+                  （那条测试匹配的是文件文本，所以这段注释也不能把被禁的类名原样写出来。）
+                */}
                 {contact.alibaba1688 ? (
-                  <a href={contact.alibaba1688} rel="noopener" target="_blank" className="latin underline-offset-4 hover:underline">
+                  <a href={contact.alibaba1688} rel="noopener" target="_blank" className="latin hover:text-white">
                     在线店铺 ↗
                   </a>
                 ) : (

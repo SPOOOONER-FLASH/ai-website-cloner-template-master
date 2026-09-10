@@ -380,6 +380,8 @@ export const OPTION_NOTES: Record<string, string> = {
   "grip-handle-sets": "A long pull on the outside with a lock behind it, for a main entrance door.",
   "sliding-hook-locks":
     "For a sliding leaf, where a bolt cannot travel straight out. A hook swings from the case into the keep.",
+  "flip-up-grab-bars":
+    "A grab bar beside the WC that folds up flat to the wall. Down, it carries the transfer; up, it clears the space a wheelchair needs to come alongside — which is why an accessible plan draws it separately from a fixed bar.",
 
   /* Sub-categories */
   "tubular-locks": "Latch and spindle in a slim tube. Lighter duty than cylindrical, and quicker to fit.",
@@ -469,6 +471,8 @@ export const OPTION_NOTES_ES: Record<string, string> = {
     "Lleva corriente del marco a la hoja, para que una cerradura eléctrica siga funcionando mientras la puerta gira.",
   "special-applications": "Dispositivos para huecos que los modelos estándar no cubren.",
   "house-numbers": "Números y letras para el exterior del edificio.",
+  "flip-up-grab-bars":
+    "Barra de apoyo junto al inodoro que se pliega contra la pared. Bajada, soporta la transferencia; subida, libera el espacio que necesita una silla de ruedas para acercarse.",
 };
 
 export function noteFor(value: string, locale: "en" | "es" = "en"): string | undefined {

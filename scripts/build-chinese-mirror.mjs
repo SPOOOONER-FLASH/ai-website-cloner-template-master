@@ -292,6 +292,12 @@ for (const file of files) {
     heroImage,
     gallery,
     relatedModels: product.relatedModels ?? [],
+    /*
+      站点作用域要带进镜像，因为雷茵站从 2026-09-09 起只展示 sites 含 "rayen" 的记录。
+      缺省（字段不存在）= 两站都上，所以这里补成空数组而不是 undefined，
+      让消费端一个 includes 就能判断，不用先判空。
+    */
+    sites: product.sites ?? [],
     styleFamily: product.styleFamily ?? "",
     // No brand suffix here — the route's metadata template appends "| RAYEN 雷茵".
     // Baking a second, differently-worded suffix in produced titles that disagreed with

@@ -1,0 +1,1121 @@
+{
+  "_readme": [
+    "第二批供应商图包：52 个型号里挑出来能上架的。只上雷茵站。",
+    "scripts/ingest-union-handles.mjs 读这份清单（跟第一批 union-handles.json 同一个格式）。",
+    "",
+    "== 这批和第一批的区别 ==",
+    "第一批是日本 UNION 的门拉手/执手；这批以扶手和浴室配件为主，型号前缀 OAS / PRE / HG / HB。",
+    "客户 2026-09-09 确认：「我们只从 union 只拿到了图」—— 不是代理、不是代工，就是拿到图。",
+    "所以不写「日本代理」，也不留原厂标；客户要求把画面里的 UNION 换成雷茵自己的牌子。",
+    "",
+    "== 新类目：上抬扶手 ==",
+    "客户点名要的。指的是装在坐便器旁边、不用时能向上翻起贴墙的扶手（日文叫「はね上げ手すり」）。",
+    "和固定扶手是两种东西：固定扶手一直占着那块墙，上抬扶手抬起来就让开轮椅的转移路径，",
+    "无障碍卫生间的图纸上这两样是分开标注的。所以它值一个自己的类目，不是浴室配件里的一个筛选项。",
+    "",
+    "== 规格从哪来 ==",
+    "全部从该型号自己的尺寸图上读。31 个型号有图纸，没图纸的 specs 是空数组。",
+    "P= 是固定孔中心距，Ø 是管径，W.L 是水平基准线（wall line）。",
+    "扶手类多了一个「承重」维度但图纸上没有标，所以没有写 —— 无障碍扶手的承重是要做检测的，",
+    "编一个数字在这里的后果比别处更重。",
+    "",
+    "== 没上架的型号 ==",
+    "heldBack 里列了原因。主要是三类：只有场景照没有产品图、只有一张合影、",
+    "以及只有图纸没有实物图（图纸能当规格用，但当主图会让整个类目看起来像图册不像目录）。"
+  ],
+  "sourceRoot": "C:/Users/johns/Desktop/雷茵-第二批-按型号",
+  "sites": [
+    "rayen"
+  ],
+  "newCategories": [
+    {
+      "slug": "flip-up-grab-bars",
+      "name": "Flip-Up Grab Bars",
+      "nameZh": "上抬扶手",
+      "summary": "Wall-mounted grab bars that fold up out of the transfer path, for accessible WCs.",
+      "afterSlug": "bathroom-accessories"
+    }
+  ],
+  "models": [
+    {
+      "model": "OASHB3000",
+      "slug": "oashb3000-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black",
+        "Satin stainless"
+      ],
+      "drawing": "OASHB3000xB900SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=40mm / P=110mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "256 × 120mm"
+        },
+        {
+          "label": "Projection",
+          "value": "78mm"
+        }
+      ]
+    },
+    {
+      "model": "OASHB2600",
+      "slug": "oashb2600-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "OASHB2118",
+      "slug": "oashb2118-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "HB2600",
+      "slug": "hb2600-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2600x9T900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "550mm (300 + 250)"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=100mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "130 × 260mm"
+        },
+        {
+          "label": "Plate thickness",
+          "value": "13mm"
+        }
+      ]
+    },
+    {
+      "model": "HB2900",
+      "slug": "hb2900-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2900xB920SZxW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "784mm (600 + 184)"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=100mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "130 × 260mm"
+        },
+        {
+          "label": "Height above fixing",
+          "value": "120mm"
+        }
+      ]
+    },
+    {
+      "model": "HB2902",
+      "slug": "hb2902-flip-up-grab-bar",
+      "name": "Flip-Up Grab Bar",
+      "nameZh": "上抬扶手",
+      "categoryPath": [
+        "flip-up-grab-bars"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2902xB920SZxW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "800mm (575 + 225)"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "Height above fixing",
+          "value": "160mm"
+        }
+      ]
+    },
+    {
+      "model": "HB2102",
+      "slug": "hb2102-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2102xB921SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø80mm"
+        },
+        {
+          "label": "Projection",
+          "value": "100mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "13mm"
+        }
+      ]
+    },
+    {
+      "model": "HB2118",
+      "slug": "hb2118-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2118xB921SZW.jpg",
+      "specs": [
+        {
+          "label": "Width",
+          "value": "600mm"
+        },
+        {
+          "label": "Height",
+          "value": "500mm (200 / 300 fixing)"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø80mm"
+        }
+      ]
+    },
+    {
+      "model": "HB2918",
+      "slug": "hb2918-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "HB2918xB920SZxW.jpg",
+      "specs": [
+        {
+          "label": "Width",
+          "value": "600mm"
+        },
+        {
+          "label": "Height",
+          "value": "500mm (200 / 300 fixing)"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø80mm"
+        }
+      ]
+    },
+    {
+      "model": "OASHB301",
+      "slug": "oashb301-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": [
+        {
+          "label": "Width",
+          "value": "627.2mm"
+        },
+        {
+          "label": "Depth",
+          "value": "563.6mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27.2mm"
+        }
+      ]
+    },
+    {
+      "model": "OASHB333",
+      "slug": "oashb333-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": "OASHB333xB900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Width",
+          "value": "627.2mm"
+        },
+        {
+          "label": "Height",
+          "value": "527.2mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=572.8mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27.2mm"
+        }
+      ]
+    },
+    {
+      "model": "OASHB201",
+      "slug": "oashb201-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "OASHB2112",
+      "slug": "oashb2112-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "HG2020",
+      "slug": "hg2020-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "可转动扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel with timber grip",
+      "finishes": [
+        "Satin stainless with timber"
+      ],
+      "drawing": "HG2020xT921SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=570mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "40mm"
+        },
+        {
+          "label": "Projection",
+          "value": "64.5mm"
+        },
+        {
+          "label": "Bracket",
+          "value": "32 × 85mm"
+        }
+      ]
+    },
+    {
+      "model": "HG1",
+      "slug": "hg1-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "卫生间挂钩",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "White"
+      ],
+      "drawing": "HG1xT921SZW.jpg",
+      "specs": [
+        {
+          "label": "Projection",
+          "value": "79.4mm"
+        },
+        {
+          "label": "Height",
+          "value": "88mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=35mm"
+        },
+        {
+          "label": "Base width",
+          "value": "41mm"
+        }
+      ]
+    },
+    {
+      "model": "OASSNR101",
+      "slug": "oassnr101-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "卷纸架",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black",
+        "Satin stainless"
+      ],
+      "drawing": null,
+      "specs": [
+        {
+          "label": "Width",
+          "value": "120mm"
+        },
+        {
+          "label": "Depth",
+          "value": "130mm"
+        },
+        {
+          "label": "Height",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "OASSNR201",
+      "slug": "oassnr201-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "双卷纸架",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black",
+        "Satin stainless"
+      ],
+      "drawing": null,
+      "specs": [
+        {
+          "label": "Width",
+          "value": "340mm"
+        },
+        {
+          "label": "Depth",
+          "value": "130mm"
+        },
+        {
+          "label": "Roll spacing",
+          "value": "150mm"
+        }
+      ]
+    },
+    {
+      "model": "OAS_PTH01",
+      "slug": "oas-pth01-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "暗藏纸巾盒",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "OAS_PTH01x22A900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Face plate",
+          "value": "345 × 345mm"
+        },
+        {
+          "label": "Wall cutout",
+          "value": "327 × 306mm"
+        },
+        {
+          "label": "Depth",
+          "value": "131.8mm"
+        },
+        {
+          "label": "Minimum wall depth",
+          "value": "134mm"
+        }
+      ]
+    },
+    {
+      "model": "OAS_PTH02",
+      "slug": "oas-pth02-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "暗藏纸巾盒",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "OAS_PTH02xA900SZW.jpg",
+      "specs": [
+        {
+          "label": "Face plate",
+          "value": "262 × 138mm"
+        },
+        {
+          "label": "Wall cutout",
+          "value": "316mm"
+        },
+        {
+          "label": "Depth",
+          "value": "128mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "70 / 70mm"
+        }
+      ]
+    },
+    {
+      "model": "OASSNB02",
+      "slug": "oassnb02-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "暗藏落地纸巾盒",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": [
+        {
+          "label": "Face plate",
+          "value": "200 × 657mm"
+        },
+        {
+          "label": "Overall width",
+          "value": "314mm"
+        },
+        {
+          "label": "Depth",
+          "value": "182.6mm"
+        }
+      ]
+    },
+    {
+      "model": "OASSNB03",
+      "slug": "oassnb03-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "暗藏落地纸巾盒",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "OASSNB03x24A900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Face plate",
+          "value": "345 × 657mm"
+        },
+        {
+          "label": "Wall cutout",
+          "value": "326mm × 638mm"
+        },
+        {
+          "label": "Minimum wall depth",
+          "value": "180mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE310",
+      "slug": "pre310-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "安全扶手",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Polished stainless"
+      ],
+      "drawing": "PRE310xT900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "450mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø55mm"
+        },
+        {
+          "label": "Projection",
+          "value": "76mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE330",
+      "slug": "pre330-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "毛巾架",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Polished stainless"
+      ],
+      "drawing": "PRE330xA900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "595mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=550mm"
+        },
+        {
+          "label": "Depth",
+          "value": "204mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø45mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø20mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE360",
+      "slug": "pre360-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "卷纸架",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Polished stainless"
+      ],
+      "drawing": "PRE360xC900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "166mm"
+        },
+        {
+          "label": "Height",
+          "value": "83mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø45mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=26mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE361",
+      "slug": "pre361-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "立式卷纸架",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Polished stainless"
+      ],
+      "drawing": "PRE361xC900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Height",
+          "value": "152mm"
+        },
+        {
+          "label": "Projection",
+          "value": "83mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø45mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=26mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE_G400",
+      "slug": "pre-g400-bathroom-accessories",
+      "name": "Bathroom Accessories",
+      "nameZh": "毛巾杆",
+      "categoryPath": [
+        "bathroom-accessories"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Antique brass"
+      ],
+      "drawing": "PRE_G400xD900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "500mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=450mm"
+        },
+        {
+          "label": "Projection",
+          "value": "81.5mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "50 × 30mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE_G600",
+      "slug": "pre-g600-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "淋浴门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "PRE_G600xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "550mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=524mm"
+        },
+        {
+          "label": "Projection",
+          "value": "80mm"
+        },
+        {
+          "label": "Bar spacing",
+          "value": "54mm"
+        }
+      ],
+      "note": "客户第三批的包名写明是「不锈钢精铸一字型淋浴门拉手 PRE-G600」。我第二批按图纸把它归成了双层毛巾杆 —— 图纸上是两条平行杆，看着确实像。包名纠正了这一点：一条是拉手，另一条是毛巾杆，这是淋浴房门上很常见的二合一。"
+    },
+    {
+      "model": "G777",
+      "slug": "g777-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G777xD922SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=520mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "61.5mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "18mm"
+        }
+      ]
+    },
+    {
+      "model": "G1106",
+      "slug": "g1106-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1106xD920SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=640mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "22 × 22mm (square)"
+        },
+        {
+          "label": "Projection",
+          "value": "62mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "Ø19mm"
+        }
+      ]
+    },
+    {
+      "model": "G1159",
+      "slug": "g1159-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1159xD900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "550.6mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=530mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "29mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "59.5mm"
+        },
+        {
+          "label": "Projection",
+          "value": "20.6mm"
+        }
+      ]
+    },
+    {
+      "model": "PRE_G100",
+      "slug": "pre-g100-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt black",
+        "Satin stainless"
+      ],
+      "drawing": "PRE_G100xD900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "450mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Height",
+          "value": "300mm (P=275)"
+        },
+        {
+          "label": "Glass cutout",
+          "value": "12mm, R6"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=18mm"
+        }
+      ]
+    },
+    {
+      "model": "T2750",
+      "slug": "t2750-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel with timber grip",
+      "finishes": [
+        "Satin stainless with timber",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "452mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Tube diameter",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "Projection",
+          "value": "67mm"
+        }
+      ]
+    }
+  ],
+  "heldBack": [
+    {
+      "model": "CSM1",
+      "reason": "一张室内场景照，不是单品图"
+    },
+    {
+      "model": "PRE_HB310",
+      "reason": "全部是浴室场景照，看不出哪一件是本型号"
+    },
+    {
+      "model": "BRN_HB001",
+      "reason": "两张图都是场景照，且它在 OASHB3000 的图纸里是被引用的配件编号"
+    },
+    {
+      "model": "HB2905",
+      "reason": "折叠台/婴儿护理台，与本站现有类目都对不上，等客户确认归类"
+    },
+    {
+      "model": "HB2911",
+      "reason": "十二张全是无障碍卫生间场景照，没有产品图"
+    },
+    {
+      "model": "OASHB401",
+      "reason": "只有图纸没有实物图"
+    },
+    {
+      "model": "G1105",
+      "reason": "只有一张图，且是 G1106 图纸里的关联型号"
+    },
+    {
+      "model": "HB2111",
+      "reason": "只有一张场景照"
+    },
+    {
+      "model": "HB2912",
+      "reason": "两张图都是示意图，无产品图与图纸"
+    },
+    {
+      "model": "OASHB2102",
+      "reason": "只有一张示意图"
+    },
+    {
+      "model": "OASSNRP3",
+      "reason": "只有一张场景照"
+    },
+    {
+      "model": "PRE_S321",
+      "reason": "只有一张场景照"
+    },
+    {
+      "model": "PRE_S361",
+      "reason": "只有一张图"
+    },
+    {
+      "model": "PRE_G300",
+      "reason": "只有一张图"
+    },
+    {
+      "model": "PRE_S330",
+      "reason": "场景照为主，等客户补产品图"
+    },
+    {
+      "model": "PRE_S360",
+      "reason": "场景照为主，等客户补产品图"
+    },
+    {
+      "model": "PRE_HB311",
+      "reason": "只有线图，无实物图"
+    },
+    {
+      "model": "PRE_G303",
+      "reason": "以安装说明图为主，等客户确认是否单独上架"
+    },
+    {
+      "model": "PRE_G700",
+      "reason": "等客户确认型号与 PRE_G600 的区别"
+    },
+    {
+      "model": "USG1",
+      "reason": "系列合影，第一批已按同样理由 heldBack"
+    }
+  ]
+}
