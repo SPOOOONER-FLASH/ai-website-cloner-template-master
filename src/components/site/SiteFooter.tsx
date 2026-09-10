@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { hasSpanishMirror } from "@/lib/spanish-mirror";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
@@ -57,6 +58,18 @@ export function SiteFooter() {
     Rendered as plain text instead of a link, with aria-current so assistive technology
     is told the same thing the styling says. Nothing to press, nothing to fail.
   */
+  /*
+    The counterpart of THIS page, or that language's home when this page has no mirror.
+    Never a 404 out of the footer — hasSpanishMirror is the same check the header panel
+    and the hreflang tags use.
+  */
+  const englishPath = isSpanish ? pathname.replace(/^\/es/, "") || "/" : pathname;
+  const languageHref = isSpanish
+    ? englishPath
+    : hasSpanishMirror(englishPath)
+      ? `/es${englishPath === "/" ? "" : englishPath}`
+      : "/es";
+
   const isCurrent = (href: string) => {
     const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
     return strip(href) === strip(pathname);
@@ -86,6 +99,36 @@ export function SiteFooter() {
                     )}
                   </li>
                 ))}
+                {/*
+                  THE ONLY RENDERED LINK BETWEEN THE TWO LANGUAGE TREES.
+
+                  It is here because on 2026-09-09 a full crawl found all 600 Spanish
+                  pages unreachable from the English homepage — no path of rendered links
+                  reached them at all. The cause was the location-and-language panel that
+                  replaced the bare "EN | ES" switch on 2026-09-08: the panel mounts only
+                  while it is open, so its <a href="/es/..."> exists in no exported HTML.
+                  The header before it carried a plain anchor, and that anchor was the
+                  whole Spanish site's inbound path.
+
+                  hreflang tags did not cover the loss. They are <link rel="alternate">
+                  in <head>, a hint about equivalence — not an edge in the link graph, and
+                  not something a crawler follows to discover a tree it has never seen.
+
+                  So the footer carries one server-rendered anchor per page, pointing at
+                  this page's counterpart where hasSpanishMirror says one exists and at
+                  the language's home where it does not. Same source of truth as the panel
+                  and the hreflang tags, so the three can never disagree.
+                */}
+                <li className="col-span-2 md:col-span-3">
+                  <Link
+                    href={languageHref}
+                    hrefLang={isSpanish ? "en" : "es"}
+                    lang={isSpanish ? "en" : "es"}
+                    className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
+                  >
+                    {isSpanish ? "English" : "Español"}
+                  </Link>
+                </li>
                 <li className="col-span-2 md:col-span-3">
                   <button
                     type="button"
