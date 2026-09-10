@@ -192,6 +192,17 @@ of all optional undocumented features. Verify orthographic geometry before beaut
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
 - Stage only explicit paths with `git add -- <paths>`. Never use unreviewed bulk staging in
   a dirty shared tree.
+- **After a rebuild, `git add out/` BEFORE committing. The pathspec form does not add
+  untracked files.** `git commit -- out/` commits only *tracked* files matching that
+  path; every file the build newly created is untracked and is silently left behind. On
+  2026-09-10 that shipped a release missing 1,871 files — two JavaScript chunks the
+  homepage `<script>`-tags referenced, and all 16 directories from that day's product
+  renames. The HTML returned 200, the chunks 404'd, and the client's browser showed
+  "This page couldn't load". The pathspec exists to avoid sweeping up the other agent's
+  work; it does not protect you from omitting your own new files. Stage explicitly
+  (`git add out/ out-rayen/`), then `git commit` — and check
+  `git status --short out/ | grep -c '^??'` reads 0 before pushing a release.
+
 - **Write the commit message to a file first, then `git commit -F <file>`.** Never chain a
   heredoc behind `&&` after `git add`: if the add fails — a stale `.git/index.lock` is
   enough — the `&&` short-circuits, the heredoc never runs, and a later append writes a

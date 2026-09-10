@@ -81,6 +81,12 @@ for (const maker of makers) {
     p(`- **明确不持有**：`);
     for (const line of maker.doesNotHold) p(`  - ${line}`);
   }
+  if (maker.inProgress) {
+    const ip = maker.inProgress;
+    p(`- **正在送检（${ip.decidedOn} 决定）**：型号 ${ip.models.join(" 与 ")} → ${ip.targets.join(" + ")}`);
+    p(`  - 决定人：${ip.decidedBy}`);
+    p(`  - ${ip.note}`);
+  }
   if (maker.publishes?.length) {
     p(`- **页面上公开的规格**：`);
     for (const line of maker.publishes) p(`  - ${line}`);

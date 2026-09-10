@@ -84,3 +84,6 @@ tmp/
 
 # Python bytecode from scripts/*.py
 __pycache__/
+
+# Word lock files — created while the client has a .docx open
+~$*

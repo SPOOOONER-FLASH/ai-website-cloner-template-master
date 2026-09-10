@@ -128,6 +128,9 @@
   - UL 305 panic hardware listing
   - UL 10C fire exit hardware listing
   - Any California SFM or Miami-Dade approval
+- **正在送检（2026-09-10 决定）**：型号 307 与 311 → ANSI/BHMA A156.3 Grade 1 + ANSI/UL 305
+  - 决定人：客户（Spooner）转达工厂决定
+  - 两个型号都送，不是二选一。两者都是自有模具（单套模具费 10 万元以上），改设计不需要求人，这是送检的前提条件。307 是阿里询盘第一，311 有 72 与 92 双中心距。这是一个已经做出的决定，可以在网站上写成「正在进行中」；在证书号下来之前，任何页面、任何材料都不得暗示我们已经持有 ANSI 或 UL —— UL Product iQ 与 BHMA认证产品目录都是公开可查的，规格制定者要把证号写进送审文件。
 
 > The three reports are real and are Canton Hyland's own — the EN 1125 report names Canton Hyland as both applicant and manufacturer with HYLAND as the trade mark. The SCANS are withheld because both issuers restrict redistribution and require written approval before their name is used in advertising. Stating standard, issuer, report number, model and date is not redistribution and is already public on /certifications.
 

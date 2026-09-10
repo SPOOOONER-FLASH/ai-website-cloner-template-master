@@ -168,17 +168,22 @@ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://cantonlock.c
 
 ---
 
-## 1a. ⚠ 2026-09-10：重定向规则已经旧了三天，必须重跑一次 nginx reload
+## 1a. ⚠ 2026-09-10：重定向规则已经旧了三天，跑一次第 1 节的脚本就行
 
-**这一条现在最重要，因为它正在损失流量。**
+**这一条现在最重要，因为它正在损失流量。而且只有两行命令。**
+
+> 🔴 **2026-09-10 更正**：我上一版在这里写了 `cd /path/to/site`。
+> `/path/to/site` 是占位符不是真路径，你照着粘贴当然会报
+> `No such file or directory`。**是我写错了，对不起。**
+> 真实路径是 `/www/wwwroot/cantonlock.com`，下面已经写死。
 
 ### 出了什么事
 
-Bing 的报告里有「38 个页面标题重复」「4 个页面缺 h1」。查下来是同一个原因：
+Bing 报「38 个页面标题重复」「4 个页面缺 h1」。查下来是同一个原因：
 **产品改名之后的旧网址，服务器上没有 301，只有网页里的 JS 跳转。**
 
-区别在于：浏览器会跟着 JS 跳转走，人看不出问题；**搜索引擎看到的是一个 200 的空页面**，
-标题是网站通用标题、没有 h1。所以 Bing 报了重复标题，而且旧网址积累的排名传不到新网址。
+浏览器会跟着 JS 跳，人看不出问题；**搜索引擎看到的是一个 200 的空页面**，
+标题是网站通用标题、没有 h1。所以 Bing 报了重复标题，而且旧网址攒下的排名传不到新网址。
 
 实测（2026-09-10）：
 
@@ -190,65 +195,129 @@ Bing 的报告里有「38 个页面标题重复」「4 个页面缺 h1」。查�
 对的那条是类目搬迁，规则在 2026-09-07 生成的那份文件里；错的那条是产品改名，
 **在那之后才发生，服务器上那份文件还是 09-07 的旧版。**
 
-### 现在有多少条没生效
-
 | | 条数 |
 |---|---|
 | 服务器上正在用的（2026-09-07 生成） | 16 |
 | 仓库里最新的 | **48** |
-| 其中新增的 | DS011 门吸改名、逃生器械 16 个型号改名 |
+| 新增的是什么 | DS011 门吸改名 + 逃生器械 16 个型号改名 |
 
-### 你要做的（约 3 分钟）
+### 你要做的：两行命令
 
-**第一步：把新规则拉到服务器上。** SSH 登录服务器后：
-
-```bash
-cd /path/to/site && git pull
-```
-
-看到 `deploy/nginx/taxonomy-redirects.conf` 出现在更新列表里就对了。
-（`/path/to/site` 换成你服务器上的实际路径，就是第 1 节里用的那个。）
-
-**第二步：把它复制到 nginx 的配置目录。** 用第 1 节里已经在用的那个路径 ——
-如果你不确定，**停在这里发我一张 `ls /etc/nginx/conf.d/` 的截图**，不要猜。
-
-**第三步：先检查，再重载。这两步的顺序不能反。**
+在宝塔面板左侧点 **「终端」**，粘贴第一行，回车：
 
 ```bash
-sudo nginx -t
+cd /www/wwwroot/cantonlock.com && git pull
 ```
 
-**成功长这样**（必须两行都有）：
+**成功的样子**：打印出一串更新的文件名，里面应该有
+`deploy/nginx/taxonomy-redirects.conf`。
+如果显示 `Already up to date.`，说明服务器已经拉过了，直接做下一步。
 
-```
-nginx: configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
-```
-
-**看到任何别的输出就停下，发我截图，不要往下做。** 配置有错的时候执行重载，
-整个网站会下线。
-
-检查通过了再：
+然后粘贴第二行，回车：
 
 ```bash
-sudo nginx -s reload
+bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
 ```
 
-**这条命令成功时不打印任何东西。** 没有输出就是成功了 —— 不要因为没反应就再敲一遍。
+**成功时最后一行是：**
 
-**第四步：验证。** 在你自己电脑上：
+```
+All redirects live. Now purge Cloudflare — it caches 301s.
+```
+
+**这个脚本是安全的**：它会先备份现有配置、先跑 `nginx -t` 测试、测试不过就
+**自动还原并且不重载**。所以它跑失败也不会让网站下线 —— 把整屏截图发我就行。
+
+### 做完之后
+
+去 Cloudflare purge（第 2 节）。⚠ **Cloudflare 会缓存 301**，不 purge 的话你在
+浏览器里测还是旧结果。
+
+想自己验证的话，在你自己电脑上：
 
 ```bash
 curl -I https://cantonlock.com/products/hardware-accessories/ds011-door-flush-bolt/
 ```
 
-**成功长这样**：第一行是 `HTTP/2 301`，并且有一行
+**成功的样子**：第一行是 `HTTP/2 301`，并且有一行
 `location: https://cantonlock.com/products/hardware-accessories/ds011-door-stopper/`。
 
-如果第一行还是 `HTTP/2 200`，说明配置没被加载 —— 发我截图，不要重复重载。
+> 做完这一条，Bing 报的「重复标题」和「缺 h1」会在它下次抓取时自己消失。
 
-> 做完这一条之后，Bing 报的「重复标题」和「缺 h1」会在它下次抓取时自己消失，
-> 不需要另外处理。
+---
+
+## 1c-新. 服务器 git pull 被中止：「local changes would be overwritten」
+
+2026-09-10 出现过一次，以后还会再出现，所以写下来。
+
+### 症状
+
+在服务器上跑 `git pull`，结尾是：
+
+```
+error: Your local changes to the following files would be overwritten by merge:
+error: The following untracked working tree files would be overwritten by merge:
+Aborting
+```
+
+**「Aborting」的意思是：什么都没做，服务器还是旧版本。** 网站不会坏，
+但你推的新内容没上线 —— 新网址会 404，新图片不显示。
+
+### 为什么会这样
+
+服务器上不知何时跑过一次构建，生成了一批文件。这些文件后来我在本地也生成了、
+提交了、推上去了。git 现在两边都有同名文件、内容不同，它不敢替你决定要哪个，
+所以停下。
+
+### 处理方式：让服务器强制对齐远端
+
+**这台服务器是部署镜像 —— 上面所有内容都应该来自 git，不该有任何独有的东西。**
+所以正确动作是丢掉服务器上的本地改动，完全跟远端一致。
+
+**第一步：先看看会删掉什么**（这一步不改任何东西，只是列清单）：
+
+```bash
+cd /www/wwwroot/cantonlock.com && git clean -fdn | head -40
+```
+
+列出来的应该全是 `out/`、`out-rayen/`、`content/products/`、
+`docs/design-references/` 里的文件。**如果你看到任何不像自动生成的东西
+——比如你自己上传的照片、你自己写的文件——停下来发我截图。**
+
+**第二步：确认没问题之后，三行命令：**
+
+```bash
+cd /www/wwwroot/cantonlock.com
+git fetch origin && git reset --hard origin/main && git clean -fd
+git log --oneline -1
+```
+
+**成功的样子**：最后一行打印出一个提交号和中文提交信息，
+和你在 GitHub 上看到的最新一条一致。
+
+**第三步：验证网站**
+
+```bash
+curl -s -o /dev/null -w "%{http_code}
+" https://cantonlock.com/
+```
+
+打印 `200` 就是好的。
+
+**第四步：去 Cloudflare purge**（第 2 节）。
+
+### 这三行命令会不会把网站弄坏
+
+不会，但要理解它做什么：
+
+| 命令 | 做什么 |
+|---|---|
+| `git fetch origin` | 只下载，不改任何文件 |
+| `git reset --hard origin/main` | 把**已跟踪**文件恢复成远端的样子 |
+| `git clean -fd` | 删掉**未跟踪**的文件和目录 |
+
+第三条是唯一会删东西的。**在部署镜像上这是对的** —— 网站要的每个文件都在 git 里。
+第一步的 `-fdn`（n = 预演）就是让你在删之前先看一眼。
 
 ---
 
