@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { getRelatedProducts, products, publishedProducts } from "@/data/products";
+import { getRelatedProducts, publishedProducts } from "@/data/products";
 import { siteSettings } from "@/data/navigation";
 import { relatedBlock } from "@/lib/related-products";
 import { productFaqHeading, productFaqItems } from "@/lib/product-faq";
@@ -220,7 +220,14 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const related = relatedBlock({
     product,
     curated: getRelatedProducts(product),
-    catalogue: products,
+    /*
+      PUBLISHED only. relatedBlock falls back to "another model in this series / category"
+      when a record carries no curated relatedModels, and that fallback used to draw from
+      the whole catalogue — which is how /products/glass-door-accessories/410-.../ ended up
+      linking to 100-30mm, a record with no photograph. getRelatedProducts() already
+      filters the curated list; this is the same rule applied to the fallback.
+    */
+    catalogue: publishedProducts,
     categoryName,
   });
   const quoteParams = new URLSearchParams({ product: product.name });

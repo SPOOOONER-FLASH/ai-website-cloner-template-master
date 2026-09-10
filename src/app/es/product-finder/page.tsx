@@ -6,7 +6,7 @@ import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
-import { products } from "@/data/products";
+import { publishedProducts } from "@/data/products";
 import { categories } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
@@ -26,7 +26,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/product-finder",
   locale: "es",
-  title: `Buscador de productos — ${products.length} modelos de herrajes`,
+  title: `Buscador de productos — ${publishedProducts.length} modelos de herrajes`,
   description:
     "Filtre el catálogo de Canton Hyland por categoría, serie, material, acabado, tipo de puerta y certificación para armar una relación de herrajes.",
 });
@@ -90,7 +90,7 @@ export default function BuscadorDeProductosPage() {
             options from the data rather than from a hard-coded list.
           */}
           <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-            Mostrando {products.length} productos publicados. Los filtros dimensionales
+            Mostrando {publishedProducts.length} productos publicados. Los filtros dimensionales
             (distancia al eje, entre-ejes, espesor de puerta) llegan con el catálogo
             técnico completo.
           </p>
@@ -99,7 +99,7 @@ export default function BuscadorDeProductosPage() {
 
       <div className="layout mt-48">
         <ProductFinderClient
-          products={products.map(toFinderProduct)}
+          products={publishedProducts.map(toFinderProduct)}
           categoryNames={categoryNameMap()}
           locale="es"
         />
@@ -108,8 +108,8 @@ export default function BuscadorDeProductosPage() {
       <div className="layout mt-48">
         <div className="col-content grid w-full grid-cols gap-x">
           <ProductIndexList
-            products={products}
-            label={`Los ${products.length} modelos`}
+            products={publishedProducts}
+            label={`Los ${publishedProducts.length} modelos`}
             locale="es"
           />
         </div>

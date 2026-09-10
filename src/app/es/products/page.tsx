@@ -4,7 +4,7 @@ import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { ProductsEditorialOverview } from "@/components/site/ProductsEditorialOverview";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { getTopLevelCategories } from "@/data/categories";
-import { getProductsByCategory, products } from "@/data/products";
+import { getProductsByCategory, publishedProducts } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 
@@ -48,7 +48,7 @@ export default function ProductosPage() {
       <main className="isolate mt-32 flex-grow justify-self-start lg:mt-64">
         <ProductsEditorialOverview
           locale="es"
-          totalProducts={products.length}
+          totalProducts={publishedProducts.length}
           categoryCounts={categoryCounts}
         />
 
@@ -96,7 +96,7 @@ export default function ProductosPage() {
             <div className="col-span-full border-t border-line pt-48 xl:col-span-13">
               <p className="text-c1 text-ink-secondary">Encuentre el modelo</p>
               <h2 id="consulta" className="mt-8 text-h1 text-ink">
-                {products.length} modelos. Dígannos qué dice el plano.
+                {publishedProducts.length} modelos. Dígannos qué dice el plano.
               </h2>
               <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
                 Si tiene una planilla de herrajes, envíela: le respondemos qué juegos
@@ -134,8 +134,8 @@ export default function ProductosPage() {
         <section className="layout mt-96">
           <div className="col-content grid w-full grid-cols gap-x">
             <ProductIndexList
-              products={products}
-              label={`Los ${products.length} modelos`}
+              products={publishedProducts}
+              label={`Los ${publishedProducts.length} modelos`}
               locale="es"
             />
           </div>

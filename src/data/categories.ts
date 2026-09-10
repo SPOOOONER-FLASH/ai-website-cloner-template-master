@@ -2,7 +2,7 @@ import categoriesFile from "../../content/categories.json";
 import { applyImageAltOverride } from "./image-alt-overrides";
 import { brandProductImageRef } from "./product-image-branding";
 // Safe: products.ts does not import this module, so there is no cycle.
-import { products } from "./products";
+import { publishedProducts } from "./products";
 import type { Category } from "./types";
 
 /**
@@ -65,7 +65,14 @@ export interface MenuCategory {
  */
 export function getMenuCategories(): MenuCategory[] {
   return categories.map((category) => {
-    const inCategory = products.filter((p) => p.categoryPath[0] === category.slug);
+    /*
+      PUBLISHED only, so the number beside a menu label equals the number of cards the
+      category page actually renders. Counting the withheld records made the menu promise
+      42 panic devices and the page deliver 38, and it could keep a sub-category in the
+      drawer whose every member is withheld — which lands the reader on exactly the
+      "no products match this filter" dead end the note below says is a defect.
+    */
+    const inCategory = publishedProducts.filter((p) => p.categoryPath[0] === category.slug);
 
     /*
       A sub-category with no products is dropped, not shown as an empty branch. Two are

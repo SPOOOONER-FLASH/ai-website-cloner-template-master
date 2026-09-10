@@ -12,7 +12,18 @@
   "finishes": [],
   "doorTypes": [],
   "certifications": [],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/s578-tubular-lock-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland S578 Tubular Lock, view 2"
+    },
+    {
+      "src": "/images/products/s578-tubular-lock-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland S578 Tubular Lock, view 3"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "S578 Tubular Lock — Stainless Steel | Canton Hyland",
@@ -25,7 +36,8 @@
   "seoTitleEs": "S578 Cerraduras de pomo — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland S578 cerraduras de pomo en acero inoxidable. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "heroImage": {
+    "src": "/images/products/s578-tubular-lock.webp",
     "ratio": "1 / 1",
-    "label": "Hyland S578 tubular lock"
+    "label": "Hyland S578 Tubular Lock"
   }
 }

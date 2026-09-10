@@ -101,5 +101,18 @@
   ],
   "seoTitleEs": "NO01 Accesorios de herrajes | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland NO01 accesorios de herrajes. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/no01-gate-house-no.mp4",
+      "poster": {
+        "src": "/images/products/no01-gate-house-no-video.webp",
+        "ratio": "16 / 9",
+        "label": "NO01 Gate House No, demonstration still"
+      },
+      "label": "NO01 Gate House No — product demonstration",
+      "durationSeconds": 16,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

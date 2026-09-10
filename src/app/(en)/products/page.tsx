@@ -5,7 +5,7 @@ import { Button } from "@/components/site/Button";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { ProductsEditorialOverview } from "@/components/site/ProductsEditorialOverview";
 import { getTopLevelCategories } from "@/data/categories";
-import { getProductsByCategory, products } from "@/data/products";
+import { getProductsByCategory, publishedProducts } from "@/data/products";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
@@ -24,7 +24,7 @@ export const metadata: Metadata = pageMetadata({
  */
 function finderEntries() {
   const byMaterial = (value: string) =>
-    products.filter((p) => p.material?.toLowerCase().includes(value)).length;
+    publishedProducts.filter((p) => p.material?.toLowerCase().includes(value)).length;
 
   return [
     {
@@ -35,7 +35,7 @@ function finderEntries() {
     {
       label: "Fire doors",
       href: "/product-finder/?doorType=" + encodeURIComponent("Fire Door"),
-      count: products.filter((p) => p.doorTypes?.some((d) => /fire/i.test(d))).length,
+      count: publishedProducts.filter((p) => p.doorTypes?.some((d) => /fire/i.test(d))).length,
     },
     {
       label: "Panic exit devices",
@@ -62,7 +62,7 @@ export default function ProductsPage() {
     <main className="isolate mt-32 flex-grow justify-self-start lg:mt-64">
       <ProductsEditorialOverview
         locale="en"
-        totalProducts={products.length}
+        totalProducts={publishedProducts.length}
         categoryCounts={categoryCounts}
       />
 
@@ -129,7 +129,7 @@ export default function ProductsPage() {
           <div className="col-span-full border-t border-line pt-48 xl:col-span-13">
             <p className="text-c1 text-ink-secondary">Find the right model</p>
             <h2 id="finder-gateway-heading" className="mt-8 text-h1 text-ink">
-              {products.length} models. Narrow them by what is on your schedule.
+              {publishedProducts.length} models. Narrow them by what is on your schedule.
             </h2>
             <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
               The Product Finder filters the full catalogue by category, type, series,
@@ -197,7 +197,7 @@ export default function ProductsPage() {
             </p>
           </div>
 
-          <ProductIndexList products={products} label={`All ${products.length} models`} />
+          <ProductIndexList products={publishedProducts} label={`All ${publishedProducts.length} models`} />
         </div>
       </section>
 

@@ -148,5 +148,18 @@
     "model": "DV08 SN",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "videos": [
+    {
+      "src": "/videos/products/dv08-sn-door-viewer.mp4",
+      "poster": {
+        "src": "/images/products/dv08-sn-door-viewer-video.webp",
+        "ratio": "16 / 9",
+        "label": "DV08 SN Door viewer, demonstration still"
+      },
+      "label": "DV08 SN Door viewer — product demonstration",
+      "durationSeconds": 14,
+      "uploadDate": "2026-09-09"
+    }
+  ]
 }

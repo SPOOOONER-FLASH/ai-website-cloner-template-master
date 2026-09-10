@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Codex recovery | docs/design-references/2026-09-09-professional-hardware-sets/, scripts/build-hardware-image-board.mjs, docs/research/2026-09-09-hardware-image-standards.md | Source-led set corrections, top20 evidence matrix and review board; no production assets or out/ | 2026-09-09 |
 | Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
 | Codex | scripts/blender/editorial-stills.py, scripts/build-editorial-stills.mjs, docs/design-references/2026-09-07-home-stills | Three real-photo architectural still-life previews; no carousel change | 2026-09-07 |
@@ -22,6 +23,11 @@
 > 那是他们的记录，但下一个会话不必等它们。他们未提交的 HeroCarousel.tsx 与
 > static-export-performance.test.ts 经哈希核对只有行尾符差异，内容与 HEAD 一致，
 > 所以本次构建没有烤进任何未提交的源码改动。
+
+Claude 2026-09-09: 无图型号从四个浏览面下架（product-finder / products A–Z / 抽屉计数 /
+相关推荐回退），1,352 页构建已提交推送；接力棒交还，无人持棒。构建时 Codex 未提交的
+HeroCarousel.tsx 与 static-export-performance.test.ts 经 `git diff` 核对为零内容差异，
+未烤进任何未提交源码。
 
 Claude 2026-09-07: 已接棒重跑并提交 1,095 页发布构建（含产能链段与三篇文章），接力棒交还，无人持棒。
 

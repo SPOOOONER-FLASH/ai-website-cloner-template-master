@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { hasSpanishMirror } from "@/lib/spanish-mirror";
 import { LocalePicker } from "./LocalePicker";
 import type { MenuCategory } from "@/data/categories";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";

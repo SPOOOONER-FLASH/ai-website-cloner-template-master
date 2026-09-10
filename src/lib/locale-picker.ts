@@ -127,15 +127,21 @@ export function contactChoices(locale: Locale = "en"): ContactChoice[] {
 }
 
 /**
- * The two-part label on the trigger, e.g. "US | EN".
+ * The two-part label on the trigger: OTHER | CURRENT.
  *
- * Region is a guess and is presented as one — it is derived from the language being read,
- * not from an IP lookup, because a static export has no request-time logic and because
- * silently relocating a reader based on their network is the behaviour that makes these
- * menus annoying. The panel exists so the reader can say where they are.
+ * It used to read "INT | EN" — a region guess beside the current language. The client
+ * struck the region on 2026-09-09, and it deserved striking twice over. "INT" is not a
+ * place; it is jargon standing in for "we did not detect you", and detecting a reader is
+ * something a static export cannot do anyway. Worse, it spent the header's only language
+ * affordance on a word that tells a Spanish-speaking buyer nothing.
+ *
+ * So both slots now carry languages, and the FIRST one is the language you are NOT
+ * reading. That ordering is the whole point: a buyer scanning the header sees "ES" and
+ * learns in one glance that a Spanish site exists, which is the only thing this control
+ * can usefully advertise. The current language sits second, as state rather than offer.
  */
 export function triggerLabel(locale: Locale): string {
-  return locale === "es" ? "ES | ES" : "INT | EN";
+  return locale === "es" ? "EN | ES" : "ES | EN";
 }
 
 export const localePickerCopy = {

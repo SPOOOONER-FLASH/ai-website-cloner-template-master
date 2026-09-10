@@ -6,7 +6,7 @@ import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
-import { products } from "@/data/products";
+import { publishedProducts } from "@/data/products";
 import { categories } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   // The count comes from the catalogue rather than being typed in, so the title cannot
   // go stale as products are added. This page is what ranks for attribute searches
   // ("stainless steel panic bar 1000mm") rather than for a model number.
-  title: `Product Finder — ${products.length} Door Hardware Models`,
+  title: `Product Finder — ${publishedProducts.length} Door Hardware Models`,
   description:
     "Filter the Canton Hyland catalogue by category, series, material, finish, door type and certification to build a hardware schedule.",
 });
@@ -81,19 +81,19 @@ export default function ProductFinderPage() {
             options from the data rather than from a hard-coded list.
           */}
           <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-            Showing {products.length} published products. Dimensional filters (backset,
+            Showing {publishedProducts.length} published products. Dimensional filters (backset,
             centre distance, door thickness) arrive with the full technical catalogue.
           </p>
         </div>
       </div>
 
       <div className="layout mt-48">
-        <ProductFinderClient products={products.map(toFinderProduct)} categoryNames={categoryNameMap()} />
+        <ProductFinderClient products={publishedProducts.map(toFinderProduct)} categoryNames={categoryNameMap()} />
       </div>
 
       <div className="layout mt-48">
         <div className="col-content grid w-full grid-cols gap-x">
-          <ProductIndexList products={products} label={`All ${products.length} models`} />
+          <ProductIndexList products={publishedProducts} label={`All ${publishedProducts.length} models`} />
         </div>
       </div>
     </main>

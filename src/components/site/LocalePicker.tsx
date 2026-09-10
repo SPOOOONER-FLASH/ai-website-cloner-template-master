@@ -6,7 +6,7 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 import type { Locale } from "@/data/site";
 import { EmailLink } from "./EmailLink";
 import { GlobeIcon } from "./icons";
-import { contactChoices, languageChoices, localePickerCopy } from "@/lib/locale-picker";
+import { contactChoices, languageChoices, localePickerCopy, triggerLabel } from "@/lib/locale-picker";
 
 /**
  * The location-and-language panel.
@@ -83,7 +83,6 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
 
   const languages = languageChoices(pathname, locale);
   const contacts = contactChoices(locale);
-  const currentLanguage = languages.find((l) => l.current) ?? languages[0];
 
   return (
     <>
@@ -103,9 +102,19 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
           measurements rather than bringing its own.
         */}
         <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
+        {/*
+          One source for this label: triggerLabel() in lib, not a ternary inlined here.
+          The previous version computed the region half in the component and the language
+          half from `currentLanguage`, which is how the two halves drifted into saying
+          different kinds of thing. It reads OTHER | CURRENT — see triggerLabel's note.
+        */}
         <span className="text-c2 leading-none">
-          {locale === "es" ? "ES" : "INT"} <span className="text-line">|</span>{" "}
-          {currentLanguage.code.toUpperCase()}
+          {triggerLabel(locale).split(" | ").map((part, index) => (
+            <span key={part}>
+              {index ? <span className="text-line"> | </span> : null}
+              {index ? <span className="text-ink-secondary">{part}</span> : part}
+            </span>
+          ))}
         </span>
         </button>
 

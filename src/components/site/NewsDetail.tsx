@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
-import { getProductByModel } from "@/data/products";
+import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
@@ -70,9 +70,17 @@ export function NewsDetail({
   const body = (es && article.bodyEs?.length === article.body.length && article.bodyEs) || article.body;
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
+  /*
+    Articles name models in their relatedModels list, and some of those models have no
+    photograph yet — 301 and 302 are cited by three of the exit-device articles. Linking
+    a reader from an article into a withheld page is the same defect as listing it in a
+    category, so the same rule applies: resolve the model, then drop it if it is not
+    published. The article's own prose still names the model; only the link goes.
+  */
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
-    .filter((product) => product !== undefined);
+    .filter((product) => product !== undefined)
+    .filter(isPublished);
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
