@@ -1,6 +1,7 @@
 import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
+import { bhmaFinishesFor } from "./bhma-finish.ts";
 
 /**
  * The questions a product page can answer from facts it already states.
@@ -208,6 +209,55 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
       question: es ? entry.es(subject) : entry.en(subject),
       answer: es ? entry.esA(subject, value) : entry.enA(subject, value),
     });
+  }
+
+  /*
+    The finish, in the numbers a North American specifier writes.
+
+    Added 2026-09-10, after a buyer arrived carrying `rxfse25r510l32d3` — a competitor
+    part number whose `32D` fragment is a US finish code. That buyer is specifying to
+    BHMA and our catalogue answers in house codes, so the page could not be read by the
+    person most likely to place a container order. The client's principal named the fix
+    the same day: 「把资料做好。做清晰。让客人看到专业性」.
+
+    It is placed before the certification question because it is the more common of the
+    two by a wide margin, and after the spec questions because it is derived from two of
+    them rather than being a row of its own.
+
+    Only what bhmaFinish() will vouch for appears here — see that module's header for why
+    a bare finish code cannot be mapped without the base metal. 77 of 517 published
+    records currently qualify; the rest get no sentence rather than a plausible number,
+    and scripts/audit-bhma-finishes.mjs prints the reason for each so the gap is a work
+    list instead of a mystery.
+  */
+  if (items.length < MAX_ITEMS) {
+    const bhma = bhmaFinishesFor(product);
+    /*
+      The answer NAMES the base metal, quoting the record's own Material row verbatim, and
+      the question is skipped when there is no such row.
+
+      That is not decoration to satisfy product-faq.test.ts's "every answer quotes a stated
+      value" invariant — the invariant is right, and the first draft of this block failed
+      it for a good reason. A bare "630 (US32D)" asserts a conclusion; the number depends
+      entirely on the base metal, and 626 vs 652 is the same appearance over brass vs steel.
+      Naming the metal in the same sentence shows the reader the derivation, which is what
+      lets a specifier check us rather than trust us — and a specifier who can check is the
+      one who writes the submittal.
+    */
+    const statedMaterial = lookupLabels(["Material"])
+      .map((l) => byLabel.get(l))
+      .find(Boolean);
+    if (bhma.length && statedMaterial) {
+      const listed = bhma.map((f) => `${f.bhma} (${f.us}, ${f.name})`).join(", ");
+      items.push({
+        question: es
+          ? `¿Qué código de acabado ANSI/BHMA corresponde al ${subject}?`
+          : `What is the ANSI/BHMA finish code for the ${subject}?`,
+        answer: es
+          ? `Sobre la base de ${statedMaterial} del ${subject}, sus acabados corresponden a ${listed} según ANSI/BHMA A156.18.`
+          : `Over the ${statedMaterial} base of the ${subject}, its finishes correspond to ${listed} under ANSI/BHMA A156.18.`,
+      });
+    }
   }
 
   /*

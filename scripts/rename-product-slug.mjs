@@ -97,7 +97,25 @@ const retarget = (value) => {
   return value;
 };
 
-const updated = retarget({ ...record, name: newName, slug: newSlug });
+/*
+  Retarget FIRST, then set name and slug.
+
+  The previous order — `retarget({ ...record, name, slug: newSlug })` — fed the new slug
+  through the very replacement that rewrites the old one, and a new slug that CONTAINS the
+  old one as a prefix got rewritten too:
+
+    old  001-panic-exit-device
+    new  001-panic-exit-device-trim
+    out  001-panic-exit-device-trim-trim     ← written into record.slug
+
+  The filename was correct, so the record and its file disagreed and every renamed page
+  404ed. It stayed hidden because the first use of this script (DS011 → Door Stopper on
+  2026-09-08) replaced the descriptive half rather than extending it, so the old slug was
+  not a substring of the new one. Renaming 15 panic-device records on 2026-09-10 — where
+  every new name appends "Trim" — hit it 13 times at once, and `npm run content`'s
+  slug/filename check is what caught it.
+*/
+const updated = { ...retarget(record), name: newName, slug: newSlug };
 
 console.log(`${model}: ${record.name} → ${newName}`);
 console.log(`  slug   ${oldSlug} → ${newSlug}`);

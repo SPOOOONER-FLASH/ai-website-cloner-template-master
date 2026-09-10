@@ -68,6 +68,96 @@
       "to": "ds011-door-stopper",
       "category": "hardware-accessories",
       "why": "工厂 2026-09-08 确认 DS011 是门吸不是插销。Bing 关键词表里的真实买家搜索「door stopper ds013 vs ds011」也是这么理解的。"
+    },
+    {
+      "from": "001-panic-exit-device",
+      "to": "001-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "015-panic-exit-device",
+      "to": "015-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "023-et-panic-exit-device",
+      "to": "023-et-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "026-panic-exit-device",
+      "to": "026-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "027-panic-exit-device",
+      "to": "027-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "028-panic-exit-device",
+      "to": "028-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "030-panic-exit-device",
+      "to": "030-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "033-panic-exit-device",
+      "to": "033-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "035-panic-exit-device",
+      "to": "035-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "037-panic-exit-device",
+      "to": "037-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "039-panic-exit-device",
+      "to": "039-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "9080e-panic-exit-device",
+      "to": "9080e-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "x2-panic-exit-device",
+      "to": "x2-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+    },
+    {
+      "from": "72-panic-exit-device",
+      "to": "072-panic-exit-device-lock-case",
+      "category": "panic-exit-devices",
+      "why": "Type 行写着 Profile lock case；307 的规格行点名的就是它"
+    },
+    {
+      "from": "023-ps-panic-exit-device",
+      "to": "023-ps-panic-exit-device-trim",
+      "category": "panic-exit-devices",
+      "why": "Renamed Panic Exit Device → Panic Exit Device Trim; the record's own Type row reads outside lever trim."
     }
   ]
 }
