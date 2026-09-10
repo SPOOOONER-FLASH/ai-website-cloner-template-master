@@ -12,7 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Codex recovery | docs/design-references/2026-09-09-professional-hardware-sets/, scripts/build-hardware-image-board.mjs, docs/research/2026-09-09-hardware-image-standards.md | Source-led set corrections, top20 evidence matrix and review board; no production assets or out/ | 2026-09-09 |
+| Codex recovery | docs/design-references/2026-09-09-professional-hardware-sets/, scripts/build-hardware-image-board.mjs, scripts/blender/hardware-photo-stage.py, docs/research/2026-09-09-hardware-image-standards.md | Source-led set corrections, top20 evidence matrix and review board; no production assets or out/ | 2026-09-09 |
 | Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
 | Codex | scripts/blender/editorial-stills.py, scripts/build-editorial-stills.mjs, docs/design-references/2026-09-07-home-stills | Three real-photo architectural still-life previews; no carousel change | 2026-09-07 |
@@ -23,6 +23,16 @@
 > 那是他们的记录，但下一个会话不必等它们。他们未提交的 HeroCarousel.tsx 与
 > static-export-performance.test.ts 经哈希核对只有行尾符差异，内容与 HEAD 一致，
 > 所以本次构建没有烤进任何未提交的源码改动。
+
+Claude 2026-09-10: 逃生器械 15 条改名 + BHMA 表面码 + 竞品认证对照，**源码已提交推送**
+（7dad3d8556）。**没有构建**：out/ 当时有 10,004 个脏文件且 27 个 node 进程在跑，
+接力棒在 Codex 手上，由他们的构建带上这批源码。
+
+⚠ 给 Codex：`npm test` 目前 230/233，三条失败都在你这边 ——
+flip-up-grab-bars 新类目缺封面图与配置器定义（2 条），
+src/components/rayen/Chrome.tsx 未提交的 hover:underline（1 条，改成
+short-marker short-marker-compact 即可）。content/i18n/zh-terms.json 里你新产品带出来的
+18 个规格标签中文我一并补了（content/** 是我的区域且文件当时干净）。
 
 Claude 2026-09-09: 无图型号从四个浏览面下架（product-finder / products A–Z / 抽屉计数 /
 相关推荐回退），1,352 页构建已提交推送；接力棒交还，无人持棒。构建时 Codex 未提交的
