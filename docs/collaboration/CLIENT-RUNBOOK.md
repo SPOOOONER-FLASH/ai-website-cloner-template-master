@@ -280,17 +280,39 @@ Aborting
 cd /www/wwwroot/cantonlock.com && git clean -fdn | head -40
 ```
 
-列出来的应该全是 `out/`、`out-rayen/`、`content/products/`、
-`docs/design-references/` 里的文件。**如果你看到任何不像自动生成的东西
-——比如你自己上传的照片、你自己写的文件——停下来发我截图。**
+**2026-09-10 实测的结果是只有三行**，而且三个都是宝塔生成的配置文件：
 
-**第二步：确认没问题之后，三行命令：**
+```
+Would remove out-rayen/.user.ini
+Would remove out/.htaccess
+Would remove out/.user.ini
+```
+
+**看到的和这个差不多就继续。** 如果列出了几十上百个 `out/` 或
+`content/products/` 里的文件，也是正常的（那是旧构建残留）。
+**但只要看到任何不像自动生成的东西 —— 你自己上传的照片、你自己写的文件 ——
+就停下来发我截图。**
+
+**第二步：确认没问题之后，四行命令：**
 
 ```bash
 cd /www/wwwroot/cantonlock.com
-git fetch origin && git reset --hard origin/main && git clean -fd
+git fetch origin
+git reset --hard origin/main
+git clean -fd -e .user.ini -e .htaccess
 git log --oneline -1
 ```
+
+> ⚠ **`-e .user.ini -e .htaccess` 这两个排除项不能省。**
+>
+> 2026-09-10 实测，服务器上唯一的未跟踪文件就是这三个：
+> `out/.user.ini`、`out-rayen/.user.ini`、`out/.htaccess`。
+> **它们不是网站内容，是宝塔面板自己给站点目录生成的** ——
+> `.user.ini` 放 PHP 的 open_basedir 限制，`.htaccess` 是伪静态规则。
+>
+> 宝塔通常还给 `.user.ini` 加了不可修改属性（`chattr +i`），所以
+> `git clean` 删它会**失败并中断整条命令**，后面的验证就不会执行。
+> 加了排除项就绕开这个坑，而且这两个文件留着对静态站没有任何副作用。
 
 **成功的样子**：最后一行打印出一个提交号和中文提交信息，
 和你在 GitHub 上看到的最新一条一致。
