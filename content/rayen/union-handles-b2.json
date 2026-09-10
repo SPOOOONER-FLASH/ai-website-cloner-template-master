@@ -8,7 +8,7 @@
     "客户 2026-09-09 确认：「我们只从 union 只拿到了图」—— 不是代理、不是代工，就是拿到图。",
     "所以不写「日本代理」，也不留原厂标；客户要求把画面里的 UNION 换成雷茵自己的牌子。",
     "",
-    "== 新类目：上抬扶手 ==",
+    "== 类目：关怀扶手（含上抬扶手 / 固定扶手两个子类）==",
     "客户点名要的。指的是装在坐便器旁边、不用时能向上翻起贴墙的扶手（日文叫「はね上げ手すり」）。",
     "和固定扶手是两种东西：固定扶手一直占着那块墙，上抬扶手抬起来就让开轮椅的转移路径，",
     "无障碍卫生间的图纸上这两样是分开标注的。所以它值一个自己的类目，不是浴室配件里的一个筛选项。",
@@ -21,7 +21,16 @@
     "",
     "== 没上架的型号 ==",
     "heldBack 里列了原因。主要是三类：只有场景照没有产品图、只有一张合影、",
-    "以及只有图纸没有实物图（图纸能当规格用，但当主图会让整个类目看起来像图册不像目录）。"
+    "以及只有图纸没有实物图（图纸能当规格用，但当主图会让整个类目看起来像图册不像目录）。",
+    "",
+    "== 2026-09-10 类目改名 ==",
+    "原来叫「上抬扶手」。甲方看了线上之后指出两件事：",
+    "① HB2902 和 OASHB2118 不是上抬扶手，「只能说扶手，或者辅助扶手」；",
+    "② 类目名应该用「统称关怀扶手」，理由是「别人搜索的到」——",
+    "这是搜索词的判断，不是命名偏好：买无障碍五金的人搜的是「关怀扶手」，",
+    "「上抬扶手」是这个家族里的一种。",
+    "所以类目改成关怀扶手，下面分「上抬扶手」和「固定扶手」两个子类，",
+    "那两个型号的品名也改成「辅助扶手」。"
   ],
   "sourceRoot": "C:/Users/johns/Desktop/雷茵-第二批-按型号",
   "sites": [
@@ -43,6 +52,7 @@
       "name": "Flip-Up Grab Bar",
       "nameZh": "上抬扶手",
       "categoryPath": [
+        "care-grab-bars",
         "flip-up-grab-bars"
       ],
       "material": "Stainless Steel",
@@ -80,6 +90,7 @@
       "name": "Flip-Up Grab Bar",
       "nameZh": "上抬扶手",
       "categoryPath": [
+        "care-grab-bars",
         "flip-up-grab-bars"
       ],
       "material": "Stainless Steel",
@@ -91,11 +102,12 @@
     },
     {
       "model": "OASHB2118",
-      "slug": "oashb2118-flip-up-grab-bar",
-      "name": "Flip-Up Grab Bar",
-      "nameZh": "上抬扶手",
+      "slug": "oashb2118-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "辅助扶手",
       "categoryPath": [
-        "flip-up-grab-bars"
+        "care-grab-bars",
+        "fixed-grab-bars"
       ],
       "material": "Stainless Steel",
       "finishes": [
@@ -110,6 +122,7 @@
       "name": "Flip-Up Grab Bar",
       "nameZh": "上抬扶手",
       "categoryPath": [
+        "care-grab-bars",
         "flip-up-grab-bars"
       ],
       "material": "Stainless Steel",
@@ -142,6 +155,7 @@
       "name": "Flip-Up Grab Bar",
       "nameZh": "上抬扶手",
       "categoryPath": [
+        "care-grab-bars",
         "flip-up-grab-bars"
       ],
       "material": "Stainless Steel",
@@ -174,11 +188,12 @@
     },
     {
       "model": "HB2902",
-      "slug": "hb2902-flip-up-grab-bar",
-      "name": "Flip-Up Grab Bar",
-      "nameZh": "上抬扶手",
+      "slug": "hb2902-grab-bar",
+      "name": "Grab Bar",
+      "nameZh": "辅助扶手",
       "categoryPath": [
-        "flip-up-grab-bars"
+        "care-grab-bars",
+        "fixed-grab-bars"
       ],
       "material": "Stainless Steel",
       "finishes": [

@@ -66,12 +66,20 @@ test("models sharing a letter prefix in one category share a product name", () =
     Groups of one prove nothing and are skipped. So are prefixes shared by genuinely
     different things: `hardware-accessories` uses bare numbers for several unrelated items,
     and a numeric model has no prefix to group on anyway.
+
+    GROUPED BY THE FULL CATEGORY PATH, not just the top level. 2026-09-10: 关怀扶手 gained
+    two children — 上抬扶手 (folds up to the wall) and 固定扶手 (bolted and staying there) —
+    and HB2600/HB2900 sit in the first while HB2902 sits in the second. Grouping on the top
+    level alone called that a disagreement and would have pushed HB2902 back to the wrong
+    name, which is the exact error this test exists to catch, inverted. Two products in one
+    family with the same prefix and different mechanisms SHOULD have different names; two in
+    the same leaf should not.
   */
   const groups = new Map<string, Record[]>();
   for (const product of products) {
     const prefix = prefixOf(product.model);
     if (!prefix) continue;
-    const key = `${product.categoryPath[0]}::${prefix}`;
+    const key = `${product.categoryPath.join("/")}::${prefix}`;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(product);
   }

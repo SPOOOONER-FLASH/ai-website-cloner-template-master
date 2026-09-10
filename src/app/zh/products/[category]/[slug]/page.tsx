@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/rayen/Chrome";
-import { Button, NoPhoto, Photo, ProductCard, SpecTable, Shell } from "@/components/rayen/primitives";
+import { Button, NoPhoto, ProductCard, SpecTable, Shell } from "@/components/rayen/primitives";
+import { Gallery } from "@/components/rayen/Gallery";
 import {
   absoluteUrl,
   rayen,
@@ -73,7 +74,21 @@ export default async function RayenProductPage({ params }: Props) {
   const family = getStyleFamily(product);
   const familyLevers = family.filter(isLeverHandle);
   const familyHandles = family.filter((item) => !isLeverHandle(item));
-  const images = [product.heroImage, ...product.gallery].filter(
+  /*
+    主图 + 全部画廊图。顺序上做一件事：把尺寸图提到主图之后的第一位。
+
+    甲方 2026-09-10：「像这样的，顺序排下，第一张放尺寸参数图」。
+    主图没有换成线图 —— 类目页的卡片取的是主图，一格一格全是线图的目录看着像图册，
+    不像在售产品。所以线图排在缩略图第一位：买家点开型号页，第一眼是产品，
+    第一个想点的是尺寸。
+
+    判定靠文件名里供应商的拍摄类型码（D900SZ / D921SZ / ZUMEN 都是图纸），
+    和 scripts/ingest-union-handles.mjs 里的 shotRank 用的是同一套约定。
+  */
+  const isDrawing = (src: string) => /SZ[a-zA-Z]*W|ZUMEN/i.test(src);
+  const rest = product.gallery.filter((image) => Boolean(image?.src));
+  const ordered = [...rest].sort((a, b) => Number(isDrawing(b.src)) - Number(isDrawing(a.src)));
+  const images = [product.heroImage, ...ordered].filter(
     (image): image is NonNullable<typeof image> => Boolean(image?.src),
   );
 
@@ -121,18 +136,11 @@ export default async function RayenProductPage({ params }: Props) {
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
-              {images[0] ? (
-                <Photo src={images[0].src} alt={images[0].label} aspect="1 / 1" priority />
+              {images.length ? (
+                <Gallery images={images} model={product.model} />
               ) : (
                 <NoPhoto model={product.model} />
               )}
-              {images.length > 1 ? (
-                <div className="mt-3 grid grid-cols-4 gap-3">
-                  {images.slice(1, 5).map((image) => (
-                    <Photo key={image.src} src={image.src} alt={image.label} aspect="1 / 1" />
-                  ))}
-                </div>
-              ) : null}
             </div>
 
             <div>

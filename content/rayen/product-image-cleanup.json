@@ -10,9 +10,9 @@
   ],
   "generated": "2026-09-10",
   "counts": {
-    "refused": 391,
+    "refused": 393,
     "cleanable": 1217,
-    "already-clean": 1491
+    "already-clean": 1498
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -319,6 +319,8 @@
     "h101-night-latch-and-rim-lock-7.webp",
     "hb2902-flip-up-grab-bar-3.webp",
     "hb2902-flip-up-grab-bar-5.webp",
+    "hb2902-grab-bar-3.webp",
+    "hb2902-grab-bar-5.webp",
     "hy-0ss-lock-case-4.webp",
     "hy-0ss-lock-case-5.webp",
     "hy006dk-lock-case-10.webp",
@@ -9752,6 +9754,36 @@
       "source": "d47e945b31e0467ef8e1a4b33c0ffa6c7f8f432559cadbffcbf0788594a33d66",
       "status": "already-clean"
     },
+    "hb2902-grab-bar-2.webp": {
+      "source": "f4aa39e14f65b7e616c9285bcc323ab5ad9f5a3ea680156db5ab8cbe62c3c1e7",
+      "status": "already-clean"
+    },
+    "hb2902-grab-bar-3.webp": {
+      "source": "5c81ed0ee5f1fe23da8f8fd12e3137063b4d261b18ff4a26e70eefedee942c8a",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "hb2902-grab-bar-4.webp": {
+      "source": "cc72493ce2d93963d5a1ca2471b9f881b39089a4c0e8007bf6dfab6d301d5ec8",
+      "status": "already-clean"
+    },
+    "hb2902-grab-bar-5.webp": {
+      "source": "fb8435448f6d71195daacf7b06b577e132347c6c00206b27d1bc5f8ad51429c7",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "hb2902-grab-bar-6.webp": {
+      "source": "a357ade6399ce9b9c3d9f9854481911795e9f26e0677a4698e44449070ce1d77",
+      "status": "already-clean"
+    },
+    "hb2902-grab-bar-7.webp": {
+      "source": "5854370e32b01ab99740920146a2dce56e54e1d68897122e03e6fc97ce10f106",
+      "status": "already-clean"
+    },
+    "hb2902-grab-bar.webp": {
+      "source": "d47e945b31e0467ef8e1a4b33c0ffa6c7f8f432559cadbffcbf0788594a33d66",
+      "status": "already-clean"
+    },
     "hb2918-grab-bar-10.webp": {
       "source": "9e5c31a3b83cf4a4af9540fce97bec0a41717b3820ee610b74dcbb08355774f8",
       "status": "already-clean"
@@ -11865,6 +11897,14 @@
       "status": "already-clean"
     },
     "oashb2118-flip-up-grab-bar.webp": {
+      "source": "df1e13f597221054b06e04547a32c34e8454490e98e66bd1d1358e8537c1a4a8",
+      "status": "already-clean"
+    },
+    "oashb2118-grab-bar-2.webp": {
+      "source": "a9e3d5434bb2cbf20f9208f0de16bf7aa1dc9d44c0722a0dce2fee5b6f42df90",
+      "status": "already-clean"
+    },
+    "oashb2118-grab-bar.webp": {
       "source": "df1e13f597221054b06e04547a32c34e8454490e98e66bd1d1358e8537c1a4a8",
       "status": "already-clean"
     },

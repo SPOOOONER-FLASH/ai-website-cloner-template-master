@@ -141,7 +141,10 @@ export const categories: RayenCategory[] = rawCategories.map((category) => ({
 }));
 
 export function getCategory(slug: string): RayenCategory | undefined {
-  return categories.find((category) => category.slug === slug);
+  // 走 stockedCategories，这样类目页的标题和面包屑用的是同一个显示名，
+  // 不会出现首页卡片写「玻璃门拉手」、点进去标题写「玻璃门夹具」。
+  return stockedCategories.find((category) => category.slug === slug)
+    ?? categories.find((category) => category.slug === slug);
 }
 
 /** Products whose category path starts with this top-level category, in model order. */
@@ -159,10 +162,32 @@ export function countInCategory(slug: string): number {
   return products.filter((product) => product.categoryPath[0] === slug).length;
 }
 
-/** Categories that actually have products. An empty category page is a dead end. */
-export const stockedCategories = categories.filter(
-  (category) => countInCategory(category.slug) > 0,
-);
+/**
+ * Categories that actually have products, named by what is actually in them.
+ *
+ * 甲方 2026-09-10 指着「玻璃门夹具 11 models」的卡片说「这个是玻璃门大拉手」。
+ * 他是对的：那个类目在共用品类树里叫玻璃门夹具（含玻璃门夹和玻璃门拉手两个子类），
+ * 但雷茵在售的 11 个全部是拉手，一个门夹都没有。卡片上写父类名，等于把买家
+ * 领到一个他要的东西不在里面的名字上。
+ *
+ * 所以：**当一个类目下雷茵的产品全部属于同一个子类时，就用那个子类的名字。**
+ * 不是改共用的品类树 —— HYDE 那边真的两种都卖，改了会错。这是显示层的事实修正：
+ * 同一棵树，两个站看到的库存不同，名字就该跟着库存走。
+ *
+ * 等雷茵以后真的上了玻璃门夹，这个类目会自动变回「玻璃门夹具」，不用改代码。
+ */
+function displayNameFor(category: RayenCategory): string {
+  const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
+  if (!inCategory.length || !category.children.length) return category.name;
+  const children = new Set(inCategory.map((product) => product.categoryPath[1]).filter(Boolean));
+  if (children.size !== 1) return category.name;
+  const only = category.children.find((child) => child.slug === [...children][0]);
+  return only?.name ?? category.name;
+}
+
+export const stockedCategories = categories
+  .filter((category) => countInCategory(category.slug) > 0)
+  .map((category) => ({ ...category, name: displayNameFor(category) }));
 
 /**
  * The three numbers on the home page.

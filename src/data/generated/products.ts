@@ -452,7 +452,7 @@ import item446 from "../../../content/products/hb2102-grab-bar.json";
 import item447 from "../../../content/products/hb2118-grab-bar.json";
 import item448 from "../../../content/products/hb2600-flip-up-grab-bar.json";
 import item449 from "../../../content/products/hb2900-flip-up-grab-bar.json";
-import item450 from "../../../content/products/hb2902-flip-up-grab-bar.json";
+import item450 from "../../../content/products/hb2902-grab-bar.json";
 import item451 from "../../../content/products/hb2918-grab-bar.json";
 import item452 from "../../../content/products/hd02-stainless-steel-handle.json";
 import item453 from "../../../content/products/hd03-stainless-steel-handle.json";
@@ -579,7 +579,7 @@ import item573 from "../../../content/products/oas-pth01-bathroom-accessories.js
 import item574 from "../../../content/products/oas-pth02-bathroom-accessories.json";
 import item575 from "../../../content/products/oashb201-grab-bar.json";
 import item576 from "../../../content/products/oashb2112-grab-bar.json";
-import item577 from "../../../content/products/oashb2118-flip-up-grab-bar.json";
+import item577 from "../../../content/products/oashb2118-grab-bar.json";
 import item578 from "../../../content/products/oashb2600-flip-up-grab-bar.json";
 import item579 from "../../../content/products/oashb3000-flip-up-grab-bar.json";
 import item580 from "../../../content/products/oashb301-grab-bar.json";

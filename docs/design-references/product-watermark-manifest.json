@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 3106,
+  "count": 3115,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -60565,6 +60565,132 @@
       "outputSha256": "f6173bf6de5d07e92062998a0964fe6e2d456a338b2b532903ace0cd5f96348a"
     },
     {
+      "source": "public/images/products/hb2902-grab-bar-2.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-2.webp",
+      "width": 1400,
+      "height": 927,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "f4aa39e14f65b7e616c9285bcc323ab5ad9f5a3ea680156db5ab8cbe62c3c1e7",
+      "outputSha256": "b0027199da7d66ad0e9cf6dff84aeeeae9fdbfd57745abb803ed86b8a9817d63"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar-3.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-3.webp",
+      "width": 1049,
+      "height": 1573,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "5c81ed0ee5f1fe23da8f8fd12e3137063b4d261b18ff4a26e70eefedee942c8a",
+      "outputSha256": "ea8025156acb8f9c82ff9fa905e85ee5d370100bcff8b4093881956d2e492983"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar-4.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-4.webp",
+      "width": 1400,
+      "height": 934,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cc72493ce2d93963d5a1ca2471b9f881b39089a4c0e8007bf6dfab6d301d5ec8",
+      "outputSha256": "a132115ce06b754f3bdfb0e2d17a54e0e05c9419fb18ce625452ccb2246f2a0f"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar-5.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-5.webp",
+      "width": 1400,
+      "height": 934,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fb8435448f6d71195daacf7b06b577e132347c6c00206b27d1bc5f8ad51429c7",
+      "outputSha256": "24cf317770cb43ca9fc58a18e8016c25104aea668f7ff1b2718d98ef8354d1f5"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar-6.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-6.webp",
+      "width": 1400,
+      "height": 931,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a357ade6399ce9b9c3d9f9854481911795e9f26e0677a4698e44449070ce1d77",
+      "outputSha256": "eed989724821ef79993bb6d40ec539cff6d14847a70cbe7d5585b476efaa51a5"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar-7.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar-7.webp",
+      "width": 544,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5854370e32b01ab99740920146a2dce56e54e1d68897122e03e6fc97ce10f106",
+      "outputSha256": "4f0916db206759549ae1086b667067e0bcf63a2a8be2a1dc0d339343e6a2c706"
+    },
+    {
+      "source": "public/images/products/hb2902-grab-bar.webp",
+      "output": "public/images/products-hyde/hb2902-grab-bar.webp",
+      "width": 850,
+      "height": 850,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 102,
+        "logoHeight": 26
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d47e945b31e0467ef8e1a4b33c0ffa6c7f8f432559cadbffcbf0788594a33d66",
+      "outputSha256": "f6173bf6de5d07e92062998a0964fe6e2d456a338b2b532903ace0cd5f96348a"
+    },
+    {
       "source": "public/images/products/hb2918-grab-bar-10.webp",
       "output": "public/images/products-hyde/hb2918-grab-bar-10.webp",
       "width": 544,
@@ -75120,6 +75246,42 @@
     {
       "source": "public/images/products/oashb2118-flip-up-grab-bar.webp",
       "output": "public/images/products-hyde/oashb2118-flip-up-grab-bar.webp",
+      "width": 850,
+      "height": 850,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 102,
+        "logoHeight": 26
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df1e13f597221054b06e04547a32c34e8454490e98e66bd1d1358e8537c1a4a8",
+      "outputSha256": "7a5098d3535a2afb22839024f9576402bd6613673a4dab269a1013a7e578ed33"
+    },
+    {
+      "source": "public/images/products/oashb2118-grab-bar-2.webp",
+      "output": "public/images/products-hyde/oashb2118-grab-bar-2.webp",
+      "width": 1400,
+      "height": 1050,
+      "geometry": {
+        "margin": 26,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "a9e3d5434bb2cbf20f9208f0de16bf7aa1dc9d44c0722a0dce2fee5b6f42df90",
+      "outputSha256": "9b3d63e3afa6e666b0fa65bbafa0c89cb885eb599aadaf30cc5503fdda7f06ca"
+    },
+    {
+      "source": "public/images/products/oashb2118-grab-bar.webp",
+      "output": "public/images/products-hyde/oashb2118-grab-bar.webp",
       "width": 850,
       "height": 850,
       "geometry": {

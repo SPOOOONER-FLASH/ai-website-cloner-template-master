@@ -44,7 +44,9 @@ const SINGULAR: Record<string, { en: string; es: string }> = {
   "lock-cases": { en: "mortise lock case", es: "caja de cerradura de embutir" },
   "lock-cylinders": { en: "lock cylinder", es: "cilindro de cerradura" },
   "sliding-hook-locks": { en: "sliding hook lock", es: "cerradura de gancho para puerta corredera" },
+  "care-grab-bars": { en: "grab bar", es: "barra de apoyo" },
   "flip-up-grab-bars": { en: "flip-up grab bar", es: "barra de apoyo abatible" },
+  "fixed-grab-bars": { en: "fixed grab bar", es: "barra de apoyo fija" },
 };
 
 export function categorySourcingLine(slug: string, locale: "en" | "es"): string | null {

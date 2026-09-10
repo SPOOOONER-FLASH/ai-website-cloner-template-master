@@ -197,16 +197,41 @@
       "summaryEs": "Herrajes y accesorios de baño del catálogo oficial Canton."
     },
     {
-      "slug": "flip-up-grab-bars",
-      "name": "Flip-Up Grab Bars",
-      "nameZh": "上抬扶手",
-      "summary": "Wall-mounted grab bars that fold up out of the transfer path, for accessible WCs.",
+      "slug": "care-grab-bars",
+      "name": "Care Grab Bars",
+      "nameZh": "关怀扶手",
+      "summary": "Grab bars for accessible WCs and bathrooms — flip-up, fixed and L-shaped.",
       "image": {
         "src": "/images/products/hb2900-flip-up-grab-bar.webp",
         "ratio": "1 / 1",
         "label": "Flip-up grab bar folded down beside a WC"
       },
-      "children": []
+      "children": [
+        {
+          "slug": "flip-up-grab-bars",
+          "name": "Flip-Up Grab Bars",
+          "nameZh": "上抬扶手",
+          "summary": "Grab bars that fold up flat to the wall to clear the transfer path.",
+          "image": {
+            "src": "/images/products/hb2900-flip-up-grab-bar.webp",
+            "ratio": "1 / 1",
+            "label": "Flip-up grab bar beside a WC"
+          },
+          "nameEs": "Barras de apoyo abatibles"
+        },
+        {
+          "slug": "fixed-grab-bars",
+          "name": "Fixed Grab Bars",
+          "nameZh": "固定扶手",
+          "summary": "Straight and L-shaped grab bars bolted to the wall.",
+          "image": {
+            "src": "/images/products/hb2902-grab-bar.webp",
+            "ratio": "1 / 1",
+            "label": "Fixed grab bar on a bathroom wall"
+          },
+          "nameEs": "Barras de apoyo fijas"
+        }
+      ]
     },
     {
       "slug": "brass-steel-hinges",

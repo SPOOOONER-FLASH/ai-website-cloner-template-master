@@ -1046,7 +1046,9 @@ export const CATEGORY_NAMES_ES: Record<string, string> = {
   "grip-handle-sets": "Juegos de manija con placa",
   "hardware-accessories": "Accesorios de herrajes",
   "sliding-hook-locks": "Cerraduras de gancho para correderas",
+  "care-grab-bars": "Barras de apoyo",
   "flip-up-grab-bars": "Barras de apoyo abatibles",
+  "fixed-grab-bars": "Barras de apoyo fijas",
 };
 
 /*
