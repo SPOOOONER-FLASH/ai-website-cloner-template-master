@@ -15,6 +15,7 @@
 import categoriesFile from "../../content/categories.json";
 import rayenFile from "../../content/rayen/site.json";
 import mirror from "./generated/products-zh.json";
+import { LOCALE_SEGMENT, type RayenLocale } from "./rayen-i18n";
 
 export type RayenImage = { src: string; ratio: string; label: string };
 export type RayenSpec = { label: string; value: string };
@@ -39,7 +40,47 @@ export type RayenProduct = {
   styleFamily: string;
   seoTitle: string;
   seoDescription: string;
+  /** 英文侧，取自 content/products 的原文，不是从中文回译。见 build-chinese-mirror.mjs。 */
+  en: {
+    name: string;
+    series: string;
+    categoryNames: string[];
+    summary: string;
+    specs: RayenSpec[];
+    material: string;
+    finishes: string[];
+    doorTypes: string[];
+    seoTitle: string;
+    seoDescription: string;
+  };
 };
+
+/**
+ * One product as a single locale sees it.
+ *
+ * The record carries both languages side by side; a page wants one. Flattening here rather
+ * than making every component reach into `product.en.x` keeps the pages identical between
+ * locales — which is the whole point of not forking them.
+ */
+export type RayenProductView = Omit<RayenProduct, "en">;
+
+export function viewProduct(product: RayenProduct, locale: RayenLocale): RayenProductView {
+  const { en, ...rest } = product;
+  if (locale === "zh") return rest;
+  return {
+    ...rest,
+    name: en.name,
+    series: en.series,
+    categoryNames: en.categoryNames,
+    summary: en.summary,
+    specs: en.specs,
+    material: en.material,
+    finishes: en.finishes,
+    doorTypes: en.doorTypes,
+    seoTitle: en.seoTitle,
+    seoDescription: en.seoDescription,
+  };
+}
 
 export type RayenCategory = {
   slug: string;
@@ -100,6 +141,16 @@ export const ZH_PREFIX = "/zh";
 
 export const zhPath = (path: string) => `${ZH_PREFIX}${path.startsWith("/") ? path : `/${path}`}`;
 
+/**
+ * The same helper, for either locale.
+ *
+ * Chinese builds at /zh and deploys at "/"; English builds at /zh-en and deploys at "/en".
+ * scripts/build-rayen-site.mjs rewrites both prefixes, and it can only do that safely
+ * because every internal href comes from here. src/lib/rayen-paths.test.ts holds the line.
+ */
+export const localePath = (locale: RayenLocale, path: string) =>
+  `${LOCALE_SEGMENT[locale]}${path.startsWith("/") ? path : `/${path}`}`;
+
 export const absoluteUrl = (path: string) =>
   new URL(path.startsWith("/") ? path : `/${path}`, siteUrl).toString();
 
@@ -139,6 +190,35 @@ export const categories: RayenCategory[] = rawCategories.map((category) => ({
     name: child.nameZh ?? child.name,
   })),
 }));
+
+/**
+ * The category list for one locale, named by what RAYEN actually stocks in it.
+ *
+ * Same rule as the Chinese side (see displayNameFor): where every RAYEN product in a family
+ * belongs to one child, the child's name is the honest label. 玻璃门夹具 holding nothing but
+ * pull handles misleads a Chinese buyer; "Glass Door Accessories" holding nothing but pull
+ * handles misleads an English one in exactly the same way.
+ */
+export function categoriesFor(locale: RayenLocale): RayenCategory[] {
+  if (locale === "zh") return stockedCategories;
+  return stockedCategories.map((category) => {
+    const raw = rawCategories.find((c) => c.slug === category.slug);
+    if (!raw) return category;
+    const inCategory = products.filter((p) => p.categoryPath[0] === category.slug);
+    const children = new Set(inCategory.map((p) => p.categoryPath[1]).filter(Boolean));
+    const onlyChild =
+      children.size === 1 ? (raw.children ?? []).find((c) => c.slug === [...children][0]) : undefined;
+    return {
+      ...category,
+      name: onlyChild?.name ?? raw.name,
+      children: (raw.children ?? []).map((c) => ({ slug: c.slug, name: c.name })),
+    };
+  });
+}
+
+export function getCategoryFor(slug: string, locale: RayenLocale): RayenCategory | undefined {
+  return categoriesFor(locale).find((category) => category.slug === slug);
+}
 
 export function getCategory(slug: string): RayenCategory | undefined {
   // 走 stockedCategories，这样类目页的标题和面包屑用的是同一个显示名，

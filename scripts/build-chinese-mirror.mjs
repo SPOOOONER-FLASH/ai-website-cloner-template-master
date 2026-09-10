@@ -65,9 +65,11 @@ const categoriesFile = readJson(join(root, "content", "categories.json"));
  * rather than being duplicated into zh-terms.json.
  * ------------------------------------------------------------------------ */
 const categoryZh = new Map();
+const categoryEn = new Map();
 const walkCategories = (nodes) => {
   for (const node of nodes ?? []) {
     if (node.nameZh) categoryZh.set(node.slug, node.nameZh);
+    if (node.name) categoryEn.set(node.slug, node.name);
     walkCategories(node.children);
   }
 };
@@ -146,6 +148,21 @@ function translateSeries(series, fallbackName) {
   return series;
 }
 
+/**
+ * The English series label.
+ *
+ * Same brand-hygiene rule as the Chinese side: a series that still names an export brand
+ * must not reach a RAYEN page. "Hyland 300" becomes "300 Series", not "Hyland 300".
+ */
+function seriesEn(series, fallbackName) {
+  if (!series) return "";
+  if (/^(hyland|hyde|stahlock)s*/i.test(series)) {
+    const rest = series.replace(/^(hyland|hyde|stahlock)s*/i, "").trim();
+    return rest ? `${rest} Series` : `${fallbackName} Series`;
+  }
+  return series;
+}
+
 /* ---------------------------------------------------------------------------
  * The generated Chinese summary.
  *
@@ -182,6 +199,31 @@ function buildSummary(product, nameZh) {
   }
   if (picked.length) parts.push(`${picked.join("，")}。`);
   return parts.join("");
+}
+
+/**
+ * The English summary, assembled from the same fields as the Chinese one.
+ *
+ * Deliberately NOT product.summary from the record: those are imported marketing prose of
+ * uneven quality, and half the RAYEN range has none at all. Composing both languages from
+ * the same structured fields means the two sites cannot disagree about a product.
+ */
+function buildSummaryEn(product) {
+  const parts = [];
+  const material = (product.material ?? "").trim();
+  const head = material ? `${material} ${product.name.toLowerCase()}` : product.name;
+  const door = (product.doorTypes ?? [])[0];
+  parts.push(door ? `${head} for ${String(door).toLowerCase()}.` : `${head}.`);
+
+  const specs = product.specs ?? [];
+  const picked = [];
+  for (const label of SUMMARY_SPEC_PRIORITY) {
+    const hit = specs.find((row) => row.label === label && String(row.value ?? "").trim());
+    if (hit) picked.push(`${hit.label.toLowerCase()} ${String(hit.value).trim()}`);
+    if (picked.length === 2) break;
+  }
+  if (picked.length) parts.push(`${picked.join(", ")}.`);
+  return parts.join(" ");
 }
 
 /* ---------------------------------------------------------------------------
@@ -264,6 +306,7 @@ for (const file of files) {
   }
 
   const summary = buildSummary(product, nameZh);
+  const summaryEn = buildSummaryEn(product);
 
   /*
     Promote a gallery frame when the hero itself could not be cleaned. Twelve models had a
@@ -304,6 +347,30 @@ for (const file of files) {
     // every other page on the site.
     seoTitle: `${product.model} ${nameZh}`.trim(),
     seoDescription: summary.slice(0, 150),
+
+    /*
+      == 英文侧 ==
+      不是把中文翻回去 —— 那是把一次有损转换再做一次。content/products 里本来就是英文，
+      中文才是从它生成的。所以英文站直接用原文：规格标签、材质、表面处理全部是供应商
+      图纸和目录上的原词，比任何回译都准。
+
+      英文摘要和中文摘要用同一套拼装逻辑（材质 + 品名 + 门型 + 两条关键尺寸），
+      所以两个语种说的是同一件事，不会一边写了一边没写。
+    */
+    en: {
+      name: product.name,
+      series: seriesEn(product.series, product.name),
+      categoryNames: (product.categoryPath ?? []).map((slug) => categoryEn.get(slug) ?? slug),
+      summary: summaryEn,
+      specs: (product.specs ?? [])
+        .filter((row) => String(row.value ?? "").trim())
+        .map((row) => ({ label: row.label, value: String(row.value).trim() })),
+      material: product.material ?? "",
+      finishes: product.finishes ?? [],
+      doorTypes: product.doorTypes ?? [],
+      seoTitle: `${product.model} ${product.name}`.trim(),
+      seoDescription: summaryEn.slice(0, 150),
+    },
   });
 }
 
