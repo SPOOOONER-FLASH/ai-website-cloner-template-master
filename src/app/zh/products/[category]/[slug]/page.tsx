@@ -4,6 +4,7 @@ import { SiteFooter, SiteHeader } from "@/components/rayen/Chrome";
 import { Button, NoPhoto, Photo, ProductCard, SpecTable, Shell } from "@/components/rayen/primitives";
 import {
   absoluteUrl,
+  rayen,
   getCategory,
   getProduct,
   getRelatedProducts,
@@ -56,6 +57,16 @@ export default async function RayenProductPage({ params }: Props) {
   const { category: categorySlug, slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
+
+  /*
+    1688 店铺入口，学的是 HYDE 站上的阿里巴巴做法：站本身不成交，成交在店铺和邮件里，
+    所以每个型号页都要有一条通向店铺的路，而不是只在联系页放一个链接。
+    带上型号做搜索词，买家落地看到的是这一款，而不是店铺首页再自己翻。
+  */
+  const shop = rayen.contact.alibaba1688;
+  const shopUrl = shop
+    ? `${shop.replace(/\/+$/, "")}/page/offerlist.htm?searchKeywords=${encodeURIComponent(product.model)}`
+    : "";
 
   const category = getCategory(categorySlug);
   const related = getRelatedProducts(product);
@@ -159,6 +170,16 @@ export default async function RayenProductPage({ params }: Props) {
                 <Button href={zhPath("/oem/")} variant="ghost">
                   来图来样加工
                 </Button>
+                {/*
+                  1688 店铺入口，学的是 HYDE 站上的阿里巴巴做法：站本身不成交，成交在
+                  店铺和邮件里，所以每个型号页都要有一条通向店铺的路，而不是只在联系页
+                  放一个链接。带上型号做搜索词，买家落地就是这一款而不是店铺首页。
+                */}
+                {shopUrl ? (
+                  <a href={shopUrl} target="_blank" rel="noopener" className="btn btn-ghost">
+                    1688 店铺查看
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

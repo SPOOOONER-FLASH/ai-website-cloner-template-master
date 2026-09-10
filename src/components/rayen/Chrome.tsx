@@ -103,16 +103,28 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-[14px] text-white">出口品牌</p>
-            <ul className="mt-3 space-y-2 text-[14px]">
-              {rayen.exportBrands.map((brand) => (
-                <li key={brand.name}>
-                  <a href={brand.url} rel="noopener" target="_blank" className="latin hover:text-white">
-                    {brand.name} ↗
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/*
+              出口品牌那一组链接 2026-09-09 撤掉，换成 1688 店铺。
+              甲方要求雷茵不再对外关联 HYDE / Stahlock；页脚是买家核实供应商时第一个
+              滚到的地方，留着两个别家品牌的外链，等于把人送走。
+            */}
+            {contact.alibaba1688 ? (
+              <>
+                <p className="mt-6 text-[14px] text-white">线上店铺</p>
+                <ul className="mt-3 space-y-2 text-[14px]">
+                  <li>
+                    <a
+                      href={contact.alibaba1688}
+                      rel="noopener"
+                      target="_blank"
+                      className="hover:text-white"
+                    >
+                      1688 店铺 ↗
+                    </a>
+                  </li>
+                </ul>
+              </>
+            ) : null}
           </nav>
 
           <div>
@@ -133,6 +145,16 @@ export function SiteFooter() {
                 邮箱：<span className="latin">{contact.email || "—"}</span>
               </p>
               <p>微信：{contact.wechat || "—"}</p>
+              <p>
+                1688：
+                {contact.alibaba1688 ? (
+                  <a href={contact.alibaba1688} rel="noopener" target="_blank" className="latin underline-offset-4 hover:underline">
+                    在线店铺 ↗
+                  </a>
+                ) : (
+                  "—"
+                )}
+              </p>
             </address>
           </div>
         </div>

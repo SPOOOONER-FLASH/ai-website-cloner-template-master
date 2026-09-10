@@ -18,8 +18,12 @@ export const metadata: Metadata = {
  *   3. what we actually make, as a grid you can click into
  *   4. what we can do to order (来图/来样/OEM) — the 1688 buyer's first question
  *   5. more of the floor
- *   6. the export brands, which is the strongest single credibility item we own
- *   7. how to ask
+ *   6. how to ask
+ *
+ * 出口品牌那一段 2026-09-09 删了。它原本是这个站最强的可信度资产 —— 同一条产线上的
+ * 两个海外品牌，英文站长期在线可以直接核对。但甲方要求切断与 HYDE / Stahlock 的关联：
+ * 雷茵要以自己的名义面对国内客户，而不是以「某出口厂的中文站」的身份。这是品牌决策，
+ * 不是技术决策，所以照办。
  *
  * There is no carousel, no counter animation and no video. 悍高 opens with a full-screen
  * video and earns it with a listed company's production base; the same slot filled with
@@ -145,34 +149,6 @@ export default function RayenHomePage() {
             </div>
             <div className="mt-8">
               <ArrowLink href={zhPath("/company/")}>走进雷茵</ArrowLink>
-            </div>
-          </Shell>
-        </section>
-
-        {/* 6 — the export brands */}
-        <section className="border-t border-[var(--color-line)] py-16 md:py-24">
-          <Shell>
-            <SectionHead
-              eyebrow="Export Brands"
-              title="出口品牌"
-              intro="同一条产线，两个面向海外市场的自有品牌。它们的英文站长期在线，可以直接打开核对产品与型号。"
-            />
-            <div className="mx-auto mt-10 grid max-w-3xl gap-px bg-[var(--color-line)] md:grid-cols-2">
-              {rayen.exportBrands.map((brand) => (
-                <a
-                  key={brand.name}
-                  href={brand.url}
-                  target="_blank"
-                  rel="noopener"
-                  className="bg-white p-8 transition-colors hover:bg-[var(--color-surface-alt)]"
-                >
-                  <p className="latin text-[22px] tracking-[0.14em]">{brand.name}</p>
-                  <p className="mt-3 text-[14px] leading-relaxed text-[var(--color-ink-2)]">{brand.note}</p>
-                  <p className="latin mt-4 text-[13px] text-[var(--color-ink-3)]">
-                    {new URL(brand.url).host} ↗
-                  </p>
-                </a>
-              ))}
             </div>
           </Shell>
         </section>

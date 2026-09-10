@@ -149,14 +149,20 @@ export const stockedCategories = categories.filter(
  * The three numbers on the home page.
  *
  * All derived from the catalogue itself, so they cannot drift from what the site shows.
- * There is no floor area, no export-country count and no annual capacity here: the client
- * was asked on 2026-09-06 and said 成立年份 2026，其他都不写. A number nobody can stand
- * behind costs more trust than a missing one — see AGENTS.md.
+ * 第三个数字 2026-09-09 换了。原本是「2026 公司成立」，甲方看到之后说「这个可以先去掉，
+ * 不要写出来」—— 一家 2026 年注册的公司，把注册年份摆在首页最显眼的位置，讲的是
+ * 「我们很新」，而这个位置要讲的恰恰相反。改成甲方自己给的口径「锁具经验始于 1999」。
+ *
+ * 这不是把 2026 改成 1999 这么简单：公司确实是 2026 年注册的，foundedYear 还在数据里。
+ * 变的是这个位置回答哪个问题 —— 不是「你们公司几岁」，是「你们做这行多久了」。
+ *
+ * 仍然没有厂房面积、没有出口国家数、没有年产能。前两个数字由 content/products 现算，
+ * 第三个是甲方给的口径，三个都站得住。见 AGENTS.md「Say what is not known」。
  */
 export const siteFacts = [
   { value: String(stockedCategories.length), unit: "个", label: "在售品类" },
   { value: String(products.length), unit: "个", label: "在售型号" },
-  { value: String(rayen.brand.foundedYear), unit: "年", label: "公司成立" },
+  { value: String(rayen.brand.lockExperienceSince), unit: "年起", label: "锁具制造经验" },
 ];
 
 

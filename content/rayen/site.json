@@ -14,8 +14,13 @@
     "将来要恢复填回来就行，不用动代码。",
     "",
     "== 联系方式还是空的 ==",
-    "phone / wechat / alibaba1688 空着会在页面上渲染成一条短横线。这是设计好的行为：",
-    "cantonlock 的美国号码和 lock@cantonlock.com 是 HYDE 的，不是雷茵的，填上去就是错的。"
+    "phone / wechat / email 空着会在页面上渲染成一条短横线。这是设计好的行为：",
+    "cantonlock 的美国号码和 lock@cantonlock.com 是 HYDE 的，不是雷茵的，填上去就是错的。",
+    "",
+    "== 1688 店铺 ==",
+    "alibaba1688 填了之后，页脚、联系页和每个型号页都会出现「1688 店铺」入口。",
+    "做法学的是 HYDE 站上的阿里巴巴入口：站本身不成交，成交在店铺和邮件里，",
+    "所以每个型号页都要有一条通向店铺的路，而不是只在联系页放一个链接。"
   ],
   "brand": {
     "latin": "RAYEN",
@@ -34,7 +39,7 @@
     "phone": "",
     "wechat": "",
     "email": "",
-    "alibaba1688": ""
+    "alibaba1688": "https://shop49ed1729u7054.1688.com/"
   },
   "capabilities": [
     {
