@@ -34,7 +34,29 @@ export const categories = (categoriesFile.categories as Category[]).map(
 
 /** Top-level categories, in menu order. */
 export function getTopLevelCategories(): Category[] {
-  return categories;
+  /*
+    A category with nothing published in it does not get a page.
+
+    This is the same rule getMenuCategories() already applies one level down — "a
+    sub-category with no products is dropped, not shown as an empty branch" — raised to
+    the top level, where it was missing.
+
+    It was missing because until 2026-09-10 every top-level category had products, so the
+    case never arose. `flip-up-grab-bars` was added that day ahead of its photographs and
+    immediately produced four broken routes: /products/<slug>/ and /compare/<slug>/ in
+    both locales, each with no JSON-LD itemListElement, no html lang attribute, a canonical
+    pointing at the homepage, and a noindex tag inside an indexable release. `npm run
+    test:export` blocked the deploy on all ten findings, which is the audit doing its job.
+
+    Dropping the route is better than emitting a placeholder for the same reason the
+    sub-category rule exists: an empty category page is a dead end that costs a buyer a
+    click and costs us a crawled URL with nothing on it. The moment a photograph lands on
+    one of its products the category publishes itself, exactly like the product rule in
+    src/data/products.ts. Nobody has to remember to switch it back on.
+  */
+  return categories.filter((category) =>
+    publishedProducts.some((product) => product.categoryPath[0] === category.slug),
+  );
 }
 
 /** Slug plus both display names — everything the menu needs and nothing else. */
@@ -64,7 +86,13 @@ export interface MenuCategory {
  * labels.
  */
 export function getMenuCategories(): MenuCategory[] {
-  return categories.map((category) => {
+  /*
+    Built from getTopLevelCategories(), not the raw declaration, so the drawer cannot
+    offer a category the build no longer writes. The drawer renders on every page, so an
+    empty category here is not one broken link — on 2026-09-10 it was 1,342 references to
+    two non-existent URLs across 675 pages, and the dead-link audit blocked the release.
+  */
+  return getTopLevelCategories().map((category) => {
     /*
       PUBLISHED only, so the number beside a menu label equals the number of cards the
       category page actually renders. Counting the withheld records made the menu promise

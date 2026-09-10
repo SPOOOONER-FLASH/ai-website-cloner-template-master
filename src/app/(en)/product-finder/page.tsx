@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
-import { categories } from "@/data/categories";
+import { getTopLevelCategories } from "@/data/categories";
 import { absoluteUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/seo";
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = pageMetadata({
 /** slug -> display name for every category and sub-category, so facets read as labels. */
 function categoryNameMap(): Record<string, string> {
   const map: Record<string, string> = {};
-  for (const category of categories) {
+  for (const category of getTopLevelCategories()) {
     map[category.slug] = category.name;
     for (const child of category.children ?? []) map[child.slug] = child.name;
   }
@@ -53,7 +53,7 @@ export default function ProductFinderPage() {
       <JsonLd
         data={itemListSchema(
           "Canton Hyland product categories",
-          categories.map((category) => absoluteUrl(`/products/${category.slug}/`)),
+          getTopLevelCategories().map((category) => absoluteUrl(`/products/${category.slug}/`)),
         )}
       />
 

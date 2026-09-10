@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categories } from "@/data/categories";
+import { getTopLevelCategories } from "@/data/categories";
 import { OPTION_NOTES, OPTION_NOTES_ES } from "@/lib/configurator";
 
 /**
@@ -56,7 +56,13 @@ export function HardwareGlossary({ locale = "en" }: { locale?: "en" | "es" }) {
     taxonomy — would simply not be listed rather than appear detached from everything.
   */
   const entries: { slug: string; name: string; note: string; href: string; child: boolean }[] = [];
-  for (const category of categories) {
+  /*
+    getTopLevelCategories(), not the raw list: the glossary links each term to its
+    category page, and a category with nothing published in it has no page. On 2026-09-10
+    the glossary was the last of four places still linking /products/flip-up-grab-bars/
+    after that category was dropped, and the dead-link audit held the release for it.
+  */
+  for (const category of getTopLevelCategories()) {
     const note = notes[category.slug];
     if (note) {
       entries.push({

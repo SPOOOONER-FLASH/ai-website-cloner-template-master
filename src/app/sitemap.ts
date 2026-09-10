@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
-import { categories } from "@/data/categories";
+import { getTopLevelCategories } from "@/data/categories";
 import {
   getAllProductParams,
   getProductBySlug,
@@ -123,7 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Top-level category listings only — sub-categories are a filter dimension, not a URL.
-  for (const category of categories) {
+  for (const category of getTopLevelCategories()) {
     urls.push(...entry(`/products/${category.slug}`, PRIORITY.category, "weekly"));
   }
 
@@ -139,7 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     Sub-category collections. Only those the catalogue declares AND that hold products —
     the same rule the menu uses, so the sitemap never lists a page the build skipped.
   */
-  for (const category of categories) {
+  for (const category of getTopLevelCategories()) {
     for (const child of category.children ?? []) {
       const count = products.filter(
         (p) => p.categoryPath[0] === category.slug && p.categoryPath[1] === child.slug,
@@ -158,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     single URL would not, and a Spanish page absent from the sitemap is the thing the
     graph audit calls `indexable-not-in-sitemap`.
   */
-  for (const category of categories) {
+  for (const category of getTopLevelCategories()) {
     if (getProductsByCategory(category.slug).length < 3) continue;
     urls.push(...entry(`/compare/${category.slug}`, PRIORITY.support, "monthly"));
   }
