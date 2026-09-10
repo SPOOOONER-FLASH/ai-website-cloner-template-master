@@ -1,0 +1,25 @@
+{
+  "id": "310-cool-stone",
+  "slug": "310-panic-exit-device",
+  "model": "310",
+  "components": 1,
+  "seeds": [],
+  "color": [
+    0.52,
+    0.55,
+    0.56
+  ],
+  "width": 1.75,
+  "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\references\\310-panic-exit-device.webp",
+  "sourceSha256": "30dc32a00c4956ee6c7a2463f6b19a26ea71fe8a20b04150ac6254264b6f188b",
+  "texture": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\material-studies\\310-cool-stone-texture.png",
+  "textureWidth": 819,
+  "textureHeight": 251,
+  "cropOffset": [
+    103,
+    375
+  ],
+  "exactSourceRGB": true,
+  "alphaTreatment": "Reviewed four holes for 564; retain the two real connected parts for 564, one complete connected device for 310; remove detached background artefacts. Pale matte attenuated within two pixels of existing edges. RGB unchanged.",
+  "outputDirectory": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\material-studies"
+}

@@ -21,10 +21,11 @@ for item in jobs['items']:
                         for n in m.node_tree.nodes if n.type == 'TEX_IMAGE']
             assert textures and all(t.packed_file for t in textures), target
         report = json.loads(bpy.data.texts['SOURCE_AND_LIMITS'].as_string())
-        assert all(p['exactSourcePixels'] for p in report['photos']), target
+        assert (all(p['exactSourcePixels'] for p in report['photos'])
+                if 'photos' in report else report['exactSourceRGB']), target
         results.append({'file': asset['blend'], 'packedPhotos': len(photos),
                         'reopened': True, 'isProductCad': False})
-assert len(results) == 13, len(results)
+assert len(results) == 15, len(results)
 (base / 'blender-verification.json').write_text(
     json.dumps({'verified': results}, indent=2) + '\n', encoding='utf-8')
 print('PACKED_SOURCE_BLENDS_OK', len(results))

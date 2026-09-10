@@ -1,0 +1,42 @@
+{
+  "id": "564-warm-stone",
+  "slug": "564-night-latch-and-rim-lock",
+  "model": "564",
+  "components": 2,
+  "seeds": [
+    [
+      95,
+      480
+    ],
+    [
+      503,
+      350
+    ],
+    [
+      905,
+      500
+    ],
+    [
+      500,
+      645
+    ]
+  ],
+  "color": [
+    0.57,
+    0.54,
+    0.48
+  ],
+  "width": 1.72,
+  "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\references\\564-night-latch-and-rim-lock.webp",
+  "sourceSha256": "de9911b07691353e402bc54f0b923f2c6877979c289dde106b25d24e222c6588",
+  "texture": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\material-studies\\564-warm-stone-texture.png",
+  "textureWidth": 865,
+  "textureHeight": 394,
+  "cropOffset": [
+    68,
+    304
+  ],
+  "exactSourceRGB": true,
+  "alphaTreatment": "Reviewed four holes for 564; retain the two real connected parts for 564, one complete connected device for 310; remove detached background artefacts. Pale matte attenuated within two pixels of existing edges. RGB unchanged.",
+  "outputDirectory": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\material-studies"
+}

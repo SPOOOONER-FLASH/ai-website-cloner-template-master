@@ -105,6 +105,13 @@
       "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
       "assets": [
         {
+          "qa": "真实产品照片进入石材背景；源RGB逐像素校验保留。仅处理已核查背景与边缘透明度；不是产品CAD或现场安装照片。",
+          "name": "564-warm-stone.png",
+          "archiveOnly": false,
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/material-studies/564-warm-stone.png",
+          "blend": "material-studies/564-warm-stone.blend"
+        },
+        {
           "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\07-source-564-night-latch-and-rim-lock.png",
           "name": "07-source-564-night-latch-and-rim-lock.png",
           "blend": "blender/07-source-564-night-latch-and-rim-lock.blend",
@@ -347,6 +354,13 @@
       ],
       "reason": "保留原厂红横杆/黑端壳；单品展示不依赖未知外执手配置。",
       "assets": [
+        {
+          "qa": "真实产品照片进入石材背景；源RGB逐像素校验保留。仅处理已核查背景与边缘透明度；不是产品CAD或现场安装照片。",
+          "name": "310-cool-stone.png",
+          "archiveOnly": false,
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/material-studies/310-cool-stone.png",
+          "blend": "material-studies/310-cool-stone.blend"
+        },
         {
           "qa": "完整原图与产品像素保留；仅建造纸板与背景场景，不宣称产品CAD或配套。",
           "blend": "blender/19-source-310-panic-exit-device.blend",
