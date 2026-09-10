@@ -1,0 +1,52 @@
+{
+  "id": "00-real-source-selection",
+  "title": "HYDE / MATERIAL & PRODUCT STUDY",
+  "outputDirectory": "C:/Users/johns/Downloads/ai-website-cloner-template-master/docs/design-references/2026-09-09-professional-hardware-sets/blender",
+  "photos": [
+    {
+      "model": "9004S",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/9004s-stainless-steel-handle.webp",
+      "crop": [
+        100,
+        190,
+        890,
+        720
+      ],
+      "position": [
+        -0.65,
+        0.06
+      ],
+      "width": 0.68
+    },
+    {
+      "model": "LC04 85/60",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/lc04-85-60-lock-case-5.webp",
+      "crop": [
+        220,
+        40,
+        480,
+        900
+      ],
+      "position": [
+        0.17,
+        0
+      ],
+      "width": 0.53
+    },
+    {
+      "model": "70SN / 70 mm",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/70sn-lock-cylinder.webp",
+      "crop": [
+        0,
+        120,
+        800,
+        650
+      ],
+      "position": [
+        0.76,
+        0.04
+      ],
+      "width": 0.47
+    }
+  ]
+}

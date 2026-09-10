@@ -1,0 +1,41 @@
+{
+  "scope": "Original product photographs composed on a Blender paper/stone stage. Not dimensional product CAD or confirmed kit.",
+  "photos": [
+    {
+      "model": "307",
+      "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master/public/images/products/307-panic-exit-device.webp",
+      "crop": [
+        15,
+        210,
+        975,
+        620
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    },
+    {
+      "model": "072",
+      "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master/public/images/products/072-panic-exit-device-lock-case.webp",
+      "crop": [
+        340,
+        110,
+        310,
+        790
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    },
+    {
+      "model": "015",
+      "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master/public/images/products/015-panic-exit-device-trim.webp",
+      "crop": [
+        110,
+        155,
+        850,
+        795
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    }
+  ]
+}

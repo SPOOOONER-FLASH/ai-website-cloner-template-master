@@ -1,0 +1,41 @@
+{
+  "scope": "Original product photographs composed on a Blender paper/stone stage. Not dimensional product CAD or confirmed kit.",
+  "photos": [
+    {
+      "model": "9004S",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/9004s-stainless-steel-handle.webp",
+      "crop": [
+        100,
+        190,
+        890,
+        720
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    },
+    {
+      "model": "LC04 85/60",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/lc04-85-60-lock-case-5.webp",
+      "crop": [
+        220,
+        40,
+        480,
+        900
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    },
+    {
+      "model": "70SN / 70 mm",
+      "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/70sn-lock-cylinder.webp",
+      "crop": [
+        0,
+        120,
+        800,
+        650
+      ],
+      "exactSourcePixels": true,
+      "isProductCad": false
+    }
+  ]
+}

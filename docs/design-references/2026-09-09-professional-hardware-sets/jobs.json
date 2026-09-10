@@ -1,0 +1,390 @@
+{
+  "date": "2026-09-10",
+  "items": [
+    {
+      "id": "00",
+      "title": "客户指定修图 · 锁体 / 锁胆 / 拉手",
+      "state": "实物原图组合 · Blender",
+      "slugs": [
+        "lc04-85-60-lock-case",
+        "70sn-lock-cylinder",
+        "9004s-stainless-steel-handle"
+      ],
+      "reason": "按客户最新要求将三张实物原图直接排在一起，原始产品像素保留，不重新生成旋钮或孔位。仅为选型展示，未确认成套；原生成组合已退回。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\00-real-source-selection.png",
+          "name": "00-real-source-selection.png",
+          "blend": "blender/00-real-source-selection.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-bce19850-d601-47d0-95c3-89ea73941849.png",
+          "name": "00-stone-candidate.png",
+          "qa": "石材候选：4柱、上2下3面板孔可见；无明显白底块。锁芯固定孔和钥匙细节仍需与原图逐项校准，未过严格产品发布验收。",
+          "archiveOnly": true
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-5ea80d98-718b-47da-9d14-abb85fb3f15e.png",
+          "name": "00-box-candidate.png",
+          "qa": "样品盒候选：移除合页、独立锁胆格、完整显示长面板；比例改善但透视图不能证明实际尺寸。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "title": "307 配套",
+      "state": "已确认部件关系 · Blender",
+      "slugs": [
+        "307-panic-exit-device",
+        "015-panic-exit-device-trim",
+        "9080e-panic-exit-device-trim",
+        "072-panic-exit-device-lock-case"
+      ],
+      "reason": "307页面明确072锁体及015或9080E外执手。新目录072实物已核对双欧规孔；本版展示307、072、015原图。锁芯仍按实际门厚另选，本图不宣称完整供货套装或安装比例。",
+      "assets": [
+        {
+          "name": "01-source-307-components.png",
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/blender/01-source-307-components.png",
+          "qa": "307与072、015有明确型号关系；完整源照片部件保留，不用任意锁芯填补门厚配置。",
+          "blend": "blender/01-source-307-components.blend",
+          "archiveOnly": false
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "311 配套",
+      "state": "资料待补",
+      "slugs": [
+        "311-panic-exit-device"
+      ],
+      "reason": "尚无具体外执手及锁芯配置的完整证据，不拼成销售套装。"
+    },
+    {
+      "id": "03",
+      "title": "LC14 插芯锁组合",
+      "state": "资料待补",
+      "slugs": [
+        "lc14-85-50mm-lock-case"
+      ],
+      "reason": "LC14单品场景见11；组合缺具体拉手/锁胆配置依据，不把LC04图改名为LC14。"
+    },
+    {
+      "id": "04",
+      "title": "主匙系统",
+      "state": "资料待补",
+      "slugs": [],
+      "reason": "系统层级说明不能证明任意实物已按同一主匙结构配钥匙；缺对应配置及实物组。"
+    },
+    {
+      "id": "05",
+      "title": "305 配套",
+      "state": "资料待补",
+      "slugs": [
+        "305-fire-door-panic-exit-device"
+      ],
+      "reason": "缺具体外执手与锁芯配套依据。"
+    },
+    {
+      "id": "06",
+      "title": "玻璃门五金组合",
+      "state": "资料待补",
+      "slugs": [],
+      "reason": "尚未指定能够配套的夹具、转轴、拉手、锁夹型号和玻璃条件，不任意拼装。"
+    },
+    {
+      "id": "07",
+      "title": "564 夜锁",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "564-night-latch-and-rim-lock"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\07-source-564-night-latch-and-rim-lock.png",
+          "name": "07-source-564-night-latch-and-rim-lock.png",
+          "blend": "blender/07-source-564-night-latch-and-rim-lock.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-b3b6276f-66bd-4d8f-bf69-a42ccb17e8f2.png",
+          "name": "07-564-candidate.png",
+          "qa": "主结构与4个可见固定孔保留，无明显白边；纹理有生成重绘，候选不能作微观细节依据。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "607 SSET 管状锁",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "607-sset-tubular-lock"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\08-source-607-sset-tubular-lock.png",
+          "name": "08-source-607-sset-tubular-lock.png",
+          "blend": "blender/08-source-607-sset-tubular-lock.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-f17561ed-20d0-4881-9e53-6a603c5cdcfa.png",
+          "name": "08-607-candidate.png",
+          "qa": "两个球钮、玫瑰盖、锁舌及源图外露底架保留；内部细小结构与钥匙孔仍需严格校准。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "title": "587 SSET 球形锁",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "587-sset-light-duty-cylindrical-lock"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\09-source-587-sset-light-duty-cylindrical-lock.png",
+          "name": "09-source-587-sset-light-duty-cylindrical-lock.png",
+          "blend": "blender/09-source-587-sset-light-duty-cylindrical-lock.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-63acee74-06a7-4464-94f0-0bec070e7f85.png",
+          "name": "09-587-candidate.png",
+          "qa": "保留银色外件及镀锌底架；内部细节与锁头孔有重绘风险，不作为实物精细图发布。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "70BK 锁胆 · 依真实铜色照片",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "70bk-lock-cylinder"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\10-source-70bk-lock-cylinder.png",
+          "name": "10-source-70bk-lock-cylinder.png",
+          "blend": "blender/10-source-70bk-lock-cylinder.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/docs/design-references/2026-09-09-professional-hardware-sets/blender/10-70bk-blender.png",
+          "name": "10-70bk-blender.png",
+          "qa": "Blender照片板，不是产品CAD。原图保留区域RGB断言通过；仅处理背景、角标和1像素边缘透明度。源图细节分辨率有限。",
+          "archiveOnly": true
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-35665ae2-d667-441d-9961-0ebdf9bb7669.png",
+          "name": "10-70bk-rejected.png",
+          "qa": "退回：固定孔深度/螺纹表现被重绘，不能出货使用。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "LC14 四柱锁体",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "lc14-85-50mm-lock-case"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\11-source-lc14-85-50mm-lock-case.png",
+          "name": "11-source-lc14-85-50mm-lock-case.png",
+          "blend": "blender/11-source-lc14-85-50mm-lock-case.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-cc0c4b91-c612-4dd8-aca1-f71f1cacdd00.png",
+          "name": "11-lc14-candidate.png",
+          "qa": "4柱与上2下3面板孔保留，孔内透景仍有残留亮块风险；严格发布前要使用源照片层校准。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "316-S 推杠",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "316-s-panic-exit-device"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\12-source-316-s-panic-exit-device.png",
+          "name": "12-source-316-s-panic-exit-device.png",
+          "blend": "blender/12-source-316-s-panic-exit-device.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-e4a63e41-126b-4870-a5e0-94bb04496243.png",
+          "name": "12-316s-candidate.png",
+          "qa": "轮廓与黑色弯臂保留；左壳侧孔比原图更显著，严格发布前须回用源照片结构。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "DC02 门协调器",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "dc02-door-coordinator"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\13-source-dc02-door-coordinator.png",
+          "name": "13-source-dc02-door-coordinator.png",
+          "blend": "blender/13-source-dc02-door-coordinator.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-7dd59bc2-3996-4c51-8dc3-31a0289f546d.png",
+          "name": "13-dc02-candidate.png",
+          "qa": "主体布局保留；螺丝头槽形有重绘，紧固件图不能作为精确物料清单。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "AR4-110 阿根廷系列",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "hyde-ar4-110-mortise-lock"
+      ],
+      "reason": "原实物照片完整放入可编辑的Blender资料版面；不抠除孔内白底、不重画金属结构。已发布规格直接抄录至右侧。早期生成稿仅归档。",
+      "assets": [
+        {
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets\\blender\\14-source-hyde-ar4-110-mortise-lock.png",
+          "name": "14-source-hyde-ar4-110-mortise-lock.png",
+          "blend": "blender/14-source-hyde-ar4-110-mortise-lock.blend",
+          "qa": "原图像素校验通过，产品未重画；已核查成图没有部件裁切或文字溢出。这是照片版面与背景场景，不是产品CAD。",
+          "archiveOnly": false
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-d4c0c696-3601-4701-b9a5-77403bed8659.png",
+          "name": "14-ar4-110-candidate.png",
+          "qa": "主体孔位与2把原式钥匙保留，未生成欧规锁胆；钥匙齿仍有重绘风险。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "6068 执手锁",
+      "state": "资料待补",
+      "slugs": [],
+      "reason": "未找到匹配的目录产品记录，不能替代为其他拉手。"
+    },
+    {
+      "id": "16",
+      "title": "窄边铝合金锁体",
+      "state": "资料待补",
+      "slugs": [],
+      "reason": "描述缺唯一型号，不能据类目名称选任意产品。"
+    },
+    {
+      "id": "17",
+      "title": "90mm 管状锁舌",
+      "state": "资料待补",
+      "slugs": [],
+      "reason": "缺对应型号与实物，不把其他尺寸产品拉长。"
+    },
+    {
+      "id": "18",
+      "title": "308 推杠",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "308-panic-exit-device"
+      ],
+      "reason": "现有实物可做单品；规格为空，不绘制尺寸或安装。",
+      "assets": [
+        {
+          "qa": "完整原图与产品像素保留；仅建造纸板与背景场景，不宣称产品CAD或配套。",
+          "blend": "blender/18-source-308-panic-exit-device.blend",
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/blender/18-source-308-panic-exit-device.png",
+          "archiveOnly": false,
+          "name": "18-source-308-panic-exit-device.png"
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-386af3b1-9552-4c14-93c1-f3da2b7a86f0.png",
+          "name": "18-308-candidate.png",
+          "qa": "仅单品展示；生成稿仍保留角标且螺丝细节有变化，未过最终产品发布验收。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "310 推杠",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "310-panic-exit-device"
+      ],
+      "reason": "保留原厂红横杆/黑端壳；单品展示不依赖未知外执手配置。",
+      "assets": [
+        {
+          "qa": "完整原图与产品像素保留；仅建造纸板与背景场景，不宣称产品CAD或配套。",
+          "blend": "blender/19-source-310-panic-exit-device.blend",
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/blender/19-source-310-panic-exit-device.png",
+          "archiveOnly": false,
+          "name": "19-source-310-panic-exit-device.png"
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-aaa5e2f2-0d8f-4376-b2d5-6c5eb4058130.png",
+          "name": "19-310-candidate.png",
+          "qa": "原图正面构图与颜色保持；未确认成套，不据图宣称其他配件包含。",
+          "archiveOnly": true
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "035 外执手",
+      "state": "实物原图排版 · Blender",
+      "slugs": [
+        "035-panic-exit-device-trim"
+      ],
+      "reason": "原路径已由并行目录工作改名为035-panic-exit-device-trim；已核对相同型号实物。307真实关系见01，不能因此将035配入307。",
+      "assets": [
+        {
+          "qa": "完整原图与产品像素保留；仅建造纸板与背景场景，不宣称产品CAD或配套。",
+          "blend": "blender/20-source-035-panic-exit-device-trim.blend",
+          "source": "C:\\Users\\johns\\Downloads\\ai-website-cloner-template-master\\docs\\design-references\\2026-09-09-professional-hardware-sets/blender/20-source-035-panic-exit-device-trim.png",
+          "archiveOnly": false,
+          "name": "20-source-035-panic-exit-device-trim.png"
+        },
+        {
+          "source": "C:/Users/johns/.codex/generated_images/01a085d0-c428-7210-b89a-dc7c4cd8cf02/exec-bfaee3c9-22a2-498f-beaa-a234cae15035.png",
+          "name": "20-035-rejected.png",
+          "qa": "退回：底板下端与钥匙环被桌面遮挡并融合，不是自然完整的产品摆放。不得作为成品图片发布。",
+          "archiveOnly": true
+        }
+      ]
+    }
+  ]
+}

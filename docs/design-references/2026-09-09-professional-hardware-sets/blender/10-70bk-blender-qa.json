@@ -1,0 +1,23 @@
+{
+  "id": "10-70bk-blender",
+  "model": "70BK",
+  "source": "C:/Users/johns/Downloads/ai-website-cloner-template-master/public/images/products/70bk-lock-cylinder.webp",
+  "logoRect": [
+    0,
+    0,
+    200,
+    120
+  ],
+  "outputDirectory": "C:/Users/johns/Downloads/ai-website-cloner-template-master/docs/design-references/2026-09-09-professional-hardware-sets/blender",
+  "technique": "Retained-RGB source-photo plane; alpha removes connected backdrop only; stage geometry only. Not product CAD.",
+  "retainedPixels": 83823,
+  "rgbAssertion": "passed",
+  "sourceSize": [
+    800,
+    800
+  ],
+  "textureSize": [
+    350,
+    496
+  ]
+}
