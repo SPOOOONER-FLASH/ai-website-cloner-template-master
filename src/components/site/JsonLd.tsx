@@ -1,4 +1,5 @@
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
+import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
 import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
@@ -226,7 +227,18 @@ function isoDuration(seconds: number): string {
 
 function videoObjects(product: Product) {
   return (product.videos ?? [])
-    .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds && v.uploadDate)
+    /*
+      isoUploadDate() rather than the raw field. Google reported both
+      「uploadDate 缺少时区信息」and「uploadDate 的日期时间值无效」against this exact
+      property on 2026-09-10 — one cause, a bare "2026-09-04" where VideoObject requires
+      an ISO 8601 DateTime with an offset. A VideoObject Google will not parse earns no
+      video result, and 191 product clips ride on this one string.
+
+      A value that cannot be normalised drops the whole video from the markup: absent is
+      a lost rich result, malformed is an error on the page.
+    */
+    .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds)
+    .filter((v) => isoUploadDate(v.uploadDate))
     .map((v) => ({
       "@type": "VideoObject" as const,
       name: v.label,
@@ -238,7 +250,7 @@ function videoObjects(product: Product) {
       description: product.summary || v.label,
       thumbnailUrl: absoluteUrl(v.poster!.src ?? ""),
       contentUrl: absoluteUrl(v.src),
-      uploadDate: v.uploadDate!,
+      uploadDate: isoUploadDate(v.uploadDate)!,
       duration: isoDuration(v.durationSeconds!),
     }));
 }

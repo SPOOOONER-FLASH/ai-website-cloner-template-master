@@ -168,6 +168,90 @@ curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://cantonlock.c
 
 ---
 
+## 1a. ⚠ 2026-09-10：重定向规则已经旧了三天，必须重跑一次 nginx reload
+
+**这一条现在最重要，因为它正在损失流量。**
+
+### 出了什么事
+
+Bing 的报告里有「38 个页面标题重复」「4 个页面缺 h1」。查下来是同一个原因：
+**产品改名之后的旧网址，服务器上没有 301，只有网页里的 JS 跳转。**
+
+区别在于：浏览器会跟着 JS 跳转走，人看不出问题；**搜索引擎看到的是一个 200 的空页面**，
+标题是网站通用标题、没有 h1。所以 Bing 报了重复标题，而且旧网址积累的排名传不到新网址。
+
+实测（2026-09-10）：
+
+| 网址 | 现在返回 | 应该返回 |
+|---|---|---|
+| `/products/hardware-accessories/ds011-door-flush-bolt/` | **200**（错） | 301 → `ds011-door-stopper/` |
+| `/products/door-hinges/stainless-steel-door-hinge/` | 301（对） | 301 |
+
+对的那条是类目搬迁，规则在 2026-09-07 生成的那份文件里；错的那条是产品改名，
+**在那之后才发生，服务器上那份文件还是 09-07 的旧版。**
+
+### 现在有多少条没生效
+
+| | 条数 |
+|---|---|
+| 服务器上正在用的（2026-09-07 生成） | 16 |
+| 仓库里最新的 | **48** |
+| 其中新增的 | DS011 门吸改名、逃生器械 16 个型号改名 |
+
+### 你要做的（约 3 分钟）
+
+**第一步：把新规则拉到服务器上。** SSH 登录服务器后：
+
+```bash
+cd /path/to/site && git pull
+```
+
+看到 `deploy/nginx/taxonomy-redirects.conf` 出现在更新列表里就对了。
+（`/path/to/site` 换成你服务器上的实际路径，就是第 1 节里用的那个。）
+
+**第二步：把它复制到 nginx 的配置目录。** 用第 1 节里已经在用的那个路径 ——
+如果你不确定，**停在这里发我一张 `ls /etc/nginx/conf.d/` 的截图**，不要猜。
+
+**第三步：先检查，再重载。这两步的顺序不能反。**
+
+```bash
+sudo nginx -t
+```
+
+**成功长这样**（必须两行都有）：
+
+```
+nginx: configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
+**看到任何别的输出就停下，发我截图，不要往下做。** 配置有错的时候执行重载，
+整个网站会下线。
+
+检查通过了再：
+
+```bash
+sudo nginx -s reload
+```
+
+**这条命令成功时不打印任何东西。** 没有输出就是成功了 —— 不要因为没反应就再敲一遍。
+
+**第四步：验证。** 在你自己电脑上：
+
+```bash
+curl -I https://cantonlock.com/products/hardware-accessories/ds011-door-flush-bolt/
+```
+
+**成功长这样**：第一行是 `HTTP/2 301`，并且有一行
+`location: https://cantonlock.com/products/hardware-accessories/ds011-door-stopper/`。
+
+如果第一行还是 `HTTP/2 200`，说明配置没被加载 —— 发我截图，不要重复重载。
+
+> 做完这一条之后，Bing 报的「重复标题」和「缺 h1」会在它下次抓取时自己消失，
+> 不需要另外处理。
+
+---
+
 ## 1b. 改 index.php 跳转规则（2026-09-04 新增，只做一次）
 
 ### 为什么要做

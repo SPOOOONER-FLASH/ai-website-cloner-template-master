@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
+import { isoUploadDate } from "@/lib/upload-date";
 import { categories } from "@/data/categories";
 import {
   getAllProductParams,
@@ -204,14 +205,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       clip but incomplete metadata are simply listed without one.
     */
     const videos: SitemapVideo[] = (product.videos ?? [])
-      .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds && v.uploadDate)
+      /* Same normalisation as the JSON-LD — see src/lib/upload-date.ts. A bare date
+         here is what Google's video report rejected. */
+      .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds)
+      .filter((v) => isoUploadDate(v.uploadDate))
       .map((v) => ({
         title: xmlText(v.label),
         thumbnail_loc: absoluteUrl(v.poster!.src ?? ""),
         description: xmlText(product.summary || v.label),
         content_loc: absoluteUrl(v.src),
         duration: v.durationSeconds!,
-        publication_date: v.uploadDate!,
+        publication_date: isoUploadDate(v.uploadDate)!,
       }));
     urls.push(
       ...entry(
