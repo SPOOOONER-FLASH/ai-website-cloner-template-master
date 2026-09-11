@@ -199,6 +199,17 @@ of all optional undocumented features. Verify orthographic geometry before beaut
 - Commit each finished, tested objective promptly; do not accumulate unrelated work.
 - Stage only explicit paths with `git add -- <paths>`. Never use unreviewed bulk staging in
   a dirty shared tree.
+- **After a rebuild, `git add out/` BEFORE committing. The pathspec form does not add
+  untracked files.** `git commit -- out/` commits only *tracked* files matching that
+  path; every file the build newly created is untracked and is silently left behind. On
+  2026-09-10 that shipped a release missing 1,871 files — two JavaScript chunks the
+  homepage `<script>`-tags referenced, and all 16 directories from that day's product
+  renames. The HTML returned 200, the chunks 404'd, and the client's browser showed
+  "This page couldn't load". The pathspec exists to avoid sweeping up the other agent's
+  work; it does not protect you from omitting your own new files. Stage explicitly
+  (`git add out/ out-rayen/`), then `git commit` — and check
+  `git status --short out/ | grep -c '^??'` reads 0 before pushing a release.
+
 - **Write the commit message to a file first, then `git commit -F <file>`.** Never chain a
   heredoc behind `&&` after `git add`: if the add fails — a stale `.git/index.lock` is
   enough — the `&&` short-circuits, the heredoc never runs, and a later append writes a
@@ -369,6 +380,68 @@ first. If `out/` is already dirty, that agent has the release-build baton; the o
 must not rebuild or touch `out/`. The release builder incorporates the latest committed
 source from both agents, runs `npm run deploy:prep`, commits the complete generated diff,
 and records production verification separately. This is a soft handoff, not a lock.
+
+### A regenerator that has fallbacks will quietly undo work it cannot see
+
+Client instruction, 2026-09-11: write these three into the rules.
+
+**1. `node scripts/translate-products-es.mjs --write` is no longer safe on this catalogue.
+Use `--names-only`.**
+
+On 2026-09-11 a one-field fix — `nameEs` held the category name on 582 records — was
+applied by re-running the whole translator. The diff came back at 557 files and 830
+changed spec rows, and a sample read:
+
+```
+-      "label": "Doble distancia entre ejes"
+-      "value": "72 y 92 mm (con perforación para cilindro)"
++      "label": "Centre distances"
++      "value": "72mm and 92mm (cylinder hole)"
+```
+
+Spanish spec rows **reverting to English**. Those labels are not in `SPEC_LABELS_ES` —
+they were translated later, by hand or in review — so the regeneration took the
+"no glossary entry, keep the English row" branch and discarded the better text. The
+generator could not see that its own output had been improved since it last ran.
+
+The whole change was reverted and reapplied as `--names-only`. **A targeted change gets a
+targeted write.** Before any full regeneration here, `SPEC_LABELS_ES` / `SPEC_VALUES_ES`
+must first catch up with what already exists in `specsEs` — that is its own task, with its
+own diff to read, not a step inside somebody else's fix.
+
+Generalise it: **any generator with a "fall back to the source value" branch will silently
+undo hand-improved output.** Before re-running one across a directory, ask what it will do
+to rows that somebody has since made better, and read the diff by field, not by file count.
+
+**2. Make the fallback fail instead. It pays for itself immediately.**
+
+The same fix replaced `nameEs = categories[...] ?? product.name` with a `throw` on an
+unmapped name. Hours later, merging another session's "雷茵第五批" (44 new pull handles),
+it fired:
+
+```
+Error: No Spanish product name for "Brass Pull Handle" (CSM1).
+```
+
+The old line would have named those seven handles "Accesorios de herrajes" — the exact
+defect just cleaned off 582 records, reintroduced by the merge, with nothing to notice it.
+A missing row costs one line in `PRODUCT_NAMES_ES`; a silent plausible default costs weeks
+of pages claiming to be their own category. **When a default would be wrong rather than
+merely incomplete, stop the run.**
+
+**3. `npm run seo:deadlinks` does not cover `out-rayen/`.**
+
+It audits `out/` — 1,371 pages at last run. The Chinese mirror is not in it. On 2026-09-11
+a rebuild deleted seven `out-rayen/images/products/*.webp` and a grep showed sixteen pages
+still naming those files; the audit had just passed, which proved nothing about
+`out-rayen`. The deletions turned out to be correct — the other session had moved that
+library to `/images/products-rayen/` (822 files) and the new pages point at the new path —
+but the grep matched a BASENAME, not a path.
+
+Two rules from that: a green `seo:deadlinks` says nothing about `out-rayen`, so check those
+assets by path yourself; and when checking whether a deleted asset is still referenced,
+compare the **full path**, because a rename that keeps the filename looks exactly like a
+break.
 
 ### Decisions the client made are locked by tests, not by comments
 
