@@ -57,8 +57,29 @@ const DRY = argv.includes("--dry");
   padding, not product. 0.8–1.25 is the band where the crop stays inside the margin the
   photographer already left. Outside it, the crop starts eating metal.
 */
-const MIN_RATIO = 0.8;
-const MAX_RATIO = 1.25;
+/*
+  2026-09-11: the band above is gone, and this is why.
+
+  The client asked for a second pass over every image (「缩放对不对」).
+  scripts/audit-rayen-images.mjs simulated the real 1:1 crop instead of reasoning about
+  ratios, and four plates sitting comfortably INSIDE the old 0.8–1.25 band lost product:
+
+    ul690-lever-handle-11   1.23  — tip of the lever cut off, RAYEN mark sliced in half
+    ul690-lever-handle-12   1.20  — the same
+    t2083-stainless-...-4   0.91  — top of the handle clipped
+    hb2900-flip-up-...-2    1.08  — an end of the grab bar clipped
+
+  A ratio cannot tell a generous margin from a part that runs to the edge of the frame, so
+  the band was measuring the wrong thing. Now any plate that is not square gets padded.
+  Padding is lossless — it extends the plate's own field colour, see fieldColour — and
+  idempotent, so the cost of being wrong is a file rewritten for a twelve-pixel sliver.
+  The cost of the old rule being wrong was a buyer looking at a handle with its end missing.
+
+  Scenes are still left full-bleed. That is decided by cornersAreWhite, and it is a
+  different question: cropping a photograph of a corridor loses corridor, not product.
+*/
+const MIN_RATIO = 0.995;
+const MAX_RATIO = 1.005;
 
 /** A corner is "white" if every channel is above this. Plates are shot on paper, not on #fff. */
 const WHITE_FLOOR = 238;

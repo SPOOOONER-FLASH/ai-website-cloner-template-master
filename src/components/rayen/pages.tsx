@@ -107,12 +107,24 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         <section className="py-16 md:py-24">
           <Shell>
             <SectionHead eyebrow={s.productsEyebrow} title={s.productsTitle} intro={s.productsIntro} />
-            <div className="mt-10 grid grid-cols-2 gap-px bg-[var(--color-line)] md:mt-14 md:grid-cols-3 lg:grid-cols-5">
+            {/*
+              A wrapping flex row, not a fixed five-column grid.
+
+              The hairlines between these cards are a coloured gap showing through from
+              behind, so a short last row does not render as empty space — it renders as a
+              slab of grey. Six categories on a five-column grid left four empty cells, most
+              of a second row, and the client sent a screenshot of it on 2026-09-11.
+
+              Letting the cards grow means the last row fills the width whatever the category
+              count happens to be that week. The basis values keep the intended 2 / 3 / 5
+              rhythm on rows that are full; only a short row stretches.
+            */}
+            <div className="mt-10 flex flex-wrap gap-px bg-[var(--color-line)] md:mt-14">
               {categories.map((category) => (
                 <a
                   key={category.slug}
                   href={localePath(locale, `/products/${category.slug}/`)}
-                  className="group bg-white p-4 transition-colors hover:bg-[var(--color-surface-alt)]"
+                  className="group grow basis-[calc(50%-1px)] bg-white p-4 transition-colors hover:bg-[var(--color-surface-alt)] md:basis-[calc(33.333%-1px)] lg:basis-[calc(20%-1px)]"
                 >
                   {category.image?.src ? (
                     <Photo src={category.image.src} alt={category.name} aspect="1 / 1" />
