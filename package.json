@@ -63,15 +63,16 @@
     "rayen:mirror:report": "node scripts/build-chinese-mirror.mjs --report",
     "rayen:assets": "node scripts/import-rayen-assets.mjs",
     "rayen:site": "node scripts/build-rayen-site.mjs",
-    "rayen:images": "node scripts/build-rayen-product-images.mjs && node scripts/delocalize-drawings.mjs && node scripts/square-rayen-plates.mjs",
-    "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check && node scripts/delocalize-drawings.mjs --check && node scripts/square-rayen-plates.mjs --check",
+    "rayen:images": "node scripts/build-rayen-product-images.mjs && node scripts/delocalize-drawings.mjs && node scripts/square-rayen-plates.mjs && node scripts/brand-rayen-images.mjs",
+    "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check && node scripts/delocalize-drawings.mjs --check && node scripts/square-rayen-plates.mjs --check && node scripts/brand-rayen-images.mjs --check",
     "copy:parity": "node scripts/audit-translation-parity.mjs",
     "copy:register": "node scripts/audit-copy-register.mjs",
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",
     "union:split": "node scripts/split-union-image-packs.mjs",
     "rayen:plates": "node scripts/square-rayen-plates.mjs",
-    "rayen:drawings": "node scripts/delocalize-drawings.mjs"
+    "rayen:drawings": "node scripts/delocalize-drawings.mjs",
+    "rayen:brand": "node scripts/brand-rayen-images.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
