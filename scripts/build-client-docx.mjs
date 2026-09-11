@@ -32,7 +32,8 @@
  */
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
-import { basename } from "node:path";
+import { basename, join } from "node:path";
+import { homedir } from "node:os";
 import {
   AlignmentType,
   BorderStyle,
@@ -57,6 +58,13 @@ const DOCUMENTS = [
     out: "HYDE-操作手册-CLIENT-RUNBOOK.docx",
     title: "HYDE 操作手册",
     subtitle: "Spooner 的服务器 / Cloudflare / Search Console 操作指南",
+  },
+  {
+    source: "docs/hyde/2026-09-11-weekend-handoff.md",
+    out: "9.11-周末出差-HYDE-工程交接.docx",
+    title: "9.11 周末出差 HYDE 工程交接",
+    subtitle: "写给下一个会话：停在哪、卡在哪、接着做什么",
+    alsoTo: "desktop",
   },
   {
     source: "docs/hyde/2026-09-10-xiaohongshu-recommendations.md",
@@ -378,6 +386,23 @@ for (const doc of DOCUMENTS) {
   try {
     writeFileSync(target, buffer);
     console.log(`✔ ${target}  (${Math.round(buffer.length / 1024)} KB)`);
+    /*
+      Some documents also go to a folder the client opens directly. Client instruction,
+      2026-09-11: the weekend handoff should land in a `hyde` folder on the Desktop as
+      well as in the repository, because that is where they look for it while travelling.
+      A failure to write there is reported, never fatal — the repository copy is the one
+      that must exist.
+    */
+    if (doc.alsoTo === "desktop") {
+      try {
+        const desktop = join(homedir(), "Desktop", "hyde");
+        if (!existsSync(desktop)) mkdirSync(desktop, { recursive: true });
+        writeFileSync(join(desktop, doc.out), buffer);
+        console.log(`   ↳ 也写到 ${join(desktop, doc.out)}`);
+      } catch (error) {
+        console.log(`   ⚠ 桌面副本写不了（${error.code ?? error.message}）——仓库里那份是准的`);
+      }
+    }
   } catch (error) {
     /*
       Windows locks a .docx while Word has it open, and the client reads these documents
