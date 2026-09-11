@@ -20,6 +20,7 @@ import item14 from "../../../content/news/trim-handle-or-panic-bar.json";
 import item15 from "../../../content/news/what-a-frameless-glass-door-needs.json";
 import item16 from "../../../content/news/what-a-test-report-actually-covers.json";
 import item17 from "../../../content/news/what-documents-you-can-actually-get.json";
-import item18 from "../../../content/news/what-oem-actually-changes.json";
+import item18 from "../../../content/news/what-it-takes-to-tool-a-new-exit-device.json";
+import item19 from "../../../content/news/what-oem-actually-changes.json";
 
-export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18] as unknown as NewsArticle[];
+export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19] as unknown as NewsArticle[];

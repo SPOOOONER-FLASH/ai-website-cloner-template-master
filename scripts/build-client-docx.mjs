@@ -31,7 +31,7 @@
  *   node scripts/build-client-docx.mjs --list     # show what it would build
  */
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
 import { basename } from "node:path";
 import {
   AlignmentType,
@@ -296,6 +296,7 @@ function convert(markdown) {
   return children;
 }
 
+
 /* ------------------------------------------------------------------ build */
 
 if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
@@ -306,6 +307,20 @@ if (process.argv.includes("--list")) {
   }
   process.exit(0);
 }
+
+/*
+  Word writes a `~$name.docx` lock file next to any open document and leaves it behind
+  on a crash. It is 162 bytes of nothing, it is not a deliverable, and on 2026-09-10 one
+  was staged for commit. .gitignore now covers `~$*`; this is the belt to that braces.
+*/
+for (const stale of readdirSync(OUT_DIR)) {
+  if (stale.startsWith("~$")) {
+    unlinkSync(`${OUT_DIR}/${stale}`);
+    console.log(`   removed Word lock file ${stale}`);
+  }
+}
+
+const skipped = [];
 
 for (const doc of DOCUMENTS) {
   if (!existsSync(doc.source)) {
@@ -366,8 +381,29 @@ for (const doc of DOCUMENTS) {
       they asked for over a file handle.
     */
     if (error.code !== "EBUSY" && error.code !== "EPERM") throw error;
-    const stamped = target.replace(/.docx$/, `-${new Date().toISOString().slice(0, 10)}.docx`);
-    writeFileSync(stamped, buffer);
-    console.log(`⚠ ${target} 正在被 Word 打开，改写到 ${stamped}`);
+    /*
+      SKIP, do not write a dated copy.
+
+      The first version wrote `...-2026-09-10.docx` alongside the locked file so the
+      build never failed. That produced exactly the problem this whole script exists to
+      avoid: on 2026-09-10 the client had two documents with almost the same name, one
+      of them three sections out of date, and no way to tell which was which.
+
+      Comparing the two to skip the redundant write does not work either — a .docx embeds
+      its creation time inside the compressed core.xml, so identical Markdown packs to
+      different bytes every run.
+
+      So the honest behaviour is to build nothing and say why. The Markdown is the source
+      of truth and this script is instant; regenerating after closing Word costs seconds,
+      and one file that is either current or absent beats two files of unknown vintage.
+    */
+    skipped.push(doc.out);
+    console.log(`⏭ ${target} 正在 Word 里打开，已跳过（没有生成第二份）`);
   }
+}
+
+if (skipped.length) {
+  console.log(`
+关掉 Word 再跑一次就会更新：${skipped.join("、")}`);
+  process.exitCode = 1;
 }

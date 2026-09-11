@@ -1,0 +1,64 @@
+{
+  "slug": "what-it-takes-to-tool-a-new-exit-device",
+  "title": "Five Months of Tooling: How the 311 Exit Device Was Made",
+  "kind": "insight",
+  "publishedAt": "2026-09-11",
+  "summary": "A customer called at eleven at night asking for a price, came to the factory the next afternoon with a sample, and asked whether we could make it. Three moulds, three toolmakers, one pause of over a year, and five months of trial-and-correction later, the 311 existed. This is what buying a custom exit device actually costs a factory — and why a lead time on a tooled product is not the same number as a lead time on a catalogue one.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "body": [
+    "The phone rang at eleven at night and somebody was still in the office to answer it. The caller wanted unit prices on exit devices we already make. We quoted, and then the conversation turned: he wanted to come and see the parts in his hands, the next day.",
+    "He arrived the following afternoon with a colleague. They spent the visit going through the range, and they found several products that suited their own factory — not one. Then they produced a sample of something we did not make, and asked whether we could produce it. We said yes. That sample became the 311.",
+    "What follows is not a marketing story about responsiveness. It is an account of what the yes actually committed us to, written down because buyers asking for a custom exit device are quoted a price and a lead time, and almost never told what sits underneath them.",
+    "THREE MOULDS, THREE DIFFERENT TRADES. An exit device is not one material, so it is not one mould. The 311 needed three: an ABS mould for the push bar body, a steel stamping die for the pressed components, and a zinc-alloy die-casting mould for the cast parts. Before any of them could be cut there was wire-cutting and drawing — the geometry has to be fixed on paper and in the electrode before it is fixed in steel.",
+    "Each of those three moulds belongs to a different craftsman. They are not interchangeable skills: the man who can hold a tolerance in a zinc die is not the man who knows how ABS shrinks as it cools, and neither of them sets up a stamping die. So every correction is a three-way conversation, and a change to one part propagates into the other two. When a problem appeared in trial, all three had to agree on what the fix was before anyone cut metal.",
+    "THE PAUSE. The development then stopped for more than a year for reasons outside the project — the international situation at the time — and was picked up again afterwards. That gap is worth stating plainly rather than editing out of the story. Tooling programmes are not immune to the world around them, and a buyer who is told a tooling schedule should know that the schedule assumes nothing interrupts it.",
+    "THREE MONTHS TO CUT, FIVE MONTHS TO FINISH. Once the work resumed, the complete set of three moulds was finished in three months. That is the number people expect to hear, and it is the smaller half of the truth. What followed was trial shots — and trials find things. Where a trial showed something had to change, the mould itself was modified and shot again. Then the zinc-alloy and stamped-steel components went through polishing, grinding, electroplating and assembly.",
+    "From first trial to a tool that could be trusted to run took **five months in total**. Not five months of waiting: five months of making a change, shooting again, and looking at what came out.",
+    "WHY ONE ANGLE DECIDES WHETHER IT WORKS. The requirement is not only that the part looks right. Every metal component has to fit every other one, and an exit device has to do a mechanical job while it does it. Get one angle wrong and the product does not work — it is not a cosmetic defect, it is a device that will not release. That is the difference between tooling a piece of hardware and tooling a piece of trim, and it is why trial-and-correction takes longer than cutting did.",
+    "WHAT THIS MEANS IF YOU ARE THE BUYER. Three things follow from this account, and they are the reason it is published rather than kept as an anecdote.",
+    "First, a tooled product and a catalogue product are two different purchases with two different clocks. If a supplier quotes the same lead time for both, one of those numbers is wrong.",
+    "Second, the tooling is where a custom exit device is either right or wrong, and it is decided months before the first production order ships. That is an argument for visiting, for asking to see trial shots, and for approving a sample rather than a drawing.",
+    "Third — and this is the part we would rather say out loud — the 311 exists because a customer brought us a sample and we spent five months on it. The moulds are ours. That means the geometry can be changed for the next customer who needs it changed, including the centre distance, which is why the 311 carries **both 72mm and 92mm cylinder centres** rather than one. A supplier who buys finished devices cannot offer that, because the mould is not theirs to alter.",
+    "Every product has a story behind it. This one took five months, three craftsmen and a phone call at eleven at night."
+  ],
+  "heroImage": {
+    "src": "/images/products/311-panic-exit-device.webp",
+    "ratio": "3 / 2",
+    "label": "The 311 panic exit device — a 900mm ABS and aluminium push bar, tooled in-house across ABS, stamped steel and zinc-alloy moulds",
+    "labelEs": "El dispositivo antipánico 311 — barra de empuje de 900 mm en ABS y aluminio, con utillaje propio en moldes de ABS, estampación de acero y inyección de zamak"
+  },
+  "relatedModels": [
+    "311",
+    "307",
+    "072"
+  ],
+  "seoTitle": "Five Months of Tooling: How the 311 Exit Device Was Made | Canton Hyland",
+  "seoDescription": "Three moulds, three toolmakers, a pause of over a year, three months to cut and five months of trial-and-correction. A factory account of what tooling a custom panic exit device actually involves, and why a tooled lead time differs from a catalogue one.",
+  "titleEs": "Cinco meses de utillaje: cómo se hizo el antipánico 311",
+  "summaryEs": "Un cliente llamó a las once de la noche pidiendo precio, vino a la fábrica la tarde siguiente con una muestra y preguntó si podíamos fabricarla. Tres moldes, tres matriceros, una pausa de más de un año y cinco meses de prueba y corrección después, el 311 existía. Esto es lo que le cuesta realmente a una fábrica un antipánico a medida — y por qué el plazo de un producto con utillaje propio no es el mismo número que el de un producto de catálogo.",
+  "bodyEs": [
+    "El teléfono sonó a las once de la noche y todavía había alguien en la oficina para contestar. Quien llamaba quería precios unitarios de antipánicos que ya fabricamos. Cotizamos, y entonces la conversación giró: quería venir a ver las piezas en sus manos, al día siguiente.",
+    "Llegó la tarde siguiente con un compañero. Dedicaron la visita a recorrer la gama y encontraron varios productos que encajaban en su propia fábrica — no uno. Después sacaron una muestra de algo que no fabricábamos y preguntaron si podíamos producirlo. Dijimos que sí. Esa muestra se convirtió en el 311.",
+    "Lo que sigue no es una historia comercial sobre capacidad de respuesta. Es el relato de a qué comprometía realmente ese sí, escrito porque a los compradores que piden un antipánico a medida se les da un precio y un plazo, y casi nunca se les cuenta lo que hay debajo.",
+    "TRES MOLDES, TRES OFICIOS DISTINTOS. Un antipánico no es un solo material, así que no es un solo molde. El 311 necesitó tres: un molde de ABS para el cuerpo de la barra, una matriz de estampación de acero para las piezas embutidas y un molde de inyección de zamak para las piezas fundidas. Antes de cortar cualquiera de ellos hubo electroerosión por hilo y delineación — la geometría se fija en el papel y en el electrodo antes de fijarse en el acero.",
+    "Cada uno de esos tres moldes pertenece a un artesano distinto. No son destrezas intercambiables: quien sostiene una tolerancia en una matriz de zamak no es quien sabe cómo contrae el ABS al enfriarse, y ninguno de los dos monta una matriz de estampación. Así que cada corrección es una conversación a tres bandas, y un cambio en una pieza se propaga a las otras dos. Cuando aparecía un problema en las pruebas, los tres tenían que coincidir en cuál era la solución antes de que nadie cortara metal.",
+    "LA PAUSA. El desarrollo se detuvo después más de un año por motivos ajenos al proyecto — la situación internacional de entonces — y se retomó más tarde. Vale la pena decirlo con claridad en vez de editarlo fuera del relato. Los programas de utillaje no son inmunes al mundo que los rodea, y un comprador al que se le da un calendario de utillaje debería saber que ese calendario da por supuesto que nada lo interrumpe.",
+    "TRES MESES PARA CORTAR, CINCO MESES PARA TERMINAR. Reanudado el trabajo, el juego completo de tres moldes se terminó en tres meses. Ése es el número que la gente espera oír, y es la mitad más pequeña de la verdad. Después vinieron las pruebas de molde — y las pruebas encuentran cosas. Donde una prueba mostraba que algo debía cambiar, se modificaba el propio molde y se volvía a probar. Luego las piezas de zamak y de acero estampado pasaron por pulido, esmerilado, galvanizado y montaje.",
+    "Desde la primera prueba hasta un utillaje fiable pasaron **cinco meses en total**. No cinco meses de espera: cinco meses de hacer un cambio, volver a inyectar y mirar lo que salía.",
+    "POR QUÉ UN SOLO ÁNGULO DECIDE SI FUNCIONA. El requisito no es sólo que la pieza tenga buen aspecto. Cada componente metálico tiene que encajar con todos los demás, y un antipánico tiene que cumplir además una función mecánica. Con un ángulo mal, el producto no funciona — no es un defecto estético, es un dispositivo que no libera. Ésa es la diferencia entre hacer el utillaje de un herraje y el de un embellecedor, y por eso la prueba y corrección lleva más tiempo que el corte.",
+    "QUÉ SIGNIFICA ESTO SI USTED ES EL COMPRADOR. De este relato se siguen tres cosas, y son la razón de publicarlo en vez de guardarlo como anécdota.",
+    "Primero, un producto con utillaje propio y uno de catálogo son dos compras distintas con dos relojes distintos. Si un proveedor da el mismo plazo para ambos, uno de esos números está mal.",
+    "Segundo, el utillaje es donde un antipánico a medida sale bien o mal, y eso se decide meses antes de que salga el primer pedido de producción. Es un argumento para visitar, para pedir ver las piezas de prueba y para aprobar una muestra en lugar de un plano.",
+    "Tercero — y ésta es la parte que preferimos decir en voz alta — el 311 existe porque un cliente nos trajo una muestra y le dedicamos cinco meses. Los moldes son nuestros. Eso significa que la geometría puede cambiarse para el siguiente cliente que lo necesite, incluida la distancia entre ejes, y por eso el 311 lleva **centros de cilindro de 72 mm y de 92 mm** en vez de uno solo. Un proveedor que compra dispositivos acabados no puede ofrecer eso, porque el molde no es suyo.",
+    "Cada producto tiene una historia detrás. Ésta llevó cinco meses, tres artesanos y una llamada a las once de la noche."
+  ],
+  "seoTitleEs": "Cinco meses de utillaje: cómo se hizo el antipánico 311 | Canton Hyland",
+  "seoDescriptionEs": "Tres moldes, tres matriceros, una pausa de más de un año, tres meses de corte y cinco meses de prueba y corrección. Relato de fábrica sobre lo que implica el utillaje de un antipánico a medida y por qué su plazo difiere del de catálogo."
+}
