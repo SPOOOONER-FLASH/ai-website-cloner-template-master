@@ -147,7 +147,11 @@ export const STRINGS: Record<RayenLocale, Strings> = {
     company: {
       eyebrow: "Company",
       title: "走进雷茵",
-      body: [],
+      body: [
+          "（RAYEN 雷茵）位于广东省中山市小榄镇。锁具制造经验始于 1999 年，从模具开发、冲压成型到装配检测在同一厂区内完成。小榄是国内机械门锁最集中的产区，压铸、电镀与热处理配套均在半小时车程内。",
+          "产品覆盖逃生推杠、球锁、执手锁、插芯锁体、锁芯、合页、玻璃门夹、闭门器与浴室配件。支持来图加工、来样加工与 OEM / ODM。",
+          "本站每一个型号都有独立规格表。未经确认的参数以短横线标注，不以估值填充 —— 五金件的孔位与尺寸在开模时即已固定，装配偏差的代价是整批返工，而不是一次退换。"
+    ],
       factoryEyebrow: "Factory",
       factoryTitle: "车间实拍",
       factoryIntro: "全部拍自小榄厂区，未经合成。",
@@ -160,7 +164,23 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       credentialsNote:
         "以上两项来自 1688 店铺的工商资质栏。证书扫描件我们还没有放上来 —— 放一张看不清编号的图片，和不放，对采购方来说没有区别；需要核验的客户可以直接向我们索取带编号的原件。",
       rulesTitle: "我们不会做的三件事",
-      rules: [],
+      rules: [
+          {
+                "n": "01",
+                "title": "不写没有把握的尺寸",
+                "body": "规格表里查不到的一栏是短横线，不是一个看起来合理的数字。金属件的孔位、螺距、方轴和背距在开模那一刻就定死了，装不上去不能靠现场修，买家为此损失的是一整批货。"
+          },
+          {
+                "n": "02",
+                "title": "不放生成的产品图",
+                "body": "本站所有产品图都是实物拍摄。AI 可以把照片修干净、去背景，但不能想象一件金属产品 —— 生成出来的执手看着像那么回事，孔位是错的，而这行的买家一眼就看得出来。"
+          },
+          {
+                "n": "03",
+                "title": "不借用别人的资质和场地",
+                "body": "网站上的车间照片全部拍自本厂。别家的展位、别家的展厅、别家名字的检测报告，一张都没有用。"
+          }
+    ],
       cta: "索取证书原件或检测报告",
     },
     oem: {
@@ -168,9 +188,42 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       title: "合作与定制",
       intro: "来图加工、来样加工与贴牌生产。下面是一般流程；具体周期和费用按件报，不给通用数字。",
       processTitle: "一般流程",
-      steps: [],
+      steps: [
+          {
+                "n": "01",
+                "title": "发来图纸或样品",
+                "body": "有图纸就发图纸（DWG、PDF、照片都可以）；没有图纸，寄一件样品同样可以做。关键是把安装面、孔位和方轴规格说清楚。"
+          },
+          {
+                "n": "02",
+                "title": "确认结构与尺寸",
+                "body": "我们回一份确认清单：材质、背距、门厚范围、面板尺寸、表面处理。有拿不准的地方我们会问，而不是按常见规格默认。"
+          },
+          {
+                "n": "03",
+                "title": "开模或改模",
+                "body": "结构与现有模具接近的，改模即可；结构不同的需要开新模。这一步的费用与周期按件报，不做通用报价。"
+          },
+          {
+                "n": "04",
+                "title": "打样确认",
+                "body": "样品寄到您手上，装到实际门上试过再决定。样品不对的地方在这一步改，比量产后改便宜得多。"
+          },
+          {
+                "n": "05",
+                "title": "量产与包装",
+                "body": "包装可按您的要求做，含贴牌、彩盒、说明书与条码。装箱数据在量产前给到。"
+          }
+    ],
       enquiryTitle: "发询价时带上这几项，回复会快很多",
-      enquiryItems: [],
+      enquiryItems: [
+          "产品类型与参考型号（本站型号即可）",
+          "门厚、背距、方轴规格",
+          "表面处理与颜色",
+          "预计数量与交期要求",
+          "是否需要贴牌、彩盒或说明书",
+          "有无图纸或样品"
+    ],
       cta: "发送询价",
     },
     contact: {
@@ -250,7 +303,11 @@ export const STRINGS: Record<RayenLocale, Strings> = {
     company: {
       eyebrow: "Company",
       title: "About RAYEN",
-      body: [],
+      body: [
+          "(RAYEN) is based in Xiaolan, Zhongshan, Guangdong. We have been making locks since 1999, and tooling, pressing, assembly and inspection all happen on one site. Xiaolan is the densest mechanical-lock district in China — die casting, plating and heat treatment are all within half an hour of the works.",
+          "The range covers panic exit devices, knob locks, lever handles, mortise cases, cylinders, hinges, glass door fittings, door closers and bathroom hardware. We manufacture to your drawing, to your sample, and under your brand.",
+          "Every model on this site has its own specification table. A dimension we have not confirmed is shown as a dash rather than an estimate — hole positions and sizes on metal hardware are fixed the moment the tool is cut, and getting one wrong costs a shipment, not a return."
+    ],
       factoryEyebrow: "Factory",
       factoryTitle: "Inside the plant",
       factoryIntro: "All photographed in our own workshop in Xiaolan. Nothing composited.",
@@ -263,7 +320,23 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       credentialsNote:
         "Both are listed on our 1688 storefront. The certificate scans are not published here yet — an image too small to read the number on is no better than none. Buyers who need to verify can ask us for the original, number and all.",
       rulesTitle: "Three things we will not do",
-      rules: [],
+      rules: [
+          {
+                "n": "01",
+                "title": "We do not publish a dimension we are not sure of",
+                "body": "A row we cannot confirm shows a dash, not a plausible-looking number. Hole centres, thread pitch, spindle size and backset are all fixed when the tool is cut. A part that will not fit cannot be corrected on site, and the buyer loses the shipment."
+          },
+          {
+                "n": "02",
+                "title": "We do not publish generated product images",
+                "body": "Every product photograph here is of the real part. AI can clean a photograph up and cut it out, but it cannot imagine a piece of metal — a generated lever looks about right and has the holes in the wrong place, which anyone in this trade sees at a glance."
+          },
+          {
+                "n": "03",
+                "title": "We do not borrow anyone else’s credentials or premises",
+                "body": "Every factory photograph on this site was taken in our own plant. No one else’s trade stand, no one else’s showroom, and no test report with another company’s name on it."
+          }
+    ],
       cta: "Request a certificate or test report",
     },
     oem: {
@@ -272,9 +345,42 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       intro:
         "Made to your drawing, made to your sample, and badged to your brand. The sequence below is the usual one; lead time and tooling cost are quoted per part, not from a table.",
       processTitle: "How it runs",
-      steps: [],
+      steps: [
+          {
+                "n": "01",
+                "title": "Send a drawing or a sample",
+                "body": "A drawing is ideal — DWG, PDF or a photograph. Without one, a sample does the job just as well. What matters is that the mounting face, the hole positions and the spindle size are clear."
+          },
+          {
+                "n": "02",
+                "title": "We confirm the structure and dimensions",
+                "body": "You get back a checklist: material, backset, door thickness range, plate size, finish. Where we are unsure we ask, rather than assume the common size."
+          },
+          {
+                "n": "03",
+                "title": "New tooling, or a change to existing tooling",
+                "body": "Close to a tool we already have and a modification does it; a different structure needs a new tool. Cost and lead time are quoted per part, never from a table."
+          },
+          {
+                "n": "04",
+                "title": "Sample approval",
+                "body": "The sample goes to you and onto a real door before anything is decided. Changing it at this stage is far cheaper than changing it after production."
+          },
+          {
+                "n": "05",
+                "title": "Production and packing",
+                "body": "Packed to your requirement, including your brand, colour box, instructions and barcode. Carton data before production starts."
+          }
+    ],
       enquiryTitle: "Send these with your enquiry and the answer comes back faster",
-      enquiryItems: [],
+      enquiryItems: [
+          "Product type and a reference model — ours is fine",
+          "Door thickness, backset, spindle size",
+          "Finish and colour",
+          "Expected quantity and delivery",
+          "Whether you need branding, colour box or instructions",
+          "Any drawing or sample you can send"
+    ],
       cta: "Send an enquiry",
     },
     contact: {

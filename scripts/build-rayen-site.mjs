@@ -32,6 +32,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(root, "out");
 const ZH = join(OUT, "zh");
+const ZH_EN = join(OUT, "zh-en");
 const TARGET = join(root, "out-rayen");
 const PUBLIC = join(root, "public");
 
@@ -45,10 +46,30 @@ if (!existsSync(ZH)) {
 rmSync(TARGET, { recursive: true, force: true });
 cpSync(ZH, TARGET, { recursive: true });
 
+/*
+  英文版：/zh-en 抬到 out-rayen/en。
+
+  甲方 2026-09-10 选了同域名子路径，所以英文站的地址是 <域名>/en/，不是另一个域名。
+  它在 Next 里必须是自己的 root layout（<html lang> 只有 root layout 能设，
+  一个英文页继承 lang="zh-Hans" 对读屏和搜索引擎都是错的），而 root layout 不能嵌套，
+  所以源码在 src/app/zh-en，构建产物在这里搬到 en/ 下面。
+*/
+if (existsSync(ZH_EN)) {
+  cpSync(ZH_EN, join(TARGET, "en"), { recursive: true });
+}
+
 /* ------------------------------------------------ 2. rewrite the /zh prefix */
 
 const REWRITABLE = new Set([".html", ".txt", ".json", ".xml", ".js", ".css"]);
 const ZH_HREF = /(?<=["'(])\/zh\//g;
+
+/*
+  英文前缀，必须在 /zh/ 之前替换。
+
+  反过来的话 /zh/ 会先把 "/zh-en/" 的前四个字符吃掉，剩下 "-en/"，每一条英文链接都会坏
+  —— 而且坏得很安静：构建不报错，页面照样生成，只有点下去才 404。
+*/
+const ZH_EN_HREF = /(?<=["'(])\/zh-en\//g;
 
 function walk(dir) {
   const out = [];
@@ -110,6 +131,7 @@ for (const file of targetFiles) {
   }
 
   const after = before
+    .replace(ZH_EN_HREF, "/en/")
     .replace(ZH_HREF, "/")
     .replace(HYDE_FAVICON, "")
     .replace(HYDE_FAVICON_PAYLOAD, "");
@@ -176,13 +198,14 @@ writeFileSync(
 /* -------------------------------- 6. take /zh back out of the HYDE export */
 
 rmSync(ZH, { recursive: true, force: true });
+rmSync(ZH_EN, { recursive: true, force: true });
 
 /* ------------------------------------------------------------------ report */
 
 const pages = targetFiles.filter((file) => file.endsWith(".html")).length;
 console.log(
-  `out-rayen/：${pages} 个页面，重写 ${rewritten} 个文件的 /zh 前缀，复制 ${copiedAssets} 个静态资源。` +
-    `已从 out/ 移除 zh/。`,
+  `out-rayen/：${pages} 个页面（含 /en 英文版），重写 ${rewritten} 个文件的语言前缀，` +
+    `复制 ${copiedAssets} 个静态资源。已从 out/ 移除 zh/ 与 zh-en/。`,
 );
 if (missingAssets.length) {
   console.error(`⚠ ${missingAssets.length} 个引用的资源在 public/ 里找不到：`);

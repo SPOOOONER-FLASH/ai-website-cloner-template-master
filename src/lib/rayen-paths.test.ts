@@ -21,7 +21,7 @@ import assert from "node:assert/strict";
  * another company's mark burned into the pixels.
  */
 
-const ROOTS = ["src/app/zh", "src/components/rayen"];
+const ROOTS = ["src/app/zh", "src/app/zh-en", "src/components/rayen"];
 
 function sourceFiles(dir: string): string[] {
   const out: string[] = [];
@@ -39,7 +39,7 @@ test("RAYEN 源码里存在页面文件", () => {
   assert.ok(files.length >= 8, `只找到 ${files.length} 个文件，路径规则大概是配错了`);
 });
 
-test("内部链接一律经过 zhPath()，不手写 href", () => {
+test("内部链接一律经过 localePath()，不手写 href", () => {
   // Matches href="/…" with a literal string. External links start with http, and every
   // legitimate internal link is href={zhPath(...)}, which is a JSX expression, not a string.
   const literalHref = /href="\/(?!\/)/;

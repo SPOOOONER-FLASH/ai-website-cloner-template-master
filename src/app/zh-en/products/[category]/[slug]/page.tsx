@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params;
   const record = getProduct(slug);
   if (!record) return {};
-  const product = viewProduct(record, "zh");
-  const path = `/products/${category}/${slug}/`;
+  const product = viewProduct(record, "en");
+  const path = `/en/products/${category}/${slug}/`;
   return {
     title: product.seoTitle,
     description: product.seoDescription,
@@ -31,5 +31,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page({ params }: Props) {
   const { category, slug } = await params;
-  return <ProductBody locale="zh" categorySlug={category} slug={slug} />;
+  return <ProductBody locale="en" categorySlug={category} slug={slug} />;
 }

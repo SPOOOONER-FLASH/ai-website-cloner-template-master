@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { zhPath } from "@/data/rayen";
+import { localePath } from "@/data/rayen";
+import type { RayenLocale } from "@/data/rayen-i18n";
 
 /**
  * The small shared pieces of the RAYEN 雷茵 site.
@@ -93,11 +94,11 @@ export function Photo({
  * discipline as the em dash in the spec table: a buyer who reads 「暂无实拍图」 knows what
  * they are looking at and can ask for one, where a blank tile just looks broken.
  */
-export function NoPhoto({ model }: { model: string }) {
+export function NoPhoto({ model, label = "暂无实拍图" }: { model: string; label?: string }) {
   return (
     <div className="flex aspect-square flex-col items-center justify-center gap-2 bg-[var(--color-surface-alt)] px-3 text-center">
       <span className="latin text-[15px] text-[var(--color-ink-3)]">{model}</span>
-      <span className="text-[12px] text-[var(--color-ink-3)]">暂无实拍图</span>
+      <span className="text-[12px] text-[var(--color-ink-3)]">{label}</span>
     </div>
   );
 }
@@ -142,11 +143,17 @@ export function Button({
  * "查看更多", horizontal scroll rather than wrapped numbers, and an em dash wherever a
  * value is unknown. See AGENTS.md — a dash costs less trust than a plausible number.
  */
-export function SpecTable({ specs }: { specs: { label: string; value: string }[] }) {
+export function SpecTable({
+  specs,
+  emptyLabel = "该型号的规格参数尚未整理完成。请直接联系我们索取图纸与尺寸。",
+}: {
+  specs: { label: string; value: string }[];
+  emptyLabel?: string;
+}) {
   if (!specs.length) {
     return (
       <p className="border border-[var(--color-line)] p-6 text-[15px] text-[var(--color-ink-2)]">
-        该型号的规格参数尚未整理完成。请直接联系我们索取图纸与尺寸。
+        {emptyLabel}
       </p>
     );
   }
@@ -172,7 +179,11 @@ export function SpecTable({ specs }: { specs: { label: string; value: string }[]
 
 export function ProductCard({
   product,
+  locale = "zh",
+  noPhotoLabel,
 }: {
+  locale?: RayenLocale;
+  noPhotoLabel?: string;
   product: {
     slug: string;
     model: string;
@@ -183,13 +194,13 @@ export function ProductCard({
 }) {
   // Two-level URLs, /products/{category}/{slug}/, matching the shape categories.ts calls
   // the source of truth. A flat /products/{slug}/ would collide with the category routes.
-  const href = zhPath(`/products/${product.categoryPath[0] ?? "products"}/${product.slug}/`);
+  const href = localePath(locale, `/products/${product.categoryPath[0] ?? "products"}/${product.slug}/`);
   return (
     <a href={href} className="card group block">
       {product.heroImage ? (
         <Photo src={product.heroImage.src} alt={product.heroImage.label} aspect="1 / 1" />
       ) : (
-        <NoPhoto model={product.model} />
+        <NoPhoto model={product.model} label={noPhotoLabel} />
       )}
       <div className="border-t border-[var(--color-line)] p-4">
         <p className="latin text-[13px] text-[var(--color-ink-3)]">{product.model}</p>

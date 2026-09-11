@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { STRINGS, type RayenLocale } from "@/data/rayen-i18n";
 
 type GalleryImage = { src: string; label: string };
 
@@ -24,7 +25,16 @@ type GalleryImage = { src: string; label: string };
  * 主图仍然是产品实拍：类目页的卡片取的是主图，一格一格全是线图的目录看着像图册
  * 不像在售产品。
  */
-export function Gallery({ images, model }: { images: GalleryImage[]; model: string }) {
+export function Gallery({
+  images,
+  model,
+  locale = "zh",
+}: {
+  images: GalleryImage[];
+  model: string;
+  locale?: RayenLocale;
+}) {
+  const t = STRINGS[locale].products;
   const [active, setActive] = useState(0);
   const current = images[active];
 
@@ -52,7 +62,7 @@ export function Gallery({ images, model }: { images: GalleryImage[]; model: stri
               <button
                 type="button"
                 onClick={() => setActive(index)}
-                aria-label={`查看第 ${index + 1} 张：${image.label}`}
+                aria-label={t.viewNth(index + 1, image.label)}
                 aria-current={index === active}
                 className={`block w-full overflow-hidden border bg-[var(--color-surface-alt)] transition-colors ${
                   index === active
@@ -76,7 +86,7 @@ export function Gallery({ images, model }: { images: GalleryImage[]; model: stri
       ) : null}
 
       <p className="mt-3 text-[13px] text-[var(--color-ink-3)]">
-        {model} · 第 {active + 1} / {images.length} 张
+        {model} · {t.galleryCounter(active + 1, images.length)}
       </p>
     </div>
   );

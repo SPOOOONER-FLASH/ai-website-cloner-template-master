@@ -9,22 +9,22 @@ type Props = { params: Promise<{ category: string }> };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return categoriesFor("zh").map((category) => ({ category: category.slug }));
+  return categoriesFor("en").map((category) => ({ category: category.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category: slug } = await params;
-  const category = getCategoryFor(slug, "zh");
+  const category = getCategoryFor(slug, "en");
   if (!category) return {};
   const count = products.filter((p) => p.categoryPath[0] === slug).length;
   return {
     title: category.name,
-    description: STRINGS.zh.products.categoryIntro(count),
-    alternates: { canonical: `/products/${slug}/` },
+    description: STRINGS.en.products.categoryIntro(count),
+    alternates: { canonical: `/en/products/${slug}/` },
   };
 }
 
 export default async function Page({ params }: Props) {
   const { category } = await params;
-  return <CategoryBody locale="zh" categorySlug={category} />;
+  return <CategoryBody locale="en" categorySlug={category} />;
 }

@@ -5,15 +5,15 @@ import { categoriesFor, products } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
-  the English tree — see the note there on why there is one set of pages and not two.
+  the Chinese tree — see the note there on why there is one set of pages and not two.
 */
 
 export const metadata: Metadata = {
-  title: STRINGS.zh.products.title,
-  description: STRINGS.zh.products.intro(categoriesFor("zh").length, products.length),
-  alternates: { canonical: "/products/" },
+  title: STRINGS.en.products.title,
+  description: STRINGS.en.products.intro(categoriesFor("en").length, products.length),
+  alternates: { canonical: "/en/products/" },
 };
 
 export default function Page() {
-  return <ProductsIndexBody locale="zh" />;
+  return <ProductsIndexBody locale="en" />;
 }

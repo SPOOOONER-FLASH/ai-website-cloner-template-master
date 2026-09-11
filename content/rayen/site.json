@@ -20,7 +20,12 @@
     "== 1688 店铺 ==",
     "alibaba1688 填了之后，页脚、联系页和每个型号页都会出现「1688 店铺」入口。",
     "做法学的是 HYDE 站上的阿里巴巴入口：站本身不成交，成交在店铺和邮件里，",
-    "所以每个型号页都要有一条通向店铺的路，而不是只在联系页放一个链接。"
+    "所以每个型号页都要有一条通向店铺的路，而不是只在联系页放一个链接。",
+    "",
+    "== 英文字段 ==",
+    "2026-09-10 起站点有中英两版（英文在 /en/）。带 En 后缀的字段是英文侧的原文，",
+    "不是从中文机翻的——中文和英文各写一遍，因为直译的中文营销腔在英文里读起来很假。",
+    "产品的品名和规格不在这里：那些本来就是英文，中文才是从 content/products 生成的。"
   ],
   "brand": {
     "latin": "RAYEN",
@@ -29,7 +34,9 @@
     "foundedYear": 2026,
     "tagline": "机械门锁与门控五金制造",
     "positioning": "中山小榄的门控五金制造商。逃生推杠、球锁、执手锁、插芯锁体、玻璃门夹与浴室配件，自有模具、自有产线，支持来图加工与来样加工。",
-    "lockExperienceSince": 1999
+    "lockExperienceSince": 1999,
+    "taglineEn": "Door hardware, made in Zhongshan",
+    "positioningEn": "Door hardware manufacturer in Xiaolan, Zhongshan. Panic exit devices, knob and lever locks, mortise cases, glass door fittings and bathroom hardware — made to drawing or to sample."
   },
   "contact": {
     "addressZh": "广东省中山市小榄镇联丰社区乐和路 28 号二楼之二",
@@ -39,20 +46,27 @@
     "phone": "",
     "wechat": "",
     "email": "",
-    "alibaba1688": "https://shop49ed1729u7054.1688.com/"
+    "alibaba1688": "https://shop49ed1729u7054.1688.com/",
+    "addressEn": "2/F-2, No. 28 Lehe Road, Lianfeng Community, Xiaolan Town, Zhongshan, Guangdong, China"
   },
   "capabilities": [
     {
       "label": "来图加工",
-      "detail": "按买方图纸开模与生产"
+      "detail": "按买方图纸开模与生产",
+      "labelEn": "Made to drawing",
+      "detailEn": "Tooled and produced from your drawing."
     },
     {
       "label": "来样加工",
-      "detail": "按买方样品复制结构与尺寸"
+      "detail": "按买方样品复制结构与尺寸",
+      "labelEn": "Made to sample",
+      "detailEn": "Structure and dimensions reproduced from a sample you send."
     },
     {
       "label": "OEM / ODM",
-      "detail": "贴牌与联合开发"
+      "detail": "贴牌与联合开发",
+      "labelEn": "OEM / ODM",
+      "detailEn": "Your brand on our tooling, or a design developed together."
     }
   ],
   "certifications": [
@@ -60,13 +74,17 @@
       "code": "ISO 14001",
       "label": "ISO 14001 环境管理体系",
       "note": "1688 工商资质栏展示。证书扫描件待提供后在本页放出。",
-      "scan": ""
+      "scan": "",
+      "labelEn": "ISO 14001 environmental management system",
+      "noteEn": "Listed on our 1688 storefront. The certificate scan will be published here once supplied."
     },
     {
       "code": "CCC",
       "label": "CCC 强制性产品认证",
       "note": "1688 工商资质栏展示。证书扫描件待提供后在本页放出。",
-      "scan": ""
+      "scan": "",
+      "labelEn": "CCC compulsory product certification",
+      "noteEn": "Listed on our 1688 storefront. The certificate scan will be published here once supplied."
     }
   ],
   "exportBrands": [],

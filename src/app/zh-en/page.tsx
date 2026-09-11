@@ -5,15 +5,15 @@ import { legalName, rayen } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
-  the English tree — see the note there on why there is one set of pages and not two.
+  the Chinese tree — see the note there on why there is one set of pages and not two.
 */
 
 export const metadata: Metadata = {
-  title: { absolute: `${legalName} | ${STRINGS.zh.home.title}` },
-  description: rayen.brand.positioning,
-  alternates: { canonical: "/" },
+  title: { absolute: `${legalName} | ${STRINGS.en.home.title}` },
+  description: rayen.brand.positioningEn,
+  alternates: { canonical: "/en/" },
 };
 
 export default function Page() {
-  return <HomeBody locale="zh" />;
+  return <HomeBody locale="en" />;
 }
