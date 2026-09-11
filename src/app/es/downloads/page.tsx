@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Servicio y descargas",
   description:
-    "Descargue el catálogo Canton Hyland de 46 páginas — cerraduras, manijas, barras antipánico, herrajes para vidrio y cierrapuertas — además de informes de ensayo con alcance por modelo.",
+    "Descargue el catálogo Canton Hyland de 46 páginas —cerraduras, manijas, barras antipánico, herrajes para vidrio y cierrapuertas— además de informes de ensayo con alcance por modelo.",
 });
 
 /**

@@ -97,7 +97,7 @@ const COPY = {
       "Una tabla, una fila por modelo, con las especificaciones que los distinguen.",
     faqLink: "Pedidos, plazos y muestras",
     faqHelp:
-      "Pedido mínimo, plazo de producción, política de muestras, condiciones de pago y trabajo OEM — respondido en detalle.",
+      "Pedido mínimo, plazo de producción, política de muestras, condiciones de pago y trabajo OEM —respondido en detalle.",
     material: "Material",
     finishes: "Acabados disponibles",
     doorTypes: "Tipos de puerta compatibles",

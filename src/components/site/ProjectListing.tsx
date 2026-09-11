@@ -25,7 +25,7 @@ const copy = {
   es: {
     title: "Aplicaciones",
     intro:
-      "Qué contiene realmente un cuadro de puertas, por tipo de edificio — qué cerradura, qué manija, qué cierrapuertas, y dónde va cada pieza en la hoja.",
+      "Qué contiene realmente un cuadro de puertas, por tipo de edificio —qué cerradura, qué manija, qué cierrapuertas, y dónde va cada pieza en la hoja.",
     note: "Fabricamos bajo la marca de nuestros clientes, así que los edificios donde se instalan nuestros herrajes no son nuestros para nombrarlos. Estas páginas muestran las combinaciones, no los clientes: cada modelo que aparece es nuestro y está publicado, de modo que puede cotizar el cuadro completo a partir de ellos.",
   },
 } as const;

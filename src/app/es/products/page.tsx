@@ -21,7 +21,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Productos — Catálogo de herrajes para puertas",
   description:
-    "Cerraduras de embutir, manijas, herrajes para vidrio, barras antipánico, cilindros y accesorios — el catálogo completo de Canton Hyland.",
+    "Cerraduras de embutir, manijas, herrajes para vidrio, barras antipánico, cilindros y accesorios —el catálogo completo de Canton Hyland.",
 });
 
 export default function ProductosPage() {
@@ -75,9 +75,8 @@ export default function ProductosPage() {
             <div className="col-span-full">
               <p className="max-w-[68ch] text-c1 text-ink-secondary">
                 Todos los modelos de una gama, una fila cada uno, con las especificaciones
-                que los distinguen — distancia al eje, entrepuntos, espesor de puerta,
-                acabado.
-              </p>
+                que los distinguen —distancia al eje, entrepuntos, espesor de puerta,
+                acabado. </p>
               <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
                 {categories
                   .filter((category) => getProductsByCategory(category.slug).length >= 3)

@@ -103,9 +103,8 @@ export default async function CompararPage({ params }: ComparePageProps) {
               </p>
               <p className="mt-24 text-c1 text-ink-secondary">
                 Una celda vacía significa que aún no publicamos ese dato para ese modelo,
-                no que el modelo carezca de él — consúltelo al equipo de exportación y lo
-                confirmamos contra el plano de producción.
-              </p>
+                no que el modelo carezca de él —consúltelo al equipo de exportación y lo
+                confirmamos contra el plano de producción. </p>
               <Link
                 href={`/es/products/${category.slug}/`}
                 className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"

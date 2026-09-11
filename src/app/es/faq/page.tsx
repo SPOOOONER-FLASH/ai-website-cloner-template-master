@@ -9,7 +9,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "es",
   title: "Preguntas frecuentes",
   description:
-    "Pedido mínimo, muestras, plazos, acabados, sistemas de llave maestra, certificación y exportación — las respuestas del equipo de Canton Hyland.",
+    "Pedido mínimo, muestras, plazos, acabados, sistemas de llave maestra, certificación y exportación —las respuestas del equipo de Canton Hyland.",
 });
 
 /**

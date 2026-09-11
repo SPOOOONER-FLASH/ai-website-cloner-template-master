@@ -180,6 +180,114 @@ for (const path of ES_MODULES) {
   }
 }
 
+/* ------------------------------------------------------------ Spanish pages */
+
+/*
+ * src/app/es/** — Codex's area, covered while they are offline (client, 2026-09-11).
+ *
+ * A .tsx file is three different kinds of text in one, and only one of them should be
+ * touched. The first pass at this would have rewritten all three:
+ *
+ *   English code comments   "inbound link each — from the spec table at the bottom"
+ *                           Notes to us. Never touched — and they are stripped BEFORE
+ *                           matching rather than skipped after, so a dash inside a
+ *                           comment cannot be reached at all.
+ *
+ *   Titles and headings     title: "Productos — Catálogo de herrajes para puertas"
+ *                           A dash between a title and its subtitle is a separator, not
+ *                           a raya, and the spaces are correct — the same distinction
+ *                           that caught the first version of this script on seoTitleEs.
+ *
+ *   Spanish body prose      "que los distinguen — distancia al eje, entrepuntos…"
+ *                           The only category that gets re-spaced.
+ *
+ * Prose is identified positively rather than by elimination: it has to contain Spanish
+ * orthography (á é í ó ú ñ ¿ ¡) or a Spanish function word. A line that cannot be shown
+ * to be Spanish is left alone, because the cost of skipping one is a dash somebody fixes
+ * by hand, and the cost of a false positive is English prose silently mangled.
+ */
+const TSX_DIR = "src/app/es";
+const SPANISH_HINT = /[áéíóúñ¿¡]|\b(?:que|para|de|del|las|los|una|con|por|se|su|sus|como|cuando|donde|entre|sobre)\b/i;
+
+function walkTsx(dir, found = []) {
+  if (!existsSync(dir)) return found;
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) walkTsx(path, found);
+    else if (entry.name.endsWith(".tsx")) found.push(path);
+  }
+  return found;
+}
+
+let pageStrings = 0;
+const pageSkipped = [];
+
+for (const path of walkTsx(TSX_DIR)) {
+  const source = readFileSync(path, "utf8");
+
+  /*
+    Comments are blanked to same-length placeholders so every later index still lines up
+    with the original file, and the original text is restored before writing.
+  */
+  const comments = [];
+  const masked = source
+    .replace(/\/\*[\s\S]*?\*\//g, (m) => {
+      comments.push(m);
+      return ` ${comments.length - 1} `.padEnd(m.length, "");
+    })
+    .replace(/^([ \t]*)\/\/.*$/gm, (m) => {
+      comments.push(m);
+      return ` ${comments.length - 1} `.padEnd(m.length, "");
+    });
+
+  let next = masked;
+  let touched = false;
+
+  /* JSX text nodes: the visible paragraphs. */
+  next = next.replace(/>([^<>{}]*?)</g, (whole, inner) => {
+    if (!needsWork(inner) || !SPANISH_HINT.test(inner)) return whole;
+    /*
+      A heading's dash separates a label from its gloss, so it keeps its spaces. The test
+      is PUNCTUATION, not length: prose carries a comma or a full stop somewhere, a
+      heading carries none.
+
+      Length alone was the first attempt and it let one through —
+      "Herrajes en detalle — fotografías y selección de componentes" is exactly eight
+      words, cleared a `< 8` floor, and is unmistakably a heading. Counting words was
+      measuring the wrong property.
+    */
+    const text = inner.trim();
+    if (!/[.,;:]/.test(text.replace(/\s—\s/g, " "))) {
+      pageSkipped.push(`${path} · heading: ${text.slice(0, 70)}`);
+      return whole;
+    }
+    const [fixed] = fixDashes(inner);
+    if (fixed === inner) return whole;
+    pageStrings += 1;
+    touched = true;
+    if (samples.length < 6) samples.push([path.replace("src/app/", ""), inner.trim(), fixed.trim()]);
+    return `>${fixed}<`;
+  });
+
+  /* `description:` metadata is prose; `title:` is a separator and stays. */
+  next = next.replace(/(description:\s*)"((?:[^"\\]|\\.)*)"/g, (whole, lead, inner) => {
+    if (!needsWork(inner) || !SPANISH_HINT.test(inner)) return whole;
+    const [fixed] = fixDashes(inner);
+    if (fixed === inner) return whole;
+    pageStrings += 1;
+    touched = true;
+    if (samples.length < 6) samples.push([path.replace("src/app/", "") + " · description", inner, fixed]);
+    return `${lead}"${fixed}"`;
+  });
+
+  if (touched) {
+    const restored = next.replace(/ (\d+) */g, (_, i) => comments[Number(i)]);
+    changed += pageStrings;
+    filesTouched += 1;
+    if (write) writeFileSync(path, restored);
+  }
+}
+
 /* ------------------------------------------------------------ report */
 
 console.log(`strings re-spaced: ${changed}  across ${filesTouched} file(s)`);

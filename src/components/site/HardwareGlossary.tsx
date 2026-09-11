@@ -39,7 +39,7 @@ const COPY = {
   es: {
     title: "Qué significan estos términos",
     intro:
-      "Todas las opciones que ofrece el configurador, definidas. Son las definiciones del oficio — qué es la pieza y dónde va — y no afirmaciones sobre ningún modelo concreto.",
+      "Todas las opciones que ofrece el configurador, definidas. Son las definiciones del oficio —qué es la pieza y dónde va— y no afirmaciones sobre ningún modelo concreto.",
     seeAll: "Ver los modelos",
   },
 } as const;

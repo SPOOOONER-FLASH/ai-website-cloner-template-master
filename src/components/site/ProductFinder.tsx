@@ -82,7 +82,7 @@ const COPY = {
     emptyTitle: "Nada coincide con esta combinación.",
     emptyTry: "Pruebe a quitar un filtro, o ",
     emptyAsk: "consulte a un ingeniero de exportación",
-    emptyTail: " — el catálogo de este sitio es una parte de lo que fabricamos.",
+    emptyTail: " —el catálogo de este sitio es una parte de lo que fabricamos.",
     contactHref: "/es/contact/",
     pages: "Páginas de productos",
     facets: FACET_LABELS_ES,

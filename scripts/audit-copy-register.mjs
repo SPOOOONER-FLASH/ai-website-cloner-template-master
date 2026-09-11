@@ -237,7 +237,14 @@ function passages() {
     alternative is parsing TSX, and a crude filter that over-collects is safer here than
     a clever one that silently skips the paragraph somebody actually wrote.
   */
-  const APP_DIRS = ["src/app/(en)", "src/app/es", "src/app/zh"];
+  /*
+    `src/components/site` is in this list because leaving it out hid real copy.
+    A page under src/app/es is often fifteen lines that hand a `locale="es"` prop to a
+    shared component, and the actual Spanish paragraphs live in that component beside
+    their English twins. CompanyOverview.tsx is the clearest case: the whole company and
+    factory description — the copy the client named first — is there, not on the page.
+  */
+  const APP_DIRS = ["src/app/(en)", "src/app/es", "src/app/zh", "src/components/site"];
   const walkFiles = (dir, found = []) => {
     if (!existsSync(dir)) return found;
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
