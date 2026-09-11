@@ -3,7 +3,8 @@
 // Edit the JSON in content/ instead, or use the CMS at /admin.
 import type { Project } from "../types";
 import item0 from "../../../content/projects/commercial-fire-egress-hardware.json";
-import item1 from "../../../content/projects/glass-entrance-hardware-package.json";
-import item2 from "../../../content/projects/hospitality-residential-door-package.json";
+import item1 from "../../../content/projects/double-leaf-fire-door-set.json";
+import item2 from "../../../content/projects/glass-entrance-hardware-package.json";
+import item3 from "../../../content/projects/hospitality-residential-door-package.json";
 
-export const projects = [item0, item1, item2] as unknown as Project[];
+export const projects = [item0, item1, item2, item3] as unknown as Project[];

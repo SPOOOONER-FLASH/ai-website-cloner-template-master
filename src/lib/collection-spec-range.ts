@@ -63,6 +63,16 @@ const FIELDS: Array<{ labels: string[]; numeric: boolean }> = [
     so routing it there would silently drop every row.
   */
   { labels: ["Cycle life"], numeric: false },
+  /*
+    Closers are selected by what they can carry, not by how they are built, so these two
+    are the first rows a specifier reads on a closer family — and they were missing, which
+    left the double-leaf fire door set with nothing but a material list. "Capacity" stays
+    non-numeric because the values are weight bands ("45-85KG") and the numeric branch
+    parses millimetres; printing the bands is what a reader wants anyway, since the answer
+    to "will this hold my door" is which band the leaf falls in.
+  */
+  { labels: ["Door Width", "Door width"], numeric: true },
+  { labels: ["Capacity"], numeric: false },
   { labels: ["Material"], numeric: false },
   { labels: ["Finish", "Finishes", "Surface Finish"], numeric: false },
   { labels: ["Function"], numeric: false },

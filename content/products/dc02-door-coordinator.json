@@ -13,6 +13,14 @@
       "value": "Double-Leaf Doors"
     },
     {
+      "label": "Size",
+      "value": "397 × 120mm"
+    },
+    {
+      "label": "Max door weight",
+      "value": "55–100kg"
+    },
+    {
       "label": "Material",
       "value": "Zinc-Plated Steel"
     },
@@ -100,7 +108,12 @@
     }
   ],
   "attachmentIds": [],
-  "relatedModels": [],
+  "relatedModels": [
+    "JU-093",
+    "JU-088",
+    "JU-072",
+    "JU-073"
+  ],
   "seoTitle": "DC02 Door Coordinator — Zinc-Plated Steel | Canton Hyland",
   "seoDescription": "Canton Hyland DC02 door coordinator in Zinc-Plated Steel. Finishes: Silver, Zinc Plated. For double-leaf doors applications. Made in Guangdong, China.",
   "nameEs": "Selector de cierre",
@@ -108,6 +121,14 @@
     {
       "label": "Aplicación",
       "value": "Puertas de doble hoja"
+    },
+    {
+      "label": "Medidas",
+      "value": "397 × 120 mm"
+    },
+    {
+      "label": "Peso máximo de hoja",
+      "value": "55–100 kg"
     },
     {
       "label": "Material",
@@ -174,5 +195,16 @@
     "model": "DC02",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingId": "1601886992771",
+      "basis": "client-published",
+      "fields": [
+        "Size",
+        "Max door weight"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

@@ -1,0 +1,46 @@
+{
+  "slug": "double-leaf-fire-door-set",
+  "name": "Double-Leaf Fire Door Set",
+  "nameEs": "Conjunto para puerta cortafuego de dos hojas",
+  "referenceStatus": "representative-application",
+  "buildingType": "Commercial + Institutional",
+  "buildingTypeEs": "Comercial + Institucional",
+  "summary": "The coordinated hardware a pair of fire doors needs to latch: a closer on each leaf and a coordinator that makes them close in the right order.",
+  "summaryEs": "Los herrajes coordinados que necesita un par de puertas cortafuego para acuñar: un cierrapuertas en cada hoja y un selector que las haga cerrar en el orden correcto.",
+  "body": [
+    "A pair of fire doors with two closers and no coordinator will close in whichever order the springs decide. When the active leaf arrives first it lands on the edge of an open inactive leaf, the latch never reaches the strike, and the assembly stops being a rated fire door — every fire test certificate assumes the door was latched.",
+    "This set is the three-part answer: a closer sized to each leaf, and the DC02 coordinator across the frame head to hold the active leaf back until the inactive one is home. The coordinator is mechanical — no power, no signal, nothing to drift out of adjustment.",
+    "Sizing is where a set like this is specified wrong. Leaf weight, closer capacity and coordinator range all have to agree. The DC02 covers leaves of 55–100kg; the closers below cover 40–85kg, so the usable overlap for a coordinated pair runs from 55kg to 85kg. Above 85kg we do not currently make a closer, and the honest answer is that the closer, not the coordinator, is the limit.",
+    "Confirm before ordering: leaf weight and width for both leaves, door thickness, whether the pair is rebated or carries an applied astragal, what hardware sits on the inactive leaf, and the fire rating the assembly has to hold."
+  ],
+  "bodyEs": [
+    "Un par de puertas cortafuego con dos cierrapuertas y sin selector se cerrará en el orden que decidan los muelles. Cuando la hoja activa llega primero, choca contra el canto de una hoja pasiva todavía abierta, el picaporte nunca alcanza el cerradero y el conjunto deja de ser una puerta cortafuego certificada — todos los certificados de ensayo dan por supuesto que la puerta estaba acuñada.",
+    "Este conjunto es la respuesta en tres partes: un cierrapuertas dimensionado para cada hoja y el selector DC02 sobre la cabecera del marco para retener la hoja activa hasta que la pasiva esté alojada. El selector es mecánico — sin alimentación, sin señal y sin regulación que se desajuste.",
+    "El dimensionado es donde un conjunto así se especifica mal. El peso de la hoja, la capacidad del cierrapuertas y el rango del selector tienen que concordar. El DC02 cubre hojas de 55–100 kg; los cierrapuertas siguientes cubren 40–85 kg, de modo que el solape útil para un par coordinado va de 55 kg a 85 kg. Por encima de 85 kg hoy no fabricamos cierrapuertas, y la respuesta honesta es que el condicionante es el cierrapuertas, no el selector.",
+    "Confirme antes de pedir: peso y ancho de ambas hojas, espesor de la puerta, si el par es rebajado o lleva batiente aplicado, qué herrajes lleva la hoja pasiva y la resistencia al fuego que debe alcanzar el conjunto."
+  ],
+  "productModels": ["DC02", "JU-093", "JU-088", "JU-072", "JU-073"],
+  "heroImage": {
+    "src": "/images/editorial/project-commercial-egress.webp",
+    "ratio": "3 / 2",
+    "label": "Representative commercial entrance hall with paired fire-rated doors",
+    "labelEs": "Vestíbulo comercial representativo con puertas cortafuego de dos hojas"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/dc02-door-coordinator.webp",
+      "ratio": "1 / 1",
+      "label": "DC02 door coordinator, zinc-plated steel, with its two support brackets",
+      "labelEs": "Selector de cierre DC02, acero zincado, con sus dos soportes"
+    },
+    {
+      "src": "/images/products/ju-093-door-closer.webp",
+      "ratio": "1 / 1",
+      "label": "JU-093 door closer, aluminium body, 45–85kg capacity",
+      "labelEs": "Cierrapuertas JU-093, cuerpo de aluminio, capacidad 45–85 kg"
+    }
+  ],
+  "seoTitle": "Double-Leaf Fire Door Hardware Set — Coordinator + Closers",
+  "seoDescription": "Coordinated hardware for a pair of fire doors: DC02 door coordinator with JU-series closers. Leaf weight 55–85kg coordinated range, 397 × 120mm coordinator, mechanical sequencing.",
+  "seoDescriptionEs": "Herrajes coordinados para un par de puertas cortafuego: selector DC02 con cierrapuertas serie JU. Rango coordinado de 55–85 kg por hoja, selector de 397 × 120 mm, secuencia mecánica."
+}

@@ -44085,11 +44085,19 @@
       "categoryNames": [
         "建筑五金配件"
       ],
-      "summary": "镀锌钢顺位器，适用于双扇门。",
+      "summary": "镀锌钢顺位器，适用于双扇门。尺寸 397 × 120mm。",
       "specs": [
         {
           "label": "适用场景",
           "value": "双扇门"
+        },
+        {
+          "label": "尺寸",
+          "value": "397 × 120mm"
+        },
+        {
+          "label": "最大门扇重量",
+          "value": "55–100kg"
         },
         {
           "label": "材质",
@@ -44177,22 +44185,35 @@
           "label": "雷茵 DC02 顺位器 第 7 张"
         }
       ],
-      "relatedModels": [],
+      "relatedModels": [
+        "JU-093",
+        "JU-088",
+        "JU-072",
+        "JU-073"
+      ],
       "sites": [],
       "styleFamily": "",
       "seoTitle": "DC02 顺位器",
-      "seoDescription": "镀锌钢顺位器，适用于双扇门。",
+      "seoDescription": "镀锌钢顺位器，适用于双扇门。尺寸 397 × 120mm。",
       "en": {
         "name": "Door Coordinator",
         "series": "Door Coordinator",
         "categoryNames": [
           "Hardware Accessories"
         ],
-        "summary": "Zinc-Plated Steel door coordinator for double-leaf doors.",
+        "summary": "Zinc-Plated Steel door coordinator for double-leaf doors. Size 397 × 120mm.",
         "specs": [
           {
             "label": "Application",
             "value": "Double-Leaf Doors"
+          },
+          {
+            "label": "Size",
+            "value": "397 × 120mm"
+          },
+          {
+            "label": "Max door weight",
+            "value": "55–100kg"
           },
           {
             "label": "Material",
@@ -44244,7 +44265,7 @@
           "Double-Leaf Doors"
         ],
         "seoTitle": "DC02 Door Coordinator",
-        "seoDescription": "Zinc-Plated Steel door coordinator for double-leaf doors."
+        "seoDescription": "Zinc-Plated Steel door coordinator for double-leaf doors. Size 397 × 120mm."
       }
     },
     {
