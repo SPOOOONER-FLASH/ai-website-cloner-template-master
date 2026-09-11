@@ -211,7 +211,32 @@ function buildSummary(product, nameZh) {
 function buildSummaryEn(product) {
   const parts = [];
   const material = (product.material ?? "").trim();
-  const head = material ? `${material} ${product.name.toLowerCase()}` : product.name;
+
+  /*
+    The material is only usable as an adjective when it IS one.
+
+    Two ways this went wrong on live pages:
+
+      "Stainless Steel stainless steel handle."  — the model is literally named after its
+      material, so prefixing it says the same thing twice. 64 products read like this.
+
+      "steel material with spray painting , different finishes are available . panic exit
+      device trim for fire door."  — some `material` fields are a whole sentence copied
+      from a supplier sheet (one is still in Spanish). Gluing a name onto the end of a
+      paragraph does not make a summary, it makes the first thing a buyer reads look
+      unedited.
+
+    So: skip it if the name already carries it, and skip it if it is prose rather than a
+    material — punctuation or length gives that away. A summary that just says
+    "Glass door handle." is worse than nothing only if you believe more words are better.
+  */
+  const nameLower = product.name.toLowerCase();
+  const isAdjective =
+    material &&
+    material.length <= 30 &&
+    !/[.,;]/.test(material) &&
+    !nameLower.startsWith(material.toLowerCase());
+  const head = isAdjective ? `${material} ${nameLower}` : product.name;
   const door = (product.doorTypes ?? [])[0];
   parts.push(door ? `${head} for ${String(door).toLowerCase()}.` : `${head}.`);
 
@@ -222,7 +247,18 @@ function buildSummaryEn(product) {
     if (hit) picked.push(`${hit.label.toLowerCase()} ${String(hit.value).trim()}`);
     if (picked.length === 2) break;
   }
-  if (picked.length) parts.push(`${picked.join(", ")}.`);
+  /*
+    Capitalise it. The labels are lower-cased so they read as prose rather than as table
+    headings ("centre distance P=640mm", not "Centre distance P=640mm"), but this clause is
+    its own sentence following a full stop — and it shipped as
+    「Stainless Steel glass door handle. centre distance P=640mm.」 on every English product
+    page. On a site whose entire argument is that the numbers are looked after, a sentence
+    that does not start with a capital is the cheapest possible way to suggest otherwise.
+  */
+  if (picked.length) {
+    const clause = picked.join(", ");
+    parts.push(`${clause.charAt(0).toUpperCase()}${clause.slice(1)}.`);
+  }
   return parts.join(" ");
 }
 
