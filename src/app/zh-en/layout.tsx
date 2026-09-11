@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { archivo } from "../fonts";
 import "../zh/rayen.css";
 import { absoluteUrl, legalName, rayen, siteName, siteUrl } from "@/data/rayen";
+import { htmlLang } from "@/data/rayen-i18n";
 
 /**
  * Root layout for the RAYEN English site (/en/ on the deployed host).
@@ -50,8 +51,11 @@ export const metadata: Metadata = {
 };
 
 export default function RayenEnRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  // htmlLang.en, not a literal: the whole reason this fourth root layout exists is the
+  // lang attribute, and it shipped as zh-Hans once already (2026-09-10, caught in the
+  // export, not in review). src/lib/rayen-paths.test.ts now fails if it drifts back.
   return (
-    <html lang="zh-Hans" className={`h-full antialiased ${archivo.variable}`}>
+    <html lang={htmlLang.en} className={`h-full antialiased ${archivo.variable}`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );

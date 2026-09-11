@@ -64,6 +64,26 @@ test("不引用 HYDE 水印图目录", () => {
   assert.deepEqual(offenders, [], `雷茵页面不能用带 HYDE 水印的产品图：\n${offenders.join("\n")}`);
 });
 
+test("英文站的 root layout 不能声明中文 lang", () => {
+  /*
+    这个 root layout 存在的**唯一**理由就是 lang 属性。
+
+    英文页不能嵌在 src/app/zh 下面，因为 <html lang> 只有 root layout 能设，而 root
+    layout 不能嵌套 —— 所以才多了第四个 root layout。2026-09-10 它自己却写着
+    lang="zh-Hans"（从中文 layout 复制过来忘了改），正上方的注释还在解释为什么那样是错的。
+    构建不报错，页面照出，只有读屏软件和搜索引擎会用中文去念一整页英文。
+
+    这种错误人眼看不出来（注释说得对，代码写得错），所以交给测试。
+  */
+  const source = readFileSync("src/app/zh-en/layout.tsx", "utf8");
+  const lang = source.match(/<html\s+lang=([^\s]+)/)?.[1];
+  assert.ok(lang, "src/app/zh-en/layout.tsx 里找不到 <html lang=…>");
+  assert.ok(
+    !/zh/i.test(lang),
+    `英文站 root layout 的 lang 是 ${lang}，那是中文。应当是 {htmlLang.en}。`,
+  );
+});
+
 test("zh-terms 覆盖全部规格标签", async () => {
   // The generator exits non-zero on a missing label; running it in --check mode here means
   // a new product record with a new spec label fails CI instead of shipping a half-Chinese
