@@ -121,7 +121,7 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
                   )}
                   <p className="mt-3 text-[15px]">{category.name}</p>
                   <p className="latin mt-1 text-[12px] text-[var(--color-ink-3)]">
-                    {products.filter((p) => p.categoryPath[0] === category.slug).length} {t(locale).products.modelsSuffix}
+                    {t(locale).products.modelCount(products.filter((p) => p.categoryPath[0] === category.slug).length)}
                   </p>
                 </a>
               ))}
@@ -219,7 +219,7 @@ export function ProductsIndexBody({ locale }: { locale: RayenLocale }) {
                   <div className="min-w-0">
                     <p className="text-[17px]">{category.name}</p>
                     <p className="latin mt-1 text-[12px] text-[var(--color-ink-3)]">
-                      {count} {s.modelsSuffix}
+                      {s.modelCount(count)}
                     </p>
                     {category.children.length ? (
                       <p className="mt-3 text-[13px] leading-relaxed text-[var(--color-ink-2)]">

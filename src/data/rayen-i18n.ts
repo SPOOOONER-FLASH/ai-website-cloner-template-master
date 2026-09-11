@@ -57,7 +57,7 @@ type Strings = {
     title: string;
     eyebrow: string;
     intro: (categories: number, models: number) => string;
-    modelsSuffix: string;
+    modelCount: (n: number) => string;
     categoryIntro: (count: number) => string;
     breadcrumbRoot: string;
     specs: string;
@@ -110,7 +110,13 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       ctaOem: "来图来样加工",
       productsEyebrow: "Products",
       productsTitle: "产品分类",
-      productsIntro: "按品类进入，每个型号都有独立的规格表：材质、背距、门厚、面板尺寸、表面处理。",
+      /*
+        这句话要和规格表里真正有的东西对得上。原文写「材质、背距、门厚、面板尺寸」，
+        但目录里现在大部分是拉手 —— 拉手没有背距。买家点进去发现说好的一栏不存在，
+        损失的不是这一句，是整张表的可信度。2026-09-10 补进 重量 与 安装孔径 之后改成这样。
+      */
+      productsIntro:
+        "按品类进入，每个型号都有独立的规格表：材质、尺寸、中心距、安装孔径、重量与表面处理。没有核实过的一栏写短横线，不填估值。",
       capabilityEyebrow: "Capability",
       capabilityTitle: "加工方式",
       capabilityMore: "了解定制流程",
@@ -127,7 +133,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       title: "产品中心",
       eyebrow: "Products",
       intro: (c, m) => `${c} 个品类，${m} 个在售型号。每个型号页都有独立规格表，尺寸以实物为准。`,
-      modelsSuffix: "models",
+      modelCount: (n) => `${n} 个型号`,
       categoryIntro: (n) => `共 ${n} 个型号。点开任意型号可以看到完整规格表。`,
       breadcrumbRoot: "产品中心",
       specs: "规格参数",
@@ -263,7 +269,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       productsEyebrow: "Products",
       productsTitle: "Product families",
       productsIntro:
-        "Every model has its own specification table — material, backset, door thickness, plate size and finish.",
+        "Every model has its own specification table — material, dimensions, centre distance, fixing hole sizes, weight and finish. A dash means we have not confirmed that figure, and we would rather say so.",
       capabilityEyebrow: "Capability",
       capabilityTitle: "How we can make it",
       capabilityMore: "How a custom order runs",
@@ -283,7 +289,9 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       eyebrow: "Products",
       intro: (c, m) =>
         `${c} product families, ${m} models in production. Each model page carries its own specification table; dimensions are as manufactured.`,
-      modelsSuffix: "models",
+      /* 1 model, 2 models —— 站上有一个只有一个型号的类目（指示器），
+         写成「1 models」会让一个正在核对规格的买家开始怀疑别的数字。 */
+      modelCount: (n) => `${n} model${n === 1 ? "" : "s"}`,
       categoryIntro: (n) => `${n} models. Open any one for the full specification table.`,
       breadcrumbRoot: "Products",
       specs: "Specification",
