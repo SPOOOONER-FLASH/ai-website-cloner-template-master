@@ -1057,3 +1057,118 @@ export const CATEGORY_NAMES_ES: Record<string, string> = {
   the qualifier is language. That is a generation concern — the site renders the finished
   `specsEs` rows out of the content files and never composes Spanish at request time.
 */
+
+/**
+ * PRODUCT names in Spanish, keyed by the English name in content/products/*.json.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS EXISTS: every Spanish product page was titled by its CATEGORY
+ *
+ * `scripts/translate-products-es.mjs` assigned `nameEs` as
+ * `CATEGORY_NAMES_ES[categoryPath[0]] ?? product.name`. That was a stand-in from before
+ * any Spanish product names existed, and it shipped: 582 of 598 translated records
+ * carried a category name in the product-name field, so the Spanish mirror rendered
+ *
+ *     EN  <h1>001 Panic Exit Device Trim</h1>
+ *     ES  <h1>001 Barras antipánico</h1>        ← "panic bars", the category
+ *     ES  <h1>DC02 Accesorios de herrajes</h1>  ← "hardware accessories", the category
+ *
+ * It reached the <title> too, so 534 Spanish titles collapsed into about 38 distinct
+ * strings competing with each other, and a Spanish specifier searching for a door
+ * coordinator landed on a page named "hardware accessories".
+ *
+ * ---------------------------------------------------------------------------
+ * WHY A TABLE AND NOT A TRANSLATION AT RENDER TIME
+ *
+ * 659 products carry only 59 distinct names. The work is a 59-row table, not 659
+ * translations, and a table can be reviewed by a Spanish speaker in one sitting —
+ * which is the point: these rows are hardware terminology, where `cerradura de embutir`
+ * and `cerradura de sobreponer` are different products and a buyer ordering the wrong
+ * one finds out at the door. Terms are the standard Spanish trade names, not literal
+ * translations of the English.
+ *
+ * The client reviews terminology (see docs/collaboration/spanish-review.json, where
+ * every row carries "请确认这一条术语"). These rows go into that same review file.
+ * They ship before that review because the state they replace is not "untranslated",
+ * it is "wrong": a category name in the product-name slot is a factual error about
+ * what the page is, and a reviewed correction later is cheaper than another week of
+ * 534 pages claiming to be something they are not.
+ */
+export const PRODUCT_NAMES_ES: Record<string, string> = {
+  // Panic exit devices and their trims
+  "Panic Exit Device": "Barra antipánico",
+  "Fire Door Panic Exit Device": "Barra antipánico para puerta cortafuego",
+  "Double Door Panic Exit Device": "Barra antipánico para puerta de dos hojas",
+  "S-Panic Exit Device": "Barra antipánico serie S",
+  "D-Panic Exit Device": "Barra antipánico serie D",
+  "Alarm Panic Bar Exit Device": "Barra antipánico con alarma",
+  "Cold Room Push Bar Exit Device": "Barra antipánico para cámara frigorífica",
+  "Two Point Locking Exit Device": "Barra antipánico de cierre en dos puntos",
+  "Panic Exit Device Trim": "Guarnición exterior para barra antipánico",
+  "Anti-Pick Panic Exit Device Trim": "Guarnición exterior antiganzúa para barra antipánico",
+  "Panic Exit Device Lock Case": "Caja de cerradura para barra antipánico",
+  "Exterior Trim": "Guarnición exterior",
+
+  // Mortise lock bodies and cases
+  "Lock Case": "Cerradura de embutir",
+  "Standard Mortise Lock Body": "Cuerpo de cerradura de embutir estándar",
+  "Security Mortise Lock Body": "Cuerpo de cerradura de embutir de seguridad",
+  "Slim Mortise Lock Body": "Cuerpo de cerradura de embutir de perfil estrecho",
+  "Hook-Bolt Mortise Lock": "Cerradura de embutir de gancho",
+  "Sliding Hook Lock": "Cerradura de gancho para puerta corredera",
+
+  // Cylindrical and tubular locks
+  "Tubular Lock": "Cerradura tubular",
+  "Tubular Knob Lock": "Cerradura tubular de pomo",
+  "Black Tubular Lever Lock Set": "Juego de cerradura tubular de manilla en negro",
+  "Heavy Duty Cylindrical Lock": "Cerradura cilíndrica de servicio pesado",
+  "Light Duty Cylindrical Lock": "Cerradura cilíndrica de servicio ligero",
+  "Cylindrical Knob Lock": "Cerradura cilíndrica de pomo",
+  "Commercial Lock": "Cerradura comercial",
+
+  // Deadbolts, rim locks, cylinders
+  Deadbolts: "Cerrojo de seguridad",
+  "Keyed Deadbolt Lock Set": "Juego de cerrojo de seguridad con llave",
+  "Night Latch And Rim Lock": "Cerradura de sobreponer",
+  "Night Latch & Rim Lock": "Cerradura de sobreponer",
+  "Lock Cylinder": "Cilindro de cerradura",
+
+  // Handles and levers
+  "Lever Handle": "Manilla de palanca",
+  "Stainless Steel Handle": "Manilla de acero inoxidable",
+  "Stainless Steel Lever Handle Lock": "Cerradura con manilla de acero inoxidable",
+  "Grip Handle Set": "Juego de manillón",
+  "Concealed Sliding Door Handle": "Tirador oculto para puerta corredera",
+
+  // Glass door hardware
+  "Glass Door Handle": "Tirador para puerta de vidrio",
+  "Stainless Steel Glass Door Pull Handle": "Tirador de acero inoxidable para puerta de vidrio",
+  "Glass Door Patch Fittings": "Herrajes patch para puerta de vidrio",
+  "Glass Door Patch Fitting Set": "Juego de herrajes patch para puerta de vidrio",
+
+  // Hinges and closers
+  "Brass and Steel Hinges": "Bisagras de latón y acero",
+  "Door Hinge": "Bisagra de puerta",
+  "Stainless Steel Door Hinge": "Bisagra de puerta de acero inoxidable",
+  "Wooden Door Floor Hinge": "Bisagra de piso para puerta de madera",
+  "Door Closer": "Cierrapuertas",
+  "Door Coordinator": "Selector de cierre",
+
+  // Accessories
+  Latch: "Picaporte",
+  "Pry Latch": "Picaporte antipalanca",
+  "Door Flush Bolt": "Pasador embutido",
+  "Stainless Steel Flush Bolt": "Pasador embutido de acero inoxidable",
+  "Door Stopper": "Tope de puerta",
+  "Door viewer": "Mirilla",
+  Indicator: "Indicador de libre y ocupado",
+  "Security Door Guard": "Cadena de seguridad",
+  "Door Power Transfer Devices": "Pasacables para puerta",
+  "Gate House No": "Número de vivienda",
+  "Stainless Steel Wall Hook": "Percha de pared de acero inoxidable",
+
+  // Bathroom
+  "Bathroom Accessories": "Accesorios de baño",
+  "Grab Bar": "Barra de apoyo",
+  "Flip-Up Grab Bar": "Barra de apoyo abatible",
+};
