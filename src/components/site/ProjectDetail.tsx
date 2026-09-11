@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Project } from "@/data/types";
 import { getProductByModel } from "@/data/products";
+import { collectionSpecRanges, specRangeHeading, statedOn } from "@/lib/collection-spec-range";
 import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
@@ -111,6 +112,50 @@ export function ProjectDetail({
             </div>
           </div>
         </section>
+
+        {/*
+          What this package spans, computed from the products in it — the same derivation
+          the collection pages use (src/lib/collection-spec-range.ts), pointed at this
+          project's own product set.
+
+          These four pages carried thirteen sentences each and not one figure. A package
+          study whose whole claim is "these parts work together" and which never states a
+          backset is asking a specifier to take coordination on faith, which is the one
+          thing this buyer cannot do. Nothing here is authored: a line appears only when
+          at least three of the products state that field, so the glass entrance package
+          — whose three products have no recorded specs — correctly shows nothing rather
+          than a plausible number.
+
+          Rollback: delete this block; nothing else references it.
+        */}
+        {(() => {
+          const ranges = collectionSpecRanges(relatedProducts, locale);
+          if (!ranges.length) return null;
+          return (
+            <section
+              className="col-content border-t border-line pt-48"
+              aria-labelledby="project-range-heading"
+            >
+              <h2 id="project-range-heading" className="text-h2 text-ink">
+                {specRangeHeading(locale)}
+              </h2>
+              <dl className="mt-24 border-t border-ink pt-16">
+                {ranges.map((range) => (
+                  <div
+                    key={range.label}
+                    className="grid grid-cols-1 gap-4 border-b border-line py-12 sm:grid-cols-[14rem_1fr_auto] sm:gap-24"
+                  >
+                    <dt className="text-c2 text-ink-secondary">{range.label}</dt>
+                    <dd className="text-c1 tabular-nums text-ink">{range.value}</dd>
+                    <dd className="text-c2 text-ink-tertiary">
+                      {statedOn(range.stated, relatedProducts.length, locale)}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          );
+        })()}
 
         <section className="col-content border-t border-line pt-48">
           <h2 className="text-h2 text-ink">{text.gallery}</h2>
