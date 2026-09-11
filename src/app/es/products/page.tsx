@@ -51,6 +51,11 @@ export default function ProductosPage() {
           totalProducts={publishedProducts.length}
           categoryCounts={categoryCounts}
         />
+        <div className="layout mt-48">
+          <Link href="/es/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
+            Herrajes en detalle — fotografías y selección de componentes
+          </Link>
+        </div>
 
         {/*
           Mirrors the English catalogue index. The comparison pages had exactly one

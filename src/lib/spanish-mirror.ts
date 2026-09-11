@@ -31,6 +31,7 @@ const SPANISH_MIRROR_PREFIXES = [
     link to a route that only exists in English is a dead link dressed as a feature.
   */
   "/product-finder",
+  "/product-studies",
   /*
     The newsroom and its eight technical articles, translated 2026-09-04. These are the
     pages an answer engine is most likely to cite — they are reference material rather

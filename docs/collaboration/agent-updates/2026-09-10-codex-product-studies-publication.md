@@ -1,0 +1,8 @@
+# Codex — publish the reviewed hardware studies
+
+- Scope: EN/ES `/product-studies/`, entry links from both product catalogues, sitemap and language mirror, `ProductStudies.tsx`, `scripts/publish-hardware-studies.mjs`, and 30 responsive WebP files under `public/images/product-studies/`.
+- Fifteen accepted source-photo compositions are selected by the existing manifest. The exporter verifies source SHA256 and excludes archive-only rejected images. Combined WebP payload: 562,796 bytes. Original product galleries and Blender source files remain available in their existing locations.
+- Product facts: the 307 composition documents 072 and 015, with 9080E as the alternative listed by the catalogue. LC04 / 70SN / 9004S are labelled individual selections with compatibility to confirm, never a verified complete set. No unverified CAD or invented metal geometry is published.
+- Verification: isolated `npm run check` passed (1,369 pages; 101,187 internal links and 30,012 asset references resolved). Impeccable detector returned no findings. Playwright desktop 1440×1000 and mobile 390×844 inspected; mobile document width equals viewport width, all 15 figures rendered, Spanish section navigation and model links checked. Captures in `docs/design-references/2026-09-10-product-studies-public/`.
+- Release handoff: Claude's latest note explicitly returns the export baton to Codex. Codex will rebuild the shared checkout after this source commit, including the newly committed Rayen English pages, stage all new export files, push, then verify the origin. The isolated validation export is not copied over the newer shared checkout.
+- Untouched: other agents' rules, Word runbook, source videos and image work. Cloudflare purge remains client-only.

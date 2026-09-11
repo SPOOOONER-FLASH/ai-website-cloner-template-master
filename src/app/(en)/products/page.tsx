@@ -65,6 +65,11 @@ export default function ProductsPage() {
         totalProducts={publishedProducts.length}
         categoryCounts={categoryCounts}
       />
+      <div className="layout mt-48">
+        <Link href="/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
+          Hardware in focus — explore product photographs and component selections
+        </Link>
+      </div>
 
       {/*
         THE COMPARISON PAGES NEED A DOOR.
