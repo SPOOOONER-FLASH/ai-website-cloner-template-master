@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 import { capabilityCopy, capabilitySteps } from "@/data/capability";
-import { publishedProducts } from "@/data/products";
 
 /**
  * The production chain, advanced by scrolling.
@@ -45,9 +44,25 @@ import { publishedProducts } from "@/data/products";
  * and every figure it shows is computed in src/data/capability.ts, so nothing is left
  * behind to go stale.
  */
-export function CapabilityChain({ locale = "en" }: { locale?: Locale }) {
+/**
+ * `models` is a prop, and that is a bundle-size decision.
+ *
+ * This is a client component — the active-step highlight reads geometry on scroll. It
+ * used to import publishedProducts just to call `.length` on it, and importing the
+ * catalogue from client code ships the catalogue: 659 product records, with their specs
+ * and summaries, downloaded so that one integer could be rendered.
+ *
+ * The parent is a server component and already has the number.
+ */
+export function CapabilityChain({
+  locale = "en",
+  models,
+}: {
+  locale?: Locale;
+  models: number;
+}) {
   const text = capabilityCopy[locale === "es" ? "es" : "en"];
-  const steps = capabilitySteps({ models: publishedProducts.length });
+  const steps = capabilitySteps({ models });
   const [active, setActive] = useState(0);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
 

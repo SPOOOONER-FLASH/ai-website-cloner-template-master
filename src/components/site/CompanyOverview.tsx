@@ -1,6 +1,7 @@
 import { ArrowLink } from "./ArrowLink";
 import { CapabilityChain } from "./CapabilityChain";
 import { representatives } from "@/data/representatives";
+import { publishedProducts } from "@/data/products";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import {
   certificates,
@@ -119,7 +120,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           holding two numbers and no picture of what happens between them; seven steps
           answer that before the question turns into an email.
         */}
-        <CapabilityChain locale={locale} />
+        <CapabilityChain locale={locale} models={publishedProducts.length} />
 
         {/*
           Where the company actually is.

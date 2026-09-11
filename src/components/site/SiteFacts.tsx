@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import type { Locale } from "@/data/site";
-import { rollFrame, siteFacts, siteFactsHeading } from "@/lib/site-facts";
+import { useEffect, useRef, useState } from "react";
+import { rollFrame } from "@/lib/fact-roll";
+import type { SiteFact } from "@/lib/site-facts";
 
 /**
  * The factory in figures — a row of counted facts, on the page that gets quoted.
@@ -59,9 +59,29 @@ import { rollFrame, siteFacts, siteFactsHeading } from "@/lib/site-facts";
  * figures are computed, so there is no orphaned copy left behind to go stale.
  */
 
-export function SiteFacts({ locale = "en" }: { locale?: Locale }) {
-  /* Build-time data: memoised so the effect below has a stable dependency. */
-  const facts = useMemo(() => siteFacts(locale), [locale]);
+/**
+ * The figures arrive as a prop, and that is a performance decision rather than a style one.
+ *
+ * This is a client component — the count-up needs an IntersectionObserver. It used to call
+ * siteFacts() itself, and siteFacts() imports publishedProducts, so the WHOLE CATALOGUE
+ * was pulled into the browser bundle: a 1,548 KB JavaScript chunk containing all 659
+ * product records, their specs and their summaries, shipped to every visitor of the
+ * homepage so that the page could display two numbers.
+ *
+ * The function is pure and its output is a handful of strings, so it belongs on the
+ * server. The parent computes it, this renders and animates it.
+ *
+ * `facts` is optional so the component still works if somebody drops it onto a page
+ * without threading the prop — it falls back to computing them, which is correct but
+ * expensive, and the fallback is why this is not a required prop with a broken build.
+ */
+export function SiteFacts({
+  facts,
+  heading,
+}: {
+  facts: SiteFact[];
+  heading: string;
+}) {
   const sectionRef = useRef<HTMLElement | null>(null);
   /* null means "not rolling" — render the real value. */
   const [rolled, setRolled] = useState<Record<number, number> | null>(null);
@@ -134,7 +154,7 @@ export function SiteFacts({ locale = "en" }: { locale?: Locale }) {
       */}
       <div className="col-content">
         <h2 id="site-facts-heading" className="drawer-eyebrow">
-          {siteFactsHeading(locale)}
+          {heading}
         </h2>
         {/*
           A description list, because that is what it is: each figure is the value of a

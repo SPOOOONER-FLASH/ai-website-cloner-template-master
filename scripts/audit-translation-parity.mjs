@@ -154,7 +154,15 @@ if (!only || only === "numbers") {
 if (!only || only === "length") {
   if (lengthIssues.length) {
     console.log("== length anomalies (softer signal — look, do not assume) ==");
-    for (const issue of lengthIssues.sort((a, b) => (a.severity === "high" ? -1 : 1))) {
+    /*
+      Rank, not a one-sided test. The first version returned -1 whenever `a` was high and
+      1 otherwise, which never looked at `b` — so two "high" rows compared as "a before b"
+      AND "b before a", and the order depended on the engine's sort rather than on the
+      severity. Lint caught it as an unused parameter, which is the same bug seen from the
+      other end.
+    */
+    const rank = { high: 0, short: 1, long: 2 };
+    for (const issue of lengthIssues.sort((a, b) => rank[a.severity] - rank[b.severity])) {
       console.log(`  [${issue.severity}] ${issue.where}: ${issue.note}`);
     }
   } else {

@@ -7,6 +7,7 @@ import { Spacer } from "@/components/site/Spacer";
 import { TextModule } from "@/components/site/TextModule";
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
+import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import * as content from "@/data/home-es";
@@ -39,7 +40,7 @@ export default function SpanishHomePage() {
       </div>
 
       <div className="mb-48 lg:mb-136">
-        <SiteFacts locale="es" />
+        <SiteFacts facts={siteFacts("es")} heading={siteFactsHeading("es")} />
       </div>
       <div className="modules">
         <ArgentinaAr4Showcase locale="es" />

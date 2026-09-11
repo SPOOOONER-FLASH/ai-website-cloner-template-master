@@ -103,3 +103,64 @@ test("project editorial images are responsive while technical product anchors st
     );
   }
 });
+
+/*
+  THE CATALOGUE MUST NOT REACH THE BROWSER ON THE HOMEPAGE.
+
+  Measured 2026-09-11: the homepage shipped 2,241 KB of JavaScript, of which a single
+  1,548 KB chunk was the entire product catalogue — 659 records with their specs and
+  summaries — downloaded by every visitor so that the facts strip could render two
+  numbers.
+
+  The cause is one import. `SiteFacts` and `CapabilityChain` are client components (they
+  animate on scroll), and a client component that imports from `@/data/products` pulls the
+  generated catalogue into its bundle. Both only ever needed counts, which a server
+  component already has.
+
+  This is invisible in every other check: the page renders correctly, the tests pass, the
+  HTML is identical, and Lighthouse reports it as an opaque "reduce unused JavaScript".
+  So it is asserted on the built output, where the regression would actually appear.
+
+  Fixing it took the homepage from 2,241 KB to 669 KB.
+
+  A NOTE ON THE THRESHOLD. Five records is not a magic number — it is "more than an
+  incidental mention". A chunk legitimately contains a slug or two (a link, a redirect
+  map). It never legitimately contains dozens.
+*/
+test("the homepage bundle does not contain the product catalogue", () => {
+  const html = readFileSync(homeExport, "utf8");
+  const chunks = [...new Set(html.match(/\/_next\/static\/chunks\/[a-z0-9_-]+\.js/g) ?? [])];
+
+  assert.ok(chunks.length > 0, "expected the homepage to reference JavaScript chunks");
+
+  const carryingCatalogue = [];
+  let totalKb = 0;
+
+  for (const chunk of chunks) {
+    const path = join(repositoryRoot, "out", chunk);
+    let source;
+    try {
+      source = readFileSync(path, "utf8");
+    } catch {
+      continue;
+    }
+    totalKb += source.length / 1024;
+    const records = (source.match(/slug:"/g) ?? []).length;
+    if (records > 5) carryingCatalogue.push(`${chunk} (${records} product records)`);
+  }
+
+  assert.deepEqual(
+    carryingCatalogue,
+    [],
+    "a client component is importing @/data/products — pass the count from a server component instead",
+  );
+
+  /*
+    A ceiling as well as a shape check. The catalogue is the biggest way to blow this, but
+    it is not the only one, and a number that creeps back up deserves the same stop.
+  */
+  assert.ok(
+    totalKb < 1200,
+    `homepage JavaScript is ${Math.round(totalKb)} KB; it was 669 KB on 2026-09-11 after removing the catalogue`,
+  );
+});

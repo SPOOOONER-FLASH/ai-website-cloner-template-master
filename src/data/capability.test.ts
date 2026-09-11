@@ -90,15 +90,49 @@ test("the model figure is whatever it was handed, never a literal", () => {
   importing `products.ts`, which cannot load here at all, and no check is worse than a
   blunt one.
 */
-test("the component counts the catalogue rather than passing a number", () => {
-  const source = readFileSync(
+/*
+  MOVED, NOT WEAKENED — 2026-09-11.
+
+  This used to assert that CapabilityChain itself called
+  `capabilitySteps({ models: publishedProducts.length })`. The invariant it protects is
+  still exactly right: the figure on the page must come from the catalogue, so it cannot
+  drift into a literal somebody forgets to update.
+
+  What changed is WHERE the counting happens. CapabilityChain is a client component, and
+  importing `publishedProducts` from client code ships the whole catalogue to the browser
+  — 659 records, their specs and their summaries, in a 1,548 KB chunk, so that one integer
+  could be rendered. The count moved to CompanyOverview, which is a server component and
+  already has the data.
+
+  So the assertion now follows the number across the two files: the parent must read it
+  from the catalogue, and the child must use the prop rather than a constant. Either half
+  alone would let the regression back in — a parent that passes a literal, or a child that
+  ignores the prop.
+*/
+test("the capability figure is counted from the catalogue, on the server", () => {
+  const child = readFileSync(
     new URL("../components/site/CapabilityChain.tsx", import.meta.url),
     "utf8",
   );
+  const parent = readFileSync(
+    new URL("../components/site/CompanyOverview.tsx", import.meta.url),
+    "utf8",
+  );
+
   assert.match(
-    source,
-    /capabilitySteps\(\{\s*models:\s*publishedProducts\.length\s*\}\)/,
-    "CapabilityChain must pass publishedProducts.length, so the page updates with the catalogue",
+    parent,
+    /<CapabilityChain[^>]*models=\{publishedProducts\.length\}/,
+    "CompanyOverview must pass publishedProducts.length, so the page updates with the catalogue",
+  );
+  assert.match(
+    child,
+    /capabilitySteps\(\{\s*models\s*\}\)/,
+    "CapabilityChain must use the prop, not a literal of its own",
+  );
+  assert.doesNotMatch(
+    child,
+    /from "@\/data\/products"/,
+    "CapabilityChain is a client component: importing the catalogue ships it to the browser",
   );
 });
 

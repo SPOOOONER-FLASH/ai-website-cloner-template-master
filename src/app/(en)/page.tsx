@@ -1,5 +1,6 @@
 import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
+import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
@@ -36,7 +37,7 @@ export default function Home() {
       </div>
 
       <div className="mb-48 lg:mb-136">
-        <SiteFacts />
+        <SiteFacts facts={siteFacts("en")} heading={siteFactsHeading("en")} />
       </div>
 
       <div className="modules">
