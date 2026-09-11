@@ -83,3 +83,26 @@ Claude 2026-09-10：雷茵英文版**源码已提交推送**（dd1bbbb324）—�
 → **已由 Claude 构建部署**（af0310525f）：甲方 2026-09-10 告知 Codex 下线约五天，
 指示直接提交。构建带上了 Codex 离线前已提交的 product-studies（7e73b0075b）。
 out-rayen/en/ 87 个英文页已上线，`/zh-en/` 是构建期前缀，永远 404，不是 bug。
+
+Claude 2026-09-11（第二台机器，全新 clone 到 `C:\Users\86132\Downloads\rayen-repo`）：
+第五批大拉手 44 个型号、328 张图上线；图片顺序改成甲方给的「窗口图片 → 参数图 → 表面处理 → 实景」，
+参数图固定第一张（`imageOrder: "drawing-first"`，只对 b5 生效，前四批源图不在本机没跟着改，
+已有 30 个型号用 `scripts/reorder-rayen-gallery.mjs` 单独调了顺序）。新开子类目「黄铜拉手」。
+**已提交推送，out/ 与 out-rayen/ 一并提交。**
+
+⚠ 两件值得下一个人知道的：
+
+一、**类目封面图一直挂着 Hyland 海得的椭圆标。** `src/data/rayen.ts` 只把产品图映射到
+`/images/products-rayen/`，`content/categories.json` 的封面是原样透传的，走的是未清洗的
+`/images/products/`。产品中心首屏那 6 张卡片因此从上线起就带着另一家公司的商标。
+已修（rayen.ts 加一层映射），并把类目封面纳入 `brand-rayen-images.mjs` 的打标范围。
+教训：「产品图清干净了」不等于「页面上的图清干净了」——类目封面不是任何产品的图。
+
+二、**`public/videos/products/` 少了 12 个逃生器械视频，但 `out/` 里有。**
+所以任何人在这台机器上重出构建，都会把这 12 个视频从 out/ 里删掉，死链审计立刻报 24 条。
+我从 `git show HEAD:out/videos/...` 把它们还原进 `public/`，根因才算修掉。
+下次看到「重建后莫名其妙少了文件」，先查是不是 public/ 里本来就没有、只有 out/ 里有。
+
+开孔直径有一条**等甲方回话**：甲方给的「玻璃门16、木门10」经 artunion 核对是 M8 那一档，
+M6 的型号原厂公布的是 φ12/φ8。现在网站上填的是每个型号自己的数字。
+缺料清单在 `docs/collaboration/2026-09-11-rayen-batch5-gaps.md`。

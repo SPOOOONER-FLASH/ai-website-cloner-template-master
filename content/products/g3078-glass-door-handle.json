@@ -69,11 +69,6 @@
   },
   "gallery": [
     {
-      "src": "/images/products/g3078-glass-door-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "G3078 Glass Door Handle, view 2"
-    },
-    {
       "src": "/images/products/g3078-glass-door-handle-3.webp",
       "ratio": "1 / 1",
       "label": "G3078 Glass Door Handle, dimension drawing"
@@ -82,6 +77,11 @@
       "src": "/images/products/g3078-glass-door-handle-4.webp",
       "ratio": "1 / 1",
       "label": "G3078 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g3078-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G3078 Glass Door Handle, view 2"
     },
     {
       "src": "/images/products/g3078-glass-door-handle-5.webp",
@@ -102,7 +102,7 @@
     "artunion": {
       "id": "G3078-01-024-L800",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   }
 }

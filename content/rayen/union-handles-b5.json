@@ -1,0 +1,1607 @@
+{
+  "_readme": [
+    "第五批：客户 2026-09-11 微信发来的 24 个「大拉手」压缩包，381 张图，48 个型号。",
+    "scripts/ingest-union-handles.mjs 读这份清单生成 content/products/*.json 和 webp。",
+    "改分类或改尺寸改这里再重跑，不要手改生成出来的产品 JSON。",
+    "",
+    "== 规格从哪来 ==",
+    "每一条尺寸都是从该型号自己的 D9xxSZ / L9xxSZ 图纸上读下来的数字。P= 是固定孔中心距，",
+    "它旁边那个更大的数是总长 —— 33 张图纸全部是这个关系。没有推算、没有套用同族型号。",
+    "两个突出尺寸并排时，小的记 Projection（门面到握杆的净空），大的记 Rose depth（门面到",
+    "最外面），这是第一批 union-handles.json 定下的对应关系，本批沿用以免同一张表两种读法。",
+    "",
+    "== 图片顺序是客户 2026-09-11 当面给的 ==",
+    "顺序：窗口图片 → 参数图 → 其他表面处理颜色展示图 → 安装实景效果图。",
+    "所以 imageOrder = drawing-first：图纸排在图库第一张，封面另取文件名带「窗图」的那张",
+    "（33 个型号里 18 个有）。前四批是「产品图在前」的老顺序，源图不在这台机器上，没有跟着改。",
+    "",
+    "== 开孔直径为什么没写死在这份清单里 ==",
+    "客户 2026-09-11 给的是「玻璃门16、木门10」。拿 artunion 逐型号一核对，发现那是 M8 螺钉",
+    "那一档的数字：UNION 自己公布的是 M6 → 玻璃 φ12 / 平板 φ8，M8 → 玻璃 φ16 / 平板 φ10，",
+    "整个缓存里 20 多个型号无一例外。对一个 M6 的型号套 φ16，就是让装配工在玻璃上多开 4mm。",
+    "所以这两行交给 scripts/merge-artunion-specs.mjs 按型号填（它还会拿 ピッチ 和我们自己的",
+    "图纸对一遍才敢写），抓不到的型号先空着，等甲方确认「按螺钉规格分档」这个修正。",
+    "",
+    "== T 和 G 的含义已经客户确认 ==",
+    "「T代表木门金属门 G代表用在玻璃门」，「文件名称如果 T（G）的这种，玻璃门和木门 2 种都能用」。",
+    "第一批是从图纸画法反推出这个分野的，现在是客户原话，结论一致。",
+    "",
+    "== 一个型号两种长度 ==",
+    "G52 / T52（L600、L1200）、T2412（L800、L1200）各有两张图纸，是同一个型号的两种长度，",
+    "不是两个型号。规格表把两种都写出来（P=425mm (L600) / P=800mm (L1200)），而不是挑一个",
+    "写、把另一个藏起来 —— 买家要的就是「我的门配哪一根」。",
+    "注意：这会让 merge-artunion-specs.mjs 的中心距交叉校验对不上，那几个型号的重量因此",
+    "不会被合并进来。这是对的：UNION 按长度分别列重量，拿其中一个套到两种长度上就是编数字。",
+    "",
+    "== 黄铜金色系列 ==",
+    "T3103 / T811 / T812 / T915 / T921 / T9972 来自「大拉手黄铜金色系列」这个包。图纸不写材质，",
+    "材质依据是客户自己的包名（AGENTS.md 踩坑第 8 条：客户的压缩包名比图纸更可信）。",
+    "表面处理只写 Polished brass 一项 —— 包名给的是「黄铜金色」，再往下分古铜、拉丝就是编。",
+    "类目暂放 stainless-steel-handles（该类目实际就是大拉手类目，第一批清单里已写明），",
+    "但类目名写的是「不锈钢拉手」，黄铜件挂进去名不副实。这一条要甲方定：改类目名，还是开子类目。",
+    "",
+    "== 11 个没有图纸的型号也上了，规格表是空的 ==",
+    "CSM1、G1265、G1286、G5450、MUL1066、T2522、T52UP、T5650UP、TSG1226、TSG52、USG1。",
+    "一开始按第一批的做法压着没上（凭一张图另立 SKU，规格表会是空的，型号也可能指错件），",
+    "甲方 2026-09-11 指示全上：「凭一张图另立 SKU，全上了，然后列一个 doc 告诉老板要补什么」。",
+    "所以它们的 specs 是空数组，不是编出来的数字 —— 缺什么写在",
+    "docs/collaboration/2026-09-11-rayen-batch5-gaps.md，那份文档就是给老板看的补料清单。",
+    "唯一还压着的是 G2690：目录里已经有它，在这里重建会替换掉原有的图，见 deferred。",
+    "",
+    "== 4 个已有型号的新图没有并进来 ==",
+    "G1106、G2690、T2750、UL1066 这次的包里有新图，但它们的产品档案是第一/三/四批生成的，",
+    "源图目录不在这台机器上。在这里重建会把它们原有的图换掉而不是加上去。见 deferred。",
+    "",
+    "== 三张图纸上有日文 ==",
+    "T2412 的两张（「断面形状」，下面就是它自己的英文 section，删掉日文那行标注仍然完整）",
+    "已登记在 excludeJapanese 里，交给 scripts/delocalize-drawings.mjs 处理。",
+    "",
+    "== 只上雷茵站 ==",
+    "sites: [\"rayen\"]，沿用客户 2026-09-08「都是上给雷茵的」。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-batch5-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [
+    "UPLUS_01.jpg",
+    "UL1066ordercolorP.jpg"
+  ],
+  "models": [
+    {
+      "model": "G1105",
+      "slug": "g1105-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "1105",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1105xD920SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=640mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "Ø19mm"
+        },
+        {
+          "label": "Projection",
+          "value": "62mm"
+        }
+      ]
+    },
+    {
+      "model": "G1226",
+      "slug": "g1226-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "1226",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1226xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "22mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "19mm"
+        },
+        {
+          "label": "Projection",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "G1236",
+      "slug": "g1236-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "1236",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1236xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "22mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "19mm"
+        },
+        {
+          "label": "Projection",
+          "value": "22mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "62mm"
+        }
+      ]
+    },
+    {
+      "model": "G1237",
+      "slug": "g1237-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G1237xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=500mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "806mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "28mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "28mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "63mm"
+        }
+      ]
+    },
+    {
+      "model": "G2746",
+      "slug": "g2746-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "2746",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G2746xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=580mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "20mm"
+        },
+        {
+          "label": "Projection",
+          "value": "20mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "50mm"
+        }
+      ]
+    },
+    {
+      "model": "G500",
+      "slug": "g500-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G500x7D931SZoW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "452mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "27mm"
+        },
+        {
+          "label": "Projection",
+          "value": "70mm"
+        }
+      ]
+    },
+    {
+      "model": "G52",
+      "slug": "g52-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "52",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G52x10D927SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm (L600) / P=800mm (L1200)"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm / 1200mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "32mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "64mm"
+        }
+      ]
+    },
+    {
+      "model": "G720",
+      "slug": "g720-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "720",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "G720x5D923SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "20mm"
+        },
+        {
+          "label": "Projection",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "T1018",
+      "slug": "t1018-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T1018x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=978mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1000mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "600mm"
+        },
+        {
+          "label": "Projection",
+          "value": "40mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "75mm"
+        }
+      ]
+    },
+    {
+      "model": "T1122",
+      "slug": "t1122-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "1122",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T1122xD900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=615mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "700mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "40mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "T1263",
+      "slug": "t1263-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T1263xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=578mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Plate width",
+          "value": "122mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "30mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "52mm"
+        }
+      ]
+    },
+    {
+      "model": "T1265",
+      "slug": "t1265-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T1265xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=574mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "35mm"
+        },
+        {
+          "label": "Projection",
+          "value": "33mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "55mm"
+        }
+      ]
+    },
+    {
+      "model": "T2083",
+      "slug": "t2083-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T2083x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=450mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "490mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "30mm"
+        },
+        {
+          "label": "Projection",
+          "value": "50mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "90mm"
+        }
+      ]
+    },
+    {
+      "model": "T2336",
+      "slug": "t2336-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T2336x5D922SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=475mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "675mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "400mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Projection",
+          "value": "33mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "66mm"
+        }
+      ]
+    },
+    {
+      "model": "T2412",
+      "slug": "t2412-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T2412x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=460mm (L800) / P=860mm (L1200)"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm / 1200mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "32mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "T25",
+      "slug": "t25-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "25",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T25x8D928SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "550mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm / 22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "34mm / 35mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "67mm / 63mm"
+        }
+      ]
+    },
+    {
+      "model": "T2690",
+      "slug": "t2690-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "2690",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T2690xD900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=500mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "450mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "71mm"
+        }
+      ]
+    },
+    {
+      "model": "T52",
+      "slug": "t52-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "52",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T52x10D927SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm (L600) / P=800mm (L1200)"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm / 1200mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "32mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "T5450",
+      "slug": "t5450-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T5450x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=775mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "40mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "600mm"
+        },
+        {
+          "label": "Projection",
+          "value": "38mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "78mm"
+        }
+      ]
+    },
+    {
+      "model": "T5650",
+      "slug": "t5650-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T5650x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=573mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Projection",
+          "value": "27mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "70mm"
+        }
+      ]
+    },
+    {
+      "model": "T720",
+      "slug": "t720-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "720",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T720x6D923SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "58mm"
+        }
+      ]
+    },
+    {
+      "model": "T8050",
+      "slug": "t8050-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": null,
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T8050x26D922SZoW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=565mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "19mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "60mm"
+        }
+      ]
+    },
+    {
+      "model": "T3103",
+      "slug": "t3103-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T3103x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=510mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø38mm"
+        },
+        {
+          "label": "Stem diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Projection",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "T811",
+      "slug": "t811-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T811x8D923SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=746mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1000mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Projection",
+          "value": "35mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "68mm"
+        }
+      ]
+    },
+    {
+      "model": "T812",
+      "slug": "t812-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T812x8D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "565mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "257mm"
+        },
+        {
+          "label": "Plate width",
+          "value": "68mm"
+        },
+        {
+          "label": "Projection",
+          "value": "33mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "84.5mm"
+        }
+      ]
+    },
+    {
+      "model": "T915",
+      "slug": "t915-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T915x21D921SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=330mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "515mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "260mm"
+        },
+        {
+          "label": "Plate width",
+          "value": "70mm"
+        },
+        {
+          "label": "Projection",
+          "value": "30mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "50mm"
+        }
+      ]
+    },
+    {
+      "model": "T921",
+      "slug": "t921-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T921x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=620mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "762mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "424mm"
+        },
+        {
+          "label": "Plate width",
+          "value": "95mm"
+        },
+        {
+          "label": "Projection",
+          "value": "38mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "82mm"
+        }
+      ]
+    },
+    {
+      "model": "T9972",
+      "slug": "t9972-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "styleFamily": null,
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": "T9972x5D921SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=425mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "645mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "26mm"
+        },
+        {
+          "label": "Projection",
+          "value": "25mm"
+        },
+        {
+          "label": "Rose depth",
+          "value": "65mm"
+        }
+      ]
+    },
+    {
+      "model": "UL1005",
+      "slug": "ul1005-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "1105",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL1005xL920SZXW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "130mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "20mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "68mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "9.5mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        }
+      ]
+    },
+    {
+      "model": "UL1008",
+      "slug": "ul1008-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "1122",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL1008xL900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "135mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "70mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "9.5mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        }
+      ]
+    },
+    {
+      "model": "UL1061",
+      "slug": "ul1061-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "1236",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL1061xL900SZW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "142mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "68mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "50 × 50mm (square)"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "7mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        }
+      ]
+    },
+    {
+      "model": "UL690",
+      "slug": "ul690-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "2690",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL690xL901SZXW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "140mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "72.5mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø65mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "7mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        }
+      ]
+    },
+    {
+      "model": "UL745",
+      "slug": "ul745-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "2746",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL745x14L901SZXW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "130mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "20mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "70mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "9.5mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        }
+      ]
+    },
+    {
+      "model": "G1265",
+      "slug": "g1265-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "G1286",
+      "slug": "g1286-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "G5450",
+      "slug": "g5450-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "TSG1226",
+      "slug": "tsg1226-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "TSG52",
+      "slug": "tsg52-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "T2522",
+      "slug": "t2522-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "T52UP",
+      "slug": "t52up-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "T5650UP",
+      "slug": "t5650up-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "CSM1",
+      "slug": "csm1-brass-pull-handle",
+      "name": "Brass Pull Handle",
+      "nameZh": "黄铜门拉手",
+      "categoryPath": [
+        "stainless-steel-handles",
+        "brass-pull-handles"
+      ],
+      "material": "Brass",
+      "finishes": [
+        "Polished brass"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "MUL1066",
+      "slug": "mul1066-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "USG1",
+      "slug": "usg1-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    }
+  ],
+  "heldBack": [
+    {
+      "model": "G2690",
+      "reason": "有产品图但无图纸；且目录里已有 G2690，见 deferred"
+    }
+  ],
+  "deferred": [
+    {
+      "models": [
+        "G1106",
+        "G2690",
+        "T2750",
+        "UL1066"
+      ],
+      "reason": "这四个型号目录里已经有，本批的包里是补充图。它们的档案由第一/三/四批清单生成，那几批的 sourceRoot 不在这台机器上；在本批重建会替换掉原有图片而不是追加。正确做法是把新图拷进原批次的源目录再重跑原清单。"
+    }
+  ],
+  "excludeJapanese": [
+    {
+      "file": "T2412x5D921SZW.jpg",
+      "text": "断面形状",
+      "note": "下方紧邻其英文对照 section，删掉日文行标注仍完整"
+    },
+    {
+      "file": "T2412x5D922SZW.jpg",
+      "text": "断面形状",
+      "note": "同上"
+    }
+  ]
+}

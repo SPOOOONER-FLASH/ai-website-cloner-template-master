@@ -64,6 +64,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/t3321-stainless-steel-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "T3321 Stainless Steel Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/t3321-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
       "label": "T3321 Stainless Steel Handle, view 2"
@@ -84,11 +89,6 @@
       "label": "T3321 Stainless Steel Handle, view 5"
     },
     {
-      "src": "/images/products/t3321-stainless-steel-handle-6.webp",
-      "ratio": "1 / 1",
-      "label": "T3321 Stainless Steel Handle, dimension drawing"
-    },
-    {
       "src": "/images/products/t3321-stainless-steel-handle-7.webp",
       "ratio": "1 / 1",
       "label": "T3321 Stainless Steel Handle, view 7"
@@ -102,7 +102,7 @@
     "artunion": {
       "id": "T3321-35-151",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   }
 }

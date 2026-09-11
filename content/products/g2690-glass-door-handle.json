@@ -65,6 +65,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/g2690-glass-door-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "G2690 Glass Door Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/g2690-glass-door-handle-2.webp",
       "ratio": "1 / 1",
       "label": "G2690 Glass Door Handle, view 2"
@@ -108,11 +113,6 @@
       "src": "/images/products/g2690-glass-door-handle-10.webp",
       "ratio": "1 / 1",
       "label": "G2690 Glass Door Handle, view 10"
-    },
-    {
-      "src": "/images/products/g2690-glass-door-handle-11.webp",
-      "ratio": "1 / 1",
-      "label": "G2690 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g2690-glass-door-handle-12.webp",
@@ -183,7 +183,7 @@
     "artunion": {
       "id": "G2690-20-121-A",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   }
 }

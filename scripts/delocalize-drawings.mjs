@@ -92,6 +92,25 @@ const EDITS = [
     */
     regions: [{ x: 416, y: 361, w: 122, h: 28, text: "安装底座", size: 14 }],
   },
+  /*
+    T2412's two drawings (L800 and L1200), batch 5.
+
+    「断面形状」 sits directly above its own English twin "section". The characters happen to be
+    legible to a Chinese reader as they stand, which is why this is a rewrite to 「截面形状」
+    rather than a deletion: 截面 is the term a Chinese fabricator actually uses, and leaving
+    the Japanese catalogue's wording on a drawing is the same tell as leaving a supplier's
+    mark on a photograph. Boxes measured off the 544×532 canvas, not guessed.
+  */
+  {
+    file: "t2412-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 153, y: 261, w: 55, h: 17, text: "截面形状", size: 12 }],
+  },
+  {
+    file: "t2412-stainless-steel-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 175, y: 267, w: 48, h: 17, text: "截面形状", size: 11 }],
+  },
 ];
 
 const FONT = "Microsoft YaHei, Noto Sans SC, SimHei, sans-serif";

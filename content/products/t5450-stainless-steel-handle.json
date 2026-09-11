@@ -1,0 +1,91 @@
+{
+  "model": "T5450",
+  "slug": "t5450-stainless-steel-handle",
+  "name": "Stainless Steel Handle",
+  "nameZh": "门拉手",
+  "series": "Stainless Steel Handle",
+  "categoryPath": [
+    "stainless-steel-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=775mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "800mm"
+    },
+    {
+      "label": "Grip section",
+      "value": "40mm"
+    },
+    {
+      "label": "Grip length",
+      "value": "600mm"
+    },
+    {
+      "label": "Projection",
+      "value": "38mm"
+    },
+    {
+      "label": "Rose depth",
+      "value": "78mm"
+    },
+    {
+      "label": "Weight",
+      "value": "5.3kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/t5450-stainless-steel-handle.webp",
+    "ratio": "1 / 1",
+    "label": "T5450 Stainless Steel Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/t5450-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T5450 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t5450-stainless-steel-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "T5450 Stainless Steel Handle, view 3"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "T5450 Stainless Steel Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T5450-39-110",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
+    }
+  }
+}

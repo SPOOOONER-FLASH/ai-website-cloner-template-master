@@ -60,6 +60,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/t1266-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "T1266 Stainless Steel Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/t1266-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
       "label": "T1266 Stainless Steel Handle, view 2"
@@ -68,11 +73,6 @@
       "src": "/images/products/t1266-stainless-steel-handle-3.webp",
       "ratio": "1 / 1",
       "label": "T1266 Stainless Steel Handle, view 3"
-    },
-    {
-      "src": "/images/products/t1266-stainless-steel-handle-4.webp",
-      "ratio": "1 / 1",
-      "label": "T1266 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t1266-stainless-steel-handle-5.webp",
@@ -88,7 +88,7 @@
     "artunion": {
       "id": "T1266-25-191",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   }
 }

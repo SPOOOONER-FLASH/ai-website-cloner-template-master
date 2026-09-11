@@ -1,0 +1,95 @@
+{
+  "model": "UL745",
+  "slug": "ul745-lever-handle",
+  "name": "Lever Handle",
+  "nameZh": "执手",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "styleFamily": "2746",
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel lever handle, 130mm lever.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "130mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "20mm"
+    },
+    {
+      "label": "Lever drop",
+      "value": "70mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "9.5mm"
+    },
+    {
+      "label": "Spindle centre",
+      "value": "P=34mm"
+    },
+    {
+      "label": "Weight",
+      "value": "0.38kg"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/ul745-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "UL745 Lever Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/ul745-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "UL745 Lever Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/ul745-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "UL745 Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/ul745-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "UL745 Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/ul745-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "UL745 Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/ul745-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "UL745 Lever Handle, view 6"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "UL745 Lever Handle | RAYEN",
+  "seoDescription": "Stainless Steel lever handle, 130mm lever.",
+  "specSources": {
+    "artunion": {
+      "id": "UL745-001",
+      "basis": "sole",
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
+    }
+  }
+}

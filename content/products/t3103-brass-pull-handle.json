@@ -1,0 +1,86 @@
+{
+  "model": "T3103",
+  "slug": "t3103-brass-pull-handle",
+  "name": "Brass Pull Handle",
+  "nameZh": "黄铜门拉手",
+  "series": "Brass Pull Handle",
+  "categoryPath": [
+    "stainless-steel-handles",
+    "brass-pull-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Brass pull handle, 800mm overall on P=510mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=510mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "800mm"
+    },
+    {
+      "label": "Grip section",
+      "value": "Ø38mm"
+    },
+    {
+      "label": "Stem diameter",
+      "value": "Ø32mm"
+    },
+    {
+      "label": "Projection",
+      "value": "25mm"
+    },
+    {
+      "label": "Rose depth",
+      "value": "65mm"
+    },
+    {
+      "label": "Weight",
+      "value": "6.5kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
+    }
+  ],
+  "material": "Brass",
+  "finishes": [
+    "Polished brass"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/t3103-brass-pull-handle.webp",
+    "ratio": "1 / 1",
+    "label": "T3103 Brass Pull Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/t3103-brass-pull-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T3103 Brass Pull Handle, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "T3103 Brass Pull Handle | RAYEN",
+  "seoDescription": "Brass pull handle, 800mm overall on P=510mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T3103-15-001-L",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
+    }
+  }
+}

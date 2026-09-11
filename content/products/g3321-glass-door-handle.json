@@ -65,6 +65,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/g3321-glass-door-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "G3321 Glass Door Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/g3321-glass-door-handle-2.webp",
       "ratio": "1 / 1",
       "label": "G3321 Glass Door Handle, view 2"
@@ -95,11 +100,6 @@
       "label": "G3321 Glass Door Handle, view 7"
     },
     {
-      "src": "/images/products/g3321-glass-door-handle-8.webp",
-      "ratio": "1 / 1",
-      "label": "G3321 Glass Door Handle, dimension drawing"
-    },
-    {
       "src": "/images/products/g3321-glass-door-handle-9.webp",
       "ratio": "1 / 1",
       "label": "G3321 Glass Door Handle, view 9"
@@ -123,7 +123,7 @@
     "artunion": {
       "id": "G3321-35-151",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   }
 }

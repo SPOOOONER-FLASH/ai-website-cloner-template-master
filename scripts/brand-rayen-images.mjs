@@ -51,6 +51,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = join(root, "public", "images", "products-rayen");
 const PRODUCTS = join(root, "content", "products");
 const LOGO = join(root, "public", "images", "rayen", "logo.webp");
+const CATEGORIES = join(root, "content", "categories.json");
 const LEDGER = join(root, "content", "rayen", "image-branding.json");
 
 const argv = process.argv.slice(2);
@@ -84,6 +85,26 @@ function publishedImages() {
       names.add(String(image.src).slice(String(image.src).lastIndexOf("/") + 1));
     }
   }
+
+  /*
+    The category covers on 产品中心 too.
+
+    They are not any product's photograph, so the loop above never saw them, and for three
+    weeks the first six pictures on the RAYEN catalogue page were the only unbranded ones on
+    the site. Worse, until src/data/rayen.ts was fixed the same day they were being served
+    straight out of /images/products/ with the Hyland 海得 oval still on them. Consistency is
+    the argument (AGENTS.md): six unmarked cards above sixty marked ones reads as a page
+    assembled from two different sources, which is exactly what it was.
+  */
+  const walk = (nodes) => {
+    for (const node of nodes ?? []) {
+      const src = node.image?.src;
+      if (src) names.add(String(src).slice(String(src).lastIndexOf("/") + 1));
+      walk(node.children);
+    }
+  };
+  walk(JSON.parse(readFileSync(CATEGORIES, "utf8")).categories);
+
   return names;
 }
 
