@@ -26,9 +26,13 @@
     "src": "/images/editorial/hyde-real-lock-plate.webp",
     "ratio": "3 / 2",
     "label": "A lock case photographed with its faceplate visible — the dimensions on this face are what decide whether a substitution fits a door that is already cut.",
-    "labelEs": "Una caja de cerradura fotografiada con el frente a la vista — las cotas de esta cara son las que deciden si una sustitución encaja en una puerta ya mecanizada."
+    "labelEs": "Una caja de cerradura fotografiada con el frente a la vista —las cotas de esta cara son las que deciden si una sustitución encaja en una puerta ya mecanizada."
   },
-  "relatedModels": ["Lc07 85×45mm", "5681", "SSH017"],
+  "relatedModels": [
+    "Lc07 85×45mm",
+    "5681",
+    "SSH017"
+  ],
   "seoTitle": "How to Cross-Reference a Door Lock to an Equivalent | Canton Hyland",
   "seoDescription": "Six dimensions decide whether one mortise lock substitutes for another: backset, centre distance, faceplate, case size, spindle and door thickness. Why model numbers, finish names and grade designations do not carry across, and what to check first in a retrofit.",
   "titleEs": "Encontrar el equivalente de una cerradura que ya compra",
@@ -36,7 +40,7 @@
   "bodyEs": [
     "Mire los términos de búsqueda que llevan a alguien a la web de una fábrica de herrajes y aparece un patrón enseguida: buena parte de ellos son números de modelo de otras empresas. La cerradura de sobreponer de una marca, la bisagra oculta de otra, un código de picaporte sacado de una caja de hace veinte años, una referencia de un catálogo descatalogado. Nadie escribe eso esperando leer sobre nosotros. Lo escribe porque tiene una pieza que funciona, el proveedor ya no está o es lento o es caro, y necesita saber qué pedir para volver a tener lo mismo.",
     "Es una buena pregunta y tiene una respuesta precisa: una cerradura se define por su geometría, no por su nombre. Dos cerraduras con las mismas seis cifras son intercambiables se llamen como se llamen. Dos cerraduras con el mismo nombre y una cifra distinta, no.",
-    "Para una cerradura de embutir esas seis son: la distancia al eje, desde la cara de la puerta al centro del cuadradillo; la distancia entre centros, entre el cuadradillo y el cilindro o el bocallave; largo y ancho del frente; alto y fondo de la caja; la medida del cuadradillo, casi siempre 8 mm cuadrado pero conviene confirmarlo; y el rango de espesor de puerta. Con esas seis la sustitución funciona. Falle la distancia entre centros y la manilla y el cilindro no coincidirán a la vez con los taladros ya hechos en la puerta — y la puerta es lo que no se puede cambiar.",
+    "Para una cerradura de embutir esas seis son: la distancia al eje, desde la cara de la puerta al centro del cuadradillo; la distancia entre centros, entre el cuadradillo y el cilindro o el bocallave; largo y ancho del frente; alto y fondo de la caja; la medida del cuadradillo, casi siempre 8 mm cuadrado pero conviene confirmarlo; y el rango de espesor de puerta. Con esas seis la sustitución funciona. Falle la distancia entre centros y la manilla y el cilindro no coincidirán a la vez con los taladros ya hechos en la puerta —y la puerta es lo que no se puede cambiar.",
     "Para una cerradura de sobreponer la lista es más corta pero igual de carácter: distancia al eje, tamaño de caja, si el cilindro es simple o doble, salida del picaporte, y el tipo de cerradero, porque un cerradero de sobreponer y un recibidor de pestillo son piezas distintas y el marco ya está preparado para una de ellas.",
     "Para una bisagra: alto y ancho de pala, número de nudillos, tipo de pasador, y si es fijo o extraíble. Una bisagra 3 mm más alta que la caja ya fresada en el marco es una bisagra que no entra, y ni el acabado ni el grado cambian eso.",
     "Lo que no se traslada, y conviene ignorar al buscar equivalencias: el propio número de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas —el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero—, así que iguale un acabado mirando una muestra, no igualando una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas con ensayos distintos, y ninguno se convierte en el otro con una cuenta.",

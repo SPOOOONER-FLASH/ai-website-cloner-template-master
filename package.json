@@ -65,6 +65,7 @@
     "rayen:site": "node scripts/build-rayen-site.mjs",
     "rayen:images": "node scripts/build-rayen-product-images.mjs && node scripts/delocalize-drawings.mjs && node scripts/square-rayen-plates.mjs",
     "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check && node scripts/delocalize-drawings.mjs --check && node scripts/square-rayen-plates.mjs --check",
+    "copy:register": "node scripts/audit-copy-register.mjs",
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",
     "union:split": "node scripts/split-union-image-packs.mjs",

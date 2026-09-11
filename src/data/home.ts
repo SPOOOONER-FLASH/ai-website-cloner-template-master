@@ -49,7 +49,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Representative commercial fire-exit doors with clearly visible panic push bars",
       },
       title: "Panic Exit Devices",
-      body: "Fast-release hardware engineered for dependable emergency egress in commercial buildings.",
+      body: "Push-bar hardware that releases the latch in one motion, for commercial escape and fire doors.",
       linkLabel: "Explore exit devices",
       href: "/products/panic-exit-devices",
     },
