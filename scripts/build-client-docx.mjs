@@ -64,6 +64,12 @@ const DOCUMENTS = [
     title: "小红书优化建议汇总",
     subtitle: "每一条建议：做完了没有，以及为什么",
   },
+  {
+    source: "docs/collaboration/2026-09-11-rayen-handover.md",
+    out: "RAYEN-工程交接-2026-09-11.docx",
+    title: "9.11 周末出差 雷茵 工程交接",
+    subtitle: "下一个接手的人从第 4 节和第 8 节开始读",
+  },
 ];
 
 /* ------------------------------------------------------------------ layout */
