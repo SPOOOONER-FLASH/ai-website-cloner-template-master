@@ -12,7 +12,24 @@
     "rayen"
   ],
   "summary": "Stainless Steel pull handle.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "1.8kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -46,5 +63,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G2888 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle."
+  "seoDescription": "Stainless Steel pull handle.",
+  "specSources": {
+    "artunion": {
+      "id": "G2888-11-010",
+      "basis": "sole",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

@@ -27,6 +27,22 @@
     {
       "label": "Grip width",
       "value": "114mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.9kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -72,5 +88,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1780 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 610mm overall on P=570mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 610mm overall on P=570mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T1780-25-038-L",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

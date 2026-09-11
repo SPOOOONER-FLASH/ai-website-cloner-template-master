@@ -36,6 +36,22 @@
     {
       "label": "Projection",
       "value": "64.5mm"
+    },
+    {
+      "label": "Weight",
+      "value": "3.1kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -116,5 +132,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1234 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 700mm overall on P=500mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 700mm overall on P=500mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G1234-25-112-L700",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

@@ -36,6 +36,18 @@
     {
       "label": "Available lengths",
       "value": "L600 / L1660–2160"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -166,5 +178,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G2690 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle on P=1660–2160mm（可调） fixing centres."
+  "seoDescription": "Stainless Steel pull handle on P=1660–2160mm（可调） fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G2690-20-121-A",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

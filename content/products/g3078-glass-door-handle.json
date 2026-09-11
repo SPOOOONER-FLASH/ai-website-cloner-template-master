@@ -36,6 +36,22 @@
     {
       "label": "Projection",
       "value": "70mm"
+    },
+    {
+      "label": "Weight",
+      "value": "2.6kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -81,5 +97,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G3078 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=782mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=782mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G3078-01-024-L800",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

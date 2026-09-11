@@ -32,6 +32,22 @@
     {
       "label": "Rose size",
       "value": "25 × 61mm"
+    },
+    {
+      "label": "Weight",
+      "value": "2.6kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -57,5 +73,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1255 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 1300mm overall on P=1000mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 1300mm overall on P=1000mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G1255-26-171-L1300",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

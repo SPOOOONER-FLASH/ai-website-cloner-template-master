@@ -31,6 +31,22 @@
     {
       "label": "Rose depth",
       "value": "51.5mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.8kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ8mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -66,5 +82,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1224 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=540mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=540mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T1224-25-130",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

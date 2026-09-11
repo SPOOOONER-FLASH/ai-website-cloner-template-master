@@ -32,6 +32,22 @@
     {
       "label": "Stem diameter",
       "value": "18mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.5kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -117,5 +133,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G777 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=520mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=520mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G777-01-117",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }

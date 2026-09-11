@@ -27,6 +27,22 @@
     {
       "label": "Projection",
       "value": "67mm"
+    },
+    {
+      "label": "Weight",
+      "value": "2.5kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     }
   ],
   "material": "Stainless Steel with timber grip",
@@ -126,5 +142,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2750 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel with timber grip pull handle, 452mm overall on P=425mm fixing centres."
+  "seoDescription": "Stainless Steel with timber grip pull handle, 452mm overall on P=425mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T2750-11-708-L452",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-11T03:38:16.048Z"
+    }
+  }
 }
