@@ -70,7 +70,6 @@ Claude 2026-09-10：雷茵英文版**源码已提交推送**（dd1bbbb324）—�
 **没有构建**：`out/` 当时 8,206 个脏文件，`src/app/(en)/product-studies/` 等是 Codex
 未提交的在途源码，构建会把未审过的东西烤进发布。接力棒在 Codex 手上。
 
-→ **拿着接力棒的人请注意**：这次构建会自动带出英文站。`npm run build` 之后
-`out-rayen/en/index.html` 应该存在；不存在就是 `build-rayen-site.mjs` 没抬到，
-别忽略。甲方在等 `https://spoonercantonlock.stahlock.com/en/` 能打开。
-（`/zh-en/` 是构建期前缀，永远 404，不是 bug。）
+→ **已由 Claude 构建部署**（af0310525f）：甲方 2026-09-10 告知 Codex 下线约五天，
+指示直接提交。构建带上了 Codex 离线前已提交的 product-studies（7e73b0075b）。
+out-rayen/en/ 87 个英文页已上线，`/zh-en/` 是构建期前缀，永远 404，不是 bug。
