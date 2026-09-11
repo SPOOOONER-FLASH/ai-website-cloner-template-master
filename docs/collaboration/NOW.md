@@ -64,3 +64,13 @@ Codex 2026-09-07: video trial withdrawn before push. Local out/ and out-rayen/ r
 甲方要求短反馈环，明确说过不要加锁 —— 锁会阻塞正在工作的人的提交流程。
 这张表**不授予任何独占权**，它只回答「这是谁的」。看到别人占着你要动的路径时，
 正确动作是去做手头别的事，不是等。
+
+Claude 2026-09-10：雷茵英文版**源码已提交推送**（dd1bbbb324）——`src/app/zh-en/**`
+八个页面 + `src/components/rayen/pages.tsx`。eslint / tsc / 241 个测试全过。
+**没有构建**：`out/` 当时 8,206 个脏文件，`src/app/(en)/product-studies/` 等是 Codex
+未提交的在途源码，构建会把未审过的东西烤进发布。接力棒在 Codex 手上。
+
+→ **拿着接力棒的人请注意**：这次构建会自动带出英文站。`npm run build` 之后
+`out-rayen/en/index.html` 应该存在；不存在就是 `build-rayen-site.mjs` 没抬到，
+别忽略。甲方在等 `https://spoonercantonlock.stahlock.com/en/` 能打开。
+（`/zh-en/` 是构建期前缀，永远 404，不是 bug。）
