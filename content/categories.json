@@ -95,6 +95,20 @@
         "ratio": "1 / 1",
         "label": "Model 9001 stainless steel lever handle"
       },
+      "children": [
+        {
+          "slug": "brass-pull-handles",
+          "name": "Brass Pull Handles",
+          "nameZh": "黄铜拉手",
+          "summary": "Cast and turned brass pull handles in a polished gold finish.",
+          "image": {
+            "src": "/images/products/t921-brass-pull-handle.webp",
+            "ratio": "1 / 1",
+            "label": "T921 brass pull handle"
+          },
+          "nameEs": "Tiradores de latón"
+        }
+      ],
       "nameEs": "Manijas de acero inoxidable",
       "summaryEs": "Tiradores y manijas de acero inoxidable para puertas de madera, metálicas y de vidrio."
     },

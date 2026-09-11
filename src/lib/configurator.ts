@@ -398,6 +398,8 @@ export const OPTION_NOTES: Record<string, string> = {
   "door-viewers": "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.",
   "door-flush-bolts":
     "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.",
+  "brass-pull-handles":
+    "Cast and turned brass pulls in a gold finish — the same fixings as the steel range, a different metal.",
   "glass-door-handles": "Pulls fixed through drilled toughened glass, with no frame to fix to.",
   "glass-door-patch-fittings":
     "Corner castings that clamp toughened glass and carry the pivot, lock or rail.",
@@ -458,6 +460,8 @@ export const OPTION_NOTES_ES: Record<string, string> = {
   "door-viewers": "Una lente gran angular a través de la hoja, para ver quién llama sin abrir.",
   "door-flush-bolts":
     "Mantiene cerrada la hoja pasiva de una puerta de dos hojas, embutido a haces para que nada sobresalga del canto.",
+  "brass-pull-handles":
+    "Tiradores de latón fundido y torneado, acabado dorado; la misma fijación que la gama de acero, otro metal.",
   "glass-door-handles": "Tiradores pasantes sobre vidrio templado taladrado, sin marco donde fijar.",
   "glass-door-patch-fittings":
     "Herrajes de esquina que aprietan el vidrio templado y alojan el pivote, la cerradura o el travesaño.",

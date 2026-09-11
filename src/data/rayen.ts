@@ -180,11 +180,30 @@ type RawCategory = {
 
 const rawCategories = categoriesFile.categories as RawCategory[];
 
+/**
+ * Category covers come from the RAYEN image set, same as the product photography.
+ *
+ * content/categories.json is the shared taxonomy, so its cover images point at
+ * /images/products/ — the raw supplier files. Those still carry the Hyland 海得 oval that
+ * scripts/build-rayen-product-images.mjs exists to remove, and they have not been through
+ * scripts/brand-rayen-images.mjs either. The product grid was mapped to
+ * /images/products-rayen/ by the Chinese mirror on day one; the six category cards on
+ * 产品中心 were not, and shipped another firm's logo at the top of the page the whole time.
+ * Found 2026-09-11 from a screenshot of the live site.
+ *
+ * One line rather than a copy of the covers into categories.json: the cleaned set is
+ * generated from the same filenames, so this stays correct when a cover is swapped.
+ */
+const rayenImage = <T extends { src?: string } | undefined>(image: T): T =>
+  image?.src?.startsWith("/images/products/")
+    ? ({ ...image, src: image.src.replace("/images/products/", "/images/products-rayen/") } as T)
+    : image;
+
 export const categories: RayenCategory[] = rawCategories.map((category) => ({
   slug: category.slug,
   name: category.nameZh ?? category.name,
   summary: category.summary ?? "",
-  image: category.image,
+  image: rayenImage(category.image),
   children: (category.children ?? []).map((child) => ({
     slug: child.slug,
     name: child.nameZh ?? child.name,

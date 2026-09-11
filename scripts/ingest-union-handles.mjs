@@ -72,13 +72,57 @@ function shotRank(file) {
   return 4; // installed scene
 }
 
+/**
+ * The client's own running order, given 2026-09-11 as a screenshot of their listing sheet:
+ *
+ *   窗口图片 → 参数图 → 其他表面处理颜色展示图 → 安装实景效果图
+ *
+ * Two things change against shotRank above, and the client stated both outright
+ * (「参数图放第一张」, 「确保参数尺寸是第一张图」):
+ *
+ *   · the DIMENSION DRAWING leads the gallery. Earlier batches led with a product plate on
+ *     the argument that the thumbnail is what a buyer sees first. That argument still holds,
+ *     which is why the thumbnail is now picked separately below — but INSIDE the gallery the
+ *     fitting dimensions come before the photography.
+ *   · the supplier marks the intended thumbnail in the filename with 窗图 (window image).
+ *     Where one exists it becomes heroImage whatever its shot type; 18 of this batch's 33
+ *     models carry one. Where none exists the first product plate keeps the job.
+ *
+ * Opt-in per manifest (`"imageOrder": "drawing-first"`) rather than flipped globally:
+ * batches 1–4 shipped in the old order and their source packs are not on this machine, so
+ * changing the default would reorder products this run can neither regenerate nor check.
+ */
+const DRAWING_FIRST = manifest.imageOrder === "drawing-first";
+const isWindowShot = (file) => file.includes("窗图");
+const isDrawing = (file) => /(D|L)9\d\dSZ/i.test(file);
+
 function imagesFor(model) {
   const dir = join(manifest.sourceRoot, model);
   if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter((f) => /\.jpg$/i.test(f) && !excluded.has(f))
-    .sort((a, b) => shotRank(a) - shotRank(b) || a.localeCompare(b))
-    .map((f) => join(dir, f));
+  const files = readdirSync(dir).filter((f) => /\.jpg$/i.test(f) && !excluded.has(f));
+
+  if (!DRAWING_FIRST) {
+    return files
+      .sort((a, b) => shotRank(a) - shotRank(b) || a.localeCompare(b))
+      .map((f) => join(dir, f));
+  }
+
+  /* Drawing first, then the same shot order as before. */
+  const ordered = files
+    .slice()
+    .sort(
+      (a, b) =>
+        (isDrawing(a) ? 0 : 1 + shotRank(a)) - (isDrawing(b) ? 0 : 1 + shotRank(b)) ||
+        a.localeCompare(b),
+    );
+
+  /* Lift the thumbnail out in front of it. */
+  const heroAt = ordered.findIndex(isWindowShot);
+  const fallbackAt = ordered.findIndex((f) => !isDrawing(f));
+  const at = heroAt >= 0 ? heroAt : fallbackAt;
+  if (at < 0) return ordered.map((f) => join(dir, f));
+  const [hero] = ordered.splice(at, 1);
+  return [hero, ...ordered].map((f) => join(dir, f));
 }
 
 /**
@@ -137,11 +181,11 @@ for (const entry of manifest.models) {
     if (!checkOnly) {
       await sharp(source).resize({ width: 1400, withoutEnlargement: true }).webp({ quality: 82 }).toFile(target);
     }
-    const isDrawing = /D9\d\dSZ/i.test(source);
+    const drawing = isDrawing(source);
     refs.push({
       src: `/images/products/${name}`,
       ratio: "1 / 1",
-      label: isDrawing
+      label: drawing
         ? `${entry.model} ${entry.name}, dimension drawing`
         : index === 0
           ? `${entry.model} ${entry.name}`

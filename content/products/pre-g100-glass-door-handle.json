@@ -48,6 +48,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/pre-g100-glass-door-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "PRE_G100 Glass Door Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/pre-g100-glass-door-handle-2.webp",
       "ratio": "1 / 1",
       "label": "PRE_G100 Glass Door Handle, view 2"
@@ -66,11 +71,6 @@
       "src": "/images/products/pre-g100-glass-door-handle-5.webp",
       "ratio": "1 / 1",
       "label": "PRE_G100 Glass Door Handle, view 5"
-    },
-    {
-      "src": "/images/products/pre-g100-glass-door-handle-6.webp",
-      "ratio": "1 / 1",
-      "label": "PRE_G100 Glass Door Handle, dimension drawing"
     }
   ],
   "attachmentIds": [],

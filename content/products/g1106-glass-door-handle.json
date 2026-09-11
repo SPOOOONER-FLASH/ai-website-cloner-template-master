@@ -64,6 +64,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/g1106-glass-door-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "G1106 Glass Door Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/g1106-glass-door-handle-2.webp",
       "ratio": "1 / 1",
       "label": "G1106 Glass Door Handle, view 2"
@@ -72,11 +77,6 @@
       "src": "/images/products/g1106-glass-door-handle-3.webp",
       "ratio": "1 / 1",
       "label": "G1106 Glass Door Handle, view 3"
-    },
-    {
-      "src": "/images/products/g1106-glass-door-handle-4.webp",
-      "ratio": "1 / 1",
-      "label": "G1106 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g1106-glass-door-handle-5.webp",
@@ -97,7 +97,7 @@
     "artunion": {
       "id": "G1106-01-011",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-11T13:32:43.606Z"
     }
   },
   "nameEs": "Tirador para puerta de vidrio"

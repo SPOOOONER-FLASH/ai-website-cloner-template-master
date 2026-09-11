@@ -1143,6 +1143,7 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   // Glass door hardware
   "Glass Door Handle": "Tirador para puerta de vidrio",
   "Stainless Steel Glass Door Pull Handle": "Tirador de acero inoxidable para puerta de vidrio",
+  "Brass Pull Handle": "Tirador de latón",
   "Glass Door Patch Fittings": "Herrajes patch para puerta de vidrio",
   "Glass Door Patch Fitting Set": "Juego de herrajes patch para puerta de vidrio",
 
