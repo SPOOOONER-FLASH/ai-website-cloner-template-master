@@ -12,9 +12,23 @@
  * English at source; the Chinese is what gets generated from it. Translating back would be
  * a lossy round trip. Only the prose below — page titles, section headings, the sentences a
  * person wrote — exists separately in both languages, and it is written twice rather than
- * translated: 「未经确认的参数以短横线标注，不以估值填充」 becomes "Unconfirmed dimensions
+ * translated: 「没有核实过的那一栏留短横线，不拿估计值去填」 becomes "Unconfirmed dimensions
  * are shown as a dash rather than an estimate", which is the same commitment in the register
  * an English buyer reads, not a word-for-word rendering of a Chinese sentence.
+ *
+ * THE CHINESE IS WRITTEN IN CHINESE, NOT RENDERED INTO IT
+ * 2026-09-10 the client said 走进雷茵 「像机翻」, and they were right. The tell was never
+ * vocabulary — it was English sentence shapes wearing Chinese words:
+ *
+ *   「锁具制造经验始于 1999 年」   a calque of "experience begins in 1999". Chinese says
+ *                                  制锁经验可追溯到 1999 年.
+ *   「…到装配检测在同一厂区内完成」 从…到… needs its comma and a 全部 before the verb,
+ *                                  or the sentence has no joint.
+ *   「压铸、电镀与热处理配套」      与 joins TWO things. A list of three takes 、…等.
+ *
+ * A buyer who reads machine-translated Chinese on a Chinese factory's own site draws the
+ * obvious conclusion about where the rest of it came from. Reference register: 悍高 for the
+ * corporate opening, 坚士 for how a factory states plant, capacity and certification.
  */
 
 export type RayenLocale = "zh" | "en";
@@ -116,7 +130,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
         损失的不是这一句，是整张表的可信度。2026-09-10 补进 重量 与 安装孔径 之后改成这样。
       */
       productsIntro:
-        "按品类进入，每个型号都有独立的规格表：材质、尺寸、中心距、安装孔径、重量与表面处理。没有核实过的一栏写短横线，不填估值。",
+        "按品类进入，每个型号都有独立的规格表：材质、尺寸、中心距、安装孔径、重量和表面处理。没有核实过的那一栏写短横线，不拿估计值去填。",
       capabilityEyebrow: "Capability",
       capabilityTitle: "加工方式",
       capabilityMore: "了解定制流程",
@@ -125,7 +139,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       factoryIntro: "以下照片全部来自小榄厂区，未做合成，也没有借用他人的展位或展厅。",
       factoryMore: "走进雷茵",
       askTitle: "需要图纸、尺寸或报价？",
-      askBody: "告诉我们型号或用途，我们回复具体规格与包装数据。没有把握的参数我们会说不知道，不会先给一个数字。",
+      askBody: "告诉我们型号或用途，我们回具体规格和装箱数据。没把握的参数我们会直说不知道，不会先给一个数字。",
       askCta: "联系我们",
     },
     facts: { categories: "在售品类", models: "在售型号", experience: "锁具制造经验", unitItem: "个", unitSince: "年起" },
@@ -154,9 +168,9 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       eyebrow: "Company",
       title: "走进雷茵",
       body: [
-          "（RAYEN 雷茵）位于广东省中山市小榄镇。锁具制造经验始于 1999 年，从模具开发、冲压成型到装配检测在同一厂区内完成。小榄是国内机械门锁最集中的产区，压铸、电镀与热处理配套均在半小时车程内。",
-          "产品覆盖逃生推杠、球锁、执手锁、插芯锁体、锁芯、合页、玻璃门夹、闭门器与浴室配件。支持来图加工、来样加工与 OEM / ODM。",
-          "本站每一个型号都有独立规格表。未经确认的参数以短横线标注，不以估值填充 —— 五金件的孔位与尺寸在开模时即已固定，装配偏差的代价是整批返工，而不是一次退换。"
+          "（RAYEN 雷茵）位于广东省中山市小榄镇，公司注册于 2026 年，制锁经验可追溯到 1999 年。从模具开发、冲压成型到装配检测，全部在同一个厂区里完成。小榄是国内机械门锁最集中的产区，压铸、电镀、热处理等配套厂点都在半小时车程之内。",
+          "产品覆盖逃生推杠、球锁、执手锁、插芯锁体、锁芯、合页、玻璃门夹、闭门器和浴室五金，承接来图加工、来样加工及 OEM / ODM 贴牌生产。",
+          "本站每一个型号都有独立的规格表。没有核实过的那一栏留短横线，不拿估计值去填 —— 五金件的孔位和尺寸在开模那一刻就定死了，装不上去没法在现场修，买家赔进去的是一整批货，而不是一次退换。"
     ],
       factoryEyebrow: "Factory",
       factoryTitle: "车间实拍",
@@ -192,7 +206,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
     oem: {
       eyebrow: "OEM / ODM",
       title: "合作与定制",
-      intro: "来图加工、来样加工与贴牌生产。下面是一般流程；具体周期和费用按件报，不给通用数字。",
+      intro: "来图加工、来样加工及贴牌生产。下面是一般流程；具体周期和费用按件报，不给通用数字。",
       processTitle: "一般流程",
       steps: [
           {
@@ -218,7 +232,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
           {
                 "n": "05",
                 "title": "量产与包装",
-                "body": "包装可按您的要求做，含贴牌、彩盒、说明书与条码。装箱数据在量产前给到。"
+                "body": "包装可按您的要求做，含贴牌、彩盒、说明书和条码。装箱数据在量产前给到。"
           }
     ],
       enquiryTitle: "发询价时带上这几项，回复会快很多",
