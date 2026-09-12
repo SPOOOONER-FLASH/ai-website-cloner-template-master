@@ -199,11 +199,122 @@ const rayenImage = <T extends { src?: string } | undefined>(image: T): T =>
     ? ({ ...image, src: image.src.replace("/images/products/", "/images/products-rayen/") } as T)
     : image;
 
+/**
+ * RAYEN's own six category covers, chosen by eye from RAYEN's own published photographs.
+ *
+ * WHY NOT JUST USE content/categories.json
+ * Because that tree is HYDE's too, and its covers are picked to represent each category as
+ * HYDE stocks it. Three times in one day that diverged from what RAYEN sells:
+ * 门用辅助五金 was fronted by stainless flush bolts (HYDE sells those; RAYEN has none, and
+ * the record behind the photograph is not even published — `sites` is empty); 不锈钢拉手 by
+ * a HYDE lever handle; and 执手锁 was repointed mid-afternoon at
+ * /images/editorial/hyde-hero-lever.webp, captioned "Canton Hyland stainless steel lever
+ * handle". The client circled the first of those on his phone.
+ *
+ * A card is a promise about what is behind it. Advertising a part the buyer then cannot
+ * find is the same failure as an invented dimension in a different medium — it costs the
+ * reader's trust in everything else on the page.
+ *
+ * WHY BY HAND AND NOT DERIVED
+ * A first attempt picked the first published product in each category. It is honest and it
+ * looks it: 不锈钢拉手 came out fronted by a spread of BRASS knobs, and 浴室配件 by a
+ * black-and-white dimension drawing. A cover is an editorial choice — the plainest example
+ * of the category, photographed clearly — and no ordering of the catalogue encodes that.
+ * These six were chosen off a contact sheet. coverFor() below still guards the general
+ * case, so a category nobody has chosen for cannot fall back to somebody else's photograph.
+ *
+ * Revisit when the catalogue changes shape; the day RAYEN lists flush bolts, 门用辅助五金
+ * deserves a better cover than its one indicator lock.
+ */
+const RAYEN_COVERS: Record<string, { src: string; ratio: string; label: string }> = {
+  "stainless-steel-handles": {
+    src: "/images/products-rayen/t1050-stainless-steel-handle.webp",
+    ratio: "1 / 1",
+    label: "T1050 不锈钢门拉手",
+  },
+  "lever-handles": {
+    src: "/images/products-rayen/ul1005-lever-handle.webp",
+    ratio: "1 / 1",
+    label: "UL1005 不锈钢执手",
+  },
+  "bathroom-accessories": {
+    src: "/images/products-rayen/oashb201-grab-bar.webp",
+    ratio: "1 / 1",
+    label: "OASHB201 卫生间安全扶手与纸巾架",
+  },
+  "care-grab-bars": {
+    src: "/images/products-rayen/oashb3000-flip-up-grab-bar.webp",
+    ratio: "1 / 1",
+    label: "OASHB3000 上抬扶手",
+  },
+  "glass-door-accessories": {
+    src: "/images/products-rayen/g1106-glass-door-handle.webp",
+    ratio: "1 / 1",
+    label: "G1106 玻璃门拉手",
+  },
+  "hardware-accessories": {
+    src: "/images/products-rayen/pre-w173-indicator.webp",
+    ratio: "1 / 1",
+    label: "PRE_W173 指示锁",
+  },
+};
+
+/** Every image filename the RAYEN site publishes — the only pictures this site may show. */
+const rayenImageNames = new Set(
+  products.flatMap((product) =>
+    [product.heroImage, ...(product.gallery ?? [])]
+      .map((image) => image?.src)
+      .filter(Boolean)
+      .map((src) => String(src).slice(String(src).lastIndexOf("/") + 1)),
+  ),
+);
+
+/**
+ * A RAYEN card may only show a picture RAYEN publishes. Anything else falls back.
+ *
+ * This is a guard, not a preference, and it exists because the failure keeps coming back
+ * through a new door. First the covers were served straight from /images/products/ with the
+ * Hyland 海得 oval still on them. Fixed. Then 门用辅助五金's cover turned out to be a flush
+ * bolt RAYEN does not sell. Fixed by hand, above. Then the same afternoon another session
+ * repointed 执手锁 at /images/editorial/hyde-hero-lever.webp — a file with "hyde" in its
+ * name, captioned "Canton Hyland stainless steel lever handle", outside the mapped
+ * directory and never stamped. Correct for HYDE, whose file it is. On a 雷茵 page it is a
+ * competitor's photograph with their name in the URL.
+ *
+ * Three incidents, three different mechanisms, one sentence that covers all of them: if the
+ * shared taxonomy names a picture this site does not publish, use one this site does — the
+ * first published product in that very category, which is by construction cleaned, stamped,
+ * and actually for sale. The card then cannot show somebody else's photograph no matter
+ * what content/categories.json does next, which matters because categories.json is edited
+ * by people working on the other site and they are not wrong to edit it.
+ */
+function coverFor(category: { slug: string; image?: { src?: string } }) {
+  const override = RAYEN_COVERS[category.slug];
+  if (override) return rayenImage(override);
+
+  const src = category.image?.src;
+  const name = src ? src.slice(src.lastIndexOf("/") + 1) : "";
+  if (src && rayenImageNames.has(name)) return rayenImage(category.image);
+
+  /*
+    Prefer a product that sits directly in the category over one filed under a child.
+
+    "The first product in the category" is not good enough on its own: 不锈钢拉手 holds 45
+    steel handles plus 7 brass ones in a child, and the first record happened to be CSM1 —
+    a brass handle fronting a card that says stainless steel. A product filed under a child
+    is by definition a special case of the category; one filed directly in it is the plain
+    case, which is what a cover should show.
+  */
+  const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
+  const plain = inCategory.find((product) => !product.categoryPath[1]);
+  return (plain ?? inCategory[0])?.heroImage;
+}
+
 export const categories: RayenCategory[] = rawCategories.map((category) => ({
   slug: category.slug,
   name: category.nameZh ?? category.name,
   summary: category.summary ?? "",
-  image: rayenImage(category.image),
+  image: coverFor(category),
   children: (category.children ?? []).map((child) => ({
     slug: child.slug,
     name: child.nameZh ?? child.name,
@@ -279,6 +390,21 @@ export function countInCategory(slug: string): number {
 function displayNameFor(category: RayenCategory): string {
   const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
   if (!inCategory.length || !category.children.length) return category.name;
+
+  /*
+    One model is not enough to rename a category after it.
+
+    The rule reads "where every RAYEN product in a family belongs to one child, the child's
+    name is the honest label", and with 32 pull handles in 玻璃门夹具 that is plainly true.
+    With ONE it stops being true: 门用辅助五金 holds nine child types and RAYEN currently
+    stocks a single indicator lock, so the card renamed itself 「指示器 1 个型号」 — a nine-door
+    corridor signposted by whichever door happens to be open today. The client circled it on
+    his phone on 2026-09-11 and asked for the umbrella name back.
+
+    A card is a doorway, and its name should describe the room rather than its one occupant.
+    Two is the smallest number that can make a pattern, so two is the floor.
+  */
+  if (inCategory.length < 2) return category.name;
   /*
     EVERY product counts, including the ones that name no sub-category at all.
 

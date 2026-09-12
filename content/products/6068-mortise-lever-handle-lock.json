@@ -3,13 +3,27 @@
   "slug": "6068-mortise-lever-handle-lock",
   "name": "Stainless Steel Lever Handle Lock",
   "series": "6068 Mortise Lock Series",
-  "categoryPath": ["lock-cases"],
+  "categoryPath": [
+    "lock-cases"
+  ],
   "summary": "Stainless steel 304 lever handle lock on a 330mm plate, from the 6068 mortise lock series.",
   "specs": [
-    { "label": "Plate length", "value": "330mm" },
-    { "label": "Material", "value": "Stainless Steel 304" },
-    { "label": "Series", "value": "6068 Mortise Lock Series" },
-    { "label": "Minimum order", "value": "100 pieces" }
+    {
+      "label": "Plate length",
+      "value": "330mm"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304"
+    },
+    {
+      "label": "Series",
+      "value": "6068 Mortise Lock Series"
+    },
+    {
+      "label": "Minimum order",
+      "value": "100 pieces"
+    }
   ],
   "material": "Stainless Steel 304",
   "finishes": [],
@@ -31,7 +45,12 @@
     "alibaba": {
       "listingId": "60737484993",
       "basis": "client-published",
-      "fields": ["Plate length", "Material", "Series", "Minimum order"],
+      "fields": [
+        "Plate length",
+        "Material",
+        "Series",
+        "Minimum order"
+      ],
       "fetchedAt": "2026-09-11"
     }
   },
