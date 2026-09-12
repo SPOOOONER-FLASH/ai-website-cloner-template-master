@@ -63,6 +63,10 @@
     {
       "label": "Deadbolt",
       "value": "25mm full-throw rim deadbolt"
+    },
+    {
+      "label": "Minimum order",
+      "value": "1000 pieces"
     }
   ],
   "material": "Zinc Alloy",
@@ -162,6 +166,10 @@
     {
       "label": "Cerrojo",
       "value": "Cerrojo de sobreponer de 25 mm de salida total"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "1000 unidades"
     }
   ],
   "summaryEs": "Una cerradura de sobreponer de zamak, entrada de 2-3/8” (60 mm).",
@@ -177,5 +185,15 @@
     "model": "564",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "564",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

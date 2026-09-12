@@ -31,6 +31,10 @@
     {
       "label": "Application",
       "value": "Fully reversible for left or right-hand doors"
+    },
+    {
+      "label": "Minimum order",
+      "value": "50 pieces"
     }
   ],
   "material": "ABS material with Aluminum push bar",
@@ -118,6 +122,10 @@
     {
       "label": "Aplicación",
       "value": "Totalmente reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de ABS con barra de empuje de aluminio.",
@@ -152,5 +160,15 @@
     "model": "307",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "307",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

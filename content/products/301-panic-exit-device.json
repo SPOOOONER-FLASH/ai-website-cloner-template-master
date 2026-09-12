@@ -23,6 +23,10 @@
     {
       "label": "Finish",
       "value": "Spray-painted silver, powder-coated iron"
+    },
+    {
+      "label": "Minimum order",
+      "value": "500 pieces"
     }
   ],
   "material": "Iron And Stainless Steel",
@@ -89,6 +93,10 @@
     {
       "label": "Acabado",
       "value": "Hierro con pintura en polvo, pintado en plata"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "500 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de hierro y acero inoxidable.",
@@ -122,5 +130,15 @@
     "model": "301",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "301",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

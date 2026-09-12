@@ -21,6 +21,10 @@
     {
       "label": "Finish",
       "value": "Spray painted"
+    },
+    {
+      "label": "Minimum order",
+      "value": "200 pieces"
     }
   ],
   "material": "Steel /Stainless Steel",
@@ -101,6 +105,10 @@
     {
       "label": "Acabado",
       "value": "Pintado con pistola"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "200 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de hierro y aluminio.",
@@ -132,5 +140,15 @@
     "model": "305",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "305",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

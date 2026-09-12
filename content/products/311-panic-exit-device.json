@@ -23,6 +23,10 @@
     {
       "label": "Centre distances",
       "value": "72mm and 92mm (cylinder hole)"
+    },
+    {
+      "label": "Minimum order",
+      "value": "50 pieces"
     }
   ],
   "material": "ABS plastic material with Aluminum",
@@ -102,6 +106,10 @@
     {
       "label": "Doble distancia entre ejes",
       "value": "72 y 92 mm (con perforación para cilindro)"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de ABS con aluminio.",
@@ -132,5 +140,15 @@
     "model": "311",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "311",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }
