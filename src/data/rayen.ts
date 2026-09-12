@@ -224,7 +224,8 @@ export function categoriesFor(locale: RayenLocale): RayenCategory[] {
     const raw = rawCategories.find((c) => c.slug === category.slug);
     if (!raw) return category;
     const inCategory = products.filter((p) => p.categoryPath[0] === category.slug);
-    const children = new Set(inCategory.map((p) => p.categoryPath[1]).filter(Boolean));
+    /* Same counting rule as displayNameFor — see the note there on why "" is a member. */
+    const children = new Set(inCategory.map((p) => p.categoryPath[1] ?? ""));
     const onlyChild =
       children.size === 1 ? (raw.children ?? []).find((c) => c.slug === [...children][0]) : undefined;
     return {
@@ -278,7 +279,21 @@ export function countInCategory(slug: string): number {
 function displayNameFor(category: RayenCategory): string {
   const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
   if (!inCategory.length || !category.children.length) return category.name;
-  const children = new Set(inCategory.map((product) => product.categoryPath[1]).filter(Boolean));
+  /*
+    EVERY product counts, including the ones that name no sub-category at all.
+
+    An earlier version filtered those out, which says "all the ones that HAVE a child
+    agree" — a different sentence from the rule above, and the same one only while every
+    category with children had a child on every product. 2026-09-11 broke that:
+    不锈钢拉手 gained one child (黄铜拉手, 7 models) while its other 45 models stayed
+    directly in the parent, and the card on 产品中心 relabelled itself 「黄铜拉手 45 个型号」.
+    The client caught it in a screenshot. A buyer looking for a steel pull handle was being
+    shown a brass sign over a shelf that is seven-eighths steel.
+
+    So "no sub-category" is its own member of the set. One entry means one honest name;
+    two means the parent's name is the only true one.
+  */
+  const children = new Set(inCategory.map((product) => product.categoryPath[1] ?? ""));
   if (children.size !== 1) return category.name;
   const only = category.children.find((child) => child.slug === [...children][0]);
   return only?.name ?? category.name;

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "capturedAt": "2026-09-11",
+    "source": "甲方提供的阿里巴巴店铺截图：Top Picks 橱窗（10 个商品）与整页店铺",
+    "whyThisMatters": "这不是竞品资料，是甲方自己公开发布的内容。交接文档第五节把 MOQ / 交期 和退货条款列为卡在工厂的两条，理由是「站上一个字没有」—— 但甲方在阿里巴巴上已经把它们公开了。这两条的性质因此变了：不是工厂没给数字，是我们没有把甲方已经公开的数字搬到自己站上。",
+    "cautions": [
+      "价格是阿里的阶梯报价，随时会变，且甲方明确的站上策略是走询价。⚠ 价格不要上站。",
+      "MOQ 是甲方自己公开的，属于可用的真实数据 —— 但上站前仍需甲方确认这是当前有效值，因为阿里页面可能几个月没更新。",
+      "「Easy Return」是阿里平台的服务标识，不等于我们自己的退货条款。可以据此向甲方确认我们实际的退货/质保政策，不能直接改写成站上的承诺。",
+      "整页里的「25+ 年」「350+」「30+」「50+」是店铺横幅数字，来源不明，不要直接引用到站上 —— 站上任何数字必须由 scripts/ 产出或有可核对来源。"
+    ]
+  },
+  "topPicks": [
+    { "title": "High Quality Night Latch Rim Lock, Hyland 564 Hot Selling", "model": "564", "price": "$2.69", "moq": "1000 pieces", "easyReturn": true },
+    { "title": "HYLAND OEM 90MM Tubular Lock Latch Cerradura De Puerta", "price": "$0.47–2.51", "moq": "300 pieces", "easyReturn": true },
+    { "title": "Hotel/Garage Main Master Key Hyland OEM Brass Cylinder Key", "price": "$4.75–10", "moq": "20 pieces", "easyReturn": true, "note": "MOQ 20 是全表最低。主匙同时是曝光最高的商品（256 次）。低门槛 + 高曝光，是最适合做「首单试样」入口的一条。" },
+    { "title": "Panic Exit Device Push Bar, Hyland OEM Turkish Hot Style", "model": "301", "price": "$21.75", "moq": "500 pieces", "easyReturn": true },
+    { "title": "Security Entrance Door Lock Plate 330mm Length, 6068 Mortise Lock Series", "model": "6068", "price": "$14.37–28.35", "moq": "100 pieces", "easyReturn": true, "note": "⚠ 站上没有这个页面。119 曝光 / 3 询盘 / 23% 转化，且阿里上连 330mm 板长和 MOQ 都已公开 —— 卡在工厂的「缺规格」至少已经有了一个尺寸。" },
+    { "title": "Push bar Panic Exit Device with Outside Handle, Hyland OEM 310+015", "model": "310+015", "price": "$29.97", "moq": "100 pieces", "sold": "100 sold", "easyReturn": true, "note": "全橱窗售出最多的一条（100 sold），而且它是一个「配套」商品。站上没有配套概念的页面。" },
+    { "title": "Single Door Panic Exit Device HYLAND OEM 305 Push Type", "model": "305", "price": "$16.94–25.55", "moq": "200 pieces", "easyReturn": true },
+    { "title": "Hyland 311 OEM High Quality Fire Rated Door Lock Push Bar", "model": "311", "price": "$16–19", "moq": "50 pieces", "sold": "1 sold", "easyReturn": true, "note": "这张卡的主图上直接印着「Center Distance 92 mm」—— 甲方自己已经在用「把规格印在图上」的做法，而这正是站上产品图缺的东西。" },
+    { "title": "American Standard Deadlatch Lock Key for Aluminum Storefront Doors", "price": "$3.08–3.38", "moq": "100 pieces", "easyReturn": true, "note": "⚠ 站上没有这个页面。窄边铝合金锁体，48 曝光 / 3 询盘。" },
+    { "title": "HYLAND OEM 307 Fire Proof Exit Door Lock, Panic Exit Device", "model": "307", "price": "$8.88–9.50", "moq": "50 pieces", "easyReturn": true }
+  ],
+  "moqRange": {
+    "lowest": "20 pieces（主匙）",
+    "highest": "1000 pieces（564 夜锁）",
+    "observation": "MOQ 跨度 20 到 1000，说明它是按产品定的而不是一刀切。站上写一个统一 MOQ 会是错的；要么按产品记录，要么写区间并说明按型号定。"
+  },
+  "storefrontStructure": {
+    "observed": [
+      "顶部横幅：OEM/ODM + 四个统计数字（25+ / 350+ / 30+ / 50+，来源不明）",
+      "展会横幅：China (Guangzhou) International Building Decoration Fair，展位 9.2-B05",
+      "Product Categories 图标条",
+      "Top Picks 橱窗（10 个商品，全部带视频播放标）",
+      "Why Choose Us（四点）",
+      "Company Profile（长段文字 + 三张场景图）",
+      "Factory Show（车间照片）",
+      "Our Certifications（三张证书）",
+      "What can I do for you（四个联系入口）",
+      "按类目分块的商品列表：PANIC EXIT DEVICE / DOOR HINGE / DOOR HANDLE SET / LOCK BODY，每块配一张门的实景大图"
+    ],
+    "whatTheySolveThatWeDoNot": [
+      "每个商品卡都有价格和 MOQ —— 买家不必询价就能判断要不要继续。站上完全没有这一层。",
+      "每个商品卡都有视频播放标。站上有 191 条产品视频，但首页与合集页的卡片上看不出哪些有视频。",
+      "「100 sold」「1 sold」是社会证明。站上没有任何成交信号，也不该编造 —— 但可以问甲方要真实的出货国家数或年产量。",
+      "类目分块配实景门图：先给场景，再给零件。站上的类目页是零件列表，没有「这类东西装在什么门上」的那一眼。"
+    ],
+    "whatWeDoBetterAndShouldKeep": [
+      "规格表与尺寸线图：阿里卡片只有一个标题和价格，站上有 79 张尺寸线图和完整规格表。",
+      "解释性文章：阿里没有、也不可能有。这是站上被 AI 引用的唯一来源（交接文档第六节第一条）。",
+      "英西双语镜像与结构化数据：阿里是平台的，不是我们的。"
+    ]
+  }
+}

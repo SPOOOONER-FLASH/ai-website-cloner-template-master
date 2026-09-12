@@ -164,21 +164,42 @@ async function main() {
       The coordinates below were measured on one specific canvas. If the image is not that
       canvas any more, the boxes land somewhere else — most likely on top of a dimension.
       Refuse rather than deface.
+
+      ONE EXCEPTION: centred square padding.
+
+      scripts/square-rayen-plates.mjs pads a plate onto a square field with fit:"contain",
+      which moves the whole drawing by a known offset and scales nothing. On 2026-09-11 that
+      step started padding every non-square plate — 114 of these drawings — and all six edits
+      here began reporting 「尺寸是 609×609，坐标是按 544×532 量的」. The Chinese was already
+      baked in and correct, but the CI check could no longer confirm it, and a check that
+      cannot confirm is not a check.
+
+      Refusing there would mean refusing on the one transformation whose effect on these
+      coordinates is exactly known. So it is allowed, and only it: the canvas must be square,
+      no smaller than the measured one, and every box moves by half the difference. A
+      re-crop, a resize, a different aspect still refuses — there the offset would be a guess.
     */
     const [cw, ch] = edit.canvas;
+    let dx = 0;
+    let dy = 0;
     if (meta.width !== cw || meta.height !== ch) {
-      skipped.push(
-        `${edit.file}：尺寸是 ${meta.width}×${meta.height}，坐标是按 ${cw}×${ch} 量的 —— 跳过，不乱涂`,
-      );
-      continue;
+      const centredSquarePad = meta.width === meta.height && meta.width >= cw && meta.height >= ch;
+      if (!centredSquarePad) {
+        skipped.push(
+          `${edit.file}：尺寸是 ${meta.width}×${meta.height}，坐标是按 ${cw}×${ch} 量的 —— 跳过，不乱涂`,
+        );
+        continue;
+      }
+      dx = Math.round((meta.width - cw) / 2);
+      dy = Math.round((meta.height - ch) / 2);
     }
 
     const composites = [];
     for (const region of edit.regions) {
       composites.push({
         input: await label({ ...region, rotate: region.rotate ?? 0 }),
-        left: region.x,
-        top: region.y,
+        left: region.x + dx,
+        top: region.y + dy,
       });
     }
 
