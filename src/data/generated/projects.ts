@@ -6,5 +6,6 @@ import item0 from "../../../content/projects/commercial-fire-egress-hardware.jso
 import item1 from "../../../content/projects/double-leaf-fire-door-set.json";
 import item2 from "../../../content/projects/glass-entrance-hardware-package.json";
 import item3 from "../../../content/projects/hospitality-residential-door-package.json";
+import item4 from "../../../content/projects/panic-bar-with-outside-trim-set.json";
 
-export const projects = [item0, item1, item2, item3] as unknown as Project[];
+export const projects = [item0, item1, item2, item3, item4] as unknown as Project[];

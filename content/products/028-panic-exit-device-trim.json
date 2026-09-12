@@ -117,7 +117,8 @@
     "External lever handle for panic device",
     "Key-operated locking/unlocking",
     "Adjustable spindle length based on door thickness",
-    "Multiple color options"
+    "Multiple color options",
+    "Standards: ANSI Grade 2"
   ],
   "featuresSource": {
     "site": "stahlock.com",
@@ -125,5 +126,15 @@
     "model": "028",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingId": "1601770729465",
+      "basis": "client-published",
+      "fields": [
+        "Standards"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

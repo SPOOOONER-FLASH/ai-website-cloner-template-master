@@ -1,4 +1,5 @@
 import type { Product } from "@/data/types";
+import { cardFigure, type CardFigure } from "./card-figure.ts";
 
 /**
  * Product Finder core — faceted filtering over the catalogue.
@@ -164,7 +165,19 @@ export type FinderProduct = Pick<
     here is needed to filter, this is needed only to finish.
   */
   | "videos"
->;
+> & {
+  /*
+    A PRECOMPUTED figure for the catalogue card, both locales, resolved at build time.
+
+    The card wants one dimension out of `specs`, and `specs` must NOT come along. This
+    shape is serialised into the client bundle for every product the finder knows about,
+    and full spec arrays are what put the entire catalogue in the browser once before —
+    2,241 KB of homepage JavaScript, fixed on 2026-09-10 and locked by
+    static-export-performance.test.ts. Two short strings per locale cost about forty
+    bytes each; the arrays they stand in for cost kilobytes.
+  */
+  figure?: { en?: CardFigure; es?: CardFigure };
+};
 
 export function toFinderProduct(product: Product): FinderProduct {
   return {
@@ -184,6 +197,7 @@ export function toFinderProduct(product: Product): FinderProduct {
     summary: product.summary,
     /* Only the first clip. A configurator result is one product, not a playlist. */
     videos: product.videos?.length ? [product.videos[0]] : undefined,
+    figure: { en: cardFigure(product, "en"), es: cardFigure(product, "es") },
   };
 }
 

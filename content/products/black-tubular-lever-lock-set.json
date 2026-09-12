@@ -107,5 +107,18 @@
   "summaryEs": "Una manija de palanca, entrada de 60 mm / 70 mm regulable, función entrada, privacidad, paso libre o falsa.",
   "seoTitleEs": "Black Tubular Lever Lock Set | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland manijas de palanca en zamak. Acabado Matt Black. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
-  "description": ""
+  "description": "",
+  "features": [
+    "Standards: ANSI Grade 3"
+  ],
+  "specSources": {
+    "alibaba": {
+      "listingId": "1601788708674",
+      "basis": "client-published",
+      "fields": [
+        "Standards"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  }
 }

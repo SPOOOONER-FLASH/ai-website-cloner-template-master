@@ -1,0 +1,39 @@
+{
+  "model": "6068",
+  "slug": "6068-mortise-lever-handle-lock",
+  "name": "Stainless Steel Lever Handle Lock",
+  "series": "6068 Mortise Lock Series",
+  "categoryPath": ["lock-cases"],
+  "summary": "Stainless steel 304 lever handle lock on a 330mm plate, from the 6068 mortise lock series.",
+  "specs": [
+    { "label": "Plate length", "value": "330mm" },
+    { "label": "Material", "value": "Stainless Steel 304" },
+    { "label": "Series", "value": "6068 Mortise Lock Series" },
+    { "label": "Minimum order", "value": "100 pieces" }
+  ],
+  "material": "Stainless Steel 304",
+  "finishes": [],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "ratio": "1 / 1",
+    "label": "Hyland 6068 stainless steel lever handle lock, 330mm plate"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "6068 Stainless Steel Lever Handle Lock, 330mm Plate | Canton Hyland",
+  "seoDescription": "Canton Hyland 6068 series stainless steel 304 lever handle lock on a 330mm plate. Made in Guangdong, China.",
+  "nameEs": "Cerradura con manilla de acero inoxidable",
+  "seoTitleEs": "6068 Cerradura con manilla de acero inoxidable, placa de 330 mm | Canton Hyland",
+  "seoDescriptionEs": "Cerradura 6068 de Canton Hyland con manilla de acero inoxidable 304 sobre placa de 330 mm. Fabricado en Guangdong, China.",
+  "specSources": {
+    "alibaba": {
+      "listingId": "60737484993",
+      "basis": "client-published",
+      "fields": ["Plate length", "Material", "Series", "Minimum order"],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "_note": "NO PHOTOGRAPH YET, SO THIS RECORD IS DELISTED BY DESIGN. heroImage has no `src`, which is what isPublished() reads (src/data/products.ts:92), so the product stays out of every browse surface and its page carries noindex — the same treatment as the other 67 photo-less models. It exists as a record because the demand is the strongest unserved signal we have (119 Alibaba impressions, 3 enquiries, 23% enquiry conversion in the 90 days to 2026-09-11) and because the client has already published four facts about it on their own storefront. The moment a photograph lands in public/images/products/, add `src` and it goes live. Everything not listed above is genuinely unknown — backset, centre distance, door thickness, handing, finishes — and is omitted rather than guessed, per the dash rule in AGENTS.md. Do NOT infer backset or centre distance from the model number."
+}

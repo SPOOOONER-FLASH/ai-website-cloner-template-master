@@ -1,9 +1,11 @@
 import type { FinderProduct } from "@/lib/product-finder";
+import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { cn } from "@/lib/utils";
 import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { cardFigure } from "@/lib/card-figure";
 
 interface ProductCardProps {
   /* The narrow shape, not the full record: this card reads a dozen fields and a full
@@ -23,6 +25,14 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
   const es = locale === "es";
   const href = `${es ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`;
   const material = localiseProductValues([product.material].filter(Boolean), locale);
+  /*
+    Two kinds of caller reach this card. Category and related-product surfaces render on
+    the server and hand over the whole Product, so the figure is read straight from
+    `specs`. The product finder is a client component fed FinderProduct, which carries a
+    precomputed `figure` instead precisely so the spec arrays stay out of the bundle.
+    Prefer the live specs when they are here; fall back to what the build worked out.
+  */
+  const figure = cardFigure(product as Partial<Product>, locale) ?? product.figure?.[locale];
   const heroImage = {
     ...product.heroImage,
     label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
@@ -35,7 +45,25 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
         className,
       )}
     >
-      <MediaPlaceholder {...heroImage} priority={priority} />
+      {/*
+        The figure sits ON the photograph, the way the client's own Alibaba listings do
+        it — but as text, not baked pixels. See src/lib/card-figure.ts for why that
+        distinction is not cosmetic.
+
+        Anchored to the bottom edge and only as tall as one line, because the product
+        occupies the middle of every plate in this catalogue; a band across the centre
+        would cover the thing the buyer came to look at. It is absent entirely when the
+        catalogue states no figure — 276 of 636 published products — rather than filled
+        with something weaker.
+      */}
+      <div className="relative">
+        <MediaPlaceholder {...heroImage} priority={priority} />
+        {figure ? (
+          <p className="absolute inset-x-0 bottom-0 bg-surface/85 px-12 py-8 text-c2 tabular-nums text-ink backdrop-blur-[2px]">
+            <span className="text-ink-secondary">{figure.label}</span> {figure.value}
+          </p>
+        ) : null}
+      </div>
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="title-marker text-h3 text-ink">
           {(es && product.nameEs) || product.name}
