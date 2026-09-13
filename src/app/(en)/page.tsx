@@ -2,6 +2,7 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -49,6 +50,20 @@ export default function Home() {
           giving a reason to care about it.
         */}
         <FlagshipTooling />
+
+        {/*
+          Directly under the flagship pair, because the two answer different questions and
+          the second only lands once the first has been asked. 307 and 311 say what we
+          tooled; the columns say what we can explain — and a specifier arrives holding a
+          problem ("a pair of fire doors", "forty doors and three grades of key holder")
+          rather than a model number.
+
+          This is also where the demand data points. Explanatory articles are what get
+          cited — the model-number explainer seven times against three for every category
+          page combined — and the master key system was the highest-exposure line on the
+          client's own Alibaba storefront while this site said nothing about it.
+        */}
+        <FeatureColumns />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

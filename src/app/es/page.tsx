@@ -9,6 +9,7 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { FeatureColumns } from "@/components/site/FeatureColumns";
 import { ArgentinaAr4Showcase } from "@/components/site/ArgentinaAr4Showcase";
 import * as content from "@/data/home-es";
 import { siteName } from "@/data/site";
@@ -51,6 +52,9 @@ export default function SpanishHomePage() {
           giving a reason to care about it.
         */}
         <FlagshipTooling locale="es" />
+
+        {/* Same rail, Spanish. See the English page for why it sits here. */}
+        <FeatureColumns locale="es" />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />
