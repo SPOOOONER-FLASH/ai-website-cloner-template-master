@@ -63,9 +63,9 @@ const CHECK = argv.includes("--check");
 
 /* Same proportions as scripts/brand-rayen-images.mjs. Kept in step by hand, on purpose:
    importing them would make this audit agree with the stamper by construction. */
-const WIDTH_FRACTION = 0.16;
+const WIDTH_FRACTION = 0.2;
 const MIN_WIDTH = 64;
-const MAX_WIDTH = 260;
+const MAX_WIDTH = 320;
 const MARGIN_FRACTION = 0.035;
 
 /**
@@ -139,14 +139,33 @@ function publishedImages() {
       if (!names.has(name)) names.set(name, product.model ?? product.slug);
     }
   }
-  const walk = (nodes) => {
+  /*
+    Category covers — but only for the categories RAYEN actually stocks.
+
+    The taxonomy is shared, so it also holds 逃生推杠 and the rest of HYDE's tree, and their
+    covers now point at /images/editorial/hyde-hero-*.webp. Walking all of them reported six
+    "missing files" for images the RAYEN site never asks for and should not have: another
+    true-but-irrelevant finding of the kind that teaches people to skim the report.
+  */
+  const stocked = new Set(records.map((product) => product.categoryPath[0]));
+  const walk = (nodes, live = false) => {
     for (const node of nodes ?? []) {
+      const here = live || stocked.has(node.slug);
       const src = node.image?.src;
-      if (src) {
+      if (here && src) {
         const name = String(src).slice(String(src).lastIndexOf("/") + 1);
-        if (!names.has(name)) names.set(name, `类目:${node.slug}`);
+        /*
+          Only if the RAYEN image set actually has it.
+
+          src/data/rayen.ts refuses to render a cover that is not RAYEN's own and substitutes
+          a published product — so a shared cover pointing at /images/editorial/hyde-hero-*
+          never reaches a RAYEN page. Auditing it anyway reported a missing file for an image
+          the site is deliberately not using, which reads as a defect and is the opposite of
+          one: it is the guard working.
+        */
+        if (!names.has(name) && existsSync(join(DIR, name))) names.set(name, `类目:${node.slug}`);
       }
-      walk(node.children);
+      walk(node.children, here);
     }
   };
   walk(JSON.parse(readFileSync(CATEGORIES, "utf8")).categories);
@@ -172,26 +191,39 @@ async function logoMask(width) {
 }
 
 /**
- * Does something logo-shaped sit in the corner where the logo goes?
+ * Did the mark change these pixels, in the shape of the logo?
  *
- * Returns how much more the pixels under the logo's ink depart from their surroundings than
- * the pixels beside them do. A stamped corner separates; a bare one does not.
+ * Takes the branded file's mark rectangle and the SAME rectangle from the unbranded
+ * original, and asks how much more the pixels under the logo's ink differ between the two
+ * than the pixels beside them do. A stamped corner separates; an unstamped one is identical
+ * in both and scores zero.
  *
- * MEASURED AGAINST A LOCAL BASELINE, NOT THE PATCH MEDIAN
- * The first version compared each pixel to the median of the whole patch, and it reported
- * seven images as unmarked that are plainly marked — every one of them a photograph of a
- * door, where the corner holds a hard vertical edge between a dark leaf and a pale wall.
- * Against a patch median, that edge makes the NON-ink pixels deviate enormously and the
- * score goes negative: the metric was measuring the door, not the mark.
+ * WHY NOT MEASURE THE BRANDED IMAGE ON ITS OWN
+ * Two earlier versions tried. Both produced false "no logo" on images that are plainly
+ * marked, and a false alarm is worse than no check: it sends somebody hunting for a defect
+ * that is not there, and teaches the next person to skim the report.
  *
- * Subtracting a blurred copy first removes anything at door-edge scale and leaves what is
- * the size of a letter stroke, which is what the mark is made of. Same idea as asking "is
- * there fine detail here", rather than "is this area uniform".
+ *   1. Ink vs the patch median. Reported seven marked images as bare — all photographs of
+ *      doors, where a hard edge between a dark leaf and a pale wall makes the NON-ink pixels
+ *      deviate hugely. It was measuring the door.
+ *   2. Ink vs a blurred copy, i.e. "is there fine detail under the strokes". Reported 61
+ *      marked images as bare — every one a corner of carpet, mosaic or stone. Those textures
+ *      carry detail at exactly the scale of a letter stroke, and worse, a semi-transparent
+ *      mark laid over them SUPPRESSES that detail rather than adding any. The assumption
+ *      that a mark makes a corner busier is simply false on a busy corner.
  *
- * A false "no logo" is worse than no check at all: it sends somebody hunting for a defect
- * that is not there, and the next person learns to ignore the report.
+ * Differencing the two files drops both assumptions. It does not care whether the mark adds
+ * contrast or removes it, and the content cancels out, so a white drawing and a photograph
+ * of a hotel corridor are judged the same way.
+ *
+ * ALIGNMENT
+ * The branded file may have been padded to square after the original was written
+ * (scripts/square-rayen-plates.mjs), which moves the content by a known, centred offset.
+ * That offset is subtracted before the rectangles are compared. If the rectangle then falls
+ * outside the original — a re-crop, a resize, anything else — this returns null and the
+ * image is reported as unverifiable rather than guessed at in either direction.
  */
-async function markContrast(file, meta) {
+async function markDelta(file, meta, origin) {
   const markWidth = Math.round(
     Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, meta.width * WIDTH_FRACTION)),
   );
@@ -201,36 +233,109 @@ async function markContrast(file, meta) {
   const top = Math.max(0, meta.height - mask.height - margin);
   if (mask.width + margin > meta.width || mask.height + margin > meta.height) return null;
 
-  const patch = await sharp(file)
-    .extract({ left, top, width: mask.width, height: mask.height })
-    .greyscale()
-    .raw()
-    .toBuffer({ resolveWithObject: true });
+  const bareMeta = await sharp(origin).metadata();
+  /* Centred square padding is the one transformation whose offset is exactly known. */
+  const dx = Math.round((meta.width - bareMeta.width) / 2);
+  const dy = Math.round((meta.height - bareMeta.height) / 2);
+  /*
+    Compare the OVERLAP, not the whole rectangle.
 
-  /* The same patch with the letter strokes smeared away — the background, in other words. */
-  const blurred = await sharp(patch.data, {
-    raw: { width: patch.info.width, height: patch.info.height, channels: patch.info.channels },
-  })
-    .blur(Math.max(1, mask.height / 8))
-    .raw()
-    .toBuffer();
+    A padded plate puts its mark partly over margin that the original never had — the mark
+    is positioned from the padded edge, so on a 544×532 drawing padded to 609×609 the
+    rightmost strip of the mark has no counterpart at all. Insisting on the full rectangle
+    made 207 of 822 images unverifiable, which is not a safe answer dressed as caution: an
+    audit that shrugs at a quarter of the catalogue is an audit nobody will act on.
 
-  const { data, info } = patch;
-  const values = [];
-  const base = [];
-  for (let i = 0, p = 0; i < data.length; i += info.channels, p += 1) {
-    values.push(data[i]);
-    base.push(blurred[i]);
-  }
+    The overlap still contains most of the wordmark, and the ink/bare comparison inside it
+    answers the same question. Below a third of the ink there is not enough letter left to
+    be sure, and it says so instead.
+  */
+  const x0 = Math.max(0, left - dx);
+  const y0 = Math.max(0, top - dy);
+  const x1 = Math.min(bareMeta.width, left - dx + mask.width);
+  const y1 = Math.min(bareMeta.height, top - dy + mask.height);
+  const w = x1 - x0;
+  const h = y1 - y0;
+  if (w < 8 || h < 8) return null;
+
+  /* Where that overlap sits inside the mark rectangle, so the mask lines up with it. */
+  const maskX = x0 - (left - dx);
+  const maskY = y0 - (top - dy);
+
+  const read = (source, l, t) =>
+    sharp(source)
+      .extract({ left: l, top: t, width: w, height: h })
+      .greyscale()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+  const [after, before] = await Promise.all([read(file, x0 + dx, y0 + dy), read(origin, x0, y0)]);
 
   let inkSum = 0;
   let inkN = 0;
   let bareSum = 0;
   let bareN = 0;
-  for (let p = 0; p < values.length; p += 1) {
-    const delta = Math.abs(values[p] - base[p]);
-    /* 128 rather than 0: the logo's own soft edges are not ink, and counting them as ink
-       would let a blurry corner masquerade as a mark. */
+  let inkTotal = 0;
+  for (let p = 0; p < mask.alpha.length; p += 1) if (mask.alpha[p] > 128) inkTotal += 1;
+
+  for (let row = 0; row < h; row += 1) {
+    for (let col = 0; col < w; col += 1) {
+      const i = (row * w + col) * after.info.channels;
+      const m = (maskY + row) * mask.width + (maskX + col);
+      const delta = Math.abs(after.data[i] - before.data[i]);
+      /* 128 rather than 0: the logo's own soft edges are not ink, and counting them as ink
+         would let a blurry corner masquerade as a mark. */
+      if (mask.alpha[m] > 128) {
+        inkSum += delta;
+        inkN += 1;
+      } else {
+        bareSum += delta;
+        bareN += 1;
+      }
+    }
+  }
+  if (!inkN || !bareN || inkN < inkTotal / 3) return null;
+  return inkSum / inkN - bareSum / bareN;
+}
+
+/**
+ * The same question on a flat field: does the ink depart from the field the way a mark would?
+ *
+ * Only sound where the mark sits on a padded margin — a single colour, laid down by
+ * scripts/square-rayen-plates.mjs. There, "the ink is darker or lighter than everything
+ * around it" is the whole test, and the busy-corner failure that killed this approach as a
+ * general metric cannot arise, because the corner is one colour by construction.
+ */
+async function markOnFlatField(file, meta) {
+  const markWidth = Math.round(
+    Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, meta.width * WIDTH_FRACTION)),
+  );
+  const mask = await logoMask(markWidth);
+  const margin = Math.round(Math.min(meta.width, meta.height) * MARGIN_FRACTION);
+  const left = Math.max(0, meta.width - mask.width - margin);
+  const top = Math.max(0, meta.height - mask.height - margin);
+  if (mask.width + margin > meta.width || mask.height + margin > meta.height) return null;
+
+  const { data, info } = await sharp(file)
+    .extract({ left, top, width: mask.width, height: mask.height })
+    .greyscale()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  /* The field is whatever the non-ink pixels mostly are. */
+  const bare = [];
+  for (let i = 0, p = 0; i < data.length; i += info.channels, p += 1) {
+    if (mask.alpha[p] <= 128) bare.push(data[i]);
+  }
+  if (!bare.length) return null;
+  const field = bare.sort((a, b) => a - b)[bare.length >> 1];
+
+  let inkSum = 0;
+  let inkN = 0;
+  let bareSum = 0;
+  let bareN = 0;
+  for (let i = 0, p = 0; i < data.length; i += info.channels, p += 1) {
+    const delta = Math.abs(data[i] - field);
     if (mask.alpha[p] > 128) {
       inkSum += delta;
       inkN += 1;
@@ -313,30 +418,38 @@ for (const [name, owner] of names) {
     cropped.push({ name, owner, size: `${meta.width}×${meta.height}`, loss: +(loss * 100).toFixed(1) });
   }
 
-  const branded = await markContrast(file, meta);
-  if (branded === null) {
-    unmarked.push({ name, owner, reason: `${meta.width}×${meta.height} 放不下标` });
-    continue;
-  }
-
-  /* The same image before the mark went on. Without it there is no baseline to subtract. */
+  /* The same image before the mark went on. Without it there is nothing to difference. */
   const origin = join(root, "public", "images", "products", name);
   if (!existsSync(origin)) {
-    noBaseline.push({ name, owner, contrast: +branded.toFixed(1) });
+    noBaseline.push({ name, owner, contrast: 0 });
     continue;
   }
-  let bare;
+  let gain;
   try {
-    bare = await markContrast(origin, await sharp(origin).metadata());
+    gain = await markDelta(file, meta, origin);
   } catch {
-    bare = null;
+    gain = null;
   }
-  if (bare === null) {
-    noBaseline.push({ name, owner, contrast: +branded.toFixed(1) });
+  /*
+    A padded plate puts its mark on margin that did not exist before, so there is no "before"
+    to difference — 207 of 822 came back unverifiable that way. But that margin is flat by
+    construction: scripts/square-rayen-plates.mjs fills it with the plate's own field colour.
+    On a flat field the simple question works and works well — it only ever failed on busy
+    photographs, which are exactly the ones markDelta can answer. So each method is used
+    where it is valid, rather than one method stretched over both.
+  */
+  if (gain === null) {
+    try {
+      gain = await markOnFlatField(file, meta);
+    } catch {
+      gain = null;
+    }
+  }
+  if (gain === null) {
+    noBaseline.push({ name, owner, contrast: 0 });
     continue;
   }
 
-  const gain = branded - bare;
   if (gain < UNSURE_GAIN) {
     unmarked.push({ name, owner, reason: `打标前后角落没有变化（增益 ${gain.toFixed(1)}）` });
   } else if (gain < MARK_GAIN) {

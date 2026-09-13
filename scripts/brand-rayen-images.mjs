@@ -58,10 +58,22 @@ const argv = process.argv.slice(2);
 const FORCE = argv.includes("--force");
 const CHECK = argv.includes("--check");
 
-/* Proportions, so a 400px plate and a 2500px plate get the same-looking mark. */
-const WIDTH_FRACTION = 0.16;
+/*
+  Proportions, so a 400px plate and a 2500px plate get the same-looking mark.
+
+  0.16 → 0.20 on 2026-09-11, when the client supplied the new wordmark. The old lockup was
+  "RAYEN 雷茵" at 3.42:1; the new one is the Latin wordmark alone at 5.83:1. Width is what
+  is pinned here, so the same fraction would have made the mark 41% SHORTER — a quieter
+  mark than before, on the same day the client said he could not see it on the live site.
+  0.20 restores roughly the area the old mark covered (0.21 matches it exactly; 0.20 keeps
+  the mark under a fifth of the frame, which matters more on a 1200mm handle shot upright).
+
+  scripts/audit-rayen-images.mjs repeats these numbers rather than importing them, so that
+  the audit cannot agree with the stamper by construction. Change one, change the other.
+*/
+const WIDTH_FRACTION = 0.2;
 const MIN_WIDTH = 64;
-const MAX_WIDTH = 260;
+const MAX_WIDTH = 320;
 const MARGIN_FRACTION = 0.035;
 const OPACITY_ON_LIGHT = 0.42;
 const OPACITY_ON_DARK = 0.55;
