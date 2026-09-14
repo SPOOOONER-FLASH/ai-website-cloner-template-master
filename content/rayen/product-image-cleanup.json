@@ -12,7 +12,7 @@
   "counts": {
     "refused": 436,
     "cleanable": 1217,
-    "already-clean": 2268
+    "already-clean": 2289
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -10523,6 +10523,34 @@
       "source": "091f9429bc2175e071aaed5fec8b968fd776d0d0fd28a05caa81b1ee6190eaf1",
       "status": "already-clean"
     },
+    "g2751-glass-door-handle-2.webp": {
+      "source": "15e90d1e36dbc738fbd3a55cfbf84069628cd14c8f1c16e584d4fcf2771d0bd9",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle-3.webp": {
+      "source": "295c0c32cea6158626b41efc5a147d553462433cc412b958b2cd6d2d42b188d6",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle-4.webp": {
+      "source": "c148768246c4f4e409bfa869fa6528273b90ec26d910ccfae19c8734780608c8",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle-5.webp": {
+      "source": "9345d188644a17ddf7a364a2ccf67b0558bd0ab2c311d97870737f158bce6985",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle-6.webp": {
+      "source": "a53f7d6d437608980971253a5d7b715d4572aa8c787498171f493ea3edfe628e",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle-7.webp": {
+      "source": "3c1bc3c21f7e51fe267a7f31926c7f842eeb3a300a4542d172ce91f7997b506e",
+      "status": "already-clean"
+    },
+    "g2751-glass-door-handle.webp": {
+      "source": "d83d99ed69143d9759bf4abeeec7e31602798c687a55b76a12e023abd67f2324",
+      "status": "already-clean"
+    },
     "g2888-glass-door-handle-2.webp": {
       "source": "fcaeaa834290f26a0e209ea2da07fbe43623bfbd7381497bc93c5e05067733d9",
       "status": "already-clean"
@@ -15230,6 +15258,46 @@
       "source": "0aa9b19f62e8b618d3206de05b47246ec1c67fe5ca0fe9ed75a49a9536358022",
       "status": "already-clean"
     },
+    "t2751-stainless-steel-handle-10.webp": {
+      "source": "3650f28334d10922740aff2f29337e18f12a7c3c441978dbb6a3fe88890008c8",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-2.webp": {
+      "source": "c17dc514827450c7b72b20e756b161253017184911604740341a4fa1f7d29211",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-3.webp": {
+      "source": "2136df11207c23afee52a29732322955b0ca7bc7dfede4a75b9a724ce921a83a",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-4.webp": {
+      "source": "f110abea0ab624bcbadf3f63b794c8f8dbe8789eb8959eb5ae281125930b13cb",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-5.webp": {
+      "source": "70ad4645ddcc269f54777130f700ecefbcd468704f1910d15ab8a0c01a83a815",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-6.webp": {
+      "source": "664d7b4a3106abf97e792b5211875363218ac0b1d252d0620b417b74bfdb3db8",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-7.webp": {
+      "source": "cc9abb8da8913b2022ed9ff5b2e3303ed89cc7fdcc0c5dd634aab638b15aeab9",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-8.webp": {
+      "source": "1d9a592033135128eae6712e25dca08973e84805c5e27d486fa4103c46d93a41",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle-9.webp": {
+      "source": "7819c15413f813175a01c9839c7e824aebe5e6fdcd5ff845259cad0e39bffbaf",
+      "status": "already-clean"
+    },
+    "t2751-stainless-steel-handle.webp": {
+      "source": "b755d5dde6cfa34996a401f66785dd93080aa64e76a3f6d00105a0bd4f220fde",
+      "status": "already-clean"
+    },
     "t2888-stainless-steel-handle-2.webp": {
       "source": "b6e419b4a03e195c2c0b4e66bd585066b97e5a1d845b5b08c8b6842d424e16cd",
       "status": "already-clean"
@@ -16448,6 +16516,22 @@
     },
     "ul745-lever-handle.webp": {
       "source": "04b7264dd848d4d94dad833c072c2d2715903494324bae588a9d355805653916",
+      "status": "already-clean"
+    },
+    "ul750-lever-handle-2.webp": {
+      "source": "0b078757e12664eb34f5502264aac6a141c5e5443b6f5c8254df8174820fd228",
+      "status": "already-clean"
+    },
+    "ul750-lever-handle-3.webp": {
+      "source": "78af08bd4713727e33509b9afd4461cd1e729e2a0894522f8affe1d8bcabe444",
+      "status": "already-clean"
+    },
+    "ul750-lever-handle-4.webp": {
+      "source": "f4515c6cc9d1495f964263339388514acdcd411497cc0ca81cff9a9567f738f2",
+      "status": "already-clean"
+    },
+    "ul750-lever-handle.webp": {
+      "source": "dbb2e740f8e1742e090e2e05d51ac7e874ea18b2a02eb4a7bd2741190f5b0042",
       "status": "already-clean"
     },
     "ul780-lever-handle-10.webp": {

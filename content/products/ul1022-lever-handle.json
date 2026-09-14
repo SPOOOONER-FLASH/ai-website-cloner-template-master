@@ -49,7 +49,10 @@
     "Satin brass",
     "Antique copper"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul1022-lever-handle.webp",
