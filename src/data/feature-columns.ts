@@ -1,5 +1,6 @@
 import { products } from "./products";
 import { keyableProducts } from "../lib/keyable-products";
+import drawingIndex from "../../public/images/drawings/index.json";
 import type { Locale } from "./site";
 
 /**
@@ -46,8 +47,26 @@ export function keyableModelCount(): number {
   return keyableProducts(products).length;
 }
 
+/**
+ * Dimension drawings we have actually produced, counted from the generator's own index.
+ *
+ * Read from `public/images/drawings/index.json` rather than typed, for the same reason
+ * every other figure on this rail is counted: the generator adds drawings as the
+ * catalogue publishes geometry, so a hard-coded number is wrong the next time somebody
+ * runs `npm run assets:drawings`.
+ *
+ * `partial` marks a drawing where some feature was left undrawn because its dimension is
+ * not published. Those are counted too — a drawing that stops where the data stops is
+ * still a drawing, and pretending otherwise would mean completing outlines from
+ * imagination, which is the one thing this generator refuses to do.
+ */
+export function dimensionDrawingCount(): number {
+  return Object.keys(drawingIndex as Record<string, unknown>).length;
+}
+
 export function featureColumns(): FeatureColumn[] {
   const keyable = keyableModelCount();
+  const drawings = dimensionDrawingCount();
 
   return [
     {
@@ -98,6 +117,31 @@ export function featureColumns(): FeatureColumn[] {
         src: "/images/products-hyde/dc02-door-coordinator.webp",
         label: "DC02 door coordinator, zinc-plated steel, with its two support brackets",
         labelEs: "Selector de cierre DC02, acero zincado, con sus dos soportes",
+      },
+    },
+    {
+      id: "drawings",
+      href: {
+        en: "/news/mortise-lock-backset-and-centre-distance-guide/",
+        es: "/es/news/mortise-lock-backset-and-centre-distance-guide/",
+      },
+      eyebrow: { en: "Column · Drawings", es: "Columna · Planos" },
+      title: {
+        en: "Backset and centre distance: reading a lock case number",
+        es: "Entrada y distancia entre ejes: leer una referencia de cerradura",
+      },
+      body: {
+        en: "Two numbers decide whether a case fits the door in front of you, and both are already in the model number. Our drawings show them to scale — and stop wherever the dimension stops, rather than completing an outline we cannot state.",
+        es: "Dos números deciden si una caja entra en la puerta que tiene delante, y ambos están ya en la referencia. Nuestros planos los muestran a escala — y se detienen donde se detiene la cota, en lugar de completar un contorno que no podemos afirmar.",
+      },
+      figure: {
+        en: `${drawings} dimension drawings, drawn only from published dimensions`,
+        es: `${drawings} planos acotados, trazados solo con cotas publicadas`,
+      },
+      image: {
+        src: "/images/editorial/news-mortise-lock-inspection.webp",
+        label: "A Canton Hyland mortise lock case being measured",
+        labelEs: "Medición de una cerradura de embutir de Canton Hyland",
       },
     },
   ];

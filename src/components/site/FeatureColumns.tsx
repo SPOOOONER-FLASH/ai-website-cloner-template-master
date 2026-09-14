@@ -49,7 +49,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
           className={cn(
             "horizontal-snap col-span-full mt-32 flex snap-x snap-mandatory gap-16",
             "overflow-x-auto overscroll-x-contain",
-            "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible",
+            "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible lg:grid-cols-3",
           )}
         >
           {columns.map((column) => (
