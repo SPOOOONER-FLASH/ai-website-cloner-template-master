@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Master key plan — input sheet — Canton Hyland</title>
+<meta name="description" content="Door schedule input sheet for a master key system. Print in landscape, fill in one line per door, and send it back."/>
+<!--
+  A canonical and a robots tag, because this file lands in out/ and the SEO audit walks
+  every .html there as a page — it has no way to know this one is a form. noindex keeps it
+  out of the index where it belongs; the canonical stops the audit reporting a page with
+  no canonical, which would be a real finding on any other file in that directory.
+-->
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://cantonlock.com/downloads/master-key-plan-sheet.html"/>
+<style>
+  /*
+    Print first. This page exists to leave the screen, so the print rules are the real
+    design and the screen rules are the preview of it. Landscape because the table has ten
+    columns and a portrait A4 would set them at a width nobody can write in.
+  */
+  @page { size: A4 landscape; margin: 12mm; }
+
+  :root { --ink: #16150f; --muted: #6b6b6b; --rule: #c9c5bb; --fill: #f7f5f1; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px;
+    font: 12px/1.45 "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink); background: #fff;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  h2 { font-size: 14px; margin: 28px 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 18px; font-size: 11px; }
+  .intro li { margin-bottom: 6px; max-width: 62em; }
+
+  dl.system { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin: 0 0 8px; }
+  dl.system div { display: grid; grid-template-columns: 15em 1fr; align-items: end; }
+  dl.system dt { color: var(--muted); font-size: 11px; }
+  dl.system dd { margin: 0; border-bottom: 1px solid var(--rule); min-height: 20px; }
+
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th, td { border: 1px solid var(--rule); padding: 5px 6px; vertical-align: top; }
+  th { background: var(--fill); text-align: left; font-size: 11px; }
+  td { height: 26px; }
+  td.help { color: var(--muted); font-size: 9px; height: auto; background: #fcfbf9; }
+  tr.example td { background: var(--fill); font-size: 11px; }
+
+  .note { color: var(--muted); font-size: 10px; margin-top: 8px; max-width: 70em; }
+  .page-break { break-before: page; }
+
+  @media print {
+    body { padding: 0; font-size: 10px; }
+    a { text-decoration: none; color: inherit; }
+    /* A form that reprints its own instructions on every sheet wastes the sheet. */
+    .screen-only { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Master key plan — input sheet</h1>
+<p class="sub">Canton Hyland Hardware (Group) Co., Ltd. · cantonlock.com/news/master-key-systems-how-many-levels-you-need/</p>
+
+<ul class="intro">
+  <li>One line per door. Fill in what you know and leave the rest — we would rather have the schedule with gaps than wait for a complete one.</li>
+  <li>Sheet 3 is a worked example of a small three-level building. Copy its pattern rather than inventing a format.</li>
+  <li>Two things decide the whole chart and are worth settling first: every cylinder in one system shares a keyway, and that cannot be changed later; and the number of keys each level needs, including the spares the building owner holds.</li>
+  <li>Cylinder lengths in the dropdown are the 9 the catalogue carries. Only 10 of the 45 published cylinders state the length as a specification, so confirm the exact overall length with us for the model you settle on.</li>
+  <li class="screen-only"><strong>Printing:</strong> use landscape. Your browser's “Save as PDF” produces the same sheet if you would rather send it back by email.</li>
+</ul>
+
+<h2>About the system as a whole</h2>
+<dl class="system">
+  <div><dt>Project / building<br><span style="font-size:9px">Name we should put on the keying chart</span></dt><dd></dd></div>
+  <div><dt>Levels you think you need<br><span style="font-size:9px">Most buildings need three. Say if you are unsure</span></dt><dd></dd></div>
+  <div><dt>Keyway<br><span style="font-size:9px">Every cylinder in one system shares it, and it cannot be changed later</span></dt><dd></dd></div>
+  <div><dt>Spare keys per level<br><span style="font-size:9px">Including the ones the building owner keeps</span></dt><dd></dd></div>
+  <div><dt>Contact for the chart<br><span style="font-size:9px">Who approves it before any cylinder is pinned</span></dt><dd></dd></div>
+</dl>
+
+<h2>Door schedule — one line per door</h2>
+<table>
+  <thead><tr><th>Door ref</th><th>Location</th><th>Keying group</th><th>Opened by</th><th>Lock / cylinder model</th><th>Cylinder length (mm)</th><th>Split</th><th>Finish</th><th>Change keys</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td class="help">Your own numbering — whatever is on the drawing</td><td class="help">Room or area name</td><td class="help">Floor, department or tenancy this door belongs to</td><td class="help">Every key level that must open this door</td><td class="help">Leave blank if you want us to propose one</td><td class="help">Overall length. We confirm it for the model you choose</td><td class="help">e.g. 35/35. Depends on door thickness — see our note on length and split</td><td class="help"></td><td class="help">How many keys for this door alone</td><td class="help"></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+<p class="note">Fill in what you know and leave the rest. We would rather have the schedule with gaps than wait for a complete one.</p>
+
+<div class="page-break"></div>
+<h2>Worked example — copy this pattern</h2>
+<p class="sub">A small three-level building. Three levels is what most buildings need; showing five here would quietly recommend five.</p>
+<dl class="system">
+  <div><dt>project</dt><dd>Example — Riverside Office, 3 floors</dd></div>
+      <div><dt>levels</dt><dd>3 (GMK / MK per floor / change key per door)</dd></div>
+      <div><dt>keyway</dt><dd>One keyway for the whole system — to be confirmed with us</dd></div>
+      <div><dt>spares</dt><dd>GMK ×2, each MK ×2, change keys ×1 per door plus 5 spare blanks</dd></div>
+      <div><dt>contact</dt><dd>facilities@example.com</dd></div>
+</dl>
+<table>
+  <thead><tr><th>Door ref</th><th>Location</th><th>Keying group</th><th>Opened by</th><th>Lock / cylinder model</th><th>Cylinder length (mm)</th><th>Split</th><th>Finish</th><th>Change keys</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr class="example"><td>G-01</td><td>Main entrance</td><td>Building</td><td>GMK, MK-G</td><td></td><td>70</td><td>35/35</td><td>Satin Stainless</td><td>2</td><td>Glazed door, check thickness</td></tr>
+      <tr class="example"><td>G-04</td><td>Server room</td><td>Building</td><td>GMK only</td><td></td><td>70</td><td>35/35</td><td>Satin Stainless</td><td>2</td><td>Must NOT open on floor master</td></tr>
+      <tr class="example"><td>1-02</td><td>Office 102</td><td>Floor 1</td><td>GMK, MK-1</td><td></td><td>65</td><td>30/35</td><td>Satin Stainless</td><td>1</td><td></td></tr>
+      <tr class="example"><td>1-03</td><td>Office 103</td><td>Floor 1</td><td>GMK, MK-1</td><td></td><td>65</td><td>30/35</td><td>Satin Stainless</td><td>1</td><td></td></tr>
+      <tr class="example"><td>2-01</td><td>Meeting room</td><td>Floor 2</td><td>GMK, MK-2</td><td></td><td>65</td><td>30/35</td><td>Polished Brass</td><td>3</td><td>Shared with tenant</td></tr>
+      <tr class="example"><td>2-07</td><td>Cleaners' store</td><td>Floor 2</td><td>GMK, MK-2, cleaning contractor</td><td></td><td>65</td><td>30/35</td><td>Satin Stainless</td><td>4</td><td>Contractor keys counted here</td></tr>
+  </tbody>
+</table>
+<p class="note">
+  Two rows above are the ones buyers most often get wrong. G-04 is opened by the grand master ONLY —
+  say so explicitly, because a door left blank gets the floor master by default. 2-07 counts the
+  contractor's keys in the key column; keys nobody counted are the usual reason a chart has to be redrawn.
+</p>
+
+</body>
+</html>

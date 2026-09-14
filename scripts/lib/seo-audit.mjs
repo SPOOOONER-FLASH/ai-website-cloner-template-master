@@ -88,11 +88,33 @@ export function routeFromExportFile(outDir, file) {
   return `/${relativeFile.replace(/\.html$/u, "/")}`;
 }
 
-function collectHtmlFiles(directory, results = []) {
+/*
+  /downloads/ holds files, not pages, and some of those files are HTML.
+
+  The master key plan sheet is a printable form: it is served as
+  /downloads/master-key-plan-sheet.html, it is noindex, and nobody navigates to it as a
+  page. The audit turns any non-index .html into a route of the form /name/ (see
+  routeForFile below), so it read that form as a page at /downloads/master-key-plan-sheet/
+  and correctly reported that its canonical did not match a URL that does not exist.
+
+  ⚠ It is the loose FILES that are skipped, not the directory. `out/downloads/index.html`
+  is the real Service + Downloads page, and the first version of this exclusion dropped
+  the whole directory and took that page with it — which the Spanish mirror reported
+  immediately, because /es/downloads/ points its English hreflang at a page the audit
+  could no longer see. A route is an index.html; everything else in a file directory is a
+  file.
+*/
+const FILE_DIRECTORIES = new Set(["downloads"]);
+
+function collectHtmlFiles(directory, results = [], inFileDirectory = false) {
   for (const entry of readdirSync(directory, { withFileTypes: true })) {
     const child = resolve(directory, entry.name);
-    if (entry.isDirectory()) collectHtmlFiles(child, results);
-    else if (entry.name.endsWith(".html")) results.push(child);
+    if (entry.isDirectory()) {
+      collectHtmlFiles(child, results, inFileDirectory || FILE_DIRECTORIES.has(entry.name));
+    } else if (entry.name.endsWith(".html")) {
+      if (inFileDirectory && entry.name !== "index.html") continue;
+      results.push(child);
+    }
   }
   return results;
 }

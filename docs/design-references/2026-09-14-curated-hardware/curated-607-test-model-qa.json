@@ -1,0 +1,18 @@
+{
+  "id": "curated-607-test-model",
+  "sources": [
+    {
+      "model": "607 SSET",
+      "sha256": "42714dc16a7c3ba383e1629ca4871e445aa1218e8fbdc2f86b5de13e56e11ba2",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

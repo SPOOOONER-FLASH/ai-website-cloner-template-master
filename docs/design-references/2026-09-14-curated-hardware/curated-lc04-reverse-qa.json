@@ -1,0 +1,18 @@
+{
+  "id": "curated-lc04-reverse",
+  "sources": [
+    {
+      "model": "LC04 85*60",
+      "sha256": "2aefe27b055d976839e6ce18ee5ad5147796cc2c4eb146e45527520a793184c1",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

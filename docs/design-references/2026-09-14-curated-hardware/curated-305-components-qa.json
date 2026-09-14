@@ -1,0 +1,29 @@
+{
+  "id": "curated-305-components",
+  "sources": [
+    {
+      "model": "305",
+      "sha256": "4b6e110aaa5196366c99804bc1c90d767ece2fb34d05529e4d821f59654743c3",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    },
+    {
+      "model": "305",
+      "sha256": "b1d2c4e72bb717271202eadc1891d3302a982b3f821e193ec70c311612156346",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

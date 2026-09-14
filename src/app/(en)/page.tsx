@@ -3,6 +3,7 @@ import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
 import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -64,6 +65,15 @@ export default function Home() {
           client's own Alibaba storefront while this site said nothing about it.
         */}
         <FeatureColumns />
+
+        {/*
+          Demand-led, and placed after the columns: the columns answer "what can you
+          explain", this answers "what are other people asking for". The order is ninety
+          days of real enquiries from the client's own Alibaba back office, not a
+          shortlist we drew up — see src/data/demand-showcase.ts for why the counts
+          themselves stay off the page.
+        */}
+        <DemandShowcase />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

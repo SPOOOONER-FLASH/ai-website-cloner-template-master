@@ -36,7 +36,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:export",
-    "prebuild": "npm run assets:drawings && npm run assets:doorprep && npm run assets:watermark:check && node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs && node scripts/build-chinese-mirror.mjs",
+    "assets:productconfig": "node scripts/build-product-image-config.mjs",
+    "prebuild": "node scripts/build-product-image-config.mjs --check && npm run assets:drawings && npm run assets:doorprep && npm run assets:watermark:check && node scripts/generate-editorial-srcsets.mjs --check && node scripts/build-content-index.mjs && node scripts/build-search-index.mjs && node scripts/build-chinese-mirror.mjs",
     "content": "node scripts/build-content-index.mjs && node scripts/build-search-index.mjs",
     "assets:editorial": "node scripts/generate-editorial-srcsets.mjs",
     "assets:editorial:check": "node scripts/generate-editorial-srcsets.mjs --check",
@@ -74,7 +75,7 @@
     "rayen:drawings": "node scripts/delocalize-drawings.mjs",
     "rayen:brand": "node scripts/brand-rayen-images.mjs",
     "rayen:audit": "node scripts/audit-rayen-images.mjs",
-    "sheet:masterkey": "node scripts/build-master-key-sheet.mjs && py scripts/build_master_key_workbook.py docs/collaboration/master-key-plan.json",
+    "sheet:masterkey": "node scripts/build-master-key-sheet.mjs && py scripts/build_master_key_workbook.py docs/collaboration/master-key-plan.json && node scripts/build-master-key-print-sheet.mjs",
     "assets:doorprep": "node scripts/build-door-prep-drawings.mjs"
   },
   "dependencies": {

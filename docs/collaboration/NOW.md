@@ -150,3 +150,4 @@ Claude 2026-09-13：第六批 37 个大拉手、logo 按语言分家、首页三
 认证不管」。所以产品图和规格照做（规格是零件客观事实），但封面、注册商标页、办公楼、
 ISO/CE 认证页、页眉带对方标与口号的安装说明跨页一概不进站。这是个全新品类，
 开品类记得按 AGENTS.md 第 5 个坑在 5 处注册，否则构建会在 /_not-found 崩。
+| Codex image completion | content/news/*.json (heroImage only), src/data/home.ts, src/data/home-es.ts, src/components/site/editorial-images.config.json, src/components/site/ProductStudies.tsx, public/images/editorial/curated-*, public/images/product-studies/curated-*, scripts/blender/curated-hardware-scenes.py, scripts/build-curated-hardware.mjs, docs/design-references/2026-09-14-curated-hardware/ | Red-cross image replacement, unique covers, real-source scenes and 20-item review; no shared out build | 2026-09-14 |

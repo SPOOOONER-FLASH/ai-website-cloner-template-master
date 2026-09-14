@@ -1,0 +1,29 @@
+{
+  "id": "curated-lc14-details",
+  "sources": [
+    {
+      "model": "Lc14 85\u00d750mm",
+      "sha256": "1f77d102de8b6a541ff93e7d96e515b286bac02ab8484e93e32d649ff1d1ce01",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    },
+    {
+      "model": "Lc14 85\u00d750mm",
+      "sha256": "2af11f9218150e5048d51ae94a2f7cf242c234c156bc127d3aa6fa2144f0b9b6",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

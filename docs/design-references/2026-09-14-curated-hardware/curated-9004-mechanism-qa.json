@@ -1,0 +1,29 @@
+{
+  "id": "curated-9004-mechanism",
+  "sources": [
+    {
+      "model": "9004S",
+      "sha256": "cd3fad97f36fb833bc6745d4db40e57c530fe159993bbbfb110535e428f19408",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    },
+    {
+      "model": "9004S",
+      "sha256": "a7d62f472757a0d051476a8f4a23d0478e861480c147a8740404f5dcbb8032a8",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "curated-finish-models",
+  "sources": [
+    {
+      "model": "587 PBET",
+      "sha256": "771516e9be4539fc248c053152e5cf2b583b7fd41d0ef9bd8a46d2d236d571cf",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    },
+    {
+      "model": "587 MBET",
+      "sha256": "3a35132a08603eb693447df53e5f5769a1f553a8f06610342b20fb6c604bb3d2",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    },
+    {
+      "model": "587 SSET",
+      "sha256": "c908517b0cc796da04ceac8af9ecfebae3dac1761569f7b47d429436bda5cd22",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}
