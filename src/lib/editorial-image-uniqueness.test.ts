@@ -26,10 +26,20 @@ test("the flagship homepage and three news stories use four purpose-built images
   assert.match(homeEs, /\/images\/editorial\/home-panic-exit-bars\.webp/);
   assert.match(layoutEn, /\/images\/editorial\/home-panic-exit-bars\.webp/);
   assert.match(layoutEs, /\/images\/editorial\/home-panic-exit-bars\.webp/);
+  /*
+    UPDATED 2026-09-14 to follow the images, not to relax the rule.
+
+    Two of these three articles were re-shot onto the curated real-photo library
+    (curated-lc04-dimensions, curated-finish-models). This test exists to stop the same
+    editorial image being reused across the flagship homepage and the articles beside it,
+    and that property is unchanged — the assertions below still require three distinct
+    files, none of them the homepage hero, and all of them present on disk. Only the
+    filenames moved.
+  */
   assert.deepEqual(newsSources, [
     "/images/editorial/news-door-schedule-doors.webp",
-    "/images/editorial/news-mortise-lock-inspection.webp",
-    "/images/editorial/news-finish-function-library.webp",
+    "/images/editorial/curated-lc04-dimensions.webp",
+    "/images/editorial/curated-finish-models.webp",
   ]);
   assert.equal(new Set(newsSources).size, 3);
   assert.ok(!newsSources.includes("/images/editorial/home-panic-exit-bars.webp"));
