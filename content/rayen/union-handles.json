@@ -38,7 +38,11 @@
     "上一轮没有修掉它们（涂掉会在门上留擦过的痕迹），所以这里直接不用。",
     "",
     "2026-09-11：USG1 本批曾以「证据不足」压着，甲方当日指示「凭一张图另立 SKU，全上了」，",
-    "已由 union-handles-b5.json 收录上架，规格表是空的；缺什么写在 docs/collaboration/2026-09-11-rayen-batch5-gaps.md。"
+    "已由 union-handles-b5.json 收录上架，规格表是空的；缺什么写在 docs/collaboration/2026-09-11-rayen-batch5-gaps.md。",
+    "",
+    "2026-09-13 甲方就 T2973A 直接给了开孔：「只配 M8 的螺丝，装门开 10mm 的孔，装玻璃门开 16mm 的孔」。",
+    "这三行的来源是甲方本人，不是 artunion —— merge-artunion-specs.mjs 对没有图纸的型号拒绝写规格，",
+    "那条规矩防的是「从原厂记录里挑错长度」，甲方自己说的数字不在它管辖范围内，所以写在这份清单里。"
   ],
   "sourceRoot": "C:/Users/johns/Desktop/雷茵-拉手图片-按型号",
   "sites": [
@@ -393,7 +397,7 @@
       "model": "T2973A",
       "slug": "t2973a-stainless-steel-handle",
       "name": "Stainless Steel Handle",
-      "nameZh": "门拉手（加长可调）",
+      "nameZh": "门拉手（可定制长度）",
       "categoryPath": [
         "stainless-steel-handles"
       ],
@@ -423,6 +427,18 @@
         {
           "label": "Rose size",
           "value": "38 × 73mm"
+        },
+        {
+          "label": "Fixing screw",
+          "value": "M8"
+        },
+        {
+          "label": "Fixing hole (timber door)",
+          "value": "φ10mm"
+        },
+        {
+          "label": "Fixing hole (glass door)",
+          "value": "φ16mm"
         }
       ]
     },

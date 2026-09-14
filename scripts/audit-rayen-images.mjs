@@ -53,9 +53,28 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const DIR = join(root, "public", "images", "products-rayen");
+/*
+  Two sets, one per language — see the note at the top of scripts/brand-rayen-images.mjs.
+
+  Auditing only the Chinese set would have passed on 2026-09-13 while all 1,112 English
+  images carried BOTH marks, the teal wordmark stamped over the black 雷茵 lockup. The
+  brander's own --check passed too, because it asks whether a mark is present, not how
+  many. So each set is audited against its own logo, and the mark each one is supposed to
+  carry is the one it is measured for.
+*/
+const SETS = [
+  {
+    dir: join(root, "public", "images", "products-rayen"),
+    logo: join(root, "public", "images", "rayen", "logo.webp"),
+    label: "中文站（黑色 RAYEN 雷茵）",
+  },
+  {
+    dir: join(root, "public", "images", "products-rayen-en"),
+    logo: join(root, "public", "images", "rayen", "logo-latin.webp"),
+    label: "英文站（青绿 RAYEN 字标）",
+  },
+];
 const CATEGORIES = join(root, "content", "categories.json");
-const LOGO = join(root, "public", "images", "rayen", "logo.webp");
 
 const argv = process.argv.slice(2);
 const JSON_OUT = argv.includes("--json");
@@ -118,7 +137,7 @@ async function isPlate(file, width, height) {
  * "missing files" that the site never asks for, which is noise dressed up as a defect, and
  * it would have sent somebody looking for a bug that is a deliberate exclusion.
  */
-function publishedImages() {
+function publishedImages(DIR) {
   const names = new Map();
   const mirror = JSON.parse(
     readFileSync(join(root, "src", "data", "generated", "products-zh.json"), "utf8"),
@@ -174,8 +193,9 @@ function publishedImages() {
 
 /** The logo's alpha channel at a given width — where the ink actually is. */
 const maskCache = new Map();
-async function logoMask(width) {
-  if (maskCache.has(width)) return maskCache.get(width);
+async function logoMask(width, LOGO) {
+  const key = `${LOGO}|${width}`;
+  if (maskCache.has(key)) return maskCache.get(key);
   const { data, info } = await sharp(readFileSync(LOGO))
     .resize({ width })
     .ensureAlpha()
@@ -186,7 +206,7 @@ async function logoMask(width) {
     alpha[p] = data[i + info.channels - 1];
   }
   const mask = { alpha, width: info.width, height: info.height };
-  maskCache.set(width, mask);
+  maskCache.set(key, mask);
   return mask;
 }
 
@@ -223,11 +243,11 @@ async function logoMask(width) {
  * outside the original — a re-crop, a resize, anything else — this returns null and the
  * image is reported as unverifiable rather than guessed at in either direction.
  */
-async function markDelta(file, meta, origin) {
+async function markDelta(file, meta, origin, LOGO) {
   const markWidth = Math.round(
     Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, meta.width * WIDTH_FRACTION)),
   );
-  const mask = await logoMask(markWidth);
+  const mask = await logoMask(markWidth, LOGO);
   const margin = Math.round(Math.min(meta.width, meta.height) * MARGIN_FRACTION);
   const left = Math.max(0, meta.width - mask.width - margin);
   const top = Math.max(0, meta.height - mask.height - margin);
@@ -306,11 +326,11 @@ async function markDelta(file, meta, origin) {
  * around it" is the whole test, and the busy-corner failure that killed this approach as a
  * general metric cannot arise, because the corner is one colour by construction.
  */
-async function markOnFlatField(file, meta) {
+async function markOnFlatField(file, meta, LOGO) {
   const markWidth = Math.round(
     Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, meta.width * WIDTH_FRACTION)),
   );
-  const mask = await logoMask(markWidth);
+  const mask = await logoMask(markWidth, LOGO);
   const margin = Math.round(Math.min(meta.width, meta.height) * MARGIN_FRACTION);
   const left = Math.max(0, meta.width - mask.width - margin);
   const top = Math.max(0, meta.height - mask.height - margin);
@@ -375,120 +395,136 @@ async function markOnFlatField(file, meta) {
 const MARK_GAIN = 0.8;
 const UNSURE_GAIN = 0.3;
 
-const names = publishedImages();
-const missingFile = [];
-const unmarked = [];
-const unsure = [];
-const cropped = [];
-const noBaseline = [];
-let checked = 0;
+/**
+ * Audit one image set against the mark it is supposed to carry.
+ *
+ * Returns the number of defects so the caller can decide the exit code once, after both
+ * sets have been reported — a CI run that stops at the Chinese set would hide whatever is
+ * wrong with the English one, and the English set is the newer and less proven of the two.
+ */
+async function auditSet({ dir: DIR, logo: LOGO, label }) {
+    const names = publishedImages(DIR);
+    const missingFile = [];
+    const unmarked = [];
+    const unsure = [];
+    const cropped = [];
+    const noBaseline = [];
+    let checked = 0;
 
-for (const [name, owner] of names) {
-  const file = join(DIR, name);
-  if (!existsSync(file)) {
-    missingFile.push(`${name}（${owner}）`);
-    continue;
-  }
-  let meta;
-  try {
-    meta = await sharp(file).metadata();
-  } catch (error) {
-    missingFile.push(`${name}（读不到：${error.message?.slice(0, 40)}）`);
-    continue;
-  }
-  checked += 1;
-
-  /*
-    Only PLATES have to be square.
-
-    The first version of this audit flagged all 701 non-square images and that was the wrong
-    question. A scene — a corridor, a door in a hotel lobby — is a photograph, and a 1:1
-    frame crops a photograph the way any crop does: it loses some room, not some product.
-    scripts/square-rayen-plates.mjs makes exactly this distinction and leaves 555 scenes
-    full-bleed on purpose. Reporting those as defects would bury the handful that matter
-    under seven hundred that do not, which is how a real finding gets ignored.
-
-    A plate is a part cut out on paper, and cropping one takes metal — the top of a 1200mm
-    handle, the fixing at its foot. Those are the ones counted here.
-  */
-  const long = Math.max(meta.width, meta.height);
-  const short = Math.min(meta.width, meta.height);
-  const loss = (long - short) / long;
-  if (loss > SQUARE_TOLERANCE && (await isPlate(file, meta.width, meta.height))) {
-    cropped.push({ name, owner, size: `${meta.width}×${meta.height}`, loss: +(loss * 100).toFixed(1) });
-  }
-
-  /* The same image before the mark went on. Without it there is nothing to difference. */
-  const origin = join(root, "public", "images", "products", name);
-  if (!existsSync(origin)) {
-    noBaseline.push({ name, owner, contrast: 0 });
-    continue;
-  }
-  let gain;
-  try {
-    gain = await markDelta(file, meta, origin);
-  } catch {
-    gain = null;
-  }
-  /*
-    A padded plate puts its mark on margin that did not exist before, so there is no "before"
-    to difference — 207 of 822 came back unverifiable that way. But that margin is flat by
-    construction: scripts/square-rayen-plates.mjs fills it with the plate's own field colour.
-    On a flat field the simple question works and works well — it only ever failed on busy
-    photographs, which are exactly the ones markDelta can answer. So each method is used
-    where it is valid, rather than one method stretched over both.
-  */
-  if (gain === null) {
+  for (const [name, owner] of names) {
+    const file = join(DIR, name);
+    if (!existsSync(file)) {
+      missingFile.push(`${name}（${owner}）`);
+      continue;
+    }
+    let meta;
     try {
-      gain = await markOnFlatField(file, meta);
+      meta = await sharp(file).metadata();
+    } catch (error) {
+      missingFile.push(`${name}（读不到：${error.message?.slice(0, 40)}）`);
+      continue;
+    }
+    checked += 1;
+
+    /*
+      Only PLATES have to be square.
+
+      The first version of this audit flagged all 701 non-square images and that was the wrong
+      question. A scene — a corridor, a door in a hotel lobby — is a photograph, and a 1:1
+      frame crops a photograph the way any crop does: it loses some room, not some product.
+      scripts/square-rayen-plates.mjs makes exactly this distinction and leaves 555 scenes
+      full-bleed on purpose. Reporting those as defects would bury the handful that matter
+      under seven hundred that do not, which is how a real finding gets ignored.
+
+      A plate is a part cut out on paper, and cropping one takes metal — the top of a 1200mm
+      handle, the fixing at its foot. Those are the ones counted here.
+    */
+    const long = Math.max(meta.width, meta.height);
+    const short = Math.min(meta.width, meta.height);
+    const loss = (long - short) / long;
+    if (loss > SQUARE_TOLERANCE && (await isPlate(file, meta.width, meta.height))) {
+      cropped.push({ name, owner, size: `${meta.width}×${meta.height}`, loss: +(loss * 100).toFixed(1) });
+    }
+
+    /* The same image before the mark went on. Without it there is nothing to difference. */
+    const origin = join(root, "public", "images", "products", name);
+    if (!existsSync(origin)) {
+      noBaseline.push({ name, owner, contrast: 0 });
+      continue;
+    }
+    let gain;
+    try {
+      gain = await markDelta(file, meta, origin, LOGO);
     } catch {
       gain = null;
     }
-  }
-  if (gain === null) {
-    noBaseline.push({ name, owner, contrast: 0 });
-    continue;
+    /*
+      A padded plate puts its mark on margin that did not exist before, so there is no "before"
+      to difference — 207 of 822 came back unverifiable that way. But that margin is flat by
+      construction: scripts/square-rayen-plates.mjs fills it with the plate's own field colour.
+      On a flat field the simple question works and works well — it only ever failed on busy
+      photographs, which are exactly the ones markDelta can answer. So each method is used
+      where it is valid, rather than one method stretched over both.
+    */
+    if (gain === null) {
+      try {
+        gain = await markOnFlatField(file, meta, LOGO);
+      } catch {
+        gain = null;
+      }
+    }
+    if (gain === null) {
+      noBaseline.push({ name, owner, contrast: 0 });
+      continue;
+    }
+
+    if (gain < UNSURE_GAIN) {
+      unmarked.push({ name, owner, reason: `打标前后角落没有变化（增益 ${gain.toFixed(1)}）` });
+    } else if (gain < MARK_GAIN) {
+      unsure.push({ name, owner, contrast: +gain.toFixed(1) });
+    }
   }
 
-  if (gain < UNSURE_GAIN) {
-    unmarked.push({ name, owner, reason: `打标前后角落没有变化（增益 ${gain.toFixed(1)}）` });
-  } else if (gain < MARK_GAIN) {
-    unsure.push({ name, owner, contrast: +gain.toFixed(1) });
+  if (JSON_OUT) {
+    writeFileSync(
+      join(root, "tmp", `rayen-image-audit-${DIR.endsWith("-en") ? "en" : "zh"}.json`),
+      `${JSON.stringify({ checked, unmarked, unsure, cropped, missingFile }, null, 2)}\n`,
+      "utf8",
+    );
   }
-}
 
-if (JSON_OUT) {
-  writeFileSync(
-    join(root, "tmp", "rayen-image-audit.json"),
-    `${JSON.stringify({ checked, unmarked, unsure, cropped, missingFile }, null, 2)}\n`,
-    "utf8",
+  console.log(`
+二次审查 ${label}：${checked} 张在售图（产品图 + 类目封面）`);
+  console.log(
+    `  雷茵标：${checked - unmarked.length - unsure.length - noBaseline.length} 张确认可见，` +
+      `${unsure.length} 张存疑，${unmarked.length} 张没有`,
   );
-}
+  console.log(`  缩放：${checked - cropped.length} 张是正方形，${cropped.length} 张会被 1:1 画框裁掉`);
 
-console.log(`二次审查：${checked} 张在售图（产品图 + 类目封面）`);
-console.log(
-  `  雷茵标：${checked - unmarked.length - unsure.length - noBaseline.length} 张确认可见，` +
-    `${unsure.length} 张存疑，${unmarked.length} 张没有`,
-);
-console.log(`  缩放：${checked - cropped.length} 张是正方形，${cropped.length} 张会被 1:1 画框裁掉`);
-
-if (missingFile.length) {
-  console.log(`\n⚠ ${missingFile.length} 张产品记录引用了但文件不在：`);
-  for (const line of missingFile.slice(0, 20)) console.log(`   ${line}`);
-}
-if (unmarked.length) {
-  console.log(`\n✖ ${unmarked.length} 张没有雷茵标：`);
-  for (const row of unmarked.slice(0, 30)) console.log(`   ${row.name}（${row.owner}）— ${row.reason}`);
-}
-if (unsure.length) {
-  console.log(`\n? ${unsure.length} 张存疑，建议人眼看一下（角落本身就有花纹时会这样）：`);
-  for (const row of unsure.slice(0, 30)) console.log(`   ${row.name}（${row.owner}）对比度 ${row.contrast}`);
-}
-if (cropped.length) {
-  console.log(`\n✖ ${cropped.length} 张不是正方形，1:1 画框会裁掉长边的一部分：`);
-  for (const row of cropped.slice(0, 30)) {
-    console.log(`   ${row.name}（${row.owner}）${row.size} — 裁掉 ${row.loss}%`);
+  if (missingFile.length) {
+    console.log(`\n⚠ ${missingFile.length} 张产品记录引用了但文件不在：`);
+    for (const line of missingFile.slice(0, 20)) console.log(`   ${line}`);
   }
+  if (unmarked.length) {
+    console.log(`\n✖ ${unmarked.length} 张没有雷茵标：`);
+    for (const row of unmarked.slice(0, 30)) console.log(`   ${row.name}（${row.owner}）— ${row.reason}`);
+  }
+  if (unsure.length) {
+    console.log(`\n? ${unsure.length} 张存疑，建议人眼看一下（角落本身就有花纹时会这样）：`);
+    for (const row of unsure.slice(0, 30)) console.log(`   ${row.name}（${row.owner}）对比度 ${row.contrast}`);
+  }
+  if (cropped.length) {
+    console.log(`\n✖ ${cropped.length} 张不是正方形，1:1 画框会裁掉长边的一部分：`);
+    for (const row of cropped.slice(0, 30)) {
+      console.log(`   ${row.name}（${row.owner}）${row.size} — 裁掉 ${row.loss}%`);
+    }
+  }
+
+  return unmarked.length + cropped.length + missingFile.length;
 }
 
-if (CHECK && (unmarked.length || cropped.length || missingFile.length)) process.exit(1);
+let defects = 0;
+for (const set of SETS) {
+  defects += await auditSet(set);
+}
+if (CHECK && defects) process.exit(1);

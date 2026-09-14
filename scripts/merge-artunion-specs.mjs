@@ -132,7 +132,46 @@ function parseInstallation(raw) {
       rows.push({ label: DOOR_TYPE_LABEL[doorType], value: part.slice(doorType.length).trim() });
     }
   }
-  return rows.filter((row) => row.value);
+  return rows.filter((row) => row.value).map(englishOnly).filter(Boolean);
+}
+
+/*
+  A value that still contains Japanese must not reach a product record.
+
+  Two got through and shipped: T2522 carried 「下枠及び戸先側：φ10mm　吊元側：φ14mm」 and T790
+  「外部側φ12mm　内部側φ8mm」. The parser above strips only the LABEL — 取付穴 — and hands the
+  rest over whole, so any value UNION writes as a sentence rather than a bare dimension
+  arrives in Japanese and is then translated by nobody: the Chinese mirror passes dimensions
+  through untouched (the right rule — "φ12mm" needs no translation) and the English side
+  never looks at it. A Chinese buyer reading Japanese on a Chinese page concludes the page
+  was copied from somewhere else, which is the impression this whole site is built to avoid.
+
+  So the sentences UNION actually writes are translated here, and anything else containing
+  kana or kanji is DROPPED and reported rather than published. A missing row costs one line;
+  a row in the wrong language costs the reader's confidence in the entire table.
+*/
+const VALUE_PHRASES = [
+  ["下枠及び戸先側", "bottom rail and leading edge"],
+  ["吊元側", "hinge side"],
+  ["外部側", "outside"],
+  ["内部側", "inside"],
+  ["戸先側", "leading edge"],
+];
+
+const JAPANESE = /[぀-ヿ一-鿿]/;
+const droppedJapanese = [];
+
+function englishOnly(row) {
+  let value = row.value;
+  for (const [jp, en] of VALUE_PHRASES) {
+    value = value.replace(new RegExp(`${jp}\\s*[：:]?\\s*`, "g"), `${en} `);
+  }
+  value = value.replace(/\s+/g, " ").trim();
+  if (JAPANESE.test(value)) {
+    droppedJapanese.push(`${row.label} = ${row.value}`);
+    return null;
+  }
+  return { ...row, value };
 }
 
 /** Every label this script owns — so a re-run can replace its own rows instead of duplicating. */
@@ -249,3 +288,11 @@ console.log(
   `\n${DRY ? "（试运行，未写入）" : `已写入 ${written} 个产品`}　` +
     `中心距双向印证 ${count("confirmed")}，唯一长度 ${count("sole")}，无法定位 ${count("ambiguous")}`,
 );
+
+if (droppedJapanese.length) {
+  console.log(
+    `\n⚠ ${droppedJapanese.length} 条规格值仍含日文，已丢弃未写入（宁可少一行，不要一行读不懂的）：`,
+  );
+  for (const line of [...new Set(droppedJapanese)]) console.log(`   ${line}`);
+  console.log("   要保留就在 VALUE_PHRASES 里补一条译法，再重跑。");
+}
