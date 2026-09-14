@@ -1,6 +1,34 @@
 import Link from "next/link";
 import { publishedProducts } from "@/data/products";
-import studies from "@/data/generated/product-studies.json";
+import rawStudies from "@/data/generated/product-studies.json";
+
+/**
+ * The generated studies, with the caption fields declared optional.
+ *
+ * TypeScript infers a JSON import's type from the file's current CONTENTS, so when the
+ * bilingual mirror regenerated product-studies.json on 2026-09-14 without `captionEn` /
+ * `captionEs`, the inferred type lost them and `tsc` began reporting "property does not
+ * exist" — on main, blocking every deploy, for a component whose runtime behaviour was
+ * never broken: the caption read has always had a hard-coded fallback behind `||`.
+ *
+ * Declaring them optional says what was true all along. When the generator starts writing
+ * captions again the component uses them with no further change; while it does not, the
+ * fallback answers, which is what the `||` was for.
+ */
+interface ProductStudy {
+  id: string;
+  itemId: string;
+  slugs: string[];
+  src: string;
+  small: string;
+  width: number;
+  height: number;
+  kind: string;
+  captionEn?: string;
+  captionEs?: string;
+}
+
+const studies = rawStudies as ProductStudy[];
 
 export function ProductStudies({ locale }: { locale: "en" | "es" }) {
   const es = locale === "es";
@@ -26,11 +54,11 @@ export function ProductStudies({ locale }: { locale: "en" | "es" }) {
           const models = study.slugs.map(slug => publishedProducts.find(p => p.slug === slug)).filter(p => p !== undefined);
           const shown = study.itemId === "01" ? models.filter(p => p.model !== "9080E") : models;
           const title = shown.map(p => p.model).join(" / ");
-          const caption = study.itemId === "01"
+          const caption = (es ? study.captionEs : study.captionEn) || (study.itemId === "01"
             ? es ? "307 con caja de cerradura 072 y manija 015. La ficha del 307 también admite la manija 9080E. La longitud del cilindro se selecciona según el espesor de la puerta." : "307 with lock case 072 and handle 015. The 307 specification also lists handle 9080E. Cylinder length is selected for the door thickness."
             : study.itemId === "00"
               ? es ? "Modelos individuales para selección. Confirme la compatibilidad y la configuración completa antes de realizar el pedido; la composición no representa una escala de instalación." : "Individual models for selection. Confirm compatibility and the complete configuration before ordering; the composition does not represent installation scale."
-              : es ? "Fotografía del producto de nuestro catálogo en una composición de estudio." : "Catalogue product photograph in a studio composition.";
+              : es ? "Fotografía del producto de nuestro catálogo en una composición de estudio." : "Catalogue product photograph in a studio composition.");
           return (
             <figure key={study.id} id={index === 0 ? "material" : index === 2 ? "selection" : undefined} className={index === 2 ? "scroll-mt-128 lg:col-span-2" : "scroll-mt-128"}>
               <a href={study.src} target="_blank" rel="noreferrer" className="block focus-visible:outline-2 focus-visible:outline-offset-4" aria-label={`${es ? "Ampliar imagen de" : "Enlarge image of"} ${title}`}>

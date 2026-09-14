@@ -48,7 +48,7 @@ def slab(name, size, location, material):
 
 style = cfg.get('style', 'stone')
 colors = {'stone': (.69,.65,.58), 'box': (.13,.15,.16), 'white': (.90,.90,.88), 'technical': (.76,.77,.76), 'oak': (.30,.23,.17)}
-slab('Studio surface', (5,4,.08), (0,0,-.10), matte('Surface', colors[style]))
+slab('Studio surface', (5,4,.08), (0,0,-.045), matte('Surface', colors[style]))
 if style == 'stone':
     slab('Stone edge', (.14,3,.05), (-1.65,0,-.035), matte('Stone edge', (.37,.35,.30)))
     # Keep the title clear; no prop crosses the image border.
@@ -65,7 +65,8 @@ def text(body, x, y, size=.043, color=(.075,.075,.065)):
     curve.space_character = 1.1
     ob = bpy.data.objects.new(body, curve)
     bpy.context.collection.objects.link(ob)
-    ob.location = (x,y,.045)
+    ob.location = (x,y,.13)
+    ob.visible_shadow = False
     mat = bpy.data.materials.new(body+' ink')
     mat.use_nodes = True
     nodes = mat.node_tree.nodes
@@ -126,7 +127,7 @@ for i, item in enumerate(cfg['photos']):
         slab(item['model']+' mount', (dw+.04,dh+.11,.014), (x,y-.022,.013), paper)
     elif style == 'box':
         slab(item['model']+' sample recess', (dw+.09,dh+.17,.012), (x,y-.02,.008), matte(item['model']+' felt', (.24,.25,.23)))
-    bpy.ops.mesh.primitive_plane_add(size=1, location=(x,y,.022))
+    bpy.ops.mesh.primitive_plane_add(size=1, location=(x,y,.002 if item.get('texture') and style!='box' else .022))
     photo = bpy.context.object
     photo.name = 'REAL PHOTO / '+item['model']
     photo.scale = (dw,dh,1)
@@ -134,7 +135,8 @@ for i, item in enumerate(cfg['photos']):
     photo['source_sha256'] = digest
     photo['source'] = str(source)
     photo['is_product_cad'] = False
-    text(item['model'], x-dw/2, y-dh/2-.04, min(.035,dw/12))
+    label = item.get('displayLabel', item['model'])
+    text(label, x-dw/2, y-dh/2-.04, min(.035,dw/max(12,len(label)*.68)))
     reports.append({'model':item['model'],'sha256':digest,'crop':[left,top,width,height], 'exactTexturePixels':True,'reviewedAlpha':bool(item.get('texture'))})
 
 ink = (.90,.88,.81) if style in ['box','oak'] else (.08,.08,.07)

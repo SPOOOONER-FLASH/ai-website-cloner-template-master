@@ -14,7 +14,8 @@
  * someone opens the search dialog, so 431 products' worth of text never lands in the
  * main bundle for the majority of visitors who never search.
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, mkdirSync, statSync } from "node:fs";
+import { writeFileAtomic } from "./lib/write-atomic.mjs";
 
 const OUT = "public/search-index.json";
 
@@ -169,7 +170,9 @@ for (const [title, subtitle, href, terms] of PAGES) {
 }
 
 mkdirSync("public", { recursive: true });
-writeFileSync(OUT, JSON.stringify(entries));
+
+/* Atomic: see scripts/lib/write-atomic.mjs for why a plain write fails here. */
+writeFileAtomic(OUT, JSON.stringify(entries));
 
 const kb = Math.round(statSync(OUT).size / 1024);
 const byType = entries.reduce((acc, e) => ({ ...acc, [e.type]: (acc[e.type] ?? 0) + 1 }), {});

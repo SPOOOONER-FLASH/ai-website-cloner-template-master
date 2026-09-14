@@ -43,6 +43,21 @@ export default function Home() {
       </div>
 
       <div className="modules">
+        {/*
+          FIRST MODULE AFTER THE FACTS STRIP, by the client's instruction of 2026-09-14:
+          a visitor should meet the recommended shelf before anything else.
+
+          It reads well there for a reason beyond placement. The strip above states what
+          the factory is — record count, categories, year, certification. This answers the
+          question that follows immediately from it: of all that, what are other people
+          actually buying? The order is ninety days of real enquiries from the client's own
+          Alibaba back office rather than a shortlist we drew up, and the two disagree —
+          307 had the fewest impressions on that sheet and the most enquiries. See
+          src/data/demand-showcase.ts for why the counts themselves stay off the page.
+        */}
+        <DemandShowcase />
+        <Spacer heights={content.spacers.s96} />
+
         <ArgentinaAr4Showcase />
         <Spacer heights={content.spacers.s96} />
         {/*
@@ -65,15 +80,6 @@ export default function Home() {
           client's own Alibaba storefront while this site said nothing about it.
         */}
         <FeatureColumns />
-
-        {/*
-          Demand-led, and placed after the columns: the columns answer "what can you
-          explain", this answers "what are other people asking for". The order is ninety
-          days of real enquiries from the client's own Alibaba back office, not a
-          shortlist we drew up — see src/data/demand-showcase.ts for why the counts
-          themselves stay off the page.
-        */}
-        <DemandShowcase />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

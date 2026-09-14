@@ -24,7 +24,7 @@ scene('curated-9004-mechanism','box',two(p(LE,2),p(LE,3)),'9004S / COMPONENT DET
 scene('curated-lc04-dimensions','technical',two(p(LC,0),p(LC,2)),'LC04 85 / 60 / PUBLISHED GEOMETRY','Factory source photograph and drawing - consult the model specification'),
 scene('curated-lc04-reverse','stone',one(p(LC,3)),'LC04 / REVERSE VIEW','Original catalogue view - confirm handing for the order'),
 scene('curated-sn-dimensions','technical',one(p(SN,1)),'70SN / DIMENSION REFERENCE','Original annotated catalogue photograph'),
-scene('curated-finish-models','white',three(p('587-pbet-light-duty-cylindrical-lock'),p('587-mbet-light-duty-cylindrical-lock'),p('587-sset-light-duty-cylindrical-lock')),'587 / DISTINCT FINISH REFERENCES','Separate catalogue models - not a mixed-finish set'),
+scene('curated-finish-models','white',one(p('587-sset-light-duty-cylindrical-lock',1)),'587 SSET / MODEL & FINISH','One catalogue model, one finish / Read the full reference'),
 scene('curated-lock-comparison','white',two(p(LC,4),p('lc04-85-70-lock-case')),'LC04 / MODEL IDENTIFICATION','Separate catalogue references - compare the published backset'),
 scene('curated-catalogue-range','oak',three(p('311-panic-exit-device'),p(KN),p(LE)),'HYDE / FROM THE CATALOGUE','Original products - different families, individual selections'),
 scene('curated-order-dimensions','technical',two(p(LE,0),p(SN,1)),'PRODUCT / FINISH / DIMENSIONS','Identify each part before confirming a door configuration'),
@@ -37,7 +37,7 @@ const news={
 'mortise-lock-backset-and-centre-distance-guide':['curated-lc04-dimensions','LC04 85/60 catalogue photograph and its original dimension drawing.','Fotografía del LC04 85/60 y su plano de cotas original.'],
 'handing-left-right-and-universal':['curated-lc04-reverse','Original reverse view of the LC04 lock case; handing must be confirmed for the order.','Vista posterior original de la cerradura LC04; la mano debe confirmarse para el pedido.'],
 'euro-cylinder-length-and-split':['curated-sn-dimensions','70SN original annotated catalogue photograph.','Fotografía original acotada del cilindro 70SN.'],
-'reading-door-hardware-model-numbers':['curated-finish-models','Original photographs of three separately identified 587 finish models.','Fotografías originales de tres modelos 587 con acabados identificados por separado.'],
+'reading-door-hardware-model-numbers':['curated-finish-models','Original photograph of model 587 SSET in its stainless steel finish.','Fotografía original del modelo 587 SSET con acabado de acero inoxidable.'],
 'cross-referencing-a-lock-you-already-buy':['curated-lock-comparison','LC04 85/60 and LC04 85/70 shown as separate model references.','LC04 85/60 y LC04 85/70 como referencias de modelo separadas.'],
 'six-values-an-order-needs':['curated-order-dimensions','9004S product photograph with an original 70SN dimension reference, shown as individual selections.','Fotografía del 9004S y referencia de cotas original del 70SN, como selecciones individuales.'],
 'what-documents-you-can-actually-get':['curated-document-reference','Original 607 SSET and LC04 catalogue dimension drawings.','Planos de cotas originales del catálogo de 607 SSET y LC04.']

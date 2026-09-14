@@ -1,0 +1,3 @@
+import fs from 'node:fs';import sharp from 'sharp';
+const base='docs/design-references/2026-09-14-curated-hardware';const scenes=JSON.parse(fs.readFileSync(base+'/scenes.json'));
+for(let page=0;page<3;page++){const batch=scenes.slice(page*5,page*5+5), comp=[];for(let i=0;i<batch.length;i++){const input=await sharp(base+'/'+batch[i].id+'.png').resize(600,400).png().toBuffer();comp.push({input,left:(i%2)*600,top:Math.floor(i/2)*400});}await sharp({create:{width:1200,height:1200,channels:3,background:'white'}}).composite(comp).png().toFile(base+'/review-grid-'+page+'.png');}console.log('Review grids ready');

@@ -45,6 +45,10 @@ export default function SpanishHomePage() {
         <SiteFacts facts={siteFacts("es")} heading={siteFactsHeading("es")} />
       </div>
       <div className="modules">
+        {/* Same position as the English page. See there for why it leads. */}
+        <DemandShowcase locale="es" />
+        <Spacer heights={content.spacers.s96} />
+
         <ArgentinaAr4Showcase locale="es" />
         <Spacer heights={content.spacers.s96} />
         {/*
@@ -56,15 +60,6 @@ export default function SpanishHomePage() {
 
         {/* Same rail, Spanish. See the English page for why it sits here. */}
         <FeatureColumns locale="es" />
-
-        {/*
-          Demand-led, and placed after the columns: the columns answer "what can you
-          explain", this answers "what are other people asking for". The order is ninety
-          days of real enquiries from the client's own Alibaba back office, not a
-          shortlist we drew up — see src/data/demand-showcase.ts for why the counts
-          themselves stay off the page.
-        */}
-        <DemandShowcase locale="es" />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />
