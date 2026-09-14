@@ -42,11 +42,11 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
+      "label": "Fixing hole (glass door)",
       "value": "φ16mm"
     },
     {
-      "label": "Fixing hole (flush door)",
+      "label": "Fixing hole (timber door)",
       "value": "φ10mm"
     }
   ],
@@ -55,7 +55,9 @@
     "Satin stainless with timber",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g2750-glass-door-handle.webp",

@@ -38,8 +38,12 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
+      "label": "Fixing hole (glass door)",
       "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -47,7 +51,9 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g27-glass-door-handle.webp",

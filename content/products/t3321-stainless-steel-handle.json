@@ -55,7 +55,10 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t3321-stainless-steel-handle.webp",

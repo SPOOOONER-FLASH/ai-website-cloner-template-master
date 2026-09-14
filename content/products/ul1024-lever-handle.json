@@ -46,7 +46,10 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul1024-lever-handle.webp",

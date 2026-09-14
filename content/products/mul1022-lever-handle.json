@@ -20,7 +20,10 @@
     "Antique copper",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/mul1022-lever-handle.webp",

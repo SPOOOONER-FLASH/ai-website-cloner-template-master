@@ -43,11 +43,11 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ12mm"
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     },
     {
-      "label": "Fixing hole (flush door)",
+      "label": "Fixing hole (timber door)",
       "value": "φ10mm"
     }
   ],
@@ -56,7 +56,9 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g685-glass-door-handle.webp",

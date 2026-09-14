@@ -41,12 +41,12 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ10mm"
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     },
     {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -55,7 +55,10 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t1050-stainless-steel-handle.webp",

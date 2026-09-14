@@ -5,8 +5,8 @@
     "对不上就说明上游重新生成过，需要重新打 —— 用布尔开关记「打过了」，",
     "去水印那一步一重跑就失效，而每次都打会把标一层层叠上去。"
   ],
-  "ranAt": "2026-09-14T09:30:45.309Z",
-  "count": 1150,
+  "ranAt": "2026-09-14T12:17:11.389Z",
+  "count": 1171,
   "stamped": {
     "023-etan-anti-pick-panic-exit-device.webp": "089e7a0090fdcdf5c3cf446594ad0898313b9f4729bc12d699dd321d621a4d45",
     "317-cold-room-push-bar-exit-device.webp": "06b2beb70642759b75f578959395d880af401de9d19d639efceb0e22d64cd5cf",
@@ -1157,6 +1157,27 @@
     "t-1076-overhead-door-closer.webp": "57bd9bb21ffa54b5a432ca953b93fa0b1b8f57e019b9b57870d75f00bc21e6e4",
     "t-1077-overhead-door-closer.webp": "9bc6cf936f7e4d47bf7c7df22962a068c1b32cbefeb75d69a346e2fe5e84e73d",
     "t-1078-overhead-door-closer.webp": "7fe1c6e58c92c99197630a0827324be2ffb1b8daa9111fc2617ce2104379a0fa",
-    "t-1079-overhead-door-closer.webp": "fe586509d7f00df6b4f8fd87e1979d200fadac057e842a24af87338abce378d5"
+    "t-1079-overhead-door-closer.webp": "fe586509d7f00df6b4f8fd87e1979d200fadac057e842a24af87338abce378d5",
+    "g2751-glass-door-handle-2.webp": "90a6b4a296446321ac7af1c54787f6fd339762c9a185778dfe130e275518e141",
+    "g2751-glass-door-handle-3.webp": "dbecce0d03485bb9f9a63ad9362d04cc9a8489f42b056e445d2dab54d3c84d7f",
+    "g2751-glass-door-handle-4.webp": "0c2a5eb7e769c418a70b891b0c97a61f95fd2a65655005dcacef4884bf1180fc",
+    "g2751-glass-door-handle-5.webp": "fe1cbf09ee5061491091c058a337c4906cbc00faa77520173087decf2fcc1b55",
+    "g2751-glass-door-handle-6.webp": "ad997922faad4d49dd2d8abbea4f4bce7d416ca5db15896b390e6b2b24586988",
+    "g2751-glass-door-handle-7.webp": "0b7c4447b307b8b28ddd25976cbef800793ac2356dc7dc67edb57aa5977c6469",
+    "g2751-glass-door-handle.webp": "0b7b6e21f89a482d14c83a7022421c144bbeb31faeb3de32b80b391254cf9a29",
+    "t2751-stainless-steel-handle-10.webp": "2d98f5c1f4206365d06687778b7e9ebbe050472ef5d414d59ffb2766644e6c9d",
+    "t2751-stainless-steel-handle-2.webp": "f1504c34e3ffd2baf39983f8bcafaec7f15f28b613233618dcd88a489588169a",
+    "t2751-stainless-steel-handle-3.webp": "fbc55c58bb2c6aa693a02a193693567f978c5f7f11840efe3fa32020254981b7",
+    "t2751-stainless-steel-handle-4.webp": "39e0b8781d086d020b0e0ccb6d2a0849663fa540bb220c7118f51b109f482743",
+    "t2751-stainless-steel-handle-5.webp": "92d53d6551d02a75f5dd58f0661266144a96adb80248881b7b6b0068879278c9",
+    "t2751-stainless-steel-handle-6.webp": "3521b1c8188e9e2e0b7ee3a02e12ef0b2822f91655851900f48b0ff7cf5aef8a",
+    "t2751-stainless-steel-handle-7.webp": "7818f86455663c1131dacff3fac78ed7632e5f974b832e7c5b162407660ad7e9",
+    "t2751-stainless-steel-handle-8.webp": "dc5a9fb01c0eb6dbc7efc1028a66219b0b8e7bf7b448da23118697a3e17013b1",
+    "t2751-stainless-steel-handle-9.webp": "2ce35025c1d81a4286fc5aed9d3da59ac9908d10649e0d7638f0ab8055333601",
+    "t2751-stainless-steel-handle.webp": "21f6b2fb7eeefca24ef011fc6aa9d35aa1c8af24d0bf472fda4559f2d0ba8bcb",
+    "ul750-lever-handle-2.webp": "c03db44eaefabf187653e35564c5026d3d75fa501298f7254199cc5b9bd2d4ab",
+    "ul750-lever-handle-3.webp": "9a8327d198ebc2ef0ffb94ad8746605270d2eea5ca94eafa8903ef1ae985b9d8",
+    "ul750-lever-handle-4.webp": "d05ce24782c3ef591afd912cac2237e582c3e07a5b4281259658a05bd56a2764",
+    "ul750-lever-handle.webp": "fbb2a49275ba4fae7b8c7f0529790bc34c10236774ce81acde8886d21b8da1a2"
   }
 }

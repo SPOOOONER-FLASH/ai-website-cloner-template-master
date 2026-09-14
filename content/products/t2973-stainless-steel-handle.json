@@ -17,7 +17,10 @@
   "finishes": [
     "Satin stainless"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t2973-stainless-steel-handle.webp",

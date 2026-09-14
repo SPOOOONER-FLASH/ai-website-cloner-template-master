@@ -55,7 +55,10 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/dz-2039-floor-spring.webp",

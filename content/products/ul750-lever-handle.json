@@ -1,0 +1,82 @@
+{
+  "model": "UL750",
+  "slug": "ul750-lever-handle",
+  "name": "Lever Handle",
+  "nameZh": "执手",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "styleFamily": "2751",
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel lever handle, 128mm lever.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "128mm"
+    },
+    {
+      "label": "Spindle centre",
+      "value": "P=34mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø53mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "Ø22mm"
+    },
+    {
+      "label": "Projection",
+      "value": "60mm"
+    },
+    {
+      "label": "Backset",
+      "value": "51mm"
+    },
+    {
+      "label": "Door cutout",
+      "value": "Ø46mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/ul750-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "UL750 Lever Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/ul750-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "UL750 Lever Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/ul750-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "UL750 Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/ul750-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "UL750 Lever Handle, view 4"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "UL750 Lever Handle | RAYEN",
+  "seoDescription": "Stainless Steel lever handle, 128mm lever.",
+  "nameEs": "Manilla de palanca"
+}

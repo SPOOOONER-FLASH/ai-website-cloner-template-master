@@ -16,7 +16,10 @@
   "finishes": [
     "Satin stainless"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul1066-lever-handle.webp",

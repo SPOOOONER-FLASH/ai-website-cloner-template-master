@@ -111,6 +111,16 @@ const EDITS = [
     canvas: [544, 532],
     regions: [{ x: 175, y: 267, w: 48, h: 17, text: "截面形状", size: 11 }],
   },
+  {
+    file: "ul750-lever-handle-2.webp",
+    canvas: [544, 532],
+    /*
+      「Ø46切カキ」 — the door cut-out for the lever spindle. 切カキ is the cut-out itself, so
+      the number is useless to a Chinese joiner without it: this is translated, not erased.
+      The leader line underneath is left alone; only the text box is painted.
+    */
+    regions: [{ x: 236, y: 430, w: 112, h: 26, text: "开孔 Ø46", size: 15 }],
+  },
 ];
 
 const FONT = "Microsoft YaHei, Noto Sans SC, SimHei, sans-serif";

@@ -38,19 +38,22 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
-    },
-    {
       "label": "Fixing hole (glass door)",
       "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t2973a-stainless-steel-handle.webp",
