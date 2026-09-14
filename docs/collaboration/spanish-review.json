@@ -167,7 +167,7 @@
    "en": "Fixing screw",
    "es": "",
    "zh": "",
-   "uses": 58,
+   "uses": 93,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -175,7 +175,7 @@
    "en": "Fixing hole",
    "es": "",
    "zh": "",
-   "uses": 58,
+   "uses": 92,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -183,7 +183,7 @@
    "en": "Fixing hole (glass door)",
    "es": "",
    "zh": "",
-   "uses": 33,
+   "uses": 48,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -191,7 +191,111 @@
    "en": "Fixing hole (flush door)",
    "es": "",
    "zh": "",
+   "uses": 42,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Max door weight",
+   "es": "",
+   "zh": "",
+   "uses": 30,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Variants",
+   "es": "",
+   "zh": "",
+   "uses": 29,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Max door width (spindle to edge)",
+   "es": "",
+   "zh": "",
+   "uses": 29,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Double action",
+   "es": "",
+   "zh": "",
    "uses": 25,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "90° hold-open",
+   "es": "",
+   "zh": "",
+   "uses": 25,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Two-stage closing valve",
+   "es": "",
+   "zh": "",
+   "uses": 19,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Closing force",
+   "es": "",
+   "zh": "",
+   "uses": 19,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Min door thickness",
+   "es": "",
+   "zh": "",
+   "uses": 15,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Body size",
+   "es": "",
+   "zh": "",
+   "uses": 9,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Spindle centre",
+   "es": "",
+   "zh": "",
+   "uses": 9,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Door leaf thickness",
+   "es": "",
+   "zh": "",
+   "uses": 8,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Minimum order",
+   "es": "",
+   "zh": "",
+   "uses": 6,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Glass thickness",
+   "es": "",
+   "zh": "",
+   "uses": 6,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -204,10 +308,34 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Spindle centre",
+   "en": "Pairs with",
    "es": "",
    "zh": "",
-   "uses": 5,
+   "uses": 4,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Set configuration",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Hold-open range",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Closing valve",
+   "es": "",
+   "zh": "",
+   "uses": 4,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -220,10 +348,26 @@
   },
   {
    "kind": "规格标签 Spec label",
+   "en": "Grip reach",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
    "en": "Wall cutout",
    "es": "",
    "zh": "",
    "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Cut-out",
+   "es": "",
+   "zh": "",
+   "uses": 2,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -269,6 +413,22 @@
   {
    "kind": "规格标签 Spec label",
    "en": "Centre distances",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Plate length",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Series",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -372,7 +532,23 @@
   },
   {
    "kind": "规格标签 Spec label",
+   "en": "Max door thickness",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
    "en": "Grip width",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Fixing hole (timber door)",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -383,7 +559,23 @@
    "en": "35mm to 45mm adjustable",
    "es": "",
    "zh": "35–45mm 可调",
-   "uses": 105,
+   "uses": 106,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "φ12mm",
+   "es": "",
+   "zh": "",
+   "uses": 61,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "φ8mm",
+   "es": "",
+   "zh": "",
+   "uses": 50,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -396,14 +588,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "φ12mm",
-   "es": "",
-   "zh": "",
-   "uses": 42,
-   "status": "缺译，页面上仍是英文"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "60mm / 70mm adjustable",
    "es": "",
    "zh": "60/70mm 可调",
@@ -412,18 +596,26 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "φ8mm",
+   "en": "φ10mm",
    "es": "",
    "zh": "",
-   "uses": 33,
+   "uses": 40,
    "status": "缺译，页面上仍是英文"
   },
   {
    "kind": "规格值 Spec value",
-   "en": "φ10mm",
+   "en": "φ16mm",
    "es": "",
    "zh": "",
-   "uses": 25,
+   "uses": 30,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=425mm",
+   "es": "",
+   "zh": "",
+   "uses": 27,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -436,27 +628,11 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "P=425mm",
-   "es": "",
-   "zh": "",
-   "uses": 18,
-   "status": "缺译，页面上仍是英文"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
    "uses": 17,
    "status": "由「表面处理」表统一处理"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "φ16mm",
-   "es": "",
-   "zh": "",
-   "uses": 16,
-   "status": "缺译，页面上仍是英文"
   },
   {
    "kind": "规格值 Spec value",
@@ -492,10 +668,34 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "P=34mm",
+   "es": "",
+   "zh": "",
+   "uses": 12,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "SS",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
    "uses": 11,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "EN3 / EN4",
+   "es": "",
+   "zh": "",
+   "uses": 10,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≥42mm",
+   "es": "",
+   "zh": "",
+   "uses": 9,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -508,10 +708,10 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "P=34mm",
+   "en": "≤800mm / ≤1000mm",
    "es": "",
    "zh": "",
-   "uses": 8,
+   "uses": 7,
    "status": "缺译，页面上仍是英文"
   },
   {
@@ -556,11 +756,35 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "EN4 / EN5",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≥60mm",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Chrome Plated (CP), Polished Brass (PB), Satin Chrome (SC), Satin Nickel (SN), N, Antique Brass (AB), Antique Copper (AC), Oil Rubbed Bronze (ORB)",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
    "uses": 5,
    "status": "由「表面处理」表统一处理"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=500mm",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "缺译，页面上仍是英文"
   },
   {
    "kind": "规格值 Spec value",
@@ -580,7 +804,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "P=500mm",
+   "en": "≥45mm",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Two hydraulic / 2+1",
    "es": "",
    "zh": "",
    "uses": 4,
@@ -612,6 +844,22 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "≤800mm / ≤1100mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1350mm / ≤1500mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "GP, NB, Antique Brass (AB), Antique Copper (AC), Satin Nickel (SN), BRN, BC, Nickel Plated (NP), Chrome Plated (CP), CB",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
@@ -625,6 +873,30 @@
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
    "uses": 3,
    "status": "由「表面处理」表统一处理"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "25 × 25mm (square)",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "50 pieces",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
   },
   {
    "kind": "规格值 Spec value",
@@ -660,6 +932,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "EN6 / EN7",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Chrome (SC)",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
@@ -677,6 +957,22 @@
   {
    "kind": "规格值 Spec value",
    "en": "P=640mm",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "22 × 22mm (square)",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=528mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -733,6 +1029,22 @@
   {
    "kind": "规格值 Spec value",
    "en": "P=26mm",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1000mm / ≤1100mm",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Single action",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -828,6 +1140,22 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "500 pieces",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "200 pieces",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "72mm and 92mm (cylinder hole)",
    "es": "",
    "zh": "",
@@ -860,6 +1188,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "1000 pieces",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "painting",
    "es": "",
    "zh": "喷漆",
@@ -876,9 +1212,257 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "6068 Mortise Lock Series",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "100 pieces",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "BL",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1031.60 / D-1031.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤750mm / ≤1000mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1032.60 / D-1032.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1033.60 / D-1033.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1031",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "DZ-2031 / D-1051",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1051.120 / D-1051.150",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1100mm / ≤1200mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1067.200 / D-1067.300",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-1068.200 / D-1068.300",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3001.400 / D-3001.600",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1200mm / ≤1350mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3002.300 / D-3002.500",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3012.100 / D-3012.150",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤750mm / ≤900mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3013.80 / D-3013.120",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤900mm / ≤1100mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3015.100 / D-3015.150",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤600mm / ≤800mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3016.80 / D-3016.120",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3015",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-3016",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-5061.50 / D-5061.80",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤700mm / ≤900mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≥40mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "EN2 / EN3",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-5062.60 / D-5062.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "D-5063.100 / D-5063.150",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1000mm / ≤1200mm",
+   "es": "",
+   "zh": "",
    "uses": 1,
    "status": "缺译，页面上仍是英文"
   },
@@ -903,6 +1487,78 @@
    "en": "180° or 200°",
    "es": "",
    "zh": "180° 或 200°",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "DZ-2031.150 / DZ-2031.200",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤800mm / ≤900mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "DZ-2039.300 / DZ-2039.400",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤1250mm / ≤1350mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "EN5 / EN6",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "DZ-2086.60 / DZ-2086.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤650mm / ≤750mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "DZ-2087.150 / DZ-2087.200",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤850mm / ≤1000mm",
+   "es": "",
+   "zh": "",
    "uses": 1,
    "status": "缺译，页面上仍是英文"
   },
@@ -940,7 +1596,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "22 × 22mm (square)",
+   "en": "P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "22mm (L600) / Ø22mm (L900) / 30mm (L2000)",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -956,7 +1620,31 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "P=275mm (L450) / P=425mm (L600)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=660mm (L700) / P=1160mm (L1200)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "L300 / L700",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=425mm (L447) / P=700+700mm (L1422)",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -1020,6 +1708,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "P=788mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "P=520mm",
    "es": "",
    "zh": "",
@@ -1068,11 +1764,59 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "JL606.60 / JL606.80",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "JL607.50 / JL607.70",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤750mm / ≤950mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "JL608.60 / JL608.80",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "JL609.60 / JL609.80",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Stainless Steel (SS), Satin Nickel (SN), Polished Brass (PB), Antique Brass (AB), Antique Copper (AC)",
    "es": "",
    "zh": "→ 由「表面处理 Acabados」表统一决定，本行无需逐条翻译",
    "uses": 1,
    "status": "由「表面处理」表统一处理"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Gun metal (GM)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
   },
   {
    "kind": "规格值 Spec value",
@@ -1117,14 +1861,6 @@
   {
    "kind": "规格值 Spec value",
    "en": "P=524mm",
-   "es": "",
-   "zh": "",
-   "uses": 1,
-   "status": "缺译，页面上仍是英文"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "P=370mm（两端各 P=30mm）",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -1204,6 +1940,70 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "T-1073.60 / T-1073.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≥42mm / ≥45mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "T-1075.100 / T-1075.120",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "T-1076.60 / T-1076.100",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "≤500mm / ≤750mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "T-1077.150 / T-1077.200",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "T-1078.60 / T-1078.80",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "T-1079.100 / T-1079.120",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "P=978mm",
    "es": "",
    "zh": "",
@@ -1220,6 +2020,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "P=700mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "P=615mm",
    "es": "",
    "zh": "",
@@ -1228,7 +2036,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "25 × 25mm (square)",
+   "en": "P=650mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=275mm (L450) / P=425mm (L600) / P=575mm (L750)",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -1284,7 +2100,31 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "bottom rail and leading edge φ10mm hinge side φ14mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=425mm (L450) / P=575mm (L600)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "40mm at each end",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=568mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -1308,7 +2148,47 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "P=223mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "P=573mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=784mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=425mm (L443) / P=730mm (L748)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "P=360mm (L400) / P=560mm (L600) / P=760mm (L800)",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "缺译，页面上仍是英文"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "outside φ12mm inside φ8mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -1369,7 +2249,7 @@
    "en": "Material",
    "es": "Material",
    "zh": "材质",
-   "uses": 423,
+   "uses": 425,
    "status": "已有译法，请复核"
   },
   {
@@ -1377,7 +2257,7 @@
    "en": "Finish",
    "es": "Acabado",
    "zh": "表面处理",
-   "uses": 321,
+   "uses": 322,
    "status": "已有译法，请复核"
   },
   {
@@ -1385,7 +2265,7 @@
    "en": "Application",
    "es": "Aplicación",
    "zh": "适用场景",
-   "uses": 235,
+   "uses": 236,
    "status": "已有译法，请复核"
   },
   {
@@ -1393,7 +2273,7 @@
    "en": "Door thickness",
    "es": "Espesor de puerta",
    "zh": "适用门厚",
-   "uses": 196,
+   "uses": 197,
    "status": "已有译法，请复核"
   },
   {
@@ -1401,7 +2281,7 @@
    "en": "Function",
    "es": "Función",
    "zh": "功能",
-   "uses": 196,
+   "uses": 197,
    "status": "已有译法，请复核"
   },
   {
@@ -1409,7 +2289,7 @@
    "en": "Chassis",
    "es": "Chasis",
    "zh": "锁体底盘",
-   "uses": 183,
+   "uses": 184,
    "status": "已有译法，请复核"
   },
   {
@@ -1417,7 +2297,7 @@
    "en": "Handing",
    "es": "Mano",
    "zh": "开向（左右手）",
-   "uses": 182,
+   "uses": 183,
    "status": "已有译法，请复核"
   },
   {
@@ -1425,7 +2305,7 @@
    "en": "Backset",
    "es": "Entrada",
    "zh": "锁舌中心距（backset）",
-   "uses": 173,
+   "uses": 174,
    "status": "已有译法，请复核"
   },
   {
@@ -1433,7 +2313,7 @@
    "en": "Trim",
    "es": "Guarnición",
    "zh": "外装饰件",
-   "uses": 155,
+   "uses": 156,
    "status": "已有译法，请复核"
   },
   {
@@ -1441,7 +2321,7 @@
    "en": "Cylinder",
    "es": "Cilindro",
    "zh": "锁芯",
-   "uses": 132,
+   "uses": 133,
    "status": "已有译法，请复核"
   },
   {
@@ -1449,15 +2329,7 @@
    "en": "Cycle life",
    "es": "Vida útil",
    "zh": "循环寿命",
-   "uses": 131,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
-   "en": "Keying",
-   "es": "Amaestramiento",
-   "zh": "钥匙编码 / 通开",
-   "uses": 105,
+   "uses": 132,
    "status": "已有译法，请复核"
   },
   {
@@ -1465,7 +2337,7 @@
    "en": "Centre distance",
    "es": "Distancia entre ejes",
    "zh": "中心距",
-   "uses": 96,
+   "uses": 125,
    "status": "已有译法，请复核"
   },
   {
@@ -1473,15 +2345,15 @@
    "en": "Projection",
    "es": "Saliente",
    "zh": "凸出高度",
-   "uses": 83,
+   "uses": 116,
    "status": "已有译法，请复核"
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Latch",
-   "es": "Picaporte",
-   "zh": "斜舌",
-   "uses": 77,
+   "en": "Keying",
+   "es": "Amaestramiento",
+   "zh": "钥匙编码 / 通开",
+   "uses": 106,
    "status": "已有译法，请复核"
   },
   {
@@ -1489,7 +2361,7 @@
    "en": "Overall length",
    "es": "Longitud total",
    "zh": "",
-   "uses": 69,
+   "uses": 98,
    "status": "已有译法，请复核"
   },
   {
@@ -1497,7 +2369,31 @@
    "en": "Weight",
    "es": "Peso",
    "zh": "重量",
-   "uses": 60,
+   "uses": 91,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Latch",
+   "es": "Picaporte",
+   "zh": "斜舌",
+   "uses": 78,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Grip section",
+   "es": "Sección del asa",
+   "zh": "",
+   "uses": 77,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Size",
+   "es": "Medidas",
+   "zh": "尺寸",
+   "uses": 58,
    "status": "已有译法，请复核"
   },
   {
@@ -1514,22 +2410,6 @@
    "es": "Característica",
    "zh": "特点",
    "uses": 58,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
-   "en": "Size",
-   "es": "Medidas",
-   "zh": "尺寸",
-   "uses": 57,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
-   "en": "Grip section",
-   "es": "Sección del asa",
-   "zh": "",
-   "uses": 51,
    "status": "已有译法，请复核"
   },
   {
@@ -1566,10 +2446,10 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Thickness",
-   "es": "Espesor",
-   "zh": "厚度",
-   "uses": 28,
+   "en": "Max opening angle",
+   "es": "Ángulo máximo de apertura",
+   "zh": "最大开启角度",
+   "uses": 35,
    "status": "已有译法，请复核"
   },
   {
@@ -1577,6 +2457,14 @@
    "en": "Rose diameter",
    "es": "Diámetro del rosetón",
    "zh": "圆座直径",
+   "uses": 32,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Thickness",
+   "es": "Espesor",
+   "zh": "厚度",
    "uses": 28,
    "status": "已有译法，请复核"
   },
@@ -1606,6 +2494,22 @@
   },
   {
    "kind": "规格标签 Spec label",
+   "en": "Lever length",
+   "es": "Longitud de la manija",
+   "zh": "执手长度",
+   "uses": 24,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Stem diameter",
+   "es": "Diámetro del vástago",
+   "zh": "",
+   "uses": 24,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
    "en": "Installation",
    "es": "Instalación",
    "zh": "安装方式",
@@ -1614,10 +2518,10 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Lever length",
-   "es": "Longitud de la manija",
-   "zh": "执手长度",
-   "uses": 20,
+   "en": "Lever section",
+   "es": "Sección de la manija",
+   "zh": "执手截面",
+   "uses": 22,
    "status": "已有译法，请复核"
   },
   {
@@ -1630,18 +2534,10 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Lever section",
-   "es": "Sección de la manija",
-   "zh": "执手截面",
-   "uses": 18,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
    "en": "Fixing centre",
    "es": "Centro de fijación",
    "zh": "固定孔中心距",
-   "uses": 18,
+   "uses": 17,
    "status": "已有译法，请复核"
   },
   {
@@ -1686,17 +2582,17 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Cross bore",
-   "es": "Perforación principal",
-   "zh": "主开孔",
+   "en": "Lever drop",
+   "es": "Caída de la manija",
+   "zh": "",
    "uses": 14,
    "status": "已有译法，请复核"
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Stem diameter",
-   "es": "Diámetro del vástago",
-   "zh": "",
+   "en": "Cross bore",
+   "es": "Perforación principal",
+   "zh": "主开孔",
    "uses": 14,
    "status": "已有译法，请复核"
   },
@@ -1722,14 +2618,6 @@
    "es": "Cuadradillo",
    "zh": "方轴",
    "uses": 12,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
-   "en": "Lever drop",
-   "es": "Caída de la manija",
-   "zh": "",
-   "uses": 11,
    "status": "已有译法，请复核"
   },
   {
@@ -1854,14 +2742,6 @@
   },
   {
    "kind": "规格标签 Spec label",
-   "en": "Max opening angle",
-   "es": "Ángulo máximo de apertura",
-   "zh": "最大开启角度",
-   "uses": 6,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
    "en": "Handle Material",
    "es": "Material de la manija",
    "zh": "执手材质",
@@ -1897,6 +2777,14 @@
    "en": "Opening",
    "es": "Apertura",
    "zh": "开启",
+   "uses": 5,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格标签 Spec label",
+   "en": "Handling",
+   "es": "Manipulación",
+   "zh": "",
    "uses": 5,
    "status": "已有译法，请复核"
   },
@@ -1952,14 +2840,6 @@
    "kind": "规格标签 Spec label",
    "en": "OEM & ODM",
    "es": "OEM y ODM",
-   "zh": "",
-   "uses": 4,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格标签 Spec label",
-   "en": "Handling",
-   "es": "Manipulación",
    "zh": "",
    "uses": 4,
    "status": "已有译法，请复核"
@@ -3209,7 +4089,7 @@
    "en": "Fully reversible, left or right hand",
    "es": "Reversible, mano izquierda o derecha",
    "zh": "",
-   "uses": 163,
+   "uses": 164,
    "status": "已有译法，请复核"
   },
   {
@@ -3217,7 +4097,7 @@
    "en": "200,000 cycles",
    "es": "200.000 ciclos",
    "zh": "",
-   "uses": 131,
+   "uses": 132,
    "status": "已有译法，请复核"
   },
   {
@@ -3233,7 +4113,7 @@
    "en": "Zinc die-casting electro-plated or solid brass",
    "es": "Zamak inyectado con galvanizado, o latón macizo",
    "zh": "",
-   "uses": 79,
+   "uses": 80,
    "status": "已有译法，请复核"
   },
   {
@@ -3254,6 +4134,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "Yes",
+   "es": "Sí",
+   "zh": "",
+   "uses": 72,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Stainless steel",
    "es": "Acero inoxidable",
    "zh": "",
@@ -3265,7 +4153,7 @@
    "en": "Zinc alloy",
    "es": "Zamak",
    "zh": "",
-   "uses": 61,
+   "uses": 62,
    "status": "已有译法，请复核"
   },
   {
@@ -3273,7 +4161,7 @@
    "en": "Solid steel, zinc plated for corrosion resistance",
    "es": "Acero macizo zincado para resistir la corrosión",
    "zh": "",
-   "uses": 55,
+   "uses": 56,
    "status": "已有译法，请复核"
   },
   {
@@ -3281,7 +4169,7 @@
    "en": "Can be keyed alike with deadbolts, or master keyed",
    "es": "Admite llave igual con los cerrojos, o amaestramiento",
    "zh": "",
-   "uses": 55,
+   "uses": 56,
    "status": "已有译法，请复核"
   },
   {
@@ -3337,7 +4225,7 @@
    "en": "Brass cylinder",
    "es": "Cilindro de latón",
    "zh": "",
-   "uses": 31,
+   "uses": 32,
    "status": "已有译法，请复核"
   },
   {
@@ -3369,7 +4257,7 @@
    "en": "Privacy — bathroom, turn button inside",
    "es": "Privacidad — baño, botón de giro interior",
    "zh": "",
-   "uses": 26,
+   "uses": 27,
    "status": "已有译法，请复核"
   },
   {
@@ -3598,6 +4486,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "Adjustable 60–70mm",
+   "es": "Regulable de 60 a 70 mm",
+   "zh": "",
+   "uses": 11,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Monitoring Outdoor",
    "es": "Vigilancia en exteriores",
    "zh": "",
@@ -3608,14 +4504,6 @@
    "kind": "规格值 Spec value",
    "en": "Solid brass/Zinc & brass cylinder",
    "es": "Latón macizo; cilindro de zamak y latón",
-   "zh": "",
-   "uses": 10,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "Adjustable 60–70mm",
-   "es": "Regulable de 60 a 70 mm",
    "zh": "",
    "uses": 10,
    "status": "已有译法，请复核"
@@ -3742,6 +4630,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "Fully reversible for left or right-hand doors",
+   "es": "Totalmente reversible, mano izquierda o derecha",
+   "zh": "",
+   "uses": 6,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "Stainless Steel 304/201",
    "es": "Acero inoxidable 304/201",
    "zh": "",
@@ -3790,8 +4686,8 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "Fully reversible for left or right-hand doors",
-   "es": "Totalmente reversible, mano izquierda o derecha",
+   "en": "Stainless Steel 304",
+   "es": "Acero inoxidable 304",
    "zh": "",
    "uses": 5,
    "status": "已有译法，请复核"
@@ -3848,14 +4744,6 @@
    "kind": "规格值 Spec value",
    "en": "60/70mm adjustable tubular latch",
    "es": "Picaporte tubular regulable de 60 / 70 mm",
-   "zh": "",
-   "uses": 4,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "Stainless Steel 304",
-   "es": "Acero inoxidable 304",
    "zh": "",
    "uses": 4,
    "status": "已有译法，请复核"
@@ -4184,6 +5072,14 @@
    "kind": "规格值 Spec value",
    "en": "Interior wooden and metal doors",
    "es": "Puertas interiores de madera y metálicas",
+   "zh": "",
+   "uses": 3,
+   "status": "已有译法，请复核"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "For Privacy doors",
+   "es": "Para puertas de baño",
    "zh": "",
    "uses": 3,
    "status": "已有译法，请复核"
@@ -4768,14 +5664,6 @@
    "kind": "规格值 Spec value",
    "en": "Four round bolts",
    "es": "Cuatro pestillos redondos",
-   "zh": "",
-   "uses": 2,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "For Privacy doors",
-   "es": "Para puertas de baño",
    "zh": "",
    "uses": 2,
    "status": "已有译法，请复核"
@@ -6630,14 +7518,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "Yes",
-   "es": "Sí",
-   "zh": "",
-   "uses": 1,
-   "status": "已有译法，请复核"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or out wards, with stops at 0, 88 and 116 in both directions.",
    "es": "Incluye regulación de la velocidad de apertura y de cierre; tensión del resorte totalmente regulable; la puerta abre hasta 116° hacia adentro o hacia afuera, con retenciones a 0°, 88° y 116° en ambos sentidos.",
    "zh": "",
@@ -7625,7 +8505,7 @@
    "en": "Stainless Steel Handle",
    "es": "Manilla de acero inoxidable",
    "zh": "",
-   "uses": 81,
+   "uses": 99,
    "status": "请确认这一条术语"
   },
   {
@@ -7633,7 +8513,7 @@
    "en": "Lever Handle",
    "es": "Manilla de palanca",
    "zh": "",
-   "uses": 75,
+   "uses": 80,
    "status": "请确认这一条术语"
   },
   {
@@ -7646,18 +8526,18 @@
   },
   {
    "kind": "产品名 Nombre de producto",
-   "en": "Lock Case",
-   "es": "Cerradura de embutir",
+   "en": "Glass Door Handle",
+   "es": "Tirador para puerta de vidrio",
    "zh": "",
-   "uses": 53,
+   "uses": 62,
    "status": "请确认这一条术语"
   },
   {
    "kind": "产品名 Nombre de producto",
-   "en": "Glass Door Handle",
-   "es": "Tirador para puerta de vidrio",
+   "en": "Lock Case",
+   "es": "Cerradura de embutir",
    "zh": "",
-   "uses": 47,
+   "uses": 53,
    "status": "请确认这一条术语"
   },
   {
@@ -7698,6 +8578,14 @@
    "es": "Cerradura cilíndrica de servicio pesado",
    "zh": "",
    "uses": 23,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
+   "en": "Floor Spring",
+   "es": "Cierrapuertas de suelo",
+   "zh": "",
+   "uses": 19,
    "status": "请确认这一条术语"
   },
   {
@@ -7806,8 +8694,24 @@
   },
   {
    "kind": "产品名 Nombre de producto",
+   "en": "Overhead Door Closer",
+   "es": "Cierrapuertas aéreo",
+   "zh": "",
+   "uses": 6,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
    "en": "Commercial Lock",
    "es": "Cerradura comercial",
+   "zh": "",
+   "uses": 5,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
+   "en": "Top Pivot",
+   "es": "Pivote superior",
    "zh": "",
    "uses": 5,
    "status": "请确认这一条术语"
@@ -7824,6 +8728,22 @@
    "kind": "产品名 Nombre de producto",
    "en": "S-Panic Exit Device",
    "es": "Barra antipánico serie S",
+   "zh": "",
+   "uses": 4,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
+   "en": "Glass Door Top Patch",
+   "es": "Herraje superior para puerta de vidrio",
+   "zh": "",
+   "uses": 4,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
+   "en": "Hydraulic Hinge",
+   "es": "Bisagra hidráulica",
    "zh": "",
    "uses": 4,
    "status": "请确认这一条术语"
@@ -7850,6 +8770,14 @@
    "es": "Cerradura de gancho para puerta corredera",
    "zh": "",
    "uses": 3,
+   "status": "请确认这一条术语"
+  },
+  {
+   "kind": "产品名 Nombre de producto",
+   "en": "Stainless Steel Lever Handle Lock",
+   "es": "Cerradura con manilla de acero inoxidable",
+   "zh": "",
+   "uses": 2,
    "status": "请确认这一条术语"
   },
   {
@@ -7998,14 +8926,6 @@
   },
   {
    "kind": "产品名 Nombre de producto",
-   "en": "Stainless Steel Lever Handle Lock",
-   "es": "Cerradura con manilla de acero inoxidable",
-   "zh": "",
-   "uses": 1,
-   "status": "请确认这一条术语"
-  },
-  {
-   "kind": "产品名 Nombre de producto",
    "en": "Concealed Sliding Door Handle",
    "es": "Tirador oculto para puerta corredera",
    "zh": "",
@@ -8104,10 +9024,50 @@
  "dimensions": [
   {
    "kind": "规格值 Spec value",
+   "en": "M6",
+   "es": "",
+   "zh": "",
+   "uses": 51,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "60/70mm",
    "es": "",
    "zh": "",
-   "uses": 44,
+   "uses": 45,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "M8",
+   "es": "",
+   "zh": "",
+   "uses": 42,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "60mm",
+   "es": "",
+   "zh": "",
+   "uses": 35,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "25mm",
+   "es": "",
+   "zh": "",
+   "uses": 35,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "600mm",
+   "es": "",
+   "zh": "",
+   "uses": 34,
    "status": "纯尺寸，无需翻译"
   },
   {
@@ -8120,42 +9080,10 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "M6",
+   "en": "65mm",
    "es": "",
    "zh": "",
-   "uses": 33,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "600mm",
-   "es": "",
-   "zh": "",
-   "uses": 29,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "25mm",
-   "es": "",
-   "zh": "",
-   "uses": 28,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "60mm",
-   "es": "",
-   "zh": "",
-   "uses": 27,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "M8",
-   "es": "",
-   "zh": "",
-   "uses": 25,
+   "uses": 19,
    "status": "纯尺寸，无需翻译"
   },
   {
@@ -8176,7 +9104,23 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "65mm",
+   "en": "20mm",
+   "es": "",
+   "zh": "",
+   "uses": 17,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "70mm",
+   "es": "",
+   "zh": "",
+   "uses": 17,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "30mm",
    "es": "",
    "zh": "",
    "uses": 16,
@@ -8192,7 +9136,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "30mm",
+   "en": "125°",
+   "es": "",
+   "zh": "",
+   "uses": 16,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "22mm",
    "es": "",
    "zh": "",
    "uses": 14,
@@ -8200,18 +9152,10 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "70mm",
+   "en": "40mm",
    "es": "",
    "zh": "",
-   "uses": 14,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "20mm",
-   "es": "",
-   "zh": "",
-   "uses": 13,
+   "uses": 12,
    "status": "纯尺寸，无需翻译"
   },
   {
@@ -8232,7 +9176,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "40mm",
+   "en": "19mm",
    "es": "",
    "zh": "",
    "uses": 11,
@@ -8240,7 +9184,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "19mm",
+   "en": "Ø22mm",
+   "es": "",
+   "zh": "",
+   "uses": 11,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "32mm",
    "es": "",
    "zh": "",
    "uses": 10,
@@ -8256,7 +9208,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "22mm",
+   "en": "180°",
+   "es": "",
+   "zh": "",
+   "uses": 10,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "360°",
    "es": "",
    "zh": "",
    "uses": 9,
@@ -8264,7 +9224,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "Ø22mm",
+   "en": "800mm",
    "es": "",
    "zh": "",
    "uses": 9,
@@ -8280,15 +9240,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "32mm",
-   "es": "",
-   "zh": "",
-   "uses": 8,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "180°",
+   "en": "68mm",
    "es": "",
    "zh": "",
    "uses": 8,
@@ -8304,7 +9256,31 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "Ø50mm",
+   "es": "",
+   "zh": "",
+   "uses": 8,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "72mm",
+   "es": "",
+   "zh": "",
+   "uses": 7,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "26mm",
+   "es": "",
+   "zh": "",
+   "uses": 7,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "60kg / 100kg",
    "es": "",
    "zh": "",
    "uses": 7,
@@ -8320,7 +9296,23 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "800mm",
+   "en": "1.7kg",
+   "es": "",
+   "zh": "",
+   "uses": 7,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Ø25mm",
+   "es": "",
+   "zh": "",
+   "uses": 7,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Ø27mm",
    "es": "",
    "zh": "",
    "uses": 7,
@@ -8329,6 +9321,14 @@
   {
    "kind": "规格值 Spec value",
    "en": "53mm",
+   "es": "",
+   "zh": "",
+   "uses": 6,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "62mm",
    "es": "",
    "zh": "",
    "uses": 6,
@@ -8352,7 +9352,31 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "28mm",
+   "es": "",
+   "zh": "",
+   "uses": 6,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "2.6kg",
+   "es": "",
+   "zh": "",
+   "uses": 6,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "1.2kg",
+   "es": "",
+   "zh": "",
+   "uses": 6,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "1.5kg",
    "es": "",
    "zh": "",
    "uses": 6,
@@ -8368,15 +9392,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "68mm",
-   "es": "",
-   "zh": "",
-   "uses": 6,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "35–55mm",
+   "en": "55mm",
    "es": "",
    "zh": "",
    "uses": 5,
@@ -8384,7 +9400,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "72mm",
+   "en": "35–55mm",
    "es": "",
    "zh": "",
    "uses": 5,
@@ -8400,7 +9416,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "62mm",
+   "en": "135mm",
    "es": "",
    "zh": "",
    "uses": 5,
@@ -8408,7 +9424,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "135mm",
+   "en": "63mm",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "100mm",
    "es": "",
    "zh": "",
    "uses": 5,
@@ -8432,6 +9456,22 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "550mm",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "1kg",
+   "es": "",
+   "zh": "",
+   "uses": 5,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "33mm",
    "es": "",
    "zh": "",
@@ -8440,15 +9480,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "Ø27mm",
-   "es": "",
-   "zh": "",
-   "uses": 5,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "Ø50mm",
+   "en": "2kg",
    "es": "",
    "zh": "",
    "uses": 5,
@@ -8464,7 +9496,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "55mm",
+   "en": "58mm",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "140mm",
    "es": "",
    "zh": "",
    "uses": 4,
@@ -8528,14 +9568,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "100mm",
-   "es": "",
-   "zh": "",
-   "uses": 4,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "48mm",
    "es": "",
    "zh": "",
@@ -8544,7 +9576,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "28mm",
+   "en": "1.3kg",
    "es": "",
    "zh": "",
    "uses": 4,
@@ -8560,7 +9592,23 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1.7kg",
+   "en": "1.8kg",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "40–60mm",
+   "es": "",
+   "zh": "",
+   "uses": 4,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "60kg / 80kg",
    "es": "",
    "zh": "",
    "uses": 4,
@@ -8608,22 +9656,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "58mm",
-   "es": "",
-   "zh": "",
-   "uses": 3,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "140mm",
-   "es": "",
-   "zh": "",
-   "uses": 3,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "200mm",
    "es": "",
    "zh": "",
@@ -8648,7 +9680,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1000mm",
+   "en": "900mm",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8656,7 +9688,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "63mm",
+   "en": "1000mm",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8720,7 +9752,31 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "10–14mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "100kg / 150kg",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "16mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "150kg / 200kg",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8736,7 +9792,47 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1.2kg",
+   "en": "64mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "64.5mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "300mm / 450mm / 600mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "61.5mm",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "2.1kg",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "452mm",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8752,7 +9848,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1.8kg",
+   "en": "27mm",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8760,15 +9856,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "550mm",
-   "es": "",
-   "zh": "",
-   "uses": 3,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "1kg",
+   "en": "1.6kg",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8792,14 +9880,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "Ø25mm",
-   "es": "",
-   "zh": "",
-   "uses": 3,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "Ø45mm",
    "es": "",
    "zh": "",
@@ -8809,6 +9889,14 @@
   {
    "kind": "规格值 Spec value",
    "en": "3.5\"x3.5\"x2.5MM",
+   "es": "",
+   "zh": "",
+   "uses": 3,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "145mm",
    "es": "",
    "zh": "",
    "uses": 3,
@@ -8841,14 +9929,6 @@
   {
    "kind": "规格值 Spec value",
    "en": "1.2mm",
-   "es": "",
-   "zh": "",
-   "uses": 2,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "900mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -8992,6 +10072,30 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "200kg / 300kg",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "80kg / 120kg",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "8–12mm",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "42mm",
    "es": "",
    "zh": "",
@@ -9024,15 +10128,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "64mm",
-   "es": "",
-   "zh": "",
-   "uses": 2,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "64.5mm",
+   "en": "450mm / 600mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9072,23 +10168,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1.5kg",
-   "es": "",
-   "zh": "",
-   "uses": 2,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "452mm",
-   "es": "",
-   "zh": "",
-   "uses": 2,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "27mm",
+   "en": "142mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9104,7 +10184,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "1.6kg",
+   "en": "600mm / 800mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9112,7 +10192,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "61.5mm",
+   "en": "18mm",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9137,6 +10217,22 @@
   {
    "kind": "规格值 Spec value",
    "en": "64/56/128/192/284",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "110°",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "90–110°",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9248,7 +10344,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "2kg",
+   "en": "100kg / 120kg",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9257,6 +10353,14 @@
   {
    "kind": "规格值 Spec value",
    "en": "2.5kg",
+   "es": "",
+   "zh": "",
+   "uses": 2,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "2.4kg",
    "es": "",
    "zh": "",
    "uses": 2,
@@ -9481,6 +10585,14 @@
   {
    "kind": "规格值 Spec value",
    "en": "35–50 mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "330mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -9760,6 +10872,150 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "173 × 25.4 × 54mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "10–12mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "202 × 36 × 54mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "120kg / 150kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "400kg / 600kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "300kg / 500kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "30 × 12 × 157mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "12 × 28 × 157mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "28 × 39 × 147mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "138 × 25 × 36mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "107 × 53.5mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "124 × 25 × 36mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "107 × 70.5mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "28 × 26 × 180mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "15 × 30 × 138mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "50kg / 80kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "397 × 120mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "55–100kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "175x53x73mm",
    "es": "",
    "zh": "",
@@ -9825,6 +11081,14 @@
   {
    "kind": "规格值 Spec value",
    "en": "60–95mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "300kg / 400kg",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -9976,6 +11240,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "600mm / 900mm / 2000mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "550.6mm",
    "es": "",
    "zh": "",
@@ -10001,6 +11273,46 @@
   {
    "kind": "规格值 Spec value",
    "en": "20.6mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "0.8kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "67.2mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "700mm / 1200mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "20 × 40mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "3.4kg",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10048,6 +11360,14 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "447mm / 1422mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "1300mm",
    "es": "",
    "zh": "",
@@ -10065,6 +11385,22 @@
   {
    "kind": "规格值 Spec value",
    "en": "25 × 61mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "61mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "455mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10120,7 +11456,39 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "18mm",
+   "en": "5.1kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "820mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "20 × 16mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "59mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "443mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10257,6 +11625,30 @@
   {
    "kind": "规格值 Spec value",
    "en": "3mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "85–120°",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "50kg / 70kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "90–180°",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10720,6 +12112,22 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "450mm / 600mm / 750mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "60.4mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "25.6 × 57.2mm",
    "es": "",
    "zh": "",
@@ -10745,14 +12153,6 @@
   {
    "kind": "规格值 Spec value",
    "en": "4.6kg",
-   "es": "",
-   "zh": "",
-   "uses": 1,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
-   "en": "2.1kg",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10793,6 +12193,22 @@
   {
    "kind": "规格值 Spec value",
    "en": "114mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "527mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "154mm",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -10936,6 +12352,78 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "250mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "117mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "0.9kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "32 × 16mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "57mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "443mm / 748mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "40 × 18mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "400mm / 600mm / 800mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "Ø10mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "5.9kg",
    "es": "",
    "zh": "",
@@ -10992,14 +12480,6 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "2.4kg",
-   "es": "",
-   "zh": "",
-   "uses": 1,
-   "status": "纯尺寸，无需翻译"
-  },
-  {
-   "kind": "规格值 Spec value",
    "en": "762mm",
    "es": "",
    "zh": "",
@@ -11048,6 +12528,30 @@
   },
   {
    "kind": "规格值 Spec value",
+   "en": "Ø62mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "75.5mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "0.7kg",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
    "en": "0.51kg",
    "es": "",
    "zh": "",
@@ -11064,7 +12568,15 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "145mm",
+   "en": "137mm",
+   "es": "",
+   "zh": "",
+   "uses": 1,
+   "status": "纯尺寸，无需翻译"
+  },
+  {
+   "kind": "规格值 Spec value",
+   "en": "0.4kg",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -11096,7 +12608,7 @@
   },
   {
    "kind": "规格值 Spec value",
-   "en": "142mm",
+   "en": "0.75kg",
    "es": "",
    "zh": "",
    "uses": 1,
@@ -11947,6 +13459,22 @@
   {
    "kind": "src\\app\\es\\downloads\\page.tsx",
    "en": "",
+   "es": "Hojas de planificación",
+   "zh": "",
+   "uses": "",
+   "status": "整句复核"
+  },
+  {
+   "kind": "src\\app\\es\\downloads\\page.tsx",
+   "en": "",
+   "es": "Rellénelas y devuélvanoslas. Cada una lleva un ejemplo cumplimentado — copie ese patrón en lugar de inventar un formato. Las hojas están en inglés.",
+   "zh": "",
+   "uses": "",
+   "status": "整句复核"
+  },
+  {
+   "kind": "src\\app\\es\\downloads\\page.tsx",
+   "en": "",
    "es": "isolate mt-48 flex-grow justify-self-start lg:mt-192",
    "zh": "",
    "uses": "",
@@ -12195,7 +13723,7 @@
   {
    "kind": "src\\app\\es\\page.tsx",
    "en": "",
-   "es": ";\r\nimport * as content from ",
+   "es": ";\nimport * as content from ",
    "zh": "",
    "uses": "",
    "status": "整句复核"
@@ -12203,7 +13731,7 @@
   {
    "kind": "src\\app\\es\\page.tsx",
    "en": "",
-   "es": ";\r\n\r\nconst title = ",
+   "es": "Cerraduras y herrajes arquitectónicos",
    "zh": "",
    "uses": "",
    "status": "整句复核"
@@ -12211,7 +13739,7 @@
   {
    "kind": "src\\app\\es\\page.tsx",
    "en": "",
-   "es": ",\r\n    title,\r\n    description:\r\n      ",
+   "es": ",\n    title,\n    description:\n      ",
    "zh": "",
    "uses": "",
    "status": "整句复核"
@@ -12228,6 +13756,14 @@
    "kind": "src\\app\\es\\page.tsx",
    "en": "",
    "es": "modules mb-96 lg:mb-136",
+   "zh": "",
+   "uses": "",
+   "status": "整句复核"
+  },
+  {
+   "kind": "src\\app\\es\\page.tsx",
+   "en": "",
+   "es": "what are other people asking for",
    "zh": "",
    "uses": "",
    "status": "整句复核"
@@ -12562,7 +14098,7 @@
   }
  ],
  "meta": {
-  "finishSpellings": 87,
-  "generated": "2026-09-11"
+  "finishSpellings": 88,
+  "generated": "2026-09-14"
  }
 }

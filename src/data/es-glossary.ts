@@ -1152,6 +1152,22 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Door Hinge": "Bisagra de puerta",
   "Stainless Steel Door Hinge": "Bisagra de puerta de acero inoxidable",
   "Wooden Door Floor Hinge": "Bisagra de piso para puerta de madera",
+  /*
+    A floor spring is the hydraulic closer buried in the floor, not the pivot it turns on.
+    "Bisagra de suelo" would name the hinge and lose the closing mechanism, which is the
+    part being bought — so it takes the closer word, consistent with Cierrapuertas above.
+  */
+  "Floor Spring": "Cierrapuertas de suelo",
+  /*
+    The glass-door family another session added on 2026-09-14. Trade names, not literal
+    translations: a "patch" is a herraje in Spanish and the position is what distinguishes
+    it, and a top pivot is named for the pivot rather than for being on top — "pivote
+    superior" is what a glazier asks for.
+  */
+  "Overhead Door Closer": "Cierrapuertas aéreo",
+  "Top Pivot": "Pivote superior",
+  "Glass Door Top Patch": "Herraje superior para puerta de vidrio",
+  "Hydraulic Hinge": "Bisagra hidráulica",
   "Door Closer": "Cierrapuertas",
   "Door Coordinator": "Selector de cierre",
 

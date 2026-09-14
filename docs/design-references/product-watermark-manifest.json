@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 3928,
+  "count": 3935,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -77158,6 +77158,132 @@
       },
       "sourceSha256": "5f705181e9f39f50a5ed76616049cf420f3b14285a594a7ffc2f1a63af5638af",
       "outputSha256": "ad30a45c3bb21ca914c8c428ebf98a3e337b25f484d74249e9a97aff737ec6f6"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-2.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b0cf6004986d53f529fd769f20cbab1047a4d7f36e73e521b767fa1ded4bd473",
+      "outputSha256": "bc11cc7fb6763d1e6900fd97db8ba0b7f57e3c9181f1029b4b9f831c79eb347c"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-3.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d95218a8d553ee27fac7f1307820351c50be9c97e8b1cf2eb4575f8dd252819d",
+      "outputSha256": "89d9feab054b1dcd7f2d639a1042b01f98f2104b89eefefd3e670eaf26daa2bc"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-4.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c77b7b468b3cdfe212eec30174005e98a463bf598a25f8f6fa282a710567d318",
+      "outputSha256": "550581e64e901b4f9299ec1bdb732d7b207c870f1536e22a6b0ba14b5b474f9d"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-5.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "da92b6995694c90f61b8ef34b946eac2f6bc99e04228c3e730f8eb363d8e48fd",
+      "outputSha256": "266b458441006809a562bb80da2fa26f06c9b810c7a3b51b0ced335e94feaeb3"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-6.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b269cc4b43ede2fabcdf431c512086359e2803741ca038dfed66d6ee406e36fd",
+      "outputSha256": "17e75165a79447ba628181f35a12138ad9c1eadbadf9239dc1508ec3a74a77d1"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle-video.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "89e4ac747a63b9602b70264e33c611264cf19d1cc8f7c1633ba1adb2f80bf1b9",
+      "outputSha256": "16cba9bca97e7d4cd967dd05d76ca72af6b47b65ff536539cd020405c856db56"
+    },
+    {
+      "source": "public/images/products/lh852-gmbk-lever-handle.webp",
+      "output": "public/images/products-hyde/lh852-gmbk-lever-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "50e4f7a0080dc6f257216489e8cdd21ad260e4fc54a1ccdb23fd8081db6dd340",
+      "outputSha256": "ad38eb66c6ea2df3b6262a95d1a1b4c065cc997d7718954249ceb665e31215c6"
     },
     {
       "source": "public/images/products/lh853-cpbk-lever-handle-video.webp",
