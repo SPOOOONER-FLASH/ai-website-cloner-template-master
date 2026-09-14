@@ -40,6 +40,8 @@ export interface FeatureColumn {
   /** One counted fact, or undefined when the catalogue cannot support one. */
   figure?: { en: string; es: string };
   image: { src: string; label: string; labelEs: string };
+  /** An optional second action — a file to take away, shown under the main link. */
+  extra?: { href: string; en: string; es: string };
 }
 
 /** Products whose own record says they can be keyed alike or master keyed. */
@@ -87,6 +89,17 @@ export function featureColumns(): FeatureColumn[] {
       figure: {
         en: `${keyable} models can be keyed alike or master keyed`,
         es: `${keyable} modelos admiten llave igual o amaestramiento`,
+      },
+      /*
+        The one column with something to DO at the end of it. The article asks for a door
+        schedule; without the sheet that request lands on a buyer who has never drawn one.
+        Kept as a secondary link so the column still leads with the reading — a form
+        offered before the explanation reads as a lead-capture form.
+      */
+      extra: {
+        href: "/downloads/master-key-plan-sheet.xlsx",
+        en: "Download the plan sheet (XLSX)",
+        es: "Descargar la hoja de plan (XLSX)",
       },
       image: {
         src: "/images/editorial/hyde-real-cylinder-plate.webp",

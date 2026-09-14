@@ -431,6 +431,25 @@ export interface NewsArticle {
   author?: ArticleAuthor;
   /** Kept out of the build entirely. Use for work in progress. */
   draft?: boolean;
+  /**
+   * A file the article asks the reader to take away and send back.
+   *
+   * Article bodies are plain paragraphs and deliberately carry no markup, so a download
+   * cannot be a sentence with a link in it. It is structured instead: the master key
+   * article ends by asking for a door schedule, and an article that asks for something
+   * without handing over the form is a request the reader has to build themselves.
+   */
+  attachment?: {
+    url: string;
+    title: string;
+    titleEs?: string;
+    /** Lowercase extension, drives the badge. */
+    format: string;
+    sizeBytes: number;
+    /** What is inside, so the reader knows before spending a download. */
+    note?: string;
+    noteEs?: string;
+  };
   /** One or two sentences for the listing card and the meta description fallback. */
   summary: string;
   summaryEs?: string;
@@ -472,7 +491,9 @@ export type DownloadKind =
   | "cad"
   | "bim"
   | "installation"
-  | "warranty";
+  | "warranty"
+  /** A form the buyer fills in and sends back — a planning input sheet, not a document to read. */
+  | "planning";
 
 export interface DownloadFile {
   /** Stable id referenced by Product.attachmentIds and Certification.downloadId. */

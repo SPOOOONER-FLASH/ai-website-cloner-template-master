@@ -20,6 +20,18 @@ const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> 
     title: "Product catalogue",
     note: "The current English product catalogue supplied by Canton Hyland.",
   },
+  /*
+    A planning sheet is not a document to read, it is a form to send back, so it gets its
+    own group rather than sitting among the catalogues. The master key article ends by
+    asking for a door schedule; this is that request made fillable, with a worked example
+    on the third tab — see docs/research/2026-09-13-miwa-lock-structure.md for where the
+    shape came from.
+  */
+  {
+    kind: "planning",
+    title: "Planning sheets",
+    note: "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.",
+  },
 ];
 
 export default function ServiceDownloadsPage() {

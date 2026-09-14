@@ -73,7 +73,8 @@
     "rayen:plates": "node scripts/square-rayen-plates.mjs",
     "rayen:drawings": "node scripts/delocalize-drawings.mjs",
     "rayen:brand": "node scripts/brand-rayen-images.mjs",
-    "rayen:audit": "node scripts/audit-rayen-images.mjs"
+    "rayen:audit": "node scripts/audit-rayen-images.mjs",
+    "sheet:masterkey": "node scripts/build-master-key-sheet.mjs && py scripts/build_master_key_workbook.py docs/collaboration/master-key-plan.json"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

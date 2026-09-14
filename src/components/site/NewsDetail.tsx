@@ -222,6 +222,37 @@ export function NewsDetail({
               </p>
             ))}
 
+            {/*
+              The take-away file, immediately after the argument for taking it away.
+              Styled as a specification row rather than a button: this is a working
+              document, and a download that announces itself like an advertisement gets
+              read as one.
+            */}
+            {article.attachment ? (
+              <a
+                href={article.attachment.url}
+                className="mt-48 block border-t border-ink pt-16 hover:text-brand-hover"
+                download
+              >
+                <span className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+                  {article.attachment.format.toUpperCase()} ·{" "}
+                  {Math.round(article.attachment.sizeBytes / 1024)} KB
+                </span>
+                <span className="short-marker short-marker-arrow relative mt-8 block pl-12 text-c1 text-brand">
+                  {es && article.attachment.titleEs
+                    ? article.attachment.titleEs
+                    : article.attachment.title}
+                </span>
+                {article.attachment.note ? (
+                  <span className="mt-8 block text-c2 text-ink-secondary">
+                    {es && article.attachment.noteEs
+                      ? article.attachment.noteEs
+                      : article.attachment.note}
+                  </span>
+                ) : null}
+              </a>
+            ) : null}
+
             {article.gallery && article.gallery.length > 0 ? (
               <div className="mt-48 space-y-48">
                 {article.gallery.map((image, index) => (

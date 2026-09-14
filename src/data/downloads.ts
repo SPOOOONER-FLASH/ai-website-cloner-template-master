@@ -17,6 +17,8 @@ export const downloadKindLabels: Record<DownloadKind, string> = {
   bim: "BIM objects",
   installation: "Installation guides",
   warranty: "Warranty documents",
+  /* The only kind here that travels in the other direction — filled in and sent back. */
+  planning: "Planning sheets",
 };
 
 export function formatDownloadSize(sizeBytes: number): string {

@@ -83,6 +83,14 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                 <p className="mt-auto pt-24">
                   <ArrowLink href={column.href[locale]}>{featureColumnsCta(locale)}</ArrowLink>
                 </p>
+                {/*
+                  The take-away file, under the reading rather than above it. A form
+                  offered before the explanation reads as a lead-capture form; offered
+                  after it, it is the next step the article just described.
+                */}
+                {column.extra ? (
+                  <p className="mt-8 text-c2 text-ink-secondary">{column.extra[locale]}</p>
+                ) : null}
               </div>
             </Link>
           ))}

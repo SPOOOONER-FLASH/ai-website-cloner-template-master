@@ -33,6 +33,12 @@ const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> 
     title: "Catálogo de producto",
     note: "El catálogo vigente facilitado por Canton Hyland. El documento está en inglés.",
   },
+  /* Misma agrupación que en la página inglesa: una hoja de planificación se devuelve, no se lee. */
+  {
+    kind: "planning",
+    title: "Hojas de planificación",
+    note: "Rellénelas y devuélvanoslas. Cada una lleva un ejemplo cumplimentado — copie ese patrón en lugar de inventar un formato. Las hojas están en inglés.",
+  },
 ];
 
 export default function ServicioDescargasPage() {
