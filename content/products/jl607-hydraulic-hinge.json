@@ -1,0 +1,66 @@
+{
+  "model": "JL607",
+  "slug": "jl607-hydraulic-hinge",
+  "name": "Hydraulic Hinge",
+  "nameZh": "三维可调液压暗铰链",
+  "series": "Hydraulic Hinge",
+  "categoryPath": [
+    "floor-springs-and-pivots",
+    "hydraulic-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Zinc Alloy pull handle.",
+  "specs": [
+    {
+      "label": "Variants",
+      "value": "JL607.50 / JL607.70"
+    },
+    {
+      "label": "Set configuration",
+      "value": "Two hydraulic / 2+1"
+    },
+    {
+      "label": "Max door width (spindle to edge)",
+      "value": "≤750mm / ≤950mm"
+    },
+    {
+      "label": "Door leaf thickness",
+      "value": "40–60mm"
+    },
+    {
+      "label": "Max door weight",
+      "value": "50kg / 70kg"
+    },
+    {
+      "label": "Max opening angle",
+      "value": "110°"
+    },
+    {
+      "label": "Hold-open range",
+      "value": "90–110°"
+    },
+    {
+      "label": "Closing valve",
+      "value": "Yes"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/jl607-hydraulic-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "JL607 Hydraulic Hinge"
+  },
+  "gallery": [],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "JL607 Hydraulic Hinge | RAYEN",
+  "seoDescription": "Zinc Alloy pull handle."
+}

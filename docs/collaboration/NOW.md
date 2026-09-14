@@ -151,3 +151,31 @@ Claude 2026-09-13：第六批 37 个大拉手、logo 按语言分家、首页三
 ISO/CE 认证页、页眉带对方标与口号的安装说明跨页一概不进站。这是个全新品类，
 开品类记得按 AGENTS.md 第 5 个坑在 5 处注册，否则构建会在 /_not-found 崩。
 | Codex image completion | content/news/*.json (heroImage only), src/data/home.ts, src/data/home-es.ts, src/components/site/editorial-images.config.json, src/components/site/ProductStudies.tsx, public/images/editorial/curated-*, public/images/product-studies/curated-*, scripts/blender/curated-hardware-scenes.py, scripts/build-curated-hardware.mjs, docs/design-references/2026-09-14-curated-hardware/ | Red-cross image replacement, unique covers, real-source scenes and 20-item review; no shared out build | 2026-09-14 |
+
+Claude 2026-09-14：中英文两套产品图 + 天地轴 38 个型号新品类，**已提交推送**。
+
+⚠ 三条给下一个人：
+
+一、**产品图现在是两套，不是一套。**
+`public/images/products-rayen/`（黑色 RAYEN 雷茵，中文站）与
+`public/images/products-rayen-en/`（青绿 RAYEN 字标，英文站）。
+标是烤进像素的，一个文件不可能带两个标。两套都从同一份未打标派生图生成，
+`src/data/rayen.ts` 的 `viewProduct` / `categoriesFor` 为英文 locale 改写路径。
+**改图片流水线时两套都要想到**：`rayen:images:check` 和 `rayen:audit` 都已经按套分别报告。
+
+二、**「从主目录复制一份做底图」是个陷阱。**
+这条链子每个脚本都就地改文件，所以复制到的是「此刻」的样子 —— 第一版英文图因此
+全部双标叠加（青绿压在黑色上，两个都看得见，1,112 张全中）。
+现在靠中文 ledger 的 SHA 判断底图是否已打标，已打标就拒绝并退出；
+打标顺序也固定成 **en → zh**（英文必须从干净底图生成）。
+同一个根还造成过「截 截面形状」重复盖字（09-11）和换 logo 时的双标（09-12）。
+
+三、**四项自动检查当时全是绿的，双标是靠截图目视发现的。**
+因为它们问的是「有没有标」，不问「有几个」。`rayen:audit` 已改成两套各自对着自己的
+logo 审，但「有几个」这个问题现在仍然没有自动答案 —— 换标之后请人眼看一眼。
+
+天地轴新品类 `floor-springs-and-pivots`（地弹簧与天地轴），5 个子类目、38 个型号，
+来自甲方 2026-09-13 给的博克来奥 / DIROCK 两本画册（代理贴牌，已拿用图授权）。
+清单在 `content/rayen/pivot-sets.json`，里面写明了什么进站、什么不进站。
+**不进站的**：封面、对方注册商标页、办公楼、ISO/CE 认证页、页眉带对方标与口号的安装说明跨页。
+**疲劳检测次数按甲方指示不写** —— 我们手上没有报告。

@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 3890,
+  "count": 3928,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -49698,6 +49698,438 @@
       "outputSha256": "aed47c1a71f52b104ae703b551e9961b709bc8bcb313913ee2786125240760c7"
     },
     {
+      "source": "public/images/products/d-1031-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1031-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "5c29e0b471e46248ea8c21774c59c89c4185f8d91274a823c06438c68232d258",
+      "outputSha256": "4348ad419599502b1252a226f7c16ad05790a839ee2edb8e20b62bab8b0ebf15"
+    },
+    {
+      "source": "public/images/products/d-1032-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1032-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3be2cadc6ed0c74dedc8c33c0e4cd93e642c015d951054575ff428142338e9cf",
+      "outputSha256": "f5a7eb5d106cc5dd297fd38975a23e9d7de645989e2cc238372c0a3ebdbfbe0f"
+    },
+    {
+      "source": "public/images/products/d-1033-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1033-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ecae9d85ad055ea1eee55eeb56a27bbae7b74e021014e74a2de7621b29a21a44",
+      "outputSha256": "14a01f6210354ab2f4441a652ed5d68360df3e4118e801997a7ffc6adbed6338"
+    },
+    {
+      "source": "public/images/products/d-1042-glass-door-top-patch.webp",
+      "output": "public/images/products-hyde/d-1042-glass-door-top-patch.webp",
+      "width": 626,
+      "height": 648,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 75,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "2dcdfec5d5e5a92b1ffe2ef7702581e47fae6d1f80952f0c0784aac15349df50",
+      "outputSha256": "ed7cb9b827fb225f48fd9599effb76eb35b63e7d27d02233cc7157c2d2974d59"
+    },
+    {
+      "source": "public/images/products/d-1043-glass-door-top-patch.webp",
+      "output": "public/images/products-hyde/d-1043-glass-door-top-patch.webp",
+      "width": 621,
+      "height": 648,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 75,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "774985e48cad97c2238a27ae49482b1d2edba11bce56e1ac3f3dab273c465e4e",
+      "outputSha256": "5d299b6239f8c0d49400d19a39aed7711960c9572f584f5344625e1223661747"
+    },
+    {
+      "source": "public/images/products/d-1051-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1051-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "c4e969f011f387a55e4799d96866a945ac77ca6678c682ddfccbe29c57c4efbb",
+      "outputSha256": "44c5590933a9b838637bd6f13623c066fa0bc2eaf9084e8cbb94ca194dd5c015"
+    },
+    {
+      "source": "public/images/products/d-1067-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1067-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "cf0fbb665e940304e2cc60d89375bdc08bc0884f06089914ddc6604d43e6a709",
+      "outputSha256": "56564c9cf8bf356bfed3d6252bfc54f5570d90e3369fb09fc313436d42b2428d"
+    },
+    {
+      "source": "public/images/products/d-1068-floor-spring.webp",
+      "output": "public/images/products-hyde/d-1068-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ebc3995ab6e08aecf1da0a4602d2ffbdf07d849b61ee526877a4952bb4c4bac0",
+      "outputSha256": "6dfc51a4ecb19a503a459107fdd20ba0931141264acf9d9922f777e2f3aeef73"
+    },
+    {
+      "source": "public/images/products/d-3001-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3001-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9b27ce53633ad8d25a2566dac271feddcab062fd3d7a6381e8d90471aef8a3e6",
+      "outputSha256": "bee49b4ddef52dd6a8c4409c5c8be6c7cd1742d8654c3379380e254473aaa6b7"
+    },
+    {
+      "source": "public/images/products/d-3002-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3002-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b1f8d01a6e39605662c744c60b9e6440d7593a80b314c1f87a5f8b474c12b850",
+      "outputSha256": "538273221e3b2fe2f1594119a725135b40b531cc1eaf4357ce9766689f302cc5"
+    },
+    {
+      "source": "public/images/products/d-3010-top-pivot.webp",
+      "output": "public/images/products-hyde/d-3010-top-pivot.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "0ecc5685bc42c6031dc84db690d860906f9e96d62f177ffc2d3caa6e34ad0cbc",
+      "outputSha256": "215f0f5e0c26de2ff310c59ffdb81d7d1465f286f1d304954cfbd8e7ef816e14"
+    },
+    {
+      "source": "public/images/products/d-3011-top-pivot.webp",
+      "output": "public/images/products-hyde/d-3011-top-pivot.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "0eb5b1539d931cf34214d97a3ae9756d132165d5e801fbbf036d905565495a0c",
+      "outputSha256": "ba5f78f26898db054d0df8d54f55e1e6e33391a0ddf5d9878342d04d4a3d2c00"
+    },
+    {
+      "source": "public/images/products/d-3011a-top-pivot.webp",
+      "output": "public/images/products-hyde/d-3011a-top-pivot.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "a2b7f29826201302e1d5928a444f111f8f8332ee5d0ed3d9fefd63e8e0bdf27c",
+      "outputSha256": "7ff13370adf6319555181fc7e79a65d7ddb13cce67008848d3c9f87d44b718cd"
+    },
+    {
+      "source": "public/images/products/d-3012-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3012-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "93d0b691c550fa8abd1c2e311581e63a9b77de1f58d8a7408450c4bee0343042",
+      "outputSha256": "6d7fb8aa6b534a4e58685ca76f1d3273b71a77b958ef1d007b9447622543685e"
+    },
+    {
+      "source": "public/images/products/d-3013-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3013-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "417e1a865cb76350cd942328dd565c2483670fb25744154feeac8529f9e64ff0",
+      "outputSha256": "1b1689635e7df212a7e3446fc2322081640702708600d38d969d6e65b7250cda"
+    },
+    {
+      "source": "public/images/products/d-3015-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3015-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3abe4e3e0dcd320880d08554595233483c33ef5cce97d6d59c82675eedd97cb2",
+      "outputSha256": "3ce1babcf2f597db40b243f28df61274157c58da029462e9f7cceb9230e5fc65"
+    },
+    {
+      "source": "public/images/products/d-3016-floor-spring.webp",
+      "output": "public/images/products-hyde/d-3016-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3f8d9353b31b33913fd54243f3275538d2492161fa5c92fcd90afd5a9866251e",
+      "outputSha256": "b18be3edc5057f25f5827437577e6dc4104f0b7ee8c8be2c0ff898090bb1f250"
+    },
+    {
+      "source": "public/images/products/d-3017-glass-door-top-patch.webp",
+      "output": "public/images/products-hyde/d-3017-glass-door-top-patch.webp",
+      "width": 702,
+      "height": 648,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 84,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9a3b92ce8d0db3ed9538a557a5e528f74346d780eaefe3623d763384a8d3ddd2",
+      "outputSha256": "e43380fde87882db5a7acc46d64d03b62b0baec636f1756fcc1d68537d401928"
+    },
+    {
+      "source": "public/images/products/d-3018-glass-door-top-patch.webp",
+      "output": "public/images/products-hyde/d-3018-glass-door-top-patch.webp",
+      "width": 702,
+      "height": 648,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 84,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ba6a7872104de6ec4d5153a44597397e95fd19dc8a3e8ccb3f67d3f5ac929ce0",
+      "outputSha256": "615616f886986b247d1f61fc63b16ce3b443f3753c22344cf10970b95018bb7e"
+    },
+    {
+      "source": "public/images/products/d-3019-top-pivot.webp",
+      "output": "public/images/products-hyde/d-3019-top-pivot.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "724125e04af9e0ef06d8ca6ffa5a701aac8d4a2fcf8fe600666e0629529acc2a",
+      "outputSha256": "2c0bb2d5eabdd00ea928eb3df42b2572e28909fcd6dedcf2daa63b160fe7541e"
+    },
+    {
+      "source": "public/images/products/d-3021-top-pivot.webp",
+      "output": "public/images/products-hyde/d-3021-top-pivot.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "e0eb91c0caf2507e82f45485308243c09f2576dbb257a85cee92299f78af8ce8",
+      "outputSha256": "e5fb7c47301fa4887ecc41658230ac2083a8987f277bc6d4a99fc345ec16ffed"
+    },
+    {
+      "source": "public/images/products/d-5061-floor-spring.webp",
+      "output": "public/images/products-hyde/d-5061-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "80695eac27c08e6796cf87da3be925a7223ee31f53096a6083bb36749fd936c9",
+      "outputSha256": "d0db2953cfe9bf249119d3b88b9ac2f01d4c71f4bdfec1a422d738ec793cbcbc"
+    },
+    {
+      "source": "public/images/products/d-5062-floor-spring.webp",
+      "output": "public/images/products-hyde/d-5062-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b3ca9ffc276bc0d47815ad79af073c6233b94c36d035e0d33ce13de4ac230bc6",
+      "outputSha256": "eb89e96d51b67583b58e253a2cd42c7d7772d43c3fec7a1bc882cdcb876f79ae"
+    },
+    {
+      "source": "public/images/products/d-5063-floor-spring.webp",
+      "output": "public/images/products-hyde/d-5063-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9b157bae5e569de203792be3afa1234d60f1cab2005a6521fb2f2baa71c88302",
+      "outputSha256": "1023283559d742e282ad02d9e1c6bd0bcee5e6caaa79cf7345ac0c4d72d30962"
+    },
+    {
       "source": "public/images/products/d01-ab-deadbolts-2.webp",
       "output": "public/images/products-hyde/d01-ab-deadbolts-2.webp",
       "width": 1000,
@@ -53830,6 +54262,78 @@
       },
       "sourceSha256": "03ba5bcb4238a8b3e0660b278bfca193d04cb5b12f6940a9293662d54ca392d7",
       "outputSha256": "1815241f669542a860938bcef496b131e22dda557f538a399107023a445a0308"
+    },
+    {
+      "source": "public/images/products/dz-2031-floor-spring.webp",
+      "output": "public/images/products-hyde/dz-2031-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "10aa853e1a03025666d37ddad77c380fc3b6242f825047cfc03a27a39dcc2676",
+      "outputSha256": "77849962b1871aba8b68803adc1ebec497f6c15ff183b47bdb0542399571ea64"
+    },
+    {
+      "source": "public/images/products/dz-2039-floor-spring.webp",
+      "output": "public/images/products-hyde/dz-2039-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "532e9353d494ff9dd7e64e8c88a09ea2d92d8be5a674534dcb86a5ec850b5891",
+      "outputSha256": "5bfe55673a0783408e7aae0eadd02ffd3ade7166387728b6712ec135179b723c"
+    },
+    {
+      "source": "public/images/products/dz-2086-floor-spring.webp",
+      "output": "public/images/products-hyde/dz-2086-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "2e4e53217e608fb06f32c0319563c176d33ae733b68d999da38929aaa1f30f06",
+      "outputSha256": "af996011d95d0d09adea529c73d7c9cb0edb2ffd7c4871ad2818de2101958d86"
+    },
+    {
+      "source": "public/images/products/dz-2087-floor-spring.webp",
+      "output": "public/images/products-hyde/dz-2087-floor-spring.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6c52a63b89b45ddd7da31c7dc47b1e84cb7e62a27df9721759a89fbd934d5b85",
+      "outputSha256": "31f236a801ff95a6d7f933cf0de57a3e8f4109652d98000ef91e897711c1201e"
     },
     {
       "source": "public/images/products/eh01-lever-handle-10.webp",
@@ -68881,6 +69385,78 @@
       },
       "sourceSha256": "295c791aad1b975ca86c8f8551948205076e5ccb2d33d5276606269190b2a72e",
       "outputSha256": "582b2bd9a18c2be268e55a43c9bfd9aa8bef84833191cf976a2320ed8bbb7f9a"
+    },
+    {
+      "source": "public/images/products/jl606-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/jl606-hydraulic-hinge.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "1d5f84baea5316095ccaba338818ba4162d15e1e4fda8ab4f4d1d646355b40dc",
+      "outputSha256": "e9e75606b10a9802cd360eb2c661f2211ce0da2d9830f6edfb83af944cd3b598"
+    },
+    {
+      "source": "public/images/products/jl607-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/jl607-hydraulic-hinge.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "77bf3b44d021d2131eddc0a252bf1b9390a89b0605b470129f80f6650fd97fc9",
+      "outputSha256": "133e3af4cc2ba599066362f4bd2f58b806b5169a3adc6338a52cb1564ed057eb"
+    },
+    {
+      "source": "public/images/products/jl608-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/jl608-hydraulic-hinge.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "27ca398ea1e0ca667163e0a4f6c05dee30747394d4eeaa36fac69c50bb8380e0",
+      "outputSha256": "22b938c1c119b7f02e06484bc7feb6516b9a2ed295f5bad162038beb72954d00"
+    },
+    {
+      "source": "public/images/products/jl609-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/jl609-hydraulic-hinge.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "53529dd94f85561f33fe04da6d1f8f87a8e7a20181083b16a1af1ae596bd9647",
+      "outputSha256": "ca8b48ca9c768330d1cac1d12422cb9eebf4d6de7088076fb6c0865d0d3fabce"
     },
     {
       "source": "public/images/products/ju-051-door-closer-2.webp",
@@ -86399,6 +86975,114 @@
       },
       "sourceSha256": "193b1989d62f79cc22c0e71db92892916a66d3844df81d6171786b62ff2eaef4",
       "outputSha256": "bca7942d607c98ed3a9fe819a7b9ccbb51baa2f5345088bf891b9ad07920d4cc"
+    },
+    {
+      "source": "public/images/products/t-1073-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1073-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "b25f788445d475cc0b432ae380a50c22c9245df3b5e18597f10e9055fa03dc58",
+      "outputSha256": "3ca744dcdc8cf6fe1e8ff12a1b7bcf8b176002bc9d0f62c8184a04a799ae48f9"
+    },
+    {
+      "source": "public/images/products/t-1075-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1075-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ce58dcd7cfdf52ef79fdd4bdb4ccc60e25ff2615b22ddbf8876e08acd8b3a6cd",
+      "outputSha256": "f4b1de74f008bb1ae0fe9f9affd3c09f0c67eab1bd48e078894c74ca5f31ffe6"
+    },
+    {
+      "source": "public/images/products/t-1076-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1076-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "eaa8c6d0cea3a179818643b2eba6ebdca20701bfdf5a014bfe832e94cfb5c7e1",
+      "outputSha256": "f23eb2dece9b76b07ce142e3fcc76c66ae8eed109e8796ba34a9d16feece1759"
+    },
+    {
+      "source": "public/images/products/t-1077-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1077-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "ee6dfbbbf7d57bd13d39e46f44f615eda02ddc36ca2daa52a5c8261ca60b519f",
+      "outputSha256": "b9063c320328bd529da82738383fc42bf7572537a9a99db257257b66de0fac7a"
+    },
+    {
+      "source": "public/images/products/t-1078-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1078-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "7aae830c0d4dda690a767d0e7fc18a4c0420f549ca614b11335bc94d6d96cad3",
+      "outputSha256": "ec9abfdfe0c3dd8ad8019a8174c47bbd1e4fe8ce3f208f246e2f5c0a495f9d28"
+    },
+    {
+      "source": "public/images/products/t-1079-overhead-door-closer.webp",
+      "output": "public/images/products-hyde/t-1079-overhead-door-closer.webp",
+      "width": 1057,
+      "height": 876,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "bd2e8ffeffccd98cad3403517f3edc6a9fa9f5bfedc9a718a6f23b3e8d626e37",
+      "outputSha256": "8bc6c5a987dfc69eb03a8220fae6aa7ad39a4e13d30caf96d28cec65b173d3f2"
     },
     {
       "source": "public/images/products/t1018-stainless-steel-handle-2.webp",

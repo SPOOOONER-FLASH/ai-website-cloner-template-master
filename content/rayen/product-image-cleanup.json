@@ -12,7 +12,7 @@
   "counts": {
     "refused": 436,
     "cleanable": 1217,
-    "already-clean": 2230
+    "already-clean": 2268
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -7831,6 +7831,102 @@
       "source": "f7e02cf9f9a0c8e4ad9a03a7a2f845221f821c04a9ead4784bc34d92146f72c1",
       "status": "cleanable"
     },
+    "d-1031-floor-spring.webp": {
+      "source": "5c29e0b471e46248ea8c21774c59c89c4185f8d91274a823c06438c68232d258",
+      "status": "already-clean"
+    },
+    "d-1032-floor-spring.webp": {
+      "source": "3be2cadc6ed0c74dedc8c33c0e4cd93e642c015d951054575ff428142338e9cf",
+      "status": "already-clean"
+    },
+    "d-1033-floor-spring.webp": {
+      "source": "ecae9d85ad055ea1eee55eeb56a27bbae7b74e021014e74a2de7621b29a21a44",
+      "status": "already-clean"
+    },
+    "d-1042-glass-door-top-patch.webp": {
+      "source": "2dcdfec5d5e5a92b1ffe2ef7702581e47fae6d1f80952f0c0784aac15349df50",
+      "status": "already-clean"
+    },
+    "d-1043-glass-door-top-patch.webp": {
+      "source": "774985e48cad97c2238a27ae49482b1d2edba11bce56e1ac3f3dab273c465e4e",
+      "status": "already-clean"
+    },
+    "d-1051-floor-spring.webp": {
+      "source": "c4e969f011f387a55e4799d96866a945ac77ca6678c682ddfccbe29c57c4efbb",
+      "status": "already-clean"
+    },
+    "d-1067-floor-spring.webp": {
+      "source": "cf0fbb665e940304e2cc60d89375bdc08bc0884f06089914ddc6604d43e6a709",
+      "status": "already-clean"
+    },
+    "d-1068-floor-spring.webp": {
+      "source": "ebc3995ab6e08aecf1da0a4602d2ffbdf07d849b61ee526877a4952bb4c4bac0",
+      "status": "already-clean"
+    },
+    "d-3001-floor-spring.webp": {
+      "source": "9b27ce53633ad8d25a2566dac271feddcab062fd3d7a6381e8d90471aef8a3e6",
+      "status": "already-clean"
+    },
+    "d-3002-floor-spring.webp": {
+      "source": "b1f8d01a6e39605662c744c60b9e6440d7593a80b314c1f87a5f8b474c12b850",
+      "status": "already-clean"
+    },
+    "d-3010-top-pivot.webp": {
+      "source": "0ecc5685bc42c6031dc84db690d860906f9e96d62f177ffc2d3caa6e34ad0cbc",
+      "status": "already-clean"
+    },
+    "d-3011-top-pivot.webp": {
+      "source": "0eb5b1539d931cf34214d97a3ae9756d132165d5e801fbbf036d905565495a0c",
+      "status": "already-clean"
+    },
+    "d-3011a-top-pivot.webp": {
+      "source": "a2b7f29826201302e1d5928a444f111f8f8332ee5d0ed3d9fefd63e8e0bdf27c",
+      "status": "already-clean"
+    },
+    "d-3012-floor-spring.webp": {
+      "source": "93d0b691c550fa8abd1c2e311581e63a9b77de1f58d8a7408450c4bee0343042",
+      "status": "already-clean"
+    },
+    "d-3013-floor-spring.webp": {
+      "source": "417e1a865cb76350cd942328dd565c2483670fb25744154feeac8529f9e64ff0",
+      "status": "already-clean"
+    },
+    "d-3015-floor-spring.webp": {
+      "source": "3abe4e3e0dcd320880d08554595233483c33ef5cce97d6d59c82675eedd97cb2",
+      "status": "already-clean"
+    },
+    "d-3016-floor-spring.webp": {
+      "source": "3f8d9353b31b33913fd54243f3275538d2492161fa5c92fcd90afd5a9866251e",
+      "status": "already-clean"
+    },
+    "d-3017-glass-door-top-patch.webp": {
+      "source": "9a3b92ce8d0db3ed9538a557a5e528f74346d780eaefe3623d763384a8d3ddd2",
+      "status": "already-clean"
+    },
+    "d-3018-glass-door-top-patch.webp": {
+      "source": "ba6a7872104de6ec4d5153a44597397e95fd19dc8a3e8ccb3f67d3f5ac929ce0",
+      "status": "already-clean"
+    },
+    "d-3019-top-pivot.webp": {
+      "source": "724125e04af9e0ef06d8ca6ffa5a701aac8d4a2fcf8fe600666e0629529acc2a",
+      "status": "already-clean"
+    },
+    "d-3021-top-pivot.webp": {
+      "source": "e0eb91c0caf2507e82f45485308243c09f2576dbb257a85cee92299f78af8ce8",
+      "status": "already-clean"
+    },
+    "d-5061-floor-spring.webp": {
+      "source": "80695eac27c08e6796cf87da3be925a7223ee31f53096a6083bb36749fd936c9",
+      "status": "already-clean"
+    },
+    "d-5062-floor-spring.webp": {
+      "source": "b3ca9ffc276bc0d47815ad79af073c6233b94c36d035e0d33ce13de4ac230bc6",
+      "status": "already-clean"
+    },
+    "d-5063-floor-spring.webp": {
+      "source": "9b157bae5e569de203792be3afa1234d60f1cab2005a6521fb2f2baa71c88302",
+      "status": "already-clean"
+    },
     "d01-ab-deadbolts-2.webp": {
       "source": "5dbb632687f0b2ec016f77346e4ae07ea4e42cd2e87f00d29e7c3f12691ea458",
       "status": "already-clean"
@@ -8545,6 +8641,22 @@
     },
     "dv12-s-door-viewer.webp": {
       "source": "03ba5bcb4238a8b3e0660b278bfca193d04cb5b12f6940a9293662d54ca392d7",
+      "status": "already-clean"
+    },
+    "dz-2031-floor-spring.webp": {
+      "source": "10aa853e1a03025666d37ddad77c380fc3b6242f825047cfc03a27a39dcc2676",
+      "status": "already-clean"
+    },
+    "dz-2039-floor-spring.webp": {
+      "source": "532e9353d494ff9dd7e64e8c88a09ea2d92d8be5a674534dcb86a5ec850b5891",
+      "status": "already-clean"
+    },
+    "dz-2086-floor-spring.webp": {
+      "source": "2e4e53217e608fb06f32c0319563c176d33ae733b68d999da38929aaa1f30f06",
+      "status": "already-clean"
+    },
+    "dz-2087-floor-spring.webp": {
+      "source": "6c52a63b89b45ddd7da31c7dc47b1e84cb7e62a27df9721759a89fbd934d5b85",
       "status": "already-clean"
     },
     "eh01-lever-handle-10.webp": {
@@ -11480,6 +11592,22 @@
       "source": "295c791aad1b975ca86c8f8551948205076e5ccb2d33d5276606269190b2a72e",
       "status": "cleanable"
     },
+    "jl606-hydraulic-hinge.webp": {
+      "source": "1d5f84baea5316095ccaba338818ba4162d15e1e4fda8ab4f4d1d646355b40dc",
+      "status": "already-clean"
+    },
+    "jl607-hydraulic-hinge.webp": {
+      "source": "77bf3b44d021d2131eddc0a252bf1b9390a89b0605b470129f80f6650fd97fc9",
+      "status": "already-clean"
+    },
+    "jl608-hydraulic-hinge.webp": {
+      "source": "27ca398ea1e0ca667163e0a4f6c05dee30747394d4eeaa36fac69c50bb8380e0",
+      "status": "already-clean"
+    },
+    "jl609-hydraulic-hinge.webp": {
+      "source": "53529dd94f85561f33fe04da6d1f8f87a8e7a20181083b16a1af1ae596bd9647",
+      "status": "already-clean"
+    },
     "ju-051-door-closer-2.webp": {
       "source": "cdc71a3f9d2ec7033126aaf7fd834e624071f9d1111f092a20f56889d54ff9c8",
       "status": "already-clean"
@@ -14235,6 +14363,30 @@
     "stainless-steel-wall-hook.webp": {
       "source": "193b1989d62f79cc22c0e71db92892916a66d3844df81d6171786b62ff2eaef4",
       "status": "cleanable"
+    },
+    "t-1073-overhead-door-closer.webp": {
+      "source": "b25f788445d475cc0b432ae380a50c22c9245df3b5e18597f10e9055fa03dc58",
+      "status": "already-clean"
+    },
+    "t-1075-overhead-door-closer.webp": {
+      "source": "ce58dcd7cfdf52ef79fdd4bdb4ccc60e25ff2615b22ddbf8876e08acd8b3a6cd",
+      "status": "already-clean"
+    },
+    "t-1076-overhead-door-closer.webp": {
+      "source": "eaa8c6d0cea3a179818643b2eba6ebdca20701bfdf5a014bfe832e94cfb5c7e1",
+      "status": "already-clean"
+    },
+    "t-1077-overhead-door-closer.webp": {
+      "source": "ee6dfbbbf7d57bd13d39e46f44f615eda02ddc36ca2daa52a5c8261ca60b519f",
+      "status": "already-clean"
+    },
+    "t-1078-overhead-door-closer.webp": {
+      "source": "7aae830c0d4dda690a767d0e7fc18a4c0420f549ca614b11335bc94d6d96cad3",
+      "status": "already-clean"
+    },
+    "t-1079-overhead-door-closer.webp": {
+      "source": "bd2e8ffeffccd98cad3403517f3edc6a9fa9f5bfedc9a718a6f23b3e8d626e37",
+      "status": "already-clean"
     },
     "t1018-stainless-steel-handle-2.webp": {
       "source": "e229591da11908fe7661da972ad765d9d86498f4cf94077663e3c007c979d315",

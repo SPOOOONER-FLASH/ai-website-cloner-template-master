@@ -13,6 +13,7 @@
   ],
   "specLabels": {
     "2. Dual center distances": "双中心距",
+    "90° hold-open": "90°辅助定位",
     "Accessories": "配件",
     "Additional Info": "补充说明",
     "Alarm Function": "报警功能",
@@ -32,6 +33,7 @@
     "Base width": "底座宽度",
     "Body": "主体",
     "Body diameter": "主体直径",
+    "Body size": "主体尺寸",
     "Bolt projection": "舌伸出",
     "Bolts": "插销",
     "Bracket": "支架",
@@ -46,8 +48,10 @@
     "Centre distance": "中心距",
     "Centre distances": "中心距",
     "Chassis": "锁芯座",
+    "Closing force": "闭门力矩",
     "Closing Force": "闭门力",
     "Closing Sequence": "关门顺序",
+    "Closing valve": "闭速调节阀",
     "Color": "颜色",
     "Color Options": "可选颜色",
     "Compatibility": "兼容性",
@@ -57,6 +61,7 @@
     "Cover material": "盖板材质",
     "Cross bore": "锁孔直径",
     "Customization": "定制",
+    "Cut-out": "开孔尺寸",
     "Cycle life": "耐久次数",
     "Cylinder": "锁芯",
     "Cylinder apertures": "葫芦孔",
@@ -75,10 +80,12 @@
     "Diameter": "直径",
     "Diameter size": "直径尺寸",
     "Door cutout": "门体开孔",
+    "Door leaf thickness": "门扇厚度",
     "Door thickness": "适用门厚",
     "Door Thickness Range": "适用门厚范围",
     "Door Type": "门型",
     "Door Width": "门宽",
+    "Double action": "双向开关门",
     "Drop": "下垂长度",
     "Durability": "耐久性",
     "Exposed Trim Material": "外露件材质",
@@ -108,6 +115,7 @@
     "Glass cutout": "玻璃开孔",
     "Glass door thickness": "玻璃门厚度",
     "Glass gap": "玻璃间隙",
+    "Glass thickness": "玻璃厚度",
     "Grip centre distance": "拉手中心距",
     "Grip length": "拉手长度",
     "Grip reach": "握把伸出",
@@ -122,6 +130,7 @@
     "Hardware Finish": "五金表面处理",
     "Height": "高度",
     "Height above fixing": "固定点以上高度",
+    "Hold-open range": "停位角度",
     "Hole Count": "孔数",
     "Hook arm": "钩臂",
     "Hook bolt": "钩舌",
@@ -172,9 +181,12 @@
     "Market": "市场",
     "Material": "材质",
     "Max Bearing Capacity": "最大承重",
+    "Max door thickness": "最大门厚",
     "Max door weight": "最大门扇重量",
+    "Max door width (spindle to edge)": "轴芯离边最大门宽",
     "Max opening angle": "最大开启角度",
     "Mechanism": "机构",
+    "Min door thickness": "最小门厚",
     "Minimum order": "最小起订量",
     "Minimum wall depth": "墙体最小厚度",
     "Model": "型号",
@@ -200,6 +212,7 @@
     "Overall length": "总长",
     "Overall width": "总宽度",
     "Packing": "包装",
+    "Pairs with": "配套型号",
     "Pieces per carton": "每箱数量",
     "Pin Material": "销轴材质",
     "Plate height": "面板高度",
@@ -227,6 +240,7 @@
     "Second centre": "第二中心距",
     "Section": "截面",
     "Series": "系列",
+    "Set configuration": "组合方式",
     "Set Includes": "套装包含",
     "Size": "尺寸",
     "Size1": "尺寸 1",
@@ -266,11 +280,13 @@
     "Tube diameter": "管径",
     "Tube section": "管截面",
     "Tube Thickness": "管壁厚度",
+    "Two-stage closing valve": "闭速两段调节阀",
     "Type": "类型",
     "Unlocking Method": "开锁方式",
     "Upper hook": "上钩",
     "Use": "用途",
     "Used with": "配套型号",
+    "Variants": "规格档位",
     "Viewing angle": "可视角度",
     "Viewing Angle": "可视角度",
     "Wall cutout": "墙面开孔",
@@ -1060,6 +1076,50 @@
     [
       "inside",
       "内侧"
+    ],
+    [
+      "Yes",
+      "有"
+    ],
+    [
+      "Single action",
+      "单向"
+    ],
+    [
+      "Aluminium + steel",
+      "铝 + 钢"
+    ],
+    [
+      "45# steel",
+      "45# 钢"
+    ],
+    [
+      "Aerospace aluminium",
+      "太空铝"
+    ],
+    [
+      "Two hydraulic",
+      "两只液压"
+    ],
+    [
+      "Floor Spring",
+      "地弹簧"
+    ],
+    [
+      "Top Pivot",
+      "可调顶轴"
+    ],
+    [
+      "Glass Door Top Patch",
+      "玻璃门上夹"
+    ],
+    [
+      "Overhead Door Closer",
+      "顶装闭门器"
+    ],
+    [
+      "Hydraulic Hinge",
+      "液压合页"
     ]
   ]
 }

@@ -398,6 +398,16 @@ export const OPTION_NOTES: Record<string, string> = {
   "door-viewers": "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.",
   "door-flush-bolts":
     "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.",
+  "floor-springs-and-pivots":
+    "Pivot hardware: the door hangs on a spindle top and bottom rather than on hinges, and the floor spring both carries it and closes it.",
+  "floor-springs":
+    "Concealed in the floor, carrying the door's whole weight and closing it — the door swings on the spindle, not on hinges.",
+  "top-pivots": "The upper half of a pivot set: it locates the door, the floor spring carries it.",
+  "pivot-top-patches":
+    "Clamps the top of a frameless glass leaf onto the pivot. Chosen to match the floor spring below it.",
+  "overhead-door-closers":
+    "Mounted at the head rather than in the floor, for doors where the floor cannot be cut.",
+  "hydraulic-hinges": "Closer and hinge in one casting — no floor work, no overhead arm.",
   "brass-pull-handles":
     "Cast and turned brass pulls in a gold finish — the same fixings as the steel range, a different metal.",
   "glass-door-handles": "Pulls fixed through drilled toughened glass, with no frame to fix to.",
@@ -462,6 +472,16 @@ export const OPTION_NOTES_ES: Record<string, string> = {
     "Mantiene cerrada la hoja pasiva de una puerta de dos hojas, embutido a haces para que nada sobresalga del canto.",
   "brass-pull-handles":
     "Tiradores de latón fundido y torneado, acabado dorado; la misma fijación que la gama de acero, otro metal.",
+  "floor-springs-and-pivots":
+    "Herrajes pivotantes: la hoja gira sobre un eje arriba y abajo en lugar de bisagras, y el pivote de piso la sostiene y la cierra.",
+  "floor-springs":
+    "Oculto en el piso: sostiene todo el peso de la hoja y la cierra; la puerta gira sobre el eje, no sobre bisagras.",
+  "top-pivots": "La mitad superior del conjunto pivotante: guía la hoja, el pivote de piso la sostiene.",
+  "pivot-top-patches":
+    "Sujeta el canto superior del vidrio templado al eje. Se elige a juego con el pivote de piso.",
+  "overhead-door-closers":
+    "Montado en el dintel y no en el piso, para puertas donde no se puede romper el suelo.",
+  "hydraulic-hinges": "Cierrapuertas y bisagra en una sola pieza: sin obra en el piso ni brazo a la vista.",
   "glass-door-handles": "Tiradores pasantes sobre vidrio templado taladrado, sin marco donde fijar.",
   "glass-door-patch-fittings":
     "Herrajes de esquina que aprietan el vidrio templado y alojan el pivote, la cerradura o el travesaño.",

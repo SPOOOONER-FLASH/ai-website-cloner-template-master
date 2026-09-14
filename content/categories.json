@@ -490,6 +490,81 @@
       },
       "nameEs": "Cerraduras de gancho para correderas",
       "summaryEs": "Herrajes de gancho para puertas corredizas y perfiles estrechos."
+    },
+    {
+      "slug": "floor-springs-and-pivots",
+      "name": "Floor Springs and Door Pivots",
+      "nameZh": "地弹簧与天地轴",
+      "summary": "Floor springs, top pivots, overhead closers and hydraulic hinges for pivot-hung timber, metal and frameless glass doors.",
+      "image": {
+        "src": "/images/products/d-5061-floor-spring.webp",
+        "ratio": "1 / 1",
+        "label": "D-5061 floor spring"
+      },
+      "children": [
+        {
+          "slug": "floor-springs",
+          "name": "Floor Springs",
+          "nameZh": "地弹簧",
+          "summary": "Concealed floor springs for pivot-hung doors.",
+          "image": {
+            "src": "/images/products/d-5061-floor-spring.webp",
+            "ratio": "1 / 1",
+            "label": "D-5061 floor spring"
+          },
+          "nameEs": "Pivotes de piso"
+        },
+        {
+          "slug": "top-pivots",
+          "name": "Top Pivots",
+          "nameZh": "可调顶轴",
+          "summary": "Adjustable top pivots, the upper half of a pivot set.",
+          "image": {
+            "src": "/images/products/d-3010-top-pivot.webp",
+            "ratio": "1 / 1",
+            "label": "D-3010 top pivot"
+          },
+          "nameEs": "Pivotes superiores"
+        },
+        {
+          "slug": "pivot-top-patches",
+          "name": "Glass Door Top Patches",
+          "nameZh": "玻璃门上夹",
+          "summary": "Top patch fittings that clamp frameless glass onto a pivot set.",
+          "image": {
+            "src": "/images/products/d-3017-glass-door-top-patch.webp",
+            "ratio": "1 / 1",
+            "label": "D-3017 glass door top patch"
+          },
+          "nameEs": "Herrajes superiores para vidrio"
+        },
+        {
+          "slug": "overhead-door-closers",
+          "name": "Overhead Door Closers",
+          "nameZh": "顶装闭门器",
+          "summary": "Overhead and concealed cam closers for pivot-hung doors.",
+          "image": {
+            "src": "/images/products/t-1073-overhead-door-closer.webp",
+            "ratio": "1 / 1",
+            "label": "T-1073 overhead door closer"
+          },
+          "nameEs": "Cierrapuertas superiores"
+        },
+        {
+          "slug": "hydraulic-hinges",
+          "name": "Hydraulic Hinges",
+          "nameZh": "液压合页",
+          "summary": "Self-closing hydraulic hinges, closer and hinge in one.",
+          "image": {
+            "src": "/images/products/jl606-hydraulic-hinge.webp",
+            "ratio": "1 / 1",
+            "label": "JL606 hydraulic hinge"
+          },
+          "nameEs": "Bisagras hidráulicas"
+        }
+      ],
+      "nameEs": "Pivotes de piso y ejes de puerta",
+      "summaryEs": "Pivotes de piso, pivotes superiores, cierrapuertas y bisagras hidráulicas para puertas pivotantes de madera, metálicas y de vidrio templado."
     }
   ]
 }
