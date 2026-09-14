@@ -1,0 +1,64 @@
+{
+  "model": "G1131",
+  "slug": "g1131-glass-door-handle",
+  "name": "Glass Door Handle",
+  "nameZh": "玻璃门拉手",
+  "series": "Glass Door Handle",
+  "categoryPath": [
+    "glass-door-accessories",
+    "glass-door-handles"
+  ],
+  "styleFamily": "1131",
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "1.7kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/g1131-glass-door-handle.webp",
+    "ratio": "1 / 1",
+    "label": "G1131 Glass Door Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/g1131-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G1131 Glass Door Handle, view 2"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "G1131 Glass Door Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle.",
+  "specSources": {
+    "artunion": {
+      "id": "G1131-01-020",
+      "basis": "sole",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
+}

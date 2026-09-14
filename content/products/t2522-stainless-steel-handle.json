@@ -11,7 +11,16 @@
     "rayen"
   ],
   "summary": "Stainless Steel pull handle.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "下枠及び戸先側：φ10mm  吊元側：φ14mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -29,5 +38,12 @@
   "relatedModels": [],
   "seoTitle": "T2522 Stainless Steel Handle | RAYEN",
   "seoDescription": "Stainless Steel pull handle.",
-  "nameEs": "Manilla de acero inoxidable"
+  "nameEs": "Manilla de acero inoxidable",
+  "specSources": {
+    "artunion": {
+      "id": "T2522-01-001-L",
+      "basis": "sole",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "./Chrome";
 import { Gallery } from "./Gallery";
+import { HeroCarousel } from "./HeroCarousel";
 import { ArrowLink, Button, FactStrip, NoPhoto, Photo, ProductCard, SectionHead, Shell, SpecTable } from "./primitives";
 import {
   absoluteUrl,
@@ -67,12 +68,41 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         {/* 1 — hero */}
         <section className="relative">
           <div className="relative h-[62vh] min-h-[420px] w-full overflow-hidden bg-[var(--color-surface-dark)]">
-            {/* eslint-disable-next-line @next/next/no-img-element -- static export, no optimiser */}
-            <img
-              src="/images/rayen/hero-brass-handles.webp"
-              alt={locale === "zh" ? "青铜色门扇上的一对黄铜大拉手" : "A pair of brass pull handles on a patinated bronze door"}
-              className="h-full w-full object-cover opacity-90"
-              fetchPriority="high"
+            {/*
+              Three frames, one claim. See the note in HeroCarousel.tsx for why the headline
+              does not rotate with them.
+
+              The order is an argument: the part first, because that is what the buyer came
+              for; then the press hall, because a row of punch presses answers "can you make
+              my quantity" before anyone asks; then a die under a press with the blanks
+              beside it, because that is the same claim at the scale of one part.
+
+              factory-laser-cutter.webp is deliberately not in the set — the machine in it
+              carries 大族激光's own branding across the housing, and another firm's logo on
+              our home page is the thing we spent 2026-09-11 taking off the category cards.
+            */}
+            <HeroCarousel
+              label={locale === "zh" ? "首页图片切换" : "Hero image selection"}
+              slides={[
+                {
+                  src: "/images/rayen/hero-brass-handles.webp",
+                  alt:
+                    locale === "zh"
+                      ? "青铜色门扇上的一对黄铜大拉手"
+                      : "A pair of brass pull handles on a patinated bronze door",
+                },
+                {
+                  src: "/images/rayen/factory-press-hall-wide.webp",
+                  alt: locale === "zh" ? "冲床车间，一整排冲床" : "The press hall, a full row of punch presses",
+                },
+                {
+                  src: "/images/rayen/factory-stamping.webp",
+                  alt:
+                    locale === "zh"
+                      ? "冲床上的模具与刚落下的料件"
+                      : "A die under the press with the blanks beside it",
+                },
+              ]}
             />
             {/*
               遮罩比原来轻。原图是冲床车间，本身灰绿、细节杂，要压暗才压得住白字；

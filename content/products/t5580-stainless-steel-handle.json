@@ -1,0 +1,83 @@
+{
+  "model": "T5580",
+  "slug": "t5580-stainless-steel-handle",
+  "name": "Stainless Steel Handle",
+  "nameZh": "门拉手",
+  "series": "Stainless Steel Handle",
+  "categoryPath": [
+    "stainless-steel-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle, 250mm overall on P=223mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=223mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "250mm"
+    },
+    {
+      "label": "Grip reach",
+      "value": "117mm"
+    },
+    {
+      "label": "Projection",
+      "value": "60mm"
+    },
+    {
+      "label": "Weight",
+      "value": "0.9kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/t5580-stainless-steel-handle.webp",
+    "ratio": "1 / 1",
+    "label": "T5580 Stainless Steel Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/t5580-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T5580 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t5580-stainless-steel-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "T5580 Stainless Steel Handle, view 3"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "T5580 Stainless Steel Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 250mm overall on P=223mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T5580-01-001-L250",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
+}

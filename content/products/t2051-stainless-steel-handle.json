@@ -1,0 +1,78 @@
+{
+  "model": "T2051",
+  "slug": "t2051-stainless-steel-handle",
+  "name": "Stainless Steel Handle",
+  "nameZh": "门拉手",
+  "series": "Stainless Steel Handle",
+  "categoryPath": [
+    "stainless-steel-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle, 527mm overall on P=500mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=500mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "527mm"
+    },
+    {
+      "label": "Grip reach",
+      "value": "154mm"
+    },
+    {
+      "label": "Projection",
+      "value": "70mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.3kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/t2051-stainless-steel-handle.webp",
+    "ratio": "1 / 1",
+    "label": "T2051 Stainless Steel Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/t2051-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T2051 Stainless Steel Handle, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "T2051 Stainless Steel Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 527mm overall on P=500mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T2051-01-023",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
+}

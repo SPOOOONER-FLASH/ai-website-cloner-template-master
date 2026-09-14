@@ -38,8 +38,24 @@ function Mark({ locale }: { locale: RayenLocale }) {
       className="flex items-center gap-3"
       aria-label={`${rayen.brand.latin} ${rayen.brand.zh}`}
     >
+      {/*
+        Two marks, one per language. Client, 2026-09-13: 「英文用绿的这个。中文换回原来的带汉字的」.
+
+        The teal wordmark he sent carries no 雷茵. On the Chinese site that matters: a Chinese
+        buyer should see the company's Chinese name, because 「雷茵」 is what he searches for
+        and what will be on the invoice. To an English reader the two characters are
+        decoration he cannot pronounce, and the latin-only lockup is the cleaner mark.
+
+        The product photography keeps the Chinese mark either way — one set of image files
+        serves both languages, so that is a single choice rather than a per-page one. See the
+        note in scripts/brand-rayen-images.mjs.
+      */}
       {/* eslint-disable-next-line @next/next/no-img-element -- static export, no optimiser */}
-      <img src="/images/rayen/logo.webp" alt="RAYEN 雷茵" className="h-7 w-auto md:h-8" />
+      <img
+        src={locale === "zh" ? "/images/rayen/logo.webp" : "/images/rayen/logo-latin.webp"}
+        alt={locale === "zh" ? "RAYEN 雷茵" : "RAYEN"}
+        className="h-7 w-auto md:h-8"
+      />
     </a>
   );
 }

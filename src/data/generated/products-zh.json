@@ -50680,6 +50680,328 @@
       }
     },
     {
+      "slug": "g1111-glass-door-handle",
+      "model": "G1111",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)"
+        },
+        {
+          "label": "总长",
+          "value": "600mm / 900mm / 2000mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "22mm (L600) / Ø22mm (L900) / 30mm (L2000)"
+        },
+        {
+          "label": "立柱直径",
+          "value": "28mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "64mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1111-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1111 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1111-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1111 玻璃门拉手 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1111",
+      "seoTitle": "G1111 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm / 900mm / 2000mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "22mm (L600) / Ø22mm (L900) / 30mm (L2000)"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "28mm"
+          },
+          {
+            "label": "Projection",
+            "value": "64mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1111 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000)."
+      }
+    },
+    {
+      "slug": "g1121-glass-door-handle",
+      "model": "G1121",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=528mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=528mm"
+        },
+        {
+          "label": "总长",
+          "value": "550mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "22mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "64.5mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.3kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1121-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1121 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g1121-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1121 玻璃门拉手 第 10 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1121",
+      "seoTitle": "G1121 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=528mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=528mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=528mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "550mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "22mm"
+          },
+          {
+            "label": "Projection",
+            "value": "64.5mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.3kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1121 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=528mm."
+      }
+    },
+    {
       "slug": "g1130-glass-door-handle",
       "model": "G1130",
       "name": "玻璃门拉手",
@@ -50842,6 +51164,100 @@
         "doorTypes": [],
         "seoTitle": "G1130 Glass Door Handle",
         "seoDescription": "Stainless Steel glass door handle. Centre distance 540mm."
+      }
+    },
+    {
+      "slug": "g1131-glass-door-handle",
+      "model": "G1131",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。",
+      "specs": [
+        {
+          "label": "重量",
+          "value": "1.7kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1131-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1131 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1131-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1131 玻璃门拉手 第 2 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1131",
+      "seoTitle": "G1131 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle.",
+        "specs": [
+          {
+            "label": "Weight",
+            "value": "1.7kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1131 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle."
       }
     },
     {
@@ -51021,6 +51437,818 @@
         "doorTypes": [],
         "seoTitle": "G1159 Glass Door Handle",
         "seoDescription": "Stainless Steel glass door handle. Centre distance P=530mm."
+      }
+    },
+    {
+      "slug": "g1169-glass-door-handle",
+      "model": "G1169",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+        },
+        {
+          "label": "总长",
+          "value": "300mm / 450mm / 600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "65mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.8kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1169-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1169 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-14.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 14 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-15.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 15 张"
+        },
+        {
+          "src": "/images/products-rayen/g1169-glass-door-handle-17.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1169 玻璃门拉手 第 17 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1169",
+      "seoTitle": "G1169 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+          },
+          {
+            "label": "Overall length",
+            "value": "300mm / 450mm / 600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "65mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.8kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1169 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600)."
+      }
+    },
+    {
+      "slug": "g1170-glass-door-handle",
+      "model": "G1170",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=275mm (L450) / P=425mm (L600)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=275mm (L450) / P=425mm (L600)"
+        },
+        {
+          "label": "总长",
+          "value": "450mm / 600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "67.2mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.3kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1170-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1170 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-15.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 15 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-16.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 16 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-17.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 17 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-18.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 18 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-19.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 19 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-20.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 20 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-21.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 21 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-22.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 22 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-23.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 23 张"
+        },
+        {
+          "src": "/images/products-rayen/g1170-glass-door-handle-24.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1170 玻璃门拉手 第 24 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1170",
+      "seoTitle": "G1170 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=275mm (L450) / P=425mm (L600)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=275mm (L450) / P=425mm (L600).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=275mm (L450) / P=425mm (L600)"
+          },
+          {
+            "label": "Overall length",
+            "value": "450mm / 600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø27mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "Ø25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "67.2mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.3kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1170 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=275mm (L450) / P=425mm (L600)."
+      }
+    },
+    {
+      "slug": "g1171-glass-door-handle",
+      "model": "G1171",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+        },
+        {
+          "label": "总长",
+          "value": "300mm / 450mm / 600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25 × 25mm (square)"
+        },
+        {
+          "label": "出墙距离",
+          "value": "65mm"
+        },
+        {
+          "label": "重量",
+          "value": "1kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1171-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1171 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-15.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 15 张"
+        },
+        {
+          "src": "/images/products-rayen/g1171-glass-door-handle-16.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1171 玻璃门拉手 第 16 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1171",
+      "seoTitle": "G1171 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+          },
+          {
+            "label": "Overall length",
+            "value": "300mm / 450mm / 600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25 × 25mm (square)"
+          },
+          {
+            "label": "Projection",
+            "value": "65mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1171 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600)."
+      }
+    },
+    {
+      "slug": "g1195-glass-door-handle",
+      "model": "G1195",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=660mm (L700) / P=1160mm (L1200)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=660mm (L700) / P=1160mm (L1200)"
+        },
+        {
+          "label": "总长",
+          "value": "700mm / 1200mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "20 × 40mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "72mm"
+        },
+        {
+          "label": "重量",
+          "value": "3.4kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1195-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1195 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/g1195-glass-door-handle-14.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1195 玻璃门拉手 第 14 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "G1195 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=660mm (L700) / P=1160mm (L1200)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=660mm (L700) / P=1160mm (L1200).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=660mm (L700) / P=1160mm (L1200)"
+          },
+          {
+            "label": "Overall length",
+            "value": "700mm / 1200mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "20 × 40mm"
+          },
+          {
+            "label": "Projection",
+            "value": "72mm"
+          },
+          {
+            "label": "Weight",
+            "value": "3.4kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1195 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=660mm (L700) / P=1160mm (L1200)."
       }
     },
     {
@@ -52133,6 +53361,155 @@
       }
     },
     {
+      "slug": "g1252-glass-door-handle",
+      "model": "G1252",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm (L447) / P=700+700mm (L1422)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm (L447) / P=700+700mm (L1422)"
+        },
+        {
+          "label": "总长",
+          "value": "447mm / 1422mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "19mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "22mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "61.5mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.5kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1252-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1252 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1252-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1252 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1252-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1252 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1252-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1252 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1252-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1252 玻璃门拉手 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "G1252 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm (L447) / P=700+700mm (L1422)。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm (L447) / P=700+700mm (L1422).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm (L447) / P=700+700mm (L1422)"
+          },
+          {
+            "label": "Overall length",
+            "value": "447mm / 1422mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "19mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "22mm"
+          },
+          {
+            "label": "Projection",
+            "value": "61.5mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.5kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1252 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm (L447) / P=700+700mm (L1422)."
+      }
+    },
+    {
       "slug": "g1255-glass-door-handle",
       "model": "G1255",
       "name": "玻璃门拉手",
@@ -52283,7 +53660,24 @@
         "玻璃门拉手"
       ],
       "summary": "不锈钢玻璃门拉手。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "重量",
+          "value": "2.1kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -52311,7 +53705,24 @@
           "Glass Door Handles"
         ],
         "summary": "Stainless Steel glass door handle.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Weight",
+            "value": "2.1kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",
@@ -52434,6 +53845,150 @@
       }
     },
     {
+      "slug": "g1270-glass-door-handle",
+      "model": "G1270",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "20mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "61mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1270-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1270 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1270-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1270 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1270-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1270 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1270-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1270 玻璃门拉手 第 4 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1270",
+      "seoTitle": "G1270 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "20mm"
+          },
+          {
+            "label": "Projection",
+            "value": "61mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1270 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
+      }
+    },
+    {
       "slug": "g1286-glass-door-handle",
       "model": "G1286",
       "name": "玻璃门拉手",
@@ -52448,7 +54003,24 @@
         "玻璃门拉手"
       ],
       "summary": "不锈钢玻璃门拉手。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "重量",
+          "value": "1.2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -52476,7 +54048,24 @@
           "Glass Door Handles"
         ],
         "summary": "Stainless Steel glass door handle.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Weight",
+            "value": "1.2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",
@@ -52485,6 +54074,152 @@
         "doorTypes": [],
         "seoTitle": "G1286 Glass Door Handle",
         "seoDescription": "Stainless Steel glass door handle."
+      }
+    },
+    {
+      "slug": "g1288-glass-door-handle",
+      "model": "G1288",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "455mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "30mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "20mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "55mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g1288-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G1288 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g1288-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1288 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g1288-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1288 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g1288-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1288 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g1288-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1288 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g1288-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G1288 玻璃门拉手 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1288",
+      "seoTitle": "G1288 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "455mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "30mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "20mm"
+          },
+          {
+            "label": "Projection",
+            "value": "55mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G1288 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
       }
     },
     {
@@ -53194,6 +54929,129 @@
         "doorTypes": [],
         "seoTitle": "G2690 Glass Door Handle",
         "seoDescription": "Stainless Steel glass door handle. Centre distance P=1660–2160mm（可调）."
+      }
+    },
+    {
+      "slug": "g27-glass-door-handle",
+      "model": "G27",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "452mm"
+        },
+        {
+          "label": "握把伸出",
+          "value": "142mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "70mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.3kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g27-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G27 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g27-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G27 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g27-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G27 玻璃门拉手 第 3 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "G27 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "452mm"
+          },
+          {
+            "label": "Grip reach",
+            "value": "142mm"
+          },
+          {
+            "label": "Projection",
+            "value": "70mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.3kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G27 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
       }
     },
     {
@@ -54001,6 +55859,172 @@
       }
     },
     {
+      "slug": "g4227-glass-door-handle",
+      "model": "G4227",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "27mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "62mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g4227-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G4227 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g4227-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G4227 玻璃门拉手 第 11 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4227",
+      "seoTitle": "G4227 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø22mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "27mm"
+          },
+          {
+            "label": "Projection",
+            "value": "62mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G4227 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
+      }
+    },
+    {
       "slug": "g500-glass-door-handle",
       "model": "G500",
       "name": "玻璃门拉手",
@@ -54395,7 +56419,24 @@
         "玻璃门拉手"
       ],
       "summary": "不锈钢玻璃门拉手。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "重量",
+          "value": "5.1kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -54434,7 +56475,24 @@
           "Glass Door Handles"
         ],
         "summary": "Stainless Steel glass door handle.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Weight",
+            "value": "5.1kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",
@@ -54622,6 +56680,503 @@
         "doorTypes": [],
         "seoTitle": "G559 Night Latch And Rim Lock",
         "seoDescription": "Night Latch And Rim Lock. Backset 60mm, door thickness 35mm to 55mm standard; 30mm to 60mm on request."
+      }
+    },
+    {
+      "slug": "g620-glass-door-handle",
+      "model": "G620",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm / 800mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "22mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "2.1kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ16mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g620-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G620 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/g620-glass-door-handle-14.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G620 玻璃门拉手 第 14 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "620",
+      "seoTitle": "G620 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm / 800mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "22mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "2.1kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ16mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G620 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
+      }
+    },
+    {
+      "slug": "g630-glass-door-handle",
+      "model": "G630",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=788mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=788mm"
+        },
+        {
+          "label": "总长",
+          "value": "820mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "20 × 16mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "32mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "59mm"
+        },
+        {
+          "label": "重量",
+          "value": "2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g630-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G630 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g630-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G630 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g630-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G630 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g630-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G630 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g630-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G630 玻璃门拉手 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "630",
+      "seoTitle": "G630 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=788mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=788mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=788mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "820mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "20 × 16mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "32mm"
+          },
+          {
+            "label": "Projection",
+            "value": "59mm"
+          },
+          {
+            "label": "Weight",
+            "value": "2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G630 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=788mm."
+      }
+    },
+    {
+      "slug": "g685-glass-door-handle",
+      "model": "G685",
+      "name": "玻璃门拉手",
+      "nameEn": "Glass Door Handle",
+      "series": "玻璃门拉手系列",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "categoryNames": [
+        "玻璃门夹具",
+        "玻璃门拉手"
+      ],
+      "summary": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "443mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "40mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "18mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.5kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ12mm"
+        },
+        {
+          "label": "安装孔径（平板门）",
+          "value": "φ10mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/g685-glass-door-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 G685 玻璃门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/g685-glass-door-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G685 玻璃门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/g685-glass-door-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G685 玻璃门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/g685-glass-door-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G685 玻璃门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/g685-glass-door-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G685 玻璃门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/g685-glass-door-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 G685 玻璃门拉手 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "685",
+      "seoTitle": "G685 玻璃门拉手",
+      "seoDescription": "不锈钢玻璃门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Glass Door Handle",
+        "series": "Glass Door Handle",
+        "categoryNames": [
+          "Glass Door Accessories",
+          "Glass Door Handles"
+        ],
+        "summary": "Stainless Steel glass door handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "443mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "40mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "18mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.5kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ12mm"
+          },
+          {
+            "label": "Fixing hole (flush door)",
+            "value": "φ10mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "G685 Glass Door Handle",
+        "seoDescription": "Stainless Steel glass door handle. Centre distance P=425mm."
       }
     },
     {
@@ -73698,6 +76253,294 @@
       }
     },
     {
+      "slug": "t1111-stainless-steel-handle",
+      "model": "T1111",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=700mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=700mm"
+        },
+        {
+          "label": "总长",
+          "value": "900mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "28mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "63mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1111-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1111 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t1111-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1111 门拉手 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1111",
+      "seoTitle": "T1111 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=700mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=700mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=700mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "900mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "28mm"
+          },
+          {
+            "label": "Projection",
+            "value": "63mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1111 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=700mm."
+      }
+    },
+    {
+      "slug": "t1121-stainless-steel-handle",
+      "model": "T1121",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=528mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=528mm"
+        },
+        {
+          "label": "总长",
+          "value": "550mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "22mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "63mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.5kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1121-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1121 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t1121-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1121 门拉手 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1121",
+      "seoTitle": "T1121 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=528mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=528mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=528mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "550mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "22mm"
+          },
+          {
+            "label": "Projection",
+            "value": "63mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.5kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1121 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=528mm."
+      }
+    },
+    {
       "slug": "t1122-stainless-steel-handle",
       "model": "T1122",
       "name": "门拉手",
@@ -73993,6 +76836,477 @@
         "doorTypes": [],
         "seoTitle": "T1130 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle. Centre distance 540mm."
+      }
+    },
+    {
+      "slug": "t1131-stainless-steel-handle",
+      "model": "T1131",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=650mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=650mm"
+        },
+        {
+          "label": "总长",
+          "value": "800mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "58mm"
+        },
+        {
+          "label": "重量",
+          "value": "2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1131-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1131 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1131-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1131 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1131-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1131 门拉手 第 3 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1131",
+      "seoTitle": "T1131 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=650mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=650mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=650mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "800mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "58mm"
+          },
+          {
+            "label": "Weight",
+            "value": "2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1131 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=650mm."
+      }
+    },
+    {
+      "slug": "t1170-stainless-steel-handle",
+      "model": "T1170",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=275mm (L450) / P=425mm (L600) / P=575mm (L750)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=275mm (L450) / P=425mm (L600) / P=575mm (L750)"
+        },
+        {
+          "label": "总长",
+          "value": "450mm / 600mm / 750mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60.4mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1170-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1170 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/t1170-stainless-steel-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1170 门拉手 第 13 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1170",
+      "seoTitle": "T1170 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=275mm (L450) / P=425mm (L600) / P=575mm (L750)。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=275mm (L450) / P=425mm (L600) / P=575mm (L750).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=275mm (L450) / P=425mm (L600) / P=575mm (L750)"
+          },
+          {
+            "label": "Overall length",
+            "value": "450mm / 600mm / 750mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø27mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60.4mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1170 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=275mm (L450) / P=425mm (L600) / P=575mm (L750)."
+      }
+    },
+    {
+      "slug": "t1172-stainless-steel-handle",
+      "model": "T1172",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+        },
+        {
+          "label": "总长",
+          "value": "300mm / 450mm / 600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25 × 25mm (square)"
+        },
+        {
+          "label": "出墙距离",
+          "value": "65mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1172-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1172 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/t1172-stainless-steel-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1172 门拉手 第 12 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1171",
+      "seoTitle": "T1172 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=275mm (L300) / P=425mm (L450) / P=575mm (L600)。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=275mm (L300) / P=425mm (L450) / P=575mm (L600)"
+          },
+          {
+            "label": "Overall length",
+            "value": "300mm / 450mm / 600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25 × 25mm (square)"
+          },
+          {
+            "label": "Projection",
+            "value": "65mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1172 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=275mm (L300) / P=425mm (L450) / P=575mm (L600)."
       }
     },
     {
@@ -75051,6 +78365,144 @@
       }
     },
     {
+      "slug": "t1270-stainless-steel-handle",
+      "model": "T1270",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.6kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t1270-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T1270 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t1270-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1270 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t1270-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1270 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t1270-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1270 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t1270-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T1270 门拉手 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1270",
+      "seoTitle": "T1270 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.6kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T1270 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=425mm."
+      }
+    },
+    {
       "slug": "t1780-stainless-steel-handle",
       "model": "T1780",
       "name": "门拉手",
@@ -75193,6 +78645,129 @@
         "doorTypes": [],
         "seoTitle": "T1780 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle. Centre distance P=570mm."
+      }
+    },
+    {
+      "slug": "t2051-stainless-steel-handle",
+      "model": "T2051",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=500mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=500mm"
+        },
+        {
+          "label": "总长",
+          "value": "527mm"
+        },
+        {
+          "label": "握把伸出",
+          "value": "154mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "70mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.3kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t2051-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T2051 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t2051-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2051 门拉手 第 2 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "T2051 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=500mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=500mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=500mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "527mm"
+          },
+          {
+            "label": "Grip reach",
+            "value": "154mm"
+          },
+          {
+            "label": "Projection",
+            "value": "70mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.3kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T2051 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=500mm."
       }
     },
     {
@@ -75984,7 +79559,16 @@
         "不锈钢拉手"
       ],
       "summary": "不锈钢门拉手。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "下枠及び戸先側：φ10mm  吊元側：φ14mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -76011,7 +79595,16 @@
           "Stainless Steel Handles"
         ],
         "summary": "Stainless Steel Handle.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "下枠及び戸先側：φ10mm  吊元側：φ14mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",
@@ -76020,6 +79613,164 @@
         "doorTypes": [],
         "seoTitle": "T2522 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle."
+      }
+    },
+    {
+      "slug": "t2640-stainless-steel-handle",
+      "model": "T2640",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=425mm (L450) / P=575mm (L600)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm (L450) / P=575mm (L600)"
+        },
+        {
+          "label": "总长",
+          "value": "450mm / 600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.8kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t2640-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T2640 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/t2640-stainless-steel-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T2640 门拉手 第 9 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "T2640 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=425mm (L450) / P=575mm (L600)。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=425mm (L450) / P=575mm (L600).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm (L450) / P=575mm (L600)"
+          },
+          {
+            "label": "Overall length",
+            "value": "450mm / 600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "Ø25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.8kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T2640 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=425mm (L450) / P=575mm (L600)."
       }
     },
     {
@@ -76867,6 +80618,154 @@
       }
     },
     {
+      "slug": "t3008-stainless-steel-handle",
+      "model": "T3008",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=568mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=568mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "32mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "100mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.7kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t3008-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T3008 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t3008-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T3008 门拉手 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "T3008 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=568mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=568mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=568mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "32mm"
+          },
+          {
+            "label": "Projection",
+            "value": "100mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.7kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T3008 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=568mm."
+      }
+    },
+    {
       "slug": "t3103-brass-pull-handle",
       "model": "T3103",
       "name": "黄铜门拉手",
@@ -77161,6 +81060,154 @@
         ],
         "doorTypes": [],
         "seoTitle": "T3321 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=425mm."
+      }
+    },
+    {
+      "slug": "t4227-stainless-steel-handle",
+      "model": "T4227",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.5kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t4227-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T4227 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t4227-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T4227 门拉手 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4227",
+      "seoTitle": "T4227 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.5kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T4227 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle. Centre distance P=425mm."
       }
     },
@@ -77566,6 +81613,134 @@
       }
     },
     {
+      "slug": "t5580-stainless-steel-handle",
+      "model": "T5580",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=223mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=223mm"
+        },
+        {
+          "label": "总长",
+          "value": "250mm"
+        },
+        {
+          "label": "握把伸出",
+          "value": "117mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.9kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t5580-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T5580 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t5580-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T5580 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t5580-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T5580 门拉手 第 3 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "T5580 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=223mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=223mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=223mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "250mm"
+          },
+          {
+            "label": "Grip reach",
+            "value": "117mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.9kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T5580 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=223mm."
+      }
+    },
+    {
       "slug": "t5650-stainless-steel-handle",
       "model": "T5650",
       "name": "门拉手",
@@ -77802,6 +81977,460 @@
         "doorTypes": [],
         "seoTitle": "T5650UP Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle."
+      }
+    },
+    {
+      "slug": "t620-stainless-steel-handle",
+      "model": "T620",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=425mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm"
+        },
+        {
+          "label": "总长",
+          "value": "600mm / 800mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "2.4kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t620-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T620 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/t620-stainless-steel-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T620 门拉手 第 11 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "620",
+      "seoTitle": "T620 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=425mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=425mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "600mm / 800mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "2.4kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T620 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=425mm."
+      }
+    },
+    {
+      "slug": "t630-stainless-steel-handle",
+      "model": "T630",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=784mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=784mm"
+        },
+        {
+          "label": "总长",
+          "value": "800mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "32 × 16mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "57mm"
+        },
+        {
+          "label": "重量",
+          "value": "2kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ8mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ12mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t630-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T630 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t630-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T630 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t630-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T630 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t630-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T630 门拉手 第 4 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "630",
+      "seoTitle": "T630 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=784mm。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=784mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=784mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "800mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "32 × 16mm"
+          },
+          {
+            "label": "Projection",
+            "value": "57mm"
+          },
+          {
+            "label": "Weight",
+            "value": "2kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ8mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ12mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T630 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=784mm."
+      }
+    },
+    {
+      "slug": "t685-stainless-steel-handle",
+      "model": "T685",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=425mm (L443) / P=730mm (L748)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=425mm (L443) / P=730mm (L748)"
+        },
+        {
+          "label": "总长",
+          "value": "443mm / 748mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "40 × 18mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "70mm"
+        },
+        {
+          "label": "重量",
+          "value": "1.7kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t685-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T685 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/t685-stainless-steel-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T685 门拉手 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "685",
+      "seoTitle": "T685 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=425mm (L443) / P=730mm (L748)。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=425mm (L443) / P=730mm (L748).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=425mm (L443) / P=730mm (L748)"
+          },
+          {
+            "label": "Overall length",
+            "value": "443mm / 748mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "40 × 18mm"
+          },
+          {
+            "label": "Projection",
+            "value": "70mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1.7kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T685 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=425mm (L443) / P=730mm (L748)."
       }
     },
     {
@@ -78101,6 +82730,154 @@
         "doorTypes": [],
         "seoTitle": "T720 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle. Centre distance P=425mm."
+      }
+    },
+    {
+      "slug": "t790-stainless-steel-handle",
+      "model": "T790",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。中心距 P=360mm (L400) / P=560mm (L600) / P=760mm (L800)。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=360mm (L400) / P=560mm (L600) / P=760mm (L800)"
+        },
+        {
+          "label": "总长",
+          "value": "400mm / 600mm / 800mm"
+        },
+        {
+          "label": "拉手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "立柱直径",
+          "value": "Ø10mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "重量",
+          "value": "1kg"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M6"
+        },
+        {
+          "label": "安装孔径",
+          "value": "外部側φ12mm 内部側φ8mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/t790-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 T790 门拉手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/t790-stainless-steel-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 T790 门拉手 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "T790 门拉手",
+      "seoDescription": "不锈钢门拉手。中心距 P=360mm (L400) / P=560mm (L600) / P=760mm (L800)。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle. Centre distance P=360mm (L400) / P=560mm (L600) / P=760mm (L800).",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=360mm (L400) / P=560mm (L600) / P=760mm (L800)"
+          },
+          {
+            "label": "Overall length",
+            "value": "400mm / 600mm / 800mm"
+          },
+          {
+            "label": "Grip section",
+            "value": "25mm"
+          },
+          {
+            "label": "Stem diameter",
+            "value": "Ø10mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Weight",
+            "value": "1kg"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M6"
+          },
+          {
+            "label": "Fixing hole",
+            "value": "外部側φ12mm 内部側φ8mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "T790 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle. Centre distance P=360mm (L400) / P=560mm (L600) / P=760mm (L800)."
       }
     },
     {
@@ -79031,6 +83808,108 @@
       }
     },
     {
+      "slug": "tsg1169-stainless-steel-handle",
+      "model": "TSG1169",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。",
+      "specs": [],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/tsg1169-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 TSG1169 门拉手"
+      },
+      "gallery": [],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1169",
+      "seoTitle": "TSG1169 门拉手",
+      "seoDescription": "不锈钢门拉手。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle.",
+        "specs": [],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "TSG1169 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle."
+      }
+    },
+    {
+      "slug": "tsg1170-stainless-steel-handle",
+      "model": "TSG1170",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。",
+      "specs": [],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/tsg1170-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 TSG1170 门拉手"
+      },
+      "gallery": [],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1170",
+      "seoTitle": "TSG1170 门拉手",
+      "seoDescription": "不锈钢门拉手。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle.",
+        "specs": [],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "TSG1170 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle."
+      }
+    },
+    {
       "slug": "tsg1226-stainless-steel-handle",
       "model": "TSG1226",
       "name": "门拉手",
@@ -79078,6 +83957,57 @@
         ],
         "doorTypes": [],
         "seoTitle": "TSG1226 Stainless Steel Handle",
+        "seoDescription": "Stainless Steel Handle."
+      }
+    },
+    {
+      "slug": "tsg4227-stainless-steel-handle",
+      "model": "TSG4227",
+      "name": "门拉手",
+      "nameEn": "Stainless Steel Handle",
+      "series": "不锈钢拉手系列",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "categoryNames": [
+        "不锈钢拉手"
+      ],
+      "summary": "不锈钢门拉手。",
+      "specs": [],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/tsg4227-stainless-steel-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 TSG4227 门拉手"
+      },
+      "gallery": [],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4227",
+      "seoTitle": "TSG4227 门拉手",
+      "seoDescription": "不锈钢门拉手。",
+      "en": {
+        "name": "Stainless Steel Handle",
+        "series": "Stainless Steel Handle",
+        "categoryNames": [
+          "Stainless Steel Handles"
+        ],
+        "summary": "Stainless Steel Handle.",
+        "specs": [],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "TSG4227 Stainless Steel Handle",
         "seoDescription": "Stainless Steel Handle."
       }
     },
@@ -79468,6 +84398,186 @@
       }
     },
     {
+      "slug": "ul1007-lever-handle",
+      "model": "UL1007",
+      "name": "执手",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "不锈钢执手。",
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "145mm"
+        },
+        {
+          "label": "方轴中心距",
+          "value": "P=34mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø62mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "25mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "75.5mm"
+        },
+        {
+          "label": "执手下垂长度",
+          "value": "20mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.7kg"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ul1007-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 UL1007 执手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 11 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-12.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 12 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-13.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 13 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-14.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 14 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1007-lever-handle-15.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1007 执手 第 15 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "UL1007 执手",
+      "seoDescription": "不锈钢执手。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel lever handle.",
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "145mm"
+          },
+          {
+            "label": "Spindle centre",
+            "value": "P=34mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø62mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "25mm"
+          },
+          {
+            "label": "Projection",
+            "value": "75.5mm"
+          },
+          {
+            "label": "Lever drop",
+            "value": "20mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.7kg"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "UL1007 Lever Handle",
+        "seoDescription": "Stainless Steel lever handle."
+      }
+    },
+    {
       "slug": "ul1008-lever-handle",
       "model": "UL1008",
       "name": "执手",
@@ -79742,6 +84852,136 @@
       }
     },
     {
+      "slug": "ul1024-lever-handle",
+      "model": "UL1024",
+      "name": "执手",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "不锈钢执手。",
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "137mm"
+        },
+        {
+          "label": "方轴中心距",
+          "value": "P=34mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "68mm"
+        },
+        {
+          "label": "执手下垂长度",
+          "value": "22mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.4kg"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ul1024-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 UL1024 执手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ul1024-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1024 执手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1024-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1024 执手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1024-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1024 执手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1024-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1024 执手 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "UL1024 执手",
+      "seoDescription": "不锈钢执手。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel lever handle.",
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "137mm"
+          },
+          {
+            "label": "Spindle centre",
+            "value": "P=34mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "Ø22mm"
+          },
+          {
+            "label": "Projection",
+            "value": "68mm"
+          },
+          {
+            "label": "Lever drop",
+            "value": "22mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.4kg"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "UL1024 Lever Handle",
+        "seoDescription": "Stainless Steel lever handle."
+      }
+    },
+    {
       "slug": "ul1042-lever-handle",
       "model": "UL1042",
       "name": "执手",
@@ -79861,6 +85101,143 @@
         ],
         "doorTypes": [],
         "seoTitle": "UL1042 Lever Handle",
+        "seoDescription": "Stainless Steel lever handle."
+      }
+    },
+    {
+      "slug": "ul1052-lever-handle",
+      "model": "UL1052",
+      "name": "执手",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "不锈钢执手。",
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "145mm"
+        },
+        {
+          "label": "方轴中心距",
+          "value": "P=34mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "22 × 22mm (square)"
+        },
+        {
+          "label": "出墙距离",
+          "value": "72mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.75kg"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ul1052-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 UL1052 执手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1052-lever-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1052 执手 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "620",
+      "seoTitle": "UL1052 执手",
+      "seoDescription": "不锈钢执手。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel lever handle.",
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "145mm"
+          },
+          {
+            "label": "Spindle centre",
+            "value": "P=34mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "22 × 22mm (square)"
+          },
+          {
+            "label": "Projection",
+            "value": "72mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.75kg"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "UL1052 Lever Handle",
         "seoDescription": "Stainless Steel lever handle."
       }
     },
@@ -80073,6 +85450,123 @@
         ],
         "doorTypes": [],
         "seoTitle": "UL1066 Lever Handle",
+        "seoDescription": "Stainless Steel lever handle."
+      }
+    },
+    {
+      "slug": "ul1288-lever-handle",
+      "model": "UL1288",
+      "name": "执手",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "不锈钢执手。",
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "140mm"
+        },
+        {
+          "label": "方轴中心距",
+          "value": "P=34mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "30mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "68mm"
+        },
+        {
+          "label": "执手下垂长度",
+          "value": "20mm"
+        }
+      ],
+      "material": "不锈钢",
+      "finishes": [
+        "缎面不锈钢",
+        "哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ul1288-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 UL1288 执手"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ul1288-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1288 执手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1288-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1288 执手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ul1288-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 UL1288 执手 第 4 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "1288",
+      "seoTitle": "UL1288 执手",
+      "seoDescription": "不锈钢执手。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel lever handle.",
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "140mm"
+          },
+          {
+            "label": "Spindle centre",
+            "value": "P=34mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "30mm"
+          },
+          {
+            "label": "Projection",
+            "value": "68mm"
+          },
+          {
+            "label": "Lever drop",
+            "value": "20mm"
+          }
+        ],
+        "material": "Stainless Steel",
+        "finishes": [
+          "Satin stainless",
+          "Matt black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "UL1288 Lever Handle",
         "seoDescription": "Stainless Steel lever handle."
       }
     },

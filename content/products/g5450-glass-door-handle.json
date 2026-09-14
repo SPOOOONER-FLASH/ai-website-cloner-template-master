@@ -12,7 +12,24 @@
     "rayen"
   ],
   "summary": "Stainless Steel pull handle.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "5.1kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ10mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -41,5 +58,12 @@
   "relatedModels": [],
   "seoTitle": "G5450 Glass Door Handle | RAYEN",
   "seoDescription": "Stainless Steel pull handle.",
-  "nameEs": "Tirador para puerta de vidrio"
+  "nameEs": "Tirador para puerta de vidrio",
+  "specSources": {
+    "artunion": {
+      "id": "G5450-39-110",
+      "basis": "sole",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

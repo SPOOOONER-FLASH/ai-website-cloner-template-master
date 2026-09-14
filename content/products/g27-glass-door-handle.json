@@ -1,0 +1,80 @@
+{
+  "model": "G27",
+  "slug": "g27-glass-door-handle",
+  "name": "Glass Door Handle",
+  "nameZh": "玻璃门拉手",
+  "series": "Glass Door Handle",
+  "categoryPath": [
+    "glass-door-accessories",
+    "glass-door-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel pull handle, 452mm overall on P=425mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=425mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "452mm"
+    },
+    {
+      "label": "Grip reach",
+      "value": "142mm"
+    },
+    {
+      "label": "Projection",
+      "value": "70mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.3kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ16mm"
+    }
+  ],
+  "material": "Stainless Steel",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/g27-glass-door-handle.webp",
+    "ratio": "1 / 1",
+    "label": "G27 Glass Door Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/g27-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G27 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g27-glass-door-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "G27 Glass Door Handle, view 3"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "G27 Glass Door Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 452mm overall on P=425mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G27-01-001-L",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
+}
