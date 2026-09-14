@@ -10,7 +10,7 @@ import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
 import { CatalogueReturnLink } from "./CatalogueNavigation";
-import { ProductDrawing } from "./ProductDrawing";
+import { ProductDrawing, DoorPreparation } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
@@ -597,6 +597,14 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     audit that checks the two agree.
                   */}
                   <ProductDrawing slug={product.slug} locale={locale} />
+
+                  {/*
+                    A sibling, not a child: the two drawing populations do not overlap at
+                    all today. A pull handle publishes fixing centres and gets a
+                    preparation drawing; a lock case publishes case geometry and gets an
+                    outline. See the note in ProductDrawing.tsx.
+                  */}
+                  <DoorPreparation slug={product.slug} locale={locale} />
 
                   {faqItems.length ? (
                     <div className="mt-48 border-t border-line pt-24">

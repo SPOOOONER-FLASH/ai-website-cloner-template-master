@@ -1,0 +1,618 @@
+{
+ "g1105-glass-door-handle": {
+  "model": "G1105",
+  "diameter": 12,
+  "centres": 640,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=640mm"
+  },
+  "note": "Fixing hole. Centres 640mm. Hole positions only. Not a product outline."
+ },
+ "g1106-glass-door-handle": {
+  "model": "G1106",
+  "diameter": 12,
+  "centres": 640,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=640mm"
+  },
+  "note": "Fixing hole. Centres 640mm. Hole positions only. Not a product outline."
+ },
+ "g1130-glass-door-handle": {
+  "model": "G1130",
+  "diameter": 12,
+  "centres": 540,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "540mm"
+  },
+  "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
+ },
+ "g1159-glass-door-handle": {
+  "model": "G1159",
+  "diameter": 12,
+  "centres": 530,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=530mm"
+  },
+  "note": "Fixing hole. Centres 530mm. Hole positions only. Not a product outline."
+ },
+ "g1226-glass-door-handle": {
+  "model": "G1226",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g1229-glass-door-handle": {
+  "model": "G1229",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g1234-glass-door-handle": {
+  "model": "G1234",
+  "diameter": 12,
+  "centres": 500,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=500mm"
+  },
+  "note": "Fixing hole. Centres 500mm. Hole positions only. Not a product outline."
+ },
+ "g1236-glass-door-handle": {
+  "model": "G1236",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g1237-glass-door-handle": {
+  "model": "G1237",
+  "diameter": 12,
+  "centres": 500,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=500mm"
+  },
+  "note": "Fixing hole. Centres 500mm. Hole positions only. Not a product outline."
+ },
+ "g1239-glass-door-handle": {
+  "model": "G1239",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g1255-glass-door-handle": {
+  "model": "G1255",
+  "diameter": 12,
+  "centres": 1000,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=1000mm"
+  },
+  "note": "Fixing hole. Centres 1000mm. Hole positions only. Not a product outline."
+ },
+ "g1289-glass-door-handle": {
+  "model": "G1289",
+  "diameter": 12,
+  "centres": 502,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "502mm"
+  },
+  "note": "Fixing hole. Centres 502mm. Hole positions only. Not a product outline."
+ },
+ "g1293-glass-door-handle": {
+  "model": "G1293",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g2690-glass-door-handle": {
+  "model": "G2690",
+  "diameter": 12,
+  "centres": 2160,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=1660–2160mm（可调）"
+  },
+  "note": "Fixing hole. Centres 2160mm. Hole positions only. Not a product outline."
+ },
+ "g2746-glass-door-handle": {
+  "model": "G2746",
+  "diameter": 12,
+  "centres": 580,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=580mm"
+  },
+  "note": "Fixing hole. Centres 580mm. Hole positions only. Not a product outline."
+ },
+ "g2750-glass-door-handle": {
+  "model": "G2750",
+  "diameter": 16,
+  "centres": 573,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "573mm"
+  },
+  "note": "Fixing hole. Centres 573mm. Hole positions only. Not a product outline."
+ },
+ "g3078-glass-door-handle": {
+  "model": "G3078",
+  "diameter": 16,
+  "centres": 782,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "P=782mm"
+  },
+  "note": "Fixing hole. Centres 782mm. Hole positions only. Not a product outline."
+ },
+ "g3321-glass-door-handle": {
+  "model": "G3321",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g500-glass-door-handle": {
+  "model": "G500",
+  "diameter": 16,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g52-glass-door-handle": {
+  "model": "G52",
+  "diameter": 16,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "P=425mm (L600) / P=800mm (L1200)"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g7110-glass-door-handle": {
+  "model": "G7110",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g720-glass-door-handle": {
+  "model": "G720",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g777-glass-door-handle": {
+  "model": "G777",
+  "diameter": 12,
+  "centres": 520,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=520mm"
+  },
+  "note": "Fixing hole. Centres 520mm. Hole positions only. Not a product outline."
+ },
+ "t1018-stainless-steel-handle": {
+  "model": "T1018",
+  "diameter": 10,
+  "centres": 978,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=978mm"
+  },
+  "note": "Fixing hole. Centres 978mm. Hole positions only. Not a product outline."
+ },
+ "t1050-stainless-steel-handle": {
+  "model": "T1050",
+  "diameter": 10,
+  "centres": 473,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=473mm"
+  },
+  "note": "Fixing hole. Centres 473mm. Hole positions only. Not a product outline."
+ },
+ "t1122-stainless-steel-handle": {
+  "model": "T1122",
+  "diameter": 8,
+  "centres": 615,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=615mm"
+  },
+  "note": "Fixing hole. Centres 615mm. Hole positions only. Not a product outline."
+ },
+ "t1130-stainless-steel-handle": {
+  "model": "T1130",
+  "diameter": 8,
+  "centres": 540,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "540mm"
+  },
+  "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
+ },
+ "t1216-stainless-steel-handle": {
+  "model": "T1216",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t1224-stainless-steel-handle": {
+  "model": "T1224",
+  "diameter": 8,
+  "centres": 540,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=540mm"
+  },
+  "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
+ },
+ "t1225-stainless-steel-handle": {
+  "model": "T1225",
+  "diameter": 10,
+  "centres": 507,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=507mm"
+  },
+  "note": "Fixing hole. Centres 507mm. Hole positions only. Not a product outline."
+ },
+ "t1255-stainless-steel-handle": {
+  "model": "T1255",
+  "diameter": 10,
+  "centres": 500,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=500mm"
+  },
+  "note": "Fixing hole. Centres 500mm. Hole positions only. Not a product outline."
+ },
+ "t1263-stainless-steel-handle": {
+  "model": "T1263",
+  "diameter": 10,
+  "centres": 578,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=578mm"
+  },
+  "note": "Fixing hole. Centres 578mm. Hole positions only. Not a product outline."
+ },
+ "t1265-stainless-steel-handle": {
+  "model": "T1265",
+  "diameter": 8,
+  "centres": 574,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=574mm"
+  },
+  "note": "Fixing hole. Centres 574mm. Hole positions only. Not a product outline."
+ },
+ "t1266-stainless-steel-handle": {
+  "model": "T1266",
+  "diameter": 8,
+  "centres": 540,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=540mm"
+  },
+  "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
+ },
+ "t1780-stainless-steel-handle": {
+  "model": "T1780",
+  "diameter": 10,
+  "centres": 570,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=570mm"
+  },
+  "note": "Fixing hole. Centres 570mm. Hole positions only. Not a product outline."
+ },
+ "t2083-stainless-steel-handle": {
+  "model": "T2083",
+  "diameter": 10,
+  "centres": 450,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=450mm"
+  },
+  "note": "Fixing hole. Centres 450mm. Hole positions only. Not a product outline."
+ },
+ "t2336-stainless-steel-handle": {
+  "model": "T2336",
+  "diameter": 10,
+  "centres": 475,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=475mm"
+  },
+  "note": "Fixing hole. Centres 475mm. Hole positions only. Not a product outline."
+ },
+ "t2412-stainless-steel-handle": {
+  "model": "T2412",
+  "diameter": 8,
+  "centres": 460,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=460mm (L800) / P=860mm (L1200)"
+  },
+  "note": "Fixing hole. Centres 460mm. Hole positions only. Not a product outline."
+ },
+ "t25-stainless-steel-handle": {
+  "model": "T25",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t2690-stainless-steel-handle": {
+  "model": "T2690",
+  "diameter": 8,
+  "centres": 500,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=500mm"
+  },
+  "note": "Fixing hole. Centres 500mm. Hole positions only. Not a product outline."
+ },
+ "t2750-stainless-steel-handle": {
+  "model": "T2750",
+  "diameter": 10,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t2888-stainless-steel-handle": {
+  "model": "T2888",
+  "diameter": 10,
+  "centres": 580,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=580mm"
+  },
+  "note": "Fixing hole. Centres 580mm. Hole positions only. Not a product outline."
+ },
+ "t2930-stainless-steel-handle": {
+  "model": "T2930",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t3103-brass-pull-handle": {
+  "model": "T3103",
+  "diameter": 10,
+  "centres": 510,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=510mm"
+  },
+  "note": "Fixing hole. Centres 510mm. Hole positions only. Not a product outline."
+ },
+ "t3321-stainless-steel-handle": {
+  "model": "T3321",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t52-stainless-steel-handle": {
+  "model": "T52",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=425mm (L600) / P=800mm (L1200)"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t5450-stainless-steel-handle": {
+  "model": "T5450",
+  "diameter": 10,
+  "centres": 775,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=775mm"
+  },
+  "note": "Fixing hole. Centres 775mm. Hole positions only. Not a product outline."
+ },
+ "t5650-stainless-steel-handle": {
+  "model": "T5650",
+  "diameter": 10,
+  "centres": 573,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=573mm"
+  },
+  "note": "Fixing hole. Centres 573mm. Hole positions only. Not a product outline."
+ },
+ "t7110-stainless-steel-handle": {
+  "model": "T7110",
+  "diameter": 10,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t720-stainless-steel-handle": {
+  "model": "T720",
+  "diameter": 8,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ8mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t8050-stainless-steel-handle": {
+  "model": "T8050",
+  "diameter": 10,
+  "centres": 565,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=565mm"
+  },
+  "note": "Fixing hole. Centres 565mm. Hole positions only. Not a product outline."
+ },
+ "t811-brass-pull-handle": {
+  "model": "T811",
+  "diameter": 10,
+  "centres": 746,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=746mm"
+  },
+  "note": "Fixing hole. Centres 746mm. Hole positions only. Not a product outline."
+ },
+ "t812-brass-pull-handle": {
+  "model": "T812",
+  "diameter": 10,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "t915-brass-pull-handle": {
+  "model": "T915",
+  "diameter": 10,
+  "centres": 330,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=330mm"
+  },
+  "note": "Fixing hole. Centres 330mm. Hole positions only. Not a product outline."
+ },
+ "t921-brass-pull-handle": {
+  "model": "T921",
+  "diameter": 10,
+  "centres": 620,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=620mm"
+  },
+  "note": "Fixing hole. Centres 620mm. Hole positions only. Not a product outline."
+ },
+ "t9972-brass-pull-handle": {
+  "model": "T9972",
+  "diameter": 10,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ10mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ }
+}
