@@ -72199,10 +72199,6 @@
           "value": "450mm"
         },
         {
-          "label": "固定孔距",
-          "value": "P=370mm（两端各 P=30mm）"
-        },
-        {
           "label": "管截面",
           "value": "32mm"
         },
@@ -72282,10 +72278,6 @@
           {
             "label": "Overall length",
             "value": "450mm"
-          },
-          {
-            "label": "Fixing centre",
-            "value": "P=370mm（两端各 P=30mm）"
           },
           {
             "label": "Tube section",
@@ -79566,7 +79558,7 @@
         },
         {
           "label": "安装孔径",
-          "value": "下枠及び戸先側：φ10mm  吊元側：φ14mm"
+          "value": "下框及门边侧 φ10mm 合页侧 φ14mm"
         }
       ],
       "material": "不锈钢",
@@ -79602,7 +79594,7 @@
           },
           {
             "label": "Fixing hole",
-            "value": "下枠及び戸先側：φ10mm  吊元側：φ14mm"
+            "value": "bottom rail and leading edge φ10mm hinge side φ14mm"
           }
         ],
         "material": "Stainless Steel",
@@ -80529,7 +80521,7 @@
     {
       "slug": "t2973a-stainless-steel-handle",
       "model": "T2973A",
-      "name": "门拉手（加长可调）",
+      "name": "门拉手（可定制长度）",
       "nameEn": "Stainless Steel Handle",
       "series": "不锈钢拉手系列",
       "categoryPath": [
@@ -80538,7 +80530,7 @@
       "categoryNames": [
         "不锈钢拉手"
       ],
-      "summary": "不锈钢门拉手（加长可调）。中心距 1480–2080mm。",
+      "summary": "不锈钢门拉手（可定制长度）。中心距 1480–2080mm。",
       "specs": [
         {
           "label": "中心距",
@@ -80559,6 +80551,18 @@
         {
           "label": "圆盖尺寸",
           "value": "38 × 73mm"
+        },
+        {
+          "label": "安装螺钉",
+          "value": "M8"
+        },
+        {
+          "label": "安装孔径（木门）",
+          "value": "φ10mm"
+        },
+        {
+          "label": "安装孔径（玻璃门）",
+          "value": "φ16mm"
         }
       ],
       "material": "不锈钢",
@@ -80569,7 +80573,7 @@
       "heroImage": {
         "src": "/images/products-rayen/t2973a-stainless-steel-handle.webp",
         "ratio": "1 / 1",
-        "label": "雷茵 T2973A 门拉手（加长可调）"
+        "label": "雷茵 T2973A 门拉手（可定制长度）"
       },
       "gallery": [],
       "relatedModels": [],
@@ -80577,8 +80581,8 @@
         "rayen"
       ],
       "styleFamily": "2973",
-      "seoTitle": "T2973A 门拉手（加长可调）",
-      "seoDescription": "不锈钢门拉手（加长可调）。中心距 1480–2080mm。",
+      "seoTitle": "T2973A 门拉手（可定制长度）",
+      "seoDescription": "不锈钢门拉手（可定制长度）。中心距 1480–2080mm。",
       "en": {
         "name": "Stainless Steel Handle",
         "series": "Stainless Steel Handle",
@@ -80606,6 +80610,18 @@
           {
             "label": "Rose size",
             "value": "38 × 73mm"
+          },
+          {
+            "label": "Fixing screw",
+            "value": "M8"
+          },
+          {
+            "label": "Fixing hole (timber door)",
+            "value": "φ10mm"
+          },
+          {
+            "label": "Fixing hole (glass door)",
+            "value": "φ16mm"
           }
         ],
         "material": "Stainless Steel",
@@ -82776,7 +82792,7 @@
         },
         {
           "label": "安装孔径",
-          "value": "外部側φ12mm 内部側φ8mm"
+          "value": "外侧 φ12mm 内侧 φ8mm"
         }
       ],
       "material": "不锈钢",
@@ -82867,7 +82883,7 @@
           },
           {
             "label": "Fixing hole",
-            "value": "外部側φ12mm 内部側φ8mm"
+            "value": "outside φ12mm inside φ8mm"
           }
         ],
         "material": "Stainless Steel",

@@ -714,6 +714,17 @@
   },
   "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
  },
+ "t2973a-stainless-steel-handle": {
+  "model": "T2973A",
+  "diameter": 16,
+  "centres": 2080,
+  "holeLabel": "Fixing hole (glass door)",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "1480–2080mm"
+  },
+  "note": "Fixing hole (glass door). Centres 2080mm. Hole positions only. Not a product outline."
+ },
  "t3008-stainless-steel-handle": {
   "model": "T3008",
   "diameter": 10,
@@ -863,7 +874,7 @@
   "centres": 360,
   "holeLabel": "Fixing hole",
   "source": {
-   "hole": "外部側φ12mm 内部側φ8mm",
+   "hole": "outside φ12mm inside φ8mm",
    "centre": "P=360mm (L400) / P=560mm (L600) / P=760mm (L800)"
   },
   "note": "Fixing hole. Centres 360mm. Hole positions only. Not a product outline."

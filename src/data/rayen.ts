@@ -64,11 +64,29 @@ export type RayenProduct = {
  */
 export type RayenProductView = Omit<RayenProduct, "en">;
 
+/**
+ * The English catalogue reads its own copy of every photograph.
+ *
+ * Client, 2026-09-13: 「en 站点的全部产品都得打上绿色的 logo，中文站都用黑色的，不要混淆」.
+ * The mark is baked into the pixels, so one file cannot serve both languages —
+ * scripts/brand-rayen-images.mjs writes two sets from the same unbranded source, and this
+ * is the one line that sends each locale to its own. The filenames are identical in both
+ * directories, so nothing else in the site has to know which language it is rendering.
+ */
+const ZH_IMAGES = "/images/products-rayen/";
+const EN_IMAGES = "/images/products-rayen-en/";
+
+const enImage = <T extends { src: string } | undefined>(image: T): T =>
+  image?.src?.startsWith(ZH_IMAGES)
+    ? ({ ...image, src: image.src.replace(ZH_IMAGES, EN_IMAGES) } as T)
+    : image;
 export function viewProduct(product: RayenProduct, locale: RayenLocale): RayenProductView {
   const { en, ...rest } = product;
   if (locale === "zh") return rest;
   return {
     ...rest,
+    heroImage: enImage(rest.heroImage),
+    gallery: (rest.gallery ?? []).map(enImage),
     name: en.name,
     series: en.series,
     categoryNames: en.categoryNames,
@@ -341,6 +359,8 @@ export function categoriesFor(locale: RayenLocale): RayenCategory[] {
       children.size === 1 ? (raw.children ?? []).find((c) => c.slug === [...children][0]) : undefined;
     return {
       ...category,
+      /* The English catalogue's cards carry the teal mark too — same rule as viewProduct. */
+      image: enImage(category.image as { src: string } | undefined),
       name: onlyChild?.name ?? raw.name,
       children: (raw.children ?? []).map((c) => ({ slug: c.slug, name: c.name })),
     };

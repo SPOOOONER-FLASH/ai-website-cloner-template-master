@@ -2,7 +2,7 @@
   "model": "T2973A",
   "slug": "t2973a-stainless-steel-handle",
   "name": "Stainless Steel Handle",
-  "nameZh": "门拉手（加长可调）",
+  "nameZh": "门拉手（可定制长度）",
   "series": "Stainless Steel Handle",
   "categoryPath": [
     "stainless-steel-handles"
@@ -32,6 +32,18 @@
     {
       "label": "Rose size",
       "value": "38 × 73mm"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     }
   ],
   "material": "Stainless Steel",
