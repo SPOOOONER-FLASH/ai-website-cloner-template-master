@@ -10,12 +10,11 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel lever handle.",
+  "summary": "Brass lever handle, published by UNION in 1 finish.",
   "specs": [],
   "material": "Stainless Steel",
   "finishes": [
-    "Satin stainless",
-    "Matt black"
+    "MUL1066-15-207 — Brass, sulphur-smoked brown"
   ],
   "doorTypes": [
     "Wooden Door",
@@ -37,5 +36,16 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "MUL1066 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle."
+  "seoDescription": "Stainless Steel lever handle.",
+  "specSources": {
+    "union": {
+      "basis": "published-by-union",
+      "source": "https://www.artunion.co.jp/products/detail.php",
+      "fields": [
+        "finishes"
+      ],
+      "note": "Finish list and base material read from UNION's own per-part-number pages on 2026-09-15 (scripts/scrape-artunion-finishes.mjs). Size, door thickness, application and cylinder availability were also fetched and are in content/rayen/artunion-specs.json, but are NOT written here: product-sites.test.ts requires a drawing-less model to ship an empty spec table, and whether a UNION page satisfies that rule is the RAYEN session's decision. Price, built-project list, branded feature names and catalogue page numbers are deliberately not taken.",
+      "fetchedAt": "2026-09-15"
+    }
+  }
 }

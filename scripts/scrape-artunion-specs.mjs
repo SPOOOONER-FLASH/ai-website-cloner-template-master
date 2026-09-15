@@ -64,7 +64,23 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
  * UNION's own numbering. Anything outside these prefixes is a RAYEN or HYDE model that
  * UNION never made, and querying it would just produce noise in the miss list.
  */
-const UNION_PREFIX = /^(?:UL|PRE-?|G|T)\d/i;
+/*
+  Which model numbers this scraper will look up.
+
+  ⚠ 2026-09-15: this pattern was `/^(?:UL|PRE-?|G|T)\d/i` and it silently skipped nine
+  models — MUL1022, MUL1066, MUL2101, TSG52, TSG1169, TSG1170, TSG1226, TSG4227 and USG1.
+  Every one of those has an EMPTY spec table, and the 2026-09-14 gap audit concluded they
+  were "not on UNION at all". They are on UNION. The scraper was never asked.
+
+  That is the failure mode a prefix filter has: an excluded model does not error, it does
+  not appear in the miss count, it simply never enters the loop, and the report at the end
+  says "0 misses" and looks like success. Anything added here must be checked against a
+  full list of rayen model prefixes, not against the models somebody happened to remember.
+
+  Alternation order matters and is not alphabetical: the longer prefixes come first, or
+  `T` would swallow `TSG` and `UL` would never see `MUL`.
+*/
+const UNION_PREFIX = /^(?:MUL|TSG|USG|UL|PRE[-_]?[A-Z]?|G|T-?)\d/i;
 
 function rayenModels() {
   const out = [];

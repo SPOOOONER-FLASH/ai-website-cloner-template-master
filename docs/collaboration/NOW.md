@@ -12,6 +12,26 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
+`/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /
+TSG52 / TSG1169 / TSG1170 / TSG1226 / TSG4227 / USG1，全都是空规格表。
+9-14 那份补料清单据此判断「UNION 上一个都没有」，**其中三个 MUL 是有的**，
+只是抓取脚本从来没问过。过滤已改成
+`/^(?:MUL|TSG|USG|UL|PRE[-_]?[A-Z]?|G|T-?)\d/i`，补抓结果：MUL 三个抓到，
+TSG 五个与 USG1 确实未收录。
+
+MUL2101 甲方特别点名：UNION 上是**五个颜色**，已按 UNION 自己的
+材質・仕上 写进 `finishes`（-023 砂光无清漆 / -200 镀铬 / -202 硫化熏色金古铜 /
+-207 硫化熏色棕 / -215 炭黑喷漆）。**并改正了一处实质错误**：MUL1066 与 MUL2101
+站上写的是 stainless，UNION 写的是ブラス（黄铜）。
+
+⚠ **规格行没有写进记录，留给你们定**：UNION 也给了尺寸、门厚 33–51mm、
+适用范围（室内轻质木门 ≤25kg）和「无锁芯配置」，都在
+`content/rayen/artunion-specs.json` 里。没写上去是因为
+`product-sites.test.ts` 要求没有图纸的型号规格表必须为空 —— 那条规则防的是
+「从同款抄尺寸」，而这些数字有 UNION 自己的出处。**算不算满足那条规则是你们的判断**，
+不该由这边替你们放宽。新增 `scripts/scrape-artunion-finishes.mjs` 专门取颜色清单。
+
 | Codex studies release | src/app/(en)/product-studies/, src/app/es/product-studies/, src/components/site/ProductStudies.tsx, src/data/generated/product-studies.json, scripts/publish-hardware-studies.mjs, public/images/product-studies/, out/, out-rayen/ | Publish approved real-photo studies EN/ES, catalogue entry, verify and deploy export; out was clean | 2026-09-10 |
 | Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
