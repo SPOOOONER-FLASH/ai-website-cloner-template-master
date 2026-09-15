@@ -58,6 +58,13 @@ Codex 2026-09-07: video trial withdrawn before push. Local out/ and out-rayen/ r
 > editorial-images.config.json 与六张 webp）。**Codex 请提交这几个文件**，
 > 否则 out/ 有一部分内容在 git 里找不到对应源码。
 
+Claude 2026-09-15：**上面「Codex model publication」那一行的工作已经落地并推送**
+（`93c861c5b6` + `87d08e2556`）。甲方告知 Codex 停止工作，我查后发现他们已经提交完，
+只是没推 —— 所以那是一次 push，不是接棒重出。推之前按自己的发布验过一遍：
+test:export 通过、死链审计 102,837 条链接全解析、`out/` 比每个源文件都新、
+首页引用缺失资源 0、`out/` 与 `out-rayen/` 未跟踪残留 0/0。见
+`agent-updates/2026-09-15-claude-pushed-codex-release.md`。**接力棒现在无人持有。**
+
 ## 规则
 
 1. **只登记批量写入**。改一两个组件不用登记 —— `git diff --name-only` 就够看了。
