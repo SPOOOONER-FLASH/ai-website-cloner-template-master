@@ -1,0 +1,41 @@
+{
+  "scope": "LC04 case bounding envelope only; NOT the finished lock body",
+  "sources": [
+    {
+      "path": "public\\images\\products\\lc04-85-60-lock-case-3.webp",
+      "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a"
+    }
+  ],
+  "published_mm": {
+    "totalDepthFromPlateFront": 96,
+    "plateThickness": 3,
+    "caseHeight": 173
+  },
+  "derived_mm": {
+    "caseDepth": 93
+  },
+  "neutralClosure_mm": {
+    "caseThickness": 15
+  },
+  "omitted": [
+    "lock faceplate (strike dimensions do not establish its size)",
+    "bolt and latch geometry",
+    "bores and fixing holes",
+    "edge chamfers",
+    "internal mechanism"
+  ],
+  "datum": "X=0 is the published plate front; case starts at X=3. No faceplate assembly is modeled.",
+  "meshChecks": [
+    {
+      "object": "LC04 CASE ENVELOPE - neutral thickness 15 mm",
+      "dimensions_mm": [
+        93.00000220537186,
+        14.999999664723873,
+        172.99999296665192
+      ],
+      "closedMesh": true,
+      "positiveVolume": true
+    }
+  ],
+  "manufacturingReady": false
+}

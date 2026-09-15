@@ -6,6 +6,10 @@
 
 发布交接：请当前out构建者以恢复后的源码重出out/与out-rayen/；之前检测到的带curated图的export已经过时，不可当作本次最终发布。Git索引繁忙时不删除锁。
 
+恢复原图已提交并推送：3cb3b4cb6a。266项测试及8项恢复图片检查通过。当前out已干净，本轮接棒重出恢复版。
+
+建模：新目录2026-09-14-dimension-models保存9004S外壳、LC04锁体包络、70SN上部圆柱包络三份局部实体，网格尺寸、闭合与正体积、打包来源、重新打开均通过。提供blend/glb和从实际网格导出的三视图。不宣称三个完整型号或二十项全部建模完成，缺失的孔位、曲线与机构见该目录STATUS.md。此前照片贴片不计为产品实体。
+
 - 依据：甲方本轮标记图、2026-09-10-professional-hardware-image-goal.md。
 - MIWA 官方资料区把型号功能/规格与外形图、开孔图关联，允许按型号取图。落实：新闻封面和首页专栏使用本厂对应型号的原图与原始尺寸图，图像链接回具体型号。
 - 来源：https://www.miwa-lock.co.jp/tec/products/files/webcatalog-features-data.html 、https://www.miwa-lock.co.jp/tec/products/webcatalog.html （2026-09-14 查询）。miwa.jp 本次无法打开，已找到美和锁官方站。

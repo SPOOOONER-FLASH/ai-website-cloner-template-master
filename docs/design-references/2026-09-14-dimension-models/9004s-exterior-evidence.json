@@ -1,0 +1,51 @@
+{
+  "scope": "9004S published exterior shell only",
+  "sources": [
+    {
+      "path": "public\\images\\products\\9004s-stainless-steel-handle-6.webp",
+      "sha256": "f7c2a444c7552ff944e37d89cb03b0bda0ff65f8801f99409ac931af9d307777"
+    }
+  ],
+  "published_mm": {
+    "leverLength": 135,
+    "leverHeight": 20,
+    "frontBarDepth": 10,
+    "neckWidth": 20,
+    "totalProjection": 63,
+    "rose": [
+      53,
+      53,
+      8
+    ]
+  },
+  "omitted": [
+    "edge radii",
+    "rose trim and internal parts",
+    "set screw and mounting holes",
+    "spindle length",
+    "escutcheon"
+  ],
+  "meshChecks": [
+    {
+      "object": "Rose — 53 x 53 x 8 mm",
+      "dimensions_mm": [
+        52.99999937415123,
+        52.99999937415123,
+        8.00000037997961
+      ],
+      "closedMesh": true,
+      "positiveVolume": true
+    },
+    {
+      "object": "Lever — 135 x 20 / 10 mm front bar",
+      "dimensions_mm": [
+        135.00000536441803,
+        19.999999552965164,
+        54.999999701976776
+      ],
+      "closedMesh": true,
+      "positiveVolume": true
+    }
+  ],
+  "manufacturingReady": false
+}
