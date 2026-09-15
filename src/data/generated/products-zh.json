@@ -74387,7 +74387,32 @@
         "执手锁"
       ],
       "summary": "不锈钢执手，适用于木门。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "152mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "24mm"
+        },
+        {
+          "label": "执手下垂长度",
+          "value": "70mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "圆盖厚度",
+          "value": "12mm"
+        },
+        {
+          "label": "执手厚度",
+          "value": "9.5mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -74450,7 +74475,32 @@
           "Lever Handles"
         ],
         "summary": "Stainless Steel lever handle for wooden door.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "152mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "24mm"
+          },
+          {
+            "label": "Lever drop",
+            "value": "70mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Rose thickness",
+            "value": "12mm"
+          },
+          {
+            "label": "Lever thickness",
+            "value": "9.5mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",
@@ -74479,7 +74529,28 @@
         "执手锁"
       ],
       "summary": "不锈钢执手，适用于木门。",
-      "specs": [],
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "130mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "圆盖厚度",
+          "value": "9.5mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "69mm"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢",
@@ -74515,7 +74586,28 @@
           "Lever Handles"
         ],
         "summary": "Stainless Steel lever handle for wooden door.",
-        "specs": [],
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "130mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "Ø22mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Rose thickness",
+            "value": "9.5mm"
+          },
+          {
+            "label": "Projection",
+            "value": "69mm"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless",

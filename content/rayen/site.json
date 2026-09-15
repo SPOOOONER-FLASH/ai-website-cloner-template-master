@@ -88,8 +88,9 @@
     }
   ],
   "exportBrands": [],
-  "preview": {
-    "host": "spoonercantonlock.stahlock.com",
-    "note": "临时预览域名，正式域名待定。迁移时只改 src/data/rayen.ts 里的 siteUrl 和 nginx 的 server_name。"
+  "host": {
+    "domain": "rayen.cn",
+    "note": "正式域名，2026-09-15 上线。之前的临时预览域名是 spoonercantonlock.stahlock.com；换域名只改这里和 nginx 的 server_name。",
+    "previousPreviewHost": "spoonercantonlock.stahlock.com"
   }
 }

@@ -125,8 +125,24 @@ test("有图纸的型号必须有尺寸行，没图纸的必须是空的", () =>
       table rather than dimensions copied from a sibling: G* and T* of the same family are
       different lengths on different fixings, so "close enough" is a wrong hole position and
       a wasted container. See AGENTS.md — a dash costs less trust than a plausible number.
+
+      ONE EXEMPTION, AND IT IS NARROW: a record that says on itself where the numbers came
+      from. `specSources.finishVariantOf` is written only by
+      scripts/apply-finish-variant-specs.mjs, which copies dimensions between two records
+      that are the SAME physical handle in different finishes — MUL1066 and UL1066, confirmed
+      against the photographs and then again against UNION's GENNOV catalogue, which lists
+      both as the same brass lever.
+
+      That is not the error this test exists to catch. The error is a number with nothing
+      behind it; here the provenance is on the record and names the model it came from. A
+      copy between two genuinely different parts still fails, because it would have no such
+      field — the script's list is hand-checked, one pair at a time.
     */
-    if (!entry.drawing && hasSpecs) wrong.push(`${entry.model} 没有图纸却写了尺寸行`);
+    const copiedFrom = (record as { specSources?: { finishVariantOf?: { model: string } } })
+      .specSources?.finishVariantOf?.model;
+    if (!entry.drawing && hasSpecs && !copiedFrom) {
+      wrong.push(`${entry.model} 没有图纸却写了尺寸行`);
+    }
   }
   assert.deepEqual(wrong, [], wrong.join("；"));
 });

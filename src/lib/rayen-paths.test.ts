@@ -113,3 +113,19 @@ test("M8 型号的开孔直径是甲方给的口径，不是原厂的", async ()
     stdio: "pipe",
   });
 });
+
+test("表面变体的尺寸跟着底型号走", async () => {
+  /*
+    MUL1066 is UL1066 in another finish — the client's rule (「前面的第一个字不要，门把手
+    UL 开始」) says so and the two photographs confirm it, same rose and knurl and taper.
+    Its spec table was empty because UNION has no record of the M-prefixed number.
+
+    The rows are copied by scripts/apply-finish-variant-specs.mjs, which means a re-ingest
+    empties them again unless that step is re-run — exactly how the client's hole diameters
+    were lost once already. This runs its --check so the suite says so.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-finish-variant-specs.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});

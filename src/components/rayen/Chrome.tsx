@@ -1,7 +1,7 @@
 import { categoriesFor, legalName, localePath, rayen } from "@/data/rayen";
 import { LOCALE_PUBLIC_PREFIX, STRINGS, type RayenLocale } from "@/data/rayen-i18n";
 import { SearchBox } from "./SearchBox";
-import { Shell } from "./primitives";
+import { Shell, intrinsicSize } from "./primitives";
 
 /**
  * Header and footer for the RAYEN 雷茵 site, in either language.
@@ -55,6 +55,9 @@ function Mark({ locale }: { locale: RayenLocale }) {
       <img
         src={locale === "zh" ? "/images/rayen/logo.webp" : "/images/rayen/logo-latin.webp"}
         alt={locale === "zh" ? "RAYEN 雷茵" : "RAYEN"}
+        {...intrinsicSize(
+          locale === "zh" ? "/images/rayen/logo.webp" : "/images/rayen/logo-latin.webp",
+        )}
         className="h-7 w-auto md:h-8"
       />
     </a>

@@ -139,11 +139,14 @@ export const legalName = rayen.brand.legalName;
 /**
  * The origin used for canonical URLs and JSON-LD.
  *
- * Points at the temporary preview host until the real domain is chosen. It is the only
- * place that host appears in the source — moving the site later is this line plus
+ * rayen.cn since 2026-09-15. Until then this pointed at a preview subdomain of
+ * stahlock.com, and the whole site was noindex so that a RAYEN page would never rank at an
+ * address belonging to a different company.
+ *
+ * It is the only place the host appears in the source — moving the site is this line plus
  * `server_name` in nginx, and nothing else. See CLIENT-RUNBOOK 「雷茵中文站」.
  */
-export const siteUrl = `https://${rayen.preview.host}`;
+export const siteUrl = `https://${rayen.host.domain}`;
 
 /**
  * Every internal link on this site goes through here.

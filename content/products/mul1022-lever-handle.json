@@ -12,7 +12,32 @@
     "rayen"
   ],
   "summary": "Stainless Steel lever handle.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "152mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "24mm"
+    },
+    {
+      "label": "Lever drop",
+      "value": "70mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "12mm"
+    },
+    {
+      "label": "Lever thickness",
+      "value": "9.5mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -68,5 +93,12 @@
   "seoDescription": "Canton Hyland MUL1022 lever handle in Stainless Steel. Finishes: Satin stainless, Satin brass, Antique copper, Matt black. Made in Guangdong, China.",
   "seoTitleEs": "MUL1022 Lever Handle — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland MUL1022 lever Handle en acero inoxidable. Acabados: Satin stainless, Satin brass, Antique copper, Matt black. Fabricado en Guangdong, China.",
-  "nameEs": "Manilla de palanca"
+  "nameEs": "Manilla de palanca",
+  "specSources": {
+    "finishVariantOf": {
+      "model": "UL1022",
+      "basis": "same-shape-different-finish",
+      "rows": 6
+    }
+  }
 }

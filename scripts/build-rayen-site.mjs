@@ -208,15 +208,53 @@ for (const name of SEARCH_INDEXES) {
 /* ------------------------------------------------------------- 5. robots */
 
 /*
-  Disallow everything while the site is on the temporary host. The preview lives at a
-  subdomain of stahlock.com, and a RAYEN page indexed under that hostname would rank for
-  the factory's own name at an address belonging to a different brand — and would keep
-  ranking there long after the real domain is live. Loosen this in the same commit that
-  changes rayen.preview.host, not before.
+  Indexing is open as of 2026-09-15, because the site is now on its own domain.
+
+  It was Disallow: / for as long as the site lived on a preview subdomain of stahlock.com —
+  a RAYEN page indexed under that hostname would have ranked for this factory's name at an
+  address belonging to a different company, and would have kept ranking there long after the
+  move. That block was written to be lifted in the same commit that set the real host, and
+  this is that commit: rayen.cn, see rayen.host.domain.
+
+  Lighthouse scored SEO 69 on https://rayen.cn/ with a single finding — "Page is blocked from
+  indexing" — which is what sent us here.
 */
+const site = JSON.parse(readFileSync(join(root, "content", "rayen", "site.json"), "utf8"));
+const canonicalOrigin = `https://${site.host.domain}`;
 writeFileSync(
   join(TARGET, "robots.txt"),
-  ["User-agent: *", "Disallow: /", "", "# 预览域名期间全站不收录。正式域名上线时改这里。", ""].join("\n"),
+  ["User-agent: *", "Allow: /", "", `Sitemap: ${canonicalOrigin}/sitemap.xml`, ""].join("\n"),
+  "utf8",
+);
+
+/* ---------------------------------------------------------- 5b. sitemap.xml */
+
+/*
+  Written here rather than by Next, because the paths Next knows are /zh/… and /zh-en/… and
+  the ones that exist on this host are / and /en/. A sitemap generated before the lift would
+  list 420 URLs that 404.
+
+  Built from the files actually on disk after the lift, so it cannot disagree with what was
+  published. robots.txt names it, and until now there was no sitemap at all — the site went
+  live pointing crawlers at nothing.
+*/
+const pageUrls = walk(TARGET)
+  .filter((file) => file.endsWith("index.html"))
+  .map((file) => {
+    const rel = relative(TARGET, dirname(file)).replaceAll("\\", "/");
+    return rel === "" ? `${canonicalOrigin}/` : `${canonicalOrigin}/${rel}/`;
+  })
+  .sort();
+
+writeFileSync(
+  join(TARGET, "sitemap.xml"),
+  [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...pageUrls.map((url) => `  <url><loc>${url}</loc></url>`),
+    "</urlset>",
+    "",
+  ].join("\n"),
   "utf8",
 );
 

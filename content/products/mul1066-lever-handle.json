@@ -11,7 +11,28 @@
     "rayen"
   ],
   "summary": "Stainless Steel lever handle.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "130mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "Ø22mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "9.5mm"
+    },
+    {
+      "label": "Projection",
+      "value": "69mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -37,5 +58,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "MUL1066 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle."
+  "seoDescription": "Stainless Steel lever handle.",
+  "specSources": {
+    "finishVariantOf": {
+      "model": "UL1066",
+      "basis": "same-shape-different-finish",
+      "rows": 5
+    }
+  }
 }

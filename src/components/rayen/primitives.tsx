@@ -1,6 +1,32 @@
 import type { ReactNode } from "react";
+import imageDims from "@/data/generated/rayen-image-dims.json" with { type: "json" };
 import { localePath } from "@/data/rayen";
 import type { RayenLocale } from "@/data/rayen-i18n";
+
+/**
+ * The image's own pixel size, for the width/height attributes.
+ *
+ * Lighthouse asked for these (「Image elements do not have explicit width and height」): without
+ * them the browser cannot reserve the box before the bytes arrive, and the page reflows under
+ * the reader as each photograph lands.
+ *
+ * They state the FILE's size, not the CSS box's. Restating the box would satisfy the audit
+ * and be untrue — and it would paper over the related finding, 「Displays images with
+ * incorrect aspect ratio」, which is the browser correctly noticing that a square photograph
+ * is being drawn in a 4:3 frame. The attributes should let it keep noticing.
+ *
+ * This file is a server component, so the map is read at build time and only the two numbers
+ * reach the HTML. It must not be imported into a "use client" component — that would ship
+ * 4,872 entries to the browser.
+ */
+const SIZES = imageDims as Record<string, number[]>;
+
+export function intrinsicSize(src: string): { width?: number; height?: number } {
+  const hit = SIZES[src];
+  /* Length is checked rather than assumed: the JSON's type is number[], and a truncated
+     entry would otherwise render width="1200" height="undefined". */
+  return hit?.length === 2 ? { width: hit[0], height: hit[1] } : {};
+}
 
 /**
  * The small shared pieces of the RAYEN 雷茵 site.
@@ -77,6 +103,7 @@ export function Photo({
       <img
         src={src}
         alt={alt}
+        {...intrinsicSize(src)}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         className="h-full w-full object-cover"

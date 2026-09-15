@@ -61,10 +61,24 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /* ------------------------------------------------------- which models to ask about */
 
 /**
- * UNION's own numbering. Anything outside these prefixes is a RAYEN or HYDE model that
- * UNION never made, and querying it would just produce noise in the miss list.
+ * Which model numbers are worth asking UNION about.
+ *
+ * This used to be /^(?:UL|PRE-?|G|T)\d/ — a prefix had to be followed immediately by a
+ * digit — on the reasoning that anything else was a RAYEN or HYDE number UNION never made
+ * and would only add noise to the miss list.
+ *
+ * That reasoning was wrong, and it cost real products. MUL2101, MUL1066 and MTR2110 are all
+ * in UNION's catalogue; none of them passed the filter, so none was ever queried, and all
+ * three sat with an empty spec table while the gap list told the client to go and ask the
+ * factory for drawings UNION was publishing. The client found MUL2101 on his phone in about
+ * a minute. They are new products in the 住宅用金物 モデライズ line — the hotel-fit series —
+ * which is simply a part of the catalogue our prefix list predated.
+ *
+ * So the filter is now the loose shape of a UNION part number rather than a guess at which
+ * families exist. A miss costs one request and is recorded as a miss, which is cheap; a
+ * model excluded here is invisible forever, which is not.
  */
-const UNION_PREFIX = /^(?:UL|PRE-?|G|T)\d/i;
+const UNION_PREFIX = /^[A-Z]{1,4}-?\d/i;
 
 function rayenModels() {
   const out = [];
@@ -114,19 +128,31 @@ async function get(url) {
   return response.text();
 }
 
+/*
+  The result page is requested DIRECTLY, not via search_id.php.
+
+  search_id.php used to POST the model number and hand back the path of a result page
+  carrying it — "/products/search_hinban.php?id=MUL2101&anc=searchResultInner". On
+  2026-09-15 it started returning that same path with the id STRIPPED:
+
+      /products/search_hinban.php?id=&anc=searchResultInner
+
+  An empty id renders the no-results page, which is a perfectly valid 200. So every model
+  fetched through it came back "not in UNION's catalogue" — including T2973, which the same
+  script had read three variants from two hours earlier. The client found MUL2101 on his
+  phone while our probe was reporting it did not exist, which is how this surfaced.
+
+  We know the URL that page lives at, so we build it ourselves and leave search_id.php out
+  of the path entirely. One fewer request, and one fewer thing that can fail open.
+
+  Telling a hit from a miss: the no-results page is about 19.5KB, a hit 25–28KB. Nothing is
+  keyed off that — the ids are what count — but it is the signature to look for if this ever
+  goes quiet again.
+*/
 async function resolveVariants(model) {
-  const response = await fetch(`${ORIGIN}/products/search_id.php`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "User-Agent": "RAYEN-spec-reader/1.0 (hardware catalogue; contact via rayen site)",
-    },
-    body: new URLSearchParams({ id: model }).toString(),
-  });
-  if (!response.ok) throw new Error(`HTTP ${response.status} search_id`);
-  const path = (await response.text()).trim();
-  if (!path.startsWith("/")) return [];
-  const html = await get(`${ORIGIN}${path}`);
+  const html = await get(
+    `${ORIGIN}/products/search_hinban.php?id=${encodeURIComponent(model)}&anc=searchResultInner`,
+  );
   const ids = new Set();
   for (const m of html.matchAll(/detail\.php\?id=([A-Za-z0-9\-]+)/g)) ids.add(m[1]);
   /*
@@ -359,7 +385,7 @@ async function main() {
       const ids = await resolveVariants(entry.model);
       await sleep(DELAY_MS);
       if (!ids.length) {
-        cache.models[entry.model] = { variants: [], error: "search_id 无结果" };
+        cache.models[entry.model] = { variants: [], error: "型号检索页里没有这个型号" };
         missed += 1;
         console.log(`  —  ${entry.model}  未收录`);
       } else {
