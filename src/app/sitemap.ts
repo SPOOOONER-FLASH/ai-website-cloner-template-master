@@ -111,6 +111,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/projects", PRIORITY.section),
     ...entry("/company", PRIORITY.section),
     ...entry("/certifications", PRIORITY.support),
+    // The order-code tables. Reference material rather than catalogue, which is the kind
+    // of page an answer engine cites — the model-number article it sits beside is the
+    // most-cited page on this site.
+    ...entry("/finishes", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),
