@@ -1,0 +1,19 @@
+{
+  "id": "curated-glass-patch-components",
+  "sources": [
+    {
+      "model": "Glass door patch fittings",
+      "sha256": "2795aa23a7e23d0fd5db711851b7d79dd5d6a405760d224150b4c05853537d38",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

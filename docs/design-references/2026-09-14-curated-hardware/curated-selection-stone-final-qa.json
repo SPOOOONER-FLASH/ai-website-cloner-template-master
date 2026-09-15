@@ -1,0 +1,43 @@
+{
+  "id": "curated-selection-stone-final",
+  "sources": [
+    {
+      "model": "9004S",
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+      "crop": [
+        0,
+        0,
+        838,
+        648
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": true
+    },
+    {
+      "model": "LC04 85*60",
+      "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+      "crop": [
+        0,
+        0,
+        445,
+        864
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": true
+    },
+    {
+      "model": "70SN",
+      "sha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac",
+      "crop": [
+        0,
+        0,
+        767,
+        590
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

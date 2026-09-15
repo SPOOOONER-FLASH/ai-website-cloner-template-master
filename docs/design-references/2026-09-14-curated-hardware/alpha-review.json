@@ -17,7 +17,16 @@
     ],
     "width": 1.08,
     "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\9004s-stainless-steel-handle-alpha.png",
-    "textureSha256": "5c15493f981003d710874263852ea7ee6e50a194a4356b94fff03222271d1a77",
+    "textureSha256": "d35c3c9afc2973ea86c0e78d22715b47e26bc38c2b348699d05fb5f393692946",
+    "reviewedHoleSeeds": [
+      [
+        145,
+        500
+      ]
+    ],
+    "holeAreas": [
+      8272
+    ],
     "textureWidth": 838,
     "textureHeight": 648,
     "cropOffset": [
@@ -44,7 +53,36 @@
     ],
     "width": 0.78,
     "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\lc04-85-60-lock-case-alpha.png",
-    "textureSha256": "5d1cac27eda7f635f0e76750e9ba0e21946ae36fab06fdd30a833ea2486a66f2",
+    "textureSha256": "aff756781d27d6d0a129401e49b47e0d8fcacd71b8577ec578f6b5551f57e8da",
+    "reviewedHoleSeeds": [
+      [
+        384,
+        31
+      ],
+      [
+        381,
+        92
+      ],
+      [
+        98,
+        746
+      ],
+      [
+        41,
+        806
+      ],
+      [
+        214,
+        637
+      ]
+    ],
+    "holeAreas": [
+      129,
+      147,
+      223,
+      232,
+      0
+    ],
     "textureWidth": 445,
     "textureHeight": 864,
     "cropOffset": [
@@ -71,7 +109,16 @@
     ],
     "width": 1,
     "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\70sn-lock-cylinder-alpha.png",
-    "textureSha256": "e11fab03d67b08639144781bb0fcbc883074d53482ac6530e19cbf7bd3677896",
+    "textureSha256": "354bc9df268d7d3e6989b7f62db00e99d06ac78bb94f4f6c7c612d9938800a17",
+    "reviewedHoleSeeds": [
+      [
+        709,
+        229
+      ]
+    ],
+    "holeAreas": [
+      5416
+    ],
     "textureWidth": 767,
     "textureHeight": 590,
     "cropOffset": [
