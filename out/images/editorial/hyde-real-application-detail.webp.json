@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "First-party storefront push/pull lock photograph from client asset pack. Format conversion only; no invented installation context.",
+  "sources": [
+    {
+      "source": "public/images/company/hero-designed-for.webp",
+      "sha256": "71ebbaf344ab2651e75f3ac6673c06d67c3c0833132cadfc90cebbc12025b9d4"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}
