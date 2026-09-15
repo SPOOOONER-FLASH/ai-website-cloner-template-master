@@ -3,44 +3,20 @@
   "style": "white",
   "photos": [
     {
-      "model": "587 PBET",
-      "slug": "587-pbet-light-duty-cylindrical-lock",
-      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-pbet-light-duty-cylindrical-lock.webp",
-      "original": "/images/products/587-pbet-light-duty-cylindrical-lock.webp",
-      "sha256": "771516e9be4539fc248c053152e5cf2b583b7fd41d0ef9bd8a46d2d236d571cf",
-      "position": [
-        -1.12,
-        0
-      ],
-      "width": 0.9
-    },
-    {
-      "model": "587 MBET",
-      "slug": "587-mbet-light-duty-cylindrical-lock",
-      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-mbet-light-duty-cylindrical-lock.webp",
-      "original": "/images/products/587-mbet-light-duty-cylindrical-lock.webp",
-      "sha256": "3a35132a08603eb693447df53e5f5769a1f553a8f06610342b20fb6c604bb3d2",
+      "model": "587 SSET",
+      "slug": "587-sset-light-duty-cylindrical-lock",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-sset-light-duty-cylindrical-lock-2.webp",
+      "original": "/images/products/587-sset-light-duty-cylindrical-lock-2.webp",
+      "sha256": "65129fe178644e44f01aed6011f8f49019a6948a993df43eb92ac7495afaa254",
       "position": [
         0,
         0
       ],
-      "width": 0.9
-    },
-    {
-      "model": "587 SSET",
-      "slug": "587-sset-light-duty-cylindrical-lock",
-      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-sset-light-duty-cylindrical-lock.webp",
-      "original": "/images/products/587-sset-light-duty-cylindrical-lock.webp",
-      "sha256": "c908517b0cc796da04ceac8af9ecfebae3dac1761569f7b47d429436bda5cd22",
-      "position": [
-        1.12,
-        0
-      ],
-      "width": 0.9
+      "width": 1.92
     }
   ],
-  "heading": "587 / DISTINCT FINISH REFERENCES",
-  "note": "Separate catalogue models - not a mixed-finish set",
+  "heading": "587 SSET / MODEL & FINISH",
+  "note": "One catalogue model, one finish / Read the full reference",
   "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
   "resolution": 1800
 }

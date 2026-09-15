@@ -1,0 +1,139 @@
+{
+  "id": "curated-selection-box-final",
+  "style": "box",
+  "photos": [
+    {
+      "model": "9004S",
+      "slug": "9004s-stainless-steel-handle",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+      "original": "/images/products/9004s-stainless-steel-handle.webp",
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+      "crop": [
+        100,
+        190,
+        890,
+        720
+      ],
+      "position": [
+        -0.98,
+        0.08
+      ],
+      "width": 1.08,
+      "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\9004s-stainless-steel-handle-alpha.png",
+      "textureSha256": "d35c3c9afc2973ea86c0e78d22715b47e26bc38c2b348699d05fb5f393692946",
+      "reviewedHoleSeeds": [
+        [
+          145,
+          500
+        ]
+      ],
+      "holeAreas": [
+        8272
+      ],
+      "textureWidth": 838,
+      "textureHeight": 648,
+      "cropOffset": [
+        37,
+        37
+      ],
+      "exactSourceRGB": true
+    },
+    {
+      "model": "LC04 85*60",
+      "slug": "lc04-85-60-lock-case",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-5.webp",
+      "original": "/images/products/lc04-85-60-lock-case-5.webp",
+      "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+      "crop": [
+        220,
+        40,
+        480,
+        900
+      ],
+      "position": [
+        0.04,
+        0
+      ],
+      "width": 0.78,
+      "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\lc04-85-60-lock-case-alpha.png",
+      "textureSha256": "aff756781d27d6d0a129401e49b47e0d8fcacd71b8577ec578f6b5551f57e8da",
+      "reviewedHoleSeeds": [
+        [
+          384,
+          31
+        ],
+        [
+          381,
+          92
+        ],
+        [
+          98,
+          746
+        ],
+        [
+          41,
+          806
+        ],
+        [
+          214,
+          637
+        ]
+      ],
+      "holeAreas": [
+        129,
+        147,
+        223,
+        232,
+        0
+      ],
+      "textureWidth": 445,
+      "textureHeight": 864,
+      "cropOffset": [
+        18,
+        29
+      ],
+      "exactSourceRGB": true
+    },
+    {
+      "model": "70SN",
+      "slug": "70sn-lock-cylinder",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\70sn-lock-cylinder.webp",
+      "original": "/images/products/70sn-lock-cylinder.webp",
+      "sha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac",
+      "crop": [
+        0,
+        120,
+        800,
+        650
+      ],
+      "position": [
+        1.08,
+        0.02
+      ],
+      "width": 1,
+      "texture": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\70sn-lock-cylinder-alpha.png",
+      "textureSha256": "354bc9df268d7d3e6989b7f62db00e99d06ac78bb94f4f6c7c612d9938800a17",
+      "reviewedHoleSeeds": [
+        [
+          709,
+          229
+        ]
+      ],
+      "holeAreas": [
+        5416
+      ],
+      "textureWidth": 767,
+      "textureHeight": 590,
+      "cropOffset": [
+        14,
+        12
+      ],
+      "exactSourceRGB": true
+    }
+  ],
+  "heading": "HYDE / SAMPLE STUDY",
+  "note": "Individual product studies / Confirm configuration before ordering",
+  "itemId": "00",
+  "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+  "resolution": 1800
+}

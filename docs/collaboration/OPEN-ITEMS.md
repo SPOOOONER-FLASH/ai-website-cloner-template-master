@@ -20,6 +20,7 @@
 | 4 | **59 条西语产品名术语确认** | 已按影响页数倒序进 `spanish-review.json`（Lever Handle 68 页、Bathroom Accessories 66 页）。已先上线，因为它替换掉的状态不是「未翻译」而是「错的」 | 2026-09-11 |
 | 5 | **85kg 以上的闭门器是否在做** | 甲方 2026-09-13 答「那就 85kg」，已按此定稿。**若以后做了更重的，文章和配套包要同步改** | 2026-09-12 |
 | 6 | **阿里店铺横幅的「25+ years」** | 站上是 since 1998（28 年），阿里横幅少说了三年。甲方自己能改 | 2026-09-12 |
+| 8 | **锈锁的真实照片文件** | 文章已写好并提交（`what-an-old-padlock-tells-a-lock-factory`，英西双语，`draft: true`），**缺的只有照片文件本身** —— 微信里发的截图没有进仓库。把石头上那张原图发来，加一行 `heroImage.src`、把 `draft` 去掉就上线。<br>⚠ 文章里**没有写德国来历**。甲方说「德国，编一个故事」，我没有编：这把锁的出处我们不知道，编一个产地写在公司网站上，和在报价单上编一个背距是同一件事。文章改成写「这把锁能读出什么、不能读出什么，以及为什么我们不猜」，德国那条线用的是真的 —— DIN 18252 / EN 1303，正好是我们欧标锁芯的依据 | 2026-09-14 |
 | 7 | **老板手上那批真 CAD 图** | 她说「我再找一些截图出来」。真图能做成产品页细节图；那张生成的 LC-085 铅笔图不能用 | 2026-09-12 |
 
 ## 二、等工厂给数据（这是真正的瓶颈）
@@ -42,12 +43,11 @@
 
 | # | 做什么 | 备注 | 提出日期 |
 |---|---|---|---|
-| 1 | **PageSpeed：Reduce unused JavaScript 198–203 KiB** | 红项。Next.js 框架运行时，要动得改框架配置 | 2026-09-11 |
-| 2 | **PageSpeed：Render-blocking requests 450ms** | 手机端红项。CSS 包 | 2026-09-13 |
-| 3 | **PageSpeed：Legacy JavaScript 26 KiB** | browserslist 目标可调 | 2026-09-11 |
+| 1 | **PageSpeed：Reduce unused JavaScript 198–203 KiB** | 查清了：首页最大的两个块是 `36lm--m0zwqtj.js`（228KB / gzip 71KB）和 `1f5ust74o0qp9.js`（164KB / gzip 45KB），就是 React + Next 运行时本身。**要拿掉就得拿掉首页的交互**（轮播、抽屉导航、语言切换、promo）。这不是配置能调的，是架构取舍，要甲方拍板 | 2026-09-11 |
+| 2 | **PageSpeed：Render-blocking requests 450ms** | 三个 CSS 文件，raw 102KB / gzip 18.5KB。**gzip 后只有 18.5KB，所以这 450ms 是往返次数不是体积** —— 靠删 CSS 解决不了。真正的解法是把三个合成一个或内联首屏部分，而 Next 静态导出不提供这个开关 | 2026-09-13 |
+| 3 | **PageSpeed：Legacy JavaScript 26 KiB** | ❌ **不是 browserslist**，那条备注是错的。Next 16 默认就编译到 `chrome 111 / safari 16.4`（`node_modules/next/dist/shared/lib/modern-browserslist-target.js`），我们自己的代码里没有旧语法。站上那个 112KB 的 core-js 包挂的是 `noModule`，Chrome 根本不下载，所以也不是它。**剩下最可能的来源是 gtag.js** —— GA4 已改 `lazyOnload`，下次跑 PageSpeed 看这条还在不在 | 2026-09-11 |
 | 4 | **PageSpeed：Forced reflow / Network dependency tree** | 诊断项，不直接计分 | 2026-09-11 |
-| 7 | MIWA 可照做项：**术语表** | 对 AI 引用友好 | 2026-09-13 |
-| 9 | **锁体型号大小写不统一** | 42 个锁体型号里 26 个写 `Lc`、16 个写 `LC`（`Lc14 85×50mm` 紧挨着 `LC04 85*60`）。做 `/model-lookup` 时页面把这件事印出来了。AGENTS.md：「一致性本身就是论据」 | 2026-09-14 |
+| 9 | globals.css 里 21 条无人使用的规则 | `npm run audit:deadcss` 查出来的（约 5.2KB）。**没有删** —— 5.2KB 压缩后约 600 字节，动不了任何指标，而 globals.css 是设计文件，为 600 字节在里面手删 21 段不是好交易。留给下一次设计整理，工具已经在 | 2026-09-14 |
 | 8 | 开孔图接入雷茵页面 | 56 张已生成，但那是另一台机器上的会话在做的站，他们的产品已有工厂参数图。**接不接由那边决定** | 2026-09-13 |
 
 ## 四、甲方要做的手动动作
@@ -55,15 +55,15 @@
 | # | 什么 | 频率 |
 |---|---|---|
 | 1 | **Cloudflare purge** | 每次部署后。纪律：agent 绝不碰，只在回复末尾写一句提醒 |
-| 2 | 服务器缓存生命周期（PageSpeed 的 124–175 KiB） | 一次性配置，见 `CLIENT-RUNBOOK.md` |
+| 2 | 服务器缓存生命周期（PageSpeed 的 124–175 KiB） | 一次性配置，**完整步骤已写进 `CLIENT-RUNBOOK.md` 第 9 节**：在哪个文件、粘哪一段、`nginx -t` 怎么看、成功是什么都不打印、怎么 curl 验证 |
 
 ## 五、2026-09-13 甲方一次提的七件
 
 | # | 事项 | 状态 |
 |---|---|---|
 | 1 | 自动检查所有图片缩放 | ✅ `npm run audit:imagefit`，已进 `test:export`。查出 4 张被裁穿主体 —— 3 张方形产品板在 16:9 的文章框里各丢 **44%**（产品被切掉将近一半），已补白修复。补白无损，裁切有损 |
-| 2 | 图片都铺 logo | ◐ **产品图已 100% 覆盖**：`npm run assets:watermark:check` 2026-09-14 核实 **3956/3956** 张衍生图带标，`public/images/products/` 一张不缺。**剩下没打标的是 `public/images/editorial/`（133 张）与 `public/images/company/`（20 张）**，两处都是 Codex 的区域且此刻正在改。<br>⚠ 这两处不能一刀切：`architecture-*` 那批是建筑场景照，不是我们的产品也不是我们拍的，盖上 HYDE 标等于宣称作者身份。**建议只给我们自己的产品照与工厂照打标**，等 Codex 那批图落地后做 |
-| 3 | 移动端优化 | ⏳ **未做**。手机 FCP 3.1s / LCP 7.0s，桌面 TBT 410ms |
+| 2 | 图片都铺 logo | ✅ **产品图 3956/3956 全覆盖**（含响应式候选 —— `product-images.config.json` 指向 `products-hyde` 分支，所以手机上取到的小图也带标）。编辑图与工厂照按**出处证据**追加 22 张：20 张 sidecar 声明来自真实照片的编辑图 + 2 张有 README 记录的真实工厂照。<br>⚠ **其余 89 张一张都没打标，而且不该打** —— 其中 20 张的 sidecar 里写着自己的生成指令（「This is illustrative editorial imagery, not evidence of a specific sellable model」），给生成图盖章等于宣称那是我们拍的、我们的货；另外 69 张仓库里没有任何出处记录。默认是不打标，要加就得先加证据。`npm run assets:brandlist` 出清单 |
+| 3 | 移动端优化 | ◐ **做了两件有实测依据的**：① 需求橱窗挪到首页上方后，它前两张图还留着 `priority` 标记 —— 375×812 实测那两张在 **y=2651**（首屏下方三个半屏），却带着 `fetchpriority=high` 并被 React 提升成 `<link rel=preload>`，抢 LCP 那张图的首轮带宽。已取消，现在整页只剩一张高优先级图，就是 LCP 本身。② GA4 改 `lazyOnload`，去掉了 head 里那条第三方 preload。<br>剩下的见下面 1–4 |
 | 4 | 多做几张手绘图 / 与 Codex 协商 | ⏸ **等甲方定方向**：用老板手上的真 CAD 图，还是走 Codex 的 Blender 真实几何管线。**不做生成图** —— 那张 LC-085 的型号和两个孔径都是编的 |
 | 5 | 主推老板喜欢的 + 阿里优爆品 | ✅ 需求橱窗已上线（305 / 564 / 5836 / 308 / 035 / SSH016，按九十天真实询盘排序，307 与 311 因已在旗舰块而排除） |
 | 6 | 新加坡 IP 要干嘛 | ✅ **已查明**：ChatGPT 引用了我们的下载页并送来一个真人（`utm_source=chatgpt.com`），停留 5 分 14 秒、0 点击、1 页。GEO 已经在出结果。**0 点击的原因是下载页没有可下载的技术资料** —— 正是 MIWA 有而我们缺的那类东西 |
@@ -83,6 +83,8 @@
 
 | 什么 | 关闭日期 | 怎么关的 |
 |---|---|---|
+| 锁体型号大小写不统一 | 2026-09-14 | 42 个锁体型号统一为 `LC`（原来 29 个 `Lc` / 13 个 `LC`）。256 处，36 个文件，含别的产品和文章的 `relatedModels` 数组 —— 只改 `model` 字段会让那些数组指向一个不再存在的型号号，而构建不会报错。`npm run content:modelcodes` 是生成器，`--check` 已进 `prebuild` 硬失败 |
+| MIWA 可照做项：术语表 | 2026-09-14 | `/glossary` 与 `/es/glossary`，23 条。**词是从我们自己的规格标签里数出来的**（Backset 145 条、Door thickness 170 条），不是从行业词典抄的；每条两段 —— 定义，然后「写错的代价」，测试要求后者不得短于 80 字符。计数构建时现算。与 `/configurator` 上那个类目术语表零重叠 |
 | MIWA 可照做项：停产/替代型号对照表 | 2026-09-14 | `/model-lookup` 与 `/es/model-lookup`。**分成三张表而不是一张** —— 改名（18）、退役类目路径（1）、在目录但没照片（68）是三件不同的事，混成一个「停产」会同时说两个谎。68 条一律**只印型号不加链接**，`withheld-products.test.ts` 对构建产物断言了这一点 |
 | MIWA 可照做项：订货编号 → 表面处理对照表 | 2026-09-14 | `/finishes` 与 `/es/finishes`。代码语法是从目录自身数出来的（78 个 ET 型号的 `Function` 规格行全写着 Entrance），不是抄来的。15 个表面代码 + 7 个功能代码有据可查，**17 个在用但没说法的印「未确认」而不是猜**，测试锁死这条。数字每次构建重新统计 |
 | 主匙填写表的 PDF / 手写版 | 2026-09-13 | 做成可打印 HTML（`/downloads/master-key-plan-sheet.html`），A4 横向打印样式，浏览器「另存为 PDF」得到同一张表。没有为此引入 PDF 依赖 |

@@ -16,13 +16,46 @@ const checkOnly = process.argv.includes("--check");
   if one side moves, the srcSet points at a 404 and the browser silently falls back to
   the full-size source, which looks exactly like success.
 */
+const editorialConfig = JSON.parse(
+  readFileSync(join(siteComponents, "editorial-images.config.json"), "utf8"),
+);
+
+/*
+  A third library, added 2026-09-14: the HYDE-marked copies of the editorial photographs
+  that a tracked record proves came from a real photograph.
+
+  It has to exist separately rather than replacing the first. A branded candidate must be
+  resized FROM the branded source — resizing the unbranded one and calling it branded
+  would serve an unmarked 480px image to every phone, which is most of the traffic, and
+  the page would look correct while the mark was missing exactly where it was asked for.
+
+  The entries are derived rather than listed: same widths as the unbranded entry, source
+  path rewritten to the branded root. So a width added to editorial-images.config.json is
+  automatically generated for both, and the two libraries cannot drift apart.
+
+  Only the images in branded-editorial-list.json are here. See
+  scripts/build-branded-editorial-list.mjs for why that list is short.
+*/
+const brandedEditorialFiles = JSON.parse(
+  readFileSync(join(repositoryRoot, "docs", "design-references", "branded-editorial-list.json"), "utf8"),
+);
+const brandedEditorialConfig = Object.fromEntries(
+  brandedEditorialFiles
+    .map((file) => [`/images/editorial/${file}`, `/images/editorial-hyde/${file}`])
+    .filter(([source]) => editorialConfig[source])
+    .map(([source, branded]) => [branded, editorialConfig[source]]),
+);
+
 const libraries = [
   {
     label: "editorial",
-    config: JSON.parse(
-      readFileSync(join(siteComponents, "editorial-images.config.json"), "utf8"),
-    ),
+    config: editorialConfig,
     outputDirectory: join(publicRoot, "images", "editorial", "responsive"),
+  },
+  {
+    label: "branded editorial",
+    config: brandedEditorialConfig,
+    outputDirectory: join(publicRoot, "images", "editorial-hyde", "responsive"),
   },
   {
     label: "product",

@@ -48,13 +48,30 @@ export function DemandShowcase({ locale = "en" }: { locale?: Locale }) {
             "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible lg:grid-cols-4",
           )}
         >
-          {items.map((product, index) => (
+          {items.map((product) => (
             <ProductCard
               key={product.model}
               product={product}
               locale={locale}
-              /* First row only — the rest are below the fold on every breakpoint. */
-              priority={index < 2}
+              /*
+                NOTHING HERE IS HIGH PRIORITY, and that changed on 2026-09-14.
+
+                `priority={index < 2}` was right when this rail sat far down the page and
+                its first row was the first product photograph a reader would reach. Then
+                the client asked for the rail to lead, it moved up under the facts strip —
+                and the two flags stayed.
+
+                Measured on a 375×812 phone after the move: the hero image starts at
+                y=171 and these two start at y=2651. Three and a half screens below the
+                fold, marked `fetchpriority="high"`, and React hoists a `<link rel=preload>`
+                for each one into the head. So every mobile visitor spent part of their
+                first round trip fetching two photographs they would not see for three
+                scrolls, in the same window as the image the LCP is measured on.
+
+                MediaPlaceholder says it in its own comment: marking everything priority is
+                the same as marking nothing. The hero is the LCP; this rail is not.
+              */
+              priority={false}
               className="w-[74%] min-w-[74%] flex-none snap-start sm:w-auto sm:min-w-0"
             />
           ))}

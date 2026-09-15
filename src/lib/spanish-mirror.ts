@@ -58,6 +58,9 @@ const SPANISH_MIRROR_PREFIXES = [
     buyer as the English one, and the answer is the same three tables.
   */
   "/model-lookup",
+  // The specification glossary. Half the point of writing it was the Spanish reader:
+  // "backset" has no settled Spanish translation, and the page says which word we use.
+  "/glossary",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */

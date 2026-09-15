@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 3,
+  "sourceRoot": "public/images/editorial",
+  "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
+  "count": 20,
+  "files": [
+    {
+      "source": "public/images/editorial/curated-home-catalogue.webp",
+      "output": "public/images/editorial-hyde/curated-home-catalogue.webp",
+      "width": 1800,
+      "height": 1200,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b7571b020b880f3640a3ffe22a8f47ee14d0274c17faacf011137f07e12eacda",
+      "outputSha256": "e42435f777e00d3123e922380555d7bc891f6a6e12e8c778e0dcee71addd1a0d"
+    },
+    {
+      "source": "public/images/editorial/hyde-client-black-hinge.webp",
+      "output": "public/images/editorial-hyde/hyde-client-black-hinge.webp",
+      "width": 1254,
+      "height": 1254,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8958f25ce7b0a0f0bb46521deb23919764878ea729c11bbfda3120c38df76e5a",
+      "outputSha256": "8d2143c46e9e328163dcb49348eac5ce00201be1ac9f8f0f0d81ec51bb98abac"
+    },
+    {
+      "source": "public/images/editorial/hyde-client-lc04-selection.webp",
+      "output": "public/images/editorial-hyde/hyde-client-lc04-selection.webp",
+      "width": 1254,
+      "height": 1254,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "55b8df7ab03a64e554b8c7a58a7886c62e3210d5443c2ef1faf8fcdb087b7eff",
+      "outputSha256": "b0bc559562feabcd2294253420fa89c00abc4569071bc4c04059582c91432e09"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-cylinder.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-cylinder.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8f10fb311e722566834b1afb7d4d00ab942af79c930fec7a137b8c271c99a1e8",
+      "outputSha256": "7b614fc6e8f496e8e725e8eed29e4632ed38359b02f828e9991b5839e617fa85"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-hinge.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-hinge.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "d3aecde5ffa99d26c98920dff16a5d28c58ecb4eab69e887cd88bba998589879",
+      "outputSha256": "1871fef78a0969516a2527acdb644e6fc9ab7ca005784e408b694f986a9170d6"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-knob.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-knob.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "4bf46cf5b213ef1e2fcfba477896a7599da86ccf97c640b4ba0fbc439546aac9",
+      "outputSha256": "eb137765d78a11ad89815798985b9d4b645cfe9fadc5956f626aba40577275cd"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-lever.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-lever.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "2b90b461bb19a0ab1444f209f3a05c2bcf37ede9214fa024a27e08dbafae84ea",
+      "outputSha256": "a29bdbd624e7c2f172c61ee14c22dd1e1dd336c26d8ee4a66c92cd415758e390"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-lockcase.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-lockcase.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7a4e85772be9b95dc690799b10353ba4c8f356190bd48c9781e4c45be38c67ae",
+      "outputSha256": "22e87016e1aa1178742e8b6f010ab25b187ef33ac2398d9beda342b2a432d0e6"
+    },
+    {
+      "source": "public/images/editorial/hyde-hero-panic.webp",
+      "output": "public/images/editorial-hyde/hyde-hero-panic.webp",
+      "width": 1600,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "62c90274e11f377ea9682c5ab61f8abea922a4329b974253afc77fcb38a327b9",
+      "outputSha256": "4b8293f1a6071b7343ac2a59af27f9b5ef0b77ab02bbbfd0b3d9dfe0807db98d"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-application-detail.webp",
+      "output": "public/images/editorial-hyde/hyde-real-application-detail.webp",
+      "width": 1000,
+      "height": 666,
+      "geometry": {
+        "margin": 17,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7a1043f5d862112eb7acdb27e899c61d2024f99da1cf609a82710b25a2374088",
+      "outputSha256": "8a6934a113baf2d43c12d0c2625059f1d932df8da606fc2ff5ca059b8a90584f"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-control-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-control-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b43c3048c02b23685d9064b7110d3d92034da3e939af82f05a12c55b70c3e31c",
+      "outputSha256": "0de1f54dff07bc56517edd2c9cbc3f6935e95568510a1f72030e48550cf22a5a"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-cylinder-dark.webp",
+      "output": "public/images/editorial-hyde/hyde-real-cylinder-dark.webp",
+      "width": 1254,
+      "height": 1254,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "901ea59e9b68fd7dd15c631956877bd5952812274d26cc2a4605c73dcdd2e8b9",
+      "outputSha256": "ff77eab448d50231174eb6f4ba70301e5f7865d0f0feca89809bed8d28a0205a"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-cylinder-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-cylinder-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "229ad246f877d5f90197ae905fda60a8279c37368013c05b27533ad1b7258181",
+      "outputSha256": "ddf479b0f3ffdcf172c59d59de95bc0d0535c92d9b7dda9ce4826abbbb9b5bfd"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-hinge-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-hinge-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d95c3d168bdf4dfc9d0bf629b3c94352ff7c826321717370914283bc1a7d100c",
+      "outputSha256": "a5f88c076b2366570da2024bfadf837a3c8ef8ad3059cc1313d2d01d85b2c192"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-lever-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-lever-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "96d4e7dbaa208a36c8a9824863b1d29875ac0d0cfbe95b54ec230c06e9e056bd",
+      "outputSha256": "dc542e297c929fb6c78063a11450cd495098fa659151b1fdc2da9efd5b4654ab"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-lever-set-dark.webp",
+      "output": "public/images/editorial-hyde/hyde-real-lever-set-dark.webp",
+      "width": 1254,
+      "height": 1254,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "29e0494de48d0a6539746223f69cace39188c4d697791098673a0ec38d479817",
+      "outputSha256": "a4d06576f47021b48f2edbc8fe3afc4af6d51cfa072d3db04354399ec62f857c"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-lock-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-lock-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "292abdd40ac84db89e672b5aed55f3cac1bcb8f50842185d667064673ad2a7a9",
+      "outputSha256": "b16105f1f18b6455d3ed7c06cf1374da114fa776f75615ad0db3709d325c7cea"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-panic-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-panic-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2d7d9ae288032023a62644f9648656f0e414a3fd34c058fff537b37acf8152db",
+      "outputSha256": "81abc3b148256c0a052514542e73d4a7041c6b930d042ff5aed9fc396761a3a5"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-product-atlas.webp",
+      "output": "public/images/editorial-hyde/hyde-real-product-atlas.webp",
+      "width": 1800,
+      "height": 1300,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "08fdcfee51d3077e9674214ce65afcf4eebed515e2b3ffbd581d7a514f859848",
+      "outputSha256": "6eca281218502394b5162a943c065a8660be995875ee62f96a020b18f6c9faf4"
+    },
+    {
+      "source": "public/images/editorial/hyde-real-pull-plate.webp",
+      "output": "public/images/editorial-hyde/hyde-real-pull-plate.webp",
+      "width": 1200,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "39fbe44f413e6dc699efe37b00b4ddf6ed1e7065c8477fb34c89125efa1ecef0",
+      "outputSha256": "eb3c25a75c34053783d69ec88266dc3fc67d8ae742be0f12e34a3b33d80317bd"
+    }
+  ]
+}

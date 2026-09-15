@@ -10,7 +10,8 @@
         1000,
         1000
       ],
-      "exactTexturePixels": true
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
     },
     {
       "model": "9004S",
@@ -21,7 +22,8 @@
         1000,
         1000
       ],
-      "exactTexturePixels": true
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
     }
   ],
   "packed": true,

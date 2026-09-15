@@ -1,0 +1,145 @@
+[
+  {
+    "id": "564-warm-stone",
+    "reviewed": true,
+    "itemId": "07"
+  },
+  {
+    "id": "310-cool-stone",
+    "reviewed": true,
+    "itemId": "19"
+  },
+  {
+    "id": "curated-selection-stone-final",
+    "itemId": "00",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-selection-stone-final.png",
+    "sha256": "e064168a403fcfbe79f6bfcc050cae723a4bbd56fcd3b5962e805a59f6c97ddd",
+    "slugs": [
+      "9004s-stainless-steel-handle",
+      "lc04-85-60-lock-case",
+      "70sn-lock-cylinder"
+    ],
+    "reviewed": true,
+    "publish": true,
+    "captionEn": "Individual models for selection. Confirm compatibility and the complete configuration before ordering; this composition is not installation scale.",
+    "captionEs": "Modelos individuales para selección. Confirme la compatibilidad y la configuración completa antes del pedido; esta composición no representa una escala de instalación.",
+    "kind": "space"
+  },
+  {
+    "id": "01-source-307-components",
+    "reviewed": true,
+    "itemId": "01"
+  },
+  {
+    "id": "curated-311-construction",
+    "itemId": "02",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-311-construction.png",
+    "sha256": "977597dd0ba7f165c01f2fd091ad90e30e57dc135e63c4fdef3606699af78be5",
+    "slugs": [
+      "311-panic-exit-device"
+    ],
+    "reviewed": true,
+    "publish": true,
+    "captionEn": "Original views of the 311 mechanism. Door preparation and outside trim are confirmed for the project.",
+    "captionEs": "Vistas originales del mecanismo 311. La preparación de la puerta y la manija exterior se confirman para cada proyecto.",
+    "kind": "selection"
+  },
+  {
+    "id": "curated-lc14-details",
+    "itemId": "03",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-lc14-details.png",
+    "sha256": "71ac7987df6f7c2f0a4fab7c4f16ad3affffe6821aaa1d1633eaae3901f73d23",
+    "slugs": [
+      "lc14-85-50mm-lock-case"
+    ],
+    "reviewed": true,
+    "publish": true,
+    "captionEn": "LC14 lock case details from the original photographs. Handle and cylinder configuration are selected separately.",
+    "captionEs": "Detalles de la caja LC14 en fotografías originales. La configuración de manija y cilindro se selecciona por separado.",
+    "kind": "selection"
+  },
+  {
+    "id": "curated-305-components",
+    "itemId": "05",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-305-components.png",
+    "sha256": "9241c04ff5f977a06882ba39a77de893473d734ad02314965b2ed9e11fcde59b",
+    "slugs": [
+      "305-fire-door-panic-exit-device"
+    ],
+    "reviewed": true,
+    "publish": true,
+    "captionEn": "305 device and components shown in its catalogue photography. Confirm the complete door configuration before ordering.",
+    "captionEs": "Dispositivo 305 y componentes de su fotografía de catálogo. Confirme la configuración completa de la puerta antes del pedido.",
+    "kind": "selection"
+  },
+  {
+    "id": "curated-glass-patch-components",
+    "itemId": "06",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-glass-patch-components.png",
+    "sha256": "b272811f82ca8780f68ac2e7b650c18a907296667d8ded3668be3d2bd498a1cf",
+    "slugs": [
+      "glass-door-patch-fitting-set"
+    ],
+    "reviewed": true,
+    "publish": true,
+    "captionEn": "Components from the original glass door hardware catalogue photograph. Glass preparation and compatibility are confirmed per project.",
+    "captionEs": "Componentes de la fotografía original del catálogo de herrajes para puertas de vidrio. Los mecanizados y la compatibilidad se confirman para cada proyecto.",
+    "kind": "selection"
+  },
+  {
+    "id": "08-source-607-sset-tubular-lock",
+    "reviewed": true,
+    "itemId": "08"
+  },
+  {
+    "id": "09-source-587-sset-light-duty-cylindrical-lock",
+    "reviewed": true,
+    "itemId": "09"
+  },
+  {
+    "id": "10-source-70bk-lock-cylinder",
+    "reviewed": true,
+    "itemId": "10"
+  },
+  {
+    "id": "12-source-316-s-panic-exit-device",
+    "reviewed": true,
+    "itemId": "12"
+  },
+  {
+    "id": "13-source-dc02-door-coordinator",
+    "reviewed": true,
+    "itemId": "13"
+  },
+  {
+    "id": "14-source-hyde-ar4-110-mortise-lock",
+    "reviewed": true,
+    "itemId": "14"
+  },
+  {
+    "id": "18-source-308-panic-exit-device",
+    "reviewed": true,
+    "itemId": "18"
+  },
+  {
+    "id": "20-source-035-panic-exit-device-trim",
+    "reviewed": true,
+    "itemId": "20"
+  },
+  {
+    "id": "curated-selection-box-final",
+    "itemId": "00",
+    "file": "docs/design-references/2026-09-14-curated-hardware/curated-selection-box-final.png",
+    "sha256": "931373a49320147f557ddd7c4723db408e69f7513e50009ff35a0ebdff8beacc",
+    "slugs": [
+      "9004s-stainless-steel-handle",
+      "lc04-85-60-lock-case",
+      "70sn-lock-cylinder"
+    ],
+    "reviewed": true,
+    "publish": false,
+    "captionEn": "Alternative sample-board scene retained for review; the stone composition is selected for the gallery.",
+    "captionEs": "Escena alternativa de muestrario para revisión; se seleccionó la composición sobre piedra para la galería.",
+    "kind": "selection"
+  }
+]

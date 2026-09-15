@@ -67,9 +67,15 @@ def save(slug,evidence,expected):
                 area.spaces.active.region_3d.view_location=centre
                 area.spaces.active.region_3d.view_distance=extent*2.5
                 area.spaces.active.region_3d.view_perspective='ORTHO'
+                if evidence.get('neutralClosure_mm'):
+                    area.spaces.active.region_3d.view_rotation=Vector((0,-1,0)).to_track_quat('Z','Y')
     # Orthographic projections are generated from the actual vertices, not labels.
     views=[]
     for axisA,axisB,label in [(0,1,'XY'),(0,2,'XZ'),(1,2,'YZ')]:
+        # A neutral closure dimension must never appear as a published dimension
+        # on a drawing or be featured in the opening viewport.
+        if evidence.get('neutralClosure_mm') and (axisA,axisB)!=(0,2):
+            continue
         pts=[(v[axisA]/MM,v[axisB]/MM) for v in corners]
         lo=[min(p[i] for p in pts) for i in range(2)];hi=[max(p[i] for p in pts) for i in range(2)]
         scale=min(330/max(1,hi[0]-lo[0]),280/max(1,hi[1]-lo[1]))

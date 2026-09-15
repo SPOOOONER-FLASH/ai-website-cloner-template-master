@@ -12,7 +12,6 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Codex image completion | scripts/*curated*, scripts/blender/curated-hardware-scenes.py, docs/design-references/2026-09-14-curated-hardware/, public/images/editorial/curated-*, public/images/product-studies/, home EN/ES, ProductStudies, editorial config, news hero selection | Final reviewed image selection, original-photo details and two scene replacements; source QA then export if out remains clean | 2026-09-14 |
 | Codex studies release | src/app/(en)/product-studies/, src/app/es/product-studies/, src/components/site/ProductStudies.tsx, src/data/generated/product-studies.json, scripts/publish-hardware-studies.mjs, public/images/product-studies/, out/, out-rayen/ | Publish approved real-photo studies EN/ES, catalogue entry, verify and deploy export; out was clean | 2026-09-10 |
 | Claude | content/products/**, public/images/**, public/videos/**, out/, out-rayen/ | DS011 改名、12 个单图型号补图、位置语言面板，重出构建并部署 | 2026-09-08 |
 | Codex | scripts/blender/9004s-published-shell.py, docs/design-references/2026-09-07-home-stills/models-9004s | Published-dimension exterior model and evidence; no site geometry publication | 2026-09-08 |
