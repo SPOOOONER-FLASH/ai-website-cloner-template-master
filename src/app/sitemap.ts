@@ -115,6 +115,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // of page an answer engine cites — the model-number article it sits beside is the
     // most-cited page on this site.
     ...entry("/finishes", PRIORITY.support),
+    // The model-number lookup. Long-tail by nature — every row is a number somebody is
+    // searching for and currently finding nothing for.
+    ...entry("/model-lookup", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),

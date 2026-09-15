@@ -53,6 +53,11 @@ const SPANISH_MIRROR_PREFIXES = [
     its enquiries in Spanish and its finish codes in ours.
   */
   "/finishes",
+  /*
+    The model-number lookup. A buyer holding an old Spanish-language quotation is the same
+    buyer as the English one, and the answer is the same three tables.
+  */
+  "/model-lookup",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */
