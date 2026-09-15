@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { publishedProducts } from "@/data/products";
 import rawStudies from "@/data/generated/product-studies.json";
+import studioStudies from "@/data/studio-studies.json";
 
 /**
  * The generated studies, with the caption fields declared optional.
@@ -28,7 +29,7 @@ interface ProductStudy {
   captionEs?: string;
 }
 
-const studies = rawStudies as ProductStudy[];
+const studies = [...studioStudies, ...rawStudies] as ProductStudy[];
 
 export function ProductStudies({ locale }: { locale: "en" | "es" }) {
   const es = locale === "es";

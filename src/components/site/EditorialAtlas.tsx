@@ -5,7 +5,7 @@ import styles from "./EditorialCatalogue.module.css";
 // Existing catalogue photographs, composed in HTML without redrawing any product.
 export const atlasSubjects = [
   ["lever", "hyde-real-lever-plate", "9001-stainless-steel-handle", "9001", "stainless-steel-handles"],
-  ["panic", "hyde-real-panic-plate", "305-fire-door-panic-exit-device", "305", "panic-exit-devices"],
+  ["panic", "/images/products-hyde/311-panic-exit-device.webp", "311-panic-exit-device", "311", "panic-exit-devices"],
   ["pull", "hyde-real-pull-plate", "stainless-steel-glass-door-pull-handle", "Pull handle", "glass-door-accessories"],
   ["hinge", "hyde-real-hinge-plate", "stainless-steel-door-hinge", "Hinges", "brass-steel-hinges"],
   ["lock", "hyde-real-lock-plate", "lc14-85-50mm-lock-case", "LC14", "lock-cases"],
