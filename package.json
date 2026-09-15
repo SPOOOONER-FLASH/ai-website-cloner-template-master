@@ -79,6 +79,7 @@
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",
     "assets:framed": "node scripts/build-framed-heroes.mjs",
+    "assets:productphotos": "node scripts/import-product-photos.mjs",
     "assets:padlock": "node scripts/import-heritage-padlock.mjs",
     "audit:deadcss": "node scripts/audit-dead-css.mjs",
     "audit:imagefit": "node scripts/audit-image-fit.mjs",
