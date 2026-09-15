@@ -118,6 +118,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // The model-number lookup. Long-tail by nature — every row is a number somebody is
     // searching for and currently finding nothing for.
     ...entry("/model-lookup", PRIORITY.support),
+    // The specification glossary. Definitional content is the most-cited kind we publish.
+    ...entry("/glossary", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),

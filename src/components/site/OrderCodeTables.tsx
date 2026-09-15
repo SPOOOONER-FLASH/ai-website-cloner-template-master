@@ -237,7 +237,7 @@ export function OrderCodeFooter({ locale }: { locale: Locale }) {
         <>
           Los códigos sin confirmar de estas tablas están en nuestra lista de preguntas a
           fábrica. Si tiene un presupuesto con uno de ellos,{" "}
-          <Link href="/es/contact/" className="underline underline-offset-4">
+          <Link href="/es/contact/" className="short-marker short-marker-compact text-brand hover:text-brand-hover">
             envíenos el número de modelo completo
           </Link>{" "}
           y le confirmaremos el acabado antes de que pida una muestra.
@@ -246,7 +246,7 @@ export function OrderCodeFooter({ locale }: { locale: Locale }) {
         <>
           The unconfirmed codes in these tables are on our own question list to the factory.
           If you are holding a quotation that carries one,{" "}
-          <Link href="/contact/" className="underline underline-offset-4">
+          <Link href="/contact/" className="short-marker short-marker-compact text-brand hover:text-brand-hover">
             send us the full model number
           </Link>{" "}
           and we will confirm the finish before you order a sample.

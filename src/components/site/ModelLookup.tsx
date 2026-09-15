@@ -153,7 +153,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                         <td className="py-12 text-c1 text-ink">
                           <Link
                             href={`${prefix}${record.toPath}`}
-                            className="underline underline-offset-4"
+                            className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                           >
                             <span className="font-mono font-semibold">{record.model}</span>{" "}
                             {es ? (record.nameEs ?? record.name) : record.name}
@@ -182,7 +182,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                 <dd className="mt-8 text-c1 text-ink">
                   <Link
                     href={`${prefix}${path.toPath}`}
-                    className="underline underline-offset-4"
+                    className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                   >
                     {es ? (path.categoryNameEs ?? path.categoryName) : path.categoryName}
                   </Link>
