@@ -79,6 +79,7 @@
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",
     "assets:framed": "node scripts/build-framed-heroes.mjs",
+    "audit:deadcss": "node scripts/audit-dead-css.mjs",
     "audit:imagefit": "node scripts/audit-image-fit.mjs",
     "union:split": "node scripts/split-union-image-packs.mjs",
     "rayen:plates": "node scripts/square-rayen-plates.mjs",

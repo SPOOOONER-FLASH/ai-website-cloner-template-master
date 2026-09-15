@@ -902,6 +902,77 @@ Bing 报告里唯一我们没修的一条是「**来自高质量域的入站链�
 
 ---
 
+## 9. 静态资源缓存头（2026-09-14 新增，只做一次，五分钟）
+
+**为什么要做。** PageSpeed 手机端有一条「Serve static assets with an efficient cache policy」，
+124–175 KiB。意思是：买家第二次打开网站时，浏览器又把同样的 CSS 和 JS 下载了一遍，因为
+服务器没告诉它「这些文件可以留着」。
+
+**为什么这条特别安全。** `/_next/static/` 底下每个文件的名字里都带一段哈希
+（`2vj4t0kfs6dej.css`）。内容一变，名字就变。所以把它们设成「缓存一年」不会让任何人看到
+旧版本 —— 新版本是一个新文件名。**这跟 HTML 不一样，HTML 绝对不能长缓存。**
+
+### 怎么做
+
+**第一步：打开配置文件。**
+
+```bash
+sudo nano /etc/nginx/conf.d/cantonlock.com.conf
+```
+
+（如果提示文件不存在，先跑 `ls /etc/nginx/conf.d/` 看看真实文件名，把名字换掉。）
+
+**第二步：在 `server { ... }` 大括号里面、最后一个 `}` 前面，粘上这一段：**
+
+```nginx
+# 带哈希的构建产物：名字变了才是新文件，所以可以放心缓存一年。
+location /_next/static/ {
+    add_header Cache-Control "public, max-age=31536000, immutable";
+}
+
+# 图片：一个月。图片换了名字不一定变，所以不用 immutable。
+location ~* \.(webp|jpg|jpeg|png|svg|woff2|mp4)$ {
+    add_header Cache-Control "public, max-age=2592000";
+}
+```
+
+**第三步：检查语法。这一步不能跳。**
+
+```bash
+sudo nginx -t
+```
+
+- 看到 `syntax is ok` 和 `test is successful` → 继续第四步。
+- **看到任何别的东西 → 停在这里，截图发我。** 不要跑第四步。语法错的配置重载会让整个
+  网站下线。
+
+**第四步：重载。**
+
+```bash
+sudo nginx -s reload
+```
+
+这条命令**成功时什么都不打印**。没有输出就是对的。
+
+**第五步：确认生效。**
+
+```bash
+curl -sI https://cantonlock.com/_next/static/chunks/2vj4t0kfs6dej.css | grep -i cache-control
+```
+
+应该看到 `cache-control: public, max-age=31536000, immutable`。
+如果看到别的，或者这一行是空的，截图发我。
+
+> 文件名里的哈希每次发布都会变。上面那条 curl 如果返回 404，说明这个文件名已经旧了 ——
+> 随便从 https://cantonlock.com 的网页源码里找一个 `/_next/static/chunks/` 开头的地址换上去就行，
+> 不影响配置本身。
+
+### 这条做了以后，还有一条不是你能做的
+
+手机端还有「Render blocking requests 450ms」，说的是三个 CSS 文件。那是 Next.js 的构建
+产物结构决定的，不是服务器配置，也不是加个缓存头能解决的 —— 归我这边，我在
+`OPEN-ITEMS.md` 里记着。
+
 ## 附：什么时候该找我，什么时候自己做
 
 | 情况 | 谁做 |

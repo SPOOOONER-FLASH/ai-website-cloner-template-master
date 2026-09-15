@@ -42,10 +42,11 @@
 
 | # | 做什么 | 备注 | 提出日期 |
 |---|---|---|---|
-| 1 | **PageSpeed：Reduce unused JavaScript 198–203 KiB** | 红项。Next.js 框架运行时，要动得改框架配置 | 2026-09-11 |
-| 2 | **PageSpeed：Render-blocking requests 450ms** | 手机端红项。CSS 包 | 2026-09-13 |
-| 3 | **PageSpeed：Legacy JavaScript 26 KiB** | browserslist 目标可调 | 2026-09-11 |
+| 1 | **PageSpeed：Reduce unused JavaScript 198–203 KiB** | 查清了：首页最大的两个块是 `36lm--m0zwqtj.js`（228KB / gzip 71KB）和 `1f5ust74o0qp9.js`（164KB / gzip 45KB），就是 React + Next 运行时本身。**要拿掉就得拿掉首页的交互**（轮播、抽屉导航、语言切换、promo）。这不是配置能调的，是架构取舍，要甲方拍板 | 2026-09-11 |
+| 2 | **PageSpeed：Render-blocking requests 450ms** | 三个 CSS 文件，raw 102KB / gzip 18.5KB。**gzip 后只有 18.5KB，所以这 450ms 是往返次数不是体积** —— 靠删 CSS 解决不了。真正的解法是把三个合成一个或内联首屏部分，而 Next 静态导出不提供这个开关 | 2026-09-13 |
+| 3 | **PageSpeed：Legacy JavaScript 26 KiB** | ❌ **不是 browserslist**，那条备注是错的。Next 16 默认就编译到 `chrome 111 / safari 16.4`（`node_modules/next/dist/shared/lib/modern-browserslist-target.js`），我们自己的代码里没有旧语法。站上那个 112KB 的 core-js 包挂的是 `noModule`，Chrome 根本不下载，所以也不是它。**剩下最可能的来源是 gtag.js** —— GA4 已改 `lazyOnload`，下次跑 PageSpeed 看这条还在不在 | 2026-09-11 |
 | 4 | **PageSpeed：Forced reflow / Network dependency tree** | 诊断项，不直接计分 | 2026-09-11 |
+| 9 | globals.css 里 21 条无人使用的规则 | `npm run audit:deadcss` 查出来的（约 5.2KB）。**没有删** —— 5.2KB 压缩后约 600 字节，动不了任何指标，而 globals.css 是设计文件，为 600 字节在里面手删 21 段不是好交易。留给下一次设计整理，工具已经在 | 2026-09-14 |
 | 8 | 开孔图接入雷茵页面 | 56 张已生成，但那是另一台机器上的会话在做的站，他们的产品已有工厂参数图。**接不接由那边决定** | 2026-09-13 |
 
 ## 四、甲方要做的手动动作
@@ -53,7 +54,7 @@
 | # | 什么 | 频率 |
 |---|---|---|
 | 1 | **Cloudflare purge** | 每次部署后。纪律：agent 绝不碰，只在回复末尾写一句提醒 |
-| 2 | 服务器缓存生命周期（PageSpeed 的 124–175 KiB） | 一次性配置，见 `CLIENT-RUNBOOK.md` |
+| 2 | 服务器缓存生命周期（PageSpeed 的 124–175 KiB） | 一次性配置，**完整步骤已写进 `CLIENT-RUNBOOK.md` 第 9 节**：在哪个文件、粘哪一段、`nginx -t` 怎么看、成功是什么都不打印、怎么 curl 验证 |
 
 ## 五、2026-09-13 甲方一次提的七件
 
@@ -61,7 +62,7 @@
 |---|---|---|
 | 1 | 自动检查所有图片缩放 | ✅ `npm run audit:imagefit`，已进 `test:export`。查出 4 张被裁穿主体 —— 3 张方形产品板在 16:9 的文章框里各丢 **44%**（产品被切掉将近一半），已补白修复。补白无损，裁切有损 |
 | 2 | 图片都铺 logo | ✅ **产品图 3956/3956 全覆盖**（含响应式候选 —— `product-images.config.json` 指向 `products-hyde` 分支，所以手机上取到的小图也带标）。编辑图与工厂照按**出处证据**追加 22 张：20 张 sidecar 声明来自真实照片的编辑图 + 2 张有 README 记录的真实工厂照。<br>⚠ **其余 89 张一张都没打标，而且不该打** —— 其中 20 张的 sidecar 里写着自己的生成指令（「This is illustrative editorial imagery, not evidence of a specific sellable model」），给生成图盖章等于宣称那是我们拍的、我们的货；另外 69 张仓库里没有任何出处记录。默认是不打标，要加就得先加证据。`npm run assets:brandlist` 出清单 |
-| 3 | 移动端优化 | ⏳ **未做**。手机 FCP 3.1s / LCP 7.0s，桌面 TBT 410ms |
+| 3 | 移动端优化 | ◐ **做了两件有实测依据的**：① 需求橱窗挪到首页上方后，它前两张图还留着 `priority` 标记 —— 375×812 实测那两张在 **y=2651**（首屏下方三个半屏），却带着 `fetchpriority=high` 并被 React 提升成 `<link rel=preload>`，抢 LCP 那张图的首轮带宽。已取消，现在整页只剩一张高优先级图，就是 LCP 本身。② GA4 改 `lazyOnload`，去掉了 head 里那条第三方 preload。<br>剩下的见下面 1–4 |
 | 4 | 多做几张手绘图 / 与 Codex 协商 | ⏸ **等甲方定方向**：用老板手上的真 CAD 图，还是走 Codex 的 Blender 真实几何管线。**不做生成图** —— 那张 LC-085 的型号和两个孔径都是编的 |
 | 5 | 主推老板喜欢的 + 阿里优爆品 | ✅ 需求橱窗已上线（305 / 564 / 5836 / 308 / 035 / SSH016，按九十天真实询盘排序，307 与 311 因已在旗舰块而排除） |
 | 6 | 新加坡 IP 要干嘛 | ✅ **已查明**：ChatGPT 引用了我们的下载页并送来一个真人（`utm_source=chatgpt.com`），停留 5 分 14 秒、0 点击、1 页。GEO 已经在出结果。**0 点击的原因是下载页没有可下载的技术资料** —— 正是 MIWA 有而我们缺的那类东西 |
