@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "sourceRoot": "public/images/company",
+  "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
+  "count": 2,
+  "files": [
+    {
+      "source": "public/images/company/assembly-line.webp",
+      "output": "public/images/company-hyde/assembly-line.webp",
+      "width": 1308,
+      "height": 872,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "3f3a3ea0f1519059bbc4623f8f4fa3a40844793cbce0193beb4c989f1266f99f",
+      "outputSha256": "b829acf1fad38db1baf67193a840afc2dcab95637f9f3f7c141e54e5ba69b9d3"
+    },
+    {
+      "source": "public/images/company/factory-cnc-machining.webp",
+      "output": "public/images/company-hyde/factory-cnc-machining.webp",
+      "width": 1776,
+      "height": 1184,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "124ffe224b2a7213e28a3963aea09a205b1cbe23fe4569e040d66eb59b4aaf2f",
+      "outputSha256": "9fa727454f39ad46392badacfc524beaf6fc29e2fe883012652861e65ec449e9"
+    }
+  ]
+}

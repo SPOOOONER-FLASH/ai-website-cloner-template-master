@@ -60,7 +60,7 @@
 | # | 事项 | 状态 |
 |---|---|---|
 | 1 | 自动检查所有图片缩放 | ✅ `npm run audit:imagefit`，已进 `test:export`。查出 4 张被裁穿主体 —— 3 张方形产品板在 16:9 的文章框里各丢 **44%**（产品被切掉将近一半），已补白修复。补白无损，裁切有损 |
-| 2 | 图片都铺 logo | ◐ **产品图已 100% 覆盖**：`npm run assets:watermark:check` 2026-09-14 核实 **3956/3956** 张衍生图带标，`public/images/products/` 一张不缺。**剩下没打标的是 `public/images/editorial/`（133 张）与 `public/images/company/`（20 张）**，两处都是 Codex 的区域且此刻正在改。<br>⚠ 这两处不能一刀切：`architecture-*` 那批是建筑场景照，不是我们的产品也不是我们拍的，盖上 HYDE 标等于宣称作者身份。**建议只给我们自己的产品照与工厂照打标**，等 Codex 那批图落地后做 |
+| 2 | 图片都铺 logo | ✅ **产品图 3956/3956 全覆盖**（含响应式候选 —— `product-images.config.json` 指向 `products-hyde` 分支，所以手机上取到的小图也带标）。编辑图与工厂照按**出处证据**追加 22 张：20 张 sidecar 声明来自真实照片的编辑图 + 2 张有 README 记录的真实工厂照。<br>⚠ **其余 89 张一张都没打标，而且不该打** —— 其中 20 张的 sidecar 里写着自己的生成指令（「This is illustrative editorial imagery, not evidence of a specific sellable model」），给生成图盖章等于宣称那是我们拍的、我们的货；另外 69 张仓库里没有任何出处记录。默认是不打标，要加就得先加证据。`npm run assets:brandlist` 出清单 |
 | 3 | 移动端优化 | ⏳ **未做**。手机 FCP 3.1s / LCP 7.0s，桌面 TBT 410ms |
 | 4 | 多做几张手绘图 / 与 Codex 协商 | ⏸ **等甲方定方向**：用老板手上的真 CAD 图，还是走 Codex 的 Blender 真实几何管线。**不做生成图** —— 那张 LC-085 的型号和两个孔径都是编的 |
 | 5 | 主推老板喜欢的 + 阿里优爆品 | ✅ 需求橱窗已上线（305 / 564 / 5836 / 308 / 035 / SSH016，按九十天真实询盘排序，307 与 311 因已在旗舰块而排除） |

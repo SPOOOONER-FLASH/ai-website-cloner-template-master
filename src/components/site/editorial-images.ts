@@ -1,5 +1,7 @@
 import editorialImages from "./editorial-images.config.json";
 import productImages from "./product-images.config.json";
+import brandedEditorial from "../../../docs/design-references/branded-editorial-list.json";
+import brandedCompany from "../../../docs/design-references/branded-company-list.json";
 
 interface EditorialImageConfig {
   sourceWidth: number;
@@ -39,6 +41,42 @@ function variantPath(src: string, width: number, directory: string) {
 /** Where each library's generated candidates are written. Mirrored in the generator. */
 export const EDITORIAL_VARIANT_DIRECTORY = "/images/editorial/responsive";
 export const PRODUCT_VARIANT_DIRECTORY = "/images/responsive/products";
+export const BRANDED_EDITORIAL_VARIANT_DIRECTORY = "/images/editorial-hyde/responsive";
+
+/**
+ * Swaps an editorial or company photograph for its HYDE-marked copy.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THE SWAP HAPPENS HERE RATHER THAN IN THE DATA
+ *
+ * Twenty-odd files across src/data, content/ and the page components name editorial
+ * images by their plain path. Rewriting all of those would have been twenty chances to
+ * miss one, and a missed one is invisible: the page renders the unmarked original and
+ * looks perfectly correct.
+ *
+ * Every editorial `<img>` on the site already funnels through this module for its srcSet,
+ * so it is the one place the substitution can be made exhaustively. Authors keep writing
+ * `/images/editorial/hyde-hero-lever.webp`; the marked copy is what ships.
+ *
+ * ---------------------------------------------------------------------------
+ * ONLY THE FILES WITH EVIDENCE
+ *
+ * The list is generated from declared provenance — a sidecar saying the file came from a
+ * real photograph — and most of the editorial library is not in it, because most of the
+ * editorial library is generated illustrative imagery whose own sidecar says so. Marking
+ * one of those would sign a picture we did not photograph of a part that does not exist.
+ * See scripts/build-branded-editorial-list.mjs.
+ */
+const BRANDED_EDITORIAL = new Set(
+  brandedEditorial.map((file) => `/images/editorial/${file}`),
+);
+const BRANDED_COMPANY = new Set(brandedCompany.map((file) => `/images/company/${file}`));
+
+function brandedSource(src: string): string | undefined {
+  if (BRANDED_EDITORIAL.has(src)) return src.replace("/images/editorial/", "/images/editorial-hyde/");
+  if (BRANDED_COMPANY.has(src)) return src.replace("/images/company/", "/images/company-hyde/");
+  return undefined;
+}
 
 /**
  * Adds pre-generated candidates for the curated editorial library and for the product
@@ -51,19 +89,23 @@ export function getResponsiveEditorialImageProps(
   src: string,
   sizes = "100vw",
 ): ResponsiveEditorialImageProps {
+  const marked = brandedSource(src);
   const config = imageConfig[src] ?? productConfig[src];
   const directory = imageConfig[src]
-    ? EDITORIAL_VARIANT_DIRECTORY
+    ? marked
+      ? BRANDED_EDITORIAL_VARIANT_DIRECTORY
+      : EDITORIAL_VARIANT_DIRECTORY
     : PRODUCT_VARIANT_DIRECTORY;
-  if (!config) return { src };
+  if (!config) return { src: marked ?? src };
 
+  const served = marked ?? src;
   const candidates = config.variants.map(
-    (width) => `${variantPath(src, width, directory)} ${width}w`,
+    (width) => `${variantPath(served, width, directory)} ${width}w`,
   );
-  candidates.push(`${src} ${config.sourceWidth}w`);
+  candidates.push(`${served} ${config.sourceWidth}w`);
 
   return {
-    src,
+    src: served,
     srcSet: candidates.join(", "),
     sizes,
   };
