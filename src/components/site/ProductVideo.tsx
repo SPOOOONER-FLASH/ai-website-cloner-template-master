@@ -73,7 +73,10 @@ export function ProductVideo({ video, className }: { video: VideoRef; className?
     checked and ruled out first — 27 of the 28 flagged files are present and served (the
     28th is a pre-rename URL Google still holds, `033-panic-exit-device.mp4`, which is now
     `-trim`), and the player is in the main column rather than behind a tab or a details
-    element. If the report does not clear after a re-crawl, the next thing to try is
+    element. Nor is it the server: the deployed mp4 answers with `Content-Type: video/mp4`
+    and `Accept-Ranges: bytes`, and a Range request returns `206 Partial Content` with the
+    right `content-range` — which is exactly how Google fetches video.
+    If the report does not clear after a re-crawl, the next thing to try is
     lifting the VideoObject out of the Product's `subjectOf` into its own top-level node.
 
     `type` is stated so the browser and the crawler can identify the media without

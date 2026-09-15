@@ -77,7 +77,10 @@
 1. **不是文件缺失** —— 28 个被点名的地址里 27 个文件都在且能取到。第 28 个是
    `033-panic-exit-device.mp4`，那是改名前的旧地址（现在叫 `-trim`），Google 手上是旧的
 2. **不是被藏起来** —— 播放器在正文主列，不在标签页或折叠块里
-3. **最可能是 `preload="none"`** —— 元素在，但里面什么都没有：没有时长、没有尺寸、
+3. **不是服务器取不到** —— 实测线上那个 mp4：`Content-Type: video/mp4`、
+   `Accept-Ranges: bytes`，带 Range 头请求返回 `206 Partial Content` 和正确的
+   `content-range`。Google 抓视频靠的就是 Range 请求，这一条完全正常
+4. **最可能是 `preload="none"`** —— 元素在，但里面什么都没有：没有时长、没有尺寸、
    没有第一帧，渲染器认不出那是个能播的视频。已改成 `preload="metadata"`（只取文件头，
    几 KB，不是整段片子）。`<source>` 原本连 `type` 都没有，一并补上
 
