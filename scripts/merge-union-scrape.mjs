@@ -32,9 +32,14 @@
  *   G2888   G2888xD920SZW.jpg                      P=580, 总长 800
  *
  * Nothing else from the scrape goes into those folders — the published frames are kept as
- * they are and only the drawing is added, so no image arrives twice. T2973 still has no
- * drawing anywhere and keeps its empty table; it did gain a product plate, which is a
- * separate matter for the client to confirm.
+ * they are and only the drawing is added, so no image arrives twice.
+ *
+ * T2973 is a fifth case and a different one; see WHOLLY_FROM_UNION below. It was the last
+ * of that no-drawing group, and the drawing turned out to have been on UNION all along under
+ * a filename we were filtering out: T2973AxD900SZoW.jpg. We had split that model into two
+ * records, T2973 with the photographs and T2973A with the drawing, on the belief that the
+ * supplier's 「A」 named a second model. UNION has no T2973A — the suffix marks the drawing
+ * file. The two records are merged, and content/taxonomy-moves.json carries the redirect.
  *
  * BATCHES 5, 6, 7 AND THE PIVOTS
  * Those packs ARE on this machine, and there the scrape adds real coverage: G1265 and G1286
@@ -50,7 +55,15 @@
  *   node scripts/merge-union-scrape.mjs
  */
 
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -81,6 +94,22 @@ const REBUILD_ONLY = {
   G1266: ["G1266xD900SZW.jpg"],
   G2888: ["G2888xD920SZW.jpg"],
 };
+
+/*
+  Models whose staging folder is taken from UNION ALONE, because UNION publishes every frame
+  the site already shows plus the drawing.
+
+  T2973 is the case that earned this. Its three published photographs were compared frame by
+  frame against UNION's D000 / D400 / D500 — mean greyscale difference 1.3, 2.8 and 2.9 out
+  of 255, i.e. the same three pictures, which is unsurprising: the client's pack for batch 1
+  was UNION material. So there is nothing to preserve by decoding our webp back to jpg, and
+  taking UNION's originals instead skips a lossy round trip the other four cannot skip.
+
+  Checked per model, never assumed. A model whose client pack holds a frame UNION does not
+  publish belongs in REBUILD_ONLY above, not here — that is the difference between the two
+  lists, and getting it wrong drops a photograph the factory paid for.
+*/
+const WHOLLY_FROM_UNION = new Set(["T2973"]);
 
 /*
   How many non-drawing frames one model's gallery may hold once the scrape is folded in.
@@ -182,6 +211,20 @@ for (const model of readdirSync(SCRAPE)) {
     continue;
   }
 
+  if (WHOLLY_FROM_UNION.has(model)) {
+    const dir = join(REBUILT, model);
+    let added = 0;
+    if (!DRY) mkdirSync(dir, { recursive: true });
+    for (const file of files) {
+      if (existsSync(join(dir, file))) continue;
+      if (!DRY) copyFileSync(join(from, file), join(dir, file));
+      added += 1;
+    }
+    copied += added;
+    staged.push(`${model}: 全部取自 UNION ${files.length} 张（新复制 ${added} 张）`);
+    continue;
+  }
+
   const wanted = REBUILD_ONLY[model];
   if (!wanted) {
     leftAlone.push(model);
@@ -208,18 +251,40 @@ for (const model of readdirSync(SCRAPE)) {
     the manifest's `drawing` field can name it exactly as every other batch does.
   */
   const dir = join(REBUILT, model);
+  /*
+    THE DRAWING IS EXCLUDED HERE, AND THE PLATES ARE RE-NUMBERED FROM ZERO EACH RUN.
+
+    Both guard one failure, which this script shipped before either existed.
+
+    Run one adds UNION's drawing to a model that had none. The ingest publishes it, so from
+    then on the drawing is part of that model's published gallery. Run two re-stages
+    "everything the site publishes" — which now includes the drawing — and writes it a SECOND
+    time as a D0nn plate, beside the copy still arriving under its own UNION filename. G1216
+    went from six images to seven that way, the seventh being its own dimension drawing
+    again, and each further run would have added one more.
+
+    So anything labelled a dimension drawing is skipped (the named file below is the single
+    true copy), and the D0nn files are cleared before writing so the numbering is rebuilt
+    rather than extended. Re-running now converges instead of ratcheting.
+  */
   const existing = [product.heroImage, ...(product.gallery ?? [])]
-    .map((image) => image?.src)
-    .filter(Boolean)
-    .map((src) => String(src).slice(String(src).lastIndexOf("/") + 1));
+    .filter((image) => image?.src && !/dimension drawing/i.test(image.label ?? ""))
+    .map((image) => String(image.src).slice(String(image.src).lastIndexOf("/") + 1));
+
+  const platePattern = new RegExp(`^${model}xD0\\d\\dZHP\\.jpg$`, "i");
+  if (!DRY) {
+    mkdirSync(dir, { recursive: true });
+    for (const file of readdirSync(dir)) {
+      if (platePattern.test(file)) rmSync(join(dir, file));
+    }
+  }
 
   let kept = 0;
-  if (!DRY) mkdirSync(dir, { recursive: true });
   for (const [index, name] of existing.entries()) {
     const source = join(PUBLISHED, name);
     if (!existsSync(source)) continue;
     const target = join(dir, `${model}xD0${String(index).padStart(2, "0")}ZHP.jpg`);
-    if (!DRY && !existsSync(target)) await sharp(source).jpeg({ quality: 92 }).toFile(target);
+    if (!DRY) await sharp(source).jpeg({ quality: 92 }).toFile(target);
     kept += 1;
   }
 

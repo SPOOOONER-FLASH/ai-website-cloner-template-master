@@ -40,6 +40,10 @@
     {
       "label": "Door cutout",
       "value": "Ø46mm"
+    },
+    {
+      "label": "Weight",
+      "value": "0.39kg"
     }
   ],
   "material": "Stainless Steel",
@@ -77,5 +81,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL750 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle, 128mm lever."
+  "seoDescription": "Stainless Steel lever handle, 128mm lever.",
+  "specSources": {
+    "artunion": {
+      "id": "UL750-001",
+      "basis": "sole",
+      "fetchedAt": "2026-09-15T06:55:12.892Z"
+    }
+  }
 }

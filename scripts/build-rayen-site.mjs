@@ -180,6 +180,31 @@ for (const ref of assetRefs) {
 
 cpSync(join(OUT, "_next"), join(TARGET, "_next"), { recursive: true });
 
+/* ------------------------------------------------ 4b. the search indexes */
+
+/*
+  Copied by name, because nothing can discover them.
+
+  Step 3 finds assets by scanning the built HTML for /images, /videos and /fonts paths. The
+  search index is neither: it is fetched by scripts/../SearchBox on first open, so its path
+  exists only inside a JavaScript bundle, and it lives at the document root rather than under
+  an asset directory. Left to the scanner it would simply never be copied, and the search box
+  would open, spin, and find nothing — on the production host only, since `next dev` serves
+  public/ directly and would look perfectly fine.
+
+  Both languages are copied into the one tree: out-rayen serves 中文 at / and English at /en/,
+  and each fetches its own file.
+*/
+const SEARCH_INDEXES = ["search-index-rayen-zh.json", "search-index-rayen-en.json"];
+for (const name of SEARCH_INDEXES) {
+  const source = join(PUBLIC, name);
+  if (!existsSync(source)) {
+    console.error(`缺少 ${name} —— 先跑 node scripts/build-search-index.mjs`);
+    process.exit(1);
+  }
+  copyFileSync(source, join(TARGET, name));
+}
+
 /* ------------------------------------------------------------- 5. robots */
 
 /*

@@ -137,24 +137,40 @@ async function resolveVariants(model) {
   const exact = [...ids].filter((id) => id.toUpperCase().startsWith(`${model.toUpperCase()}-`));
 
   /*
-    ONE VARIANT PER LENGTH, NOT PER FINISH.
+    ONE VARIANT PER SIZE, NOT PER FINISH.
 
-    A UNION part number is <model>-<finish>-<colour>[-L<length>]. G2750 has 15 of them, but
-    the numbers we came for — weight, pitch, hole sizes — vary with LENGTH and not with
-    whether the brass is mirrored or satin. Fetching by finish costs fifteen requests and
-    still misses a length: G2690 publishes twenty variants, and the adjustable 1660–2160
-    one we actually sell was not in the first four, which is why its pitch looked like a
-    conflict when it was only an absent row.
+    A UNION part number is <model>-<finish>-<colour>[-<size>]. G2750 has 15 of them, but the
+    numbers we came for — weight, pitch, hole sizes — vary with SIZE and not with whether the
+    brass is mirrored or satin. Fetching by finish costs fifteen requests and still misses a
+    length: G2690 publishes twenty variants, and the adjustable 1660–2160 one we actually
+    sell was not in the first four, which is why its pitch looked like a conflict when it was
+    only an absent row.
 
-    So group by the -L#### suffix and take one of each. Fewer requests on somebody else's
-    server, and complete coverage of the axis that matters.
+    WHY THE KEY IS "EVERYTHING AFTER THE NUMERIC SEGMENTS" AND NOT "-L####".
+
+    It used to be `/-L(\d+)$/`, on the assumption that a size always shows up as -L600. The
+    client searched T2973 on UNION's own site on 2026-09-14 and got three results where we
+    had cached one:
+
+        T2973-01-023-A    P=1480〜2080
+        T2973-01-023-B    P=2081〜2580
+        T2973-01-023-C    P=2581〜2980
+
+    Three centre-distance bands of one made-to-order handle, each with its own drawing, and
+    none of them carrying -L####. All three collapsed to the key "base" and two were thrown
+    away — so the catalogue showed the 1480–2080 band and silently claimed that was the part.
+
+    Finish and colour are the numeric segments; anything after them is what distinguishes the
+    part. Stripping the leading -<digits> groups handles every id shape UNION uses here,
+    including UL1066-001 which has only one such segment.
   */
-  const byLength = new Map();
+  const bySize = new Map();
   for (const id of exact) {
-    const key = (id.toUpperCase().match(/-L(\d+)$/) ?? [, "base"])[1];
-    if (!byLength.has(key)) byLength.set(key, id);
+    const tail = id.toUpperCase().slice(model.length).replace(/^(-\d+)+/, "");
+    const key = tail || "base";
+    if (!bySize.has(key)) bySize.set(key, id);
   }
-  return [...byLength.values()];
+  return [...bySize.values()];
 }
 
 /* --------------------------------------------------------------- spec extraction */

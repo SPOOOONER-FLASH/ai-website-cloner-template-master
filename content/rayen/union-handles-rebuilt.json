@@ -195,6 +195,50 @@
           "value": "Ø22mm"
         }
       ]
+    },
+    {
+      "model": "T2973",
+      "slug": "t2973-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手（可定制长度）",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "T2973AxD900SZoW.jpg / T2973BxD900SZoW.jpg / T2973CxD900SZoW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1480–2980mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1600–3100mm（按单定制）"
+        },
+        {
+          "label": "Length bands",
+          "value": "A 1600–2200 / B 2201–2700 / C 2701–3100"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P1=40mm at each end"
+        },
+        {
+          "label": "Grip section",
+          "value": "25 × 8mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "38 × 73mm"
+        },
+        {
+          "label": "Projection",
+          "value": "38mm"
+        }
+      ]
     }
   ]
 }

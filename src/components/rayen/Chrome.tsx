@@ -1,5 +1,6 @@
 import { categoriesFor, legalName, localePath, rayen } from "@/data/rayen";
 import { LOCALE_PUBLIC_PREFIX, STRINGS, type RayenLocale } from "@/data/rayen-i18n";
+import { SearchBox } from "./SearchBox";
 import { Shell } from "./primitives";
 
 /**
@@ -98,6 +99,7 @@ export function SiteHeader({ current = "", locale = "zh" }: { current?: string; 
               {item.label}
             </a>
           ))}
+          <SearchBox locale={locale} />
           <LocaleSwitch locale={locale} />
         </nav>
         {/*
@@ -116,6 +118,7 @@ export function SiteHeader({ current = "", locale = "zh" }: { current?: string; 
               {item.label}
             </a>
           ))}
+          <SearchBox locale={locale} />
           <LocaleSwitch locale={locale} />
         </nav>
       </Shell>

@@ -32,6 +32,22 @@
     {
       "label": "Fixing centre",
       "value": "P=40mm at each end"
+    },
+    {
+      "label": "Weight",
+      "value": "3.2kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -99,5 +115,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2751 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 1300mm overall on P=1273mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 1300mm overall on P=1273mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T2751-11-708-L",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-15T06:55:12.892Z"
+    }
+  }
 }

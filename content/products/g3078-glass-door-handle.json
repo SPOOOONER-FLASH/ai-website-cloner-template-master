@@ -22,10 +22,6 @@
       "value": "800mm"
     },
     {
-      "label": "Available lengths",
-      "value": "L600 / L800"
-    },
-    {
       "label": "Grip length",
       "value": "550mm"
     },
@@ -40,6 +36,10 @@
     {
       "label": "Weight",
       "value": "2.6kg"
+    },
+    {
+      "label": "Available lengths",
+      "value": "600–800mm"
     },
     {
       "label": "Fixing screw",
@@ -104,7 +104,7 @@
     "artunion": {
       "id": "G3078-01-024-L800",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
+      "fetchedAt": "2026-09-15T06:55:12.892Z"
     }
   },
   "nameEs": "Tirador para puerta de vidrio"

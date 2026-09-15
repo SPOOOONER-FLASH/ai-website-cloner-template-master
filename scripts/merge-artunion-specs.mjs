@@ -179,8 +179,44 @@ const MANAGED_LABELS = new Set([
   "Weight",
   "Fixing screw",
   "Fixing hole",
+  "Available lengths",
   ...Object.values(DOOR_TYPE_LABEL),
 ]);
+
+/**
+ * The span of overall lengths UNION lists for a model, across every variant.
+ *
+ * WHY THIS ROW EXISTS
+ * The merge below cites ONE variant — the one whose pitch the drawing confirms — and that is
+ * right for weight and hole sizes, which are facts about the part in front of us. It is
+ * wrong as a description of what the factory will actually make. G1195 is confirmed against
+ * its L1200 drawing, so the page said 1200mm; UNION lists it from L700 to L2400 made to
+ * order. A buyer who needs 2100mm read "1200mm" and went elsewhere.
+ *
+ * So the chosen variant keeps its provenance and this adds one row beside it, built from all
+ * of them. It is only emitted when the variants genuinely span a range — a model that comes
+ * in one length gets nothing, because "available lengths: 600mm" tells a reader nothing the
+ * overall length did not.
+ *
+ * Sizes are written by UNION as "L1200" or "オーダー対応　L1700〜2140まで"; every number that
+ * follows an L is a length in millimetres, so both shapes fall out of one pattern.
+ */
+function lengthSpan(variants) {
+  const lengths = [];
+  for (const variant of variants) {
+    const size = String(variant.spec?.size ?? "");
+    for (const match of size.matchAll(/L\s*(\d+(?:\.\d+)?)\s*(?:[〜~–—-]\s*(\d+(?:\.\d+)?))?/gi)) {
+      lengths.push(Number(match[1]));
+      if (match[2]) lengths.push(Number(match[2]));
+    }
+  }
+  if (lengths.length < 2) return null;
+  const low = Math.min(...lengths);
+  const high = Math.max(...lengths);
+  if (!(high > low)) return null;
+  const trim = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
+  return `${trim(low)}–${trim(high)}mm`;
+}
 
 /* ------------------------------------------------------------------- merge */
 
@@ -233,6 +269,8 @@ for (const file of readdirSync(PRODUCTS)) {
 
   const candidates = [
     { label: "Weight", value: chosen.spec.weight },
+    /* Across ALL variants, not just the chosen one — see lengthSpan above. */
+    { label: "Available lengths", value: lengthSpan(record.variants) },
     ...parseInstallation(chosen.spec.installation),
   ].filter((row) => row.value);
 

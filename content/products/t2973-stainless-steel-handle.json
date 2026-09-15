@@ -2,17 +2,61 @@
   "model": "T2973",
   "slug": "t2973-stainless-steel-handle",
   "name": "Stainless Steel Handle",
-  "nameZh": "门拉手",
+  "nameZh": "门拉手（可定制长度）",
   "series": "Stainless Steel Handle",
   "categoryPath": [
     "stainless-steel-handles"
   ],
-  "styleFamily": "2973",
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
-  "specs": [],
+  "summary": "Stainless Steel pull handle, 1600–3100mm（按单定制） overall on P=1480–2980mm fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=1480–2980mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "1600–3100mm（按单定制）"
+    },
+    {
+      "label": "Length bands",
+      "value": "A 1600–2200 / B 2201–2700 / C 2701–3100"
+    },
+    {
+      "label": "Fixing centre",
+      "value": "P1=40mm at each end"
+    },
+    {
+      "label": "Grip section",
+      "value": "25 × 8mm"
+    },
+    {
+      "label": "Rose size",
+      "value": "38 × 73mm"
+    },
+    {
+      "label": "Projection",
+      "value": "38mm"
+    },
+    {
+      "label": "Available lengths",
+      "value": "1600–3100mm"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless"
@@ -31,19 +75,38 @@
     {
       "src": "/images/products/t2973-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "T2973 Stainless Steel Handle, view 2"
+      "label": "T2973 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t2973-stainless-steel-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "T2973 Stainless Steel Handle, view 3"
+      "label": "T2973 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2973-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "T2973 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2973-stainless-steel-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "T2973 Stainless Steel Handle, view 5"
+    },
+    {
+      "src": "/images/products/t2973-stainless-steel-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "T2973 Stainless Steel Handle, view 6"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "T2973 Stainless Steel Handle | Canton Hyland",
-  "seoDescription": "Canton Hyland T2973 stainless steel handle in Stainless Steel. Available in Satin stainless finish. Manufactured in Guangdong, China. Request a quotation.",
-  "seoTitleEs": "T2973 Stainless Steel Handle | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland T2973 stainless Steel Handle en acero inoxidable. Acabado Satin stainless. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
-  "nameEs": "Manilla de acero inoxidable"
+  "seoTitle": "T2973 Stainless Steel Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 1600–3100mm（按单定制） overall on P=1480–2980mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T2973-01-023-A",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-15T06:55:12.892Z"
+    }
+  }
 }
