@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { certificates } from "@/data/company";
 import { downloads, formatDownloadSize, getDownloadsByKind } from "@/data/downloads";
 import type { DownloadKind } from "@/data/types";
+import { ModelLibrary } from "@/components/site/ProductModel";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/downloads",
@@ -72,6 +73,7 @@ export default function ServicioDescargasPage() {
 
       <div className="layout mt-144 lg:mt-192">
         <div className="col-content space-y-144">
+          <ModelLibrary locale="es" />
           {visibleGroups.map((group) => {
             const files = getDownloadsByKind(group.kind);
             return (

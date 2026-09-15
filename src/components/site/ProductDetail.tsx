@@ -16,6 +16,8 @@ import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
+import { productModelFor } from "@/data/product-models";
+import { ProductModel } from "./ProductModel";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -172,6 +174,7 @@ function ProductFact({
 export function ProductDetail({ product, categoryName, locale = "en" }: ProductDetailProps) {
   const t = COPY[locale];
   const es = locale === "es";
+  const referenceModel = productModelFor(product.slug);
   const name = (es && product.nameEs) || product.name;
   const summary = (es && product.summaryEs) || product.summary;
   const specs = (es && product.specsEs?.length ? product.specsEs : product.specs) ?? [];
@@ -605,6 +608,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     outline. See the note in ProductDrawing.tsx.
                   */}
                   <DoorPreparation slug={product.slug} locale={locale} />
+                  {referenceModel ? <div className="mt-48"><ProductModel model={referenceModel} locale={locale} /></div> : null}
 
                   {faqItems.length ? (
                     <div className="mt-48 border-t border-line pt-24">
