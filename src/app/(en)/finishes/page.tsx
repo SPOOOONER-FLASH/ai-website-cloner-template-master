@@ -30,11 +30,19 @@ import { pageMetadata } from "@/lib/seo";
  * ---------------------------------------------------------------------------
  * THE PAGE PRINTS WHAT WE KNOW AND SAYS SO WHERE WE DO NOT
  *
- * Twelve finish codes and five function codes are in demonstrable use and have no
- * confirmed expansion. They are in the tables with the expansion left blank, because a
- * buyer holding a quotation that says `GP` is better served by "we recognise this code and
- * are checking it" than by a table that silently omits it and looks complete. See
- * src/data/finish-codes.ts for the evidence rule, which a test enforces.
+ * Codes in demonstrable use with no confirmed expansion are in the tables with the
+ * expansion left blank, because a buyer holding a quotation that says `PT` is better
+ * served by "we recognise this code and are checking it" than by a table that silently
+ * omits it and looks complete. See src/data/finish-codes.ts for the evidence rule, which
+ * a test enforces.
+ *
+ * On 2026-09-15 the client expanded eleven of the seventeen. One finish code (N) and the
+ * five function codes are still open. What the eleven revealed is worth more than the
+ * expansions themselves: the catalogue carries several codes for one finish, two of them
+ * letter-reversals of each other — NB/BN are both black nickel, BP/PB are both polished
+ * brass — and three different codes (BL, BRN, ORB) all mean black. Those rows say so, in
+ * both languages, because a reversal pair is exactly how a buyer receives the wrong
+ * finish while quoting the code correctly.
  */
 
 export const metadata: Metadata = pageMetadata({

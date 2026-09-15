@@ -97,9 +97,29 @@ function isRealPhotograph(kind) {
   return Boolean(kind) && REAL_PHOTOGRAPH_KINDS.some((pattern) => pattern.test(kind));
 }
 
+/**
+ * Photographs that pass the provenance test and still must not carry the mark.
+ *
+ * `public/images/editorial/heritage/` holds the principal's own photographs of a padlock
+ * he found chained to a statue outside a hotel in Germany. They are real photographs,
+ * taken by us, so the rule above would admit them — and marking them would be wrong.
+ *
+ * On a hardware catalogue the mark does not read as "we took this picture". It reads as
+ * "this is ours", because that is what it means on all 3,956 images beside it. The
+ * article those photographs illustrate spends four paragraphs establishing that the lock
+ * is NOT ours, that we do not know who made it, and that we will not pretend otherwise.
+ * A HYDE stamp in the corner would contradict the text it sits next to.
+ *
+ * This is currently also true by accident — the scan below is not recursive, so a
+ * subdirectory is invisible to it. Naming the exclusion makes it survive somebody making
+ * the scan recursive, which is a reasonable thing for a future session to do.
+ */
+const NEVER_MARK_DIRECTORIES = ["heritage"];
+
 function webpFiles(directory) {
-  return readdirSync(directory)
-    .filter((file) => file.toLowerCase().endsWith(".webp"))
+  return readdirSync(directory, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".webp"))
+    .map((entry) => entry.name)
     .sort();
 }
 
@@ -108,6 +128,18 @@ for (const file of webpFiles(EDITORIAL_DIR)) {
   const kind = sidecarKind(EDITORIAL_DIR, file);
   if (isRealPhotograph(kind)) editorial.marked.push({ file, kind });
   else editorial.skipped.push({ file, kind: kind ?? "no provenance record" });
+}
+
+/* Report the excluded directories by name, so "why is this one not marked?" has an answer. */
+for (const directory of NEVER_MARK_DIRECTORIES) {
+  const path = join(EDITORIAL_DIR, directory);
+  if (!existsSync(path)) continue;
+  for (const file of webpFiles(path)) {
+    editorial.skipped.push({
+      file: `${directory}/${file}`,
+      kind: "not our product — marking it would contradict the article it illustrates",
+    });
+  }
 }
 
 const company = { marked: [], skipped: [] };
