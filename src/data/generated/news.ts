@@ -21,9 +21,10 @@ import item15 from "../../../content/news/stainless-steel-grades-304-201-316.jso
 import item16 from "../../../content/news/trim-handle-or-panic-bar.json";
 import item17 from "../../../content/news/what-a-frameless-glass-door-needs.json";
 import item18 from "../../../content/news/what-a-test-report-actually-covers.json";
-import item19 from "../../../content/news/what-documents-you-can-actually-get.json";
-import item20 from "../../../content/news/what-it-takes-to-tool-a-new-exit-device.json";
-import item21 from "../../../content/news/what-oem-actually-changes.json";
-import item22 from "../../../content/news/why-the-catalogue-is-this-wide.json";
+import item19 from "../../../content/news/what-an-old-padlock-tells-a-lock-factory.json";
+import item20 from "../../../content/news/what-documents-you-can-actually-get.json";
+import item21 from "../../../content/news/what-it-takes-to-tool-a-new-exit-device.json";
+import item22 from "../../../content/news/what-oem-actually-changes.json";
+import item23 from "../../../content/news/why-the-catalogue-is-this-wide.json";
 
-export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, item21, item22] as unknown as NewsArticle[];
+export const news = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, item21, item22, item23] as unknown as NewsArticle[];

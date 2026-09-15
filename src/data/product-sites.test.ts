@@ -71,7 +71,11 @@ test("构建产物里没有只上雷茵的型号", { skip: !existsSync(join(proc
   );
 });
 
-test("清单里的 14 个型号都建了产品记录", () => {
+/* The count used to be in this title. It is not, now: the first manifest held 14 models
+   until 2026-09-14, when G1216 and G2110 moved to union-handles-rebuilt.json to pick up the
+   dimension drawings UNION publishes for them. The assertion always walked the manifest, so
+   the number in the name was decoration that could only go stale. */
+test("清单里的每个型号都建了产品记录", () => {
   const bySlug = new Map(records.map((r) => [r.slug, r]));
   const missing = manifest.models
     .filter((m: { slug: string }) => !bySlug.has(m.slug))

@@ -1,0 +1,534 @@
+# Decap CMS 配置 —— Canton Hyland 内容后台
+#
+# 编辑者打开 /admin/，用 GitHub 账号登录，改的就是 content/ 下面的 JSON 文件。
+# 每次保存都是仓库里的一次提交。没有数据库，也没有后端管理程序，
+# 所以这里没有任何需要打补丁、加固或长期运行的服务。
+#
+# 下面的字段定义和 src/data/types.ts 一一对应。给一边加字段时，另一边也要加 ——
+# barrel 生成器只断言结构，不做校验。
+#
+# 界面语言设为简体中文；下面所有 label / hint 也都写成中文，
+# 所以后台从菜单到字段说明全是中文。字段的 name 一律保持英文不动 ——
+# 它们是 JSON 的键名，改了会让构建失败。
+locale: "zh_Hans"
+
+# 本地模式：在 localhost 打开后台时，Decap 直接和 `decap-server` 通信，
+# 不走 GitHub，也就不需要登录、不需要 OAuth。用 `npm run cms` 启动。
+# 线上站点会忽略这一行（那里走下面的 GitHub 后端），所以可以一直开着。
+local_backend: true
+
+backend:
+  name: github
+  repo: SPOOOONER-FLASH/ai-website-cloner-template-master
+  branch: main
+
+  # OAuth 中转服务（Cloudflare Worker，sveltia-cms-auth），2026-08-19 部署。
+  # GitHub 的 OAuth 不允许纯前端页面自己换取 token，中间必须有这么一个服务；
+  # 它只做一次 code → token 的交换，不存任何数据。
+  # 换域名时要同步改 GitHub OAuth App 的 Authorization callback URL，
+  # 两边必须一致，否则登录会失败。步骤见 docs/CMS_REMOTE_SETUP.md。
+  # 2026-08-28 由 canton-cms-auth.spoonerlau.workers.dev 换成自有子域名。
+  # 换的原因不是原地址坏了，而是 workers.dev 在部分网络下不可达；auth.cantonlock.com
+  # 与主站同一个 Cloudflare zone，主站通它就通。
+  # ⚠ 这个值必须和 GitHub OAuth App 的 Authorization callback URL 同源
+  #（现为 https://auth.cantonlock.com/callback），改一边就要改另一边，否则登录直接断。
+  base_url: https://auth.cantonlock.com
+  #
+  # 本地 `npm run cms` 不走这里（走上面的 local_backend），不需要联网也不需要登录。
+
+  # 提交信息，让 CMS 的提交在 `git log` 里和手写的提交读起来一致。
+  commit_messages:
+    create: "CMS: create {{collection}} “{{slug}}”"
+    update: "CMS: update {{collection}} “{{slug}}”"
+    delete: "CMS: delete {{collection}} “{{slug}}”"
+    uploadMedia: "CMS: upload {{path}}"
+    deleteMedia: "CMS: delete {{path}}"
+
+# 编辑工作流：保存后先进入待审状态（在 GitHub 上是一个 Pull Request），
+# 点“发布”才会合并进 main。值得保留 —— 一条写错的认证声明可以在进入构建之前被拦下，
+# 而且回滚的粒度是单条内容，不是整个仓库。
+publish_mode: editorial_workflow
+
+media_folder: "public/images/products"
+public_folder: "/images/products"
+
+collections:
+  # ---------------------------------------------------------------------------
+  - name: "products"
+    label: "产品"
+    label_singular: "产品"
+    folder: "content/products"
+    create: true
+    # 文件名必须等于 slug —— 否则 build-content-index.mjs 会让构建失败，
+    # 因为不一致会导致某个网址悄悄指向错误的记录。
+    slug: "{{fields.slug}}"
+    identifier_field: "name"
+    summary: "{{model}} — {{name}}"
+    sortable_fields: ["model", "name", "series"]
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "model", label: "型号", widget: "string", hint: "业务主键，例如 305 或 LC14 85×50。" }
+      - { name: "modelTbc", label: "型号尚未确认", widget: "boolean", required: false, default: false, hint: "如果这只是一个暂用名称、不是真实 SKU，请勾选。" }
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"], hint: "会成为页面地址的一部分。改动它等于改掉一个已上线的网址。" }
+      - { name: "name", label: "产品名称（英文）", widget: "string" }
+      - { name: "nameZh", label: "产品名称（中文）", widget: "string", required: false, hint: "仅供内部对照，不会显示在网站上。" }
+      - { name: "series", label: "系列", widget: "string" }
+      - name: "categoryPath"
+        label: "分类路径"
+        widget: "list"
+        field: { name: "segment", label: "层级", widget: "string" }
+        hint: "先填一级分类，再填子分类。必须和「分类与下载」里的分类一致。"
+      - { name: "summary", label: "简介", widget: "text", hint: "一到两句话。用在卡片和列表上。" }
+      - name: "description"
+        label: "产品详情描述"
+        widget: "markdown"
+        required: false
+        # 只开放这几个按钮。粗体、标题、列表、链接够用了；
+        # 关掉的是「代码块」和「HTML 源码」—— 从阿里或别的平台复制过来的内容
+        # 会带着内联样式和字体标签一起进来，那正是一个页面上出现三种字体的原因。
+        buttons: ["bold", "italic", "heading-two", "heading-three", "bulleted-list", "numbered-list", "link"]
+        editor_components: []
+        hint: "长篇介绍。支持加粗、标题、项目符号和链接。留空则详情页只显示上面那句简介，不会有空白模块。"
+      - name: "specs"
+        label: "规格表"
+        label_singular: "规格"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}: {{fields.value}} {{fields.unit}}"
+        fields:
+          - { name: "label", label: "项目", widget: "string" }
+          - { name: "value", label: "数值", widget: "string" }
+          - { name: "unit", label: "单位", widget: "string", required: false }
+          - { name: "labelZh", label: "项目（中文）", widget: "string", required: false }
+        hint: "没有真实数据就留空，不要猜。空表是诚实的，编造的表是事故 —— 采购商会照着它下单。"
+      - { name: "material", label: "材质", widget: "string" }
+      - { name: "finishes", label: "表面处理", widget: "list", field: { name: "finish", label: "表面处理", widget: "string" } }
+      - { name: "doorTypes", label: "适用门型", widget: "list", field: { name: "doorType", label: "门型", widget: "string" } }
+      - name: "certifications"
+        label: "认证"
+        widget: "list"
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { name: "name", label: "名称", widget: "string", hint: "例如 ISO 9001（只填真实持有的认证）" }
+          - { name: "standard", label: "标准编号", widget: "string", required: false }
+          - { name: "downloadId", label: "关联的证书文件 id", widget: "string", required: false }
+        hint: "⚠ 只有当你手上有一份点名「本型号」的检测报告时，才可以在这里填认证。填错不是笔误，是合规问题。"
+      - name: "heroImage"
+        label: "主图"
+        widget: "object"
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false, hint: "留空则显示一个带文字的占位方块。" }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1", hint: "CSS 写法，例如 1 / 1 或 3 / 2。" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string", hint: "描述图里是什么。给读屏软件和 Google 看的。" }
+          - { name: "labelZh", label: "图注（中文）", widget: "string", required: false }
+      - name: "gallery"
+        label: "图库"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+          - { name: "labelZh", label: "图注（中文）", widget: "string", required: false }
+      - name: "videos"
+        label: "产品视频"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - name: "src"
+            label: "视频地址"
+            widget: "string"
+            hint: "两种都支持，系统自动识别：① 粘 YouTube / Vimeo 链接（推荐，不占我们的空间）；② 填 /videos/文件名.mp4（需先把文件放进 public/videos/）。超过 20MB 的一律用 YouTube。"
+          - name: "poster"
+            label: "封面图"
+            widget: "object"
+            required: false
+            fields:
+              - { name: "src", label: "图片", widget: "image", required: false }
+              - { name: "ratio", label: "宽高比", widget: "string", default: "16 / 9" }
+              - { name: "label", label: "替代文字 (alt)", widget: "string", required: false }
+            hint: "自己传的 mp4 一定要配封面，否则播放前是一块黑方块，看着像图裂了。YouTube 链接不用填，它自带封面。"
+          - { name: "label", label: "视频说明", widget: "string", hint: "例如「305 推杠开门演示」。会显示在视频下方，也给读屏软件用。" }
+      - { name: "attachmentIds", label: "附件 id", widget: "list", required: false, field: { name: "id", label: "下载文件 id", widget: "string" } }
+      - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+      - { name: "alibabaUrl", label: "阿里巴巴商品链接", widget: "string", required: false, hint: "从阿里后台复制该型号的商品页链接。留空时，产品页会自动链到店铺内搜索该型号——填了具体链接更好，买家点过去直接就是这个产品。" }
+      - { name: "alibabaSearchTerm", label: "阿里巴巴搜索编号", widget: "string", required: false, hint: "仅当阿里使用与本站不同的数字型号时填写，例如站内 AR4-101 对应阿里搜索 110。它仍会显示为店铺搜索，不会冒充商品直达链接。" }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string", hint: "约 60 字符以内，带上品牌名。" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text", hint: "约 155 字符以内。" }
+
+  # ---------------------------------------------------------------------------
+  - name: "projects"
+    label: "应用案例"
+    label_singular: "案例"
+    folder: "content/projects"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{buildingType}}"
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"] }
+      - { name: "name", label: "名称（英文）", widget: "string" }
+      - { name: "nameEs", label: "名称（西班牙语）", widget: "string" }
+      - name: "referenceStatus"
+        label: "案例性质"
+        widget: "select"
+        options:
+          - { label: "真实项目 —— 甲方已确认确有供货", value: "verified-project" }
+          - { label: "代表性应用 —— 示意用途，非指名项目", value: "representative-application" }
+        hint: "⚠ 只有甲方确认供过货，才可以标成「真实项目」。声称一个并不存在的业绩是实打实的商业风险。"
+      - { name: "buildingType", label: "建筑类型（英文）", widget: "string" }
+      - { name: "buildingTypeEs", label: "建筑类型（西班牙语）", widget: "string" }
+      - { name: "summary", label: "简介（英文）", widget: "text" }
+      - { name: "summaryEs", label: "简介（西班牙语）", widget: "text" }
+      - { name: "body", label: "正文（英文）", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" } }
+      - { name: "bodyEs", label: "正文（西班牙语）", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" } }
+      - { name: "productModels", label: "使用的产品型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+      - name: "heroImage"
+        label: "主图"
+        widget: "object"
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - name: "gallery"
+        label: "图库"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "3 / 2" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text" }
+
+  # ---------------------------------------------------------------------------
+  - name: "news"
+    label: "新闻"
+    label_singular: "新闻"
+    folder: "content/news"
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: "title"
+    summary: "{{publishedAt}} · {{title}}"
+    sortable_fields: ["publishedAt", "title", "kind"]
+    format: "json"
+    json:
+      indent_style: "space"
+      indent_size: 2
+    fields:
+      - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"], hint: "会成为页面地址的一部分。发布之后不要再改，改了等于换掉一个已上线的网址。" }
+      - { name: "title", label: "标题（英文）", widget: "string" }
+      - { name: "titleZh", label: "标题（中文）", widget: "string", required: false, hint: "仅供内部对照，不显示在网站上。" }
+      - name: "kind"
+        label: "类型"
+        widget: "select"
+        default: "press-release"
+        options:
+          - { label: "新闻稿 —— 有日期的公司公告，记者可能引用", value: "press-release" }
+          - { label: "技术文章 —— 内容营销，不是公告", value: "insight" }
+        hint: "两者不要混。把营销文章标成新闻稿，会让真正的公告在记者眼里一起贬值。"
+      - { name: "publishedAt", label: "发布日期", widget: "date", format: "YYYY-MM-DD", hint: "⚠ 填未来的日期不会自动定时发布 —— 本站是静态站，到那天必须有人重新构建一次才会出现。" }
+      - { name: "draft", label: "草稿（不发布到网站）", widget: "boolean", required: false, default: true, hint: "勾着就不会进构建。写完确认无误再取消勾选。" }
+      - { name: "summary", label: "摘要", widget: "text", hint: "一到两句。用在列表卡片和搜索结果描述上。" }
+      - { name: "body", label: "正文", widget: "list", field: { name: "paragraph", label: "段落", widget: "text" }, hint: "一段一条。第一段会自动加粗作为导语 —— 把最重要的事实放在第一段。" }
+      - name: "heroImage"
+        label: "配图"
+        widget: "object"
+        hint: "新闻稿只用一张 16:9 的配图，不是通栏大图。建议 1600×900。"
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "16 / 9" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - name: "gallery"
+        label: "正文配图"
+        widget: "list"
+        required: false
+        fields:
+          - { name: "src", label: "图片", widget: "image", required: false }
+          - { name: "ratio", label: "宽高比", widget: "string", default: "16 / 9" }
+          - { name: "label", label: "替代文字 (alt)", widget: "string" }
+      - { name: "relatedModels", label: "相关产品型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" }, hint: "填型号，页面会自动链到对应产品页。" }
+      - { name: "attachmentIds", label: "媒体资料包 (press kit)", widget: "list", required: false, field: { name: "id", label: "下载文件 id", widget: "string" }, hint: "先在「分类与下载」里传文件，再把它的 id 填在这里。记者需要能直接下走高清图和稿件。" }
+      - { name: "seoTitle", label: "SEO 标题", widget: "string", hint: "约 60 字符以内。" }
+      - { name: "seoDescription", label: "SEO 描述", widget: "text", hint: "约 155 字符以内。" }
+
+  # ---------------------------------------------------------------------------
+  # 单文件集合。分类和下载是有顺序的列表，不是一条一页的内容，
+  # 而且调整顺序是常见操作，所以各自保持为一个文件。
+  - name: "taxonomy"
+    label: "分类与下载"
+    files:
+      - name: "categories"
+        label: "产品分类"
+        file: "content/categories.json"
+        format: "json"
+        fields:
+          - name: "categories"
+            label: "分类"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { name: "slug", label: "网址标识 (slug)", widget: "string", pattern: ["^[a-z0-9-]+$", "只能用小写字母、数字和连字符。"] }
+              - { name: "name", label: "名称（英文）", widget: "string" }
+              - { name: "nameZh", label: "名称（中文）", widget: "string", required: false }
+              - { name: "summary", label: "简介", widget: "text" }
+              - name: "image"
+                label: "分类图片"
+                widget: "object"
+                fields:
+                  - { name: "src", label: "图片", widget: "image", required: false }
+                  - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+                  - { name: "label", label: "替代文字 (alt)", widget: "string" }
+              - name: "children"
+                label: "子分类"
+                widget: "list"
+                required: false
+                summary: "{{fields.name}}"
+                hint: "只是分类页上的筛选项，不构成网址的一部分，所以改名是安全的。"
+                fields:
+                  - { name: "slug", label: "网址标识 (slug)", widget: "string" }
+                  - { name: "name", label: "名称（英文）", widget: "string" }
+                  - { name: "nameZh", label: "名称（中文）", widget: "string", required: false }
+                  - { name: "summary", label: "简介", widget: "text" }
+                  - name: "image"
+                    label: "图片"
+                    widget: "object"
+                    fields:
+                      - { name: "src", label: "图片", widget: "image", required: false }
+                      - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+                      - { name: "label", label: "替代文字 (alt)", widget: "string" }
+
+      - name: "downloads"
+        label: "下载中心"
+        file: "content/downloads.json"
+        format: "json"
+        media_folder: "/public/downloads"
+        public_folder: "/downloads"
+        fields:
+          - name: "downloads"
+            label: "文件"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "id", label: "文件 id", widget: "string", hint: "产品里的「附件 id」引用的就是这个。" }
+              - { name: "title", label: "标题", widget: "string" }
+              - { name: "titleZh", label: "标题（中文）", widget: "string", required: false }
+              - name: "kind"
+                label: "类型"
+                widget: "select"
+                options:
+                  - { label: "产品目录", value: "catalogue" }
+                  - { label: "技术参数表", value: "datasheet" }
+                  - { label: "认证证书", value: "certificate" }
+                  - { label: "CAD 图纸", value: "cad" }
+                  - { label: "BIM 模型", value: "bim" }
+                  - { label: "安装说明", value: "installation" }
+                  - { label: "质保文件", value: "warranty" }
+              - { name: "format", label: "文件格式", widget: "string", hint: "pdf、dwg、rfa、zip" }
+              - { name: "sizeBytes", label: "文件大小（字节）", widget: "number", value_type: "int" }
+              - { name: "url", label: "文件", widget: "file" }
+              - { name: "language", label: "语言", widget: "string", default: "en" }
+              - { name: "relatedModels", label: "相关型号", widget: "list", required: false, field: { name: "model", label: "型号", widget: "string" } }
+              - { name: "updatedAt", label: "最后更新日期", widget: "date", format: "YYYY-MM-DD" }
+
+  # ---------------------------------------------------------------------------
+  # 网站设置。三项都是单文件集合 —— 它们各自只有一份，没有"列表"可言。
+  - name: "site"
+    label: "网站设置"
+    files:
+      - name: "events"
+        label: "展会与市场访问"
+        file: "content/events.json"
+        format: "json"
+        fields:
+          - name: "events"
+            label: "日程"
+            widget: "list"
+            summary: "{{fields.startDate}} — {{fields.name}}"
+            fields:
+              - { name: "slug", label: "网址标识", widget: "string", pattern: ["^[a-z0-9-]+$", "只能使用小写字母、数字和连字符。"] }
+              - { name: "name", label: "活动名称", widget: "string" }
+              - { name: "market", label: "目标市场", widget: "string" }
+              - { name: "city", label: "城市 / 国家", widget: "string" }
+              - { name: "venue", label: "场馆", widget: "string" }
+              - { name: "startDate", label: "开始日期", widget: "date", format: "YYYY-MM-DD", required: false }
+              - { name: "endDate", label: "结束日期", widget: "date", format: "YYYY-MM-DD", required: false }
+              - name: "status"
+                label: "我方状态"
+                widget: "select"
+                options:
+                  - { label: "计划参观 / 会面", value: "planned-visit" }
+                  - { label: "已确认参展", value: "exhibiting" }
+                  - { label: "内部调研", value: "researching" }
+                hint: "只有拿到参展确认和展位号后才能选「已确认参展」。"
+              - { name: "statusLabel", label: "前台状态文字", widget: "string" }
+              - { name: "summary", label: "说明", widget: "text" }
+              - { name: "sourceUrl", label: "主办方日期来源", widget: "string", required: false }
+              - { name: "published", label: "前台显示", widget: "boolean", default: false, hint: "日期、官方来源和我方状态都确认后再打开。" }
+      - name: "imageAltOverrides"
+        label: "图片 ALT 批量管理"
+        file: "content/image-alt-overrides.json"
+        format: "json"
+        fields:
+          - name: "overrides"
+            label: "图片替代文字覆盖"
+            widget: "list"
+            required: false
+            summary: "{{fields.src}} — {{fields.label}}"
+            hint: "按图片的公开路径集中覆盖产品、分类、案例和新闻中的 ALT。相同路径只能填写一次，重复会让构建失败，避免后台顺序暗中决定结果。"
+            fields:
+              - { name: "src", label: "图片公开路径", widget: "string", hint: "必须是 /images/ 开头的完整路径，例如 /images/products/model-100.webp。" }
+              - { name: "label", label: "ALT（英文）", widget: "string", hint: "描述画面本身和准确型号；不要堆关键词，也不要写图片/照片。" }
+              - { name: "labelEs", label: "ALT（西班牙语）", widget: "string", required: false, hint: "没有人工审核的西语可先留空，前台会继续使用原文。" }
+      - name: "promo"
+        label: "弹窗公告"
+        file: "content/promo.json"
+        format: "json"
+        fields:
+          - { name: "enabled", label: "启用弹窗", widget: "boolean", default: true, hint: "关掉之后弹窗完全不渲染，不只是隐藏。" }
+          - { name: "name", label: "活动名称（仅后台可见）", widget: "string" }
+          - name: "version"
+            label: "版本号"
+            widget: "number"
+            value_type: "int"
+            hint: "⚠ 改这个数字会让所有人重新看到弹窗，冷却清零。换一轮新活动时 +1；只是改错别字就别动它，否则每个访客都会被再打扰一次。"
+          - { name: "startAt", label: "开始日期", widget: "string", required: false, hint: "格式 2026-09-01。留空表示立即开始。" }
+          - { name: "endAt", label: "结束日期", widget: "string", required: false, hint: "留空表示不自动结束。这一项按访客本地日期判断，到期会自己停，不需要重新构建。" }
+          - { name: "delaySeconds", label: "进页面几秒后弹出", widget: "number", value_type: "int", default: 10 }
+          - { name: "cooldownMinutes", label: "关掉后隔多少分钟再弹", widget: "number", value_type: "int", default: 0, hint: "填 0 = 不冷却，每个符合条件的页面都弹。访客关掉后换一页还会再看到——这是甲方要求的行为。" }
+          - name: "surfaces"
+            label: "在哪些页面显示"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "首页", value: "home" }
+              - { label: "产品列表页", value: "products" }
+              - { label: "产品详情页", value: "product-detail" }
+              - { label: "选型器 Product Finder", value: "product-finder" }
+              - { label: "案例页", value: "projects" }
+              - { label: "新闻页", value: "news" }
+              - { label: "公司页", value: "company" }
+              - { label: "下载中心", value: "downloads" }
+            hint: "一个都不选就等于不显示 —— 这比默认全站显示安全。"
+          - name: "cards"
+            label: "弹窗卡片"
+            widget: "list"
+            summary: "{{fields.title}} → {{fields.ctaLabel}}"
+            # 前台一次只显示一张；关闭当前卡片后，才显示下一张。
+            hint: "建议最多两张。前台会逐张显示，避免在手机上遮挡建筑图片和正文。"
+            fields:
+              - { name: "title", label: "标题（粗体行）", widget: "string" }
+              - { name: "titleEs", label: "标题（西班牙语）", widget: "string", required: false }
+              - { name: "titleLight", label: "标题（细体行）", widget: "string", required: false }
+              - { name: "titleLightEs", label: "标题细体（西班牙语）", widget: "string", required: false }
+              - { name: "body", label: "正文", widget: "text" }
+              - { name: "bodyEs", label: "正文（西班牙语）", widget: "text", required: false }
+              - { name: "ctaLabel", label: "按钮文字", widget: "string" }
+              - { name: "ctaLabelEs", label: "按钮文字（西班牙语）", widget: "string", required: false }
+              - { name: "ctaHref", label: "按钮链接", widget: "string", hint: "站内路径如 /contact/，或下载文件如 /downloads/xxx.pdf。" }
+              - { name: "ctaHrefEs", label: "按钮链接（西班牙语）", widget: "string", required: false, hint: "西语站有独立页面时填写，例如 /es/contact/；留空则沿用英文链接。" }
+              - name: "visual"
+                label: "左侧画面"
+                widget: "select"
+                options:
+                  - { label: "品牌标识（黑底白字，无需素材）", value: "logo" }
+                  - { label: "自选图片", value: "image" }
+              - name: "image"
+                label: "图片（左侧选「自选图片」时才用）"
+                widget: "object"
+                required: false
+                fields:
+                  - { name: "src", label: "图片", widget: "image", required: false }
+                  - { name: "ratio", label: "宽高比", widget: "string", default: "1 / 1" }
+                  - { name: "label", label: "替代文字 (alt)", widget: "string", required: false }
+      - name: "navigation"
+        label: "导航菜单"
+        file: "content/navigation.json"
+        format: "json"
+        fields:
+          - name: "header"
+            label: "页首导航"
+            widget: "list"
+            summary: "{{fields.label}} → {{fields.href}}"
+            fields:
+              - { name: "label", label: "菜单名（英文）", widget: "string" }
+              - { name: "labelEs", label: "菜单名（西班牙语）", widget: "string", required: false, hint: "留空则西语站也显示英文，不会漏掉这一项。" }
+              - { name: "href", label: "链接地址", widget: "string", hint: "站内路径，如 /products。西语版会自动加 /es 前缀 —— 但只对有西语页的栏目（公司、联系、案例）生效，其余指回英文页而不是指向一个会 404 的地址。" }
+            hint: "⚠ 页首横排空间有限。六个菜单名在最窄的桌面断点下约占 486px，可用 649px。再加项或改长名字前先在电脑上看一眼有没有换行错位。"
+          - name: "footer"
+            label: "页尾导航"
+            widget: "list"
+            summary: "{{fields.label}} → {{fields.href}}"
+            fields:
+              - { name: "label", label: "菜单名（英文）", widget: "string" }
+              - { name: "labelEs", label: "菜单名（西班牙语）", widget: "string", required: false }
+              - { name: "href", label: "链接地址", widget: "string" }
+
+      - name: "settings"
+        label: "基础设置"
+        file: "content/site-settings.json"
+        format: "json"
+        fields:
+          - { name: "brandName", label: "品牌名", widget: "string", hint: "显示为 logo 的那个名字。目前是 HYDE。" }
+          - { name: "legalName", label: "公司全称", widget: "string", hint: "法律主体名称，用在页尾、公司页和结构化数据里。HYDE 是品牌，这里填品牌背后的公司。" }
+          - { name: "copyright", label: "版权信息", widget: "string", hint: "页尾最底下那一行。" }
+          - name: "contact"
+            label: "联系方式"
+            widget: "object"
+            fields:
+              - { name: "email", label: "联系邮箱", widget: "string", required: false, hint: "销售/商务邮箱，显示在页脚并写入结构化数据 contactPoint。" }
+              - { name: "technicalEmail", label: "技术咨询邮箱", widget: "string", required: false, hint: "显示在产品页询价按钮下方；留空则产品页回落到上面的联系邮箱。" }
+              - { name: "phone", label: "电话", widget: "string", required: false }
+              - { name: "address", label: "公司地址", widget: "string", required: false }
+              - { name: "city", label: "城市", widget: "string", required: false }
+              - { name: "province", label: "省/州", widget: "string", required: false }
+              - { name: "postcode", label: "邮政编码", widget: "string", required: false }
+              - { name: "country", label: "国家", widget: "string", required: false }
+          - name: "social"
+            label: "社交主页"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { name: "label", label: "平台名", widget: "string" }
+              - { name: "href", label: "主页链接", widget: "string" }
+          - name: "analytics"
+            label: "统计与追踪代码"
+            widget: "object"
+            fields:
+              - { name: "googleAnalyticsId", label: "Google Analytics ID", widget: "string", required: false, hint: "形如 G-XXXXXXXXXX。" }
+              - { name: "googleSiteVerification", label: "Google 站点验证码", widget: "string", required: false }
+              - { name: "facebookPixelId", label: "Facebook 像素 ID", widget: "string", required: false }
+              - { name: "tiktokPixelId", label: "TikTok 像素 ID", widget: "string", required: false }
+            hint: "留空就完全不输出对应代码。填了才会加载 —— 空着的 ID 如果也渲染出脚本，等于每次打开页面都向对方发一次什么都没统计到的请求。"
+
+      - name: "faq"
+        label: "常见问题"
+        file: "content/faq.json"
+        format: "json"
+        fields:
+          - name: "groups"
+            label: "问题分组"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "分组标题", widget: "string" }
+              - name: "items"
+                label: "问题"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { name: "question", label: "问题", widget: "string" }
+                  - name: "answer"
+                    label: "回答"
+                    widget: "text"
+                    required: false
+                    hint: "⚠ 留空的问题不会显示在网站上，也不会进结构化数据 —— 这是刻意的。起订量、交期、付款方式、OEM 政策这些只有甲方能回答，编一个听起来合理的答案会被采购商拿去引用。不确定就留空，页面上少一条比错一条好。"

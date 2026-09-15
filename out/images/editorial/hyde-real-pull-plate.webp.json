@@ -1,0 +1,12 @@
+{
+  "kind": "real-photograph-composition",
+  "operation": "Complete product cropped from its first-party source and uniformly resized on white.",
+  "sources": [
+    {
+      "source": "public/images/products/stainless-steel-glass-door-pull-handle.webp",
+      "sha256": "9070323737dedc61cae6674e727915e8ec8e617fd3320294173278e40ee32241"
+    }
+  ],
+  "productGeometry": "Original pixels retained; uniform resize and complete-object crop only.",
+  "scope": "Catalogue overview, not an assembled set or dimension drawing."
+}
