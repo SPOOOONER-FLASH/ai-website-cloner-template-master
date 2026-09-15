@@ -19,12 +19,18 @@
     "El dimensionado es donde un conjunto así se especifica mal. El peso de la hoja, la capacidad del cierrapuertas y el rango del selector tienen que concordar. El DC02 cubre hojas de 55–100 kg; los cierrapuertas siguientes cubren 40–85 kg, de modo que el solape útil para un par coordinado va de 55 kg a 85 kg. Por encima de 85 kg hoy no fabricamos cierrapuertas, y la respuesta honesta es que el condicionante es el cierrapuertas, no el selector.",
     "Confirme antes de pedir: peso y ancho de ambas hojas, espesor de la puerta, si el par es rebajado o lleva batiente aplicado, qué herrajes lleva la hoja pasiva y la resistencia al fuego que debe alcanzar el conjunto."
   ],
-  "productModels": ["DC02", "JU-093", "JU-088", "JU-072", "JU-073"],
+  "productModels": [
+    "DC02",
+    "JU-093",
+    "JU-088",
+    "JU-072",
+    "JU-073"
+  ],
   "heroImage": {
-    "src": "/images/editorial/project-commercial-egress.webp",
-    "ratio": "3 / 2",
-    "label": "Representative commercial entrance hall with paired fire-rated doors",
-    "labelEs": "Vestíbulo comercial representativo con puertas cortafuego de dos hojas"
+    "src": "/images/editorial/framed/ju-088-door-closer-16x9.webp",
+    "ratio": "16 / 9",
+    "label": "The JU-088 door closer — a pair of fire doors needs one on each leaf before a coordinator has anything to sequence",
+    "labelEs": "El cierrapuertas JU-088 — un par de puertas cortafuego necesita uno en cada hoja antes de que un selector tenga algo que secuenciar"
   },
   "gallery": [
     {

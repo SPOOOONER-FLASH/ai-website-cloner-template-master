@@ -19,12 +19,15 @@
     "Se especifican juntas y no por separado porque la guarnición tiene que corresponder a la barra sobre la que actúa: la caja de cerradura, el cuadradillo y las distancias de fijación las fija la barra, no la manilla. Una guarnición comprada para otra barra se monta y no funciona, y el fallo se descubre en la instalación y no en la recepción de mercancía.",
     "Confirme antes de pedir: espesor de puerta, ancho de hoja, mano, si la manilla exterior debe ir amaestrada con otras puertas del edificio, y la resistencia al fuego que debe alcanzar el conjunto. El color también es una decisión — la barra se mantiene en stock en rojo y negro, y el rojo en un pasillo por lo demás negro se lee como una ocurrencia tardía."
   ],
-  "productModels": ["310", "015"],
+  "productModels": [
+    "310",
+    "015"
+  ],
   "heroImage": {
-    "src": "/images/editorial/project-commercial-egress.webp",
-    "ratio": "3 / 2",
-    "label": "Representative commercial corridor with fire-rated egress doors",
-    "labelEs": "Pasillo comercial representativo con puertas cortafuego de evacuación"
+    "src": "/images/editorial/framed/015-panic-exit-device-trim-16x9.webp",
+    "ratio": "16 / 9",
+    "label": "The 015 outside trim — the keyed lever that works through the push bar, and the half that most often arrives missing from a schedule",
+    "labelEs": "El escudo exterior 015 — la manilla con llave que actúa a través de la barra de empuje, y la mitad que más a menudo falta en un pliego"
   },
   "gallery": [
     {

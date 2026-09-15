@@ -23,10 +23,10 @@
     "Send the door schedule and say how many levels you think you need. If the schedule suggests fewer, we will say so — a system with one level more than the building uses is a cost and a complication that shows up years later, when somebody has to explain why a key opens a door it should not."
   ],
   "heroImage": {
-    "src": "/images/editorial/hyde-real-cylinder-plate.webp",
-    "ratio": "3 / 2",
-    "label": "A solid brass euro-profile cylinder with its cam, fixing screw and three keys — the unit a master key plan is built from.",
-    "labelEs": "Cilindro de perfil europeo en latón macizo con su leva, tornillo de fijación y tres llaves —la unidad sobre la que se construye un plan de amaestramiento."
+    "src": "/images/editorial/framed/45bn-lock-cylinder-16x9.webp",
+    "ratio": "16 / 9",
+    "label": "The 45BN brass euro-profile cylinder — the individual door lock at the bottom of every master key hierarchy",
+    "labelEs": "El cilindro de perfil europeo de latón 45BN — la cerradura individual que está en la base de toda jerarquía de llave maestra"
   },
   "relatedModels": [
     "70SN",

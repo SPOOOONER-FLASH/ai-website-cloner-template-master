@@ -51,6 +51,46 @@ const TARGETS = [
   "what-a-frameless-glass-door-needs",
   "what-it-takes-to-tool-a-new-exit-device",
   "fitting-a-euro-cylinder",
+  /*
+    Added 2026-09-14, for a different reason from the four above: not because the frame
+    cut the subject, but because these five articles were sharing four images between
+    nine of them and the client could see it on the News index — the same mortise-lock
+    photograph three times, the same cylinder plate twice, the same door schedule twice.
+
+    They are catalogue plates rather than editorial scenery, so they arrive here for the
+    original reason anyway: a 1000×1000 plate in a 16:9 frame loses 44% of its width.
+
+    WHY A PRODUCT PLATE AND NOT A NEW COMPOSITION. Codex replaced these with purpose-made
+    compositions on 2026-09-14 and the client rejected them on sight and asked for the
+    originals back — which is what put the duplicates back on the page. A photograph of a
+    model the article already names is not a new composition: it is the part the paragraph
+    is about, shot the way the catalogue shoots everything. Each source below is in its
+    own article's `relatedModels`.
+
+    They are taken from products-hyde/, not products/, so the framed copy inherits the
+    HYDE mark. A news hero does not pass through brandProductImageRef — that runs on
+    product records — so pointing at the unbranded root here would have quietly published
+    five unmarked photographs the week after marking 3,956 of them.
+  */
+  "handing-left-right-and-universal",
+  "what-a-test-report-actually-covers",
+  "narrow-stile-aluminium-door-lock-sag",
+  "six-values-an-order-needs",
+  "master-key-systems-how-many-levels-you-need",
+  /*
+    The Applications index had it worse than News: one scene, `project-commercial-egress`,
+    on three of the five packages — and the five sit in a single grid, so the repeat was
+    the first thing the page showed.
+
+    Commercial fire-egress keeps that scene; it is the one the picture is actually of.
+    The other two take a photograph of a part from their own `productModels`, chosen as
+    the piece that package exists to explain: a closer for the double-leaf set, because a
+    pair of fire doors needs one on each leaf before a coordinator has anything to
+    sequence, and the outside trim for the panic-bar set, because the trim is the half
+    that arrives missing from a schedule.
+  */
+  "projects/double-leaf-fire-door-set",
+  "projects/panic-bar-with-outside-trim-set",
 ];
 
 /** The plate's own field colour, taken from a corner it is unlikely to occupy. */
@@ -77,8 +117,17 @@ mkdirSync(OUT_DIR, { recursive: true });
 let written = 0;
 let missing = 0;
 
-for (const slug of TARGETS) {
-  const recordPath = `content/news/${slug}.json`;
+/*
+  A target is a slug in content/news, or "projects/<slug>" for an application package.
+  The two collections carry the same heroImage shape and the same 16:9 card, so the only
+  thing that differs is the directory — and the Applications index had the same duplicate
+  problem the News index had, from the same cause.
+*/
+for (const target of TARGETS) {
+  const [collection, slug] = target.includes("/")
+    ? target.split("/")
+    : ["news", target];
+  const recordPath = `content/${collection}/${slug}.json`;
   if (!existsSync(recordPath)) {
     console.warn(`  no record for ${slug}`);
     continue;
@@ -111,12 +160,12 @@ for (const slug of TARGETS) {
   const width = actual < NEWS_FRAME ? Math.round(meta.height * NEWS_FRAME) : meta.width;
   const height = actual < NEWS_FRAME ? meta.height : Math.round(meta.width / NEWS_FRAME);
 
-  const target = join(OUT_DIR, `${basename(src, ".webp")}-16x9.webp`);
-  const publicPath = `/images/editorial/framed/${basename(target)}`;
+  const outputPath = join(OUT_DIR, `${basename(src, ".webp")}-16x9.webp`);
+  const publicPath = `/images/editorial/framed/${basename(outputPath)}`;
 
   if (check) {
-    if (!existsSync(target)) {
-      console.error(`  missing framed hero: ${target}`);
+    if (!existsSync(outputPath)) {
+      console.error(`  missing framed hero: ${outputPath}`);
       missing += 1;
     }
     continue;
@@ -126,7 +175,7 @@ for (const slug of TARGETS) {
   await sharp(source)
     .resize({ width, height, fit: "contain", background })
     .webp({ quality: 82, effort: 6 })
-    .toFile(target);
+    .toFile(outputPath);
 
   record.heroImage.src = publicPath;
   record.heroImage.ratio = "16 / 9";

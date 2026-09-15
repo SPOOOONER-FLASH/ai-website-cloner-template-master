@@ -52,19 +52,48 @@ export function ProductVideo({ video, className }: { video: VideoRef; className?
   }
 
   /*
-    Self-hosted. `preload="none"` because a catalogue page can carry several of these and
-    the browser would otherwise start fetching every one before the visitor asks for any;
-    the poster is what they see until then.
+    Self-hosted.
+
+    ---------------------------------------------------------------------------
+    `preload="metadata"`, NOT `"none"` — CHANGED 2026-09-14
+
+    It was `"none"`, and the reason given was that "a catalogue page can carry several of
+    these". That is no longer true and has not been for a while: every one of the 192
+    products with a clip has exactly one.
+
+    What is true is that Search Console reports all 30 video pages it has looked at so far
+    under 「视频不在观看页面上」— Google could not find a video on the page it was told
+    the video was on. With `preload="none"` the element exists but has no media at all:
+    no duration, no dimensions, no first frame, nothing a renderer can recognise as a
+    playing video. `"metadata"` fetches the file header only — a few kilobytes, not the
+    clip — which is what gives the player something to be.
+
+    ⚠ Honest about the limit of this: Google does not say which of its checks failed, so
+    this is the most likely cause rather than a proven one. The other two candidates were
+    checked and ruled out first — 27 of the 28 flagged files are present and served (the
+    28th is a pre-rename URL Google still holds, `033-panic-exit-device.mp4`, which is now
+    `-trim`), and the player is in the main column rather than behind a tab or a details
+    element. If the report does not clear after a re-crawl, the next thing to try is
+    lifting the VideoObject out of the Product's `subjectOf` into its own top-level node.
+
+    `type` is stated so the browser and the crawler can identify the media without
+    fetching it first. It was missing entirely.
   */
+  const mimeType = video.src.endsWith(".webm")
+    ? "video/webm"
+    : video.src.endsWith(".ogv")
+      ? "video/ogg"
+      : "video/mp4";
+
   return (
     <video
       controls
-      preload="none"
+      preload="metadata"
       poster={video.poster?.src}
       aria-label={video.label}
       className={cn("aspect-video w-full bg-surface-alt", className)}
     >
-      <source src={video.src} />
+      <source src={video.src} type={mimeType} />
       {/* Reached only when the browser cannot play the file at all. */}
       <a href={video.src}>Download the video</a>
     </video>
