@@ -10,6 +10,10 @@
 
 建模：新目录2026-09-14-dimension-models保存9004S外壳、LC04锁体包络、70SN上部圆柱包络三份局部实体，网格尺寸、闭合与正体积、打包来源、重新打开均通过。提供blend/glb和从实际网格导出的三视图。不宣称三个完整型号或二十项全部建模完成，缺失的孔位、曲线与机构见该目录STATUS.md。此前照片贴片不计为产品实体。
 
+首轮恢复export：1813静态页构建、导出测试、SEO与死链接检查通过；自定义检查确认英西首页/图库/20文章旧图恢复，420个中文页完整路径资源存在。最终predeploy检查发现HardwareTerms/ModelLookup/OrderCodeTables在构建后又被更新，故已启动第二次构建，不绕过时间检查或触摸产物时间戳。
+
+第二轮`npm run deploy:prep`完整通过（退出0），包括最终源码时间检查；恢复图片专项检查再次通过。out/out-rayen完整显式暂存随本记录提交。LC04最终正交图仅有已发布尺寸支持的正视图，临时厚度不出图，模型重开核验再次通过。发布接力棒交还；未做Cloudflare purge，源站拉取验证与Git推送区分记录。
+
 - 依据：甲方本轮标记图、2026-09-10-professional-hardware-image-goal.md。
 - MIWA 官方资料区把型号功能/规格与外形图、开孔图关联，允许按型号取图。落实：新闻封面和首页专栏使用本厂对应型号的原图与原始尺寸图，图像链接回具体型号。
 - 来源：https://www.miwa-lock.co.jp/tec/products/files/webcatalog-features-data.html 、https://www.miwa-lock.co.jp/tec/products/webcatalog.html （2026-09-14 查询）。miwa.jp 本次无法打开，已找到美和锁官方站。
@@ -21,5 +25,5 @@
 - 源检查：ESLint、TypeScript、266项npm测试、退回图/精确重复检查、响应式图片检查均通过。首页总览标签溢出已修复并重渲染；最终两张场景与玻璃配件原图已目检。
 - 发布阶段：Claude已接棒LH852与中文新品构建，out有13721个变动；本轮不重建或暂存其out。已读到out首页和英西研究页包含新图。源码提交遇共享index.lock，未删除或中断其他Git进程。
 - 浏览器限制：本地3107静态服务器启动正常，但应用内浏览器连续两次无法连接webview，尚不能声称桌面/手机浏览器视觉验收通过。已完成图片本身目检与静态资源检查。
-- 离线交付：`scripts/package-curated-hardware.mjs`生成便携审阅页与17份最终Blender，所有纹理已打包。ZIP位于本任务outputs目录，约91MB；不包含两张初版组合。
+- 已退回的离线图像交付：约91MB的旧ZIP和审阅页已移至`tmp/codex-curated/rejected-delivery/`，不再列作当前交付。当前outputs只提供`dimension-models.zip`及模型文件夹，约300KB。
 - 共享树：起步时Claude持out；当前已交还（out已干净）。发布前重新登记。保留全部陌生工作，不恢复或批量暂存。
