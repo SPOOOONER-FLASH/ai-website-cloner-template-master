@@ -22,10 +22,6 @@
       "value": "700mm"
     },
     {
-      "label": "Available lengths",
-      "value": "L300 / L700"
-    },
-    {
       "label": "Grip section",
       "value": "22mm"
     },
@@ -40,6 +36,10 @@
     {
       "label": "Weight",
       "value": "3.1kg"
+    },
+    {
+      "label": "Available lengths",
+      "value": "300–700mm"
     },
     {
       "label": "Fixing screw",
@@ -139,7 +139,7 @@
     "artunion": {
       "id": "G1234-25-112-L700",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
+      "fetchedAt": "2026-09-15T06:55:12.892Z"
     }
   },
   "nameEs": "Tirador para puerta de vidrio"
