@@ -32,6 +32,22 @@
     {
       "label": "End to fixing",
       "value": "100mm at each end"
+    },
+    {
+      "label": "Weight",
+      "value": "1.2kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -78,5 +94,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1286 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 500mm overall on P=300mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 500mm overall on P=300mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G1286-01-021",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

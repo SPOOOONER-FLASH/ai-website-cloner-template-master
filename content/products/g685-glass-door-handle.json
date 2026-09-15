@@ -33,6 +33,22 @@
     {
       "label": "Projection",
       "value": "60mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.5kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -104,5 +120,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G685 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 443mm overall on P=425mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 443mm overall on P=425mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G685-01-001-L443",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

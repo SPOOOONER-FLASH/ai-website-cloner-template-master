@@ -123,7 +123,9 @@ const EDITS = [
   {
     file: "g1216-glass-door-handle-2.webp",
     canvas: [544, 532],
-    regions: [{ x: 116, y: 276, w: 70, h: 21, text: "截面形状", size: 14 }],
+    /* x starts at 104, not 116: the 断 glyph reaches further left than the eye reads at 1:1,
+       and a box measured to the apparent edge left a sliver of it standing beside 截. */
+    regions: [{ x: 104, y: 276, w: 82, h: 21, text: "截面形状", size: 14 }],
   },
   {
     file: "ul750-lever-handle-2.webp",

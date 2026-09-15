@@ -54,6 +54,17 @@
   },
   "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
  },
+ "g1131-glass-door-handle": {
+  "model": "G1131",
+  "diameter": 12,
+  "centres": 650,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=650mm"
+  },
+  "note": "Fixing hole. Centres 650mm. Hole positions only. Not a product outline."
+ },
  "g1159-glass-door-handle": {
   "model": "G1159",
   "diameter": 12,
@@ -108,6 +119,17 @@
    "centre": "P=660mm (L700) / P=1160mm (L1200)"
   },
   "note": "Fixing hole. Centres 660mm. Hole positions only. Not a product outline."
+ },
+ "g1216-glass-door-handle": {
+  "model": "G1216",
+  "diameter": 12,
+  "centres": 425,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=425mm"
+  },
+  "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
  },
  "g1226-glass-door-handle": {
   "model": "G1226",
@@ -197,6 +219,28 @@
   },
   "note": "Fixing hole. Centres 1000mm. Hole positions only. Not a product outline."
  },
+ "g1265-glass-door-handle": {
+  "model": "G1265",
+  "diameter": 12,
+  "centres": 565,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=565mm"
+  },
+  "note": "Fixing hole. Centres 565mm. Hole positions only. Not a product outline."
+ },
+ "g1266-glass-door-handle": {
+  "model": "G1266",
+  "diameter": 12,
+  "centres": 540,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=540mm"
+  },
+  "note": "Fixing hole. Centres 540mm. Hole positions only. Not a product outline."
+ },
  "g1270-glass-door-handle": {
   "model": "G1270",
   "diameter": 12,
@@ -207,6 +251,17 @@
    "centre": "P=425mm"
   },
   "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g1286-glass-door-handle": {
+  "model": "G1286",
+  "diameter": 12,
+  "centres": 300,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=300mm"
+  },
+  "note": "Fixing hole. Centres 300mm. Hole positions only. Not a product outline."
  },
  "g1288-glass-door-handle": {
   "model": "G1288",
@@ -240,6 +295,17 @@
    "centre": "425mm"
   },
   "note": "Fixing hole. Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g2110-glass-door-handle": {
+  "model": "G2110",
+  "diameter": 12,
+  "centres": 660,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=660mm (L700) / P=260mm (L300)"
+  },
+  "note": "Fixing hole. Centres 660mm. Hole positions only. Not a product outline."
  },
  "g2690-glass-door-handle": {
   "model": "G2690",
@@ -284,6 +350,17 @@
    "centre": "573mm"
   },
   "note": "Fixing hole (glass door). Centres 573mm. Hole positions only. Not a product outline."
+ },
+ "g2888-glass-door-handle": {
+  "model": "G2888",
+  "diameter": 12,
+  "centres": 580,
+  "holeLabel": "Fixing hole",
+  "source": {
+   "hole": "φ12mm",
+   "centre": "P=580mm"
+  },
+  "note": "Fixing hole. Centres 580mm. Hole positions only. Not a product outline."
  },
  "g3078-glass-door-handle": {
   "model": "G3078",
@@ -339,6 +416,17 @@
    "centre": "P=425mm (L600) / P=800mm (L1200)"
   },
   "note": "Fixing hole (glass door). Centres 425mm. Hole positions only. Not a product outline."
+ },
+ "g5450-glass-door-handle": {
+  "model": "G5450",
+  "diameter": 16,
+  "centres": 775,
+  "holeLabel": "Fixing hole (glass door)",
+  "source": {
+   "hole": "φ16mm",
+   "centre": "P=775mm"
+  },
+  "note": "Fixing hole (glass door). Centres 775mm. Hole positions only. Not a product outline."
  },
  "g620-glass-door-handle": {
   "model": "G620",

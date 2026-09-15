@@ -157,11 +157,33 @@ function buildSummary(entry) {
   one is a field that claims a pairing the site cannot show — so it is computed here
   rather than trusted from the manifest, and it corrects itself the day the missing
   models arrive. src/data/product-sites.test.ts is what caught this.
+
+  COUNTED ACROSS EVERY MANIFEST, NOT JUST THIS ONE.
+
+  A pairing is a fact about the catalogue — T2110 the solid-door handle and G2110 the glass
+  one are the same design — and has nothing to do with which consignment each arrived in.
+  Counting within one manifest only happened to work while both halves of every family sat
+  in the same file. On 2026-09-14 G2110 moved to union-handles-rebuilt.json to pick up the
+  dimension drawing UNION publishes for it, its partner stayed in union-handles.json, and
+  the family silently collapsed to one member: the field was dropped from G2110 and
+  src/data/product-sites.test.ts reported 「2110 只有 T2110」.
 */
 const familyCount = new Map();
-for (const entry of manifest.models) {
-  if (!entry.styleFamily) continue;
-  familyCount.set(entry.styleFamily, (familyCount.get(entry.styleFamily) ?? 0) + 1);
+for (const file of readdirSync(join(root, "content", "rayen"))) {
+  if (!file.endsWith(".json")) continue;
+  let other;
+  try {
+    other = JSON.parse(readFileSync(join(root, "content", "rayen", file), "utf8"));
+  } catch {
+    continue;
+  }
+  /* Array.isArray, not `?? []`: artunion-specs.json also has a `models` key, but its is an
+     object keyed by model number — the spec cache, not a manifest. */
+  if (!Array.isArray(other.models)) continue;
+  for (const entry of other.models) {
+    if (!entry.styleFamily) continue;
+    familyCount.set(entry.styleFamily, (familyCount.get(entry.styleFamily) ?? 0) + 1);
+  }
 }
 
 mkdirSync(IMAGE_DIR, { recursive: true });

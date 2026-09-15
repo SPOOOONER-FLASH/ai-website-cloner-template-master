@@ -28,6 +28,22 @@
     {
       "label": "Projection",
       "value": "70mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.7kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -100,5 +116,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T685 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 443mm / 748mm overall on P=425mm (L443) / P=730mm (L748) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 443mm / 748mm overall on P=425mm (L443) / P=730mm (L748) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T685-01-001-L443",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

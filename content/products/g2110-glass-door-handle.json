@@ -8,6 +8,7 @@
     "glass-door-accessories",
     "glass-door-handles"
   ],
+  "styleFamily": "2110",
   "sites": [
     "rayen"
   ],
@@ -32,6 +33,22 @@
     {
       "label": "Standoff",
       "value": "20mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -103,5 +120,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G2110 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 700mm / 300mm overall on P=660mm (L700) / P=260mm (L300) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 700mm / 300mm overall on P=660mm (L700) / P=260mm (L300) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G2110-01-222-L300",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

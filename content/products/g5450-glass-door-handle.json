@@ -36,6 +36,22 @@
     {
       "label": "Standoff",
       "value": "38mm"
+    },
+    {
+      "label": "Weight",
+      "value": "5.1kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -72,5 +88,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G5450 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G5450-39-110",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

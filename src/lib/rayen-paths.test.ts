@@ -93,3 +93,23 @@ test("zh-terms 覆盖全部规格标签", async () => {
     stdio: "pipe",
   });
 });
+
+test("M8 型号的开孔直径是甲方给的口径，不是原厂的", async () => {
+  /*
+    The client overruled UNION on this: 「玻璃门安装16mm，木门安装10mm」, said three times,
+    twice with 「螺丝是M8的」 stated as the premise. UNION publishes φ12 for the glass hole on
+    eleven of these models.
+
+    It was first applied by editing the generated product JSON by hand, and the very next
+    re-ingest undid it on 42 models — merge-artunion-specs.mjs simply wrote UNION's figure
+    back. Nothing failed; the records regenerated cleanly and the site went on showing a
+    diameter the factory does not ship. This is the assertion that would have caught it, and
+    a hole drilled 4mm too wide in a sheet of glass does not go back.
+
+    scripts/apply-client-fixing-holes.mjs is the fix; this runs its --check.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-client-fixing-holes.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});

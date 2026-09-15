@@ -33,6 +33,22 @@
     {
       "label": "Rose depth",
       "value": "64mm"
+    },
+    {
+      "label": "Weight",
+      "value": "2.6kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M8"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -139,5 +155,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G52 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm / 1200mm overall on P=425mm (L600) / P=800mm (L1200) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm / 1200mm overall on P=425mm (L600) / P=800mm (L1200) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G52-01-001-L1200",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

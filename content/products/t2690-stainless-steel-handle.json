@@ -36,6 +36,22 @@
     {
       "label": "Projection",
       "value": "71mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.7kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ8mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -118,5 +134,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2690 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=500mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=500mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T2690-10-121-L600",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

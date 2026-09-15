@@ -36,6 +36,10 @@
     {
       "label": "Spindle centre",
       "value": "P=34mm"
+    },
+    {
+      "label": "Weight",
+      "value": "0.44kg"
     }
   ],
   "material": "Stainless Steel",
@@ -163,5 +167,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL690 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle, 140mm lever."
+  "seoDescription": "Stainless Steel lever handle, 140mm lever.",
+  "specSources": {
+    "artunion": {
+      "id": "UL690-001",
+      "basis": "sole",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

@@ -28,6 +28,22 @@
     {
       "label": "Projection",
       "value": "60mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.6kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ8mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -75,5 +91,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1270 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=425mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=425mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T1270-36-076",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

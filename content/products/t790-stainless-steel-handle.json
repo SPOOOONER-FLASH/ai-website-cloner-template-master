@@ -31,6 +31,18 @@
     {
       "label": "Projection",
       "value": "60mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "outside φ12mm inside φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -88,5 +100,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T790 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 400mm / 600mm / 800mm overall on P=360mm (L400) / P=560mm (L600) / P=760mm (L800) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 400mm / 600mm / 800mm overall on P=360mm (L400) / P=560mm (L600) / P=760mm (L800) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T790-01-001-L400",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

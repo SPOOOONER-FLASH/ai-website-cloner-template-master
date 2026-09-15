@@ -32,6 +32,22 @@
     {
       "label": "Projection",
       "value": "61.5mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.5kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -88,5 +104,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1252 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 447mm / 1422mm overall on P=425mm (L447) / P=700+700mm (L1422) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 447mm / 1422mm overall on P=425mm (L447) / P=700+700mm (L1422) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G1252-01-001-L447",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

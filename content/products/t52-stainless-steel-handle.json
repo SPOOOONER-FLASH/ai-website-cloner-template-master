@@ -32,6 +32,22 @@
     {
       "label": "Rose depth",
       "value": "65mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.8kg"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ8mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -154,5 +170,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T52 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm / 1200mm overall on P=425mm (L600) / P=800mm (L1200) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 600mm / 1200mm overall on P=425mm (L600) / P=800mm (L1200) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T52-01-023-UP-L600",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

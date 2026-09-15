@@ -28,6 +28,18 @@
     {
       "label": "Projection",
       "value": "60.4mm"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ8mm"
+    },
+    {
+      "label": "Fixing hole (glass door)",
+      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -125,5 +137,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1170 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm / 750mm overall on P=275mm (L450) / P=425mm (L600) / P=575mm (L750) fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm / 750mm overall on P=275mm (L450) / P=425mm (L600) / P=575mm (L750) fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "T1170-01-001-L450",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

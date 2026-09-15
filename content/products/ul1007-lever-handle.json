@@ -35,6 +35,10 @@
     {
       "label": "Lever drop",
       "value": "20mm"
+    },
+    {
+      "label": "Weight",
+      "value": "0.7kg"
     }
   ],
   "material": "Stainless Steel",
@@ -127,5 +131,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL1007 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle, 145mm lever."
+  "seoDescription": "Stainless Steel lever handle, 145mm lever.",
+  "specSources": {
+    "artunion": {
+      "id": "UL1007-001",
+      "basis": "sole",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }

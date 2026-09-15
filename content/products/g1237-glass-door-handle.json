@@ -36,6 +36,18 @@
     {
       "label": "Rose depth",
       "value": "63mm"
+    },
+    {
+      "label": "Fixing screw",
+      "value": "M6"
+    },
+    {
+      "label": "Fixing hole",
+      "value": "φ12mm"
+    },
+    {
+      "label": "Fixing hole (flush door)",
+      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -92,5 +104,12 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1237 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 806mm overall on P=500mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 806mm overall on P=500mm fixing centres.",
+  "specSources": {
+    "artunion": {
+      "id": "G1237-01-991",
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-14T02:41:16.839Z"
+    }
+  }
 }
