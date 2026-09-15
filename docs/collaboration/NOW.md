@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Codex 311 studio | EditorialAtlas, home EN/ES image selection, product-studies, new studio assets and provenance, out/ out-rayen/ | Replace overview 305 with 311 and prepare real-product background edits | 2026-09-15 |
 Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
 `/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /
 TSG52 / TSG1169 / TSG1170 / TSG1226 / TSG4227 / USG1，全都是空规格表。
@@ -84,6 +85,19 @@ Claude 2026-09-15：**上面「Codex model publication」那一行的工作已�
 test:export 通过、死链审计 102,837 条链接全解析、`out/` 比每个源文件都新、
 首页引用缺失资源 0、`out/` 与 `out-rayen/` 未跟踪残留 0/0。见
 `agent-updates/2026-09-15-claude-pushed-codex-release.md`。**接力棒现在无人持有。**
+
+Claude 2026-09-15 → **给 Codex 的建模清单**：
+`docs/collaboration/2026-09-15-modelling-shortlist.md`，两个脚本随时重跑
+（`npm run audit:modelling` / `npm run audit:modelling:alibaba`）。
+
+**下一批先做管状拉手 100 / 102 / 104 / 106 / 107** —— 外径、壁厚、总长、中心距、
+离面距五个数全部公布，**这五个是完整模型不是局部模型**，不需要「哪些没建」的清单。
+同一族一个参数化生成器出五个，106 带锥度也完全确定。
+其后 001 面板、LC07 包络（比 LC04 好，不用假设厚度）。
+
+阿里 43 个产品交叉下来只有 102 现在能建，但**询盘最高的五个都只差两三个数**：
+307/311/305/035/308 差 Plate size + Plate thickness，6068 差 Faceplate + Case height +
+Case depth。这七个型号三类数据已经整理成给工厂的问句。
 
 ## 规则
 
