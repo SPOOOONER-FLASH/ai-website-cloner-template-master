@@ -1,0 +1,18 @@
+{
+  "kind": "real-photograph-on-editorial-field",
+  "grammar": "void-dark",
+  "field": "#171614 → #5a5653, vertical",
+  "fieldMeasuredFrom": "FSB heroes fetched 2026-09-05 at w_1440 (dieter-rams stage; designed-by; produktfamilien_uebersicht)",
+  "objectMeanLuminance": 187,
+  "productGeometry": "Original pixels retained. Uniform resize and complete-object crop only — no redraw, no restyle, no recombination.",
+  "addedByThisScript": [
+    "graded backdrop",
+    "cast shadow derived from the object's own silhouette"
+  ],
+  "sources": [
+    {
+      "source": "public\\images\\products\\9001-stainless-steel-handle.webp",
+      "sha256": "fa61d03daad7aae14f996d40078c95dc565bcc5b700e7ece19ce759c4a2a3774"
+    }
+  ]
+}
