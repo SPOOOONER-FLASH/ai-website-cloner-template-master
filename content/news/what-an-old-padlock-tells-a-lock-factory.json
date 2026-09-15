@@ -2,7 +2,6 @@
   "slug": "what-an-old-padlock-tells-a-lock-factory",
   "title": "A Padlock Chained to a Knight in Germany",
   "kind": "insight",
-  "draft": true,
   "publishedAt": "2026-09-15",
   "summary": "Our principal found it on a German street, chained around the ankles of a cast-iron knight outside a hotel, and photographed it because the older a thing is the more it draws you in. We cannot tell you who made it or when — rust removes exactly the evidence that would answer that. We can tell you what is still legible in the metal, which is more than you would expect, and why we are not going to invent the rest.",
   "author": {
@@ -14,10 +13,10 @@
     "url": "https://www.linkedin.com/in/leiboliu"
   },
   "heroImage": {
-    "src": "",
+    "src": "/images/editorial/heritage/padlock-germany-chain-16x9.webp",
     "ratio": "16 / 9",
-    "label": "A rusted riveted padlock and its chain, photographed by Canton Hyland's principal on a street in Germany",
-    "labelEs": "Un candado remachado y oxidado con su cadena, fotografiado por el director de Canton Hyland en una calle de Alemania"
+    "label": "The padlock and its chain, cut out from the principal's photograph — eight domed rivets, a staple shackle and an engraved oval escutcheon",
+    "labelEs": "El candado y su cadena, recortados de la fotografía del director — ocho remaches abombados, un arco de grapa y un escudo ovalado grabado"
   },
   "relatedModels": [
     "45 SNIK",
@@ -55,5 +54,25 @@
     "Eso es lo que fabricamos. Nuestros cilindros de perfil europeo van en 45, 54, 60, 65, 70, 80 y 90 mm, y ninguna de esas cifras es nuestra: son de la norma, y todo el valor de la pieza está en clavarlas exactamente. Un cilindro orgullosamente distinto en dos milímetros no es un producto con personalidad; es una pieza que no entra. El anonimato del candado viejo y la intercambiabilidad del cilindro moderno son la misma historia contada dos veces: primero el nombre del fabricante era la garantía, después la norma la sustituyó.",
     "Y ahí es donde se van veintiocho años. Un molde de una sola barra antipánico tarda de tres a cinco meses en dar una pieza que alguien vendería, y la mayor parte de ese tiempo no es cortar acero: es rodar la herramienta, medir lo que sale y corregirla, porque el metal no hace lo que dice el plano. Después vienen los ensayos que la pieza tiene que superar: fuego, impacto, ciclos de vida, presión. Nada de eso se ve en una fotografía. Se ve en que la pieza número cien mil es igual que la primera.",
     "Así que el candado va en esta página como algo que mirar, no como algo que reclamar. No es nuestro, no lo hicimos y no podemos decirle quién lo hizo. Sí podemos decirle cómo está montado, qué tipo de llave admite y qué parte de él fue puro orgullo — y si sabemos leerlo es porque nos pasamos los días en el otro extremo de la vida del mismo objeto."
+  ],
+  "gallery": [
+    {
+      "src": "/images/editorial/heritage/padlock-germany-front.webp",
+      "ratio": "4 / 3",
+      "label": "Square on: the pin standing in the middle of the keyhole is what tells you this takes a hollow barrel key, not a cylinder",
+      "labelEs": "De frente: el pivote en el centro del bocallave es lo que indica que admite una llave de tubo hueca, no un cilindro"
+    },
+    {
+      "src": "/images/editorial/heritage/padlock-germany-in-situ.webp",
+      "ratio": "4 / 3",
+      "label": "As found, on the stone plinth — the chain is slack and the lock secures nothing",
+      "labelEs": "Tal como se encontró, sobre el zócalo de piedra — la cadena está floja y el candado no asegura nada"
+    },
+    {
+      "src": "/images/editorial/heritage/padlock-germany-knight.webp",
+      "ratio": "4 / 3",
+      "label": "Where it lives: chained around the ankles of a cast knight outside a hotel in Germany, whose shield claims the year 998",
+      "labelEs": "Dónde vive: encadenado a los tobillos de un caballero fundido a la puerta de un hotel en Alemania, cuyo escudo reclama el año 998"
+    }
   ]
 }
