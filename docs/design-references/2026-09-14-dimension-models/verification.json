@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "9004s-exterior",
+    "status": "9004S published exterior shell only",
+    "reopened": true,
+    "meshChecks": [
+      {
+        "object": "Rose — 53 x 53 x 8 mm",
+        "dimensions_mm": [
+          52.99999937415123,
+          52.99999937415123,
+          8.00000037997961
+        ],
+        "closedMesh": true,
+        "positiveVolume": true
+      },
+      {
+        "object": "Lever — 135 x 20 / 10 mm front bar",
+        "dimensions_mm": [
+          135.00000536441803,
+          19.999999552965164,
+          54.999999701976776
+        ],
+        "closedMesh": true,
+        "positiveVolume": true
+      }
+    ]
+  },
+  {
+    "slug": "lc04-case-envelope",
+    "status": "LC04 case bounding envelope only; NOT the finished lock body",
+    "reopened": true,
+    "meshChecks": [
+      {
+        "object": "LC04 CASE ENVELOPE - neutral thickness 15 mm",
+        "dimensions_mm": [
+          93.00000220537186,
+          14.999999664723873,
+          172.99999296665192
+        ],
+        "closedMesh": true,
+        "positiveVolume": true
+      }
+    ]
+  },
+  {
+    "slug": "70sn-upper-housing-envelopes",
+    "status": "70SN upper cylindrical envelope segments only; NOT the complete cylinder",
+    "reopened": true,
+    "meshChecks": [
+      {
+        "object": "70SN UPPER HOUSING ENVELOPE A",
+        "dimensions_mm": [
+          17.000000923871994,
+          17.000000923871994,
+          29.999999329447746
+        ],
+        "closedMesh": true,
+        "positiveVolume": true
+      },
+      {
+        "object": "70SN UPPER HOUSING ENVELOPE B",
+        "dimensions_mm": [
+          17.000000923871994,
+          17.000000923871994,
+          29.999999329447746
+        ],
+        "closedMesh": true,
+        "positiveVolume": true
+      }
+    ]
+  }
+]

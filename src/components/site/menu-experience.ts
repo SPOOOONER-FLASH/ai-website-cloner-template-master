@@ -72,6 +72,8 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
         links: [
           { label: "Company", href: "/company/" },
           { label: "Certificates", href: "/certifications/" },
+          { label: "Order codes", href: "/finishes/" },
+          { label: "Model lookup", href: "/model-lookup/" },
           { label: "Downloads", href: "/downloads/" },
           { label: "Services", href: "/services/" },
         ],
@@ -115,6 +117,8 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
         links: [
           { label: "Empresa", href: "/es/company/" },
           { label: "Certificados", href: "/es/certifications/" },
+          { label: "Códigos de pedido", href: "/es/finishes/" },
+          { label: "Buscador de modelos", href: "/es/model-lookup/" },
           { label: "Descargas", href: "/es/downloads/" },
           { label: "Servicios", href: "/services/" },
         ],
@@ -146,6 +150,8 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
           { label: "Services", href: "/services/" },
           { label: "Downloads", href: "/downloads/" },
           { label: "Certificates", href: "/certifications/" },
+          { label: "Order codes", href: "/finishes/" },
+          { label: "Model lookup", href: "/model-lookup/" },
         ],
       },
       {
@@ -205,6 +211,8 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
           { label: "Servicios", href: "/services/" },
           { label: "Descargas", href: "/es/downloads/" },
           { label: "Certificados", href: "/es/certifications/" },
+          { label: "Códigos de pedido", href: "/es/finishes/" },
+          { label: "Buscador de modelos", href: "/es/model-lookup/" },
         ],
       },
       {

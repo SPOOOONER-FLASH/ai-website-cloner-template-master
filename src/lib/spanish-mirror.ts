@@ -47,6 +47,17 @@ const SPANISH_MIRROR_PREFIXES = [
   // for before naming a product in a tender.
   "/downloads",
   "/certifications",
+  /*
+    The order-code reference, bilingual from the day it shipped. A Spanish-speaking
+    specifier is exactly the reader it is for: our largest non-English market writes
+    its enquiries in Spanish and its finish codes in ours.
+  */
+  "/finishes",
+  /*
+    The model-number lookup. A buyer holding an old Spanish-language quotation is the same
+    buyer as the English one, and the answer is the same three tables.
+  */
+  "/model-lookup",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */
