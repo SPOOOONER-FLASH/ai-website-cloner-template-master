@@ -33,18 +33,6 @@
     {
       "label": "Projection",
       "value": "64mm"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ12mm"
-    },
-    {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -101,18 +89,30 @@
       "src": "/images/products/g1111-glass-door-handle-9.webp",
       "ratio": "1 / 1",
       "label": "G1111 Glass Door Handle, view 9"
+    },
+    {
+      "src": "/images/products/g1111-glass-door-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "G1111 Glass Door Handle, view 10"
+    },
+    {
+      "src": "/images/products/g1111-glass-door-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "G1111 Glass Door Handle, view 11"
+    },
+    {
+      "src": "/images/products/g1111-glass-door-handle-12.webp",
+      "ratio": "1 / 1",
+      "label": "G1111 Glass Door Handle, view 12"
+    },
+    {
+      "src": "/images/products/g1111-glass-door-handle-13.webp",
+      "ratio": "1 / 1",
+      "label": "G1111 Glass Door Handle, view 13"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1111 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm / 900mm / 2000mm overall on P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G1111-71-793-L900",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 600mm / 900mm / 2000mm overall on P=425mm (L600) / P=700mm (L900) / P=700+500+700mm (L2000) fixing centres."
 }

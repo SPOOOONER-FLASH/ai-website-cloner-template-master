@@ -13,16 +13,24 @@
   "summary": "Stainless Steel pull handle.",
   "specs": [
     {
-      "label": "Fixing screw",
-      "value": "M8"
+      "label": "Centre distance, horizontal",
+      "value": "P=500–950mm"
     },
     {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
+      "label": "Centre distance, vertical",
+      "value": "P=1200mm"
     },
     {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
+      "label": "Corner offset",
+      "value": "P=50mm / P=80mm"
+    },
+    {
+      "label": "Projection",
+      "value": "70mm"
+    },
+    {
+      "label": "Standoff",
+      "value": "27mm"
     }
   ],
   "material": "Stainless Steel",
@@ -40,17 +48,15 @@
     "ratio": "1 / 1",
     "label": "T2522 Stainless Steel Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/t2522-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T2522 Stainless Steel Handle, dimension drawing"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2522 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
-  "nameEs": "Manilla de acero inoxidable",
-  "specSources": {
-    "artunion": {
-      "id": "T2522-01-001-L",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  }
+  "seoDescription": "Stainless Steel pull handle."
 }

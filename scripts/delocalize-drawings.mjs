@@ -111,6 +111,20 @@ const EDITS = [
     canvas: [544, 532],
     regions: [{ x: 175, y: 267, w: 48, h: 17, text: "截面形状", size: 11 }],
   },
+  /*
+    G1216, added 2026-09-14 with the drawing itself.
+
+    This model reached the site from batch 1 with no drawing at all and an empty spec table.
+    UNION publishes one, and it carries the same 「断面形状」 label T2412's two drawings do —
+    so it gets the same rewrite to 「截面形状」, the term a Chinese fabricator uses. The English
+    "section" printed underneath is left alone: it is already readable to both audiences, and
+    painting it out would cost the drawing a label without replacing it.
+  */
+  {
+    file: "g1216-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 116, y: 276, w: 70, h: 21, text: "截面形状", size: 14 }],
+  },
   {
     file: "ul750-lever-handle-2.webp",
     canvas: [544, 532],

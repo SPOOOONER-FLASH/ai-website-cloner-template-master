@@ -11,23 +11,31 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
+  "summary": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres.",
   "specs": [
     {
-      "label": "Weight",
-      "value": "5.1kg"
+      "label": "Centre distance",
+      "value": "P=775mm"
     },
     {
-      "label": "Fixing screw",
-      "value": "M8"
+      "label": "Overall length",
+      "value": "800mm"
     },
     {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
+      "label": "Grip section",
+      "value": "50mm square"
     },
     {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
+      "label": "Grip length",
+      "value": "600mm"
+    },
+    {
+      "label": "Projection",
+      "value": "78mm"
+    },
+    {
+      "label": "Standoff",
+      "value": "38mm"
     }
   ],
   "material": "Stainless Steel",
@@ -48,24 +56,21 @@
     {
       "src": "/images/products/g5450-glass-door-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "G5450 Glass Door Handle, view 2"
+      "label": "G5450 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g5450-glass-door-handle-3.webp",
       "ratio": "1 / 1",
       "label": "G5450 Glass Door Handle, view 3"
+    },
+    {
+      "src": "/images/products/g5450-glass-door-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "G5450 Glass Door Handle, view 4"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G5450 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
-  "nameEs": "Tirador para puerta de vidrio",
-  "specSources": {
-    "artunion": {
-      "id": "G5450-39-110",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  }
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=775mm fixing centres."
 }

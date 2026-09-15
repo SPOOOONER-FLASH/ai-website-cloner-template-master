@@ -32,22 +32,6 @@
     {
       "label": "Projection",
       "value": "61.5mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.5kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ12mm"
-    },
-    {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -84,18 +68,25 @@
       "src": "/images/products/g1252-glass-door-handle-5.webp",
       "ratio": "1 / 1",
       "label": "G1252 Glass Door Handle, view 5"
+    },
+    {
+      "src": "/images/products/g1252-glass-door-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "G1252 Glass Door Handle, view 6"
+    },
+    {
+      "src": "/images/products/g1252-glass-door-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "G1252 Glass Door Handle, view 7"
+    },
+    {
+      "src": "/images/products/g1252-glass-door-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "G1252 Glass Door Handle, view 8"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1252 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 447mm / 1422mm overall on P=425mm (L447) / P=700+700mm (L1422) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G1252-01-001-L447",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 447mm / 1422mm overall on P=425mm (L447) / P=700+700mm (L1422) fixing centres."
 }

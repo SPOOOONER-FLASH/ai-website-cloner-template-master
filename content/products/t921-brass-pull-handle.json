@@ -36,22 +36,6 @@
     {
       "label": "Rose depth",
       "value": "82mm"
-    },
-    {
-      "label": "Weight",
-      "value": "4.7kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Brass",
@@ -93,18 +77,15 @@
       "src": "/images/products/t921-brass-pull-handle-6.webp",
       "ratio": "1 / 1",
       "label": "T921 Brass Pull Handle, view 6"
+    },
+    {
+      "src": "/images/products/t921-brass-pull-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "T921 Brass Pull Handle, view 7"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T921 Brass Pull Handle | RAYEN",
-  "seoDescription": "Brass pull handle, 762mm overall on P=620mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T921-38-102",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador de latón"
+  "seoDescription": "Brass pull handle, 762mm overall on P=620mm fixing centres."
 }

@@ -33,22 +33,6 @@
     {
       "label": "Projection",
       "value": "60mm"
-    },
-    {
-      "label": "Weight",
-      "value": "2.1kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -84,7 +68,7 @@
     {
       "src": "/images/products/g620-glass-door-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "G620 Glass Door Handle, view 5"
+      "label": "G620 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g620-glass-door-handle-6.webp",
@@ -140,18 +124,15 @@
       "src": "/images/products/g620-glass-door-handle-16.webp",
       "ratio": "1 / 1",
       "label": "G620 Glass Door Handle, view 16"
+    },
+    {
+      "src": "/images/products/g620-glass-door-handle-17.webp",
+      "ratio": "1 / 1",
+      "label": "G620 Glass Door Handle, view 17"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G620 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm / 800mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G620-01-001",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 600mm / 800mm overall on P=425mm fixing centres."
 }

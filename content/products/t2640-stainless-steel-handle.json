@@ -27,22 +27,6 @@
     {
       "label": "Projection",
       "value": "60mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.8kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -100,18 +84,15 @@
       "src": "/images/products/t2640-stainless-steel-handle-9.webp",
       "ratio": "1 / 1",
       "label": "T2640 Stainless Steel Handle, view 9"
+    },
+    {
+      "src": "/images/products/t2640-stainless-steel-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "T2640 Stainless Steel Handle, view 10"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2640 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm overall on P=425mm (L450) / P=575mm (L600) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T2640-01-001-L450",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm overall on P=425mm (L450) / P=575mm (L600) fixing centres."
 }

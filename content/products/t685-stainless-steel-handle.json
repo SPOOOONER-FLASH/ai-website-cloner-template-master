@@ -28,22 +28,6 @@
     {
       "label": "Projection",
       "value": "70mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.7kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -75,12 +59,12 @@
     {
       "src": "/images/products/t685-stainless-steel-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "T685 Stainless Steel Handle, view 4"
+      "label": "T685 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t685-stainless-steel-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "T685 Stainless Steel Handle, view 5"
+      "label": "T685 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t685-stainless-steel-handle-6.webp",
@@ -96,18 +80,25 @@
       "src": "/images/products/t685-stainless-steel-handle-8.webp",
       "ratio": "1 / 1",
       "label": "T685 Stainless Steel Handle, view 8"
+    },
+    {
+      "src": "/images/products/t685-stainless-steel-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "T685 Stainless Steel Handle, view 9"
+    },
+    {
+      "src": "/images/products/t685-stainless-steel-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "T685 Stainless Steel Handle, view 10"
+    },
+    {
+      "src": "/images/products/t685-stainless-steel-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "T685 Stainless Steel Handle, view 11"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T685 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 443mm / 748mm overall on P=425mm (L443) / P=730mm (L748) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T685-01-001-L443",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 443mm / 748mm overall on P=425mm (L443) / P=730mm (L748) fixing centres."
 }

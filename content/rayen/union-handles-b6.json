@@ -1263,8 +1263,29 @@
         "Satin stainless",
         "Matt black"
       ],
-      "drawing": null,
-      "specs": []
+      "drawing": "G1131xD900SZXW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=650mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "800mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "71.5mm"
+        },
+        {
+          "label": "Standoff",
+          "value": "Ø22mm"
+        }
+      ]
     },
     {
       "model": "TSG1169",

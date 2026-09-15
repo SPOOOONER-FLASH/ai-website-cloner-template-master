@@ -33,22 +33,6 @@
     {
       "label": "Projection",
       "value": "60mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.5kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -74,34 +58,51 @@
     {
       "src": "/images/products/g685-glass-door-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "G685 Glass Door Handle, view 3"
+      "label": "G685 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g685-glass-door-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "G685 Glass Door Handle, view 4"
+      "label": "G685 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g685-glass-door-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "G685 Glass Door Handle, view 5"
+      "label": "G685 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g685-glass-door-handle-6.webp",
       "ratio": "1 / 1",
       "label": "G685 Glass Door Handle, view 6"
+    },
+    {
+      "src": "/images/products/g685-glass-door-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "G685 Glass Door Handle, view 7"
+    },
+    {
+      "src": "/images/products/g685-glass-door-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "G685 Glass Door Handle, view 8"
+    },
+    {
+      "src": "/images/products/g685-glass-door-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "G685 Glass Door Handle, view 9"
+    },
+    {
+      "src": "/images/products/g685-glass-door-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "G685 Glass Door Handle, view 10"
+    },
+    {
+      "src": "/images/products/g685-glass-door-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "G685 Glass Door Handle, view 11"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G685 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 443mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G685-01-001-L443",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 443mm overall on P=425mm fixing centres."
 }

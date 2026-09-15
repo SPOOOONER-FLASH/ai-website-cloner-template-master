@@ -33,22 +33,6 @@
     {
       "label": "Rose depth",
       "value": "60mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.6kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ12mm"
-    },
-    {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -95,18 +79,15 @@
       "src": "/images/products/g720-glass-door-handle-7.webp",
       "ratio": "1 / 1",
       "label": "G720 Glass Door Handle, view 7"
+    },
+    {
+      "src": "/images/products/g720-glass-door-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "G720 Glass Door Handle, view 8"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G720 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G720-01-001",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=425mm fixing centres."
 }

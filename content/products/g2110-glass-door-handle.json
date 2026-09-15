@@ -8,12 +8,32 @@
     "glass-door-accessories",
     "glass-door-handles"
   ],
-  "styleFamily": "2110",
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
-  "specs": [],
+  "summary": "Stainless Steel pull handle, 700mm / 300mm overall on P=660mm (L700) / P=260mm (L300) fixing centres.",
+  "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=660mm (L700) / P=260mm (L300)"
+    },
+    {
+      "label": "Overall length",
+      "value": "700mm / 300mm"
+    },
+    {
+      "label": "Grip section",
+      "value": "20mm square"
+    },
+    {
+      "label": "Projection",
+      "value": "68mm"
+    },
+    {
+      "label": "Standoff",
+      "value": "20mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless",
@@ -32,12 +52,12 @@
     {
       "src": "/images/products/g2110-glass-door-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "G2110 Glass Door Handle, view 2"
+      "label": "G2110 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g2110-glass-door-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "G2110 Glass Door Handle, view 3"
+      "label": "G2110 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g2110-glass-door-handle-4.webp",
@@ -68,13 +88,20 @@
       "src": "/images/products/g2110-glass-door-handle-9.webp",
       "ratio": "1 / 1",
       "label": "G2110 Glass Door Handle, view 9"
+    },
+    {
+      "src": "/images/products/g2110-glass-door-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "G2110 Glass Door Handle, view 10"
+    },
+    {
+      "src": "/images/products/g2110-glass-door-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "G2110 Glass Door Handle, view 11"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "G2110 Glass Door Handle — Stainless Steel | Canton Hyland",
-  "seoDescription": "Canton Hyland G2110 glass door handle in Stainless Steel. Finishes: Satin stainless, Matt black. Manufactured in Guangdong, China. Request a quotation.",
-  "seoTitleEs": "G2110 Glass Door Handle — Acero inoxidable | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland G2110 glass Door Handle en acero inoxidable. Acabados: Satin stainless, Matt black. Fabricado en Guangdong, China. Solicite presupuesto.",
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoTitle": "G2110 Glass Door Handle | RAYEN",
+  "seoDescription": "Stainless Steel pull handle, 700mm / 300mm overall on P=660mm (L700) / P=260mm (L300) fixing centres."
 }

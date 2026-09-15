@@ -32,22 +32,6 @@
     {
       "label": "Rose depth",
       "value": "65mm"
-    },
-    {
-      "label": "Weight",
-      "value": "2.6kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ8mm"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -75,18 +59,15 @@
       "src": "/images/products/t1122-stainless-steel-handle-3.webp",
       "ratio": "1 / 1",
       "label": "T1122 Stainless Steel Handle, view 3"
+    },
+    {
+      "src": "/images/products/t1122-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "T1122 Stainless Steel Handle, view 4"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1122 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 700mm overall on P=615mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T1122-25-158",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 700mm overall on P=615mm fixing centres."
 }

@@ -33,18 +33,6 @@
     {
       "label": "Projection",
       "value": "55mm"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -86,18 +74,20 @@
       "src": "/images/products/g1288-glass-door-handle-6.webp",
       "ratio": "1 / 1",
       "label": "G1288 Glass Door Handle, view 6"
+    },
+    {
+      "src": "/images/products/g1288-glass-door-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "G1288 Glass Door Handle, view 7"
+    },
+    {
+      "src": "/images/products/g1288-glass-door-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "G1288 Glass Door Handle, view 8"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1288 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 455mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G1288-71-750",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 455mm overall on P=425mm fixing centres."
 }

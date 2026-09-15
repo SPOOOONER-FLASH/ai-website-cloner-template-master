@@ -28,22 +28,6 @@
     {
       "label": "Projection",
       "value": "70mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -69,17 +53,17 @@
     {
       "src": "/images/products/g500-glass-door-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "G500 Glass Door Handle, view 3"
+      "label": "G500 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g500-glass-door-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "G500 Glass Door Handle, view 4"
+      "label": "G500 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g500-glass-door-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "G500 Glass Door Handle, view 5"
+      "label": "G500 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g500-glass-door-handle-6.webp",
@@ -110,18 +94,35 @@
       "src": "/images/products/g500-glass-door-handle-11.webp",
       "ratio": "1 / 1",
       "label": "G500 Glass Door Handle, view 11"
+    },
+    {
+      "src": "/images/products/g500-glass-door-handle-12.webp",
+      "ratio": "1 / 1",
+      "label": "G500 Glass Door Handle, view 12"
+    },
+    {
+      "src": "/images/products/g500-glass-door-handle-13.webp",
+      "ratio": "1 / 1",
+      "label": "G500 Glass Door Handle, view 13"
+    },
+    {
+      "src": "/images/products/g500-glass-door-handle-14.webp",
+      "ratio": "1 / 1",
+      "label": "G500 Glass Door Handle, view 14"
+    },
+    {
+      "src": "/images/products/g500-glass-door-handle-15.webp",
+      "ratio": "1 / 1",
+      "label": "G500 Glass Door Handle, view 15"
+    },
+    {
+      "src": "/images/products/g500-glass-door-handle-16.webp",
+      "ratio": "1 / 1",
+      "label": "G500 Glass Door Handle, view 16"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G500 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 452mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G500-01-021-L452",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 452mm overall on P=425mm fixing centres."
 }

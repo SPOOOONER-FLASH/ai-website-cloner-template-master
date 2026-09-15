@@ -33,22 +33,6 @@
     {
       "label": "Projection",
       "value": "67.2mm"
-    },
-    {
-      "label": "Weight",
-      "value": "1.3kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -79,12 +63,12 @@
     {
       "src": "/images/products/g1170-glass-door-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "G1170 Glass Door Handle, view 4"
+      "label": "G1170 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g1170-glass-door-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "G1170 Glass Door Handle, view 5"
+      "label": "G1170 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g1170-glass-door-handle-6.webp",
@@ -180,18 +164,20 @@
       "src": "/images/products/g1170-glass-door-handle-24.webp",
       "ratio": "1 / 1",
       "label": "G1170 Glass Door Handle, view 24"
+    },
+    {
+      "src": "/images/products/g1170-glass-door-handle-25.webp",
+      "ratio": "1 / 1",
+      "label": "G1170 Glass Door Handle, view 25"
+    },
+    {
+      "src": "/images/products/g1170-glass-door-handle-26.webp",
+      "ratio": "1 / 1",
+      "label": "G1170 Glass Door Handle, view 26"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1170 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm overall on P=275mm (L450) / P=425mm (L600) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G1170-01-001-L450",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm overall on P=275mm (L450) / P=425mm (L600) fixing centres."
 }

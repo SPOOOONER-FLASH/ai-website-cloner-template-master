@@ -32,22 +32,6 @@
     {
       "label": "Rose depth",
       "value": "68mm"
-    },
-    {
-      "label": "Weight",
-      "value": "5.9kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Brass",
@@ -73,7 +57,7 @@
     {
       "src": "/images/products/t811-brass-pull-handle-3.webp",
       "ratio": "1 / 1",
-      "label": "T811 Brass Pull Handle, view 3"
+      "label": "T811 Brass Pull Handle, dimension drawing"
     },
     {
       "src": "/images/products/t811-brass-pull-handle-4.webp",
@@ -104,18 +88,15 @@
       "src": "/images/products/t811-brass-pull-handle-9.webp",
       "ratio": "1 / 1",
       "label": "T811 Brass Pull Handle, view 9"
+    },
+    {
+      "src": "/images/products/t811-brass-pull-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "T811 Brass Pull Handle, view 10"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T811 Brass Pull Handle | RAYEN",
-  "seoDescription": "Brass pull handle, 1000mm overall on P=746mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T811-15-001-L1000",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador de latón"
+  "seoDescription": "Brass pull handle, 1000mm overall on P=746mm fixing centres."
 }

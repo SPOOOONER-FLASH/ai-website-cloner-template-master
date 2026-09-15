@@ -42,7 +42,7 @@
  */
 
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -253,6 +253,16 @@ async function brandOne({ dir: DIR, logo: LOGO, ledger: LEDGER, label }) {
       })()
     : { stamped: {} };
   const stamped = ledger.stamped ?? {};
+  /*
+    For the English set only: which master each file was copied from, by SHA.
+
+    `stamped` cannot answer that — it records the file AFTER the mark went on, so it says
+    "this has a teal mark" and nothing about which photograph is underneath. When a master is
+    regenerated (a re-ingest renumbers the gallery, the cleaning step re-encodes it), the
+    English copy has a mark, matches its own ledger entry, and is a DIFFERENT PICTURE. On
+    2026-09-14 nineteen were, and the only visible symptom was a one-pixel width difference.
+  */
+  const seededFrom = ledger.seededFrom ?? {};
 
   const wanted = publishedImages();
 
@@ -277,16 +287,60 @@ async function brandOne({ dir: DIR, logo: LOGO, ledger: LEDGER, label }) {
       ? (JSON.parse(readFileSync(LOCALES.zh.ledger, "utf8")).stamped ?? {})
       : {};
     const alreadyBranded = [];
+    const refreshed = [];
     for (const name of readdirSync(MASTER)) {
       if (!/\.(webp|png|jpe?g)$/i.test(name) || !wanted.has(name)) continue;
-      if (existsSync(join(DIR, name))) continue;
       const source = readFileSync(join(MASTER, name));
-      if (zhLedger[name] === sha(source)) {
-        alreadyBranded.push(name);
+      const masterSha = sha(source);
+      const here = join(DIR, name);
+
+      /* Built from exactly this master already — nothing to do. */
+      if (seededFrom[name] === masterSha && existsSync(here)) continue;
+
+      /* The master carries the black 雷茵 lockup; using it as a base would stack two marks. */
+      if (zhLedger[name] === masterSha) {
+        if (!existsSync(here)) alreadyBranded.push(name);
         continue;
       }
-      writeFileSync(join(DIR, name), source);
+
+      if (existsSync(here)) refreshed.push(name);
+      writeFileSync(here, source);
+      seededFrom[name] = masterSha;
+      /* The copy is unbranded again, so the stamp ledger must not claim otherwise. */
+      delete stamped[name];
     }
+    if (refreshed.length) {
+      console.warn(
+        `英文站重新取底 ${refreshed.length} 张（中文底图已经重新生成过）：` +
+          `${refreshed.slice(0, 6).join("、")}${refreshed.length > 6 ? " …" : ""}`,
+      );
+    }
+
+    /*
+      And drop any English file whose master is gone.
+
+      The English set is a mirror of the master, so a file here with no counterpart there is
+      stale by definition. On 2026-09-14 ten of them were: re-ingesting a renumbered gallery
+      made <slug>-N.webp point at a different photograph, the new one was refused by the
+      cleaning step, and build-rayen-product-images deleted the master — but nothing pruned
+      the English copy, which went on being served with a teal mark on a picture no longer in
+      any product record. Seeding without pruning only ever grows this directory.
+    */
+    const orphans = readdirSync(DIR).filter(
+      (name) => /\.(webp|png|jpe?g)$/i.test(name) && !existsSync(join(MASTER, name)),
+    );
+    for (const name of orphans) {
+      rmSync(join(DIR, name));
+      delete stamped[name];
+      delete seededFrom[name];
+    }
+    if (orphans.length) {
+      console.warn(
+        `英文站清掉 ${orphans.length} 张没有中文底图的旧文件：${orphans.slice(0, 6).join("、")}` +
+          (orphans.length > 6 ? " …" : ""),
+      );
+    }
+
     if (alreadyBranded.length) {
       console.error(
         `⚠ ${alreadyBranded.length} 张 products-rayen 里的图已经打了中文标，不能拿来做英文图的底` +
@@ -397,6 +451,8 @@ async function brandOne({ dir: DIR, logo: LOGO, ledger: LEDGER, label }) {
         ranAt: new Date().toISOString(),
         count: Object.keys(stamped).length,
         stamped,
+        /* English set only: the master SHA each file was copied from. See seededFrom above. */
+        ...(Object.keys(seededFrom).length ? { seededFrom } : {}),
       },
       null,
       2,

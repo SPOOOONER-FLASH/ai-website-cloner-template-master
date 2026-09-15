@@ -12,23 +12,27 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
+  "summary": "Stainless Steel pull handle, 800mm overall on P=650mm fixing centres.",
   "specs": [
     {
-      "label": "Weight",
-      "value": "1.7kg"
+      "label": "Centre distance",
+      "value": "P=650mm"
     },
     {
-      "label": "Fixing screw",
-      "value": "M6"
+      "label": "Overall length",
+      "value": "800mm"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ12mm"
+      "label": "Grip section",
+      "value": "Ø25mm"
     },
     {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
+      "label": "Projection",
+      "value": "71.5mm"
+    },
+    {
+      "label": "Standoff",
+      "value": "Ø22mm"
     }
   ],
   "material": "Stainless Steel",
@@ -49,19 +53,16 @@
     {
       "src": "/images/products/g1131-glass-door-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "G1131 Glass Door Handle, view 2"
+      "label": "G1131 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g1131-glass-door-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "G1131 Glass Door Handle, view 3"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1131 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
-  "specSources": {
-    "artunion": {
-      "id": "G1131-01-020",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=650mm fixing centres."
 }

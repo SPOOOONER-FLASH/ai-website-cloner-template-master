@@ -57,8 +57,35 @@ const OUT =
   (argv.find((a) => a.startsWith("--out=")) ?? "").slice(6) ||
   "C:/Users/86132/rayen-union-scrape";
 
-const DELAY_MS = 1200;
+/*
+  Pace, and why it is what it is.
+
+  scripts/scrape-artunion-specs.mjs uses one request every 1.2 s because it reads ~120 pages
+  once and the wall-clock cost is nobody's problem. This one fetches a page AND every image
+  on it — roughly ten times the requests — and at that pace it runs for over an hour, which
+  the client asked to shorten (2026-09-14「加速取图」).
+
+  So: four in flight, 250 ms between requests in each. That peaks around four requests a
+  second, which is ordinary traffic for a catalogue site and less than one impatient person
+  with a browser and a tab-opening habit. It is deliberately NOT unlimited concurrency —
+  this is somebody else's server, we are a guest on it, and the User-Agent says who we are
+  so they can ask us to slow down rather than having to guess and block.
+*/
+const DELAY_MS = 250;
+const CONCURRENCY = 4;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** Run `work` over `items`, at most CONCURRENCY at a time. */
+async function pool(items, work) {
+  const queue = [...items];
+  const runners = Array.from({ length: Math.min(CONCURRENCY, queue.length) }, async () => {
+    while (queue.length) {
+      await work(queue.shift());
+      await sleep(DELAY_MS);
+    }
+  });
+  await Promise.all(runners);
+}
 
 const headers = {
   "User-Agent": "RAYEN-spec-reader/1.0 (hardware catalogue; contact via rayen site)",
@@ -126,7 +153,7 @@ let fetched = 0;
 let skipped = 0;
 const report = [];
 
-for (const { model, ids } of list) {
+await pool(list, async ({ model, ids }) => {
   const srcs = new Set();
   for (const id of ids) {
     try {
@@ -137,7 +164,7 @@ for (const { model, ids } of list) {
     }
     await sleep(DELAY_MS);
   }
-  if (!srcs.size) continue;
+  if (!srcs.size) return;
 
   const dir = join(OUT, model);
   const written = [];
@@ -165,7 +192,7 @@ for (const { model, ids } of list) {
     skipped += written.length - fresh.length;
     report.push(`${model}: ${written.length} 张（其中 ${fresh.length} 张是目录里没有的）`);
   }
-}
+});
 
 console.log(
   `\n${DRY ? "（--dry，未下载）" : `下载 ${fetched} 张`} → ${OUT}` +

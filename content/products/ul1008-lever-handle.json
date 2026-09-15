@@ -36,10 +36,6 @@
     {
       "label": "Spindle centre",
       "value": "P=34mm"
-    },
-    {
-      "label": "Weight",
-      "value": "0.51kg"
     }
   ],
   "material": "Stainless Steel",
@@ -77,13 +73,5 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL1008 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle, 135mm lever.",
-  "specSources": {
-    "artunion": {
-      "id": "UL1008-001",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de palanca"
+  "seoDescription": "Stainless Steel lever handle, 135mm lever."
 }

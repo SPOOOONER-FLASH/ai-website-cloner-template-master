@@ -28,18 +28,6 @@
     {
       "label": "Projection",
       "value": "60.4mm"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ8mm"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -76,7 +64,7 @@
     {
       "src": "/images/products/t1170-stainless-steel-handle-5.webp",
       "ratio": "1 / 1",
-      "label": "T1170 Stainless Steel Handle, view 5"
+      "label": "T1170 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t1170-stainless-steel-handle-6.webp",
@@ -117,18 +105,25 @@
       "src": "/images/products/t1170-stainless-steel-handle-13.webp",
       "ratio": "1 / 1",
       "label": "T1170 Stainless Steel Handle, view 13"
+    },
+    {
+      "src": "/images/products/t1170-stainless-steel-handle-14.webp",
+      "ratio": "1 / 1",
+      "label": "T1170 Stainless Steel Handle, view 14"
+    },
+    {
+      "src": "/images/products/t1170-stainless-steel-handle-15.webp",
+      "ratio": "1 / 1",
+      "label": "T1170 Stainless Steel Handle, view 15"
+    },
+    {
+      "src": "/images/products/t1170-stainless-steel-handle-16.webp",
+      "ratio": "1 / 1",
+      "label": "T1170 Stainless Steel Handle, view 16"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T1170 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm / 750mm overall on P=275mm (L450) / P=425mm (L600) / P=575mm (L750) fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T1170-01-001-L450",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 450mm / 600mm / 750mm overall on P=275mm (L450) / P=425mm (L600) / P=575mm (L750) fixing centres."
 }

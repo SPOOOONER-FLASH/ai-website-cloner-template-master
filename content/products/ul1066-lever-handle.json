@@ -10,8 +10,29 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel lever handle.",
-  "specs": [],
+  "summary": "Stainless Steel lever handle, 130mm lever.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "130mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "Ø22mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "9.5mm"
+    },
+    {
+      "label": "Projection",
+      "value": "69mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
     "Satin stainless"
@@ -30,7 +51,7 @@
     {
       "src": "/images/products/ul1066-lever-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "UL1066 Lever Handle, view 2"
+      "label": "UL1066 Lever Handle, dimension drawing"
     },
     {
       "src": "/images/products/ul1066-lever-handle-3.webp",
@@ -41,11 +62,55 @@
       "src": "/images/products/ul1066-lever-handle-4.webp",
       "ratio": "1 / 1",
       "label": "UL1066 Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 6"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 7"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 8"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 9"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 10"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 11"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-12.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 12"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-13.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 13"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL1066 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle.",
-  "nameEs": "Manilla de palanca"
+  "seoDescription": "Stainless Steel lever handle, 130mm lever."
 }

@@ -31,18 +31,6 @@
     {
       "label": "Rose depth",
       "value": "60mm"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -135,13 +123,5 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T8050 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=565mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T8050-72-117",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 600mm overall on P=565mm fixing centres."
 }

@@ -31,22 +31,6 @@
     {
       "label": "Rose depth",
       "value": "67mm / 63mm"
-    },
-    {
-      "label": "Weight",
-      "value": "2kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ8mm"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -78,7 +62,7 @@
     {
       "src": "/images/products/t25-stainless-steel-handle-4.webp",
       "ratio": "1 / 1",
-      "label": "T25 Stainless Steel Handle, view 4"
+      "label": "T25 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t25-stainless-steel-handle-5.webp",
@@ -94,18 +78,25 @@
       "src": "/images/products/t25-stainless-steel-handle-7.webp",
       "ratio": "1 / 1",
       "label": "T25 Stainless Steel Handle, view 7"
+    },
+    {
+      "src": "/images/products/t25-stainless-steel-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "T25 Stainless Steel Handle, view 8"
+    },
+    {
+      "src": "/images/products/t25-stainless-steel-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "T25 Stainless Steel Handle, view 9"
+    },
+    {
+      "src": "/images/products/t25-stainless-steel-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "T25 Stainless Steel Handle, view 10"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T25 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 550mm overall on P=425mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T25-01-023-L550",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 550mm overall on P=425mm fixing centres."
 }

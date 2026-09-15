@@ -28,22 +28,6 @@
     {
       "label": "Projection",
       "value": "57mm"
-    },
-    {
-      "label": "Weight",
-      "value": "2kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ8mm"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
     }
   ],
   "material": "Stainless Steel",
@@ -76,18 +60,15 @@
       "src": "/images/products/t630-stainless-steel-handle-4.webp",
       "ratio": "1 / 1",
       "label": "T630 Stainless Steel Handle, view 4"
+    },
+    {
+      "src": "/images/products/t630-stainless-steel-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "T630 Stainless Steel Handle, view 5"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T630 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=784mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "T630-01-001",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Manilla de acero inoxidable"
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=784mm fixing centres."
 }

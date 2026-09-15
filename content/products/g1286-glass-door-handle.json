@@ -11,23 +11,27 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
+  "summary": "Stainless Steel pull handle, 500mm overall on P=300mm fixing centres.",
   "specs": [
     {
-      "label": "Weight",
-      "value": "1.2kg"
+      "label": "Centre distance",
+      "value": "P=300mm"
     },
     {
-      "label": "Fixing screw",
-      "value": "M6"
+      "label": "Overall length",
+      "value": "500mm"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ12mm"
+      "label": "Grip section",
+      "value": "42mm blade, Ø20mm column"
     },
     {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
+      "label": "Projection",
+      "value": "43mm"
+    },
+    {
+      "label": "End to fixing",
+      "value": "100mm at each end"
     }
   ],
   "material": "Stainless Steel",
@@ -44,17 +48,35 @@
     "ratio": "1 / 1",
     "label": "G1286 Glass Door Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/g1286-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G1286 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g1286-glass-door-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "G1286 Glass Door Handle, view 3"
+    },
+    {
+      "src": "/images/products/g1286-glass-door-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "G1286 Glass Door Handle, view 4"
+    },
+    {
+      "src": "/images/products/g1286-glass-door-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "G1286 Glass Door Handle, view 5"
+    },
+    {
+      "src": "/images/products/g1286-glass-door-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "G1286 Glass Door Handle, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G1286 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
-  "nameEs": "Tirador para puerta de vidrio",
-  "specSources": {
-    "artunion": {
-      "id": "G1286-01-021",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  }
+  "seoDescription": "Stainless Steel pull handle, 500mm overall on P=300mm fixing centres."
 }

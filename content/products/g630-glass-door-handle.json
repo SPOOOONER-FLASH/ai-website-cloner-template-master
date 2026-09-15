@@ -33,22 +33,6 @@
     {
       "label": "Projection",
       "value": "59mm"
-    },
-    {
-      "label": "Weight",
-      "value": "2kg"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M6"
-    },
-    {
-      "label": "Fixing hole",
-      "value": "φ12mm"
-    },
-    {
-      "label": "Fixing hole (flush door)",
-      "value": "φ8mm"
     }
   ],
   "material": "Stainless Steel",
@@ -90,13 +74,5 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G630 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 820mm overall on P=788mm fixing centres.",
-  "specSources": {
-    "artunion": {
-      "id": "G630-01-001",
-      "basis": "confirmed",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  },
-  "nameEs": "Tirador para puerta de vidrio"
+  "seoDescription": "Stainless Steel pull handle, 820mm overall on P=788mm fixing centres."
 }
