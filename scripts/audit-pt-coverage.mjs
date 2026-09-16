@@ -1,0 +1,146 @@
+#!/usr/bin/env node
+/**
+ * How much of the site actually exists in Portuguese.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY A THIRD LOCALE NEEDS A COUNTER AND THE SECOND ONE DID NOT
+ *
+ * Spanish shipped as a deliberate, finished mirror: `hasSpanishMirror` lists the prefixes
+ * that exist, and a path not on that list gets no hreflang, so the gaps are visible as
+ * absent links. Portuguese is arriving incrementally, starting 2026-09-16 from a Brazilian
+ * enquiry, and `localised()` gives every unfinished field an English fallback so the page
+ * renders rather than crashes.
+ *
+ * That fallback is the right behaviour and it is also how a translation stalls at 60% for
+ * a year: the site looks finished from the inside. So the fallback is counted. A number
+ * that moves is a project; a number nobody prints is a hope.
+ *
+ *   node scripts/audit-pt-coverage.mjs
+ *   node scripts/audit-pt-coverage.mjs --json
+ */
+import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { join } from "node:path";
+
+const JSON_OUT = process.argv.includes("--json");
+
+/* ---------------------------------------------------------------- products ------ */
+
+const productDir = "content/products";
+const products = readdirSync(productDir)
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => JSON.parse(readFileSync(join(productDir, f), "utf8")))
+  .filter((p) => !(p.sites ?? []).length || (p.sites ?? []).includes("hyde"));
+
+/**
+ * The fields a product needs per locale. `specs` counts as one field rather than per row:
+ * a record either has a translated spec table or it does not, and counting eight rows
+ * eight times would make the percentage a function of how chatty a record is.
+ */
+const PRODUCT_FIELDS = ["name", "summary", "specs", "seoTitle", "seoDescription"];
+
+function localeSuffix(field, suffix) {
+  return `${field}${suffix}`;
+}
+
+function countRecords(records, fields, suffix) {
+  let present = 0;
+  let total = 0;
+  const missingByField = {};
+  for (const record of records) {
+    for (const field of fields) {
+      total += 1;
+      const value = record[localeSuffix(field, suffix)];
+      const filled = Array.isArray(value) ? value.length > 0 : Boolean(value);
+      if (filled) present += 1;
+      else missingByField[field] = (missingByField[field] ?? 0) + 1;
+    }
+  }
+  return { present, total, missingByField };
+}
+
+/* -------------------------------------------------------------------- news ------ */
+
+const newsDir = "content/news";
+const news = readdirSync(newsDir)
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => JSON.parse(readFileSync(join(newsDir, f), "utf8")));
+
+const NEWS_FIELDS = ["title", "summary", "body", "seoTitle", "seoDescription"];
+
+/* ------------------------------------------------------------------ routes ------ */
+
+/**
+ * Route parity, counted from the filesystem rather than from a list.
+ *
+ * A list of "pages we have translated" is a document that goes stale the first time
+ * somebody adds a route. The directory is the truth.
+ */
+function routeCount(root) {
+  if (!existsSync(root)) return 0;
+  let n = 0;
+  const walk = (dir) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) walk(path);
+      else if (entry.name === "page.tsx") n += 1;
+    }
+  };
+  walk(root);
+  return n;
+}
+
+const esRoutes = routeCount("src/app/es");
+const ptRoutes = routeCount("src/app/pt") + routeCount("src/app/(en)/pt");
+
+/* ------------------------------------------------------------------ report ------ */
+
+const productEs = countRecords(products, PRODUCT_FIELDS, "Es");
+const productPt = countRecords(products, PRODUCT_FIELDS, "Pt");
+const newsEs = countRecords(news, NEWS_FIELDS, "Es");
+const newsPt = countRecords(news, NEWS_FIELDS, "Pt");
+
+const pct = (a, b) => (b === 0 ? 0 : Math.round((a / b) * 100));
+
+const report = {
+  products: {
+    records: products.length,
+    es: { ...productEs, percent: pct(productEs.present, productEs.total) },
+    pt: { ...productPt, percent: pct(productPt.present, productPt.total) },
+  },
+  news: {
+    records: news.length,
+    es: { ...newsEs, percent: pct(newsEs.present, newsEs.total) },
+    pt: { ...newsPt, percent: pct(newsPt.present, newsPt.total) },
+  },
+  routes: { es: esRoutes, pt: ptRoutes, percent: pct(ptRoutes, esRoutes) },
+};
+
+if (JSON_OUT) {
+  console.log(JSON.stringify(report, null, 2));
+} else {
+  console.log("Portuguese coverage, against Spanish as the finished benchmark\n");
+  console.log(
+    `  product records   ${products.length}   ES ${report.products.es.percent}%   PT ${report.products.pt.percent}%`,
+  );
+  console.log(
+    `  news articles     ${news.length}    ES ${report.news.es.percent}%   PT ${report.news.pt.percent}%`,
+  );
+  console.log(
+    `  routes            ES ${esRoutes} pages, PT ${ptRoutes} pages   (${report.routes.percent}%)`,
+  );
+
+  const missing = Object.entries(productPt.missingByField).sort((a, b) => b[1] - a[1]);
+  if (missing.length) {
+    console.log("\n  product fields still falling back to English:");
+    for (const [field, n] of missing) console.log(`    ${String(n).padStart(4)}  ${field}Pt`);
+  }
+  const missingNews = Object.entries(newsPt.missingByField).sort((a, b) => b[1] - a[1]);
+  if (missingNews.length) {
+    console.log("\n  news fields still falling back to English:");
+    for (const [field, n] of missingNews) console.log(`    ${String(n).padStart(4)}  ${field}Pt`);
+  }
+  console.log(
+    "\n  ⚠ An English fallback renders correctly and reads as unfinished, which is the point.\n" +
+      "    Spanish would read as finished and be wrong — see the note in src/lib/localised.ts.",
+  );
+}

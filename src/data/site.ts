@@ -59,17 +59,19 @@ export const siteName = "Canton Hyland";
 export const legalName = siteSettings.legalName;
 
 /** Locale routing. The Spanish site is a PARTIAL mirror — see hasSpanishMirror below. */
-export const locales = ["en", "es"] as const;
+export const locales = ["en", "es", "pt"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultTitle: Record<Locale, string> = {
   en: "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
   es: "Canton Hyland — Fabricante de barras antipánico y herrajes",
+  pt: "Canton Hyland — Fabricante de barras antipânico e ferragens",
 };
 
 export const defaultDescription: Record<Locale, string> = {
   en: "Chinese manufacturer of panic exit devices, mortise locks, lever handles, hinges and architectural door hardware. ISO 9001 certified, exporting to 30+ markets.",
   es: "Fabricante chino de barras antipánico, cerraduras de embutir, manillas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
+  pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
 };
 
 /** Absolute URL helper — path must start with "/". */

@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { localised } from "@/lib/localised";
 
 /**
  * A rail of columns, sitting directly under the flagship pair.
@@ -55,7 +56,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
           {columns.map((column) => (
             <Link
               key={column.id}
-              href={column.href[locale]}
+              href={localised(column.href, locale)}
               className="hard-shadow-card group flex w-[82%] min-w-[82%] flex-none snap-start flex-col bg-surface sm:w-auto sm:min-w-0"
             >
               <MediaPlaceholder
@@ -66,10 +67,10 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
               />
               <div className="flex flex-1 flex-col border-t border-line p-24">
                 <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                  {column.eyebrow[locale]}
+                  {localised(column.eyebrow, locale)}
                 </p>
-                <h3 className="title-marker mt-12 text-h3 text-ink">{column.title[locale]}</h3>
-                <p className="mt-16 text-c1 text-ink-secondary">{column.body[locale]}</p>
+                <h3 className="title-marker mt-12 text-h3 text-ink">{localised(column.title, locale)}</h3>
+                <p className="mt-16 text-c1 text-ink-secondary">{localised(column.body, locale)}</p>
                 {/*
                   The counted fact sits on the border above the call to action, where a
                   spec table would put it — a number is the reason to read the column, not
@@ -77,11 +78,11 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                 */}
                 {column.figure ? (
                   <p className="mt-24 border-t border-line pt-16 text-c2 tabular-nums text-ink">
-                    {column.figure[locale]}
+                    {localised(column.figure, locale)}
                   </p>
                 ) : null}
                 <p className="mt-auto pt-24">
-                  <ArrowLink href={column.href[locale]}>{featureColumnsCta(locale)}</ArrowLink>
+                  <ArrowLink href={localised(column.href, locale)}>{featureColumnsCta(locale)}</ArrowLink>
                 </p>
                 {/*
                   The take-away file, under the reading rather than above it. A form
@@ -89,7 +90,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                   after it, it is the next step the article just described.
                 */}
                 {column.extra ? (
-                  <p className="mt-8 text-c2 text-ink-secondary">{column.extra[locale]}</p>
+                  <p className="mt-8 text-c2 text-ink-secondary">{localised(column.extra, locale)}</p>
                 ) : null}
               </div>
             </Link>

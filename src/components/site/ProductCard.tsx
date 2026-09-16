@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { cardFigure } from "@/lib/card-figure";
+import { localised } from "@/lib/localised";
 
 interface ProductCardProps {
   /* The narrow shape, not the full record: this card reads a dozen fields and a full
@@ -32,7 +33,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
     precomputed `figure` instead precisely so the spec arrays stay out of the bundle.
     Prefer the live specs when they are here; fall back to what the build worked out.
   */
-  const figure = cardFigure(product as Partial<Product>, locale) ?? product.figure?.[locale];
+  const figure = cardFigure(product as Partial<Product>, locale) ?? (product.figure ? localised(product.figure, locale) : undefined);
   const heroImage = {
     ...product.heroImage,
     label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,

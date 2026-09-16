@@ -43,6 +43,16 @@ const COPY = {
     models: (n: number) => (n === 1 ? "1 modelo" : `${n} modelos`),
     notPublished: "ninguno publicado",
   },
+  pt: {
+    codeHead: "Código",
+    meaningHead: "Significado",
+    modelsHead: "Modelos",
+    exampleHead: "Exemplo",
+    unknown: "Por confirmar — consulte-nos",
+    none: "—",
+    models: (n: number) => (n === 1 ? "1 modelo" : `${n} modelos`),
+    notPublished: "nenhum publicado",
+  },
 } as const;
 
 interface Row {
@@ -159,6 +169,11 @@ const TITLES = {
     finish: "Códigos de acabado",
     fn: "Códigos de función",
     door: "Configuración de puerta",
+  },
+  pt: {
+    finish: "Códigos de acabamento",
+    fn: "Códigos de função",
+    door: "Configuração de porta",
   },
 } as const;
 

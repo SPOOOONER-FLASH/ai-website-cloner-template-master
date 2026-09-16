@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
+import { localised } from "@/lib/localised";
 import {
   notShownByCategory,
   notShownModels,
@@ -26,7 +27,7 @@ import {
  * reference page is the specific thing that makes a reader stop trusting it. Grouping
  * says the same thing once and lets the rows be what they are: a list of numbers.
  */
-const REASONS: Record<MergeReason, { en: [string, string]; es: [string, string] }> = {
+const REASONS: Record<MergeReason, Partial<Record<Locale, [string, string]>> & { en: [string, string] }> = {
   "renamed-to-match-type": {
     en: [
       "Renamed to match the specification",
@@ -99,6 +100,22 @@ const COPY = {
       "Van escritos como texto y no como enlaces a propósito: la página de cada uno todavía no tiene fotografía, y mandarle a una página en blanco no es una respuesta.",
     ask: "Consultar un número de modelo",
   },
+  pt: {
+    renamedTitle: "Fichas renomeadas",
+    renamedIntro:
+      "A peça não mudou; mudou o seu nome, para que o nome e a ficha técnica coincidam. Todos os endereços antigos continuam a funcionar: devolvem um redireccionamento permanente para a página indicada ao lado, por isso um link de um e-mail antigo continua a servir.",
+    oldAddress: "Endereço antigo",
+    nowCalled: "Agora",
+    retiredTitle: "Rotas de catálogo retiradas",
+    retiredIntro: "Retirou-se uma categoria inteira e tudo o que continha foi transferido.",
+    movedProducts: (n: number) => (n === 1 ? "1 produto transferido" : `${n} produtos transferidos`),
+    notShownTitle: "No catálogo, não no site",
+    notShownIntro: (n: number) =>
+      `${n} modelos estão no catálogo e não têm fotografia publicada, por isso o site não os lista. Não estão descontinuados — não usamos essa palavra para um produto que continuamos a fabricar. Envie-nos o número de modelo e mandamos a fotografia e a ficha técnica.`,
+    notShownNote:
+      "Estão escritos como texto e não como links de propósito: a página de cada um ainda não tem fotografia, e mandá-lo para uma página em branco não é uma resposta.",
+    ask: "Consultar um número de modelo",
+  },
 } as const;
 
 export function ModelLookup({ locale }: { locale: Locale }) {
@@ -117,7 +134,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
         {REASON_ORDER.map((reason) => {
           const group = renamedRecords.filter((record) => record.reason === reason);
           if (!group.length) return null;
-          const [heading, explanation] = REASONS[reason][locale];
+          const [heading, explanation] = localised(REASONS[reason], locale);
 
           return (
             <div key={reason} className="mt-48 first:mt-32">

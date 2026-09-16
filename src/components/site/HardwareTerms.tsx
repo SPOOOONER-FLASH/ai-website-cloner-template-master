@@ -47,6 +47,16 @@ const COPY = {
     notPublished: "un término, no una fila de ficha",
     read: "Leer más",
   },
+  pt: {
+    groups: {
+      dimensions: "Cotas",
+      mechanism: "Mecanismo",
+      ordering: "Pedido e evidência",
+    },
+    models: (n: number) => (n === 1 ? "1 modelo indica-a" : `${n} modelos indicam-na`),
+    notPublished: "um termo, não uma linha de ficha",
+    read: "Ler mais",
+  },
 } as const;
 
 export function HardwareTerms({ locale }: { locale: Locale }) {

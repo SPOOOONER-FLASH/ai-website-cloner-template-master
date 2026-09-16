@@ -33,15 +33,15 @@ import type { Locale } from "./site";
 
 export interface FeatureColumn {
   id: string;
-  href: { en: string; es: string };
-  eyebrow: { en: string; es: string };
-  title: { en: string; es: string };
-  body: { en: string; es: string };
+  href: { en: string; es: string; pt?: string };
+  eyebrow: { en: string; es: string; pt?: string };
+  title: { en: string; es: string; pt?: string };
+  body: { en: string; es: string; pt?: string };
   /** One counted fact, or undefined when the catalogue cannot support one. */
-  figure?: { en: string; es: string };
+  figure?: { en: string; es: string; pt?: string };
   image: { src: string; label: string; labelEs: string };
   /** An optional second action — a file to take away, shown under the main link. */
-  extra?: { href: string; en: string; es: string };
+  extra?: { href: string; en: string; es: string; pt?: string };
 }
 
 /** Products whose own record says they can be keyed alike or master keyed. */
