@@ -89,8 +89,28 @@ export function SiteHeader({ current = "", locale = "zh" }: { current?: string; 
   const items = navItems(locale);
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-line)] bg-white/95 backdrop-blur">
-      <Shell className="flex h-16 items-center justify-between gap-6 md:h-20">
-        <Mark locale={locale} />
+      <Shell className="md:flex md:h-20 md:items-center md:justify-between md:gap-6">
+        {/*
+          MOBILE: two rows, not one wrapped one. 2026-09-16: 「移动端布局设计排版 现在的好丑」,
+          with a screenshot of it — the five links, the search button and EN all flowed into
+          the space left of the right edge, wrapped to a second line ragged-right, and the
+          search circle sat half off the screen.
+
+          A row that wraps is not a layout; it is what is left when there isn't one. So: the
+          mark and the two controls share the top row, and the links get a row of their own
+          across the full width. `overflow-x-auto` rather than a second wrap, because six
+          items at 13px fit 360px and a seventh should scroll rather than reflow the header.
+          The bleed to the shell's own 20px padding lets the scrolled row run edge to edge
+          instead of appearing to stop short.
+        */}
+        <div className="flex h-16 items-center justify-between gap-4 md:h-auto md:gap-6">
+          <Mark locale={locale} />
+          <div className="flex items-center gap-4 md:hidden">
+            <SearchBox locale={locale} />
+            <LocaleSwitch locale={locale} />
+          </div>
+        </div>
+
         <nav aria-label={STRINGS[locale].nav.products} className="hidden items-center gap-7 md:flex">
           {items.map((item) => (
             <a
@@ -105,24 +125,21 @@ export function SiteHeader({ current = "", locale = "zh" }: { current?: string; 
           <SearchBox locale={locale} />
           <LocaleSwitch locale={locale} />
         </nav>
-        {/*
-          Mobile gets the same links wrapped onto a second row rather than a drawer.
-          A drawer is one more tap and one more thing to build; short labels fit across
-          two rows at 360px.
-        */}
-        <nav aria-label={STRINGS[locale].nav.products} className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 md:hidden">
+
+        <nav
+          aria-label={STRINGS[locale].nav.products}
+          className="-mx-5 flex items-center gap-6 overflow-x-auto px-5 pb-2.5 [scrollbar-width:none] md:hidden [&::-webkit-scrollbar]:hidden"
+        >
           {items.map((item) => (
             <a
               key={item.href}
               href={localePath(locale, item.href)}
               data-current={current === item.href}
-              className="navlink text-[13px]"
+              className="navlink whitespace-nowrap text-[14px]"
             >
               {item.label}
             </a>
           ))}
-          <SearchBox locale={locale} />
-          <LocaleSwitch locale={locale} />
         </nav>
       </Shell>
     </header>
@@ -151,7 +168,23 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
       <Shell className="py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <p className="latin text-[20px] tracking-[0.2em] text-[var(--color-ink)]">RAYEN</p>
+            {/*
+              The real mark, not the letters typed out. 2026-09-16: 「这个标可以大点，换成我们的
+              logo」. It was a <p> of capitals with letter-spacing — close enough to read as the
+              brand and wrong in every detail that makes a mark a mark, and on the Chinese site
+              it dropped 雷茵 entirely, which is the half a Chinese buyer searches for.
+
+              Same file and same per-language choice as the header, at roughly double its height:
+              the header mark shares a 64px bar with five links, the footer's has a column to
+              itself and is the first thing the eye lands on down there.
+            */}
+            {/* eslint-disable-next-line @next/next/no-img-element -- static export, no optimiser */}
+            <img
+              src={locale === "zh" ? "/images/rayen/logo.webp" : "/images/rayen/logo-latin.webp"}
+              alt={locale === "zh" ? "RAYEN 雷茵" : "RAYEN"}
+              {...intrinsicSize(locale === "zh" ? "/images/rayen/logo.webp" : "/images/rayen/logo-latin.webp")}
+              className="h-12 w-auto md:h-14"
+            />
             <p className="mt-2 text-[15px] text-[var(--color-ink)]">{legalName}</p>
             <p className="mt-4 max-w-[38ch] text-[14px] leading-relaxed">{positioning}</p>
           </div>

@@ -1,0 +1,943 @@
+{
+  "_readme": [
+    "凯撒系列（Kaiser Series），甲方《雷茵五金》图册 p12–p31。",
+    "",
+    "和意式那批同一条流水线：印刷版每页是一张 5031×3437 的整页栅格，没有可直接取出的",
+    "嵌入素材，主图 / 尺寸图 / 各表面色样都由 tmp 的 cut.mjs 按墨迹边界自动裁切。",
+    "这一轮把裁切参数也改成自测量的 —— 凯撒的规格栏是中英双语、比意式宽，",
+    "写死一个常数必有一个系列是错的。",
+    "",
+    "两页各含两个型号：p19 是 KA9-9930（光面）和 KA9-9929（包皮），",
+    "p20 是 KA9-9941（光面）和 KA9-9942（包皮）。图册给这两对共用一张主图和一张尺寸图，",
+    "差别只在握把的包覆，所以两边共用那两张图，色样各取自己那一半 —— 与书上一致。",
+    "",
+    "KA5-2007 那一页把规格栏放在主图右侧、Finishes 分隔线之上，不在网格下面 ——",
+    "自动检测因此找不到它，主图还把中文规格块裁了进去。那一页在 panels.json 里",
+    "写了显式坐标，理由记在 cut.mjs 里：32 个面板里只有这一个不守版式。",
+    "",
+    "方形座写成「面板尺寸 52 × 52mm」，圆形座写成「圆盖直径 Ø52mm」，都用现成的词条，",
+    "不为一个形状新造一个标签。",
+    "",
+    "表面处理的英文名是我们起的：图册只印代号（DBN、COF、GCF）和中文名，没有英文。",
+    "代号是买家真正下单用的东西，所以记录里保留代号对应的中文原名。",
+    "「黑镍/棕皮」这类金属加皮革的双材质表面，色板会拆开两边各取一个颜色 ——",
+    "整串去匹配只会命中「黑镍」，给一支棕色皮革握把画一个深灰点，比不画更糟。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-catalogue-kaiser",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [],
+  "models": [
+    {
+      "model": "KA82-9902",
+      "slug": "ka82-9902-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel / Brown Leather",
+        "Polished Chrome / Black Leather",
+        "Matt Black / Black Leather"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "155mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA82-9903",
+      "slug": "ka82-9903-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Black Nickel",
+        "Polished Chrome"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "148mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-2007",
+      "slug": "ka5-2007-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Brushed Satin Nickel",
+        "Zirconium Gold",
+        "Antique Bronze",
+        "Antique Yellow Brass",
+        "White",
+        "Red",
+        "Grey"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "157mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-A012",
+      "slug": "ka5-a012-door-knob",
+      "name": "Door Knob",
+      "nameZh": "旋钮锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Brushed Nickel / Polished Chrome",
+        "Matt Black",
+        "Brushed Rose Gold",
+        "Brushed Satin Nickel",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Plate size",
+          "value": "54 × 80mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-A011",
+      "slug": "ka5-a011-door-knob",
+      "name": "Door Knob",
+      "nameZh": "旋钮锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black / Brown Leather",
+        "Brushed Black Nickel / Brown Leather",
+        "Brushed Light Gold / Brown Leather",
+        "Polished Chrome / Brown Leather"
+      ],
+      "specs": [
+        {
+          "label": "Plate size",
+          "value": "54 × 80mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-9936",
+      "slug": "ka5-9936-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Light Gold",
+        "Brushed Black Nickel",
+        "Brushed Satin Nickel",
+        "Matt Black",
+        "Brushed Rose Gold",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "139mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA87-9931",
+      "slug": "ka87-9931-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Satin Nickel",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "139mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9930",
+      "slug": "ka9-9930-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Light Gold",
+        "Black Nickel",
+        "Matt Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "144mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9929",
+      "slug": "ka9-9929-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel / Brown Leather",
+        "Matt Nickel / Black Leather",
+        "Black Nickel / Tan Leather"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "144mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9942",
+      "slug": "ka9-9942-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel / Brown Leather",
+        "Matt Black / Black Leather",
+        "Brushed Rose Gold / Black Leather"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "151mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9941",
+      "slug": "ka9-9941-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel",
+        "Zirconium Gold",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "151mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9933",
+      "slug": "ka9-9933-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Satin Nickel",
+        "Matt Black",
+        "Brushed Black Nickel",
+        "White",
+        "Red"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-916",
+      "slug": "ka5-916-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Antique Yellow Brass",
+        "Matt Black",
+        "Brushed Satin Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "168mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-9919",
+      "slug": "ka5-9919-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Brushed Satin Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "156mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9920",
+      "slug": "ka9-9920-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Brushed Satin Nickel",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "156mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9924",
+      "slug": "ka9-9924-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Antique Yellow Brass",
+        "Brushed Satin Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-855",
+      "slug": "ka5-855-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Satin Nickel",
+        "Brushed Light Gold",
+        "Matt Black / Polished Chrome"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "141mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-9911",
+      "slug": "ka5-9911-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel",
+        "Matt Black",
+        "Matt Black / Wood Grain",
+        "Polished Chrome / Wood Grain"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-9911B",
+      "slug": "ka5-9911b-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel / Brown Leather",
+        "Polished Chrome / Black Leather"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "141mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA5-9922",
+      "slug": "ka5-9922-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Light Gold / Orange Leather",
+        "Brushed Black Nickel / Brown Leather",
+        "Polished Chrome / Black Leather"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "138mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-2004",
+      "slug": "ka9-2004-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Brushed Satin Nickel",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9906",
+      "slug": "ka9-9906-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel / Matt Black",
+        "Zirconium Gold / Matt Black",
+        "Polished Chrome / Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "138mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-2005",
+      "slug": "ka9-2005-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Black Nickel",
+        "Matt Black",
+        "Brushed Satin Nickel",
+        "Antique Yellow Brass",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "157mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "48 × 48mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "KA9-9918",
+      "slug": "ka9-9918-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Antique Bronze",
+        "Brushed Satin Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "157mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    }
+  ]
+}

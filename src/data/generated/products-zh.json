@@ -14250,7 +14250,7 @@
         },
         {
           "label": "钥匙类型",
-          "value": "Nickel-plated brass, solid brass, brushed nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -14419,7 +14419,7 @@
         },
         {
           "label": "钥匙类型",
-          "value": "Nickel-plated brass, solid brass, brushed nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -14591,7 +14591,7 @@
         },
         {
           "label": "钥匙选项",
-          "value": "Nickel-Plated Brass, Solid Brass, Brushed Nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -14768,7 +14768,7 @@
         },
         {
           "label": "钥匙选项",
-          "value": "Nickel-Plated Brass, Solid Brass, Brushed Nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -14930,7 +14930,7 @@
         },
         {
           "label": "钥匙选项",
-          "value": "Nickel-Plated Brass, Solid Brass, Brushed Nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -15086,7 +15086,7 @@
         },
         {
           "label": "钥匙类型",
-          "value": "Nickel-plated brass, solid brass, brushed nickel"
+          "value": "镀镍 黄铜, 实心黄铜, 镍拉丝"
         }
       ],
       "material": "不锈钢",
@@ -15761,7 +15761,7 @@
         },
         {
           "label": "钥匙选项",
-          "value": "Iron, nickel-plated brass, solid brass, brushed nickel"
+          "value": "铁, 镀镍 黄铜, 实心黄铜, 镍拉丝"
         },
         {
           "label": "圆盖直径",
@@ -16564,7 +16564,7 @@
         },
         {
           "label": "钥匙选项",
-          "value": "Iron, nickel-plated brass, solid brass, brushed nickel"
+          "value": "铁, 镀镍 黄铜, 实心黄铜, 镍拉丝"
         },
         {
           "label": "圆盖直径",
@@ -67155,6 +67155,2930 @@
         "doorTypes": [],
         "seoTitle": "JU-093 Door Closer",
         "seoDescription": "Aluminum door closer."
+      }
+    },
+    {
+      "slug": "ka5-2007-lever-handle",
+      "model": "KA5-2007",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "157mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "哑光镍拉丝",
+        "锆金",
+        "青古铜",
+        "黄古铜",
+        "白色",
+        "红色",
+        "灰色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-2007-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-2007 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 8 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-9.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 9 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-10.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 10 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-2007-lever-handle-11.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-2007 执手锁 第 11 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-2007 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "157mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel",
+          "Zirconium Gold",
+          "Antique Bronze",
+          "Antique Yellow Brass",
+          "White",
+          "Red",
+          "Grey"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-2007 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-855-lever-handle",
+      "model": "KA5-855",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "141mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "哑光镍拉丝",
+        "淡金拉丝",
+        "哑黑 / 亮铬"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-855-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-855 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-855-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-855 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-855-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-855 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-855-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-855 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-855-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-855 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-855-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-855 执手锁 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-855 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "141mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold",
+          "Matt Black / Polished Chrome"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-855 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-916-lever-handle",
+      "model": "KA5-916",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "168mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝",
+        "黄古铜",
+        "哑黑",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-916-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-916 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-916-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-916 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-916-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-916 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-916-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-916 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-916-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-916 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-916-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-916 执手锁 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-916 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "168mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel",
+          "Antique Yellow Brass",
+          "Matt Black",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-916 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-9911-lever-handle",
+      "model": "KA5-9911",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "134mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍",
+        "哑黑",
+        "哑黑 / 木纹",
+        "亮铬 / 木纹"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-9911-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-9911 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-9911-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911 执手锁 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-9911 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "134mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel",
+          "Matt Black",
+          "Matt Black / Wood Grain",
+          "Polished Chrome / Wood Grain"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-9911 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-9911b-lever-handle",
+      "model": "KA5-9911B",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "141mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝 / 棕皮",
+        "亮铬 / 黑皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-9911b-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-9911B 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-9911b-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911B 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911b-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911B 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9911b-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9911B 执手锁 第 4 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-9911B 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "141mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel / Brown Leather",
+          "Polished Chrome / Black Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-9911B Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-9919-lever-handle",
+      "model": "KA5-9919",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "156mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-9919-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-9919 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-9919-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9919 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9919-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9919 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9919-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9919 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9919-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9919 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-9919 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "156mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-9919 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-9922-lever-handle",
+      "model": "KA5-9922",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "138mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "淡金拉丝 / 橘皮",
+        "黑镍拉丝 / 棕皮",
+        "亮铬 / 黑皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-9922-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-9922 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-9922-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9922 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9922-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9922 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9922-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9922 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9922-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9922 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-9922 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "138mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Light Gold / Orange Leather",
+          "Brushed Black Nickel / Brown Leather",
+          "Polished Chrome / Black Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-9922 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-9936-lever-handle",
+      "model": "KA5-9936",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "139mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "淡金拉丝",
+        "黑镍拉丝",
+        "哑光镍拉丝",
+        "哑黑",
+        "玫瑰金拉丝",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-9936-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-9936 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-9936-lever-handle-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-9936 执手锁 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-9936 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "139mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Light Gold",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel",
+          "Matt Black",
+          "Brushed Rose Gold",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-9936 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-a011-door-knob",
+      "model": "KA5-A011",
+      "name": "旋钮锁",
+      "nameEn": "Door Knob",
+      "series": "旋钮锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金旋钮锁。面板尺寸 54 × 80mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "54 × 80mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑 / 棕皮",
+        "黑镍拉丝 / 棕皮",
+        "淡金拉丝 / 棕皮",
+        "亮铬 / 棕皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-a011-door-knob.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-A011 旋钮锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-a011-door-knob-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A011 旋钮锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a011-door-knob-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A011 旋钮锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a011-door-knob-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A011 旋钮锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a011-door-knob-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A011 旋钮锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a011-door-knob-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A011 旋钮锁 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-A011 旋钮锁",
+      "seoDescription": "锌合金旋钮锁。面板尺寸 54 × 80mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Door Knob",
+        "series": "Door Knob",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy door knob. Plate size 54 × 80mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "54 × 80mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black / Brown Leather",
+          "Brushed Black Nickel / Brown Leather",
+          "Brushed Light Gold / Brown Leather",
+          "Polished Chrome / Brown Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-A011 Door Knob",
+        "seoDescription": "Zinc Alloy door knob. Plate size 54 × 80mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka5-a012-door-knob",
+      "model": "KA5-A012",
+      "name": "旋钮锁",
+      "nameEn": "Door Knob",
+      "series": "旋钮锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金旋钮锁。面板尺寸 54 × 80mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "54 × 80mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝",
+        "镍拉丝 / 亮铬",
+        "哑黑",
+        "玫瑰金拉丝",
+        "哑光镍拉丝",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka5-a012-door-knob.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA5-A012 旋钮锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 7 张"
+        },
+        {
+          "src": "/images/products-rayen/ka5-a012-door-knob-8.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA5-A012 旋钮锁 第 8 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA5-A012 旋钮锁",
+      "seoDescription": "锌合金旋钮锁。面板尺寸 54 × 80mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Door Knob",
+        "series": "Door Knob",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy door knob. Plate size 54 × 80mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "54 × 80mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel",
+          "Brushed Nickel / Polished Chrome",
+          "Matt Black",
+          "Brushed Rose Gold",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA5-A012 Door Knob",
+        "seoDescription": "Zinc Alloy door knob. Plate size 54 × 80mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka82-9902-lever-handle",
+      "model": "KA82-9902",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "155mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍 / 棕皮",
+        "亮铬 / 黑皮",
+        "哑黑 / 黑皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka82-9902-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA82-9902 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka82-9902-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9902 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9902-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9902 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9902-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9902 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9902-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9902 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA82-9902 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "155mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel / Brown Leather",
+          "Polished Chrome / Black Leather",
+          "Matt Black / Black Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA82-9902 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka82-9903-lever-handle",
+      "model": "KA82-9903",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "148mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍",
+        "亮铬"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka82-9903-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA82-9903 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka82-9903-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9903 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9903-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9903 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9903-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9903 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka82-9903-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA82-9903 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA82-9903 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "148mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø50mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Black Nickel",
+          "Polished Chrome"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA82-9903 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka87-9931-lever-handle",
+      "model": "KA87-9931",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "139mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "哑光镍拉丝",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka87-9931-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA87-9931 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka87-9931-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA87-9931 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka87-9931-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA87-9931 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka87-9931-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA87-9931 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka87-9931-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA87-9931 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA87-9931 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "139mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA87-9931 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-2004-lever-handle",
+      "model": "KA9-2004",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "130mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝",
+        "哑光镍拉丝",
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-2004-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-2004 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-2004-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2004 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2004-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2004 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2004-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2004 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2004-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2004 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-2004 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "130mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel",
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-2004 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-2005-lever-handle",
+      "model": "KA9-2005",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 48 × 48mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "157mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "48 × 48mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍",
+        "哑黑",
+        "哑光镍拉丝",
+        "黄古铜",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-2005-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-2005 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-2005-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-2005 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-2005 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 48 × 48mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 48 × 48mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "157mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "48 × 48mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel",
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "Antique Yellow Brass",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-2005 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 48 × 48mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9906-lever-handle",
+      "model": "KA9-9906",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "138mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝 / 哑黑",
+        "锆金 / 哑黑",
+        "亮铬 / 哑黑"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9906-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9906 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9906-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9906 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9906-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9906 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9906-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9906 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9906-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9906 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9906 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "138mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel / Matt Black",
+          "Zirconium Gold / Matt Black",
+          "Polished Chrome / Matt Black"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9906 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9918-lever-handle",
+      "model": "KA9-9918",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "157mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝",
+        "青古铜",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9918-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9918 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9918-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9918 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9918-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9918 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9918-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9918 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9918-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9918 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9918 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "157mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel",
+          "Antique Bronze",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9918 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9920-lever-handle",
+      "model": "KA9-9920",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "156mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "哑光镍拉丝",
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9920-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9920 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9920-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9920 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9920-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9920 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9920-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9920 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9920-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9920 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9920-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9920 执手锁 第 6 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9920 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "156mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel",
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9920 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9924-lever-handle",
+      "model": "KA9-9924",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "134mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黄古铜",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9924-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9924 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9924-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9924 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9924-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9924 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9924-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9924 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9924-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9924 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9924 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "134mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Antique Yellow Brass",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9924 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9929-lever-handle",
+      "model": "KA9-9929",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "144mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍 / 棕皮",
+        "哑镍 / 黑皮",
+        "黑镍 / 驼皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9929-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9929 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9929-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9929 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9929-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9929 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9929-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9929 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9929-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9929 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9929 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "144mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel / Brown Leather",
+          "Matt Nickel / Black Leather",
+          "Black Nickel / Tan Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9929 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9930-lever-handle",
+      "model": "KA9-9930",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "144mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "淡金拉丝",
+        "黑镍",
+        "哑镍"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9930-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9930 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9930-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9930 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9930-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9930 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9930-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9930 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9930-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9930 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9930 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "144mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Light Gold",
+          "Black Nickel",
+          "Matt Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9930 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9933-lever-handle",
+      "model": "KA9-9933",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "134mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "52 × 52mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑光镍拉丝",
+        "哑黑",
+        "黑镍拉丝",
+        "白色",
+        "红色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9933-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9933 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9933-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9933 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9933 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 52 × 52mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "134mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "52 × 52mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Satin Nickel",
+          "Matt Black",
+          "Brushed Black Nickel",
+          "White",
+          "Red"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9933 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 52 × 52mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9941-lever-handle",
+      "model": "KA9-9941",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 53 × 53mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "151mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍",
+        "锆金",
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9941-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9941 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9941-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9941 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9941-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9941 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9941-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9941 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9941-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9941 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9941 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 53 × 53mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 53 × 53mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "151mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "53 × 53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel",
+          "Zirconium Gold",
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9941 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 53 × 53mm, door thickness 38-50mm."
+      }
+    },
+    {
+      "slug": "ka9-9942-lever-handle",
+      "model": "KA9-9942",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 53 × 53mm，适用门厚 38-50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "151mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍 / 棕皮",
+        "哑黑 / 黑皮",
+        "玫瑰金拉丝 / 黑皮"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/ka9-9942-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 KA9-9942 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/ka9-9942-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9942 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9942-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9942 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9942-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9942 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/ka9-9942-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 KA9-9942 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "KA9-9942 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 53 × 53mm，适用门厚 38-50mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 53 × 53mm, door thickness 38-50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "151mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "53 × 53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "8550 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Nickel / Brown Leather",
+          "Matt Black / Black Leather",
+          "Brushed Rose Gold / Black Leather"
+        ],
+        "doorTypes": [],
+        "seoTitle": "KA9-9942 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 53 × 53mm, door thickness 38-50mm."
       }
     },
     {
