@@ -37,6 +37,15 @@ const PLATE = 1000;
 const PRODUCTS = "content/products";
 
 const [slug, directory] = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
+/*
+  `--append` adds views to a record that already has a photograph, instead of replacing it.
+
+  The default replaces, because the first use was a withheld model with no hero at all.
+  308 is the other case and it is the commoner one: the record already carries a good
+  branded plate and the client has sent more views of the same part. Overwriting the hero
+  there would demote a photograph somebody already approved.
+*/
+const append = process.argv.includes("--append");
 
 if (!slug || !directory) {
   console.error("Usage: node scripts/import-product-photos.mjs <slug> <source-directory>");
@@ -80,9 +89,26 @@ async function fieldColour(input) {
 
 const written = [];
 
+/* Continue the numbering where the record stops, so nothing already published is replaced. */
+/*
+  ⚠ THE FIELD IS `gallery`, NOT `images`.
+
+  The first version of this script wrote `record.images`. Nothing errored, no test failed,
+  and the record looked right in the JSON — but src/data/products.ts reads
+  `product.gallery`, so the extra photographs simply never reached a page. 6068 shipped
+  that way on 2026-09-15 with its second photograph invisible, and it was only caught by
+  grepping the built HTML for the filename rather than trusting the record.
+
+  Worth remembering as a shape: a wrong field name in content is silent at every layer —
+  the writer succeeds, the type is optional, the renderer reads undefined and draws
+  nothing. Check the built output, not the input.
+*/
+const startAt = append ? (record.gallery?.length ?? 0) + (record.heroImage?.src ? 1 : 0) : 0;
+
 for (const [index, file] of sources.entries()) {
   const input = join(directory, file);
-  const suffix = index === 0 ? "" : `-${index + 1}`;
+  const position = startAt + index;
+  const suffix = position === 0 ? "" : `-${position + 1}`;
   const publicPath = `/images/products/${slug}${suffix}.webp`;
   const target = `public${publicPath}`;
 
@@ -102,14 +128,25 @@ for (const [index, file] of sources.entries()) {
   );
 }
 
-const [hero, ...rest] = written;
-record.heroImage = { ...record.heroImage, src: hero };
-if (rest.length) {
-  record.images = rest.map((src, index) => ({
-    src,
-    ratio: "1 / 1",
-    label: `${record.heroImage.label ?? record.name}, view ${index + 2}`,
-  }));
+if (append) {
+  record.gallery = [
+    ...(record.gallery ?? []),
+    ...written.map((src, index) => ({
+      src,
+      ratio: "1 / 1",
+      label: `${record.heroImage?.label ?? record.name}, view ${startAt + index + 1}`,
+    })),
+  ];
+} else {
+  const [hero, ...rest] = written;
+  record.heroImage = { ...record.heroImage, src: hero };
+  if (rest.length) {
+    record.gallery = rest.map((src, index) => ({
+      src,
+      ratio: "1 / 1",
+      label: `${record.heroImage.label ?? record.name}, view ${index + 2}`,
+    }));
+  }
 }
 writeFileSync(recordPath, `${JSON.stringify(record, null, 2)}\n`);
 
