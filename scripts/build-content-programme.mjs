@@ -309,6 +309,37 @@ push("- **不动架构**（甲方 2026-09-15 定）");
 push();
 push("---");
 push();
+
+/* ---- what actually got written ---- */
+/*
+  Listed from content/news rather than typed here, so this section cannot claim an article
+  that does not exist — which is the failure mode of every content plan ever written.
+*/
+const batch = news
+  .filter((n) => (n.publishedAt ?? "") >= "2026-09-16")
+  .sort((a, b) => String(a.publishedAt).localeCompare(String(b.publishedAt)));
+
+push(`## 四之二、已经写完的 ${batch.length} 篇`);
+push();
+push("| 发布 | 标题 | 段数 | 点名型号 |");
+push("|---|---|---:|---|");
+for (const article of batch) {
+  push(
+    `| ${String(article.publishedAt).slice(0, 10)} | ${article.title} | ` +
+      `${(article.body ?? []).length} | ${(article.relatedModels ?? []).join(" · ")} |`,
+  );
+}
+push();
+push(
+  `长尾词未覆盖数从 **9 降到 ${uncovered.length}**。` +
+    "这个数字是上面第二节现算出来的，不是手写的 —— 它每次重跑都会自己更新。",
+);
+push();
+push("⚠ 剩下的 4 个之所以还在，理由在第二节的「落选」里：钢琴铰链等工厂确认记录，");
+push("钥匙分级表已经有文章。**不是漏了。**");
+push();
+push("---");
+push();
 push("## 五、怎么验收");
 push();
 push("发完之后不要马上看 Bing —— 索引和引用有滞后。");

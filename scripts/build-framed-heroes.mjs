@@ -91,6 +91,22 @@ const TARGETS = [
   */
   "projects/double-leaf-fire-door-set",
   "projects/panic-bar-with-outside-trim-set",
+  /*
+    The 2026-09-16 long-tail batch. Same reason as the 2026-09-14 five above: each hero is
+    a catalogue plate of a model the article names, taken from products-hyde/ so the framed
+    copy inherits the HYDE mark, and a 1:1 plate in a 16:9 frame loses 44% of its width.
+  */
+  "finish-codes-us26d-626-630",
+  "ul-305-is-a-listing-not-a-grade",
+  "rim-night-latch-564-and-1073",
+  "occupied-vacant-washroom-indicator-bolt",
+  "exit-device-push-bar-length",
+  /* The 2026-09-16 选品推荐 batch, over the 30 models the client named. Same rule. */
+  "choosing-a-cylindrical-lock-entrance-privacy-passage",
+  "euro-cylinder-range-45-to-90",
+  "lever-handle-range-lh852-lh853-lh855",
+  "stainless-lever-range-9007-9008-9014",
+  "deadbolt-d101-d102-and-the-rim-alternative",
 ];
 
 /**

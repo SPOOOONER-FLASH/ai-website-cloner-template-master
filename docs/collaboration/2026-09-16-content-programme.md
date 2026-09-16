@@ -73,19 +73,14 @@
 
 ## 二、第一批五篇：长尾技术文
 
-`north-america-longtail.json` 里 51 个词，31 个我们答得了。其中 **9 个在 24 篇文章里一次都没被写过**：
+`north-america-longtail.json` 里 51 个词，31 个我们答得了。其中 **4 个在 34 篇文章里一次都没被写过**：
 
 | 词 | 意图 | 归属页面 |
 |---|---|---|
-| `us26d vs 626 finish difference` | informational | article (to write) |
 | `fire rated panic bar 2.5 hours` | qualifying | /products/panic-exit-devices/307-panic-exit-device/ |
-| `en 1125 vs ul 305 panic hardware` | informational | content/news/en-1125-or-ansi-which-standard-your-project-needs |
-| `564 night latch dimensions` | transactional | /products/night-latches-rim-locks/ |
 | `ggmk gmk mk change key hierarchy` | informational | content/news/master-key-systems-how-many-levels-you-need |
 | `keying chart door schedule template` | informational | article (to write) |
-| `indicator bolt occupied vacant washroom` | transactional | /products/hardware-accessories/ |
 | `lock case 85mm centre 60mm backset` | transactional | /products/lock-cases/ |
-| `exit device 1000mm push bar` | transactional | /products/panic-exit-devices/307-panic-exit-device/ |
 
 再叠上 Search Console 三个月里**真实出现过**的查询（都是 1 次曝光 0 点击 ——
 意思是排名在第二页，不是没人搜）：
@@ -197,6 +192,28 @@ sa32806 panic hardware
 - **不为了 SEO 编数字**。这个站的信任是靠「不知道就写破折号」建起来的
 - **不抄别人的技术解释**。已经有来源的段落不会引用我们
 - **不动架构**（甲方 2026-09-15 定）
+
+---
+
+## 四之二、已经写完的 10 篇
+
+| 发布 | 标题 | 段数 | 点名型号 |
+|---|---|---:|---|
+| 2026-09-16 | Entrance, Privacy, Passage: Choosing Between Twelve Cylindrical Locks | 9 | 607 ACBK · 587 MBET · 5807 SSCL · 5870 ACET · 592 SSET |
+| 2026-09-16 | A 25mm Throw and a Collar That Spins: Deadbolts D101 and D102 | 9 | D101 DSPB · D102 AC · 564 · 1073D |
+| 2026-09-16 | 45 to 90: Reading Our Euro Cylinder Range | 8 | 70 SNDK · 80 SNKT · 45BN · 65SN |
+| 2026-09-16 | 650 to 1110mm: Which Push Bar Length Your Door Takes | 8 | 307 · 311 · 305 |
+| 2026-09-16 | US26D, 626, 630: A Finish Code Is Not a Colour | 9 | 5870 ACET · 607 SSET · 3431 SSET |
+| 2026-09-16 | 200,000 Cycles: What the LH Lever Range Is Actually Rated For | 9 | LH853 CPBK · LH852 SSET · LH855 SNET · 808 ABET · 6491 SSET |
+| 2026-09-16 | Occupied or Vacant: What a Washroom Indicator Actually Has to Do | 8 | 200 · 400 · 500 |
+| 2026-09-16 | The Rim Night Latch: What 564 and 1073 Actually Measure | 8 | 564 · 564 MB · 1073D · 1073S |
+| 2026-09-16 | Lever Length, Rose Diameter, Projection: The Stainless 9000 Levers | 8 | 9014 · 9007S · 9008S · 9008E |
+| 2026-09-16 | UL 305 Is a Listing, Not a Grade | 8 | 305 · 307 · 311 |
+
+长尾词未覆盖数从 **9 降到 4**。这个数字是上面第二节现算出来的，不是手写的 —— 它每次重跑都会自己更新。
+
+⚠ 剩下的 4 个之所以还在，理由在第二节的「落选」里：钢琴铰链等工厂确认记录，
+钥匙分级表已经有文章。**不是漏了。**
 
 ---
 
