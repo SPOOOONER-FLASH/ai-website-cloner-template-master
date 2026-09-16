@@ -27,6 +27,32 @@
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
 
 const OUT = "deploy/nginx/legacy-redirects.conf";
+const TAXONOMY = "deploy/nginx/taxonomy-redirects.conf";
+const check = process.argv.includes("--check");
+
+/**
+ * Legacy ids whose label cannot be matched to a product by rule.
+ *
+ * Without these the id falls through to `/products/`, which is the correct behaviour for
+ * a model we no longer make and the WRONG behaviour for a model we still sell under a
+ * label the matcher cannot read. Those two cases look identical in the unresolved list,
+ * so each one is decided here, once, with its reason.
+ *
+ * ⚠ An id that resolves to nothing and is not named here stops the run (see below).
+ * A blanket fallback would have hidden the first two of these indefinitely.
+ */
+const LEGACY_AID_OVERRIDES = {
+  /* Label "Lc04 85×60mm". The model is written "LC04 85*60" — a multiplication sign
+     against an asterisk, and a trailing "mm" the model does not carry. Still sold. */
+  205: "/products/lock-cases/lc04-85-60-lock-case/",
+  /* Label "72". The model is "072"; the matcher compares strings, so the leading zero
+     loses it. Still sold, as the exit-device lock case. */
+  381: "/products/panic-exit-devices/072-panic-exit-device-lock-case/",
+  /* Label "024". Its neighbours (aid 1607 "316-D", 1609 "016") are exit-device trims, and
+     there is no 024 in the catalogue — this one really is discontinued. The category is
+     the nearest true page; the generic hub would be a worse answer, not a safer one. */
+  1608: "/products/panic-exit-devices/",
+};
 
 /**
  * Legacy category ids, recovered from Bing Webmaster Tools' "duplicate titles" export on
@@ -71,9 +97,57 @@ const pairs = [];
 const unresolved = [];
 for (const e of entries) {
   const label = String(e.label ?? "").toLowerCase().trim();
-  const target = byKey.get(label) ?? byKey.get(label.split(/\s+/)[0]);
+  const target =
+    LEGACY_AID_OVERRIDES[e.aid] ?? byKey.get(label) ?? byKey.get(label.split(/\s+/)[0]);
   if (target) pairs.push([String(e.aid), target]);
   else unresolved.push(e);
+}
+
+/*
+  STOP RATHER THAN FALL BACK.
+
+  Every id here is a URL with years of ranking behind it. When one stops resolving, the
+  fallback sends it to `/products/` and the loss is invisible: the file still builds, the
+  server still answers 301, and nobody can tell a deliberate hub redirect from a product
+  whose slug changed under the matcher. That is what happened between 2026-09-07 and
+  today — two ids quietly stopped resolving during the exit-device renames.
+
+  AGENTS.md, 2026-09-11: when a default would be wrong rather than merely incomplete,
+  stop the run. Decide the id in LEGACY_AID_OVERRIDES above and say why.
+*/
+if (unresolved.length) {
+  throw new Error(
+    `${unresolved.length} legacy id(s) resolve to no page: ` +
+      unresolved.map((u) => `${u.aid} "${u.label}"`).join(", ") +
+      "\nAdd each to LEGACY_AID_OVERRIDES with the reason, or map its label to a product.",
+  );
+}
+
+/*
+  NO CHAINS.
+
+  `index.php?aid=397` pointed at `/products/panic-exit-devices/x2-panic-exit-device/`,
+  which taxonomy-redirects.conf then 301s to `…-x2-panic-exit-device-trim/`. Two hops.
+  It works, so nothing complained — but a chain dilutes what the first hop was built to
+  carry, and it only survives because the taxonomy entry happens to still exist. Prune
+  that entry and the legacy URL breaks outright.
+
+  Seventeen ids were in that state on 2026-09-15 — fifteen from the exit-device renames,
+  plus DS011 and the LC04 case. Regenerating fixes them; this guard is what stops it
+  happening again silently.
+*/
+const taxonomySources = new Set(
+  [...readFileSync(TAXONOMY, "utf8").matchAll(/^location = (\S+)/gm)].map((m) =>
+    m[1].endsWith("/") ? m[1] : `${m[1]}/`,
+  ),
+);
+const chained = pairs.filter(([, url]) => taxonomySources.has(url));
+if (chained.length) {
+  throw new Error(
+    `${chained.length} legacy id(s) point at a URL that is itself redirected: ` +
+      chained.map(([aid, url]) => `${aid} -> ${url}`).join(", ") +
+      "\nPoint them at the final destination; a 301 chain loses what the first hop carries.",
+  );
 }
 
 /* --- emit ------------------------------------------------------------------------ */
@@ -146,9 +220,30 @@ const lines = [
   "",
 ];
 
-mkdirSync("deploy/nginx", { recursive: true });
-writeFileSync(OUT, lines.join("\n"));
+const conf = lines.join("\n");
 
-console.log(`${OUT}`);
-console.log(`  resolved   ${pairs.length} / ${entries.length}`);
-console.log(`  unresolved ${unresolved.length}${unresolved.length ? ": " + unresolved.map((u) => u.label).join(", ") : ""}`);
+/*
+  --check is the whole reason the staleness lasted eleven days.
+
+  The taxonomy conf has `npm run redirects:taxonomy` and a place in the deploy routine;
+  this one had neither, so it was generated on 2026-09-04 and never again. Nothing in the
+  repo could tell that its targets had drifted away from the catalogue — the drift only
+  showed up as a redirect chain on the live site. `test:export` now regenerates and
+  compares, which is the same guarantee every other generated file here already has.
+*/
+if (check) {
+  if (readFileSync(OUT, "utf8") !== conf) {
+    console.error(`${OUT} is out of date — run: npm run redirects:legacy`);
+    console.error("  The catalogue moved and these 301s did not follow it.");
+    process.exit(1);
+  }
+  console.log(`${OUT} — up to date (${pairs.length} product ids, no chains)`);
+} else {
+  mkdirSync("deploy/nginx", { recursive: true });
+  writeFileSync(OUT, conf);
+
+  console.log(`${OUT}`);
+  console.log(`  resolved   ${pairs.length} / ${entries.length}`);
+  console.log(`  overrides  ${Object.keys(LEGACY_AID_OVERRIDES).length} (aid 205, 381, 1608)`);
+  console.log("  chains     0");
+}

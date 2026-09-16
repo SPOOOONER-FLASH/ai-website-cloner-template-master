@@ -13,6 +13,7 @@
 | # | 事情 | 多久做一次 | 大约耗时 |
 |---|---|---|---|
 | 1 | nginx reload（让 301 重定向生效） | 有新重定向时 | 2 分钟 |
+| 1d | **⚠ 2026-09-15：旧 index.php 的 301 又旧了，同样两行命令** | 一次 | 2 分钟 |
 | 1b | **改 index.php 跳转规则（2026-09-04 新增，只做一次）** | 一次性 | 5 分钟 |
 | 1c | **⚠ 撤销上一版的 TLS 改动（我诊断错了）** | 一次性 | 2 分钟 |
 | 2 | Cloudflare 全区 purge | 每次发布后 | 1 分钟 |
@@ -243,6 +244,89 @@ curl -I https://cantonlock.com/products/hardware-accessories/ds011-door-flush-bo
 `location: https://cantonlock.com/products/hardware-accessories/ds011-door-stopper/`。
 
 > 做完这一条，Bing 报的「重复标题」和「缺 h1」会在它下次抓取时自己消失。
+
+---
+
+## 1d. ⚠ 2026-09-15：旧 index.php 的 301 也旧了 —— 和第 1a 节一模一样的两行命令
+
+**和 1a 节同一个毛病，只是这次轮到另一份文件。做法完全一样，两行命令。**
+
+### 出了什么事
+
+Bing 的 Site Scan 报「2 个页面 head 里缺 description」，点开是这两个旧网址：
+
+```
+https://cantonlock.com/index.php?m=home&c=Lists&a=index&tid=23&lang=cn
+https://cantonlock.com/index.php?m=home&c=View&a=index&aid=397
+```
+
+**这两条本身不用修。** 我实测过，它们现在都正常 301。Bing 那张表写的是它**上次抓取
+时**的状态，不是现在的状态 —— 这一点第 1 节里已经吃过一次亏，所以这次先测了再说。
+
+**但顺着查下去发现了一个真问题**：`aid=397` 跳到的是
+`/products/panic-exit-devices/x2-panic-exit-device/`，而这个网址**自己又是一条 301**，
+再跳到 `…-x2-panic-exit-device-trim/`。
+
+也就是说买家（和搜索引擎）要跳**两次**才到得了产品页。
+
+| | |
+|---|---|
+| 原因 | 逃生器械那批改名（09-10）之后，旧 index.php 的对照表没有跟着重生成 |
+| 这样的有几条 | **17 条**（15 条逃生器械 + DS011 门吸 + LC04 锁体） |
+| 还有别的吗 | 其中 **2 条**（LC04、72）下次重生成时会再退一步，掉到 `/products/` 大类页 |
+
+两跳能用，但第一跳攒下的排名会打折；而且它能成立只是因为中间那条规则**碰巧还在**。
+
+### 你要做的：两行命令（和 1a 节一字不差）
+
+在宝塔面板左侧点 **「终端」**，粘贴第一行，回车：
+
+```bash
+cd /www/wwwroot/cantonlock.com && git pull
+```
+
+**成功的样子**：打印出一串更新的文件名，里面应该有
+`deploy/nginx/legacy-redirects.conf`。
+如果显示 `Already up to date.`，说明服务器已经拉过了，直接做下一步。
+
+然后粘贴第二行，回车：
+
+```bash
+bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
+```
+
+**成功时最后一行是：**
+
+```
+All redirects live. Now purge Cloudflare — it caches 301s.
+```
+
+**这个脚本是安全的**：它先备份、先跑 `nginx -t` 测试、测试不过就**自动还原并且不重载**。
+跑失败也不会让网站下线 —— 把整屏截图发我。
+
+### 做完之后
+
+去 Cloudflare purge（第 2 节）。⚠ **Cloudflare 会缓存 301**，不 purge 你在浏览器里测
+还是旧结果。
+
+想自己验证的话，在你自己电脑上（在仓库目录里）：
+
+```bash
+node scripts/verify-legacy-redirects.mjs
+```
+
+**成功的样子**：最后一行是 `9/9 legacy URLs redirect as intended.`。
+
+现在跑会是 `6/9`，失败的三条正是上面说的那三个 —— **这就是这一节要修的东西**。
+
+### 以后不会再这样了
+
+这份文件以前没有任何东西在盯它：类目改名那份有 `npm run redirects:taxonomy`，
+这份 09-04 生成过一次就再没重生成过，**11 天里没有一处能看出它已经和产品目录对不上了**。
+
+现在 `npm run test:export` 会重新生成一遍跟仓库里的比对，对不上就构建失败；
+同时多了一道检查，**不允许任何一条 301 指向另一条 301**。所以往后你只会在
+「有新重定向要上线」的时候看到这一节，不会再在 Bing 的报告里看到。
 
 ---
 
