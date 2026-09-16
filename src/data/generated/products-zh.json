@@ -19341,6 +19341,14 @@
         {
           "label": "最小起订量",
           "value": "100 pieces"
+        },
+        {
+          "label": "插销",
+          "value": "Three square deadbolts, plus latch"
+        },
+        {
+          "label": "锁芯",
+          "value": "欧标锁芯"
         }
       ],
       "material": "304 不锈钢",
@@ -19375,6 +19383,14 @@
           {
             "label": "Minimum order",
             "value": "100 pieces"
+          },
+          {
+            "label": "Bolts",
+            "value": "Three square deadbolts, plus latch"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Euro profile"
           }
         ],
         "material": "Stainless Steel 304",

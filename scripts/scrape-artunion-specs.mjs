@@ -61,24 +61,28 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /* ------------------------------------------------------- which models to ask about */
 
 /**
- * Which model numbers are worth asking UNION about.
+ * Which models this scraper looks up: ALL of them.
  *
- * This used to be /^(?:UL|PRE-?|G|T)\d/ — a prefix had to be followed immediately by a
- * digit — on the reasoning that anything else was a RAYEN or HYDE number UNION never made
- * and would only add noise to the miss list.
+ * There is no prefix filter any more, and that is the point.
  *
- * That reasoning was wrong, and it cost real products. MUL2101, MUL1066 and MTR2110 are all
- * in UNION's catalogue; none of them passed the filter, so none was ever queried, and all
- * three sat with an empty spec table while the gap list told the client to go and ask the
- * factory for drawings UNION was publishing. The client found MUL2101 on his phone in about
- * a minute. They are new products in the 住宅用金物 モデライズ line — the hotel-fit series —
- * which is simply a part of the catalogue our prefix list predated.
+ * It was /^(?:UL|PRE-?|G|T)\d/ — a prefix had to be followed immediately by a digit — on the
+ * reasoning that anything else was a number UNION never made and would only add noise to the
+ * miss list. On 2026-09-15 two sessions found, independently and within an hour, that it had
+ * been silently skipping real products: MUL1022, MUL1066, MUL2101, MTR2110, TSG52, TSG1169,
+ * TSG1170, TSG1226, USG1. Every one of them ships an EMPTY spec table, and the gap audit had
+ * told the client they were "not on UNION at all" and to go ask the factory for drawings
+ * UNION was publishing. The client found MUL2101 on his phone in about a minute.
  *
- * So the filter is now the loose shape of a UNION part number rather than a guess at which
- * families exist. A miss costs one request and is recorded as a miss, which is cheap; a
- * model excluded here is invisible forever, which is not.
+ * Both sessions' first instinct was to widen the pattern. Both patterns still missed
+ * something — one dropped MTR2110, the other dropped OASHB201 — which is the argument
+ * against having one at all. A filter fails OPEN here: an excluded model does not error, does
+ * not appear in the miss count, never enters the loop, and the summary prints "0 未抓到" and
+ * reads like success. A miss, by contrast, costs one request and is recorded as a miss.
+ *
+ * 196 models at 1.2s is four minutes, once. That is the whole price of never having this
+ * class of bug again, and it is worth paying.
  */
-const UNION_PREFIX = /^[A-Z]{1,4}-?\d/i;
+const worthAsking = (model) => model.length > 0;
 
 function rayenModels() {
   const out = [];
@@ -92,7 +96,7 @@ function rayenModels() {
     }
     if (!(product.sites ?? []).includes("rayen")) continue;
     const model = String(product.model ?? "").trim();
-    if (!UNION_PREFIX.test(model)) continue;
+    if (!worthAsking(model)) continue;
     out.push({
       model,
       slug: product.slug,

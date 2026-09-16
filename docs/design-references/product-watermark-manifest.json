@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4047,
+  "count": 4049,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -22866,6 +22866,59 @@
       },
       "sourceSha256": "36128dd71eb83551413e10cfa31afb907364085261d64b0e737479fab583b338",
       "outputSha256": "bc3d668dee885918c3a2b8dd201235df4a614644f18b690e990e0f1ef4e5fb86"
+    },
+    {
+      "source": "public/images/products/6068-mortise-lever-handle-lock-2.webp",
+      "output": "public/images/products-hyde/6068-mortise-lever-handle-lock-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1d0c242f152048be90bf1e974584962899d6b4cda51ac969d5b9003865122047",
+      "outputSha256": "3b5cfa0cfa8f1084351b231cc54a6074685ec17b323f8b49a1da3517549beba2"
+    },
+    {
+      "source": "public/images/products/6068-mortise-lever-handle-lock.webp",
+      "output": "public/images/products-hyde/6068-mortise-lever-handle-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 11,
+          "top": 23,
+          "width": 228
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 247,
+          "name": "inward",
+          "top": 23,
+          "width": 228
+        }
+      },
+      "sourceSha256": "215ee44ff0128eb2c3b6cd388389730aa836fb21691c7427e864e664d31f691a",
+      "outputSha256": "b3a38308561caef904ed92fecb7af01bd7fdc600ed01af7e75671ffe8e877667"
     },
     {
       "source": "public/images/products/607-acbk-tubular-lock-2.webp",
