@@ -356,7 +356,8 @@
     "Stainless Steel Wall Hook": "不锈钢挂钩",
     "Wooden Door Floor Hinge": "木门地弹簧",
     "Panic Exit Device Trim": "逃生推杠外装置",
-    "Panic Exit Device Lock Case": "逃生推杠锁体"
+    "Panic Exit Device Lock Case": "逃生推杠锁体",
+    "Door Knob": "旋钮锁"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -1125,6 +1126,22 @@
     [
       "Hydraulic Hinge",
       "液压合页"
+    ],
+    [
+      "Brushed Black Nickel",
+      "黑镍拉丝"
+    ],
+    [
+      "Brushed Light Gold",
+      "淡金拉丝"
+    ],
+    [
+      "Brushed Satin Nickel",
+      "哑光镍拉丝"
+    ],
+    [
+      "lift-to-lock",
+      "反提锁体"
     ]
   ]
 }

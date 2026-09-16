@@ -121,6 +121,31 @@ const FINISHES: Record<string, FinishEntry> = {
     match: ["pvd rose gold"],
   },
   "pvd-nickel": { colors: ["#aeb3b6"], zh: "PVD 镍", en: "PVD nickel", match: ["pvd nickel"] },
+
+  /*
+    The 意式极简系列 finish codes, from the 雷茵 catalogue's own captions. The book prints the
+    code and the Chinese name together under every shot — ET4009A RGS / 表面处理：淡金拉丝 —
+    so both spellings are known rather than guessed, and the colours are read off those shots.
+    BL (哑黑) and PC (白色) already have entries above and are not repeated here.
+  */
+  "brushed-black-nickel": {
+    colors: ["#55575a"],
+    zh: "黑镍拉丝",
+    en: "Brushed black nickel",
+    match: ["brushed black nickel", "黑镍拉丝"],
+  },
+  "brushed-light-gold": {
+    colors: ["#cbab6d"],
+    zh: "淡金拉丝",
+    en: "Brushed light gold",
+    match: ["brushed light gold", "淡金拉丝"],
+  },
+  "brushed-satin-nickel": {
+    colors: ["#c6c8c5"],
+    zh: "哑光镍拉丝",
+    en: "Brushed satin nickel",
+    match: ["brushed satin nickel", "哑光镍拉丝"],
+  },
 };
 
 /* Longest spelling first, so "pvd rose gold" wins over a bare "gold" in a longer string. */

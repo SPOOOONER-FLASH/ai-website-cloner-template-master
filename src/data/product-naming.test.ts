@@ -100,6 +100,28 @@ test("models sharing a letter prefix in one category share a product name", () =
   */
   const AWAITING_FACTORY = new Set<string>();
 
+  /*
+    Dissenters that are a different KIND of part, not a mis-taken name.
+
+    The heuristic above reads a lone dissenter as a name copied off the category. It cannot
+    see what a product is, and sometimes the catalogue really does put two mechanisms under
+    one prefix — the comment on `groups` says so, and the answer it gives is the category
+    path. That answer is not available here: `lever-handles` is shared with HYDE and
+    Stahlock, and a `door-knobs` child with no products on those two sites produces the
+    empty routes that src/data/empty-category.test.ts exists to stop.
+
+    So the exception is named instead, one model at a time, with the evidence:
+
+      ET4017 — 雷茵 catalogue p8, 意式极简系列. A round knurled knob, Ø55 × 50, drawn with
+      上提反锁 / 顺时针开锁 arrows. It is not a lever and calling it one to satisfy a prefix
+      would be the same lie this test was written to catch, pointing the other way.
+
+    Delete an entry when the category can carry the distinction instead — the knobs queue
+    behind this one (p9's 4017, the Kaiser knobs, the 暗门锁 A5-A009/A011/A012), and once
+    they are in, 旋钮 earns a leaf of its own and this set goes back to empty.
+  */
+  const DIFFERENT_PART_TYPE = new Set<string>(["lever-handles::ET::ET4017"]);
+
   const disagreements: string[] = [];
   for (const [key, group] of groups) {
     if (group.length < 3) continue;
@@ -117,6 +139,7 @@ test("models sharing a letter prefix in one category share a product name", () =
     for (const p of group) {
       if (p.name === majority) continue;
       if (AWAITING_FACTORY.has(`${key}::${p.model}`)) continue;
+      if (DIFFERENT_PART_TYPE.has(`${key}::${p.model}`)) continue;
       disagreements.push(
         `${key}: ${p.model} is "${p.name}" while ${count} siblings are "${majority}" (${p.slug})`,
       );
