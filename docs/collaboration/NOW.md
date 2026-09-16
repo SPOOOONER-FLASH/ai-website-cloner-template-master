@@ -333,6 +333,20 @@ T52UP/T5650UP 有号但没有详情页。所以那 7 个八成是工厂自编号
 甲方三次说的都是 M8，没覆盖 M6），并由 `src/lib/rayen-paths.test.ts` 跑 `--check` 守住。
 **顺序：merge-artunion-specs.mjs 之后必须跑这一步。**
 
+**1b. 35 个拉手的 `Projection` 从来就不是突出。**（2026-09-16）
+它们成对带着 `Projection` / `Rose depth` 两行，两行都是错的。图纸把突出写成立面底部的
+尺寸链 —— T1263 是 `22 | 30 | 52`，22 的杆径加 30 的净空等于离门面 52 —— **大的那个才是突出**。
+转录时取了小的那个，而小的那个每张图还不是同一个量：T1050、T2930 取的是**门厚**，
+T1224 取的是**背板宽**，G1226 取的是底座在门面上的投影。
+现在 `Rose depth` 的数值移进 `Projection`，`Rose depth` 整行删掉 —— 原来 `Projection` 里那个数
+每张图含义都不一样，再给它编一个标签就是把同样的错再犯一次。
+T811 两行都删了：它的图纸上 `55` / `68` 是底座投影宽度，而原来的 `35` 图纸上根本没有。
+G1289、G777 本来只有 `Rose depth` 没有 `Projection`，第一轮按「成对」筛没筛出来，图纸画法一样（`30 | 69.5`、`25 | 61.5`）。
+BH38/39/42/54 不动，它们没有原厂图纸，数来自 `scripts/cad-dimensions.mjs`（CAD 量的），
+而且本来就是正常的大小关系。
+脚本 `scripts/apply-pull-handle-projection.mjs`，源清单和产品记录一起改，
+`rayen-paths.test.ts` 跑 `--check`。**顺序：同上，merge-artunion-specs.mjs 之后。**
+
 **2. 同款式配对只在单份清单里数，跨清单就断了。**
 `ingest-union-handles.mjs` 原来只统计当前这份清单里的 styleFamily，够不够两个。
 G2110 挪进 union-handles-rebuilt.json 之后，搭档 T2110 还留在 b1，这一家就只剩一个，

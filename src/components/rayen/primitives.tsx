@@ -85,18 +85,33 @@ export function SectionHead({
  * shot arrives, and a page that jumps while you read it feels unfinished no matter how
  * good the photograph is.
  */
+/**
+ * A photograph in a fixed frame.
+ *
+ * `fit` is the whole decision. "cover" fills the frame and CUTS whatever does not fit, so it
+ * is only honest when `aspect` is the image's own ratio — the factory photographs are square
+ * files and spent a while in 4 / 3 frames, which quietly took 12.5% off the top and the same
+ * off the bottom of every one of them. "contain" cuts nothing and pads instead, which is what
+ * a frame holding images of several shapes needs: the RAYEN catalogue covers are a mix of
+ * square plates and 2:3 portraits of tall pull handles, and no single ratio can crop both
+ * without damage.
+ *
+ * src/lib/rayen-image-fit.test.ts holds cover-frames to their file's real ratio.
+ */
 export function Photo({
   src,
   alt,
   aspect,
   className = "",
   priority = false,
+  fit = "cover",
 }: {
   src: string;
   alt: string;
   aspect: string;
   className?: string;
   priority?: boolean;
+  fit?: "cover" | "contain";
 }) {
   return (
     <div className={`overflow-hidden bg-[var(--color-surface-alt)] ${className}`} style={{ aspectRatio: aspect }}>
@@ -107,7 +122,7 @@ export function Photo({
         {...intrinsicSize(src)}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
-        className="h-full w-full object-cover"
+        className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
       />
     </div>
   );
@@ -227,7 +242,11 @@ export function ProductCard({
   return (
     <a href={href} className="card group block">
       {product.heroImage ? (
-        <Photo src={product.heroImage.src} alt={product.heroImage.label} aspect="1 / 1" />
+        /* contain, not cover. Roughly 2,000 of the catalogue photographs are 893×1259 or
+           1049×1573 — tall pull handles shot upright — and a square cover frame took 29%
+           off them, top and bottom, which on a pull handle is both ends. Square plates are
+           unaffected: for them contain and cover draw the same pixels. */
+        <Photo src={product.heroImage.src} alt={product.heroImage.label} aspect="1 / 1" fit="contain" />
       ) : (
         <NoPhoto model={product.model} label={noPhotoLabel} />
       )}

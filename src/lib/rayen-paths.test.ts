@@ -114,6 +114,28 @@ test("M8 型号的开孔直径是甲方给的口径，不是原厂的", async ()
   });
 });
 
+test("拉手的 Projection 是图纸上的总突出，不是随手就近的数", async () => {
+  /*
+    33 pull handles carried `Projection` and `Rose depth` as a pair, and both were wrong.
+    The drawings give the standoff as a chain at the foot of the elevation — T1263 reads
+    `22 | 30 | 52`, a 22mm bar plus 30mm of air is 52mm from the door face — so the LARGER
+    of the two is the projection. The transcription took the smaller one, and the smaller
+    one was not even the same quantity twice: on T1050 and T2930 it was the door thickness,
+    on T1224 the width of the backplate, on G1226 the foot's footprint.
+
+    A buyer sizes the gap between the handle and the frame from this number. 25mm instead of
+    65mm is a handle that fouls the architrave, and the drawing on the page would have said
+    so all along.
+
+    scripts/apply-pull-handle-projection.mjs is the fix; this runs its --check so a re-ingest
+    that forgets the step fails here rather than shipping.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-pull-handle-projection.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});
+
 test("表面变体的尺寸跟着底型号走", async () => {
   /*
     MUL1066 is UL1066 in another finish — the client's rule (「前面的第一个字不要，门把手

@@ -50,7 +50,11 @@ export function Gallery({
         <img
           src={current.src}
           alt={current.label}
-          className="h-full w-full object-cover"
+          /* contain: this is THE photograph of the product, and a square frame cropping a
+             2:3 upright shot cut both ends off the handle. Gallery is a client component and
+             cannot read the build-time size map, so the rule here is unconditional — for the
+             square plates it draws exactly what cover drew. */
+          className="h-full w-full object-contain"
           fetchPriority="high"
         />
       </div>
@@ -77,7 +81,7 @@ export function Gallery({
                   alt=""
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               </button>
             </li>
