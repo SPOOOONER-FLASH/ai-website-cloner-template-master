@@ -6,19 +6,30 @@
   "categoryPath": [
     "brass-steel-hinges"
   ],
-  "summary": "Stainless Steel 304 brass and steel hinges.",
+  "summary": "A continuous piano hinge in iron, 1\" to 3\" wide. The \"brass\" in the model name is the finish, not the base metal — the leaf is iron under it.",
   "specs": [
     {
       "label": "Material",
-      "value": "Stainless Steel 304"
+      "value": "Iron"
+    },
+    {
+      "label": "Type",
+      "value": "Continuous hinge (piano hinge)"
     },
     {
       "label": "Width",
-      "value": "1\"1-1/4 \"2 \"、3\""
+      "value": "1\", 1-1/4\", 2\", 3\""
+    },
+    {
+      "label": "Finish",
+      "value": "Matt black or polished brass finish over the iron leaf"
     }
   ],
-  "material": "Stainless Steel 304",
-  "finishes": [],
+  "material": "Iron",
+  "finishes": [
+    "BL",
+    "PB"
+  ],
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
@@ -29,21 +40,29 @@
   "gallery": [],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "Brass Piano Hinge Brass and Steel Hinges | Canton Hyland",
-  "seoDescription": "Canton Hyland Brass Piano Hinge brass and steel hinges in Stainless Steel 304. Manufactured in Guangdong, China and exported to over thirty markets.",
+  "seoTitle": "Brass Piano Hinge — Iron Continuous Hinge | Canton Hyland",
+  "seoDescription": "Continuous piano hinge in iron, 1\", 1-1/4\", 2\" and 3\" widths, in matt black or a polished brass finish. The brass is the finish, not the base metal.",
   "nameEs": "Bisagras de latón y acero",
   "specsEs": [
     {
       "label": "Material",
-      "value": "Acero inoxidable 304"
+      "value": "Hierro"
+    },
+    {
+      "label": "Tipo",
+      "value": "Bisagra continua (bisagra de piano)"
     },
     {
       "label": "Ancho",
       "value": "1”, 1-1/4”, 2”, 3”"
+    },
+    {
+      "label": "Acabado",
+      "value": "Negro mate o acabado latón pulido sobre la pletina de hierro"
     }
   ],
-  "summaryEs": "Una bisagra de acero inoxidable 304.",
-  "seoTitleEs": "Brass Piano Hinge Bisagras de latón y acero | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland Brass Piano Hinge bisagras de latón y acero en acero inoxidable 304. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
+  "summaryEs": "Una bisagra continua de piano en hierro, de 1\" a 3\" de ancho. El «latón» del nombre del modelo es el acabado, no el metal base: debajo la pletina es de hierro.",
+  "seoTitleEs": "Bisagra de piano en latón — bisagra continua de hierro | Canton Hyland",
+  "seoDescriptionEs": "Bisagra continua de piano en hierro, anchos de 1\", 1-1/4\", 2\" y 3\", en negro mate o acabado latón pulido. El latón es el acabado, no el metal base.",
   "description": ""
 }
