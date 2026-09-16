@@ -154,7 +154,10 @@ if (unreadable.length) {
 /* ------------------------------------- 3. bring the assets the pages cite */
 
 const assetRefs = new Set();
-const ASSET_REF = /["'(](\/(?:images|videos|fonts)\/[^"')\s]+?\.[a-z0-9]{2,5})["')]/gi;
+/* 加上 downloads：图册 PDF 是 <a href> 而不是 <img src>，2026-09-15 第一次上线时
+   页面生成了、链接指过去了，文件却没被带过来 —— 扫描器只认这几个前缀。
+   新增一个能下载的目录时，这里要一起加。 */
+const ASSET_REF = /["'(](\/(?:images|videos|fonts|downloads)\/[^"')\s]+?\.[a-z0-9]{2,5})["')]/gi;
 
 for (const file of targetFiles) {
   if (!file.endsWith(".html")) continue;

@@ -5,6 +5,7 @@ import { FinishFilter } from "./FinishFilter";
 import { Gallery } from "./Gallery";
 import { HeroCarousel } from "./HeroCarousel";
 import { ArrowLink, Button, FactStrip, NoPhoto, Photo, ProductCard, SectionHead, Shell, SpecTable } from "./primitives";
+import { downloads, megabytes } from "@/data/rayen-downloads";
 import {
   absoluteUrl,
   categoriesFor,
@@ -877,6 +878,97 @@ export function ContactBody({ locale }: { locale: RayenLocale }) {
         name: s.title,
         url: absoluteUrl(locale === "zh" ? "/contact/" : "/en/contact/"),
         mainEntity: organisation(locale),
+      }} />
+    </>
+  );
+}
+
+/* -------------------------------------------------------------- downloads */
+
+/**
+ * Resources a buyer can take away — today, the catalogue.
+ *
+ * Deliberately not gated behind an email form. A gate would collect addresses from the
+ * small fraction who fill it in and lose the specifier who was only checking whether we
+ * make a 72 mm centre distance; the catalogue is a sales document, and the point of one is
+ * that it travels. The file size and page count are printed next to the link because the
+ * reader is often on mobile data, and src/lib/rayen-downloads.test.ts holds those numbers
+ * to the actual file.
+ */
+export function DownloadsBody({ locale }: { locale: RayenLocale }) {
+  const s = t(locale).downloads;
+  const path = locale === "zh" ? "/downloads/" : "/en/downloads/";
+  return (
+    <>
+      <SiteHeader current="/downloads/" locale={locale} />
+      <main className="flex-grow">
+        <Shell className="py-14 md:py-20">
+          <SectionHead eyebrow={s.eyebrow} title={s.title} align="left" />
+          <p className="mt-5 max-w-[62ch] text-[15px] leading-relaxed text-[var(--color-ink-2)]">{s.intro}</p>
+
+          <section className="mt-10 space-y-px bg-[var(--color-line)]">
+            {downloads.map((file) => {
+              const copy = locale === "zh" ? file.zh : file.en;
+              return (
+                <article key={file.id} className="grid gap-8 bg-white p-6 md:grid-cols-[minmax(0,320px)_1fr] md:p-8">
+                  <a href={file.href} className="block border border-[var(--color-line)]">
+                    <Photo src="/images/rayen/catalogue-2026-cover.webp" alt={copy.title} aspect="1600 / 1132" />
+                  </a>
+                  <div className="flex flex-col items-start">
+                    <h2 className="text-[20px]">{copy.title}</h2>
+                    <p className="mt-3 max-w-[54ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">
+                      {copy.summary}
+                    </p>
+                    <p className="latin mt-4 text-[13px] tracking-[0.06em] text-[var(--color-ink-3)]">
+                      {s.meta(file.pages, megabytes(file.bytes))}
+                    </p>
+                    <div className="mt-6">
+                      <Button href={file.href}>{s.cta}</Button>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </section>
+
+          <section className="mt-14 border-t border-[var(--color-line)] pt-12">
+            <h2 className="text-[18px]">{s.originalTitle}</h2>
+            <p className="mt-4 max-w-[62ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">{s.originalNote}</p>
+            <div className="mt-6">
+              <ArrowLink href={localePath(locale, "/contact/")}>{s.contactCta}</ArrowLink>
+            </div>
+          </section>
+        </Shell>
+      </main>
+      <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: s.title,
+        description: s.intro,
+        url: absoluteUrl(path),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        /* DigitalDocument rather than Product/Offer: what is on offer here is the file, and
+           contentSize is stated in the same units the page prints so the two cannot disagree. */
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: downloads.length,
+          itemListElement: downloads.map((file, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            item: {
+              "@type": "DigitalDocument",
+              name: (locale === "zh" ? file.zh : file.en).title,
+              description: (locale === "zh" ? file.zh : file.en).summary,
+              url: absoluteUrl(file.href),
+              encodingFormat: "application/pdf",
+              contentSize: megabytes(file.bytes),
+              numberOfPages: file.pages,
+              inLanguage: "zh-Hans",
+              publisher: organisation(locale),
+            },
+          })),
+        },
       }} />
     </>
   );
