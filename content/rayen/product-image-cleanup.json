@@ -12,7 +12,7 @@
   "counts": {
     "refused": 439,
     "cleanable": 1222,
-    "already-clean": 2459
+    "already-clean": 2599
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -12174,6 +12174,566 @@
     },
     "ju-093-door-closer.webp": {
       "source": "cef411d28c340caae47ebe6ee03e49bcd9d422634d133bae79571babe4d860a3",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-10.webp": {
+      "source": "8b5397202fe6e37cc95f63215ea34c2b0f9a7e03a16196b96de0bcf9c4b9b075",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-11.webp": {
+      "source": "4129b9b21a9aecdb42e5d5320cb65003a14b260005615834d3ae7c3013c74561",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-2.webp": {
+      "source": "ea86e35aa40b29f71bf424291b23fe7526eab940c99698c2263851812bc13e21",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-3.webp": {
+      "source": "bc4ea97bdb9e014ebca67f7c16d068350e1f8ce9f30d70d847028d0d47fc7916",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-4.webp": {
+      "source": "70c9fde3a2fe5f78b131d2136efa3383ccf77c9175c6f5df7a28a8b59a99a98d",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-5.webp": {
+      "source": "5789d3baa2379d2c3bf996d576837ee7a533afbca00cc185e1fb9dbe023ac6b6",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-6.webp": {
+      "source": "6d9f6534c3d4439b0a04715b983b6e3f4e7cf94b6c62397d1fcae4e549d5ee38",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-7.webp": {
+      "source": "b0f1c41aab3ab30a39487ef7a456ab3288f4b9ae47ab711ad50c6f957c5f0812",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-8.webp": {
+      "source": "1de8bac1351040c75edfbf0a1b52788e1a7d9ba7f42131994a778762219472de",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle-9.webp": {
+      "source": "232e0ba39802cbaf2d3f7814adcae1503a237306b62e32f3ceabdaf27e0e3780",
+      "status": "already-clean"
+    },
+    "ka5-2007-lever-handle.webp": {
+      "source": "8e0dc2a30c196ea448058f2f439a9da4d93dd040e67aa00913958264d24883c0",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle-2.webp": {
+      "source": "bc6d3d657c7c27ee6749f1dabd5139ef797beb7913d6f45380f840437ef26fc8",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle-3.webp": {
+      "source": "de4f0d330190df830786438c4d369477d1934118e2bd65e272c8b9eb17b9f8a4",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle-4.webp": {
+      "source": "d20a4baaa7190765247ce579fb3c6263b8b67ad165bdc7394e9a41db60cf6f89",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle-5.webp": {
+      "source": "99b85801bfc9b13f81acfee4046111ca0836bee159328c5f68207578717fb7f8",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle-6.webp": {
+      "source": "a89cfee68f88bfa49282ae25c0fba08c979db348453225d2e5cb6c2b97a3c501",
+      "status": "already-clean"
+    },
+    "ka5-855-lever-handle.webp": {
+      "source": "56ff650eb30dcfca25ba246be8882cd465db810292d46e3204b254f94092ff3e",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle-2.webp": {
+      "source": "39050e50448d01008cb88d227412724d11f9535840b0ff8aedf7d42e2ddbde7d",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle-3.webp": {
+      "source": "3a793f982891ceca6043ca07076a6dd3fb101ad92034bfbcc9209b26494bf211",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle-4.webp": {
+      "source": "0a8e9d862ced836db1a591f3afa1e928ed60257c570e776f7d9014c6f704c726",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle-5.webp": {
+      "source": "7a873bd901efb6f03382fb87f7a4b3f405564ed8359bb300fde108ae99153d6b",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle-6.webp": {
+      "source": "fae047c95097822901372410d53a01b0c92496b7b62a4134c7e353bf210edabc",
+      "status": "already-clean"
+    },
+    "ka5-916-lever-handle.webp": {
+      "source": "3f2c6da19536632200cdea34f3599cfcf4beae299309a486efc0951926f0edb9",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle-2.webp": {
+      "source": "f215f4b9479a210bd0207efffcf516afe9d1101cffcfeae09c29f0a3ea7187c5",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle-3.webp": {
+      "source": "42226d575d430d4abee54b19fadeb545a3e1f27547da7b3490f96a97927ddac9",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle-4.webp": {
+      "source": "fde127cf844cf2238e3e5b57202528660ba9ab9ca06b915d71ee9c736f4297c6",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle-5.webp": {
+      "source": "9279546f6aec3a2df1c986a931b4496218455bb03d7eeb798d0e60f537dfa1a8",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle-6.webp": {
+      "source": "ab31999be137818480f500c9f4c957e8b9daf0f3fda09eea1bdf0c5f8e5f0594",
+      "status": "already-clean"
+    },
+    "ka5-9911-lever-handle.webp": {
+      "source": "b4fdd46a72423f7d010c5862ee58396205571642d2d8090fb44908d274263721",
+      "status": "already-clean"
+    },
+    "ka5-9911b-lever-handle-2.webp": {
+      "source": "df988332b23cca6686dde6b6905580b5bddd896c66b90bf9e448feb7216c1ece",
+      "status": "already-clean"
+    },
+    "ka5-9911b-lever-handle-3.webp": {
+      "source": "d1cce9d1a7996f6e78de06d1e044d2459b1cf2363b47120d3f240fa5c5278681",
+      "status": "already-clean"
+    },
+    "ka5-9911b-lever-handle-4.webp": {
+      "source": "ad4d835a1950c4dbd390fa2f23668190f14b511614a8f9a7d71c9cd247a08851",
+      "status": "already-clean"
+    },
+    "ka5-9911b-lever-handle.webp": {
+      "source": "0f550605102a9a469cf13d11c7634268b7082488e6a62851cdfb6386626312aa",
+      "status": "already-clean"
+    },
+    "ka5-9919-lever-handle-2.webp": {
+      "source": "254a4c20e285f3298f69681887132c4a2b9802b337bba2ba5a3d912795ab1c6c",
+      "status": "already-clean"
+    },
+    "ka5-9919-lever-handle-3.webp": {
+      "source": "fa22b858c0657ac90d19c35473ad616c1e1d38320fffa244e523600c9d05d4c1",
+      "status": "already-clean"
+    },
+    "ka5-9919-lever-handle-4.webp": {
+      "source": "33865dbec7df8d30d0be9f4d1167d3f35f5da37845fecf84f64ceb5caf487ee3",
+      "status": "already-clean"
+    },
+    "ka5-9919-lever-handle-5.webp": {
+      "source": "7d5baf5f8196a6dc881a72e70729e008acb22d3fdbf99a33c88fee01c55b9987",
+      "status": "already-clean"
+    },
+    "ka5-9919-lever-handle.webp": {
+      "source": "8b921afe0851278d6a1dfec191fb281a27483c96c042292ae7f845f570f0b9f5",
+      "status": "already-clean"
+    },
+    "ka5-9922-lever-handle-2.webp": {
+      "source": "4a132711de44e577d5d5e9c5c8bc162849693d2ca8b7a9ba219b6c44741cbab3",
+      "status": "already-clean"
+    },
+    "ka5-9922-lever-handle-3.webp": {
+      "source": "49de38cbe03d9324a31c94fd5968de6c5794fa55dcd6c58d6f16b0cbd17fe606",
+      "status": "already-clean"
+    },
+    "ka5-9922-lever-handle-4.webp": {
+      "source": "5bc90eacdcb54d557a2af18b7a7f8017119672ebad37e9d7c4b12040beb6389d",
+      "status": "already-clean"
+    },
+    "ka5-9922-lever-handle-5.webp": {
+      "source": "e59fbe4e59a998cad47ef40057165dda935d48234a84c1355cb3f5c0687b88b9",
+      "status": "already-clean"
+    },
+    "ka5-9922-lever-handle.webp": {
+      "source": "318920958efaad89a3f266ca32675e9a8865d3ced96c58bc6f974d1471b59190",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-2.webp": {
+      "source": "975613f319297b63b808cd41309cfb24960d758a52ce84dd8c88f09bd83d0305",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-3.webp": {
+      "source": "f8400ead703df73a85e9bb5f32f466edd4f6cca9d1de41616e38bac20283bdc5",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-4.webp": {
+      "source": "bad48fadae0ac45d167215aa7d5876eca9926954596af4f9d5c4930038852e1d",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-5.webp": {
+      "source": "75679289e050fff84f057e4e61921650b3e8cf74e0dba98d376885fb689b6a5d",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-6.webp": {
+      "source": "147ea9c182241ac00ed9b85ea2ecaa4ca003697554ee69032376afaa2ee348c7",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-7.webp": {
+      "source": "ab8bb2a610f6e0c4b63c7970df4614bb6a0458209124ae2824b596a56bfae9c6",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle-8.webp": {
+      "source": "68ff46d54ea248bb52bbff90d89c8623500d935c96d06a7e87eb9c0cc61c3048",
+      "status": "already-clean"
+    },
+    "ka5-9936-lever-handle.webp": {
+      "source": "f994827e854c9db6ad349a19ee8c6dff106d4b614c30602ed8a05e656e3c65e2",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob-2.webp": {
+      "source": "1307ced4cfd8bc7e0e31888776b1bb797879e9acd1933ce12fcbf751c3a51a8e",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob-3.webp": {
+      "source": "b8141ba002a09c8e5d268afe3664f9c098e75ccdb02092d932d2da00f90707f9",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob-4.webp": {
+      "source": "d6d6770e47d751710b1db64d9f38f5f242717bd221826a566afff49fdc60dc7a",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob-5.webp": {
+      "source": "37b53dc25fb2e05589d2bdfd7fe93884bc1fc7ed24bb9b9cd19717f786b5a117",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob-6.webp": {
+      "source": "d81dbae3ebee384b2cf660b09c6eae20dd25ab8fd9eeaf22061d608ee81b8432",
+      "status": "already-clean"
+    },
+    "ka5-a011-door-knob.webp": {
+      "source": "2c25556d6639c377ea151a7060a932cc4847930e0d512a2304365470437f62a9",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-2.webp": {
+      "source": "1361552aaecf8677fc4311afd26dc3d548c87f81295f2684ff958653cb4c7a5b",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-3.webp": {
+      "source": "023e27eae59fa7c40a8848c9502955188ab3f1b7b1159082ed7da9bf2d6536b0",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-4.webp": {
+      "source": "f7ddec7090faaab11cf60ad6b1bef243ea707dd32227782fddee5cc406a4d335",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-5.webp": {
+      "source": "10987d59f7ccb1bc84614faa6c774bfd98244380837b3ed231e2830cf8f5d1e6",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-6.webp": {
+      "source": "55f8d3ac4af28c72c1f1a0cee5330485aee82ebdf2c1766cc2b11c577a45b67a",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-7.webp": {
+      "source": "c6b8ae3b8e0062755767973c51fafc851cf147dd950fdd337e49388c76d9232e",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob-8.webp": {
+      "source": "37482cd57c0a882b63e72ab70bfe40ba8443cdd7fdd2f98b3ae091eb30942108",
+      "status": "already-clean"
+    },
+    "ka5-a012-door-knob.webp": {
+      "source": "7b2e2237904a4105dc4e333f58b127994e38d746a6b7cb1ddad60ff739af9e33",
+      "status": "already-clean"
+    },
+    "ka82-9902-lever-handle-2.webp": {
+      "source": "9b24e2dc7c34a0519421c5b7329080e67803c12ba6bb0937ab83466075917c3d",
+      "status": "already-clean"
+    },
+    "ka82-9902-lever-handle-3.webp": {
+      "source": "d4e9b5b497840e7525d333bd5d74d970c6ed02c1a927528e93bdec2c9bd58a3e",
+      "status": "already-clean"
+    },
+    "ka82-9902-lever-handle-4.webp": {
+      "source": "d2e559ea814e13549e4f1b81a5f4e65b80bf401714797aaf55e2136880e39683",
+      "status": "already-clean"
+    },
+    "ka82-9902-lever-handle-5.webp": {
+      "source": "adf32639890f1ba9129f4625888b59936b506c493d4ad0a00a1a190f5744c5d4",
+      "status": "already-clean"
+    },
+    "ka82-9902-lever-handle.webp": {
+      "source": "775e521aac162b6fe092fc135d9852702b5e9e8e683d02e75c3ea54325f8878a",
+      "status": "already-clean"
+    },
+    "ka82-9903-lever-handle-2.webp": {
+      "source": "cd7d7f6be7458c64440872e47fb1c1ae3fd1934ab8fa0fcfbd5e688a4ea38cb8",
+      "status": "already-clean"
+    },
+    "ka82-9903-lever-handle-3.webp": {
+      "source": "afac1f9ee8bf5044b77b0a003e06fa94e92183925a9c229a8032a129a8332849",
+      "status": "already-clean"
+    },
+    "ka82-9903-lever-handle-4.webp": {
+      "source": "23a2d064e958709d25c8a49975135b83aababe8bd78db46c3d1fb13c9bc225a8",
+      "status": "already-clean"
+    },
+    "ka82-9903-lever-handle-5.webp": {
+      "source": "ee17d083f5f2786132604eb4dcee3a47c978081d19bcdd34aa35140e1806eb86",
+      "status": "already-clean"
+    },
+    "ka82-9903-lever-handle.webp": {
+      "source": "4cfd153704b9c0a0b7c91493c45c1b83e8192e3838d061dd6e610c6e7981f24e",
+      "status": "already-clean"
+    },
+    "ka87-9931-lever-handle-2.webp": {
+      "source": "1f75b7703cb42671e1311f7b7762febb2deeda5cc70652f18e842ad8e8be2e77",
+      "status": "already-clean"
+    },
+    "ka87-9931-lever-handle-3.webp": {
+      "source": "ed91eb1f3c7120273770679e74b3a98c067476c6bbf6a3cbab1d66f4add9f65c",
+      "status": "already-clean"
+    },
+    "ka87-9931-lever-handle-4.webp": {
+      "source": "ae91578df1625bfdba55a099b27f4b9cd2d2a5a936397580d336d6259f356b50",
+      "status": "already-clean"
+    },
+    "ka87-9931-lever-handle-5.webp": {
+      "source": "3f4edcaa453d0dd6cbe77b45ae77d6148bf2ab63cfd4c93bef451290f43b7ce8",
+      "status": "already-clean"
+    },
+    "ka87-9931-lever-handle.webp": {
+      "source": "a7403de65fe4eef7713549696c2d393af6ae83d30d88ec81cad86314bce23be9",
+      "status": "already-clean"
+    },
+    "ka9-2004-lever-handle-2.webp": {
+      "source": "fc190773f7e52cf1a98bfdaf07df35afeaeea607ab9b141b8f2c7a901d2bfc34",
+      "status": "already-clean"
+    },
+    "ka9-2004-lever-handle-3.webp": {
+      "source": "8946827414b85c65483f3ffae378f0f6ba54bd717a1547e93125a00bb2b6cb5a",
+      "status": "already-clean"
+    },
+    "ka9-2004-lever-handle-4.webp": {
+      "source": "b79372b6a02cb4e78c91dae9a15a25b0bd77fe9a75b411bd22a258136d91ba7d",
+      "status": "already-clean"
+    },
+    "ka9-2004-lever-handle-5.webp": {
+      "source": "a6139c8734b68be02afd908f9f8769487a69ca9a960d36c93b75c1e024bd1ee9",
+      "status": "already-clean"
+    },
+    "ka9-2004-lever-handle.webp": {
+      "source": "f46a7981698f5a880fff54dd970abeb88cf57578346ff6aa1471f210f3d53c5a",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-2.webp": {
+      "source": "8c0c1d472257cf3d9d911c707d531a61b549ff282cf0245d26291b281f034b50",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-3.webp": {
+      "source": "2e1eb0531b9a4ba027974b4f46753cc99d0971617c6306284c36b62e4f404aed",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-4.webp": {
+      "source": "68cb9aac597c4510d5902da7c3345cf452aec2b79acee8c687f1c7e938a04457",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-5.webp": {
+      "source": "d0d39fda8935343aea7c2741f5abca52f3150309a0d52b951d60875f752955b6",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-6.webp": {
+      "source": "e4d0114f90bc7fb93501e09c032b54048732e12e2583b3fd0d433edc7f8ebfa6",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle-7.webp": {
+      "source": "f89ee3cd582f398e44931b9f5dc9fcf3e3a5dd37e01aa1f7515f3c0891339f53",
+      "status": "already-clean"
+    },
+    "ka9-2005-lever-handle.webp": {
+      "source": "b6c16baa17923fca700b80680492270983fa9d08e51538ca3eb077d4657a3d63",
+      "status": "already-clean"
+    },
+    "ka9-9906-lever-handle-2.webp": {
+      "source": "daa14d5c14b751200b6eff184f3a405904deed1544cf41e7ddbc7b9150d29b3b",
+      "status": "already-clean"
+    },
+    "ka9-9906-lever-handle-3.webp": {
+      "source": "576c6e00ff2ef13d39354841e25ceb746133c98ac4f65b6a1755c78070d060ed",
+      "status": "already-clean"
+    },
+    "ka9-9906-lever-handle-4.webp": {
+      "source": "323489014e001fd754e6e1568d619f30ac3256df05b6575c347cce2dcad343f7",
+      "status": "already-clean"
+    },
+    "ka9-9906-lever-handle-5.webp": {
+      "source": "0a6f3981b06d08d783871d47f1b9cc733e7bf0e97e48c8948acd1324365a7b3a",
+      "status": "already-clean"
+    },
+    "ka9-9906-lever-handle.webp": {
+      "source": "a61d58e6a07f736f3ee084f867fa952c73ac9da47ef6a3da4df27377a04a5273",
+      "status": "already-clean"
+    },
+    "ka9-9918-lever-handle-2.webp": {
+      "source": "544e4cf3c9b9917a0f7d16ca285385a5519faf1d129df78100cac1415a530f3a",
+      "status": "already-clean"
+    },
+    "ka9-9918-lever-handle-3.webp": {
+      "source": "92572a91ed5ebeb12a90c07d964a5f48173d029b3c96c02ce8c43b43b0815d4e",
+      "status": "already-clean"
+    },
+    "ka9-9918-lever-handle-4.webp": {
+      "source": "df9061b278d4a2903a63ba14d88206e2fe2099e2c591392fbf930d93b937f54e",
+      "status": "already-clean"
+    },
+    "ka9-9918-lever-handle-5.webp": {
+      "source": "ba193e0b938e73934a2a491ba07be3657cb5c4a5038a5037ecfacc6225517957",
+      "status": "already-clean"
+    },
+    "ka9-9918-lever-handle.webp": {
+      "source": "2737be1c70865cffd8f0b11f1f57133d39ec2333297ee5f71b374b27c7c853b7",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle-2.webp": {
+      "source": "ca62b094638fa2db9744f86126dafa145a223f097d0574aab0e96e9f93569344",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle-3.webp": {
+      "source": "09e0fc1adeca4b7359039e2078c47dbf34662ebeee4712c674f96a130ed977e6",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle-4.webp": {
+      "source": "d109ac38695fe5ced3ef949b12d4c76e1a4034bbd4596ee79506dacbdafe4e84",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle-5.webp": {
+      "source": "1bccd7495cb22945dee6c5f3b31c31c917d7fc3274f0fbc74a1a1524f74f6a12",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle-6.webp": {
+      "source": "a586ca56e2aa379ee9bb64d254f1b590dba6eaa9b1cff15d7c42b73ca68414cc",
+      "status": "already-clean"
+    },
+    "ka9-9920-lever-handle.webp": {
+      "source": "2e661bd16a30ba5e64d1169da2807f6ddd49823123561041a15e29d4ba6e01e8",
+      "status": "already-clean"
+    },
+    "ka9-9924-lever-handle-2.webp": {
+      "source": "70517a4fdcd7e56d9ecf7247b9880ace8ac49c9ba02f59ebb57bc1ec9df3d413",
+      "status": "already-clean"
+    },
+    "ka9-9924-lever-handle-3.webp": {
+      "source": "5968a07c4074adaa9716208573f46f4bca241f1240a87a6b2f73749598faf2e1",
+      "status": "already-clean"
+    },
+    "ka9-9924-lever-handle-4.webp": {
+      "source": "17edf84bcd7cedce2c61e1dc666d2af91347ebbb348a8d9d0763eed303c37a9d",
+      "status": "already-clean"
+    },
+    "ka9-9924-lever-handle-5.webp": {
+      "source": "5a6c441b3b37f522e31df1663d68305ad6ed6e9f3551236f26712832cea7ee13",
+      "status": "already-clean"
+    },
+    "ka9-9924-lever-handle.webp": {
+      "source": "8fdb422aa76948b9b3347a4180536c6b92ab4ba0951dc91f90e4ed804b53153f",
+      "status": "already-clean"
+    },
+    "ka9-9929-lever-handle-2.webp": {
+      "source": "1eda19f4305c9dcb13c680c674f8787cc33b629b87409ccedc07b1cf190dec7e",
+      "status": "already-clean"
+    },
+    "ka9-9929-lever-handle-3.webp": {
+      "source": "1d3455b62f8af307a94d02af0b70750e3f6ec807deba3414e88c77c9f905f27b",
+      "status": "already-clean"
+    },
+    "ka9-9929-lever-handle-4.webp": {
+      "source": "701de939e38097d2df7541805c8b5efca3053878c7729d8a342f8c3fcf612b4b",
+      "status": "already-clean"
+    },
+    "ka9-9929-lever-handle-5.webp": {
+      "source": "34d2ab81a7953290944533ea6f53d22a389429af3facb7d881904dbe15b0f96d",
+      "status": "already-clean"
+    },
+    "ka9-9929-lever-handle.webp": {
+      "source": "01fb5df6cbc49b045c936c8403223e9de302f94dd3dea595fed03c6ff0c4959c",
+      "status": "already-clean"
+    },
+    "ka9-9930-lever-handle-2.webp": {
+      "source": "1eda19f4305c9dcb13c680c674f8787cc33b629b87409ccedc07b1cf190dec7e",
+      "status": "already-clean"
+    },
+    "ka9-9930-lever-handle-3.webp": {
+      "source": "cf8708089d3d283239c78a9a839817a6bc50ad79220bf5fd865369bbeaece50a",
+      "status": "already-clean"
+    },
+    "ka9-9930-lever-handle-4.webp": {
+      "source": "e2eda6e715a4d6ddd03e261693badbe6871779a8f81d6a06b9790db1865a92c2",
+      "status": "already-clean"
+    },
+    "ka9-9930-lever-handle-5.webp": {
+      "source": "fd6cd08965fbc4a27e595f1c1a18175ec1607621523459dec2b7130bc8b72a7b",
+      "status": "already-clean"
+    },
+    "ka9-9930-lever-handle.webp": {
+      "source": "01fb5df6cbc49b045c936c8403223e9de302f94dd3dea595fed03c6ff0c4959c",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-2.webp": {
+      "source": "ac31da75555ef34b6c9990c7ec99efe50adaa58cd7c3e5e0b2210c876546fca1",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-3.webp": {
+      "source": "d2642065a92a569c02c7fb577fcaeef5f4ab45ff23838581bdf865c4d6bd0a3d",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-4.webp": {
+      "source": "c55c462452d329008916bf8df76494c345dd02edae167fff8307b4fd3c73573f",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-5.webp": {
+      "source": "5eec32f388903f1dba7390963edd24e2333949c35f13aa81564e0544feda3a66",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-6.webp": {
+      "source": "41eeead0411961ea1b69ea45c3ba01b2b6c07b3f17b03760677e051332362ce2",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle-7.webp": {
+      "source": "8a8df7e3e3e68feb886b652a2f7e7fd104397936cd4035f0b4a814678db75b07",
+      "status": "already-clean"
+    },
+    "ka9-9933-lever-handle.webp": {
+      "source": "58161e4ff6c36d3a3068fff0b103e22c296013fe94a532a717f4765e843d14ea",
+      "status": "already-clean"
+    },
+    "ka9-9941-lever-handle-2.webp": {
+      "source": "a12ef7f99ff7f9e01d681cb736a24cdbc3e9ec198ea7cf841472b6d83b658556",
+      "status": "already-clean"
+    },
+    "ka9-9941-lever-handle-3.webp": {
+      "source": "a0911243791b433bc73ce939b5b32631c27ff42244daa2b3d391a979f540640e",
+      "status": "already-clean"
+    },
+    "ka9-9941-lever-handle-4.webp": {
+      "source": "31f3ccaf527d5640939a9dcbb665c00362d2d793fa0aa59615670373e3f2eca5",
+      "status": "already-clean"
+    },
+    "ka9-9941-lever-handle-5.webp": {
+      "source": "dcc48e15185ee8e3885f66284c7caf9e2a8005f1f16545b635e106db39d9c4c3",
+      "status": "already-clean"
+    },
+    "ka9-9941-lever-handle.webp": {
+      "source": "450b3a47d7391b436cebe90da463ee67646a1d71548c11a5efb834c715094068",
+      "status": "already-clean"
+    },
+    "ka9-9942-lever-handle-2.webp": {
+      "source": "a12ef7f99ff7f9e01d681cb736a24cdbc3e9ec198ea7cf841472b6d83b658556",
+      "status": "already-clean"
+    },
+    "ka9-9942-lever-handle-3.webp": {
+      "source": "ec27bd7c92e5152dbc46b4d10bc099fcf5fe73ed307059f2195aca69b4cb2921",
+      "status": "already-clean"
+    },
+    "ka9-9942-lever-handle-4.webp": {
+      "source": "237108c6e6dbb3b3378e54d0a7949ff601aa503b90c78f9d6820cef2ea75492e",
+      "status": "already-clean"
+    },
+    "ka9-9942-lever-handle-5.webp": {
+      "source": "df0838800f7910f7bdd60dd622453d70b7426dfeb79226b742472f456dcf2bbe",
+      "status": "already-clean"
+    },
+    "ka9-9942-lever-handle.webp": {
+      "source": "450b3a47d7391b436cebe90da463ee67646a1d71548c11a5efb834c715094068",
       "status": "already-clean"
     },
     "l001-latch.webp": {

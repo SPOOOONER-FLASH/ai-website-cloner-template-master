@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4127,
+  "count": 4267,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -72080,6 +72080,2526 @@
       },
       "sourceSha256": "cef411d28c340caae47ebe6ee03e49bcd9d422634d133bae79571babe4d860a3",
       "outputSha256": "8507ccca91646bf0c2441f4ff929367a7ce60f45c8aecb4340e948465b3ad4ef"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-10.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-10.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8b5397202fe6e37cc95f63215ea34c2b0f9a7e03a16196b96de0bcf9c4b9b075",
+      "outputSha256": "fb8dbc18f69bafdefee6bad0600d49f8e1da26a4678d568c399f49040bbdcd79"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-11.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-11.webp",
+      "width": 501,
+      "height": 501,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4129b9b21a9aecdb42e5d5320cb65003a14b260005615834d3ae7c3013c74561",
+      "outputSha256": "58fa28886b15053a06a404b457fc33e0e32bc5c837a00aef7acc8dd6e8f3c988"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ea86e35aa40b29f71bf424291b23fe7526eab940c99698c2263851812bc13e21",
+      "outputSha256": "0e608f8c4d01bf3f8fb82e2837fc0828feafd410feb917fc9c2ec61b89b6fc0d"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-3.webp",
+      "width": 507,
+      "height": 507,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bc4ea97bdb9e014ebca67f7c16d068350e1f8ce9f30d70d847028d0d47fc7916",
+      "outputSha256": "4e26d8eba497afcf7442c9fe735a9978fc451bb3437aa00f7c3cb1012c894d13"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-4.webp",
+      "width": 506,
+      "height": 506,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "70c9fde3a2fe5f78b131d2136efa3383ccf77c9175c6f5df7a28a8b59a99a98d",
+      "outputSha256": "b9716ee6ba670e98a006135ea16ecf447dafd63eab8b0dbc6a4e92bfeebdcbf4"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-5.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5789d3baa2379d2c3bf996d576837ee7a533afbca00cc185e1fb9dbe023ac6b6",
+      "outputSha256": "614148768879417326f1da0572b201f34753e1118a81beec82d1a20687f4a9ae"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-6.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6d9f6534c3d4439b0a04715b983b6e3f4e7cf94b6c62397d1fcae4e549d5ee38",
+      "outputSha256": "9f61b85a81564120ce46d6a6ca68e60309f9d2c5d93f3483937c4ce751b9d81c"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-7.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-7.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b0f1c41aab3ab30a39487ef7a456ab3288f4b9ae47ab711ad50c6f957c5f0812",
+      "outputSha256": "2c2387a40a761af18ee59ee64f7ef9dfcd2e51223aa1d0e884ae31a448b768f2"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-8.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-8.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1de8bac1351040c75edfbf0a1b52788e1a7d9ba7f42131994a778762219472de",
+      "outputSha256": "6a2420e8febfbf682cd47db2937da6ba9e8ac44586b6e27b1c912c4d28b4fc38"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle-9.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle-9.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "232e0ba39802cbaf2d3f7814adcae1503a237306b62e32f3ceabdaf27e0e3780",
+      "outputSha256": "97f8511057c90f693e02bb02a82744ab79ef99d9c64bdf8c32143770f1c9d2b5"
+    },
+    {
+      "source": "public/images/products/ka5-2007-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-2007-lever-handle.webp",
+      "width": 1292,
+      "height": 1292,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8e0dc2a30c196ea448058f2f439a9da4d93dd040e67aa00913958264d24883c0",
+      "outputSha256": "d3fe49a56c9e29a81ee75d03c173f56f7f9d21f50fcc8caad7bbfe0654f0ffc0"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bc6d3d657c7c27ee6749f1dabd5139ef797beb7913d6f45380f840437ef26fc8",
+      "outputSha256": "30e41c39ec2dec49f5c6cf7b28ab1760afb44c419397a316c6645e26d2325c4a"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle-3.webp",
+      "width": 511,
+      "height": 511,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "de4f0d330190df830786438c4d369477d1934118e2bd65e272c8b9eb17b9f8a4",
+      "outputSha256": "7fbac6ce10cfafe3301584747af8252e6a1fc39afec32f0096fbce75f192d9f6"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle-4.webp",
+      "width": 509,
+      "height": 509,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d20a4baaa7190765247ce579fb3c6263b8b67ad165bdc7394e9a41db60cf6f89",
+      "outputSha256": "ec4075ba83a696f736b2de378f23304d1b61be9acc665d79545c541fe9bcc2e3"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle-5.webp",
+      "width": 510,
+      "height": 510,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "99b85801bfc9b13f81acfee4046111ca0836bee159328c5f68207578717fb7f8",
+      "outputSha256": "4ed8cd4552366998ea8b9a7e957d95e76a6a717ec5c3fd9686a5476cf44aa2a7"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle-6.webp",
+      "width": 507,
+      "height": 507,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a89cfee68f88bfa49282ae25c0fba08c979db348453225d2e5cb6c2b97a3c501",
+      "outputSha256": "1f12e744ae7a4486a92c5c71bfacb351ed1ffb1fe92b3dd5d012efba0333d630"
+    },
+    {
+      "source": "public/images/products/ka5-855-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-855-lever-handle.webp",
+      "width": 1370,
+      "height": 1370,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "56ff650eb30dcfca25ba246be8882cd465db810292d46e3204b254f94092ff3e",
+      "outputSha256": "02c301d1d21a60740f73683c4c11bf381ef8a563b390f89699904644caaf3fb2"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "39050e50448d01008cb88d227412724d11f9535840b0ff8aedf7d42e2ddbde7d",
+      "outputSha256": "9893e320ed7e5dd66b48c8454cb62b684d4f3779cd06c93804c681758a4d5852"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle-3.webp",
+      "width": 468,
+      "height": 468,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3a793f982891ceca6043ca07076a6dd3fb101ad92034bfbcc9209b26494bf211",
+      "outputSha256": "246318db1b0d246b994da2153b1c799fad02b74b4a1e773c1ed42c039bc1c40d"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle-4.webp",
+      "width": 464,
+      "height": 464,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0a8e9d862ced836db1a591f3afa1e928ed60257c570e776f7d9014c6f704c726",
+      "outputSha256": "dd67a72e509387cb557258e69f136707f3e5bbf8d6d9cc5c9d1bcdea7a0d95b5"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle-5.webp",
+      "width": 467,
+      "height": 467,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7a873bd901efb6f03382fb87f7a4b3f405564ed8359bb300fde108ae99153d6b",
+      "outputSha256": "e0fa24838fad51747b00f2bdf301759a32ce0dd2f654b0f1e6d9ad8eba2c9820"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle-6.webp",
+      "width": 466,
+      "height": 466,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fae047c95097822901372410d53a01b0c92496b7b62a4134c7e353bf210edabc",
+      "outputSha256": "5bb7b579d29631434818596dad3f7aa418069921b7bb6a470f191d42f50253c5"
+    },
+    {
+      "source": "public/images/products/ka5-916-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-916-lever-handle.webp",
+      "width": 1258,
+      "height": 1258,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3f2c6da19536632200cdea34f3599cfcf4beae299309a486efc0951926f0edb9",
+      "outputSha256": "8d97ae0a312f9902633c9a3129a9e805e31c4ea5d6248a84511a50eb78a8b98c"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f215f4b9479a210bd0207efffcf516afe9d1101cffcfeae09c29f0a3ea7187c5",
+      "outputSha256": "91eaade84e855e90be8fe6cea9584b2b039b087758be6e3a55f29d5934d33072"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle-3.webp",
+      "width": 513,
+      "height": 513,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "42226d575d430d4abee54b19fadeb545a3e1f27547da7b3490f96a97927ddac9",
+      "outputSha256": "dca39366889a1079a7216a9daebf9a9727cbef1aed118557b97c0b7614d05824"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle-4.webp",
+      "width": 517,
+      "height": 517,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fde127cf844cf2238e3e5b57202528660ba9ab9ca06b915d71ee9c736f4297c6",
+      "outputSha256": "835daed8ecbb51d2b6ed8063480fb8b210eaca79839657e12846c4da08002f01"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle-5.webp",
+      "width": 516,
+      "height": 516,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9279546f6aec3a2df1c986a931b4496218455bb03d7eeb798d0e60f537dfa1a8",
+      "outputSha256": "7c524d3ad01dd4ef5b0b8773354b808b5b6de5f579e193cbec41ac5338538a3a"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle-6.webp",
+      "width": 514,
+      "height": 514,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ab31999be137818480f500c9f4c957e8b9daf0f3fda09eea1bdf0c5f8e5f0594",
+      "outputSha256": "c9d82b635187b815df3509fa6aad428443efad7d5f68a393bfd4dc86238ded00"
+    },
+    {
+      "source": "public/images/products/ka5-9911-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-9911-lever-handle.webp",
+      "width": 1376,
+      "height": 1376,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b4fdd46a72423f7d010c5862ee58396205571642d2d8090fb44908d274263721",
+      "outputSha256": "582e46b6896180b15774af5c65df88226c791be331a2776c527c0cf17aba3c63"
+    },
+    {
+      "source": "public/images/products/ka5-9911b-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-9911b-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df988332b23cca6686dde6b6905580b5bddd896c66b90bf9e448feb7216c1ece",
+      "outputSha256": "0af2a595021acef154cc9cf2becdf74e3290964f3092694052e1d15bc5068aa4"
+    },
+    {
+      "source": "public/images/products/ka5-9911b-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-9911b-lever-handle-3.webp",
+      "width": 532,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d1cce9d1a7996f6e78de06d1e044d2459b1cf2363b47120d3f240fa5c5278681",
+      "outputSha256": "194b11db8b5f3d7ec646aee849b6ac90d15f7d4961ffbc9372ad788eafeed2c9"
+    },
+    {
+      "source": "public/images/products/ka5-9911b-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-9911b-lever-handle-4.webp",
+      "width": 539,
+      "height": 539,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ad4d835a1950c4dbd390fa2f23668190f14b511614a8f9a7d71c9cd247a08851",
+      "outputSha256": "f7eb164b97b22fba18e0b7d5f5132bcac0fcfb327d8a07d69df98401f68dd51f"
+    },
+    {
+      "source": "public/images/products/ka5-9911b-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-9911b-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0f550605102a9a469cf13d11c7634268b7082488e6a62851cdfb6386626312aa",
+      "outputSha256": "33482506ac6a5a96583708589de868545cac17c28fccb8b31666b0c64f113df0"
+    },
+    {
+      "source": "public/images/products/ka5-9919-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-9919-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "254a4c20e285f3298f69681887132c4a2b9802b337bba2ba5a3d912795ab1c6c",
+      "outputSha256": "0f2ee50a2143ee3ab162b94245225dced4cdc48af07ad692d200954614d67f45"
+    },
+    {
+      "source": "public/images/products/ka5-9919-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-9919-lever-handle-3.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fa22b858c0657ac90d19c35473ad616c1e1d38320fffa244e523600c9d05d4c1",
+      "outputSha256": "7aec288cfda78e4017fade98265e89110bb8d997c3733612c383e82eaae7f651"
+    },
+    {
+      "source": "public/images/products/ka5-9919-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-9919-lever-handle-4.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "33865dbec7df8d30d0be9f4d1167d3f35f5da37845fecf84f64ceb5caf487ee3",
+      "outputSha256": "27806455e0ca1b07a763147eb75c8df317aaca947e00a2b6ba45d26e2cebc38c"
+    },
+    {
+      "source": "public/images/products/ka5-9919-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-9919-lever-handle-5.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7d5baf5f8196a6dc881a72e70729e008acb22d3fdbf99a33c88fee01c55b9987",
+      "outputSha256": "14bd9e38b572e258472209f2710d750dba196f8c240004475ccfa1f52ae2abd7"
+    },
+    {
+      "source": "public/images/products/ka5-9919-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-9919-lever-handle.webp",
+      "width": 1318,
+      "height": 1318,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8b921afe0851278d6a1dfec191fb281a27483c96c042292ae7f845f570f0b9f5",
+      "outputSha256": "88d1273526366a464d04e77950d125f3fe2c546f5105bbc3595c925127128516"
+    },
+    {
+      "source": "public/images/products/ka5-9922-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-9922-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4a132711de44e577d5d5e9c5c8bc162849693d2ca8b7a9ba219b6c44741cbab3",
+      "outputSha256": "74ce4c1416b06c1d9fb0cce38bb9e94124779dda8e9b5dbe3f8cdaf02ef7a76e"
+    },
+    {
+      "source": "public/images/products/ka5-9922-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-9922-lever-handle-3.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "49de38cbe03d9324a31c94fd5968de6c5794fa55dcd6c58d6f16b0cbd17fe606",
+      "outputSha256": "d0ca045b8b55446d101ccb2637a0695d78c57723e6a5a970607c529a75cde92e"
+    },
+    {
+      "source": "public/images/products/ka5-9922-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-9922-lever-handle-4.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5bc90eacdcb54d557a2af18b7a7f8017119672ebad37e9d7c4b12040beb6389d",
+      "outputSha256": "81e18b6265a598bc35686e98aa74605579eae0dbfb3589258da013580529ddf2"
+    },
+    {
+      "source": "public/images/products/ka5-9922-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-9922-lever-handle-5.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e59fbe4e59a998cad47ef40057165dda935d48234a84c1355cb3f5c0687b88b9",
+      "outputSha256": "3b6be860a5883653b4572728bb6c29c99f13804e8abc852ca42c28046a45dec5"
+    },
+    {
+      "source": "public/images/products/ka5-9922-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-9922-lever-handle.webp",
+      "width": 1296,
+      "height": 1296,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "318920958efaad89a3f266ca32675e9a8865d3ced96c58bc6f974d1471b59190",
+      "outputSha256": "8e6e574fc1fab7ccf0d441f5268d7c1271faa322a4496669db0995ff26c71dbf"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "975613f319297b63b808cd41309cfb24960d758a52ce84dd8c88f09bd83d0305",
+      "outputSha256": "0737a5073851e35b87482a3182aa06a93cee4bfd23b0d2cd0b8b476efb0b069a"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-3.webp",
+      "width": 530,
+      "height": 530,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f8400ead703df73a85e9bb5f32f466edd4f6cca9d1de41616e38bac20283bdc5",
+      "outputSha256": "ad896492d0e164224f6f41fead505b6b39537e5b37985ba7f11838e3f668d804"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-4.webp",
+      "width": 530,
+      "height": 530,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bad48fadae0ac45d167215aa7d5876eca9926954596af4f9d5c4930038852e1d",
+      "outputSha256": "eff58c4c4ff4104a9af8414b0e0b6293fd1b5c813d8d7bf932c324f44ca451f8"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-5.webp",
+      "width": 532,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "75679289e050fff84f057e4e61921650b3e8cf74e0dba98d376885fb689b6a5d",
+      "outputSha256": "c4a005772ee38efa25208ddf73bcfebfd19edba85181b89cc4affdd843d729b5"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-6.webp",
+      "width": 532,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "147ea9c182241ac00ed9b85ea2ecaa4ca003697554ee69032376afaa2ee348c7",
+      "outputSha256": "22b570996602302cc0472d3e43032c957e13391a133f39b0fa8aa6cea0a5556a"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-7.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-7.webp",
+      "width": 529,
+      "height": 529,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ab8bb2a610f6e0c4b63c7970df4614bb6a0458209124ae2824b596a56bfae9c6",
+      "outputSha256": "6854afe9aaa33c36b4a690139c0126e74c5af7b4982a512395d883c08b804652"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle-8.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle-8.webp",
+      "width": 532,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "68ff46d54ea248bb52bbff90d89c8623500d935c96d06a7e87eb9c0cc61c3048",
+      "outputSha256": "84b9a6a367ebe0774f6771c4e462a5992d6790467c9a18ab26aa58179645d032"
+    },
+    {
+      "source": "public/images/products/ka5-9936-lever-handle.webp",
+      "output": "public/images/products-hyde/ka5-9936-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f994827e854c9db6ad349a19ee8c6dff106d4b614c30602ed8a05e656e3c65e2",
+      "outputSha256": "1a57022e47968ecd884b275c3a8ab8aacc2a8d6e84f8940938c63b0356de64a6"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob-2.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1307ced4cfd8bc7e0e31888776b1bb797879e9acd1933ce12fcbf751c3a51a8e",
+      "outputSha256": "c9b998bc7002f6aedd2bf1fb072cc5094f15883f752ce714e85ecccb400d1d25"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob-3.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob-3.webp",
+      "width": 259,
+      "height": 259,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b8141ba002a09c8e5d268afe3664f9c098e75ccdb02092d932d2da00f90707f9",
+      "outputSha256": "496c3ccaac7cbd7222e53c56e5b8da30d8fdbb40893fef4f93e65d65dda1f075"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob-4.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob-4.webp",
+      "width": 259,
+      "height": 259,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d6d6770e47d751710b1db64d9f38f5f242717bd221826a566afff49fdc60dc7a",
+      "outputSha256": "b7cc537176bf911d73910d19e271f08b8be3d156b4d4d48bd3b6b8b111f51d1a"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob-5.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob-5.webp",
+      "width": 260,
+      "height": 260,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "37b53dc25fb2e05589d2bdfd7fe93884bc1fc7ed24bb9b9cd19717f786b5a117",
+      "outputSha256": "228e95a7b11854c392a6eb2d744c00ecadff7bb4f87c2b635e3d6ea55e7ee2d1"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob-6.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob-6.webp",
+      "width": 255,
+      "height": 255,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d81dbae3ebee384b2cf660b09c6eae20dd25ab8fd9eeaf22061d608ee81b8432",
+      "outputSha256": "109e4a9db44616af343c735cb1a0a7a8f46da7bdfd2a4e6f4e00db75053f8785"
+    },
+    {
+      "source": "public/images/products/ka5-a011-door-knob.webp",
+      "output": "public/images/products-hyde/ka5-a011-door-knob.webp",
+      "width": 956,
+      "height": 956,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2c25556d6639c377ea151a7060a932cc4847930e0d512a2304365470437f62a9",
+      "outputSha256": "fd96bb156df5695d7e890a7e7d56842e75cb5ee9d4e92eb01ec5641636d7ac0e"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-2.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1361552aaecf8677fc4311afd26dc3d548c87f81295f2684ff958653cb4c7a5b",
+      "outputSha256": "c9d1284b1dda4df2e9190a599408345f63bf36b615021bd3b7352efd51c52450"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-3.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-3.webp",
+      "width": 259,
+      "height": 259,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "023e27eae59fa7c40a8848c9502955188ab3f1b7b1159082ed7da9bf2d6536b0",
+      "outputSha256": "9fad6a27268b86d10f7996f65f70145721a7c666c42d3ebe3ed2a91197fbe686"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-4.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-4.webp",
+      "width": 255,
+      "height": 255,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f7ddec7090faaab11cf60ad6b1bef243ea707dd32227782fddee5cc406a4d335",
+      "outputSha256": "7b0dcf38ebf19d04e400f70d7350ff92c79c28703b19659a0a56ea886bd6d7a9"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-5.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-5.webp",
+      "width": 259,
+      "height": 259,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "10987d59f7ccb1bc84614faa6c774bfd98244380837b3ed231e2830cf8f5d1e6",
+      "outputSha256": "12e014513a6484a0d6c98da8c07755bbef1f81d381b043e1df66d09e4b2ca556"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-6.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-6.webp",
+      "width": 255,
+      "height": 255,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "55f8d3ac4af28c72c1f1a0cee5330485aee82ebdf2c1766cc2b11c577a45b67a",
+      "outputSha256": "095c9057825ff5d9b319489657834353abf021f69009b37116076be6a7fb577e"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-7.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-7.webp",
+      "width": 259,
+      "height": 259,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c6b8ae3b8e0062755767973c51fafc851cf147dd950fdd337e49388c76d9232e",
+      "outputSha256": "ee535ac9b51bbf063be3968895ce6c43ca71dd8be28ba72faabf0b88796ffee5"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob-8.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob-8.webp",
+      "width": 255,
+      "height": 255,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "37482cd57c0a882b63e72ab70bfe40ba8443cdd7fdd2f98b3ae091eb30942108",
+      "outputSha256": "c76ddead9cec7ed6637787fcdcb623bbf3077f6b76842662fef07cbc9c91dd37"
+    },
+    {
+      "source": "public/images/products/ka5-a012-door-knob.webp",
+      "output": "public/images/products-hyde/ka5-a012-door-knob.webp",
+      "width": 956,
+      "height": 956,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 115,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7b2e2237904a4105dc4e333f58b127994e38d746a6b7cb1ddad60ff739af9e33",
+      "outputSha256": "3162a23a22cfe919d84e275368f4ab4c938ee4d386b4aae3190007095aa2b04d"
+    },
+    {
+      "source": "public/images/products/ka82-9902-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka82-9902-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9b24e2dc7c34a0519421c5b7329080e67803c12ba6bb0937ab83466075917c3d",
+      "outputSha256": "0bdea8e726bf039aab430fe24aece499cd40a49cc34670e9aa0cd220b0a8f2ad"
+    },
+    {
+      "source": "public/images/products/ka82-9902-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka82-9902-lever-handle-3.webp",
+      "width": 508,
+      "height": 508,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d4e9b5b497840e7525d333bd5d74d970c6ed02c1a927528e93bdec2c9bd58a3e",
+      "outputSha256": "4a9840a3f5f173f6a6880cb4de0b29cb0ea99c2026d8b5f86ac6a9eb4ba13077"
+    },
+    {
+      "source": "public/images/products/ka82-9902-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka82-9902-lever-handle-4.webp",
+      "width": 506,
+      "height": 506,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d2e559ea814e13549e4f1b81a5f4e65b80bf401714797aaf55e2136880e39683",
+      "outputSha256": "c945475fa92fb4258c946755e15da8497bc77726601160cbb210c826fb906b2b"
+    },
+    {
+      "source": "public/images/products/ka82-9902-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka82-9902-lever-handle-5.webp",
+      "width": 508,
+      "height": 508,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "adf32639890f1ba9129f4625888b59936b506c493d4ad0a00a1a190f5744c5d4",
+      "outputSha256": "55bbc13102489208c4cf94dd7ef04a99ed293b3999b060d3ff201d3ca118451d"
+    },
+    {
+      "source": "public/images/products/ka82-9902-lever-handle.webp",
+      "output": "public/images/products-hyde/ka82-9902-lever-handle.webp",
+      "width": 1295,
+      "height": 1295,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "775e521aac162b6fe092fc135d9852702b5e9e8e683d02e75c3ea54325f8878a",
+      "outputSha256": "af008ab0a86883517cc15c898184e9682b1614e10c3871c43bd42e11c7885be9"
+    },
+    {
+      "source": "public/images/products/ka82-9903-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka82-9903-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cd7d7f6be7458c64440872e47fb1c1ae3fd1934ab8fa0fcfbd5e688a4ea38cb8",
+      "outputSha256": "1830f96a5e522f1ba2963803ed22c6f87277ea4014775aef349bb5d635db358a"
+    },
+    {
+      "source": "public/images/products/ka82-9903-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka82-9903-lever-handle-3.webp",
+      "width": 504,
+      "height": 504,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "afac1f9ee8bf5044b77b0a003e06fa94e92183925a9c229a8032a129a8332849",
+      "outputSha256": "6ba4ca4f6a6d1f132f1da86d3509cdcf555a12edd9d536d4453003d8e000ebde"
+    },
+    {
+      "source": "public/images/products/ka82-9903-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka82-9903-lever-handle-4.webp",
+      "width": 506,
+      "height": 506,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "23a2d064e958709d25c8a49975135b83aababe8bd78db46c3d1fb13c9bc225a8",
+      "outputSha256": "973a8ea0410d00276a11565c4cfa0817d29ee98e08e9005ab0175893115d4628"
+    },
+    {
+      "source": "public/images/products/ka82-9903-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka82-9903-lever-handle-5.webp",
+      "width": 486,
+      "height": 486,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ee17d083f5f2786132604eb4dcee3a47c978081d19bcdd34aa35140e1806eb86",
+      "outputSha256": "1cae8a8f1a3802d9b635830f3daec48700725477b91d46d03f391aefc0d75f71"
+    },
+    {
+      "source": "public/images/products/ka82-9903-lever-handle.webp",
+      "output": "public/images/products-hyde/ka82-9903-lever-handle.webp",
+      "width": 1281,
+      "height": 1281,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4cfd153704b9c0a0b7c91493c45c1b83e8192e3838d061dd6e610c6e7981f24e",
+      "outputSha256": "013172b06453cd38cdeb9752a1ae01084d35a0e0a118961d3d8c8afa1655e37a"
+    },
+    {
+      "source": "public/images/products/ka87-9931-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka87-9931-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1f75b7703cb42671e1311f7b7762febb2deeda5cc70652f18e842ad8e8be2e77",
+      "outputSha256": "a1b4da579a06a6552653a0086193ab1974589d767d120d9dff3f882012348222"
+    },
+    {
+      "source": "public/images/products/ka87-9931-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka87-9931-lever-handle-3.webp",
+      "width": 540,
+      "height": 540,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ed91eb1f3c7120273770679e74b3a98c067476c6bbf6a3cbab1d66f4add9f65c",
+      "outputSha256": "90be34cf4065a1d25af256dc42d3afc1e1104f1f3d3b5ed0cd859f7e3b3ccf0b"
+    },
+    {
+      "source": "public/images/products/ka87-9931-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka87-9931-lever-handle-4.webp",
+      "width": 536,
+      "height": 536,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ae91578df1625bfdba55a099b27f4b9cd2d2a5a936397580d336d6259f356b50",
+      "outputSha256": "01d46807927c53f7a02a97cca1907c20bb3e02e12ffd4260932de6358c49bc9f"
+    },
+    {
+      "source": "public/images/products/ka87-9931-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka87-9931-lever-handle-5.webp",
+      "width": 536,
+      "height": 536,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3f4edcaa453d0dd6cbe77b45ae77d6148bf2ab63cfd4c93bef451290f43b7ce8",
+      "outputSha256": "f312bfc2b7093a88380191d889de6204e5c51dc424456bb6ffb6c2166029d085"
+    },
+    {
+      "source": "public/images/products/ka87-9931-lever-handle.webp",
+      "output": "public/images/products-hyde/ka87-9931-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a7403de65fe4eef7713549696c2d393af6ae83d30d88ec81cad86314bce23be9",
+      "outputSha256": "16f3598642aee22e92ceaf3e8ff5b2df74ad13077cef152a189e4f365afa263f"
+    },
+    {
+      "source": "public/images/products/ka9-2004-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-2004-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fc190773f7e52cf1a98bfdaf07df35afeaeea607ab9b141b8f2c7a901d2bfc34",
+      "outputSha256": "646b7f00524c179a766352ded02063e96a6d0871e57006613fe1f674bba8cc80"
+    },
+    {
+      "source": "public/images/products/ka9-2004-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-2004-lever-handle-3.webp",
+      "width": 460,
+      "height": 460,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8946827414b85c65483f3ffae378f0f6ba54bd717a1547e93125a00bb2b6cb5a",
+      "outputSha256": "5d7f712e932fce1ec615f77e5b575808d2cc6cb4709abf86948075810490bae0"
+    },
+    {
+      "source": "public/images/products/ka9-2004-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-2004-lever-handle-4.webp",
+      "width": 468,
+      "height": 468,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b79372b6a02cb4e78c91dae9a15a25b0bd77fe9a75b411bd22a258136d91ba7d",
+      "outputSha256": "802db54e4551b80352395004fd13e455ffeb112fafe48bafc86eb36ae0a17070"
+    },
+    {
+      "source": "public/images/products/ka9-2004-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-2004-lever-handle-5.webp",
+      "width": 482,
+      "height": 482,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a6139c8734b68be02afd908f9f8769487a69ca9a960d36c93b75c1e024bd1ee9",
+      "outputSha256": "1259e359670109ee16fb791da6433bacf73e06da360e46f0d9d7be0969f9c9cf"
+    },
+    {
+      "source": "public/images/products/ka9-2004-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-2004-lever-handle.webp",
+      "width": 1238,
+      "height": 1238,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f46a7981698f5a880fff54dd970abeb88cf57578346ff6aa1471f210f3d53c5a",
+      "outputSha256": "467e4c73c17c723187e6b08be5daad5c658dbb1c44e2aa48db2b9dd4ed1b7fd9"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8c0c1d472257cf3d9d911c707d531a61b549ff282cf0245d26291b281f034b50",
+      "outputSha256": "47eb1e5986c18df6c046266c1fb65fd94759a88de5d24820793b2c973d9e5f6a"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-3.webp",
+      "width": 478,
+      "height": 478,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e1eb0531b9a4ba027974b4f46753cc99d0971617c6306284c36b62e4f404aed",
+      "outputSha256": "8de6ce70cb0d29ec165c3c65c4cc08ac28f2e65e80e267ae9d2250e78a0ee03a"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-4.webp",
+      "width": 476,
+      "height": 476,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "68cb9aac597c4510d5902da7c3345cf452aec2b79acee8c687f1c7e938a04457",
+      "outputSha256": "915b83c51aa3975ff054145709af940b8f7a7c70beda6746b0b66c64fd9068f4"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-5.webp",
+      "width": 466,
+      "height": 466,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d0d39fda8935343aea7c2741f5abca52f3150309a0d52b951d60875f752955b6",
+      "outputSha256": "060eef56770a113e29b591986804aa74912ba8b505d9d3f0f51db5c38d75d1b2"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-6.webp",
+      "width": 471,
+      "height": 471,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e4d0114f90bc7fb93501e09c032b54048732e12e2583b3fd0d433edc7f8ebfa6",
+      "outputSha256": "bb53196794535cc8763e9eab5deb709f5d488dd22b333b1813b4080f832c80d5"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle-7.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle-7.webp",
+      "width": 465,
+      "height": 465,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f89ee3cd582f398e44931b9f5dc9fcf3e3a5dd37e01aa1f7515f3c0891339f53",
+      "outputSha256": "1d027ce5a5ecfb3e3bfb3fa5e21780685260233011589923fe6a48050feb4bb9"
+    },
+    {
+      "source": "public/images/products/ka9-2005-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-2005-lever-handle.webp",
+      "width": 1244,
+      "height": 1244,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b6c16baa17923fca700b80680492270983fa9d08e51538ca3eb077d4657a3d63",
+      "outputSha256": "5a1701d321c2b863a3e9dcc34ec0be11196c90aa49c2bb86d2c843b1e2a35ce8"
+    },
+    {
+      "source": "public/images/products/ka9-9906-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9906-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "daa14d5c14b751200b6eff184f3a405904deed1544cf41e7ddbc7b9150d29b3b",
+      "outputSha256": "22a58278c2c7b53f3edd1fd764fabd24d5b354c8bc781ce9e0a5a370d6d37521"
+    },
+    {
+      "source": "public/images/products/ka9-9906-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9906-lever-handle-3.webp",
+      "width": 496,
+      "height": 496,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "576c6e00ff2ef13d39354841e25ceb746133c98ac4f65b6a1755c78070d060ed",
+      "outputSha256": "06c4a823cd55754260ac214a12806342c174b3915b0d9feec108e348d94f5a14"
+    },
+    {
+      "source": "public/images/products/ka9-9906-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9906-lever-handle-4.webp",
+      "width": 504,
+      "height": 504,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "323489014e001fd754e6e1568d619f30ac3256df05b6575c347cce2dcad343f7",
+      "outputSha256": "f4a034b22bd82cdd3e142e816ae0551b7a6247fc2a71ef444c117e6e5c0563f9"
+    },
+    {
+      "source": "public/images/products/ka9-9906-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9906-lever-handle-5.webp",
+      "width": 501,
+      "height": 501,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0a6f3981b06d08d783871d47f1b9cc733e7bf0e97e48c8948acd1324365a7b3a",
+      "outputSha256": "54c0d310cf17f39e974c8999941da57d1fa78cb3b11ad7731530135e7f7d89f7"
+    },
+    {
+      "source": "public/images/products/ka9-9906-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9906-lever-handle.webp",
+      "width": 1327,
+      "height": 1327,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a61d58e6a07f736f3ee084f867fa952c73ac9da47ef6a3da4df27377a04a5273",
+      "outputSha256": "66ed1af5eed89ce52052e24e03ef155014f6cc40b50a208b9288b632d543dac7"
+    },
+    {
+      "source": "public/images/products/ka9-9918-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9918-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "544e4cf3c9b9917a0f7d16ca285385a5519faf1d129df78100cac1415a530f3a",
+      "outputSha256": "5b538089c9fd504d840d9165a2f2c785f5580e0b2cee48daed40bd5a8bdaf013"
+    },
+    {
+      "source": "public/images/products/ka9-9918-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9918-lever-handle-3.webp",
+      "width": 478,
+      "height": 478,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "92572a91ed5ebeb12a90c07d964a5f48173d029b3c96c02ce8c43b43b0815d4e",
+      "outputSha256": "28086b350dcc28f474ec4ae84bb8d0818f8007a4e22af73f080e33d231a27743"
+    },
+    {
+      "source": "public/images/products/ka9-9918-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9918-lever-handle-4.webp",
+      "width": 478,
+      "height": 478,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df9061b278d4a2903a63ba14d88206e2fe2099e2c591392fbf930d93b937f54e",
+      "outputSha256": "eba288d58f9faa9fe7bcce54d2cf3f63958e5d03982df86a29df5399778b7ee6"
+    },
+    {
+      "source": "public/images/products/ka9-9918-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9918-lever-handle-5.webp",
+      "width": 478,
+      "height": 478,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ba193e0b938e73934a2a491ba07be3657cb5c4a5038a5037ecfacc6225517957",
+      "outputSha256": "c3addd8bc69f679300544ba0231477ecd7179620f587c5b7e7ed607a9b66e833"
+    },
+    {
+      "source": "public/images/products/ka9-9918-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9918-lever-handle.webp",
+      "width": 1351,
+      "height": 1351,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2737be1c70865cffd8f0b11f1f57133d39ec2333297ee5f71b374b27c7c853b7",
+      "outputSha256": "f5051af69d841691e26d62ff16bf8c7705193301a52f1e4d3daf28280ab3de5a"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ca62b094638fa2db9744f86126dafa145a223f097d0574aab0e96e9f93569344",
+      "outputSha256": "b110c70ab24fba758b27c3d265ce9dde4bff2701ea70b3a5de8a52060e4db7df"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle-3.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "09e0fc1adeca4b7359039e2078c47dbf34662ebeee4712c674f96a130ed977e6",
+      "outputSha256": "f5d9af3543b77e81adbe08b920c791af7cbbe2523561f39ce5f4a2c00549a9eb"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle-4.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d109ac38695fe5ced3ef949b12d4c76e1a4034bbd4596ee79506dacbdafe4e84",
+      "outputSha256": "aa0246d19e65b35f8789a4ecde0d283e6df1c5db9c77e70fe9a937848f0b77b5"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle-5.webp",
+      "width": 481,
+      "height": 481,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1bccd7495cb22945dee6c5f3b31c31c917d7fc3274f0fbc74a1a1524f74f6a12",
+      "outputSha256": "23ffb6eaa49a80ae958b86c9533e080e52d53f26ae4ce07360a3d0fa07d396d4"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle-6.webp",
+      "width": 483,
+      "height": 483,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a586ca56e2aa379ee9bb64d254f1b590dba6eaa9b1cff15d7c42b73ca68414cc",
+      "outputSha256": "82ce5451d271095bfd6c41f9f504beb897dd978056a30a9be5b9ff451a953b2f"
+    },
+    {
+      "source": "public/images/products/ka9-9920-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9920-lever-handle.webp",
+      "width": 1290,
+      "height": 1290,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e661bd16a30ba5e64d1169da2807f6ddd49823123561041a15e29d4ba6e01e8",
+      "outputSha256": "c677f4c5554fdc76a2199f5580cc80d9518e27f43402b55d1a17f977a92677bb"
+    },
+    {
+      "source": "public/images/products/ka9-9924-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9924-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "70517a4fdcd7e56d9ecf7247b9880ace8ac49c9ba02f59ebb57bc1ec9df3d413",
+      "outputSha256": "c56f6ac44fdf313b1599d9002e3de9a4c9633a737068804f77e77a7cd71b3a22"
+    },
+    {
+      "source": "public/images/products/ka9-9924-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9924-lever-handle-3.webp",
+      "width": 471,
+      "height": 471,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5968a07c4074adaa9716208573f46f4bca241f1240a87a6b2f73749598faf2e1",
+      "outputSha256": "ed4b97d890cc6d44c96c2fdbccd1c3bbb8eae813067bf008fa7dcd86cd1a0473"
+    },
+    {
+      "source": "public/images/products/ka9-9924-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9924-lever-handle-4.webp",
+      "width": 476,
+      "height": 476,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "17edf84bcd7cedce2c61e1dc666d2af91347ebbb348a8d9d0763eed303c37a9d",
+      "outputSha256": "ea69c6c6d82775e142ea2e5636a05e821a34a54408473f4d8fe69844262a9b05"
+    },
+    {
+      "source": "public/images/products/ka9-9924-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9924-lever-handle-5.webp",
+      "width": 471,
+      "height": 471,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5a6c441b3b37f522e31df1663d68305ad6ed6e9f3551236f26712832cea7ee13",
+      "outputSha256": "5a916ad75bf84f75af61fcc52bac11a5db12f4b5e5561169cb6634bbb3deba1e"
+    },
+    {
+      "source": "public/images/products/ka9-9924-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9924-lever-handle.webp",
+      "width": 1263,
+      "height": 1263,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8fdb422aa76948b9b3347a4180536c6b92ab4ba0951dc91f90e4ed804b53153f",
+      "outputSha256": "2a47ab6a2e568d39d15aaeb437e81e4bacaf531003ee74db909a15b25703d130"
+    },
+    {
+      "source": "public/images/products/ka9-9929-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9929-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1eda19f4305c9dcb13c680c674f8787cc33b629b87409ccedc07b1cf190dec7e",
+      "outputSha256": "0380bf817bf9afe5d2a1a0923e6b685c8661f7df08647e338593a274bd22e525"
+    },
+    {
+      "source": "public/images/products/ka9-9929-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9929-lever-handle-3.webp",
+      "width": 518,
+      "height": 518,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1d3455b62f8af307a94d02af0b70750e3f6ec807deba3414e88c77c9f905f27b",
+      "outputSha256": "cfb4b48fb10904c97fe3d788f9564ddf99030b7779fd26d564bdf81fdbf9aa1e"
+    },
+    {
+      "source": "public/images/products/ka9-9929-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9929-lever-handle-4.webp",
+      "width": 519,
+      "height": 519,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "701de939e38097d2df7541805c8b5efca3053878c7729d8a342f8c3fcf612b4b",
+      "outputSha256": "db5fe61fdda2a562564503ef8413a3ff8680b29c30ad5b66a6a3fd2a564fb747"
+    },
+    {
+      "source": "public/images/products/ka9-9929-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9929-lever-handle-5.webp",
+      "width": 519,
+      "height": 519,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "34d2ab81a7953290944533ea6f53d22a389429af3facb7d881904dbe15b0f96d",
+      "outputSha256": "d88389419ea75b2a4d19a26d3814135581bf6e5368ee382843f247ca47d64261"
+    },
+    {
+      "source": "public/images/products/ka9-9929-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9929-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "01fb5df6cbc49b045c936c8403223e9de302f94dd3dea595fed03c6ff0c4959c",
+      "outputSha256": "ac9e37a83185550aa2bf4ca29b36c7521d4582ff27da5b8e1911e4a20c2ef5a2"
+    },
+    {
+      "source": "public/images/products/ka9-9930-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9930-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1eda19f4305c9dcb13c680c674f8787cc33b629b87409ccedc07b1cf190dec7e",
+      "outputSha256": "0380bf817bf9afe5d2a1a0923e6b685c8661f7df08647e338593a274bd22e525"
+    },
+    {
+      "source": "public/images/products/ka9-9930-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9930-lever-handle-3.webp",
+      "width": 534,
+      "height": 534,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cf8708089d3d283239c78a9a839817a6bc50ad79220bf5fd865369bbeaece50a",
+      "outputSha256": "80273134bf7b522f88c83a2aa8bb15ec4306e1bed00c040f98ac07430826acec"
+    },
+    {
+      "source": "public/images/products/ka9-9930-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9930-lever-handle-4.webp",
+      "width": 508,
+      "height": 508,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e2eda6e715a4d6ddd03e261693badbe6871779a8f81d6a06b9790db1865a92c2",
+      "outputSha256": "6201963bd6edb12572fbc7f06ed88aff81de9191da8c04ca57b59dcde9833d0d"
+    },
+    {
+      "source": "public/images/products/ka9-9930-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9930-lever-handle-5.webp",
+      "width": 509,
+      "height": 509,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fd6cd08965fbc4a27e595f1c1a18175ec1607621523459dec2b7130bc8b72a7b",
+      "outputSha256": "472fcca0fba1c9b78f11ce879129954dc4f6d75b8e01f2d758c5464ad7a3c9d8"
+    },
+    {
+      "source": "public/images/products/ka9-9930-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9930-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "01fb5df6cbc49b045c936c8403223e9de302f94dd3dea595fed03c6ff0c4959c",
+      "outputSha256": "ac9e37a83185550aa2bf4ca29b36c7521d4582ff27da5b8e1911e4a20c2ef5a2"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ac31da75555ef34b6c9990c7ec99efe50adaa58cd7c3e5e0b2210c876546fca1",
+      "outputSha256": "9fd52fbb4a474a0301ed7385b33b69a4c3c9252db8821b1999853631b2a6af0d"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-3.webp",
+      "width": 486,
+      "height": 486,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d2642065a92a569c02c7fb577fcaeef5f4ab45ff23838581bdf865c4d6bd0a3d",
+      "outputSha256": "727984fa3b0a4426feea2b1c604494b3b9ad645d8c89c7911a0be4a79445b4d7"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-4.webp",
+      "width": 491,
+      "height": 491,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c55c462452d329008916bf8df76494c345dd02edae167fff8307b4fd3c73573f",
+      "outputSha256": "83d9025287d8e027dabb71e5ccded4fa2828cd3e0bf0961604cf32c475e71c1b"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-5.webp",
+      "width": 498,
+      "height": 498,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5eec32f388903f1dba7390963edd24e2333949c35f13aa81564e0544feda3a66",
+      "outputSha256": "29d927e48db93f28b1b8dd1e7791ed4577b377b37883491bb74c8b82a0517f1e"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-6.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-6.webp",
+      "width": 496,
+      "height": 496,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "41eeead0411961ea1b69ea45c3ba01b2b6c07b3f17b03760677e051332362ce2",
+      "outputSha256": "37921e9cfef0a158e44db0770be0dc3bbc74460368fedb836c6aabacf21527e1"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle-7.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle-7.webp",
+      "width": 505,
+      "height": 505,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8a8df7e3e3e68feb886b652a2f7e7fd104397936cd4035f0b4a814678db75b07",
+      "outputSha256": "f65274b04ac8382b1124e2838e5a04e73351bbebc0eefbbda6ea3b05a1a56a2f"
+    },
+    {
+      "source": "public/images/products/ka9-9933-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9933-lever-handle.webp",
+      "width": 1308,
+      "height": 1308,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "58161e4ff6c36d3a3068fff0b103e22c296013fe94a532a717f4765e843d14ea",
+      "outputSha256": "1c155e21080ae987e6709f13fcadc27eb6fb67b0bbc5c2713112218fb45b8604"
+    },
+    {
+      "source": "public/images/products/ka9-9941-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9941-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a12ef7f99ff7f9e01d681cb736a24cdbc3e9ec198ea7cf841472b6d83b658556",
+      "outputSha256": "d5074f33db2716732a46c08272f223cb24058e5ac4a9e1dc6c0a720c208ed5db"
+    },
+    {
+      "source": "public/images/products/ka9-9941-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9941-lever-handle-3.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a0911243791b433bc73ce939b5b32631c27ff42244daa2b3d391a979f540640e",
+      "outputSha256": "1d327c208fda2915c601cf6929fa1dd28043849451aa1bb88be603284b2db673"
+    },
+    {
+      "source": "public/images/products/ka9-9941-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9941-lever-handle-4.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "31f3ccaf527d5640939a9dcbb665c00362d2d793fa0aa59615670373e3f2eca5",
+      "outputSha256": "5ca68b4450558f0cb0b8c563ca9940761d2f5193275d04ea412e31a83f083c6b"
+    },
+    {
+      "source": "public/images/products/ka9-9941-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9941-lever-handle-5.webp",
+      "width": 504,
+      "height": 504,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "dcc48e15185ee8e3885f66284c7caf9e2a8005f1f16545b635e106db39d9c4c3",
+      "outputSha256": "807f4fe17ffff81844992f36b96fc233d3f995e569eb303e8fd9bc17d71a4097"
+    },
+    {
+      "source": "public/images/products/ka9-9941-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9941-lever-handle.webp",
+      "width": 1333,
+      "height": 1333,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "450b3a47d7391b436cebe90da463ee67646a1d71548c11a5efb834c715094068",
+      "outputSha256": "96eeb70119a9d56f10151ccce782c765e0938e4209bd44824fffcbedeb80cb40"
+    },
+    {
+      "source": "public/images/products/ka9-9942-lever-handle-2.webp",
+      "output": "public/images/products-hyde/ka9-9942-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a12ef7f99ff7f9e01d681cb736a24cdbc3e9ec198ea7cf841472b6d83b658556",
+      "outputSha256": "d5074f33db2716732a46c08272f223cb24058e5ac4a9e1dc6c0a720c208ed5db"
+    },
+    {
+      "source": "public/images/products/ka9-9942-lever-handle-3.webp",
+      "output": "public/images/products-hyde/ka9-9942-lever-handle-3.webp",
+      "width": 515,
+      "height": 515,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ec27bd7c92e5152dbc46b4d10bc099fcf5fe73ed307059f2195aca69b4cb2921",
+      "outputSha256": "a6f3ca3419beb00439564d0f793616ec375368482e002cccc14622684cd1ae42"
+    },
+    {
+      "source": "public/images/products/ka9-9942-lever-handle-4.webp",
+      "output": "public/images/products-hyde/ka9-9942-lever-handle-4.webp",
+      "width": 496,
+      "height": 496,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "237108c6e6dbb3b3378e54d0a7949ff601aa503b90c78f9d6820cef2ea75492e",
+      "outputSha256": "5ddf10dfaa1368c16988309cee1702ee45c574e9e146b18c491c7047898d8e9d"
+    },
+    {
+      "source": "public/images/products/ka9-9942-lever-handle-5.webp",
+      "output": "public/images/products-hyde/ka9-9942-lever-handle-5.webp",
+      "width": 497,
+      "height": 497,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df0838800f7910f7bdd60dd622453d70b7426dfeb79226b742472f456dcf2bbe",
+      "outputSha256": "51fab5e439ffb8015135a5bacf1d5ddaa72e5066243b58f76b8bdd9ee3b0e681"
+    },
+    {
+      "source": "public/images/products/ka9-9942-lever-handle.webp",
+      "output": "public/images/products-hyde/ka9-9942-lever-handle.webp",
+      "width": 1333,
+      "height": 1333,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "450b3a47d7391b436cebe90da463ee67646a1d71548c11a5efb834c715094068",
+      "outputSha256": "96eeb70119a9d56f10151ccce782c765e0938e4209bd44824fffcbedeb80cb40"
     },
     {
       "source": "public/images/products/l001-latch.webp",

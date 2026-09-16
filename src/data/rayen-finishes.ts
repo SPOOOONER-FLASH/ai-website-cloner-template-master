@@ -94,6 +94,42 @@ const FINISHES: Record<string, FinishEntry> = {
     match: ["anodised silver", "anodized silver", "阳极氧化银"],
   },
   white: { colors: ["#f1f1ef"], zh: "白色", en: "White", match: ["white", "白色"] },
+
+  /*
+    凯撒系列 vocabulary, from the catalogue's own captions (code + Chinese name are printed
+    under every shot, so both spellings are read rather than guessed). The English names are
+    ours: the book prints none, and the code — DBN, COF, GCF — is what a buyer actually
+    orders, which is why the record keeps it.
+  */
+  "polished-chrome": { colors: ["#d9dcde"], zh: "亮铬", en: "Polished chrome", match: ["polished chrome", "亮铬"] },
+  "black-nickel": { colors: ["#3e4145"], zh: "黑镍", en: "Black nickel", match: ["black nickel", "黑镍"] },
+  "matt-nickel": { colors: ["#b6b9b8"], zh: "哑镍", en: "Matt nickel", match: ["matt nickel", "哑镍"] },
+  "brushed-nickel": { colors: ["#c2c5c4"], zh: "镍拉丝", en: "Brushed nickel", match: ["brushed nickel", "镍拉丝"] },
+  "zirconium-gold": { colors: ["#d9b64a"], zh: "锆金", en: "Zirconium gold", match: ["zirconium gold", "锆金"] },
+  "antique-bronze": { colors: ["#7c7a5e"], zh: "青古铜", en: "Antique bronze", match: ["antique bronze", "青古铜"] },
+  "antique-yellow-brass": {
+    colors: ["#a98a4b"],
+    zh: "黄古铜",
+    en: "Antique yellow brass",
+    match: ["antique yellow brass", "黄古铜"],
+  },
+  "brushed-rose-gold": {
+    colors: ["#bd8368"],
+    zh: "玫瑰金拉丝",
+    en: "Brushed rose gold",
+    match: ["brushed rose gold", "玫瑰金拉丝"],
+  },
+  red: { colors: ["#c8322f"], zh: "红色", en: "Red", match: ["red", "红色"] },
+  grey: { colors: ["#8d9094"], zh: "灰色", en: "Grey", match: ["grey", "灰色"] },
+
+  /* The coverings. 凯撒 wraps the grip in leather or a wood-grain film, and the catalogue
+     writes the pair as 黑镍/棕皮 — metal first, covering second. They are finishes in their
+     own right here so the second half of such a pair can be looked up and coloured. */
+  "brown-leather": { colors: ["#6b4a3a"], zh: "棕皮", en: "Brown leather", match: ["brown leather", "棕皮"] },
+  "black-leather": { colors: ["#2f2d2c"], zh: "黑皮", en: "Black leather", match: ["black leather", "黑皮"] },
+  "tan-leather": { colors: ["#c2a887"], zh: "驼皮", en: "Tan leather", match: ["tan leather", "驼皮"] },
+  "orange-leather": { colors: ["#c2683a"], zh: "橘皮", en: "Orange leather", match: ["orange leather", "橘皮"] },
+  "wood-grain": { colors: ["#6f4b32"], zh: "木纹", en: "Wood grain", match: ["wood grain", "木纹"] },
   /* Two materials, so two halves — the timber inlay is the reason to choose it. The Chinese
      mirror has not translated this one, so the zh name here is doing real work. */
   "stainless-timber": {
@@ -168,6 +204,10 @@ const withoutPartNumber = (raw: string) =>
        the record is regenerated from the mirror and would grow it back. */
     .replace(/\s+/g, " ")
     .replace(/\s+([一-鿿])/g, "$1")
+    /* 亮铬 / 木纹 → 亮铬/木纹. The rule above only eats the space AFTER the slash, which left
+       every 凯撒 two-material finish reading "亮铬 /木纹" with one space stranded in front of
+       it. Chinese sets no space around a slash. */
+    .replace(/([一-鿿])\s+\//g, "$1/")
     .trim();
 
 /** A stable id for one finish, shared by both languages. Unknown finishes key on themselves. */
@@ -177,8 +217,32 @@ export function finishKey(raw: string): string {
   return hit ? hit[1] : text;
 }
 
+/**
+ * The swatch for one finish, including the two-material ones.
+ *
+ * 凯撒 writes a wrapped lever as 黑镍/棕皮 — the metal, then the covering. Looked up whole,
+ * that string matches "黑镍" and draws a single dark dot for a handle whose grip is brown
+ * leather, which is worse than no dot: it is a colour statement that contradicts the
+ * photograph next to it. So a pair is split and both halves are looked up, and the swatch
+ * carries both colours — which is what `colors` was always for ("two for a finish that is
+ * visibly two materials").
+ *
+ * Splitting rather than enumerating the pairs: this catalogue alone has seventeen of them,
+ * and the next series will invent more.
+ */
 export function finishSwatch(raw: string): FinishSwatch | null {
-  return FINISHES[finishKey(raw)] ?? null;
+  const whole = FINISHES[finishKey(raw)];
+  if (whole) return whole;
+
+  const parts = withoutPartNumber(raw).split("/").map((part) => part.trim()).filter(Boolean);
+  if (parts.length < 2) return null;
+  const hits = parts.map((part) => FINISHES[finishKey(part)]).filter(Boolean) as FinishEntry[];
+  if (!hits.length) return null;
+  return {
+    colors: hits.flatMap((hit) => hit.colors).slice(0, 2),
+    zh: hits.map((hit) => hit.zh).join("/"),
+    en: hits.map((hit) => hit.en).join(" / "),
+  };
 }
 
 /**
