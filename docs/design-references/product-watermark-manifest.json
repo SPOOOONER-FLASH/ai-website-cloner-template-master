@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4059,
+  "count": 4055,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -8249,6 +8249,94 @@
       "outputSha256": "51ccb7396ce15f27c19d29aa18dbac837bb86957303e4938305dbc842070445c"
     },
     {
+      "source": "public/images/products/308-d-d-panic-exit-device-2.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "941779d21ad7c02fbaa504ebfd4d7d96e406812650e1cab10d3a516cfaa716ae",
+      "outputSha256": "b0ec6a053992a07def826c9fec3ddde6204264fda49c53a0dd737b86418f9642"
+    },
+    {
+      "source": "public/images/products/308-d-d-panic-exit-device-3.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0.1919889502762431,
+          "height": 152,
+          "left": 3,
+          "name": "below",
+          "top": 171,
+          "width": 212
+        }
+      },
+      "sourceSha256": "a0f5c841a6da0e9796800a6618f23f0fad3bfb96e15b27a25eb633c95042602d",
+      "outputSha256": "03f3996f70921c4e84eaa3c0476ba12b229b2304b3ed09e48f0ad18a408ae32f"
+    },
+    {
+      "source": "public/images/products/308-d-d-panic-exit-device-4.webp",
+      "output": "public/images/products-hyde/308-d-d-panic-exit-device-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "01b18c48ad8a7528608cfc7b6b5a40f4adaf4f469c20d77d80efb64844f0004e",
+      "outputSha256": "f2c3ae27fdf0e702ab560d11859ffc72e2d53fe401fab8c33e064c1ebe608f71"
+    },
+    {
       "source": "public/images/products/308-d-d-panic-exit-device.webp",
       "output": "public/images/products-hyde/308-d-d-panic-exit-device.webp",
       "width": 750,
@@ -8527,6 +8615,94 @@
       },
       "sourceSha256": "6aef7e14404c05a2ec366f04af3af2acbc97a71d088d13fe03e5b7dffa86a86a",
       "outputSha256": "d8018b382f2ee073e52d1abefab359751b9423274fc0971a27174963f14de5c7"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-2.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "fc293df267515c0af7323a2a7d30209c81970053230533be10c57f63c6d88a8d",
+      "outputSha256": "22faceaa457ea4bb848d3f4cf341da50037bbc1c634c7f017e869bf5defe059a"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-3.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "legacy-repair",
+        "variant": "black"
+      },
+      "repair": {
+        "mode": "edge-matched-clone",
+        "region": {
+          "height": 152,
+          "left": 3,
+          "top": 11,
+          "width": 212
+        },
+        "sample": {
+          "edgeDifference": 0,
+          "height": 152,
+          "left": 223,
+          "name": "inward",
+          "top": 11,
+          "width": 212
+        }
+      },
+      "sourceSha256": "7973f558b7fa36bf1a47d0c27f3a6c7488d37e46a7680d74d30beefbd2e65ca5",
+      "outputSha256": "f73610c69cafe13e4cb3d434f4253ef041d8af9b79b424d3d4b8d81dc38a3e2f"
+    },
+    {
+      "source": "public/images/products/308-s-s-panic-exit-device-4.webp",
+      "output": "public/images/products-hyde/308-s-s-panic-exit-device-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b7035220cd74615e491e2c7fd439b9be381b3e8e1ef814ea550ca8b03ecc0782",
+      "outputSha256": "70a49f9adb8136b6ec0bdfb47483575887596dbd71549e6f29cfad73be1758aa"
     },
     {
       "source": "public/images/products/308-s-s-panic-exit-device.webp",
@@ -80266,26 +80442,8 @@
       "outputSha256": "a3b011d6f207f8b72a4db6043ed0f3210896863c2e744c6b94bbe853989fa10f"
     },
     {
-      "source": "public/images/products/mtr2110-stainless-steel-handle-2.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle-2.webp",
-      "width": 1400,
-      "height": 1303,
-      "geometry": {
-        "margin": 30,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "bottom-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "023e346f77e69417fc38a4b3bc970e045271c02b859e03f25200d7351d9f1412",
-      "outputSha256": "c0eccd55a08018dd2378ce4981b0751850cfccd7b5dfa18f896160fa1c7a8dea"
-    },
-    {
-      "source": "public/images/products/mtr2110-stainless-steel-handle-3.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle-3.webp",
+      "source": "public/images/products/mtr2110-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle.webp",
       "width": 1359,
       "height": 1043,
       "geometry": {
@@ -80300,78 +80458,6 @@
       },
       "sourceSha256": "b202750c084e7345d750547d3cbc91be4d240ebbc3c6cf6b9e5e2fb9e6d32f59",
       "outputSha256": "97146098d2a7aa8465592561217060e31e92e16e13689f17a82ab8d516b14ed3"
-    },
-    {
-      "source": "public/images/products/mtr2110-stainless-steel-handle-4.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle-4.webp",
-      "width": 1400,
-      "height": 934,
-      "geometry": {
-        "margin": 23,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "bottom-right",
-        "strategy": "adaptive-mark",
-        "variant": "white"
-      },
-      "sourceSha256": "2c55b9379873fc98ac5444aa9e6d04c7668c15c667b96041656c64b546c71cc0",
-      "outputSha256": "95ed61d850b3ea25b7cd4d9e0cb067ea83098342697665e5c4465e1b07713d2c"
-    },
-    {
-      "source": "public/images/products/mtr2110-stainless-steel-handle-5.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle-5.webp",
-      "width": 1049,
-      "height": 1573,
-      "geometry": {
-        "margin": 26,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "bottom-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "263056fb6b57086c12e4fa0d595e5899d47365bac24454c4448c80b842b859ac",
-      "outputSha256": "443fd81bd3a3af8871f0456a967d61e23b547f1bc198979467dda474b5f3918e"
-    },
-    {
-      "source": "public/images/products/mtr2110-stainless-steel-handle-6.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle-6.webp",
-      "width": 544,
-      "height": 532,
-      "geometry": {
-        "margin": 13,
-        "logoWidth": 65,
-        "logoHeight": 16
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "ce11d3cb8a96fab490cbba8b2b0ee881c620920ab856da8ef29080112970e02e",
-      "outputSha256": "aded0145654f086022a896fcaac48642e0a94499dbd5232eabc27bc21965479d"
-    },
-    {
-      "source": "public/images/products/mtr2110-stainless-steel-handle.webp",
-      "output": "public/images/products-hyde/mtr2110-stainless-steel-handle.webp",
-      "width": 1126,
-      "height": 520,
-      "geometry": {
-        "margin": 13,
-        "logoWidth": 120,
-        "logoHeight": 30
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "9faf8377af71504b6b24a0923b1429a6fd5d8f19445b8f32a78b6c076845d273",
-      "outputSha256": "155f34874697b66b324dea89dfc005e6b40ce0ea6b3a54e4bd2820c0dd7adda8"
     },
     {
       "source": "public/images/products/mul1022-lever-handle-2.webp",
@@ -80536,112 +80622,22 @@
       "outputSha256": "87724ac798138045a8378f724c0a303efedf1199cfbe6804d192e19a73b7e008"
     },
     {
-      "source": "public/images/products/mul2101-lever-handle-2.webp",
-      "output": "public/images/products-hyde/mul2101-lever-handle-2.webp",
-      "width": 544,
-      "height": 532,
-      "geometry": {
-        "margin": 13,
-        "logoWidth": 65,
-        "logoHeight": 16
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "76379e01c74bb96ca84eaafe2fc7235b0f64c0c446584048a53507f483a50160",
-      "outputSha256": "d207d83b059cc26fe9b2107111b905da651aba919ed5aa67806dc962d4943945"
-    },
-    {
-      "source": "public/images/products/mul2101-lever-handle-3.webp",
-      "output": "public/images/products-hyde/mul2101-lever-handle-3.webp",
-      "width": 680,
-      "height": 330,
-      "geometry": {
-        "margin": 10,
-        "logoWidth": 82,
-        "logoHeight": 21
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "6a96cbd7c0328ee0b206cd10222c0a30c959230ee6f6396243a5612bea11800a",
-      "outputSha256": "d8dfbdf5427caae5d39803c020cd6076695fcfa86d54aaf8e34f4594da261f42"
-    },
-    {
-      "source": "public/images/products/mul2101-lever-handle-4.webp",
-      "output": "public/images/products-hyde/mul2101-lever-handle-4.webp",
-      "width": 680,
-      "height": 330,
-      "geometry": {
-        "margin": 10,
-        "logoWidth": 82,
-        "logoHeight": 21
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "3efa0c054e25ffe25f6294cc297d60300ea34d77bccde14f20cb28e9a2d236ad",
-      "outputSha256": "c0d47eaafa6814b50c6bb116dcb1c73e16f1fc5866e11b63490e1c8efd302231"
-    },
-    {
-      "source": "public/images/products/mul2101-lever-handle-5.webp",
-      "output": "public/images/products-hyde/mul2101-lever-handle-5.webp",
-      "width": 680,
-      "height": 330,
-      "geometry": {
-        "margin": 10,
-        "logoWidth": 82,
-        "logoHeight": 21
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "7ffea0ec0c85ce0cd98221e4139d6dcf76eeb8bc138755c9809553e3092bb44f",
-      "outputSha256": "70cfdb985bbbfb091e696914e293aecd94b3ddc31b66316b8d18d974ec2ec118"
-    },
-    {
-      "source": "public/images/products/mul2101-lever-handle-6.webp",
-      "output": "public/images/products-hyde/mul2101-lever-handle-6.webp",
-      "width": 680,
-      "height": 330,
-      "geometry": {
-        "margin": 10,
-        "logoWidth": 82,
-        "logoHeight": 21
-      },
-      "placement": {
-        "corner": "top-left",
-        "strategy": "adaptive-mark",
-        "variant": "black"
-      },
-      "sourceSha256": "4daf0cb89a1b1ab09ad038cd46f8dc692178c869b55fdd4628e407237207674a",
-      "outputSha256": "27e7340d09198068cd9d664f0bfac4f84ea8f5ae921a15982cf8742fc5605c67"
-    },
-    {
       "source": "public/images/products/mul2101-lever-handle.webp",
       "output": "public/images/products-hyde/mul2101-lever-handle.webp",
-      "width": 680,
-      "height": 330,
+      "width": 1400,
+      "height": 934,
       "geometry": {
-        "margin": 10,
-        "logoWidth": 82,
-        "logoHeight": 21
+        "margin": 23,
+        "logoWidth": 120,
+        "logoHeight": 30
       },
       "placement": {
-        "corner": "top-left",
+        "corner": "bottom-left",
         "strategy": "adaptive-mark",
-        "variant": "black"
+        "variant": "white"
       },
-      "sourceSha256": "5d5211747b0b20b364c5a127aa03c7d47f8ec08aafe2bdae409b1954081dcce8",
-      "outputSha256": "6ee132cc2301ced80d59272854b925bf1136130c5de1fb20ab9ad6baf574d45d"
+      "sourceSha256": "7bb3aed8822ded97af6c90c9f32dafaea2624187dce198c3fec62c90d8c5d0f4",
+      "outputSha256": "bdbb5ad04b9d1f77b9da61dc0b521ca327580350023813f1ac93d4d0ecba4867"
     },
     {
       "source": "public/images/products/nc013-stainless-steel-handle-2.webp",
