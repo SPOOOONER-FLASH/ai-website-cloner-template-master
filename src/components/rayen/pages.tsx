@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "./Chrome";
+import { CatalogueSpread } from "./CatalogueSpread";
+import { FinishFilter } from "./FinishFilter";
 import { Gallery } from "./Gallery";
 import { HeroCarousel } from "./HeroCarousel";
 import { ArrowLink, Button, FactStrip, NoPhoto, Photo, ProductCard, SectionHead, Shell, SpecTable } from "./primitives";
@@ -18,6 +20,7 @@ import {
   siteFacts,
   viewProduct,
 } from "@/data/rayen";
+import { finishKeysOf } from "@/data/rayen-finishes";
 import { STRINGS, type RayenLocale } from "@/data/rayen-i18n";
 
 /**
@@ -242,36 +245,24 @@ export function ProductsIndexBody({ locale }: { locale: RayenLocale }) {
             intro={s.intro(categories.length, products.length)}
             align="left"
           />
-          <div className="mt-10 grid gap-px bg-[var(--color-line)] md:mt-14 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category) => {
-              const count = products.filter((p) => p.categoryPath[0] === category.slug).length;
-              return (
-                <a
-                  key={category.slug}
-                  href={localePath(locale, `/products/${category.slug}/`)}
-                  className="group flex gap-5 bg-white p-5 transition-colors hover:bg-[var(--color-surface-alt)] md:p-6"
-                >
-                  <div className="w-28 shrink-0 md:w-32">
-                    {category.image?.src ? (
-                      <Photo src={category.image.src} alt={category.name} aspect="1 / 1" />
-                    ) : (
-                      <div className="aspect-square bg-[var(--color-surface-alt)]" />
-                    )}
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-[17px]">{category.name}</p>
-                    <p className="latin mt-1 text-[12px] text-[var(--color-ink-3)]">
-                      {s.modelCount(count)}
-                    </p>
-                    {category.children.length ? (
-                      <p className="mt-3 text-[13px] leading-relaxed text-[var(--color-ink-2)]">
-                        {category.children.map((child) => child.name).join(" · ")}
-                      </p>
-                    ) : null}
-                  </div>
-                </a>
-              );
-            })}
+          {/*
+            One spread per category rather than seventeen tiles. See CatalogueSpread.tsx for
+            why, and for what it deliberately does not pretend to have.
+          */}
+          <div className="mt-10 md:mt-14">
+            {categories.map((category, index) => (
+              <CatalogueSpread
+                key={category.slug}
+                index={index}
+                locale={locale}
+                category={category}
+                href={localePath(locale, `/products/${category.slug}/`)}
+                products={products
+                  .filter((p) => p.categoryPath[0] === category.slug)
+                  .map((p) => viewProduct(p, locale))}
+                labels={{ modelCount: s.modelCount, view: s.viewCategory }}
+              />
+            ))}
           </div>
         </Shell>
       </main>
@@ -324,11 +315,20 @@ export function CategoryBody({ locale, categorySlug }: { locale: RayenLocale; ca
             </ul>
           ) : null}
 
-          <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 lg:grid-cols-4">
-            {items.map((product) => (
-              <ProductCard key={product.slug} product={product} locale={locale} noPhotoLabel={s.noPhoto} />
-            ))}
-          </div>
+          {/*
+            The grid stays here, server-rendered, and FinishFilter only hides cards that do
+            not match. Moving the cards inside the client component would drag the image
+            dimension map into the browser bundle — see the note in FinishFilter.tsx.
+          */}
+          <FinishFilter items={items} locale={locale} labels={s.finishFilter}>
+            <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 lg:grid-cols-4">
+              {items.map((product) => (
+                <div key={product.slug} data-finishes={finishKeysOf(product.finishes)}>
+                  <ProductCard product={product} locale={locale} noPhotoLabel={s.noPhoto} />
+                </div>
+              ))}
+            </div>
+          </FinishFilter>
         </Shell>
       </main>
       <SiteFooter locale={locale} />
