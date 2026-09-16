@@ -351,6 +351,50 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
               }
               onTransitionEnd={(event) => handleSlideTransitionEnd(index, event)}
             >
+              {responsive && isInitialLcp ? (
+                /*
+                  TWO PRELOADS, EACH SCOPED TO THE VIEWPORT THAT WILL USE IT.
+
+                  Lighthouse started reporting "LCP request discovery" the moment the
+                  <picture> below lost its `fetchPriority="high"`, and it was right to:
+                  the image the Largest Contentful Paint is measured on had nothing telling
+                  the browser to start it early.
+
+                  The reason it lost that attribute is in the comment on the img — React
+                  hoists ONE preload built from the img's own srcset, which knows nothing
+                  about the `<source media>` above it, so the phone downloaded the panorama
+                  it was never going to show AND the crop it did show: 64 KB where 43 had
+                  been.
+
+                  `ReactDOM.preload()` cannot express this — its options have no `media`.
+                  A rendered <link> can, and React 19 hoists it into <head> from here. So
+                  each viewport preloads exactly the file its own <source> will select, and
+                  neither downloads the other's.
+
+                  Only on the initial LCP slide: preloading all four would be four
+                  high-priority images competing for the one that is actually visible.
+                */
+                <>
+                  <link
+                    as="image"
+                    fetchPriority="high"
+                    imageSizes="100vw"
+                    imageSrcSet={mobileHeroSrcSet(slide.media.src ?? "")}
+                    media="(max-width: 639px)"
+                    rel="preload"
+                  />
+                  {responsive.srcSet ? (
+                    <link
+                      as="image"
+                      fetchPriority="high"
+                      imageSizes={responsive.sizes}
+                      imageSrcSet={responsive.srcSet}
+                      media="(min-width: 640px)"
+                      rel="preload"
+                    />
+                  ) : null}
+                </>
+              ) : null}
               {responsive ? (
                 /*
                   A <picture> so the phone gets a picture shaped like the hole it goes in.

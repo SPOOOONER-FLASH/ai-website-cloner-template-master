@@ -7,7 +7,20 @@
     "panic-exit-devices"
   ],
   "summary": "308 panic exit device manufactured by Canton Hyland.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Length",
+      "value": "1050mm"
+    },
+    {
+      "label": "Plate size",
+      "value": "165 × 55mm"
+    },
+    {
+      "label": "Projection",
+      "value": "99mm"
+    }
+  ],
   "material": "304SS",
   "finishes": [],
   "doorTypes": [
@@ -66,5 +79,17 @@
     "src": "/images/products/308-panic-exit-device.webp",
     "ratio": "1 / 1",
     "label": "Hyland 308 Panic Exit Device"
+  },
+  "specSources": {
+    "drawing": {
+      "basis": "client-supplied-dimension-drawing",
+      "fields": [
+        "Length",
+        "Plate size",
+        "Projection"
+      ],
+      "note": "Read off the dimensioned drawing the client supplied on 2026-09-15 for model 308: 1050mm across the device, a 165 × 55mm mounting plate, 99mm projection from the door face. PLATE THICKNESS IS STILL NOT PUBLISHED — the drawing does not carry it, so it stays absent rather than being estimated from the side view. The drawing is labelled 308; whether the same end case is shared by 308-S and 308-D has not been confirmed, so these rows are on this record only.",
+      "fetchedAt": "2026-09-15"
+    }
   }
 }
