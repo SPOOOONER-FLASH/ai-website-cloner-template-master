@@ -49,6 +49,14 @@ const DOCUMENTS = [
     md: "docs/collaboration/2026-09-15-scene-shortlist.md",
     docx: "docs/collaboration/2026-09-15-选品清单.docx",
   },
+  {
+    md: "docs/collaboration/2026-09-16-nginx-最后一次.md",
+    docx: "docs/collaboration/2026-09-16-nginx-还有什么要修.docx",
+  },
+  {
+    md: "docs/collaboration/2026-09-16-content-programme.md",
+    docx: "docs/collaboration/2026-09-16-文章计划与目标.docx",
+  },
 ];
 
 /* ---------------------------------------------------------------- inline runs ----- */
@@ -280,6 +288,7 @@ function convert(markdown) {
 /* ----------------------------------------------------------------------- emit ----- */
 
 const only = (process.argv.find((arg) => arg.startsWith("--only=")) ?? "").split("=")[1];
+const locked = [];
 
 for (const entry of DOCUMENTS) {
   if (only && !entry.md.includes(only)) continue;
@@ -321,6 +330,23 @@ for (const entry of DOCUMENTS) {
     ],
   });
 
-  writeFileSync(entry.docx, await Packer.toBuffer(doc));
-  console.log(`  ${basename(entry.docx)}  <-  ${basename(entry.md)}`);
+  /*
+    A .docx the client has open in Word is locked, and the write throws EBUSY. That is not
+    a reason to abandon the other documents — on 2026-09-16 one open file stopped the run
+    before it reached two new ones. Report it and carry on; the file is re-exportable at
+    any time by running this again.
+  */
+  try {
+    writeFileSync(entry.docx, await Packer.toBuffer(doc));
+    console.log(`  ${basename(entry.docx)}  <-  ${basename(entry.md)}`);
+  } catch (error) {
+    if (error.code !== "EBUSY" && error.code !== "EPERM") throw error;
+    locked.push(basename(entry.docx));
+    console.log(`  ${basename(entry.docx)}  SKIPPED — open in Word, close it and re-run`);
+  }
+}
+
+if (locked.length) {
+  console.log(`
+${locked.length} file(s) were open in Word and were not rewritten. Close them and re-run.`);
 }
