@@ -18,6 +18,8 @@ import {
   products,
   rayen,
   siteFacts,
+  siteName,
+  siteUrl,
   viewProduct,
 } from "@/data/rayen";
 import { finishKeysOf } from "@/data/rayen-finishes";
@@ -48,6 +50,59 @@ function factsFor(locale: RayenLocale) {
     { value: models.value, unit: s.unitItem, label: s.models },
     { value: since.value, unit: s.unitSince, label: s.experience },
   ];
+}
+
+/**
+ * One <script type="application/ld+json">, serialised.
+ *
+ * Kept as a component so every page emits the same shape and nobody hand-writes a second
+ * JSON.stringify with a different escaping story.
+ */
+function JsonLd({ data }: { data: unknown }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+/**
+ * The company, as structured data.
+ *
+ * Every field here is one a buyer can check: the legal name on the business licence, the
+ * registered address, the phone and email the client supplied on 2026-09-15. Nothing is
+ * inferred — no founding date we cannot evidence, no employee count nobody counted, and no
+ * awards. A knowledge panel built from invented facts is worse than no knowledge panel,
+ * because the first wrong one a buyer catches costs the rest.
+ */
+function organisation(locale: RayenLocale) {
+  const contact = rayen.contact;
+  return {
+    "@type": "Organization",
+    name: legalName,
+    alternateName: "RAYEN 雷茵",
+    url: siteUrl,
+    logo: absoluteUrl("/images/rayen/logo.webp"),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: locale === "zh" ? contact.addressZh : contact.addressEn,
+      addressLocality: contact.city,
+      addressRegion: contact.province,
+      addressCountry: "CN",
+    },
+    ...(contact.email ? { email: contact.email } : {}),
+    ...(contact.phone ? { telephone: contact.phone } : {}),
+  };
+}
+
+/** Breadcrumbs, so a category or product shows its place rather than a bare URL. */
+function breadcrumbs(locale: RayenLocale, trail: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((step, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: step.name,
+      item: absoluteUrl(locale === "zh" ? step.path : `/en${step.path}`),
+    })),
+  };
 }
 
 function capabilitiesFor(locale: RayenLocale) {
@@ -224,6 +279,18 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         </section>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@graph": [
+          organisation(locale),
+          {
+            "@type": "WebSite",
+            name: siteName,
+            url: siteUrl,
+            inLanguage: locale === "zh" ? "zh-Hans" : "en",
+          },
+        ],
+      }} />
     </>
   );
 }
@@ -267,6 +334,14 @@ export function ProductsIndexBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/products/" : "/en/products/"),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -332,6 +407,36 @@ export function CategoryBody({ locale, categorySlug }: { locale: RayenLocale; ca
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: category.name,
+        url: absoluteUrl(locale === "zh" ? `/products/${categorySlug}/` : `/en/products/${categorySlug}/`),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        /* The models in this category, by name and URL. No price and no availability:
+           this site publishes neither, and schema.org offers with invented values are the
+           fastest way to get a rich result withdrawn. */
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: items.length,
+          itemListElement: items.map((item, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: `${item.model} ${item.name}`,
+            url: absoluteUrl(
+              locale === "zh"
+                ? `/products/${categorySlug}/${item.slug}/`
+                : `/en/products/${categorySlug}/${item.slug}/`,
+            ),
+          })),
+        },
+      }} />
+      <JsonLd
+        data={breadcrumbs(locale, [
+          { name: s.breadcrumbRoot, path: "/products/" },
+          { name: category.name, path: `/products/${categorySlug}/` },
+        ])}
+      />
     </>
   );
 }
@@ -502,6 +607,13 @@ export function ProductBody({
       </main>
       <SiteFooter locale={locale} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd
+        data={breadcrumbs(locale, [
+          { name: s.breadcrumbRoot, path: "/products/" },
+          { name: category?.name ?? categorySlug, path: `/products/${categorySlug}/` },
+          { name: `${product.model} ${product.name}`, path: `/products/${categorySlug}/${product.slug}/` },
+        ])}
+      />
     </>
   );
 }
@@ -557,6 +669,13 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/company/" : "/en/company/"),
+        mainEntity: organisation(locale),
+      }} />
     </>
   );
 }
@@ -613,6 +732,16 @@ export function QualityBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: s.title,
+        /* This page has no `intro`; credentialsNote is its own summary of what we can and
+           cannot evidence, which is the honest description of the page. */
+        description: s.credentialsNote,
+        url: absoluteUrl(locale === "zh" ? "/quality/" : "/en/quality/"),
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -682,6 +811,14 @@ export function OemBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: s.title,
+        description: s.intro,
+        url: absoluteUrl(locale === "zh" ? "/oem/" : "/en/oem/"),
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -734,6 +871,13 @@ export function ContactBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/contact/" : "/en/contact/"),
+        mainEntity: organisation(locale),
+      }} />
     </>
   );
 }

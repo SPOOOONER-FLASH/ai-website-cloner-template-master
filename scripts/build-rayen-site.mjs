@@ -238,21 +238,89 @@ writeFileSync(
   published. robots.txt names it, and until now there was no sitemap at all — the site went
   live pointing crawlers at nothing.
 */
-const pageUrls = walk(TARGET)
+const pagePaths = walk(TARGET)
   .filter((file) => file.endsWith("index.html"))
   .map((file) => {
     const rel = relative(TARGET, dirname(file)).replaceAll("\\", "/");
-    return rel === "" ? `${canonicalOrigin}/` : `${canonicalOrigin}/${rel}/`;
+    return rel === "" ? "/" : `/${rel}/`;
   })
   .sort();
+
+/*
+  Every entry carries its language alternates, the same pair the pages declare in <head>.
+
+  Google reads hreflang from either place and wants them to agree; declaring it in one and
+  not the other is how a bilingual site ends up with the two versions treated as duplicates.
+  The pairing is computed from the path, because that is the whole rule: the English tree is
+  the Chinese tree under /en.
+*/
+const zhOf = (path) => (path.startsWith("/en/") ? path.slice(3) : path === "/en/" ? "/" : path);
+const enOf = (path) => `/en${zhOf(path)}`;
+const loc = (path) => `${canonicalOrigin}${path}`;
 
 writeFileSync(
   join(TARGET, "sitemap.xml"),
   [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...pageUrls.map((url) => `  <url><loc>${url}</loc></url>`),
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ...pagePaths.flatMap((path) => [
+      "  <url>",
+      `    <loc>${loc(path)}</loc>`,
+      `    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${loc(zhOf(path))}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="en" href="${loc(enOf(path))}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${loc(zhOf(path))}"/>`,
+      "  </url>",
+    ]),
     "</urlset>",
+    "",
+  ].join("\n"),
+  "utf8",
+);
+
+/* --------------------------------------------------------------- 5c. llms.txt */
+
+/*
+  A plain-text map of the site for language models, in the emerging llms.txt convention.
+  Buyers increasingly reach a factory by asking an assistant rather than a search box, and an
+  assistant that cannot tell which of 418 pages holds the spec table quotes the wrong one.
+
+  It states only what the site already says, in the order a buyer needs it, and it names what
+  we do NOT publish — prices, and dimensions for the models whose drawings we have not been
+  given. A model that reads "no price is published here" asks the reader to enquire; one that
+  reads nothing invents a number.
+*/
+const categoryLines = walk(TARGET)
+  .filter((file) => file.endsWith("index.html"))
+  .map((file) => relative(TARGET, dirname(file)).replaceAll("\\", "/"))
+  .filter((rel) => /^products\/[^/]+$/.test(rel))
+  .sort()
+  .map((rel) => `- [${rel.split("/")[1]}](${canonicalOrigin}/${rel}/)`);
+
+writeFileSync(
+  join(TARGET, "llms.txt"),
+  [
+    `# ${site.brand.legalName}`,
+    "",
+    `> ${site.brand.positioning}`,
+    "",
+    `中山市小榄镇的门控五金制造商。中文站 ${canonicalOrigin}/ ，英文站 ${canonicalOrigin}/en/ 。`,
+    "",
+    "## 产品类目",
+    "",
+    ...categoryLines,
+    "",
+    "## 站点说明",
+    "",
+    "- 每个型号页有独立规格表：材质、尺寸、中心距、安装孔径、表面处理。",
+    "- 规格表里的短横线表示该项我们没有依据，不是零或未知 —— 请直接问我们要图纸。",
+    "- 本站不公布价格。报价随数量、表面处理与包装变化，请通过联系页询价。",
+    "- 图片上的 RAYEN 雷茵 标记是我们自己的产品照，不代表第三方认证。",
+    "",
+    "## 联系",
+    "",
+    `- [联系我们](${canonicalOrigin}/contact/)`,
+    `- [工厂与产能](${canonicalOrigin}/company/)`,
+    `- [来图来样加工](${canonicalOrigin}/oem/)`,
     "",
   ].join("\n"),
   "utf8",

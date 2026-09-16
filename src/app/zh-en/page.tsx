@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { HomeBody } from "@/components/rayen/pages";
 import { STRINGS } from "@/data/rayen-i18n";
-import { legalName, rayen } from "@/data/rayen";
+import { alternatesFor, legalName, rayen } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
@@ -11,7 +11,7 @@ import { legalName, rayen } from "@/data/rayen";
 export const metadata: Metadata = {
   title: { absolute: `${legalName} | ${STRINGS.en.home.title}` },
   description: rayen.brand.positioningEn,
-  alternates: { canonical: "/en/" },
+  alternates: alternatesFor("en", "/"),
 };
 
 export default function Page() {
