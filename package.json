@@ -82,6 +82,7 @@
     "assets:framed": "node scripts/build-framed-heroes.mjs",
     "assets:productphotos": "node scripts/import-product-photos.mjs",
     "assets:padlock": "node scripts/import-heritage-padlock.mjs",
+    "brief:scenes": "node scripts/build-scene-shortlist.mjs --write",
     "brief:images": "node scripts/build-alibaba-image-brief.mjs --write",
     "audit:modelling:alibaba": "node scripts/audit-alibaba-modelling.mjs",
     "audit:modelling": "node scripts/audit-modelling-candidates.mjs",
