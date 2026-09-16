@@ -3,7 +3,7 @@
  * `Rose depth` row that never held a rose depth.
  *
  * WHAT WAS WRONG
- * Thirty-three pull handles carried a pair of rows like
+ * Thirty-five pull handles carried rows like
  *
  *     Projection    32mm
  *     Rose depth    65mm
@@ -21,9 +21,12 @@
  *
  * So the repair is not a swap. The value in `Rose depth` is the projection and moves into
  * `Projection`; the value that was in `Projection` is discarded, because it is a different
- * quantity on nearly every drawing and there is no honest label to give it. Nothing invented
- * takes its place — the drawing is on the product page, and AGENTS.md is right that a missing
- * row costs less trust than a plausible number. A buyer sizes the gap between a pull handle
+ * quantity on nearly every drawing and there is no honest label to give it. Two of the
+ * thirty-five — G1289 and G777 — had only the `Rose depth` row and no `Projection` at all,
+ * so a first pass that looked for the pair missed them; their drawings read the same way
+ * (`30 | 69.5` and `25 | 61.5`). Nothing invented takes its place — the drawing is on the
+ * product page, and AGENTS.md is right that a missing row costs less trust than a plausible
+ * number. A buyer sizes the gap between a pull handle
  * and a door frame from this figure.
  *
  * T811 IS LEFT WITH NEITHER ROW
@@ -60,6 +63,10 @@ export const PROJECTION_FROM_ROSE_DEPTH = new Set([
   "T1018", "T1050", "T1122", "T1130", "T1224", "T1225", "T1263", "T1265",
   "T2083", "T2336", "T2412", "T25", "T2930", "T3103", "T52", "T5450", "T5650",
   "T720", "T812", "T8050", "T915", "T921", "T9972",
+  /* These two carry a `Rose depth` row and no `Projection` row at all, so they did not show
+     up in the first pass, which looked for the pair. Their drawings read the same way:
+     G1289 `30 | 69.5`, G777 `25 | 61.5`. */
+  "G1289", "G777",
 ]);
 
 /** Models whose drawing does not state a standoff at all. Both rows go. */
