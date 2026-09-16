@@ -101,6 +101,12 @@ const TARGETS = [
   "rim-night-latch-564-and-1073",
   "occupied-vacant-washroom-indicator-bolt",
   "exit-device-push-bar-length",
+  /* The 2026-09-16 选品推荐 batch, over the 30 models the client named. Same rule. */
+  "choosing-a-cylindrical-lock-entrance-privacy-passage",
+  "euro-cylinder-range-45-to-90",
+  "lever-handle-range-lh852-lh853-lh855",
+  "stainless-lever-range-9007-9008-9014",
+  "deadbolt-d101-d102-and-the-rim-alternative",
 ];
 
 /**
