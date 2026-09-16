@@ -19354,6 +19354,11 @@
       "material": "304 不锈钢",
       "finishes": [],
       "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/6068-mortise-lever-handle-lock.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 6068 不锈钢执手锁"
+      },
       "gallery": [],
       "relatedModels": [],
       "sites": [],
@@ -74347,8 +74352,33 @@
       "categoryNames": [
         "不锈钢拉手"
       ],
-      "summary": "不锈钢门拉手，适用于木门。",
-      "specs": [],
+      "summary": "不锈钢门拉手，适用于木门。中心距 P=284mm，面板尺寸 300 × 40mm。",
+      "specs": [
+        {
+          "label": "中心距",
+          "value": "P=284mm"
+        },
+        {
+          "label": "总长",
+          "value": "300mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "300 × 40mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "60mm"
+        },
+        {
+          "label": "固定孔距",
+          "value": "P=24mm"
+        },
+        {
+          "label": "重量",
+          "value": "0.74kg"
+        }
+      ],
       "material": "不锈钢",
       "finishes": [
         "缎面不锈钢"
@@ -74362,22 +74392,68 @@
         "ratio": "1 / 1",
         "label": "雷茵 MTR2110 门拉手"
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "/images/products-rayen/mtr2110-stainless-steel-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MTR2110 门拉手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/mtr2110-stainless-steel-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MTR2110 门拉手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/mtr2110-stainless-steel-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MTR2110 门拉手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/mtr2110-stainless-steel-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MTR2110 门拉手 第 6 张"
+        }
+      ],
       "relatedModels": [],
       "sites": [
         "rayen"
       ],
       "styleFamily": "",
       "seoTitle": "MTR2110 门拉手",
-      "seoDescription": "不锈钢门拉手，适用于木门。",
+      "seoDescription": "不锈钢门拉手，适用于木门。中心距 P=284mm，面板尺寸 300 × 40mm。",
       "en": {
         "name": "Stainless Steel Handle",
         "series": "Stainless Steel Handle",
         "categoryNames": [
           "Stainless Steel Handles"
         ],
-        "summary": "Stainless Steel Handle for wooden door.",
-        "specs": [],
+        "summary": "Stainless Steel Handle for wooden door. Centre distance P=284mm, plate size 300 × 40mm.",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "P=284mm"
+          },
+          {
+            "label": "Overall length",
+            "value": "300mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "300 × 40mm"
+          },
+          {
+            "label": "Projection",
+            "value": "60mm"
+          },
+          {
+            "label": "Fixing centre",
+            "value": "P=24mm"
+          },
+          {
+            "label": "Weight",
+            "value": "0.74kg"
+          }
+        ],
         "material": "Stainless Steel",
         "finishes": [
           "Satin stainless"
@@ -74387,7 +74463,7 @@
           "Metal Door"
         ],
         "seoTitle": "MTR2110 Stainless Steel Handle",
-        "seoDescription": "Stainless Steel Handle for wooden door."
+        "seoDescription": "Stainless Steel Handle for wooden door. Centre distance P=284mm, plate size 300 × 40mm."
       }
     },
     {
@@ -74431,10 +74507,10 @@
       ],
       "material": "不锈钢",
       "finishes": [
-        "缎面不锈钢",
-        "缎面 黄铜",
-        "仿古红铜",
-        "哑黑"
+        "MUL1022-01-513 — Stainless steel, hairline, PVD graphite",
+        "MUL1022-01-515 — Stainless steel, hairline, PVD French gold",
+        "MUL1022-01-517 — Stainless steel, hairline, PVD rose gold",
+        "MUL1022-01-519 — Stainless steel, hairline, PVD nickel"
       ],
       "doorTypes": [
         "木门",
@@ -74519,10 +74595,10 @@
         ],
         "material": "Stainless Steel",
         "finishes": [
-          "Satin stainless",
-          "Satin brass",
-          "Antique copper",
-          "Matt black"
+          "MUL1022-01-513 — Stainless steel, hairline, PVD graphite",
+          "MUL1022-01-515 — Stainless steel, hairline, PVD French gold",
+          "MUL1022-01-517 — Stainless steel, hairline, PVD rose gold",
+          "MUL1022-01-519 — Stainless steel, hairline, PVD nickel"
         ],
         "doorTypes": [
           "Wooden Door",
@@ -74544,7 +74620,7 @@
       "categoryNames": [
         "执手锁"
       ],
-      "summary": "不锈钢执手，适用于木门。",
+      "summary": "黄铜执手，适用于木门。",
       "specs": [
         {
           "label": "执手长度",
@@ -74567,7 +74643,7 @@
           "value": "69mm"
         }
       ],
-      "material": "不锈钢",
+      "material": "黄铜",
       "finishes": [
         "缎面不锈钢",
         "哑黑"
@@ -74594,14 +74670,14 @@
       ],
       "styleFamily": "",
       "seoTitle": "MUL1066 执手",
-      "seoDescription": "不锈钢执手，适用于木门。",
+      "seoDescription": "黄铜执手，适用于木门。",
       "en": {
         "name": "Lever Handle",
         "series": "Lever Handle",
         "categoryNames": [
           "Lever Handles"
         ],
-        "summary": "Stainless Steel lever handle for wooden door.",
+        "summary": "Brass lever handle for wooden door.",
         "specs": [
           {
             "label": "Lever length",
@@ -74624,7 +74700,7 @@
             "value": "69mm"
           }
         ],
-        "material": "Stainless Steel",
+        "material": "Brass",
         "finishes": [
           "Satin stainless",
           "Matt black"
@@ -74634,7 +74710,7 @@
           "Metal Door"
         ],
         "seoTitle": "MUL1066 Lever Handle",
-        "seoDescription": "Stainless Steel lever handle for wooden door."
+        "seoDescription": "Brass lever handle for wooden door."
       }
     },
     {
@@ -74649,9 +74725,30 @@
       "categoryNames": [
         "执手锁"
       ],
-      "summary": "不锈钢执手，适用于木门。",
-      "specs": [],
-      "material": "不锈钢",
+      "summary": "黄铜执手，适用于木门。",
+      "specs": [
+        {
+          "label": "执手长度",
+          "value": "122.5mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø56mm"
+        },
+        {
+          "label": "圆盖厚度",
+          "value": "8.5mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "69mm"
+        },
+        {
+          "label": "执手下垂长度",
+          "value": "33mm"
+        }
+      ],
+      "material": "黄铜",
       "finishes": [
         "缎面不锈钢"
       ],
@@ -74664,23 +74761,70 @@
         "ratio": "1 / 1",
         "label": "雷茵 MUL2101 执手"
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "/images/products-rayen/mul2101-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MUL2101 执手 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/mul2101-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MUL2101 执手 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/mul2101-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MUL2101 执手 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/mul2101-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MUL2101 执手 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/mul2101-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 MUL2101 执手 第 6 张"
+        }
+      ],
       "relatedModels": [],
       "sites": [
         "rayen"
       ],
       "styleFamily": "",
       "seoTitle": "MUL2101 执手",
-      "seoDescription": "不锈钢执手，适用于木门。",
+      "seoDescription": "黄铜执手，适用于木门。",
       "en": {
         "name": "Lever Handle",
         "series": "Lever Handle",
         "categoryNames": [
           "Lever Handles"
         ],
-        "summary": "Stainless Steel lever handle for wooden door.",
-        "specs": [],
-        "material": "Stainless Steel",
+        "summary": "Brass lever handle for wooden door.",
+        "specs": [
+          {
+            "label": "Lever length",
+            "value": "122.5mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø56mm"
+          },
+          {
+            "label": "Rose thickness",
+            "value": "8.5mm"
+          },
+          {
+            "label": "Projection",
+            "value": "69mm"
+          },
+          {
+            "label": "Lever drop",
+            "value": "33mm"
+          }
+        ],
+        "material": "Brass",
         "finishes": [
           "Satin stainless"
         ],
@@ -74689,7 +74833,7 @@
           "Metal Door"
         ],
         "seoTitle": "MUL2101 Lever Handle",
-        "seoDescription": "Stainless Steel lever handle for wooden door."
+        "seoDescription": "Brass lever handle for wooden door."
       }
     },
     {
@@ -85627,18 +85771,6 @@
         {
           "label": "支撑柱",
           "value": "27mm"
-        },
-        {
-          "label": "安装螺钉",
-          "value": "M8"
-        },
-        {
-          "label": "安装孔径（玻璃门）",
-          "value": "φ16mm"
-        },
-        {
-          "label": "安装孔径（木门）",
-          "value": "φ10mm"
         }
       ],
       "material": "不锈钢",
@@ -85696,18 +85828,6 @@
           {
             "label": "Standoff",
             "value": "27mm"
-          },
-          {
-            "label": "Fixing screw",
-            "value": "M8"
-          },
-          {
-            "label": "Fixing hole (glass door)",
-            "value": "φ16mm"
-          },
-          {
-            "label": "Fixing hole (timber door)",
-            "value": "φ10mm"
           }
         ],
         "material": "Stainless Steel",
@@ -92075,7 +92195,7 @@
       "categoryNames": [
         "执手锁"
       ],
-      "summary": "不锈钢执手，适用于木门。",
+      "summary": "黄铜执手，适用于木门。",
       "specs": [
         {
           "label": "执手长度",
@@ -92098,7 +92218,7 @@
           "value": "69mm"
         }
       ],
-      "material": "不锈钢",
+      "material": "黄铜",
       "finishes": [
         "缎面不锈钢"
       ],
@@ -92174,14 +92294,14 @@
       ],
       "styleFamily": "",
       "seoTitle": "UL1066 执手",
-      "seoDescription": "不锈钢执手，适用于木门。",
+      "seoDescription": "黄铜执手，适用于木门。",
       "en": {
         "name": "Lever Handle",
         "series": "Lever Handle",
         "categoryNames": [
           "Lever Handles"
         ],
-        "summary": "Stainless Steel lever handle for wooden door.",
+        "summary": "Brass lever handle for wooden door.",
         "specs": [
           {
             "label": "Lever length",
@@ -92204,7 +92324,7 @@
             "value": "69mm"
           }
         ],
-        "material": "Stainless Steel",
+        "material": "Brass",
         "finishes": [
           "Satin stainless"
         ],
@@ -92213,7 +92333,7 @@
           "Metal Door"
         ],
         "seoTitle": "UL1066 Lever Handle",
-        "seoDescription": "Stainless Steel lever handle for wooden door."
+        "seoDescription": "Brass lever handle for wooden door."
       }
     },
     {

@@ -1,0 +1,151 @@
+/*
+  预览面板的样式。
+  ===========================================================================
+
+  这是给 CMS 右侧预览用的独立样式表，不是网站本身的 CSS。
+
+  为什么不直接引用网站的样式：Next.js 打包出来的 CSS 文件名带哈希
+  （/_next/static/chunks/0f4szc1ibbm3p.css），每次构建都会变，写死进来
+  下一次构建就 404 了。这里手写一份和网站同源的字号、颜色、留白，
+  够预览判断"填的内容长什么样"，不追求像素级一致。
+
+  颜色和字号取自 src/app/globals.css 的 token。
+*/
+
+body {
+  margin: 0;
+  padding: 32px 28px 64px;
+  background: #ffffff;
+  color: #121212;
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cp-eyebrow {
+  color: #6e6e73;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px;
+}
+
+.cp-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+}
+
+.cp-model {
+  color: #e32322;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.cp-summary {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.cp-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  margin: 0 0 24px;
+}
+
+.cp-images img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f5f5f7;
+  border: 1px solid #e5e5e7;
+}
+
+.cp-h {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8e8e93;
+  margin: 28px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e7;
+}
+
+.cp-specs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cp-specs td {
+  border-bottom: 1px solid #e5e5e7;
+  padding: 9px 0;
+  vertical-align: top;
+}
+
+.cp-specs td:first-child {
+  color: #6e6e73;
+  width: 45%;
+  padding-right: 12px;
+}
+
+.cp-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.cp-fact-label {
+  color: #6e6e73;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/*
+  空状态用灰字而不是留白。
+  同事要看到"这里是空的"，而不是以为预览坏了。
+*/
+.cp-empty {
+  color: #8e8e93;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* 待办提示：填了会有问题的地方，在预览里就标出来 */
+.cp-warn {
+  background: #fdeceb;
+  border-left: 3px solid #e32322;
+  color: #7a1512;
+  font-size: 13px;
+  padding: 10px 12px;
+  margin: 16px 0;
+}
+
+.cp-prose h2 { font-size: 20px; margin: 26px 0 8px; }
+.cp-prose h3 { font-size: 16px; margin: 20px 0 6px; }
+.cp-prose p { margin: 0 0 14px; }
+.cp-prose ul, .cp-prose ol { margin: 0 0 14px; padding-left: 20px; }
+.cp-prose a { color: #e32322; }
+
+.cp-date {
+  color: #6e6e73;
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+.cp-tag {
+  display: inline-block;
+  background: #f5f5f7;
+  border: 1px solid #e5e5e7;
+  border-radius: 2px;
+  color: #6e6e73;
+  font-size: 12px;
+  padding: 3px 8px;
+  margin: 0 6px 6px 0;
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "real-photograph-on-editorial-field",
+  "grammar": "void-light",
+  "field": "#f2f2f2 → #e2e2e2, radial from above",
+  "fieldMeasuredFrom": "FSB heroes fetched 2026-09-05 at w_1440 (dieter-rams stage; designed-by; produktfamilien_uebersicht)",
+  "objectMeanLuminance": 78,
+  "productGeometry": "Original pixels retained. Uniform resize and complete-object crop only — no redraw, no restyle, no recombination.",
+  "addedByThisScript": [
+    "graded backdrop",
+    "cast shadow derived from the object's own silhouette"
+  ],
+  "sources": [
+    {
+      "source": "public\\images\\products\\lc14-85-50mm-lock-case.webp",
+      "sha256": "08b146871eeeda6d6ea461ebbab16a90d569976d353d9a1276ef5623a1e1daa3"
+    }
+  ]
+}

@@ -82,11 +82,45 @@ const BRANDED_PREFIX = "/images/products-hyde/";
 const branded = (src) =>
   src?.startsWith(PRODUCT_PREFIX) ? `${BRANDED_PREFIX}${src.slice(PRODUCT_PREFIX.length)}` : src;
 
+/**
+ * Image paths the homepage hard-codes rather than looking up by model.
+ *
+ * EditorialAtlas writes its five subjects as literal /images/products-hyde/… paths, so no
+ * amount of adding models to homepageModels() above will cover them: one of its entries is
+ * labelled "Flush bolts", which is not a model number at all.
+ *
+ * On 2026-09-15 that rail put two images on the homepage with no srcset —
+ * stainless-steel-flush-bolt and 600-concealed-sliding-door-handle — and
+ * static-export-performance.test.ts failed exactly as the note above promised it would.
+ * Rather than copy those two names into the list and wait for the next rail to be added,
+ * the literals are read straight out of the component. It is a regex over a source file,
+ * which is crude, but it cannot drift from what the component actually renders — and that
+ * is the whole failure being fixed.
+ */
+function hardCodedHomepageImages() {
+  const found = new Set();
+  for (const file of ["src/components/site/EditorialAtlas.tsx"]) {
+    let source;
+    try {
+      source = readFileSync(file, "utf8");
+    } catch {
+      continue;
+    }
+    for (const m of source.matchAll(/["'](\/images\/products-hyde\/[^"']+\.webp)["']/g)) {
+      found.add(m[1]);
+    }
+  }
+  return found;
+}
+
 const config = {};
 for (const model of homepageModels()) {
   const product = byModel.get(String(model).toUpperCase());
   const src = branded(product?.heroImage?.src);
   if (!src?.startsWith(BRANDED_PREFIX)) continue;
+  config[src] = { sourceWidth: 1000, variants: VARIANTS };
+}
+for (const src of hardCodedHomepageImages()) {
   config[src] = { sourceWidth: 1000, variants: VARIANTS };
 }
 

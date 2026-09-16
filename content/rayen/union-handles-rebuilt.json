@@ -239,6 +239,78 @@
           "value": "38mm"
         }
       ]
+    },
+    {
+      "model": "MUL2101",
+      "slug": "mul2101-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Brass",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "MUL2101xL900SZW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "122.5mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø56mm"
+        },
+        {
+          "label": "Rose thickness",
+          "value": "8.5mm"
+        },
+        {
+          "label": "Projection",
+          "value": "69mm"
+        },
+        {
+          "label": "Lever drop",
+          "value": "33mm"
+        }
+      ]
+    },
+    {
+      "model": "MTR2110",
+      "slug": "mtr2110-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "drawing": "MTR2110xA900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=284mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "300mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "300 × 40mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=24mm"
+        }
+      ]
     }
   ]
 }

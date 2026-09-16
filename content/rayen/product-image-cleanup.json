@@ -8,11 +8,11 @@
     "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
     "而那个长窗口正是另一个会话重命名时撞车的原因。"
   ],
-  "generated": "2026-09-15",
+  "generated": "2026-09-16",
   "counts": {
-    "refused": 438,
-    "cleanable": 1217,
-    "already-clean": 2385
+    "refused": 439,
+    "cleanable": 1218,
+    "already-clean": 2395
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -392,6 +392,7 @@
     "lh855-snbk-lever-handle-5.webp",
     "lh855-snet-lever-handle-6.webp",
     "lh855-snet-lever-handle-7.webp",
+    "mtr2110-stainless-steel-handle-4.webp",
     "nc013-stainless-steel-handle-3.webp",
     "nc046-stainless-steel-handle-3.webp",
     "nc046-stainless-steel-handle-5.webp",
@@ -3706,6 +3707,14 @@
     },
     "600-concealed-sliding-door-handle.webp": {
       "source": "36128dd71eb83551413e10cfa31afb907364085261d64b0e737479fab583b338",
+      "status": "cleanable"
+    },
+    "6068-mortise-lever-handle-lock-2.webp": {
+      "source": "1d0c242f152048be90bf1e974584962899d6b4cda51ac969d5b9003865122047",
+      "status": "already-clean"
+    },
+    "6068-mortise-lever-handle-lock.webp": {
+      "source": "215ee44ff0128eb2c3b6cd388389730aa836fb21691c7427e864e664d31f691a",
       "status": "cleanable"
     },
     "607-acbk-tubular-lock-2.webp": {
@@ -13188,8 +13197,29 @@
       "source": "31945da9bc88197c37ac319b260a64ae29a035e6d0127f896533d5c7a56c5447",
       "status": "cleanable"
     },
-    "mtr2110-stainless-steel-handle.webp": {
+    "mtr2110-stainless-steel-handle-2.webp": {
+      "source": "023e346f77e69417fc38a4b3bc970e045271c02b859e03f25200d7351d9f1412",
+      "status": "already-clean"
+    },
+    "mtr2110-stainless-steel-handle-3.webp": {
       "source": "b202750c084e7345d750547d3cbc91be4d240ebbc3c6cf6b9e5e2fb9e6d32f59",
+      "status": "already-clean"
+    },
+    "mtr2110-stainless-steel-handle-4.webp": {
+      "source": "2c55b9379873fc98ac5444aa9e6d04c7668c15c667b96041656c64b546c71cc0",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "mtr2110-stainless-steel-handle-5.webp": {
+      "source": "263056fb6b57086c12e4fa0d595e5899d47365bac24454c4448c80b842b859ac",
+      "status": "already-clean"
+    },
+    "mtr2110-stainless-steel-handle-6.webp": {
+      "source": "ce11d3cb8a96fab490cbba8b2b0ee881c620920ab856da8ef29080112970e02e",
+      "status": "already-clean"
+    },
+    "mtr2110-stainless-steel-handle.webp": {
+      "source": "9faf8377af71504b6b24a0923b1429a6fd5d8f19445b8f32a78b6c076845d273",
       "status": "already-clean"
     },
     "mul1022-lever-handle-2.webp": {
@@ -13228,8 +13258,28 @@
       "source": "f7d3bfc0548ba9c606c1867d4fada1a0ecfc64f6c94a1ba5b0532e168544e1d2",
       "status": "already-clean"
     },
+    "mul2101-lever-handle-2.webp": {
+      "source": "76379e01c74bb96ca84eaafe2fc7235b0f64c0c446584048a53507f483a50160",
+      "status": "already-clean"
+    },
+    "mul2101-lever-handle-3.webp": {
+      "source": "6a96cbd7c0328ee0b206cd10222c0a30c959230ee6f6396243a5612bea11800a",
+      "status": "already-clean"
+    },
+    "mul2101-lever-handle-4.webp": {
+      "source": "3efa0c054e25ffe25f6294cc297d60300ea34d77bccde14f20cb28e9a2d236ad",
+      "status": "already-clean"
+    },
+    "mul2101-lever-handle-5.webp": {
+      "source": "7ffea0ec0c85ce0cd98221e4139d6dcf76eeb8bc138755c9809553e3092bb44f",
+      "status": "already-clean"
+    },
+    "mul2101-lever-handle-6.webp": {
+      "source": "4daf0cb89a1b1ab09ad038cd46f8dc692178c869b55fdd4628e407237207674a",
+      "status": "already-clean"
+    },
     "mul2101-lever-handle.webp": {
-      "source": "7bb3aed8822ded97af6c90c9f32dafaea2624187dce198c3fec62c90d8c5d0f4",
+      "source": "5d5211747b0b20b364c5a127aa03c7d47f8ec08aafe2bdae409b1954081dcce8",
       "status": "already-clean"
     },
     "nc013-stainless-steel-handle-2.webp": {

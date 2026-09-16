@@ -217,36 +217,6 @@
           "value": "45mm"
         }
       ]
-    },
-    {
-      "model": "MUL2101",
-      "slug": "mul2101-lever-handle",
-      "name": "Lever Handle",
-      "nameZh": "执手",
-      "categoryPath": [
-        "lever-handles"
-      ],
-      "material": "Stainless Steel",
-      "finishes": [
-        "Satin stainless"
-      ],
-      "drawing": null,
-      "specs": []
-    },
-    {
-      "model": "MTR2110",
-      "slug": "mtr2110-stainless-steel-handle",
-      "name": "Stainless Steel Handle",
-      "nameZh": "门拉手",
-      "categoryPath": [
-        "stainless-steel-handles"
-      ],
-      "material": "Stainless Steel",
-      "finishes": [
-        "Satin stainless"
-      ],
-      "drawing": null,
-      "specs": []
     }
   ],
   "heldBack": [

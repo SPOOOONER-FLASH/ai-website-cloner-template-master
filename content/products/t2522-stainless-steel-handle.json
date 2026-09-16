@@ -31,18 +31,6 @@
     {
       "label": "Standoff",
       "value": "27mm"
-    },
-    {
-      "label": "Fixing screw",
-      "value": "M8"
-    },
-    {
-      "label": "Fixing hole (glass door)",
-      "value": "φ16mm"
-    },
-    {
-      "label": "Fixing hole (timber door)",
-      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -70,12 +58,5 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "T2522 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
-  "specSources": {
-    "artunion": {
-      "id": "T2522-01-001-L",
-      "basis": "sole",
-      "fetchedAt": "2026-09-14T02:41:16.839Z"
-    }
-  }
+  "seoDescription": "Stainless Steel pull handle."
 }

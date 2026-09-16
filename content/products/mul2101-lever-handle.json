@@ -10,15 +10,32 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Brass lever handle, published by UNION in 5 finishes.",
-  "specs": [],
-  "material": "Stainless Steel",
+  "summary": "Brass lever handle, 122.5mm lever.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "122.5mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø56mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "8.5mm"
+    },
+    {
+      "label": "Projection",
+      "value": "69mm"
+    },
+    {
+      "label": "Lever drop",
+      "value": "33mm"
+    }
+  ],
+  "material": "Brass",
   "finishes": [
-    "MUL2101-15-023 — Brass, satin — no clear lacquer, so it patinates with handling",
-    "MUL2101-15-200 — Brass, chrome plated",
-    "MUL2101-15-202 — Brass, sulphur-smoked golden bronze",
-    "MUL2101-15-207 — Brass, sulphur-smoked brown",
-    "MUL2101-15-215 — Brass, charcoal paint — a coating, not a plating"
+    "Satin stainless"
   ],
   "doorTypes": [
     "Wooden Door",
@@ -30,21 +47,35 @@
     "ratio": "1 / 1",
     "label": "MUL2101 Lever Handle"
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "/images/products/mul2101-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "MUL2101 Lever Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/mul2101-lever-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "MUL2101 Lever Handle, view 3"
+    },
+    {
+      "src": "/images/products/mul2101-lever-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "MUL2101 Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/mul2101-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "MUL2101 Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/mul2101-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "MUL2101 Lever Handle, view 6"
+    }
+  ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "MUL2101 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle.",
-  "nameEs": "Manilla de palanca",
-  "specSources": {
-    "union": {
-      "basis": "published-by-union",
-      "source": "https://www.artunion.co.jp/products/detail.php",
-      "fields": [
-        "finishes"
-      ],
-      "note": "Finish list and base material read from UNION's own per-part-number pages on 2026-09-15 (scripts/scrape-artunion-finishes.mjs). Size, door thickness, application and cylinder availability were also fetched and are in content/rayen/artunion-specs.json, but are NOT written here: product-sites.test.ts requires a drawing-less model to ship an empty spec table, and whether a UNION page satisfies that rule is the RAYEN session's decision. Price, built-project list, branded feature names and catalogue page numbers are deliberately not taken.",
-      "fetchedAt": "2026-09-15"
-    }
-  }
+  "seoDescription": "Brass lever handle, 122.5mm lever."
 }
