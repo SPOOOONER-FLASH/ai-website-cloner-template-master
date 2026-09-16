@@ -82,14 +82,25 @@ export function CatalogueSpread({
       <div className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
         <div className={imageFirst ? "" : "md:order-2"}>
           {category.image?.src ? (
+            /*
+              1 / 1 and contain, not 4 / 3 and cover.
+
+              These covers are whatever the family's lead product happens to be, and they are
+              not one shape: 15 are square plates, the rest are 2:3 portraits of tall pull
+              handles. A 4 / 3 cover frame took 12.5% off a square plate and close to half the
+              height of a portrait — on the products index, which is the page a buyer browses
+              before they know what they are looking for. Padding costs whitespace; cropping
+              cost the product.
+            */
             <Photo
               src={category.image.src}
               alt={category.image.label ?? category.name}
-              aspect="4 / 3"
+              aspect="1 / 1"
+              fit="contain"
               priority={index < 2}
             />
           ) : (
-            <div className="aspect-[4/3] bg-[var(--color-surface-alt)]" />
+            <div className="aspect-square bg-[var(--color-surface-alt)]" />
           )}
         </div>
 
@@ -148,7 +159,7 @@ export function CatalogueSpread({
                       empty box — three of the four thumbs looked broken until the border went
                       on, and they had all loaded fine.
                     */
-                    className="aspect-square w-full border border-[var(--color-line)] bg-[var(--color-surface-alt)] object-cover"
+                    className="aspect-square w-full border border-[var(--color-line)] bg-[var(--color-surface-alt)] object-contain"
                   />
                 </li>
               ))}

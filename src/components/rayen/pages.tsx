@@ -216,7 +216,10 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
                   className="group grow basis-[calc(50%-1px)] bg-white p-4 transition-colors hover:bg-[var(--color-surface-alt)] md:basis-[calc(33.333%-1px)] lg:basis-[calc(20%-1px)]"
                 >
                   {category.image?.src ? (
-                    <Photo src={category.image.src} alt={category.name} aspect="1 / 1" />
+                    /* contain for the same reason as CatalogueSpread: these covers are
+                       whichever product leads the family, and five of the seventeen are
+                       upright shots that a square cover frame cut by a third. */
+                    <Photo src={category.image.src} alt={category.name} aspect="1 / 1" fit="contain" />
                   ) : (
                     <div className="aspect-square bg-[var(--color-surface-alt)]" />
                   )}
@@ -253,9 +256,9 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
           <Shell>
             <SectionHead eyebrow={s.factoryEyebrow} title={s.factoryTitle} intro={s.factoryIntro} />
             <div className="mt-10 grid gap-4 md:mt-14 md:grid-cols-3">
-              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="4 / 3" />
+              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="1 / 1" />
             </div>
             <div className="mt-8">
               <ArrowLink href={localePath(locale, "/company/")}>{s.factoryMore}</ArrowLink>
@@ -643,7 +646,7 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
               <Photo
                 src="/images/rayen/factory-press-line.webp"
                 alt={locale === "zh" ? "冲压产线与在制品料架" : "Press line and work-in-progress racking"}
-                aspect="4 / 3"
+                aspect="1 / 1"
               />
             </div>
           </div>
@@ -655,12 +658,12 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
           <section className="mt-16 md:mt-24">
             <SectionHead eyebrow={s.factoryEyebrow} title={s.factoryTitle} intro={s.factoryIntro} align="left" />
             <div className="mt-8 grid gap-4 md:grid-cols-3">
-              <Photo src="/images/rayen/factory-press-hall-wide.webp" alt={locale === "zh" ? "冲床车间纵深全景" : "Press hall, looking down the line"} aspect="4 / 3" className="md:col-span-2" />
-              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-laser-cutter.webp" alt={locale === "zh" ? "激光切割设备" : "Laser cutter"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-press-hall.webp" alt={locale === "zh" ? "冲床车间全景" : "Press hall"} aspect="4 / 3" />
+              <Photo src="/images/rayen/factory-press-hall-wide.webp" alt={locale === "zh" ? "冲床车间纵深全景" : "Press hall, looking down the line"} aspect="1 / 1" className="md:col-span-2" />
+              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-laser-cutter.webp" alt={locale === "zh" ? "激光切割设备" : "Laser cutter"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-press-hall.webp" alt={locale === "zh" ? "冲床车间全景" : "Press hall"} aspect="1 / 1" />
             </div>
           </section>
 
@@ -788,7 +791,7 @@ export function OemBody({ locale }: { locale: RayenLocale }) {
               <Photo
                 src="/images/rayen/factory-assembly-bench.webp"
                 alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"}
-                aspect="3 / 4"
+                aspect="1 / 1"
               />
             </div>
           </section>
@@ -864,7 +867,7 @@ export function ContactBody({ locale }: { locale: RayenLocale }) {
             <Photo
               src="/images/rayen/factory-press-hall.webp"
               alt={locale === "zh" ? "冲床车间全景" : "Press hall"}
-              aspect="4 / 3"
+              aspect="1 / 1"
             />
           </div>
 
