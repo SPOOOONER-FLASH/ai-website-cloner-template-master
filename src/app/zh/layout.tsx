@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { archivo } from "../fonts";
 import "./rayen.css";
-import { absoluteUrl, legalName, rayen, siteName, siteUrl } from "@/data/rayen";
+import { absoluteUrl, legalName, rayen, siteName, siteUrl, siteVerification } from "@/data/rayen";
 
 /**
  * Root layout for the RAYEN 雷茵 Chinese site.
@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     adding a third gate should add it to this list rather than to their memory.
   */
   robots: { index: true, follow: true },
+  verification: { other: siteVerification },
 };
 
 export default function RayenRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -79,3 +79,14 @@ test("sitemap 覆盖每一个页面，且带语言备选", { skip: !built }, () 
   assert.deepEqual(missing.slice(0, 10), [], `${missing.length} 个页面不在 sitemap 里`);
   assert.match(sitemap, /hreflang="x-default"/, "sitemap 没有 x-default");
 });
+
+test("首页保留搜索引擎验证标记", { skip: !built }, () => {
+  /* Bing verifies ownership by fetching https://rayen.cn/ and looking for this tag, and its
+     own instructions say not to remove it after verification — a rebuild that dropped it
+     would un-verify the property silently, with no error anywhere. The tokens live in
+     `siteVerification` in src/data/rayen.ts; this asserts they actually reach the HTML. */
+  for (const home of ["index.html", join("en", "index.html")]) {
+    const html = readFileSync(join(OUT, home), "utf8");
+    assert.match(html, /name="msvalidate\.01"/, `${home} 少了 Bing 站长验证标记`);
+  }
+});

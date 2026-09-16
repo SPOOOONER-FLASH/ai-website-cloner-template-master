@@ -149,6 +149,23 @@ export const legalName = rayen.brand.legalName;
 export const siteUrl = `https://${rayen.host.domain}`;
 
 /**
+ * Search-console ownership tokens, rendered as <meta> on every page.
+ *
+ * Bing and Baidu both verify by looking for their tag on the site's home page, and both
+ * say to leave it in place afterwards — remove it and the property silently reverts to
+ * unverified, taking the crawl-rate and index-coverage reports with it. Keeping the tokens
+ * here rather than inline in the layouts means the 中文 and English roots cannot drift
+ * apart, which is the same reason `alternatesFor` lives here.
+ *
+ * Google is NOT in this list: rayen.cn is verified through DNS instead, which survives a
+ * rebuild of the site. Add a key here only for a service that offers no DNS method.
+ */
+export const siteVerification: Record<string, string> = {
+  /* Bing Webmaster Tools, added 2026-09-15 for https://rayen.cn/ */
+  "msvalidate.01": "5B499811B72E2A557D992BED0E38A9EF",
+};
+
+/**
  * Every internal link on this site goes through here.
  *
  * The pages live at /zh/... inside this repo's Next app, because they share one static

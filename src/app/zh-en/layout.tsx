@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { archivo } from "../fonts";
 import "../zh/rayen.css";
-import { absoluteUrl, legalName, rayen, siteName, siteUrl } from "@/data/rayen";
+import { absoluteUrl, legalName, rayen, siteName, siteUrl, siteVerification } from "@/data/rayen";
 import { htmlLang } from "@/data/rayen-i18n";
 
 /**
@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     other leaves half a bilingual site invisible while its hreflang points at it.
   */
   robots: { index: true, follow: true },
+  verification: { other: siteVerification },
 };
 
 export default function RayenEnRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
