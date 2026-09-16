@@ -54,6 +54,20 @@ const check = process.argv.includes("--check");
 const FIXED_FRAMES = [
   { name: "news hero + card", frame: 16 / 9, dir: "content/news", field: "heroImage" },
   { name: "project card", frame: 3 / 2, dir: "content/projects", field: "heroImage" },
+  /*
+    ⚠ The homepage column rail, added 2026-09-15 after it shipped a visibly cropped image.
+
+    The two surfaces above are found by scanning content/. This one is not: its images are
+    named in src/data/feature-columns.ts and its frame is a `ratio="3 / 2"` written inside
+    FeatureColumns.tsx. A content scan cannot see either, which is why a 1000×1000 plate
+    sat in a 3:2 frame losing a third of its height until the client noticed on the live
+    site.
+
+    The general shape of the miss: a fixed aspect ratio inside a component is a crop that
+    no content-driven audit is watching. When a new surface pins a ratio, it belongs here
+    the same day.
+  */
+  { name: "homepage column rail", frame: 3 / 2, module: "src/data/feature-columns.ts" },
 ];
 
 /** Tolerated loss for a wide editorial image in a wider frame. */
@@ -70,14 +84,37 @@ function parseRatio(value) {
 const findings = [];
 let inspected = 0;
 
-for (const { name, frame, dir, field } of FIXED_FRAMES) {
-  if (!existsSync(dir)) continue;
+/**
+ * Every image a surface puts through its fixed frame, with the name to report it under.
+ *
+ * Two sources, because the site has two ways of naming an image: a content record's
+ * field, and a `src:` literal inside a TypeScript data module. The second was invisible
+ * to this audit until 2026-09-15 and shipped a visibly cropped plate because of it.
+ */
+function imagesFor(surface) {
+  if (surface.dir) {
+    if (!existsSync(surface.dir)) return [];
+    return readdirSync(surface.dir)
+      .filter((entry) => entry.endsWith(".json"))
+      .map((file) => JSON.parse(readFileSync(`${surface.dir}/${file}`, "utf8")))
+      .map((record) => ({ src: record[surface.field]?.src, id: record.slug ?? "?" }))
+      .filter((entry) => entry.src);
+  }
 
-  for (const file of readdirSync(dir).filter((entry) => entry.endsWith(".json"))) {
-    const record = JSON.parse(readFileSync(`${dir}/${file}`, "utf8"));
-    const image = record[field];
-    if (!image?.src) continue;
+  if (!existsSync(surface.module)) return [];
+  const source = readFileSync(surface.module, "utf8");
+  /* `src: "/images/…"` — the same literal a reader would grep for. */
+  return [...source.matchAll(/src:\s*"(\/images\/[^"]+)"/g)].map((match) => ({
+    src: match[1],
+    id: match[1].slice(match[1].lastIndexOf("/") + 1),
+  }));
+}
 
+for (const surface of FIXED_FRAMES) {
+  const { name, frame } = surface;
+
+  for (const image of imagesFor(surface)) {
+    const file = image.id;
     const path = `public${image.src}`;
     if (!existsSync(path)) continue;
 

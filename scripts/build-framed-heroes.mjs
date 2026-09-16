@@ -93,6 +93,30 @@ const TARGETS = [
   "projects/panic-bar-with-outside-trim-set",
 ];
 
+/**
+ * Images referenced from a TypeScript data file rather than a content record.
+ *
+ * ⚠ 2026-09-15: the homepage column rail is a THIRD fixed frame — `ratio="3 / 2"` in
+ * FeatureColumns.tsx — and nothing was auditing it. Two of its three images are already
+ * 3:2 and fit; `dc02-door-coordinator.webp` is a 1000×1000 catalogue plate, so
+ * `object-cover` threw away a THIRD OF ITS HEIGHT and cut the coordinator's rod off at
+ * the top. The client spotted it on the live homepage.
+ *
+ * The audit that exists for exactly this (scripts/audit-image-fit.mjs) only knew about
+ * the news and project frames, because those read from content/ and a component's own
+ * frame is invisible to a content scan. It now knows about this one too — but the general
+ * lesson is that a fixed `ratio` in a component is a crop nobody is watching.
+ *
+ * `frame` is per-entry here, unlike TARGETS above, because these are not all 16:9.
+ */
+const PLATE_TARGETS = [
+  {
+    source: "/images/products-hyde/dc02-door-coordinator.webp",
+    frame: 3 / 2,
+    name: "dc02-door-coordinator-3x2",
+  },
+];
+
 /** The plate's own field colour, taken from a corner it is unlikely to occupy. */
 async function fieldColour(path) {
   const { data } = await sharp(path)
@@ -183,6 +207,41 @@ for (const target of TARGETS) {
 
   console.log(
     `  ${slug}: ${meta.width}×${meta.height} → ${width}×${height}` +
+      `  field rgb(${background.r},${background.g},${background.b})`,
+  );
+  written += 1;
+}
+
+for (const plate of PLATE_TARGETS) {
+  const source = `public${plate.source}`;
+  const target = join(OUT_DIR, `${plate.name}.webp`);
+
+  if (!existsSync(source)) {
+    console.error(`  plate source missing: ${plate.source}`);
+    missing += 1;
+    continue;
+  }
+  if (check) {
+    if (!existsSync(target)) {
+      console.error(`  missing framed plate: ${target}`);
+      missing += 1;
+    }
+    continue;
+  }
+
+  const meta = await sharp(source).metadata();
+  const actual = meta.width / meta.height;
+  const width = actual < plate.frame ? Math.round(meta.height * plate.frame) : meta.width;
+  const height = actual < plate.frame ? meta.height : Math.round(meta.width / plate.frame);
+  const background = await fieldColour(source);
+
+  await sharp(source)
+    .resize({ width, height, fit: "contain", background })
+    .webp({ quality: 82, effort: 6 })
+    .toFile(target);
+
+  console.log(
+    `  ${plate.name}: ${meta.width}×${meta.height} → ${width}×${height}` +
       `  field rgb(${background.r},${background.g},${background.b})`,
   );
   written += 1;
