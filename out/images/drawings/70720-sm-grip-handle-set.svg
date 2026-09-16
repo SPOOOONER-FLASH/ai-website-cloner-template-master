@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 326" role="img" aria-labelledby="t d">
+  <title id="t">70720 SM Grip Handle Set — bolt detail</title>
+  <desc id="d">Backset 60mm to the cylinder centre. Latch throw 13mm. Deadbolt throw 25mm. Case outline is not published and is therefore not drawn. Drawn 1:1 from the published specification; unstated features are not shown.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <g transform="translate(76 76)">
+      <line x1="25" y1="-10" x2="25" y2="102" stroke="#8e8a80" stroke-width="1.6" stroke-dasharray="10 5"/>
+    <path d="M12.00 26.00 L25.00 26.00 L25.00 40.00 L12.00 40.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <path d="M0.00 56.00 L25.00 56.00 L25.00 70.00 L0.00 70.00 Z" fill="none" stroke="#16150f" stroke-width="0.7" stroke-linejoin="round"/>
+    <line x1="-14.00" y1="48.00" x2="116.00" y2="48.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="85.00" y1="-10.00" x2="85.00" y2="102.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <circle cx="85.00" cy="48.00" r="15.00" fill="none" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="25" y1="99" x2="25" y2="122" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="85" y1="99" x2="85" y2="122" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="118" x2="44.84" y2="118" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="65.16" y1="118" x2="85" y2="118" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M25.00 118.00 L29.20 119.18 L29.20 116.82 Z" fill="#16150f"/>
+    <path d="M85.00 118.00 L80.80 116.82 L80.80 119.18 Z" fill="#16150f"/>
+    <text x="55" y="121.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">60</text>
+    <line x1="12" y1="99" x2="12" y2="148" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="99" x2="25" y2="148" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="12" y1="144" x2="8.34" y2="144" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="28.66" y1="144" x2="25" y2="144" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M12.00 144.00 L16.20 145.18 L16.20 142.82 Z" fill="#16150f"/>
+    <path d="M25.00 144.00 L20.80 142.82 L20.80 145.18 Z" fill="#16150f"/>
+    <text x="18.5" y="147.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">13</text>
+    <line x1="0" y1="99" x2="0" y2="174" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="25" y1="99" x2="25" y2="174" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="0" y1="170" x2="2.34" y2="170" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="22.66" y1="170" x2="25" y2="170" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M0.00 170.00 L4.20 171.18 L4.20 168.82 Z" fill="#16150f"/>
+    <path d="M25.00 170.00 L20.80 168.82 L20.80 171.18 Z" fill="#16150f"/>
+    <text x="12.5" y="173.85" font-size="11" fill="#16150f" text-anchor="middle" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">25</text>
+    <text x="25" y="202" font-size="10" fill="#8e8a80" text-anchor="middle" font-family="'Archivo',Arial,sans-serif">closing edge</text>
+    </g>
+    <text x="76" y="304" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>
