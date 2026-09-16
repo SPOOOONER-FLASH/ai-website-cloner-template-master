@@ -12,7 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Codex 311 studio | EditorialAtlas, home EN/ES image selection, product-studies, new studio assets and provenance, out/ out-rayen/ | Replace overview 305 with 311 and prepare real-product background edits | 2026-09-15 |
+| Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
 Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
 `/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /
 TSG52 / TSG1169 / TSG1170 / TSG1226 / TSG4227 / USG1，全都是空规格表。
@@ -110,6 +110,19 @@ Master Key 256 次）**站上根本没有对应记录** —— 对照第一节�
 这是目录缺口，比整份出图清单更值钱。
 
 ⚠ 清单里没有一条是「照着想象画一个」。数据不够的地方写的是**缺什么**，不是可以假设什么。
+
+Claude 2026-09-15（第二轮，甲方又给了凯理图册六个跨页）→ 场景从三种扩到**八种**
+（A 石板 / B 布面 / C 罗纹玻璃 / D 书堆 / E 木框 / F 混凝土+原木 / G 黑场 / H 装在门上），
+并出了**选品清单** `docs/collaboration/2026-09-15-scene-shortlist.md`（`npm run brief:scenes`）：
+全目录 519 个已发布型号归成 342 个形状，其中 **50 个形状**有两个以上表面、每个表面都有
+真实照片、且尺寸适合台面场景。每组标了建议场景。
+
+⚠ 三条新规律：道具永远比产品「软」（不跟金属抢高光）；渐变背景是打光打出来的不是刷出来的；
+**书堆那张不能照抄** —— 凯理用的是 Kinfolk / National Geographic 真实封面，
+那是别家商标和版权封面出现在我们的产品图里，要做就用无字书脊。
+
+甲方要的 Word 版：`docs/collaboration/2026-09-15-拍摄风格拆解.docx`。
+**以 Markdown 版为准**，两边不一致时改 md 再重新导出。
 
 Claude 2026-09-15 → **给 Codex 的场景布光规格**：
 `docs/collaboration/2026-09-15-catalogue-scene-style.md`。甲方圈了雷茵/凯理册子里三张
