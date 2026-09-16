@@ -107,6 +107,7 @@ const TARGETS = [
   "lever-handle-range-lh852-lh853-lh855",
   "stainless-lever-range-9007-9008-9014",
   "deadbolt-d101-d102-and-the-rim-alternative",
+  "brass-piano-hinge-is-a-finish-not-a-metal",
 ];
 
 /**

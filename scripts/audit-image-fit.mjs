@@ -110,10 +110,25 @@ function imagesFor(surface) {
   }));
 }
 
+// NewsVisual uses reviewed subject viewports and contains their rotated bounds.
+// These sources do not pass through object-cover; validate the actual viewport instead.
+const newsVisuals = JSON.parse(readFileSync("src/data/news-visuals.json", "utf8"));
 for (const surface of FIXED_FRAMES) {
   const { name, frame } = surface;
 
   for (const image of imagesFor(surface)) {
+    const visual = surface.dir === "content/news" ? newsVisuals[image.id] : undefined;
+    if (visual) {
+      const meta = await sharp(`public${visual.src}`).metadata();
+      const [x, y, width, height] = visual.crop;
+      if (meta.width !== visual.width || meta.height !== visual.height ||
+          !visual.crop.every(Number.isFinite) || x < 0 || y < 0 || width <= 0 || height <= 0 ||
+          x + width > meta.width || y + height > meta.height || !Number.isFinite(visual.angle)) {
+        throw new Error(`Invalid reviewed NewsVisual viewport: ${image.id}`);
+      }
+      inspected += 1;
+      continue;
+    }
     const file = image.id;
     const path = `public${image.src}`;
     if (!existsSync(path)) continue;

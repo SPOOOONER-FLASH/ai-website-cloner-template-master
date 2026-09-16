@@ -87,3 +87,6 @@ __pycache__/
 
 # Word lock files — created while the client has a .docx open
 ~$*
+
+# Blender 自动备份（上一次保存的副本），永远不该进版本库
+*.blend1

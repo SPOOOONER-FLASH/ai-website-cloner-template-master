@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
-import { MediaPlaceholder } from "./MediaPlaceholder";
+import { NewsVisual } from "./NewsVisual";
 
 /**
  * Listing card. Image on top, text below — the arrangement FSB uses on /en/press.
@@ -25,7 +25,7 @@ export function NewsCard({
       href={`${base}/news/${article.slug}/`}
       className="hard-shadow-card group flex flex-col bg-surface"
     >
-      <MediaPlaceholder {...article.heroImage} className="aspect-[16/9]" />
+      <NewsVisual article={article} locale={locale} />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <div className="flex flex-wrap items-baseline gap-x-16 gap-y-4">
           <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">

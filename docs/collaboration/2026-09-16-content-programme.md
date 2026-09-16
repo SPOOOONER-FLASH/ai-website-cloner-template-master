@@ -73,7 +73,7 @@
 
 ## 二、第一批五篇：长尾技术文
 
-`north-america-longtail.json` 里 51 个词，31 个我们答得了。其中 **4 个在 34 篇文章里一次都没被写过**：
+`north-america-longtail.json` 里 51 个词，31 个我们答得了。其中 **4 个在 35 篇文章里一次都没被写过**：
 
 | 词 | 意图 | 归属页面 |
 |---|---|---|
@@ -108,6 +108,8 @@ sa32806 panic hardware
 - **钢琴铰链** 中英文都有真实曝光，但 `brass-piano-hinge` 这条记录自相矛盾 ——
   型号写 Brass Piano Hinge，材质写 Stainless Steel 304，宽度写成 `1"1-1/4 "2 "、3"`。
   **先问工厂，再写文章。** 拿一条自己打架的记录去写技术文，正是这个站最不该做的事。
+  → ✅ **2026-09-16 甲方答了：做的是铁的。** 记录已改（材质 Iron，宽度 1"/1-1/4"/2"/3"，
+  表面哑黑或亮金），并写成第十一篇 —— 「brass」是表面不是金属，和表面代号那篇同一个坑。
 - **GGMK / 钥匙分级表** 已经有 `master-key-systems-how-many-levels-you-need`，
   GGMK、GMK、change key、chart 都在里面。再写一篇是自己跟自己抢。
 
@@ -195,10 +197,11 @@ sa32806 panic hardware
 
 ---
 
-## 四之二、已经写完的 10 篇
+## 四之二、已经写完的 11 篇
 
 | 发布 | 标题 | 段数 | 点名型号 |
 |---|---|---:|---|
+| 2026-09-16 | A Brass Piano Hinge Is Usually Not Brass | 8 | Brass Piano Hinge · BL027 · IH01 |
 | 2026-09-16 | Entrance, Privacy, Passage: Choosing Between Twelve Cylindrical Locks | 9 | 607 ACBK · 587 MBET · 5807 SSCL · 5870 ACET · 592 SSET |
 | 2026-09-16 | A 25mm Throw and a Collar That Spins: Deadbolts D101 and D102 | 9 | D101 DSPB · D102 AC · 564 · 1073D |
 | 2026-09-16 | 45 to 90: Reading Our Euro Cylinder Range | 8 | 70 SNDK · 80 SNKT · 45BN · 65SN |

@@ -134,10 +134,10 @@ export const hero3: HeroModuleContent = {
   media: {
     ratio: "3 / 2",
     src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Fotografías reales del catálogo de nueve familias de herrajes para puertas",
+    label: "Fotografías reales del catálogo de herrajes seleccionados para puertas",
   },
   title: "Diseñado para",
-  body: "Nueve familias, un solo cuadro coordinado",
+  body: "Herrajes seleccionados, un solo cuadro coordinado",
   linkLabel: "Ver catálogo",
   href: "/es/products",
 };

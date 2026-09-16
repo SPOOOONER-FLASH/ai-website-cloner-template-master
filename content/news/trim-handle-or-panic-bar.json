@@ -23,12 +23,18 @@
     "Our exit range and the trims that work with it are published as separate records with their own dimensions, because that is how they are ordered. Where a trim is listed under a panic-device model number, the specification table now names it as a trim handle on the first row — the model number keeps its history, and the page stops arguing with the person reading it."
   ],
   "heroImage": {
-    "src": "/images/editorial/hyde-hero-panic.webp",
-    "ratio": "3 / 2",
-    "label": "Hyland 305 fire-door panic exit device with its outside trim handle",
-    "labelEs": "Barra antipánico Hyland 305 para puerta cortafuego con su guarnición exterior"
+    "src": "/images/products-hyde/311-panic-exit-device-2.webp",
+    "ratio": "16 / 9",
+    "label": "311 panic exit device, original front view. Outside trim is ordered separately.",
+    "labelEs": "Dispositivo antipánico 311, vista frontal original. El accionamiento exterior se pide por separado."
   },
-  "relatedModels": ["015", "016", "027", "305", "310"],
+  "relatedModels": [
+    "015",
+    "016",
+    "027",
+    "305",
+    "310"
+  ],
   "seoTitle": "Trim Handle or Panic Bar: What a Fire Exit Door Needs | Canton Hyland",
   "seoDescription": "A panic bar opens a door from inside only. The outside trim handle is a separate order line with its own function, cylinder cutout and fixing centres. How to specify both.",
   "titleEs": "Guarnición exterior o barra antipánico: qué necesita el exterior de una puerta de emergencia",

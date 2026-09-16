@@ -12,7 +12,6 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Claude | content/news/*（十篇新文章，已提交）| **构建交还给 Codex** —— 我开始构建之后，六篇旧文的 hero 在工作树里被改成了 1000×1000 的产品方板，audit-image-fit 判定 44% 裁切，test:export 因此失败。那是别人正在做的活，我不动。我的十篇已在 main 上，等下一次构建带上去。| 2026-09-16 |
 | Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
 Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
 `/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /

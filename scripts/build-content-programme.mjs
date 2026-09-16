@@ -236,6 +236,8 @@ push();
 push("- **钢琴铰链** 中英文都有真实曝光，但 `brass-piano-hinge` 这条记录自相矛盾 ——");
 push("  型号写 Brass Piano Hinge，材质写 Stainless Steel 304，宽度写成 `1\"1-1/4 \"2 \"、3\"`。");
 push("  **先问工厂，再写文章。** 拿一条自己打架的记录去写技术文，正是这个站最不该做的事。");
+push("  → ✅ **2026-09-16 甲方答了：做的是铁的。** 记录已改（材质 Iron，宽度 1\"/1-1/4\"/2\"/3\"，");
+push("  表面哑黑或亮金），并写成第十一篇 —— 「brass」是表面不是金属，和表面代号那篇同一个坑。");
 push("- **GGMK / 钥匙分级表** 已经有 `master-key-systems-how-many-levels-you-need`，");
 push("  GGMK、GMK、change key、chart 都在里面。再写一篇是自己跟自己抢。");
 push();
