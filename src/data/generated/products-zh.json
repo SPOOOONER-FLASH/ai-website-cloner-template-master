@@ -42362,19 +42362,30 @@
       "categoryNames": [
         "铜与钢门合页"
       ],
-      "summary": "304 不锈钢铜/钢合页。",
+      "summary": "铁铜/钢合页。",
       "specs": [
         {
           "label": "材质",
-          "value": "304 不锈钢"
+          "value": "铁"
+        },
+        {
+          "label": "类型",
+          "value": "Continuous hinge (piano hinge)"
         },
         {
           "label": "宽度",
-          "value": "1\"1-1/4 \"2 \"、3\""
+          "value": "1\", 1-1/4\", 2\", 3\""
+        },
+        {
+          "label": "表面处理",
+          "value": "Matt black or polished brass finish over the iron leaf"
         }
       ],
-      "material": "304 不锈钢",
-      "finishes": [],
+      "material": "铁",
+      "finishes": [
+        "BL",
+        "PB"
+      ],
       "doorTypes": [],
       "heroImage": {
         "src": "/images/products-rayen/brass-piano-hinge-brass-and-steel-hinges.webp",
@@ -42386,29 +42397,40 @@
       "sites": [],
       "styleFamily": "",
       "seoTitle": "Brass Piano Hinge 铜/钢合页",
-      "seoDescription": "304 不锈钢铜/钢合页。",
+      "seoDescription": "铁铜/钢合页。",
       "en": {
         "name": "Brass and Steel Hinges",
         "series": "Brass and Steel Hinges",
         "categoryNames": [
           "Brass & Steel Door Hinges"
         ],
-        "summary": "Stainless Steel 304 brass and steel hinges.",
+        "summary": "Iron brass and steel hinges.",
         "specs": [
           {
             "label": "Material",
-            "value": "Stainless Steel 304"
+            "value": "Iron"
+          },
+          {
+            "label": "Type",
+            "value": "Continuous hinge (piano hinge)"
           },
           {
             "label": "Width",
-            "value": "1\"1-1/4 \"2 \"、3\""
+            "value": "1\", 1-1/4\", 2\", 3\""
+          },
+          {
+            "label": "Finish",
+            "value": "Matt black or polished brass finish over the iron leaf"
           }
         ],
-        "material": "Stainless Steel 304",
-        "finishes": [],
+        "material": "Iron",
+        "finishes": [
+          "BL",
+          "PB"
+        ],
         "doorTypes": [],
         "seoTitle": "Brass Piano Hinge Brass and Steel Hinges",
-        "seoDescription": "Stainless Steel 304 brass and steel hinges."
+        "seoDescription": "Iron brass and steel hinges."
       }
     },
     {
