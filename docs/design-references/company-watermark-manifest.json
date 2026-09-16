@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/company",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 2,
+  "count": 4,
   "files": [
     {
       "source": "public/images/company/assembly-line.webp",
@@ -39,6 +39,42 @@
       },
       "sourceSha256": "124ffe224b2a7213e28a3963aea09a205b1cbe23fe4569e040d66eb59b4aaf2f",
       "outputSha256": "9fa727454f39ad46392badacfc524beaf6fc29e2fe883012652861e65ec449e9"
+    },
+    {
+      "source": "public/images/company/polishing-line.webp",
+      "output": "public/images/company-hyde/polishing-line.webp",
+      "width": 1308,
+      "height": 872,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "6655fae62ac78fe3f560c657e18c9f8236174ac3f285facebf26b40e266c5448",
+      "outputSha256": "1004e58a39394cebae0f6166ac347ebe4759277efb9163f38e996d8c6e16f259"
+    },
+    {
+      "source": "public/images/company/press-shop.webp",
+      "output": "public/images/company-hyde/press-shop.webp",
+      "width": 1308,
+      "height": 872,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6364efad2edb3e27d9408eba31867c268e47c71dde13b8e7d9f58c10ebc51287",
+      "outputSha256": "98d8d7b2dac9d3a536cf2a444d8113ba6fc2ae89f7164d23ff2a831091ea3602"
     }
   ]
 }

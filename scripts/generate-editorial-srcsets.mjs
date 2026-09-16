@@ -39,9 +39,36 @@ const editorialConfig = JSON.parse(
 const brandedEditorialFiles = JSON.parse(
   readFileSync(join(repositoryRoot, "docs", "design-references", "branded-editorial-list.json"), "utf8"),
 );
+/*
+  The company photographs are the second branded root, added 2026-09-16.
+
+  `brandedSource()` rewrites `/images/company/x.webp` to `/images/company-hyde/x.webp` and
+  then asks for its candidates from BRANDED_EDITORIAL_VARIANT_DIRECTORY — the same
+  `/images/editorial-hyde/responsive/` folder, because candidates are named by basename.
+  So a company photograph that is both marked AND has a responsive config needs its
+  candidates generated from the marked copy into the editorial-hyde folder.
+
+  Nothing had ever hit that combination: the marked company files had no config entries, so
+  they were served at their single source width. Putting the real factory photographs on the
+  company overview created the first three, and the dead-link audit caught all six missing
+  candidates on the next build. Deriving them here rather than listing them means the next
+  company photograph to be marked cannot repeat it.
+*/
+const brandedCompanyFiles = JSON.parse(
+  readFileSync(join(repositoryRoot, "docs", "design-references", "branded-company-list.json"), "utf8"),
+);
+
 const brandedEditorialConfig = Object.fromEntries(
-  brandedEditorialFiles
-    .map((file) => [`/images/editorial/${file}`, `/images/editorial-hyde/${file}`])
+  [
+    ...brandedEditorialFiles.map((file) => [
+      `/images/editorial/${file}`,
+      `/images/editorial-hyde/${file}`,
+    ]),
+    ...brandedCompanyFiles.map((file) => [
+      `/images/company/${file}`,
+      `/images/company-hyde/${file}`,
+    ]),
+  ]
     .filter(([source]) => editorialConfig[source])
     .map(([source, branded]) => [branded, editorialConfig[source]]),
 );
