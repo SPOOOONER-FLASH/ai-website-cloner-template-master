@@ -111,7 +111,17 @@ type Strings = {
     cta: string;
   };
   contact: { eyebrow: string; title: string; intro: string; rows: { label: string; key: string }[]; note: string };
-  footer: { products: string; about: string; shop: string; shopLink: string; contact: string; allCategories: string; icp: string };
+  downloads: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    meta: (pages: number, size: string) => string;
+    cta: string;
+    originalTitle: string;
+    originalNote: string;
+    contactCta: string;
+  };
+  footer: { products: string; about: string; shop: string; shopLink: string; contact: string; downloads: string; allCategories: string; icp: string };
 };
 
 export const STRINGS: Record<RayenLocale, Strings> = {
@@ -269,12 +279,25 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       ],
       note: "标着短横线的几项还没有对外公布的号码。与其放一个打不通的电话，我们先把它空着 —— 有需要请通过 1688 店铺留言，或让介绍人转达。",
     },
+    downloads: {
+      eyebrow: "Downloads",
+      title: "资料下载",
+      intro:
+        "产品图册整本可以直接下载，不用留邮箱、不用注册。型号、表面处理与配套件都在里面，方便你拿去比价或转给同事。",
+      meta: (pages, size) => `PDF · ${pages} 页 · ${size}`,
+      cta: "下载图册",
+      originalTitle: "需要印刷级原件？",
+      originalNote:
+        "这里的一份是按屏幕阅读重新输出的（2000 像素宽），型号与表面名称放大到 100% 依然清楚。印刷用的高清原件有 73 MB，不适合挂在网页上下载 —— 需要请直接联系我们，我们发给你。",
+      contactCta: "联系我们索取原件",
+    },
     footer: {
       products: "产品中心",
       about: "关于",
       shop: "线上店铺",
       shopLink: "1688 店铺 ↗",
       contact: "联系",
+      downloads: "资料下载",
       allCategories: "全部品类 →",
       icp: "本站服务器位于境外，未办理 ICP 备案。",
     },
@@ -437,12 +460,25 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       note:
         "The rows showing a dash have no published number yet. Rather than print a line that does not answer, we leave it blank — reach us through the 1688 storefront in the meantime.",
     },
+    downloads: {
+      eyebrow: "Downloads",
+      title: "Downloads",
+      intro:
+        "The catalogue is here in full — no email address, no registration. Model codes, finishes and the matching pieces are all in it, so you can price it out or pass it to a colleague.",
+      meta: (pages, size) => `PDF · ${pages} pages · ${size}`,
+      cta: "Download the catalogue",
+      originalTitle: "Need the print-resolution file?",
+      originalNote:
+        "The copy here is re-exported for reading on screen at 2000 px wide; model codes and finish names stay legible at 100%. The press original is 73 MB, which is not a reasonable web download — ask us and we will send it.",
+      contactCta: "Ask us for the press file",
+    },
     footer: {
       products: "Products",
       about: "About",
       shop: "Online store",
       shopLink: "1688 storefront ↗",
       contact: "Contact",
+      downloads: "Downloads",
       allCategories: "All families →",
       icp: "This site is hosted outside mainland China and carries no ICP filing.",
     },

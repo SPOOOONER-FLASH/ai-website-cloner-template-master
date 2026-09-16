@@ -176,6 +176,13 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
                   </a>
                 </li>
               ))}
+              {/* 资料下载只在页脚露出，不进顶部导航：买家先看产品，图册是他决定要看细节之后
+                  才找的东西，放进主导航会把五个已经够用的入口挤成六个。 */}
+              <li>
+                <a href={localePath(locale, "/downloads/")} className="hover:text-white">
+                  {t.footer.downloads}
+                </a>
+              </li>
             </ul>
             {/*
               出口品牌那一组链接 2026-09-09 撤掉，换成 1688 店铺。

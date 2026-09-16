@@ -19,6 +19,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rayen.cn/contact/"/>
   </url>
   <url>
+    <loc>https://rayen.cn/downloads/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://rayen.cn/downloads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rayen.cn/en/downloads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rayen.cn/downloads/"/>
+  </url>
+  <url>
     <loc>https://rayen.cn/en/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://rayen.cn/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://rayen.cn/en/"/>
@@ -35,6 +41,12 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://rayen.cn/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://rayen.cn/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rayen.cn/contact/"/>
+  </url>
+  <url>
+    <loc>https://rayen.cn/en/downloads/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://rayen.cn/downloads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rayen.cn/en/downloads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rayen.cn/downloads/"/>
   </url>
   <url>
     <loc>https://rayen.cn/en/oem/</loc>
