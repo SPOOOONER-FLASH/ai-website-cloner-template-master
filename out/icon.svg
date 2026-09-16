@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="HYDE">
+  <style>
+    .mark { fill: #000000; }
+    @media (prefers-color-scheme: dark) { .mark { fill: #ffffff; } }
+  </style>
+  <g class="mark"><g transform="translate(36.74 48.44) scale(0.78)">
+    <rect x="12" y="12" width="34" height="180" rx="17" />
+    <rect x="29" y="85" width="141" height="34" rx="17" />
+    <rect x="188" y="12" width="34" height="180" rx="17" />
+  </g></g>
+</svg>
