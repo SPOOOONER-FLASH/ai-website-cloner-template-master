@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ContactBody } from "@/components/rayen/pages";
 import { STRINGS } from "@/data/rayen-i18n";
+import { alternatesFor } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
@@ -10,7 +11,7 @@ import { STRINGS } from "@/data/rayen-i18n";
 export const metadata: Metadata = {
   title: STRINGS.en.contact.title,
   description: STRINGS.en.contact.intro ?? STRINGS.en.contact.title,
-  alternates: { canonical: "/en/contact/" },
+  alternates: alternatesFor("en", "/contact/"),
 };
 
 export default function Page() {

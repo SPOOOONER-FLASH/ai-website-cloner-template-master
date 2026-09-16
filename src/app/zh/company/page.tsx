@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CompanyBody } from "@/components/rayen/pages";
 import { STRINGS } from "@/data/rayen-i18n";
+import { alternatesFor } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
@@ -10,7 +11,7 @@ import { STRINGS } from "@/data/rayen-i18n";
 export const metadata: Metadata = {
   title: STRINGS.zh.company.title,
   description: STRINGS.zh.company.body[0],
-  alternates: { canonical: "/company/" },
+  alternates: alternatesFor("zh", "/company/"),
 };
 
 export default function Page() {

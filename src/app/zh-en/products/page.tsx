@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ProductsIndexBody } from "@/components/rayen/pages";
 import { STRINGS } from "@/data/rayen-i18n";
-import { categoriesFor, products } from "@/data/rayen";
+import { alternatesFor, categoriesFor, products } from "@/data/rayen";
 
 /*
   Route file only. The page body lives in src/components/rayen/pages.tsx and is shared with
@@ -11,7 +11,7 @@ import { categoriesFor, products } from "@/data/rayen";
 export const metadata: Metadata = {
   title: STRINGS.en.products.title,
   description: STRINGS.en.products.intro(categoriesFor("en").length, products.length),
-  alternates: { canonical: "/en/products/" },
+  alternates: alternatesFor("en", "/products/"),
 };
 
 export default function Page() {

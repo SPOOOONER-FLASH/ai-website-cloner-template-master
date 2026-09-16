@@ -35,13 +35,20 @@ export const metadata: Metadata = {
     images: [{ url: absoluteUrl("/images/rayen/factory-press-hall-wide.webp") }],
   },
   /*
-    noindex while the site lives on the temporary preview host.
-    spoonercantonlock.stahlock.com is a subdomain of an unrelated export brand; letting
-    Google index RAYEN's pages there would put the wrong hostname in the results for the
-    factory's own name, and those results outlive the preview. Flip this when the real
-    domain is live — it is the single switch, and CLIENT-RUNBOOK says so.
+    Indexable since 2026-09-16, because the site is on its own domain.
+
+    It was noindex for as long as RAYEN lived on a preview subdomain of stahlock.com — an
+    unrelated export brand — because indexing the factory's own name under somebody else's
+    hostname produces results that outlive the preview.
+
+    THE NOTE HERE USED TO SAY "it is the single switch". IT WAS NOT.
+    There were two: this meta tag, and the robots.txt written by scripts/build-rayen-site.mjs.
+    On 2026-09-15 only robots.txt was flipped, which changed nothing a crawler acts on —
+    a noindex meta overrides a permissive robots.txt, and all 418 pages kept carrying
+    "noindex, nofollow" while the deploy notes recorded the indexing block as fixed. Anyone
+    adding a third gate should add it to this list rather than to their memory.
   */
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 
 export default function RayenRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

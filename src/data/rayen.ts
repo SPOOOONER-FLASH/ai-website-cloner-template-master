@@ -175,6 +175,43 @@ export const localePath = (locale: RayenLocale, path: string) =>
 export const absoluteUrl = (path: string) =>
   new URL(path.startsWith("/") ? path : `/${path}`, siteUrl).toString();
 
+/**
+ * canonical + hreflang for one page, in both RAYEN languages.
+ *
+ * WHY THIS EXISTS NOW AND NOT BEFORE
+ * src/app/zh/layout.tsx carries a note saying this site deliberately declares no hreflang,
+ * because /zh is "a different company's site that happens to be built from the same
+ * catalogue" as cantonlock.com, and calling those language alternates would be a false claim
+ * about corporate identity. That reasoning is right and still holds — nothing here points at
+ * cantonlock.
+ *
+ * It was about a different pair. Since 2026-09-15 RAYEN has its own domain, and rayen.cn
+ * serves 中文 at / and English at /en/: the same company, the same products, one translated
+ * from the other. Those two ARE alternates, and saying nothing costs real traffic — without
+ * hreflang the two versions compete as duplicates instead of being served to the right
+ * reader, which on an 836-page bilingual site is the largest single SEO gap it had (0 of 418
+ * pages declared one).
+ *
+ * `path` is the DEPLOYED Chinese path, the same value the canonical already uses; the /zh and
+ * /zh-en build prefixes never appear in a URL a buyer sees. Keeping canonical and hreflang in
+ * one function is the point — they were always going to be written from the same value, and
+ * two places to edit is how a canonical ends up pointing somewhere its own alternate does not.
+ */
+export function alternatesFor(locale: RayenLocale, path: string) {
+  const zh = path.startsWith("/") ? path : `/${path}`;
+  const en = `/en${zh}`;
+  return {
+    canonical: locale === "zh" ? zh : en,
+    languages: {
+      "zh-Hans": zh,
+      en,
+      /* Chinese is x-default: the factory is in 中山, and an unmatched visitor is likelier to
+         want the Chinese page than the English one. */
+      "x-default": zh,
+    },
+  };
+}
+
 /** Top navigation. 顶固 的栏目骨架，去掉投资者关系和爱心公益 —— 那两样我们没有。 */
 export const primaryNav = [
   { href: "/products/", label: "产品中心", latin: "Products" },

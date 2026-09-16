@@ -41,13 +41,11 @@ export const metadata: Metadata = {
     images: [{ url: absoluteUrl("/images/rayen/factory-press-hall-wide.webp") }],
   },
   /*
-    noindex while the site lives on the temporary preview host.
-    spoonercantonlock.stahlock.com is a subdomain of an unrelated export brand; letting
-    Google index RAYEN's pages there would put the wrong hostname in the results for the
-    factory's own name, and those results outlive the preview. Flip this when the real
-    domain is live — it is the single switch, and CLIENT-RUNBOOK says so.
+    Indexable since 2026-09-16 — the English half of the same switch described in
+    src/app/zh/layout.tsx. Both locales flip together: indexing one language and not the
+    other leaves half a bilingual site invisible while its hreflang points at it.
   */
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 
 export default function RayenEnRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
