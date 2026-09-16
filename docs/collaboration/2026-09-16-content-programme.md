@@ -199,16 +199,16 @@ sa32806 panic hardware
 
 | 发布 | 标题 | 段数 | 点名型号 |
 |---|---|---:|---|
+| 2026-09-16 | Entrance, Privacy, Passage: Choosing Between Twelve Cylindrical Locks | 9 | 607 ACBK · 587 MBET · 5807 SSCL · 5870 ACET · 592 SSET |
+| 2026-09-16 | A 25mm Throw and a Collar That Spins: Deadbolts D101 and D102 | 9 | D101 DSPB · D102 AC · 564 · 1073D |
+| 2026-09-16 | 45 to 90: Reading Our Euro Cylinder Range | 8 | 70 SNDK · 80 SNKT · 45BN · 65SN |
+| 2026-09-16 | 650 to 1110mm: Which Push Bar Length Your Door Takes | 8 | 307 · 311 · 305 |
 | 2026-09-16 | US26D, 626, 630: A Finish Code Is Not a Colour | 9 | 5870 ACET · 607 SSET · 3431 SSET |
+| 2026-09-16 | 200,000 Cycles: What the LH Lever Range Is Actually Rated For | 9 | LH853 CPBK · LH852 SSET · LH855 SNET · 808 ABET · 6491 SSET |
+| 2026-09-16 | Occupied or Vacant: What a Washroom Indicator Actually Has to Do | 8 | 200 · 400 · 500 |
+| 2026-09-16 | The Rim Night Latch: What 564 and 1073 Actually Measure | 8 | 564 · 564 MB · 1073D · 1073S |
+| 2026-09-16 | Lever Length, Rose Diameter, Projection: The Stainless 9000 Levers | 8 | 9014 · 9007S · 9008S · 9008E |
 | 2026-09-16 | UL 305 Is a Listing, Not a Grade | 8 | 305 · 307 · 311 |
-| 2026-09-17 | Occupied or Vacant: What a Washroom Indicator Actually Has to Do | 8 | 200 · 400 · 500 |
-| 2026-09-17 | The Rim Night Latch: What 564 and 1073 Actually Measure | 8 | 564 · 564 MB · 1073D · 1073S |
-| 2026-09-18 | Entrance, Privacy, Passage: Choosing Between Twelve Cylindrical Locks | 9 | 607 ACBK · 587 MBET · 5807 SSCL · 5870 ACET · 592 SSET |
-| 2026-09-18 | 650 to 1110mm: Which Push Bar Length Your Door Takes | 8 | 307 · 311 · 305 |
-| 2026-09-19 | 45 to 90: Reading Our Euro Cylinder Range | 8 | 70 SNDK · 80 SNKT · 45BN · 65SN |
-| 2026-09-19 | 200,000 Cycles: What the LH Lever Range Is Actually Rated For | 9 | LH853 CPBK · LH852 SSET · LH855 SNET · 808 ABET · 6491 SSET |
-| 2026-09-20 | A 25mm Throw and a Collar That Spins: Deadbolts D101 and D102 | 9 | D101 DSPB · D102 AC · 564 · 1073D |
-| 2026-09-20 | Lever Length, Rose Diameter, Projection: The Stainless 9000 Levers | 8 | 9014 · 9007S · 9008S · 9008E |
 
 长尾词未覆盖数从 **9 降到 4**。这个数字是上面第二节现算出来的，不是手写的 —— 它每次重跑都会自己更新。
 
