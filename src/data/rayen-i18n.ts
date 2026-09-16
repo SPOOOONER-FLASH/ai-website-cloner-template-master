@@ -78,6 +78,8 @@ type Strings = {
     finishes: string;
     noSpecs: string;
     noPhoto: string;
+    viewCategory: string;
+    finishFilter: { all: string; heading: string; approximate: string; empty: string };
     ctaQuote: string;
     ctaOem: string;
     ctaShop: string;
@@ -154,6 +156,13 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       finishes: "可选表面处理",
       noSpecs: "该型号的规格参数尚未整理完成。请直接联系我们索取图纸与尺寸。",
       noPhoto: "暂无实拍图",
+      viewCategory: "查看该类目",
+      finishFilter: {
+        heading: "按表面处理筛选",
+        all: "全部",
+        approximate: "色块为示意色，实际颜色以样品为准。",
+        empty: "筛出 {n} 个型号",
+      },
       ctaQuote: "索取图纸与报价",
       ctaOem: "来图来样加工",
       ctaShop: "1688 店铺查看",
@@ -312,6 +321,13 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       finishes: "Available finishes",
       noSpecs: "The specification for this model is still being compiled. Ask us for the drawing and dimensions.",
       noPhoto: "No photograph yet",
+      viewCategory: "View this category",
+      finishFilter: {
+        heading: "Filter by finish",
+        all: "All",
+        approximate: "Swatches are indicative; match against a sample, not the screen.",
+        empty: "{n} models",
+      },
       ctaQuote: "Request drawing & quotation",
       ctaOem: "Make to drawing or sample",
       ctaShop: "View on 1688",

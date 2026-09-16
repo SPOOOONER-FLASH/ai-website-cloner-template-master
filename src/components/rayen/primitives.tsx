@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import imageDims from "@/data/generated/rayen-image-dims.json" with { type: "json" };
+import { finishesOf } from "@/data/rayen-finishes";
 import { localePath } from "@/data/rayen";
 import type { RayenLocale } from "@/data/rayen-i18n";
 
@@ -216,6 +217,7 @@ export function ProductCard({
     model: string;
     name: string;
     categoryPath: string[];
+    finishes?: string[];
     heroImage?: { src: string; label: string };
   };
 }) {
@@ -232,8 +234,54 @@ export function ProductCard({
       <div className="border-t border-[var(--color-line)] p-4">
         <p className="latin text-[13px] text-[var(--color-ink-3)]">{product.model}</p>
         <p className="mt-1 text-[15px]">{product.name}</p>
+        <FinishDots finishes={product.finishes} locale={locale} />
       </div>
     </a>
+  );
+}
+
+/**
+ * The row of finish colours under a product card.
+ *
+ * Not buttons. There is one set of photographs per model, so there is nothing to switch to;
+ * see the note at the top of src/data/rayen-finishes.ts. They carry a title so a reader can
+ * name the colour, and the whole row is hidden from screen readers in favour of one sentence
+ * that lists the finishes in words — fourteen unlabelled dots is noise in a screen reader,
+ * and the names are what that reader actually needs.
+ */
+function FinishDots({ finishes, locale }: { finishes?: string[]; locale: RayenLocale }) {
+  const list = finishesOf(finishes, locale);
+  if (!list.length) return null;
+  return (
+    <>
+      <span className="sr-only">
+        {locale === "zh" ? "表面处理：" : "Finishes: "}
+        {list.map((f) => f.label).join(locale === "zh" ? "、" : ", ")}
+      </span>
+      <span aria-hidden="true" className="mt-3 flex flex-wrap items-center gap-1.5">
+        {list.map((finish) =>
+          finish.swatch ? (
+            <span
+              key={finish.key}
+              title={finish.label}
+              className="h-3.5 w-3.5 rounded-full border border-black/15"
+              style={
+                finish.swatch.colors.length > 1
+                  ? {
+                      backgroundImage: `linear-gradient(135deg, ${finish.swatch.colors[0]} 0 50%, ${finish.swatch.colors[1]} 50% 100%)`,
+                    }
+                  : { backgroundColor: finish.swatch.colors[0] }
+              }
+            />
+          ) : (
+            /* No colour on file — say the name rather than draw a guess. */
+            <span key={finish.key} className="text-[11px] text-[var(--color-ink-3)]">
+              {finish.label}
+            </span>
+          ),
+        )}
+      </span>
+    </>
   );
 }
 
