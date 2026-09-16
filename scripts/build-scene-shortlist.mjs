@@ -8,7 +8,7 @@
  * ---------------------------------------------------------------------------
  * THE QUESTION
  *
- * The client circled nine catalogue spreads and asked for the style to be broken down so
+ * The client supplied twenty-odd catalogue spreads and asked for the style to be broken down so
  * Codex can produce the same kind of picture. The style analysis is in
  * docs/collaboration/2026-09-15-catalogue-scene-style.md. This script answers the part of
  * it that cannot be written by hand: WHICH MODELS.
@@ -131,28 +131,38 @@ candidates.sort(
   (a, b) => b.enquiries - a.enquiries || b.exposure - a.exposure || b.finishes - a.finishes,
 );
 
-/** Which of the seven scenes suits a category. Judgement, stated so it can be argued with. */
+/**
+ * Which ground / prop / palette combination suits a category.
+ *
+ * Named from the kit of parts in 2026-09-15-catalogue-scene-style.md rather than from a
+ * numbered scene list: the reference spreads are not twenty set-ups, they are three
+ * layers with interchangeable parts, and a category's constraint is usually about ONE of
+ * those layers (a long handle needs something to lean on; a small cylinder needs a soft
+ * ground so it does not look lost).
+ *
+ * Judgement, written down so it can be argued with.
+ */
 function scenesFor(category) {
   switch (category) {
     case "lever-handles":
     case "knob-locks":
-      return "A 石板 · D 书堆 · E 木框 · G 黑场";
+      return "石板 / 木框 · 冷灰或暗场";
     case "lock-cylinders":
     case "deadbolts":
-      return "B 布面 · F 混凝土+原木（小件散置）";
+      return "皮革 / 布 · 暖裸（小件散置）";
     case "brass-steel-hinges":
     case "sliding-hook-locks":
-      return "B 布面 · F 混凝土+原木";
+      return "原木 / 混凝土 · 冷灰";
     case "bathroom-accessories":
-      return "C 罗纹玻璃 · B 布面";
+      return "罗纹板 / 陶器 · 暖裸";
     case "stainless-steel-handles":
     case "glass-door-accessories":
-      return "A 石板 · C 罗纹玻璃（长件，斜倚）";
+      return "石板 / 罗纹板 · 冷灰（长件斜倚）";
     case "grip-handle-sets":
     case "night-latches-rim-locks":
-      return "E 木框 · F 混凝土+原木";
+      return "木框 / 原木 · 冷灰";
     default:
-      return "A 石板";
+      return "石板 · 冷灰";
   }
 }
 
@@ -161,11 +171,11 @@ const push = (l = "") => lines.push(l);
 
 push("# 适合拍这种场景的产品 — 选品清单");
 push();
-push("生成的：`npm run brief:scenes`。配套 `2026-09-15-catalogue-scene-style.md`（拆解与布光配方）。");
+push("生成的：`npm run brief:scenes`。配套 `2026-09-15-catalogue-scene-style.md`（零件表与布光配方）。");
 push();
 push("## 判据");
 push();
-push("甲方圈的九个跨页全都建立在同一个动作上：**同一个形状、两个以上表面、放在一起**。");
+push("甲方给的二十多个跨页全都建立在同一个动作上：**同一个形状、两个以上表面、放在一起**。");
 push("没有这个，画面就塌回成「一个物件放在好看的背景上」——那是另一种、而且弱得多的图。");
 push();
 push("所以门槛是：**这个形状有没有两个以上表面，而且每个表面都有自己的照片。**");
@@ -189,7 +199,7 @@ push();
 push("## 二、不要用这几个（尺寸不对，不是不重要）");
 push();
 push("**它们的询盘是全店最高的，所以特别要说明为什么不在上面。**");
-push("逃生器械和闭门器要的是装在门上的实景（场景 H），那得工厂拍，不是台面合成。");
+push("逃生器械和闭门器要的是装在门上的实景，那得工厂拍，不是台面合成。");
 push();
 push("| 形状 | 类目 | 表面数 | 询盘 | 曝光 |");
 push("|---|---|---:|---:|---:|");
