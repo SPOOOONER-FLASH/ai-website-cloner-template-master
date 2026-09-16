@@ -132,8 +132,9 @@ if (unresolved.length) {
   carry, and it only survives because the taxonomy entry happens to still exist. Prune
   that entry and the legacy URL breaks outright.
 
-  Thirteen ids were in that state on 2026-09-15, all of them from the exit-device
-  renames. Regenerating fixes them; this guard is what stops it happening again silently.
+  Seventeen ids were in that state on 2026-09-15 — fifteen from the exit-device renames,
+  plus DS011 and the LC04 case. Regenerating fixes them; this guard is what stops it
+  happening again silently.
 */
 const taxonomySources = new Set(
   [...readFileSync(TAXONOMY, "utf8").matchAll(/^location = (\S+)/gm)].map((m) =>
