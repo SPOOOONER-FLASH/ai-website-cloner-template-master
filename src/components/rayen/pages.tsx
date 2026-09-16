@@ -585,9 +585,20 @@ export function ProductBody({
               */}
               <h2 className="text-[18px]">{s.familyTitle}</h2>
               <p className="mt-2 max-w-[62ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">
+                {/*
+                  Three cases, because a design family is not always a lever paired with a
+                  pull handle. It was, for the seven UNION packs the client sent — 「有门把手的
+                  表示此款式搭配有同风格的门把手」 — and the two lines above say exactly that.
+                  The 雷茵 catalogue's own series are the other shape: ET4009A and ET4016 are
+                  the same handle with a different lock case, and telling a buyer it "pairs
+                  with the pull handles below" while listing another lever is a claim the
+                  page itself disproves one line further down.
+                */}
                 {familyLevers.length && !isLeverHandle(record)
                   ? s.familyLeverLine(familyLevers.map((l) => l.model).join(locale === "zh" ? "、" : ", "))
-                  : s.familyHandleLine}
+                  : familyHandles.length
+                    ? s.familyHandleLine
+                    : s.familySameLine}
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
                 {[...familyLevers, ...familyHandles].map((item) => (

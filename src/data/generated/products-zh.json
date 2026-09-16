@@ -5359,7 +5359,23 @@
         "ratio": "1 / 1",
         "label": "雷茵 308-D D 型逃生推杠"
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "/images/products-rayen/308-d-d-panic-exit-device-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-D D 型逃生推杠 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/308-d-d-panic-exit-device-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-D D 型逃生推杠 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/308-d-d-panic-exit-device-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-D D 型逃生推杠 第 4 张"
+        }
+      ],
       "relatedModels": [],
       "sites": [],
       "styleFamily": "",
@@ -5504,7 +5520,23 @@
         "ratio": "1 / 1",
         "label": "雷茵 308-S S 型逃生推杠"
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "/images/products-rayen/308-s-s-panic-exit-device-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-S S 型逃生推杠 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/308-s-s-panic-exit-device-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-S S 型逃生推杠 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/308-s-s-panic-exit-device-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 308-S S 型逃生推杠 第 4 张"
+        }
+      ],
       "relatedModels": [],
       "sites": [],
       "styleFamily": "",
@@ -41176,6 +41208,384 @@
       }
     },
     {
+      "slug": "bk4006b-lever-handle",
+      "model": "BK4006B",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "160 × 35mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "53.5mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "12.5mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CT60 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "白色",
+        "哑光镍拉丝",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/bk4006b-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 BK4006B 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4006b-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4006B 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4006",
+      "seoTitle": "BK4006B 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "160 × 35mm"
+          },
+          {
+            "label": "Projection",
+            "value": "53.5mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "12.5mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CT60 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "White",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "BK4006B Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm."
+      }
+    },
+    {
+      "slug": "bk4008-lever-handle",
+      "model": "BK4008",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "铝合金执手锁。面板尺寸 160 × 32mm，适用门厚 36-56mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "160 × 32mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "53.5mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "10mm"
+        },
+        {
+          "label": "材质",
+          "value": "铝合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CT60 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "36-56mm"
+        }
+      ],
+      "material": "铝合金",
+      "finishes": [
+        "哑黑",
+        "哑光镍拉丝",
+        "白色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/bk4008-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 BK4008 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/bk4008-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4008 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4008-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4008 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4008-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4008 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4008-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4008 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4008",
+      "seoTitle": "BK4008 执手锁",
+      "seoDescription": "铝合金执手锁。面板尺寸 160 × 32mm，适用门厚 36-56mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Aluminium Alloy lever handle. Plate size 160 × 32mm, door thickness 36-56mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "160 × 32mm"
+          },
+          {
+            "label": "Projection",
+            "value": "53.5mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "10mm"
+          },
+          {
+            "label": "Material",
+            "value": "Aluminium Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CT60 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "36-56mm"
+          }
+        ],
+        "material": "Aluminium Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "White"
+        ],
+        "doorTypes": [],
+        "seoTitle": "BK4008 Lever Handle",
+        "seoDescription": "Aluminium Alloy lever handle. Plate size 160 × 32mm, door thickness 36-56mm."
+      }
+    },
+    {
+      "slug": "bk4018-lever-handle",
+      "model": "BK4018",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "137mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø59mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CF60 反提锁体"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/bk4018-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 BK4018 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/bk4018-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4018 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4018-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4018 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4018-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4018 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/bk4018-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 BK4018 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4018",
+      "seoTitle": "BK4018 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "137mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø59mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CF60 lift-to-lock"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "BK4018 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 40-58mm."
+      }
+    },
+    {
       "slug": "bl027-brass-and-steel-hinges",
       "model": "BL027",
       "name": "铜/钢合页",
@@ -50741,6 +51151,928 @@
         "doorTypes": [],
         "seoTitle": "EPT01 Door Power Transfer Devices",
         "seoDescription": "Stainless Steel 316 door power transfer devices."
+      }
+    },
+    {
+      "slug": "et4006a-lever-handle",
+      "model": "ET4006A",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "160 × 35mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "53.5mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "12.5mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CT60 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "白色",
+        "哑光镍拉丝",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4006a-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4006A 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/et4006a-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4006A 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4006",
+      "seoTitle": "ET4006A 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "160 × 35mm"
+          },
+          {
+            "label": "Projection",
+            "value": "53.5mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "12.5mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CT60 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "White",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4006A Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm."
+      }
+    },
+    {
+      "slug": "et4008-lever-handle",
+      "model": "ET4008",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "铝合金执手锁。面板尺寸 160 × 33mm，适用门厚 36-56mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "160 × 33mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "54mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "11mm"
+        },
+        {
+          "label": "材质",
+          "value": "铝合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CT60 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "36-56mm"
+        }
+      ],
+      "material": "铝合金",
+      "finishes": [
+        "哑黑",
+        "哑光镍拉丝",
+        "白色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4008-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4008 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4008-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4008 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4008-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4008 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4008-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4008 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4008-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4008 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4008",
+      "seoTitle": "ET4008 执手锁",
+      "seoDescription": "铝合金执手锁。面板尺寸 160 × 33mm，适用门厚 36-56mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Aluminium Alloy lever handle. Plate size 160 × 33mm, door thickness 36-56mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "160 × 33mm"
+          },
+          {
+            "label": "Projection",
+            "value": "54mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "11mm"
+          },
+          {
+            "label": "Material",
+            "value": "Aluminium Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CT60 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "36-56mm"
+          }
+        ],
+        "material": "Aluminium Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "White"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4008 Lever Handle",
+        "seoDescription": "Aluminium Alloy lever handle. Plate size 160 × 33mm, door thickness 36-56mm."
+      }
+    },
+    {
+      "slug": "et4009a-lever-handle",
+      "model": "ET4009A",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 167.5 × 32mm，适用门厚 36-56mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "167.5 × 32mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "52mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "12mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CT60 / 7255"
+        },
+        {
+          "label": "适用门厚",
+          "value": "36-56mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "淡金拉丝",
+        "哑光镍拉丝",
+        "白色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4009a-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4009A 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/et4009a-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4009A 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4009",
+      "seoTitle": "ET4009A 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 167.5 × 32mm，适用门厚 36-56mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 167.5 × 32mm, door thickness 36-56mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "167.5 × 32mm"
+          },
+          {
+            "label": "Projection",
+            "value": "52mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "12mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CT60 / 7255"
+          },
+          {
+            "label": "Door thickness",
+            "value": "36-56mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Light Gold",
+          "Brushed Satin Nickel",
+          "White"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4009A Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 167.5 × 32mm, door thickness 36-56mm."
+      }
+    },
+    {
+      "slug": "et4016-lever-handle",
+      "model": "ET4016",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 167.5 × 32mm，适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "167.5 × 32mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "52mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "12mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CF60 反提锁体"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "淡金拉丝",
+        "哑光镍拉丝",
+        "白色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4016-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4016 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/et4016-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4016 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4009",
+      "seoTitle": "ET4016 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 167.5 × 32mm，适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 167.5 × 32mm, door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "167.5 × 32mm"
+          },
+          {
+            "label": "Projection",
+            "value": "52mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "12mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CF60 lift-to-lock"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Light Gold",
+          "Brushed Satin Nickel",
+          "White"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4016 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 167.5 × 32mm, door thickness 40-58mm."
+      }
+    },
+    {
+      "slug": "et4017-door-knob",
+      "model": "ET4017",
+      "name": "旋钮锁",
+      "nameEn": "Door Knob",
+      "series": "旋钮锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金旋钮锁。适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "圆盖直径",
+          "value": "Ø55mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "50mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CF60 反提锁体"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑镍拉丝",
+        "哑黑",
+        "哑光镍拉丝",
+        "淡金拉丝",
+        "白色"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4017-door-knob.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4017 旋钮锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4017-door-knob-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4017-door-knob-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4017-door-knob-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4017-door-knob-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/et4017-door-knob-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/et4017-door-knob-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4017 旋钮锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "ET4017 旋钮锁",
+      "seoDescription": "锌合金旋钮锁。适用门厚 40-58mm。",
+      "en": {
+        "name": "Door Knob",
+        "series": "Door Knob",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy door knob. Door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Rose diameter",
+            "value": "Ø55mm"
+          },
+          {
+            "label": "Projection",
+            "value": "50mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CF60 lift-to-lock"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Black Nickel",
+          "Matt Black",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold",
+          "White"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4017 Door Knob",
+        "seoDescription": "Zinc Alloy door knob. Door thickness 40-58mm."
+      }
+    },
+    {
+      "slug": "et4018-lever-handle",
+      "model": "ET4018",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "137mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø59mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CF60 反提锁体"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "哑光镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4018-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4018 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4018-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4018 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4018-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4018 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4018-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4018 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4018-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4018 执手锁 第 5 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4018",
+      "seoTitle": "ET4018 执手锁",
+      "seoDescription": "锌合金执手锁。适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "137mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø59mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CF60 lift-to-lock"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "Brushed Satin Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4018 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Door thickness 40-58mm."
+      }
+    },
+    {
+      "slug": "et4022-lever-handle",
+      "model": "ET4022",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "160 × 35mm"
+        },
+        {
+          "label": "出墙距离",
+          "value": "53.5mm"
+        },
+        {
+          "label": "执手截面",
+          "value": "12.5mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "锁体",
+          "value": "CF60 反提锁体"
+        },
+        {
+          "label": "适用门厚",
+          "value": "40-58mm"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "黑镍拉丝",
+        "白色",
+        "哑光镍拉丝",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/et4022-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 ET4022 执手锁"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 2 张"
+        },
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 3 张"
+        },
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 4 张"
+        },
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 5 张"
+        },
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 6 张"
+        },
+        {
+          "src": "/images/products-rayen/et4022-lever-handle-7.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 ET4022 执手锁 第 7 张"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "4006",
+      "seoTitle": "ET4022 执手锁",
+      "seoDescription": "锌合金执手锁。面板尺寸 160 × 35mm，适用门厚 40-58mm。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "160 × 35mm"
+          },
+          {
+            "label": "Projection",
+            "value": "53.5mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "12.5mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Lock case",
+            "value": "CF60 lift-to-lock"
+          },
+          {
+            "label": "Door thickness",
+            "value": "40-58mm"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Brushed Black Nickel",
+          "White",
+          "Brushed Satin Nickel",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "ET4022 Lever Handle",
+        "seoDescription": "Zinc Alloy lever handle. Plate size 160 × 35mm, door thickness 40-58mm."
       }
     },
     {

@@ -86,6 +86,7 @@ type Strings = {
     familyTitle: string;
     familyLeverLine: (models: string) => string;
     familyHandleLine: string;
+    familySameLine: string;
     relatedTitle: string;
     galleryCounter: (index: number, total: number) => string;
     viewNth: (index: number, label: string) => string;
@@ -179,6 +180,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       familyTitle: "同款式搭配",
       familyLeverLine: (models) => `本款配套同风格门把手 ${models}，可成套下单。`,
       familyHandleLine: "本款执手属于同一设计款式，可与下列拉手成套使用。",
+      familySameLine: "本款属于同一设计款式，下列型号外观一致，可按项目需要选配。",
       relatedTitle: "同类型号",
       galleryCounter: (i, t) => `第 ${i} / ${t} 张`,
       viewNth: (i, label) => `查看第 ${i} 张：${label}`,
@@ -357,6 +359,7 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       familyTitle: "Matching range",
       familyLeverLine: (models) => `Matching lever handles in the same design: ${models}. Available as a set.`,
       familyHandleLine: "This lever belongs to the same design family as the pull handles below.",
+      familySameLine: "Same design family — the models below share this one's appearance.",
       relatedTitle: "Similar models",
       galleryCounter: (i, t) => `${i} of ${t}`,
       viewNth: (i, label) => `View image ${i}: ${label}`,

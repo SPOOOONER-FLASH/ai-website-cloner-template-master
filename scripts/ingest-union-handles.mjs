@@ -95,7 +95,12 @@ function shotRank(file) {
  */
 const DRAWING_FIRST = manifest.imageOrder === "drawing-first";
 const isWindowShot = (file) => file.includes("窗图");
-const isDrawing = (file) => /(D|L)9\d\dSZ/i.test(file);
+/*
+  UNION encodes the shot type in the filename (D9xxSZ = drawing). The RAYEN catalogue
+  batch has no such convention — its pictures are cut out of the printed book by
+  scripts/../cut.mjs — so those are named for what they are instead.
+*/
+const isDrawing = (file) => /(D|L)9\d\dSZ/i.test(file) || /-drawing\.[a-z]+$/i.test(file);
 
 function imagesFor(model) {
   const dir = join(manifest.sourceRoot, model);
@@ -205,14 +210,25 @@ for (const entry of manifest.models) {
       await sharp(source).resize({ width: 1400, withoutEnlargement: true }).webp({ quality: 82 }).toFile(target);
     }
     const drawing = isDrawing(source);
+    /*
+      A finish shot says which finish. The catalogue batch names these `-finish-a`, `-finish-b`
+      … in the order the book prints them, which is the order `finishes` lists them, so the
+      letter indexes straight into it. Five tiles of the same lever reading "view 3" … "view 7"
+      is alt text that describes the file rather than the picture: a screen reader gets nothing,
+      and neither does image search, when the only thing that differs between them is colour.
+    */
+    const finishAt = /-finish-([a-f])\.[a-z]+$/i.exec(source);
+    const finish = finishAt ? (entry.finishes ?? [])["abcdef".indexOf(finishAt[1].toLowerCase())] : undefined;
     refs.push({
       src: `/images/products/${name}`,
       ratio: "1 / 1",
       label: drawing
         ? `${entry.model} ${entry.name}, dimension drawing`
-        : index === 0
-          ? `${entry.model} ${entry.name}`
-          : `${entry.model} ${entry.name}, view ${index + 1}`,
+        : finish
+          ? `${entry.model} ${entry.name}, ${finish}`
+          : index === 0
+            ? `${entry.model} ${entry.name}`
+            : `${entry.model} ${entry.name}, view ${index + 1}`,
     });
   }
 
