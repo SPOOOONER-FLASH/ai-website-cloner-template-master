@@ -9,7 +9,6 @@ export const atlasSubjects = [
   ["pull", "hyde-real-pull-plate", "stainless-steel-glass-door-pull-handle", "Pull handle", "glass-door-accessories"],
   ["hinge", "hyde-real-hinge-plate", "stainless-steel-door-hinge", "Hinges", "brass-steel-hinges"],
   ["lock", "hyde-real-lock-plate", "lc14-85-50mm-lock-case", "LC14", "lock-cases"],
-  ["closer", "hyde-real-control-plate", "wooden-door-floor-hinge", "Door control", "door-closers"],
   ["cylinder", "hyde-real-cylinder-plate", "70sn-lock-cylinder", "70SN", "lock-cylinders"],
   ["accessory", "/images/products-hyde/stainless-steel-flush-bolt.webp", "stainless-steel-flush-bolt", "Flush bolts", "hardware-accessories"],
   ["flush", "/images/products-hyde/600-concealed-sliding-door-handle.webp", "600-concealed-sliding-door-handle", "600", "stainless-steel-handles"],

@@ -30,7 +30,7 @@ test("the flagship homepage and three news stories use four purpose-built images
   assert.deepEqual(newsSources, [
     "/images/editorial/news-door-schedule-doors.webp",
     "/images/editorial/news-mortise-lock-inspection.webp",
-    "/images/editorial/news-finish-function-library.webp",
+    "/images/products-hyde/607-pbbk-tubular-lock.webp",
   ]);
   assert.equal(new Set(newsSources).size, 3);
   assert.ok(!newsSources.includes("/images/editorial/home-panic-exit-bars.webp"));
@@ -65,7 +65,7 @@ test("the three newest News cards use distinct editorial images matched to their
     model its own text names, framed to 16:9.
   */
   assert.deepEqual(latestNewsSources, [
-    "/images/editorial/hyde-real-panic-plate.webp",
+    "/images/products-hyde/307-panic-exit-device-2.webp",
     "/images/editorial/framed/ai8530-lock-case-16x9.webp",
     "/images/editorial/hyde-real-application-detail.webp",
   ]);

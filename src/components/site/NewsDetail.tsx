@@ -5,6 +5,7 @@ import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { NewsVisual } from "./NewsVisual";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -202,7 +203,7 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            <MediaPlaceholder {...article.heroImage} className="aspect-[16/9]" />
+          <NewsVisual article={article} locale={locale} />
           </div>
         </section>
 
