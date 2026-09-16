@@ -138,28 +138,36 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
       ? rayen.brand.positioning
       : "Door hardware manufacturer in Xiaolan, Zhongshan. Panic exit devices, knob and lever locks, mortise cases, glass door fittings and bathroom hardware — made to drawing or to sample.";
 
+  /*
+    白底页脚，2026-09-16 甲方定的：「这个黑色的背景不是那么的高级」，并指了 UNION 的页脚
+    作为参照。UNION 整站到底都是白的，页脚只用一条细线和字重分层 —— 深色块在小屏上会占掉
+    一整屏，而页脚是这个站的站点地图，不是一块视觉收尾。
+
+    分层改用墨色三级（标题 ink、链接 ink-2、备注 ink-3）加 --color-line 的细线，
+    和页面其余部分同一套变量，不再自带一套 white/80、white/15、white/50。
+  */
   return (
-    <footer className="mt-24 bg-[var(--color-surface-dark)] text-white/80">
+    <footer className="mt-24 border-t border-[var(--color-line)] bg-[var(--color-surface)] text-[var(--color-ink-2)]">
       <Shell className="py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <p className="latin text-[20px] tracking-[0.2em] text-white">RAYEN</p>
-            <p className="mt-2 text-[15px] text-white">{legalName}</p>
+            <p className="latin text-[20px] tracking-[0.2em] text-[var(--color-ink)]">RAYEN</p>
+            <p className="mt-2 text-[15px] text-[var(--color-ink)]">{legalName}</p>
             <p className="mt-4 max-w-[38ch] text-[14px] leading-relaxed">{positioning}</p>
           </div>
 
           <nav aria-label={t.footer.products}>
-            <p className="text-[14px] text-white">{t.footer.products}</p>
+            <p className="text-[14px] text-[var(--color-ink)]">{t.footer.products}</p>
             <ul className="mt-4 space-y-2 text-[14px]">
               {categories.slice(0, 8).map((category) => (
                 <li key={category.slug}>
-                  <a href={localePath(locale, `/products/${category.slug}/`)} className="hover:text-white">
+                  <a href={localePath(locale, `/products/${category.slug}/`)} className="hover:text-[var(--color-ink)]">
                     {category.name}
                   </a>
                 </li>
               ))}
               <li>
-                <a href={localePath(locale, "/products/")} className="hover:text-white">
+                <a href={localePath(locale, "/products/")} className="hover:text-[var(--color-ink)]">
                   {t.footer.allCategories}
                 </a>
               </li>
@@ -167,11 +175,11 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
           </nav>
 
           <nav aria-label={t.footer.about}>
-            <p className="text-[14px] text-white">{t.footer.about}</p>
+            <p className="text-[14px] text-[var(--color-ink)]">{t.footer.about}</p>
             <ul className="mt-4 space-y-2 text-[14px]">
               {navItems(locale).slice(1).map((item) => (
                 <li key={item.href}>
-                  <a href={localePath(locale, item.href)} className="hover:text-white">
+                  <a href={localePath(locale, item.href)} className="hover:text-[var(--color-ink)]">
                     {item.label}
                   </a>
                 </li>
@@ -179,7 +187,7 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
               {/* 资料下载只在页脚露出，不进顶部导航：买家先看产品，图册是他决定要看细节之后
                   才找的东西，放进主导航会把五个已经够用的入口挤成六个。 */}
               <li>
-                <a href={localePath(locale, "/downloads/")} className="hover:text-white">
+                <a href={localePath(locale, "/downloads/")} className="hover:text-[var(--color-ink)]">
                   {t.footer.downloads}
                 </a>
               </li>
@@ -191,10 +199,10 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
             */}
             {contact.alibaba1688 ? (
               <>
-                <p className="mt-6 text-[14px] text-white">{t.footer.shop}</p>
+                <p className="mt-6 text-[14px] text-[var(--color-ink)]">{t.footer.shop}</p>
                 <ul className="mt-3 space-y-2 text-[14px]">
                   <li>
-                    <a href={contact.alibaba1688} rel="noopener" target="_blank" className="hover:text-white">
+                    <a href={contact.alibaba1688} rel="noopener" target="_blank" className="hover:text-[var(--color-ink)]">
                       {t.footer.shopLink}
                     </a>
                   </li>
@@ -204,7 +212,7 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
           </nav>
 
           <div>
-            <p className="text-[14px] text-white">{t.footer.contact}</p>
+            <p className="text-[14px] text-[var(--color-ink)]">{t.footer.contact}</p>
             <address className="mt-4 space-y-2 text-[14px] not-italic leading-relaxed">
               <p>{locale === "zh" ? contact.addressZh : "2/F-2, No. 28 Lehe Road, Lianfeng, Xiaolan, Zhongshan, Guangdong, China"}</p>
               {/*
@@ -229,13 +237,13 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
                 1688
                 {locale === "zh" ? "：" : ": "}
                 {/*
-                  悬停态跟着页脚其他链接走 hover:text-white，没有用下划线工具类。
+                  悬停态跟着页脚其他链接走 hover:text-[var(--color-ink)]，没有用下划线工具类。
                   src/components/site/short-marker.test.ts 扫整个 src/ 禁止它们 —— 这个项目的
                   悬停标记是自己那套双线，混进一条浏览器默认下划线就破了规矩。
                   （那条测试匹配的是文件文本，所以这段注释也不能把被禁的类名原样写出来。）
                 */}
                 {contact.alibaba1688 ? (
-                  <a href={contact.alibaba1688} rel="noopener" target="_blank" className="latin hover:text-white">
+                  <a href={contact.alibaba1688} rel="noopener" target="_blank" className="latin hover:text-[var(--color-ink)]">
                     {locale === "zh" ? "在线店铺 ↗" : "storefront ↗"}
                   </a>
                 ) : (
@@ -246,7 +254,7 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-white/15 pt-6 text-[13px] md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-2 border-t border-[var(--color-line)] pt-6 text-[13px] md:flex-row md:items-center md:justify-between">
           <p>
             © {rayen.brand.foundedYear}
             {new Date().getFullYear() > rayen.brand.foundedYear ? `–${new Date().getFullYear()}` : ""}{" "}
@@ -258,7 +266,7 @@ export function SiteFooter({ locale = "zh" }: { locale?: RayenLocale }) {
             ten seconds at beian.miit.gov.cn. If the client later moves the site onto a
             mainland host and files, the number goes here.
           */}
-          <p className="text-white/50">{t.footer.icp}</p>
+          <p className="text-[var(--color-ink-3)]">{t.footer.icp}</p>
         </div>
       </Shell>
     </footer>
