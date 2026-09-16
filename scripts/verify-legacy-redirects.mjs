@@ -51,6 +51,36 @@ const CASES = [
     path: "/index.php?m=home&c=view&a=index&aid=297&lang=en",
     expect: "/products/glass-door-accessories/f112-glass-door-patch-fittings/",
   },
+  /*
+    The three below are here because of what Bing's Site Scan reported on 2026-09-15: two
+    legacy URLs "missing a description in the head section". They are not missing one —
+    they are 301s, and a webmaster tool's defect list is a record of its last crawl. But
+    chasing it found a real fault underneath.
+
+    aid=397 was landing on `…/x2-panic-exit-device/`, which taxonomy-redirects.conf then
+    301s again to `…-trim/`. A CHAIN, on thirteen ids, all of them left behind by the
+    exit-device renames. It worked, so nothing complained.
+
+    205 and 381 are the other half: labels the matcher cannot read ("Lc04 85×60mm" against
+    model "LC04 85*60"; "72" against "072"), which fell through to the catalogue hub and
+    lost a specific product page each. They now have entries in LEGACY_AID_OVERRIDES.
+
+    These three are the ones that notice if either fault returns — a chain here shows up
+    as the intermediate slug in the Location header, and a lost override shows up as
+    /products/.
+  */
+  {
+    path: "/index.php?m=home&c=view&a=index&aid=397",
+    expect: "/products/panic-exit-devices/x2-panic-exit-device-trim/",
+  },
+  {
+    path: "/index.php?m=home&c=view&a=index&aid=205",
+    expect: "/products/lock-cases/lc04-85-60-lock-case/",
+  },
+  {
+    path: "/index.php?m=home&c=view&a=index&aid=381",
+    expect: "/products/panic-exit-devices/072-panic-exit-device-lock-case/",
+  },
 ];
 
 const results = [];
