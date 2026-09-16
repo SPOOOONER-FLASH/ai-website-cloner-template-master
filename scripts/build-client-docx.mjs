@@ -57,6 +57,10 @@ const DOCUMENTS = [
     md: "docs/collaboration/2026-09-16-content-programme.md",
     docx: "docs/collaboration/2026-09-16-文章计划与目标.docx",
   },
+  {
+    md: "docs/research/2026-09-16-brazil-saga-portas.md",
+    docx: "docs/collaboration/2026-09-16-巴西-SAGA-研究.docx",
+  },
 ];
 
 /* ---------------------------------------------------------------- inline runs ----- */
