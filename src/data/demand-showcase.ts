@@ -82,6 +82,8 @@ export function demandShowcaseProducts(limit = 8): Product[] {
 
   const picked: Product[] = [];
   for (const model of ranked) {
+    // Client retired 305 from homepage promotion on 2026-09-15; historical data stays intact.
+    if (model === "305") continue;
     const product = byModel.get(model);
     if (!product || !isPublished(product)) continue;
     picked.push(product);

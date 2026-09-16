@@ -56,6 +56,9 @@ function homepageModels() {
   /* FeatureColumns — the door coordinator card carries a product plate. */
   models.add("DC02");
 
+  // Native home catalogue atlas: two direct product photographs alongside editorial plates.
+  for (const model of ["Stainless Steel Flush Bolt", "600"]) models.add(model);
+
   /*
     DemandShowcase — ranked from the client's Alibaba enquiry data. Read from the same
     research file the component reads, so the two cannot disagree.
