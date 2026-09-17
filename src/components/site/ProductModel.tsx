@@ -9,7 +9,7 @@ const COPY = {
   en: {
     partial: "Partial 3D model",
     warning: "Form reference only. Do not use for machining, door preparation or installation.",
-    scope: "Model scope (EN/ES)",
+    scope: "Model scope (EN/ES/PT)",
     libraryTitle: "3D reference models",
     libraryIntro:
       "Three exterior studies based on published dimensions. These are partial models; each file’s scope is described before downloading.",
@@ -19,7 +19,7 @@ const COPY = {
     partial: "Modelo 3D parcial",
     warning:
       "Referencia de forma únicamente. No utilizar para fabricación, mecanizados de puerta ni instalación.",
-    scope: "Alcance del modelo (EN/ES)",
+    scope: "Alcance del modelo (EN/ES/PT)",
     libraryTitle: "Modelos 3D de referencia",
     libraryIntro:
       "Tres estudios exteriores basados en cotas publicadas. Son modelos parciales; el alcance de cada archivo se describe antes de la descarga.",
@@ -31,7 +31,7 @@ const COPY = {
       "Referência de forma apenas. Não usar para fabricação, usinagem da porta ou instalação.",
     /* The document itself is bilingual EN/ES; naming it in Portuguese while the file is
        not would be a promise the download does not keep. */
-    scope: "Escopo do modelo (EN/ES)",
+    scope: "Escopo do modelo (EN/ES/PT)",
     libraryTitle: "Modelos 3D de referência",
     libraryIntro:
       "Três estudos externos baseados em cotas publicadas. São modelos parciais; o escopo de cada arquivo é descrito antes do download.",

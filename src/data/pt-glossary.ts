@@ -583,6 +583,10 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  "AB / AC / PB / SB / SS / SP / SC (Custom Available)":
+    "AB / AC / PB / SB / SS / SP / SC (personalizado disponível)",
+  "Fire Door": "Porta corta-fogo",
+  "Satin Stainless Steel (SS)": "Aço inoxidável acetinado (SS)",
   /*
     ⚠ The three below carry U+202F (NARROW NO-BREAK SPACE) before "mm", not a plain
     space. They look identical to "110 mm" in every editor and they are a different

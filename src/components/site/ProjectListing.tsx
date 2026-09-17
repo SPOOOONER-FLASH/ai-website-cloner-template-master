@@ -32,7 +32,7 @@ const copy = {
   pt: {
     title: "Aplicações",
     intro:
-      "O que um quadro de ferragens contém de facto, por tipo de edifício — que fechadura, que maçaneta, que mola, e onde vai cada peça na folha.",
+      "O que um quadro de ferragens contém de fato, por tipo de edifício — que fechadura, que maçaneta, que mola, e onde vai cada peça na folha.",
     note: "Fabricamos sob a marca dos nossos clientes, por isso os edifícios onde as nossas ferragens são instaladas não são nossos para nomear. Estas páginas mostram as combinações, não os clientes: cada modelo que aparece é nosso e está publicado, de modo que pode orçamentar o quadro completo a partir deles.",
   },
 } as const;

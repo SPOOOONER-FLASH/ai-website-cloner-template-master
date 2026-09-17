@@ -50,6 +50,7 @@ export interface RenamedRecord {
   model: string;
   name: string;
   nameEs?: string;
+  namePt?: string;
   /** Path of the surviving page. */
   toPath: string;
   reason: MergeReason;
@@ -60,6 +61,7 @@ export interface RetiredPath {
   toPath: string;
   categoryName: string;
   categoryNameEs?: string;
+  categoryNamePt?: string;
   moved: number;
 }
 
@@ -67,9 +69,11 @@ export interface NotShownModel {
   model: string;
   name: string;
   nameEs?: string;
+  namePt?: string;
   categorySlug: string;
   categoryName: string;
   categoryNameEs?: string;
+  categoryNamePt?: string;
 }
 
 interface MergeEntry {
@@ -107,6 +111,7 @@ export const renamedRecords: RenamedRecord[] = (moves.productMerges as MergeEntr
       model: product.model,
       name: product.name,
       nameEs: product.nameEs,
+      namePt: product.namePt,
       toPath: `/products/${category}/${product.slug}/`,
       reason,
     };
@@ -123,6 +128,7 @@ export const retiredPaths: RetiredPath[] = Object.entries(
     toPath: `/products/${alias.canonical}/`,
     categoryName: category?.name ?? alias.canonical,
     categoryNameEs: category?.nameEs,
+    categoryNamePt: category?.namePt,
     moved: alias.productSlugs.length,
   };
 });
@@ -143,9 +149,11 @@ export const notShownModels: NotShownModel[] = products
       model: product.model,
       name: product.name,
       nameEs: product.nameEs,
+      namePt: product.namePt,
       categorySlug: slug,
       categoryName: category?.name ?? slug,
       categoryNameEs: category?.nameEs,
+      categoryNamePt: category?.namePt,
     };
   })
   .sort((a, b) =>
@@ -155,8 +163,14 @@ export const notShownModels: NotShownModel[] = products
   );
 
 /** Grouped for rendering: one block per category, in the order above. */
-export const notShownByCategory: { category: string; categoryEs?: string; models: NotShownModel[] }[] =
-  notShownModels.reduce<{ category: string; categoryEs?: string; models: NotShownModel[] }[]>(
+export const notShownByCategory: {
+  category: string;
+  categoryEs?: string;
+  categoryPt?: string;
+  models: NotShownModel[];
+}[] = notShownModels.reduce<
+  { category: string; categoryEs?: string; categoryPt?: string; models: NotShownModel[] }[]
+>(
     (groups, model) => {
       const last = groups[groups.length - 1];
       if (last && last.category === model.categoryName) {
@@ -166,6 +180,7 @@ export const notShownByCategory: { category: string; categoryEs?: string; models
       groups.push({
         category: model.categoryName,
         categoryEs: model.categoryNameEs,
+        categoryPt: model.categoryNamePt,
         models: [model],
       });
       return groups;

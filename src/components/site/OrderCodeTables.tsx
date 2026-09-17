@@ -194,11 +194,17 @@ export function WorkedOrderCode({ locale }: { locale: Locale }) {
           ["SS", "Acabado — acero inoxidable"],
           ["BK", "Función — privacidad, botón interior"],
         ]
-      : [
-          ["587", "Base model — light-duty cylindrical lock"],
-          ["SS", "Finish — stainless steel"],
-          ["BK", "Function — privacy, turn button inside"],
-        ];
+      : locale === "pt"
+        ? [
+            ["587", "Modelo base — fechadura cilíndrica de serviço leve"],
+            ["SS", "Acabamento — aço inoxidável"],
+            ["BK", "Função — banheiro, botão de giro por dentro"],
+          ]
+        : [
+            ["587", "Base model — light-duty cylindrical lock"],
+            ["SS", "Finish — stainless steel"],
+            ["BK", "Function — privacy, turn button inside"],
+          ];
 
   return (
     <div className="border border-line p-24 lg:p-32">
@@ -264,6 +270,15 @@ export function OrderCodeFooter({ locale }: { locale: Locale }) {
             envíenos el número de modelo completo
           </Link>{" "}
           y le confirmaremos el acabado antes de que pida una muestra.
+        </>
+      ) : locale === "pt" ? (
+        <>
+          Os códigos sem confirmação destas tabelas estão na nossa própria lista de
+          perguntas à fábrica. Se você tem em mãos uma cotação que traz um deles,{" "}
+          <Link href="/pt/contact/" className="short-marker short-marker-compact text-brand hover:text-brand-hover">
+            envie o número de modelo completo
+          </Link>{" "}
+          e confirmamos o acabamento antes de você pedir uma amostra.
         </>
       ) : (
         <>

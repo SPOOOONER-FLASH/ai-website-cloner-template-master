@@ -37,6 +37,10 @@ const REASONS: Record<MergeReason, Partial<Record<Locale, [string, string]>> & {
       "Renombrados para coincidir con la ficha",
       "Son manillones exteriores para barras antipánico, no las barras: la fila «Type» de cada ficha ya lo decía y el nombre no. La pieza no cambió en nada.",
     ],
+    pt: [
+      "Renomeados para corresponder à ficha",
+      "São guarnições externas de barra antipânico, e não as barras: a linha «Type» de cada ficha já dizia isso e o nome não. Nada na peça mudou.",
+    ],
   },
   "duplicate-merged": {
     en: [
@@ -47,6 +51,10 @@ const REASONS: Record<MergeReason, Partial<Record<Locale, [string, string]>> & {
       "Fichas duplicadas fusionadas",
       "Dos fichas describían un mismo producto. Se conservó la que tiene la especificación completa y las fotografías; la otra redirige a ella.",
     ],
+    pt: [
+      "Fichas duplicadas unificadas",
+      "Duas fichas descreviam um mesmo produto. Ficou a que tem a especificação completa e as fotografias; a outra passou a redirecionar para ela.",
+    ],
   },
   "type-corrected": {
     en: [
@@ -56,6 +64,10 @@ const REASONS: Record<MergeReason, Partial<Record<Locale, [string, string]>> & {
     es: [
       "Tipo de producto corregido por la fábrica",
       "La ficha describía otro tipo de pieza. DS011 es un tope de puerta y no un pasador, y 072 es la caja de cerradura de perfil que nombra la ficha del 307.",
+    ],
+    pt: [
+      "Tipo de produto corrigido pela fábrica",
+      "A ficha descrevia outro tipo de peça. DS011 é um batente de porta e não um ferrolho, e 072 é a caixa de fechadura de perfil que a ficha do 307 nomeia.",
     ],
   },
 };
@@ -103,7 +115,7 @@ const COPY = {
   pt: {
     renamedTitle: "Fichas renomeadas",
     renamedIntro:
-      "A peça não mudou; mudou o seu nome, para que o nome e a ficha técnica coincidam. Todos os endereços antigos continuam a funcionar: devolvem um redireccionamento permanente para a página indicada ao lado, por isso um link de um e-mail antigo continua a servir.",
+      "A peça não mudou; mudou o seu nome, para que o nome e a ficha técnica coincidam. Todos os endereços antigos continuam a funcionar: devolvem um redirecionamento permanente para a página indicada ao lado, por isso um link de um e-mail antigo continua a servir.",
     oldAddress: "Endereço antigo",
     nowCalled: "Agora",
     retiredTitle: "Rotas de catálogo retiradas",
@@ -120,8 +132,10 @@ const COPY = {
 
 export function ModelLookup({ locale }: { locale: Locale }) {
   const copy = COPY[locale];
-  const es = locale === "es";
   const prefix = locale === "en" ? "" : `/${locale}`;
+  /* English, never the other translation — see the note in src/lib/localised.ts. */
+  const pick = (en: string, es?: string, pt?: string) =>
+    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
 
   return (
     <>
@@ -173,7 +187,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                             className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                           >
                             <span className="font-mono font-semibold">{record.model}</span>{" "}
-                            {es ? (record.nameEs ?? record.name) : record.name}
+                            {pick(record.name, record.nameEs, record.namePt)}
                           </Link>
                         </td>
                       </tr>
@@ -201,7 +215,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                     href={`${prefix}${path.toPath}`}
                     className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                   >
-                    {es ? (path.categoryNameEs ?? path.categoryName) : path.categoryName}
+                    {pick(path.categoryName, path.categoryNameEs, path.categoryNamePt)}
                   </Link>
                   <span className="mt-4 block text-c2 text-ink-secondary">
                     {copy.movedProducts(path.moved)}
@@ -226,14 +240,14 @@ export function ModelLookup({ locale }: { locale: Locale }) {
           {notShownByCategory.map((group) => (
             <div key={group.category} className="border-t border-line pt-12">
               <h3 className="text-c1 font-semibold text-ink">
-                {es ? (group.categoryEs ?? group.category) : group.category}
+                {pick(group.category, group.categoryEs, group.categoryPt)}
               </h3>
               <ul className="mt-12 space-y-8">
                 {group.models.map((model) => (
                   <li key={`${model.categorySlug}-${model.model}`} className="text-c2">
                     <span className="font-mono text-ink">{model.model}</span>{" "}
                     <span className="text-ink-secondary">
-                      {es ? (model.nameEs ?? model.name) : model.name}
+                      {pick(model.name, model.nameEs, model.namePt)}
                     </span>
                   </li>
                 ))}

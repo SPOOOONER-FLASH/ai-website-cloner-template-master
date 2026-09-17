@@ -105,8 +105,14 @@ export const demandShowcaseCopy = {
     body: "Seleccionados a partir de noventa días de consultas en nuestra propia tienda de Alibaba, y no de una lista que hubiéramos hecho nosotros — ambas no coinciden, que es justamente el motivo de mirar.",
     cta: "Consultar cualquiera de estos",
   },
+  pt: {
+    eyebrow: "O que os compradores pediram neste trimestre",
+    title: "Modelos mais procurados",
+    body: "Selecionados a partir de noventa dias de consultas na nossa própria loja do Alibaba, e não de uma lista que nós mesmos tivéssemos feito — as duas não coincidem, e é justamente por isso que se olha.",
+    cta: "Perguntar sobre qualquer um deles",
+  },
 } as const;
 
 export function demandShowcaseText(locale: Locale = "en") {
-  return demandShowcaseCopy[locale === "es" ? "es" : "en"];
+  return demandShowcaseCopy[locale];
 }

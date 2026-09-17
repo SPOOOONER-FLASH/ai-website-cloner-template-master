@@ -298,10 +298,14 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
       items.push({
         question: es
           ? `¿Qué código de acabado ANSI/BHMA corresponde al ${subject}?`
-          : `What is the ANSI/BHMA finish code for the ${subject}?`,
+          : pt
+            ? `Qual é o código de acabamento ANSI/BHMA do ${subject}?`
+            : `What is the ANSI/BHMA finish code for the ${subject}?`,
         answer: es
           ? `Sobre la base de ${statedMaterial} del ${subject}, sus acabados corresponden a ${listed} según ANSI/BHMA A156.18.`
-          : `Over the ${statedMaterial} base of the ${subject}, its finishes correspond to ${listed} under ANSI/BHMA A156.18.`,
+          : pt
+            ? `Sobre a base de ${statedMaterial} do ${subject}, os seus acabamentos correspondem a ${listed} pela ANSI/BHMA A156.18.`
+            : `Over the ${statedMaterial} base of the ${subject}, its finishes correspond to ${listed} under ANSI/BHMA A156.18.`,
       });
     }
   }
@@ -319,10 +323,14 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     items.push({
       question: es
         ? `¿Qué normas cumple el ${subject}?`
-        : `Which standards does the ${subject} hold?`,
+        : pt
+          ? `Que normas o ${subject} cumpre?`
+          : `Which standards does the ${subject} hold?`,
       answer: es
         ? `El ${subject} cumple ${names}.`
-        : `The ${subject} holds ${names}.`,
+        : pt
+          ? `O ${subject} cumpre ${names}.`
+          : `The ${subject} holds ${names}.`,
     });
   }
 

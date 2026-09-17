@@ -7,7 +7,7 @@ import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 const ar4Models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"] as const;
-type LocalizedProduct = Product & { nameEs?: string };
+type LocalizedProduct = Product & { nameEs?: string; namePt?: string };
 
 const copy = {
   en: {
@@ -47,7 +47,10 @@ function ar4Products(): Product[] {
 
 function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale }) {
   const localized = product as LocalizedProduct;
-  const name = locale === "es" ? localized.nameEs ?? product.name : product.name;
+  /* English, never Spanish, for a locale with no name of its own yet. */
+  const name =
+    (locale === "es" ? localized.nameEs : locale === "pt" ? localized.namePt : undefined) ??
+    product.name;
 
   return (
     <Link

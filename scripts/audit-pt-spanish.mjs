@@ -155,6 +155,17 @@ const SPANISH_ONLY = [
   both languages, and "su"/"y"/"es" appear inside URLs, model codes and abbreviations.
 */
 const NOT_A_MARKER = new Set([
+  /*
+    Spelled identically in Portuguese. "Ver catálogo" on the Portuguese home page was the
+    first run's one false positive, and a false positive on an audit somebody acts on is
+    expensive: it sends a session to prove a correct page wrong.
+  */
+  "catálogo",
+  "página",
+  "páginas",
+  "fábrica",
+  "acabado",
+  "acabados",
   "pedido",
   "pedidos",
   "gama",

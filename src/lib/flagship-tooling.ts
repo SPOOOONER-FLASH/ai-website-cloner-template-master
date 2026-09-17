@@ -117,4 +117,12 @@ export const flagshipCopy = {
     cta: "Ver toda la gama antipánico",
     ctaHref: "/es/products/panic-exit-devices/",
   },
+  pt: {
+    eyebrow: "Ferramental nosso",
+    title: "307 e 311",
+    intro:
+      "Duas barras antipânico feitas em moldes que nós mesmos cortamos. É a diferença que um especificador sente antes de ler: o comprimento da barra, as distâncias entre eixos e a resistência ao fogo são nossas para sustentar, e mudar qualquer uma delas é uma decisão de produção tomada por gente que pode ir a pé até a prensa.",
+    cta: "Ver toda a linha de barras antipânico",
+    ctaHref: "/pt/products/panic-exit-devices/",
+  },
 } as const;

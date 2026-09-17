@@ -7,11 +7,13 @@
     "orbit": "35deg 65deg auto",
     "scope": {
       "en": "Exterior lever and rose: 135 mm lever length and 53 × 53 × 8 mm rose, based on the published drawing.",
-      "es": "Exterior de la manija y roseta: manija de 135 mm y roseta de 53 × 53 × 8 mm, según el plano publicado."
+      "es": "Exterior de la manija y roseta: manija de 135 mm y roseta de 53 × 53 × 8 mm, según el plano publicado.",
+      "pt": "Exterior da maçaneta e roseta: maçaneta de 135 mm e roseta de 53 × 53 × 8 mm, conforme o desenho publicado."
     },
     "omissions": {
       "en": "Fixing holes, edge radii, spindle length, internal parts and escutcheon are not modeled.",
-      "es": "No se incluyen orificios de fijación, radios de borde, longitud del cuadradillo, piezas internas ni bocallave."
+      "es": "No se incluyen orificios de fijación, radios de borde, longitud del cuadradillo, piezas internas ni bocallave.",
+      "pt": "Não estão modelados os furos de fixação, os raios das arestas, o comprimento do eixo, as peças internas nem o espelho."
     },
     "partial": true,
     "manufacturingReady": false,
@@ -29,11 +31,13 @@
     "orbit": "0deg 90deg auto",
     "scope": {
       "en": "Case envelope: 93 mm depth and 173 mm height. The 15 mm thickness is an assumed closure value, not a published product dimension.",
-      "es": "Volumen exterior de la caja: 93 mm de profundidad y 173 mm de altura. El espesor de 15 mm es un valor supuesto para cerrar el volumen, no una cota publicada del producto."
+      "es": "Volumen exterior de la caja: 93 mm de profundidad y 173 mm de altura. El espesor de 15 mm es un valor supuesto para cerrar el volumen, no una cota publicada del producto.",
+      "pt": "Volume externo da caixa: 93 mm de profundidade e 173 mm de altura. A espessura de 15 mm é um valor assumido para fechar o volume, e não uma cota publicada do produto."
     },
     "omissions": {
       "en": "Faceplate, latch, bolts, fixing holes and internal mechanism are not modeled. This does not establish door preparation or installation clearances.",
-      "es": "No se incluyen frente, picaporte, cerrojos, orificios de fijación ni mecanismo interno. No define mecanizados de puerta ni holguras de instalación."
+      "es": "No se incluyen frente, picaporte, cerrojos, orificios de fijación ni mecanismo interno. No define mecanizados de puerta ni holguras de instalación.",
+      "pt": "Não estão modelados a testa, a lingueta, as travas, os furos de fixação nem o mecanismo interno. Isto não define a preparação da porta nem as folgas de instalação."
     },
     "partial": true,
     "manufacturingReady": false,
@@ -51,11 +55,13 @@
     "orbit": "35deg 65deg auto",
     "scope": {
       "en": "Upper cylindrical housing envelopes only: Ø17 mm, two 30 mm segments with a 10 mm central gap.",
-      "es": "Solo los volúmenes cilíndricos superiores: Ø17 mm, dos tramos de 30 mm con un espacio central de 10 mm."
+      "es": "Solo los volúmenes cilíndricos superiores: Ø17 mm, dos tramos de 30 mm con un espacio central de 10 mm.",
+      "pt": "Apenas os volumes cilíndricos superiores: Ø17 mm, dois trechos de 30 mm com um vão central de 10 mm."
     },
     "omissions": {
       "en": "Lower euro profile, cam, thumbturn, fixing thread, keyway and keys are not modeled.",
-      "es": "No se incluyen perfil europeo inferior, leva, pomo, rosca de fijación, bocallave ni llaves."
+      "es": "No se incluyen perfil europeo inferior, leva, pomo, rosca de fijación, bocallave ni llaves.",
+      "pt": "Não estão modelados o perfil europeu inferior, a came, o botão de giro, a rosca de fixação, o segredo nem as chaves."
     },
     "partial": true,
     "manufacturingReady": false,

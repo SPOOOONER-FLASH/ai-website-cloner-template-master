@@ -32,7 +32,7 @@ export function FlagshipTooling({ locale = "en" }: { locale?: Locale }) {
   const cards = flagshipTooling(locale);
   if (!cards) return null;
 
-  const text = flagshipCopy[locale === "es" ? "es" : "en"];
+  const text = flagshipCopy[locale];
 
   return (
     <section className="layout" aria-labelledby="flagship-tooling-heading">
