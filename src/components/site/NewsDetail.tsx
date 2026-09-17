@@ -1,4 +1,4 @@
-import { articleFaqHeading, articleFaqItems } from "@/lib/article-faq";
+import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { newsKindLabels, formatNewsDate } from "@/data/news";
@@ -105,6 +105,9 @@ export function NewsDetail({
     published. The article's own prose still names the model; only the link goes.
   */
   const faq = articleFaqItems(article, locale);
+  /* The heading goes in the language of the questions, not of the page — see the note on
+     articleFaqLocale. A translated heading over untranslated pairs reads as a bug. */
+  const faqLocale = articleFaqLocale(article, locale);
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
@@ -264,9 +267,15 @@ export function NewsDetail({
               items as FAQPage markup — same source, so the two cannot drift.
             */}
             {faq.length ? (
-              <section className="mt-64 border-t border-line pt-32" aria-labelledby="article-faq">
+              <section
+                className="mt-64 border-t border-line pt-32"
+                aria-labelledby="article-faq"
+                /* Marked in the language it is actually in, so a screen reader switches
+                   voice and a search engine is not told English is Portuguese. */
+                lang={faqLocale === locale ? undefined : faqLocale}
+              >
                 <h2 id="article-faq" className="text-h3 text-ink">
-                  {articleFaqHeading(locale)}
+                  {articleFaqHeading(faqLocale)}
                 </h2>
                 {faq.map((item) => (
                   <section key={item.question} className="mt-32">

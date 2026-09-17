@@ -51,14 +51,34 @@ export function articleFaqHeading(locale: Locale): string {
 /**
  * The block for one article in one locale.
  *
- * Falls back to English rather than vanishing: a Spanish reader gets the questions in
- * English instead of a page that is silently shorter than its English twin, and the gap is
- * counted by `npm run audit:faq` rather than hidden.
+ * Falls back to English rather than vanishing: a Spanish or Portuguese reader gets the
+ * questions in English instead of a page that is silently shorter than its English twin,
+ * and the gap is counted by `npm run audit:pt` rather than hidden.
  */
 export function articleFaqItems(article: NewsArticle, locale: Locale): ArticleFaqItem[] {
   const faq = article.faq;
   if (!faq) return [];
   return faq[locale] ?? faq.en;
+}
+
+/**
+ * Which language the block is ACTUALLY in, which is not always the page's.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THE HEADING FOLLOWS THE ITEMS AND NOT THE PAGE
+ *
+ * On 2026-09-17 the 35 article bodies were translated into Portuguese and the question
+ * pairs were not. The page then rendered "Perguntas frequentes sobre este tema" over four
+ * questions in English — a Portuguese heading introducing English content, which reads as
+ * a rendering bug rather than as a gap.
+ *
+ * That is the same failure the body fallback exists to avoid, one element further down:
+ * a page half in each language looks finished and is not. So when the items fall back, the
+ * heading falls back with them, and the block is visibly an English insert inside a
+ * Portuguese page — which is honest, and which is the state that gets fixed.
+ */
+export function articleFaqLocale(article: NewsArticle, locale: Locale): Locale {
+  return article.faq?.[locale]?.length ? locale : "en";
 }
 
 /**
