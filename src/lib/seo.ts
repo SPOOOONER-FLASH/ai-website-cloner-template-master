@@ -20,6 +20,33 @@ import { mirrorsOf } from "./spanish-mirror.ts";
  */
 export const defaultOgImage = "/seo/og-default.png";
 
+/**
+ * The hreflang map for one English path, derived rather than typed.
+ *
+ * `pageMetadata` computes this internally, but the news detail routes build their own
+ * metadata and were hand-writing the map — so when Portuguese news shipped on 2026-09-17
+ * the English and Spanish articles would have gone on declaring two alternates for a page
+ * that has three. That is the hand-written-locale-list bug for the third time in two days
+ * (see src/lib/language-choices.ts), so it is a function now.
+ *
+ * Returns undefined when only English exists, because a `languages` map of one entry is
+ * noise rather than a signal.
+ */
+export function alternateLanguages(enPath: string): Record<string, string> | undefined {
+  const clean = enPath === "/" ? "" : `/${enPath.replace(/^\/|\/$/g, "")}`;
+  const href: Record<Locale, string> = {
+    en: absoluteUrl(`${clean}/`),
+    es: absoluteUrl(`/es${clean}/`),
+    pt: absoluteUrl(`/pt${clean}/`),
+  };
+  const available = mirrorsOf(enPath);
+  if (available.length < 2) return undefined;
+  return Object.fromEntries([
+    ...available.map((locale) => [locale, href[locale]]),
+    ["x-default", href.en],
+  ]);
+}
+
 export function pageMetadata(opts: {
   enPath: string;
   locale: Locale;

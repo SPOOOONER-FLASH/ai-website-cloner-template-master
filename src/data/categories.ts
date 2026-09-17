@@ -64,6 +64,7 @@ export interface MenuCategory {
   slug: string;
   label: string;
   labelEs: string;
+  labelPt: string;
   /**
    * Sub-categories, for the menu's second level.
    *
@@ -72,7 +73,7 @@ export interface MenuCategory {
    * query the filter rail on the category page writes. Only four of the fifteen
    * categories have any; the rest link straight through.
    */
-  children: { slug: string; label: string; labelEs: string; count: number }[];
+  children: { slug: string; label: string; labelEs: string; labelPt: string; count: number }[];
   count: number;
 }
 
@@ -118,6 +119,7 @@ export function getMenuCategories(): MenuCategory[] {
         slug: child.slug,
         label: child.name,
         labelEs: child.nameEs ?? child.name,
+        labelPt: child.namePt ?? child.name,
         count: inCategory.filter((p) => p.categoryPath[1] === child.slug).length,
       }))
       .filter((child) => child.count > 0);
@@ -126,6 +128,7 @@ export function getMenuCategories(): MenuCategory[] {
       slug: category.slug,
       label: category.name,
       labelEs: category.nameEs ?? category.name,
+      labelPt: category.namePt ?? category.name,
       count: inCategory.length,
       children,
     };

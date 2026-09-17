@@ -15,13 +15,20 @@ export const atlasSubjects = [
   ["flush", "/images/products-hyde/600-concealed-sliding-door-handle.webp", "600-concealed-sliding-door-handle", "600", "stainless-steel-handles"],
 ] as const;
 
+/** Every product in the atlas exists in all three trees, so only the label changes. */
+const VIEW_PRODUCT: Record<Locale, string> = {
+  en: "View product",
+  es: "Ver producto",
+  pt: "Ver produto",
+};
+
 export function EditorialAtlas({ locale, priority = false, onNavigate }: { locale: Locale; priority?: boolean; onNavigate?: () => void }) {
   return <div className={styles.atlas}>
     {atlasSubjects.map(([position, image, slug, model, category]) => (
-      <Link key={slug} href={`${locale === "es" ? "/es" : ""}/products/${category}/${slug}/`}
+      <Link key={slug} href={`${locale === "en" ? "" : `/${locale}`}/products/${category}/${slug}/`}
         className={styles[position]} title={model} onClick={onNavigate}>
         <MediaPlaceholder src={image.startsWith("/") ? image : `/images/editorial/${image}.webp`}
-          ratio="3 / 2" label={`${locale === "es" ? "Ver producto" : "View product"}: ${model}`}
+          ratio="3 / 2" label={`${VIEW_PRODUCT[locale]}: ${model}`}
           sizes="(max-width: 767px) 40vw, 30vw" priority={priority} />
       </Link>
     ))}

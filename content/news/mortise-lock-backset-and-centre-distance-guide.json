@@ -51,5 +51,76 @@
     "Donde una cota no aparece en nuestras fichas de producto es porque no la hemos verificado para ese modelo, no porque no importe. Pida el plano antes de comprar y le enviaremos el que cubre el modelo de su relación, o le diremos claramente que todavía se está preparando."
   ],
   "seoTitleEs": "Entrada y entre-ejes en cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Cómo leer la entrada y la distancia entre ejes en el modelo de una caja de embutir: por qué existen 85 mm y 72 mm, y qué entrada admite cada puerta."
+  "seoDescriptionEs": "Cómo leer la entrada y la distancia entre ejes en el modelo de una caja de embutir: por qué existen 85 mm y 72 mm, y qué entrada admite cada puerta.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is the difference between backset and centre distance?",
+        "answer": "Backset is the distance from the front edge of the faceplate back to the centre of the handle spindle. Centre distance is the gap between the centre of the cylinder hole and the centre of that spindle, measured along the face of the lock. Centre distance has to match the handle plate or escutcheon; backset has to match how far in from the door edge the door was bored. They are independent of each other, and a lock case is only usable when both agree with the door."
+      },
+      {
+        "question": "How do you read a mortise lock case model number?",
+        "answer": "Across the euro-profile range the two figures are the model number. LC08 85×55 is an 85mm centre distance with a 55mm backset; LC21 85×50 is the same centre distance on a 50mm backset; LC8520 compresses the same information without a separator — 85mm centre distance, 20mm backset. Once you know the convention, a packing list becomes readable at a glance."
+      },
+      {
+        "question": "Why is 85mm the usual centre distance, and when is it 72mm?",
+        "answer": "85mm is the standard centre distance for euro-profile cylinder locks, which is why a European handle plate drops onto a case from almost any manufacturer without drilling. 72mm is common through Latin American markets, and it is why LC34 50×72 puts the backset first: at that centre distance the numbers read in the reverse order, so the model name follows the market's own convention rather than ours."
+      },
+      {
+        "question": "Which backset does a narrow aluminium stile take?",
+        "answer": "A shallow one — 16mm, 17mm and 20mm backsets exist because a narrow stile cannot take a deep case, which is what LC8520 at 20mm and the 16mm sliding-hook cases are for. Timber doors take more, with 45mm, 50mm, 55mm and 60mm the usual span, and a 70mm backset like the LC7065 is what a wide entrance door with a heavy rail needs. Backset follows the door rather than the standard."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre distância ao eixo e distância entre centros?",
+        "answer": "Distância ao eixo é a distância da borda frontal da testa até o centro do quadrado da maçaneta. Distância entre centros é o vão entre o centro do furo do cilindro e o centro desse quadrado, medido ao longo da face da fechadura. A distância entre centros tem de bater com o espelho ou a roseta; a distância ao eixo tem de bater com o quanto para dentro da borda a porta foi furada. São independentes entre si, e uma caixa só é utilizável quando as duas concordam com a porta."
+      },
+      {
+        "question": "Como se lê o código de modelo de uma caixa de fechadura?",
+        "answer": "Em toda a linha de perfil europeu as duas medidas são o código. LC08 85×55 é 85 mm entre centros com 55 mm de eixo; LC21 85×50 é a mesma distância entre centros sobre 50 mm de eixo; LC8520 comprime a mesma informação sem separador — 85 mm entre centros, 20 mm de eixo. Depois de conhecer a convenção, uma packing list se lê de relance."
+      },
+      {
+        "question": "Por que 85 mm é a distância entre centros usual, e quando é 72 mm?",
+        "answer": "85 mm é a distância entre centros padrão para fechaduras de cilindro europeu, e é por isso que um espelho europeu assenta numa caixa de quase qualquer fabricante sem furar. 72 mm é comum nos mercados latino-americanos, e é por isso que o LC34 50×72 põe a distância ao eixo primeiro: nessa distância entre centros os números se leem na ordem inversa, então o nome do modelo segue a convenção daquele mercado e não a nossa."
+      },
+      {
+        "question": "Que distância ao eixo aceita um montante estreito de alumínio?",
+        "answer": "Uma rasa — eixos de 16 mm, 17 mm e 20 mm existem porque um montante estreito não aceita caixa profunda, que é para isso que servem o LC8520 a 20 mm e as caixas de gancho de 16 mm. Portas de madeira aceitam mais, com 45 mm, 50 mm, 55 mm e 60 mm como faixa usual, e um eixo de 70 mm como o do LC7065 é o que uma porta de entrada larga com travessa pesada pede. A distância ao eixo segue a porta e não a norma."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre distancia al eje y distancia entre ejes?",
+        "answer": "La distancia al eje es la distancia desde el borde delantero del frente hasta el centro del cuadradillo. La distancia entre ejes es el hueco entre el centro del agujero del cilindro y el centro de ese cuadradillo, medido a lo largo de la cara de la cerradura. La distancia entre ejes tiene que coincidir con el escudo o el rosetón; la distancia al eje tiene que coincidir con lo adentro que se taladró la puerta desde el canto. Son independientes entre sí, y una caja solo es utilizable cuando las dos concuerdan con la puerta."
+      },
+      {
+        "question": "¿Cómo se lee el código de modelo de una caja de cerradura?",
+        "answer": "En toda la gama de perfil europeo las dos medidas son el código. LC08 85×55 es 85 mm entre ejes con 55 mm al eje; LC21 85×50 es la misma distancia entre ejes sobre 50 mm al eje; LC8520 comprime la misma información sin separador — 85 mm entre ejes, 20 mm al eje. Una vez conocida la convención, un packing list se lee de un vistazo."
+      },
+      {
+        "question": "¿Por qué 85 mm es la distancia entre ejes habitual, y cuándo es 72 mm?",
+        "answer": "85 mm es la distancia entre ejes estándar para cerraduras de cilindro europeo, y por eso un escudo europeo asienta sobre una caja de casi cualquier fabricante sin taladrar. 72 mm es común en los mercados latinoamericanos, y por eso el LC34 50×72 pone la distancia al eje primero: a esa distancia entre ejes los números se leen en orden inverso, así que el nombre del modelo sigue la convención de ese mercado y no la nuestra."
+      },
+      {
+        "question": "¿Qué distancia al eje admite un canto estrecho de aluminio?",
+        "answer": "Una corta — hay distancias de 16 mm, 17 mm y 20 mm porque un canto estrecho no admite una caja profunda, que es para lo que sirven el LC8520 a 20 mm y las cajas de gancho de 16 mm. Las puertas de madera admiten más, con 45 mm, 50 mm, 55 mm y 60 mm como rango habitual, y una distancia de 70 mm como la del LC7065 es lo que pide una puerta de entrada ancha con travesaño pesado. La distancia al eje sigue a la puerta y no a la norma."
+      }
+    ]
+  },
+  "titlePt": "Distância ao eixo e distância entre centros: como ler o número de uma caixa de fechadura",
+  "summaryPt": "Quatrocentas caixas chegam na obra, o instalador encosta uma na porta preparada e o quadrado da maçaneta fica quinze milímetros longe do furo. Nada está com defeito. A única pista eram dois dígitos no código de modelo que ninguém leu.",
+  "bodyPt": [
+    "Um distribuidor envia um pedido de quatrocentas caixas de fechadura de embutir. O código de modelo está certo, o acabamento está certo, o preço está acertado. Oito semanas depois as caixas chegam na obra, o instalador encosta uma numa porta preparada, e o quadrado da maçaneta fica quinze milímetros longe de onde está o furo. Nada está com defeito. As caixas foram simplesmente feitas para outra preparação de porta, e a única pista eram dois dígitos no código de modelo que ninguém leu.",
+    "Isso acontece com frequência suficiente para valer explicar exatamente o que esses dígitos significam, porque uma vez que você saiba lê-los consegue especificar uma caixa só pelo nome.",
+    "Distância entre centros é o vão entre o centro do furo do cilindro e o centro do quadrado da maçaneta, medido ao longo da face da fechadura. Distância ao eixo é a distância da borda frontal da testa até o centro desse quadrado. A distância entre centros tem de bater com o espelho ou a roseta que você vai instalar. A distância ao eixo tem de bater com o quanto para dentro da borda a porta foi furada. As duas são independentes entre si, e uma caixa só é utilizável quando as duas concordam com a porta.",
+    "Em toda a linha de perfil europeu essas duas medidas são o código de modelo. LC08 85×55 é 85 mm de distância entre centros com 55 mm de distância ao eixo. LC21 85×50 é a mesma distância entre centros de 85 mm sobre 50 mm de eixo. LC8520 comprime a mesma informação sem separador: 85 mm entre centros, 20 mm de eixo. Depois de conhecer a convenção, uma packing list se lê de relance.",
+    "Oitenta e cinco milímetros é a medida que você encontrará com mais frequência. É a distância entre centros padrão para fechaduras de cilindro europeu, e é por isso que um espelho europeu assenta numa caixa de quase qualquer fabricante sem furar. Setenta e dois milímetros é a outra que vale conhecer — é comum nos mercados latino-americanos, e é por isso que o LC34 50×72 põe a distância ao eixo primeiro: a 72 mm entre centros os números se leem na ordem inversa, então o nome do modelo segue a convenção daquele mercado e não a nossa.",
+    "A distância ao eixo é onde mora a variação real, porque ela segue a porta e não a norma. Montantes estreitos de alumínio não aceitam caixa profunda, então existem eixos de 16 mm, 17 mm e 20 mm para eles — é para isso que servem o LC8520 a 20 mm e as caixas de gancho de 16 mm. Portas de madeira aceitam mais, e 45 mm, 50 mm, 55 mm e 60 mm são a faixa usual. Um eixo de 70 mm como o do LC7065 põe a maçaneta bem para dentro da borda, que é o que uma porta de entrada larga com travessa pesada pede.",
+    "Dois sufixos valem ser reconhecidos enquanto você lê o número. PS marca uma caixa de passagem: só trinco, sem cilindro, para uma porta que fecha mas não tranca. E onde o modelo traz uma contagem de ferrolhos — LC04 85×60 e LC14 85×50 trazem ambos quatro ferrolhos redondos ao lado do trinco — você está olhando para uma caixa multiponto destinada a uma porta de segurança ou de entrada, e não a uma porta interna.",
+    "A sequência prática ao especificar é curta. Meça a porta primeiro, não a fechadura: a que distância da borda está furado o alojamento do quadrado, e que distância entre centros o espelho que você pretende usar exige. Depois leia essas duas medidas nos códigos de modelo candidatos. Depois confirme a mão e as dimensões da testa, que o código de modelo não codifica. Se você está substituindo ferragem existente em vez de instalar portas novas, tire a caixa antiga e meça-a — uma porta que já foi preparada uma vez já tomou as duas decisões por você, e igualá-la é mais barato que refurar quatrocentas portas.",
+    "Onde uma dimensão não está impressa nas nossas páginas de produto, é porque não a verificamos para aquele modelo e não porque ela não importa. Peça o desenho antes de comprar e enviaremos o que cobre o modelo da sua planilha, ou diremos com todas as letras que ele ainda está sendo preparado."
+  ],
+  "seoTitlePt": "Caixa de embutir: distância ao eixo e entre centros",
+  "seoDescriptionPt": "Como ler distância ao eixo e distância entre centros no código de modelo de uma caixa de fechadura — por que existem 85 mm e 72 mm, e qual eixo serve a qual porta."
 }

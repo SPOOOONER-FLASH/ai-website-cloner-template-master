@@ -49,5 +49,75 @@
     "Nuestro selector guiado pregunta cuatro de los seis y devuelve un modelo publicado con su ficha, no una categoría, para que la referencia se pegue directamente en un cuadro. Donde una cifra no está publicada para un modelo, la ficha muestra un guion en lugar de un número plausible: el guion es una pregunta para nosotros, y sale más barato hacerla ahora que responderla en obra."
   ],
   "seoTitleEs": "Los seis datos que necesita un pedido de herrajes | Canton Hyland",
-  "seoDescriptionEs": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor."
+  "seoDescriptionEs": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor.",
+  "faq": {
+    "en": [
+      {
+        "question": "What information does a hardware order actually need?",
+        "answer": "Six values: model, finish, backset, centre distance, handing, door thickness. Written in that order they read as one reference — 9001-SSS-60-72-L-45 — and every one of them is a fact about the opening rather than a preference. A model number is not an order: it names a family and a form, and it does not say which variant fits the door in front of you."
+      },
+      {
+        "question": "Which missing value costs the most?",
+        "answer": "Backset. A missing finish delays a quotation; a missing backset delays a shipment, because it is not visible until the case is offered up to the door and by then the container has landed. That asymmetry is the whole argument for writing all six at enquiry rather than only the ones that feel important."
+      },
+      {
+        "question": "Is it acceptable to say a value is not known yet?",
+        "answer": "Yes, and it is a valid answer rather than an omission. \"Door thickness to be confirmed\" is a line an export engineer can work with — it flags the risk and keeps the rest of the quotation moving. A blank is not the same thing: a blank gets filled in by whoever is in the most hurry."
+      },
+      {
+        "question": "Is the finish code the same as the finish name?",
+        "answer": "No. SSS and PSS are both \"stainless\" — one a satin and one a mirror — and they do not sit next to each other on the same floor. Where a US equivalent exists we publish it beside the code, because a schedule written to US32D and a factory reading SSS are describing the same part and should not have to discover that by correspondence."
+      }
+    ],
+    "pt": [
+      {
+        "question": "De que informação um pedido de ferragem realmente precisa?",
+        "answer": "Seis valores: modelo, acabamento, distância ao eixo, distância entre centros, mão e espessura da porta. Escritos nessa ordem eles se leem como uma única referência — 9001-SSS-60-72-L-45 — e cada um é um fato sobre o vão e não uma preferência. Um código de modelo não é um pedido: ele nomeia uma família e uma forma, e não diz qual variante serve na porta que está na sua frente."
+      },
+      {
+        "question": "Qual valor faltando custa mais caro?",
+        "answer": "A distância ao eixo. Um acabamento faltando atrasa a cotação; uma distância ao eixo faltando atrasa o embarque, porque ela não é visível até a caixa ser encostada na porta — e a essa altura o contêiner já chegou. Essa assimetria é todo o argumento para escrever os seis na consulta em vez de só os que parecem importantes."
+      },
+      {
+        "question": "É aceitável dizer que um valor ainda não é conhecido?",
+        "answer": "Sim, e é uma resposta válida e não uma omissão. \"Espessura da porta a confirmar\" é uma linha com que um engenheiro de exportação consegue trabalhar — ela sinaliza o risco e mantém o resto da cotação andando. Um espaço em branco não é a mesma coisa: um espaço em branco é preenchido por quem estiver com mais pressa."
+      },
+      {
+        "question": "O código de acabamento é o mesmo que o nome do acabamento?",
+        "answer": "Não. SSS e PSS são os dois \"inox\" — um acetinado e um espelhado — e não convivem no mesmo pavimento. Onde existe um equivalente US, nós o publicamos ao lado do código, porque uma planilha escrita em US32D e uma fábrica lendo SSS estão descrevendo a mesma peça e não deveriam ter de descobrir isso por correspondência."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué información necesita realmente un pedido de herrajes?",
+        "answer": "Seis valores: modelo, acabado, distancia al eje, distancia entre ejes, mano y espesor de puerta. Escritos en ese orden se leen como una sola referencia — 9001-SSS-60-72-L-45 — y cada uno es un hecho sobre el hueco y no una preferencia. Un código de modelo no es un pedido: nombra una familia y una forma, y no dice qué variante encaja en la puerta que tiene delante."
+      },
+      {
+        "question": "¿Qué valor ausente cuesta más caro?",
+        "answer": "La distancia al eje. Un acabado que falta retrasa la cotización; una distancia al eje que falta retrasa el embarque, porque no se ve hasta que la caja se presenta en la puerta — y para entonces el contenedor ya ha llegado. Esa asimetría es todo el argumento para escribir los seis en la consulta y no solo los que parecen importantes."
+      },
+      {
+        "question": "¿Es aceptable decir que un valor todavía no se conoce?",
+        "answer": "Sí, y es una respuesta válida y no una omisión. \"Espesor de puerta por confirmar\" es una línea con la que un ingeniero de exportación puede trabajar — señala el riesgo y mantiene el resto de la cotización en marcha. Un hueco en blanco no es lo mismo: un hueco en blanco lo rellena quien más prisa tenga."
+      },
+      {
+        "question": "¿El código de acabado es lo mismo que el nombre del acabado?",
+        "answer": "No. SSS y PSS son los dos \"inoxidable\" — uno satinado y otro espejo — y no conviven en la misma planta. Donde existe un equivalente US lo publicamos junto al código, porque una relación escrita en US32D y una fábrica leyendo SSS están describiendo la misma pieza y no deberían tener que descubrirlo por correspondencia."
+      }
+    ]
+  },
+  "titlePt": "Os seis valores de que um pedido de ferragem realmente precisa",
+  "summaryPt": "Um código de modelo não é um pedido. Ele nomeia uma família e uma forma; não diz qual das variantes dentro dela serve na porta que está na sua frente. Seis valores fecham essa distância.",
+  "bodyPt": [
+    "Um código de modelo não é um pedido. Ele nomeia uma família e uma forma; não diz qual das variantes dentro dela serve na porta que está na sua frente. A distância entre as duas coisas é onde se vai uma semana, porque as perguntas são feitas uma por vez, por e-mail, atravessando oito horas de fuso.",
+    "Seis valores fecham essa distância: modelo, acabamento, distância ao eixo, distância entre centros, mão e espessura da porta. Escritos nessa ordem eles se leem como uma única referência — 9001-SSS-60-72-L-45 — e cada um deles é um fato sobre o vão e não uma preferência. Nada nessa linha é negociável depois que o alojamento é usinado.",
+    "Modelo é a família. Acabamento é o código, não a palavra: SSS e PSS são os dois \"inox\", um acetinado e um espelhado, e não convivem no mesmo pavimento. Onde existe um equivalente US, nós o publicamos ao lado do código, porque uma planilha escrita em US32D e uma fábrica lendo SSS estão descrevendo a mesma peça e não deveriam ter de descobrir isso por correspondência.",
+    "Distância ao eixo é a distância da face da borda da porta até o centro do quadrado, e é determinada pela porta e não pela fechadura. Uma fechadura de 60 mm de eixo numa porta preparada para 45 mm não entra. Distância entre centros é o vão entre o quadrado e o cilindro, e é o que decide se a maçaneta e o furo da chave vão coincidir com os furos já feitos no espelho.",
+    "A mão é uma letra — esquerda, direita ou universal — e é tratada no seu próprio artigo porque as duas convenções em uso discordam. A espessura da porta é a que todos supõem padronizada e não é: os nossos registros trazem faixas como 35–45 mm ajustável e 35–50 mm, porque o quadrado e os parafusos de fixação têm um curso útil e uma porta de 60 mm está fora dele.",
+    "O que acontece quando falta um valor depende de qual deles. Um acabamento faltando atrasa a cotação. Uma distância ao eixo faltando atrasa o embarque, porque ela não é visível até a caixa ser encostada na porta — e a essa altura o contêiner já chegou. Essa assimetria é o argumento para escrever os seis na consulta em vez de só os que parecem importantes.",
+    "Dois dos seis frequentemente não são conhecidos na consulta, e dizer isso é uma resposta válida. \"Espessura da porta a confirmar\" é uma linha com que um engenheiro de exportação consegue trabalhar — ela sinaliza o risco e mantém o resto da cotação andando. Um espaço em branco não é a mesma coisa: um espaço em branco é preenchido por quem estiver com mais pressa.",
+    "O nosso seletor guiado pergunta quatro dos seis e devolve um modelo publicado com a sua especificação em vez de uma categoria, para que a referência possa ser colada direto numa planilha. Onde uma medida não está publicada para um modelo, a tabela de especificação mostra um travessão em vez de um número plausível — o travessão é uma pergunta para nós, e é mais barato fazê-la agora do que respondê-la na obra."
+  ],
+  "seoTitlePt": "Os seis valores de que um pedido de ferragem precisa",
+  "seoDescriptionPt": "Modelo, acabamento, distância ao eixo, entre centros, mão e espessura. Seis valores decidem se uma fechadura instala, e qual deles falta decide o tamanho do atraso."
 }

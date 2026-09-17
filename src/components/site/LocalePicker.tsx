@@ -43,7 +43,12 @@ import { contactChoices, languageChoices, localePickerCopy, triggerLabel } from 
  */
 export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
   const pathname = usePathname() || "/";
-  const text = localePickerCopy[locale === "es" ? "es" : "en"];
+  /*
+    Every locale gets its own copy. This read `locale === "es" ? "es" : "en"` until
+    2026-09-17, which rendered the Portuguese panel in English — the same hard-coded
+    two-language assumption that hid /pt/ from the language list entirely.
+  */
+  const text = localePickerCopy[locale];
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);

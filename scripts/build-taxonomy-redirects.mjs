@@ -18,12 +18,61 @@
  * Usage: node scripts/build-taxonomy-redirects.mjs [--check]
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const SOURCE = "content/taxonomy-moves.json";
 const OUT = "deploy/nginx/taxonomy-redirects.conf";
+const EXPORT = "out";
 
 const moves = JSON.parse(readFileSync(SOURCE, "utf8"));
+
+/**
+ * The locale mirrors, and why they get their own rules.
+ *
+ * ---------------------------------------------------------------------------
+ * ⚠ THIS FILE EMITTED ENGLISH-ONLY RULES UNTIL 2026-09-17
+ *
+ * Search Console's 404 export of that date has two rows crawled days earlier:
+ *
+ *     https://cantonlock.com/es/products/panic-exit-devices/72-panic-exit-device/   09-12
+ *     https://cantonlock.com/es/products/panic-exit-devices/030-panic-exit-device/  09-11
+ *
+ * Both are retired paths that the English side redirects correctly. The Spanish mirror
+ * 404'd them, because every rule here began `/products/` and nothing carried the prefix.
+ * Google had the Spanish URLs indexed — they are in the export — so a rename that was
+ * handled cleanly in one tree dropped two indexed pages in another.
+ *
+ * Portuguese shipped on 2026-09-16 and would have inherited the same hole.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THE DESTINATION IS VERIFIED AND NOT ASSUMED
+ *
+ * A redirect to a page that does not exist is worse than the 404 it replaces: it spends
+ * the crawler's budget and lands on a soft error instead of a hard one. The mirrors are
+ * not identical — Portuguese excludes /products/argentina-ar4, and a mirror can lag a
+ * rename by a build — so each rule is checked against the EXPORT before it is written.
+ * A destination that is not there is skipped and named in the run's output.
+ */
+const LOCALES = ["en", "es", "pt"];
+
+/** The URL prefix for a locale, and where its pages live in the export. */
+const prefixFor = (locale) => (locale === "en" ? "" : `/${locale}`);
+
+/**
+ * True when this path is a real page in the export.
+ *
+ * Checked against `out/` rather than against the catalogue data because the question is
+ * whether the SERVER will have something to serve, and that is decided by what was
+ * built. When the export is absent — a fresh checkout that has never run a build — the
+ * check cannot be made, and the generator says so rather than silently emitting rules
+ * nobody verified.
+ */
+function existsInExport(path) {
+  return existsSync(`${EXPORT}${path}index.html`);
+}
+
+const hasExport = existsSync(EXPORT);
+const skipped = [];
 
 const lines = [
   "# Cantonlock catalogue taxonomy redirects.",
@@ -36,19 +85,34 @@ const lines = [
   "",
 ];
 
-/** Both slash forms: Search Console has each of them indexed separately. */
+/**
+ * Both slash forms, in every locale whose destination exists.
+ *
+ * Search Console has each slash form indexed separately, and since 2026-09-17 each locale
+ * separately too — see the note at the top of this file.
+ */
 function rule(from, to) {
-  const bare = from.replace(/\/$/, "");
-  return [
-    `location = ${bare} {`,
-    `    return 301 ${to};`,
-    "}",
-    "",
-    `location = ${bare}/ {`,
-    `    return 301 ${to};`,
-    "}",
-    "",
-  ];
+  const out = [];
+  for (const locale of LOCALES) {
+    const prefix = prefixFor(locale);
+    const target = `${prefix}${to}`;
+    if (hasExport && !existsInExport(target)) {
+      skipped.push(`${prefix}${from} -> ${target} (destination not in the export)`);
+      continue;
+    }
+    const bare = `${prefix}${from}`.replace(/\/$/, "");
+    out.push(
+      `location = ${bare} {`,
+      `    return 301 ${target};`,
+      "}",
+      "",
+      `location = ${bare}/ {`,
+      `    return 301 ${target};`,
+      "}",
+      "",
+    );
+  }
+  return out;
 }
 
 for (const [alias, { canonical, productSlugs }] of Object.entries(moves.categoryAliases)) {
@@ -98,6 +162,20 @@ mkdirSync("deploy/nginx", { recursive: true });
 writeFileSync(OUT, conf);
 
 const ruleCount = (conf.match(/return 301/g) ?? []).length;
+if (!hasExport) {
+  console.log(
+    "⚠ out/ is not present, so no destination could be verified. " +
+      "Run a build and regenerate before installing these on the server.",
+  );
+}
+if (skipped.length) {
+  console.log(`\n⚠ ${skipped.length} rule(s) NOT written, destination missing:`);
+  for (const note of skipped) console.log(`    ${note}`);
+  console.log(
+    "  A redirect to a page that does not exist is worse than the 404 it replaces.\n",
+  );
+}
+
 console.log(
   `wrote ${OUT} — ${ruleCount} rules ` +
     `(${Object.keys(moves.categoryAliases).length} retired categories, ` +

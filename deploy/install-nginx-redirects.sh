@@ -168,14 +168,29 @@ while IFS='|' read -r path expect want; do
 # while this script reported "All redirects live" each time it ran.
 #
 # A verification that cannot fail for the file most likely to be wrong is decoration.
+#
+# ⚠ The /es/ and /pt/ checks were added 2026-09-17, from Search Console's 404 export.
+#
+# Two Spanish product URLs were 404ing — /es/products/panic-exit-devices/72-panic-exit-device/
+# crawled 09-12 and the 030 crawled 09-11 — because every taxonomy rule began /products/
+# and nothing carried the locale prefix. The English side had redirected them correctly
+# since the rename, so the site looked fixed from the only tree anybody checked.
+#
+# The lesson is the same one as the legacy checks above: a verification that only covers
+# the language you read is a verification that cannot fail where the defect lives.
 done <<'CHECKS'
 /products/deadbolts/ansi-grade-3-keyed-deadbolt-lock-set/|301
 /products/hardware-accessories/315-pry-latch/|301
 /products/grip-handle-sets/600-concealed-sliding-door-handle/|301
 /products/door-hinges/|301
+/es/products/panic-exit-devices/72-panic-exit-device/|301|/es/products/panic-exit-devices/072-panic-exit-device-lock-case/
+/es/products/panic-exit-devices/030-panic-exit-device/|301|/es/products/panic-exit-devices/030-panic-exit-device-trim/
+/pt/products/panic-exit-devices/72-panic-exit-device/|301|/pt/products/panic-exit-devices/072-panic-exit-device-lock-case/
+/index.asp|301|/
 /index.php|301|/
 /index.php?m=home&c=view&a=index&aid=397|301|/products/panic-exit-devices/x2-panic-exit-device-trim/
 /index.php?m=home&c=lists&a=index&tid=97|301|/products/lock-cases/
+/index.php?lang=es/|301|/es/
 CHECKS
 
 say ""

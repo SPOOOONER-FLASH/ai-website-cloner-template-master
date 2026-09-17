@@ -61,6 +61,14 @@ const DOCUMENTS = [
     md: "docs/research/2026-09-16-brazil-saga-portas.md",
     docx: "docs/collaboration/2026-09-16-巴西-SAGA-研究.docx",
   },
+  {
+    md: "docs/collaboration/2026-09-17-gsc-index-coverage.md",
+    docx: "docs/collaboration/2026-09-17-谷歌索引覆盖率-逐条结论.docx",
+  },
+  {
+    md: "docs/collaboration/2026-09-17-tooling-evaluation.md",
+    docx: "docs/collaboration/2026-09-17-工具清单评估.docx",
+  },
 ];
 
 /* ---------------------------------------------------------------- inline runs ----- */
