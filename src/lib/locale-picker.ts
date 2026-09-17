@@ -39,7 +39,7 @@ import { hasSpanishMirror } from "./spanish-mirror.ts";
 
 export interface LanguageChoice {
   /** BCP 47, for `lang` and `hreflang`. */
-  code: "en" | "es";
+  code: Locale;
   /** Endonym: a reader looking for their own language scans for their own word for it. */
   label: string;
   href: string;
@@ -161,6 +161,15 @@ export const localePickerCopy = {
     contacts: "Su contacto más cercano",
     close: "Cerrar",
     notMirrored: "lleva a la portada en español — esta página sólo existe en inglés",
+    current: "actual",
+  },
+  pt: {
+    trigger: "Escolha o seu país e idioma",
+    title: "Escolha o seu país e idioma",
+    languages: "Idioma",
+    contacts: "O seu contacto mais próximo",
+    close: "Fechar",
+    notMirrored: "leva à página inicial em português — esta página só existe em inglês",
     current: "actual",
   },
 } as const;

@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -36,6 +37,19 @@ const introCopy = {
       { label: "Conozca la empresa", href: "/es/company" },
     ],
   },
+  pt: {
+    welcome: "Barras antipânico, fechaduras e ferragens para portas",
+    title: "Fabricados em Guangdong desde 1998",
+    body: "A Canton Hyland fabrica ferragens para portas comerciais e residenciais desde 1998. Produzimos barras antipânico, fechaduras tubulares e cilíndricas, trincos, caixas de fechadura, cilindros, maçanetas e ferragens para vidro. ISO 9001 desde 2002.",
+    more: "Mais ligações",
+    company: "Canton Hyland Hardware\n(Group) Co., Ltd",
+    tagline: "Soluções completas para a indústria da construção",
+    links: [
+      { label: "Planeamento de obra", href: "/pt/products" },
+      { label: "Catálogo de produtos", href: "/pt/products" },
+      { label: "Conheça a empresa", href: "/pt/company" },
+    ],
+  },
 } as const;
 
 /**
@@ -54,7 +68,7 @@ export function WelcomeIntro({
   locale = "en",
   homeAccent = false,
 }: {
-  locale?: "en" | "es";
+  locale?: Locale;
   homeAccent?: boolean;
 }) {
   const [expanded, setExpanded] = useState(false);

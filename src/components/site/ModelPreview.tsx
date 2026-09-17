@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import { createElement, useEffect, useRef, useState } from "react";
 
@@ -6,7 +7,7 @@ interface ModelPreviewProps {
   src: string;
   model: string;
   orbit: string;
-  locale: "en" | "es";
+  locale: Locale;
 }
 
 export function ModelPreview({ src, model, orbit, locale }: ModelPreviewProps) {

@@ -1188,4 +1188,17 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Bathroom Accessories": "Accesorios de baño",
   "Grab Bar": "Barra de apoyo",
   "Flip-Up Grab Bar": "Barra de apoyo abatible",
+  /*
+    Added 2026-09-16, when the unmapped-name guard fired on the Kaiser import.
+    Only ONE was actually missing.
+
+    Three more went in with it — Deadbolts, Indicator, Latch — because the script that
+    looked for gaps matched `"Name":` and these are written as bare identifiers, so it
+    reported them absent when they were twenty lines up. TypeScript caught the duplicates
+    (TS1117), and the shadowing would have been the damaging kind: a later key wins in an
+    object literal, so `Indicador` would have replaced `Indicador de libre y ocupado` and
+    `Cerrojos` would have replaced `Cerrojo de seguridad`. A gap-finder that cannot see
+    half the file is worse than none.
+  */
+  "Door Knob": "Pomo de puerta",
 };

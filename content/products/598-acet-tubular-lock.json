@@ -85,5 +85,110 @@
     "functionFrom": "suffix ET",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Fechadura tubular",
+  "summaryPt": "Fechadura tubular em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latão"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Cobre antigo (US11)"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm / 70 mm ajustável"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Chassi e caixa da lingueta em aço maciço, zincados"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Aço inoxidável laminado ou latão"
+    },
+    {
+      "label": "Contra-testa",
+      "value": "Lábio curvo de 57 mm de série; 70 mm sob pedido"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Função",
+      "value": "Entrada — com chave pelo lado de fora"
+    }
+  ],
+  "seoTitlePt": "598 ACET Fechadura tubular | Canton Hyland",
+  "seoDescriptionPt": "Fechadura tubular 598 ACET da Canton Hyland — fechaduras de pomo. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Cerradura tubular de acero inoxidable.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latón"
+    },
+    {
+      "label": "Acabado",
+      "value": "Cobre antiguo (US11)"
+    },
+    {
+      "label": "Entrada",
+      "value": "60mm / 70mm adjustable"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35mm to 45mm adjustable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Chasis y caja de picaporte de acero macizo, zincados"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Acero inoxidable forjado o latón"
+    },
+    {
+      "label": "Cerradero",
+      "value": "Cerradero curvo de 57 mm de serie; 70 mm bajo pedido"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
+    }
+  ]
 }

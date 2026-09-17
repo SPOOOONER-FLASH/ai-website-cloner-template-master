@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
+import { hasPortugueseMirror } from "@/lib/spanish-mirror";
 import { isoUploadDate } from "@/lib/upload-date";
 import { getTopLevelCategories } from "@/data/categories";
 import {
@@ -84,11 +85,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
     const en = absoluteUrl(`${clean}/`);
     const es = absoluteUrl(`/es${clean}/`);
+    const pt = absoluteUrl(`/pt${clean}/`);
 
     return buildLocaleSitemapEntries({
       en,
       es,
+      pt,
       bilingual: hasSpanishMirror(path),
+      portuguese: hasPortugueseMirror(path),
       priority,
       changeFrequency,
       lastModified,
@@ -254,6 +258,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       new Date(article.publishedAt),
     ));
   }
+
+  /*
+    The Portuguese landing page, added 2026-09-16 for the Brazilian market.
+
+    Pushed as a bare entry rather than through `entry()`, because every other URL here is
+    half of an English/Spanish pair and this one is neither: there is no English twin to
+    declare as an alternate and no Spanish mirror to point at. Giving it hreflang links to
+    pages that are not translations of it would tell Google the opposite of the truth.
+
+    When Portuguese becomes a section rather than a page, this becomes a loop and
+    buildLocaleSitemapEntries grows a third locale. One page does not justify that yet.
+  */
+  urls.push({
+    url: absoluteUrl("/pt/ferragens-porta-corta-fogo/"),
+    /*
+      No lastModified, deliberately. `audit-seo` rejects a <lastmod> on a page with no
+      tracked content date — it flagged this entry as `sitemap-lastmod-untracked` on the
+      first build — and it is right: a landing page has no publication date in the content
+      model, so any date here would be a number we invented and then had to keep true.
+    */
+    changeFrequency: "monthly",
+    priority: PRIORITY.support,
+  });
 
   return urls;
 }

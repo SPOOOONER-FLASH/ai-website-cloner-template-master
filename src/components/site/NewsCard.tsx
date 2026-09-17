@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
 import { NewsVisual } from "./NewsVisual";
+import type { Locale } from "@/data/site";
 
 /**
  * Listing card. Image on top, text below — the arrangement FSB uses on /en/press.
@@ -16,7 +17,7 @@ export function NewsCard({
   locale = "en",
 }: {
   article: NewsArticle;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const es = locale === "es";
   const base = es ? "/es" : "";

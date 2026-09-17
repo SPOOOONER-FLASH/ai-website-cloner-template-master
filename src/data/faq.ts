@@ -1,4 +1,5 @@
 import faq from "../../content/faq.json";
+import type { Locale } from "@/data/site";
 
 /**
  * The FAQ.
@@ -38,7 +39,7 @@ export const faqGroups = faq.groups as FaqGroup[];
  * checks exactly that (`jsonld-faq-answer-not-visible`), and it would fail the moment the
  * two diverged.
  */
-export function getAnsweredFaq(locale: "en" | "es" = "en"): FaqGroup[] {
+export function getAnsweredFaq(locale: Locale = "en"): FaqGroup[] {
   const es = locale === "es";
   return faqGroups
     .map((group) => ({

@@ -49,6 +49,14 @@ const COPY = {
     more: (n: number) => `Se muestran los primeros ${MAX_ROWS} de ${n} modelos — abra un producto para su tabla completa.`,
     openCompare: "Abrir la página de comparación",
   },
+  pt: {
+    heading: "Comparar modelos desta gama",
+    intro:
+      "As especificações que distinguem um modelo de outro, lado a lado. Uma célula vazia significa que ainda não publicámos esse dado para esse modelo.",
+    model: "Modelo",
+    more: (n: number) => `Mostrados os primeiros ${MAX_ROWS} de ${n} modelos — abra um produto para a sua tabela completa.`,
+    openCompare: "Abrir a página de comparação",
+  },
 } as const;
 
 /** Labels that describe the whole category rather than distinguishing inside it. */

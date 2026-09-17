@@ -112,7 +112,9 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
 export function buildLocaleSitemapEntries({
   en,
   es,
+  pt,
   bilingual,
+  portuguese = false,
   priority,
   changeFrequency = "monthly",
   lastModified,
@@ -121,7 +123,10 @@ export function buildLocaleSitemapEntries({
 }: {
   en: string;
   es: string;
+  /** The Portuguese URL. Only emitted when `portuguese` says the page exists. */
+  pt?: string;
   bilingual: boolean;
+  portuguese?: boolean;
   priority: number;
   changeFrequency?: SitemapChangeFrequency;
   lastModified?: Date;
@@ -156,11 +161,21 @@ export function buildLocaleSitemapEntries({
     priority,
   };
 
-  if (!bilingual) return [{ url: en, ...shared }];
+  if (!bilingual && !portuguese) return [{ url: en, ...shared }];
 
-  const languages = { en, es, "x-default": en };
-  return [
-    { url: en, ...shared, alternates: { languages } },
-    { url: es, ...shared, alternates: { languages } },
-  ];
+  /*
+    The alternate set is built from the locales that EXIST for this path, not from a fixed
+    pair. Portuguese arrived on 2026-09-16 as a partial mirror, so most paths are en+es and
+    some are en+es+pt — and listing pt on a path with no Portuguese page would put a 404 in
+    every sitemap entry for that path, in all three languages at once.
+
+    Every URL in the group carries the same `languages` map, which is what makes the
+    cluster reciprocal: a crawler that finds any one of them finds the others.
+  */
+  const languages: Record<string, string> = { en, "x-default": en };
+  if (bilingual) languages.es = es;
+  if (portuguese && pt) languages.pt = pt;
+
+  const urls = [en, ...(bilingual ? [es] : []), ...(portuguese && pt ? [pt] : [])];
+  return urls.map((url) => ({ url, ...shared, alternates: { languages } }));
 }

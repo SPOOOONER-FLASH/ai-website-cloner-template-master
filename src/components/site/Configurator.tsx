@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import Link from "next/link";
 import { CatalogueProductLink } from "./CatalogueNavigation";
@@ -53,7 +54,7 @@ import {
 
 interface ConfiguratorProps {
   products: FinderProduct[];
-  locale?: "en" | "es";
+  locale?: Locale;
 }
 
 const COPY = {
@@ -100,6 +101,28 @@ const COPY = {
     schedule: "Su especificación hasta aquí",
     scheduleHelp:
       "Esta es la línea que va en una relación de puertas. Se completa a medida que responde, y puede copiarla tal cual.",
+  },
+  pt: {
+    restart: "Começar de novo",
+    back: "Alterar",
+    matchOne: "1 modelo corresponde",
+    matchMany: (n: number) => `${n} modelos correspondem`,
+    narrowing: (n: number) => `${n} ${n === 1 ? "produto" : "produtos"}`,
+    unitOne: "produto",
+    unitMany: "produtos",
+    nothingMatches: "Nenhum modelo corresponde a esta combinação.",
+    seeProduct: "Abrir a ficha do produto",
+    quote: "Pedir orçamento desta configuração",
+    quoteHelp:
+      "O link leva as suas escolhas, para que a equipa de exportação veja a mesma configuração que você.",
+    yourChoices: "A sua seleção",
+    allProducts: "Todos os modelos do catálogo",
+    step: "Passo",
+    of: "de",
+    noPhoto: "A fotografia deste modelo está a ser preparada.",
+    schedule: "A sua especificação até aqui",
+    scheduleHelp:
+      "Esta é a linha que vai num quadro de ferragens. Preenche-se à medida que responde, e pode copiá-la tal como está.",
   },
 } as const;
 

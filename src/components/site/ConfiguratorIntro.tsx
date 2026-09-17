@@ -59,6 +59,22 @@ const COPY = {
     shortcutLink: "Filtre el catálogo directamente",
     reassure: "Sin cuenta, sin correo, nada se guarda. Cambie cualquier respuesta y la lista se rehace.",
   },
+  pt: {
+    lede: "Algumas perguntas sobre a porta e o catálogo reduz-se aos modelos que servem. Todas as opções mostradas levam a algum lado: não é possível chegar a um resultado vazio.",
+    stepsLabel: "perguntas sobre o vão",
+    modelsLabel: "modelos entre os quais escolher",
+    outValue: "Um número de modelo",
+    outNote: "com a sua entrada, distância entre eixos, acabamento e mão: os seis valores de que um pedido precisa.",
+    how: "Como funciona",
+    steps: [
+      ["Responda só ao que se aplica", "Cada resposta elimina os modelos que não podem ser instalados nessa porta. As opções que não levariam a nada não são oferecidas."],
+      ["Veja a contagem descer", "O número de modelos compatíveis actualiza-se à medida que responde, para ver quanto cada escolha decide de facto."],
+      ["Termine com um número de modelo", "O resultado é um modelo publicado com a sua ficha, não uma categoria: pronto a colar numa consulta ou num quadro de ferragens."],
+    ],
+    shortcut: "Já sabe o que precisa?",
+    shortcutLink: "Filtre o catálogo directamente",
+    reassure: "Sem conta, sem e-mail, nada é guardado. Mude qualquer resposta e a lista refaz-se.",
+  },
 } as const;
 
 export function ConfiguratorIntro({ locale = "en" }: { locale?: Locale }) {

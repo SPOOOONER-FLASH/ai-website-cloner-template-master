@@ -2,6 +2,7 @@ import Link from "next/link";
 import { publishedProducts } from "@/data/products";
 import rawStudies from "@/data/generated/product-studies.json";
 import studioStudies from "@/data/studio-studies.json";
+import type { Locale } from "@/data/site";
 
 /**
  * The generated studies, with the caption fields declared optional.
@@ -31,7 +32,7 @@ interface ProductStudy {
 
 const studies = [...studioStudies, ...rawStudies] as ProductStudy[];
 
-export function ProductStudies({ locale }: { locale: "en" | "es" }) {
+export function ProductStudies({ locale }: { locale: Locale }) {
   const es = locale === "es";
   const prefix = es ? "/es" : "";
   return (

@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 import { CapabilityChain } from "./CapabilityChain";
 import { representatives } from "@/data/representatives";
@@ -13,9 +14,6 @@ import {
 } from "@/data/company";
 import { siteSettings } from "@/data/navigation";
 import { EmailLink } from "./EmailLink";
-
-type Locale = "en" | "es";
-
 const copy = {
   en: {
     eyebrow: "Canton Hyland",
@@ -60,6 +58,28 @@ const copy = {
     cta: "Hablemos de su proyecto o de una visita a fábrica",
     contact: "Contactar con exportación",
     writeDirect: "O escríbanos directamente:",
+  },
+  pt: {
+    eyebrow: "Canton Hyland",
+    title: "Fabricação de ferragens desde 1998",
+    intro: "Segurança para portas, ferragens arquitetónicas e produção OEM para obras internacionais.",
+    facts: "A empresa em números",
+    where: "Onde estamos",
+    context: "Materiais + contexto técnico",
+    contextBody:
+      "A nossa fábrica em Zhongshan, Guangdong: a secção de prensas, a linha de polimento e a nave de montagem. São fotografias da unidade, não estudos editoriais.",
+    contextImageNote: "Fotografia da fábrica",
+    gallery: "A fábrica",
+    quality: "Qualidade e ensaios",
+    qualityBody:
+      "Cada documento é apresentado com o âmbito exacto indicado no relatório. Um ensaio de um modelo não é apresentado como aprovação de outro; confirme a cobertura do modelo antes de o especificar.",
+    scope: "Âmbito",
+    issuer: "Emissor",
+    reference: "Referência",
+    issued: "Emissão",
+    cta: "Falemos da sua obra ou de uma visita à fábrica",
+    contact: "Contactar a equipa de exportação",
+    writeDirect: "Ou escreva-nos directamente:",
   },
 } as const;
 

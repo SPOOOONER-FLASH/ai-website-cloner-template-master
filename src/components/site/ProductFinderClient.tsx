@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import dynamic from "next/dynamic";
 import type { FinderProduct } from "@/lib/product-finder";
@@ -30,7 +31,7 @@ const ProductFinder = dynamic(
 export function ProductFinderClient(props: {
   products: FinderProduct[];
   categoryNames: Record<string, string>;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   return <ProductFinder {...props} />;
 }

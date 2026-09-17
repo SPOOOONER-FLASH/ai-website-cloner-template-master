@@ -128,26 +128,61 @@ export const certificates: CertificateRecord[] = [
 ];
 
 /**
- * Representative editorial studies used for atmosphere only. These are not
- * documentary photographs of Canton Hyland facilities or completed projects.
+ * The factory. Three photographs of the actual plant, not atmosphere.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS CHANGED ON 2026-09-16
+ *
+ * This rail used to hold three editorial studies — an architectural material library, a
+ * timber-and-limestone junction, and a tray of precision-machined blocks — captioned
+ * "Representative…" because that is what they were. The client's own verdict, on being
+ * asked whether the site could be shown to a Brazilian buyer:
+ * 「目前的确实不像样子，几个 ai 图」.
+ *
+ * He is right, and the machined-blocks image was the worst of the three for a reason
+ * AGENTS.md states outright: a heavy-industrial frame beside light door hardware "reads as
+ * a catalogue somebody assembled from stock images". A tray of V-blocks and bushings does
+ * not show that we make locks. It raises the question of whether we do.
+ *
+ * ---------------------------------------------------------------------------
+ * WHAT THESE ARE, AND WHY THE CAPTIONS CHANGED SHAPE
+ *
+ * All three are client-supplied photographs of the plant — `press-shop.webp`,
+ * `polishing-line.webp` and `assembly-line.webp`, from 公司图 1/2/3.jpg, registered in
+ * IMAGE_CREDITS.md under first-party material. They are phone-camera pictures with mixed
+ * colour temperature and no styling, and that is the argument rather than a defect: a
+ * buyer deciding whether to put their own brand on our product is looking for evidence of
+ * a process, not for a mood.
+ *
+ * So the captions say what is in the frame instead of hedging. "Representative study" was
+ * required while the images were generated; it would be false modesty here, and it would
+ * throw away the one thing these photographs are for. The generated set stays available
+ * for architectural context elsewhere and keeps its hedged wording — see IMAGE_CREDITS.md,
+ * which forbids "our factory" for those files and permits it for these.
  */
 export const companyEditorialStudies: ImageRef[] = [
   {
-    src: "/images/editorial/home-material-library.webp",
+    src: "/images/company/press-shop.webp",
     ratio: "3 / 2",
-    label: "Representative architectural material-library study in limestone, brushed metal, bronze and oak",
-    labelEs: "Estudio representativo de una biblioteca de materiales con piedra caliza, metal cepillado, bronce y roble",
+    label:
+      "Our press shop: a row of mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped",
+    labelEs:
+      "Nuestra sección de prensas: una fila de prensas mecánicas con su utillaje montado, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas",
   },
   {
-    src: "/images/editorial/home-design-context.webp",
+    src: "/images/company/polishing-line.webp",
     ratio: "3 / 2",
-    label: "Representative architectural junction study in timber, limestone and metal",
-    labelEs: "Estudio arquitectónico representativo de encuentros entre madera, piedra caliza y metal",
+    label:
+      "Our polishing line, with its extraction ducting overhead — the stage that decides whether a satin finish is even across a whole production run",
+    labelEs:
+      "Nuestra línea de pulido, con su extracción aérea — la etapa que decide si un acabado satinado es uniforme en toda una serie de producción",
   },
   {
-    src: "/images/editorial/industrial-precision-parts.webp",
+    src: "/images/company/assembly-line.webp",
     ratio: "3 / 2",
-    label: "Representative editorial study of precision-machined metal forms",
-    labelEs: "Estudio editorial representativo de formas metálicas mecanizadas con precisión",
+    label:
+      "Our assembly hall: operators building and bagging sets at the benches, with finished goods palletised behind them",
+    labelEs:
+      "Nuestra nave de montaje: operarios montando y embolsando juegos en los puestos, con producto terminado paletizado detrás",
   },
 ];

@@ -1,6 +1,7 @@
 import navigation from "../../content/navigation.json";
 import settings from "../../content/site-settings.json";
 import { localisedHref } from "../lib/spanish-mirror";
+import type { Locale } from "@/data/site";
 
 /**
  * Navigation and site settings, editable from the CMS.
@@ -103,7 +104,7 @@ export const siteSettings = settings as SiteSettings;
  * Falling back rather than hiding is deliberate: a menu that silently loses an item
  * because nobody translated it is worse than one that shows the English word.
  */
-export function navLabel(link: NavLink, locale: "en" | "es"): string {
+export function navLabel(link: NavLink, locale: Locale): string {
   return locale === "es" ? (link.labelEs ?? link.label) : link.label;
 }
 

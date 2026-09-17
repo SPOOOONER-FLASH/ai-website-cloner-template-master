@@ -60,6 +60,13 @@ const PREP_COPY = {
     caution:
       "Solo posiciones de taladro — no es un plano de contorno del producto. Confirme el espesor de la puerta y el material que va a taladrar antes de cortar.",
   },
+  pt: {
+    heading: "Preparação da porta",
+    pattern: (diameter: number, centres: number) =>
+      `Dois furos de Ø${diameter} mm a ${centres} mm entre eixos.`,
+    caution:
+      "Apenas posições de furação — não é o contorno do produto. Confirme a espessura da porta e o material que vai furar antes de cortar.",
+  },
 } as const;
 
 const COPY = {
@@ -77,6 +84,13 @@ const COPY = {
     partialNote: "El contorno de la caja no está publicado; solo se dibujan las cotas indicadas.",
     scale: "Dibujado a escala 1:1 según la ficha publicada",
     open: "Abrir a tamaño completo",
+  },
+  pt: {
+    heading: "Desenho cotado",
+    partial: "Detalhe dos trincos",
+    partialNote: "O contorno da caixa não está publicado; só são desenhadas as cotas indicadas.",
+    scale: "Desenhado à escala 1:1 a partir da ficha publicada",
+    open: "Abrir em tamanho completo",
   },
 } as const;
 

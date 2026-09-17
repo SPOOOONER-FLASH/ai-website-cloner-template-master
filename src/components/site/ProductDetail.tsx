@@ -136,6 +136,55 @@ const COPY = {
     storefrontHelp:
       "Abre nuestra tienda con este modelo ya buscado; Alibaba gestiona el pago, el seguimiento y Trade Assurance.",
   },
+  pt: {
+    model: "Modelo",
+    specifications: "Ficha técnica",
+    configuration: "Configuração",
+    certifications: "Normas e certificações",
+    downloads: "Descarregáveis",
+    nextSteps: "Passos seguintes",
+    compareRange: "Comparar todos os modelos desta gama",
+    compareHelp:
+      "Uma tabela, uma linha por modelo, com as especificações que os distinguem.",
+    faqLink: "Encomendas, prazos e amostras",
+    faqHelp:
+      "Quantidade mínima, prazo de produção, política de amostras, condições de pagamento e trabalho OEM — respondido em detalhe.",
+    material: "Material",
+    finishes: "Acabamentos disponíveis",
+    doorTypes: "Tipos de porta compatíveis",
+    onRequest: "Informação disponível mediante pedido",
+    referenceOnRequest: "Referência disponível mediante pedido",
+    quote: "Pedir orçamento",
+    downloadCatalogue: "Descarregar o catálogo de exportação (PDF)",
+    images: "Imagens do produto",
+    watch: "Veja funcionar",
+    breadcrumb: "Trilho de navegação",
+    orEmail: "Ou escreva-nos sobre este modelo:",
+    home: "Início",
+    products: "Produtos",
+    backToResults: "← Voltar aos resultados anteriores",
+    ask: "Falar com um engenheiro",
+    viewCertificate: "Ver certificado",
+    noViews:
+      "Ainda não há mais vistas deste produto. Peça desenhos ou amostras à equipa de exportação.",
+    noSpecs:
+      "As dimensões verificadas estão pendentes do catálogo técnico actual. Nenhum valor foi inferido a partir de produtos semelhantes.",
+    noCertificates:
+      "Não há certificado próprio deste modelo. As credenciais da empresa continuam disponíveis através da equipa de exportação.",
+    noDownloads:
+      "Fichas técnicas, ficheiros CAD e instruções de instalação disponíveis mediante pedido enquanto a biblioteca de descarregáveis é preparada.",
+    scope:
+      "Antes de especificar, verifique que o âmbito do certificado inclui o modelo indicado.",
+    related: "Produtos relacionados",
+    moreInSeries: "Mais modelos da série {series}",
+    moreInCategory: "Mais modelos em {category}",
+    orderListing: "Comprar {model} no Alibaba",
+    findStorefront: "Procurar {model} na nossa loja Alibaba",
+    listingHelp:
+      "Abre a ficha deste modelo com o preço, a quantidade mínima e o prazo actuais.",
+    storefrontHelp:
+      "Abre a nossa loja com este modelo já procurado; o Alibaba trata do pagamento, do seguimento e do Trade Assurance.",
+  },
 } as const;
 
 function EmptyState({ children }: { children: React.ReactNode }) {
@@ -177,7 +226,15 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const referenceModel = productModelFor(product.slug);
   const name = (es && product.nameEs) || product.name;
   const summary = (es && product.summaryEs) || product.summary;
-  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs) ?? [];
+  /*
+    Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
+    on every Portuguese page while the title beside it was Portuguese — the page looked
+    translated and the specification was not, which is the one thing on a product page that
+    has to be right. Picking by locale, with English as the fallback, fixes it for every
+    locale added after this one too.
+  */
+  const localeSpecs = locale === "es" ? product.specsEs : locale === "pt" ? product.specsPt : undefined;
+  const specs = (localeSpecs?.length ? localeSpecs : product.specs) ?? [];
   const base = es ? "/es" : "";
   const heroImage = {
     ...product.heroImage,

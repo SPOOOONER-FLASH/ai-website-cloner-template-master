@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
@@ -165,7 +166,7 @@ export function websiteSchema(): WithContext<WebSite> {
 export function productSchema(
   product: Product,
   url: string,
-  locale: "en" | "es" = "en",
+  locale: Locale = "en",
   categoryName?: string,
 ): WithContext<SchemaProduct> {
   const es = locale === "es";
@@ -271,7 +272,7 @@ function videoObjects(product: Product) {
 export function newsArticleSchema(
   article: NewsArticle,
   url: string,
-  locale: "en" | "es" = "en",
+  locale: Locale = "en",
 ): WithContext<SchemaNewsArticle | SchemaTechArticle> {
   const images = [article.heroImage, ...(article.gallery ?? [])]
     .map((image) => image.src)
@@ -337,7 +338,7 @@ export function NewsArticleJsonLd({
   locale = "en",
 }: {
   article: NewsArticle;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const path = locale === "es" ? `/es/news/${article.slug}/` : `/news/${article.slug}/`;
   return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
@@ -388,7 +389,7 @@ export function ProductFaqJsonLd({
   locale = "en",
 }: {
   product: Product;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const items = productFaqItems(product, locale);
   if (!items.length) return null;
@@ -413,7 +414,7 @@ export function ProductFaqJsonLd({
  * FAQPage whose answers do not appear on the page as a spam signal, so the two must not
  * be allowed to drift apart.
  */
-export function FaqJsonLd({ locale = "en" }: { locale?: "en" | "es" } = {}) {
+export function FaqJsonLd({ locale = "en" }: { locale?: Locale } = {}) {
   /*
     Same call the page makes, with the same locale. The audit asserts every answer in this
     markup is visible in the rendered text; emitting English answers beside a Spanish page

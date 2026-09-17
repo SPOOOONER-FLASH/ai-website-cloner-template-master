@@ -1,5 +1,6 @@
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
+import type { Locale } from "@/data/site";
 
 /*
   Applications, not projects.
@@ -28,9 +29,15 @@ const copy = {
       "Qué contiene realmente un cuadro de puertas, por tipo de edificio —qué cerradura, qué manija, qué cierrapuertas, y dónde va cada pieza en la hoja.",
     note: "Fabricamos bajo la marca de nuestros clientes, así que los edificios donde se instalan nuestros herrajes no son nuestros para nombrarlos. Estas páginas muestran las combinaciones, no los clientes: cada modelo que aparece es nuestro y está publicado, de modo que puede cotizar el cuadro completo a partir de ellos.",
   },
+  pt: {
+    title: "Aplicações",
+    intro:
+      "O que um quadro de ferragens contém de facto, por tipo de edifício — que fechadura, que maçaneta, que mola, e onde vai cada peça na folha.",
+    note: "Fabricamos sob a marca dos nossos clientes, por isso os edifícios onde as nossas ferragens são instaladas não são nossos para nomear. Estas páginas mostram as combinações, não os clientes: cada modelo que aparece é nosso e está publicado, de modo que pode orçamentar o quadro completo a partir deles.",
+  },
 } as const;
 
-export function ProjectListing({ locale = "en" }: { locale?: "en" | "es" }) {
+export function ProjectListing({ locale = "en" }: { locale?: Locale }) {
   const text = copy[locale];
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">

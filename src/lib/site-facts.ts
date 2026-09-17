@@ -74,6 +74,14 @@ const COPY = {
     quality: "sistema de calidad",
     workforce: "personas en planta",
   },
+  pt: {
+    models: "fichas de produto verificadas",
+    families: "categorias de catálogo",
+    withVideo: "modelos com vídeo de demonstração",
+    founded: "a fabricar desde",
+    quality: "sistema de qualidade",
+    workforce: "pessoas na fábrica",
+  },
 } as const;
 
 /** A stat from company.ts, or null — never a placeholder. */

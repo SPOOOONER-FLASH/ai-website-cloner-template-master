@@ -1,13 +1,14 @@
 import Link from "next/link";
 import type { Project } from "@/data/types";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import type { Locale } from "@/data/site";
 
 export function ProjectCard({
   project,
   locale = "en",
 }: {
   project: Project;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const spanish = locale === "es";
   const name = spanish ? project.nameEs ?? project.name : project.name;

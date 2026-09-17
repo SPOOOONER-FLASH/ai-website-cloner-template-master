@@ -1,4 +1,5 @@
 import type { FinderProduct } from "./product-finder";
+import type { Locale } from "@/data/site";
 
 /**
  * The narrowing model behind the guided configurator.
@@ -507,7 +508,7 @@ export const OPTION_NOTES_ES: Record<string, string> = {
     "Barra de apoyo fija a la pared, recta o en L, dimensionada según el alcance entre el inodoro y el muro.",
 };
 
-export function noteFor(value: string, locale: "en" | "es" = "en"): string | undefined {
+export function noteFor(value: string, locale: Locale = "en"): string | undefined {
   return locale === "es" ? OPTION_NOTES_ES[value] : OPTION_NOTES[value];
 }
 

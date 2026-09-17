@@ -69,7 +69,40 @@ const REAL_PHOTOGRAPH_KINDS = [
 const DOCUMENTED_FACTORY_PHOTOGRAPHS = [
   "factory-cnc-machining.webp",
   "assembly-line.webp",
+  /*
+    Added 2026-09-16, when the company overview stopped using generated architectural
+    studies and started using the plant. Their evidence is IMAGE_CREDITS.md rather than the
+    preview README — the first-party register lists all three of `press-shop.webp`,
+    `polishing-line.webp` and `assembly-line.webp` against their originals 公司图 1/2/3.jpg
+    at 1308×872, and describes the set as "genuine factory photography and it reads as
+    real, which is the point".
+
+    assembly-line was already here; its two siblings were not, only because the list had
+    been built from one document and their record is in another. Leaving that be would have
+    shipped a three-image rail where one carries the mark and two do not.
+  */
+  "press-shop.webp",
+  "polishing-line.webp",
 ];
+
+/*
+  ⚠ UNRESOLVED, 2026-09-16: `factory-cnc-machining.webp` has two provenance records and
+  they disagree.
+
+  The preview README calls it a "real Canton Hyland CNC photograph — approved edit removes
+  only the old oval mark". IMAGE_CREDITS.md lists it in the generated-asset table, sourced
+  from a hash-named PNG (`423b1423….png`, 1776×1184), with the note "Accept for demo;
+  verify authenticity".
+
+  Those cannot both be true, and the consequence is not cosmetic: this file carries the
+  HYDE mark, and on this catalogue the mark means "this is ours". Stamping it on a
+  generated picture of a factory floor is the same class of claim the whole image rule
+  exists to prevent, one step removed from the product.
+
+  It is left marked rather than quietly dropped, because dropping it would hide the
+  question. Somebody has to ask the client which record is right. It is on the list in
+  docs/research/2026-09-16-brazil-saga-portas.md.
+*/
 
 /**
  * What the file's own sidecar says it is.

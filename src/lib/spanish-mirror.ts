@@ -1,3 +1,4 @@
+import type { Locale } from "../data/locales.ts";
 /**
  * Which English paths have a Spanish twin.
  *
@@ -89,7 +90,74 @@ export function hasSpanishMirror(enPath: string): boolean {
  * Where no Spanish route exists the English href is returned unchanged — a Spanish
  * reader gets the English page rather than a 404.
  */
-export function localisedHref(href: string, locale: "en" | "es"): string {
+export function localisedHref(href: string, locale: Locale): string {
   if (locale === "en") return href;
+  if (locale === "pt") return hasPortugueseMirror(href) ? `/pt${href}` : href;
   return hasSpanishMirror(href) ? `/es${href}` : href;
+}
+
+/**
+ * Which English paths have a Portuguese twin.
+ *
+ * ---------------------------------------------------------------------------
+ * A SEPARATE LIST, NOT A SHARED ONE
+ *
+ * The obvious move when Portuguese arrived was to rename this module and have one list of
+ * "mirrored paths" for both locales. That would be wrong for exactly the reason the
+ * Spanish list exists: an hreflang pointing at a 404 is worse than no hreflang, Search
+ * Console reports it, and it can discount the whole language cluster. Spanish and
+ * Portuguese are at different stages and will be for a while, so they need to be able to
+ * disagree about which routes exist.
+ *
+ * Portuguese started on 2026-09-16 from a Brazilian enquiry (SAGA Portas, São Paulo). The
+ * order below is the buying path, not the sitemap: a buyer arrives on the catalogue, wants
+ * to know what we can document, and then asks about quantities and lead time.
+ */
+const PORTUGUESE_MIRROR_PREFIXES = [
+  "/",
+  /* The catalogue. This is where the 96% translated product data actually shows. */
+  "/products",
+  /* What a compliance-driven buyer reads before naming us in a tender. */
+  "/certifications",
+  /* Minimum order, lead time, samples, payment, OEM — the page that lets business start. */
+  "/faq",
+  "/company",
+  "/contact",
+  /* The comparison tables and the sub-category collections: both render from product data,
+     which is already Portuguese, so the marginal cost was one route each. */
+  "/compare",
+  "/collections",
+  /* The order-code reference. A Brazilian specifier writes finish codes in ours. */
+  "/finishes",
+  "/model-lookup",
+  "/glossary",
+];
+
+/**
+ * Paths that a prefix above would otherwise claim, and which have no Portuguese route.
+ *
+ * `/products` covers the catalogue, and `/products/argentina-ar4` is not part of it — it is
+ * a market collection for Argentina with its own route, built in English and Spanish only.
+ * The prefix match said otherwise, so every product page advertised a Portuguese alternate
+ * at a URL that does not exist. `audit-seo` caught it as `hreflang-target-missing`, which
+ * is exactly the error hreflang is punished for.
+ */
+const PORTUGUESE_MIRROR_EXCEPTIONS = new Set(["/products/argentina-ar4"]);
+
+/** True when the given ENGLISH path also exists under /pt. */
+export function hasPortugueseMirror(enPath: string): boolean {
+  const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
+  if (clean === "/") return true;
+  if (PORTUGUESE_MIRROR_EXCEPTIONS.has(clean)) return false;
+  return PORTUGUESE_MIRROR_PREFIXES.some(
+    (prefix) => prefix !== "/" && (clean === prefix || clean.startsWith(`${prefix}/`)),
+  );
+}
+
+/** Every locale whose mirror of this English path exists. Always includes "en". */
+export function mirrorsOf(enPath: string): Locale[] {
+  const locales: Locale[] = ["en"];
+  if (hasSpanishMirror(enPath)) locales.push("es");
+  if (hasPortugueseMirror(enPath)) locales.push("pt");
+  return locales;
 }

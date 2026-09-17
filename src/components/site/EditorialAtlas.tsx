@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import styles from "./EditorialCatalogue.module.css";
+import type { Locale } from "@/data/site";
 
 // Existing catalogue photographs, composed in HTML without redrawing any product.
 export const atlasSubjects = [
@@ -14,7 +15,7 @@ export const atlasSubjects = [
   ["flush", "/images/products-hyde/600-concealed-sliding-door-handle.webp", "600-concealed-sliding-door-handle", "600", "stainless-steel-handles"],
 ] as const;
 
-export function EditorialAtlas({ locale, priority = false, onNavigate }: { locale: "en" | "es"; priority?: boolean; onNavigate?: () => void }) {
+export function EditorialAtlas({ locale, priority = false, onNavigate }: { locale: Locale; priority?: boolean; onNavigate?: () => void }) {
   return <div className={styles.atlas}>
     {atlasSubjects.map(([position, image, slug, model, category]) => (
       <Link key={slug} href={`${locale === "es" ? "/es" : ""}/products/${category}/${slug}/`}

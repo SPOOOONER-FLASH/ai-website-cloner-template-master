@@ -5,6 +5,16 @@ const TITLE = { min: 30, max: 62 };
 const DESCRIPTION = { min: 70, max: 165 };
 const NON_PUBLIC_ROUTES = new Set(["/admin/", "/status/", "/404/", "/_not-found/"]);
 
+/**
+ * Path prefixes that name a locale rather than a page. Mirrors src/data/locales.ts minus
+ * "en", which has no prefix of its own.
+ *
+ * Kept as a literal rather than imported: this module is plain .mjs and runs before the
+ * TypeScript build, so it cannot read the source of truth. It is two strings, and the lang
+ * check below is the only thing that consults it.
+ */
+const LOCALE_PREFIXES = new Set(["es", "pt"]);
+
 function decodeHtml(value = "") {
   return value
     .replace(/&amp;/gi, "&")
@@ -366,7 +376,19 @@ export function auditBuild({ outDir }) {
       addIssue(page, "canonical-invalid", canonical || "Missing canonical URL");
     }
 
-    const expectedLanguage = page.route === "/es/" || page.route.startsWith("/es/") ? "es" : "en";
+    /*
+      The locale is the first path segment, not a two-way test.
+
+      This read `route.startsWith("/es/") ? "es" : "en"`, so the day the Portuguese tree
+      shipped every one of its 2,889 pages was reported as a lang mismatch — the audit was
+      asserting that anything outside /es must be English. Deriving the prefix instead means
+      the next locale needs no change here at all.
+
+      Only the primary subtag is compared below, so `pt-BR` satisfies `pt`; the region is a
+      deliberate choice made in the layout and not this check's business.
+    */
+    const prefix = page.route.split("/")[1];
+    const expectedLanguage = LOCALE_PREFIXES.has(prefix) ? prefix : "en";
     if (!page.lang) addIssue(page, "html-lang-missing", "The html element has no lang attribute");
     else if (page.lang.split("-")[0] !== expectedLanguage) {
       addIssue(page, "html-lang-mismatch", `Expected ${expectedLanguage}, found ${page.lang}`);
@@ -457,16 +479,36 @@ export function auditBuild({ outDir }) {
 
   for (const page of publicPages) {
     const canonical = normalizeAbsoluteUrl(page.canonical[0] ?? "");
-    const pageLanguage = page.route === "/es/" || page.route.startsWith("/es/") ? "es" : "en";
-    const counterpartRoute = pageLanguage === "es"
-      ? (page.route === "/es/" ? "/" : page.route.replace(/^\/es/u, ""))
-      : (page.route === "/" ? "/es/" : `/es${page.route}`);
+    /*
+      Same generalisation as the lang check above: the locale is the first segment, and the
+      English counterpart is that segment removed. Written as a two-way test, every
+      Portuguese page reported a missing "en" self alternate, because the audit believed
+      /pt/ was an English route.
+
+      The counterpart is always ENGLISH — it is the pivot every mirror pairs with — so a
+      non-English page looks for the path with its prefix stripped, and an English page
+      looks for each locale in turn.
+    */
+    const routePrefix = page.route.split("/")[1];
+    const pageLanguage = LOCALE_PREFIXES.has(routePrefix) ? routePrefix : "en";
+    const englishRoute =
+      pageLanguage === "en"
+        ? page.route
+        : page.route === `/${pageLanguage}/`
+          ? "/"
+          : page.route.replace(new RegExp(`^/${pageLanguage}`, "u"), "");
+    const counterpartRoute =
+      pageLanguage === "en"
+        ? page.route === "/"
+          ? "/es/"
+          : `/es${page.route}`
+        : englishRoute;
     const counterpart = publicPageByRoute.get(counterpartRoute);
     if (counterpart && page.alternates.length === 0) {
       addIssue(page, "hreflang-pair-missing", `Built translation ${counterpartRoute} has no alternate links`);
     }
     if (counterpart && page.alternates.length > 0) {
-      const counterpartLanguage = pageLanguage === "es" ? "en" : "es";
+      const counterpartLanguage = pageLanguage === "en" ? "es" : "en";
       const counterpartCanonical = counterpart.canonical[0] ?? "";
       const counterpartAlternate = page.alternates.find(({ language }) => language === counterpartLanguage);
       if (!counterpartAlternate || !sameUrl(counterpartAlternate.href, counterpartCanonical)) {

@@ -86,6 +86,7 @@
     "assets:padlock": "node scripts/import-heritage-padlock.mjs",
     "brief:scenes": "node scripts/build-scene-shortlist.mjs --write",
     "brief:content": "node scripts/build-content-programme.mjs --write",
+    "audit:pt": "node scripts/audit-pt-coverage.mjs",
     "docs:word": "node scripts/build-client-docx.mjs",
     "brief:images": "node scripts/build-alibaba-image-brief.mjs --write",
     "audit:modelling:alibaba": "node scripts/audit-alibaba-modelling.mjs",

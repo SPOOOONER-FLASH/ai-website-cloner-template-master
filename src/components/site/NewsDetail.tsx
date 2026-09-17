@@ -6,6 +6,7 @@ import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { NewsVisual } from "./NewsVisual";
+import type { Locale } from "@/data/site";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -49,6 +50,18 @@ const COPY = {
     about:
       " — Canton Hyland fabrica dispositivos antipánico, cerraduras y herrajes arquitectónicos para obra comercial e institucional, y suministra a prescriptores y distribuidores en todo el mundo.",
   },
+  pt: {
+    home: "Início",
+    news: "Notícias e imprensa",
+    back: "← Voltar a todas as notícias",
+    pressEnquiries: "Contactos de imprensa",
+    contact: "Contacto",
+    mentioned: "Produtos mencionados",
+    pressKit: "Kit de imprensa",
+    aboutTitle: "Sobre a Canton Hyland",
+    about:
+      " — a Canton Hyland fabrica barras antipânico, fechaduras e ferragens arquitetónicas para obra comercial e institucional, e fornece prescritores e distribuidores em todo o mundo.",
+  },
 } as const;
 
 export function NewsDetail({
@@ -56,7 +69,7 @@ export function NewsDetail({
   locale = "en",
 }: {
   article: NewsArticle;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const t = COPY[locale];
   const base = locale === "es" ? "/es" : "";

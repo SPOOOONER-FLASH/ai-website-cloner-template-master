@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/data/site";
 
 /**
  * The switch between the two ways into the same catalogue.
@@ -49,6 +50,13 @@ const COPY = {
     configurator: "Configurador",
     configuratorHint: "Responda unas preguntas",
   },
+  pt: {
+    label: "Como percorrer o catálogo",
+    catalogue: "Catálogo",
+    catalogueHint: "Procurar e filtrar todos os modelos",
+    configurator: "Configurador",
+    configuratorHint: "Responda a algumas perguntas",
+  },
 } as const;
 
 export function FinderModeSwitch({
@@ -57,7 +65,7 @@ export function FinderModeSwitch({
   className,
 }: {
   active: "catalogue" | "configurator";
-  locale?: "en" | "es";
+  locale?: Locale;
   className?: string;
 }) {
   const t = COPY[locale];

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTopLevelCategories } from "@/data/categories";
 import { OPTION_NOTES, OPTION_NOTES_ES } from "@/lib/configurator";
+import type { Locale } from "@/data/site";
 
 /**
  * The trade definitions, rendered on the server.
@@ -42,9 +43,15 @@ const COPY = {
       "Todas las opciones que ofrece el configurador, definidas. Son las definiciones del oficio —qué es la pieza y dónde va— y no afirmaciones sobre ningún modelo concreto.",
     seeAll: "Ver los modelos",
   },
+  pt: {
+    title: "O que significam estes termos",
+    intro:
+      "Todas as opções que o configurador oferece, definidas. São as definições do ofício — o que é a peça e onde vai — e não afirmações sobre nenhum modelo em concreto.",
+    seeAll: "Ver os modelos",
+  },
 } as const;
 
-export function HardwareGlossary({ locale = "en" }: { locale?: "en" | "es" }) {
+export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
   const t = COPY[locale];
   const notes = locale === "es" ? OPTION_NOTES_ES : OPTION_NOTES;
   const base = locale === "es" ? "/es" : "";

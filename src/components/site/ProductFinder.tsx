@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -17,6 +18,7 @@ import {
   FACET_PARAM_NAMES,
   FACET_LABELS,
   FACET_LABELS_ES,
+  FACET_LABELS_PT,
   PRIMARY_FACETS,
   SECONDARY_FACETS,
   type Facet,
@@ -87,6 +89,26 @@ const COPY = {
     pages: "Páginas de productos",
     facets: FACET_LABELS_ES,
   },
+  pt: {
+    clearAll: (n: number) => `Limpar tudo (${n})`,
+    search: "Procurar",
+    searchPlaceholder: "Modelo, nome ou acabamento…",
+    moreFilters: "Mais filtros",
+    moreFiltersHint: "Série, material, acabamento, tipo de porta e certificação.",
+    clearThese: (n: number) => `Limpar estes (${n})`,
+    product: "produto",
+    products: "produtos",
+    matching: " correspondem aos seus filtros",
+    inCatalogue: " no catálogo",
+    showing: (from: number, to: number) => ` · a mostrar ${from}–${to}`,
+    emptyTitle: "Nada corresponde a esta combinação.",
+    emptyTry: "Experimente tirar um filtro, ou ",
+    emptyAsk: "fale com um engenheiro de exportação",
+    emptyTail: " — o catálogo deste site é uma parte do que fabricamos.",
+    contactHref: "/pt/contact/",
+    pages: "Páginas de produtos",
+    facets: FACET_LABELS_PT,
+  },
 } as const;
 
 export function ProductFinder({
@@ -97,7 +119,7 @@ export function ProductFinder({
   products: FinderProduct[];
   /** slug -> display name, so facets read "Panic Exit Devices" not "panic-exit-devices". */
   categoryNames: Record<string, string>;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const t = COPY[locale];
   // Seeded lazily from the address bar. This component is loaded with ssr: false, so it

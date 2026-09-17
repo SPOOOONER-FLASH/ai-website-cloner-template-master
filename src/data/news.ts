@@ -1,4 +1,5 @@
 import type { NewsArticle, NewsKind } from "./types";
+import type { Locale } from "@/data/site";
 
 /**
  * The newsroom.
@@ -81,7 +82,7 @@ export const NEWS_KIND_LABEL_ES: Record<NewsKind, string> = {
  * "15 March 2026" — spelled-out month, because 03/04/2026 reads as two different dates
  * either side of the Atlantic and this site sells into both.
  */
-export function formatNewsDate(iso: string, locale: "en" | "es" = "en"): string {
+export function formatNewsDate(iso: string, locale: Locale = "en"): string {
   const [year, month, day] = iso.split("-").map(Number);
   /*
     es-ES rather than any Latin American locale: they agree on this format ("15 de marzo
