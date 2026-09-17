@@ -24,7 +24,7 @@ interface ProductIndexListProps {
  */
 export function ProductIndexList({ products, label, locale = "en" }: ProductIndexListProps) {
   const es = locale === "es";
-  const base = es ? "/es" : "";
+  const base = locale === "en" ? "" : `/${locale}`;
   if (!products.length) return null;
   const items = sortForDisplay(products);
 

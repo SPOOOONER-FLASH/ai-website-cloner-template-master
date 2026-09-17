@@ -170,7 +170,9 @@ export function featureColumns(): FeatureColumn[] {
 }
 
 export function featureColumnsHeading(locale: Locale = "en"): string {
-  return locale === "es" ? "Columnas" : "Columns";
+  if (locale === "es") return "Columnas";
+  if (locale === "pt") return "Colunas";
+  return "Columns";
 }
 
 export function featureColumnsLede(locale: Locale = "en"): string {
@@ -180,5 +182,7 @@ export function featureColumnsLede(locale: Locale = "en"): string {
 }
 
 export function featureColumnsCta(locale: Locale = "en"): string {
-  return locale === "es" ? "Leer la columna" : "Read the column";
+  if (locale === "es") return "Leer la columna";
+  if (locale === "pt") return "Ler a coluna";
+  return "Read the column";
 }

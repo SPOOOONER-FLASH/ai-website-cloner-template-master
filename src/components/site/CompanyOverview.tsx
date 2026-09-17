@@ -9,8 +9,10 @@ import {
   companyEditorialStudies,
   profile,
   profileEs,
+  profilePt,
   stats,
   statsEs,
+  statsPt,
 } from "@/data/company";
 import { siteSettings } from "@/data/navigation";
 import { EmailLink } from "./EmailLink";
@@ -97,8 +99,8 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
     src/lib/localised.ts: an English caption reads as unfinished, a Spanish one reads as
     finished and wrong.
   */
-  const paragraphs = locale === "es" ? profileEs : profile;
-  const companyStats = locale === "es" ? statsEs : stats;
+  const paragraphs = locale === "es" ? profileEs : locale === "pt" ? profilePt : profile;
+  const companyStats = locale === "es" ? statsEs : locale === "pt" ? statsPt : stats;
   const contactHref = locale === "en" ? "/contact" : `/${locale}/contact`;
   const localiseImageLabel = (label: string, labelEs?: string, labelPt?: string) =>
     locale === "es" ? (labelEs ?? label) : locale === "pt" ? (labelPt ?? label) : label;
@@ -170,7 +172,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
             <div className="border-t border-line pt-16">
               <p className="text-c2 text-ink-secondary">
-                {locale === "es" ? "Fábrica" : "Factory"}
+                {locale === "es" ? "Fábrica" : locale === "pt" ? "Fábrica" : "Factory"}
               </p>
               <address className="mt-8 not-italic text-c2 text-ink-secondary">
                 {siteSettings.contact.factoryAddress ?? siteSettings.contact.address}
@@ -182,7 +184,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
 
             <div className="border-t border-line pt-16">
               <p className="text-c2 text-ink-secondary">
-                {locale === "es" ? "Oficina" : "Office"}
+                {locale === "es" ? "Oficina" : locale === "pt" ? "Escritório" : "Office"}
               </p>
               <address className="mt-8 not-italic text-c2 text-ink-secondary">
                 {siteSettings.contact.address}
@@ -194,7 +196,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             {representatives.map((rep) => (
               <div key={`${rep.region}-${rep.city}`} className="border-t border-line pt-16">
                 <p className="text-c2 text-ink-secondary">
-                  {locale === "es" ? rep.regionEs : rep.region}
+                  {(locale === "es" ? rep.regionEs : locale === "pt" ? rep.regionPt : undefined) ?? rep.region}
                 </p>
                 <p className="mt-8 text-c1 text-ink">{rep.city}</p>
                 <address className="mt-4 not-italic text-c2 text-ink-secondary">

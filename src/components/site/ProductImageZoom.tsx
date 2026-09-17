@@ -5,6 +5,7 @@ import type { PointerEvent as ReactPointerEvent } from "react";
 import { X } from "lucide-react";
 import type { ImageRef } from "@/data/types";
 import type { Locale } from "@/data/site";
+import { localised } from "@/lib/localised";
 import { cn } from "@/lib/utils";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
@@ -34,20 +35,37 @@ export function ProductImageZoom({
   const inspectionHintId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const copy =
-    locale === "es"
-      ? {
-          enlarge: `Ampliar imagen: ${label}`,
-          hint: "Mueva el puntero sobre la imagen para examinar los detalles. Actívela para abrir la imagen completa.",
-          dialog: `Imagen ampliada: ${label}`,
-          close: "Cerrar imagen ampliada",
-        }
-      : {
-          enlarge: `Enlarge ${label}`,
-          hint: "Move across the image to inspect details. Activate to open the full image.",
-          dialog: `Large image: ${label}`,
-          close: "Close large image",
-        };
+  /*
+    Three locales, read through `localised` rather than a two-way ternary.
+
+    This string was English on 519 Portuguese pages — more than any other single phrase on
+    the site — because the ternary here could only answer "Spanish or not". It is the
+    pointer hint on every product photograph, so one unreachable branch put English on
+    three quarters of the Portuguese catalogue.
+  */
+  const copy = localised(
+    {
+      en: {
+        enlarge: `Enlarge ${label}`,
+        hint: "Move across the image to inspect details. Activate to open the full image.",
+        dialog: `Large image: ${label}`,
+        close: "Close large image",
+      },
+      es: {
+        enlarge: `Ampliar imagen: ${label}`,
+        hint: "Mueva el puntero sobre la imagen para examinar los detalles. Actívela para abrir la imagen completa.",
+        dialog: `Imagen ampliada: ${label}`,
+        close: "Cerrar imagen ampliada",
+      },
+      pt: {
+        enlarge: `Ampliar imagem: ${label}`,
+        hint: "Passe o ponteiro sobre a imagem para ver os detalhes. Ative para abrir a imagem completa.",
+        dialog: `Imagem ampliada: ${label}`,
+        close: "Fechar imagem ampliada",
+      },
+    },
+    locale,
+  );
 
   function moveZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
     if (event.pointerType !== "mouse") return;

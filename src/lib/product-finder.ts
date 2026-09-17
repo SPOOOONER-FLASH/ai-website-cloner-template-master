@@ -159,6 +159,9 @@ export type FinderProduct = Pick<
   | "modelTbc"
   | "name"
   | "nameEs"
+  /* Added 2026-09-17: the card showed the ENGLISH name on every Portuguese listing,
+     because this pick carried nameEs and stopped there. */
+  | "namePt"
   | "nameZh"
   | "series"
   | "categoryPath"
@@ -197,6 +200,7 @@ export function toFinderProduct(product: Product): FinderProduct {
     modelTbc: product.modelTbc,
     name: product.name,
     nameEs: product.nameEs,
+    namePt: product.namePt,
     nameZh: product.nameZh,
     series: product.series,
     categoryPath: product.categoryPath,

@@ -24,6 +24,7 @@ import type { Locale } from "@/data/site";
 export interface SearchSuggestion {
   label: string;
   labelEs: string;
+  labelPt: string;
   href: string;
 }
 
@@ -31,19 +32,22 @@ export const suggestedCategories: SearchSuggestion[] = [
   {
     label: "Panic Exit Devices",
     labelEs: "Barras antipánico",
+    labelPt: "Barras antipânico",
     href: "/products/panic-exit-devices/",
   },
-  { label: "Lock Cases", labelEs: "Cerraduras de embutir", href: "/products/lock-cases/" },
-  { label: "Knob Locks", labelEs: "Cerraduras de pomo", href: "/products/knob-locks/" },
-  { label: "Lever Handles", labelEs: "Manijas de palanca", href: "/products/lever-handles/" },
+  { label: "Lock Cases", labelEs: "Cerraduras de embutir", labelPt: "Fechaduras de embutir", href: "/products/lock-cases/" },
+  { label: "Knob Locks", labelEs: "Cerraduras de pomo", labelPt: "Fechaduras de pomo", href: "/products/knob-locks/" },
+  { label: "Lever Handles", labelEs: "Manijas de palanca", labelPt: "Maçanetas de alavanca", href: "/products/lever-handles/" },
   {
     label: "Stainless Steel Handles",
     labelEs: "Manijas de acero inoxidable",
+    labelPt: "Maçanetas em inox",
     href: "/products/stainless-steel-handles/",
   },
   {
     label: "Night Latches & Rim Locks",
     labelEs: "Cerraduras de sobreponer",
+    labelPt: "Fechaduras de sobrepor",
     href: "/products/night-latches-rim-locks/",
   },
 ];
@@ -52,11 +56,13 @@ export const suggestedProducts: SearchSuggestion[] = [
   {
     label: "316-D Panic Exit Device",
     labelEs: "Barra antipánico 316-D",
+    labelPt: "Barra antipânico 316-D",
     href: "/products/panic-exit-devices/316-d-panic-exit-device/",
   },
   {
     label: "HY007-S Lock Case",
     labelEs: "Caja de cerradura HY007-S",
+    labelPt: "Caixa de fechadura HY007-S",
     href: "/products/lock-cases/hy007-s-lock-case/",
   },
   {
@@ -70,25 +76,37 @@ export const suggestedProducts: SearchSuggestion[] = [
     */
     label: "EH02 Lever Handle",
     labelEs: "Manija de palanca EH02",
+    labelPt: "Maçaneta de alavanca EH02",
     href: "/products/lever-handles/eh02-lever-handle/",
   },
   {
     label: "5870 ACET Cylindrical Lock",
     labelEs: "Cerradura cilíndrica 5870 ACET",
+    labelPt: "Fechadura cilíndrica 5870 ACET",
     href: "/products/knob-locks/5870-acet-heavy-duty-cylindrical-lock/",
   },
   {
     label: "564 MB Night Latch",
     labelEs: "Cerradura de sobreponer 564 MB",
+    labelPt: "Fechadura de sobrepor 564 MB",
     href: "/products/night-latches-rim-locks/564-mb-night-latch-and-rim-lock/",
   },
 ];
 
-/** The Spanish mirror serves the same pages under /es. */
+/**
+ * The mirrors serve the same pages under their own prefix.
+ *
+ * Search is reached from the header on every page, so a suggestion that drops the prefix
+ * takes the reader out of their language from anywhere on the site — the same trapdoor as
+ * a nav item with no mirror.
+ */
 export function suggestionHref(suggestion: SearchSuggestion, locale: Locale): string {
-  return locale === "es" ? `/es${suggestion.href}` : suggestion.href;
+  return locale === "en" ? suggestion.href : `/${locale}${suggestion.href}`;
 }
 
+/** English, never Spanish, where a Portuguese label is missing — see src/lib/localised.ts. */
 export function suggestionLabel(suggestion: SearchSuggestion, locale: Locale): string {
-  return locale === "es" ? suggestion.labelEs : suggestion.label;
+  if (locale === "es") return suggestion.labelEs;
+  if (locale === "pt") return suggestion.labelPt ?? suggestion.label;
+  return suggestion.label;
 }

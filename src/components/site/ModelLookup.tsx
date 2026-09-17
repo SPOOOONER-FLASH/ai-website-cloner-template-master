@@ -121,7 +121,7 @@ const COPY = {
 export function ModelLookup({ locale }: { locale: Locale }) {
   const copy = COPY[locale];
   const es = locale === "es";
-  const prefix = es ? "/es" : "";
+  const prefix = locale === "en" ? "" : `/${locale}`;
 
   return (
     <>

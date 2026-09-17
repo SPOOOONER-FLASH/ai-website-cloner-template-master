@@ -12,7 +12,7 @@ interface CategoryCardProps {
 
 export function CategoryCard({ category, productCount, index, locale = "en" }: CategoryCardProps) {
   const es = locale === "es";
-  const base = es ? "/es" : "";
+  const base = locale === "en" ? "" : `/${locale}`;
   const name = (es && category.nameEs) || category.name;
   const summary = (es && category.summaryEs) || category.summary;
   const count = es

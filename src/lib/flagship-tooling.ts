@@ -41,16 +41,17 @@ const FLAGSHIP_MODELS = ["307", "311"] as const;
  * product page. These are the rows a specifier decides on: how long the bar is, whether
  * it is fire rated, what centres it drills to, and what is in the box.
  */
-const SURFACED: { labels: string[]; en: string; es: string }[] = [
-  { labels: ["Fire Rating"], en: "Fire rating", es: "Resistencia al fuego" },
-  { labels: ["Bar Length", "Size"], en: "Bar length", es: "Longitud de barra" },
+const SURFACED: { labels: string[]; en: string; es: string; pt: string }[] = [
+  { labels: ["Fire Rating"], en: "Fire rating", es: "Resistencia al fuego", pt: "Resistência ao fogo" },
+  { labels: ["Bar Length", "Size"], en: "Bar length", es: "Longitud de barra", pt: "Comprimento da barra" },
   {
     labels: ["2. Dual center distances", "Dual center distances", "Centre distance"],
     en: "Centre distances",
     es: "Distancias entre ejes",
+    pt: "Distâncias entre centros",
   },
-  { labels: ["Set Includes"], en: "Set includes", es: "El conjunto incluye" },
-  { labels: ["Application"], en: "Application", es: "Aplicación" },
+  { labels: ["Set Includes"], en: "Set includes", es: "El conjunto incluye", pt: "O conjunto inclui" },
+  { labels: ["Application"], en: "Application", es: "Aplicación", pt: "Aplicação" },
 ];
 
 /** How many rows one card shows before it stops being a summary. */
@@ -80,7 +81,7 @@ export function flagshipTooling(locale: Locale = "en"): FlagshipCard[] | null {
       const spec = (product.specs ?? []).find((s) => surfaced.labels.includes(s.label));
       if (!spec?.value) continue;
       rows.push({
-        label: locale === "es" ? surfaced.es : surfaced.en,
+        label: locale === "es" ? surfaced.es : locale === "pt" ? surfaced.pt : surfaced.en,
         /* Some rows carry a trailing clause the client wrote; keep it, trim the padding. */
         value: String(spec.value).trim(),
       });

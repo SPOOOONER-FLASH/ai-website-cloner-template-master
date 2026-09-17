@@ -24,7 +24,7 @@ export function DemandShowcase({ locale = "en" }: { locale?: Locale }) {
   const items = demandShowcaseProducts();
   if (items.length < 4) return null;
   const text = demandShowcaseText(locale);
-  const contactHref = locale === "es" ? "/es/contact/" : "/contact/";
+  const contactHref = `${locale === "en" ? "" : `/${locale}`}/contact/`;
 
   return (
     <section className="layout mt-96 lg:mt-136" aria-labelledby="demand-showcase-heading">

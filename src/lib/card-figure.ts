@@ -1,4 +1,5 @@
 import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
+import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
 
@@ -70,10 +71,11 @@ export interface CardFigure {
 const hasDigit = (value: string) => /\d/.test(value);
 
 export function cardFigure(
-  product: Partial<Pick<Product, "specs" | "specsEs">>,
+  product: Partial<Pick<Product, "specs" | "specsEs" | "specsPt">>,
   locale: Locale = "en",
 ): CardFigure | undefined {
   const es = locale === "es";
+  const pt = locale === "pt";
 
   for (const label of FIGURE_LABELS) {
     const row = product.specs?.find((spec) => spec.label === label && hasDigit(spec.value));
@@ -86,10 +88,18 @@ export function cardFigure(
       translation — so falling back keeps the two sites stating the same number, which is
       the property copy:parity exists to protect.
     */
-    if (es) {
-      const esLabel = SPEC_LABELS_ES[label] ?? label;
-      const esRow = product.specsEs?.find((spec) => spec.label === esLabel && hasDigit(spec.value));
-      return { label: esLabel, value: esRow?.value ?? row.value };
+    if (es || pt) {
+      /*
+        The caption on every catalogue card, which is why this mattered out of proportion
+        to its size: "Door thickness" was English on 78 Portuguese pages because this
+        function knew about Spanish and not about a third locale.
+      */
+      const localeLabel = (pt ? SPEC_LABELS_PT[label] : SPEC_LABELS_ES[label]) ?? label;
+      const localeRows = pt ? product.specsPt : product.specsEs;
+      const localeRow = localeRows?.find(
+        (spec) => spec.label === localeLabel && hasDigit(spec.value),
+      );
+      return { label: localeLabel, value: localeRow?.value ?? row.value };
     }
 
     return { label, value: row.value };
