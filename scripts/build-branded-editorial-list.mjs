@@ -83,6 +83,14 @@ const DOCUMENTED_FACTORY_PHOTOGRAPHS = [
   */
   "press-shop.webp",
   "polishing-line.webp",
+  /*
+    2026-09-16, the fourth rail image. Provenance is content/rayen/assets.json, which
+    cleared the source as 「设备实拍，机身厂牌为设备供应商而非门锁品牌」 — a real equipment
+    photograph whose only branding belongs to the machine's maker. Cropped to 3:2 by
+    scripts/build-company-crops.mjs; a crop of a documentary photograph is still that
+    photograph.
+  */
+  "factory-laser-cutter.webp",
 ];
 
 /*

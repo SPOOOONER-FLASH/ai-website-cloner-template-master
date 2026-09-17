@@ -1,3 +1,4 @@
+import { articleFaqHeading, articleFaqItems } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
 import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
@@ -91,6 +92,7 @@ export function NewsDetail({
     category, so the same rule applies: resolve the model, then drop it if it is not
     published. The article's own prose still names the model; only the link goes.
   */
+  const faq = articleFaqItems(article, locale);
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
@@ -235,6 +237,33 @@ export function NewsDetail({
                 {paragraph}
               </p>
             ))}
+
+            {/*
+              The question-and-answer block.
+
+              Placed after the argument rather than before it, because it is a restatement,
+              not a summary: every answer here is something the paragraphs above have
+              already established. Put first it would give away the conclusions and make
+              the article look like a FAQ page with an essay attached.
+
+              Each pair is one <section> with the question as its heading, so a retrieval
+              system reading the DOM gets the pair as a unit rather than having to guess
+              which paragraph answers which heading. `ArticleFaqJsonLd` emits the same
+              items as FAQPage markup — same source, so the two cannot drift.
+            */}
+            {faq.length ? (
+              <section className="mt-64 border-t border-line pt-32" aria-labelledby="article-faq">
+                <h2 id="article-faq" className="text-h3 text-ink">
+                  {articleFaqHeading(locale)}
+                </h2>
+                {faq.map((item) => (
+                  <section key={item.question} className="mt-32">
+                    <h3 className="text-c1 font-semibold text-ink">{item.question}</h3>
+                    <p className="mt-12 text-c1 text-ink-secondary">{item.answer}</p>
+                  </section>
+                ))}
+              </section>
+            ) : null}
 
             {/*
               The take-away file, immediately after the argument for taking it away.

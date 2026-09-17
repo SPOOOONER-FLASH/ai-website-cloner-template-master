@@ -48,5 +48,21 @@
     "Por último, una medida que no publicamos y que no vamos a estimar: no declaramos un ancho de hoja mínimo ni máximo para cada longitud de barra. La aritmética parece evidente y no lo es — el ancho utilizable depende del montante, de la manilla, del cerradero y, en dos hojas, también del batiente central. Mándenos el ancho de hoja y le respondemos contra el modelo real. Un número que sacamos de un plano vale algo; un número que sacamos de una fórmula no vale nada, y este sitio tiene una regla sobre esa diferencia."
   ],
   "seoTitleEs": "Longitud de barra antipánico: de 650mm a 1110mm",
-  "seoDescriptionEs": "Por qué una barra se especifica por el ancho de hoja, cuáles de nuestras longitudes son regulables, y las tres medidas que hay que enviar con la consulta."
+  "seoDescriptionEs": "Por qué una barra se especifica por el ancho de hoja, cuáles de nuestras longitudes son regulables, y las tres medidas que hay que enviar con la consulta.",
+  "faq": {
+    "en": [
+      {
+        "question": "How is exit device bar length chosen?",
+        "answer": "By the door leaf, not the opening. On a double door each leaf takes its own device, and the leaf is roughly half the clear opening less the meeting stile — so a pair is not two bars the width of the opening. Working from the opening width rather than the leaf width is the most common way a schedule arrives with the wrong length on it."
+      },
+      {
+        "question": "What happens if the push bar is too long or too short?",
+        "answer": "A bar that overhangs the leaf fouls the frame, the stop or the adjacent leaf, and on a pair it prevents the doors closing. A bar short of the leaf leaves a strip at the hinge or lock side where a person arriving at speed makes contact with the door rather than the bar — which is the failure the device exists to prevent."
+      },
+      {
+        "question": "What do you need to quote an exit device?",
+        "answer": "Leaf width, leaf thickness, and whether the opening is single or a pair. Two more make it complete: whether the door is fire rated and to what, and whether the outside face needs to open — outside trim is a separate order line with its own finish and handing."
+      }
+    ]
+  }
 }

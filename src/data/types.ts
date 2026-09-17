@@ -426,6 +426,15 @@ export interface ArticleAuthor {
 export interface NewsArticle {
   /** URL segment, unique site-wide. e.g. "en-1125-certification-for-panic-range". */
   slug: string;
+  /**
+   * Question-and-answer pairs, rendered visibly AND emitted as FAQPage markup.
+   *
+   * Never one without the other: Google treats FAQ markup whose answers do not appear on
+   * the page as a spam signal, so both come from `articleFaqItems` rather than from two
+   * lists somebody has to keep in step. See src/lib/article-faq.ts for why an article that
+   * already answers the question still benefits from pairing it with one.
+   */
+  faq?: { en: { question: string; answer: string }[]; es?: { question: string; answer: string }[]; pt?: { question: string; answer: string }[] };
   title: string;
   titleEs?: string;
   titlePt?: string;
