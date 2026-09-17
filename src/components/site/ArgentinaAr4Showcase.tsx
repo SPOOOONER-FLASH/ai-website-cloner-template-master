@@ -51,7 +51,7 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
 
   return (
     <Link
-      href={`${locale === "es" ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
+      href={`${locale === "en" ? "" : `/${locale}`}/products/${product.categoryPath[0]}/${product.slug}/`}
       className={cn(
         "hard-shadow-card group flex flex-col bg-surface",
         // Rail card on a phone, grid cell from `sm` up. See the track below.
@@ -84,6 +84,9 @@ export function ArgentinaAr4Showcase({
 }) {
   const products = ar4Products();
   const text = copy[locale];
+  /* Argentina AR4 is a market collection built in English and Spanish only — it is the
+     one documented exception in PORTUGUESE_MIRROR_PREFIXES — so Portuguese goes to the
+     English page rather than to a /pt/ URL that does not exist. */
   const href = locale === "es" ? "/es/products/argentina-ar4/" : "/products/argentina-ar4/";
 
   return (
@@ -156,7 +159,7 @@ export function ArgentinaAr4Showcase({
 
         {pageHeading ? (
           <div className="col-span-full mt-8 flex justify-end">
-            <ArrowLink href={locale === "es" ? "/es/contact/" : "/contact/"}>
+            <ArrowLink href={`${locale === "en" ? "" : `/${locale}`}/contact/`}>
               {locale === "es" ? "Consultar la colección" : "Discuss the collection"}
             </ArrowLink>
           </div>

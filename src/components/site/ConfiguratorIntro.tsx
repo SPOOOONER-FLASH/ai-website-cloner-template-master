@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { publishedProducts } from "@/data/products";
-import { STEPS, STEPS_ES } from "@/lib/configurator";
+import { STEPS, STEPS_ES, STEPS_PT } from "@/lib/configurator";
 
 /**
  * What the configurator is, what it asks, and what comes out — before it is used.
@@ -79,9 +79,9 @@ const COPY = {
 
 export function ConfiguratorIntro({ locale = "en" }: { locale?: Locale }) {
   const t = COPY[locale];
-  const steps = (locale === "es" ? STEPS_ES : STEPS).length;
+  const steps = (locale === "es" ? STEPS_ES : locale === "pt" ? STEPS_PT : STEPS).length;
   const models = publishedProducts.length;
-  const finderHref = locale === "es" ? "/es/product-finder/" : "/product-finder/";
+  const finderHref = `${locale === "en" ? "" : `/${locale}`}/product-finder/`;
 
   return (
     <>

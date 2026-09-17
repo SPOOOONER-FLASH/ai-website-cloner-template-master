@@ -146,6 +146,23 @@ const PORTUGUESE_MIRROR_PREFIXES = [
     than as half of each. Visibly incomplete gets fixed; a mixed page looks finished.
   */
   "/news",
+  /*
+    Added 2026-09-17, after the client reported the defect these prefixes exist to prevent:
+    「点选葡萄牙语，选择产品配置器和首页又变成了英文」.
+
+    A nav item with no mirror does not degrade — it EJECTS. "Localizador" pointed at
+    /product-finder/, and from that English page every subsequent link was English too, so
+    one missing route cost the reader the language for the rest of the visit. These five
+    are the routes the Spanish mirror had and the Portuguese one did not.
+
+    /products/argentina-ar4 stays out: it is a market collection for Argentina, and the
+    exception above records why.
+  */
+  "/product-finder",
+  "/configurator",
+  "/downloads",
+  "/projects",
+  "/product-studies",
 ];
 
 /**

@@ -129,7 +129,7 @@ export function CapabilityChain({
     };
   }, [steps.length]);
 
-  const contactHref = locale === "es" ? "/es/contact" : "/contact";
+  const contactHref = `${locale === "en" ? "" : `/${locale}`}/contact`;
 
   return (
     <section className="col-content border-t border-line pt-48" aria-labelledby="capability-heading">

@@ -42,12 +42,35 @@ function localeSuffix(field, suffix) {
   return `${field}${suffix}`;
 }
 
+/**
+ * A field with nothing to translate is not a translation gap.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS DISTINCTION EARNS ITS COMPLEXITY
+ *
+ * On 2026-09-17 this reported "123 specsPt still falling back" after every translatable
+ * spec row had in fact been translated. 136 published products carry an EMPTY spec table
+ * in English — the factory has not supplied the dimensions — so there is no Portuguese to
+ * write and no amount of translation work will move the number.
+ *
+ * Counting those as a translation gap points the next session at the wrong job: it looks
+ * like an afternoon of glossary work and it is actually a question for the factory. The
+ * two are reported separately now, because a number that cannot be moved by the work it
+ * appears to describe is worse than no number.
+ */
 function countRecords(records, fields, suffix) {
   let present = 0;
   let total = 0;
   const missingByField = {};
+  const emptySourceByField = {};
   for (const record of records) {
     for (const field of fields) {
+      const source = record[field];
+      const sourceEmpty = Array.isArray(source) ? source.length === 0 : !source;
+      if (sourceEmpty) {
+        emptySourceByField[field] = (emptySourceByField[field] ?? 0) + 1;
+        continue;
+      }
       total += 1;
       const value = record[localeSuffix(field, suffix)];
       const filled = Array.isArray(value) ? value.length > 0 : Boolean(value);
@@ -55,7 +78,7 @@ function countRecords(records, fields, suffix) {
       else missingByField[field] = (missingByField[field] ?? 0) + 1;
     }
   }
-  return { present, total, missingByField };
+  return { present, total, missingByField, emptySourceByField };
 }
 
 /* -------------------------------------------------------------------- news ------ */
@@ -165,6 +188,12 @@ if (JSON_OUT) {
   if (missing.length) {
     console.log("\n  product fields still falling back to English:");
     for (const [field, n] of missing) console.log(`    ${String(n).padStart(4)}  ${field}Pt`);
+  }
+  const emptySource = Object.entries(productPt.emptySourceByField).sort((a, b) => b[1] - a[1]);
+  if (emptySource.length) {
+    console.log("\n  product fields with NOTHING to translate (the English is empty too):");
+    for (const [field, n] of emptySource) console.log(`    ${String(n).padStart(4)}  ${field}`);
+    console.log("    These are questions for the factory, not translation work.");
   }
   const missingNews = Object.entries(newsPt.missingByField).sort((a, b) => b[1] - a[1]);
   if (missingNews.length) {

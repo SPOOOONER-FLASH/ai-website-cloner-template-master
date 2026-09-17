@@ -1,4 +1,5 @@
 import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
+import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
 
@@ -106,26 +107,30 @@ function millimetres(value: string): number[] {
 
 export function collectionSpecRanges(products: Product[], locale: Locale = "en"): SpecRange[] {
   const es = locale === "es";
+  const pt = locale === "pt";
+  /* One table per locale, so the row lookup and the heading cannot disagree. */
+  const labels = pt ? SPEC_LABELS_PT : SPEC_LABELS_ES;
   const out: SpecRange[] = [];
 
   for (const field of FIELDS) {
     const values: string[] = [];
     for (const product of products) {
-      const rows = es && product.specsEs?.length ? product.specsEs : product.specs;
+      const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+      const rows = localeRows?.length ? localeRows : product.specs;
       /*
         Spanish records are keyed by Spanish labels, so the English label is expanded
         through the same glossary the catalogue is composed from — the identical trap the
         product FAQ fell into, avoided here by reading from one source rather than two.
       */
-      const wanted = es
-        ? field.labels.flatMap((l) => [l, SPEC_LABELS_ES[l]]).filter(Boolean)
-        : field.labels;
+      const wanted =
+        es || pt ? field.labels.flatMap((l) => [l, labels[l]]).filter(Boolean) : field.labels;
       const row = rows.find((r) => wanted.includes(r.label) && r.value);
       if (row) values.push(row.unit ? `${row.value} ${row.unit}` : row.value);
     }
     if (values.length < MIN_STATED) continue;
 
-    const label = es ? (SPEC_LABELS_ES[field.labels[0]] ?? field.labels[0]) : field.labels[0];
+    const label =
+      es || pt ? (labels[field.labels[0]] ?? field.labels[0]) : field.labels[0];
 
     if (field.numeric) {
       const figures = values.flatMap(millimetres);
@@ -168,12 +173,14 @@ export function collectionSpecRanges(products: Product[], locale: Locale = "en")
 }
 
 export function specRangeHeading(locale: Locale = "en"): string {
-  return locale === "es" ? "Lo que abarca esta gama" : "What this range covers";
+  if (locale === "es") return "Lo que abarca esta gama";
+  if (locale === "pt") return "O que esta linha abrange";
+  return "What this range covers";
 }
 
 /** "stated on 12 of 19 models" — so a reader knows how much of the family the line speaks for. */
 export function statedOn(count: number, total: number, locale: Locale = "en"): string {
-  return locale === "es"
-    ? `indicado en ${count} de ${total} modelos`
-    : `stated on ${count} of ${total} models`;
+  if (locale === "es") return `indicado en ${count} de ${total} modelos`;
+  if (locale === "pt") return `indicado em ${count} de ${total} modelos`;
+  return `stated on ${count} of ${total} models`;
 }

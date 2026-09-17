@@ -23,7 +23,9 @@ interface ProductCardProps {
 /** Shared catalogue card for listings and related products. */
 export function ProductCard({ product, className, priority, locale = "en" }: ProductCardProps) {
   const es = locale === "es";
-  const href = `${es ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`;
+  const pt = locale === "pt";
+  /* Locale prefix, not a Spanish test — a card on /pt/ linked into the English tree. */
+  const href = `${locale === "en" ? "" : `/${locale}`}/products/${product.categoryPath[0]}/${product.slug}/`;
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   /*
     Two kinds of caller reach this card. Category and related-product surfaces render on
@@ -35,7 +37,9 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
   const figure = cardFigure(product as Partial<Product>, locale) ?? (product.figure?.[locale] ?? product.figure?.en);
   const heroImage = {
     ...product.heroImage,
-    label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
+    label:
+      (es ? product.heroImage.labelEs : pt ? product.heroImage.labelPt : undefined) ??
+      product.heroImage.label,
   };
   return (
     <CatalogueProductLink
@@ -66,7 +70,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
       </div>
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="title-marker text-h3 text-ink">
-          {(es && product.nameEs) || product.name}
+          {(es && product.nameEs) || (pt && product.namePt) || product.name}
         </p>
         {/*
           SAY THAT A DEMONSTRATION CLIP EXISTS, IN WORDS.
@@ -88,9 +92,9 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
             ? es
               ? "Referencia disponible a pedido"
               : "Reference available on request"
-            : `${es ? "Modelo" : "Model"} ${product.model}`}
+            : `${pt ? "Modelo" : es ? "Modelo" : "Model"} ${product.model}`}
           {product.videos?.length ? (
-            <span className="text-ink-tertiary"> · {es ? "Vídeo" : "Video"}</span>
+            <span className="text-ink-tertiary"> · {es || pt ? "Vídeo" : "Video"}</span>
           ) : null}
         </p>
         <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">

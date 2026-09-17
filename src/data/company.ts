@@ -25,6 +25,20 @@ export const profileEs: string[] = [
 ];
 
 /**
+ * The same profile in Brazilian Portuguese.
+ *
+ * Translated from the ENGLISH, which is the client's own approved copy, not from the
+ * Spanish — see src/lib/localised.ts. 1998 is the founding year on every locale; the
+ * client confirmed that on 2026-08-16 and it is not a translation decision.
+ */
+export const profilePt: string[] = [
+  "A Canton Hyland Hardware (Group) Co., Ltd. foi fundada em 1998 e traz décadas de experiência de fabricação ao setor de ferragens comerciais e residenciais. As nossas instalações reúnem estamparia, polimento, montagem e controle de qualidade.",
+  "Somos especializados em soluções completas de segurança e ferragens para portas: barras antipânico, fechaduras cilíndricas e tubulares, travas, caixas de fechadura, cilindros de perfil, maçanetas, ferragens para vidro e uma linha completa de acessórios para edifícios e dormitórios. As credenciais fornecidas incluem relatórios de ensaio Intertek por modelo e um certificado CE de conformidade para barras antipânico.",
+  "Como especialistas reconhecidos em sistemas de chave-mestra e chave de obra, oferecemos soluções de controle de acesso para obras comerciais e institucionais complexas. Desde a certificação ISO 9001 em 2002, mantemos o compromisso com a qualidade e a melhoria contínua.",
+  "Trabalhamos com parcerias OEM e desenvolvemos soluções sob medida para exigências específicas de cada cliente. Convidamos você a visitar as nossas instalações para ver como a nossa experiência pode atender às suas necessidades de ferragem.",
+];
+
+/**
  * Figures published on the client's own Alibaba storefront, read 2026-08-15.
  * Ranges are kept as ranges — narrowing them would be inventing precision.
  */
@@ -46,6 +60,16 @@ export const statsEs: { label: string; value: string }[] = [
   { label: "Sistema de calidad", value: "ISO 9001 desde 2002" },
   { label: "Actividad", value: "Fabricante" },
   { label: "Ubicación", value: "Guangdong, China" },
+];
+
+export const statsPt: { label: string; value: string }[] = [
+  { label: "Fundação", value: "1998" },
+  { label: "Equipe", value: "101–200 pessoas" },
+  { label: "Área fabril", value: "3.000–5.000 m²" },
+  { label: "Produção anual", value: "US$ 50–100 milhões" },
+  { label: "Sistema de qualidade", value: "ISO 9001 desde 2002" },
+  { label: "Atividade", value: "Fabricante" },
+  { label: "Localização", value: "Guangdong, China" },
 ];
 
 export interface CertificateRecord {

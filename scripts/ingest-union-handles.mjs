@@ -358,8 +358,29 @@ for (const entry of manifest.models) {
     }
   }
 
+  /*
+    Fields this ingest does not own are carried over, not overwritten.
+
+    2026-09-17: the Portuguese pass added `namePt`, `summaryPt`, `specsPt`, `seoTitlePt` and
+    `seoDescriptionPt` to all 76 hinge records the same afternoon this manifest rewrote their
+    summaries. The record is rebuilt from scratch here, so re-running the ingest would have
+    deleted every one of them — a whole locale's translation, silently, with a green test run,
+    because nothing in this file knows those keys exist.
+
+    Same shape as the spec-loss guard above, and the answer is the same in spirit: this
+    generator owns the keys it writes and nothing else. Whatever else the record carries stays.
+  */
+  let merged = record;
+  if (existsSync(target)) {
+    const before = JSON.parse(readFileSync(target, "utf8"));
+    const kept = Object.fromEntries(
+      Object.entries(before).filter(([key]) => !(key in record)),
+    );
+    if (Object.keys(kept).length) merged = { ...record, ...kept };
+  }
+
   if (!checkOnly) {
-    writeFileSync(target, `${JSON.stringify(record, null, 2)}
+    writeFileSync(target, `${JSON.stringify(merged, null, 2)}
 `, "utf8");
   }
   written.push(`${entry.model} → ${entry.categoryPath.join("/")} (${refs.length} 图, ${entry.specs.length} 规格行)`);

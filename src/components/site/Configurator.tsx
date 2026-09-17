@@ -13,6 +13,7 @@ import type { FinderProduct } from "@/lib/product-finder";
 import {
   STEPS,
   STEPS_ES,
+  STEPS_PT,
   answersFromParams,
   answersToParams,
   nextStep,
@@ -239,8 +240,8 @@ export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const t = COPY[locale];
-  const steps = locale === "es" ? STEPS_ES : STEPS;
-  const base = locale === "es" ? "/es" : "";
+  const steps = locale === "es" ? STEPS_ES : locale === "pt" ? STEPS_PT : STEPS;
+  const base = locale === "en" ? "" : `/${locale}`;
 
   const answers = useMemo(() => answersFromParams(searchParams), [searchParams]);
   const left = useMemo(() => remaining(products, answers), [products, answers]);

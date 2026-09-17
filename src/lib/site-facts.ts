@@ -141,5 +141,7 @@ export function siteFacts(locale: Locale = "en"): SiteFact[] {
 
 /** Heading for the strip. Kept here so the page and any future locale read one string. */
 export function siteFactsHeading(locale: Locale = "en"): string {
-  return locale === "es" ? "La fábrica, en cifras" : "The factory, in figures";
+  if (locale === "es") return "La fábrica, en cifras";
+  if (locale === "pt") return "A fábrica, em números";
+  return "The factory, in figures";
 }

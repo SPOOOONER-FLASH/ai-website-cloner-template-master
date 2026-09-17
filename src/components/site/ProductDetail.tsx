@@ -235,14 +235,17 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   */
   const localeSpecs = locale === "es" ? product.specsEs : locale === "pt" ? product.specsPt : undefined;
   const specs = (localeSpecs?.length ? localeSpecs : product.specs) ?? [];
-  const base = es ? "/es" : "";
+  const base = locale === "en" ? "" : `/${locale}`;
   const heroImage = {
     ...product.heroImage,
-    label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
+    label:
+      (es ? product.heroImage.labelEs : locale === "pt" ? product.heroImage.labelPt : undefined) ??
+      product.heroImage.label,
   };
   const gallery = product.gallery.map((image) => ({
     ...image,
-    label: es ? image.labelEs ?? image.label : image.label,
+    label:
+      (es ? image.labelEs : locale === "pt" ? image.labelPt : undefined) ?? image.label,
   }));
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   const finishes = localiseProductValues(product.finishes, locale);
@@ -815,7 +818,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                 </li>
               ) : null}
               <li className="border-b border-line py-16">
-                <ArrowLink href={es ? "/es/faq/" : "/faq/"}>{t.faqLink}</ArrowLink>
+                <ArrowLink href={`${base}/faq/`}>{t.faqLink}</ArrowLink>
                 <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.faqHelp}</p>
               </li>
             </ul>

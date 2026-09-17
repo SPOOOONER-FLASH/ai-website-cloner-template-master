@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from "@/data/site";
-import { defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/site/ProjectDetail";
 import { getAllProjectParams, getProjectBySlug } from "@/data/projects";
@@ -22,11 +22,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     description: project.seoDescription,
     alternates: {
       canonical: `/projects/${slug}/`,
-      languages: {
-        en: absoluteUrl(`/projects/${slug}/`),
-        es: absoluteUrl(`/es/projects/${slug}/`),
-        "x-default": absoluteUrl(`/projects/${slug}/`),
-      },
+      languages: alternateLanguages(`/projects/${slug}`),
     },
     openGraph: {
       type: "article",

@@ -28,6 +28,71 @@
 
 /** Spec row labels. Keyed on the exact English label as it appears in content/products. */
 export const SPEC_LABELS_PT: Record<string, string> = {
+  /*
+    2026-09-17. Every one of these came out of
+    `node scripts/translate-products-pt.mjs --all`, which counts the labels the
+    glossary could not translate and how many rows carry each. Ordered by row count,
+    because a label on 55 rows is 55 English lines on Portuguese pages.
+  */
+  "Bearings": "Rolamentos",
+  "Leaf size": "Medida da asa",
+  "Knuckle diameter": "Diâmetro do nó",
+  "Maximum load capacity (2 hinges)": "Capacidade máxima de carga (2 dobradiças)",
+  "Minimum door thickness": "Espessura mínima da porta",
+  "Maximum door width": "Largura máxima da porta",
+  "Milling cutter diameter": "Diâmetro da fresa",
+  "Routing length": "Comprimento do rasgo",
+  "Routing depth": "Profundidade do rasgo",
+  "Opening angle": "Ângulo de abertura",
+  "Adjustment": "Regulagem",
+  "Set configuration": "Configuração do conjunto",
+  "Hold-open range": "Faixa de retenção",
+  "Closing valve": "Válvula de fechamento",
+  "Accessories": "Acessórios",
+  "Bolts": "Ferrolhos",
+  "Options": "Opções",
+  "Style": "Estilo",
+  "Grip reach": "Alcance do punho",
+  "Wall cutout": "Recorte na parede",
+  "Size1": "Medida 1",
+  "Size2": "Medida 2",
+  "Size3": "Medida 3",
+  "Size4": "Medida 4",
+  "Size5": "Medida 5",
+  "Includes": "Inclui",
+  "Use": "Uso",
+  "Market": "Mercado",
+  "Finishes": "Acabamentos",
+  "Durability": "Durabilidade",
+  "Design": "Design",
+  "Hooks": "Ganchos",
+  "Mounting": "Fixação",
+  "Sizes": "Medidas",
+  "Cut-out": "Recorte",
+  "Footprint": "Área de apoio",
+  "Height above fixing": "Altura acima da fixação",
+  "Specifications": "Especificações",
+  "Minimum wall depth": "Profundidade mínima da parede",
+  "Door cutout": "Recorte na porta",
+  "Follower": "Seguidor",
+  "Cylinder apertures": "Aberturas para cilindro",
+  "Used with": "Usado com",
+  "Screws": "Parafusos",
+  "Key": "Chave",
+  "Process": "Processo",
+  "Plate length": "Comprimento do espelho",
+  "Series": "Série",
+  "Rosette": "Roseta",
+  "Applications": "Aplicações",
+  "Drop": "Queda",
+  "Stem": "Haste",
+  "Cover": "Tampa",
+  "Lengths": "Comprimentos",
+  "End to fixing": "Da ponta à fixação",
+  "Second centre": "Segundo centro",
+  "Model": "Modelo",
+  "Base width": "Largura da base",
+  "Bracket": "Suporte",
   /* packing */
   "Pieces per carton": "Peças por caixa",
   "Carton size": "Dimensões da caixa",
@@ -327,6 +392,18 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Glass Door Handle": "Puxador para porta de vidro",
   "Stainless Steel Glass Door Pull Handle": "Puxador em inox para porta de vidro",
   "Brass Pull Handle": "Puxador de latão",
+  /*
+    2026-09-17, the 55 stainless and 21 concealed hinges another session added the same
+    day. The translator refuses to run on an unmapped name rather than falling back to the
+    category — the defect that named 582 Spanish records after their own category in
+    September. Two lines instead of weeks.
+
+    "Dobradiça com rolamento" rather than a calque of "ball bearing": the Brazilian trade
+    names the hinge after what is in the knuckle, and BB in the model number carries the
+    count for anyone who reads the code.
+  */
+  "Ball Bearing Hinge": "Dobradiça com rolamento",
+  "Concealed Hinge": "Dobradiça oculta",
   "Glass Door Patch Fittings": "Ferragens para porta de vidro",
   "Glass Door Patch Fitting Set": "Conjunto de ferragens para porta de vidro",
   "Brass and Steel Hinges": "Dobradiças de latão e aço",
@@ -464,6 +541,14 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  "4 × ball bearing": "4 × rolamento",
+  "2 × ball bearing": "2 × rolamento",
+  "1 × ball bearing": "1 × rolamento",
+  "0 × ball bearing": "0 × rolamento",
+  "2 × copper gasket": "2 × arruela de cobre",
+  "Stainless Steel 304/316L": "Aço inoxidável 304/316L",
+  "Pure Copper": "Cobre puro",
+  "Two hydraulic / 2+1": "Duas hidráulicas / 2+1",
   /* handing and reversibility */
   "Fully reversible, left or right hand": "Totalmente reversível, mão direita ou esquerda",
   "Fully reversible for left or right-hand doors":

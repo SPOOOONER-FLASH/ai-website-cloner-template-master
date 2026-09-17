@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
+import { SPEC_LABELS_ES } from "@/data/es-glossary";
+import { SPEC_LABELS_PT } from "@/data/pt-glossary";
 
 /**
  * A side-by-side spec table for one category.
@@ -77,6 +79,16 @@ export function SpecMatrix({
   if (products.length < MIN_ROWS) return null;
   const t = COPY[locale];
   const es = locale === "es";
+  const pt = locale === "pt";
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  /*
+    The column HEADING is the English label until it is translated. Positional lookup gets
+    the VALUES right in any locale — see the note below — but the heading is the label
+    itself, so it needs the glossary. "Door thickness" was English on 76 Portuguese pages
+    for exactly this reason: the values beside it were already Portuguese.
+  */
+  const labelFor = (label: string) =>
+    es ? (SPEC_LABELS_ES[label] ?? label) : pt ? (SPEC_LABELS_PT[label] ?? label) : label;
 
   /*
     Pick the columns from the data.
@@ -122,7 +134,8 @@ export function SpecMatrix({
         */
         const index = (product.specs ?? []).findIndex((r) => r.label === label);
         if (index < 0) return null;
-        return (es ? product.specsEs?.[index]?.value : product.specs?.[index]?.value) ?? null;
+        const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+        return (localeRows?.[index]?.value ?? product.specs?.[index]?.value) ?? null;
       });
       return { product, cells, filled: cells.filter(Boolean).length };
     })
@@ -132,7 +145,7 @@ export function SpecMatrix({
   if (rows.length < MIN_ROWS) return null;
 
   const shown = rows.slice(0, MAX_ROWS);
-  const href = (slug: string) => (es ? `/es/products/${categorySlug}/${slug}/` : `/products/${categorySlug}/${slug}/`);
+  const href = (slug: string) => `${prefix}/products/${categorySlug}/${slug}/`;
 
   return (
     <section className="layout mt-96 lg:mt-136" aria-labelledby="compare-heading">
@@ -156,7 +169,7 @@ export function SpecMatrix({
                     scope="col"
                     className="py-12 pr-16 text-left font-regular text-ink-secondary"
                   >
-                    {label}
+                    {labelFor(label)}
                   </th>
                 ))}
               </tr>
@@ -198,7 +211,7 @@ export function SpecMatrix({
         */}
         {showCompareLink ? (
           <Link
-            href={es ? `/es/compare/${categorySlug}/` : `/compare/${categorySlug}/`}
+            href={`${prefix}/compare/${categorySlug}/`}
             className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"
           >
             {t.openCompare}

@@ -69,7 +69,7 @@ export function FinderModeSwitch({
   className?: string;
 }) {
   const t = COPY[locale];
-  const base = locale === "es" ? "/es" : "";
+  const base = locale === "en" ? "" : `/${locale}`;
 
   const items = [
     { key: "catalogue" as const, href: `${base}/product-finder/`, label: t.catalogue, hint: t.catalogueHint },

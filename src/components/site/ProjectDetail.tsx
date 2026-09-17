@@ -59,15 +59,26 @@ export function ProjectDetail({
 }) {
   const spanish = locale === "es";
   const text = copy[locale];
-  const name = spanish ? project.nameEs ?? project.name : project.name;
+  /*
+    Three locales. `buildingTypeEs` and the image labels have no Portuguese field yet, so
+    those fall back to English — visibly, which is the rule in src/lib/localised.ts.
+  */
+  const pick = <T,>(es: T | undefined, pt: T | undefined, en: T): T =>
+    (spanish ? es : locale === "pt" ? pt : undefined) ?? en;
+
+  const name = pick(project.nameEs, project.namePt, project.name);
   const buildingType = spanish
     ? project.buildingTypeEs ?? project.buildingType
     : project.buildingType;
-  const summary = spanish ? project.summaryEs ?? project.summary : project.summary;
-  const body = spanish ? project.bodyEs ?? project.body : project.body;
-  const projectsHref = spanish ? "/es/projects/" : "/projects/";
-  const contactHref = spanish ? "/es/contact/" : "/contact/";
-  const homeHref = spanish ? "/es/" : "/";
+  const summary = pick(project.summaryEs, project.summaryPt, project.summary);
+  /* Paragraph for paragraph or the whole English body — a half-translated page reads as
+     a rendering bug rather than as a gap. Same rule as NewsDetail. */
+  const localeBody = spanish ? project.bodyEs : locale === "pt" ? project.bodyPt : undefined;
+  const body = localeBody?.length === project.body.length ? localeBody : project.body;
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  const projectsHref = `${prefix}/projects/`;
+  const contactHref = `${prefix}/contact/`;
+  const homeHref = `${prefix}/`;
   const localiseImageLabel = (label: string, labelEs?: string) =>
     spanish ? labelEs ?? label : label;
   const relatedProducts = project.productModels
