@@ -76,8 +76,8 @@ test("footer exposes only the four direct buying destinations", () => {
   assert.deepEqual(
     navigation.footer,
     [
-      { label: "Contact", labelEs: "Contacto", href: "/contact" },
-      { label: "FAQ", labelEs: "Preguntas frecuentes", href: "/faq" },
+      { label: "Contact", labelEs: "Contacto", labelPt: "Contato", href: "/contact" },
+      { label: "FAQ", labelEs: "Preguntas frecuentes", labelPt: "Perguntas frequentes", href: "/faq" },
     ],
   );
   assert.match(footer, /siteSettings\.alibaba\.label/);

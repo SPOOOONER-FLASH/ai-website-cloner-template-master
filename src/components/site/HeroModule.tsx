@@ -3,6 +3,7 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 import { EditorialAtlas } from "./EditorialAtlas";
 import { ArrowLink } from "./ArrowLink";
 import { cn } from "@/lib/utils";
+import { localeFromPath } from "@/data/locales";
 import type { HeroModuleContent } from "@/types/fsb-modules";
 
 /**
@@ -151,7 +152,7 @@ function HeroSide({
             >
               {media.src === "/images/editorial/hyde-real-product-atlas.webp" ? (
                 <div className="[&>div]:aspect-[3/2]">
-                  <EditorialAtlas locale={href.startsWith("/es") ? "es" : "en"} />
+                  <EditorialAtlas locale={localeFromPath(href)} />
                 </div>
               ) : <MediaPlaceholder
                 {...media}

@@ -1,7 +1,13 @@
 import { representatives } from "../data/representatives.ts";
 import { siteSettings } from "../data/navigation.ts";
-import type { Locale } from "../data/site.ts";
-import { hasSpanishMirror } from "./spanish-mirror.ts";
+import { type Locale } from "../data/locales.ts";
+
+/*
+  The language column and the trigger label live in ./language-choices.ts and are
+  re-exported here, so every caller still asks one module about the panel. They moved on
+  2026-09-17 to be reachable from a unit test — see that file's header.
+*/
+export { languageChoices, triggerLabel, type LanguageChoice } from "./language-choices.ts";
 
 /**
  * What the location-and-language panel offers, assembled from data that already exists.
@@ -37,20 +43,6 @@ import { hasSpanishMirror } from "./spanish-mirror.ts";
  * only when it does not — rather than producing a 404 from a menu.
  */
 
-export interface LanguageChoice {
-  /** BCP 47, for `lang` and `hreflang`. */
-  code: Locale;
-  /** Endonym: a reader looking for their own language scans for their own word for it. */
-  label: string;
-  href: string;
-  current: boolean;
-  /**
-   * True when this page itself exists in that language. False means the link goes to that
-   * language's home page instead, and the panel says so rather than pretending.
-   */
-  samePage: boolean;
-}
-
 export interface ContactChoice {
   region: string;
   /** Every city we can be reached in for that region, in the order the data lists them. */
@@ -59,30 +51,6 @@ export interface ContactChoice {
   email: string;
   /** What these addresses honestly are — see the header of representatives.ts. */
   note?: string;
-}
-
-/** The language half of the panel, for the page currently being viewed. */
-export function languageChoices(pathname: string, locale: Locale): LanguageChoice[] {
-  const isSpanish = locale === "es";
-  const englishPath = isSpanish ? pathname.replace(/^\/es/, "") || "/" : pathname;
-  const mirrored = hasSpanishMirror(englishPath);
-
-  return [
-    {
-      code: "en",
-      label: "English",
-      href: englishPath,
-      current: !isSpanish,
-      samePage: true,
-    },
-    {
-      code: "es",
-      label: "Español",
-      href: mirrored ? `/es${englishPath === "/" ? "" : englishPath}` : "/es",
-      current: isSpanish,
-      samePage: mirrored,
-    },
-  ];
 }
 
 /**
@@ -115,33 +83,18 @@ export function contactChoices(locale: Locale = "en"): ContactChoice[] {
   }
 
   const factory: ContactChoice = {
-    region: es ? "China (fábrica)" : "China (factory)",
+    region: locale === "en" ? "China (factory)" : "China (fábrica)",
     cities: [`${siteSettings.contact.city}, ${siteSettings.contact.province}`],
     email: siteSettings.contact.brandEmail ?? siteSettings.contact.email,
-    note: es
-      ? "Donde se fabrica todo. Visitas de fábrica e inspección por tercero bienvenidas."
-      : "Where everything is made. Factory visits and third-party inspection are welcome.",
+    note:
+      locale === "es"
+        ? "Donde se fabrica todo. Visitas de fábrica e inspección por tercero bienvenidas."
+        : locale === "pt"
+          ? "Onde tudo é fabricado. Visitas à fábrica e inspeção por terceiros são bem-vindas."
+          : "Where everything is made. Factory visits and third-party inspection are welcome.",
   };
 
   return [factory, ...grouped.values()];
-}
-
-/**
- * The two-part label on the trigger: OTHER | CURRENT.
- *
- * It used to read "INT | EN" — a region guess beside the current language. The client
- * struck the region on 2026-09-09, and it deserved striking twice over. "INT" is not a
- * place; it is jargon standing in for "we did not detect you", and detecting a reader is
- * something a static export cannot do anyway. Worse, it spent the header's only language
- * affordance on a word that tells a Spanish-speaking buyer nothing.
- *
- * So both slots now carry languages, and the FIRST one is the language you are NOT
- * reading. That ordering is the whole point: a buyer scanning the header sees "ES" and
- * learns in one glance that a Spanish site exists, which is the only thing this control
- * can usefully advertise. The current language sits second, as state rather than offer.
- */
-export function triggerLabel(locale: Locale): string {
-  return locale === "es" ? "EN | ES" : "ES | EN";
 }
 
 export const localePickerCopy = {
@@ -151,7 +104,7 @@ export const localePickerCopy = {
     languages: "Language",
     contacts: "Your nearest contact",
     close: "Close",
-    notMirrored: "goes to the Spanish home page — this page is English only",
+    notMirrored: "this page is English only — the link goes to that language's home page",
     current: "current",
   },
   es: {
@@ -160,7 +113,7 @@ export const localePickerCopy = {
     languages: "Idioma",
     contacts: "Su contacto más cercano",
     close: "Cerrar",
-    notMirrored: "lleva a la portada en español — esta página sólo existe en inglés",
+    notMirrored: "esta página sólo existe en inglés — el enlace lleva a la portada de ese idioma",
     current: "actual",
   },
   pt: {
@@ -169,7 +122,7 @@ export const localePickerCopy = {
     languages: "Idioma",
     contacts: "O seu contacto mais próximo",
     close: "Fechar",
-    notMirrored: "leva à página inicial em português — esta página só existe em inglês",
+    notMirrored: "esta página só existe em inglês — a ligação leva à página inicial desse idioma",
     current: "actual",
   },
 } as const;

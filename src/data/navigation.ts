@@ -18,6 +18,7 @@ import type { Locale } from "@/data/site";
 export interface NavLink {
   label: string;
   labelEs?: string;
+  labelPt?: string;
   href: string;
 }
 
@@ -105,7 +106,13 @@ export const siteSettings = settings as SiteSettings;
  * because nobody translated it is worse than one that shows the English word.
  */
 export function navLabel(link: NavLink, locale: Locale): string {
-  return locale === "es" ? (link.labelEs ?? link.label) : link.label;
+  /*
+    English, not the other translation, when a label is missing — see src/lib/localised.ts.
+    A Portuguese menu with one Spanish item in it looks finished and is not.
+  */
+  if (locale === "es") return link.labelEs ?? link.label;
+  if (locale === "pt") return link.labelPt ?? link.label;
+  return link.label;
 }
 
 /**

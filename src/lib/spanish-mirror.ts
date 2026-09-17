@@ -154,10 +154,59 @@ export function hasPortugueseMirror(enPath: string): boolean {
   );
 }
 
+/**
+ * Routes that exist in ONE language and have no English original.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY A PAGE WOULD BE WRITTEN THIS WAY, AND WHY IT BREAKS THE MIRROR MODEL
+ *
+ * /pt/ferragens-porta-corta-fogo/ is a Brazilian fire-door page written for a market that
+ * reads ABNT rather than EN 1125. It is not a translation of anything; there is no English
+ * page it corresponds to. Every other localised route on this site is `/{locale}` + an
+ * English path, which is the assumption the whole module is built on — strip the prefix,
+ * ask whether the mirror exists.
+ *
+ * Strip the prefix here and you get `/ferragens-porta-corta-fogo/`, which is not a route.
+ * On 2026-09-17 the footer offered exactly that as its "English" link and the dead-link
+ * audit caught it: one broken target, on the one page that most needed to work, since it
+ * is the landing page the SAGA Portas enquiry came in through.
+ *
+ * Listed by their PREFIX-STRIPPED path so the lookup matches the rest of this module.
+ */
+const LOCALE_ONLY_ROUTES = new Map<string, Locale>([["/ferragens-porta-corta-fogo", "pt"]]);
+
+/** The single language a route exists in, or null when it is a normal mirrored path. */
+export function soleLocaleOf(enPath: string): Locale | null {
+  const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
+  return LOCALE_ONLY_ROUTES.get(clean) ?? null;
+}
+
 /** Every locale whose mirror of this English path exists. Always includes "en". */
 export function mirrorsOf(enPath: string): Locale[] {
+  const sole = soleLocaleOf(enPath);
+  if (sole) return [sole];
   const locales: Locale[] = ["en"];
   if (hasSpanishMirror(enPath)) locales.push("es");
   if (hasPortugueseMirror(enPath)) locales.push("pt");
   return locales;
+}
+
+/**
+ * Where a language switch on this page should point, and whether it is really this page.
+ *
+ * One function for the footer anchors and the panel's language column, because they have
+ * to agree — a reader who sees Português in the panel and Português in the footer is
+ * entitled to land in the same place, and the two lists drifted apart once already.
+ *
+ * `samePage: false` is the honest branch: no link out of a language switch may 404, so a
+ * page with no counterpart sends the reader to that language's home and the UI says so.
+ */
+export function mirrorHref(
+  enPath: string,
+  code: Locale,
+): { href: string; samePage: boolean } {
+  const home = code === "en" ? "/" : `/${code}`;
+  if (!mirrorsOf(enPath).includes(code)) return { href: home, samePage: false };
+  if (code === "en") return { href: enPath || "/", samePage: true };
+  return { href: `/${code}${enPath === "/" ? "" : enPath}`, samePage: true };
 }

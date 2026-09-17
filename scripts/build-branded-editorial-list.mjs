@@ -94,24 +94,24 @@ const DOCUMENTED_FACTORY_PHOTOGRAPHS = [
 ];
 
 /*
-  ⚠ UNRESOLVED, 2026-09-16: `factory-cnc-machining.webp` has two provenance records and
-  they disagree.
+  RESOLVED, 2026-09-17, by the client: `factory-cnc-machining.webp` is our factory.
 
-  The preview README calls it a "real Canton Hyland CNC photograph — approved edit removes
-  only the old oval mark". IMAGE_CREDITS.md lists it in the generated-asset table, sourced
-  from a hash-named PNG (`423b1423….png`, 1776×1184), with the note "Accept for demo;
-  verify authenticity".
+  The contradiction it replaces: the preview README called it a "real Canton Hyland CNC
+  photograph — approved edit removes only the old oval mark", while IMAGE_CREDITS.md listed
+  it in the GENERATED-asset table, sourced from a hash-named PNG (`423b1423….png`,
+  1776×1184), with the note "Accept for demo; verify authenticity". Both could not be true,
+  and the file carries the HYDE mark, which on this catalogue means "this is ours".
 
-  Those cannot both be true, and the consequence is not cosmetic: this file carries the
-  HYDE mark, and on this catalogue the mark means "this is ours". Stamping it on a
-  generated picture of a factory floor is the same class of claim the whole image rule
-  exists to prevent, one step removed from the product.
+  The client answered the question directly — 「是我们厂」 — so the preview README's record
+  is the correct one and the credits row was mis-filed: the hash-named PNG is the client's
+  own supplied photograph, named the way their transfer named it, not a generation output.
+  IMAGE_CREDITS.md is corrected in the same commit.
 
-  It is left marked rather than quietly dropped, because dropping it would hide the
-  question. Somebody has to ask the client which record is right. It is on the list in
-  docs/research/2026-09-16-brazil-saga-portas.md.
+  Recording it here rather than only in chat, because a chat turn does not survive the next
+  session and this file is what the next session reads. The rule that produced the question
+  stands: a photograph carrying our mark must have a provenance record, and two records
+  that disagree are treated as no record until somebody asks the client.
 */
-
 /**
  * What the file's own sidecar says it is.
  *

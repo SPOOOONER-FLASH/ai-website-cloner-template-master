@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { LocalePicker } from "./LocalePicker";
 import type { MenuCategory } from "@/data/categories";
+import { localeFromPath } from "@/data/locales";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SearchDialog } from "./SearchDialog";
@@ -55,6 +56,13 @@ const companyShelfLinks = {
     { label: "Ferias", detail: "Encuentre HYDE en mercados globales", href: "/events" },
     { label: "Certificados", detail: "Informes verificados por modelo", href: "/certifications" },
   ],
+  pt: [
+    { label: "A empresa", detail: "Fabricação desde 1998", href: "/company" },
+    { label: "Aplicações", detail: "O que cada tipo de obra exige", href: "/projects" },
+    { label: "Serviços", detail: "Apoio na seleção e na especificação", href: "/services" },
+    { label: "Feiras", detail: "Encontre a HYDE nos mercados globais", href: "/events" },
+    { label: "Certificados", detail: "Relatórios verificados por modelo", href: "/certifications" },
+  ],
 } as const;
 
 /*
@@ -79,6 +87,12 @@ const buyShelfLinks = {
     { label: "Descargas", detail: "Catálogo y documentos verificados", href: "/downloads" },
     { label: "Lista de precios", detail: "Solicite precios de exportación", href: "/request/price-list" },
   ],
+  pt: [
+    { label: "Contato", detail: "Fale com um especialista em exportação", href: "/contact" },
+    { label: "Perguntas frequentes", detail: "Pedido mínimo, prazo, amostras, pagamento, OEM", href: "/faq" },
+    { label: "Downloads", detail: "Catálogo e documentos verificados", href: "/downloads" },
+    { label: "Lista de preços", detail: "Solicite preços de exportação", href: "/request/price-list" },
+  ],
 } as const;
 
 /**
@@ -101,9 +115,16 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [openShelf, setOpenShelf] = useState<ShelfName | null>(null);
-  const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
-  const locale = isSpanish ? "es" : "en";
-  const homeHref = isSpanish ? "/es" : "/";
+  /*
+    Read off the path, for all three locales. This was `pathname.startsWith("/es/")` until
+    2026-09-17, which made every /pt/ page compute `locale = "en"` — English labels on the
+    Portuguese site, and nav links pointing back out of it. See localeFromPath's note.
+  */
+  const locale = localeFromPath(pathname);
+  const homeHref = locale === "en" ? "/" : `/${locale}`;
+  /* Copy in the page's own language, in source order en / es / pt. */
+  const say = (en: string, es: string, pt: string) =>
+    locale === "es" ? es : locale === "pt" ? pt : en;
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
   const companyCurrent = companyShelfLinks[locale].some((link) =>
     isCurrent(localisedHref(link.href, locale)),
@@ -250,7 +271,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                           buyCurrent && "current-nav",
                         )}
                       >
-                        {isSpanish ? "Comprar ahora" : "Buy it now"}
+                        {say("Buy it now", "Comprar ahora", "Comprar agora")}
                       </button>
                     );
                   }
@@ -296,10 +317,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                   they talk to. `src/lib/locale-picker.ts` records why that is a better use
                   of the space than the globe animation the client asked about.
                 */}
-                <LocalePicker locale={isSpanish ? "es" : "en"} />
+                <LocalePicker locale={locale} />
                 <button
                   type="button"
-                  aria-label={isSpanish ? "Buscar" : "Search"}
+                  aria-label={say("Search", "Buscar", "Pesquisar")}
                   aria-expanded={searchOpen}
                   onClick={() => {
                     setOpenShelf(null);
@@ -311,7 +332,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 </button>
                 <button
                   type="button"
-                  aria-label={isSpanish ? "Abrir menú" : "Open menu"}
+                  aria-label={say("Open menu", "Abrir menú", "Abrir menu")}
                   ref={menuTriggerRef}
                   aria-controls="site-menu-dialog"
                   aria-expanded={menuOpen}
@@ -345,7 +366,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         */}
         <div className="layout border-t border-line bg-surface xl:hidden">
           <nav
-            aria-label={isSpanish ? "Navegación principal" : "Main navigation"}
+            aria-label={say("Main navigation", "Navegación principal", "Navegação principal")}
             className="nav-rail col-content"
           >
             {headerNav
@@ -408,7 +429,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     }}
                     className="nav-rail-cta"
                   >
-                    {isSpanish ? "Comprar ahora" : "Buy it now"}
+                    {say("Buy it now", "Comprar ahora", "Comprar agora")}
                     <span aria-hidden="true">›</span>
                   </button>
                 );
@@ -431,7 +452,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="products-shelf"
-        aria-label={isSpanish ? "Productos" : "Products"}
+        aria-label={say("Products", "Productos", "Produtos")}
         aria-hidden={openShelf !== "products"}
         className={cn("header-shelf", openShelf === "products" && "header-shelf-open")}
       >
@@ -440,19 +461,21 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
               <div>
                 <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {isSpanish ? "Productos" : "Products"}
+                  {say("Products", "Productos", "Produtos")}
                 </p>
                 <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {isSpanish
-                    ? "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una."
-                    : "Fifteen product families. The number is how many verified records each one holds."}
+                  {say(
+                    "Fifteen product families. The number is how many verified records each one holds.",
+                    "Quince familias de producto. El número es cuántas referencias verificadas contiene cada una.",
+                    "Quinze famílias de produto. O número é quantas referências verificadas cada uma contém.",
+                  )}
                 </p>
                 <Link
                   href={localisedHref("/product-finder", locale)}
                   onClick={() => setOpenShelf(null)}
                   className="short-marker mt-16 inline-block text-c1 text-ink no-underline"
                 >
-                  {isSpanish ? "Buscador de productos" : "Product Finder"}
+                  {say("Product Finder", "Buscador de productos", "Localizador de produtos")}
                 </Link>
               </div>
               {/* Four columns of fifteen: the whole catalogue reachable in one hover
@@ -469,7 +492,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                         className="header-shelf-link block border-t border-line pt-12 text-ink no-underline"
                       >
                         <span className="short-marker text-c1">
-                          {isSpanish ? category.labelEs : category.label}
+                          {say(category.label, category.labelEs, category.labelPt)}
                         </span>
                         <span className="ml-8 text-c2 tabular-nums text-ink-tertiary">
                           {category.count}
@@ -495,14 +518,14 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                                   to a page that does not exist is worse than a weak one.
                                 */
                                 href={
-                                  isSpanish
-                                    ? `/es/collections/${category.slug}-${child.slug}/`
-                                    : `/collections/${category.slug}-${child.slug}/`
+                                  locale === "en"
+                                    ? `/collections/${category.slug}-${child.slug}/`
+                                    : `/${locale}/collections/${category.slug}-${child.slug}/`
                                 }
                                 onClick={() => setOpenShelf(null)}
                                 className="block py-2 text-c2 text-ink-secondary no-underline hover:text-ink"
                               >
-                                {isSpanish ? child.labelEs : child.label}
+                                {say(child.label, child.labelEs, child.labelPt)}
                               </Link>
                             </li>
                           ))}
@@ -519,7 +542,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="company-shelf"
-        aria-label={isSpanish ? "Empresa" : "Company"}
+        aria-label={say("Company", "Empresa", "Empresa")}
         aria-hidden={openShelf !== "company"}
         className={cn("header-shelf", openShelf === "company" && "header-shelf-open")}
       >
@@ -528,12 +551,14 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
             <div className="col-content grid gap-32 xl:grid-cols-[minmax(16rem,.55fr)_minmax(0,2.45fr)]">
               <div>
                 <p className="text-c2 uppercase tracking-[.12em] text-ink-secondary">
-                  {isSpanish ? "Empresa" : "Company"}
+                  {say("Company", "Empresa", "Empresa")}
                 </p>
                 <p className="mt-12 max-w-[28rem] text-c1 text-ink-secondary">
-                  {isSpanish
-                    ? "La fábrica, sus mercados y el apoyo técnico detrás de HYDE."
-                    : "The factory, markets and technical support behind HYDE."}
+                  {say(
+                    "The factory, markets and technical support behind HYDE.",
+                    "La fábrica, sus mercados y el apoyo técnico detrás de HYDE.",
+                    "A fábrica, os mercados e o apoio técnico por trás da HYDE.",
+                  )}
                 </p>
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-5">
@@ -560,7 +585,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       <section
         id="buy-shelf"
-        aria-label={isSpanish ? "Comprar ahora" : "Buy it now"}
+        aria-label={say("Buy it now", "Comprar ahora", "Comprar agora")}
         aria-hidden={openShelf !== "buy"}
         className={cn("header-shelf", openShelf === "buy" && "header-shelf-open")}
       >
@@ -602,7 +627,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
       {menuOpen ? (
         <SiteMenuDrawer
-          isSpanish={isSpanish}
+          locale={locale}
           currentPath={pathname}
           categories={categories}
           onClose={closeMenu}

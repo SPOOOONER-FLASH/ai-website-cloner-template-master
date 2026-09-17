@@ -254,12 +254,20 @@ must be confirmed by the client as faithful documentary photography before publi
 They remain archived for client review, but the public homepage and Company routes do not
 reference them; those surfaces use clearly identified representative editorial studies instead.
 
+**One of them has since been cleared individually.** `factory-cnc-machining.webp` had two
+records that disagreed — this table's "verify authenticity" verdict against the preview
+README's "real Canton Hyland CNC photograph" — and it is the one file in the set that
+carries the HYDE mark, which on this catalogue means "this is ours". The client answered
+on 2026-09-17: 是我们厂. The preview README's record is the correct one; the hash-named
+source PNG is the client's own photograph named as their transfer named it. Nothing else
+in this table is cleared by that answer — it was asked and answered about one file.
+
 | File | Source file | Output | Size | P11 verdict |
 |---|---|---|---|---|
 | `factory-polishing-workshop.webp` | e60a1601…png | 1776×1184 | 223.7 KB | Accept for demo; verify authenticity |
 | `factory-assembly-quality-line.webp` | f0315c17…png | 1776×1184 | 234.6 KB | Accept for demo; verify authenticity |
 | `factory-cnc-production.webp` | 63633323…png | 1776×1184 | 110.7 KB | Accept for demo; verify authenticity |
-| `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | Accept for demo; verify authenticity |
+| `factory-cnc-machining.webp` | 423b1423…png | 1776×1184 | 193.6 KB | **Confirmed by the client 2026-09-17 as their own factory.** Cleared for public use; it carries the HYDE mark. |
 | `showroom-product-gallery.webp` | ef4f1112…png | 1776×1184 | 135.3 KB | Accept for demo; verify authenticity |
 | `showroom-emergency-hardware.webp` | ba72e861…png | 2390×1593 | 177.4 KB | Accept for demo; strongest documentary image |
 | `material-innovation-workshop.webp` | 60d70746…png | 1776×1184 | 148.7 KB | Internal demo only; verify sign and facility accuracy |
