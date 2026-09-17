@@ -1,4 +1,8 @@
-export type ProductsLocale = "en" | "es";
+import { localised } from "../../lib/localised.ts";
+import { localisedHref } from "../../lib/spanish-mirror.ts";
+import type { Locale } from "@/data/site";
+/* Kept as a named alias so call sites read well; it is just Locale now. */
+export type ProductsLocale = Locale;
 
 interface LocalizedText {
   en: string;
@@ -222,33 +226,37 @@ const COPY = {
   },
 } as const;
 
-function localizedHref(href: string, locale: ProductsLocale): string {
-  if (locale === "en") return href;
-  return href === "/products/" ? "/es/products/" : `/es${href}`;
+/*
+  Was hard-coded to `/es`. With a third locale that silently sent Portuguese pages into the
+  Spanish tree — every link correct-looking and none of them right — so the prefix now comes
+  from the locale, and `localisedHref` decides whether the target actually exists.
+*/
+function localizedHref(href: string, locale: Locale): string {
+  return localisedHref(href, locale);
 }
 
-export function getProductsArchitecture(locale: ProductsLocale) {
-  const copy = COPY[locale];
+export function getProductsArchitecture(locale: Locale) {
+  const copy = localised(COPY, locale);
 
   return {
     ...copy,
     families: PRODUCT_FAMILIES.map((family) => ({
       slug: family.slug,
-      label: family.label[locale],
-      description: family.description[locale],
+      label: localised(family.label, locale),
+      description: localised(family.description, locale),
       href: localizedHref(`/products/${family.slug}/`, locale),
     })),
     story: PRODUCT_STORY.map((chapter) => ({
       ...chapter,
-      title: chapter.title[locale],
-      description: chapter.description[locale],
-      alt: chapter.alt[locale],
+      title: localised(chapter.title, locale),
+      description: localised(chapter.description, locale),
+      alt: localised(chapter.alt, locale),
       href: localizedHref(chapter.href, locale),
     })),
     photographySeries: PHOTOGRAPHY_SERIES.map((series) => ({
       ...series,
-      label: series.label[locale],
-      detail: series.detail[locale],
+      label: localised(series.label, locale),
+      detail: localised(series.detail, locale),
       href: localizedHref(series.href, locale),
     })),
   };

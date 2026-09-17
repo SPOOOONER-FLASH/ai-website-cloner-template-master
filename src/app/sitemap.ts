@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
+import { hasPortugueseMirror } from "@/lib/spanish-mirror";
 import { isoUploadDate } from "@/lib/upload-date";
 import { getTopLevelCategories } from "@/data/categories";
 import {
@@ -84,11 +85,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
     const en = absoluteUrl(`${clean}/`);
     const es = absoluteUrl(`/es${clean}/`);
+    const pt = absoluteUrl(`/pt${clean}/`);
 
     return buildLocaleSitemapEntries({
       en,
       es,
+      pt,
       bilingual: hasSpanishMirror(path),
+      portuguese: hasPortugueseMirror(path),
       priority,
       changeFrequency,
       lastModified,

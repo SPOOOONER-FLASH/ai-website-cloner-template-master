@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -194,7 +195,7 @@ function PromoCardBlock({
   onDismiss,
 }: {
   card: PromoCard;
-  locale: "en" | "es";
+  locale: Locale;
   onDismiss: (href: string) => void;
 }) {
   const { image, visual } = card;

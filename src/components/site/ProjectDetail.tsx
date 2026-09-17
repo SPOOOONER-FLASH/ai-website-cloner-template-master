@@ -6,6 +6,7 @@ import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
+import type { Locale } from "@/data/site";
 
 const copy = {
   en: {
@@ -34,6 +35,19 @@ const copy = {
     quote: "Consultar este paquete",
     all: "Todas las aplicaciones",
   },
+  pt: {
+    home: "Início",
+    projects: "Obras + Aplicações",
+    status: "Aplicação representativa",
+    note: "Este estudo mostra uma combinação possível de ferragens. Não é apresentado como uma obra concluída de um cliente identificado.",
+    brief: "Resumo da aplicação",
+    gallery: "Aplicação + ferragens",
+    related: "Produtos relacionados",
+    relatedNote:
+      "Confirme dimensões, âmbito dos ensaios, preparação da porta e acabamentos com a documentação técnica actual antes de encomendar.",
+    quote: "Consultar este conjunto",
+    all: "Todas as aplicações",
+  },
 } as const;
 
 export function ProjectDetail({
@@ -41,7 +55,7 @@ export function ProjectDetail({
   locale = "en",
 }: {
   project: Project;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const spanish = locale === "es";
   const text = copy[locale];

@@ -2,11 +2,12 @@ import type { NewsArticle } from "@/data/types";
 import visuals from "@/data/news-visuals.json";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import styles from "./NewsVisual.module.css";
+import type { Locale } from "@/data/site";
 
 type Visual = { src: string; width: number; height: number; crop: number[]; angle: number; tone: string; brand?: boolean };
 
 /** Real photographs in an SVG viewport: crop only empty field, never redraw hardware. */
-export function NewsVisual({ article, locale = "en" }: { article: NewsArticle; locale?: "en" | "es" }) {
+export function NewsVisual({ article, locale = "en" }: { article: NewsArticle; locale?: Locale }) {
   const label = locale === "es" ? article.heroImage.labelEs ?? article.heroImage.label : article.heroImage.label;
   const visual = (visuals as Record<string, Visual>)[article.slug];
   if (!visual) {

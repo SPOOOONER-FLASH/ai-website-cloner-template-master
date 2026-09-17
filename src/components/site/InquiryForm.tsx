@@ -1,4 +1,6 @@
 "use client";
+import type { Locale } from "@/data/site";
+import { localised } from "@/lib/localised";
 
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
@@ -6,8 +8,6 @@ import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
-type Locale = "en" | "es";
-
 interface Web3FormsResponse {
   success?: boolean;
   message?: string;
@@ -88,7 +88,7 @@ function queryValue(params: URLSearchParams, key: string): string {
  * required by Next.js when a statically rendered Client Component reads search params.
  */
 export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
-  const text = formCopy[locale];
+  const text = localised(formCopy, locale);
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));

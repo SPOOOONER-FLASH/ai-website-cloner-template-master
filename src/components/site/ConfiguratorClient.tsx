@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import dynamic from "next/dynamic";
 import type { FinderProduct } from "@/lib/product-finder";
@@ -59,7 +60,7 @@ export function ConfiguratorClient({
   locale = "en",
 }: {
   products: FinderProduct[];
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   return <Configurator products={products} locale={locale} />;
 }

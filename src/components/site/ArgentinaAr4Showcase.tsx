@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import { getProductByModel } from "@/data/products";
@@ -6,8 +7,6 @@ import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 const ar4Models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"] as const;
-
-type Locale = "en" | "es";
 type LocalizedProduct = Product & { nameEs?: string };
 
 const copy = {
@@ -28,6 +27,15 @@ const copy = {
     model: "Modelo",
     material: "Caja de hierro niquelado",
     aria: "Colección HYDE Argentina AR-4",
+  },
+  pt: {
+    eyebrow: "Mercado sazonal · Argentina",
+    title: "HYDE Argentina AR-4",
+    body: "Quatro caixas de fechadura de embutir compactas para distribuidores do mercado argentino, marca própria e consultas OEM.",
+    cta: "Ver a coleção AR-4",
+    model: "Modelo",
+    material: "Caixa de ferro niquelado",
+    aria: "Coleção HYDE Argentina AR-4",
   },
 } as const;
 

@@ -226,7 +226,15 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const referenceModel = productModelFor(product.slug);
   const name = (es && product.nameEs) || product.name;
   const summary = (es && product.summaryEs) || product.summary;
-  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs) ?? [];
+  /*
+    Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
+    on every Portuguese page while the title beside it was Portuguese — the page looked
+    translated and the specification was not, which is the one thing on a product page that
+    has to be right. Picking by locale, with English as the fallback, fixes it for every
+    locale added after this one too.
+  */
+  const localeSpecs = locale === "es" ? product.specsEs : locale === "pt" ? product.specsPt : undefined;
+  const specs = (localeSpecs?.length ? localeSpecs : product.specs) ?? [];
   const base = es ? "/es" : "";
   const heroImage = {
     ...product.heroImage,

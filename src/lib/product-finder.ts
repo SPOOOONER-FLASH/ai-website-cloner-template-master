@@ -1,5 +1,6 @@
 import type { Product } from "@/data/types";
 import { cardFigure, type CardFigure } from "./card-figure.ts";
+import { locales, type Locale } from "../data/locales.ts";
 
 /**
  * Product Finder core — faceted filtering over the catalogue.
@@ -64,6 +65,16 @@ export const FACET_LABELS_ES: Record<FacetKey, string> = {
   finish: "Acabado",
   doorType: "Tipo de puerta",
   certification: "Certificación",
+};
+
+export const FACET_LABELS_PT: Record<FacetKey, string> = {
+  category: "Categoria",
+  subCategory: "Tipo",
+  series: "Série",
+  material: "Material",
+  finish: "Acabamento",
+  doorType: "Tipo de porta",
+  certification: "Certificação",
 };
 
 /**
@@ -176,7 +187,7 @@ export type FinderProduct = Pick<
     static-export-performance.test.ts. Two short strings per locale cost about forty
     bytes each; the arrays they stand in for cost kilobytes.
   */
-  figure?: { en?: CardFigure; es?: CardFigure };
+  figure?: Partial<Record<Locale, CardFigure>>;
 };
 
 export function toFinderProduct(product: Product): FinderProduct {
@@ -197,7 +208,15 @@ export function toFinderProduct(product: Product): FinderProduct {
     summary: product.summary,
     /* Only the first clip. A configurator result is one product, not a playlist. */
     videos: product.videos?.length ? [product.videos[0]] : undefined,
-    figure: { en: cardFigure(product, "en"), es: cardFigure(product, "es") },
+    /*
+      Precomputed per locale so the catalogue card never imports the spec arrays. Built
+      from `locales` rather than a hand-written pair, so a new locale cannot be added to
+      site.ts and silently skipped here — which is what happened to Portuguese on the
+      first pass: the card fell back to English while everything around it was translated.
+    */
+    figure: Object.fromEntries(
+      locales.map((locale) => [locale, cardFigure(product, locale)]),
+    ) as Partial<Record<Locale, CardFigure>>,
   };
 }
 

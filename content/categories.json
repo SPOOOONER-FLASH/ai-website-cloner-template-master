@@ -20,7 +20,8 @@
             "ratio": "1 / 1",
             "label": "Fire door panic device"
           },
-          "nameEs": "Barras antipánico para puertas cortafuegos"
+          "nameEs": "Barras antipánico para puertas cortafuegos",
+          "namePt": "Barras antipânico para portas corta-fogo"
         },
         {
           "slug": "alarmed",
@@ -31,7 +32,8 @@
             "ratio": "1 / 1",
             "label": "Alarmed panic bar"
           },
-          "nameEs": "Barras antipánico con alarma"
+          "nameEs": "Barras antipánico con alarma",
+          "namePt": "Barras antipânico com alarme"
         },
         {
           "slug": "multi-point",
@@ -42,7 +44,8 @@
             "ratio": "1 / 1",
             "label": "Two point locking exit device"
           },
-          "nameEs": "Cierre multipunto"
+          "nameEs": "Cierre multipunto",
+          "namePt": "Travamento multiponto"
         },
         {
           "slug": "exterior-trim",
@@ -54,7 +57,8 @@
             "ratio": "1 / 1",
             "label": "Keyed exterior panic-device trim"
           },
-          "nameEs": "Manillas exteriores para antipánico"
+          "nameEs": "Manillas exteriores para antipánico",
+          "namePt": "Maçanetas externas para antipânico"
         },
         {
           "slug": "special-applications",
@@ -66,11 +70,13 @@
             "ratio": "1 / 1",
             "label": "Cold-room push bar exit device"
           },
-          "nameEs": "Aplicaciones especiales"
+          "nameEs": "Aplicaciones especiales",
+          "namePt": "Aplicações especiais"
         }
       ],
       "nameEs": "Barras antipánico",
-      "summaryEs": "Barras de empuje y barras de toque para rutas de evacuación, en versiones para puerta cortafuego, con alarma, de doble hoja y de doble punto de cierre."
+      "summaryEs": "Barras de empuje y barras de toque para rutas de evacuación, en versiones para puerta cortafuego, con alarma, de doble hoja y de doble punto de cierre.",
+      "namePt": "Barras antipânico"
     },
     {
       "slug": "night-latches-rim-locks",
@@ -83,7 +89,8 @@
         "label": "Night latch and rim lock"
       },
       "nameEs": "Cerraduras de sobreponer",
-      "summaryEs": "Cerraduras de sobreponer y de nudillo del catálogo Canton, para montaje en la cara de la puerta."
+      "summaryEs": "Cerraduras de sobreponer y de nudillo del catálogo Canton, para montaje en la cara de la puerta.",
+      "namePt": "Fechaduras de sobrepor"
     },
     {
       "slug": "stainless-steel-handles",
@@ -106,11 +113,13 @@
             "ratio": "1 / 1",
             "label": "T921 brass pull handle"
           },
-          "nameEs": "Tiradores de latón"
+          "nameEs": "Tiradores de latón",
+          "namePt": "Puxadores de latão"
         }
       ],
       "nameEs": "Manijas de acero inoxidable",
-      "summaryEs": "Tiradores y manijas de acero inoxidable para puertas de madera, metálicas y de vidrio."
+      "summaryEs": "Tiradores y manijas de acero inoxidable para puertas de madera, metálicas y de vidrio.",
+      "namePt": "Puxadores em aço inoxidável"
     },
     {
       "slug": "lever-handles",
@@ -123,7 +132,8 @@
         "label": "Canton Hyland stainless steel lever handle, photographed on a graded editorial field"
       },
       "nameEs": "Manijas de palanca",
-      "summaryEs": "Juegos de manija de palanca en acero inoxidable y zamak, para puertas comerciales y residenciales, en preparación tubular o de embutir."
+      "summaryEs": "Juegos de manija de palanca en acero inoxidable y zamak, para puertas comerciales y residenciales, en preparación tubular o de embutir.",
+      "namePt": "Maçanetas de alavanca"
     },
     {
       "slug": "knob-locks",
@@ -145,7 +155,8 @@
             "ratio": "1 / 1",
             "label": "Commercial lock"
           },
-          "nameEs": "Cerraduras comerciales"
+          "nameEs": "Cerraduras comerciales",
+          "namePt": "Fechaduras comerciais"
         },
         {
           "slug": "heavy-duty-cylindrical-locks",
@@ -157,7 +168,8 @@
             "ratio": "1 / 1",
             "label": "Heavy duty cylindrical lock"
           },
-          "nameEs": "Cerraduras cilíndricas de servicio pesado"
+          "nameEs": "Cerraduras cilíndricas de servicio pesado",
+          "namePt": "Fechaduras cilíndricas de uso pesado"
         },
         {
           "slug": "light-duty-cylindrical-locks",
@@ -168,7 +180,8 @@
             "ratio": "1 / 1",
             "label": "Light duty cylindrical lock"
           },
-          "nameEs": "Cerraduras cilíndricas de servicio ligero"
+          "nameEs": "Cerraduras cilíndricas de servicio ligero",
+          "namePt": "Fechaduras cilíndricas de uso leve"
         },
         {
           "slug": "tubular-locks",
@@ -180,7 +193,8 @@
             "ratio": "1 / 1",
             "label": "Tubular lock"
           },
-          "nameEs": "Cerraduras tubulares"
+          "nameEs": "Cerraduras tubulares",
+          "namePt": "Fechaduras tubulares"
         },
         {
           "slug": "wafer-locks",
@@ -191,11 +205,13 @@
             "ratio": "1 / 1",
             "label": "Wafer lock"
           },
-          "nameEs": "Cerraduras de oblea"
+          "nameEs": "Cerraduras de oblea",
+          "namePt": "Fechaduras de palheta"
         }
       ],
       "nameEs": "Cerraduras de pomo",
-      "summaryEs": "Cerraduras de pomo cilíndricas y tubulares, en funciones de entrada, privacidad, paso libre y comunicación."
+      "summaryEs": "Cerraduras de pomo cilíndricas y tubulares, en funciones de entrada, privacidad, paso libre y comunicación.",
+      "namePt": "Fechaduras de pomo"
     },
     {
       "slug": "bathroom-accessories",
@@ -208,7 +224,8 @@
         "label": "Stainless steel five-hook wall rail"
       },
       "nameEs": "Accesorios de baño",
-      "summaryEs": "Herrajes y accesorios de baño del catálogo oficial Canton."
+      "summaryEs": "Herrajes y accesorios de baño del catálogo oficial Canton.",
+      "namePt": "Acessórios de banheiro"
     },
     {
       "slug": "care-grab-bars",
@@ -231,7 +248,8 @@
             "ratio": "1 / 1",
             "label": "Flip-up grab bar beside a WC"
           },
-          "nameEs": "Barras de apoyo abatibles"
+          "nameEs": "Barras de apoyo abatibles",
+          "namePt": "Barras de apoio rebatíveis"
         },
         {
           "slug": "fixed-grab-bars",
@@ -243,9 +261,11 @@
             "ratio": "1 / 1",
             "label": "Fixed grab bar on a bathroom wall"
           },
-          "nameEs": "Barras de apoyo fijas"
+          "nameEs": "Barras de apoyo fijas",
+          "namePt": "Barras de apoio fixas"
         }
-      ]
+      ],
+      "namePt": "Barras de apoio"
     },
     {
       "slug": "brass-steel-hinges",
@@ -258,7 +278,8 @@
         "label": "Canton Hyland stainless steel door hinge, photographed on a graded editorial field"
       },
       "nameEs": "Bisagras de latón y acero",
-      "summaryEs": "Gamas de bisagras de latón, acero inoxidable y acero para puertas arquitectónicas."
+      "summaryEs": "Gamas de bisagras de latón, acero inoxidable y acero para puertas arquitectónicas.",
+      "namePt": "Dobradiças de latão e aço"
     },
     {
       "slug": "deadbolts",
@@ -271,7 +292,8 @@
         "label": "Keyed deadbolt lock set with strike plate"
       },
       "nameEs": "Cerrojos",
-      "summaryEs": "Cerrojos de cilindro simple y doble cilindro del catálogo Canton."
+      "summaryEs": "Cerrojos de cilindro simple y doble cilindro del catálogo Canton.",
+      "namePt": "Trincos"
     },
     {
       "slug": "door-closers",
@@ -284,7 +306,8 @@
         "label": "Concealed floor spring and door-closing hardware"
       },
       "nameEs": "Cierrapuertas",
-      "summaryEs": "Herrajes de cierre de puertas, incluidas aplicaciones de bisagra de piso oculta."
+      "summaryEs": "Herrajes de cierre de puertas, incluidas aplicaciones de bisagra de piso oculta.",
+      "namePt": "Molas aéreas"
     },
     {
       "slug": "grip-handle-sets",
@@ -297,7 +320,8 @@
         "label": "Concealed sliding door flush pull handle"
       },
       "nameEs": "Juegos de manija con placa",
-      "summaryEs": "Juegos de manija con placa, tiradores y manijas ocultas para puertas de entrada y corredizas."
+      "summaryEs": "Juegos de manija con placa, tiradores y manijas ocultas para puertas de entrada y corredizas.",
+      "namePt": "Conjuntos de puxador com espelho"
     },
     {
       "slug": "glass-door-accessories",
@@ -320,7 +344,8 @@
             "ratio": "1 / 1",
             "label": "Glass door patch fitting"
           },
-          "nameEs": "Herrajes de fijación para puertas de vidrio"
+          "nameEs": "Herrajes de fijación para puertas de vidrio",
+          "namePt": "Ferragens de fixação para portas de vidro"
         },
         {
           "slug": "glass-door-handles",
@@ -332,11 +357,13 @@
             "ratio": "1 / 1",
             "label": "Glass door pull handle"
           },
-          "nameEs": "Manijas para puertas de vidrio"
+          "nameEs": "Manijas para puertas de vidrio",
+          "namePt": "Puxadores para portas de vidro"
         }
       ],
       "nameEs": "Herrajes para puertas de vidrio",
-      "summaryEs": "Arañas, patch fittings y tiradores para conjuntos de vidrio templado sin marco."
+      "summaryEs": "Arañas, patch fittings y tiradores para conjuntos de vidrio templado sin marco.",
+      "namePt": "Ferragens para portas de vidro"
     },
     {
       "slug": "hardware-accessories",
@@ -358,7 +385,8 @@
             "ratio": "1 / 1",
             "label": "Armoured lock cover"
           },
-          "nameEs": "Escudos de seguridad"
+          "nameEs": "Escudos de seguridad",
+          "namePt": "Escudos de segurança"
         },
         {
           "slug": "door-viewers",
@@ -369,7 +397,8 @@
             "ratio": "1 / 1",
             "label": "Door viewer"
           },
-          "nameEs": "Mirillas"
+          "nameEs": "Mirillas",
+          "namePt": "Olhos mágicos"
         },
         {
           "slug": "door-stoppers",
@@ -380,7 +409,8 @@
             "ratio": "1 / 1",
             "label": "Door stopper"
           },
-          "nameEs": "Topes de puerta"
+          "nameEs": "Topes de puerta",
+          "namePt": "Batentes de porta"
         },
         {
           "slug": "power-transfer-devices",
@@ -391,7 +421,8 @@
             "ratio": "1 / 1",
             "label": "Door power transfer device"
           },
-          "nameEs": "Pasacables para puertas"
+          "nameEs": "Pasacables para puertas",
+          "namePt": "Passa-cabos para portas"
         },
         {
           "slug": "door-flush-bolts",
@@ -402,7 +433,8 @@
             "ratio": "1 / 1",
             "label": "Door flush bolt"
           },
-          "nameEs": "Pasadores embutidos"
+          "nameEs": "Pasadores embutidos",
+          "namePt": "Ferrolhos embutidos"
         },
         {
           "slug": "house-numbers",
@@ -413,7 +445,8 @@
             "ratio": "1 / 1",
             "label": "House number"
           },
-          "nameEs": "Números para viviendas"
+          "nameEs": "Números para viviendas",
+          "namePt": "Números para residências"
         },
         {
           "slug": "indicators",
@@ -424,7 +457,8 @@
             "ratio": "1 / 1",
             "label": "Door indicator"
           },
-          "nameEs": "Indicadores de libre/ocupado"
+          "nameEs": "Indicadores de libre/ocupado",
+          "namePt": "Indicadores de livre/ocupado"
         },
         {
           "slug": "latches",
@@ -435,7 +469,8 @@
             "ratio": "1 / 1",
             "label": "Door latch"
           },
-          "nameEs": "Picaportes"
+          "nameEs": "Picaportes",
+          "namePt": "Linguetas"
         },
         {
           "slug": "security-door-guards",
@@ -446,11 +481,13 @@
             "ratio": "1 / 1",
             "label": "Security door guard"
           },
-          "nameEs": "Cadenas de seguridad"
+          "nameEs": "Cadenas de seguridad",
+          "namePt": "Correntes de segurança"
         }
       ],
       "nameEs": "Accesorios de herrajes",
-      "summaryEs": "Mirillas, topes, pasacables, pasadores, indicadores, picaportes y protectores de puerta."
+      "summaryEs": "Mirillas, topes, pasacables, pasadores, indicadores, picaportes y protectores de puerta.",
+      "namePt": "Acessórios de ferragem"
     },
     {
       "slug": "lock-cases",
@@ -463,7 +500,8 @@
         "label": "Canton Hyland mortise lock case, photographed on a graded editorial field"
       },
       "nameEs": "Cerraduras de embutir",
-      "summaryEs": "Cajas de cerradura de embutir en múltiples combinaciones de entrada, distancia entre ejes y pestillos."
+      "summaryEs": "Cajas de cerradura de embutir en múltiples combinaciones de entrada, distancia entre ejes y pestillos.",
+      "namePt": "Fechaduras de embutir"
     },
     {
       "slug": "lock-cylinders",
@@ -476,7 +514,8 @@
         "label": "Canton Hyland euro-profile lock cylinder, photographed on a graded editorial field"
       },
       "nameEs": "Cilindros",
-      "summaryEs": "Cilindros de perfil europeo y con llave, incluidas aplicaciones de amaestramiento."
+      "summaryEs": "Cilindros de perfil europeo y con llave, incluidas aplicaciones de amaestramiento.",
+      "namePt": "Cilindros"
     },
     {
       "slug": "sliding-hook-locks",
@@ -489,7 +528,8 @@
         "label": "Hyland 881 SS sliding hook lock set"
       },
       "nameEs": "Cerraduras de gancho para correderas",
-      "summaryEs": "Herrajes de gancho para puertas corredizas y perfiles estrechos."
+      "summaryEs": "Herrajes de gancho para puertas corredizas y perfiles estrechos.",
+      "namePt": "Fechaduras de gancho para correr"
     },
     {
       "slug": "floor-springs-and-pivots",
@@ -512,7 +552,8 @@
             "ratio": "1 / 1",
             "label": "D-5061 floor spring"
           },
-          "nameEs": "Pivotes de piso"
+          "nameEs": "Pivotes de piso",
+          "namePt": "Molas de piso"
         },
         {
           "slug": "top-pivots",
@@ -524,7 +565,8 @@
             "ratio": "1 / 1",
             "label": "D-3010 top pivot"
           },
-          "nameEs": "Pivotes superiores"
+          "nameEs": "Pivotes superiores",
+          "namePt": "Pivôs superiores"
         },
         {
           "slug": "pivot-top-patches",
@@ -536,7 +578,8 @@
             "ratio": "1 / 1",
             "label": "D-3017 glass door top patch"
           },
-          "nameEs": "Herrajes superiores para vidrio"
+          "nameEs": "Herrajes superiores para vidrio",
+          "namePt": "Ferragens superiores para vidro"
         },
         {
           "slug": "overhead-door-closers",
@@ -548,7 +591,8 @@
             "ratio": "1 / 1",
             "label": "T-1073 overhead door closer"
           },
-          "nameEs": "Cierrapuertas superiores"
+          "nameEs": "Cierrapuertas superiores",
+          "namePt": "Molas aéreas"
         },
         {
           "slug": "hydraulic-hinges",
@@ -560,11 +604,13 @@
             "ratio": "1 / 1",
             "label": "JL606 hydraulic hinge"
           },
-          "nameEs": "Bisagras hidráulicas"
+          "nameEs": "Bisagras hidráulicas",
+          "namePt": "Dobradiças hidráulicas"
         }
       ],
       "nameEs": "Pivotes de piso y ejes de puerta",
-      "summaryEs": "Pivotes de piso, pivotes superiores, cierrapuertas y bisagras hidráulicas para puertas pivotantes de madera, metálicas y de vidrio templado."
+      "summaryEs": "Pivotes de piso, pivotes superiores, cierrapuertas y bisagras hidráulicas para puertas pivotantes de madera, metálicas y de vidrio templado.",
+      "namePt": "Molas de piso e pivôs"
     }
   ]
 }

@@ -36,6 +36,7 @@ export interface ImageRef {
   label: string;
   /** Spanish alt text; Spanish routes fall back to `label` when it is absent. */
   labelEs?: string;
+  labelPt?: string;
   /** Chinese source caption, for internal review. */
   labelZh?: string;
   /**
@@ -132,6 +133,7 @@ export interface Product {
   nameZh?: string;
   /** Spanish display name for the /es mirror. */
   nameEs?: string;
+  namePt?: string;
   /** Product family/series this belongs to, e.g. "Hyland 007". */
   series: string;
   /**
@@ -145,6 +147,7 @@ export interface Product {
   summaryZh?: string;
   /** Spanish summary, composed from the spec rows rather than translated. */
   summaryEs?: string;
+  summaryPt?: string;
   /**
    * Long-form product copy, as Markdown.
    *
@@ -168,6 +171,7 @@ export interface Product {
    * showing a gap.
    */
   specsEs?: SpecRow[];
+  specsPt?: SpecRow[];
   /** Base material, e.g. "Solid brass". */
   material: string;
   /** Surface finish(es), e.g. ["Satin stainless", "Matt black (PVD)"]. */
@@ -243,7 +247,9 @@ export interface Product {
    * English pair. Optional only until the next --write run backfills every record.
    */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -256,6 +262,7 @@ export interface Project {
   /** Project name, e.g. "Riverside Tower". */
   name: string;
   nameEs?: string;
+  namePt?: string;
   nameZh?: string;
   /** City. */
   location?: string;
@@ -273,9 +280,11 @@ export interface Project {
   /** One or two sentences for the listing card. */
   summary: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Body copy for the detail page. Paragraphs as separate array entries. */
   body: string[];
   bodyEs?: string[];
+  bodyPt?: string[];
   /** Model numbers used on this project — links the case study back to the catalogue. */
   productModels: string[];
   heroImage: ImageRef;
@@ -284,7 +293,9 @@ export interface Project {
   seoDescription: string;
   /** Spanish SERP copy. Kept separate from summaryEs so the visible intro stays untouched. */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -350,6 +361,7 @@ export interface PromoCard {
   /** Bold first line. */
   title: string;
   titleEs?: string;
+  titlePt?: string;
   /** Second line, set in the lighter weight. */
   titleLight?: string;
   titleLightEs?: string;
@@ -416,6 +428,7 @@ export interface NewsArticle {
   slug: string;
   title: string;
   titleEs?: string;
+  titlePt?: string;
   titleZh?: string;
   kind: NewsKind;
   /**
@@ -443,19 +456,23 @@ export interface NewsArticle {
     url: string;
     title: string;
     titleEs?: string;
+  titlePt?: string;
     /** Lowercase extension, drives the badge. */
     format: string;
     sizeBytes: number;
     /** What is inside, so the reader knows before spending a download. */
     note?: string;
     noteEs?: string;
+  notePt?: string;
   };
   /** One or two sentences for the listing card and the meta description fallback. */
   summary: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Body copy, one array entry per paragraph — same convention as Project. */
   body: string[];
   bodyEs?: string[];
+  bodyPt?: string[];
   heroImage: ImageRef;
   gallery?: ImageRef[];
   /** Model numbers this article concerns, linking it back to the catalogue. */
@@ -476,7 +493,9 @@ export interface NewsArticle {
    * English sentence would either overflow that budget or stop mid-word.
    */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -531,7 +550,9 @@ export interface Category {
    * see src/data/es-glossary.ts for the register and the terminology decisions.
    */
   nameEs?: string;
+  namePt?: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Short description for the category landing page. */
   summary: string;
   /** Lead image for the category card. */

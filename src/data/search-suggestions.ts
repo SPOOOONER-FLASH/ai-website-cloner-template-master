@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 /**
  * What the search panel offers before anyone types.
  *
@@ -84,10 +85,10 @@ export const suggestedProducts: SearchSuggestion[] = [
 ];
 
 /** The Spanish mirror serves the same pages under /es. */
-export function suggestionHref(suggestion: SearchSuggestion, locale: "en" | "es"): string {
+export function suggestionHref(suggestion: SearchSuggestion, locale: Locale): string {
   return locale === "es" ? `/es${suggestion.href}` : suggestion.href;
 }
 
-export function suggestionLabel(suggestion: SearchSuggestion, locale: "en" | "es"): string {
+export function suggestionLabel(suggestion: SearchSuggestion, locale: Locale): string {
   return locale === "es" ? suggestion.labelEs : suggestion.label;
 }

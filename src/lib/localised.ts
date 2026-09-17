@@ -1,4 +1,4 @@
-import type { Locale } from "@/data/site";
+import type { Locale } from "../data/locales.ts";
 
 /**
  * Reads a locale out of a record that may not have every locale yet.
@@ -28,21 +28,39 @@ import type { Locale } from "@/data/site";
  * by file. A fallback nobody can count is a fallback that becomes permanent — the same
  * reason the finish-code mapping returns null with a reason instead of guessing.
  */
-export function localised<T>(record: Partial<Record<Locale, T>>, locale: Locale): T {
-  const value = record[locale];
-  if (value !== undefined) return value;
+/*
+  The signature takes the record rather than its value type, and returns the type of its
+  English member.
 
-  const english = record.en;
-  if (english === undefined) {
+  `Partial<Record<Locale, T>>` looks like the obvious shape and does not compile against
+  the copy dictionaries in this codebase: they are `as const`, so `en` and `es` have
+  DIFFERENT literal types ("Model" vs "Modelo"), T is inferred from the first, and the
+  second no longer matches. Constraining on the record and projecting `R["en"]` keeps the
+  precise English types every caller already relies on.
+
+  `en` is required by the constraint, so the fallback cannot be missing — the runtime check
+  below is for JavaScript callers and for a record built dynamically.
+*/
+export function localised<R extends { en: unknown } & Partial<Record<Locale, unknown>>>(
+  record: R,
+  locale: Locale,
+): R["en"] {
+  const value = record[locale];
+  if (value !== undefined) return value as R["en"];
+
+  if (record.en === undefined) {
     throw new Error(
       `localised(): no value for "${locale}" and no English fallback. ` +
         `Every record must carry at least "en".`,
     );
   }
-  return english;
+  return record.en;
 }
 
 /** True when this locale is being served the English fallback rather than its own text. */
-export function isFallback<T>(record: Partial<Record<Locale, T>>, locale: Locale): boolean {
+export function isFallback(
+  record: Partial<Record<Locale, unknown>>,
+  locale: Locale,
+): boolean {
   return locale !== "en" && record[locale] === undefined;
 }

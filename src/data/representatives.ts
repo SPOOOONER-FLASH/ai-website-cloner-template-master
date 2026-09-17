@@ -21,6 +21,8 @@
 export interface Representative {
   region: string;
   regionEs: string;
+  /** Portuguese, for /pt. Absent falls back to the English region — see localised(). */
+  regionPt?: string;
   /** The city a buyer would search for, not the building name. */
   city: string;
   address: string;
@@ -39,6 +41,7 @@ export interface Representative {
   /** Why this address exists, in the buyer's terms. Kept honest and short. */
   note?: string;
   noteEs?: string;
+  notePt?: string;
 }
 
 export const representatives: Representative[] = [

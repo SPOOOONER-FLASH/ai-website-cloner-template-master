@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { absoluteUrl, defaultDescription, hasSpanishMirror, type Locale } from "@/data/site";
+import { absoluteUrl, defaultDescription, type Locale } from "@/data/site";
+import { mirrorsOf } from "./spanish-mirror.ts";
 
 /**
  * Builds canonical + hreflang + Open Graph for a page, from its ENGLISH path.
@@ -31,12 +32,25 @@ export function pageMetadata(opts: {
   const clean = opts.enPath === "/" ? "" : `/${opts.enPath.replace(/^\/|\/$/g, "")}`;
   const en = absoluteUrl(`${clean}/`);
   const es = absoluteUrl(`/es${clean}/`);
-  const self = opts.locale === "es" ? es : en;
+  const pt = absoluteUrl(`/pt${clean}/`);
+  const href = { en, es, pt } as const;
+  const self = href[opts.locale];
   const description = opts.description ?? defaultDescription[opts.locale];
 
-  // Only declare alternates when the Spanish page actually exists — pointing hreflang
-  // at a 404 is an SEO error, not a harmless extra tag.
-  const bilingual = hasSpanishMirror(opts.enPath);
+  /*
+    Only declare alternates for locales whose page actually exists — pointing hreflang at a
+    404 is an SEO error, not a harmless extra tag, and Search Console can discount the whole
+    language cluster for it.
+
+    `mirrorsOf` answers that for all three at once. It replaced a boolean on 2026-09-16 when
+    Portuguese arrived: a two-valued answer cannot express "Spanish yes, Portuguese not yet",
+    which is the state most of this site is in and will be for a while.
+  */
+  const available = mirrorsOf(opts.enPath);
+  const languages = Object.fromEntries([
+    ...available.map((locale) => [locale, href[locale]]),
+    ["x-default", en],
+  ]);
 
   const image = opts.image ?? defaultOgImage;
   const imageAlt = opts.image ? (opts.imageAlt ?? opts.title) : "HYDE architectural door hardware";
@@ -45,9 +59,9 @@ export function pageMetadata(opts: {
     title: opts.title,
     description,
     alternates: {
-      // Self-referencing canonical. Prevents the /es mirror from being folded into /en.
-      canonical: opts.locale === "es" ? `/es${clean}/` : `${clean}/` || "/",
-      ...(bilingual ? { languages: { en, es, "x-default": en } } : {}),
+      // Self-referencing canonical. Prevents a mirror from being folded into /en.
+      canonical: opts.locale === "en" ? `${clean}/` || "/" : `/${opts.locale}${clean}/`,
+      ...(available.length > 1 ? { languages } : {}),
     },
     openGraph: {
       type: "website",
@@ -55,7 +69,7 @@ export function pageMetadata(opts: {
       title: opts.title,
       description,
       locale: opts.locale,
-      alternateLocale: opts.locale === "es" ? ["en"] : ["es"],
+      alternateLocale: available.filter((locale) => locale !== opts.locale),
       images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: imageAlt }],
     },
     // X/Twitter ignores og:image sizing hints and wants its own card type; without this
