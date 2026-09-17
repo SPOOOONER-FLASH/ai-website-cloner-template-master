@@ -128,7 +128,7 @@ export const certificates: CertificateRecord[] = [
 ];
 
 /**
- * The factory. Three photographs of the actual plant, not atmosphere.
+ * The factory. Four photographs of the actual plant, not atmosphere.
  *
  * ---------------------------------------------------------------------------
  * WHY THIS CHANGED ON 2026-09-16
@@ -168,6 +168,8 @@ export const companyEditorialStudies: ImageRef[] = [
       "Our press shop: a row of mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped",
     labelEs:
       "Nuestra sección de prensas: una fila de prensas mecánicas con su utillaje montado, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas",
+    labelPt:
+      "A nossa secção de prensas: uma fila de prensas mecânicas com a ferramenta montada, onde se estampam caixas de fechadura, espelhos e peças em bruto de maçanetas",
   },
   {
     src: "/images/company/polishing-line.webp",
@@ -176,6 +178,8 @@ export const companyEditorialStudies: ImageRef[] = [
       "Our polishing line, with its extraction ducting overhead — the stage that decides whether a satin finish is even across a whole production run",
     labelEs:
       "Nuestra línea de pulido, con su extracción aérea — la etapa que decide si un acabado satinado es uniforme en toda una serie de producción",
+    labelPt:
+      "A nossa linha de polimento, com a extracção aérea — a etapa que decide se um acabamento acetinado é uniforme em toda uma série de produção",
   },
   {
     src: "/images/company/assembly-line.webp",
@@ -184,5 +188,35 @@ export const companyEditorialStudies: ImageRef[] = [
       "Our assembly hall: operators building and bagging sets at the benches, with finished goods palletised behind them",
     labelEs:
       "Nuestra nave de montaje: operarios montando y embolsando juegos en los puestos, con producto terminado paletizado detrás",
+    labelPt:
+      "A nossa nave de montagem: operários a montar e a ensacar conjuntos nos postos, com produto acabado paletizado atrás",
+  },
+  /*
+    The fourth, added 2026-09-16 at the client's request to use the photographs in the
+    RAYEN folder.
+
+    The other three show PROCESS — pressing, polishing, assembling. This one shows capital,
+    and it is the only picture in the set that answers the question a buyer asks before
+    putting their own brand on a part: is this a workshop or a factory. A fibre laser
+    cutter is not something a trading company has in a rented unit.
+
+    The machine carries its maker's branding, which content/rayen/assets.json cleared
+    explicitly — 「设备实拍，机身厂牌为设备供应商而非门锁品牌」. That is a supplier's mark on
+    equipment, not another hardware brand on a product, and removing it would be retouching
+    a documentary photograph.
+
+    Cropped to 3:2 from a square original by scripts/build-company-crops.mjs — a photograph
+    of a room has margin to give, which is why that script crops where build-framed-heroes
+    pads.
+  */
+  {
+    src: "/images/company/factory-laser-cutter.webp",
+    ratio: "3 / 2",
+    label:
+      "The fibre laser cutter on our shop floor, cutting the steel plate that becomes lock cases and backplates",
+    labelEs:
+      "La cortadora láser de fibra en nuestra planta, que corta la chapa de acero de la que salen cajas de cerradura y placas",
+    labelPt:
+      "A cortadora laser de fibra na nossa fábrica, que corta a chapa de aço de que saem caixas de fechadura e espelhos",
   },
 ];

@@ -1,4 +1,5 @@
 import type { Locale } from "@/data/site";
+import { articleFaqItems } from "@/lib/article-faq";
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
@@ -392,6 +393,40 @@ export function ProductFaqJsonLd({
   locale?: Locale;
 }) {
   const items = productFaqItems(product, locale);
+  if (!items.length) return null;
+
+  const data: WithContext<FAQPage> = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return <JsonLd data={data} />;
+}
+
+/**
+ * FAQPage structured data for one technical article.
+ *
+ * Same rule as the product version: the items come from `articleFaqItems`, which is also
+ * what the page renders, so the markup can never claim an answer the reader cannot see.
+ * An article with no `faq` emits nothing rather than an empty FAQPage.
+ *
+ * ⚠ This is emitted ALONGSIDE the article's TechArticle markup, not instead of it. They
+ * describe different things — one says what the document is, the other says which
+ * questions it answers — and a page may carry both.
+ */
+export function ArticleFaqJsonLd({
+  article,
+  locale = "en",
+}: {
+  article: NewsArticle;
+  locale?: Locale;
+}) {
+  const items = articleFaqItems(article, locale);
   if (!items.length) return null;
 
   const data: WithContext<FAQPage> = {

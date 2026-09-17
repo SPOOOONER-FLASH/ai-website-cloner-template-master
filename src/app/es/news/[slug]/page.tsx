@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
 import { defaultOgImage } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
-import { NewsArticleJsonLd } from "@/components/site/JsonLd";
+import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
 
 /**
@@ -78,6 +78,7 @@ export default async function NoticiaPage({ params }: NewsPageProps) {
   return (
     <>
       <NewsArticleJsonLd article={article} locale="es" />
+      <ArticleFaqJsonLd article={article} locale="es" />
       <NewsDetail article={article} locale="es" />
     </>
   );

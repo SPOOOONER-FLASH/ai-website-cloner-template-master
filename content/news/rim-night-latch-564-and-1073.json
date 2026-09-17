@@ -49,5 +49,21 @@
     "Merece nombrarse una característica que es fácil omitir en una especificación: la corredera antiganzúa del cerrojo de un solo cilindro. Es un obstáculo mecánico dentro de la caja y no una propiedad del cilindro, de modo que es independiente del cilindro con el que amaestre la cerradura, y es de esas cosas que no salen en una fotografía. Si está comparando nuestro 564 con el cerrojo de otro fabricante, esa fila conviene compararla directamente, porque los catálogos solo la declaran cuando la tienen."
   ],
   "seoTitleEs": "Dimensiones del cerrojo de sobreponer: 564 y 1073 comparados",
-  "seoDescriptionEs": "Eje 60mm, espesor de puerta 35 a 55mm, salida de picaporte 13mm, recorrido del pestillo 25mm. Qué mide un cerrojo de sobreponer y por qué sus cifras no son las de una cerradura de embutir."
+  "seoDescriptionEs": "Eje 60mm, espesor de puerta 35 a 55mm, salida de picaporte 13mm, recorrido del pestillo 25mm. Qué mide un cerrojo de sobreponer y por qué sus cifras no son las de una cerradura de embutir.",
+  "faq": {
+    "en": [
+      {
+        "question": "How is backset measured on a rim night latch?",
+        "answer": "From the edge of the door to the centre of the cylinder hole — not to the centre of a spindle, as it would be on a mortise lock. On both the 564 and the 1073 it is 60mm. That single hole is the whole of the door preparation, which is why a rim lock is the one people fit to a door that already exists."
+      },
+      {
+        "question": "What door thickness does a rim night latch take?",
+        "answer": "35mm to 55mm as standard on both models, and 30mm to 60mm on request. The range exists because the cylinder tail bar has to reach the mechanism; a cylinder too long for its door leaves the lock proud and the fixing loose."
+      },
+      {
+        "question": "What is the difference between a single-side and a double-side night latch?",
+        "answer": "A single-side night latch is opened by key from outside and by knob from inside, with no key required to get out. A double-side version needs a key on both faces. The second is more secure against somebody reaching through broken glass and less safe in a fire, and in many jurisdictions it is not permitted on a final exit door at all."
+      }
+    ]
+  }
 }

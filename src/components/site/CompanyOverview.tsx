@@ -85,11 +85,23 @@ const copy = {
 
 export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
   const text = copy[locale];
+  /*
+    Three two-way switches, generalised on 2026-09-16 when /pt/company shipped.
+
+    Each was `locale === "es" ? … : …`, so a Portuguese page took the ENGLISH branch of
+    every one — profile text, the figures, the contact link and every image caption. The
+    page rendered perfectly and was in the wrong language, which is the failure mode a
+    boolean has when a third option arrives.
+
+    The image caption keeps English as its fallback rather than Spanish, for the reason in
+    src/lib/localised.ts: an English caption reads as unfinished, a Spanish one reads as
+    finished and wrong.
+  */
   const paragraphs = locale === "es" ? profileEs : profile;
   const companyStats = locale === "es" ? statsEs : stats;
-  const contactHref = locale === "es" ? "/es/contact" : "/contact";
-  const localiseImageLabel = (label: string, labelEs?: string) =>
-    locale === "es" ? labelEs ?? label : label;
+  const contactHref = locale === "en" ? "/contact" : `/${locale}/contact`;
+  const localiseImageLabel = (label: string, labelEs?: string, labelPt?: string) =>
+    locale === "es" ? (labelEs ?? label) : locale === "pt" ? (labelPt ?? label) : label;
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
@@ -108,6 +120,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               label={localiseImageLabel(
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
+                companyEditorialStudies[0].labelPt,
               )}
               sizes="96vw"
             />
@@ -216,6 +229,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               label={localiseImageLabel(
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
+                companyEditorialStudies[0].labelPt,
               )}
               sizes="(min-width: 1440px) 860px, 62vw"
             />
@@ -229,7 +243,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               <MediaPlaceholder
                 key={image.src}
                 {...image}
-                label={localiseImageLabel(image.label, image.labelEs)}
+                label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
                 sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
               />
             ))}

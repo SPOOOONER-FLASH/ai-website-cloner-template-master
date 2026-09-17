@@ -68,6 +68,17 @@ const FIXED_FRAMES = [
     the same day.
   */
   { name: "homepage column rail", frame: 3 / 2, module: "src/data/feature-columns.ts" },
+  /*
+    The company overview rail, added 2026-09-16 at the same time as the factory photographs
+    that now fill it.
+
+    Same shape of miss as the column rail above: the images are named in src/data/company.ts
+    and every one declares `ratio: "3 / 2"`, so a square photograph dropped in here would be
+    cut by a third with nothing watching. It was added on the day the rail stopped being
+    decorative — while these were mood images nobody would have noticed; now they are the
+    evidence a buyer looks at before putting their brand on a part.
+  */
+  { name: "company rail", frame: 3 / 2, module: "src/data/company.ts" },
 ];
 
 /** Tolerated loss for a wide editorial image in a wider frame. */

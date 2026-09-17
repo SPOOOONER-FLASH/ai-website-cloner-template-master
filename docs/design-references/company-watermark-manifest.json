@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/company",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4,
+  "count": 5,
   "files": [
     {
       "source": "public/images/company/assembly-line.webp",
@@ -39,6 +39,24 @@
       },
       "sourceSha256": "124ffe224b2a7213e28a3963aea09a205b1cbe23fe4569e040d66eb59b4aaf2f",
       "outputSha256": "9fa727454f39ad46392badacfc524beaf6fc29e2fe883012652861e65ec449e9"
+    },
+    {
+      "source": "public/images/company/factory-laser-cutter.webp",
+      "output": "public/images/company-hyde/factory-laser-cutter.webp",
+      "width": 1000,
+      "height": 667,
+      "geometry": {
+        "margin": 17,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "9420cbf21a4957435ae2ff967aecb116fa0da77314395cfae0cf30b7df521c04",
+      "outputSha256": "fda5d57f700da0393f67982874a75dddc1710ef87b1df542350d15f5bfa22545"
     },
     {
       "source": "public/images/company/polishing-line.webp",

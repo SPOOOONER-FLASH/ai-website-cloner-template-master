@@ -48,5 +48,21 @@
     "Una última nota sobre el número, porque ya nos ha costado una consulta. Nuestro catálogo tiene un dispositivo antipánico modelo 305, y una versión para puerta cortafuego. Es un número de nuestra propia serie y no guarda ninguna relación con UL 305. Si busca uno y encuentra el otro, la coincidencia es solo eso. Lo que nuestro 305 sí declara es una resistencia al fuego, y eso es un cuarto eje: pertenece a un conjunto de puerta ensayado — hoja, marco, bisagras, cierrapuertas y dispositivo — y no al dispositivo por separado."
   ],
   "seoTitleEs": "UL 305, EN 1125 y ANSI A156.3: normas de herrajes antipánico",
-  "seoDescriptionEs": "Un listado UL no es un informe de ensayo ni un grado. Qué certifica realmente cada una de las tres normas, y qué tiene Canton Hyland."
+  "seoDescriptionEs": "Un listado UL no es un informe de ensayo ni un grado. Qué certifica realmente cada una de las tres normas, y qué tiene Canton Hyland.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is the difference between UL 305, EN 1125 and ANSI A156.3?",
+        "answer": "They are not three grades of one thing. EN 1125 is the European performance standard for panic exit devices operated by a horizontal bar, demonstrated by testing against a specific model. ANSI/BHMA A156.3 grades products 1, 2 or 3 on a cycle-test basis, which is a durability classification rather than a pass or fail. UL 305 is the basis of a listing — an ongoing arrangement in which the certification body inspects the factory and the product carries a mark."
+      },
+      {
+        "question": "Is a test report the same as a listing?",
+        "answer": "No. A test report is a photograph of one model on one date. A listing is a continuing claim about production, maintained by periodic factory inspection. They cost differently for that reason and they lapse differently."
+      },
+      {
+        "question": "Does Canton Hyland hold a UL listing?",
+        "answer": "No UL listing appears among this factory's credentials, and there is no ANSI/BHMA certification either. What we hold is an EN 1125 test report from Intertek Testing Services Shenzhen Ltd., Guangzhou Branch, reference 130722068GZU-001, covering model KD070/30-290, and a CE Certificate of Conformity to EN 1125:2008 from CELAB, Italy."
+      }
+    ]
+  }
 }
