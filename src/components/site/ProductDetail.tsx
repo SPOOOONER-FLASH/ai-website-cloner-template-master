@@ -269,6 +269,17 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const covers = (...patterns: RegExp[]) =>
     [...specLabels].some((label) => patterns.some((p) => p.test(label)));
 
+  /*
+    The bullets this locale can show. English always; Portuguese where the record has a
+    complete translation; Spanish not yet — see the block that renders it.
+  */
+  const featureList =
+    locale === "en"
+      ? product.features
+      : locale === "pt"
+        ? product.featuresPt
+        : undefined;
+
   const faqItems = productFaqItems(product, locale);
 
   const uncoveredFacts = [
@@ -443,13 +454,22 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     scripts/apply-stahlock-feature-lists.mjs. 194 products gain it; lever
                     handles and knob locks previously had no feature text at all.
 
-                    English only. Rendering these on the Spanish page would put English
-                    prose under a Spanish heading, which is the drift the FAQ markup is
-                    guarded against. Spanish gets them when the translator returns them.
+                    Each locale sees its OWN list or no list.
+
+                    `!es` was the guard until 2026-09-17, and a guard written for two
+                    locales answers wrongly for a third: Portuguese took the English
+                    branch, so a Portuguese page carried English prose under Portuguese
+                    headings — exactly the drift this comment says it is avoiding.
+
+                    Portuguese now has `featuresPt`, written by
+                    scripts/translate-product-features-pt.mjs only where EVERY line of a
+                    record resolves, so a list is never half translated. Spanish still has
+                    none and still shows nothing, which is the same honest state it has
+                    been in since these bullets landed.
                   */}
-                  {!es && product.features?.length ? (
+                  {featureList?.length ? (
                     <ul className="mt-24 border-t border-line pt-16">
-                      {product.features.map((feature) => (
+                      {featureList.map((feature) => (
                         <li
                           key={feature}
                           className="grid grid-cols-[1.2rem_1fr] gap-x-8 border-b border-line py-12 text-c1 text-ink"
