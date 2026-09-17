@@ -224,8 +224,16 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const t = COPY[locale];
   const es = locale === "es";
   const referenceModel = productModelFor(product.slug);
-  const name = (es && product.nameEs) || product.name;
-  const summary = (es && product.summaryEs) || product.summary;
+  /*
+    The product's OWN words. `(es && …)` answered only for Spanish, so the Portuguese page
+    carried an English name and an English lead paragraph beside a Portuguese spec table —
+    on 24 pages for the summary alone. English is the fallback, never Spanish.
+  */
+  const name =
+    (es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name;
+  const summary =
+    (es ? product.summaryEs : locale === "pt" ? product.summaryPt : undefined) ??
+    product.summary;
   /*
     Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
     on every Portuguese page while the title beside it was Portuguese — the page looked

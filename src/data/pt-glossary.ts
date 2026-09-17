@@ -541,6 +541,219 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  /*
+    2026-09-17. From `node scripts/translate-products-pt.mjs --all`, which counts every
+    value the glossary could not translate and how many rows carry it.
+
+    Two things stayed English on purpose and are NOT here:
+      "Electroplatingbhgh."  — a typo in the source data, not a term. Translating it
+                               would launder a defect into three languages.
+      "Fabricada en lámina de acero 1.2 mm…" — SPANISH prose sitting in an ENGLISH
+                               spec field on two records. That is a data bug for whoever
+                               owns those records, not a translation gap.
+  */
+
+  /*
+    2026-09-17. From `node scripts/translate-products-pt.mjs --all`, which counts every
+    value the glossary could not translate and how many rows carry it.
+
+    Two things stayed English on purpose and are NOT here:
+      "Electroplatingbhgh."  — a typo in the source data, not a term. Translating it
+                               would launder a defect into three languages.
+      "Fabricada en lámina de acero 1.2 mm…" — SPANISH prose sitting in an ENGLISH
+                               spec field on two records. That is a data bug for whoever
+                               owns those records, not a translation gap.
+  */
+  "PB=Polish Brass":
+    "PB = latão polido",
+  "PB=polished brass":
+    "PB = latão polido",
+  "BN Black Nickle":
+    "BN níquel preto",
+  "SS/AC/AB/BN available":
+    "SS/AC/AB/BN disponíveis",
+  "1-3/8” to 1-3/4” (35mm–45mm)":
+    "1-3/8” a 1-3/4” (35–45 mm)",
+  "35–45mm (1-3/8” to 1-3/4”)":
+    "35–45 mm (1-3/8” a 1-3/4”)",
+  "25 × 25mm (square)":
+    "25 × 25 mm (quadrado)",
+  "22 × 22mm (square)":
+    "22 × 22 mm (quadrado)",
+  "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm":
+    "Vertical: ±3,0 mm; lateral: +3,5/-2,0 mm; profundidade: ±1,5 mm",
+  "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm":
+    "Vertical: ±3,0 mm; lateral: ±3,0 mm; profundidade: ±1,0 mm",
+  "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm":
+    "Vertical: ±3,0 mm; lateral: ±2,0 mm; profundidade: ±2,0 mm",
+  "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±1.0mm":
+    "Vertical: ±3,0 mm; lateral: ±2,0 mm; profundidade: ±1,0 mm",
+  "50 pieces":
+    "50 peças",
+  "200 pieces":
+    "200 peças",
+  "500 pieces":
+    "500 peças",
+  "3M or Screws":
+    "Fita 3M ou parafusos",
+  "Bathroom":
+    "Banheiro",
+  "Wall Mounted":
+    "Fixação na parede",
+  "Aluminium Alloy":
+    "Liga de alumínio",
+  "Aluminum alloy and iron":
+    "Liga de alumínio e ferro",
+  "Aluminium alloy and iron":
+    "Liga de alumínio e ferro",
+  "Iron and aluminum":
+    "Ferro e alumínio",
+  "Iron and stainless steel":
+    "Ferro e aço inoxidável",
+  "Stainless steel+Iron":
+    "Aço inoxidável + ferro",
+  "Steel or stainless steel":
+    "Aço ou aço inoxidável",
+  "Stainless steel, brass, or steel":
+    "Aço inoxidável, latão ou aço",
+  "Stainless steel 304":
+    "Aço inoxidável 304",
+  "Steel":
+    "Aço",
+  "aluminium":
+    "alumínio",
+  "Spray Coated / Matte Black / Satin / Antique Finish":
+    "Pintura a pó / preto fosco / acetinado / acabamento antigo",
+  "Black / Silver / Bronze / Gold / Custom Finish":
+    "Preto / prata / bronze / dourado / acabamento sob medida",
+  "Satin / Chrome / Black / Gold (customizable":
+    "Acetinado / cromado / preto / dourado (personalizável",
+  "Satin / Plated Finish":
+    "Acetinado / banhado",
+  "Satin":
+    "Acetinado",
+  "Satin nickel, chrome, antique brass, polished brass, etc.":
+    "Níquel acetinado, cromado, latão antigo, latão polido etc.",
+  "Satin SS +Middle Part Acrylic":
+    "Inox acetinado + centro em acrílico",
+  "Aluminium, wooden and metal doors":
+    "Portas de alumínio, madeira e metal",
+  "Wooden doors":
+    "Portas de madeira",
+  "For privacy doors":
+    "Para portas de banheiro",
+  "For fire-rated metal or wood doors":
+    "Para portas corta-fogo de metal ou madeira",
+  "Fire-rated double escape doors":
+    "Portas duplas de saída corta-fogo",
+  "Door lock":
+    "Fechadura de porta",
+  "Four round bolts":
+    "Quatro ferrolhos redondos",
+  "Single action":
+    "Ação simples",
+  "Double-side":
+    "Dois lados",
+  "Single-side":
+    "Um lado",
+  "Single / Double cylinder, with self-locking function":
+    "Cilindro simples / duplo, com função de autotravamento",
+  "Up to 80mm":
+    "Até 80 mm",
+  "500mm (200 / 300 fixing)":
+    "500 mm (fixação 200 / 300)",
+  "900mm (adjustable)":
+    "900 mm (ajustável)",
+  "Trim handle · outside lever with key for panic exit devices":
+    "Maçaneta externa · alavanca com chave para barras antipânico",
+  "Trim handle · external handle for panic bar systems":
+    "Maçaneta externa · maçaneta para sistemas de barra antipânico",
+  "Keyed exterior trim":
+    "Guarnição externa com chave",
+  "Zinc alloy Cylinder":
+    "Cilindro em zamac",
+  "Aluminum alloy / Aluminium alloy for lock body, brass cylinder":
+    "Liga de alumínio no corpo da fechadura, cilindro de latão",
+  "Spray painting":
+    "Pintura a pó",
+  "Spray painting silver color":
+    "Pintura a pó na cor prata",
+  "Spray-painted silver, powder-coated iron":
+    "Ferro com pintura a pó prata",
+  "Paired with panic bar":
+    "Combinada com barra antipânico",
+  "Includes brass cylinder with key":
+    "Inclui cilindro de latão com chave",
+  "Profile lock case for panic exit devices":
+    "Caixa de fechadura de perfil para barras antipânico",
+  "Painted optional.":
+    "Pintura opcional.",
+  "painting red/ black or other finish also is available.":
+    "pintura vermelha/preta ou outro acabamento também disponível.",
+  "Red":
+    "Vermelho",
+  "Black+Red":
+    "Preto + vermelho",
+  "Two euro-profile apertures on the fire-rated case":
+    "Duas aberturas de perfil europeu na caixa corta-fogo",
+  "307 panic exit device":
+    "Barra antipânico 307",
+  "311 push bar, lock body, brass cylinder, stainless steel handle":
+    "Barra 311, corpo de fechadura, cilindro de latão, maçaneta em aço inoxidável",
+  "015 or 9080E.":
+    "015 ou 9080E.",
+  "Cylinder length according to the door thickness":
+    "Comprimento do cilindro conforme a espessura da porta",
+  "2.5 hours fire-resistant":
+    "Resistência ao fogo de 2,5 horas",
+  "Push bar, active and inactive leaf":
+    "Barra de empurrar, folha ativa e passiva",
+  "1.0 mm (Optional: 0.8 mm)":
+    "1,0 mm (opcional: 0,8 mm)",
+  "1.0 mm (also available in 0.8 mm)":
+    "1,0 mm (também disponível em 0,8 mm)",
+  "0.8 mm or 1.0 mm":
+    "0,8 mm ou 1,0 mm",
+  "10–12 mm glass doors":
+    "Portas de vidro de 10–12 mm",
+  "149mm at the head, 133mm at the foot — tapered":
+    "149 mm na cabeça, 133 mm no pé — cônico",
+  "32mm, tapering to 19mm":
+    "32 mm, afinando para 19 mm",
+  "32mm, tapering to 18.5mm":
+    "32 mm, afinando para 18,5 mm",
+  "72mm and 92mm (cylinder hole)":
+    "72 mm e 92 mm (furo do cilindro)",
+  "Iron + ABS body":
+    "Corpo em ferro + ABS",
+  "Iron with ABS material.":
+    "Ferro com ABS.",
+  "ABS material with Aluminum push bar":
+    "ABS com barra de empurrar em alumínio",
+  "ABS plastic material with Aluminum":
+    "ABS com alumínio",
+  "Building industry machinery":
+    "Máquinas para a construção civil",
+  "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.":
+    "Inox 304 banhado, indicado para barra antipânico.",
+  "Aluminum Door Lock Body /American-Style/Lock Cylinder /Lock Case (Door Bolt)/Locks and Keys.":
+    "Corpo de fechadura para porta de alumínio / padrão americano / cilindro / caixa de fechadura (ferrolho) / fechaduras e chaves.",
+  "160&125mm":
+    "160 e 125 mm",
+  "10&32.5mm":
+    "10 e 32,5 mm",
+  "140&76mm":
+    "140 e 76 mm",
+  "8.5&38mm":
+    "8,5 e 38 mm",
+  "95&54mm":
+    "95 e 54 mm",
+  "10&28mm":
+    "10 e 28 mm",
+  "117&67mm":
+    "117 e 67 mm",
+  "10&40mm":
+    "10 e 40 mm",
   "4 × ball bearing": "4 × rolamento",
   "2 × ball bearing": "2 × rolamento",
   "1 × ball bearing": "1 × rolamento",

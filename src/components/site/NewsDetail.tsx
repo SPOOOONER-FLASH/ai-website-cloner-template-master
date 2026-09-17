@@ -184,7 +184,7 @@ export function NewsDetail({
                   )}
                 </span>
                 <span className="mt-4 block">
-                  {(es && article.author.roleEs) || article.author.role}
+                  {(es && article.author.roleEs) || (locale === "pt" && article.author.rolePt) || article.author.role}
                 </span>
                 {article.author.credential ? (
                   <span className="block text-ink-tertiary">{article.author.credential}</span>
@@ -222,7 +222,7 @@ export function NewsDetail({
                         href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                         className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
-                        {product.model} — {(es && product.nameEs) || product.name}
+                        {product.model} — {(es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name}
                       </Link>
                     </li>
                   ))}

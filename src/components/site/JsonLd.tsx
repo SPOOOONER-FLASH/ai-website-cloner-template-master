@@ -171,11 +171,20 @@ export function productSchema(
   categoryName?: string,
 ): WithContext<SchemaProduct> {
   const es = locale === "es";
-  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs).filter(
+  const pt = locale === "pt";
+  /*
+    The markup has to say what the page says. A Portuguese page whose Product schema
+    carries the English name and the English spec table is telling a search engine the
+    visible text is something else — the same class of mismatch Google treats FAQ markup
+    for, one schema over.
+  */
+  const localeSpecs = pt ? product.specsPt : es ? product.specsEs : undefined;
+  const specs = (localeSpecs?.length ? localeSpecs : product.specs).filter(
     (spec) => spec.value,
   );
-  const name = (es && product.nameEs) || product.name;
-  const description = (es && product.summaryEs) || product.summary;
+  const name = (es ? product.nameEs : pt ? product.namePt : undefined) ?? product.name;
+  const description =
+    (es ? product.summaryEs : pt ? product.summaryPt : undefined) ?? product.summary;
   const videos = videoObjects(product);
 
   return {
@@ -322,7 +331,9 @@ export function newsArticleSchema(
           "@type": "Person",
           name: article.author.name,
           jobTitle:
-            (locale === "es" && article.author.roleEs) || article.author.role,
+            (locale === "es" && article.author.roleEs) ||
+            (locale === "pt" && article.author.rolePt) ||
+            article.author.role,
           worksFor: { "@id": `${siteUrl}/#organization` },
           ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
           ...(article.author.credential

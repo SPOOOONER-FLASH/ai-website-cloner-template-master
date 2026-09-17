@@ -423,6 +423,7 @@ export interface ArticleAuthor {
   /** Function at the company, e.g. "Digital Communications, Canton Hyland". */
   role: string;
   roleEs?: string;
+  rolePt?: string;
   /** The qualification held, stated plainly. Omit rather than approximate. */
   credential?: string;
   /** A profile that resolves, so the author is an entity and not a string. */

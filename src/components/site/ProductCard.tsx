@@ -91,8 +91,10 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
           {product.modelTbc
             ? es
               ? "Referencia disponible a pedido"
-              : "Reference available on request"
-            : `${pt ? "Modelo" : es ? "Modelo" : "Model"} ${product.model}`}
+              : pt
+                ? "Referência disponível sob consulta"
+                : "Reference available on request"
+            : `${es || pt ? "Modelo" : "Model"} ${product.model}`}
           {product.videos?.length ? (
             <span className="text-ink-tertiary"> · {es || pt ? "Vídeo" : "Video"}</span>
           ) : null}
