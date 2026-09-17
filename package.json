@@ -101,7 +101,8 @@
     "rayen:audit": "node scripts/audit-rayen-images.mjs",
     "sheet:masterkey": "node scripts/build-master-key-sheet.mjs && py scripts/build_master_key_workbook.py docs/collaboration/master-key-plan.json && node scripts/build-master-key-print-sheet.mjs",
     "assets:doorprep": "node scripts/build-door-prep-drawings.mjs",
-    "audit:pt:pages": "node scripts/audit-pt-pages.mjs"
+    "audit:pt:pages": "node scripts/audit-pt-pages.mjs",
+    "translate:features:pt": "node scripts/translate-product-features-pt.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

@@ -187,6 +187,12 @@ export interface Product {
    * They go to the translator with the rest; until then Spanish simply lacks the block.
    */
   features?: string[];
+  /*
+    Written by scripts/translate-product-features-pt.mjs, and only where EVERY line of the
+    record resolves in src/data/pt-features.ts. A partial list is not written at all: four
+    Portuguese bullets over two English ones looks finished and is not.
+  */
+  featuresPt?: string[];
   featuresSource?: { site: string; url: string; model?: string; fetchedAt?: string };
   certifications: Certification[];
   /** Lead image — cards, listing thumbnails, detail hero. */
