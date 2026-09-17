@@ -48,5 +48,25 @@
     "Una cosa más, para quien sustituye una pieza en un edificio existente y no especifica uno nuevo: compruebe el cerradero y el recibidor antes de pedir la cerradura. En una reforma la restricción es el marco, no la puerta, y lo que más veces hace fracasar una sustitución no es el cuerpo de la cerradura, sino el hueco del cerradero, que se hizo para la pieza antigua y no se va a rehacer."
   ],
   "seoTitleEs": "Cómo encontrar el equivalente de una cerradura | Canton Hyland",
-  "seoDescriptionEs": "Seis cotas deciden si una cerradura de embutir sustituye a otra: distancia al eje, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma."
+  "seoDescriptionEs": "Seis cotas deciden si una cerradura de embutir sustituye a otra: distancia al eje, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma.",
+  "faq": {
+    "en": [
+      {
+        "question": "How do you find an equivalent for a lock you already buy?",
+        "answer": "By geometry, not by name. A lock is defined by its dimensions rather than its model number: two locks with the same six numbers are interchangeable regardless of what either is called, and two locks with the same name and one different number are not. Measure the part you have, or photograph it beside a ruler with the faceplate visible, and send those numbers with the door thickness and the handing."
+      },
+      {
+        "question": "Which dimensions have to match on a mortise lock?",
+        "answer": "Six. Backset, from the face of the door to the centre of the spindle; centre distance, between the spindle and the cylinder or keyhole; faceplate length and width; case height and depth; spindle size, almost always 8mm square but worth confirming; and door thickness range. Miss the centre distance and the handle and the cylinder will not both line up with the holes already cut in the door — and the door is the thing you cannot change."
+      },
+      {
+        "question": "What should be ignored when cross-referencing?",
+        "answer": "The model number itself, the finish name and the grade designation. Finish naming is not standardised between factories — one supplier's satin nickel is another's brushed nickel is another's SN — so match a finish against a sample rather than a word. Grade designations are standard-specific: an ANSI grade and an EN classification measure different things under different tests, and neither translates into the other by arithmetic."
+      },
+      {
+        "question": "What most often makes a replacement fail on a retrofit?",
+        "answer": "Not the lock body — the strike plate cutout, which was made for the old part and will not be remade. In a retrofit the frame is the constraint rather than the door, so check the strike and the keep before you order the lock. On a rim lock the same applies to the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them."
+      }
+    ]
+  }
 }

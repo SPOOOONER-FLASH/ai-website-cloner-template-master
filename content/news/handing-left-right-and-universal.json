@@ -49,5 +49,37 @@
     "Cuando un modelo tiene mano, nuestras fichas la indican como una fila y no enterrada en la descripción, y el selector guiado la pregunta antes de ofrecer un número de modelo: porque la respuesta cambia qué modelos se pueden ofrecer, no solo qué variante de uno."
   ],
   "seoTitleEs": "Mano de la puerta: izquierda, derecha, reverse y universal | Canton Hyland",
-  "seoDescriptionEs": "La mano es una letra en el pedido y el motivo más común de que una cotización vuelva. Las convenciones europea y ANSI se contradicen: cómo indicarla sin ambigüedad."
+  "seoDescriptionEs": "La mano es una letra en el pedido y el motivo más común de que una cotización vuelva. Las convenciones europea y ANSI se contradicen: cómo indicarla sin ambigüedad.",
+  "faq": {
+    "en": [
+      {
+        "question": "If a door is hinged on the left and opens away from you, what handing does the lock need?",
+        "answer": "Stand where the key goes — outside — and the American convention answers it: hinge knuckles on your left makes it left-handed, and because the leaf swings away from you rather than towards you it is not a reverse. The same door is DIN-left under the European convention, which stands the observer on the pull side instead. That is why the safe way to write it on an order is the description you just gave rather than the letter it resolves to."
+      },
+      {
+        "question": "Is handing decided by the hinges or by the bolt?",
+        "answer": "By the hinges and the swing. Handing describes which edge of the door the hinges are on and which way the leaf opens; where the latch bolt ends up, and which way its bevel faces, follows from that. This matters because the two conventions in use disagree about the same physical door — one calls it DIN-left, the other right-hand-reverse — so a letter on its own is an answer plus an unstated assumption about which convention the reader uses."
+      },
+      {
+        "question": "What does universal or non-handed hardware mean?",
+        "answer": "That the part works either way round, so the handing field can honestly say so. A tubular latch with a symmetrical bolt, most euro-profile cylinders, hinges themselves and any lever on a sprung rose are non-handed and marked U. Reversible latches are a middle case: the bolt can be turned on site, which is a real convenience and also a real opportunity for it to be turned wrong and never checked."
+      },
+      {
+        "question": "Which hardware is genuinely handed, and what does getting it wrong cost?",
+        "answer": "Mortise cases with an asymmetric follower, rebated pairs, and anything with a deadlocking latch whose auxiliary bolt has to meet the keep. On those a wrong hand is not adjustable with a file — it is a different part number, and on a container quantity it is a different shipment."
+      }
+    ]
+  },
+  "titlePt": "Mão da porta: a resposta de uma letra que trava pedidos",
+  "summaryPt": "Esquerda, direita ou universal é um único caractere numa linha de pedido e a causa mais comum de uma cotação voltar para esclarecimento. Quem decide é onde estão as dobradiças e para que lado a porta abre — e as duas convenções em uso discordam entre si.",
+  "bodyPt": [
+    "A mão da porta descreve em que borda da folha estão as dobradiças e para que lado a folha gira. Importa porque a maçaneta tem de cair para o lado certo, o trinco tem um chanfro que precisa ficar voltado para o batente, e uma caixa de fechadura usinada para uma mão não fecha na outra. É uma letra, e é o campo mais frequentemente deixado em branco numa consulta.",
+    "Existem duas convenções e elas não concordam. O método europeu põe o observador do lado para o qual a porta abre — o lado de puxar — e chama de mão esquerda quando as dobradiças estão à esquerda. O método americano (ANSI/BHMA A156.115) põe o observador do lado de FORA, do lado de onde se usaria a chave, e acrescenta \"reverse\" para portas que abrem para longe. A mesma porta física é DIN-esquerda numa convenção e right-hand-reverse na outra.",
+    "É por isso que \"mão esquerda\", escrito sozinho, não é uma resposta. É uma resposta mais uma suposição sobre qual convenção o leitor usa, e o leitor está do outro lado do mundo. A forma inequívoca de dizer isso é descrever a porta: dobradiças à esquerda quando se olha do corredor, abre para longe de você. Vinte palavras que não podem ser mal lidas valem mais que uma letra que pode.",
+    "Um teste útil que não precisa de convenção nenhuma: fique onde a chave entra. Se os nós das dobradiças estiverem à sua esquerda, é mão esquerda no sentido americano; se a porta girar na sua direção a partir dali, é \"reverse\". Diga de que lado você estava e a frase sobrevive à tradução.",
+    "Algumas ferragens não se importam. Um trinco tubular de lingueta simétrica, a maioria dos cilindros europeus, as próprias dobradiças e qualquer maçaneta em roseta com mola são sem mão — universais, marcadas U — e o campo pode dizer isso com honestidade. Trincos reversíveis são um caso intermediário: a lingueta pode ser girada na obra, o que é uma conveniência real e também uma oportunidade real de ser girada errado e nunca conferida.",
+    "O que é genuinamente com mão, e onde o custo cai: caixas de embutir com seguidor assimétrico, pares rebaixados, e qualquer coisa com trinco de travamento cujo ferrolho auxiliar tenha de encontrar o contra-testa. Nessas, a mão errada não se ajusta com uma lima — é outro código de peça, e numa quantidade de contêiner é outro embarque.",
+    "A regra prática para uma planilha de ferragens: dê a cada vão uma mão ou a palavra universal, e nunca deixe a coluna vazia. Uma coluna vazia é lida como \"ainda não decidido\" por quem preenche o pedido e como \"universal\" por quem está com pressa, e só uma dessas leituras é segura.",
+    "Onde um modelo tem mão, as nossas tabelas de especificação declaram isso como uma linha em vez de enterrar na descrição, e o seletor guiado pergunta antes de oferecer um código de modelo — porque a resposta muda quais modelos podem ser oferecidos, e não só qual variante de um deles."
+  ]
 }

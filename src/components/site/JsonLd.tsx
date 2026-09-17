@@ -293,12 +293,19 @@ export function newsArticleSchema(
     "@type": article.kind === "insight" ? "TechArticle" : "NewsArticle",
     /*
       The headline and description a reader of THIS page sees. Emitting the English ones
-      on the Spanish mirror would make the markup disagree with the visible text, which
-      is the same failure the audit checks for on FAQ answers — and here it would also
-      offer an answer engine an English sentence as the summary of a Spanish page.
+      on a mirror would make the markup disagree with the visible text, which is the same
+      failure the audit checks for on FAQ answers — and here it would also offer an answer
+      engine an English sentence as the summary of a translated page.
+
+      These mirror `NewsDetail`'s own fallback exactly: the locale's field, else English.
+      If the two ever disagree the markup becomes the spam signal it is meant to avoid.
     */
-    headline: (locale === "es" && article.titleEs) || article.title,
-    description: (locale === "es" && article.summaryEs) || article.summary,
+    headline:
+      (locale === "es" && article.titleEs) || (locale === "pt" && article.titlePt) || article.title,
+    description:
+      (locale === "es" && article.summaryEs) ||
+      (locale === "pt" && article.summaryPt) ||
+      article.summary,
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
@@ -330,7 +337,11 @@ export function newsArticleSchema(
         }
       : { "@id": `${siteUrl}/#organization` },
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: locale,
+    /*
+      pt-BR rather than a bare "pt": this tree was written for Brazil, and the distinction
+      is one a search engine acts on when choosing which mirror to serve a reader.
+    */
+    inLanguage: locale === "pt" ? "pt-BR" : locale,
   };
 }
 
@@ -341,7 +352,7 @@ export function NewsArticleJsonLd({
   article: NewsArticle;
   locale?: Locale;
 }) {
-  const path = locale === "es" ? `/es/news/${article.slug}/` : `/news/${article.slug}/`;
+  const path = locale === "en" ? `/news/${article.slug}/` : `/${locale}/news/${article.slug}/`;
   return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
 }
 

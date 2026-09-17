@@ -51,5 +51,25 @@
     "Una cosa que hoy no publicamos y deberíamos: cuáles de nuestros herrajes, cerraduras y pivotes de suelo están diseñados para funcionar juntos como conjunto. Fabricamos los tres, las combinaciones se conocen en fábrica, y un comprador no puede verlas desde el catálogo —las piezas están en tres categorías distintas y nada las une. Hasta que eso se arregle en el sitio, envíe al equipo de exportación el tamaño de hoja, el espesor del vidrio, si hay montante y si la puerta tiene que cerrar con llave, y pida la lista de piezas en lugar de un precio de tirador. Cuesta un correo y evita los dos fallos anteriores, que cuestan los dos más que el herraje."
   ],
   "seoTitleEs": "Lista de herrajes para puerta de vidrio sin marco",
-  "seoDescriptionEs": "Todas las piezas de una puerta de vidrio sin marco: pivote de suelo, herrajes superior, inferior y de montante, cerradura, cerradero, tirador y espesor."
+  "seoDescriptionEs": "Todas las piezas de una puerta de vidrio sin marco: pivote de suelo, herrajes superior, inferior y de montante, cerradura, cerradero, tirador y espesor.",
+  "faq": {
+    "en": [
+      {
+        "question": "What hardware does one frameless glass door need?",
+        "answer": "Seven items, in the order things go wrong: floor spring, bottom patch, top patch, over-panel patch if there is glass above the door, lock body, floor socket or strike, and pull handle. Then two numbers that govern all of them — the glass thickness, because patch fittings are made for a specific range and 10mm and 12mm are not interchangeable, and the fixing centre on the handle."
+      },
+      {
+        "question": "Why must a glass door lock be decided before the glass is made?",
+        "answer": "Because toughened glass cannot be cut, drilled or notched after tempering. Every hole, notch and corner cut-out has to be on the processor's drawing before the sheet goes in the furnace, and both the lock body and its counterpart need cut-outs. Deciding to add a lock after the glass is made means buying the glass again. It is the single most expensive mistake on a frameless job, and it is always a sequencing mistake rather than a hardware one."
+      },
+      {
+        "question": "Why does a glass door quote so often arrive missing the floor spring?",
+        "answer": "Because our floor springs sit in the door-closers category rather than under glass, which is a catalogue convention rather than a hint about what they are for. The floor spring carries the leaf's weight and controls how fast it swings back; it is the most expensive single item on the list, has the longest lead time, and has to be ordered before the floor screed is poured, because retrofitting one means cutting up a finished floor."
+      },
+      {
+        "question": "Is the pull handle specified by its length?",
+        "answer": "No — by its fixing centre, because the holes are in the glass and the glass is already made. Our published centre distances come off the production drawings and they differ between models that look identical: 148mm on the 100 and the 107, 147mm on the 102, 125mm on the 106. A millimetre is not a rounding error when the hole is already drilled."
+      }
+    ]
+  }
 }

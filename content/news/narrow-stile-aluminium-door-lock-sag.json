@@ -51,5 +51,25 @@
     "Una nota honesta sobre lo que publicamos. Nuestras cajas de cerradura llevan entrada, distancia entre ejes, tamaño de caja y recorrido de pestillo en las fichas de producto, porque esas son las cifras de las que depende esta decisión y varias salieron de nuestros propios planos de producción y no de un texto comercial. Lo que todavía no publicamos es una capacidad de carga para las puertas a las que sirven estas cajas —eso depende de la hoja, el acristalamiento y el pivote mucho más que de la cerradura, y una cifra inventada solo para la cerradura sería peor que ninguna cifra. Envíe el tamaño de hoja, el ancho de perfil y el sistema de perfilería, y el equipo de exportación le dirá qué entrada encaja y sobre qué conviene sostenerla."
   ],
   "seoTitleEs": "Descuelgue en puerta de aluminio de perfil estrecho",
-  "seoDescriptionEs": "Por qué descuelgan las puertas de aluminio de perfil estrecho y dejan de enganchar, cómo se elige la entrada en un perfil de 30 mm, y qué soporta la carga."
+  "seoDescriptionEs": "Por qué descuelgan las puertas de aluminio de perfil estrecho y dejan de enganchar, cómo se elige la entrada en un perfil de 30 mm, y qué soporta la carga.",
+  "faq": {
+    "en": [
+      {
+        "question": "Why will an aluminium door not latch any more?",
+        "answer": "Usually because the leaf has dropped — often by two or three millimetres at the lock edge — so the latch is presenting itself below the hole it is supposed to enter. The lock is almost never the fault, and replacing the lock case fixes nothing. It is the most common wasted purchase in this category. Adjust the pivot and the strike before ordering anything."
+      },
+      {
+        "question": "What actually moves when a narrow-stile door sags?",
+        "answer": "Three things, in this order. The hinge or pivot side wears first, because every opening is a lever with the leaf as its arm. Then the mitred corner joints of the frame open slightly, and once the frame racks by a fraction of a degree the diagonal shortens and the free corner falls. The door furniture shows it third and only third, because the latch is a precision fit into a strike with perhaps 2mm of tolerance — the first component in the assembly with no slack left to absorb the movement."
+      },
+      {
+        "question": "What prevents a glazed aluminium door from dropping?",
+        "answer": "What carries the leaf, not the lock. A floor spring set into the slab takes the weight into the structure rather than into the frame corner, which is why a heavy glazed door on a floor spring stays square for years while the same leaf on butt hinges racks its frame. On a door that is tall, wide, glazed or used hundreds of times a day, the pivot decision is the anti-sag decision — and it has to be made before the floor is poured."
+      },
+      {
+        "question": "Which lock case backset fits a narrow stile?",
+        "answer": "Ours run at 30, 40 and 45mm for narrow stiles, because in a 30mm stile there is very little metal either side of the lock pocket and the backset is fixed by the profile rather than chosen. A 60mm backset case simply will not fit, and forcing a wider pocket into the extrusion removes the material the stile needs to stay stiff. Order by backset first and everything else second. An adjustable or slotted strike is worth specifying at the same time: a millimetre or two of vertical adjustment is often the entire repair on a door that has dropped."
+      }
+    ]
+  }
 }

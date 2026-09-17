@@ -49,5 +49,25 @@
     "Nuestro selector guiado pregunta cuatro de los seis y devuelve un modelo publicado con su ficha, no una categoría, para que la referencia se pegue directamente en un cuadro. Donde una cifra no está publicada para un modelo, la ficha muestra un guion en lugar de un número plausible: el guion es una pregunta para nosotros, y sale más barato hacerla ahora que responderla en obra."
   ],
   "seoTitleEs": "Los seis datos que necesita un pedido de herrajes | Canton Hyland",
-  "seoDescriptionEs": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor."
+  "seoDescriptionEs": "Modelo, acabado, entrada, distancia entre ejes, mano y espesor. Seis datos deciden si una cerradura se instala, y cuál falta decide si pierde un día o un contenedor.",
+  "faq": {
+    "en": [
+      {
+        "question": "What information does a hardware order actually need?",
+        "answer": "Six values: model, finish, backset, centre distance, handing, door thickness. Written in that order they read as one reference — 9001-SSS-60-72-L-45 — and every one of them is a fact about the opening rather than a preference. A model number is not an order: it names a family and a form, and it does not say which variant fits the door in front of you."
+      },
+      {
+        "question": "Which missing value costs the most?",
+        "answer": "Backset. A missing finish delays a quotation; a missing backset delays a shipment, because it is not visible until the case is offered up to the door and by then the container has landed. That asymmetry is the whole argument for writing all six at enquiry rather than only the ones that feel important."
+      },
+      {
+        "question": "Is it acceptable to say a value is not known yet?",
+        "answer": "Yes, and it is a valid answer rather than an omission. \"Door thickness to be confirmed\" is a line an export engineer can work with — it flags the risk and keeps the rest of the quotation moving. A blank is not the same thing: a blank gets filled in by whoever is in the most hurry."
+      },
+      {
+        "question": "Is the finish code the same as the finish name?",
+        "answer": "No. SSS and PSS are both \"stainless\" — one a satin and one a mirror — and they do not sit next to each other on the same floor. Where a US equivalent exists we publish it beside the code, because a schedule written to US32D and a factory reading SSS are describing the same part and should not have to discover that by correspondence."
+      }
+    ]
+  }
 }

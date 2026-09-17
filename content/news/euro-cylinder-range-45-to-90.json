@@ -49,5 +49,25 @@
     "El cilindro es además el componente que más se amaestra, y el amaestramiento es una conversación aparte de la longitud. Cualquiera de estos puede suministrarse con llave igual dentro de un grupo, o integrado en un sistema de amaestramiento — nuestro artículo sobre niveles de amaestramiento explica cuántos escalones necesita de verdad un edificio, y la respuesta suele ser menos de los que pide la consulta. Lo que importa al pedir es que el amaestramiento se decide antes de cortar los cilindros, y que el cuadro de llaves es un documento que alguien tiene que llevar."
   ],
   "seoTitleEs": "Gama de cilindros europeos 45–90mm: longitudes, latón y letras",
-  "seoDescriptionEs": "El número de modelo es la longitud total, no la partición. Qué longitudes publica Canton Hyland, qué significan las letras de acabado, y qué letras de función aún no están documentadas."
+  "seoDescriptionEs": "El número de modelo es la longitud total, no la partición. Qué longitudes publica Canton Hyland, qué significan las letras de acabado, y qué letras de función aún no están documentadas.",
+  "faq": {
+    "en": [
+      {
+        "question": "What lengths does the euro cylinder range cover?",
+        "answer": "The selected range runs 45, 54, 60, 70, 80 and 90 — six lengths of one product rather than six different products, the number being the total length in millimetres. The 70 is the one to look at first if you are standardising a project: nineteen published variants against six for the 80 and three for the 45. Other lengths are a manufacturing variable rather than a stock decision, so ask."
+      },
+      {
+        "question": "Why are these cylinders solid brass rather than zinc?",
+        "answer": "Because a brass body machines to a tighter tolerance than a zinc casting, which is what keeps a five-pin mechanism turning smoothly after a decade of a key being pushed at it slightly off-axis — a difference that is not visible from outside. It is also the reason these cylinders can carry a BHMA finish number where a zinc-alloy part cannot: A156.18's base groups are steel, brass and stainless, and zinc is not one of them."
+      },
+      {
+        "question": "What do the DK, KT and IK letters on a cylinder mean?",
+        "answer": "We do not know yet, and we would rather say so than invent it. They are function codes in our own internal system whose meanings the factory has not confirmed to us in writing — they are on the list of six order codes we are waiting on, one finish letter and five function letters. Until that comes back, ask for the function in words in your enquiry and we will match it to the code rather than the other way round."
+      },
+      {
+        "question": "Why do some lengths have no published specification?",
+        "answer": "Two in the selected range carry no specification rows at all: the 60 and the 90. Five variants of the 60 and four of the 90 are in the catalogue with photographs and no material, finish or size row — the length is in the model number and that is genuinely all we publish about them today. The honest answer to what the 60 is made of is that we will ask, rather than that it is brass like its neighbours, even though it almost certainly is."
+      }
+    ]
+  }
 }

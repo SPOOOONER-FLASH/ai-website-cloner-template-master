@@ -1,7 +1,7 @@
 import { articleFaqHeading, articleFaqItems } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
+import { newsKindLabels, formatNewsDate } from "@/data/news";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -73,16 +73,28 @@ export function NewsDetail({
   locale?: Locale;
 }) {
   const t = COPY[locale];
-  const base = locale === "es" ? "/es" : "";
-  const es = locale === "es";
+  const base = locale === "en" ? "" : `/${locale}`;
   /*
     Falls back to the English field when a translation is missing rather than rendering
-    an empty heading. An untranslated article reads as English on a Spanish page, which is
-    visibly incomplete — and visibly incomplete is the state that gets fixed.
+    an empty heading. An untranslated article reads as English on a Spanish or Portuguese
+    page, which is visibly incomplete — and visibly incomplete is the state that gets
+    fixed. English, never the other translation: see src/lib/localised.ts.
+
+    The body is taken only when it is COMPLETE. A half-translated article rendered as a
+    mix of two languages looks like a rendering bug rather than a gap, so the length has
+    to match paragraph for paragraph or the whole English body is used.
   */
-  const title = (es && article.titleEs) || article.title;
-  const summary = (es && article.summaryEs) || article.summary;
-  const body = (es && article.bodyEs?.length === article.body.length && article.bodyEs) || article.body;
+  /* One place that knows this page only has Spanish for the author, product and attachment
+     strings. Portuguese falls back to English until those fields exist, which is the rule
+     in src/lib/localised.ts and not an oversight. */
+  const es = locale === "es";
+  const titleFor = { en: article.title, es: article.titleEs, pt: article.titlePt };
+  const summaryFor = { en: article.summary, es: article.summaryEs, pt: article.summaryPt };
+  const bodyFor = { en: article.body, es: article.bodyEs, pt: article.bodyPt };
+  const title = titleFor[locale] || article.title;
+  const summary = summaryFor[locale] || article.summary;
+  const localeBody = bodyFor[locale];
+  const body = localeBody?.length === article.body.length ? localeBody : article.body;
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -134,7 +146,7 @@ export function NewsDetail({
           {/* Left column: the dateline, the contact route, and any linked products. */}
           <div className="col-span-full lg:col-span-4 xl:col-span-8">
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-              {(es ? NEWS_KIND_LABEL_ES : NEWS_KIND_LABEL)[article.kind]}
+              {newsKindLabels(locale)[article.kind]}
             </p>
             <time
               dateTime={article.publishedAt}

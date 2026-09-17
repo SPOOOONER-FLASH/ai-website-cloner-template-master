@@ -74,5 +74,25 @@
       "label": "Where it lives: chained around the ankles of a cast knight outside a hotel in Germany, whose shield claims the year 998",
       "labelEs": "Dónde vive: encadenado a los tobillos de un caballero fundido a la puerta de un hotel en Alemania, cuyo escudo reclama el año 998"
     }
-  ]
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "How can you tell what kind of lock an old padlock is?",
+        "answer": "From the keyhole. A pin standing in the middle of it means the key is hollow — a barrel key that slides over the pin and is centred by it — and a hollow key with a wide slot beneath means a warded lock: fixed obstructions inside that the right key is cut to pass and the wrong one is not. It is not a pin-tumbler cylinder and was never meant to be one. You can identify it from two metres away once you know what the pin is for."
+      },
+      {
+        "question": "What does a riveted body tell you about how a lock was made?",
+        "answer": "That the case was assembled from plates rather than cast in one piece or welded: cut, stacked, drilled, riveted cold, with the domes being the heads spread by a hammer. It is the construction you use when the joint has to hold without heat, and it is why the object survived a century of weather with its shape intact while its surface went to rust."
+      },
+      {
+        "question": "Why will you not say who made it or when?",
+        "answer": "Because we do not know, and rust removes exactly the evidence that would answer it — the stamp, the plating, the paint, the paper. A shape like this was made by hundreds of workshops across Europe and Asia for a very long time. We could write the missing paragraph and it would read beautifully and be fiction. A supplier who will invent a provenance for a padlock on a blog will invent a backset for a lock case in a quotation, and a buyer who catches the first is right to assume the second."
+      },
+      {
+        "question": "What replaced the maker's name as the guarantee on a lock?",
+        "answer": "Standards. For most of this trade's history a lock was identified by the man who made it, and if you did not know him you could not buy a replacement part. The profile every European lock case is machined for today is defined by DIN 18252 in Germany and EN 1303 across Europe, to a tolerance that lets a cylinder from one factory drop into a body from another, in another country, decades later. A cylinder proudly two millimetres different is not a distinctive product; it is a part that does not fit."
+      }
+    ]
+  }
 }

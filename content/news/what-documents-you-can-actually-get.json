@@ -47,5 +47,25 @@
     "Dos notas prácticas para quien esté armando una documentación. Primera: pida los documentos por número de modelo en la configuración que va a comprar, sufijo de acabado y de función incluidos, porque un plano de la versión de 60 mm de entrada no es el plano de la de 45. Segunda: díganos para qué es el documento. Una ficha para la aprobación de un cliente, un plano para el mecanizado en el fabricante de puertas y una especificación para una licitación necesitan cada uno que se destaque algo distinto, y preferimos enviarle el correcto antes que el más grande."
   ],
   "seoTitleEs": "Fichas técnicas, CAD y BIM de herrajes: qué existe | Canton Hyland",
-  "seoDescriptionEs": "79 planos acotados 1:1, tablas de especificación completas y dos catálogos PDF con texto buscable están publicados; los documentos de ensayo se envían a petición con su alcance exacto. No hay biblioteca BIM —y aquí está qué usar en su lugar."
+  "seoDescriptionEs": "79 planos acotados 1:1, tablas de especificación completas y dos catálogos PDF con texto buscable están publicados; los documentos de ensayo se envían a petición con su alcance exacto. No hay biblioteca BIM —y aquí está qué usar en su lugar.",
+  "faq": {
+    "en": [
+      {
+        "question": "Do you have a BIM library or Revit families?",
+        "answer": "No. There are no Revit families, no IFC objects and no ficha técnica in the form an architect's model wants. If you need a hardware item represented inside a BIM model today, we can give you the dimensioned drawing and the specification and your modeller can build the object from them — which is the truthful answer rather than a promise with a date attached."
+      },
+      {
+        "question": "Can I get a cutsheet or CAD drawing for a model?",
+        "answer": "Dimensioned line drawings exist for 79 models, published on those product pages. They are drawn 1:1 from the dimensions the catalogue publishes — backset, centre distance, faceplate, case size, fixing centres — and they are orthographic, so a measurement taken off one is a real measurement. They cover 79 models rather than the whole catalogue because those are the models where the factory has given us enough published dimensions to draw without inventing anything. We publish them as SVG, which any CAD package will import; we do not maintain a DWG library per model."
+      },
+      {
+        "question": "What catalogues are available?",
+        "answer": "Two PDFs, both current: the Canton Hyland product catalogue and a HYDE export catalogue with specifications and an index. The second matters more than it sounds, because it is a text PDF rather than a scan — the words in it are selectable and searchable, which means a search engine or an AI assistant can read it. The old scanned catalogue contained zero words as far as any machine was concerned."
+      },
+      {
+        "question": "How should a document be requested?",
+        "answer": "By model number in the configuration you are buying, finish and function suffix included — a drawing of the 60mm backset version is not a drawing of the 45mm one. And say what the document is for. A cutsheet for a client approval, a drawing for a door manufacturer's machining setup and a specification for a tender each need a different thing emphasised, and we would rather send the right one than the largest one."
+      }
+    ]
+  }
 }

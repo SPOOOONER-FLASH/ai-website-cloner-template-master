@@ -60,5 +60,25 @@
     "Cada producto tiene una historia detrás. Ésta llevó cinco meses, tres artesanos y una llamada a las once de la noche."
   ],
   "seoTitleEs": "Cinco meses de utillaje: cómo se hizo el antipánico 311 | Canton Hyland",
-  "seoDescriptionEs": "Tres moldes, tres matriceros, una pausa de más de un año, tres meses de corte y cinco meses de prueba y corrección. Relato de fábrica sobre lo que implica el utillaje de un antipánico a medida y por qué su plazo difiere del de catálogo."
+  "seoDescriptionEs": "Tres moldes, tres matriceros, una pausa de más de un año, tres meses de corte y cinco meses de prueba y corrección. Relato de fábrica sobre lo que implica el utillaje de un antipánico a medida y por qué su plazo difiere del de catálogo.",
+  "faq": {
+    "en": [
+      {
+        "question": "How long does it take to tool a new exit device?",
+        "answer": "For the 311: three months to cut the complete set of moulds, and five months in total from first trial to a tool that could be trusted to run. The three months is the number people expect to hear and it is the smaller half of the truth — the rest is trial shots, modifying the mould where a trial showed something had to change, shooting again, and then polishing, grinding, electroplating and assembly."
+      },
+      {
+        "question": "Why does one exit device need three separate moulds?",
+        "answer": "Because it is not one material. The 311 needed an ABS mould for the push bar body, a steel stamping die for the pressed components, and a zinc-alloy die-casting mould for the cast parts — and each belongs to a different craftsman. The man who can hold a tolerance in a zinc die is not the man who knows how ABS shrinks as it cools, and neither of them sets up a stamping die. Every correction is a three-way conversation."
+      },
+      {
+        "question": "Why does trial and correction take longer than cutting the mould?",
+        "answer": "Because every metal component has to fit every other one while the device does a mechanical job. Get one angle wrong and the product does not work — that is not a cosmetic defect, it is a device that will not release. It is the difference between tooling a piece of hardware and tooling a piece of trim."
+      },
+      {
+        "question": "What does owning the mould let a buyer change?",
+        "answer": "The geometry, for the next customer who needs it changed — including the centre distance, which is why the 311 carries both 72mm and 92mm cylinder centres rather than one. A supplier who buys finished devices cannot offer that, because the mould is not theirs to alter. It also means a tooled product and a catalogue product are two different purchases with two different clocks: if a supplier quotes the same lead time for both, one of those numbers is wrong."
+      }
+    ]
+  }
 }

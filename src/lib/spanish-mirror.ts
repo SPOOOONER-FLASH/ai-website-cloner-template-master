@@ -131,6 +131,21 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/finishes",
   "/model-lookup",
   "/glossary",
+  /*
+    The newsroom, added 2026-09-17.
+
+    These 35 technical articles are the pages this site is actually cited for — Bing's
+    generative-citation report attributes 25 citations to the push-bar article alone, and
+    17 to the Spanish handing article. They existed in English and Spanish and not in
+    Portuguese, so a Brazilian specifier who followed one of those citations landed on a
+    page with no counterpart in their language.
+
+    The route ships before the translations are finished, on purpose. `NewsDetail` renders
+    a translated body only when it is complete paragraph for paragraph, and the English one
+    otherwise — so an untranslated article reads as English on a Portuguese page rather
+    than as half of each. Visibly incomplete gets fixed; a mixed page looks finished.
+  */
+  "/news",
 ];
 
 /**

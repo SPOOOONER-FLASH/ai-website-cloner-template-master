@@ -51,5 +51,25 @@
     "Para ofertar: el espesor de puerta, si el pestillo es de uno o de dos cilindros, y si va amaestrado con la cerradura de encima. Esta tercera es la pregunta que más consultas omiten y la que determina cómo llegan las llaves."
   ],
   "seoTitleEs": "Especificar un pestillo: 25mm, pasador antiserrado y collarín giratorio",
-  "seoDescriptionEs": "Qué comprobar en un pestillo: recorrido, pasador antiserrado, pitones del cilindro, collarín giratorio y si puede amaestrarse con la cerradura de entrada."
+  "seoDescriptionEs": "Qué comprobar en un pestillo: recorrido, pasador antiserrado, pitones del cilindro, collarín giratorio y si puede amaestrarse con la cerradura de entrada.",
+  "faq": {
+    "en": [
+      {
+        "question": "What deadbolt throw does a specification mean by full throw?",
+        "answer": "25mm, which is what both the D101 and the D102 publish. It is a specification rather than a preference because of the frame: a bolt that engages less than about 20mm can be forced by spreading the jamb, which is a quick attack with a car jack that does not look like forced entry afterwards."
+      },
+      {
+        "question": "What stops a deadbolt being twisted out of the door?",
+        "answer": "The free-turning cylinder trim, and it decides more attacks than any other feature on the lock. The collar around the cylinder spins freely, so a wrench or a pipe put on the outside turns the collar and not the mechanism. Without it, the commonest forced entry on a deadbolt is simply twisting the whole cylinder out of the door. Both the D101 and the D102 publish it."
+      },
+      {
+        "question": "What is the anti-saw roller pin?",
+        "answer": "A hardened steel pin inside the zinc die-cast bolt, and it works mechanically rather than by hardness alone: a hacksaw blade drawn across it makes the pin rotate, so the teeth skate instead of cutting. It costs almost nothing to include, it is left out of cheap deadbolts, and it is invisible in a product photograph — which is why it belongs in a comparison rather than in a showroom."
+      },
+      {
+        "question": "Can a deadbolt be keyed with the lever set on the same door?",
+        "answer": "Yes — both are published as keyable to pair with an entrance bored lock, which is what a building actually wants rather than a tenant carrying two keys. It also means the deadbolt has to be ordered in the same keying group as the lock above it, and that is a decision taken at order stage rather than afterwards. It is the question most enquiries leave out."
+      }
+    ]
+  }
 }

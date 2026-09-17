@@ -48,5 +48,25 @@
     "Nuestro catálogo está organizado por producto porque así tiene que organizarse un catálogo. Pero las consultas que se convierten en pedidos casi nunca llegan producto a producto. Llegan como una relación, o como una fotografía de una, y la respuesta que gana es la que lee el conjunto y no la línea. Si tiene una relación, envíela —la respuesta útil es qué conjuntos podemos completar, cuáles podemos completar salvo un artículo y cuáles no, y esa respuesta llega antes que una cotización línea a línea."
   ],
   "seoTitleEs": "Cómo leer una relación de herrajes de puerta | Canton Hyland",
-  "seoDescriptionEs": "Qué es una relación de herrajes de puerta, cómo los conjuntos se despliegan en líneas de pedido, y las tres preguntas que hay que hacer antes de cotizar contra una."
+  "seoDescriptionEs": "Qué es una relación de herrajes de puerta, cómo los conjuntos se despliegan en líneas de pedido, y las tres preguntas que hay que hacer antes de cotizar contra una.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is a door hardware schedule?",
+        "answer": "The document a commercial order is actually written from. A catalogue is organised by product; a building is a list of doors, and every door needs a set of hardware whose parts have to agree with each other — the same backset, the same handing, the same fire rating, the same finish. One schedule row can be seven line items, and every one of them has to be compatible with the other six."
+      },
+      {
+        "question": "Why do project buyers ask dimensional questions before price?",
+        "answer": "Because they are never comparing your lock against a competitor's lock — they are comparing whether your lock fits the set. A case with an 85mm centre distance and a 55mm backset is either right for the plate and the door preparation already specified, or it is not, and no amount of quality argument moves that. A supplier who answers those questions slowly loses the enquiry before quoting."
+      },
+      {
+        "question": "Why does a schedule quote quantities as sets rather than products?",
+        "answer": "Because that is where the quantities live. A schedule does not say two hundred locks; it says thirty of set HW-01, ninety of HW-02, and each set expands into its line items. A manufacturer who can supply the whole set is worth more than a cheaper one who supplies part of it — not out of loyalty, but because a split set means two lead times, two shipments and a coordination risk that lands on the distributor."
+      },
+      {
+        "question": "What should be asked before quoting against a schedule?",
+        "answer": "Three things. Which sets are on escape routes, because those are governed by regulation rather than preference and the hardware is not interchangeable with the rest. Whether there is a master key system, because if there is, the cylinders are a single coordinated order and not a per-door line item. And what the finish is across the project, because finish is usually specified once for the whole building and then repeated silently in every row."
+      }
+    ]
+  }
 }

@@ -51,5 +51,25 @@
     "Donde una cota no aparece en nuestras fichas de producto es porque no la hemos verificado para ese modelo, no porque no importe. Pida el plano antes de comprar y le enviaremos el que cubre el modelo de su relación, o le diremos claramente que todavía se está preparando."
   ],
   "seoTitleEs": "Entrada y entre-ejes en cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Cómo leer la entrada y la distancia entre ejes en el modelo de una caja de embutir: por qué existen 85 mm y 72 mm, y qué entrada admite cada puerta."
+  "seoDescriptionEs": "Cómo leer la entrada y la distancia entre ejes en el modelo de una caja de embutir: por qué existen 85 mm y 72 mm, y qué entrada admite cada puerta.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is the difference between backset and centre distance?",
+        "answer": "Backset is the distance from the front edge of the faceplate back to the centre of the handle spindle. Centre distance is the gap between the centre of the cylinder hole and the centre of that spindle, measured along the face of the lock. Centre distance has to match the handle plate or escutcheon; backset has to match how far in from the door edge the door was bored. They are independent of each other, and a lock case is only usable when both agree with the door."
+      },
+      {
+        "question": "How do you read a mortise lock case model number?",
+        "answer": "Across the euro-profile range the two figures are the model number. LC08 85×55 is an 85mm centre distance with a 55mm backset; LC21 85×50 is the same centre distance on a 50mm backset; LC8520 compresses the same information without a separator — 85mm centre distance, 20mm backset. Once you know the convention, a packing list becomes readable at a glance."
+      },
+      {
+        "question": "Why is 85mm the usual centre distance, and when is it 72mm?",
+        "answer": "85mm is the standard centre distance for euro-profile cylinder locks, which is why a European handle plate drops onto a case from almost any manufacturer without drilling. 72mm is common through Latin American markets, and it is why LC34 50×72 puts the backset first: at that centre distance the numbers read in the reverse order, so the model name follows the market's own convention rather than ours."
+      },
+      {
+        "question": "Which backset does a narrow aluminium stile take?",
+        "answer": "A shallow one — 16mm, 17mm and 20mm backsets exist because a narrow stile cannot take a deep case, which is what LC8520 at 20mm and the 16mm sliding-hook cases are for. Timber doors take more, with 45mm, 50mm, 55mm and 60mm the usual span, and a 70mm backset like the LC7065 is what a wide entrance door with a heavy rail needs. Backset follows the door rather than the standard."
+      }
+    ]
+  }
 }

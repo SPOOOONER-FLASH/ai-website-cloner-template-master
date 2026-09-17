@@ -58,5 +58,37 @@
     "sizeBytes": 12282,
     "note": "Three tabs: a door schedule with catalogue dropdowns, a free-format tab if you already keep your own schedule, and a worked example of a three-level building. Fill in what you know and leave the rest.",
     "noteEs": "Tres pestañas: una planilla de puertas con desplegables del catálogo, una pestaña de formato libre si ya lleva su propia planilla, y un ejemplo cumplimentado de un edificio de tres niveles. Rellene lo que sepa y deje el resto."
-  }
+  },
+  "faq": {
+    "en": [
+      {
+        "question": "How many levels does a master key system need?",
+        "answer": "Most buildings we quote need three: a change key per door, a master per floor or department, and one grand master for the building manager. We build to five levels, from great grand master down to the change key, with four tiers of management keying in between — but that is the ceiling, not the recommendation."
+      },
+      {
+        "question": "Is a five-level system more secure than a three-level one?",
+        "answer": "No, and the reason is arithmetic rather than opinion. A cylinder has a fixed number of pin positions and depths, so the total number of distinct keys is finite. A master key works by adding a second shear line in the pin stack, and each added shear line reduces how many change keys can remain unique underneath. A five-level system in a small building is a three-level building with fewer available combinations and more keys that accidentally fit more than they should."
+      },
+      {
+        "question": "What is the difference between a change key, a master and a grand master?",
+        "answer": "A change key (CK) opens one lock and nothing else — the key a tenant or office occupant carries. A master key (MK) opens every lock in one defined group: a floor, a wing, a department. A grand master key (GMK) opens several groups, and a great grand master (GGMK) sits above those. Between them sit the management levels a facilities team actually uses — the cleaner who needs every room on two floors but no plant room, the contractor who needs plant rooms across the site and no offices."
+      },
+      {
+        "question": "What do you need to design a master key system?",
+        "answer": "The door schedule with a line per door, and for each door who must be able to open it and which group it belongs to — usually a spreadsheet the facilities manager already has. From it we produce a keying chart: every door, every key that opens it, and the total key count. That chart is approved before a single cylinder is pinned. Two constraints change the chart, so raise them first: every cylinder in one system must share a keyway decided at the start, and the spares each level needs have to be counted in."
+      }
+    ]
+  },
+  "titlePt": "Quantos níveis o seu sistema de chave-mestra realmente precisa",
+  "summaryPt": "Chave-mestra não é um recurso que um cilindro tem ou não tem. É um plano — um mapa de quem pode abrir o quê — e os cilindros são pinados depois para atender ao plano.",
+  "bodyPt": [
+    "Quase toda consulta que recebemos sobre chave-mestra começa do mesmo jeito: \"vocês fazem chave-mestra?\" A resposta é sim, e ela não é útil, porque chave-mestra não é um recurso que um cilindro tem ou não tem. É um plano — um mapa de quem pode abrir o quê — e os cilindros são pinados depois para atender ao plano. A pergunta que de fato faz um pedido andar é quantos níveis esse plano tem.",
+    "Vale acertar o vocabulário, porque as siglas são usadas de forma solta e não são intercambiáveis. Uma chave de uso (CK) abre uma fechadura e mais nada — a chave que um inquilino ou um ocupante de sala carrega. Uma chave-mestra (MK) abre todas as fechaduras de um grupo definido: um andar, uma ala, um departamento. Uma chave-mestra geral (GMK) abre vários grupos. Uma chave-mestra geral superior (GGMK) fica acima dessas. Entre elas ficam os níveis de gestão que uma equipe de facilities usa no dia a dia — o zelador que precisa de todas as salas de dois andares mas de nenhuma casa de máquinas, o manutentor terceirizado que precisa das casas de máquinas do prédio inteiro e de nenhum escritório.",
+    "Construímos até cinco níveis, da GGMK até a chave de uso, com quatro camadas de chaveamento de gestão entre o topo e a fechadura individual. Isso é o teto, não a recomendação. A maioria dos prédios que cotamos precisa de três: uma chave de uso por porta, uma mestra por andar ou departamento, e uma mestra geral para o gerente predial. Especificar cinco níveis para um prédio que precisa de três não acrescenta segurança — acrescenta complexidade de chaveamento cruzado, e cada nível adicional estreita o número de combinações distintas disponíveis abaixo dele.",
+    "Esse último ponto é o mais frequentemente ignorado, e é aritmética e não opinião. Um cilindro tem um número fixo de posições de pino e um número fixo de profundidades por posição, então o total de chaves distintas é finito. Cada nível de mestra consome parte desse espaço, porque uma chave-mestra funciona acrescentando uma segunda linha de cisalhamento na pilha de pinos, e cada linha acrescentada reduz quantas chaves de uso podem permanecer únicas abaixo. Um sistema de cinco níveis num prédio pequeno não é mais seguro que um de três; é um prédio de três níveis com menos combinações disponíveis e mais chaves que abrem acidentalmente mais do que deveriam.",
+    "O projeto começa, portanto, pelo prédio e não pela ferragem. O que precisamos para desenhar um sistema é a planilha de portas com uma linha por porta e, para cada porta: quem tem de conseguir abri-la, e a que grupo ela pertence. Normalmente é uma planilha que o gerente de facilities já tem. A partir dela produzimos um quadro de chaveamento — cada porta, cada chave que a abre, e o total de chaves — e é esse quadro que é aprovado antes de um único cilindro ser pinado.",
+    "Duas restrições práticas valem ser levantadas antes do quadro, porque elas o mudam. Primeira, todos os cilindros de um sistema têm de ter o mesmo segredo, e esse segredo tem de ser decidido no começo — um sistema não pode ser ampliado depois com cilindros de outro perfil. Segunda, decida cedo quantas chaves cada nível precisa, incluindo as reservas guardadas pelo proprietário. Cortar chaves adicionais para um sistema existente é simples; descobrir que o quadro nunca previu o zelador do turno da noite não é.",
+    "Os nossos cilindros são de latão maciço, em perfil europeu. O catálogo os traz em nove comprimentos totais — 45, 47, 54, 56, 60, 65, 70, 80 e 90 mm — e o comprimento é o número inicial do código de modelo, que é como a fábrica os nomeia. Peça-nos para confirmar o comprimento total exato do modelo que você escolher: apenas dez dos quarenta e cinco cilindros publicados declaram isso como linha de especificação, e nos demais o código de modelo é a única coisa que carrega essa informação. Comprimento total também não é a divisão: um cilindro de 70 mm pode ser 35/35, 30/40 ou 40/30, e qual deles serve depende da sua porta. Essa é uma decisão separada do plano de chaveamento e está explicada na nossa nota sobre comprimento e divisão, mas as duas chegam juntas no mesmo pedido, então vale medir enquanto você desenha o quadro.",
+    "Envie a planilha de portas e diga quantos níveis você acha que precisa. Se a planilha sugerir menos, diremos — um sistema com um nível a mais do que o prédio usa é um custo e uma complicação que aparecem anos depois, quando alguém tem de explicar por que uma chave abre uma porta que não deveria."
+  ]
 }

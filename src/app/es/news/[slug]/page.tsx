@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
@@ -43,11 +43,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     alternates: {
       canonical: `/es/news/${slug}/`,
       /* Reciprocal of the English route. Both halves must exist or neither counts. */
-      languages: {
-        en: absoluteUrl(`/news/${slug}/`),
-        es: absoluteUrl(`/es/news/${slug}/`),
-        "x-default": absoluteUrl(`/news/${slug}/`),
-      },
+      languages: alternateLanguages(`/news/${slug}`),
     },
     openGraph: {
       type: "article",

@@ -46,5 +46,25 @@
     "La conclusión práctica para quien especifica: pida el informe que cubre el número de modelo que realmente va a comprar, en la configuración en que realmente lo va a comprar, y lea la línea de alcance antes que el titular. Si un proveedor responde a esa pregunta con el nombre de una familia en lugar de un número de modelo, ésa es la respuesta. La inspección por tercero antes del embarque es bienvenida aquí y no hay que negociarla: diga qué inspector y reservamos la fecha."
   ],
   "seoTitleEs": "Qué cubre realmente un informe de ensayo | Canton Hyland",
-  "seoDescriptionEs": "Los informes EN 1125, CE y de durabilidad certifican un modelo en una configuración, no una familia de producto. Cómo leer la línea de alcance, por qué importan las fechas, y la diferencia entre informe de ensayo, certificado de conformidad e ISO 9001."
+  "seoDescriptionEs": "Los informes EN 1125, CE y de durabilidad certifican un modelo en una configuración, no una familia de producto. Cómo leer la línea de alcance, por qué importan las fechas, y la diferencia entre informe de ensayo, certificado de conformidad e ISO 9001.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is the difference between a test report and a certificate of conformity?",
+        "answer": "A report is a laboratory's record of what happened to a sample: this device, these cycles, this result. A certificate of conformity is a body attesting that a product meets a standard, usually with an ongoing factory-production-control obligation behind it. They are different instruments with different weight, and \"we have the paperwork\" collapses the difference in a way that only helps the seller."
+      },
+      {
+        "question": "Does a test report cover a whole product range?",
+        "answer": "No — it attaches to the specific configuration that went into the test rig. Our tubular door lock durability report covers 607 SS ET: one member of the 607 family, in stainless steel, in the ET function. Change the finish, change the function suffix, change the backset, and you have changed the product the report describes, sometimes trivially and sometimes not. Which of those changes matter is a question for the laboratory and the standard, not for a salesperson."
+      },
+      {
+        "question": "Does ISO 9001 mean the product is tested?",
+        "answer": "No. Our quality management system has been certified to ISO 9001 since 2002, and what that means is precise: the factory has a documented, audited process for doing what it says it does. It is not a performance rating for any product. A factory can hold ISO 9001 and ship a lock that was never tested to anything, entirely consistently."
+      },
+      {
+        "question": "Why do you publish the report's details instead of the report itself?",
+        "answer": "Because the reports are the issuing laboratory's to distribute, and republishing somebody else's document is not ours to do. We publish each one's title, issuer, reference number, issue date and the exact model covered — everything you need to verify it exists and to see precisely how far it reaches. If your specification needs the document in hand, ask and we will arrange it through the proper route. Third-party inspection before shipment is welcome and does not need negotiating."
+      }
+    ]
+  }
 }

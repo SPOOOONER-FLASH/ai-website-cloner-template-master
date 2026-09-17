@@ -49,5 +49,25 @@
     "Si está armando una orden de compra a partir de una lista así, la secuencia útil es: identifique el mecanismo por los dígitos, elija la función por el tercer grupo de letras, y elija el acabado al final, confirmándolo por escrito contra una fotografía de ese código exacto. Las dos primeras decisiones son de ingeniería. La última es la que llega en un contenedor y encaja con la puerta o no encaja."
   ],
   "seoTitleEs": "Códigos de acabado: PB, AB, SN, SS | Canton Hyland",
-  "seoDescriptionEs": "PB, AB, AC, SN, SC, BN, SSS y PSS descifrados, más los sufijos de función ET, PS y BK —cómo leer una lista de precios china y cotizar a partir de ella."
+  "seoDescriptionEs": "PB, AB, AC, SN, SC, BN, SSS y PSS descifrados, más los sufijos de función ET, PS y BK —cómo leer una lista de precios china y cotizar a partir de ella.",
+  "faq": {
+    "en": [
+      {
+        "question": "What do the letters after a door hardware model number mean?",
+        "answer": "The digits are the product; the letters are the finish, and sometimes the function. 607 PBBK, 607 ABET, 607 SNET and 607 BNET look like four locks and are one. Read the letters from the right: the function comes last and the finish sits in front of it. So 607 PBBK is a 607 in polished brass, privacy function, and 607 SNET is the same lock in satin nickel, keyed entrance."
+      },
+      {
+        "question": "What do the two-letter finish codes stand for?",
+        "answer": "PB is polished brass, AB antique brass, AC antique copper, SN satin nickel, SC satin chrome, CP chrome plated, SB satin brass, SP bright polished, BN black nickel and SS stainless steel — with SSS satin stainless and PSS polished stainless where a supplier distinguishes the two. Two more are sprayed coatings rather than platings: W and WL are white paint, and F is a wood-grain spray."
+      },
+      {
+        "question": "What do ET, PS and BK mean on a lock?",
+        "answer": "They are functions rather than finishes. ET is the entrance function, keyed from the outside. PS is passage — latch only, no cylinder, for a door that closes but never locks. BK is the privacy or bathroom function, with a turn button inside and an emergency release outside. This is also why 592 SSET reads as SS plus ET, stainless steel entrance, rather than S plus SET: reading left to right gets it backwards."
+      },
+      {
+        "question": "Does a finish column listing several codes mean the photograph shows one of them?",
+        "answer": "No, and it is worth keeping apart in your own records. Where a finish column reads AB/AC/PB/SB/SS/SP/SC all available, that is the range the model can be produced in, not the finish of the piece in the photograph. A range in a specification is not a specification — ask for the finish you intend to order and confirm it in writing against a photograph of that exact code."
+      }
+    ]
+  }
 }
