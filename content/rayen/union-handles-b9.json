@@ -1,0 +1,95 @@
+{
+  "_readme": [
+    "第九批：甲方 2026-09-17 发来的两个包，3 个新型号。",
+    "  · 大拉手G1660搭配UL443门把手 —— G1660 玻璃门大拉手 + UL443 配套执手，styleFamily 1660",
+    "  · 大拉手T1138 —— 单件，不入族",
+    "",
+    "三个型号目录里本来都没有，先查过再写的。G1255 那次就是没查，",
+    "把一个已有型号的十条规格覆盖成五条；现在 ingest 会直接拒绝这种写入。",
+    "",
+    "G1660 和 T1138 各有两个长度，图纸各一张，按 G1169 / G1195 的先例并列写两档：",
+    "  · G1660：L600（P=568）与 L1263（P=1231）",
+    "  · T1138：L600（P=425）与 L1640–2140（P=1640~2140）",
+    "",
+    "T1138 两个长度的突出不一样：L600 的图上是 67.5，长款那张是 65。",
+    "不是抄错 —— 两张图各自印的就是这两个数，照原样分开写。",
+    "",
+    "G1660 两张图纸上都有日文「断面形状」（截面是半圆的 D 形），",
+    "和 T2412、G1216、G1255 一样，由 delocalize-drawings.mjs 按坐标改写成「截面形状」。",
+    "",
+    "没收的数：",
+    "  · G1660 图纸底部的 32 —— 位置像是座径，但主视图的握把截面写的是 45 宽，",
+    "    两个数对不上，说不清它量的是哪一段，不给它编标签。",
+    "  · UL443 的 18 和 9.5 —— 55 那条链里的分段，最外那个 55 已经把总突出说完了。",
+    "  · 三个型号的安装螺钉与开孔直径：图纸上都没印。",
+    "",
+    "文件名里的图纸标记这批多了几种写法：D921SZW、D922SZXW、L922SZXW，",
+    "以及 T1138 的 D901_A_SZoW —— 中间插了变体字母。原来的连续匹配认不出最后那个，",
+    "那张长款图纸会被当成普通照片，既丢了「尺寸图」标签也不会排到图库最前。已放宽。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-batch9-by-model",
+  "sites": ["rayen"],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    { "model": "G1660 图纸底部的 32", "reason": "位置像座径，但握把截面写 45 宽，对不上，不编标签" },
+    { "model": "G1660 / UL443 / T1138 的安装螺钉与开孔直径", "reason": "三张图纸上都没有印" }
+  ],
+  "models": [
+    {
+      "model": "G1660",
+      "slug": "g1660-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": ["glass-door-accessories", "glass-door-handles"],
+      "styleFamily": "1660",
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "drawing": "G1660x5D921SZW-L600.jpg",
+      "specs": [
+        { "label": "Centre distance", "value": "P=568mm (L600) / P=1231mm (L1263)" },
+        { "label": "Overall length", "value": "600mm / 1263mm" },
+        { "label": "Grip section", "value": "45 × 20mm" },
+        { "label": "Projection", "value": "50mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "UL443",
+      "slug": "ul443-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "1660",
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "drawing": "UL443x14L922SZXW.jpg",
+      "specs": [
+        { "label": "Overall length", "value": "145mm" },
+        { "label": "Lever section", "value": "Ø25mm" },
+        { "label": "Rose diameter", "value": "Ø50mm" },
+        { "label": "Projection", "value": "55mm" },
+        { "label": "Fixing centre", "value": "P=34mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "T1138",
+      "slug": "t1138-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "drawing": "T1138xD900SZXW-L600.jpg",
+      "specs": [
+        { "label": "Centre distance", "value": "P=425mm (L600) / P=1640–2140mm (L1640–2140)" },
+        { "label": "Overall length", "value": "600mm / 1640–2140mm" },
+        { "label": "Grip section", "value": "Ø35mm" },
+        { "label": "Stem diameter", "value": "Ø25mm" },
+        { "label": "Projection", "value": "67.5mm (L600) / 65mm (L1640–2140)" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    }
+  ]
+}

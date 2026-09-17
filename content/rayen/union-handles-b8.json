@@ -1,0 +1,147 @@
+{
+  "_readme": [
+    "第八批：甲方 2026-09-17 发来的「大拉手G1255搭配UL1255门把手」，2 个新型号。",
+    "",
+    "同一个款式的两件：G1255 玻璃门大拉手、UL1255 配套执手，styleFamily 都写 1255。",
+    "包名里的「搭配UL1255门把手」就是这层关系。",
+    "",
+    "G1255 有两个长度，图纸各一张：L600（P=500）和 L1300（P=1000）。",
+    "按 G1169、G1195 的先例，中心距和总长都写成两档并列，不拆成两个型号。",
+    "",
+    "这个包用「主图」标窗口图，前七批用的是「窗图」。ingest-union-handles.mjs 原来只认后者，",
+    "不改的话首图会悄悄退回第一张底图 —— 卡片看着还是正常的，这种失败最难发现。已一并加上。",
+    "",
+    "两张 G1255 图纸上都有日文「断面形状」，和 T2412、G1216 一样，",
+    "由 scripts/delocalize-drawings.mjs 按坐标改写成中文「截面形状」。下面的英文 section 保留：",
+    "它两边读者都看得懂，涂掉等于白丢一个标签。",
+    "",
+    "没写安装螺钉和开孔直径：这两张图纸上没有印。同族别的型号有不等于这个有，",
+    "而买家照着开孔的数字不能靠推断。等甲方给。",
+    "",
+    "⚠ G1255 目录里本来就有，不是新型号。",
+    "第一版清单按图纸重写了它的规格，等于把原记录里的重量、可选长度、M6 螺钉和",
+    "φ12 / φ8 开孔直径全部删掉 —— 和 09-15 那次开孔直径被 merge-artunion-specs 盖回去",
+    "是同一类事故，只是这回是我自己造的。现在规格原样沿用旧记录，这个包只补图片。",
+    "",
+    "有一处对不上，没有自己拍板：旧记录写「Projection=36mm、Rose size=25 × 61mm」，",
+    "而图纸底部是 25 | 36 | 61 的尺寸链（25+36=61）。按拉手那批定的规矩，链条里最大的",
+    "那个是总突出，也就是 61；但旧记录把 61 当成了座的长边。两种读法都说得通，",
+    "差 25mm 是装得上和顶到门套的区别。等甲方确认，在此之前不动旧值。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-batch8-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "G1255 / UL1255 的安装螺钉与开孔直径",
+      "reason": "两张图纸上都没有印，不从同族其他型号推断"
+    }
+  ],
+  "models": [
+    {
+      "model": "G1255",
+      "slug": "g1255-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "1255",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black",
+        "Antique brass"
+      ],
+      "drawing": "G1255xD900SZW.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1000mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1300mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "20mm"
+        },
+        {
+          "label": "Projection",
+          "value": "36mm"
+        },
+        {
+          "label": "Rose size",
+          "value": "25 × 61mm"
+        },
+        {
+          "label": "Weight",
+          "value": "2.6kg"
+        },
+        {
+          "label": "Available lengths",
+          "value": "600–1300mm"
+        },
+        {
+          "label": "Fixing screw",
+          "value": "M6"
+        },
+        {
+          "label": "Fixing hole",
+          "value": "φ12mm"
+        },
+        {
+          "label": "Fixing hole (flush door)",
+          "value": "φ8mm"
+        }
+      ]
+    },
+    {
+      "model": "UL1255",
+      "slug": "ul1255-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "1255",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL1255xL900SZW.jpg",
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "145mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø50mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "25mm"
+        },
+        {
+          "label": "Projection",
+          "value": "73mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=34mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        }
+      ]
+    }
+  ]
+}

@@ -8,11 +8,11 @@
     "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
     "而那个长窗口正是另一个会话重命名时撞车的原因。"
   ],
-  "generated": "2026-09-16",
+  "generated": "2026-09-17",
   "counts": {
     "refused": 439,
     "cleanable": 1222,
-    "already-clean": 2599
+    "already-clean": 2736
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -1002,6 +1002,22 @@
       "source": "14a6864407609f2893da07eb11a527708673b63785111e404950914142aeb8fd",
       "status": "already-clean"
     },
+    "100x75x3-0-0bb-pull-stainless-hinge-2.webp": {
+      "source": "5cd0bc05dde096a43b24777acb896556e8d9abc6a83f34dff17397f1dce17bd4",
+      "status": "already-clean"
+    },
+    "100x75x3-0-0bb-pull-stainless-hinge.webp": {
+      "source": "e86471302b9af315b5b3dc1cc7d25ffb191747c37d2bd25295dca08ab6321923",
+      "status": "already-clean"
+    },
+    "100x89x3-0-1bb-stainless-hinge-2.webp": {
+      "source": "a6edd98ef710653035f01e51c24d579f2cdd09b453ef34fe235d8074483394f9",
+      "status": "already-clean"
+    },
+    "100x89x3-0-1bb-stainless-hinge.webp": {
+      "source": "6c3205a6c0ba2acc2fd79e62eef29708e8b78856bc9409cd08915136736cd2c4",
+      "status": "already-clean"
+    },
     "102-glass-door-handle-2.webp": {
       "source": "ee296a8d1ee07c06689538d0e0043a94bd7341d8f635f898834be63bcaffbf1e",
       "status": "already-clean"
@@ -1261,6 +1277,14 @@
       "source": "eff3fe536b5938622e8d8ea4b7b4f87d54e017b889f5b72806ef83f8d0aed603",
       "status": "cleanable"
     },
+    "110x55x2-5-1bb-stainless-hinge-2.webp": {
+      "source": "2147b291ef10fcf97b226d6d453e477331fbafde420fb7123894f037be5848ae",
+      "status": "already-clean"
+    },
+    "110x55x2-5-1bb-stainless-hinge.webp": {
+      "source": "43ddf7e7bcbda5557f2a16f5258a3ab3702efdd28a60ad42307cd88893ccfb69",
+      "status": "already-clean"
+    },
     "112-glass-door-handle-2.webp": {
       "source": "b8ade8e9e372be96e965d58dfe4e95d8baaec3453e8c963afc2af39885412562",
       "status": "already-clean"
@@ -1342,6 +1366,14 @@
     "140-lock-case.webp": {
       "source": "42faa303fb77d44dcb3557d06fa626aa53af24223ae7454e988b02498464f10e",
       "status": "cleanable"
+    },
+    "140x55x2-5-1bb-stainless-hinge-2.webp": {
+      "source": "b463dd294dc9b7a4ae5e6fc17edac1e5702c7246a8a15f2274e60cac4653d20b",
+      "status": "already-clean"
+    },
+    "140x55x2-5-1bb-stainless-hinge.webp": {
+      "source": "1719a3fddbe2eda670848db49754d95967258b6bdce633b2348708b910cd693c",
+      "status": "already-clean"
     },
     "19-130mm-glass-door-handle-2.webp": {
       "source": "c7db669589c97f4e0e04ed9b565feaf8954492152c552ccbcc5539e68672058d",
@@ -2197,6 +2229,46 @@
       "source": "078f9a7b8a6078bedb37e304d4e85cc1bf64ce9d9e6da4ba284c273b8014b557",
       "status": "cleanable"
     },
+    "3x2-5x2-5-2bb-stainless-hinge-2.webp": {
+      "source": "58f01db6258921069971e7b68a76e2c377f2d52bd374f7b0ea3f9a4bd76c84fe",
+      "status": "already-clean"
+    },
+    "3x2-5x2-5-2bb-stainless-hinge.webp": {
+      "source": "7e8e39b607da9e09d082fe922a7c9f9ccce00d4e18211e13d129a5ebb74451e5",
+      "status": "already-clean"
+    },
+    "3x3x2-5-2bb-rounded-stainless-hinge-2.webp": {
+      "source": "f43a6c605d348d579edfe1bd314aa1c219172f6b2b8866c713e7fe579a4d2d43",
+      "status": "already-clean"
+    },
+    "3x3x2-5-2bb-rounded-stainless-hinge.webp": {
+      "source": "359f5c3e4ac020ca9f357eda55951bc14e915aecaf0a25928f71fe4f78830bbf",
+      "status": "already-clean"
+    },
+    "4-5x4-5x3-5-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "9ca58af54898176a1351364b1a5c99d4ba3af59593ccb93160d11f2d98957435",
+      "status": "already-clean"
+    },
+    "4-5x4-5x3-5-2bb-us-standard-stainless-hinge.webp": {
+      "source": "191fb493f733578b56e128c2e71a4748c4ad4301871875e45e9f6142c5d588c1",
+      "status": "already-clean"
+    },
+    "4-5x4x3-0-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "a1f90f51c60e04b89eb3d728cd9bf0efc7223f8bfcc65357d510761d208ebca6",
+      "status": "already-clean"
+    },
+    "4-5x4x3-0-2bb-us-standard-stainless-hinge.webp": {
+      "source": "009ebba9a335bcab934d457349a71d038cede54268f0617311cc8842714b5102",
+      "status": "already-clean"
+    },
+    "4-5x4x3-5-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "5886510c8d85f007a5c5c46dea766a00f1e2c1edc6e3736bcd510181b3c6e127",
+      "status": "already-clean"
+    },
+    "4-5x4x3-5-2bb-us-standard-stainless-hinge.webp": {
+      "source": "a2da201a780e2196ec29b5bea92d1a1128462e95c2a922f1910bbfc4f777f5fe",
+      "status": "already-clean"
+    },
     "410-glass-door-handle-2.webp": {
       "source": "b6ce29427e24388ab1c4a7a47c801c28a32d4a66d8d5e989997a0f7826847cb1",
       "status": "refused",
@@ -2292,6 +2364,214 @@
     },
     "47bsik-lock-cylinder.webp": {
       "source": "b57ddbc44df7550cd0df4c12c56634ef018ce2ce3c20f5353a6401832e47d2e1",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "19d32a239ebe181c38c2e6ce333dbf0362722456a3b78d2fff36bd16ed748e5b",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-2bb-us-standard-stainless-hinge.webp": {
+      "source": "0588bd27512c2308f650f3a484f201d911f91784598567b9f4e2f5bdf5e480d4",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-brass-hinge-2.webp": {
+      "source": "34f5b088b8baa8e1f1032a1ce61c6b4fdc6dbc18fcf84ecee0386192affbd018",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-brass-hinge.webp": {
+      "source": "72b0ff0c9a64ca02aa2b521f9cc7427d1759151b26f9b0a625de72800ec28b79",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "614cd0be1ceac53f89cf9baae60f9f53575737bfe2cc65abc046eb05a71a9f8b",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-stainless-hinge.webp": {
+      "source": "50e5d26833bcd5e4517611b135716bde408ae033971eef2425de1e447ad1c9af",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-us-standard-stainless-hinge-2.webp": {
+      "source": "b575f7cc80dfe13042b02477e680cecc10b118f958b4af8953910146f01af5c6",
+      "status": "already-clean"
+    },
+    "4x3-5x3-0-4bb-us-standard-stainless-hinge.webp": {
+      "source": "633734eaa3d5e57ad3f2446589ab540944f207446fedd7934238a474d0418cd9",
+      "status": "already-clean"
+    },
+    "4x3-5x4-0-2dd-brass-hinge-2.webp": {
+      "source": "93be1d0e1d6c33ab169117326f1efbfc2dc76beeb859ba47e668accb1282e055",
+      "status": "already-clean"
+    },
+    "4x3-5x4-0-2dd-brass-hinge.webp": {
+      "source": "92561c7b09665f4b73a3e1cf3b6a041808725553915fd76781ebfad467de6666",
+      "status": "already-clean"
+    },
+    "4x3x2-5-1bb-stainless-hinge-2.webp": {
+      "source": "a021ca1056fba39a7fb2f99b88b50b8a49b71fdb1bf758c14f5997202b7b1e53",
+      "status": "already-clean"
+    },
+    "4x3x2-5-1bb-stainless-hinge.webp": {
+      "source": "047ff0cb8e9a50adcfd404559e53759f55a428e777cf4432871855150dcb03c0",
+      "status": "already-clean"
+    },
+    "4x3x2-5-2bb-centre-pivot-stainless-hinge-2.webp": {
+      "source": "8b4d8b54fcfaff9acf2c9090d9261d106e42c88500ed0a19c9108fb7332233a2",
+      "status": "already-clean"
+    },
+    "4x3x2-5-2bb-centre-pivot-stainless-hinge.webp": {
+      "source": "78d1c2684ae8fec57938d848e3cc02a1f93fb12a1ce4f7b760fb65a17aaa84a3",
+      "status": "already-clean"
+    },
+    "4x3x2-5-2bb-offset-pivot-stainless-hinge-2.webp": {
+      "source": "affedf86c83bc423869a961a02c42f172e350088b3ff434908755540b24e8716",
+      "status": "already-clean"
+    },
+    "4x3x2-5-2bb-offset-pivot-stainless-hinge.webp": {
+      "source": "856c0120f905b2de804349df5c9578097df0bd9ebae2d0836879b201a9b2b022",
+      "status": "already-clean"
+    },
+    "4x3x2-5-4bb-stainless-hinge-2.webp": {
+      "source": "db075c01d84dcc3ea0b47b0bdffaf3f3fc57f125eca573c15f4d53ea7d178715",
+      "status": "already-clean"
+    },
+    "4x3x2-5-4bb-stainless-hinge.webp": {
+      "source": "73c3dd0b42d1fc6d42dda3902d1c8c96e07c495607555d0da533ec9b3f22e9a0",
+      "status": "already-clean"
+    },
+    "4x3x3-0-0bb-brass-hinge-2.webp": {
+      "source": "a78f3bab542b6fd6067ecfbdd9b282cfe90073720b732455ceb875a8dcf2b1ec",
+      "status": "already-clean"
+    },
+    "4x3x3-0-0bb-brass-hinge.webp": {
+      "source": "b0af4e998575a5ff902c7258c088ad19601affdb7fce52c616300284ef1db28e",
+      "status": "already-clean"
+    },
+    "4x3x3-0-0bb-weld-on-stainless-hinge-2.webp": {
+      "source": "906b64256f191cab799399c1345cae5d504a1227d1355789ae0947837e50630a",
+      "status": "already-clean"
+    },
+    "4x3x3-0-0bb-weld-on-stainless-hinge.webp": {
+      "source": "fb4bb6a71ad9806c8ad3571fe2a3e6775bca6b31b910bc68623bdcbf6c4fcbbf",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-offset-pivot-stainless-hinge-2.webp": {
+      "source": "ed32737d59c9435eb5a75efc8cfcb8deee11ad1770e21589a857347f6857e539",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-offset-pivot-stainless-hinge.webp": {
+      "source": "26016041cdf3af57152451179b02c60c9f97fd31ba31d2f40e94594417b25f90",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-rounded-stainless-hinge-2.webp": {
+      "source": "7727ee7ea7785c9014516c8d4e8fc70f65e0b388fbd498bbab4a76cd31e97a9d",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-rounded-stainless-hinge.webp": {
+      "source": "e56a31b88dd2f96fac84452dbf744cb35fcb130012211c84720daec38be7eb14",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "c6cb89094a821edf67dd662bbd37b9bbf1c56e8b5ed0eff4ca5e20804549bf42",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2bb-us-standard-stainless-hinge.webp": {
+      "source": "bc7474cbc115f3d280b9d9d1904ac99727d8f2d58fcf74879fa267a2371ed0a5",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2dd-brass-hinge-2.webp": {
+      "source": "4f2d79f8e5ac9979414ff77a292b4a1f3b72afe429d192b37d34408998ad3a30",
+      "status": "already-clean"
+    },
+    "4x3x3-0-2dd-brass-hinge.webp": {
+      "source": "64a6efde47abc4640d83b279e971305b5b8c2da64b9671d73e621b542fcd7c03",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-brass-hinge-2.webp": {
+      "source": "5bb7c2f7d4cab13985ee0ff382a28cfc8578530604451c854179e4586dd8b273",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-brass-hinge.webp": {
+      "source": "dbeebd69b72c10efd46657dda2b60200505448c5aee0abc30bccaf3549a73cfd",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-rounded-brass-hinge-2.webp": {
+      "source": "41a00266f0534e620228fabf010f4846014c59efe943aabc7363ba8ae9b40a5c",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-rounded-brass-hinge.webp": {
+      "source": "923141014823ed529269fe04d8ff5cd8616e36048b584f94d20099ffc1a3866f",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-rounded-stainless-hinge-2.webp": {
+      "source": "133122edb3524c6b38fecc35da46f12df93c7cf1fc4b96bc8e68b80264d856bb",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-rounded-stainless-hinge.webp": {
+      "source": "75fb2e86cbcf23cb7c71238cf332514515141c8dc3e2f8d21feb19a6f8f14c08",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "18e506c243d4a96b78037ea311447b62a56494d4d67e57a7d4355ac67a57f681",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-stainless-hinge.webp": {
+      "source": "ad094e51b3d61a685c31b19a4edebc955a2265fed533cfa2e7f357345535aeef",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-us-standard-stainless-hinge-2.webp": {
+      "source": "184b998895f29e36e60bd56822a217aef3dea6fdfadf7350acde64afd423b7d3",
+      "status": "already-clean"
+    },
+    "4x3x3-0-4bb-us-standard-stainless-hinge.webp": {
+      "source": "9a1b4ef7e3b4e718e39ec98510f6ea4e986df6e772f3bdfdaf04bbd4e5f1f83f",
+      "status": "already-clean"
+    },
+    "4x3x3-3-2bb-brass-hinge-2.webp": {
+      "source": "7ad219d77f9921b717c8ca5cf181a0aba46f75ca7b597645b7f5b87a8b92de4a",
+      "status": "already-clean"
+    },
+    "4x3x3-3-2bb-brass-hinge.webp": {
+      "source": "b5cb9e979aeedad6f49bcfcbe865f34f36d552aae009b98820d9d00fb12abf57",
+      "status": "already-clean"
+    },
+    "4x4x3-0-2bb-us-standard-stainless-hinge-2.webp": {
+      "source": "4e4638c0bed4ab5064e03dbb8fe86acb2fb28e53fff9465ec2c1676cb78670a5",
+      "status": "already-clean"
+    },
+    "4x4x3-0-2bb-us-standard-stainless-hinge.webp": {
+      "source": "872859daba105b8df07db6ad437446fe8c45a103166432424b70496f211242a7",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-brass-hinge-2.webp": {
+      "source": "63d8bd0af27e359ca223bb3d65012f60c5f9b55ba52519c2eec00fe620c3cd0d",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-brass-hinge.webp": {
+      "source": "5ab64a44c4bea8389b465dbc643086c3f1bec157cdb0a36f23547c434163cd65",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "6062e8ffc6db403df63d3163f6b8c80918259f2be457467ef9e1b3824a477881",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-stainless-hinge.webp": {
+      "source": "d746851966dfe6b96e6cc3d07b34c0519753efc9592ce2a1cfaad34aa0a8f125",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-twin-pin-security-stainless-hinge-2.webp": {
+      "source": "9def232e423a73fe50c70bd4c45021f55beaf216cf95d30ec9915cf7a25189c3",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-twin-pin-security-stainless-hinge.webp": {
+      "source": "e5d897e59bdd77276ba627b91fa4290fbfc954cdbd5e4fb07b678cc8f9012e96",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-us-standard-stainless-hinge-2.webp": {
+      "source": "0861073e1f28f2ca2b96d5335d038e0b921b49f5ce9f82a154288bf2acff7890",
+      "status": "already-clean"
+    },
+    "4x4x3-0-4bb-us-standard-stainless-hinge.webp": {
+      "source": "ae39bbcf04f5623c9ab8921ab19a4cf02553ab74f2eee83a3e3c3f6a91cef0eb",
       "status": "already-clean"
     },
     "500-indicator-2.webp": {
@@ -3626,6 +3906,114 @@
       "source": "2ad772a042328b881bbd48e5b4a642087ed0f51a1908ab5f3e51b8d6953a4430",
       "status": "already-clean"
     },
+    "5x3-5x3-0-2bb-offset-pivot-stainless-hinge-2.webp": {
+      "source": "865287194df85134268c7121523383fac0be8f99cda1b9d796327c07fd6c4098",
+      "status": "already-clean"
+    },
+    "5x3-5x3-0-2bb-offset-pivot-stainless-hinge.webp": {
+      "source": "ac4b735d7f27221e3005bb2cf706df4ff9ab90387142ae200da47f124bc048d8",
+      "status": "already-clean"
+    },
+    "5x3-5x3-0-4bb-brass-hinge-2.webp": {
+      "source": "b7d12aa3e357cc82791ded8dfa5f18c3f2ab861595fd2958cfc3465371f26536",
+      "status": "already-clean"
+    },
+    "5x3-5x3-0-4bb-brass-hinge.webp": {
+      "source": "34c85595b024fe706827c4f6a86e2335b68f0e601b1cc50fffb993673ee88ef9",
+      "status": "already-clean"
+    },
+    "5x3-5x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "331e03d99852e2962ec28119989c778715328b6daca52a8bb479f6e81bdae147",
+      "status": "already-clean"
+    },
+    "5x3-5x3-0-4bb-stainless-hinge.webp": {
+      "source": "ff96c245ef034dbc6ee722b88c5ac10d5211fe01fc4ee1bfe37ee71366bf6b27",
+      "status": "already-clean"
+    },
+    "5x3-5x3-5-1bb-brass-hinge.webp": {
+      "source": "e9d59f7811ce5b014f531e216a5cf5186186feaf56f5c9d80be27c5a36b414b2",
+      "status": "already-clean"
+    },
+    "5x3-5x4-0-2dd-brass-hinge-2.webp": {
+      "source": "f5c11c6190412c805ace8f48b97ccca8d8582023498ecc706995fb02c03361b0",
+      "status": "already-clean"
+    },
+    "5x3-5x4-0-2dd-brass-hinge.webp": {
+      "source": "f73d51919c99ec52846a9c7847fe1efa18abbe36a65465027743a60ce381798e",
+      "status": "already-clean"
+    },
+    "5x3x2-5-2bb-offset-pivot-stainless-hinge-2.webp": {
+      "source": "87a28ee1d4a757e48429fe09974f0bd3f9706303f088db481600812c517dae12",
+      "status": "already-clean"
+    },
+    "5x3x2-5-2bb-offset-pivot-stainless-hinge.webp": {
+      "source": "7dadb51c0b543f03d44371e10e9a18153d7f8849d727c56657ae35578dee6f69",
+      "status": "already-clean"
+    },
+    "5x3x3-0-2dd-brass-hinge-2.webp": {
+      "source": "ac0aa8361c78d1406b666615a7f2bb9cd6419e5b25e4c379c32a9b2be42ed9f3",
+      "status": "already-clean"
+    },
+    "5x3x3-0-2dd-brass-hinge.webp": {
+      "source": "38febbf8d81f5664078292399aa665b2bfd0f450ca945ce0a5cc84ec94d9cf09",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-brass-hinge-2.webp": {
+      "source": "0a0153ea632ea9b7692805048ae39a3537e1bb886b3686423d741e5ffcbc6a6d",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-brass-hinge.webp": {
+      "source": "d3f32d605c84a8c3e2c010c4b5fdef4eaff6720ccee32a691bc54a5e86cb2f8b",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-rounded-stainless-hinge-2.webp": {
+      "source": "fb69b96c52f0c648e4623ae4f7ff46662d8f6b0ed1cd21f4e258df1260fd8fe2",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-rounded-stainless-hinge.webp": {
+      "source": "5be7551c89594c2c516af483191d20d9b83f58e9fd68ed14e5370dd6c5f9290e",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "1c9e52380a67e309e303d74d093cce58fe0ae08245c5d94aa821efa7134a80c2",
+      "status": "already-clean"
+    },
+    "5x3x3-0-4bb-stainless-hinge.webp": {
+      "source": "745f3fdb2c276992804cb7f63afdd7d3559f74baed7a6603c824004ae02d82a4",
+      "status": "already-clean"
+    },
+    "5x3x4-0-4bb-brass-hinge-2.webp": {
+      "source": "5f1990c926b0e61f37772ed307451874335df97c4e7fea59b2a18b2033f7db21",
+      "status": "already-clean"
+    },
+    "5x3x4-0-4bb-brass-hinge.webp": {
+      "source": "b4b3de2ed8f685d3e603509bb6e74ee53d5693603167686084947a3f2adcf419",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-brass-hinge-2.webp": {
+      "source": "615c82df32f0603e42f89162252ff43192ef948035ed3367d0e5ae4577402921",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-brass-hinge.webp": {
+      "source": "2530a40aaf89a0caffaedf65679225358746f9a4e513b757f41b7bc029063d77",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "c177e4e7f9246540d5ede5f123217782f41a61621b7823b8ea4c7f8a48c3adc2",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-stainless-hinge.webp": {
+      "source": "2ef1f01b45c5161165d8758713132e48884923821bc2d9be24a876494731c085",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-twin-pin-security-stainless-hinge-2.webp": {
+      "source": "4908186fc1e81a34c994d4b3180130ceb93ea6eccc7f662689d24b35f6588cd1",
+      "status": "already-clean"
+    },
+    "5x4x3-0-4bb-twin-pin-security-stainless-hinge.webp": {
+      "source": "c07b0377d7ec05ea23f0dbcd845088d7ab263fdc7539b895cd374ab3d776ad1c",
+      "status": "already-clean"
+    },
     "6-3-3mm-brass-and-steel-hinges-2.webp": {
       "source": "44c95731a3265d0f1da2ee350edbe3de19a49eda88fa0e15b3645aa71acf2838",
       "status": "cleanable"
@@ -4113,6 +4501,38 @@
     "65sn-lock-cylinder.webp": {
       "source": "42e4a72b25229a9cd3e744d9d24eb8a006be3154541d6390a9b5ea51901eadea",
       "status": "cleanable"
+    },
+    "6x3-5x3-0-4bb-brass-hinge-2.webp": {
+      "source": "89d8f5eb6d4a0dff8d9dd2b7cc83621829c00afb521f0ce52a21dbff76a6b782",
+      "status": "already-clean"
+    },
+    "6x3-5x3-0-4bb-brass-hinge.webp": {
+      "source": "f7812f28b5c7ae4e8cf5f1c8ec8c6936fb69104278be6e261ad8e8940ed2f300",
+      "status": "already-clean"
+    },
+    "6x3-5x3-0-4bb-stainless-hinge-2.webp": {
+      "source": "9026b69e6e2f28bc21b7a72909ef32bb29e2cbfa4f8862eae289a34ece0f8a70",
+      "status": "already-clean"
+    },
+    "6x3-5x3-0-4bb-stainless-hinge.webp": {
+      "source": "44ea3444ae4b0cc53d1c65a58120cd10a1e8edb72dca5da4b41d0fcbc17e5028",
+      "status": "already-clean"
+    },
+    "6x4x3-5-4bb-single-pin-security-stainless-hinge-2.webp": {
+      "source": "0b2cf026273019aa3070e4aad343a8f80fdc5b5e3caaa9a0af6ab7855ebaa597",
+      "status": "already-clean"
+    },
+    "6x4x3-5-4bb-single-pin-security-stainless-hinge.webp": {
+      "source": "35e36dd1bccfdc0594cca91d49ae0cea691b3190bbe7bf161665963d5eb3e592",
+      "status": "already-clean"
+    },
+    "6x4x3-5-4bb-stainless-hinge-2.webp": {
+      "source": "b3cde4252384c62fbb4cb2f8e04d751a281432ede5afd2920b1b47b94c2d521e",
+      "status": "already-clean"
+    },
+    "6x4x3-5-4bb-stainless-hinge.webp": {
+      "source": "af36323a8844cdd4442e141907d9eefa5cc3243a30f31a1c2330e60920153f59",
+      "status": "already-clean"
     },
     "70-abkt-cp-lock-cylinder-2.webp": {
       "source": "e7bc0a41129a48cdfb4e31167af19cfc2a5c5e127f60d32bb143887850149564",
@@ -5606,6 +6026,18 @@
     "8828-sset-lever-handle.webp": {
       "source": "52119f72d956170f816ad73018c16b359ccafe02e395737a8e291638e8832198",
       "status": "cleanable"
+    },
+    "8x4x3-5-4bb-single-pin-security-brass-hinge.webp": {
+      "source": "e6747b1d86d5915eb21e455f82be044e87b73f388ecc746d4159adf32ef5fa5e",
+      "status": "already-clean"
+    },
+    "8x4x3-5-6bb-stainless-hinge-2.webp": {
+      "source": "51ababa88061ade51c46443e32e373208727dee3b805762512a396cd96e8e798",
+      "status": "already-clean"
+    },
+    "8x4x3-5-6bb-stainless-hinge.webp": {
+      "source": "b7936922310a2edb9dacb6540049c0b632984320d3baa96711a619c7771e6a1a",
+      "status": "already-clean"
     },
     "90-bskt-lock-cylinder-2.webp": {
       "source": "bd241d65108405179904e6ad216b14c754c92d4c9d0b0ed2307ec298990890bf",
@@ -10469,7 +10901,31 @@
       "status": "already-clean"
     },
     "g1255-glass-door-handle-2.webp": {
+      "source": "a1b8db43561a39b6381b8952d29f492dafc6104f028b23d26f08dac0deb07c28",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-3.webp": {
       "source": "4bc3860215b451a2489ae812e08b3dc0dd1836e6b37a0891a19c97fd14097b94",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-4.webp": {
+      "source": "83b7b4ffec3daee2491454d7fcee035d381aa9447357bbdc3de3692214662e1d",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-5.webp": {
+      "source": "f37c12f62cf8dc3c99bfb70f95ceab88cd8417b16efaa04dd964e55202f042c6",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-6.webp": {
+      "source": "f507bfe00cc3cf085d0b119818f12526611419eaaa199d562b3899db9a1271c0",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-7.webp": {
+      "source": "a454ebc8590f61cb0e48908f3ecccbcc2e3f520d5c8608a0983d98b0c4640866",
+      "status": "already-clean"
+    },
+    "g1255-glass-door-handle-8.webp": {
+      "source": "0993af3c539c86378f7ac9ef51054e277be1f782e8b34cecce142d1f1724b6f8",
       "status": "already-clean"
     },
     "g1255-glass-door-handle.webp": {
@@ -10693,6 +11149,42 @@
     "g130-glass-door-handle.webp": {
       "source": "2909b7c5923af8015c55155d1745ad4eb4edd259a6239ce7f0c67abd7eeea3cc",
       "status": "cleanable"
+    },
+    "g1660-glass-door-handle-2.webp": {
+      "source": "fa9a68cfdea6d23c845aebe0d39a4f19914cbff14a8ed52fd647f5ce43456677",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-3.webp": {
+      "source": "24619d70b27fbb11d49e9506b48bfa9f6d6afdf7f432a5d03a15e1458b65b867",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-4.webp": {
+      "source": "9d3e7845ea5f21e9f6bb260120385ea170e492dc4108c6bdf17b86461b46f655",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-5.webp": {
+      "source": "9819865aba4653ab97d1adc3fbf09a070a09e3724447e1c2eb18eda8643a73f9",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-6.webp": {
+      "source": "726f50fb17eed32fa545dc72701bfdb3f8919a2044104f62e67d96aef09b8260",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-7.webp": {
+      "source": "4d90e0962737060ef4050e2680c146bc92a16f2db60bccb39d5956bfe89af442",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-8.webp": {
+      "source": "3fa4958a9c14b31a436e31f303bd4342218d2a55a89f474f6cb8e9d14ac77d17",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle-9.webp": {
+      "source": "2f0881af0e769bf59d87b0cf1af92f2b3b16e84ea2adb72633656b581b847458",
+      "status": "already-clean"
+    },
+    "g1660-glass-door-handle.webp": {
+      "source": "749c156e0cf43bf71d27003c8feb4f8b550636fb3066878037cc15dbdb72e5ee",
+      "status": "already-clean"
     },
     "g2110-glass-door-handle-10.webp": {
       "source": "10f54d3fc184a2e448840ae6519ab275a02ab0945de514b0bd8ad95574ef3cc5",
@@ -15726,6 +16218,30 @@
       "source": "fcc44a6b775fe41a190ba1be33503e0a318d543f49f84a0e6dff308234069bf3",
       "status": "already-clean"
     },
+    "t1138-stainless-steel-handle-2.webp": {
+      "source": "e5107c8e4d52da074825cc7b99a34d1ec63f3a9454c60f0e33ab2d08ad203c02",
+      "status": "already-clean"
+    },
+    "t1138-stainless-steel-handle-3.webp": {
+      "source": "707552860717eef9dc45cb7911d5e23dd0e04e4658392ac54a7b2b71e524e8d9",
+      "status": "already-clean"
+    },
+    "t1138-stainless-steel-handle-4.webp": {
+      "source": "9ad82ef544bfee7b56783996a9d9110334435f383330ef52adab41d3b7d82f81",
+      "status": "already-clean"
+    },
+    "t1138-stainless-steel-handle-5.webp": {
+      "source": "023e60527b6ec63bd7cee4e9e7107df70ce3769e84e8f84a200dcf67b8d8f235",
+      "status": "already-clean"
+    },
+    "t1138-stainless-steel-handle-6.webp": {
+      "source": "a57cddeefc4a7f5b0910e9a6410129f3ae46b2f27c3c24f68daf0c422446756d",
+      "status": "already-clean"
+    },
+    "t1138-stainless-steel-handle.webp": {
+      "source": "5fa65c0d0279c95bc019dcee0fe9d90b271c230c436b290ed0d5e78adc7c0f35",
+      "status": "already-clean"
+    },
     "t1170-stainless-steel-handle-10.webp": {
       "source": "20030995c70c1ce57c668f0e77ce752f3ecd2c84121abefbb1abcc4c2f7abde1",
       "status": "already-clean"
@@ -17619,6 +18135,30 @@
       "source": "1c387471c3658eb3f7e34d99458b1cfeb502d86b419e699f0e0c8b286d7b15ba",
       "status": "already-clean"
     },
+    "ul1255-lever-handle-2.webp": {
+      "source": "8505bf9772b80e5a42253ccdcd12b0f0b68cd82f9f278f51546cfb1bd54250b6",
+      "status": "already-clean"
+    },
+    "ul1255-lever-handle-3.webp": {
+      "source": "7041ce500b664138a6f069616f8460d41abaab04ec27af430de7658d7cfca4dd",
+      "status": "already-clean"
+    },
+    "ul1255-lever-handle-4.webp": {
+      "source": "fad04c8d6f9c475cf05ea0014e88427788211178a6e023b71f529454dc434f7c",
+      "status": "already-clean"
+    },
+    "ul1255-lever-handle-5.webp": {
+      "source": "73139bd0ef110c7839c667ec1a43e3af241cd0c74d59eae427804d89d4e8537d",
+      "status": "already-clean"
+    },
+    "ul1255-lever-handle-6.webp": {
+      "source": "7ddb38cf2aee20252a013eb2f1bb9d6db34d80efc8e58bf9467c8e6dbd1e248a",
+      "status": "already-clean"
+    },
+    "ul1255-lever-handle.webp": {
+      "source": "1327d3a167ff1b0cf6a8edd36b55f73bd71e54937c858bf424a74a758f099ec1",
+      "status": "already-clean"
+    },
     "ul1288-lever-handle-2.webp": {
       "source": "a6748864f4cc6b60b5df134e2832a394e5127d5531404d4511627bd3c12f5fa7",
       "status": "already-clean"
@@ -17633,6 +18173,14 @@
     },
     "ul1288-lever-handle.webp": {
       "source": "af3ca3c86185b49e17e2baa21c856c5cf439351744f6b6ede5c21ceab625c4fc",
+      "status": "already-clean"
+    },
+    "ul443-lever-handle-2.webp": {
+      "source": "c5d011e3a37b8c9cb82be9b808e042b70810d392ed3e8796eb1fe6d32fc82758",
+      "status": "already-clean"
+    },
+    "ul443-lever-handle.webp": {
+      "source": "6577157843a3b7b983ea136fe83688df302948c57c82bc339fa0316912aa5cf6",
       "status": "already-clean"
     },
     "ul680-lever-handle-10.webp": {

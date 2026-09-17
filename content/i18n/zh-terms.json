@@ -296,7 +296,10 @@
     "Centre distance, vertical": "竖向中心距",
     "Corner offset": "转角固定孔距",
     "End to fixing": "端部至固定孔",
-    "Length bands": "长度分档"
+    "Length bands": "长度分档",
+    "Bearings": "轴承数",
+    "Leaf size": "页片尺寸",
+    "Knuckle diameter": "轴筒直径"
   },
   "productNames": {
     "Bathroom Accessories": "浴室配件",
@@ -357,7 +360,8 @@
     "Wooden Door Floor Hinge": "木门地弹簧",
     "Panic Exit Device Trim": "逃生推杠外装置",
     "Panic Exit Device Lock Case": "逃生推杠锁体",
-    "Door Knob": "旋钮锁"
+    "Door Knob": "旋钮锁",
+    "Ball Bearing Hinge": "轴承合页"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -1194,6 +1198,66 @@
     [
       "Grey",
       "灰色"
+    ],
+    [
+      "Pure Copper",
+      "纯铜"
+    ],
+    [
+      "Satin Sanded",
+      "砂光"
+    ],
+    [
+      "Frosted Copper",
+      "磨砂铜"
+    ],
+    [
+      "Matt Antique Bronze",
+      "亚光青古铜"
+    ],
+    [
+      "Matt Antique Copper",
+      "亚光红古铜"
+    ],
+    [
+      "Matt Antique Brass",
+      "亚光黄古铜"
+    ],
+    [
+      "Gunmetal Grey",
+      "枪灰色"
+    ],
+    [
+      "Galaxy Grey",
+      "银河灰"
+    ],
+    [
+      "French Bronze",
+      "法国古铜"
+    ],
+    [
+      "Black Antique Brass",
+      "黑黄古"
+    ],
+    [
+      "Brushed Chrome",
+      "拉丝铬"
+    ],
+    [
+      "Coffee",
+      "咖啡色"
+    ],
+    [
+      "Light Coffee Edged",
+      "浅咖啡拉边"
+    ],
+    [
+      "Dark Coffee Edged",
+      "深咖啡拉边"
+    ],
+    [
+      "Toffee Gold",
+      "太妃金"
     ]
   ]
 }

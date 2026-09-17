@@ -94,14 +94,30 @@ function shotRank(file) {
  * changing the default would reorder products this run can neither regenerate nor check.
  */
 const DRAWING_FIRST = manifest.imageOrder === "drawing-first";
-const isWindowShot = (file) => file.includes("窗图");
+/* The supplier marks the intended thumbnail in the filename. Batches 1–7 wrote 「窗図/窗图」
+   (window image); the G1255 pack that arrived 2026-09-17 writes 「主图」 instead. Same
+   intent, different word — and without this the hero silently falls back to the first
+   product plate, which is a quieter failure than it sounds: the card still looks fine. */
+const isWindowShot = (file) => file.includes("窗图") || file.includes("主图");
 /*
   UNION encodes the shot type in the filename (D9xxSZ = drawing). The RAYEN catalogue
   batch has no such convention — its pictures are cut out of the printed book by
   scripts/../cut.mjs — so those are named for what they are instead.
 */
-const isDrawing = (file) => /(D|L)9\d\dSZ/i.test(file) || /-drawing\.[a-z]+$/i.test(file);
+/* D900SZ, but also D901_A_SZoW and D922SZXW — the supplier interleaves a variant letter
+   and suffixes after the number. T1138's long-length drawing is `D901_A_SZoW`, which the
+   original contiguous pattern missed: it would have been filed as an ordinary photograph
+   and lost both its 「dimension drawing」 label and its place at the head of the gallery. */
+const isDrawing = (file) => /(D|L)9\d\d[_A-Za-z]*SZ/i.test(file) || /-drawing\.[a-z]+$/i.test(file);
 
+/*
+  `imageDir` overrides the folder name when the model number is not unique.
+
+  The hinge catalogue numbers by SIZE — `4x3x3.0-4BB` is a 101.6 × 76.2 × 3.0mm hinge with
+  four ball bearings — so the same code names a stainless one and a copper one. Keyed on the
+  model, both would have read the same folder and the copper hinge would have shipped with the
+  stainless photograph. Everything before batch 8 has unique model numbers and is unaffected.
+*/
 function imagesFor(model) {
   const dir = join(manifest.sourceRoot, model);
   if (!existsSync(dir)) return [];
@@ -196,7 +212,7 @@ const written = [];
 const missing = [];
 
 for (const entry of manifest.models) {
-  const sources = imagesFor(entry.model);
+  const sources = imagesFor(entry.imageDir ?? entry.model);
   if (!sources.length) {
     missing.push(entry.model);
     continue;
@@ -270,8 +286,44 @@ for (const entry of manifest.models) {
     seoDescription: summary,
   };
 
+  /*
+    A manifest that rebuilds an EXISTING record must not quietly drop spec rows.
+
+    2026-09-17: the batch-8 manifest treated G1255 as a new model and wrote it from its two
+    drawings. G1255 was already in the catalogue with ten spec rows — weight, available
+    lengths, the M6 fixing screw and the phi12 / phi8 hole diameters — and the rebuild replaced
+    them with five. Nothing failed. The page rendered, the card looked right, and the numbers
+    a fitter drills to were gone. It was caught only because an orphaned door-prep SVG made a
+    different test fail.
+
+    Same shape as the two earlier losses this repo has already paid for, so this is a refusal
+    rather than a warning: a warning in a two-hundred-line ingest log is a warning nobody
+    reads. To overwrite deliberately — a genuine correction — name the model in the manifest's
+    `overwrites` array, which puts the decision next to the data where it gets reviewed.
+  */
+  const target = join(PRODUCT_DIR, `${entry.slug}.json`);
+  if (existsSync(target)) {
+    const before = JSON.parse(readFileSync(target, "utf8"));
+    const had = new Set((before.specs ?? []).map((row) => row.label));
+    const has = new Set((entry.specs ?? []).map((row) => row.label));
+    const lost = [...had].filter((label) => !has.has(label));
+    if (lost.length && !(manifest.overwrites ?? []).includes(entry.model)) {
+      console.error(
+        `
+⚠ ${entry.model} 目录里已经有了，这份清单会删掉它的 ${lost.length} 条规格：` +
+          `
+   ${lost.join("、")}` +
+          `
+   要么把这些行写进清单，要么把型号加进 "overwrites" 明示是有意覆盖。`,
+      );
+      process.exitCode = 1;
+      continue;
+    }
+  }
+
   if (!checkOnly) {
-    writeFileSync(join(PRODUCT_DIR, `${entry.slug}.json`), `${JSON.stringify(record, null, 2)}\n`, "utf8");
+    writeFileSync(target, `${JSON.stringify(record, null, 2)}
+`, "utf8");
   }
   written.push(`${entry.model} → ${entry.categoryPath.join("/")} (${refs.length} 图, ${entry.specs.length} 规格行)`);
 }

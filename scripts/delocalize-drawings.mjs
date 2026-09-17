@@ -112,6 +112,39 @@ const EDITS = [
     regions: [{ x: 175, y: 267, w: 48, h: 17, text: "截面形状", size: 11 }],
   },
   /*
+    G1255's two drawings (L600 and L1300), batch 8, 2026-09-17.
+
+    Same 「断面形状」 label over the same English "section", so the same rewrite. The two boxes
+    are different sizes because the L1300 drawing is scaled down to fit the longer handle on
+    one sheet — measured separately off each 544×532 canvas rather than copying the first,
+    which would have painted a 17px-tall patch over an 11px-tall label and left a white bar.
+  */
+  {
+    file: "g1255-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 262, y: 217, w: 67, h: 17, text: "截面形状", size: 13 }],
+  },
+  {
+    file: "g1255-glass-door-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 273, y: 234, w: 42, h: 11, text: "截面形状", size: 8 }],
+  },
+  /*
+    G1660's two drawings (L600 and L1263), batch 9, 2026-09-17. Same label, same rewrite.
+    The section it points at is a D — half-round with a flat back — which is why the handle's
+    grip is quoted as 45 × 20mm rather than a diameter.
+  */
+  {
+    file: "g1660-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 179, y: 321, w: 51, h: 14, text: "截面形状", size: 10 }],
+  },
+  {
+    file: "g1660-glass-door-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 118, y: 230, w: 81, h: 21, text: "截面形状", size: 15 }],
+  },
+  /*
     G1216, added 2026-09-14 with the drawing itself.
 
     This model reached the site from batch 1 with no drawing at all and an empty spec table.

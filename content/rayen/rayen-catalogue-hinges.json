@@ -1,0 +1,2046 @@
+{
+  "_readme": [
+    "不锈钢 / 铜合页，甲方 2026-09-17 发来的《雷茵-不锈钢铜合页》图册，21 个跨页。",
+    "",
+    "⚠ 这本书是「同一个型号按材质和表面分格排」，不是一格一个型号。",
+    "裁出 124 个产品格，但 p08 四格代号全是 4x3x3.0-4BB，只有表面不同；p12、p16 再来一遍，",
+    "材质换成纯铜。去重后是这 55 条：型号代号 × 材质，表面收成列表。",
+    "",
+    "型号即尺寸：4x3x3.0-4BB = 4″ × 3″ × 3.0mm、4 颗轴承。",
+    "⚠ 但尺寸不能按代号换算 —— 逐张图纸核过之后发现两类反例：",
+    "  · 纯铜版按公制做：4x3x3.0-4BB 铜的是 100 × 75 × φ12，不是英寸换算的 101.6 × 76.2 × φ14.2",
+    "  · 中轴 / 偏轴那几个也是公制：75×100、73×100、78×125、82×125",
+    "所以全部 53 个型号的页片尺寸、厚度、轴筒直径都是从图纸上逐张读的，代号只用来命名。",
+    "",
+    "同一个代号在不锈钢和纯铜下是两个产品，slug 用 -stainless-hinge / -brass-hinge 区分；",
+    "ingest 原来按型号名找图片目录，两条会读到同一个文件夹、把不锈钢的照片发给铜合页 ——",
+    "已加 imageDir 字段，按格子编号取图。",
+    "",
+    "没有收轴筒直径（图上的 φ14.2 那类）：只逐张核过几个型号，没有全读。",
+    "差一个数字不如空着 —— 买家照这个配销子。",
+    "",
+    "2DD 是全铜垫片（All copper gasket），不是滚珠轴承；BB 才是。规格行照这个写。",
+    "",
+    "表面代号按各自那一页的原文记，不统一：HH 在不锈钢页是「枪灰色」、在纯铜页是「银河灰」，",
+    "TH 在 4x3.5x4.0-2DD 那页是「深咖啡拉边」、别处是「浅咖啡拉边」。那是工厂自己的叫法。",
+    "",
+    "p10、p11、p21 是表面展示页和色卡，没有规格块，不是产品。p21 上另有三个代号",
+    "（4x3x3.5-4BB、5x3.5x4.0-4BB、4x3x3.5-2DD）没有印材质和表面，没有收。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-catalogue-hinges",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "4x3x3.5-4BB / 5x3.5x4.0-4BB / 4x3x3.5-2DD",
+      "reason": "图册 p21 只印了代号，没有材质和表面处理"
+    },
+    {
+      "model": "5x4x3.0（p07R1）",
+      "reason": "代号没有轴承位后缀，无法判断是几颗轴承还是别的结构"
+    },
+    {
+      "model": "8x4x3.5-4BB单钉防盗合页 (Pure Copper)、5x3.5x3.5-1BB (Pure Copper)",
+      "reason": "图册里这一格没有尺寸图，不按代号推算"
+    }
+  ],
+  "models": [
+    {
+      "model": "3x2.5x2.5-2BB",
+      "slug": "3x2-5x2-5-2bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "76.2 × 63.5mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p01R1"
+    },
+    {
+      "model": "3x3x2.5-2BB圆角",
+      "slug": "3x3x2-5-2bb-rounded-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "76.2 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p01R2"
+    },
+    {
+      "model": "4x3x2.5-4BB",
+      "slug": "4x3x2-5-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p01R3"
+    },
+    {
+      "model": "4x3x3.0-4BB",
+      "slug": "4x3x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded",
+        "Matt Antique Bronze",
+        "Matt Antique Copper",
+        "Gunmetal Grey",
+        "Matt Antique Brass"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02L1"
+    },
+    {
+      "model": "4x3x3.0-4BB美标",
+      "slug": "4x3x3-0-4bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02L2"
+    },
+    {
+      "model": "4x3x3.0-2BB美标",
+      "slug": "4x3x3-0-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02L3"
+    },
+    {
+      "model": "4x3x3.0-4BB圆角",
+      "slug": "4x3x3-0-4bb-rounded-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02R1"
+    },
+    {
+      "model": "4x3x3.0-2BB圆角",
+      "slug": "4x3x3-0-2bb-rounded-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02R2"
+    },
+    {
+      "model": "4x3.5x3.0-4BB",
+      "slug": "4x3-5x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p02R3"
+    },
+    {
+      "model": "4x3.5x3.0-4BB美标",
+      "slug": "4x3-5x3-0-4bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03L1"
+    },
+    {
+      "model": "4x3.5x3.0-2BB美标",
+      "slug": "4x3-5x3-0-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03L2"
+    },
+    {
+      "model": "4x4x3.0-4BB",
+      "slug": "4x4x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03L3"
+    },
+    {
+      "model": "4x4x3.0-4BB双钉防盗合页",
+      "slug": "4x4x3-0-4bb-twin-pin-security-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03R1"
+    },
+    {
+      "model": "4x4x3.0-4BB美标",
+      "slug": "4x4x3-0-4bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03R2"
+    },
+    {
+      "model": "4x4x3.0-2BB美标",
+      "slug": "4x4x3-0-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p03R3"
+    },
+    {
+      "model": "4.5x4x3.0-2BB美标",
+      "slug": "4-5x4x3-0-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "114.3 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04L1"
+    },
+    {
+      "model": "4.5x4x3.5-2BB美标",
+      "slug": "4-5x4x3-5-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "114.3 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø15.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04L2"
+    },
+    {
+      "model": "4.5x4.5x3.5-2BB美标",
+      "slug": "4-5x4-5x3-5-2bb-us-standard-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "114.3 × 114.3mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø15.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04L3"
+    },
+    {
+      "model": "5x3x3.0-4BB",
+      "slug": "5x3x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded",
+        "Matt Antique Copper",
+        "Matt Antique Bronze",
+        "Gunmetal Grey",
+        "Matt Antique Brass"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04R1"
+    },
+    {
+      "model": "5x3x3.0-4BB圆角",
+      "slug": "5x3x3-0-4bb-rounded-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04R2"
+    },
+    {
+      "model": "5x3.5x3.0-4BB",
+      "slug": "5x3-5x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p04R3"
+    },
+    {
+      "model": "5x4x3.0-4BB",
+      "slug": "5x4x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05L1"
+    },
+    {
+      "model": "5x4x3.0-4BB双钉防盗合页",
+      "slug": "5x4x3-0-4bb-twin-pin-security-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05L2"
+    },
+    {
+      "model": "6x3.5x3.0-4BB",
+      "slug": "6x3-5x3-0-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "152.4 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05L3"
+    },
+    {
+      "model": "6x4x3.5-4BB",
+      "slug": "6x4x3-5-4bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "152.4 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø16.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05R1"
+    },
+    {
+      "model": "6x4x3.5-4BB单钉防盗合页",
+      "slug": "6x4x3-5-4bb-single-pin-security-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "152.4 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø16.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05R2"
+    },
+    {
+      "model": "8x4x3.5-6BB",
+      "slug": "8x4x3-5-6bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "203.2 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø16.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "6 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p05R3"
+    },
+    {
+      "model": "4x3x2.5-2BB中轴",
+      "slug": "4x3x2-5-2bb-centre-pivot-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 75mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06L1"
+    },
+    {
+      "model": "4x3x2.5-2BB偏轴",
+      "slug": "4x3x2-5-2bb-offset-pivot-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 73mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06L2"
+    },
+    {
+      "model": "4x3x3.0-2BB偏轴",
+      "slug": "4x3x3-0-2bb-offset-pivot-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 75mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06L3"
+    },
+    {
+      "model": "5x3x2.5-2BB偏轴",
+      "slug": "5x3x2-5-2bb-offset-pivot-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "125 × 78mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06R1"
+    },
+    {
+      "model": "5x3.5x3.0-2BB偏轴",
+      "slug": "5x3-5x3-0-2bb-offset-pivot-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "125 × 82mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06R2"
+    },
+    {
+      "model": "4x3x2.5-1BB",
+      "slug": "4x3x2-5-1bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "1 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p06R3"
+    },
+    {
+      "model": "100x89x3.0-1BB",
+      "slug": "100x89x3-0-1bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø16.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "1 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p07L1"
+    },
+    {
+      "model": "110x55x2.5-1BB",
+      "slug": "110x55x2-5-1bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "110 × 55mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "1 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p07L2"
+    },
+    {
+      "model": "140x55x2.5-1BB",
+      "slug": "140x55x2-5-1bb-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "140 × 55mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "1 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p07L3"
+    },
+    {
+      "model": "100x75x3.0-0BB拉手",
+      "slug": "100x75x3-0-0bb-pull-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 75mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø16mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "0 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p07R2"
+    },
+    {
+      "model": "4x3x3.0-0BB焊头",
+      "slug": "4x3x3-0-0bb-weld-on-stainless-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel (304/201)",
+      "finishes": [
+        "Satin Sanded"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.2mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "0 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel (304/201)"
+        }
+      ],
+      "imageDir": "p07R3"
+    },
+    {
+      "model": "4x3x3.0-4BB",
+      "slug": "4x3x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "Matt Antique Bronze",
+        "Galaxy Grey",
+        "French Bronze",
+        "Black Antique Brass",
+        "Brushed Chrome",
+        "Brushed Nickel",
+        "Coffee"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 75mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p12L1"
+    },
+    {
+      "model": "4x3x3.0-4BB圆角",
+      "slug": "4x3x3-0-4bb-rounded-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12.7mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p12L3"
+    },
+    {
+      "model": "4x3.5x3.0-4BB",
+      "slug": "4x3-5x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p12R2"
+    },
+    {
+      "model": "4x4x3.0-4BB",
+      "slug": "4x4x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p12R3"
+    },
+    {
+      "model": "5x3x3.0-4BB",
+      "slug": "5x3x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "Galaxy Grey",
+        "Black Antique Brass",
+        "French Bronze",
+        "Light Coffee Edged"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "125 × 75mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø12mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p13L1"
+    },
+    {
+      "model": "5x3.5x3.0-4BB",
+      "slug": "5x3-5x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p13R1"
+    },
+    {
+      "model": "5x4x3.0-4BB",
+      "slug": "5x4x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 101.6mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p13R2"
+    },
+    {
+      "model": "5x3x4.0-4BB",
+      "slug": "5x3x4-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "4mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p13R3"
+    },
+    {
+      "model": "6x3.5x3.0-4BB",
+      "slug": "6x3-5x3-0-4bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "152.4 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14L2"
+    },
+    {
+      "model": "8x4x3.5-4BB单钉防盗合页",
+      "slug": "8x4x3-5-4bb-single-pin-security-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Bearings",
+          "value": "4 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14L3"
+    },
+    {
+      "model": "4x3x3.0-2DD",
+      "slug": "4x3x3-0-2dd-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "French Bronze",
+        "Black Antique Brass",
+        "Light Coffee Edged",
+        "Galaxy Grey"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × copper gasket"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14L1"
+    },
+    {
+      "model": "5x3x3.0-2DD",
+      "slug": "5x3x3-0-2dd-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "Galaxy Grey",
+        "French Bronze",
+        "Black Antique Brass",
+        "Light Coffee Edged"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 76.2mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × copper gasket"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14R1"
+    },
+    {
+      "model": "4x3.5x4.0-2DD",
+      "slug": "4x3-5x4-0-2dd-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "French Bronze",
+        "Black Antique Brass",
+        "Galaxy Grey",
+        "Dark Coffee Edged",
+        "Matt Black",
+        "Toffee Gold"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "101.6 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "4mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × copper gasket"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14R2"
+    },
+    {
+      "model": "5x3.5x4.0-2DD",
+      "slug": "5x3-5x4-0-2dd-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper",
+        "Galaxy Grey",
+        "French Bronze",
+        "Matt Black",
+        "Dark Coffee Edged",
+        "Black Antique Brass"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "127 × 89mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "4mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × copper gasket"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p14R3"
+    },
+    {
+      "model": "4x3x3.3-2BB",
+      "slug": "4x3x3-3-2bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 79mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3.3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø14.6mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "2 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p15L1"
+    },
+    {
+      "model": "4x3x3.0-0BB",
+      "slug": "4x3x3-0-0bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "100 × 70mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "3mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø10mm"
+        },
+        {
+          "label": "Bearings",
+          "value": "0 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p15L2"
+    },
+    {
+      "model": "5x3.5x3.5-1BB",
+      "slug": "5x3-5x3-5-1bb-brass-hinge",
+      "name": "Ball Bearing Hinge",
+      "nameZh": "轴承合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Pure Copper",
+      "finishes": [
+        "Frosted Copper"
+      ],
+      "specs": [
+        {
+          "label": "Bearings",
+          "value": "1 × ball bearing"
+        },
+        {
+          "label": "Material",
+          "value": "Pure Copper"
+        }
+      ],
+      "imageDir": "p15L3"
+    }
+  ]
+}
