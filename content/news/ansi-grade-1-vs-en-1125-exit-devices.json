@@ -72,6 +72,42 @@
         "question": "Does Canton Hyland hold ANSI certification?",
         "answer": "No, and we say so rather than implying otherwise. We manufacture push-bar exit devices across fire-door, alarmed, multi-point, exterior-trim and special-application types, and we hold our own EN 1125 test documentation, which we will supply against a named model for a tender. A supplier who claims both for the same product without two sets of reports is claiming something no laboratory issued."
       }
+    ],
+    "pt": [
+      {
+        "question": "ANSI Grade 1 é superior à EN 1125?",
+        "answer": "Nenhuma é superior; são dois mundos regulatórios que ensaiam propriedades diferentes. A ANSI/BHMA A156.3 classifica dispositivos de saída em 1, 2 ou 3 por durabilidade — Grade 1 sobrevive ao maior número de ciclos e às maiores cargas estáticas e dinâmicas. O objeto da EN 1125 é uma multidão que não conhece o prédio, no escuro, empurrando: o dispositivo tem de abrir com um único movimento, de qualquer ponto da barra, sem conhecimento prévio. A pergunta nunca é qual é mais alta, é qual a autoridade com jurisdição vai aceitar."
+      },
+      {
+        "question": "Qual norma se aplica à minha obra?",
+        "answer": "O país decide, não o mecanismo. Nos Estados Unidos, no Canadá ou num mercado que segue o modelo americano você precisa da ANSI/BHMA A156.3 no grau que a especificação pedir, mais uma listagem UL de fogo se a porta tiver resistência exigida. Na Europa, no Reino Unido, ou nos muitos mercados que adotaram as normas europeias — boa parte da América Latina, o Golfo, partes da África e da Ásia — você precisa da EN 1125 para edifícios públicos e da EN 179 onde os ocupantes conhecem as saídas."
+      },
+      {
+        "question": "Uma ferragem certificada ainda pode ser reprovada numa inspeção?",
+        "answer": "Sim, de duas formas que este artigo cobre. Especificar ferragem EN 179 numa porta de reunião pública é uma falha de conformidade mesmo que a ferragem seja certificada, porque ela é certificada para a situação errada. E a certificação cobre um conjunto ensaiado e não um formato: trocar a maçaneta externa por uma mais barata, ou instalar a barra com um contra-testa contra o qual ela não foi ensaiada, anula a afirmação ainda que todas as peças pareçam iguais."
+      },
+      {
+        "question": "A Canton Hyland tem certificação ANSI?",
+        "answer": "Não, e dizemos isso em vez de insinuar o contrário. Fabricamos barras antipânico de empurrar entre os tipos corta-fogo, com alarme, multiponto, maçaneta externa e aplicações especiais, e temos a nossa própria documentação de ensaio EN 1125, que fornecemos contra um modelo nomeado para uma licitação. Um fornecedor que reivindica as duas para o mesmo produto sem dois conjuntos de relatórios está reivindicando algo que nenhum laboratório emitiu."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿ANSI Grade 1 es superior a EN 1125?",
+        "answer": "Ninguna es superior; son dos mundos normativos que ensayan propiedades distintas. ANSI/BHMA A156.3 clasifica dispositivos de salida en 1, 2 o 3 por durabilidad — Grade 1 aguanta el mayor número de ciclos y las mayores cargas estáticas y dinámicas. El objeto de EN 1125 es una multitud que no conoce el edificio, a oscuras, empujando: el dispositivo tiene que abrir con un solo movimiento, desde cualquier punto de la barra, sin conocimiento previo. La pregunta nunca es cuál es más alta, es cuál aceptará la autoridad competente."
+      },
+      {
+        "question": "¿Qué norma se aplica a mi obra?",
+        "answer": "Lo decide el país, no el mecanismo. En Estados Unidos, Canadá o un mercado que sigue el modelo americano hace falta ANSI/BHMA A156.3 en el grado que pida la especificación, más un listado UL de fuego si la puerta es resistente. En Europa, el Reino Unido, o los muchos mercados que han adoptado las normas europeas — buena parte de América Latina, el Golfo, partes de África y Asia — hace falta EN 1125 para edificios públicos y EN 179 donde los ocupantes conocen las salidas."
+      },
+      {
+        "question": "¿Un herraje certificado puede suspender una inspección?",
+        "answer": "Sí, de dos maneras que cubre este artículo. Especificar herraje EN 179 en una puerta de pública concurrencia es un incumplimiento aunque el herraje esté certificado, porque está certificado para la situación equivocada. Y la certificación cubre un conjunto ensayado, no una forma: cambiar la manija exterior por una más barata, o montar la barra con un cerradero contra el que no se ensayó, anula la declaración aunque todas las piezas parezcan iguales."
+      },
+      {
+        "question": "¿Canton Hyland tiene certificación ANSI?",
+        "answer": "No, y lo decimos en vez de dar a entender lo contrario. Fabricamos barras antipánico de empuje en los tipos cortafuego, con alarma, multipunto, manija exterior y aplicaciones especiales, y tenemos nuestra propia documentación de ensayo EN 1125, que suministramos contra un modelo nombrado para una licitación. Un proveedor que reclama las dos para el mismo producto sin dos juegos de informes está reclamando algo que ningún laboratorio emitió."
+      }
     ]
   },
   "titlePt": "ANSI Grade 1 ou EN 1125: qual norma a sua barra antipânico tem de cumprir",

@@ -68,6 +68,42 @@
         "question": "Why do some lengths have no published specification?",
         "answer": "Two in the selected range carry no specification rows at all: the 60 and the 90. Five variants of the 60 and four of the 90 are in the catalogue with photographs and no material, finish or size row — the length is in the model number and that is genuinely all we publish about them today. The honest answer to what the 60 is made of is that we will ask, rather than that it is brass like its neighbours, even though it almost certainly is."
       }
+    ],
+    "pt": [
+      {
+        "question": "Que comprimentos a linha de cilindros europeus cobre?",
+        "answer": "A linha selecionada vai de 45, 54, 60, 70, 80 e 90 — seis comprimentos de um produto e não seis produtos diferentes, sendo o número o comprimento total em milímetros. O 70 é o primeiro a olhar se você está padronizando uma obra: dezenove variantes publicadas contra seis do 80 e três do 45. Outros comprimentos são variável de fabricação e não decisão de estoque, então pergunte."
+      },
+      {
+        "question": "Por que estes cilindros são de latão maciço e não de zamac?",
+        "answer": "Porque um corpo de latão é usinado com tolerância mais apertada que uma peça de zamac, e é isso que mantém um mecanismo de cinco pinos girando suave depois de uma década de chave empurrada ligeiramente fora de eixo — uma diferença que não é visível por fora. É também a razão de estes cilindros poderem carregar um número de acabamento BHMA onde uma peça de zamac não pode: os grupos base da A156.18 são aço, latão e inoxidável, e zinco não é um deles."
+      },
+      {
+        "question": "O que significam as letras DK, KT e IK num cilindro?",
+        "answer": "Ainda não sabemos, e preferimos dizer isso a inventar. São códigos de função do nosso próprio sistema interno cujos significados a fábrica não nos confirmou por escrito — estão na lista de seis códigos de pedido que aguardamos, uma letra de acabamento e cinco de função. Até isso voltar, peça a função por extenso na sua consulta e nós a associamos ao código, e não o contrário."
+      },
+      {
+        "question": "Por que alguns comprimentos não têm especificação publicada?",
+        "answer": "Dois da linha selecionada não trazem nenhuma linha de especificação: o 60 e o 90. Cinco variantes do 60 e quatro do 90 estão no catálogo com fotografia e sem material, acabamento ou medida — o comprimento está no código de modelo e hoje é genuinamente tudo o que publicamos sobre eles. A resposta honesta para do que é feito o 60 é que vamos perguntar, e não que é latão como os vizinhos, mesmo que quase certamente seja."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué longitudes cubre la gama de cilindros europeos?",
+        "answer": "La gama seleccionada va de 45, 54, 60, 70, 80 y 90 — seis longitudes de un producto y no seis productos distintos, siendo el número la longitud total en milímetros. El 70 es el primero a mirar si está estandarizando una obra: diecinueve variantes publicadas frente a seis del 80 y tres del 45. Otras longitudes son una variable de fabricación y no una decisión de stock, así que pregunte."
+      },
+      {
+        "question": "¿Por qué son de latón macizo y no de zamak?",
+        "answer": "Porque un cuerpo de latón se mecaniza con tolerancia más ajustada que una pieza de zamak, y eso es lo que mantiene un mecanismo de cinco pitones girando suave después de una década de llave empujada ligeramente fuera de eje — una diferencia que no se ve por fuera. Es también la razón de que estos cilindros puedan llevar un número de acabado BHMA donde una pieza de zamak no puede: los grupos base de A156.18 son acero, latón e inoxidable, y el zinc no es uno de ellos."
+      },
+      {
+        "question": "¿Qué significan las letras DK, KT e IK en un cilindro?",
+        "answer": "Todavía no lo sabemos, y preferimos decirlo antes que inventarlo. Son códigos de función de nuestro propio sistema interno cuyos significados la fábrica no nos ha confirmado por escrito — están en la lista de seis códigos de pedido que esperamos, una letra de acabado y cinco de función. Hasta que vuelva, pida la función con palabras en su consulta y nosotros la asociamos al código, y no al revés."
+      },
+      {
+        "question": "¿Por qué algunas longitudes no tienen especificación publicada?",
+        "answer": "Dos de la gama seleccionada no traen ninguna fila de especificación: el 60 y el 90. Cinco variantes del 60 y cuatro del 90 están en el catálogo con fotografía y sin material, acabado ni medida — la longitud está en el código de modelo y hoy es genuinamente todo lo que publicamos de ellos. La respuesta honesta a de qué es el 60 es que vamos a preguntarlo, y no que es latón como sus vecinos, aunque casi con seguridad lo sea."
+      }
     ]
   },
   "titlePt": "45 a 90: lendo a nossa linha de cilindros europeus",

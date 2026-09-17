@@ -89,6 +89,30 @@ function routeCount(root) {
   return n;
 }
 
+/**
+ * The question-and-answer blocks, counted separately from the article fields.
+ *
+ * They live under `faq.<locale>` rather than in a `…Pt` suffixed field, so `countRecords`
+ * cannot see them — and that is exactly how 35 Spanish articles carried English Q&A blocks
+ * from the day the block shipped until 2026-09-17. Nothing measured it, so nobody knew.
+ *
+ * A block is counted only when it has the SAME NUMBER OF PAIRS as the English one. A
+ * partial translation is not partial coverage here; it is a page that answers fewer
+ * questions in one language than in another, which is a content difference rather than a
+ * translation gap.
+ */
+function faqCoverage(locale) {
+  const withFaq = news.filter((article) => article.faq?.en?.length);
+  const complete = withFaq.filter(
+    (article) => article.faq[locale]?.length === article.faq.en.length,
+  );
+  const pairs = complete.reduce((n, article) => n + article.faq[locale].length, 0);
+  return { articles: complete.length, total: withFaq.length, pairs };
+}
+
+const faqEs = faqCoverage("es");
+const faqPt = faqCoverage("pt");
+
 const esRoutes = routeCount("src/app/es");
 const ptRoutes = routeCount("src/app/pt") + routeCount("src/app/(en)/pt");
 
@@ -112,6 +136,10 @@ const report = {
     es: { ...newsEs, percent: pct(newsEs.present, newsEs.total) },
     pt: { ...newsPt, percent: pct(newsPt.present, newsPt.total) },
   },
+  faq: {
+    es: { ...faqEs, percent: pct(faqEs.articles, faqEs.total) },
+    pt: { ...faqPt, percent: pct(faqPt.articles, faqPt.total) },
+  },
   routes: { es: esRoutes, pt: ptRoutes, percent: pct(ptRoutes, esRoutes) },
 };
 
@@ -124,6 +152,10 @@ if (JSON_OUT) {
   );
   console.log(
     `  news articles     ${news.length}    ES ${report.news.es.percent}%   PT ${report.news.pt.percent}%`,
+  );
+  console.log(
+    `  article Q&A       ${faqEs.total}    ES ${report.faq.es.percent}%   PT ${report.faq.pt.percent}%` +
+      `   (${faqEs.pairs} ES pairs, ${faqPt.pairs} PT pairs)`,
   );
   console.log(
     `  routes            ES ${esRoutes} pages, PT ${ptRoutes} pages   (${report.routes.percent}%)`,

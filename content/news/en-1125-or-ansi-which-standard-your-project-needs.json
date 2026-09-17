@@ -68,6 +68,42 @@
         "question": "What does Canton Hyland actually hold?",
         "answer": "An EN 1125 test report from Intertek Testing Services Shenzhen Ltd., Guangzhou Branch, reference 130722068GZU-001, covering one model — KD070/30-290 — and a CE Certificate of Conformity to EN 1125:2008 from CELAB in Italy covering the panic exit device series. Both are published with their exact scope on our certifications page, and neither is presented as blanket approval for every device we make, because it is not."
       }
+    ],
+    "pt": [
+      {
+        "question": "Existe um equivalente ANSI para a norma EN de barras antipânico?",
+        "answer": "Não existe equivalente, porque as duas não medem a mesma coisa. A ANSI/BHMA A156.3 classifica produtos em 1, 2 ou 3 por ensaio de ciclos — uma classificação de durabilidade. A EN 1125 é uma avaliação de conformidade contra requisitos de aprovação ou reprovação, incluindo desempenho ao fogo e força de liberação. \"Grade 1\" e \"EN 1125\" não são afirmações comparáveis, e um dispositivo pode ter uma, as duas, ou nenhuma."
+      },
+      {
+        "question": "Qual a diferença entre EN 1125 e EN 179?",
+        "answer": "As pessoas atrás da porta, não a ferragem. A EN 1125 cobre barras antipânico acionadas por barra horizontal em rotas de fuga usadas pelo público — ela pressupõe uma multidão empurrando para a frente, e é por isso que o elemento de acionamento precisa percorrer quase toda a largura da porta e liberar sob carga aplicada em qualquer ponto. A EN 179 cobre dispositivos de emergência acionados por alavanca ou placa, para edifícios cujos ocupantes conhecem o lugar: um corredor de funcionários em vez de um cinema."
+      },
+      {
+        "question": "Um certificado de fogo do dispositivo cobre a porta?",
+        "answer": "Não. Um dispositivo de saída corta-fogo foi ensaiado como parte de um conjunto de porta corta-fogo, e o certificado cobre esse conjunto — folha, batente, dobradiças, mola e dispositivo juntos — e não o dispositivo sozinho. Um fornecedor que responde \"é corta-fogo?\" com um simples sim ou está simplificando ou não leu o próprio relatório. Pergunte qual conjunto foi ensaiado, e por quem."
+      },
+      {
+        "question": "O que a Canton Hyland realmente tem?",
+        "answer": "Um relatório de ensaio EN 1125 da Intertek Testing Services Shenzhen Ltd., filial de Guangzhou, referência 130722068GZU-001, cobrindo um modelo — KD070/30-290 — e um Certificado CE de Conformidade à EN 1125:2008 da CELAB, na Itália, cobrindo a série de barras antipânico. Os dois são publicados com o escopo exato na nossa página de certificações, e nenhum deles é apresentado como aprovação geral para todos os dispositivos que fabricamos, porque não é."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Existe un equivalente ANSI de la norma EN para dispositivos antipánico?",
+        "answer": "No existe equivalente, porque las dos no miden lo mismo. ANSI/BHMA A156.3 clasifica productos en 1, 2 o 3 por ensayo de ciclos — una clasificación de durabilidad. EN 1125 es una evaluación de conformidad frente a requisitos de apto o no apto, incluidos comportamiento al fuego y fuerza de apertura. \"Grade 1\" y \"EN 1125\" no son afirmaciones comparables, y un dispositivo puede tener una, las dos, o ninguna."
+      },
+      {
+        "question": "¿Qué diferencia hay entre EN 1125 y EN 179?",
+        "answer": "Las personas que están detrás de la puerta, no el herraje. EN 1125 cubre barras antipánico accionadas por barra horizontal en vías de evacuación de uso público — supone una multitud empujando, y por eso el elemento de accionamiento debe recorrer casi todo el ancho de la puerta y liberar bajo carga aplicada en cualquier punto. EN 179 cubre dispositivos de emergencia accionados por manilla o pulsador, para edificios cuyos ocupantes conocen el sitio: un pasillo de personal en vez de un cine."
+      },
+      {
+        "question": "¿Un certificado de fuego del dispositivo cubre la puerta?",
+        "answer": "No. Un dispositivo de salida cortafuego se ha ensayado como parte de un conjunto de puerta cortafuego, y el certificado cubre ese conjunto — hoja, marco, bisagras, cierrapuertas y dispositivo juntos — no el dispositivo solo. Un proveedor que responde \"¿es cortafuego?\" con un sí a secas o está simplificando o no ha leído su propio informe. Pregunte qué conjunto se ensayó, y quién lo ensayó."
+      },
+      {
+        "question": "¿Qué tiene realmente Canton Hyland?",
+        "answer": "Un informe de ensayo EN 1125 de Intertek Testing Services Shenzhen Ltd., sucursal de Guangzhou, referencia 130722068GZU-001, que cubre un modelo — KD070/30-290 — y un Certificado CE de Conformidad a EN 1125:2008 de CELAB, Italia, que cubre la serie de barras antipánico. Los dos se publican con su alcance exacto en nuestra página de certificados, y ninguno se presenta como aprobación general de todos los dispositivos que fabricamos, porque no lo es."
+      }
     ]
   },
   "titlePt": "Sob qual norma de barra antipânico a sua obra realmente está",

@@ -72,6 +72,42 @@
         "question": "Which type survives a corridor where trolleys hit the door?",
         "answer": "The push bar. Its mechanism is exposed and its geometry is why it shrugs off a trolley, a bed or a pallet truck hitting the door at hip height: the impact hits the bar, the bar retracts, nothing binds. Worn parts are also reachable without dismantling a housing, and a bent arm can be replaced on site."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a vantagem mecânica de uma barra de empurrar sobre uma de toque?",
+        "answer": "Uma barra de empurrar carrega a carga sobre dois braços articulados parafusados através da porta, e esses braços são alavancas: a barra percorre três ou quatro centímetros em direção à folha, então uma mão leve em qualquer ponto de um metro de barra produz força suficiente no trinco para tirá-lo de um contra-testa contra o qual a porta está pressionando. Uma barra de toque troca a alavanca por um came, então a vantagem mecânica vem do formato do came e não do comprimento de um braço."
+      },
+      {
+        "question": "O que é uma barra antipânico tipo caixa?",
+        "answer": "É o tipo de toque: uma barra que fica quase rente dentro de um alojamento de largura total e afunda nesse alojamento quando você se apoia nela, em vez de se afastar da porta. Chama-se tipo caixa porque as peças que trabalham ficam dentro de uma caixa. O custo disso é que tudo o que se move está dentro de uma extrusão selada, então um alojamento deformado depois de um impacto é um dispositivo que se substitui e não uma peça que se troca."
+      },
+      {
+        "question": "Qual a diferença entre dispositivo de sobrepor, de embutir e de barras verticais?",
+        "answer": "São agrupados pelo modo como o travamento acontece, e não pela barra. Um dispositivo de sobrepor trava contra um contra-testa no marco e é montado na face da porta; um de embutir aciona uma caixa alojada na borda da folha; um de barras verticais lança ferrolhos na travessa e no piso, aparentes (SVR) ou ocultos na folha (CVR). O formato da barra e a família de travamento são escolhas independentes."
+      },
+      {
+        "question": "Qual tipo sobrevive a um corredor onde carrinhos batem na porta?",
+        "answer": "A barra de empurrar. O mecanismo é exposto e a geometria é a razão de ela ignorar um carrinho, uma maca ou uma paleteira batendo na porta na altura do quadril: bate na barra, a barra recolhe, nada trava. As peças gastas também são alcançáveis sem desmontar um alojamento, e um braço torto pode ser trocado na obra."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué ventaja mecánica tiene una barra de empuje sobre una de presión?",
+        "answer": "Una barra de empuje soporta su carga sobre dos brazos articulados atornillados a través de la puerta, y esos brazos son palancas: la barra recorre tres o cuatro centímetros hacia la hoja, así que una mano suave en cualquier punto de un metro de barra produce fuerza suficiente en el picaporte para sacarlo de un cerradero contra el que la puerta está presionando. Una barra de presión cambia la palanca por una leva, así que su ventaja mecánica viene de la forma de la leva y no del largo de un brazo."
+      },
+      {
+        "question": "¿Qué es un dispositivo antipánico tipo caja?",
+        "answer": "Es el tipo de presión: una barra que queda casi enrasada en una carcasa de ancho completo y se hunde en esa carcasa cuando uno se apoya, en vez de alejarse de la puerta. Se llama tipo caja porque las piezas que trabajan viven dentro de una caja. El coste de eso es que todo lo que se mueve está dentro de una extrusión sellada, así que una carcasa deformada tras un impacto es un dispositivo que se sustituye y no una pieza que se cambia."
+      },
+      {
+        "question": "¿Qué diferencia hay entre dispositivo de sobreponer, de embutir y de varillas verticales?",
+        "answer": "Se agrupan por cómo se produce el enclavamiento, no por la barra. Un dispositivo de sobreponer enclava contra un cerradero en el marco y se monta en la cara de la puerta; uno de embutir acciona una caja alojada en el canto de la hoja; uno de varillas verticales lanza pestillos a la cabecera y al suelo, vistas (SVR) u ocultas en la hoja (CVR). La forma de la barra y la familia de enclavamiento son elecciones independientes."
+      },
+      {
+        "question": "¿Qué tipo sobrevive a un pasillo donde los carros golpean la puerta?",
+        "answer": "La barra de empuje. Su mecanismo está expuesto y su geometría es la razón de que ignore un carro, una cama o una transpaleta golpeando la puerta a la altura de la cadera: golpea la barra, la barra se recoge, nada se agarrota. Las piezas desgastadas también son accesibles sin desmontar una carcasa, y un brazo doblado se puede sustituir en obra."
+      }
     ]
   },
   "titlePt": "Barra de empurrar ou barra de toque: qual antipânico a sua porta precisa",

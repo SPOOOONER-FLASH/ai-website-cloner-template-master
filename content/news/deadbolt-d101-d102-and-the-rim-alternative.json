@@ -70,6 +70,42 @@
         "question": "Can a deadbolt be keyed with the lever set on the same door?",
         "answer": "Yes — both are published as keyable to pair with an entrance bored lock, which is what a building actually wants rather than a tenant carrying two keys. It also means the deadbolt has to be ordered in the same keying group as the lock above it, and that is a decision taken at order stage rather than afterwards. It is the question most enquiries leave out."
       }
+    ],
+    "pt": [
+      {
+        "question": "O que uma especificação quer dizer com curso total numa trava?",
+        "answer": "25 mm, que é o que a D101 e a D102 publicam. É uma especificação e não uma preferência por causa do batente: um ferrolho que penetra menos de cerca de 20 mm pode ser forçado abrindo o marco, que é um ataque rápido com um macaco e que depois não parece arrombamento."
+      },
+      {
+        "question": "O que impede uma trava de ser torcida para fora da porta?",
+        "answer": "O colar de cilindro que gira livre, e ele decide mais ataques que qualquer outro recurso da fechadura. O colar em torno do cilindro gira solto, então uma chave de grifo ou um cano colocado do lado de fora gira o colar e não o mecanismo. Sem ele, o arrombamento mais comum numa trava é simplesmente torcer o cilindro inteiro para fora da porta. A D101 e a D102 publicam esse recurso."
+      },
+      {
+        "question": "O que é o pino rolete antisserra?",
+        "answer": "Um pino de aço temperado dentro do ferrolho de zamac, e ele funciona mecanicamente e não só por dureza: uma lâmina de serra passada sobre ele faz o pino girar, então os dentes escorregam em vez de cortar. Custa quase nada incluir, é omitido em travas baratas, e é invisível numa fotografia de produto — motivo pelo qual pertence a uma comparação e não a um showroom."
+      },
+      {
+        "question": "A trava pode ser chaveada junto com a maçaneta da mesma porta?",
+        "answer": "Sim — as duas são publicadas como chaveáveis em conjunto com uma fechadura broqueada de entrada, que é o que um prédio realmente quer em vez de um inquilino carregando duas chaves. Também significa que a trava tem de ser pedida no mesmo grupo de chaveamento da fechadura acima dela, e essa é uma decisão tomada na fase de pedido e não depois. É a pergunta que a maioria das consultas deixa de fora."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué quiere decir una especificación con recorrido completo en una condena?",
+        "answer": "25 mm, que es lo que publican la D101 y la D102. Es una especificación y no una preferencia por culpa del marco: un pestillo que penetra menos de unos 20 mm se puede forzar abriendo la jamba, que es un ataque rápido con un gato y que después no parece un forzamiento."
+      },
+      {
+        "question": "¿Qué impide que una condena se arranque girando el cilindro?",
+        "answer": "El collarín del cilindro que gira libre, y decide más ataques que ningún otro detalle de la cerradura. El collarín alrededor del cilindro gira suelto, así que una llave grifa o un tubo puestos por fuera giran el collarín y no el mecanismo. Sin él, el forzamiento más común en una condena es simplemente retorcer el cilindro entero fuera de la puerta. La D101 y la D102 lo publican."
+      },
+      {
+        "question": "¿Qué es el pasador rodante antisierra?",
+        "answer": "Un pasador de acero templado dentro del pestillo de zamak, y funciona mecánicamente y no solo por dureza: una hoja de sierra pasada por encima hace girar el pasador, así que los dientes patinan en vez de cortar. Cuesta casi nada incluirlo, se omite en condenas baratas, y es invisible en una fotografía de producto — por eso pertenece a una comparativa y no a una sala de exposición."
+      },
+      {
+        "question": "¿Se puede amaestrar la condena con la manija de la misma puerta?",
+        "answer": "Sí — las dos se publican como amaestrables junto a una cerradura de taladro de entrada, que es lo que un edificio quiere de verdad en vez de un inquilino llevando dos llaves. También significa que la condena tiene que pedirse en el mismo grupo de amaestramiento que la cerradura de encima, y esa es una decisión que se toma en el pedido y no después. Es la pregunta que la mayoría de las consultas deja fuera."
+      }
     ]
   },
   "titlePt": "Um curso de 25 mm e um colar que gira: as travas D101 e D102",

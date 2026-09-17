@@ -65,6 +65,42 @@
         "question": "Why do you publish the report's details instead of the report itself?",
         "answer": "Because the reports are the issuing laboratory's to distribute, and republishing somebody else's document is not ours to do. We publish each one's title, issuer, reference number, issue date and the exact model covered — everything you need to verify it exists and to see precisely how far it reaches. If your specification needs the document in hand, ask and we will arrange it through the proper route. Third-party inspection before shipment is welcome and does not need negotiating."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre relatório de ensaio e certificado de conformidade?",
+        "answer": "Um relatório é o registro de um laboratório sobre o que aconteceu com uma amostra: este dispositivo, estes ciclos, este resultado. Um certificado de conformidade é um organismo atestando que um produto atende a uma norma, normalmente com uma obrigação contínua de controle de produção na fábrica por trás. São instrumentos diferentes com pesos diferentes, e \"nós temos a documentação\" apaga essa diferença de um jeito que só ajuda quem vende."
+      },
+      {
+        "question": "Um relatório de ensaio cobre toda uma linha de produtos?",
+        "answer": "Não — ele se prende à configuração específica que entrou no equipamento de ensaio. O nosso relatório de durabilidade de fechadura tubular cobre a 607 SS ET: um membro da família 607, em aço inoxidável, na função ET. Mude o acabamento, mude o sufixo de função, mude a distância ao eixo, e você mudou o produto que o relatório descreve, às vezes trivialmente e às vezes não. Quais mudanças importam é pergunta para o laboratório e para a norma, não para um vendedor."
+      },
+      {
+        "question": "ISO 9001 significa que o produto foi ensaiado?",
+        "answer": "Não. O nosso sistema de gestão da qualidade é certificado ISO 9001 desde 2002, e o que isso significa é preciso: a fábrica tem um processo documentado e auditado para fazer o que diz que faz. Não é uma classificação de desempenho de nenhum produto. Uma fábrica pode ter ISO 9001 e embarcar uma fechadura que nunca foi ensaiada contra nada, com total coerência."
+      },
+      {
+        "question": "Por que vocês publicam os dados do relatório em vez do relatório?",
+        "answer": "Porque os relatórios pertencem ao laboratório emissor, e republicar o documento de outra pessoa não nos cabe. Publicamos o título, o emissor, o número de referência, a data de emissão e o modelo exato coberto — tudo o que você precisa para verificar que ele existe e ver exatamente até onde alcança. Se a sua especificação precisa do documento em mãos, peça e providenciamos pelo canal apropriado. Inspeção por terceiros antes do embarque é bem-vinda e não precisa ser negociada."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre un informe de ensayo y un certificado de conformidad?",
+        "answer": "Un informe es el registro de un laboratorio de lo que le pasó a una muestra: este dispositivo, estos ciclos, este resultado. Un certificado de conformidad es un organismo que declara que un producto cumple una norma, normalmente con una obligación continua de control de producción en fábrica detrás. Son instrumentos distintos con pesos distintos, y \"tenemos la documentación\" borra esa diferencia de una forma que solo ayuda a quien vende."
+      },
+      {
+        "question": "¿Un informe de ensayo cubre toda una gama de productos?",
+        "answer": "No — se adhiere a la configuración concreta que entró en el banco de ensayo. Nuestro informe de durabilidad de cerradura tubular cubre la 607 SS ET: un miembro de la familia 607, en acero inoxidable, en la función ET. Cambie el acabado, cambie el sufijo de función, cambie la distancia al eje, y ha cambiado el producto que describe el informe, a veces de forma trivial y a veces no. Cuáles de esos cambios importan es una pregunta para el laboratorio y para la norma, no para un comercial."
+      },
+      {
+        "question": "¿ISO 9001 significa que el producto está ensayado?",
+        "answer": "No. Nuestro sistema de gestión de la calidad está certificado ISO 9001 desde 2002, y lo que eso significa es preciso: la fábrica tiene un proceso documentado y auditado para hacer lo que dice que hace. No es una calificación de prestaciones de ningún producto. Una fábrica puede tener ISO 9001 y embarcar una cerradura que nunca se ensayó contra nada, con total coherencia."
+      },
+      {
+        "question": "¿Por qué publican los datos del informe en vez del informe?",
+        "answer": "Porque los informes son del laboratorio que los emite, y republicar el documento de otro no nos corresponde. Publicamos el título, el emisor, el número de referencia, la fecha de emisión y el modelo exacto cubierto — todo lo necesario para verificar que existe y ver hasta dónde llega. Si su especificación necesita el documento en mano, pídalo y lo gestionamos por el cauce adecuado. La inspección por terceros antes del embarque es bienvenida y no hay que negociarla."
+      }
     ]
   },
   "titlePt": "Um relatório de ensaio cobre um modelo, não uma linha",

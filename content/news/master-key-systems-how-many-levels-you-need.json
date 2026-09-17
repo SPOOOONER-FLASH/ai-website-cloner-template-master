@@ -77,6 +77,42 @@
         "question": "What do you need to design a master key system?",
         "answer": "The door schedule with a line per door, and for each door who must be able to open it and which group it belongs to — usually a spreadsheet the facilities manager already has. From it we produce a keying chart: every door, every key that opens it, and the total key count. That chart is approved before a single cylinder is pinned. Two constraints change the chart, so raise them first: every cylinder in one system must share a keyway decided at the start, and the spares each level needs have to be counted in."
       }
+    ],
+    "pt": [
+      {
+        "question": "Quantos níveis um sistema de chave-mestra precisa ter?",
+        "answer": "A maioria dos prédios que cotamos precisa de três: uma chave de uso por porta, uma mestra por andar ou departamento, e uma mestra geral para o gerente predial. Construímos até cinco níveis, da chave-mestra geral superior até a chave de uso, com quatro camadas de chaveamento de gestão entre elas — mas isso é o teto, não a recomendação."
+      },
+      {
+        "question": "Um sistema de cinco níveis é mais seguro que um de três?",
+        "answer": "Não, e a razão é aritmética e não opinião. Um cilindro tem um número fixo de posições de pino e de profundidades, então o total de chaves distintas é finito. Uma chave-mestra funciona acrescentando uma segunda linha de cisalhamento na pilha de pinos, e cada linha acrescentada reduz quantas chaves de uso podem permanecer únicas abaixo. Um sistema de cinco níveis num prédio pequeno é um prédio de três níveis com menos combinações e mais chaves que abrem acidentalmente mais do que deveriam."
+      },
+      {
+        "question": "Qual a diferença entre chave de uso, mestra e mestra geral?",
+        "answer": "Uma chave de uso (CK) abre uma fechadura e mais nada — a chave que um inquilino ou ocupante de sala carrega. Uma chave-mestra (MK) abre todas as fechaduras de um grupo definido: um andar, uma ala, um departamento. Uma mestra geral (GMK) abre vários grupos, e uma mestra geral superior (GGMK) fica acima delas. Entre elas ficam os níveis de gestão que uma equipe de facilities usa — o zelador que precisa de dois andares mas de nenhuma casa de máquinas, o terceirizado que precisa das casas de máquinas e de nenhum escritório."
+      },
+      {
+        "question": "O que é preciso para projetar um sistema de chave-mestra?",
+        "answer": "A planilha de portas com uma linha por porta e, para cada porta, quem tem de conseguir abri-la e a que grupo ela pertence — normalmente uma planilha que o gerente de facilities já tem. A partir dela produzimos um quadro de chaveamento: cada porta, cada chave que a abre, e o total de chaves. Esse quadro é aprovado antes de um único cilindro ser pinado. Duas restrições o mudam, então levante-as primeiro: todos os cilindros de um sistema têm de compartilhar um segredo decidido no começo, e as reservas de cada nível têm de ser contadas."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuántos niveles necesita realmente un sistema de llave maestra?",
+        "answer": "La mayoría de los edificios que cotizamos necesitan tres: una llave de uso por puerta, una maestra por planta o departamento, y una gran maestra para el responsable del edificio. Construimos hasta cinco niveles, de la gran maestra superior hasta la llave de uso, con cuatro capas de amaestramiento de gestión entre medias — pero eso es el techo, no la recomendación."
+      },
+      {
+        "question": "¿Un sistema de cinco niveles es más seguro que uno de tres?",
+        "answer": "No, y la razón es aritmética y no opinión. Un cilindro tiene un número fijo de posiciones de pitón y de profundidades, así que el total de llaves distintas es finito. Una llave maestra funciona añadiendo una segunda línea de corte en la pila de pitones, y cada línea añadida reduce cuántas llaves de uso pueden seguir siendo únicas por debajo. Un sistema de cinco niveles en un edificio pequeño es un edificio de tres niveles con menos combinaciones y más llaves que abren accidentalmente más de lo que deberían."
+      },
+      {
+        "question": "¿Qué diferencia hay entre llave de uso, maestra y gran maestra?",
+        "answer": "Una llave de uso (CK) abre una cerradura y nada más — la que lleva un inquilino o el ocupante de un despacho. Una llave maestra (MK) abre todas las cerraduras de un grupo definido: una planta, un ala, un departamento. Una gran maestra (GMK) abre varios grupos, y una gran maestra superior (GGMK) está por encima. Entre medias están los niveles de gestión que usa un equipo de mantenimiento — el personal de limpieza que necesita dos plantas pero ningún cuarto técnico, el contratista que necesita los cuartos técnicos y ningún despacho."
+      },
+      {
+        "question": "¿Qué hace falta para diseñar un sistema de llave maestra?",
+        "answer": "La relación de puertas con una línea por puerta y, para cada puerta, quién tiene que poder abrirla y a qué grupo pertenece — normalmente una hoja de cálculo que el responsable de mantenimiento ya tiene. De ahí producimos un cuadro de amaestramiento: cada puerta, cada llave que la abre, y el total de llaves. Ese cuadro se aprueba antes de encajetar un solo cilindro. Dos restricciones lo cambian, así que plantéelas primero: todos los cilindros de un sistema deben compartir un perfil de llave decidido al principio, y las copias de reserva de cada nivel hay que contarlas."
+      }
     ]
   },
   "titlePt": "Quantos níveis o seu sistema de chave-mestra realmente precisa",

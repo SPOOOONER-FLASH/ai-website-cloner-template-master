@@ -70,6 +70,42 @@
         "question": "Which lock case backset fits a narrow stile?",
         "answer": "Ours run at 30, 40 and 45mm for narrow stiles, because in a 30mm stile there is very little metal either side of the lock pocket and the backset is fixed by the profile rather than chosen. A 60mm backset case simply will not fit, and forcing a wider pocket into the extrusion removes the material the stile needs to stay stiff. Order by backset first and everything else second. An adjustable or slotted strike is worth specifying at the same time: a millimetre or two of vertical adjustment is often the entire repair on a door that has dropped."
       }
+    ],
+    "pt": [
+      {
+        "question": "Por que uma porta de alumínio parou de trincar?",
+        "answer": "Normalmente porque a folha caiu — muitas vezes dois ou três milímetros na borda da fechadura — então o trinco se apresenta abaixo do furo em que deveria entrar. A fechadura quase nunca é a culpada, e trocar a caixa não resolve nada. É a compra desperdiçada mais comum nesta categoria. Ajuste o pivô e o contra-testa antes de pedir qualquer coisa."
+      },
+      {
+        "question": "O que de fato se move quando uma porta de montante estreito cai?",
+        "answer": "Três coisas, nesta ordem. O lado da dobradiça ou do pivô desgasta primeiro, porque cada abertura é uma alavanca com a folha como braço. Depois as junções de canto em meia-esquadria do marco abrem ligeiramente, e uma vez que o marco sai de esquadro por uma fração de grau a diagonal encurta e o canto livre cai. As ferragens mostram isso em terceiro e só em terceiro, porque o trinco é um encaixe de precisão num contra-testa com talvez 2 mm de tolerância — o primeiro componente do conjunto sem folga sobrando para absorver o movimento."
+      },
+      {
+        "question": "O que impede uma porta de vidro em alumínio de cair?",
+        "answer": "O que sustenta a folha, não a fechadura. Uma mola de piso embutida na laje leva o peso para a estrutura e não para o canto do marco, e é por isso que uma porta envidraçada pesada sobre mola de piso continua em esquadro por anos enquanto a mesma folha sobre dobradiças desalinha o marco. Numa porta alta, larga, envidraçada ou usada centenas de vezes por dia, a decisão do pivô é a decisão antiqueda — e tem de ser tomada antes de o piso ser concretado."
+      },
+      {
+        "question": "Que distância ao eixo cabe num montante estreito?",
+        "answer": "As nossas trabalham com 30, 40 e 45 mm para montantes estreitos, porque num montante de 30 mm há muito pouco metal de cada lado do alojamento e a distância ao eixo é fixada pelo perfil e não escolhida. Uma caixa de 60 mm simplesmente não cabe, e forçar um alojamento mais largo na extrusão remove o material de que o montante precisa para continuar rígido. Peça pela distância ao eixo primeiro e por todo o resto depois. Um contra-testa regulável vale ser especificado junto: um ou dois milímetros de ajuste vertical é muitas vezes o reparo inteiro numa porta que caiu."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Por qué una puerta de aluminio ha dejado de enclavar?",
+        "answer": "Normalmente porque la hoja ha descendido — a menudo dos o tres milímetros en el canto de la cerradura — así que el picaporte se presenta por debajo del hueco en el que debería entrar. La cerradura casi nunca es la culpable, y cambiar la caja no arregla nada. Es la compra desperdiciada más común de esta categoría. Ajuste el pivote y el cerradero antes de pedir nada."
+      },
+      {
+        "question": "¿Qué se mueve realmente cuando una puerta de canto estrecho desciende?",
+        "answer": "Tres cosas, en este orden. El lado de la bisagra o del pivote se desgasta primero, porque cada apertura es una palanca con la hoja como brazo. Después las uniones en inglete del marco se abren ligeramente, y en cuanto el marco pierde una fracción de grado de escuadra la diagonal se acorta y la esquina libre cae. El herraje lo muestra en tercer lugar y solo en tercer lugar, porque el picaporte es un ajuste de precisión en un cerradero con quizá 2 mm de tolerancia — el primer componente del conjunto sin holgura que absorba el movimiento."
+      },
+      {
+        "question": "¿Qué evita que una puerta de vidrio en aluminio descienda?",
+        "answer": "Lo que sostiene la hoja, no la cerradura. Un pivote de suelo embebido en la losa lleva el peso a la estructura y no a la esquina del marco, y por eso una puerta acristalada pesada sobre pivote de suelo sigue a escuadra durante años mientras la misma hoja sobre bisagras descuadra su marco. En una puerta alta, ancha, acristalada o usada cientos de veces al día, la decisión del pivote es la decisión antidescuelgue — y hay que tomarla antes de verter el suelo."
+      },
+      {
+        "question": "¿Qué distancia al eje encaja en un canto estrecho?",
+        "answer": "Las nuestras trabajan a 30, 40 y 45 mm para cantos estrechos, porque en un canto de 30 mm hay muy poco metal a cada lado del alojamiento y la distancia al eje la fija el perfil, no se elige. Una caja de 60 mm sencillamente no cabe, y forzar un alojamiento más ancho en la extrusión quita el material que el canto necesita para seguir rígido. Pida por la distancia al eje primero y por todo lo demás después. Un cerradero regulable conviene especificarlo a la vez: uno o dos milímetros de ajuste vertical son a menudo toda la reparación de una puerta que ha descendido."
+      }
     ]
   },
   "titlePt": "Por que portas de alumínio caem, e o que a caixa da fechadura tem a ver com isso",

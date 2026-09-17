@@ -71,6 +71,42 @@
         "question": "What settles a cylindrical lock quotation?",
         "answer": "Three rows: the function on each door, the backset your survey found, and the leaf thickness. Finish comes after those three and never before, because the finish never changes what fits and the first three always do. Most of this range shares a 60mm or 70mm adjustable backset and a 35mm to 45mm door thickness, which is the point of a bored lock — a specification error on either row is recoverable on site rather than in a container."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre as funções entrada, banheiro e passagem?",
+        "answer": "Entrada é chaveada por fora e sempre livre por dentro. Banheiro é a função de privacidade: botão de giro por dentro, sem chave, e um pequeno destravamento de emergência por fora. Passagem não é fechadura nenhuma — apenas trinca a porta e não tem função de travamento em nenhum sentido, que é o que se quer numa porta de corredor que precisa ficar fechada contra fumaça mas nunca pode prender ninguém."
+      },
+      {
+        "question": "Que função de fechadura uma escola ou clínica precisa?",
+        "answer": "Função de sala de aula, que a maioria dos catálogos esconde. O 5807 é publicado com as funções COMMUNICATION LOCK, CLASSROOM LOCK e EXIT LATCH: a função de sala de aula chaveia só pelo lado do corredor, para que um professor possa trancar a porta de dentro da sala sem que seja preciso chave para sair. Se a sua especificação menciona escola, clínica ou alojamento estudantil, olhe o 5807 primeiro — o resto desta linha foi especificado em torno do conjunto entrada-banheiro-passagem."
+      },
+      {
+        "question": "Qual fechadura cilíndrica serve a porta mais espessa ou montante mais profundo?",
+        "answer": "O 5831. A distância ao eixo é publicada como 60, 70, 80 ou 90 mm ajustável e a espessura de porta como 35 a 50 mm, onde o resto da linha para em 70 mm e 45 mm. É uma fechadura para porta de segurança, porta de madeira mais pesada, ou porta em que 70 mm de eixo poria o pomo perto demais da borda. Se um levantamento voltar com eixo acima de 70, é este o número a cotar."
+      },
+      {
+        "question": "O que fecha uma cotação de fechadura cilíndrica?",
+        "answer": "Três linhas: a função em cada porta, a distância ao eixo que o seu levantamento encontrou, e a espessura da folha. O acabamento vem depois dessas três e nunca antes, porque o acabamento nunca muda o que serve e as três primeiras sempre mudam. A maior parte desta linha compartilha eixo de 60 mm ou 70 mm ajustável e porta de 35 mm a 45 mm, que é o objetivo de uma fechadura broqueada — um erro em qualquer dessas linhas se resolve na obra e não num contêiner."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre las funciones entrada, baño y paso?",
+        "answer": "Entrada lleva llave por fuera y está siempre libre por dentro. Baño es la función de privacidad: pomo de giro por dentro, sin llave, y un pequeño desbloqueo de emergencia por fuera. Paso no es una cerradura — solo retiene la puerta y no tiene enclavamiento en ningún sentido, que es lo que se quiere en una puerta de pasillo que debe quedar cerrada frente al humo pero nunca puede atrapar a nadie."
+      },
+      {
+        "question": "¿Qué función de cerradura necesita un colegio o una clínica?",
+        "answer": "Función de aula, que la mayoría de los catálogos entierra. El 5807 se publica con las funciones COMMUNICATION LOCK, CLASSROOM LOCK y EXIT LATCH: la función de aula lleva llave solo por el lado del pasillo, para que un profesor pueda cerrar desde dentro del aula sin que haga falta llave para salir. Si su especificación menciona colegio, clínica o residencia, mire el 5807 primero — el resto de esta gama está especificada en torno al conjunto entrada-baño-paso."
+      },
+      {
+        "question": "¿Qué cerradura cilíndrica sirve para puerta más gruesa o canto más profundo?",
+        "answer": "El 5831. Su distancia al eje se publica como 60, 70, 80 o 90 mm regulable y su espesor de puerta como 35 a 50 mm, donde el resto de la gama se queda en 70 mm y 45 mm. Es una cerradura para puerta de seguridad, puerta de madera más pesada, o una puerta donde 70 mm de distancia al eje dejaría el pomo demasiado cerca del canto. Si un levantamiento devuelve una distancia al eje por encima de 70, es este el número a cotizar."
+      },
+      {
+        "question": "¿Qué cierra una cotización de cerradura cilíndrica?",
+        "answer": "Tres filas: la función en cada puerta, la distancia al eje que encontró su levantamiento, y el espesor de la hoja. El acabado va después de esas tres y nunca antes, porque el acabado nunca cambia lo que encaja y las tres primeras siempre lo cambian. La mayor parte de esta gama comparte distancia al eje de 60 o 70 mm regulable y puerta de 35 a 45 mm, que es el objeto de una cerradura de taladro — un error en cualquiera de esas filas se resuelve en obra y no en un contenedor."
+      }
     ]
   },
   "titlePt": "Entrada, banheiro, passagem: escolhendo entre doze fechaduras cilíndricas",

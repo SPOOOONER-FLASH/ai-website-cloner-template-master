@@ -68,6 +68,42 @@
         "question": "Does a finish column listing several codes mean the photograph shows one of them?",
         "answer": "No, and it is worth keeping apart in your own records. Where a finish column reads AB/AC/PB/SB/SS/SP/SC all available, that is the range the model can be produced in, not the finish of the piece in the photograph. A range in a specification is not a specification — ask for the finish you intend to order and confirm it in writing against a photograph of that exact code."
       }
+    ],
+    "pt": [
+      {
+        "question": "O que significam as letras depois de um código de modelo de ferragem?",
+        "answer": "Os dígitos são o produto; as letras são o acabamento, e às vezes a função. 607 PBBK, 607 ABET, 607 SNET e 607 BNET parecem quatro fechaduras e são uma. Leia as letras da direita para a esquerda: a função vem por último e o acabamento fica antes dela. Então 607 PBBK é um 607 em latão polido, função banheiro, e 607 SNET é a mesma fechadura em níquel acetinado, entrada chaveada."
+      },
+      {
+        "question": "O que significam os códigos de acabamento de duas letras?",
+        "answer": "PB é latão polido, AB latão antigo, AC cobre antigo, SN níquel acetinado, SC cromo acetinado, CP cromado, SB latão acetinado, SP polido brilhante, BN níquel preto e SS aço inoxidável — com SSS inox acetinado e PSS inox polido onde um fornecedor distingue os dois. Mais dois são pintura e não banho: W e WL são pintura branca, e F é pintura texturizada imitando madeira."
+      },
+      {
+        "question": "O que querem dizer ET, PS e BK numa fechadura?",
+        "answer": "São funções e não acabamentos. ET é a função de entrada, chaveada por fora. PS é passagem — só trinco, sem cilindro, para uma porta que fecha mas nunca tranca. BK é a função de privacidade ou banheiro, com botão de giro por dentro e destravamento de emergência por fora. É também por isso que 592 SSET se lê como SS mais ET, inox com entrada, e não S mais SET: ler da esquerda para a direita inverte o sentido."
+      },
+      {
+        "question": "Uma coluna de acabamento com vários códigos indica o da fotografia?",
+        "answer": "Não, e vale manter isso separado nos seus registros. Onde a coluna diz AB/AC/PB/SB/SS/SP/SC todos disponíveis, isso é a gama em que o modelo pode ser produzido, e não o acabamento da peça na fotografia. Uma gama numa especificação não é uma especificação — peça o acabamento que você pretende comprar e confirme-o por escrito contra uma fotografia daquele código exato."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué significan las letras después de un código de modelo de herraje?",
+        "answer": "Los dígitos son el producto; las letras son el acabado, y a veces la función. 607 PBBK, 607 ABET, 607 SNET y 607 BNET parecen cuatro cerraduras y son una. Lea las letras de derecha a izquierda: la función va la última y el acabado queda delante. Así 607 PBBK es un 607 en latón pulido, función baño, y 607 SNET es la misma cerradura en níquel satinado, entrada con llave."
+      },
+      {
+        "question": "¿Qué significan los códigos de acabado de dos letras?",
+        "answer": "PB es latón pulido, AB latón antiguo, AC cobre antiguo, SN níquel satinado, SC cromo satinado, CP cromado, SB latón satinado, SP pulido brillante, BN níquel negro y SS acero inoxidable — con SSS inoxidable satinado y PSS inoxidable pulido donde un proveedor distingue los dos. Otros dos son pintura y no baño: W y WL son pintura blanca, y F es un acabado imitación madera."
+      },
+      {
+        "question": "¿Qué quieren decir ET, PS y BK en una cerradura?",
+        "answer": "Son funciones y no acabados. ET es la función de entrada, con llave por fuera. PS es paso — solo picaporte, sin cilindro, para una puerta que cierra pero nunca se enclava. BK es la función de privacidad o baño, con pomo de giro por dentro y desbloqueo de emergencia por fuera. Por eso también 592 SSET se lee como SS más ET, inoxidable con entrada, y no S más SET: leer de izquierda a derecha lo invierte."
+      },
+      {
+        "question": "¿Una columna de acabado con varios códigos indica el de la fotografía?",
+        "answer": "No, y conviene mantenerlo separado en sus propios registros. Donde la columna dice AB/AC/PB/SB/SS/SP/SC todos disponibles, eso es la gama en que el modelo puede producirse, no el acabado de la pieza de la fotografía. Una gama en una especificación no es una especificación — pida el acabado que pretende comprar y confírmelo por escrito contra una fotografía de ese código exacto."
+      }
     ]
   },
   "titlePt": "O que significam as letras depois de um código de modelo",

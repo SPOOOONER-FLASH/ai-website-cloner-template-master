@@ -70,6 +70,42 @@
         "question": "Do you hold UL or ANSI/BHMA listings?",
         "answer": "Not today, and we will be precise rather than vague about it. The 307 and the 311 have been submitted for testing, and until certificate numbers exist we will not imply otherwise. Both UL's Product iQ and the BHMA directory are public, a specifier can check in a minute, and a supplier caught rounding up on a certification has told that specifier everything they need to know about the rest of the datasheet."
       }
+    ],
+    "pt": [
+      {
+        "question": "Por que uma fábrica só carrega tantos produtos diferentes?",
+        "answer": "Porque a maioria deles não foi planejada. Um comprador num país procura uma peça que o mercado dele considera óbvia, não acha ninguém em casa que ainda a fabrique, e pergunta se conseguimos fazê-la a partir da amostra dele. Diga sim a isso durante vinte e oito anos e o catálogo parece menos uma estratégia de produto e mais um mapa das portas que as outras pessoas têm de resolver."
+      },
+      {
+        "question": "Quanto tempo leva um molde metálico novo?",
+        "answer": "De três a cinco meses, e é a razão de uma peça customizada ser um compromisso e não um pedido: nesse tempo todo não há nada para mostrar ao comprador, e no fim as primeiras peças saem da prensa e normalmente ainda não estão certas. As peças de aço estampado e de zamac prendem no começo — um encaixe alguns graus fora, duas peças travando onde deveriam deslizar — então os ângulos de contato são ajustados e as peças rodadas de novo até o conjunto funcionar igual na décima milésima operação e na primeira."
+      },
+      {
+        "question": "Que ensaios acontecem antes da produção em lote?",
+        "answer": "Os nossos primeiro, e quais são depende do produto: ensaios de fogo para um dispositivo de porta corta-fogo, ensaios de impacto, de vida em ciclos, de carga e pressão. Uma barra antipânico e um olho mágico não recebem as mesmas perguntas. Depois disso o produto vai para o que o mercado do comprador reconhece — para a Europa isso é CE, e as nossas barras antipânico são ensaiadas conforme a EN 1125."
+      },
+      {
+        "question": "Vocês têm listagem UL ou ANSI/BHMA?",
+        "answer": "Hoje não, e seremos precisos em vez de vagos. A 307 e a 311 foram submetidas a ensaio, e enquanto não existirem números de certificado não vamos insinuar o contrário. Tanto o Product iQ da UL quanto o diretório da BHMA são públicos, um especificador confere em um minuto, e um fornecedor pego arredondando para cima numa certificação já disse a esse especificador tudo o que ele precisa saber sobre o resto da ficha técnica."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Por qué una sola fábrica lleva tantos productos distintos?",
+        "answer": "Porque la mayoría no estaban planificados. Un comprador de un país busca una pieza que su mercado da por hecha, no encuentra a nadie en casa que siga fabricándola, y pregunta si podemos hacerla a partir de su muestra. Diga que sí a eso durante veintiocho años y el catálogo parece menos una estrategia de producto y más un mapa de las puertas que los demás tienen que resolver."
+      },
+      {
+        "question": "¿Cuánto tarda un molde metálico nuevo?",
+        "answer": "De tres a cinco meses, y es la razón de que una pieza a medida sea un compromiso y no un pedido: durante todo ese tiempo no hay nada que enseñar al comprador, y al final las primeras piezas salen de la prensa y normalmente todavía no están bien. Las piezas de acero estampado y de zamak agarrotan al principio — un ajuste unos grados fuera, dos piezas trabando donde deberían deslizar — así que se ajustan los ángulos de contacto y se vuelven a rodar hasta que el conjunto funciona igual en la operación diez mil que en la primera."
+      },
+      {
+        "question": "¿Qué ensayos hay antes de la producción en serie?",
+        "answer": "Los nuestros primero, y cuáles son depende del producto: ensayos de fuego para un dispositivo de puerta cortafuego, ensayos de impacto, de vida a ciclos, de carga y presión. Una barra antipánico y una mirilla no reciben las mismas preguntas. Después de eso el producto va a lo que reconozca el mercado del comprador — para Europa eso es CE, y nuestras barras antipánico están ensayadas conforme a EN 1125."
+      },
+      {
+        "question": "¿Tienen listado UL o ANSI/BHMA?",
+        "answer": "Hoy no, y seremos precisos en vez de vagos. La 307 y la 311 se han presentado a ensayo, y mientras no existan números de certificado no vamos a dar a entender lo contrario. Tanto Product iQ de UL como el directorio de BHMA son públicos, un prescriptor lo comprueba en un minuto, y un proveedor pillado redondeando al alza en una certificación ya le ha dicho a ese prescriptor todo lo que necesita saber sobre el resto de la ficha técnica."
+      }
     ]
   },
   "titlePt": "Por que o catálogo é tão largo: 28 anos cortando moldes para as portas dos outros",

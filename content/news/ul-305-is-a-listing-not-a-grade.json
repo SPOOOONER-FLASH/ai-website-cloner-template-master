@@ -63,6 +63,34 @@
         "question": "Does Canton Hyland hold a UL listing?",
         "answer": "No UL listing appears among this factory's credentials, and there is no ANSI/BHMA certification either. What we hold is an EN 1125 test report from Intertek Testing Services Shenzhen Ltd., Guangzhou Branch, reference 130722068GZU-001, covering model KD070/30-290, and a CE Certificate of Conformity to EN 1125:2008 from CELAB, Italy."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre UL 305, EN 1125 e ANSI A156.3?",
+        "answer": "Não são três graus de uma coisa só. A EN 1125 é a norma europeia de desempenho para barras antipânico acionadas por barra horizontal, demonstrada por ensaio contra um modelo específico. A ANSI/BHMA A156.3 classifica produtos em 1, 2 ou 3 por ensaio de ciclos, que é uma classificação de durabilidade e não uma aprovação ou reprovação. A UL 305 é a base de uma listagem — um arranjo contínuo em que o organismo certificador inspeciona a fábrica e o produto carrega uma marca."
+      },
+      {
+        "question": "Um relatório de ensaio é o mesmo que uma listagem?",
+        "answer": "Não. Um relatório de ensaio é a fotografia de um modelo numa data. Uma listagem é uma afirmação contínua sobre a produção, mantida por inspeção periódica da fábrica. Custam diferente por essa razão, e caducam de formas diferentes."
+      },
+      {
+        "question": "A Canton Hyland tem listagem UL?",
+        "answer": "Nenhuma listagem UL consta entre as credenciais desta fábrica, e também não há certificação ANSI/BHMA. O que temos é um relatório de ensaio EN 1125 da Intertek Testing Services Shenzhen Ltd., filial de Guangzhou, referência 130722068GZU-001, cobrindo o modelo KD070/30-290, e um Certificado CE de Conformidade à EN 1125:2008 da CELAB, Itália."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre UL 305, EN 1125 y ANSI A156.3?",
+        "answer": "No son tres grados de una misma cosa. EN 1125 es la norma europea de prestaciones para barras antipánico accionadas por barra horizontal, demostrada mediante ensayo contra un modelo concreto. ANSI/BHMA A156.3 clasifica productos en 1, 2 o 3 por ensayo de ciclos, que es una clasificación de durabilidad y no un apto o no apto. UL 305 es la base de un listado — un acuerdo continuo en el que el organismo certificador inspecciona la fábrica y el producto lleva una marca."
+      },
+      {
+        "question": "¿Un informe de ensayo es lo mismo que un listado?",
+        "answer": "No. Un informe de ensayo es la fotografía de un modelo en una fecha. Un listado es una afirmación continua sobre la producción, mantenida mediante inspección periódica de la fábrica. Cuestan distinto por esa razón, y caducan de formas distintas."
+      },
+      {
+        "question": "¿Canton Hyland tiene listado UL?",
+        "answer": "No figura ningún listado UL entre las credenciales de esta fábrica, y tampoco hay certificación ANSI/BHMA. Lo que tenemos es un informe de ensayo EN 1125 de Intertek Testing Services Shenzhen Ltd., sucursal de Guangzhou, referencia 130722068GZU-001, que cubre el modelo KD070/30-290, y un Certificado CE de Conformidad a EN 1125:2008 de CELAB, Italia."
+      }
     ]
   },
   "titlePt": "UL 305 é uma listagem, não um grau",

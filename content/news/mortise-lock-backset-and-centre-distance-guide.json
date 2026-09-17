@@ -70,6 +70,42 @@
         "question": "Which backset does a narrow aluminium stile take?",
         "answer": "A shallow one — 16mm, 17mm and 20mm backsets exist because a narrow stile cannot take a deep case, which is what LC8520 at 20mm and the 16mm sliding-hook cases are for. Timber doors take more, with 45mm, 50mm, 55mm and 60mm the usual span, and a 70mm backset like the LC7065 is what a wide entrance door with a heavy rail needs. Backset follows the door rather than the standard."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre distância ao eixo e distância entre centros?",
+        "answer": "Distância ao eixo é a distância da borda frontal da testa até o centro do quadrado da maçaneta. Distância entre centros é o vão entre o centro do furo do cilindro e o centro desse quadrado, medido ao longo da face da fechadura. A distância entre centros tem de bater com o espelho ou a roseta; a distância ao eixo tem de bater com o quanto para dentro da borda a porta foi furada. São independentes entre si, e uma caixa só é utilizável quando as duas concordam com a porta."
+      },
+      {
+        "question": "Como se lê o código de modelo de uma caixa de fechadura?",
+        "answer": "Em toda a linha de perfil europeu as duas medidas são o código. LC08 85×55 é 85 mm entre centros com 55 mm de eixo; LC21 85×50 é a mesma distância entre centros sobre 50 mm de eixo; LC8520 comprime a mesma informação sem separador — 85 mm entre centros, 20 mm de eixo. Depois de conhecer a convenção, uma packing list se lê de relance."
+      },
+      {
+        "question": "Por que 85 mm é a distância entre centros usual, e quando é 72 mm?",
+        "answer": "85 mm é a distância entre centros padrão para fechaduras de cilindro europeu, e é por isso que um espelho europeu assenta numa caixa de quase qualquer fabricante sem furar. 72 mm é comum nos mercados latino-americanos, e é por isso que o LC34 50×72 põe a distância ao eixo primeiro: nessa distância entre centros os números se leem na ordem inversa, então o nome do modelo segue a convenção daquele mercado e não a nossa."
+      },
+      {
+        "question": "Que distância ao eixo aceita um montante estreito de alumínio?",
+        "answer": "Uma rasa — eixos de 16 mm, 17 mm e 20 mm existem porque um montante estreito não aceita caixa profunda, que é para isso que servem o LC8520 a 20 mm e as caixas de gancho de 16 mm. Portas de madeira aceitam mais, com 45 mm, 50 mm, 55 mm e 60 mm como faixa usual, e um eixo de 70 mm como o do LC7065 é o que uma porta de entrada larga com travessa pesada pede. A distância ao eixo segue a porta e não a norma."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre distancia al eje y distancia entre ejes?",
+        "answer": "La distancia al eje es la distancia desde el borde delantero del frente hasta el centro del cuadradillo. La distancia entre ejes es el hueco entre el centro del agujero del cilindro y el centro de ese cuadradillo, medido a lo largo de la cara de la cerradura. La distancia entre ejes tiene que coincidir con el escudo o el rosetón; la distancia al eje tiene que coincidir con lo adentro que se taladró la puerta desde el canto. Son independientes entre sí, y una caja solo es utilizable cuando las dos concuerdan con la puerta."
+      },
+      {
+        "question": "¿Cómo se lee el código de modelo de una caja de cerradura?",
+        "answer": "En toda la gama de perfil europeo las dos medidas son el código. LC08 85×55 es 85 mm entre ejes con 55 mm al eje; LC21 85×50 es la misma distancia entre ejes sobre 50 mm al eje; LC8520 comprime la misma información sin separador — 85 mm entre ejes, 20 mm al eje. Una vez conocida la convención, un packing list se lee de un vistazo."
+      },
+      {
+        "question": "¿Por qué 85 mm es la distancia entre ejes habitual, y cuándo es 72 mm?",
+        "answer": "85 mm es la distancia entre ejes estándar para cerraduras de cilindro europeo, y por eso un escudo europeo asienta sobre una caja de casi cualquier fabricante sin taladrar. 72 mm es común en los mercados latinoamericanos, y por eso el LC34 50×72 pone la distancia al eje primero: a esa distancia entre ejes los números se leen en orden inverso, así que el nombre del modelo sigue la convención de ese mercado y no la nuestra."
+      },
+      {
+        "question": "¿Qué distancia al eje admite un canto estrecho de aluminio?",
+        "answer": "Una corta — hay distancias de 16 mm, 17 mm y 20 mm porque un canto estrecho no admite una caja profunda, que es para lo que sirven el LC8520 a 20 mm y las cajas de gancho de 16 mm. Las puertas de madera admiten más, con 45 mm, 50 mm, 55 mm y 60 mm como rango habitual, y una distancia de 70 mm como la del LC7065 es lo que pide una puerta de entrada ancha con travesaño pesado. La distancia al eje sigue a la puerta y no a la norma."
+      }
     ]
   },
   "titlePt": "Distância ao eixo e distância entre centros: como ler o número de uma caixa de fechadura",

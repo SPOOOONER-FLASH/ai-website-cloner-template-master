@@ -69,6 +69,42 @@
         "question": "Why does a panic bar listing show a photograph of a lever handle?",
         "answer": "Because trade catalogues, ours included until recently, file the trim under the range it works with — so the model number carries the panic device's family name while the listing photograph shows a lever. The naming is the problem, not the part. Where a trim is listed under a panic-device model number, our specification table now names it as a trim handle on the first row."
       }
+    ],
+    "pt": [
+      {
+        "question": "A barra antipânico já vem com maçaneta externa?",
+        "answer": "Não, e isso é deliberado. Uma barra antipânico é um instrumento de mão única: alguém do lado de dentro cai contra a barra sob carga, o trinco recolhe, a porta abre. Nada nesse mecanismo ajuda quem está do outro lado. O lado de fora é uma segunda decisão e uma linha de pedido separada — uma planilha que diz \"barra antipânico, porta simples\" com uma quantidade e mais nada chega como barras sem nenhuma forma de entrar."
+      },
+      {
+        "question": "Quando uma porta de saída precisa de maçaneta externa, e quando não precisa?",
+        "answer": "Numa rota de fuga pura o lado de fora pode legitimamente ser nada — face lisa, sem maçaneta, sem canhão, e quem quiser entrar dá a volta. Numa porta também usada todos os dias, ou na qual um zelador precisa entrar, é preciso uma maçaneta externa: alavanca e espelho que se encaixam na mesma preparação e que, com um cilindro, recolhem o mesmo trinco por fora. Toda porta de saída recebe duas linhas na planilha, e uma delas pode dizer \"sem maçaneta externa\" — escrever essa linha é o que transforma uma omissão numa decisão."
+      },
+      {
+        "question": "Dá para usar uma maçaneta de uma linha numa barra de outra?",
+        "answer": "Não. Os parafusos da maçaneta atravessam a porta e entram no próprio corpo da barra antipânico, então as duas têm de ter sido projetadas uma para a outra. Uma maçaneta de uma linha sobre uma barra de outra segura na bancada e afrouxa em serviço — e a porta em que ela está é a porta por onde as pessoas saem. As distâncias entre furos causam mais devoluções de obra do que qualquer outra coisa nesta peça."
+      },
+      {
+        "question": "Por que o anúncio de uma barra antipânico mostra a foto de uma maçaneta?",
+        "answer": "Porque os catálogos do setor, o nosso inclusive até há pouco, arquivam a maçaneta sob a linha com a qual ela funciona — então o código de modelo carrega o nome da família da barra enquanto a foto mostra uma alavanca. O problema é o nome, não a peça. Onde uma maçaneta está listada sob um código de barra antipânico, a nossa tabela de especificação agora a identifica como maçaneta externa já na primeira linha."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿La barra antipánico incluye manija exterior?",
+        "answer": "No, y es deliberado. Una barra antipánico es un instrumento de un solo sentido: alguien desde dentro cae contra la barra bajo carga, el picaporte se recoge, la puerta abre. Nada de ese mecanismo ayuda a quien está al otro lado. El exterior es una segunda decisión y una línea de pedido aparte — una relación que dice \"barra antipánico, puerta simple\" con una cantidad y nada más llega como barras sin ninguna forma de entrar."
+      },
+      {
+        "question": "¿Cuándo necesita manija exterior una puerta de salida y cuándo no?",
+        "answer": "En una vía de evacuación pura el exterior puede ser legítimamente nada — cara lisa, sin manija, sin bombillo, y quien quiera entrar da la vuelta. En una puerta que además se usa a diario, o por la que tiene que entrar un conserje, hace falta una manija exterior: manilla y escudo que encajan en la misma preparación y que, con un cilindro, recogen el mismo picaporte desde fuera. Cada puerta de salida lleva dos líneas en la relación, y una puede decir \"sin manija exterior\" — escribir esa línea es lo que convierte una omisión en una decisión."
+      },
+      {
+        "question": "¿Se puede usar una manija de una gama sobre una barra de otra?",
+        "answer": "No. Los tornillos de la manija atraviesan la puerta y entran en el cuerpo de la propia barra antipánico, así que las dos tienen que haberse diseñado la una para la otra. Una manija de una gama sobre una barra de otra aguanta en el banco y se afloja en servicio — y la puerta en que está es la puerta por la que sale la gente. Las distancias entre taladros causan más devoluciones de obra que ninguna otra cosa en esta pieza."
+      },
+      {
+        "question": "¿Por qué el anuncio de una barra antipánico muestra la foto de una manija?",
+        "answer": "Porque los catálogos del sector, el nuestro incluido hasta hace poco, archivan la manija bajo la gama con la que funciona — así que el código de modelo lleva el nombre de la familia de la barra mientras la foto muestra una manilla. El problema es el nombre, no la pieza. Donde una manija figura bajo un código de barra antipánico, nuestra tabla de especificación la identifica ahora como manija exterior ya en la primera fila."
+      }
     ]
   },
   "titlePt": "Maçaneta externa ou barra antipânico: o que o lado de fora de uma porta de saída precisa",

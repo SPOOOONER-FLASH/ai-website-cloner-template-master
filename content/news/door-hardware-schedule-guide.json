@@ -67,6 +67,42 @@
         "question": "What should be asked before quoting against a schedule?",
         "answer": "Three things. Which sets are on escape routes, because those are governed by regulation rather than preference and the hardware is not interchangeable with the rest. Whether there is a master key system, because if there is, the cylinders are a single coordinated order and not a per-door line item. And what the finish is across the project, because finish is usually specified once for the whole building and then repeated silently in every row."
       }
+    ],
+    "pt": [
+      {
+        "question": "O que é uma planilha de ferragens de porta?",
+        "answer": "O documento de que um pedido comercial é de fato escrito. Um catálogo é organizado por produto; um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm de concordar entre si — a mesma distância ao eixo, a mesma mão, a mesma resistência ao fogo, o mesmo acabamento. Uma linha de planilha pode ser sete itens de pedido, e cada um tem de ser compatível com os outros seis."
+      },
+      {
+        "question": "Por que compradores de obra perguntam dimensões antes do preço?",
+        "answer": "Porque eles nunca estão comparando a sua fechadura com a de um concorrente — estão comparando se a sua fechadura serve no conjunto. Uma caixa com 85 mm entre centros e 55 mm de eixo ou está certa para o espelho e para a preparação já especificados, ou não está, e nenhum argumento de qualidade move isso. Um fornecedor que responde devagar perde a consulta antes de cotar."
+      },
+      {
+        "question": "Por que uma planilha cota quantidades como conjuntos e não como produtos?",
+        "answer": "Porque é ali que ficam as quantidades. Uma planilha não diz duzentas fechaduras; diz trinta do conjunto HW-01, noventa do HW-02, e cada conjunto se expande nos seus itens. Um fabricante capaz de fornecer o conjunto inteiro vale mais que um mais barato que fornece parte dele — não por lealdade, mas porque um conjunto partido significa dois prazos, dois embarques e um risco de coordenação que cai no distribuidor."
+      },
+      {
+        "question": "O que perguntar antes de cotar contra uma planilha?",
+        "answer": "Três coisas. Quais conjuntos estão em rotas de fuga, porque esses são regidos por regulamento e não por preferência e a ferragem não é intercambiável com o resto. Se existe um sistema de chave-mestra, porque se existir os cilindros são um único pedido coordenado e não um item por porta. E qual é o acabamento em toda a obra, porque o acabamento normalmente é especificado uma vez para o prédio inteiro e depois repetido silenciosamente em cada linha."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es una relación de herrajes de puerta?",
+        "answer": "El documento del que se escribe realmente un pedido comercial. Un catálogo se organiza por producto; un edificio es una lista de puertas, y cada puerta necesita un conjunto de herrajes cuyas piezas tienen que concordar entre sí — la misma distancia al eje, la misma mano, la misma resistencia al fuego, el mismo acabado. Una fila puede ser siete líneas de pedido, y cada una tiene que ser compatible con las otras seis."
+      },
+      {
+        "question": "¿Por qué los compradores de obra preguntan dimensiones antes que precio?",
+        "answer": "Porque nunca están comparando su cerradura con la de un competidor — están comparando si su cerradura encaja en el conjunto. Una caja con 85 mm entre ejes y 55 mm al eje o es la correcta para el escudo y la preparación ya especificados, o no lo es, y ningún argumento de calidad mueve eso. Un proveedor que responde despacio pierde la consulta antes de cotizar."
+      },
+      {
+        "question": "¿Por qué una relación cotiza cantidades como conjuntos y no como productos?",
+        "answer": "Porque ahí están las cantidades. Una relación no dice doscientas cerraduras; dice treinta del conjunto HW-01, noventa del HW-02, y cada conjunto se despliega en sus líneas. Un fabricante capaz de suministrar el conjunto entero vale más que uno más barato que suministra parte — no por lealtad, sino porque un conjunto partido significa dos plazos, dos embarques y un riesgo de coordinación que cae sobre el distribuidor."
+      },
+      {
+        "question": "¿Qué hay que preguntar antes de cotizar contra una relación?",
+        "answer": "Tres cosas. Qué conjuntos están en vías de evacuación, porque esos los rige el reglamento y no la preferencia y el herraje no es intercambiable con el resto. Si hay sistema de llave maestra, porque si lo hay los cilindros son un único pedido coordinado y no una línea por puerta. Y cuál es el acabado en toda la obra, porque el acabado suele especificarse una vez para el edificio entero y luego repetirse en silencio en cada fila."
+      }
     ]
   },
   "titlePt": "A planilha de portas: como a ferragem é realmente especificada",

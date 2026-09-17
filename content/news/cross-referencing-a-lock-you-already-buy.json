@@ -67,6 +67,42 @@
         "question": "What most often makes a replacement fail on a retrofit?",
         "answer": "Not the lock body — the strike plate cutout, which was made for the old part and will not be remade. In a retrofit the frame is the constraint rather than the door, so check the strike and the keep before you order the lock. On a rim lock the same applies to the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them."
       }
+    ],
+    "pt": [
+      {
+        "question": "Como achar o equivalente de uma fechadura que você já compra?",
+        "answer": "Pela geometria, não pelo nome. Uma fechadura é definida pelas suas dimensões e não pelo seu código de modelo: duas fechaduras com os mesmos seis números são intercambiáveis, independentemente de como cada uma se chama, e duas com o mesmo nome e um número diferente não são. Meça a peça que você tem, ou fotografe-a ao lado de uma régua com a testa visível, e envie esses números com a espessura da porta e a mão."
+      },
+      {
+        "question": "Quais dimensões têm de bater numa fechadura de embutir?",
+        "answer": "Seis. Distância ao eixo, da face da porta até o centro do quadrado; distância entre centros, entre o quadrado e o cilindro ou a fechadura; comprimento e largura da testa; altura e profundidade da caixa; tamanho do quadrado, quase sempre 8 mm mas vale confirmar; e faixa de espessura de porta. Erre a distância entre centros e a maçaneta e o cilindro não vão os dois coincidir com os furos já feitos na porta — e a porta é a coisa que você não pode trocar."
+      },
+      {
+        "question": "O que deve ser ignorado ao buscar equivalência?",
+        "answer": "O próprio código de modelo, o nome do acabamento e a designação de grau. A nomenclatura de acabamento não é padronizada entre fábricas — o níquel acetinado de um fornecedor é o níquel escovado de outro e o SN de um terceiro — então compare acabamento contra uma amostra e não contra uma palavra. Designações de grau são específicas de cada norma: um grau ANSI e uma classificação EN medem coisas diferentes sob ensaios diferentes, e nenhum se traduz no outro por aritmética."
+      },
+      {
+        "question": "O que mais faz uma substituição falhar numa reforma?",
+        "answer": "Não o corpo da fechadura — o recorte do contra-testa, que foi feito para a peça antiga e não será refeito. Numa reforma o marco é a restrição e não a porta, então confira o contra-testa e o receptor antes de pedir a fechadura. Numa fechadura de sobrepor o mesmo vale para o tipo de contra-testa, porque um contra-testa de sobrepor e um receptor de trava de sobrepor são peças fundidas diferentes e o marco já está preparado para uma delas."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cómo se encuentra el equivalente de una cerradura que ya se compra?",
+        "answer": "Por geometría, no por nombre. Una cerradura la definen sus dimensiones y no su código de modelo: dos cerraduras con los mismos seis números son intercambiables, se llamen como se llamen, y dos con el mismo nombre y un número distinto no lo son. Mida la pieza que tiene, o fotografíela junto a una regla con el frente visible, y envíe esos números con el espesor de la puerta y la mano."
+      },
+      {
+        "question": "¿Qué dimensiones tienen que coincidir en una cerradura de embutir?",
+        "answer": "Seis. Distancia al eje, de la cara de la puerta al centro del cuadradillo; distancia entre ejes, entre el cuadradillo y el cilindro o la llave; largo y ancho del frente; alto y fondo de la caja; medida del cuadradillo, casi siempre 8 mm pero conviene confirmarlo; y rango de espesor de puerta. Falle la distancia entre ejes y la manija y el cilindro no coincidirán los dos con los taladros ya hechos en la puerta — y la puerta es lo que no se puede cambiar."
+      },
+      {
+        "question": "¿Qué hay que ignorar al buscar una equivalencia?",
+        "answer": "El propio código de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas — el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero — así que compare acabado contra una muestra y no contra una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas bajo ensayos distintos, y ninguno se traduce al otro por aritmética."
+      },
+      {
+        "question": "¿Qué hace fallar más a menudo una sustitución en una reforma?",
+        "answer": "No el cuerpo de la cerradura — el recorte del cerradero, que se hizo para la pieza antigua y no se va a rehacer. En una reforma la restricción es el marco y no la puerta, así que compruebe el cerradero antes de pedir la cerradura. En una cerradura de sobreponer pasa lo mismo con el tipo de cerradero, porque un cerradero de sobreponer y un receptor de condena son piezas fundidas distintas y el marco ya está preparado para una de ellas."
+      }
     ]
   },
   "titlePt": "Encontrar o equivalente de uma fechadura que você já compra",

@@ -69,6 +69,42 @@
         "question": "Can a zinc alloy part be supplied to a 626 specification?",
         "answer": "No. ANSI/BHMA A156.18's base materials are steel, brass and bronze, and stainless. Zinc alloy is not among them and neither is aluminium, so a specification calling for 626 on a brass base cannot be met with a zinc-alloy casting however close the colour comes."
       }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre 626 e 652?",
+        "answer": "Os dois são cromados acetinados e fotografam idêntico. O 626 é sobre base de latão ou bronze; o 652 é sobre base de aço. Um número BHMA codifica o metal base além da aparência, então são produtos diferentes com resistência à corrosão, preço e vida útil diferentes — e um especificador que escreve 626 e recebe 652 recebeu uma substituição."
+      },
+      {
+        "question": "US26D é o mesmo que 626?",
+        "answer": "São duas formas de escrever a mesma aparência, cromado acetinado. O número US é a convenção mais antiga e o de três dígitos é a ANSI/BHMA A156.18. A armadilha é que a maioria das tabelas de correspondência para aí, e um código de acabamento sozinho não pode ser mapeado num número BHMA porque o número codifica também o metal base."
+      },
+      {
+        "question": "Por que o 630 não é só uma alternativa mais barata ao 626?",
+        "answer": "O 630 é aço inoxidável acetinado, maciço, com o acabamento trabalhado no metal em vez de aplicado por cima. Não é um banho. Não há o que gastar porque não há camada, e não há o que banhar porque a peça já é o metal que o acabamento nomeia."
+      },
+      {
+        "question": "Uma peça de zamac pode atender a uma especificação 626?",
+        "answer": "Não. Os materiais base da ANSI/BHMA A156.18 são aço, latão e bronze, e inoxidável. Zamac não está entre eles, e alumínio também não, então uma especificação que pede 626 sobre base de latão não pode ser atendida com uma peça de zamac por mais próxima que a cor chegue."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre 626 y 652?",
+        "answer": "Los dos son cromado satinado y fotografían idéntico. El 626 va sobre base de latón o bronce; el 652 sobre base de acero. Un número BHMA codifica el metal base además del aspecto, así que son productos distintos con distinta resistencia a la corrosión, distinto precio y distinta vida útil — y un prescriptor que escribe 626 y recibe 652 ha recibido una sustitución."
+      },
+      {
+        "question": "¿US26D es lo mismo que 626?",
+        "answer": "Son dos formas de escribir el mismo aspecto, cromado satinado. El número US es la convención más antigua y el de tres dígitos es ANSI/BHMA A156.18. La trampa es que la mayoría de las tablas de correspondencia se detienen ahí, y un código de acabado por sí solo no se puede mapear a un número BHMA porque el número codifica también el metal base."
+      },
+      {
+        "question": "¿Por qué el 630 no es solo una alternativa más barata al 626?",
+        "answer": "El 630 es acero inoxidable satinado, macizo, con el acabado trabajado en el metal en vez de aplicado encima. No es un baño. No hay nada que gastar porque no hay capa, y no hay nada que chapar porque la pieza ya es el metal que nombra el acabado."
+      },
+      {
+        "question": "¿Una pieza de zamak puede cumplir una especificación 626?",
+        "answer": "No. Los materiales base de ANSI/BHMA A156.18 son acero, latón y bronce, e inoxidable. El zamak no está entre ellos, y el aluminio tampoco, así que una especificación que pide 626 sobre base de latón no se puede cumplir con una pieza de zamak por muy cerca que quede el color."
+      }
     ]
   },
   "titlePt": "US26D, 626, 630: um código de acabamento não é uma cor",
