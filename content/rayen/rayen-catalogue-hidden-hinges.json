@@ -1,0 +1,1284 @@
+{
+  "_readme": [
+    "不锈钢暗铰链（三维可调隐藏铰链），甲方《雷茵-不锈钢暗铰链》图册 13 个跨页，21 个型号。",
+    "",
+    "这本每页两个面板、一个面板一个型号，规格块本来就是中英双语的，不用猜翻译。",
+    "",
+    "**承重是安全数字，逐页读的，一个都没有推算。** 从 R-CS30 的 30kg 到 R-CC200/300 的 200kg。",
+    "标的是「两个铰链的最大承载能力」，不是单个 —— 标签照原文写，别让人按单个铰算。",
+    "",
+    "几处容易看漏的：",
+    "  · RY80 是二维可调（只有上下和前后），其余都是三维。标题上写的就是「二维」。",
+    "  · R-CC200J 印了两组开槽数据（196&235 / 167&235，深 9.5&43 / 7.5&46），两组都收。",
+    "  · R-CS40 和 R-CS40X 参数完全相同，R-CS80 与 R-CS80X、R-CS110 与 R-CS110X 也是 ——",
+    "    差别在适用范围：不带 X 的写橱柜/衣柜或普通门，带 X 的写防火门。不是重复录入。",
+    "  · R-CS 系列没有三维可调装置，特性里没有这一条，所以不写可调范围。",
+    "",
+    "裁图的列边界是量出来的：图纸在面板的 0.056–0.363，文字从 0.398 起。",
+    "第一版用 0.02–0.43 裁，把「功能特性」和「技术参数」两栏的中文拖进了每一张图。",
+    "主图那一带没法按墨迹找 —— 它的浅灰底一直铺到面板边，只能按带取，止于 0.30 型号开始处。",
+    "",
+    "类目暂时放 brass-steel-hinges（铜与钢门合页）。暗铰链和平开合页其实是两类东西，",
+    "但这个类目和 HYDE、Stahlock 共用，单开一个子类目会在那两站产生空类目页。",
+    "等暗铰链多到能自成一类再说。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-catalogue-hidden",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "精铸不锈钢定制 1 / 2（图册 p13）",
+      "reason": "只有「定制」两字没有型号代号，是打样示例不是目录型号"
+    }
+  ],
+  "models": [
+    {
+      "model": "RY140",
+      "slug": "ry140-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY140",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "30x140mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "40mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "99&140mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "7.5&27mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±2.5mm; Left and right: ±1.5mm; Front and back: ±1.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY150",
+      "slug": "ry150-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY150",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "25x150mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "100kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "33mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "119&150mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "7&22mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±1.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY177",
+      "slug": "ry177-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY177",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "28x177mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "38mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø28mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "141&177mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "9.7&26.8mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY80",
+      "slug": "ry80-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY80",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "29x113mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "38mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø29mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "113&73mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "7&40mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±1.5mm; Front and back: ±1.5mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY80J",
+      "slug": "ry80j-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY80J",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "30x160mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "40mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "108&161mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "6&29mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±2.5mm; Left and right: ±2.0mm; Front and back: ±2.5mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY100",
+      "slug": "ry100-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY100",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "25x138mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "100kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "33mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "138.8&110mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&30mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±1.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "RY120",
+      "slug": "ry120-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "RY120",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "30x160mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "40mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "160&125mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&32.5mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CF120",
+      "slug": "r-cf120-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CF120",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "30x160mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "40mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "160&125mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&32.5mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CC120J",
+      "slug": "r-cc120j-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CC120J",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "30x160mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "40mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "160&127mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "7.8&32mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CC200",
+      "slug": "r-cc200-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CC200",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "32x240mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "200kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "45mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø32mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "186&240mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&45.5mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CC200J",
+      "slug": "r-cc200j-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CC200J",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "35x235mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "200kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "48mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø35mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "196&235mm / 167&235mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "9.5&43mm / 7.5&46mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CC300",
+      "slug": "r-cc300-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CC300",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "51x230mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "200kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "62mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø51mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "159&230mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "11&49mm"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS30",
+      "slug": "r-cs30-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS30",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "16x70mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "30kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "20mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "500mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø16mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "70&34mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "7&23mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS40",
+      "slug": "r-cs40-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS40",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "19x95mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "25mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "900mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø19mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "95&54mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&28mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS40X",
+      "slug": "r-cs40x-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS40X",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "19x95mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "25mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "900mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø19mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "95&54mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&28mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS60",
+      "slug": "r-cs60-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS60",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "25x117mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "60kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "33mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "900mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø25mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "117&70.5mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "11.5&36mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS80",
+      "slug": "r-cs80-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS80",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "28x117mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "36mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø28mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "117&67mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&40mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS80X",
+      "slug": "r-cs80x-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS80X",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "28x117mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "36mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø28mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "117&67mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "10&40mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS100",
+      "slug": "r-cs100-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS100",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "34x137mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "100kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "44mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø34mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "137&77mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "12&50mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS110",
+      "slug": "r-cs110-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS110",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "35x140mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "110kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "45mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø35mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "140&76mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "8.5&38mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    },
+    {
+      "model": "R-CS110X",
+      "slug": "r-cs110x-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "隐藏铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Stainless Steel 304/316L",
+      "finishes": [
+        "Sandblasted and Brushed",
+        "Matt Black",
+        "Bronze-green",
+        "PVD High-gloss Gold",
+        "Gunpowder Residue",
+        "PVD Gold"
+      ],
+      "imageDir": "R-CS110X",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "35x140mm"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "110kg"
+        },
+        {
+          "label": "Minimum door thickness",
+          "value": "45mm"
+        },
+        {
+          "label": "Maximum door width",
+          "value": "1000mm"
+        },
+        {
+          "label": "Milling cutter diameter",
+          "value": "Ø35mm"
+        },
+        {
+          "label": "Routing length",
+          "value": "140&76mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "8.5&38mm"
+        },
+        {
+          "label": "Opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304/316L"
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@
   "counts": {
     "refused": 439,
     "cleanable": 1222,
-    "already-clean": 2736
+    "already-clean": 2778
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -15610,6 +15610,174 @@
     },
     "pre361-bathroom-accessories.webp": {
       "source": "15761c7c809ee6fba4729029b2ea6e27c6094128958b92ed684836b775d165ed",
+      "status": "already-clean"
+    },
+    "r-cc120j-concealed-hinge-2.webp": {
+      "source": "43d427f48e26812b7c4171ed90b05f962b5db8ae6c610a24e1b690773a76dae8",
+      "status": "already-clean"
+    },
+    "r-cc120j-concealed-hinge.webp": {
+      "source": "e396e3fff3ac61905dfa18bdd18b96efce4512ff1df5346b8d6723e83493652f",
+      "status": "already-clean"
+    },
+    "r-cc200-concealed-hinge-2.webp": {
+      "source": "2febb1070477d3d641e856861dcb3f5d4b6c928e0628c980a4ac1919d206326b",
+      "status": "already-clean"
+    },
+    "r-cc200-concealed-hinge.webp": {
+      "source": "b27439a559d541f3c5e2d19ccf20675e180a9721c67b1dc21439400d8b706080",
+      "status": "already-clean"
+    },
+    "r-cc200j-concealed-hinge-2.webp": {
+      "source": "ff6ab153a6808cfb107b9378fa199a5f2e2c096e725e9224ba063dc1947deac1",
+      "status": "already-clean"
+    },
+    "r-cc200j-concealed-hinge.webp": {
+      "source": "fd1780e68fdf3f03320e2f4ae97765a420f23112b498e2d70498c8b491e89d07",
+      "status": "already-clean"
+    },
+    "r-cc300-concealed-hinge-2.webp": {
+      "source": "c51e17008c402c16cb541da7c0e5f9ac52604877ff9bf0b6c4176a91672b68b5",
+      "status": "already-clean"
+    },
+    "r-cc300-concealed-hinge.webp": {
+      "source": "190296e871e828546d0ab920b1b64f9aeeadaff332da2d6d1d48a092bde1c969",
+      "status": "already-clean"
+    },
+    "r-cf120-concealed-hinge-2.webp": {
+      "source": "bb98ce7b22ee8bb4771ef3a50238f1a0d55f25a85afa53003e6196335ff0d745",
+      "status": "already-clean"
+    },
+    "r-cf120-concealed-hinge.webp": {
+      "source": "c558626015ecd85c4e89e11db565a385c5b81a4f7a1bb93e50441522a730aa52",
+      "status": "already-clean"
+    },
+    "r-cs100-concealed-hinge-2.webp": {
+      "source": "6859ea7793764bd3c81f9dfe8ffc996b9e7c02287420c5747f6d94b132cdf279",
+      "status": "already-clean"
+    },
+    "r-cs100-concealed-hinge.webp": {
+      "source": "048fa06aa666672e954319f15015d2e46e7a9f2776886e046ffbd3ba59b67615",
+      "status": "already-clean"
+    },
+    "r-cs110-concealed-hinge-2.webp": {
+      "source": "a9a9208f6e8aef3e96f8c0c7726535637f4647ea4f17b6e0cc419eb0d00178a1",
+      "status": "already-clean"
+    },
+    "r-cs110-concealed-hinge.webp": {
+      "source": "2e69b01fd4fc3137ef7e5d24218823f5383f4aa2e8f971923d1f44d1dd58bd29",
+      "status": "already-clean"
+    },
+    "r-cs110x-concealed-hinge-2.webp": {
+      "source": "6f0a2eb9c99883699e19b7f35a7fbcb827a94ae8d23eef9e07734b752f7fdf78",
+      "status": "already-clean"
+    },
+    "r-cs110x-concealed-hinge.webp": {
+      "source": "d728b4d2db4c55f750e198049f2ea5fdafdd4552eae2e29726296c16acf956fa",
+      "status": "already-clean"
+    },
+    "r-cs30-concealed-hinge-2.webp": {
+      "source": "e1713863b8f96cda075bea19bc4e3fa8a590ff7ec5f7895629eef971e44af857",
+      "status": "already-clean"
+    },
+    "r-cs30-concealed-hinge.webp": {
+      "source": "383647b397732ab76ad7bff3fe4dd24c3c36e1044b01de8abe81384c77d8a118",
+      "status": "already-clean"
+    },
+    "r-cs40-concealed-hinge-2.webp": {
+      "source": "bedbe8df2e0062e26c7063bf403624b226d7ff3750fc8c699d5c43a6deb2c1f6",
+      "status": "already-clean"
+    },
+    "r-cs40-concealed-hinge.webp": {
+      "source": "4797c5e9b88db1bf3ed84d8179cafc65b35d80bd89ab6aa94ce772d446e9c56e",
+      "status": "already-clean"
+    },
+    "r-cs40x-concealed-hinge-2.webp": {
+      "source": "c785637aebe076639f83e40d197bfe21bfa5ce1a745cefbd41d792ca92ec9e2b",
+      "status": "already-clean"
+    },
+    "r-cs40x-concealed-hinge.webp": {
+      "source": "53d5f7b1416fc969b3b65f88250a9bf2f4fad47b0a6d3e7be66a227a13c2dd79",
+      "status": "already-clean"
+    },
+    "r-cs60-concealed-hinge-2.webp": {
+      "source": "b3b198f4be4fbc4fd03909bf64003e03c8ed99e6f2862f701d18a9a3d7791b5d",
+      "status": "already-clean"
+    },
+    "r-cs60-concealed-hinge.webp": {
+      "source": "eb1202b63391a730d91d8ec2d3e2d857ec280b0fcdb2d4a67dd391efbf820009",
+      "status": "already-clean"
+    },
+    "r-cs80-concealed-hinge-2.webp": {
+      "source": "0e5cd6a84a1423a1fc8da887d5fe910c77235cbf8732c05fd726d9788def826f",
+      "status": "already-clean"
+    },
+    "r-cs80-concealed-hinge.webp": {
+      "source": "e6ee9517e83c1d1bbf9f28d8087671026938eadd7c778e4ef64a24e277cc3997",
+      "status": "already-clean"
+    },
+    "r-cs80x-concealed-hinge-2.webp": {
+      "source": "14899f3ee90b6c9040b370d693dc757006decdb5b3c1762beb8e6a637ba25573",
+      "status": "already-clean"
+    },
+    "r-cs80x-concealed-hinge.webp": {
+      "source": "3783d330c889171ef812c0a4248f3df7655d5853619a32f8de0e4607f8e76ae8",
+      "status": "already-clean"
+    },
+    "ry100-concealed-hinge-2.webp": {
+      "source": "add370bc73a137edb249e82e6e2360d0ba76435c441192c2057913f046c7489d",
+      "status": "already-clean"
+    },
+    "ry100-concealed-hinge.webp": {
+      "source": "57f16462b745126d21137dc577370da27979aa58063437534effd22800d89b91",
+      "status": "already-clean"
+    },
+    "ry120-concealed-hinge-2.webp": {
+      "source": "028a9840c7432b297c9914e40ed351a2516447586c59c3e53fef34824aa5f307",
+      "status": "already-clean"
+    },
+    "ry120-concealed-hinge.webp": {
+      "source": "dcb30b0595c875147753b37a51122188defc5855af425fc63a2218cb127341dd",
+      "status": "already-clean"
+    },
+    "ry140-concealed-hinge-2.webp": {
+      "source": "3a29029691ca7f5ad7d5c1388e7e0215926c9197ddad41bd785829aaea6a5781",
+      "status": "already-clean"
+    },
+    "ry140-concealed-hinge.webp": {
+      "source": "a72fd51baafa0b7b122a7aea843bd98a5998b883fd7abfffc4f1a45744d865af",
+      "status": "already-clean"
+    },
+    "ry150-concealed-hinge-2.webp": {
+      "source": "0b56bdf294520796cd77d63dbd938dff824a83186fcfd51345b39c8e8797dd89",
+      "status": "already-clean"
+    },
+    "ry150-concealed-hinge.webp": {
+      "source": "99cbcaeac156e4d6ddffd84336e2bd7cd0f9b8981e43de4b8726cb717451ac9a",
+      "status": "already-clean"
+    },
+    "ry177-concealed-hinge-2.webp": {
+      "source": "8b7e51fde49299b6acbed65dc56df9138ab129bd33ec05d039bd8a8456ef3499",
+      "status": "already-clean"
+    },
+    "ry177-concealed-hinge.webp": {
+      "source": "10b4a4190aae0bc6b6331e838c4a023a94c8d83db0aff8571106ba25edda1c06",
+      "status": "already-clean"
+    },
+    "ry80-concealed-hinge-2.webp": {
+      "source": "bf9d569516e8a8d2911dd0990ba2582dea77cabb51a2a76cb427f1b20213f18f",
+      "status": "already-clean"
+    },
+    "ry80-concealed-hinge.webp": {
+      "source": "ce112f432634cb8aec197c935aabf06b20a78afca8421de1c935bc93df0f2dab",
+      "status": "already-clean"
+    },
+    "ry80j-concealed-hinge-2.webp": {
+      "source": "ed5997de7cc048c83ace49d4c001030cc107e88e4e4ad8c42c811fd4942c95ba",
+      "status": "already-clean"
+    },
+    "ry80j-concealed-hinge.webp": {
+      "source": "f789d0efa77592336d228658fcd080ec8d0e166b51ed84aed174410927af19f3",
       "status": "already-clean"
     },
     "s02-cp-sliding-hook-lock-2.webp": {

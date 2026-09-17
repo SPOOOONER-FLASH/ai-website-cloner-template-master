@@ -1,0 +1,83 @@
+{
+  "model": "RY120",
+  "slug": "ry120-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "隐藏铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304/316L pull handle.",
+  "specs": [
+    {
+      "label": "Size",
+      "value": "30x160mm"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "120kg"
+    },
+    {
+      "label": "Minimum door thickness",
+      "value": "40mm"
+    },
+    {
+      "label": "Maximum door width",
+      "value": "1000mm"
+    },
+    {
+      "label": "Milling cutter diameter",
+      "value": "Ø30mm"
+    },
+    {
+      "label": "Routing length",
+      "value": "160&125mm"
+    },
+    {
+      "label": "Routing depth",
+      "value": "10&32.5mm"
+    },
+    {
+      "label": "Adjustment",
+      "value": "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm"
+    },
+    {
+      "label": "Opening angle",
+      "value": "180°"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304/316L"
+    }
+  ],
+  "material": "Stainless Steel 304/316L",
+  "finishes": [
+    "Sandblasted and Brushed",
+    "Matt Black",
+    "Bronze-green",
+    "PVD High-gloss Gold",
+    "Gunpowder Residue",
+    "PVD Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/ry120-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "RY120 Concealed Hinge"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/ry120-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "RY120 Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "RY120 Concealed Hinge | RAYEN",
+  "seoDescription": "Stainless Steel 304/316L pull handle."
+}

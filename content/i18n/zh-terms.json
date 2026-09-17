@@ -299,7 +299,15 @@
     "Length bands": "长度分档",
     "Bearings": "轴承数",
     "Leaf size": "页片尺寸",
-    "Knuckle diameter": "轴筒直径"
+    "Knuckle diameter": "轴筒直径",
+    "Maximum load capacity (2 hinges)": "两个铰链最大承重",
+    "Minimum door thickness": "门扇最小厚度",
+    "Maximum door width": "门扇最大宽度",
+    "Milling cutter diameter": "铣刀槽切直径",
+    "Routing length": "开槽长度",
+    "Routing depth": "开槽深度",
+    "Adjustment": "可调范围",
+    "Opening angle": "开启角度"
   },
   "productNames": {
     "Bathroom Accessories": "浴室配件",
@@ -361,7 +369,8 @@
     "Panic Exit Device Trim": "逃生推杠外装置",
     "Panic Exit Device Lock Case": "逃生推杠锁体",
     "Door Knob": "旋钮锁",
-    "Ball Bearing Hinge": "轴承合页"
+    "Ball Bearing Hinge": "轴承合页",
+    "Concealed Hinge": "隐藏铰链"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -456,7 +465,14 @@
     "Copper Construction": "红铜结构",
     "Available": "可选",
     "Euro profile": "欧标锁芯",
-    "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.": "304 不锈钢电镀，用于逃生推杠"
+    "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.": "304 不锈钢电镀，用于逃生推杠",
+    "Up and down: ±2.5mm; Left and right: ±1.5mm; Front and back: ±1.0mm": "上下 ±2.5mm / 左右 ±1.5mm / 前后 ±1.0mm",
+    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±1.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±1.0mm",
+    "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm": "上下 ±3.0mm / 左右 ±3.0mm / 前后 ±1.0mm",
+    "Up and down: ±1.5mm; Front and back: ±1.5mm": "上下 ±1.5mm / 前后 ±1.5mm（二维）",
+    "Up and down: ±2.5mm; Left and right: ±2.0mm; Front and back: ±2.5mm": "上下 ±2.5mm / 左右 ±2.0mm / 前后 ±2.5mm",
+    "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm": "上下 ±3.0mm / 左右 +3.5/-2.0mm / 前后 ±1.5mm",
+    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±2.0mm"
   },
   "tokens": [
     [
@@ -1258,6 +1274,30 @@
     [
       "Toffee Gold",
       "太妃金"
+    ],
+    [
+      "Stainless Steel 304/316L",
+      "304/316L 不锈钢"
+    ],
+    [
+      "Sandblasted and Brushed",
+      "不锈钢砂光拉丝色"
+    ],
+    [
+      "Bronze-green",
+      "青古铜"
+    ],
+    [
+      "PVD High-gloss Gold",
+      "PVD 亮光金"
+    ],
+    [
+      "Gunpowder Residue",
+      "枪灰"
+    ],
+    [
+      "PVD Gold",
+      "PVD 金"
     ]
   ]
 }

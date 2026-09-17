@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4404,
+  "count": 4446,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -91742,6 +91742,762 @@
       },
       "sourceSha256": "15761c7c809ee6fba4729029b2ea6e27c6094128958b92ed684836b775d165ed",
       "outputSha256": "a057cd41f53fef3711420059fe73c5efdc9a193ca194bc4d8738cbc2c0aa5646"
+    },
+    {
+      "source": "public/images/products/r-cc120j-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cc120j-concealed-hinge-2.webp",
+      "width": 1203,
+      "height": 1203,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "43d427f48e26812b7c4171ed90b05f962b5db8ae6c610a24e1b690773a76dae8",
+      "outputSha256": "c41a51494b19704e41ee4372e20e3966809357de1ccf6d431cbe494a9c4a3f39"
+    },
+    {
+      "source": "public/images/products/r-cc120j-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cc120j-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e396e3fff3ac61905dfa18bdd18b96efce4512ff1df5346b8d6723e83493652f",
+      "outputSha256": "dfaab477218e57b9706b47e64163d5693b3f6fc3babfee41ba2399f6eadff36d"
+    },
+    {
+      "source": "public/images/products/r-cc200-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cc200-concealed-hinge-2.webp",
+      "width": 1299,
+      "height": 1299,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2febb1070477d3d641e856861dcb3f5d4b6c928e0628c980a4ac1919d206326b",
+      "outputSha256": "85dc7266a77fa644f9f3d1fd3c22ebe68825624c18f52dcd4484b320e8da6058"
+    },
+    {
+      "source": "public/images/products/r-cc200-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cc200-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b27439a559d541f3c5e2d19ccf20675e180a9721c67b1dc21439400d8b706080",
+      "outputSha256": "571b2a2c72db9d78cd8ca5bd82afe0aa5477db1e62ede6955c2fa8d5c1fa3593"
+    },
+    {
+      "source": "public/images/products/r-cc200j-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cc200j-concealed-hinge-2.webp",
+      "width": 1299,
+      "height": 1299,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ff6ab153a6808cfb107b9378fa199a5f2e2c096e725e9224ba063dc1947deac1",
+      "outputSha256": "91a22a1d39467c0fb87ba98c8638c87fb5b571ba9f8d63939e1a7bde34de2574"
+    },
+    {
+      "source": "public/images/products/r-cc200j-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cc200j-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fd1780e68fdf3f03320e2f4ae97765a420f23112b498e2d70498c8b491e89d07",
+      "outputSha256": "34d79668a3bab5b09d8f5fadfd499ac6ca37021a556c8c9f1652ef99f1f1e453"
+    },
+    {
+      "source": "public/images/products/r-cc300-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cc300-concealed-hinge-2.webp",
+      "width": 1205,
+      "height": 1205,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c51e17008c402c16cb541da7c0e5f9ac52604877ff9bf0b6c4176a91672b68b5",
+      "outputSha256": "b927266cf016df396b1d3aaff14dd9112ec9cb1ab705cc456f0d4a2cfe901665"
+    },
+    {
+      "source": "public/images/products/r-cc300-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cc300-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "190296e871e828546d0ab920b1b64f9aeeadaff332da2d6d1d48a092bde1c969",
+      "outputSha256": "4b4cfd967476bd42ccf1dac293baa0deb5280a5d6c165d9ad66d3eed7e6d7573"
+    },
+    {
+      "source": "public/images/products/r-cf120-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cf120-concealed-hinge-2.webp",
+      "width": 1152,
+      "height": 1152,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bb98ce7b22ee8bb4771ef3a50238f1a0d55f25a85afa53003e6196335ff0d745",
+      "outputSha256": "4a90c82b68dd48d2e8876d486b5a158f42929a7fab1509957cabcf1315909c04"
+    },
+    {
+      "source": "public/images/products/r-cf120-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cf120-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c558626015ecd85c4e89e11db565a385c5b81a4f7a1bb93e50441522a730aa52",
+      "outputSha256": "604ac20cebb2512a0bb7947993fb902acf88a26f221a25739b84706a081ce27c"
+    },
+    {
+      "source": "public/images/products/r-cs100-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs100-concealed-hinge-2.webp",
+      "width": 1213,
+      "height": 1213,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6859ea7793764bd3c81f9dfe8ffc996b9e7c02287420c5747f6d94b132cdf279",
+      "outputSha256": "eb75b3604e9116289f113d72caec29b5de7d41b1925b4966438fc25c38b8f625"
+    },
+    {
+      "source": "public/images/products/r-cs100-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs100-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "048fa06aa666672e954319f15015d2e46e7a9f2776886e046ffbd3ba59b67615",
+      "outputSha256": "cc84bb0032d1386fe974f30d61752752cbac5c3458161a855503b86f958c710d"
+    },
+    {
+      "source": "public/images/products/r-cs110-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs110-concealed-hinge-2.webp",
+      "width": 1238,
+      "height": 1238,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a9a9208f6e8aef3e96f8c0c7726535637f4647ea4f17b6e0cc419eb0d00178a1",
+      "outputSha256": "529f324214d866282938fc95cf719a8bd09640f2e7125f3001df5c935758471f"
+    },
+    {
+      "source": "public/images/products/r-cs110-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs110-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e69b01fd4fc3137ef7e5d24218823f5383f4aa2e8f971923d1f44d1dd58bd29",
+      "outputSha256": "6b58501d52157178c603fb4056c4f3bbc8e75908597b26e289a11029f626c3e7"
+    },
+    {
+      "source": "public/images/products/r-cs110x-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs110x-concealed-hinge-2.webp",
+      "width": 1137,
+      "height": 1137,
+      "geometry": {
+        "margin": 28,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6f0a2eb9c99883699e19b7f35a7fbcb827a94ae8d23eef9e07734b752f7fdf78",
+      "outputSha256": "cfd9cb851338cfb6aa6e1044fb21fafd476249e3f8c9ae8f76b3013d0d979c8d"
+    },
+    {
+      "source": "public/images/products/r-cs110x-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs110x-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d728b4d2db4c55f750e198049f2ea5fdafdd4552eae2e29726296c16acf956fa",
+      "outputSha256": "0558a8b98e63a077ae8167267f590aa4b456e31ef0ef8e34c3c7cfed0d7ae04c"
+    },
+    {
+      "source": "public/images/products/r-cs30-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs30-concealed-hinge-2.webp",
+      "width": 1167,
+      "height": 1167,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e1713863b8f96cda075bea19bc4e3fa8a590ff7ec5f7895629eef971e44af857",
+      "outputSha256": "697418f4340f636c60ab9ece278bd8127be71e8e42dffa8b740ac700b0305d91"
+    },
+    {
+      "source": "public/images/products/r-cs30-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs30-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "383647b397732ab76ad7bff3fe4dd24c3c36e1044b01de8abe81384c77d8a118",
+      "outputSha256": "5d3796c747f3c314ec021cea9f1b8888c8f36f853f9835bcfb2b60b397e05fce"
+    },
+    {
+      "source": "public/images/products/r-cs40-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs40-concealed-hinge-2.webp",
+      "width": 1177,
+      "height": 1177,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bedbe8df2e0062e26c7063bf403624b226d7ff3750fc8c699d5c43a6deb2c1f6",
+      "outputSha256": "b926497ef16c06c4ae8d14f01ec97367d63e2086fe69131613c0524f6b416b20"
+    },
+    {
+      "source": "public/images/products/r-cs40-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs40-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4797c5e9b88db1bf3ed84d8179cafc65b35d80bd89ab6aa94ce772d446e9c56e",
+      "outputSha256": "b62f19dca59fc820587e7e9d957d4a6926d035dd6985208112eee7acd58682bf"
+    },
+    {
+      "source": "public/images/products/r-cs40x-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs40x-concealed-hinge-2.webp",
+      "width": 1188,
+      "height": 1188,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c785637aebe076639f83e40d197bfe21bfa5ce1a745cefbd41d792ca92ec9e2b",
+      "outputSha256": "79a7f201c7f9ad211fd5a26dfaf70933cf16c87256f7a9cd074d22b33e406c0c"
+    },
+    {
+      "source": "public/images/products/r-cs40x-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs40x-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "53d5f7b1416fc969b3b65f88250a9bf2f4fad47b0a6d3e7be66a227a13c2dd79",
+      "outputSha256": "e812c02dd467f681d6b4a1e02035ba764412b94110f44c8ac0fe5d5f0b49f2c1"
+    },
+    {
+      "source": "public/images/products/r-cs60-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs60-concealed-hinge-2.webp",
+      "width": 1197,
+      "height": 1197,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b3b198f4be4fbc4fd03909bf64003e03c8ed99e6f2862f701d18a9a3d7791b5d",
+      "outputSha256": "f66f839612b3b18e625164511f84d4a222c3e48bead86ed5a58b91e7dc44a6a8"
+    },
+    {
+      "source": "public/images/products/r-cs60-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs60-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "eb1202b63391a730d91d8ec2d3e2d857ec280b0fcdb2d4a67dd391efbf820009",
+      "outputSha256": "97787a7daa0313faa812853d5d6d9359cb5ba746c1e4e95bc25cdc1fd1bcf036"
+    },
+    {
+      "source": "public/images/products/r-cs80-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs80-concealed-hinge-2.webp",
+      "width": 1146,
+      "height": 1146,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0e5cd6a84a1423a1fc8da887d5fe910c77235cbf8732c05fd726d9788def826f",
+      "outputSha256": "7c0e6450c4455b618139841ac6d6d680c1d23c468dd1d44a45605d00260989da"
+    },
+    {
+      "source": "public/images/products/r-cs80-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs80-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e6ee9517e83c1d1bbf9f28d8087671026938eadd7c778e4ef64a24e277cc3997",
+      "outputSha256": "d08681950a623c25933419ab0875cf9c967b3c693d463c8df7273928ecf2ab5c"
+    },
+    {
+      "source": "public/images/products/r-cs80x-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/r-cs80x-concealed-hinge-2.webp",
+      "width": 1176,
+      "height": 1176,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "14899f3ee90b6c9040b370d693dc757006decdb5b3c1762beb8e6a637ba25573",
+      "outputSha256": "f1e27f20588698e07080da42de9e3af058ec489d15fb4a26eaa391339692961a"
+    },
+    {
+      "source": "public/images/products/r-cs80x-concealed-hinge.webp",
+      "output": "public/images/products-hyde/r-cs80x-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3783d330c889171ef812c0a4248f3df7655d5853619a32f8de0e4607f8e76ae8",
+      "outputSha256": "c3ad32330bcb5ac9075a99f88deec79c87129d3ac995197e36ab3bf1b29d2a52"
+    },
+    {
+      "source": "public/images/products/ry100-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry100-concealed-hinge-2.webp",
+      "width": 1145,
+      "height": 1145,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "add370bc73a137edb249e82e6e2360d0ba76435c441192c2057913f046c7489d",
+      "outputSha256": "0455e71333c3871a10ab640d3f56987498b8ef14cecbe301e57fb0e4ce2e6a13"
+    },
+    {
+      "source": "public/images/products/ry100-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry100-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "57f16462b745126d21137dc577370da27979aa58063437534effd22800d89b91",
+      "outputSha256": "751f4664de081eacc45f5c503ec512f3ca7cd0b232b3a073500c8673ca8f0d17"
+    },
+    {
+      "source": "public/images/products/ry120-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry120-concealed-hinge-2.webp",
+      "width": 1177,
+      "height": 1177,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "028a9840c7432b297c9914e40ed351a2516447586c59c3e53fef34824aa5f307",
+      "outputSha256": "8c4cd8e1a247a9131b034f67321b68d0b19207c446f35d049203891338c2cce7"
+    },
+    {
+      "source": "public/images/products/ry120-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry120-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "dcb30b0595c875147753b37a51122188defc5855af425fc63a2218cb127341dd",
+      "outputSha256": "9eb76ac71d5e7b374b9d78b8a5221c3996b11c384e861ad127737ce6e923ef9c"
+    },
+    {
+      "source": "public/images/products/ry140-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry140-concealed-hinge-2.webp",
+      "width": 1199,
+      "height": 1199,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3a29029691ca7f5ad7d5c1388e7e0215926c9197ddad41bd785829aaea6a5781",
+      "outputSha256": "d0ca05fdf05dbd3837ebc4075e017a3e6720a2e6b2de7d9540879030cea91295"
+    },
+    {
+      "source": "public/images/products/ry140-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry140-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a72fd51baafa0b7b122a7aea843bd98a5998b883fd7abfffc4f1a45744d865af",
+      "outputSha256": "6debaf8b707b10b5d714940285766fed2c24ad63021d140ae083b818e6659fdb"
+    },
+    {
+      "source": "public/images/products/ry150-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry150-concealed-hinge-2.webp",
+      "width": 1250,
+      "height": 1250,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0b56bdf294520796cd77d63dbd938dff824a83186fcfd51345b39c8e8797dd89",
+      "outputSha256": "e87764b84b65a8eb4f9016a583832a1a65ee6af61cacf923f0de4af8e7a4af5d"
+    },
+    {
+      "source": "public/images/products/ry150-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry150-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "99cbcaeac156e4d6ddffd84336e2bd7cd0f9b8981e43de4b8726cb717451ac9a",
+      "outputSha256": "819ddbf2721191f740d9af846ce32d42070e7528cbf5f68e2656fcbf258bff89"
+    },
+    {
+      "source": "public/images/products/ry177-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry177-concealed-hinge-2.webp",
+      "width": 1220,
+      "height": 1220,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8b7e51fde49299b6acbed65dc56df9138ab129bd33ec05d039bd8a8456ef3499",
+      "outputSha256": "feb3b66abe8a9830f9e148e947529ca60687db7ec2ab1d178225c446c8e84902"
+    },
+    {
+      "source": "public/images/products/ry177-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry177-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "10b4a4190aae0bc6b6331e838c4a023a94c8d83db0aff8571106ba25edda1c06",
+      "outputSha256": "49e6a774269c83d0226a534f71b13598813aa882861bdbd05cde1a0d29f48a25"
+    },
+    {
+      "source": "public/images/products/ry80-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry80-concealed-hinge-2.webp",
+      "width": 1149,
+      "height": 1149,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bf9d569516e8a8d2911dd0990ba2582dea77cabb51a2a76cb427f1b20213f18f",
+      "outputSha256": "02804932d98438d97a05918f32fa362ff342d3b05028b136800300f14c563ca0"
+    },
+    {
+      "source": "public/images/products/ry80-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry80-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ce112f432634cb8aec197c935aabf06b20a78afca8421de1c935bc93df0f2dab",
+      "outputSha256": "6e3457d5b3056966236e7634f2f5c283ce0305a9030be2441d444f0f6548a3d1"
+    },
+    {
+      "source": "public/images/products/ry80j-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/ry80j-concealed-hinge-2.webp",
+      "width": 1206,
+      "height": 1206,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ed5997de7cc048c83ace49d4c001030cc107e88e4e4ad8c42c811fd4942c95ba",
+      "outputSha256": "843e98406c203cbed58c5479f330a1bbbec74334908a8c6e87fbb83132e08b68"
+    },
+    {
+      "source": "public/images/products/ry80j-concealed-hinge.webp",
+      "output": "public/images/products-hyde/ry80j-concealed-hinge.webp",
+      "width": 1301,
+      "height": 1301,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f789d0efa77592336d228658fcd080ec8d0e166b51ed84aed174410927af19f3",
+      "outputSha256": "5539234dae2970bde41d61b1be3679c5f796c49007a4f1bbdf8a6473ce06101c"
     },
     {
       "source": "public/images/products/s02-cp-sliding-hook-lock-2.webp",

@@ -1,0 +1,83 @@
+{
+  "model": "RY140",
+  "slug": "ry140-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "隐藏铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304/316L pull handle.",
+  "specs": [
+    {
+      "label": "Size",
+      "value": "30x140mm"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "120kg"
+    },
+    {
+      "label": "Minimum door thickness",
+      "value": "40mm"
+    },
+    {
+      "label": "Maximum door width",
+      "value": "1000mm"
+    },
+    {
+      "label": "Milling cutter diameter",
+      "value": "Ø30mm"
+    },
+    {
+      "label": "Routing length",
+      "value": "99&140mm"
+    },
+    {
+      "label": "Routing depth",
+      "value": "7.5&27mm"
+    },
+    {
+      "label": "Adjustment",
+      "value": "Up and down: ±2.5mm; Left and right: ±1.5mm; Front and back: ±1.0mm"
+    },
+    {
+      "label": "Opening angle",
+      "value": "180°"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304/316L"
+    }
+  ],
+  "material": "Stainless Steel 304/316L",
+  "finishes": [
+    "Sandblasted and Brushed",
+    "Matt Black",
+    "Bronze-green",
+    "PVD High-gloss Gold",
+    "Gunpowder Residue",
+    "PVD Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/ry140-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "RY140 Concealed Hinge"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/ry140-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "RY140 Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "RY140 Concealed Hinge | RAYEN",
+  "seoDescription": "Stainless Steel 304/316L pull handle."
+}

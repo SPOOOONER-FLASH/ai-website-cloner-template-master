@@ -1,0 +1,79 @@
+{
+  "model": "R-CS110",
+  "slug": "r-cs110-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "隐藏铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304/316L pull handle.",
+  "specs": [
+    {
+      "label": "Size",
+      "value": "35x140mm"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "110kg"
+    },
+    {
+      "label": "Minimum door thickness",
+      "value": "45mm"
+    },
+    {
+      "label": "Maximum door width",
+      "value": "1000mm"
+    },
+    {
+      "label": "Milling cutter diameter",
+      "value": "Ø35mm"
+    },
+    {
+      "label": "Routing length",
+      "value": "140&76mm"
+    },
+    {
+      "label": "Routing depth",
+      "value": "8.5&38mm"
+    },
+    {
+      "label": "Opening angle",
+      "value": "180°"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304/316L"
+    }
+  ],
+  "material": "Stainless Steel 304/316L",
+  "finishes": [
+    "Sandblasted and Brushed",
+    "Matt Black",
+    "Bronze-green",
+    "PVD High-gloss Gold",
+    "Gunpowder Residue",
+    "PVD Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/r-cs110-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "R-CS110 Concealed Hinge"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/r-cs110-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "R-CS110 Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "R-CS110 Concealed Hinge | RAYEN",
+  "seoDescription": "Stainless Steel 304/316L pull handle."
+}

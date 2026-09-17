@@ -1,0 +1,83 @@
+{
+  "model": "R-CC200",
+  "slug": "r-cc200-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "隐藏铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304/316L pull handle.",
+  "specs": [
+    {
+      "label": "Size",
+      "value": "32x240mm"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "200kg"
+    },
+    {
+      "label": "Minimum door thickness",
+      "value": "45mm"
+    },
+    {
+      "label": "Maximum door width",
+      "value": "1000mm"
+    },
+    {
+      "label": "Milling cutter diameter",
+      "value": "Ø32mm"
+    },
+    {
+      "label": "Routing length",
+      "value": "186&240mm"
+    },
+    {
+      "label": "Routing depth",
+      "value": "10&45.5mm"
+    },
+    {
+      "label": "Adjustment",
+      "value": "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm"
+    },
+    {
+      "label": "Opening angle",
+      "value": "180°"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304/316L"
+    }
+  ],
+  "material": "Stainless Steel 304/316L",
+  "finishes": [
+    "Sandblasted and Brushed",
+    "Matt Black",
+    "Bronze-green",
+    "PVD High-gloss Gold",
+    "Gunpowder Residue",
+    "PVD Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/r-cc200-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "R-CC200 Concealed Hinge"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/r-cc200-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "R-CC200 Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "R-CC200 Concealed Hinge | RAYEN",
+  "seoDescription": "Stainless Steel 304/316L pull handle."
+}
