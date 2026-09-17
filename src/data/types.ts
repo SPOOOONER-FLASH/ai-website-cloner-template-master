@@ -281,6 +281,7 @@ export interface Project {
   /** Building type, e.g. "Office", "Library", "Hotel". Drives listing filters. */
   buildingType: string;
   buildingTypeEs?: string;
+  buildingTypePt?: string;
   /** Architect or specifier credit. */
   architect?: string;
   /** One or two sentences for the listing card. */
