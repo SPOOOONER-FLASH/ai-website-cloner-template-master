@@ -6,14 +6,14 @@ import { HARDWARE_TERMS } from "@/data/hardware-terms";
 import { modelsWithGlossaryTerm } from "@/lib/hardware-term-usage";
 import { pageMetadata } from "@/lib/seo";
 
-/** The Spanish mirror of /glossary. Path stays in English, as every /es route does. */
+/** The Portuguese mirror of /glossary. Path stays in English, as every /pt route does. */
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/glossary",
   locale: "pt",
   title: "Glossário de ferragens de porta",
   description:
-    "Distância à testa, distância entre eixos, mão, chassi, quadrado, curso do trinco e furo transversal — os termos das fichas técnicas da Canton Hyland, definidos e com o que custa enganar-se em cada um.",
+    "Backset, distância entre eixos, mão da porta, chassi, eixo quadrado, curso da trava e furo passante — os termos das nossas fichas técnicas, definidos e com o que custa errar em cada um.",
 });
 
 export default function GlossaryPt() {
@@ -29,21 +29,20 @@ export default function GlossaryPt() {
               Referência
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              Las palabras de nuestras fichas técnicas, y lo que cuesta equivocarse en cada
-              una.
+              As palavras das nossas fichas técnicas, e o que custa errar em cada uma.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Estos {HARDWARE_TERMS.length} términos no salen de un diccionario del sector. Son
-              las etiquetas de especificación que más aparecen en nuestras propias fichas
-              publicadas, contadas — así que todas son campos que encontrará en esta web, y la
-              cifra que acompaña a cada entrada es cuántos modelos la declaran.
+              Estes {HARDWARE_TERMS.length} termos não saíram de um dicionário do setor. São os
+              rótulos de especificação que mais aparecem nas nossas próprias fichas
+              publicadas, contados — ou seja, todos são campos que você vai encontrar neste
+              site, e o número ao lado de cada entrada é quantos modelos o declaram.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              {modelsWithGlossaryTerm} modelos publicados declaran al menos uno. Cada entrada da
-              primero la definición y después la consecuencia, porque la consecuencia es la
-              mitad que le dice si este es el campo en el que está a punto de equivocarse.
+              {modelsWithGlossaryTerm} modelos publicados declaram pelo menos um. Cada entrada
+              traz primeiro a definição e depois a consequência, porque a consequência é a
+              metade que diz se este é o campo em que você está prestes a errar.
             </p>
           </div>
         </section>
@@ -56,16 +55,16 @@ export default function GlossaryPt() {
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Envíenoslo. Si es una palabra que aparece en alguna de nuestras páginas y no está
-              aquí, el problema es de esta página y no de la palabra, y preferimos arreglar la
-              página. Las otras dos referencias contestan las preguntas que vienen después:
-              cómo se construyen nuestros códigos de pedido y qué ha pasado con un número de
-              modelo que ya no encuentra página.
+              Mande para nós. Se é uma palavra que aparece em alguma das nossas páginas e não
+              está aqui, o problema é desta página e não da palavra, e preferimos consertar a
+              página. As outras duas referências respondem às perguntas que vêm depois: como
+              os nossos códigos de pedido são montados e o que aconteceu com um número de
+              modelo que já não encontra página.
             </p>
             <div className="mt-24 flex flex-wrap gap-x-32 gap-y-12">
               <ArrowLink href="/pt/finishes/">Códigos de pedido e acabamentos</ArrowLink>
               <ArrowLink href="/pt/model-lookup/">Procurar um número de modelo</ArrowLink>
-              <ArrowLink href="/pt/contact/">Consultarnos</ArrowLink>
+              <ArrowLink href="/pt/contact/">Fale conosco</ArrowLink>
             </div>
           </div>
         </section>

@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Claude pt-full | src/app/pt/**, src/components/site/menu-experience.ts, src/data/hardware-terms.ts, content/faq.json, out/, out-rayen/ | 葡语全通路：术语表与 FAQ 葡语化、清掉 /pt 上的西班牙语残留、菜单不再把读者踢回英文；重出构建 | 2026-09-17 |
 | Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
 Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
 `/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /

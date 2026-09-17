@@ -115,12 +115,12 @@ const COPY = {
     seeProduct: "Abrir a ficha do produto",
     quote: "Pedir orçamento desta configuração",
     quoteHelp:
-      "O link leva as suas escolhas, para que a equipa de exportação veja a mesma configuração que você.",
+      "O link leva as suas escolhas, para que a equipe de exportação veja a mesma configuração que você.",
     yourChoices: "A sua seleção",
     allProducts: "Todos os modelos do catálogo",
     step: "Passo",
     of: "de",
-    noPhoto: "A fotografia deste modelo está a ser preparada.",
+    noPhoto: "A fotografia deste modelo está sendo preparada.",
     schedule: "A sua especificação até aqui",
     scheduleHelp:
       "Esta é a linha que vai num quadro de ferragens. Preenche-se à medida que responde, e pode copiá-la tal como está.",

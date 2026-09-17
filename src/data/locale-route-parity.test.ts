@@ -101,3 +101,112 @@ test("every declared Spanish mirror exists on disk", () => {
 
   assert.deepEqual(missing, [], "declared Spanish mirrors with no src/app/es route");
 });
+
+/**
+ * A localised page must not link out of its own tree when the mirror exists.
+ *
+ * This is the same defect as above seen from the other end. The routes can all exist and
+ * the reader still be ejected, because the LINK points at the English path: on 2026-09-17
+ * the Portuguese header offered "Procurar produto", "Configurador", "Aplicações",
+ * "Notícias + Imprensa" and "Descarregáveis" — five Portuguese labels, five English
+ * destinations, in the one component every page renders.
+ *
+ * The rule is narrow on purpose. It fires only when the link target HAS a mirror in that
+ * locale, so /services/ and /events/ — which exist in English only — stay linkable from
+ * every tree, exactly as they are today.
+ */
+function localeHrefLeaks(locale: "es" | "pt", source: string, file: string): string[] {
+  const hasMirror = locale === "es" ? hasSpanishMirror : hasPortugueseMirror;
+  const leaks: string[] = [];
+  for (const match of source.matchAll(/href[=:]\s*["'`](\/[^"'`\s]*)/g)) {
+    const href = match[1];
+    /*
+      A dot means a file, not a route: /downloads/ is a page AND the directory the export
+      catalogue PDF sits in, and `/downloads/canton-hyland-product-catalogue-2026.pdf` is
+      the same asset in every language. Linking it from /pt/ is correct.
+    */
+    if (href.includes(".")) continue;
+    const segment = href.split("/")[1] ?? "";
+    if (!/^[a-z0-9-]+$/.test(segment)) continue;
+    if (segment === locale) continue;
+    const route = `/${segment}`;
+    if (!hasMirror(route)) continue;
+    leaks.push(`${file}: ${href} should start /${locale}${route}/`);
+  }
+  return leaks;
+}
+
+function filesUnder(dir: string): string[] {
+  const root = path.join(APP, dir);
+  if (!fs.existsSync(root)) return [];
+  const found: string[] = [];
+  const walk = (current: string) => {
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const full = path.join(current, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name.endsWith(".tsx") || entry.name.endsWith(".ts")) found.push(full);
+    }
+  };
+  walk(root);
+  return found;
+}
+
+/**
+ * The locale blocks of a shared component, by indentation.
+ *
+ * `menu-experience.ts` holds all three languages in one file, so the whole file cannot be
+ * scanned — the English block would report every English href. The blocks are two-space
+ * `en:` / `es:` / `pt:` keys, and the block ends where the brace depth returns to zero.
+ */
+function localeBlock(source: string, locale: string): string {
+  const lines = source.split("\n");
+  const start = lines.findIndex((line) => new RegExp(`^  ${locale}: \{`).test(line));
+  if (start === -1) return "";
+  let depth = 1;
+  const block: string[] = [];
+  for (const line of lines.slice(start + 1)) {
+    depth += (line.match(/[{[]/g) ?? []).length - (line.match(/[}\]]/g) ?? []).length;
+    if (depth <= 0) break;
+    block.push(line);
+  }
+  return block.join("\n");
+}
+
+const SHARED_WITH_LOCALE_BLOCKS = ["src/components/site/menu-experience.ts"];
+
+/**
+ * Single-locale data modules, scanned whole.
+ *
+ * The home page of each tree is assembled from one of these, and on 2026-09-17 the
+ * Portuguese one sent "Ver aplicações" and both application cards to /projects/ — the
+ * English tree — from the first screen of the Portuguese home page.
+ */
+const LOCALE_DATA = { es: ["src/data/home-es.ts"], pt: ["src/data/home-pt.ts"] } as const;
+
+for (const locale of ["es", "pt"] as const) {
+  test(`${locale} pages link inside the ${locale} tree`, () => {
+    const leaks: string[] = [];
+
+    for (const file of filesUnder(locale)) {
+      leaks.push(
+        ...localeHrefLeaks(locale, fs.readFileSync(file, "utf8"), path.relative(process.cwd(), file)),
+      );
+    }
+
+    for (const file of LOCALE_DATA[locale]) {
+      leaks.push(...localeHrefLeaks(locale, fs.readFileSync(file, "utf8"), file));
+    }
+
+    for (const shared of SHARED_WITH_LOCALE_BLOCKS) {
+      const block = localeBlock(fs.readFileSync(shared, "utf8"), locale);
+      leaks.push(...localeHrefLeaks(locale, block, `${shared} (${locale} block)`));
+    }
+
+    assert.deepEqual(
+      leaks,
+      [],
+      `these links drop the reader out of /${locale}/ and into English for the rest of ` +
+        `the visit — the mirror exists, the link just does not use it`,
+    );
+  });
+}

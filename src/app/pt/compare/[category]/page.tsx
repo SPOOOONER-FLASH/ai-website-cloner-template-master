@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     enPath: `/compare/${category.slug}`,
     locale: "pt",
     title: withQualifier.length <= 46 ? withQualifier : `Comparar ${name}`,
-    description: `${count} ${name.toLowerCase()} comparados en las especificaciones que los distinguen. Prazo a partir de 30 dias, fabricación en Guangdong, China.`,
+    description: `${count} ${name.toLowerCase()} comparados nas especificações que os distinguem. Prazo a partir de 30 dias, fabricação em Guangdong, China.`,
     image: category.image.src,
     imageAlt: category.image.label,
   });
@@ -98,18 +98,18 @@ export default async function CompararPage({ params }: ComparePageProps) {
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">
-                Las especificaciones que distinguen los {products.length} modelos de esta
-                gama, en una sola tabla.
+                As especificações que distinguem os {products.length} modelos desta linha,
+                numa tabela só.
               </p>
               <p className="mt-24 text-c1 text-ink-secondary">
                 Una celda vacía significa que aún no publicamos ese dato para ese modelo,
-                no que el modelo carezca de él —consúltelo al equipo de exportación y lo
-                confirmamos contra el plano de producción. </p>
+                e não que o modelo não o tenha — pergunte à equipe de exportação e
+                confirmamos contra o desenho de produção. </p>
               <Link
                 href={`/pt/products/${category.slug}/`}
                 className="short-marker short-marker-compact mt-24 inline-block text-c1 text-brand hover:text-brand-hover"
               >
-                Ver los {products.length} {name.toLowerCase()}
+                Ver os {products.length} {name.toLowerCase()}
               </Link>
             </div>
           </div>

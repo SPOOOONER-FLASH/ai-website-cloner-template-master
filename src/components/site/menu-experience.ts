@@ -138,16 +138,16 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
       {
         label: "Sei o modelo",
         detail: "Percorra e filtre os modelos publicados",
-        href: "/product-finder/",
+        href: "/pt/product-finder/",
       },
       {
         label: "Sei a porta",
         detail: "Escolha um vão e monte o conjunto de ferragens",
-        href: "/configurator/",
+        href: "/pt/configurator/",
       },
       {
         label: "Preciso de um engenheiro",
-        detail: "Envie o quadro de ferragens à nossa equipa de exportação",
+        detail: "Envie o quadro de ferragens à nossa equipe de exportação",
         href: "/pt/contact/",
       },
     ],
@@ -156,8 +156,8 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
         title: "Explorar",
         links: [
           { label: "Produtos", href: "/pt/products/" },
-          { label: "Aplicações", href: "/projects/" },
-          { label: "Notícias + Imprensa", href: "/news/" },
+          { label: "Aplicações", href: "/pt/projects/" },
+          { label: "Notícias + Imprensa", href: "/pt/news/" },
         ],
       },
       {
@@ -168,13 +168,13 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
           { label: "Códigos de pedido", href: "/pt/finishes/" },
           { label: "Procurar modelo", href: "/pt/model-lookup/" },
           { label: "Glossário", href: "/pt/glossary/" },
-          { label: "Descarregáveis", href: "/downloads/" },
+          { label: "Downloads", href: "/pt/downloads/" },
           { label: "Serviços", href: "/services/" },
         ],
       },
     ],
-    exportDesk: "Equipa de exportação",
-    exportPromise: "Um único contacto, da amostra ao pedido de produção.",
+    exportDesk: "Equipe de exportação",
+    exportPromise: "Um único contato, da amostra ao pedido de produção.",
   },
 };
 
@@ -297,7 +297,7 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
   },
   pt: {
     kind: "specify-source-company",
-    eyebrow: "Rotas directas",
+    eyebrow: "Rotas diretas",
     title: "Especifique. Abasteça-se. Conheça a fábrica.",
     groups: [
       {
@@ -307,21 +307,21 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
           {
             label: "Procurar produto",
             detail: "Filtrar e comparar",
-            href: "/product-finder/",
+            href: "/pt/product-finder/",
           },
           {
             label: "Configurador",
             detail: "Montar um conjunto de ferragens",
-            href: "/configurator/",
+            href: "/pt/configurator/",
           },
         ],
       },
       {
         title: "Abastecer",
         links: [
-          { label: "Aplicações", href: "/projects/" },
+          { label: "Aplicações", href: "/pt/projects/" },
           { label: "Serviços", href: "/services/" },
-          { label: "Descarregáveis", href: "/downloads/" },
+          { label: "Downloads", href: "/pt/downloads/" },
           { label: "Certificados", href: "/pt/certifications/" },
           { label: "Códigos de pedido", href: "/pt/finishes/" },
           { label: "Procurar modelo", href: "/pt/model-lookup/" },
@@ -332,9 +332,9 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
         title: "Empresa",
         links: [
           { label: "Quem somos", href: "/pt/company/" },
-          { label: "Notícias", href: "/news/" },
+          { label: "Notícias", href: "/pt/news/" },
           { label: "Feiras", href: "/events/" },
-          { label: "Contacto", href: "/pt/contact/" },
+          { label: "Contato", href: "/pt/contact/" },
         ],
       },
     ],
@@ -342,20 +342,20 @@ const specify: Record<MenuLocale, SpecifyExperience> = {
       {
         label: "Procurar produto",
         detail: "Filtre modelos publicados por família, acabamento e tipo de porta.",
-        href: "/product-finder/",
+        href: "/pt/product-finder/",
         image: "/images/editorial/hyde-real-product-atlas.webp",
         alt: "Famílias de produtos do catálogo Canton Hyland",
       },
       {
         label: "Aplicações",
         detail: "Veja como as ferragens coordenadas respondem ao vão.",
-        href: "/projects/",
+        href: "/pt/projects/",
         image: "/images/editorial/hyde-hero-cylinder.webp",
         alt: "Fotografia de uma fechadura de empurrar e puxar do catálogo Canton Hyland",
       },
     ],
-    exportDesk: "Equipa de exportação",
-    exportPromise: "Um único contacto, da amostra ao pedido de produção.",
+    exportDesk: "Equipe de exportação",
+    exportPromise: "Um único contato, da amostra ao pedido de produção.",
   },
 };
 

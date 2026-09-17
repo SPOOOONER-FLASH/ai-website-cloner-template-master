@@ -117,7 +117,7 @@ export default function FerragensPortaCortaFogoPage() {
               <EmailLink address={ptLanding.contact.technicalEmail} />
             </p>
             <div className="pt-8">
-              <ArrowLink href="/contact/">Formulário de contacto (em inglês)</ArrowLink>
+              <ArrowLink href="/pt/contact/">Formulário de contato</ArrowLink>
             </div>
           </div>
         </section>

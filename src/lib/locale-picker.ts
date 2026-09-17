@@ -120,9 +120,9 @@ export const localePickerCopy = {
     trigger: "Escolha o seu país e idioma",
     title: "Escolha o seu país e idioma",
     languages: "Idioma",
-    contacts: "O seu contacto mais próximo",
+    contacts: "O seu contato mais próximo",
     close: "Fechar",
-    notMirrored: "esta página só existe em inglês — a ligação leva à página inicial desse idioma",
-    current: "actual",
+    notMirrored: "esta página só existe em inglês — o link leva à página inicial desse idioma",
+    current: "atual",
   },
 } as const;

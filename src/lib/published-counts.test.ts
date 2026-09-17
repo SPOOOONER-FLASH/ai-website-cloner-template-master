@@ -53,9 +53,16 @@ test("every model count written into the FAQ matches the published catalogue", (
     on the verb rather than on a bare number avoids sweeping up unrelated figures — a
     backset of 60mm or a 30-day lead time is not a model count.
   */
-  const claims = [...faq.matchAll(/(?:publish|Publicamos)\s+(\d[\d,]*)\s+(?:models|modelos)/gi)];
+  const claims = [
+    ...faq.matchAll(
+      /(?:publish|Publicamos)\s+(\d[\d,]*)\s+(?:models|modelos)/gi,
+    ),
+  ];
 
-  assert.ok(claims.length > 0, "the FAQ should state how many models we publish");
+  assert.ok(
+    claims.length > 0,
+    "the FAQ should state how many models we publish",
+  );
 
   for (const claim of claims) {
     const stated = Number(claim[1].replace(/,/g, ""));
@@ -71,10 +78,21 @@ test("every model count written into the FAQ matches the published catalogue", (
 test("the family count in the FAQ matches content/categories.json", () => {
   const faq = readFileSync("content/faq.json", "utf8");
   const raw = JSON.parse(readFileSync("content/categories.json", "utf8"));
-  const families = Array.isArray(raw) ? raw.length : (raw.categories ?? []).length;
+  const families = Array.isArray(raw)
+    ? raw.length
+    : (raw.categories ?? []).length;
 
+  /*
+    Three languages. "Publicamos N modelos" is written the same way in Spanish and in
+    Portuguese, so the model-count test above already covers both; the family noun is not
+    — "familias de producto" and "famílias de produto" differ by an accent and a letter.
+    A regex that misses one leaves that sentence unguarded, which is how a page ends up
+    quoting a family count the catalogue stopped supporting a year ago.
+  */
   const claims = [
-    ...faq.matchAll(/(\d+)\s+(?:product families|familias de producto)/gi),
+    ...faq.matchAll(
+      /(\d+)\s+(?:product families|fam[ií]lias de produc?tos?)/gi,
+    ),
   ];
   for (const claim of claims) {
     assert.equal(

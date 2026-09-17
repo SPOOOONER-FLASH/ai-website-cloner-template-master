@@ -33,7 +33,8 @@ const COPY = {
       mechanism: "Mechanism",
       ordering: "Ordering and evidence",
     },
-    models: (n: number) => (n === 1 ? "1 model states it" : `${n} models state it`),
+    models: (n: number) =>
+      n === 1 ? "1 model states it" : `${n} models state it`,
     notPublished: "a term, not a spec row",
     read: "Read more",
   },
@@ -43,7 +44,8 @@ const COPY = {
       mechanism: "Mecanismo",
       ordering: "Pedido y evidencia",
     },
-    models: (n: number) => (n === 1 ? "1 modelo la indica" : `${n} modelos la indican`),
+    models: (n: number) =>
+      n === 1 ? "1 modelo la indica" : `${n} modelos la indican`,
     notPublished: "un término, no una fila de ficha",
     read: "Leer más",
   },
@@ -53,7 +55,8 @@ const COPY = {
       mechanism: "Mecanismo",
       ordering: "Pedido e evidência",
     },
-    models: (n: number) => (n === 1 ? "1 modelo indica-a" : `${n} modelos indicam-na`),
+    models: (n: number) =>
+      n === 1 ? "1 modelo a indica" : `${n} modelos a indicam`,
     notPublished: "um termo, não uma linha de ficha",
     read: "Ler mais",
   },
@@ -61,13 +64,24 @@ const COPY = {
 
 export function HardwareTerms({ locale }: { locale: Locale }) {
   const copy = COPY[locale];
-  const es = locale === "es";
   const prefix = locale === "en" ? "" : `/${locale}`;
+  /*
+    English is the fallback, never the other translation. A Portuguese entry that quietly
+    borrowed the Spanish one would read as almost-right to a Brazilian specifier, which is
+    worse on this page than reading as foreign: the whole argument here is that we are
+    precise about words.
+  */
+  const pick = (en: string, es: string, pt: string) =>
+    locale === "es" ? es : locale === "pt" ? pt : en;
 
   return (
     <>
       {termsByGroup.map(({ group, terms }) => (
-        <section key={group} className="col-content" aria-labelledby={`group-${group}`}>
+        <section
+          key={group}
+          className="col-content"
+          aria-labelledby={`group-${group}`}
+        >
           <h2 id={`group-${group}`} className="text-h2 text-ink">
             {copy.groups[group]}
           </h2>
@@ -79,17 +93,27 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                 className="grid grid-cols gap-x gap-y-12 border-b border-line py-32 lg:py-40"
               >
                 <dt className="col-span-full lg:col-span-3 xl:col-span-6">
-                  <span className="text-h3 text-ink">{es ? term.termEs : term.term}</span>
+                  <span className="text-h3 text-ink">
+                    {pick(term.term, term.termEs, term.termPt)}
+                  </span>
                   <span className="mt-8 block text-c2 text-ink-secondary">
                     {models > 0 ? copy.models(models) : copy.notPublished}
                   </span>
                 </dt>
                 <dd className="col-span-full lg:col-span-7 lg:col-start-5 xl:col-span-14 xl:col-start-9">
                   <p className="max-w-[64ch] text-c1 text-ink">
-                    {es ? term.definitionEs : term.definition}
+                    {pick(
+                      term.definition,
+                      term.definitionEs,
+                      term.definitionPt,
+                    )}
                   </p>
                   <p className="mt-16 max-w-[64ch] text-c2 text-ink-secondary">
-                    {es ? term.consequenceEs : term.consequence}
+                    {pick(
+                      term.consequence,
+                      term.consequenceEs,
+                      term.consequencePt,
+                    )}
                   </p>
                   {term.article ? (
                     <p className="mt-16">

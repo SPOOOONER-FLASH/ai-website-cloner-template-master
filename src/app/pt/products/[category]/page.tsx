@@ -34,14 +34,14 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const name = category.namePt ?? category.name;
   const summary = category.summaryPt ?? category.summary;
   const count = getProductsByCategory(category.slug).length;
-  // "Prazo a partir de 30 dias" (confirmado por el cliente 2026-09-01) responde a la primera
-  // pregunta de cualquier comprador, y el snippet es donde la lee. Sustituye a la
-  // cláusula de mercados: ambas no caben en 165 caracteres, y una fecha de entrega pesa
-  // más que un recuento de mercados para quien decide si escribe o no.
-  const tail = `${count} modelos fabricados en Guangdong, China. Prazo a partir de 30 dias.`;
-  const compactTail = `${count} modelos fabricados en Guangdong. Prazo a partir de 30 dias.`;
+  // "Prazo a partir de 30 dias" (confirmed by the client 2026-09-01) answers the first
+  // question any buyer has, and the snippet is where they read it. It replaces the markets
+  // clause: both do not fit in 165 characters, and a delivery date weighs more than a
+  // market count for somebody deciding whether to write at all.
+  const tail = `${count} modelos fabricados em Guangdong, China. Prazo a partir de 30 dias.`;
+  const compactTail = `${count} modelos fabricados em Guangdong. Prazo a partir de 30 dias.`;
   const leadOnlyTail = `${count} modelos. Prazo a partir de 30 dias.`;
-  const bareTail = `${count} modelos fabricados en Guangdong, China.`;
+  const bareTail = `${count} modelos fabricados em Guangdong, China.`;
   const full = `${summary} ${tail}`;
   const compact = `${summary} ${compactTail}`;
   const leadOnly = `${summary} ${leadOnlyTail}`;
@@ -140,7 +140,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">{summary}</p>
               <p className="mt-24 text-c1 text-ink-secondary">
-                Aquí solo se publican fichas verificadas. El resto del catálogo histórico
+                Aqui só publicamos fichas verificadas. O resto do catálogo histórico
                 se está preparando para su publicación estructurada.
               </p>
               {sourcing ? (

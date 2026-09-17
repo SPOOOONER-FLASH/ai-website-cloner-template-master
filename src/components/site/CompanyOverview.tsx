@@ -80,7 +80,7 @@ const copy = {
     reference: "Referência",
     issued: "Emissão",
     cta: "Falemos da sua obra ou de uma visita à fábrica",
-    contact: "Contactar a equipa de exportação",
+    contact: "Falar com a equipe de exportação",
     writeDirect: "Ou escreva-nos directamente:",
   },
 } as const;

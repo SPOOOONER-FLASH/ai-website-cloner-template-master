@@ -35,15 +35,15 @@ export default function ModelLookupPt() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Un presupuesto dura más que el catálogo que lo produjo. Si un número de una
-              lista antigua ya no encuentra página, le ha pasado una de tres cosas, y esta
-              página dice cuál: {renamedRecords.length} fichas se renombraron,{" "}
-              {notShownModels.length} están en el catálogo sin fotografía publicada y una
+              Um orçamento dura mais do que o catálogo que o gerou. Se um número de uma
+              lista antiga já não encontra página, aconteceu uma de três coisas com ele, e
+              esta página diz qual: {renamedRecords.length} fichas foram renomeadas,{" "}
+              {notShownModels.length} estão no catálogo sem fotografia publicada e uma
               ruta de categoría se retiró.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
               Ninguno de estos casos es un producto descatalogado. Cuando un modelo deje de
-              fabricarse lo diremos aquí, con esa palabra y con la fecha.
+              de ser fabricado, diremos aqui, com essa palavra e com a data.
             </p>
           </div>
         </section>
@@ -56,9 +56,10 @@ export default function ModelLookupPt() {
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Envíenos el número tal como aparece en su documento, con las letras del final:
-              esas letras llevan el acabado y la función, y suelen ser la parte que identifica
-              cuál de nuestros modelos le cotizaron. Si el número es de otro proveedor,
+              Envie o número exatamente como ele aparece no seu documento, com as letras
+              do fim: essas letras carregam o acabamento e a função, e costumam ser a parte
+              que identifica qual dos nossos modelos foi cotado. Se o número é de outro
+              fornecedor,
               envíelo igualmente — hacemos referencias cruzadas con códigos de la competencia.
             </p>
             <div className="mt-24 flex flex-wrap gap-x-32 gap-y-12">

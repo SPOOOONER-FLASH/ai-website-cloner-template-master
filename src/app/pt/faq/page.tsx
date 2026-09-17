@@ -9,23 +9,24 @@ export const metadata: Metadata = pageMetadata({
   locale: "pt",
   title: "Perguntas frequentes",
   description:
-    "Quantidade mínima, amostras, prazos, acabamentos, sistemas de chave-mestra, certificação e exportação — as respostas da equipa da Canton Hyland.",
+    "Quantidade mínima, amostras, prazos, acabamentos, sistemas de chave-mestra, certificação e exportação — as respostas da equipe de exportação da Canton Hyland.",
 });
 
 /**
- * The Spanish FAQ.
+ * The Portuguese FAQ.
  *
  * Of everything that was still English-only, this is the page a buyer needs before they
  * can do business at all: minimum order, lead time, samples, payment terms, OEM. Those
  * five answers took a fortnight to get out of the client; leaving them in one language
  * wasted that.
  *
- * The Spanish text lives in content/faq.json beside the English, written by
- * scripts/add-faq-es.mjs — see the note there on why the incoterms stay in their
- * international form and why the numbers are carried rather than translated.
+ * The Portuguese text lives in content/faq.json beside the English, written by
+ * scripts/add-faq-pt.mjs — see the note there on why the incoterms stay in their
+ * international form, why the numbers are carried rather than translated, and why this
+ * tree is Brazilian rather than European Portuguese.
  *
- * A question with no Spanish yet falls back to English rather than vanishing, so the page
- * cannot silently shorten as new questions are added.
+ * A question with no Portuguese yet falls back to ENGLISH, never to Spanish, so a page
+ * that is not finished looks unfinished.
  */
 export default function PreguntasFrecuentesPagePt() {
   const groups = getAnsweredFaq("pt");
@@ -37,15 +38,15 @@ export default function PreguntasFrecuentesPagePt() {
       <section className="layout" aria-labelledby="faq-title">
         <div className="col-content grid w-full grid-cols gap-x gap-y-24">
           <div className="col-span-full xl:col-span-12">
-            <p className="text-c1 text-ink-secondary">Servicio</p>
+            <p className="text-c1 text-ink-secondary">Serviço</p>
             <h1 id="faq-title" className="mt-8 text-h1 text-ink">
               Perguntas frequentes
             </h1>
           </div>
           <div className="col-span-full xl:col-span-10 xl:col-start-14">
             <p className="text-c1 text-ink">
-              Si la respuesta que necesita no está aquí, pregúntenos directamente —
-              preferimos contestar a que usted tenga que suponerlo.
+              Se a resposta de que precisa não está aqui, pergunte diretamente —
+              preferimos responder a deixar você supondo.
             </p>
             <div className="mt-16 flex flex-wrap gap-x-32 gap-y-16">
               <ArrowLink href="/pt/contact/">Fazer uma consulta</ArrowLink>
@@ -74,8 +75,12 @@ export default function PreguntasFrecuentesPagePt() {
             <dl className="col-span-full border-t border-line xl:col-span-14 xl:col-start-11">
               {group.items.map((item) => (
                 <div key={item.question} className="border-b border-line py-24">
-                  <dt className="text-c1 font-bold text-ink">{item.question}</dt>
-                  <dd className="mt-8 text-c1 text-ink-secondary">{item.answer}</dd>
+                  <dt className="text-c1 font-bold text-ink">
+                    {item.question}
+                  </dt>
+                  <dd className="mt-8 text-c1 text-ink-secondary">
+                    {item.answer}
+                  </dd>
                 </div>
               ))}
             </dl>

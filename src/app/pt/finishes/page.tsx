@@ -45,14 +45,14 @@ export default function AcabadosPagePt() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Las letras que siguen al número son el acabado y la función, en ese orden. En
-              cuanto se saben leer, una lista de precios de cuatrocientas líneas se convierte
-              en unos pocos productos y dos tablas de sufijos — y se puede pedir una variante
-              de la que nunca le hemos enviado una fotografía.
+              As letras depois do número são o acabamento e a função, nessa ordem. Quando
+              se sabe lê-las, uma lista de quatrocentas linhas vira meia dúzia de produtos e
+              duas tabelas de sufixos — e dá para pedir uma variante da qual nunca lhe
+              enviamos uma fotografia.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              {modelsWithReadableFinish} de {publishedModelCount} modelos publicados llevan el
-              acabado en el propio número. El resto lo indica en la ficha técnica.
+              {modelsWithReadableFinish} de {publishedModelCount} modelos publicados trazem
+              o acabamento no próprio número. O resto o indica na ficha técnica.
             </p>
           </div>
           <div className="col-span-full xl:col-span-14">
@@ -68,15 +68,15 @@ export default function AcabadosPagePt() {
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Las especificaciones norteamericanas se escriben en números ANSI/BHMA, y esos
-              números codifican también el metal base: 626 es cromo satinado sobre latón y
-              652 es el mismo color sobre acero. Sustituir uno por otro es un rechazo en
-              obra. Por eso el código de acabado por sí solo no se puede convertir. Cada
-              ficha de producto lleva el número BHMA cuando el material está declarado, y un
-              guion cuando no lo está.
+              As especificações norte-americanas são escritas em números ANSI/BHMA, e esses
+              números codificam também o metal base: 626 é cromo acetinado sobre latão e 652
+              é a mesma cor sobre aço. Trocar um pelo outro é uma aprovação recusada em
+              obra. É por isso que o código de acabamento sozinho não pode ser convertido.
+              Cada ficha de produto traz o número BHMA quando o material está declarado, e um
+              travessão quando não está.
             </p>
             <div className="mt-24 flex flex-wrap gap-x-32 gap-y-12">
-              <ArrowLink href="/news/reading-door-hardware-model-numbers/">
+              <ArrowLink href="/pt/news/reading-door-hardware-model-numbers/">
                 Como se lê um número de modelo
               </ArrowLink>
               <ArrowLink href="/pt/contact/">Consultar um código</ArrowLink>
