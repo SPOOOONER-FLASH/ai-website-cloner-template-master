@@ -182,7 +182,86 @@ const FINISHES: Record<string, FinishEntry> = {
     en: "Brushed satin nickel",
     match: ["brushed satin nickel", "哑光镍拉丝"],
   },
+  /*
+    《雷茵-铰链和门吸》的表面处理词汇。颜色取自图册的产品照片本身，不是猜的。
+
+    这一批里有五个名字原来会**误中**别的条目：LOOKUP 按拼写由长到短匹配，
+    在加进来之前「哑白」落到 white、「米白」也落到 white（275 两个都有，
+    一张卡上会并排画出两个一模一样的白点）、「星空灰」落到 grey（星空灰是深枪灰，
+    不是中灰）、「黑红古」落到仿古红铜（差了三档深浅）。各给一条自己的条目。
+
+    PVD 图册只印这三个字母，没有印颜色 —— 工艺不是颜色。这里给的是金色，
+    依据是这本书里每一张标 PVD 的照片都是亮金的（271、275、220、1328）；
+    规格和名称一侧仍然照原样写 PVD，不替甲方改成「PVD 金」。
+  */
+  "brushed-gunmetal": {
+    colors: ["#6e7176"],
+    zh: "枪灰拉丝",
+    en: "Brushed gunmetal",
+    match: ["brushed gunmetal", "枪灰拉丝"],
+  },
+  "true-gold": {
+    colors: ["#e0b33c"],
+    zh: "真金",
+    en: "True gold",
+    match: ["true gold", "真金"],
+  },
+  "brushed-brass": {
+    colors: ["#c8a45e"],
+    zh: "铜拉丝",
+    en: "Brushed brass",
+    match: ["brushed brass", "铜拉丝"],
+  },
+  "matt-white": {
+    colors: ["#ededea"],
+    zh: "哑白",
+    en: "Matt white",
+    match: ["matt white", "哑白"],
+  },
+  "brushed-matt-nickel": {
+    colors: ["#b6b9b8"],
+    zh: "哑镍拉丝",
+    en: "Brushed matt nickel",
+    match: ["brushed matt nickel", "哑镍拉丝"],
+  },
+  "satin-silver": {
+    colors: ["#c4c7c9"],
+    zh: "砂银",
+    en: "Satin silver",
+    match: ["satin silver", "砂银"],
+  },
+  "satin-gold": {
+    colors: ["#c9a33f"],
+    zh: "砂金",
+    en: "Satin gold",
+    match: ["satin gold", "砂金"],
+  },
+  "space-grey": {
+    colors: ["#4f5257"],
+    zh: "星空灰",
+    en: "Space grey",
+    match: ["space grey", "星空灰"],
+  },
+  "cream-white": {
+    colors: ["#ece4d6"],
+    zh: "米白",
+    en: "Cream white",
+    match: ["cream white", "米白"],
+  },
+  "black-antique-copper": {
+    colors: ["#4a3128"],
+    zh: "黑红古",
+    en: "Black antique copper",
+    match: ["black antique copper", "黑红古"],
+  },
+  pvd: {
+    colors: ["#e8c04a"],
+    zh: "PVD",
+    en: "PVD",
+    match: ["pvd"],
+  },
 };
+
 
 /* Longest spelling first, so "pvd rose gold" wins over a bare "gold" in a longer string. */
 const LOOKUP: [string, string][] = Object.entries(FINISHES)

@@ -108,7 +108,11 @@ const isWindowShot = (file) => file.includes("窗图") || file.includes("主图"
    and suffixes after the number. T1138's long-length drawing is `D901_A_SZoW`, which the
    original contiguous pattern missed: it would have been filed as an ordinary photograph
    and lost both its 「dimension drawing」 label and its place at the head of the gallery. */
-const isDrawing = (file) => /(D|L)9\d\d[_A-Za-z]*SZ/i.test(file) || /-drawing\.[a-z]+$/i.test(file);
+/* `-drawing-1` / `-drawing-2`: RY8005 and RY8006 are drawn twice, once per leaf width
+   (34/36mm and 30mm). One number per picture, because the two are different parts to
+   order — not the same drawing at two scales. */
+const isDrawing = (file) =>
+  /(D|L)9\d\d[_A-Za-z]*SZ/i.test(file) || /-drawing(-\d+)?\.[a-z]+$/i.test(file);
 
 /*
   `imageDir` overrides the folder name when the model number is not unique.
@@ -155,7 +159,30 @@ function imagesFor(model) {
  * dimensions it says what the product is and stops.
  */
 function buildSummary(entry) {
-  const kind = entry.categoryPath[0] === "lever-handles" ? "lever handle" : "pull handle";
+  /*
+    What the thing IS, taken off the record rather than guessed from its category.
+
+    The guess used to be "lever handle in lever-handles, pull handle everywhere else",
+    which was true while this ingest only ever carried handles. The hinge and door-stop
+    catalogues broke it quietly: every one of the 55 ball-bearing hinges, all 21 concealed
+    hinges and the four JL hydraulic hinges shipped with a summary — and therefore an SEO
+    description — reading "Stainless Steel 304/316L pull handle."
+
+    The handle categories keep their wording so the 200-odd records already published do
+    not churn; anything else is described by its own name.
+  */
+  const HANDLE = new Set([
+    "stainless-steel-handles",
+    "glass-door-accessories",
+    "grip-handle-sets",
+    "night-latches-rim-locks",
+  ]);
+  const kind =
+    entry.categoryPath[0] === "lever-handles"
+      ? "lever handle"
+      : HANDLE.has(entry.categoryPath[0])
+        ? "pull handle"
+        : entry.name.toLowerCase();
   const centre = entry.specs.find((s) => s.label === "Centre distance")?.value;
   const length = entry.specs.find((s) => s.label === "Overall length")?.value;
   const lever = entry.specs.find((s) => s.label === "Lever length")?.value;
@@ -233,16 +260,26 @@ for (const entry of manifest.models) {
       is alt text that describes the file rather than the picture: a screen reader gets nothing,
       and neither does image search, when the only thing that differs between them is colour.
     */
-    const finishAt = /-finish-([a-f])\.[a-z]+$/i.exec(source);
-    const finish = finishAt ? (entry.finishes ?? [])["abcdef".indexOf(finishAt[1].toLowerCase())] : undefined;
+    const finishAt = /-finish-([a-i])\.[a-z]+$/i.exec(source);
+    /* a–i, not a–f: door stop 275 prints nine finishes. A six-letter alphabet silently
+       labelled the last three "view 8".."view 10" instead of naming their colour. */
+    const finish = finishAt ? (entry.finishes ?? [])["abcdefghi".indexOf(finishAt[1].toLowerCase())] : undefined;
+    /* The installed photograph off the facing page. "view 11" describes the file, not the
+       picture — a reader skimming alt text learns nothing from a number. */
+    const scene = /-scene\.[a-z]+$/i.test(source);
+    /* Which of the two leaf widths this drawing is. */
+    const viewAt = /-drawing-(\d+)\.[a-z]+$/i.exec(source);
+    const view = viewAt ? (entry.drawingNotes ?? [])[Number(viewAt[1]) - 1] : undefined;
     refs.push({
       src: `/images/products/${name}`,
       ratio: "1 / 1",
       label: drawing
-        ? `${entry.model} ${entry.name}, dimension drawing`
+        ? `${entry.model} ${entry.name}, dimension drawing${view ? ` — ${view}` : ""}`
         : finish
           ? `${entry.model} ${entry.name}, ${finish}`
-          : index === 0
+          : scene
+            ? `${entry.model} ${entry.name}, installed`
+            : index === 0
             ? `${entry.model} ${entry.name}`
             : `${entry.model} ${entry.name}, view ${index + 1}`,
     });

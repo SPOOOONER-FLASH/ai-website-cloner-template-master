@@ -10,9 +10,9 @@
   ],
   "generated": "2026-09-17",
   "counts": {
-    "refused": 439,
+    "refused": 440,
     "cleanable": 1222,
-    "already-clean": 2778
+    "already-clean": 2906
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -415,6 +415,7 @@
     "pre150-stainless-steel-handle-22.webp",
     "pre150-stainless-steel-handle-23.webp",
     "pre150-stainless-steel-handle-4.webp",
+    "ry8005-hydraulic-hinge-6.webp",
     "s802-snet-lever-handle-2.webp",
     "sh01-panic-exit-device-4.webp",
     "sh01-panic-exit-device-5.webp",
@@ -1338,6 +1339,42 @@
       "source": "5099873af64b8c1ccb67753b6a2329e1404f17df288599f3da9ee6d864a90b56",
       "status": "cleanable"
     },
+    "1328-door-stopper-2.webp": {
+      "source": "35378ba4a0cbef6eadea112c716ad413d61f76f6b07f58e5117c77a7642ec6da",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-3.webp": {
+      "source": "555d9a89c7dd842e3e8a3931718acf3266fc3f114daaaabdf2f1f5fa2318a042",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-4.webp": {
+      "source": "5cae2002b4fbd82fb5bc3cd3f7977e19d950242b7a64e707c90a9db50a40cdbc",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-5.webp": {
+      "source": "09a401ea8eb56764d7215348763f50880de3986b14ca1477887359d72097cda9",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-6.webp": {
+      "source": "980ad08760c98e235b59a9621e02b1208af658fa8885bd48c89cf51cbf02d5fe",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-7.webp": {
+      "source": "444d9cb9eac5c2b234c2afc95151571016442b199c4d1d9987fedde146004d37",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-8.webp": {
+      "source": "f7bf693a4f31e1ac522215f0bd70a85b0df2d76c5499aa9365d7554c56313d42",
+      "status": "already-clean"
+    },
+    "1328-door-stopper-9.webp": {
+      "source": "5ea2117fdb29e9e86ce9b9edbf232731ce082d1d8e53e56f7e1146549716946b",
+      "status": "already-clean"
+    },
+    "1328-door-stopper.webp": {
+      "source": "353f4633c5d301486e9a511fb122af5f0ea662540b6287382f2c33df233ed97e",
+      "status": "already-clean"
+    },
     "140-lock-case-2.webp": {
       "source": "81f0f6b3c789fc0de5d99a4b8d0cd0412d52ed28fe561953d2dc14f2edc1820e",
       "status": "cleanable"
@@ -1434,6 +1471,86 @@
       "source": "8adc8aa1698e27717670f63661a824e95fade636c2a04eba1209d5e5eafb8263",
       "status": "cleanable"
     },
+    "209-door-stopper-2.webp": {
+      "source": "0bae2735854ebf20205bc89542f12c6ac42a330aa50485efbbaf9ddc0d23a62e",
+      "status": "already-clean"
+    },
+    "209-door-stopper-3.webp": {
+      "source": "5dd781e10f52f60e157642e55e8f5145122d53adcf22d8b040e97d2e17d7caf4",
+      "status": "already-clean"
+    },
+    "209-door-stopper-4.webp": {
+      "source": "86477a0729c410d684f06c1668b57d6a2f38101b24931e333cfae6e01ba711fc",
+      "status": "already-clean"
+    },
+    "209-door-stopper-5.webp": {
+      "source": "2687b6424a5b6bc1490cde96d4a975f5f614bdab8d427ee74c927186d4961111",
+      "status": "already-clean"
+    },
+    "209-door-stopper-6.webp": {
+      "source": "d9717ae4a900f2a482ab186c1a30da3afdcba7356ea94e187f5f948d52628779",
+      "status": "already-clean"
+    },
+    "209-door-stopper-7.webp": {
+      "source": "8fd55bd1189ccf289ac854481618fb125adff1316861106c7a01daf2a1b5b30d",
+      "status": "already-clean"
+    },
+    "209-door-stopper.webp": {
+      "source": "7dc37655c469761e430622285f556679919f5df7f53d24213484d03dbeeb31d1",
+      "status": "already-clean"
+    },
+    "215-door-stopper-2.webp": {
+      "source": "225606f588a59ef1559fec1567e72461a35356b9c6d86381519b6cca5f88bf47",
+      "status": "already-clean"
+    },
+    "215-door-stopper-3.webp": {
+      "source": "a7e233af485436502e11716f2f63f47f01ed565d10b0105e4c1ef83a7b8f4c2d",
+      "status": "already-clean"
+    },
+    "215-door-stopper-4.webp": {
+      "source": "7fc410349db0c8f7ae24a61c10331fff1194205603ee53b4d92188f2435bc339",
+      "status": "already-clean"
+    },
+    "215-door-stopper-5.webp": {
+      "source": "2570ca7c6706d4647040fd327369c0ce6f863c32636fda378e8c57a02a6d595c",
+      "status": "already-clean"
+    },
+    "215-door-stopper-6.webp": {
+      "source": "b2f6898b6d04a94669217e174f1905c183e46d674bbd13002b626285666a764c",
+      "status": "already-clean"
+    },
+    "215-door-stopper.webp": {
+      "source": "9314096ccaae7313bd857ec1361b1950b3b5bcd9cbcb2bb2a994f0ccb779409b",
+      "status": "already-clean"
+    },
+    "220-door-stopper-2.webp": {
+      "source": "1c9c48abdfc75d9a5b9bbc1312828e6da29af8af72d4e31b13da76d48b70b604",
+      "status": "already-clean"
+    },
+    "220-door-stopper-3.webp": {
+      "source": "18a6cfbc74b483d108589332dd67a34bf0d24187b42acb97c0cddf77d1037696",
+      "status": "already-clean"
+    },
+    "220-door-stopper-4.webp": {
+      "source": "0979cde3c969ca8154ab334b7749d82766f17ca581251b50e54faa7975abb4fd",
+      "status": "already-clean"
+    },
+    "220-door-stopper-5.webp": {
+      "source": "ae8f4c47916f123752a103f9e81028fb6072852ec9929423117d26e4119e7497",
+      "status": "already-clean"
+    },
+    "220-door-stopper-6.webp": {
+      "source": "a404617ebb8e1753978fe0c508061e7c52cb4ae9c53ebb67d2176d6b6f646fc4",
+      "status": "already-clean"
+    },
+    "220-door-stopper-7.webp": {
+      "source": "0bc1e3588051bcf22e56e050bc9b0d9930ac19fbe6fc84ddf6404ff9eee7b15c",
+      "status": "already-clean"
+    },
+    "220-door-stopper.webp": {
+      "source": "df1f79a2ba511741675d33b48b37f1a0c82e59812ecbeed7c04276a02b10ad08",
+      "status": "already-clean"
+    },
     "260-night-latch-and-rim-lock-2.webp": {
       "source": "b5ada9ca5d50f76afa2950dd3d00c919e1427665562a9c30ba12252535781429",
       "status": "cleanable"
@@ -1446,6 +1563,230 @@
     "260-night-latch-and-rim-lock.webp": {
       "source": "87bf80fd0aba6388bf5fd72c74a948ff96f26439316e45fe7a0bf87566b904cb",
       "status": "cleanable"
+    },
+    "270-door-stopper-2.webp": {
+      "source": "838d8546a567b4142123fe4f89c6b28dba98da82c421cd25443b39e271b5c373",
+      "status": "already-clean"
+    },
+    "270-door-stopper-3.webp": {
+      "source": "c8480a2be3a4997027b7ab6d33b0c7fc07096a11e468f2e44ed75f1ddf84af23",
+      "status": "already-clean"
+    },
+    "270-door-stopper-4.webp": {
+      "source": "9133977c78d740e9f1284a8c760c1ccd98d0448979c74baa7ee439d9b6c5179f",
+      "status": "already-clean"
+    },
+    "270-door-stopper-5.webp": {
+      "source": "00ae07cc7e06fb17d3cee65b32a47f08b058af9649b2b1dc47f74e407517312d",
+      "status": "already-clean"
+    },
+    "270-door-stopper-6.webp": {
+      "source": "9d90801a64e89a509e84f1d163cc73c024c158fba90362abc8be5076539e0133",
+      "status": "already-clean"
+    },
+    "270-door-stopper.webp": {
+      "source": "fc75f6306b43a2d62519d264441080347c152e4501bdb721077a57096d831754",
+      "status": "already-clean"
+    },
+    "271-door-stopper-2.webp": {
+      "source": "09fabadcd07f017b8c206edccae0abf52349c71aa6485d0f45a4d591bb9e3ee6",
+      "status": "already-clean"
+    },
+    "271-door-stopper-3.webp": {
+      "source": "91fb7c7f6601a59894a8c6ae639b57031505467e70134f084d321cc295a24108",
+      "status": "already-clean"
+    },
+    "271-door-stopper-4.webp": {
+      "source": "dd82270304a266f8c94ea992713d697351bd310a1162bc6cbceabe8e75fcdf40",
+      "status": "already-clean"
+    },
+    "271-door-stopper-5.webp": {
+      "source": "01e7dd2546375837f59dbebdde135ad769d0dd06040874e7afb1a96b8fe73547",
+      "status": "already-clean"
+    },
+    "271-door-stopper-6.webp": {
+      "source": "d03e4e023a8eedb803574cb309a664337aa9cddbaf64a7b637aed7f21f4ccbc4",
+      "status": "already-clean"
+    },
+    "271-door-stopper-7.webp": {
+      "source": "528f303fe0913f9571d85a9cbd8dca47106a93ec8164c8dfa6c879b5157b77bb",
+      "status": "already-clean"
+    },
+    "271-door-stopper-8.webp": {
+      "source": "1da86301e3d0b5240d5e4096cb8cd8bd19c0cf5734d82db3fff1e607e54b6eea",
+      "status": "already-clean"
+    },
+    "271-door-stopper.webp": {
+      "source": "220d25548174b666c19493304e2fec055463ab6dc6b2fa27cc21766298947712",
+      "status": "already-clean"
+    },
+    "272-door-stopper-2.webp": {
+      "source": "735ef528c13b8e3947c15e2e9f6db0c015f2f6c2f51637612645816c1f28a5ff",
+      "status": "already-clean"
+    },
+    "272-door-stopper-3.webp": {
+      "source": "9c2224af51aed7857e0a1c142f129ad8d23243e15efba3226e1f774d37756ad3",
+      "status": "already-clean"
+    },
+    "272-door-stopper-4.webp": {
+      "source": "c9ea22e7287baddf7e3215e3f6a6b4a24f2173e52dc3642b853f41f7ea160ae4",
+      "status": "already-clean"
+    },
+    "272-door-stopper-5.webp": {
+      "source": "4fd61b7dfd19185ede96cf56bfe3cafe633a2d826aaf8418007bd4e0127b4da7",
+      "status": "already-clean"
+    },
+    "272-door-stopper-6.webp": {
+      "source": "555904e83e05b9c1321306a508923e84537f69505f6d519b670819fdd9edd362",
+      "status": "already-clean"
+    },
+    "272-door-stopper.webp": {
+      "source": "8164f5ebe039d37dc7cb50b7bf13070f81c6adb3cc173fd270bbbc7bffb566df",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-2.webp": {
+      "source": "79750959e9bc638770e39384cd2553f91d159a278d85099b73f7c30eb5db805e",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-3.webp": {
+      "source": "3677a247d045fdabddd2d5dae21052091ce4060c2b5b100184faef84839f805d",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-4.webp": {
+      "source": "1440567b01bb33a0778f8a0f446579581b23c7eedf9205f140f43ce85c281f2d",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-5.webp": {
+      "source": "2c10400eb9ad12e25c6fe72456c76338799efd78e4588ad045a46c518085749a",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-6.webp": {
+      "source": "72ac2a9cd6717783204b2cbdb320350f72041f6c98258dd5ebf043ac398bc36a",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper-7.webp": {
+      "source": "ccbd4b1fe16c6324c2c197754a5803e1944b0129c5101b8169134eac68f1d0d1",
+      "status": "already-clean"
+    },
+    "273-1-door-stopper.webp": {
+      "source": "4830987fe57c4762773a4cf19bc39b84662ca94c604a4b2ef4d2a3de3b8f275c",
+      "status": "already-clean"
+    },
+    "273-door-stopper-2.webp": {
+      "source": "a9240aaeda91ed9cae17cb34e37588d6b7f43a3c0d43bf5fdf3d71bedc399cd7",
+      "status": "already-clean"
+    },
+    "273-door-stopper-3.webp": {
+      "source": "de1e3b5fa6c858c2fd4f5dba5a99ac7a4095f6f3b7d9ed92ae3c8a74406fd348",
+      "status": "already-clean"
+    },
+    "273-door-stopper-4.webp": {
+      "source": "182e0df665bb45abfc96ea1710d2db2477d0f22c4144a83fbbeaaf31b54fe0e3",
+      "status": "already-clean"
+    },
+    "273-door-stopper-5.webp": {
+      "source": "62518f6e2924fb11e63274589fd976c6bb8a801ab179535ec8dee060bab5f1f8",
+      "status": "already-clean"
+    },
+    "273-door-stopper-6.webp": {
+      "source": "3225f92de2580533dfacbd3671d89def20c83158994944887ce1d926260edc8d",
+      "status": "already-clean"
+    },
+    "273-door-stopper.webp": {
+      "source": "8bc7f273a14cec90560af2862fc61bc7999b6c109d63609207016b97d6117e49",
+      "status": "already-clean"
+    },
+    "274-door-stopper-2.webp": {
+      "source": "4f54f7d2a5dc7e07c450a5e7836f0e118576c3ff9ea83ec3e0af1625ceaf8357",
+      "status": "already-clean"
+    },
+    "274-door-stopper-3.webp": {
+      "source": "54f899dc57506842b67bba1d7fc6a7d21808267c6741ec54f52020e4b7890230",
+      "status": "already-clean"
+    },
+    "274-door-stopper-4.webp": {
+      "source": "77ef8c84cab07ab4076eb5e0f3d21192186c9eb8d8698b882d8da9cf9dc667b4",
+      "status": "already-clean"
+    },
+    "274-door-stopper-5.webp": {
+      "source": "e822f224461143e1c0f59398f30db0904f264a7198694231c708fece6b32aa55",
+      "status": "already-clean"
+    },
+    "274-door-stopper.webp": {
+      "source": "cbdcb52b35e44659c10a519187f61de87e51d5cf89360bd7621e3a1cf4ea01ca",
+      "status": "already-clean"
+    },
+    "275-door-stopper-10.webp": {
+      "source": "f645fff1546382bbc7a909c4a0c64deae6da4ae9ea4fe6364f8553cb9b9972af",
+      "status": "already-clean"
+    },
+    "275-door-stopper-11.webp": {
+      "source": "d88f153a95e4f1b068a14a29eb3b620ee092b9dad7030a6e63af0451b23e9d8f",
+      "status": "already-clean"
+    },
+    "275-door-stopper-2.webp": {
+      "source": "0a73e8c288df4b105cf1b415b90f2fa533249dc2250bda0f19a231dcae033b16",
+      "status": "already-clean"
+    },
+    "275-door-stopper-3.webp": {
+      "source": "dacf7074c341ce8910fc2037a6d5e96a3e48323bbca476e3945753005469aa91",
+      "status": "already-clean"
+    },
+    "275-door-stopper-4.webp": {
+      "source": "df9853f40e814ff69d22b63f34305e12fc37d6e7a1d73ff5267fc513d0eef721",
+      "status": "already-clean"
+    },
+    "275-door-stopper-5.webp": {
+      "source": "e46882dc042a24940d8727caa4d72f784fb5d24cdcb8e27d4aa5abf6df132f44",
+      "status": "already-clean"
+    },
+    "275-door-stopper-6.webp": {
+      "source": "8f5535a45a46608775fb9e26671a575be2caa585e5f12a1e104dbdf651103581",
+      "status": "already-clean"
+    },
+    "275-door-stopper-7.webp": {
+      "source": "40f04e58f3bfa6da6b82f492a60c7984186ca5bdc5bce1a44c9ad6c044993716",
+      "status": "already-clean"
+    },
+    "275-door-stopper-8.webp": {
+      "source": "03be29145e49da74e8a3f5b2a317d40e5b638dccc753248e5b58599ba5dd5c39",
+      "status": "already-clean"
+    },
+    "275-door-stopper-9.webp": {
+      "source": "9a059f1be124daa2a0928e4f79ef6b85da492ee1c0db4c5d3c62d897f6ad266f",
+      "status": "already-clean"
+    },
+    "275-door-stopper.webp": {
+      "source": "54e5709c8d043a36553ad8d0e9ad41ffa46f025af914c851be7bb3fedacfab1e",
+      "status": "already-clean"
+    },
+    "280-door-stopper-2.webp": {
+      "source": "f9cee7198d9525ad402b7e676ead744688461a2f969d4fe783cc127ee75590d1",
+      "status": "already-clean"
+    },
+    "280-door-stopper-3.webp": {
+      "source": "3432caf326c308c1879ace616e4bf1ea2fc3ade70375cdf952e1fa1acf7f60a9",
+      "status": "already-clean"
+    },
+    "280-door-stopper-4.webp": {
+      "source": "cf42354e7eb5057b84dfcb17e4205bfc966a4a5af2f0434ccf105d96a54c521b",
+      "status": "already-clean"
+    },
+    "280-door-stopper-5.webp": {
+      "source": "2e916ce7d603257b1fb3613a0c471febe320025ecc34740c7827284af169872b",
+      "status": "already-clean"
+    },
+    "280-door-stopper-6.webp": {
+      "source": "11b60b493aff07732edeb44860f8b326d62cdfe393e5b0ce7ef382140ceddcc5",
+      "status": "already-clean"
+    },
+    "280-door-stopper-7.webp": {
+      "source": "cf6f9ebe5af6346c785e2441285cf03caed81d6b556a37716a40b6fb42dddf63",
+      "status": "already-clean"
+    },
+    "280-door-stopper.webp": {
+      "source": "d8091b2ce245b9f98272f657308bf58af611341d895d6e9a3eeb99e16bbd3f4d",
+      "status": "already-clean"
     },
     "300-panic-exit-device-2.webp": {
       "source": "f83b64c6e18087fe47c2c4e292b4a64317d37b6c9743f159b9ad4033f2fa94a2",
@@ -15770,6 +16111,183 @@
     },
     "ry80-concealed-hinge.webp": {
       "source": "ce112f432634cb8aec197c935aabf06b20a78afca8421de1c935bc93df0f2dab",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-2.webp": {
+      "source": "eb08f1fa610cec84dcdac5ac9cf92f64d12f099c80c4806e74e44f4d584d2c33",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-3.webp": {
+      "source": "386fd7ac65554073c70891e93a806e280bfa9a3fc0c63ef238f18863bce10657",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-4.webp": {
+      "source": "619fbbc946d766d84cbc6cd0e19fe3eea6875775a43281247bb68c212ae06d74",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-5.webp": {
+      "source": "4f75690bcdd7c21ddf6983ce0a18cce82fbbd783c6f6ec88735d0fb1bd8feac8",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-6.webp": {
+      "source": "ccf22ad64850839088f1507ecc54ff37382f8b37d1d59c4b5ca408f78fa99d66",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge-7.webp": {
+      "source": "f2f1427eb49efccdba5df5dbeb46037ac9ed4a59f07427f88967e9fbced55cf3",
+      "status": "already-clean"
+    },
+    "ry8001-concealed-hydraulic-hinge.webp": {
+      "source": "849a70f95a6d5d0e0bfa55f8e6ed69dc0d52a849383ac1abf5d6e0f85434a24e",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-2.webp": {
+      "source": "73efaf425199b172062fbadcdc4a1d781dc97fe3754e83b516bec65a9dae0fe5",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-3.webp": {
+      "source": "64b3dbeeb412bc9ccd7f88c551ba70fdce42c0045265b3296ae161b06d593953",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-4.webp": {
+      "source": "db68d54cfbb328403c247e3497e63fbc2cff832462c2b3edb90f99fe9d49ad93",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-5.webp": {
+      "source": "4603cbc390996bf0083b816be494d6b6225efb4ea30d4f442e80b2061e256b98",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-6.webp": {
+      "source": "9d706e64549f3e539056f55498b13910bc7ec1f1e9d3492ba497b8ecfd8e3637",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge-7.webp": {
+      "source": "1ab05f21f43ef937cd202a9853042a249edf2927cafda9adeb06bec22ab814c7",
+      "status": "already-clean"
+    },
+    "ry8002-concealed-hydraulic-hinge.webp": {
+      "source": "fab2a9bda9010529ed1739098a0efee8b17d609cb86af647b0ec7a62f970ef64",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-2.webp": {
+      "source": "b0c68e75623badaf4dc614ae28cb6e7e8e1e77b326682ac33eea269f3449994b",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-3.webp": {
+      "source": "0a4ac593dd07e4f3e5dbd4d360a74b7deb6f7b85eb3834e87558ec1910ab1aee",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-4.webp": {
+      "source": "1520849a30bf8cc94cf698d90f5a56e043b88651662be9057db56313d3f92aaa",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-5.webp": {
+      "source": "1587b90fd8348f259bc6a4030ee41239e25d0bbde97735b474f59e8131caf74e",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-6.webp": {
+      "source": "bc66238669be9802cd5e4d0b8df2d8be27766d799fbcfb86c02e01ad7161f4df",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge-7.webp": {
+      "source": "8b1d80d7078fb50b97cc8faf64fb55e2ff6d8c691eefe5a7a2667794253e6675",
+      "status": "already-clean"
+    },
+    "ry8003-concealed-hydraulic-hinge.webp": {
+      "source": "f67810bf50f19c39ab74411cab421619661f8816abcf854b875677782373556f",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-2.webp": {
+      "source": "10caf5b0e255e2904a66fcde67710351e442f458752bca89652643792c884df9",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-3.webp": {
+      "source": "23051cd76a30ff69b3de8b08eab299490a905ed4153a840649748706d5059301",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-4.webp": {
+      "source": "131957069cef4446dc278958dfdaf12295e328b252faf38c5a562de4acb865be",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-5.webp": {
+      "source": "ee61f7d84de52b1a18d5623a92493673a0e5c8855e056af2a38a93949e75ee41",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-6.webp": {
+      "source": "f8c4be46c7bf8e51a9cec858cef7ac575971d5c0f742a1bcbc63d257dd9ef4ee",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge-7.webp": {
+      "source": "693bb143f577e0d71c82571a46be02a8616766cc1d493c5fab326532c675c27f",
+      "status": "already-clean"
+    },
+    "ry8004-concealed-hydraulic-hinge.webp": {
+      "source": "fb6f23abe91424997b64f8819cfb4a4770fc9a0b58ad5dc5d023713df32a3ebe",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-2.webp": {
+      "source": "371c4440d8a13661810c8f0e61041f26ae472bd377c0ee6f33f578c4fbb1ee4e",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-3.webp": {
+      "source": "005f42e922d9aa225ee2901dc07556b16b95b9873ee040bc040dd7d2208b0011",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-4.webp": {
+      "source": "7b0b988da03d6ee0ba6ff8f81f5082ecb80bf4a013177c39ddf1e16659fa20d8",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-5.webp": {
+      "source": "8d88e72cf6eab53c8a783ab524be7a249d85440d458eab7268d37ac350eb4b1b",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-6.webp": {
+      "source": "f35f86b82034845d76d7eb9b0e375f48d5a5064d859e1f458a402275099fb881",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "ry8005-hydraulic-hinge-7.webp": {
+      "source": "c83d505a5c2a89566d9fc2f128bb170c61a511e7ccf1b54219dbc489f079e087",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge-8.webp": {
+      "source": "f6f4eb38f0052dabf4850a07703d916ffbd520d2415dd83a87c40b7b9e770d85",
+      "status": "already-clean"
+    },
+    "ry8005-hydraulic-hinge.webp": {
+      "source": "cb924311df8cbb96cda8a49b9ba6ed3d4e7b81ee21a53d78ab9a92de3baae42b",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-2.webp": {
+      "source": "68ca1775dbe2e6ad3875b38c0db44a39bd94853ae6cddbb52df67f6f08d41c36",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-3.webp": {
+      "source": "dd7b050f7e2708f818d3da52794a742fa232cacf3bce5eb10b2a8102ece03366",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-4.webp": {
+      "source": "4921eddc0e2af1a7aec8005ca5d02e71ba119cd663d7b1a65fb699f304be6e8b",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-5.webp": {
+      "source": "e1a647b953ae67f87c12eaf601840706ab83a098dc1bffcc54888462f9f4b951",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-6.webp": {
+      "source": "7c0f9f110c9adff6c74e4bbfa78a7477144820814a49524e8ddc8621c7cdb57d",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-7.webp": {
+      "source": "6f16a379e82e7d57fc8b9d0a35af4c294262850ab7b8569a3b25e2e5b93660f7",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge-8.webp": {
+      "source": "f1fe4062eeac42115d25becd651e8de3259ad19448e779b56bedb61f4a86e0eb",
+      "status": "already-clean"
+    },
+    "ry8006-hydraulic-hinge.webp": {
+      "source": "c99486243d759671dc92176c1181f6e3349cdc725fb1cc242ff91b33ae05078a",
       "status": "already-clean"
     },
     "ry80j-concealed-hinge-2.webp": {
