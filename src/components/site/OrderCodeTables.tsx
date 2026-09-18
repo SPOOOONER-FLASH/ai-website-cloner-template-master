@@ -69,16 +69,24 @@ function toRows(
     code: string;
     name: string | null;
     nameEs: string | null;
+    namePt: string | null;
     evidence: CodeEvidence;
     note?: string;
     noteEs?: string;
+    notePt?: string;
   }>[],
   locale: Locale,
 ): Row[] {
   return usage.map(({ entry, models, example }) => ({
     code: entry.code,
-    name: locale === "es" ? entry.nameEs : entry.name,
-    note: locale === "es" ? entry.noteEs : entry.note,
+    name: locale === "es" ? entry.nameEs : locale === "pt" ? entry.namePt : entry.name,
+    /*
+      The note is shown only in the locale that HAS one — English never leaks into a
+      Portuguese table. The names are translated and the commentary is not yet, and a
+      table of Portuguese names over English commentary is the mixed state this repo
+      keeps refusing. Missing reads as unfinished, which is the state that gets fixed.
+    */
+    note: locale === "es" ? entry.noteEs : locale === "pt" ? entry.notePt : entry.note,
     evidence: entry.evidence,
     models,
     example,
@@ -186,11 +194,17 @@ export function WorkedOrderCode({ locale }: { locale: Locale }) {
           ["SS", "Acabado — acero inoxidable"],
           ["BK", "Función — privacidad, botón interior"],
         ]
-      : [
-          ["587", "Base model — light-duty cylindrical lock"],
-          ["SS", "Finish — stainless steel"],
-          ["BK", "Function — privacy, turn button inside"],
-        ];
+      : locale === "pt"
+        ? [
+            ["587", "Modelo base — fechadura cilíndrica de serviço leve"],
+            ["SS", "Acabamento — aço inoxidável"],
+            ["BK", "Função — banheiro, botão de giro por dentro"],
+          ]
+        : [
+            ["587", "Base model — light-duty cylindrical lock"],
+            ["SS", "Finish — stainless steel"],
+            ["BK", "Function — privacy, turn button inside"],
+          ];
 
   return (
     <div className="border border-line p-24 lg:p-32">
@@ -256,6 +270,15 @@ export function OrderCodeFooter({ locale }: { locale: Locale }) {
             envíenos el número de modelo completo
           </Link>{" "}
           y le confirmaremos el acabado antes de que pida una muestra.
+        </>
+      ) : locale === "pt" ? (
+        <>
+          Os códigos sem confirmação destas tabelas estão na nossa própria lista de
+          perguntas à fábrica. Se você tem em mãos uma cotação que traz um deles,{" "}
+          <Link href="/pt/contact/" className="short-marker short-marker-compact text-brand hover:text-brand-hover">
+            envie o número de modelo completo
+          </Link>{" "}
+          e confirmamos o acabamento antes de você pedir uma amostra.
         </>
       ) : (
         <>

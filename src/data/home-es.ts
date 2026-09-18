@@ -159,7 +159,7 @@ export const text2: TextModuleContent = {
   heading: "Servicio + Descargas",
   body: "Desarrollamos soluciones OEM adaptadas a cada mercado y apoyamos al comprador con documentación técnica y de exportación.",
   linkLabel: "Descargas",
-  href: "/downloads",
+  href: "/es/downloads",
 };
 
 export const teaser3: PageTeaserContent = {
@@ -182,7 +182,7 @@ export const teaser3: PageTeaserContent = {
       },
       title: "Especifique con confianza",
       subtitle: "Respuestas sobre instalación, acabados, normas y plazos",
-      href: "/faq",
+      href: "/es/faq",
     },
   ],
 };

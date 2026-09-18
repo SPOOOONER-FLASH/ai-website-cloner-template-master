@@ -89,7 +89,7 @@ export const teaser1: PageTeaserContent = {
           "Cilindro de perfil europeu com botão, fotografado sobre fundo escuro junto ao tornillo de fixação e a três chaves — o parafuso atravessa a leva, o ponto a partir do qual se medem as duas metades do cilindro",
       },
       title: "Para prescritores",
-      subtitle: "Prepare um quadro de ferragens com a nossa equipa técnica",
+      subtitle: "Prepare um quadro de ferragens com a nossa equipe técnica",
       href: "/pt/products",
     },
   ],
@@ -112,7 +112,7 @@ export const text1: TextModuleContent = {
   heading: "Aplicações da Canton Hyland",
   body: "Barras antipânico, fechaduras, maçanetas e molas aéreas para edifícios comerciais, institucionais e residenciais em mercados de exportação.",
   linkLabel: "Ver aplicações",
-  href: "/projects",
+  href: "/pt/projects",
 };
 
 export const teaser2: PageTeaserContent = {
@@ -125,7 +125,7 @@ export const teaser2: PageTeaserContent = {
       },
       title: "Evacuação comercial",
       subtitle: "Estudo representativo de ferragens para circulação e rotas de evacuação com critérios normativos",
-      href: "/projects/commercial-fire-egress-hardware",
+      href: "/pt/projects/commercial-fire-egress-hardware",
     },
     {
       media: {
@@ -135,7 +135,7 @@ export const teaser2: PageTeaserContent = {
       },
       title: "Hotelaria + habitação",
       subtitle: "Estudos de acesso e corredor para conjuntos coordenados de ferragens",
-      href: "/projects/hospitality-residential-door-package",
+      href: "/pt/projects/hospitality-residential-door-package",
     },
   ],
 };
@@ -145,10 +145,10 @@ export const hero3: HeroModuleContent = {
   media: {
     ratio: "3 / 2",
     src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Fotografias reais do catálogo de ferragens seleccionadas para portas",
+    label: "Fotografias reais do catálogo de ferragens selecionadas para portas",
   },
   title: "Desenhado para",
-  body: "Ferragens seleccionadas, um só quadro coordenado",
+  body: "Ferragens selecionadas, um só quadro coordenado",
   linkLabel: "Ver catálogo",
   href: "/pt/products",
 };
@@ -167,10 +167,10 @@ export const hero4: HeroModuleContent = {
 };
 
 export const text2: TextModuleContent = {
-  heading: "Serviço + Descarregáveis",
+  heading: "Serviço + Downloads",
   body: "Desenvolvemos soluções OEM adaptadas a cada mercado e apoiamos o comprador com documentação técnica e de exportação.",
-  linkLabel: "Descarregáveis",
-  href: "/downloads",
+  linkLabel: "Downloads",
+  href: "/pt/downloads",
 };
 
 export const teaser3: PageTeaserContent = {
@@ -200,8 +200,8 @@ export const teaser3: PageTeaserContent = {
 
 export const text3: TextModuleContent = {
   heading: "Engenharia para exportação",
-  body: "Selecção de acabamentos, sistemas de chave-mestra e detalhes de especificação para cada mercado.",
-  linkLabel: "Contactar",
+  body: "Seleção de acabamentos, sistemas de chave-mestra e detalhes de especificação para cada mercado.",
+  linkLabel: "Fale conosco",
   href: "/pt/contact",
 };
 
@@ -213,6 +213,6 @@ export const hero5: HeroModuleContent = {
     label: "Estudo abstracto de luz arquitectónica com superfícies de vidro e metal",
   },
   title: "Especificação de ferragens",
-  linkLabel: "Falar com a equipa de exportação",
+  linkLabel: "Falar com a equipe de exportação",
   href: "/pt/contact",
 };

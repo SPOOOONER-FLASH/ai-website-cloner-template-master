@@ -67,9 +67,7 @@ export function ProjectDetail({
     (spanish ? es : locale === "pt" ? pt : undefined) ?? en;
 
   const name = pick(project.nameEs, project.namePt, project.name);
-  const buildingType = spanish
-    ? project.buildingTypeEs ?? project.buildingType
-    : project.buildingType;
+  const buildingType = pick(project.buildingTypeEs, project.buildingTypePt, project.buildingType);
   const summary = pick(project.summaryEs, project.summaryPt, project.summary);
   /* Paragraph for paragraph or the whole English body — a half-translated page reads as
      a rendering bug rather than as a gap. Same rule as NewsDetail. */

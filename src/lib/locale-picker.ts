@@ -62,11 +62,13 @@ export interface ContactChoice {
  * /company is reading one fact twice, not two claims.
  */
 export function contactChoices(locale: Locale = "en"): ContactChoice[] {
-  const es = locale === "es";
+  /* English, never the other translation — see the note in src/lib/localised.ts. */
+  const pick = (en: string, es?: string, pt?: string) =>
+    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
   const grouped = new Map<string, ContactChoice>();
 
   for (const rep of representatives) {
-    const region = es ? rep.regionEs : rep.region;
+    const region = pick(rep.region, rep.regionEs, rep.regionPt);
     const existing = grouped.get(region);
     if (existing) {
       existing.cities.push(rep.city);
@@ -78,7 +80,7 @@ export function contactChoices(locale: Locale = "en"): ContactChoice[] {
       cities: [rep.city],
       phone: rep.phone,
       email: rep.email,
-      note: es ? rep.noteEs : rep.note,
+      note: rep.note ? pick(rep.note, rep.noteEs, rep.notePt) : undefined,
     });
   }
 
@@ -120,9 +122,9 @@ export const localePickerCopy = {
     trigger: "Escolha o seu país e idioma",
     title: "Escolha o seu país e idioma",
     languages: "Idioma",
-    contacts: "O seu contacto mais próximo",
+    contacts: "O seu contato mais próximo",
     close: "Fechar",
-    notMirrored: "esta página só existe em inglês — a ligação leva à página inicial desse idioma",
-    current: "actual",
+    notMirrored: "esta página só existe em inglês — o link leva à página inicial desse idioma",
+    current: "atual",
   },
 } as const;

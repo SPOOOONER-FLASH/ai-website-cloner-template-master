@@ -24,6 +24,10 @@ interface ProductIndexListProps {
  */
 export function ProductIndexList({ products, label, locale = "en" }: ProductIndexListProps) {
   const es = locale === "es";
+  const pt = locale === "pt";
+  /* English is the fallback, never Spanish — see src/lib/localised.ts. */
+  const nameOf = (product: { name: string; nameEs?: string; namePt?: string }) =>
+    (es ? product.nameEs : pt ? product.namePt : undefined) ?? product.name;
   const base = locale === "en" ? "" : `/${locale}`;
   if (!products.length) return null;
   const items = sortForDisplay(products);
@@ -31,7 +35,7 @@ export function ProductIndexList({ products, label, locale = "en" }: ProductInde
   return (
     <details className="col-span-full mt-64 border-t border-line pt-24">
       <summary className="cursor-pointer text-c2 text-ink-secondary hover:text-brand">
-        {label} — {es ? "índice completo de modelos" : "full model index"}
+        {label} — {es ? "índice completo de modelos" : pt ? "índice completo de modelos" : "full model index"}
       </summary>
       {/*
         ── TAP SIZE ────────────────────────────────────────────────────────
@@ -57,8 +61,8 @@ export function ProductIndexList({ products, label, locale = "en" }: ProductInde
               className="block py-12 text-c2 text-ink-secondary hover:text-brand sm:py-0"
             >
               {product.modelTbc
-                ? (es && product.nameEs) || product.name
-                : `${product.model} — ${(es && product.nameEs) || product.name}`}
+                ? nameOf(product)
+                : `${product.model} — ${nameOf(product)}`}
             </Link>
           </li>
         ))}

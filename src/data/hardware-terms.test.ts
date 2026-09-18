@@ -36,11 +36,43 @@ describe("hardware glossary", () => {
     assert.equal(new Set(ids).size, ids.length);
   });
 
-  it("is translated on both sides of every field", () => {
+  /*
+    Three locales, every field. The glossary renders from this array with an ENGLISH
+    fallback, so a missing Portuguese consequence does not crash the page — it prints the
+    English one under a Portuguese heading, which looks like a finished page and is not.
+    The type makes the fields required; this asserts they are not empty strings.
+  */
+  it("is translated on every side of every field", () => {
     for (const term of HARDWARE_TERMS) {
       assert.ok(term.termEs, `${term.id} has no Spanish term`);
       assert.ok(term.definitionEs, `${term.id} has no Spanish definition`);
       assert.ok(term.consequenceEs, `${term.id} has no Spanish consequence`);
+      assert.ok(term.termPt, `${term.id} has no Portuguese term`);
+      assert.ok(term.definitionPt, `${term.id} has no Portuguese definition`);
+      assert.ok(term.consequencePt, `${term.id} has no Portuguese consequence`);
+    }
+  });
+
+  /*
+    Brazilian Portuguese, not European: this tree declares pt-BR in `news.ts` and in the
+    Article markup, and Brazil is the market it was built for. The forms below are the
+    ones that give a European draft away at a glance, and they are cheap to catch here —
+    a reviewer reading 23 entries will not notice the fourth "stock".
+  */
+  it("writes Portuguese for Brazil", () => {
+    const european = /(equipa|stock|actual|planeado|facto|ecrã|autocarro|comboio)/i;
+    for (const term of HARDWARE_TERMS) {
+      for (const [field, value] of [
+        ["termPt", term.termPt],
+        ["definitionPt", term.definitionPt],
+        ["consequencePt", term.consequencePt],
+      ] as const) {
+        const hit = value.match(european);
+        assert.ok(
+          !hit,
+          `${term.id}.${field} uses the European form "${hit?.[0]}" — this tree is pt-BR`,
+        );
+      }
     }
   });
 

@@ -44,7 +44,7 @@ export default function CertificacionesPagePt() {
           </div>
           <div className="col-span-full lg:col-span-5 xl:col-span-9">
             <p className="text-kicker uppercase tracking-[0.14em] text-ink-secondary">
-              Evidencia de calidad
+              Evidência de qualidade
             </p>
             <h1 className="mt-16 text-h1 text-ink">
               A evidência pertence a um modelo, não a uma afirmação comercial.
@@ -52,15 +52,15 @@ export default function CertificacionesPagePt() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Estos tres registros son de Canton Hyland y se publican con el alcance exacto
-              de modelo que figura impreso en el documento de respaldo. El informe de un
-              modelo no se presenta como aprobación de otro producto ni de toda una familia
-              del catálogo.
+              Estes três registros são da Canton Hyland e são publicados com o escopo de
+              modelo exato que está impresso no documento de respaldo. O relatório de um
+              modelo não é apresentado como aprovação de outro produto nem de uma família
+              inteira do catálogo.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              Las copias completas de los informes se facilitan a través del equipo de
-              exportación únicamente cuando se ha confirmado el permiso de redistribución
-              del documento y la correspondencia con el modelo solicitado.
+              As cópias completas dos relatórios são fornecidas pela equipe de exportação
+              somente depois de confirmadas a permissão de redistribuição do documento e a
+              correspondência com o modelo solicitado.
             </p>
           </div>
         </section>
@@ -88,8 +88,8 @@ export default function CertificacionesPagePt() {
               <div className="col-span-full sm:col-span-3 md:col-span-5 xl:col-span-10">
                 <h2 className="text-h2 text-ink">{certificate.title}</h2>
                 <p className="mt-16 max-w-[60ch] text-c1 text-ink-secondary">
-                  Los datos de registro son públicos; el documento completo se obtiene
-                  mediante una solicitud controlada de documentación técnica.
+                  Os dados de registro são públicos; o documento completo é obtido por
+                  meio de uma solicitação controlada de documentação técnica.
                 </p>
               </div>
               <dl className="col-span-full grid grid-cols-1 gap-16 md:col-span-5 md:col-start-8 xl:col-span-9 xl:col-start-16">
@@ -110,9 +110,9 @@ export default function CertificacionesPagePt() {
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Indíquenos la norma exigida, el número de modelo y el mercado de destino. El
-              equipo de exportación confirmará si el documento nombra ese modelo exacto
-              antes de facilitar una copia.
+              Diga qual norma é exigida, o número do modelo e o mercado de destino. A
+              equipe de exportação confirma se o documento nomeia esse modelo exato antes
+              de enviar uma cópia.
             </p>
             <div className="mt-24">
               <ArrowLink href="/pt/contact/">Pedir documentação técnica</ArrowLink>

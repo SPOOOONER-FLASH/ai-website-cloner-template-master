@@ -76,19 +76,23 @@ export function featureColumns(): FeatureColumn[] {
       href: {
         en: "/news/master-key-systems-how-many-levels-you-need/",
         es: "/es/news/master-key-systems-how-many-levels-you-need/",
+        pt: "/pt/news/master-key-systems-how-many-levels-you-need/",
       },
-      eyebrow: { en: "Column · Keying", es: "Columna · Amaestramiento" },
+      eyebrow: { en: "Column · Keying", es: "Columna · Amaestramiento", pt: "Coluna · Chaves" },
       title: {
         en: "How many levels your master key system needs",
         es: "Cuántos niveles necesita su amaestramiento",
+        pt: "Quantos níveis o seu sistema de chave-mestra precisa ter",
       },
       body: {
         en: "A hierarchy is a decision about who passes which door, not a hardware specification. Five levels, from grand-grand master down to the change key, and what we need from you to cut the chart.",
         es: "Una jerarquía es una decisión sobre quién pasa por qué puerta, no una especificación de herraje. Cinco niveles, del gran maestro general a la llave de cambio, y qué necesitamos de usted para trazar el esquema.",
+        pt: "Uma hierarquia é uma decisão sobre quem passa por qual porta, não uma especificação de ferragem. Cinco níveis, da chave grande-mestra geral até a chave de mudança, e o que precisamos de você para desenhar o quadro.",
       },
       figure: {
         en: `${keyable} models can be keyed alike or master keyed`,
         es: `${keyable} modelos admiten llave igual o amaestramiento`,
+        pt: `${keyable} modelos aceitam chave igual ou chave-mestra`,
       },
       /*
         The one column with something to DO at the end of it. The article asks for a door
@@ -100,6 +104,7 @@ export function featureColumns(): FeatureColumn[] {
         href: "/downloads/master-key-plan-sheet.xlsx",
         en: "Download the plan sheet (XLSX)",
         es: "Descargar la hoja de plan (XLSX)",
+        pt: "Baixar a planilha do plano (XLSX)",
       },
       image: {
         src: "/images/editorial/hyde-real-cylinder-plate.webp",
@@ -112,19 +117,27 @@ export function featureColumns(): FeatureColumn[] {
       href: {
         en: "/news/door-coordinator-double-fire-door/",
         es: "/es/news/door-coordinator-double-fire-door/",
+        pt: "/pt/news/door-coordinator-double-fire-door/",
       },
-      eyebrow: { en: "Column · Fire doors", es: "Columna · Puertas cortafuego" },
+      eyebrow: {
+        en: "Column · Fire doors",
+        es: "Columna · Puertas cortafuego",
+        pt: "Coluna · Portas corta-fogo",
+      },
       title: {
         en: "Why a double fire door needs a coordinator",
         es: "Por qué una cortafuego de dos hojas necesita selector",
+        pt: "Por que uma porta corta-fogo de duas folhas precisa de coordenador",
       },
       body: {
         en: "Two closers and no coordinator means the leaves close in whichever order the springs decide. If the active leaf lands first the door never latches — and an unlatched fire door is not a fire door.",
         es: "Dos cierrapuertas sin selector significa que las hojas cierran en el orden que decidan los muelles. Si la hoja activa llega primero, la puerta nunca acuña — y una cortafuego sin acuñar no es una cortafuego.",
+        pt: "Duas molas aéreas sem coordenador significa que as folhas fecham na ordem que as molas decidirem. Se a folha ativa chega primeiro, a porta nunca trava — e uma porta corta-fogo destravada não é uma porta corta-fogo.",
       },
       figure: {
         en: "Coordinated range 55–85kg per leaf",
         es: "Rango coordinado de 55–85 kg por hoja",
+        pt: "Faixa coordenada de 55–85 kg por folha",
       },
       image: {
         /*
@@ -146,19 +159,23 @@ export function featureColumns(): FeatureColumn[] {
       href: {
         en: "/news/mortise-lock-backset-and-centre-distance-guide/",
         es: "/es/news/mortise-lock-backset-and-centre-distance-guide/",
+        pt: "/pt/news/mortise-lock-backset-and-centre-distance-guide/",
       },
-      eyebrow: { en: "Column · Drawings", es: "Columna · Planos" },
+      eyebrow: { en: "Column · Drawings", es: "Columna · Planos", pt: "Coluna · Desenhos" },
       title: {
         en: "Backset and centre distance: reading a lock case number",
         es: "Entrada y distancia entre ejes: leer una referencia de cerradura",
+        pt: "Backset e distância entre eixos: como ler o número de uma caixa de fechadura",
       },
       body: {
         en: "Two numbers decide whether a case fits the door in front of you, and both are already in the model number. Our drawings show them to scale — and stop wherever the dimension stops, rather than completing an outline we cannot state.",
         es: "Dos números deciden si una caja entra en la puerta que tiene delante, y ambos están ya en la referencia. Nuestros planos los muestran a escala — y se detienen donde se detiene la cota, en lugar de completar un contorno que no podemos afirmar.",
+        pt: "Dois números decidem se uma caixa entra na porta que está à sua frente, e os dois já estão no número do modelo. Os nossos desenhos os mostram em escala — e param onde a cota para, em vez de completar um contorno que não podemos afirmar.",
       },
       figure: {
         en: `${drawings} dimension drawings, drawn only from published dimensions`,
         es: `${drawings} planos acotados, trazados solo con cotas publicadas`,
+        pt: `${drawings} desenhos cotados, traçados só com cotas publicadas`,
       },
       image: {
         src: "/images/editorial/news-mortise-lock-inspection.webp",
@@ -176,9 +193,9 @@ export function featureColumnsHeading(locale: Locale = "en"): string {
 }
 
 export function featureColumnsLede(locale: Locale = "en"): string {
-  return locale === "es"
-    ? "Temas que el catálogo puede responder a fondo, no productos sueltos."
-    : "Subjects the catalogue can answer in depth, rather than products on their own.";
+  if (locale === "es") return "Temas que el catálogo puede responder a fondo, no productos sueltos.";
+  if (locale === "pt") return "Temas que o catálogo responde a fundo, e não produtos soltos.";
+  return "Subjects the catalogue can answer in depth, rather than products on their own.";
 }
 
 export function featureColumnsCta(locale: Locale = "en"): string {

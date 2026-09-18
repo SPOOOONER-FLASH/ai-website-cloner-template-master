@@ -38,13 +38,15 @@ export interface CapabilityStep {
   ordinal: string;
   title: string;
   titleEs: string;
+  titlePt: string;
   body: string;
   bodyEs: string;
+  bodyPt: string;
   /**
    * One checkable figure, or null. Null is a real value here: a step with nothing
    * countable behind it shows nothing rather than a rounded guess.
    */
-  figure: { value: string; label: string; labelEs: string } | null;
+  figure: { value: string; label: string; labelEs: string; labelPt: string } | null;
 }
 
 function stat(label: string): string | null {
@@ -71,40 +73,57 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       ordinal: "01",
       title: "Tooling",
       titleEs: "Utillaje",
+      titlePt: "Ferramental",
       body:
         "The moulds and dies behind the catalogue are ours. That is why changing a lever profile, a rosette, a plate or a backset is a normal order here rather than a special project — and why an OEM part starts from a sample, a drawing or a photograph instead of from a catalogue page. Where no mould exists for the form you want, we cut one.",
       bodyEs:
         "Los moldes y matrices que hay detrás del catálogo son nuestros. Por eso cambiar el perfil de una manilla, una roseta, una placa o una distancia al eje es aquí un pedido normal y no un proyecto especial — y por eso una pieza OEM parte de una muestra, un plano o una fotografía, no de una página de catálogo. Si no existe molde para la forma que usted quiere, lo fabricamos.",
-      figure: { value: String(models), label: "models in production", labelEs: "modelos en producción" },
+      bodyPt:
+        "Os moldes e as matrizes por trás do catálogo são nossos. É por isso que mudar o perfil de uma maçaneta, uma roseta, um espelho ou um backset aqui é um pedido normal e não um projeto especial — e por isso uma peça OEM parte de uma amostra, de um desenho ou de uma fotografia, e não de uma página de catálogo. Se não existe molde para a forma que você quer, nós fazemos um.",
+      figure: {
+        value: String(models),
+        label: "models in production",
+        labelEs: "modelos en producción",
+        labelPt: "modelos em produção",
+      },
     },
     {
       ordinal: "02",
       title: "Stamping",
       titleEs: "Estampación",
+      titlePt: "Estampagem",
       body:
         "Plate, rose and lever blanks are pressed in house from brass, stainless steel and zinc alloy. Working from our own tooling is what keeps the hole positions on the hundredth plate identical to the first — which matters more than it sounds, because a fixing centre that has drifted two millimetres cannot be corrected on site.",
       bodyEs:
         "Las placas, rosetas y cuerpos de manilla se estampan en planta a partir de latón, acero inoxidable y zamak. Trabajar con utillaje propio es lo que mantiene la posición de los taladros idéntica en la placa número cien y en la primera — algo más importante de lo que parece, porque una distancia entre fijaciones desviada dos milímetros no se corrige en obra.",
+      bodyPt:
+        "Espelhos, rosetas e corpos de maçaneta são estampados aqui dentro, a partir de latão, aço inoxidável e zamak. Trabalhar com ferramental próprio é o que mantém a posição dos furos idêntica no espelho número cem e no primeiro — o que importa mais do que parece, porque um entre-eixos de fixação dois milímetros fora não se corrige em obra.",
       figure: null,
     },
     {
       ordinal: "03",
       title: "Polishing",
       titleEs: "Pulido",
+      titlePt: "Polimento",
       body:
         "Every visible face is polished before it is plated, because plating does not hide what is underneath it — it magnifies it. This is the slowest step in the chain and the one that separates hardware that photographs well from hardware that still looks right after it is installed under a downlight.",
       bodyEs:
         "Toda cara vista se pule antes del recubrimiento, porque el recubrimiento no oculta lo que hay debajo: lo amplifica. Es el paso más lento de la cadena y el que separa un herraje que sale bien en fotografía de uno que sigue viéndose bien ya instalado bajo un foco.",
+      bodyPt:
+        "Toda face aparente é polida antes de receber o banho, porque o banho não esconde o que está embaixo: ele amplia. É a etapa mais lenta da cadeia e a que separa uma ferragem que fica bem na fotografia de uma que continua boa depois de instalada sob uma luminária.",
       figure: null,
     },
     {
       ordinal: "04",
       title: "Finishing",
       titleEs: "Acabado",
+      titlePt: "Acabamento",
       body:
         "Polished brass, antique brass, satin nickel, satin chrome, black nickel, satin and polished stainless. A finish code is not decoration — it is what decides whether a handle survives a coastal doorway or a wet room, and it is the one specification most often left off a purchase order.",
       bodyEs:
         "Latón pulido, latón antiguo, níquel satinado, cromo satinado, níquel negro, inoxidable satinado y pulido. Un código de acabado no es decoración: decide si una manilla sobrevive en una puerta costera o en una zona húmeda, y es la especificación que más veces falta en un pedido.",
+      bodyPt:
+        "Latão polido, latão antigo, níquel acetinado, cromo acetinado, níquel preto, inoxidável acetinado e polido. Um código de acabamento não é enfeite: é o que decide se uma maçaneta sobrevive numa porta de orla marítima ou numa área molhada, e é a especificação que mais falta num pedido de compra.",
       /*
         No count here, though one is trivially available. `normaliseFinishes` over the
         whole catalogue returns 76 distinct values, but its own source comment calls
@@ -121,20 +140,26 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       ordinal: "05",
       title: "Assembly",
       titleEs: "Montaje",
+      titlePt: "Montagem",
       body:
         "Cases, cylinders, springs, spindles and trim are brought together and function-tested as a set. A lock is not the sum of parts that each pass on their own — a latch and a strike that are both in tolerance can still bind, and that is only found by turning the handle.",
       bodyEs:
         "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un picaporte y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manilla.",
+      bodyPt:
+        "Caixas, cilindros, molas, eixos quadrados e guarnições são montados e testados funcionando como conjunto. Uma fechadura não é a soma de peças que passam separadamente: uma lingueta e uma contratesta ambas dentro da tolerância ainda podem emperrar, e isso só se descobre girando a maçaneta.",
       figure: null,
     },
     {
       ordinal: "06",
       title: "Inspection",
       titleEs: "Inspección",
+      titlePt: "Inspeção",
       body:
         "Dimensional and functional checks run against the same drawings the catalogue publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.",
       bodyEs:
         "Los controles dimensionales y funcionales se hacen contra los mismos planos que publica el catálogo, bajo un sistema de calidad auditado según ISO 9001. La inspección por tercero antes del embarque es bienvenida y no hay que negociarla: díganos qué inspector y reservamos la fecha.",
+      bodyPt:
+        "Os controles dimensionais e funcionais são feitos contra os mesmos desenhos que o catálogo publica, sob um sistema de qualidade auditado conforme a ISO 9001. A inspeção por terceiros antes do embarque é bem-vinda e não precisa ser negociada: diga qual inspetor e reservamos a data.",
       figure: quality
         ? {
             value: quality.split(" since ")[0],
@@ -144,6 +169,9 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
             labelEs: quality.includes(" since ")
               ? `certificado desde ${quality.split(" since ")[1]}`
               : "sistema de calidad",
+            labelPt: quality.includes(" since ")
+              ? `certificado desde ${quality.split(" since ")[1]}`
+              : "sistema de qualidade",
           }
         : null,
     },
@@ -151,11 +179,19 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       ordinal: "07",
       title: "Packing + export",
       titleEs: "Embalaje + exportación",
+      titlePt: "Embalagem + exportação",
       body:
         "Your carton, your markings, your logo. We ship to distributors, contractors and OEM partners in export markets and issue the documents an importer actually needs at the border rather than after it. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order.",
       bodyEs:
         "Su caja, su marcaje, su logotipo. Enviamos a distribuidores, contratistas y socios OEM en mercados de exportación, y emitimos los documentos que un importador necesita realmente en la aduana, no después. El plazo de producción parte de 30 días desde la confirmación del pedido; la fecha exacta depende de los modelos, las cantidades y los acabados.",
-      figure: { value: "30", label: "days minimum lead time", labelEs: "días de plazo mínimo" },
+      bodyPt:
+        "A sua caixa, a sua marcação, o seu logotipo. Embarcamos para distribuidores, construtoras e parceiros OEM em mercados de exportação, e emitimos os documentos de que um importador realmente precisa na aduana, e não depois dela. O prazo de produção parte de 30 dias a contar da confirmação do pedido; a data exata depende dos modelos, das quantidades e dos acabamentos.",
+      figure: {
+        value: "30",
+        label: "days minimum lead time",
+        labelEs: "días de plazo mínimo",
+        labelPt: "dias de prazo mínimo",
+      },
     },
   ];
 
@@ -183,5 +219,13 @@ export const capabilityCopy = {
       "Somos la fábrica, no una oficina comercial delante de una. Todo lo que sigue ocurre en nuestra propia planta, del molde a la caja — por eso un cambio de acabado o un plano del propio cliente aquí es una cuestión de programación y no de subcontratación.",
     progress: "Paso",
     cta: "Hablar de producción OEM o marca propia",
+  },
+  pt: {
+    eyebrow: "Fabricação",
+    title: "Uma cadeia, um teto",
+    intro:
+      "Somos a fábrica, e não um escritório comercial na frente de uma. Tudo o que vem abaixo acontece no nosso próprio chão, do molde à caixa — e é por isso que uma troca de acabamento ou um desenho do próprio cliente aqui é uma questão de programação, e não de subcontratação.",
+    progress: "Etapa",
+    cta: "Falar sobre produção OEM ou marca própria",
   },
 } as const;

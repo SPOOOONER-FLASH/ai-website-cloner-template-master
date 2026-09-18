@@ -10,16 +10,31 @@ export function ProjectCard({
   project: Project;
   locale?: Locale;
 }) {
-  const spanish = locale === "es";
-  const name = spanish ? project.nameEs ?? project.name : project.name;
-  const buildingType = spanish
-    ? project.buildingTypeEs ?? project.buildingType
-    : project.buildingType;
-  const summary = spanish ? project.summaryEs ?? project.summary : project.summary;
-  const href = spanish ? `/es/projects/${project.slug}/` : `/projects/${project.slug}/`;
-  const imageLabel = spanish
-    ? project.heroImage.labelEs ?? project.heroImage.label
-    : project.heroImage.label;
+  /*
+    Three locales, and the href is as much of the translation as the text is. This card
+    built `/projects/<slug>/` for anything that was not Spanish, so every application on
+    the Portuguese listing handed the reader to the English tree — and from there the whole
+    visit is English. See src/data/locale-route-parity.test.ts.
+  */
+  const pick = (en: string, es?: string, pt?: string) =>
+    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
+
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  const name = pick(project.name, project.nameEs, project.namePt);
+  const buildingType = pick(
+    project.buildingType,
+    project.buildingTypeEs,
+    project.buildingTypePt,
+  );
+  const summary = pick(project.summary, project.summaryEs, project.summaryPt);
+  const href = `${prefix}/projects/${project.slug}/`;
+  const imageLabel = pick(project.heroImage.label, project.heroImage.labelEs);
+  const eyebrow =
+    locale === "es"
+      ? "Aplicación representativa"
+      : locale === "pt"
+        ? "Aplicação representativa"
+        : "Representative application";
 
   return (
     <Link
@@ -34,7 +49,7 @@ export function ProjectCard({
       />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-          {spanish ? "Aplicación representativa" : "Representative application"}
+          {eyebrow}
         </p>
         <h2 className="title-marker mt-16 text-h3 text-ink">
           {name}

@@ -9,9 +9,9 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "pt",
-  title: "Contacto — Equipa de exportação",
+  title: "Contato — Equipe de exportação",
   description:
-    "Fale com a nossa equipa de exportação sobre produto, amostras, OEM ou obras. Indique o tipo de porta, o acabamento, a norma e a quantidade.",
+    "Fale com a nossa equipe de exportação sobre produto, amostras, OEM ou obras. Indique o tipo de porta, o acabamento, a norma e a quantidade.",
 });
 
 export default function ContactoPagePt() {
@@ -20,22 +20,22 @@ export default function ContactoPagePt() {
       <div className="layout">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">
-            <h1 className="text-h1 text-ink">Contacto</h1>
+            <h1 className="text-h1 text-ink">Contato</h1>
             <p className="mt-24 text-c1 text-ink">
-              Hable con nuestro equipo de exportación sobre selección de producto, muestras,
-              trabajo OEM o una cotización de proyecto.
+              Fale com a nossa equipe de exportação sobre seleção de produto, amostras,
+              trabalho OEM ou uma cotação de obra.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
               Indique o tipo de porta, o acabamento, a norma aplicável, a quantidade e o mercado de destino.
             </p>
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Catálogo actual</h2>
+              <h2 className="text-h3 text-ink">Catálogo atual</h2>
               <a
                 className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
                 href="/downloads/canton-hyland-product-catalogue-2026.pdf"
                 download
               >
-                Descarregar catálogo (PDF, 4,4 MB)
+                Baixar catálogo (PDF, 4,4 MB)
               </a>
             </div>
 
@@ -54,10 +54,10 @@ export default function ContactoPagePt() {
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Dirección</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
-                Fabricação, e onde recebemos as visitas de inspecção.
+                Fabricação, e onde recebemos as visitas de inspeção.
               </p>
 
-              {/* La oficina de Lehe Road no se publica — ver la nota en la página inglesa. */}
+              {/* The Lehe Road office is not published — see the note on the English page. */}
               {siteSettings.contact.factoryAddress ? (
                 <div className="mt-24">
                   <p className="text-c2 text-ink-secondary">Fábrica</p>
@@ -70,18 +70,18 @@ export default function ContactoPagePt() {
               ) : null}
             </div>
 
-            {/* Los buzones, separados por asunto — ver la nota en la página inglesa. */}
+            {/* The mailboxes, split by subject — see the note on the English page. */}
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Escreva-nos directamente</h2>
+              <h2 className="text-h3 text-ink">Escreva para nós diretamente</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
-                Atendidos desde Zhongshan y Alemania. Elija el que corresponda a su
-                consulta y llegará al escritorio correcto a la primera.
+                Atendidos de Zhongshan e da Alemanha. Escolha o que corresponde à sua
+                consulta e ela chega à mesa certa de primeira.
               </p>
               <dl className="mt-24">
                 {[
                   {
                     email: siteSettings.contact.email,
-                    label: "Pedidos, precios y muestras",
+                    label: "Pedidos, preços e amostras",
                   },
                   {
                     email: siteSettings.contact.technicalEmail,
@@ -116,10 +116,10 @@ export default function ContactoPagePt() {
             </div>
 
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Contactos de representação</h2>
+              <h2 className="text-h3 text-ink">Contatos de representação</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
-                La fabricación está en Zhongshan. Estas son las personas de contacto en
-                cada mercado.
+                A fabricação fica em Zhongshan. Estas são as pessoas de contato em cada
+                mercado.
               </p>
               <ul className="mt-24 space-y-24">
                 {representatives.map((rep) => (

@@ -34,7 +34,7 @@ const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> 
     title: "Catálogo de produtos",
     note: "O catálogo vigente fornecido pela Canton Hyland. O documento está em inglês.",
   },
-  /* Misma agrupación que en la página inglesa: una hoja de planificación se devuelve, no se lee. */
+  /* Same grouping as the English page: a planning sheet is returned, not read. */
   {
     kind: "planning",
     title: "Planilhas de planejamento",

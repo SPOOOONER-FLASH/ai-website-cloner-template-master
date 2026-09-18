@@ -60,11 +60,13 @@ export interface FinishCode {
   /** English name. Empty string is not allowed — an unconfirmed code has no name. */
   name: string | null;
   nameEs: string | null;
+  namePt: string | null;
   family: FinishFamily | null;
   evidence: CodeEvidence;
   /** Shown under the row. Say what is uncertain, not what is reassuring. */
   note?: string;
   noteEs?: string;
+  notePt?: string;
 }
 
 /**
@@ -78,6 +80,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SSS",
     name: "Satin Stainless Steel",
     nameEs: "Acero inoxidable satinado",
+    namePt: "Aço inoxidável acetinado",
     family: "solid",
     evidence: "catalogue",
     note: "Written out in full on 42 catalogue records as “Satin Stainless Steel (SSS)”. Solid stainless, not a plating — the colour goes all the way through.",
@@ -87,6 +90,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "PSS",
     name: "Polished Stainless Steel",
     nameEs: "Acero inoxidable pulido",
+    namePt: "Aço inoxidável polido",
     family: "solid",
     evidence: "catalogue",
     note: "Same 42 records. Mirror polish on the same base metal as SSS.",
@@ -96,6 +100,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SS",
     name: "Stainless Steel",
     nameEs: "Acero inoxidable",
+    namePt: "Aço inoxidável",
     family: "solid",
     evidence: "catalogue",
     note: "The older unqualified form, still on the panic-exit range. Where a record carries SS rather than SSS or PSS, the polish level has not been stated — ask before specifying.",
@@ -105,6 +110,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "PB",
     name: "Polished Brass",
     nameEs: "Latón pulido",
+    namePt: "Latão polido",
     family: "plated",
     evidence: "catalogue",
     note: "Five records spell it out, as “PB=Polish Brass” and “PB=polished brass”.",
@@ -114,6 +120,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "AB",
     name: "Antique Brass",
     nameEs: "Latón antiguo",
+    namePt: "Latão antigo",
     family: "plated",
     evidence: "catalogue",
     note: "Written out as “Antique Brass (AB)”.",
@@ -123,6 +130,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "AC",
     name: "Antique Copper",
     nameEs: "Cobre antiguo",
+    namePt: "Cobre antigo",
     family: "plated",
     evidence: "catalogue",
     note: "Appears both as the code and spelled out as a finish value on the same families.",
@@ -132,6 +140,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "CP",
     name: "Chrome Plated",
     nameEs: "Cromado",
+    namePt: "Cromado",
     family: "plated",
     evidence: "catalogue",
     note: "Written out as “Chrome Plated (CP)”.",
@@ -141,6 +150,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SC",
     name: "Satin Chrome",
     nameEs: "Cromo satinado",
+    namePt: "Cromo acetinado",
     family: "plated",
     evidence: "catalogue",
     note: "Written out as “SC= Satin chrome”.",
@@ -150,6 +160,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SN",
     name: "Satin Nickel",
     nameEs: "Níquel satinado",
+    namePt: "Níquel acetinado",
     family: "plated",
     evidence: "catalogue",
     note: "Written out as “SN=Satin Nickel”. The most common finish in the lever and cylinder ranges.",
@@ -159,6 +170,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "NP",
     name: "Nickel Plated",
     nameEs: "Niquelado",
+    namePt: "Niquelado",
     family: "plated",
     evidence: "catalogue",
     note: "Appears spelled out as “Nickel-plated” on records that also carry the code.",
@@ -168,6 +180,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BN",
     name: "Black Nickel",
     nameEs: "Níquel negro",
+    namePt: "Níquel preto",
     family: "plated",
     evidence: "catalogue",
     note: "One record carries “BN Black Nickle” — the factory's own spelling of the expansion.",
@@ -177,6 +190,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "GM",
     name: "Gun Metal",
     nameEs: "Gris grafito",
+    namePt: "Metal escurecido",
     family: "coated",
     evidence: "client",
     note: "Written out as “Gun metal (GM)” in the catalogue and confirmed by the client on 2026-09-13 for LH852 GMBK. A dark grey, not a black.",
@@ -186,6 +200,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "MB",
     name: "Matte Black",
     nameEs: "Negro mate",
+    namePt: "Preto fosco",
     family: "coated",
     evidence: "catalogue",
     note: "Records carrying the code also carry “Matte Black” and “Matt Black” as the written value.",
@@ -195,6 +210,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BL",
     name: "Black",
     nameEs: "Negro",
+    namePt: "Preto",
     family: "coated",
     evidence: "catalogue",
     note: "Unqualified black. Where the record does not also say powder-coated or painted, the process has not been stated.",
@@ -204,6 +220,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "PVD",
     name: "PVD",
     nameEs: "PVD",
+    namePt: "PVD",
     family: "process",
     evidence: "catalogue",
     note: "A deposition process rather than a colour — PVD names how the layer is applied, and still needs a colour beside it.",
@@ -217,6 +234,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SB",
     name: "Satin Brass",
     nameEs: "Latón satinado",
+    namePt: "Latão acetinado",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 铜砂光 — brass, brushed rather than polished. The satin counterpart to BP/PB.",
@@ -226,6 +244,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BP",
     name: "Polished Brass",
     nameEs: "Latón pulido",
+    namePt: "Latão polido",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 铜亮光. ⚠ Same finish as PB, with the letters reversed — and PB is the form written out in full on five catalogue records. BP/PB and NB/BN are the two reversal pairs in this table; they are the most likely place for a finish to be ordered wrong.",
@@ -235,6 +254,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "NB",
     name: "Black Nickel",
     nameEs: "Níquel negro",
+    namePt: "Níquel preto",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 黑镍. ⚠ This is the same finish as BN, two rows above, with the letters the other way round. Both are in use on catalogue records. Quote the model's own code as printed and do not normalise it.",
@@ -244,6 +264,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "GP",
     name: "Polished Gold",
     nameEs: "Oro pulido",
+    namePt: "Dourado polido",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 亮金色, a bright gold plate. The only gold in the range — nothing else here shares it, so GP is unambiguous on an order.",
@@ -253,6 +274,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "CB",
     name: "Bright Chrome",
     nameEs: "Cromo brillante",
+    namePt: "Cromo brilhante",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 光铬. ⚠ BC was confirmed as the same finish in the same message. An earlier note here reasoned that CB and BC must differ because one record lists both; that record is now best read as listing one finish twice. Confirm against a sample before a first order.",
@@ -262,6 +284,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BC",
     name: "Bright Chrome",
     nameEs: "Cromo brillante",
+    namePt: "Cromo brilhante",
     family: "plated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 光铬 — the same words given for CB. See that row. Both spellings appear in the catalogue and neither is being retired, so read whichever the model prints.",
@@ -271,6 +294,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BRN",
     name: "Black",
     nameEs: "Negro",
+    namePt: "Preto",
     family: "coated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 黑色. ⚠ Read this one carefully if you know the letters from elsewhere: in general trade use BRN reads as brown or bronze, and here it does not — the factory uses it for black. ORB and BL are also black in this catalogue. Three codes, one colour.",
@@ -280,6 +304,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "SP",
     name: "Polished Stainless Steel",
     nameEs: "Acero inoxidable pulido",
+    namePt: "Aço inoxidável polido",
     family: "solid",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 不锈钢抛亮光. Same finish as PSS at the top of this table, on a shorter code. Solid stainless, not a plating.",
@@ -289,6 +314,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "BS",
     name: "Satin",
     nameEs: "Satinado",
+    namePt: "Acetinado",
     family: "process",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 砂光. ⚠ It states the polish level and not the metal — satin stainless and satin brass are both 砂光 and are not interchangeable. Where a model prints BS alone, ask which base metal before specifying, exactly as with SS.",
@@ -298,6 +324,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "ORB",
     name: "Black",
     nameEs: "Negro",
+    namePt: "Preto",
     family: "coated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 黑色. ⚠ In North American usage ORB is oil-rubbed bronze, a dark brown with copper showing through the wear points. It does not mean that here. If a drawing calls for oil-rubbed bronze, this code will not supply it — ask.",
@@ -307,6 +334,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "N",
     name: null,
     nameEs: null,
+    namePt: null,
     family: null,
     evidence: "unconfirmed",
     note: "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalogue's vocabulary.",
@@ -316,6 +344,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     code: "WL",
     name: "White",
     nameEs: "Blanco",
+    namePt: "Branco",
     family: "coated",
     evidence: "client",
     note: "Client confirmation, 2026-09-15: 白色. A coating, so the colour is on the surface — treat it as you would MB for wear at the strike and around the fixings.",
@@ -336,9 +365,11 @@ export interface FunctionCode {
   code: string;
   name: string | null;
   nameEs: string | null;
+  namePt: string | null;
   evidence: CodeEvidence;
   note?: string;
   noteEs?: string;
+  notePt?: string;
 }
 
 export const FUNCTION_CODES: readonly FunctionCode[] = [
@@ -346,6 +377,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "ET",
     name: "Entrance — keyed outside",
     nameEs: "Entrada — con llave por fuera",
+    namePt: "Entrada — chaveada por fora",
     evidence: "catalogue",
     note: "The most common suffix in the catalogue. Key outside, turn or lever inside.",
     noteEs: "El sufijo más frecuente del catálogo. Llave por fuera, pomo o manilla por dentro.",
@@ -354,6 +386,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "BK",
     name: "Privacy — bathroom, turn button inside",
     nameEs: "Privacidad — baño, botón interior",
+    namePt: "Banheiro — botão de giro por dentro",
     evidence: "catalogue",
     note: "Not keyed. A turn button inside and an emergency release outside — see the LH852 GMBK rose, where the coin slot is visible in the product photograph.",
     noteEs: "Sin llave. Botón interior y desbloqueo de emergencia exterior.",
@@ -362,6 +395,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "PS",
     name: "Passage — no locking",
     nameEs: "Paso — sin bloqueo",
+    namePt: "Passagem — sem travamento",
     evidence: "catalogue",
     note: "Latch only. Specified for corridors and rooms that must never be lockable.",
     noteEs: "Sólo picaporte. Se especifica en pasillos y estancias que nunca deben poder cerrarse con llave.",
@@ -370,6 +404,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "CL",
     name: "Communication",
     nameEs: "Comunicación",
+    namePt: "Comunicação",
     evidence: "catalogue",
     note: "Named on model 5807 SSCL.",
     noteEs: "Indicado en el modelo 5807 SSCL.",
@@ -378,6 +413,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "CC",
     name: "Entrance and communication",
     nameEs: "Entrada y comunicación",
+    namePt: "Entrada e comunicação",
     evidence: "catalogue",
     note: "Named on model 5870 SSCC.",
     noteEs: "Indicado en el modelo 5870 SSCC.",
@@ -386,6 +422,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "CR",
     name: "Classroom",
     nameEs: "Aula",
+    namePt: "Sala de aula",
     evidence: "catalogue",
     note: "Named on model 5807 SSCR. Keyed outside only; the inside lever is always free.",
     noteEs: "Indicado en el modelo 5807 SSCR. Con llave sólo por fuera; la manilla interior queda siempre libre.",
@@ -394,6 +431,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "EL",
     name: "Exit latch",
     nameEs: "Picaporte de salida",
+    namePt: "Trinco de saída",
     evidence: "catalogue",
     note: "Named on model 5807 SSEL.",
     noteEs: "Indicado en el modelo 5807 SSEL.",
@@ -402,6 +440,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "DK",
     name: null,
     nameEs: null,
+    namePt: null,
     evidence: "unconfirmed",
     note: "Ten cylinders carry it. Double Key — key on both sides — is the standard reading in the euro-cylinder trade, and our records for these models carry no specifications at all, so we are not printing it as fact.",
     noteEs: "Diez cilindros lo llevan. «Doble llave» es la lectura habitual, pero estas fichas no tienen especificaciones, así que no lo damos por hecho.",
@@ -410,6 +449,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "KT",
     name: null,
     nameEs: null,
+    namePt: null,
     evidence: "unconfirmed",
     note: "Sixteen cylinders. Key-and-Turn — key one side, thumbturn the other — fits the pattern beside DK, and is not confirmed.",
     noteEs: "Dieciséis cilindros. «Llave y pomo» encaja con el patrón junto a DK, pero no está confirmado.",
@@ -418,6 +458,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "IK",
     name: null,
     nameEs: null,
+    namePt: null,
     evidence: "unconfirmed",
     note: "Two cylinders only.",
     noteEs: "Sólo dos cilindros.",
@@ -426,6 +467,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "PT",
     name: null,
     nameEs: null,
+    namePt: null,
     evidence: "unconfirmed",
     note: "One tubular lock.",
     noteEs: "Una cerradura tubular.",
@@ -434,6 +476,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     code: "BS",
     name: null,
     nameEs: null,
+    namePt: null,
     evidence: "unconfirmed",
     note: "One cylindrical lock. Shares its letters with the finish code BS, which is why the parser reads position rather than letters — see src/lib/order-code.ts.",
     noteEs: "Una cerradura cilíndrica. Comparte letras con el acabado BS, por eso el analizador lee la posición y no las letras.",
@@ -462,9 +505,11 @@ export interface DoorConfigurationCode {
   code: string;
   name: string | null;
   nameEs: string | null;
+  namePt: string | null;
   evidence: CodeEvidence;
   note?: string;
   noteEs?: string;
+  notePt?: string;
 }
 
 export const DOOR_CONFIGURATION_CODES: readonly DoorConfigurationCode[] = [
@@ -472,6 +517,7 @@ export const DOOR_CONFIGURATION_CODES: readonly DoorConfigurationCode[] = [
     code: "S",
     name: "Single door",
     nameEs: "Puerta de una hoja",
+    namePt: "Porta simples",
     evidence: "catalogue",
     note: "On panic exit devices only — 316-S carries “Door Type = Single Door”. On other ranges the same letter marks a variant we have no statement for.",
     noteEs: "Sólo en barras antipánico: 316-S indica «Door Type = Single Door». En otras gamas la misma letra marca una variante sin declarar.",
@@ -480,6 +526,7 @@ export const DOOR_CONFIGURATION_CODES: readonly DoorConfigurationCode[] = [
     code: "D",
     name: "Double door",
     nameEs: "Puerta de dos hojas",
+    namePt: "Porta dupla",
     evidence: "catalogue",
     note: "On panic exit devices only — 316-D carries “Door Type = Double Door”, and 309-D is named as the double-door device. A double-leaf escape door needs the coordinated pair, not two singles.",
     noteEs: "Sólo en barras antipánico: 316-D indica «Door Type = Double Door». Una puerta de escape de dos hojas necesita el conjunto coordinado, no dos unidades individuales.",

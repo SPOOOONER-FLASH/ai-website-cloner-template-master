@@ -104,9 +104,21 @@ test("every new homepage source has responsive candidates and provenance", () =>
   }
 });
 
-test("Spanish FAQ card falls back to the existing English FAQ route", () => {
-  assert.match(homeEs, /href: "\/faq"/);
-  assert.doesNotMatch(homeEs, /href: "\/es\/faq"/);
+/**
+ * Reversed 2026-09-17, deliberately, because the fact it was locked against changed.
+ *
+ * The original rule was written on 2026-08-31: there was no Spanish FAQ page, so the card
+ * pointed at /faq/ on purpose rather than at a 404. `src/app/es/faq/page.tsx` shipped on
+ * 2026-09-10 and nobody came back to the card, so for a week the Spanish home page sent
+ * its readers into the English tree — and from an English page every subsequent link is
+ * English too, which is the ejection the client reported on the Portuguese side.
+ *
+ * `src/data/locale-route-parity.test.ts` now asserts this rule for every link in both
+ * trees. This test stays as the record of why the value flipped.
+ */
+test("the Spanish FAQ card points at the Spanish FAQ page", () => {
+  assert.match(homeEs, /href: "\/es\/faq"/);
+  assert.doesNotMatch(homeEs, /href: "\/faq"/);
 });
 
 test("the historical generated library remains archived with provenance, not approved for new product use", () => {

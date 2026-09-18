@@ -141,7 +141,7 @@ const COPY = {
     specifications: "Ficha técnica",
     configuration: "Configuração",
     certifications: "Normas e certificações",
-    downloads: "Descarregáveis",
+    downloads: "Downloads",
     nextSteps: "Passos seguintes",
     compareRange: "Comparar todos os modelos desta gama",
     compareHelp:
@@ -155,7 +155,7 @@ const COPY = {
     onRequest: "Informação disponível mediante pedido",
     referenceOnRequest: "Referência disponível mediante pedido",
     quote: "Pedir orçamento",
-    downloadCatalogue: "Descarregar o catálogo de exportação (PDF)",
+    downloadCatalogue: "Baixar o catálogo de exportação (PDF)",
     images: "Imagens do produto",
     watch: "Veja funcionar",
     breadcrumb: "Trilho de navegação",
@@ -166,13 +166,13 @@ const COPY = {
     ask: "Falar com um engenheiro",
     viewCertificate: "Ver certificado",
     noViews:
-      "Ainda não há mais vistas deste produto. Peça desenhos ou amostras à equipa de exportação.",
+      "Ainda não há mais vistas deste produto. Peça desenhos ou amostras à equipe de exportação.",
     noSpecs:
-      "As dimensões verificadas estão pendentes do catálogo técnico actual. Nenhum valor foi inferido a partir de produtos semelhantes.",
+      "As dimensões verificadas dependem do catálogo técnico atual. Nenhum valor foi inferido a partir de produtos semelhantes.",
     noCertificates:
-      "Não há certificado próprio deste modelo. As credenciais da empresa continuam disponíveis através da equipa de exportação.",
+      "Não há certificado próprio deste modelo. As credenciais da empresa seguem disponíveis através da equipe de exportação.",
     noDownloads:
-      "Fichas técnicas, ficheiros CAD e instruções de instalação disponíveis mediante pedido enquanto a biblioteca de descarregáveis é preparada.",
+      "Fichas técnicas, arquivos CAD e instruções de instalação disponíveis mediante pedido enquanto a biblioteca de downloads é preparada.",
     scope:
       "Antes de especificar, verifique que o âmbito do certificado inclui o modelo indicado.",
     related: "Produtos relacionados",
@@ -224,8 +224,16 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const t = COPY[locale];
   const es = locale === "es";
   const referenceModel = productModelFor(product.slug);
-  const name = (es && product.nameEs) || product.name;
-  const summary = (es && product.summaryEs) || product.summary;
+  /*
+    The product's OWN words. `(es && …)` answered only for Spanish, so the Portuguese page
+    carried an English name and an English lead paragraph beside a Portuguese spec table —
+    on 24 pages for the summary alone. English is the fallback, never Spanish.
+  */
+  const name =
+    (es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name;
+  const summary =
+    (es ? product.summaryEs : locale === "pt" ? product.summaryPt : undefined) ??
+    product.summary;
   /*
     Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
     on every Portuguese page while the title beside it was Portuguese — the page looked

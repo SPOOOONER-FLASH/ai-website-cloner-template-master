@@ -552,6 +552,20 @@ export const OPTION_NOTES_ES: Record<string, string> = {
  * which is visible and countable rather than silently Spanish.
  */
 export const OPTION_NOTES_PT: Record<string, string> = {
+  deadbolts:
+    "Uma trava lançada por chave ou botão de giro, sem mola atrás dela, de modo que não pode ser empurrada de volta. Vai acima de uma lingueta, e não no lugar dela.",
+  "floor-springs":
+    "Embutida no piso, sustenta todo o peso da porta e a fecha — a folha gira no eixo, não em dobradiças.",
+  "top-pivots":
+    "A metade de cima de um conjunto de pivô: ela posiciona a porta, e a mola de piso sustenta o peso.",
+  "pivot-top-patches":
+    "Prende o topo de uma folha de vidro temperado sem caixilho ao pivô. Escolhida para combinar com a mola de piso embaixo.",
+  "overhead-door-closers":
+    "Montadas na verga, e não no piso, para portas em que o piso não pode ser cortado.",
+  "hydraulic-hinges":
+    "Mola e dobradiça na mesma peça fundida — sem obra no piso e sem braço aparente.",
+  "brass-pull-handles":
+    "Puxadores de latão fundido e torneado em acabamento dourado — as mesmas fixações da linha de aço, outro metal.",
   "panic-exit-devices":
     "Barras horizontais que abrem uma porta de saída sob a pressão de quem sai. Exigidas em rotas de fuga de uso público.",
   "fire-door":

@@ -92,7 +92,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
     enPath: `/collections/${collection.slug}`,
     locale: "pt",
     title,
-    description: `${count} ${name.toLowerCase()} de la gama ${collection.category.name.toLowerCase()} de Canton Hyland, fabricados en Guangdong, China. Prazo a partir de 30 dias.`,
+    description: `${count} ${name.toLowerCase()} da linha ${collection.category.name.toLowerCase()} da Canton Hyland, fabricados em Guangdong, China. Prazo a partir de 30 dias.`,
     image: collection.category.image.src,
     imageAlt: collection.category.image.label,
   });
@@ -149,13 +149,13 @@ export default async function ColeccionPage({ params }: CollectionPageProps) {
             </div>
             <div className="col-span-full mt-24 xl:col-span-12 xl:col-start-13">
               <p className="text-lead text-ink">
-                {items.length} {collection.child.name.toLowerCase()} de la gama{" "}
-                {collection.category.name.toLowerCase()} de Canton Hyland.
+                {items.length} {collection.child.name.toLowerCase()} da linha{" "}
+                {collection.category.name.toLowerCase()} da Canton Hyland.
               </p>
               <p className="mt-24 text-c1 text-ink-secondary">
-                Fabricación en Zhongshan, Guangdong. El plazo de producción parte de 30
-                días desde la confirmación del pedido, y producimos bajo la marca de
-                nuestros clientes.
+                Fabricação em Zhongshan, Guangdong. O prazo de produção parte de 30 dias
+                a contar da confirmação do pedido, e produzimos sob a marca dos nossos
+                clientes.
               </p>
               <Link
                 href={`/pt/products/${collection.category.slug}/`}

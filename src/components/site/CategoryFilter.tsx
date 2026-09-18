@@ -73,7 +73,7 @@ const COPY = {
     showing: (from: number, to: number) => ` · a mostrar ${from}–${to}`,
     count: (n: number) => `${n} produto${n === 1 ? "" : "s"}`,
     empty:
-      "As fichas verificadas deste filtro ainda estão a ser preparadas. Escreva à equipa de exportação para receber o catálogo actual.",
+      "As fichas verificadas deste filtro ainda estão sendo preparadas. Escreva à equipe de exportação para receber o catálogo atual.",
   },
 } as const;
 

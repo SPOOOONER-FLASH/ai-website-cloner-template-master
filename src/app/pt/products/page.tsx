@@ -52,8 +52,8 @@ export default function ProdutosPagePt() {
           categoryCounts={categoryCounts}
         />
         <div className="layout mt-48">
-          <Link href="/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
-            Ferragens em detalhe — fotografias e selecção de componentes
+          <Link href="/pt/product-studies/" className="col-content short-marker short-marker-compact text-c1 text-ink">
+            Ferragens em detalhe — fotografias e seleção de componentes
           </Link>
         </div>
 
@@ -74,8 +74,9 @@ export default function ProdutosPagePt() {
             </div>
             <div className="col-span-full">
               <p className="max-w-[68ch] text-c1 text-ink-secondary">
-                Todos los modelos de una gama, una fila cada uno, con las especificaciones
-                que los distinguen —distancia al eje, entrepuntos, espesor de puerta,
+                Todos os modelos de uma linha, um por linha da tabela, com as
+                especificações que os distinguem — backset, distância entre eixos, espessura
+                de porta,
                 acabado. </p>
               <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
                 {categories
@@ -110,22 +111,22 @@ export default function ProdutosPagePt() {
               {/* Mirrors the English catalogue index — the configurator's only inbound
                   link on this side, and the reason it is not an orphan page. */}
               <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
-                ¿No sabe por qué atributo filtrar? El{" "}
+                Não sabe por qual atributo filtrar? O{" "}
                 <Link
-                  href="/configurator/"
+                  href="/pt/configurator/"
                   className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                 >
                   configurador guiado
                 </Link>{" "}
-                pregunta de una en una y nunca ofrece una opción que no lleve a ningún
-                sitio.
+                pergunta uma de cada vez e nunca oferece uma opção que não leve a lugar
+                nenhum.
               </p>
               <div className="mt-32 flex flex-wrap items-center gap-24">
                 <Link href="/pt/contact/" className="text-c1 text-brand hover:text-brand-hover">
-                  Escrever à equipa de exportação
+                  Escrever à equipe de exportação
                 </Link>
                 <Link
-                  href="/configurator/"
+                  href="/pt/configurator/"
                   className="text-c1 text-brand hover:text-brand-hover"
                 >
                   Abrir o configurador
@@ -139,7 +140,7 @@ export default function ProdutosPagePt() {
           <div className="col-content grid w-full grid-cols gap-x">
             <ProductIndexList
               products={publishedProducts}
-              label={`Los ${publishedProducts.length} modelos`}
+              label={`Os ${publishedProducts.length} modelos`}
               locale="pt"
             />
           </div>

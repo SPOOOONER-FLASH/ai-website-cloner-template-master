@@ -88,6 +88,9 @@ export function NewsDetail({
      strings. Portuguese falls back to English until those fields exist, which is the rule
      in src/lib/localised.ts and not an oversight. */
   const es = locale === "es";
+  /* English, never Spanish, for the fields that have no Portuguese yet. */
+  const pickText = (en?: string, esText?: string, ptText?: string) =>
+    (locale === "es" ? esText : locale === "pt" ? ptText : undefined) ?? en;
   const titleFor = { en: article.title, es: article.titleEs, pt: article.titlePt };
   const summaryFor = { en: article.summary, es: article.summaryEs, pt: article.summaryPt };
   const bodyFor = { en: article.body, es: article.bodyEs, pt: article.bodyPt };
@@ -184,7 +187,7 @@ export function NewsDetail({
                   )}
                 </span>
                 <span className="mt-4 block">
-                  {(es && article.author.roleEs) || article.author.role}
+                  {(es && article.author.roleEs) || (locale === "pt" && article.author.rolePt) || article.author.role}
                 </span>
                 {article.author.credential ? (
                   <span className="block text-ink-tertiary">{article.author.credential}</span>
@@ -222,7 +225,7 @@ export function NewsDetail({
                         href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                         className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
-                        {product.model} — {(es && product.nameEs) || product.name}
+                        {product.model} — {(es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name}
                       </Link>
                     </li>
                   ))}
@@ -303,15 +306,19 @@ export function NewsDetail({
                   {Math.round(article.attachment.sizeBytes / 1024)} KB
                 </span>
                 <span className="short-marker short-marker-arrow relative mt-8 block pl-12 text-c1 text-brand">
-                  {es && article.attachment.titleEs
-                    ? article.attachment.titleEs
-                    : article.attachment.title}
+                  {pickText(
+                    article.attachment.title,
+                    article.attachment.titleEs,
+                    article.attachment.titlePt,
+                  )}
                 </span>
                 {article.attachment.note ? (
                   <span className="mt-8 block text-c2 text-ink-secondary">
-                    {es && article.attachment.noteEs
-                      ? article.attachment.noteEs
-                      : article.attachment.note}
+                    {pickText(
+                      article.attachment.note,
+                      article.attachment.noteEs,
+                      article.attachment.notePt,
+                    )}
                   </span>
                 ) : null}
               </a>

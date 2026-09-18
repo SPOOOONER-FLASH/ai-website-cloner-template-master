@@ -57,7 +57,6 @@ const COPY = {
 export function ProductsEditorialOverview({ locale, totalProducts, categoryCounts }: ProductsEditorialOverviewProps) {
   const architecture = getProductsArchitecture(locale);
   const [rangeChapter, applicationChapter, technicalChapter] = architecture.story;
-  const es = locale === "es";
   const t = localised(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
 
