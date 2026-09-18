@@ -1,0 +1,194 @@
+{
+  "_readme": [
+    "第十批：甲方 2026-09-17 发来的四个包，7 个新型号。目录里原来一个都没有，先查过再写的。",
+    "  · 大拉手T（G）2681 —— T2681 一件",
+    "  · 大拉手T（G）561 —— T561、T5612、T5615 三件（同一个号段，三种完全不同的东西）",
+    "  · 大拉手G1211搭配UL1016门把手 —— G1211 玻璃门大拉手 + UL1016 配套执手，styleFamily 1211",
+    "  · 大拉手T7610 —— 单件，不入族",
+    "",
+    "== ⚠ 两个包名写着 T（G），包里却只有 T 的文件 ==",
+    "",
+    "甲方自己定的规矩是「文件名称如果 T（G）的这种，玻璃门和木门 2 种都能用」。",
+    "前面每一个 T（G）包 —— 1121、2690、620、1111、2751、1131 —— 里面都同时有 T 和 G 两套",
+    "文件，所以出来的是两条记录，玻璃门那一半由 G 记录自己承担。",
+    "",
+    "这两个包不是：T（G）2681 十张全是 T2681，T（G）561 九张全是 T561 / T5612 / T5615。",
+    "没有 G 的图纸，也没有 G 的型号代号。所以这两条按 T 记（木门 / 金属门），",
+    "**没有替它们编一个 G2681 或 G561 出来** —— 玻璃门那一版的开孔和夹持件是另一套，",
+    "编一个型号号就是让买家按一个不存在的货号下单。已在 heldBack 里留案，等甲方确认。",
+    "",
+    "== 图纸上的读法，和前九批一样 ==",
+    "",
+    "俯视图那条链最外面的数是总突出：T2681 = 68、T561 = 68、T7610 = 54、G1211 = 62、",
+    "UL1016 = 80。中间那些分段（38、37、25、13.5）没有单独编标签 —— 35 个拉手突出尺寸",
+    "出错就是因为给说不清的分段编了标签。",
+    "",
+    "握把截面：T561 的图上有「断面形状 / section」callout，指着一个扁圆，俯视图给了 25 和 14",
+    "两个轴，细节照片上也确实是扁的，所以写 25 × 14mm（和 T2973 的 25 × 8mm、G1216 的",
+    "「Ø19mm, oval」一个写法）。T2681 和 T7610 的图上只印了一个 25，就只写 25mm。",
+    "",
+    "T2681 的总长是图纸直接印的 1925 / 2025，不是算出来的 —— 不过 362.5 × 2 + 1200 = 1925、",
+    "362.5 × 2 + 1300 = 2025 两边都对得上，所以这两个数是互相验过的。",
+    "T561 的图上没有印总长，就不写总长；只写中心距 P=1640~2140 和两端的 P1=620。",
+    "",
+    "== T5615 没有图纸 ==",
+    "",
+    "包里只有两张底图（白色握把和黑色握把各一张），没有尺寸图。按 AGENTS.md 的规矩，",
+    "宁可空着规格表也不借同族型号的尺寸 —— T5612 和它外形像，但一个带背板一个不带，",
+    "背板那套数（58 × 328 / 60 × 330）套到不带背板的那件上就是错的孔位。",
+    "",
+    "== 没收的数 ==",
+    "",
+    "  · 三个 T 型号的安装螺钉与开孔直径：图纸上没印，artunion-specs 缓存里也没有这几个号。",
+    "  · T2681 的 275 / 362.5 / 55、T561 的 30 / 35、T5612 的 29 / 2 / 6：",
+    "    是安装位置和分段尺寸，说不清量的是哪一段，不编标签。",
+    "  · T2681 握把的木色：四张底图四种木色，包里没给色名也没给编号，不替它编。",
+    "    表面处理只写 Matt black —— 四张图里的金属件都是黑的，写「缎面不锈钢也有」就是编。",
+    "",
+    "== 文件名里的 L 和图纸对不上 ==",
+    "",
+    "T2681 的文件名写 L1200-L2052，图纸印的是 P=1200/1300、总长 1925/2025。",
+    "1200 对得上（那是短的那档的中心距），2052 对不上任何一个数，看着像 2025 打错了。",
+    "以图纸为准，文件名只当包名用。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-batch10-by-model",
+  "sites": ["rayen"],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "G2681 / G561（玻璃门版）",
+      "reason": "包名写 T（G）但包里只有 T 的图纸和代号，没有 G 的货号，不替甲方编一个出来；等确认"
+    },
+    {
+      "model": "T5615 的全部尺寸",
+      "reason": "包里只有两张底图，没有尺寸图；不借 T5612 带背板那套数"
+    },
+    {
+      "model": "T2681 / T561 / T5612 / T5615 / T7610 的安装螺钉与开孔直径",
+      "reason": "图纸上没有印，artunion-specs 缓存里也查不到这几个型号"
+    },
+    {
+      "model": "T2681 的 275 / 362.5 / 55、T561 的 30 / 35、T5612 的 29 / 2 / 6",
+      "reason": "安装位置和尺寸链里的分段，说不清量的是哪一段，不编标签"
+    },
+    {
+      "model": "T2681 握把的木色名",
+      "reason": "四张底图四种木色，包里没有色名也没有编号"
+    }
+  ],
+  "models": [
+    {
+      "model": "T2681",
+      "slug": "t2681-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Matt black"],
+      "specs": [
+        { "label": "Centre distance", "value": "P=1200mm / P=1300mm" },
+        { "label": "Overall length", "value": "1925mm / 2025mm" },
+        { "label": "Grip section", "value": "25mm" },
+        { "label": "Projection", "value": "68mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "T561",
+      "slug": "t561-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [
+        { "label": "Centre distance", "value": "P=1640–2140mm" },
+        { "label": "Fixing centre", "value": "P1=620mm at each end" },
+        { "label": "Grip section", "value": "25 × 14mm, oval" },
+        { "label": "Projection", "value": "68mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "T5612",
+      "slug": "t5612-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [
+        { "label": "Centre distance", "value": "P=250mm" },
+        { "label": "Grip length", "value": "282mm" },
+        { "label": "Grip section", "value": "32mm" },
+        { "label": "Projection", "value": "70mm" },
+        { "label": "Base plate", "value": "58 × 328mm / 60 × 330mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "T5615",
+      "slug": "t5615-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [{ "label": "Material", "value": "Stainless Steel" }]
+    },
+    {
+      "model": "G1211",
+      "slug": "g1211-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": ["glass-door-accessories", "glass-door-handles"],
+      "styleFamily": "1211",
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [
+        { "label": "Centre distance", "value": "P=1660–2160mm" },
+        { "label": "Fixing centre", "value": "P1=700mm" },
+        { "label": "Grip section", "value": "22 × 22mm, square" },
+        { "label": "Stem diameter", "value": "Ø27.2mm" },
+        { "label": "Projection", "value": "62mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "UL1016",
+      "slug": "ul1016-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "1211",
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [
+        { "label": "Overall length", "value": "145mm" },
+        { "label": "Lever section", "value": "Ø25mm" },
+        { "label": "Rose diameter", "value": "Ø62mm" },
+        { "label": "Rose depth", "value": "13.5mm" },
+        { "label": "Projection", "value": "80mm" },
+        { "label": "Fixing centre", "value": "P=34mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    },
+    {
+      "model": "T7610",
+      "slug": "t7610-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": ["stainless-steel-handles"],
+      "material": "Stainless Steel",
+      "finishes": ["Satin stainless", "Matt black"],
+      "specs": [
+        { "label": "Centre distance", "value": "P=1100mm" },
+        { "label": "Overall length", "value": "2025mm" },
+        { "label": "Grip section", "value": "25mm" },
+        { "label": "Projection", "value": "54mm" },
+        { "label": "Material", "value": "Stainless Steel" }
+      ]
+    }
+  ]
+}

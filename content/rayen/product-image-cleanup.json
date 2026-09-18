@@ -8,11 +8,11 @@
     "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
     "而那个长窗口正是另一个会话重命名时撞车的原因。"
   ],
-  "generated": "2026-09-17",
+  "generated": "2026-09-18",
   "counts": {
-    "refused": 440,
+    "refused": 441,
     "cleanable": 1222,
-    "already-clean": 2906
+    "already-clean": 2943
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -435,6 +435,7 @@
     "t2083-stainless-steel-handle-6.webp",
     "t2083-stainless-steel-handle-7.webp",
     "t2083-stainless-steel-handle-9.webp",
+    "t2681-stainless-steel-handle-10.webp",
     "t2930-stainless-steel-handle-8.webp",
     "t52-stainless-steel-handle-15.webp",
     "t52-stainless-steel-handle-19.webp",
@@ -10937,6 +10938,26 @@
       "source": "b7a533ee6c82fba9c6e1de5d179940e8167c66f451a4799761434e23d79c37a2",
       "status": "already-clean"
     },
+    "g1211-glass-door-handle-2.webp": {
+      "source": "736ce2f2a938d71d9c683bc2920be023400a89edff2979c561a43122b94b82ee",
+      "status": "already-clean"
+    },
+    "g1211-glass-door-handle-3.webp": {
+      "source": "274571dc5e2e0c503232881601d1dc63fd97e7070c5d1731304f8420a7a05d1f",
+      "status": "already-clean"
+    },
+    "g1211-glass-door-handle-4.webp": {
+      "source": "50106476a7d23689f046cc3181d94052e97c6b97e857265176bb34101f82f5e0",
+      "status": "already-clean"
+    },
+    "g1211-glass-door-handle-5.webp": {
+      "source": "98a99360c5fdecd6e21f8cd5359ffcd55f5d2fdc1e31fca5e8650e8e98a25027",
+      "status": "already-clean"
+    },
+    "g1211-glass-door-handle.webp": {
+      "source": "4acbfe9882059d784de509bee41a462d4f55d3282195fbc44e8e722018e14b4f",
+      "status": "already-clean"
+    },
     "g1216-glass-door-handle-2.webp": {
       "source": "9d87acd28cbbcabf4ee135fba17f90eb690c2c3bb41979d99f564076a475e07a",
       "status": "already-clean"
@@ -17521,6 +17542,47 @@
       "source": "40caa0cf0141e72ebb41c16faad0f9cdac133dd3940efdd7d5cf2a87f9f4b335",
       "status": "already-clean"
     },
+    "t2681-stainless-steel-handle-10.webp": {
+      "source": "95a2472b9423d5ccdcfa31f840a1a51fe33b9b8c1e94df3ccec9ce866a761b06",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "t2681-stainless-steel-handle-2.webp": {
+      "source": "1b87adbc59e49e623e64c7ce7e7167c3c808dfbe95d9df7b465ff65fdd0c7743",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-3.webp": {
+      "source": "8eada523ec5b2af9dd44a531ee32cfb47ee0c4d2ec35a48b77d8bb90a3a3f47e",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-4.webp": {
+      "source": "c812e893bf63d436ceb301befe8cfe66d455d4167a8a1ff95f72c3d094f58d34",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-5.webp": {
+      "source": "5e4608429708fca5e52e8d53e6b43f230148ae6b1154b87255bc5f3a660edcc9",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-6.webp": {
+      "source": "75beb03300cf5aa139fbe6ee9b518b97da10f9bd384f833c396769e2ae24c5a2",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-7.webp": {
+      "source": "aa7a7127dff38cf5501399192ed578f50fdf8bef20349a74825cb5d36aa46a80",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-8.webp": {
+      "source": "259b060afd55d3ce0405b1d9c5cfb005a240f0fac7aff2eac752acd199884554",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle-9.webp": {
+      "source": "52a11d0562adc65d5d4e79b8c98726005e108ce2c71bde58cb21598c2f156f97",
+      "status": "already-clean"
+    },
+    "t2681-stainless-steel-handle.webp": {
+      "source": "999b59080c41f92ea758ca65abc992b179ae2c54470f8f0771c73447bf5c671b",
+      "status": "already-clean"
+    },
     "t2690-stainless-steel-handle-10.webp": {
       "source": "33ff76e66b4a581b3ca05ab32de3dac186106c4df89ccfc6e98a77a9f719dfa3",
       "status": "already-clean"
@@ -17989,6 +18051,38 @@
       "source": "2977351dd796c5cbea83f6bd1932a46b5c89bf0569f19188210a81b5274b4a64",
       "status": "already-clean"
     },
+    "t561-stainless-steel-handle-2.webp": {
+      "source": "4d39573c094e96350d8099bfc2f3a8050e08c6b75de3bb7511306125839add2c",
+      "status": "already-clean"
+    },
+    "t561-stainless-steel-handle-3.webp": {
+      "source": "1f9948ad16c5fb24cfe0558f846948ad0c8513bbccb03f199f43b911b1ad6f47",
+      "status": "already-clean"
+    },
+    "t561-stainless-steel-handle-4.webp": {
+      "source": "3dd683d4da0a23b8f8c5b80101b1d51b312e81d223c6d4e9d93194da74444630",
+      "status": "already-clean"
+    },
+    "t561-stainless-steel-handle.webp": {
+      "source": "098183f8e47bdc4cbbb87ce12f03cc078ca836b92dd1726a9a2dec40633ecf9c",
+      "status": "already-clean"
+    },
+    "t5612-stainless-steel-handle-2.webp": {
+      "source": "11b50055dfcf1a5ce85329a512cabe4f7fa88006cdc03e9049f723bae5438bcc",
+      "status": "already-clean"
+    },
+    "t5612-stainless-steel-handle.webp": {
+      "source": "6b9701b088caff349e23a2253ad3a1412e80d2770b19975704b2cd33973973fe",
+      "status": "already-clean"
+    },
+    "t5615-stainless-steel-handle-2.webp": {
+      "source": "c876d93a59376098c40274a879bd2a449e40a9d82ef92f8913f673ce0230f5b6",
+      "status": "already-clean"
+    },
+    "t5615-stainless-steel-handle.webp": {
+      "source": "082b3949447720acc98253589b3409844b4acd15dbb50bc3a56c9706318671dd",
+      "status": "already-clean"
+    },
     "t5650-stainless-steel-handle-10.webp": {
       "source": "88952a3f81d3e19f05de536c30c506b17b2cb86894de3c772b961ddcb88cf47d",
       "status": "already-clean"
@@ -18203,6 +18297,34 @@
     },
     "t720-stainless-steel-handle.webp": {
       "source": "41d3c8264c8fc2e8cee0089ceaec674fa408b864852f9d2db8c8ae55ecb63214",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-2.webp": {
+      "source": "e46db3dd1f5cda38fbf0fab1ed21a5c198e3df67247169cc5285f7ab3705ff21",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-3.webp": {
+      "source": "3da3268bcac17cd007d7d521e292119ef291d379823fe81d25bea4a837a8af59",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-4.webp": {
+      "source": "de1bfe9ea85d1b41868558264d7f5f5c75507a269359db78ec6475cb7fa5c812",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-5.webp": {
+      "source": "daf050dbe918fee4e3f7d4bd59227571b30e73d17a5b6a538dd2ef1e2b441ac4",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-6.webp": {
+      "source": "f6e202b58cdaebb49744a619c035ce20ec22f8cd10b2f6908b38ca98ce0b8fed",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle-7.webp": {
+      "source": "f559344ab18dbc280804fea4c61a8997ee9a975c0e4b1f4326f5dcf8763aa441",
+      "status": "already-clean"
+    },
+    "t7610-stainless-steel-handle.webp": {
+      "source": "c95f2791fda8b241cbd1cc8bcd63c082257093da29c2788e32d3fe8ea9087d86",
       "status": "already-clean"
     },
     "t790-stainless-steel-handle-2.webp": {
@@ -18596,6 +18718,38 @@
     },
     "ul1008-lever-handle.webp": {
       "source": "67cc3cf9513ff0f295219dc4e45b4d764e40861c3d2a4dc5a0c1cb64ff4b8f4b",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-2.webp": {
+      "source": "926b22e4c68940714e06a12a079cdf79305659cfaab58bcb767df326b45a7060",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-3.webp": {
+      "source": "01a1341c80d38fdfeb91a5f3826ffa0af814e0f95e8dc92754f95012e9883aa2",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-4.webp": {
+      "source": "1065b3d6f2abf8cdb2200e9c5db33a9d4491f0963c2978248159e01080c9fa0c",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-5.webp": {
+      "source": "7026f8f8dd025f861d20d0358dccbde4379ab3a59521ff88c395d5d7d59e7c6b",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-6.webp": {
+      "source": "da75068c8b8508446997d2691c61a462fade735ebee0a3125407ec0cfc5d4d59",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-7.webp": {
+      "source": "b320db5c92c1d9ae1ae959fd0721368905d056acc78a79092e7a09250f5abf05",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle-8.webp": {
+      "source": "ea516df51bb901664b5c9d5b0e8092ea6dcebb171dcef5bf3617234a178dcd1d",
+      "status": "already-clean"
+    },
+    "ul1016-lever-handle.webp": {
+      "source": "64a996bc31315fa1737081ad71b0704ba2e56042ab4ac9cdac78b14c16761683",
       "status": "already-clean"
     },
     "ul1022-lever-handle-2.webp": {

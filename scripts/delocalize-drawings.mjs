@@ -119,6 +119,31 @@ const EDITS = [
     one sheet — measured separately off each 544×532 canvas rather than copying the first,
     which would have painted a 17px-tall patch over an 11px-tall label and left a white bar.
   */
+  /*
+    Batch 10, 2026-09-17.
+
+    T561 carries the same 「断面形状」 over its own English "section" as T2412 and G1255, so the
+    same rewrite to 「截面形状」.
+
+    T5612 is the first drawing with 「ベースプレート」. Katakana is not legible to a Chinese
+    reader at all — unlike 断面形状, which a Chinese fabricator can read — so this one has to be
+    replaced rather than left: 底板 is the term, and the drawing's own "Base plate" stays right
+    under it for the English side. Two labels, one per base-plate option, measured separately.
+    Boxes measured off the 544×532 canvas, not guessed.
+  */
+  {
+    file: "t561-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 155, y: 294, w: 54, h: 15, text: "截面形状", size: 12 }],
+  },
+  {
+    file: "t5612-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [
+      { x: 72, y: 122, w: 104, h: 17, text: "底板", size: 12 },
+      { x: 216, y: 122, w: 106, h: 17, text: "底板", size: 12 },
+    ],
+  },
   {
     file: "g1255-glass-door-handle-2.webp",
     canvas: [544, 532],
