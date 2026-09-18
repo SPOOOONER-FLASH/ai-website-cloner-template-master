@@ -1,5 +1,5 @@
+import { SpecRangeList } from "@/components/site/SpecRangeList";
 import type { Metadata } from "next";
-import { collectionSpecRanges, specRangeHeading, statedOn } from "@/lib/collection-spec-range";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
@@ -173,35 +173,11 @@ export default async function ColeccionPage({ params }: CollectionPageProps) {
           is why they scored half what the comparison tables do on the same data.
           Rollback: delete this block; nothing else references it.
         */}
-        {(() => {
-          const ranges = collectionSpecRanges(items, "es");
-          if (!ranges.length) return null;
-          return (
-            <section className="layout mt-64 lg:mt-96" aria-labelledby="collection-range-heading">
-              <div className="col-content grid w-full grid-cols gap-x">
-                <div className="col-span-full">
-                  <h2 id="collection-range-heading" className="drawer-eyebrow">
-                    {specRangeHeading("es")}
-                  </h2>
-                  <dl className="mt-16 border-t border-ink pt-16">
-                    {ranges.map((range) => (
-                      <div
-                        key={range.label}
-                        className="grid grid-cols-1 gap-4 border-b border-line py-12 sm:grid-cols-[14rem_1fr_auto] sm:gap-24"
-                      >
-                        <dt className="text-c2 text-ink-secondary">{range.label}</dt>
-                        <dd className="text-c1 tabular-nums text-ink">{range.value}</dd>
-                        <dd className="text-c2 text-ink-tertiary">
-                          {statedOn(range.stated, items.length, "es")}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              </div>
-            </section>
-          );
-        })()}
+        <SpecRangeList
+          products={items}
+          locale="es"
+          headingId="collection-range-heading"
+        />
 
         <section
           className="layout mt-64 md:mt-144 lg:mt-288"

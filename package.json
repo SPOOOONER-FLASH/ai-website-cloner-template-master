@@ -104,6 +104,7 @@
     "audit:pt:pages": "node scripts/audit-pt-pages.mjs",
     "audit:pt:spanish": "node scripts/audit-pt-spanish.mjs",
     "audit:es:pages": "node scripts/audit-es-pages.mjs",
+    "audit:citations": "node scripts/audit-ai-citations.mjs",
     "translate:features:pt": "node scripts/translate-product-features-pt.mjs",
     "translate:features:es": "node scripts/translate-product-features-es.mjs"
   },

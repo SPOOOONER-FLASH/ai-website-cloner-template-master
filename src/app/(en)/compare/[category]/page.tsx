@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JsonLd, breadcrumbSchema } from "@/components/site/JsonLd";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { SpecMatrix } from "@/components/site/SpecMatrix";
+import { SpecRangeList } from "@/components/site/SpecRangeList";
 import { getTopLevelCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
@@ -117,6 +118,22 @@ export default async function ComparePage({ params }: ComparePageProps) {
             </div>
           </div>
         </section>
+
+        {/*
+          The figures this range actually spans, before the table of every figure.
+
+          A comparison table is a grid; an answer engine quotes sentences. On
+          2026-09-18 these pages scored 30 on `npm run seo:citability` with zero
+          concrete facts, while the catalogue under them held backsets, centre
+          distances and door thicknesses for every model. Every line below is
+          counted from those records — see src/lib/collection-spec-range.ts.
+        */}
+        <SpecRangeList
+          products={products}
+          locale="en"
+          headingId="compare-range-heading"
+          className="layout mt-48 lg:mt-64"
+        />
 
         <SpecMatrix products={products} categorySlug={category.slug} />
       </main>
