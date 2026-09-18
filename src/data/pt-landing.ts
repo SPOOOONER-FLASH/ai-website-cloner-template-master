@@ -51,7 +51,7 @@ export const ptLanding = {
   kicker: "Fabricante · Guangdong, China",
   title: "Ferragens para porta corta-fogo, direto da fábrica",
   intro:
-    "A Canton Hyland fabrica ferragens de porta há 28 anos em Zhongshan, Guangdong, e exporta para mais de trinta mercados. O catálogo publicado tem 519 modelos com fotografia e ficha técnica, dos quais 46 são dispositivos antipânico e acessórios de saída de emergência. Esta página é para quem compra ferragem de porta corta-fogo no Brasil: o que fabricamos, que documentos temos de facto, e quais não temos.",
+    "A Canton Hyland fabrica ferragens de porta há 28 anos em Zhongshan, Guangdong, e exporta para mais de trinta mercados. O catálogo publicado tem 519 modelos com fotografia e ficha técnica, dos quais 46 são dispositivos antipânico e acessórios de saída de emergência. Esta página é para quem compra ferragem de porta corta-fogo no Brasil: o que fabricamos, que documentos temos de fato, e quais não temos.",
 
   sections: [
     {
@@ -77,7 +77,7 @@ export const ptLanding = {
       body: [
         "Não temos certificação ABNT. Não temos certificação ANSI/BHMA. Não consta nenhum listado UL entre as credenciais desta fábrica.",
         "Para uma obra em São Paulo isto é a primeira coisa a esclarecer, não a última. A NBR 11742 e a NBR 15281 são o que o Corpo de Bombeiros cobra numa vistoria de AVCB, e um certificado europeu não substitui um requisito brasileiro. Se o seu laudo técnico precisa de um documento que não temos, é melhor sabê-lo antes da amostra do que depois de a sua marca já estar na peça.",
-        "O que podemos fazer é o ensaio: se a sua operação exige conformidade com uma norma ABNT específica, diga-nos o número da norma e o modelo, e tratamos disso como um projecto com custo e prazo — não como uma afirmação numa página.",
+        "O que podemos fazer é o ensaio: se a sua operação exige conformidade com uma norma ABNT específica, diga-nos o número da norma e o modelo, e tratamos disso como um projeto com custo e prazo — não como uma afirmação numa página.",
       ],
     },
     {

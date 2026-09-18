@@ -270,6 +270,31 @@ A command that can break the site is preceded by its check (`nginx -t` before
 fails. "Reload nginx" is not an instruction; it is an assumption that the reader already
 knows what you know.
 
+**The runbook is a set of instructions, not a log. ADDING to it is not enough — the
+stale part has to leave.** By 2026-09-17 it had reached 1,412 lines in which "make the
+301s live" existed six times (1, 1a, 1b, 1c, 1c-新, 1d), three of those sections saying
+"this one is out of date now, go back and run section 1". The client read it and said:
+「那个 runbook 都是旧的信息，我需要每次你给我安排工作要清晰的指令和新的指引」.
+
+He was right, and the cost was concrete: section 1b told him to make a one-time nginx
+edit that a single `curl` proved he had already made. We were asking a busy person to
+redo finished work, inside a document too long to check.
+
+So, every time you hand him something to do:
+
+1. **Verify the current state before you write the instruction.** `curl -sI` against the
+   live site settles most of it in one command, and it is the difference between "run
+   this" and "run this, and here are the four URLs I just measured that prove why".
+2. **Put it at the top, with today's date.** Anything he must do lives on the first
+   screen of `CLIENT-RUNBOOK.md`. Not in section 9, not in a chat reply.
+3. **Move what is done into `docs/collaboration/archive/`** in the same commit, with a
+   header saying it is a record and not to follow it. Do not delete it — the reasoning
+   is worth keeping, it just must not sit where instructions sit.
+4. **One command beats two.** `deploy/install-nginx-redirects.sh` pulls, copies, tests,
+   reloads, verifies and rolls back by itself; it exists because two pastes meant two
+   chances to run the second against a stale checkout. If you find yourself writing
+   "then run", ask whether the script should do it instead.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:

@@ -58,6 +58,11 @@ describe("hardware glossary", () => {
     Article markup, and Brazil is the market it was built for. The forms below are the
     ones that give a European draft away at a glance, and they are cheap to catch here —
     a reviewer reading 23 entries will not notice the fourth "stock".
+
+    Kept after `src/data/portuguese-brazilian.test.ts` generalised the rule to the whole
+    tree, because this list carries one word the general guard cannot: "stock" is an
+    ordinary English word and sweeps through English copy everywhere else, but inside a
+    glossary DEFINITION it is European Portuguese for "estoque".
   */
   it("writes Portuguese for Brazil", () => {
     const european = /(equipa|stock|actual|planeado|facto|ecrã|autocarro|comboio)/i;

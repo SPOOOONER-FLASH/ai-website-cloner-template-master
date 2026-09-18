@@ -38,8 +38,8 @@ const COPY = {
       "Comunicados da empresa, novidades de certificação e notas técnicas da Canton Hyland.",
     emptyTitle: "Ainda não há publicações.",
     empty:
-      "É aqui que a Canton Hyland publica os seus comunicados e notas técnicas. Entretanto, os pedidos de imprensa e de imagens de produto são atendidos directamente.",
-    contact: "Contacto",
+      "É aqui que a Canton Hyland publica os seus comunicados e notas técnicas. Entretanto, os pedidos de imprensa e de imagens de produto são atendidos diretamente.",
+    contact: "Contato",
     contactHref: "/pt/contact/",
   },
 } as const;
