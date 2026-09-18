@@ -141,7 +141,7 @@ export default async function CategoriaPage({ params }: CategoryPageProps) {
               <p className="text-lead text-ink">{summary}</p>
               <p className="mt-24 text-c1 text-ink-secondary">
                 Aqui só publicamos fichas verificadas. O resto do catálogo histórico
-                se está preparando para su publicación estructurada.
+                está sendo preparado para publicação estruturada.
               </p>
               {sourcing ? (
                 <p className="mt-24 text-c1 text-ink-secondary">{sourcing}</p>

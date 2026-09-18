@@ -20,6 +20,10 @@
 
 /** Spec table labels. Sentence case, matching how the English side is written. */
 export const SPEC_LABELS_ES: Record<string, string> = {
+  "Plate length":
+    "Longitud de placa",
+  "Minimum order":
+    "Pedido mínimo",
   Material: "Material",
   /*
     Packing terms, added 2026-09-06 to unblock the product FAQ.
@@ -275,6 +279,28 @@ export const SPEC_LABELS_ES: Record<string, string> = {
  * number must survive untouched and only the qualifier is language.
  */
 export const SPEC_VALUES_ES: Record<string, string> = {
+  "35mm to 45mm adjustable":
+    "35 a 45 mm, regulable",
+  "60mm / 70mm adjustable":
+    "60 / 70 mm, regulable",
+  "60mm / 70mm adjustable, latch and deadbolt both":
+    "60 / 70 mm regulable, picaporte y pestillo",
+  "100 pieces":
+    "100 piezas",
+  "Three square deadbolts, plus latch":
+    "Tres pestillos cuadrados, más picaporte",
+  "Nickel-plated brass, solid brass, brushed nickel":
+    "Latón niquelado, latón macizo, níquel cepillado",
+  "Trim handle · outside lever for panic exit devices":
+    "Manilla exterior · para barras antipánico",
+  "Trim handle · anti-pick outside lever for panic exit devices":
+    "Manilla exterior antiganzúa · para barras antipánico",
+  "Trim handle · outside lever with key for panic exit devices":
+    "Manilla exterior · con llave, para barras antipánico",
+  "Trim handle · external handle for panic bar systems":
+    "Manilla exterior · para sistemas de barra antipánico",
+  "Profile lock case for panic exit devices":
+    "Caja de cerradura de perfil para barras antipánico",
   // materials
   "Stainless steel": "Acero inoxidable",
   "Stainless Steel": "Acero inoxidable",
@@ -1029,6 +1055,203 @@ export const SPEC_VALUES_ES: Record<string, string> = {
 };
 
 /** Category and sub-category names, keyed by slug. */
+/**
+ * Finish names, used on their own and inside the comma-separated lists the catalogue
+ * writes ("Polished Brass (PB), Antique Brass (AB), …"). The parenthesised code is a code
+ * and passes through untouched — that is the whole point of a code.
+ *
+ * Added 2026-09-17, mirroring FINISH_NAMES_PT. Spanish shipped first and never had these,
+ * which is why the finish row on a Spanish product page read English while the Portuguese
+ * twin read Spanish-shaped Portuguese.
+ */
+export const FINISH_NAMES_ES: Record<string, string> = {
+  "Polished Brass":
+    "Latón pulido",
+  "Polished brass":
+    "Latón pulido",
+  "Satin Brass":
+    "Latón satinado",
+  "Satin brass":
+    "Latón satinado",
+  "Antique Brass":
+    "Latón antiguo",
+  "Antique brass":
+    "Latón antiguo",
+  "Antique Copper":
+    "Cobre antiguo",
+  "Antique copper":
+    "Cobre antiguo",
+  "Chrome Plated":
+    "Cromado",
+  "Chrome plated":
+    "Cromado",
+  "Satin Chrome":
+    "Cromo satinado",
+  "Satin chrome":
+    "Cromo satinado",
+  "Satin Nickel":
+    "Níquel satinado",
+  "Satin nickel":
+    "Níquel satinado",
+  "Nickel Plated":
+    "Niquelado",
+  "Nickel plated":
+    "Niquelado",
+  "Black Nickel":
+    "Níquel negro",
+  "Black nickel":
+    "Níquel negro",
+  "Stainless Steel":
+    "Acero inoxidable",
+  "Stainless steel":
+    "Acero inoxidable",
+  "Satin Stainless":
+    "Inoxidable satinado",
+  "Satin Stainless Steel":
+    "Acero inoxidable satinado",
+  "Satin stainless steel":
+    "Acero inoxidable satinado",
+  "Polished Stainless Steel":
+    "Acero inoxidable pulido",
+  "Polished stainless steel":
+    "Acero inoxidable pulido",
+  "Bright Polished":
+    "Pulido brillante",
+  "Bright polished":
+    "Pulido brillante",
+  "Oil Rubbed Bronze":
+    "Bronce envejecido",
+  "Oil-rubbed bronze":
+    "Bronce envejecido",
+  "Matt Black":
+    "Negro mate",
+  "Matte Black":
+    "Negro mate",
+  "Spray Painting":
+    "Pintura a pistola",
+  "Spray painted":
+    "Pintado a pistola",
+  "Powder Coating":
+    "Pintura en polvo",
+  "Zinc Plated":
+    "Cincado",
+  "White sprayed":
+    "Pintado en blanco",
+  "Wood-grain sprayed":
+    "Pintado imitación madera",
+  "All Available":
+    "Todos disponibles",
+  "Multiple finish":
+    "Varios acabados",
+  "Gun metal":
+    "Metal oscurecido",
+  "PVD":
+    "PVD",
+};
+
+/**
+ * Material names. Same story as the finishes above, and the same rule: a figure or an
+ * alloy number is carried across unchanged, only the words move.
+ */
+export const MATERIAL_NAMES_ES: Record<string, string> = {
+  "Stainless steel":
+    "Acero inoxidable",
+  "Stainless Steel":
+    "Acero inoxidable",
+  "stainless steel":
+    "acero inoxidable",
+  "304 Stainless Steel":
+    "Acero inoxidable 304",
+  "304 stainless steel":
+    "acero inoxidable 304",
+  "Stainless Steel 304":
+    "Acero inoxidable 304",
+  "Stainless Steel 304/201":
+    "Acero inoxidable 304/201",
+  "Stainless Steel201/304":
+    "Acero inoxidable 201/304",
+  "304SS":
+    "Inox 304",
+  "Zinc alloy":
+    "Zamak",
+  "Zinc Alloy":
+    "Zamak",
+  "zinc alloy":
+    "zamak",
+  "Solid brass":
+    "Latón macizo",
+  "Solid Brass":
+    "Latón macizo",
+  "Brass":
+    "Latón",
+  "Copper":
+    "Cobre",
+  "Copper Construction":
+    "Construcción en cobre",
+  "Iron":
+    "Hierro",
+  "iron":
+    "hierro",
+  "Iron case":
+    "Caja de hierro",
+  "Iron Tube":
+    "Tubo de hierro",
+  "ABS Body":
+    "Cuerpo de ABS",
+  "Aluminium case":
+    "Caja de aluminio",
+  "Aluminum":
+    "Aluminio",
+  "Aluminum Alloy":
+    "Aleación de aluminio",
+  "Aluminum alloy":
+    "Aleación de aluminio",
+  "Aluminium and steel":
+    "Aluminio y acero",
+  "Stainless steel body":
+    "Cuerpo de acero inoxidable",
+  "Thickened Iron":
+    "Hierro reforzado",
+  "Flame-Retardant ABS":
+    "ABS ignífugo",
+  "ABS/plastic":
+    "ABS / plástico",
+  "Carbon Steel .":
+    "Acero al carbono.",
+  "Nickel Plated Iron":
+    "Hierro niquelado",
+  "zinc alloy+brass":
+    "zamak + latón",
+  "Brass/zinc alloy":
+    "Latón / zamak",
+  "Iron+stainless steel":
+    "Hierro + acero inoxidable",
+  "Stainless Steel+Brass":
+    "Acero inoxidable + latón",
+  "Brass or Stainless Steel":
+    "Latón o acero inoxidable",
+  "Brass or iron":
+    "Latón o hierro",
+  "Brass or zinc":
+    "Latón o zinc",
+  "Stainless steel, brass or steel":
+    "Acero inoxidable, latón o acero",
+  "Stainless Steel / Brass / Steel":
+    "Acero inoxidable / latón / acero",
+  "Stainless steel/Brass/Solid steel":
+    "Acero inoxidable / latón / acero macizo",
+  "Solid Brass Cylinder":
+    "Cilindro de latón macizo",
+  "Brass Cylinder":
+    "Cilindro de latón",
+  "Brass cylinder":
+    "Cilindro de latón",
+  "Silver":
+    "Plata",
+  "Black":
+    "Negro",
+};
+
 export const CATEGORY_NAMES_ES: Record<string, string> = {
   "panic-exit-devices": "Barras antipánico",
   "lock-cases": "Cerraduras de embutir",

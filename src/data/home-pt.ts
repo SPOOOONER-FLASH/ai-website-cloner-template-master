@@ -86,7 +86,7 @@ export const teaser1: PageTeaserContent = {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-real-cylinder-dark.webp",
         label:
-          "Cilindro de perfil europeu com botão, fotografado sobre fundo escuro junto ao tornillo de fixação e a três chaves — o parafuso atravessa a leva, o ponto a partir do qual se medem as duas metades do cilindro",
+          "Cilindro de perfil europeu com botão, fotografado sobre fundo escuro junto ao parafuso de fixação e a três chaves — o parafuso atravessa a leva, o ponto a partir do qual se medem as duas metades do cilindro",
       },
       title: "Para prescritores",
       subtitle: "Prepare um quadro de ferragens com a nossa equipe técnica",

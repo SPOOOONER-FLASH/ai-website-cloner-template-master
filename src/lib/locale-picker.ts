@@ -7,7 +7,7 @@ import { type Locale } from "../data/locales.ts";
   re-exported here, so every caller still asks one module about the panel. They moved on
   2026-09-17 to be reachable from a unit test — see that file's header.
 */
-export { languageChoices, triggerLabel, type LanguageChoice } from "./language-choices.ts";
+export { languageChoices, type LanguageChoice } from "./language-choices.ts";
 
 /**
  * What the location-and-language panel offers, assembled from data that already exists.

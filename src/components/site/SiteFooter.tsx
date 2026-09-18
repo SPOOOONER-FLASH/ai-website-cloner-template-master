@@ -222,7 +222,7 @@ export function SiteFooter() {
                       rel="noopener noreferrer"
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     >
-                      {siteSettings.alibaba.label}
+                      {say("Buy on Alibaba", "Comprar en Alibaba", "Comprar no Alibaba")}
                     </a>
                   </li>
                 ) : null}

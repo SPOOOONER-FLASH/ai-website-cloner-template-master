@@ -4,7 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { locales } from "../data/locales.ts";
 import { soleLocaleOf } from "./spanish-mirror.ts";
-import { languageChoices, triggerLabel } from "./language-choices.ts";
+import { languageChoices } from "./language-choices.ts";
 
 /**
  * These tests exist because of one day, 2026-09-16 to 2026-09-17, in which 645 Portuguese
@@ -18,7 +18,9 @@ import { languageChoices, triggerLabel } from "./language-choices.ts";
  * The three places that decide that were all hand-written lists of two languages:
  *
  *   languageChoices()      the panel's language column — returned [en, es]
- *   triggerLabel()         the header affordance — returned the literal "ES | EN"
+ *   triggerLabel()         the header affordance — returned the literal "ES | EN".
+ *                          Retired 2026-09-17: the header renders one anchor per
+ *                          language now, so the codes are links rather than a label.
  *   SiteFooter             the only server-rendered cross-tree anchor — EN ↔ ES only
  *
  * So the rule these tests hold is not "Portuguese must be present". It is that NOTHING
@@ -58,16 +60,6 @@ test("a link is either this page in that language, or that language's home", () 
         assert.equal(choice.href, `/${choice.code}`);
       }
     }
-  }
-});
-
-test("the header affordance names every language you are not reading", () => {
-  for (const locale of locales) {
-    const label = triggerLabel(locale);
-    for (const other of locales.filter((code) => code !== locale)) {
-      assert.match(label, new RegExp(other.toUpperCase()), `${label} omits ${other}`);
-    }
-    assert.match(label, /\|/, "the current language still sits second, after the bar");
   }
 });
 

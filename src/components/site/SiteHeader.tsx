@@ -617,7 +617,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 onClick={() => setOpenShelf(null)}
                 className="alibaba-hard-cta"
               >
-                <span>{siteSettings.alibaba.label}</span>
+                <span>{say("Buy on Alibaba", "Comprar en Alibaba", "Comprar no Alibaba")}</span>
                 <span aria-hidden="true">›</span>
               </a>
             </div>

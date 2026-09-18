@@ -6,7 +6,7 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 import type { Locale } from "@/data/site";
 import { EmailLink } from "./EmailLink";
 import { GlobeIcon } from "./icons";
-import { contactChoices, languageChoices, localePickerCopy, triggerLabel } from "@/lib/locale-picker";
+import { contactChoices, languageChoices, localePickerCopy } from "@/lib/locale-picker";
 
 /**
  * The location-and-language panel.
@@ -91,37 +91,66 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
 
   return (
     <>
-      <button
-        ref={triggerRef}
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        aria-controls={panelId}
-        aria-label={text.trigger}
-        className="nav-marker flex h-24 items-center gap-8 text-ink no-underline transition-colors duration-200 hover:text-brand-hover"
-      >
+      <div className="flex h-24 items-center gap-8 text-ink">
         {/*
-          The header's own GlobeIcon at its own size. Every control in this row is a 24px
-          box with a 20x20 icon — the comment in SiteHeader records that mixing 16 / 20 /
-          16x22 is what made the row read as crooked — so the picker adopts the row's
-          measurements rather than bringing its own.
+          The globe opens the panel. The codes beside it do not — see the block comment
+          below on why that separation exists.
+
+          Every control in this row is a 24px box with a 20x20 icon; the comment in
+          SiteHeader records that mixing 16 / 20 / 16x22 is what made the row read as
+          crooked, so the picker adopts the row's measurements rather than bringing its own.
         */}
-        <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
-        {/*
-          One source for this label: triggerLabel() in lib, not a ternary inlined here.
-          The previous version computed the region half in the component and the language
-          half from `currentLanguage`, which is how the two halves drifted into saying
-          different kinds of thing. It reads OTHER | CURRENT — see triggerLabel's note.
-        */}
-        <span className="text-c2 leading-none">
-          {triggerLabel(locale).split(" | ").map((part, index) => (
-            <span key={part}>
-              {index ? <span className="text-line"> | </span> : null}
-              {index ? <span className="text-ink-secondary">{part}</span> : part}
-            </span>
-          ))}
-        </span>
+        <button
+          ref={triggerRef}
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls={panelId}
+          aria-label={text.trigger}
+          className="nav-marker flex h-24 items-center text-ink no-underline transition-colors duration-200 hover:text-brand-hover"
+        >
+          <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
         </button>
+
+        {/*
+          ONE CLICK, NOT FIVE.
+
+          Until 2026-09-17 the whole control — globe and codes together — was a single
+          button that opened the panel. A visitor in Spain, in Clarity that morning,
+          clicked the codes at 00:21, 00:24 and 00:25 and only reached Español at 00:28:
+          `ES · PT` looks like two links, so they clicked one, got a panel they had not
+          asked for, and clicked again to dismiss it.
+
+          The codes are now anchors to this same page in that language, which is what they
+          already looked like. `languageChoices` decides each href and knows whether the
+          mirror exists; where it does not, the link goes to that language's home page and
+          the panel says so.
+        */}
+        <span className="flex items-center gap-4 text-c2 leading-none">
+          {[...languages]
+            .sort((a, b) => Number(a.current) - Number(b.current))
+            .map((language, index) => (
+              <span key={language.code} className="flex items-center gap-4">
+                {index ? <span className="text-line">·</span> : null}
+                {language.current ? (
+                  <span aria-current="true" className="text-ink">
+                    {language.code.toUpperCase()}
+                  </span>
+                ) : (
+                  <Link
+                    href={language.href}
+                    hrefLang={language.code}
+                    lang={language.code}
+                    title={language.label}
+                    className="text-ink-secondary no-underline transition-colors duration-200 hover:text-brand-hover"
+                  >
+                    {language.code.toUpperCase()}
+                  </Link>
+                )}
+              </span>
+            ))}
+        </span>
+      </div>
 
       {/*
         Rendered only while open. A permanently mounted panel with `hidden` would put every

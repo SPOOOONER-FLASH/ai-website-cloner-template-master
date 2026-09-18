@@ -32,14 +32,14 @@ const fields = [
   ["Data de emissão", "issued"],
 ] as const;
 
-export default function CertificacionesPagePt() {
+export default function CertificacoesPagePt() {
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid grid-cols gap-x gap-y-48">
           <div className="col-span-full">
             <Breadcrumbs
-              items={[{ label: "Início", href: "/pt/" }, { label: "Certificación" }]}
+              items={[{ label: "Início", href: "/pt/" }, { label: "Certificação" }]}
             />
           </div>
           <div className="col-span-full lg:col-span-5 xl:col-span-9">

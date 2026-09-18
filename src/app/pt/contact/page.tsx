@@ -52,7 +52,7 @@ export default function ContactoPagePt() {
               exist. Only the labels are Spanish.
             */}
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Dirección</h2>
+              <h2 className="text-h3 text-ink">Endereço</h2>
               <p className="mt-8 text-c2 text-ink-secondary">
                 Fabricação, e onde recebemos as visitas de inspeção.
               </p>

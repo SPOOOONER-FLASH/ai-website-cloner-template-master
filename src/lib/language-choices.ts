@@ -73,26 +73,3 @@ export function languageChoices(pathname: string, locale: Locale): LanguageChoic
   });
 }
 
-/**
- * The two-part label on the trigger: OTHERS | CURRENT.
- *
- * It used to read "INT | EN" — a region guess beside the current language. The client
- * struck the region on 2026-09-09, and it deserved striking twice over. "INT" is not a
- * place; it is jargon standing in for "we did not detect you", and detecting a reader is
- * something a static export cannot do anyway. Worse, it spent the header's only language
- * affordance on a word that tells a Spanish-speaking buyer nothing.
- *
- * So both slots carry languages, and the FIRST one holds the languages you are NOT
- * reading. That ordering is the whole point: a buyer scanning the header sees "ES · PT"
- * and learns in one glance that those sites exist, which is the only thing this control
- * can usefully advertise. The current language sits second, as state rather than offer.
- *
- * Derived from `locales`, not typed out — this was "ES | EN" for a day after Portuguese
- * shipped, which is the same bug `languageChoices` above carries the warning about.
- */
-const LOCALE_CODE_LABELS: Record<Locale, string> = { en: "EN", es: "ES", pt: "PT" };
-
-export function triggerLabel(locale: Locale): string {
-  const others = locales.filter((code) => code !== locale).map((code) => LOCALE_CODE_LABELS[code]);
-  return `${others.join(" · ")} | ${LOCALE_CODE_LABELS[locale]}`;
-}

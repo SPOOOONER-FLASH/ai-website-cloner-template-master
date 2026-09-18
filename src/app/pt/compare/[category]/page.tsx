@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     title gets. Spanish runs longer than English almost everywhere, so the fallback is
     reached more often here, and the informative half is the range name.
   */
-  const withQualifier = `Comparar ${name} — Especificaciones`;
+  const withQualifier = `Comparar ${name} — Especificações`;
 
   return pageMetadata({
     enPath: `/compare/${category.slug}`,
