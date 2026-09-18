@@ -68,12 +68,12 @@ const COPY = {
     how: "Como funciona",
     steps: [
       ["Responda só ao que se aplica", "Cada resposta elimina os modelos que não podem ser instalados nessa porta. As opções que não levariam a nada não são oferecidas."],
-      ["Veja a contagem descer", "O número de modelos compatíveis actualiza-se à medida que responde, para ver quanto cada escolha decide de facto."],
+      ["Veja a contagem descer", "O número de modelos compatíveis é atualizado à medida que você responde, para ver quanto cada escolha decide de fato."],
       ["Termine com um número de modelo", "O resultado é um modelo publicado com a sua ficha, não uma categoria: pronto a colar numa consulta ou num quadro de ferragens."],
     ],
     shortcut: "Já sabe o que precisa?",
-    shortcutLink: "Filtre o catálogo directamente",
-    reassure: "Sem conta, sem e-mail, nada é guardado. Mude qualquer resposta e a lista refaz-se.",
+    shortcutLink: "Filtre o catálogo diretamente",
+    reassure: "Sem conta, sem e-mail, nada é guardado. Mude qualquer resposta e a lista se refaz.",
   },
 } as const;
 

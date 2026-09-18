@@ -44,7 +44,7 @@ const copy = {
     gallery: "Aplicação + ferragens",
     related: "Produtos relacionados",
     relatedNote:
-      "Confirme dimensões, âmbito dos ensaios, preparação da porta e acabamentos com a documentação técnica actual antes de encomendar.",
+      "Confirme dimensões, âmbito dos ensaios, preparação da porta e acabamentos com a documentação técnica atual antes de encomendar.",
     quote: "Consultar este conjunto",
     all: "Todas as aplicações",
   },

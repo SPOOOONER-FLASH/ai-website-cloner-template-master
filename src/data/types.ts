@@ -182,16 +182,22 @@ export interface Product {
   /**
    * Verified feature bullets, taken from the client's own stahlock.com storefront.
    *
-   * English only. The Spanish page deliberately does not render these — English prose on
-   * a Spanish product page is the same error as English answers in Spanish FAQ markup.
-   * They go to the translator with the rest; until then Spanish simply lacks the block.
+   * The English original. Each locale renders its OWN list below or nothing at all —
+   * English prose on a Spanish product page is the same error as English answers in
+   * Spanish FAQ markup.
    */
   features?: string[];
   /*
-    Written by scripts/translate-product-features-pt.mjs, and only where EVERY line of the
-    record resolves in src/data/pt-features.ts. A partial list is not written at all: four
-    Portuguese bullets over two English ones looks finished and is not.
+    Written by scripts/translate-product-features-pt.mjs and its Spanish sibling, and only
+    where EVERY line of the record resolves in the matching table. A partial list is not
+    written at all: four translated bullets over two English ones looks finished and is not.
+
+    Spanish arrived on 2026-09-17, sixteen days after the Spanish tree shipped and hours
+    after Portuguese — it sat at 0 of 216 that whole time because the component hid the
+    block rather than falling back, so the gap was invisible until a sibling locale had a
+    number beside it.
   */
+  featuresEs?: string[];
   featuresPt?: string[];
   featuresSource?: { site: string; url: string; model?: string; fetchedAt?: string };
   certifications: Certification[];

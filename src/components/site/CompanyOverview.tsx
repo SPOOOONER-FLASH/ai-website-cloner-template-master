@@ -81,7 +81,7 @@ const copy = {
     issued: "Emissão",
     cta: "Falemos da sua obra ou de uma visita à fábrica",
     contact: "Falar com a equipe de exportação",
-    writeDirect: "Ou escreva-nos directamente:",
+    writeDirect: "Ou escreva para nós diretamente:",
   },
 } as const;
 

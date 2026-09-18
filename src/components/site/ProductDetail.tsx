@@ -278,15 +278,16 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     [...specLabels].some((label) => patterns.some((p) => p.test(label)));
 
   /*
-    The bullets this locale can show. English always; Portuguese where the record has a
-    complete translation; Spanish not yet — see the block that renders it.
+    The bullets this locale can show. Each locale sees its OWN list or no list — never
+    another language's, and never a half-translated one. All three are filled in as of
+    2026-09-17 (216/216 records each).
   */
   const featureList =
     locale === "en"
       ? product.features
       : locale === "pt"
         ? product.featuresPt
-        : undefined;
+        : product.featuresEs;
 
   const faqItems = productFaqItems(product, locale);
 
@@ -469,11 +470,16 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     branch, so a Portuguese page carried English prose under Portuguese
                     headings — exactly the drift this comment says it is avoiding.
 
-                    Portuguese now has `featuresPt`, written by
-                    scripts/translate-product-features-pt.mjs only where EVERY line of a
-                    record resolves, so a list is never half translated. Spanish still has
-                    none and still shows nothing, which is the same honest state it has
-                    been in since these bullets landed.
+                    Both now have their own list, written by
+                    scripts/translate-product-features-pt.mjs and its Spanish sibling only
+                    where EVERY line of a record resolves, so a list is never half
+                    translated.
+
+                    Spanish was 0 of 216 until 2026-09-17 — not falling back to English,
+                    simply absent, because this block hid itself on every non-English page.
+                    Nobody could see the gap until Portuguese was filled in beside it and
+                    the count went 216 against 0. A fallback nobody can count is a fallback
+                    that becomes permanent.
                   */}
                   {featureList?.length ? (
                     <ul className="mt-24 border-t border-line pt-16">
