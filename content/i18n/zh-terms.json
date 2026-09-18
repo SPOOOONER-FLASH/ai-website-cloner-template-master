@@ -307,7 +307,28 @@
     "Routing length": "开槽长度",
     "Routing depth": "开槽深度",
     "Adjustment": "可调范围",
-    "Opening angle": "开启角度"
+    "Opening angle": "开启角度",
+    "Leaf width": "叶片宽度",
+    "Width across leaves": "两叶展开宽度",
+    "Routing section": "开槽断面",
+    "Routing": "开槽",
+    "Routing size": "开槽尺寸",
+    "Routing edge distance": "开槽边距",
+    "Overall size": "外形尺寸",
+    "Maximum door weight": "最大门重",
+    "Three-dimensional adjustment": "三维可调参数",
+    "Maximum opening angle": "最大开启角度",
+    "Hold-open": "停门角度",
+    "Installation direction": "安装方向",
+    "Installation method": "安装方式",
+    "Suitable door types": "适用门型",
+    "Finishing process": "表面处理",
+    "Function options": "功能选择",
+    "Temperature range": "温度范围",
+    "Service life": "使用寿命",
+    "Maximum door height and width": "最大门高门宽",
+    "Main feature": "主要特点",
+    "Dimensions": "尺寸"
   },
   "productNames": {
     "Bathroom Accessories": "浴室配件",
@@ -330,7 +351,7 @@
     "Glass Door Patch Fitting Set": "玻璃门夹套装",
     "Door Closer": "闭门器",
     "Latch": "锁舌",
-    "Door Stopper": "门碰",
+    "Door Stopper": "门吸",
     "Deadbolts": "呆锁",
     "Commercial Lock": "商用锁",
     "Security Door Guard": "防盗链",
@@ -370,7 +391,9 @@
     "Panic Exit Device Lock Case": "逃生推杠锁体",
     "Door Knob": "旋钮锁",
     "Ball Bearing Hinge": "轴承合页",
-    "Concealed Hinge": "隐藏铰链"
+    "Concealed Hinge": "隐藏铰链",
+    "Concealed Hydraulic Hinge": "暗藏液压铰链",
+    "Hydraulic Hinge": "液压合页"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -472,7 +495,62 @@
     "Up and down: ±1.5mm; Front and back: ±1.5mm": "上下 ±1.5mm / 前后 ±1.5mm（二维）",
     "Up and down: ±2.5mm; Left and right: ±2.0mm; Front and back: ±2.5mm": "上下 ±2.5mm / 左右 ±2.0mm / 前后 ±2.5mm",
     "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm": "上下 ±3.0mm / 左右 +3.5/-2.0mm / 前后 ±1.5mm",
-    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±2.0mm"
+    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±2.0mm",
+    "Zinc Alloy + Aviation aluminium": "锌合金 + 航空铝",
+    "Zinc Alloy + Aluminium Alloy": "锌合金 + 铝合金",
+    "Zinc Alloy + Aviation aluminium + 304 Stainless Steel": "锌合金 + 航空铝 + 304不锈钢",
+    "Doors of every kind": "各式门扇",
+    "Stops the door striking the wall": "防止门与墙的碰撞",
+    "Concealed floor stop": "隐藏式地吸",
+    "Non-magnetic windproof floor stop": "无磁防风地吸",
+    "Magnetic silent floor stop": "磁力静音地吸",
+    "Door-top stop": "门顶",
+    "Door leaf 5mm / frame 5mm": "门扇 5mm／门框 5mm",
+    "Door leaf 4-13mm / frame 4-13mm": "门扇 4-13mm／门框 4-13mm",
+    "60kg (2 hydraulic) / 80kg (2 hydraulic + 1 plain leaf) / 90kg (3 hydraulic)": "60kg（2 只液压承重）／80kg（2 只液压 + 1 空页承重）／90kg（3 只液压承重）",
+    "In and out ±1.0mm / up and down ±2.5mm / left and right ±1.5mm": "前后方向 ±1.0mm／上下方向 ±2.5mm／左右方向 ±1.5mm",
+    "In and out ±1.0mm / up and down ±2.0mm / left and right ±1.5mm": "前后方向 ±1.0mm／上下方向 ±2.0mm／左右方向 ±1.5mm",
+    "In and out ±1.0mm / up and down ±2.0mm / left and right ±2.0mm": "前后方向 ±1.0mm／上下方向 ±2.0mm／左右方向 ±2.0mm",
+    "Any angle between 90° and 180°": "90°-180° 任意角度定位",
+    "Any angle between 90° and 110°": "90°-110° 任意角度定位",
+    "Any angle between 90° and 180°, positive stop at 160°": "90°-180° 任意角度停位，160° 定位",
+    "Three-dimensionally adjustable; Self-closing hydraulic buffer; Closing speed adjustable fast or slow, no tool needed; Shallow routing, no hydraulic tail rod": "三维可调；自闭液压缓冲；快慢可调节，无需借助工具调节；开槽浅，无液压尾杆",
+    "28mm narrow and 10mm slim; 45mm rebated door keeps a 4mm edge distance; Shallow frame routing that does not cut into the aluminium frame body; Fully concealed, closes flush when routed in; Hydraulic buffer with integrated damping; Three-dimensionally adjustable, precise and quick; Damping adjustable fast or slow, closing speed under control; 110° opening angle, self-closing with a silent buffer": "28mm 极窄 × 10mm 超薄；45mm 企口门，门边距可保留 4mm；门框开槽浅，不会破坏铝框内部框体；全暗藏设计，开槽安装严丝合缝；液压缓冲，采用集成阻尼；三维可调，调节精准便捷；阻尼快慢可调，关门速度尽在掌控；110° 开门角度，自动闭合静音缓冲",
+    "Handed neither left nor right, top nor bottom": "不分左右／不分上下",
+    "Routed in": "开槽安装",
+    "Rebated door, aluminium-framed door, wooden door": "企口门、铝框门、木门",
+    "70kg (2 hinges)": "70kg（2 个铰链）",
+    "140mm × 34mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)": "140mm × 34mm × 4mm（门框门扇各 4mm 深，或门扇单独开 8mm 深）",
+    "158mm × 36mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)": "158mm × 36mm × 4mm（门框门扇各 4mm 深，或门扇单独开 8mm 深）",
+    "Anodised, electroplated": "氧化，电镀",
+    "Silent hinge; latching hinge; silent latching adjustable hinge": "静音合页、入锁合页、静音入锁可调合页",
+    "Silent latching adjustable hinge": "静音入锁可调合页",
+    "-20°C to 40°C (uses door-closer Fuchs oil)": "-20℃-40℃（采用的是闭门器福斯油）",
+    "More than 500,000 cycles (cylindrical helical compression spring inside)": "50 万次以上（内部结构采用圆柱螺旋压缩弹簧）",
+    "2 hydraulic 55kg or less / 3 hydraulic 75kg or less": "2 只液压 ≤55kg／3 只液压 ≤75kg",
+    "2 hydraulic 75kg or less / 3 hydraulic 100kg or less": "2 只液压 ≤75kg／3 只液压 ≤100kg",
+    "1 plain barrel + 1 hydraulic: height 2000mm or less, width 800mm or less; 2 hydraulic: height 2200mm or less, width 900mm or less; 3 hydraulic: height 2400mm or less, width 1200mm or less": "1 空管 1 液压：门高 ≤2000mm，门宽 ≤800mm；2 只液压：门高 ≤2200mm，门宽 ≤900mm；3 只液压：门高 ≤2400mm，门宽 ≤1200mm",
+    "36.2 × 12.2mm": "36.2 × 12.2mm",
+    "130mm long × 42mm deep": "长 130mm × 深 42mm",
+    "138 × 34mm (34mm leaf) / 132 × 30mm (30mm leaf)": "138 × 34mm（34 宽叶片）／132 × 30mm（30 宽叶片）",
+    "157 × 36mm (36mm leaf) / 157 × 30mm (30mm leaf)": "157 × 36mm（36 宽叶片）／157 × 30mm（30 宽叶片）",
+    "34mm / 30mm": "34mm／30mm",
+    "36mm / 30mm": "36mm／30mm",
+    "23.2mm / 35.2mm": "23.2mm／35.2mm",
+    "Height 46mm; pin Ø14mm; base plate 40 × 30mm; floor ring Ø30 × 6mm": "高 46mm；插销 Ø14mm；底板 40 × 30mm；地面环 Ø30 × 6mm",
+    "Height 50mm; pin Ø14mm; floor ring Ø30 × 6mm": "高 50mm；插销 Ø14mm；地面环 Ø30 × 6mm",
+    "Body 37 × 27 × 39mm; overall height 45mm; floor ring Ø35 × 6mm": "主体 37 × 27 × 39mm；总高 45mm；地面环 Ø35 × 6mm",
+    "Height 40mm; body 17 × 29mm; floor plate Ø62 × 8.2mm": "高 40mm；主体 17 × 29mm；地面板 Ø62 × 8.2mm",
+    "Height 40.5mm; body 29mm wide; floor ring Ø30 × 6mm": "高 40.5mm；主体宽 29mm；地面环 Ø30 × 6mm",
+    "Door plate 28 × 43mm; floor plate 57.5mm": "门板件 28 × 43mm；地面板 57.5mm",
+    "Floor plate 58mm; catch 52 × 33mm": "地面板 58mm；吸头 52 × 33mm",
+    "Door plate 26 × 50mm; catch body 40mm; floor plate 61 × 50mm": "门板件 26 × 50mm；吸头主体 40mm；地面板 61 × 50mm",
+    "45 × 26mm; height 23mm": "45 × 26mm；高 23mm",
+    "Height 75mm; head Ø34mm; base Ø45mm": "高 75mm；吸头 Ø34mm；底座 Ø45mm",
+    "Height 76.5mm; post Ø18mm; base Ø37.5mm": "高 76.5mm；立柱 Ø18mm；底座 Ø37.5mm",
+    "36mm leaf": "36 宽叶片",
+    "34mm leaf": "34 宽叶片",
+    "30mm leaf": "30 宽叶片"
   },
   "tokens": [
     [
@@ -1298,6 +1376,58 @@
     [
       "PVD Gold",
       "PVD 金"
+    ],
+    [
+      "Brushed Gunmetal",
+      "枪灰拉丝"
+    ],
+    [
+      "True Gold",
+      "真金"
+    ],
+    [
+      "Brushed Brass",
+      "铜拉丝"
+    ],
+    [
+      "Matt White",
+      "哑白"
+    ],
+    [
+      "Brushed Matt Nickel",
+      "哑镍拉丝"
+    ],
+    [
+      "Satin Silver",
+      "砂银"
+    ],
+    [
+      "Satin Gold",
+      "砂金"
+    ],
+    [
+      "Space Grey",
+      "星空灰"
+    ],
+    [
+      "Cream White",
+      "米白"
+    ],
+    [
+      "Black Antique Copper",
+      "黑红古"
+    ],
+    [
+      "PVD",
+      "PVD"
+    ],
+    [
+      "Aviation aluminium",
+      "航空铝"
+    ],
+    [
+      "Concealed Hydraulic Hinge",
+      "暗藏液压铰链"
     ]
   ]
 }

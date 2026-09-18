@@ -1,0 +1,969 @@
+{
+  "_readme": [
+    "《雷茵-铰链和门吸》37 个跨页，18 个型号。一本书里其实是两本：",
+    "  · p1–p24  液压铰链 —— RY8001/8002/8003/8004 三维暗藏液压铰链，RY8005/8006 液压合页",
+    "  · p25–p37 门吸 —— 12 个型号，白底面板，版式一模一样",
+    "",
+    "这本图册**全中文**，不像暗铰链那本是中英双语的。所以英文不是抄的，是照中文写的，",
+    "中文回到站上由 zh-terms.json 的 specLabels / tokens / phrases 还原成图册原话。",
+    "",
+    "## 图片：一张中文都没有烤进去",
+    "",
+    "表面处理的中文名印在每张图下面，裁的时候只取每格上面那一块，标签留在页上。",
+    "RY8005/8006 的尺寸图上方有「叶片36宽」「叶片30宽」的中文小标题 —— 没有涂掉，",
+    "而是把两张图分开裁成 -drawing-1 / -drawing-2，叶片宽度写进 drawingNotes 和规格行，",
+    "两种语言各自显示。涂改图片是下策，图册本来就把它们画成两张。",
+    "",
+    "液压铰链那几页的尺寸图是**白线画在近黑底**上。裁完做了反相 + 拉灰阶，",
+    "变成和站上其它尺寸图一样的黑线白底 —— 线稿反相只换极性，不改内容，照片一张没反。",
+    "（反相要分两趟：sharp 无论调用顺序都把 negate 排在 resize 之后，一趟做的话",
+    "  白色留边会被反成黑框，第一版每张图外面都是一圈黑。）",
+    "",
+    "门吸的对页是整幅实景图，收进来作最后一张。窗口是「页宽见方、贴页面底边」——",
+    "这十二张实景全是把产品立在地面或踢脚线上，上面三分之一是空墙。逐张看过。",
+    "273 那张例外：左下角印着「门缝不低于5mm／门缝不大于15mm」，中文烤进图里英文站就翻不了，",
+    "所以 273 不收实景图。",
+    "",
+    "## 没有推算的数",
+    "",
+    "承重、门高门宽、温度、寿命都是逐页读的。尺寸图上说不清是量哪一段的数没有编标签 ——",
+    "35 个拉手突出尺寸出错就是因为给说不清的数编了标签。见 heldBack。",
+    "",
+    "## 两处并列，不是重复录入",
+    "",
+    "  · 209 和 1328 的尺寸图完全一样（高 75、头 Ø34、底 Ø45），照片也几乎一样。",
+    "    差别在底座：1328 是带台阶的两层圆盘，209 是一体喇叭口。表面处理也不同",
+    "    （1328 有青古铜和 PVD，209 没有）。是两个型号，不是录了两遍。",
+    "  · 273 和 273-1 同为隐藏式地吸，273-1 多一块 40 × 30 的底板，高度 46 对 50。",
+    "",
+    "## 表面处理按图册印照片的顺序写",
+    "",
+    "「可选表面处理」色块清单的顺序和下面照片的顺序**不一样**（273-1 清单是",
+    "铜拉丝→哑黑→白色→星空灰→镍拉丝，照片是镍拉丝→哑黑→星空灰→白色→铜拉丝）。",
+    "finishes 按**照片顺序**写，因为 -finish-a..i 的字母是直接拿去索引这个数组做 alt 文本的；",
+    "两边是同一组颜色，逐个核对过数量和名字。",
+    "",
+    "「PVD」图册只印这三个字母，没有印颜色。照片是亮金的，但 PVD 是工艺不是颜色，",
+    "不替它写「PVD 金」—— 站上就照原样写 PVD。",
+    "",
+    "## 类目",
+    "",
+    "液压铰链进现成的 floor-springs-and-pivots/hydraulic-hinges（已有 JL606–609），",
+    "门吸进 hardware-accessories/door-stoppers（已有 DS 七个）。两个类目都是现成的，",
+    "不用新开，也就不会在 HYDE、Stahlock 上产生空类目页。",
+    "",
+    "「最大门重」这一行，RY8001–8004 图册写「可承重最大门重」、RY8005/8006 写「最大门重」。",
+    "统一成后者一条标签：同一本书同一家公司的两种写法，不是技术上的区别",
+    "（和合页那本「枪灰色」对「银河灰」不一样，那两个是两条产品线各自的叫法）。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-catalogue-hydraulic",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "RY8001 尺寸图上的 146",
+      "reason": "侧视图上的一段，和正视图 190 对不上，说不清量的是槽长还是两个调节螺丝的间距，不编标签"
+    },
+    {
+      "model": "RY8001 的 24 / 20.5 / 4.5 / 14",
+      "reason": "开槽尺寸链里的分段，36.2 × 12.2 已经把开槽断面说完了"
+    },
+    {
+      "model": "RY8004 尺寸图上的 118",
+      "reason": "横跨底板两端，像是固定孔中心距但两端画的是整个凸耳，不确定，不编标签"
+    },
+    {
+      "model": "270 尺寸图上的 56",
+      "reason": "在门板件和地面板之间，没有指明量的是哪一段"
+    },
+    {
+      "model": "273-1 平面图的 30",
+      "reason": "底板另一个方向的尺寸；平面图和立面图不是同一比例画的，按 40 × 30 记，这个数单独留个案"
+    },
+    {
+      "model": "全部 18 个型号的安装螺钉规格",
+      "reason": "图册上一个都没印"
+    },
+    {
+      "model": "展板锁体门锁固定片（p37）",
+      "reason": "没有型号代号、没有尺寸、没有表面处理；是展厅样板上装锁体用的底板，不是可售门件"
+    }
+  ],
+  "models": [
+    {
+      "model": "RY8001",
+      "slug": "ry8001-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "三维暗藏液压铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy + Aviation aluminium",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "True Gold",
+        "Brushed Brass",
+        "Polished Chrome",
+        "Matt White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "190mm"
+        },
+        {
+          "label": "Leaf width",
+          "value": "30mm"
+        },
+        {
+          "label": "Routing section",
+          "value": "36.2 × 12.2mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy + Aviation aluminium"
+        },
+        {
+          "label": "Door thickness",
+          "value": "40-60mm"
+        },
+        {
+          "label": "Routing edge distance",
+          "value": "Door leaf 5mm / frame 5mm"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "60kg (2 hydraulic) / 80kg (2 hydraulic + 1 plain leaf) / 90kg (3 hydraulic)"
+        },
+        {
+          "label": "Three-dimensional adjustment",
+          "value": "In and out ±1.0mm / up and down ±2.5mm / left and right ±1.5mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Hold-open",
+          "value": "Any angle between 90° and 180°"
+        },
+        {
+          "label": "Features",
+          "value": "Three-dimensionally adjustable; Self-closing hydraulic buffer; Closing speed adjustable fast or slow, no tool needed; Shallow routing, no hydraulic tail rod"
+        }
+      ]
+    },
+    {
+      "model": "RY8002",
+      "slug": "ry8002-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "大距边三维暗藏液压铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy + Aviation aluminium",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "Brushed Matt Nickel",
+        "Brushed Brass",
+        "True Gold",
+        "Polished Chrome"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "175mm"
+        },
+        {
+          "label": "Leaf width",
+          "value": "30mm"
+        },
+        {
+          "label": "Width across leaves",
+          "value": "61.2mm"
+        },
+        {
+          "label": "Routing depth",
+          "value": "23.2mm / 35.2mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy + Aviation aluminium"
+        },
+        {
+          "label": "Door thickness",
+          "value": "40-60mm"
+        },
+        {
+          "label": "Routing edge distance",
+          "value": "Door leaf 4-13mm / frame 4-13mm"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "60kg (2 hydraulic) / 80kg (2 hydraulic + 1 plain leaf) / 90kg (3 hydraulic)"
+        },
+        {
+          "label": "Three-dimensional adjustment",
+          "value": "In and out ±1.0mm / up and down ±2.0mm / left and right ±1.5mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Hold-open",
+          "value": "Any angle between 90° and 180°"
+        },
+        {
+          "label": "Features",
+          "value": "Three-dimensionally adjustable; Self-closing hydraulic buffer; Closing speed adjustable fast or slow, no tool needed; Shallow routing, no hydraulic tail rod"
+        }
+      ]
+    },
+    {
+      "model": "RY8003",
+      "slug": "ry8003-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "窄边三维暗藏液压铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy + Aluminium Alloy",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "Polished Chrome",
+        "Matt White",
+        "Brushed Brass",
+        "True Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "175mm"
+        },
+        {
+          "label": "Leaf width",
+          "value": "28mm"
+        },
+        {
+          "label": "Routing",
+          "value": "130mm long × 42mm deep"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy + Aluminium Alloy"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-60mm"
+        },
+        {
+          "label": "Installation direction",
+          "value": "Handed neither left nor right, top nor bottom"
+        },
+        {
+          "label": "Installation method",
+          "value": "Routed in"
+        },
+        {
+          "label": "Suitable door types",
+          "value": "Rebated door, aluminium-framed door, wooden door"
+        },
+        {
+          "label": "Three-dimensional adjustment",
+          "value": "In and out ±1.0mm / up and down ±2.0mm / left and right ±2.0mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "110°"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "70kg (2 hinges)"
+        },
+        {
+          "label": "Features",
+          "value": "28mm narrow and 10mm slim; 45mm rebated door keeps a 4mm edge distance; Shallow frame routing that does not cut into the aluminium frame body; Fully concealed, closes flush when routed in; Hydraulic buffer with integrated damping; Three-dimensionally adjustable, precise and quick; Damping adjustable fast or slow, closing speed under control; 110° opening angle, self-closing with a silent buffer"
+        }
+      ]
+    },
+    {
+      "model": "RY8004",
+      "slug": "ry8004-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "免开槽三维暗藏液压铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy + Aviation aluminium + 304 Stainless Steel",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "Brushed Matt Nickel",
+        "Brushed Brass",
+        "True Gold",
+        "Matt White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "175mm"
+        },
+        {
+          "label": "Leaf width",
+          "value": "28mm"
+        },
+        {
+          "label": "Routing",
+          "value": "130mm long × 42mm deep"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy + Aviation aluminium + 304 Stainless Steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-60mm"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "60kg (2 hydraulic) / 80kg (2 hydraulic + 1 plain leaf) / 90kg (3 hydraulic)"
+        },
+        {
+          "label": "Three-dimensional adjustment",
+          "value": "In and out ±1.0mm / up and down ±2.5mm / left and right ±1.5mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "110°"
+        },
+        {
+          "label": "Hold-open",
+          "value": "Any angle between 90° and 110°"
+        },
+        {
+          "label": "Features",
+          "value": "Three-dimensionally adjustable; Self-closing hydraulic buffer; Closing speed adjustable fast or slow, no tool needed; Shallow routing, no hydraulic tail rod"
+        }
+      ]
+    },
+    {
+      "model": "RY8005",
+      "slug": "ry8005-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "5寸液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aerospace aluminium",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "Antique Bronze",
+        "Satin Gold",
+        "Antique Yellow Brass",
+        "Matt White"
+      ],
+      "drawingNotes": [
+        "34mm leaf",
+        "30mm leaf"
+      ],
+      "specs": [
+        {
+          "label": "Routing size",
+          "value": "140mm × 34mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)"
+        },
+        {
+          "label": "Leaf width",
+          "value": "34mm / 30mm"
+        },
+        {
+          "label": "Overall size",
+          "value": "138 × 34mm (34mm leaf) / 132 × 30mm (30mm leaf)"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø22.2mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Aerospace aluminium"
+        },
+        {
+          "label": "Finishing process",
+          "value": "Anodised, electroplated"
+        },
+        {
+          "label": "Function options",
+          "value": "Silent hinge; latching hinge; silent latching adjustable hinge"
+        },
+        {
+          "label": "Temperature range",
+          "value": "-20°C to 40°C (uses door-closer Fuchs oil)"
+        },
+        {
+          "label": "Hold-open",
+          "value": "90-180°"
+        },
+        {
+          "label": "Service life",
+          "value": "More than 500,000 cycles (cylindrical helical compression spring inside)"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "2 hydraulic 55kg or less / 3 hydraulic 75kg or less"
+        },
+        {
+          "label": "Maximum door height and width",
+          "value": "1 plain barrel + 1 hydraulic: height 2000mm or less, width 800mm or less; 2 hydraulic: height 2200mm or less, width 900mm or less; 3 hydraulic: height 2400mm or less, width 1200mm or less"
+        }
+      ]
+    },
+    {
+      "model": "RY8006",
+      "slug": "ry8006-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "6寸液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aerospace aluminium",
+      "finishes": [
+        "Brushed Gunmetal",
+        "Matt Black",
+        "True Gold",
+        "Brushed Brass",
+        "Satin Silver",
+        "Matt White"
+      ],
+      "drawingNotes": [
+        "36mm leaf",
+        "30mm leaf"
+      ],
+      "specs": [
+        {
+          "label": "Routing size",
+          "value": "158mm × 36mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)"
+        },
+        {
+          "label": "Leaf width",
+          "value": "36mm / 30mm"
+        },
+        {
+          "label": "Overall size",
+          "value": "157 × 36mm (36mm leaf) / 157 × 30mm (30mm leaf)"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø23.8mm"
+        },
+        {
+          "label": "Maximum opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Material",
+          "value": "Aerospace aluminium"
+        },
+        {
+          "label": "Finishing process",
+          "value": "Anodised, electroplated"
+        },
+        {
+          "label": "Function options",
+          "value": "Silent latching adjustable hinge"
+        },
+        {
+          "label": "Temperature range",
+          "value": "-20°C to 40°C (uses door-closer Fuchs oil)"
+        },
+        {
+          "label": "Hold-open",
+          "value": "Any angle between 90° and 180°, positive stop at 160°"
+        },
+        {
+          "label": "Service life",
+          "value": "More than 500,000 cycles (cylindrical helical compression spring inside)"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "2 hydraulic 75kg or less / 3 hydraulic 100kg or less"
+        },
+        {
+          "label": "Maximum door height and width",
+          "value": "1 plain barrel + 1 hydraulic: height 2000mm or less, width 800mm or less; 2 hydraulic: height 2200mm or less, width 900mm or less; 3 hydraulic: height 2400mm or less, width 1200mm or less"
+        }
+      ]
+    },
+    {
+      "model": "273-1",
+      "slug": "273-1-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "隐藏式地吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Matt Black",
+        "Space Grey",
+        "White",
+        "Brushed Brass"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Concealed floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 46mm; pin Ø14mm; base plate 40 × 30mm; floor ring Ø30 × 6mm"
+        }
+      ]
+    },
+    {
+      "model": "273",
+      "slug": "273-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "隐藏式地吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Matt Black",
+        "Space Grey",
+        "White",
+        "Brushed Brass"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Concealed floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 50mm; pin Ø14mm; floor ring Ø30 × 6mm"
+        }
+      ]
+    },
+    {
+      "model": "275",
+      "slug": "275-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "PVD",
+        "Brushed Nickel",
+        "Space Grey",
+        "Cream White",
+        "White",
+        "Matt Black",
+        "Antique Yellow Brass",
+        "Black Antique Copper",
+        "Brushed Brass"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Body 37 × 27 × 39mm; overall height 45mm; floor ring Ø35 × 6mm"
+        }
+      ]
+    },
+    {
+      "model": "271",
+      "slug": "271-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "无磁防风地吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Brass",
+        "Polished Chrome",
+        "White",
+        "Antique Bronze",
+        "Brushed Nickel",
+        "PVD"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Non-magnetic windproof floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 40mm; body 17 × 29mm; floor plate Ø62 × 8.2mm"
+        }
+      ]
+    },
+    {
+      "model": "272",
+      "slug": "272-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Antique Yellow Brass",
+        "Brushed Nickel",
+        "Space Grey",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 40.5mm; body 29mm wide; floor ring Ø30 × 6mm"
+        }
+      ]
+    },
+    {
+      "model": "270",
+      "slug": "270-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Space Grey",
+        "Antique Yellow Brass",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Door plate 28 × 43mm; floor plate 57.5mm"
+        }
+      ]
+    },
+    {
+      "model": "280",
+      "slug": "280-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "磁力静音地吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Antique Yellow Brass",
+        "Matt Black",
+        "Brushed Brass",
+        "Space Grey",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Magnetic silent floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Floor plate 58mm; catch 52 × 33mm"
+        }
+      ]
+    },
+    {
+      "model": "220",
+      "slug": "220-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Space Grey",
+        "Brushed Nickel",
+        "Matt Black",
+        "Brushed Brass",
+        "PVD"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Door plate 26 × 50mm; catch body 40mm; floor plate 61 × 50mm"
+        }
+      ]
+    },
+    {
+      "model": "274",
+      "slug": "274-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Matt Black",
+        "Space Grey"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "45 × 26mm; height 23mm"
+        }
+      ]
+    },
+    {
+      "model": "1328",
+      "slug": "1328-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门顶",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Antique Yellow Brass",
+        "Matt Black",
+        "Brushed Brass",
+        "Space Grey",
+        "Antique Bronze",
+        "Brushed Nickel",
+        "PVD"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; head Ø34mm; base Ø45mm"
+        }
+      ]
+    },
+    {
+      "model": "209",
+      "slug": "209-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门顶",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Antique Yellow Brass",
+        "Matt Black",
+        "Brushed Brass",
+        "Brushed Nickel",
+        "Space Grey"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; head Ø34mm; base Ø45mm"
+        }
+      ]
+    },
+    {
+      "model": "215",
+      "slug": "215-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门顶",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Space Grey",
+        "Brushed Brass",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Door-top stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Doors of every kind"
+        },
+        {
+          "label": "Main feature",
+          "value": "Stops the door striking the wall"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 76.5mm; post Ø18mm; base Ø37.5mm"
+        }
+      ]
+    }
+  ]
+}

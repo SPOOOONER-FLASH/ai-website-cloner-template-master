@@ -308,7 +308,55 @@ function zhImage(image, altZh) {
   if (!image) return undefined;
   const src = toRayenSrc(image.src);
   if (!src) return undefined;
-  return { src, ratio: image.ratio ?? "1 / 1", label: altZh };
+  /* The English label rides along so the /en/ side of the RAYEN site can put English alt
+     text on the same picture. Before this it showed 「雷茵 RY140 隐藏铰链」 to an English
+     reader — viewProduct swapped the name, the summary and every spec row into English and
+     left the alt attribute in Chinese, on all 345 products. */
+  return { src, ratio: image.ratio ?? "1 / 1", label: altZh, labelEn: image.label };
+}
+
+/**
+ * The Chinese alt text for one picture.
+ *
+ * The English label already says what the picture IS — 「…, dimension drawing — 36mm leaf」,
+ * 「…, Brushed Gunmetal」, 「…, installed」. The mirror used to throw all of that away and
+ * write 「第 N 张」 on every gallery frame, so on the Chinese site — the site these products
+ * are actually FOR — a screen reader and image search got an index number where the English
+ * side got the finish name and the leaf width.
+ *
+ * A finish is matched against the record's OWN finishes list and read out of the list the
+ * mirror has already translated, rather than re-translated here: one vocabulary, and a
+ * finish the dictionary does not know falls back to the index instead of shipping a
+ * half-English caption. Same rule for everything else — nothing is used unless it comes
+ * out wholly Chinese.
+ */
+function zhImageAlt(label, modelLabel, fallback, finishesEn, finishesZh) {
+  if (typeof label !== "string") return fallback;
+  const at = label.indexOf(", ");
+  if (at < 0) return fallback;
+  const suffix = label.slice(at + 2).trim();
+
+  /* 「view 7」 describes the file, not the picture. The index reads better. */
+  if (/^view \d+$/i.test(suffix)) return fallback;
+
+  const drawing = /^dimension drawing(?:\s+—\s+(.+))?$/i.exec(suffix);
+  if (drawing) {
+    if (!drawing[1]) return `${modelLabel}，尺寸图`;
+    const note = translateValue(drawing[1]);
+    return HAS_ENGLISH_WORD.test(note)
+      ? `${modelLabel}，尺寸图`
+      : `${modelLabel}，尺寸图（${note}）`;
+  }
+  if (/^installed$/i.test(suffix)) return `${modelLabel}，安装实景`;
+
+  const at2 = (finishesEn ?? []).findIndex((f) => f === suffix);
+  if (at2 >= 0) {
+    const zh = (finishesZh ?? [])[at2];
+    if (zh && !HAS_ENGLISH_WORD.test(zh)) return `${modelLabel}，${zh}`;
+    /* PVD and the like: the catalogue prints the same three letters in both languages. */
+    if (zh && zh === suffix && suffix.length <= 5) return `${modelLabel}，${zh}`;
+  }
+  return fallback;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -349,9 +397,19 @@ for (const file of files) {
     usable second or third view sitting behind an unusable first one, and showing the empty
     state on those would have been a self-inflicted gap.
   */
-  const hero = zhImage(product.heroImage, modelLabel);
+  const finishesEn = product.finishes ?? [];
+  const finishesZh = finishesEn.map(translateValue);
+  const hero = zhImage(
+    product.heroImage,
+    zhImageAlt(product.heroImage?.label, modelLabel, modelLabel, finishesEn, finishesZh),
+  );
   const gallery = (product.gallery ?? [])
-    .map((image, index) => zhImage(image, `${modelLabel} 第 ${index + 2} 张`))
+    .map((image, index) =>
+      zhImage(
+        image,
+        zhImageAlt(image?.label, modelLabel, `${modelLabel} 第 ${index + 2} 张`, finishesEn, finishesZh),
+      ),
+    )
     .filter(Boolean);
   const heroImage = hero ?? gallery.shift();
 
@@ -366,7 +424,7 @@ for (const file of files) {
     summary,
     specs,
     material: translateValue(product.material ?? ""),
-    finishes: (product.finishes ?? []).map(translateValue),
+    finishes: finishesZh,
     doorTypes: (product.doorTypes ?? []).map(translateValue),
     heroImage,
     gallery,

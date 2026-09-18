@@ -17,7 +17,7 @@ import rayenFile from "../../content/rayen/site.json";
 import mirror from "./generated/products-zh.json";
 import { LOCALE_SEGMENT, type RayenLocale } from "./rayen-i18n";
 
-export type RayenImage = { src: string; ratio: string; label: string };
+export type RayenImage = { src: string; ratio: string; label: string; labelEn?: string };
 export type RayenSpec = { label: string; value: string };
 
 export type RayenProduct = {
@@ -76,9 +76,23 @@ export type RayenProductView = Omit<RayenProduct, "en">;
 const ZH_IMAGES = "/images/products-rayen/";
 const EN_IMAGES = "/images/products-rayen-en/";
 
-const enImage = <T extends { src: string } | undefined>(image: T): T =>
-  image?.src?.startsWith(ZH_IMAGES)
-    ? ({ ...image, src: image.src.replace(ZH_IMAGES, EN_IMAGES) } as T)
+/*
+  The English view of one picture: the teal-marked file, and the English alt text.
+
+  The mark was swapped here from the start; the alt text was not, so an English reader met
+  「雷茵 RY140 隐藏铰链」 under a hinge whose name, summary and every spec row above it had
+  been swapped into English. `labelEn` is the label off the English record, carried through
+  the Chinese mirror for exactly this.
+*/
+const enImage = <T extends { src: string; label?: string; labelEn?: string } | undefined>(
+  image: T,
+): T =>
+  image
+    ? ({
+        ...image,
+        src: image.src?.startsWith(ZH_IMAGES) ? image.src.replace(ZH_IMAGES, EN_IMAGES) : image.src,
+        label: image.labelEn ?? image.label,
+      } as T)
     : image;
 export function viewProduct(product: RayenProduct, locale: RayenLocale): RayenProductView {
   const { en, ...rest } = product;
