@@ -42,6 +42,10 @@ const PAGE_W = 9026;
 
 const DOCUMENTS = [
   {
+    md: "docs/collaboration/2026-09-18-移交-johns-电脑.md",
+    docx: "docs/collaboration/2026-09-18-雷茵全量移交.docx",
+  },
+  {
     md: "docs/collaboration/2026-09-15-catalogue-scene-style.md",
     docx: "docs/collaboration/2026-09-15-拍摄风格拆解.docx",
   },

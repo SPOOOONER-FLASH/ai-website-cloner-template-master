@@ -16,7 +16,31 @@ import { readFileSync, mkdirSync } from "node:fs";
 import * as mupdf from "mupdf";
 import sharp from "sharp";
 
-const SRC = "D:/xwechat_files/wxid_kslpb8pv4u1c12_ba05/msg/file/2026-09/雷茵-铰链和门吸.pdf";
+/*
+  Where the client's PDF is.
+
+  Pass it as the first argument: `node <this script> "D:/.../雷茵五金.pdf"`.
+
+  It used to be a hardcoded path into one machine's WeChat download folder, which broke
+  twice over: the work moved to a second machine, and on the first one the client tidied
+  the four catalogues into a 「新建文件夹」 subfolder. Neither failure is interesting and
+  both cost a debugging round, so the path is an argument now. RAYEN_CATALOGUE_DIR is the
+  convenience for running several cutters in a row against the same folder.
+*/
+const CATALOGUE = "雷茵-铰链和门吸.pdf";
+const SRC =
+  process.argv.find((a) => /\.pdf$/i.test(a)) ??
+  (process.env.RAYEN_CATALOGUE_DIR
+    ? `${process.env.RAYEN_CATALOGUE_DIR.replace(/[\/]+$/, "")}/${CATALOGUE}`
+    : null);
+if (!SRC) {
+  console.error(
+    `用法：node ${process.argv[1]} <${CATALOGUE} 的完整路径>
+` +
+      `   或：设 RAYEN_CATALOGUE_DIR 指向放这四本图册的文件夹再运行。`,
+  );
+  process.exit(1);
+}
 const doc = mupdf.Document.openDocument(readFileSync(SRC), "application/pdf");
 const PANELS = JSON.parse(readFileSync(new URL("panels-hydraulic.json", import.meta.url), "utf8"));
 const OUT = "hyd";
