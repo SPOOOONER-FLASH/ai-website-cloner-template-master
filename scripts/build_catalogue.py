@@ -106,11 +106,36 @@ FINISH_RGB = {code: rgb for _, rows in FINISHES for code, _n, _u, rgb in rows}
 # --------------------------------------------------------------------------- data
 
 
+def is_hyde(product: dict) -> bool:
+    """
+    The same predicate the website uses, in src/data/products.ts:
+
+        return !product.sites || product.sites.includes("hyde");
+
+    A record with no `sites` field belongs to every site; only the supplier batches the
+    client scoped to the Chinese brand carry sites:["rayen"].
+
+    THIS FILTER WAS MISSING AND IT MATTERED. content/products is shared by both brands,
+    and between 2026-09-11 and 2026-09-18 it gained 335 Rayen records. The catalogue was
+    last generated on 09-05, so nothing looked wrong until it was regenerated on 09-21:
+    62 pages became 112, and a family called "Floor Springs and Door Pivots (44)" —
+    Rayen's天地轴 — appeared in HYDE's export catalogue.
+
+    That is the borrowed-credentials mistake in a new place. A buyer who orders a floor
+    spring out of this book is ordering from a factory that did not make it, and the
+    catalogue is the document a buyer trusts most because it is the one they can print.
+    """
+    sites = product.get("sites")
+    return not sites or "hyde" in sites
+
+
 def load() -> tuple[list[dict], list[dict]]:
     categories = json.loads((ROOT / "content" / "categories.json").read_text("utf8"))["categories"]
     products = []
     for f in sorted(PRODUCTS.glob("*.json")):
-        products.append(json.loads(f.read_text("utf8")))
+        product = json.loads(f.read_text("utf8"))
+        if is_hyde(product):
+            products.append(product)
     return categories, products
 
 
@@ -520,23 +545,47 @@ def build(out: Path) -> Path:
     """
     page_of: dict[str, int] = {}
     book = Book()
+    toc: list[list] = []
     for final in (False, True):
         book = Book()
+        """
+        THE OUTLINE IS BUILT HERE, NOT BOLTED ON AFTERWARDS.
+
+        A reader on page 40 who wants the lever handles has two ways to get there: the
+        contents page, which means scrolling back to page 2, or the bookmark pane, which
+        is one click from anywhere. The printed contents already exists; the pane did not,
+        and a 62-page catalogue without one is a PDF you scroll rather than a book you
+        use.
+
+        It is assembled from the same `book.folio + 1` the contents page is numbered
+        from, in the same loop, so the two can never disagree. Bolting an outline on in a
+        post-processing pass would mean a second place that has to know where the lever
+        handles start — and the first time a category gains a page, one of the two would
+        be wrong with nothing to catch it.
+        """
+        toc = []
         cover(book)
+        toc.append([1, "Cover", 1])
+        toc.append([1, "Contents", book.folio + 2])
         contents(book, [
             {"name": c["name"], "count": len(by_family[c["slug"]]),
              "page": page_of.get(f"__family__{c['slug']}", "-")}
             for c in order
         ])
+        toc.append([1, "Ordering guidelines", book.folio + 2])
         how_to_order(book)
+        toc.append([1, "Materials & finishes", book.folio + 2])
         finishes_page(book)
 
         for category in order:
             items = by_family[category["slug"]]
             page_of[f"__family__{category['slug']}"] = book.folio + 1
+            toc.append([1, f"{category['name']} ({len(items)})", book.folio + 2])
             overview_pages(book, category["name"], items, page_of)
+            toc.append([2, "Specifications", book.folio + 2])
             spec_pages(book, category["name"], items, page_of)
 
+        toc.append([1, "Index", book.folio + 2])
         index_pages(book, products, page_of)
         if not final:
             book.doc.close()
@@ -547,6 +596,25 @@ def build(out: Path) -> Path:
         "subject": "Architectural door hardware",
         "keywords": "door hardware, panic exit device, mortise lock, lever handle, hinge",
     })
+    book.doc.set_toc(toc)
+    """
+    TWO-PAGE SPREADS, COVER ON ITS OWN.
+
+    The client asked for the reading experience MIWA buys from a Japanese SaaS
+    (jscatalogview / iCata): a spread, not a stack. Almost all of that is a PDF viewer
+    preference, and it costs two lines rather than a subscription and a canvas viewer
+    whose contents no crawler can read.
+
+    TwoPageRight, not TwoPageLeft: this book has a single cover page, so pairing from
+    the right keeps every spread as the designer laid it out — odd on the right, even on
+    the left — instead of shifting the whole book by one and pairing the cover with the
+    contents.
+
+    UseOutlines opens the bookmark pane on first open. Without it the outline exists and
+    nobody discovers it, which is the same as not having one.
+    """
+    book.doc.set_pagelayout("TwoPageRight")
+    book.doc.set_pagemode("UseOutlines")
     book.doc.save(out, garbage=4, deflate=True)
     return out
 

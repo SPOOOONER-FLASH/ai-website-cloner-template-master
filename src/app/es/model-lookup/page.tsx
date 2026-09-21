@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { ArrowLink } from "@/components/site/ArrowLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { ModelLookup } from "@/components/site/ModelLookup";
+import { ModelIndex } from "@/components/site/ModelIndex";
+import { modelIndex } from "@/lib/model-index";
 import { notShownModels, renamedRecords } from "@/lib/superseded-models";
 import { pageMetadata } from "@/lib/seo";
 
@@ -47,6 +49,8 @@ export default function ModelLookupPageEs() {
             </p>
           </div>
         </section>
+
+        <ModelIndex locale="es" entries={modelIndex("es")} />
 
         <ModelLookup locale="es" />
 

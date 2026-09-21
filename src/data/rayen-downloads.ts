@@ -37,7 +37,7 @@ export const downloads: RayenDownload[] = [
     },
     format: "PDF",
     pages: 84,
-    bytes: 8841446,
+    bytes: 8841770,
   },
 ];
 
