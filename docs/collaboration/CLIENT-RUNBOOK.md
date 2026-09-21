@@ -160,14 +160,26 @@ location = /index.asp {
      这不是坏消息：**保存失败意味着旧的、好的配置还在跑，网站一切正常。**
      面板不会把测试不通过的配置装上去。
 
-7. 验证。浏览器直接打开 `https://cantonlock.com/index.asp`，
-   应该**跳到首页**。或者在你自己电脑上跑：
+7. 验证。浏览器直接打开 `https://cantonlock.com/index.asp`，应该**跳到首页**。
+
+8. **如果还是 404，先别改配置。** 大概率配置是对的，只是边缘上还留着修好之前
+   那份 404。用这两条命令一次分清是「配置没生效」还是「缓存没更新」：
 
 ```bash
-curl -sI https://cantonlock.com/index.asp | head -1
+curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' https://cantonlock.com/index.asp
+curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' "https://cantonlock.com/index.asp?cb=123"
 ```
 
-   应该看到 `HTTP/2 301`。还是 `404` 就把第 4 步粘贴的那段截图发我。
+   `location = /index.asp` 是**路径**精确匹配，加不加查询串都一样命中；
+   但带查询串通常是另一个缓存键。所以：
+
+   | 两条结果 | 含义 | 怎么办 |
+   |---|---|---|
+   | 裸的 404，带 `?cb=` 的 **301** | 配置没问题，只是缓存旧了 | **purge 一次**就好，不要动配置 |
+   | 两条都 404 | 配置真的没生效 | 把第 4 步粘贴的那段截图发我 |
+   | 两条都 301 | 已经好了 | 无事 |
+
+   > 2026-09-21 实测就是第一种：裸的 404、带查询串的 301。配置一次就贴对了。
 
 ---
 
