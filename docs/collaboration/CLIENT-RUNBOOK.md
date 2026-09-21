@@ -100,11 +100,23 @@ https://cantonlock.com/guides/samples-and-incoming-inspection-2026/
 `/index.asp` 是更早的 ASP 时代地址，不带 `?aid=` 这种参数，不在生成器的管辖范围内。
 它得手工加在 nginx 的 location 块里，而那个块按快照里的说明就是「只有这个要手工改」的那个。
 
+> ⚠ **2026-09-21 修正**：这一条的第 2 步原先写的是「在那个块的**正下方**」，
+> 甲方照做，把新块贴在了 `location ~* ^/index\.php$ {` 这一行的正下面 ——
+> 也就是**塞进了那个块的内部**。nginx 不允许 location 嵌套 location，保存被拒：
+>
+> ```
+> nginx: [emerg] location "/index.asp" is outside location "^/index\.php$"
+> ```
+>
+> **他的读法是对的，是指令写错了。** 「正下方」有两个意思，我只想到了一个。
+> 下面的步骤已经改成用一个不会读错的锚点：`#LEGACY-REDIRECT-END`。
+> 那次 `nginx -t` 拦住了错误配置，站点全程没受影响。
+
 **怎么做**
 
-1. 登录服务器面板，打开 cantonlock.com 的 nginx 配置文件
-   （就是你上次改 `location ~* ^/index\.php$` 的那个文件）
-2. 在那个 `location ~* ^/index\.php$ { ... }` 块的**正下方**，新增这一段：
+1. 登录服务器面板 → 站点 `cantonlock.com` → **配置文件**
+2. **如果你上次已经贴过一段**：先把它删干净。按 `Ctrl+F` 搜 `index.asp`，
+   把下面这四行连同注释一起删掉，让文件回到没动过的样子：
 
 ```nginx
 # 更早的 ASP 时代首页。Search Console 仍在报它 404。
@@ -113,32 +125,49 @@ location = /index.asp {
 }
 ```
 
-3. **先测试，不要直接重载**：
+3. 按 `Ctrl+F` 搜 **`#LEGACY-REDIRECT-END`**。它是一整行，长这样：
 
-```bash
-nginx -t
+```nginx
+    #LEGACY-REDIRECT-END
 ```
 
-4. **看清楚它说什么**：
-   - 出现 `syntax is ok` 和 `test is successful` → 继续第 5 步
-   - 出现任何 `[emerg]` 或 `failed` → **停在这里，截图发我**。
-     不要重载 —— 带着坏配置重载会让整站下线。
+4. **把光标放到这一行的行尾，按回车另起一行**，然后粘贴这一段：
 
-5. 测试通过后才重载：
-
-```bash
-nginx -s reload
+```nginx
+    # 更早的 ASP 时代首页。Search Console 仍在报它 404。
+    location = /index.asp {
+        return 301 https://cantonlock.com/;
+    }
 ```
 
-   这条命令**成功时不打印任何东西**。没有输出就是对的。
+   **为什么是这里**：`#LEGACY-REDIRECT-END` 的上一行是一个 `}`，它关掉了
+   `location ~* ^/index\.php$` 那个块。贴在 END 之后，新块就是那个块的**兄弟**
+   而不是**孩子** —— 这正是上次失败的原因。
+   贴完之后，`location = /index.asp {` 这一行的左边**不能**还在别的 `location` 里面。
 
-6. 验证（在你自己电脑上跑，或者浏览器直接打开 `https://cantonlock.com/index.asp`）：
+5. 点绿色的 **保存** 按钮。
+
+   **这个面板在保存时会自己跑 `nginx -t`，你不需要另外开终端。**
+   它就是靠这个挡住了 2026-09-21 那次错误粘贴。
+
+6. **看清楚它回什么**：
+
+   - 弹窗说**保存成功** → 配置已生效，去第 7 步验证。
+   - 弹窗说 **「保存失败，因为检测到被修改的配置文件存在错误」**，
+     底下跟着一段 `nginx: [emerg] ...` →
+     **停在这里，把整个弹窗截图发我，不要再改别的地方。**
+
+     这不是坏消息：**保存失败意味着旧的、好的配置还在跑，网站一切正常。**
+     面板不会把测试不通过的配置装上去。
+
+7. 验证。浏览器直接打开 `https://cantonlock.com/index.asp`，
+   应该**跳到首页**。或者在你自己电脑上跑：
 
 ```bash
 curl -sI https://cantonlock.com/index.asp | head -1
 ```
 
-   应该看到 `HTTP/2 301`。还是 `404` 就把第 2 步那段粘贴给我看。
+   应该看到 `HTTP/2 301`。还是 `404` 就把第 4 步粘贴的那段截图发我。
 
 ---
 
