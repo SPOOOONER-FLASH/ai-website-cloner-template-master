@@ -59,30 +59,34 @@ export function Analytics() {
       ) : null}
 
       {/*
-        GOOGLE TAG MANAGER — loaded with next/script, not pasted into <head>.
+        GOOGLE TAG MANAGER — a real inline <script> in the served HTML, not next/script.
 
-        Google's own instructions say "as high in the <head> as possible", and that
-        advice is written for a page with no other performance work done to it. This
-        one has had that work done and it is measurable: the homepage JavaScript went
-        from 2,241 KB to 669 KB on 2026-09-11, GA4 was moved to lazyOnload on 09-13
-        precisely to get a third-party preload OUT of the head, and mobile PageSpeed
-        sits at 76. Injecting a synchronous third-party script at the top of every
-        document gives that back.
+        It was next/script with strategy="afterInteractive" for exactly one day. That
+        renders the loader CLIENT-SIDE, after hydration, so the snippet never appears in
+        the HTML the server sends: on 2026-09-21 the only occurrence of the container ID
+        in the live homepage was the <noscript> iframe below. Real browsers still loaded
+        GTM, but Google's own installation test fetches the document and greps it, so it
+        reported "Your Google tag wasn't detected" — for the apex domain as well as www.
 
-        afterInteractive loads GTM after hydration. For a container whose job is to
-        fire analytics tags, the difference is a few hundred milliseconds in when the
-        first hit is recorded; it is not a difference in whether it is recorded. This
-        is also the integration Next documents for GTM.
+        THE PERFORMANCE REASON GIVEN FOR afterInteractive WAS WRONG, and is written down
+        here so it is not repeated. GTM's stub sets `j.async = true` itself. What goes
+        into the document is ~500 bytes costing about a millisecond to parse; the gtm.js
+        download was always asynchronous. That is not the same thing as a synchronous
+        third-party `<script src>`, which is what the earlier note argued against. The
+        GA4 note above is about a real preload in the head and still stands — these two
+        cases look alike and are not.
 
-        The <noscript> iframe is included for completeness. It only does anything for
-        a visitor with JavaScript disabled — who, by definition, cannot be measured by
-        any tag in the container either.
+        GA4 and Clarity are still loaded directly, so this container holds neither. If a
+        GA4 tag is ever added inside it, delete ga4Id in src/data/site.ts in the same
+        change: two loaders double every session, and doubled numbers look like growth.
       */}
       {gtmId ? (
         <>
-          <Script id="gtm-init" strategy="afterInteractive">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`}
-          </Script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`,
+            }}
+          />
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
