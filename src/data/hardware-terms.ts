@@ -340,7 +340,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     termEs: "Eje cuadradillo",
     termPt: "Eixo quadrado",
     group: "mechanism",
-    specLabels: ["Spindle", "Spindle Hole"],
+    specLabels: ["Spindle", "Spindle hole construction"],
     definition:
       "The square steel bar that passes through the lock and carries the turn of the handle from one side of the door to the other. Ours are 8mm and 9mm square.",
     definitionEs:

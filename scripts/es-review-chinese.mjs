@@ -40,7 +40,7 @@ export const SPEC_LABELS_ZH = {
   "Key options": "钥匙选项",
   Color: "颜色",
   Projection: "凸出高度",
-  "Spindle Hole": "方轴孔",
+  "Spindle hole construction": "方轴孔构造",
   "Strike Plate Material": "锁扣板材质",
   "Opening Angle": "开启角度",
   "Lever length": "执手长度",

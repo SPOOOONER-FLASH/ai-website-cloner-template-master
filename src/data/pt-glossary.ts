@@ -200,7 +200,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Case height": "Altura da caixa",
   "Case depth": "Profundidade da caixa",
   "Spindle length": "Comprimento do quadrado",
-  "Spindle Hole": "Furo do quadrado",
+  "Spindle hole construction": "Construção do furo do quadrado",
   "Spindle Material": "Material do quadrado",
   "Faceplate to cylinder centre": "Da testa ao centro do cilindro",
   "Cylinder centre to back": "Do centro do cilindro ao fundo",

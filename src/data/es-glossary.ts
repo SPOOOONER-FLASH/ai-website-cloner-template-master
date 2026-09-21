@@ -253,7 +253,7 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Cylinder centre to back": "Del centro del cilindro al fondo",
   // arrived with the stahlock import
   "Key options": "Opciones de llave",
-  "Spindle Hole": "Orificio del cuadradillo",
+  "Spindle hole construction": "Construcción del orificio del cuadradillo",
   "Strike Plate Material": "Material del cerradero",
   "Opening Angle": "Ángulo de apertura",
   "Max opening angle": "Ángulo máximo de apertura",

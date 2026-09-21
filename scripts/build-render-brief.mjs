@@ -73,7 +73,13 @@ const HERO_SET = [
 const GEOMETRY_LABELS = [
   "Plate size", "Plate thickness", "Plate width", "Plate height",
   "Backset", "Centre distance", "Center Distance", "Grip centre distance", "Fixing centre", "Fixing centres",
-  "Projection", "Cylinder cutout", "Cross bore", "Spindle Hole", "Spindle", "Spindle length",
+  /*
+    "Spindle Hole" used to sit here and never belonged. Its value across all fifteen lock
+    cases that carried it was "Copper Construction" — a material, not a dimension — so it
+    could not constrain a shape and a modeller reading it got nothing. It has since been
+    relabelled "Spindle hole construction", which is honest and still not geometry.
+  */
+  "Projection", "Cylinder cutout", "Cross bore", "Spindle", "Spindle length",
   "Deadbolt throw", "Latch extension", "Latch throw", "Bolt projection",
   "Size", "Sizes", "Length", "Width", "Height", "Thickness", "Diameter",
   "Tube diameter", "Tube Thickness", "Rose diameter", "Rosette Diameter", "Rose thickness", "Rose depth",

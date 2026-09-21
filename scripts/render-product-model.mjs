@@ -139,7 +139,14 @@ for (const spec of Object.values(model.pairs ?? {})) {
 }
 
 /* Optional: drawn only where published, never defaulted into existence here. */
-const spindle = firstMm(specs.get("Spindle") ?? specs.get("Spindle Hole") ?? "");
+/*
+  The old `?? specs.get("Spindle Hole")` fallback here was dead code that looked alive.
+  Every record carrying that label held "Copper Construction", so `firstMm` never found a
+  millimetre in it — the fallback could only ever return nothing. The row is now labelled
+  "Spindle hole construction" and is explicitly not a dimension, so there is nothing to
+  fall back to. A spindle size comes from the "Spindle" row or it is not drawn.
+*/
+const spindle = firstMm(specs.get("Spindle") ?? "");
 if (spindle) params.spindle = spindle;
 
 if (missing.length) {
