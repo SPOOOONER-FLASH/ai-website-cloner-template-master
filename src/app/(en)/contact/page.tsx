@@ -54,13 +54,24 @@ export default function ContactPage() {
               </p>
               <dl className="mt-24">
                 {[
-                  {
-                    email: siteSettings.contact.email,
-                    label: "Orders, pricing and samples",
-                  },
+                /*
+                  TECHNICAL FIRST. Client instruction, 2026-09-21: it is the mailbox he
+                  reads himself, so it is the one that should be first.
+
+                  It also happens to be the right order for the traffic. The 2026-09-20
+                  Clarity reading has every one of our 33 AI citations landing on an
+                  article that answers a technical question — finish codes, backset,
+                  cylinder length, push bar versus touch bar — and none on a price page.
+                  A reader who arrives from one of those and decides to write is carrying
+                  a drawing, not a purchase order.
+                */
                   {
                     email: siteSettings.contact.technicalEmail,
                     label: "Drawings, specification and test reports",
+                  },
+                  {
+                    email: siteSettings.contact.email,
+                    label: "Orders, pricing and samples",
                   },
                   {
                     email: siteSettings.contact.brandEmail,

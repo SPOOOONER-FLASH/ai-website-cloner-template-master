@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>工厂填写表 — 挡住网站的三件</title>
+<style>
+  :root { color-scheme: light; }
+  body { font: 16px/1.7 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         margin: 0; padding: 24px 16px 96px; background: #fff; color: #111; }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 8px; }
+  .sub { color: #666; margin: 0 0 32px; }
+  h2 { font-size: 19px; margin: 40px 0 4px; padding-top: 24px; border-top: 1px solid #e3e3e3; }
+  .lead { color: #444; margin: 4px 0 16px; }
+  .rule { background: #fff8e1; border-left: 3px solid #e0a800; padding: 12px 14px; margin: 16px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: 13px; color: #666; font-weight: 600;
+       border-bottom: 1px solid #ddd; padding: 8px 8px 8px 0; }
+  td { border-bottom: 1px solid #f0f0f0; padding: 10px 8px 10px 0; vertical-align: top; }
+  td.code { font-weight: 700; white-space: nowrap; }
+  td.why { color: #666; font-size: 13px; }
+  .done { color: #1a7f37; font-size: 13px; }
+  input.ans { width: 100%; box-sizing: border-box; font: inherit; font-size: 15px;
+              padding: 7px 9px; border: 1px solid #ccc; border-radius: 4px; background: #fff; }
+  input.ans:focus { outline: 2px solid #111; outline-offset: -1px; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; background: #111; color: #fff;
+         padding: 12px 16px; display: flex; gap: 12px; align-items: center; justify-content: center; }
+  button { font: inherit; font-size: 15px; padding: 9px 18px; border: 0; border-radius: 4px;
+           background: #fff; color: #111; cursor: pointer; font-weight: 600; }
+  button.ghost { background: transparent; color: #fff; border: 1px solid #555; font-weight: 400; }
+  #saved { color: #9c9; font-size: 13px; }
+  textarea { width: 100%; box-sizing: border-box; height: 260px; font: 13px/1.6 ui-monospace, Consolas, monospace;
+             padding: 12px; border: 1px solid #ccc; border-radius: 4px; margin-top: 12px; }
+  @media print { .bar, textarea, button { display: none } input.ans { border: 0; border-bottom: 1px solid #999; border-radius: 0 } }
+</style>
+<div class="wrap">
+
+<h1>工厂填写表 — 挡住网站的三件</h1>
+<p class="sub">
+  生成时间：2026-09-21　·　由 <code>scripts/build-factory-gap-sheet.mjs</code> 现算，不是手写的<br>
+  填完点最下面的「导出」，把出来的文字整段发回来就行。内容会自动保存在这台设备上，可以分几次填。
+</p>
+
+<div class="rule">
+  <strong>最重要的一条规矩：不确定就空着。</strong><br>
+  空着我们在网站上印一个短横线，买家知道要问。
+  填一个差不多的数字，买家会照着它开孔、下单、开模 —— 五金件的孔位在开模那一刻定死，
+  错了是一整批货。<strong>一个编出来的数字被抓到一次，买家会把我们所有的数字都打折。</strong>
+</div>
+
+<h2>一、六个订货代码到底是什么意思</h2>
+<p class="lead">
+  这六个代码正在我们自己的型号里用着，但没有任何资料说明它们代表什么。
+  网站的 <code>/finishes</code> 页面上它们现在印着「未确认」。
+  每个一句话就够，比如「SN = 砂镍 Satin Nickel」或「DK = 双面钥匙」。
+</p>
+<table>
+  <tr><th style="width:80px">代码</th><th style="width:44%">用在哪里</th><th>它代表什么</th></tr>
+  <tr>
+      <td class="code">N</td>
+      <td class="why">目录里 1 个型号带这个码，例如 Night Latch &amp; Rim Lock</td>
+      <td><input class="ans" data-id="code:N" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+<tr>
+      <td class="code">DK</td>
+      <td class="why">目录里 2 个型号带这个码，例如 54 DK、HY006DK</td>
+      <td><input class="ans" data-id="code:DK" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+<tr>
+      <td class="code">KT</td>
+      <td class="why">目录里暂时没有型号带这个码</td>
+      <td><input class="ans" data-id="code:KT" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+<tr>
+      <td class="code">IK</td>
+      <td class="why">目录里暂时没有型号带这个码</td>
+      <td><input class="ans" data-id="code:IK" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+<tr>
+      <td class="code">PT</td>
+      <td class="why">目录里暂时没有型号带这个码</td>
+      <td><input class="ans" data-id="code:PT" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+<tr>
+      <td class="code">BS</td>
+      <td class="why">目录里 1 个型号带这个码，例如 D101 BS</td>
+      <td><input class="ans" data-id="code:BS" placeholder="这两个字母代表什么？一句话"></td>
+    </tr>
+</table>
+
+<h2>二、五个型号的面板尺寸</h2>
+<p class="lead">
+  这几个型号占了近九十天询盘的大头。尺寸一给，尺寸线图和规格表当天就能出。
+  <strong>请量实物或查图纸，单位毫米。</strong>
+</p>
+<table>
+  <tr><th style="width:80px">型号</th><th style="width:34%">名称</th><th style="width:23%">面板尺寸 长×宽</th><th style="width:23%">面板厚度</th></tr>
+  <tr>
+      <td class="code">307</td>
+      <td class="why">Panic Exit Device</td>
+      <td><input class="ans" data-id="plate-size:307" placeholder="面板长 × 宽，毫米"></td>
+      <td><input class="ans" data-id="plate-thk:307" placeholder="面板厚度，毫米"></td>
+    </tr>
+<tr>
+      <td class="code">311</td>
+      <td class="why">Panic Exit Device</td>
+      <td><input class="ans" data-id="plate-size:311" placeholder="面板长 × 宽，毫米"></td>
+      <td><input class="ans" data-id="plate-thk:311" placeholder="面板厚度，毫米"></td>
+    </tr>
+<tr>
+      <td class="code">305</td>
+      <td class="why">Fire Door Panic Exit Device</td>
+      <td><input class="ans" data-id="plate-size:305" placeholder="面板长 × 宽，毫米"></td>
+      <td><input class="ans" data-id="plate-thk:305" placeholder="面板厚度，毫米"></td>
+    </tr>
+<tr>
+      <td class="code">035</td>
+      <td class="why">Panic Exit Device Trim</td>
+      <td><input class="ans" data-id="plate-size:035" placeholder="面板长 × 宽，毫米"></td>
+      <td><input class="ans" data-id="plate-thk:035" placeholder="面板厚度，毫米"></td>
+    </tr>
+<tr>
+      <td class="code">308</td>
+      <td class="why">Panic Exit Device</td>
+      <td><span class="done">已有</span></td>
+      <td><input class="ans" data-id="plate-thk:308" placeholder="面板厚度，毫米"></td>
+    </tr>
+</table>
+
+<h2>三、执手与拉手的固定孔</h2>
+<p class="lead">
+  买家换装时第一个要对的就是这两个数：<strong>固定孔的直径</strong>，和<strong>两个孔的中心距</strong>。
+  开孔图生成器早就建好了，就卡在这一个字段上。<br>
+  下面按系列分组，<strong>同一系列共用一套孔位的话，一族只填一次</strong>；
+  如果同一系列里不同型号孔位不同，请在中心距那栏写清楚，例如「1022 是 96，其余 128」。
+</p>
+<table>
+  <tr><th style="width:150px">系列</th><th style="width:38%">包含型号</th><th style="width:18%">孔径 ⌀</th><th style="width:18%">孔中心距</th></tr>
+  <tr>
+      <td class="code">Lever Handle</td>
+      <td class="why">62 个型号：3431 SNET、3431 SSET、6491 SNET、6491 SSET、6491ABET、801 PBET、803 PBET、803 SBET 等</td>
+      <td><input class="ans" data-id="fix-dia:Lever Handle" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Lever Handle" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Stainless Steel Handle</td>
+      <td class="why">36 个型号：9001、9002E、9003E、9004、9004S、9005E、9005S、9006S 等</td>
+      <td><input class="ans" data-id="fix-dia:Stainless Steel Handle" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Stainless Steel Handle" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Glass Door Handle</td>
+      <td class="why">15 个型号：100、100-30MM、102、102-30MM、104、105、105-600、106 等</td>
+      <td><input class="ans" data-id="fix-dia:Glass Door Handle" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Glass Door Handle" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Grip Handle Set</td>
+      <td class="why">15 个型号：70610 AB、70610 SC、70710 PB、70710 SN、70720 PB、70720 SM、70722 DC、70750 PB 等</td>
+      <td><input class="ans" data-id="fix-dia:Grip Handle Set" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Grip Handle Set" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Glass Door Patch Fittings</td>
+      <td class="why">9 个型号：F101、F110、F111、F112、F113、F114、F123、F132 等</td>
+      <td><input class="ans" data-id="fix-dia:Glass Door Patch Fittings" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Glass Door Patch Fittings" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland 600</td>
+      <td class="why">8 个型号：069、600、9007E、9010E、9087 SS、LH1083、LH1083 SS、LH1085 SS</td>
+      <td><input class="ans" data-id="fix-dia:Hyland 600" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland 600" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland Glass</td>
+      <td class="why">2 个型号：Glass Door Patch Fitting Set、Stainless Steel Glass Door Pull Handle</td>
+      <td><input class="ans" data-id="fix-dia:Hyland Glass" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland Glass" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland Deadbolt</td>
+      <td class="why">1 个型号：Keyed Deadbolt Lock Set</td>
+      <td><input class="ans" data-id="fix-dia:Hyland Deadbolt" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland Deadbolt" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland Tubular</td>
+      <td class="why">1 个型号：Black Tubular Lever Lock Set</td>
+      <td><input class="ans" data-id="fix-dia:Hyland Tubular" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland Tubular" placeholder="孔中心距 mm"></td>
+    </tr>
+<tr>
+      <td class="code">Hyland Lever</td>
+      <td class="why">1 个型号：Stainless Steel Lever Handle Lock</td>
+      <td><input class="ans" data-id="fix-dia:Hyland Lever" placeholder="孔径 mm"></td>
+      <td><input class="ans" data-id="fix-cc:Hyland Lever" placeholder="孔中心距 mm"></td>
+    </tr>
+</table>
+
+<textarea id="out" placeholder="点「导出」之后，答案会出现在这里，整段复制发回来即可。" readonly></textarea>
+
+</div>
+
+<div class="bar">
+  <button id="export">导出（然后整段复制发回）</button>
+  <button class="ghost" id="clear">清空</button>
+  <span id="saved"></span>
+</div>
+
+<script>
+(function () {
+  var KEY = "factory-gap-sheet-v1";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { saved = {}; }
+
+  var inputs = Array.prototype.slice.call(document.querySelectorAll("input.ans"));
+  inputs.forEach(function (el) {
+    var id = el.getAttribute("data-id");
+    if (saved[id]) el.value = saved[id];
+    el.addEventListener("input", function () {
+      saved[id] = el.value;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      var s = document.getElementById("saved");
+      s.textContent = "已保存";
+      clearTimeout(window.__t);
+      window.__t = setTimeout(function () { s.textContent = ""; }, 1200);
+    });
+  });
+
+  document.getElementById("export").addEventListener("click", function () {
+    var lines = ["工厂填写表 — 挡住网站的三件", "导出时间：" + new Date().toLocaleString("zh-CN"), ""];
+    var n = 0;
+    inputs.forEach(function (el) {
+      var v = (el.value || "").trim();
+      if (!v) return;
+      n++;
+      var row = el.closest("tr");
+      var head = row ? row.querySelector("td.code").textContent.trim() : "";
+      var col = el.getAttribute("placeholder") || "";
+      lines.push("[" + el.getAttribute("data-id") + "] " + head + " · " + col);
+      lines.push("  \u2192 " + v);
+    });
+    if (!n) lines.push("（还没有填写任何一栏）");
+    else lines.push("", "共 " + n + " 条。没填的是还不确定的，按规矩空着。");
+    var out = document.getElementById("out");
+    out.value = lines.join("\n");
+    out.removeAttribute("readonly");
+    out.focus();
+    out.select();
+  });
+
+  document.getElementById("clear").addEventListener("click", function () {
+    if (!confirm("清空所有已填内容？")) return;
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    inputs.forEach(function (el) { el.value = ""; });
+    document.getElementById("out").value = "";
+  });
+})();
+</script>
+</html>

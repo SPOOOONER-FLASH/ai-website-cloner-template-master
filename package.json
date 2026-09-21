@@ -106,7 +106,8 @@
     "audit:es:pages": "node scripts/audit-es-pages.mjs",
     "audit:citations": "node scripts/audit-ai-citations.mjs",
     "translate:features:pt": "node scripts/translate-product-features-pt.mjs",
-    "translate:features:es": "node scripts/translate-product-features-es.mjs"
+    "translate:features:es": "node scripts/translate-product-features-es.mjs",
+    "sheet:factory": "node scripts/build-factory-gap-sheet.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
