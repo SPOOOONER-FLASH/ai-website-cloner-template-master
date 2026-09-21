@@ -133,3 +133,87 @@ console.log('文章', files.length, '| 平均字数', Math.round(words/files.len
 ```
 
 2026-09-21 基线：`文章 35 | 平均字数 730 | FAQ 105 | 标题含年份 0 | 含标准号 5`
+
+---
+
+## 六、第二批 20 篇（2026-09-21 排定，按 Clarity 排名选题）
+
+### 先纠正第一批的一个口径问题
+
+第一批交付时报的「平均 1,467 词」是**引擎可见口径**（summary + body + FAQ）。
+本计划第 52 行定的标准是「**正文** 1,600 字以上」，两者不是一回事：
+
+| | 正文均 | 引擎可见均 | FAQ |
+|---|---|---|---|
+| guides 第一批 20 篇 | **1,057** | 1,477 | 120 |
+| news 旧 35 篇 | 731 | 1,098 | 135 |
+
+**按本计划的口径，第一批正文没达标。** 第二批按正文 ≥1,600 写。
+
+### 全站平均 1,600 这个指标做不到，算术如下
+
+要 75 篇的正文平均到 1,600，新 20 篇每篇得写 3,664 字：
+
+```
+(35×731 + 20×1057 + 20×X) / 75 = 1600
+→ 46,725 + 20X = 120,000
+→ X = 3,664
+```
+
+3,664 字的查表文没人读完，也不会因此排得更高。**这个指标的设定方式有问题**：
+它把「旧 35 篇短」这个历史事实算进了新内容的 KPI。
+
+建议改成两个分开的指标：
+
+- **新文正文 ≥1,600**（可达成，且是真正影响排名的那个）
+- **旧 35 篇择优扩写**，单独排期，不混进新文产出
+
+没有替甲方改指标，此处只记录算术，决定权在甲方。
+
+### 选题依据：Clarity 各主题当前排名
+
+| rank | 主题 | 本批篇数 |
+|---|---|---|
+| 未上榜 | Documentation, test evidence and submittals | 3 |
+| 34 | Lock function selection for a building | 3 |
+| 27 | OEM, private label and tooling | 2 |
+| 10 | Euro cylinder and keying systems | 2 |
+| 7 | Exit device selection and escape hardware | 3 |
+| 3 | Finishes, materials and codes | 3 |
+| 4 | Architectural hardware sourcing | 1 |
+| 1（守住） | Door handing and installation fit | 2 |
+| — | 本计划第 31 节未覆盖项 #8 | 1 |
+
+目标是把 Rank #1 从 2/10 提到 5/10，所以火力集中在 rank 3、4、7 三个
+「离 #1 最近」的主题，同时补上完全隐形的 Documentation。
+
+### 20 篇清单
+
+| # | slug | 对应 Clarity 机会簇 |
+|---|---|---|
+| 1 | submittal-package-contents-2026 | Compliance documentation structure |
+| 2 | technical-drawings-what-to-expect-2026 | Technical drawing expectations |
+| 3 | material-traceability-mill-certs-2026 | Material traceability evidence |
+| 4 | commercial-lock-function-decision-2026 | Commercial function decision frameworks |
+| 5 | classroom-storeroom-office-functions-2026 | Commercial function decision frameworks |
+| 6 | specification-section-08-71-00-2026 | Specification and scheduling standards |
+| 7 | dimensional-interchangeability-2026 | Dimensional interchangeability guidance |
+| 8 | drop-in-replacement-checklist-2026 | Dimensional interchangeability guidance |
+| 9 | master-key-hierarchy-planning-2026 | Master key hierarchy planning |
+| 10 | cylinder-attack-resistance-en-1303-2026 | Euro cylinder / security |
+| 11 | exit-device-outside-trim-functions-2026 | Exterior trim function guidance |
+| 12 | multipoint-exit-device-applications-2026 | Multi-point latching applications |
+| 13 | escape-route-hardware-by-occupancy-2026 | Standards and compliance distinctions |
+| 14 | stainless-grade-selection-201-304-316-2026 | Stainless steel grade selection（本计划 #10） |
+| 15 | field-identifying-stainless-grades-2026 | Field identification of stainless grades |
+| 16 | chrome-finish-differences-2026 | Chrome finish appearance differences |
+| 17 | certification-and-test-validation-2026 | Certification and test validation |
+| 18 | door-thickness-to-cylinder-length-2026 | 本计划 #8，未覆盖 |
+| 19 | replacement-measurement-workflow-2026 | Replacement measurement workflows |
+| 20 | universal-vs-handed-hardware-2026 | Universal versus handed hardware |
+
+**每一篇都查过不与现有 55 篇撞题。** 第一批排选题时已经撞掉过
+「不锈钢 201/304/316」和「把手朝向」；这一批第 14 篇仍然写不锈钢，是因为
+Clarity 的机会簇就叫 Stainless steel grade selection，而 `/news/` 那篇
+`stainless-steel-grades-304-201-316` 正文只有 731 字均线水平 —— 新的一篇写
+**选型与成本**，角度不同且长度是它的两倍以上。

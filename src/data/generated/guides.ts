@@ -22,5 +22,7 @@ import item16 from "../../../content/guides/moq-tooling-and-lead-time-2026.json"
 import item17 from "../../../content/guides/samples-and-incoming-inspection-2026.json";
 import item18 from "../../../content/guides/spindle-sizes-and-length-2026.json";
 import item19 from "../../../content/guides/strike-plates-and-keeps-2026.json";
+import item20 from "../../../content/guides/submittal-package-contents-2026.json";
+import item21 from "../../../content/guides/technical-drawings-what-to-expect-2026.json";
 
-export const guides = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19] as unknown as NewsArticle[];
+export const guides = [item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, item21] as unknown as NewsArticle[];

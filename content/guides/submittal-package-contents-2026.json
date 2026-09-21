@@ -1,0 +1,263 @@
+{
+  "slug": "submittal-package-contents-2026",
+  "title": "Door Hardware Submittal Package 2026: Every Document the Reviewer Needs, and the Four That Get It Rejected",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "A hardware submittal is rejected for the same handful of reasons on almost every project, and none of them is the hardware. This page lists what a complete package contains, names the four omissions that send it back, explains the difference between a product datasheet and evidence, sets out who signs what, and states plainly which of these documents we publish, which we supply on request, and which we do not have at all.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Door Hardware Submittal Package 2026: Complete Contents | Canton Hyland",
+  "seoDescription": "What a door hardware submittal package must contain, the four omissions that get it rejected, product data versus test evidence, and which documents a factory can actually supply.",
+  "body": [
+    "A submittal is not a sales document. It is the moment a specifier checks whether what was ordered is what was specified, and it is reviewed by somebody whose job is to find the gap rather than to be persuaded.",
+    "That distinction explains almost every rejected package. A supplier sends marketing material, because marketing material is what they have; a reviewer needs evidence, and sends it back. Two weeks pass. The same thing happens again.",
+    "This page is what goes in the package, in the order a reviewer reads it.",
+    "## The shape of a complete package",
+    "A hardware submittal has five parts, and a reviewer looks for them in this order.",
+    "| Part | What it is | Who produces it |\n| --- | --- | --- |\n| Hardware schedule | Every opening, its set number, and every item in that set | Supplier or hardware consultant |\n| Product data | A datasheet per catalogue number, with dimensions and finish | Manufacturer |\n| Shop drawings | Dimensioned drawings and door/frame preparation | Manufacturer |\n| Test evidence | Certificates and reports for anything the specification requires | Accredited laboratory |\n| Keying schedule | The key system, where the project has one | Supplier with the client's security officer |",
+    "The schedule comes first because it is the index. A reviewer reads it to find out what the project is buying, then checks each line against the other four parts. A package without a schedule forces them to build one themselves, which is the most common reason a package sits unreviewed for a fortnight.",
+    "## The hardware schedule, opening by opening",
+    "A schedule is organised by opening, not by product. Each opening carries a number that matches the drawings, a hardware set reference, and the full item list for that set.",
+    "Each line item needs the manufacturer, the catalogue number, the finish code, the quantity, and the function where the product has one. A line that says \"lever handle, SSS\" has named a shape and a finish and left out the model, which is the information the whole document exists to carry.",
+    "The schedule is also where handing lives, and handing is the single most expensive thing to get wrong at this stage because it cannot be corrected on site for most products. State the convention you are using as well as the hand itself — our page on handing covers why the European and North American conventions can describe the same door with different words.",
+    "## Product data: what a datasheet has to carry",
+    "A datasheet is the manufacturer's statement of what the product is. For a reviewer it has to answer four questions without a phone call.",
+    "What are its dimensions, in the units the specification uses. A specification written in inches and a datasheet published only in millimetres is a conversion the reviewer has to do and then take responsibility for, which is why our English pages carry both.",
+    "What finish is it, stated as a code rather than a colour name. \"Satin stainless\" is a description; US32D / 630 is a code that two parties can check against the same standard.",
+    "What does it fit — door thickness range, backset, preparation type, glass thickness where relevant.",
+    "What is its function, where the product has functions. A lock model number without a function suffix is incomplete, and the reviewer cannot tell whether the storeroom door will lock behind somebody.",
+    "## Test evidence is not product data, and the difference is the whole point",
+    "This is where most packages fail, and it fails because of a category confusion that looks reasonable from the supplier's side.",
+    "A datasheet is a statement by the manufacturer about their own product. A test certificate is a statement by an accredited third party about a specific tested configuration. A specification that asks for a fire rating, a durability grade or a corrosion class is asking for the second, and the first does not substitute for it however confidently it is written.",
+    "The practical test a reviewer applies: can I read the report number, the issuing laboratory, the standard, the date, the scope of application, and the exact configuration tested. If any of those is missing, the document is a claim rather than evidence.",
+    "A certificate for a similar product from the same range is also not evidence. Test results attach to what was tested — this is the same principle set out on our fire door hardware page, where substituting a same-size hinge takes the door outside its certificate.",
+    "## The four omissions that get a package rejected",
+    "In rough order of how often they happen.",
+    "**No finish codes, only finish names.** A schedule saying \"polished chrome\" across forty openings is unverifiable. Two manufacturers' polished chrome are visibly different products, and the reviewer has no way to confirm the project gets the one specified. Our finish code reference covers the codes and why the same code from two suppliers can still differ.",
+    "**Handing absent or stated without its convention.** Covered above. It is the most expensive of the four because the correction is usually new product rather than a resubmittal.",
+    "**Test evidence replaced by a marketing claim.** \"Fire rated\", \"ANSI Grade 1\", \"UL listed\" written next to a product with no certificate number behind it. A reviewer who catches one of these does not merely reject that line; they start checking the others, and the package's credibility is gone for the rest of the project.",
+    "**No preparation information.** The schedule names a mortise lock; the door manufacturer needs the pocket dimensions, the spindle and cylinder hole positions and the centre distance. Our door preparation page sets out what \"prepped for\" does and does not guarantee, and the short version is that a preparation type is not a template.",
+    "## Who signs what, and why it matters",
+    "A submittal carries responsibility as well as information, and the reviewer is checking that too.",
+    "The manufacturer stands behind the product data and the drawings. The accredited laboratory stands behind the test evidence. The supplier or hardware consultant stands behind the schedule — that the right product is on the right opening. The reviewer approves against the specification, which is not the same as approving the product's fitness for purpose.",
+    "A package where the supplier has written all of it, including a paraphrase of a test result, has collapsed three of those roles into one. That is exactly what a reviewer is trained to spot.",
+    "## What we publish, what we send on request, and what we do not have",
+    "This is the part suppliers normally leave vague, so here it is as a table. It is the same inventory our documents page carries.",
+    "| Document | Status |\n| --- | --- |\n| Dimensioned drawings | Published |\n| Specifications | Published |\n| Catalogue | Published |\n| Spec export (structured data for your schedule) | On request |\n| Test documents | On request |\n| BIM / Revit families | **Not available** |\n| Native CAD (editable DWG source) | **Not available** |",
+    "The last two rows are the ones worth reading carefully. We do not have BIM families and we do not have editable native CAD, and saying so here costs us fewer projects than discovering it three weeks into a submittal cycle costs you.",
+    "A supplier who answers \"yes, we can provide BIM\" and then sends a PDF renamed with a .rvt extension has not solved anything; they have moved the discovery to the point where a model is already being built around the assumption.",
+    "## Two things that make a resubmittal unnecessary",
+    "Send the specification section to the factory before the quotation, not after the order. Almost every rejected package contains a product that was correctly quoted against an incomplete question. If the specification says EN 1634-1 EI 30, that constraint should reach the factory while a substitution is still free.",
+    "Ask for the evidence before you need it. A test report either exists or it does not, and finding out at submittal stage converts a documentation question into a programme delay. Our page on what documents you can actually get lists what to ask for and how to read the answer.",
+    "## Substitution requests, and why most of them are refused",
+    "A substitution request asks the specifier to accept a product other than the one named. It is a normal part of the process, and it is refused far more often than it needs to be for a reason that is entirely fixable.",
+    "A refused request almost always compares the wrong things. It asserts that the substitute is equivalent and then lists the features the two products share. What the specifier needs is the opposite: every respect in which they differ, and evidence that each difference is acceptable on this opening.",
+    "So a request that works states the specified product, the proposed product, and a line-by-line comparison of the properties the specification actually constrains — grade, cycles, fire suitability, corrosion class, finish code, dimensions — with the test evidence behind each one. Where a property is worse, say so, and say why it does not matter here.",
+    "A request that hides a difference is refused the moment the reviewer finds it, and every later request from the same supplier is read with that in mind. The shared features were never the question.",
+    "## Where our own gaps are",
+    "Some of our products are in testing and do not yet hold certificates. Where that is true we say so on the product page rather than implying a rating, and a submittal that needs a certificate we do not hold is a submittal we will tell you we cannot complete.",
+    "That is a smaller number of lost enquiries than it sounds, and it is the only position compatible with the rest of this page. A supplier who will write an unsupported \"fire rated\" on a submittal will also write an unsupported dimension on a drawing, and the reviewer knows it."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What goes in a door hardware submittal package?",
+        "answer": "Five parts, read in this order: the hardware schedule (the index, organised by opening), product data per catalogue number, shop drawings with door and frame preparation, test evidence for anything the specification requires, and a keying schedule where the project has a key system."
+      },
+      {
+        "question": "What is the difference between a datasheet and test evidence?",
+        "answer": "A datasheet is the manufacturer's statement about their own product. A test certificate is an accredited third party's statement about a specific tested configuration. A specification asking for a fire rating, durability grade or corrosion class is asking for the second, and the first never substitutes for it."
+      },
+      {
+        "question": "Why do submittals get rejected?",
+        "answer": "Four things, in rough order: finish names instead of finish codes; handing absent or stated without naming the convention; a marketing claim standing in for a certificate number; and no preparation information for the door manufacturer. None of them is the hardware itself."
+      },
+      {
+        "question": "Can I use a certificate from a similar product in the same range?",
+        "answer": "No. Test results attach to the configuration that was tested, within the scope of application printed on the certificate. A certificate for a neighbouring model is not evidence for this one — the same principle that makes substituting a same-size hinge take a fire door outside its certificate."
+      },
+      {
+        "question": "Do you supply BIM families or editable CAD?",
+        "answer": "No to both, and we would rather say so here than three weeks into a submittal cycle. We publish dimensioned drawings, specifications and the catalogue; spec exports and test documents are available on request. BIM/Revit families and native editable CAD we do not have."
+      },
+      {
+        "question": "How do I avoid a resubmittal?",
+        "answer": "Send the specification section to the factory before the quotation rather than after the order, so a constraint like EN 1634-1 EI 30 arrives while a substitution is still free. And ask for test evidence early — a report either exists or it does not, and finding out at submittal stage turns a paperwork question into a programme delay."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué lleva un paquete de submittal de herrajes?",
+        "answer": "Cinco partes, en este orden de lectura: el cuadro de herrajes (el índice, organizado por hueco), ficha técnica por número de catálogo, planos de taller con preparación de puerta y cerco, evidencia de ensayo para todo lo que exija la especificación, y plan de amaestramiento si el proyecto lleva sistema de llaves."
+      },
+      {
+        "question": "¿Qué diferencia hay entre una ficha técnica y una evidencia de ensayo?",
+        "answer": "Una ficha es lo que el fabricante declara sobre su propio producto. Un certificado es lo que un tercero acreditado declara sobre una configuración concreta ensayada. Una especificación que pide clasificación al fuego, grado de durabilidad o clase de corrosión pide lo segundo, y lo primero nunca lo sustituye."
+      },
+      {
+        "question": "¿Por qué se rechazan los submittals?",
+        "answer": "Por cuatro cosas: nombres de acabado en lugar de códigos; mano ausente o indicada sin nombrar la convención; una afirmación comercial en lugar de un número de certificado; y falta de información de preparación para el fabricante de la puerta. Ninguna de las cuatro es el herraje en sí."
+      },
+      {
+        "question": "¿Puedo usar el certificado de un producto similar de la misma gama?",
+        "answer": "No. Los resultados de ensayo se adhieren a la configuración ensayada, dentro del campo de aplicación impreso en el certificado. Un certificado de un modelo vecino no es evidencia para este: el mismo principio que hace que sustituir una bisagra del mismo tamaño saque una cortafuego de su certificado."
+      },
+      {
+        "question": "¿Suministran familias BIM o CAD editable?",
+        "answer": "No a las dos, y preferimos decirlo aquí antes que a las tres semanas de un ciclo de submittal. Publicamos planos acotados, especificaciones y el catálogo; las exportaciones de especificación y los documentos de ensayo van a petición. Familias BIM/Revit y CAD nativo editable no los tenemos."
+      },
+      {
+        "question": "¿Cómo evito un resubmittal?",
+        "answer": "Mande la sección de especificación a la fábrica antes de la cotización y no después del pedido, para que una restricción como EN 1634-1 EI 30 llegue cuando sustituir todavía es gratis. Y pida la evidencia de ensayo pronto: un informe existe o no existe, y descubrirlo en fase de submittal convierte una pregunta de papeles en un retraso de obra."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que vai num pacote de submittal de ferragens?",
+        "answer": "Cinco partes, nesta ordem de leitura: o mapa de ferragens (o índice, organizado por vão), ficha técnica por número de catálogo, desenhos de oficina com preparação de porta e aro, evidência de ensaio para tudo o que a especificação exigir, e plano de chaveamento se o projeto tiver sistema de chaves."
+      },
+      {
+        "question": "Qual é a diferença entre uma ficha técnica e uma evidência de ensaio?",
+        "answer": "Uma ficha é o que o fabricante declara sobre o seu próprio produto. Um certificado é o que um terceiro acreditado declara sobre uma configuração concreta ensaiada. Uma especificação que pede classificação ao fogo, grau de durabilidade ou classe de corrosão pede o segundo, e o primeiro nunca o substitui."
+      },
+      {
+        "question": "Por que os submittals são rejeitados?",
+        "answer": "Por quatro coisas: nomes de acabamento em vez de códigos; mão ausente ou indicada sem nomear a convenção; uma afirmação comercial no lugar de um número de certificado; e falta de informação de preparação para o fabricante da porta. Nenhuma das quatro é a ferragem em si."
+      },
+      {
+        "question": "Posso usar o certificado de um produto semelhante da mesma linha?",
+        "answer": "Não. Os resultados de ensaio aderem à configuração ensaiada, dentro do campo de aplicação impresso no certificado. Um certificado de um modelo vizinho não é evidência para este: o mesmo princípio que faz substituir uma dobradiça do mesmo tamanho tirar uma corta-fogo do seu certificado."
+      },
+      {
+        "question": "Fornecem famílias BIM ou CAD editável?",
+        "answer": "Não a ambos, e preferimos dizê-lo aqui do que às três semanas de um ciclo de submittal. Publicamos desenhos cotados, especificações e o catálogo; exportações de especificação e documentos de ensaio vão mediante pedido. Famílias BIM/Revit e CAD nativo editável não temos."
+      },
+      {
+        "question": "Como evito um resubmittal?",
+        "answer": "Mande a seção de especificação à fábrica antes da cotação e não depois do pedido, para que uma restrição como EN 1634-1 EI 30 chegue quando substituir ainda é grátis. E peça a evidência de ensaio cedo: um relatório existe ou não existe, e descobri-lo em fase de submittal transforma uma questão de papelada num atraso de obra."
+      }
+    ]
+  },
+  "titleEs": "Paquete de submittal de herrajes 2026: todos los documentos que el revisor necesita, y los cuatro que lo hacen rechazar",
+  "summaryEs": "Un submittal de herrajes se rechaza casi siempre por el mismo puñado de razones, y ninguna es el herraje. Esta página enumera qué lleva un paquete completo, nombra las cuatro omisiones que lo devuelven, explica la diferencia entre una ficha técnica y una evidencia, fija quién firma qué, e indica con claridad cuáles de estos documentos publicamos, cuáles enviamos a petición y cuáles directamente no tenemos.",
+  "seoTitleEs": "Submittal de herrajes 2026: contenido completo del paquete | Canton Hyland",
+  "seoDescriptionEs": "Qué debe contener un paquete de submittal de herrajes, las cuatro omisiones que lo hacen rechazar, ficha técnica frente a evidencia de ensayo, y qué documentos puede dar una fábrica.",
+  "bodyEs": [
+    "Un submittal no es un documento de venta. Es el momento en que un prescriptor comprueba si lo que se ha pedido es lo que se especificó, y lo revisa alguien cuyo trabajo es encontrar el hueco, no dejarse convencer.",
+    "Esa distinción explica casi todos los paquetes rechazados. El proveedor manda material comercial, porque es lo que tiene; el revisor necesita evidencia y lo devuelve. Pasan dos semanas. Vuelve a ocurrir lo mismo.",
+    "Esta página es lo que va en el paquete, en el orden en que lo lee un revisor.",
+    "## La forma de un paquete completo",
+    "Un submittal de herrajes tiene cinco partes, y un revisor las busca en este orden.",
+    "| Parte | Qué es | Quién la produce |\n| --- | --- | --- |\n| Cuadro de herrajes | Cada hueco, su número de juego y todos los artículos de ese juego | Proveedor o consultor |\n| Ficha técnica | Una ficha por número de catálogo, con cotas y acabado | Fabricante |\n| Planos de taller | Planos acotados y preparación de puerta y cerco | Fabricante |\n| Evidencia de ensayo | Certificados e informes de lo que exija la especificación | Laboratorio acreditado |\n| Plan de amaestramiento | El sistema de llaves, si el proyecto lleva uno | Proveedor con el responsable de seguridad |",
+    "El cuadro va primero porque es el índice. El revisor lo lee para saber qué compra el proyecto y después contrasta cada línea con las otras cuatro partes. Un paquete sin cuadro le obliga a construirlo él, que es la razón más común de que un paquete se quede quince días sin revisar.",
+    "## El cuadro de herrajes, hueco por hueco",
+    "Un cuadro se organiza por hueco, no por producto. Cada hueco lleva un número que coincide con los planos, una referencia de juego de herrajes y la lista completa de ese juego.",
+    "Cada línea necesita fabricante, número de catálogo, código de acabado, cantidad y función donde el producto la tenga. Una línea que dice «manilla, SSS» ha nombrado una forma y un acabado y ha omitido el modelo, que es justo la información que el documento existe para transportar.",
+    "El cuadro es también donde vive la mano, y la mano es lo más caro de equivocar en esta fase porque en la mayoría de los productos no se corrige en obra. Indique la convención además de la mano: nuestra página de manos explica por qué la europea y la norteamericana pueden describir la misma puerta con palabras distintas.",
+    "## Ficha técnica: qué tiene que llevar",
+    "Una ficha es la declaración del fabricante sobre qué es el producto. Para un revisor tiene que responder cuatro preguntas sin una llamada de teléfono.",
+    "Qué cotas tiene, en las unidades que usa la especificación. Una especificación en pulgadas y una ficha solo en milímetros es una conversión que el revisor tiene que hacer y de la que después responde, y por eso nuestras páginas en inglés llevan las dos.",
+    "Qué acabado es, indicado como código y no como nombre de color. «Inoxidable satinado» es una descripción; US32D / 630 es un código que dos partes pueden contrastar contra la misma norma.",
+    "A qué encaja: rango de espesor de puerta, distancia al eje, tipo de preparación, espesor de vidrio cuando proceda.",
+    "Cuál es su función, donde el producto tenga funciones. Un número de modelo de cerradura sin sufijo de función está incompleto, y el revisor no puede saber si la puerta del almacén dejará a alguien encerrado fuera.",
+    "## La evidencia de ensayo no es ficha técnica, y esa diferencia es todo el asunto",
+    "Aquí es donde falla la mayoría de los paquetes, y falla por una confusión de categorías que desde el lado del proveedor parece razonable.",
+    "Una ficha es una declaración del fabricante sobre su propio producto. Un certificado de ensayo es la declaración de un tercero acreditado sobre una configuración concreta ensayada. Una especificación que pide clasificación al fuego, grado de durabilidad o clase de corrosión pide lo segundo, y lo primero no lo sustituye por muy convencido que esté escrito.",
+    "La prueba práctica que aplica un revisor: ¿puedo leer el número de informe, el laboratorio emisor, la norma, la fecha, el campo de aplicación y la configuración exacta ensayada? Si falta alguno, el documento es una afirmación y no una evidencia.",
+    "Un certificado de un producto parecido de la misma gama tampoco es evidencia. Los resultados se adhieren a lo que se ensayó — el mismo principio que recoge nuestra página de herraje cortafuego, donde sustituir una bisagra del mismo tamaño saca la puerta de su certificado.",
+    "## Las cuatro omisiones que hacen rechazar un paquete",
+    "Por orden aproximado de frecuencia.",
+    "**Nombres de acabado en lugar de códigos.** Un cuadro que dice «cromo pulido» en cuarenta huecos es inverificable. El cromo pulido de dos fabricantes son productos visiblemente distintos, y el revisor no tiene forma de confirmar que el proyecto recibe el especificado. Nuestra referencia de códigos de acabado explica los códigos y por qué el mismo código de dos proveedores aún puede diferir.",
+    "**Mano ausente o indicada sin su convención.** Tratado arriba. Es la más cara de las cuatro porque la corrección suele ser producto nuevo y no un resubmittal.",
+    "**Evidencia de ensayo sustituida por una afirmación comercial.** «Cortafuego», «ANSI Grade 1», «UL listed» escrito junto a un producto sin número de certificado detrás. Un revisor que pilla una de estas no rechaza solo esa línea: empieza a comprobar las demás, y la credibilidad del paquete se ha perdido para el resto de la obra.",
+    "**Sin información de preparación.** El cuadro nombra una cerradura de embutir; el fabricante de la puerta necesita las cotas del cajeado, la posición de los agujeros de cuadradillo y cilindro y la distancia entre centros. Nuestra página de preparación explica qué garantiza y qué no «preparada para», y la versión corta es que un tipo de preparación no es una plantilla.",
+    "## Quién firma qué, y por qué importa",
+    "Un submittal transporta responsabilidad además de información, y el revisor también comprueba eso.",
+    "El fabricante responde por la ficha técnica y los planos. El laboratorio acreditado responde por la evidencia de ensayo. El proveedor o consultor responde por el cuadro: que el producto correcto está en el hueco correcto. El revisor aprueba contra la especificación, que no es lo mismo que aprobar la aptitud del producto para el uso.",
+    "Un paquete donde el proveedor lo ha escrito todo, incluida una paráfrasis de un resultado de ensayo, ha fundido tres de esos papeles en uno. Eso es exactamente lo que un revisor está entrenado para detectar.",
+    "## Qué publicamos, qué enviamos a petición y qué no tenemos",
+    "Es la parte que los proveedores suelen dejar vaga, así que va como tabla. Es el mismo inventario que lleva nuestra página de documentos.",
+    "| Documento | Estado |\n| --- | --- |\n| Planos acotados | Publicado |\n| Especificaciones | Publicado |\n| Catálogo | Publicado |\n| Exportación de especificación (datos estructurados para su cuadro) | A petición |\n| Documentos de ensayo | A petición |\n| Familias BIM / Revit | **No disponible** |\n| CAD nativo (DWG editable) | **No disponible** |",
+    "Las dos últimas filas son las que merece leer con atención. No tenemos familias BIM ni CAD nativo editable, y decirlo aquí nos cuesta menos proyectos de los que a usted le cuesta descubrirlo tres semanas dentro de un ciclo de submittal.",
+    "Un proveedor que contesta «sí, podemos dar BIM» y después manda un PDF renombrado con extensión .rvt no ha resuelto nada: ha trasladado el descubrimiento al punto en que ya se está construyendo un modelo sobre esa suposición.",
+    "## Dos cosas que hacen innecesario un resubmittal",
+    "Mande la sección de especificación a la fábrica antes de la cotización, no después del pedido. Casi todo paquete rechazado contiene un producto correctamente cotizado contra una pregunta incompleta. Si la especificación dice EN 1634-1 EI 30, esa restricción debe llegar a la fábrica cuando sustituir todavía es gratis.",
+    "Pida la evidencia antes de necesitarla. Un informe de ensayo existe o no existe, y averiguarlo en fase de submittal convierte una pregunta documental en un retraso de obra. Nuestra página sobre qué documentos puede conseguir enumera qué pedir y cómo leer la respuesta.",
+    "## Las solicitudes de sustitución, y por qué la mayoría se deniegan",
+    "Una solicitud de sustitución pide al prescriptor que acepte un producto distinto del nombrado. Es una parte normal del proceso, y se deniega muchas más veces de las necesarias por una razón perfectamente corregible.",
+    "Una solicitud denegada casi siempre compara lo que no toca. Afirma que el sustituto es equivalente y después enumera las características que ambos productos comparten. Lo que el prescriptor necesita es lo contrario: todo aquello en lo que difieren, y evidencia de que cada diferencia es aceptable en ese hueco.",
+    "Así que una solicitud que funciona indica el producto especificado, el propuesto y una comparación línea a línea de las propiedades que la especificación realmente restringe —grado, ciclos, aptitud al fuego, clase de corrosión, código de acabado, cotas— con la evidencia de ensayo detrás de cada una. Donde una propiedad sea peor, dígalo, y diga por qué aquí no importa.",
+    "Una solicitud que esconde una diferencia se deniega en el momento en que el revisor la encuentra, y todas las solicitudes posteriores de ese proveedor se leen con eso en mente. Las características compartidas nunca fueron la pregunta.",
+    "## Dónde están nuestros propios huecos",
+    "Algunos de nuestros productos están en ensayo y todavía no tienen certificado. Donde es así lo decimos en la ficha en vez de insinuar una clasificación, y un submittal que necesita un certificado que no tenemos es un submittal que le diremos que no podemos completar.",
+    "Eso pierde menos consultas de las que parece, y es la única posición compatible con el resto de esta página. Un proveedor dispuesto a escribir un «cortafuego» sin respaldo en un submittal también escribirá una cota sin respaldo en un plano, y el revisor lo sabe."
+  ],
+  "titlePt": "Pacote de submittal de ferragens 2026: todos os documentos que o revisor precisa, e os quatro que o fazem ser rejeitado",
+  "summaryPt": "Um submittal de ferragens é rejeitado quase sempre pelo mesmo punhado de razões, e nenhuma delas é a ferragem. Esta página enumera o que um pacote completo contém, nomeia as quatro omissões que o devolvem, explica a diferença entre uma ficha técnica e uma evidência, estabelece quem assina o quê, e indica com clareza quais destes documentos publicamos, quais enviamos mediante pedido e quais simplesmente não temos.",
+  "seoTitlePt": "Submittal de ferragens 2026: conteúdo completo do pacote | Canton Hyland",
+  "seoDescriptionPt": "O que um pacote de submittal de ferragens deve conter, as quatro omissões que o fazem ser rejeitado, ficha técnica contra evidência de ensaio, e que documentos uma fábrica pode fornecer.",
+  "bodyPt": [
+    "Um submittal não é um documento de venda. É o momento em que um prescritor verifica se o que foi pedido é o que foi especificado, e é revisto por alguém cujo trabalho é encontrar a lacuna, não deixar-se convencer.",
+    "Essa distinção explica quase todos os pacotes rejeitados. O fornecedor manda material comercial, porque é o que tem; o revisor precisa de evidência e devolve. Passam duas semanas. Volta a acontecer o mesmo.",
+    "Esta página é o que vai no pacote, na ordem em que um revisor o lê.",
+    "## A forma de um pacote completo",
+    "Um submittal de ferragens tem cinco partes, e um revisor procura-as nesta ordem.",
+    "| Parte | O que é | Quem a produz |\n| --- | --- | --- |\n| Mapa de ferragens | Cada vão, o seu número de jogo e todos os itens desse jogo | Fornecedor ou consultor |\n| Ficha técnica | Uma ficha por número de catálogo, com cotas e acabamento | Fabricante |\n| Desenhos de oficina | Desenhos cotados e preparação de porta e aro | Fabricante |\n| Evidência de ensaio | Certificados e relatórios do que a especificação exigir | Laboratório acreditado |\n| Plano de chaveamento | O sistema de chaves, se o projeto tiver um | Fornecedor com o responsável de segurança |",
+    "O mapa vem primeiro porque é o índice. O revisor lê-o para saber o que o projeto compra e depois confronta cada linha com as outras quatro partes. Um pacote sem mapa obriga-o a construí-lo, que é a razão mais comum de um pacote ficar quinze dias por rever.",
+    "## O mapa de ferragens, vão a vão",
+    "Um mapa organiza-se por vão, não por produto. Cada vão leva um número que coincide com os desenhos, uma referência de jogo de ferragens e a lista completa desse jogo.",
+    "Cada linha precisa de fabricante, número de catálogo, código de acabamento, quantidade e função onde o produto a tenha. Uma linha que diz «maçaneta, SSS» nomeou uma forma e um acabamento e omitiu o modelo, que é exatamente a informação que o documento existe para transportar.",
+    "O mapa é também onde vive a mão, e a mão é a coisa mais cara de errar nesta fase porque na maioria dos produtos não se corrige na obra. Indique a convenção além da mão: a nossa página de mãos explica por que a europeia e a norte-americana podem descrever a mesma porta com palavras diferentes.",
+    "## Ficha técnica: o que tem de levar",
+    "Uma ficha é a declaração do fabricante sobre o que o produto é. Para um revisor tem de responder a quatro perguntas sem um telefonema.",
+    "Que cotas tem, nas unidades que a especificação usa. Uma especificação em polegadas e uma ficha só em milímetros é uma conversão que o revisor tem de fazer e pela qual depois responde, e por isso as nossas páginas em inglês levam as duas.",
+    "Que acabamento é, indicado como código e não como nome de cor. «Inox acetinado» é uma descrição; US32D / 630 é um código que duas partes podem confrontar contra a mesma norma.",
+    "A que encaixa: faixa de espessura de porta, distância ao eixo, tipo de preparação, espessura de vidro quando aplicável.",
+    "Qual é a sua função, onde o produto tenha funções. Um número de modelo de fechadura sem sufixo de função está incompleto, e o revisor não consegue saber se a porta do armazém vai deixar alguém trancado fora.",
+    "## A evidência de ensaio não é ficha técnica, e essa diferença é o assunto todo",
+    "É aqui que falha a maioria dos pacotes, e falha por uma confusão de categorias que do lado do fornecedor parece razoável.",
+    "Uma ficha é uma declaração do fabricante sobre o seu próprio produto. Um certificado de ensaio é a declaração de um terceiro acreditado sobre uma configuração concreta ensaiada. Uma especificação que pede classificação ao fogo, grau de durabilidade ou classe de corrosão pede o segundo, e o primeiro não o substitui por mais convicto que esteja escrito.",
+    "O teste prático que um revisor aplica: consigo ler o número do relatório, o laboratório emissor, a norma, a data, o campo de aplicação e a configuração exata ensaiada? Se faltar algum, o documento é uma afirmação e não uma evidência.",
+    "Um certificado de um produto parecido da mesma linha também não é evidência. Os resultados aderem ao que foi ensaiado — o mesmo princípio que consta da nossa página de ferragem corta-fogo, onde substituir uma dobradiça do mesmo tamanho tira a porta do seu certificado.",
+    "## As quatro omissões que fazem rejeitar um pacote",
+    "Por ordem aproximada de frequência.",
+    "**Nomes de acabamento em vez de códigos.** Um mapa que diz «cromo polido» em quarenta vãos é inverificável. O cromo polido de dois fabricantes são produtos visivelmente diferentes, e o revisor não tem forma de confirmar que o projeto recebe o especificado. A nossa referência de códigos de acabamento explica os códigos e por que o mesmo código de dois fornecedores ainda pode diferir.",
+    "**Mão ausente ou indicada sem a sua convenção.** Tratado acima. É a mais cara das quatro porque a correção costuma ser produto novo e não um resubmittal.",
+    "**Evidência de ensaio substituída por uma afirmação comercial.** «Corta-fogo», «ANSI Grade 1», «UL listed» escrito ao lado de um produto sem número de certificado por trás. Um revisor que apanha uma destas não rejeita só essa linha: começa a verificar as outras, e a credibilidade do pacote perdeu-se para o resto da obra.",
+    "**Sem informação de preparação.** O mapa nomeia uma fechadura de embutir; o fabricante da porta precisa das cotas do bolso, da posição dos furos de quadrado e cilindro e da distância entre centros. A nossa página de preparação explica o que «preparada para» garante e não garante, e a versão curta é que um tipo de preparação não é um gabarito.",
+    "## Quem assina o quê, e por que importa",
+    "Um submittal transporta responsabilidade além de informação, e o revisor verifica isso também.",
+    "O fabricante responde pela ficha técnica e pelos desenhos. O laboratório acreditado responde pela evidência de ensaio. O fornecedor ou consultor responde pelo mapa: que o produto certo está no vão certo. O revisor aprova contra a especificação, o que não é o mesmo que aprovar a aptidão do produto para o uso.",
+    "Um pacote onde o fornecedor escreveu tudo, incluindo uma paráfrase de um resultado de ensaio, fundiu três desses papéis num só. É exatamente isso que um revisor é treinado para detetar.",
+    "## O que publicamos, o que enviamos mediante pedido e o que não temos",
+    "É a parte que os fornecedores costumam deixar vaga, então vai como tabela. É o mesmo inventário que a nossa página de documentos carrega.",
+    "| Documento | Estado |\n| --- | --- |\n| Desenhos cotados | Publicado |\n| Especificações | Publicado |\n| Catálogo | Publicado |\n| Exportação de especificação (dados estruturados para o seu mapa) | Mediante pedido |\n| Documentos de ensaio | Mediante pedido |\n| Famílias BIM / Revit | **Não disponível** |\n| CAD nativo (DWG editável) | **Não disponível** |",
+    "As duas últimas linhas são as que merecem leitura atenta. Não temos famílias BIM nem CAD nativo editável, e dizê-lo aqui custa-nos menos projetos do que a si custa descobri-lo três semanas dentro de um ciclo de submittal.",
+    "Um fornecedor que responde «sim, podemos dar BIM» e depois manda um PDF renomeado com extensão .rvt não resolveu nada: transferiu a descoberta para o ponto em que já se está construindo um modelo sobre essa suposição.",
+    "## Duas coisas que tornam um resubmittal desnecessário",
+    "Mande a seção de especificação à fábrica antes da cotação, não depois do pedido. Quase todo pacote rejeitado contém um produto corretamente cotado contra uma pergunta incompleta. Se a especificação diz EN 1634-1 EI 30, essa restrição deve chegar à fábrica quando substituir ainda é grátis.",
+    "Peça a evidência antes de precisar dela. Um relatório de ensaio existe ou não existe, e descobri-lo em fase de submittal transforma uma questão documental num atraso de obra. A nossa página sobre que documentos pode conseguir enumera o que pedir e como ler a resposta.",
+    "## Os pedidos de substituição, e por que a maioria é recusada",
+    "Um pedido de substituição pede ao prescritor que aceite um produto diferente do nomeado. É uma parte normal do processo, e é recusado muitas mais vezes do que o necessário por uma razão perfeitamente corrigível.",
+    "Um pedido recusado quase sempre compara o que não interessa. Afirma que o substituto é equivalente e depois enumera as características que os dois produtos partilham. O que o prescritor precisa é do contrário: tudo aquilo em que diferem, e evidência de que cada diferença é aceitável naquele vão.",
+    "Então um pedido que funciona indica o produto especificado, o proposto e uma comparação linha a linha das propriedades que a especificação realmente restringe — grau, ciclos, aptidão ao fogo, classe de corrosão, código de acabamento, cotas — com a evidência de ensaio por trás de cada uma. Onde uma propriedade for pior, diga-o, e diga por que aqui não importa.",
+    "Um pedido que esconde uma diferença é recusado no momento em que o revisor a encontra, e todos os pedidos posteriores desse fornecedor são lidos com isso em mente. As características partilhadas nunca foram a pergunta.",
+    "## Onde estão as nossas próprias lacunas",
+    "Alguns dos nossos produtos estão em ensaio e ainda não têm certificado. Onde é assim dizemo-lo na página em vez de insinuar uma classificação, e um submittal que precisa de um certificado que não temos é um submittal que lhe diremos que não podemos completar.",
+    "Isso perde menos consultas do que parece, e é a única posição compatível com o resto desta página. Um fornecedor disposto a escrever um «corta-fogo» sem respaldo num submittal também escreverá uma cota sem respaldo num desenho, e o revisor sabe disso."
+  ]
+}
