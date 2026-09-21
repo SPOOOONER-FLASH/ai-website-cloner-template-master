@@ -52,6 +52,38 @@ function* htmlFiles(dir) {
   }
 }
 
+/**
+ * Windows 上写第两千多个文件时会偶发 UNKNOWN（errno -4094）—— 杀软、索引器或
+ * 备份代理瞬时占用句柄。2026-09-21 它让一次跑了八分钟的 deploy:prep 在最后一步崩掉。
+ *
+ * 一次抖动不该让整次构建作废，但它也不该被静默吞掉：重试三次，仍然失败就记下来、
+ * 跳过、继续，跑完统一报告并以非零退出。这样构建产物是完整的（少数几页的 GTM 还在
+ * body 里），而 --check 下一次会把它们抓出来。
+ *
+ * 这是 AGENTS.md 里那条图片流水线教训的同一形态：坏在崩得看不出来，不是坏在崩。
+ */
+const ATTEMPTS = 8;
+const unwritable = [];
+
+function writeWithRetry(file, contents) {
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
+    try {
+      writeFileSync(file, contents);
+      return true;
+    } catch (error) {
+      const transient = error?.code === "UNKNOWN" || error?.code === "EBUSY" || error?.code === "EPERM";
+      if (!transient || attempt === ATTEMPTS) {
+        if (!transient) throw error;
+        unwritable.push(file);
+        return false;
+      }
+      // 同步退避：这个脚本是构建步骤，没有事件循环可以让出。
+      const until = Date.now() + attempt * attempt * 90;
+      while (Date.now() < until) { /* spin */ }
+    }
+  }
+  return false;
+}
 let scanned = 0;
 let hoisted = 0;
 let alreadyInHead = 0;
@@ -83,9 +115,17 @@ for (const root of ROOTS) {
     // Recompute: removing the stub from the body never moves </head>, which is earlier,
     // but reading it again costs nothing and survives someone reordering this file.
     const at = without.indexOf("</head>");
-    writeFileSync(file, without.slice(0, at) + stub + without.slice(at));
-    hoisted += 1;
+    if (writeWithRetry(file, without.slice(0, at) + stub + without.slice(at))) hoisted += 1;
   }
+}
+
+if (unwritable.length) {
+  console.error(
+    `\n⚠ ${unwritable.length} 个文件重试 ${ATTEMPTS} 次仍写不进去，已跳过（未中断构建）：`,
+  );
+  for (const f of unwritable.slice(0, 5)) console.error(`  ${f}`);
+  console.error("  重跑一次即可收进来：node scripts/hoist-head-scripts.mjs");
+  process.exitCode = 1;
 }
 
 if (CHECK) {

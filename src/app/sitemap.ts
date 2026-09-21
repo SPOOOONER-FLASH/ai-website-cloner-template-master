@@ -124,6 +124,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry("/model-lookup", PRIORITY.support),
     // The specification glossary. Definitional content is the most-cited kind we publish.
     ...entry("/glossary", PRIORITY.support),
+    /*
+      What we can send as a document, added 2026-09-21.
+
+      It belongs in the sitemap for the same reason it exists: Clarity scored us 0% on
+      the Documentation topic on 2026-09-20, and the page answers the question a crawler
+      is looking for when it asks what a supplier can supply.
+    */
+    ...entry("/documents", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),

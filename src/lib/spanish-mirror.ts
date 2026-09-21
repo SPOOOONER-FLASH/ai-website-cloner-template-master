@@ -61,6 +61,22 @@ const SPANISH_MIRROR_PREFIXES = [
   "/model-lookup",
   // The specification glossary. Half the point of writing it was the Spanish reader:
   // "backset" has no settled Spanish translation, and the page says which word we use.
+  /*
+    What we can send you as a document, added 2026-09-21.
+
+    The content is the /news/what-documents-you-can-actually-get/ article moved into a
+    site section. The reason it needed to be a section rather than an article is in
+    src/lib/document-inventory.ts: on 2026-09-21 Clarity scored us 0% on the
+    Documentation topic, and one of the domains holding it is snrida.com — a Chinese
+    door-hardware exporter with our categories and our markets, whose Solutions page
+    publishes no dimension, no MOQ and no certificate number, and wins by naming the
+    deliverables as a section.
+
+    It mirrors because a buyer assembling a submittal in São Paulo needs the same list
+    as one in Dubai, and because the honest half — the BIM library we do not have —
+    is the half that saves them designing around something that is not there.
+  */
+  "/documents",
   "/glossary",
 ];
 
@@ -131,6 +147,7 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/finishes",
   "/model-lookup",
   "/glossary",
+  "/documents",
   /*
     The newsroom, added 2026-09-17.
 
