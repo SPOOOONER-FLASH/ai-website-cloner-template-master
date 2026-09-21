@@ -191,15 +191,15 @@ export default function ContactPage() {
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Current product catalogue</h2>
               <p className="mt-8 text-c1 text-ink-secondary">
-                46 pages covering locks, handles, panic exit devices, glass hardware, closers and
-                accessories.
+                79 pages, every published model with its spec table and an index at the back.
+                Searchable text, bookmarks by family, and it opens as a spread.
               </p>
               <a
                 className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
-                href="/downloads/canton-hyland-product-catalogue-2026.pdf"
+                href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                Download catalogue (PDF, 4.4 MB)
+                Download catalogue (PDF, 6.1 MB)
               </a>
             </div>
           </div>

@@ -1,0 +1,35 @@
+{
+  "note": "Batch 3 — the tenth and last topic of the week's quota. Max 500 characters each.",
+  "source": "Written 2026-09-21 after all nine earlier reports came back. The results sort cleanly by question type rather than by writing quality:\n\n  Door handing and installation fit    72.22%  Rank #1   20.00% cited\n  International standards comparison   78.85%  Rank #1   60.00% cited\n  Finishes, materials and codes       100.00%  Rank #3   33.33% cited\n  Architectural hardware sourcing      72.73%  Rank #4   13.33% cited\n  Exit device selection                43.75%  Rank #7   13.33% cited\n  Euro cylinder and keying             30.77%  Rank #10   7.14% cited\n  OEM, private label and tooling       40.00%  Rank #27   6.67% cited\n  Lock function selection              33.33%  Rank #34   6.67% cited\n  Documentation and test evidence       0.00%       —     0.00% cited\n\nQuestions about a DIMENSION, a FIT or a CODE win. Questions about a PROCESS or a DOCUMENT lose, because distributors and certification bodies own those and it is their home ground — Documentation scored a flat zero against cdfdistributors, europa.eu and ul.com.",
+  "method": "This topic is chosen to match the winning shape, not to fill a gap for its own sake. Glass door hardware is entirely dimensional — glass thickness, cut-out position, patch fitting centres, the order in which toughening and machining must happen — and the domains Clarity lists under 'Frameless glass hardware coordination' are glass merchants (s3i.co.uk, bmsteel.co.uk, vant.glass, allniteglass.com) rather than hardware factories answering a fit question. We publish what-a-frameless-glass-door-needs plus the F101–F132 patch fittings and the 100–107 glass door handles.",
+  "topics": [
+    {
+      "title": "Glass door hardware and frameless entrances",
+      "backedBy": [
+        "what-a-frameless-glass-door-needs",
+        "door-stop-holder-or-flush-bolt",
+        "handing-left-right-and-universal",
+        "stainless-steel-grades-304-201-316",
+        "reading-door-hardware-model-numbers"
+      ],
+      "why": "Dimensional questions are what our reports win on: Door handing took Rank #1 at 72.22% and Finishes took 100% competitive share. Glass door hardware is the same shape — every question is about a measurement or a sequence — and the competing domains on this subject are glass suppliers, not hardware manufacturers. It is also a family we actually make: F101 to F132 patch fittings and the 100 to 107 pull handles.",
+      "prompts": [
+        "What hardware does a frameless glass door actually need? I am specifying an entrance where the leaf is toughened glass with no frame, and I want the complete list before I go to a glazier: patch fittings, pivots, locks, pull handles, seals. Which of these carry the weight of the leaf, and which are only there to operate it?",
+        "What has to be cut into a glass door before it is toughened, and what can be fitted afterwards? I understand that toughened glass cannot be drilled once it is processed, but I am not clear which operations fall on which side of that line. What is the consequence on site of discovering the order was wrong?",
+        "What are the standard glass thicknesses for door patch fittings, and what happens if the glass does not match? I have a hardware supplier quoting fittings and a glazier quoting glass, and nobody has confirmed the two agree. Which dimension governs, is there any adjustment inside the fitting, and what is the tolerance before it becomes unsafe?",
+        "How do I position the cut-outs for a patch fitting on a glass door? I need to know what determines the distance from the edge and from the corner, whether it is set by the fitting, by the glass standard, or by both, and what a glazier needs from me in order to cut it correctly the first time.",
+        "What is the difference between a patch fitting and a full-height rail on a glass door, and when does each belong? I want to understand what changes in appearance, in the strength of the connection, in the glass preparation required, and in what happens if the door is later damaged and has to be replaced.",
+        "How much does a frameless glass door weigh, and what does that determine? I have a leaf size and a glass thickness and I need to work out which pivot, which closer and which patch fittings the weight calls for, before I ask anyone for a price.",
+        "What floor pivot or closer suits a frameless glass door, and what determines the choice? I want to understand how the weight and the width of the leaf translate into a device size, whether the closer sits in the floor or in the patch fitting, and what preparation each needs in the structure below.",
+        "How is a frameless glass door locked, and what are the options? There is no stile to mortise a lock into. What lock types are actually available for glass, what has to be cut into the leaf for each, and which of them can be retrofitted to a door already installed?",
+        "What pull handle sizes are standard on glass entrance doors, and what determines the centre distance? I want to understand how the hole centres are chosen, what thickness of glass each fixing suits, and whether a back-to-back pair and a single-sided pull need different preparation.",
+        "What is the difference between a back-to-back glass door pull and a single-sided one, and how are they fixed? I need to know what passes through the glass, what the hole diameter is, and whether the fixing can be tightened enough to stay put without over-stressing the glass.",
+        "What stainless steel grade should glass door hardware be, and does the environment change the answer? I am specifying for an entrance that is exposed to weather at the threshold. What is the difference between 304 and 316 here, and where is the point at which the cheaper grade becomes a false economy?",
+        "How do I stop a frameless glass door at the end of its swing, and what are the options? I want to understand whether the stop is built into the pivot, fitted to the floor, or fitted to the patch fitting, and what happens to the glass if the door is pushed hard with no stop at all.",
+        "What does a double frameless glass door need that a single one does not? I have a pair of leaves and I want to understand how they meet, what holds the inactive leaf, whether an overlapping rebate is possible in glass, and how the two are locked together.",
+        "What should I check before ordering replacement hardware for an existing glass door? The glass is already cut and cannot be re-machined. Which measurements do I have to take — glass thickness, cut-out dimensions, distance from the edge, hole centres — and which of those most often turn out not to match a catalogue fitting?",
+        "How do I read a glass door hardware model number and work out what I am being quoted? The quotation lists codes for patch fittings and pull handles with no dimensions attached. Which part of the code identifies the fitting type, which the finish, and what should I ask for so I can check it against the glass I already have?"
+      ]
+    }
+  ]
+}

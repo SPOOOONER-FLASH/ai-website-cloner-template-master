@@ -103,10 +103,10 @@ export default function ContactoPage() {
               <h2 className="text-h3 text-ink">Catálogo actual</h2>
               <a
                 className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"
-                href="/downloads/canton-hyland-product-catalogue-2026.pdf"
+                href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                Descargar catálogo (PDF, 4,4 MB)
+                Descargar catálogo (PDF, 6,1 MB)
               </a>
             </div>
 

@@ -1,0 +1,310 @@
+# Clarity → AI Visibility → Topic insights → Top content opportunities
+#
+# 从控制台原样粘贴进来的文本。每次跑完报告重新粘一次，然后跑
+#   node scripts/parse-clarity-opportunities.mjs
+# 解析成 docs/research/clarity-opportunities.json。
+#
+# 格式就是控制台复制出来的样子：
+#   ## <主题>            ← 手工加的一行，标明这一段属于哪个报告
+#   <机会簇名称>
+#   Covered by
+#   <域名>
+#   <域名>
+#   …
+#
+# 2026-09-21 采集。
+
+## Euro cylinder and keying systems
+Euro cylinder sizing guidance
+Covered by
+cornwalllocksmiths.co.uk
+lockstation.co.uk
+lovehandles.uk.com
+lockerfella.co.uk
+welock.com
+lockshopdirect.co.uk
+e-locks.eu
+
+Master key hierarchy planning
+Covered by
+securityparts.com
+lowratelocksmith.com
+virginiasecurityconcepts.net
+secutorlock.com
+eos-secure.eu
+calcimator.com
+lockbench.app
+cdfdistributors.com
+surelockkey.com
+assaabloy.com
+lockandkey.co.uk
+doorwaysplus.com
+prolocksmithllc.com
+
+Deadbolt versus rim lock comparisons
+Covered by
+secukey.com
+finehomebuilding.com
+lowratelocksmith.com
+toplocksecurity.com
+lowes.com
+carpenterslab.com
+
+## Door handing and installation fit
+Door handing reconciliation
+Covered by
+nationallocksupply.com
+sizemarker.com
+fschier.com
+toptekaccess.com
+finallydone.de
+
+Replacement measurement workflows
+Covered by
+vk-hardware.ca
+akada-hardware.com
+factorydirecthardware.com
+homeimprovementway.com
+rightsethardware.com
+
+Universal versus handed hardware
+Covered by
+okunusa.com
+securityparts.com
+amazon.com
+sargentlock.com
+schlage.com
+americanlocksets.com
+
+Frameless glass hardware coordination
+Covered by
+dormakaba.com
+s3i.co.uk
+bmsteel.co.uk
+stainlesssteelhardwares.com
+monthard.com
+watersonusa.ai
+metechhardware.com
+allniteglass.com
+litespec.org
+vant.glass
+dndglasshardware.com
+
+## Finishes, materials and codes
+Stainless steel grade selection
+Covered by
+zemsteel.com
+js-nyct.com
+walmaystainless.com
+stainlesssteelguide.com
+nimblemfg.co
+ssbolts.com
+buildersstainless.com
+apurviind.com
+stainlesssteelhinges.com
+watersonusa.ai
+ssalloy-steel.com
+
+Field identification of stainless grades
+Covered by
+zemsteel.com
+js-nyct.com
+walmaystainless.com
+cwchangwen.com
+kongfangmetal.com
+greatesonsteel.com
+khianoxsteel.com
+trinitydynamic.com
+
+Chrome finish appearance differences
+Covered by
+engineerfix.com
+socketstore.co.uk
+sehome.co.uk
+
+## Exit device selection and escape hardware
+Standards and compliance distinctions
+Covered by
+iseo.com
+securitydirectuk.com
+cdms-ltd.co.uk
+thekccgroup.com
+intertek.com
+assaabloy.com
+doorwaysplus.com
+normsplash.com
+simons-voss.com
+allegion.co.uk
+aldridgeaccess.co.uk
+intertekinform.com
+
+Exterior trim function guidance
+Covered by
+americanlocksets.com
+cdfdistributors.com
+nationallocksupply.com
+doorware.com
+callout.app
+inspectpoint.com
+
+Push bar sizing requirements
+Covered by
+usglassmag.com
+allegion.com
+usmadesupply.com
+fairfaxcounty.gov
+
+Multi-point latching applications
+Covered by
+ufiredoors.com
+doorwaysplus.com
+qualitydoor.com
+tmhardware.com
+iccsafe.org
+
+## Lock function selection for a building
+Commercial function decision frameworks
+Covered by
+elwinsecurity.com
+needlocks.com
+nationallocksupply.com
+doorsforpros.com
+lock-depot.com
+allegion.com
+
+Specification and scheduling standards
+Covered by
+americanlocksets.com
+securityparts.com
+toptekaccess.com
+nationallocksupply.com
+
+Occupancy indicator privacy hardware
+Covered by
+trudoor.com
+brinkslocks.com
+pdqlocks.com
+amazon.com
+lockeydigital.co.uk
+camax.cn
+
+## OEM, private label and tooling
+MOQ and customization economics
+Covered by
+jj-hardware.com
+door-handle-manufacturer.com
+eco-hardware.com
+sourcebridge.org
+marchry.com
+htheophile.com
+
+RFQ specification completeness
+Covered by
+manufyn.com
+zetwerk.com
+global-procurement.org
+
+Dimensional interchangeability guidance
+Covered by
+steeldoor.org
+elwinsecurity.com
+snrida.com
+mplocks.com
+slockhub.com
+vk-hardware.ca
+
+## Documentation, test evidence and submittals
+Compliance documentation structure
+Covered by
+snrida.com
+ceprocon.com
+danddcc.com
+ua.edu
+spilma.com
+zechmeister-solutions.com
+prylem.com
+ewmedico.com
+shopulstandards.com
+usmadesupply.com
+ul.com
+amazonaws.com
+
+Technical drawing expectations
+Covered by
+ua.edu
+jrsmith.com
+amazonaws.com
+bravofabs.com
+asme.org
+
+Material traceability evidence
+Covered by
+starlighttubes.com
+khianoxsteel.com
+apurviind.com
+
+## Architectural hardware sourcing
+Fire door compliance frameworks
+Covered by
+vk-hardware.ca
+akada-hardware.com
+lockcetera.com
+easilok.com
+doorwaysplus.com
+slockhub.com
+seclock.com
+lawrencehardware.com
+directindustry.com
+
+Certification and test validation
+Covered by
+cdfdistributors.com
+watersonusa.ai
+build-construct.com
+sourcebyspec.com
+ul.com
+buildershardware.com
+linkedin.com
+
+Specification and submittal workflows
+Covered by
+build-construct.com
+securityparts.com
+dhi.org
+ua.edu
+danddcc.com
+falconussupply.com
+ufiredoors.com
+
+## International standards comparison
+European escape hardware classification
+Covered by
+assaabloy.com
+cdms-ltd.co.uk
+securitydirectuk.com
+ekinpanicbar.com
+n1ck.ch
+intertek.com
+
+CE marking verification workflows
+Covered by
+europa.eu
+ift-rosenheim.de
+strandhardware.co.uk
+assaabloy.com
+allegion.co.uk
+cecheck.com
+wilka.com
+www.gov.uk
+
+Performance test benchmark comparisons
+Covered by
+usmadesupply.com
+buildershardware.com
+doorwaysplus.com
+keymanlock.com
+allegion.co.uk
+iseo.com
+lloydworrall.co.uk
+intertekinform.com
+intertek.com

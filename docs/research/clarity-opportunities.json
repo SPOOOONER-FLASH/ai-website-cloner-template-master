@@ -1,0 +1,2345 @@
+{
+  "capturedAt": "2026-09-21",
+  "source": "docs/research/clarity-opportunities.txt",
+  "standing": {
+    "International standards comparison": {
+      "share": 78.85,
+      "rank": 1,
+      "cited": 60
+    },
+    "Door handing and installation fit": {
+      "share": 72.22,
+      "rank": 1,
+      "cited": 20
+    },
+    "Architectural hardware sourcing": {
+      "share": 72.73,
+      "rank": 4,
+      "cited": 13.33
+    },
+    "Finishes, materials and codes": {
+      "share": 100,
+      "rank": 3,
+      "cited": 33.33
+    },
+    "Exit device selection and escape hardware": {
+      "share": 43.75,
+      "rank": 7,
+      "cited": 13.33
+    },
+    "Euro cylinder and keying systems": {
+      "share": 30.77,
+      "rank": 10,
+      "cited": 7.14
+    },
+    "OEM, private label and tooling": {
+      "share": 40,
+      "rank": 27,
+      "cited": 6.67
+    },
+    "Lock function selection for a building": {
+      "share": 33.33,
+      "rank": 34,
+      "cited": 6.67
+    },
+    "Documentation, test evidence and submittals": {
+      "share": 0,
+      "rank": null,
+      "cited": 0
+    }
+  },
+  "topics": [
+    {
+      "title": "Euro cylinder and keying systems",
+      "standing": {
+        "share": 30.77,
+        "rank": 10,
+        "cited": 7.14
+      },
+      "clusters": [
+        {
+          "name": "Euro cylinder sizing guidance",
+          "domains": [
+            "cornwalllocksmiths.co.uk",
+            "lockstation.co.uk",
+            "lovehandles.uk.com",
+            "lockerfella.co.uk",
+            "welock.com",
+            "lockshopdirect.co.uk",
+            "e-locks.eu"
+          ]
+        },
+        {
+          "name": "Master key hierarchy planning",
+          "domains": [
+            "securityparts.com",
+            "lowratelocksmith.com",
+            "virginiasecurityconcepts.net",
+            "secutorlock.com",
+            "eos-secure.eu",
+            "calcimator.com",
+            "lockbench.app",
+            "cdfdistributors.com",
+            "surelockkey.com",
+            "assaabloy.com",
+            "lockandkey.co.uk",
+            "doorwaysplus.com",
+            "prolocksmithllc.com"
+          ]
+        },
+        {
+          "name": "Deadbolt versus rim lock comparisons",
+          "domains": [
+            "secukey.com",
+            "finehomebuilding.com",
+            "lowratelocksmith.com",
+            "toplocksecurity.com",
+            "lowes.com",
+            "carpenterslab.com"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Door handing and installation fit",
+      "standing": {
+        "share": 72.22,
+        "rank": 1,
+        "cited": 20
+      },
+      "clusters": [
+        {
+          "name": "Door handing reconciliation",
+          "domains": [
+            "nationallocksupply.com",
+            "sizemarker.com",
+            "fschier.com",
+            "toptekaccess.com",
+            "finallydone.de"
+          ]
+        },
+        {
+          "name": "Replacement measurement workflows",
+          "domains": [
+            "vk-hardware.ca",
+            "akada-hardware.com",
+            "factorydirecthardware.com",
+            "homeimprovementway.com",
+            "rightsethardware.com"
+          ]
+        },
+        {
+          "name": "Universal versus handed hardware",
+          "domains": [
+            "okunusa.com",
+            "securityparts.com",
+            "amazon.com",
+            "sargentlock.com",
+            "schlage.com",
+            "americanlocksets.com"
+          ]
+        },
+        {
+          "name": "Frameless glass hardware coordination",
+          "domains": [
+            "dormakaba.com",
+            "s3i.co.uk",
+            "bmsteel.co.uk",
+            "stainlesssteelhardwares.com",
+            "monthard.com",
+            "watersonusa.ai",
+            "metechhardware.com",
+            "allniteglass.com",
+            "litespec.org",
+            "vant.glass",
+            "dndglasshardware.com"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finishes, materials and codes",
+      "standing": {
+        "share": 100,
+        "rank": 3,
+        "cited": 33.33
+      },
+      "clusters": [
+        {
+          "name": "Stainless steel grade selection",
+          "domains": [
+            "zemsteel.com",
+            "js-nyct.com",
+            "walmaystainless.com",
+            "stainlesssteelguide.com",
+            "nimblemfg.co",
+            "ssbolts.com",
+            "buildersstainless.com",
+            "apurviind.com",
+            "stainlesssteelhinges.com",
+            "watersonusa.ai",
+            "ssalloy-steel.com"
+          ]
+        },
+        {
+          "name": "Field identification of stainless grades",
+          "domains": [
+            "zemsteel.com",
+            "js-nyct.com",
+            "walmaystainless.com",
+            "cwchangwen.com",
+            "kongfangmetal.com",
+            "greatesonsteel.com",
+            "khianoxsteel.com",
+            "trinitydynamic.com"
+          ]
+        },
+        {
+          "name": "Chrome finish appearance differences",
+          "domains": [
+            "engineerfix.com",
+            "socketstore.co.uk",
+            "sehome.co.uk"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exit device selection and escape hardware",
+      "standing": {
+        "share": 43.75,
+        "rank": 7,
+        "cited": 13.33
+      },
+      "clusters": [
+        {
+          "name": "Standards and compliance distinctions",
+          "domains": [
+            "iseo.com",
+            "securitydirectuk.com",
+            "cdms-ltd.co.uk",
+            "thekccgroup.com",
+            "intertek.com",
+            "assaabloy.com",
+            "doorwaysplus.com",
+            "normsplash.com",
+            "simons-voss.com",
+            "allegion.co.uk",
+            "aldridgeaccess.co.uk",
+            "intertekinform.com"
+          ]
+        },
+        {
+          "name": "Exterior trim function guidance",
+          "domains": [
+            "americanlocksets.com",
+            "cdfdistributors.com",
+            "nationallocksupply.com",
+            "doorware.com",
+            "callout.app",
+            "inspectpoint.com"
+          ]
+        },
+        {
+          "name": "Push bar sizing requirements",
+          "domains": [
+            "usglassmag.com",
+            "allegion.com",
+            "usmadesupply.com",
+            "fairfaxcounty.gov"
+          ]
+        },
+        {
+          "name": "Multi-point latching applications",
+          "domains": [
+            "ufiredoors.com",
+            "doorwaysplus.com",
+            "qualitydoor.com",
+            "tmhardware.com",
+            "iccsafe.org"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lock function selection for a building",
+      "standing": {
+        "share": 33.33,
+        "rank": 34,
+        "cited": 6.67
+      },
+      "clusters": [
+        {
+          "name": "Commercial function decision frameworks",
+          "domains": [
+            "elwinsecurity.com",
+            "needlocks.com",
+            "nationallocksupply.com",
+            "doorsforpros.com",
+            "lock-depot.com",
+            "allegion.com"
+          ]
+        },
+        {
+          "name": "Specification and scheduling standards",
+          "domains": [
+            "americanlocksets.com",
+            "securityparts.com",
+            "toptekaccess.com",
+            "nationallocksupply.com"
+          ]
+        },
+        {
+          "name": "Occupancy indicator privacy hardware",
+          "domains": [
+            "trudoor.com",
+            "brinkslocks.com",
+            "pdqlocks.com",
+            "amazon.com",
+            "lockeydigital.co.uk",
+            "camax.cn"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OEM, private label and tooling",
+      "standing": {
+        "share": 40,
+        "rank": 27,
+        "cited": 6.67
+      },
+      "clusters": [
+        {
+          "name": "MOQ and customization economics",
+          "domains": [
+            "jj-hardware.com",
+            "door-handle-manufacturer.com",
+            "eco-hardware.com",
+            "sourcebridge.org",
+            "marchry.com",
+            "htheophile.com"
+          ]
+        },
+        {
+          "name": "RFQ specification completeness",
+          "domains": [
+            "manufyn.com",
+            "zetwerk.com",
+            "global-procurement.org"
+          ]
+        },
+        {
+          "name": "Dimensional interchangeability guidance",
+          "domains": [
+            "steeldoor.org",
+            "elwinsecurity.com",
+            "snrida.com",
+            "mplocks.com",
+            "slockhub.com",
+            "vk-hardware.ca"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Documentation, test evidence and submittals",
+      "standing": {
+        "share": 0,
+        "rank": null,
+        "cited": 0
+      },
+      "clusters": [
+        {
+          "name": "Compliance documentation structure",
+          "domains": [
+            "snrida.com",
+            "ceprocon.com",
+            "danddcc.com",
+            "ua.edu",
+            "spilma.com",
+            "zechmeister-solutions.com",
+            "prylem.com",
+            "ewmedico.com",
+            "shopulstandards.com",
+            "usmadesupply.com",
+            "ul.com",
+            "amazonaws.com"
+          ]
+        },
+        {
+          "name": "Technical drawing expectations",
+          "domains": [
+            "ua.edu",
+            "jrsmith.com",
+            "amazonaws.com",
+            "bravofabs.com",
+            "asme.org"
+          ]
+        },
+        {
+          "name": "Material traceability evidence",
+          "domains": [
+            "starlighttubes.com",
+            "khianoxsteel.com",
+            "apurviind.com"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Architectural hardware sourcing",
+      "standing": {
+        "share": 72.73,
+        "rank": 4,
+        "cited": 13.33
+      },
+      "clusters": [
+        {
+          "name": "Fire door compliance frameworks",
+          "domains": [
+            "vk-hardware.ca",
+            "akada-hardware.com",
+            "lockcetera.com",
+            "easilok.com",
+            "doorwaysplus.com",
+            "slockhub.com",
+            "seclock.com",
+            "lawrencehardware.com",
+            "directindustry.com"
+          ]
+        },
+        {
+          "name": "Certification and test validation",
+          "domains": [
+            "cdfdistributors.com",
+            "watersonusa.ai",
+            "build-construct.com",
+            "sourcebyspec.com",
+            "ul.com",
+            "buildershardware.com",
+            "linkedin.com"
+          ]
+        },
+        {
+          "name": "Specification and submittal workflows",
+          "domains": [
+            "build-construct.com",
+            "securityparts.com",
+            "dhi.org",
+            "ua.edu",
+            "danddcc.com",
+            "falconussupply.com",
+            "ufiredoors.com"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "International standards comparison",
+      "standing": {
+        "share": 78.85,
+        "rank": 1,
+        "cited": 60
+      },
+      "clusters": [
+        {
+          "name": "European escape hardware classification",
+          "domains": [
+            "assaabloy.com",
+            "cdms-ltd.co.uk",
+            "securitydirectuk.com",
+            "ekinpanicbar.com",
+            "n1ck.ch",
+            "intertek.com"
+          ]
+        },
+        {
+          "name": "CE marking verification workflows",
+          "domains": [
+            "europa.eu",
+            "ift-rosenheim.de",
+            "strandhardware.co.uk",
+            "assaabloy.com",
+            "allegion.co.uk",
+            "cecheck.com",
+            "wilka.com",
+            "gov.uk"
+          ]
+        },
+        {
+          "name": "Performance test benchmark comparisons",
+          "domains": [
+            "usmadesupply.com",
+            "buildershardware.com",
+            "doorwaysplus.com",
+            "keymanlock.com",
+            "allegion.co.uk",
+            "iseo.com",
+            "lloydworrall.co.uk",
+            "intertekinform.com",
+            "intertek.com"
+          ]
+        }
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "domain": "securityparts.com",
+      "topicCount": 4,
+      "clusterCount": 4,
+      "topics": [
+        "Euro cylinder and keying systems",
+        "Door handing and installation fit",
+        "Lock function selection for a building",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning",
+        "Door handing and installation fit › Universal versus handed hardware",
+        "Lock function selection for a building › Specification and scheduling standards",
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 1.909
+    },
+    {
+      "domain": "usmadesupply.com",
+      "topicCount": 3,
+      "clusterCount": 3,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "Documentation, test evidence and submittals",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Push bar sizing requirements",
+        "Documentation, test evidence and submittals › Compliance documentation structure",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 1.774
+    },
+    {
+      "domain": "doorwaysplus.com",
+      "topicCount": 4,
+      "clusterCount": 5,
+      "topics": [
+        "Euro cylinder and keying systems",
+        "Exit device selection and escape hardware",
+        "Architectural hardware sourcing",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning",
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "Exit device selection and escape hardware › Multi-point latching applications",
+        "Architectural hardware sourcing › Fire door compliance frameworks",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 1.739
+    },
+    {
+      "domain": "snrida.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "OEM, private label and tooling",
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › Dimensional interchangeability guidance",
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1.6
+    },
+    {
+      "domain": "cdfdistributors.com",
+      "topicCount": 3,
+      "clusterCount": 3,
+      "topics": [
+        "Euro cylinder and keying systems",
+        "Exit device selection and escape hardware",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning",
+        "Exit device selection and escape hardware › Exterior trim function guidance",
+        "Architectural hardware sourcing › Certification and test validation"
+      ],
+      "priority": 1.527
+    },
+    {
+      "domain": "nationallocksupply.com",
+      "topicCount": 3,
+      "clusterCount": 4,
+      "topics": [
+        "Door handing and installation fit",
+        "Exit device selection and escape hardware",
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Door handing reconciliation",
+        "Exit device selection and escape hardware › Exterior trim function guidance",
+        "Lock function selection for a building › Commercial function decision frameworks",
+        "Lock function selection for a building › Specification and scheduling standards"
+      ],
+      "priority": 1.507
+    },
+    {
+      "domain": "americanlocksets.com",
+      "topicCount": 3,
+      "clusterCount": 3,
+      "topics": [
+        "Door handing and installation fit",
+        "Exit device selection and escape hardware",
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Universal versus handed hardware",
+        "Exit device selection and escape hardware › Exterior trim function guidance",
+        "Lock function selection for a building › Specification and scheduling standards"
+      ],
+      "priority": 1.507
+    },
+    {
+      "domain": "assaabloy.com",
+      "topicCount": 3,
+      "clusterCount": 4,
+      "topics": [
+        "Euro cylinder and keying systems",
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning",
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › European escape hardware classification",
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 1.466
+    },
+    {
+      "domain": "ua.edu",
+      "topicCount": 2,
+      "clusterCount": 3,
+      "topics": [
+        "Documentation, test evidence and submittals",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure",
+        "Documentation, test evidence and submittals › Technical drawing expectations",
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 1.273
+    },
+    {
+      "domain": "danddcc.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Documentation, test evidence and submittals",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure",
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 1.273
+    },
+    {
+      "domain": "ul.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Documentation, test evidence and submittals",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure",
+        "Architectural hardware sourcing › Certification and test validation"
+      ],
+      "priority": 1.273
+    },
+    {
+      "domain": "elwinsecurity.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Lock function selection for a building",
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Commercial function decision frameworks",
+        "OEM, private label and tooling › Dimensional interchangeability guidance"
+      ],
+      "priority": 1.267
+    },
+    {
+      "domain": "allegion.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Push bar sizing requirements",
+        "Lock function selection for a building › Commercial function decision frameworks"
+      ],
+      "priority": 1.229
+    },
+    {
+      "domain": "vk-hardware.ca",
+      "topicCount": 3,
+      "clusterCount": 3,
+      "topics": [
+        "Door handing and installation fit",
+        "OEM, private label and tooling",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Replacement measurement workflows",
+        "OEM, private label and tooling › Dimensional interchangeability guidance",
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 1.15
+    },
+    {
+      "domain": "apurviind.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Finishes, materials and codes",
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection",
+        "Documentation, test evidence and submittals › Material traceability evidence"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "khianoxsteel.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Finishes, materials and codes",
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Field identification of stainless grades",
+        "Documentation, test evidence and submittals › Material traceability evidence"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "amazonaws.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure",
+        "Documentation, test evidence and submittals › Technical drawing expectations"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "ceprocon.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "spilma.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "zechmeister-solutions.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "prylem.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "ewmedico.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "shopulstandards.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Compliance documentation structure"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "jrsmith.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Technical drawing expectations"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "bravofabs.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Technical drawing expectations"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "asme.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Technical drawing expectations"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "starlighttubes.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Documentation, test evidence and submittals"
+      ],
+      "clusters": [
+        "Documentation, test evidence and submittals › Material traceability evidence"
+      ],
+      "priority": 1
+    },
+    {
+      "domain": "toptekaccess.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Door handing and installation fit",
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Door handing reconciliation",
+        "Lock function selection for a building › Specification and scheduling standards"
+      ],
+      "priority": 0.945
+    },
+    {
+      "domain": "amazon.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Door handing and installation fit",
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Universal versus handed hardware",
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.945
+    },
+    {
+      "domain": "slockhub.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "OEM, private label and tooling",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › Dimensional interchangeability guidance",
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.873
+    },
+    {
+      "domain": "ufiredoors.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Multi-point latching applications",
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 0.835
+    },
+    {
+      "domain": "intertek.com",
+      "topicCount": 2,
+      "clusterCount": 3,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › European escape hardware classification",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "allegion.co.uk",
+      "topicCount": 2,
+      "clusterCount": 3,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › CE marking verification workflows",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "iseo.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "securitydirectuk.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › European escape hardware classification"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "cdms-ltd.co.uk",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › European escape hardware classification"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "intertekinform.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Exit device selection and escape hardware",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.774
+    },
+    {
+      "domain": "lowratelocksmith.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning",
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "cornwalllocksmiths.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lockstation.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lovehandles.uk.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lockerfella.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "welock.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lockshopdirect.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "e-locks.eu",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Euro cylinder sizing guidance"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "virginiasecurityconcepts.net",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "secutorlock.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "eos-secure.eu",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "calcimator.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lockbench.app",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "surelockkey.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lockandkey.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "prolocksmithllc.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Master key hierarchy planning"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "secukey.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "finehomebuilding.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "toplocksecurity.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "lowes.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "carpenterslab.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Euro cylinder and keying systems"
+      ],
+      "clusters": [
+        "Euro cylinder and keying systems › Deadbolt versus rim lock comparisons"
+      ],
+      "priority": 0.692
+    },
+    {
+      "domain": "needlocks.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Commercial function decision frameworks"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "doorsforpros.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Commercial function decision frameworks"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "lock-depot.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Commercial function decision frameworks"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "trudoor.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "brinkslocks.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "pdqlocks.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "lockeydigital.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "camax.cn",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Lock function selection for a building"
+      ],
+      "clusters": [
+        "Lock function selection for a building › Occupancy indicator privacy hardware"
+      ],
+      "priority": 0.667
+    },
+    {
+      "domain": "jj-hardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "door-handle-manufacturer.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "eco-hardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "sourcebridge.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "marchry.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "htheophile.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › MOQ and customization economics"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "manufyn.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › RFQ specification completeness"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "zetwerk.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › RFQ specification completeness"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "global-procurement.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › RFQ specification completeness"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "steeldoor.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › Dimensional interchangeability guidance"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "mplocks.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "OEM, private label and tooling"
+      ],
+      "clusters": [
+        "OEM, private label and tooling › Dimensional interchangeability guidance"
+      ],
+      "priority": 0.6
+    },
+    {
+      "domain": "thekccgroup.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "normsplash.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "simons-voss.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "aldridgeaccess.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Standards and compliance distinctions"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "doorware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Exterior trim function guidance"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "callout.app",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Exterior trim function guidance"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "inspectpoint.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Exterior trim function guidance"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "usglassmag.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Push bar sizing requirements"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "fairfaxcounty.gov",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Push bar sizing requirements"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "qualitydoor.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Multi-point latching applications"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "tmhardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Multi-point latching applications"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "iccsafe.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Exit device selection and escape hardware"
+      ],
+      "clusters": [
+        "Exit device selection and escape hardware › Multi-point latching applications"
+      ],
+      "priority": 0.563
+    },
+    {
+      "domain": "watersonusa.ai",
+      "topicCount": 3,
+      "clusterCount": 3,
+      "topics": [
+        "Door handing and installation fit",
+        "Finishes, materials and codes",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination",
+        "Finishes, materials and codes › Stainless steel grade selection",
+        "Architectural hardware sourcing › Certification and test validation"
+      ],
+      "priority": 0.55
+    },
+    {
+      "domain": "akada-hardware.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Door handing and installation fit",
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Replacement measurement workflows",
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.55
+    },
+    {
+      "domain": "buildershardware.com",
+      "topicCount": 2,
+      "clusterCount": 2,
+      "topics": [
+        "Architectural hardware sourcing",
+        "International standards comparison"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Certification and test validation",
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.484
+    },
+    {
+      "domain": "sizemarker.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Door handing reconciliation"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "fschier.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Door handing reconciliation"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "finallydone.de",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Door handing reconciliation"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "factorydirecthardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Replacement measurement workflows"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "homeimprovementway.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Replacement measurement workflows"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "rightsethardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Replacement measurement workflows"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "okunusa.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Universal versus handed hardware"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "sargentlock.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Universal versus handed hardware"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "schlage.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Universal versus handed hardware"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "dormakaba.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "s3i.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "bmsteel.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "stainlesssteelhardwares.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "monthard.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "metechhardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "allniteglass.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "litespec.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "vant.glass",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "dndglasshardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Door handing and installation fit"
+      ],
+      "clusters": [
+        "Door handing and installation fit › Frameless glass hardware coordination"
+      ],
+      "priority": 0.278
+    },
+    {
+      "domain": "build-construct.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Certification and test validation",
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "lockcetera.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "easilok.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "seclock.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "lawrencehardware.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "directindustry.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Fire door compliance frameworks"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "sourcebyspec.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Certification and test validation"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "linkedin.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Certification and test validation"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "dhi.org",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "falconussupply.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Architectural hardware sourcing"
+      ],
+      "clusters": [
+        "Architectural hardware sourcing › Specification and submittal workflows"
+      ],
+      "priority": 0.273
+    },
+    {
+      "domain": "ekinpanicbar.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › European escape hardware classification"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "n1ck.ch",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › European escape hardware classification"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "europa.eu",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "ift-rosenheim.de",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "strandhardware.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "cecheck.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "wilka.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "gov.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › CE marking verification workflows"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "keymanlock.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "lloydworrall.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "International standards comparison"
+      ],
+      "clusters": [
+        "International standards comparison › Performance test benchmark comparisons"
+      ],
+      "priority": 0.212
+    },
+    {
+      "domain": "zemsteel.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection",
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "js-nyct.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection",
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "walmaystainless.com",
+      "topicCount": 1,
+      "clusterCount": 2,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection",
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "stainlesssteelguide.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "nimblemfg.co",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "ssbolts.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "buildersstainless.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "stainlesssteelhinges.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "ssalloy-steel.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Stainless steel grade selection"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "cwchangwen.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "kongfangmetal.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "greatesonsteel.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "trinitydynamic.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Field identification of stainless grades"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "engineerfix.com",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Chrome finish appearance differences"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "socketstore.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Chrome finish appearance differences"
+      ],
+      "priority": 0
+    },
+    {
+      "domain": "sehome.co.uk",
+      "topicCount": 1,
+      "clusterCount": 1,
+      "topics": [
+        "Finishes, materials and codes"
+      ],
+      "clusters": [
+        "Finishes, materials and codes › Chrome finish appearance differences"
+      ],
+      "priority": 0
+    }
+  ]
+}
