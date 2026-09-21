@@ -11,7 +11,24 @@
  * has reached the server — submitting a URL the server has not pulled yet gets it
  * crawled at the old content.
  *
- * Run: node scripts/indexnow-submit.mjs [--dry] [--limit N]
+ * `--only <pattern>` submits just the URLs whose path matches, and is the flag you want
+ * for a normal release. IndexNow exists to announce what CHANGED; re-pushing all 1,951
+ * sitemap URLs on every deploy is what makes an audit report "IndexNow is in batch mode",
+ * and a search engine that is handed the same unchanged list repeatedly learns to discount
+ * it. Submit the pages the release actually touched:
+ *
+ *     node scripts/indexnow-submit.mjs --only 'guides/' --dry
+ *
+ * On Windows, write the pattern WITHOUT a leading slash. Git Bash's MSYS path conversion
+ * rewrites a leading-slash argument into a Windows path, so `--only '/guides/'` arrives as
+ * `C:/Program Files/Git/guides/` and matches nothing. `MSYS_NO_PATHCONV=1` also works.
+ * The "matched none" guard below exists because that failure is silent otherwise —
+ * submitting zero URLs and exiting 0 looks exactly like a successful submission.
+ *
+ * The full-sitemap form is still right after a domain move, a taxonomy-wide rename, or a
+ * first-ever submission — cases where genuinely everything changed.
+ *
+ * Run: node scripts/indexnow-submit.mjs [--dry] [--limit N] [--only <pattern>]
  */
 import { readFileSync } from "node:fs";
 
@@ -26,15 +43,32 @@ const dry = process.argv.includes("--dry");
 const limitFlag = process.argv.indexOf("--limit");
 const limit = limitFlag > -1 ? Number(process.argv[limitFlag + 1]) : Infinity;
 
-const urls = [...readFileSync(SITEMAP, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)]
-  .map((m) => m[1])
-  .filter((u) => u.startsWith(`https://${HOST}/`))
-  .slice(0, limit);
+const onlyFlag = process.argv.indexOf("--only");
+const only = onlyFlag > -1 ? process.argv[onlyFlag + 1] : null;
+if (onlyFlag > -1 && !only) {
+  console.error("--only needs a pattern, e.g. --only '/guides/'");
+  process.exit(1);
+}
 
-if (!urls.length) {
+const all = [...readFileSync(SITEMAP, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)]
+  .map((m) => m[1])
+  .filter((u) => u.startsWith(`https://${HOST}/`));
+
+if (!all.length) {
   console.error(`no URLs in ${SITEMAP} — run npm run deploy:prep first`);
   process.exit(1);
 }
+
+const urls = (only ? all.filter((u) => new RegExp(only).test(u)) : all).slice(0, limit);
+
+if (!urls.length) {
+  // A pattern that matches nothing is almost always a typo, and submitting nothing
+  // silently would look exactly like success.
+  console.error(`--only ${only} matched none of the ${all.length} URLs in ${SITEMAP}`);
+  process.exit(1);
+}
+
+if (only) console.log(`--only ${only}: ${urls.length} of ${all.length} URLs`);
 
 console.log(`${urls.length} URLs from ${SITEMAP}`);
 
