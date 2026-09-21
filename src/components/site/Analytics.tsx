@@ -21,7 +21,7 @@ import { analytics, indexable } from "@/data/site";
 export function Analytics() {
   if (!indexable) return null;
 
-  const { ga4Id, clarityId } = analytics;
+  const { ga4Id, clarityId, gtmId } = analytics;
 
   return (
     <>
@@ -55,6 +55,42 @@ export function Analytics() {
           <Script id="ga4-init" strategy="lazyOnload">
             {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`}
           </Script>
+        </>
+      ) : null}
+
+      {/*
+        GOOGLE TAG MANAGER — loaded with next/script, not pasted into <head>.
+
+        Google's own instructions say "as high in the <head> as possible", and that
+        advice is written for a page with no other performance work done to it. This
+        one has had that work done and it is measurable: the homepage JavaScript went
+        from 2,241 KB to 669 KB on 2026-09-11, GA4 was moved to lazyOnload on 09-13
+        precisely to get a third-party preload OUT of the head, and mobile PageSpeed
+        sits at 76. Injecting a synchronous third-party script at the top of every
+        document gives that back.
+
+        afterInteractive loads GTM after hydration. For a container whose job is to
+        fire analytics tags, the difference is a few hundred milliseconds in when the
+        first hit is recorded; it is not a difference in whether it is recorded. This
+        is also the integration Next documents for GTM.
+
+        The <noscript> iframe is included for completeness. It only does anything for
+        a visitor with JavaScript disabled — who, by definition, cannot be measured by
+        any tag in the container either.
+      */}
+      {gtmId ? (
+        <>
+          <Script id="gtm-init" strategy="afterInteractive">
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`}
+          </Script>
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
         </>
       ) : null}
 

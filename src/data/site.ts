@@ -55,6 +55,18 @@ export const analytics = {
   /** Microsoft Clarity project ID — session replay and heatmaps. */
   clarityId: "y8utyrgvv0",
   /**
+   * Google Tag Manager container.
+   *
+   * GTM is a loader for other tags, not a measurement tool itself. GA4 and Clarity
+   * above are still loaded DIRECTLY by Analytics.tsx, so this container is empty of
+   * them on purpose.
+   *
+   * IF YOU ADD A GA4 TAG INSIDE GTM, REMOVE ga4Id ABOVE IN THE SAME CHANGE.
+   * Two GA4 loaders on one page double every session, every event and every
+   * conversion, and the inflated numbers look exactly like growth. Same for Clarity.
+   */
+  gtmId: "GTM-MQHHPGJL",
+  /**
    * IndexNow key. Bing and Yandex fetch https://cantonlock.com/<key>.txt to prove
    * we own the domain, then accept instant submissions instead of waiting for a crawl.
    */
