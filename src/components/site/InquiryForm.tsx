@@ -2,7 +2,9 @@
 import type { Locale } from "@/data/site";
 import { localised } from "@/lib/localised";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { submitInquiry } from "@/lib/inquiry-submit";
+import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
@@ -13,10 +15,6 @@ import { siteSettings } from "@/data/navigation";
 const INQUIRY_ADDRESS = siteSettings.contact.email;
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
-interface Web3FormsResponse {
-  success?: boolean;
-  message?: string;
-}
 
 const FIELD_CLASS =
   "field min-h-42 w-full rounded-card border border-line bg-surface px-16 py-10 text-c1 text-ink placeholder:text-ink-secondary";
@@ -132,6 +130,15 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
   const [statusMessage, setStatusMessage] = useState("");
   /** The typed enquiry, kept so a failed send can still be posted as an email. */
   const [fallback, setFallback] = useState("");
+  const submitting = useRef(false);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [returnToForm, setReturnToForm] = useState(false);
+  useEffect(() => {
+    if (returnToForm && status === "idle") {
+      formRef.current?.querySelector<HTMLInputElement>('input[name="name"]')?.focus();
+      setReturnToForm(false);
+    }
+  }, [returnToForm, status]);
 
   useEffect(() => {
     setProduct(queryValue(searchParams, "product"));
@@ -171,6 +178,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submitting.current) return;
 
     const form = event.currentTarget;
     const payload = new FormData(form);
@@ -197,6 +205,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     }
 
     setStatus("submitting");
+    submitting.current = true;
     setStatusMessage("");
 
     payload.set("access_key", accessKey);
@@ -204,32 +213,32 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
     payload.set("from_name", "Canton Hyland website");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: payload,
-      });
-      const result = (await response.json()) as Web3FormsResponse;
-
-      if (!response.ok || !result.success) {
-        throw new Error(result.message || text.failure);
-      }
+      await submitInquiry(payload);
 
       form.reset();
+      setProduct("");
+      setModel("");
       setFallback("");
       setStatus("success");
       setStatusMessage(text.success);
-    } catch {
+    } catch (error) {
       /*
         The service's own error text is not shown. It is written in English for a
         developer ("Invalid access key"), and it tells a buyer nothing they can act on —
         the next line does.
       */
-      fail(text.failure);
+      fail(error instanceof DOMException && error.name === "TimeoutError"
+        ? localised({ en: "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.", es: "No hemos podido confirmar la entrega. Es posible que su mensaje se haya recibido. Puede consultarnos por correo antes de volver a enviarlo.", pt: "Não foi possível confirmar a entrega. Sua mensagem pode ter sido recebida. Consulte-nos por e-mail antes de enviar novamente." }, locale)
+        : text.failure);
+    } finally {
+      submitting.current = false;
     }
   }
 
+  if (status === "success") return <InquirySuccess locale={locale} onAnother={() => { setStatus("idle"); setStatusMessage(""); setReturnToForm(true); }} />;
+
   return (
-    <form className="space-y-32" onSubmit={handleSubmit} noValidate={false}>
+    <form ref={formRef} className="space-y-32" onSubmit={handleSubmit} noValidate={false} aria-busy={status === "submitting"}>
       {/* Web3Forms honeypot: hidden from people; automated fillers expose themselves here. */}
       <input
         type="checkbox"

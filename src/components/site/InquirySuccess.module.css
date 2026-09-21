@@ -1,0 +1,10 @@
+.panel { position: relative; background: #f7f5ef; color: #25241e; padding: clamp(32px, 5vw, 72px) 24px; text-align: center; scroll-margin-top: 140px; }
+.mark { margin: 0 auto 32px; display: grid; place-items: center; width: 64px; height: 64px; border: 1px solid #d9d2c1; border-radius: 50%; color: #85713f; }
+.heading { font-size: clamp(36px, 4vw, 62px); font-weight: 500; line-height: 1.08; letter-spacing: -.03em; text-wrap: balance; margin: 0 auto; max-width: 18ch; }
+.description { max-width: 46ch; margin: 28px auto; font-size: 17px; line-height: 1.7; color: #706b5e; }
+.receipt { padding: 18px 0; border-block: 1px solid #d9d2c1; margin: 0 auto 32px; max-width: 460px; font-size: 14px; }
+.actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 24px; }
+.again { margin-top: 28px; border: 0; background: none; color: #706b5e; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; font-size: 13px; }
+.canvas { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 60; }
+@media (max-width: 600px) { .actions { flex-direction: column; gap: 20px; } .description { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { .canvas { display: none; } }
