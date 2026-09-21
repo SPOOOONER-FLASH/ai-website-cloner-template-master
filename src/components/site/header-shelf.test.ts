@@ -102,7 +102,23 @@ test("footer exposes only the four direct buying destinations", () => {
     still being there.
   */
   assert.match(footer, /<EmailLink/);
-  assert.match(footer, /address=\{siteSettings\.contact\.email\}/);
+  /*
+    WHICH address, changed 2026-09-21 on the client's explicit instruction after he was
+    told it looked wrong under a "How to buy" heading:
+
+      「请听我的放技术邮箱」
+
+    It was `contact.email` (orders and pricing) from the day the row was added. It is now
+    `contact.technicalEmail`, because that is the mailbox the client reads himself, and
+    because of what actually arrives: the 2026-09-20 Clarity reading has all 33 of our AI
+    citations landing on articles answering a technical question — finish codes, backset,
+    cylinder length, push bar versus touch bar — and none on a price page.
+
+    This assertion is changed deliberately rather than deleted. A locked value that turns
+    out to be wrong should be re-locked to the new value in the same commit, so the next
+    reader sees a decision and not an absence.
+  */
+  assert.match(footer, /address=\{siteSettings\.contact\.technicalEmail\}/);
 
   /*
     The legal row is plain text, not buttons.

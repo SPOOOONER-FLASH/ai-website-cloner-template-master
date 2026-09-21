@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4613,
+  "count": 4641,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -9570,6 +9570,510 @@
       },
       "sourceSha256": "4bfd8fc189b3eadbba7ca6bb290ee9e5c0088eb5ad17ddd39985ce1d8c83e974",
       "outputSha256": "947977687537afa871fdfa6164bc32f4c2f724935c446035192f07f75a1a0576"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-2.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-2.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "53d90f8ccc93fbb15497d21b639ef96df0e7d97aee716f0881aa9d019de54491",
+      "outputSha256": "25607295fd3dc28031efabef5cd319971a022d80d7a7c5d8cd311f0c645c0a1e"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-3.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-3.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5a90aa2455115bc121be4fb5a038fafa31400b0146ea35bf64d212de0ccb0ac0",
+      "outputSha256": "b9a2a645bd39eaecb3d0a4b6efbf0f734768a40c2152126b63c3619547d89530"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-4.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-4.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7dbf9e90a2a863ef8aae0d6d4f7d2363712d1f7acb131be1baf516375c496a8e",
+      "outputSha256": "392e03f1d2a3e3e93db5f558ea416140171f0207fa68c1a32cb038cdc88c1e70"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-5.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-5.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "454ae81bd01fb5b0fa93ad0b2c79ceb9f21c7d9fe5e1f6e840b031f4dc79459b",
+      "outputSha256": "44d12db3eac9dcd878029b580e354d13ef3d0f0bbdcb0d0c35b9de225dcafbec"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-6.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-6.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "97daf8a725a1304046790f4378fa35569b6350621ab6b80224a6a2af4864465c",
+      "outputSha256": "cc053711002e9d9efdf92b6b544c590ab3811dd92c6f945ae6fe57bc5e537769"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-7.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-7.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6df8695336115c467f2d4fb612671a3169b707f27b1895d97e9c648ff18c5e8d",
+      "outputSha256": "58a383a200c90fb3a2dc53c68b2587a5dd9185f9702f64ea429280964194ac9e"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-8.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-8.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b39720290d9608bd63dcba9e71cc3831652ddbd2e2a18df22b0e0699e81db8ef",
+      "outputSha256": "f9ba68591ffe939f7e2f4e4608af3dcd7391b0e15df5d6e339b3de1e938cdf6f"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-9.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-9.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ae1b98681c6345c1d64a7ff81b5f3dc76527fddd559c8be08e7ea5ec6bfeeeec",
+      "outputSha256": "215de6420c1e64814b7b429e6c317b5b432178820090a9084604561d9aa1ff8d"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device-video.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c4830344563d2852c32fe0a3566969963df4790933ee148db32907e3625ec34e",
+      "outputSha256": "fdf214bfe6385ea6994d4891fddaea2d3a963c4fa256e6762fcf88422da7d83e"
+    },
+    {
+      "source": "public/images/products/306-d-panic-exit-device.webp",
+      "output": "public/images/products-hyde/306-d-panic-exit-device.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0f045f1a1c5ae049eb5d2ac4fc319d56e34696a5911789f1d5deb7e9e70ba4fc",
+      "outputSha256": "ab80e441fce1920f62602ae4678870fbc2e18ee09cc05ece4866c7949f69ea30"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-2.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-2.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "90e03a158589ae2091b71b4a27f360d24f47093c1b71cee8f74e0380b6c737ff",
+      "outputSha256": "e2a6263928998a00e6731cf0a5fa0912586282ead68e54be0ccfc501eaace24c"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-3.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-3.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3ce6c6f8ca9489ebe7f7a81acc205044846924e0ef768f61de621684452aba24",
+      "outputSha256": "91cf5df059296344d232413d762dc52a3b0352e67f139c77ccb3672ed09a8457"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-4.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-4.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e5bba649d16ffe689eff1284dac535a94ece7f3b9dd52e8c2d534190cc6b2ac9",
+      "outputSha256": "e2ab02125ff5ac3fb87e9cd4abc34282bfca7a7a216ba4a601bb5f63d27d4a9a"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-5.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-5.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "43cce2075ad3bada4085eeb634b7c146e0b925081570be864c236558ba29e3a1",
+      "outputSha256": "43e7e7034b796faad55da9a6895558d617af4a7972e1c8e0c2f23e5e98a54cf2"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-6.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-6.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "white"
+      },
+      "sourceSha256": "5c50208dbabbd2b3a4fd6661f6f8a604a6687d3542af45c004c8a9908b2537fa",
+      "outputSha256": "c7f79f97bcb7135460e3cf1ac39cdc8003246d4b7ced8284356084098b8e146c"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-7.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-7.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2fb6d6fcaaefca738efc14a4f10e7d2ee521fc086133f2d5798d3e841d95e1ff",
+      "outputSha256": "e80b245ad543372db32e232d1eccfc3adecea98b3a4e816bee47853edfda55d5"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-8.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-8.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7aa8bc4c9cb3f0e4c0b5c05b9d73f9a80257683a37786e95298f9cf8f17a6756",
+      "outputSha256": "d32244c7db5999a2410322d1c1f78e5395276ae996ff14530a33fc658b6f814b"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-9.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-9.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e9b82d7a2dca5986e604a4c0aae1b470ed09cb81cd4d6c25dc8d50290fc0ef72",
+      "outputSha256": "8b19ebcc3ce8ece0a1673ba9b26aa4e1b7b7af3e4544d49eb2ee18ab187fc1e7"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device-video.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1996cb090dd0a0c3056ec843203f443e5a7ec72a03bbe66390de4cf9d095a51f",
+      "outputSha256": "f07881c149e35d7b3ba56bc1b5fec914c581de4e1c532eae68046f0dc6c7183f"
+    },
+    {
+      "source": "public/images/products/306-ps-panic-exit-device.webp",
+      "output": "public/images/products-hyde/306-ps-panic-exit-device.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6c91235368153c2b8ebecc71dc5f37195bba543a1f7c176370a967a8a9be31dc",
+      "outputSha256": "f0da3a3c2c04db2f6b309849d22ca4b528ca729359e78dc2e3ba3f8f5661b8d8"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-2.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-2.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6404454dd285218a4758f56a5ca0dcd7177327a668919f98186e002e07c3e619",
+      "outputSha256": "1ce38a153aac7f12eb7b21c235698d644c92a47d1102fc820542a76de07ee05b"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-3.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-3.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "59a46d484d9c92c73d7f003f531a3560f15c6de7eeaa75fac187a921ee1154a6",
+      "outputSha256": "69839fc48738ac23e09aa67df6fb1e3639725dbe14c5781b7e536af1d08089e7"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-4.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-4.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a2b844e888ca76e1156d0323e7d4c90568d3a54118c0f3d57b4527ab4291eee4",
+      "outputSha256": "ee8ce003a66e927db41928288a1f5ca2630d8e2d6576c7724122158139bfbc07"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-5.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-5.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "47147641c88b218a628c4f1a0deca2c21793b5123185432ce46f2a50874a7a95",
+      "outputSha256": "1ee7690e74180e40ea70d62510ec1d4ce838b2064d7bac33c3a48f466d1540e6"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-6.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-6.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "08d5b312b10ad8d18254146a519a6bfcfd2b499f216ef37adefb088ab06aee7d",
+      "outputSha256": "7006ddebcfde727eddee47bd6cb5e57d57471b0b6f35bc53c2074ebbd574aa0b"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-7.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-7.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2c5509666c1d23e2af74cdd40c0eb6757447435689ae9f84056810dc18afb2c4",
+      "outputSha256": "527d7fb8047cbc40f336842103a4914e603f995bda72d4743988cde9b5f8371c"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device-video.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3b38296d3a5f7c38360a1acc18615c031230d8a7a44050ab1a5e0caa9e35425c",
+      "outputSha256": "f78133a35b3713e229946c4f68035665237eaff61580b8d6bb903fd27e9c75cc"
+    },
+    {
+      "source": "public/images/products/306-s-panic-exit-device.webp",
+      "output": "public/images/products-hyde/306-s-panic-exit-device.webp",
+      "width": 800,
+      "height": 800,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "92178df5fa003a2b6c6bc7de48e96c1b27f2d73039d6d0485ace8d8c5d342d23",
+      "outputSha256": "94e93227e40baefb173f92f491d1031ddff995052061eb23f403845fec1ab191"
     },
     {
       "source": "public/images/products/307-panic-exit-device-10.webp",

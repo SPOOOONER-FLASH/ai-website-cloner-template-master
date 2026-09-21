@@ -232,11 +232,19 @@ export function SiteFooter() {
                   loses the buyer who wants to write from their own mailbox — and gives an
                   answer engine nothing to quote. Renders only once an address is set in
                   content/site-settings.json.
+
+                  TECHNICAL, NOT SALES. Client instruction, 2026-09-21: he reads tec@
+                  himself, so it is the address that should be reachable from every page.
+                  It sits under a "How to buy" heading, which reads as a mismatch until you
+                  look at what actually arrives: the 2026-09-20 Clarity reading has all 33
+                  of our AI citations landing on articles answering a technical question,
+                  and none on a price page. The reader who scrolls this far is holding a
+                  drawing. The client was told the heading looked wrong and chose this.
                 */}
-                {siteSettings.contact.email ? (
+                {siteSettings.contact.technicalEmail ? (
                   <li>
                     <EmailLink
-                      address={siteSettings.contact.email}
+                      address={siteSettings.contact.technicalEmail}
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     />
                   </li>

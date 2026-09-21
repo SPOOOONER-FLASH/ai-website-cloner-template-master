@@ -1,0 +1,106 @@
+{
+  "model": "306 PS",
+  "slug": "306-ps-panic-exit-device",
+  "name": "Passage Push Bar",
+  "nameZh": "通道推杠",
+  "series": "Hyland 300",
+  "categoryPath": [
+    "panic-exit-devices"
+  ],
+  "sites": [
+    "hyde"
+  ],
+  "summary": "A passage push bar with no latch bolt of its own — it is fitted with a separate lock case, which carries the latching. Not a self-latching exit device.",
+  "specs": [
+    {
+      "label": "Function",
+      "value": "Passage — no latch bolt"
+    },
+    {
+      "label": "Fitted with",
+      "value": "A separate lock case, supplied to suit"
+    }
+  ],
+  "specSources": {
+    "client": {
+      "basis": "client-relayed-from-factory",
+      "quote": "区分,S代表单开门,D代表双开门,PS是通道,无锁舌,要搭配锁体（甲方转述工厂，2026-09-21）",
+      "fields": [
+        "Function",
+        "Fitted with"
+      ],
+      "receivedAt": "2026-09-21"
+    }
+  },
+  "material": null,
+  "finishes": [],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/306-ps-panic-exit-device.webp",
+    "ratio": "1 / 1",
+    "label": "Hyland 306 PS Passage Push Bar"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/306-ps-panic-exit-device-2.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 2"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-3.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 3"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-4.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 4"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-5.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 5"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-6.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 6"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-7.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 7"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-8.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 8"
+    },
+    {
+      "src": "/images/products/306-ps-panic-exit-device-9.webp",
+      "ratio": "1 / 1",
+      "label": "Hyland 306 PS Passage Push Bar, view 9"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/videos/products/306-ps-panic-exit-device.mp4",
+      "poster": {
+        "src": "/images/products/306-ps-panic-exit-device-video.webp",
+        "ratio": "16 / 9",
+        "label": "306 PS Passage Push Bar, demonstration still"
+      },
+      "label": "306 PS Passage Push Bar — product demonstration",
+      "durationSeconds": 34,
+      "uploadDate": "2026-09-21"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [
+    "306-S",
+    "306-D"
+  ],
+  "seoTitle": "306 PS Passage Push Bar | Canton Hyland",
+  "seoDescription": "Canton Hyland 306 PS passage push bar. A passage push bar with no latch bolt of its own — it is fitted with a separate lock case, which carries the latching. Not a self-latching exit device."
+}
