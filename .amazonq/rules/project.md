@@ -213,6 +213,50 @@ of all optional undocumented features. Verify orthographic geometry before beaut
   warning line as its subject and the whole explanation missing. It was already pushed,
   and rewriting a pushed commit to fix a message is not worth interrupting another agent,
   so the message stayed wrong. Write the file, check it exists, then commit.
+- **A command that returned 0 did not necessarily do the thing you asked it to.** Three
+  separate false greens landed in one session on 2026-09-20, and each one would have been
+  reported to the client as a success:
+
+  | What was read | What had actually happened |
+  |---|---|
+  | The harness reported a background build as `exit code 0` | That was the outer shell's code. `npm run deploy:prep` had exited **1** — the build failed. |
+  | `git push ... \| tail -3` printed `PUSH_EXIT=0` | That was `tail`'s code. git had died with `send-pack: unexpected disconnect` and nothing was pushed. |
+  | `git rev-list --count HEAD..origin/main` printed `0`, meaning "up to date" | The `git fetch` before it had hit the Bash tool's 120s timeout and been moved to the background **without finishing**, so `origin/main` was a week stale. The branch was 168 commits behind. |
+
+  So: never let a pipe carry a command's exit status (`cmd > log 2>&1; echo $?`, never
+  `cmd | tail`). Never trust an `origin/*` ref until the fetch that wrote it has visibly
+  completed — **this repository's `.git` is 1.8 GB and a fetch takes over two minutes**, so
+  every git network command needs an explicit long timeout. And when a wrapper reports an
+  exit code, confirm whose it is before repeating it to anyone.
+
+  This is the same discipline as "线上 404 不等于没部署" and "搜索后台的数字是历史，不是
+  现状", applied one level lower: **a successful return tells you the command ran, not that
+  it succeeded at its purpose.**
+
+- **On Windows, three `--check` guards fail on a clean checkout and the failure lies about
+  why.** `.gitattributes` sets `* text=auto`, so checkout writes CRLF; the generators write
+  LF; the `--check` flags compare bytes and report the generated file as stale:
+
+  ```
+  src/components/site/product-images.config.json is stale
+  ❌ the branded-image lists are stale
+  deploy/nginx/legacy-redirects.conf is out of date — the catalogue moved and these 301s did not follow it
+  ```
+
+  That last message sends you looking for a taxonomy change that never happened. Nothing is
+  stale. Run each generator once and the file becomes LF on disk, which is what the index
+  already held, so `git diff` comes back **empty**:
+
+  ```bash
+  node scripts/build-product-image-config.mjs
+  node scripts/build-branded-editorial-list.mjs --write
+  node scripts/build-legacy-redirects.mjs
+  ```
+
+  Expect this after any fresh clone or large merge on Windows. It is the same root cause as
+  the mixed LF/CRLF note in the handoff, but it presents as **a build guard telling you a
+  falsehood about your content**, which is far harder to recognise than a string anchor that
+  will not match.
 - Include one short update under `docs/collaboration/agent-updates/` in the same commit.
   Record agent, scope, tests, untouched work, risks, and the next useful assist/review.
 - **Push as soon as a commit is green. Do not sit on work.** The server pulls every five
