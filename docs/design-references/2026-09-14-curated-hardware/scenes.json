@@ -1,0 +1,565 @@
+[
+  {
+    "id": "curated-selection-stone",
+    "style": "stone",
+    "photos": [
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+        "original": "/images/products/9004s-stainless-steel-handle.webp",
+        "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+        "crop": [
+          100,
+          190,
+          890,
+          720
+        ],
+        "position": [
+          -0.98,
+          0.08
+        ],
+        "width": 1.08
+      },
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-5.webp",
+        "original": "/images/products/lc04-85-60-lock-case-5.webp",
+        "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+        "crop": [
+          220,
+          40,
+          480,
+          900
+        ],
+        "position": [
+          0.04,
+          0
+        ],
+        "width": 0.78
+      },
+      {
+        "model": "70SN",
+        "slug": "70sn-lock-cylinder",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\70sn-lock-cylinder.webp",
+        "original": "/images/products/70sn-lock-cylinder.webp",
+        "sha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac",
+        "crop": [
+          0,
+          120,
+          800,
+          650
+        ],
+        "position": [
+          1.08,
+          0.02
+        ],
+        "width": 1
+      }
+    ],
+    "heading": "HYDE / MATERIAL SELECTION",
+    "note": "LC04 / 70SN / 9004S - individual selections, compatibility to confirm",
+    "itemId": "00",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-selection-box",
+    "style": "box",
+    "photos": [
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+        "original": "/images/products/9004s-stainless-steel-handle.webp",
+        "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+        "crop": [
+          100,
+          190,
+          890,
+          720
+        ],
+        "position": [
+          -0.98,
+          0.08
+        ],
+        "width": 1.08
+      },
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-5.webp",
+        "original": "/images/products/lc04-85-60-lock-case-5.webp",
+        "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+        "crop": [
+          220,
+          40,
+          480,
+          900
+        ],
+        "position": [
+          0.04,
+          0
+        ],
+        "width": 0.78
+      },
+      {
+        "model": "70SN",
+        "slug": "70sn-lock-cylinder",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\70sn-lock-cylinder.webp",
+        "original": "/images/products/70sn-lock-cylinder.webp",
+        "sha256": "c48f4b1df9362aaa7bd416a3d65ea17c4a8b9f9194d7839f4b97156e1950bfac",
+        "crop": [
+          0,
+          120,
+          800,
+          650
+        ],
+        "position": [
+          1.08,
+          0.02
+        ],
+        "width": 1
+      }
+    ],
+    "heading": "HYDE / SAMPLE STUDY",
+    "note": "Photographic sample layout - not an installation or supplied kit",
+    "itemId": "00",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-311-construction",
+    "style": "technical",
+    "photos": [
+      {
+        "model": "311",
+        "slug": "311-panic-exit-device",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\311-panic-exit-device-3.webp",
+        "original": "/images/products/311-panic-exit-device-3.webp",
+        "sha256": "4e8a0fc9687a0c53b472fe401384708b8f85ae9f1d31b5c12e5cdd4ea12aa8b6",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "311",
+        "slug": "311-panic-exit-device",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\311-panic-exit-device-4.webp",
+        "original": "/images/products/311-panic-exit-device-4.webp",
+        "sha256": "015bcdaf4e8c3262274c8261505d28fa2af27d084ca9c95e8cf7a44150d33edf",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "311 / CONSTRUCTION",
+    "note": "Original catalogue views - outside trim selected separately",
+    "itemId": "02",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-305-components",
+    "style": "oak",
+    "photos": [
+      {
+        "model": "305",
+        "slug": "305-fire-door-panic-exit-device",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\305-fire-door-panic-exit-device-3.webp",
+        "original": "/images/products/305-fire-door-panic-exit-device-3.webp",
+        "sha256": "4b6e110aaa5196366c99804bc1c90d767ece2fb34d05529e4d821f59654743c3",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "305",
+        "slug": "305-fire-door-panic-exit-device",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\305-fire-door-panic-exit-device-4.webp",
+        "original": "/images/products/305-fire-door-panic-exit-device-4.webp",
+        "sha256": "b1d2c4e72bb717271202eadc1891d3302a982b3f821e193ec70c311612156346",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "305 / COMPONENTS",
+    "note": "The parts and views shown in the original 305 catalogue",
+    "itemId": "05",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-lc14-details",
+    "style": "white",
+    "photos": [
+      {
+        "model": "Lc14 85×50mm",
+        "slug": "lc14-85-50mm-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc14-85-50mm-lock-case-3.webp",
+        "original": "/images/products/lc14-85-50mm-lock-case-3.webp",
+        "sha256": "1f77d102de8b6a541ff93e7d96e515b286bac02ab8484e93e32d649ff1d1ce01",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "Lc14 85×50mm",
+        "slug": "lc14-85-50mm-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc14-85-50mm-lock-case-4.webp",
+        "original": "/images/products/lc14-85-50mm-lock-case-4.webp",
+        "sha256": "2af11f9218150e5048d51ae94a2f7cf242c234c156bc127d3aa6fa2144f0b9b6",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "LC14 / DETAIL STUDY",
+    "note": "Original catalogue views - no unverified cylinder or lever added",
+    "itemId": "03",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-607-test-model",
+    "style": "stone",
+    "photos": [
+      {
+        "model": "607 SSET",
+        "slug": "607-sset-tubular-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\607-sset-tubular-lock.webp",
+        "original": "/images/products/607-sset-tubular-lock.webp",
+        "sha256": "42714dc16a7c3ba383e1629ca4871e445aa1218e8fbdc2f86b5de13e56e11ba2",
+        "position": [
+          0,
+          0
+        ],
+        "width": 1.92
+      }
+    ],
+    "heading": "607 SS ET / MODEL REFERENCE",
+    "note": "Exact model identification comes before report scope",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-9004-mechanism",
+    "style": "box",
+    "photos": [
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle-3.webp",
+        "original": "/images/products/9004s-stainless-steel-handle-3.webp",
+        "sha256": "cd3fad97f36fb833bc6745d4db40e57c530fe159993bbbfb110535e428f19408",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle-4.webp",
+        "original": "/images/products/9004s-stainless-steel-handle-4.webp",
+        "sha256": "a7d62f472757a0d051476a8f4a23d0478e861480c147a8740404f5dcbb8032a8",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "9004S / COMPONENT DETAIL",
+    "note": "Original reverse view and supplied component photograph",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-lc04-dimensions",
+    "style": "technical",
+    "photos": [
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case.webp",
+        "original": "/images/products/lc04-85-60-lock-case.webp",
+        "sha256": "6b1b197ea784702c92a11e04ad8208f714764a6eb9090038fc4f0383396da1e1",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-3.webp",
+        "original": "/images/products/lc04-85-60-lock-case-3.webp",
+        "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "LC04 85 / 60 / PUBLISHED GEOMETRY",
+    "note": "Factory source photograph and drawing - consult the model specification",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-lc04-reverse",
+    "style": "stone",
+    "photos": [
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-4.webp",
+        "original": "/images/products/lc04-85-60-lock-case-4.webp",
+        "sha256": "2aefe27b055d976839e6ce18ee5ad5147796cc2c4eb146e45527520a793184c1",
+        "position": [
+          0,
+          0
+        ],
+        "width": 1.92
+      }
+    ],
+    "heading": "LC04 / REVERSE VIEW",
+    "note": "Original catalogue view - confirm handing for the order",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-sn-dimensions",
+    "style": "technical",
+    "photos": [
+      {
+        "model": "70SN",
+        "slug": "70sn-lock-cylinder",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\70sn-lock-cylinder-2.webp",
+        "original": "/images/products/70sn-lock-cylinder-2.webp",
+        "sha256": "69f4b3ee1349f482ee2f81ec52de37664fd45dc4138efa2166efe465ad21b9c7",
+        "position": [
+          0,
+          0
+        ],
+        "width": 1.92
+      }
+    ],
+    "heading": "70SN / DIMENSION REFERENCE",
+    "note": "Original annotated catalogue photograph",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-finish-models",
+    "style": "white",
+    "photos": [
+      {
+        "model": "587 PBET",
+        "slug": "587-pbet-light-duty-cylindrical-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-pbet-light-duty-cylindrical-lock.webp",
+        "original": "/images/products/587-pbet-light-duty-cylindrical-lock.webp",
+        "sha256": "771516e9be4539fc248c053152e5cf2b583b7fd41d0ef9bd8a46d2d236d571cf",
+        "position": [
+          -1.12,
+          0
+        ],
+        "width": 0.9
+      },
+      {
+        "model": "587 MBET",
+        "slug": "587-mbet-light-duty-cylindrical-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-mbet-light-duty-cylindrical-lock.webp",
+        "original": "/images/products/587-mbet-light-duty-cylindrical-lock.webp",
+        "sha256": "3a35132a08603eb693447df53e5f5769a1f553a8f06610342b20fb6c604bb3d2",
+        "position": [
+          0,
+          0
+        ],
+        "width": 0.9
+      },
+      {
+        "model": "587 SSET",
+        "slug": "587-sset-light-duty-cylindrical-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\587-sset-light-duty-cylindrical-lock.webp",
+        "original": "/images/products/587-sset-light-duty-cylindrical-lock.webp",
+        "sha256": "c908517b0cc796da04ceac8af9ecfebae3dac1761569f7b47d429436bda5cd22",
+        "position": [
+          1.12,
+          0
+        ],
+        "width": 0.9
+      }
+    ],
+    "heading": "587 / DISTINCT FINISH REFERENCES",
+    "note": "Separate catalogue models - not a mixed-finish set",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-lock-comparison",
+    "style": "white",
+    "photos": [
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-5.webp",
+        "original": "/images/products/lc04-85-60-lock-case-5.webp",
+        "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "LC04 85*70",
+        "slug": "lc04-85-70-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-70-lock-case.webp",
+        "original": "/images/products/lc04-85-70-lock-case.webp",
+        "sha256": "cce661c61e5bfe6263fd1bb8cfa8f6379eeec10cf24278b682b0949da9b8e87c",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "LC04 / MODEL IDENTIFICATION",
+    "note": "Separate catalogue references - compare the published backset",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-catalogue-range",
+    "style": "oak",
+    "photos": [
+      {
+        "model": "311",
+        "slug": "311-panic-exit-device",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\311-panic-exit-device.webp",
+        "original": "/images/products/311-panic-exit-device.webp",
+        "sha256": "5b8114f002ade1f3b97367aa2a8dce6efc19a92acd59c94e3ae52bbf9b6ba34a",
+        "position": [
+          -1.12,
+          0
+        ],
+        "width": 0.9
+      },
+      {
+        "model": "607 SSET",
+        "slug": "607-sset-tubular-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\607-sset-tubular-lock.webp",
+        "original": "/images/products/607-sset-tubular-lock.webp",
+        "sha256": "42714dc16a7c3ba383e1629ca4871e445aa1218e8fbdc2f86b5de13e56e11ba2",
+        "position": [
+          0,
+          0
+        ],
+        "width": 0.9
+      },
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+        "original": "/images/products/9004s-stainless-steel-handle.webp",
+        "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+        "position": [
+          1.12,
+          0
+        ],
+        "width": 0.9
+      }
+    ],
+    "heading": "HYDE / FROM THE CATALOGUE",
+    "note": "Original products - different families, individual selections",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-order-dimensions",
+    "style": "technical",
+    "photos": [
+      {
+        "model": "9004S",
+        "slug": "9004s-stainless-steel-handle",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+        "original": "/images/products/9004s-stainless-steel-handle.webp",
+        "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "70SN",
+        "slug": "70sn-lock-cylinder",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\70sn-lock-cylinder-2.webp",
+        "original": "/images/products/70sn-lock-cylinder-2.webp",
+        "sha256": "69f4b3ee1349f482ee2f81ec52de37664fd45dc4138efa2166efe465ad21b9c7",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "PRODUCT / FINISH / DIMENSIONS",
+    "note": "Identify each part before confirming a door configuration",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  },
+  {
+    "id": "curated-document-reference",
+    "style": "white",
+    "photos": [
+      {
+        "model": "607 SSET",
+        "slug": "607-sset-tubular-lock",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\607-sset-tubular-lock-3.webp",
+        "original": "/images/products/607-sset-tubular-lock-3.webp",
+        "sha256": "88b38d7114a6697a989181fd1766683424c6a4565716ba1cbebd562d4e020012",
+        "position": [
+          -0.85,
+          0
+        ],
+        "width": 1.4
+      },
+      {
+        "model": "LC04 85*60",
+        "slug": "lc04-85-60-lock-case",
+        "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-3.webp",
+        "original": "/images/products/lc04-85-60-lock-case-3.webp",
+        "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a",
+        "position": [
+          0.85,
+          0
+        ],
+        "width": 1.4
+      }
+    ],
+    "heading": "FACTORY DRAWING REFERENCES",
+    "note": "Original catalogue drawings - open each product for its dimensions",
+    "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+    "resolution": 1800
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "model": "Lc8535B",
+  "model": "LC8535B",
   "slug": "lc8535b-lock-case",
   "name": "Lock Case",
   "series": "Lock Case",
@@ -47,14 +47,14 @@
   "heroImage": {
     "src": "/images/products/lc8535b-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland Lc8535B Lock Case"
+    "label": "Hyland LC8535B Lock Case"
   },
   "gallery": [],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "Lc8535B Lock Case — Lock Cases | Canton Hyland",
-  "seoDescription": "Canton Hyland Lc8535B lock case. A stainless steel mortise lock case with 85mm centre distance and 35mm backset, for interior wooden and metal doors.",
-  "nameEs": "Cerraduras de embutir",
+  "seoTitle": "LC8535B Lock Case — Lock Cases | Canton Hyland",
+  "seoDescription": "Canton Hyland LC8535B lock case. A stainless steel mortise lock case with 85mm centre distance and 35mm backset, for interior wooden and metal doors.",
+  "nameEs": "Cerradura de embutir",
   "specsEs": [
     {
       "label": "Distancia entre ejes",
@@ -91,8 +91,8 @@
   ],
   "summaryEs": "Una caja de cerradura de embutir de acero inoxidable, distancia entre ejes de 85 mm y entrada de 35 mm, para puertas interiores de madera y metálicas.",
   "summary": "A stainless steel mortise lock case with 85mm centre distance and 35mm backset, for interior wooden and metal doors.",
-  "seoTitleEs": "Lc8535B Cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland Lc8535B cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "seoTitleEs": "LC8535B Cerraduras de embutir | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland LC8535B cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "features": [
     "Functions: Entrance, Anti-Panic, Privacy, Passage, Storeroom, Deadlock, Classroom, Multi-Function",
     "Options: 85 Series, 72 Series, and small-size lock cases available",
@@ -101,8 +101,56 @@
   "featuresSource": {
     "site": "stahlock.com",
     "url": "https://stahlock.com/index.php?id=2065",
-    "model": "Lc8535 B",
+    "model": "LC8535 B",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "namePt": "Caixa de fechadura",
+  "summaryPt": "Caixa de fechadura.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "85 mm"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "35 mm"
+    },
+    {
+      "label": "Material",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Portas internas de madeira e metálicas"
+    },
+    {
+      "label": "Lingueta",
+      "value": "Cobre"
+    },
+    {
+      "label": "Furo do quadrado",
+      "value": "Construção em cobre"
+    },
+    {
+      "label": "Material da contra-testa",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Latão polido (PB), Latão antigo (AB), Cobre antigo (AC), Aço inoxidável (SS), Níquel acetinado (SN) — todos disponíveis"
+    }
+  ],
+  "seoTitlePt": "LC8535B Caixa de fechadura | Canton Hyland",
+  "seoDescriptionPt": "Caixa de fechadura LC8535B da Canton Hyland — caixas de fechadura. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Funções: entrada, antipânico, banheiro, passagem, depósito, trava, sala de aula, multifunção",
+    "Opções: séries 85 e 72, e caixas de fechadura em tamanho reduzido",
+    "Personalização: medidas fora de padrão e dimensões sob medida para OEM e ODM"
+  ],
+  "featuresEs": [
+    "Funciones: entrada, antipánico, privacidad, paso libre, almacén, bloqueo, aula y multifunción",
+    "Opciones: serie 85, serie 72 y cajas de cerradura de tamaño reducido",
+    "Personalización: se admiten medidas irregulares y dimensiones a medida para OEM y ODM"
+  ]
 }

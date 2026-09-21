@@ -1,0 +1,31 @@
+{
+  "id": "curated-document-reference",
+  "sources": [
+    {
+      "model": "607 SSET",
+      "sha256": "88b38d7114a6697a989181fd1766683424c6a4565716ba1cbebd562d4e020012",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    },
+    {
+      "model": "LC04 85*60",
+      "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

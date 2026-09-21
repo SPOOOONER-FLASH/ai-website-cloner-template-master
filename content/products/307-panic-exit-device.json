@@ -31,6 +31,10 @@
     {
       "label": "Application",
       "value": "Fully reversible for left or right-hand doors"
+    },
+    {
+      "label": "Minimum order",
+      "value": "50 pieces"
     }
   ],
   "material": "ABS material with Aluminum push bar",
@@ -93,7 +97,7 @@
   "relatedModels": [],
   "seoTitle": "307 Panic Exit Device — Panic Exit Devices | Canton Hyland",
   "seoDescription": "Canton Hyland 307 panic exit device. ABS material with Aluminum push bar panic exit device, 1000mm. Manufactured in Guangdong, China. Request a quotation.",
-  "nameEs": "Barras antipánico",
+  "nameEs": "Barra antipánico",
   "specsEs": [
     {
       "label": "Material",
@@ -118,6 +122,10 @@
     {
       "label": "Aplicación",
       "value": "Totalmente reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de ABS con barra de empuje de aluminio.",
@@ -152,5 +160,69 @@
     "model": "307",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "307",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Barra antipânico",
+  "summaryPt": "Barra antipânico.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "ABS com barra de empurrar em alumínio"
+    },
+    {
+      "label": "Dimensões",
+      "value": "1000 mm"
+    },
+    {
+      "label": "Maçaneta",
+      "value": "015 ou 9080E."
+    },
+    {
+      "label": "Cilindro",
+      "value": "Comprimento do cilindro conforme a espessura da porta"
+    },
+    {
+      "label": "Resistência ao fogo",
+      "value": "Resistência ao fogo de 2,5 horas"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Totalmente reversível para portas de mão direita ou esquerda"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 peças"
+    }
+  ],
+  "seoTitlePt": "307 Barra antipânico | Canton Hyland",
+  "seoDescriptionPt": "Barra antipânico 307 da Canton Hyland — barras antipânico. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Características da barra:",
+    "1. Trava e destrava pela maçaneta de giro",
+    "2. Comprimento ajustável conforme a largura da porta",
+    "3. Várias opções de cor",
+    "4. Sistema integrado de fechadura e contrafechadura",
+    "• Caixa de fechadura: 072",
+    "• Opções de maçaneta: 015 ou 9080E",
+    "• Cilindro: comprimento sob medida conforme a espessura da porta"
+  ],
+  "featuresEs": [
+    "Características de la barra de empuje:",
+    "1. Bloqueo y desbloqueo mediante manilla giratoria",
+    "2. Longitud regulable para ajustarse al ancho de la puerta",
+    "3. Varias opciones de color",
+    "4. Sistema integrado de cerradura y contracerradura",
+    "• Caja de cerradura: 072",
+    "• Opciones de manilla: 015 o 9080E",
+    "• Cilindro: longitud a medida según el espesor de la puerta"
+  ]
 }

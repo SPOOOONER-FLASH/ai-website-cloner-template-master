@@ -1,0 +1,31 @@
+{
+  "id": "curated-lock-comparison",
+  "sources": [
+    {
+      "model": "LC04 85*60",
+      "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    },
+    {
+      "model": "LC04 85*70",
+      "sha256": "cce661c61e5bfe6263fd1bb8cfa8f6379eeec10cf24278b682b0949da9b8e87c",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

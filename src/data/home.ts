@@ -148,10 +148,10 @@ export const hero3: HeroModuleContent = {
   media: {
     ratio: "3 / 2",
     src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Real catalogue photographs presenting nine door-hardware families",
+    label: "Real catalogue photographs presenting selected door hardware",
   },
   title: "Designed for",
-  body: "Nine hardware families, one coordinated schedule",
+  body: "Selected hardware, one coordinated schedule",
   linkLabel: "Browse the catalogue",
   href: "/products",
 };

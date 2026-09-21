@@ -1,0 +1,29 @@
+{
+  "id": "curated-311-construction",
+  "sources": [
+    {
+      "model": "311",
+      "sha256": "4e8a0fc9687a0c53b472fe401384708b8f85ae9f1d31b5c12e5cdd4ea12aa8b6",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    },
+    {
+      "model": "311",
+      "sha256": "015bcdaf4e8c3262274c8261505d28fa2af27d084ca9c95e8cf7a44150d33edf",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

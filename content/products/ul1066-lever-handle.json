@@ -10,13 +10,37 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel lever handle.",
-  "specs": [],
-  "material": "Stainless Steel",
+  "summary": "Brass lever handle, 130mm lever.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "130mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "Ø22mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "9.5mm"
+    },
+    {
+      "label": "Projection",
+      "value": "69mm"
+    }
+  ],
+  "material": "Brass",
   "finishes": [
     "Satin stainless"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul1066-lever-handle.webp",
@@ -27,7 +51,7 @@
     {
       "src": "/images/products/ul1066-lever-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "UL1066 Lever Handle, view 2"
+      "label": "UL1066 Lever Handle, dimension drawing"
     },
     {
       "src": "/images/products/ul1066-lever-handle-3.webp",
@@ -38,10 +62,81 @@
       "src": "/images/products/ul1066-lever-handle-4.webp",
       "ratio": "1 / 1",
       "label": "UL1066 Lever Handle, view 4"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 5"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 6"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-7.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 7"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-8.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 8"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 9"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 10"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 11"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-12.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 12"
+    },
+    {
+      "src": "/images/products/ul1066-lever-handle-13.webp",
+      "ratio": "1 / 1",
+      "label": "UL1066 Lever Handle, view 13"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL1066 Lever Handle | RAYEN",
-  "seoDescription": "Stainless Steel lever handle."
+  "seoDescription": "Brass lever handle, 130mm lever.",
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em latão.",
+  "specsPt": [
+    {
+      "label": "Comprimento da maçaneta",
+      "value": "130 mm"
+    },
+    {
+      "label": "Secção da maçaneta",
+      "value": "Ø22 mm"
+    },
+    {
+      "label": "Diâmetro da roseta",
+      "value": "Ø50 mm"
+    },
+    {
+      "label": "Espessura da roseta",
+      "value": "9.5 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "69 mm"
+    }
+  ],
+  "seoTitlePt": "UL1066 Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca UL1066 da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

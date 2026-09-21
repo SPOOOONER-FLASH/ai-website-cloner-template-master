@@ -1,5 +1,5 @@
 {
-  "model": "Lc9045",
+  "model": "LC9045",
   "slug": "lc9045-lock-case",
   "name": "Lock Case",
   "series": "Lock Case",
@@ -52,23 +52,23 @@
   "heroImage": {
     "src": "/images/products/lc9045-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland Lc9045 Lock Case"
+    "label": "Hyland LC9045 Lock Case"
   },
   "gallery": [
     {
       "src": "/images/products/lc9045-lock-case-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc9045 Lock Case, view 2"
+      "label": "Hyland LC9045 Lock Case, view 2"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "Lc9045 Lock Case — Lock Cases | Canton Hyland",
-  "seoDescription": "Canton Hyland Lc9045 lock case. An iron mortise lock case in PB/AB/AC/SS/SN, all available with 45mm centre distance and 90mm backset. Made in Guangdong, China.",
-  "nameEs": "Cerraduras de embutir",
+  "seoTitle": "LC9045 Lock Case — Lock Cases | Canton Hyland",
+  "seoDescription": "Canton Hyland LC9045 lock case. An iron mortise lock case in PB/AB/AC/SS/SN, all available with 45mm centre distance and 90mm backset. Made in Guangdong, China.",
+  "nameEs": "Cerradura de embutir",
   "summaryEs": "Una caja de cerradura de embutir de hierro, distancia entre ejes de 45 mm y entrada de 90 mm.",
-  "seoTitleEs": "Lc9045 Cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland Lc9045 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "seoTitleEs": "LC9045 Cerraduras de embutir | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland LC9045 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "specsEs": [
     {
       "label": "Material",
@@ -115,8 +115,60 @@
   "featuresSource": {
     "site": "stahlock.com",
     "url": "https://stahlock.com/index.php?id=2032",
-    "model": "Lc9045",
+    "model": "LC9045",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "namePt": "Caixa de fechadura",
+  "summaryPt": "Caixa de fechadura.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Ferro"
+    },
+    {
+      "label": "Lingueta",
+      "value": "Cobre"
+    },
+    {
+      "label": "Furo do quadrado",
+      "value": "Construção em cobre"
+    },
+    {
+      "label": "Material da contra-testa",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "45 mm"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "90 mm"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Latão polido (PB), Latão antigo (AB), Cobre antigo (AC), Aço inoxidável (SS), Níquel acetinado (SN) — todos disponíveis"
+    },
+    {
+      "label": "Da testa ao centro do cilindro",
+      "value": "90 mm"
+    },
+    {
+      "label": "Do centro do cilindro ao fundo",
+      "value": "45 mm"
+    }
+  ],
+  "seoTitlePt": "LC9045 Caixa de fechadura | Canton Hyland",
+  "seoDescriptionPt": "Caixa de fechadura LC9045 da Canton Hyland — caixas de fechadura. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Funções: entrada, antipânico, banheiro, passagem, depósito, trava, sala de aula, multifunção",
+    "Opções: séries 85 e 72, e caixas de fechadura em tamanho reduzido",
+    "Personalização: medidas fora de padrão e dimensões sob medida para OEM e ODM"
+  ],
+  "featuresEs": [
+    "Funciones: entrada, antipánico, privacidad, paso libre, almacén, bloqueo, aula y multifunción",
+    "Opciones: serie 85, serie 72 y cajas de cerradura de tamaño reducido",
+    "Personalización: se admiten medidas irregulares y dimensiones a medida para OEM y ODM"
+  ]
 }

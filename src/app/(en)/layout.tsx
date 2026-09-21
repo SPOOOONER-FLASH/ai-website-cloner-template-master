@@ -28,9 +28,16 @@ export const metadata: Metadata = {
   applicationName: siteName,
   alternates: {
     canonical: "/",
+    /*
+      All three homepages exist, so all three are named — reciprocally. When the Portuguese
+      tree shipped on 2026-09-16 this block still said en/es, so /pt/ pointed here and here
+      pointed nowhere back; `audit-seo` reports that as `hreflang-not-reciprocal`, and
+      Google's response to a one-way cluster is to ignore the whole thing.
+    */
     languages: {
       en: absoluteUrl("/"),
       es: absoluteUrl("/es/"),
+      pt: absoluteUrl("/pt/"),
       "x-default": absoluteUrl("/"),
     },
   },
@@ -38,7 +45,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName,
     locale: "en",
-    alternateLocale: ["es"],
+    alternateLocale: ["es", "pt_BR"],
     url: absoluteUrl("/"),
     title: defaultTitle.en,
     description: defaultDescription.en,

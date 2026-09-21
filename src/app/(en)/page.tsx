@@ -2,6 +2,8 @@ import { WelcomeIntro } from "@/components/site/WelcomeIntro";
 import { SiteFacts } from "@/components/site/SiteFacts";
 import { siteFacts, siteFactsHeading } from "@/lib/site-facts";
 import { FlagshipTooling } from "@/components/site/FlagshipTooling";
+import { FeatureColumns } from "@/components/site/FeatureColumns";
+import { DemandShowcase } from "@/components/site/DemandShowcase";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
 import { HeroModule } from "@/components/site/HeroModule";
 import { PageTeaserModule } from "@/components/site/PageTeaserModule";
@@ -41,6 +43,21 @@ export default function Home() {
       </div>
 
       <div className="modules">
+        {/*
+          FIRST MODULE AFTER THE FACTS STRIP, by the client's instruction of 2026-09-14:
+          a visitor should meet the recommended shelf before anything else.
+
+          It reads well there for a reason beyond placement. The strip above states what
+          the factory is — record count, categories, year, certification. This answers the
+          question that follows immediately from it: of all that, what are other people
+          actually buying? The order is ninety days of real enquiries from the client's own
+          Alibaba back office rather than a shortlist we drew up, and the two disagree —
+          307 had the fewest impressions on that sheet and the most enquiries. See
+          src/data/demand-showcase.ts for why the counts themselves stay off the page.
+        */}
+        <DemandShowcase />
+        <Spacer heights={content.spacers.s96} />
+
         <ArgentinaAr4Showcase />
         <Spacer heights={content.spacers.s96} />
         {/*
@@ -49,6 +66,20 @@ export default function Home() {
           giving a reason to care about it.
         */}
         <FlagshipTooling />
+
+        {/*
+          Directly under the flagship pair, because the two answer different questions and
+          the second only lands once the first has been asked. 307 and 311 say what we
+          tooled; the columns say what we can explain — and a specifier arrives holding a
+          problem ("a pair of fire doors", "forty doors and three grades of key holder")
+          rather than a model number.
+
+          This is also where the demand data points. Explanatory articles are what get
+          cited — the model-number explainer seven times against three for every category
+          page combined — and the master key system was the highest-exposure line on the
+          client's own Alibaba storefront while this site said nothing about it.
+        */}
+        <FeatureColumns />
 
         <HeroModule content={content.hero2} homeEditorial />
         <Spacer heights={content.spacers.s384} />

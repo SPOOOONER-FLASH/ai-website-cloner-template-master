@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { certificates } from "@/data/company";
 import { downloads, formatDownloadSize, getDownloadsByKind } from "@/data/downloads";
 import type { DownloadKind } from "@/data/types";
+import { ModelLibrary } from "@/components/site/ProductModel";
 
 export const metadata: Metadata = pageMetadata({
   enPath: "/downloads",
@@ -19,6 +20,18 @@ const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> 
     kind: "catalogue",
     title: "Product catalogue",
     note: "The current English product catalogue supplied by Canton Hyland.",
+  },
+  /*
+    A planning sheet is not a document to read, it is a form to send back, so it gets its
+    own group rather than sitting among the catalogues. The master key article ends by
+    asking for a door schedule; this is that request made fillable, with a worked example
+    on the third tab — see docs/research/2026-09-13-miwa-lock-structure.md for where the
+    shape came from.
+  */
+  {
+    kind: "planning",
+    title: "Planning sheets",
+    note: "Fill these in and send them back. Each carries a worked example — copy its pattern rather than inventing a format.",
   },
 ];
 
@@ -46,6 +59,7 @@ export default function ServiceDownloadsPage() {
 
       <div className="layout mt-144 lg:mt-192">
         <div className="col-content space-y-144">
+          <ModelLibrary locale="en" />
           {visibleGroups.map((group) => {
             const files = getDownloadsByKind(group.kind);
             return (

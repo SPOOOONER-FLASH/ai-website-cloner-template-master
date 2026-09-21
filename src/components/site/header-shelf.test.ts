@@ -76,11 +76,19 @@ test("footer exposes only the four direct buying destinations", () => {
   assert.deepEqual(
     navigation.footer,
     [
-      { label: "Contact", labelEs: "Contacto", href: "/contact" },
-      { label: "FAQ", labelEs: "Preguntas frecuentes", href: "/faq" },
+      { label: "Contact", labelEs: "Contacto", labelPt: "Contato", href: "/contact" },
+      { label: "FAQ", labelEs: "Preguntas frecuentes", labelPt: "Perguntas frequentes", href: "/faq" },
     ],
   );
-  assert.match(footer, /siteSettings\.alibaba\.label/);
+  /*
+    The storefront link is asserted by its DESTINATION, not by the settings field that used
+    to supply its text. That field held one English label, "Buy on Alibaba", and the footer
+    printed it on the Spanish and Portuguese pages too — `npm run audit:es:pages` caught it
+    on 2026-09-17. The label is now localised in the component; the link is still the point.
+  */
+  assert.match(footer, /siteSettings\.alibaba\.storefront/);
+  assert.match(footer, /Comprar en Alibaba/);
+  assert.match(footer, /Comprar no Alibaba/);
   /*
     The footer still publishes the address. It renders through <EmailLink> rather than a
     bare anchor since 2026-09-04 — the component wraps the link in Cloudflare's

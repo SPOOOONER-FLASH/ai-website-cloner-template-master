@@ -73,11 +73,11 @@
   "relatedModels": [],
   "seoTitle": "028 Panic Exit Device — Zinc Alloy+Brass | Canton Hyland",
   "seoDescription": "Canton Hyland 028 panic exit device in Zinc Alloy+Brass. External lever handle for panic device. Key-operated locking/unlocking. Available in Multiple Finish finish.",
-  "nameEs": "Barras antipánico",
+  "nameEs": "Guarnición exterior para barra antipánico",
   "specsEs": [
     {
       "label": "Tipo",
-      "value": "Trim handle · outside lever for panic exit devices"
+      "value": "Manilla exterior · para barras antipánico"
     },
     {
       "label": "Material",
@@ -117,7 +117,8 @@
     "External lever handle for panic device",
     "Key-operated locking/unlocking",
     "Adjustable spindle length based on door thickness",
-    "Multiple color options"
+    "Multiple color options",
+    "Standards: ANSI Grade 2"
   ],
   "featuresSource": {
     "site": "stahlock.com",
@@ -125,5 +126,55 @@
     "model": "028",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingId": "1601770729465",
+      "basis": "client-published",
+      "fields": [
+        "Standards"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Maçaneta externa para barra antipânico",
+  "summaryPt": "Maçaneta externa para barra antipânico.",
+  "specsPt": [
+    {
+      "label": "Tipo",
+      "value": "Maçaneta externa · para barras antipânico"
+    },
+    {
+      "label": "Material",
+      "value": "zamak + latão"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Porta corta-fogo"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Vários acabamentos"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35–55 mm"
+    }
+  ],
+  "seoTitlePt": "028 Maçaneta externa para barra antipânico | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta externa para barra antipânico 028 da Canton Hyland — barras antipânico. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Maçaneta externa para dispositivo antipânico",
+    "Travamento e destravamento por chave",
+    "Comprimento do quadrado ajustável conforme a espessura da porta",
+    "Várias opções de cor",
+    "Normas: ANSI Grade 2"
+  ],
+  "featuresEs": [
+    "Manilla exterior para dispositivo antipánico",
+    "Bloqueo y desbloqueo con llave",
+    "Longitud del cuadradillo regulable según el espesor de la puerta",
+    "Varias opciones de color",
+    "Normas: ANSI grado 2"
+  ]
 }

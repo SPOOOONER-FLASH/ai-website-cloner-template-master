@@ -22,7 +22,7 @@
       "value": "P=520mm"
     },
     {
-      "label": "Rose depth",
+      "label": "Projection",
       "value": "61.5mm"
     },
     {
@@ -56,7 +56,9 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g777-glass-door-handle.webp",
@@ -64,6 +66,11 @@
     "label": "G777 Glass Door Handle"
   },
   "gallery": [
+    {
+      "src": "/images/products/g777-glass-door-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "G777 Glass Door Handle, dimension drawing"
+    },
     {
       "src": "/images/products/g777-glass-door-handle-2.webp",
       "ratio": "1 / 1",
@@ -83,11 +90,6 @@
       "src": "/images/products/g777-glass-door-handle-5.webp",
       "ratio": "1 / 1",
       "label": "G777 Glass Door Handle, view 5"
-    },
-    {
-      "src": "/images/products/g777-glass-door-handle-6.webp",
-      "ratio": "1 / 1",
-      "label": "G777 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g777-glass-door-handle-7.webp",
@@ -138,7 +140,50 @@
     "artunion": {
       "id": "G777-01-117",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimento total",
+      "value": "600 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "P=520 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "61.5 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "25 mm"
+    },
+    {
+      "label": "Diâmetro da haste",
+      "value": "18 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1.5 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G777 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G777 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

@@ -17,6 +17,8 @@ import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 
 const DIR = "content/products";
 const write = process.argv.includes("--write");
+/** Write only nameEs, leaving specsEs and summaryEs alone. See the block at the write. */
+const namesOnly = process.argv.includes("--names-only");
 
 /** The glossary is TypeScript; read it as text and lift the object literals out. */
 function loadGlossary() {
@@ -43,6 +45,7 @@ function loadGlossary() {
     labels: grab("SPEC_LABELS_ES"),
     values: grab("SPEC_VALUES_ES"),
     categories: grab("CATEGORY_NAMES_ES"),
+    productNames: grab("PRODUCT_NAMES_ES"),
   };
 }
 
@@ -356,11 +359,66 @@ for (const file of readdirSync(DIR)) {
   });
 
   const summary = summaryEs(product);
-  if (!specsEs.length && !summary) continue;
+  /*
+    A record with no specs and no summary still has a NAME, and the name is the one field
+    that is always wrong when it is wrong. This early exit kept about twenty products —
+    ten latches, the door viewers, the flush bolts, six glass door handles — sitting on
+    "Accesorios de herrajes" after the rest of the catalogue had been corrected, because
+    having nothing to translate was read as having nothing to fix.
+  */
+  if (!specsEs.length && !summary && !namesOnly) continue;
 
-  product.nameEs = glossary.categories[product.categoryPath[0]] ?? product.name;
-  if (specsEs.length) product.specsEs = specsEs;
-  if (summary) product.summaryEs = summary;
+  /*
+    THE PRODUCT NAME, NOT THE CATEGORY NAME.
+
+    This line used to read `glossary.categories[product.categoryPath[0]] ?? product.name`
+    — a stand-in from before any Spanish product names existed. It shipped, and 582
+    records ended up carrying a category name in the product-name field, so the Spanish
+    mirror rendered "001 Barras antipánico" against the English "001 Panic Exit Device
+    Trim", and "DC02 Accesorios de herrajes" for a door coordinator. It reached <title>
+    as well, collapsing 534 Spanish titles into about 38 distinct strings.
+
+    An unmapped name now stops the run. The previous fallback was silent and produced a
+    plausible-looking Spanish page, which is why nobody caught it for weeks: nothing was
+    empty, nothing 404'd, every page just quietly claimed to be its own category. A new
+    product name is a one-row addition to PRODUCT_NAMES_ES; a wrong product name on 534
+    pages is not worth the convenience of never having to make it.
+  */
+  const nameEs = glossary.productNames[product.name];
+  if (!nameEs) {
+    throw new Error(
+      `No Spanish product name for "${product.name}" (${product.model}). ` +
+        `Add a row to PRODUCT_NAMES_ES in src/data/es-glossary.ts — do not fall back to the category.`,
+    );
+  }
+  product.nameEs = nameEs;
+
+  /*
+    --names-only: WRITE nameEs AND NOTHING ELSE.
+
+    A full re-run is no longer safe on this catalogue, and that is worth stating plainly
+    rather than discovering twice. On 2026-09-11 the name fix above was applied by
+    re-running the whole script; the diff came back with 830 changed spec rows, and a
+    sample read like this:
+
+        - "label": "Doble distancia entre ejes"
+        - "value": "72 y 92 mm (con perforación para cilindro)"
+        + "label": "Centre distances"
+        + "value": "72mm and 92mm (cylinder hole)"
+
+    Spanish spec rows REVERTING TO ENGLISH. Those labels are not in SPEC_LABELS_ES — they
+    were translated later, by hand or in review — and the regeneration falls back to the
+    English row, silently discarding the better text. Shipping the product-name fix that
+    way would have traded one Spanish defect for a larger one.
+
+    So a targeted change gets a targeted write. Re-running everything is still available,
+    and is still the right thing after the glossary catches up with what review has
+    already produced — but that is its own task, with its own diff to read.
+  */
+  if (!namesOnly) {
+    if (specsEs.length) product.specsEs = specsEs;
+    if (summary) product.summaryEs = summary;
+  }
   translated += 1;
 
   if (write) writeFileSync(path, `${JSON.stringify(product, null, 2)}\n`);

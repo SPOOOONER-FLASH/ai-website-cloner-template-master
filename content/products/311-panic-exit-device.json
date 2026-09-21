@@ -23,6 +23,10 @@
     {
       "label": "Centre distances",
       "value": "72mm and 92mm (cylinder hole)"
+    },
+    {
+      "label": "Minimum order",
+      "value": "50 pieces"
     }
   ],
   "material": "ABS plastic material with Aluminum",
@@ -85,7 +89,7 @@
   "relatedModels": [],
   "seoTitle": "311 Panic Exit Device — Panic Exit Devices | Canton Hyland",
   "seoDescription": "Canton Hyland 311 panic exit device. ABS plastic material with Aluminum panic exit device. Manufactured in Guangdong, China and exported to over thirty markets.",
-  "nameEs": "Barras antipánico",
+  "nameEs": "Barra antipánico",
   "specsEs": [
     {
       "label": "Material",
@@ -102,6 +106,10 @@
     {
       "label": "Doble distancia entre ejes",
       "value": "72 y 92 mm (con perforación para cilindro)"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de ABS con aluminio.",
@@ -132,5 +140,53 @@
     "model": "311",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "311",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Barra antipânico",
+  "summaryPt": "Barra antipânico.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "ABS com alumínio"
+    },
+    {
+      "label": "O conjunto inclui",
+      "value": "Barra 311, corpo de fechadura, cilindro de latão, maçaneta em aço inoxidável"
+    },
+    {
+      "label": "Comprimento da barra",
+      "value": "900 mm"
+    },
+    {
+      "label": "Distâncias entre eixos",
+      "value": "72 mm e 92 mm (furo do cilindro)"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "50 peças"
+    }
+  ],
+  "seoTitlePt": "311 Barra antipânico | Canton Hyland",
+  "seoDescriptionPt": "Barra antipânico 311 da Canton Hyland — barras antipânico. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Opções de travamento multifuncionais:",
+    "• Travamento por chave pelos dois lados; acesso por maçaneta e chave por fora, barra antipânico por dentro",
+    "• Trava por chave só pelo lado de fora; destrava por maçaneta/chave por fora e pelo antipânico por dentro",
+    "• A chave recolhe o trinco por fora; abre pela barra antipânico por dentro"
+  ],
+  "featuresEs": [
+    "Opciones de bloqueo multifunción:",
+    "• Bloqueo con llave por ambos lados; desde fuera se abre con manilla y llave, desde dentro con la barra antipánico",
+    "• La llave bloquea solo desde fuera; se desbloquea con manilla o llave desde fuera y con el dispositivo antipánico desde dentro",
+    "• La llave recoge el picaporte desde fuera; desde dentro se abre con la barra antipánico"
+  ]
 }

@@ -1,0 +1,46 @@
+{
+  "id": "curated-catalogue-range",
+  "style": "oak",
+  "photos": [
+    {
+      "model": "311",
+      "slug": "311-panic-exit-device",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\311-panic-exit-device.webp",
+      "original": "/images/products/311-panic-exit-device.webp",
+      "sha256": "5b8114f002ade1f3b97367aa2a8dce6efc19a92acd59c94e3ae52bbf9b6ba34a",
+      "position": [
+        -1.12,
+        0
+      ],
+      "width": 0.9
+    },
+    {
+      "model": "607 SSET",
+      "slug": "607-sset-tubular-lock",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\607-sset-tubular-lock.webp",
+      "original": "/images/products/607-sset-tubular-lock.webp",
+      "sha256": "42714dc16a7c3ba383e1629ca4871e445aa1218e8fbdc2f86b5de13e56e11ba2",
+      "position": [
+        0,
+        0
+      ],
+      "width": 0.9
+    },
+    {
+      "model": "9004S",
+      "slug": "9004s-stainless-steel-handle",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\9004s-stainless-steel-handle.webp",
+      "original": "/images/products/9004s-stainless-steel-handle.webp",
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+      "position": [
+        1.12,
+        0
+      ],
+      "width": 0.9
+    }
+  ],
+  "heading": "HYDE / FROM THE CATALOGUE",
+  "note": "Original products - different families, individual selections",
+  "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+  "resolution": 1800
+}

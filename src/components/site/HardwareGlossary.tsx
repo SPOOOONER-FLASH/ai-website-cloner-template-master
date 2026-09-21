@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTopLevelCategories } from "@/data/categories";
-import { OPTION_NOTES, OPTION_NOTES_ES } from "@/lib/configurator";
+import { OPTION_NOTES, OPTION_NOTES_ES, OPTION_NOTES_PT } from "@/lib/configurator";
+import type { Locale } from "@/data/site";
 
 /**
  * The trade definitions, rendered on the server.
@@ -42,12 +43,24 @@ const COPY = {
       "Todas las opciones que ofrece el configurador, definidas. Son las definiciones del oficio —qué es la pieza y dónde va— y no afirmaciones sobre ningún modelo concreto.",
     seeAll: "Ver los modelos",
   },
+  pt: {
+    title: "O que significam estes termos",
+    intro:
+      "Todas as opções que o configurador oferece, definidas. São as definições do ofício — o que é a peça e onde vai — e não afirmações sobre nenhum modelo em concreto.",
+    seeAll: "Ver os modelos",
+  },
 } as const;
 
-export function HardwareGlossary({ locale = "en" }: { locale?: "en" | "es" }) {
+export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
   const t = COPY[locale];
-  const notes = locale === "es" ? OPTION_NOTES_ES : OPTION_NOTES;
-  const base = locale === "es" ? "/es" : "";
+  /* Portuguese notes where they exist, English where they do not — never Spanish. */
+  const notes =
+    locale === "es"
+      ? OPTION_NOTES_ES
+      : locale === "pt"
+        ? { ...OPTION_NOTES, ...OPTION_NOTES_PT }
+        : OPTION_NOTES;
+  const base = locale === "en" ? "" : `/${locale}`;
 
   /*
     Ordered by the taxonomy, not by the object's key order, so the list reads down the
@@ -67,7 +80,7 @@ export function HardwareGlossary({ locale = "en" }: { locale?: "en" | "es" }) {
     if (note) {
       entries.push({
         slug: category.slug,
-        name: (locale === "es" ? category.nameEs : undefined) ?? category.name,
+        name: (locale === "es" ? category.nameEs : locale === "pt" ? category.namePt : undefined) ?? category.name,
         note,
         href: `${base}/products/${category.slug}/`,
         child: false,
@@ -78,7 +91,7 @@ export function HardwareGlossary({ locale = "en" }: { locale?: "en" | "es" }) {
       if (!subNote) continue;
       entries.push({
         slug: sub.slug,
-        name: (locale === "es" ? sub.nameEs : undefined) ?? sub.name,
+        name: (locale === "es" ? sub.nameEs : locale === "pt" ? sub.namePt : undefined) ?? sub.name,
         note: subNote,
         href: `${base}/products/${category.slug}/`,
         child: true,

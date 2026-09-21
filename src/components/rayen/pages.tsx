@@ -1,7 +1,11 @@
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "./Chrome";
+import { CatalogueSpread } from "./CatalogueSpread";
+import { FinishFilter } from "./FinishFilter";
 import { Gallery } from "./Gallery";
+import { HeroCarousel } from "./HeroCarousel";
 import { ArrowLink, Button, FactStrip, NoPhoto, Photo, ProductCard, SectionHead, Shell, SpecTable } from "./primitives";
+import { downloads, megabytes } from "@/data/rayen-downloads";
 import {
   absoluteUrl,
   categoriesFor,
@@ -15,8 +19,11 @@ import {
   products,
   rayen,
   siteFacts,
+  siteName,
+  siteUrl,
   viewProduct,
 } from "@/data/rayen";
+import { finishKeysOf } from "@/data/rayen-finishes";
 import { STRINGS, type RayenLocale } from "@/data/rayen-i18n";
 
 /**
@@ -46,6 +53,59 @@ function factsFor(locale: RayenLocale) {
   ];
 }
 
+/**
+ * One <script type="application/ld+json">, serialised.
+ *
+ * Kept as a component so every page emits the same shape and nobody hand-writes a second
+ * JSON.stringify with a different escaping story.
+ */
+function JsonLd({ data }: { data: unknown }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+/**
+ * The company, as structured data.
+ *
+ * Every field here is one a buyer can check: the legal name on the business licence, the
+ * registered address, the phone and email the client supplied on 2026-09-15. Nothing is
+ * inferred — no founding date we cannot evidence, no employee count nobody counted, and no
+ * awards. A knowledge panel built from invented facts is worse than no knowledge panel,
+ * because the first wrong one a buyer catches costs the rest.
+ */
+function organisation(locale: RayenLocale) {
+  const contact = rayen.contact;
+  return {
+    "@type": "Organization",
+    name: legalName,
+    alternateName: "RAYEN 雷茵",
+    url: siteUrl,
+    logo: absoluteUrl("/images/rayen/logo.webp"),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: locale === "zh" ? contact.addressZh : contact.addressEn,
+      addressLocality: contact.city,
+      addressRegion: contact.province,
+      addressCountry: "CN",
+    },
+    ...(contact.email ? { email: contact.email } : {}),
+    ...(contact.phone ? { telephone: contact.phone } : {}),
+  };
+}
+
+/** Breadcrumbs, so a category or product shows its place rather than a bare URL. */
+function breadcrumbs(locale: RayenLocale, trail: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((step, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: step.name,
+      item: absoluteUrl(locale === "zh" ? step.path : `/en${step.path}`),
+    })),
+  };
+}
+
 function capabilitiesFor(locale: RayenLocale) {
   return rayen.capabilities.map((c) => ({
     label: locale === "zh" ? c.label : (c.labelEn ?? c.label),
@@ -67,12 +127,41 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         {/* 1 — hero */}
         <section className="relative">
           <div className="relative h-[62vh] min-h-[420px] w-full overflow-hidden bg-[var(--color-surface-dark)]">
-            {/* eslint-disable-next-line @next/next/no-img-element -- static export, no optimiser */}
-            <img
-              src="/images/rayen/hero-brass-handles.webp"
-              alt={locale === "zh" ? "青铜色门扇上的一对黄铜大拉手" : "A pair of brass pull handles on a patinated bronze door"}
-              className="h-full w-full object-cover opacity-90"
-              fetchPriority="high"
+            {/*
+              Three frames, one claim. See the note in HeroCarousel.tsx for why the headline
+              does not rotate with them.
+
+              The order is an argument: the part first, because that is what the buyer came
+              for; then the press hall, because a row of punch presses answers "can you make
+              my quantity" before anyone asks; then a die under a press with the blanks
+              beside it, because that is the same claim at the scale of one part.
+
+              factory-laser-cutter.webp is deliberately not in the set — the machine in it
+              carries 大族激光's own branding across the housing, and another firm's logo on
+              our home page is the thing we spent 2026-09-11 taking off the category cards.
+            */}
+            <HeroCarousel
+              label={locale === "zh" ? "首页图片切换" : "Hero image selection"}
+              slides={[
+                {
+                  src: "/images/rayen/hero-brass-handles.webp",
+                  alt:
+                    locale === "zh"
+                      ? "青铜色门扇上的一对黄铜大拉手"
+                      : "A pair of brass pull handles on a patinated bronze door",
+                },
+                {
+                  src: "/images/rayen/factory-press-hall-wide.webp",
+                  alt: locale === "zh" ? "冲床车间，一整排冲床" : "The press hall, a full row of punch presses",
+                },
+                {
+                  src: "/images/rayen/factory-stamping.webp",
+                  alt:
+                    locale === "zh"
+                      ? "冲床上的模具与刚落下的料件"
+                      : "A die under the press with the blanks beside it",
+                },
+              ]}
             />
             {/*
               遮罩比原来轻。原图是冲床车间，本身灰绿、细节杂，要压暗才压得住白字；
@@ -107,15 +196,30 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         <section className="py-16 md:py-24">
           <Shell>
             <SectionHead eyebrow={s.productsEyebrow} title={s.productsTitle} intro={s.productsIntro} />
-            <div className="mt-10 grid grid-cols-2 gap-px bg-[var(--color-line)] md:mt-14 md:grid-cols-3 lg:grid-cols-5">
+            {/*
+              A wrapping flex row, not a fixed five-column grid.
+
+              The hairlines between these cards are a coloured gap showing through from
+              behind, so a short last row does not render as empty space — it renders as a
+              slab of grey. Six categories on a five-column grid left four empty cells, most
+              of a second row, and the client sent a screenshot of it on 2026-09-11.
+
+              Letting the cards grow means the last row fills the width whatever the category
+              count happens to be that week. The basis values keep the intended 2 / 3 / 5
+              rhythm on rows that are full; only a short row stretches.
+            */}
+            <div className="mt-10 flex flex-wrap gap-px bg-[var(--color-line)] md:mt-14">
               {categories.map((category) => (
                 <a
                   key={category.slug}
                   href={localePath(locale, `/products/${category.slug}/`)}
-                  className="group bg-white p-4 transition-colors hover:bg-[var(--color-surface-alt)]"
+                  className="group grow basis-[calc(50%-1px)] bg-white p-4 transition-colors hover:bg-[var(--color-surface-alt)] md:basis-[calc(33.333%-1px)] lg:basis-[calc(20%-1px)]"
                 >
                   {category.image?.src ? (
-                    <Photo src={category.image.src} alt={category.name} aspect="1 / 1" />
+                    /* contain for the same reason as CatalogueSpread: these covers are
+                       whichever product leads the family, and five of the seventeen are
+                       upright shots that a square cover frame cut by a third. */
+                    <Photo src={category.image.src} alt={category.name} aspect="1 / 1" fit="contain" />
                   ) : (
                     <div className="aspect-square bg-[var(--color-surface-alt)]" />
                   )}
@@ -152,9 +256,9 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
           <Shell>
             <SectionHead eyebrow={s.factoryEyebrow} title={s.factoryTitle} intro={s.factoryIntro} />
             <div className="mt-10 grid gap-4 md:mt-14 md:grid-cols-3">
-              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="4 / 3" />
+              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="1 / 1" />
             </div>
             <div className="mt-8">
               <ArrowLink href={localePath(locale, "/company/")}>{s.factoryMore}</ArrowLink>
@@ -179,6 +283,18 @@ export function HomeBody({ locale }: { locale: RayenLocale }) {
         </section>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@graph": [
+          organisation(locale),
+          {
+            "@type": "WebSite",
+            name: siteName,
+            url: siteUrl,
+            inLanguage: locale === "zh" ? "zh-Hans" : "en",
+          },
+        ],
+      }} />
     </>
   );
 }
@@ -200,40 +316,36 @@ export function ProductsIndexBody({ locale }: { locale: RayenLocale }) {
             intro={s.intro(categories.length, products.length)}
             align="left"
           />
-          <div className="mt-10 grid gap-px bg-[var(--color-line)] md:mt-14 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category) => {
-              const count = products.filter((p) => p.categoryPath[0] === category.slug).length;
-              return (
-                <a
-                  key={category.slug}
-                  href={localePath(locale, `/products/${category.slug}/`)}
-                  className="group flex gap-5 bg-white p-5 transition-colors hover:bg-[var(--color-surface-alt)] md:p-6"
-                >
-                  <div className="w-28 shrink-0 md:w-32">
-                    {category.image?.src ? (
-                      <Photo src={category.image.src} alt={category.name} aspect="1 / 1" />
-                    ) : (
-                      <div className="aspect-square bg-[var(--color-surface-alt)]" />
-                    )}
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-[17px]">{category.name}</p>
-                    <p className="latin mt-1 text-[12px] text-[var(--color-ink-3)]">
-                      {s.modelCount(count)}
-                    </p>
-                    {category.children.length ? (
-                      <p className="mt-3 text-[13px] leading-relaxed text-[var(--color-ink-2)]">
-                        {category.children.map((child) => child.name).join(" · ")}
-                      </p>
-                    ) : null}
-                  </div>
-                </a>
-              );
-            })}
+          {/*
+            One spread per category rather than seventeen tiles. See CatalogueSpread.tsx for
+            why, and for what it deliberately does not pretend to have.
+          */}
+          <div className="mt-10 md:mt-14">
+            {categories.map((category, index) => (
+              <CatalogueSpread
+                key={category.slug}
+                index={index}
+                locale={locale}
+                category={category}
+                href={localePath(locale, `/products/${category.slug}/`)}
+                products={products
+                  .filter((p) => p.categoryPath[0] === category.slug)
+                  .map((p) => viewProduct(p, locale))}
+                labels={{ modelCount: s.modelCount, view: s.viewCategory }}
+              />
+            ))}
           </div>
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/products/" : "/en/products/"),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -282,14 +394,53 @@ export function CategoryBody({ locale, categorySlug }: { locale: RayenLocale; ca
             </ul>
           ) : null}
 
-          <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 lg:grid-cols-4">
-            {items.map((product) => (
-              <ProductCard key={product.slug} product={product} locale={locale} noPhotoLabel={s.noPhoto} />
-            ))}
-          </div>
+          {/*
+            The grid stays here, server-rendered, and FinishFilter only hides cards that do
+            not match. Moving the cards inside the client component would drag the image
+            dimension map into the browser bundle — see the note in FinishFilter.tsx.
+          */}
+          <FinishFilter items={items} locale={locale} labels={s.finishFilter}>
+            <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 lg:grid-cols-4">
+              {items.map((product) => (
+                <div key={product.slug} data-finishes={finishKeysOf(product.finishes)}>
+                  <ProductCard product={product} locale={locale} noPhotoLabel={s.noPhoto} />
+                </div>
+              ))}
+            </div>
+          </FinishFilter>
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: category.name,
+        url: absoluteUrl(locale === "zh" ? `/products/${categorySlug}/` : `/en/products/${categorySlug}/`),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        /* The models in this category, by name and URL. No price and no availability:
+           this site publishes neither, and schema.org offers with invented values are the
+           fastest way to get a rich result withdrawn. */
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: items.length,
+          itemListElement: items.map((item, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: `${item.model} ${item.name}`,
+            url: absoluteUrl(
+              locale === "zh"
+                ? `/products/${categorySlug}/${item.slug}/`
+                : `/en/products/${categorySlug}/${item.slug}/`,
+            ),
+          })),
+        },
+      }} />
+      <JsonLd
+        data={breadcrumbs(locale, [
+          { name: s.breadcrumbRoot, path: "/products/" },
+          { name: category.name, path: `/products/${categorySlug}/` },
+        ])}
+      />
     </>
   );
 }
@@ -434,9 +585,20 @@ export function ProductBody({
               */}
               <h2 className="text-[18px]">{s.familyTitle}</h2>
               <p className="mt-2 max-w-[62ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">
+                {/*
+                  Three cases, because a design family is not always a lever paired with a
+                  pull handle. It was, for the seven UNION packs the client sent — 「有门把手的
+                  表示此款式搭配有同风格的门把手」 — and the two lines above say exactly that.
+                  The 雷茵 catalogue's own series are the other shape: ET4009A and ET4016 are
+                  the same handle with a different lock case, and telling a buyer it "pairs
+                  with the pull handles below" while listing another lever is a claim the
+                  page itself disproves one line further down.
+                */}
                 {familyLevers.length && !isLeverHandle(record)
                   ? s.familyLeverLine(familyLevers.map((l) => l.model).join(locale === "zh" ? "、" : ", "))
-                  : s.familyHandleLine}
+                  : familyHandles.length
+                    ? s.familyHandleLine
+                    : s.familySameLine}
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
                 {[...familyLevers, ...familyHandles].map((item) => (
@@ -460,6 +622,13 @@ export function ProductBody({
       </main>
       <SiteFooter locale={locale} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd
+        data={breadcrumbs(locale, [
+          { name: s.breadcrumbRoot, path: "/products/" },
+          { name: category?.name ?? categorySlug, path: `/products/${categorySlug}/` },
+          { name: `${product.model} ${product.name}`, path: `/products/${categorySlug}/${product.slug}/` },
+        ])}
+      />
     </>
   );
 }
@@ -488,7 +657,7 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
               <Photo
                 src="/images/rayen/factory-press-line.webp"
                 alt={locale === "zh" ? "冲压产线与在制品料架" : "Press line and work-in-progress racking"}
-                aspect="4 / 3"
+                aspect="1 / 1"
               />
             </div>
           </div>
@@ -500,12 +669,12 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
           <section className="mt-16 md:mt-24">
             <SectionHead eyebrow={s.factoryEyebrow} title={s.factoryTitle} intro={s.factoryIntro} align="left" />
             <div className="mt-8 grid gap-4 md:grid-cols-3">
-              <Photo src="/images/rayen/factory-press-hall-wide.webp" alt={locale === "zh" ? "冲床车间纵深全景" : "Press hall, looking down the line"} aspect="4 / 3" className="md:col-span-2" />
-              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-laser-cutter.webp" alt={locale === "zh" ? "激光切割设备" : "Laser cutter"} aspect="4 / 3" />
-              <Photo src="/images/rayen/factory-press-hall.webp" alt={locale === "zh" ? "冲床车间全景" : "Press hall"} aspect="4 / 3" />
+              <Photo src="/images/rayen/factory-press-hall-wide.webp" alt={locale === "zh" ? "冲床车间纵深全景" : "Press hall, looking down the line"} aspect="1 / 1" className="md:col-span-2" />
+              <Photo src="/images/rayen/factory-press-console.webp" alt={locale === "zh" ? "冲压车间，操作员在数控面板前作业" : "Press shop, operator at the control panel"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-stamping.webp" alt={locale === "zh" ? "冲压机与操作员" : "Press and operator"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-assembly-bench.webp" alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-laser-cutter.webp" alt={locale === "zh" ? "激光切割设备" : "Laser cutter"} aspect="1 / 1" />
+              <Photo src="/images/rayen/factory-press-hall.webp" alt={locale === "zh" ? "冲床车间全景" : "Press hall"} aspect="1 / 1" />
             </div>
           </section>
 
@@ -515,6 +684,13 @@ export function CompanyBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/company/" : "/en/company/"),
+        mainEntity: organisation(locale),
+      }} />
     </>
   );
 }
@@ -571,6 +747,16 @@ export function QualityBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: s.title,
+        /* This page has no `intro`; credentialsNote is its own summary of what we can and
+           cannot evidence, which is the honest description of the page. */
+        description: s.credentialsNote,
+        url: absoluteUrl(locale === "zh" ? "/quality/" : "/en/quality/"),
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -616,7 +802,7 @@ export function OemBody({ locale }: { locale: RayenLocale }) {
               <Photo
                 src="/images/rayen/factory-assembly-bench.webp"
                 alt={locale === "zh" ? "装配工位，员工在分装零件" : "Assembly bench, sorting components"}
-                aspect="3 / 4"
+                aspect="1 / 1"
               />
             </div>
           </section>
@@ -640,6 +826,14 @@ export function OemBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: s.title,
+        description: s.intro,
+        url: absoluteUrl(locale === "zh" ? "/oem/" : "/en/oem/"),
+        about: organisation(locale),
+      }} />
     </>
   );
 }
@@ -684,7 +878,7 @@ export function ContactBody({ locale }: { locale: RayenLocale }) {
             <Photo
               src="/images/rayen/factory-press-hall.webp"
               alt={locale === "zh" ? "冲床车间全景" : "Press hall"}
-              aspect="4 / 3"
+              aspect="1 / 1"
             />
           </div>
 
@@ -692,6 +886,104 @@ export function ContactBody({ locale }: { locale: RayenLocale }) {
         </Shell>
       </main>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        name: s.title,
+        url: absoluteUrl(locale === "zh" ? "/contact/" : "/en/contact/"),
+        mainEntity: organisation(locale),
+      }} />
+    </>
+  );
+}
+
+/* -------------------------------------------------------------- downloads */
+
+/**
+ * Resources a buyer can take away — today, the catalogue.
+ *
+ * Deliberately not gated behind an email form. A gate would collect addresses from the
+ * small fraction who fill it in and lose the specifier who was only checking whether we
+ * make a 72 mm centre distance; the catalogue is a sales document, and the point of one is
+ * that it travels. The file size and page count are printed next to the link because the
+ * reader is often on mobile data, and src/lib/rayen-downloads.test.ts holds those numbers
+ * to the actual file.
+ */
+export function DownloadsBody({ locale }: { locale: RayenLocale }) {
+  const s = t(locale).downloads;
+  const path = locale === "zh" ? "/downloads/" : "/en/downloads/";
+  return (
+    <>
+      <SiteHeader current="/downloads/" locale={locale} />
+      <main className="flex-grow">
+        <Shell className="py-14 md:py-20">
+          <SectionHead eyebrow={s.eyebrow} title={s.title} align="left" />
+          <p className="mt-5 max-w-[62ch] text-[15px] leading-relaxed text-[var(--color-ink-2)]">{s.intro}</p>
+
+          <section className="mt-10 space-y-px bg-[var(--color-line)]">
+            {downloads.map((file) => {
+              const copy = locale === "zh" ? file.zh : file.en;
+              return (
+                <article key={file.id} className="grid gap-8 bg-white p-6 md:grid-cols-[minmax(0,320px)_1fr] md:p-8">
+                  <a href={file.href} className="block border border-[var(--color-line)]">
+                    <Photo src="/images/rayen/catalogue-2026-cover.webp" alt={copy.title} aspect="1600 / 1132" />
+                  </a>
+                  <div className="flex flex-col items-start">
+                    <h2 className="text-[20px]">{copy.title}</h2>
+                    <p className="mt-3 max-w-[54ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">
+                      {copy.summary}
+                    </p>
+                    <p className="latin mt-4 text-[13px] tracking-[0.06em] text-[var(--color-ink-3)]">
+                      {s.meta(file.pages, megabytes(file.bytes))}
+                    </p>
+                    <div className="mt-6">
+                      <Button href={file.href}>{s.cta}</Button>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </section>
+
+          <section className="mt-14 border-t border-[var(--color-line)] pt-12">
+            <h2 className="text-[18px]">{s.originalTitle}</h2>
+            <p className="mt-4 max-w-[62ch] text-[14px] leading-relaxed text-[var(--color-ink-2)]">{s.originalNote}</p>
+            <div className="mt-6">
+              <ArrowLink href={localePath(locale, "/contact/")}>{s.contactCta}</ArrowLink>
+            </div>
+          </section>
+        </Shell>
+      </main>
+      <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: s.title,
+        description: s.intro,
+        url: absoluteUrl(path),
+        isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl },
+        /* DigitalDocument rather than Product/Offer: what is on offer here is the file, and
+           contentSize is stated in the same units the page prints so the two cannot disagree. */
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: downloads.length,
+          itemListElement: downloads.map((file, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            item: {
+              "@type": "DigitalDocument",
+              name: (locale === "zh" ? file.zh : file.en).title,
+              description: (locale === "zh" ? file.zh : file.en).summary,
+              url: absoluteUrl(file.href),
+              encodingFormat: "application/pdf",
+              contentSize: megabytes(file.bytes),
+              numberOfPages: file.pages,
+              inLanguage: "zh-Hans",
+              publisher: organisation(locale),
+            },
+          })),
+        },
+      }} />
     </>
   );
 }

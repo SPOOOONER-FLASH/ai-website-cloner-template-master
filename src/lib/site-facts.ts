@@ -74,6 +74,14 @@ const COPY = {
     quality: "sistema de calidad",
     workforce: "personas en planta",
   },
+  pt: {
+    models: "fichas de produto verificadas",
+    families: "categorias de catálogo",
+    withVideo: "modelos com vídeo de demonstração",
+    founded: "a fabricar desde",
+    quality: "sistema de qualidade",
+    workforce: "pessoas na fábrica",
+  },
 } as const;
 
 /** A stat from company.ts, or null — never a placeholder. */
@@ -133,5 +141,7 @@ export function siteFacts(locale: Locale = "en"): SiteFact[] {
 
 /** Heading for the strip. Kept here so the page and any future locale read one string. */
 export function siteFactsHeading(locale: Locale = "en"): string {
-  return locale === "es" ? "La fábrica, en cifras" : "The factory, in figures";
+  if (locale === "es") return "La fábrica, en cifras";
+  if (locale === "pt") return "A fábrica, em números";
+  return "The factory, in figures";
 }

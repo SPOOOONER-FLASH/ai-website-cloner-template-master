@@ -21,6 +21,8 @@
 export interface Representative {
   region: string;
   regionEs: string;
+  /** Portuguese, for /pt. Absent falls back to the English region — see localised(). */
+  regionPt?: string;
   /** The city a buyer would search for, not the building name. */
   city: string;
   address: string;
@@ -39,12 +41,14 @@ export interface Representative {
   /** Why this address exists, in the buyer's terms. Kept honest and short. */
   note?: string;
   noteEs?: string;
+  notePt?: string;
 }
 
 export const representatives: Representative[] = [
   {
     region: "United States",
     regionEs: "Estados Unidos",
+    regionPt: "Estados Unidos",
     city: "Los Angeles, California",
     address: "960 W. 7th Street, Los Angeles, CA 90017",
     phone: "+1 703 967 7493",
@@ -52,34 +56,43 @@ export const representatives: Representative[] = [
     note: "Account manager for North America. Call or email for pricing, samples and shipping to US destinations.",
     noteEs:
       "Responsable de cuentas para Norteamérica. Llame o escriba para precios, muestras y envíos a destinos de EE. UU.",
+    notePt:
+      "Responsável de contas para a América do Norte. Ligue ou escreva para preços, amostras e embarques para destinos nos EUA.",
   },
   {
     region: "United States",
     regionEs: "Estados Unidos",
+    regionPt: "Estados Unidos",
     city: "Arlington, Virginia",
     address: "550 14th St S, Arlington, VA 22202",
     phone: "+1 703 967 7493",
     email: "spoonerlau@gmail.com",
     note: "East-coast contact point, in the Washington D.C. metro area.",
     noteEs: "Punto de contacto en la costa este, área metropolitana de Washington D. C.",
+    notePt: "Ponto de contato na costa leste, região metropolitana de Washington, D.C.",
   },
   {
     region: "Germany",
     regionEs: "Alemania",
+    regionPt: "Alemanha",
     city: "Cologne",
     address: "Koelnmesse, Messeplatz 1, 50679 Cologne",
     email: "hyde@cantonlock.com",
     note: "Where we exhibit in Germany. Meetings can be arranged around the Cologne fair calendar.",
     noteEs:
       "Donde exponemos en Alemania. Se pueden concertar reuniones en torno al calendario ferial de Colonia.",
+    notePt:
+      "Onde expomos na Alemanha. Reuniões podem ser marcadas em torno do calendário de feiras de Colônia.",
   },
   {
     region: "Germany",
     regionEs: "Alemania",
+    regionPt: "Alemanha",
     city: "Remagen",
     address: "Bachstraße 2, 53424 Remagen",
     email: "hyde@cantonlock.com",
     note: "Contact point for the Rhineland region.",
     noteEs: "Punto de contacto para la región de Renania.",
+    notePt: "Ponto de contato para a região da Renânia.",
   },
 ];

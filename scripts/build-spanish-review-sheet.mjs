@@ -38,7 +38,7 @@
 
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { SPEC_LABELS_ES, SPEC_VALUES_ES, CATEGORY_NAMES_ES } from "../src/data/es-glossary.ts";
+import { SPEC_LABELS_ES, SPEC_VALUES_ES, CATEGORY_NAMES_ES, PRODUCT_NAMES_ES } from "../src/data/es-glossary.ts";
 import {
   SPEC_LABELS_ZH,
   SPEC_VALUES_ZH,
@@ -180,6 +180,39 @@ for (const file of proseFiles) {
 
 for (const [en, es, zh] of FINISHES) {
   rows.finishes.push({ kind: "表面处理 Acabado", en, es, zh, uses: "", status: "请确认这一条术语" });
+}
+
+/*
+  PRODUCT NAMES — the rows that decide what 534 Spanish pages are called.
+
+  Added 2026-09-11 with PRODUCT_NAMES_ES itself. Until then `nameEs` held the CATEGORY
+  name, so the Spanish mirror titled a door coordinator "Accesorios de herrajes" and a
+  panic-bar trim "Barras antipánico" — the same string on every product in the family.
+
+  These rows carry the highest review value per line on the sheet: `uses` says how many
+  products each one names, and the top rows name sixty-odd pages each. A wrong term here
+  is not a clumsy sentence, it is a buyer ordering `cerradura de embutir` when they meant
+  `cerradura de sobreponer` and finding out at the door.
+*/
+{
+  const uses = new Map();
+  for (const file of readdirSync(PRODUCT_DIR).filter((f) => f.endsWith(".json"))) {
+    const product = JSON.parse(readFileSync(join(PRODUCT_DIR, file), "utf8"));
+    uses.set(product.name, (uses.get(product.name) ?? 0) + 1);
+  }
+  const names = Object.entries(PRODUCT_NAMES_ES).sort(
+    (a, b) => (uses.get(b[0]) ?? 0) - (uses.get(a[0]) ?? 0),
+  );
+  for (const [en, es] of names) {
+    rows.terminology.push({
+      kind: "产品名 Nombre de producto",
+      en,
+      es,
+      zh: "",
+      uses: uses.get(en) ?? 0,
+      status: "请确认这一条术语",
+    });
+  }
 }
 
 /* ------------------------------------------------------------------- 4. the workbook */

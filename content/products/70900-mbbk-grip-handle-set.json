@@ -99,7 +99,7 @@
   "relatedModels": [],
   "seoTitle": "70900 MBBK Grip Handle Set — Aluminum | Canton Hyland",
   "seoDescription": "Canton Hyland 70900 MBBK grip handle set in Aluminum. Grip Handle Set in matt black, privacy function. Available in MB finish. Made in Guangdong, China.",
-  "nameEs": "Juegos de manija con placa",
+  "nameEs": "Juego de manillón",
   "seoTitleEs": "70900 MBBK Juegos de manija con placa | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 70900 MBBK juegos de manija con placa en aluminio. Acabado MB. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
   "videos": [],
@@ -110,5 +110,110 @@
     "functionFrom": "suffix BK",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Conjunto de puxador",
+  "summaryPt": "Conjunto de puxador em alumínio.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Alumínio"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm / 70 mm ajustável, lingueta e trinco"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Curso do trinco",
+      "value": "25 mm, com inserto de aço temperado que resiste ao serramento"
+    },
+    {
+      "label": "Saída da lingueta",
+      "value": "13 mm"
+    },
+    {
+      "label": "Furo transversal",
+      "value": "51 mm — substitui a maioria das fechaduras existentes"
+    },
+    {
+      "label": "Chassi",
+      "value": "Construção interna em aço maciço, protegida contra corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Latão maciço forjado ou zamak injetado galvanizado"
+    },
+    {
+      "label": "Mão",
+      "value": "Sem mão definida, direita ou esquerda"
+    },
+    {
+      "label": "Característica",
+      "value": "Sem fixações aparentes pelo lado de fora; o anel giratório do cilindro resiste ao arrancamento"
+    },
+    {
+      "label": "Função",
+      "value": "Condena — banheiro, botão de trava por dentro"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Preto fosco"
+    }
+  ],
+  "seoTitlePt": "70900 MBBK Conjunto de puxador | Canton Hyland",
+  "seoDescriptionPt": "Conjunto de puxador 70900 MBBK da Canton Hyland — conjuntos de puxador. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Juego de manillón de aluminio.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Aluminio"
+    },
+    {
+      "label": "Entrada",
+      "value": "60 / 70 mm regulable, picaporte y pestillo"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Salida del cerrojo",
+      "value": "25 mm, con inserto de acero templado antisierra"
+    },
+    {
+      "label": "Salida del picaporte",
+      "value": "13mm"
+    },
+    {
+      "label": "Perforación principal",
+      "value": "51 mm — sustituye a la mayoría de las cerraduras existentes"
+    },
+    {
+      "label": "Chasis",
+      "value": "Construcción interna de acero macizo con protección anticorrosiva"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Latón macizo forjado o zamak inyectado con galvanizado"
+    },
+    {
+      "label": "Mano",
+      "value": "Sin mano definida, izquierda o derecha"
+    },
+    {
+      "label": "Característica",
+      "value": "Sin tornillería exterior a la vista; el anillo giratorio del cilindro resiste el arranque"
+    },
+    {
+      "label": "Función",
+      "value": "Privacidad — baño, botón de giro interior"
+    },
+    {
+      "label": "Acabado",
+      "value": "Negro mate"
+    }
+  ]
 }

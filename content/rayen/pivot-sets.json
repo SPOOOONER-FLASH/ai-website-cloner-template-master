@@ -1,0 +1,1802 @@
+{
+  "_readme": [
+    "天地轴 / 地弹簧：甲方 2026-09-13 发来的两本画册（中文 博克来奥 BOCRIEO，英文 DIROCK），38 个型号。",
+    "甲方同日说明：「我们是代理贴牌销售」「拿到了用图授权」「盖 logo 直接发产品，认证不管」。",
+    "",
+    "== 只取产品，不取画册 ==",
+    "进站的只有产品照和规格。不进站的：封面、BOCRIEO / DIROCK 的注册商标页、他们的办公楼、",
+    "ISO 9001 / 14001 / 45001 与 CE 认证页、页眉带对方标与口号（「匠心创造价值」）的安装说明跨页。",
+    "认证那一条是硬线：我们自己有没有这些证书不知道，缺料清单第五条写着「一个字都没写」，",
+    "把别人的证书页盖上我们的标发出去，是这一行里最贵、也最容易被查穿的一种假话。",
+    "",
+    "== 产品图是从画册页上裁出来的 ==",
+    "两本画册都是图片型 PDF，没有可提取的文字，也没有独立的产品图文件。",
+    "所以每个型号的主图是从它自己那一页的深色版面里裁出来的产品部分 ——",
+    "上方裁掉 BOCRIEO 页眉，下方裁掉图标行，四个上夹型号还裁掉了「搭配 D-3015 使用」那类说明。",
+    "裁完只剩产品本身和它的渐变背景，再走 rayen:images 那条链打雷茵标。",
+    "",
+    "== 一个型号两个承重档，写成一行 ==",
+    "画册里每个型号都有两列（D-5061.50 / D-5061.80），差别只是承重和闭门力矩。",
+    "工厂按档位下单的是同一个型号，所以写成「50kg / 80kg」一行，不拆成两个 SKU ——",
+    "拆开会让目录里出现两个看不出区别的条目。Variants 那一行写明两个档位各自的完整型号。",
+    "",
+    "== 疲劳检测次数没有写 ==",
+    "画册每张参数表底下都有「※20 万次疲劳检测」。甲方 2026-09-13 明确「不写疲劳测试次数」。",
+    "那是一个测试结果，我们手上没有报告，写了就等于替别人的测试背书。",
+    "",
+    "== 上夹是配件，关系写在 styleFamily 里 ==",
+    "D-3017 配 D-3015、D-3018 配 D-3016、D-1042 配 D-1031、D-1043 配 DZ-2031 / D-1051。",
+    "跟大拉手配门把手同一种处理：关系只写一次，两个方向都从它推出来，不会写反。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-pivot-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "models": [
+    {
+      "model": "D-5061",
+      "slug": "d-5061-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "5061",
+      "material": "Aluminium + steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-5061.50 / D-5061.80"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤700mm / ≤900mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥40mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "50kg / 80kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN2 / EN3"
+        }
+      ]
+    },
+    {
+      "model": "D-5062",
+      "slug": "d-5062-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "5062",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-5062.60 / D-5062.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "D-5063",
+      "slug": "d-5063-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "5063",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-5063.100 / D-5063.150"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1000mm / ≤1200mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "100kg / 150kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN4 / EN5"
+        }
+      ]
+    },
+    {
+      "model": "D-1032",
+      "slug": "d-1032-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1032",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1032.60 / D-1032.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1100mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "D-1033",
+      "slug": "d-1033-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "边轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1033",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1033.60 / D-1033.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1100mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "D-1067",
+      "slug": "d-1067-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "超重型边轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1067",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1067.200 / D-1067.300"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1350mm / ≤1500mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "200kg / 300kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN6 / EN7"
+        }
+      ]
+    },
+    {
+      "model": "D-1068",
+      "slug": "d-1068-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "超重型偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1068",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1068.200 / D-1068.300"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1350mm / ≤1500mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "200kg / 300kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN6 / EN7"
+        }
+      ]
+    },
+    {
+      "model": "D-3012",
+      "slug": "d-3012-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "偏轴 / 中轴弹动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3012",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3012.100 / D-3012.150"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤750mm / ≤900mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "100kg / 150kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-3013",
+      "slug": "d-3013-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "边轴弹动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3013",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3013.80 / D-3013.120"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤900mm / ≤1100mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "80kg / 120kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-3001",
+      "slug": "d-3001-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "超重型定位偏轴 / 中轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3001",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3001.400 / D-3001.600"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1200mm / ≤1350mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "≥60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "400kg / 600kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-3002",
+      "slug": "d-3002-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "超重型定位边轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3002",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3002.300 / D-3002.500"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1350mm / ≤1500mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "≥60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "300kg / 500kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-3015",
+      "slug": "d-3015-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "无框玻璃门偏 / 中轴弹动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3015",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3015.100 / D-3015.150"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤600mm / ≤800mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "8–12mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "100kg / 150kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-3016",
+      "slug": "d-3016-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "无框玻璃门边轴弹动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "3016",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-3016.80 / D-3016.120"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "8–12mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "80kg / 120kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "D-1031",
+      "slug": "d-1031-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "无框玻璃门边轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1031",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1031.60 / D-1031.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤750mm / ≤1000mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "10–14mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "D-1051",
+      "slug": "d-1051-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "无框玻璃门偏轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "1051",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "D-1051.120 / D-1051.150"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1100mm / ≤1200mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "10–14mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "120kg / 150kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN4 / EN5"
+        }
+      ]
+    },
+    {
+      "model": "DZ-2031",
+      "slug": "dz-2031-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "无框玻璃门中轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "2031",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "DZ-2031.150 / DZ-2031.200"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤900mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "10–14mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "150kg / 200kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "DZ-2086",
+      "slug": "dz-2086-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "中轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "2086",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "DZ-2086.60 / DZ-2086.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤650mm / ≤750mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "DZ-2087",
+      "slug": "dz-2087-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "中轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "2087",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "DZ-2087.150 / DZ-2087.200"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤850mm / ≤1000mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥45mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "150kg / 200kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN4 / EN5"
+        }
+      ]
+    },
+    {
+      "model": "DZ-2039",
+      "slug": "dz-2039-floor-spring",
+      "name": "Floor Spring",
+      "nameZh": "超重型中轴液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "floor-springs"
+      ],
+      "styleFamily": "2039",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "DZ-2039.300 / DZ-2039.400"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1250mm / ≤1350mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "300kg / 400kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN5 / EN6"
+        }
+      ]
+    },
+    {
+      "model": "D-3010",
+      "slug": "d-3010-top-pivot",
+      "name": "Top Pivot",
+      "nameZh": "可调顶轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "top-pivots"
+      ],
+      "styleFamily": "3010",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "30 × 12 × 157mm"
+        }
+      ]
+    },
+    {
+      "model": "D-3011",
+      "slug": "d-3011-top-pivot",
+      "name": "Top Pivot",
+      "nameZh": "可调顶轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "top-pivots"
+      ],
+      "styleFamily": "3011",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "12 × 28 × 157mm"
+        }
+      ]
+    },
+    {
+      "model": "D-3011A",
+      "slug": "d-3011a-top-pivot",
+      "name": "Top Pivot",
+      "nameZh": "可调顶轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "top-pivots"
+      ],
+      "styleFamily": "3011",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "28 × 39 × 147mm"
+        }
+      ]
+    },
+    {
+      "model": "D-3019",
+      "slug": "d-3019-top-pivot",
+      "name": "Top Pivot",
+      "nameZh": "可调顶轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "top-pivots"
+      ],
+      "styleFamily": "3019",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "28 × 26 × 180mm"
+        }
+      ]
+    },
+    {
+      "model": "D-3021",
+      "slug": "d-3021-top-pivot",
+      "name": "Top Pivot",
+      "nameZh": "可调顶轴",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "top-pivots"
+      ],
+      "styleFamily": "3021",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "15 × 30 × 138mm"
+        }
+      ]
+    },
+    {
+      "model": "D-3017",
+      "slug": "d-3017-glass-door-top-patch",
+      "name": "Glass Door Top Patch",
+      "nameZh": "无框玻璃门偏轴上夹",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "pivot-top-patches"
+      ],
+      "styleFamily": "3015",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "138 × 25 × 36mm"
+        },
+        {
+          "label": "Cut-out",
+          "value": "107 × 53.5mm"
+        },
+        {
+          "label": "Pairs with",
+          "value": "D-3015"
+        }
+      ]
+    },
+    {
+      "model": "D-3018",
+      "slug": "d-3018-glass-door-top-patch",
+      "name": "Glass Door Top Patch",
+      "nameZh": "无框玻璃门边轴上夹",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "pivot-top-patches"
+      ],
+      "styleFamily": "3016",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "124 × 25 × 36mm"
+        },
+        {
+          "label": "Cut-out",
+          "value": "107 × 70.5mm"
+        },
+        {
+          "label": "Pairs with",
+          "value": "D-3016"
+        }
+      ]
+    },
+    {
+      "model": "D-1042",
+      "slug": "d-1042-glass-door-top-patch",
+      "name": "Glass Door Top Patch",
+      "nameZh": "无框玻璃门边轴上夹",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "pivot-top-patches"
+      ],
+      "styleFamily": "1031",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "173 × 25.4 × 54mm"
+        },
+        {
+          "label": "Glass thickness",
+          "value": "10–12mm"
+        },
+        {
+          "label": "Pairs with",
+          "value": "D-1031"
+        }
+      ]
+    },
+    {
+      "model": "D-1043",
+      "slug": "d-1043-glass-door-top-patch",
+      "name": "Glass Door Top Patch",
+      "nameZh": "无框玻璃门中轴上夹",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "pivot-top-patches"
+      ],
+      "styleFamily": "2031",
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Body size",
+          "value": "202 × 36 × 54mm"
+        },
+        {
+          "label": "Pairs with",
+          "value": "DZ-2031 / D-1051"
+        }
+      ]
+    },
+    {
+      "model": "T-1073",
+      "slug": "t-1073-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "顶装偏轴门液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1073",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1073.60 / T-1073.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1100mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm / ≥45mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "T-1075",
+      "slug": "t-1075-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "顶装偏轴门液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1075",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1075.100 / T-1075.120"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1000mm / ≤1100mm"
+        },
+        {
+          "label": "Max door thickness",
+          "value": "≥45mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "100kg / 120kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN4 / EN5"
+        }
+      ]
+    },
+    {
+      "model": "T-1076",
+      "slug": "t-1076-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "顶装中轴门液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1076",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1076.60 / T-1076.100"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤500mm / ≤750mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 100kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "T-1077",
+      "slug": "t-1077-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "顶装中轴门液动器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1077",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1077.150 / T-1077.200"
+        },
+        {
+          "label": "Double action",
+          "value": "Yes"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤1000mm / ≤1100mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥45mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "150kg / 200kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "360°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN4 / EN5"
+        }
+      ]
+    },
+    {
+      "model": "T-1078",
+      "slug": "t-1078-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "隐藏式凸轮闭门器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1078",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1078.60 / T-1078.80"
+        },
+        {
+          "label": "Double action",
+          "value": "Single action"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥42mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 80kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "T-1079",
+      "slug": "t-1079-overhead-door-closer",
+      "name": "Overhead Door Closer",
+      "nameZh": "隐藏式凸轮闭门器",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "overhead-door-closers"
+      ],
+      "styleFamily": "1079",
+      "material": "45# steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "T-1079.100 / T-1079.120"
+        },
+        {
+          "label": "Double action",
+          "value": "Single action"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Min door thickness",
+          "value": "≥45mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "100kg / 120kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "125°"
+        },
+        {
+          "label": "90° hold-open",
+          "value": "Yes"
+        },
+        {
+          "label": "Two-stage closing valve",
+          "value": "Yes"
+        },
+        {
+          "label": "Closing force",
+          "value": "EN3 / EN4"
+        }
+      ]
+    },
+    {
+      "model": "JL606",
+      "slug": "jl606-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aerospace aluminium",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "JL606.60 / JL606.80"
+        },
+        {
+          "label": "Set configuration",
+          "value": "Two hydraulic / 2+1"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "40–60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 80kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Hold-open range",
+          "value": "85–120°"
+        },
+        {
+          "label": "Closing valve",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "JL607",
+      "slug": "jl607-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "JL607.50 / JL607.70"
+        },
+        {
+          "label": "Set configuration",
+          "value": "Two hydraulic / 2+1"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤750mm / ≤950mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "40–60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "50kg / 70kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "110°"
+        },
+        {
+          "label": "Hold-open range",
+          "value": "90–110°"
+        },
+        {
+          "label": "Closing valve",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "JL608",
+      "slug": "jl608-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "JL608.60 / JL608.80"
+        },
+        {
+          "label": "Set configuration",
+          "value": "Two hydraulic / 2+1"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "40–60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 80kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "110°"
+        },
+        {
+          "label": "Hold-open range",
+          "value": "90–110°"
+        },
+        {
+          "label": "Closing valve",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "model": "JL609",
+      "slug": "jl609-hydraulic-hinge",
+      "name": "Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "catalogue",
+      "specs": [
+        {
+          "label": "Variants",
+          "value": "JL609.60 / JL609.80"
+        },
+        {
+          "label": "Set configuration",
+          "value": "Two hydraulic / 2+1"
+        },
+        {
+          "label": "Max door width (spindle to edge)",
+          "value": "≤800mm / ≤1000mm"
+        },
+        {
+          "label": "Door leaf thickness",
+          "value": "40–60mm"
+        },
+        {
+          "label": "Max door weight",
+          "value": "60kg / 80kg"
+        },
+        {
+          "label": "Max opening angle",
+          "value": "180°"
+        },
+        {
+          "label": "Hold-open range",
+          "value": "90–180°"
+        },
+        {
+          "label": "Closing valve",
+          "value": "Yes"
+        }
+      ]
+    }
+  ],
+  "heldBack": []
+}

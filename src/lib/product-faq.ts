@@ -1,4 +1,5 @@
 import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
+import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
 import { bhmaFinishesFor } from "./bhma-finish.ts";
@@ -55,12 +56,21 @@ export interface ProductFaqItem {
  * whether the part suits the environment, backset and door thickness decide whether it
  * fits the door, and everything after that is refinement.
  */
+/*
+  Three locales per row.
+
+  This table was `en`/`es` only until 2026-09-17, and the builder below asked
+  `locale === "es"` — so every Portuguese product page got the ENGLISH question set under
+  a heading that also could not be Portuguese. 415 pages, one ternary.
+*/
 const QUESTIONS: Array<{
   labels: string[];
   en: (model: string) => string;
   es: (model: string) => string;
+  pt: (model: string) => string;
   enA: (model: string, value: string) => string;
   esA: (model: string, value: string) => string;
+  ptA: (model: string, value: string) => string;
 }> = [
   /*
     First, and only where a record states it. Eighteen models are called Panic Exit Device
@@ -74,92 +84,118 @@ const QUESTIONS: Array<{
     labels: ["Type", "Product Type", "Lock Type"],
     en: (m) => `What type of hardware is the ${m}?`,
     es: (m) => `¿Qué tipo de herraje es el ${m}?`,
+    pt: (m) => `Que tipo de ferragem é o ${m}?`,
     enA: (m, v) => `The ${m} is a ${v}.`,
     esA: (m, v) => `El ${m} es un ${v}.`,
+    ptA: (m, v) => `O ${m} é um ${v}.`,
   },
   {
     labels: ["Material"],
     en: (m) => `What is the ${m} made from?`,
     es: (m) => `¿De qué material es el ${m}?`,
+    pt: (m) => `De que material é o ${m}?`,
     enA: (m, v) => `The ${m} is made from ${v}.`,
     esA: (m, v) => `El ${m} está fabricado en ${v}.`,
+    ptA: (m, v) => `O ${m} é fabricado em ${v}.`,
   },
   {
     labels: ["Finish", "Finishes", "Surface Finish", "Finishes Available"],
     en: (m) => `Which finishes is the ${m} available in?`,
     es: (m) => `¿En qué acabados está disponible el ${m}?`,
+    pt: (m) => `Em que acabamentos o ${m} está disponível?`,
     enA: (m, v) => `The ${m} is available in ${v}.`,
     esA: (m, v) => `El ${m} está disponible en ${v}.`,
+    ptA: (m, v) => `O ${m} está disponível em ${v}.`,
   },
   {
     labels: ["Backset"],
     en: (m) => `What backset does the ${m} use?`,
     es: (m) => `¿Qué entrada (backset) tiene el ${m}?`,
+    pt: (m) => `Qual a distância ao eixo do ${m}?`,
     enA: (m, v) => `The ${m} has a backset of ${v}.`,
     esA: (m, v) => `El ${m} tiene una entrada de ${v}.`,
+    ptA: (m, v) => `O ${m} tem distância ao eixo de ${v}.`,
   },
   {
     labels: ["Door thickness", "Suitable Door Thickness", "Door Thickness Range"],
     en: (m) => `What door thickness does the ${m} suit?`,
     es: (m) => `¿Para qué espesor de puerta sirve el ${m}?`,
+    pt: (m) => `Para que espessura de porta serve o ${m}?`,
     enA: (m, v) => `The ${m} suits a door thickness of ${v}.`,
     esA: (m, v) => `El ${m} sirve para un espesor de puerta de ${v}.`,
+    ptA: (m, v) => `O ${m} serve para espessura de porta de ${v}.`,
   },
   {
     labels: ["Function"],
     en: (m) => `What function does the ${m} provide?`,
     es: (m) => `¿Qué función cumple el ${m}?`,
+    pt: (m) => `Que função o ${m} cumpre?`,
     enA: (m, v) => `The ${m} provides ${v}.`,
     esA: (m, v) => `El ${m} cumple la función ${v}.`,
+    ptA: (m, v) => `O ${m} cumpre a função ${v}.`,
   },
   {
     labels: ["Centre distance", "Center Distance", "Grip centre distance"],
     en: (m) => `What is the centre distance on the ${m}?`,
     es: (m) => `¿Cuál es la distancia entre ejes del ${m}?`,
+    pt: (m) => `Qual a distância entre centros do ${m}?`,
     enA: (m, v) => `The centre distance on the ${m} is ${v}.`,
     esA: (m, v) => `La distancia entre ejes del ${m} es ${v}.`,
+    ptA: (m, v) => `A distância entre centros do ${m} é ${v}.`,
   },
   {
     labels: ["Cycle life", "Durability"],
     en: (m) => `How many cycles is the ${m} tested to?`,
     es: (m) => `¿A cuántos ciclos está probado el ${m}?`,
+    pt: (m) => `A quantos ciclos o ${m} foi ensaiado?`,
     enA: (m, v) => `The ${m} is tested to ${v}.`,
     esA: (m, v) => `El ${m} está probado a ${v}.`,
+    ptA: (m, v) => `O ${m} foi ensaiado a ${v}.`,
   },
   {
     labels: ["Application", "Suitable for", "Suitable For", "Door Type"],
     en: (m) => `Where is the ${m} used?`,
     es: (m) => `¿Dónde se usa el ${m}?`,
+    pt: (m) => `Onde o ${m} é usado?`,
     enA: (m, v) => `The ${m} is used on ${v}.`,
     esA: (m, v) => `El ${m} se usa en ${v}.`,
+    ptA: (m, v) => `O ${m} é usado em ${v}.`,
   },
   {
     labels: ["Handing"],
     en: (m) => `Is the ${m} handed?`,
     es: (m) => `¿El ${m} tiene mano (izquierda/derecha)?`,
+    pt: (m) => `O ${m} tem mão (esquerda/direita)?`,
     enA: (m, v) => `Handing for the ${m}: ${v}.`,
     esA: (m, v) => `Mano del ${m}: ${v}.`,
+    ptA: (m, v) => `Mão do ${m}: ${v}.`,
   },
   {
     labels: ["Size", "Sizes", "Plate size", "Length"],
     en: (m) => `What size is the ${m}?`,
     es: (m) => `¿Qué medidas tiene el ${m}?`,
+    pt: (m) => `Que medidas tem o ${m}?`,
     enA: (m, v) => `The ${m} measures ${v}.`,
     esA: (m, v) => `El ${m} mide ${v}.`,
+    ptA: (m, v) => `O ${m} mede ${v}.`,
   },
   {
     labels: ["Cylinder", "Lock Cylinder", "Cylinder Type"],
     en: (m) => `What cylinder does the ${m} take?`,
     es: (m) => `¿Qué cilindro admite el ${m}?`,
+    pt: (m) => `Que cilindro o ${m} aceita?`,
     enA: (m, v) => `The ${m} takes a ${v} cylinder.`,
     esA: (m, v) => `El ${m} admite un cilindro ${v}.`,
+    ptA: (m, v) => `O ${m} aceita um cilindro ${v}.`,
   },
   {
     labels: ["Packing", "Pieces per carton"],
     en: (m) => `How is the ${m} packed?`,
     es: (m) => `¿Cómo se embala el ${m}?`,
+    pt: (m) => `Como o ${m} é embalado?`,
     enA: (m, v) => `The ${m} is packed as ${v}.`,
     esA: (m, v) => `El ${m} se embala como ${v}.`,
+    ptA: (m, v) => `O ${m} é embalado como ${v}.`,
   },
 ];
 
@@ -170,7 +206,9 @@ const MIN_ITEMS = 3;
 
 export function productFaqItems(product: Product, locale: Locale = "en"): ProductFaqItem[] {
   const es = locale === "es";
-  const rows = es && product.specsEs?.length ? product.specsEs : product.specs;
+  const pt = locale === "pt";
+  const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+  const rows = localeRows?.length ? localeRows : product.specs;
   const byLabel = new Map<string, string>();
   for (const row of rows) {
     const value = row.unit ? `${row.value} ${row.unit}` : row.value;
@@ -183,7 +221,7 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     back to the product name.
   */
   const subject = product.modelTbc
-    ? ((es && product.nameEs) || product.name)
+    ? ((es && product.nameEs) || (pt && product.namePt) || product.name)
     : product.model;
 
   /*
@@ -197,7 +235,11 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     decision reaches this file too instead of being re-spelled here.
   */
   const lookupLabels = (labels: string[]) =>
-    es ? labels.flatMap((l) => [l, SPEC_LABELS_ES[l]]).filter(Boolean) : labels;
+    es
+      ? labels.flatMap((l) => [l, SPEC_LABELS_ES[l]]).filter(Boolean)
+      : pt
+        ? labels.flatMap((l) => [l, SPEC_LABELS_PT[l]]).filter(Boolean)
+        : labels;
 
   const items: ProductFaqItem[] = [];
   for (const entry of QUESTIONS) {
@@ -206,8 +248,12 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     if (!label) continue;
     const value = byLabel.get(label) as string;
     items.push({
-      question: es ? entry.es(subject) : entry.en(subject),
-      answer: es ? entry.esA(subject, value) : entry.enA(subject, value),
+      question: pt ? entry.pt(subject) : es ? entry.es(subject) : entry.en(subject),
+      answer: pt
+        ? entry.ptA(subject, value)
+        : es
+          ? entry.esA(subject, value)
+          : entry.enA(subject, value),
     });
   }
 
@@ -252,10 +298,14 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
       items.push({
         question: es
           ? `¿Qué código de acabado ANSI/BHMA corresponde al ${subject}?`
-          : `What is the ANSI/BHMA finish code for the ${subject}?`,
+          : pt
+            ? `Qual é o código de acabamento ANSI/BHMA do ${subject}?`
+            : `What is the ANSI/BHMA finish code for the ${subject}?`,
         answer: es
           ? `Sobre la base de ${statedMaterial} del ${subject}, sus acabados corresponden a ${listed} según ANSI/BHMA A156.18.`
-          : `Over the ${statedMaterial} base of the ${subject}, its finishes correspond to ${listed} under ANSI/BHMA A156.18.`,
+          : pt
+            ? `Sobre a base de ${statedMaterial} do ${subject}, os seus acabamentos correspondem a ${listed} pela ANSI/BHMA A156.18.`
+            : `Over the ${statedMaterial} base of the ${subject}, its finishes correspond to ${listed} under ANSI/BHMA A156.18.`,
       });
     }
   }
@@ -273,10 +323,14 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     items.push({
       question: es
         ? `¿Qué normas cumple el ${subject}?`
-        : `Which standards does the ${subject} hold?`,
+        : pt
+          ? `Que normas o ${subject} cumpre?`
+          : `Which standards does the ${subject} hold?`,
       answer: es
         ? `El ${subject} cumple ${names}.`
-        : `The ${subject} holds ${names}.`,
+        : pt
+          ? `O ${subject} cumpre ${names}.`
+          : `The ${subject} holds ${names}.`,
     });
   }
 
@@ -285,7 +339,9 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
 
 /** The heading the visible block uses, so the page and the markup cannot drift. */
 export function productFaqHeading(locale: Locale = "en"): string {
-  return locale === "es" ? "Preguntas frecuentes" : "Common questions";
+  if (locale === "es") return "Preguntas frecuentes";
+  if (locale === "pt") return "Perguntas frequentes";
+  return "Common questions";
 }
 
 /**
@@ -293,5 +349,7 @@ export function productFaqHeading(locale: Locale = "en"): string {
  * Exported so a caller never reaches into the glossary and invents a second spelling.
  */
 export function specLabel(label: string, locale: Locale = "en"): string {
-  return locale === "es" ? (SPEC_LABELS_ES[label] ?? label) : label;
+  if (locale === "es") return SPEC_LABELS_ES[label] ?? label;
+  if (locale === "pt") return SPEC_LABELS_PT[label] ?? label;
+  return label;
 }

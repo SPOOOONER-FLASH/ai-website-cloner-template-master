@@ -33,16 +33,20 @@
       "value": "2.5kg"
     },
     {
+      "label": "Available lengths",
+      "value": "452–600mm"
+    },
+    {
       "label": "Fixing screw",
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ10mm"
-    },
-    {
       "label": "Fixing hole (glass door)",
       "value": "φ16mm"
+    },
+    {
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel with timber grip",
@@ -50,7 +54,10 @@
     "Satin stainless with timber",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t2750-stainless-steel-handle.webp",
@@ -58,6 +65,26 @@
     "label": "T2750 Stainless Steel Handle"
   },
   "gallery": [
+    {
+      "src": "/images/products/t2750-stainless-steel-handle-9.webp",
+      "ratio": "1 / 1",
+      "label": "T2750 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2750-stainless-steel-handle-10.webp",
+      "ratio": "1 / 1",
+      "label": "T2750 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2750-stainless-steel-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "T2750 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2750-stainless-steel-handle-12.webp",
+      "ratio": "1 / 1",
+      "label": "T2750 Stainless Steel Handle, dimension drawing"
+    },
     {
       "src": "/images/products/t2750-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
@@ -94,26 +121,6 @@
       "label": "T2750 Stainless Steel Handle, view 8"
     },
     {
-      "src": "/images/products/t2750-stainless-steel-handle-9.webp",
-      "ratio": "1 / 1",
-      "label": "T2750 Stainless Steel Handle, dimension drawing"
-    },
-    {
-      "src": "/images/products/t2750-stainless-steel-handle-10.webp",
-      "ratio": "1 / 1",
-      "label": "T2750 Stainless Steel Handle, dimension drawing"
-    },
-    {
-      "src": "/images/products/t2750-stainless-steel-handle-11.webp",
-      "ratio": "1 / 1",
-      "label": "T2750 Stainless Steel Handle, dimension drawing"
-    },
-    {
-      "src": "/images/products/t2750-stainless-steel-handle-12.webp",
-      "ratio": "1 / 1",
-      "label": "T2750 Stainless Steel Handle, dimension drawing"
-    },
-    {
       "src": "/images/products/t2750-stainless-steel-handle-13.webp",
       "ratio": "1 / 1",
       "label": "T2750 Stainless Steel Handle, view 13"
@@ -147,7 +154,50 @@
     "artunion": {
       "id": "T2750-11-708-L452",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox.",
+  "specsPt": [
+    {
+      "label": "Comprimento total",
+      "value": "452 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "P=425 mm"
+    },
+    {
+      "label": "Diâmetro do tubo",
+      "value": "Ø27 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "67 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "2.5 kg"
+    },
+    {
+      "label": "Comprimentos disponíveis",
+      "value": "452–600 mm"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M8"
+    },
+    {
+      "label": "Furo de fixação (porta de vidro)",
+      "value": "φ16 mm"
+    },
+    {
+      "label": "Furo de fixação (porta de madeira)",
+      "value": "φ10 mm"
+    }
+  ],
+  "seoTitlePt": "T2750 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox T2750 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

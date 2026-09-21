@@ -1,10 +1,13 @@
+import { articleFaqHeading, articleFaqItems, articleFaqLocale } from "@/lib/article-faq";
 import Link from "next/link";
 import type { NewsArticle } from "@/data/types";
-import { NEWS_KIND_LABEL, NEWS_KIND_LABEL_ES, formatNewsDate } from "@/data/news";
+import { newsKindLabels, formatNewsDate } from "@/data/news";
 import { getDownloadsByIds, formatDownloadSize } from "@/data/downloads";
 import { getProductByModel, isPublished } from "@/data/products";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { NewsVisual } from "./NewsVisual";
+import type { Locale } from "@/data/site";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -48,6 +51,18 @@ const COPY = {
     about:
       " — Canton Hyland fabrica dispositivos antipánico, cerraduras y herrajes arquitectónicos para obra comercial e institucional, y suministra a prescriptores y distribuidores en todo el mundo.",
   },
+  pt: {
+    home: "Início",
+    news: "Notícias e imprensa",
+    back: "← Voltar a todas as notícias",
+    pressEnquiries: "Contatos de imprensa",
+    contact: "Contato",
+    mentioned: "Produtos mencionados",
+    pressKit: "Kit de imprensa",
+    aboutTitle: "Sobre a Canton Hyland",
+    about:
+      " — a Canton Hyland fabrica barras antipânico, fechaduras e ferragens arquitetónicas para obra comercial e institucional, e fornece prescritores e distribuidores em todo o mundo.",
+  },
 } as const;
 
 export function NewsDetail({
@@ -55,19 +70,34 @@ export function NewsDetail({
   locale = "en",
 }: {
   article: NewsArticle;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const t = COPY[locale];
-  const base = locale === "es" ? "/es" : "";
-  const es = locale === "es";
+  const base = locale === "en" ? "" : `/${locale}`;
   /*
     Falls back to the English field when a translation is missing rather than rendering
-    an empty heading. An untranslated article reads as English on a Spanish page, which is
-    visibly incomplete — and visibly incomplete is the state that gets fixed.
+    an empty heading. An untranslated article reads as English on a Spanish or Portuguese
+    page, which is visibly incomplete — and visibly incomplete is the state that gets
+    fixed. English, never the other translation: see src/lib/localised.ts.
+
+    The body is taken only when it is COMPLETE. A half-translated article rendered as a
+    mix of two languages looks like a rendering bug rather than a gap, so the length has
+    to match paragraph for paragraph or the whole English body is used.
   */
-  const title = (es && article.titleEs) || article.title;
-  const summary = (es && article.summaryEs) || article.summary;
-  const body = (es && article.bodyEs?.length === article.body.length && article.bodyEs) || article.body;
+  /* One place that knows this page only has Spanish for the author, product and attachment
+     strings. Portuguese falls back to English until those fields exist, which is the rule
+     in src/lib/localised.ts and not an oversight. */
+  const es = locale === "es";
+  /* English, never Spanish, for the fields that have no Portuguese yet. */
+  const pickText = (en?: string, esText?: string, ptText?: string) =>
+    (locale === "es" ? esText : locale === "pt" ? ptText : undefined) ?? en;
+  const titleFor = { en: article.title, es: article.titleEs, pt: article.titlePt };
+  const summaryFor = { en: article.summary, es: article.summaryEs, pt: article.summaryPt };
+  const bodyFor = { en: article.body, es: article.bodyEs, pt: article.bodyPt };
+  const title = titleFor[locale] || article.title;
+  const summary = summaryFor[locale] || article.summary;
+  const localeBody = bodyFor[locale];
+  const body = localeBody?.length === article.body.length ? localeBody : article.body;
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -77,6 +107,10 @@ export function NewsDetail({
     category, so the same rule applies: resolve the model, then drop it if it is not
     published. The article's own prose still names the model; only the link goes.
   */
+  const faq = articleFaqItems(article, locale);
+  /* The heading goes in the language of the questions, not of the page — see the note on
+     articleFaqLocale. A translated heading over untranslated pairs reads as a bug. */
+  const faqLocale = articleFaqLocale(article, locale);
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
@@ -118,7 +152,7 @@ export function NewsDetail({
           {/* Left column: the dateline, the contact route, and any linked products. */}
           <div className="col-span-full lg:col-span-4 xl:col-span-8">
             <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-              {(es ? NEWS_KIND_LABEL_ES : NEWS_KIND_LABEL)[article.kind]}
+              {newsKindLabels(locale)[article.kind]}
             </p>
             <time
               dateTime={article.publishedAt}
@@ -153,7 +187,7 @@ export function NewsDetail({
                   )}
                 </span>
                 <span className="mt-4 block">
-                  {(es && article.author.roleEs) || article.author.role}
+                  {(es && article.author.roleEs) || (locale === "pt" && article.author.rolePt) || article.author.role}
                 </span>
                 {article.author.credential ? (
                   <span className="block text-ink-tertiary">{article.author.credential}</span>
@@ -191,7 +225,7 @@ export function NewsDetail({
                         href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                         className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
-                        {product.model} — {(es && product.nameEs) || product.name}
+                        {product.model} — {(es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name}
                       </Link>
                     </li>
                   ))}
@@ -202,7 +236,7 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            <MediaPlaceholder {...article.heroImage} className="aspect-[16/9]" />
+          <NewsVisual article={article} locale={locale} />
           </div>
         </section>
 
@@ -221,6 +255,74 @@ export function NewsDetail({
                 {paragraph}
               </p>
             ))}
+
+            {/*
+              The question-and-answer block.
+
+              Placed after the argument rather than before it, because it is a restatement,
+              not a summary: every answer here is something the paragraphs above have
+              already established. Put first it would give away the conclusions and make
+              the article look like a FAQ page with an essay attached.
+
+              Each pair is one <section> with the question as its heading, so a retrieval
+              system reading the DOM gets the pair as a unit rather than having to guess
+              which paragraph answers which heading. `ArticleFaqJsonLd` emits the same
+              items as FAQPage markup — same source, so the two cannot drift.
+            */}
+            {faq.length ? (
+              <section
+                className="mt-64 border-t border-line pt-32"
+                aria-labelledby="article-faq"
+                /* Marked in the language it is actually in, so a screen reader switches
+                   voice and a search engine is not told English is Portuguese. */
+                lang={faqLocale === locale ? undefined : faqLocale}
+              >
+                <h2 id="article-faq" className="text-h3 text-ink">
+                  {articleFaqHeading(faqLocale)}
+                </h2>
+                {faq.map((item) => (
+                  <section key={item.question} className="mt-32">
+                    <h3 className="text-c1 font-semibold text-ink">{item.question}</h3>
+                    <p className="mt-12 text-c1 text-ink-secondary">{item.answer}</p>
+                  </section>
+                ))}
+              </section>
+            ) : null}
+
+            {/*
+              The take-away file, immediately after the argument for taking it away.
+              Styled as a specification row rather than a button: this is a working
+              document, and a download that announces itself like an advertisement gets
+              read as one.
+            */}
+            {article.attachment ? (
+              <a
+                href={article.attachment.url}
+                className="mt-48 block border-t border-ink pt-16 hover:text-brand-hover"
+                download
+              >
+                <span className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
+                  {article.attachment.format.toUpperCase()} ·{" "}
+                  {Math.round(article.attachment.sizeBytes / 1024)} KB
+                </span>
+                <span className="short-marker short-marker-arrow relative mt-8 block pl-12 text-c1 text-brand">
+                  {pickText(
+                    article.attachment.title,
+                    article.attachment.titleEs,
+                    article.attachment.titlePt,
+                  )}
+                </span>
+                {article.attachment.note ? (
+                  <span className="mt-8 block text-c2 text-ink-secondary">
+                    {pickText(
+                      article.attachment.note,
+                      article.attachment.noteEs,
+                      article.attachment.notePt,
+                    )}
+                  </span>
+                ) : null}
+              </a>
+            ) : null}
 
             {article.gallery && article.gallery.length > 0 ? (
               <div className="mt-48 space-y-48">

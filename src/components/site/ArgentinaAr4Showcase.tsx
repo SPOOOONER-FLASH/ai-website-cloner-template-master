@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import { getProductByModel } from "@/data/products";
@@ -6,9 +7,7 @@ import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 const ar4Models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"] as const;
-
-type Locale = "en" | "es";
-type LocalizedProduct = Product & { nameEs?: string };
+type LocalizedProduct = Product & { nameEs?: string; namePt?: string };
 
 const copy = {
   en: {
@@ -29,6 +28,15 @@ const copy = {
     material: "Caja de hierro niquelado",
     aria: "Colección HYDE Argentina AR-4",
   },
+  pt: {
+    eyebrow: "Mercado sazonal · Argentina",
+    title: "HYDE Argentina AR-4",
+    body: "Quatro caixas de fechadura de embutir compactas para distribuidores do mercado argentino, marca própria e consultas OEM.",
+    cta: "Ver a coleção AR-4",
+    model: "Modelo",
+    material: "Caixa de ferro niquelado",
+    aria: "Coleção HYDE Argentina AR-4",
+  },
 } as const;
 
 function ar4Products(): Product[] {
@@ -39,11 +47,14 @@ function ar4Products(): Product[] {
 
 function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale }) {
   const localized = product as LocalizedProduct;
-  const name = locale === "es" ? localized.nameEs ?? product.name : product.name;
+  /* English, never Spanish, for a locale with no name of its own yet. */
+  const name =
+    (locale === "es" ? localized.nameEs : locale === "pt" ? localized.namePt : undefined) ??
+    product.name;
 
   return (
     <Link
-      href={`${locale === "es" ? "/es" : ""}/products/${product.categoryPath[0]}/${product.slug}/`}
+      href={`${locale === "en" ? "" : `/${locale}`}/products/${product.categoryPath[0]}/${product.slug}/`}
       className={cn(
         "hard-shadow-card group flex flex-col bg-surface",
         // Rail card on a phone, grid cell from `sm` up. See the track below.
@@ -76,6 +87,9 @@ export function ArgentinaAr4Showcase({
 }) {
   const products = ar4Products();
   const text = copy[locale];
+  /* Argentina AR4 is a market collection built in English and Spanish only — it is the
+     one documented exception in PORTUGUESE_MIRROR_PREFIXES — so Portuguese goes to the
+     English page rather than to a /pt/ URL that does not exist. */
   const href = locale === "es" ? "/es/products/argentina-ar4/" : "/products/argentina-ar4/";
 
   return (
@@ -148,7 +162,7 @@ export function ArgentinaAr4Showcase({
 
         {pageHeading ? (
           <div className="col-span-full mt-8 flex justify-end">
-            <ArrowLink href={locale === "es" ? "/es/contact/" : "/contact/"}>
+            <ArrowLink href={`${locale === "en" ? "" : `/${locale}`}/contact/`}>
               {locale === "es" ? "Consultar la colección" : "Discuss the collection"}
             </ArrowLink>
           </div>

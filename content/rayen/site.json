@@ -39,15 +39,15 @@
     "positioningEn": "Door hardware manufacturer in Xiaolan, Zhongshan. Panic exit devices, knob and lever locks, mortise cases, glass door fittings and bathroom hardware — made to drawing or to sample."
   },
   "contact": {
-    "addressZh": "广东省中山市小榄镇联丰社区乐和路 28 号二楼之二",
+    "addressZh": "广东省中山市小榄镇联丰社区乐和路 28 号二楼之一",
     "city": "中山市",
     "province": "广东省",
     "country": "中国",
-    "phone": "",
-    "wechat": "",
-    "email": "",
+    "phone": "+86 138 7316 0696 / +86 137 9419 7190",
+    "wechat": "雷茵&RAYEN 五金制品",
+    "email": "645841671@qq.com",
     "alibaba1688": "https://shop49ed1729u7054.1688.com/",
-    "addressEn": "2/F-2, No. 28 Lehe Road, Lianfeng Community, Xiaolan Town, Zhongshan, Guangdong, China"
+    "addressEn": "2/F-1, No. 28 Lehe Road, Lianfeng Community, Xiaolan Town, Zhongshan, Guangdong, China"
   },
   "capabilities": [
     {
@@ -88,8 +88,9 @@
     }
   ],
   "exportBrands": [],
-  "preview": {
-    "host": "spoonercantonlock.stahlock.com",
-    "note": "临时预览域名，正式域名待定。迁移时只改 src/data/rayen.ts 里的 siteUrl 和 nginx 的 server_name。"
+  "host": {
+    "domain": "rayen.cn",
+    "note": "正式域名，2026-09-15 上线。之前的临时预览域名是 spoonercantonlock.stahlock.com；换域名只改这里和 nginx 的 server_name。",
+    "previousPreviewHost": "spoonercantonlock.stahlock.com"
   }
 }

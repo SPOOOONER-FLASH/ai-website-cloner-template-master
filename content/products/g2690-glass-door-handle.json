@@ -35,7 +35,7 @@
     },
     {
       "label": "Available lengths",
-      "value": "L600 / L1660–2160"
+      "value": "600–2460mm"
     },
     {
       "label": "Fixing screw",
@@ -56,7 +56,9 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g2690-glass-door-handle.webp",
@@ -64,6 +66,11 @@
     "label": "G2690 Glass Door Handle"
   },
   "gallery": [
+    {
+      "src": "/images/products/g2690-glass-door-handle-11.webp",
+      "ratio": "1 / 1",
+      "label": "G2690 Glass Door Handle, dimension drawing"
+    },
     {
       "src": "/images/products/g2690-glass-door-handle-2.webp",
       "ratio": "1 / 1",
@@ -108,11 +115,6 @@
       "src": "/images/products/g2690-glass-door-handle-10.webp",
       "ratio": "1 / 1",
       "label": "G2690 Glass Door Handle, view 10"
-    },
-    {
-      "src": "/images/products/g2690-glass-door-handle-11.webp",
-      "ratio": "1 / 1",
-      "label": "G2690 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g2690-glass-door-handle-12.webp",
@@ -183,7 +185,50 @@
     "artunion": {
       "id": "G2690-20-121-A",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "P=1660–2160 mm（可调）"
+    },
+    {
+      "label": "Segundo centro",
+      "value": "P1 = 750 mm"
+    },
+    {
+      "label": "Comprimento do puxador",
+      "value": "700 mm"
+    },
+    {
+      "label": "Diâmetro do tubo",
+      "value": "Ø22 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "71 mm"
+    },
+    {
+      "label": "Comprimentos disponíveis",
+      "value": "600–2460 mm"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G2690 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G2690 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

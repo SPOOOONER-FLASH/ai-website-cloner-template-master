@@ -61,7 +61,10 @@ export function CapabilityChain({
   locale?: Locale;
   models: number;
 }) {
-  const text = capabilityCopy[locale === "es" ? "es" : "en"];
+  const text = capabilityCopy[locale];
+  /* English, never the other translation — see the note in src/lib/localised.ts. */
+  const pickCopy = (en: string, es: string, pt: string) =>
+    locale === "es" ? es : locale === "pt" ? pt : en;
   const steps = capabilitySteps({ models });
   const [active, setActive] = useState(0);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
@@ -129,7 +132,7 @@ export function CapabilityChain({
     };
   }, [steps.length]);
 
-  const contactHref = locale === "es" ? "/es/contact" : "/contact";
+  const contactHref = `${locale === "en" ? "" : `/${locale}`}/contact`;
 
   return (
     <section className="col-content border-t border-line pt-48" aria-labelledby="capability-heading">
@@ -188,10 +191,10 @@ export function CapabilityChain({
                   </span>
                   <div>
                     <h3 className="text-h3 text-ink">
-                      {locale === "es" ? step.titleEs : step.title}
+                      {pickCopy(step.title, step.titleEs, step.titlePt)}
                     </h3>
                     <p className="mt-16 max-w-[58ch] text-c1 text-ink-secondary">
-                      {locale === "es" ? step.bodyEs : step.body}
+                      {pickCopy(step.body, step.bodyEs, step.bodyPt)}
                     </p>
                     {/*
                       A step without a countable fact shows nothing here. That gap is
@@ -203,7 +206,7 @@ export function CapabilityChain({
                       <p className="mt-24 text-c2 text-ink">
                         <span className="text-lead tabular-nums">{step.figure.value}</span>{" "}
                         <span className="text-ink-secondary">
-                          {locale === "es" ? step.figure.labelEs : step.figure.label}
+                          {pickCopy(step.figure.label, step.figure.labelEs, step.figure.labelPt)}
                         </span>
                       </p>
                     ) : null}

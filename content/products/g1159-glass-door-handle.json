@@ -26,16 +26,16 @@
       "value": "29mm"
     },
     {
-      "label": "Rose depth",
-      "value": "59.5mm"
-    },
-    {
       "label": "Projection",
-      "value": "20.6mm"
+      "value": "59.5mm"
     },
     {
       "label": "Weight",
       "value": "1.2kg"
+    },
+    {
+      "label": "Available lengths",
+      "value": "445.6–550.6mm"
     },
     {
       "label": "Fixing screw",
@@ -55,7 +55,9 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g1159-glass-door-handle.webp",
@@ -63,16 +65,6 @@
     "label": "G1159 Glass Door Handle"
   },
   "gallery": [
-    {
-      "src": "/images/products/g1159-glass-door-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "G1159 Glass Door Handle, view 2"
-    },
-    {
-      "src": "/images/products/g1159-glass-door-handle-3.webp",
-      "ratio": "1 / 1",
-      "label": "G1159 Glass Door Handle, view 3"
-    },
     {
       "src": "/images/products/g1159-glass-door-handle-4.webp",
       "ratio": "1 / 1",
@@ -82,6 +74,16 @@
       "src": "/images/products/g1159-glass-door-handle-5.webp",
       "ratio": "1 / 1",
       "label": "G1159 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g1159-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G1159 Glass Door Handle, view 2"
+    },
+    {
+      "src": "/images/products/g1159-glass-door-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "G1159 Glass Door Handle, view 3"
     },
     {
       "src": "/images/products/g1159-glass-door-handle-6.webp",
@@ -122,7 +124,50 @@
     "artunion": {
       "id": "G1159-01-333-L550",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimento total",
+      "value": "550.6 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "P=530 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "29 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "59.5 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1.2 kg"
+    },
+    {
+      "label": "Comprimentos disponíveis",
+      "value": "445.6–550.6 mm"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G1159 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G1159 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

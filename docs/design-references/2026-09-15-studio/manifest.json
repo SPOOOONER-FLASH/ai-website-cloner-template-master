@@ -1,0 +1,27 @@
+{
+  "method": "Built-in image_gen background editing; visually compared against catalogue originals. Not byte-identical foregrounds.",
+  "selected": [
+    {
+      "id": "311-warm-grey",
+      "slug": "311-panic-exit-device",
+      "en": "311 in a warm grey studio setting. Product photograph with an edited background.",
+      "es": "311 sobre un fondo de estudio gris cálido. Fotografía del producto con fondo editado.",
+      "source": "public/images/products/311-panic-exit-device.webp",
+      "editedSha256": "3d7fa7a0c5c6504caf780ab678f57fe323c8ae448cde834c3de29a4a8d90ee79"
+    },
+    {
+      "id": "9001-warm-stone",
+      "slug": "9001-stainless-steel-handle",
+      "en": "9001 lever and escutcheon on a pale stone backdrop. Product photograph with an edited background.",
+      "es": "Manija y bocallave 9001 sobre un fondo de piedra clara. Fotografía del producto con fondo editado.",
+      "source": "public/images/products/9001-stainless-steel-handle.webp",
+      "editedSha256": "94c88d0d850c666d36b30073762663227002762958c844127090e67bdf160559"
+    }
+  ],
+  "rejected": [
+    "307 dark versions: invented or uncertain housing details",
+    "70SN slate: changed key detail",
+    "Full atlas edit: other foreground products were regenerated"
+  ],
+  "overview": "Native EditorialAtlas uses the unchanged branded 311 catalogue photograph; all other original atlas subjects retained."
+}

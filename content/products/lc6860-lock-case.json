@@ -1,5 +1,5 @@
 {
-  "model": "Lc6860",
+  "model": "LC6860",
   "slug": "lc6860-lock-case",
   "name": "Lock Case",
   "series": "Lock Case",
@@ -28,40 +28,40 @@
   "heroImage": {
     "src": "/images/products/lc6860-lock-case.webp",
     "ratio": "1 / 1",
-    "label": "Hyland Lc6860 Lock Case"
+    "label": "Hyland LC6860 Lock Case"
   },
   "gallery": [
     {
       "src": "/images/products/lc6860-lock-case-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc6860 Lock Case, view 2"
+      "label": "Hyland LC6860 Lock Case, view 2"
     },
     {
       "src": "/images/products/lc6860-lock-case-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc6860 Lock Case, view 3"
+      "label": "Hyland LC6860 Lock Case, view 3"
     },
     {
       "src": "/images/products/lc6860-lock-case-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc6860 Lock Case, view 4"
+      "label": "Hyland LC6860 Lock Case, view 4"
     },
     {
       "src": "/images/products/lc6860-lock-case-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc6860 Lock Case, view 5"
+      "label": "Hyland LC6860 Lock Case, view 5"
     },
     {
       "src": "/images/products/lc6860-lock-case-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland Lc6860 Lock Case, view 6"
+      "label": "Hyland LC6860 Lock Case, view 6"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "Lc6860 Lock Case — Lock Cases | Canton Hyland",
-  "seoDescription": "Canton Hyland Lc6860 lock case. Options: 85 Series, 72 Series, and small-size lock cases available. Manufactured in Guangdong, China. Request a quotation.",
-  "nameEs": "Cerraduras de embutir",
+  "seoTitle": "LC6860 Lock Case — Lock Cases | Canton Hyland",
+  "seoDescription": "Canton Hyland LC6860 lock case. Options: 85 Series, 72 Series, and small-size lock cases available. Manufactured in Guangdong, China. Request a quotation.",
+  "nameEs": "Cerradura de embutir",
   "specsEs": [
     {
       "label": "Entrada",
@@ -77,8 +77,8 @@
     }
   ],
   "summaryEs": "Una caja de cerradura de embutir, distancia entre ejes de 68 mm y entrada de 60 mm.",
-  "seoTitleEs": "Lc6860 Cerraduras de embutir | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland Lc6860 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
+  "seoTitleEs": "LC6860 Cerraduras de embutir | Canton Hyland",
+  "seoDescriptionEs": "Canton Hyland LC6860 cerraduras de embutir. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "summarySource": "https://stahlock.com/index.php?id=2054",
   "features": [
     "Functions: Entrance, Anti-Panic, Privacy, Passage, Storeroom, Deadlock, Classroom, Multi-Function",
@@ -88,7 +88,7 @@
   "featuresSource": {
     "site": "stahlock.com",
     "url": "https://stahlock.com/index.php?id=2054",
-    "model": "Lc6860",
+    "model": "LC6860",
     "fetchedAt": "2026-09-04"
   },
   "videos": [
@@ -97,12 +97,40 @@
       "poster": {
         "src": "/images/products/lc6860-lock-case-video.webp",
         "ratio": "16 / 9",
-        "label": "Lc6860 Lock Case, demonstration still"
+        "label": "LC6860 Lock Case, demonstration still"
       },
-      "label": "Lc6860 Lock Case — product demonstration",
+      "label": "LC6860 Lock Case — product demonstration",
       "durationSeconds": 30,
       "uploadDate": "2026-09-08"
     }
   ],
-  "description": ""
+  "description": "",
+  "namePt": "Caixa de fechadura",
+  "summaryPt": "Caixa de fechadura.",
+  "specsPt": [
+    {
+      "label": "Distância à testa",
+      "value": "60 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "68 mm"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Latão polido (PB), Latão antigo (AB), Cobre antigo (AC), Aço inoxidável (SS), Níquel acetinado (SN) — todos disponíveis"
+    }
+  ],
+  "seoTitlePt": "LC6860 Caixa de fechadura | Canton Hyland",
+  "seoDescriptionPt": "Caixa de fechadura LC6860 da Canton Hyland — caixas de fechadura. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Funções: entrada, antipânico, banheiro, passagem, depósito, trava, sala de aula, multifunção",
+    "Opções: séries 85 e 72, e caixas de fechadura em tamanho reduzido",
+    "Personalização: medidas fora de padrão e dimensões sob medida para OEM e ODM"
+  ],
+  "featuresEs": [
+    "Funciones: entrada, antipánico, privacidad, paso libre, almacén, bloqueo, aula y multifunción",
+    "Opciones: serie 85, serie 72 y cajas de cerradura de tamaño reducido",
+    "Personalización: se admiten medidas irregulares y dimensiones a medida para OEM y ODM"
+  ]
 }

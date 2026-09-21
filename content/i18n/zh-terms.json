@@ -13,6 +13,7 @@
   ],
   "specLabels": {
     "2. Dual center distances": "双中心距",
+    "90° hold-open": "90°辅助定位",
     "Accessories": "配件",
     "Additional Info": "补充说明",
     "Alarm Function": "报警功能",
@@ -32,6 +33,7 @@
     "Base width": "底座宽度",
     "Body": "主体",
     "Body diameter": "主体直径",
+    "Body size": "主体尺寸",
     "Bolt projection": "舌伸出",
     "Bolts": "插销",
     "Bracket": "支架",
@@ -46,8 +48,10 @@
     "Centre distance": "中心距",
     "Centre distances": "中心距",
     "Chassis": "锁芯座",
+    "Closing force": "闭门力矩",
     "Closing Force": "闭门力",
     "Closing Sequence": "关门顺序",
+    "Closing valve": "闭速调节阀",
     "Color": "颜色",
     "Color Options": "可选颜色",
     "Compatibility": "兼容性",
@@ -57,6 +61,7 @@
     "Cover material": "盖板材质",
     "Cross bore": "锁孔直径",
     "Customization": "定制",
+    "Cut-out": "开孔尺寸",
     "Cycle life": "耐久次数",
     "Cylinder": "锁芯",
     "Cylinder apertures": "葫芦孔",
@@ -75,10 +80,12 @@
     "Diameter": "直径",
     "Diameter size": "直径尺寸",
     "Door cutout": "门体开孔",
+    "Door leaf thickness": "门扇厚度",
     "Door thickness": "适用门厚",
     "Door Thickness Range": "适用门厚范围",
     "Door Type": "门型",
     "Door Width": "门宽",
+    "Double action": "双向开关门",
     "Drop": "下垂长度",
     "Durability": "耐久性",
     "Exposed Trim Material": "外露件材质",
@@ -108,8 +115,10 @@
     "Glass cutout": "玻璃开孔",
     "Glass door thickness": "玻璃门厚度",
     "Glass gap": "玻璃间隙",
+    "Glass thickness": "玻璃厚度",
     "Grip centre distance": "拉手中心距",
     "Grip length": "拉手长度",
+    "Grip reach": "握把伸出",
     "Grip section": "拉手截面",
     "Grip width": "握把宽度",
     "Gross weight": "毛重",
@@ -121,6 +130,7 @@
     "Hardware Finish": "五金表面处理",
     "Height": "高度",
     "Height above fixing": "固定点以上高度",
+    "Hold-open range": "停位角度",
     "Hole Count": "孔数",
     "Hook arm": "钩臂",
     "Hook bolt": "钩舌",
@@ -171,8 +181,13 @@
     "Market": "市场",
     "Material": "材质",
     "Max Bearing Capacity": "最大承重",
+    "Max door thickness": "最大门厚",
+    "Max door weight": "最大门扇重量",
+    "Max door width (spindle to edge)": "轴芯离边最大门宽",
     "Max opening angle": "最大开启角度",
     "Mechanism": "机构",
+    "Min door thickness": "最小门厚",
+    "Minimum order": "最小起订量",
     "Minimum wall depth": "墙体最小厚度",
     "Model": "型号",
     "Mounting": "安装",
@@ -197,9 +212,11 @@
     "Overall length": "总长",
     "Overall width": "总宽度",
     "Packing": "包装",
+    "Pairs with": "配套型号",
     "Pieces per carton": "每箱数量",
     "Pin Material": "销轴材质",
     "Plate height": "面板高度",
+    "Plate length": "面板长度",
     "Plate size": "面板尺寸",
     "Plate thickness": "面板厚度",
     "Plate width": "面板宽度",
@@ -222,6 +239,8 @@
     "Screws": "螺丝",
     "Second centre": "第二中心距",
     "Section": "截面",
+    "Series": "系列",
+    "Set configuration": "组合方式",
     "Set Includes": "套装包含",
     "Size": "尺寸",
     "Size1": "尺寸 1",
@@ -235,6 +254,7 @@
     "Slot width": "槽宽",
     "Specifications": "规格",
     "Spindle": "方轴",
+    "Spindle centre": "方轴中心距",
     "Spindle Hole": "方轴孔",
     "Spindle length": "方轴长度",
     "Spindle Material": "方轴材质",
@@ -260,16 +280,56 @@
     "Tube diameter": "管径",
     "Tube section": "管截面",
     "Tube Thickness": "管壁厚度",
+    "Two-stage closing valve": "闭速两段调节阀",
     "Type": "类型",
     "Unlocking Method": "开锁方式",
     "Upper hook": "上钩",
     "Use": "用途",
     "Used with": "配套型号",
+    "Variants": "规格档位",
     "Viewing angle": "可视角度",
     "Viewing Angle": "可视角度",
     "Wall cutout": "墙面开孔",
     "Weight": "重量",
-    "Width": "宽度"
+    "Width": "宽度",
+    "Centre distance, horizontal": "横向中心距",
+    "Centre distance, vertical": "竖向中心距",
+    "Corner offset": "转角固定孔距",
+    "End to fixing": "端部至固定孔",
+    "Length bands": "长度分档",
+    "Bearings": "轴承数",
+    "Leaf size": "页片尺寸",
+    "Knuckle diameter": "轴筒直径",
+    "Maximum load capacity (2 hinges)": "两个铰链最大承重",
+    "Minimum door thickness": "门扇最小厚度",
+    "Maximum door width": "门扇最大宽度",
+    "Milling cutter diameter": "铣刀槽切直径",
+    "Routing length": "开槽长度",
+    "Routing depth": "开槽深度",
+    "Adjustment": "可调范围",
+    "Opening angle": "开启角度",
+    "Leaf width": "叶片宽度",
+    "Width across leaves": "两叶展开宽度",
+    "Routing section": "开槽断面",
+    "Routing": "开槽",
+    "Routing size": "开槽尺寸",
+    "Routing edge distance": "开槽边距",
+    "Overall size": "外形尺寸",
+    "Maximum door weight": "最大门重",
+    "Three-dimensional adjustment": "三维可调参数",
+    "Maximum opening angle": "最大开启角度",
+    "Hold-open": "停门角度",
+    "Installation direction": "安装方向",
+    "Installation method": "安装方式",
+    "Suitable door types": "适用门型",
+    "Finishing process": "表面处理",
+    "Function options": "功能选择",
+    "Temperature range": "温度范围",
+    "Service life": "使用寿命",
+    "Maximum door height and width": "最大门高门宽",
+    "Main feature": "主要特点",
+    "Dimensions": "尺寸",
+    "Base plate": "底板"
   },
   "productNames": {
     "Bathroom Accessories": "浴室配件",
@@ -292,7 +352,7 @@
     "Glass Door Patch Fitting Set": "玻璃门夹套装",
     "Door Closer": "闭门器",
     "Latch": "锁舌",
-    "Door Stopper": "门碰",
+    "Door Stopper": "门吸",
     "Deadbolts": "呆锁",
     "Commercial Lock": "商用锁",
     "Security Door Guard": "防盗链",
@@ -329,7 +389,12 @@
     "Stainless Steel Wall Hook": "不锈钢挂钩",
     "Wooden Door Floor Hinge": "木门地弹簧",
     "Panic Exit Device Trim": "逃生推杠外装置",
-    "Panic Exit Device Lock Case": "逃生推杠锁体"
+    "Panic Exit Device Lock Case": "逃生推杠锁体",
+    "Door Knob": "旋钮锁",
+    "Ball Bearing Hinge": "轴承合页",
+    "Concealed Hinge": "隐藏铰链",
+    "Concealed Hydraulic Hinge": "暗藏液压铰链",
+    "Hydraulic Hinge": "液压合页"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -424,7 +489,75 @@
     "Copper Construction": "红铜结构",
     "Available": "可选",
     "Euro profile": "欧标锁芯",
-    "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.": "304 不锈钢电镀，用于逃生推杠"
+    "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.": "304 不锈钢电镀，用于逃生推杠",
+    "Up and down: ±2.5mm; Left and right: ±1.5mm; Front and back: ±1.0mm": "上下 ±2.5mm / 左右 ±1.5mm / 前后 ±1.0mm",
+    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±1.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±1.0mm",
+    "Up and down: ±3.0mm; Left and right: ±3.0mm; Front and back: ±1.0mm": "上下 ±3.0mm / 左右 ±3.0mm / 前后 ±1.0mm",
+    "Up and down: ±1.5mm; Front and back: ±1.5mm": "上下 ±1.5mm / 前后 ±1.5mm（二维）",
+    "Up and down: ±2.5mm; Left and right: ±2.0mm; Front and back: ±2.5mm": "上下 ±2.5mm / 左右 ±2.0mm / 前后 ±2.5mm",
+    "Up and down: ±3.0mm; Left and right: +3.5/-2.0mm; Front and back: ±1.5mm": "上下 ±3.0mm / 左右 +3.5/-2.0mm / 前后 ±1.5mm",
+    "Up and down: ±3.0mm; Left and right: ±2.0mm; Front and back: ±2.0mm": "上下 ±3.0mm / 左右 ±2.0mm / 前后 ±2.0mm",
+    "Zinc Alloy + Aviation aluminium": "锌合金 + 航空铝",
+    "Zinc Alloy + Aluminium Alloy": "锌合金 + 铝合金",
+    "Zinc Alloy + Aviation aluminium + 304 Stainless Steel": "锌合金 + 航空铝 + 304不锈钢",
+    "Doors of every kind": "各式门扇",
+    "Stops the door striking the wall": "防止门与墙的碰撞",
+    "Concealed floor stop": "隐藏式地吸",
+    "Non-magnetic windproof floor stop": "无磁防风地吸",
+    "Magnetic silent floor stop": "磁力静音地吸",
+    "Door-top stop": "门顶",
+    "Door leaf 5mm / frame 5mm": "门扇 5mm／门框 5mm",
+    "Door leaf 4-13mm / frame 4-13mm": "门扇 4-13mm／门框 4-13mm",
+    "60kg (2 hydraulic) / 80kg (2 hydraulic + 1 plain leaf) / 90kg (3 hydraulic)": "60kg（2 只液压承重）／80kg（2 只液压 + 1 空页承重）／90kg（3 只液压承重）",
+    "In and out ±1.0mm / up and down ±2.5mm / left and right ±1.5mm": "前后方向 ±1.0mm／上下方向 ±2.5mm／左右方向 ±1.5mm",
+    "In and out ±1.0mm / up and down ±2.0mm / left and right ±1.5mm": "前后方向 ±1.0mm／上下方向 ±2.0mm／左右方向 ±1.5mm",
+    "In and out ±1.0mm / up and down ±2.0mm / left and right ±2.0mm": "前后方向 ±1.0mm／上下方向 ±2.0mm／左右方向 ±2.0mm",
+    "Any angle between 90° and 180°": "90°-180° 任意角度定位",
+    "Any angle between 90° and 110°": "90°-110° 任意角度定位",
+    "Any angle between 90° and 180°, positive stop at 160°": "90°-180° 任意角度停位，160° 定位",
+    "Three-dimensionally adjustable; Self-closing hydraulic buffer; Closing speed adjustable fast or slow, no tool needed; Shallow routing, no hydraulic tail rod": "三维可调；自闭液压缓冲；快慢可调节，无需借助工具调节；开槽浅，无液压尾杆",
+    "28mm narrow and 10mm slim; 45mm rebated door keeps a 4mm edge distance; Shallow frame routing that does not cut into the aluminium frame body; Fully concealed, closes flush when routed in; Hydraulic buffer with integrated damping; Three-dimensionally adjustable, precise and quick; Damping adjustable fast or slow, closing speed under control; 110° opening angle, self-closing with a silent buffer": "28mm 极窄 × 10mm 超薄；45mm 企口门，门边距可保留 4mm；门框开槽浅，不会破坏铝框内部框体；全暗藏设计，开槽安装严丝合缝；液压缓冲，采用集成阻尼；三维可调，调节精准便捷；阻尼快慢可调，关门速度尽在掌控；110° 开门角度，自动闭合静音缓冲",
+    "Handed neither left nor right, top nor bottom": "不分左右／不分上下",
+    "Routed in": "开槽安装",
+    "Rebated door, aluminium-framed door, wooden door": "企口门、铝框门、木门",
+    "70kg (2 hinges)": "70kg（2 个铰链）",
+    "140mm × 34mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)": "140mm × 34mm × 4mm（门框门扇各 4mm 深，或门扇单独开 8mm 深）",
+    "158mm × 36mm × 4mm (4mm deep in both frame and leaf, or 8mm deep in the leaf alone)": "158mm × 36mm × 4mm（门框门扇各 4mm 深，或门扇单独开 8mm 深）",
+    "Anodised, electroplated": "氧化，电镀",
+    "Silent hinge; latching hinge; silent latching adjustable hinge": "静音合页、入锁合页、静音入锁可调合页",
+    "Silent latching adjustable hinge": "静音入锁可调合页",
+    "-20°C to 40°C (uses door-closer Fuchs oil)": "-20℃-40℃（采用的是闭门器福斯油）",
+    "More than 500,000 cycles (cylindrical helical compression spring inside)": "50 万次以上（内部结构采用圆柱螺旋压缩弹簧）",
+    "2 hydraulic 55kg or less / 3 hydraulic 75kg or less": "2 只液压 ≤55kg／3 只液压 ≤75kg",
+    "2 hydraulic 75kg or less / 3 hydraulic 100kg or less": "2 只液压 ≤75kg／3 只液压 ≤100kg",
+    "1 plain barrel + 1 hydraulic: height 2000mm or less, width 800mm or less; 2 hydraulic: height 2200mm or less, width 900mm or less; 3 hydraulic: height 2400mm or less, width 1200mm or less": "1 空管 1 液压：门高 ≤2000mm，门宽 ≤800mm；2 只液压：门高 ≤2200mm，门宽 ≤900mm；3 只液压：门高 ≤2400mm，门宽 ≤1200mm",
+    "36.2 × 12.2mm": "36.2 × 12.2mm",
+    "130mm long × 42mm deep": "长 130mm × 深 42mm",
+    "138 × 34mm (34mm leaf) / 132 × 30mm (30mm leaf)": "138 × 34mm（34 宽叶片）／132 × 30mm（30 宽叶片）",
+    "157 × 36mm (36mm leaf) / 157 × 30mm (30mm leaf)": "157 × 36mm（36 宽叶片）／157 × 30mm（30 宽叶片）",
+    "34mm / 30mm": "34mm／30mm",
+    "36mm / 30mm": "36mm／30mm",
+    "23.2mm / 35.2mm": "23.2mm／35.2mm",
+    "Height 46mm; pin Ø14mm; base plate 40 × 30mm; floor ring Ø30 × 6mm": "高 46mm；插销 Ø14mm；底板 40 × 30mm；地面环 Ø30 × 6mm",
+    "Height 50mm; pin Ø14mm; floor ring Ø30 × 6mm": "高 50mm；插销 Ø14mm；地面环 Ø30 × 6mm",
+    "Body 37 × 27 × 39mm; overall height 45mm; floor ring Ø35 × 6mm": "主体 37 × 27 × 39mm；总高 45mm；地面环 Ø35 × 6mm",
+    "Height 40mm; body 17 × 29mm; floor plate Ø62 × 8.2mm": "高 40mm；主体 17 × 29mm；地面板 Ø62 × 8.2mm",
+    "Height 40.5mm; body 29mm wide; floor ring Ø30 × 6mm": "高 40.5mm；主体宽 29mm；地面环 Ø30 × 6mm",
+    "Door plate 28 × 43mm; floor plate 57.5mm": "门板件 28 × 43mm；地面板 57.5mm",
+    "Floor plate 58mm; catch 52 × 33mm": "地面板 58mm；吸头 52 × 33mm",
+    "Door plate 26 × 50mm; catch body 40mm; floor plate 61 × 50mm": "门板件 26 × 50mm；吸头主体 40mm；地面板 61 × 50mm",
+    "45 × 26mm; height 23mm": "45 × 26mm；高 23mm",
+    "Height 75mm; head Ø34mm; base Ø45mm": "高 75mm；吸头 Ø34mm；底座 Ø45mm",
+    "Height 76.5mm; post Ø18mm; base Ø37.5mm": "高 76.5mm；立柱 Ø18mm；底座 Ø37.5mm",
+    "36mm leaf": "36 宽叶片",
+    "34mm leaf": "34 宽叶片",
+    "30mm leaf": "30 宽叶片",
+    "P1=620mm at each end": "两端各 P1=620mm",
+    "25 × 14mm, oval": "25 × 14mm 扁圆",
+    "22 × 22mm, square": "22 × 22mm 方形",
+    "58 × 328mm / 60 × 330mm": "58 × 328mm／60 × 330mm",
+    "1925mm / 2025mm": "1925mm／2025mm",
+    "P=1200mm / P=1300mm": "P=1200mm／P=1300mm"
   },
   "tokens": [
     [
@@ -1038,6 +1171,270 @@
     [
       "Reversible",
       "左右通用"
+    ],
+    [
+      "bottom rail and leading edge",
+      "下框及门边侧"
+    ],
+    [
+      "hinge side",
+      "合页侧"
+    ],
+    [
+      "outside",
+      "外侧"
+    ],
+    [
+      "inside",
+      "内侧"
+    ],
+    [
+      "Yes",
+      "有"
+    ],
+    [
+      "Single action",
+      "单向"
+    ],
+    [
+      "Aluminium + steel",
+      "铝 + 钢"
+    ],
+    [
+      "45# steel",
+      "45# 钢"
+    ],
+    [
+      "Aerospace aluminium",
+      "太空铝"
+    ],
+    [
+      "Two hydraulic",
+      "两只液压"
+    ],
+    [
+      "Floor Spring",
+      "地弹簧"
+    ],
+    [
+      "Top Pivot",
+      "可调顶轴"
+    ],
+    [
+      "Glass Door Top Patch",
+      "玻璃门上夹"
+    ],
+    [
+      "Overhead Door Closer",
+      "顶装闭门器"
+    ],
+    [
+      "Hydraulic Hinge",
+      "液压合页"
+    ],
+    [
+      "Brushed Black Nickel",
+      "黑镍拉丝"
+    ],
+    [
+      "Brushed Light Gold",
+      "淡金拉丝"
+    ],
+    [
+      "Brushed Satin Nickel",
+      "哑光镍拉丝"
+    ],
+    [
+      "lift-to-lock",
+      "反提锁体"
+    ],
+    [
+      "Polished Chrome",
+      "亮铬"
+    ],
+    [
+      "Matt Nickel",
+      "哑镍"
+    ],
+    [
+      "Brushed Nickel",
+      "镍拉丝"
+    ],
+    [
+      "Zirconium Gold",
+      "锆金"
+    ],
+    [
+      "Antique Bronze",
+      "青古铜"
+    ],
+    [
+      "Antique Yellow Brass",
+      "黄古铜"
+    ],
+    [
+      "Brushed Rose Gold",
+      "玫瑰金拉丝"
+    ],
+    [
+      "Brown Leather",
+      "棕皮"
+    ],
+    [
+      "Black Leather",
+      "黑皮"
+    ],
+    [
+      "Tan Leather",
+      "驼皮"
+    ],
+    [
+      "Orange Leather",
+      "橘皮"
+    ],
+    [
+      "Wood Grain",
+      "木纹"
+    ],
+    [
+      "Grey",
+      "灰色"
+    ],
+    [
+      "Pure Copper",
+      "纯铜"
+    ],
+    [
+      "Satin Sanded",
+      "砂光"
+    ],
+    [
+      "Frosted Copper",
+      "磨砂铜"
+    ],
+    [
+      "Matt Antique Bronze",
+      "亚光青古铜"
+    ],
+    [
+      "Matt Antique Copper",
+      "亚光红古铜"
+    ],
+    [
+      "Matt Antique Brass",
+      "亚光黄古铜"
+    ],
+    [
+      "Gunmetal Grey",
+      "枪灰色"
+    ],
+    [
+      "Galaxy Grey",
+      "银河灰"
+    ],
+    [
+      "French Bronze",
+      "法国古铜"
+    ],
+    [
+      "Black Antique Brass",
+      "黑黄古"
+    ],
+    [
+      "Brushed Chrome",
+      "拉丝铬"
+    ],
+    [
+      "Coffee",
+      "咖啡色"
+    ],
+    [
+      "Light Coffee Edged",
+      "浅咖啡拉边"
+    ],
+    [
+      "Dark Coffee Edged",
+      "深咖啡拉边"
+    ],
+    [
+      "Toffee Gold",
+      "太妃金"
+    ],
+    [
+      "Stainless Steel 304/316L",
+      "304/316L 不锈钢"
+    ],
+    [
+      "Sandblasted and Brushed",
+      "不锈钢砂光拉丝色"
+    ],
+    [
+      "Bronze-green",
+      "青古铜"
+    ],
+    [
+      "PVD High-gloss Gold",
+      "PVD 亮光金"
+    ],
+    [
+      "Gunpowder Residue",
+      "枪灰"
+    ],
+    [
+      "PVD Gold",
+      "PVD 金"
+    ],
+    [
+      "Brushed Gunmetal",
+      "枪灰拉丝"
+    ],
+    [
+      "True Gold",
+      "真金"
+    ],
+    [
+      "Brushed Brass",
+      "铜拉丝"
+    ],
+    [
+      "Matt White",
+      "哑白"
+    ],
+    [
+      "Brushed Matt Nickel",
+      "哑镍拉丝"
+    ],
+    [
+      "Satin Silver",
+      "砂银"
+    ],
+    [
+      "Satin Gold",
+      "砂金"
+    ],
+    [
+      "Space Grey",
+      "星空灰"
+    ],
+    [
+      "Cream White",
+      "米白"
+    ],
+    [
+      "Black Antique Copper",
+      "黑红古"
+    ],
+    [
+      "PVD",
+      "PVD"
+    ],
+    [
+      "Aviation aluminium",
+      "航空铝"
+    ],
+    [
+      "Concealed Hydraulic Hinge",
+      "暗藏液压铰链"
     ]
   ]
 }

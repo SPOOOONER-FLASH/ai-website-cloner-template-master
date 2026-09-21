@@ -1,0 +1,34 @@
+{
+  "id": "curated-lock-comparison",
+  "style": "white",
+  "photos": [
+    {
+      "model": "LC04 85*60",
+      "slug": "lc04-85-60-lock-case",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-60-lock-case-5.webp",
+      "original": "/images/products/lc04-85-60-lock-case-5.webp",
+      "sha256": "dba9ab6afcaefc0fc9e3e0c0da2338da9b6bfe456b40ca2358fdff4d829b4b60",
+      "position": [
+        -0.85,
+        0
+      ],
+      "width": 1.4
+    },
+    {
+      "model": "LC04 85*70",
+      "slug": "lc04-85-70-lock-case",
+      "source": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware\\sources\\lc04-85-70-lock-case.webp",
+      "original": "/images/products/lc04-85-70-lock-case.webp",
+      "sha256": "cce661c61e5bfe6263fd1bb8cfa8f6379eeec10cf24278b682b0949da9b8e87c",
+      "position": [
+        0.85,
+        0
+      ],
+      "width": 1.4
+    }
+  ],
+  "heading": "LC04 / MODEL IDENTIFICATION",
+  "note": "Separate catalogue references - compare the published backset",
+  "outputDirectory": "C:\\Users\\86132\\Downloads\\cantonlock\\docs\\design-references\\2026-09-14-curated-hardware",
+  "resolution": 1800
+}

@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# 预览域名期间全站不收录。正式域名上线时改这里。
+Sitemap: https://rayen.cn/sitemap.xml

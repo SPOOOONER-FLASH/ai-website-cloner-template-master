@@ -64,6 +64,17 @@ const COPY = {
     empty:
       "Las fichas verificadas de este filtro aún se están preparando. Escriba al equipo de exportación para recibir el catálogo vigente.",
   },
+  pt: {
+    all: "Todos os produtos",
+    filterBy: "Filtrar por tipo",
+    filters: "Filtros de produto",
+    order: "Ordem de catálogo",
+    pages: "Páginas de produtos",
+    showing: (from: number, to: number) => ` · a mostrar ${from}–${to}`,
+    count: (n: number) => `${n} produto${n === 1 ? "" : "s"}`,
+    empty:
+      "As fichas verificadas deste filtro ainda estão sendo preparadas. Escreva à equipe de exportação para receber o catálogo atual.",
+  },
 } as const;
 
 /**

@@ -1,0 +1,213 @@
+[
+  {
+    "page": 3,
+    "side": "R",
+    "model": "RY8001",
+    "layout": "A",
+    "draw": [
+      0.485,
+      0.805
+    ]
+  },
+  {
+    "page": 6,
+    "side": "R",
+    "model": "RY8002",
+    "layout": "A",
+    "draw": [
+      0.55,
+      0.79
+    ]
+  },
+  {
+    "page": 10,
+    "side": "R",
+    "model": "RY8003",
+    "layout": "A",
+    "draw": [
+      0.528,
+      0.8
+    ]
+  },
+  {
+    "page": 13,
+    "side": "R",
+    "model": "RY8004",
+    "layout": "A",
+    "draw": [
+      0.5,
+      0.8
+    ]
+  },
+  {
+    "page": 17,
+    "side": "R",
+    "model": "RY8006",
+    "layout": "A",
+    "draw": [
+      0.556,
+      0.79
+    ],
+    "drawCols": [
+      [
+        0.05,
+        0.3
+      ],
+      [
+        0.3,
+        0.56
+      ]
+    ]
+  },
+  {
+    "page": 22,
+    "side": "R",
+    "model": "RY8005",
+    "layout": "A",
+    "draw": [
+      0.558,
+      0.79
+    ],
+    "drawCols": [
+      [
+        0.05,
+        0.3
+      ],
+      [
+        0.3,
+        0.56
+      ]
+    ]
+  },
+  {
+    "page": 25,
+    "side": "R",
+    "model": "273-1",
+    "layout": "B",
+    "draw": [
+      0.35,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 26,
+    "side": "R",
+    "model": "273",
+    "layout": "B",
+    "draw": [
+      0.352,
+      0.45
+    ]
+  },
+  {
+    "page": 27,
+    "side": "R",
+    "model": "275",
+    "layout": "B",
+    "draw": [
+      0.36,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 28,
+    "side": "R",
+    "model": "271",
+    "layout": "B",
+    "draw": [
+      0.35,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 29,
+    "side": "R",
+    "model": "272",
+    "layout": "B",
+    "draw": [
+      0.335,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 30,
+    "side": "R",
+    "model": "270",
+    "layout": "B",
+    "draw": [
+      0.335,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 31,
+    "side": "R",
+    "model": "280",
+    "layout": "B",
+    "draw": [
+      0.35,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 32,
+    "side": "R",
+    "model": "220",
+    "layout": "B",
+    "draw": [
+      0.345,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 33,
+    "side": "R",
+    "model": "274",
+    "layout": "B",
+    "draw": [
+      0.335,
+      0.45
+    ],
+    "scene": true
+  },
+  {
+    "page": 34,
+    "side": "R",
+    "model": "1328",
+    "layout": "B",
+    "draw": [
+      0.348,
+      0.47
+    ],
+    "scene": true
+  },
+  {
+    "page": 35,
+    "side": "R",
+    "model": "209",
+    "layout": "B",
+    "draw": [
+      0.348,
+      0.47
+    ],
+    "scene": true
+  },
+  {
+    "page": 36,
+    "side": "R",
+    "model": "215",
+    "layout": "B",
+    "draw": [
+      0.33,
+      0.47
+    ],
+    "scene": true
+  }
+]

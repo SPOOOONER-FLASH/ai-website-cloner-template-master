@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CategoryBody } from "@/components/rayen/pages";
-import { getCategoryFor, products } from "@/data/rayen";
+import { absoluteUrl, alternatesFor, getCategoryFor, products } from "@/data/rayen";
 import { STRINGS } from "@/data/rayen-i18n";
 import { categoriesFor } from "@/data/rayen";
 
@@ -20,7 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: category.name,
     description: STRINGS.en.products.categoryIntro(count),
-    alternates: { canonical: `/en/products/${slug}/` },
+    alternates: alternatesFor("en", `/products/${slug}/`),
+    openGraph: {
+      url: absoluteUrl(`/en/products/${slug}/`),
+      images: category.image?.src ? [{ url: absoluteUrl(category.image.src) }] : undefined,
+    },
   };
 }
 

@@ -1,4 +1,5 @@
 "use client";
+import type { Locale } from "@/data/site";
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -53,7 +54,7 @@ const MAX_RESULTS = 24;
 export function SearchDialog({ open, onClose, locale = "en" }: {
   open: boolean;
   onClose: () => void;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const router = useRouter();
   const [query, setQuery] = useState("");

@@ -14,7 +14,8 @@
  * someone opens the search dialog, so 431 products' worth of text never lands in the
  * main bundle for the majority of visitors who never search.
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, mkdirSync, statSync } from "node:fs";
+import { writeFileAtomic } from "./lib/write-atomic.mjs";
 
 const OUT = "public/search-index.json";
 
@@ -51,8 +52,27 @@ const entry = (type, title, subtitle, href, terms, model) => ({
 
 const entries = [];
 
+/*
+  Which brand's catalogue a record belongs to.
+
+  This mirrors `onHydeCatalogue` in src/data/products.ts, whose comment says the rule is
+  applied once so that "the sitemap, search index, finder, counts and llms.txt all agree
+  without any of them knowing this rule exists". Every one of those consumers reads through
+  that module — except this script, which reads content/products directly and therefore never
+  saw the rule at all.
+
+  The result, found on 2026-09-14 while adding search to the RAYEN site: all 196 RAYEN-only
+  products were in HYDE's index, and none of their pages exist in HYDE's build. A quarter of
+  the index led to a 404. Nothing caught it, because the dead-link audit walks links in HTML
+  and these were strings in a JSON payload fetched at runtime.
+*/
+const onHyde = (p) => !p.sites || p.sites.includes("hyde");
+const onRayen = (p) => (p.sites ?? []).includes("rayen");
+
+const allProducts = readCollection("content/products");
+
 // ── Products ────────────────────────────────────────────────────────────────────
-for (const p of readCollection("content/products")) {
+for (const p of allProducts) {
   /*
     Unpublished products stay out of search.
 
@@ -62,6 +82,7 @@ for (const p of readCollection("content/products")) {
     which is precisely the search somebody types.
   */
   if (!p.heroImage?.src) continue;
+  if (!onHyde(p)) continue;
 
   const specTerms = (p.specs ?? []).flatMap((s) => [s.label, s.value]);
   entries.push(
@@ -169,7 +190,9 @@ for (const [title, subtitle, href, terms] of PAGES) {
 }
 
 mkdirSync("public", { recursive: true });
-writeFileSync(OUT, JSON.stringify(entries));
+
+/* Atomic: see scripts/lib/write-atomic.mjs for why a plain write fails here. */
+writeFileAtomic(OUT, JSON.stringify(entries));
 
 const kb = Math.round(statSync(OUT).size / 1024);
 const byType = entries.reduce((acc, e) => ({ ...acc, [e.type]: (acc[e.type] ?? 0) + 1 }), {});
@@ -179,3 +202,85 @@ console.log(
       .map(([t, n]) => `${t} ${n}`)
       .join(", "),
 );
+
+/* ── RAYEN 雷茵 ────────────────────────────────────────────────────────────────────
+  A separate index per language, rather than one file carrying both.
+
+  The two sites do not share a corpus: RAYEN publishes 196 models that are not on HYDE, and
+  HYDE publishes several hundred that are not on RAYEN. Serving HYDE's index to RAYEN would
+  offer a Chinese buyer products the site does not sell, on URLs that do not exist there —
+  which is exactly the bug this run fixes in the other direction.
+
+  Two files rather than one bilingual file because a visitor needs one language and the whole
+  point of a static index is that it is small enough to ship. A Chinese visitor should not
+  download the English haystack to search 雷茵.
+
+  The Chinese entry matches on the Chinese text AND the model number. A buyer who has the
+  model from a drawing types "T1050"; one who has the part in his hand types 「拉手」.
+*/
+/*
+  `href` here is a BARE path — "/products/…", with no locale prefix.
+
+  The RAYEN site exists at two different path shapes depending on where you look at it. Inside
+  the Next app it is /zh/… and /zh-en/… (LOCALE_SEGMENT); on the deployed host
+  scripts/build-rayen-site.mjs lifts those to / and /en/ (LOCALE_PUBLIC_PREFIX) and rewrites
+  the prefix out of every built file. That rewrite covers HTML, but NOT the JavaScript in
+  _next, which is copied afterwards — so a URL baked into this index and used from a client
+  component would be right in exactly one of the two places and wrong in the other.
+
+  So the prefix is not stored. SearchBox adds it at click time from where the page actually
+  is, and the same index is correct in `next dev` and in production.
+*/
+const RAYEN_LOCALES = [
+  { locale: "zh", out: "public/search-index-rayen-zh.json" },
+  { locale: "en", out: "public/search-index-rayen-en.json" },
+];
+
+for (const { locale, out } of RAYEN_LOCALES) {
+  const zh = locale === "zh";
+  const rayenEntries = [];
+
+  for (const p of allProducts) {
+    if (!p.heroImage?.src) continue;
+    if (!onRayen(p)) continue;
+
+    const title = (zh ? p.nameZh : p.name) || p.name;
+    const specTerms = (p.specs ?? []).flatMap((s) => [s.label, s.value]);
+    rayenEntries.push(
+      entry(
+        "product",
+        title,
+        `${p.model} · ${title}`,
+        `/products/${p.categoryPath[0]}/${p.slug}/`,
+        [
+          p.model,
+          p.name,
+          p.nameZh,
+          p.summary,
+          p.material,
+          ...(p.finishes ?? []),
+          ...(p.doorTypes ?? []),
+          ...specTerms,
+          ...p.categoryPath,
+        ],
+        p.model,
+      ),
+    );
+  }
+
+  for (const c of categories) {
+    const name = (zh ? c.nameZh : c.name) || c.name;
+    rayenEntries.push(
+      entry("category", name, zh ? "产品类目" : "Product category", `/products/${c.slug}/`, [
+        c.name,
+        c.nameZh,
+        c.summary,
+        ...(c.children ?? []).flatMap((child) => [child.name, child.nameZh, child.summary]),
+      ]),
+    );
+  }
+
+  writeFileAtomic(out, JSON.stringify(rayenEntries));
+  const rkb = Math.round(statSync(out).size / 1024);
+  console.log(`rayen ${locale} search index: ${rayenEntries.length} entries, ${rkb}KB — ${out}`);
+}

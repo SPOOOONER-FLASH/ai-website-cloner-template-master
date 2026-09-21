@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "00",
+    "title": "客户指定修图 · 锁体 / 锁胆 / 拉手",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "lc04-85-60-lock-case",
+        "model": "LC04 85*60",
+        "url": "https://cantonlock.com/products/lock-cases/lc04-85-60-lock-case/",
+        "photo": "/images/products/lc04-85-60-lock-case.webp",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "85mm"
+          },
+          {
+            "label": "Backset",
+            "value": "60mm"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Euro profile"
+          },
+          {
+            "label": "Bolts",
+            "value": "Four round bolts"
+          },
+          {
+            "label": "Application",
+            "value": "Wooden doors"
+          }
+        ]
+      },
+      {
+        "slug": "70sn-lock-cylinder",
+        "model": "70SN",
+        "url": "https://cantonlock.com/products/lock-cylinders/70sn-lock-cylinder/",
+        "photo": "/images/products/70sn-lock-cylinder.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Solid Brass"
+          },
+          {
+            "label": "Size",
+            "value": "70MM"
+          },
+          {
+            "label": "Finish",
+            "value": "Polished Brass (PB), Chrome Plated (CP), Stainless Steel (SS), Satin Chrome (SC), Antique Brass (AB), Antique Copper (AC)"
+          }
+        ]
+      },
+      {
+        "slug": "9004s-stainless-steel-handle",
+        "model": "9004S",
+        "url": "https://cantonlock.com/products/stainless-steel-handles/9004s-stainless-steel-handle/",
+        "photo": "/images/products/9004s-stainless-steel-handle.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Stainless steel"
+          },
+          {
+            "label": "Door thickness",
+            "value": "35–50mm"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Brass"
+          },
+          {
+            "label": "Lever length",
+            "value": "135mm"
+          },
+          {
+            "label": "Rose size",
+            "value": "53mm square"
+          },
+          {
+            "label": "Rose thickness",
+            "value": "8mm"
+          },
+          {
+            "label": "Lever section",
+            "value": "20mm"
+          },
+          {
+            "label": "Projection",
+            "value": "63mm"
+          },
+          {
+            "label": "Spindle",
+            "value": "8mm"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-selection-stone-final",
+        "itemId": "00",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-selection-stone-final.png",
+        "sha256": "e064168a403fcfbe79f6bfcc050cae723a4bbd56fcd3b5962e805a59f6c97ddd",
+        "slugs": [
+          "9004s-stainless-steel-handle",
+          "lc04-85-60-lock-case",
+          "70sn-lock-cylinder"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "Individual models for selection. Confirm compatibility and the complete configuration before ordering; this composition is not installation scale.",
+        "captionEs": "Modelos individuales para selección. Confirme la compatibilidad y la configuración completa antes del pedido; esta composición no representa una escala de instalación.",
+        "kind": "space"
+      },
+      {
+        "id": "curated-selection-box-final",
+        "itemId": "00",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-selection-box-final.png",
+        "sha256": "931373a49320147f557ddd7c4723db408e69f7513e50009ff35a0ebdff8beacc",
+        "slugs": [
+          "9004s-stainless-steel-handle",
+          "lc04-85-60-lock-case",
+          "70sn-lock-cylinder"
+        ],
+        "reviewed": true,
+        "publish": false,
+        "captionEn": "Alternative sample-board scene retained for review; the stone composition is selected for the gallery.",
+        "captionEs": "Escena alternativa de muestrario para revisión; se seleccionó la composición sobre piedra para la galería.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "01",
+    "title": "307 配套",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "307-panic-exit-device",
+        "model": "307",
+        "url": "https://cantonlock.com/products/panic-exit-devices/307-panic-exit-device/",
+        "photo": "/images/products/307-panic-exit-device.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "ABS material with Aluminum push bar"
+          },
+          {
+            "label": "Size",
+            "value": "1000mm"
+          },
+          {
+            "label": "Handle",
+            "value": "015 or 9080E."
+          },
+          {
+            "label": "Cylinder",
+            "value": "Cylinder length according to the door thickness"
+          },
+          {
+            "label": "Fire Rating",
+            "value": "2.5 hours fire-resistant"
+          },
+          {
+            "label": "Application",
+            "value": "Fully reversible for left or right-hand doors"
+          },
+          {
+            "label": "Minimum order",
+            "value": "50 pieces"
+          }
+        ]
+      },
+      {
+        "slug": "015-panic-exit-device-trim",
+        "model": "015",
+        "url": "https://cantonlock.com/products/panic-exit-devices/015-panic-exit-device-trim/",
+        "photo": "/images/products/015-panic-exit-device-trim.webp",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Trim handle · outside lever for panic exit devices"
+          },
+          {
+            "label": "Material",
+            "value": "ABS"
+          },
+          {
+            "label": "Finish",
+            "value": "BN"
+          },
+          {
+            "label": "Key options",
+            "value": "Includes 3 brass keys"
+          },
+          {
+            "label": "Door thickness",
+            "value": "Up to 80mm"
+          },
+          {
+            "label": "Application",
+            "value": "Used in combination with push bar and lock"
+          }
+        ]
+      },
+      {
+        "slug": "9080e-panic-exit-device-trim",
+        "model": "9080E",
+        "url": "https://cantonlock.com/products/panic-exit-devices/9080e-panic-exit-device-trim/",
+        "photo": "/images/products/9080e-panic-exit-device-trim.webp",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Trim handle · outside lever for panic exit devices"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304"
+          },
+          {
+            "label": "Application",
+            "value": "Fireproof doors"
+          },
+          {
+            "label": "Finish",
+            "value": "Satin Stainless Steel (SS)"
+          },
+          {
+            "label": "Market",
+            "value": "South America"
+          }
+        ]
+      },
+      {
+        "slug": "072-panic-exit-device-lock-case",
+        "model": "072",
+        "url": "https://cantonlock.com/products/panic-exit-devices/072-panic-exit-device-lock-case/",
+        "photo": "/images/products/072-panic-exit-device-lock-case.webp",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Profile lock case for panic exit devices"
+          },
+          {
+            "label": "Application",
+            "value": "Fire door"
+          },
+          {
+            "label": "Material",
+            "value": "Iron"
+          },
+          {
+            "label": "Finish",
+            "value": "SS"
+          },
+          {
+            "label": "Backset",
+            "value": "65mm"
+          },
+          {
+            "label": "Color",
+            "value": "Painted optional."
+          },
+          {
+            "label": "Centre distance",
+            "value": "72mm"
+          },
+          {
+            "label": "Follower",
+            "value": "9 × 9 × 130mm"
+          },
+          {
+            "label": "Cylinder apertures",
+            "value": "Two euro-profile apertures on the fire-rated case"
+          },
+          {
+            "label": "Used with",
+            "value": "307 panic exit device"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "01-source-307-components",
+        "reviewed": true,
+        "itemId": "01"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "title": "311 配套",
+    "outcome": "已有核验图像",
+    "scope": "完成原厂照片或部件展示；不据此推定完整门配置、开孔尺寸或未知配套。",
+    "sources": [
+      {
+        "slug": "311-panic-exit-device",
+        "model": "311",
+        "url": "https://cantonlock.com/products/panic-exit-devices/311-panic-exit-device/",
+        "photo": "/images/products/311-panic-exit-device.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "ABS plastic material with Aluminum"
+          },
+          {
+            "label": "Set Includes",
+            "value": "311 push bar, lock body, brass cylinder, stainless steel handle"
+          },
+          {
+            "label": "Bar Length",
+            "value": "900mm"
+          },
+          {
+            "label": "Centre distances",
+            "value": "72mm and 92mm (cylinder hole)"
+          },
+          {
+            "label": "Minimum order",
+            "value": "50 pieces"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-311-construction",
+        "itemId": "02",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-311-construction.png",
+        "sha256": "977597dd0ba7f165c01f2fd091ad90e30e57dc135e63c4fdef3606699af78be5",
+        "slugs": [
+          "311-panic-exit-device"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "Original views of the 311 mechanism. Door preparation and outside trim are confirmed for the project.",
+        "captionEs": "Vistas originales del mecanismo 311. La preparación de la puerta y la manija exterior se confirman para cada proyecto.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "title": "LC14 插芯锁组合",
+    "outcome": "已有核验图像",
+    "scope": "完成原厂照片或部件展示；不据此推定完整门配置、开孔尺寸或未知配套。",
+    "sources": [
+      {
+        "slug": "lc14-85-50mm-lock-case",
+        "model": "Lc14 85×50mm",
+        "url": "https://cantonlock.com/products/lock-cases/lc14-85-50mm-lock-case/",
+        "photo": "/images/products/lc14-85-50mm-lock-case.webp",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "85mm"
+          },
+          {
+            "label": "Backset",
+            "value": "50mm"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Euro profile"
+          },
+          {
+            "label": "Bolts",
+            "value": "Four round bolts"
+          },
+          {
+            "label": "Application",
+            "value": "Security doors"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-lc14-details",
+        "itemId": "03",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-lc14-details.png",
+        "sha256": "71ac7987df6f7c2f0a4fab7c4f16ad3affffe6821aaa1d1633eaae3901f73d23",
+        "slugs": [
+          "lc14-85-50mm-lock-case"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "LC14 lock case details from the original photographs. Handle and cylinder configuration are selected separately.",
+        "captionEs": "Detalles de la caja LC14 en fotografías originales. La configuración de manija y cilindro se selecciona por separado.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "title": "主匙系统",
+    "outcome": "需实物证据",
+    "scope": "未有具体主匙实物配置的型号与钥匙层级证据；现有主匙填写表可使用，不能把普通锁芯照片冒充已配置主匙系统。",
+    "sources": [],
+    "assets": []
+  },
+  {
+    "id": "05",
+    "title": "305 配套",
+    "outcome": "已有核验图像",
+    "scope": "完成原厂照片或部件展示；不据此推定完整门配置、开孔尺寸或未知配套。",
+    "sources": [
+      {
+        "slug": "305-fire-door-panic-exit-device",
+        "model": "305",
+        "url": "https://cantonlock.com/products/panic-exit-devices/305-fire-door-panic-exit-device/",
+        "photo": "/images/products/305-fire-door-panic-exit-device.webp",
+        "specs": [
+          {
+            "label": "Length",
+            "value": "1040mm"
+          },
+          {
+            "label": "Material",
+            "value": "Iron and aluminum"
+          },
+          {
+            "label": "Finish",
+            "value": "Spray painted"
+          },
+          {
+            "label": "Minimum order",
+            "value": "200 pieces"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-305-components",
+        "itemId": "05",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-305-components.png",
+        "sha256": "9241c04ff5f977a06882ba39a77de893473d734ad02314965b2ed9e11fcde59b",
+        "slugs": [
+          "305-fire-door-panic-exit-device"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "305 device and components shown in its catalogue photography. Confirm the complete door configuration before ordering.",
+        "captionEs": "Dispositivo 305 y componentes de su fotografía de catálogo. Confirme la configuración completa de la puerta antes del pedido.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "title": "玻璃门五金组合",
+    "outcome": "已有核验图像",
+    "scope": "完成原厂照片或部件展示；不据此推定完整门配置、开孔尺寸或未知配套。",
+    "sources": [
+      {
+        "slug": "glass-door-patch-fitting-set",
+        "model": "Glass Door Patch Fitting Set",
+        "url": "https://cantonlock.com/products/glass-door-accessories/glass-door-patch-fitting-set/",
+        "photo": "/images/products/glass-door-patch-fitting-set.webp",
+        "specs": []
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-glass-patch-components",
+        "itemId": "06",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-glass-patch-components.png",
+        "sha256": "b272811f82ca8780f68ac2e7b650c18a907296667d8ded3668be3d2bd498a1cf",
+        "slugs": [
+          "glass-door-patch-fitting-set"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "Components from the original glass door hardware catalogue photograph. Glass preparation and compatibility are confirmed per project.",
+        "captionEs": "Componentes de la fotografía original del catálogo de herrajes para puertas de vidrio. Los mecanizados y la compatibilidad se confirman para cada proyecto.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "title": "564 夜锁",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "564-night-latch-and-rim-lock",
+        "model": "564",
+        "url": "https://cantonlock.com/products/night-latches-rim-locks/564-night-latch-and-rim-lock/",
+        "photo": "/images/products/564-night-latch-and-rim-lock.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Zinc alloy"
+          },
+          {
+            "label": "Backset",
+            "value": "2-3/8\" (60mm)"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Double cylinder"
+          },
+          {
+            "label": "Door thickness",
+            "value": "35mm to 55mm standard; 30mm to 60mm on request"
+          },
+          {
+            "label": "Latch extension",
+            "value": "13mm, with inside deadlocking button"
+          },
+          {
+            "label": "Deadbolt throw",
+            "value": "25mm on rim deadbolt versions"
+          },
+          {
+            "label": "Chassis",
+            "value": "Zinc die-cast case, zinc-plated steel internal components"
+          },
+          {
+            "label": "Strike",
+            "value": "Angle strike standard for inward-opening doors; flat strike available"
+          },
+          {
+            "label": "Handing",
+            "value": "Fully reversible, left or right hand"
+          },
+          {
+            "label": "Function",
+            "value": "Single cylinder, double cylinder or self-locking"
+          },
+          {
+            "label": "Feature",
+            "value": "Anti-picking slide gate on single-cylinder deadlock"
+          },
+          {
+            "label": "Structure",
+            "value": "Beveled latch structure"
+          },
+          {
+            "label": "Body",
+            "value": "Zinc die-cast outer case, zinc-plated steel internal components"
+          },
+          {
+            "label": "Deadbolt",
+            "value": "25mm full-throw rim deadbolt"
+          },
+          {
+            "label": "Minimum order",
+            "value": "1000 pieces"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "564-warm-stone",
+        "reviewed": true,
+        "itemId": "07"
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "title": "607 SSET 管状锁",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "607-sset-tubular-lock",
+        "model": "607 SSET",
+        "url": "https://cantonlock.com/products/knob-locks/607-sset-tubular-lock/",
+        "photo": "/images/products/607-sset-tubular-lock.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Stainless steel/Brass/Solid steel"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Brass cylinder"
+          },
+          {
+            "label": "Backset",
+            "value": "60mm / 70mm adjustable"
+          },
+          {
+            "label": "Door thickness",
+            "value": "35mm to 45mm adjustable"
+          },
+          {
+            "label": "Cycle life",
+            "value": "200,000 cycles"
+          },
+          {
+            "label": "Chassis",
+            "value": "Solid steel chassis and latch case, zinc plated"
+          },
+          {
+            "label": "Trim",
+            "value": "Wrought stainless steel or brass"
+          },
+          {
+            "label": "Strike",
+            "value": "57mm curved lip standard; 70mm available on request"
+          },
+          {
+            "label": "Handing",
+            "value": "Fully reversible, left or right hand"
+          },
+          {
+            "label": "Application",
+            "value": "Residential use"
+          },
+          {
+            "label": "Finish",
+            "value": "Satin stainless steel (US32D)"
+          },
+          {
+            "label": "Function",
+            "value": "Entrance — keyed outside"
+          },
+          {
+            "label": "Latch",
+            "value": "Adjustable 60–70mm"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "08-source-607-sset-tubular-lock",
+        "reviewed": true,
+        "itemId": "08"
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "title": "587 SSET 球形锁",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "587-sset-light-duty-cylindrical-lock",
+        "model": "587 SSET",
+        "url": "https://cantonlock.com/products/knob-locks/587-sset-light-duty-cylindrical-lock/",
+        "photo": "/images/products/587-sset-light-duty-cylindrical-lock.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "stainless steel"
+          },
+          {
+            "label": "Finish",
+            "value": "Satin nickel, chrome, antique brass, polished brass,all available"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Solid brass/Zinc & brass cylinder"
+          },
+          {
+            "label": "Cycle life",
+            "value": "200,000 cycles"
+          },
+          {
+            "label": "Chassis",
+            "value": "Solid steel chassis and latch case, zinc plated"
+          },
+          {
+            "label": "Trim",
+            "value": "Wrought stainless steel or brass"
+          },
+          {
+            "label": "Latch",
+            "value": "Deadlocking on keyed functions"
+          },
+          {
+            "label": "Handing",
+            "value": "Fully reversible, left or right hand"
+          },
+          {
+            "label": "Application",
+            "value": "Standard residential use"
+          },
+          {
+            "label": "Keying",
+            "value": "Can be keyed alike to the deadbolt series, or master keyed"
+          },
+          {
+            "label": "Function",
+            "value": "Entrance — keyed outside"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "09-source-587-sset-light-duty-cylindrical-lock",
+        "reviewed": true,
+        "itemId": "09"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "70BK 锁胆 · 依真实铜色照片",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "70bk-lock-cylinder",
+        "model": "70BK",
+        "url": "https://cantonlock.com/products/lock-cylinders/70bk-lock-cylinder/",
+        "photo": "/images/products/70bk-lock-cylinder.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Solid Brass"
+          },
+          {
+            "label": "Size",
+            "value": "70MM"
+          },
+          {
+            "label": "Finish",
+            "value": "Polished Brass (PB), Chrome Plated (CP), Stainless Steel (SS), Satin Chrome (SC), Antique Brass (AB), Antique Copper (AC)"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "10-source-70bk-lock-cylinder",
+        "reviewed": true,
+        "itemId": "10"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "LC14 四柱锁体",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "lc14-85-50mm-lock-case",
+        "model": "Lc14 85×50mm",
+        "url": "https://cantonlock.com/products/lock-cases/lc14-85-50mm-lock-case/",
+        "photo": "/images/products/lc14-85-50mm-lock-case.webp",
+        "specs": [
+          {
+            "label": "Centre distance",
+            "value": "85mm"
+          },
+          {
+            "label": "Backset",
+            "value": "50mm"
+          },
+          {
+            "label": "Cylinder",
+            "value": "Euro profile"
+          },
+          {
+            "label": "Bolts",
+            "value": "Four round bolts"
+          },
+          {
+            "label": "Application",
+            "value": "Security doors"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "curated-lc14-details",
+        "itemId": "03",
+        "file": "docs/design-references/2026-09-14-curated-hardware/curated-lc14-details.png",
+        "sha256": "71ac7987df6f7c2f0a4fab7c4f16ad3affffe6821aaa1d1633eaae3901f73d23",
+        "slugs": [
+          "lc14-85-50mm-lock-case"
+        ],
+        "reviewed": true,
+        "publish": true,
+        "captionEn": "LC14 lock case details from the original photographs. Handle and cylinder configuration are selected separately.",
+        "captionEs": "Detalles de la caja LC14 en fotografías originales. La configuración de manija y cilindro se selecciona por separado.",
+        "kind": "selection"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "316-S 推杠",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "316-s-panic-exit-device",
+        "model": "316-S",
+        "url": "https://cantonlock.com/products/panic-exit-devices/316-s-panic-exit-device/",
+        "photo": "/images/products/316-s-panic-exit-device.webp",
+        "specs": [
+          {
+            "label": "Door Type",
+            "value": "Single Door"
+          },
+          {
+            "label": "Application",
+            "value": "Fire Doors, Emergency Exit Doors"
+          },
+          {
+            "label": "Installation",
+            "value": "Surface Mounted"
+          },
+          {
+            "label": "Operation",
+            "value": "Push to Open"
+          },
+          {
+            "label": "Housing Material",
+            "value": "Flame-Retardant ABS"
+          },
+          {
+            "label": "Main Body Material",
+            "value": "Aluminum Alloy"
+          },
+          {
+            "label": "Push Bar Material",
+            "value": "Iron"
+          },
+          {
+            "label": "Latch Material",
+            "value": "Thickened Iron"
+          },
+          {
+            "label": "Outside Lever",
+            "value": "Optional (Not Included in the Listed Price)"
+          },
+          {
+            "label": "Opening Direction",
+            "value": "Left & Right Reversible"
+          },
+          {
+            "label": "Available Versions",
+            "value": "Single Door / Double Door"
+          },
+          {
+            "label": "OEM & ODM",
+            "value": "Available"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "12-source-316-s-panic-exit-device",
+        "reviewed": true,
+        "itemId": "12"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "DC02 门协调器",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "dc02-door-coordinator",
+        "model": "DC02",
+        "url": "https://cantonlock.com/products/hardware-accessories/dc02-door-coordinator/",
+        "photo": "/images/products/dc02-door-coordinator.webp",
+        "specs": [
+          {
+            "label": "Application",
+            "value": "Double-Leaf Doors"
+          },
+          {
+            "label": "Size",
+            "value": "397 × 120mm"
+          },
+          {
+            "label": "Max door weight",
+            "value": "55–100kg"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc-Plated Steel"
+          },
+          {
+            "label": "Color",
+            "value": "Silver"
+          },
+          {
+            "label": "Finish",
+            "value": "Zinc Plated"
+          },
+          {
+            "label": "Product Type",
+            "value": "Door Sequence Selector"
+          },
+          {
+            "label": "Operation",
+            "value": "Mechanical, No Power Required"
+          },
+          {
+            "label": "Closing Sequence",
+            "value": "Inactive Leaf First, Active Leaf After"
+          },
+          {
+            "label": "Surface Finish",
+            "value": "Zinc Plated"
+          },
+          {
+            "label": "Installation Position",
+            "value": "Top of Door Frame"
+          },
+          {
+            "label": "Included Accessories",
+            "value": "2 Support Brackets, Screws and Washers"
+          },
+          {
+            "label": "OEM & ODM",
+            "value": "Available"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "13-source-dc02-door-coordinator",
+        "reviewed": true,
+        "itemId": "13"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "AR4-110 阿根廷系列",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "hyde-ar4-110-mortise-lock",
+        "model": "AR4-110",
+        "url": "https://cantonlock.com/products/lock-cases/hyde-ar4-110-mortise-lock/",
+        "photo": "/images/products/argentina-ar4/hyde-ar4-110.webp",
+        "specs": [
+          {
+            "label": "Factory reference",
+            "value": "6840"
+          },
+          {
+            "label": "Nominal lock body",
+            "value": "68 × 40",
+            "unit": "mm"
+          },
+          {
+            "label": "Faceplate",
+            "value": "25 × 210",
+            "unit": "mm"
+          },
+          {
+            "label": "Latch options",
+            "value": "Copper-plated zinc alloy or brass"
+          },
+          {
+            "label": "Key options",
+            "value": "Zinc alloy or brass; two keys"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "14-source-hyde-ar4-110-mortise-lock",
+        "reviewed": true,
+        "itemId": "14"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "6068 执手锁",
+    "outcome": "需实物证据",
+    "scope": "已找到6068产品记录，面板330mm、SS304；仍无heroImage.src及图库。缺真实产品照片，不能替代为相似拉手。",
+    "sources": [
+      {
+        "slug": "6068-mortise-lever-handle-lock",
+        "model": "6068",
+        "url": "https://cantonlock.com/products/lock-cases/6068-mortise-lever-handle-lock/",
+        "photo": null,
+        "specs": [
+          {
+            "label": "Plate length",
+            "value": "330mm"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304"
+          },
+          {
+            "label": "Series",
+            "value": "6068 Mortise Lock Series"
+          },
+          {
+            "label": "Minimum order",
+            "value": "100 pieces"
+          }
+        ]
+      }
+    ],
+    "assets": []
+  },
+  {
+    "id": "16",
+    "title": "窄边铝合金锁体",
+    "outcome": "需实物证据",
+    "scope": "窄边铝合金锁体仍缺甲方指向的唯一型号。已有类目照片不能证明它就是询盘对应产品。",
+    "sources": [],
+    "assets": []
+  },
+  {
+    "id": "17",
+    "title": "90mm 管状锁舌",
+    "outcome": "需实物证据",
+    "scope": "90mm锁舌仍缺唯一型号。5831-90mm是锁具记录，不能据名字代替待确认的独立锁舌。",
+    "sources": [],
+    "assets": []
+  },
+  {
+    "id": "18",
+    "title": "308 推杠",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "308-panic-exit-device",
+        "model": "308",
+        "url": "https://cantonlock.com/products/panic-exit-devices/308-panic-exit-device/",
+        "photo": "/images/products/308-panic-exit-device.webp",
+        "specs": []
+      }
+    ],
+    "assets": [
+      {
+        "id": "18-source-308-panic-exit-device",
+        "reviewed": true,
+        "itemId": "18"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "310 推杠",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "310-panic-exit-device",
+        "model": "310",
+        "url": "https://cantonlock.com/products/panic-exit-devices/310-panic-exit-device/",
+        "photo": "/images/products/310-panic-exit-device.webp",
+        "specs": [
+          {
+            "label": "Material",
+            "value": "Iron"
+          },
+          {
+            "label": "Finish",
+            "value": "Painting"
+          },
+          {
+            "label": "Application",
+            "value": "Single Door"
+          },
+          {
+            "label": "Color",
+            "value": "Red,Black"
+          },
+          {
+            "label": "Length",
+            "value": "900MM"
+          },
+          {
+            "label": "Color Options",
+            "value": "Red, Black"
+          },
+          {
+            "label": "Fire Rating",
+            "value": "1.5 hours"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "310-cool-stone",
+        "reviewed": true,
+        "itemId": "19"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "035 外执手",
+    "outcome": "已有核验图像",
+    "scope": "真实照片及有来源的场景展示；不属于产品CAD。",
+    "sources": [
+      {
+        "slug": "035-panic-exit-device-trim",
+        "model": "035",
+        "url": "https://cantonlock.com/products/panic-exit-devices/035-panic-exit-device-trim/",
+        "photo": "/images/products/035-panic-exit-device-trim.webp",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Trim handle · outside lever for panic exit devices"
+          },
+          {
+            "label": "Material",
+            "value": "aluminium"
+          },
+          {
+            "label": "Application",
+            "value": "Fire door"
+          },
+          {
+            "label": "Function",
+            "value": "Safety lock with cylinder"
+          },
+          {
+            "label": "Finish",
+            "value": "Spray painted; multiple finishes available (MOQ required)"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "id": "20-source-035-panic-exit-device-trim",
+        "reviewed": true,
+        "itemId": "20"
+      }
+    ]
+  }
+]

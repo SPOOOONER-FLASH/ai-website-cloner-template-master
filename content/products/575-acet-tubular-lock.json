@@ -77,7 +77,7 @@
   "relatedModels": [],
   "seoTitle": "575 ACET Tubular Lock — Stainless Steel | Canton Hyland",
   "seoDescription": "Canton Hyland 575 ACET tubular lock in Stainless Steel. Tubular Lock in antique copper (us11), entrance function. Available in AC finish. Made in Guangdong, China.",
-  "nameEs": "Cerraduras de pomo",
+  "nameEs": "Cerradura tubular",
   "summary": "Tubular Lock in antique copper (us11), entrance function.",
   "seoTitleEs": "575 ACET Cerraduras de pomo — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 575 ACET cerraduras de pomo en acero inoxidable. Acabado AC. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
@@ -101,5 +101,130 @@
     "functionFrom": "suffix ET",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Fechadura tubular",
+  "summaryPt": "Fechadura tubular em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latão"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Cobre antigo (US11)"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm / 70 mm ajustável"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Chassi e caixa da lingueta em aço maciço, zincados"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Aço inoxidável laminado ou latão"
+    },
+    {
+      "label": "Contra-testa",
+      "value": "Lábio curvo de 57 mm de série; 70 mm sob pedido"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Função",
+      "value": "Entrada — com chave pelo lado de fora"
+    },
+    {
+      "label": "Lingueta",
+      "value": "Curso de 12 mm, com travamento nas funções com chave"
+    }
+  ],
+  "seoTitlePt": "575 ACET Fechadura tubular | Canton Hyland",
+  "seoDescriptionPt": "Fechadura tubular 575 ACET da Canton Hyland — fechaduras de pomo. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Cerradura tubular de acero inoxidable.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latón"
+    },
+    {
+      "label": "Acabado",
+      "value": "Cobre antiguo (US11)"
+    },
+    {
+      "label": "Entrada",
+      "value": "60 / 70 mm, regulable"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Chasis y caja de picaporte de acero macizo, zincados"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Acero inoxidable forjado o latón"
+    },
+    {
+      "label": "Cerradero",
+      "value": "Cerradero curvo de 57 mm de serie; 70 mm bajo pedido"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
+    },
+    {
+      "label": "Picaporte",
+      "value": "12 mm de salida; con bloqueo en las funciones con llave"
+    }
+  ],
+  "featuresPt": [
+    "Econômica e fácil de instalar",
+    "Durabilidade acima de 200.000 ciclos",
+    "Pode ser chaveada igual ou em sistema de chave-mestra",
+    "Chassi e caixa do trinco em aço zincado para resistência à corrosão"
+  ],
+  "featuresEs": [
+    "Económica y fácil de instalar",
+    "Durabilidad de más de 200.000 ciclos",
+    "Admite llave igual o amaestramiento",
+    "Chasis y caja de picaporte de acero cincado, resistentes a la corrosión"
+  ]
 }

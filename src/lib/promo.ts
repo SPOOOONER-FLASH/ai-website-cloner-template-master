@@ -1,4 +1,5 @@
 import type { PromoCard } from "@/data/types";
+import type { Locale } from "@/data/site";
 
 /** Select one compact promotion so campaign cards never stack over page imagery. */
 /** `/es/contact/` and `/contact` both normalise to `/contact/`. */
@@ -37,7 +38,7 @@ export function selectActivePromoCard(
   );
 }
 
-export function localisePromoCardCopy(card: PromoCard, locale: "en" | "es") {
+export function localisePromoCardCopy(card: PromoCard, locale: Locale) {
   const spanish = locale === "es";
   const title = spanish ? card.titleEs ?? card.title : card.title;
   return {

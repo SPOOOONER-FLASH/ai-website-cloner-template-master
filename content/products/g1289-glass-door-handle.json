@@ -26,7 +26,7 @@
       "value": "30mm"
     },
     {
-      "label": "Rose depth",
+      "label": "Projection",
       "value": "69.5mm"
     },
     {
@@ -50,7 +50,9 @@
   "finishes": [
     "Satin stainless with timber"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g1289-glass-door-handle.webp",
@@ -114,7 +116,46 @@
     "artunion": {
       "id": "G1289-48-783",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "502 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "650 mm"
+    },
+    {
+      "label": "Diâmetro da roseta",
+      "value": "30 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "69.5 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "30 mm"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G1289 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G1289 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

@@ -6,6 +6,7 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 import { EditorialAtlas } from "./EditorialAtlas";
 import { getProductsArchitecture, type ProductsLocale } from "./products-architecture";
 import styles from "./EditorialCatalogue.module.css";
+import { localised } from "@/lib/localised";
 
 interface ProductsEditorialOverviewProps {
   locale: ProductsLocale;
@@ -13,15 +14,55 @@ interface ProductsEditorialOverviewProps {
   categoryCounts: Readonly<Record<string, number>>;
 }
 
+/** Every string on this page, in all three locales. */
+const COPY = {
+  en: {
+    home: "Home",
+    products: "Products",
+    photographs: "Original photographs from our catalogue.",
+    families: "Families",
+    nextStep: "Next step",
+    publishedModels: "published models. Select a product to explore.",
+    models: "models",
+    everyPart: "Every part, in context.",
+    leverLabel: "9001 catalogue lever handle",
+    mechanismDetail: "Mechanism detail from the catalogue.",
+  },
+  es: {
+    home: "Inicio",
+    products: "Productos",
+    photographs: "Fotograf\u00edas de nuestro cat\u00e1logo.",
+    families: "Familias",
+    nextStep: "El siguiente paso",
+    publishedModels: "modelos publicados. Seleccione un producto para verlo.",
+    models: "modelos",
+    everyPart: "Cada pieza, en contexto.",
+    leverLabel: "Manija 9001 del cat\u00e1logo",
+    mechanismDetail: "Detalle de mecanismo del cat\u00e1logo.",
+  },
+  pt: {
+    home: "In\u00edcio",
+    products: "Produtos",
+    photographs: "Fotografias do nosso cat\u00e1logo.",
+    families: "Fam\u00edlias",
+    nextStep: "O pr\u00f3ximo passo",
+    publishedModels: "modelos publicados. Selecione um produto para ver.",
+    models: "modelos",
+    everyPart: "Cada pe\u00e7a, em contexto.",
+    leverLabel: "Ma\u00e7aneta 9001 do cat\u00e1logo",
+    mechanismDetail: "Detalhe de mecanismo do cat\u00e1logo.",
+  },
+} as const;
+
 export function ProductsEditorialOverview({ locale, totalProducts, categoryCounts }: ProductsEditorialOverviewProps) {
   const architecture = getProductsArchitecture(locale);
   const [rangeChapter, applicationChapter, technicalChapter] = architecture.story;
-  const es = locale === "es";
-  const prefix = es ? "/es" : "";
+  const t = localised(COPY, locale);
+  const prefix = locale === "en" ? "" : `/${locale}`;
 
   return <div className={styles.page}>
     <section aria-labelledby="products-overview-title">
-      <Breadcrumbs items={[{ label: es ? "Inicio" : "Home", href: `${prefix}/` }, { label: es ? "Productos" : "Products" }]} />
+      <Breadcrumbs items={[{ label: t.home, href: `${prefix}/` }, { label: t.products }]} />
       <div className={styles.opening}>
         <h1 id="products-overview-title" className={styles.display}>{architecture.title}</h1>
         <div>
@@ -32,9 +73,9 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
       <figure>
         <EditorialAtlas locale={locale} priority />
         <figcaption className={styles.legend}>
-          <span><strong>{rangeChapter.title}</strong>{es ? "Fotografías de nuestro catálogo." : "Original photographs from our catalogue."}</span>
-          <span><strong>{es ? "Familias" : "Families"}</strong>{architecture.rangeMeta}</span>
-          <span><strong>{es ? "El siguiente paso" : "Next step"}</strong>{totalProducts} {es ? "modelos publicados. Seleccione un producto para verlo." : "published models. Select a product to explore."}</span>
+          <span><strong>{rangeChapter.title}</strong>{t.photographs}</span>
+          <span><strong>{t.families}</strong>{architecture.rangeMeta}</span>
+          <span><strong>{t.nextStep}</strong>{totalProducts} {t.publishedModels}</span>
         </figcaption>
       </figure>
     </section>
@@ -47,7 +88,7 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
       <ol className={styles.index}>
         {architecture.families.map((family) => <li key={family.slug}><Link href={family.href}>
           <span className={styles.indexLabel}>{family.label}</span>
-          <span className={styles.count}>{categoryCounts[family.slug] ?? 0} {es ? "modelos" : "models"}</span>
+          <span className={styles.count}>{categoryCounts[family.slug] ?? 0} {t.models}</span>
           <span className={styles.indexDetail}>{family.description}</span>
         </Link></li>)}
       </ol>
@@ -55,7 +96,7 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
 
     <section className={styles.chapter} aria-labelledby="engineering-system-title">
       <div className={styles.chapterHead}>
-        <h2 id="engineering-system-title" className={styles.heading}>{es ? "Cada pieza, en contexto." : "Every part, in context."}</h2>
+        <h2 id="engineering-system-title" className={styles.heading}>{t.everyPart}</h2>
         <p className={styles.body}>{architecture.brandBody}</p>
       </div>
       <ul className={styles.series}>
@@ -81,14 +122,14 @@ export function ProductsEditorialOverview({ locale, totalProducts, categoryCount
       <div className={styles.story}>
         <figure>
           <Link href={`${prefix}/product-finder/`}><div className={styles.plate}>
-            <MediaPlaceholder src="/images/editorial/hyde-real-lever-plate.webp" ratio="3 / 2" label={es ? "Manija 9001 del catálogo" : "9001 catalogue lever handle"} sizes="30vw" />
+            <MediaPlaceholder src="/images/editorial/hyde-real-lever-plate.webp" ratio="3 / 2" label={t.leverLabel} sizes="30vw" />
           </div></Link>
           <figcaption><strong className={styles.caption}>{rangeChapter.title}</strong><span className={styles.detail}>{rangeChapter.description}</span></figcaption>
         </figure>
         <figure>
           <Link href={applicationChapter.href}><MediaPlaceholder src={applicationChapter.image} ratio="1 / 1" label={applicationChapter.alt} sizes="(max-width: 767px) 100vw, 45vw" className={styles.storyImage} /></Link>
           <figcaption><strong className={styles.caption}>{applicationChapter.title}</strong><span className={styles.detail}>{applicationChapter.description}</span>
-            <span className={styles.detail}>{es ? "Detalle de mecanismo del catálogo." : "Mechanism detail from the catalogue."}</span>
+            <span className={styles.detail}>{t.mechanismDetail}</span>
           </figcaption>
         </figure>
         <figure>

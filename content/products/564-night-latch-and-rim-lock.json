@@ -63,6 +63,10 @@
     {
       "label": "Deadbolt",
       "value": "25mm full-throw rim deadbolt"
+    },
+    {
+      "label": "Minimum order",
+      "value": "1000 pieces"
     }
   ],
   "material": "Zinc Alloy",
@@ -105,7 +109,7 @@
   "relatedModels": [],
   "seoTitle": "564 Night Latch And Rim Lock — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland 564 night latch and rim lock in Zinc Alloy. Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
-  "nameEs": "Cerraduras de sobreponer",
+  "nameEs": "Cerradura de sobreponer",
   "specsEs": [
     {
       "label": "Material",
@@ -162,6 +166,10 @@
     {
       "label": "Cerrojo",
       "value": "Cerrojo de sobreponer de 25 mm de salida total"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "1000 unidades"
     }
   ],
   "summaryEs": "Una cerradura de sobreponer de zamak, entrada de 2-3/8” (60 mm).",
@@ -177,5 +185,89 @@
     "model": "564",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "564",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Fechadura de sobrepor",
+  "summaryPt": "Fechadura de sobrepor em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "2-3/8” (60 mm)"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro duplo"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 55 mm de série; 30 mm a 60 mm sob pedido"
+    },
+    {
+      "label": "Saída da lingueta",
+      "value": "13 mm, com botão de travamento interno"
+    },
+    {
+      "label": "Curso do trinco",
+      "value": "25 mm nas versões com trinco de sobrepor"
+    },
+    {
+      "label": "Chassi",
+      "value": "Caixa em zamak injetado, componentes internos em aço zincado"
+    },
+    {
+      "label": "Contra-testa",
+      "value": "Contra-testa angular de série para portas que abrem para dentro; contra-testa plana disponível"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Função",
+      "value": "Cilindro simples, cilindro duplo ou autotravamento"
+    },
+    {
+      "label": "Característica",
+      "value": "Corrediça antiganzua no trinco de cilindro simples"
+    },
+    {
+      "label": "Estrutura",
+      "value": "Lingueta chanfrada"
+    },
+    {
+      "label": "Corpo",
+      "value": "Caixa externa em zamac injetado, componentes internos em aço zincado"
+    },
+    {
+      "label": "Trinco",
+      "value": "Trava de sobrepor com avanço total de 25 mm"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "1000 peças"
+    }
+  ],
+  "seoTitlePt": "564 Fechadura de sobrepor | Canton Hyland",
+  "seoDescriptionPt": "Fechadura de sobrepor 564 da Canton Hyland — fechaduras de sobrepor. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Oferece segurança confiável em portas externas de madeira",
+    "Projeto de fechadura de sobrepor econômico e durável"
+  ],
+  "featuresEs": [
+    "Ofrece una seguridad fiable en puertas exteriores de madera",
+    "Diseño de cerradura de sobreponer económico y duradero"
+  ]
 }

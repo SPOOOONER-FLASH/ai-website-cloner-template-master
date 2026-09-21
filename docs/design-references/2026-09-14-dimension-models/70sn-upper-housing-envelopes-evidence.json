@@ -1,0 +1,49 @@
+{
+  "scope": "70SN upper cylindrical envelope segments only; NOT the complete cylinder",
+  "sources": [
+    {
+      "path": "public\\images\\products\\70sn-lock-cylinder-2.webp",
+      "sha256": "69f4b3ee1349f482ee2f81ec52de37664fd45dc4138efa2166efe465ad21b9c7"
+    }
+  ],
+  "published_mm": {
+    "upperDiameter": 17,
+    "segments": [
+      30,
+      10,
+      30
+    ],
+    "overallLength": 70
+  },
+  "omitted": [
+    "lower euro profile (no fully dimensioned contour)",
+    "cam",
+    "thumbturn",
+    "plug and keyway",
+    "fixing thread and bores",
+    "keys"
+  ],
+  "meshChecks": [
+    {
+      "object": "70SN UPPER HOUSING ENVELOPE A",
+      "dimensions_mm": [
+        17.000000923871994,
+        17.000000923871994,
+        29.999999329447746
+      ],
+      "closedMesh": true,
+      "positiveVolume": true
+    },
+    {
+      "object": "70SN UPPER HOUSING ENVELOPE B",
+      "dimensions_mm": [
+        17.000000923871994,
+        17.000000923871994,
+        29.999999329447746
+      ],
+      "closedMesh": true,
+      "positiveVolume": true
+    }
+  ],
+  "manufacturingReady": false
+}

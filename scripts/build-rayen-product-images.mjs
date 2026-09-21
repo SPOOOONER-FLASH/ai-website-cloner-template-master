@@ -42,7 +42,7 @@
  */
 
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -327,6 +327,7 @@ try {
 }
 
 const vanished = [];
+const replaced = [];
 let reused = 0;
 const hashes = {};
 
@@ -341,7 +342,18 @@ for (const file of files) {
   }
 
   const prior = priorHashes.get(file);
-  if (prior && prior.source === sourceHash && (prior.status === "refused" || existsSync(target))) {
+  /*
+    A remembered refusal that still has a file on disk is not a valid cache hit: the target
+    is left over from when this filename held a different photograph. Fall through and
+    re-analyse so the refusal branch can clear it.
+  */
+  const staleRefusal = prior?.status === "refused" && existsSync(target);
+  if (
+    prior &&
+    prior.source === sourceHash &&
+    !staleRefusal &&
+    (prior.status === "refused" || existsSync(target))
+  ) {
     results.push({ file, status: prior.status, reason: prior.reason });
     hashes[file] = prior;
     reused += 1;
@@ -371,6 +383,24 @@ for (const file of files) {
     );
   } else if (result.status === "already-clean") {
     await writeImage(sharp(source).webp({ quality: 82 }), target);
+  } else if (existsSync(target)) {
+    /*
+      Refused, and a file is sitting there from an earlier run. Delete it.
+
+      "Write nothing" was the whole contract below, and it holds only while a refusal means
+      the target is ABSENT. On 2026-09-14 that stopped being true: re-ingesting a model whose
+      gallery had grown renumbers <slug>-N.webp, so -5 became a different photograph. The new
+      -5 was refused, nothing was written, and the OLD -5 — a different picture, already
+      carrying a RAYEN mark from the previous run — stayed on the site under the new name.
+
+      Ten files were in that state, and every automated check passed: the branding ledger saw
+      a stamped file, the squaring check saw a square file, and scripts/audit-rayen-images.mjs
+      reported "no mark" because it was differencing two unrelated pictures. Only opening one
+      showed the mark plainly present. A stale file is worse than a missing one — the missing
+      one renders the empty state the comment below describes, the stale one lies.
+    */
+    rmSync(target);
+    replaced.push(file);
   }
   // "refused" and "unreadable" write nothing: src/data/rayen.ts treats a missing file as
   // "this model has no usable photograph yet" and renders the empty state.
@@ -408,6 +438,18 @@ if (!checkOnly) {
       `拒绝处理 ${counts.refused ?? 0} 张（角落里可能是产品）。清单见 ${MANIFEST.replace(root, ".")}`,
   );
   console.log(`复用 ${reused} 张未变更的判定，重算 ${files.length - reused - vanished.length} 张。`);
+  if (replaced.length) {
+    console.warn(
+      [
+        `⚠ ${replaced.length} 张旧产物已删除：源图换成了另一张照片，而新的这张被拒绝清洗。`,
+        "  留着的话，站上会用旧名字显示一张早已不在清单里的图（还带着上一轮打的标）。",
+        ...replaced.slice(0, 8).map((name) => `  ${name}`),
+        replaced.length > 8 ? "  …" : "",
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+  }
   if (vanished.length) {
     console.warn(
       [
@@ -431,6 +473,23 @@ if (!checkOnly) {
   );
   if (missing.length) {
     console.error(`products-rayen/ 缺 ${missing.length} 张，跑 npm run rayen:images 重新生成。`);
+    process.exit(1);
+  }
+  /*
+    And the other direction, which this check was missing until 2026-09-14: a refused image
+    that nonetheless HAS a file. That means the name now points at a different photograph
+    from the one the file holds — see the refusal branch above. Checking only for absent
+    files let ten of these reach the site, every other check reading green.
+  */
+  const lingering = results.filter(
+    (r) => r.status === "refused" && existsSync(join(TARGET_DIR, r.file)),
+  );
+  if (lingering.length) {
+    console.error(
+      `products-rayen/ 有 ${lingering.length} 张是旧产物：源图已经换成另一张照片，` +
+        `新的这张被拒绝清洗，旧文件却还占着这个名字。跑 npm run rayen:images 清掉。`,
+    );
+    for (const r of lingering.slice(0, 10)) console.error(`  ${r.file}`);
     process.exit(1);
   }
   console.log(`products-rayen/ 与源图一致（${files.length} 张）。`);

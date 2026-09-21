@@ -33,6 +33,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { doorTypesFor } from "./rayen-door-types.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 /*
@@ -72,13 +73,82 @@ function shotRank(file) {
   return 4; // installed scene
 }
 
+/**
+ * The client's own running order, given 2026-09-11 as a screenshot of their listing sheet:
+ *
+ *   窗口图片 → 参数图 → 其他表面处理颜色展示图 → 安装实景效果图
+ *
+ * Two things change against shotRank above, and the client stated both outright
+ * (「参数图放第一张」, 「确保参数尺寸是第一张图」):
+ *
+ *   · the DIMENSION DRAWING leads the gallery. Earlier batches led with a product plate on
+ *     the argument that the thumbnail is what a buyer sees first. That argument still holds,
+ *     which is why the thumbnail is now picked separately below — but INSIDE the gallery the
+ *     fitting dimensions come before the photography.
+ *   · the supplier marks the intended thumbnail in the filename with 窗图 (window image).
+ *     Where one exists it becomes heroImage whatever its shot type; 18 of this batch's 33
+ *     models carry one. Where none exists the first product plate keeps the job.
+ *
+ * Opt-in per manifest (`"imageOrder": "drawing-first"`) rather than flipped globally:
+ * batches 1–4 shipped in the old order and their source packs are not on this machine, so
+ * changing the default would reorder products this run can neither regenerate nor check.
+ */
+const DRAWING_FIRST = manifest.imageOrder === "drawing-first";
+/* The supplier marks the intended thumbnail in the filename. Batches 1–7 wrote 「窗図/窗图」
+   (window image); the G1255 pack that arrived 2026-09-17 writes 「主图」 instead. Same
+   intent, different word — and without this the hero silently falls back to the first
+   product plate, which is a quieter failure than it sounds: the card still looks fine. */
+const isWindowShot = (file) => file.includes("窗图") || file.includes("主图");
+/*
+  UNION encodes the shot type in the filename (D9xxSZ = drawing). The RAYEN catalogue
+  batch has no such convention — its pictures are cut out of the printed book by
+  scripts/../cut.mjs — so those are named for what they are instead.
+*/
+/* D900SZ, but also D901_A_SZoW and D922SZXW — the supplier interleaves a variant letter
+   and suffixes after the number. T1138's long-length drawing is `D901_A_SZoW`, which the
+   original contiguous pattern missed: it would have been filed as an ordinary photograph
+   and lost both its 「dimension drawing」 label and its place at the head of the gallery. */
+/* `-drawing-1` / `-drawing-2`: RY8005 and RY8006 are drawn twice, once per leaf width
+   (34/36mm and 30mm). One number per picture, because the two are different parts to
+   order — not the same drawing at two scales. */
+const isDrawing = (file) =>
+  /(D|L)9\d\d[_A-Za-z]*SZ/i.test(file) || /-drawing(-\d+)?\.[a-z]+$/i.test(file);
+
+/*
+  `imageDir` overrides the folder name when the model number is not unique.
+
+  The hinge catalogue numbers by SIZE — `4x3x3.0-4BB` is a 101.6 × 76.2 × 3.0mm hinge with
+  four ball bearings — so the same code names a stainless one and a copper one. Keyed on the
+  model, both would have read the same folder and the copper hinge would have shipped with the
+  stainless photograph. Everything before batch 8 has unique model numbers and is unaffected.
+*/
 function imagesFor(model) {
   const dir = join(manifest.sourceRoot, model);
   if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter((f) => /\.jpg$/i.test(f) && !excluded.has(f))
-    .sort((a, b) => shotRank(a) - shotRank(b) || a.localeCompare(b))
-    .map((f) => join(dir, f));
+  const files = readdirSync(dir).filter((f) => /\.jpg$/i.test(f) && !excluded.has(f));
+
+  if (!DRAWING_FIRST) {
+    return files
+      .sort((a, b) => shotRank(a) - shotRank(b) || a.localeCompare(b))
+      .map((f) => join(dir, f));
+  }
+
+  /* Drawing first, then the same shot order as before. */
+  const ordered = files
+    .slice()
+    .sort(
+      (a, b) =>
+        (isDrawing(a) ? 0 : 1 + shotRank(a)) - (isDrawing(b) ? 0 : 1 + shotRank(b)) ||
+        a.localeCompare(b),
+    );
+
+  /* Lift the thumbnail out in front of it. */
+  const heroAt = ordered.findIndex(isWindowShot);
+  const fallbackAt = ordered.findIndex((f) => !isDrawing(f));
+  const at = heroAt >= 0 ? heroAt : fallbackAt;
+  if (at < 0) return ordered.map((f) => join(dir, f));
+  const [hero] = ordered.splice(at, 1);
+  return [hero, ...ordered].map((f) => join(dir, f));
 }
 
 /**
@@ -89,7 +159,30 @@ function imagesFor(model) {
  * dimensions it says what the product is and stops.
  */
 function buildSummary(entry) {
-  const kind = entry.categoryPath[0] === "lever-handles" ? "lever handle" : "pull handle";
+  /*
+    What the thing IS, taken off the record rather than guessed from its category.
+
+    The guess used to be "lever handle in lever-handles, pull handle everywhere else",
+    which was true while this ingest only ever carried handles. The hinge and door-stop
+    catalogues broke it quietly: every one of the 55 ball-bearing hinges, all 21 concealed
+    hinges and the four JL hydraulic hinges shipped with a summary — and therefore an SEO
+    description — reading "Stainless Steel 304/316L pull handle."
+
+    The handle categories keep their wording so the 200-odd records already published do
+    not churn; anything else is described by its own name.
+  */
+  const HANDLE = new Set([
+    "stainless-steel-handles",
+    "glass-door-accessories",
+    "grip-handle-sets",
+    "night-latches-rim-locks",
+  ]);
+  const kind =
+    entry.categoryPath[0] === "lever-handles"
+      ? "lever handle"
+      : HANDLE.has(entry.categoryPath[0])
+        ? "pull handle"
+        : entry.name.toLowerCase();
   const centre = entry.specs.find((s) => s.label === "Centre distance")?.value;
   const length = entry.specs.find((s) => s.label === "Overall length")?.value;
   const lever = entry.specs.find((s) => s.label === "Lever length")?.value;
@@ -112,11 +205,33 @@ function buildSummary(entry) {
   one is a field that claims a pairing the site cannot show — so it is computed here
   rather than trusted from the manifest, and it corrects itself the day the missing
   models arrive. src/data/product-sites.test.ts is what caught this.
+
+  COUNTED ACROSS EVERY MANIFEST, NOT JUST THIS ONE.
+
+  A pairing is a fact about the catalogue — T2110 the solid-door handle and G2110 the glass
+  one are the same design — and has nothing to do with which consignment each arrived in.
+  Counting within one manifest only happened to work while both halves of every family sat
+  in the same file. On 2026-09-14 G2110 moved to union-handles-rebuilt.json to pick up the
+  dimension drawing UNION publishes for it, its partner stayed in union-handles.json, and
+  the family silently collapsed to one member: the field was dropped from G2110 and
+  src/data/product-sites.test.ts reported 「2110 只有 T2110」.
 */
 const familyCount = new Map();
-for (const entry of manifest.models) {
-  if (!entry.styleFamily) continue;
-  familyCount.set(entry.styleFamily, (familyCount.get(entry.styleFamily) ?? 0) + 1);
+for (const file of readdirSync(join(root, "content", "rayen"))) {
+  if (!file.endsWith(".json")) continue;
+  let other;
+  try {
+    other = JSON.parse(readFileSync(join(root, "content", "rayen", file), "utf8"));
+  } catch {
+    continue;
+  }
+  /* Array.isArray, not `?? []`: artunion-specs.json also has a `models` key, but its is an
+     object keyed by model number — the spec cache, not a manifest. */
+  if (!Array.isArray(other.models)) continue;
+  for (const entry of other.models) {
+    if (!entry.styleFamily) continue;
+    familyCount.set(entry.styleFamily, (familyCount.get(entry.styleFamily) ?? 0) + 1);
+  }
 }
 
 mkdirSync(IMAGE_DIR, { recursive: true });
@@ -124,7 +239,7 @@ const written = [];
 const missing = [];
 
 for (const entry of manifest.models) {
-  const sources = imagesFor(entry.model);
+  const sources = imagesFor(entry.imageDir ?? entry.model);
   if (!sources.length) {
     missing.push(entry.model);
     continue;
@@ -137,15 +252,36 @@ for (const entry of manifest.models) {
     if (!checkOnly) {
       await sharp(source).resize({ width: 1400, withoutEnlargement: true }).webp({ quality: 82 }).toFile(target);
     }
-    const isDrawing = /D9\d\dSZ/i.test(source);
+    const drawing = isDrawing(source);
+    /*
+      A finish shot says which finish. The catalogue batch names these `-finish-a`, `-finish-b`
+      … in the order the book prints them, which is the order `finishes` lists them, so the
+      letter indexes straight into it. Five tiles of the same lever reading "view 3" … "view 7"
+      is alt text that describes the file rather than the picture: a screen reader gets nothing,
+      and neither does image search, when the only thing that differs between them is colour.
+    */
+    const finishAt = /-finish-([a-i])\.[a-z]+$/i.exec(source);
+    /* a–i, not a–f: door stop 275 prints nine finishes. A six-letter alphabet silently
+       labelled the last three "view 8".."view 10" instead of naming their colour. */
+    const finish = finishAt ? (entry.finishes ?? [])["abcdefghi".indexOf(finishAt[1].toLowerCase())] : undefined;
+    /* The installed photograph off the facing page. "view 11" describes the file, not the
+       picture — a reader skimming alt text learns nothing from a number. */
+    const scene = /-scene\.[a-z]+$/i.test(source);
+    /* Which of the two leaf widths this drawing is. */
+    const viewAt = /-drawing-(\d+)\.[a-z]+$/i.exec(source);
+    const view = viewAt ? (entry.drawingNotes ?? [])[Number(viewAt[1]) - 1] : undefined;
     refs.push({
       src: `/images/products/${name}`,
       ratio: "1 / 1",
-      label: isDrawing
-        ? `${entry.model} ${entry.name}, dimension drawing`
-        : index === 0
-          ? `${entry.model} ${entry.name}`
-          : `${entry.model} ${entry.name}, view ${index + 1}`,
+      label: drawing
+        ? `${entry.model} ${entry.name}, dimension drawing${view ? ` — ${view}` : ""}`
+        : finish
+          ? `${entry.model} ${entry.name}, ${finish}`
+          : scene
+            ? `${entry.model} ${entry.name}, installed`
+            : index === 0
+            ? `${entry.model} ${entry.name}`
+            : `${entry.model} ${entry.name}, view ${index + 1}`,
     });
   }
 
@@ -177,7 +313,7 @@ for (const entry of manifest.models) {
     specs: entry.specs,
     material: entry.material,
     finishes: entry.finishes,
-    doorTypes: [],
+    doorTypes: doorTypesFor(entry),
     certifications: [],
     heroImage: refs[0],
     gallery: refs.slice(1),
@@ -187,8 +323,65 @@ for (const entry of manifest.models) {
     seoDescription: summary,
   };
 
+  /*
+    A manifest that rebuilds an EXISTING record must not quietly drop spec rows.
+
+    2026-09-17: the batch-8 manifest treated G1255 as a new model and wrote it from its two
+    drawings. G1255 was already in the catalogue with ten spec rows — weight, available
+    lengths, the M6 fixing screw and the phi12 / phi8 hole diameters — and the rebuild replaced
+    them with five. Nothing failed. The page rendered, the card looked right, and the numbers
+    a fitter drills to were gone. It was caught only because an orphaned door-prep SVG made a
+    different test fail.
+
+    Same shape as the two earlier losses this repo has already paid for, so this is a refusal
+    rather than a warning: a warning in a two-hundred-line ingest log is a warning nobody
+    reads. To overwrite deliberately — a genuine correction — name the model in the manifest's
+    `overwrites` array, which puts the decision next to the data where it gets reviewed.
+  */
+  const target = join(PRODUCT_DIR, `${entry.slug}.json`);
+  if (existsSync(target)) {
+    const before = JSON.parse(readFileSync(target, "utf8"));
+    const had = new Set((before.specs ?? []).map((row) => row.label));
+    const has = new Set((entry.specs ?? []).map((row) => row.label));
+    const lost = [...had].filter((label) => !has.has(label));
+    if (lost.length && !(manifest.overwrites ?? []).includes(entry.model)) {
+      console.error(
+        `
+⚠ ${entry.model} 目录里已经有了，这份清单会删掉它的 ${lost.length} 条规格：` +
+          `
+   ${lost.join("、")}` +
+          `
+   要么把这些行写进清单，要么把型号加进 "overwrites" 明示是有意覆盖。`,
+      );
+      process.exitCode = 1;
+      continue;
+    }
+  }
+
+  /*
+    Fields this ingest does not own are carried over, not overwritten.
+
+    2026-09-17: the Portuguese pass added `namePt`, `summaryPt`, `specsPt`, `seoTitlePt` and
+    `seoDescriptionPt` to all 76 hinge records the same afternoon this manifest rewrote their
+    summaries. The record is rebuilt from scratch here, so re-running the ingest would have
+    deleted every one of them — a whole locale's translation, silently, with a green test run,
+    because nothing in this file knows those keys exist.
+
+    Same shape as the spec-loss guard above, and the answer is the same in spirit: this
+    generator owns the keys it writes and nothing else. Whatever else the record carries stays.
+  */
+  let merged = record;
+  if (existsSync(target)) {
+    const before = JSON.parse(readFileSync(target, "utf8"));
+    const kept = Object.fromEntries(
+      Object.entries(before).filter(([key]) => !(key in record)),
+    );
+    if (Object.keys(kept).length) merged = { ...record, ...kept };
+  }
+
   if (!checkOnly) {
-    writeFileSync(join(PRODUCT_DIR, `${entry.slug}.json`), `${JSON.stringify(record, null, 2)}\n`, "utf8");
+    writeFileSync(target, `${JSON.stringify(merged, null, 2)}
+`, "utf8");
   }
   written.push(`${entry.model} → ${entry.categoryPath.join("/")} (${refs.length} 图, ${entry.specs.length} 规格行)`);
 }

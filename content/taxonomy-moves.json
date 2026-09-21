@@ -52,112 +52,137 @@
   ],
   "productMerges": [
     {
+      "from": "t2973a-stainless-steel-handle",
+      "to": "t2973-stainless-steel-handle",
+      "category": "stainless-steel-handles",
+      "why": "同一根拉手两条记录。2026-09-14 按甲方「T2973A 去 union 爬取」去查，artunion 上没有 T2973A 这个型号（规格缓存里它的记录就是 search_id 无结果）。T2973 的详情页上一共四张图，其中尺寸图的文件名是 T2973AxD900SZoW.jpg —— 「A」是 UNION 给图纸文件的后缀，不是另一个型号。我们这边因此分成了两条：T2973 拿到三张照片、规格表空着，T2973A 拿到那张尺寸图、规格表是照 T2973 的 UNION 数据填的。三张照片与 UNION 的 D000/D400/D500 逐张比对，灰度平均差 1.3 / 2.8 / 2.9（满分 255），确认是同三张。幸存的是 T2973，因为那才是原厂型号号；名字用 T2973A 那条的「门拉手（可定制长度）」，与 UNION 规格表的「オーダー対応 L1600〜2200」一致。",
+      "reason": "duplicate-merged"
+    },
+    {
       "from": "lc14-8550-four-bolt-mortise-lock-case",
       "to": "lc14-85-50mm-lock-case",
       "category": "lock-cases",
-      "why": "同一个四圆柱锁体两条记录. Both are LC14, 85mm centre distance, 50mm backset, euro profile, four round bolts. The survivor carries eight photographs and the full spec table; the retired one carried a hero and four spec rows. Google reported 462 pages as 'duplicate, user has not selected canonical' — this is one of the pairs feeding it."
+      "why": "同一个四圆柱锁体两条记录. Both are LC14, 85mm centre distance, 50mm backset, euro profile, four round bolts. The survivor carries eight photographs and the full spec table; the retired one carried a hero and four spec rows. Google reported 462 pages as 'duplicate, user has not selected canonical' — this is one of the pairs feeding it.",
+      "reason": "duplicate-merged"
     },
     {
       "from": "lc04-85-60mm-lock-case",
       "to": "lc04-85-60-lock-case",
       "category": "lock-cases",
-      "why": "同一个 LC04 两条记录. Identical specs (85mm centre distance, 60mm backset, euro profile, four round bolts, wooden doors). The survivor carries six gallery photographs; the retired one carried a hero only."
+      "why": "同一个 LC04 两条记录. Identical specs (85mm centre distance, 60mm backset, euro profile, four round bolts, wooden doors). The survivor carries six gallery photographs; the retired one carried a hero only.",
+      "reason": "duplicate-merged"
     },
     {
       "from": "ds011-door-flush-bolt",
       "to": "ds011-door-stopper",
       "category": "hardware-accessories",
-      "why": "工厂 2026-09-08 确认 DS011 是门吸不是插销。Bing 关键词表里的真实买家搜索「door stopper ds013 vs ds011」也是这么理解的。"
+      "why": "工厂 2026-09-08 确认 DS011 是门吸不是插销。Bing 关键词表里的真实买家搜索「door stopper ds013 vs ds011」也是这么理解的。",
+      "reason": "type-corrected"
     },
     {
       "from": "001-panic-exit-device",
       "to": "001-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "015-panic-exit-device",
       "to": "015-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "023-et-panic-exit-device",
       "to": "023-et-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "026-panic-exit-device",
       "to": "026-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "027-panic-exit-device",
       "to": "027-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "028-panic-exit-device",
       "to": "028-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "030-panic-exit-device",
       "to": "030-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "033-panic-exit-device",
       "to": "033-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "035-panic-exit-device",
       "to": "035-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "037-panic-exit-device",
       "to": "037-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "039-panic-exit-device",
       "to": "039-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "9080e-panic-exit-device",
       "to": "9080e-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "x2-panic-exit-device",
       "to": "x2-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device"
+      "why": "记录自己的 Type 行写着 outside lever/trim，名字却是 Panic Exit Device",
+      "reason": "renamed-to-match-type"
     },
     {
       "from": "72-panic-exit-device",
       "to": "072-panic-exit-device-lock-case",
       "category": "panic-exit-devices",
-      "why": "Type 行写着 Profile lock case；307 的规格行点名的就是它"
+      "why": "Type 行写着 Profile lock case；307 的规格行点名的就是它",
+      "reason": "type-corrected"
     },
     {
       "from": "023-ps-panic-exit-device",
       "to": "023-ps-panic-exit-device-trim",
       "category": "panic-exit-devices",
-      "why": "Renamed Panic Exit Device → Panic Exit Device Trim; the record's own Type row reads outside lever trim."
+      "why": "Renamed Panic Exit Device → Panic Exit Device Trim; the record's own Type row reads outside lever trim.",
+      "reason": "renamed-to-match-type"
     }
   ]
 }

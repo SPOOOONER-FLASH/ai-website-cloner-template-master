@@ -61,10 +61,28 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /* ------------------------------------------------------- which models to ask about */
 
 /**
- * UNION's own numbering. Anything outside these prefixes is a RAYEN or HYDE model that
- * UNION never made, and querying it would just produce noise in the miss list.
+ * Which models this scraper looks up: ALL of them.
+ *
+ * There is no prefix filter any more, and that is the point.
+ *
+ * It was /^(?:UL|PRE-?|G|T)\d/ — a prefix had to be followed immediately by a digit — on the
+ * reasoning that anything else was a number UNION never made and would only add noise to the
+ * miss list. On 2026-09-15 two sessions found, independently and within an hour, that it had
+ * been silently skipping real products: MUL1022, MUL1066, MUL2101, MTR2110, TSG52, TSG1169,
+ * TSG1170, TSG1226, USG1. Every one of them ships an EMPTY spec table, and the gap audit had
+ * told the client they were "not on UNION at all" and to go ask the factory for drawings
+ * UNION was publishing. The client found MUL2101 on his phone in about a minute.
+ *
+ * Both sessions' first instinct was to widen the pattern. Both patterns still missed
+ * something — one dropped MTR2110, the other dropped OASHB201 — which is the argument
+ * against having one at all. A filter fails OPEN here: an excluded model does not error, does
+ * not appear in the miss count, never enters the loop, and the summary prints "0 未抓到" and
+ * reads like success. A miss, by contrast, costs one request and is recorded as a miss.
+ *
+ * 196 models at 1.2s is four minutes, once. That is the whole price of never having this
+ * class of bug again, and it is worth paying.
  */
-const UNION_PREFIX = /^(?:UL|PRE-?|G|T)\d/i;
+const worthAsking = (model) => model.length > 0;
 
 function rayenModels() {
   const out = [];
@@ -78,7 +96,7 @@ function rayenModels() {
     }
     if (!(product.sites ?? []).includes("rayen")) continue;
     const model = String(product.model ?? "").trim();
-    if (!UNION_PREFIX.test(model)) continue;
+    if (!worthAsking(model)) continue;
     out.push({
       model,
       slug: product.slug,
@@ -114,19 +132,31 @@ async function get(url) {
   return response.text();
 }
 
+/*
+  The result page is requested DIRECTLY, not via search_id.php.
+
+  search_id.php used to POST the model number and hand back the path of a result page
+  carrying it — "/products/search_hinban.php?id=MUL2101&anc=searchResultInner". On
+  2026-09-15 it started returning that same path with the id STRIPPED:
+
+      /products/search_hinban.php?id=&anc=searchResultInner
+
+  An empty id renders the no-results page, which is a perfectly valid 200. So every model
+  fetched through it came back "not in UNION's catalogue" — including T2973, which the same
+  script had read three variants from two hours earlier. The client found MUL2101 on his
+  phone while our probe was reporting it did not exist, which is how this surfaced.
+
+  We know the URL that page lives at, so we build it ourselves and leave search_id.php out
+  of the path entirely. One fewer request, and one fewer thing that can fail open.
+
+  Telling a hit from a miss: the no-results page is about 19.5KB, a hit 25–28KB. Nothing is
+  keyed off that — the ids are what count — but it is the signature to look for if this ever
+  goes quiet again.
+*/
 async function resolveVariants(model) {
-  const response = await fetch(`${ORIGIN}/products/search_id.php`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "User-Agent": "RAYEN-spec-reader/1.0 (hardware catalogue; contact via rayen site)",
-    },
-    body: new URLSearchParams({ id: model }).toString(),
-  });
-  if (!response.ok) throw new Error(`HTTP ${response.status} search_id`);
-  const path = (await response.text()).trim();
-  if (!path.startsWith("/")) return [];
-  const html = await get(`${ORIGIN}${path}`);
+  const html = await get(
+    `${ORIGIN}/products/search_hinban.php?id=${encodeURIComponent(model)}&anc=searchResultInner`,
+  );
   const ids = new Set();
   for (const m of html.matchAll(/detail\.php\?id=([A-Za-z0-9\-]+)/g)) ids.add(m[1]);
   /*
@@ -137,24 +167,40 @@ async function resolveVariants(model) {
   const exact = [...ids].filter((id) => id.toUpperCase().startsWith(`${model.toUpperCase()}-`));
 
   /*
-    ONE VARIANT PER LENGTH, NOT PER FINISH.
+    ONE VARIANT PER SIZE, NOT PER FINISH.
 
-    A UNION part number is <model>-<finish>-<colour>[-L<length>]. G2750 has 15 of them, but
-    the numbers we came for — weight, pitch, hole sizes — vary with LENGTH and not with
-    whether the brass is mirrored or satin. Fetching by finish costs fifteen requests and
-    still misses a length: G2690 publishes twenty variants, and the adjustable 1660–2160
-    one we actually sell was not in the first four, which is why its pitch looked like a
-    conflict when it was only an absent row.
+    A UNION part number is <model>-<finish>-<colour>[-<size>]. G2750 has 15 of them, but the
+    numbers we came for — weight, pitch, hole sizes — vary with SIZE and not with whether the
+    brass is mirrored or satin. Fetching by finish costs fifteen requests and still misses a
+    length: G2690 publishes twenty variants, and the adjustable 1660–2160 one we actually
+    sell was not in the first four, which is why its pitch looked like a conflict when it was
+    only an absent row.
 
-    So group by the -L#### suffix and take one of each. Fewer requests on somebody else's
-    server, and complete coverage of the axis that matters.
+    WHY THE KEY IS "EVERYTHING AFTER THE NUMERIC SEGMENTS" AND NOT "-L####".
+
+    It used to be `/-L(\d+)$/`, on the assumption that a size always shows up as -L600. The
+    client searched T2973 on UNION's own site on 2026-09-14 and got three results where we
+    had cached one:
+
+        T2973-01-023-A    P=1480〜2080
+        T2973-01-023-B    P=2081〜2580
+        T2973-01-023-C    P=2581〜2980
+
+    Three centre-distance bands of one made-to-order handle, each with its own drawing, and
+    none of them carrying -L####. All three collapsed to the key "base" and two were thrown
+    away — so the catalogue showed the 1480–2080 band and silently claimed that was the part.
+
+    Finish and colour are the numeric segments; anything after them is what distinguishes the
+    part. Stripping the leading -<digits> groups handles every id shape UNION uses here,
+    including UL1066-001 which has only one such segment.
   */
-  const byLength = new Map();
+  const bySize = new Map();
   for (const id of exact) {
-    const key = (id.toUpperCase().match(/-L(\d+)$/) ?? [, "base"])[1];
-    if (!byLength.has(key)) byLength.set(key, id);
+    const tail = id.toUpperCase().slice(model.length).replace(/^(-\d+)+/, "");
+    const key = tail || "base";
+    if (!bySize.has(key)) bySize.set(key, id);
   }
-  return [...byLength.values()];
+  return [...bySize.values()];
 }
 
 /* --------------------------------------------------------------- spec extraction */
@@ -343,7 +389,7 @@ async function main() {
       const ids = await resolveVariants(entry.model);
       await sleep(DELAY_MS);
       if (!ids.length) {
-        cache.models[entry.model] = { variants: [], error: "search_id 无结果" };
+        cache.models[entry.model] = { variants: [], error: "型号检索页里没有这个型号" };
         missed += 1;
         console.log(`  —  ${entry.model}  未收录`);
       } else {

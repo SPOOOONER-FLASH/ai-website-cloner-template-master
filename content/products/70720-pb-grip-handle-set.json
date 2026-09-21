@@ -84,7 +84,7 @@
   "relatedModels": [],
   "seoTitle": "70720 PB Grip Handle Set — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland 70720 PB grip handle set in Zinc Alloy. Grip Handle Set in polished brass (us3). Available in PB finish. Made in Guangdong, China.",
-  "nameEs": "Juegos de manija con placa",
+  "nameEs": "Juego de manillón",
   "summary": "Grip Handle Set in polished brass (us3).",
   "seoTitleEs": "70720 PB Juegos de manija con placa — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 70720 PB juegos de manija con placa en zamak. Acabado PB. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
@@ -97,5 +97,102 @@
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
   },
-  "description": ""
+  "description": "",
+  "namePt": "Conjunto de puxador",
+  "summaryPt": "Conjunto de puxador em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm / 70 mm ajustável, lingueta e trinco"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Curso do trinco",
+      "value": "25 mm, com inserto de aço temperado que resiste ao serramento"
+    },
+    {
+      "label": "Saída da lingueta",
+      "value": "13 mm"
+    },
+    {
+      "label": "Furo transversal",
+      "value": "51 mm — substitui a maioria das fechaduras existentes"
+    },
+    {
+      "label": "Chassi",
+      "value": "Construção interna em aço maciço, protegida contra corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Latão maciço forjado ou zamak injetado galvanizado"
+    },
+    {
+      "label": "Mão",
+      "value": "Sem mão definida, direita ou esquerda"
+    },
+    {
+      "label": "Característica",
+      "value": "Sem fixações aparentes pelo lado de fora; o anel giratório do cilindro resiste ao arrancamento"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Latão polido (US3)"
+    }
+  ],
+  "seoTitlePt": "70720 PB Conjunto de puxador | Canton Hyland",
+  "seoDescriptionPt": "Conjunto de puxador 70720 PB da Canton Hyland — conjuntos de puxador. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Juego de manillón de zamak.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Entrada",
+      "value": "60 / 70 mm regulable, picaporte y pestillo"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Salida del cerrojo",
+      "value": "25 mm, con inserto de acero templado antisierra"
+    },
+    {
+      "label": "Salida del picaporte",
+      "value": "13mm"
+    },
+    {
+      "label": "Perforación principal",
+      "value": "51 mm — sustituye a la mayoría de las cerraduras existentes"
+    },
+    {
+      "label": "Chasis",
+      "value": "Construcción interna de acero macizo con protección anticorrosiva"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Latón macizo forjado o zamak inyectado con galvanizado"
+    },
+    {
+      "label": "Mano",
+      "value": "Sin mano definida, izquierda o derecha"
+    },
+    {
+      "label": "Característica",
+      "value": "Sin tornillería exterior a la vista; el anillo giratorio del cilindro resiste el arranque"
+    },
+    {
+      "label": "Acabado",
+      "value": "Latón pulido (US3)"
+    }
+  ]
 }

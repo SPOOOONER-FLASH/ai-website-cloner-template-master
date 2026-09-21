@@ -2,8 +2,14 @@
  * 社交主页。现在由后台「网站设置」维护 —— 换个账号不该需要改代码。
  * 导出名保持不变，页脚和菜单抽屉的调用处一行都不用动。
  */
-import { siteSettings } from "./navigation";
-import { hasSpanishMirror } from "../lib/spanish-mirror";
+/*
+  The extension is required, not decorative. `node --test` runs these modules directly
+  with type stripping and resolves ESM strictly, so an extensionless relative import throws
+  ERR_MODULE_NOT_FOUND the moment a test pulls this file in. It did not before 2026-09-16
+  because nothing under test imported site.ts; the product finder does now, for `locales`.
+*/
+import { siteSettings } from "./navigation.ts";
+import { hasSpanishMirror } from "../lib/spanish-mirror.ts";
 
 export { hasSpanishMirror };
 
@@ -58,18 +64,24 @@ export const analytics = {
 export const siteName = "Canton Hyland";
 export const legalName = siteSettings.legalName;
 
-/** Locale routing. The Spanish site is a PARTIAL mirror — see hasSpanishMirror below. */
-export const locales = ["en", "es"] as const;
-export type Locale = (typeof locales)[number];
+/*
+  Locale routing. The list itself lives in ./locales.ts, which imports nothing — see the
+  note there on why it had to leave this file. Re-exported so every existing
+  `from "@/data/site"` keeps working.
+*/
+import type { Locale } from "./locales.ts";
+export { locales, type Locale } from "./locales.ts";
 
 export const defaultTitle: Record<Locale, string> = {
   en: "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
   es: "Canton Hyland — Fabricante de barras antipánico y herrajes",
+  pt: "Canton Hyland — Fabricante de barras antipânico e ferragens",
 };
 
 export const defaultDescription: Record<Locale, string> = {
   en: "Chinese manufacturer of panic exit devices, mortise locks, lever handles, hinges and architectural door hardware. ISO 9001 certified, exporting to 30+ markets.",
   es: "Fabricante chino de barras antipánico, cerraduras de embutir, manillas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
+  pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
 };
 
 /** Absolute URL helper — path must start with "/". */

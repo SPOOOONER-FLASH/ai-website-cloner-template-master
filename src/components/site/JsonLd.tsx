@@ -1,3 +1,5 @@
+import type { Locale } from "@/data/site";
+import { articleFaqItems } from "@/lib/article-faq";
 import { absoluteUrl, legalName, siteName, siteUrl } from "@/data/site";
 import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
@@ -165,15 +167,24 @@ export function websiteSchema(): WithContext<WebSite> {
 export function productSchema(
   product: Product,
   url: string,
-  locale: "en" | "es" = "en",
+  locale: Locale = "en",
   categoryName?: string,
 ): WithContext<SchemaProduct> {
   const es = locale === "es";
-  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs).filter(
+  const pt = locale === "pt";
+  /*
+    The markup has to say what the page says. A Portuguese page whose Product schema
+    carries the English name and the English spec table is telling a search engine the
+    visible text is something else — the same class of mismatch Google treats FAQ markup
+    for, one schema over.
+  */
+  const localeSpecs = pt ? product.specsPt : es ? product.specsEs : undefined;
+  const specs = (localeSpecs?.length ? localeSpecs : product.specs).filter(
     (spec) => spec.value,
   );
-  const name = (es && product.nameEs) || product.name;
-  const description = (es && product.summaryEs) || product.summary;
+  const name = (es ? product.nameEs : pt ? product.namePt : undefined) ?? product.name;
+  const description =
+    (es ? product.summaryEs : pt ? product.summaryPt : undefined) ?? product.summary;
   const videos = videoObjects(product);
 
   return {
@@ -271,7 +282,7 @@ function videoObjects(product: Product) {
 export function newsArticleSchema(
   article: NewsArticle,
   url: string,
-  locale: "en" | "es" = "en",
+  locale: Locale = "en",
 ): WithContext<SchemaNewsArticle | SchemaTechArticle> {
   const images = [article.heroImage, ...(article.gallery ?? [])]
     .map((image) => image.src)
@@ -291,12 +302,19 @@ export function newsArticleSchema(
     "@type": article.kind === "insight" ? "TechArticle" : "NewsArticle",
     /*
       The headline and description a reader of THIS page sees. Emitting the English ones
-      on the Spanish mirror would make the markup disagree with the visible text, which
-      is the same failure the audit checks for on FAQ answers — and here it would also
-      offer an answer engine an English sentence as the summary of a Spanish page.
+      on a mirror would make the markup disagree with the visible text, which is the same
+      failure the audit checks for on FAQ answers — and here it would also offer an answer
+      engine an English sentence as the summary of a translated page.
+
+      These mirror `NewsDetail`'s own fallback exactly: the locale's field, else English.
+      If the two ever disagree the markup becomes the spam signal it is meant to avoid.
     */
-    headline: (locale === "es" && article.titleEs) || article.title,
-    description: (locale === "es" && article.summaryEs) || article.summary,
+    headline:
+      (locale === "es" && article.titleEs) || (locale === "pt" && article.titlePt) || article.title,
+    description:
+      (locale === "es" && article.summaryEs) ||
+      (locale === "pt" && article.summaryPt) ||
+      article.summary,
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
@@ -313,7 +331,9 @@ export function newsArticleSchema(
           "@type": "Person",
           name: article.author.name,
           jobTitle:
-            (locale === "es" && article.author.roleEs) || article.author.role,
+            (locale === "es" && article.author.roleEs) ||
+            (locale === "pt" && article.author.rolePt) ||
+            article.author.role,
           worksFor: { "@id": `${siteUrl}/#organization` },
           ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
           ...(article.author.credential
@@ -328,7 +348,11 @@ export function newsArticleSchema(
         }
       : { "@id": `${siteUrl}/#organization` },
     publisher: { "@id": `${siteUrl}/#organization` },
-    inLanguage: locale,
+    /*
+      pt-BR rather than a bare "pt": this tree was written for Brazil, and the distinction
+      is one a search engine acts on when choosing which mirror to serve a reader.
+    */
+    inLanguage: locale === "pt" ? "pt-BR" : locale,
   };
 }
 
@@ -337,9 +361,9 @@ export function NewsArticleJsonLd({
   locale = "en",
 }: {
   article: NewsArticle;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
-  const path = locale === "es" ? `/es/news/${article.slug}/` : `/news/${article.slug}/`;
+  const path = locale === "en" ? `/news/${article.slug}/` : `/${locale}/news/${article.slug}/`;
   return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
 }
 
@@ -388,9 +412,43 @@ export function ProductFaqJsonLd({
   locale = "en",
 }: {
   product: Product;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const items = productFaqItems(product, locale);
+  if (!items.length) return null;
+
+  const data: WithContext<FAQPage> = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  return <JsonLd data={data} />;
+}
+
+/**
+ * FAQPage structured data for one technical article.
+ *
+ * Same rule as the product version: the items come from `articleFaqItems`, which is also
+ * what the page renders, so the markup can never claim an answer the reader cannot see.
+ * An article with no `faq` emits nothing rather than an empty FAQPage.
+ *
+ * ⚠ This is emitted ALONGSIDE the article's TechArticle markup, not instead of it. They
+ * describe different things — one says what the document is, the other says which
+ * questions it answers — and a page may carry both.
+ */
+export function ArticleFaqJsonLd({
+  article,
+  locale = "en",
+}: {
+  article: NewsArticle;
+  locale?: Locale;
+}) {
+  const items = articleFaqItems(article, locale);
   if (!items.length) return null;
 
   const data: WithContext<FAQPage> = {
@@ -413,7 +471,7 @@ export function ProductFaqJsonLd({
  * FAQPage whose answers do not appear on the page as a spam signal, so the two must not
  * be allowed to drift apart.
  */
-export function FaqJsonLd({ locale = "en" }: { locale?: "en" | "es" } = {}) {
+export function FaqJsonLd({ locale = "en" }: { locale?: Locale } = {}) {
   /*
     Same call the page makes, with the same locale. The audit asserts every answer in this
     markup is visible in the rendered text; emitting English answers beside a Spanish page

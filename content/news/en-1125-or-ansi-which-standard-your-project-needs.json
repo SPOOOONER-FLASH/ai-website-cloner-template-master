@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "Buyers ask us for \"a CE panic bar\" or \"an ANSI Grade 1 exit device\" as though the two were points on one scale, with CE somewhere below ANSI or the other way round. They are not. They are two separate regulatory systems, written by different bodies for different building codes, and the question of which one applies is settled before anyone chooses a supplier — by where the door is and what the authority having jurisdiction there enforces.",
@@ -49,5 +50,75 @@
     "Envíenos la relación de puertas en lugar de un código de producto. Lo que necesitamos es el material y espesor de la hoja, si el hueco es de una o dos hojas, si es cortafuegos y con qué clasificación, qué norma exige la autoridad, y si hace falta acceso desde el exterior —y en tal caso por manilla, por llave, o ninguno. Son cinco líneas, y bastan para que nuestra oficina técnica nombre los dispositivos que realmente pueden especificarse, en lugar de los que nos gustaría vender."
   ],
   "seoTitleEs": "EN 1125 o ANSI A156.3: qué norma aplica | Canton Hyland",
-  "seoDescriptionEs": "EN 1125, EN 179 y ANSI/BHMA A156.3 son sistemas independientes, no grados de una misma escala. Qué mide cada uno, por qué la resistencia al fuego es un tercer eje, y las cinco respuestas que seleccionan la norma."
+  "seoDescriptionEs": "EN 1125, EN 179 y ANSI/BHMA A156.3 son sistemas independientes, no grados de una misma escala. Qué mide cada uno, por qué la resistencia al fuego es un tercer eje, y las cinco respuestas que seleccionan la norma.",
+  "faq": {
+    "en": [
+      {
+        "question": "Is there an ANSI equivalent to the EN standard for exit devices?",
+        "answer": "There is no equivalent, because the two are not measuring the same thing. ANSI/BHMA A156.3 grades products 1, 2 or 3 on a cycle-test basis — a durability classification. EN 1125 is a conformity assessment against a set of pass/fail requirements including fire performance and release force. \"Grade 1\" and \"EN 1125\" are not comparable claims, and a device can hold one, both, or neither."
+      },
+      {
+        "question": "What is the difference between EN 1125 and EN 179?",
+        "answer": "The people behind the door, not the hardware. EN 1125 covers panic exit devices operated by a horizontal bar on escape routes used by the public — it assumes a crowd pressing forward, which is why the operating element has to run most of the door width and release under a load applied anywhere along it. EN 179 covers emergency exit devices operated by a lever or push pad, for buildings where the occupants know the layout: a staff corridor rather than a cinema."
+      },
+      {
+        "question": "Does a fire-rated certificate for an exit device cover the door?",
+        "answer": "No. A fire-rated exit device has been tested as part of a fire door assembly, and the certificate covers that assembly — the leaf, the frame, the hinges, the closer and the device together — not the device on its own. A supplier who answers \"is it fire rated?\" with a simple yes is either simplifying or has not read their own report. Ask what assembly was tested, and by whom."
+      },
+      {
+        "question": "What does Canton Hyland actually hold?",
+        "answer": "An EN 1125 test report from Intertek Testing Services Shenzhen Ltd., Guangzhou Branch, reference 130722068GZU-001, covering one model — KD070/30-290 — and a CE Certificate of Conformity to EN 1125:2008 from CELAB in Italy covering the panic exit device series. Both are published with their exact scope on our certifications page, and neither is presented as blanket approval for every device we make, because it is not."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Existe um equivalente ANSI para a norma EN de barras antipânico?",
+        "answer": "Não existe equivalente, porque as duas não medem a mesma coisa. A ANSI/BHMA A156.3 classifica produtos em 1, 2 ou 3 por ensaio de ciclos — uma classificação de durabilidade. A EN 1125 é uma avaliação de conformidade contra requisitos de aprovação ou reprovação, incluindo desempenho ao fogo e força de liberação. \"Grade 1\" e \"EN 1125\" não são afirmações comparáveis, e um dispositivo pode ter uma, as duas, ou nenhuma."
+      },
+      {
+        "question": "Qual a diferença entre EN 1125 e EN 179?",
+        "answer": "As pessoas atrás da porta, não a ferragem. A EN 1125 cobre barras antipânico acionadas por barra horizontal em rotas de fuga usadas pelo público — ela pressupõe uma multidão empurrando para a frente, e é por isso que o elemento de acionamento precisa percorrer quase toda a largura da porta e liberar sob carga aplicada em qualquer ponto. A EN 179 cobre dispositivos de emergência acionados por alavanca ou placa, para edifícios cujos ocupantes conhecem o lugar: um corredor de funcionários em vez de um cinema."
+      },
+      {
+        "question": "Um certificado de fogo do dispositivo cobre a porta?",
+        "answer": "Não. Um dispositivo de saída corta-fogo foi ensaiado como parte de um conjunto de porta corta-fogo, e o certificado cobre esse conjunto — folha, batente, dobradiças, mola e dispositivo juntos — e não o dispositivo sozinho. Um fornecedor que responde \"é corta-fogo?\" com um simples sim ou está simplificando ou não leu o próprio relatório. Pergunte qual conjunto foi ensaiado, e por quem."
+      },
+      {
+        "question": "O que a Canton Hyland realmente tem?",
+        "answer": "Um relatório de ensaio EN 1125 da Intertek Testing Services Shenzhen Ltd., filial de Guangzhou, referência 130722068GZU-001, cobrindo um modelo — KD070/30-290 — e um Certificado CE de Conformidade à EN 1125:2008 da CELAB, na Itália, cobrindo a série de barras antipânico. Os dois são publicados com o escopo exato na nossa página de certificações, e nenhum deles é apresentado como aprovação geral para todos os dispositivos que fabricamos, porque não é."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Existe un equivalente ANSI de la norma EN para dispositivos antipánico?",
+        "answer": "No existe equivalente, porque las dos no miden lo mismo. ANSI/BHMA A156.3 clasifica productos en 1, 2 o 3 por ensayo de ciclos — una clasificación de durabilidad. EN 1125 es una evaluación de conformidad frente a requisitos de apto o no apto, incluidos comportamiento al fuego y fuerza de apertura. \"Grade 1\" y \"EN 1125\" no son afirmaciones comparables, y un dispositivo puede tener una, las dos, o ninguna."
+      },
+      {
+        "question": "¿Qué diferencia hay entre EN 1125 y EN 179?",
+        "answer": "Las personas que están detrás de la puerta, no el herraje. EN 1125 cubre barras antipánico accionadas por barra horizontal en vías de evacuación de uso público — supone una multitud empujando, y por eso el elemento de accionamiento debe recorrer casi todo el ancho de la puerta y liberar bajo carga aplicada en cualquier punto. EN 179 cubre dispositivos de emergencia accionados por manilla o pulsador, para edificios cuyos ocupantes conocen el sitio: un pasillo de personal en vez de un cine."
+      },
+      {
+        "question": "¿Un certificado de fuego del dispositivo cubre la puerta?",
+        "answer": "No. Un dispositivo de salida cortafuego se ha ensayado como parte de un conjunto de puerta cortafuego, y el certificado cubre ese conjunto — hoja, marco, bisagras, cierrapuertas y dispositivo juntos — no el dispositivo solo. Un proveedor que responde \"¿es cortafuego?\" con un sí a secas o está simplificando o no ha leído su propio informe. Pregunte qué conjunto se ensayó, y quién lo ensayó."
+      },
+      {
+        "question": "¿Qué tiene realmente Canton Hyland?",
+        "answer": "Un informe de ensayo EN 1125 de Intertek Testing Services Shenzhen Ltd., sucursal de Guangzhou, referencia 130722068GZU-001, que cubre un modelo — KD070/30-290 — y un Certificado CE de Conformidad a EN 1125:2008 de CELAB, Italia, que cubre la serie de barras antipánico. Los dos se publican con su alcance exacto en nuestra página de certificados, y ninguno se presenta como aprobación general de todos los dispositivos que fabricamos, porque no lo es."
+      }
+    ]
+  },
+  "titlePt": "Sob qual norma de barra antipânico a sua obra realmente está",
+  "summaryPt": "CE e ANSI não são dois pontos de uma mesma escala. São dois sistemas regulatórios separados, e qual deles se aplica é decidido antes de escolher fornecedor — por onde a porta está e pelo que a autoridade local exige.",
+  "bodyPt": [
+    "Compradores nos pedem \"uma barra antipânico CE\" ou \"um dispositivo de saída ANSI Grade 1\" como se os dois fossem pontos de uma mesma escala, com o CE em algum lugar abaixo do ANSI ou o contrário. Não são. São dois sistemas regulatórios separados, escritos por órgãos diferentes para códigos de edificação diferentes, e a questão de qual deles se aplica é resolvida antes de alguém escolher um fornecedor — por onde a porta está e pelo que a autoridade com jurisdição naquele lugar fiscaliza.",
+    "A EN 1125 é a norma europeia para barras antipânico acionadas por uma barra horizontal, em rotas de fuga usadas pelo público. A sua companheira, a EN 179, cobre dispositivos de emergência acionados por alavanca ou por placa de empurrar, para edifícios cujos ocupantes conhecem o lugar e dificilmente entrarão em pânico — um corredor de funcionários em vez de um cinema. A distinção é sobre as pessoas atrás da porta, não sobre a ferragem: a EN 1125 pressupõe uma multidão empurrando para a frente, e é por isso que o elemento de acionamento precisa percorrer quase toda a largura da porta e liberar sob carga aplicada em qualquer ponto dele.",
+    "A ANSI/BHMA A156.3 é a norma norte-americana para dispositivos de saída, e classifica os produtos em 1, 2 ou 3 por ensaio de ciclos. Um dispositivo Grade 1 é ensaiado a uma contagem de ciclos mais alta que um Grade 3; ambos são dispositivos de saída com grau atribuído. Isso é uma classificação de durabilidade, e faz um trabalho diferente do da EN 1125, que é uma avaliação de conformidade contra um conjunto de requisitos de aprovação/reprovação, incluindo desempenho ao fogo e força de liberação. \"Grade 1\" e \"EN 1125\" não são afirmações comparáveis. Um dispositivo pode ter uma, as duas, ou nenhuma.",
+    "A resistência ao fogo é um terceiro eixo, e o que mais frequentemente é confundido com os outros dois. Um dispositivo de saída corta-fogo foi ensaiado como parte de um conjunto de porta corta-fogo, e o certificado cobre esse conjunto — a folha, o batente, as dobradiças, a mola e o dispositivo juntos — e não o dispositivo sozinho. É por isso que um fornecedor que responde \"é corta-fogo?\" com um simples sim ou está simplificando ou não leu o próprio relatório. Pergunte qual conjunto foi ensaiado, e por quem.",
+    "A sequência prática, então, é: onde está a porta, o que a autoridade local fiscaliza, ela está numa rota de fuga, o público vai usá-la, e o vão tem resistência ao fogo. Essas cinco respostas selecionam a norma. Só depois começa a conversa sobre ferragem, e a essa altura a maior parte do catálogo já foi excluída.",
+    "Onde nos situamos nisso: a nossa evidência de EN 1125 é um relatório da Intertek Testing Services Shenzhen Ltd., filial de Guangzhou, referência 130722068GZU-001, emitido em 7 de novembro de 2013, e ele cobre um modelo — KD070/30-290. Há também um Certificado CE de Conformidade à EN 1125:2008 da CELAB, na Itália, de 2010, cobrindo a série de barras antipânico. Publicamos os dois com o escopo exato na nossa página de certificações, e não apresentamos nenhum deles como aprovação geral para todos os dispositivos que fabricamos, porque não é. Se a sua especificação exige evidência atual contra a edição atual de uma norma para um modelo específico, a resposta honesta muitas vezes é que um novo ensaio é necessário — e é melhor saber isso antes do pedido do que depois de o fiscal perguntar.",
+    "Uma coisa vale conferir cedo, qualquer que seja a norma aplicável: se o dispositivo serve para a folha que você realmente tem. Um dispositivo de sobrepor fixa na face da porta e precisa de um contra-testa no batente. Um dispositivo de embutir precisa de um alojamento usinado na borda da folha. Um dispositivo de barras verticais lança ferrolhos na travessa e no piso, e é o que um par de portas sem montante central exige. Errar isso não é um problema de conformidade, é um problema físico, e é descoberto na obra.",
+    "Envie a planilha de portas em vez de um código de produto. O que precisamos é do material e da espessura da folha, se o vão é simples ou duplo, se tem resistência ao fogo e de quanto, qual norma a autoridade fiscaliza, e se é preciso acesso pelo lado de fora — e, em caso afirmativo, por alavanca, por chave, ou de jeito nenhum. São cinco linhas, e bastam para a nossa engenharia nomear os dispositivos que podem de fato ser especificados em vez dos que gostaríamos de vender."
+  ],
+  "seoTitlePt": "EN 1125 ou ANSI A156.3: qual norma de antipânico",
+  "seoDescriptionPt": "EN 1125, EN 179 e ANSI/BHMA A156.3 são sistemas separados, não graus de uma escala. O que cada uma mede, e o que seleciona a norma antes da ferragem."
 }

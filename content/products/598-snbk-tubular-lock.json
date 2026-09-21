@@ -89,7 +89,7 @@
   "relatedModels": [],
   "seoTitle": "598 SNBK Tubular Lock — Stainless Steel | Canton Hyland",
   "seoDescription": "Canton Hyland 598 SNBK tubular lock in Stainless Steel. Tubular Lock in satin nickel, privacy function. Available in SN finish. Made in Guangdong, China.",
-  "nameEs": "Cerraduras de pomo",
+  "nameEs": "Cerradura tubular",
   "summary": "Tubular Lock in satin nickel, privacy function.",
   "seoTitleEs": "598 SNBK Cerraduras de pomo — Acero inoxidable | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 598 SNBK cerraduras de pomo en acero inoxidable. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados.",
@@ -101,5 +101,110 @@
     "functionFrom": "suffix BK",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Fechadura tubular",
+  "summaryPt": "Fechadura tubular em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Aço inoxidável"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latão"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Níquel acetinado"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm / 70 mm ajustável"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Chassi e caixa da lingueta em aço maciço, zincados"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Aço inoxidável laminado ou latão"
+    },
+    {
+      "label": "Contra-testa",
+      "value": "Lábio curvo de 57 mm de série; 70 mm sob pedido"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Função",
+      "value": "Condena — banheiro, botão de trava por dentro"
+    }
+  ],
+  "seoTitlePt": "598 SNBK Fechadura tubular | Canton Hyland",
+  "seoDescriptionPt": "Fechadura tubular 598 SNBK da Canton Hyland — fechaduras de pomo. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Cerradura tubular de acero inoxidable.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Acero inoxidable"
+    },
+    {
+      "label": "Cilindro",
+      "value": "Cilindro de latón"
+    },
+    {
+      "label": "Acabado",
+      "value": "Níquel satinado"
+    },
+    {
+      "label": "Entrada",
+      "value": "60 / 70 mm, regulable"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Chasis y caja de picaporte de acero macizo, zincados"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Acero inoxidable forjado o latón"
+    },
+    {
+      "label": "Cerradero",
+      "value": "Cerradero curvo de 57 mm de serie; 70 mm bajo pedido"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Uso residencial"
+    },
+    {
+      "label": "Función",
+      "value": "Privacidad — baño, botón de giro interior"
+    }
+  ]
 }

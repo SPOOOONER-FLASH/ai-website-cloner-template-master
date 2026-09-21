@@ -11,8 +11,9 @@
  *
  *   node scripts/build-content-index.mjs
  */
-import { readdirSync, writeFileSync, mkdirSync, readFileSync } from "node:fs";
+import { readdirSync, mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { writeFileAtomic } from "./lib/write-atomic.mjs";
 
 const GENERATED_DIR = "src/data/generated";
 mkdirSync(GENERATED_DIR, { recursive: true });
@@ -42,7 +43,8 @@ function barrel({ dir, type, typeImport, exportName, outFile }) {
   // JSON imports widen string-literal unions (e.g. Project["referenceStatus"]) to plain
   // `string`, so a direct annotation fails. The shape is still enforced — by the CMS
   // schema on write, and by every consumer of the exported type on read.
-  writeFileSync(
+  /* Atomic: this is one of the half-megabyte files the scanner keeps catching mid-write. */
+  writeFileAtomic(
     join(GENERATED_DIR, outFile),
     `${BANNER}${typeImport}\n${imports}\n\nexport const ${exportName} = [${list}] as unknown as ${type}[];\n`,
   );

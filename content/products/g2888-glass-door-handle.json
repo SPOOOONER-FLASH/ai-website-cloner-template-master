@@ -11,8 +11,28 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel pull handle.",
+  "summary": "Stainless Steel pull handle, 800mm overall on P=580mm fixing centres.",
   "specs": [
+    {
+      "label": "Centre distance",
+      "value": "P=580mm"
+    },
+    {
+      "label": "Overall length",
+      "value": "800mm"
+    },
+    {
+      "label": "Grip section",
+      "value": "Ø27mm"
+    },
+    {
+      "label": "Projection",
+      "value": "67mm"
+    },
+    {
+      "label": "Standoff",
+      "value": "Ø22mm"
+    },
     {
       "label": "Weight",
       "value": "1.8kg"
@@ -36,7 +56,9 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g2888-glass-door-handle.webp",
@@ -47,7 +69,7 @@
     {
       "src": "/images/products/g2888-glass-door-handle-2.webp",
       "ratio": "1 / 1",
-      "label": "G2888 Glass Door Handle, view 2"
+      "label": "G2888 Glass Door Handle, dimension drawing"
     },
     {
       "src": "/images/products/g2888-glass-door-handle-3.webp",
@@ -58,17 +80,64 @@
       "src": "/images/products/g2888-glass-door-handle-4.webp",
       "ratio": "1 / 1",
       "label": "G2888 Glass Door Handle, view 4"
+    },
+    {
+      "src": "/images/products/g2888-glass-door-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "G2888 Glass Door Handle, view 5"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "G2888 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle.",
+  "seoDescription": "Stainless Steel pull handle, 800mm overall on P=580mm fixing centres.",
   "specSources": {
     "artunion": {
       "id": "G2888-11-010",
-      "basis": "sole",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "basis": "confirmed",
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "P=580 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "800 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "Ø27 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "67 mm"
+    },
+    {
+      "label": "Afastamento",
+      "value": "Ø22 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1.8 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G2888 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G2888 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

@@ -1,0 +1,213 @@
+{
+  "_readme": [
+    "意式极简系列（Italian Series），来源是甲方自己的《雷茵五金》图册 p3–p8。",
+    "",
+    "和前七批不同：这批没有供应商图片包，图片是从印刷版 PDF 里抠出来的 ——",
+    "那份 PDF 每页是一张 5031×3437 的整页图，没有可以直接取出的嵌入素材，",
+    "所以主图、尺寸图、各表面色样都由 tmp 里的 cut.mjs 按墨迹边界自动裁切，",
+    "不依赖手打坐标；客户重新导出图册时重跑即可。",
+    "",
+    "尺寸图只取执手本身那一段，不含左边「材质 / 选配锁体 / 适用门厚」那一列中文 ——",
+    "中文烤进图里，英文站就没法翻译，正是 delocalize-drawings.mjs 当初要解决的问题。",
+    "那三个值改成规格行，两种语言各自显示。右边的「选配锁体」尺寸图也没有收：",
+    "锁体是另外选配的件，把它的中心距印进执手的图库，买家会订错东西。",
+    "",
+    "规格逐张图纸核过，两处和第一遍读的不一样，以高倍重看为准：",
+    "  · ET4018 / BK4018 的圆座是 Ø59，不是 Ø50",
+    "  · ET4008 座板高 33，BK4008 是 32 —— 两个型号不同，不是同一个数",
+    "",
+    "侧视图的三个数是一条链：ET4006A 的 53.5 = 41 + 12.5。",
+    "所以 53.5 是执手离门面的总距离（出墙距离），12.5 是执手杆厚度。",
+    "中间那个 41 没有收 —— 它是颈部高度，另外两个数已经把它表达完了，",
+    "而给一个说不清的数编一个标签，正是 35 个拉手突出尺寸出错的原因。",
+    "",
+    "styleFamily 按「同一个形状、不同锁体功能」分组：4009（ET4009A / ET4016）、",
+    "4006（ET4006A / BK4006B / ET4022）、4008、4018。ET4017 是旋钮，只此一件，不入族。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-catalogue-italian",
+  "sites": ["rayen"],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    { "model": "ET4002 / ET4003 / BK4002 / BK4003", "reason": "图册 p10 版式和前面几页不同（双语卡片、只有 BL/BS 两个表面），单独一轮再收" },
+    { "model": "4016 / 4022 / 4017（无前缀）", "reason": "p9 是「极简隐形门系列」，同样的形状配 K60 锁体，属于另一个系列，不混进意式极简" }
+  ],
+  "models": [
+    {
+      "model": "ET4009A",
+      "slug": "et4009a-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4009",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "Brushed Light Gold", "Brushed Satin Nickel", "White"],
+      "specs": [
+        { "label": "Plate size", "value": "167.5 × 32mm" },
+        { "label": "Projection", "value": "52mm" },
+        { "label": "Lever section", "value": "12mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CT60 / 7255" },
+        { "label": "Door thickness", "value": "36-56mm" }
+      ]
+    },
+    {
+      "model": "ET4016",
+      "slug": "et4016-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4009",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "Brushed Light Gold", "Brushed Satin Nickel", "White"],
+      "specs": [
+        { "label": "Plate size", "value": "167.5 × 32mm" },
+        { "label": "Projection", "value": "52mm" },
+        { "label": "Lever section", "value": "12mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CF60 lift-to-lock" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "ET4006A",
+      "slug": "et4006a-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4006",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "White", "Brushed Satin Nickel", "Brushed Light Gold"],
+      "specs": [
+        { "label": "Plate size", "value": "160 × 35mm" },
+        { "label": "Projection", "value": "53.5mm" },
+        { "label": "Lever section", "value": "12.5mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CT60 / 7255" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "BK4006B",
+      "slug": "bk4006b-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4006",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "White", "Brushed Satin Nickel", "Brushed Light Gold"],
+      "specs": [
+        { "label": "Plate size", "value": "160 × 35mm" },
+        { "label": "Projection", "value": "53.5mm" },
+        { "label": "Lever section", "value": "12.5mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CT60 / 7255" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "ET4022",
+      "slug": "et4022-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4006",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "White", "Brushed Satin Nickel", "Brushed Light Gold"],
+      "specs": [
+        { "label": "Plate size", "value": "160 × 35mm" },
+        { "label": "Projection", "value": "53.5mm" },
+        { "label": "Lever section", "value": "12.5mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CF60 lift-to-lock" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "ET4008",
+      "slug": "et4008-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4008",
+      "material": "Aluminium Alloy",
+      "finishes": ["Matt Black", "Brushed Satin Nickel", "White"],
+      "specs": [
+        { "label": "Plate size", "value": "160 × 33mm" },
+        { "label": "Projection", "value": "54mm" },
+        { "label": "Lever section", "value": "11mm" },
+        { "label": "Material", "value": "Aluminium Alloy" },
+        { "label": "Lock case", "value": "CT60 / 7255" },
+        { "label": "Door thickness", "value": "36-56mm" }
+      ]
+    },
+    {
+      "model": "BK4008",
+      "slug": "bk4008-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4008",
+      "material": "Aluminium Alloy",
+      "finishes": ["Matt Black", "Brushed Satin Nickel", "White"],
+      "specs": [
+        { "label": "Plate size", "value": "160 × 32mm" },
+        { "label": "Projection", "value": "53.5mm" },
+        { "label": "Lever section", "value": "10mm" },
+        { "label": "Material", "value": "Aluminium Alloy" },
+        { "label": "Lock case", "value": "CT60 / 7255" },
+        { "label": "Door thickness", "value": "36-56mm" }
+      ]
+    },
+    {
+      "model": "ET4018",
+      "slug": "et4018-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4018",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "Brushed Satin Nickel"],
+      "specs": [
+        { "label": "Overall length", "value": "137mm" },
+        { "label": "Rose diameter", "value": "Ø59mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CF60 lift-to-lock" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "BK4018",
+      "slug": "bk4018-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": ["lever-handles"],
+      "styleFamily": "4018",
+      "material": "Zinc Alloy",
+      "finishes": ["Matt Black", "Brushed Black Nickel", "Brushed Satin Nickel"],
+      "specs": [
+        { "label": "Overall length", "value": "137mm" },
+        { "label": "Rose diameter", "value": "Ø59mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CF60 lift-to-lock" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    },
+    {
+      "model": "ET4017",
+      "slug": "et4017-door-knob",
+      "name": "Door Knob",
+      "nameZh": "旋钮锁",
+      "categoryPath": ["lever-handles"],
+      "material": "Zinc Alloy",
+      "finishes": ["Brushed Black Nickel", "Matt Black", "Brushed Satin Nickel", "Brushed Light Gold", "White"],
+      "specs": [
+        { "label": "Rose diameter", "value": "Ø55mm" },
+        { "label": "Projection", "value": "50mm" },
+        { "label": "Material", "value": "Zinc Alloy" },
+        { "label": "Lock case", "value": "CF60 lift-to-lock" },
+        { "label": "Door thickness", "value": "40-58mm" }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { getPublishedNews } from "@/data/news";
 import { NewsCard } from "./NewsCard";
+import type { Locale } from "@/data/site";
 
 /**
  * The newsroom listing.
@@ -31,9 +32,19 @@ const COPY = {
     contact: "Contacto",
     contactHref: "/es/contact/",
   },
+  pt: {
+    title: "Notícias e imprensa",
+    intro:
+      "Comunicados da empresa, novidades de certificação e notas técnicas da Canton Hyland.",
+    emptyTitle: "Ainda não há publicações.",
+    empty:
+      "É aqui que a Canton Hyland publica os seus comunicados e notas técnicas. Entretanto, os pedidos de imprensa e de imagens de produto são atendidos diretamente.",
+    contact: "Contato",
+    contactHref: "/pt/contact/",
+  },
 } as const;
 
-export function NewsListing({ locale = "en" }: { locale?: "en" | "es" } = {}) {
+export function NewsListing({ locale = "en" }: { locale?: Locale } = {}) {
   const t = COPY[locale];
   const articles = getPublishedNews();
 

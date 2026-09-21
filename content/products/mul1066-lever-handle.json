@@ -1,0 +1,95 @@
+{
+  "model": "MUL1066",
+  "slug": "mul1066-lever-handle",
+  "name": "Lever Handle",
+  "nameZh": "执手",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Brass lever handle.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "130mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "Ø22mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "9.5mm"
+    },
+    {
+      "label": "Projection",
+      "value": "69mm"
+    }
+  ],
+  "material": "Brass",
+  "finishes": [
+    "Satin stainless",
+    "Matt black"
+  ],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/mul1066-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "MUL1066 Lever Handle"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/mul1066-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "MUL1066 Lever Handle, view 2"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "MUL1066 Lever Handle | RAYEN",
+  "seoDescription": "Brass lever handle.",
+  "specSources": {
+    "finishVariantOf": {
+      "model": "UL1066",
+      "basis": "same-shape-different-finish",
+      "rows": 5
+    }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em latão.",
+  "specsPt": [
+    {
+      "label": "Comprimento da maçaneta",
+      "value": "130 mm"
+    },
+    {
+      "label": "Secção da maçaneta",
+      "value": "Ø22 mm"
+    },
+    {
+      "label": "Diâmetro da roseta",
+      "value": "Ø50 mm"
+    },
+    {
+      "label": "Espessura da roseta",
+      "value": "9.5 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "69 mm"
+    }
+  ],
+  "seoTitlePt": "MUL1066 Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca MUL1066 da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
+}

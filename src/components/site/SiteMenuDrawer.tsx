@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import type { MenuCategory } from "@/data/categories";
+import type { Locale } from "@/data/locales";
 import { siteSettings } from "@/data/navigation";
 import { socialLinks } from "@/data/site";
 import { CloseIcon, Wordmark } from "./icons";
@@ -21,17 +22,28 @@ const buyingLinks = {
     { label: "Contacto", href: "/es/contact/" },
     { label: "Lista de precios", href: "/request/price-list/" },
   ],
+  pt: [
+    { label: "Contato", href: "/pt/contact/" },
+    { label: "Lista de preços", href: "/request/price-list/" },
+  ],
 } as const;
 
 interface SiteMenuDrawerProps {
-  isSpanish: boolean;
+  /*
+    The locale, not a Spanish flag. It was `isSpanish: boolean` until 2026-09-17, which is
+    a shape that cannot express a third language — the Portuguese drawer rendered English
+    labels and linked out of /pt/ entirely.
+  */
+  locale: Locale;
   currentPath: string;
   categories: MenuCategory[];
   onClose: () => void;
 }
 
-export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: SiteMenuDrawerProps) {
-  const locale = isSpanish ? "es" : "en";
+export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: SiteMenuDrawerProps) {
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  const say = (en: string, es: string, pt: string) =>
+    locale === "es" ? es : locale === "pt" ? pt : en;
   const experience = getMenuExperience(locale, MENU_VARIANT);
   const [openCategory, setOpenCategory] = useState<string | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -79,15 +91,15 @@ export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: 
       aria-labelledby="site-menu-title" onKeyDown={handleKeyDown} className={styles.menu}>
       <div className={styles.menuInner}>
         <div className={styles.menuHeader}>
-          <Link href={isSpanish ? "/es/" : "/"} onClick={onClose} aria-label="HYDE home"><Wordmark /></Link>
-          <button ref={closeButtonRef} type="button" aria-label={isSpanish ? "Cerrar menú" : "Close menu"}
+          <Link href={`${prefix}/`} onClick={onClose} aria-label="HYDE home"><Wordmark /></Link>
+          <button ref={closeButtonRef} type="button" aria-label={say("Close menu", "Cerrar menú", "Fechar menu")}
             onClick={onClose} className="p-12 text-ink-tertiary hover:text-ink"><CloseIcon className="h-24 w-24" /></button>
         </div>
         {experience.kind === "rfq-concierge" ? (
           <section className={styles.concierge}>
             <div>
               <h2 id="site-menu-title" className={styles.menuTitle}>{experience.title}</h2>
-              <nav aria-label={isSpanish ? "Ayuda para especificar" : "Specification routes"} className={styles.primary}>
+              <nav aria-label={say("Specification routes", "Ayuda para especificar", "Rotas de especificação")} className={styles.primary}>
                 {experience.primary.map((link) => <Link key={link.href} href={link.href} onClick={onClose} className="group">
                   <span className="flex-1">
                     <span className={styles.primaryLabel}>{link.label}</span>
@@ -135,12 +147,12 @@ export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: 
           <section className={styles.mobileFamilies}>
             <details>
               <summary className="cursor-pointer border-y border-line py-20 text-c1 text-ink">
-                {isSpanish ? "Todas las familias de productos" : "All product families"}
+                {say("All product families", "Todas las familias de productos", "Todas as famílias de produtos")}
               </summary>
               <ul className="mt-12">
                 {categories.map((category) => {
-                  const href = `${isSpanish ? "/es" : ""}/products/${category.slug}/`;
-                  const label = isSpanish ? category.labelEs : category.label;
+                  const href = `${prefix}/products/${category.slug}/`;
+                  const label = say(category.label, category.labelEs, category.labelPt);
                   if (!category.children.length) return renderLink({ label, href, count: category.count });
                   const expanded = openCategory === category.slug;
                   return (
@@ -152,10 +164,10 @@ export function SiteMenuDrawer({ isSpanish, currentPath, categories, onClose }: 
                       </button>
                       {expanded ? (
                         <ul id={`drawer-sub-${category.slug}`} className="drawer-sublist">
-                          {renderLink({ label: isSpanish ? `Todo: ${label}` : `All ${label}`, href, count: category.count })}
+                          {renderLink({ label: say(`All ${label}`, `Todo: ${label}`, `Tudo: ${label}`), href, count: category.count })}
                           {category.children.map((child) => renderLink({
-                            label: isSpanish ? child.labelEs : child.label,
-                            href: `${isSpanish ? "/es" : ""}/collections/${category.slug}-${child.slug}/`,
+                            label: say(child.label, child.labelEs, child.labelPt),
+                            href: `${prefix}/collections/${category.slug}-${child.slug}/`,
                             count: child.count,
                           }))}
                         </ul>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ProductBody } from "@/components/rayen/pages";
-import { absoluteUrl, getProduct, products, viewProduct } from "@/data/rayen";
+import { absoluteUrl, alternatesFor, getProduct, products, viewProduct } from "@/data/rayen";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 
@@ -24,8 +24,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: product.seoDescription,
     // Canonical carries the DEPLOYED path. Chinese deploys at "/", English at "/en/";
     // the /zh and /zh-en build prefixes never appear in a URL a buyer sees.
-    alternates: { canonical: path },
-    openGraph: { url: absoluteUrl(path) },
+    alternates: alternatesFor("en", path.replace(/^\/en/, "")),
+    openGraph: {
+      url: absoluteUrl(path),
+      /*
+        The product photograph itself, so a link pasted into WeChat or WhatsApp shows the
+        part rather than the press hall the root layout supplies as a default. It is the
+        RAYEN-stamped copy — the same file the page renders — so a shared card carries the
+        mark too.
+      */
+      images: product.heroImage ? [{ url: absoluteUrl(product.heroImage.src) }] : undefined,
+    },
   };
 }
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 630" role="img" aria-labelledby="t d">
+  <title id="t">G1106 — door preparation</title>
+  <desc id="d">Fixing hole. Centres 640mm. Hole positions only. Not a product outline.</desc>
+  <style>
+    .ink { stroke: #16150f; }
+    text { fill: #16150f; }
+    @media (prefers-color-scheme: dark) {
+      path, line, circle { stroke: #e9e5da; }
+      path[fill]:not([fill="none"]) { fill: #e9e5da; }
+      text { fill: #e9e5da; }
+    }
+  </style>
+  <g>
+    <path d="M90.00 90.00 L630.00 90.00 L630.00 570.00 L90.00 570.00 Z" fill="none" stroke="#8e8a80" stroke-width="0.7" stroke-linejoin="round"/>
+    <line x1="90" y1="90" x2="90" y2="570" stroke="#16150f" stroke-width="1.6"/>
+    <line x1="360.00" y1="94.00" x2="360.00" y2="566.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="320.00" y1="120.00" x2="400.00" y2="120.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <line x1="320.00" y1="540.00" x2="400.00" y2="540.00" stroke="#8e8a80" stroke-width="0.7" stroke-dasharray="14 3 3 3"/>
+    <circle cx="360.00" cy="120.00" r="3.94" fill="none" stroke="#16150f" stroke-width="1.6"/>
+    <circle cx="360.00" cy="540.00" r="3.94" fill="none" stroke="#16150f" stroke-width="1.6"/>
+    <line x1="366.9375" y1="120" x2="620" y2="120" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="366.9375" y1="540" x2="620" y2="540" stroke="#8e8a80" stroke-width="0.7"/>
+    <line x1="616" y1="120" x2="616" y2="322.3" stroke="#16150f" stroke-width="0.7"/>
+    <line x1="616" y1="337.7" x2="616" y2="540" stroke="#16150f" stroke-width="0.7"/>
+    <path d="M616.00 120.00 L614.82 124.20 L617.18 124.20 Z" fill="#16150f"/>
+    <path d="M616.00 540.00 L617.18 535.80 L614.82 535.80 Z" fill="#16150f"/>
+    <text x="616" y="330" font-size="11" fill="#16150f" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 616 330)" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">640</text>
+    <line x1="362.75625" y1="117.24375" x2="268" y2="80" stroke="#8e8a80" stroke-width="0.7"/>
+    <circle cx="362.75625" cy="117.24375" r="1.6" fill="#16150f"/>
+    <text x="264" y="80" font-size="11" fill="#16150f" text-anchor="end" dominant-baseline="central" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">2 × Ø12</text>
+    <text x="90" y="604" font-size="10" fill="#8e8a80" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">All dimensions in millimetres</text>
+  </g>
+</svg>

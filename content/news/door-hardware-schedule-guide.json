@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "A manufacturer's catalogue is organised by product: lock cases here, lever handles there, closers somewhere else. A building is not organised that way. A building is a list of doors, and every door needs a set of hardware whose parts have to agree with each other — the same backset, the same handing, the same fire rating, the same finish. The document that records this is the door hardware schedule, and on a commercial project it is what the order is actually written from.",
@@ -48,5 +49,75 @@
     "Nuestro catálogo está organizado por producto porque así tiene que organizarse un catálogo. Pero las consultas que se convierten en pedidos casi nunca llegan producto a producto. Llegan como una relación, o como una fotografía de una, y la respuesta que gana es la que lee el conjunto y no la línea. Si tiene una relación, envíela —la respuesta útil es qué conjuntos podemos completar, cuáles podemos completar salvo un artículo y cuáles no, y esa respuesta llega antes que una cotización línea a línea."
   ],
   "seoTitleEs": "Cómo leer una relación de herrajes de puerta | Canton Hyland",
-  "seoDescriptionEs": "Qué es una relación de herrajes de puerta, cómo los conjuntos se despliegan en líneas de pedido, y las tres preguntas que hay que hacer antes de cotizar contra una."
+  "seoDescriptionEs": "Qué es una relación de herrajes de puerta, cómo los conjuntos se despliegan en líneas de pedido, y las tres preguntas que hay que hacer antes de cotizar contra una.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is a door hardware schedule?",
+        "answer": "The document a commercial order is actually written from. A catalogue is organised by product; a building is a list of doors, and every door needs a set of hardware whose parts have to agree with each other — the same backset, the same handing, the same fire rating, the same finish. One schedule row can be seven line items, and every one of them has to be compatible with the other six."
+      },
+      {
+        "question": "Why do project buyers ask dimensional questions before price?",
+        "answer": "Because they are never comparing your lock against a competitor's lock — they are comparing whether your lock fits the set. A case with an 85mm centre distance and a 55mm backset is either right for the plate and the door preparation already specified, or it is not, and no amount of quality argument moves that. A supplier who answers those questions slowly loses the enquiry before quoting."
+      },
+      {
+        "question": "Why does a schedule quote quantities as sets rather than products?",
+        "answer": "Because that is where the quantities live. A schedule does not say two hundred locks; it says thirty of set HW-01, ninety of HW-02, and each set expands into its line items. A manufacturer who can supply the whole set is worth more than a cheaper one who supplies part of it — not out of loyalty, but because a split set means two lead times, two shipments and a coordination risk that lands on the distributor."
+      },
+      {
+        "question": "What should be asked before quoting against a schedule?",
+        "answer": "Three things. Which sets are on escape routes, because those are governed by regulation rather than preference and the hardware is not interchangeable with the rest. Whether there is a master key system, because if there is, the cylinders are a single coordinated order and not a per-door line item. And what the finish is across the project, because finish is usually specified once for the whole building and then repeated silently in every row."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que é uma planilha de ferragens de porta?",
+        "answer": "O documento de que um pedido comercial é de fato escrito. Um catálogo é organizado por produto; um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm de concordar entre si — a mesma distância ao eixo, a mesma mão, a mesma resistência ao fogo, o mesmo acabamento. Uma linha de planilha pode ser sete itens de pedido, e cada um tem de ser compatível com os outros seis."
+      },
+      {
+        "question": "Por que compradores de obra perguntam dimensões antes do preço?",
+        "answer": "Porque eles nunca estão comparando a sua fechadura com a de um concorrente — estão comparando se a sua fechadura serve no conjunto. Uma caixa com 85 mm entre centros e 55 mm de eixo ou está certa para o espelho e para a preparação já especificados, ou não está, e nenhum argumento de qualidade move isso. Um fornecedor que responde devagar perde a consulta antes de cotar."
+      },
+      {
+        "question": "Por que uma planilha cota quantidades como conjuntos e não como produtos?",
+        "answer": "Porque é ali que ficam as quantidades. Uma planilha não diz duzentas fechaduras; diz trinta do conjunto HW-01, noventa do HW-02, e cada conjunto se expande nos seus itens. Um fabricante capaz de fornecer o conjunto inteiro vale mais que um mais barato que fornece parte dele — não por lealdade, mas porque um conjunto partido significa dois prazos, dois embarques e um risco de coordenação que cai no distribuidor."
+      },
+      {
+        "question": "O que perguntar antes de cotar contra uma planilha?",
+        "answer": "Três coisas. Quais conjuntos estão em rotas de fuga, porque esses são regidos por regulamento e não por preferência e a ferragem não é intercambiável com o resto. Se existe um sistema de chave-mestra, porque se existir os cilindros são um único pedido coordenado e não um item por porta. E qual é o acabamento em toda a obra, porque o acabamento normalmente é especificado uma vez para o prédio inteiro e depois repetido silenciosamente em cada linha."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es una relación de herrajes de puerta?",
+        "answer": "El documento del que se escribe realmente un pedido comercial. Un catálogo se organiza por producto; un edificio es una lista de puertas, y cada puerta necesita un conjunto de herrajes cuyas piezas tienen que concordar entre sí — la misma distancia al eje, la misma mano, la misma resistencia al fuego, el mismo acabado. Una fila puede ser siete líneas de pedido, y cada una tiene que ser compatible con las otras seis."
+      },
+      {
+        "question": "¿Por qué los compradores de obra preguntan dimensiones antes que precio?",
+        "answer": "Porque nunca están comparando su cerradura con la de un competidor — están comparando si su cerradura encaja en el conjunto. Una caja con 85 mm entre ejes y 55 mm al eje o es la correcta para el escudo y la preparación ya especificados, o no lo es, y ningún argumento de calidad mueve eso. Un proveedor que responde despacio pierde la consulta antes de cotizar."
+      },
+      {
+        "question": "¿Por qué una relación cotiza cantidades como conjuntos y no como productos?",
+        "answer": "Porque ahí están las cantidades. Una relación no dice doscientas cerraduras; dice treinta del conjunto HW-01, noventa del HW-02, y cada conjunto se despliega en sus líneas. Un fabricante capaz de suministrar el conjunto entero vale más que uno más barato que suministra parte — no por lealtad, sino porque un conjunto partido significa dos plazos, dos embarques y un riesgo de coordinación que cae sobre el distribuidor."
+      },
+      {
+        "question": "¿Qué hay que preguntar antes de cotizar contra una relación?",
+        "answer": "Tres cosas. Qué conjuntos están en vías de evacuación, porque esos los rige el reglamento y no la preferencia y el herraje no es intercambiable con el resto. Si hay sistema de llave maestra, porque si lo hay los cilindros son un único pedido coordinado y no una línea por puerta. Y cuál es el acabado en toda la obra, porque el acabado suele especificarse una vez para el edificio entero y luego repetirse en silencio en cada fila."
+      }
+    ]
+  },
+  "titlePt": "A planilha de portas: como a ferragem é realmente especificada",
+  "summaryPt": "O catálogo de um fabricante é organizado por produto. Um prédio não é. Um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm de concordar entre si.",
+  "bodyPt": [
+    "O catálogo de um fabricante é organizado por produto: caixas de fechadura aqui, maçanetas ali, molas em outro lugar. Um prédio não é organizado assim. Um prédio é uma lista de portas, e cada porta precisa de um conjunto de ferragens cujas peças têm de concordar entre si — a mesma distância ao eixo, a mesma mão, a mesma resistência ao fogo, o mesmo acabamento. O documento que registra isso é a planilha de ferragens de porta, e numa obra comercial é dela que o pedido é de fato escrito.",
+    "Se você vende para obras e nunca viu uma, é mais ou menos assim que uma linha se parece. Um tipo de porta, digamos uma folha corta-fogo de corredor. As suas dimensões e a mão. Depois um conjunto de ferragens: uma caixa de fechadura com distância ao eixo e entre centros declaradas, um conjunto de maçaneta no espelho que combina com essa distância entre centros, um cilindro europeu chaveado no sistema mestre do prédio, um par de dobradiças dimensionado para o peso da folha, uma mola com a potência certa e — por estar numa rota de fuga — uma barra antipânico em vez de fechadura do lado da saída. Uma linha. Sete itens de pedido. Cada um deles tem de ser compatível com os outros seis.",
+    "Duas consequências decorrem disso, e são a razão de valer a pena entender este documento.",
+    "A primeira é que um comprador de obra nunca está comparando a sua fechadura com a fechadura de um concorrente. Ele está comparando se a sua fechadura serve no conjunto. Uma caixa com 85 mm entre centros e 55 mm de eixo ou está certa para o espelho e para a preparação de porta já especificados, ou não está, e nenhum argumento de qualidade move isso. É por isso que as perguntas dimensionais chegam antes das perguntas de preço, e por isso um fornecedor que responde devagar perde a consulta antes de cotar.",
+    "A segunda é que os conjuntos são onde ficam as quantidades. Uma planilha não diz duzentas fechaduras. Ela diz trinta do conjunto HW-01, noventa do HW-02, e assim por diante, e cada conjunto se expande nos seus itens. Um distribuidor cotando a partir de uma planilha precisa que os conjuntos se expandam limpo em produtos que ele possa pedir, o que significa que um fabricante capaz de fornecer o conjunto inteiro vale mais que um mais barato que fornece parte dele — não por lealdade, mas porque um conjunto partido significa dois prazos, dois embarques e um risco de coordenação que cai no distribuidor.",
+    "A implicação prática para quem lê uma planilha pela primeira vez: leia descendo o conjunto, não atravessando o catálogo. Pegue um conjunto de ferragens e atenda todas as suas linhas antes de passar ao próximo. Se uma linha não puder ser atendida, diga isso naquele momento e não na cotação, porque um conjunto com uma lacuna é mais útil ao comprador como pergunta cedo do que como surpresa tarde.",
+    "Há três perguntas que valem ser feitas antes mesmo de cotar contra uma planilha. Quais conjuntos estão em rotas de fuga, porque esses são regidos por regulamento e não por preferência e a ferragem não é intercambiável com o resto. Se existe um sistema de chave-mestra, porque se existir os cilindros são um único pedido coordenado e não um item por porta. E qual é o acabamento em toda a obra, porque o acabamento normalmente é especificado uma vez para o prédio inteiro e depois repetido silenciosamente em cada linha.",
+    "O nosso catálogo é organizado por produto porque é assim que um catálogo tem de ser organizado. Mas as consultas que viram pedidos quase nunca chegam produto por produto. Elas chegam como uma planilha, ou como a fotografia de uma, e a resposta que ganha é a que lê o conjunto e não a linha. Se você tem uma planilha, envie — a resposta útil é quais conjuntos conseguimos completar, quais conseguimos completar menos um item, e quais não conseguimos, e essa resposta é mais rápida que uma cotação linha a linha."
+  ],
+  "seoTitlePt": "Como ler uma planilha de ferragens de porta",
+  "seoDescriptionPt": "O que é uma planilha de ferragens de porta, como os conjuntos se expandem em itens de pedido, e as três perguntas a fazer antes de cotar contra uma."
 }

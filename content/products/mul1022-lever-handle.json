@@ -11,16 +11,44 @@
   "sites": [
     "rayen"
   ],
-  "summary": "Stainless Steel lever handle.",
-  "specs": [],
+  "summary": "Stainless steel lever handle, published by UNION in 4 finishes.",
+  "specs": [
+    {
+      "label": "Lever length",
+      "value": "152mm"
+    },
+    {
+      "label": "Lever section",
+      "value": "24mm"
+    },
+    {
+      "label": "Lever drop",
+      "value": "70mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø50mm"
+    },
+    {
+      "label": "Rose thickness",
+      "value": "12mm"
+    },
+    {
+      "label": "Lever thickness",
+      "value": "9.5mm"
+    }
+  ],
   "material": "Stainless Steel",
   "finishes": [
-    "Satin stainless",
-    "Satin brass",
-    "Antique copper",
-    "Matt black"
+    "MUL1022-01-513 — Stainless steel, hairline, PVD graphite",
+    "MUL1022-01-515 — Stainless steel, hairline, PVD French gold",
+    "MUL1022-01-517 — Stainless steel, hairline, PVD rose gold",
+    "MUL1022-01-519 — Stainless steel, hairline, PVD nickel"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/mul1022-lever-handle.webp",
@@ -64,5 +92,52 @@
   "seoTitle": "MUL1022 Lever Handle — Stainless Steel | Canton Hyland",
   "seoDescription": "Canton Hyland MUL1022 lever handle in Stainless Steel. Finishes: Satin stainless, Satin brass, Antique copper, Matt black. Made in Guangdong, China.",
   "seoTitleEs": "MUL1022 Lever Handle — Acero inoxidable | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland MUL1022 lever Handle en acero inoxidable. Acabados: Satin stainless, Satin brass, Antique copper, Matt black. Fabricado en Guangdong, China."
+  "seoDescriptionEs": "Canton Hyland MUL1022 lever Handle en acero inoxidable. Acabados: Satin stainless, Satin brass, Antique copper, Matt black. Fabricado en Guangdong, China.",
+  "nameEs": "Manilla de palanca",
+  "specSources": {
+    "union": {
+      "basis": "published-by-union",
+      "source": "https://www.artunion.co.jp/products/detail.php",
+      "fields": [
+        "finishes"
+      ],
+      "note": "Finish list and base material read from UNION's own per-part-number pages on 2026-09-15 (scripts/scrape-artunion-finishes.mjs). Size, door thickness, application and cylinder availability were also fetched and are in content/rayen/artunion-specs.json, but are NOT written here: product-sites.test.ts requires a drawing-less model to ship an empty spec table, and whether a UNION page satisfies that rule is the RAYEN session's decision. Price, built-project list, branded feature names and catalogue page numbers are deliberately not taken.",
+      "fetchedAt": "2026-09-15"
+    },
+    "finishVariantOf": {
+      "model": "UL1022",
+      "basis": "same-shape-different-finish",
+      "rows": 6
+    }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimento da maçaneta",
+      "value": "152 mm"
+    },
+    {
+      "label": "Secção da maçaneta",
+      "value": "24 mm"
+    },
+    {
+      "label": "Queda da maçaneta",
+      "value": "70 mm"
+    },
+    {
+      "label": "Diâmetro da roseta",
+      "value": "Ø50 mm"
+    },
+    {
+      "label": "Espessura da roseta",
+      "value": "12 mm"
+    },
+    {
+      "label": "Espessura da maçaneta",
+      "value": "9.5 mm"
+    }
+  ],
+  "seoTitlePt": "MUL1022 Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca MUL1022 da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

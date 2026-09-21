@@ -1,6 +1,7 @@
 import navigation from "../../content/navigation.json";
 import settings from "../../content/site-settings.json";
 import { localisedHref } from "../lib/spanish-mirror";
+import type { Locale } from "@/data/site";
 
 /**
  * Navigation and site settings, editable from the CMS.
@@ -17,6 +18,7 @@ import { localisedHref } from "../lib/spanish-mirror";
 export interface NavLink {
   label: string;
   labelEs?: string;
+  labelPt?: string;
   href: string;
 }
 
@@ -103,8 +105,14 @@ export const siteSettings = settings as SiteSettings;
  * Falling back rather than hiding is deliberate: a menu that silently loses an item
  * because nobody translated it is worse than one that shows the English word.
  */
-export function navLabel(link: NavLink, locale: "en" | "es"): string {
-  return locale === "es" ? (link.labelEs ?? link.label) : link.label;
+export function navLabel(link: NavLink, locale: Locale): string {
+  /*
+    English, not the other translation, when a label is missing — see src/lib/localised.ts.
+    A Portuguese menu with one Spanish item in it looks finished and is not.
+  */
+  if (locale === "es") return link.labelEs ?? link.label;
+  if (locale === "pt") return link.labelPt ?? link.label;
+  return link.label;
 }
 
 /**

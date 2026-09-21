@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { publishedProducts } from "@/data/products";
-import { STEPS, STEPS_ES } from "@/lib/configurator";
+import { STEPS, STEPS_ES, STEPS_PT } from "@/lib/configurator";
 
 /**
  * What the configurator is, what it asks, and what comes out — before it is used.
@@ -59,13 +59,29 @@ const COPY = {
     shortcutLink: "Filtre el catálogo directamente",
     reassure: "Sin cuenta, sin correo, nada se guarda. Cambie cualquier respuesta y la lista se rehace.",
   },
+  pt: {
+    lede: "Algumas perguntas sobre a porta e o catálogo reduz-se aos modelos que servem. Todas as opções mostradas levam a algum lado: não é possível chegar a um resultado vazio.",
+    stepsLabel: "perguntas sobre o vão",
+    modelsLabel: "modelos entre os quais escolher",
+    outValue: "Um número de modelo",
+    outNote: "com a sua entrada, distância entre eixos, acabamento e mão: os seis valores de que um pedido precisa.",
+    how: "Como funciona",
+    steps: [
+      ["Responda só ao que se aplica", "Cada resposta elimina os modelos que não podem ser instalados nessa porta. As opções que não levariam a nada não são oferecidas."],
+      ["Veja a contagem descer", "O número de modelos compatíveis é atualizado à medida que você responde, para ver quanto cada escolha decide de fato."],
+      ["Termine com um número de modelo", "O resultado é um modelo publicado com a sua ficha, não uma categoria: pronto a colar numa consulta ou num quadro de ferragens."],
+    ],
+    shortcut: "Já sabe o que precisa?",
+    shortcutLink: "Filtre o catálogo diretamente",
+    reassure: "Sem conta, sem e-mail, nada é guardado. Mude qualquer resposta e a lista se refaz.",
+  },
 } as const;
 
 export function ConfiguratorIntro({ locale = "en" }: { locale?: Locale }) {
   const t = COPY[locale];
-  const steps = (locale === "es" ? STEPS_ES : STEPS).length;
+  const steps = (locale === "es" ? STEPS_ES : locale === "pt" ? STEPS_PT : STEPS).length;
   const models = publishedProducts.length;
-  const finderHref = locale === "es" ? "/es/product-finder/" : "/product-finder/";
+  const finderHref = `${locale === "en" ? "" : `/${locale}`}/product-finder/`;
 
   return (
     <>

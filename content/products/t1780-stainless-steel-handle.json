@@ -37,12 +37,12 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ10mm"
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     },
     {
-      "label": "Fixing hole (glass door)",
-      "value": "φ12mm"
+      "label": "Fixing hole (timber door)",
+      "value": "φ10mm"
     }
   ],
   "material": "Stainless Steel",
@@ -51,7 +51,10 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t1780-stainless-steel-handle.webp",
@@ -59,6 +62,11 @@
     "label": "T1780 Stainless Steel Handle"
   },
   "gallery": [
+    {
+      "src": "/images/products/t1780-stainless-steel-handle-4.webp",
+      "ratio": "1 / 1",
+      "label": "T1780 Stainless Steel Handle, dimension drawing"
+    },
     {
       "src": "/images/products/t1780-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
@@ -68,11 +76,6 @@
       "src": "/images/products/t1780-stainless-steel-handle-3.webp",
       "ratio": "1 / 1",
       "label": "T1780 Stainless Steel Handle, view 3"
-    },
-    {
-      "src": "/images/products/t1780-stainless-steel-handle-4.webp",
-      "ratio": "1 / 1",
-      "label": "T1780 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/t1780-stainless-steel-handle-5.webp",
@@ -93,7 +96,46 @@
     "artunion": {
       "id": "T1780-25-038-L",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "P=570 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "610 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "32 × 70 mm"
+    },
+    {
+      "label": "Largura do punho",
+      "value": "114 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1.9 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M8"
+    },
+    {
+      "label": "Furo de fixação (porta de vidro)",
+      "value": "φ16 mm"
+    },
+    {
+      "label": "Furo de fixação (porta de madeira)",
+      "value": "φ10 mm"
+    }
+  ],
+  "seoTitlePt": "T1780 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox T1780 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

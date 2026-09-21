@@ -85,7 +85,7 @@
   "relatedModels": [],
   "seoTitle": "3431 SSET Lever Handle — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland 3431 SSET lever handle in Zinc Alloy. Lever Handle in satin stainless steel (us32d), entrance function. Available in SS finish.",
-  "nameEs": "Manijas de palanca",
+  "nameEs": "Manilla de palanca",
   "seoTitleEs": "3431 SSET Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 3431 SSET manijas de palanca en zamak. Acabado SS. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "summary": "Lever Handle in satin stainless steel (us32d), entrance function.",
@@ -109,5 +109,94 @@
     "functionFrom": "suffix ET",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60/70 mm"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Aço maciço, zincado para resistência à corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Zamak injetado com galvanização ou latão maciço"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Função",
+      "value": "Entrada — com chave pelo lado de fora"
+    },
+    {
+      "label": "Amaestramento",
+      "value": "Pode ser igualada com os trincos ou integrada num sistema de chave-mestra"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Aço inoxidável acetinado (US32D)"
+    }
+  ],
+  "seoTitlePt": "3431 SSET Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca 3431 SSET da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Manilla de palanca de zamak.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Entrada",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Acero macizo zincado para resistir la corrosión"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Zamak inyectado con galvanizado, o latón macizo"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Función",
+      "value": "Entrada — con llave por fuera"
+    },
+    {
+      "label": "Amaestramiento",
+      "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Acero inoxidable satinado (US32D)"
+    }
+  ]
 }

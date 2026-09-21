@@ -88,7 +88,7 @@
   "relatedModels": [],
   "seoTitle": "808 SNPS Lever Handle — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland 808 SNPS lever handle in Zinc Alloy. Lever Handle in satin nickel, chrome, antique brass, polished brass,all available, passage function.",
-  "nameEs": "Manijas de palanca",
+  "nameEs": "Manilla de palanca",
   "summary": "Lever Handle in satin nickel, chrome, antique brass, polished brass,all available, passage function.",
   "seoTitleEs": "808 SNPS Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland 808 SNPS manijas de palanca en zamak. Acabado SN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
@@ -114,5 +114,126 @@
     "functionFrom": "suffix PS",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Níquel acetinado, cromado, latão antigo, latão polido — todos disponíveis"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60/70 mm"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Aço maciço, zincado para resistência à corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Zamak injetado com galvanização ou latão maciço"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Função",
+      "value": "Passagem"
+    },
+    {
+      "label": "Amaestramento",
+      "value": "Pode ser igualada com os trincos ou integrada num sistema de chave-mestra"
+    },
+    {
+      "label": "Lingueta",
+      "value": "Lingueta tubular ajustável 60/70 mm"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Uso residencial"
+    }
+  ],
+  "seoTitlePt": "808 SNPS Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca 808 SNPS da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Manilla de palanca de zamak.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Acabado",
+      "value": "Níquel satinado, cromo, latón antiguo y latón pulido; todos disponibles"
+    },
+    {
+      "label": "Entrada",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Acero macizo zincado para resistir la corrosión"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Zamak inyectado con galvanizado, o latón macizo"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Función",
+      "value": "Paso libre"
+    },
+    {
+      "label": "Amaestramiento",
+      "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Picaporte",
+      "value": "Picaporte tubular regulable de 60 / 70 mm"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Uso residencial"
+    }
+  ],
+  "featuresPt": [
+    "Econômica e fácil de instalar",
+    "Projeto durável, com mais de 200.000 ciclos de vida",
+    "Pode ser chaveada igual às travas para maior segurança",
+    "Aceita chave-mestra para uso familiar ou predial",
+    "Chassi e caixa do trinco em aço zincado para resistência à corrosão",
+    "Funções disponíveis: entrada, banheiro, passagem, cega"
+  ],
+  "featuresEs": [
+    "Económica y fácil de instalar",
+    "Diseño duradero, con más de 200.000 ciclos de vida",
+    "Puede llevar la misma llave que los cerrojos, para mayor seguridad",
+    "Admite amaestramiento para uso familiar o de edificio",
+    "Chasis y caja de picaporte de acero cincado, resistentes a la corrosión",
+    "Funciones disponibles: entrada, privacidad, paso libre y decorativa"
+  ]
 }

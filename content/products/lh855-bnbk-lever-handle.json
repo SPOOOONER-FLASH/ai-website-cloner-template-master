@@ -99,7 +99,7 @@
   "relatedModels": [],
   "seoTitle": "LH855 BNBK Lever Handle — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland LH855 BNBK lever handle in Zinc Alloy. Lever Handle in black nickel, privacy function. Available in BN finish. Made in Guangdong, China.",
-  "nameEs": "Manijas de palanca",
+  "nameEs": "Manilla de palanca",
   "summary": "Lever Handle in black nickel, privacy function.",
   "seoTitleEs": "LH855 BNBK Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland LH855 BNBK manijas de palanca en zamak. Acabado BN. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
@@ -136,5 +136,116 @@
     "functionFrom": "suffix BK",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60/70 mm"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Aço maciço, zincado para resistência à corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Zamak injetado com galvanização ou latão maciço"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Função",
+      "value": "Condena — banheiro, botão de trava por dentro"
+    },
+    {
+      "label": "Amaestramento",
+      "value": "Pode ser igualada com os trincos ou integrada num sistema de chave-mestra"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Níquel preto"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Para portas de banheiro"
+    }
+  ],
+  "seoTitlePt": "LH855 BNBK Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca LH855 BNBK da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Manilla de palanca de zamak.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Entrada",
+      "value": "60/70mm"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Acero macizo zincado para resistir la corrosión"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Zamak inyectado con galvanizado, o latón macizo"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Función",
+      "value": "Privacidad — baño, botón de giro interior"
+    },
+    {
+      "label": "Amaestramiento",
+      "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Níquel negro"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Para puertas de baño"
+    }
+  ],
+  "featuresPt": [
+    "Acessível e fácil de instalar, indicada para aplicações residenciais",
+    "Trava e destrava os dois pomos por chave ou botão de giro",
+    "Operação simples: gire para trancar ou destrancar",
+    "Trinco e chassi em aço zincado para maior durabilidade",
+    "Opções de guarnição: aço inoxidável conformado ou latão"
+  ],
+  "featuresEs": [
+    "Asequible y fácil de instalar, ideal para aplicaciones residenciales",
+    "Bloqueo y desbloqueo de ambos pomos con llave o botón giratorio",
+    "Manejo sencillo: girar para bloquear o desbloquear",
+    "Picaporte y chasis de acero cincado para mayor durabilidad",
+    "Opciones de guarnición: acero inoxidable forjado o latón"
+  ]
 }

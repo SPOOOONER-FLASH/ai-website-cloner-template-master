@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { hasSpanishMirror } from "@/lib/spanish-mirror";
+import { mirrorHref } from "@/lib/spanish-mirror";
+import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
@@ -23,7 +24,19 @@ const LEGAL_LINKS = {
     { label: "Contacto", href: "/es/contact" },
     { label: "Privacidad", href: "/es/company" },
   ],
+  pt: [
+    { label: "Informações legais", href: "/pt/company" },
+    { label: "Contato", href: "/pt/contact" },
+    { label: "Privacidade", href: "/pt/company" },
+  ],
 } as const;
+
+/** The endonym each language link carries — a reader scans for their own word for it. */
+const LANGUAGE_LABELS: Record<Locale, string> = {
+  en: "English",
+  es: "Español",
+  pt: "Português",
+};
 
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
@@ -41,8 +54,10 @@ const LEGAL_LINKS = {
  */
 export function SiteFooter() {
   const pathname = usePathname();
-  const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
-  const locale = isSpanish ? "es" : "en";
+  const locale = localeFromPath(pathname);
+  /* Copy in the page's own language, in source order en / es / pt. */
+  const say = (en: string, es: string, pt: string) =>
+    locale === "es" ? es : locale === "pt" ? pt : en;
 
   /*
     A FOOTER LINK TO THE PAGE YOU ARE ALREADY ON IS A DEAD CLICK.
@@ -59,16 +74,18 @@ export function SiteFooter() {
     is told the same thing the styling says. Nothing to press, nothing to fail.
   */
   /*
-    The counterpart of THIS page, or that language's home when this page has no mirror.
-    Never a 404 out of the footer — hasSpanishMirror is the same check the header panel
-    and the hreflang tags use.
+    The counterpart of THIS page in every OTHER language, or that language's home when
+    this page has no mirror. Never a 404 out of the footer — `mirrorHref` is the same
+    function the header panel uses and it reads the same mirror lists as the hreflang tags.
   */
-  const englishPath = isSpanish ? pathname.replace(/^\/es/, "") || "/" : pathname;
-  const languageHref = isSpanish
-    ? englishPath
-    : hasSpanishMirror(englishPath)
-      ? `/es${englishPath === "/" ? "" : englishPath}`
-      : "/es";
+  const englishPath = englishPathOf(pathname);
+  const languageLinks = locales
+    .filter((code) => code !== locale)
+    .map((code) => ({
+      code,
+      label: LANGUAGE_LABELS[code],
+      href: mirrorHref(englishPath, code).href,
+    }));
 
   const isCurrent = (href: string) => {
     const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
@@ -100,7 +117,7 @@ export function SiteFooter() {
                   </li>
                 ))}
                 {/*
-                  THE ONLY RENDERED LINK BETWEEN THE TWO LANGUAGE TREES.
+                  THE ONLY RENDERED LINKS BETWEEN THE LANGUAGE TREES.
 
                   It is here because on 2026-09-09 a full crawl found all 600 Spanish
                   pages unreachable from the English homepage — no path of rendered links
@@ -114,27 +131,35 @@ export function SiteFooter() {
                   in <head>, a hint about equivalence — not an edge in the link graph, and
                   not something a crawler follows to discover a tree it has never seen.
 
-                  So the footer carries one server-rendered anchor per page, pointing at
-                  this page's counterpart where hasSpanishMirror says one exists and at
-                  the language's home where it does not. Same source of truth as the panel
-                  and the hreflang tags, so the three can never disagree.
+                  So the footer carries one server-rendered anchor PER OTHER LOCALE,
+                  pointing at this page's counterpart where `mirrorsOf` says one exists
+                  and at that language's home where it does not. Same source of truth as
+                  the panel and the hreflang tags, so the three can never disagree.
+
+                  It was a single hard-coded EN↔ES anchor until 2026-09-17, which
+                  reproduced the 2026-09-09 defect exactly one tree over: 645 Portuguese
+                  pages shipped on 2026-09-16 with no rendered link into them from
+                  anywhere on the site, and the anchor on a /pt/ page offered Español.
+                  Derived from `locales` now, so a fourth language cannot repeat it.
                 */}
-                <li className="col-span-2 md:col-span-3">
-                  <Link
-                    href={languageHref}
-                    hrefLang={isSpanish ? "en" : "es"}
-                    lang={isSpanish ? "en" : "es"}
-                    className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
-                  >
-                    {isSpanish ? "English" : "Español"}
-                  </Link>
-                </li>
+                {languageLinks.map((language) => (
+                  <li key={language.code} className="col-span-2 md:col-span-3">
+                    <Link
+                      href={language.href}
+                      hrefLang={language.code}
+                      lang={language.code}
+                      className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
+                    >
+                      {language.label}
+                    </Link>
+                  </li>
+                ))}
                 <li className="col-span-2 md:col-span-3">
                   <button
                     type="button"
                     className="short-marker short-marker-compact appearance-none text-c1 text-brand hover:text-brand-hover"
                   >
-                    {isSpanish ? "Preferencias de datos" : "Data preferences"}
+                    {say("Data preferences", "Preferencias de datos", "Preferências de dados")}
                   </button>
                 </li>
               </ul>
@@ -149,16 +174,18 @@ export function SiteFooter() {
             */}
             <div className="col-span-2 flex flex-col items-start gap-y-24 sm:col-span-4 md:col-span-5 md:row-start-2 lg:grid lg:grid-cols-2 lg:gap-x xl:col-span-10">
               <h3 className="text-h3 text-ink md:hidden">
-                {isSpanish ? "Boletín" : "Newsletter"}
+                {say("Newsletter", "Boletín", "Newsletter")}
               </h3>
               <p className="text-c1 text-ink">
-                {isSpanish
-                  ? "El boletín de Canton Hyland presenta nuevas familias de producto, normas y documentación de exportación."
-                  : "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes."}
+                {say(
+                  "The Canton Hyland newsletter covers new product families, standards updates and export documentation changes.",
+                  "El boletín de Canton Hyland presenta nuevas familias de producto, normas y documentación de exportación.",
+                  "A newsletter da Canton Hyland traz novas famílias de produto, atualizações de normas e mudanças na documentação de exportação.",
+                )}
               </p>
               <div>
-                <ArrowLink href={isSpanish ? "/es/contact" : "/newsletter"}>
-                  {isSpanish ? "Solicitar información" : "Sign-up here"}
+                <ArrowLink href={locale === "en" ? "/newsletter" : `/${locale}/contact`}>
+                  {say("Sign-up here", "Solicitar información", "Solicitar informações")}
                 </ArrowLink>
               </div>
             </div>
@@ -170,7 +197,7 @@ export function SiteFooter() {
             */}
             <div className="col-span-2 space-y-24 sm:col-span-4 md:col-span-4 md:row-start-2 xl:col-span-7">
               <h3 className="text-h3 text-ink">
-                {isSpanish ? "Cómo comprar" : "How to buy"}
+                {say("How to buy", "Cómo comprar", "Como comprar")}
               </h3>
               <ul className="space-y-16">
                 {footerNav.map((link) => {
@@ -195,7 +222,7 @@ export function SiteFooter() {
                       rel="noopener noreferrer"
                       className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                     >
-                      {siteSettings.alibaba.label}
+                      {say("Buy on Alibaba", "Comprar en Alibaba", "Comprar no Alibaba")}
                     </a>
                   </li>
                 ) : null}
@@ -219,7 +246,7 @@ export function SiteFooter() {
 
             <div className="col-span-2 space-y-24 sm:col-span-4 md:row-start-2 md:[grid-column:span_3/-1] xl:[grid-column:span_7/-1]">
               <h3 className="text-h3 text-ink">
-                {isSpanish ? "Redes sociales" : "Social Media"}
+                {say("Social Media", "Redes sociales", "Redes sociais")}
               </h3>
               <ul className="space-y-24">
                 {socialLinks.map((link) => (

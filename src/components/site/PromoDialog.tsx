@@ -1,4 +1,6 @@
 "use client";
+import type { Locale } from "@/data/site";
+import { localeFromPath } from "@/data/locales";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -167,7 +169,7 @@ export function PromoDialog() {
   }, [open, dismissAll]);
 
   const activeCard = selectActivePromoCard(promoDialog.cards, dismissed, pathname);
-  const locale = pathname.startsWith("/es") ? "es" : "en";
+  const locale = localeFromPath(pathname);
 
   if (!open || !activeCard) return null;
 
@@ -194,7 +196,7 @@ function PromoCardBlock({
   onDismiss,
 }: {
   card: PromoCard;
-  locale: "en" | "es";
+  locale: Locale;
   onDismiss: (href: string) => void;
 }) {
   const { image, visual } = card;

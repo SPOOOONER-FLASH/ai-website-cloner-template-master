@@ -17,21 +17,32 @@ test("the initial home export renders one carousel frame", () => {
   );
 });
 
-test("every editorial image in the initial home export has responsive candidates", () => {
+/*
+  EVERY raster image on the homepage, not just the editorial ones.
+
+  This test used to filter on "/images/editorial/", and on 2026-09-13 a full-size 1000px
+  product plate reached the homepage through the new columns rail and was served whole
+  into a card never wider than 620px. PageSpeed reported it as "Improve image delivery",
+  the earlier census had been done by hand, and the test stayed green throughout — it was
+  looking in one directory while the regression arrived from another.
+
+  A directory is not what makes an image expensive. SVGs are exempt because they have no
+  pixel width to offer candidates for; everything else must carry a srcset.
+*/
+test("every raster image in the initial home export has responsive candidates", () => {
   const html = readFileSync(homeExport, "utf8");
   const imageTags = html.match(/<img\b[^>]*>/g) ?? [];
-  const editorialImages = imageTags.filter((tag) =>
-    tag.includes("/images/editorial/"),
-  );
-  const imagesWithoutCandidates = editorialImages.filter(
-    (tag) => !/srcset=/i.test(tag),
-  );
+  const rasterImages = imageTags.filter((tag) => {
+    const source = /\ssrc="([^"]+)"/.exec(tag)?.[1] ?? "";
+    return source.startsWith("/images/") && !source.endsWith(".svg");
+  });
+  const imagesWithoutCandidates = rasterImages.filter((tag) => !/srcset=/i.test(tag));
 
-  assert.ok(editorialImages.length > 0, "expected editorial images on the homepage");
+  assert.ok(rasterImages.length > 0, "expected raster images on the homepage");
   assert.deepEqual(
-    imagesWithoutCandidates,
+    imagesWithoutCandidates.map((tag) => /\ssrc="([^"]+)"/.exec(tag)?.[1]),
     [],
-    "every initial editorial image must expose a srcset",
+    "every image in the initial homepage export must expose a srcset",
   );
 });
 
@@ -96,10 +107,25 @@ test("project editorial images are responsive while technical product anchors st
       true,
       `${slug} editorial images must expose responsive candidates`,
     );
+    /*
+      CHANGED 2026-09-13, deliberately, and this is the reasoning.
+
+      This used to assert that product images carry NO srcset at all. That was written
+      when no product derivative pipeline existed, so "has a srcset" could only mean "was
+      run through the EDITORIAL generator" — and an editorial derivative of a technical
+      plate is a resampled technical plate, which is what the rule was protecting against.
+
+      Since 2026-09-11 there is a product pipeline of its own
+      (src/components/site/product-images.config.json → /images/responsive/products/),
+      built for exactly these plates. So the original intent is now stated directly: a
+      product image may carry candidates, and those candidates must never come from the
+      editorial directory. The protection is unchanged; only the proxy for it is.
+    */
+    const editorialDerivative = /\/images\/editorial\/responsive\//;
     assert.equal(
-      productTags.every((tag) => !/srcset=/i.test(tag)),
+      productTags.every((tag) => !editorialDerivative.test(tag)),
       true,
-      `${slug} product images must not enter the editorial derivative pipeline`,
+      `${slug} product images must not be served from the editorial derivative pipeline`,
     );
   }
 });

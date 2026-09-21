@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { ProductDetail } from "@/components/site/ProductDetail";
 import { findCategoryByPath } from "@/data/categories";
-import { getAllProductParams, getProductBySlug, isPublished } from "@/data/products";
+import { getAllProductParams, getProductBySlug, isPublished, products } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
 import { defaultOgImage } from "@/lib/seo";
 import {
   canonicalProductCategory,
   canonicalProductSlug,
-  getLegacyProductParams,
+  buildableLegacyProductParams,
 } from "@/data/category-aliases";
 
 type ProductPageProps = {
@@ -19,7 +19,9 @@ type ProductPageProps = {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [...getAllProductParams(), ...getLegacyProductParams()];
+  return [...getAllProductParams(), ...buildableLegacyProductParams((category, slug) =>
+      products.some((p) => p.slug === slug && p.categoryPath[0] === category),
+    )];
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -80,9 +82,16 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         }),
     alternates: {
       canonical: path,
+      /*
+        Reciprocity: a locale that names an alternate must be named back by it, or Google
+        discards the cluster. Portuguese product pages went live on 2026-09-16 declaring
+        en/es/pt; these two still said en/es, so the pt page pointed at neighbours that did
+        not point back. The built HTML is the only place that shows it.
+      */
       languages: {
         en: url,
         es: spanishUrl,
+        pt: absoluteUrl(`/pt/products/${category}/${slug}/`),
         "x-default": url,
       },
     },

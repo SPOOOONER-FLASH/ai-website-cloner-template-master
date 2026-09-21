@@ -1,4 +1,32 @@
 {
+  "/images/company/assembly-line.webp": {
+    "sourceWidth": 1308,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/factory-laser-cutter.webp": {
+    "sourceWidth": 1000,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/polishing-line.webp": {
+    "sourceWidth": 1308,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/company/press-shop.webp": {
+    "sourceWidth": 1308,
+    "variants": [
+      480,
+      960
+    ]
+  },
   "/images/editorial/architecture-boutique-hotel.webp": {
     "sourceWidth": 1800,
     "variants": [
@@ -23,6 +51,158 @@
       1440
     ]
   },
+  "/images/editorial/curated-305-components.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-311-construction.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-607-test-model.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-9004-mechanism.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-catalogue-range.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-document-reference.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-finish-models.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-glass-patch-components.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-home-catalogue.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-lc04-dimensions.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-lc04-reverse.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-lc14-details.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-lock-comparison.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-order-dimensions.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-selection-box-final.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-selection-box.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-selection-stone-final.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-selection-stone.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "/images/editorial/curated-sn-dimensions.webp": {
+    "sourceWidth": 1800,
+    "variants": [
+      480,
+      960,
+      1440
+    ]
+  },
   "/images/editorial/drawer-product-finder-exhibition-2026.webp": {
     "sourceWidth": 1536,
     "variants": [
@@ -37,6 +217,14 @@
       480,
       960,
       1440
+    ]
+  },
+  "/images/editorial/framed/dc02-door-coordinator-3x2.webp": {
+    "sourceWidth": 1500,
+    "variants": [
+      400,
+      800,
+      1200
     ]
   },
   "/images/editorial/hero-civic-corridor.webp": {
@@ -101,6 +289,20 @@
       480,
       800,
       1600
+    ]
+  },
+  "/images/editorial/hyde-client-black-hinge.webp": {
+    "sourceWidth": 1254,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/images/editorial/hyde-client-lc04-selection.webp": {
+    "sourceWidth": 1254,
+    "variants": [
+      480,
+      960
     ]
   },
   "/images/editorial/hyde-editorial-exhibition-wall-01.webp": {
@@ -549,20 +751,6 @@
       480,
       960,
       1440
-    ]
-  },
-  "/images/editorial/hyde-client-lc04-selection.webp": {
-    "sourceWidth": 1254,
-    "variants": [
-      480,
-      960
-    ]
-  },
-  "/images/editorial/hyde-client-black-hinge.webp": {
-    "sourceWidth": 1254,
-    "variants": [
-      480,
-      960
     ]
   }
 }

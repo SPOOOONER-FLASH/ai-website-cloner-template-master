@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { absoluteUrl } from "@/data/site";
-import { defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
-import { NewsArticleJsonLd } from "@/components/site/JsonLd";
+import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
 import { getAllNewsParams, getNewsBySlug, getPublishedNews } from "@/data/news";
 
 type NewsPageProps = { params: Promise<{ slug: string }> };
@@ -32,11 +32,7 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
     */
     alternates: {
       canonical: `/news/${slug}/`,
-      languages: {
-        en: absoluteUrl(`/news/${slug}/`),
-        es: absoluteUrl(`/es/news/${slug}/`),
-        "x-default": absoluteUrl(`/news/${slug}/`),
-      },
+      languages: alternateLanguages(`/news/${slug}`),
     },
     openGraph: {
       type: "article",
@@ -76,6 +72,7 @@ export default async function NewsArticlePage({ params }: NewsPageProps) {
         now cite dated company announcements.
       */}
       <NewsArticleJsonLd article={article} />
+      <ArticleFaqJsonLd article={article} />
       <NewsDetail article={article} />
     </>
   );

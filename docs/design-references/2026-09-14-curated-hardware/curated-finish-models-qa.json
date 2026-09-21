@@ -1,0 +1,19 @@
+{
+  "id": "curated-finish-models",
+  "sources": [
+    {
+      "model": "587 SSET",
+      "sha256": "65129fe178644e44f01aed6011f8f49019a6948a993df43eb92ac7495afaa254",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

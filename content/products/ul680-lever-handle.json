@@ -42,7 +42,10 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul680-lever-handle.webp",
@@ -109,5 +112,36 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "UL680 Lever Handle | RAYEN",
-  "seoDescription": "Investment-cast stainless steel lever handle, 141mm lever."
+  "seoDescription": "Investment-cast stainless steel lever handle, 141mm lever.",
+  "nameEs": "Manilla de palanca",
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca.",
+  "specsPt": [
+    {
+      "label": "Comprimento da maçaneta",
+      "value": "141 mm"
+    },
+    {
+      "label": "Queda da maçaneta",
+      "value": "61.5 mm"
+    },
+    {
+      "label": "Secção da maçaneta",
+      "value": "24 mm"
+    },
+    {
+      "label": "Espessura da maçaneta",
+      "value": "8.5 mm"
+    },
+    {
+      "label": "Dimensões da roseta",
+      "value": "50 mm (quadrado)"
+    },
+    {
+      "label": "Quadrado",
+      "value": "P=34 mm"
+    }
+  ],
+  "seoTitlePt": "UL680 Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca UL680 da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

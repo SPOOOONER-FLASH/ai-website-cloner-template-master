@@ -21,6 +21,10 @@
     {
       "label": "Finish",
       "value": "Spray painted"
+    },
+    {
+      "label": "Minimum order",
+      "value": "200 pieces"
     }
   ],
   "material": "Steel /Stainless Steel",
@@ -88,7 +92,7 @@
   ],
   "seoTitle": "305 Fire Door Panic Exit Device | Canton Hyland",
   "seoDescription": "Canton Hyland 305 fire door panic exit device in Steel /Stainless Steel. Finishes: Satin Stainless, Powder-Coated Black. Made in Guangdong, China.",
-  "nameEs": "Barras antipánico",
+  "nameEs": "Barra antipánico para puerta cortafuego",
   "specsEs": [
     {
       "label": "Longitud",
@@ -101,6 +105,10 @@
     {
       "label": "Acabado",
       "value": "Pintado con pistola"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "200 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de hierro y aluminio.",
@@ -132,5 +140,51 @@
     "model": "305",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "305",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Barra antipânico para porta corta-fogo",
+  "summaryPt": "Barra antipânico para porta corta-fogo.",
+  "specsPt": [
+    {
+      "label": "Comprimento",
+      "value": "1040 mm"
+    },
+    {
+      "label": "Material",
+      "value": "Ferro e alumínio"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Pintado a pistola"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "200 peças"
+    }
+  ],
+  "seoTitlePt": "305 Barra antipânico para porta corta-fogo | Canton Hyland",
+  "seoDescriptionPt": "Barra antipânico para porta corta-fogo 305 da Canton Hyland — barras antipânico. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Características da barra:",
+    "Maçaneta de giro para travar e destravar",
+    "Comprimento ajustável para diversas larguras de porta",
+    "Disponível em várias cores",
+    "Sistema integrado de fechadura e contrafechadura"
+  ],
+  "featuresEs": [
+    "Características de la barra de empuje:",
+    "Manilla giratoria para bloquear y desbloquear",
+    "Longitud regulable para distintos anchos de puerta",
+    "Disponible en varios colores",
+    "Sistema integrado de cerradura y contracerradura"
+  ]
 }

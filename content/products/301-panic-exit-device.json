@@ -23,6 +23,10 @@
     {
       "label": "Finish",
       "value": "Spray-painted silver, powder-coated iron"
+    },
+    {
+      "label": "Minimum order",
+      "value": "500 pieces"
     }
   ],
   "material": "Iron And Stainless Steel",
@@ -72,7 +76,7 @@
   "relatedModels": [],
   "seoTitle": "301 Panic Exit Device — Panic Exit Devices | Canton Hyland",
   "seoDescription": "Canton Hyland 301 panic exit device in Iron And Stainless Steel. Available in Black+Red finish. Manufactured in Guangdong, China and exported to over thirty markets.",
-  "nameEs": "Barras antipánico",
+  "nameEs": "Barra antipánico",
   "specsEs": [
     {
       "label": "Material",
@@ -89,6 +93,10 @@
     {
       "label": "Acabado",
       "value": "Hierro con pintura en polvo, pintado en plata"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "500 unidades"
     }
   ],
   "summaryEs": "Una barra antipánico de hierro y acero inoxidable.",
@@ -122,5 +130,59 @@
     "model": "301",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingModel": "301",
+      "basis": "client-published",
+      "fields": [
+        "Minimum order"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Barra antipânico",
+  "summaryPt": "Barra antipânico.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Ferro e aço inoxidável"
+    },
+    {
+      "label": "Cor",
+      "value": "Preto + vermelho"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Serve para portas de mão direita e esquerda."
+    },
+    {
+      "label": "Acabamento",
+      "value": "Ferro com pintura a pó prata"
+    },
+    {
+      "label": "Pedido mínimo",
+      "value": "500 peças"
+    }
+  ],
+  "seoTitlePt": "301 Barra antipânico | Canton Hyland",
+  "seoDescriptionPt": "Barra antipânico 301 da Canton Hyland — barras antipânico. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "featuresPt": [
+    "Principais características:",
+    "Sistema de travamento de um ponto",
+    "Projeto aparente com barra de meia largura",
+    "Serve em portas de mão esquerda e direita",
+    "Cor e comprimento personalizáveis",
+    "Acesso externo por cilindro, com 3 chaves",
+    "A barra de toque interna garante saída de emergência segura e rápida"
+  ],
+  "featuresEs": [
+    "Características principales:",
+    "Sistema de cierre en un punto",
+    "Diseño visto con barra de empuje de media longitud",
+    "Apta para puertas de mano izquierda y derecha",
+    "Color y longitud personalizables",
+    "Acceso desde el exterior mediante cilindro, con 3 llaves",
+    "La barra de toque interior garantiza una salida de emergencia segura y rápida"
+  ]
 }

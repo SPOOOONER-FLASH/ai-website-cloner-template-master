@@ -36,6 +36,7 @@ export interface ImageRef {
   label: string;
   /** Spanish alt text; Spanish routes fall back to `label` when it is absent. */
   labelEs?: string;
+  labelPt?: string;
   /** Chinese source caption, for internal review. */
   labelZh?: string;
   /**
@@ -132,6 +133,7 @@ export interface Product {
   nameZh?: string;
   /** Spanish display name for the /es mirror. */
   nameEs?: string;
+  namePt?: string;
   /** Product family/series this belongs to, e.g. "Hyland 007". */
   series: string;
   /**
@@ -145,6 +147,7 @@ export interface Product {
   summaryZh?: string;
   /** Spanish summary, composed from the spec rows rather than translated. */
   summaryEs?: string;
+  summaryPt?: string;
   /**
    * Long-form product copy, as Markdown.
    *
@@ -168,6 +171,7 @@ export interface Product {
    * showing a gap.
    */
   specsEs?: SpecRow[];
+  specsPt?: SpecRow[];
   /** Base material, e.g. "Solid brass". */
   material: string;
   /** Surface finish(es), e.g. ["Satin stainless", "Matt black (PVD)"]. */
@@ -178,11 +182,23 @@ export interface Product {
   /**
    * Verified feature bullets, taken from the client's own stahlock.com storefront.
    *
-   * English only. The Spanish page deliberately does not render these — English prose on
-   * a Spanish product page is the same error as English answers in Spanish FAQ markup.
-   * They go to the translator with the rest; until then Spanish simply lacks the block.
+   * The English original. Each locale renders its OWN list below or nothing at all —
+   * English prose on a Spanish product page is the same error as English answers in
+   * Spanish FAQ markup.
    */
   features?: string[];
+  /*
+    Written by scripts/translate-product-features-pt.mjs and its Spanish sibling, and only
+    where EVERY line of the record resolves in the matching table. A partial list is not
+    written at all: four translated bullets over two English ones looks finished and is not.
+
+    Spanish arrived on 2026-09-17, sixteen days after the Spanish tree shipped and hours
+    after Portuguese — it sat at 0 of 216 that whole time because the component hid the
+    block rather than falling back, so the gap was invisible until a sibling locale had a
+    number beside it.
+  */
+  featuresEs?: string[];
+  featuresPt?: string[];
   featuresSource?: { site: string; url: string; model?: string; fetchedAt?: string };
   certifications: Certification[];
   /** Lead image — cards, listing thumbnails, detail hero. */
@@ -243,7 +259,9 @@ export interface Product {
    * English pair. Optional only until the next --write run backfills every record.
    */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -256,6 +274,7 @@ export interface Project {
   /** Project name, e.g. "Riverside Tower". */
   name: string;
   nameEs?: string;
+  namePt?: string;
   nameZh?: string;
   /** City. */
   location?: string;
@@ -268,14 +287,17 @@ export interface Project {
   /** Building type, e.g. "Office", "Library", "Hotel". Drives listing filters. */
   buildingType: string;
   buildingTypeEs?: string;
+  buildingTypePt?: string;
   /** Architect or specifier credit. */
   architect?: string;
   /** One or two sentences for the listing card. */
   summary: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Body copy for the detail page. Paragraphs as separate array entries. */
   body: string[];
   bodyEs?: string[];
+  bodyPt?: string[];
   /** Model numbers used on this project — links the case study back to the catalogue. */
   productModels: string[];
   heroImage: ImageRef;
@@ -284,7 +306,9 @@ export interface Project {
   seoDescription: string;
   /** Spanish SERP copy. Kept separate from summaryEs so the visible intro stays untouched. */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -350,6 +374,7 @@ export interface PromoCard {
   /** Bold first line. */
   title: string;
   titleEs?: string;
+  titlePt?: string;
   /** Second line, set in the lighter weight. */
   titleLight?: string;
   titleLightEs?: string;
@@ -405,6 +430,7 @@ export interface ArticleAuthor {
   /** Function at the company, e.g. "Digital Communications, Canton Hyland". */
   role: string;
   roleEs?: string;
+  rolePt?: string;
   /** The qualification held, stated plainly. Omit rather than approximate. */
   credential?: string;
   /** A profile that resolves, so the author is an entity and not a string. */
@@ -414,8 +440,18 @@ export interface ArticleAuthor {
 export interface NewsArticle {
   /** URL segment, unique site-wide. e.g. "en-1125-certification-for-panic-range". */
   slug: string;
+  /**
+   * Question-and-answer pairs, rendered visibly AND emitted as FAQPage markup.
+   *
+   * Never one without the other: Google treats FAQ markup whose answers do not appear on
+   * the page as a spam signal, so both come from `articleFaqItems` rather than from two
+   * lists somebody has to keep in step. See src/lib/article-faq.ts for why an article that
+   * already answers the question still benefits from pairing it with one.
+   */
+  faq?: { en: { question: string; answer: string }[]; es?: { question: string; answer: string }[]; pt?: { question: string; answer: string }[] };
   title: string;
   titleEs?: string;
+  titlePt?: string;
   titleZh?: string;
   kind: NewsKind;
   /**
@@ -431,12 +467,35 @@ export interface NewsArticle {
   author?: ArticleAuthor;
   /** Kept out of the build entirely. Use for work in progress. */
   draft?: boolean;
+  /**
+   * A file the article asks the reader to take away and send back.
+   *
+   * Article bodies are plain paragraphs and deliberately carry no markup, so a download
+   * cannot be a sentence with a link in it. It is structured instead: the master key
+   * article ends by asking for a door schedule, and an article that asks for something
+   * without handing over the form is a request the reader has to build themselves.
+   */
+  attachment?: {
+    url: string;
+    title: string;
+    titleEs?: string;
+  titlePt?: string;
+    /** Lowercase extension, drives the badge. */
+    format: string;
+    sizeBytes: number;
+    /** What is inside, so the reader knows before spending a download. */
+    note?: string;
+    noteEs?: string;
+  notePt?: string;
+  };
   /** One or two sentences for the listing card and the meta description fallback. */
   summary: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Body copy, one array entry per paragraph — same convention as Project. */
   body: string[];
   bodyEs?: string[];
+  bodyPt?: string[];
   heroImage: ImageRef;
   gallery?: ImageRef[];
   /** Model numbers this article concerns, linking it back to the catalogue. */
@@ -457,7 +516,9 @@ export interface NewsArticle {
    * English sentence would either overflow that budget or stop mid-word.
    */
   seoTitleEs?: string;
+  seoTitlePt?: string;
   seoDescriptionEs?: string;
+  seoDescriptionPt?: string;
 }
 
 /* -------------------------------------------------------------------------
@@ -472,7 +533,9 @@ export type DownloadKind =
   | "cad"
   | "bim"
   | "installation"
-  | "warranty";
+  | "warranty"
+  /** A form the buyer fills in and sends back — a planning input sheet, not a document to read. */
+  | "planning";
 
 export interface DownloadFile {
   /** Stable id referenced by Product.attachmentIds and Certification.downloadId. */
@@ -510,7 +573,9 @@ export interface Category {
    * see src/data/es-glossary.ts for the register and the terminology decisions.
    */
   nameEs?: string;
+  namePt?: string;
   summaryEs?: string;
+  summaryPt?: string;
   /** Short description for the category landing page. */
   summary: string;
   /** Lead image for the category card. */

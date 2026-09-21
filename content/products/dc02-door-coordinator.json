@@ -13,6 +13,14 @@
       "value": "Double-Leaf Doors"
     },
     {
+      "label": "Size",
+      "value": "397 × 120mm"
+    },
+    {
+      "label": "Max door weight",
+      "value": "55–100kg"
+    },
+    {
       "label": "Material",
       "value": "Zinc-Plated Steel"
     },
@@ -100,14 +108,27 @@
     }
   ],
   "attachmentIds": [],
-  "relatedModels": [],
+  "relatedModels": [
+    "JU-093",
+    "JU-088",
+    "JU-072",
+    "JU-073"
+  ],
   "seoTitle": "DC02 Door Coordinator — Zinc-Plated Steel | Canton Hyland",
   "seoDescription": "Canton Hyland DC02 door coordinator in Zinc-Plated Steel. Finishes: Silver, Zinc Plated. For double-leaf doors applications. Made in Guangdong, China.",
-  "nameEs": "Accesorios de herrajes",
+  "nameEs": "Selector de cierre",
   "specsEs": [
     {
       "label": "Aplicación",
       "value": "Puertas de doble hoja"
+    },
+    {
+      "label": "Medidas",
+      "value": "397 × 120 mm"
+    },
+    {
+      "label": "Peso máximo de hoja",
+      "value": "55–100 kg"
     },
     {
       "label": "Material",
@@ -174,5 +195,81 @@
     "model": "DC02",
     "fetchedAt": "2026-09-04"
   },
-  "description": ""
+  "description": "",
+  "specSources": {
+    "alibaba": {
+      "listingId": "1601886992771",
+      "basis": "client-published",
+      "fields": [
+        "Size",
+        "Max door weight"
+      ],
+      "fetchedAt": "2026-09-11"
+    }
+  },
+  "namePt": "Coordenador de fechamento",
+  "summaryPt": "Coordenador de fechamento.",
+  "specsPt": [
+    {
+      "label": "Aplicação",
+      "value": "Portas de duas folhas"
+    },
+    {
+      "label": "Dimensões",
+      "value": "397 × 120 mm"
+    },
+    {
+      "label": "Peso máximo da porta",
+      "value": "55–100 kg"
+    },
+    {
+      "label": "Material",
+      "value": "Aço zincado"
+    },
+    {
+      "label": "Cor",
+      "value": "Prata"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Zincado"
+    },
+    {
+      "label": "Tipo de produto",
+      "value": "Coordenador de sequência de portas"
+    },
+    {
+      "label": "Acionamento",
+      "value": "Mecânico, não precisa de energia"
+    },
+    {
+      "label": "Sequência de fechamento",
+      "value": "Folha passiva primeiro, folha ativa depois"
+    },
+    {
+      "label": "Acabamento de superfície",
+      "value": "Zincado"
+    },
+    {
+      "label": "Posição de instalação",
+      "value": "Travessa superior do batente"
+    },
+    {
+      "label": "Acessórios incluídos",
+      "value": "2 suportes, parafusos e arruelas"
+    },
+    {
+      "label": "OEM e ODM",
+      "value": "Disponível"
+    }
+  ],
+  "seoTitlePt": "DC02 Coordenador de fechamento | Canton Hyland",
+  "seoDescriptionPt": "Coordenador de fechamento DC02 da Canton Hyland — acessórios de ferragem. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Selector de cierre de acero zincado.",
+  "featuresPt": [
+    "Este coordenador mecânico foi projetado para sistemas de porta de duas folhas. Ele impõe a sequência correta de fechamento, garantindo que a folha passiva feche primeiro e a ativa depois."
+  ],
+  "featuresEs": [
+    "Este selector de cierre mecánico está pensado para sistemas de puerta de dos hojas. Controla el orden de cierre correcto, de modo que la hoja pasiva cierra primero y la hoja activa después."
+  ]
 }

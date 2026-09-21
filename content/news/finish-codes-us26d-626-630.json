@@ -1,0 +1,126 @@
+{
+  "slug": "finish-codes-us26d-626-630",
+  "title": "US26D, 626, 630: A Finish Code Is Not a Colour",
+  "kind": "insight",
+  "publishedAt": "2026-09-16",
+  "summary": "A North American specification writes 626, not \"satin chrome\". The number encodes the base metal as well as the appearance, so 626 and 652 are the same colour and different products. Of 519 published Canton Hyland records, 77 can be given a number honestly; the other 442 cannot, and each has a reason.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
+  },
+  "heroImage": {
+    "src": "/images/editorial/framed/5870-acet-heavy-duty-cylindrical-lock-16x9.webp",
+    "ratio": "16 / 9",
+    "label": "A 5870 cylindrical lock in antique copper, photographed against a plain field — the finish name on the price list and the finish number on a specification are not the same kind of fact.",
+    "labelEs": "Una cerradura cilíndrica 5870 en cobre antiguo, fotografiada sobre fondo liso — el nombre del acabado en la lista de precios y el número de acabado en una especificación no son el mismo tipo de dato."
+  },
+  "relatedModels": [
+    "5870 ACET",
+    "607 SSET",
+    "3431 SSET"
+  ],
+  "seoTitle": "US26D vs 626 vs 630: How BHMA Finish Codes Actually Work",
+  "seoDescription": "626 is satin chrome on brass, 652 is satin chrome on steel, 630 is solid satin stainless. Why a finish cross-reference chart with two columns is the one that costs money.",
+  "body": [
+    "A buyer arrived in September carrying a competitor's part number, `rxfse25r510l32d3`. The manufacturer never resolved and it did not matter, because one fragment of it identified the buyer completely: 32D. That is not a colour name, it is a code in the North American finish system, and a purchaser who writes it is specifying to ANSI/BHMA. Our own catalogue answers in a different language — SSET, ACBK, CPBK — house codes that mean nothing outside our price list. This article is the translation, and the important half of it is where the translation stops.",
+    "Start with the part everybody already knows. US26D and 626 are two ways of writing the same appearance, satin chromium plated; the US number is the older convention and the three-digit number is ANSI/BHMA A156.18. Most cross-reference charts on the open web print exactly this, two columns wide, and stop. That chart is incomplete in the one way that costs a container.",
+    "A BHMA number encodes the base metal as well as the appearance. A156.18 designates the base in the code itself: steel, brass and bronze, and stainless steel are three different groups. So 626 is satin chromium plated on a brass or bronze base. 652 is satin chromium plated on a steel base. They are the same colour, they photograph identically, and they are not the same product — different corrosion resistance, different price, different service life. A specifier who writes 626 and receives 652 has been given a substitution, and on a public building that is a rejected submittal.",
+    "630 is the one that breaks the pattern, and it is also the most specified finish in North America. It is not a plating at all: 630 is satin stainless steel, solid, with the finish worked into the metal rather than applied on top of it. This is why 630 cannot be offered as an alternative to 626 on price. There is nothing to wear through, because there is no coating; and there is nothing to plate, because the part is already the metal the finish names.",
+    "The practical consequence is that a finish code alone cannot be mapped to a BHMA number. Our catalogue records a finish field and a separate material field, and the number only exists where both are known. CP on brass and CP on steel are two different BHMA numbers, and the finish field does not say which. So the mapping in our system takes both fields and returns nothing whenever either half is unknown or names more than one metal.",
+    "Run that across the catalogue and 77 of 519 published records gain a number — about fifteen per cent. The commonest are 630 and 629, satin and bright stainless, which is what you would expect from a catalogue whose largest material group is stainless steel; then 605 bright brass, 625 bright chrome, 626 satin chrome, 619 satin nickel. One record resolves to 652 rather than 626, and that single record is the whole argument of this article: same colour, steel base, different number.",
+    "The other 442 are worth listing, because a supplier who will not say why a field is empty is usually hiding a guess. On 277 records no finish is stated at all, which is a question for our factory and is on the list. On 20 the material field is empty. On 22 the material names more than one metal — \"brass or stainless steel\" is a choice the buyer has not made yet, so there is no base to designate. Eighteen are Antique Brass, which is a family of relieved finishes rather than one A156.18 number, and twelve say \"stainless steel\" without saying satin or polished, where 630 and 629 both fit and guessing picks one.",
+    "Fifty-six are zinc alloy, and that group deserves its own sentence because it is a fact about the part rather than a gap in our data. A156.18's base materials are steel, brass and bronze, and stainless. Zinc alloy is not among them, and neither is aluminium. A specification calling for 626 on a brass base cannot be met with a zinc-alloy casting however close the colour comes, and a buyer is better told that before a sample than after a submittal. Saying so costs us enquiries we would have lost anyway at the review stage.",
+    "So, in practice: if your specification is written in BHMA numbers, send us the number and the model you are cross-referencing, and we will answer with a number or with a dash and the reason. A dash costs you one question. A plausible number costs whoever installs it a rejected submittal, and it is the reason most finish charts on this industry's websites should be read as marketing rather than as specification."
+  ],
+  "titleEs": "US26D, 626, 630: un código de acabado no es un color",
+  "summaryEs": "Una especificación norteamericana escribe 626, no «cromo satinado». El número codifica el metal base además del aspecto, de modo que 626 y 652 son el mismo color y productos distintos. De 519 fichas publicadas de Canton Hyland, 77 pueden recibir un número con honestidad; las otras 442 no, y cada una tiene su motivo.",
+  "bodyEs": [
+    "En septiembre llegó un comprador con un número de pieza de la competencia, `rxfse25r510l32d3`. El fabricante nunca se identificó y daba igual, porque un fragmento identificaba por completo al comprador: 32D. Eso no es el nombre de un color, es un código del sistema norteamericano de acabados, y quien lo escribe está especificando según ANSI/BHMA. Nuestro catálogo responde en otro idioma — SSET, ACBK, CPBK — códigos de casa que fuera de nuestra lista de precios no significan nada. Este artículo es la traducción, y la mitad importante es dónde la traducción se detiene.",
+    "Empecemos por lo que todo el mundo ya sabe. US26D y 626 son dos formas de escribir el mismo aspecto, cromado satinado; el número US es la convención antigua y el número de tres cifras es ANSI/BHMA A156.18. Casi todas las tablas de equivalencias que circulan por internet imprimen exactamente eso, dos columnas, y ahí se paran. Esa tabla está incompleta justo en la forma que cuesta un contenedor.",
+    "Un número BHMA codifica el metal base además del aspecto. A156.18 designa la base dentro del propio código: acero, latón y bronce, e inoxidable son tres grupos distintos. Así que 626 es cromado satinado sobre base de latón o bronce. 652 es cromado satinado sobre base de acero. Son el mismo color, se fotografían igual, y no son el mismo producto: distinta resistencia a la corrosión, distinto precio, distinta vida útil. Quien especifica 626 y recibe 652 ha recibido una sustitución, y en un edificio público eso es un submittal rechazado.",
+    "630 rompe el patrón, y además es el acabado más especificado en Norteamérica. No es un recubrimiento: 630 es acero inoxidable satinado, macizo, con el acabado trabajado en el propio metal en lugar de aplicado encima. Por eso 630 no puede ofrecerse como alternativa económica a 626. No hay nada que se desgaste, porque no hay recubrimiento; y no hay nada que recubrir, porque la pieza ya es el metal que el acabado nombra.",
+    "La consecuencia práctica es que un código de acabado por sí solo no puede traducirse a un número BHMA. Nuestras fichas guardan un campo de acabado y un campo de material aparte, y el número solo existe cuando se conocen los dos. CP sobre latón y CP sobre acero son dos números BHMA distintos, y el campo de acabado no dice cuál. Por eso nuestra traducción toma los dos campos y no devuelve nada cuando cualquiera de las mitades falta o nombra más de un metal.",
+    "Aplicado al catálogo, 77 de 519 fichas publicadas obtienen número — alrededor del quince por ciento. Los más frecuentes son 630 y 629, inoxidable satinado y brillante, lo esperable en un catálogo cuyo mayor grupo de material es el inoxidable; después 605 latón brillante, 625 cromo brillante, 626 cromo satinado, 619 níquel satinado. Una ficha resuelve a 652 en lugar de 626, y esa única ficha es todo el argumento de este artículo: mismo color, base de acero, número distinto.",
+    "Las otras 442 merecen enumerarse, porque un proveedor que no explica por qué un campo está vacío suele estar tapando una suposición. En 277 fichas no consta acabado alguno, lo cual es una pregunta para nuestra fábrica y está en la lista. En 20 el campo de material está vacío. En 22 el material nombra más de un metal — «latón o acero inoxidable» es una decisión que el comprador aún no ha tomado, así que no hay base que designar. Dieciocho son Antique Brass, que es una familia de acabados envejecidos y no un número único de A156.18, y doce dicen «acero inoxidable» sin decir satinado o pulido, donde 630 y 629 encajan por igual y adivinar significa elegir uno.",
+    "Cincuenta y seis son zamak, y ese grupo merece su propia frase porque es un hecho sobre la pieza y no un hueco en nuestros datos. Los materiales base de A156.18 son acero, latón y bronce, e inoxidable. El zamak no está entre ellos, y el aluminio tampoco. Una especificación que pide 626 sobre base de latón no puede cumplirse con una fundición de zamak por muy cerca que quede el color, y al comprador conviene decírselo antes de la muestra y no después del submittal. Decirlo nos cuesta consultas que de todas formas habríamos perdido en la revisión.",
+    "En la práctica: si su especificación está escrita en números BHMA, mándenos el número y el modelo que está homologando, y le responderemos con un número o con un guion y el motivo. Un guion le cuesta una pregunta. Un número plausible le cuesta a quien lo instala un submittal rechazado, y es la razón por la que la mayoría de las tablas de acabados de este sector deben leerse como publicidad y no como especificación."
+  ],
+  "seoTitleEs": "US26D, 626 y 630: cómo funcionan los códigos de acabado BHMA",
+  "seoDescriptionEs": "626 es cromo satinado sobre latón, 652 sobre acero, 630 es inoxidable satinado macizo. Por qué una tabla de equivalencias de dos columnas es la que cuesta dinero.",
+  "faq": {
+    "en": [
+      {
+        "question": "What is the difference between 626 and 652?",
+        "answer": "Both are satin chromium plated and they photograph identically. 626 is on a brass or bronze base; 652 is on a steel base. A BHMA number encodes the base metal as well as the appearance, so they are different products with different corrosion resistance, price and service life — and a specifier who writes 626 and receives 652 has been given a substitution."
+      },
+      {
+        "question": "Is US26D the same as 626?",
+        "answer": "They are two ways of writing the same appearance, satin chromium plated. The US number is the older convention and the three-digit number is ANSI/BHMA A156.18. The trap is that most cross-reference charts stop there, and a finish code alone cannot be mapped to a BHMA number because the number also encodes the base metal."
+      },
+      {
+        "question": "Why is 630 not just a cheaper alternative to 626?",
+        "answer": "630 is satin stainless steel, solid, with the finish worked into the metal rather than applied on top of it. It is not a plating at all. There is nothing to wear through because there is no coating, and nothing to plate because the part is already the metal the finish names."
+      },
+      {
+        "question": "Can a zinc alloy part be supplied to a 626 specification?",
+        "answer": "No. ANSI/BHMA A156.18's base materials are steel, brass and bronze, and stainless. Zinc alloy is not among them and neither is aluminium, so a specification calling for 626 on a brass base cannot be met with a zinc-alloy casting however close the colour comes."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual a diferença entre 626 e 652?",
+        "answer": "Os dois são cromados acetinados e fotografam idêntico. O 626 é sobre base de latão ou bronze; o 652 é sobre base de aço. Um número BHMA codifica o metal base além da aparência, então são produtos diferentes com resistência à corrosão, preço e vida útil diferentes — e um especificador que escreve 626 e recebe 652 recebeu uma substituição."
+      },
+      {
+        "question": "US26D é o mesmo que 626?",
+        "answer": "São duas formas de escrever a mesma aparência, cromado acetinado. O número US é a convenção mais antiga e o de três dígitos é a ANSI/BHMA A156.18. A armadilha é que a maioria das tabelas de correspondência para aí, e um código de acabamento sozinho não pode ser mapeado num número BHMA porque o número codifica também o metal base."
+      },
+      {
+        "question": "Por que o 630 não é só uma alternativa mais barata ao 626?",
+        "answer": "O 630 é aço inoxidável acetinado, maciço, com o acabamento trabalhado no metal em vez de aplicado por cima. Não é um banho. Não há o que gastar porque não há camada, e não há o que banhar porque a peça já é o metal que o acabamento nomeia."
+      },
+      {
+        "question": "Uma peça de zamac pode atender a uma especificação 626?",
+        "answer": "Não. Os materiais base da ANSI/BHMA A156.18 são aço, latão e bronze, e inoxidável. Zamac não está entre eles, e alumínio também não, então uma especificação que pede 626 sobre base de latão não pode ser atendida com uma peça de zamac por mais próxima que a cor chegue."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué diferencia hay entre 626 y 652?",
+        "answer": "Los dos son cromado satinado y fotografían idéntico. El 626 va sobre base de latón o bronce; el 652 sobre base de acero. Un número BHMA codifica el metal base además del aspecto, así que son productos distintos con distinta resistencia a la corrosión, distinto precio y distinta vida útil — y un prescriptor que escribe 626 y recibe 652 ha recibido una sustitución."
+      },
+      {
+        "question": "¿US26D es lo mismo que 626?",
+        "answer": "Son dos formas de escribir el mismo aspecto, cromado satinado. El número US es la convención más antigua y el de tres dígitos es ANSI/BHMA A156.18. La trampa es que la mayoría de las tablas de correspondencia se detienen ahí, y un código de acabado por sí solo no se puede mapear a un número BHMA porque el número codifica también el metal base."
+      },
+      {
+        "question": "¿Por qué el 630 no es solo una alternativa más barata al 626?",
+        "answer": "El 630 es acero inoxidable satinado, macizo, con el acabado trabajado en el metal en vez de aplicado encima. No es un baño. No hay nada que gastar porque no hay capa, y no hay nada que chapar porque la pieza ya es el metal que nombra el acabado."
+      },
+      {
+        "question": "¿Una pieza de zamak puede cumplir una especificación 626?",
+        "answer": "No. Los materiales base de ANSI/BHMA A156.18 son acero, latón y bronce, e inoxidable. El zamak no está entre ellos, y el aluminio tampoco, así que una especificación que pide 626 sobre base de latón no se puede cumplir con una pieza de zamak por muy cerca que quede el color."
+      }
+    ]
+  },
+  "titlePt": "US26D, 626, 630: um código de acabamento não é uma cor",
+  "summaryPt": "Uma especificação norte-americana escreve 626, não \"cromo acetinado\". O número codifica também o metal base, então 626 e 652 são a mesma cor e produtos diferentes. De 519 registros publicados, 77 podem receber um número com honestidade; os outros 442 não podem, e cada um tem um motivo.",
+  "bodyPt": [
+    "Um comprador apareceu em setembro com um código de peça de concorrente, `rxfse25r510l32d3`. O fabricante nunca foi identificado e não fez falta, porque um fragmento dele identificou o comprador por completo: 32D. Isso não é um nome de cor, é um código do sistema norte-americano de acabamentos, e quem o escreve está especificando pela ANSI/BHMA. O nosso próprio catálogo responde em outra língua — SSET, ACBK, CPBK — códigos internos que não significam nada fora da nossa lista de preços. Este artigo é a tradução, e a metade importante dele é onde a tradução para.",
+    "Comece pela parte que todo mundo já sabe. US26D e 626 são duas formas de escrever a mesma aparência, cromado acetinado; o número US é a convenção mais antiga e o número de três dígitos é a ANSI/BHMA A156.18. A maioria das tabelas de correspondência na web imprime exatamente isso, duas colunas, e para. Essa tabela é incompleta exatamente da forma que custa um contêiner.",
+    "Um número BHMA codifica também o metal base. A A156.18 designa a base dentro do próprio código: aço, latão e bronze, e aço inoxidável são três grupos diferentes. Então 626 é cromado acetinado sobre base de latão ou bronze. 652 é cromado acetinado sobre base de aço. São a mesma cor, fotografam idêntico, e não são o mesmo produto — resistência à corrosão diferente, preço diferente, vida útil diferente. Um especificador que escreve 626 e recebe 652 recebeu uma substituição, e num prédio público isso é um documento reprovado.",
+    "O 630 é o que quebra o padrão, e é também o acabamento mais especificado na América do Norte. Ele não é um banho: 630 é aço inoxidável acetinado, maciço, com o acabamento trabalhado no metal em vez de aplicado por cima. É por isso que 630 não pode ser oferecido como alternativa mais barata ao 626. Não há o que gastar, porque não há camada; e não há o que banhar, porque a peça já é o metal que o acabamento nomeia.",
+    "A consequência prática é que um código de acabamento sozinho não pode ser mapeado num número BHMA. O nosso catálogo registra um campo de acabamento e um campo separado de material, e o número só existe onde os dois são conhecidos. CP sobre latão e CP sobre aço são dois números BHMA diferentes, e o campo de acabamento não diz qual. Então o mapeamento no nosso sistema pega os dois campos e não devolve nada sempre que uma das metades é desconhecida ou nomeia mais de um metal.",
+    "Rode isso sobre o catálogo e 77 de 519 registros publicados ganham um número — cerca de quinze por cento. Os mais comuns são 630 e 629, inox acetinado e brilhante, que é o que se espera de um catálogo cujo maior grupo de material é aço inoxidável; depois 605 latão brilhante, 625 cromo brilhante, 626 cromo acetinado, 619 níquel acetinado. Um registro resolve para 652 em vez de 626, e esse único registro é todo o argumento deste artigo: mesma cor, base de aço, número diferente.",
+    "Os outros 442 merecem ser listados, porque um fornecedor que não diz por que um campo está vazio normalmente está escondendo um palpite. Em 277 registros não há acabamento declarado, o que é uma pergunta para a nossa fábrica e está na lista. Em 20 o campo de material está vazio. Em 22 o material nomeia mais de um metal — \"latão ou aço inoxidável\" é uma escolha que o comprador ainda não fez, então não há base para designar. Dezoito são latão antigo, que é uma família de acabamentos relevados e não um número da A156.18, e doze dizem \"aço inoxidável\" sem dizer acetinado ou polido, onde 630 e 629 caberiam os dois e adivinhar escolheria um.",
+    "Cinquenta e seis são zamac, e esse grupo merece uma frase própria porque é um fato sobre a peça e não uma lacuna nos nossos dados. Os materiais base da A156.18 são aço, latão e bronze, e inoxidável. Zamac não está entre eles, e alumínio também não. Uma especificação que pede 626 sobre base de latão não pode ser atendida com uma peça de zamac por mais próxima que a cor chegue, e é melhor dizer isso ao comprador antes de uma amostra do que depois de uma aprovação. Dizer isso nos custa consultas que teríamos perdido de qualquer forma na etapa de análise.",
+    "Então, na prática: se a sua especificação é escrita em números BHMA, mande-nos o número e o modelo que você está cruzando, e responderemos com um número ou com um travessão e o motivo. Um travessão custa a você uma pergunta. Um número plausível custa a quem instala uma reprovação, e é a razão pela qual a maioria das tabelas de acabamento nos sites deste setor deve ser lida como marketing e não como especificação."
+  ],
+  "seoTitlePt": "US26D, 626 e 630: como funcionam os códigos BHMA",
+  "seoDescriptionPt": "626 é cromo acetinado sobre latão, 652 sobre aço, 630 é inox acetinado maciço. Por que uma tabela de acabamentos de duas colunas é a que custa dinheiro."
+}

@@ -154,7 +154,10 @@ if (unreadable.length) {
 /* ------------------------------------- 3. bring the assets the pages cite */
 
 const assetRefs = new Set();
-const ASSET_REF = /["'(](\/(?:images|videos|fonts)\/[^"')\s]+?\.[a-z0-9]{2,5})["')]/gi;
+/* 加上 downloads：图册 PDF 是 <a href> 而不是 <img src>，2026-09-15 第一次上线时
+   页面生成了、链接指过去了，文件却没被带过来 —— 扫描器只认这几个前缀。
+   新增一个能下载的目录时，这里要一起加。 */
+const ASSET_REF = /["'(](\/(?:images|videos|fonts|downloads)\/[^"')\s]+?\.[a-z0-9]{2,5})["')]/gi;
 
 for (const file of targetFiles) {
   if (!file.endsWith(".html")) continue;
@@ -180,18 +183,149 @@ for (const ref of assetRefs) {
 
 cpSync(join(OUT, "_next"), join(TARGET, "_next"), { recursive: true });
 
+/* ------------------------------------------------ 4b. the search indexes */
+
+/*
+  Copied by name, because nothing can discover them.
+
+  Step 3 finds assets by scanning the built HTML for /images, /videos and /fonts paths. The
+  search index is neither: it is fetched by scripts/../SearchBox on first open, so its path
+  exists only inside a JavaScript bundle, and it lives at the document root rather than under
+  an asset directory. Left to the scanner it would simply never be copied, and the search box
+  would open, spin, and find nothing — on the production host only, since `next dev` serves
+  public/ directly and would look perfectly fine.
+
+  Both languages are copied into the one tree: out-rayen serves 中文 at / and English at /en/,
+  and each fetches its own file.
+*/
+const SEARCH_INDEXES = ["search-index-rayen-zh.json", "search-index-rayen-en.json"];
+for (const name of SEARCH_INDEXES) {
+  const source = join(PUBLIC, name);
+  if (!existsSync(source)) {
+    console.error(`缺少 ${name} —— 先跑 node scripts/build-search-index.mjs`);
+    process.exit(1);
+  }
+  copyFileSync(source, join(TARGET, name));
+}
+
 /* ------------------------------------------------------------- 5. robots */
 
 /*
-  Disallow everything while the site is on the temporary host. The preview lives at a
-  subdomain of stahlock.com, and a RAYEN page indexed under that hostname would rank for
-  the factory's own name at an address belonging to a different brand — and would keep
-  ranking there long after the real domain is live. Loosen this in the same commit that
-  changes rayen.preview.host, not before.
+  Indexing is open as of 2026-09-15, because the site is now on its own domain.
+
+  It was Disallow: / for as long as the site lived on a preview subdomain of stahlock.com —
+  a RAYEN page indexed under that hostname would have ranked for this factory's name at an
+  address belonging to a different company, and would have kept ranking there long after the
+  move. That block was written to be lifted in the same commit that set the real host, and
+  this is that commit: rayen.cn, see rayen.host.domain.
+
+  Lighthouse scored SEO 69 on https://rayen.cn/ with a single finding — "Page is blocked from
+  indexing" — which is what sent us here.
 */
+const site = JSON.parse(readFileSync(join(root, "content", "rayen", "site.json"), "utf8"));
+const canonicalOrigin = `https://${site.host.domain}`;
 writeFileSync(
   join(TARGET, "robots.txt"),
-  ["User-agent: *", "Disallow: /", "", "# 预览域名期间全站不收录。正式域名上线时改这里。", ""].join("\n"),
+  ["User-agent: *", "Allow: /", "", `Sitemap: ${canonicalOrigin}/sitemap.xml`, ""].join("\n"),
+  "utf8",
+);
+
+/* ---------------------------------------------------------- 5b. sitemap.xml */
+
+/*
+  Written here rather than by Next, because the paths Next knows are /zh/… and /zh-en/… and
+  the ones that exist on this host are / and /en/. A sitemap generated before the lift would
+  list 420 URLs that 404.
+
+  Built from the files actually on disk after the lift, so it cannot disagree with what was
+  published. robots.txt names it, and until now there was no sitemap at all — the site went
+  live pointing crawlers at nothing.
+*/
+const pagePaths = walk(TARGET)
+  .filter((file) => file.endsWith("index.html"))
+  .map((file) => {
+    const rel = relative(TARGET, dirname(file)).replaceAll("\\", "/");
+    return rel === "" ? "/" : `/${rel}/`;
+  })
+  .sort();
+
+/*
+  Every entry carries its language alternates, the same pair the pages declare in <head>.
+
+  Google reads hreflang from either place and wants them to agree; declaring it in one and
+  not the other is how a bilingual site ends up with the two versions treated as duplicates.
+  The pairing is computed from the path, because that is the whole rule: the English tree is
+  the Chinese tree under /en.
+*/
+const zhOf = (path) => (path.startsWith("/en/") ? path.slice(3) : path === "/en/" ? "/" : path);
+const enOf = (path) => `/en${zhOf(path)}`;
+const loc = (path) => `${canonicalOrigin}${path}`;
+
+writeFileSync(
+  join(TARGET, "sitemap.xml"),
+  [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ...pagePaths.flatMap((path) => [
+      "  <url>",
+      `    <loc>${loc(path)}</loc>`,
+      `    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${loc(zhOf(path))}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="en" href="${loc(enOf(path))}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${loc(zhOf(path))}"/>`,
+      "  </url>",
+    ]),
+    "</urlset>",
+    "",
+  ].join("\n"),
+  "utf8",
+);
+
+/* --------------------------------------------------------------- 5c. llms.txt */
+
+/*
+  A plain-text map of the site for language models, in the emerging llms.txt convention.
+  Buyers increasingly reach a factory by asking an assistant rather than a search box, and an
+  assistant that cannot tell which of 418 pages holds the spec table quotes the wrong one.
+
+  It states only what the site already says, in the order a buyer needs it, and it names what
+  we do NOT publish — prices, and dimensions for the models whose drawings we have not been
+  given. A model that reads "no price is published here" asks the reader to enquire; one that
+  reads nothing invents a number.
+*/
+const categoryLines = walk(TARGET)
+  .filter((file) => file.endsWith("index.html"))
+  .map((file) => relative(TARGET, dirname(file)).replaceAll("\\", "/"))
+  .filter((rel) => /^products\/[^/]+$/.test(rel))
+  .sort()
+  .map((rel) => `- [${rel.split("/")[1]}](${canonicalOrigin}/${rel}/)`);
+
+writeFileSync(
+  join(TARGET, "llms.txt"),
+  [
+    `# ${site.brand.legalName}`,
+    "",
+    `> ${site.brand.positioning}`,
+    "",
+    `中山市小榄镇的门控五金制造商。中文站 ${canonicalOrigin}/ ，英文站 ${canonicalOrigin}/en/ 。`,
+    "",
+    "## 产品类目",
+    "",
+    ...categoryLines,
+    "",
+    "## 站点说明",
+    "",
+    "- 每个型号页有独立规格表：材质、尺寸、中心距、安装孔径、表面处理。",
+    "- 规格表里的短横线表示该项我们没有依据，不是零或未知 —— 请直接问我们要图纸。",
+    "- 本站不公布价格。报价随数量、表面处理与包装变化，请通过联系页询价。",
+    "- 图片上的 RAYEN 雷茵 标记是我们自己的产品照，不代表第三方认证。",
+    "",
+    "## 联系",
+    "",
+    `- [联系我们](${canonicalOrigin}/contact/)`,
+    `- [工厂与产能](${canonicalOrigin}/company/)`,
+    `- [来图来样加工](${canonicalOrigin}/oem/)`,
+    "",
+  ].join("\n"),
   "utf8",
 );
 

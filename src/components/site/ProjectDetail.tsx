@@ -1,10 +1,12 @@
 import Link from "next/link";
 import type { Project } from "@/data/types";
 import { getProductByModel } from "@/data/products";
+import { collectionSpecRanges, specRangeHeading, statedOn } from "@/lib/collection-spec-range";
 import { ArrowLink } from "./ArrowLink";
 import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
+import type { Locale } from "@/data/site";
 
 const copy = {
   en: {
@@ -33,6 +35,19 @@ const copy = {
     quote: "Consultar este paquete",
     all: "Todas las aplicaciones",
   },
+  pt: {
+    home: "Início",
+    projects: "Obras + Aplicações",
+    status: "Aplicação representativa",
+    note: "Este estudo mostra uma combinação possível de ferragens. Não é apresentado como uma obra concluída de um cliente identificado.",
+    brief: "Resumo da aplicação",
+    gallery: "Aplicação + ferragens",
+    related: "Produtos relacionados",
+    relatedNote:
+      "Confirme dimensões, âmbito dos ensaios, preparação da porta e acabamentos com a documentação técnica atual antes de encomendar.",
+    quote: "Consultar este conjunto",
+    all: "Todas as aplicações",
+  },
 } as const;
 
 export function ProjectDetail({
@@ -40,19 +55,28 @@ export function ProjectDetail({
   locale = "en",
 }: {
   project: Project;
-  locale?: "en" | "es";
+  locale?: Locale;
 }) {
   const spanish = locale === "es";
   const text = copy[locale];
-  const name = spanish ? project.nameEs ?? project.name : project.name;
-  const buildingType = spanish
-    ? project.buildingTypeEs ?? project.buildingType
-    : project.buildingType;
-  const summary = spanish ? project.summaryEs ?? project.summary : project.summary;
-  const body = spanish ? project.bodyEs ?? project.body : project.body;
-  const projectsHref = spanish ? "/es/projects/" : "/projects/";
-  const contactHref = spanish ? "/es/contact/" : "/contact/";
-  const homeHref = spanish ? "/es/" : "/";
+  /*
+    Three locales. `buildingTypeEs` and the image labels have no Portuguese field yet, so
+    those fall back to English — visibly, which is the rule in src/lib/localised.ts.
+  */
+  const pick = <T,>(es: T | undefined, pt: T | undefined, en: T): T =>
+    (spanish ? es : locale === "pt" ? pt : undefined) ?? en;
+
+  const name = pick(project.nameEs, project.namePt, project.name);
+  const buildingType = pick(project.buildingTypeEs, project.buildingTypePt, project.buildingType);
+  const summary = pick(project.summaryEs, project.summaryPt, project.summary);
+  /* Paragraph for paragraph or the whole English body — a half-translated page reads as
+     a rendering bug rather than as a gap. Same rule as NewsDetail. */
+  const localeBody = spanish ? project.bodyEs : locale === "pt" ? project.bodyPt : undefined;
+  const body = localeBody?.length === project.body.length ? localeBody : project.body;
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  const projectsHref = `${prefix}/projects/`;
+  const contactHref = `${prefix}/contact/`;
+  const homeHref = `${prefix}/`;
   const localiseImageLabel = (label: string, labelEs?: string) =>
     spanish ? labelEs ?? label : label;
   const relatedProducts = project.productModels
@@ -111,6 +135,50 @@ export function ProjectDetail({
             </div>
           </div>
         </section>
+
+        {/*
+          What this package spans, computed from the products in it — the same derivation
+          the collection pages use (src/lib/collection-spec-range.ts), pointed at this
+          project's own product set.
+
+          These four pages carried thirteen sentences each and not one figure. A package
+          study whose whole claim is "these parts work together" and which never states a
+          backset is asking a specifier to take coordination on faith, which is the one
+          thing this buyer cannot do. Nothing here is authored: a line appears only when
+          at least three of the products state that field, so the glass entrance package
+          — whose three products have no recorded specs — correctly shows nothing rather
+          than a plausible number.
+
+          Rollback: delete this block; nothing else references it.
+        */}
+        {(() => {
+          const ranges = collectionSpecRanges(relatedProducts, locale);
+          if (!ranges.length) return null;
+          return (
+            <section
+              className="col-content border-t border-line pt-48"
+              aria-labelledby="project-range-heading"
+            >
+              <h2 id="project-range-heading" className="text-h2 text-ink">
+                {specRangeHeading(locale)}
+              </h2>
+              <dl className="mt-24 border-t border-ink pt-16">
+                {ranges.map((range) => (
+                  <div
+                    key={range.label}
+                    className="grid grid-cols-1 gap-4 border-b border-line py-12 sm:grid-cols-[14rem_1fr_auto] sm:gap-24"
+                  >
+                    <dt className="text-c2 text-ink-secondary">{range.label}</dt>
+                    <dd className="text-c1 tabular-nums text-ink">{range.value}</dd>
+                    <dd className="text-c2 text-ink-tertiary">
+                      {statedOn(range.stated, relatedProducts.length, locale)}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          );
+        })()}
 
         <section className="col-content border-t border-line pt-48">
           <h2 className="text-h2 text-ink">{text.gallery}</h2>

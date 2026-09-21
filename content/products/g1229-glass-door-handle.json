@@ -42,11 +42,11 @@
       "value": "M8"
     },
     {
-      "label": "Fixing hole",
-      "value": "φ12mm"
+      "label": "Fixing hole (glass door)",
+      "value": "φ16mm"
     },
     {
-      "label": "Fixing hole (flush door)",
+      "label": "Fixing hole (timber door)",
       "value": "φ10mm"
     }
   ],
@@ -56,7 +56,9 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g1229-glass-door-handle.webp",
@@ -65,14 +67,14 @@
   },
   "gallery": [
     {
-      "src": "/images/products/g1229-glass-door-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "G1229 Glass Door Handle, view 2"
-    },
-    {
       "src": "/images/products/g1229-glass-door-handle-3.webp",
       "ratio": "1 / 1",
       "label": "G1229 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g1229-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G1229 Glass Door Handle, view 2"
     },
     {
       "src": "/images/products/g1229-glass-door-handle-4.webp",
@@ -98,7 +100,50 @@
     "artunion": {
       "id": "G1229-26-101",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "P=425 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "600 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "25 mm"
+    },
+    {
+      "label": "Diâmetro da haste",
+      "value": "34 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "64 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "2.6 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M8"
+    },
+    {
+      "label": "Furo de fixação (porta de vidro)",
+      "value": "φ16 mm"
+    },
+    {
+      "label": "Furo de fixação (porta de madeira)",
+      "value": "φ10 mm"
+    }
+  ],
+  "seoTitlePt": "G1229 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G1229 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

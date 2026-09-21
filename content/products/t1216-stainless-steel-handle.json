@@ -55,7 +55,10 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t1216-stainless-steel-handle.webp",
@@ -64,14 +67,14 @@
   },
   "gallery": [
     {
-      "src": "/images/products/t1216-stainless-steel-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "T1216 Stainless Steel Handle, view 2"
-    },
-    {
       "src": "/images/products/t1216-stainless-steel-handle-3.webp",
       "ratio": "1 / 1",
       "label": "T1216 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t1216-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T1216 Stainless Steel Handle, view 2"
     }
   ],
   "attachmentIds": [],
@@ -84,7 +87,50 @@
     "artunion": {
       "id": "T1216-01-023",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "425 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "600 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "35 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "25 × 25 mm (quadrado)"
+    },
+    {
+      "label": "Dimensões da roseta",
+      "value": "25.6 × 57.2 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1.9 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ8 mm"
+    },
+    {
+      "label": "Furo de fixação (porta de vidro)",
+      "value": "φ12 mm"
+    }
+  ],
+  "seoTitlePt": "T1216 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox T1216 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

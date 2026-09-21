@@ -78,12 +78,15 @@ type Strings = {
     finishes: string;
     noSpecs: string;
     noPhoto: string;
+    viewCategory: string;
+    finishFilter: { all: string; heading: string; approximate: string; empty: string };
     ctaQuote: string;
     ctaOem: string;
     ctaShop: string;
     familyTitle: string;
     familyLeverLine: (models: string) => string;
     familyHandleLine: string;
+    familySameLine: string;
     relatedTitle: string;
     galleryCounter: (index: number, total: number) => string;
     viewNth: (index: number, label: string) => string;
@@ -109,7 +112,17 @@ type Strings = {
     cta: string;
   };
   contact: { eyebrow: string; title: string; intro: string; rows: { label: string; key: string }[]; note: string };
-  footer: { products: string; about: string; shop: string; shopLink: string; contact: string; allCategories: string; icp: string };
+  downloads: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    meta: (pages: number, size: string) => string;
+    cta: string;
+    originalTitle: string;
+    originalNote: string;
+    contactCta: string;
+  };
+  footer: { products: string; about: string; shop: string; shopLink: string; contact: string; downloads: string; allCategories: string; icp: string };
 };
 
 export const STRINGS: Record<RayenLocale, Strings> = {
@@ -154,12 +167,20 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       finishes: "可选表面处理",
       noSpecs: "该型号的规格参数尚未整理完成。请直接联系我们索取图纸与尺寸。",
       noPhoto: "暂无实拍图",
+      viewCategory: "查看该类目",
+      finishFilter: {
+        heading: "按表面处理筛选",
+        all: "全部",
+        approximate: "色块为示意色，实际颜色以样品为准。",
+        empty: "筛出 {n} 个型号",
+      },
       ctaQuote: "索取图纸与报价",
       ctaOem: "来图来样加工",
       ctaShop: "1688 店铺查看",
       familyTitle: "同款式搭配",
       familyLeverLine: (models) => `本款配套同风格门把手 ${models}，可成套下单。`,
       familyHandleLine: "本款执手属于同一设计款式，可与下列拉手成套使用。",
+      familySameLine: "本款属于同一设计款式，下列型号外观一致，可按项目需要选配。",
       relatedTitle: "同类型号",
       galleryCounter: (i, t) => `第 ${i} / ${t} 张`,
       viewNth: (i, label) => `查看第 ${i} 张：${label}`,
@@ -260,12 +281,25 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       ],
       note: "标着短横线的几项还没有对外公布的号码。与其放一个打不通的电话，我们先把它空着 —— 有需要请通过 1688 店铺留言，或让介绍人转达。",
     },
+    downloads: {
+      eyebrow: "Downloads",
+      title: "资料下载",
+      intro:
+        "产品图册整本可以直接下载，不用留邮箱、不用注册。型号、表面处理与配套件都在里面，方便你拿去比价或转给同事。",
+      meta: (pages, size) => `PDF · ${pages} 页 · ${size}`,
+      cta: "下载图册",
+      originalTitle: "需要印刷级原件？",
+      originalNote:
+        "这里的一份是按屏幕阅读重新输出的（2000 像素宽），型号与表面名称放大到 100% 依然清楚。印刷用的高清原件有 73 MB，不适合挂在网页上下载 —— 需要请直接联系我们，我们发给你。",
+      contactCta: "联系我们索取原件",
+    },
     footer: {
       products: "产品中心",
       about: "关于",
       shop: "线上店铺",
       shopLink: "1688 店铺 ↗",
       contact: "联系",
+      downloads: "资料下载",
       allCategories: "全部品类 →",
       icp: "本站服务器位于境外，未办理 ICP 备案。",
     },
@@ -312,12 +346,20 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       finishes: "Available finishes",
       noSpecs: "The specification for this model is still being compiled. Ask us for the drawing and dimensions.",
       noPhoto: "No photograph yet",
+      viewCategory: "View this category",
+      finishFilter: {
+        heading: "Filter by finish",
+        all: "All",
+        approximate: "Swatches are indicative; match against a sample, not the screen.",
+        empty: "{n} models",
+      },
       ctaQuote: "Request drawing & quotation",
       ctaOem: "Make to drawing or sample",
       ctaShop: "View on 1688",
       familyTitle: "Matching range",
       familyLeverLine: (models) => `Matching lever handles in the same design: ${models}. Available as a set.`,
       familyHandleLine: "This lever belongs to the same design family as the pull handles below.",
+      familySameLine: "Same design family — the models below share this one's appearance.",
       relatedTitle: "Similar models",
       galleryCounter: (i, t) => `${i} of ${t}`,
       viewNth: (i, label) => `View image ${i}: ${label}`,
@@ -421,12 +463,25 @@ export const STRINGS: Record<RayenLocale, Strings> = {
       note:
         "The rows showing a dash have no published number yet. Rather than print a line that does not answer, we leave it blank — reach us through the 1688 storefront in the meantime.",
     },
+    downloads: {
+      eyebrow: "Downloads",
+      title: "Downloads",
+      intro:
+        "The catalogue is here in full — no email address, no registration. Model codes, finishes and the matching pieces are all in it, so you can price it out or pass it to a colleague.",
+      meta: (pages, size) => `PDF · ${pages} pages · ${size}`,
+      cta: "Download the catalogue",
+      originalTitle: "Need the print-resolution file?",
+      originalNote:
+        "The copy here is re-exported for reading on screen at 2000 px wide; model codes and finish names stay legible at 100%. The press original is 73 MB, which is not a reasonable web download — ask us and we will send it.",
+      contactCta: "Ask us for the press file",
+    },
     footer: {
       products: "Products",
       about: "About",
       shop: "Online store",
       shopLink: "1688 storefront ↗",
       contact: "Contact",
+      downloads: "Downloads",
       allCategories: "All families →",
       icp: "This site is hosted outside mainland China and carries no ICP filing.",
     },

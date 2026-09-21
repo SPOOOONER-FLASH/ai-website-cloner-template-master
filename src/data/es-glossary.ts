@@ -20,6 +20,10 @@
 
 /** Spec table labels. Sentence case, matching how the English side is written. */
 export const SPEC_LABELS_ES: Record<string, string> = {
+  "Plate length":
+    "Longitud de placa",
+  "Minimum order":
+    "Pedido mínimo",
   Material: "Material",
   /*
     Packing terms, added 2026-09-06 to unblock the product FAQ.
@@ -275,6 +279,28 @@ export const SPEC_LABELS_ES: Record<string, string> = {
  * number must survive untouched and only the qualifier is language.
  */
 export const SPEC_VALUES_ES: Record<string, string> = {
+  "35mm to 45mm adjustable":
+    "35 a 45 mm, regulable",
+  "60mm / 70mm adjustable":
+    "60 / 70 mm, regulable",
+  "60mm / 70mm adjustable, latch and deadbolt both":
+    "60 / 70 mm regulable, picaporte y pestillo",
+  "100 pieces":
+    "100 piezas",
+  "Three square deadbolts, plus latch":
+    "Tres pestillos cuadrados, más picaporte",
+  "Nickel-plated brass, solid brass, brushed nickel":
+    "Latón niquelado, latón macizo, níquel cepillado",
+  "Trim handle · outside lever for panic exit devices":
+    "Manilla exterior · para barras antipánico",
+  "Trim handle · anti-pick outside lever for panic exit devices":
+    "Manilla exterior antiganzúa · para barras antipánico",
+  "Trim handle · outside lever with key for panic exit devices":
+    "Manilla exterior · con llave, para barras antipánico",
+  "Trim handle · external handle for panic bar systems":
+    "Manilla exterior · para sistemas de barra antipánico",
+  "Profile lock case for panic exit devices":
+    "Caja de cerradura de perfil para barras antipánico",
   // materials
   "Stainless steel": "Acero inoxidable",
   "Stainless Steel": "Acero inoxidable",
@@ -1029,6 +1055,203 @@ export const SPEC_VALUES_ES: Record<string, string> = {
 };
 
 /** Category and sub-category names, keyed by slug. */
+/**
+ * Finish names, used on their own and inside the comma-separated lists the catalogue
+ * writes ("Polished Brass (PB), Antique Brass (AB), …"). The parenthesised code is a code
+ * and passes through untouched — that is the whole point of a code.
+ *
+ * Added 2026-09-17, mirroring FINISH_NAMES_PT. Spanish shipped first and never had these,
+ * which is why the finish row on a Spanish product page read English while the Portuguese
+ * twin read Spanish-shaped Portuguese.
+ */
+export const FINISH_NAMES_ES: Record<string, string> = {
+  "Polished Brass":
+    "Latón pulido",
+  "Polished brass":
+    "Latón pulido",
+  "Satin Brass":
+    "Latón satinado",
+  "Satin brass":
+    "Latón satinado",
+  "Antique Brass":
+    "Latón antiguo",
+  "Antique brass":
+    "Latón antiguo",
+  "Antique Copper":
+    "Cobre antiguo",
+  "Antique copper":
+    "Cobre antiguo",
+  "Chrome Plated":
+    "Cromado",
+  "Chrome plated":
+    "Cromado",
+  "Satin Chrome":
+    "Cromo satinado",
+  "Satin chrome":
+    "Cromo satinado",
+  "Satin Nickel":
+    "Níquel satinado",
+  "Satin nickel":
+    "Níquel satinado",
+  "Nickel Plated":
+    "Niquelado",
+  "Nickel plated":
+    "Niquelado",
+  "Black Nickel":
+    "Níquel negro",
+  "Black nickel":
+    "Níquel negro",
+  "Stainless Steel":
+    "Acero inoxidable",
+  "Stainless steel":
+    "Acero inoxidable",
+  "Satin Stainless":
+    "Inoxidable satinado",
+  "Satin Stainless Steel":
+    "Acero inoxidable satinado",
+  "Satin stainless steel":
+    "Acero inoxidable satinado",
+  "Polished Stainless Steel":
+    "Acero inoxidable pulido",
+  "Polished stainless steel":
+    "Acero inoxidable pulido",
+  "Bright Polished":
+    "Pulido brillante",
+  "Bright polished":
+    "Pulido brillante",
+  "Oil Rubbed Bronze":
+    "Bronce envejecido",
+  "Oil-rubbed bronze":
+    "Bronce envejecido",
+  "Matt Black":
+    "Negro mate",
+  "Matte Black":
+    "Negro mate",
+  "Spray Painting":
+    "Pintura a pistola",
+  "Spray painted":
+    "Pintado a pistola",
+  "Powder Coating":
+    "Pintura en polvo",
+  "Zinc Plated":
+    "Cincado",
+  "White sprayed":
+    "Pintado en blanco",
+  "Wood-grain sprayed":
+    "Pintado imitación madera",
+  "All Available":
+    "Todos disponibles",
+  "Multiple finish":
+    "Varios acabados",
+  "Gun metal":
+    "Metal oscurecido",
+  "PVD":
+    "PVD",
+};
+
+/**
+ * Material names. Same story as the finishes above, and the same rule: a figure or an
+ * alloy number is carried across unchanged, only the words move.
+ */
+export const MATERIAL_NAMES_ES: Record<string, string> = {
+  "Stainless steel":
+    "Acero inoxidable",
+  "Stainless Steel":
+    "Acero inoxidable",
+  "stainless steel":
+    "acero inoxidable",
+  "304 Stainless Steel":
+    "Acero inoxidable 304",
+  "304 stainless steel":
+    "acero inoxidable 304",
+  "Stainless Steel 304":
+    "Acero inoxidable 304",
+  "Stainless Steel 304/201":
+    "Acero inoxidable 304/201",
+  "Stainless Steel201/304":
+    "Acero inoxidable 201/304",
+  "304SS":
+    "Inox 304",
+  "Zinc alloy":
+    "Zamak",
+  "Zinc Alloy":
+    "Zamak",
+  "zinc alloy":
+    "zamak",
+  "Solid brass":
+    "Latón macizo",
+  "Solid Brass":
+    "Latón macizo",
+  "Brass":
+    "Latón",
+  "Copper":
+    "Cobre",
+  "Copper Construction":
+    "Construcción en cobre",
+  "Iron":
+    "Hierro",
+  "iron":
+    "hierro",
+  "Iron case":
+    "Caja de hierro",
+  "Iron Tube":
+    "Tubo de hierro",
+  "ABS Body":
+    "Cuerpo de ABS",
+  "Aluminium case":
+    "Caja de aluminio",
+  "Aluminum":
+    "Aluminio",
+  "Aluminum Alloy":
+    "Aleación de aluminio",
+  "Aluminum alloy":
+    "Aleación de aluminio",
+  "Aluminium and steel":
+    "Aluminio y acero",
+  "Stainless steel body":
+    "Cuerpo de acero inoxidable",
+  "Thickened Iron":
+    "Hierro reforzado",
+  "Flame-Retardant ABS":
+    "ABS ignífugo",
+  "ABS/plastic":
+    "ABS / plástico",
+  "Carbon Steel .":
+    "Acero al carbono.",
+  "Nickel Plated Iron":
+    "Hierro niquelado",
+  "zinc alloy+brass":
+    "zamak + latón",
+  "Brass/zinc alloy":
+    "Latón / zamak",
+  "Iron+stainless steel":
+    "Hierro + acero inoxidable",
+  "Stainless Steel+Brass":
+    "Acero inoxidable + latón",
+  "Brass or Stainless Steel":
+    "Latón o acero inoxidable",
+  "Brass or iron":
+    "Latón o hierro",
+  "Brass or zinc":
+    "Latón o zinc",
+  "Stainless steel, brass or steel":
+    "Acero inoxidable, latón o acero",
+  "Stainless Steel / Brass / Steel":
+    "Acero inoxidable / latón / acero",
+  "Stainless steel/Brass/Solid steel":
+    "Acero inoxidable / latón / acero macizo",
+  "Solid Brass Cylinder":
+    "Cilindro de latón macizo",
+  "Brass Cylinder":
+    "Cilindro de latón",
+  "Brass cylinder":
+    "Cilindro de latón",
+  "Silver":
+    "Plata",
+  "Black":
+    "Negro",
+};
+
 export const CATEGORY_NAMES_ES: Record<string, string> = {
   "panic-exit-devices": "Barras antipánico",
   "lock-cases": "Cerraduras de embutir",
@@ -1057,3 +1280,148 @@ export const CATEGORY_NAMES_ES: Record<string, string> = {
   the qualifier is language. That is a generation concern — the site renders the finished
   `specsEs` rows out of the content files and never composes Spanish at request time.
 */
+
+/**
+ * PRODUCT names in Spanish, keyed by the English name in content/products/*.json.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THIS EXISTS: every Spanish product page was titled by its CATEGORY
+ *
+ * `scripts/translate-products-es.mjs` assigned `nameEs` as
+ * `CATEGORY_NAMES_ES[categoryPath[0]] ?? product.name`. That was a stand-in from before
+ * any Spanish product names existed, and it shipped: 582 of 598 translated records
+ * carried a category name in the product-name field, so the Spanish mirror rendered
+ *
+ *     EN  <h1>001 Panic Exit Device Trim</h1>
+ *     ES  <h1>001 Barras antipánico</h1>        ← "panic bars", the category
+ *     ES  <h1>DC02 Accesorios de herrajes</h1>  ← "hardware accessories", the category
+ *
+ * It reached the <title> too, so 534 Spanish titles collapsed into about 38 distinct
+ * strings competing with each other, and a Spanish specifier searching for a door
+ * coordinator landed on a page named "hardware accessories".
+ *
+ * ---------------------------------------------------------------------------
+ * WHY A TABLE AND NOT A TRANSLATION AT RENDER TIME
+ *
+ * 659 products carry only 59 distinct names. The work is a 59-row table, not 659
+ * translations, and a table can be reviewed by a Spanish speaker in one sitting —
+ * which is the point: these rows are hardware terminology, where `cerradura de embutir`
+ * and `cerradura de sobreponer` are different products and a buyer ordering the wrong
+ * one finds out at the door. Terms are the standard Spanish trade names, not literal
+ * translations of the English.
+ *
+ * The client reviews terminology (see docs/collaboration/spanish-review.json, where
+ * every row carries "请确认这一条术语"). These rows go into that same review file.
+ * They ship before that review because the state they replace is not "untranslated",
+ * it is "wrong": a category name in the product-name slot is a factual error about
+ * what the page is, and a reviewed correction later is cheaper than another week of
+ * 534 pages claiming to be something they are not.
+ */
+export const PRODUCT_NAMES_ES: Record<string, string> = {
+  // Panic exit devices and their trims
+  "Panic Exit Device": "Barra antipánico",
+  "Fire Door Panic Exit Device": "Barra antipánico para puerta cortafuego",
+  "Double Door Panic Exit Device": "Barra antipánico para puerta de dos hojas",
+  "S-Panic Exit Device": "Barra antipánico serie S",
+  "D-Panic Exit Device": "Barra antipánico serie D",
+  "Alarm Panic Bar Exit Device": "Barra antipánico con alarma",
+  "Cold Room Push Bar Exit Device": "Barra antipánico para cámara frigorífica",
+  "Two Point Locking Exit Device": "Barra antipánico de cierre en dos puntos",
+  "Panic Exit Device Trim": "Guarnición exterior para barra antipánico",
+  "Anti-Pick Panic Exit Device Trim": "Guarnición exterior antiganzúa para barra antipánico",
+  "Panic Exit Device Lock Case": "Caja de cerradura para barra antipánico",
+  "Exterior Trim": "Guarnición exterior",
+
+  // Mortise lock bodies and cases
+  "Lock Case": "Cerradura de embutir",
+  "Standard Mortise Lock Body": "Cuerpo de cerradura de embutir estándar",
+  "Security Mortise Lock Body": "Cuerpo de cerradura de embutir de seguridad",
+  "Slim Mortise Lock Body": "Cuerpo de cerradura de embutir de perfil estrecho",
+  "Hook-Bolt Mortise Lock": "Cerradura de embutir de gancho",
+  "Sliding Hook Lock": "Cerradura de gancho para puerta corredera",
+
+  // Cylindrical and tubular locks
+  "Tubular Lock": "Cerradura tubular",
+  "Tubular Knob Lock": "Cerradura tubular de pomo",
+  "Black Tubular Lever Lock Set": "Juego de cerradura tubular de manilla en negro",
+  "Heavy Duty Cylindrical Lock": "Cerradura cilíndrica de servicio pesado",
+  "Light Duty Cylindrical Lock": "Cerradura cilíndrica de servicio ligero",
+  "Cylindrical Knob Lock": "Cerradura cilíndrica de pomo",
+  "Commercial Lock": "Cerradura comercial",
+
+  // Deadbolts, rim locks, cylinders
+  Deadbolts: "Cerrojo de seguridad",
+  "Keyed Deadbolt Lock Set": "Juego de cerrojo de seguridad con llave",
+  "Night Latch And Rim Lock": "Cerradura de sobreponer",
+  "Night Latch & Rim Lock": "Cerradura de sobreponer",
+  "Lock Cylinder": "Cilindro de cerradura",
+
+  // Handles and levers
+  "Lever Handle": "Manilla de palanca",
+  "Stainless Steel Handle": "Manilla de acero inoxidable",
+  "Stainless Steel Lever Handle Lock": "Cerradura con manilla de acero inoxidable",
+  "Grip Handle Set": "Juego de manillón",
+  "Concealed Sliding Door Handle": "Tirador oculto para puerta corredera",
+
+  // Glass door hardware
+  "Glass Door Handle": "Tirador para puerta de vidrio",
+  "Stainless Steel Glass Door Pull Handle": "Tirador de acero inoxidable para puerta de vidrio",
+  "Brass Pull Handle": "Tirador de latón",
+  "Glass Door Patch Fittings": "Herrajes patch para puerta de vidrio",
+  "Glass Door Patch Fitting Set": "Juego de herrajes patch para puerta de vidrio",
+
+  // Hinges and closers
+  "Brass and Steel Hinges": "Bisagras de latón y acero",
+  "Door Hinge": "Bisagra de puerta",
+  "Stainless Steel Door Hinge": "Bisagra de puerta de acero inoxidable",
+  "Wooden Door Floor Hinge": "Bisagra de piso para puerta de madera",
+  /*
+    A floor spring is the hydraulic closer buried in the floor, not the pivot it turns on.
+    "Bisagra de suelo" would name the hinge and lose the closing mechanism, which is the
+    part being bought — so it takes the closer word, consistent with Cierrapuertas above.
+  */
+  "Floor Spring": "Cierrapuertas de suelo",
+  /*
+    The glass-door family another session added on 2026-09-14. Trade names, not literal
+    translations: a "patch" is a herraje in Spanish and the position is what distinguishes
+    it, and a top pivot is named for the pivot rather than for being on top — "pivote
+    superior" is what a glazier asks for.
+  */
+  "Overhead Door Closer": "Cierrapuertas aéreo",
+  "Top Pivot": "Pivote superior",
+  "Glass Door Top Patch": "Herraje superior para puerta de vidrio",
+  "Hydraulic Hinge": "Bisagra hidráulica",
+  "Door Closer": "Cierrapuertas",
+  "Door Coordinator": "Selector de cierre",
+
+  // Accessories
+  Latch: "Picaporte",
+  "Pry Latch": "Picaporte antipalanca",
+  "Door Flush Bolt": "Pasador embutido",
+  "Stainless Steel Flush Bolt": "Pasador embutido de acero inoxidable",
+  "Door Stopper": "Tope de puerta",
+  "Door viewer": "Mirilla",
+  Indicator: "Indicador de libre y ocupado",
+  "Security Door Guard": "Cadena de seguridad",
+  "Door Power Transfer Devices": "Pasacables para puerta",
+  "Gate House No": "Número de vivienda",
+  "Stainless Steel Wall Hook": "Percha de pared de acero inoxidable",
+
+  // Bathroom
+  "Bathroom Accessories": "Accesorios de baño",
+  "Grab Bar": "Barra de apoyo",
+  "Flip-Up Grab Bar": "Barra de apoyo abatible",
+  /*
+    Added 2026-09-16, when the unmapped-name guard fired on the Kaiser import.
+    Only ONE was actually missing.
+
+    Three more went in with it — Deadbolts, Indicator, Latch — because the script that
+    looked for gaps matched `"Name":` and these are written as bare identifiers, so it
+    reported them absent when they were twenty lines up. TypeScript caught the duplicates
+    (TS1117), and the shadowing would have been the damaging kind: a later key wins in an
+    object literal, so `Indicador` would have replaced `Indicador de libre y ocupado` and
+    `Cerrojos` would have replaced `Cerrojo de seguridad`. A gap-finder that cannot see
+    half the file is worse than none.
+  */
+  "Door Knob": "Pomo de puerta",
+};

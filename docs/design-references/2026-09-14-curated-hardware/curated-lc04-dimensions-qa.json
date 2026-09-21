@@ -1,0 +1,29 @@
+{
+  "id": "curated-lc04-dimensions",
+  "sources": [
+    {
+      "model": "LC04 85*60",
+      "sha256": "6b1b197ea784702c92a11e04ad8208f714764a6eb9090038fc4f0383396da1e1",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    },
+    {
+      "model": "LC04 85*60",
+      "sha256": "65dea17439b82320cce27a51c443eac4681a32e4afd4e3293419f126f0bbef5a",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

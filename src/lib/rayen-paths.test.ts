@@ -93,3 +93,61 @@ test("zh-terms 覆盖全部规格标签", async () => {
     stdio: "pipe",
   });
 });
+
+test("M8 型号的开孔直径是甲方给的口径，不是原厂的", async () => {
+  /*
+    The client overruled UNION on this: 「玻璃门安装16mm，木门安装10mm」, said three times,
+    twice with 「螺丝是M8的」 stated as the premise. UNION publishes φ12 for the glass hole on
+    eleven of these models.
+
+    It was first applied by editing the generated product JSON by hand, and the very next
+    re-ingest undid it on 42 models — merge-artunion-specs.mjs simply wrote UNION's figure
+    back. Nothing failed; the records regenerated cleanly and the site went on showing a
+    diameter the factory does not ship. This is the assertion that would have caught it, and
+    a hole drilled 4mm too wide in a sheet of glass does not go back.
+
+    scripts/apply-client-fixing-holes.mjs is the fix; this runs its --check.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-client-fixing-holes.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});
+
+test("拉手的 Projection 是图纸上的总突出，不是随手就近的数", async () => {
+  /*
+    33 pull handles carried `Projection` and `Rose depth` as a pair, and both were wrong.
+    The drawings give the standoff as a chain at the foot of the elevation — T1263 reads
+    `22 | 30 | 52`, a 22mm bar plus 30mm of air is 52mm from the door face — so the LARGER
+    of the two is the projection. The transcription took the smaller one, and the smaller
+    one was not even the same quantity twice: on T1050 and T2930 it was the door thickness,
+    on T1224 the width of the backplate, on G1226 the foot's footprint.
+
+    A buyer sizes the gap between the handle and the frame from this number. 25mm instead of
+    65mm is a handle that fouls the architrave, and the drawing on the page would have said
+    so all along.
+
+    scripts/apply-pull-handle-projection.mjs is the fix; this runs its --check so a re-ingest
+    that forgets the step fails here rather than shipping.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-pull-handle-projection.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});
+
+test("表面变体的尺寸跟着底型号走", async () => {
+  /*
+    MUL1066 is UL1066 in another finish — the client's rule (「前面的第一个字不要，门把手
+    UL 开始」) says so and the two photographs confirm it, same rose and knurl and taper.
+    Its spec table was empty because UNION has no record of the M-prefixed number.
+
+    The rows are copied by scripts/apply-finish-variant-specs.mjs, which means a re-ingest
+    empties them again unless that step is re-run — exactly how the client's hole diameters
+    were lost once already. This runs its --check so the suite says so.
+  */
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(process.execPath, ["scripts/apply-finish-variant-specs.mjs", "--check"], {
+    stdio: "pipe",
+  });
+});

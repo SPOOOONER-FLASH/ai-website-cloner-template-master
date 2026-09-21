@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "Handing describes which edge of the door the hinges are on and which way the leaf swings. It matters because a lever has to fall the right way, a latch bolt has a bevel that must face the frame, and a lock case machined for one hand will not close on the other. It is one letter, and it is the field most often left blank on an enquiry.",
@@ -23,14 +24,14 @@
     "Where a model is handed, our specification tables state it as a row rather than burying it in the description, and the guided selector asks for it before it offers a model number — because the answer changes which models can be offered at all, not just which variant of one."
   ],
   "heroImage": {
-    "src": "/images/editorial/news-mortise-lock-inspection.webp",
-    "ratio": "3 / 2",
-    "label": "Mortise lock cases under inspection, showing the follower and latch bolt that determine handing",
-    "labelEs": "Cerraduras de embutir en inspección, con el cuadradillo y el picaporte que determinan la mano"
+    "src": "/images/editorial/framed/lc07-85-45mm-lock-case-16x9.webp",
+    "ratio": "16 / 9",
+    "label": "The LC07 85×45mm mortise lock case — the follower and latch bolt inside it are what handing actually refers to",
+    "labelEs": "La caja de cerradura de embutir LC07 85×45 mm — el cuadradillo y el picaporte que lleva dentro son a lo que se refiere la mano"
   },
   "relatedModels": [
-    "Lc07 85×45mm",
-    "Lc14 85×50mm",
+    "LC07 85×45mm",
+    "LC14 85×50mm",
     "9001",
     "587 PBET"
   ],
@@ -49,5 +50,75 @@
     "Cuando un modelo tiene mano, nuestras fichas la indican como una fila y no enterrada en la descripción, y el selector guiado la pregunta antes de ofrecer un número de modelo: porque la respuesta cambia qué modelos se pueden ofrecer, no solo qué variante de uno."
   ],
   "seoTitleEs": "Mano de la puerta: izquierda, derecha, reverse y universal | Canton Hyland",
-  "seoDescriptionEs": "La mano es una letra en el pedido y el motivo más común de que una cotización vuelva. Las convenciones europea y ANSI se contradicen: cómo indicarla sin ambigüedad."
+  "seoDescriptionEs": "La mano es una letra en el pedido y el motivo más común de que una cotización vuelva. Las convenciones europea y ANSI se contradicen: cómo indicarla sin ambigüedad.",
+  "faq": {
+    "en": [
+      {
+        "question": "If a door is hinged on the left and opens away from you, what handing does the lock need?",
+        "answer": "Stand where the key goes — outside — and the American convention answers it: hinge knuckles on your left makes it left-handed, and because the leaf swings away from you rather than towards you it is not a reverse. The same door is DIN-left under the European convention, which stands the observer on the pull side instead. That is why the safe way to write it on an order is the description you just gave rather than the letter it resolves to."
+      },
+      {
+        "question": "Is handing decided by the hinges or by the bolt?",
+        "answer": "By the hinges and the swing. Handing describes which edge of the door the hinges are on and which way the leaf opens; where the latch bolt ends up, and which way its bevel faces, follows from that. This matters because the two conventions in use disagree about the same physical door — one calls it DIN-left, the other right-hand-reverse — so a letter on its own is an answer plus an unstated assumption about which convention the reader uses."
+      },
+      {
+        "question": "What does universal or non-handed hardware mean?",
+        "answer": "That the part works either way round, so the handing field can honestly say so. A tubular latch with a symmetrical bolt, most euro-profile cylinders, hinges themselves and any lever on a sprung rose are non-handed and marked U. Reversible latches are a middle case: the bolt can be turned on site, which is a real convenience and also a real opportunity for it to be turned wrong and never checked."
+      },
+      {
+        "question": "Which hardware is genuinely handed, and what does getting it wrong cost?",
+        "answer": "Mortise cases with an asymmetric follower, rebated pairs, and anything with a deadlocking latch whose auxiliary bolt has to meet the keep. On those a wrong hand is not adjustable with a file — it is a different part number, and on a container quantity it is a different shipment."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Porta com dobradiças à esquerda que abre para longe: qual mão da fechadura?",
+        "answer": "Fique onde a chave entra — do lado de fora — e a convenção americana responde: nós das dobradiças à sua esquerda faz dela mão esquerda, e como a folha gira para longe de você e não na sua direção, não é reverse. A mesma porta é DIN-esquerda na convenção europeia, que põe o observador do lado de puxar. É por isso que a forma segura de escrever isso num pedido é a descrição que você acabou de dar, e não a letra em que ela resulta."
+      },
+      {
+        "question": "A mão é definida pelas dobradiças ou pelo trinco?",
+        "answer": "Pelas dobradiças e pelo sentido de giro. A mão descreve em que borda da folha estão as dobradiças e para que lado ela abre; onde o trinco acaba ficando, e para que lado o chanfro fica voltado, decorre disso. Isso importa porque as duas convenções em uso discordam sobre a mesma porta física — uma a chama de DIN-esquerda, a outra de right-hand-reverse — então uma letra sozinha é uma resposta mais uma suposição não declarada sobre qual convenção o leitor usa."
+      },
+      {
+        "question": "O que quer dizer ferragem universal ou sem mão?",
+        "answer": "Que a peça funciona dos dois jeitos, então o campo da mão pode dizer isso com honestidade. Um trinco tubular de lingueta simétrica, a maioria dos cilindros europeus, as próprias dobradiças e qualquer maçaneta em roseta com mola são sem mão e marcadas U. Trincos reversíveis são um caso intermediário: a lingueta pode ser girada na obra, o que é uma conveniência real e também uma oportunidade real de ser girada errado e nunca conferida."
+      },
+      {
+        "question": "Que ferragem é genuinamente com mão, e quanto custa errar?",
+        "answer": "Caixas de embutir com seguidor assimétrico, pares rebaixados, e qualquer coisa com trinco de travamento cujo ferrolho auxiliar tenha de encontrar o contra-testa. Nessas, a mão errada não se ajusta com uma lima — é outro código de peça, e numa quantidade de contêiner é outro embarque."
+      }
+    ],
+    "es": [
+      {
+        "question": "Puerta con bisagras a la izquierda que abre hacia fuera: ¿qué mano lleva la cerradura?",
+        "answer": "Póngase donde entra la llave — por fuera — y la convención americana lo resuelve: nudillos de bisagra a su izquierda la hace mano izquierda, y como la hoja gira alejándose de usted y no hacia usted, no es reverse. La misma puerta es DIN-izquierda bajo la convención europea, que sitúa al observador del lado de tirar. Por eso la forma segura de escribirlo en un pedido es la descripción que acaba de dar, no la letra en que resulta."
+      },
+      {
+        "question": "¿La mano la definen las bisagras o el pestillo?",
+        "answer": "Las bisagras y el sentido de giro. La mano describe en qué canto de la puerta están las bisagras y hacia dónde abre la hoja; dónde acaba el picaporte, y hacia dónde mira su bisel, se deriva de eso. Importa porque las dos convenciones en uso discrepan sobre la misma puerta física — una la llama DIN-izquierda y la otra right-hand-reverse — así que una letra sola es una respuesta más una suposición no declarada sobre qué convención usa quien lee."
+      },
+      {
+        "question": "¿Qué significa herraje universal o sin mano?",
+        "answer": "Que la pieza sirve en los dos sentidos, así que el campo de la mano puede decirlo con honestidad. Un picaporte tubular de pestillo simétrico, la mayoría de los cilindros europeos, las bisagras mismas y cualquier manija sobre rosetón con muelle no tienen mano y se marcan U. Los picaportes reversibles son un caso intermedio: el pestillo se puede girar en obra, lo que es una comodidad real y también una oportunidad real de girarlo mal y no volver a comprobarlo."
+      },
+      {
+        "question": "¿Qué herraje sí tiene mano, y cuánto cuesta equivocarse?",
+        "answer": "Las cerraduras de embutir con cuadradillo asimétrico, los pares rebajados, y cualquier cosa con picaporte de enclavamiento cuyo pestillo auxiliar tenga que encontrar el cerradero. En esas, la mano equivocada no se ajusta con una lima — es otro código de pieza, y en cantidad de contenedor es otro embarque."
+      }
+    ]
+  },
+  "titlePt": "Mão da porta: a resposta de uma letra que trava pedidos",
+  "summaryPt": "Esquerda, direita ou universal é um único caractere numa linha de pedido e a causa mais comum de uma cotação voltar para esclarecimento. Quem decide é onde estão as dobradiças e para que lado a porta abre — e as duas convenções em uso discordam entre si.",
+  "bodyPt": [
+    "A mão da porta descreve em que borda da folha estão as dobradiças e para que lado a folha gira. Importa porque a maçaneta tem de cair para o lado certo, o trinco tem um chanfro que precisa ficar voltado para o batente, e uma caixa de fechadura usinada para uma mão não fecha na outra. É uma letra, e é o campo mais frequentemente deixado em branco numa consulta.",
+    "Existem duas convenções e elas não concordam. O método europeu põe o observador do lado para o qual a porta abre — o lado de puxar — e chama de mão esquerda quando as dobradiças estão à esquerda. O método americano (ANSI/BHMA A156.115) põe o observador do lado de FORA, do lado de onde se usaria a chave, e acrescenta \"reverse\" para portas que abrem para longe. A mesma porta física é DIN-esquerda numa convenção e right-hand-reverse na outra.",
+    "É por isso que \"mão esquerda\", escrito sozinho, não é uma resposta. É uma resposta mais uma suposição sobre qual convenção o leitor usa, e o leitor está do outro lado do mundo. A forma inequívoca de dizer isso é descrever a porta: dobradiças à esquerda quando se olha do corredor, abre para longe de você. Vinte palavras que não podem ser mal lidas valem mais que uma letra que pode.",
+    "Um teste útil que não precisa de convenção nenhuma: fique onde a chave entra. Se os nós das dobradiças estiverem à sua esquerda, é mão esquerda no sentido americano; se a porta girar na sua direção a partir dali, é \"reverse\". Diga de que lado você estava e a frase sobrevive à tradução.",
+    "Algumas ferragens não se importam. Um trinco tubular de lingueta simétrica, a maioria dos cilindros europeus, as próprias dobradiças e qualquer maçaneta em roseta com mola são sem mão — universais, marcadas U — e o campo pode dizer isso com honestidade. Trincos reversíveis são um caso intermediário: a lingueta pode ser girada na obra, o que é uma conveniência real e também uma oportunidade real de ser girada errado e nunca conferida.",
+    "O que é genuinamente com mão, e onde o custo cai: caixas de embutir com seguidor assimétrico, pares rebaixados, e qualquer coisa com trinco de travamento cujo ferrolho auxiliar tenha de encontrar o contra-testa. Nessas, a mão errada não se ajusta com uma lima — é outro código de peça, e numa quantidade de contêiner é outro embarque.",
+    "A regra prática para uma planilha de ferragens: dê a cada vão uma mão ou a palavra universal, e nunca deixe a coluna vazia. Uma coluna vazia é lida como \"ainda não decidido\" por quem preenche o pedido e como \"universal\" por quem está com pressa, e só uma dessas leituras é segura.",
+    "Onde um modelo tem mão, as nossas tabelas de especificação declaram isso como uma linha em vez de enterrar na descrição, e o seletor guiado pergunta antes de oferecer um código de modelo — porque a resposta muda quais modelos podem ser oferecidos, e não só qual variante de um deles."
+  ],
+  "seoTitlePt": "Mão da porta: esquerda, direita, reverse e universal",
+  "seoDescriptionPt": "A mão é uma letra num pedido e a razão mais comum de uma cotação voltar. As convenções europeia e ANSI discordam — veja como declará-la sem ambiguidade."
 }

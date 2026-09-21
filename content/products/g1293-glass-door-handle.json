@@ -54,7 +54,9 @@
   "finishes": [
     "Satin stainless with timber"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Glass Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/g1293-glass-door-handle.webp",
@@ -63,14 +65,14 @@
   },
   "gallery": [
     {
-      "src": "/images/products/g1293-glass-door-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "G1293 Glass Door Handle, view 2"
-    },
-    {
       "src": "/images/products/g1293-glass-door-handle-3.webp",
       "ratio": "1 / 1",
       "label": "G1293 Glass Door Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/g1293-glass-door-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "G1293 Glass Door Handle, view 2"
     },
     {
       "src": "/images/products/g1293-glass-door-handle-4.webp",
@@ -98,7 +100,50 @@
     "artunion": {
       "id": "G1293-77-770",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "425 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "457 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "32 mm"
+    },
+    {
+      "label": "Largura da placa",
+      "value": "33 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "30 × 67 mm"
+    },
+    {
+      "label": "Distância entre fixações",
+      "value": "16 mm de cada extremidade"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ12 mm"
+    },
+    {
+      "label": "Furo de fixação (porta lisa)",
+      "value": "φ8 mm"
+    }
+  ],
+  "seoTitlePt": "G1293 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro G1293 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

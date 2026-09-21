@@ -46,7 +46,10 @@
   "finishes": [
     "Satin stainless"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/ul1042-lever-handle.webp",
@@ -80,7 +83,42 @@
     "artunion": {
       "id": "UL1042-001",
       "basis": "sole",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Manilla de palanca",
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimento da maçaneta",
+      "value": "145 mm"
+    },
+    {
+      "label": "Secção da maçaneta",
+      "value": "25.6 mm"
+    },
+    {
+      "label": "Queda da maçaneta",
+      "value": "74.7 mm"
+    },
+    {
+      "label": "Diâmetro da roseta",
+      "value": "Ø50 mm"
+    },
+    {
+      "label": "Quadrado",
+      "value": "P=34 mm"
+    },
+    {
+      "label": "Espessura da maçaneta",
+      "value": "9.5 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "0.54 kg"
+    }
+  ],
+  "seoTitlePt": "UL1042 Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca UL1042 da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

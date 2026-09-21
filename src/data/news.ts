@@ -1,4 +1,5 @@
 import type { NewsArticle, NewsKind } from "./types";
+import type { Locale } from "@/data/site";
 
 /**
  * The newsroom.
@@ -78,18 +79,40 @@ export const NEWS_KIND_LABEL_ES: Record<NewsKind, string> = {
 };
 
 /**
+ * The same two kinds in Brazilian Portuguese.
+ *
+ * "Nota técnica" carries over from Spanish because the trade uses the same phrase; the
+ * press-release label does not — Brazilian practice is "comunicado à imprensa" rather
+ * than a calque of the English.
+ */
+export const NEWS_KIND_LABEL_PT: Record<NewsKind, string> = {
+  "press-release": "Comunicado à imprensa",
+  insight: "Nota técnica",
+};
+
+/** The label table for a locale, so callers stop writing the ternary themselves. */
+export function newsKindLabels(locale: Locale): Record<NewsKind, string> {
+  if (locale === "es") return NEWS_KIND_LABEL_ES;
+  if (locale === "pt") return NEWS_KIND_LABEL_PT;
+  return NEWS_KIND_LABEL;
+}
+
+/**
  * "15 March 2026" — spelled-out month, because 03/04/2026 reads as two different dates
  * either side of the Atlantic and this site sells into both.
  */
-export function formatNewsDate(iso: string, locale: "en" | "es" = "en"): string {
+export function formatNewsDate(iso: string, locale: Locale = "en"): string {
   const [year, month, day] = iso.split("-").map(Number);
   /*
     es-ES rather than any Latin American locale: they agree on this format ("15 de marzo
-    de 2026") and es-ES is the one guaranteed to be present in every runtime. The point of
-    spelling the month out is the same in both languages — 03/04/2026 is two different
-    dates depending on who reads it, and this catalogue sells into both conventions.
+    de 2026") and es-ES is the one guaranteed to be present in every runtime. Portuguese
+    takes pt-BR, which is the market this tree was built for and which differs from pt-PT
+    in more than dates. The point of spelling the month out is the same in all three —
+    03/04/2026 is two different dates depending on who reads it, and this catalogue sells
+    into both conventions.
   */
-  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(locale === "es" ? "es-ES" : "en-GB", {
+  const tag = locale === "es" ? "es-ES" : locale === "pt" ? "pt-BR" : "en-GB";
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(tag, {
     day: "numeric",
     month: "long",
     year: "numeric",

@@ -10,12 +10,14 @@ import { alibabaLinkFor } from "@/lib/alibaba";
 import { Button } from "./Button";
 import { ProductCard } from "./ProductCard";
 import { CatalogueReturnLink } from "./CatalogueNavigation";
-import { ProductDrawing } from "./ProductDrawing";
+import { ProductDrawing, DoorPreparation } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
+import { productModelFor } from "@/data/product-models";
+import { ProductModel } from "./ProductModel";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -134,6 +136,55 @@ const COPY = {
     storefrontHelp:
       "Abre nuestra tienda con este modelo ya buscado; Alibaba gestiona el pago, el seguimiento y Trade Assurance.",
   },
+  pt: {
+    model: "Modelo",
+    specifications: "Ficha técnica",
+    configuration: "Configuração",
+    certifications: "Normas e certificações",
+    downloads: "Downloads",
+    nextSteps: "Passos seguintes",
+    compareRange: "Comparar todos os modelos desta gama",
+    compareHelp:
+      "Uma tabela, uma linha por modelo, com as especificações que os distinguem.",
+    faqLink: "Encomendas, prazos e amostras",
+    faqHelp:
+      "Quantidade mínima, prazo de produção, política de amostras, condições de pagamento e trabalho OEM — respondido em detalhe.",
+    material: "Material",
+    finishes: "Acabamentos disponíveis",
+    doorTypes: "Tipos de porta compatíveis",
+    onRequest: "Informação disponível mediante pedido",
+    referenceOnRequest: "Referência disponível mediante pedido",
+    quote: "Pedir orçamento",
+    downloadCatalogue: "Baixar o catálogo de exportação (PDF)",
+    images: "Imagens do produto",
+    watch: "Veja funcionar",
+    breadcrumb: "Trilho de navegação",
+    orEmail: "Ou escreva-nos sobre este modelo:",
+    home: "Início",
+    products: "Produtos",
+    backToResults: "← Voltar aos resultados anteriores",
+    ask: "Falar com um engenheiro",
+    viewCertificate: "Ver certificado",
+    noViews:
+      "Ainda não há mais vistas deste produto. Peça desenhos ou amostras à equipe de exportação.",
+    noSpecs:
+      "As dimensões verificadas dependem do catálogo técnico atual. Nenhum valor foi inferido a partir de produtos semelhantes.",
+    noCertificates:
+      "Não há certificado próprio deste modelo. As credenciais da empresa seguem disponíveis através da equipe de exportação.",
+    noDownloads:
+      "Fichas técnicas, arquivos CAD e instruções de instalação disponíveis mediante pedido enquanto a biblioteca de downloads é preparada.",
+    scope:
+      "Antes de especificar, verifique que o âmbito do certificado inclui o modelo indicado.",
+    related: "Produtos relacionados",
+    moreInSeries: "Mais modelos da série {series}",
+    moreInCategory: "Mais modelos em {category}",
+    orderListing: "Comprar {model} no Alibaba",
+    findStorefront: "Procurar {model} na nossa loja Alibaba",
+    listingHelp:
+      "Abre a ficha deste modelo com o preço, a quantidade mínima e o prazo actuais.",
+    storefrontHelp:
+      "Abre a nossa loja com este modelo já procurado; o Alibaba trata do pagamento, do seguimento e do Trade Assurance.",
+  },
 } as const;
 
 function EmptyState({ children }: { children: React.ReactNode }) {
@@ -172,17 +223,37 @@ function ProductFact({
 export function ProductDetail({ product, categoryName, locale = "en" }: ProductDetailProps) {
   const t = COPY[locale];
   const es = locale === "es";
-  const name = (es && product.nameEs) || product.name;
-  const summary = (es && product.summaryEs) || product.summary;
-  const specs = (es && product.specsEs?.length ? product.specsEs : product.specs) ?? [];
-  const base = es ? "/es" : "";
+  const referenceModel = productModelFor(product.slug);
+  /*
+    The product's OWN words. `(es && …)` answered only for Spanish, so the Portuguese page
+    carried an English name and an English lead paragraph beside a Portuguese spec table —
+    on 24 pages for the summary alone. English is the fallback, never Spanish.
+  */
+  const name =
+    (es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name;
+  const summary =
+    (es ? product.summaryEs : locale === "pt" ? product.summaryPt : undefined) ??
+    product.summary;
+  /*
+    Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
+    on every Portuguese page while the title beside it was Portuguese — the page looked
+    translated and the specification was not, which is the one thing on a product page that
+    has to be right. Picking by locale, with English as the fallback, fixes it for every
+    locale added after this one too.
+  */
+  const localeSpecs = locale === "es" ? product.specsEs : locale === "pt" ? product.specsPt : undefined;
+  const specs = (localeSpecs?.length ? localeSpecs : product.specs) ?? [];
+  const base = locale === "en" ? "" : `/${locale}`;
   const heroImage = {
     ...product.heroImage,
-    label: es ? product.heroImage.labelEs ?? product.heroImage.label : product.heroImage.label,
+    label:
+      (es ? product.heroImage.labelEs : locale === "pt" ? product.heroImage.labelPt : undefined) ??
+      product.heroImage.label,
   };
   const gallery = product.gallery.map((image) => ({
     ...image,
-    label: es ? image.labelEs ?? image.label : image.label,
+    label:
+      (es ? image.labelEs : locale === "pt" ? image.labelPt : undefined) ?? image.label,
   }));
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   const finishes = localiseProductValues(product.finishes, locale);
@@ -205,6 +276,18 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
   const specLabels = new Set(specs.map((s) => s.label.trim().toLowerCase()));
   const covers = (...patterns: RegExp[]) =>
     [...specLabels].some((label) => patterns.some((p) => p.test(label)));
+
+  /*
+    The bullets this locale can show. Each locale sees its OWN list or no list — never
+    another language's, and never a half-translated one. All three are filled in as of
+    2026-09-17 (216/216 records each).
+  */
+  const featureList =
+    locale === "en"
+      ? product.features
+      : locale === "pt"
+        ? product.featuresPt
+        : product.featuresEs;
 
   const faqItems = productFaqItems(product, locale);
 
@@ -380,13 +463,27 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     scripts/apply-stahlock-feature-lists.mjs. 194 products gain it; lever
                     handles and knob locks previously had no feature text at all.
 
-                    English only. Rendering these on the Spanish page would put English
-                    prose under a Spanish heading, which is the drift the FAQ markup is
-                    guarded against. Spanish gets them when the translator returns them.
+                    Each locale sees its OWN list or no list.
+
+                    `!es` was the guard until 2026-09-17, and a guard written for two
+                    locales answers wrongly for a third: Portuguese took the English
+                    branch, so a Portuguese page carried English prose under Portuguese
+                    headings — exactly the drift this comment says it is avoiding.
+
+                    Both now have their own list, written by
+                    scripts/translate-product-features-pt.mjs and its Spanish sibling only
+                    where EVERY line of a record resolves, so a list is never half
+                    translated.
+
+                    Spanish was 0 of 216 until 2026-09-17 — not falling back to English,
+                    simply absent, because this block hid itself on every non-English page.
+                    Nobody could see the gap until Portuguese was filled in beside it and
+                    the count went 216 against 0. A fallback nobody can count is a fallback
+                    that becomes permanent.
                   */}
-                  {!es && product.features?.length ? (
+                  {featureList?.length ? (
                     <ul className="mt-24 border-t border-line pt-16">
-                      {product.features.map((feature) => (
+                      {featureList.map((feature) => (
                         <li
                           key={feature}
                           className="grid grid-cols-[1.2rem_1fr] gap-x-8 border-b border-line py-12 text-c1 text-ink"
@@ -598,6 +695,15 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                   */}
                   <ProductDrawing slug={product.slug} locale={locale} />
 
+                  {/*
+                    A sibling, not a child: the two drawing populations do not overlap at
+                    all today. A pull handle publishes fixing centres and gets a
+                    preparation drawing; a lock case publishes case geometry and gets an
+                    outline. See the note in ProductDrawing.tsx.
+                  */}
+                  <DoorPreparation slug={product.slug} locale={locale} />
+                  {referenceModel ? <div className="mt-48"><ProductModel model={referenceModel} locale={locale} /></div> : null}
+
                   {faqItems.length ? (
                     <div className="mt-48 border-t border-line pt-24">
                       <h2 id="product-faq-heading" className="text-h3 text-ink">
@@ -746,7 +852,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                 </li>
               ) : null}
               <li className="border-b border-line py-16">
-                <ArrowLink href={es ? "/es/faq/" : "/faq/"}>{t.faqLink}</ArrowLink>
+                <ArrowLink href={`${base}/faq/`}>{t.faqLink}</ArrowLink>
                 <p className="mt-8 max-w-[56ch] text-c2 text-ink-secondary">{t.faqHelp}</p>
               </li>
             </ul>

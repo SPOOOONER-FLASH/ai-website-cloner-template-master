@@ -1,4 +1,5 @@
 import type { FinderProduct } from "./product-finder";
+import type { Locale } from "@/data/site";
 
 /**
  * The narrowing model behind the guided configurator.
@@ -102,6 +103,37 @@ export const STEPS_ES: readonly ConfiguratorStep[] = [
     question: "¿Qué acabado?",
     label: "Acabado",
     hint: "Consúltenos cualquier acabado que no aparezca — casi todos se fabrican bajo pedido.",
+  },
+] as const;
+
+/**
+ * The same five questions in Brazilian Portuguese.
+ *
+ * Added 2026-09-17. Until then `ConfiguratorIntro` counted STEPS_ES for Spanish and STEPS
+ * for everything else, so the Portuguese configurator asked its questions in English —
+ * on the page the client opened when he reported that picking Portuguese and clicking the
+ * configurator put him back in English.
+ */
+export const STEPS_PT: readonly ConfiguratorStep[] = [
+  {
+    key: "category",
+    question: "O que você está especificando?",
+    label: "Categoria",
+    hint: "O tipo de ferragem, não o modelo.",
+  },
+  { key: "subCategory", question: "De que tipo?", label: "Tipo" },
+  {
+    key: "material",
+    question: "De que material?",
+    label: "Material",
+    hint: "O aço inoxidável resiste à corrosão; o zamak e o ferro custam menos em volume.",
+  },
+  { key: "doorType", question: "Em que porta vai instalar?", label: "Tipo de porta" },
+  {
+    key: "finish",
+    question: "Qual acabamento?",
+    label: "Acabamento",
+    hint: "Pergunte por qualquer acabamento que não esteja na lista — quase todos são feitos sob encomenda.",
   },
 ] as const;
 
@@ -398,6 +430,18 @@ export const OPTION_NOTES: Record<string, string> = {
   "door-viewers": "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.",
   "door-flush-bolts":
     "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.",
+  "floor-springs-and-pivots":
+    "Pivot hardware: the door hangs on a spindle top and bottom rather than on hinges, and the floor spring both carries it and closes it.",
+  "floor-springs":
+    "Concealed in the floor, carrying the door's whole weight and closing it — the door swings on the spindle, not on hinges.",
+  "top-pivots": "The upper half of a pivot set: it locates the door, the floor spring carries it.",
+  "pivot-top-patches":
+    "Clamps the top of a frameless glass leaf onto the pivot. Chosen to match the floor spring below it.",
+  "overhead-door-closers":
+    "Mounted at the head rather than in the floor, for doors where the floor cannot be cut.",
+  "hydraulic-hinges": "Closer and hinge in one casting — no floor work, no overhead arm.",
+  "brass-pull-handles":
+    "Cast and turned brass pulls in a gold finish — the same fixings as the steel range, a different metal.",
   "glass-door-handles": "Pulls fixed through drilled toughened glass, with no frame to fix to.",
   "glass-door-patch-fittings":
     "Corner castings that clamp toughened glass and carry the pivot, lock or rail.",
@@ -458,6 +502,18 @@ export const OPTION_NOTES_ES: Record<string, string> = {
   "door-viewers": "Una lente gran angular a través de la hoja, para ver quién llama sin abrir.",
   "door-flush-bolts":
     "Mantiene cerrada la hoja pasiva de una puerta de dos hojas, embutido a haces para que nada sobresalga del canto.",
+  "brass-pull-handles":
+    "Tiradores de latón fundido y torneado, acabado dorado; la misma fijación que la gama de acero, otro metal.",
+  "floor-springs-and-pivots":
+    "Herrajes pivotantes: la hoja gira sobre un eje arriba y abajo en lugar de bisagras, y el pivote de piso la sostiene y la cierra.",
+  "floor-springs":
+    "Oculto en el piso: sostiene todo el peso de la hoja y la cierra; la puerta gira sobre el eje, no sobre bisagras.",
+  "top-pivots": "La mitad superior del conjunto pivotante: guía la hoja, el pivote de piso la sostiene.",
+  "pivot-top-patches":
+    "Sujeta el canto superior del vidrio templado al eje. Se elige a juego con el pivote de piso.",
+  "overhead-door-closers":
+    "Montado en el dintel y no en el piso, para puertas donde no se puede romper el suelo.",
+  "hydraulic-hinges": "Cierrapuertas y bisagra en una sola pieza: sin obra en el piso ni brazo a la vista.",
   "glass-door-handles": "Tiradores pasantes sobre vidrio templado taladrado, sin marco donde fijar.",
   "glass-door-patch-fittings":
     "Herrajes de esquina que aprietan el vidrio templado y alojan el pivote, la cerradura o el travesaño.",
@@ -483,8 +539,117 @@ export const OPTION_NOTES_ES: Record<string, string> = {
     "Barra de apoyo fija a la pared, recta o en L, dimensionada según el alcance entre el inodoro y el muro.",
 };
 
-export function noteFor(value: string, locale: "en" | "es" = "en"): string | undefined {
-  return locale === "es" ? OPTION_NOTES_ES[value] : OPTION_NOTES[value];
+
+/**
+ * The category notes in Brazilian Portuguese.
+ *
+ * Translated from the ENGLISH table and not from the Spanish one. A Portuguese note
+ * translated from Spanish inherits whatever the Spanish translator decided, including
+ * the decisions that were wrong — the rule in src/lib/localised.ts, applied to a
+ * generator rather than to a render.
+ *
+ * A key the English table has and this does not falls back to English at the call site,
+ * which is visible and countable rather than silently Spanish.
+ */
+export const OPTION_NOTES_PT: Record<string, string> = {
+  deadbolts:
+    "Uma trava lançada por chave ou botão de giro, sem mola atrás dela, de modo que não pode ser empurrada de volta. Vai acima de uma lingueta, e não no lugar dela.",
+  "floor-springs":
+    "Embutida no piso, sustenta todo o peso da porta e a fecha — a folha gira no eixo, não em dobradiças.",
+  "top-pivots":
+    "A metade de cima de um conjunto de pivô: ela posiciona a porta, e a mola de piso sustenta o peso.",
+  "pivot-top-patches":
+    "Prende o topo de uma folha de vidro temperado sem caixilho ao pivô. Escolhida para combinar com a mola de piso embaixo.",
+  "overhead-door-closers":
+    "Montadas na verga, e não no piso, para portas em que o piso não pode ser cortado.",
+  "hydraulic-hinges":
+    "Mola e dobradiça na mesma peça fundida — sem obra no piso e sem braço aparente.",
+  "brass-pull-handles":
+    "Puxadores de latão fundido e torneado em acabamento dourado — as mesmas fixações da linha de aço, outro metal.",
+  "panic-exit-devices":
+    "Barras horizontais que abrem uma porta de saída sob a pressão de quem sai. Exigidas em rotas de fuga de uso público.",
+  "fire-door":
+    "Versão para porta corta-fogo: o conjunto foi ensaiado como parte de uma porta com resistência ao fogo.",
+  "alarmed":
+    "Dispara um alarme local quando a barra é acionada — para uma saída que existe por segurança mas não é uma passagem diária.",
+  "multi-point":
+    "Lança ferrolhos na travessa e no piso além do trinco central, para portas duplas sem montante.",
+  "exterior-trim":
+    "A maçaneta externa que trabalha através da barra. Linha de pedido separada, com a sua própria mão e acabamento.",
+  "special-applications":
+    "Dispositivos para vãos que os modelos padrão não cobrem.",
+  "lock-cases":
+    "A caixa embutida na borda da porta. A distância ao eixo e a distância entre centros têm de bater com a porta e com o espelho.",
+  "lever-handles":
+    "Maçanetas de alavanca sobre roseta ou espelho. A altura da alavanca e a projeção decidem se a mão cabe atrás dela.",
+  "knob-locks":
+    "Fechaduras de pomo ou de alavanca que se instalam em dois furos broqueados em vez de num alojamento embutido.",
+  "stainless-steel-handles":
+    "Puxadores em inox para porta de vidro ou porta pesada. A distância entre furos é a medida que importa.",
+  "glass-door-accessories":
+    "Ferragens de aperto, fechaduras e contra-testas para vidro temperado. Todo recorte tem de estar no desenho antes da têmpera.",
+  "door-closers":
+    "Molas aéreas e de piso. A potência é escolhida pelo peso e pela largura da folha, não pelo modelo.",
+  "door-hinges":
+    "Dobradiças comuns, de rolamento e ocultas.",
+  "brass-steel-hinges":
+    "Dobradiças de latão e aço, nas medidas que o mercado instala.",
+  "night-latches-rim-locks":
+    "Fechaduras montadas na face da porta, com um único furo de preparação. A escolha para uma porta que já existe.",
+  "lock-cylinders":
+    "Cilindros de perfil europeu. O número do modelo é o comprimento total, e o comprimento total não é a divisão.",
+  "bathroom-accessories":
+    "Acessórios de banheiro: cabides, papeleiras, barras e indicadores.",
+  "grip-handle-sets":
+    "Conjuntos de puxador com espelho para portas de entrada.",
+  "hardware-accessories":
+    "Batedores, ferrolhos embutidos, olhos mágicos, indicadores e o resto da ferragem miúda.",
+  "sliding-hook-locks":
+    "Fechaduras de gancho para portas de correr, onde um trinco reto não tem em que morder.",
+  "care-grab-bars":
+    "Barras de apoio para banheiros acessíveis — o ponto de apoio para levantar, sentar ou fazer a transferência.",
+  "flip-up-grab-bars":
+    "Barra de apoio ao lado do vaso que se dobra contra a parede. Abaixada, apoia a transferência; levantada, libera o espaço de que uma cadeira de rodas precisa.",
+  "fixed-grab-bars":
+    "Barra de apoio fixa na parede, reta ou em L, dimensionada pelo alcance entre o vaso e a parede.",
+  "house-numbers":
+    "Números e letras para a fachada do edifício.",
+  "power-transfer-devices":
+    "Leva corrente do marco para a folha, para que uma fechadura elétrica continue funcionando enquanto a porta gira.",
+  "door-flush-bolts":
+    "Ferrolhos embutidos na borda da folha passiva, para que a folha ativa tenha algo firme contra o que travar.",
+  "door-stoppers":
+    "Batedores de piso e de parede. Escolha pela projeção da maçaneta, não pela porta.",
+  "door-viewers":
+    "Olhos mágicos, com o ângulo de visão e a faixa de espessura de porta.",
+  "indicators":
+    "Indicadores de livre e ocupado para box de banheiro, com destravamento de emergência pelo lado de fora.",
+  "latches":
+    "Trincos e linguetas fornecidos separadamente da caixa.",
+  "security-door-guards":
+    "Correntes e travas de segurança para abrir a porta parcialmente.",
+  "commercial-locks":
+    "Fechaduras cilíndricas de serviço pesado para tráfego comercial.",
+  "heavy-duty-cylindrical-locks":
+    "Fechaduras cilíndricas de serviço pesado, para vãos de uso intenso.",
+  "light-duty-cylindrical-locks":
+    "Fechaduras cilíndricas de serviço leve, para portas internas.",
+  "tubular-locks":
+    "Fechaduras tubulares, a construção mais comum numa porta broqueada.",
+  "wafer-locks":
+    "Fechaduras de palhetas, para móveis e portas leves.",
+  "glass-door-handles":
+    "Puxadores para porta de vidro. A distância entre furos está no vidro e o vidro já está pronto.",
+  "glass-door-patch-fittings":
+    "Ferragens de aperto que prendem a folha de vidro e transferem a carga para a mola de piso.",
+  "floor-springs-and-pivots":
+    "Molas de piso e pivôs embutidos na laje, que levam o peso da folha para a estrutura.",
+};
+
+export function noteFor(value: string, locale: Locale = "en"): string | undefined {
+  if (locale === "es") return OPTION_NOTES_ES[value];
+  if (locale === "pt") return OPTION_NOTES_PT[value] ?? OPTION_NOTES[value];
+  return OPTION_NOTES[value];
 }
 
 /**

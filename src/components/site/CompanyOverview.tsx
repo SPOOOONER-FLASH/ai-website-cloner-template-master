@@ -1,3 +1,4 @@
+import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 import { CapabilityChain } from "./CapabilityChain";
 import { representatives } from "@/data/representatives";
@@ -8,14 +9,13 @@ import {
   companyEditorialStudies,
   profile,
   profileEs,
+  profilePt,
   stats,
   statsEs,
+  statsPt,
 } from "@/data/company";
 import { siteSettings } from "@/data/navigation";
 import { EmailLink } from "./EmailLink";
-
-type Locale = "en" | "es";
-
 const copy = {
   en: {
     eyebrow: "Canton Hyland",
@@ -61,15 +61,49 @@ const copy = {
     contact: "Contactar con exportación",
     writeDirect: "O escríbanos directamente:",
   },
+  pt: {
+    eyebrow: "Canton Hyland",
+    title: "Fabricação de ferragens desde 1998",
+    intro: "Segurança para portas, ferragens arquitetónicas e produção OEM para obras internacionais.",
+    facts: "A empresa em números",
+    where: "Onde estamos",
+    context: "Materiais + contexto técnico",
+    contextBody:
+      "A nossa fábrica em Zhongshan, Guangdong: a secção de prensas, a linha de polimento e a nave de montagem. São fotografias da unidade, não estudos editoriais.",
+    contextImageNote: "Fotografia da fábrica",
+    gallery: "A fábrica",
+    quality: "Qualidade e ensaios",
+    qualityBody:
+      "Cada documento é apresentado com o âmbito exacto indicado no relatório. Um ensaio de um modelo não é apresentado como aprovação de outro; confirme a cobertura do modelo antes de o especificar.",
+    scope: "Âmbito",
+    issuer: "Emissor",
+    reference: "Referência",
+    issued: "Emissão",
+    cta: "Falemos da sua obra ou de uma visita à fábrica",
+    contact: "Falar com a equipe de exportação",
+    writeDirect: "Ou escreva para nós diretamente:",
+  },
 } as const;
 
 export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
   const text = copy[locale];
-  const paragraphs = locale === "es" ? profileEs : profile;
-  const companyStats = locale === "es" ? statsEs : stats;
-  const contactHref = locale === "es" ? "/es/contact" : "/contact";
-  const localiseImageLabel = (label: string, labelEs?: string) =>
-    locale === "es" ? labelEs ?? label : label;
+  /*
+    Three two-way switches, generalised on 2026-09-16 when /pt/company shipped.
+
+    Each was `locale === "es" ? … : …`, so a Portuguese page took the ENGLISH branch of
+    every one — profile text, the figures, the contact link and every image caption. The
+    page rendered perfectly and was in the wrong language, which is the failure mode a
+    boolean has when a third option arrives.
+
+    The image caption keeps English as its fallback rather than Spanish, for the reason in
+    src/lib/localised.ts: an English caption reads as unfinished, a Spanish one reads as
+    finished and wrong.
+  */
+  const paragraphs = locale === "es" ? profileEs : locale === "pt" ? profilePt : profile;
+  const companyStats = locale === "es" ? statsEs : locale === "pt" ? statsPt : stats;
+  const contactHref = locale === "en" ? "/contact" : `/${locale}/contact`;
+  const localiseImageLabel = (label: string, labelEs?: string, labelPt?: string) =>
+    locale === "es" ? (labelEs ?? label) : locale === "pt" ? (labelPt ?? label) : label;
 
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
@@ -88,6 +122,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               label={localiseImageLabel(
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
+                companyEditorialStudies[0].labelPt,
               )}
               sizes="96vw"
             />
@@ -137,7 +172,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <div className="mt-48 grid grid-cols-1 gap-x gap-y-32 sm:grid-cols-2 lg:grid-cols-3">
             <div className="border-t border-line pt-16">
               <p className="text-c2 text-ink-secondary">
-                {locale === "es" ? "Fábrica" : "Factory"}
+                {locale === "es" ? "Fábrica" : locale === "pt" ? "Fábrica" : "Factory"}
               </p>
               <address className="mt-8 not-italic text-c2 text-ink-secondary">
                 {siteSettings.contact.factoryAddress ?? siteSettings.contact.address}
@@ -149,7 +184,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
 
             <div className="border-t border-line pt-16">
               <p className="text-c2 text-ink-secondary">
-                {locale === "es" ? "Oficina" : "Office"}
+                {locale === "es" ? "Oficina" : locale === "pt" ? "Escritório" : "Office"}
               </p>
               <address className="mt-8 not-italic text-c2 text-ink-secondary">
                 {siteSettings.contact.address}
@@ -161,7 +196,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             {representatives.map((rep) => (
               <div key={`${rep.region}-${rep.city}`} className="border-t border-line pt-16">
                 <p className="text-c2 text-ink-secondary">
-                  {locale === "es" ? rep.regionEs : rep.region}
+                  {(locale === "es" ? rep.regionEs : locale === "pt" ? rep.regionPt : undefined) ?? rep.region}
                 </p>
                 <p className="mt-8 text-c1 text-ink">{rep.city}</p>
                 <address className="mt-4 not-italic text-c2 text-ink-secondary">
@@ -181,7 +216,9 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
           <p className="mt-24 max-w-[62ch] text-c2 text-ink-secondary">
             {locale === "es"
               ? "Fabricamos en Zhongshan. Fuera de China trabajamos con representantes: son puntos de contacto, no filiales."
-              : "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries."}
+              : locale === "pt"
+                ? "A fabricação fica em Zhongshan. Fora da China trabalhamos com representantes: são pontos de contato, e não filiais."
+                : "Manufacturing is in Zhongshan. Outside China we work through representatives — these are contact points, not subsidiaries."}
           </p>
         </section>
 
@@ -196,6 +233,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               label={localiseImageLabel(
                 companyEditorialStudies[0].label,
                 companyEditorialStudies[0].labelEs,
+                companyEditorialStudies[0].labelPt,
               )}
               sizes="(min-width: 1440px) 860px, 62vw"
             />
@@ -209,7 +247,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
               <MediaPlaceholder
                 key={image.src}
                 {...image}
-                label={localiseImageLabel(image.label, image.labelEs)}
+                label={localiseImageLabel(image.label, image.labelEs, image.labelPt)}
                 sizes="(min-width: 1440px) 680px, (min-width: 744px) 48vw, 96vw"
               />
             ))}

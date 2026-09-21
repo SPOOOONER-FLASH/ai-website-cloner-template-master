@@ -92,6 +92,109 @@ const EDITS = [
     */
     regions: [{ x: 416, y: 361, w: 122, h: 28, text: "安装底座", size: 14 }],
   },
+  /*
+    T2412's two drawings (L800 and L1200), batch 5.
+
+    「断面形状」 sits directly above its own English twin "section". The characters happen to be
+    legible to a Chinese reader as they stand, which is why this is a rewrite to 「截面形状」
+    rather than a deletion: 截面 is the term a Chinese fabricator actually uses, and leaving
+    the Japanese catalogue's wording on a drawing is the same tell as leaving a supplier's
+    mark on a photograph. Boxes measured off the 544×532 canvas, not guessed.
+  */
+  {
+    file: "t2412-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 153, y: 261, w: 55, h: 17, text: "截面形状", size: 12 }],
+  },
+  {
+    file: "t2412-stainless-steel-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 175, y: 267, w: 48, h: 17, text: "截面形状", size: 11 }],
+  },
+  /*
+    G1255's two drawings (L600 and L1300), batch 8, 2026-09-17.
+
+    Same 「断面形状」 label over the same English "section", so the same rewrite. The two boxes
+    are different sizes because the L1300 drawing is scaled down to fit the longer handle on
+    one sheet — measured separately off each 544×532 canvas rather than copying the first,
+    which would have painted a 17px-tall patch over an 11px-tall label and left a white bar.
+  */
+  /*
+    Batch 10, 2026-09-17.
+
+    T561 carries the same 「断面形状」 over its own English "section" as T2412 and G1255, so the
+    same rewrite to 「截面形状」.
+
+    T5612 is the first drawing with 「ベースプレート」. Katakana is not legible to a Chinese
+    reader at all — unlike 断面形状, which a Chinese fabricator can read — so this one has to be
+    replaced rather than left: 底板 is the term, and the drawing's own "Base plate" stays right
+    under it for the English side. Two labels, one per base-plate option, measured separately.
+    Boxes measured off the 544×532 canvas, not guessed.
+  */
+  {
+    file: "t561-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 155, y: 294, w: 54, h: 15, text: "截面形状", size: 12 }],
+  },
+  {
+    file: "t5612-stainless-steel-handle-2.webp",
+    canvas: [544, 532],
+    regions: [
+      { x: 72, y: 122, w: 104, h: 17, text: "底板", size: 12 },
+      { x: 216, y: 122, w: 106, h: 17, text: "底板", size: 12 },
+    ],
+  },
+  {
+    file: "g1255-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 262, y: 217, w: 67, h: 17, text: "截面形状", size: 13 }],
+  },
+  {
+    file: "g1255-glass-door-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 273, y: 234, w: 42, h: 11, text: "截面形状", size: 8 }],
+  },
+  /*
+    G1660's two drawings (L600 and L1263), batch 9, 2026-09-17. Same label, same rewrite.
+    The section it points at is a D — half-round with a flat back — which is why the handle's
+    grip is quoted as 45 × 20mm rather than a diameter.
+  */
+  {
+    file: "g1660-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    regions: [{ x: 179, y: 321, w: 51, h: 14, text: "截面形状", size: 10 }],
+  },
+  {
+    file: "g1660-glass-door-handle-3.webp",
+    canvas: [544, 532],
+    regions: [{ x: 118, y: 230, w: 81, h: 21, text: "截面形状", size: 15 }],
+  },
+  /*
+    G1216, added 2026-09-14 with the drawing itself.
+
+    This model reached the site from batch 1 with no drawing at all and an empty spec table.
+    UNION publishes one, and it carries the same 「断面形状」 label T2412's two drawings do —
+    so it gets the same rewrite to 「截面形状」, the term a Chinese fabricator uses. The English
+    "section" printed underneath is left alone: it is already readable to both audiences, and
+    painting it out would cost the drawing a label without replacing it.
+  */
+  {
+    file: "g1216-glass-door-handle-2.webp",
+    canvas: [544, 532],
+    /* x starts at 104, not 116: the 断 glyph reaches further left than the eye reads at 1:1,
+       and a box measured to the apparent edge left a sliver of it standing beside 截. */
+    regions: [{ x: 104, y: 276, w: 82, h: 21, text: "截面形状", size: 14 }],
+  },
+  {
+    file: "ul750-lever-handle-2.webp",
+    canvas: [544, 532],
+    /*
+      「Ø46切カキ」 — the door cut-out for the lever spindle. 切カキ is the cut-out itself, so
+      the number is useless to a Chinese joiner without it: this is translated, not erased.
+      The leader line underneath is left alone; only the text box is painted.
+    */
+    regions: [{ x: 236, y: 430, w: 112, h: 26, text: "开孔 Ø46", size: 15 }],
+  },
 ];
 
 const FONT = "Microsoft YaHei, Noto Sans SC, SimHei, sans-serif";
@@ -145,21 +248,42 @@ async function main() {
       The coordinates below were measured on one specific canvas. If the image is not that
       canvas any more, the boxes land somewhere else — most likely on top of a dimension.
       Refuse rather than deface.
+
+      ONE EXCEPTION: centred square padding.
+
+      scripts/square-rayen-plates.mjs pads a plate onto a square field with fit:"contain",
+      which moves the whole drawing by a known offset and scales nothing. On 2026-09-11 that
+      step started padding every non-square plate — 114 of these drawings — and all six edits
+      here began reporting 「尺寸是 609×609，坐标是按 544×532 量的」. The Chinese was already
+      baked in and correct, but the CI check could no longer confirm it, and a check that
+      cannot confirm is not a check.
+
+      Refusing there would mean refusing on the one transformation whose effect on these
+      coordinates is exactly known. So it is allowed, and only it: the canvas must be square,
+      no smaller than the measured one, and every box moves by half the difference. A
+      re-crop, a resize, a different aspect still refuses — there the offset would be a guess.
     */
     const [cw, ch] = edit.canvas;
+    let dx = 0;
+    let dy = 0;
     if (meta.width !== cw || meta.height !== ch) {
-      skipped.push(
-        `${edit.file}：尺寸是 ${meta.width}×${meta.height}，坐标是按 ${cw}×${ch} 量的 —— 跳过，不乱涂`,
-      );
-      continue;
+      const centredSquarePad = meta.width === meta.height && meta.width >= cw && meta.height >= ch;
+      if (!centredSquarePad) {
+        skipped.push(
+          `${edit.file}：尺寸是 ${meta.width}×${meta.height}，坐标是按 ${cw}×${ch} 量的 —— 跳过，不乱涂`,
+        );
+        continue;
+      }
+      dx = Math.round((meta.width - cw) / 2);
+      dy = Math.round((meta.height - ch) / 2);
     }
 
     const composites = [];
     for (const region of edit.regions) {
       composites.push({
         input: await label({ ...region, rotate: region.rotate ?? 0 }),
-        left: region.x,
-        top: region.y,
+        left: region.x + dx,
+        top: region.y + dy,
       });
     }
 

@@ -35,7 +35,10 @@
     "Satin stainless",
     "Matt black"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t2110-stainless-steel-handle.webp",
@@ -43,16 +46,6 @@
     "label": "T2110 Stainless Steel Handle"
   },
   "gallery": [
-    {
-      "src": "/images/products/t2110-stainless-steel-handle-2.webp",
-      "ratio": "1 / 1",
-      "label": "T2110 Stainless Steel Handle, view 2"
-    },
-    {
-      "src": "/images/products/t2110-stainless-steel-handle-3.webp",
-      "ratio": "1 / 1",
-      "label": "T2110 Stainless Steel Handle, view 3"
-    },
     {
       "src": "/images/products/t2110-stainless-steel-handle-4.webp",
       "ratio": "1 / 1",
@@ -62,6 +55,16 @@
       "src": "/images/products/t2110-stainless-steel-handle-5.webp",
       "ratio": "1 / 1",
       "label": "T2110 Stainless Steel Handle, dimension drawing"
+    },
+    {
+      "src": "/images/products/t2110-stainless-steel-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "T2110 Stainless Steel Handle, view 2"
+    },
+    {
+      "src": "/images/products/t2110-stainless-steel-handle-3.webp",
+      "ratio": "1 / 1",
+      "label": "T2110 Stainless Steel Handle, view 3"
     },
     {
       "src": "/images/products/t2110-stainless-steel-handle-6.webp",
@@ -84,5 +87,28 @@
   "seoTitle": "T2110 Stainless Steel Handle | Canton Hyland",
   "seoDescription": "Canton Hyland T2110 stainless steel handle in Stainless Steel. Finishes: Satin stainless, Matt black. Manufactured in Guangdong, China. Request a quotation.",
   "seoTitleEs": "T2110 Stainless Steel Handle | Canton Hyland",
-  "seoDescriptionEs": "Canton Hyland T2110 stainless Steel Handle en acero inoxidable. Acabados: Satin stainless, Matt black. Fabricado en Guangdong, China. Solicite presupuesto."
+  "seoDescriptionEs": "Canton Hyland T2110 stainless Steel Handle en acero inoxidable. Acabados: Satin stainless, Matt black. Fabricado en Guangdong, China. Solicite presupuesto.",
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimentos disponíveis",
+      "value": "300 mm (P = 260) / 700 mm (P = 660)"
+    },
+    {
+      "label": "Saliência",
+      "value": "54 mm"
+    },
+    {
+      "label": "Afastamento",
+      "value": "34 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "20 × 68 mm"
+    }
+  ],
+  "seoTitlePt": "T2110 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox T2110 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

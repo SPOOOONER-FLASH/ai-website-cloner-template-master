@@ -17,7 +17,7 @@ import rayenFile from "../../content/rayen/site.json";
 import mirror from "./generated/products-zh.json";
 import { LOCALE_SEGMENT, type RayenLocale } from "./rayen-i18n";
 
-export type RayenImage = { src: string; ratio: string; label: string };
+export type RayenImage = { src: string; ratio: string; label: string; labelEn?: string };
 export type RayenSpec = { label: string; value: string };
 
 export type RayenProduct = {
@@ -64,11 +64,43 @@ export type RayenProduct = {
  */
 export type RayenProductView = Omit<RayenProduct, "en">;
 
+/**
+ * The English catalogue reads its own copy of every photograph.
+ *
+ * Client, 2026-09-13: 「en 站点的全部产品都得打上绿色的 logo，中文站都用黑色的，不要混淆」.
+ * The mark is baked into the pixels, so one file cannot serve both languages —
+ * scripts/brand-rayen-images.mjs writes two sets from the same unbranded source, and this
+ * is the one line that sends each locale to its own. The filenames are identical in both
+ * directories, so nothing else in the site has to know which language it is rendering.
+ */
+const ZH_IMAGES = "/images/products-rayen/";
+const EN_IMAGES = "/images/products-rayen-en/";
+
+/*
+  The English view of one picture: the teal-marked file, and the English alt text.
+
+  The mark was swapped here from the start; the alt text was not, so an English reader met
+  「雷茵 RY140 隐藏铰链」 under a hinge whose name, summary and every spec row above it had
+  been swapped into English. `labelEn` is the label off the English record, carried through
+  the Chinese mirror for exactly this.
+*/
+const enImage = <T extends { src: string; label?: string; labelEn?: string } | undefined>(
+  image: T,
+): T =>
+  image
+    ? ({
+        ...image,
+        src: image.src?.startsWith(ZH_IMAGES) ? image.src.replace(ZH_IMAGES, EN_IMAGES) : image.src,
+        label: image.labelEn ?? image.label,
+      } as T)
+    : image;
 export function viewProduct(product: RayenProduct, locale: RayenLocale): RayenProductView {
   const { en, ...rest } = product;
   if (locale === "zh") return rest;
   return {
     ...rest,
+    heroImage: enImage(rest.heroImage),
+    gallery: (rest.gallery ?? []).map(enImage),
     name: en.name,
     series: en.series,
     categoryNames: en.categoryNames,
@@ -121,11 +153,31 @@ export const legalName = rayen.brand.legalName;
 /**
  * The origin used for canonical URLs and JSON-LD.
  *
- * Points at the temporary preview host until the real domain is chosen. It is the only
- * place that host appears in the source — moving the site later is this line plus
+ * rayen.cn since 2026-09-15. Until then this pointed at a preview subdomain of
+ * stahlock.com, and the whole site was noindex so that a RAYEN page would never rank at an
+ * address belonging to a different company.
+ *
+ * It is the only place the host appears in the source — moving the site is this line plus
  * `server_name` in nginx, and nothing else. See CLIENT-RUNBOOK 「雷茵中文站」.
  */
-export const siteUrl = `https://${rayen.preview.host}`;
+export const siteUrl = `https://${rayen.host.domain}`;
+
+/**
+ * Search-console ownership tokens, rendered as <meta> on every page.
+ *
+ * Bing and Baidu both verify by looking for their tag on the site's home page, and both
+ * say to leave it in place afterwards — remove it and the property silently reverts to
+ * unverified, taking the crawl-rate and index-coverage reports with it. Keeping the tokens
+ * here rather than inline in the layouts means the 中文 and English roots cannot drift
+ * apart, which is the same reason `alternatesFor` lives here.
+ *
+ * Google is NOT in this list: rayen.cn is verified through DNS instead, which survives a
+ * rebuild of the site. Add a key here only for a service that offers no DNS method.
+ */
+export const siteVerification: Record<string, string> = {
+  /* Bing Webmaster Tools, added 2026-09-15 for https://rayen.cn/ */
+  "msvalidate.01": "5B499811B72E2A557D992BED0E38A9EF",
+};
 
 /**
  * Every internal link on this site goes through here.
@@ -154,6 +206,43 @@ export const localePath = (locale: RayenLocale, path: string) =>
 export const absoluteUrl = (path: string) =>
   new URL(path.startsWith("/") ? path : `/${path}`, siteUrl).toString();
 
+/**
+ * canonical + hreflang for one page, in both RAYEN languages.
+ *
+ * WHY THIS EXISTS NOW AND NOT BEFORE
+ * src/app/zh/layout.tsx carries a note saying this site deliberately declares no hreflang,
+ * because /zh is "a different company's site that happens to be built from the same
+ * catalogue" as cantonlock.com, and calling those language alternates would be a false claim
+ * about corporate identity. That reasoning is right and still holds — nothing here points at
+ * cantonlock.
+ *
+ * It was about a different pair. Since 2026-09-15 RAYEN has its own domain, and rayen.cn
+ * serves 中文 at / and English at /en/: the same company, the same products, one translated
+ * from the other. Those two ARE alternates, and saying nothing costs real traffic — without
+ * hreflang the two versions compete as duplicates instead of being served to the right
+ * reader, which on an 836-page bilingual site is the largest single SEO gap it had (0 of 418
+ * pages declared one).
+ *
+ * `path` is the DEPLOYED Chinese path, the same value the canonical already uses; the /zh and
+ * /zh-en build prefixes never appear in a URL a buyer sees. Keeping canonical and hreflang in
+ * one function is the point — they were always going to be written from the same value, and
+ * two places to edit is how a canonical ends up pointing somewhere its own alternate does not.
+ */
+export function alternatesFor(locale: RayenLocale, path: string) {
+  const zh = path.startsWith("/") ? path : `/${path}`;
+  const en = `/en${zh}`;
+  return {
+    canonical: locale === "zh" ? zh : en,
+    languages: {
+      "zh-Hans": zh,
+      en,
+      /* Chinese is x-default: the factory is in 中山, and an unmatched visitor is likelier to
+         want the Chinese page than the English one. */
+      "x-default": zh,
+    },
+  };
+}
+
 /** Top navigation. 顶固 的栏目骨架，去掉投资者关系和爱心公益 —— 那两样我们没有。 */
 export const primaryNav = [
   { href: "/products/", label: "产品中心", latin: "Products" },
@@ -180,11 +269,141 @@ type RawCategory = {
 
 const rawCategories = categoriesFile.categories as RawCategory[];
 
+/**
+ * Category covers come from the RAYEN image set, same as the product photography.
+ *
+ * content/categories.json is the shared taxonomy, so its cover images point at
+ * /images/products/ — the raw supplier files. Those still carry the Hyland 海得 oval that
+ * scripts/build-rayen-product-images.mjs exists to remove, and they have not been through
+ * scripts/brand-rayen-images.mjs either. The product grid was mapped to
+ * /images/products-rayen/ by the Chinese mirror on day one; the six category cards on
+ * 产品中心 were not, and shipped another firm's logo at the top of the page the whole time.
+ * Found 2026-09-11 from a screenshot of the live site.
+ *
+ * One line rather than a copy of the covers into categories.json: the cleaned set is
+ * generated from the same filenames, so this stays correct when a cover is swapped.
+ */
+const rayenImage = <T extends { src?: string } | undefined>(image: T): T =>
+  image?.src?.startsWith("/images/products/")
+    ? ({ ...image, src: image.src.replace("/images/products/", "/images/products-rayen/") } as T)
+    : image;
+
+/**
+ * RAYEN's own six category covers, chosen by eye from RAYEN's own published photographs.
+ *
+ * WHY NOT JUST USE content/categories.json
+ * Because that tree is HYDE's too, and its covers are picked to represent each category as
+ * HYDE stocks it. Three times in one day that diverged from what RAYEN sells:
+ * 门用辅助五金 was fronted by stainless flush bolts (HYDE sells those; RAYEN has none, and
+ * the record behind the photograph is not even published — `sites` is empty); 不锈钢拉手 by
+ * a HYDE lever handle; and 执手锁 was repointed mid-afternoon at
+ * /images/editorial/hyde-hero-lever.webp, captioned "Canton Hyland stainless steel lever
+ * handle". The client circled the first of those on his phone.
+ *
+ * A card is a promise about what is behind it. Advertising a part the buyer then cannot
+ * find is the same failure as an invented dimension in a different medium — it costs the
+ * reader's trust in everything else on the page.
+ *
+ * WHY BY HAND AND NOT DERIVED
+ * A first attempt picked the first published product in each category. It is honest and it
+ * looks it: 不锈钢拉手 came out fronted by a spread of BRASS knobs, and 浴室配件 by a
+ * black-and-white dimension drawing. A cover is an editorial choice — the plainest example
+ * of the category, photographed clearly — and no ordering of the catalogue encodes that.
+ * These six were chosen off a contact sheet. coverFor() below still guards the general
+ * case, so a category nobody has chosen for cannot fall back to somebody else's photograph.
+ *
+ * Revisit when the catalogue changes shape; the day RAYEN lists flush bolts, 门用辅助五金
+ * deserves a better cover than its one indicator lock.
+ */
+const RAYEN_COVERS: Record<string, { src: string; ratio: string; label: string }> = {
+  "stainless-steel-handles": {
+    src: "/images/products-rayen/t1050-stainless-steel-handle.webp",
+    ratio: "1 / 1",
+    label: "T1050 不锈钢门拉手",
+  },
+  "lever-handles": {
+    src: "/images/products-rayen/ul1005-lever-handle.webp",
+    ratio: "1 / 1",
+    label: "UL1005 不锈钢执手",
+  },
+  "bathroom-accessories": {
+    src: "/images/products-rayen/oashb201-grab-bar.webp",
+    ratio: "1 / 1",
+    label: "OASHB201 卫生间安全扶手与纸巾架",
+  },
+  "care-grab-bars": {
+    src: "/images/products-rayen/oashb3000-flip-up-grab-bar.webp",
+    ratio: "1 / 1",
+    label: "OASHB3000 上抬扶手",
+  },
+  "glass-door-accessories": {
+    src: "/images/products-rayen/g1106-glass-door-handle.webp",
+    ratio: "1 / 1",
+    label: "G1106 玻璃门拉手",
+  },
+  "hardware-accessories": {
+    src: "/images/products-rayen/pre-w173-indicator.webp",
+    ratio: "1 / 1",
+    label: "PRE_W173 指示锁",
+  },
+};
+
+/** Every image filename the RAYEN site publishes — the only pictures this site may show. */
+const rayenImageNames = new Set(
+  products.flatMap((product) =>
+    [product.heroImage, ...(product.gallery ?? [])]
+      .map((image) => image?.src)
+      .filter(Boolean)
+      .map((src) => String(src).slice(String(src).lastIndexOf("/") + 1)),
+  ),
+);
+
+/**
+ * A RAYEN card may only show a picture RAYEN publishes. Anything else falls back.
+ *
+ * This is a guard, not a preference, and it exists because the failure keeps coming back
+ * through a new door. First the covers were served straight from /images/products/ with the
+ * Hyland 海得 oval still on them. Fixed. Then 门用辅助五金's cover turned out to be a flush
+ * bolt RAYEN does not sell. Fixed by hand, above. Then the same afternoon another session
+ * repointed 执手锁 at /images/editorial/hyde-hero-lever.webp — a file with "hyde" in its
+ * name, captioned "Canton Hyland stainless steel lever handle", outside the mapped
+ * directory and never stamped. Correct for HYDE, whose file it is. On a 雷茵 page it is a
+ * competitor's photograph with their name in the URL.
+ *
+ * Three incidents, three different mechanisms, one sentence that covers all of them: if the
+ * shared taxonomy names a picture this site does not publish, use one this site does — the
+ * first published product in that very category, which is by construction cleaned, stamped,
+ * and actually for sale. The card then cannot show somebody else's photograph no matter
+ * what content/categories.json does next, which matters because categories.json is edited
+ * by people working on the other site and they are not wrong to edit it.
+ */
+function coverFor(category: { slug: string; image?: { src?: string } }) {
+  const override = RAYEN_COVERS[category.slug];
+  if (override) return rayenImage(override);
+
+  const src = category.image?.src;
+  const name = src ? src.slice(src.lastIndexOf("/") + 1) : "";
+  if (src && rayenImageNames.has(name)) return rayenImage(category.image);
+
+  /*
+    Prefer a product that sits directly in the category over one filed under a child.
+
+    "The first product in the category" is not good enough on its own: 不锈钢拉手 holds 45
+    steel handles plus 7 brass ones in a child, and the first record happened to be CSM1 —
+    a brass handle fronting a card that says stainless steel. A product filed under a child
+    is by definition a special case of the category; one filed directly in it is the plain
+    case, which is what a cover should show.
+  */
+  const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
+  const plain = inCategory.find((product) => !product.categoryPath[1]);
+  return (plain ?? inCategory[0])?.heroImage;
+}
+
 export const categories: RayenCategory[] = rawCategories.map((category) => ({
   slug: category.slug,
   name: category.nameZh ?? category.name,
   summary: category.summary ?? "",
-  image: category.image,
+  image: coverFor(category),
   children: (category.children ?? []).map((child) => ({
     slug: child.slug,
     name: child.nameZh ?? child.name,
@@ -205,11 +424,14 @@ export function categoriesFor(locale: RayenLocale): RayenCategory[] {
     const raw = rawCategories.find((c) => c.slug === category.slug);
     if (!raw) return category;
     const inCategory = products.filter((p) => p.categoryPath[0] === category.slug);
-    const children = new Set(inCategory.map((p) => p.categoryPath[1]).filter(Boolean));
+    /* Same counting rule as displayNameFor — see the note there on why "" is a member. */
+    const children = new Set(inCategory.map((p) => p.categoryPath[1] ?? ""));
     const onlyChild =
       children.size === 1 ? (raw.children ?? []).find((c) => c.slug === [...children][0]) : undefined;
     return {
       ...category,
+      /* The English catalogue's cards carry the teal mark too — same rule as viewProduct. */
+      image: enImage(category.image as { src: string } | undefined),
       name: onlyChild?.name ?? raw.name,
       children: (raw.children ?? []).map((c) => ({ slug: c.slug, name: c.name })),
     };
@@ -259,7 +481,36 @@ export function countInCategory(slug: string): number {
 function displayNameFor(category: RayenCategory): string {
   const inCategory = products.filter((product) => product.categoryPath[0] === category.slug);
   if (!inCategory.length || !category.children.length) return category.name;
-  const children = new Set(inCategory.map((product) => product.categoryPath[1]).filter(Boolean));
+
+  /*
+    One model is not enough to rename a category after it.
+
+    The rule reads "where every RAYEN product in a family belongs to one child, the child's
+    name is the honest label", and with 32 pull handles in 玻璃门夹具 that is plainly true.
+    With ONE it stops being true: 门用辅助五金 holds nine child types and RAYEN currently
+    stocks a single indicator lock, so the card renamed itself 「指示器 1 个型号」 — a nine-door
+    corridor signposted by whichever door happens to be open today. The client circled it on
+    his phone on 2026-09-11 and asked for the umbrella name back.
+
+    A card is a doorway, and its name should describe the room rather than its one occupant.
+    Two is the smallest number that can make a pattern, so two is the floor.
+  */
+  if (inCategory.length < 2) return category.name;
+  /*
+    EVERY product counts, including the ones that name no sub-category at all.
+
+    An earlier version filtered those out, which says "all the ones that HAVE a child
+    agree" — a different sentence from the rule above, and the same one only while every
+    category with children had a child on every product. 2026-09-11 broke that:
+    不锈钢拉手 gained one child (黄铜拉手, 7 models) while its other 45 models stayed
+    directly in the parent, and the card on 产品中心 relabelled itself 「黄铜拉手 45 个型号」.
+    The client caught it in a screenshot. A buyer looking for a steel pull handle was being
+    shown a brass sign over a shelf that is seven-eighths steel.
+
+    So "no sub-category" is its own member of the set. One entry means one honest name;
+    two means the parent's name is the only true one.
+  */
+  const children = new Set(inCategory.map((product) => product.categoryPath[1] ?? ""));
   if (children.size !== 1) return category.name;
   const only = category.children.find((child) => child.slug === [...children][0]);
   return only?.name ?? category.name;

@@ -1,6 +1,33 @@
 import type { ReactNode } from "react";
+import imageDims from "@/data/generated/rayen-image-dims.json" with { type: "json" };
+import { finishesOf } from "@/data/rayen-finishes";
 import { localePath } from "@/data/rayen";
 import type { RayenLocale } from "@/data/rayen-i18n";
+
+/**
+ * The image's own pixel size, for the width/height attributes.
+ *
+ * Lighthouse asked for these (「Image elements do not have explicit width and height」): without
+ * them the browser cannot reserve the box before the bytes arrive, and the page reflows under
+ * the reader as each photograph lands.
+ *
+ * They state the FILE's size, not the CSS box's. Restating the box would satisfy the audit
+ * and be untrue — and it would paper over the related finding, 「Displays images with
+ * incorrect aspect ratio」, which is the browser correctly noticing that a square photograph
+ * is being drawn in a 4:3 frame. The attributes should let it keep noticing.
+ *
+ * This file is a server component, so the map is read at build time and only the two numbers
+ * reach the HTML. It must not be imported into a "use client" component — that would ship
+ * 4,872 entries to the browser.
+ */
+const SIZES = imageDims as Record<string, number[]>;
+
+export function intrinsicSize(src: string): { width?: number; height?: number } {
+  const hit = SIZES[src];
+  /* Length is checked rather than assumed: the JSON's type is number[], and a truncated
+     entry would otherwise render width="1200" height="undefined". */
+  return hit?.length === 2 ? { width: hit[0], height: hit[1] } : {};
+}
 
 /**
  * The small shared pieces of the RAYEN 雷茵 site.
@@ -58,18 +85,33 @@ export function SectionHead({
  * shot arrives, and a page that jumps while you read it feels unfinished no matter how
  * good the photograph is.
  */
+/**
+ * A photograph in a fixed frame.
+ *
+ * `fit` is the whole decision. "cover" fills the frame and CUTS whatever does not fit, so it
+ * is only honest when `aspect` is the image's own ratio — the factory photographs are square
+ * files and spent a while in 4 / 3 frames, which quietly took 12.5% off the top and the same
+ * off the bottom of every one of them. "contain" cuts nothing and pads instead, which is what
+ * a frame holding images of several shapes needs: the RAYEN catalogue covers are a mix of
+ * square plates and 2:3 portraits of tall pull handles, and no single ratio can crop both
+ * without damage.
+ *
+ * src/lib/rayen-image-fit.test.ts holds cover-frames to their file's real ratio.
+ */
 export function Photo({
   src,
   alt,
   aspect,
   className = "",
   priority = false,
+  fit = "cover",
 }: {
   src: string;
   alt: string;
   aspect: string;
   className?: string;
   priority?: boolean;
+  fit?: "cover" | "contain";
 }) {
   return (
     <div className={`overflow-hidden bg-[var(--color-surface-alt)] ${className}`} style={{ aspectRatio: aspect }}>
@@ -77,9 +119,10 @@ export function Photo({
       <img
         src={src}
         alt={alt}
+        {...intrinsicSize(src)}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
-        className="h-full w-full object-cover"
+        className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
       />
     </div>
   );
@@ -189,6 +232,7 @@ export function ProductCard({
     model: string;
     name: string;
     categoryPath: string[];
+    finishes?: string[];
     heroImage?: { src: string; label: string };
   };
 }) {
@@ -198,15 +242,65 @@ export function ProductCard({
   return (
     <a href={href} className="card group block">
       {product.heroImage ? (
-        <Photo src={product.heroImage.src} alt={product.heroImage.label} aspect="1 / 1" />
+        /* contain, not cover. Roughly 2,000 of the catalogue photographs are 893×1259 or
+           1049×1573 — tall pull handles shot upright — and a square cover frame took 29%
+           off them, top and bottom, which on a pull handle is both ends. Square plates are
+           unaffected: for them contain and cover draw the same pixels. */
+        <Photo src={product.heroImage.src} alt={product.heroImage.label} aspect="1 / 1" fit="contain" />
       ) : (
         <NoPhoto model={product.model} label={noPhotoLabel} />
       )}
       <div className="border-t border-[var(--color-line)] p-4">
         <p className="latin text-[13px] text-[var(--color-ink-3)]">{product.model}</p>
         <p className="mt-1 text-[15px]">{product.name}</p>
+        <FinishDots finishes={product.finishes} locale={locale} />
       </div>
     </a>
+  );
+}
+
+/**
+ * The row of finish colours under a product card.
+ *
+ * Not buttons. There is one set of photographs per model, so there is nothing to switch to;
+ * see the note at the top of src/data/rayen-finishes.ts. They carry a title so a reader can
+ * name the colour, and the whole row is hidden from screen readers in favour of one sentence
+ * that lists the finishes in words — fourteen unlabelled dots is noise in a screen reader,
+ * and the names are what that reader actually needs.
+ */
+function FinishDots({ finishes, locale }: { finishes?: string[]; locale: RayenLocale }) {
+  const list = finishesOf(finishes, locale);
+  if (!list.length) return null;
+  return (
+    <>
+      <span className="sr-only">
+        {locale === "zh" ? "表面处理：" : "Finishes: "}
+        {list.map((f) => f.label).join(locale === "zh" ? "、" : ", ")}
+      </span>
+      <span aria-hidden="true" className="mt-3 flex flex-wrap items-center gap-1.5">
+        {list.map((finish) =>
+          finish.swatch ? (
+            <span
+              key={finish.key}
+              title={finish.label}
+              className="h-3.5 w-3.5 rounded-full border border-black/15"
+              style={
+                finish.swatch.colors.length > 1
+                  ? {
+                      backgroundImage: `linear-gradient(135deg, ${finish.swatch.colors[0]} 0 50%, ${finish.swatch.colors[1]} 50% 100%)`,
+                    }
+                  : { backgroundColor: finish.swatch.colors[0] }
+              }
+            />
+          ) : (
+            /* No colour on file — say the name rather than draw a guess. */
+            <span key={finish.key} className="text-[11px] text-[var(--color-ink-3)]">
+              {finish.label}
+            </span>
+          ),
+        )}
+      </span>
+    </>
   );
 }
 

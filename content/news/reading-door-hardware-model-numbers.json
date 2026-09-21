@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "Open any Chinese hardware manufacturer's price list and you will find the same thing: four hundred lines that look like four hundred products, and are not. Somewhere in there are 607 PBBK, 607 ABET, 607 SNET and 607 BNET, and a buyer new to the catalogue reasonably assumes these are four different locks that happen to share a number.",
@@ -23,9 +24,10 @@
     "If you are building a purchase order from a list like this, the useful sequence is: identify the mechanism from the digits, choose the function from the third letter group, then choose the finish last and confirm it in writing against a photograph of that exact code. The first two decisions are engineering. The last one is the one that arrives in a container and either matches the door or does not."
   ],
   "heroImage": {
-    "src": "/images/editorial/news-finish-function-library.webp",
-    "ratio": "3 / 2",
-    "label": "Representative specification-library study of one hardware form in six distinct finishes and two function turns"
+    "src": "/images/products-hyde/607-pbbk-tubular-lock.webp",
+    "ratio": "16 / 9",
+    "label": "607 PBBK tubular lock in its published polished brass finish.",
+    "labelEs": "Cerradura tubular 607 PBBK en su acabado de latón pulido."
   },
   "relatedModels": [
     "607 PBBK",
@@ -48,5 +50,75 @@
     "Si está armando una orden de compra a partir de una lista así, la secuencia útil es: identifique el mecanismo por los dígitos, elija la función por el tercer grupo de letras, y elija el acabado al final, confirmándolo por escrito contra una fotografía de ese código exacto. Las dos primeras decisiones son de ingeniería. La última es la que llega en un contenedor y encaja con la puerta o no encaja."
   ],
   "seoTitleEs": "Códigos de acabado: PB, AB, SN, SS | Canton Hyland",
-  "seoDescriptionEs": "PB, AB, AC, SN, SC, BN, SSS y PSS descifrados, más los sufijos de función ET, PS y BK —cómo leer una lista de precios china y cotizar a partir de ella."
+  "seoDescriptionEs": "PB, AB, AC, SN, SC, BN, SSS y PSS descifrados, más los sufijos de función ET, PS y BK —cómo leer una lista de precios china y cotizar a partir de ella.",
+  "faq": {
+    "en": [
+      {
+        "question": "What do the letters after a door hardware model number mean?",
+        "answer": "The digits are the product; the letters are the finish, and sometimes the function. 607 PBBK, 607 ABET, 607 SNET and 607 BNET look like four locks and are one. Read the letters from the right: the function comes last and the finish sits in front of it. So 607 PBBK is a 607 in polished brass, privacy function, and 607 SNET is the same lock in satin nickel, keyed entrance."
+      },
+      {
+        "question": "What do the two-letter finish codes stand for?",
+        "answer": "PB is polished brass, AB antique brass, AC antique copper, SN satin nickel, SC satin chrome, CP chrome plated, SB satin brass, SP bright polished, BN black nickel and SS stainless steel — with SSS satin stainless and PSS polished stainless where a supplier distinguishes the two. Two more are sprayed coatings rather than platings: W and WL are white paint, and F is a wood-grain spray."
+      },
+      {
+        "question": "What do ET, PS and BK mean on a lock?",
+        "answer": "They are functions rather than finishes. ET is the entrance function, keyed from the outside. PS is passage — latch only, no cylinder, for a door that closes but never locks. BK is the privacy or bathroom function, with a turn button inside and an emergency release outside. This is also why 592 SSET reads as SS plus ET, stainless steel entrance, rather than S plus SET: reading left to right gets it backwards."
+      },
+      {
+        "question": "Does a finish column listing several codes mean the photograph shows one of them?",
+        "answer": "No, and it is worth keeping apart in your own records. Where a finish column reads AB/AC/PB/SB/SS/SP/SC all available, that is the range the model can be produced in, not the finish of the piece in the photograph. A range in a specification is not a specification — ask for the finish you intend to order and confirm it in writing against a photograph of that exact code."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que significam as letras depois de um código de modelo de ferragem?",
+        "answer": "Os dígitos são o produto; as letras são o acabamento, e às vezes a função. 607 PBBK, 607 ABET, 607 SNET e 607 BNET parecem quatro fechaduras e são uma. Leia as letras da direita para a esquerda: a função vem por último e o acabamento fica antes dela. Então 607 PBBK é um 607 em latão polido, função banheiro, e 607 SNET é a mesma fechadura em níquel acetinado, entrada chaveada."
+      },
+      {
+        "question": "O que significam os códigos de acabamento de duas letras?",
+        "answer": "PB é latão polido, AB latão antigo, AC cobre antigo, SN níquel acetinado, SC cromo acetinado, CP cromado, SB latão acetinado, SP polido brilhante, BN níquel preto e SS aço inoxidável — com SSS inox acetinado e PSS inox polido onde um fornecedor distingue os dois. Mais dois são pintura e não banho: W e WL são pintura branca, e F é pintura texturizada imitando madeira."
+      },
+      {
+        "question": "O que querem dizer ET, PS e BK numa fechadura?",
+        "answer": "São funções e não acabamentos. ET é a função de entrada, chaveada por fora. PS é passagem — só trinco, sem cilindro, para uma porta que fecha mas nunca tranca. BK é a função de privacidade ou banheiro, com botão de giro por dentro e destravamento de emergência por fora. É também por isso que 592 SSET se lê como SS mais ET, inox com entrada, e não S mais SET: ler da esquerda para a direita inverte o sentido."
+      },
+      {
+        "question": "Uma coluna de acabamento com vários códigos indica o da fotografia?",
+        "answer": "Não, e vale manter isso separado nos seus registros. Onde a coluna diz AB/AC/PB/SB/SS/SP/SC todos disponíveis, isso é a gama em que o modelo pode ser produzido, e não o acabamento da peça na fotografia. Uma gama numa especificação não é uma especificação — peça o acabamento que você pretende comprar e confirme-o por escrito contra uma fotografia daquele código exato."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué significan las letras después de un código de modelo de herraje?",
+        "answer": "Los dígitos son el producto; las letras son el acabado, y a veces la función. 607 PBBK, 607 ABET, 607 SNET y 607 BNET parecen cuatro cerraduras y son una. Lea las letras de derecha a izquierda: la función va la última y el acabado queda delante. Así 607 PBBK es un 607 en latón pulido, función baño, y 607 SNET es la misma cerradura en níquel satinado, entrada con llave."
+      },
+      {
+        "question": "¿Qué significan los códigos de acabado de dos letras?",
+        "answer": "PB es latón pulido, AB latón antiguo, AC cobre antiguo, SN níquel satinado, SC cromo satinado, CP cromado, SB latón satinado, SP pulido brillante, BN níquel negro y SS acero inoxidable — con SSS inoxidable satinado y PSS inoxidable pulido donde un proveedor distingue los dos. Otros dos son pintura y no baño: W y WL son pintura blanca, y F es un acabado imitación madera."
+      },
+      {
+        "question": "¿Qué quieren decir ET, PS y BK en una cerradura?",
+        "answer": "Son funciones y no acabados. ET es la función de entrada, con llave por fuera. PS es paso — solo picaporte, sin cilindro, para una puerta que cierra pero nunca se enclava. BK es la función de privacidad o baño, con pomo de giro por dentro y desbloqueo de emergencia por fuera. Por eso también 592 SSET se lee como SS más ET, inoxidable con entrada, y no S más SET: leer de izquierda a derecha lo invierte."
+      },
+      {
+        "question": "¿Una columna de acabado con varios códigos indica el de la fotografía?",
+        "answer": "No, y conviene mantenerlo separado en sus propios registros. Donde la columna dice AB/AC/PB/SB/SS/SP/SC todos disponibles, eso es la gama en que el modelo puede producirse, no el acabado de la pieza de la fotografía. Una gama en una especificación no es una especificación — pida el acabado que pretende comprar y confírmelo por escrito contra una fotografía de ese código exacto."
+      }
+    ]
+  },
+  "titlePt": "O que significam as letras depois de um código de modelo",
+  "summaryPt": "Quatrocentas linhas que parecem quatrocentos produtos, e não são. Os dígitos são o produto; as letras são o acabamento, e às vezes a função.",
+  "bodyPt": [
+    "Abra a lista de preços de qualquer fabricante chinês de ferragens e você encontra a mesma coisa: quatrocentas linhas que parecem quatrocentos produtos, e não são. Em algum lugar ali estão 607 PBBK, 607 ABET, 607 SNET e 607 BNET, e um comprador novo no catálogo razoavelmente supõe que são quatro fechaduras diferentes que por acaso compartilham um número.",
+    "São uma fechadura. Os dígitos são o produto. As letras são o acabamento, e às vezes a função. Ninguém escreve isso em lugar nenhum, porque dentro de uma fábrica é óbvio demais para explicar e fora dela não há como descobrir. Então aqui está, escrito.",
+    "Os códigos de acabamento têm duas letras, e a maior parte do conjunto atravessa o setor inteiro em vez de ser só nossa. PB é latão polido. AB é latão antigo. AC é cobre antigo. SN é níquel acetinado. SC é cromo acetinado. CP é cromado. SB é latão acetinado. SP é polido brilhante. BN é níquel preto. SS é aço inoxidável, e onde um fornecedor distingue os dois graus dele, SSS é inox acetinado e PSS é inox polido. Mais dois são pintura e não banho: W e WL são pintura branca, e F é pintura texturizada imitando madeira. A nossa própria lista de preços escreve vários destes por extenso na coluna de acabamento — PB=Polish Brass no 6094, SN=Satin Nickel no 70710, SC=Satin Chrome no 70610, BN Black Nickle no 9211 — e depois de ver o padrão uma vez, o resto da lista se lê sozinho.",
+    "Um segundo grupo de letras é a função e não o acabamento. ET é a função de entrada, chaveada por fora. PS é passagem: só trinco, sem cilindro, para uma porta que fecha mas nunca tranca. BK é a função de privacidade ou banheiro, com botão de giro por dentro e destravamento de emergência por fora. Então 607 PBBK é um 607 em latão polido, função banheiro; 607 SNET é a mesma fechadura em níquel acetinado, entrada chaveada. Leia as letras da direita para a esquerda: a função vem por último, o acabamento fica antes dela. 592 SSET é SS mais ET — aço inoxidável, entrada — e não S mais SET, e é por isso que ler da esquerda para a direita inverte o sentido.",
+    "Isso importa comercialmente de um jeito fácil de não perceber. Um distribuidor que lê os códigos para de cotar quatrocentos produtos e passa a cotar sessenta, cada um nos acabamentos que o seu mercado de fato compra. Encurta a linha, encurta a conversa, e encurta o pedido de amostra — porque uma amostra do mecanismo num acabamento diz como os outros cinco serão na mão.",
+    "Também muda o que você confere antes de pedir. Se as letras são o acabamento, então o acabamento é a parte do pedido que mais facilmente sai errada, e a parte que uma fotografia resolve mais rápido. Peça o acabamento que você pretende comprar em vez de aceitar o que por acaso foi fotografado, e se um fornecedor manda a foto em latão polido contra uma linha de cobre antigo, trate isso como pergunta e não como detalhe.",
+    "Uma ressalva honesta sobre a nossa própria lista. Onde a coluna de acabamento diz AB/AC/PB/SB/SS/SP/SC todos disponíveis, isso é a gama em que o modelo pode ser produzido, e não o acabamento da peça na fotografia. Uma gama numa especificação não é uma especificação, e vale manter as duas separadas nos seus próprios registros. Algumas linhas mais antigas também carregam uma letra cujo significado não confirmamos — S, E, D e outras poucas — e onde não temos certeza, as nossas páginas de produto não dizem nada em vez de adivinhar.",
+    "Se você está montando um pedido de compra a partir de uma lista como esta, a sequência útil é: identifique o mecanismo pelos dígitos, escolha a função pelo terceiro grupo de letras, e escolha o acabamento por último, confirmando-o por escrito contra uma fotografia daquele código exato. As duas primeiras decisões são engenharia. A última é a que chega num contêiner e combina com a porta, ou não."
+  ],
+  "seoTitlePt": "Códigos de acabamento em ferragens: PB, AB, SN, SS",
+  "seoDescriptionPt": "PB, AB, AC, SN, SC, BN, SSS e PSS decodificados, mais os sufixos de função ET, PS e BK — como ler uma lista de preços chinesa de ferragens e cotar a partir dela."
 }

@@ -55,7 +55,10 @@
     "Matt black",
     "Antique brass"
   ],
-  "doorTypes": [],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
   "certifications": [],
   "heroImage": {
     "src": "/images/products/t3321-stainless-steel-handle.webp",
@@ -63,6 +66,11 @@
     "label": "T3321 Stainless Steel Handle"
   },
   "gallery": [
+    {
+      "src": "/images/products/t3321-stainless-steel-handle-6.webp",
+      "ratio": "1 / 1",
+      "label": "T3321 Stainless Steel Handle, dimension drawing"
+    },
     {
       "src": "/images/products/t3321-stainless-steel-handle-2.webp",
       "ratio": "1 / 1",
@@ -84,11 +92,6 @@
       "label": "T3321 Stainless Steel Handle, view 5"
     },
     {
-      "src": "/images/products/t3321-stainless-steel-handle-6.webp",
-      "ratio": "1 / 1",
-      "label": "T3321 Stainless Steel Handle, dimension drawing"
-    },
-    {
       "src": "/images/products/t3321-stainless-steel-handle-7.webp",
       "ratio": "1 / 1",
       "label": "T3321 Stainless Steel Handle, view 7"
@@ -102,7 +105,50 @@
     "artunion": {
       "id": "T3321-35-151",
       "basis": "confirmed",
-      "fetchedAt": "2026-09-11T03:38:16.048Z"
+      "fetchedAt": "2026-09-15T15:33:36.324Z"
     }
-  }
+  },
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "P=425 mm"
+    },
+    {
+      "label": "Comprimento total",
+      "value": "700 mm"
+    },
+    {
+      "label": "Comprimento do puxador",
+      "value": "500 mm"
+    },
+    {
+      "label": "Secção do puxador",
+      "value": "25 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "52 mm"
+    },
+    {
+      "label": "Peso",
+      "value": "1 kg"
+    },
+    {
+      "label": "Parafuso de fixação",
+      "value": "M6"
+    },
+    {
+      "label": "Furo de fixação",
+      "value": "φ8 mm"
+    },
+    {
+      "label": "Furo de fixação (porta de vidro)",
+      "value": "φ12 mm"
+    }
+  ],
+  "seoTitlePt": "T3321 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox T3321 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

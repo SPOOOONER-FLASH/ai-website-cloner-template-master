@@ -69,7 +69,7 @@
   "relatedModels": [],
   "seoTitle": "LH853 CPBK Lever Handle — Zinc Alloy | Canton Hyland",
   "seoDescription": "Canton Hyland LH853 CPBK lever handle in Zinc Alloy. Lever Handle in chrome plated, privacy function. Available in CP finish. Made in Guangdong, China.",
-  "nameEs": "Manijas de palanca",
+  "nameEs": "Manilla de palanca",
   "seoTitleEs": "LH853 CPBK Manijas de palanca — Zamak | Canton Hyland",
   "seoDescriptionEs": "Canton Hyland LH853 CPBK manijas de palanca en zamak. Acabado CP. Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite presupuesto.",
   "summarySource": "https://stahlock.com/index.php?id=1980",
@@ -106,5 +106,116 @@
     "functionFrom": "suffix BK",
     "createdAt": "2026-09-07",
     "script": "scripts/add-finish-variants.mjs"
-  }
+  },
+  "namePt": "Maçaneta de alavanca",
+  "summaryPt": "Maçaneta de alavanca em zamak.",
+  "specsPt": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Distância à testa",
+      "value": "60 mm"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "35 mm a 45 mm ajustável"
+    },
+    {
+      "label": "Vida útil em ciclos",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chassi",
+      "value": "Aço maciço, zincado para resistência à corrosão"
+    },
+    {
+      "label": "Guarnição",
+      "value": "Zamak injetado com galvanização ou latão maciço"
+    },
+    {
+      "label": "Mão",
+      "value": "Totalmente reversível, mão direita ou esquerda"
+    },
+    {
+      "label": "Função",
+      "value": "Condena — banheiro, botão de trava por dentro"
+    },
+    {
+      "label": "Amaestramento",
+      "value": "Pode ser igualada com os trincos ou integrada num sistema de chave-mestra"
+    },
+    {
+      "label": "Acabamento",
+      "value": "Cromado"
+    },
+    {
+      "label": "Aplicação",
+      "value": "Para portas de entrada"
+    }
+  ],
+  "seoTitlePt": "LH853 CPBK Maçaneta de alavanca | Canton Hyland",
+  "seoDescriptionPt": "Maçaneta de alavanca LH853 CPBK da Canton Hyland — maçanetas de alavanca. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento.",
+  "summaryEs": "Manilla de palanca de zamak.",
+  "specsEs": [
+    {
+      "label": "Material",
+      "value": "Zamak"
+    },
+    {
+      "label": "Entrada",
+      "value": "60mm"
+    },
+    {
+      "label": "Espesor de puerta",
+      "value": "35 a 45 mm, regulable"
+    },
+    {
+      "label": "Vida útil",
+      "value": "200.000 ciclos"
+    },
+    {
+      "label": "Chasis",
+      "value": "Acero macizo zincado para resistir la corrosión"
+    },
+    {
+      "label": "Guarnición",
+      "value": "Zamak inyectado con galvanizado, o latón macizo"
+    },
+    {
+      "label": "Mano",
+      "value": "Reversible, mano izquierda o derecha"
+    },
+    {
+      "label": "Función",
+      "value": "Privacidad — baño, botón de giro interior"
+    },
+    {
+      "label": "Amaestramiento",
+      "value": "Admite llave igual con los cerrojos, o amaestramiento"
+    },
+    {
+      "label": "Acabado",
+      "value": "Cromado"
+    },
+    {
+      "label": "Aplicación",
+      "value": "Para puertas de acceso"
+    }
+  ],
+  "featuresPt": [
+    "Econômica e fácil de instalar, indicada para uso residencial",
+    "A chave ou o botão de giro trava e destrava os dois pomos",
+    "Gire o botão no sentido anti-horário ou a chave no sentido horário para trancar; inverta para destrancar",
+    "Chassi e trinco em aço zincado para resistência à corrosão",
+    "Guarnição aparente disponível em aço inoxidável ou latão"
+  ],
+  "featuresEs": [
+    "Económica y fácil de instalar, ideal para uso residencial",
+    "La llave o el botón giratorio bloquean y desbloquean ambos pomos",
+    "Gire el botón en sentido antihorario o la llave en sentido horario para bloquear; al revés para desbloquear",
+    "Chasis y picaporte de acero cincado, resistentes a la corrosión",
+    "Guarnición vista disponible en acero inoxidable o latón"
+  ]
 }

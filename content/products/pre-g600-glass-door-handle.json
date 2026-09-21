@@ -43,6 +43,11 @@
   },
   "gallery": [
     {
+      "src": "/images/products/pre-g600-glass-door-handle-5.webp",
+      "ratio": "1 / 1",
+      "label": "PRE_G600 Glass Door Handle, dimension drawing"
+    },
+    {
       "src": "/images/products/pre-g600-glass-door-handle-2.webp",
       "ratio": "1 / 1",
       "label": "PRE_G600 Glass Door Handle, view 2"
@@ -58,11 +63,6 @@
       "label": "PRE_G600 Glass Door Handle, view 4"
     },
     {
-      "src": "/images/products/pre-g600-glass-door-handle-5.webp",
-      "ratio": "1 / 1",
-      "label": "PRE_G600 Glass Door Handle, dimension drawing"
-    },
-    {
       "src": "/images/products/pre-g600-glass-door-handle-6.webp",
       "ratio": "1 / 1",
       "label": "PRE_G600 Glass Door Handle, view 6"
@@ -76,5 +76,28 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "PRE_G600 Glass Door Handle | RAYEN",
-  "seoDescription": "Stainless Steel pull handle, 550mm overall on P=524mm fixing centres."
+  "seoDescription": "Stainless Steel pull handle, 550mm overall on P=524mm fixing centres.",
+  "nameEs": "Tirador para puerta de vidrio",
+  "namePt": "Puxador para porta de vidro",
+  "summaryPt": "Puxador para porta de vidro em aço inoxidável.",
+  "specsPt": [
+    {
+      "label": "Comprimento total",
+      "value": "550 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "P=524 mm"
+    },
+    {
+      "label": "Saliência",
+      "value": "80 mm"
+    },
+    {
+      "label": "Distância entre barras",
+      "value": "54 mm"
+    }
+  ],
+  "seoTitlePt": "PRE_G600 Puxador para porta de vidro | Canton Hyland",
+  "seoDescriptionPt": "Puxador para porta de vidro PRE_G600 da Canton Hyland — ferragens para porta de vidro. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

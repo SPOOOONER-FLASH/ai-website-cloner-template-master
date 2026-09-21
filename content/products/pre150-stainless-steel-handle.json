@@ -41,15 +41,15 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "/images/products/pre150-stainless-steel-handle.webp",
+    "src": "/images/products/pre150-stainless-steel-handle-2.webp",
     "ratio": "1 / 1",
-    "label": "PRE150 Stainless Steel Handle, dimension drawing"
+    "label": "PRE150 Stainless Steel Handle, view 2"
   },
   "gallery": [
     {
-      "src": "/images/products/pre150-stainless-steel-handle-2.webp",
+      "src": "/images/products/pre150-stainless-steel-handle.webp",
       "ratio": "1 / 1",
-      "label": "PRE150 Stainless Steel Handle, view 2"
+      "label": "PRE150 Stainless Steel Handle, dimension drawing"
     },
     {
       "src": "/images/products/pre150-stainless-steel-handle-3.webp",
@@ -160,5 +160,32 @@
   "attachmentIds": [],
   "relatedModels": [],
   "seoTitle": "PRE150 Stainless Steel Handle | RAYEN",
-  "seoDescription": "Brass pull handle."
+  "seoDescription": "Brass pull handle.",
+  "nameEs": "Manilla de acero inoxidable",
+  "namePt": "Puxador em inox",
+  "summaryPt": "Puxador em inox em latão.",
+  "specsPt": [
+    {
+      "label": "Testa",
+      "value": "50 × 180 mm"
+    },
+    {
+      "label": "Distância entre fixações",
+      "value": "P=75 mm (×2)"
+    },
+    {
+      "label": "Recorte na porta",
+      "value": "42 × 174 mm (46 mm para portas de 45 mm)"
+    },
+    {
+      "label": "Espessura da porta",
+      "value": "40 mm (versão de 45 mm disponível)"
+    },
+    {
+      "label": "Profundidade do rebaixo",
+      "value": "26 mm (variante de 20 mm)"
+    }
+  ],
+  "seoTitlePt": "PRE150 Puxador em inox | Canton Hyland",
+  "seoDescriptionPt": "Puxador em inox PRE150 da Canton Hyland — puxadores em inox. Fabricado em Guangdong, China e exportado para mais de trinta mercados — peça um orçamento."
 }

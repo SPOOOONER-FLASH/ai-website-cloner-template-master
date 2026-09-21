@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "\"Do you do OEM?\" is the most common question our export desk receives and the least useful one, because yes is always the answer and it settles nothing. What the buyer actually needs to know is which of four different things they are asking for, since they sit at four very different points on the cost and lead-time scale.",
@@ -23,10 +24,10 @@
     "Two things worth fixing before anything else, in any of the four cases. Confirm the function and handing you need, because ET, BK and PS are functions and not finishes and an entire order in the wrong one is unusable. And confirm the finish across every item in the set: if the lever is black, the hinges, the cylinder escutcheon and the visible screws should be black too, and mixed finishes within one door are the single most common thing we catch on a first private-label order. Production lead time starts at 30 days from order confirmation; the exact date depends on the models, quantities and finishes on your order."
   ],
   "heroImage": {
-    "src": "/images/editorial/hyde-materials-engineering-2026.webp",
-    "ratio": "3 / 2",
-    "label": "Representative editorial study: a mortise case, hinges, levers, a door closer and four finish sample plates laid out together — the four decisions a private-label order is actually made of.",
-    "labelEs": "Estudio editorial representativo: una caja de embutir, bisagras, manillas, un cierrapuertas y cuatro placas de muestra de acabado dispuestas juntas —las cuatro decisiones de las que realmente se compone un pedido de marca propia."
+    "src": "/images/products-hyde/607-sset-tubular-lock-2.webp",
+    "ratio": "16 / 9",
+    "label": "607 SSET tubular lock, original catalogue photograph showing the mechanism.",
+    "labelEs": "Cerradura tubular 607 SSET, fotografía original del mecanismo."
   },
   "relatedModels": [
     "607 SSET",
@@ -47,5 +48,75 @@
     "Dos cosas que conviene cerrar antes que nada, en cualquiera de los cuatro casos. Confirme la función y la mano que necesita, porque ET, BK y PS son funciones y no acabados, y un pedido entero en la equivocada es inservible. Y confirme el acabado en todos los artículos del conjunto: si la manilla es negra, las bisagras, el escudo del cilindro y los tornillos vistos también deberían serlo, y los acabados mezclados dentro de una misma puerta son lo que más veces detectamos en un primer pedido de marca propia. El plazo de producción parte de 30 días desde la confirmación del pedido; la fecha exacta depende de los modelos, las cantidades y los acabados."
   ],
   "seoTitleEs": "Herrajes OEM y marca propia: qué cambia | Canton Hyland",
-  "seoDescriptionEs": "Embalaje, marca en la pieza, acabado y utillaje son cuatro decisiones OEM distintas con cuatro costes distintos. Qué requiere cada una, por qué importa que el utillaje sea propio, y qué enviar para empezar."
+  "seoDescriptionEs": "Embalaje, marca en la pieza, acabado y utillaje son cuatro decisiones OEM distintas con cuatro costes distintos. Qué requiere cada una, por qué importa que el utillaje sea propio, y qué enviar para empezar.",
+  "faq": {
+    "en": [
+      {
+        "question": "What are the four kinds of OEM work?",
+        "answer": "Packaging and marking — your logo, carton markings, barcodes and instruction sheet, with nothing about the hardware changed. Branding on the part itself, which modifies an existing die rather than cutting a new one. Finish, which is usually a scheduling question rather than a development one because the plating line already runs it for something else. And the part itself — a lever profile, a rosette, a plate, a backset, a case — which is where moulds and dies come in."
+      },
+      {
+        "question": "What is the cheapest way to get a product that looks like ours and not everyone else's?",
+        "answer": "A distinctive finish, which needs no new mould at all. Our catalogue publishes polished brass, antique brass, satin nickel, satin chrome, black nickel, and satin and polished stainless, and a finish that is not on the standard list for a given model is usually a scheduling question rather than a development one."
+      },
+      {
+        "question": "Why does it matter that the tooling is the factory's own?",
+        "answer": "Because it is the difference between a factory and a trading office standing in front of one. When the die is in your building, a change of lever profile is a production decision made by people who can walk to the press. When it is not, the same request becomes an email to a third party whose schedule and quality you do not control — which is usually why a buyer cannot get a straight answer on lead time."
+      },
+      {
+        "question": "What should be fixed before any private-label order?",
+        "answer": "The function and handing, because ET, BK and PS are functions rather than finishes and an entire order in the wrong one is unusable. And the finish across every item in the set: if the lever is black, the hinges, the cylinder escutcheon and the visible screws should be black too. Mixed finishes within one door are the single most common thing we catch on a first private-label order. Production lead time starts at 30 days from order confirmation."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quais são os quatro tipos de trabalho OEM?",
+        "answer": "Embalagem e marcação — o seu logotipo, marcação de caixa, códigos de barras e manual, sem nada mudar na ferragem. Marcação na própria peça, que modifica uma matriz existente em vez de cortar uma nova. Acabamento, que em geral é uma questão de programação e não de desenvolvimento, porque a linha de galvanoplastia já o roda para outra coisa. E a própria peça — perfil de maçaneta, roseta, espelho, distância ao eixo, caixa — que é onde entram moldes e matrizes."
+      },
+      {
+        "question": "Qual o jeito mais barato de ter um produto que pareça seu?",
+        "answer": "Um acabamento distintivo, que não exige molde novo nenhum. O nosso catálogo publica latão polido, latão antigo, níquel acetinado, cromo acetinado, níquel preto, e inox acetinado e polido, e um acabamento que não esteja na lista padrão de um determinado modelo costuma ser uma questão de programação e não de desenvolvimento."
+      },
+      {
+        "question": "Por que importa que o ferramental seja da própria fábrica?",
+        "answer": "Porque é a diferença entre uma fábrica e um escritório comercial parado na frente de uma. Quando a matriz está no seu prédio, mudar um perfil de maçaneta é uma decisão de produção tomada por gente que pode ir a pé até a prensa. Quando não está, o mesmo pedido vira um e-mail para um terceiro cujo cronograma e qualidade você não controla — que é normalmente a razão de um comprador não conseguir uma resposta direta sobre prazo."
+      },
+      {
+        "question": "O que resolver antes de qualquer pedido de marca própria?",
+        "answer": "A função e a mão, porque ET, BK e PS são funções e não acabamentos e um pedido inteiro na função errada é inutilizável. E o acabamento em cada item do conjunto: se a maçaneta é preta, as dobradiças, o espelho do cilindro e os parafusos visíveis também devem ser pretos. Acabamentos misturados numa mesma porta são a coisa que mais pegamos num primeiro pedido de marca própria. O prazo de produção começa em 30 dias a partir da confirmação do pedido."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuáles son los cuatro tipos de trabajo OEM?",
+        "answer": "Embalaje y marcado — su logotipo, marcado de caja, códigos de barras y manual, sin cambiar nada del herraje. Marcado en la propia pieza, que modifica un troquel existente en vez de cortar uno nuevo. Acabado, que suele ser una cuestión de programación y no de desarrollo, porque la línea de galvanoplastia ya lo hace para otra cosa. Y la pieza misma — perfil de manilla, rosetón, escudo, distancia al eje, caja — que es donde entran moldes y troqueles."
+      },
+      {
+        "question": "¿Cuál es la forma más barata de tener un producto que parezca suyo?",
+        "answer": "Un acabado distintivo, que no exige ningún molde nuevo. Nuestro catálogo publica latón pulido, latón antiguo, níquel satinado, cromo satinado, níquel negro, e inoxidable satinado y pulido, y un acabado que no esté en la lista estándar de un modelo concreto suele ser una cuestión de programación y no de desarrollo."
+      },
+      {
+        "question": "¿Por qué importa que el utillaje sea de la propia fábrica?",
+        "answer": "Porque es la diferencia entre una fábrica y una oficina comercial delante de una. Cuando el troquel está en su edificio, cambiar un perfil de manilla es una decisión de producción que toma gente que puede ir andando hasta la prensa. Cuando no lo está, la misma petición se convierte en un correo a un tercero cuyo calendario y calidad usted no controla — que suele ser la razón de que un comprador no consiga una respuesta clara sobre plazos."
+      },
+      {
+        "question": "¿Qué hay que cerrar antes de cualquier pedido de marca propia?",
+        "answer": "La función y la mano, porque ET, BK y PS son funciones y no acabados y un pedido entero en la función equivocada es inservible. Y el acabado en cada elemento del conjunto: si la manija es negra, las bisagras, el escudo del cilindro y los tornillos visibles también deben ser negros. Los acabados mezclados en una misma puerta son lo que más detectamos en un primer pedido de marca propia. El plazo de producción arranca en 30 días desde la confirmación del pedido."
+      }
+    ]
+  },
+  "titlePt": "O que OEM realmente muda, e o que não muda",
+  "summaryPt": "\"Vocês fazem OEM?\" é a pergunta mais comum que a nossa mesa de exportação recebe e a menos útil, porque a resposta é sempre sim e não resolve nada. São quatro coisas diferentes, em quatro pontos muito diferentes da escala de custo e prazo.",
+  "bodyPt": [
+    "\"Vocês fazem OEM?\" é a pergunta mais comum que a nossa mesa de exportação recebe e a menos útil, porque a resposta é sempre sim e não resolve nada. O que o comprador precisa saber é qual de quatro coisas diferentes ele está pedindo, já que elas ficam em quatro pontos muito diferentes da escala de custo e de prazo.",
+    "A primeira é embalagem e marcação. O seu logotipo na caixa, a sua marcação de caixa de papelão, os seus códigos de barras, o seu manual, o seu idioma. Nada na ferragem muda; o que muda é o que chega no palete e o que o cliente vê na prateleira. Esta é de longe a forma mais barata de marca própria, e para um distribuidor construindo uma marca de casa costuma ser tudo o que é necessário.",
+    "A segunda é marcação na própria peça — a sua marca na roseta, no espelho ou na maçaneta. Isto é uma questão de ferramental e não de embalagem, porque um logotipo numa peça estampada vem da matriz, mas é uma questão pequena de ferramental: modifica uma matriz existente em vez de cortar uma nova. Decida cedo: planejar uma marca dentro da primeira corrida de produção é muito mais barato que acrescentá-la a uma repetição.",
+    "A terceira é o acabamento. O nosso catálogo publica latão polido, latão antigo, níquel acetinado, cromo acetinado, níquel preto, e inox acetinado e polido, e um acabamento que não esteja na lista padrão de um determinado modelo costuma ser uma questão de programação e não de desenvolvimento, porque a linha de galvanoplastia já o roda para outra coisa. Um acabamento distintivo é o caminho mais rápido para um produto que parece seu e não de todo mundo, e não exige molde novo nenhum.",
+    "A quarta é a própria peça: um perfil de maçaneta, o formato de uma roseta, um espelho, uma distância ao eixo, uma caixa. É aqui que entram moldes e matrizes, e onde a resposta honesta deixa de ser genérica. Se existe molde para a forma que você quer, produzimos. Se não existe, fazemos o ferramental — e custo de ferramental, tempo de amostragem e a quantidade mínima que justifica uma corrida customizada dependem inteiramente da peça. Uma roseta não é uma caixa de fechadura. Cotamos isso por projeto em vez de publicar uma faixa, porque uma faixa larga o bastante para ser verdadeira seria larga demais para ser útil.",
+    "O que torna o quarto caso viável aqui, em vez de um projeto especial, é que o ferramental por trás do nosso catálogo é nosso. Essa é a diferença entre uma fábrica e um escritório comercial parado na frente de uma: quando a matriz está no seu prédio, mudar um perfil de maçaneta é uma decisão de produção tomada por gente que pode ir a pé até a prensa. Quando não está, o mesmo pedido vira um e-mail para um terceiro cujo cronograma e qualidade você não controla, e a razão de um comprador não conseguir uma resposta direta sobre prazo é normalmente que quem responde também não tem uma.",
+    "Comece pelo que você tem, e não por uma especificação. Uma amostra física é o melhor; um desenho é quase tão bom; uma fotografia com uma medida escrita ao lado já basta para começar. A nossa engenharia volta com o que é necessário para fazê-la, e dirá com todas as letras quando o que você pediu é um molde novo e não uma variação — porque a diferença entre essas duas respostas é de semanas, e é melhor sabê-la no começo.",
+    "Duas coisas valem ser resolvidas antes de tudo, em qualquer um dos quatro casos. Confirme a função e a mão de que você precisa, porque ET, BK e PS são funções e não acabamentos e um pedido inteiro na função errada é inutilizável. E confirme o acabamento em cada item do conjunto: se a maçaneta é preta, as dobradiças, o espelho do cilindro e os parafusos visíveis também devem ser pretos, e acabamentos misturados numa mesma porta são a coisa que mais pegamos num primeiro pedido de marca própria. O prazo de produção começa em 30 dias a partir da confirmação do pedido; a data exata depende dos modelos, quantidades e acabamentos do seu pedido."
+  ],
+  "seoTitlePt": "OEM e marca própria em ferragens: o que muda",
+  "seoDescriptionPt": "Embalagem, marcação na peça, acabamento e ferramental são quatro decisões de OEM com quatro custos. O que cada uma exige, e o que enviar para começar."
 }

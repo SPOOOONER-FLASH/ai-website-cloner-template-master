@@ -1,4 +1,5 @@
 import drawings from "../../../public/images/drawings/index.json";
+import doorPrep from "../../../public/images/door-prep/index.json";
 import type { Locale } from "@/data/site";
 
 /**
@@ -33,6 +34,41 @@ interface DrawingEntry {
 
 const INDEX = drawings as Record<string, DrawingEntry>;
 
+interface PrepEntry {
+  model: string;
+  diameter: number;
+  centres: number;
+  holeLabel: string;
+  source: { hole: string; centre: string };
+  note: string;
+}
+
+const PREP_INDEX = doorPrep as Record<string, PrepEntry>;
+
+const PREP_COPY = {
+  en: {
+    heading: "Door preparation",
+    pattern: (diameter: number, centres: number) =>
+      `Two holes, Ø${diameter}mm, at ${centres}mm centres.`,
+    caution:
+      "Hole positions only — this is not a product outline. Confirm door thickness and the material you are drilling before cutting.",
+  },
+  es: {
+    heading: "Preparación de la puerta",
+    pattern: (diameter: number, centres: number) =>
+      `Dos taladros de Ø${diameter} mm a ${centres} mm entre ejes.`,
+    caution:
+      "Solo posiciones de taladro — no es un plano de contorno del producto. Confirme el espesor de la puerta y el material que va a taladrar antes de cortar.",
+  },
+  pt: {
+    heading: "Preparação da porta",
+    pattern: (diameter: number, centres: number) =>
+      `Dois furos de Ø${diameter} mm a ${centres} mm entre eixos.`,
+    caution:
+      "Apenas posições de furação — não é o contorno do produto. Confirme a espessura da porta e o material que vai furar antes de cortar.",
+  },
+} as const;
+
 const COPY = {
   en: {
     heading: "Dimensioned drawing",
@@ -48,6 +84,13 @@ const COPY = {
     partialNote: "El contorno de la caja no está publicado; solo se dibujan las cotas indicadas.",
     scale: "Dibujado a escala 1:1 según la ficha publicada",
     open: "Abrir a tamaño completo",
+  },
+  pt: {
+    heading: "Desenho cotado",
+    partial: "Detalhe dos trincos",
+    partialNote: "O contorno da caixa não está publicado; só são desenhadas as cotas indicadas.",
+    scale: "Desenhado à escala 1:1 a partir da ficha publicada",
+    open: "Abrir em tamanho completo",
   },
 } as const;
 
@@ -85,6 +128,54 @@ export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?:
         {t.scale}
         {entry.partial ? ` · ${t.partialNote}` : ""}
       </p>
+    </div>
+  );
+}
+
+/**
+ * The hole pattern to drill, under the outline it belongs to.
+ *
+ * Two drawings answer two questions and a specifier needs both: the outline says whether
+ * the part suits the door, the preparation says what to cut. MIWA publish them as 外形図
+ * and 切欠図 and keep them together; so do we, because a preparation drawing found on its
+ * own is a set of holes with no part attached to it.
+ *
+ * ⚠ This one is the drawing somebody saws from, so it carries the disclaimer in the
+ * markup as well as burnt into the SVG: hole positions only, and door thickness is the
+ * customer's to confirm. Renders for the 56 products whose records publish both a fixing
+ * hole diameter and a centre distance, and nothing at all for the rest.
+ *
+ * ⚠ RENDERED AS A SIBLING OF ProductDrawing, NOT INSIDE IT. The first version nested this
+ * under the outline drawing, which would have meant it never rendered once: the two sets
+ * do not overlap at all — every one of the 56 preparation drawings belongs to a product
+ * with NO outline drawing, because a pull handle publishes its fixing centres while a
+ * lock case publishes its case geometry. Two recipes, two populations.
+ */
+export function DoorPreparation({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
+  const entry = PREP_INDEX[slug];
+  if (!entry) return null;
+  const t = PREP_COPY[locale];
+  const href = `/images/door-prep/${slug}.svg`;
+
+  return (
+    <div className="mt-48 border-t border-line pt-24">
+      <h2 className="text-h3 text-ink">{t.heading}</h2>
+
+      <a href={href} className="mt-16 block border border-line bg-surface-alt p-24">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={href}
+          alt={`${entry.model} — ${t.heading}`}
+          loading="lazy"
+          decoding="async"
+          className="mx-auto block max-h-[36rem] w-auto"
+        />
+      </a>
+
+      <p className="mt-12 text-c2 text-ink-secondary">
+        {t.pattern(entry.diameter, entry.centres)}
+      </p>
+      <p className="mt-4 text-c2 text-ink-tertiary">{t.caution}</p>
     </div>
   );
 }

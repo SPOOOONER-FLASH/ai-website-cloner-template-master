@@ -1,0 +1,31 @@
+{
+  "id": "curated-order-dimensions",
+  "sources": [
+    {
+      "model": "9004S",
+      "sha256": "bd69a4c7704dad039b8f9fcd441b92af622faea4f486b9f2aac4f7fdf24636c4",
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    },
+    {
+      "model": "70SN",
+      "sha256": "69f4b3ee1349f482ee2f81ec52de37664fd45dc4138efa2166efe465ad21b9c7",
+      "crop": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "exactTexturePixels": true,
+      "reviewedAlpha": false
+    }
+  ],
+  "packed": true,
+  "scope": "Real-photo studio layout, not product CAD"
+}

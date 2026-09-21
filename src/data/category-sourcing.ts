@@ -1,4 +1,5 @@
 import { getProductsByCategory } from "./products";
+import type { Locale } from "@/data/site";
 
 /**
  * The sourcing line on each category page.
@@ -49,7 +50,7 @@ const SINGULAR: Record<string, { en: string; es: string }> = {
   "fixed-grab-bars": { en: "fixed grab bar", es: "barra de apoyo fija" },
 };
 
-export function categorySourcingLine(slug: string, locale: "en" | "es"): string | null {
+export function categorySourcingLine(slug: string, locale: Locale): string | null {
   const term = SINGULAR[slug];
   if (!term) return null;
 

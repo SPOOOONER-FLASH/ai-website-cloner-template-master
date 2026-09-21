@@ -91,12 +91,56 @@ export function getLegacyCategoryParams(): { category: string }[] {
   return Object.keys(CATEGORY_ALIASES).map((category) => ({ category }));
 }
 
-export function getLegacyProductParams(): { category: string; slug: string }[] {
+/**
+ * Retired product URLs, each with the destination it redirects to.
+ *
+ * ---------------------------------------------------------------------------
+ * WHY THE DESTINATION IS RETURNED RATHER THAN CHECKED HERE
+ *
+ * One `content/products` directory feeds two sites, and each record says which ones it
+ * belongs to. A taxonomy move does not: `t2973a-stainless-steel-handle → t2973-…` is a
+ * true statement about the catalogue, and `t2973` is a RAYEN-only record — so on the HYDE
+ * export that stub was a redirect pointing at a page this site never builds. `audit-seo`
+ * caught it as `redirect-target-missing` on 2026-09-16, which is the same class of fault
+ * as a 301 chain: a crawler follows it and finds a 404 where a 200 used to be.
+ *
+ * The filter belongs to the caller, not here. Deciding it in this module needs the product
+ * records, and `products.ts` imports this file — so reading it back is a cycle, and
+ * importing the generated catalogue directly drags 800 JSON files into every unit test
+ * that touches a slug. Both were tried; both broke `node --test`.
+ *
+ * So the move is reported with `to`/`toSlug` and the route drops what it does not build.
+ */
+export function getLegacyProductParams(): {
+  category: string;
+  slug: string;
+  to?: string;
+  toSlug?: string;
+}[] {
   return [
     ...Object.entries(CATEGORY_ALIASES).flatMap(([category, alias]) =>
       alias.productSlugs.map((slug) => ({ category, slug })),
     ),
-    ...PRODUCT_MOVES.map((m) => ({ category: m.from, slug: m.slug })),
-    ...PRODUCT_MERGES.map((m) => ({ category: m.category, slug: m.from })),
+    ...PRODUCT_MOVES.map((m) => ({
+      category: m.from,
+      slug: m.slug,
+      to: m.to,
+      toSlug: m.slug,
+    })),
+    ...PRODUCT_MERGES.map((m) => ({
+      category: m.category,
+      slug: m.from,
+      to: m.category,
+      toSlug: m.to,
+    })),
   ];
+}
+
+/** Drops the retired URLs whose destination this site does not build. */
+export function buildableLegacyProductParams(
+  isBuilt: (category: string, slug: string) => boolean,
+): { category: string; slug: string }[] {
+  return getLegacyProductParams()
+    .filter((entry) => !entry.to || isBuilt(entry.to, entry.toSlug ?? entry.slug))
+    .map(({ category, slug }) => ({ category, slug }));
 }

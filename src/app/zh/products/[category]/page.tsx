@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CategoryBody } from "@/components/rayen/pages";
-import { getCategoryFor, products } from "@/data/rayen";
+import { absoluteUrl, alternatesFor, getCategoryFor, products } from "@/data/rayen";
 import { STRINGS } from "@/data/rayen-i18n";
 import { categoriesFor } from "@/data/rayen";
 
@@ -20,7 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: category.name,
     description: STRINGS.zh.products.categoryIntro(count),
-    alternates: { canonical: `/products/${slug}/` },
+    alternates: alternatesFor("zh", `/products/${slug}/`),
+    openGraph: {
+      url: absoluteUrl(`/products/${slug}/`),
+      /* The category cover, so a shared category link shows what is in it rather than the
+         press hall the root layout supplies as the site-wide default. */
+      images: category.image?.src ? [{ url: absoluteUrl(category.image.src) }] : undefined,
+    },
   };
 }
 

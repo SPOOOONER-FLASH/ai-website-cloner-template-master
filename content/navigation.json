@@ -3,44 +3,52 @@
     {
       "label": "Products",
       "labelEs": "Productos",
-      "href": "/products"
+      "href": "/products",
+      "labelPt": "Produtos"
     },
     {
       "label": "Product Finder",
       "labelEs": "Buscador",
-      "href": "/product-finder"
+      "href": "/product-finder",
+      "labelPt": "Localizador"
     },
     {
       "label": "Applications",
       "labelEs": "Aplicaciones",
-      "href": "/projects"
+      "href": "/projects",
+      "labelPt": "Aplicações"
     },
     {
       "label": "News",
       "labelEs": "Noticias",
-      "href": "/news"
+      "href": "/news",
+      "labelPt": "Notícias"
     },
     {
       "label": "Company",
       "labelEs": "Empresa",
-      "href": "/company"
+      "href": "/company",
+      "labelPt": "Empresa"
     },
     {
       "label": "Downloads",
       "labelEs": "Descargas",
-      "href": "/downloads"
+      "href": "/downloads",
+      "labelPt": "Downloads"
     }
   ],
   "footer": [
     {
       "label": "Contact",
       "labelEs": "Contacto",
-      "href": "/contact"
+      "href": "/contact",
+      "labelPt": "Contato"
     },
     {
       "label": "FAQ",
       "labelEs": "Preguntas frecuentes",
-      "href": "/faq"
+      "href": "/faq",
+      "labelPt": "Perguntas frequentes"
     }
   ]
 }

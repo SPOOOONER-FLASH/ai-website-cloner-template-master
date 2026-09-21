@@ -10,7 +10,8 @@
     "role": "Digital Communications, Canton Hyland",
     "roleEs": "Comunicación Digital, Canton Hyland",
     "credential": "MA Digital Media, Johns Hopkins University",
-    "url": "https://www.linkedin.com/in/leiboliu"
+    "url": "https://www.linkedin.com/in/leiboliu",
+    "rolePt": "Comunicação Digital, Canton Hyland"
   },
   "body": [
     "Look at the search terms that bring people to a hardware factory's site and a pattern appears immediately: a great many of them are another company's model numbers. A rim lock from one brand, a concealed hinge from another, a latch code off a twenty-year-old carton, a part reference from a catalogue that is out of print. Nobody types those hoping to read about us. They type them because they have a part that works, the supplier is gone or slow or expensive, and they need to know what to order to get the same thing again.",
@@ -29,7 +30,7 @@
     "labelEs": "Una caja de cerradura fotografiada con el frente a la vista —las cotas de esta cara son las que deciden si una sustitución encaja en una puerta ya mecanizada."
   },
   "relatedModels": [
-    "Lc07 85×45mm",
+    "LC07 85×45mm",
     "5681",
     "SSH017"
   ],
@@ -48,5 +49,75 @@
     "Una cosa más, para quien sustituye una pieza en un edificio existente y no especifica uno nuevo: compruebe el cerradero y el recibidor antes de pedir la cerradura. En una reforma la restricción es el marco, no la puerta, y lo que más veces hace fracasar una sustitución no es el cuerpo de la cerradura, sino el hueco del cerradero, que se hizo para la pieza antigua y no se va a rehacer."
   ],
   "seoTitleEs": "Cómo encontrar el equivalente de una cerradura | Canton Hyland",
-  "seoDescriptionEs": "Seis cotas deciden si una cerradura de embutir sustituye a otra: distancia al eje, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma."
+  "seoDescriptionEs": "Seis cotas deciden si una cerradura de embutir sustituye a otra: distancia al eje, distancia entre centros, frente, caja, cuadradillo y espesor de puerta. Por qué el modelo, el acabado y el grado no se trasladan, y qué comprobar primero en una reforma.",
+  "faq": {
+    "en": [
+      {
+        "question": "How do you find an equivalent for a lock you already buy?",
+        "answer": "By geometry, not by name. A lock is defined by its dimensions rather than its model number: two locks with the same six numbers are interchangeable regardless of what either is called, and two locks with the same name and one different number are not. Measure the part you have, or photograph it beside a ruler with the faceplate visible, and send those numbers with the door thickness and the handing."
+      },
+      {
+        "question": "Which dimensions have to match on a mortise lock?",
+        "answer": "Six. Backset, from the face of the door to the centre of the spindle; centre distance, between the spindle and the cylinder or keyhole; faceplate length and width; case height and depth; spindle size, almost always 8mm square but worth confirming; and door thickness range. Miss the centre distance and the handle and the cylinder will not both line up with the holes already cut in the door — and the door is the thing you cannot change."
+      },
+      {
+        "question": "What should be ignored when cross-referencing?",
+        "answer": "The model number itself, the finish name and the grade designation. Finish naming is not standardised between factories — one supplier's satin nickel is another's brushed nickel is another's SN — so match a finish against a sample rather than a word. Grade designations are standard-specific: an ANSI grade and an EN classification measure different things under different tests, and neither translates into the other by arithmetic."
+      },
+      {
+        "question": "What most often makes a replacement fail on a retrofit?",
+        "answer": "Not the lock body — the strike plate cutout, which was made for the old part and will not be remade. In a retrofit the frame is the constraint rather than the door, so check the strike and the keep before you order the lock. On a rim lock the same applies to the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Como achar o equivalente de uma fechadura que você já compra?",
+        "answer": "Pela geometria, não pelo nome. Uma fechadura é definida pelas suas dimensões e não pelo seu código de modelo: duas fechaduras com os mesmos seis números são intercambiáveis, independentemente de como cada uma se chama, e duas com o mesmo nome e um número diferente não são. Meça a peça que você tem, ou fotografe-a ao lado de uma régua com a testa visível, e envie esses números com a espessura da porta e a mão."
+      },
+      {
+        "question": "Quais dimensões têm de bater numa fechadura de embutir?",
+        "answer": "Seis. Distância ao eixo, da face da porta até o centro do quadrado; distância entre centros, entre o quadrado e o cilindro ou a fechadura; comprimento e largura da testa; altura e profundidade da caixa; tamanho do quadrado, quase sempre 8 mm mas vale confirmar; e faixa de espessura de porta. Erre a distância entre centros e a maçaneta e o cilindro não vão os dois coincidir com os furos já feitos na porta — e a porta é a coisa que você não pode trocar."
+      },
+      {
+        "question": "O que deve ser ignorado ao buscar equivalência?",
+        "answer": "O próprio código de modelo, o nome do acabamento e a designação de grau. A nomenclatura de acabamento não é padronizada entre fábricas — o níquel acetinado de um fornecedor é o níquel escovado de outro e o SN de um terceiro — então compare acabamento contra uma amostra e não contra uma palavra. Designações de grau são específicas de cada norma: um grau ANSI e uma classificação EN medem coisas diferentes sob ensaios diferentes, e nenhum se traduz no outro por aritmética."
+      },
+      {
+        "question": "O que mais faz uma substituição falhar numa reforma?",
+        "answer": "Não o corpo da fechadura — o recorte do contra-testa, que foi feito para a peça antiga e não será refeito. Numa reforma o marco é a restrição e não a porta, então confira o contra-testa e o receptor antes de pedir a fechadura. Numa fechadura de sobrepor o mesmo vale para o tipo de contra-testa, porque um contra-testa de sobrepor e um receptor de trava de sobrepor são peças fundidas diferentes e o marco já está preparado para uma delas."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cómo se encuentra el equivalente de una cerradura que ya se compra?",
+        "answer": "Por geometría, no por nombre. Una cerradura la definen sus dimensiones y no su código de modelo: dos cerraduras con los mismos seis números son intercambiables, se llamen como se llamen, y dos con el mismo nombre y un número distinto no lo son. Mida la pieza que tiene, o fotografíela junto a una regla con el frente visible, y envíe esos números con el espesor de la puerta y la mano."
+      },
+      {
+        "question": "¿Qué dimensiones tienen que coincidir en una cerradura de embutir?",
+        "answer": "Seis. Distancia al eje, de la cara de la puerta al centro del cuadradillo; distancia entre ejes, entre el cuadradillo y el cilindro o la llave; largo y ancho del frente; alto y fondo de la caja; medida del cuadradillo, casi siempre 8 mm pero conviene confirmarlo; y rango de espesor de puerta. Falle la distancia entre ejes y la manija y el cilindro no coincidirán los dos con los taladros ya hechos en la puerta — y la puerta es lo que no se puede cambiar."
+      },
+      {
+        "question": "¿Qué hay que ignorar al buscar una equivalencia?",
+        "answer": "El propio código de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas — el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero — así que compare acabado contra una muestra y no contra una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas bajo ensayos distintos, y ninguno se traduce al otro por aritmética."
+      },
+      {
+        "question": "¿Qué hace fallar más a menudo una sustitución en una reforma?",
+        "answer": "No el cuerpo de la cerradura — el recorte del cerradero, que se hizo para la pieza antigua y no se va a rehacer. En una reforma la restricción es el marco y no la puerta, así que compruebe el cerradero antes de pedir la cerradura. En una cerradura de sobreponer pasa lo mismo con el tipo de cerradero, porque un cerradero de sobreponer y un receptor de condena son piezas fundidas distintas y el marco ya está preparado para una de ellas."
+      }
+    ]
+  },
+  "titlePt": "Encontrar o equivalente de uma fechadura que você já compra",
+  "summaryPt": "Uma fechadura é definida pela sua geometria e não pelo seu nome. Duas fechaduras com os mesmos seis números são intercambiáveis, independentemente de como cada uma se chama.",
+  "bodyPt": [
+    "Olhe os termos de busca que levam pessoas ao site de uma fábrica de ferragens e um padrão aparece imediatamente: muitos deles são códigos de modelo de outra empresa. Uma fechadura de sobrepor de uma marca, uma dobradiça oculta de outra, um código de trinco tirado de uma caixa de vinte anos atrás, uma referência de um catálogo fora de circulação. Ninguém digita isso esperando ler sobre nós. Digitam porque têm uma peça que funciona, o fornecedor sumiu, está lento ou está caro, e precisam saber o que pedir para ter a mesma coisa de novo.",
+    "É uma boa pergunta e tem uma resposta precisa, que é: uma fechadura é definida pela sua geometria e não pelo seu nome. Duas fechaduras com os mesmos seis números são intercambiáveis, independentemente de como cada uma se chama. Duas fechaduras com o mesmo nome e um número diferente não são.",
+    "Numa fechadura de embutir, esses seis são: distância ao eixo, da face da porta até o centro do quadrado; distância entre centros, entre o quadrado e o cilindro ou a fechadura; comprimento e largura da testa; altura e profundidade da caixa; tamanho do quadrado, quase sempre 8 mm mas vale confirmar; e faixa de espessura de porta. Obtenha esses seis e a substituição funciona. Erre a distância entre centros e a maçaneta e o cilindro não vão os dois coincidir com os furos já feitos na porta — e a porta é a coisa que você não pode trocar.",
+    "Numa fechadura de sobrepor a lista é mais curta mas tem o mesmo caráter: distância ao eixo, tamanho da caixa, se o cilindro é simples ou duplo, avanço do trinco, e o tipo de contra-testa, porque um contra-testa de sobrepor e um receptor de trava de sobrepor são peças fundidas diferentes e o marco já está preparado para uma delas.",
+    "Numa dobradiça: altura e largura da asa, número de nós, tipo de pino, e se ele é fixo ou solto. Uma dobradiça 3 mm mais alta que o rebaixo já usinado no marco é uma dobradiça que não entra, e nada sobre acabamento ou grau muda isso.",
+    "O que não se transfere, e deve ser ignorado ao buscar equivalência: o próprio código de modelo, o nome do acabamento, e a designação de grau. A nomenclatura de acabamento não é padronizada entre fábricas — o níquel acetinado de um fornecedor é o níquel escovado de outro e o SN de um terceiro — então compare acabamento olhando uma amostra e não igualando uma palavra. Designações de grau são específicas de cada norma: um grau ANSI e uma classificação EN medem coisas diferentes sob ensaios diferentes e nenhum se traduz no outro por aritmética.",
+    "O caminho prático é curto. Meça a peça que você tem, ou fotografe-a ao lado de uma régua com a testa visível. Envie esses números, a espessura da porta, e se a porta é mão esquerda ou direita. A nossa engenharia volta com o modelo que corresponde — ou, e esta é a parte que vale dizer, com uma resposta direta de que não fabricamos um. Uma quase-correspondência recomendada como equivalente é como acontece um contêiner de metal inutilizável, e preferimos perder a linha a enviá-lo.",
+    "Mais uma coisa, para quem está substituindo uma peça num prédio existente em vez de especificando obra nova: confira o contra-testa e o receptor antes de pedir a fechadura. Numa reforma o marco é a restrição, não a porta, e o item que mais frequentemente faz uma substituição falhar não é o corpo da fechadura — é o recorte do contra-testa, que foi feito para a peça antiga e não será refeito."
+  ],
+  "seoTitlePt": "Como achar o equivalente de uma fechadura de porta",
+  "seoDescriptionPt": "Seis dimensões decidem se uma fechadura de embutir substitui outra. Por que modelo, acabamento e grau não se transferem, e o que conferir numa reforma."
 }

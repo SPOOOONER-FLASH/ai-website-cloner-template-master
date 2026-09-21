@@ -1,0 +1,132 @@
+{
+  "_readme": [
+    "第七批：甲方 2026-09-14 发来的「大拉手T(G)2751搭配UL750门把手」，3 个新型号。",
+    "",
+    "同一个款式的三件：T2751 实体门、G2751 玻璃门、UL750 配套执手，styleFamily 都是 2751。",
+    "客户包名里的「搭配UL750门把手」就是这层关系，写进 styleFamily，两个方向都能推出来。",
+    "",
+    "包里还有 T2750 的图，目录里已经有这个型号了，没有收 —— 在这里重建会替换掉它原有的图。",
+    "",
+    "G2751 没有图纸，规格表是空的。不是忘了填：G 和 T 同族不同长、不同固定方式，",
+    "把 T2751 的中心距抄过去，就是在玻璃上开错一个退不回去的孔。",
+    "",
+    "UL750 的图纸上有日文「Ø46切カキ」（开孔），已在 scripts/delocalize-drawings.mjs 里",
+    "按坐标改写成中文「开孔 Ø46」—— 中文站的图纸上不该有日文。"
+  ],
+  "sourceRoot": "C:/Users/86132/rayen-batch7-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "models": [
+    {
+      "model": "T2751",
+      "slug": "t2751-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "styleFamily": "2751",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "T2751x8D900SZW-L1300.jpg",
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1273mm"
+        },
+        {
+          "label": "Overall length",
+          "value": "1300mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø27mm"
+        },
+        {
+          "label": "Projection",
+          "value": "67mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P=40mm at each end"
+        }
+      ]
+    },
+    {
+      "model": "G2751",
+      "slug": "g2751-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "styleFamily": "2751",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": null,
+      "specs": []
+    },
+    {
+      "model": "UL750",
+      "slug": "ul750-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "styleFamily": "2751",
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "drawing": "UL750x8L900SZW.jpg",
+      "specs": [
+        {
+          "label": "Lever length",
+          "value": "128mm"
+        },
+        {
+          "label": "Spindle centre",
+          "value": "P=34mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Lever section",
+          "value": "Ø22mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        },
+        {
+          "label": "Backset",
+          "value": "51mm"
+        },
+        {
+          "label": "Door cutout",
+          "value": "Ø46mm"
+        }
+      ]
+    }
+  ],
+  "heldBack": [
+    {
+      "model": "T2750",
+      "reason": "目录里已经有了。在这里重建会替换掉它原有的图而不是追加。"
+    }
+  ]
+}

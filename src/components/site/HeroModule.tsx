@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { EditorialAtlas } from "./EditorialAtlas";
 import { ArrowLink } from "./ArrowLink";
 import { cn } from "@/lib/utils";
+import { localeFromPath } from "@/data/locales";
 import type { HeroModuleContent } from "@/types/fsb-modules";
 
 /**
@@ -148,10 +150,14 @@ function HeroSide({
                 homeEditorial && "home-editorial-media",
               )}
             >
-              <MediaPlaceholder
+              {media.src === "/images/editorial/hyde-real-product-atlas.webp" ? (
+                <div className="[&>div]:aspect-[3/2]">
+                  <EditorialAtlas locale={localeFromPath(href)} />
+                </div>
+              ) : <MediaPlaceholder
                 {...media}
                 sizes="(min-width: 1440px) 960px, (min-width: 744px) 66vw, 100vw"
-              />
+              />}
             </div>
 
             <div className="col-span-full grid grid-cols-subgrid gap-x gap-y-16 md:order-first md:col-span-3 xl:col-span-7">
@@ -177,6 +183,7 @@ function HeroSide({
               aria-label={title}
               className={cn(
                 "outline-offset absolute inset-0",
+                media.src === "/images/editorial/hyde-real-product-atlas.webp" && "hidden",
                 !homeAccent && !homeEditorial &&
                   "hover-hover:group-hover:outline hover-hover:group-hover:outline-1 hover-hover:group-hover:outline-ink",
               )}

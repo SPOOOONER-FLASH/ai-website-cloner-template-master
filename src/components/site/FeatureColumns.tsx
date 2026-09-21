@@ -1,0 +1,102 @@
+import Link from "next/link";
+import type { Locale } from "@/data/site";
+import {
+  featureColumns,
+  featureColumnsCta,
+  featureColumnsHeading,
+  featureColumnsLede,
+} from "@/data/feature-columns";
+import { cn } from "@/lib/utils";
+import { ArrowLink } from "./ArrowLink";
+import { MediaPlaceholder } from "./MediaPlaceholder";
+import { localised } from "@/lib/localised";
+
+/**
+ * A rail of columns, sitting directly under the flagship pair.
+ *
+ * The section above says what we tooled. This one says what we can explain, because the
+ * two questions are different and only one of them is answered by a product page. A
+ * specifier does not arrive looking for "DC02"; they arrive with a pair of fire doors.
+ *
+ * ---------------------------------------------------------------------------
+ * THE TRACK IS THE SAME IDIOM AS THE AR-4 SHOWCASE, DELIBERATELY
+ *
+ * Native scroll-snap, no JavaScript, no arrows. A third component inventing its own
+ * carousel would cost bundle weight on the page that was cut from 2,241 KB to 669 KB and
+ * would teach the reader a second gesture for the same thing. Cards sit at 82% on a phone
+ * so the next one is visibly cut off at the right edge — that clipped edge is what tells
+ * a thumb to swipe, which is why it is not 100%. From `sm` the track becomes a grid and
+ * nothing scrolls.
+ *
+ * Every figure on a card is counted from the catalogue at build time; see
+ * src/data/feature-columns.ts. A card whose count cannot be derived shows no figure
+ * rather than a rounded one.
+ */
+export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
+  const columns = featureColumns();
+  if (!columns.length) return null;
+
+  return (
+    <section className="layout mt-64 lg:mt-96" aria-labelledby="feature-columns-heading">
+      <div className="col-content grid w-full grid-cols gap-x">
+        <div className="col-span-full lg:col-span-4 xl:col-span-7">
+          <h2 id="feature-columns-heading" className="text-h2 text-ink">
+            {featureColumnsHeading(locale)}
+          </h2>
+          <p className="mt-16 text-c1 text-ink-secondary">{featureColumnsLede(locale)}</p>
+        </div>
+
+        <div
+          className={cn(
+            "horizontal-snap col-span-full mt-32 flex snap-x snap-mandatory gap-16",
+            "overflow-x-auto overscroll-x-contain",
+            "sm:grid sm:grid-cols-2 sm:gap-24 sm:overflow-visible lg:grid-cols-3",
+          )}
+        >
+          {columns.map((column) => (
+            <Link
+              key={column.id}
+              href={localised(column.href, locale)}
+              className="hard-shadow-card group flex w-[82%] min-w-[82%] flex-none snap-start flex-col bg-surface sm:w-auto sm:min-w-0"
+            >
+              <MediaPlaceholder
+                src={column.image.src}
+                ratio="3 / 2"
+                label={locale === "es" ? column.image.labelEs : column.image.label}
+                sizes="(min-width: 1440px) 620px, (min-width: 744px) 46vw, 82vw"
+              />
+              <div className="flex flex-1 flex-col border-t border-line p-24">
+                <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
+                  {localised(column.eyebrow, locale)}
+                </p>
+                <h3 className="title-marker mt-12 text-h3 text-ink">{localised(column.title, locale)}</h3>
+                <p className="mt-16 text-c1 text-ink-secondary">{localised(column.body, locale)}</p>
+                {/*
+                  The counted fact sits on the border above the call to action, where a
+                  spec table would put it — a number is the reason to read the column, not
+                  decoration on top of it.
+                */}
+                {column.figure ? (
+                  <p className="mt-24 border-t border-line pt-16 text-c2 tabular-nums text-ink">
+                    {localised(column.figure, locale)}
+                  </p>
+                ) : null}
+                <p className="mt-auto pt-24">
+                  <ArrowLink href={localised(column.href, locale)}>{featureColumnsCta(locale)}</ArrowLink>
+                </p>
+                {/*
+                  The take-away file, under the reading rather than above it. A form
+                  offered before the explanation reads as a lead-capture form; offered
+                  after it, it is the next step the article just described.
+                */}
+                {column.extra ? (
+                  <p className="mt-8 text-c2 text-ink-secondary">{localised(column.extra, locale)}</p>
+                ) : null}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

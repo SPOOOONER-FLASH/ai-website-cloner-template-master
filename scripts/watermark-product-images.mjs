@@ -749,6 +749,21 @@ function parseArguments(argumentsList) {
   return {
     all: flags.has("--all"),
     check: flags.has("--check"),
+    /*
+      An explicit allow-list of relative paths, instead of "everything under the root".
+
+      The product library takes `--all` because every file in it is a photograph of a part
+      we make: marking all of them is correct by construction. The editorial library is not
+      like that. Most of it is AI-generated illustrative imagery — the sidecars say so in
+      as many words ("This is illustrative editorial imagery, not evidence of a specific
+      sellable model") — and stamping HYDE on a generated scene asserts it is our
+      photograph of our goods, which is the one thing the client's principal rejected on
+      sight. See docs/collaboration/OPEN-ITEMS.md and scripts/build-branded-editorial-list.mjs.
+
+      So that library is driven by a list built from declared provenance, and anything
+      without evidence is simply absent from it. The default is not to mark.
+    */
+    list: valueFor("--list", undefined),
     inputRoot: valueFor("--input-root", DEFAULT_INPUT_ROOT),
     logoPath: valueFor("--logo", DEFAULT_LOGO),
     whiteLogoPath: valueFor("--white-logo", DEFAULT_WHITE_LOGO),
@@ -762,9 +777,18 @@ function parseArguments(argumentsList) {
   };
 }
 
-async function checkWatermarkManifest({ inputRoot, manifestPath }) {
+/** The sources a run covers: an allow-list when given, the whole root otherwise. */
+async function resolveInputs({ inputRoot, list }) {
+  if (!list) return listWebpFiles(inputRoot);
+  const relativePaths = JSON.parse(await fs.readFile(list, "utf8"));
+  return relativePaths
+    .map((relativePath) => path.join(inputRoot, relativePath))
+    .sort((left, right) => left.localeCompare(right));
+}
+
+async function checkWatermarkManifest({ inputRoot, manifestPath, list }) {
   const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
-  const inputs = await listWebpFiles(inputRoot);
+  const inputs = await resolveInputs({ inputRoot, list });
   const records = new Map(manifest.files.map((record) => [record.source, record]));
 
   if (manifest.count !== inputs.length || records.size !== inputs.length) {
@@ -800,9 +824,10 @@ async function main() {
     await checkWatermarkManifest(options);
     return;
   }
-  const inputs = options.all
-    ? await listWebpFiles(options.inputRoot)
-    : SAMPLE_RELATIVE_PATHS.map((relativePath) => path.join(options.inputRoot, relativePath));
+  const inputs =
+    options.all || options.list
+      ? await resolveInputs(options)
+      : SAMPLE_RELATIVE_PATHS.map((relativePath) => path.join(options.inputRoot, relativePath));
 
   const inputRoot = path.resolve(options.inputRoot);
   const outputRoot = path.resolve(options.outputRoot);
