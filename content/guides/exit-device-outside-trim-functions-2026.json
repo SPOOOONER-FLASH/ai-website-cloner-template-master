@@ -1,0 +1,254 @@
+{
+  "slug": "exit-device-outside-trim-functions-2026",
+  "title": "Exit Device Outside Trim 2026: Every Trim Function Compared, Dogging Rules, and Why the Bar Is Never the Decision",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "An exit device has two halves and only one of them is a decision. The bar inside always lets people out; the trim outside decides who gets in, whether the door can be held unlocked during business hours, and whether the opening still complies in a fire. This page compares every outside trim function, sets out the dogging rules including the one that is absolute on fire doors, and counts how many of our own fifteen trims publish their function.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Exit Device Outside Trim 2026: Functions and Dogging Rules | Canton Hyland",
+  "seoDescription": "Exit device outside trim functions compared — exit only, night latch, entrance, storeroom, electrified — plus mechanical and cylinder dogging and the absolute fire door rule.",
+  "body": [
+    "An exit device is two products that ship as one. Inside is a bar that always releases the latch, and that half is not a decision — it is a life-safety requirement, and it behaves identically whichever device you buy.",
+    "Outside is the trim, and that half is the entire specification. It decides who can get in, whether the door can be left unlocked during trading hours, whether a key is needed, and what the opening does when the power fails.",
+    "A schedule that names an exit device and not its trim has specified the half that was never in question.",
+    "## Every outside trim function, compared",
+    "| Trim | From outside | Typical use |\n| --- | --- | --- |\n| None — blank plate | No access at all | Pure escape door; a fire exit onto a yard |\n| Pull only (dummy) | Pull the door if it is unlocked; no latch control | Doors held unlocked in occupied hours, secured another way after |\n| Night latch | Key retracts the latch momentarily | Staff entrance; the door relocks behind you |\n| Entrance, keyed lever | Key unlocks the lever, which then retracts the latch until relocked | Main doors that are open in business hours and locked after |\n| Storeroom, keyed lever | Lever is permanently locked; key retracts the latch every time | Plant, stores, anywhere that must never be left unlocked |\n| Thumbpiece with cylinder | Thumbpiece operates when unlocked | Traditional entrances, lever-free aesthetics |\n| Electrified | Credential unlocks the lever or retracts the latch | Access-controlled openings |",
+    "The two that get confused are night latch and entrance. A night latch gives momentary access and relocks; an entrance trim can be left unlocked. On a shop that props its exit doors open all day, the first is wrong and generates a workaround; on a staff door that must never be left open, the second is wrong for the same reason in reverse.",
+    "## The four device types, and which trims each one takes",
+    "Before the trim function there is the device type, and it constrains which trims are even available.",
+    "| Device | Latches into | Suits | Trim availability |\n| --- | --- | --- | --- |\n| Rim | A surface strike on the frame | Single doors, retrofit, the commonest and cheapest | Widest range of trims |\n| Mortise | A lock case inside the door edge | Single doors where a flush edge matters | Good, but tied to that lock case |\n| Surface vertical rod | Head and threshold, rods visible on the face | Pairs, and doors with no mullion | Narrower; some functions unavailable |\n| Concealed vertical rod | Head and threshold, rods inside the leaf | Pairs where appearance matters | Narrowest; the door must be prepared at manufacture |",
+    "The row that catches projects out is the last one. A concealed vertical rod device needs a door built to take it — the rod channels are inside the leaf and cannot be added later. Specifying one on a door already on site is specifying a new door.",
+    "The vertical rod rows also carry a maintenance consequence worth knowing before selection rather than after. Rods latch at head and threshold, which means the bottom latch lives where the floor is, and floors collect grit, water and cleaning chemicals. A bottom rod that has stopped engaging is the commonest fault in this whole category, and on a pair it means the inactive leaf is being held by one latch instead of two.",
+    "Where that is a real risk — a wet entrance, a loading area, anywhere mopped daily — ask about a device with no bottom rod, or accept that the opening needs inspecting rather than assuming.",
+    "## Pairs: the part that is not about the device at all",
+    "A pair of doors with exit devices raises two questions the device cannot answer by itself.",
+    "**Which leaf is active, and does the inactive leaf need to open?** If it does, it needs its own device or flush bolts, and if it does not, flush bolts alone may be enough — but flush bolts on an escape route are constrained, because a leaf that needs a second action to open is a leaf that people cannot use in a crowd.",
+    "**Do the leaves need to close in order?** They do if they overlap, and that is a door coordinator rather than a device — a separate product, on a separate line, that nobody remembers until a pair of fire doors is found sitting open at the meeting stile.",
+    "Both of these are why a pair costs more than twice a single door in hardware terms, and why the schedule line for a pair should be written as a set rather than as two copies of a single-door line.",
+    "## Dogging: what it is, and the one rule that is absolute",
+    "Dogging holds the latch retracted so the door pushes open freely from both sides. A shop with a dogged exit door during trading hours has a door that works like a push-plate and locks properly at night with one action.",
+    "There are two mechanisms. **Mechanical dogging** uses a hex key or similar tool on the device itself. **Cylinder dogging** uses a keyed cylinder in the device, so the same key management as the rest of the building controls it.",
+    "Cylinder dogging costs more and is usually the right answer in any building where more than one person opens up, because a hex key that lives on a hook is a hex key that anybody can use, including after hours.",
+    "**The absolute rule: a fire exit device must not be dogged.** A fire door works by staying latched, and dogging holds the latch retracted — the two are directly contradictory. Devices intended for fire doors are built without a dogging facility for exactly this reason, and a device with dogging fitted to a fire door is a non-compliant opening whatever else is correct about it.",
+    "If a fire-rated door needs to be free-swinging during occupied hours, the answer is an electromagnetic hold-open released by the alarm system, not a dogged latch. Our fire door hardware page covers why.",
+    "## The two questions the trim has to answer before anything else",
+    "**Does the door need to be securable from outside without a key?** If the answer is no — and it usually is — then any trim with a thumbturn or a free lever is wrong, however convenient.",
+    "**What happens when the power fails?** Only relevant for electrified trim, and it is the question that gets deferred to commissioning. Fail-safe releases on power loss; fail-secure stays locked. Which is correct is a decision for that specific opening and two doors in one corridor can legitimately differ.",
+    "## Free egress is not affected by any of this",
+    "Worth stating explicitly because it is the source of most anxiety about exit device specification.",
+    "No outside trim function — not storeroom, not electrified, not a blank plate — changes what happens when somebody pushes the bar from inside. The bar retracts the latch and the door opens. That is the point of the device and it is not configurable.",
+    "So the trim decision is a security and convenience decision, not a safety one, provided the device itself is the right device for the opening. The safety decisions were made earlier: whether the opening needs an exit device at all, and which standard it has to meet.",
+    "## Trim and device are ordered together, and often are not",
+    "The single most common ordering error in this category: a device ordered without its trim, or a trim ordered for a device from another range.",
+    "They are matched products. The trim's spindle or tailpiece has to engage the device's mechanism, the fixing centres have to align, and on many ranges the trim is handed. A trim that looks identical from a catalogue photograph may not engage at all.",
+    "So order them as a pair, by model, and state the function on the trim line rather than assuming it from the device. Our order code page covers how the function suffix is written — `ET` entrance, `PS` passage — and a trim ordered without one arrives as whatever the default is.",
+    "## What we publish on our own trims",
+    "Our catalogue carries 46 products named as panic or exit hardware: 30 devices, 15 outside trims and 1 lock case.",
+    "Of those 15 trims, **three publish a function row** — one entrance, one passage, one described as a safety lock with cylinder. The other twelve publish dimensions and finishes but leave the function to the enquiry.",
+    "That is the honest state, and on this category it matters more than on most, because as this page has argued the function is the entire point of the trim. We are publishing the half that was never in question and leaving the half that was.",
+    "It is being fixed by measurement and confirmation rather than by inference — a trim's function is a property of its mechanism, and writing a plausible one into a specification table would be the same error as writing a plausible dimension. In the meantime, ask, and the answer comes back per model.",
+    "## The four lines an exit device order needs",
+    "The device model, and whether it is rim, mortise, surface vertical rod or concealed vertical rod.",
+    "The trim model **and its function**, named.",
+    "Dogging: none, mechanical, or cylinder — and if the door is fire-rated, none, with the fire rating stated so the device selected is one without the facility.",
+    "The door width and handing, because push bar length follows the door and the trim is frequently handed.",
+    "Our 307 and 311 exit devices are in testing. Until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing — which is also why this page talks about the fire dogging rule in general terms rather than pointing at a product."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What does the outside trim on an exit device decide?",
+        "answer": "Everything except egress. The bar inside always releases the latch and is not configurable. The trim decides who gets in, whether a key is needed, whether the door can be left unlocked in business hours, and what happens when power fails. A schedule naming the device but not the trim has specified the half that was never in question."
+      },
+      {
+        "question": "What is the difference between night latch and entrance trim?",
+        "answer": "A night latch gives momentary access — the key retracts the latch and the door relocks behind you. An entrance trim can be left unlocked, so the lever works freely until somebody relocks it. A shop propping doors open all day needs the second; a staff door that must never be left open needs the first."
+      },
+      {
+        "question": "What is dogging?",
+        "answer": "Holding the latch retracted so the door pushes open freely from both sides, typically during trading hours. Mechanical dogging uses a hex key on the device; cylinder dogging uses a keyed cylinder, which is usually the right answer in any building where more than one person opens up."
+      },
+      {
+        "question": "Can a fire exit device be dogged?",
+        "answer": "No, and this one is absolute. A fire door works by staying latched and dogging holds the latch retracted — the two are directly contradictory. Devices for fire doors are built without a dogging facility for this reason. If a fire door must swing freely in occupied hours, use an electromagnetic hold-open released by the alarm system."
+      },
+      {
+        "question": "Does a locked outside trim affect getting out?",
+        "answer": "No. No trim function — storeroom, electrified, or a blank plate with no access at all — changes what happens when somebody pushes the bar from inside. The latch retracts and the door opens. The trim decision is a security and convenience decision, not a safety one."
+      },
+      {
+        "question": "Can I order a trim separately from the device?",
+        "answer": "Only as a matched pair by model. The trim's spindle or tailpiece has to engage that device's mechanism, the fixing centres must align, and on many ranges the trim is handed. A trim that looks identical in a catalogue photograph may not engage at all."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué decide la guarnición exterior de una barra antipánico?",
+        "answer": "Todo menos la salida. La barra interior siempre libera el picaporte y no es configurable. La guarnición decide quién entra, si hace falta llave, si la puerta puede quedarse abierta en horario comercial, y qué pasa al cortarse la corriente. Un cuadro que nombra el dispositivo y no la guarnición ha especificado la mitad que nunca estuvo en duda."
+      },
+      {
+        "question": "¿Qué diferencia hay entre picaporte de resbalón y guarnición de entrada?",
+        "answer": "El picaporte de resbalón da acceso momentáneo: la llave retrae el picaporte y la puerta se vuelve a cerrar detrás. Una guarnición de entrada puede quedarse desbloqueada, así que la manilla funciona libremente hasta que alguien la vuelva a bloquear. Una tienda que deja las puertas abiertas todo el día necesita la segunda."
+      },
+      {
+        "question": "¿Qué es el dogging?",
+        "answer": "Mantener el picaporte retraído para que la puerta empuje libremente por ambos lados, típicamente en horario comercial. El dogging mecánico usa una llave allen en el dispositivo; el de cilindro usa un cilindro con llave, que suele ser la respuesta correcta en cualquier edificio donde abre más de una persona."
+      },
+      {
+        "question": "¿Se puede hacer dogging en una barra antipánico de cortafuego?",
+        "answer": "No, y esta es absoluta. Una cortafuego funciona permaneciendo enclavada y el dogging mantiene el picaporte retraído: son directamente contradictorios. Los dispositivos para cortafuego se fabrican sin esa función por esta razón. Si una cortafuego debe abatir libremente en horario de ocupación, use una retención electromagnética liberada por la central de alarma."
+      },
+      {
+        "question": "¿Una guarnición exterior bloqueada afecta a la salida?",
+        "answer": "No. Ninguna función de guarnición —almacén, electrificada, o una placa ciega sin acceso alguno— cambia lo que pasa cuando alguien empuja la barra desde dentro. El picaporte se retrae y la puerta abre. La decisión de guarnición es de seguridad y comodidad, no de seguridad de las personas."
+      },
+      {
+        "question": "¿Puedo pedir la guarnición por separado del dispositivo?",
+        "answer": "Solo como pareja emparejada por modelo. El cuadradillo o la cola de la guarnición tiene que engranar con el mecanismo de ese dispositivo, los entrejes de fijación deben coincidir, y en muchas gamas la guarnición tiene mano. Una guarnición idéntica en una foto de catálogo puede no engranar en absoluto."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que a guarnição externa de uma barra antipânico decide?",
+        "answer": "Tudo menos a saída. A barra interna sempre libera o trinco e não é configurável. A guarnição decide quem entra, se é precisa chave, se a porta pode ficar destrancada em horário comercial, e o que acontece ao faltar energia. Um mapa que nomeia o dispositivo e não a guarnição especificou a metade que nunca esteve em dúvida."
+      },
+      {
+        "question": "Qual é a diferença entre trinco de mola e guarnição de entrada?",
+        "answer": "O trinco de mola dá acesso momentâneo: a chave recolhe o trinco e a porta volta a trancar atrás. Uma guarnição de entrada pode ficar destrancada, então a maçaneta funciona livremente até alguém a voltar a trancar. Uma loja que deixa as portas abertas o dia todo precisa da segunda."
+      },
+      {
+        "question": "O que é dogging?",
+        "answer": "Manter o trinco recolhido para que a porta empurre livremente dos dois lados, tipicamente em horário comercial. O dogging mecânico usa uma chave allen no dispositivo; o de cilindro usa um cilindro com chave, que costuma ser a resposta certa em qualquer edifício onde abre mais de uma pessoa."
+      },
+      {
+        "question": "Pode fazer-se dogging numa barra antipânico de corta-fogo?",
+        "answer": "Não, e esta é absoluta. Uma corta-fogo funciona permanecendo travada e o dogging mantém o trinco recolhido: são diretamente contraditórios. Os dispositivos para corta-fogo são fabricados sem essa função por esta razão. Se uma corta-fogo deve abrir livremente em horário de ocupação, use uma retenção eletromagnética liberada pela central de alarme."
+      },
+      {
+        "question": "Uma guarnição externa trancada afeta a saída?",
+        "answer": "Não. Nenhuma função de guarnição — armazém, eletrificada, ou uma chapa cega sem acesso nenhum — muda o que acontece quando alguém empurra a barra de dentro. O trinco recolhe e a porta abre. A decisão de guarnição é de segurança patrimonial e comodidade, não de segurança das pessoas."
+      },
+      {
+        "question": "Posso pedir a guarnição separadamente do dispositivo?",
+        "answer": "Só como par emparelhado por modelo. O quadrado ou a cauda da guarnição tem de engrenar com o mecanismo desse dispositivo, os entre-eixos de fixação devem coincidir, e em muitas linhas a guarnição tem mão. Uma guarnição idêntica numa foto de catálogo pode não engrenar de todo."
+      }
+    ]
+  },
+  "titleEs": "Guarnición exterior de barra antipánico 2026: todas las funciones comparadas, reglas de dogging, y por qué la barra nunca es la decisión",
+  "summaryEs": "Una barra antipánico tiene dos mitades y solo una es una decisión. La barra interior siempre deja salir; la guarnición exterior decide quién entra, si la puerta puede quedarse abierta en horario comercial, y si el hueco sigue cumpliendo en un incendio. Esta página compara todas las funciones de guarnición exterior, fija las reglas de dogging incluida la absoluta en cortafuego, y cuenta cuántas de nuestras quince guarniciones publican su función.",
+  "seoTitleEs": "Guarnición exterior antipánico 2026: funciones y dogging | Canton Hyland",
+  "seoDescriptionEs": "Funciones de guarnición exterior de barra antipánico comparadas —solo salida, resbalón, entrada, almacén, electrificada— más dogging mecánico y de cilindro y la regla absoluta en cortafuego.",
+  "bodyEs": [
+    "Una barra antipánico son dos productos que se envían como uno. Dentro hay una barra que siempre libera el picaporte, y esa mitad no es una decisión: es un requisito de seguridad de las personas, y se comporta igual compre el dispositivo que compre.",
+    "Fuera está la guarnición, y esa mitad es toda la especificación. Decide quién puede entrar, si la puerta puede quedarse abierta en horario comercial, si hace falta llave, y qué hace el hueco cuando se corta la corriente.",
+    "Un cuadro que nombra una barra antipánico y no su guarnición ha especificado la mitad que nunca estuvo en duda.",
+    "## Todas las funciones de guarnición exterior, comparadas",
+    "| Guarnición | Desde fuera | Uso típico |\n| --- | --- | --- |\n| Ninguna — placa ciega | Sin acceso alguno | Puerta de escape pura; salida a un patio |\n| Solo tirador (ciega) | Tirar si está abierta; sin control del picaporte | Puertas abiertas en horario de ocupación, aseguradas de otra forma después |\n| Picaporte de resbalón | La llave retrae el picaporte momentáneamente | Entrada de personal; la puerta se cierra detrás |\n| Entrada, manilla con llave | La llave desbloquea la manilla, que retrae el picaporte hasta volver a bloquear | Puertas principales abiertas en horario comercial |\n| Almacén, manilla con llave | La manilla está siempre bloqueada; la llave retrae el picaporte cada vez | Salas técnicas, almacenes, lo que nunca debe quedar abierto |\n| Pulsador con cilindro | El pulsador funciona cuando está desbloqueado | Entradas tradicionales, estética sin manilla |\n| Electrificada | La credencial desbloquea la manilla o retrae el picaporte | Huecos con control de accesos |",
+    "Las dos que se confunden son el resbalón y la entrada. Un resbalón da acceso momentáneo y se vuelve a cerrar; una guarnición de entrada puede quedarse desbloqueada. En una tienda que deja abiertas sus salidas todo el día, la primera está mal y genera un apaño; en una puerta de personal que nunca debe quedar abierta, la segunda está mal por la misma razón al revés.",
+    "## Los cuatro tipos de dispositivo, y qué guarniciones admite cada uno",
+    "Antes de la función de guarnición está el tipo de dispositivo, y este restringe qué guarniciones están siquiera disponibles.",
+    "| Dispositivo | Enclava en | Sirve para | Disponibilidad de guarnición |\n| --- | --- | --- | --- |\n| De sobreponer | Un cerradero superficial en el cerco | Puertas simples, reforma, el más común y barato | La gama más amplia |\n| De embutir | Una caja de cerradura dentro del canto | Puertas simples donde importa un canto liso | Buena, pero atada a esa caja |\n| Varilla vertical vista | Dintel y umbral, varillas a la vista | Puertas de dos hojas, y puertas sin montante | Más estrecha; algunas funciones no existen |\n| Varilla vertical oculta | Dintel y umbral, varillas dentro de la hoja | Pares donde importa la estética | La más estrecha; la puerta debe prepararse en fábrica |",
+    "La fila que pilla a los proyectos es la última. Un dispositivo de varilla oculta necesita una puerta construida para alojarlo: los canales de varilla van dentro de la hoja y no se pueden añadir después. Especificar uno en una puerta que ya está en obra es especificar una puerta nueva.",
+    "Las filas de varilla vertical llevan además una consecuencia de mantenimiento que conviene conocer antes de elegir y no después. Las varillas enclavan en dintel y umbral, lo que significa que el enclavamiento inferior vive donde está el suelo, y los suelos acumulan arenilla, agua y productos de limpieza. Una varilla inferior que ha dejado de enclavar es el fallo más común de toda esta categoría, y en una puerta de dos hojas significa que la hoja pasiva la sujeta un enclavamiento en vez de dos.",
+    "Donde ese riesgo es real —una entrada húmeda, una zona de carga, cualquier sitio que se friegue a diario— pregunte por un dispositivo sin varilla inferior, o acepte que el hueco hay que inspeccionarlo en vez de darlo por bueno.",
+    "## Puertas de dos hojas: la parte que no va del dispositivo",
+    "Un par de puertas con barras antipánico plantea dos preguntas que el dispositivo no puede responder por sí solo.",
+    "**¿Qué hoja es la activa, y la pasiva necesita abrir?** Si la necesita, necesita su propio dispositivo o pestillos embutidos; si no, los pestillos solos pueden bastar —pero los pestillos en una vía de evacuación están restringidos, porque una hoja que exige un segundo gesto para abrir es una hoja que la gente no puede usar en una aglomeración.",
+    "**¿Las hojas tienen que cerrar en orden?** Sí si se solapan, y eso es un selector de cierre y no un dispositivo: un producto aparte, en una línea aparte, del que nadie se acuerda hasta que se encuentra un par de cortafuegos abiertas en el encuentro.",
+    "Las dos cosas explican por qué un par cuesta más del doble que una puerta simple en herraje, y por qué la línea de cuadro de un par debe escribirse como un juego y no como dos copias de una línea de puerta simple.",
+    "## El dogging: qué es, y la única regla absoluta",
+    "El dogging mantiene el picaporte retraído para que la puerta empuje libremente por ambos lados. Una tienda con su salida en dogging durante el horario comercial tiene una puerta que funciona como una placa de empuje y que se cierra bien por la noche con un solo gesto.",
+    "Hay dos mecanismos. El **dogging mecánico** usa una llave allen o similar sobre el propio dispositivo. El **dogging de cilindro** usa un cilindro con llave en el dispositivo, así que lo controla la misma gestión de llaves que el resto del edificio.",
+    "El de cilindro cuesta más y suele ser la respuesta correcta en cualquier edificio donde abre más de una persona, porque una llave allen que vive en un gancho es una llave allen que puede usar cualquiera, también fuera de horario.",
+    "**La regla absoluta: una barra antipánico de cortafuego no puede ir en dogging.** Una cortafuego funciona permaneciendo enclavada, y el dogging mantiene el picaporte retraído: son directamente contradictorios. Los dispositivos previstos para cortafuego se fabrican sin función de dogging exactamente por esto, y un dispositivo con dogging montado en una cortafuego es un hueco no conforme por muy correcto que sea todo lo demás.",
+    "Si una puerta clasificada debe abatir libremente en horario de ocupación, la respuesta es una retención electromagnética liberada por la central de alarma, no un picaporte en dogging. Nuestra página de herraje cortafuego explica por qué.",
+    "## Las dos preguntas que la guarnición debe responder antes que nada",
+    "**¿La puerta necesita poder asegurarse desde fuera sin llave?** Si la respuesta es no —y normalmente lo es— entonces cualquier guarnición con pomo de giro o manilla libre está mal, por cómoda que sea.",
+    "**¿Qué pasa cuando se corta la corriente?** Solo aplica a guarnición electrificada, y es la pregunta que se aplaza a la puesta en marcha. El fail-safe abre al perder corriente; el fail-secure permanece cerrado. Cuál es el correcto es una decisión de ese hueco concreto y dos puertas de un mismo pasillo pueden diferir legítimamente.",
+    "## La salida libre no se ve afectada por nada de esto",
+    "Merece decirse explícitamente porque es la fuente de casi toda la ansiedad sobre especificar barras antipánico.",
+    "Ninguna función de guarnición exterior —ni almacén, ni electrificada, ni una placa ciega— cambia lo que pasa cuando alguien empuja la barra desde dentro. La barra retrae el picaporte y la puerta abre. Ese es el sentido del dispositivo y no es configurable.",
+    "Así que la decisión de guarnición es de seguridad patrimonial y comodidad, no de seguridad de las personas, siempre que el dispositivo sea el correcto para el hueco. Las decisiones de seguridad se tomaron antes: si el hueco necesita barra antipánico y qué norma debe cumplir.",
+    "## La guarnición y el dispositivo se piden juntos, y a menudo no",
+    "El error de pedido más común de esta categoría: un dispositivo pedido sin su guarnición, o una guarnición pedida para un dispositivo de otra gama.",
+    "Son productos emparejados. El cuadradillo o la cola de la guarnición tiene que engranar con el mecanismo del dispositivo, los entrejes de fijación deben coincidir, y en muchas gamas la guarnición tiene mano. Una guarnición idéntica en una foto de catálogo puede no engranar en absoluto.",
+    "Así que pídalos como pareja, por modelo, e indique la función en la línea de la guarnición en vez de deducirla del dispositivo. Nuestra página de códigos de pedido explica cómo se escribe el sufijo de función —`ET` entrada, `PS` paso— y una guarnición pedida sin uno llega con el valor por defecto.",
+    "## Qué publicamos en nuestras propias guarniciones",
+    "Nuestro catálogo lleva 46 productos nombrados como herraje antipánico o de salida: 30 dispositivos, 15 guarniciones exteriores y 1 caja de cerradura.",
+    "De esas 15 guarniciones, **tres publican una fila de función** —una de entrada, una de paso, y una descrita como cerradura de seguridad con cilindro. Las otras doce publican cotas y acabados pero dejan la función a la consulta.",
+    "Ese es el estado honesto, y en esta categoría importa más que en casi ninguna, porque como ha argumentado esta página la función es todo el sentido de la guarnición. Estamos publicando la mitad que nunca estuvo en duda y dejando fuera la que sí.",
+    "Se está corrigiendo midiendo y confirmando, no deduciendo: la función de una guarnición es una propiedad de su mecanismo, y escribir una plausible en una tabla de especificación sería el mismo error que escribir una cota plausible. Mientras tanto, pregunte, y la respuesta vuelve modelo a modelo.",
+    "## Las cuatro líneas que necesita un pedido de barra antipánico",
+    "El modelo de dispositivo, y si es de sobreponer, de embutir, de varilla vertical vista o de varilla oculta.",
+    "El modelo de guarnición **y su función**, con nombre.",
+    "Dogging: ninguno, mecánico o de cilindro —y si la puerta es cortafuego, ninguno, indicando la clasificación para que el dispositivo elegido sea uno sin esa función.",
+    "El ancho de puerta y la mano, porque la longitud de la barra sigue a la puerta y la guarnición con frecuencia tiene mano.",
+    "Nuestras barras 307 y 311 están en ensayo. Hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL —que es también la razón de que esta página hable de la regla de dogging en cortafuego en términos generales y no señalando a un producto."
+  ],
+  "titlePt": "Guarnição externa de barra antipânico 2026: todas as funções comparadas, regras de dogging, e por que a barra nunca é a decisão",
+  "summaryPt": "Uma barra antipânico tem duas metades e só uma é uma decisão. A barra interna sempre deixa sair; a guarnição externa decide quem entra, se a porta pode ficar destrancada em horário comercial, e se o vão continua a cumprir num incêndio. Esta página compara todas as funções de guarnição externa, estabelece as regras de dogging incluindo a absoluta em corta-fogo, e conta quantas das nossas quinze guarnições publicam a sua função.",
+  "seoTitlePt": "Guarnição externa antipânico 2026: funções e dogging | Canton Hyland",
+  "seoDescriptionPt": "Funções de guarnição externa de barra antipânico comparadas — só saída, trinco, entrada, armazém, eletrificada — mais dogging mecânico e de cilindro e a regra absoluta em corta-fogo.",
+  "bodyPt": [
+    "Uma barra antipânico são dois produtos que são enviados como um. Dentro há uma barra que sempre libera o trinco, e essa metade não é uma decisão: é um requisito de segurança das pessoas, e comporta-se igual seja qual for o dispositivo comprado.",
+    "Fora está a guarnição, e essa metade é toda a especificação. Decide quem pode entrar, se a porta pode ficar destrancada em horário comercial, se é precisa chave, e o que o vão faz quando falta energia.",
+    "Um mapa que nomeia uma barra antipânico e não a sua guarnição especificou a metade que nunca esteve em dúvida.",
+    "## Todas as funções de guarnição externa, comparadas",
+    "| Guarnição | De fora | Uso típico |\n| --- | --- | --- |\n| Nenhuma — chapa cega | Sem acesso nenhum | Porta de escape pura; saída para um pátio |\n| Só puxador (cega) | Puxar se estiver destrancada; sem controle do trinco | Portas destrancadas em horário de ocupação, trancadas de outra forma depois |\n| Trinco de mola | A chave recolhe o trinco momentaneamente | Entrada de pessoal; a porta tranca atrás |\n| Entrada, maçaneta com chave | A chave destranca a maçaneta, que recolhe o trinco até voltar a trancar | Portas principais abertas em horário comercial |\n| Armazém, maçaneta com chave | A maçaneta está sempre trancada; a chave recolhe o trinco de cada vez | Casas técnicas, armazéns, o que nunca deve ficar destrancado |\n| Botão de pressão com cilindro | O botão funciona quando destrancado | Entradas tradicionais, estética sem maçaneta |\n| Eletrificada | A credencial destranca a maçaneta ou recolhe o trinco | Vãos com controle de acessos |",
+    "As duas que se confundem são o trinco de mola e a entrada. Um trinco de mola dá acesso momentâneo e volta a trancar; uma guarnição de entrada pode ficar destrancada. Numa loja que deixa as saídas abertas o dia todo, a primeira está errada e gera um remendo; numa porta de pessoal que nunca deve ficar aberta, a segunda está errada pela mesma razão ao contrário.",
+    "## Os quatro tipos de dispositivo, e que guarnições cada um aceita",
+    "Antes da função de guarnição está o tipo de dispositivo, e este restringe que guarnições estão sequer disponíveis.",
+    "| Dispositivo | Trava em | Serve para | Disponibilidade de guarnição |\n| --- | --- | --- | --- |\n| De sobrepor | Um batente superficial no aro | Portas simples, reforma, o mais comum e barato | A linha mais ampla |\n| De embutir | Uma caixa de fechadura dentro do topo | Portas simples onde importa um topo liso | Boa, mas presa a essa caixa |\n| Haste vertical à vista | Verga e soleira, hastes à vista | Portas de duas folhas, e portas sem montante | Mais estreita; algumas funções não existem |\n| Haste vertical oculta | Verga e soleira, hastes dentro da folha | Pares onde importa a estética | A mais estreita; a porta deve ser preparada na fábrica |",
+    "A linha que apanha os projetos é a última. Um dispositivo de haste oculta precisa de uma porta construída para o alojar: os canais de haste vão dentro da folha e não podem ser acrescentados depois. Especificar um numa porta que já está na obra é especificar uma porta nova.",
+    "As linhas de haste vertical levam além disso uma consequência de manutenção que convém conhecer antes de escolher e não depois. As hastes travam na verga e na soleira, o que significa que o travamento inferior vive onde está o piso, e os pisos acumulam areia, água e produtos de limpeza. Uma haste inferior que deixou de travar é a falha mais comum de toda esta categoria, e numa porta de duas folhas significa que a folha passiva é segurada por um travamento em vez de dois.",
+    "Onde esse risco é real — uma entrada húmida, uma zona de carga, qualquer sítio lavado diariamente — pergunte por um dispositivo sem haste inferior, ou aceite que o vão tem de ser inspecionado em vez de dado por bom.",
+    "## Portas de duas folhas: a parte que não é sobre o dispositivo",
+    "Um par de portas com barras antipânico levanta duas perguntas que o dispositivo não consegue responder sozinho.",
+    "**Que folha é a ativa, e a passiva precisa de abrir?** Se precisa, precisa do seu próprio dispositivo ou de ferrolhos embutidos; se não, os ferrolhos sozinhos podem bastar — mas os ferrolhos numa via de evacuação são restringidos, porque uma folha que exige um segundo gesto para abrir é uma folha que as pessoas não conseguem usar numa aglomeração.",
+    "**As folhas têm de fechar por ordem?** Têm se se sobrepuserem, e isso é um seletor de fecho e não um dispositivo: um produto à parte, numa linha à parte, de que ninguém se lembra até encontrar um par de corta-fogos aberto no encontro.",
+    "As duas coisas explicam por que um par custa mais do dobro de uma porta simples em ferragem, e por que a linha de mapa de um par deve ser escrita como um jogo e não como duas cópias de uma linha de porta simples.",
+    "## O dogging: o que é, e a única regra absoluta",
+    "O dogging mantém o trinco recolhido para que a porta empurre livremente dos dois lados. Uma loja com a sua saída em dogging durante o horário comercial tem uma porta que funciona como uma chapa de empurrar e que tranca bem à noite com um só gesto.",
+    "Há dois mecanismos. O **dogging mecânico** usa uma chave allen ou semelhante sobre o próprio dispositivo. O **dogging de cilindro** usa um cilindro com chave no dispositivo, então é controlado pela mesma gestão de chaves do resto do edifício.",
+    "O de cilindro custa mais e costuma ser a resposta certa em qualquer edifício onde abre mais de uma pessoa, porque uma chave allen que vive num gancho é uma chave allen que qualquer um pode usar, também fora de horário.",
+    "**A regra absoluta: uma barra antipânico de corta-fogo não pode ir em dogging.** Uma corta-fogo funciona permanecendo travada, e o dogging mantém o trinco recolhido: são diretamente contraditórios. Os dispositivos previstos para corta-fogo são fabricados sem função de dogging exatamente por isto, e um dispositivo com dogging montado numa corta-fogo é um vão não conforme por mais correto que seja tudo o resto.",
+    "Se uma porta classificada deve abrir livremente em horário de ocupação, a resposta é uma retenção eletromagnética liberada pela central de alarme, não um trinco em dogging. A nossa página de ferragem corta-fogo explica por quê.",
+    "## As duas perguntas que a guarnição deve responder antes de tudo",
+    "**A porta precisa de poder ser trancada de fora sem chave?** Se a resposta é não — e normalmente é — então qualquer guarnição com botão de giro ou maçaneta livre está errada, por mais cómoda que seja.",
+    "**O que acontece quando falta energia?** Só se aplica a guarnição eletrificada, e é a pergunta que é adiada para o comissionamento. O fail-safe abre ao perder energia; o fail-secure permanece trancado. Qual é o correto é uma decisão daquele vão concreto e duas portas de um mesmo corredor podem diferir legitimamente.",
+    "## A saída livre não é afetada por nada disto",
+    "Merece ser dito explicitamente porque é a fonte de quase toda a ansiedade sobre especificar barras antipânico.",
+    "Nenhuma função de guarnição externa — nem armazém, nem eletrificada, nem uma chapa cega — muda o que acontece quando alguém empurra a barra de dentro. A barra recolhe o trinco e a porta abre. Esse é o sentido do dispositivo e não é configurável.",
+    "Então a decisão de guarnição é de segurança patrimonial e comodidade, não de segurança das pessoas, desde que o dispositivo seja o correto para o vão. As decisões de segurança foram tomadas antes: se o vão precisa de barra antipânico e que norma deve cumprir.",
+    "## A guarnição e o dispositivo pedem-se juntos, e muitas vezes não",
+    "O erro de pedido mais comum desta categoria: um dispositivo pedido sem a sua guarnição, ou uma guarnição pedida para um dispositivo de outra linha.",
+    "São produtos emparelhados. O quadrado ou a cauda da guarnição tem de engrenar com o mecanismo do dispositivo, os entre-eixos de fixação devem coincidir, e em muitas linhas a guarnição tem mão. Uma guarnição idêntica numa foto de catálogo pode não engrenar de todo.",
+    "Então peça-os como par, por modelo, e indique a função na linha da guarnição em vez de a deduzir do dispositivo. A nossa página de códigos de pedido explica como o sufixo de função é escrito — `ET` entrada, `PS` passagem — e uma guarnição pedida sem um chega com o valor padrão.",
+    "## O que publicamos nas nossas próprias guarnições",
+    "O nosso catálogo tem 46 produtos nomeados como ferragem antipânico ou de saída: 30 dispositivos, 15 guarnições externas e 1 caixa de fechadura.",
+    "Dessas 15 guarnições, **três publicam uma linha de função** — uma de entrada, uma de passagem, e uma descrita como fechadura de segurança com cilindro. As outras doze publicam cotas e acabamentos mas deixam a função para a consulta.",
+    "Esse é o estado honesto, e nesta categoria importa mais do que em quase nenhuma, porque como esta página argumentou a função é todo o sentido da guarnição. Estamos a publicar a metade que nunca esteve em dúvida e a deixar de fora a que esteve.",
+    "Está sendo corrigido medindo e confirmando, não deduzindo: a função de uma guarnição é uma propriedade do seu mecanismo, e escrever uma plausível numa tabela de especificação seria o mesmo erro que escrever uma cota plausível. Entretanto, pergunte, e a resposta volta modelo a modelo.",
+    "## As quatro linhas que um pedido de barra antipânico precisa",
+    "O modelo de dispositivo, e se é de sobrepor, de embutir, de haste vertical à vista ou de haste oculta.",
+    "O modelo de guarnição **e a sua função**, com nome.",
+    "Dogging: nenhum, mecânico ou de cilindro — e se a porta é corta-fogo, nenhum, indicando a classificação para que o dispositivo escolhido seja um sem essa função.",
+    "A largura de porta e a mão, porque o comprimento da barra segue a porta e a guarnição com frequência tem mão.",
+    "As nossas barras 307 e 311 estão em ensaio. Até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL — que é também a razão de esta página falar da regra de dogging em corta-fogo em termos gerais e não apontando para um produto."
+  ]
+}

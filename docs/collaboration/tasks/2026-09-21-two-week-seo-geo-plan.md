@@ -228,3 +228,36 @@ Clarity 的机会簇就叫 Stainless steel grade selection，而 `/news/` 那篇
 换成同一个弱项主题（Lock function selection，rank 34）下的另一个机会簇
 **Specification and scheduling standards**：规格书 08 71 00 的三部分结构。
 目标主题不变，覆盖面反而更宽。
+
+---
+
+## 七、待办：JS 瘦身（甲方 2026-09-21 指定，排在新 20 篇之后）
+
+实测数据，不是猜的：
+
+| 页面 | JS 体积 |
+|---|---|
+| 首页 | 690 KB / 12 个 chunk |
+| 一篇 guides 文章 | **679 KB** |
+
+**这两个数字几乎相等，就是诊断结果。** 一个纯静态文章页本该几乎不需要 JS，
+它却和首页扛一样多 —— 重量在**共享外壳**，不在页面内容。静态导出里，布局中
+任何一个 `"use client"` 都会把它底下所有东西拖进 hydration。PageSpeed 报的
+「未使用 JavaScript 388 KiB」就是这个。
+
+已查证的事实（避免下一个会话重复排查）：
+
+- 最大 chunk **2.76 MB**，只被 `/model-lookup/` 三个语言版本加载，不影响其他页。
+- 两个各 1.04 MB 的 chunk **被其他 chunk 动态引用**，不是死代码 —— 一度以为是，
+  查了 `_buildManifest` 和交叉引用才排除。
+- 搜索索引 `public/search-index.json` **457 KB**。若在任何地方被静态 import
+  就会进包，应改成首次点击搜索框时才 fetch。
+- 「旧版 JavaScript 26 KiB」是给老浏览器的 polyfill，调 browserslist 即可去掉，最便宜。
+
+**动手顺序**：先用 `@next/bundle-analyzer` 或对比「文章页 chunk 清单」与
+「最简页面 chunk 清单」定位是哪个客户端组件拖的（嫌疑：页头搜索、语言切换、
+promo 条、轮播、图片缩放），再逐个改成按需加载。
+
+**期望与限度**：TBT 350ms → 200ms 以下可期，分数从 80 进 90+。
+但要说清楚：**这对排名帮助很小**。Core Web Vitals 是弱排名因素，
+LCP 0.7s / CLS 0 已经全绿。做它是为了慢网络上的买家，不是为了 Google。
