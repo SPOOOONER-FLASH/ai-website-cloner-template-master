@@ -196,7 +196,7 @@ console.log('文章', files.length, '| 平均字数', Math.round(words/files.len
 | 2 | technical-drawings-what-to-expect-2026 | Technical drawing expectations |
 | 3 | material-traceability-mill-certs-2026 | Material traceability evidence |
 | 4 | commercial-lock-function-decision-2026 | Commercial function decision frameworks |
-| 5 | classroom-storeroom-office-functions-2026 | Commercial function decision frameworks |
+| 5 | ~~classroom-storeroom-office-functions-2026~~ → **specification-section-08-71-00-2026** | Specification and scheduling standards |
 | 6 | specification-section-08-71-00-2026 | Specification and scheduling standards |
 | 7 | dimensional-interchangeability-2026 | Dimensional interchangeability guidance |
 | 8 | drop-in-replacement-checklist-2026 | Dimensional interchangeability guidance |
@@ -218,3 +218,13 @@ console.log('文章', files.length, '| 平均字数', Math.round(words/files.len
 Clarity 的机会簇就叫 Stainless steel grade selection，而 `/news/` 那篇
 `stainless-steel-grades-304-201-316` 正文只有 731 字均线水平 —— 新的一篇写
 **选型与成本**，角度不同且长度是它的两倍以上。
+
+
+### 选题调整记录
+
+**第 5 篇换题（2026-09-21）**：原定 `classroom-storeroom-office-functions`，
+但第 4 篇的决策表已经把 classroom 与 storeroom 两个功能连同各自的存在理由讲透了，
+再写一篇就是自我重复 —— 而自我重复在 SEO 上是两篇互相稀释，不是两倍覆盖。
+换成同一个弱项主题（Lock function selection，rank 34）下的另一个机会簇
+**Specification and scheduling standards**：规格书 08 71 00 的三部分结构。
+目标主题不变，覆盖面反而更宽。
