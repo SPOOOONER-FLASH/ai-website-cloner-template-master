@@ -359,11 +359,18 @@ export function newsArticleSchema(
 export function NewsArticleJsonLd({
   article,
   locale = "en",
+  section = "news",
 }: {
   article: NewsArticle;
   locale?: Locale;
+  /*
+    JSON-LD 里的 url 必须指向这篇文章真正所在的栏目。
+    2026-09-21 新开 /guides/ 时加的 —— 一个指向 /news/ 的 Article schema 配在
+    /guides/ 的页面上，等于告诉引擎这一页的规范地址是另一个 404。
+  */
+  section?: "news" | "guides";
 }) {
-  const path = locale === "en" ? `/news/${article.slug}/` : `/${locale}/news/${article.slug}/`;
+  const path = locale === "en" ? `/${section}/${article.slug}/` : `/${locale}/${section}/${article.slug}/`;
   return <JsonLd data={newsArticleSchema(article, absoluteUrl(path), locale)} />;
 }
 

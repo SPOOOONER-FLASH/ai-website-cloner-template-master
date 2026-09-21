@@ -1,0 +1,212 @@
+{
+  "slug": "corrosion-resistance-en-1670-2026",
+  "title": "Corrosion Resistance 2026: EN 1670 Grades 0–5, Salt Spray Hours, and What the Test Does Not Tell You",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "EN 1670 grades door hardware corrosion resistance from 0 to 5, and each grade is a number of hours in a neutral salt spray cabinet. This page gives the hours for every grade, explains what ASTM B117 and ANSI/BHMA A156.18 do on the other side of the Atlantic, names the three environments where a grade chosen by habit fails, and is honest about what a cabinet test cannot predict.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Corrosion Resistance 2026: EN 1670 Grades and Salt Spray | Canton Hyland",
+  "seoDescription": "EN 1670 corrosion grades 0 to 5 with their neutral salt spray hours, how ASTM B117 and ANSI/BHMA A156.18 compare, and which environments defeat a grade chosen by habit.",
+  "body": [
+    "Corrosion is the only hardware failure that happens on a schedule. A lock either works or it does not; a finish degrades predictably, visibly, and in front of the person who signed the order.",
+    "It is also the property most often specified by material name rather than by grade — \"stainless\", as though that settled it — which is why a coastal project can be built entirely from stainless hardware and still be streaked with rust in eighteen months.",
+    "THE EN 1670 GRADES",
+    "EN 1670 classifies corrosion resistance in six grades, and each is defined by a duration in a neutral salt spray cabinet.",
+    "| EN 1670 grade | Resistance | Neutral salt spray |\n| --- | --- | --- |\n| 0 | none defined | — |\n| 1 | mild | 24 hours |\n| 2 | moderate | 48 hours |\n| 3 | high | 96 hours |\n| 4 | very high | 240 hours |\n| 5 | very high | 480 hours |",
+    "Grade 0 is not a failure. It is a declaration that the property was not claimed, and on an internal door in a dry building it is the honest and correct grade.",
+    "The grade appears as one digit inside the longer classification codes on EN-tested products — it is the corrosion digit in an EN 1935 hinge classification, in an EN 1906 handle classification, and in the classifications of most other EN hardware standards. A specification that quotes only the load grade or the durability grade has left the corrosion digit unspecified.",
+    "WHAT THE HOURS ACTUALLY MEAN",
+    "A neutral salt spray test puts the sample in a sealed cabinet at a controlled temperature and sprays it continuously with a salt solution. After the stated hours, the sample is examined for defined defects.",
+    "This is a comparative test, not a predictive one. 480 hours in a cabinet does not correspond to any particular number of years on a building, and nobody in the industry claims it does. What it gives you is a reliable ranking: a grade 5 product will outlast a grade 3 product in the same environment, by a margin the test does not quantify.",
+    "That limitation is worth stating plainly because the alternative — quoting salt spray hours as though they were a service life — is a claim that cannot be supported and that a knowledgeable buyer will discount.",
+    "THE NORTH AMERICAN SIDE",
+    "ASTM B117 is the standard practice for salt spray apparatus, and it is the method underneath most North American corrosion claims. ANSI/BHMA A156.18 covers materials and finishes and sets out the tests a finish has to pass, salt spray among them.",
+    "The two systems are testing the same physical phenomenon with closely related methods, but they package the result differently: EN gives you a single grade digit, A156.18 gives you a finish that has passed the requirements for its category.",
+    "For a cross-market specification, the workable approach is the same one that works for closers and hinges: state the environment rather than the grade. A supplier in either market can map \"external, coastal, within 1km of open salt water\" onto their own classification. Neither can reliably map the other's grade number.",
+    "THE THREE ENVIRONMENTS THAT DEFEAT A HABITUAL CHOICE",
+    "Coastal. Airborne chloride does not require immersion or even rain; it deposits on surfaces and concentrates as water evaporates. Hardware on a sheltered balcony facing the sea can corrode faster than hardware that gets rinsed by rain, because rinsing removes chloride and shelter concentrates it.",
+    "Swimming pools and their plant rooms. Chlorinated and especially brominated atmospheres attack some stainless grades in ways that ordinary marine exposure does not, and the failure mode — stress corrosion cracking in the fixings, not surface rust on the visible part — gives very little warning. Hardware in a pool hall is a specialist selection, not a coastal selection with extra hours.",
+    "Industrial and urban atmospheres carrying sulphur compounds. These attack copper alloys and some plated finishes disproportionately, which is why a brass finish that performs well on a rural building can look poor on an arterial road in a city.",
+    "In all three, the mistake is the same: treating corrosion as a single axis where more hours is always the answer. It is a set of different chemical attacks, and a grade is a general ranking rather than a guarantee against a specific one.",
+    "WHERE CORROSION ACTUALLY STARTS",
+    "Not usually on the face of the product. It starts at the places the finish is thinnest or absent.",
+    "Cut edges and machined faces, where a coating applied before machining has been cut through. Fixing holes and countersinks. The screws themselves, which are frequently specified to a lower grade than the product they hold — a stainless lever on a coastal door held by plated steel screws will bleed rust from the screw heads long before the lever shows anything.",
+    "Contact between dissimilar metals in the presence of moisture, which drives galvanic corrosion at the junction. A stainless plate fixed to an aluminium frame with the wrong fixings is a battery.",
+    "The practical rule that follows: specify the fixings to the same corrosion grade as the product. It is the cheapest line on the order and the most common place the specification silently drops a grade.",
+    "MAINTENANCE IS PART OF THE SPECIFICATION",
+    "Stainless steel is not inert; it is self-repairing, and it repairs itself using oxygen. A surface kept clean re-passivates. A surface under a film of salt, dust or building residue does not, which is why stainless hardware in a sheltered external position often does worse than the same hardware fully exposed.",
+    "Where a building owner will not or cannot rinse external hardware, that has to be part of the material decision at specification stage rather than a complaint at handover. A higher grade partially compensates for no maintenance. It does not replace it.",
+    "WHAT WE PUBLISH, AND WHAT WE DO NOT",
+    "Our product pages state material and finish as we supply them. Where a model has been tested to an EN 1670 grade or to a A156.18 finish requirement, the result is stated with the standard it was tested to.",
+    "Where a model has not been tested, no grade appears and no salt spray figure appears. A corrosion grade is a laboratory result on a specific sample of a specific finish, and quoting a number for an untested finish — even a conservative one, even one we believe — would be inventing a test result. Our position on invented specification numbers is the same here as it is on dimensions: an absent row is a question a buyer can ask, and a plausible row is a decision a buyer makes wrongly."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What are the EN 1670 corrosion grades?",
+        "answer": "Six grades defined by hours in a neutral salt spray cabinet. Grade 0 is no defined resistance, grade 1 is 24 hours, grade 2 is 48, grade 3 is 96, grade 4 is 240 and grade 5 is 480. The grade appears as one digit inside the longer classification codes on EN-tested hardware."
+      },
+      {
+        "question": "Does 480 hours of salt spray mean a certain number of years on a building?",
+        "answer": "No, and nobody in the industry can support that claim. Salt spray is a comparative test: a grade 5 product will outlast a grade 3 product in the same environment, by a margin the test does not quantify. Quoting the hours as a service life is a claim a knowledgeable buyer will discount."
+      },
+      {
+        "question": "Is stainless steel enough for a coastal building?",
+        "answer": "Not by itself. Airborne chloride deposits and concentrates as water evaporates, so sheltered hardware can corrode faster than hardware that rain rinses. The grade, the specific stainless type, the fixings and whether anyone will clean it are all part of the decision — \"stainless\" on its own is not a specification."
+      },
+      {
+        "question": "Why does a swimming pool need a different selection?",
+        "answer": "Chlorinated and especially brominated atmospheres attack some stainless grades in ways ordinary marine exposure does not, and the failure mode is often stress corrosion cracking in the fixings rather than visible surface rust. It gives little warning, so pool hall hardware is a specialist selection rather than a coastal one with more hours."
+      },
+      {
+        "question": "Where does corrosion actually start on door hardware?",
+        "answer": "At the thin or absent spots — cut edges and machined faces where a pre-applied coating was cut through, fixing holes and countersinks, and above all the screws, which are frequently specified a grade below the product. A stainless lever held by plated steel screws bleeds rust from the screw heads first."
+      },
+      {
+        "question": "Do you publish salt spray figures for all your finishes?",
+        "answer": "No. We state a corrosion grade or salt spray result only where the model has actually been tested, with the standard it was tested to. For an untested finish no figure appears, because quoting one would be inventing a laboratory result — the same position we take on dimensions we have not measured."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuáles son los grados de corrosión de EN 1670?",
+        "answer": "Seis grados definidos por horas en cámara de niebla salina neutra. El grado 0 es sin resistencia definida, el 1 son 24 horas, el 2 son 48, el 3 son 96, el 4 son 240 y el 5 son 480. El grado aparece como un dígito dentro de los códigos de clasificación más largos del herraje ensayado según EN."
+      },
+      {
+        "question": "¿480 horas de niebla salina equivalen a cierto número de años en un edificio?",
+        "answer": "No, y nadie en el sector puede sostener esa afirmación. La niebla salina es un ensayo comparativo: un producto de grado 5 durará más que uno de grado 3 en el mismo ambiente, por un margen que el ensayo no cuantifica. Citar las horas como vida útil es una afirmación que un comprador informado descontará."
+      },
+      {
+        "question": "¿Basta el acero inoxidable en un edificio costero?",
+        "answer": "No por sí solo. El cloruro en suspensión se deposita y se concentra al evaporarse el agua, así que el herraje resguardado puede corroerse antes que el que la lluvia enjuaga. El grado, el tipo concreto de inoxidable, las fijaciones y si alguien lo va a limpiar forman parte de la decisión: «inoxidable» a secas no es una especificación."
+      },
+      {
+        "question": "¿Por qué una piscina exige otra selección?",
+        "answer": "Las atmósferas cloradas y sobre todo bromadas atacan algunos inoxidables de formas que la exposición marina normal no, y el modo de fallo suele ser corrosión bajo tensión en las fijaciones y no óxido superficial visible. Avisa poco, así que el herraje de vaso cubierto es una selección especializada y no una costera con más horas."
+      },
+      {
+        "question": "¿Dónde empieza realmente la corrosión en un herraje?",
+        "answer": "En los puntos finos o sin recubrimiento: cantos cortados y caras mecanizadas donde se atravesó un recubrimiento previo, agujeros de fijación y avellanados, y sobre todo los tornillos, que a menudo se especifican un grado por debajo del producto. Una manilla inoxidable sujeta con tornillos de acero chapado sangra óxido por las cabezas antes que nada."
+      },
+      {
+        "question": "¿Publican cifras de niebla salina para todos sus acabados?",
+        "answer": "No. Indicamos un grado de corrosión o un resultado de niebla salina solo donde el modelo se ha ensayado realmente, con la norma del ensayo. Para un acabado no ensayado no aparece ninguna cifra, porque citar una sería inventar un resultado de laboratorio: la misma posición que mantenemos con las cotas que no hemos medido."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quais são os graus de corrosão da EN 1670?",
+        "answer": "Seis graus definidos por horas em câmara de névoa salina neutra. O grau 0 é sem resistência definida, o 1 são 24 horas, o 2 são 48, o 3 são 96, o 4 são 240 e o 5 são 480. O grau aparece como um dígito dentro dos códigos de classificação mais longos da ferragem ensaiada segundo a EN."
+      },
+      {
+        "question": "480 horas de névoa salina equivalem a certo número de anos num edifício?",
+        "answer": "Não, e ninguém no setor pode sustentar essa afirmação. A névoa salina é um ensaio comparativo: um produto de grau 5 durará mais do que um de grau 3 no mesmo ambiente, por uma margem que o ensaio não quantifica. Citar as horas como vida útil é uma afirmação que um comprador informado vai descontar."
+      },
+      {
+        "question": "O aço inox basta num edifício costeiro?",
+        "answer": "Não por si só. O cloreto em suspensão deposita-se e concentra-se ao evaporar a água, então a ferragem abrigada pode corroer antes da que a chuva enxagua. O grau, o tipo concreto de inox, as fixações e se alguém vai limpá-la fazem parte da decisão: «inox» sozinho não é uma especificação."
+      },
+      {
+        "question": "Por que uma piscina exige outra seleção?",
+        "answer": "As atmosferas cloradas e sobretudo bromadas atacam alguns inoxidáveis de formas que a exposição marinha normal não, e o modo de falha costuma ser corrosão sob tensão nas fixações e não ferrugem superficial visível. Avisa pouco, então a ferragem de piscina coberta é uma seleção especializada e não uma costeira com mais horas."
+      },
+      {
+        "question": "Onde começa realmente a corrosão numa ferragem?",
+        "answer": "Nos pontos finos ou sem revestimento: arestas cortadas e faces usinadas onde um revestimento prévio foi atravessado, furos de fixação e escareados, e sobretudo os parafusos, que muitas vezes são especificados um grau abaixo do produto. Uma maçaneta inox segurada por parafusos de aço zincado sangra ferrugem pelas cabeças antes de tudo."
+      },
+      {
+        "question": "Publicam cifras de névoa salina para todos os acabamentos?",
+        "answer": "Não. Indicamos um grau de corrosão ou um resultado de névoa salina só onde o modelo foi realmente ensaiado, com a norma do ensaio. Para um acabamento não ensaiado não aparece cifra nenhuma, porque citar uma seria inventar um resultado de laboratório: a mesma posição que mantemos com as cotas que não medimos."
+      }
+    ]
+  },
+  "titleEs": "Resistencia a la corrosión 2026: grados EN 1670 del 0 al 5, horas de niebla salina y lo que el ensayo no dice",
+  "summaryEs": "EN 1670 gradúa la resistencia a la corrosión del herraje de puerta del 0 al 5, y cada grado son unas horas en cámara de niebla salina neutra. Esta página da las horas de cada grado, explica qué hacen ASTM B117 y ANSI/BHMA A156.18 al otro lado del Atlántico, nombra los tres ambientes donde un grado elegido por costumbre falla, y es honesta sobre lo que una cámara no puede predecir.",
+  "seoTitleEs": "Resistencia a la corrosión 2026: grados EN 1670 y niebla salina | Canton Hyland",
+  "seoDescriptionEs": "Grados de corrosión EN 1670 del 0 al 5 con sus horas de niebla salina neutra, comparación con ASTM B117 y ANSI/BHMA A156.18, y qué ambientes derrotan a un grado elegido por costumbre.",
+  "bodyEs": [
+    "La corrosión es el único fallo de herraje que ocurre con calendario. Una cerradura funciona o no funciona; un acabado se degrada de forma predecible, visible y delante de quien firmó el pedido.",
+    "También es la propiedad que más se especifica por nombre de material en vez de por grado —«inoxidable», como si eso zanjara el asunto—, y por eso una obra costera puede construirse entera con herraje inoxidable y estar veteada de óxido a los dieciocho meses.",
+    "LOS GRADOS DE EN 1670",
+    "EN 1670 clasifica la resistencia a la corrosión en seis grados, y cada uno se define por una duración en cámara de niebla salina neutra.",
+    "| Grado EN 1670 | Resistencia | Niebla salina neutra |\n| --- | --- | --- |\n| 0 | sin definir | — |\n| 1 | baja | 24 horas |\n| 2 | moderada | 48 horas |\n| 3 | alta | 96 horas |\n| 4 | muy alta | 240 horas |\n| 5 | muy alta | 480 horas |",
+    "El grado 0 no es un suspenso. Es una declaración de que la propiedad no se reivindica, y en una puerta interior de un edificio seco es el grado honesto y correcto.",
+    "El grado aparece como un dígito dentro de los códigos de clasificación más largos de los productos ensayados según EN: es el dígito de corrosión de una clasificación de bisagra EN 1935, de una de manilla EN 1906 y de las clasificaciones de la mayoría de las demás normas EN de herraje. Una especificación que cita solo el grado de carga o el de durabilidad ha dejado el dígito de corrosión sin especificar.",
+    "QUÉ SIGNIFICAN REALMENTE LAS HORAS",
+    "Un ensayo de niebla salina neutra mete la muestra en una cámara sellada a temperatura controlada y la rocía continuamente con una solución salina. Pasadas las horas indicadas, se examina la muestra en busca de defectos definidos.",
+    "Es un ensayo comparativo, no predictivo. 480 horas en cámara no corresponden a ningún número concreto de años en un edificio, y nadie en el sector afirma que sí. Lo que le da es una ordenación fiable: un producto de grado 5 durará más que uno de grado 3 en el mismo ambiente, por un margen que el ensayo no cuantifica.",
+    "Esa limitación merece decirse con claridad, porque la alternativa —citar horas de niebla salina como si fueran vida útil— es una afirmación insostenible que un comprador informado descontará.",
+    "EL LADO NORTEAMERICANO",
+    "ASTM B117 es la práctica normalizada del aparato de niebla salina, y es el método que hay debajo de la mayoría de las declaraciones de corrosión norteamericanas. ANSI/BHMA A156.18 cubre materiales y acabados y fija los ensayos que un acabado debe superar, la niebla salina entre ellos.",
+    "Los dos sistemas ensayan el mismo fenómeno físico con métodos muy relacionados, pero empaquetan el resultado de forma distinta: EN le da un dígito de grado, A156.18 le da un acabado que ha superado los requisitos de su categoría.",
+    "Para una especificación transfronteriza, el enfoque que funciona es el mismo que con cierrapuertas y bisagras: indique el ambiente y no el grado. Un proveedor de cualquiera de los dos mercados puede traducir «exterior, costero, a menos de 1 km de agua salada abierta» a su propia clasificación. Ninguno puede traducir con fiabilidad el número de grado del otro.",
+    "LOS TRES AMBIENTES QUE DERROTAN A UNA ELECCIÓN POR COSTUMBRE",
+    "Costero. El cloruro en suspensión no necesita inmersión ni siquiera lluvia: se deposita en las superficies y se concentra al evaporarse el agua. Un herraje en un balcón resguardado frente al mar puede corroerse más rápido que uno que la lluvia enjuaga, porque el enjuague retira cloruro y el resguardo lo concentra.",
+    "Piscinas y sus salas de máquinas. Las atmósferas cloradas y sobre todo bromadas atacan algunos inoxidables de formas que la exposición marina normal no, y el modo de fallo —corrosión bajo tensión en las fijaciones, no óxido superficial en la parte visible— avisa muy poco. El herraje de un vaso cubierto es una selección especializada, no una costera con horas de más.",
+    "Atmósferas industriales y urbanas con compuestos de azufre. Atacan desproporcionadamente a las aleaciones de cobre y a algunos acabados galvánicos, y por eso un acabado en latón que se comporta bien en un edificio rural puede verse mal en una vía principal de ciudad.",
+    "En los tres el error es el mismo: tratar la corrosión como un único eje donde más horas es siempre la respuesta. Es un conjunto de ataques químicos distintos, y un grado es una ordenación general y no una garantía frente a uno concreto.",
+    "DÓNDE EMPIEZA REALMENTE LA CORROSIÓN",
+    "No suele ser en la cara del producto. Empieza donde el acabado es más fino o no existe.",
+    "Cantos cortados y caras mecanizadas, donde un recubrimiento aplicado antes del mecanizado ha quedado atravesado. Agujeros de fijación y avellanados. Los propios tornillos, que con frecuencia se especifican a un grado inferior al del producto que sujetan: una manilla inoxidable en una puerta costera sujeta con tornillos de acero chapado sangrará óxido por las cabezas mucho antes de que la manilla muestre nada.",
+    "El contacto entre metales distintos en presencia de humedad, que impulsa la corrosión galvánica en la unión. Una placa inoxidable fijada a un cerco de aluminio con las fijaciones equivocadas es una pila.",
+    "La regla práctica que se deriva: especifique las fijaciones al mismo grado de corrosión que el producto. Es la línea más barata del pedido y el sitio más habitual donde la especificación pierde un grado en silencio.",
+    "EL MANTENIMIENTO FORMA PARTE DE LA ESPECIFICACIÓN",
+    "El acero inoxidable no es inerte: se autorrepara, y lo hace usando oxígeno. Una superficie que se mantiene limpia se repasiva. Una superficie bajo una película de sal, polvo o residuo de obra no, y por eso el herraje inoxidable en una posición exterior resguardada a menudo se comporta peor que el mismo herraje plenamente expuesto.",
+    "Donde un propietario no vaya a enjuagar el herraje exterior, o no pueda, eso tiene que formar parte de la decisión de material en la fase de especificación y no de una queja en la entrega. Un grado superior compensa en parte la falta de mantenimiento. No la sustituye.",
+    "LO QUE PUBLICAMOS Y LO QUE NO",
+    "Nuestras fichas indican material y acabado tal como los suministramos. Donde un modelo se ha ensayado a un grado EN 1670 o a un requisito de acabado A156.18, se indica el resultado con la norma del ensayo.",
+    "Donde un modelo no se ha ensayado, no aparece grado ni cifra de niebla salina. Un grado de corrosión es un resultado de laboratorio sobre una muestra concreta de un acabado concreto, y citar una cifra para un acabado no ensayado —aunque sea conservadora, aunque nos la creamos— sería inventar un resultado de ensayo. Nuestra posición sobre las cifras de especificación inventadas es aquí la misma que con las cotas: una fila ausente es una pregunta que el comprador puede hacer, y una fila plausible es una decisión que el comprador toma mal."
+  ],
+  "titlePt": "Resistência à corrosão 2026: graus EN 1670 de 0 a 5, horas de névoa salina e o que o ensaio não diz",
+  "summaryPt": "A EN 1670 gradua a resistência à corrosão da ferragem de porta de 0 a 5, e cada grau são umas horas em câmara de névoa salina neutra. Esta página dá as horas de cada grau, explica o que fazem a ASTM B117 e a ANSI/BHMA A156.18 do outro lado do Atlântico, nomeia os três ambientes onde um grau escolhido por hábito falha, e é honesta sobre o que uma câmara não consegue prever.",
+  "seoTitlePt": "Resistência à corrosão 2026: graus EN 1670 e névoa salina | Canton Hyland",
+  "seoDescriptionPt": "Graus de corrosão EN 1670 de 0 a 5 com as suas horas de névoa salina neutra, comparação com ASTM B117 e ANSI/BHMA A156.18, e que ambientes derrotam um grau escolhido por hábito.",
+  "bodyPt": [
+    "A corrosão é a única falha de ferragem que acontece com calendário. Uma fechadura funciona ou não funciona; um acabamento degrada-se de forma previsível, visível e diante de quem assinou o pedido.",
+    "É também a propriedade que mais se especifica por nome de material em vez de por grau — «inox», como se isso encerrasse o assunto —, e por isso uma obra costeira pode ser construída inteira com ferragem inox e estar raiada de ferrugem aos dezoito meses.",
+    "OS GRAUS DA EN 1670",
+    "A EN 1670 classifica a resistência à corrosão em seis graus, e cada um é definido por uma duração em câmara de névoa salina neutra.",
+    "| Grau EN 1670 | Resistência | Névoa salina neutra |\n| --- | --- | --- |\n| 0 | sem definir | — |\n| 1 | baixa | 24 horas |\n| 2 | moderada | 48 horas |\n| 3 | alta | 96 horas |\n| 4 | muito alta | 240 horas |\n| 5 | muito alta | 480 horas |",
+    "O grau 0 não é uma reprovação. É uma declaração de que a propriedade não é reivindicada, e numa porta interna de um edifício seco é o grau honesto e correto.",
+    "O grau aparece como um dígito dentro dos códigos de classificação mais longos dos produtos ensaiados segundo a EN: é o dígito de corrosão de uma classificação de dobradiça EN 1935, de uma de maçaneta EN 1906 e das classificações da maioria das outras normas EN de ferragem. Uma especificação que cita só o grau de carga ou o de durabilidade deixou o dígito de corrosão por especificar.",
+    "O QUE AS HORAS REALMENTE SIGNIFICAM",
+    "Um ensaio de névoa salina neutra coloca a amostra numa câmara vedada a temperatura controlada e pulveriza-a continuamente com uma solução salina. Passadas as horas indicadas, a amostra é examinada em busca de defeitos definidos.",
+    "É um ensaio comparativo, não preditivo. 480 horas em câmara não correspondem a nenhum número concreto de anos num edifício, e ninguém no setor afirma que sim. O que ele dá é uma ordenação confiável: um produto de grau 5 durará mais do que um de grau 3 no mesmo ambiente, por uma margem que o ensaio não quantifica.",
+    "Essa limitação merece ser dita com clareza, porque a alternativa — citar horas de névoa salina como se fossem vida útil — é uma afirmação insustentável que um comprador informado vai descontar.",
+    "O LADO NORTE-AMERICANO",
+    "A ASTM B117 é a prática normalizada do aparelho de névoa salina, e é o método que está por baixo da maioria das declarações de corrosão norte-americanas. A ANSI/BHMA A156.18 cobre materiais e acabamentos e fixa os ensaios que um acabamento deve superar, a névoa salina entre eles.",
+    "Os dois sistemas ensaiam o mesmo fenómeno físico com métodos muito relacionados, mas empacotam o resultado de forma diferente: a EN dá-lhe um dígito de grau, a A156.18 dá-lhe um acabamento que superou os requisitos da sua categoria.",
+    "Para uma especificação transfronteiriça, a abordagem que funciona é a mesma das molas e das dobradiças: indique o ambiente e não o grau. Um fornecedor de qualquer dos dois mercados pode traduzir «exterior, costeiro, a menos de 1 km de água salgada aberta» para a sua própria classificação. Nenhum consegue traduzir com confiança o número de grau do outro.",
+    "OS TRÊS AMBIENTES QUE DERROTAM UMA ESCOLHA POR HÁBITO",
+    "Costeiro. O cloreto em suspensão não precisa de imersão nem sequer de chuva: deposita-se nas superfícies e concentra-se ao evaporar a água. Uma ferragem numa varanda abrigada de frente para o mar pode corroer mais depressa do que uma que a chuva enxagua, porque o enxágue retira cloreto e o abrigo concentra-o.",
+    "Piscinas e as suas casas de máquinas. As atmosferas cloradas e sobretudo bromadas atacam alguns inoxidáveis de formas que a exposição marinha normal não, e o modo de falha — corrosão sob tensão nas fixações, não ferrugem superficial na parte visível — avisa muito pouco. A ferragem de uma piscina coberta é uma seleção especializada, não uma costeira com horas a mais.",
+    "Atmosferas industriais e urbanas com compostos de enxofre. Atacam desproporcionalmente as ligas de cobre e alguns acabamentos galvânicos, e por isso um acabamento em latão que se comporta bem num edifício rural pode ficar mau numa via principal de cidade.",
+    "Nos três o erro é o mesmo: tratar a corrosão como um único eixo onde mais horas é sempre a resposta. É um conjunto de ataques químicos diferentes, e um grau é uma ordenação geral e não uma garantia perante um concreto.",
+    "ONDE A CORROSÃO REALMENTE COMEÇA",
+    "Não costuma ser na face do produto. Começa onde o acabamento é mais fino ou não existe.",
+    "Arestas cortadas e faces usinadas, onde um revestimento aplicado antes da usinagem ficou atravessado. Furos de fixação e escareados. Os próprios parafusos, que com frequência são especificados a um grau inferior ao do produto que seguram: uma maçaneta inox numa porta costeira segurada por parafusos de aço zincado vai sangrar ferrugem pelas cabeças muito antes de a maçaneta mostrar seja o que for.",
+    "O contato entre metais diferentes na presença de umidade, que impulsiona a corrosão galvânica na junção. Uma chapa inox fixada a um aro de alumínio com as fixações erradas é uma pilha.",
+    "A regra prática que daí decorre: especifique as fixações ao mesmo grau de corrosão do produto. É a linha mais barata do pedido e o sítio mais habitual onde a especificação perde um grau em silêncio.",
+    "A MANUTENÇÃO FAZ PARTE DA ESPECIFICAÇÃO",
+    "O aço inox não é inerte: autorrepara-se, e fá-lo usando oxigénio. Uma superfície mantida limpa repassiva-se. Uma superfície sob uma película de sal, pó ou resíduo de obra não, e por isso a ferragem inox numa posição exterior abrigada muitas vezes comporta-se pior do que a mesma ferragem plenamente exposta.",
+    "Onde um proprietário não for enxaguar a ferragem exterior, ou não puder, isso tem de fazer parte da decisão de material na fase de especificação e não de uma reclamação na entrega. Um grau superior compensa em parte a falta de manutenção. Não a substitui.",
+    "O QUE PUBLICAMOS E O QUE NÃO",
+    "As nossas páginas indicam material e acabamento tal como os fornecemos. Onde um modelo foi ensaiado a um grau EN 1670 ou a um requisito de acabamento A156.18, o resultado é indicado com a norma do ensaio.",
+    "Onde um modelo não foi ensaiado, não aparece grau nem cifra de névoa salina. Um grau de corrosão é um resultado de laboratório sobre uma amostra concreta de um acabamento concreto, e citar uma cifra para um acabamento não ensaiado — mesmo conservadora, mesmo que acreditemos nela — seria inventar um resultado de ensaio. A nossa posição sobre cifras de especificação inventadas é aqui a mesma que com as cotas: uma linha ausente é uma pergunta que o comprador pode fazer, e uma linha plausível é uma decisão que o comprador toma mal."
+  ]
+}

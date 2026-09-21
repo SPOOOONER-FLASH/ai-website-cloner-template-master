@@ -1,0 +1,206 @@
+{
+  "slug": "hinge-grades-and-count-2026",
+  "title": "Hinge Grades and Hinge Count 2026: EN 1935 Grades 1–14, ANSI/BHMA A156.1, and How Many a Door Needs",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "Two questions decide a hinge specification: what grade, and how many. EN 1935 answers the first with grades 1 to 14 tied to a tested door mass; ANSI/BHMA A156.1 answers it with a weight class and a frequency. Neither answers the second, which is governed by leaf height and mass. This page sets out both ladders, the count rule, and the three failure modes that come from getting the count right and the grade wrong.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Hinge Grades and Count 2026: EN 1935, A156.1, How Many | Canton Hyland",
+  "seoDescription": "EN 1935 hinge grades 1 to 14 with tested door masses, ANSI/BHMA A156.1 weight classes, how many hinges a door needs by height, and why the count does not substitute for the grade.",
+  "body": [
+    "A hinge specification that says \"stainless butt hinge, 4 inch\" has named a size and a material and left out both of the things that determine whether the door still hangs straight in five years. The two that matter are the grade and the count.",
+    "THE EN 1935 LADDER",
+    "EN 1935 is the European standard for single-axis hinges. It classifies a hinge across eight digits, and the one that gets quoted is the grade: 1 to 14, ascending, each tied to a maximum tested door mass when the hinge is used in the tested configuration.",
+    "The lower grades cover light internal doors. The middle of the ladder covers normal commercial internal and entrance doors. The upper grades cover heavy doors, including the mass ranges where a fire door or a security door lands.",
+    "The number that gets misread is the mass. An EN 1935 grade states the door mass the hinge was tested to carry in a specific configuration, normally a set of three on a door of stated height. It is not a per-hinge load rating you can divide or multiply at will, and it is not a figure you can extrapolate by adding a fourth hinge.",
+    "Alongside the grade, the classification carries a category of use, a durability figure in cycles, a door mass, a fire rating suitability, a safety class, a corrosion resistance grade and a security grade. A specification that quotes only the grade digit has quoted one of eight.",
+    "THE ANSI/BHMA A156.1 APPROACH",
+    "A156.1 covers butts and hinges and classifies them by weight class and by frequency of use rather than by a single ascending grade number. The practical shape of it is a matrix: a standard-weight or heavy-weight hinge, in a high-frequency or low-frequency application, in a stated size.",
+    "The consequence for cross-market work is the same one that appears with door closers. An EN grade is a single value a supplier can match. A North American classification is a combination. A schedule written for both markets should state the door's mass, its height, its expected daily cycles and whether it is a fire door, and let each market's supplier map that onto its own classification.",
+    "HOW MANY HINGES A DOOR NEEDS",
+    "The count is governed by leaf height first and leaf mass second, and the convention is well settled.",
+    "| Leaf height up to | Imperial | Hinges |\n| --- | --- | --- |\n| 1524mm | 60\" | 2 |\n| 2286mm | 90\" | 3 |\n| 3048mm | 120\" | 4 |\n| each further 762mm or part of it | 30\" | one more |",
+    "That is the height rule. The mass rule runs alongside it: if the door's mass exceeds what the chosen grade covers at the count the height rule gives, the answer is a higher grade, not an extra hinge.",
+    "WHY AN EXTRA HINGE IS NOT A HIGHER GRADE",
+    "This is the error worth naming, because it is made by people who are being careful rather than careless. A door is too heavy for the hinges specified, so a fourth hinge is added to share the load.",
+    "It does not work the way the intuition suggests. The load on a hanging door is not distributed evenly across the hinges; the top hinge carries the largest share of the pull-out force because the door's weight acts as a lever about the bottom of the jamb. Adding a middle hinge adds support at the point where the least force is present. The top hinge is still the one that will fail, and it is still under-specified.",
+    "A middle hinge does do real work — it resists the leaf warping and it stiffens a tall door — but it is not a substitute for a grade that covers the mass.",
+    "THE THREE FAILURE MODES",
+    "Screw pull-out at the top hinge. The hinge itself is intact, the frame has given way. This is the signature of a hinge or a fixing under-specified for the mass, and it is the one that makes a door drop and bind against the strike.",
+    "Knuckle wear. The pin and knuckle work loose over cycles, and the door develops play — it rattles, and the latch stops meeting the strike squarely. This is the signature of a durability class below the door's actual traffic, and it is why the cycle figure in the classification matters as much as the mass.",
+    "Corrosion at the pin. On an external door or a coastal site, a hinge whose corrosion grade is below its exposure seizes or bleeds rust down the frame. The grade for this is a separate digit in the EN 1935 classification, and specifying a high load grade does nothing for it.",
+    "BEARINGS, AND WHERE THEY EARN THEIR COST",
+    "A plain-knuckle hinge runs metal on metal. A ball-bearing or washer hinge places a bearing between the knuckles, which reduces friction and wear at the cost of a slightly thicker knuckle stack.",
+    "The place a bearing hinge earns its price is the combination of a heavy door and high traffic — a main entrance, a stair door on a busy route, anything with a closer fitted, because a closer cycles the door whether or not anyone uses it gently. On a light internal door at low traffic, a plain hinge is the correct specification, not a cheaper one.",
+    "FIRE DOORS",
+    "A hinge on a fire door has to be suitable for that use, and suitability is not a property of the material. Steel and stainless are common on fire doors and brass generally is not, but the decision is made by the fire test of the whole assembly, not by the melting point of the hinge.",
+    "The practical rule: a fire door's hinges are part of its tested assembly. Substituting a hinge of the same size and a different classification is a change to the assembly, and the certificate covers what was tested.",
+    "WHAT WE PUBLISH",
+    "Our hinge pages carry the leaf dimensions, thickness, material and finish as we measure and supply them, with imperial equivalents on the English pages. Where a model has been tested to an EN 1935 grade or an A156.1 classification, that is stated. Where it has not, no grade appears — a hinge grade is a test result, and a test result is either held or it is not."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "How many hinges does a door need?",
+        "answer": "By leaf height: up to about 1524mm (60\"), two; above that to 2286mm (90\"), three; above that to 3048mm (120\"), four; one more for each additional 762mm (30\") or part of it. If the door's mass exceeds what the grade covers at that count, raise the grade rather than adding a hinge."
+      },
+      {
+        "question": "Can I add a fourth hinge instead of specifying a stronger one?",
+        "answer": "No. The load on a hanging door is not shared evenly — the top hinge carries the largest pull-out force because the weight acts as a lever about the bottom of the jamb. A middle hinge adds support where the least force is. The top hinge is still the one that fails."
+      },
+      {
+        "question": "What do EN 1935 grades 1 to 14 mean?",
+        "answer": "They are an ascending ladder tied to a maximum tested door mass in a stated configuration, normally three hinges on a door of stated height. The grade is one digit of an eight-part classification that also covers category of use, durability in cycles, fire suitability, safety, corrosion and security."
+      },
+      {
+        "question": "Is an EN 1935 grade the same as an ANSI/BHMA A156.1 class?",
+        "answer": "No, and there is no clean conversion. EN gives one ascending grade; A156.1 gives a weight class combined with a frequency of use. For a schedule covering both markets, state the door mass, height, expected daily cycles and fire status, and let each supplier map it to their own classification."
+      },
+      {
+        "question": "When is a ball-bearing hinge worth the extra cost?",
+        "answer": "Heavy door plus high traffic — a main entrance, a busy stair door, or any door with a closer fitted, because the closer cycles the door regardless of how gently people use it. On a light internal door at low traffic, a plain-knuckle hinge is the correct specification rather than a cheaper one."
+      },
+      {
+        "question": "My door has dropped and binds against the strike. What failed?",
+        "answer": "Most often screw pull-out at the top hinge, where the frame gives way rather than the hinge. That is the signature of a hinge or a fixing under-specified for the door's mass. Check the top hinge fixings before adjusting the strike, because moving the strike hides the fault rather than fixing it."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuántas bisagras necesita una puerta?",
+        "answer": "Por altura de hoja: hasta unos 1524 mm, dos; por encima y hasta 2286 mm, tres; por encima y hasta 3048 mm, cuatro; una más por cada 762 mm adicionales o fracción. Si la masa de la puerta supera lo que cubre el grado con ese número, suba el grado en lugar de añadir una bisagra."
+      },
+      {
+        "question": "¿Puedo poner una cuarta bisagra en vez de especificar una más fuerte?",
+        "answer": "No. La carga de una puerta colgada no se reparte por igual: la bisagra superior soporta la mayor fuerza de arranque porque el peso actúa como palanca respecto al pie del cerco. Una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que falla."
+      },
+      {
+        "question": "¿Qué significan los grados EN 1935 del 1 al 14?",
+        "answer": "Son una escala ascendente ligada a una masa máxima de puerta ensayada en una configuración concreta, normalmente tres bisagras sobre una puerta de altura indicada. El grado es un dígito de una clasificación de ocho partes que también cubre categoría de uso, durabilidad en ciclos, aptitud cortafuego, seguridad de uso, corrosión y seguridad."
+      },
+      {
+        "question": "¿Un grado EN 1935 equivale a una clase ANSI/BHMA A156.1?",
+        "answer": "No, y no hay conversión limpia. EN da un grado ascendente único; A156.1 da una clase de peso combinada con una frecuencia de uso. Para un cuadro que cubra ambos mercados, indique masa, altura, ciclos diarios previstos y condición cortafuego, y deje que cada proveedor lo traduzca a su clasificación."
+      },
+      {
+        "question": "¿Cuándo compensa una bisagra con rodamiento de bolas?",
+        "answer": "Puerta pesada con tráfico alto: una entrada principal, una puerta de escalera concurrida, o cualquier puerta con cierrapuertas, porque el cierrapuertas cicla la puerta al margen de cómo la traten las personas. En una puerta interior ligera de poco tráfico, la bisagra de nudillo simple es la especificación correcta, no la barata."
+      },
+      {
+        "question": "Mi puerta ha caído y roza el cerradero. ¿Qué ha fallado?",
+        "answer": "Lo más frecuente es el arranque de tornillos en la bisagra superior, donde cede el cerco y no la bisagra. Es la firma de una bisagra o una fijación infradimensionada para la masa. Revise las fijaciones superiores antes de mover el cerradero, porque moverlo esconde el fallo en lugar de repararlo."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quantas dobradiças uma porta precisa?",
+        "answer": "Por altura de folha: até cerca de 1524 mm, duas; acima disso até 2286 mm, três; acima disso até 3048 mm, quatro; mais uma a cada 762 mm adicionais ou fração. Se a massa da porta ultrapassa o que o grau cobre com esse número, suba o grau em vez de acrescentar uma dobradiça."
+      },
+      {
+        "question": "Posso pôr uma quarta dobradiça em vez de especificar uma mais forte?",
+        "answer": "Não. A carga de uma porta pendurada não se reparte por igual: a dobradiça superior suporta a maior força de arranque porque o peso age como alavanca em relação ao pé do batente. Uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que falha."
+      },
+      {
+        "question": "O que significam os graus EN 1935 de 1 a 14?",
+        "answer": "São uma escala crescente ligada a uma massa máxima de porta ensaiada numa configuração concreta, normalmente três dobradiças numa porta de altura indicada. O grau é um dígito de uma classificação de oito partes que também cobre categoria de uso, durabilidade em ciclos, aptidão corta-fogo, segurança de uso, corrosão e segurança."
+      },
+      {
+        "question": "Um grau EN 1935 equivale a uma classe ANSI/BHMA A156.1?",
+        "answer": "Não, e não há conversão limpa. A EN dá um grau crescente único; a A156.1 dá uma classe de peso combinada com uma frequência de uso. Para um mapa que cubra os dois mercados, indique massa, altura, ciclos diários previstos e condição corta-fogo, e deixe cada fornecedor traduzir isso para a sua classificação."
+      },
+      {
+        "question": "Quando compensa uma dobradiça com rolamento de esferas?",
+        "answer": "Porta pesada com tráfego alto: uma entrada principal, uma porta de escada movimentada, ou qualquer porta com mola, porque a mola cicla a porta independentemente de como as pessoas a tratem. Numa porta interna leve de pouco tráfego, a dobradiça de nó simples é a especificação correta, não a barata."
+      },
+      {
+        "question": "A minha porta caiu e raspa no batente. O que falhou?",
+        "answer": "Na maioria das vezes o arranque de parafusos na dobradiça superior, onde cede o aro e não a dobradiça. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa. Verifique as fixações superiores antes de mexer no batente, porque mexer nele esconde a falha em vez de a reparar."
+      }
+    ]
+  },
+  "titleEs": "Grados y número de bisagras 2026: EN 1935 grados 1 a 14, ANSI/BHMA A156.1 y cuántas necesita una puerta",
+  "summaryEs": "Dos preguntas deciden una especificación de bisagra: qué grado y cuántas. EN 1935 responde la primera con grados de 1 a 14 ligados a una masa de puerta ensayada; ANSI/BHMA A156.1 la responde con una clase de peso y una frecuencia. Ninguna responde la segunda, que la gobiernan la altura y la masa de la hoja. Esta página fija ambas escalas, la regla de número y los tres modos de fallo que aparecen cuando el número es correcto y el grado no.",
+  "seoTitleEs": "Grados y número de bisagras 2026: EN 1935, A156.1, cuántas | Canton Hyland",
+  "seoDescriptionEs": "Grados EN 1935 del 1 al 14 con las masas ensayadas, clases de peso ANSI/BHMA A156.1, cuántas bisagras por altura de puerta, y por qué el número no sustituye al grado.",
+  "bodyEs": [
+    "Una especificación de bisagra que dice «bisagra de pala inoxidable, 4 pulgadas» ha nombrado un tamaño y un material y ha omitido las dos cosas que deciden si la puerta seguirá recta dentro de cinco años. Las dos que importan son el grado y el número.",
+    "LA ESCALA DE EN 1935",
+    "EN 1935 es la norma europea de bisagras de eje único. Clasifica una bisagra en ocho dígitos, y el que se cita es el grado: de 1 a 14, ascendente, cada uno ligado a una masa máxima de puerta ensayada cuando la bisagra se usa en la configuración de ensayo.",
+    "Los grados bajos cubren puertas interiores ligeras. La mitad de la escala cubre puertas comerciales interiores y de entrada normales. Los grados altos cubren puertas pesadas, incluidos los rangos de masa donde caen una cortafuego o una puerta de seguridad.",
+    "El número que se malinterpreta es la masa. Un grado EN 1935 indica la masa de puerta que la bisagra soportó en ensayo en una configuración concreta, normalmente un juego de tres sobre una puerta de altura indicada. No es una carga por bisagra que se pueda dividir o multiplicar a voluntad, y no es una cifra que se pueda extrapolar añadiendo una cuarta.",
+    "Junto al grado, la clasificación lleva una categoría de uso, una durabilidad en ciclos, una masa de puerta, una aptitud cortafuego, una clase de seguridad de uso, un grado de resistencia a la corrosión y un grado de seguridad. Una especificación que cita solo el dígito de grado ha citado uno de ocho.",
+    "EL ENFOQUE DE ANSI/BHMA A156.1",
+    "A156.1 cubre palas y bisagras y las clasifica por clase de peso y por frecuencia de uso, no por un único número ascendente. En la práctica es una matriz: bisagra de peso estándar o pesado, en aplicación de alta o baja frecuencia, en un tamaño indicado.",
+    "La consecuencia para el trabajo transfronterizo es la misma que con los cierrapuertas. Un grado EN es un valor único que un proveedor puede igualar. Una clasificación norteamericana es una combinación. Un cuadro para ambos mercados debe indicar masa de la puerta, altura, ciclos diarios previstos y si es cortafuego, y dejar que el proveedor de cada mercado lo traduzca.",
+    "CUÁNTAS BISAGRAS NECESITA UNA PUERTA",
+    "El número lo gobierna primero la altura de la hoja y después su masa, y la convención está asentada.",
+    "| Altura de hoja hasta | Bisagras |\n| --- | --- |\n| 1524 mm | 2 |\n| 2286 mm | 3 |\n| 3048 mm | 4 |\n| cada 762 mm adicionales o fracción | una más |",
+    "Esa es la regla de altura. La regla de masa corre en paralelo: si la masa de la puerta supera lo que cubre el grado elegido con el número que da la regla de altura, la respuesta es un grado superior, no una bisagra más.",
+    "POR QUÉ UNA BISAGRA MÁS NO ES UN GRADO MÁS",
+    "Este es el error que merece nombrarse, porque lo comete gente cuidadosa y no descuidada. Una puerta es demasiado pesada para las bisagras especificadas, así que se añade una cuarta para repartir la carga.",
+    "No funciona como sugiere la intuición. La carga de una puerta colgada no se reparte por igual entre las bisagras: la superior soporta la mayor parte de la fuerza de arranque porque el peso actúa como palanca respecto al pie del cerco. Añadir una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que fallará, y sigue infradimensionada.",
+    "Una bisagra intermedia sí hace trabajo real —resiste el alabeo de la hoja y rigidiza una puerta alta— pero no sustituye a un grado que cubra la masa.",
+    "LOS TRES MODOS DE FALLO",
+    "Arranque de tornillos en la bisagra superior. La bisagra está intacta, el cerco ha cedido. Es la firma de una bisagra o una fijación infradimensionada para la masa, y es la que hace caer la puerta y rozar contra el cerradero.",
+    "Desgaste del nudillo. El pasador y el nudillo se aflojan con los ciclos y la puerta coge holgura: traquetea, y el picaporte deja de entrar recto en el cerradero. Es la firma de una clase de durabilidad por debajo del tráfico real, y por eso la cifra de ciclos de la clasificación importa tanto como la masa.",
+    "Corrosión en el pasador. En una puerta exterior o en obra costera, una bisagra con grado de corrosión inferior a su exposición se agarrota o sangra óxido por el cerco. Es un dígito aparte en la clasificación EN 1935, y especificar un grado de carga alto no hace nada por él.",
+    "RODAMIENTOS, Y DÓNDE COMPENSAN",
+    "Una bisagra de nudillo simple trabaja metal contra metal. Una de rodamiento de bolas o arandela coloca un rodamiento entre nudillos, lo que reduce fricción y desgaste a cambio de un paquete de nudillos algo más grueso.",
+    "Donde compensa su precio es en la combinación de puerta pesada y tráfico alto: una entrada principal, una puerta de escalera concurrida, cualquier puerta con cierrapuertas, porque el cierrapuertas cicla la puerta al margen de cómo la traten. En una puerta interior ligera de poco tráfico, la bisagra simple es la especificación correcta, no la barata.",
+    "PUERTAS CORTAFUEGO",
+    "Una bisagra de cortafuego tiene que ser apta para ese uso, y la aptitud no es una propiedad del material. El acero y el inoxidable son habituales en cortafuego y el latón en general no, pero la decisión la toma el ensayo de fuego del conjunto completo, no el punto de fusión de la bisagra.",
+    "La regla práctica: las bisagras de una cortafuego forman parte de su conjunto ensayado. Sustituir una bisagra del mismo tamaño y distinta clasificación es un cambio del conjunto, y el certificado cubre lo que se ensayó.",
+    "LO QUE PUBLICAMOS",
+    "Nuestras fichas de bisagra llevan las dimensiones de pala, el espesor, el material y el acabado tal como los medimos y suministramos, con equivalencias imperiales en las páginas en inglés. Donde un modelo se ha ensayado a un grado EN 1935 o a una clasificación A156.1, se indica. Donde no, no aparece grado: un grado de bisagra es un resultado de ensayo, y un resultado de ensayo se tiene o no se tiene."
+  ],
+  "titlePt": "Graus e número de dobradiças 2026: EN 1935 graus 1 a 14, ANSI/BHMA A156.1 e quantas uma porta precisa",
+  "summaryPt": "Duas perguntas decidem uma especificação de dobradiça: qual grau e quantas. A EN 1935 responde à primeira com graus de 1 a 14 ligados a uma massa de porta ensaiada; a ANSI/BHMA A156.1 responde com uma classe de peso e uma frequência. Nenhuma responde à segunda, que é governada pela altura e pela massa da folha. Esta página estabelece as duas escalas, a regra de número e os três modos de falha que aparecem quando o número está certo e o grau não.",
+  "seoTitlePt": "Graus e número de dobradiças 2026: EN 1935, A156.1, quantas | Canton Hyland",
+  "seoDescriptionPt": "Graus EN 1935 de 1 a 14 com as massas ensaiadas, classes de peso ANSI/BHMA A156.1, quantas dobradiças por altura de porta, e por que o número não substitui o grau.",
+  "bodyPt": [
+    "Uma especificação de dobradiça que diz «dobradiça de aba inox, 4 polegadas» nomeou um tamanho e um material e omitiu as duas coisas que decidem se a porta continuará reta daqui a cinco anos. As duas que importam são o grau e o número.",
+    "A ESCALA DA EN 1935",
+    "A EN 1935 é a norma europeia de dobradiças de eixo único. Classifica uma dobradiça em oito dígitos, e o que se cita é o grau: de 1 a 14, crescente, cada um ligado a uma massa máxima de porta ensaiada quando a dobradiça é usada na configuração de ensaio.",
+    "Os graus baixos cobrem portas internas leves. O meio da escala cobre portas comerciais internas e de entrada normais. Os graus altos cobrem portas pesadas, incluindo as faixas de massa onde cai uma corta-fogo ou uma porta de segurança.",
+    "O número que é mal lido é a massa. Um grau EN 1935 indica a massa de porta que a dobradiça suportou em ensaio numa configuração concreta, normalmente um jogo de três numa porta de altura indicada. Não é uma carga por dobradiça que se possa dividir ou multiplicar à vontade, e não é uma cifra que se possa extrapolar acrescentando uma quarta.",
+    "Ao lado do grau, a classificação leva uma categoria de uso, uma durabilidade em ciclos, uma massa de porta, uma aptidão corta-fogo, uma classe de segurança de uso, um grau de resistência à corrosão e um grau de segurança. Uma especificação que cita só o dígito do grau citou um de oito.",
+    "A ABORDAGEM DA ANSI/BHMA A156.1",
+    "A A156.1 cobre abas e dobradiças e classifica-as por classe de peso e por frequência de uso, não por um único número crescente. Na prática é uma matriz: dobradiça de peso padrão ou pesado, em aplicação de alta ou baixa frequência, num tamanho indicado.",
+    "A consequência para o trabalho transfronteiriço é a mesma que com as molas de porta. Um grau EN é um valor único que um fornecedor pode igualar. Uma classificação norte-americana é uma combinação. Um mapa para os dois mercados deve indicar massa da porta, altura, ciclos diários previstos e se é corta-fogo, e deixar o fornecedor de cada mercado traduzir isso.",
+    "QUANTAS DOBRADIÇAS UMA PORTA PRECISA",
+    "O número é governado primeiro pela altura da folha e depois pela sua massa, e a convenção está assente.",
+    "| Altura de folha até | Dobradiças |\n| --- | --- |\n| 1524 mm | 2 |\n| 2286 mm | 3 |\n| 3048 mm | 4 |\n| a cada 762 mm adicionais ou fração | mais uma |",
+    "Essa é a regra de altura. A regra de massa corre em paralelo: se a massa da porta ultrapassa o que o grau escolhido cobre com o número que a regra de altura dá, a resposta é um grau superior, não mais uma dobradiça.",
+    "POR QUE MAIS UMA DOBRADIÇA NÃO É MAIS UM GRAU",
+    "Este é o erro que merece ser nomeado, porque é cometido por gente cuidadosa e não descuidada. Uma porta é pesada demais para as dobradiças especificadas, então acrescenta-se uma quarta para repartir a carga.",
+    "Não funciona como a intuição sugere. A carga de uma porta pendurada não se reparte por igual entre as dobradiças: a superior suporta a maior parte da força de arranque porque o peso age como alavanca em relação ao pé do aro. Acrescentar uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que vai falhar, e continua subdimensionada.",
+    "Uma dobradiça intermédia faz trabalho real — resiste ao empeno da folha e enrijece uma porta alta — mas não substitui um grau que cubra a massa.",
+    "OS TRÊS MODOS DE FALHA",
+    "Arranque de parafusos na dobradiça superior. A dobradiça está intacta, o aro cedeu. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa, e é a que faz a porta cair e raspar contra o batente.",
+    "Desgaste do nó. O pino e o nó afrouxam com os ciclos e a porta ganha folga: chocalha, e o trinco deixa de entrar reto no batente. É a assinatura de uma classe de durabilidade abaixo do tráfego real, e por isso a cifra de ciclos da classificação importa tanto quanto a massa.",
+    "Corrosão no pino. Numa porta externa ou em obra costeira, uma dobradiça com grau de corrosão inferior à sua exposição emperra ou sangra ferrugem pelo aro. É um dígito à parte na classificação EN 1935, e especificar um grau de carga alto não faz nada por ele.",
+    "ROLAMENTOS, E ONDE COMPENSAM",
+    "Uma dobradiça de nó simples trabalha metal contra metal. Uma de rolamento de esferas ou arruela coloca um rolamento entre nós, o que reduz atrito e desgaste em troca de um pacote de nós um pouco mais grosso.",
+    "Onde compensa o seu preço é na combinação de porta pesada e tráfego alto: uma entrada principal, uma porta de escada movimentada, qualquer porta com mola, porque a mola cicla a porta independentemente de como a tratem. Numa porta interna leve de pouco tráfego, a dobradiça simples é a especificação correta, não a barata.",
+    "PORTAS CORTA-FOGO",
+    "Uma dobradiça de corta-fogo tem de ser apta para esse uso, e a aptidão não é uma propriedade do material. O aço e o inox são habituais em corta-fogo e o latão em geral não, mas a decisão é tomada pelo ensaio de fogo do conjunto completo, não pelo ponto de fusão da dobradiça.",
+    "A regra prática: as dobradiças de uma corta-fogo fazem parte do seu conjunto ensaiado. Substituir uma dobradiça do mesmo tamanho e classificação diferente é uma mudança do conjunto, e o certificado cobre o que foi ensaiado.",
+    "O QUE PUBLICAMOS",
+    "As nossas páginas de dobradiça levam as dimensões de aba, a espessura, o material e o acabamento tal como os medimos e fornecemos, com equivalências imperiais nas páginas em inglês. Onde um modelo foi ensaiado a um grau EN 1935 ou a uma classificação A156.1, isso é indicado. Onde não, não aparece grau: um grau de dobradiça é um resultado de ensaio, e um resultado de ensaio tem-se ou não se tem."
+  ]
+}

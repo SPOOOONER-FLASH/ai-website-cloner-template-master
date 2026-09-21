@@ -3,6 +3,7 @@ import type { NewsArticle } from "@/data/types";
 import { newsKindLabels, formatNewsDate } from "@/data/news";
 import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
+import { GuideCover } from "./GuideCover";
 
 /**
  * Listing card. Image on top, text below — the arrangement FSB uses on /en/press.
@@ -12,12 +13,24 @@ import type { Locale } from "@/data/site";
  * this company is active cannot tell without opening each item. Dates are cheap and
  * the whole point of a dateline.
  */
+/*
+  section 决定这张卡/这一页属于哪个栏目，默认 news。
+
+  2026-09-21 新开 /guides/ 时加的。甲方的决定是现有 35 篇一篇都不搬 ——
+  它们的 URL 正在被引用（那天的 Clarity 读数里 33 条引用全部落在 /news/ 下的
+  八个页面上）。所以两个栏目共用这些组件，只有路径不同。
+
+  没有为 guides 复制一套组件：形状完全相同，复制一份只会让下一次改版式的人
+  改两处，而其中一处一定会被忘掉。
+*/
 export function NewsCard({
   article,
   locale = "en",
+  section = "news",
 }: {
   article: NewsArticle;
   locale?: Locale;
+  section?: "news" | "guides";
 }) {
   const base = locale === "en" ? "" : `/${locale}`;
   /*
@@ -32,10 +45,10 @@ export function NewsCard({
     (locale === "es" && article.summaryEs) || (locale === "pt" && article.summaryPt) || article.summary;
   return (
     <Link
-      href={`${base}/news/${article.slug}/`}
-      className="hard-shadow-card group flex flex-col bg-surface"
+      href={`${base}/${section}/${article.slug}/`}
+      className={section === "guides" ? "group flex flex-col border-b border-line bg-surface" : "hard-shadow-card group flex flex-col bg-surface"}
     >
-      <NewsVisual article={article} locale={locale} />
+      {section === "guides" ? <GuideCover article={article} locale={locale} compact /> : <NewsVisual article={article} locale={locale} />}
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <div className="flex flex-wrap items-baseline gap-x-16 gap-y-4">
           <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">

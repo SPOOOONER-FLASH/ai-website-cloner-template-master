@@ -76,6 +76,22 @@ const newsCount = barrel({
   outFile: "news.ts",
 });
 
+/*
+  指南栏目，2026-09-21 新开。
+
+  和 news 用同一个 NewsArticle 类型，但是**另一个集合**，因为它们回答不同的问题：
+  news 是这家工厂发生了什么，guides 是买家该怎么判断。甲方 2026-09-21 的决定是
+  现有 35 篇一篇都不搬 —— 它们的 URL 正在被引用，搬家换来的是几天的抖动和零收益。
+  新写的 SEO/GEO 长文从这里开始，旧的留在原地。
+*/
+const guideCount = barrel({
+  dir: "content/guides",
+  type: "NewsArticle",
+  typeImport: `import type { NewsArticle } from "../types";`,
+  exportName: "guides",
+  outFile: "guides.ts",
+});
+
 // Sanity check: every product slug must match its filename, otherwise the URL and the
 // file drift apart and the CMS starts editing the wrong record.
 const mismatched = readdirSync("content/products")
@@ -92,5 +108,5 @@ if (mismatched.length) {
 }
 
 console.log(
-  `content index: ${productCount} products, ${projectCount} projects, ${newsCount} news`,
+  `content index: ${productCount} products, ${projectCount} projects, ${newsCount} news, ${guideCount} guides`,
 );

@@ -76,6 +76,14 @@ const SPANISH_MIRROR_PREFIXES = [
     as one in Dubai, and because the honest half — the BIM library we do not have —
     is the half that saves them designing around something that is not there.
   */
+  /*
+    指南栏目，2026-09-21 新开。
+
+    /news/ 的 35 篇一篇不搬（它们的 URL 正在被引用），新写的 SEO/GEO 长文
+    从 /guides/ 开始。三语同时上线，因为这一批的第一篇就是三语齐全的 ——
+    等英文跑出成绩再补翻译，等于把西语葡语的第一波曝光让出去。
+  */
+  "/guides",
   "/documents",
   "/glossary",
 ];
@@ -148,6 +156,7 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/model-lookup",
   "/glossary",
   "/documents",
+  "/guides",
   /*
     The newsroom, added 2026-09-17.
 

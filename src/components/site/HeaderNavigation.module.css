@@ -1,0 +1,7 @@
+/* Seven translated links need more room than the former six-link header.
+   Keep the existing scrollable navigation rail through small laptop widths. */
+@media (min-width: 86rem) and (max-width: 99.999rem) {
+  .wideNavigation { display: none; }
+  .controls { grid-column: 1 / -1; }
+  .compactNavigation { display: block; }
+}

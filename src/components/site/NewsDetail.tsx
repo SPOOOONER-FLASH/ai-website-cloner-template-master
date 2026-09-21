@@ -8,6 +8,11 @@ import { Breadcrumbs } from "./Breadcrumbs";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
+import { articleBlocks } from "@/lib/article-layout";
+import { ArticleBody } from "./ArticleBody";
+import { ArticleContents } from "./ArticleContents";
+import reading from "./ArticleReading.module.css";
+import { GuideCover } from "./GuideCover";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -65,14 +70,32 @@ const COPY = {
   },
 } as const;
 
+/*
+  section 决定这张卡/这一页属于哪个栏目，默认 news。
+
+  2026-09-21 新开 /guides/ 时加的。甲方的决定是现有 35 篇一篇都不搬 ——
+  它们的 URL 正在被引用（那天的 Clarity 读数里 33 条引用全部落在 /news/ 下的
+  八个页面上）。所以两个栏目共用这些组件，只有路径不同。
+
+  没有为 guides 复制一套组件：形状完全相同，复制一份只会让下一次改版式的人
+  改两处，而其中一处一定会被忘掉。
+*/
+const SECTION_LABEL = {
+  news: { en: "News + Press", es: "Noticias y prensa", pt: "Notícias e imprensa" },
+  guides: { en: "Guides", es: "Guías", pt: "Guias" },
+} as const;
+
 export function NewsDetail({
   article,
   locale = "en",
+  section = "news",
 }: {
   article: NewsArticle;
   locale?: Locale;
+  section?: "news" | "guides";
 }) {
   const t = COPY[locale];
+  const sectionLabel = SECTION_LABEL[section][locale] ?? SECTION_LABEL[section].en;
   const base = locale === "en" ? "" : `/${locale}`;
   /*
     Falls back to the English field when a translation is missing rather than rendering
@@ -98,6 +121,8 @@ export function NewsDetail({
   const summary = summaryFor[locale] || article.summary;
   const localeBody = bodyFor[locale];
   const body = localeBody?.length === article.body.length ? localeBody : article.body;
+  const blocks = articleBlocks(body);
+  const overview = { en: "Overview", es: "Resumen", pt: "Visão geral" }[locale];
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -111,20 +136,21 @@ export function NewsDetail({
   /* The heading goes in the language of the questions, not of the page — see the note on
      articleFaqLocale. A translated heading over untranslated pairs reads as a bug. */
   const faqLocale = articleFaqLocale(article, locale);
+  const contents = [{ id: "article-overview", text: overview, level: 2 }, ...blocks.filter(block => block.kind === "heading").map(block => ({ id: block.id, text: block.text, level: block.level })), ...(faq.length ? [{ id: "article-faq", text: articleFaqHeading(faqLocale), level: 2 }] : [])];
   const related = (article.relatedModels ?? [])
     .map((model) => getProductByModel(model))
     .filter((product) => product !== undefined)
     .filter(isPublished);
 
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
-      <div className="layout space-y-96 lg:space-y-136">
+    <main className={section === "guides" ? "isolate mt-48 flex-grow justify-self-start lg:mt-64" : "isolate mt-48 flex-grow justify-self-start lg:mt-192"}>
+      <div className={section === "guides" ? "layout space-y-48 lg:space-y-64" : "layout space-y-96 lg:space-y-136"}>
         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
           <div className="col-span-full">
             <Breadcrumbs
               items={[
                 { label: t.home, href: `${base}/` },
-                { label: t.news, href: `${base}/news/` },
+                { label: sectionLabel, href: `${base}/${section}/` },
                 { label: title },
               ]}
             />
@@ -140,10 +166,10 @@ export function NewsDetail({
 
           <div className="col-span-full">
             <Link
-              href={`${base}/news/`}
+              href={`${base}/${section}/`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
             >
-              {t.back}
+              {section === "guides" ? { en: "← Back to all guides", es: "← Volver a todas las guías", pt: "← Voltar a todos os guias" }[locale] : t.back}
             </Link>
           </div>
         </section>
@@ -151,12 +177,12 @@ export function NewsDetail({
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           {/* Left column: the dateline, the contact route, and any linked products. */}
           <div className="col-span-full lg:col-span-4 xl:col-span-8">
-            <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
+            {section === "news" && <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
               {newsKindLabels(locale)[article.kind]}
-            </p>
+            </p>}
             <time
               dateTime={article.publishedAt}
-              className="mt-8 block text-h3 text-ink"
+              className={section === "guides" ? "block text-c2 text-ink-secondary" : "mt-8 block text-h3 text-ink"}
             >
               {formatNewsDate(article.publishedAt, locale)}
             </time>
@@ -195,7 +221,7 @@ export function NewsDetail({
               </p>
             ) : null}
 
-            <div className="mt-32 border-t border-line pt-16">
+            {section === "news" && <div className="mt-32 border-t border-line pt-16">
               <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
                 {t.pressEnquiries}
               </p>
@@ -211,7 +237,7 @@ export function NewsDetail({
               >
                 {t.contact}
               </Link>
-            </div>
+            </div>}
 
             {related.length > 0 ? (
               <div className="mt-32 border-t border-line pt-16">
@@ -236,13 +262,14 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-          <NewsVisual article={article} locale={locale} />
+          {section === "guides" ? <GuideCover article={article} locale={locale} /> : <NewsVisual article={article} locale={locale} />}
           </div>
         </section>
 
         <section className="col-content grid w-full grid-cols gap-x">
+          {section === "guides" && <div className="col-span-full min-w-0 lg:col-span-4 xl:col-span-8"><ArticleContents items={contents} locale={locale} /></div>}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            {body.map((paragraph, index) => (
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : body.map((paragraph, index) => (
               <p
                 key={index}
                 className={
@@ -271,7 +298,7 @@ export function NewsDetail({
             */}
             {faq.length ? (
               <section
-                className="mt-64 border-t border-line pt-32"
+                className={section === "guides" ? reading.faq : "mt-64 border-t border-line pt-32"}
                 aria-labelledby="article-faq"
                 /* Marked in the language it is actually in, so a screen reader switches
                    voice and a search engine is not told English is Portuguese. */
@@ -280,7 +307,7 @@ export function NewsDetail({
                 <h2 id="article-faq" className="text-h3 text-ink">
                   {articleFaqHeading(faqLocale)}
                 </h2>
-                {faq.map((item) => (
+                {section === "guides" ? faq.map((item) => <details key={item.question}><summary><h3>{item.question}</h3></summary><p>{item.answer}</p></details>) : faq.map((item) => (
                   <section key={item.question} className="mt-32">
                     <h3 className="text-c1 font-semibold text-ink">{item.question}</h3>
                     <p className="mt-12 text-c1 text-ink-secondary">{item.answer}</p>

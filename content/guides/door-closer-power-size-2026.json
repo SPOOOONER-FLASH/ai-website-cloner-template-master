@@ -1,0 +1,197 @@
+{
+  "slug": "door-closer-power-size-2026",
+  "title": "Door Closer Power Size 2026: EN 1154 Sizes 1–7, A156.4, and How to Pick One from the Door",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "A door closer is specified by a power size, and the power size is derived from the door — its leaf width and its mass — not from the opening or the building type. This page sets out the EN 1154 size ladder with the leaf widths each covers, how the ANSI/BHMA A156.4 approach differs, the three adjustments that are not the power size, and the accessibility constraint that overrides all of it.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/products-hyde/ju-088-door-closer.webp",
+    "ratio": "1 / 1",
+    "label": "JU-088 door closer — the power size is set by the door leaf, not by the room",
+    "labelEs": "Cierrapuertas JU-088 — la potencia la fija la hoja, no la sala",
+    "labelPt": "Mola de porta JU-088 — a potência é definida pela folha, não pela sala"
+  },
+  "relatedModels": [
+    "JU-088"
+  ],
+  "seoTitle": "Door Closer Power Size 2026: EN 1154 Sizes and Selection | Canton Hyland",
+  "seoDescription": "EN 1154 door closer power sizes 1 to 7 with the leaf widths and masses each covers, how ANSI/BHMA A156.4 differs, adjustable versus fixed size, and the accessibility opening-force limit.",
+  "body": [
+    "A door closer is chosen by power size, and the single most common specification error is choosing it by room. A heavy door in a small office and a light door in a grand entrance need the closers their doors call for, not the ones the spaces suggest.",
+    "The power size is derived from two properties of the leaf: its width and its mass. Everything else — the mounting position, the backcheck, the delayed action — is an adjustment made after the size is right.",
+    "THE EN 1154 SIZE LADDER",
+    "EN 1154 defines power sizes 1 to 7, ascending. Each size corresponds to a maximum door leaf width and a maximum leaf mass, and a closer is selected by taking whichever of the two puts it in the higher size.",
+    "| EN 1154 power size | Max leaf width | Imperial | Max leaf mass |\n| --- | --- | --- | --- |\n| 1 | 750mm | 29-1/2\" | 20 kg |\n| 2 | 850mm | 33-1/2\" | 40 kg |\n| 3 | 950mm | 37-3/8\" | 60 kg |\n| 4 | 1100mm | 43-1/4\" | 80 kg |\n| 5 | 1250mm | 49-1/4\" | 100 kg |\n| 6 | 1400mm | 55-1/8\" | 120 kg |\n| 7 | 1600mm | 63\" | 160 kg |",
+    "The reason both a width and a mass appear is leverage. A wide light door and a narrow heavy door can present the same closing problem for different reasons, and the size that handles one will not necessarily handle the other. Take the higher of the two answers.",
+    "A closer below the door's size will not close and latch it reliably against a seal or a draught. A closer above it will close the door harder than anyone in the building wants, and on an accessible opening it may make the door non-compliant.",
+    "WHY MOST COMMERCIAL CLOSERS ARE ADJUSTABLE",
+    "A fixed-size closer has to be specified correctly before it ships. An adjustable closer covers a band — commonly sizes 2 to 4, or 3 to 6 — and is set on site, which removes the failure mode where a schedule and a door disagree by one size and nobody finds out until installation day.",
+    "It also collapses several part numbers into one for a distributor holding stock, which is why adjustable sizes dominate commercial ranges. The trade is that an adjustable closer set to its lowest setting is not identical to a fixed closer of that size; it is a larger mechanism turned down.",
+    "HOW THE NORTH AMERICAN APPROACH DIFFERS",
+    "ANSI/BHMA A156.4 covers door controls and grades them, but the North American selection convention leans more on the spring size and the arm configuration than on a single published power number, and accessibility limits are set by code rather than by the hardware standard.",
+    "The practical consequence for anyone specifying across both markets: an EN power size is a value you can write in a schedule and a supplier can match. There is no single equivalent number on the American side, so a cross-market schedule should state the leaf width, the leaf mass and the required opening force, and let each market's supplier select from those.",
+    "THE CONSTRAINT THAT OVERRIDES THE SIZE",
+    "Accessibility. On an opening that has to be usable by someone with limited strength, there is a maximum force permitted to open the door, and that limit can conflict with the power size the leaf would otherwise call for.",
+    "Where the two conflict, the closer cannot simply be turned down until it complies, because a closer set below the door's requirement will not close and latch it — and on a fire door, not latching is a failure of the fire door, not an inconvenience. The resolution is usually a different device class: a closer with a lower opening force and a boosted closing moment, or a powered operator.",
+    "The specific force limits differ by jurisdiction and are set by building regulation rather than by EN 1154 or A156.4. Confirm the number that applies to the building before selecting, because it is the one constraint that cannot be adjusted away on site.",
+    "THE THREE ADJUSTMENTS THAT ARE NOT THE POWER SIZE",
+    "Closing speed controls how fast the door travels through most of its arc. Latching speed controls the last few degrees, where the latch has to engage the strike. Backcheck resists the door being thrown open against a wall or a person.",
+    "These are set on site with the valves on the body, and none of them changes the power size. A door that will not latch is not fixed by increasing the latching speed if the power size is too low; a door that slams is not fixed by slowing the closing speed if the power size is too high. Diagnose the size first.",
+    "DELAYED ACTION, AND WHERE IT DOES NOT BELONG",
+    "Delayed action holds the door open at a wide angle for a period before closing, which is useful where trolleys, wheelchairs or deliveries pass through. It is a valve function, not a hold-open device.",
+    "It does not belong on a fire door unless the whole assembly is rated for it, because anything that keeps a fire door open changes what the assembly does in a fire. A hold-open on a fire door has to be an electromagnetic device released by the alarm system, not a mechanical setting.",
+    "WHAT WE PUBLISH",
+    "Our catalogue carries nine door closer models. Where a model publishes a power size or an adjustable band, it is in the specification table on the product page. Where it does not, the row is absent rather than filled with a typical figure — a closer specified one size out is a door that either slams or does not latch, and both are discovered after installation."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "How do I choose a door closer power size?",
+        "answer": "From the leaf, not the room. Take the door's width and its mass, find the EN 1154 size that covers each, and use whichever of the two is higher. A wide light door and a narrow heavy door can need the same size for different reasons."
+      },
+      {
+        "question": "What are the EN 1154 power sizes?",
+        "answer": "Sizes 1 to 7 ascending. Roughly: size 1 to 750mm (29-1/2\") and 20 kg, size 2 to 850mm and 40 kg, size 3 to 950mm and 60 kg, size 4 to 1100mm (43-1/4\") and 80 kg, size 5 to 1250mm and 100 kg, size 6 to 1400mm and 120 kg, size 7 to 1600mm (63\") and 160 kg."
+      },
+      {
+        "question": "Why are most commercial door closers adjustable?",
+        "answer": "Because a fixed size has to be right before it ships, and a schedule and a door disagreeing by one size is only discovered on installation day. An adjustable closer covers a band such as sizes 2 to 4 and is set on site. It also reduces the number of part numbers a distributor has to stock."
+      },
+      {
+        "question": "My door will not latch. Should I increase the latching speed?",
+        "answer": "Not first. Latching speed controls the last few degrees of travel; it does not add closing force. If the power size is too low for the leaf the door will not latch reliably at any speed setting. Diagnose the size before adjusting the valves."
+      },
+      {
+        "question": "Can I turn a closer down to meet an accessibility opening-force limit?",
+        "answer": "Not safely. A closer set below the door's requirement will not close and latch it, and on a fire door failing to latch is a failure of the assembly. Where the accessible opening force and the power size conflict, the answer is a different device class, not a lower setting."
+      },
+      {
+        "question": "Is delayed action allowed on a fire door?",
+        "answer": "Not as a mechanical setting. Delayed action holds the door open at a wide angle, and anything holding a fire door open changes what the assembly does in a fire. A hold-open on a fire door has to be an electromagnetic device released by the alarm system."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cómo elijo la potencia de un cierrapuertas?",
+        "answer": "Por la hoja, no por la sala. Tome el ancho y la masa de la puerta, busque la potencia EN 1154 que cubre cada uno, y use la mayor de las dos. Una puerta ancha y ligera y otra estrecha y pesada pueden pedir la misma potencia por razones distintas."
+      },
+      {
+        "question": "¿Cuáles son las potencias EN 1154?",
+        "answer": "De 1 a 7 en orden ascendente. Aproximadamente: potencia 1 hasta 750 mm y 20 kg, 2 hasta 850 mm y 40 kg, 3 hasta 950 mm y 60 kg, 4 hasta 1100 mm y 80 kg, 5 hasta 1250 mm y 100 kg, 6 hasta 1400 mm y 120 kg, 7 hasta 1600 mm y 160 kg."
+      },
+      {
+        "question": "¿Por qué la mayoría de los cierrapuertas comerciales son regulables?",
+        "answer": "Porque una potencia fija tiene que estar bien antes de salir de fábrica, y que el cuadro y la puerta difieran en una potencia solo se descubre el día del montaje. Un cierrapuertas regulable cubre una banda, por ejemplo de 2 a 4, y se ajusta en obra. Además reduce los números de pieza que un distribuidor tiene que almacenar."
+      },
+      {
+        "question": "Mi puerta no cierra el picaporte. ¿Subo la velocidad de golpe final?",
+        "answer": "No es lo primero. La velocidad de golpe final gobierna los últimos grados; no añade fuerza de cierre. Si la potencia es baja para la hoja, la puerta no cerrará de forma fiable con ningún ajuste de velocidad. Diagnostique la potencia antes de tocar las válvulas."
+      },
+      {
+        "question": "¿Puedo bajar un cierrapuertas para cumplir un límite de fuerza de apertura accesible?",
+        "answer": "No con seguridad. Un cierrapuertas por debajo de lo que pide la puerta no la cerrará ni enclavará, y en una puerta cortafuego no enclavar es un fallo del conjunto. Cuando la fuerza accesible y la potencia entran en conflicto, la respuesta es otra clase de dispositivo, no un ajuste más bajo."
+      },
+      {
+        "question": "¿Se permite la retención hidráulica en una puerta cortafuego?",
+        "answer": "No como ajuste mecánico. La retención mantiene la puerta abierta en ángulo amplio, y cualquier cosa que mantenga abierta una cortafuego cambia lo que hace el conjunto en un incendio. Una retención en cortafuego tiene que ser un dispositivo electromagnético liberado por la central de alarma."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Como escolho a potência de uma mola de porta?",
+        "answer": "Pela folha, não pela sala. Tome a largura e a massa da porta, encontre a potência EN 1154 que cobre cada uma, e use a maior das duas. Uma porta larga e leve e outra estreita e pesada podem pedir a mesma potência por razões diferentes."
+      },
+      {
+        "question": "Quais são as potências EN 1154?",
+        "answer": "De 1 a 7 em ordem crescente. Aproximadamente: potência 1 até 750 mm e 20 kg, 2 até 850 mm e 40 kg, 3 até 950 mm e 60 kg, 4 até 1100 mm e 80 kg, 5 até 1250 mm e 100 kg, 6 até 1400 mm e 120 kg, 7 até 1600 mm e 160 kg."
+      },
+      {
+        "question": "Por que a maioria das molas comerciais é regulável?",
+        "answer": "Porque uma potência fixa precisa estar certa antes de sair da fábrica, e o mapa e a porta divergirem numa potência só é descoberto no dia da montagem. Uma mola regulável cobre uma faixa, por exemplo de 2 a 4, e é ajustada na obra. Além disso reduz os códigos que um distribuidor precisa estocar."
+      },
+      {
+        "question": "A minha porta não trava. Devo aumentar a velocidade de travamento?",
+        "answer": "Não primeiro. A velocidade de travamento governa os últimos graus; não acrescenta força de fecho. Se a potência é baixa para a folha, a porta não vai travar de forma confiável com nenhum ajuste de velocidade. Diagnostique a potência antes de mexer nas válvulas."
+      },
+      {
+        "question": "Posso reduzir uma mola para cumprir um limite de força de abertura acessível?",
+        "answer": "Não com segurança. Uma mola abaixo do que a porta pede não vai fechá-la nem travá-la, e numa porta corta-fogo não travar é uma falha do conjunto. Quando a força acessível e a potência entram em conflito, a resposta é outra classe de dispositivo, não um ajuste mais baixo."
+      },
+      {
+        "question": "É permitido retardo de fecho numa porta corta-fogo?",
+        "answer": "Não como ajuste mecânico. O retardo mantém a porta aberta em ângulo amplo, e qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem de ser um dispositivo eletromagnético liberado pela central de alarme."
+      }
+    ]
+  },
+  "titleEs": "Potencia de cierrapuertas 2026: potencias EN 1154 de 1 a 7, A156.4 y cómo elegir desde la puerta",
+  "summaryEs": "Un cierrapuertas se especifica por potencia, y la potencia se deduce de la puerta —ancho y masa de la hoja— no del hueco ni del tipo de edificio. Esta página fija la escala de EN 1154 con los anchos que cubre cada una, en qué difiere el enfoque de ANSI/BHMA A156.4, los tres ajustes que no son la potencia, y la restricción de accesibilidad que manda sobre todo lo demás.",
+  "seoTitleEs": "Potencia de cierrapuertas 2026: potencias EN 1154 y selección | Canton Hyland",
+  "seoDescriptionEs": "Potencias EN 1154 de 1 a 7 con los anchos y masas que cubre cada una, en qué difiere ANSI/BHMA A156.4, regulable frente a fija, y el límite de fuerza de apertura accesible.",
+  "bodyEs": [
+    "Un cierrapuertas se elige por potencia, y el error de especificación más común es elegirlo por la sala. Una puerta pesada en un despacho pequeño y una ligera en una entrada señorial necesitan los cierrapuertas que piden sus puertas, no los que sugieren los espacios.",
+    "La potencia se deduce de dos propiedades de la hoja: su ancho y su masa. Todo lo demás —posición de montaje, retén de apertura, retención hidráulica— es un ajuste posterior a acertar la potencia.",
+    "LA ESCALA DE EN 1154",
+    "EN 1154 define potencias de 1 a 7, ascendentes. Cada una corresponde a un ancho máximo de hoja y una masa máxima, y se selecciona tomando la que sitúe el cierrapuertas en la potencia más alta de las dos.",
+    "| Potencia EN 1154 | Ancho máx. de hoja | Masa máx. de hoja |\n| --- | --- | --- |\n| 1 | 750 mm | 20 kg |\n| 2 | 850 mm | 40 kg |\n| 3 | 950 mm | 60 kg |\n| 4 | 1100 mm | 80 kg |\n| 5 | 1250 mm | 100 kg |\n| 6 | 1400 mm | 120 kg |\n| 7 | 1600 mm | 160 kg |",
+    "Aparecen un ancho y una masa por una razón: el brazo de palanca. Una puerta ancha y ligera y otra estrecha y pesada pueden plantear el mismo problema de cierre por motivos distintos, y la potencia que resuelve una no resuelve necesariamente la otra. Tome la mayor de las dos respuestas.",
+    "Un cierrapuertas por debajo de la potencia de la puerta no la cerrará ni enclavará de forma fiable contra una junta o una corriente de aire. Uno por encima cerrará la puerta con más fuerza de la que nadie en el edificio quiere, y en un hueco accesible puede dejarla fuera de norma.",
+    "POR QUÉ CASI TODOS LOS COMERCIALES SON REGULABLES",
+    "Un cierrapuertas de potencia fija tiene que estar bien especificado antes de salir. Uno regulable cubre una banda —a menudo de 2 a 4, o de 3 a 6— y se ajusta en obra, lo que elimina el fallo en el que el cuadro y la puerta difieren en una potencia y nadie se entera hasta el día del montaje.",
+    "También reduce varios números de pieza a uno para un distribuidor con stock, y por eso las potencias regulables dominan las gamas comerciales. La contrapartida es que un regulable ajustado al mínimo no es idéntico a un fijo de esa potencia: es un mecanismo mayor bajado de punto.",
+    "EN QUÉ DIFIERE EL ENFOQUE NORTEAMERICANO",
+    "ANSI/BHMA A156.4 cubre los controles de puerta y los gradúa, pero la convención de selección norteamericana se apoya más en el tamaño del muelle y en la configuración del brazo que en un número de potencia publicado, y los límites de accesibilidad los fija el código de edificación y no la norma de herraje.",
+    "La consecuencia práctica para quien especifica en los dos mercados: una potencia EN es un valor que se puede escribir en un cuadro y que un proveedor puede igualar. En el lado americano no hay un número equivalente único, así que un cuadro transfronterizo debe indicar ancho de hoja, masa y fuerza de apertura requerida, y dejar que el proveedor de cada mercado seleccione con eso.",
+    "LA RESTRICCIÓN QUE MANDA SOBRE LA POTENCIA",
+    "La accesibilidad. En un hueco que debe poder usar alguien con fuerza limitada existe una fuerza máxima admisible para abrir, y ese límite puede entrar en conflicto con la potencia que la hoja pediría.",
+    "Cuando chocan, el cierrapuertas no se puede simplemente bajar hasta cumplir, porque uno ajustado por debajo de lo que pide la puerta no la cerrará ni enclavará —y en una cortafuego, no enclavar es un fallo de la puerta cortafuego, no una molestia. La solución suele ser otra clase de dispositivo: un cierrapuertas de menor fuerza de apertura y mayor momento de cierre, o un operador motorizado.",
+    "Los límites concretos de fuerza varían por jurisdicción y los fija la reglamentación de edificación, no EN 1154 ni A156.4. Confirme la cifra aplicable al edificio antes de seleccionar, porque es la única restricción que no se puede ajustar en obra.",
+    "LOS TRES AJUSTES QUE NO SON LA POTENCIA",
+    "La velocidad de cierre gobierna la mayor parte del recorrido. La velocidad de golpe final gobierna los últimos grados, donde el picaporte tiene que entrar en el cerradero. El retén de apertura frena la puerta lanzada contra una pared o una persona.",
+    "Se ajustan en obra con las válvulas del cuerpo, y ninguno cambia la potencia. Una puerta que no enclava no se arregla subiendo el golpe final si la potencia es baja; una que golpea no se arregla bajando la velocidad de cierre si la potencia es alta. Diagnostique primero la potencia.",
+    "LA RETENCIÓN HIDRÁULICA, Y DÓNDE NO VA",
+    "La retención mantiene la puerta abierta en ángulo amplio durante un tiempo antes de cerrar, útil donde pasan carros, sillas de ruedas o repartos. Es una función de válvula, no un retenedor de puerta.",
+    "No va en una puerta cortafuego salvo que el conjunto completo esté clasificado para ello, porque cualquier cosa que mantenga abierta una cortafuego cambia lo que hace el conjunto en un incendio. Una retención en cortafuego tiene que ser un dispositivo electromagnético liberado por la central de alarma, no un ajuste mecánico.",
+    "LO QUE PUBLICAMOS",
+    "Nuestro catálogo lleva nueve modelos de cierrapuertas. Donde un modelo publica una potencia o una banda regulable, está en la tabla de especificación de su ficha. Donde no, la fila falta en lugar de rellenarse con una cifra típica: un cierrapuertas especificado una potencia de más o de menos es una puerta que golpea o que no enclava, y las dos cosas se descubren después del montaje."
+  ],
+  "titlePt": "Potência de mola de porta 2026: potências EN 1154 de 1 a 7, A156.4 e como escolher a partir da porta",
+  "summaryPt": "Uma mola de porta é especificada por potência, e a potência é deduzida da porta — largura e massa da folha — não do vão nem do tipo de edifício. Esta página estabelece a escala da EN 1154 com as larguras que cada uma cobre, em que a abordagem da ANSI/BHMA A156.4 difere, os três ajustes que não são a potência, e a restrição de acessibilidade que manda sobre tudo o resto.",
+  "seoTitlePt": "Potência de mola de porta 2026: potências EN 1154 e seleção | Canton Hyland",
+  "seoDescriptionPt": "Potências EN 1154 de 1 a 7 com as larguras e massas que cada uma cobre, em que a ANSI/BHMA A156.4 difere, regulável contra fixa, e o limite de força de abertura acessível.",
+  "bodyPt": [
+    "Uma mola de porta é escolhida por potência, e o erro de especificação mais comum é escolhê-la pela sala. Uma porta pesada num escritório pequeno e uma leve numa entrada imponente precisam das molas que as suas portas pedem, não das que os espaços sugerem.",
+    "A potência é deduzida de duas propriedades da folha: a sua largura e a sua massa. Todo o resto — posição de montagem, retenção de abertura, retardo — é um ajuste posterior a acertar a potência.",
+    "A ESCALA DA EN 1154",
+    "A EN 1154 define potências de 1 a 7, crescentes. Cada uma corresponde a uma largura máxima de folha e a uma massa máxima, e seleciona-se tomando a que coloca a mola na potência mais alta das duas.",
+    "| Potência EN 1154 | Largura máx. de folha | Massa máx. de folha |\n| --- | --- | --- |\n| 1 | 750 mm | 20 kg |\n| 2 | 850 mm | 40 kg |\n| 3 | 950 mm | 60 kg |\n| 4 | 1100 mm | 80 kg |\n| 5 | 1250 mm | 100 kg |\n| 6 | 1400 mm | 120 kg |\n| 7 | 1600 mm | 160 kg |",
+    "Aparecem uma largura e uma massa por uma razão: o braço de alavanca. Uma porta larga e leve e outra estreita e pesada podem colocar o mesmo problema de fecho por motivos diferentes, e a potência que resolve uma não resolve necessariamente a outra. Tome a maior das duas respostas.",
+    "Uma mola abaixo da potência da porta não vai fechá-la nem travá-la de forma confiável contra uma vedação ou uma corrente de ar. Uma acima vai fechar a porta com mais força do que qualquer pessoa no edifício quer, e num vão acessível pode deixá-la fora de norma.",
+    "POR QUE QUASE TODAS AS COMERCIAIS SÃO REGULÁVEIS",
+    "Uma mola de potência fixa tem de estar bem especificada antes de sair. Uma regulável cobre uma faixa — muitas vezes de 2 a 4, ou de 3 a 6 — e é ajustada na obra, o que elimina a falha em que o mapa e a porta divergem numa potência e ninguém descobre até ao dia da montagem.",
+    "Também reduz vários códigos a um para um distribuidor com estoque, e por isso as potências reguláveis dominam as linhas comerciais. A contrapartida é que uma regulável ajustada ao mínimo não é idêntica a uma fixa dessa potência: é um mecanismo maior baixado de ponto.",
+    "EM QUE A ABORDAGEM NORTE-AMERICANA DIFERE",
+    "A ANSI/BHMA A156.4 cobre os controles de porta e os gradua, mas a convenção de seleção norte-americana apoia-se mais no tamanho da mola e na configuração do braço do que num número de potência publicado, e os limites de acessibilidade são fixados pelo código de edificação e não pela norma de ferragem.",
+    "A consequência prática para quem especifica nos dois mercados: uma potência EN é um valor que se pode escrever num mapa e que um fornecedor pode igualar. No lado americano não há um número equivalente único, então um mapa transfronteiriço deve indicar largura de folha, massa e força de abertura exigida, e deixar o fornecedor de cada mercado selecionar com isso.",
+    "A RESTRIÇÃO QUE MANDA SOBRE A POTÊNCIA",
+    "A acessibilidade. Num vão que tem de poder ser usado por alguém com força limitada existe uma força máxima admissível para abrir, e esse limite pode entrar em conflito com a potência que a folha pediria.",
+    "Quando se chocam, a mola não pode simplesmente ser baixada até cumprir, porque uma ajustada abaixo do que a porta pede não vai fechá-la nem travá-la — e numa corta-fogo, não travar é uma falha da porta corta-fogo, não um incómodo. A solução costuma ser outra classe de dispositivo: uma mola de menor força de abertura e maior momento de fecho, ou um operador motorizado.",
+    "Os limites concretos de força variam por jurisdição e são fixados pela regulamentação de edificação, não pela EN 1154 nem pela A156.4. Confirme a cifra aplicável ao edifício antes de selecionar, porque é a única restrição que não se pode ajustar na obra.",
+    "OS TRÊS AJUSTES QUE NÃO SÃO A POTÊNCIA",
+    "A velocidade de fecho governa a maior parte do percurso. A velocidade de travamento governa os últimos graus, onde o trinco tem de entrar no batente. A retenção de abertura trava a porta lançada contra uma parede ou uma pessoa.",
+    "São ajustados na obra com as válvulas do corpo, e nenhum muda a potência. Uma porta que não trava não se resolve subindo o travamento se a potência é baixa; uma que bate não se resolve baixando a velocidade de fecho se a potência é alta. Diagnostique primeiro a potência.",
+    "O RETARDO DE FECHO, E ONDE ELE NÃO ENTRA",
+    "O retardo mantém a porta aberta em ângulo amplo durante um tempo antes de fechar, útil onde passam carrinhos, cadeiras de rodas ou entregas. É uma função de válvula, não um retentor de porta.",
+    "Não entra numa porta corta-fogo a não ser que o conjunto completo seja classificado para isso, porque qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem de ser um dispositivo eletromagnético liberado pela central de alarme, não um ajuste mecânico.",
+    "O QUE PUBLICAMOS",
+    "O nosso catálogo tem nove modelos de mola de porta. Onde um modelo publica uma potência ou uma faixa regulável, está na tabela de especificação da sua página. Onde não, a linha falta em vez de ser preenchida com uma cifra típica: uma mola especificada uma potência a mais ou a menos é uma porta que bate ou que não trava, e as duas coisas são descobertas depois da montagem."
+  ]
+}

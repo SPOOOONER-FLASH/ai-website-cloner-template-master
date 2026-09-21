@@ -12,6 +12,7 @@ import {
 } from "@/data/products";
 import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
+import { getPublishedGuides } from "@/data/guides";
 import { buildLocaleSitemapEntries, type SitemapVideo } from "@/lib/seo-policy";
 
 /**
@@ -132,6 +133,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       is looking for when it asks what a supplier can supply.
     */
     ...entry("/documents", PRIORITY.support),
+    /*
+      指南栏目列表页。单篇由下面的文章循环产出。
+    */
+    ...entry("/guides", PRIORITY.support),
     ...entry("/news", PRIORITY.section, "weekly"),
     ...entry("/downloads", PRIORITY.support),
     ...entry("/services", PRIORITY.section),
@@ -261,6 +266,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const article of getPublishedNews()) {
     urls.push(...entry(
       `/news/${article.slug}`,
+      PRIORITY.newsDetail,
+      "monthly",
+      new Date(article.publishedAt),
+    ));
+  }
+
+  /*
+    指南栏目的每一篇，2026-09-21 起。
+
+    优先级和更新频率与 news 相同，但内容性质不同：这些页面是查表，一年后仍然
+    有效，而一条公告不是。monthly 在这里偏保守，留着是因为改一次尺寸表就是
+    改一次事实，而事实变了我们希望它被尽快重抓。
+  */
+  for (const article of getPublishedGuides()) {
+    urls.push(...entry(
+      `/guides/${article.slug}`,
       PRIORITY.newsDetail,
       "monthly",
       new Date(article.publishedAt),

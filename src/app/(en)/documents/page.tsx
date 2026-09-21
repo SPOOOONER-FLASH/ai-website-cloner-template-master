@@ -21,14 +21,13 @@ export const metadata: Metadata = pageMetadata({
 
 export default function DocumentsPage() {
   return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
-      <div className="layout space-y-96 lg:space-y-136">
+    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-64">
+      <div className="layout space-y-48 lg:space-y-64">
         <section className="col-content grid grid-cols gap-x gap-y-48">
           <div className="col-span-full">
             <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Documents" }]} />
           </div>
           <div className="col-span-full lg:col-span-5 xl:col-span-9">
-            <p className="text-kicker uppercase tracking-[0.14em] text-ink-secondary">Reference</p>
             <h1 className="mt-16 text-h1 text-ink">What we can send you, and what we cannot.</h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">

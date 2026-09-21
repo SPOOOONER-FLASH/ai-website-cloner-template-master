@@ -1,5 +1,8 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
+import { DocumentPreview } from "./DocumentPreview";
+import { DataTable } from "./DataTable";
+import reading from "./ArticleReading.module.css";
 import { formatDownloadSize } from "@/data/downloads";
 import {
   DOCUMENT_ROWS,
@@ -175,13 +178,19 @@ export function DocumentInventory({ locale }: { locale: Locale }) {
 
   return (
     <>
+      <div className="col-content min-w-0">
+        <nav className={reading.documentNav} aria-label={{ en: "Document availability", es: "Disponibilidad de documentos", pt: "Disponibilidade de documentos" }[locale]}>{groups.map(state => <a key={state} href={`#documents-${state}`}>{STATE[state][locale]}</a>)}</nav>
+        <DataTable locale={locale} caption={{ en: "Find the right document", es: "Encuentre el documento adecuado", pt: "Encontre o documento certo" }[locale]} columns={[{ label: { en: "Document", es: "Documento", pt: "Documento" }[locale], sort: "text" }, { label: { en: "Availability", es: "Disponibilidad", pt: "Disponibilidade" }[locale], sort: "text" }, { label: { en: "Purpose", es: "Uso", pt: "Uso" }[locale], sort: "text" }]} rows={DOCUMENT_ROWS.map(row => [{ text: copy[row.id][locale][0] }, { text: STATE[row.availability][locale] }, { text: row.purposes.map(p => PURPOSE[p][locale]).join(" · ") }])} />
+        {cat && <DocumentPreview url={cat.url} title={cat.title} locale={locale} />}
+      </div>
       {groups.map((state) => {
         const rows = DOCUMENT_ROWS.filter((r) => r.availability === state);
         if (!rows.length) return null;
         return (
           <section
             key={state}
-            className="col-content grid grid-cols gap-x gap-y-32 border-t border-line pt-32"
+            id={`documents-${state}`}
+            className="col-content grid scroll-mt-128 grid-cols gap-x gap-y-32 border-t border-line pt-32"
           >
             <h2 className="col-span-full text-h2 text-ink lg:col-span-4 xl:col-span-7">
               {STATE[state][locale] ?? STATE[state].en}

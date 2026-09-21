@@ -1,0 +1,201 @@
+{
+  "slug": "container-loading-door-hardware-2026",
+  "title": "Container Loading for Door Hardware 2026: Why a 40HQ Does Not Hold More Than a 40GP",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "Door hardware is a weight-limited cargo, not a volume-limited one. Worked from our own shipping worksheet: the median carton density is 614 kg per cubic metre, which is above the point where a 40-foot container runs out of payload before it runs out of space. The high cube buys 15 per cent more volume and, for this cargo, no more hardware.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/products-hyde/6-3-3mm-brass-and-steel-hinges-2.webp",
+    "ratio": "16 / 9",
+    "label": "Hinges — the densest cargo in the catalogue, at over 2,000 kg per cubic metre packed",
+    "labelEs": "Bisagras — la carga más densa del catálogo, más de 2.000 kg por metro cúbico embalada",
+    "labelPt": "Dobradiças — a carga mais densa do catálogo, mais de 2.000 kg por metro cúbico embalada"
+  },
+  "relatedModels": ["607 SSET", "D101", "808 SS ET"],
+  "seoTitle": "Container Loading for Door Hardware 2026: 20GP, 40GP, 40HQ | Canton Hyland",
+  "seoDescription": "How much door hardware fits a 20GP, 40GP or 40HQ container: carton densities from a real shipping worksheet, the payload limit that binds first, and why the high cube does not help.",
+  "body": [
+    "An importer planning a first order asks how much fits in a container, and almost always asks it as a volume question. For door hardware that is the wrong question, and answering it in volume terms produces an order that will not load.",
+    "The figures below are worked from a shipping worksheet covering 26 packed items, of which 19 carry a carton size, a per-carton count and a gross weight. They are our own cartons rather than an industry average, and the arithmetic is reproducible from the numbers printed here.",
+    "THE THREE CONTAINERS",
+    "A 20GP has roughly 33.2 cubic metres of internal volume and a payload around 28,200 kg. A 40GP has roughly 67.7 cubic metres and a payload around 26,600 kg. A 40HQ — the high cube — has roughly 76.4 cubic metres and a payload around 26,500 kg.",
+    "Read those three pairs together and the shape of the problem appears. Going from a 20GP to a 40GP doubles the volume and slightly reduces the payload. Going from a 40GP to a 40HQ adds 13 per cent more volume and again reduces the payload marginally. Volume scales; weight does not.",
+    "THE CRITICAL DENSITY",
+    "For any cargo there is a density at which a container runs out of weight and volume at the same moment. Below it, the container cubes out — you fill the space and have payload to spare. Above it, the container weighs out — you hit the legal weight with space left over.",
+    "At a realistic 85 per cent stuffing efficiency, that critical density is about 999 kg per cubic metre for a 20GP, about 462 for a 40GP and about 408 for a 40HQ. The 20GP number is high because a twenty-foot box carries almost the same payload as a forty in half the space.",
+    "WHERE DOOR HARDWARE SITS",
+    "Across the 19 fully documented rows, the packed density runs from 234 kg per cubic metre at the light end to over 2,100 at the heavy end, with a median of 614.",
+    "The light end is a bulky exit device or a large lockset in a part-empty carton. The heavy end is hinges, which are solid metal packed tight and reach over 2,100 kg per cubic metre — six times the point at which a forty-foot container weighs out.",
+    "A median of 614 against a 40GP critical density of 462 means the typical door hardware order weighs out in a forty-foot container. It does not fill the space. It reaches the legal weight with space to spare.",
+    "A WORKED EXAMPLE",
+    "Take a real row: a cylindrical lockset packed 30 to a carton, carton 49 × 20 × 35 cm, which is 0.0343 cubic metres, at 18 kg gross.",
+    "In a 20GP at 85 per cent fill, volume allows 822 cartons and payload allows 1,566. Volume binds first, so the answer is 822 cartons — 24,660 pieces.",
+    "In a 40GP, volume allows 1,677 cartons and payload allows 1,477. Payload binds first: 1,477 cartons, 44,310 pieces.",
+    "In a 40HQ, volume allows 1,893 cartons and payload still allows 1,477. Payload binds again: 1,472 cartons, 44,160 pieces.",
+    "The 40HQ holds marginally fewer pieces than the 40GP, because the extra volume it offers cannot be used and its payload is 100 kg lower. For this cargo the high cube premium buys nothing at all.",
+    "WHEN THE HIGH CUBE IS WORTH IT",
+    "When the order is mixed with something light. A container of hinges and exit device cartons weighs out; a container of hinges, exit devices and their packaging displays, or one shared with a lighter product line, may reach the ceiling on volume instead. The high cube earns its premium exactly when the average density of the whole load falls below about 408 kg per cubic metre.",
+    "The practical rule for a mixed order: compute the total gross weight and the total carton volume, divide one by the other, and compare the result to 462 for a 40GP and 408 for a 40HQ. Above both, order the 40GP.",
+    "THE THING THAT BREAKS THE ESTIMATE",
+    "A packing row cannot be spread across a model's finish variants, and this is not a theoretical caution. On our own worksheet, model 808 in satin stainless packs at 57.2 × 19.1 × 47.5 cm and the same lock in polished brass packs at 42 × 35 × 31.8 cm. Same product, same per-carton count, completely different carton.",
+    "A finish change can mean a different plating line, a different protective wrap and a different carton on the shelf. Any estimate built by taking one finish's packing data and applying it across the family is wrong by an unknown amount, and the direction of the error is not predictable.",
+    "So the arithmetic here is a method, not a lookup table for your order. Send the model numbers in the finishes you are actually buying and we will give the carton data for those, or say that a row does not exist yet rather than substitute a neighbouring one.",
+    "WHAT WE DO NOT PUBLISH",
+    "Packing data for the whole catalogue. The worksheet this page is worked from covers 26 items out of several hundred, and seven of those 26 rows are partly obscured in the source photograph and are excluded from every figure above. Where a row does not exist we will say so rather than interpolate, for the reason in the previous section."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "How much door hardware fits in a 40-foot container?",
+        "answer": "It depends on weight, not space. A 40GP has a payload around 26,600 kg, and typical door hardware packs at a median 614 kg per cubic metre, which means the container reaches its legal weight with volume to spare. One worked example: a cylindrical lockset at 30 per carton loads 1,477 cartons, or 44,310 pieces, before the payload runs out."
+      },
+      {
+        "question": "Is a 40HQ better than a 40GP for door hardware?",
+        "answer": "No. The high cube offers about 13 per cent more volume and a marginally lower payload, and door hardware runs out of payload first. In a worked example the 40HQ carried 44,160 pieces against the 40GP's 44,310 — slightly fewer, for a higher freight cost."
+      },
+      {
+        "question": "What is the critical density for a shipping container?",
+        "answer": "The density at which weight and volume run out together. At 85 per cent stuffing efficiency it is about 999 kg per cubic metre for a 20GP, 462 for a 40GP and 408 for a 40HQ. Above those figures the container weighs out; below them it cubes out."
+      },
+      {
+        "question": "How dense is packed door hardware?",
+        "answer": "Across 19 fully documented rows of our own shipping worksheet, from 234 kg per cubic metre at the light end to over 2,100 for hinges, with a median of 614. Hinges are the densest cargo in the catalogue and weigh out immediately."
+      },
+      {
+        "question": "Can I use one model's packing data for its other finishes?",
+        "answer": "No, and this is not theoretical. On our worksheet, model 808 in satin stainless packs at 57.2 × 19.1 × 47.5 cm and the same lock in polished brass at 42 × 35 × 31.8 cm — same product, same count per carton, completely different carton. A finish change can mean a different wrap and a different box."
+      },
+      {
+        "question": "Do you publish packing data for every model?",
+        "answer": "No. The worksheet behind this page covers 26 items, of which 19 are complete enough to use; the other seven are partly obscured in the source and are excluded from every figure here. Where a row does not exist we say so rather than interpolate from a neighbouring model."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuántos herrajes caben en un contenedor de 40 pies?",
+        "answer": "Depende del peso, no del espacio. Un 40GP tiene una carga útil de unos 26.600 kg, y los herrajes embalados dan una densidad mediana de 614 kg por metro cúbico, así que el contenedor alcanza el peso legal con volumen de sobra. Un ejemplo calculado: una cerradura cilíndrica a 30 por caja carga 1.477 cajas, o 44.310 piezas, antes de agotar la carga útil."
+      },
+      {
+        "question": "¿Un 40HQ es mejor que un 40GP para herrajes?",
+        "answer": "No. El high cube ofrece un 13 % más de volumen y una carga útil ligeramente menor, y los herrajes agotan antes la carga útil. En el ejemplo calculado el 40HQ llevó 44.160 piezas frente a 44.310 del 40GP: algo menos, por un flete mayor."
+      },
+      {
+        "question": "¿Qué es la densidad crítica de un contenedor?",
+        "answer": "La densidad a la que se agotan peso y volumen a la vez. Con un 85 % de eficiencia de estiba son unos 999 kg por metro cúbico para un 20GP, 462 para un 40GP y 408 para un 40HQ. Por encima de esas cifras el contenedor pesa antes de llenarse; por debajo, se llena antes de pesar."
+      },
+      {
+        "question": "¿Qué densidad tienen los herrajes embalados?",
+        "answer": "En las 19 filas completas de nuestra propia hoja de embarque, de 234 kg por metro cúbico en el extremo ligero a más de 2.100 en bisagras, con una mediana de 614. Las bisagras son la carga más densa del catálogo y pesan de inmediato."
+      },
+      {
+        "question": "¿Puedo usar los datos de embalaje de un modelo para sus otros acabados?",
+        "answer": "No, y no es teórico. En nuestra hoja, el modelo 808 en inoxidable satinado embala a 57,2 × 19,1 × 47,5 cm y la misma cerradura en latón pulido a 42 × 35 × 31,8 cm: mismo producto, misma cantidad por caja, caja completamente distinta. Un cambio de acabado puede significar otro envoltorio y otra caja."
+      },
+      {
+        "question": "¿Publican datos de embalaje de todos los modelos?",
+        "answer": "No. La hoja que hay detrás de esta página cubre 26 artículos, de los cuales 19 están completos; los otros siete están parcialmente tapados en el original y quedan excluidos de todas las cifras. Donde no existe una fila lo decimos, en lugar de interpolar desde un modelo vecino."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quantas ferragens cabem num contêiner de 40 pés?",
+        "answer": "Depende do peso, não do espaço. Um 40GP tem carga útil de cerca de 26.600 kg, e ferragens embaladas dão densidade mediana de 614 kg por metro cúbico, então o contêiner atinge o peso legal com volume sobrando. Um exemplo calculado: uma fechadura cilíndrica a 30 por caixa carrega 1.477 caixas, ou 44.310 peças, antes de esgotar a carga útil."
+      },
+      {
+        "question": "Um 40HQ é melhor que um 40GP para ferragens?",
+        "answer": "Não. O high cube oferece cerca de 13 % mais volume e carga útil ligeiramente menor, e ferragens esgotam a carga útil primeiro. No exemplo calculado o 40HQ levou 44.160 peças contra 44.310 do 40GP: um pouco menos, por um frete maior."
+      },
+      {
+        "question": "O que é a densidade crítica de um contêiner?",
+        "answer": "A densidade em que peso e volume se esgotam ao mesmo tempo. Com 85 % de eficiência de estiva são cerca de 999 kg por metro cúbico para um 20GP, 462 para um 40GP e 408 para um 40HQ. Acima dessas cifras o contêiner pesa antes de encher; abaixo, enche antes de pesar."
+      },
+      {
+        "question": "Qual a densidade das ferragens embaladas?",
+        "answer": "Nas 19 linhas completas da nossa própria planilha de embarque, de 234 kg por metro cúbico no extremo leve a mais de 2.100 em dobradiças, com mediana de 614. Dobradiças são a carga mais densa do catálogo e pesam de imediato."
+      },
+      {
+        "question": "Posso usar os dados de embalagem de um modelo para os seus outros acabamentos?",
+        "answer": "Não, e não é teórico. Na nossa planilha, o modelo 808 em inox acetinado embala a 57,2 × 19,1 × 47,5 cm e a mesma fechadura em latão polido a 42 × 35 × 31,8 cm: mesmo produto, mesma quantidade por caixa, caixa completamente diferente. Uma mudança de acabamento pode significar outro envoltório e outra caixa."
+      },
+      {
+        "question": "Vocês publicam dados de embalagem de todos os modelos?",
+        "answer": "Não. A planilha por trás desta página cobre 26 itens, dos quais 19 estão completos; os outros sete estão parcialmente tapados no original e ficam excluídos de todas as cifras. Onde não existe uma linha, dizemos isso em vez de interpolar a partir de um modelo vizinho."
+      }
+    ]
+  },
+  "titleEs": "Carga de contenedor para herrajes 2026: por qué un 40HQ no lleva más que un 40GP",
+  "summaryEs": "Los herrajes son carga limitada por peso, no por volumen. Calculado sobre nuestra propia hoja de embarque: la densidad mediana de caja es 614 kg por metro cúbico, por encima del punto en que un contenedor de 40 pies agota la carga útil antes que el espacio. El high cube da un 15 % más de volumen y, para esta carga, ni un herraje más.",
+  "seoTitleEs": "Carga de contenedor para herrajes 2026: 20GP, 40GP, 40HQ | Canton Hyland",
+  "seoDescriptionEs": "Cuántos herrajes caben en un 20GP, 40GP o 40HQ: densidades de caja de una hoja de embarque real, el límite de carga útil que manda primero y por qué el high cube no ayuda.",
+  "bodyEs": [
+    "Un importador que planifica un primer pedido pregunta cuánto cabe en un contenedor, y casi siempre lo pregunta como una cuestión de volumen. Para herrajes esa es la pregunta equivocada, y responderla en términos de volumen produce un pedido que no cargará.",
+    "Las cifras de abajo salen de una hoja de embarque con 26 artículos embalados, de los cuales 19 llevan medida de caja, cantidad por caja y peso bruto. Son nuestras propias cajas y no una media del sector, y la aritmética se puede reproducir con los números impresos aquí.",
+    "LOS TRES CONTENEDORES",
+    "Un 20GP tiene unos 33,2 metros cúbicos de volumen interior y una carga útil en torno a 28.200 kg. Un 40GP tiene unos 67,7 metros cúbicos y unos 26.600 kg. Un 40HQ —el high cube— tiene unos 76,4 metros cúbicos y unos 26.500 kg.",
+    "Lea esas tres parejas juntas y aparece la forma del problema. Pasar de 20GP a 40GP duplica el volumen y reduce ligeramente la carga útil. Pasar de 40GP a 40HQ añade un 13 % de volumen y vuelve a reducirla un poco. El volumen escala; el peso no.",
+    "LA DENSIDAD CRÍTICA",
+    "Para cualquier carga existe una densidad a la que el contenedor agota peso y volumen a la vez. Por debajo, el contenedor se llena y sobra carga útil. Por encima, alcanza el peso legal y sobra espacio.",
+    "Con una eficiencia de estiba realista del 85 %, esa densidad crítica es de unos 999 kg por metro cúbico en un 20GP, unos 462 en un 40GP y unos 408 en un 40HQ. La cifra del 20GP es alta porque una caja de veinte pies lleva casi la misma carga útil que una de cuarenta en la mitad del espacio.",
+    "DÓNDE QUEDAN LOS HERRAJES",
+    "En las 19 filas documentadas por completo, la densidad embalada va de 234 kg por metro cúbico en el extremo ligero a más de 2.100 en el pesado, con una mediana de 614.",
+    "El extremo ligero es una barra antipánico voluminosa o una cerradura grande en una caja medio vacía. El pesado son las bisagras, metal macizo apretado, que superan los 2.100 kg por metro cúbico: seis veces el punto en que un contenedor de cuarenta pies pesa antes de llenarse.",
+    "Una mediana de 614 frente a una densidad crítica de 462 en un 40GP significa que el pedido típico de herrajes pesa antes de llenar. No llena el espacio: alcanza el peso legal y deja espacio libre.",
+    "UN EJEMPLO CALCULADO",
+    "Tome una fila real: una cerradura cilíndrica embalada 30 por caja, caja de 49 × 20 × 35 cm, que son 0,0343 metros cúbicos, con 18 kg brutos.",
+    "En un 20GP al 85 % de llenado, el volumen permite 822 cajas y la carga útil permite 1.566. Manda el volumen: 822 cajas, 24.660 piezas.",
+    "En un 40GP, el volumen permite 1.677 cajas y la carga útil 1.477. Manda la carga útil: 1.477 cajas, 44.310 piezas.",
+    "En un 40HQ, el volumen permite 1.893 cajas y la carga útil sigue permitiendo 1.477. Manda otra vez la carga útil: 1.472 cajas, 44.160 piezas.",
+    "El 40HQ lleva marginalmente menos piezas que el 40GP, porque el volumen extra que ofrece no se puede usar y su carga útil es 100 kg menor. Para esta carga, el sobreprecio del high cube no compra absolutamente nada.",
+    "CUÁNDO SÍ MERECE LA PENA EL HIGH CUBE",
+    "Cuando el pedido va mezclado con algo ligero. Un contenedor de bisagras y cajas de antipánico pesa antes de llenarse; uno de bisagras, antipánico y sus expositores de embalaje, o compartido con una línea más ligera, puede tocar techo por volumen. El high cube justifica su precio exactamente cuando la densidad media de toda la carga baja de unos 408 kg por metro cúbico.",
+    "La regla práctica para un pedido mixto: calcule el peso bruto total y el volumen total de cajas, divida uno por otro y compare con 462 para un 40GP y 408 para un 40HQ. Si supera las dos, pida el 40GP.",
+    "LO QUE ROMPE LA ESTIMACIÓN",
+    "Una fila de embalaje no se puede extender a los otros acabados de un modelo, y esta no es una advertencia teórica. En nuestra propia hoja, el modelo 808 en inoxidable satinado embala a 57,2 × 19,1 × 47,5 cm y la misma cerradura en latón pulido a 42 × 35 × 31,8 cm. Mismo producto, misma cantidad por caja, caja completamente distinta.",
+    "Un cambio de acabado puede significar otra línea de recubrimiento, otro envoltorio protector y otra caja en el estante. Cualquier estimación hecha tomando los datos de embalaje de un acabado y aplicándolos a la familia está equivocada en una cantidad desconocida, y la dirección del error no es predecible.",
+    "Así que la aritmética de aquí es un método y no una tabla de consulta para su pedido. Envíe los números de modelo en los acabados que va a comprar de verdad y le daremos los datos de caja de esos, o le diremos que esa fila todavía no existe en lugar de sustituirla por la de al lado.",
+    "LO QUE NO PUBLICAMOS",
+    "Datos de embalaje de todo el catálogo. La hoja de la que sale esta página cubre 26 artículos de varios cientos, y siete de esas 26 filas están parcialmente tapadas en la fotografía original y quedan excluidas de todas las cifras de arriba. Donde no existe una fila lo decimos en lugar de interpolar, por la razón de la sección anterior."
+  ],
+  "titlePt": "Carga de contêiner para ferragens 2026: por que um 40HQ não leva mais do que um 40GP",
+  "summaryPt": "Ferragens são carga limitada por peso, não por volume. Calculado sobre a nossa própria planilha de embarque: a densidade mediana de caixa é 614 kg por metro cúbico, acima do ponto em que um contêiner de 40 pés esgota a carga útil antes do espaço. O high cube dá 15 % mais volume e, para esta carga, nenhuma ferragem a mais.",
+  "seoTitlePt": "Carga de contêiner para ferragens 2026: 20GP, 40GP, 40HQ | Canton Hyland",
+  "seoDescriptionPt": "Quantas ferragens cabem num 20GP, 40GP ou 40HQ: densidades de caixa de uma planilha de embarque real, o limite de carga útil que manda primeiro e por que o high cube não ajuda.",
+  "bodyPt": [
+    "Um importador planejando um primeiro pedido pergunta quanto cabe num contêiner, e quase sempre pergunta como uma questão de volume. Para ferragens essa é a pergunta errada, e respondê-la em termos de volume produz um pedido que não vai carregar.",
+    "As cifras abaixo saem de uma planilha de embarque com 26 itens embalados, dos quais 19 trazem medida de caixa, quantidade por caixa e peso bruto. São as nossas próprias caixas e não uma média do setor, e a aritmética pode ser reproduzida com os números impressos aqui.",
+    "OS TRÊS CONTÊINERES",
+    "Um 20GP tem cerca de 33,2 metros cúbicos de volume interno e carga útil em torno de 28.200 kg. Um 40GP tem cerca de 67,7 metros cúbicos e cerca de 26.600 kg. Um 40HQ — o high cube — tem cerca de 76,4 metros cúbicos e cerca de 26.500 kg.",
+    "Leia esses três pares juntos e a forma do problema aparece. Passar de 20GP para 40GP dobra o volume e reduz ligeiramente a carga útil. Passar de 40GP para 40HQ acrescenta 13 % de volume e volta a reduzi-la um pouco. O volume escala; o peso não.",
+    "A DENSIDADE CRÍTICA",
+    "Para qualquer carga existe uma densidade em que o contêiner esgota peso e volume ao mesmo tempo. Abaixo dela, o contêiner enche e sobra carga útil. Acima, atinge o peso legal e sobra espaço.",
+    "Com uma eficiência de estiva realista de 85 %, essa densidade crítica é de cerca de 999 kg por metro cúbico num 20GP, cerca de 462 num 40GP e cerca de 408 num 40HQ. A cifra do 20GP é alta porque uma caixa de vinte pés leva quase a mesma carga útil que uma de quarenta em metade do espaço.",
+    "ONDE AS FERRAGENS FICAM",
+    "Nas 19 linhas totalmente documentadas, a densidade embalada vai de 234 kg por metro cúbico no extremo leve a mais de 2.100 no pesado, com mediana de 614.",
+    "O extremo leve é uma barra antipânico volumosa ou uma fechadura grande numa caixa meio vazia. O pesado são as dobradiças, metal maciço apertado, que passam de 2.100 kg por metro cúbico: seis vezes o ponto em que um contêiner de quarenta pés pesa antes de encher.",
+    "Uma mediana de 614 contra uma densidade crítica de 462 num 40GP significa que o pedido típico de ferragens pesa antes de encher. Não preenche o espaço: atinge o peso legal e deixa espaço livre.",
+    "UM EXEMPLO CALCULADO",
+    "Tome uma linha real: uma fechadura cilíndrica embalada 30 por caixa, caixa de 49 × 20 × 35 cm, que são 0,0343 metros cúbicos, com 18 kg brutos.",
+    "Num 20GP a 85 % de enchimento, o volume permite 822 caixas e a carga útil permite 1.566. Manda o volume: 822 caixas, 24.660 peças.",
+    "Num 40GP, o volume permite 1.677 caixas e a carga útil 1.477. Manda a carga útil: 1.477 caixas, 44.310 peças.",
+    "Num 40HQ, o volume permite 1.893 caixas e a carga útil continua permitindo 1.477. Manda de novo a carga útil: 1.472 caixas, 44.160 peças.",
+    "O 40HQ leva marginalmente menos peças do que o 40GP, porque o volume extra que ele oferece não pode ser usado e a sua carga útil é 100 kg menor. Para esta carga, o sobrepreço do high cube não compra absolutamente nada.",
+    "QUANDO O HIGH CUBE COMPENSA",
+    "Quando o pedido vai misturado com algo leve. Um contêiner de dobradiças e caixas de antipânico pesa antes de encher; um de dobradiças, antipânico e os seus expositores de embalagem, ou partilhado com uma linha mais leve, pode bater no teto por volume. O high cube justifica o seu preço exatamente quando a densidade média de toda a carga cai abaixo de cerca de 408 kg por metro cúbico.",
+    "A regra prática para um pedido misto: calcule o peso bruto total e o volume total de caixas, divida um pelo outro e compare com 462 para um 40GP e 408 para um 40HQ. Se passar dos dois, peça o 40GP.",
+    "O QUE QUEBRA A ESTIMATIVA",
+    "Uma linha de embalagem não pode ser estendida aos outros acabamentos de um modelo, e isto não é um aviso teórico. Na nossa própria planilha, o modelo 808 em inox acetinado embala a 57,2 × 19,1 × 47,5 cm e a mesma fechadura em latão polido a 42 × 35 × 31,8 cm. Mesmo produto, mesma quantidade por caixa, caixa completamente diferente.",
+    "Uma mudança de acabamento pode significar outra linha de revestimento, outro envoltório protetor e outra caixa na prateleira. Qualquer estimativa feita tomando os dados de embalagem de um acabamento e aplicando-os à família está errada numa quantidade desconhecida, e a direção do erro não é previsível.",
+    "Então a aritmética daqui é um método e não uma tabela de consulta para o seu pedido. Envie os números de modelo nos acabamentos que vai realmente comprar e daremos os dados de caixa desses, ou diremos que essa linha ainda não existe em vez de substituí-la pela vizinha.",
+    "O QUE NÃO PUBLICAMOS",
+    "Dados de embalagem de todo o catálogo. A planilha de onde sai esta página cobre 26 itens de várias centenas, e sete dessas 26 linhas estão parcialmente tapadas na fotografia original e ficam excluídas de todas as cifras acima. Onde não existe uma linha, dizemos isso em vez de interpolar, pela razão da secção anterior."
+  ]
+}

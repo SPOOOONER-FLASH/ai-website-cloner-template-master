@@ -82,8 +82,21 @@ const EUROPEAN: { pattern: RegExp; brazilian: string }[] = [
   { pattern: /\bcomboio\b/i, brazilian: "trem" },
   { pattern: /\bcorrec[cç][ãa]o\b/i, brazilian: "correção" },
   { pattern: /\bexcep[cç][ãa]o\b/i, brazilian: "exceção" },
-  /* The European progressive. Brazilian uses the gerund: "está sendo preparada". */
-  { pattern: /\best(á|ão) a [a-zà-ÿ]+r\b/i, brazilian: "está/estão + gerúndio" },
+  /*
+    The European progressive. Brazilian uses the gerund: "está sendo preparada".
+
+    The word after `a` must be an INFINITIVE, and "ends in r" is not that test. Portuguese
+    comparatives end in r too, so `[a-zà-ÿ]+r` reported "entre esses dois casos está a
+    maior parte do mundo" — correct Brazilian Portuguese, in a published article — as a
+    European construction. A guard that cries over good prose is a guard somebody deletes,
+    so the comparatives are excluded by name and the ending is narrowed to real verb endings.
+  */
+  {
+    pattern: /\best(á|ão) a (?!(?:maior|menor|melhor|pior|[a-zà-ÿ]*erior)\b)[a-zà-ÿ]+(?:ar|er|ir|ôr)\b/i,
+    brazilian: "está/estão + gerúndio",
+  },
+  /* Brazilian drops the initial h in these two; European keeps it. */
+  { pattern: /\bhumidade\b/i, brazilian: "umidade" },
 ];
 
 /** Blanks comments, keeping line numbers intact so a report points at the real line. */
@@ -170,6 +183,49 @@ function offences(text: string): string[] {
   return hits;
 }
 
+/**
+ * The Portuguese strings of a content JSON, found by PARSING rather than by line regex.
+ *
+ * The line-based reader above cannot see most of them, and the gap was invisible until it
+ * cost something. `"bodyPt": [` has no string after the colon, so the `*Pt` pattern misses,
+ * and the fallback that reads the NEXT line picks up the first array element and stops —
+ * so a 27-paragraph article was being checked one paragraph deep. `faq.pt` is worse: the
+ * key is bare `pt`, not `*Pt`, so the whole FAQ was never read at all.
+ *
+ * That let `registos` through fourteen times across three guide articles on 2026-09-21.
+ * Parsing the JSON and walking it removes the entire class: every string under a key ending
+ * in `Pt`, and every string anywhere beneath a `pt` key, whatever the nesting.
+ */
+function portugueseStringsInJson(source: string): [string, string][] {
+  let root: unknown;
+  try {
+    root = JSON.parse(source);
+  } catch {
+    return []; // Not our problem to report here; the content loader will fail louder.
+  }
+
+  const found: [string, string][] = [];
+  const walk = (node: unknown, path: string, inPortuguese: boolean) => {
+    if (typeof node === "string") {
+      if (inPortuguese) found.push([path, node]);
+      return;
+    }
+    if (Array.isArray(node)) {
+      node.forEach((child, i) => walk(child, `${path}[${i}]`, inPortuguese));
+      return;
+    }
+    if (node && typeof node === "object") {
+      for (const [key, value] of Object.entries(node)) {
+        const portuguese = inPortuguese || key === "pt" || /Pt$/.test(key);
+        walk(value, path ? `${path}.${key}` : key, portuguese);
+      }
+    }
+  };
+
+  walk(root, "", false);
+  return found;
+}
+
 test("the Portuguese tree is written in Brazilian Portuguese", () => {
   const failures: string[] = [];
   const whole = portugueseFiles();
@@ -201,7 +257,16 @@ test("the Portuguese tree is written in Brazilian Portuguese", () => {
   for (const file of mixed) {
     if (whole.includes(file)) continue;
     const relative = path.relative(ROOT, file).replace(/\\/g, "/");
-    for (const [lineNumber, text] of portugueseText(fs.readFileSync(file, "utf8"))) {
+    const source = fs.readFileSync(file, "utf8");
+
+    if (file.endsWith(".json")) {
+      for (const [where, text] of portugueseStringsInJson(source)) {
+        for (const hit of offences(text)) failures.push(`${relative}  ${where}  ${hit}`);
+      }
+      continue;
+    }
+
+    for (const [lineNumber, text] of portugueseText(source)) {
       for (const hit of offences(text)) failures.push(`${relative}:${lineNumber}  ${hit}`);
     }
   }

@@ -11,6 +11,7 @@ import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigat
 import { MenuIcon, SearchIcon, Wordmark } from "./icons";
 import { SearchDialog } from "./SearchDialog";
 import { SiteMenuDrawer } from "./SiteMenuDrawer";
+import navigationStyles from "./HeaderNavigation.module.css";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -183,7 +184,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         {/* Nav row */}
         <div className="layout z-30 bg-surface">
           <div className="relative col-content grid w-full grid-cols items-center gap-x gap-y-24 pb-8 pt-32">
-            <div className="col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12">
+            <div className={cn("col-span-full max-xl:hidden sm:col-span-4 md:col-span-6 xl:col-span-12", navigationStyles.wideNavigation)}>
               {/*
                 `whitespace-nowrap` is load-bearing. Unwrapped, the five labels need
                 523px and the gaps at xl were 4 × 48px, for 715px inside a 680px column,
@@ -199,7 +200,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 was added — rather than silently re-wrapping one item back into the same
                 misalignment.
               */}
-              <nav className="flex gap-24 whitespace-nowrap">
+              <nav className="flex gap-16 whitespace-nowrap">
                 {headerNav.map((link) => {
                   const href = localisedHref(link.href, locale);
                   const current = isCurrent(href);
@@ -295,7 +296,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               </nav>
             </div>
 
-            <div className="col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12">
+            <div className={cn("col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12", navigationStyles.controls)}>
               <Link href={homeHref} className="flex min-w-0 flex-shrink-0 items-center text-ink">
                 <Wordmark className="pr-8" />
               </Link>
@@ -364,7 +365,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           and leaves from there; a menu you have to discover is a menu most of them never
           open. See .nav-rail in globals.css for why this scrolls rather than wraps.
         */}
-        <div className="layout border-t border-line bg-surface xl:hidden">
+        <div className={cn("layout border-t border-line bg-surface xl:hidden", navigationStyles.compactNavigation)}>
           <nav
             aria-label={say("Main navigation", "Navegación principal", "Navegação principal")}
             className="nav-rail col-content"

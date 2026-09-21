@@ -1,0 +1,206 @@
+{
+  "slug": "en-ansi-bhma-cross-reference-2026",
+  "title": "EN to ANSI/BHMA Cross-Reference 2026: What Maps, What Does Not, and Why",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "Specifiers ask for a conversion table between EN and ANSI/BHMA door hardware standards. What exists is a scope map, not an equivalence: the two systems classify different properties, and a product certified to one carries no automatic claim under the other. This page sets out which standard covers which product family on each side, what each one measures, and the four places the mapping genuinely breaks.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/products-hyde/300-panic-exit-device-2.webp",
+    "ratio": "16 / 9",
+    "label": "A 300 series panic exit device — the product family where the EN and ANSI systems diverge most",
+    "labelEs": "Una barra antipánico de la serie 300 — la familia donde más divergen los sistemas EN y ANSI",
+    "labelPt": "Uma barra antipânico da série 300 — a família onde os sistemas EN e ANSI mais divergem"
+  },
+  "relatedModels": [
+    "300",
+    "305",
+    "307",
+    "311"
+  ],
+  "seoTitle": "EN to ANSI/BHMA Cross-Reference 2026 | Canton Hyland",
+  "seoDescription": "Scope map between EN and ANSI/BHMA door hardware standards: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 against A156.1 to A156.18, and the four places the mapping breaks.",
+  "body": [
+    "The request arrives in almost the same words every time: send us a conversion table between the European standards and the American ones. It is a reasonable thing to want and there is no honest way to supply it, because the two systems are not two dialects describing the same thing. They classify different properties, using different methods, and they express the result in structurally different formats.",
+    "What can be supplied, and what this page is, is a scope map: which standard governs which product family on each side, what each one actually measures, and the four places where a reader who assumes equivalence will be wrong.",
+    "THE SHAPE OF EACH SYSTEM",
+    "ANSI/BHMA grades a product. A lockset is Grade 1, Grade 2 or Grade 3 — one number, descending, covering a bundle of performance criteria tested together. A specifier writes Grade 1 and a manufacturer either holds it or does not.",
+    "The EN system classifies a product across several independent digits. An EN 1906 lever handle carries a multi-digit code in which separate positions describe category of use, durability, door mass, fire suitability, safety, corrosion resistance, security and type of operation. There is no single number. Two products with the same headline standard can differ in six of the eight positions.",
+    "That difference is the reason no equivalence table exists. Grade 1 is not a value that any EN digit holds, and an EN classification cannot be collapsed into one grade without discarding most of what it says.",
+    "THE SCOPE MAP",
+    "Panic and emergency exit hardware. EN 1125 covers panic exit devices operated by a horizontal bar, intended for premises where the public may be present and untrained in the hardware. EN 179 covers emergency exit devices operated by a lever or push pad, intended where occupants are familiar with the exit. On the ANSI/BHMA side, A156.3 covers exit devices, and the trained-versus-untrained distinction that separates EN 1125 from EN 179 is handled by building code occupancy rules rather than by the hardware standard.",
+    "Mechanically operated locks and latches. EN 12209 covers the lock case and its latching and locking functions. ANSI/BHMA splits by lock architecture instead: A156.13 for mortise locks, A156.2 for bored and preassembled locks. A European mortise lock and an American mortise lock are graded under standards that do not divide the category the same way.",
+    "Lever handles and knob furniture. EN 1906 covers the handle set as its own product with its own eight-position classification. The ANSI/BHMA system generally treats the trim as part of the lockset it belongs to rather than as a separately graded item, which is why a European handle carries a classification of its own and an American one usually does not.",
+    "Door closers. EN 1154 covers controlled door closing devices, including a power size derived from door width and mass. A156.4 covers door controls. The power-size concept is the closest the two systems come to a genuinely comparable value, and even there the sizing input differs.",
+    "Hinges. EN 1935 covers single-axis hinges with a classification including durability and door mass. A156.1 covers butts and hinges. Both grade load and cycles; neither expresses them in the other's units.",
+    "Cylinders. EN 1303 covers cylinders for locks, classified on key-related security, durability and attack resistance. A156.5 covers auxiliary locks and associated products, with cylinder security addressed alongside. The dimensional side of the European cylinder is not in EN 1303 at all — it is in DIN 18252, which describes the profile itself.",
+    "Finishes and corrosion. EN 1670 classifies corrosion resistance by exposure grade. A156.18 covers materials and finishes, and is where the 600-series finish numbers live. These two are complementary rather than equivalent: one grades how long a finish survives a salt spray, the other names what the finish is.",
+    "Fire resistance. EN 1634-1 is the European test for fire resistance of door assemblies. UL 10C and NFPA 252 are the North American tests. All three subject a complete assembly to a furnace, and they differ on the pressure regime, which is the reason a result under one is not accepted as a result under another.",
+    "THE FOUR PLACES THE MAPPING BREAKS",
+    "First, the assembly rule. Both systems certify a door as a complete assembly — leaf, frame, hardware, seals, glazing — not as a bag of individually approved parts. A hinge tested in one assembly does not carry its rating into another. This catches more projects than any other single misunderstanding, and it is true on both sides of the Atlantic.",
+    "Second, listing is not grading. A UL listing states that a product was tested and is subject to ongoing factory surveillance for a specific construction. An ANSI/BHMA grade states performance against a test suite. They are different kinds of statement, and a product can hold one without the other. We publish a separate article on why UL 305 is a listing rather than a grade.",
+    "Third, the fire test pressure differs. The neutral pressure plane used in the European and North American furnace tests is not the same, so an EN 1634-1 result cannot be read across to UL 10C or NFPA 252 even for an identical assembly. This is the technical core of why a European fire door certificate does not satisfy a North American authority having jurisdiction.",
+    "Fourth, the finish codes are a naming system, not a performance grade. US26D, BHMA 626 and a factory code like SN can all describe the same satin finish, and none of them states corrosion performance. That is EN 1670's job, and a finish code carries no EN 1670 class with it.",
+    "WHAT WE HOLD, STATED PLAINLY",
+    "Our exit device range is certified to EN 1125 and CE marked. We do not hold ANSI/BHMA grades or UL listings on this range today. Two models, 307 and 311, are in testing for North American certification and no certificate number exists yet.",
+    "That sentence is written this way because UL Product iQ and the BHMA certified product directory are both publicly searchable, and a specifier writes certificate numbers into submittal documents. A claim that cannot survive a search costs more than the order it was meant to win.",
+    "If a project needs an ANSI/BHMA grade or a UL listing today, the honest answer is that our EN 1125 certification does not substitute for it, and we would rather say that now than after a container has shipped.",
+    "HOW TO WRITE A SPECIFICATION THAT WORKS IN BOTH MARKETS",
+    "Specify the behaviour, then name the standard for the market the building is in. A schedule that says a device must release the latch under a single motion in the direction of egress describes a requirement both systems test. A schedule that says Grade 1 describes a requirement only one of them can answer.",
+    "Where a project genuinely spans both markets, the workable pattern is two hardware sets with one functional description, rather than one set with two certificates. That is more paperwork and less rework, and rework on hardware means a door that does not close."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "Is there a conversion table between EN and ANSI/BHMA door hardware standards?",
+        "answer": "No, and one cannot honestly exist. ANSI/BHMA compresses performance into a single grade; the EN system spreads it across several independent classification digits. A scope map showing which standard covers which product family is possible, and this page is one. An equivalence table is not."
+      },
+      {
+        "question": "Which EN standard corresponds to ANSI/BHMA A156.3?",
+        "answer": "A156.3 covers exit devices. On the EN side the category is split in two: EN 1125 for panic exit devices with a horizontal bar, for premises where the public may be present and untrained, and EN 179 for emergency exit devices with a lever or pad, where occupants know the exit."
+      },
+      {
+        "question": "Does EN 1125 certification satisfy a North American authority having jurisdiction?",
+        "answer": "Generally no. The fire test furnace pressure regimes differ between EN 1634-1 and UL 10C or NFPA 252, so results do not read across, and North American codes commonly call for a UL listing or an ANSI/BHMA grade by name. Confirm with the authority having jurisdiction before assuming a substitution."
+      },
+      {
+        "question": "Is a UL listing the same as an ANSI Grade 1?",
+        "answer": "No. A listing states that a specific construction was tested and remains under factory surveillance. A grade states performance against a test suite. A product can hold either without the other, and a specification asking for both is asking for two separate pieces of evidence."
+      },
+      {
+        "question": "Does a BHMA 626 finish code tell me anything about corrosion resistance?",
+        "answer": "No. Finish codes name a finish; they do not grade how long it lasts. Corrosion performance is classified by EN 1670 on the European side, and a finish code carries no EN 1670 class with it. If corrosion matters to the project, specify it separately."
+      },
+      {
+        "question": "Does Canton Hyland hold ANSI or UL certification?",
+        "answer": "Not today on the exit device range. That range is certified to EN 1125 and CE marked. Models 307 and 311 are in testing for North American certification and no certificate number exists yet. UL Product iQ and the BHMA directory are publicly searchable, which is why this is stated plainly rather than implied."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Existe una tabla de conversión entre las normas EN y ANSI/BHMA de herrajes?",
+        "answer": "No, y no puede existir de forma honesta. ANSI/BHMA comprime el desempeño en un único grado; el sistema EN lo reparte en varios dígitos de clasificación independientes. Sí es posible un mapa de alcance que muestre qué norma cubre qué familia, y esta página lo es. Una tabla de equivalencia no."
+      },
+      {
+        "question": "¿Qué norma EN se corresponde con ANSI/BHMA A156.3?",
+        "answer": "A156.3 cubre dispositivos antipánico. En el lado EN la categoría se divide en dos: EN 1125 para barras antipánico horizontales, en locales donde puede haber público no familiarizado, y EN 179 para dispositivos de emergencia con manilla o pulsador, donde los ocupantes conocen la salida."
+      },
+      {
+        "question": "¿La certificación EN 1125 satisface a una autoridad competente norteamericana?",
+        "answer": "Por lo general no. Los regímenes de presión del horno difieren entre EN 1634-1 y UL 10C o NFPA 252, así que los resultados no se trasladan, y los códigos norteamericanos suelen exigir por su nombre un listado UL o un grado ANSI/BHMA. Confírmelo con la autoridad competente antes de dar por buena una sustitución."
+      },
+      {
+        "question": "¿Un listado UL es lo mismo que un ANSI Grado 1?",
+        "answer": "No. Un listado declara que una construcción concreta fue ensayada y sigue bajo vigilancia de fábrica. Un grado declara desempeño frente a una batería de ensayos. Un producto puede tener uno sin el otro, y una especificación que pide ambos pide dos pruebas distintas."
+      },
+      {
+        "question": "¿El código de acabado BHMA 626 dice algo sobre resistencia a la corrosión?",
+        "answer": "No. Los códigos de acabado nombran un acabado; no gradúan cuánto dura. La corrosión se clasifica por EN 1670 en el lado europeo, y un código de acabado no lleva asociada ninguna clase EN 1670. Si la corrosión importa en la obra, especifíquela aparte."
+      },
+      {
+        "question": "¿Canton Hyland tiene certificación ANSI o UL?",
+        "answer": "Hoy no, en la gama de antipánico. Esa gama está certificada según EN 1125 y lleva marcado CE. Los modelos 307 y 311 están en ensayo para certificación norteamericana y todavía no existe número de certificado. UL Product iQ y el directorio BHMA son públicos, por eso esto se dice claramente en vez de insinuarse."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Existe uma tabela de conversão entre as normas EN e ANSI/BHMA de ferragens?",
+        "answer": "Não, e não pode existir de forma honesta. A ANSI/BHMA comprime o desempenho num único grau; o sistema EN o distribui por vários dígitos de classificação independentes. É possível um mapa de escopo mostrando que norma cobre que família, e esta página é um. Uma tabela de equivalência não."
+      },
+      {
+        "question": "Que norma EN corresponde à ANSI/BHMA A156.3?",
+        "answer": "A A156.3 cobre dispositivos antipânico. No lado EN a categoria é dividida em duas: EN 1125 para barras antipânico horizontais, em locais onde pode haver público não familiarizado, e EN 179 para dispositivos de emergência com maçaneta ou placa, onde os ocupantes conhecem a saída."
+      },
+      {
+        "question": "A certificação EN 1125 satisfaz uma autoridade competente norte-americana?",
+        "answer": "Em geral não. Os regimes de pressão do forno diferem entre EN 1634-1 e UL 10C ou NFPA 252, então os resultados não se transferem, e os códigos norte-americanos costumam exigir pelo nome um listing UL ou um grau ANSI/BHMA. Confirme com a autoridade competente antes de assumir uma substituição."
+      },
+      {
+        "question": "Um listing UL é o mesmo que um ANSI Grau 1?",
+        "answer": "Não. Um listing declara que uma construção específica foi ensaiada e continua sob vigilância de fábrica. Um grau declara desempenho frente a um conjunto de ensaios. Um produto pode ter um sem o outro, e uma especificação que pede os dois está pedindo duas provas diferentes."
+      },
+      {
+        "question": "O código de acabamento BHMA 626 diz algo sobre resistência à corrosão?",
+        "answer": "Não. Códigos de acabamento nomeiam um acabamento; não graduam quanto ele dura. A corrosão é classificada pela EN 1670 no lado europeu, e um código de acabamento não carrega nenhuma classe EN 1670. Se a corrosão importa na obra, especifique-a à parte."
+      },
+      {
+        "question": "A Canton Hyland tem certificação ANSI ou UL?",
+        "answer": "Hoje não, na linha de antipânico. Essa linha é certificada conforme EN 1125 e tem marcação CE. Os modelos 307 e 311 estão em ensaio para certificação norte-americana e ainda não existe número de certificado. O UL Product iQ e o diretório BHMA são públicos, por isso isto é dito claramente em vez de insinuado."
+      }
+    ]
+  },
+  "titleEs": "Referencia cruzada EN a ANSI/BHMA 2026: qué se corresponde, qué no, y por qué",
+  "summaryEs": "Los prescriptores piden una tabla de conversión entre las normas EN y ANSI/BHMA de herrajes. Lo que existe es un mapa de alcance, no una equivalencia: los dos sistemas clasifican propiedades distintas, y un producto certificado según uno no arrastra ninguna declaración bajo el otro. Esta página fija qué norma cubre qué familia en cada lado, qué mide cada una y los cuatro puntos donde la correspondencia se rompe de verdad.",
+  "seoTitleEs": "Referencia cruzada EN a ANSI/BHMA 2026 | Canton Hyland",
+  "seoDescriptionEs": "Mapa de alcance entre normas EN y ANSI/BHMA: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 frente a A156.1 a A156.18, y los cuatro puntos donde la correspondencia se rompe.",
+  "bodyEs": [
+    "La petición llega casi con las mismas palabras cada vez: envíennos una tabla de conversión entre las normas europeas y las americanas. Es razonable quererla y no hay forma honesta de suministrarla, porque los dos sistemas no son dos dialectos que describen lo mismo. Clasifican propiedades distintas, con métodos distintos, y expresan el resultado en formatos estructuralmente distintos.",
+    "Lo que sí puede suministrarse, y es lo que esta página es, es un mapa de alcance: qué norma gobierna qué familia de producto en cada lado, qué mide realmente cada una, y los cuatro puntos donde quien dé por hecha la equivalencia se equivocará.",
+    "LA FORMA DE CADA SISTEMA",
+    "ANSI/BHMA gradúa un producto. Una cerradura es Grado 1, Grado 2 o Grado 3 —un número, descendente, que cubre un paquete de criterios ensayados juntos. El prescriptor escribe Grado 1 y el fabricante lo tiene o no lo tiene.",
+    "El sistema EN clasifica un producto en varios dígitos independientes. Una manilla EN 1906 lleva un código de varias posiciones en el que posiciones separadas describen categoría de uso, durabilidad, masa de puerta, aptitud al fuego, seguridad, resistencia a la corrosión, seguridad frente a intrusión y tipo de accionamiento. No hay un número único. Dos productos con la misma norma de cabecera pueden diferir en seis de las ocho posiciones.",
+    "Esa diferencia es la razón de que no exista una tabla de equivalencia. Grado 1 no es un valor que ningún dígito EN contenga, y una clasificación EN no puede reducirse a un grado sin descartar casi todo lo que dice.",
+    "EL MAPA DE ALCANCE",
+    "Herrajes antipánico y de emergencia. EN 1125 cubre las barras antipánico accionadas por una barra horizontal, para locales donde puede haber público no familiarizado con el herraje. EN 179 cubre dispositivos de emergencia accionados por manilla o pulsador, donde los ocupantes conocen la salida. En el lado ANSI/BHMA, A156.3 cubre dispositivos antipánico, y la distinción entre público formado y no formado que separa EN 1125 de EN 179 la resuelven las reglas de ocupación del código de edificación, no la norma de herraje.",
+    "Cerraduras y picaportes de accionamiento mecánico. EN 12209 cubre la caja de cerradura y sus funciones de picaporte y bloqueo. ANSI/BHMA divide por arquitectura: A156.13 para cerraduras de embutir, A156.2 para cerraduras de perforación y premontadas. Una cerradura de embutir europea y una americana se gradúan con normas que no dividen la categoría igual.",
+    "Manillas y pomos. EN 1906 cubre el juego de manilla como producto propio con su clasificación de ocho posiciones. El sistema ANSI/BHMA suele tratar la guarnición como parte de la cerradura a la que pertenece y no como un artículo graduado aparte, por lo que una manilla europea lleva clasificación propia y una americana normalmente no.",
+    "Cierrapuertas. EN 1154 cubre los dispositivos de cierre controlado, incluida una potencia derivada del ancho y la masa de la puerta. A156.4 cubre controles de puerta. El concepto de potencia es lo más cercano a un valor realmente comparable entre los dos sistemas, y aun ahí los datos de entrada difieren.",
+    "Bisagras. EN 1935 cubre bisagras de eje único con una clasificación que incluye durabilidad y masa de puerta. A156.1 cubre pernios y bisagras. Ambas gradúan carga y ciclos; ninguna los expresa en las unidades de la otra.",
+    "Cilindros. EN 1303 cubre cilindros para cerraduras, clasificados por seguridad de la llave, durabilidad y resistencia al ataque. A156.5 cubre cerraduras auxiliares y productos asociados, tratando la seguridad del cilindro en paralelo. El lado dimensional del cilindro europeo no está en EN 1303 en absoluto: está en DIN 18252, que describe el propio perfil.",
+    "Acabados y corrosión. EN 1670 clasifica la resistencia a la corrosión por grado de exposición. A156.18 cubre materiales y acabados, y es donde viven los números de acabado de la serie 600. Son complementarias, no equivalentes: una gradúa cuánto sobrevive un acabado a la niebla salina, la otra nombra cuál es el acabado.",
+    "Resistencia al fuego. EN 1634-1 es el ensayo europeo de resistencia al fuego de conjuntos de puerta. UL 10C y NFPA 252 son los ensayos norteamericanos. Los tres someten un conjunto completo a un horno, y difieren en el régimen de presión, que es la razón de que un resultado bajo uno no se acepte bajo otro.",
+    "LOS CUATRO PUNTOS DONDE SE ROMPE",
+    "Primero, la regla del conjunto. Los dos sistemas certifican la puerta como conjunto completo —hoja, marco, herrajes, juntas, acristalamiento— y no como una bolsa de piezas aprobadas por separado. Una bisagra ensayada en un conjunto no lleva su clasificación a otro. Esto arruina más obras que cualquier otro malentendido, y es cierto a ambos lados del Atlántico.",
+    "Segundo, un listado no es un grado. Un listado UL declara que un producto fue ensayado y sigue bajo vigilancia de fábrica para una construcción concreta. Un grado ANSI/BHMA declara desempeño frente a una batería de ensayos. Son declaraciones de tipo distinto, y un producto puede tener una sin la otra. Tenemos un artículo aparte sobre por qué UL 305 es un listado y no un grado.",
+    "Tercero, la presión del ensayo de fuego difiere. El plano de presión neutra de los hornos europeo y norteamericano no es el mismo, así que un resultado EN 1634-1 no puede trasladarse a UL 10C ni a NFPA 252 ni siquiera para un conjunto idéntico. Ese es el núcleo técnico de por qué un certificado de puerta cortafuego europeo no satisface a una autoridad competente norteamericana.",
+    "Cuarto, los códigos de acabado son un sistema de nombres, no un grado de desempeño. US26D, BHMA 626 y un código de fábrica como SN pueden describir el mismo satinado, y ninguno declara comportamiento frente a la corrosión. Eso es trabajo de EN 1670, y un código de acabado no lleva ninguna clase EN 1670 consigo.",
+    "LO QUE TENEMOS, DICHO CLARAMENTE",
+    "Nuestra gama de antipánico está certificada según EN 1125 y lleva marcado CE. Hoy no tenemos grados ANSI/BHMA ni listados UL en esta gama. Dos modelos, 307 y 311, están en ensayo para certificación norteamericana y todavía no existe número de certificado.",
+    "Esta frase está escrita así porque UL Product iQ y el directorio de productos certificados BHMA son públicamente consultables, y un prescriptor escribe números de certificado en los documentos de aprobación. Una afirmación que no sobrevive a una búsqueda cuesta más que el pedido que pretendía ganar.",
+    "Si una obra necesita hoy un grado ANSI/BHMA o un listado UL, la respuesta honesta es que nuestra certificación EN 1125 no lo sustituye, y preferimos decirlo ahora y no después de que haya salido un contenedor.",
+    "CÓMO ESCRIBIR UNA ESPECIFICACIÓN QUE FUNCIONE EN LOS DOS MERCADOS",
+    "Especifique el comportamiento y luego nombre la norma del mercado donde está el edificio. Un cuadro que dice que el dispositivo debe liberar el picaporte con un solo movimiento en el sentido de evacuación describe un requisito que ambos sistemas ensayan. Un cuadro que dice Grado 1 describe un requisito que solo uno de ellos puede responder.",
+    "Donde una obra abarca de verdad los dos mercados, el patrón que funciona son dos juegos de herraje con una sola descripción funcional, y no un juego con dos certificados. Es más papeleo y menos rehacer, y rehacer en herrajes significa una puerta que no cierra."
+  ],
+  "titlePt": "Referência cruzada EN para ANSI/BHMA 2026: o que corresponde, o que não, e por quê",
+  "summaryPt": "Especificadores pedem uma tabela de conversão entre as normas EN e ANSI/BHMA de ferragens. O que existe é um mapa de escopo, não uma equivalência: os dois sistemas classificam propriedades diferentes, e um produto certificado por um não carrega nenhuma declaração sob o outro. Esta página estabelece que norma cobre que família em cada lado, o que cada uma mede e os quatro pontos onde a correspondência realmente quebra.",
+  "seoTitlePt": "Referência cruzada EN para ANSI/BHMA 2026 | Canton Hyland",
+  "seoDescriptionPt": "Mapa de escopo entre normas EN e ANSI/BHMA: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 contra A156.1 a A156.18, e os quatro pontos onde a correspondência quebra.",
+  "bodyPt": [
+    "O pedido chega quase com as mesmas palavras todas as vezes: enviem uma tabela de conversão entre as normas europeias e as americanas. É razoável querer e não há maneira honesta de fornecer, porque os dois sistemas não são dois dialetos descrevendo a mesma coisa. Classificam propriedades diferentes, com métodos diferentes, e exprimem o resultado em formatos estruturalmente diferentes.",
+    "O que pode ser fornecido, e é o que esta página é, é um mapa de escopo: que norma governa que família de produto em cada lado, o que cada uma realmente mede, e os quatro pontos onde quem assume equivalência vai errar.",
+    "A FORMA DE CADA SISTEMA",
+    "A ANSI/BHMA gradua um produto. Uma fechadura é Grau 1, Grau 2 ou Grau 3 — um número, decrescente, cobrindo um conjunto de critérios ensaiados juntos. O especificador escreve Grau 1 e o fabricante tem ou não tem.",
+    "O sistema EN classifica um produto em vários dígitos independentes. Uma maçaneta EN 1906 carrega um código de várias posições em que posições separadas descrevem categoria de uso, durabilidade, massa da porta, aptidão ao fogo, segurança, resistência à corrosão, segurança contra intrusão e tipo de acionamento. Não há um número único. Dois produtos com a mesma norma de cabeçalho podem diferir em seis das oito posições.",
+    "Essa diferença é a razão de não existir tabela de equivalência. Grau 1 não é um valor que qualquer dígito EN contenha, e uma classificação EN não pode ser reduzida a um grau sem descartar quase tudo o que ela diz.",
+    "O MAPA DE ESCOPO",
+    "Ferragens antipânico e de emergência. A EN 1125 cobre barras antipânico acionadas por uma barra horizontal, para locais onde pode haver público não familiarizado com a ferragem. A EN 179 cobre dispositivos de emergência acionados por maçaneta ou placa, onde os ocupantes conhecem a saída. No lado ANSI/BHMA, a A156.3 cobre dispositivos antipânico, e a distinção entre público treinado e não treinado que separa EN 1125 de EN 179 é resolvida pelas regras de ocupação do código de edificação, não pela norma de ferragem.",
+    "Fechaduras e trincos de acionamento mecânico. A EN 12209 cobre a caixa da fechadura e as suas funções de trinco e travamento. A ANSI/BHMA divide por arquitetura: A156.13 para fechaduras de embutir, A156.2 para fechaduras de furação e pré-montadas. Uma fechadura de embutir europeia e uma americana são graduadas por normas que não dividem a categoria do mesmo modo.",
+    "Maçanetas e puxadores. A EN 1906 cobre o conjunto de maçaneta como produto próprio com a sua classificação de oito posições. O sistema ANSI/BHMA costuma tratar a guarnição como parte da fechadura a que pertence e não como item graduado à parte, e por isso uma maçaneta europeia carrega classificação própria e uma americana normalmente não.",
+    "Molas de porta. A EN 1154 cobre os dispositivos de fecho controlado, incluindo uma potência derivada da largura e da massa da porta. A A156.4 cobre controles de porta. O conceito de potência é o mais próximo de um valor realmente comparável entre os dois sistemas, e mesmo aí os dados de entrada diferem.",
+    "Dobradiças. A EN 1935 cobre dobradiças de eixo único com uma classificação que inclui durabilidade e massa da porta. A A156.1 cobre dobradiças e pinos. Ambas graduam carga e ciclos; nenhuma os exprime nas unidades da outra.",
+    "Cilindros. A EN 1303 cobre cilindros para fechaduras, classificados por segurança da chave, durabilidade e resistência a ataque. A A156.5 cobre fechaduras auxiliares e produtos associados, tratando a segurança do cilindro em paralelo. O lado dimensional do cilindro europeu não está na EN 1303: está na DIN 18252, que descreve o próprio perfil.",
+    "Acabamentos e corrosão. A EN 1670 classifica a resistência à corrosão por grau de exposição. A A156.18 cobre materiais e acabamentos, e é onde vivem os números de acabamento da série 600. São complementares, não equivalentes: uma gradua quanto um acabamento sobrevive à névoa salina, a outra nomeia qual é o acabamento.",
+    "Resistência ao fogo. A EN 1634-1 é o ensaio europeu de resistência ao fogo de conjuntos de porta. UL 10C e NFPA 252 são os ensaios norte-americanos. Os três submetem um conjunto completo a um forno, e diferem no regime de pressão, que é a razão de um resultado sob um não ser aceite sob outro.",
+    "OS QUATRO PONTOS ONDE QUEBRA",
+    "Primeiro, a regra do conjunto. Os dois sistemas certificam a porta como conjunto completo — folha, batente, ferragens, vedações, envidraçamento — e não como um saco de peças aprovadas separadamente. Uma dobradiça ensaiada num conjunto não leva a sua classificação para outro. Isto estraga mais obras do que qualquer outro mal-entendido, e é verdade dos dois lados do Atlântico.",
+    "Segundo, um listing não é um grau. Um listing UL declara que um produto foi ensaiado e continua sob vigilância de fábrica para uma construção específica. Um grau ANSI/BHMA declara desempenho frente a um conjunto de ensaios. São declarações de tipo diferente, e um produto pode ter uma sem a outra. Temos um artigo à parte sobre por que UL 305 é um listing e não um grau.",
+    "Terceiro, a pressão do ensaio de fogo difere. O plano de pressão neutra dos fornos europeu e norte-americano não é o mesmo, então um resultado EN 1634-1 não pode ser transferido para UL 10C nem NFPA 252 nem para um conjunto idêntico. Esse é o núcleo técnico de por que um certificado de porta corta-fogo europeu não satisfaz uma autoridade competente norte-americana.",
+    "Quarto, os códigos de acabamento são um sistema de nomes, não um grau de desempenho. US26D, BHMA 626 e um código de fábrica como SN podem descrever o mesmo acetinado, e nenhum declara comportamento frente à corrosão. Isso é trabalho da EN 1670, e um código de acabamento não carrega nenhuma classe EN 1670 consigo.",
+    "O QUE TEMOS, DITO CLARAMENTE",
+    "A nossa linha de antipânico é certificada conforme EN 1125 e tem marcação CE. Hoje não temos graus ANSI/BHMA nem listings UL nesta linha. Dois modelos, 307 e 311, estão em ensaio para certificação norte-americana e ainda não existe número de certificado.",
+    "Esta frase está escrita assim porque o UL Product iQ e o diretório de produtos certificados BHMA são publicamente pesquisáveis, e um especificador escreve números de certificado nos documentos de aprovação. Uma afirmação que não sobrevive a uma busca custa mais do que o pedido que pretendia ganhar.",
+    "Se uma obra precisa hoje de um grau ANSI/BHMA ou de um listing UL, a resposta honesta é que a nossa certificação EN 1125 não substitui, e preferimos dizer agora e não depois de um contêiner ter partido.",
+    "COMO ESCREVER UMA ESPECIFICAÇÃO QUE FUNCIONE NOS DOIS MERCADOS",
+    "Especifique o comportamento e depois nomeie a norma do mercado onde o edifício está. Um mapa que diz que o dispositivo deve liberar o trinco com um único movimento no sentido da evacuação descreve um requisito que ambos os sistemas ensaiam. Um mapa que diz Grau 1 descreve um requisito que apenas um deles pode responder.",
+    "Onde uma obra abrange de fato os dois mercados, o padrão que funciona são dois conjuntos de ferragem com uma única descrição funcional, e não um conjunto com dois certificados. É mais papelada e menos retrabalho, e retrabalho em ferragem significa uma porta que não fecha."
+  ]
+}

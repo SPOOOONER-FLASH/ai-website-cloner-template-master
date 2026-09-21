@@ -1,0 +1,170 @@
+diff --git a/src/components/site/NewsDetail.tsx b/src/components/site/NewsDetail.tsx
+index 0f7c795e2e4..634007a3a72 100644
+--- a/src/components/site/NewsDetail.tsx
++++ b/src/components/site/NewsDetail.tsx
+@@ -8,6 +8,11 @@ import { Breadcrumbs } from "./Breadcrumbs";
+ import { MediaPlaceholder } from "./MediaPlaceholder";
+ import { NewsVisual } from "./NewsVisual";
+ import type { Locale } from "@/data/site";
++import { articleBlocks } from "@/lib/article-layout";
++import { ArticleBody } from "./ArticleBody";
++import { ArticleContents } from "./ArticleContents";
++import reading from "./ArticleReading.module.css";
++import { GuideCover } from "./GuideCover";
+ 
+ /**
+  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
+@@ -116,6 +121,8 @@ export function NewsDetail({
+   const summary = summaryFor[locale] || article.summary;
+   const localeBody = bodyFor[locale];
+   const body = localeBody?.length === article.body.length ? localeBody : article.body;
++  const blocks = articleBlocks(body);
++  const overview = { en: "Overview", es: "Resumen", pt: "Visão geral" }[locale];
+ 
+   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
+   /*
+@@ -129,14 +136,15 @@ export function NewsDetail({
+   /* The heading goes in the language of the questions, not of the page — see the note on
+      articleFaqLocale. A translated heading over untranslated pairs reads as a bug. */
+   const faqLocale = articleFaqLocale(article, locale);
++  const contents = [{ id: "article-overview", text: overview, level: 2 }, ...blocks.filter(block => block.kind === "heading").map(block => ({ id: block.id, text: block.text, level: block.level })), ...(faq.length ? [{ id: "article-faq", text: articleFaqHeading(faqLocale), level: 2 }] : [])];
+   const related = (article.relatedModels ?? [])
+     .map((model) => getProductByModel(model))
+     .filter((product) => product !== undefined)
+     .filter(isPublished);
+ 
+   return (
+-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+-      <div className="layout space-y-96 lg:space-y-136">
++    <main className={section === "guides" ? "isolate mt-48 flex-grow justify-self-start lg:mt-64" : "isolate mt-48 flex-grow justify-self-start lg:mt-192"}>
++      <div className={section === "guides" ? "layout space-y-48 lg:space-y-64" : "layout space-y-96 lg:space-y-136"}>
+         <section className="col-content grid w-full grid-cols gap-x gap-y-32">
+           <div className="col-span-full">
+             <Breadcrumbs
+@@ -161,7 +169,7 @@ export function NewsDetail({
+               href={`${base}/${section}/`}
+               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
+             >
+-              {t.back}
++              {section === "guides" ? { en: "← Back to all guides", es: "← Volver a todas las guías", pt: "← Voltar a todos os guias" }[locale] : t.back}
+             </Link>
+           </div>
+         </section>
+@@ -169,12 +177,12 @@ export function NewsDetail({
+         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
+           {/* Left column: the dateline, the contact route, and any linked products. */}
+           <div className="col-span-full lg:col-span-4 xl:col-span-8">
+-            <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
++            {section === "news" && <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
+               {newsKindLabels(locale)[article.kind]}
+-            </p>
++            </p>}
+             <time
+               dateTime={article.publishedAt}
+-              className="mt-8 block text-h3 text-ink"
++              className={section === "guides" ? "block text-c2 text-ink-secondary" : "mt-8 block text-h3 text-ink"}
+             >
+               {formatNewsDate(article.publishedAt, locale)}
+             </time>
+@@ -213,7 +221,7 @@ export function NewsDetail({
+               </p>
+             ) : null}
+ 
+-            <div className="mt-32 border-t border-line pt-16">
++            {section === "news" && <div className="mt-32 border-t border-line pt-16">
+               <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
+                 {t.pressEnquiries}
+               </p>
+@@ -229,7 +237,7 @@ export function NewsDetail({
+               >
+                 {t.contact}
+               </Link>
+-            </div>
++            </div>}
+ 
+             {related.length > 0 ? (
+               <div className="mt-32 border-t border-line pt-16">
+@@ -254,13 +262,14 @@ export function NewsDetail({
+ 
+           {/* Right column: the single editorial image, at press width. */}
+           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
+-          <NewsVisual article={article} locale={locale} />
++          {section === "guides" ? <GuideCover article={article} locale={locale} /> : <NewsVisual article={article} locale={locale} />}
+           </div>
+         </section>
+ 
+         <section className="col-content grid w-full grid-cols gap-x">
++          {section === "guides" && <div className="col-span-full min-w-0 lg:col-span-4 xl:col-span-8"><ArticleContents items={contents} locale={locale} /></div>}
+           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
+-            {body.map((paragraph, index) => (
++            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : body.map((paragraph, index) => (
+               <p
+                 key={index}
+                 className={
+@@ -289,7 +298,7 @@ export function NewsDetail({
+             */}
+             {faq.length ? (
+               <section
+-                className="mt-64 border-t border-line pt-32"
++                className={section === "guides" ? reading.faq : "mt-64 border-t border-line pt-32"}
+                 aria-labelledby="article-faq"
+                 /* Marked in the language it is actually in, so a screen reader switches
+                    voice and a search engine is not told English is Portuguese. */
+@@ -298,7 +307,7 @@ export function NewsDetail({
+                 <h2 id="article-faq" className="text-h3 text-ink">
+                   {articleFaqHeading(faqLocale)}
+                 </h2>
+-                {faq.map((item) => (
++                {section === "guides" ? faq.map((item) => <details key={item.question}><summary><h3>{item.question}</h3></summary><p>{item.answer}</p></details>) : faq.map((item) => (
+                   <section key={item.question} className="mt-32">
+                     <h3 className="text-c1 font-semibold text-ink">{item.question}</h3>
+                     <p className="mt-12 text-c1 text-ink-secondary">{item.answer}</p>
+diff --git a/src/components/site/GuideListing.tsx b/src/components/site/GuideListing.tsx
+index 06ca254d044..73e5734bdea 100644
+--- a/src/components/site/GuideListing.tsx
++++ b/src/components/site/GuideListing.tsx
+@@ -1,6 +1,7 @@
+ import { getPublishedGuides } from "@/data/guides";
+ import { NewsCard } from "./NewsCard";
+ import type { Locale } from "@/data/site";
++import visual from "./GuideVisual.module.css";
+ 
+ /**
+  * 指南栏目的列表页。
+@@ -53,9 +54,9 @@ export function GuideListing({ locale = "en" }: { locale?: Locale } = {}) {
+   const articles = getPublishedGuides();
+ 
+   return (
+-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
+-      <div className="layout space-y-96 lg:space-y-136">
+-        <section className="col-content grid w-full grid-cols gap-x gap-y-32">
++    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-64">
++      <div className="layout space-y-48 lg:space-y-64">
++        <section className={`col-content w-full gap-y-24 ${visual.banner}`}>
+           <h1 className="col-span-full text-h1 text-ink lg:col-span-5 xl:col-span-11">
+             {t.title}
+           </h1>
+diff --git a/src/components/site/NewsCard.tsx b/src/components/site/NewsCard.tsx
+index b42ca8c8317..98bde8b1b75 100644
+--- a/src/components/site/NewsCard.tsx
++++ b/src/components/site/NewsCard.tsx
+@@ -3,6 +3,7 @@ import type { NewsArticle } from "@/data/types";
+ import { newsKindLabels, formatNewsDate } from "@/data/news";
+ import { NewsVisual } from "./NewsVisual";
+ import type { Locale } from "@/data/site";
++import { GuideCover } from "./GuideCover";
+ 
+ /**
+  * Listing card. Image on top, text below — the arrangement FSB uses on /en/press.
+@@ -45,9 +46,9 @@ export function NewsCard({
+   return (
+     <Link
+       href={`${base}/${section}/${article.slug}/`}
+-      className="hard-shadow-card group flex flex-col bg-surface"
++      className={section === "guides" ? "group flex flex-col border-b border-line bg-surface" : "hard-shadow-card group flex flex-col bg-surface"}
+     >
+-      <NewsVisual article={article} locale={locale} />
++      {section === "guides" ? <GuideCover article={article} locale={locale} compact /> : <NewsVisual article={article} locale={locale} />}
+       <div className="flex flex-1 flex-col border-t border-line p-24">
+         <div className="flex flex-wrap items-baseline gap-x-16 gap-y-4">
+           <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">

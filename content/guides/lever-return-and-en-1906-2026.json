@@ -1,0 +1,221 @@
+{
+  "slug": "lever-return-and-en-1906-2026",
+  "title": "Lever Return and EN 1906 2026: Why a Lever Must Curve Back, and What the Eight-Digit Classification Says",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "A straight lever handle looks cleaner than a returned one and is rejected on most commercial specifications, for a reason that has nothing to do with taste. This page explains what lever return is, the safety and accessibility requirements behind it, why a knob fails accessibility where a lever passes, and how to read the eight fields of an EN 1906 handle classification instead of quoting only the first one.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Lever Return and EN 1906 2026: Handle Classification Explained | Canton Hyland",
+  "seoDescription": "What lever return means and why commercial specifications require it, why knobs fail accessibility requirements, and how to read the eight fields of an EN 1906 handle classification.",
+  "body": [
+    "Look at the free end of a commercial lever handle. It curves back toward the door face rather than finishing in mid-air. That curve is called the return, and it is one of the few design features in door hardware that exists purely because of what happens to people.",
+    "A lever that ends in a straight projection is a hook. It catches a sleeve, a bag strap, a lanyard, a pocket. In a corridor with a crowd moving through it, that is a fall. In a fire escape route with a crowd moving fast, it is worse than a fall.",
+    "WHAT COUNTS AS A RETURN",
+    "The requirement, in the jurisdictions that state it numerically, is usually expressed as the lever's free end returning to within a short distance of the door face — commonly quoted as about 13mm (1/2\"). The exact figure and its legal force vary by jurisdiction, so confirm the number that applies to your building rather than assuming this one.",
+    "What does not vary is the principle. A lever that curves back cannot hook anything, because there is no gap to hook into. The return does not have to be dramatic; it has to close the gap.",
+    "This is also why a lever with a decorative flare at the end, or one that terminates in a ball or a taper standing clear of the door, will fail a specification that a plainer lever passes. The test is geometric, not aesthetic.",
+    "WHY A KNOB FAILS WHERE A LEVER PASSES",
+    "Accessibility requirements in most jurisdictions share a common phrasing: the operating hardware must be usable without tight grasping, pinching, or twisting of the wrist.",
+    "A round knob fails all three. It has to be gripped, and it has to be rotated by turning the wrist. Somebody with arthritis, with a hand injury, with limited grip strength, or simply carrying something in both hands cannot operate it.",
+    "A lever passes because it can be operated with a closed fist, a forearm, an elbow or a hip. That is why levers dominate commercial specification and why knobs persist mainly in residential markets and in specific applications where restricting operation is the point.",
+    "It is worth stating plainly that this is a functional requirement rather than a style trend. A project that specifies knobs on accessible routes because they suit the interior is a project with a compliance problem, not a design position.",
+    "THE EIGHT FIELDS OF AN EN 1906 CLASSIFICATION",
+    "EN 1906 is the European standard for lever handles and knob furniture, and like most EN hardware standards it classifies a product across eight fields rather than giving it a single grade.",
+    "Category of use — how demanding the application is, from low-frequency use by people who care about the door to high-frequency public use by people who do not.",
+    "Durability — the number of test cycles the product completed.",
+    "Door mass — recorded where relevant to the product.",
+    "Suitability for use on fire or smoke doors — a yes, a no, or a conditional suitability.",
+    "Safety — whether the product meets the safety-in-use requirements, of which the return geometry is part.",
+    "Corrosion resistance — the EN 1670 grade, covered in full on our corrosion page.",
+    "Security — the security grade, where claimed.",
+    "Type of operation — which of the defined handle types the product is.",
+    "The habit worth breaking is quoting the first digit and stopping. A handle described as \"category of use 4\" has told you it is built for heavy public traffic and told you nothing about whether it is fire-suitable, how it corrodes, or whether it passed the safety requirements. All eight fields are part of the classification, and a specification that copies one of them has copied an eighth of the answer.",
+    "SPRING RETURN, AND THE FAILURE THAT LOOKS LIKE A LOCK FAULT",
+    "Separately from the geometric return, a lever has to spring back to horizontal after being pressed. If it droops, the latch is not fully retracted on the next use, the door drags, and eventually the latch stops engaging the strike cleanly.",
+    "The spring that does this can be in the lock, in the rose, or both, and where it lives matters when diagnosing a fault. A drooping lever on a lock whose spring is in the rose is a rose problem, not a lock problem, and replacing the lock does not fix it.",
+    "A drooping lever is also a symptom rather than the disease. The usual cause is a heavy lever driven by a spring that was specified for a lighter one, or a spring that has lost tension after high cycles. Both point back to the category of use field, which is exactly what it is there to prevent.",
+    "THE THREE MEASUREMENTS THAT DECIDE WHETHER A LEVER FITS",
+    "Projection — how far the lever stands out from the door face. On a door in a narrow corridor or next to a return wall, this decides whether the door opens fully.",
+    "Length — from the spindle axis to the free end. It sets the leverage, which is why a short decorative lever on a stiff lock feels heavy and a long one on the same lock feels light.",
+    "Rose or plate footprint — the area covered on the door face. This matters when replacing handles on a door that already has holes, because a smaller footprint will not cover them.",
+    "The third is the one that turns a refurbishment into a door replacement. Measuring the existing plate before ordering a replacement handle costs nothing and is skipped constantly.",
+    "WHAT WE PUBLISH",
+    "Our lever handle pages carry the dimensions we measure — lever length, projection, rose or plate size, spindle square and centre — with imperial equivalents on the English pages.",
+    "Where a model has been tested to an EN 1906 classification, the classification is stated in full rather than as a single digit, because a single digit is not a classification. Where a model has not been tested, no classification appears. An EN classification is a laboratory result, and a manufacturer who writes one against an untested product has written a claim they cannot produce a report for."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What is lever return and why is it required?",
+        "answer": "It is the curve at the free end of a lever that brings it back toward the door face, so the lever cannot hook a sleeve, bag strap or lanyard. Requirements are commonly expressed as returning to within about 13mm (1/2\") of the door face, but the figure and its legal force vary by jurisdiction — confirm the one that applies to your building."
+      },
+      {
+        "question": "Why do commercial specifications reject knobs?",
+        "answer": "Accessibility requirements in most jurisdictions say operating hardware must be usable without tight grasping, pinching or twisting of the wrist. A round knob fails all three. A lever passes because it can be operated with a closed fist, forearm, elbow or hip. It is a functional requirement, not a style preference."
+      },
+      {
+        "question": "What does an EN 1906 classification contain?",
+        "answer": "Eight fields: category of use, durability in cycles, door mass, suitability for fire or smoke doors, safety, corrosion resistance (the EN 1670 grade), security, and type of operation. Quoting only the first digit tells you the traffic level and nothing about fire suitability, corrosion or safety."
+      },
+      {
+        "question": "My lever handle droops. Is the lock broken?",
+        "answer": "Usually not. The spring that returns the lever to horizontal can be in the lock, in the rose, or both. A drooping lever on a lock whose spring is in the rose is a rose problem, and replacing the lock will not fix it. The underlying cause is normally a heavy lever on a spring specified for a lighter one, or lost tension after high cycles."
+      },
+      {
+        "question": "Which lever dimensions should I check before ordering?",
+        "answer": "Projection, which decides whether the door can open fully next to a return wall; length from the spindle axis, which sets the leverage and how heavy the lock feels; and the rose or plate footprint, which decides whether a replacement will cover the holes already in the door."
+      },
+      {
+        "question": "Does a decorative lever end fail a specification?",
+        "answer": "It can. A lever terminating in a ball, a taper or a flare that stands clear of the door face leaves a gap something can hook into, and the test is geometric rather than aesthetic. A plainer lever with a proper return will pass where a more elaborate one fails."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es el retorno de manilla y por qué se exige?",
+        "answer": "Es la curva del extremo libre de una manilla que la devuelve hacia la cara de la puerta, de modo que no pueda enganchar una manga, el asa de un bolso o un cordón. El requisito suele expresarse como retornar a unos 13 mm de la cara, pero la cifra y su fuerza legal varían por jurisdicción: confirme la que aplica a su edificio."
+      },
+      {
+        "question": "¿Por qué las especificaciones comerciales rechazan los pomos?",
+        "answer": "Los requisitos de accesibilidad de la mayoría de las jurisdicciones dicen que el herraje de accionamiento debe poder usarse sin agarre firme, pinza ni giro de muñeca. Un pomo redondo falla los tres. Una manilla pasa porque se acciona con el puño cerrado, el antebrazo, el codo o la cadera. Es un requisito funcional, no una preferencia de estilo."
+      },
+      {
+        "question": "¿Qué contiene una clasificación EN 1906?",
+        "answer": "Ocho campos: categoría de uso, durabilidad en ciclos, masa de puerta, aptitud para puertas cortafuego o de humos, seguridad de uso, resistencia a la corrosión (el grado EN 1670), seguridad y tipo de accionamiento. Citar solo el primer dígito le dice el nivel de tráfico y nada sobre fuego, corrosión o seguridad de uso."
+      },
+      {
+        "question": "Mi manilla cae. ¿Está rota la cerradura?",
+        "answer": "Normalmente no. El muelle que devuelve la manilla a la horizontal puede estar en la cerradura, en la roseta o en ambas. Una manilla caída en una cerradura cuyo muelle está en la roseta es un problema de roseta, y cambiar la cerradura no lo arregla. La causa de fondo suele ser una manilla pesada con un muelle previsto para una más ligera, o tensión perdida tras muchos ciclos."
+      },
+      {
+        "question": "¿Qué cotas de manilla debo comprobar antes de pedir?",
+        "answer": "El vuelo, que decide si la puerta puede abrir del todo junto a un retorno de pared; la longitud desde el eje del cuadradillo, que fija la palanca y lo dura que se siente la cerradura; y la huella de la roseta o placa, que decide si un recambio tapará los agujeros que la puerta ya tiene."
+      },
+      {
+        "question": "¿Un extremo decorativo hace fallar una especificación?",
+        "answer": "Puede. Una manilla que termina en bola, cono o ensanchamiento separado de la cara de la puerta deja un hueco donde algo se puede enganchar, y el ensayo es geométrico y no estético. Una manilla más sobria con retorno correcto pasa donde una más elaborada falla."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que é o retorno de maçaneta e por que é exigido?",
+        "answer": "É a curva da extremidade livre de uma maçaneta que a traz de volta na direção da face da porta, de modo que não possa engatar uma manga, a alça de uma bolsa ou um cordão. O requisito costuma ser expresso como retornar a cerca de 13 mm da face, mas a cifra e a sua força legal variam por jurisdição: confirme a que se aplica ao seu edifício."
+      },
+      {
+        "question": "Por que as especificações comerciais rejeitam os puxadores redondos?",
+        "answer": "Os requisitos de acessibilidade da maioria das jurisdições dizem que a ferragem de acionamento deve poder ser usada sem aperto firme, pinça nem torção do pulso. Um puxador redondo falha os três. Uma maçaneta passa porque se aciona com o punho fechado, o antebraço, o cotovelo ou a anca. É um requisito funcional, não uma preferência de estilo."
+      },
+      {
+        "question": "O que contém uma classificação EN 1906?",
+        "answer": "Oito campos: categoria de uso, durabilidade em ciclos, massa de porta, aptidão para portas corta-fogo ou de fumo, segurança de uso, resistência à corrosão (o grau EN 1670), segurança e tipo de acionamento. Citar só o primeiro dígito diz-lhe o nível de tráfego e nada sobre fogo, corrosão ou segurança de uso."
+      },
+      {
+        "question": "A minha maçaneta cai. A fechadura está partida?",
+        "answer": "Normalmente não. A mola que devolve a maçaneta à horizontal pode estar na fechadura, na roseta ou em ambas. Uma maçaneta caída numa fechadura cuja mola está na roseta é um problema de roseta, e trocar a fechadura não resolve. A causa de fundo costuma ser uma maçaneta pesada com uma mola prevista para uma mais leve, ou tensão perdida após muitos ciclos."
+      },
+      {
+        "question": "Que cotas de maçaneta devo verificar antes de pedir?",
+        "answer": "O avanço, que decide se a porta pode abrir por completo junto a um retorno de parede; o comprimento desde o eixo do quadrado, que fixa a alavanca e o quão dura a fechadura se sente; e a pegada da roseta ou espelho, que decide se uma substituição vai tapar os furos que a porta já tem."
+      },
+      {
+        "question": "Uma extremidade decorativa faz falhar uma especificação?",
+        "answer": "Pode. Uma maçaneta que termina em bola, cone ou alargamento afastado da face da porta deixa um vão onde algo se pode engatar, e o ensaio é geométrico e não estético. Uma maçaneta mais sóbria com retorno correto passa onde uma mais elaborada falha."
+      }
+    ]
+  },
+  "titleEs": "Retorno de manilla y EN 1906 2026: por qué una manilla debe curvarse, y qué dice la clasificación de ocho dígitos",
+  "summaryEs": "Una manilla recta parece más limpia que una con retorno y se rechaza en casi toda especificación comercial, por una razón que nada tiene que ver con el gusto. Esta página explica qué es el retorno, los requisitos de seguridad y accesibilidad que hay detrás, por qué un pomo suspende en accesibilidad donde una manilla aprueba, y cómo leer los ocho campos de una clasificación EN 1906 en vez de citar solo el primero.",
+  "seoTitleEs": "Retorno de manilla y EN 1906 2026: clasificación explicada | Canton Hyland",
+  "seoDescriptionEs": "Qué significa el retorno de manilla y por qué lo exigen las especificaciones comerciales, por qué los pomos suspenden en accesibilidad, y cómo leer los ocho campos de una clasificación EN 1906.",
+  "bodyEs": [
+    "Mire el extremo libre de una manilla comercial. Se curva de vuelta hacia la cara de la puerta en lugar de terminar en el aire. Esa curva se llama retorno, y es una de las pocas características de diseño del herraje de puerta que existe puramente por lo que le pasa a las personas.",
+    "Una manilla que termina en una proyección recta es un gancho. Engancha una manga, el asa de un bolso, un cordón, un bolsillo. En un pasillo con gente pasando, eso es una caída. En una vía de evacuación con gente moviéndose deprisa, es peor que una caída.",
+    "QUÉ CUENTA COMO RETORNO",
+    "El requisito, en las jurisdicciones que lo expresan con número, suele enunciarse como que el extremo libre de la manilla retorne hasta quedar a poca distancia de la cara de la puerta —se cita habitualmente en torno a 13 mm. La cifra exacta y su fuerza legal varían por jurisdicción, así que confirme la que aplica a su edificio en lugar de suponer esta.",
+    "Lo que no varía es el principio. Una manilla que se curva de vuelta no puede enganchar nada, porque no hay hueco donde engancharse. El retorno no tiene que ser espectacular: tiene que cerrar el hueco.",
+    "Por eso también una manilla con un ensanchamiento decorativo en el extremo, o una que termina en bola o en cono separado de la puerta, suspenderá una especificación que otra más sobria aprueba. El ensayo es geométrico, no estético.",
+    "POR QUÉ UN POMO SUSPENDE DONDE UNA MANILLA APRUEBA",
+    "Los requisitos de accesibilidad de la mayoría de las jurisdicciones comparten una formulación: el herraje de accionamiento debe poder usarse sin agarre firme, sin pinza y sin giro de muñeca.",
+    "Un pomo redondo falla los tres. Hay que agarrarlo y hay que girarlo torciendo la muñeca. Alguien con artritis, con una lesión en la mano, con poca fuerza de agarre, o que simplemente lleva algo en ambas manos, no puede accionarlo.",
+    "Una manilla aprueba porque se acciona con el puño cerrado, el antebrazo, el codo o la cadera. Por eso las manillas dominan la especificación comercial y los pomos persisten sobre todo en mercados residenciales y en aplicaciones concretas donde restringir el accionamiento es el objetivo.",
+    "Merece decirse con claridad que esto es un requisito funcional y no una moda. Un proyecto que especifica pomos en itinerarios accesibles porque pegan con el interiorismo es un proyecto con un problema normativo, no con una postura de diseño.",
+    "LOS OCHO CAMPOS DE UNA CLASIFICACIÓN EN 1906",
+    "EN 1906 es la norma europea de manillas y pomos, y como la mayoría de las normas EN de herraje clasifica un producto en ocho campos en vez de darle un grado único.",
+    "Categoría de uso: cuán exigente es la aplicación, desde uso de baja frecuencia por gente que cuida la puerta hasta uso público de alta frecuencia por gente que no.",
+    "Durabilidad: el número de ciclos de ensayo que completó el producto.",
+    "Masa de puerta: se recoge donde es pertinente para el producto.",
+    "Aptitud para puertas cortafuego o de humos: un sí, un no, o una aptitud condicionada.",
+    "Seguridad de uso: si el producto cumple los requisitos de seguridad en uso, de los que la geometría del retorno forma parte.",
+    "Resistencia a la corrosión: el grado EN 1670, tratado por extenso en nuestra página de corrosión.",
+    "Seguridad: el grado de seguridad, donde se reivindica.",
+    "Tipo de accionamiento: cuál de los tipos definidos de manilla es el producto.",
+    "La costumbre que conviene romper es citar el primer dígito y parar. Una manilla descrita como «categoría de uso 4» le ha dicho que está hecha para tráfico público intenso y no le ha dicho nada sobre si es apta para fuego, cómo se corroe, o si superó los requisitos de seguridad. Los ocho campos son la clasificación, y una especificación que copia uno ha copiado un octavo de la respuesta.",
+    "EL MUELLE DE RETORNO, Y EL FALLO QUE PARECE DE CERRADURA",
+    "Aparte del retorno geométrico, una manilla tiene que volver a la horizontal después de accionarla. Si cae, el picaporte no queda del todo retraído en el uso siguiente, la puerta arrastra, y con el tiempo el picaporte deja de entrar limpio en el cerradero.",
+    "El muelle que hace eso puede estar en la cerradura, en la roseta o en ambas, y dónde vive importa al diagnosticar. Una manilla caída en una cerradura cuyo muelle está en la roseta es un problema de roseta y no de cerradura, y cambiar la cerradura no lo arregla.",
+    "Una manilla caída es además un síntoma y no la enfermedad. La causa habitual es una manilla pesada movida por un muelle previsto para una más ligera, o un muelle que ha perdido tensión tras muchos ciclos. Las dos apuntan de vuelta al campo de categoría de uso, que está ahí justamente para evitarlo.",
+    "LAS TRES COTAS QUE DECIDEN SI UNA MANILLA ENCAJA",
+    "El vuelo: cuánto sobresale la manilla de la cara de la puerta. En una puerta en pasillo estrecho o junto a un retorno de pared, decide si la puerta abre del todo.",
+    "La longitud: del eje del cuadradillo al extremo libre. Fija la palanca, y por eso una manilla corta decorativa en una cerradura dura se siente pesada y una larga en la misma cerradura se siente ligera.",
+    "La huella de roseta o placa: la superficie cubierta en la cara de la puerta. Importa al sustituir manillas en una puerta que ya tiene agujeros, porque una huella menor no los tapará.",
+    "La tercera es la que convierte una reforma en una sustitución de puertas. Medir la placa existente antes de pedir el recambio no cuesta nada y se omite constantemente.",
+    "LO QUE PUBLICAMOS",
+    "Nuestras fichas de manilla llevan las cotas que medimos —longitud de manilla, vuelo, tamaño de roseta o placa, cuadrado y centro de cuadradillo— con equivalencias imperiales en las páginas en inglés.",
+    "Donde un modelo se ha ensayado a una clasificación EN 1906, la clasificación se indica completa y no como un dígito suelto, porque un dígito suelto no es una clasificación. Donde un modelo no se ha ensayado, no aparece clasificación. Una clasificación EN es un resultado de laboratorio, y un fabricante que escribe una frente a un producto no ensayado ha escrito una afirmación de la que no puede sacar un informe."
+  ],
+  "titlePt": "Retorno de maçaneta e EN 1906 2026: por que uma maçaneta deve curvar, e o que diz a classificação de oito dígitos",
+  "summaryPt": "Uma maçaneta reta parece mais limpa do que uma com retorno e é rejeitada em quase toda especificação comercial, por uma razão que nada tem a ver com gosto. Esta página explica o que é o retorno, os requisitos de segurança e acessibilidade por trás dele, por que um puxador redondo reprova em acessibilidade onde uma maçaneta passa, e como ler os oito campos de uma classificação EN 1906 em vez de citar só o primeiro.",
+  "seoTitlePt": "Retorno de maçaneta e EN 1906 2026: classificação explicada | Canton Hyland",
+  "seoDescriptionPt": "O que significa o retorno de maçaneta e por que as especificações comerciais o exigem, por que os puxadores redondos reprovam em acessibilidade, e como ler os oito campos de uma classificação EN 1906.",
+  "bodyPt": [
+    "Olhe para a extremidade livre de uma maçaneta comercial. Curva-se de volta na direção da face da porta em vez de terminar no ar. Essa curva chama-se retorno, e é uma das poucas características de projeto da ferragem de porta que existe puramente pelo que acontece às pessoas.",
+    "Uma maçaneta que termina numa projeção reta é um gancho. Engata uma manga, a alça de uma bolsa, um cordão, um bolso. Num corredor com gente a passar, isso é uma queda. Numa via de evacuação com gente a mover-se depressa, é pior do que uma queda.",
+    "O QUE CONTA COMO RETORNO",
+    "O requisito, nas jurisdições que o exprimem com número, costuma ser enunciado como a extremidade livre da maçaneta retornar até ficar a pouca distância da face da porta — cita-se habitualmente cerca de 13 mm. A cifra exata e a sua força legal variam por jurisdição, então confirme a que se aplica ao seu edifício em vez de supor esta.",
+    "O que não varia é o princípio. Uma maçaneta que se curva de volta não pode engatar nada, porque não há vão onde engatar. O retorno não tem de ser espetacular: tem de fechar o vão.",
+    "Por isso também uma maçaneta com um alargamento decorativo na extremidade, ou uma que termina em bola ou cone afastado da porta, vai reprovar numa especificação que outra mais sóbria passa. O ensaio é geométrico, não estético.",
+    "POR QUE UM PUXADOR REDONDO REPROVA ONDE UMA MAÇANETA PASSA",
+    "Os requisitos de acessibilidade da maioria das jurisdições partilham uma formulação: a ferragem de acionamento deve poder ser usada sem aperto firme, sem pinça e sem torção do pulso.",
+    "Um puxador redondo falha os três. Tem de ser agarrado e tem de ser girado torcendo o pulso. Alguém com artrite, com uma lesão na mão, com pouca força de preensão, ou que simplesmente leva algo nas duas mãos, não o consegue acionar.",
+    "Uma maçaneta passa porque se aciona com o punho fechado, o antebraço, o cotovelo ou a anca. Por isso as maçanetas dominam a especificação comercial e os puxadores redondos persistem sobretudo em mercados residenciais e em aplicações concretas onde restringir o acionamento é o objetivo.",
+    "Merece ser dito com clareza que isto é um requisito funcional e não uma moda. Um projeto que especifica puxadores redondos em percursos acessíveis porque combinam com o interiorismo é um projeto com um problema normativo, não com uma postura de projeto.",
+    "OS OITO CAMPOS DE UMA CLASSIFICAÇÃO EN 1906",
+    "A EN 1906 é a norma europeia de maçanetas e puxadores, e como a maioria das normas EN de ferragem classifica um produto em oito campos em vez de lhe dar um grau único.",
+    "Categoria de uso: quão exigente é a aplicação, desde uso de baixa frequência por gente que cuida da porta até uso público de alta frequência por gente que não.",
+    "Durabilidade: o número de ciclos de ensaio que o produto completou.",
+    "Massa de porta: registada onde é pertinente para o produto.",
+    "Aptidão para portas corta-fogo ou de fumo: um sim, um não, ou uma aptidão condicionada.",
+    "Segurança de uso: se o produto cumpre os requisitos de segurança em uso, dos quais a geometria do retorno faz parte.",
+    "Resistência à corrosão: o grau EN 1670, tratado por extenso na nossa página de corrosão.",
+    "Segurança: o grau de segurança, onde é reivindicado.",
+    "Tipo de acionamento: qual dos tipos definidos de maçaneta o produto é.",
+    "O hábito que convém quebrar é citar o primeiro dígito e parar. Uma maçaneta descrita como «categoria de uso 4» disse-lhe que é feita para tráfego público intenso e não lhe disse nada sobre se é apta para fogo, como corrói, ou se superou os requisitos de segurança. Os oito campos são a classificação, e uma especificação que copia um copiou um oitavo da resposta.",
+    "A MOLA DE RETORNO, E A FALHA QUE PARECE DE FECHADURA",
+    "À parte do retorno geométrico, uma maçaneta tem de voltar à horizontal depois de acionada. Se cai, o trinco não fica totalmente recolhido no uso seguinte, a porta arrasta, e com o tempo o trinco deixa de entrar limpo no batente.",
+    "A mola que faz isso pode estar na fechadura, na roseta ou em ambas, e onde vive importa ao diagnosticar. Uma maçaneta caída numa fechadura cuja mola está na roseta é um problema de roseta e não de fechadura, e trocar a fechadura não resolve.",
+    "Uma maçaneta caída é além disso um sintoma e não a doença. A causa habitual é uma maçaneta pesada movida por uma mola prevista para uma mais leve, ou uma mola que perdeu tensão após muitos ciclos. As duas apontam de volta para o campo de categoria de uso, que está ali justamente para o evitar.",
+    "AS TRÊS COTAS QUE DECIDEM SE UMA MAÇANETA ENCAIXA",
+    "O avanço: quanto a maçaneta sobressai da face da porta. Numa porta em corredor estreito ou junto a um retorno de parede, decide se a porta abre por completo.",
+    "O comprimento: do eixo do quadrado à extremidade livre. Fixa a alavanca, e por isso uma maçaneta curta decorativa numa fechadura dura sente-se pesada e uma longa na mesma fechadura sente-se leve.",
+    "A pegada de roseta ou espelho: a superfície coberta na face da porta. Importa ao substituir maçanetas numa porta que já tem furos, porque uma pegada menor não os vai tapar.",
+    "A terceira é a que transforma uma reforma numa substituição de portas. Medir o espelho existente antes de pedir a substituição não custa nada e é omitido constantemente.",
+    "O QUE PUBLICAMOS",
+    "As nossas páginas de maçaneta levam as cotas que medimos — comprimento de maçaneta, avanço, tamanho de roseta ou espelho, quadrado e centro de quadrado — com equivalências imperiais nas páginas em inglês.",
+    "Onde um modelo foi ensaiado a uma classificação EN 1906, a classificação é indicada completa e não como um dígito solto, porque um dígito solto não é uma classificação. Onde um modelo não foi ensaiado, não aparece classificação. Uma classificação EN é um resultado de laboratório, e um fabricante que escreve uma perante um produto não ensaiado escreveu uma afirmação da qual não consegue tirar um relatório."
+  ]
+}

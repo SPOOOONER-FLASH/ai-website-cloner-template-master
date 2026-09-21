@@ -116,12 +116,22 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   if (typeof article.summary === "string") article.summary = convert(article.summary);
   if (Array.isArray(article.body)) article.body = article.body.map(convert);
   else if (typeof article.body === "string") article.body = convert(article.body);
-  if (Array.isArray(article.faq)) {
-    article.faq = article.faq.map((entry) =>
-      entry && typeof entry === "object"
-        ? { ...entry, answer: convert(entry.answer) }
-        : entry,
-    );
+  /*
+    FAQ 的结构是 { en: [...], es: [...], pt: [...] }，不是一个扁平数组。
+    第一版用 Array.isArray 判断，于是这一段从来没有跑过 —— 105 个问答里的毫米
+    一个都没换算，而它们正是被引用最多的那一类文字（问答直接对应一个提问）。
+
+    只动 faq.en，理由和正文一样：补英寸是为了北美语境的问题，而那些问题用英文问。
+  */
+  if (article.faq && typeof article.faq === "object" && Array.isArray(article.faq.en)) {
+    article.faq = {
+      ...article.faq,
+      en: article.faq.en.map((entry) =>
+        entry && typeof entry === "object"
+          ? { ...entry, question: convert(entry.question), answer: convert(entry.answer) }
+          : entry,
+      ),
+    };
   }
 
   if (!localInserted) continue;

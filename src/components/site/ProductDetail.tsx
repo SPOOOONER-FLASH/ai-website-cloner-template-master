@@ -13,6 +13,7 @@ import { CatalogueReturnLink } from "./CatalogueNavigation";
 import { ProductDrawing, DoorPreparation } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
+import { specValueFor } from "@/lib/imperial";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
@@ -645,8 +646,12 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                           className="grid grid-cols-2 gap-16 border-b border-line py-12 text-c1"
                         >
                           <dt className="text-ink-secondary">{spec.label}</dt>
+                          {/*
+                            英文页面的公制值后面配一个英制括号。见 src/lib/imperial.ts：
+                            换算是表现层的事，content/products 里那 891 条行一个字节都不动。
+                          */}
                           <dd className="tabular-nums text-ink">
-                            {spec.value}
+                            {specValueFor(spec.value, locale)}
                             {spec.unit ? ` ${spec.unit}` : ""}
                           </dd>
                         </div>

@@ -21,7 +21,8 @@ const css = read("src", "app", "globals.css");
  */
 
 test("a nav rail names destinations on every viewport below xl", () => {
-  assert.match(header, /className="layout border-t border-line bg-surface xl:hidden"/);
+  assert.match(header, /"layout border-t border-line bg-surface xl:hidden"/);
+  assert.match(header, /navigationStyles\.compactNavigation/);
   assert.match(header, /className="nav-rail col-content"/);
 
   /*

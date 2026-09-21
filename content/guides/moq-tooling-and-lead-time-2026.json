@@ -1,0 +1,203 @@
+{
+  "slug": "moq-tooling-and-lead-time-2026",
+  "title": "MOQ, Tooling and Lead Time 2026: What Actually Sets the Minimum, and Why 300 and 5,000 Are Both True",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "A buyer asks for a minimum order quantity and gets a range, which reads as evasion and is not. This page explains the four things that actually set an MOQ — the finish batch, the tooling, the packaging and the model's own production run — why our published range runs from 300 to 5,000 pieces, what the 30-day lead time is actually counting, and the three decisions a buyer can make that move all of these in their favour.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "MOQ, Tooling and Lead Time 2026: What Sets the Minimum | Canton Hyland",
+  "seoDescription": "What determines a door hardware MOQ — finish batch size, tooling, packaging and production run — why the range is 300 to 5,000 pieces, and what a 30-day lead time counts.",
+  "body": [
+    "\"What is your MOQ?\" is the second question in most first emails, and the answer that comes back is almost always a range. That reads as a supplier keeping their options open. It is not — it is the only truthful answer, and the reason is worth understanding because it tells you exactly which levers you can pull.",
+    "Our published range is 300 to 5,000 pieces for most models, and the gap between those two numbers is not negotiating room. It is the difference between two genuinely different manufacturing situations.",
+    "THE FOUR THINGS THAT SET AN MOQ",
+    "The finish batch. This is the big one and it is the least obvious. A plating or coating line runs a batch, and the batch has a minimum economic size set by the volume of the tanks and the time to change over between finishes. A model available in six finishes does not have one MOQ; it has an MOQ per finish, because each finish is a separate run.",
+    "This is why splitting an order across finishes raises the total minimum rather than lowering it. Five hundred pieces in one finish is one batch. Five hundred pieces split a hundred each across five finishes is five batches, each below its own economic minimum. It is also why our packing data shows the same model in two finishes with completely different carton dimensions — they are, operationally, two products.",
+    "The tooling. A casting or a stamping needs a die, and the die has a setup cost that is paid per run regardless of how many pieces come off it. For a model already in production, the tooling is amortised and the MOQ can be low. For a new geometry, the tooling has to be cut, and the first run has to be large enough to justify cutting it.",
+    "The packaging. Printed cartons, printed inner boxes and printed instruction sheets all have their own print minimums, and those minimums are frequently higher than the hardware minimum. A buyer who wants their own brand on the box may find that the box, not the lock, sets the order size.",
+    "The production run itself. Assembly lines are set up for a model and then run. The changeover cost is real, and a run below a certain size spends more time being set up than being run.",
+    "WHY 300 AND 5,000 ARE BOTH TRUE",
+    "A model that is already tooled, already in a standard finish, and packed in a stock carton sits at the bottom of the range. The factory is doing something it was already going to do, in a size that fits a normal batch.",
+    "A model made to a buyer's specification — a finish we do not stock, a custom backset, a printed box, a modified geometry — sits at the top, because every one of the four factors above resets.",
+    "Some items already listed on our Alibaba storefront carry a lower published minimum than either, because they are stock items being sold from inventory rather than produced to order. That is a fifth situation, and it is the one to ask about first if the quantity is small.",
+    "WHAT A 30-DAY LEAD TIME IS COUNTING",
+    "Our production lead time starts at 30 days from order confirmation, and the phrase that does the work there is \"from order confirmation\".",
+    "The clock starts when the specification is closed and the deposit is received — not when the enquiry arrives. Everything before that point is specification, and specification time is entirely under the buyer's control.",
+    "Inside the 30 days sit material procurement, casting or stamping, machining, finishing, assembly, inspection and packing. Finishing is usually the longest single block and the one most exposed to a changed mind, because a finish cannot be started until the parts exist and cannot be redone without stripping.",
+    "Outside the 30 days sits everything to do with getting the goods to you: booking, inland transport to port, customs, the sailing itself and clearance at the far end. A 30-day production lead time on a 35-day sailing is a 65-day plus arrival, and a buyer planning around 30 days will be disappointed by arithmetic rather than by the factory.",
+    "THE THREE DECISIONS THAT MOVE ALL OF THIS",
+    "Consolidate finishes. This is the single most effective thing a buyer can do. An order of 2,000 pieces in two finishes is easier and cheaper to produce than 2,000 pieces across six, and it also produces a more consistent result, because everything in a finish batch is finished together.",
+    "Close the specification before asking for a date. Every unresolved question — the backset, the spindle length, the handing, the finish code, the packaging — is a day the clock is not running. Our six-values page lists what an order actually needs to be complete.",
+    "Separate the sample from the order. A sample confirms that what we understood is what you meant, and it is much cheaper than discovering the gap in a container. Ask for the sample while the specification is still open, not after the deposit.",
+    "WHAT TOOLING COSTS, AND WHY WE WILL TELL YOU BEFORE YOU ASK",
+    "If a model needs new tooling, that is a separate cost, a separate timeline and a separate decision, and it should be stated as such rather than folded into a unit price.",
+    "We have written elsewhere about what it takes to tool a new exit device, and the short version is that tooling is the point at which a buyer and a factory become genuinely committed to each other. A tool is cut for a geometry. It is not transferable, it is not refundable, and the decision to cut it should be made with the numbers visible.",
+    "A supplier who quotes a low unit price and does not mention tooling has not saved you money; they have moved a cost to a place where you will meet it later.",
+    "WHAT TO SEND US TO GET A REAL NUMBER",
+    "The model numbers. The finish for each. The quantity for each model-and-finish combination, not the total. Whether the packaging is ours or yours. Whether anything differs from the catalogue specification.",
+    "With those five, the export team can confirm the minimum for that exact line and a date, before you commit to anything. Without them, any MOQ figure is a range, and a range is what an honest supplier gives when the question has not been narrowed yet."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What is your minimum order quantity?",
+        "answer": "Most models fall between 300 and 5,000 pieces, depending on the model, the finish, and whether the order is stock or made to your specification. Some items already listed on our Alibaba storefront carry a lower published minimum because they are sold from inventory rather than produced to order."
+      },
+      {
+        "question": "Why is the MOQ a range instead of a number?",
+        "answer": "Because four separate things set it: the finish batch size, whether tooling is already amortised, the print minimums on packaging, and the production run changeover. A model already tooled, in a stock finish, in a stock carton sits at the bottom. A model made to specification resets all four and sits at the top."
+      },
+      {
+        "question": "Does splitting my order across finishes reduce the minimum?",
+        "answer": "It raises it. Each finish is a separate plating or coating batch with its own economic minimum. Five hundred pieces in one finish is one batch; a hundred each across five finishes is five batches, each below its own minimum. Consolidating finishes is the single most effective thing a buyer can do."
+      },
+      {
+        "question": "What does the 30-day lead time actually count?",
+        "answer": "Production only, starting from order confirmation and deposit — not from the enquiry. It covers material procurement, casting or stamping, machining, finishing, assembly, inspection and packing. It does not include booking, inland transport, customs, the sailing or clearance at the far end."
+      },
+      {
+        "question": "How can I shorten the lead time?",
+        "answer": "Close the specification before asking for a date, because the clock does not start until it is closed. Consolidate finishes. And take the sample while the specification is still open rather than after the deposit, so a misunderstanding costs a sample instead of a container."
+      },
+      {
+        "question": "How is tooling quoted?",
+        "answer": "As a separate cost with a separate timeline, not folded into the unit price. A tool is cut for one geometry: it is not transferable and not refundable, so the decision should be made with the numbers visible. A low unit price that does not mention tooling has moved a cost rather than removed it."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es su pedido mínimo?",
+        "answer": "La mayoría de los modelos se sitúa entre 300 y 5.000 piezas, según el modelo, el acabado y si el pedido sale de stock o se fabrica según su especificación. Algunos artículos publicados en nuestra tienda de Alibaba tienen un mínimo más bajo porque se venden de inventario y no se producen contra pedido."
+      },
+      {
+        "question": "¿Por qué el mínimo es un rango y no una cifra?",
+        "answer": "Porque lo fijan cuatro cosas distintas: el tamaño del lote de acabado, si el utillaje ya está amortizado, los mínimos de impresión del embalaje y el cambio de serie en producción. Un modelo ya utillado, en acabado de stock y caja de stock está en el suelo del rango. Uno a especificación reinicia los cuatro y está en el techo."
+      },
+      {
+        "question": "¿Repartir el pedido entre acabados baja el mínimo?",
+        "answer": "Lo sube. Cada acabado es un lote de galvanizado o recubrimiento aparte con su propio mínimo económico. Quinientas piezas en un acabado es un lote; cien en cada uno de cinco acabados son cinco lotes, todos por debajo de su propio mínimo. Consolidar acabados es lo más eficaz que puede hacer un comprador."
+      },
+      {
+        "question": "¿Qué cuenta realmente el plazo de 30 días?",
+        "answer": "Solo la producción, desde la confirmación del pedido y la señal, no desde la consulta. Cubre aprovisionamiento, fundición o estampación, mecanizado, acabado, montaje, inspección y embalaje. No incluye reserva de flete, transporte interior, aduana, navegación ni despacho en destino."
+      },
+      {
+        "question": "¿Cómo puedo acortar el plazo?",
+        "answer": "Cierre la especificación antes de pedir una fecha, porque el reloj no arranca hasta que está cerrada. Consolide acabados. Y tome la muestra mientras la especificación sigue abierta y no después de la señal, para que un malentendido cueste una muestra en vez de un contenedor."
+      },
+      {
+        "question": "¿Cómo se cotiza el utillaje?",
+        "answer": "Como coste aparte con calendario aparte, no metido en el precio unitario. Un molde se hace para una geometría: no es transferible ni reembolsable, así que la decisión debe tomarse con los números a la vista. Un precio unitario bajo que no menciona el utillaje ha movido un coste, no lo ha eliminado."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é o seu pedido mínimo?",
+        "answer": "A maioria dos modelos fica entre 300 e 5.000 peças, conforme o modelo, o acabamento e se o pedido sai de estoque ou é fabricado conforme a sua especificação. Alguns itens publicados na nossa loja do Alibaba têm um mínimo mais baixo porque são vendidos de inventário e não produzidos sob encomenda."
+      },
+      {
+        "question": "Por que o mínimo é uma faixa e não uma cifra?",
+        "answer": "Porque quatro coisas distintas o fixam: o tamanho do lote de acabamento, se a ferramentaria já está amortizada, os mínimos de impressão da embalagem e a troca de série em produção. Um modelo já ferramentado, em acabamento de estoque e caixa de estoque fica no piso da faixa. Um feito sob especificação reinicia os quatro e fica no teto."
+      },
+      {
+        "question": "Dividir o pedido entre acabamentos reduz o mínimo?",
+        "answer": "Aumenta. Cada acabamento é um lote de galvanização ou revestimento à parte com o seu próprio mínimo económico. Quinhentas peças num acabamento é um lote; cem em cada um de cinco acabamentos são cinco lotes, todos abaixo do seu próprio mínimo. Consolidar acabamentos é o mais eficaz que um comprador pode fazer."
+      },
+      {
+        "question": "O que o prazo de 30 dias realmente conta?",
+        "answer": "Só a produção, a contar da confirmação do pedido e do sinal, não da consulta. Cobre aprovisionamento, fundição ou estampagem, usinagem, acabamento, montagem, inspeção e embalagem. Não inclui reserva de frete, transporte interno, alfândega, navegação nem desembaraço no destino."
+      },
+      {
+        "question": "Como posso encurtar o prazo?",
+        "answer": "Feche a especificação antes de pedir uma data, porque o relógio não arranca até ela estar fechada. Consolide acabamentos. E tire a amostra enquanto a especificação ainda está aberta e não depois do sinal, para que um mal-entendido custe uma amostra em vez de um contentor."
+      },
+      {
+        "question": "Como a ferramentaria é cotada?",
+        "answer": "Como custo à parte com calendário à parte, não embutido no preço unitário. Um molde é feito para uma geometria: não é transferível nem reembolsável, então a decisão deve ser tomada com os números à vista. Um preço unitário baixo que não menciona a ferramentaria moveu um custo, não o eliminou."
+      }
+    ]
+  },
+  "titleEs": "Pedido mínimo, utillaje y plazo 2026: qué fija de verdad el mínimo, y por qué 300 y 5.000 son ciertos a la vez",
+  "summaryEs": "Un comprador pide un pedido mínimo y recibe un rango, lo que parece evasivo y no lo es. Esta página explica las cuatro cosas que fijan de verdad un mínimo —el lote de acabado, el utillaje, el embalaje y la propia serie de producción—, por qué nuestro rango publicado va de 300 a 5.000 piezas, qué cuenta realmente el plazo de 30 días, y las tres decisiones de un comprador que mueven todo eso a su favor.",
+  "seoTitleEs": "Pedido mínimo, utillaje y plazo 2026: qué fija el mínimo | Canton Hyland",
+  "seoDescriptionEs": "Qué determina un pedido mínimo de herrajes —lote de acabado, utillaje, embalaje y serie de producción—, por qué el rango es de 300 a 5.000 piezas, y qué cuenta un plazo de 30 días.",
+  "bodyEs": [
+    "«¿Cuál es su MOQ?» es la segunda pregunta de casi todo primer correo, y la respuesta que vuelve es casi siempre un rango. Eso parece un proveedor guardándose las espaldas. No lo es: es la única respuesta veraz, y entender por qué merece la pena porque le dice exactamente qué palancas puede accionar.",
+    "Nuestro rango publicado es de 300 a 5.000 piezas para la mayoría de los modelos, y la distancia entre esas dos cifras no es margen de negociación. Es la diferencia entre dos situaciones de fabricación genuinamente distintas.",
+    "LAS CUATRO COSAS QUE FIJAN UN MÍNIMO",
+    "El lote de acabado. Esta es la grande y la menos evidente. Una línea de galvanizado o recubrimiento trabaja por lotes, y el lote tiene un tamaño económico mínimo que fijan el volumen de las cubas y el tiempo de cambio entre acabados. Un modelo disponible en seis acabados no tiene un mínimo: tiene un mínimo por acabado, porque cada acabado es una serie aparte.",
+    "Por eso repartir un pedido entre acabados sube el mínimo total en lugar de bajarlo. Quinientas piezas en un acabado es un lote. Quinientas repartidas de cien en cinco acabados son cinco lotes, cada uno por debajo de su propio mínimo económico. Es también la razón de que nuestros datos de embalaje muestren el mismo modelo en dos acabados con dimensiones de caja completamente distintas: operativamente son dos productos.",
+    "El utillaje. Una fundición o una estampación necesita un molde, y el molde tiene un coste de puesta a punto que se paga por serie independientemente de cuántas piezas salgan. En un modelo ya en producción, el utillaje está amortizado y el mínimo puede ser bajo. En una geometría nueva hay que hacer el molde, y la primera serie tiene que ser bastante grande para justificarlo.",
+    "El embalaje. Cajas impresas, estuches impresos y hojas de instrucciones impresas tienen cada uno sus mínimos de tirada, y esos mínimos son con frecuencia más altos que el del herraje. Un comprador que quiera su marca en la caja puede descubrir que quien fija el tamaño del pedido es la caja y no la cerradura.",
+    "La propia serie de producción. Las líneas de montaje se preparan para un modelo y luego corren. El coste del cambio es real, y una serie por debajo de cierto tamaño pasa más tiempo preparándose que corriendo.",
+    "POR QUÉ 300 Y 5.000 SON CIERTOS A LA VEZ",
+    "Un modelo ya utillado, en un acabado estándar y embalado en caja de stock está en el suelo del rango. La fábrica hace algo que iba a hacer de todas formas, en un tamaño que encaja en un lote normal.",
+    "Un modelo a la especificación de un comprador —un acabado que no tenemos en stock, una distancia al eje a medida, una caja impresa, una geometría modificada— está en el techo, porque los cuatro factores anteriores se reinician.",
+    "Algunos artículos ya publicados en nuestra tienda de Alibaba llevan un mínimo publicado más bajo que ambos, porque son artículos de stock vendidos de inventario y no producidos contra pedido. Esa es una quinta situación, y es por la que hay que preguntar primero si la cantidad es pequeña.",
+    "QUÉ CUENTA UN PLAZO DE 30 DÍAS",
+    "Nuestro plazo de producción parte de 30 días desde la confirmación del pedido, y la expresión que hace el trabajo ahí es «desde la confirmación del pedido».",
+    "El reloj arranca cuando la especificación está cerrada y se ha recibido la señal, no cuando llega la consulta. Todo lo anterior es especificación, y el tiempo de especificación está por completo bajo el control del comprador.",
+    "Dentro de los 30 días caben aprovisionamiento, fundición o estampación, mecanizado, acabado, montaje, inspección y embalaje. El acabado suele ser el bloque más largo y el más expuesto a un cambio de opinión, porque no puede empezar hasta que las piezas existen y no se rehace sin decapar.",
+    "Fuera de los 30 días queda todo lo relativo a hacerle llegar la mercancía: reserva, transporte interior a puerto, aduana, la navegación y el despacho en destino. Un plazo de producción de 30 días con una navegación de 35 es una llegada a 65 días largos, y un comprador que planifique con 30 se llevará un disgusto de aritmética y no de fábrica.",
+    "LAS TRES DECISIONES QUE LO MUEVEN TODO",
+    "Consolide acabados. Es lo más eficaz que puede hacer un comprador. Un pedido de 2.000 piezas en dos acabados es más fácil y más barato de producir que 2.000 repartidas en seis, y además da un resultado más homogéneo, porque todo lo que va en un lote de acabado se acaba junto.",
+    "Cierre la especificación antes de pedir fecha. Cada pregunta sin resolver —distancia al eje, longitud de cuadradillo, mano, código de acabado, embalaje— es un día en que el reloj no corre. Nuestra página de los seis valores enumera lo que necesita un pedido para estar completo.",
+    "Separe la muestra del pedido. Una muestra confirma que lo que entendimos es lo que usted quiso decir, y es mucho más barata que descubrir el desfase en un contenedor. Pida la muestra mientras la especificación sigue abierta, no después de la señal.",
+    "QUÉ CUESTA EL UTILLAJE, Y POR QUÉ SE LO DIREMOS ANTES DE QUE PREGUNTE",
+    "Si un modelo necesita utillaje nuevo, eso es un coste aparte, un calendario aparte y una decisión aparte, y debe indicarse como tal en lugar de disolverse en un precio unitario.",
+    "Hemos escrito en otro sitio sobre lo que hace falta para utillar una barra antipánico nueva, y la versión corta es que el utillaje es el punto en el que un comprador y una fábrica se comprometen de verdad el uno con el otro. Un molde se hace para una geometría. No es transferible, no es reembolsable, y la decisión de hacerlo debe tomarse con los números a la vista.",
+    "Un proveedor que cotiza un precio unitario bajo y no menciona el utillaje no le ha ahorrado dinero: ha movido un coste a un sitio donde usted se lo encontrará después.",
+    "QUÉ ENVIARNOS PARA OBTENER UNA CIFRA REAL",
+    "Los números de modelo. El acabado de cada uno. La cantidad de cada combinación de modelo y acabado, no el total. Si el embalaje es nuestro o suyo. Si algo difiere de la especificación de catálogo.",
+    "Con esos cinco datos, el equipo de exportación puede confirmar el mínimo de esa línea concreta y una fecha, antes de que usted se comprometa a nada. Sin ellos, cualquier cifra de mínimo es un rango, y un rango es lo que da un proveedor honesto cuando la pregunta todavía no se ha acotado."
+  ],
+  "titlePt": "Pedido mínimo, ferramentaria e prazo 2026: o que realmente fixa o mínimo, e por que 300 e 5.000 são verdadeiros ao mesmo tempo",
+  "summaryPt": "Um comprador pede um pedido mínimo e recebe uma faixa, o que parece evasivo e não é. Esta página explica as quatro coisas que realmente fixam um mínimo — o lote de acabamento, a ferramentaria, a embalagem e a própria série de produção —, por que a nossa faixa publicada vai de 300 a 5.000 peças, o que o prazo de 30 dias realmente conta, e as três decisões de um comprador que movem tudo isso a seu favor.",
+  "seoTitlePt": "Pedido mínimo, ferramentaria e prazo 2026: o que fixa o mínimo | Canton Hyland",
+  "seoDescriptionPt": "O que determina um pedido mínimo de ferragens — lote de acabamento, ferramentaria, embalagem e série de produção —, por que a faixa é de 300 a 5.000 peças, e o que um prazo de 30 dias conta.",
+  "bodyPt": [
+    "«Qual é o seu MOQ?» é a segunda pergunta de quase todo primeiro e-mail, e a resposta que volta é quase sempre uma faixa. Isso parece um fornecedor guardando as costas. Não é: é a única resposta verdadeira, e entender por que vale a pena porque diz exatamente que alavancas você pode acionar.",
+    "A nossa faixa publicada é de 300 a 5.000 peças para a maioria dos modelos, e a distância entre essas duas cifras não é margem de negociação. É a diferença entre duas situações de fabricação genuinamente distintas.",
+    "AS QUATRO COISAS QUE FIXAM UM MÍNIMO",
+    "O lote de acabamento. Esta é a grande e a menos evidente. Uma linha de galvanização ou revestimento trabalha por lotes, e o lote tem um tamanho económico mínimo fixado pelo volume dos tanques e pelo tempo de troca entre acabamentos. Um modelo disponível em seis acabamentos não tem um mínimo: tem um mínimo por acabamento, porque cada acabamento é uma série à parte.",
+    "Por isso dividir um pedido entre acabamentos aumenta o mínimo total em vez de o baixar. Quinhentas peças num acabamento é um lote. Quinhentas divididas de cem em cinco acabamentos são cinco lotes, cada um abaixo do seu próprio mínimo económico. É também a razão de os nossos dados de embalagem mostrarem o mesmo modelo em dois acabamentos com dimensões de caixa completamente diferentes: operacionalmente são dois produtos.",
+    "A ferramentaria. Uma fundição ou uma estampagem precisa de um molde, e o molde tem um custo de preparação que se paga por série independentemente de quantas peças saiam. Num modelo já em produção, a ferramentaria está amortizada e o mínimo pode ser baixo. Numa geometria nova o molde tem de ser feito, e a primeira série tem de ser grande o suficiente para o justificar.",
+    "A embalagem. Caixas impressas, estojos impressos e folhas de instruções impressas têm cada um os seus mínimos de tiragem, e esses mínimos são com frequência mais altos do que o da ferragem. Um comprador que queira a sua marca na caixa pode descobrir que quem fixa o tamanho do pedido é a caixa e não a fechadura.",
+    "A própria série de produção. As linhas de montagem são preparadas para um modelo e depois correm. O custo da troca é real, e uma série abaixo de certo tamanho passa mais tempo a ser preparada do que a correr.",
+    "POR QUE 300 E 5.000 SÃO VERDADEIROS AO MESMO TEMPO",
+    "Um modelo já ferramentado, num acabamento padrão e embalado em caixa de estoque fica no piso da faixa. A fábrica faz algo que ia fazer de qualquer forma, num tamanho que cabe num lote normal.",
+    "Um modelo feito à especificação de um comprador — um acabamento que não temos em estoque, uma distância ao eixo sob medida, uma caixa impressa, uma geometria modificada — fica no teto, porque os quatro fatores anteriores reiniciam.",
+    "Alguns itens já publicados na nossa loja do Alibaba levam um mínimo publicado mais baixo do que ambos, porque são itens de estoque vendidos de inventário e não produzidos sob encomenda. Essa é uma quinta situação, e é pela qual se deve perguntar primeiro se a quantidade é pequena.",
+    "O QUE UM PRAZO DE 30 DIAS CONTA",
+    "O nosso prazo de produção parte de 30 dias a contar da confirmação do pedido, e a expressão que faz o trabalho ali é «a contar da confirmação do pedido».",
+    "O relógio arranca quando a especificação está fechada e o sinal foi recebido, não quando a consulta chega. Tudo o que vem antes é especificação, e o tempo de especificação está inteiramente sob o controle do comprador.",
+    "Dentro dos 30 dias cabem aprovisionamento, fundição ou estampagem, usinagem, acabamento, montagem, inspeção e embalagem. O acabamento costuma ser o bloco mais longo e o mais exposto a uma mudança de ideias, porque não pode começar até as peças existirem e não se refaz sem decapar.",
+    "Fora dos 30 dias fica tudo o que diz respeito a fazer a mercadoria chegar até você: reserva, transporte interno até o porto, alfândega, a navegação e o desembaraço no destino. Um prazo de produção de 30 dias com uma navegação de 35 é uma chegada a 65 dias largos, e um comprador que planeje com 30 vai ter um desgosto de aritmética e não de fábrica.",
+    "AS TRÊS DECISÕES QUE MOVEM TUDO ISTO",
+    "Consolide acabamentos. É o mais eficaz que um comprador pode fazer. Um pedido de 2.000 peças em dois acabamentos é mais fácil e mais barato de produzir do que 2.000 divididas por seis, e ainda dá um resultado mais homogéneo, porque tudo o que vai num lote de acabamento é acabado junto.",
+    "Feche a especificação antes de pedir data. Cada pergunta por resolver — distância ao eixo, comprimento de quadrado, mão, código de acabamento, embalagem — é um dia em que o relógio não corre. A nossa página dos seis valores enumera o que um pedido precisa para estar completo.",
+    "Separe a amostra do pedido. Uma amostra confirma que o que entendemos é o que você quis dizer, e é muito mais barata do que descobrir o desvio num contentor. Peça a amostra enquanto a especificação ainda está aberta, não depois do sinal.",
+    "O QUE CUSTA A FERRAMENTARIA, E POR QUE LHE DIREMOS ANTES DE PERGUNTAR",
+    "Se um modelo precisa de ferramentaria nova, isso é um custo à parte, um calendário à parte e uma decisão à parte, e deve ser indicado como tal em vez de dissolvido num preço unitário.",
+    "Escrevemos noutro sítio sobre o que é preciso para ferramentar uma barra antipânico nova, e a versão curta é que a ferramentaria é o ponto em que um comprador e uma fábrica se comprometem de verdade um com o outro. Um molde é feito para uma geometria. Não é transferível, não é reembolsável, e a decisão de o fazer deve ser tomada com os números à vista.",
+    "Um fornecedor que cota um preço unitário baixo e não menciona a ferramentaria não lhe poupou dinheiro: moveu um custo para um sítio onde você o encontrará depois.",
+    "O QUE NOS ENVIAR PARA OBTER UMA CIFRA REAL",
+    "Os números de modelo. O acabamento de cada um. A quantidade de cada combinação de modelo e acabamento, não o total. Se a embalagem é nossa ou sua. Se algo difere da especificação de catálogo.",
+    "Com esses cinco dados, a equipe de exportação pode confirmar o mínimo daquela linha exata e uma data, antes de você se comprometer com o que quer que seja. Sem eles, qualquer cifra de mínimo é uma faixa, e uma faixa é o que um fornecedor honesto dá quando a pergunta ainda não foi delimitada."
+  ]
+}

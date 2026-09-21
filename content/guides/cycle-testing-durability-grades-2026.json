@@ -1,0 +1,202 @@
+{
+  "slug": "cycle-testing-durability-grades-2026",
+  "title": "200,000 Cycles: What a Durability Figure Means in EN 1906 and in ANSI/BHMA, and Why It Is Not the Same Number",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "We publish 200,000 cycles on 132 models. In EN 1906 that is the top durability category. In ANSI/BHMA A156.2 it is the entry grade. Both statements are true, and a specification that reads one as the other will either over-buy or under-buy. This page sets out what a cycle test actually is, what each scale asks for, and where our own figure sits on both.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/products-hyde/lc02-85-40mm-lock-case-3.webp",
+    "ratio": "16 / 9",
+    "label": "An LC02 lock case — the mechanism a cycle test operates until it fails or finishes",
+    "labelEs": "Una caja LC02 — el mecanismo que un ensayo de ciclos acciona hasta que falla o termina",
+    "labelPt": "Uma caixa LC02 — o mecanismo que um ensaio de ciclos aciona até falhar ou terminar"
+  },
+  "relatedModels": [
+    "LC02 85-40mm",
+    "LH851",
+    "607 SSET"
+  ],
+  "seoTitle": "Cycle Testing and Durability Grades 2026: EN 1906 vs ANSI/BHMA | Canton Hyland",
+  "seoDescription": "What 200,000 cycles means: EN 1906 durability categories against ANSI/BHMA A156.2 and A156.13 grades, what a cycle test measures, and where our published figure sits on each scale.",
+  "body": [
+    "A durability figure on a datasheet is a single number, which is what makes it dangerous. Two hundred thousand cycles is the top of one scale and the bottom of another, and nothing on the datasheet says which scale the number was measured against.",
+    "We publish 200,000 cycles on 132 of our models. This page says what that number is, where it sits on each of the two systems a specifier might be reading it against, and what it does not cover.",
+    "WHAT A CYCLE IS",
+    "One cycle is one complete operation of the mechanism: the handle or key moves, the latch retracts, the mechanism returns. A test rig performs that operation repeatedly, under a stated load, until either the target count is reached or the product fails a defined criterion — the latch no longer retracts fully, the return spring no longer returns it, a component fractures.",
+    "What makes a cycle count meaningful is the definition of failure attached to it, not the count. A figure quoted without its standard is a number without a test behind it, and a number without a test can be anything.",
+    "THE EUROPEAN SCALE",
+    "EN 1906 classifies lever handles and knob furniture across eight positions, one of which is durability. In that position the scale has two entries that matter in practice: category 6 at 100,000 cycles, and category 7 at 200,000 cycles.",
+    "Category 7 is the top of the durability position in that standard. A handle set tested to 200,000 cycles under EN 1906 has met the highest durability class the standard defines for that product.",
+    "The other seven positions in the EN 1906 code cover category of use, door mass, fire suitability, safety, corrosion resistance, security and type of operation. Durability is one eighth of the classification, which is why quoting only the cycle figure from an EN classification discards most of what was tested.",
+    "THE NORTH AMERICAN SCALE",
+    "ANSI/BHMA grades the whole product as Grade 1, 2 or 3. For bored locks under A156.2 the cycle requirements are 1,000,000 for Grade 1, 400,000 for Grade 2 and 200,000 for Grade 3. Mortise locks under A156.13 set Grade 1 at 1,000,000.",
+    "On that scale 200,000 cycles is Grade 3 — the entry level. The same number that tops the European durability position sits at the bottom of the American grade ladder.",
+    "This is not a discrepancy to be resolved. It is two standards asking different questions of different product categories, with different assumptions about how a door in that market is used and how long the hardware is expected to stay in service before replacement.",
+    "WHY THE TWO SCALES DIVERGE SO FAR",
+    "The North American grading system was built around commercial openings where the lockset is expected to outlast several tenancies and where the replacement cost includes the labour of a locksmith on a Grade 1 mortise. The European system grades a handle set as furniture on a door whose lock case is a separately classified item, so the durability demanded of the handle is not the durability demanded of the lock.",
+    "The practical consequence: a European classification and an American grade are not comparable even when the cycle numbers are identical, because they were counted on different assemblies.",
+    "WHERE OUR FIGURE SITS, STATED BOTH WAYS",
+    "Our 200,000 cycle figure appears on 132 published models. Read against EN 1906 it corresponds to the top durability category. Read against ANSI/BHMA A156.2 it corresponds to the Grade 3 cycle requirement.",
+    "We publish both readings because publishing one would be selecting the flattering half. A specifier writing to a European standard and a specifier writing to an American one are both entitled to place the number correctly, and only one of those two readings helps us.",
+    "WHAT THE CYCLE COUNT DOES NOT COVER",
+    "Corrosion. A cycle test runs in a laboratory, not in salt air. Corrosion resistance is a separate classification under EN 1670 and a separate part of the ANSI/BHMA suite, and a high cycle count on a finish that fails in two coastal winters is a product that stops working for a reason the cycle test never looked at.",
+    "Security. Cycle testing measures wear under normal operation, not resistance to attack. That is EN 1303 territory for cylinders and a different test entirely.",
+    "Fire. A cycle count says nothing about whether the assembly holds in a furnace. That is EN 1634-1, UL 10C or NFPA 252, and it is tested on a complete door assembly rather than on the hardware alone.",
+    "WHAT WE DO NOT PUBLISH",
+    "Which standard each 200,000 figure was tested against is not stated on every one of the 132 records. Where a test report exists we publish its facts — laboratory, reference number, issue date and the model covered — and send the document itself through the proper route.",
+    "Where a record carries the cycle figure without a named standard, treat it as a manufacturer's stated figure rather than as a third-party classification, and ask before writing it into a submittal. That distinction is the difference between a number a specifier can defend and one they cannot, and it is worth the email."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What does 200,000 cycles mean on a door hardware datasheet?",
+        "answer": "That the mechanism completed 200,000 full operations on a test rig before either reaching the target or failing a defined criterion. The number is only meaningful with the standard it was measured against, because the same figure is the top category in EN 1906 and the entry grade in ANSI/BHMA A156.2."
+      },
+      {
+        "question": "Is 200,000 cycles good or bad?",
+        "answer": "Both, depending on the scale. Under EN 1906 it is category 7, the highest durability class that standard defines for handle sets. Under ANSI/BHMA A156.2 it is the Grade 3 requirement, with Grade 2 at 400,000 and Grade 1 at 1,000,000."
+      },
+      {
+        "question": "What are the ANSI/BHMA cycle requirements by grade?",
+        "answer": "For bored locks under A156.2: 1,000,000 cycles for Grade 1, 400,000 for Grade 2, 200,000 for Grade 3. Mortise locks under A156.13 set Grade 1 at 1,000,000. The grade covers more than cycles, but the cycle count is the figure most often quoted from it."
+      },
+      {
+        "question": "Why do the European and American cycle numbers differ so much?",
+        "answer": "They grade different things. ANSI/BHMA grades a complete lockset for a commercial opening expected to outlast several tenancies. EN 1906 grades the handle set as furniture on a door whose lock case is separately classified, so the durability asked of the handle is not the durability asked of the lock."
+      },
+      {
+        "question": "Does a high cycle count mean the finish will last?",
+        "answer": "No. A cycle test runs in a laboratory and measures mechanical wear. Corrosion resistance is classified separately, under EN 1670 in Europe, and a product can pass 200,000 cycles and still lose its finish in two coastal winters."
+      },
+      {
+        "question": "Is your 200,000 figure third-party certified?",
+        "answer": "Not on every one of the 132 records that carry it. Where a test report exists we publish its laboratory, reference number, issue date and the specific model covered, and send the document through the proper route. Where a record states the figure without a named standard, treat it as a manufacturer's stated figure and ask before writing it into a submittal."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué significan 200.000 ciclos en una ficha de herrajes?",
+        "answer": "Que el mecanismo completó 200.000 operaciones enteras en un banco de ensayo antes de alcanzar el objetivo o de fallar un criterio definido. El número solo tiene sentido con la norma frente a la que se midió, porque la misma cifra es la categoría más alta en EN 1906 y el grado de entrada en ANSI/BHMA A156.2."
+      },
+      {
+        "question": "¿200.000 ciclos es mucho o poco?",
+        "answer": "Las dos cosas, según la escala. En EN 1906 es la categoría 7, la clase de durabilidad más alta que esa norma define para juegos de manilla. En ANSI/BHMA A156.2 es el requisito de Grado 3, con el Grado 2 en 400.000 y el Grado 1 en 1.000.000."
+      },
+      {
+        "question": "¿Cuáles son los requisitos de ciclos de ANSI/BHMA por grado?",
+        "answer": "Para cerraduras de perforación según A156.2: 1.000.000 de ciclos para Grado 1, 400.000 para Grado 2 y 200.000 para Grado 3. Las de embutir según A156.13 sitúan el Grado 1 en 1.000.000. El grado cubre más que los ciclos, pero el recuento es la cifra que más se cita de él."
+      },
+      {
+        "question": "¿Por qué difieren tanto las cifras europeas y americanas?",
+        "answer": "Gradúan cosas distintas. ANSI/BHMA gradúa una cerradura completa para un hueco comercial que debe sobrevivir a varios inquilinos. EN 1906 gradúa el juego de manilla como guarnición sobre una puerta cuya caja se clasifica aparte, así que la durabilidad que se pide a la manilla no es la que se pide a la cerradura."
+      },
+      {
+        "question": "¿Muchos ciclos significan que el acabado durará?",
+        "answer": "No. Un ensayo de ciclos ocurre en laboratorio y mide desgaste mecánico. La resistencia a la corrosión se clasifica aparte, según EN 1670 en Europa, y un producto puede superar 200.000 ciclos y perder el acabado en dos inviernos de costa."
+      },
+      {
+        "question": "¿Su cifra de 200.000 está certificada por tercero?",
+        "answer": "No en cada uno de los 132 registros que la llevan. Donde existe informe de ensayo publicamos su laboratorio, número de referencia, fecha de emisión y el modelo concreto cubierto, y enviamos el documento por la vía adecuada. Donde el registro indica la cifra sin norma nombrada, trátela como cifra declarada por el fabricante y pregunte antes de llevarla a un dossier."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que significam 200.000 ciclos numa ficha de ferragens?",
+        "answer": "Que o mecanismo completou 200.000 operações inteiras num banco de ensaio antes de atingir o alvo ou de falhar um critério definido. O número só tem sentido com a norma contra a qual foi medido, porque a mesma cifra é a categoria mais alta na EN 1906 e o grau de entrada na ANSI/BHMA A156.2."
+      },
+      {
+        "question": "200.000 ciclos é muito ou pouco?",
+        "answer": "As duas coisas, conforme a escala. Na EN 1906 é a categoria 7, a classe de durabilidade mais alta que essa norma define para conjuntos de maçaneta. Na ANSI/BHMA A156.2 é o requisito de Grau 3, com o Grau 2 em 400.000 e o Grau 1 em 1.000.000."
+      },
+      {
+        "question": "Quais são os requisitos de ciclos da ANSI/BHMA por grau?",
+        "answer": "Para fechaduras de furação conforme A156.2: 1.000.000 de ciclos para Grau 1, 400.000 para Grau 2 e 200.000 para Grau 3. As de embutir conforme A156.13 colocam o Grau 1 em 1.000.000. O grau cobre mais do que ciclos, mas a contagem é a cifra mais citada dele."
+      },
+      {
+        "question": "Por que os números europeus e americanos diferem tanto?",
+        "answer": "Graduam coisas diferentes. A ANSI/BHMA gradua uma fechadura completa para um vão comercial que deve sobreviver a vários inquilinos. A EN 1906 gradua o conjunto de maçaneta como guarnição sobre uma porta cuja caixa é classificada à parte, então a durabilidade pedida à maçaneta não é a pedida à fechadura."
+      },
+      {
+        "question": "Muitos ciclos significam que o acabamento vai durar?",
+        "answer": "Não. Um ensaio de ciclos acontece em laboratório e mede desgaste mecânico. A resistência à corrosão é classificada à parte, pela EN 1670 na Europa, e um produto pode passar 200.000 ciclos e perder o acabamento em dois invernos de costa."
+      },
+      {
+        "question": "A sua cifra de 200.000 é certificada por terceiros?",
+        "answer": "Não em cada um dos 132 registros que a carregam. Onde existe relatório de ensaio publicamos o laboratório, número de referência, data de emissão e o modelo específico coberto, e enviamos o documento pela via adequada. Onde o registro indica a cifra sem norma nomeada, trate-a como cifra declarada pelo fabricante e pergunte antes de levá-la a um dossiê."
+      }
+    ]
+  },
+  "titleEs": "200.000 ciclos: qué significa una cifra de durabilidad en EN 1906 y en ANSI/BHMA, y por qué no es el mismo número",
+  "summaryEs": "Publicamos 200.000 ciclos en 132 modelos. En EN 1906 esa es la categoría de durabilidad más alta. En ANSI/BHMA A156.2 es el grado de entrada. Las dos afirmaciones son ciertas, y una especificación que lea una como la otra comprará de más o de menos. Esta página fija qué es realmente un ensayo de ciclos, qué pide cada escala y dónde queda nuestra cifra en las dos.",
+  "seoTitleEs": "Ensayo de ciclos y grados de durabilidad 2026 | Canton Hyland",
+  "seoDescriptionEs": "Qué significan 200.000 ciclos: categorías de durabilidad EN 1906 frente a los grados ANSI/BHMA A156.2 y A156.13, qué mide un ensayo de ciclos y dónde queda nuestra cifra publicada en cada escala.",
+  "bodyEs": [
+    "Una cifra de durabilidad en una ficha es un solo número, y eso es lo que la hace peligrosa. Doscientos mil ciclos son el techo de una escala y el suelo de otra, y nada en la ficha dice frente a cuál se midió.",
+    "Publicamos 200.000 ciclos en 132 de nuestros modelos. Esta página dice qué es esa cifra, dónde queda en cada uno de los dos sistemas con los que un prescriptor puede estar leyéndola, y qué no cubre.",
+    "QUÉ ES UN CICLO",
+    "Un ciclo es una operación completa del mecanismo: la manilla o la llave se mueve, el picaporte se retrae, el mecanismo vuelve. Un banco repite esa operación bajo una carga declarada hasta alcanzar la cifra objetivo o hasta que el producto falla un criterio definido —el picaporte deja de retraerse del todo, el muelle deja de devolverlo, una pieza se fractura.",
+    "Lo que da sentido a un recuento de ciclos es la definición de fallo que lleva asociada, no el recuento. Una cifra citada sin su norma es un número sin ensayo detrás, y un número sin ensayo puede ser cualquier cosa.",
+    "LA ESCALA EUROPEA",
+    "EN 1906 clasifica manillas y pomos en ocho posiciones, una de las cuales es durabilidad. En esa posición la escala tiene dos entradas que importan en la práctica: categoría 6 con 100.000 ciclos y categoría 7 con 200.000.",
+    "La categoría 7 es el techo de la posición de durabilidad en esa norma. Un juego de manilla ensayado a 200.000 ciclos según EN 1906 ha alcanzado la clase de durabilidad más alta que la norma define para ese producto.",
+    "Las otras siete posiciones del código EN 1906 cubren categoría de uso, masa de puerta, aptitud al fuego, seguridad, resistencia a la corrosión, seguridad frente a intrusión y tipo de accionamiento. La durabilidad es una octava parte de la clasificación, y por eso citar solo la cifra de ciclos de una clasificación EN descarta casi todo lo ensayado.",
+    "LA ESCALA NORTEAMERICANA",
+    "ANSI/BHMA gradúa el producto entero como Grado 1, 2 o 3. Para cerraduras de perforación según A156.2 los requisitos son 1.000.000 de ciclos para Grado 1, 400.000 para Grado 2 y 200.000 para Grado 3. Las de embutir según A156.13 sitúan el Grado 1 en 1.000.000.",
+    "En esa escala, 200.000 ciclos son Grado 3, el nivel de entrada. La misma cifra que corona la posición de durabilidad europea queda en el escalón más bajo de la escalera americana.",
+    "No es una discrepancia que haya que resolver. Son dos normas que hacen preguntas distintas a categorías de producto distintas, con supuestos distintos sobre cómo se usa una puerta en ese mercado y cuánto se espera que el herraje siga en servicio antes de sustituirse.",
+    "POR QUÉ LAS DOS ESCALAS SE SEPARAN TANTO",
+    "El sistema de grados norteamericano se construyó alrededor de huecos comerciales donde se espera que la cerradura sobreviva a varios inquilinos y donde el coste de sustitución incluye la mano de obra de un cerrajero sobre una de embutir de Grado 1. El sistema europeo gradúa el juego de manilla como guarnición sobre una puerta cuya caja es un artículo clasificado aparte, así que la durabilidad exigida a la manilla no es la exigida a la cerradura.",
+    "La consecuencia práctica: una clasificación europea y un grado americano no son comparables ni siquiera cuando las cifras de ciclos coinciden, porque se contaron sobre conjuntos distintos.",
+    "DÓNDE QUEDA NUESTRA CIFRA, DICHA DE LAS DOS MANERAS",
+    "Nuestra cifra de 200.000 ciclos aparece en 132 modelos publicados. Leída frente a EN 1906 corresponde a la categoría de durabilidad más alta. Leída frente a ANSI/BHMA A156.2 corresponde al requisito de ciclos del Grado 3.",
+    "Publicamos las dos lecturas porque publicar una sería elegir la mitad halagadora. Un prescriptor que escribe según norma europea y otro que escribe según norma americana tienen ambos derecho a situar el número correctamente, y solo una de esas dos lecturas nos favorece.",
+    "LO QUE EL RECUENTO DE CICLOS NO CUBRE",
+    "La corrosión. Un ensayo de ciclos ocurre en laboratorio, no en aire salino. La resistencia a la corrosión es una clasificación aparte según EN 1670 y una parte distinta del conjunto ANSI/BHMA, y un recuento alto sobre un acabado que falla en dos inviernos de costa es un producto que deja de funcionar por una razón que el ensayo de ciclos nunca miró.",
+    "La seguridad. El ensayo de ciclos mide desgaste en uso normal, no resistencia al ataque. Eso es terreno de EN 1303 para cilindros y de un ensayo completamente distinto.",
+    "El fuego. Un recuento de ciclos no dice nada sobre si el conjunto aguanta en un horno. Eso es EN 1634-1, UL 10C o NFPA 252, y se ensaya sobre un conjunto de puerta completo y no sobre el herraje solo.",
+    "LO QUE NO PUBLICAMOS",
+    "Frente a qué norma se ensayó cada cifra de 200.000 no está indicado en los 132 registros. Donde existe informe de ensayo publicamos sus datos —laboratorio, número de referencia, fecha de emisión y modelo cubierto— y enviamos el documento por la vía adecuada.",
+    "Donde un registro lleva la cifra sin norma nombrada, trátela como cifra declarada por el fabricante y no como clasificación de tercero, y pregunte antes de escribirla en un dossier. Esa distinción es la diferencia entre un número que un prescriptor puede defender y uno que no, y vale el correo."
+  ],
+  "titlePt": "200.000 ciclos: o que uma cifra de durabilidade significa na EN 1906 e na ANSI/BHMA, e por que não é o mesmo número",
+  "summaryPt": "Publicamos 200.000 ciclos em 132 modelos. Na EN 1906 essa é a categoria de durabilidade mais alta. Na ANSI/BHMA A156.2 é o grau de entrada. As duas afirmações são verdadeiras, e uma especificação que leia uma como a outra vai comprar a mais ou a menos. Esta página estabelece o que é realmente um ensaio de ciclos, o que cada escala pede e onde a nossa cifra fica nas duas.",
+  "seoTitlePt": "Ensaio de ciclos e graus de durabilidade 2026 | Canton Hyland",
+  "seoDescriptionPt": "O que significam 200.000 ciclos: categorias de durabilidade EN 1906 contra os graus ANSI/BHMA A156.2 e A156.13, o que um ensaio de ciclos mede e onde a nossa cifra publicada fica em cada escala.",
+  "bodyPt": [
+    "Uma cifra de durabilidade numa ficha é um único número, e é isso que a torna perigosa. Duzentos mil ciclos são o teto de uma escala e o piso de outra, e nada na ficha diz contra qual delas foi medida.",
+    "Publicamos 200.000 ciclos em 132 dos nossos modelos. Esta página diz o que é essa cifra, onde ela fica em cada um dos dois sistemas com que um especificador pode estar lendo-a, e o que ela não cobre.",
+    "O QUE É UM CICLO",
+    "Um ciclo é uma operação completa do mecanismo: a maçaneta ou a chave se move, o trinco recolhe, o mecanismo volta. Um banco repete essa operação sob uma carga declarada até atingir a cifra alvo ou até o produto falhar um critério definido — o trinco deixa de recolher totalmente, a mola deixa de devolvê-lo, uma peça fratura.",
+    "O que dá sentido a uma contagem de ciclos é a definição de falha associada a ela, não a contagem. Uma cifra citada sem a sua norma é um número sem ensaio por trás, e um número sem ensaio pode ser qualquer coisa.",
+    "A ESCALA EUROPEIA",
+    "A EN 1906 classifica maçanetas e puxadores em oito posições, uma das quais é durabilidade. Nessa posição a escala tem duas entradas que importam na prática: categoria 6 com 100.000 ciclos e categoria 7 com 200.000.",
+    "A categoria 7 é o teto da posição de durabilidade nessa norma. Um conjunto de maçaneta ensaiado a 200.000 ciclos conforme a EN 1906 atingiu a classe de durabilidade mais alta que a norma define para aquele produto.",
+    "As outras sete posições do código EN 1906 cobrem categoria de uso, massa da porta, aptidão ao fogo, segurança, resistência à corrosão, segurança contra intrusão e tipo de acionamento. A durabilidade é um oitavo da classificação, e por isso citar apenas a cifra de ciclos de uma classificação EN descarta quase tudo o que foi ensaiado.",
+    "A ESCALA NORTE-AMERICANA",
+    "A ANSI/BHMA gradua o produto inteiro como Grau 1, 2 ou 3. Para fechaduras de furação conforme A156.2 os requisitos são 1.000.000 de ciclos para Grau 1, 400.000 para Grau 2 e 200.000 para Grau 3. As de embutir conforme A156.13 colocam o Grau 1 em 1.000.000.",
+    "Nessa escala, 200.000 ciclos são Grau 3, o nível de entrada. A mesma cifra que coroa a posição de durabilidade europeia fica no degrau mais baixo da escada americana.",
+    "Não é uma discrepância a resolver. São duas normas fazendo perguntas diferentes a categorias de produto diferentes, com pressupostos diferentes sobre como uma porta é usada naquele mercado e quanto tempo se espera que a ferragem fique em serviço antes de ser substituída.",
+    "POR QUE AS DUAS ESCALAS SE AFASTAM TANTO",
+    "O sistema de graus norte-americano foi construído em torno de vãos comerciais onde se espera que a fechadura sobreviva a vários inquilinos e onde o custo de substituição inclui a mão de obra de um chaveiro numa de embutir de Grau 1. O sistema europeu gradua o conjunto de maçaneta como guarnição sobre uma porta cuja caixa é um item classificado à parte, então a durabilidade exigida da maçaneta não é a exigida da fechadura.",
+    "A consequência prática: uma classificação europeia e um grau americano não são comparáveis nem quando as cifras de ciclos coincidem, porque foram contadas sobre conjuntos diferentes.",
+    "ONDE A NOSSA CIFRA FICA, DITA DAS DUAS MANEIRAS",
+    "A nossa cifra de 200.000 ciclos aparece em 132 modelos publicados. Lida contra a EN 1906 corresponde à categoria de durabilidade mais alta. Lida contra a ANSI/BHMA A156.2 corresponde ao requisito de ciclos do Grau 3.",
+    "Publicamos as duas leituras porque publicar uma seria escolher a metade lisonjeira. Um especificador que escreve conforme norma europeia e outro que escreve conforme norma americana têm ambos direito a situar o número corretamente, e apenas uma dessas duas leituras nos favorece.",
+    "O QUE A CONTAGEM DE CICLOS NÃO COBRE",
+    "A corrosão. Um ensaio de ciclos acontece em laboratório, não em ar salino. A resistência à corrosão é uma classificação à parte pela EN 1670 e uma parte diferente do conjunto ANSI/BHMA, e uma contagem alta sobre um acabamento que falha em dois invernos de costa é um produto que deixa de funcionar por uma razão que o ensaio de ciclos nunca olhou.",
+    "A segurança. O ensaio de ciclos mede desgaste em uso normal, não resistência a ataque. Isso é terreno da EN 1303 para cilindros e de um ensaio completamente diferente.",
+    "O fogo. Uma contagem de ciclos não diz nada sobre se o conjunto aguenta num forno. Isso é EN 1634-1, UL 10C ou NFPA 252, e é ensaiado sobre um conjunto de porta completo e não sobre a ferragem sozinha.",
+    "O QUE NÃO PUBLICAMOS",
+    "Contra que norma cada cifra de 200.000 foi ensaiada não está indicado nos 132 registros. Onde existe relatório de ensaio publicamos os seus dados — laboratório, número de referência, data de emissão e modelo coberto — e enviamos o documento pela via adequada.",
+    "Onde um registro traz a cifra sem norma nomeada, trate-a como cifra declarada pelo fabricante e não como classificação de terceiros, e pergunte antes de escrevê-la num dossiê. Essa distinção é a diferença entre um número que um especificador pode defender e um que não, e vale o e-mail."
+  ]
+}

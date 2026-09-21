@@ -90,3 +90,7 @@ __pycache__/
 
 # Blender 自动备份（上一次保存的副本），永远不该进版本库
 *.blend1
+
+# tesseract 语言模型：5MB 的二进制，OCR 时按需下载，不进仓库
+eng.traineddata
+*.traineddata
