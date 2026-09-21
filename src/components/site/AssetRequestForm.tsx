@@ -38,9 +38,17 @@ export function AssetRequestForm({
     const accessKey = process.env.NEXT_PUBLIC_W3F_KEY?.trim();
 
     if (!accessKey) {
+      // The visitor gets a route to the document; the developer gets the reason.
+      // Same fix as InquiryForm's, which was made on 2026-09-17 and did not reach here:
+      // a buyer asking for a drawing must never be shown the name of an env var.
+      console.warn(
+        "AssetRequestForm: NEXT_PUBLIC_W3F_KEY is not set, so the form cannot post to " +
+          "Web3Forms. Set it in the deployment and rebuild.",
+      );
       setStatus("error");
       setMessage(
-        "The request service is not configured yet. Add NEXT_PUBLIC_W3F_KEY before publishing this page.",
+        "We could not send this request from the website. Write to tec@cantonlock.com with " +
+          `the document you need — "${asset}" — and we will send it.`,
       );
       return;
     }

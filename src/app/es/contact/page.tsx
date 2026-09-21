@@ -28,6 +28,66 @@ export default function ContactoPage() {
             <p className="mt-24 text-c1 text-ink-secondary">
               Indique el tipo de puerta, acabado, norma aplicable, cantidad y mercado de destino.
             </p>
+
+            {/*
+              THE THREE MAILBOXES COME FIRST. Client instruction, 2026-09-20:
+              「联系页面英西葡，都可以有优先最先看到三个 cantonlock 邮件。比目录和地址都先。」
+
+              They used to sit third or fourth, under the catalogue and the address. Clarity
+              shows why that order cost money. A Spanish visitor on 2026-09-18 spent 17:56 on
+              /es/contact/, filled the form, submitted it at 14:23 — and then went on clicking
+              contact elements at 16:08 and 16:47, because the submit had failed silently and
+              the addresses were below the fold. Somebody who has decided to make contact should
+              not have to scroll past a PDF and a street to find out how.
+
+              The address is the largest text in each row and the subject line is the caption,
+              not the other way round. That inverts the previous treatment on purpose: the
+              buyer is scanning for something to copy, and the thing to copy is the address.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h2 text-ink">Escríbanos directamente</h2>
+              <p className="mt-8 text-c1 text-ink-secondary">
+                El correo es la vía más rápida para una cotización — la lee un ingeniero, no una
+                cola. Elija el buzón que corresponda a su consulta y llegará al escritorio
+                correcto a la primera.
+              </p>
+              <dl className="mt-24">
+                {[
+                  {
+                    email: siteSettings.contact.email,
+                    label: "Pedidos, precios y muestras",
+                  },
+                  {
+                    email: siteSettings.contact.technicalEmail,
+                    label: "Planos, especificación e informes de ensayo",
+                  },
+                  {
+                    email: siteSettings.contact.brandEmail,
+                    label: "OEM, marca propia y todo lo demás",
+                  },
+                ]
+                  /*
+                    A type predicate, not a bare truthiness filter. The rows are built
+                    from optional settings fields, and the compiler cannot see that this
+                    line removes the undefined ones — it used to not matter because a
+                    template literal swallows undefined, and it started mattering the
+                    moment the address became a typed prop. Saying what the filter
+                    guarantees is better than asserting it away at the call site.
+                  */
+                  .filter((row): row is { label: string; email: string } => Boolean(row.email))
+                  .map((row) => (
+                    <div
+                      key={row.email}
+                      className="border-b border-line py-16"
+                    >
+                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
+                      <dd className="mt-4">
+                        <EmailLink address={row.email} className="short-marker short-marker-compact text-h3 text-brand hover:text-brand-hover" />
+                      </dd>
+                    </div>
+                  ))}
+              </dl>
+            </div>
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Catálogo actual</h2>
               <a
@@ -70,50 +130,6 @@ export default function ContactoPage() {
               ) : null}
             </div>
 
-            {/* Los buzones, separados por asunto — ver la nota en la página inglesa. */}
-            <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Escríbanos directamente</h2>
-              <p className="mt-8 text-c2 text-ink-secondary">
-                Atendidos desde Zhongshan y Alemania. Elija el que corresponda a su
-                consulta y llegará al escritorio correcto a la primera.
-              </p>
-              <dl className="mt-24">
-                {[
-                  {
-                    email: siteSettings.contact.email,
-                    label: "Pedidos, precios y muestras",
-                  },
-                  {
-                    email: siteSettings.contact.technicalEmail,
-                    label: "Planos, especificación e informes de ensayo",
-                  },
-                  {
-                    email: siteSettings.contact.brandEmail,
-                    label: "OEM, marca propia y todo lo demás",
-                  },
-                ]
-                  /*
-                    A type predicate, not a bare truthiness filter. The rows are built
-                    from optional settings fields, and the compiler cannot see that this
-                    line removes the undefined ones — it used to not matter because a
-                    template literal swallows undefined, and it started mattering the
-                    moment the address became a typed prop. Saying what the filter
-                    guarantees is better than asserting it away at the call site.
-                  */
-                  .filter((row): row is { label: string; email: string } => Boolean(row.email))
-                  .map((row) => (
-                    <div
-                      key={row.email}
-                      className="flex flex-wrap items-baseline justify-between gap-x-24 gap-y-4 border-b border-line py-12"
-                    >
-                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
-                      <dd>
-                        <EmailLink address={row.email} className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover" />
-                      </dd>
-                    </div>
-                  ))}
-              </dl>
-            </div>
 
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Contactos de representación</h2>

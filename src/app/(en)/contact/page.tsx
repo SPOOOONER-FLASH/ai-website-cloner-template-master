@@ -31,6 +31,66 @@ export default function ContactPage() {
             </p>
 
             {/*
+              THE THREE MAILBOXES COME FIRST. Client instruction, 2026-09-20:
+              「联系页面英西葡，都可以有优先最先看到三个 cantonlock 邮件。比目录和地址都先。」
+
+              They used to sit third or fourth, under the catalogue and the address. Clarity
+              shows why that order cost money. A Spanish visitor on 2026-09-18 spent 17:56 on
+              /es/contact/, filled the form, submitted it at 14:23 — and then went on clicking
+              contact elements at 16:08 and 16:47, because the submit had failed silently and
+              the addresses were below the fold. Somebody who has decided to make contact should
+              not have to scroll past a PDF and a street to find out how.
+
+              The address is the largest text in each row and the subject line is the caption,
+              not the other way round. That inverts the previous treatment on purpose: the
+              buyer is scanning for something to copy, and the thing to copy is the address.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h2 text-ink">Email us directly</h2>
+              <p className="mt-8 text-c1 text-ink-secondary">
+                Email is the fastest route to a quotation — an engineer reads it, not a queue.
+                Pick the mailbox that matches your question and it reaches the right desk
+                first time.
+              </p>
+              <dl className="mt-24">
+                {[
+                  {
+                    email: siteSettings.contact.email,
+                    label: "Orders, pricing and samples",
+                  },
+                  {
+                    email: siteSettings.contact.technicalEmail,
+                    label: "Drawings, specification and test reports",
+                  },
+                  {
+                    email: siteSettings.contact.brandEmail,
+                    label: "OEM, private label and everything else",
+                  },
+                ]
+                  /*
+                    A type predicate, not a bare truthiness filter. The rows are built
+                    from optional settings fields, and the compiler cannot see that this
+                    line removes the undefined ones — it used to not matter because a
+                    template literal swallows undefined, and it started mattering the
+                    moment the address became a typed prop. Saying what the filter
+                    guarantees is better than asserting it away at the call site.
+                  */
+                  .filter((row): row is { label: string; email: string } => Boolean(row.email))
+                  .map((row) => (
+                    <div
+                      key={row.email}
+                      className="border-b border-line py-16"
+                    >
+                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
+                      <dd className="mt-4">
+                        <EmailLink address={row.email} className="short-marker short-marker-compact text-h3 text-brand hover:text-brand-hover" />
+                      </dd>
+                    </div>
+                  ))}
+              </dl>
+            </div>
+
+            {/*
               The manufacturing address, on the page people reach when they need it.
 
               A customer building a quotation on 2026-09-01 could not find an address
@@ -75,57 +135,6 @@ export default function ContactPage() {
               ) : null}
             </div>
 
-            {/*
-              THE MAILBOXES, SPLIT BY WHAT YOU ARE WRITING ABOUT — not by seniority.
-
-              One address for everything means every technical drawing request queues
-              behind every price enquiry, and the buyer who needs a DXF waits on somebody
-              reading order confirmations. Naming the function is also the fastest way to
-              tell a specifier they are in the right place.
-            */}
-            <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Email us directly</h2>
-              <p className="mt-8 text-c2 text-ink-secondary">
-                Written to by market from Zhongshan and Germany. Pick the one that matches
-                what you need — it reaches the right desk first time.
-              </p>
-              <dl className="mt-24">
-                {[
-                  {
-                    email: siteSettings.contact.email,
-                    label: "Orders, pricing and samples",
-                  },
-                  {
-                    email: siteSettings.contact.technicalEmail,
-                    label: "Drawings, specification and test reports",
-                  },
-                  {
-                    email: siteSettings.contact.brandEmail,
-                    label: "OEM, private label and everything else",
-                  },
-                ]
-                  /*
-                    A type predicate, not a bare truthiness filter. The rows are built
-                    from optional settings fields, and the compiler cannot see that this
-                    line removes the undefined ones — it used to not matter because a
-                    template literal swallows undefined, and it started mattering the
-                    moment the address became a typed prop. Saying what the filter
-                    guarantees is better than asserting it away at the call site.
-                  */
-                  .filter((row): row is { label: string; email: string } => Boolean(row.email))
-                  .map((row) => (
-                    <div
-                      key={row.email}
-                      className="flex flex-wrap items-baseline justify-between gap-x-24 gap-y-4 border-b border-line py-12"
-                    >
-                      <dt className="text-c2 text-ink-secondary">{row.label}</dt>
-                      <dd>
-                        <EmailLink address={row.email} className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover" />
-                      </dd>
-                    </div>
-                  ))}
-              </dl>
-            </div>
 
             {/*
               Overseas representatives.
@@ -196,9 +205,18 @@ export default function ContactPage() {
             </Suspense>
           </div>
 
+          {/*
+            WHAT A VISITOR NEEDS TO KNOW, NOT WHAT A DEPLOYMENT NEEDS.
+
+            This paragraph used to read "Submission is enabled when the deployment contains a
+            valid NEXT_PUBLIC_W3F_KEY". The 2026-09-17 work took that sentence out of the
+            form's failure branch, on the grounds that a site selling precision answered a
+            buyer's enquiry with a deployment memo. The standing paragraph survived that pass.
+          */}
           <p className="col-span-full border-t border-line pt-16 text-c2 text-ink-secondary">
-            This static website sends inquiries through Web3Forms. Submission is enabled when the
-            deployment contains a valid NEXT_PUBLIC_W3F_KEY.
+            The form reaches the same export desks as the addresses above. If it cannot send,
+            the page keeps everything you typed and offers it as a ready-addressed email — your
+            enquiry is not lost either way.
           </p>
         </section>
       </div>
