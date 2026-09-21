@@ -1,0 +1,205 @@
+{
+  "note": "Batch 2. Clarity > AI Visibility > Topic insights > User prompts. Max 500 characters each. Validate with: node scripts/check-clarity-prompts.mjs",
+  "source": "Written 2026-09-21 after batch 1 came back. 'International standards comparison' took Rank #1 with 78.85% share of authority, 41 citations and 60% cited-across-prompts, placing cantonlock.com above assaabloy.com (5.50%). 'Architectural hardware sourcing' took Rank #4 with 13.33% cited-across-prompts. The difference is the question type: the first asks technical decision questions our 35 articles answer line by line; the second asks procurement questions that large distributors already own. All seven topics below follow the shape of the first.",
+  "method": "Every topic maps onto published articles, named in `backedBy`. No prompt assumes a certification we do not hold: the ANSI/UL framing is always comparison, never claim, until 307 and 311 have certificate numbers.",
+  "topics": [
+    {
+      "title": "Euro cylinder and keying systems",
+      "backedBy": [
+        "euro-cylinder-length-and-split",
+        "euro-cylinder-range-45-to-90",
+        "fitting-a-euro-cylinder",
+        "master-key-systems-how-many-levels-you-need",
+        "rim-night-latch-564-and-1073",
+        "deadbolt-d101-d102-and-the-rim-alternative"
+      ],
+      "why": "fitting-a-euro-cylinder reached the citation top three within seven days of publication, and 'standard euro cylinder installation manual' is the single highest-citation grounding query we have. This topic is the one with proven demand.",
+      "prompts": [
+        "What euro cylinder length do I need, and how do I measure an existing door to find out? I have doors of several thicknesses in one building and I want to order once rather than discover on site that cylinders protrude or sit short. How is the overall length divided between the inside and the outside of the door, and what does getting that split wrong cost me in security and in appearance?",
+        "What does a euro cylinder size like 35/45 actually mean, and which number is the outside? I keep seeing pairs of figures in supplier catalogues with no explanation of which side is which. If I order the two halves the wrong way round, what happens on the door — does it still work, or does the key fail to turn, or does the cylinder stand proud on the wrong face?",
+        "How much should a euro cylinder protrude from the escutcheon, and why does it matter? I have been told that a cylinder standing proud is a security problem, but not how much is too much. What is the accepted allowance, what attack does the excess enable, and what is the correct remedy: a shorter cylinder, a different escutcheon, or a security rose?",
+        "How do I fit a euro profile cylinder into an existing mortise lock? I want to understand the sequence before I start: how the cam is positioned, how the fixing screw engages the body, and what the standard profile guarantees about interchangeability. Is a euro cylinder from one manufacturer genuinely a drop-in replacement for another, or are there dimensions that vary between brands?",
+        "What range of euro cylinder lengths is normally available from a factory, and in what increments? I am specifying for a mixed project and I need to know whether the sizes I want are standard stock or a special run, because that changes both the lead time and the minimum order. Where does the standard range start and stop, and what happens outside it?",
+        "How many levels should a master key system have, and how do I decide? I am planning keying for a building with departments, floors and a facilities team, and I do not want to discover later that the hierarchy cannot express what the client actually needs. What determines the number of levels, and what is the practical cost of adding one more?",
+        "How many change keys can a grand master key system realistically support? I need to know the ceiling before I design the hierarchy rather than after. What limits it — the cylinder platform, the number of pin positions, the keyway — and how much headroom should I leave for future keys that do not exist yet?",
+        "How many future master and change keys should I plan for when designing a keying system? Buildings gain rooms and departments split. If I size the system exactly to today's doors, what breaks in three years, and what is the conventional allowance that avoids having to rekey the whole building later?",
+        "What is the difference between a rim night latch and a mortise deadlock, and when is each the right choice? I am securing a timber entrance door and I am not clear whether I need one, the other, or both. What does each one actually resist, how are they fitted, and does fitting both create a problem with escape from the inside?",
+        "What is the difference between a deadbolt and a rim lock for a door that needs a second point of security? I want to understand the trade-off between the security each provides, the door preparation each requires, and whether either can be retrofitted to a door that is already hung and machined.",
+        "Can I rekey a euro cylinder myself, or does it have to be replaced? I have a building where keys have gone missing and I want to understand the realistic options: rekeying the existing cylinders, replacing the cylinders while keeping the locks, or replacing whole locksets. What determines which is possible, and what does each cost in downtime?",
+        "What is a keyed-alike system and when should I use it instead of a master key system? I have a small site with a handful of doors and I am not sure a full hierarchy is justified. Where is the line between the two, and what do I give up by choosing the simpler option?",
+        "What thumbturn and half cylinder options exist for a euro profile, and when is each correct? I have doors where a key on the inside is the wrong answer for escape, and doors where a cylinder is only needed on one face. How do I express these on a hardware schedule so the factory ships what I meant?",
+        "What information does a factory need before it can quote a keyed cylinder order? I want to send a complete enquiry rather than trade emails for a week. Which values actually determine the price and the lead time: length, split, finish, keying, quantity, key blank, master key hierarchy?",
+        "Are euro cylinders interchangeable between European lock cases from different manufacturers? The profile is standardised, but I want to know what else has to match before I can specify one brand's cylinder in another brand's lock case — cam position, fixing screw, overall length, and anything else that catches people out."
+      ]
+    },
+    {
+      "title": "Door handing and installation fit",
+      "backedBy": [
+        "handing-left-right-and-universal",
+        "mortise-lock-backset-and-centre-distance-guide",
+        "narrow-stile-aluminium-door-lock-sag",
+        "what-a-frameless-glass-door-needs",
+        "door-coordinator-double-fire-door",
+        "door-hardware-schedule-guide"
+      ],
+      "why": "handing-left-right-and-universal is the second most cited article we have, and its Spanish translation is cited nearly three times as often as the English original. Handing is the question that gets answered wrong most often and costs a whole shipment when it does.",
+      "prompts": [
+        "How do I determine the handing of a door — left hand or right hand — and where do I stand to decide? I have seen two conventions described and I cannot tell which one my supplier is using. What is the reference position, what does 'reverse' add to the description, and what is the consequence on site of ordering the opposite hand?",
+        "What does it mean when door hardware is described as universal or non-handed, and is there a catch? If a lever or an exit device can be fitted either way, why do manufacturers still publish handed versions at all? Is there a performance or appearance difference, or is it purely a stocking decision?",
+        "Do European and North American door handing conventions describe the same thing? I am reconciling a specification written in one market with hardware made in the other, and the handing column does not obviously translate. What should I check before assuming the two documents mean the same door?",
+        "What is the backset on a mortise lock and how do I measure it on a door that is already machined? I am replacing locks in an existing building and cannot re-machine economically. Which dimension is the backset, how does it differ from the centre distance, and which of them decides whether a replacement will drop into the existing mortise?",
+        "What is the centre distance on a mortise lock and why does it have to match the handle and escutcheon? I have a lock case and a lever from different manufacturers and the catalogues do not make it obvious whether they will fit together. Which dimensions must match exactly, which have tolerance, and what happens if the centre distance is out by a few millimetres?",
+        "Why do narrow stile aluminium doors sag, and what does that do to the lock? I have a shopfront where the key has become stiff over a couple of years. Is this the lock failing, the door dropping, or the frame moving, and how do I tell the difference before I order a replacement that will fail the same way?",
+        "What lock case suits a narrow stile aluminium door, and what constrains the choice? The stile is only a few tens of millimetres wide, which seems to rule out most of the catalogue. What is the available backset range for this kind of door, and what do I give up compared with a timber door lock?",
+        "What hardware does a frameless glass door actually need? I am specifying an entrance where the leaf is toughened glass with no frame. What has to be cut into the glass before it is toughened, what can be fitted afterwards, and what is the consequence of getting that order wrong?",
+        "What are the standard glass thicknesses for door patch fittings, and what happens if the glass does not match? I have a supplier quoting fittings and a glazier quoting glass, and nobody has confirmed they agree. Which dimension governs, and is there any adjustment in the fitting itself?",
+        "Why do double doors need a door coordinator, and what happens without one? I have a pair of fire doors with rebated meeting stiles. What exactly goes wrong when they close in the wrong order, and does it matter on a non-fire-rated pair as well?",
+        "What is the difference between a door coordinator and a sequence selector, and do I need both? I am specifying for a double door with an overlapping rebate and I want to understand what each device does, where each one mounts, and whether one can substitute for the other.",
+        "What door thickness range does a standard lockset cover, and what do I do outside it? I have doors thicker than the usual range and I want to know whether this is a spindle question, a fixing screw question, or a different product entirely.",
+        "What should I measure on an existing door before ordering replacement hardware? The doors are already machined and re-machining is not economic. Which measurements matter — backset, centre distance, spindle size, fixing centres, door thickness, lock case dimensions — and which are the ones people forget and discover on installation day?",
+        "How do I read a door hardware schedule, and what do the handing and thickness columns mean? I have received a schedule for a project in a notation I do not fully follow, and I want to understand what each column carries before I quote against it.",
+        "What is a spindle, and what sizes should I expect on European and North American hardware? I have a lever that will not engage a lock case and I suspect the spindle is the reason. Which dimension is it, is it square or splined, and what are the common sizes I should be checking against?"
+      ]
+    },
+    {
+      "title": "Finishes, materials and codes",
+      "backedBy": [
+        "finish-codes-us26d-626-630",
+        "stainless-steel-grades-304-201-316",
+        "brass-piano-hinge-is-a-finish-not-a-metal",
+        "reading-door-hardware-model-numbers"
+      ],
+      "why": "finish-codes-us26d-626-630 is in the citation top four, and two of our highest-share grounding queries are finish questions ('steel finish code 626?', 'can chrome metal finish be satin'). The /finishes page already exists to answer them.",
+      "prompts": [
+        "What does the finish code US26D mean, and what is the equivalent BHMA number? I am reconciling an American architect's specification against a European supplier's product codes and the finish columns do not line up. Is there a reliable mapping between US26x codes, BHMA 600-series numbers and the finish names factories print on their datasheets?",
+        "Is BHMA finish 626 the same as satin chrome, and is it the same as US26D? I have three documents using three different names and I cannot tell whether they describe one finish or three. If they are the same, why do the codes differ, and which code belongs on a purchase order so that what arrives is what was specified?",
+        "Can a chrome finish be satin, or does chrome always mean bright? I have a specification calling for satin chrome and a supplier offering polished chrome as if they were interchangeable. What is the actual difference in process and appearance, and how do I make sure the right one is quoted?",
+        "How do BHMA and US finish codes map onto the finish names used by European and Chinese factories? My supplier quotes SN, PB, CP and AB; my client's specification quotes 626, 605 and 630. I need a reconciliation I can defend, and I need to know which pairs are genuinely equivalent and which are only approximate.",
+        "What is the difference between stainless steel grades 304, 201 and 316 in door hardware, and where does each belong? I keep seeing all three offered at very different prices and I want to understand what I am actually buying: corrosion behaviour, magnetic response, cost, and which environments make the cheaper grade a false economy.",
+        "How can I tell whether a stainless steel handle is 304 or 201 without a laboratory? I have two samples that look identical and a price gap that suggests they are not. What field checks exist, what do they actually prove, and what should I ask the supplier to provide as evidence?",
+        "Is 316 stainless steel necessary for coastal or poolside door hardware, or is 304 enough? I am specifying for a building near salt water and I want to understand where the real threshold is, what failure looks like when the grade is wrong, and how long it typically takes to appear.",
+        "Does 'brass' on a hinge describe the metal or the finish? I have hinges quoted as brass at a price that seems too low for solid brass. What is the difference between solid brass, brass plated and brass finished, and how do I write a specification that does not leave the question open?",
+        "What is the difference between a plated finish and a PVD finish on door hardware? I want to understand durability, appearance and cost, and which environments justify the more expensive process. How long should each be expected to last on a high-traffic entrance?",
+        "What does the suffix on a door hardware model number tell me about the finish? I am looking at a list where the same base number appears with several endings and the supplier says they differ by finish and function. Which part of the code is which, and is the convention consistent across the industry?",
+        "Why do NB and BN, or PB and BP, appear as different finish codes in the same catalogue? The letters are reversed and I cannot tell whether they describe the same finish written two ways or two genuinely different finishes. What is the safest way to resolve this before ordering?",
+        "What does ORB mean as a finish code, and does it mean the same thing everywhere? I have seen it used for a dark bronze in one market and something different in another. What should I confirm with the factory before putting the code on an order?",
+        "What does a finish code that mentions satin tell me about the underlying metal? I have a code specifying a satin surface with no indication of what it is satin on. Is that a gap in the code system itself, and what is the right question to ask the supplier?",
+        "How should a factory describe a finish so that a buyer in another market orders the right one? I want to understand what a complete finish description contains — code, name, process, base metal — and which of those are commonly left out in a way that causes wrong shipments.",
+        "How do I read a door hardware model number and work out the product, the finish and the function? The quotation lists codes with no descriptions. I need to know which part of the code identifies the family, which the finish and which the function, so I can compare two suppliers line by line."
+      ]
+    },
+    {
+      "title": "Exit device selection and escape hardware",
+      "backedBy": [
+        "push-bar-or-touch-bar-panic-exit-devices",
+        "trim-handle-or-panic-bar",
+        "exit-device-push-bar-length",
+        "ul-305-is-a-listing-not-a-grade",
+        "ansi-grade-1-vs-en-1125-exit-devices",
+        "en-1125-or-ansi-which-standard-your-project-needs"
+      ],
+      "why": "push-bar-or-touch-bar-panic-exit-devices is our single most cited page, and three separate grounding queries about push bar versus touch bar already sit in the top six. This is the product family the factory actually leads on.",
+      "prompts": [
+        "Push bar or touch bar for a panic exit device — what is the mechanical difference and when does each one win? I am choosing hardware for a school and I want to understand whether the choice affects the force required to open, the durability of the mechanism, or the standard it can be certified to. Which suits doors that will be struck by trolleys?",
+        "What are the mechanical advantages of a box-style exit device over a touch bar? I have both quoted for the same opening at a noticeable price difference and I want to understand what the money buys: the mechanism, the housing, the maintenance interval, or the resistance to abuse.",
+        "What is the difference between a panic exit device and an emergency exit device? I have seen the terms used interchangeably in supplier catalogues and I suspect the standards do not treat them as the same thing. Which one assumes an untrained occupant, and how does that change what I must specify?",
+        "How long should the push bar on an exit device be relative to the door width? I am specifying for doors of several widths and I want to know the rule rather than guess. What proportion of the leaf must the bar cover, where does that requirement come from, and what happens at inspection if it is short?",
+        "Do I need a trim handle on the outside of a door with a panic exit device? I am not clear whether the outside lever is a convenience, a security element, or a requirement. What determines whether the door can be opened from outside at all, and what are the usual function options?",
+        "What does UL 305 actually certify, and is it a grade? I have seen it quoted alongside ANSI grades as if they were the same kind of statement. What does the listing cover, what does it not cover, and what should I ask a supplier to produce as evidence of it?",
+        "What is the difference between an ANSI A156.3 Grade 1 exit device and an EN 1125 panic exit device? I am comparing a North American quotation against a European one and the price gap is large. Do the two certificates describe comparable durability, or are they two different test regimes covering the same product category?",
+        "EN 1125 or ANSI A156.3 — which standard should govern my project? The drawings say one and the owner's standards manual says the other. What does each one measure, does certification to one tell me anything about the other, and which takes precedence when a country recognises both?",
+        "What is the difference between EN 1125 and EN 179, and which applies to a given door? I have public assembly exits and staff-only corridors in one building and the schedule specifies push bars throughout. Is that correct, or am I over-specifying some openings and under-specifying others?",
+        "What is a two-point or multi-point exit device, and when is one required? I have tall doors and a client asking about a device that latches at the head and the threshold. What problem does that solve, what does it add in cost and maintenance, and when is a single point genuinely sufficient?",
+        "What should I specify for a panic exit device on a double door? I have a pair of leaves and I am not clear how the two devices interact, whether one leaf must be the active one, and what hardware manages the order in which they close.",
+        "What exit device suits a fire-rated escape door, and what changes compared with a standard escape door? I want to understand which components must be rated, what the latching requirement is, and what is not permitted — hold-open devices in particular.",
+        "How do I choose between a surface mounted and a mortise exit device? I want to understand the trade-off in door preparation, appearance, security and serviceability, and which of them can be retrofitted to doors that are already hung.",
+        "What alarm options exist on panic exit devices and when are they appropriate? I have doors that must remain available for escape but are being used as shortcuts. What does an alarmed device actually do, and does adding one compromise the escape function or the certification?",
+        "What outside trim options exist for an exit device, and what do the function codes mean? I have a quotation listing several trim variants by code with no explanation. Which codes describe a lever that always retracts the latch, which describe a keyed function, and which describe a fixed pull?"
+      ]
+    },
+    {
+      "title": "Lock function selection for a building",
+      "backedBy": [
+        "choosing-a-cylindrical-lock-entrance-privacy-passage",
+        "occupied-vacant-washroom-indicator-bolt",
+        "door-stop-holder-or-flush-bolt",
+        "deadbolt-d101-d102-and-the-rim-alternative",
+        "door-hardware-schedule-guide"
+      ],
+      "why": "Function selection is the question a specifier asks before a model number exists, and our articles answer it by function rather than by product. Nothing in the citation data suggests anyone else answers it in this framing.",
+      "prompts": [
+        "What is the difference between entrance, privacy and passage functions on a cylindrical lock, and which door gets which? I am writing a schedule for a small building and I want to assign functions by room rather than guess from product names. What does each function do when locked, and which of them can be opened from outside in an emergency?",
+        "What lock function belongs on an office door, a store room and a washroom? I want to understand the reasoning rather than copy a list, because the building has rooms that do not fit the usual categories. What question should I ask about each door to arrive at the right function?",
+        "What is a classroom function lock and how does it differ from a store room function? Both descriptions mention the outside lever being controlled, and I cannot tell from the catalogue which one leaves the lever rigid and which one releases it with a key.",
+        "What does a privacy function actually provide, and is it security? I am specifying for washrooms and bedrooms and I want to know whether a privacy set resists anything, what the emergency release is, and what I should tell a client who expects it to be a lock.",
+        "What is an occupied and vacant indicator bolt, and when should a washroom have one instead of a privacy lock? I want to understand what each one tells the person outside, how the emergency release works, and which is appropriate for a public washroom versus a domestic one.",
+        "What is the difference between a door stop, a door holder and a flush bolt? I keep seeing all three on schedules and I am not certain they solve different problems. Which one keeps a door open, which one protects the wall, and which one holds a leaf shut?",
+        "When does a double door need flush bolts, and where should they go? I have a pair of leaves where only one is used day to day. What holds the inactive leaf, what are the options at head and threshold, and what changes if the pair is fire rated?",
+        "What is a deadbolt for, and when is it needed in addition to a latch? I want to understand what a deadbolt resists that a latch does not, what throw length matters, and whether adding one creates a problem for escape from the inside.",
+        "What is the difference between a single cylinder and a double cylinder deadbolt, and is either a problem for escape? I have heard that a key on the inside can be dangerous in a fire. What determines which is permitted, and what alternatives exist where the inside must not need a key?",
+        "What lock function suits a door that must be free to exit but controlled to enter? I want to understand how this is expressed in hardware terms, what the usual function codes are, and what I should check so the door is not accidentally specified as locked in both directions.",
+        "What hardware does a washroom accessible cubicle need that a standard cubicle does not? I want to understand the difference in operation, the emergency release, and what a specification must say so the right product is quoted.",
+        "How do I express a lock function on a hardware schedule so a factory in another country ships what I meant? Function names appear to vary between markets. What is the safest way to describe a function — by name, by code, by behaviour — and what should I attach to remove all doubt?",
+        "What is the difference between a cylindrical lock, a tubular lock and a mortise lock, and when does each belong? I want to understand the trade-off in door preparation, strength, serviceability and cost, and which of them can be retrofitted into an existing door.",
+        "What should a schedule say about a door that needs both a latch and a deadbolt? I am not clear whether this is one product or two, whether they should share a cylinder, and how the two are operated by one lever without confusing the user.",
+        "How do I decide the lock function for a door I have never seen, working only from a floor plan? I want a method: which properties of the room, the traffic and the escape route determine the answer, and which questions I must ask before committing."
+      ]
+    },
+    {
+      "title": "OEM, private label and tooling",
+      "backedBy": [
+        "what-oem-actually-changes",
+        "what-it-takes-to-tool-a-new-exit-device",
+        "cross-referencing-a-lock-you-already-buy",
+        "six-values-an-order-needs",
+        "why-the-catalogue-is-this-wide"
+      ],
+      "why": "Clarity's 'Manufacturing process realism' entry already names what-it-takes-to-tool-a-new-exit-device as a page cited for quantified tooling timelines. That is a question distributors cannot answer, because they do not own moulds. It is the one sourcing subject where a factory outranks a reseller.",
+      "prompts": [
+        "What does OEM actually change when a factory makes door hardware under my brand? I want to know what is genuinely customisable — packaging, logo, finish, dimensions, mechanism — and what would require new tooling and therefore a much larger order and a longer lead time. Where is the line between a private label and a different product?",
+        "How long does it take to tool a new panic exit device, and what are the stages? I am considering asking a factory for a variant that is not in their catalogue and I want to know realistically whether this is a three-month conversation or a twelve-month one. Which stage usually dominates the schedule?",
+        "What does it cost to tool a new door hardware component, and what drives the figure? I am not asking for a price, I am asking what the cost is made of: the mould, the sampling, the testing, the certification. Which of those are one-time and which recur with each variant?",
+        "What is the minimum order that makes a custom door hardware run worthwhile? I do not want to commit to a container of a product I have not sold. Does the minimum change by product type, by finish, or by whether tooling already exists?",
+        "How do I cross-reference a door lock I already buy to an equivalent from another supplier? I have a model number from my current source and I need a second source for the same opening. Which dimensions must match for the replacement to fit the existing door preparation, and which differences are cosmetic?",
+        "What information does a factory need before it can quote a real price rather than a placeholder? I keep losing a week to clarification emails. What are the values that actually determine price and lead time, and which are the ones buyers most often leave out of a first enquiry?",
+        "Can a factory make a lever handle to my own drawing, and what has to be true for that to be practical? I have a design and I want to understand what the factory needs from me — dimensions, tolerances, material, finish, quantity — and what will make them say it is not economic.",
+        "What is the difference between buying a catalogue product with my logo on it and commissioning a genuinely new product? I want to understand what changes in cost, lead time, minimum order and risk between those two, so I can decide which I am actually asking for.",
+        "Can a factory match an existing product I already sell so my customers see no change? I am switching suppliers and I need the replacement to be interchangeable on doors that are already installed. What has to match exactly, and what should I send the factory to make that possible?",
+        "What certification obligations come with private labelling door hardware? If my brand is on the product, what am I responsible for, what does the factory remain responsible for, and what documentation should I hold before the first container ships?",
+        "How wide should a door hardware catalogue be, and what does a very wide one tell me about the factory? I am evaluating suppliers and one offers far more models than the others. Is that a sign of capability, or of a catalogue assembled from other people's products?",
+        "How do I tell whether a supplier actually manufactures the products in their catalogue? I want to understand what evidence distinguishes a factory from a trading company: tooling, drawings, test reports, photographs, factory audits. What can be verified remotely and what cannot?",
+        "What changes when I want a different finish on a catalogue product — is that a stock question or a production question? I want to know whether finish variants are made to order, whether they carry their own minimums, and how much they add to the lead time.",
+        "What should I expect a factory to provide as a sample before a first order, and what does a sample actually prove? I want to understand the difference between a catalogue sample, a pre-production sample and a production sample, and which one is worth waiting for.",
+        "How do I compare quotations from two factories when the model numbers do not correspond? I have two offers for what should be the same product and no common reference. What should I normalise on — dimensions, material, finish, certification — to make the comparison honest?"
+      ]
+    },
+    {
+      "title": "Documentation, test evidence and submittals",
+      "backedBy": [
+        "what-documents-you-can-actually-get",
+        "what-a-test-report-actually-covers",
+        "ul-305-is-a-listing-not-a-grade",
+        "door-hardware-schedule-guide",
+        "six-values-an-order-needs"
+      ],
+      "why": "Clarity's 'Certification and test validation' gap is currently held by ul.com and distributors. We cannot claim listings we do not hold, but we can answer what a document proves — which is the question, and which is a question the certifying bodies themselves do not answer.",
+      "prompts": [
+        "What documents can a door hardware factory actually provide to support a specification? I am assembling a submittal package and I need to know what is reasonable to ask for: dimensioned drawings, test reports, material certificates, installation instructions, finish samples. Which does a competent factory hold on file, and which mean commissioning a new test?",
+        "What does a door hardware test report actually cover, and what does it not? I have been sent a report and I am trying to establish whether it certifies the product I am buying or a related one. What should I check — the sample, the date, the laboratory, the standard, the exact configuration — and how can a genuine report still fail to support the claim made with it?",
+        "What is the difference between a test report, a certificate and a listing? The three words are used interchangeably in the quotations I receive and I suspect they carry very different weight. Which one is a one-off measurement, which is an ongoing obligation, and which can be withdrawn?",
+        "What does UL 305 certify, and why is it a listing rather than a grade? I have seen it quoted next to ANSI grades as though they were the same kind of statement. What does the listing actually cover, what does it require of the manufacturer over time, and what should I ask to see?",
+        "How do I verify that a certificate a supplier sent me is genuine and current? I have a scanned document with a number on it. What can I check independently, which bodies publish searchable registers, and what should make me suspicious?",
+        "What does CE marking on door hardware certify, and who issues it? I am not clear whether CE is an independent test, a self-declaration, or a conformity route that depends on a harmonised standard underneath it. What should I ask the factory to send so I can verify the claim rather than trust a logo?",
+        "What should a declaration of performance for door hardware contain? I have been sent a document by that name and I want to know what a complete one includes, which fields carry the actual performance, and what an incomplete one is hiding.",
+        "What documentation does a fire door assembly need, and how much of it comes from the hardware manufacturer? I am trying to establish where the hardware supplier's responsibility ends and the door manufacturer's begins, because the two keep pointing at each other.",
+        "How do I put together a hardware submittal package that will be approved first time? I want to know what reviewers actually look for, which documents are commonly missing, and what causes a package to come back with comments.",
+        "What is a door hardware schedule and how do I read one? I have received a schedule that lists openings against hardware sets in a notation I do not fully follow. What does each column carry, how are handing and door thickness expressed, and what are the most common misreadings that reach site?",
+        "What should I ask a supplier for when a specification calls for a standard the supplier does not hold? I want to know the honest options — retest, substitute, seek approval for an equivalent — and how to evaluate whether an equivalent claim is credible.",
+        "What material certificate should come with stainless steel door hardware, and what does it prove? I want to understand whether a mill certificate covers the batch I received, what it states about grade and composition, and what it does not tell me about the finished product.",
+        "What drawings should a factory be able to supply for a product in their catalogue? I need dimensioned drawings for a submittal and I want to know what format to expect, what level of dimensioning is normal, and what it means if a supplier cannot produce one.",
+        "Why do some product datasheets give a full dimension table and others give a photograph and a model number? I am evaluating suppliers and I want to know what that difference tells me about the factory, and which specific dimensions should be published before I would consider a datasheet complete enough to order from.",
+        "What should a purchase order for door hardware contain so that nothing is left to interpretation? I want a checklist of the values that actually determine what gets made and shipped, and the ones that are most often omitted and cause the wrong goods to arrive."
+      ]
+    }
+  ]
+}
