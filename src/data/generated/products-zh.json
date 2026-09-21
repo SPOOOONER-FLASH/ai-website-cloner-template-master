@@ -7435,6 +7435,173 @@
       }
     },
     {
+      "slug": "306-d-panic-exit-device",
+      "model": "306-D",
+      "name": "双开门逃生推杠",
+      "nameEn": "Double Door Panic Exit Device",
+      "series": "300 系列",
+      "categoryPath": [
+        "panic-exit-devices"
+      ],
+      "categoryNames": [
+        "逃生推杠"
+      ],
+      "summary": "双开门逃生推杠。",
+      "specs": [
+        {
+          "label": "门扇数",
+          "value": "双开门"
+        }
+      ],
+      "material": "",
+      "finishes": [],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [
+        "306-S",
+        "306 PS"
+      ],
+      "sites": [
+        "hyde"
+      ],
+      "styleFamily": "",
+      "seoTitle": "306-D 双开门逃生推杠",
+      "seoDescription": "双开门逃生推杠。",
+      "en": {
+        "name": "Double Door Panic Exit Device",
+        "series": "300 Series",
+        "categoryNames": [
+          "Panic Exit Devices"
+        ],
+        "summary": "Double Door Panic Exit Device.",
+        "specs": [
+          {
+            "label": "Door leaves",
+            "value": "Double door"
+          }
+        ],
+        "material": "",
+        "finishes": [],
+        "doorTypes": [],
+        "seoTitle": "306-D Double Door Panic Exit Device",
+        "seoDescription": "Double Door Panic Exit Device."
+      }
+    },
+    {
+      "slug": "306-ps-panic-exit-device",
+      "model": "306 PS",
+      "name": "通道推杠",
+      "nameEn": "Passage Push Bar",
+      "series": "300 系列",
+      "categoryPath": [
+        "panic-exit-devices"
+      ],
+      "categoryNames": [
+        "逃生推杠"
+      ],
+      "summary": "通道推杠。",
+      "specs": [
+        {
+          "label": "功能",
+          "value": "Passage — no latch bolt"
+        },
+        {
+          "label": "配用",
+          "value": "A separate lock case, supplied to suit"
+        }
+      ],
+      "material": "",
+      "finishes": [],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [
+        "306-S",
+        "306-D"
+      ],
+      "sites": [
+        "hyde"
+      ],
+      "styleFamily": "",
+      "seoTitle": "306 PS 通道推杠",
+      "seoDescription": "通道推杠。",
+      "en": {
+        "name": "Passage Push Bar",
+        "series": "300 Series",
+        "categoryNames": [
+          "Panic Exit Devices"
+        ],
+        "summary": "Passage Push Bar.",
+        "specs": [
+          {
+            "label": "Function",
+            "value": "Passage — no latch bolt"
+          },
+          {
+            "label": "Fitted with",
+            "value": "A separate lock case, supplied to suit"
+          }
+        ],
+        "material": "",
+        "finishes": [],
+        "doorTypes": [],
+        "seoTitle": "306 PS Passage Push Bar",
+        "seoDescription": "Passage Push Bar."
+      }
+    },
+    {
+      "slug": "306-s-panic-exit-device",
+      "model": "306-S",
+      "name": "单开门逃生推杠",
+      "nameEn": "Single Door Panic Exit Device",
+      "series": "300 系列",
+      "categoryPath": [
+        "panic-exit-devices"
+      ],
+      "categoryNames": [
+        "逃生推杠"
+      ],
+      "summary": "单开门逃生推杠。",
+      "specs": [
+        {
+          "label": "门扇数",
+          "value": "单开门"
+        }
+      ],
+      "material": "",
+      "finishes": [],
+      "doorTypes": [],
+      "gallery": [],
+      "relatedModels": [
+        "306-D",
+        "306 PS"
+      ],
+      "sites": [
+        "hyde"
+      ],
+      "styleFamily": "",
+      "seoTitle": "306-S 单开门逃生推杠",
+      "seoDescription": "单开门逃生推杠。",
+      "en": {
+        "name": "Single Door Panic Exit Device",
+        "series": "300 Series",
+        "categoryNames": [
+          "Panic Exit Devices"
+        ],
+        "summary": "Single Door Panic Exit Device.",
+        "specs": [
+          {
+            "label": "Door leaves",
+            "value": "Single door"
+          }
+        ],
+        "material": "",
+        "finishes": [],
+        "doorTypes": [],
+        "seoTitle": "306-S Single Door Panic Exit Device",
+        "seoDescription": "Single Door Panic Exit Device."
+      }
+    },
+    {
       "slug": "307-panic-exit-device",
       "model": "307",
       "name": "逃生推杠",
