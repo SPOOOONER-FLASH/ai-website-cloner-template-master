@@ -6,7 +6,7 @@ import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
-import { Analytics } from "@/components/site/Analytics";
+import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
   absoluteUrl,
   defaultDescription,
@@ -89,6 +89,7 @@ export default function PortugueseRootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
+        <AnalyticsHead />
         <JsonLd data={organisationSchema()} />
         <JsonLd data={websiteSchema()} />
       </head>

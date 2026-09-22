@@ -1,102 +1,90 @@
-import { getPublishedGuides } from "@/data/guides";
-import { NewsCard } from "./NewsCard";
-import type { Locale } from "@/data/site";
-import visual from "./GuideVisual.module.css";
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
+import { getPublishedGuides } from '@/data/guides';
+import type { Locale } from '@/data/site';
+import { guideTopic, isGuideProductPhoto, type GuideLibraryEntry } from '@/lib/guide-library';
+import { GuideLibrary } from './GuideLibrary';
+import styles from './GuideEditorial.module.css';
 
-/**
- * 指南栏目的列表页。
- *
- * 和 NewsListing 分开写而不是加一个开关，因为这两页说的不是同一件事：
- * 新闻页的空状态解释「这里将来会有公告」，指南页从第一天起就有内容，
- * 而它的引导语要告诉读者这些页面是拿来**查**的，不是拿来读新闻的。
- *
- * 卡片复用 NewsCard，只传 section="guides" 改路径 —— 形状相同的东西复制一份，
- * 只会让下一次改版式的人改两处而忘掉一处。
- */
 const COPY = {
   en: {
-    title: "Guides",
-    intro:
-      "Reference pages for the decisions that come before a purchase order: size charts, code cross-references, what a standard actually covers, and where our own catalogue is silent.",
-    note:
-      "Every figure on these pages can be traced to a published source, and where a value is not published we say so rather than estimate it. Dimensions are given in millimetres with the imperial equivalent alongside.",
-    emptyTitle: "No guides published yet.",
-    empty: "Reference pages are being written. In the meantime, ask us directly.",
-    contact: "Contact us",
-    contactHref: "/contact/",
+    label: 'Guides', title: 'The details behind the door.',
+    intro: 'Hardware guides for the decisions before a purchase order. Dimensions, materials, standards and the questions worth asking.',
+    find: 'Find a guide', read: 'Read the guide',
+    material: 'Material. Surface. Character.',
+    materialText: 'A finish code is more than a colour. Explore the published codes and the differences that matter when specifying hardware.',
+    evidence: 'Start with the evidence.',
+    evidenceText: 'Every figure should lead back to a published source. Where a value is not published, we say so rather than estimate it.',
+    documents: 'Explore available documents', contact: 'Discuss your requirements',
   },
   es: {
-    title: "Guías",
-    intro:
-      "Páginas de referencia para las decisiones que vienen antes del pedido: tablas de medidas, referencias cruzadas de códigos, qué cubre realmente una norma y dónde nuestro propio catálogo calla.",
-    note:
-      "Cada cifra de estas páginas puede rastrearse hasta una fuente publicada, y donde un valor no está publicado lo decimos en lugar de estimarlo.",
-    emptyTitle: "Todavía no hay guías publicadas.",
-    empty: "Estamos escribiendo las páginas de referencia. Mientras tanto, pregúntenos directamente.",
-    contact: "Contacto",
-    contactHref: "/es/contact/",
+    label: 'Guías', title: 'Los detalles detrás de la puerta.',
+    intro: 'Guías de herrajes para decidir antes de hacer un pedido. Medidas, materiales, normas y las preguntas que conviene hacer.',
+    find: 'Buscar una guía', read: 'Leer la guía',
+    material: 'Material. Acabado. Carácter.',
+    materialText: 'Un código de acabado es más que un color. Consulte los códigos publicados y las diferencias que importan al especificar herrajes.',
+    evidence: 'Empiece por la documentación.',
+    evidenceText: 'Cada cifra debe remitir a una fuente publicada. Cuando un valor no está publicado, lo indicamos en lugar de estimarlo.',
+    documents: 'Consultar documentos disponibles', contact: 'Consultar sus requisitos',
   },
   pt: {
-    title: "Guias",
-    intro:
-      "Páginas de referência para as decisões que vêm antes do pedido: tabelas de medidas, referências cruzadas de códigos, o que uma norma realmente cobre e onde o nosso próprio catálogo se cala.",
-    note:
-      "Cada número destas páginas pode ser rastreado até uma fonte publicada, e onde um valor não está publicado nós dizemos isso em vez de estimá-lo.",
-    emptyTitle: "Ainda não há guias publicados.",
-    empty: "As páginas de referência estão sendo escritas. Entretanto, pergunte-nos diretamente.",
-    contact: "Contato",
-    contactHref: "/pt/contact/",
+    label: 'Guias', title: 'Os detalhes por trás da porta.',
+    intro: 'Guias de ferragens para decidir antes de fazer um pedido. Medidas, materiais, normas e as perguntas que vale a pena fazer.',
+    find: 'Buscar um guia', read: 'Ler o guia',
+    material: 'Material. Acabamento. Personalidade.',
+    materialText: 'Um código de acabamento é mais do que uma cor. Consulte os códigos publicados e as diferenças que importam ao especificar ferragens.',
+    evidence: 'Comece pela documentação.',
+    evidenceText: 'Cada número deve remeter a uma fonte publicada. Quando um valor não está publicado, nós informamos em vez de estimar.',
+    documents: 'Consultar documentos disponíveis', contact: 'Conversar sobre seus requisitos',
   },
 } as const;
 
-export function GuideListing({ locale = "en" }: { locale?: Locale } = {}) {
+export function GuideListing({ locale = 'en' }: { locale?: Locale } = {}) {
   const t = COPY[locale];
-  const articles = getPublishedGuides();
-
-  return (
-    <main className="isolate mt-48 flex-grow justify-self-start lg:mt-64">
-      <div className="layout space-y-48 lg:space-y-64">
-        <section className={`col-content w-full gap-y-24 ${visual.banner}`}>
-          <h1 className="col-span-full text-h1 text-ink lg:col-span-5 xl:col-span-11">
-            {t.title}
-          </h1>
-          <div className="col-span-full lg:col-span-6 lg:col-start-7 xl:col-span-11 xl:col-start-14">
-            <p className="text-c1 text-ink">{t.intro}</p>
-            {/*
-              这一段不是装饰。它说的是这个栏目和别人的同类页面的差别：
-              数字说得出处，查不到的写明查不到。那是我们相对同类工厂唯一的
-              结构性优势，所以它印在列表页上而不是藏在每篇文章里。
-            */}
-            <p className="mt-24 text-c2 text-ink-secondary">{t.note}</p>
-          </div>
-        </section>
-
-        <section className="col-content">
-          {articles.length > 0 ? (
-            <div className="grid grid-cols-1 gap-x gap-y-48 sm:grid-cols-2 xl:grid-cols-3">
-              {articles.map((article) => (
-                <NewsCard
-                  key={article.slug}
-                  article={article}
-                  locale={locale}
-                  section="guides"
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="border border-line p-32 lg:p-48">
-              <p className="text-h3 text-ink">{t.emptyTitle}</p>
-              <p className="mt-16 max-w-[60ch] text-c1 text-ink-secondary">{t.empty}</p>
-              <a
-                href={t.contactHref}
-                className="short-marker short-marker-compact mt-24 text-c1 text-brand hover:text-brand-hover"
-              >
-                {t.contact}
-              </a>
-            </div>
-          )}
-        </section>
+  const base = locale === 'en' ? '' : `/${locale}`;
+  const entries: GuideLibraryEntry[] = getPublishedGuides().map(article => ({
+    slug: article.slug,
+    title: (locale === 'es' ? article.titleEs : locale === 'pt' ? article.titlePt : undefined) || article.title,
+    summary: (locale === 'es' ? article.summaryEs : locale === 'pt' ? article.summaryPt : undefined) || article.summary,
+    topic: guideTopic(article.slug),
+    models: article.relatedModels ?? [],
+    image: isGuideProductPhoto(article.heroImage.src) ? {
+      src: article.heroImage.src,
+      label: (locale === 'es' ? article.heroImage.labelEs : locale === 'pt' ? article.heroImage.labelPt : undefined) || article.heroImage.label,
+    } : undefined,
+  }));
+  const featured = entries.find(entry => entry.slug === 'euro-cylinder-size-chart-2026');
+  const material = entries.find(entry => entry.slug === 'finish-code-reference-2026');
+  return <main className={styles.page}>
+    <section className={styles.hero}>
+      <div>
+        <h1>{t.title}</h1>
+        <p className={styles.intro}>{t.intro}</p>
+        <a href="#guide-library" className={styles.textLink}>{t.find}<ArrowUpRight size={18} aria-hidden="true" /></a>
       </div>
-    </main>
-  );
+      {featured && <Link href={`${base}/guides/${featured.slug}/`} className={styles.heroFeature}>
+        {featured.image && <div className={styles.heroPhoto}>
+          {/* Catalogue photograph, never a generated product. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={featured.image.src} alt={featured.image.label} width="640" height="480" fetchPriority="high" />
+        </div>}
+        <h2>{featured.title}</h2>
+        <span className={styles.textLink}>{t.read}<ArrowUpRight size={18} aria-hidden="true" /></span>
+      </Link>}
+    </section>
+    <GuideLibrary entries={entries} locale={locale} />
+    {material && <section className={styles.material}>
+      <div><h2>{t.material}</h2><p>{t.materialText}</p>
+        <Link href={`${base}/guides/${material.slug}/`} className={styles.textLink}>{t.read}<ArrowUpRight size={18} aria-hidden="true" /></Link>
+      </div>
+      {material.image && <Link href={`${base}/guides/${material.slug}/`} className={styles.materialPhoto} aria-label={material.title}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={material.image.src} alt={material.image.label} width="640" height="480" loading="lazy" />
+      </Link>}
+    </section>}
+    <section className={styles.evidence}><h2>{t.evidence}</h2><div><p>{t.evidenceText}</p>
+      <div className={styles.links}><Link href={`${base}/downloads/`} className={styles.textLink}>{t.documents}<ArrowUpRight size={18} aria-hidden="true" /></Link>
+        <Link href={`${base}/contact/`} className={styles.textLink}>{t.contact}<ArrowUpRight size={18} aria-hidden="true" /></Link></div>
+    </div></section>
+  </main>;
 }

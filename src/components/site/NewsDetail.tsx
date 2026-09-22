@@ -12,7 +12,8 @@ import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleContents } from "./ArticleContents";
 import reading from "./ArticleReading.module.css";
-import { GuideCover } from "./GuideCover";
+import { GuideArticleIntro } from "./GuideArticleIntro";
+import editorial from "./GuideEditorial.module.css";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -156,7 +157,7 @@ export function NewsDetail({
             />
           </div>
 
-          <h1 className="col-span-full mt-16 text-h1 text-ink xl:col-span-18">
+          <h1 className={`col-span-full mt-16 text-h1 text-ink xl:col-span-18 ${section === "guides" ? editorial.articleTitle : ""}`}>
             {title}
           </h1>
 
@@ -262,7 +263,7 @@ export function NewsDetail({
 
           {/* Right column: the single editorial image, at press width. */}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-          {section === "guides" ? <GuideCover article={article} locale={locale} /> : <NewsVisual article={article} locale={locale} />}
+          {section === "guides" ? <GuideArticleIntro article={article} locale={locale} contents={contents} /> : <NewsVisual article={article} locale={locale} />}
           </div>
         </section>
 

@@ -6,7 +6,7 @@ import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { PromoDialog } from "@/components/site/PromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
-import { Analytics } from "@/components/site/Analytics";
+import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
   absoluteUrl,
   defaultDescription,
@@ -78,6 +78,7 @@ export default function EnglishRootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`h-full antialiased ${archivo.variable}`}>
       <head>
+        <AnalyticsHead />
         {/* Organisation + WebSite schema, emitted once site-wide. Page-level schema
             (Product, BreadcrumbList, ItemList) is added by the individual pages. */}
         <JsonLd data={organisationSchema()} />

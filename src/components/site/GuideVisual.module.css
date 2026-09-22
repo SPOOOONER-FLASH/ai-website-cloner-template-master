@@ -1,12 +1,8 @@
 .cover { margin: 0; }
-.compact .stage { padding: 24px; }
-.compact .photo { height: 210px; background: white; }
-.stage { padding: clamp(24px, 4vw, 48px); background: #f3f0e8 url('/images/editorial/guides-reference-desk-1600.webp') center / cover; }
-.stage a { display: block; background: white; transition: box-shadow 180ms ease-out; }
-.stage a:hover,.stage a:focus-visible { box-shadow: 0 12px 28px rgb(30 28 24 / 12%); }
-.photo { width: 100%; height: clamp(200px, 23vw, 330px); object-fit: contain; padding: 16px; }
+.stage { padding: 20px; background: #f5f5f1; }
+.stage a { display: block; }
+.stage a:focus-visible { outline: 2px solid #465246; outline-offset: 5px; }
+.photo { width: 100%; height: clamp(200px, 23vw, 330px); object-fit: contain; background: white; }
+.compact .photo { height: 210px; }
 .cover figcaption { font-size: 12px; color: var(--color-ink-secondary); line-height: 1.5; margin-top: 12px; max-width: 72ch; }
-.banner { background: #f3f0e8 url('/images/editorial/guides-reference-desk-1600.webp') center / cover; padding: clamp(28px, 5vw, 72px); min-height: 280px; display: flex; flex-direction: column; justify-content: center; }
-.banner p { max-width: 52ch; line-height: 1.65; font-size: 18px; color: #35342d; }
-@media(max-width:600px) { .stage,.banner { background-image: url('/images/editorial/guides-reference-desk-960.webp'); } .photo { height: 220px; } .banner { min-height: 240px; } }
-@media(prefers-reduced-motion:reduce) { .stage a { transition: none; } }
+@media(max-width:600px) { .stage { padding: 16px; } .photo { height: 220px; } }

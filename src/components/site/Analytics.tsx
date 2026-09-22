@@ -1,6 +1,14 @@
 import Script from "next/script";
 import { analytics, indexable } from "@/data/site";
 
+/** Render in each root layout's real head. Moving this node after export breaks React hydration. */
+export function AnalyticsHead() {
+  if (!indexable || !analytics.gtmId) return null;
+  return <script dangerouslySetInnerHTML={{
+    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${analytics.gtmId}');`,
+  }} />;
+}
+
 /**
  * Google Analytics 4 and Microsoft Clarity.
  *
@@ -82,11 +90,7 @@ export function Analytics() {
       */}
       {gtmId ? (
         <>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`,
-            }}
-          />
+          {/* The loader is AnalyticsHead; only the no-JavaScript fallback belongs in the body. */}
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
