@@ -24,7 +24,19 @@ test("desktop navigation exposes the two architectural shelves accessibly", () =
   assert.match(header, /Services/);
   assert.match(header, /Events/);
   assert.match(header, /Certificates/);
-  assert.match(header, /Price list/);
+  /*
+    PRICE LIST IS DELIBERATELY ABSENT. Client decision, 2026-09-22.
+
+    The shelf used to carry "Price list — Request export pricing". It promised a document
+    that is not published, and its Spanish and Portuguese rows both linked to the English
+    route, so "Lista de precios" took a Spanish buyer out of their own language.
+
+    What replaces it is not silence: the pricing answer is on /contact/ beside the orders
+    mailbox, and the shelf's Contact row now says so. That is the invariant worth locking —
+    a reader looking for a price from the shelf must still be told where pricing is handled.
+  */
+  assert.doesNotMatch(header, /Price list/);
+  assert.match(header, /detail: "Quotes, pricing and export specialists"/);
   assert.match(header, /siteSettings\.alibaba\.storefront/);
 });
 
@@ -67,8 +79,13 @@ test("mobile drawer mirrors the expanded company and buying routes", () => {
     itself no longer contains the words. Asserting on the config is asserting on the
     thing that actually decides what the reader gets.
   */
-  assert.match(drawer, /Price list/);
-  assert.match(drawer, /Lista de precios/);
+  /*
+    The drawer lost its Price list row in the same 2026-09-22 change as the shelf above.
+    Contact survives it and is what the drawer must still offer, in every locale — the
+    drawer is the only navigation a phone gets.
+  */
+  assert.doesNotMatch(drawer, /price-list/);
+  for (const label of [/"Contact"/, /"Contacto"/, /"Contato"/]) assert.match(drawer, label);
   assert.match(menuConfig, /\/downloads\//);
 });
 

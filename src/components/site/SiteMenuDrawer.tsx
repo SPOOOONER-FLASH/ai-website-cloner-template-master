@@ -16,15 +16,12 @@ import styles from "./EditorialCatalogue.module.css";
 const buyingLinks = {
   en: [
     { label: "Contact", href: "/contact/" },
-    { label: "Price list", href: "/request/price-list/" },
   ],
   es: [
     { label: "Contacto", href: "/es/contact/" },
-    { label: "Lista de precios", href: "/request/price-list/" },
   ],
   pt: [
     { label: "Contato", href: "/pt/contact/" },
-    { label: "Lista de preços", href: "/request/price-list/" },
   ],
 } as const;
 

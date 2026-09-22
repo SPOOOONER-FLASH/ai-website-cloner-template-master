@@ -102,6 +102,38 @@ export default function ContactPage() {
             </div>
 
             {/*
+              PRICING, ANSWERED HERE RATHER THAN BEHIND A SEPARATE ROUTE.
+
+              Client decision, 2026-09-22: the "Price list — Request export pricing" entry
+              came out of the header shelf and the drawer. It promised a document we do not
+              publish, and the two non-English entries pointed at the English route, so a
+              Spanish buyer clicking "Lista de precios" left their own language.
+
+              Deleting the entry alone would have thrown away a real intent — somebody who
+              wants a price still wants one. So the intent is caught where they land: the
+              answer sits beside the mailbox that handles it, one block below the addresses.
+
+              /request/price-list/ still exists and still works. It is reachable from the FAQ,
+              where the question is actually asked, and it answers the people who search for
+              it by name. What it no longer does is occupy a permanent navigation slot.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Price list</h2>
+              <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
+                Trade pricing is not published. It moves with specification, finish and
+                quantity, so a list without those three is a number nobody can order
+                against — and a price list on a public URL is out of date the week after
+                it is posted.
+              </p>
+              <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
+                Ask for it in the form, or write to the orders address above, and say which
+                families you buy and roughly what volume. You will get current prices for
+                what you actually order rather than a PDF you have to translate into your
+                own schedule.
+              </p>
+            </div>
+
+            {/*
               The manufacturing address, on the page people reach when they need it.
 
               A customer building a quotation on 2026-09-01 could not find an address

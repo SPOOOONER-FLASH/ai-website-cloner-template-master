@@ -99,6 +99,28 @@ export default function ContactoPage() {
                   ))}
               </dl>
             </div>
+            {/*
+              Pricing, answered here rather than behind a separate route — see the English
+              page for the full account. The entry that used to sit in the header shelf
+              pointed Spanish and Portuguese readers at an English-only page; the intent it
+              carried is now answered beside the mailbox that handles it.
+            */}
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Lista de precios</h2>
+              <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
+                Los precios de exportación no se publican. Dependen de la especificación,
+                el acabado y la cantidad, así que una lista sin esas tres cosas es un
+                número contra el que nadie puede pedir; y una lista de precios en una URL
+                pública queda desactualizada la semana siguiente a publicarla.
+              </p>
+              <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
+                Pídala en el formulario, o escriba a la dirección de pedidos de arriba, e
+                indique qué familias compra y aproximadamente qué volumen. Recibirá precios
+                vigentes de lo que realmente pide, en vez de un PDF que después tiene que
+                traducir a su propia relación.
+              </p>
+            </div>
+
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Catálogo actual</h2>
               <a

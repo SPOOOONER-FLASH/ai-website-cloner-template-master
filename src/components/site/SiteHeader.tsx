@@ -77,22 +77,19 @@ const companyShelfLinks = {
 */
 const buyShelfLinks = {
   en: [
-    { label: "Contact", detail: "Talk to an export specialist", href: "/contact" },
+    { label: "Contact", detail: "Quotes, pricing and export specialists", href: "/contact" },
     { label: "FAQ", detail: "Minimum order, lead time, samples, payment, OEM", href: "/faq" },
     { label: "Downloads", detail: "Catalogue and verified documents", href: "/downloads" },
-    { label: "Price list", detail: "Request export pricing", href: "/request/price-list" },
   ],
   es: [
-    { label: "Contacto", detail: "Hable con un especialista de exportación", href: "/contact" },
+    { label: "Contacto", detail: "Cotizaciones, precios y especialistas de exportación", href: "/contact" },
     { label: "Preguntas frecuentes", detail: "Pedido mínimo, plazos, muestras, pago, OEM", href: "/faq" },
     { label: "Descargas", detail: "Catálogo y documentos verificados", href: "/downloads" },
-    { label: "Lista de precios", detail: "Solicite precios de exportación", href: "/request/price-list" },
   ],
   pt: [
-    { label: "Contato", detail: "Fale com um especialista em exportação", href: "/contact" },
+    { label: "Contato", detail: "Cotações, preços e especialistas em exportação", href: "/contact" },
     { label: "Perguntas frequentes", detail: "Pedido mínimo, prazo, amostras, pagamento, OEM", href: "/faq" },
     { label: "Downloads", detail: "Catálogo e documentos verificados", href: "/downloads" },
-    { label: "Lista de preços", detail: "Solicite preços de exportação", href: "/request/price-list" },
   ],
 } as const;
 
