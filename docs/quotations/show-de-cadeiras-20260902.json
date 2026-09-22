@@ -14,7 +14,7 @@
     "Prices absent by default; add \"unitPrice\" per item and rebuild to issue the priced version.",
     "Build:  py scripts/build-quotation.py docs/quotations/show-de-cadeiras-20260902.json"
   ],
-  "outFile": "~/Desktop/hyde/20260902 Quotation - Show de Cadeiras - Glass Door Hardware.xlsx",
+  "outFile": "~/Desktop/hyde/报价/20260902 Quotation - Show de Cadeiras - Glass Door Hardware.xlsx",
   "sheetName": "Quotation",
   "company": "docs/quotations/_company.json",
   "meta": {
@@ -32,12 +32,30 @@
     ]
   },
   "terms": [
-    { "label": "Incoterm", "value": "FOB Guangzhou or Shenzhen, China" },
-    { "label": "Discharge", "value": "Santos, Brazil" },
-    { "label": "Prices", "value": "To be advised - this issue carries specifications only" },
-    { "label": "Payment", "value": "100% T/T before shipment" },
-    { "label": "Lead time", "value": "30 days from receipt of down payment" },
-    { "label": "Validity", "value": "30 days from date of issue" }
+    {
+      "label": "Incoterm",
+      "value": "FOB Guangzhou or Shenzhen, China"
+    },
+    {
+      "label": "Discharge",
+      "value": "Santos, Brazil"
+    },
+    {
+      "label": "Prices",
+      "value": "To be advised - this issue carries specifications only"
+    },
+    {
+      "label": "Payment",
+      "value": "100% T/T before shipment"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of down payment"
+    },
+    {
+      "label": "Validity",
+      "value": "30 days from date of issue"
+    }
   ],
   "items": [
     {

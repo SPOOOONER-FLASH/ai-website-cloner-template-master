@@ -9,7 +9,7 @@
     "entries carry duplicate rows and a typo, and every bullet has to fit one line on A4.",
     "Build:  py scripts/build-quotation.py docs/quotations/novalux-sa-20260901.json"
   ],
-  "outFile": "~/Desktop/hyde/20260901 Quotation - Novalux SA - Panic Exit Devices.xlsx",
+  "outFile": "~/Desktop/hyde/报价/20260901 Quotation - Novalux SA - Panic Exit Devices.xlsx",
   "sheetName": "Quotation",
   "company": "docs/quotations/_company.json",
   "meta": {

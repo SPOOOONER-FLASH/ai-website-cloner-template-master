@@ -1,0 +1,118 @@
+{
+  "_comment": [
+    "Quotation job for REFCON (Refrigerated Containers Industrial Co.), Riyadh, Saudi Arabia.",
+    "Enquiry via business card of Eng. Tariq Dweik, Senior Sales Engineer, 2026-09-21.",
+    "",
+    "Buyer identification: the card is the only source used. refcon.sa was checked and is",
+    "currently COMPROMISED (webshell banner, gambling spam), so nothing from it was trusted;",
+    "the only cross-check it provided is the switchboard number, which matches the card.",
+    "The hacked site prints P.O. Box 608 while the card prints 609 - the card wins.",
+    "",
+    "Products matched from the client's own photos to catalogue records:",
+    "  photo 2 (black body, red bar, top+bottom rods) -> 330",
+    "  photo 3 (silver bar on a white sandwich-panel door) -> 302",
+    "  photos 4-5 (black outside lever with euro cylinder) -> 016 exterior trim",
+    "The '3 points' wording is the client's, taken from their message and visible in the",
+    "photos; the catalogue records do not state a point count, so it is not invented here.",
+    "",
+    "Prices are the client's: 18.90 for the red & black 3-point, 10.44 for the second item.",
+    "See the OPEN QUESTION note - which item 10.44 belongs to is not certain from the brief.",
+    "",
+    "Build:  py scripts/build-quotation.py docs/quotations/refcon-20260921.json"
+  ],
+  "outFile": "~/Desktop/hyde/报价/20260921 Quotation - REFCON - Panic Exit Devices.xlsx",
+  "sheetName": "Quotation",
+  "company": "docs/quotations/_company.json",
+  "meta": {
+    "number": "HY20260921-RFC",
+    "date": "September 21, 2026"
+  },
+  "buyer": {
+    "name": "REFCON",
+    "lines": [
+      "Refrigerated Containers Industrial Co.",
+      "Attn: Eng. Tariq Dweik - Senior Sales Engineer",
+      "P.O. Box 609, Riyadh 11383",
+      "Kingdom of Saudi Arabia",
+      "tariq.dweik@refcon.sa",
+      "T +966 11 265 9460 ext. 4501",
+      "M +966 56 118 5125"
+    ]
+  },
+  "terms": [
+    {
+      "label": "Incoterm",
+      "value": "FOB China"
+    },
+    {
+      "label": "Under USD 10,000",
+      "value": "Delivery terms become EXW Zhongshan"
+    },
+    {
+      "label": "Currency",
+      "value": "USD, per piece, as quoted per model"
+    },
+    {
+      "label": "Payment",
+      "value": "100% T/T before shipment"
+    },
+    {
+      "label": "Lead time",
+      "value": "30 days from receipt of down payment"
+    },
+    {
+      "label": "Packing",
+      "value": "Blank box; OEM colour box available - see MOQ per model"
+    },
+    {
+      "label": "Validity",
+      "value": "30 days from date of issue"
+    }
+  ],
+  "items": [
+    {
+      "slug": "330-panic-exit-device",
+      "title": "330",
+      "qty": 300,
+      "unit": "PCS",
+      "unitPrice": 18.9,
+      "image": "/images/products-hyde/330-panic-exit-device.webp",
+      "specs": [
+        "Three-point locking: top rod, centre latch, bottom rod",
+        "Material: iron body with iron tube push bar",
+        "Colour: red push bar with black body",
+        "Length: to your door height - please advise",
+        "Single door, surface mounted",
+        "MOQ 300 pcs  ·  OEM from 1,000 pcs"
+      ],
+      "rowHeightPx": 225,
+      "imageBoxPx": 200
+    },
+    {
+      "slug": "302-panic-exit-device",
+      "title": "302",
+      "qty": 300,
+      "unit": "PCS",
+      "unitPrice": 10.44,
+      "image": "/images/products-hyde/302-panic-exit-device.webp",
+      "specs": [
+        "Three-point locking: top rod, centre latch, bottom rod",
+        "Material: stainless steel with iron, painted finish",
+        "Length: 1040 mm, adjustable to your door height",
+        "Fully reversible for left- or right-hand doors",
+        "Suits insulated sandwich-panel doors as in your photo",
+        "MOQ 300 pcs  ·  OEM from 2,000 pcs"
+      ],
+      "rowHeightPx": 225,
+      "imageBoxPx": 200
+    }
+  ],
+  "notes": [
+    "OPEN QUESTION - please confirm before we send this: USD 10.44 is quoted here against the 302 silver three-point bar. If that price was meant for the outside lever trim instead, tell us and we reissue.",
+    "At the 300 pcs MOQ shown, the order value is USD 8,802 - below USD 10,000, so EXW Zhongshan would apply. FOB China needs an order value of USD 10,000 or more.",
+    "The black outside lever trim with cylinder in your photos is our 016 exterior trim. It is not priced above; tell us the quantity and we will add it.",
+    "For your cold-room and insulated-panel doors we also make 317, a low-profile push bar and latch built for that application - worth a look alongside these two.",
+    "Bar lengths are made to the door. Please send door height, leaf width and panel thickness and we will confirm the exact configuration."
+  ],
+  "closing": "Thank you for your enquiry. Please confirm the quantity and configuration per model and we will issue the pro forma invoice."
+}
