@@ -1,0 +1,81 @@
+{
+  "generatedBy": "scripts/spec-coverage.mjs",
+  "totalProducts": 924,
+  "fields": {
+    "backset": {
+      "title": "Backset",
+      "labels": [
+        "Backset"
+      ],
+      "products": 175,
+      "rows": 175,
+      "distinctValues": 32
+    },
+    "centreDistance": {
+      "title": "Centre distance (lever to cylinder/keyhole)",
+      "labels": [
+        "Centre distance",
+        "Center Distance",
+        "Centre distances",
+        "Centre distance, horizontal",
+        "Centre distance, vertical"
+      ],
+      "products": 145,
+      "rows": 146,
+      "distinctValues": 76
+    },
+    "doorThickness": {
+      "title": "Door thickness",
+      "labels": [
+        "Door thickness",
+        "Minimum door thickness",
+        "Min door thickness",
+        "Max door thickness",
+        "Door leaf thickness",
+        "Suitable Door Thickness",
+        "Door Thickness Range",
+        "Applicable Door Thickness",
+        "Glass door thickness"
+      ],
+      "products": 285,
+      "rows": 285,
+      "distinctValues": 42
+    },
+    "handing": {
+      "title": "Handing",
+      "labels": [
+        "Handing",
+        "Handling"
+      ],
+      "products": 184,
+      "rows": 188,
+      "distinctValues": 8
+    },
+    "forend": {
+      "title": "Forend / faceplate size",
+      "labels": [
+        "Faceplate",
+        "Face plate"
+      ],
+      "products": 10,
+      "rows": 10,
+      "distinctValues": 10
+    },
+    "finish": {
+      "title": "Finish",
+      "labels": [
+        "Finish",
+        "Finishes",
+        "Finish & Color",
+        "Finishes Available",
+        "Hardware Finish",
+        "Surface Finish",
+        "Surface Finish Options"
+      ],
+      "products": 325,
+      "rows": 334,
+      "distinctValues": 84
+    }
+  },
+  "unregisteredLabels": {}
+}
