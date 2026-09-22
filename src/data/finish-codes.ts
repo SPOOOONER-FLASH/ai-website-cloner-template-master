@@ -438,12 +438,12 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
   },
   {
     code: "DK",
-    name: null,
-    nameEs: null,
-    namePt: null,
-    evidence: "unconfirmed",
-    note: "Ten cylinders carry it. Double Key — key on both sides — is the standard reading in the euro-cylinder trade, and our records for these models carry no specifications at all, so we are not printing it as fact.",
-    noteEs: "Diez cilindros lo llevan. «Doble llave» es la lectura habitual, pero estas fichas no tienen especificaciones, así que no lo damos por hecho.",
+    name: "Double key",
+    nameEs: "Doble llave",
+    namePt: "Chave dupla",
+    evidence: "client",
+    note: "Ten cylinders carry it. Confirmed by the client in writing, 2026-09-21: DK is the cylinder that opens with a key from both sides. He added the caveat himself, and it belongs here: different customers use this code differently and there is no industry-wide standard for it. So treat DK on an incoming enquiry as a question rather than an instruction — confirm which function the buyer means before quoting, because the code alone does not settle it.",
+    noteEs: "Diez cilindros lo llevan. Confirmado por el cliente por escrito el 2026-09-21: DK es el cilindro que abre con llave por ambos lados. Él mismo añadió la advertencia, y va aquí: distintos clientes usan este código de forma distinta y no hay un estándar del sector. Así que un DK en una consulta entrante es una pregunta, no una instrucción: confirme qué función quiere el comprador antes de cotizar.",
   },
   {
     code: "KT",
