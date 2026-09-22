@@ -97,6 +97,16 @@ const EUROPEAN: { pattern: RegExp; brazilian: string }[] = [
   },
   /* Brazilian drops the initial h in these two; European keeps it. */
   { pattern: /\bhumidade\b/i, brazilian: "umidade" },
+  /*
+    Added 2026-09-21 after the second guides batch. Each of these was written by an
+    agent drafting Portuguese directly rather than translating, which is where European
+    forms leak in — they are the spelling that comes to hand, not a mistake anybody
+    would make consciously. `crómio` appeared eight times across two finish articles
+    before anybody looked.
+  */
+  { pattern: /\bcrómio\b/i, brazilian: "cromo" },
+  { pattern: /\btelemóve(l|is)\b/i, brazilian: "celular(es)" },
+  { pattern: /\balcatifas?\b/i, brazilian: "carpete" },
 ];
 
 /** Blanks comments, keeping line numbers intact so a report points at the real line. */

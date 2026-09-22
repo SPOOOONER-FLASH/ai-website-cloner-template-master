@@ -261,3 +261,36 @@ promo 条、轮播、图片缩放），再逐个改成按需加载。
 **期望与限度**：TBT 350ms → 200ms 以下可期，分数从 80 进 90+。
 但要说清楚：**这对排名帮助很小**。Core Web Vitals 是弱排名因素，
 LCP 0.7s / CLS 0 已经全绿。做它是为了慢网络上的买家，不是为了 Google。
+
+### 第二批 1–10 篇实际交付（2026-09-21）
+
+| # | slug | 正文 EN/ES/PT | 打的 Clarity 主题 |
+|---|---|---|---|
+| 1 | submittal-package-contents | 1675/1679/1650 | Documentation（未上榜） |
+| 2 | technical-drawings-what-to-expect | 1629/1634/1615 | Documentation |
+| 3 | material-traceability-mill-certs | 1614/1621/1612 | Documentation |
+| 4 | commercial-lock-function-decision | 1622/1607/1620 | Lock function（rank 34） |
+| 5 | specification-section-08-71-00 | 1671/1747/1737 | Lock function |
+| 6 | dimensional-interchangeability | 1695/1736/1704 | OEM（rank 27） |
+| 7 | exit-device-outside-trim-functions | 1690/1776/1767 | Exit device（rank 7） |
+| 8 | stainless-grade-selection-201-304-316 | 1641/1746/1716 | Finishes（rank 3） |
+| 9 | chrome-finish-differences | 1620/1711/1688 | Finishes |
+| 10 | master-key-hierarchy-planning | 1622/1680/1674 | Keying（rank 10） |
+
+**10/10 正文 ≥1600。** 英文文章总数 35 news + 30 guides = **65**，距 75 还差 10 篇。
+
+**三处选题合并（记录在案，避免下一个会话以为漏写）**：
+
+- 原 #8 `drop-in-replacement-checklist` 并入 #6 —— 「怎么量已安装的锁」写成了
+  #6 的一节，单独成篇会与它八成重复。
+- 原 #12 `multipoint-exit-device-applications` 并入 #7 —— #7 新增的「四种器件类型」
+  一节已经覆盖竖杆与双扇门。
+- 原 #15 `field-identifying-stainless-grades` 并入 #8 —— 磁铁测试为什么不可靠，
+  写成了 #8 的一节。
+
+合并的理由每次都一样：**自我重复在 SEO 上是两篇互相稀释关键词，不是两倍覆盖。**
+
+**剩余 10 篇的候选**（从原清单）：cylinder-attack-resistance-en-1303、
+escape-route-hardware-by-occupancy、certification-and-test-validation、
+door-thickness-to-cylinder-length、replacement-measurement-workflow、
+universal-vs-handed-hardware，另需再补四篇。
