@@ -332,6 +332,33 @@ So, every time you hand him something to do:
    chances to run the second against a stale checkout. If you find yourself writing
    "then run", ask whether the script should do it instead.
 
+5. **He reads it as Word, on his desktop. We still edit the markdown.** Client
+   instruction, 2026-09-21: the runbook should be a `.docx` in `Desktop\hyde\`.
+
+   Both halves of that are satisfiable, and only one way satisfies both. A file that
+   exists only on somebody's desktop is not in git, so the next session cannot read it
+   and one context compaction erases every trace that it said anything. So
+   **`docs/collaboration/CLIENT-RUNBOOK.md` stays the authority**, and the Word file is
+   an export of it:
+
+   ```bash
+   npm run runbook:docx
+   ```
+
+   `scripts/build-client-runbook-docx.mjs` renders the markdown — headings, tables,
+   code blocks, bullet and numbered lists, inline bold and code — to
+   `%USERPROFILE%\Desktop\hyde\CLIENT-RUNBOOK.docx`, with a grey line at the top telling
+   the reader not to edit the Word file because the next run overwrites it. `--out <dir>`
+   moves the target. It uses the `docx` package that was already installed; it does not
+   need pandoc and does not need anything new installed.
+
+   **Regenerate it in the same commit as any runbook edit.** A `CLIENT-RUNBOOK.md` that
+   has moved on from the `.docx` on his desktop is worse than having no Word file at all,
+   because he will follow the stale one and have no way of knowing it is stale.
+
+   This is the generator rule from further up, applied to a deliverable that leaves the
+   repository: write the generator, then run it; never hand-build the output.
+
 ### Professional, not decorated. The buyer is purchasing confidence.
 
 Client's principal, 2026-09-05:
