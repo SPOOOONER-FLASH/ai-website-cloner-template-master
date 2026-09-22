@@ -32,9 +32,23 @@ function body(): string {
     ].join("\n");
   }
 
-  const categoryLines = categories.map((category) => {
+  /*
+    只列有东西可看的品类。
+
+    care-grab-bars 和 floor-springs-and-pivots 的产品全部只在雷茵中文站，HYDE
+    这边是零。empty-category 规则不会为它们生成页面（实测线上 404），但这里
+    以前照列不误，于是对 AI 说了两句错话：「这个品类零个型号」读起来像我们不做
+    这个，外加一条死链。一个给 AI 读的文件里出现死链，代价是它以后不信这个文件。
+
+    过滤放在这里而不是 categories.ts，是因为那个列表还要给中文站用，那边这两个
+    品类是有货的。
+  */
+  const categoryLines = categories.flatMap((category) => {
     const count = publishedProducts.filter((p) => p.categoryPath[0] === category.slug).length;
-    return `- [${category.name}](${absoluteUrl(`/products/${category.slug}/`)}): ${category.summary} ${count} models.`;
+    if (!count) return [];
+    return [
+      `- [${category.name}](${absoluteUrl(`/products/${category.slug}/`)}): ${category.summary} ${count} models.`,
+    ];
   });
 
   /*
