@@ -1,19 +1,23 @@
 /**
- * 把 docs/collaboration/CLIENT-RUNBOOK.md 生成成 Word 文档,放到客户桌面。
+ * 把仓库里的一份 markdown 生成成 Word 文档,放到客户桌面。默认源是客户操作手册。
  *
  * 为什么是生成器而不是直接写 .docx:
  * 客户 2026-09-21 要求 runbook 改成 Word 并放在 Desktop\hyde\。但只存在于桌面的
  * 文件不在 git 里,下一个 session 读不到,一次上下文压缩之后就等于没有。所以
  * **权威源仍然是仓库里的 markdown**,Word 是它的一份导出。改内容改 md,然后跑这个。
  *
+ * 2026-09-22 起 --src 可换源文件,因为交给客户的不只有操作手册,还有数据复盘报告。
+ * 输出文件名跟着源文件名走。
+ *
  * 用法:
- *   npm run runbook:docx                 生成到 %USERPROFILE%\Desktop\hyde\
- *   node scripts/build-client-runbook-docx.mjs --out "D:\\某处"   换目录
+ *   npm run runbook:docx                  操作手册 → %USERPROFILE%\Desktop\hyde\
+ *   node scripts/build-client-runbook-docx.mjs --src docs/research/某份.md
+ *   node scripts/build-client-runbook-docx.mjs --out "D:\\某处"
  *
  * 依赖 docx(已在 devDependencies 里),不需要 pandoc,不需要装任何新东西。
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
-import { join } from "node:path";
+import { join, basename } from "node:path";
 import { homedir } from "node:os";
 import {
   Document,
@@ -28,10 +32,11 @@ import {
   AlignmentType,
 } from "docx";
 
-const SOURCE = "docs/collaboration/CLIENT-RUNBOOK.md";
+const argSrc = process.argv.indexOf("--src");
+const SOURCE = argSrc !== -1 ? process.argv[argSrc + 1] : "docs/collaboration/CLIENT-RUNBOOK.md";
 const argOut = process.argv.indexOf("--out");
 const OUT_DIR = argOut !== -1 ? process.argv[argOut + 1] : join(homedir(), "Desktop", "hyde");
-const OUT_FILE = join(OUT_DIR, "CLIENT-RUNBOOK.docx");
+const OUT_FILE = join(OUT_DIR, `${basename(SOURCE, ".md")}.docx`);
 
 const HEADINGS = [
   HeadingLevel.HEADING_1,
@@ -222,5 +227,5 @@ try {
   throw error;
 }
 
-console.log(`runbook docx: ${OUT_FILE}`);
+console.log(`docx: ${OUT_FILE}`);
 console.log(`  源: ${SOURCE}(${markdown.split(/\r?\n/).length} 行)`);
