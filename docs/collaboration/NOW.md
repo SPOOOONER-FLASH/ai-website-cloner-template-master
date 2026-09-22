@@ -12,9 +12,15 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Claude release | out/, out-rayen/ | 同步 origin/main（本地落后 61 个提交）后重跑发布构建；开工时工作树干净、HEAD==origin/main | 2026-09-22 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |
 | Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
 | Claude news expansion | content/news/*.json — **只动 body / bodyEs / bodyPt / faq**，不碰 heroImage | 35 篇旧文全部扩写到 ≥1,600 词三语；按 AI 引用排序分批提交 | 2026-09-22 |
+
+> ⚠ 2026-09-22：甲方通知 Codex 已下线，指示本次发布不等他们的认领。核对过了：
+> `codex/guides-visual-refresh`（04b02b69cac）已全部并入 origin/main，未合并提交为 0；
+> 他们的工作树里除 out/ 外没有任何未提交改动。所以上面两行 Codex 的认领是**停在半途的记录**，
+> 本次构建没有烤进任何未提交的源码。行保留不删 —— 删自己的行，不删别人的。
 Claude 2026-09-15 → **给雷茵会话的一条**：UNION 取数的前缀过滤
 `/^(?:UL|PRE-?|G|T)\d/i` **静默漏掉了九个型号** —— MUL1022 / MUL1066 / MUL2101 /
 TSG52 / TSG1169 / TSG1170 / TSG1226 / TSG4227 / USG1，全都是空规格表。

@@ -7,3 +7,10 @@
 # Batch files must always use CRLF
 *.bat text eol=crlf
 *.cmd text eol=crlf
+
+# Generated files whose --check gates compare raw file text byte-for-byte
+# (scripts/spec-coverage.mjs:213, scripts/build-legacy-redirects.mjs:243).
+# The generators always write LF, so a CRLF checkout makes the gate report the
+# file as stale when the data is identical — it failed the 2026-09-22 build.
+docs/research/SPEC_COVERAGE.json text eol=lf
+deploy/nginx/legacy-redirects.conf text eol=lf
