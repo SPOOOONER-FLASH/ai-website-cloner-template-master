@@ -28,9 +28,9 @@
 | 4 | finish-codes-us26d-626-630 | 20 | 788 | 812 | **已做** 批2 |
 | 5 | mortise-lock-backset-and-centre-distance-guide | 15 | 702 | 898 | **已做** 批2 |
 | 6 | reading-door-hardware-model-numbers | 14 | 679 | 921 | **已做** 批2 |
-| 7 | euro-cylinder-length-and-split | 10 | 626 | 974 | 待做 |
-| 8 | door-coordinator-double-fire-door | 9 | 753 | 847 | 待做 |
-| 9 | fitting-a-euro-cylinder | 6 | 866 | 734 | 待做 |
+| 7 | euro-cylinder-length-and-split | 10 | 626 | 974 | **已做** 批3 |
+| 8 | door-coordinator-double-fire-door | 9 | 753 | 847 | **已做** 批3 |
+| 9 | fitting-a-euro-cylinder | 6 | 866 | 734 | **已做** 批3 |
 | 10 | what-an-old-padlock-tells-a-lock-factory | 0 | 1093 | 507 | 待做 |
 | 11 | stainless-steel-grades-304-201-316 | 0 | 889 | 711 | 待做 |
 | 12 | narrow-stile-aluminium-door-lock-sag | 0 | 883 | 717 | 待做 |
