@@ -1,0 +1,272 @@
+{
+  "slug": "certification-and-test-validation-2026",
+  "title": "Validating a Hardware Certificate 2026: The Seven Parts, DoP and CE Marking, and the Six Red Flags",
+  "kind": "insight",
+  "publishedAt": "2026-09-21",
+  "summary": "A certificate either survives being checked or it does not, and checking one takes about five minutes if you know what to look at. This page sets out the seven parts every genuine test certificate carries, explains the difference between accreditation and certification, covers Declarations of Performance and CE marking for door hardware, lists the six red flags that mean stop, and states plainly what we do and do not hold.",
+  "author": {
+    "name": "Johnson Liu",
+    "nameZh": "柳雷博",
+    "role": "Digital Communications, Canton Hyland",
+    "roleEs": "Comunicación Digital, Canton Hyland",
+    "rolePt": "Comunicação Digital, Canton Hyland",
+    "credential": "MA Digital Media, Johns Hopkins University",
+    "url": "https://www.linkedin.com/in/leiboliu"
+  },
+  "heroImage": {
+    "src": "/images/editorial/guides-reference-desk-1600.webp",
+    "ratio": "16 / 10",
+    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+  },
+  "seoTitle": "Validating a Hardware Certificate 2026: DoP, CE and Red Flags | Canton Hyland",
+  "seoDescription": "How to check a door hardware test certificate: the seven parts it must carry, accreditation versus certification, Declarations of Performance and CE marking, and six red flags.",
+  "body": [
+    "Almost nobody checks a certificate. It arrives as a PDF with a logo, it satisfies the line on the submittal, and it is filed.",
+    "That is why the bad ones work. Not because they are sophisticated forgeries — almost none are — but because they are never opened by somebody looking for the seven things below.",
+    "## The seven parts of a genuine test certificate",
+    "| Part | What it tells you | Missing means |\n| --- | --- | --- |\n| Issuing laboratory or body, with address | Who performed or certified the test | The document has no author |\n| Accreditation reference | That a competent authority audits that lab | A lab vouching only for itself |\n| The standard, with its full designation and year | What was actually tested against | An unverifiable claim |\n| Report or certificate number | The record you can check against the register | Nothing can be looked up |\n| Date of issue and validity or review date | Whether it is current | It may have lapsed |\n| Scope of application | Which sizes and configurations it covers | It may not cover your product |\n| The tested configuration, described | Exactly what was in the test rig | The result attaches to nothing identifiable |",
+    "Six of those seven are usually present on any real document. **The one most often missing, and most often the one that matters, is the scope of application** — the range of sizes, materials, frame types and hardware sets the result extends to.",
+    "A certificate without a scope is a result for one object. With a scope, it is a result for a family, and your product is either inside that family or it is not.",
+    "## Accreditation is not certification, and the difference is who watches",
+    "These two words are used interchangeably in sales conversations and they mean different things.",
+    "**Certification** is a body stating that a product meets a standard. **Accreditation** is a higher-level authority stating that the certifying body is competent to make that statement — through an audit of its methods, equipment and staff.",
+    "A certificate from an unaccredited body is a statement by an organisation that nobody has checked. It may be perfectly sound. It is not evidence in the sense a specification means, and a reviewer who knows the difference will treat it as a letter.",
+    "So the useful question is not \"is it certified\" but **\"who accredits the body that certified it, and what is the accreditation number\"**. A genuine certificate carries that on its face.",
+    "## CE marking and the Declaration of Performance",
+    "For construction products in the European system — and door hardware covered by harmonised standards such as EN 1125, EN 179, EN 1154, EN 1935 and EN 12209 is in that system — the manufacturer issues a **Declaration of Performance** and applies the CE marking.",
+    "That structure is worth understanding because it changes what you should ask for.",
+    "The DoP is the manufacturer's declared performance against the harmonised standard, backed by testing carried out or assessed by a **notified body** — an organisation designated by a member state for that purpose, with a four-digit identification number.",
+    "So on a CE-marked product there are three things to look for, and they connect: the CE mark itself, the notified body's number, and the DoP that states the declared classification. A CE mark with no DoP behind it is a sticker.",
+    "The UK operates a parallel arrangement with UKCA marking and approved bodies. Other markets have their own systems, and a certificate from one is not automatically evidence in another — the same point our fire door page makes about EN 1634-1 and UL 10C.",
+    "## How to check a certificate independently, in five minutes",
+    "**Find the issuing body's own register.** Most certification bodies publish a searchable list of current certificates. That is the authoritative source; the PDF you were sent is a copy.",
+    "**Search by the certificate number, not by the company name.** A company name will find the company. A number finds the specific document, and its absence from the register is the answer you were looking for.",
+    "**Check the scope against your product.** Your model, your size, your configuration. This is where most honest mismatches are found — not fraud, but a real certificate that covers the 900mm leaf and not the 1100mm one.",
+    "**Check the date.** Certificates lapse, and are reissued with different numbers. An out-of-date certificate is not evidence of current compliance even if the product has not changed.",
+    "**Ask for the test report, not only the certificate.** The certificate is a summary; the report is the evidence. A supplier who can produce the report has one, and a supplier who cannot may be holding a certificate issued to somebody else.",
+    "## The six red flags",
+    "**A logo with no number.** A certification body's mark on a datasheet with no certificate number behind it is decoration. This is the commonest one by a wide margin.",
+    "**A certificate in a name that is not the supplier's.** Certificates attach to the manufacturer of the tested product. A trading company forwarding a factory's certificate should say so and name the factory; one that presents it as its own is telling you something about how it operates.",
+    "**\"Tested to\" rather than \"certified to\".** Tested to a standard can mean an internal test following the method. It is not the same claim, and the wording is usually chosen deliberately.",
+    "**A scope that does not mention your size or configuration.** Covered above, and the most common legitimate failure.",
+    "**A certificate for a \"series\" or \"range\".** Sometimes genuine and defined in the scope; often a way of extending one tested model across a catalogue. Check whether the scope lists the models or describes a family by dimension.",
+    "**A refusal to provide the report.** The certificate exists or it does not, and the report either exists or the certificate is worth asking harder questions about.",
+    "## Initial type testing, FPC and why a certificate can go stale without anything changing",
+    "A certificate is a photograph of a product at one moment. Two mechanisms are supposed to keep it true afterwards, and knowing their names makes a supplier's answer much easier to assess.",
+    "**Initial type testing** is the test itself — the sample went to a laboratory, was tested against the standard, and a result was recorded. That is the event the certificate describes.",
+    "**Factory production control** is the ongoing part: the manufacturer's documented system for ensuring that what leaves the line today still matches what was tested. Under the European construction products system, FPC is audited, and a certificate for those product families references it.",
+    "That distinction explains something buyers find puzzling. A product can be genuinely tested and still drift — a supplier changes a sub-component, a plating line, a casting source — and the certificate does not automatically become false, but it stops describing the product accurately.",
+    "So on a long supply relationship the useful question is not only \"do you have a certificate\" but **\"has anything in the tested configuration changed since it was issued\"**. An honest supplier has a record of what changed and when, because that record is what FPC is.",
+    "## What to ask when a project needs evidence you have not been given",
+    "The situation is common: a specification names a classification, the supplier has not offered a certificate, and nobody wants to be the one to ask badly. Four sentences cover it.",
+    "\"Which standard and classification does this model hold, and what is the certificate number?\" — a single question that a supplier either answers with a number or does not.",
+    "\"Which body issued it, and who accredits them?\" — the accreditation question from earlier on this page.",
+    "\"Does the scope cover this size and configuration?\" — quote your leaf size, your frame type, your hardware set.",
+    "\"Can we have the test report as well as the certificate?\" — the request that separates a holder from a forwarder.",
+    "If the answer to the first is that the product is not certified, that is a usable answer and often the correct one for the application. The failure mode is not an uncertified product; it is an uncertified product described as though it were certified, which is what the six red flags above are all detecting.",
+    "## What we hold, stated plainly",
+    "Where one of our products has been tested and a certificate exists, the product page names the standard, the classification and the scope, and the certificate is available on request. Our documents page lists test documents as on-request rather than published, and that is literal: we send what exists for the exact models you ask about.",
+    "**Our 307 and 311 exit devices are in testing.** Until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing — not in a description, not in a comparison, and not by placing a standard's number near a product that has not been tested to it.",
+    "We also do not reproduce another manufacturer's certificate to describe our own product. A certificate belongs to the assembly it was issued for, and borrowing one is the same category of error as inventing a dimension — which is the argument our dimensional pages make, applied to paper.",
+    "## Why a supplier should welcome the check",
+    "The five-minute check above is sometimes read as distrust. It is the opposite: it is the only thing that makes a genuine certificate worth more than a confident sentence.",
+    "A factory that holds real evidence loses nothing when a buyer verifies it, and gains the one thing that cannot be claimed — a buyer who has checked. A factory that does not hold it is the reason the check has to exist.",
+    "So ask, and expect the register entry. It costs the supplier nothing and it is the cheapest due diligence in the whole procurement."
+  ],
+  "faq": {
+    "en": [
+      {
+        "question": "What must a genuine test certificate contain?",
+        "answer": "Seven things: the issuing laboratory or body with address, an accreditation reference, the standard with its full designation and year, a report or certificate number, the date and validity, the scope of application, and a description of the tested configuration. The one most often missing — and most often the one that matters — is the scope."
+      },
+      {
+        "question": "What is the difference between accreditation and certification?",
+        "answer": "Certification is a body stating a product meets a standard. Accreditation is a higher authority stating that the certifying body is competent to make that statement, through an audit of its methods, equipment and staff. A certificate from an unaccredited body is a statement nobody has checked."
+      },
+      {
+        "question": "What is a Declaration of Performance?",
+        "answer": "For construction products in the European system — including door hardware under harmonised standards like EN 1125, EN 179, EN 1154, EN 1935 and EN 12209 — the manufacturer issues a DoP declaring performance against that standard, backed by a notified body with a four-digit number, and applies the CE marking. A CE mark with no DoP behind it is a sticker."
+      },
+      {
+        "question": "How do I check a certificate is real?",
+        "answer": "Find the issuing body's own register and search by certificate number rather than company name. Check the scope covers your model, size and configuration. Check the date. And ask for the test report, not only the certificate — the certificate is a summary, the report is the evidence."
+      },
+      {
+        "question": "What are the red flags on a hardware certificate?",
+        "answer": "A logo with no certificate number (by far the commonest). A certificate in a name that is not the supplier's, presented as their own. \"Tested to\" rather than \"certified to\". A scope that does not mention your size or configuration. A certificate for a vague \"series\". And a refusal to provide the underlying report."
+      },
+      {
+        "question": "Do your exit devices hold fire certification?",
+        "answer": "Our 307 and 311 exit devices are in testing. Until certificate numbers exist, nothing we publish will imply they hold a fire rating, an ANSI grade or a UL listing. Where a product has been tested, the page names the standard, classification and scope, and the certificate is available on request."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué debe contener un certificado de ensayo auténtico?",
+        "answer": "Siete cosas: el laboratorio u organismo emisor con dirección, una referencia de acreditación, la norma con su designación completa y año, un número de informe o certificado, la fecha y validez, el campo de aplicación, y una descripción de la configuración ensayada. El que más falta —y el que más importa— es el campo de aplicación."
+      },
+      {
+        "question": "¿Qué diferencia hay entre acreditación y certificación?",
+        "answer": "La certificación es un organismo afirmando que un producto cumple una norma. La acreditación es una autoridad superior afirmando que ese organismo es competente para hacer esa declaración, mediante auditoría de sus métodos, equipos y personal. Un certificado de un organismo no acreditado es una declaración que nadie ha comprobado."
+      },
+      {
+        "question": "¿Qué es una Declaración de Prestaciones?",
+        "answer": "Para productos de construcción en el sistema europeo —incluido el herraje bajo normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209— el fabricante emite una DoP declarando prestaciones contra esa norma, respaldada por un organismo notificado con un número de cuatro dígitos, y aplica el marcado CE. Un marcado CE sin DoP detrás es una pegatina."
+      },
+      {
+        "question": "¿Cómo compruebo que un certificado es real?",
+        "answer": "Busque el registro del propio organismo emisor y busque por número de certificado, no por nombre de empresa. Compruebe que el campo de aplicación cubre su modelo, tamaño y configuración. Compruebe la fecha. Y pida el informe de ensayo, no solo el certificado: el certificado es un resumen, el informe es la evidencia."
+      },
+      {
+        "question": "¿Cuáles son las señales de alarma en un certificado de herraje?",
+        "answer": "Un logotipo sin número de certificado (con diferencia la más común). Un certificado a nombre de otro presentado como propio. «Ensayado según» en vez de «certificado según». Un campo de aplicación que no menciona su tamaño ni configuración. Un certificado para una «serie» vaga. Y negarse a facilitar el informe subyacente."
+      },
+      {
+        "question": "¿Sus barras antipánico tienen certificación al fuego?",
+        "answer": "Nuestros modelos 307 y 311 están en ensayo. Hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL. Donde un producto sí se ha ensayado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición."
+      }
+    ],
+    "pt": [
+      {
+        "question": "O que um certificado de ensaio autêntico deve conter?",
+        "answer": "Sete coisas: o laboratório ou organismo emissor com morada, uma referência de acreditação, a norma com a sua designação completa e ano, um número de relatório ou certificado, a data e validade, o campo de aplicação, e uma descrição da configuração ensaiada. O que mais falta — e o que mais importa — é o campo de aplicação."
+      },
+      {
+        "question": "Qual é a diferença entre acreditação e certificação?",
+        "answer": "A certificação é um organismo a afirmar que um produto cumpre uma norma. A acreditação é uma autoridade superior a afirmar que esse organismo é competente para fazer essa declaração, através de auditoria dos seus métodos, equipamentos e pessoal. Um certificado de um organismo não acreditado é uma declaração que ninguém verificou."
+      },
+      {
+        "question": "O que é uma Declaração de Desempenho?",
+        "answer": "Para produtos de construção no sistema europeu — incluindo a ferragem sob normas harmonizadas como EN 1125, EN 179, EN 1154, EN 1935 e EN 12209 — o fabricante emite uma DoP declarando desempenho contra essa norma, respaldada por um organismo notificado com um número de quatro dígitos, e aplica a marcação CE. Uma marcação CE sem DoP por trás é um autocolante."
+      },
+      {
+        "question": "Como verifico se um certificado é real?",
+        "answer": "Procure o registro do próprio organismo emissor e pesquise por número de certificado, não por nome de empresa. Verifique se o campo de aplicação cobre o seu modelo, tamanho e configuração. Verifique a data. E peça o relatório de ensaio, não só o certificado: o certificado é um resumo, o relatório é a evidência."
+      },
+      {
+        "question": "Quais são os sinais de alarme num certificado de ferragem?",
+        "answer": "Um logótipo sem número de certificado (de longe o mais comum). Um certificado em nome de outro apresentado como próprio. «Ensaiado segundo» em vez de «certificado segundo». Um campo de aplicação que não menciona o seu tamanho nem configuração. Um certificado para uma «série» vaga. E recusar-se a facultar o relatório subjacente."
+      },
+      {
+        "question": "As vossas barras antipânico têm certificação ao fogo?",
+        "answer": "Os nossos modelos 307 e 311 estão em ensaio. Até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL. Onde um produto foi ensaiado, a página nomeia a norma, a classificação e o campo de aplicação, e o certificado está disponível mediante pedido."
+      }
+    ]
+  },
+  "titleEs": "Validar un certificado de herraje 2026: las siete partes, DoP y marcado CE, y las seis señales de alarma",
+  "summaryEs": "Un certificado sobrevive a una comprobación o no la sobrevive, y comprobarlo lleva unos cinco minutos si se sabe qué mirar. Esta página fija las siete partes que lleva todo certificado de ensayo auténtico, explica la diferencia entre acreditación y certificación, cubre las Declaraciones de Prestaciones y el marcado CE del herraje de puerta, enumera las seis señales de alarma que significan parar, e indica con claridad qué tenemos y qué no.",
+  "seoTitleEs": "Validar un certificado de herraje 2026: DoP, CE y alarmas | Canton Hyland",
+  "seoDescriptionEs": "Cómo comprobar un certificado de ensayo de herraje: las siete partes que debe llevar, acreditación frente a certificación, Declaraciones de Prestaciones y marcado CE, y seis señales de alarma.",
+  "bodyEs": [
+    "Casi nadie comprueba un certificado. Llega como un PDF con un logotipo, satisface la línea del submittal, y se archiva.",
+    "Por eso funcionan los malos. No porque sean falsificaciones sofisticadas —casi ninguno lo es— sino porque nunca los abre alguien que busque las siete cosas de abajo.",
+    "## Las siete partes de un certificado de ensayo auténtico",
+    "| Parte | Qué le dice | Si falta significa |\n| --- | --- | --- |\n| Laboratorio u organismo emisor, con dirección | Quién hizo o certificó el ensayo | El documento no tiene autor |\n| Referencia de acreditación | Que una autoridad competente audita a ese laboratorio | Un laboratorio que responde solo por sí mismo |\n| La norma, con designación completa y año | Contra qué se ensayó realmente | Una afirmación inverificable |\n| Número de informe o certificado | El registro contra el que puede contrastar | No se puede buscar nada |\n| Fecha de emisión y validez o revisión | Si está vigente | Puede haber caducado |\n| Campo de aplicación | Qué tamaños y configuraciones cubre | Puede no cubrir su producto |\n| La configuración ensayada, descrita | Exactamente qué había en el banco de ensayo | El resultado no se adhiere a nada identificable |",
+    "Seis de esas siete suelen estar en cualquier documento real. **La que más falta, y la que más suele importar, es el campo de aplicación** —el rango de tamaños, materiales, tipos de cerco y conjuntos de herraje a los que se extiende el resultado.",
+    "Un certificado sin campo de aplicación es un resultado para un objeto. Con campo, es un resultado para una familia, y su producto está dentro de esa familia o no lo está.",
+    "## La acreditación no es la certificación, y la diferencia es quién vigila",
+    "Estas dos palabras se usan indistintamente en conversaciones comerciales y significan cosas distintas.",
+    "La **certificación** es un organismo afirmando que un producto cumple una norma. La **acreditación** es una autoridad de nivel superior afirmando que ese organismo certificador es competente para hacer esa afirmación —mediante una auditoría de sus métodos, equipos y personal.",
+    "Un certificado de un organismo no acreditado es una declaración de una organización a la que nadie ha comprobado. Puede ser perfectamente sólida. No es evidencia en el sentido que quiere decir una especificación, y un revisor que conoce la diferencia la tratará como una carta.",
+    "Así que la pregunta útil no es «¿está certificado?» sino **«¿quién acredita al organismo que lo certificó, y cuál es el número de acreditación?»**. Un certificado auténtico lo lleva en su cara.",
+    "## El marcado CE y la Declaración de Prestaciones",
+    "Para productos de construcción en el sistema europeo —y el herraje de puerta cubierto por normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209 está en ese sistema— el fabricante emite una **Declaración de Prestaciones** y aplica el marcado CE.",
+    "Esa estructura merece entenderse porque cambia qué debe pedir.",
+    "La DoP es la prestación que declara el fabricante contra la norma armonizada, respaldada por ensayos realizados o evaluados por un **organismo notificado** —una organización designada por un estado miembro para ese fin, con un número identificativo de cuatro dígitos.",
+    "Así que en un producto con marcado CE hay tres cosas que buscar, y están conectadas: el propio marcado CE, el número del organismo notificado, y la DoP que indica la clasificación declarada. Un marcado CE sin DoP detrás es una pegatina.",
+    "El Reino Unido opera un esquema paralelo con marcado UKCA y organismos aprobados. Otros mercados tienen sus propios sistemas, y un certificado de uno no es automáticamente evidencia en otro —el mismo punto que hace nuestra página de cortafuego sobre EN 1634-1 y UL 10C.",
+    "## Cómo comprobar un certificado de forma independiente, en cinco minutos",
+    "**Busque el registro del propio organismo emisor.** La mayoría de los organismos de certificación publican una lista consultable de certificados vigentes. Esa es la fuente autorizada; el PDF que le mandaron es una copia.",
+    "**Busque por el número de certificado, no por el nombre de la empresa.** Un nombre de empresa encontrará la empresa. Un número encuentra el documento concreto, y su ausencia del registro es la respuesta que buscaba.",
+    "**Contraste el campo de aplicación con su producto.** Su modelo, su tamaño, su configuración. Aquí es donde se encuentran la mayoría de los desajustes honestos: no fraude, sino un certificado real que cubre la hoja de 900 mm y no la de 1100.",
+    "**Compruebe la fecha.** Los certificados caducan y se reemiten con números distintos. Un certificado caducado no es evidencia de conformidad actual aunque el producto no haya cambiado.",
+    "**Pida el informe de ensayo, no solo el certificado.** El certificado es un resumen; el informe es la evidencia. Un proveedor que puede producir el informe lo tiene, y uno que no puede quizá esté sosteniendo un certificado emitido a otro.",
+    "## Las seis señales de alarma",
+    "**Un logotipo sin número.** La marca de un organismo de certificación en una ficha técnica sin número de certificado detrás es decoración. Es con diferencia la más común.",
+    "**Un certificado a un nombre que no es el del proveedor.** Los certificados se adhieren al fabricante del producto ensayado. Una empresa comercial que reenvía el certificado de una fábrica debe decirlo y nombrar la fábrica; una que lo presenta como propio le está diciendo algo sobre cómo opera.",
+    "**«Ensayado según» en vez de «certificado según».** Ensayado según una norma puede significar un ensayo interno siguiendo el método. No es la misma afirmación, y la redacción suele elegirse a propósito.",
+    "**Un campo de aplicación que no menciona su tamaño ni configuración.** Tratado arriba, y el fallo legítimo más común.",
+    "**Un certificado para una «serie» o «gama».** A veces auténtico y definido en el campo de aplicación; a menudo una forma de extender un modelo ensayado a todo un catálogo. Compruebe si el campo enumera los modelos o describe una familia por dimensión.",
+    "**Negarse a facilitar el informe.** El certificado existe o no existe, y el informe existe o el certificado merece preguntas más duras.",
+    "## Ensayo inicial de tipo, CPF, y por qué un certificado puede quedarse obsoleto sin que cambie nada",
+    "Un certificado es una fotografía de un producto en un momento. Dos mecanismos deben mantenerlo cierto después, y conocer sus nombres hace mucho más fácil valorar la respuesta de un proveedor.",
+    "El **ensayo inicial de tipo** es el ensayo en sí: la muestra fue a un laboratorio, se ensayó contra la norma, y se registró un resultado. Ese es el hecho que describe el certificado.",
+    "El **control de producción en fábrica** es la parte continua: el sistema documentado del fabricante para asegurar que lo que sale de la línea hoy sigue coincidiendo con lo que se ensayó. En el sistema europeo de productos de construcción, el CPF se audita, y un certificado de esas familias de producto lo referencia.",
+    "Esa distinción explica algo que desconcierta a los compradores. Un producto puede estar genuinamente ensayado y aun así derivar —un proveedor cambia un subcomponente, una línea de recubrimiento, una fuente de fundición— y el certificado no se vuelve falso automáticamente, pero deja de describir el producto con exactitud.",
+    "Así que en una relación de suministro larga la pregunta útil no es solo «¿tiene certificado?» sino **«¿ha cambiado algo de la configuración ensayada desde que se emitió?»**. Un proveedor honesto tiene un registro de qué cambió y cuándo, porque ese registro es lo que es el CPF.",
+    "## Qué preguntar cuando un proyecto necesita evidencia que no le han dado",
+    "La situación es común: una especificación nombra una clasificación, el proveedor no ha ofrecido certificado, y nadie quiere ser quien pregunte mal. Cuatro frases lo cubren.",
+    "«¿Qué norma y qué clasificación tiene este modelo, y cuál es el número de certificado?» —una sola pregunta que un proveedor responde con un número o no responde.",
+    "«¿Qué organismo lo emitió, y quién los acredita?» —la pregunta de acreditación de más arriba en esta página.",
+    "«¿El campo de aplicación cubre este tamaño y esta configuración?» —cite su tamaño de hoja, su tipo de cerco, su conjunto de herraje.",
+    "«¿Podemos tener también el informe de ensayo además del certificado?» —la petición que separa a quien lo tiene de quien lo reenvía.",
+    "Si la respuesta a la primera es que el producto no está certificado, esa es una respuesta utilizable y a menudo la correcta para la aplicación. El modo de fallo no es un producto sin certificar: es un producto sin certificar descrito como si lo estuviera, que es lo que detectan las seis señales de alarma de arriba.",
+    "## Qué tenemos, dicho sin rodeos",
+    "Donde uno de nuestros productos se ha ensayado y existe certificado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición. Nuestra página de documentos indica los documentos de ensayo como a petición y no como publicados, y eso es literal: mandamos lo que existe para los modelos exactos por los que pregunte.",
+    "**Nuestras barras antipánico 307 y 311 están en ensayo.** Hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL: ni en una descripción, ni en una comparación, ni colocando el número de una norma cerca de un producto que no se ha ensayado a ella.",
+    "Tampoco reproducimos el certificado de otro fabricante para describir un producto nuestro. Un certificado pertenece al conjunto para el que se emitió, y tomarlo prestado es la misma categoría de error que inventar una cota —que es el argumento de nuestras páginas dimensionales, aplicado al papel.",
+    "## Por qué un proveedor debería agradecer la comprobación",
+    "La comprobación de cinco minutos de arriba se lee a veces como desconfianza. Es lo contrario: es lo único que hace que un certificado auténtico valga más que una frase segura.",
+    "Una fábrica que tiene evidencia real no pierde nada cuando un comprador la verifica, y gana lo único que no se puede afirmar: un comprador que ha comprobado. Una fábrica que no la tiene es la razón de que la comprobación tenga que existir.",
+    "Así que pregunte, y espere la entrada del registro. Al proveedor no le cuesta nada y es la diligencia debida más barata de toda la compra."
+  ],
+  "titlePt": "Validar um certificado de ferragem 2026: as sete partes, DoP e marcação CE, e os seis sinais de alarme",
+  "summaryPt": "Um certificado sobrevive a uma verificação ou não sobrevive, e verificá-lo leva cerca de cinco minutos se souber o que olhar. Esta página estabelece as sete partes que todo certificado de ensaio autêntico carrega, explica a diferença entre acreditação e certificação, cobre as Declarações de Desempenho e a marcação CE da ferragem de porta, enumera os seis sinais de alarme que significam parar, e indica com clareza o que temos e o que não temos.",
+  "seoTitlePt": "Validar um certificado de ferragem 2026: DoP, CE e alarmes | Canton Hyland",
+  "seoDescriptionPt": "Como verificar um certificado de ensaio de ferragem: as sete partes que deve levar, acreditação contra certificação, Declarações de Desempenho e marcação CE, e seis sinais de alarme.",
+  "bodyPt": [
+    "Quase ninguém verifica um certificado. Chega como um PDF com um logótipo, satisfaz a linha do submittal, e é arquivado.",
+    "É por isso que os maus funcionam. Não porque sejam falsificações sofisticadas — quase nenhum é — mas porque nunca são abertos por alguém à procura das sete coisas abaixo.",
+    "## As sete partes de um certificado de ensaio autêntico",
+    "| Parte | O que lhe diz | Se faltar significa |\n| --- | --- | --- |\n| Laboratório ou organismo emissor, com morada | Quem fez ou certificou o ensaio | O documento não tem autor |\n| Referência de acreditação | Que uma autoridade competente audita esse laboratório | Um laboratório que responde só por si |\n| A norma, com designação completa e ano | Contra o que foi realmente ensaiado | Uma afirmação inverificável |\n| Número de relatório ou certificado | O registro contra o qual pode confrontar | Não se pode procurar nada |\n| Data de emissão e validade ou revisão | Se está vigente | Pode ter caducado |\n| Campo de aplicação | Que tamanhos e configurações cobre | Pode não cobrir o seu produto |\n| A configuração ensaiada, descrita | Exatamente o que estava na bancada de ensaio | O resultado não adere a nada identificável |",
+    "Seis dessas sete costumam estar em qualquer documento real. **A que mais falta, e a que mais costuma importar, é o campo de aplicação** — a faixa de tamanhos, materiais, tipos de aro e conjuntos de ferragem a que o resultado se estende.",
+    "Um certificado sem campo de aplicação é um resultado para um objeto. Com campo, é um resultado para uma família, e o seu produto está dentro dessa família ou não está.",
+    "## A acreditação não é a certificação, e a diferença é quem vigia",
+    "Estas duas palavras são usadas indistintamente em conversas comerciais e significam coisas diferentes.",
+    "A **certificação** é um organismo a afirmar que um produto cumpre uma norma. A **acreditação** é uma autoridade de nível superior a afirmar que esse organismo certificador é competente para fazer essa afirmação — através de uma auditoria dos seus métodos, equipamentos e pessoal.",
+    "Um certificado de um organismo não acreditado é uma declaração de uma organização que ninguém verificou. Pode ser perfeitamente sólida. Não é evidência no sentido que uma especificação quer dizer, e um revisor que conhece a diferença vai tratá-la como uma carta.",
+    "Então a pergunta útil não é «está certificado?» mas **«quem acredita o organismo que o certificou, e qual é o número de acreditação?»**. Um certificado autêntico leva isso na face.",
+    "## A marcação CE e a Declaração de Desempenho",
+    "Para produtos de construção no sistema europeu — e a ferragem de porta coberta por normas harmonizadas como EN 1125, EN 179, EN 1154, EN 1935 e EN 12209 está nesse sistema — o fabricante emite uma **Declaração de Desempenho** e aplica a marcação CE.",
+    "Essa estrutura merece ser entendida porque muda o que deve pedir.",
+    "A DoP é o desempenho que o fabricante declara contra a norma harmonizada, respaldado por ensaios realizados ou avaliados por um **organismo notificado** — uma organização designada por um estado-membro para esse fim, com um número identificativo de quatro dígitos.",
+    "Então num produto com marcação CE há três coisas a procurar, e estão ligadas: a própria marcação CE, o número do organismo notificado, e a DoP que indica a classificação declarada. Uma marcação CE sem DoP por trás é um autocolante.",
+    "O Reino Unido opera um esquema paralelo com marcação UKCA e organismos aprovados. Outros mercados têm os seus próprios sistemas, e um certificado de um não é automaticamente evidência noutro — o mesmo ponto que a nossa página de corta-fogo faz sobre a EN 1634-1 e a UL 10C.",
+    "## Como verificar um certificado de forma independente, em cinco minutos",
+    "**Procure o registro do próprio organismo emissor.** A maioria dos organismos de certificação publica uma lista consultável de certificados vigentes. Essa é a fonte autorizada; o PDF que lhe mandaram é uma cópia.",
+    "**Pesquise pelo número de certificado, não pelo nome da empresa.** Um nome de empresa vai encontrar a empresa. Um número encontra o documento concreto, e a sua ausência do registro é a resposta que procurava.",
+    "**Confronte o campo de aplicação com o seu produto.** O seu modelo, o seu tamanho, a sua configuração. É aqui que se encontram a maioria dos desencontros honestos: não fraude, mas um certificado real que cobre a folha de 900 mm e não a de 1100.",
+    "**Verifique a data.** Os certificados caducam e são reemitidos com números diferentes. Um certificado caducado não é evidência de conformidade atual mesmo que o produto não tenha mudado.",
+    "**Peça o relatório de ensaio, não só o certificado.** O certificado é um resumo; o relatório é a evidência. Um fornecedor que consegue produzir o relatório tem-no, e um que não consegue talvez esteja a segurar um certificado emitido a outro.",
+    "## Os seis sinais de alarme",
+    "**Um logótipo sem número.** A marca de um organismo de certificação numa ficha técnica sem número de certificado por trás é decoração. É de longe o mais comum.",
+    "**Um certificado num nome que não é o do fornecedor.** Os certificados aderem ao fabricante do produto ensaiado. Uma empresa comercial que reencaminha o certificado de uma fábrica deve dizê-lo e nomear a fábrica; uma que o apresenta como próprio está dizendo-lhe algo sobre como opera.",
+    "**«Ensaiado segundo» em vez de «certificado segundo».** Ensaiado segundo uma norma pode significar um ensaio interno a seguir o método. Não é a mesma afirmação, e a redação costuma ser escolhida de propósito.",
+    "**Um campo de aplicação que não menciona o seu tamanho nem configuração.** Tratado acima, e a falha legítima mais comum.",
+    "**Um certificado para uma «série» ou «linha».** Às vezes autêntico e definido no campo de aplicação; muitas vezes uma forma de estender um modelo ensaiado a todo um catálogo. Verifique se o campo enumera os modelos ou descreve uma família por dimensão.",
+    "**Recusar-se a facultar o relatório.** O certificado existe ou não existe, e o relatório existe ou o certificado merece perguntas mais duras.",
+    "## Ensaio inicial de tipo, CPF, e por que um certificado pode ficar obsoleto sem nada mudar",
+    "Um certificado é uma fotografia de um produto num momento. Dois mecanismos devem mantê-lo verdadeiro depois, e conhecer os seus nomes torna muito mais fácil avaliar a resposta de um fornecedor.",
+    "O **ensaio inicial de tipo** é o ensaio em si: a amostra foi a um laboratório, foi ensaiada contra a norma, e um resultado foi registado. Esse é o fato que o certificado descreve.",
+    "O **controle de produção em fábrica** é a parte contínua: o sistema documentado do fabricante para garantir que o que sai da linha hoje continua a coincidir com o que foi ensaiado. No sistema europeu de produtos de construção, o CPF é auditado, e um certificado dessas famílias de produto referencia-o.",
+    "Essa distinção explica algo que desconcerta os compradores. Um produto pode estar genuinamente ensaiado e ainda assim derivar — um fornecedor muda um subcomponente, uma linha de revestimento, uma fonte de fundição — e o certificado não se torna falso automaticamente, mas deixa de descrever o produto com exatidão.",
+    "Então numa relação de fornecimento longa a pergunta útil não é só «tem certificado?» mas **«mudou alguma coisa da configuração ensaiada desde que foi emitido?»**. Um fornecedor honesto tem um registro do que mudou e quando, porque esse registro é o que o CPF é.",
+    "## O que perguntar quando um projeto precisa de evidência que não lhe deram",
+    "A situação é comum: uma especificação nomeia uma classificação, o fornecedor não ofereceu certificado, e ninguém quer ser quem pergunta mal. Quatro frases cobrem isso.",
+    "«Que norma e que classificação este modelo tem, e qual é o número de certificado?» — uma só pergunta que um fornecedor responde com um número ou não responde.",
+    "«Que organismo o emitiu, e quem os acredita?» — a pergunta de acreditação de mais acima nesta página.",
+    "«O campo de aplicação cobre este tamanho e esta configuração?» — cite o seu tamanho de folha, o seu tipo de aro, o seu conjunto de ferragem.",
+    "«Podemos ter também o relatório de ensaio além do certificado?» — o pedido que separa quem o tem de quem o reencaminha.",
+    "Se a resposta à primeira é que o produto não está certificado, essa é uma resposta utilizável e muitas vezes a correta para a aplicação. O modo de falha não é um produto sem certificação: é um produto sem certificação descrito como se estivesse, que é o que os seis sinais de alarme acima detetam.",
+    "## O que temos, dito sem rodeios",
+    "Onde um dos nossos produtos foi ensaiado e existe certificado, a página nomeia a norma, a classificação e o campo de aplicação, e o certificado está disponível mediante pedido. A nossa página de documentos indica os documentos de ensaio como mediante pedido e não como publicados, e isso é literal: mandamos o que existe para os modelos exatos sobre os quais perguntar.",
+    "**As nossas barras antipânico 307 e 311 estão em ensaio.** Até existirem números de certificado, nada do que publicarmos vai dar a entender que têm classificação ao fogo, grau ANSI ou listagem UL: nem numa descrição, nem numa comparação, nem colocando o número de uma norma perto de um produto que não foi ensaiado a ela.",
+    "Também não reproduzimos o certificado de outro fabricante para descrever um produto nosso. Um certificado pertence ao conjunto para o qual foi emitido, e tomá-lo emprestado é a mesma categoria de erro que inventar uma cota — que é o argumento das nossas páginas dimensionais, aplicado ao papel.",
+    "## Por que um fornecedor deveria agradecer a verificação",
+    "A verificação de cinco minutos acima é lida às vezes como desconfiança. É o contrário: é a única coisa que faz um certificado autêntico valer mais do que uma frase confiante.",
+    "Uma fábrica que tem evidência real não perde nada quando um comprador a verifica, e ganha a única coisa que não se pode afirmar: um comprador que verificou. Uma fábrica que não a tem é a razão de a verificação ter de existir.",
+    "Então pergunte, e espere a entrada do registro. Ao fornecedor não custa nada e é a diligência devida mais barata de toda a compra."
+  ]
+}
