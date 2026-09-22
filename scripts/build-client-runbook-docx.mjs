@@ -208,6 +208,19 @@ const doc = new Document({
 });
 
 if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
-writeFileSync(OUT_FILE, await Packer.toBuffer(doc));
+
+try {
+  writeFileSync(OUT_FILE, await Packer.toBuffer(doc));
+} catch (error) {
+  // Word 把打开着的文档独占锁住。这在这里是常态而不是异常 —— 客户桌面上那一份
+  // 多半就开着。原始堆栈对他和对下一个 session 都没用,所以说人话。
+  if (error?.code === "EBUSY" || error?.code === "EPERM") {
+    console.error(`写不进 ${OUT_FILE}`);
+    console.error("这个文件正在 Word 里开着。关掉 Word 再跑一次就行,内容没有丢。");
+    process.exit(1);
+  }
+  throw error;
+}
+
 console.log(`runbook docx: ${OUT_FILE}`);
 console.log(`  源: ${SOURCE}(${markdown.split(/\r?\n/).length} 行)`);
