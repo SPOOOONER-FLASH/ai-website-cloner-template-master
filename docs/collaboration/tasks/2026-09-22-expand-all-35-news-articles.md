@@ -1,0 +1,92 @@
+# 旧 35 篇 /news/ 全部扩写到 ≥1,600 词（三语）
+
+客户指令 2026-09-22：「旧 35 篇现在改为全部扩写」。此前的方案是择优扩写 7 篇，
+**已作废**，现在是全部 35 篇。
+
+## 规模（跑 `tmp/claude-seo/expand-order.json` 的生成逻辑可重算）
+
+| | |
+|---|---|
+| 篇数 | 35 |
+| 当前 EN 均长 | 731 词 |
+| EN 总缺口 | **30,398 词** |
+| 三语合计 | **约 91,000 词** |
+
+分批做，每批 3 篇，**每批独立提交并推送**（客户 2026-09-07 指令：做完一条推送一条）。
+
+## 排序依据：已被 AI 引用的先扩
+
+扩写一篇已经在被引用的文章，回报高于扩写一篇没人引的 —— 引用是已被验证的需求信号。
+引用数来自 `docs/research/SEO-GEO-DIGEST-2026-09-22.md`（Bing AI 引用 + Clarity
+被引页面取最大值，加 GSC AI Overview 展示）。
+
+| 序 | slug | 引用 | 当前 EN | 缺口 | 状态 |
+|---|---|---|---|---|---|
+| 1 | push-bar-or-touch-bar-panic-exit-devices | 44 | 1199 | 401 | **已做** 批1 |
+| 2 | master-key-systems-how-many-levels-you-need | 27 | 774 | 826 | **已做** 批1 |
+| 3 | handing-left-right-and-universal | 23 | 502 | 1098 | **已做** 批1 |
+| 4 | finish-codes-us26d-626-630 | 20 | 788 | 812 | 待做 |
+| 5 | mortise-lock-backset-and-centre-distance-guide | 15 | 702 | 898 | 待做 |
+| 6 | reading-door-hardware-model-numbers | 14 | 679 | 921 | 待做 |
+| 7 | euro-cylinder-length-and-split | 10 | 626 | 974 | 待做 |
+| 8 | door-coordinator-double-fire-door | 9 | 753 | 847 | 待做 |
+| 9 | fitting-a-euro-cylinder | 6 | 866 | 734 | 待做 |
+| 10 | what-an-old-padlock-tells-a-lock-factory | 0 | 1093 | 507 | 待做 |
+| 11 | stainless-steel-grades-304-201-316 | 0 | 889 | 711 | 待做 |
+| 12 | narrow-stile-aluminium-door-lock-sag | 0 | 883 | 717 | 待做 |
+| 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | 待做 |
+| 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | 待做 |
+| 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | 待做 |
+| 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | 待做 |
+| 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | 待做 |
+| 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | 待做 |
+| 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | 待做 |
+| 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | 待做 |
+| 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | 待做 |
+| 22 | what-oem-actually-changes | 0 | 700 | 900 | 待做 |
+| 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | 待做 |
+| 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | 待做 |
+| 25 | exit-device-push-bar-length | 0 | 692 | 908 | 待做 |
+| 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | 待做 |
+| 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | 待做 |
+| 28 | door-hardware-schedule-guide | 0 | 659 | 941 | 待做 |
+| 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | 待做 |
+| 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | 待做 |
+| 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | 待做 |
+| 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | 待做 |
+| 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | 待做 |
+| 34 | trim-handle-or-panic-bar | 0 | 551 | 1049 | 待做 |
+| 35 | six-values-an-order-needs | 0 | 526 | 1074 | 待做 |
+
+**做完一篇就把状态改成「已做 + 提交号」。** 这张表是进度的唯一记录。
+
+## 写什么（从复盘数据来，不是凭感觉）
+
+`SEO-GEO-REVIEW-2026-09-22.md` 第 8、9 份报告的结论：**被引用最多的内容是
+「A 和 B 哪个好、什么时候选哪个」这类比较**，因为竞争对手两个都卖所以不写。
+扩写时优先补这类段落，而不是补「什么是 A」的定义。
+
+数据里现成的、我们还没有页面回答的问题：
+
+- `door stopper ds013 vs ds011`（Bing 上有人搜）
+- `is 652 finish the same as us 26d`
+- `can chrome metal finish be satin`
+- `satin nickel echswc sn product code meaning`
+- `steel finish code 626?`
+- `euro cylinder lengths`（我们份额只有 18.92%，是强相关题里最弱的）
+- `installation coordinator bars overlapping astragals double doors`
+- `master keying system chart`（153 次展示 0 点击 —— **那个查询要的是一张图表**）
+
+## 硬约束
+
+- **三语都要 ≥1,600 词**（body / bodyEs / bodyPt），不是只有英文
+- **不碰 `heroImage`** —— Codex 在动那个字段（见 NOW.md）
+- 葡语用巴西葡语，`npm test` 里的守卫会抓欧葡写法
+- 每个数字要能追到来源，追不到就写「未确认」，不编
+- 每批跑：`npm test`、`npx tsc --noEmit`、`npm run content`
+
+## 不归我的
+
+`out/` 与 `out-rayen/` 的构建部署 **是 Codex 的 baton**（NOW.md 2026-09-22
+「Codex guides DCB」行claim 了）。第二批 20 篇 guides 源码已提交推送，
+**等 Codex 放手后一次构建，40 篇 guides + 扩写后的 news 一起上线。**
