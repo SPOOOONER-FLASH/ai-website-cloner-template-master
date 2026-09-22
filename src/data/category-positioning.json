@@ -1,0 +1,322 @@
+{
+  "lever-handles": {
+    "use": "Interior & Entry Doors",
+    "useEs": "puertas interiores y de entrada",
+    "usePt": "portas internas e de entrada",
+    "pitch": "Sprung rose, solid spindle, and a return that clears a coat sleeve.",
+    "pitchEs": "Roseta con muelle, cuadradillo macizo y retorno que no engancha la ropa.",
+    "pitchPt": "Roseta com mola, quadrado maciço e retorno que não prende a roupa."
+  },
+  "stainless-steel-handles": {
+    "use": "Entrances & Glass Doors",
+    "useEs": "entradas y puertas de vidrio",
+    "usePt": "entradas e portas de vidro",
+    "pitch": "Solid stainless through the section, not a plated shell — the finish cannot wear off.",
+    "pitchEs": "Inoxidable macizo en toda la sección, no una carcasa recubierta: el acabado no se puede desgastar.",
+    "pitchPt": "Inoxidável maciço em toda a secção, não uma casca revestida: o acabamento não se desgasta."
+  },
+  "stainless-steel-handles/brass-pull-handles": {
+    "use": "Entrance & Shopfront Doors",
+    "useEs": "puertas de entrada y de local",
+    "usePt": "portas de entrada e de loja",
+    "pitch": "Solid brass bar with through-fixing — the pull a building gets touched by every day.",
+    "pitchEs": "Barra de latón macizo con fijación pasante: el tirador que un edificio recibe cada día.",
+    "pitchPt": "Barra de latão maciço com fixação passante: o puxador que um edifício recebe todos os dias."
+  },
+  "brass-steel-hinges": {
+    "use": "Timber & Metal Doors",
+    "useEs": "puertas de madera y metálicas",
+    "usePt": "portas de madeira e metálicas",
+    "pitch": "Ball bearing knuckles carry a heavy leaf without the drop that makes a door bind.",
+    "pitchEs": "Nudillos con rodamiento: sostienen una hoja pesada sin la caída que hace rozar la puerta.",
+    "pitchPt": "Nós com rolamento: sustentam uma folha pesada sem a queda que faz a porta raspar."
+  },
+  "bathroom-accessories": {
+    "use": "Hotel & Washroom Fit-Out",
+    "useEs": "hoteles y aseos",
+    "usePt": "hotéis e sanitários",
+    "pitch": "Concealed fixings and a stainless body — the two things that decide how a washroom ages.",
+    "pitchEs": "Fijaciones ocultas y cuerpo inoxidable: lo que decide cómo envejece un aseo.",
+    "pitchPt": "Fixações ocultas e corpo inoxidável: o que decide como um sanitário envelhece."
+  },
+  "glass-door-accessories/glass-door-handles": {
+    "use": "Frameless Glass Doors",
+    "useEs": "puertas de vidrio sin marco",
+    "usePt": "portas de vidro sem aro",
+    "pitch": "Back-to-back fixing through the glass, with gaskets sized to the published glass thickness.",
+    "pitchEs": "Fijación pasante espalda con espalda, con juntas dimensionadas al espesor de vidrio publicado.",
+    "pitchPt": "Fixação passante costas com costas, com juntas dimensionadas à espessura de vidro publicada."
+  },
+  "glass-door-accessories/glass-door-patch-fittings": {
+    "use": "Frameless Glass Entrances",
+    "useEs": "entradas de vidrio sin marco",
+    "usePt": "entradas de vidro sem aro",
+    "pitch": "Patch fittings carry the leaf where there is no frame — the cut-out must match before glass is ordered.",
+    "pitchEs": "La pinza sostiene la hoja donde no hay marco: el recorte debe coincidir antes de pedir el vidrio.",
+    "pitchPt": "A pinça sustenta a folha onde não há aro: o recorte tem de coincidir antes de pedir o vidro."
+  },
+  "lock-cases": {
+    "use": "Mortice Timber & Metal Doors",
+    "useEs": "puertas de embutir, madera y metal",
+    "usePt": "portas de embutir, madeira e metal",
+    "pitch": "Backset and centre distance decide whether a replacement drops into the existing preparation.",
+    "pitchEs": "La entrada y la distancia entre ejes deciden si un recambio entra en la preparación existente.",
+    "pitchPt": "A distância ao eixo e a distância entre eixos decidem se uma substituição entra na preparação existente."
+  },
+  "lock-cylinders": {
+    "use": "Mortice & Rim Locks",
+    "useEs": "cerraduras de embutir y sobreponer",
+    "usePt": "fechaduras de embutir e de sobrepor",
+    "pitch": "Euro profile in solid brass. Tell us the door thickness and we size the halves rather than guessing.",
+    "pitchEs": "Perfil europeo en latón macizo. Díganos el espesor de puerta y dimensionamos las mitades.",
+    "pitchPt": "Perfil europeu em latão maciço. Diga-nos a espessura da porta e dimensionamos as metades."
+  },
+  "panic-exit-devices": {
+    "use": "Fire Escape & Exit Doors",
+    "useEs": "puertas de evacuación y salida",
+    "usePt": "portas de evacuação e saída",
+    "pitch": "Opens under body weight in the dark, from any point along the bar — the only requirement that matters.",
+    "pitchEs": "Abre con el peso del cuerpo, a oscuras, desde cualquier punto de la barra: el único requisito que importa.",
+    "pitchPt": "Abre com o peso do corpo, no escuro, a partir de qualquer ponto da barra: o único requisito que importa."
+  },
+  "panic-exit-devices/special-applications": {
+    "use": "Cold Rooms & Special Exits",
+    "useEs": "cámaras frigoríficas y salidas especiales",
+    "usePt": "câmaras frigoríficas e saídas especiais",
+    "pitch": "Built for openings a standard bar cannot serve — cold rooms, narrow stiles, unusual leaves.",
+    "pitchEs": "Para huecos que una barra estándar no cubre: cámaras, perfiles estrechos, hojas atípicas.",
+    "pitchPt": "Para vãos que uma barra padrão não cobre: câmaras, perfis estreitos, folhas atípicas."
+  },
+  "panic-exit-devices/exterior-trim": {
+    "use": "Outside Face of Exit Doors",
+    "useEs": "cara exterior de puertas de salida",
+    "usePt": "face externa de portas de saída",
+    "pitch": "The outside half of an exit door: it controls entry without ever controlling the way out.",
+    "pitchEs": "La mitad exterior de una puerta de salida: controla la entrada sin controlar nunca la salida.",
+    "pitchPt": "A metade externa de uma porta de saída: controla a entrada sem nunca controlar a saída."
+  },
+  "panic-exit-devices/multi-point": {
+    "use": "Double Doors & Tall Leaves",
+    "useEs": "puertas de dos hojas y hojas altas",
+    "usePt": "portas de duas folhas e folhas altas",
+    "pitch": "Two or three latching points on one bar — for leaves too tall or too wide for a single latch.",
+    "pitchEs": "Dos o tres puntos de cierre en una barra: para hojas demasiado altas o anchas para un solo picaporte.",
+    "pitchPt": "Dois ou três pontos de fecho numa barra: para folhas demasiado altas ou largas para um só trinco."
+  },
+  "panic-exit-devices/fire-door": {
+    "use": "Fire Doors",
+    "useEs": "puertas cortafuegos",
+    "usePt": "portas corta-fogo",
+    "pitch": "For a rated leaf, every item in the assembly has to belong to the tested set — ask for the evidence.",
+    "pitchEs": "En una hoja clasificada, cada elemento del conjunto debe pertenecer al ensayo: pida la evidencia.",
+    "pitchPt": "Numa folha classificada, cada elemento do conjunto tem de pertencer ao ensaio: peça a evidência."
+  },
+  "panic-exit-devices/alarmed": {
+    "use": "Controlled & Monitored Exits",
+    "useEs": "salidas controladas y monitorizadas",
+    "usePt": "saídas controladas e monitorizadas",
+    "pitch": "Sounds when the door is used, without ever preventing it from opening.",
+    "pitchEs": "Suena cuando se usa la puerta, sin impedir nunca que se abra.",
+    "pitchPt": "Soa quando a porta é usada, sem nunca impedir que ela abra."
+  },
+  "knob-locks/tubular-locks": {
+    "use": "Interior & Passage Doors",
+    "useEs": "puertas interiores y de paso",
+    "usePt": "portas internas e de passagem",
+    "pitch": "Bored preparation, adjustable backset — fits the two common door preparations without a new hole.",
+    "pitchEs": "Preparación taladrada y entrada regulable: encaja en las dos preparaciones habituales sin taladrar de nuevo.",
+    "pitchPt": "Preparação furada e distância ao eixo regulável: encaixa nas duas preparações habituais sem furar de novo."
+  },
+  "knob-locks/heavy-duty-cylindrical-locks": {
+    "use": "Schools, Offices & High Traffic",
+    "useEs": "escuelas, oficinas y alto tránsito",
+    "usePt": "escolas, escritórios e alto tráfego",
+    "pitch": "Solid steel chassis behind the trim — the part that decides how a door survives a corridor.",
+    "pitchEs": "Chasis de acero macizo tras la guarnición: la pieza que decide cómo sobrevive una puerta de pasillo.",
+    "pitchPt": "Chassi de aço maciço atrás da guarnição: a peça que decide como uma porta de corredor sobrevive."
+  },
+  "knob-locks/light-duty-cylindrical-locks": {
+    "use": "Residential & Light Commercial",
+    "useEs": "residencial y comercial ligero",
+    "usePt": "residencial e comercial leve",
+    "pitch": "The everyday interior lock: simple preparation, common backsets, quick to replace.",
+    "pitchEs": "La cerradura interior de cada día: preparación simple, entradas habituales, cambio rápido.",
+    "pitchPt": "A fechadura interna do dia a dia: preparação simples, distâncias habituais, troca rápida."
+  },
+  "knob-locks/commercial-locks": {
+    "use": "Commercial & Institutional Doors",
+    "useEs": "puertas comerciales e institucionales",
+    "usePt": "portas comerciais e institucionais",
+    "pitch": "Specified by function — entrance, privacy, classroom, passage — not by appearance.",
+    "pitchEs": "Se especifica por función —entrada, baño, aula, paso—, no por apariencia.",
+    "pitchPt": "Especifica-se por função — entrada, banheiro, sala de aula, passagem —, não por aparência."
+  },
+  "night-latches-rim-locks": {
+    "use": "Surface Fitting, Timber & Metal",
+    "useEs": "sobreponer, madera y metal",
+    "usePt": "sobrepor, madeira e metal",
+    "pitch": "Fits to the face of the door, so it goes on a leaf that was never prepared for a mortice.",
+    "pitchEs": "Se monta en la cara de la puerta, así que entra en una hoja nunca preparada para embutir.",
+    "pitchPt": "Monta-se na face da porta, portanto entra numa folha nunca preparada para embutir."
+  },
+  "deadbolts": {
+    "use": "Entrance Door Security",
+    "useEs": "seguridad en puertas de entrada",
+    "usePt": "segurança em portas de entrada",
+    "pitch": "Throw length is what resists a jamb being forced — it matters more than the number of turns.",
+    "pitchEs": "La salida del cerrojo es lo que resiste un forzado del marco: importa más que el número de vueltas.",
+    "pitchPt": "O curso do trinco é o que resiste a um arrombamento do aro: importa mais do que o número de voltas."
+  },
+  "grip-handle-sets": {
+    "use": "Front & Entrance Doors",
+    "useEs": "puertas principales y de entrada",
+    "usePt": "portas principais e de entrada",
+    "pitch": "Grip, cylinder and deadbolt as one set, so the fixing centres agree before anything is cut.",
+    "pitchEs": "Tirador, cilindro y cerrojo como un conjunto: los centros de fijación coinciden antes de cortar nada.",
+    "pitchPt": "Puxador, cilindro e trinco como um conjunto: os centros de fixação coincidem antes de cortar seja o que for."
+  },
+  "door-closers": {
+    "use": "Controlled Closing",
+    "useEs": "cierre controlado",
+    "usePt": "fecho controlado",
+    "pitch": "Closing speed, latching speed and backcheck adjust separately — a door that slams is a door not set up.",
+    "pitchEs": "Velocidad de cierre, de golpe final y frenado se ajustan por separado: una puerta que golpea es una puerta sin regular.",
+    "pitchPt": "Velocidade de fecho, de batida final e travagem ajustam-se em separado: uma porta que bate é uma porta por regular."
+  },
+  "floor-springs-and-pivots/floor-springs": {
+    "use": "Heavy Glass & Timber Entrances",
+    "useEs": "entradas pesadas de vidrio y madera",
+    "usePt": "entradas pesadas de vidro e madeira",
+    "pitch": "Carries the leaf's weight from the floor, so a heavy glass door swings without a visible closer.",
+    "pitchEs": "Soporta el peso de la hoja desde el suelo: una puerta de vidrio pesada gira sin cierrapuertas a la vista.",
+    "pitchPt": "Suporta o peso da folha a partir do chão: uma porta de vidro pesada gira sem mola à vista."
+  },
+  "floor-springs-and-pivots/overhead-door-closers": {
+    "use": "Commercial Timber & Metal Doors",
+    "useEs": "puertas comerciales de madera y metal",
+    "usePt": "portas comerciais de madeira e metal",
+    "pitch": "Mounted above the leaf where it can be serviced without lifting the door.",
+    "pitchEs": "Montado sobre la hoja, donde se puede mantener sin desmontar la puerta.",
+    "pitchPt": "Montado sobre a folha, onde se pode manter sem desmontar a porta."
+  },
+  "floor-springs-and-pivots/hydraulic-hinges": {
+    "use": "Self-Closing Interior Doors",
+    "useEs": "puertas interiores con autocierre",
+    "usePt": "portas internas com fecho automático",
+    "pitch": "Closing damper hidden inside the hinge — no arm, no cover plate, nothing on the face of the door.",
+    "pitchEs": "Amortiguador de cierre oculto dentro de la bisagra: sin brazo, sin tapa, nada en la cara de la puerta.",
+    "pitchPt": "Amortecedor de fecho oculto dentro da dobradiça: sem braço, sem tampa, nada na face da porta."
+  },
+  "floor-springs-and-pivots/top-pivots": {
+    "use": "Pivoted Glass & Timber Doors",
+    "useEs": "puertas pivotantes de vidrio y madera",
+    "usePt": "portas pivotantes de vidro e madeira",
+    "pitch": "The upper half of a pivot set — it has to be ordered with the floor spring, not after it.",
+    "pitchEs": "La mitad superior de un juego pivotante: se pide con el pivote de suelo, no después.",
+    "pitchPt": "A metade superior de um conjunto pivotante: pede-se com a mola de piso, não depois."
+  },
+  "floor-springs-and-pivots/pivot-top-patches": {
+    "use": "Frameless Glass Door Heads",
+    "useEs": "cabeceros de puertas de vidrio",
+    "usePt": "cabeceiras de portas de vidro",
+    "pitch": "Clamps the head of a frameless leaf and takes the top pivot — the cut-out is decided at the glass order.",
+    "pitchEs": "Sujeta el cabecero de una hoja sin marco y aloja el pivote superior: el recorte se decide al pedir el vidrio.",
+    "pitchPt": "Prende a cabeceira de uma folha sem aro e aloja o pivô superior: o recorte decide-se ao pedir o vidro."
+  },
+  "hardware-accessories/door-stoppers": {
+    "use": "Wall & Floor Mounting",
+    "useEs": "montaje en pared y suelo",
+    "usePt": "montagem em parede e chão",
+    "pitch": "Stops the handle reaching the wall — the cheapest item on a schedule and the one most often left off.",
+    "pitchEs": "Impide que la manilla llegue a la pared: la partida más barata del cuadro y la que más se olvida.",
+    "pitchPt": "Impede que a maçaneta chegue à parede: a rubrica mais barata do mapa e a que mais se esquece."
+  },
+  "hardware-accessories/door-flush-bolts": {
+    "use": "Inactive Leaf of Double Doors",
+    "useEs": "hoja pasiva de puertas dobles",
+    "usePt": "folha passiva de portas duplas",
+    "pitch": "Holds the inactive leaf so the active one has something to latch into.",
+    "pitchEs": "Sujeta la hoja pasiva para que la activa tenga dónde cerrar.",
+    "pitchPt": "Segura a folha passiva para que a ativa tenha onde fechar."
+  },
+  "hardware-accessories/indicators": {
+    "use": "Washroom & Cubicle Doors",
+    "useEs": "puertas de aseo y cabina",
+    "usePt": "portas de sanitário e cabine",
+    "pitch": "Occupied or vacant, readable from the corridor, with emergency release from outside.",
+    "pitchEs": "Ocupado o libre, legible desde el pasillo, con desbloqueo de emergencia desde fuera.",
+    "pitchPt": "Ocupado ou livre, legível do corredor, com desbloqueio de emergência pelo lado de fora."
+  },
+  "hardware-accessories/door-viewers": {
+    "use": "Apartment & Hotel Entry Doors",
+    "useEs": "puertas de vivienda y hotel",
+    "usePt": "portas de habitação e hotel",
+    "pitch": "Wide field of view through the leaf, sized to the door thickness rather than fitted and hoped for.",
+    "pitchEs": "Campo de visión amplio a través de la hoja, dimensionado al espesor de puerta y no montado a ojo.",
+    "pitchPt": "Campo de visão amplo através da folha, dimensionado à espessura da porta e não montado a olho."
+  },
+  "hardware-accessories/latches": {
+    "use": "Interior & Passage Doors",
+    "useEs": "puertas interiores y de paso",
+    "usePt": "portas internas e de passagem",
+    "pitch": "The bolt that actually holds the door shut — bevel direction decides which way the leaf closes.",
+    "pitchEs": "El pestillo que realmente sujeta la puerta: el bisel decide en qué sentido cierra la hoja.",
+    "pitchPt": "O trinco que realmente segura a porta: o bisel decide em que sentido a folha fecha."
+  },
+  "hardware-accessories/security-door-guards": {
+    "use": "Apartment & Hotel Doors",
+    "useEs": "puertas de vivienda y hotel",
+    "usePt": "portas de habitação e hotel",
+    "pitch": "Lets a door open far enough to speak through and no further.",
+    "pitchEs": "Deja abrir la puerta lo justo para hablar y nada más.",
+    "pitchPt": "Deixa a porta abrir o suficiente para falar e nada mais."
+  },
+  "hardware-accessories/power-transfer-devices": {
+    "use": "Electrified Door Hardware",
+    "useEs": "herraje eléctrico de puerta",
+    "usePt": "ferragem elétrica de porta",
+    "pitch": "Carries the cable from frame to leaf without it being visible or getting trapped.",
+    "pitchEs": "Lleva el cable del marco a la hoja sin que quede a la vista ni se pince.",
+    "pitchPt": "Leva o cabo do aro para a folha sem ficar à vista nem ser entalado."
+  },
+  "hardware-accessories/house-numbers": {
+    "use": "Gates & Entrance Walls",
+    "useEs": "cancelas y muros de entrada",
+    "usePt": "portões e muros de entrada",
+    "pitch": "Outdoor numerals that keep their finish through a season of weather.",
+    "pitchEs": "Números de exterior que conservan su acabado toda una temporada a la intemperie.",
+    "pitchPt": "Numerais de exterior que mantêm o acabamento ao longo de uma estação de intempérie."
+  },
+  "hardware-accessories": {
+    "use": "Door Hardware Accessories",
+    "useEs": "accesorios de herraje de puerta",
+    "usePt": "acessórios de ferragem de porta",
+    "pitch": "The items a door schedule needs and most schedules forget.",
+    "pitchEs": "Las partidas que un cuadro de puertas necesita y que la mayoría olvida.",
+    "pitchPt": "As rubricas que um mapa de portas precisa e que a maioria esquece."
+  },
+  "care-grab-bars/fixed-grab-bars": {
+    "use": "Accessible & Care Bathrooms",
+    "useEs": "baños accesibles y asistenciales",
+    "usePt": "banheiros acessíveis e assistenciais",
+    "pitch": "The fixing into the wall carries the load, so the wall build-up decides the anchor before the bar does.",
+    "pitchEs": "La fijación al muro soporta la carga: el tipo de muro decide el anclaje antes que la barra.",
+    "pitchPt": "A fixação à parede suporta a carga: o tipo de parede decide a bucha antes da barra."
+  },
+  "care-grab-bars/flip-up-grab-bars": {
+    "use": "Accessible WCs & Care Rooms",
+    "useEs": "aseos accesibles y salas asistenciales",
+    "usePt": "sanitários acessíveis e salas assistenciais",
+    "pitch": "Folds against the wall when the space is needed and locks down when it is not.",
+    "pitchEs": "Se pliega contra el muro cuando hace falta espacio y se bloquea abajo cuando no.",
+    "pitchPt": "Recolhe contra a parede quando é preciso espaço e trava em baixo quando não é."
+  },
+  "sliding-hook-locks": {
+    "use": "Sliding & Pocket Doors",
+    "useEs": "puertas correderas y empotradas",
+    "usePt": "portas de correr e embutidas",
+    "pitch": "A hook bolt, because a sliding leaf has nothing for a straight latch to catch.",
+    "pitchEs": "Cerrojo de gancho, porque una hoja corredera no ofrece nada donde agarre un picaporte recto.",
+    "pitchPt": "Trinco de gancho, porque uma folha de correr não oferece nada onde um trinco reto agarre."
+  }
+}

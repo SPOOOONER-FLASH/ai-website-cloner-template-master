@@ -51,6 +51,17 @@
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
+const POSITIONING = JSON.parse(
+  readFileSync("src/data/category-positioning.json", "utf8"),
+);
+
+/** 品类定位。子品类没登记就退到父品类，两者都没有就返回 null。 */
+function positioning(product) {
+  const path = product.categoryPath ?? [];
+  if (!path.length) return null;
+  return POSITIONING[path.join("/")] ?? POSITIONING[path[0]] ?? null;
+}
+
 const DIR = "content/products";
 const WRITE = process.argv.includes("--write");
 const CHECK = process.argv.includes("--check");
@@ -91,6 +102,34 @@ const DIMENSION_SOURCES = [
     pt: (v) => `para portas de ${v}`,
   },
 ];
+
+/**
+ * 型号里的中文后缀，在标题里译成对应语言。
+ *
+ * 25 个合页型号带着中文变体后缀。型号字段本身不改 —— 它是订货依据。这里只
+ * 负责让英西葡三语的标题不出现中文，因为对买家那看起来像页面坏了。
+ */
+const MODEL_SUFFIX_GLOSS = {
+  美标: { en: "US Standard", es: "norma EE.UU.", pt: "norma EUA" },
+  圆角: { en: "Radiused", es: "esquina redonda", pt: "canto redondo" },
+  偏轴: { en: "Offset Pivot", es: "eje descentrado", pt: "eixo descentrado" },
+  中轴: { en: "Centre Pivot", es: "eje central", pt: "eixo central" },
+  焊头: { en: "Welded Knuckle", es: "nudillo soldado", pt: "nó soldado" },
+  拉手: { en: "Pull", es: "tirador", pt: "puxador" },
+  双钉防盗合页: { en: "Twin-Pin Security", es: "antirrobo 2 pasadores", pt: "antirroubo 2 pinos" },
+  单钉防盗合页: { en: "Single-Pin Security", es: "antirrobo 1 pasador", pt: "antirroubo 1 pino" },
+};
+
+/** 把型号里的中文后缀换成本语言说法。没有中文就原样返回。 */
+function glossModel(model, locale) {
+  let out = String(model ?? "");
+  if (!/[\u4e00-\u9fa5]/.test(out)) return out;
+  // 长的先换，否则「防盗合页」会被拆开
+  for (const key of Object.keys(MODEL_SUFFIX_GLOSS).sort((a, b) => b.length - a.length)) {
+    if (out.includes(key)) out = out.split(key).join(` ${MODEL_SUFFIX_GLOSS[key][locale]}`);
+  }
+  return out.replace(/\s{2,}/g, " ").trim();
+}
 
 const MATERIAL_LABELS = ["Material", "Materials", "Body material", "Case material"];
 
@@ -236,8 +275,42 @@ function materialPhrase(product, locale) {
  * 组一条标题。装不下就按优先级往下丢:限定词 → 材质 → 尺寸。
  * 型号和品类名永远保留 —— 那是搜型号的人用来认出「就是这个」的两样东西。
  */
+/**
+ * 组一条标题。
+ *
+ * 顺序就是价值顺序：型号 → 品类名 → **用途场景** → 尺寸 → 材质 → 供应商限定词。
+ *
+ * 场景排在材质和 OEM 之前，是 2026-09-22 改的。依据:392 条真实查询里纯型号查询
+ * 只有 61 条、176 次展示，而全站 2,217 次展示绝大多数来自**不认识我们型号的人**。
+ * 对那个人，「for Fire Escape & Exit Doors」比「Zinc Alloy」和「OEM」都值钱 ——
+ * 他要先知道这东西是干什么的，才会看规格。
+ *
+ * 型号仍然留在最前面，因为它只占六到十个字符，而且搜型号的人需要一眼认出。
+ */
+/**
+ * 组一条标题。
+ *
+ * 顺序就是价值顺序：型号 → 品类名 → **用途场景** → 尺寸 → 材质 → 供应商限定词。
+ *
+ * 场景是 2026-09-22 加的。依据：392 条真实查询里纯型号查询只有 61 条、176 次
+ * 展示，而全站 2,217 次展示绝大多数来自**不认识我们型号的人**。对那个人，
+ * 「for Wall & Floor Mounting」比「Zinc Alloy」值钱 —— 他要先知道这东西是干
+ * 什么的，才会看规格。
+ *
+ * 但场景有两条约束，都是看了第一版输出之后加的：
+ *
+ * 1. **同义反复就不要。** "Glass Door Handle for Frameless Glass Doors" 和
+ *    "Panic Exit Device for Fire Escape & Exit Doors" 都是废话 —— 名字已经说了。
+ *    场景只在名字含糊时才有价值：Lever Handle、Door Stopper、Lock Case、Grab Bar。
+ *
+ * 2. **尺寸优先于「只有场景」。** 尺寸是这个产品独有的，场景是整个品类共享的。
+ *    一个搜 "glass door handle" 的人面前有十条结果，全都是给玻璃门的；
+ *    决定他点哪一条的是长度，不是场景。
+ *
+ * 型号仍然留在最前，因为它只占六到十个字符，而搜型号的人需要一眼认出。
+ */
 function composeTitle(product, locale) {
-  const model = String(product.model ?? "").trim();
+  const model = glossModel(product.model, locale).trim();
   const name =
     locale === "en"
       ? String(product.name ?? "").trim()
@@ -249,27 +322,58 @@ function composeTitle(product, locale) {
   const mat = materialPhrase(product, locale);
   const tail = ` | ${BRAND[locale]}`;
 
-  const build = (parts) => head + (parts.length ? ` — ${parts.join(", ")}` : "") + tail;
+  const pos = positioning(product);
+  const FOR = { en: "for", es: "para", pt: "para" };
+  let useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
+
+  /* 同义反复检测：场景里的实词已经出现在名字里，就不要这个场景。 */
+  if (useRaw) {
+    const STOP = new Set(["for", "and", "&", "the", "of", "para", "y", "e", "de", "la", "las", "los"]);
+    const inName = new Set(
+      name.toLowerCase().split(/[^a-zÀ-ɏ]+/).filter((w) => w && !STOP.has(w)),
+    );
+    const words = useRaw.toLowerCase().split(/[^a-zÀ-ɏ]+/).filter((w) => w && !STOP.has(w));
+    // 去复数再比，否则 door / doors 不相等，"Glass Door Handle for Frameless
+    // Glass Doors" 这种废话就漏过去了。
+    const stem = (w) => w.replace(/s$/, "");
+    const stems = new Set([...inName].map(stem));
+    const overlap = words.filter((w) => stems.has(stem(w))).length;
+    if (words.length && overlap / words.length >= 0.4) useRaw = null;
+  }
+
+  const use = useRaw ? `${FOR[locale]} ${useRaw}` : null;
+  // 场景接在品类名后面，用空格而不是破折号 —— 它读起来是名字的一部分。
+  const withUse = use ? `${head} ${use}` : head;
+
+  const build = (stem, parts) => stem + (parts.length ? ` — ${parts.join(", ")}` : "") + tail;
 
   /*
-    退让顺序。规格永远排在营销词前面 —— 对一个搜型号的买家,`304SS` 比
-    `China Factory Direct` 有用得多。限定词只填剩下的空间,不跟规格抢。
+    退让顺序。场景 + 尺寸最好；装不下时先保尺寸（产品独有），再保场景（品类共享）。
+    规格永远排在营销限定词前面。
   */
   const candidates = [];
-  for (const q of QUALIFIER[locale]) candidates.push([dim, mat, q]);
-  candidates.push([dim, mat]);
-  for (const q of QUALIFIER[locale]) candidates.push([dim, q]);
-  candidates.push([dim]);
-  for (const q of QUALIFIER[locale]) candidates.push([mat, q]);
-  candidates.push([mat]);
-  for (const q of QUALIFIER[locale]) candidates.push([q]);
-  candidates.push([]);
+  if (use) {
+    candidates.push([withUse, [dim, mat]]);
+    candidates.push([withUse, [dim]]);
+  }
+  for (const q of QUALIFIER[locale]) candidates.push([head, [dim, mat, q]]);
+  candidates.push([head, [dim, mat]]);
+  for (const q of QUALIFIER[locale]) candidates.push([head, [dim, q]]);
+  candidates.push([head, [dim]]);
+  if (use) {
+    candidates.push([withUse, [mat]]);
+    candidates.push([withUse, []]);
+  }
+  for (const q of QUALIFIER[locale]) candidates.push([head, [mat, q]]);
+  candidates.push([head, [mat]]);
+  for (const q of QUALIFIER[locale]) candidates.push([head, [q]]);
+  candidates.push([head, []]);
 
-  for (const parts of candidates) {
-    const title = build(parts.filter(Boolean));
+  for (const [stem, parts] of candidates) {
+    const title = build(stem, parts.filter(Boolean));
     if (title.length <= MAX) return title;
   }
-  return build([]);
+  return build(head, []);
 }
 
 /**
@@ -279,12 +383,35 @@ function composeTitle(product, locale) {
  * 也把结果页上最值钱的一百个字符浪费在了一句谁都能说的话上。搜 FB005 的人要看到
  * 的是 FB005 的事,不是我们公司的事。
  */
+/**
+ * 描述。158 个字符是标题装不下的东西的去处 —— **卖点、性能、买家真正在乎的事**。
+ *
+ * 结构：这个产品是什么和给哪儿用 → 品类卖点 → 它自己的两三条事实。
+ *
+ * 旧版 924 条几乎一模一样（全是「Direct from the factory in Guangzhou…」），
+ * 既是重复内容，又把最值钱的一百个字符浪费在一句谁都能说的话上。
+ * 现在开头就分岔：品类给一句卖点，产品给自己的规格。
+ */
+/**
+ * 描述。158 个字符是标题装不下的东西的去处 —— **卖点、性能、买家真正在乎的事**。
+ *
+ * 结构：这个产品是什么和给哪儿用 → 品类卖点 → 它自己的两三条事实。
+ *
+ * 旧版 924 条几乎一模一样（全是「Direct from the factory in Guangzhou…」），
+ * 既是重复内容，又把最值钱的一百个字符浪费在一句谁都能说的话上。
+ * 现在开头就分岔：品类给一句卖点，产品给自己的规格。
+ */
 function composeDescription(product, locale) {
-  const model = String(product.model ?? "").trim();
+  const model = glossModel(product.model, locale).trim();
   const name =
     locale === "en"
       ? String(product.name ?? "").trim()
       : String(product[locale === "es" ? "nameEs" : "namePt"] ?? product.name ?? "").trim();
+
+  const pos = positioning(product);
+  const pitch = pos ? pos[locale === "en" ? "pitch" : locale === "es" ? "pitchEs" : "pitchPt"] : null;
+  const useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
+  const FOR = { en: "for", es: "para", pt: "para" };
 
   const facts = [];
   const push = (v) => {
@@ -298,10 +425,7 @@ function composeDescription(product, locale) {
     const r = spec(product, label);
     return r ? String(r.value).trim() : null;
   };
-  /*
-    目录里的值常带尾部句点和空格("Fire door , panic door .")。原样拼进描述
-    会出现 "panic door .." 这种。这里统一清洗,顺便把内部的空格-逗号收紧。
-  */
+  /* 目录里的值常带尾部句点和空格（"Fire door , panic door ."）。统一清洗。 */
   const short = (v, n = 44) => {
     if (!v) return null;
     const c = String(v)
@@ -313,51 +437,49 @@ function composeDescription(product, locale) {
   };
 
   const finishRaw = row("Finish");
-  const finishCount = finishRaw
-    ? finishRaw.split(/\s*[\/,]\s*/).filter((x) => x.trim()).length
-    : 0;
-
+  const finishCount = finishRaw ? finishRaw.split(/\s*[/,]\s*/).filter((x) => x.trim()).length : 0;
   const fn = short(row("Function"));
   const handing = short(row("Handing"), 38);
-  const thickness = short(row("Door thickness"), 38);
   const backset = short(row("Backset"), 24);
-  const application = short(row("Application"), 48);
 
   if (locale === "en") {
-    push(mat ? `${mat} construction` : null);
+    push(mat ? `${mat.toLowerCase()}` : null);
     push(dim);
     push(fn);
     push(backset && !String(dim ?? "").includes("backset") ? `${backset} backset` : null);
-    push(thickness && !String(dim ?? "").includes("doors") ? `fits ${thickness} doors` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "fully reversible" : null);
     push(finishCount > 1 ? `${finishCount} finishes` : null);
-    push(application);
   } else if (locale === "es") {
-    push(mat ? `construcción en ${mat.toLowerCase()}` : null);
+    push(mat ? mat.toLowerCase() : null);
     push(dim);
     push(backset && !String(dim ?? "").includes("entrada") ? `entrada ${backset}` : null);
-    push(thickness ? `para puertas de ${thickness}` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "totalmente reversible" : null);
     push(finishCount > 1 ? `${finishCount} acabados` : null);
   } else {
-    push(mat ? `construção em ${mat.toLowerCase()}` : null);
+    push(mat ? mat.toLowerCase() : null);
     push(dim);
     push(backset && !String(dim ?? "").includes("distância") ? `distância ${backset}` : null);
-    push(thickness ? `para portas de ${thickness}` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "totalmente reversível" : null);
     push(finishCount > 1 ? `${finishCount} acabamentos` : null);
   }
 
-  const CTA = {
-    en: "Specifications and a quotation direct from the factory.",
-    es: "Especificaciones y cotización directas de fábrica.",
-    pt: "Especificações e orçamento direto da fábrica.",
-  };
+  const opener = useRaw
+    ? `${model} ${name.toLowerCase()} ${FOR[locale]} ${useRaw.toLowerCase()}.`
+    : `${model} ${name.toLowerCase()}.`;
 
-  const head = `${model} ${name.toLowerCase()}`;
-  const body = facts.length ? `: ${facts.join(", ")}` : "";
-  let out = `${head}${body}. ${CTA[locale]}`.replace(/\s{2,}/g, " ").trim();
-  if (out.length > DESC_MAX) out = `${out.slice(0, DESC_MAX - 1).replace(/[\s,;:—-]+$/, "")}…`;
+  /*
+    事实在前，卖点在后。卖点是整个品类共享的一句话，如果排在前面，同品类的
+    三十七条描述前一百个字符就一模一样 —— 那正是旧版的毛病。
+    产品自己的规格必须先出现，卖点被截断没关系。
+  */
+  const parts = [opener];
+  if (facts.length) parts.push(`${facts.join(", ")}.`);
+  if (pitch) parts.push(pitch);
+
+  let out = parts.join(" ").replace(/\s{2,}/g, " ").replace(/\.\./g, ".").trim();
+  if (out.length > DESC_MAX) {
+    out = `${out.slice(0, DESC_MAX - 1).replace(/[\s,;:—-]+$/, "")}…`;
+  }
   return out;
 }
 
