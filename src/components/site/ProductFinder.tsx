@@ -53,6 +53,7 @@ const COPY = {
     clearAll: (n: number) => `Clear all (${n})`,
     search: "Search",
     searchPlaceholder: "Model, name or finish…",
+    filters: "Filters",
     moreFilters: "More filters",
     moreFiltersHint: "Series, material, finish, door type and certification.",
     clearThese: (n: number) => `Clear these (${n})`,
@@ -73,6 +74,7 @@ const COPY = {
     clearAll: (n: number) => `Borrar todo (${n})`,
     search: "Buscar",
     searchPlaceholder: "Modelo, nombre o acabado…",
+    filters: "Filtros",
     moreFilters: "Más filtros",
     moreFiltersHint: "Serie, material, acabado, tipo de puerta y certificación.",
     clearThese: (n: number) => `Borrar estos (${n})`,
@@ -93,6 +95,7 @@ const COPY = {
     clearAll: (n: number) => `Limpar tudo (${n})`,
     search: "Procurar",
     searchPlaceholder: "Modelo, nome ou acabamento…",
+    filters: "Filtros",
     moreFilters: "Mais filtros",
     moreFiltersHint: "Série, material, acabamento, tipo de porta e certificação.",
     clearThese: (n: number) => `Limpar estes (${n})`,
@@ -247,7 +250,7 @@ export function ProductFinder({
       */}
       <aside className="col-span-full xl:sticky xl:col-span-6 xl:self-start xl:top-96 xl:max-h-[calc(100vh-12rem)] xl:overflow-y-auto xl:overscroll-contain xl:pr-16 xl:[scrollbar-width:thin]">
         <div className="flex items-baseline justify-between gap-16 border-b border-line pb-16">
-          <h2 className="text-h3 text-ink">Filters</h2>
+          <h2 className="text-h3 text-ink">{t.filters}</h2>
           {activeCount > 0 && (
             <button
               type="button"

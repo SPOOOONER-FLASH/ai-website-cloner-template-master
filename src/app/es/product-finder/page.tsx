@@ -5,6 +5,7 @@ import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
+import { ConfiguratorTeaser } from "@/components/site/ConfiguratorTeaser";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
 import { getTopLevelCategories } from "@/data/categories";
@@ -65,35 +66,43 @@ export default function BuscadorDeProductosPage() {
         )}
       />
 
+      {/* Two columns from xl up, same as the English route — see ConfiguratorTeaser. */}
       <div className="layout">
-        <div className="col-content">
-          <Breadcrumbs
-            items={[
-              { label: "Productos", href: "/es/products" },
-              { label: "Buscador de productos" },
-            ]}
-          />
-          <h1 className="mt-24 text-h1 text-ink">Buscador de productos</h1>
-          <div className="mt-24">
-            <FinderModeSwitch active="catalogue" locale="es" />
+        <div className="col-content grid w-full grid-cols gap-x gap-y-32">
+          <div className="col-span-full">
+            <Breadcrumbs
+              items={[
+                { label: "Productos", href: "/es/products" },
+                { label: "Buscador de productos" },
+              ]}
+            />
           </div>
-          <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-            Acote el catálogo por los atributos que aparecen en una relación de herrajes.
-            Los filtros se combinan, los recuentos se actualizan sobre la marcha, y la
-            barra de direcciones conserva su selección para que pueda enviarla a un
-            colega.
-          </p>
-          {/*
-            Honest scope note, same as the English route: most records carry no
-            dimensional data yet, so there is no size or backset filter. Those facets
-            appear on their own once the spec tables are filled — buildFacets derives its
-            options from the data rather than from a hard-coded list.
-          */}
-          <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-            Mostrando {publishedProducts.length} productos publicados. Los filtros dimensionales
-            (distancia al eje, entre-ejes, espesor de puerta) llegan con el catálogo
-            técnico completo.
-          </p>
+          <div className="col-span-full xl:col-span-13">
+            <h1 className="text-h1 text-ink">Buscador de productos</h1>
+            <div className="mt-24">
+              <FinderModeSwitch active="catalogue" locale="es" />
+            </div>
+            <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
+              Acote el catálogo por los atributos que aparecen en una relación de herrajes.
+              Los filtros se combinan, los recuentos se actualizan sobre la marcha, y la
+              barra de direcciones conserva su selección para que pueda enviarla a un
+              colega.
+            </p>
+            {/*
+              Honest scope note, same as the English route: most records carry no
+              dimensional data yet, so there is no size or backset filter. Those facets
+              appear on their own once the spec tables are filled — buildFacets derives its
+              options from the data rather than from a hard-coded list.
+            */}
+            <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
+              Mostrando {publishedProducts.length} productos publicados. Los filtros dimensionales
+              (distancia al eje, entre-ejes, espesor de puerta) llegan con el catálogo
+              técnico completo.
+            </p>
+          </div>
+          <div className="col-span-full xl:col-span-9 xl:col-start-16">
+            <ConfiguratorTeaser locale="es" />
+          </div>
         </div>
       </div>
 

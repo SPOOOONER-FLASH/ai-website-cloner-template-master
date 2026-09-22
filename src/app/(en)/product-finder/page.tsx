@@ -5,6 +5,7 @@ import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
+import { ConfiguratorTeaser } from "@/components/site/ConfiguratorTeaser";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
 import { getTopLevelCategories } from "@/data/categories";
@@ -57,33 +58,46 @@ export default function ProductFinderPage() {
         )}
       />
 
+      {/*
+        Two columns from xl up: the catalogue's own introduction on the left, the case
+        for the configurator on the right. Until 2026-09-22 the right half of this band
+        was empty — see ConfiguratorTeaser for why that gap is where the second tool
+        belongs rather than behind an unpressed tab.
+      */}
       <div className="layout">
-        <div className="col-content">
-          <Breadcrumbs
-            items={[
-              { label: "Products", href: "/products" },
-              { label: "Product Finder" },
-            ]}
-          />
-          <h1 className="mt-24 text-h1 text-ink">Product Finder</h1>
-          <div className="mt-24">
-            <FinderModeSwitch active="catalogue" />
+        <div className="col-content grid w-full grid-cols gap-x gap-y-32">
+          <div className="col-span-full">
+            <Breadcrumbs
+              items={[
+                { label: "Products", href: "/products" },
+                { label: "Product Finder" },
+              ]}
+            />
           </div>
-          <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-            Narrow the catalogue by the attributes that appear on a hardware schedule.
-            Filters combine, counts update as you go, and the address bar keeps your
-            selection so you can send it to a colleague.
-          </p>
-          {/*
-            Honest scope note. The catalogue here is a subset and most records have no
-            dimensional data yet, so there is no size or backset filter. Those facets
-            appear on their own once the spec tables are populated — buildFacets derives
-            options from the data rather than from a hard-coded list.
-          */}
-          <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-            Showing {publishedProducts.length} published products. Dimensional filters (backset,
-            centre distance, door thickness) arrive with the full technical catalogue.
-          </p>
+          <div className="col-span-full xl:col-span-13">
+            <h1 className="text-h1 text-ink">Product Finder</h1>
+            <div className="mt-24">
+              <FinderModeSwitch active="catalogue" />
+            </div>
+            <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
+              Narrow the catalogue by the attributes that appear on a hardware schedule.
+              Filters combine, counts update as you go, and the address bar keeps your
+              selection so you can send it to a colleague.
+            </p>
+            {/*
+              Honest scope note. The catalogue here is a subset and most records have no
+              dimensional data yet, so there is no size or backset filter. Those facets
+              appear on their own once the spec tables are populated — buildFacets derives
+              options from the data rather than from a hard-coded list.
+            */}
+            <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
+              Showing {publishedProducts.length} published products. Dimensional filters (backset,
+              centre distance, door thickness) arrive with the full technical catalogue.
+            </p>
+          </div>
+          <div className="col-span-full xl:col-span-9 xl:col-start-16">
+            <ConfiguratorTeaser />
+          </div>
         </div>
       </div>
 

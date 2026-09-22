@@ -5,6 +5,7 @@ import { ProductFinderClient } from "@/components/site/ProductFinderClient";
 import { ProductIndexList } from "@/components/site/ProductIndexList";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FinderModeSwitch } from "@/components/site/FinderModeSwitch";
+import { ConfiguratorTeaser } from "@/components/site/ConfiguratorTeaser";
 import { JsonLd, breadcrumbSchema, itemListSchema } from "@/components/site/JsonLd";
 import { publishedProducts } from "@/data/products";
 import { getTopLevelCategories } from "@/data/categories";
@@ -61,34 +62,42 @@ export default function LocalizadorDeProdutosPage() {
         )}
       />
 
+      {/* Two columns from xl up, same as the English route — see ConfiguratorTeaser. */}
       <div className="layout">
-        <div className="col-content">
-          <Breadcrumbs
-            items={[
-              { label: "Produtos", href: "/pt/products" },
-              { label: "Localizador de produtos" },
-            ]}
-          />
-          <h1 className="mt-24 text-h1 text-ink">Localizador de produtos</h1>
-          <div className="mt-24">
-            <FinderModeSwitch active="catalogue" locale="pt" />
+        <div className="col-content grid w-full grid-cols gap-x gap-y-32">
+          <div className="col-span-full">
+            <Breadcrumbs
+              items={[
+                { label: "Produtos", href: "/pt/products" },
+                { label: "Localizador de produtos" },
+              ]}
+            />
           </div>
-          <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-            Reduza o catálogo pelos atributos que aparecem numa planilha de ferragens. Os
-            filtros se combinam, as contagens se atualizam na hora, e a barra de endereços
-            guarda a sua seleção para você poder enviá-la a um colega.
-          </p>
-          {/*
-            Honest scope note, same as the English route: most records carry no dimensional
-            data yet, so there is no size or backset filter. Those facets appear on their
-            own once the spec tables are filled — buildFacets derives its options from the
-            data rather than from a hard-coded list.
-          */}
-          <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-            Mostrando {publishedProducts.length} produtos publicados. Os filtros dimensionais
-            (distância ao eixo, entre centros, espessura de porta) chegam com o catálogo
-            técnico completo.
-          </p>
+          <div className="col-span-full xl:col-span-13">
+            <h1 className="text-h1 text-ink">Localizador de produtos</h1>
+            <div className="mt-24">
+              <FinderModeSwitch active="catalogue" locale="pt" />
+            </div>
+            <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
+              Reduza o catálogo pelos atributos que aparecem numa planilha de ferragens. Os
+              filtros se combinam, as contagens se atualizam na hora, e a barra de endereços
+              guarda a sua seleção para você poder enviá-la a um colega.
+            </p>
+            {/*
+              Honest scope note, same as the English route: most records carry no dimensional
+              data yet, so there is no size or backset filter. Those facets appear on their
+              own once the spec tables are filled — buildFacets derives its options from the
+              data rather than from a hard-coded list.
+            */}
+            <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
+              Mostrando {publishedProducts.length} produtos publicados. Os filtros dimensionais
+              (distância ao eixo, entre centros, espessura de porta) chegam com o catálogo
+              técnico completo.
+            </p>
+          </div>
+          <div className="col-span-full xl:col-span-9 xl:col-start-16">
+            <ConfiguratorTeaser locale="pt" />
+          </div>
         </div>
       </div>
 
