@@ -38,6 +38,24 @@ const FIELDS = {
     // 刻意排除:Fixing centre / Fixing centres / Spindle centre / Grip centre
     // distance / Faceplate to cylinder centre / Cylinder centre to back /
     // Second centre —— 都是别的尺寸,不能拿来回答「这把锁换得上吗」。
+    //
+    // 2026-09-22:光看标签还不够。同一个 "Centre distance" 标签被两件事共用 ——
+    // 锁的执手到圆柱中心距,和拉手的安装孔距(值写成 "P=425mm")。144 行里
+    // 103 行是拉手。所以这里额外按**值**排除 P= 开头的行,并把它们单独计到
+    // pullHandlePitch。一个标签两个含义,是这个目录里第二次出现的同类缺陷
+    // (第一次是 /hand/i 扫进了 Handle Material)。
+    excludeValue: /^P\s*=/i,
+  },
+  pullHandlePitch: {
+    title: "Pull handle fixing pitch (P=)",
+    labels: [
+      "Centre distance",
+      "Center Distance",
+      "Centre distances",
+      "Centre distance, horizontal",
+      "Centre distance, vertical",
+    ],
+    onlyValue: /^P\s*=/i,
   },
   doorThickness: {
     title: "Door thickness",
@@ -106,10 +124,23 @@ const lower = (s) => String(s ?? "").trim().toLowerCase();
 
 function collect() {
   const files = readdirSync(PRODUCTS).filter((f) => f.endsWith(".json"));
+  // 一个标签可能映射到多个字段(值不同,含义不同),所以是 label → [key…]。
   const wanted = new Map();
   for (const [key, def] of Object.entries(FIELDS)) {
-    for (const label of def.labels) wanted.set(lower(label), key);
+    for (const label of def.labels) {
+      const k = lower(label);
+      wanted.set(k, [...(wanted.get(k) ?? []), key]);
+    }
   }
+
+  /** 该行的值是否属于这个字段。没有值规则就一律属于。 */
+  const valueFits = (key, value) => {
+    const def = FIELDS[key];
+    const v = String(value ?? "").trim();
+    if (def.onlyValue && !def.onlyValue.test(v)) return false;
+    if (def.excludeValue && def.excludeValue.test(v)) return false;
+    return true;
+  };
 
   const products = {};
   const rows = {};
@@ -126,11 +157,19 @@ function collect() {
     const product = JSON.parse(readFileSync(join(PRODUCTS, file), "utf8"));
     const seen = new Set();
     for (const row of product.specs ?? []) {
-      const key = wanted.get(lower(row.label));
-      if (key) {
-        rows[key] += 1;
-        distinctValues[key].add(String(row.value ?? "").trim());
-        seen.add(key);
+      const keys = (wanted.get(lower(row.label)) ?? []).filter((k) => valueFits(k, row.value));
+      if (keys.length) {
+        for (const key of keys) {
+          rows[key] += 1;
+          distinctValues[key].add(String(row.value ?? "").trim());
+          seen.add(key);
+        }
+        continue;
+      }
+      // 标签登记过但值不符合任何一个字段的规则 —— 不该静默丢掉。
+      if (wanted.has(lower(row.label))) {
+        const label = `${row.label} = ${String(row.value ?? "").slice(0, 30)}`;
+        unknownHits.set(label, (unknownHits.get(label) ?? 0) + 1);
         continue;
       }
       // 没登记的标签,但看着像我们关心的字段 —— 提醒登记,不静默丢掉。

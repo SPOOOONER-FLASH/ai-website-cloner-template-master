@@ -25,9 +25,9 @@
 | 1 | push-bar-or-touch-bar-panic-exit-devices | 44 | 1199 | 401 | **已做** 批1 |
 | 2 | master-key-systems-how-many-levels-you-need | 27 | 774 | 826 | **已做** 批1 |
 | 3 | handing-left-right-and-universal | 23 | 502 | 1098 | **已做** 批1 |
-| 4 | finish-codes-us26d-626-630 | 20 | 788 | 812 | 待做 |
-| 5 | mortise-lock-backset-and-centre-distance-guide | 15 | 702 | 898 | 待做 |
-| 6 | reading-door-hardware-model-numbers | 14 | 679 | 921 | 待做 |
+| 4 | finish-codes-us26d-626-630 | 20 | 788 | 812 | **已做** 批2 |
+| 5 | mortise-lock-backset-and-centre-distance-guide | 15 | 702 | 898 | **已做** 批2 |
+| 6 | reading-door-hardware-model-numbers | 14 | 679 | 921 | **已做** 批2 |
 | 7 | euro-cylinder-length-and-split | 10 | 626 | 974 | 待做 |
 | 8 | door-coordinator-double-fire-door | 9 | 753 | 847 | 待做 |
 | 9 | fitting-a-euro-cylinder | 6 | 866 | 734 | 待做 |
@@ -90,3 +90,38 @@
 `out/` 与 `out-rayen/` 的构建部署 **是 Codex 的 baton**（NOW.md 2026-09-22
 「Codex guides DCB」行claim 了）。第二批 20 篇 guides 源码已提交推送，
 **等 Codex 放手后一次构建，40 篇 guides + 扩写后的 news 一起上线。**
+
+---
+
+## 2026-09-22 02:12 — 批 2 已完成但未提交
+
+`.git/index.lock` 自 02:01 起被占用（Codex 在密集写文件：`NOW.md`、三个
+`layout.tsx`、`Analytics.tsx`、Guide 组件、`build-codex-style-library.mjs`）。
+**锁是活的，不是死锁**，不要删。
+
+下一个 session 接手时，工作区里这些改动已完成并通过 `npm test`（361 passed）：
+
+```
+content/news/finish-codes-us26d-626-630.json            扩写 1603/1613/1629
+content/news/mortise-lock-backset-and-centre-distance-guide.json  1606/1689/1647
+content/news/reading-door-hardware-model-numbers.json   扩写 1624/1677/1660
+content/guides/hardware-refurbishment-survey-2026.json  中心距 145 → 41
+src/data/finish-codes.ts                                DK/KT/IK 数量 + 过期注释
+scripts/spec-coverage.mjs                               一标签多字段，按值分
+docs/research/SPEC_COVERAGE.json                        重新生成
+docs/collaboration/tasks/2026-09-22-*.md                本文件 + 另两份新任务
+public/search-index.json                                重新生成
+```
+
+锁一释放，直接：
+
+```bash
+git add -- content/news content/guides/hardware-refurbishment-survey-2026.json \
+  src/data/finish-codes.ts scripts/spec-coverage.mjs docs/research/SPEC_COVERAGE.json \
+  docs/collaboration/tasks public/search-index.json
+git commit -F <提交信息文件>
+git push origin main
+```
+
+**不要用 `GIT_INDEX_FILE` 绕开这把锁。** 如果 Codex 在 02:01 暂存了完整索引、
+稍后才提交，他们那次提交写出的是那一刻的整棵树，中间插进去的改动会被静默回滚。

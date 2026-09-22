@@ -20,9 +20,22 @@
         "Centre distance, horizontal",
         "Centre distance, vertical"
       ],
-      "products": 145,
-      "rows": 146,
-      "distinctValues": 76
+      "products": 41,
+      "rows": 41,
+      "distinctValues": 16
+    },
+    "pullHandlePitch": {
+      "title": "Pull handle fixing pitch (P=)",
+      "labels": [
+        "Centre distance",
+        "Center Distance",
+        "Centre distances",
+        "Centre distance, horizontal",
+        "Centre distance, vertical"
+      ],
+      "products": 104,
+      "rows": 105,
+      "distinctValues": 60
     },
     "doorThickness": {
       "title": "Door thickness",
