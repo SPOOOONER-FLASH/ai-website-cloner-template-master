@@ -1,0 +1,9 @@
+# Codex — guides design acceptance after Claude's batch release
+
+- Read the completed handoffs before resuming: `d5603ed9349` already committed the shared guide integration and new design components; `abffc275c9f` committed the first 20-article export. Do not apply the preserved integration patch again or recommit those files.
+- Claude resolved the reported missing hero fields/image path, authored the pipe tables and registered article-layout tests. The older rendering-contract note describes those issues at discovery time, not remaining work.
+- The complete isolated `npm run check` finished successfully for the fixed two-article design snapshot: 350 unit tests, 26 export tests; 2,104 audited pages, 170,059 links and 51,022 asset references; no broken targets or blocking semantic issues. Its export remains preview-only. Claude's later 20-article production build is separately documented in his release-build handoff.
+- Existing browser acceptance covers EN/ES/PT at 390/1440/1600px, six FAQ disclosures, sticky-header-safe anchors, mobile TOC, reduced-motion, table sort/reset/pan, and opt-in original PDF loading. New design detector returned no findings.
+- Resumption check on 2026-09-21: direct-origin HTTPS (43.131.27.225 with cantonlock.com SNI/Host) returns 200 for `/guides/` and `/guides/euro-cylinder-size-chart-2026/`. The actual origin article contains a semantic table, TOC and seven details elements (mobile TOC plus six FAQ answers). This is origin verification, not a Cloudflare purge or a statement about its cache.
+- Existing 35 news routes remain separate. Subsequent guide-writing commits belong to Claude's next content batch and were not rebuilt or republished by this acceptance pass. No further design changes or export writes were necessary.
+- Origin listing contains exactly 20 unique guide links; all 16 JS/CSS files referenced by the checked article return 200 from the same origin.
