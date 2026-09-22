@@ -9,14 +9,23 @@
     "The hacked site prints P.O. Box 608 while the card prints 609 - the card wins.",
     "",
     "Products matched from the client's own photos to catalogue records:",
-    "  photo 2 (black body, red bar, top+bottom rods) -> 330",
-    "  photo 3 (silver bar on a white sandwich-panel door) -> 302",
-    "  photos 4-5 (black outside lever with euro cylinder) -> 016 exterior trim",
+    "  black body, red bar, top+bottom rods      -> 330   USD 18.90",
+    "  silver bar on a white sandwich-panel door -> 302   USD 10.44",
+    "  black outside lever with euro cylinder    -> 039   price on request",
+    "",
+    "The trim is 039, NOT 016. Both are black keyed outside levers, and the first pass of",
+    "this quotation named 016 from the hero shots alone. The dimension drawings settle it:",
+    "016 is a compact 110x60 mm plate with the lever and cylinder side by side, while the",
+    "client's photo shows a slim tall plate with the lever above and the cylinder below -",
+    "039, whose drawing gives 136x40 mm with a 108 mm lever projection.",
+    "",
     "The '3 points' wording is the client's, taken from their message and visible in the",
     "photos; the catalogue records do not state a point count, so it is not invented here.",
     "",
-    "Prices are the client's: 18.90 for the red & black 3-point, 10.44 for the second item.",
-    "See the OPEN QUESTION note - which item 10.44 belongs to is not certain from the brief.",
+    "Price pairing comes from the client's own message text: the 18.90 line reads",
+    "'3 points push bar with red & black color', which is the 330. 10.44 is therefore the",
+    "302. The client confirmed on 2026-09-21 that the trim is the item with no price.",
+    "039 has no black photograph in the catalogue, so the row carries the silver one and the spec says so outright rather than captioning a silver picture as black.",
     "",
     "Build:  py scripts/build-quotation.py docs/quotations/refcon-20260921.json"
   ],
@@ -85,8 +94,8 @@
         "Single door, surface mounted",
         "MOQ 300 pcs  ·  OEM from 1,000 pcs"
       ],
-      "rowHeightPx": 225,
-      "imageBoxPx": 200
+      "rowHeightPx": 175,
+      "imageBoxPx": 155
     },
     {
       "slug": "302-panic-exit-device",
@@ -103,15 +112,31 @@
         "Suits insulated sandwich-panel doors as in your photo",
         "MOQ 300 pcs  ·  OEM from 2,000 pcs"
       ],
-      "rowHeightPx": 225,
-      "imageBoxPx": 200
+      "rowHeightPx": 175,
+      "imageBoxPx": 155
+    },
+    {
+      "slug": "039-panic-exit-device-trim",
+      "title": "039",
+      "unit": "PCS",
+      "rowHeightPx": 175,
+      "imageBoxPx": 155,
+      "image": "/images/products-hyde/039-panic-exit-device-trim.webp",
+      "specs": [
+        "Outside lever trim with key, for panic exit devices",
+        "Material: zinc alloy with spray-painted finish",
+        "Finish shown here is silver; black, as in your photo, is available",
+        "Plate: 136 x 40 mm; lever projection 108 mm",
+        "Includes brass cylinder with key",
+        "Door thickness: 45-50 mm",
+        "Price on request - please advise the quantity"
+      ]
     }
   ],
   "notes": [
-    "OPEN QUESTION - please confirm before we send this: USD 10.44 is quoted here against the 302 silver three-point bar. If that price was meant for the outside lever trim instead, tell us and we reissue.",
-    "At the 300 pcs MOQ shown, the order value is USD 8,802 - below USD 10,000, so EXW Zhongshan would apply. FOB China needs an order value of USD 10,000 or more.",
-    "The black outside lever trim with cylinder in your photos is our 016 exterior trim. It is not priced above; tell us the quantity and we will add it.",
-    "For your cold-room and insulated-panel doors we also make 317, a low-profile push bar and latch built for that application - worth a look alongside these two.",
+    "Item 3, the outside lever trim from your photos, is not priced here - tell us the quantity and we will add it.",
+    "At the 300 pcs MOQ shown for items 1 and 2 the order value is USD 8,802, below USD 10,000, so EXW Zhongshan would apply. Adding the trim is likely to pass USD 10,000 and bring you into FOB China.",
+    "For your cold-room and insulated-panel doors we also make 317, a low-profile push bar and latch built for that application - worth a look alongside these.",
     "Bar lengths are made to the door. Please send door height, leaf width and panel thickness and we will confirm the exact configuration."
   ],
   "closing": "Thank you for your enquiry. Please confirm the quantity and configuration per model and we will issue the pro forma invoice."
