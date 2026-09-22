@@ -34,9 +34,9 @@
 | 10 | what-an-old-padlock-tells-a-lock-factory | 0 | 1093 | 507 | **已做** 批4 1966/1967/1946 |
 | 11 | stainless-steel-grades-304-201-316 | 0 | 889 | 711 | **已做** 批4 2029/2176/2116 |
 | 12 | narrow-stile-aluminium-door-lock-sag | 0 | 883 | 717 | **已做** 批4 1919/2014/1975 |
-| 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | 待做 |
-| 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | 待做 |
-| 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | 待做 |
+| 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | **已做** 批5 1868/1953/1931 |
+| 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | **已做** 批5 1938/2083/2011 |
+| 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | **已做** 批5 1877/1954/1908 |
 | 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | 待做 |
 | 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | 待做 |
 | 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | 待做 |
