@@ -31,9 +31,9 @@
 | 7 | euro-cylinder-length-and-split | 10 | 626 | 974 | **已做** 批3 |
 | 8 | door-coordinator-double-fire-door | 9 | 753 | 847 | **已做** 批3 |
 | 9 | fitting-a-euro-cylinder | 6 | 866 | 734 | **已做** 批3 |
-| 10 | what-an-old-padlock-tells-a-lock-factory | 0 | 1093 | 507 | 待做 |
-| 11 | stainless-steel-grades-304-201-316 | 0 | 889 | 711 | 待做 |
-| 12 | narrow-stile-aluminium-door-lock-sag | 0 | 883 | 717 | 待做 |
+| 10 | what-an-old-padlock-tells-a-lock-factory | 0 | 1093 | 507 | **已做** 批4 1966/1967/1946 |
+| 11 | stainless-steel-grades-304-201-316 | 0 | 889 | 711 | **已做** 批4 2029/2176/2116 |
+| 12 | narrow-stile-aluminium-door-lock-sag | 0 | 883 | 717 | **已做** 批4 1919/2014/1975 |
 | 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | 待做 |
 | 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | 待做 |
 | 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | 待做 |
