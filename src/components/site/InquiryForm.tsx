@@ -4,6 +4,7 @@ import { localised } from "@/lib/localised";
 
 import { useEffect, useRef, useState } from "react";
 import { submitInquiry } from "@/lib/inquiry-submit";
+import { trackLead } from "@/lib/analytics-events";
 import { InquirySuccess } from "./InquirySuccess";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
@@ -214,6 +215,9 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
 
     try {
       await submitInquiry(payload);
+
+      // 询盘已经送达。计数失败绝不能把成功面板带下去 —— trackLead 自身不抛。
+      trackLead({ locale, model, page: globalThis.location?.pathname });
 
       form.reset();
       setProduct("");
