@@ -1,31 +1,16 @@
 {
   "_comment": [
     "Quotation job for REFCON (Refrigerated Containers Industrial Co.), Riyadh, Saudi Arabia.",
-    "Enquiry via business card of Eng. Tariq Dweik, Senior Sales Engineer, 2026-09-21.",
+    "This file mirrors the version the boss edited and returned on 2026-09-23.",
     "",
-    "Buyer identification: the card is the only source used. refcon.sa was checked and is",
-    "currently COMPROMISED (webshell banner, gambling spam), so nothing from it was trusted;",
-    "the only cross-check it provided is the switchboard number, which matches the card.",
-    "The hacked site prints P.O. Box 608 while the card prints 609 - the card wins.",
+    "Two items only. The silver push bar photo the customer sent was a REFERENCE for item 1",
+    "(what kind of 3-point device they want), not a product to quote. A first draft of this",
+    "job invented a 302 line from it - see docs/quotations/README.md.",
     "",
-    "Products matched from the client's own photos to catalogue records:",
-    "  black body, red bar, top+bottom rods      -> 330   USD 18.90",
-    "  silver bar on a white sandwich-panel door -> 302   USD 10.44",
-    "  black outside lever with euro cylinder    -> 039   price on request",
+    "Payment 30/70 and lead time 50 days are SPECIAL CONDITIONS for this deal (confirmed",
+    "2026-09-23). They are not template defaults - do not copy them into other jobs.",
     "",
-    "The trim is 039, NOT 016. Both are black keyed outside levers, and the first pass of",
-    "this quotation named 016 from the hero shots alone. The dimension drawings settle it:",
-    "016 is a compact 110x60 mm plate with the lever and cylinder side by side, while the",
-    "client's photo shows a slim tall plate with the lever above and the cylinder below -",
-    "039, whose drawing gives 136x40 mm with a 108 mm lever projection.",
-    "",
-    "The '3 points' wording is the client's, taken from their message and visible in the",
-    "photos; the catalogue records do not state a point count, so it is not invented here.",
-    "",
-    "Price pairing comes from the client's own message text: the 18.90 line reads",
-    "'3 points push bar with red & black color', which is the 330. 10.44 is therefore the",
-    "302. The client confirmed on 2026-09-21 that the trim is the item with no price.",
-    "039 has no black photograph in the catalogue, so the row carries the silver one and the spec says so outright rather than captioning a silver picture as black.",
+    "Buyer identification from the business card only; refcon.sa was compromised when checked.",
     "",
     "Build:  py scripts/build-quotation.py docs/quotations/refcon-20260921.json"
   ],
@@ -63,11 +48,11 @@
     },
     {
       "label": "Payment",
-      "value": "100% T/T before shipment"
+      "value": "30% advance, 70% against copy of shipment documents "
     },
     {
       "label": "Lead time",
-      "value": "30 days from receipt of down payment"
+      "value": "50 days from receipt of down payment"
     },
     {
       "label": "Packing",
@@ -82,7 +67,7 @@
     {
       "slug": "330-panic-exit-device",
       "title": "330",
-      "qty": 300,
+      "qty": 1000,
       "unit": "PCS",
       "unitPrice": 18.9,
       "image": "/images/products-hyde/330-panic-exit-device.webp",
@@ -92,25 +77,7 @@
         "Colour: red push bar with black body",
         "Length: to your door height - please advise",
         "Single door, surface mounted",
-        "MOQ 300 pcs  ·  OEM from 1,000 pcs"
-      ],
-      "rowHeightPx": 175,
-      "imageBoxPx": 155
-    },
-    {
-      "slug": "302-panic-exit-device",
-      "title": "302",
-      "qty": 300,
-      "unit": "PCS",
-      "unitPrice": 10.44,
-      "image": "/images/products-hyde/302-panic-exit-device.webp",
-      "specs": [
-        "Three-point locking: top rod, centre latch, bottom rod",
-        "Material: stainless steel with iron, painted finish",
-        "Length: 1040 mm, adjustable to your door height",
-        "Fully reversible for left- or right-hand doors",
-        "Suits insulated sandwich-panel doors as in your photo",
-        "MOQ 300 pcs  ·  OEM from 2,000 pcs"
+        "MOQ 300 pcs  ·  OEM from 1,000 pcs."
       ],
       "rowHeightPx": 175,
       "imageBoxPx": 155
@@ -129,14 +96,15 @@
         "Plate: 136 x 40 mm; lever projection 108 mm",
         "Includes brass cylinder with key",
         "Door thickness: 45-50 mm",
-        "Price on request - please advise the quantity"
-      ]
+        "Price on request - please advise the quantity, OEM MOQ 1000pcs"
+      ],
+      "qty": 1000,
+      "unitPrice": 10.44
     }
   ],
   "notes": [
-    "Item 3, the outside lever trim from your photos, is not priced here - tell us the quantity and we will add it.",
-    "At the 300 pcs MOQ shown for items 1 and 2 the order value is USD 8,802, below USD 10,000, so EXW Zhongshan would apply. Adding the trim is likely to pass USD 10,000 and bring you into FOB China.",
-    "For your cold-room and insulated-panel doors we also make 317, a low-profile push bar and latch built for that application - worth a look alongside these.",
+    "price quoted as  the picture we sent, box package.  OEM MOQ 1000PCS for each model.",
+    "when order total amount is below USD 10,000, shipment terms is  EXW Zhongshan China",
     "Bar lengths are made to the door. Please send door height, leaf width and panel thickness and we will confirm the exact configuration."
   ],
   "closing": "Thank you for your enquiry. Please confirm the quantity and configuration per model and we will issue the pro forma invoice."
