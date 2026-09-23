@@ -295,19 +295,98 @@ writeFileSync(
 /*
   A plain-text map of the site for language models, in the emerging llms.txt convention.
   Buyers increasingly reach a factory by asking an assistant rather than a search box, and an
-  assistant that cannot tell which of 418 pages holds the spec table quotes the wrong one.
+  assistant that cannot tell which of several hundred pages holds the spec table quotes the
+  wrong one.
 
   It states only what the site already says, in the order a buyer needs it, and it names what
   we do NOT publish — prices, and dimensions for the models whose drawings we have not been
   given. A model that reads "no price is published here" asks the reader to enquire; one that
   reads nothing invents a number.
 */
-const categoryLines = walk(TARGET)
-  .filter((file) => file.endsWith("index.html"))
-  .map((file) => relative(TARGET, dirname(file)).replaceAll("\\", "/"))
-  .filter((rel) => /^products\/[^/]+$/.test(rel))
-  .sort()
-  .map((rel) => `- [${rel.split("/")[1]}](${canonicalOrigin}/${rel}/)`);
+
+/*
+  2026-09-23 加厚：从「类目 slug 清单」升级成和 cantonlock.com 同结构的简报。
+
+  旧版只有 8 行类目 slug —— 没有中文名、没有型号。而型号是买家唯一一定记得的信息，
+  一份不出现型号的简报回答不了「T2973 是谁做的」这种问题。现在类目行带中文名、
+  型号数和有货的子类名，下面再逐行列出全部在售型号：型号 — 品名（材质；表面）: URL。
+
+  数据取自中文镜像 src/data/generated/products-zh.json，不再走盘扫文件名：走盘只能
+  拿到 slug，拿不到品名、材质和表面；镜像和 out/zh 是同一次 prebuild → next build
+  的产物，两边不会各说各话。
+
+  类目行不写描述性散文，因为数据里没有中文类目描述（categories.json 的 summary 是
+  英文）。给机器读的文件自己编一段，就破坏了这份文件存在的理由 —— 有货的子类名是
+  数据里真实存在的结构信息，用它代替描述。
+*/
+const categoriesFile = JSON.parse(readFileSync(join(root, "content", "categories.json"), "utf8"));
+const zhMirror = JSON.parse(
+  readFileSync(join(root, "src", "data", "generated", "products-zh.json"), "utf8"),
+);
+/* 与 src/data/rayen.ts 同一条收录规则：sites 里明确标了 "rayen" 的才进这个站。 */
+const rayenProducts = (zhMirror.products ?? []).filter((p) => (p.sites ?? []).includes("rayen"));
+
+/*
+  displayNameFor 的移植：≥2 个型号且全部落在同一个子类时，类目用那个子类的中文名
+  （玻璃门夹具在售 50 个全是拉手，页面上这个类目就叫「玻璃门拉手」—— llms.txt 和
+  页面用同一个名字，爬虫顺着链接爬过去看到的 H1 和这里一致）。规则的唯一实现仍在
+  src/data/rayen.ts，改那边时这里要一起改。
+*/
+const displayNameZh = (category, inCategory) => {
+  const fallback = category.nameZh ?? category.name;
+  if (inCategory.length < 2 || !(category.children ?? []).length) return fallback;
+  const children = new Set(inCategory.map((p) => p.categoryPath[1] ?? ""));
+  if (children.size !== 1) return fallback;
+  const only = (category.children ?? []).find((c) => c.slug === [...children][0]);
+  return only?.nameZh ?? only?.name ?? fallback;
+};
+
+/* 型号行括号里的短事实，只取记录里真实存在的字段。超长表面清单只写种数：
+   MUL1022 的 finishes 是整条变体描述，连起来 232 个字符，印出来一行变一段；
+   「4 种表面处理」仍是从记录里数出来的事实。 */
+const modelFactsZh = (p) => {
+  const facts = [];
+  if (p.material) facts.push(p.material);
+  const finishes = (p.finishes ?? []).filter(Boolean);
+  if (finishes.length) {
+    const joined = finishes.join("、");
+    facts.push(joined.length <= 48 ? joined : `${finishes.length} 种表面处理`);
+  }
+  return facts.length ? `（${facts.join("；")}）` : "";
+};
+
+const stockedCategories = categoriesFile.categories
+  .map((category) => ({
+    category,
+    inCategory: rayenProducts
+      .filter((p) => p.categoryPath[0] === category.slug)
+      .sort((a, b) => a.model.localeCompare(b.model, "en", { numeric: true })),
+  }))
+  .filter(({ inCategory }) => inCategory.length > 0);
+
+const categoryLines = stockedCategories.map(({ category, inCategory }) => {
+  const name = displayNameZh(category, inCategory);
+  const stockedChildren = (category.children ?? [])
+    .filter((child) => inCategory.some((p) => p.categoryPath[1] === child.slug))
+    .map((child) => child.nameZh ?? child.name);
+  /*
+    唯一的子类已经被提成显示名时不再重复 —— 「玻璃门拉手: 50 个型号，含玻璃门拉手」
+    是废话；多子类并存时「含门吸、指示器」才是新信息。
+  */
+  const informative = stockedChildren.filter((child) => child !== name);
+  const suffix = informative.length ? `，含${informative.join("、")}` : "";
+  return `- [${name}](${canonicalOrigin}/products/${category.slug}/): ${inCategory.length} 个型号${suffix}。`;
+});
+
+const modelLines = stockedCategories.flatMap(({ category, inCategory }) => [
+  `### ${displayNameZh(category, inCategory)}`,
+  "",
+  ...inCategory.map(
+    (p) =>
+      `- ${p.model} — ${p.name}${modelFactsZh(p)}: ${canonicalOrigin}/products/${p.categoryPath[0]}/${p.slug}/`,
+  ),
+  "",
+]);
 
 writeFileSync(
   join(TARGET, "llms.txt"),
@@ -318,10 +397,22 @@ writeFileSync(
     "",
     `中山市小榄镇的门控五金制造商。中文站 ${canonicalOrigin}/ ，英文站 ${canonicalOrigin}/en/ 。`,
     "",
+    "## 关键事实",
+    "",
+    `- 自有模具、自有产线的制造商。锁具制造经验始于 ${site.brand.lockExperienceSince} 年。`,
+    `- 在售 ${rayenProducts.length} 个型号，覆盖 ${stockedCategories.length} 个品类。`,
+    "- 支持来图加工、来样加工与 OEM / ODM 贴牌。",
+    "",
     "## 产品类目",
     "",
     ...categoryLines,
     "",
+    "## 全部在售型号",
+    "",
+    "型号、品名与页面；括号内是记录里有的材质与表面处理。每个型号页在 /en/ 下有对应的",
+    "英文页（同一型号，英文品名与规格表）。",
+    "",
+    ...modelLines,
     "## 站点说明",
     "",
     "- 每个型号页有独立规格表：材质、尺寸、中心距、安装孔径、表面处理。",

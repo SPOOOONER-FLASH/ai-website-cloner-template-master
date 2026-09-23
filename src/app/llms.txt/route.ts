@@ -2,6 +2,8 @@ import { absoluteUrl, indexable, legalName, siteName } from "@/data/site";
 import { categories } from "@/data/categories";
 import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
+import { getPublishedGuides } from "@/data/guides";
+import { getPublishedNews } from "@/data/news";
 
 /**
  * Emits /llms.txt at build time (works under `output: "export"`).
@@ -52,6 +54,59 @@ function body(): string {
   });
 
   /*
+    GUIDES AND ARTICLES — every long-form page, with its own summary.
+
+    AI crawlers fetch this file because they want plain text (the RSC .txt sidecars
+    they were pulling before are now Disallow'ed in robots — see seo-policy.ts), and
+    the guides and news articles are the most citable pages on the site: each one
+    names its sources. The previous version of this file never mentioned one of
+    them, so an assistant asked "EN 1125 vs ANSI Grade 1" had no way to learn that
+    the answer lived here.
+
+    The text after each link is the article's own `summary` field, verbatim — the
+    one-sentence version of the article, written by the same author. Nothing is
+    paraphrased for this file, because a briefing written for machines lives or
+    dies on never inventing. Newest first via the same getPublished* functions the
+    listing pages use, so a future-dated article cannot appear here before its page
+    exists either. The two collections stay separate for the reason given in
+    src/data/guides.ts: /guides/ is what a buyer checks before deciding, /news/ is
+    shorter answers and factory notes.
+  */
+  const guideLines = getPublishedGuides().map(
+    (article) =>
+      `- [${article.title}](${absoluteUrl(`/guides/${article.slug}/`)}): ${article.summary}`,
+  );
+  const newsLines = getPublishedNews().map(
+    (article) =>
+      `- [${article.title}](${absoluteUrl(`/news/${article.slug}/`)}): ${article.summary}`,
+  );
+
+  /*
+    Short facts on each model line, taken only from fields the record carries.
+
+    A bare model number tells an answer engine that the page exists; the material
+    and finish tell it whether the page is relevant to "304SS panic trim" at all.
+    Only `material` and `finishes` are added — never `summary`: five hundred-odd
+    summaries would add ~35KB and push the file past the ~100KB budget it is kept
+    under, while these two short fields cost ~12KB for the same relevance signal.
+
+    A long finish list is printed as a count instead. A few records carry full
+    variant descriptions in `finishes` (MUL1022's four entries join to 232
+    characters); printing that turns one line into a paragraph. "4 finishes" is
+    still a fact straight from the record — the count is the field's length.
+  */
+  const factsFor = (product: (typeof publishedProducts)[number]): string => {
+    const facts: string[] = [];
+    if (product.material) facts.push(product.material);
+    const finishes = (product.finishes ?? []).filter(Boolean);
+    if (finishes.length) {
+      const joined = finishes.join(", ");
+      facts.push(joined.length <= 48 ? joined : `${finishes.length} finishes`);
+    }
+    return facts.length ? ` (${facts.join(", ")})` : "";
+  };
+
+  /*
     THE MODEL INDEX — the section that makes this file worth fetching.
 
     Before it, llms.txt named 23 URLs for a 969-page site: the fifteen ranges and a
@@ -60,12 +115,12 @@ function body(): string {
     is the ONLY thing a hardware buyer reliably knows, and no model number appeared
     anywhere in the file.
 
-    So every published model is listed with its URL, grouped by range. 435 lines is
-    roughly 35KB — large for a briefing document, small next to any context window, and
-    the alternative is a briefing that cannot answer the question the audience actually
-    asks. Models still awaiting a confirmed number are skipped rather than listed under a
-    placeholder: an invented model number in a file written for machines is worse than an
-    absent one.
+    So every published model is listed with its URL, grouped by range. Five
+    hundred-odd lines is large for a briefing document, small next to any context
+    window, and the alternative is a briefing that cannot answer the question the
+    audience actually asks. Models still awaiting a confirmed number are skipped
+    rather than listed under a placeholder: an invented model number in a file
+    written for machines is worse than an absent one.
   */
   const modelLines = categories.flatMap((category) => {
     // Published only: an answer engine must not be pointed at a page marked noindex.
@@ -78,7 +133,7 @@ function body(): string {
       "",
       ...inRange.map(
         (p) =>
-          `- ${p.model} — ${p.name}: ${absoluteUrl(`/products/${p.categoryPath[0]}/${p.slug}/`)}`,
+          `- ${p.model} — ${p.name}${factsFor(p)}: ${absoluteUrl(`/products/${p.categoryPath[0]}/${p.slug}/`)}`,
       ),
       "",
     ];
@@ -122,10 +177,21 @@ function body(): string {
     `- [Contact](${absoluteUrl("/contact/")}): enquiry form routed to the export team.`,
     "",
     ...(faqLines.length ? ["## Questions answered on this site", "", ...faqLines, ""] : []),
+    "## Guides and articles",
+    "",
+    "### Buying guides — dimension charts, code cross-references and selection",
+    "",
+    ...guideLines,
+    "",
+    "### News and insights — short answers to specific questions",
+    "",
+    ...newsLines,
+    "",
     "## Every published model",
     "",
-    "Model number, product name and page. A blank specification on a product page means",
-    "the figure is genuinely unpublished, not that the model lacks it.",
+    "Model number, product name and page, with material and finish in parentheses where",
+    "the record carries them. A blank specification on a product page means the figure",
+    "is genuinely unpublished, not that the model lacks it.",
     "",
     ...modelLines,
     "## Notes for summarisers",
