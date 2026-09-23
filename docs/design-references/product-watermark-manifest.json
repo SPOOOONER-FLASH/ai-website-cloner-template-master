@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4864,
+  "count": 4900,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -49345,6 +49345,654 @@
       },
       "sourceSha256": "d029602bb2622a584634a0e74a893958fce95289406adf8d62d4cd6c1d66b7b3",
       "outputSha256": "9f0d7de8c5852b84c418e04f3c8264375db5d68d848c1939c4f8f8dd001088d1"
+    },
+    {
+      "source": "public/images/products/a5r-381-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-381-lever-handle-2.webp",
+      "width": 385,
+      "height": 385,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "56359a631f54e4003e10a6386484a03cc69ac2562ddf1bcb2041c9ac77109c02",
+      "outputSha256": "4b7435e2535e14ca20b8269f0708144536ca1325d53725c6b53eebfabc41eea8"
+    },
+    {
+      "source": "public/images/products/a5r-381-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-381-lever-handle-3.webp",
+      "width": 470,
+      "height": 470,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "804a2464a8d63d50c17b65a7767ea240f210e55970d4e5595aa8dc1f67881833",
+      "outputSha256": "4a5155586d44cb4216b1ed5a8f96c18e63db270ff6b0f2d925104d8e95a215c2"
+    },
+    {
+      "source": "public/images/products/a5r-381-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-381-lever-handle-4.webp",
+      "width": 485,
+      "height": 485,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fc09017fb4053459c799d0e82850e795dce9beda5b643a573778290cfb03c13f",
+      "outputSha256": "7e66d9a17079b0f4f10bb149a98c3b4dfc6337ee12b8cfeb1a99d556376d7921"
+    },
+    {
+      "source": "public/images/products/a5r-381-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-381-lever-handle-5.webp",
+      "width": 484,
+      "height": 484,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "76deb67f32ecbf4cadbbc9233773395fe92b3dce81e067c759dc545c74e4e926",
+      "outputSha256": "4edfae1222f6ea91b7e777bf97ee9e3fb4bcd78bb0d439bfc380557c1db656a5"
+    },
+    {
+      "source": "public/images/products/a5r-381-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-381-lever-handle.webp",
+      "width": 1300,
+      "height": 1300,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7c39df5bc469de253fe4628e2039efe3fccbb204a0107808609900e796e27635",
+      "outputSha256": "e6b52c0c1133ebf70b56a72749cd6540c8f88c7a500fe0bf1f22c641cba1ce25"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle-2.webp",
+      "width": 386,
+      "height": 386,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "010fdc93f14bafd545d4992c9a19e9616bd75529ff677882e89bded2099e534a",
+      "outputSha256": "c950a8cdf3d53a023740ee8f6c3746076d8b023d78e1a61965515dd67dc45d9c"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle-3.webp",
+      "width": 545,
+      "height": 545,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9361bea8cbae50d15e9bc0ee222e2cb3b6e28c99134569f3ce6f0a9558236807",
+      "outputSha256": "fc6a4e783ee21c21a788ccbcd01d128d76645edb5286d4ab9f502079d65be6b1"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle-4.webp",
+      "width": 547,
+      "height": 547,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 66,
+        "logoHeight": 17
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a22f5b1fef442fb54e8c42214620db0afa0df54749dc2f5a8f9fea8efa891a0a",
+      "outputSha256": "36adc00f6d6e41dc4bf56c3e6e5bd462d4e974cd4b46a93a94b0ebdaafe53e5e"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle-5.webp",
+      "width": 547,
+      "height": 547,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 66,
+        "logoHeight": 17
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2c26e22999fd2ee5845d6448dbd8336b5a0c0cce2a4c8e15b3e6b8c8b9534c70",
+      "outputSha256": "7d9cdbaebe93f976294095382f7c89a78cf0757abcdff1461949249354d85492"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle-6.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle-6.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "aec7b6aac8d416d527419f280e11358587a074ea59c80eabd6a24afe685c6012",
+      "outputSha256": "81eb4c32f8e5cd5f6842220587790b379b71bd9e1324b473bdc702ac4d3475f3"
+    },
+    {
+      "source": "public/images/products/a5r-689-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-689-lever-handle.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "50c9eb31bae934d29ecb3a46dd0736fb411b33992e65f8da226deec0c93ec5dd",
+      "outputSha256": "7bef6252cfec78c210aac4557c5f35cca8223fa243855855f3401b67351953ee"
+    },
+    {
+      "source": "public/images/products/a5r-690-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-690-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "96db1558cff2746fef8398424f4005863aecf0c0aa9d5945a3d612aebddfc864",
+      "outputSha256": "07781a5832ade7629c5d1c215edfd24a3f1b1a68bc1fde384c5b282bf98e1f89"
+    },
+    {
+      "source": "public/images/products/a5r-690-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-690-lever-handle-3.webp",
+      "width": 504,
+      "height": 504,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a3b5d2cc815a50ea594a3690e73b19f252255e22f6cbde48ff7b9a8a230f0cda",
+      "outputSha256": "77bf2020acfbae7a7e683f4bd005bc5de977c09b215d79dde2a7f87c4ccfc651"
+    },
+    {
+      "source": "public/images/products/a5r-690-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-690-lever-handle-4.webp",
+      "width": 502,
+      "height": 502,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6e48771ffb3d70d4f07a8c753b523d08f4518cbde15df7ce0937710a37382f0c",
+      "outputSha256": "d6d2ea25a5dd6956d459f1d46f1f582869bfab9c554f91dfdbc0c7198f2a3d3b"
+    },
+    {
+      "source": "public/images/products/a5r-690-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-690-lever-handle-5.webp",
+      "width": 496,
+      "height": 496,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e1348a965ed2e1a29a771d91be75e53b130d8118afa37b7d00a352239ca71ffb",
+      "outputSha256": "f3a86838626f9f5159628bb0bad262967cec3d1eb13c2332bc41654dfcd96f72"
+    },
+    {
+      "source": "public/images/products/a5r-690-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-690-lever-handle.webp",
+      "width": 1335,
+      "height": 1335,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4c4eb4d5d8cfec471fc4863e0442889d411e0327214f87ec1e8fd8a89a8d409f",
+      "outputSha256": "9444b25c63b130145cd77002958fb0486010fd5391de867c2ef3e3201ca8a064"
+    },
+    {
+      "source": "public/images/products/a5r-691-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-691-lever-handle-2.webp",
+      "width": 385,
+      "height": 385,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "30c42d480cf6eec828b27da3690b8e7ddfe9eb1b0b382f3394642912bb6a6ce0",
+      "outputSha256": "6f84ca0f32f2c53eb8540c44ef233557b453620103581fc57d25b5671d5245a8"
+    },
+    {
+      "source": "public/images/products/a5r-691-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-691-lever-handle-3.webp",
+      "width": 514,
+      "height": 514,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f8c6ab3dcff690b82d5a1291e94978b19edb9a5a878d096608840ab773a52f76",
+      "outputSha256": "ac1569eb1740a5f25f3d739d30c92bbf211a930a7a58731384dbe6521bdc5ce6"
+    },
+    {
+      "source": "public/images/products/a5r-691-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-691-lever-handle-4.webp",
+      "width": 517,
+      "height": 517,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a5ca39ccd41747c9b2d01f49a925e9b3c082d3e95426c10917ef224810fe74e0",
+      "outputSha256": "76387342527bdd8c4c0d148e111b4321912e2efaeaa8aab6d22d70e5c3433e4f"
+    },
+    {
+      "source": "public/images/products/a5r-691-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-691-lever-handle-5.webp",
+      "width": 512,
+      "height": 512,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "132e0ade08a93edee8a9533d410cc307ee3872c5980f3cba408aa2e8da1396a1",
+      "outputSha256": "e254c570eb903d6e2da8212b6d15c55ccd7af135eabfbc622cd00ecc9c35a720"
+    },
+    {
+      "source": "public/images/products/a5r-691-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-691-lever-handle.webp",
+      "width": 1380,
+      "height": 1380,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c20cf9a3cd827088ac22c462913c822a11dc5b9f001e0d0747a6185627575501",
+      "outputSha256": "24c2a3640cc586ea9a0c698e69c76ddb005662ccc046a6c2db8da55d64b26915"
+    },
+    {
+      "source": "public/images/products/a5r-692-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-692-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "27c9d694350acf6ca157a36eb5711b109ee41e3d4fa74c7d86c1347a4e46458c",
+      "outputSha256": "b36b5bd909a22789f5e68f5e4698e5093feef674a1e0e288a0369f89d363c7f8"
+    },
+    {
+      "source": "public/images/products/a5r-692-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-692-lever-handle-3.webp",
+      "width": 493,
+      "height": 493,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c193e9fd82dc04d0849fe6f08f1b7c61b37f5af9c9c597097e384ec1a15a2f4b",
+      "outputSha256": "401e9eaa51295f12a387aef995fdc4dccfad06ef8ffc8be1704b1203c6fabfae"
+    },
+    {
+      "source": "public/images/products/a5r-692-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-692-lever-handle-4.webp",
+      "width": 497,
+      "height": 497,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b70deed2d6df327f8181a1572608f3f832eba6b1153b8058c0ee28b21871f567",
+      "outputSha256": "6b931f1377b025fc6d10d4145f4739683ea9ae130d9fb7a667f27ade421759e3"
+    },
+    {
+      "source": "public/images/products/a5r-692-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-692-lever-handle-5.webp",
+      "width": 491,
+      "height": 491,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "62be36205fbd6237e89b84a1a34218e3bc0375ea8a92116ab9e261b96cc96e63",
+      "outputSha256": "8c2e479b80331de539127c24339874df8646c3e78171d77c92e26702938e55d3"
+    },
+    {
+      "source": "public/images/products/a5r-692-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-692-lever-handle.webp",
+      "width": 1325,
+      "height": 1325,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5fc136cc786a90b90c77b116440bae57b9004fb7e9ba81a54cefeb27dd15fcd8",
+      "outputSha256": "289af724f0b2addca46296f9412030cd9a293cfc2c269327ed677626fe2fb839"
+    },
+    {
+      "source": "public/images/products/a5r-750-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-750-lever-handle-2.webp",
+      "width": 384,
+      "height": 384,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5a8aeab78940551e9bc2d9f29acb121dfb4368ebbd6f8f962ca16c85df415356",
+      "outputSha256": "e3d781c851be16c3fd025f642f19c6782f6469aa9f747ec6d6c01cb8684dd050"
+    },
+    {
+      "source": "public/images/products/a5r-750-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-750-lever-handle-3.webp",
+      "width": 479,
+      "height": 479,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1defb4007db0f4b0817ea874e532c677a7ee3c20bb75bc0abe479b7d7e79d07d",
+      "outputSha256": "13a8133b16c853128b9d6d34f8b4b18a635002d89f70d9b31485822c87ab22d5"
+    },
+    {
+      "source": "public/images/products/a5r-750-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-750-lever-handle-4.webp",
+      "width": 478,
+      "height": 478,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b0b13372e1abdcd2ddb4c4558362eb815ca3cc5b45ed87dd61aaa6557a5f2604",
+      "outputSha256": "c02e0067fa3cb4d769fda1841da6bf6a060d8921fecc0f07dc47474f3166caf0"
+    },
+    {
+      "source": "public/images/products/a5r-750-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-750-lever-handle-5.webp",
+      "width": 479,
+      "height": 479,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3e642496f06ff82903c0ae351b9e387e0118f332a92ac27b5e47e0a93787ed69",
+      "outputSha256": "308306697d650c9171709f235e5f5f988cdb4181d0a7e0d891a9b401f246e97e"
+    },
+    {
+      "source": "public/images/products/a5r-750-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-750-lever-handle.webp",
+      "width": 1286,
+      "height": 1286,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "87d813ac88ba7f910ec0cb266b605d19aad57d2ed78bb38d09cbd297d4f8410a",
+      "outputSha256": "9c8efb7852a316d26b667914b9a34102605656b028fcf0782d22717e5a5f9a2b"
+    },
+    {
+      "source": "public/images/products/a5r-975-lever-handle-2.webp",
+      "output": "public/images/products-hyde/a5r-975-lever-handle-2.webp",
+      "width": 385,
+      "height": 385,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2a2a1621cf6fc78a052129b06ad9d15dce8d9953d9f1fda3b970a9251f8e4a68",
+      "outputSha256": "a32384b402dabba6d810fe9abec51e90b65d62f327b467991c461efefb3460ba"
+    },
+    {
+      "source": "public/images/products/a5r-975-lever-handle-3.webp",
+      "output": "public/images/products-hyde/a5r-975-lever-handle-3.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c766fd3980b4f21c224b8a2d690ff383bb37cfca0d7c5be7b280521b458063f9",
+      "outputSha256": "f51d2c53f9d8a37fef7b89e4d34e874d6f5a72872891f43e44ff2dfed8ad0e75"
+    },
+    {
+      "source": "public/images/products/a5r-975-lever-handle-4.webp",
+      "output": "public/images/products-hyde/a5r-975-lever-handle-4.webp",
+      "width": 494,
+      "height": 494,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "da95c2caf986742602b55fe624173218080dff24a055c4c58737c7ce6589fe78",
+      "outputSha256": "b7fdc2bc00fba4ec7debb457fd9a9dcd4717516eb25b8f006a4e6a920e24dc8b"
+    },
+    {
+      "source": "public/images/products/a5r-975-lever-handle-5.webp",
+      "output": "public/images/products-hyde/a5r-975-lever-handle-5.webp",
+      "width": 492,
+      "height": 492,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5be2e742b9ae4f686680a498ca04bda79edff963d14136f067c67ce9dc05fc2d",
+      "outputSha256": "4ee7af22f60e369b6ff5627a5d8fb76df6cd86f6c2d24997f1c16d5c35b4ee68"
+    },
+    {
+      "source": "public/images/products/a5r-975-lever-handle.webp",
+      "output": "public/images/products-hyde/a5r-975-lever-handle.webp",
+      "width": 1329,
+      "height": 1329,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "dcd89700081a24926c53c603f161d1b7c7c69495d94643a4c82ed2fd93fbbaad",
+      "outputSha256": "0b3f4a066f76779855c1a31e8d442f237fdc400e67eeaf3450fd94e7bffd4d4f"
     },
     {
       "source": "public/images/products/a9-2009-lever-handle-2.webp",

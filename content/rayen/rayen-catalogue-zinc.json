@@ -1,6 +1,6 @@
 {
   "_readme": [
-    "锌合金分体门锁系列（Zinc alloy rosette door locks series），甲方《雷茵五金》图册 p33–p52。",
+    "锌合金分体门锁系列（Zinc alloy rosette door locks series），甲方《雷茵五金》图册 p33–p56。",
     "",
     "移交文件说这一段从 p29 开始，实际上 p29–p31 还是凯撒系列（那几款早已上架），p32 是锁体/锁芯页，",
     "锌合金分体从 p33 起。39 个型号，站上原本一个都没有。",
@@ -21,7 +21,10 @@
     "锁体和门厚那一页没印，就不写。",
     "",
     "CS 中文名定为「拉丝铬」—— 甲方 2026-09-23 拍板，与合页那本、content/i18n/zh-terms.json 一致。",
-    "图册 p51 印的是「铬拉丝」，同义；rayen-finishes.ts 两种写法都认。"
+    "图册 p51 印的是「铬拉丝」，同义；rayen-finishes.ts 两种写法都认。",
+    "",
+    "2026-09-23 第二轮：系列其实延续到 p56，末尾 7 个 A5R- 圆座款（p53–p56）补进来，共 46 个。",
+    "A5R-750 / A5R-381 的圆盖是 Ø55（放大核对过）。A5R-750 的 COF 色样看起来像木纹，但图册印「黄古铜」，按印的字记。"
   ],
   "sourceRoot": "C:/Users/johns/rayen-catalogue-zinc/out",
   "sites": [
@@ -1425,6 +1428,265 @@
         {
           "label": "Material",
           "value": "Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "A5R-689",
+      "slug": "a5r-689-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "142mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-692",
+      "slug": "a5r-692-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-691",
+      "slug": "a5r-691-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "136mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-690",
+      "slug": "a5r-690-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "132mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-975",
+      "slug": "a5r-975-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Brushed Light Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø52mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-750",
+      "slug": "a5r-750-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø55mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5R-381",
+      "slug": "a5r-381-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "134mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø55mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "8550 / 7255"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
         }
       ]
     }

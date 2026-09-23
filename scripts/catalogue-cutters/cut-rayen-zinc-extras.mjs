@@ -151,6 +151,8 @@ const SCENES = [
      on a RAYEN product page, so this one is cut from the bottom-LEFT and stops short of the
      shelf. Checked by eye; the other six carry no lettering in the kept square. */
   ["A5-2011", 37, { keep: 0.66 }], ["A40-2205", 38], ["A40-2206", 39],
+  /* p53, the A5R- run that closes the series (p53–p56). */
+  ["A5R-689", 53],
 ];
 for (const [model, page, opt = {}] of SCENES) {
   const pg = await load(page);

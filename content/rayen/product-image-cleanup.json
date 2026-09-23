@@ -12,7 +12,7 @@
   "counts": {
     "refused": 447,
     "cleanable": 1222,
-    "already-clean": 3188
+    "already-clean": 3224
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -8012,6 +8012,150 @@
     },
     "a5-988-lever-handle.webp": {
       "source": "d029602bb2622a584634a0e74a893958fce95289406adf8d62d4cd6c1d66b7b3",
+      "status": "already-clean"
+    },
+    "a5r-381-lever-handle-2.webp": {
+      "source": "56359a631f54e4003e10a6386484a03cc69ac2562ddf1bcb2041c9ac77109c02",
+      "status": "already-clean"
+    },
+    "a5r-381-lever-handle-3.webp": {
+      "source": "804a2464a8d63d50c17b65a7767ea240f210e55970d4e5595aa8dc1f67881833",
+      "status": "already-clean"
+    },
+    "a5r-381-lever-handle-4.webp": {
+      "source": "fc09017fb4053459c799d0e82850e795dce9beda5b643a573778290cfb03c13f",
+      "status": "already-clean"
+    },
+    "a5r-381-lever-handle-5.webp": {
+      "source": "76deb67f32ecbf4cadbbc9233773395fe92b3dce81e067c759dc545c74e4e926",
+      "status": "already-clean"
+    },
+    "a5r-381-lever-handle.webp": {
+      "source": "7c39df5bc469de253fe4628e2039efe3fccbb204a0107808609900e796e27635",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle-2.webp": {
+      "source": "010fdc93f14bafd545d4992c9a19e9616bd75529ff677882e89bded2099e534a",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle-3.webp": {
+      "source": "9361bea8cbae50d15e9bc0ee222e2cb3b6e28c99134569f3ce6f0a9558236807",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle-4.webp": {
+      "source": "a22f5b1fef442fb54e8c42214620db0afa0df54749dc2f5a8f9fea8efa891a0a",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle-5.webp": {
+      "source": "2c26e22999fd2ee5845d6448dbd8336b5a0c0cce2a4c8e15b3e6b8c8b9534c70",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle-6.webp": {
+      "source": "aec7b6aac8d416d527419f280e11358587a074ea59c80eabd6a24afe685c6012",
+      "status": "already-clean"
+    },
+    "a5r-689-lever-handle.webp": {
+      "source": "50c9eb31bae934d29ecb3a46dd0736fb411b33992e65f8da226deec0c93ec5dd",
+      "status": "already-clean"
+    },
+    "a5r-690-lever-handle-2.webp": {
+      "source": "96db1558cff2746fef8398424f4005863aecf0c0aa9d5945a3d612aebddfc864",
+      "status": "already-clean"
+    },
+    "a5r-690-lever-handle-3.webp": {
+      "source": "a3b5d2cc815a50ea594a3690e73b19f252255e22f6cbde48ff7b9a8a230f0cda",
+      "status": "already-clean"
+    },
+    "a5r-690-lever-handle-4.webp": {
+      "source": "6e48771ffb3d70d4f07a8c753b523d08f4518cbde15df7ce0937710a37382f0c",
+      "status": "already-clean"
+    },
+    "a5r-690-lever-handle-5.webp": {
+      "source": "e1348a965ed2e1a29a771d91be75e53b130d8118afa37b7d00a352239ca71ffb",
+      "status": "already-clean"
+    },
+    "a5r-690-lever-handle.webp": {
+      "source": "4c4eb4d5d8cfec471fc4863e0442889d411e0327214f87ec1e8fd8a89a8d409f",
+      "status": "already-clean"
+    },
+    "a5r-691-lever-handle-2.webp": {
+      "source": "30c42d480cf6eec828b27da3690b8e7ddfe9eb1b0b382f3394642912bb6a6ce0",
+      "status": "already-clean"
+    },
+    "a5r-691-lever-handle-3.webp": {
+      "source": "f8c6ab3dcff690b82d5a1291e94978b19edb9a5a878d096608840ab773a52f76",
+      "status": "already-clean"
+    },
+    "a5r-691-lever-handle-4.webp": {
+      "source": "a5ca39ccd41747c9b2d01f49a925e9b3c082d3e95426c10917ef224810fe74e0",
+      "status": "already-clean"
+    },
+    "a5r-691-lever-handle-5.webp": {
+      "source": "132e0ade08a93edee8a9533d410cc307ee3872c5980f3cba408aa2e8da1396a1",
+      "status": "already-clean"
+    },
+    "a5r-691-lever-handle.webp": {
+      "source": "c20cf9a3cd827088ac22c462913c822a11dc5b9f001e0d0747a6185627575501",
+      "status": "already-clean"
+    },
+    "a5r-692-lever-handle-2.webp": {
+      "source": "27c9d694350acf6ca157a36eb5711b109ee41e3d4fa74c7d86c1347a4e46458c",
+      "status": "already-clean"
+    },
+    "a5r-692-lever-handle-3.webp": {
+      "source": "c193e9fd82dc04d0849fe6f08f1b7c61b37f5af9c9c597097e384ec1a15a2f4b",
+      "status": "already-clean"
+    },
+    "a5r-692-lever-handle-4.webp": {
+      "source": "b70deed2d6df327f8181a1572608f3f832eba6b1153b8058c0ee28b21871f567",
+      "status": "already-clean"
+    },
+    "a5r-692-lever-handle-5.webp": {
+      "source": "62be36205fbd6237e89b84a1a34218e3bc0375ea8a92116ab9e261b96cc96e63",
+      "status": "already-clean"
+    },
+    "a5r-692-lever-handle.webp": {
+      "source": "5fc136cc786a90b90c77b116440bae57b9004fb7e9ba81a54cefeb27dd15fcd8",
+      "status": "already-clean"
+    },
+    "a5r-750-lever-handle-2.webp": {
+      "source": "5a8aeab78940551e9bc2d9f29acb121dfb4368ebbd6f8f962ca16c85df415356",
+      "status": "already-clean"
+    },
+    "a5r-750-lever-handle-3.webp": {
+      "source": "1defb4007db0f4b0817ea874e532c677a7ee3c20bb75bc0abe479b7d7e79d07d",
+      "status": "already-clean"
+    },
+    "a5r-750-lever-handle-4.webp": {
+      "source": "b0b13372e1abdcd2ddb4c4558362eb815ca3cc5b45ed87dd61aaa6557a5f2604",
+      "status": "already-clean"
+    },
+    "a5r-750-lever-handle-5.webp": {
+      "source": "3e642496f06ff82903c0ae351b9e387e0118f332a92ac27b5e47e0a93787ed69",
+      "status": "already-clean"
+    },
+    "a5r-750-lever-handle.webp": {
+      "source": "87d813ac88ba7f910ec0cb266b605d19aad57d2ed78bb38d09cbd297d4f8410a",
+      "status": "already-clean"
+    },
+    "a5r-975-lever-handle-2.webp": {
+      "source": "2a2a1621cf6fc78a052129b06ad9d15dce8d9953d9f1fda3b970a9251f8e4a68",
+      "status": "already-clean"
+    },
+    "a5r-975-lever-handle-3.webp": {
+      "source": "c766fd3980b4f21c224b8a2d690ff383bb37cfca0d7c5be7b280521b458063f9",
+      "status": "already-clean"
+    },
+    "a5r-975-lever-handle-4.webp": {
+      "source": "da95c2caf986742602b55fe624173218080dff24a055c4c58737c7ce6589fe78",
+      "status": "already-clean"
+    },
+    "a5r-975-lever-handle-5.webp": {
+      "source": "5be2e742b9ae4f686680a498ca04bda79edff963d14136f067c67ce9dc05fc2d",
+      "status": "already-clean"
+    },
+    "a5r-975-lever-handle.webp": {
+      "source": "dcd89700081a24926c53c603f161d1b7c7c69495d94643a4c82ed2fd93fbbaad",
       "status": "already-clean"
     },
     "a9-2009-lever-handle-2.webp": {
