@@ -14,3 +14,6 @@
 # file as stale when the data is identical — it failed the 2026-09-22 build.
 docs/research/SPEC_COVERAGE.json text eol=lf
 deploy/nginx/legacy-redirects.conf text eol=lf
+
+# Git hooks run under sh; CRLF breaks the shebang line
+.githooks/* text eol=lf
