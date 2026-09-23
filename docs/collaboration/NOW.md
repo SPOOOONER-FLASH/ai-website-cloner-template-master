@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Codex HYDE fluidity | `out/`, `out-rayen/`（独立 `hyde-fluidity` worktree） | 发布已合入主线的搜索快速重开修复 `0fab9a363ce`，并带上当前主线已提交的源码与素材 | 2026-09-23 |
 | Claude release build | out/, out-rayen/（在 tmp/claude-release-wt 干净检出里构建） | 持棒：发布 79ff38e337d（9088 SS）。**不含** Codex 未提交的 motion 改动 | 2026-09-23 |
 | Codex motion 2026-09-23 | HeroCarousel, SiteHeader, LocalePicker, SearchDialog, ProductImageZoom, GuideEditorial CSS, motion guard, SPEC_COVERAGE, four numeric guides, out/ out-rayen/ | 已批准的轮播与浮层优化；同期目录增长使覆盖报告和四篇文章数字过期，一并修复；当前持有发布构建 | 2026-09-23 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |
