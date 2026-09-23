@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 4641,
+  "count": 4649,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -46170,6 +46170,150 @@
       },
       "sourceSha256": "f10b9c24875ad6b715ca91d5912fbc35f2e1c56a67cefa749027fd6ad094ca58",
       "outputSha256": "4b4ed50cf432ca57d651926dc9ca810c2b58a78a160a7176b406d1a7925849a2"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-2.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-2.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "194e88b1edba3cc81953566cfb2d8eb6908eff37c760057016353afa1849aeaf",
+      "outputSha256": "3fa9f5732860f413f9801fb4c158f29b5b39fde6eb3f013e3faa2375a68d4d06"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-3.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-3.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "14574b282e46d1db2f81854fdbd3fb12c312a1e8694e54af8edfc839180e09f4",
+      "outputSha256": "5c329dedb48c92564107c6f6dc453f258585f2ca7506b34faaa4a736b66f8207"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-4.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-4.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3835883a081b7614e594434653693c8a228c0cf133a95b062a5d5e344e2db38f",
+      "outputSha256": "1a30b9beabd87b1d0666ebf5911b516dcb1cbd2caa974119c50c27f7285f05c5"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-5.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5fa7736be7d655f1507fb6bbf636b7fac94fdb5cebc8c4e633c5626a3af368ac",
+      "outputSha256": "dcbdb699cbf732d7b4406daa9815dc40580ecb4f837602605c6fe233eee10946"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-6.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-6.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f8e4cc992b836d4e8ee10e11c125442618b81de8815da9cefb78211b5e6ce63a",
+      "outputSha256": "548b0382954654b85411c28278b0793bf4f9e7afd50f6a94511446887c61bc02"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-7.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-7.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b1c3a3bd7f33a2dec27ab6a49222f1aa6ecc66da6f6d2e81d182ad19094cb037",
+      "outputSha256": "e76086c2c230ff9d8bd232961e61691c543348ccb51c54e427ffca1f55f0f0a9"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle-video.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle-video.webp",
+      "width": 1280,
+      "height": 720,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "52836e2f775033f51e360e4a67797ff49a47907921736f2552d1e027e6ea0fc7",
+      "outputSha256": "5d5a9ac86c8a64b82dba1aa8ffeb32b74d0229a4764a38d434e409724c627e72"
+    },
+    {
+      "source": "public/images/products/9088-ss-stainless-steel-handle.webp",
+      "output": "public/images/products-hyde/9088-ss-stainless-steel-handle.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4f3c27cdebe8df8695f8c259e83e734718dcf8fca562505bfe67b6d9b48d1ebc",
+      "outputSha256": "ce94a9b3c7b67fd447acd900a7392364e55419875aded024b395295eddb53284"
     },
     {
       "source": "public/images/products/9210-pbbk-tubular-lock-2.webp",

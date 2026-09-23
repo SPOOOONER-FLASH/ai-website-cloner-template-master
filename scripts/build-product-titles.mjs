@@ -55,8 +55,17 @@ const POSITIONING = JSON.parse(
   readFileSync("src/data/category-positioning.json", "utf8"),
 );
 
-/** 品类定位。子品类没登记就退到父品类，两者都没有就返回 null。 */
+/**
+ * 品类定位。子品类没登记就退到父品类，两者都没有就返回 null。
+ *
+ * 单个产品可以用 `positioning` 字段整体覆盖（同样的六个键）。2026-09-23 加的：
+ * 9088 SS 是「带插芯锁体和欧标锁芯的执手套装」，而 stainless-steel-handles 的品类
+ * 定位是「入户门与玻璃门、全截面实心不锈钢」—— 插芯锁装不上无框玻璃门，
+ * 执手本体的材质图上也没写。品类文案对大多数成员成立，对它不成立，
+ * 就给它自己的一份，而不是把 114 个产品的品类文案改成最小公约数。
+ */
 function positioning(product) {
+  if (product.positioning) return product.positioning;
   const path = product.categoryPath ?? [];
   if (!path.length) return null;
   return POSITIONING[path.join("/")] ?? POSITIONING[path[0]] ?? null;

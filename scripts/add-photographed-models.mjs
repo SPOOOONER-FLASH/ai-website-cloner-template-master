@@ -281,7 +281,39 @@ for (const want of WANTED) {
     attachmentIds: [],
     seoTitle: "",
     seoDescription: "",
+    /*
+      THE DONOR'S IDENTITY, EMPTIED TOO. Added 2026-09-23.
+
+      The list above emptied the fields someone had thought of, and the clone kept every
+      field nobody had. In `stainless-steel-handles` the donor is model 600 — a concealed
+      sliding-door pull — so eight lever handles on roses and plates shipped as
+      "Sliding Door / Pocket Door" (the finder filed them there), with 600's series,
+      600's Chinese name 隐藏式推拉门拉手, 600's ISO badge and 600's feature provenance.
+      9088 SS on 2026-09-23 also got a Portuguese title that began "069 Puxador…", a
+      different model number entirely.
+
+      The rule this encodes: a clone supplies the SHAPE, never a VALUE. Anything that
+      describes a product is per-model; the only thing inherited is which keys exist.
+      `nameEs` / `namePt` stay because they are the family's translated name, set per
+      family, not per product.
+    */
+    nameZh: null,
+    series: name,
+    doorTypes: [],
+    certifications: [],
+    featuresSource: undefined,
+    summaryEs: "",
+    summaryPt: "",
+    specsEs: [],
+    specsPt: [],
+    featuresEs: [],
+    featuresPt: [],
+    seoTitleEs: "",
+    seoDescriptionEs: "",
+    seoTitlePt: "",
+    seoDescriptionPt: "",
   };
+  delete record.featuresSource;
   /*
     A photography-pending hero, NOT a deleted key.
 
