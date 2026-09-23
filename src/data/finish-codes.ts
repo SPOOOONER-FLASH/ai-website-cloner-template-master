@@ -255,8 +255,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Latão polido",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 铜亮光. ⚠ Same finish as PB, with the letters reversed — and PB is the form written out in full on five catalogue records. BP/PB and NB/BN are the two reversal pairs in this table; they are the most likely place for a finish to be ordered wrong.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 铜亮光. ⚠ Es el mismo acabado que PB con las letras invertidas, y PB es la forma escrita en cinco fichas del catálogo. BP/PB y NB/BN son los dos pares invertidos de esta tabla: el punto donde es más probable pedir un acabado equivocado.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 铜亮光
+    note: "Client confirmation, 2026-09-15: ⚠ Same finish as PB, with the letters reversed — and PB is the form written out in full on five catalogue records. BP/PB and NB/BN are the two reversal pairs in this table; they are the most likely place for a finish to be ordered wrong.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Es el mismo acabado que PB con las letras invertidas, y PB es la forma escrita en cinco fichas del catálogo. BP/PB y NB/BN son los dos pares invertidos de esta tabla: el punto donde es más probable pedir un acabado equivocado.",
   },
   {
     code: "NB",
@@ -265,8 +266,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Níquel preto",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 黑镍. ⚠ This is the same finish as BN, two rows above, with the letters the other way round. Both are in use on catalogue records. Quote the model's own code as printed and do not normalise it.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 黑镍. ⚠ Es el mismo acabado que BN, dos filas más arriba, con las letras invertidas. Ambos se usan en el catálogo. Cite el código tal y como aparece en la ficha del modelo y no lo normalice.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 黑镍
+    note: "Client confirmation, 2026-09-15: ⚠ This is the same finish as BN, two rows above, with the letters the other way round. Both are in use on catalogue records. Quote the model's own code as printed and do not normalise it.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Es el mismo acabado que BN, dos filas más arriba, con las letras invertidas. Ambos se usan en el catálogo. Cite el código tal y como aparece en la ficha del modelo y no lo normalice.",
   },
   {
     code: "GP",
@@ -275,8 +277,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Dourado polido",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 亮金色, a bright gold plate. The only gold in the range — nothing else here shares it, so GP is unambiguous on an order.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 亮金色, un dorado brillante. Es el único dorado de la gama, así que GP no se presta a confusión en un pedido.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 亮金色
+    note: "Client confirmation, 2026-09-15: a bright gold plate. The only gold in the range — nothing else here shares it, so GP is unambiguous on an order.",
+    noteEs: "Confirmación del cliente, 2026-09-15: un dorado brillante. Es el único dorado de la gama, así que GP no se presta a confusión en un pedido.",
   },
   {
     code: "CB",
@@ -285,8 +288,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Cromo brilhante",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 光铬. ⚠ BC was confirmed as the same finish in the same message. An earlier note here reasoned that CB and BC must differ because one record lists both; that record is now best read as listing one finish twice. Confirm against a sample before a first order.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 光铬. ⚠ BC se confirmó como el mismo acabado en el mismo mensaje. Una nota anterior deducía que CB y BC debían ser distintos porque una ficha lista ambos; hoy lo más razonable es leer esa ficha como el mismo acabado escrito dos veces. Confirme contra muestra antes de un primer pedido.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 光铬
+    note: "Client confirmation, 2026-09-15: ⚠ BC was confirmed as the same finish in the same message. An earlier note here reasoned that CB and BC must differ because one record lists both; that record is now best read as listing one finish twice. Confirm against a sample before a first order.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ BC se confirmó como el mismo acabado en el mismo mensaje. Una nota anterior deducía que CB y BC debían ser distintos porque una ficha lista ambos; hoy lo más razonable es leer esa ficha como el mismo acabado escrito dos veces. Confirme contra muestra antes de un primer pedido.",
   },
   {
     code: "BC",
@@ -295,8 +299,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Cromo brilhante",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 光铬 — the same words given for CB. See that row. Both spellings appear in the catalogue and neither is being retired, so read whichever the model prints.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 光铬, las mismas palabras dadas para CB. Vea esa fila. Ambas grafías están en el catálogo y ninguna se retira, así que lea la que imprima el modelo.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 光铬
+    note: "Client confirmation, 2026-09-15: the same words given for CB. See that row. Both spellings appear in the catalogue and neither is being retired, so read whichever the model prints.",
+    noteEs: "Confirmación del cliente, 2026-09-15: las mismas palabras dadas para CB. Vea esa fila. Ambas grafías están en el catálogo y ninguna se retira, así que lea la que imprima el modelo.",
   },
   {
     code: "BRN",
@@ -305,8 +310,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Preto",
     family: "coated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 黑色. ⚠ Read this one carefully if you know the letters from elsewhere: in general trade use BRN reads as brown or bronze, and here it does not — the factory uses it for black. ORB and BL are also black in this catalogue. Three codes, one colour.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 黑色. ⚠ Atención si conoce estas letras de otro sitio: en el sector BRN suele leerse como marrón o bronce, y aquí no — la fábrica lo usa para negro. ORB y BL también son negros en este catálogo. Tres códigos, un color.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 黑色
+    note: "Client confirmation, 2026-09-15: ⚠ Read this one carefully if you know the letters from elsewhere: in general trade use BRN reads as brown or bronze, and here it does not — the factory uses it for black. ORB and BL are also black in this catalogue. Three codes, one colour.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Atención si conoce estas letras de otro sitio: en el sector BRN suele leerse como marrón o bronce, y aquí no — la fábrica lo usa para negro. ORB y BL también son negros en este catálogo. Tres códigos, un color.",
   },
   {
     code: "SP",
@@ -315,8 +321,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Aço inoxidável polido",
     family: "solid",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 不锈钢抛亮光. Same finish as PSS at the top of this table, on a shorter code. Solid stainless, not a plating.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 不锈钢抛亮光. El mismo acabado que PSS al principio de esta tabla, con un código más corto. Inoxidable macizo, no un recubrimiento.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 不锈钢抛亮光
+    note: "Client confirmation, 2026-09-15: Same finish as PSS at the top of this table, on a shorter code. Solid stainless, not a plating.",
+    noteEs: "Confirmación del cliente, 2026-09-15: El mismo acabado que PSS al principio de esta tabla, con un código más corto. Inoxidable macizo, no un recubrimiento.",
   },
   {
     code: "BS",
@@ -325,8 +332,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Acetinado",
     family: "process",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 砂光. ⚠ It states the polish level and not the metal — satin stainless and satin brass are both 砂光 and are not interchangeable. Where a model prints BS alone, ask which base metal before specifying, exactly as with SS.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 砂光. ⚠ Indica el grado de pulido pero no el metal: inoxidable satinado y latón satinado son ambos 砂光 y no son intercambiables. Cuando un modelo indique sólo BS, pregunte por el metal base antes de especificar, igual que con SS.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 砂光
+    note: "Client confirmation, 2026-09-15: ⚠ It states the polish level and not the metal — satin stainless and satin brass carry the same factory term and are not interchangeable. Where a model prints BS alone, ask which base metal before specifying, exactly as with SS.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Indica el grado de pulido pero no el metal: inoxidable satinado y latón satinado llevan el mismo término de fábrica y no son intercambiables. Cuando un modelo indique sólo BS, pregunte por el metal base antes de especificar, igual que con SS.",
   },
   {
     code: "ORB",
@@ -335,8 +343,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Preto",
     family: "coated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 黑色. ⚠ In North American usage ORB is oil-rubbed bronze, a dark brown with copper showing through the wear points. It does not mean that here. If a drawing calls for oil-rubbed bronze, this code will not supply it — ask.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 黑色. ⚠ En uso norteamericano ORB es «oil-rubbed bronze», un marrón oscuro con el cobre asomando en los puntos de desgaste. Aquí no significa eso. Si un plano pide oil-rubbed bronze, este código no lo sirve: pregunte.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 黑色
+    note: "Client confirmation, 2026-09-15: ⚠ In North American usage ORB is oil-rubbed bronze, a dark brown with copper showing through the wear points. It does not mean that here. If a drawing calls for oil-rubbed bronze, this code will not supply it — ask.",
+    noteEs: "Confirmación del cliente, 2026-09-15: ⚠ En uso norteamericano ORB es «oil-rubbed bronze», un marrón oscuro con el cobre asomando en los puntos de desgaste. Aquí no significa eso. Si un plano pide oil-rubbed bronze, este código no lo sirve: pregunte.",
   },
   {
     code: "N",
@@ -355,8 +364,9 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Branco",
     family: "coated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 白色. A coating, so the colour is on the surface — treat it as you would MB for wear at the strike and around the fixings.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 白色. Es un recubrimiento, así que el color está en la superficie: trátelo como MB en cuanto al desgaste en el cerradero y alrededor de las fijaciones.",
+    // Client's own term (kept as data, never rendered — client rule 2026-09-23): 白色
+    note: "Client confirmation, 2026-09-15: A coating, so the colour is on the surface — treat it as you would MB for wear at the strike and around the fixings.",
+    noteEs: "Confirmación del cliente, 2026-09-15: Es un recubrimiento, así que el color está en la superficie: trátelo como MB en cuanto al desgaste en el cerradero y alrededor de las fijaciones.",
   },
 ];
 

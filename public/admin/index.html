@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 后台是工具，不是给搜索引擎收录的页面。 -->
     <meta name="robots" content="noindex, nofollow" />
-    <title>Canton Hyland — 内容后台</title>
+    <title>Canton Hyland — Content admin</title>
     <!--
       后台皮肤。独立成文件而不是内联，因为它已经有几百行，
       而且升级 Decap 时需要单独对着它核对选择器。
@@ -59,10 +59,10 @@
   </head>
   <body>
     <div id="cms-notice">
-      <button id="cms-notice-close" type="button" aria-label="关闭提示">×</button>
-      <b>保存后网站不会立刻更新。</b>
-      改动会提交到 GitHub 仓库；线上页面是构建产物，需要有人执行一次
-      <code>npm run deploy:prep</code> 并推送才会生效。详见 docs/CMS_REMOTE_SETUP.md。
+      <button id="cms-notice-close" type="button" aria-label="Close notice">×</button>
+      <b>Saving does not update the live site straight away.</b>
+      Changes are committed to the GitHub repository; the live pages are a build, so someone has to run
+      <code>npm run deploy:prep</code> and push before they appear. See docs/CMS_REMOTE_SETUP.md.
     </div>
     <script>
       // 关掉后记住选择，但只记一天 —— 这条提示解释的是一个每次发布都仍然成立的

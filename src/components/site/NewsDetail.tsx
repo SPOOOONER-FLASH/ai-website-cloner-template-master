@@ -10,6 +10,8 @@ import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
 import { articleBlocks } from "@/lib/article-layout";
 import { ArticleBody } from "./ArticleBody";
+import { DataTable } from "./DataTable";
+import { InlineText } from "./InlineText";
 import { ArticleContents } from "./ArticleContents";
 import reading from "./ArticleReading.module.css";
 import { GuideArticleIntro } from "./GuideArticleIntro";
@@ -284,19 +286,57 @@ export function NewsDetail({
         <section className="col-content grid w-full grid-cols gap-x">
           {section === "guides" && <div className="col-span-full min-w-0 lg:col-span-4 xl:col-span-8"><ArticleContents items={contents} locale={locale} /></div>}
           <div className="col-span-full lg:col-span-8 lg:col-start-5 xl:col-span-14 xl:col-start-10">
-            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : body.map((paragraph, index) => (
-              <p
-                key={index}
-                className={
-                  // FSB sets the lede in bold and lets the rest run as body copy.
-                  index === 0
-                    ? "text-c1 font-semibold text-ink"
-                    : "mt-24 text-c1 text-ink-secondary"
-                }
-              >
-                {paragraph}
-              </p>
-            ))}
+            {/*
+              News renders the same blocks as guides, in news styling.
+
+              Until 2026-09-23 news printed `body` paragraph by paragraph as plain strings,
+              so the headings and tables the 35 expanded articles carry — 273 `##` and 288
+              table rows — reached the live page as literal `##` and `| a | b |`. The block
+              parser already ran for news (`blocks` above); its output was just unused.
+            */}
+            {section === "guides" ? <ArticleBody blocks={blocks} locale={locale} /> : blocks.map((block, index) => {
+              if (block.kind === "heading") {
+                return block.level === 2 ? (
+                  <h2 key={block.id} id={block.id} className="mt-48 text-h3 text-ink">
+                    {block.text}
+                  </h2>
+                ) : (
+                  <h3 key={block.id} id={block.id} className="mt-32 text-c1 font-semibold text-ink">
+                    {block.text}
+                  </h3>
+                );
+              }
+              if (block.kind === "table") {
+                const numeric = block.headers.map((_, column) =>
+                  block.rows.every((row) => /^-?\d+(?:\.\d+)?$/.test(row[column])),
+                );
+                return (
+                  <div key={index} className="mt-24">
+                    <DataTable
+                      locale={locale}
+                      caption={block.caption || { en: "Reference table", es: "Tabla de consulta", pt: "Tabela de consulta" }[locale]}
+                      columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? "number" : "text" }))}
+                      rows={block.rows.map((row) =>
+                        row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined })),
+                      )}
+                    />
+                  </div>
+                );
+              }
+              return (
+                <p
+                  key={index}
+                  className={
+                    // FSB sets the lede in bold and lets the rest run as body copy.
+                    index === 0
+                      ? "text-c1 font-semibold text-ink"
+                      : "mt-24 text-c1 text-ink-secondary"
+                  }
+                >
+                  <InlineText text={block.text} />
+                </p>
+              );
+            })}
 
             {/*
               The question-and-answer block.

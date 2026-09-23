@@ -8,7 +8,7 @@ import type { Locale } from "@/data/site";
  * questions about MOQ, lead times, payment terms and OEM policy are commercial answers
  * only the client can give, and a plausible-sounding guess on any of them would be
  * quoted back at them by a buyer. Unanswered questions are hidden from the public page
- * and listed on the internal /status dashboard instead.
+ * and listed by `npm run status` instead (the /status page was taken off the public site on 2026-09-23).
  */
 
 export interface FaqItem {
