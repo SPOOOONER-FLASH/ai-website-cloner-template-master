@@ -40,9 +40,9 @@
 | 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | **已做** 批6 EN 1790（ES/PT 待多语言批） |
 | 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | **已做** 批6 EN 1642（ES/PT 待多语言批） |
 | 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | **已做** 批6 EN 1792（ES/PT 待多语言批） |
-| 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | 待做 |
-| 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | 待做 |
-| 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | 待做 |
+| 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | **已做** 批7 EN 1626（ES/PT 待多语言批） |
+| 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | **已做** 批7 EN 1631（ES/PT 待多语言批） |
+| 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | **已做** 批7 EN 1702（ES/PT 待多语言批） |
 | 22 | what-oem-actually-changes | 0 | 700 | 900 | 待做 |
 | 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | 待做 |
 | 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | 待做 |
