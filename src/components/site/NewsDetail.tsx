@@ -121,7 +121,21 @@ export function NewsDetail({
   const title = titleFor[locale] || article.title;
   const summary = summaryFor[locale] || article.summary;
   const localeBody = bodyFor[locale];
-  const body = localeBody?.length === article.body.length ? localeBody : article.body;
+  /*
+    A translated body is used whenever one exists — NOT only when its paragraph count
+    matches the English.
+
+    The equal-length rule (same as ProjectDetail) was meant to stop a half-translated page
+    reading as a rendering bug. What it did in practice, found 2026-09-22: two news
+    articles and two guides whose complete Spanish and Portuguese translations split one
+    paragraph differently from the English were served in ENGLISH on /es/ and /pt/, live;
+    and the English-only expansion of 20 more articles (client: translations deferred)
+    would have done the same to 40 pages. A complete Spanish article that is shorter than
+    the new English one is the right thing to show a Spanish reader; an English article
+    under a Spanish title is not. The drift is still reported — `npm run copy:parity`
+    lists every body whose paragraph count differs — so the translation batch can find it.
+  */
+  const body = localeBody?.length ? localeBody : article.body;
   const blocks = articleBlocks(body);
   const overview = { en: "Overview", es: "Resumen", pt: "Visão geral" }[locale];
 
