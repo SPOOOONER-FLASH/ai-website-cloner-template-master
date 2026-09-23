@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "F110",
+      "slug": "f110-glass-door-patch-fittings",
+      "original": "public\\images\\products\\f110-glass-door-patch-fittings.webp",
+      "sha256": "8f7cd36f3812c7b0783cd9e5a13e6b1250cff6e205011f616a580af53e742b3b"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\08-product-stage.png",
+    "sha256": "c5391dbb4cc4e6844f5894978d9b262ad48469f5936dc60f0fee3b6dc0ef50d4",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/glass-door-thickness-and-cutouts-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "d2b6ee02847cc818a7685105b4cd1ea761f45aa80c20fc11bbca7c17b8b366aa"
+}

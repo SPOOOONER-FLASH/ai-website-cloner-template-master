@@ -121,7 +121,8 @@ function heroesIn(collection: string) {
   the client is objecting to is a repeat WITHIN ONE GRID. Two sections of the site may
   legitimately reach for the same photograph; five cards in a row may not.
 */
-for (const collection of ["content/news", "content/projects"]) {
+// content/guides added 2026-09-23: 32 guides had shared one placeholder desk image.
+for (const collection of ["content/news", "content/projects", "content/guides"]) {
   test(`every record in ${collection} has a hero image no sibling uses`, () => {
     const heroes = heroesIn(collection);
     const shared = [...heroes.entries()].filter(([, slugs]) => slugs.length > 1);

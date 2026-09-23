@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "AAH024",
+      "slug": "aah024-brass-and-steel-hinges",
+      "original": "public\\images\\products\\aah024-brass-and-steel-hinges.webp",
+      "sha256": "f8937e648fb5e322c02675ad63998e2ff74c9b0229f04eb062860d4bddae284a"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\17-product-stage.png",
+    "sha256": "7948acd8f332490a049a525785c10045213d158f0fb55c02dc1c0c0fa2530e95",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/hinge-grades-and-count-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "f9c0fe3b5fe507840e372e275de2210f52168ad26a6c02186e76ee12ec1a87cc"
+}

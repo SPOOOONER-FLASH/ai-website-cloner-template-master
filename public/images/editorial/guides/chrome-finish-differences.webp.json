@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "DV05",
+      "slug": "dv05-door-viewer",
+      "original": "public\\images\\products\\dv05-door-viewer.webp",
+      "sha256": "683249507af4cd367592fee9fc16e1a87b7fd5730e809dad396111ab9dd7ddd6"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\16-product-stage.png",
+    "sha256": "9dd010ee2d64fc39db0531bdc91b702a22be8dcbd8430c07c1c59cdf6e4aa191",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/chrome-finish-differences-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "1d32ed9018fcc975ba7a612235c5b3140ba082abdb968701fbbb082625e54034"
+}
