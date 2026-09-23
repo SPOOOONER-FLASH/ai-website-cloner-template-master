@@ -1,0 +1,7 @@
+# 2026-09-23 Codex — two image libraries
+
+**Scope:** Completed 20 real-product studio composites and 20 original architectural editorial scenes from the client's two style folders. Files: `docs/design-references/2026-09-09-style-batches/` and `scripts/build-codex-style-library.mjs`. No site pages, `public/`, `out/` or `out-rayen/` changed.
+
+**Verification:** Reviewed three 20-image contact sheets and the 20 real source photographs. Replaced one source with a visible white cutout remnant and another whose viewpoint made the handle seem suspended. Final product inventory is 20 WebP files, architecture inventory 20 PNG files, with source SHA-256 in `product-provenance.json`. All 60 final/stage images decoded at a minimum of 900×500 pixels; manifest has 20 entries. `node --check` and ESLint passed for the new generator. The studio backgrounds contain no AI-generated hardware. Architectural scenes are invented locations and cannot be described as installations or case studies.
+
+**Next:** Codex can curate individual images for a specific component after checking crop, source model and page claim. Current library is reference-only and not deployed. Full `npm run check` was not run: its build overwrites `out/` and `out-rayen/`, which another active session claims in `NOW.md`. That builder owns any future release.

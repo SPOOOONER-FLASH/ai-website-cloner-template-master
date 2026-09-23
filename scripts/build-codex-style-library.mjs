@@ -1,5 +1,5 @@
 /** Rebuilds the September two-style library from preserved generated stages and real photos. */
-import { readdirSync, mkdirSync, existsSync, copyFileSync, readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, mkdirSync, existsSync, copyFileSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
@@ -15,9 +15,9 @@ const recovered = [
   '0eb0f2fc-5f66-4e4f-84f2-4e135972bb97', 'f8a8e5c4-9196-44a9-b531-456a67156854',
 ];
 const products = [
-  '9001-stainless-steel-handle', '3431-sset-lever-handle', 'b024-brass-and-steel-hinges',
+  '812-sset-lever-handle', '3431-sset-lever-handle', 'b024-brass-and-steel-hinges',
   'ju-051-door-closer', '70610-ab-grip-handle-set', '45-bnik-lock-cylinder',
-  'fb001-ss-door-flush-bolt', 'f110-glass-door-patch-fittings', '5807-sscl-commercial-lock',
+  'fb001-ss-door-flush-bolt', 'f110-glass-door-patch-fittings', '5807-sscr-commercial-lock',
   'd101-ab-deadbolts', '1073d-mb-night-latch-and-rim-lock', '575-sset-tubular-lock',
   'ds01-door-stopper', '600-concealed-sliding-door-handle', 'f001-security-door-guard',
   'dv05-door-viewer', 'aah024-brass-and-steel-hinges', 'ju-061-door-closer',
@@ -64,7 +64,7 @@ if (process.argv.includes('--compose')) {
     if (run.status !== 0) throw new Error(run.stderr || run.stdout);
     const native = join(dir, `${slug}-on-${pad(i + 1)}-product-stage.png.webp`);
     const out = join(dir, `${pad(i + 1)}-${slug}.webp`);
-    copyFileSync(native, out);
+    renameSync(native, out);
     manifest.push({ index: i + 1, slug, source, sourceSha256: hash(source), scene, sceneSha256: hash(scene), out, method: 'Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.' });
   }
   writeFileSync(join(root, 'product-provenance.json'), JSON.stringify(manifest, null, 2) + '\n');
