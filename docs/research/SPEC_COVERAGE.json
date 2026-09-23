@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
-  "totalProducts": 964,
+  "totalProducts": 973,
   "fields": {
     "backset": {
       "title": "Backset",
@@ -33,8 +33,8 @@
         "Centre distance, horizontal",
         "Centre distance, vertical"
       ],
-      "products": 104,
-      "rows": 105,
+      "products": 105,
+      "rows": 106,
       "distinctValues": 60
     },
     "doorThickness": {
@@ -50,8 +50,8 @@
         "Applicable Door Thickness",
         "Glass door thickness"
       ],
-      "products": 318,
-      "rows": 318,
+      "products": 325,
+      "rows": 325,
       "distinctValues": 42
     },
     "handing": {
