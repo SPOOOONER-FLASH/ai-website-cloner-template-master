@@ -37,9 +37,9 @@
 | 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | **已做** 批5 1868/1953/1931 |
 | 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | **已做** 批5 1938/2083/2011 |
 | 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | **已做** 批5 1877/1954/1908 |
-| 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | 待做 |
-| 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | 待做 |
-| 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | 待做 |
+| 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | **已做** 批6 EN 1790（ES/PT 待多语言批） |
+| 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | **已做** 批6 EN 1642（ES/PT 待多语言批） |
+| 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | **已做** 批6 EN 1792（ES/PT 待多语言批） |
 | 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | 待做 |
 | 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | 待做 |
 | 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | 待做 |
