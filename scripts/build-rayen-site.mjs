@@ -226,7 +226,17 @@ const site = JSON.parse(readFileSync(join(root, "content", "rayen", "site.json")
 const canonicalOrigin = `https://${site.host.domain}`;
 writeFileSync(
   join(TARGET, "robots.txt"),
-  ["User-agent: *", "Allow: /", "", `Sitemap: ${canonicalOrigin}/sitemap.xml`, ""].join("\n"),
+  // `/*/__next.` blocks the exported RSC sidecar payloads beside every page
+  // (~3,000 wasted fetches logged 2026-09-23). Not /_next/ — that path holds the
+  // CSS/JS crawlers need to render pages. Same rule as cantonlock.com (seo-policy.ts).
+  [
+    "User-agent: *",
+    "Allow: /",
+    "Disallow: /*/__next.",
+    "",
+    `Sitemap: ${canonicalOrigin}/sitemap.xml`,
+    "",
+  ].join("\n"),
   "utf8",
 );
 
