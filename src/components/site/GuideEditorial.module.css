@@ -6,7 +6,7 @@
 .heroPhoto img { width: 100%; height: 300px; object-fit: contain; }
 .heroFeature h2 { font-size: 19px; line-height: 1.4; font-weight: 500; max-width: 45ch; margin: 18px 0 12px; }
 .textLink { display: inline-flex; align-items: center; gap: 10px; min-height: 36px; font-size: 15px; line-height: 1.5; text-underline-offset: 5px; }
-.textLink svg { flex-shrink: 0; transition: transform 150ms ease-out; }
+.textLink svg { flex-shrink: 0; transition: transform var(--motion-fast) var(--motion-ease-crisp); }
 .textLink:hover { text-decoration: underline; }
 .textLink:hover svg { transform: translate(2px, -2px); }
 .library { background: #fff; padding: 48px max(6%, calc((100% - 1268px) / 2)) 72px; scroll-margin-top: 144px; }

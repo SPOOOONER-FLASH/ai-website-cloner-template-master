@@ -324,7 +324,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     setOpenShelf(null);
                     setSearchOpen(true);
                   }}
-                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
+                  className="hit-44 flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-fast hover:text-ink"
                 >
                   <SearchIcon className="h-20 w-20" />
                 </button>
@@ -339,7 +339,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     setOpenShelf(null);
                     setMenuOpen(true);
                   }}
-                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
+                  className="hit-44 flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-fast hover:text-ink"
                 >
                   <MenuIcon className="h-20 w-20" />
                 </button>

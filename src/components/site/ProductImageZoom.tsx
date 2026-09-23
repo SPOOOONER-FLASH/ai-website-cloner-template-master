@@ -7,6 +7,7 @@ import type { ImageRef } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { localised } from "@/lib/localised";
 import { cn } from "@/lib/utils";
+import { OVERLAY_EXIT_MS, usePresence } from "@/lib/use-presence";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 
 type ProductImageZoomProps = ImageRef & {
@@ -35,6 +36,19 @@ export function ProductImageZoom({
   const inspectionHintId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const { mounted, visible } = usePresence(open, OVERLAY_EXIT_MS);
+  /*
+    Pointer tracking: bounds read once per hover, writes batched to one per frame.
+
+    It used to call getBoundingClientRect() and write two CSS variables on every
+    pointermove — several times per frame on a high-rate mouse, each read forcing layout —
+    and the CSS then eased transform-origin over 150ms linear, so the magnified image
+    trailed the pointer. Both are gone: the origin follows the latest pointer position
+    on the next frame, and eases only on the way out (see .product-pointer-zoom).
+  */
+  const boundsRef = useRef<DOMRect | null>(null);
+  const frameRef = useRef(0);
+  const pointerRef = useRef({ x: 0, y: 0 });
   /*
     Three locales, read through `localised` rather than a two-way ternary.
 
@@ -70,19 +84,46 @@ export function ProductImageZoom({
   function moveZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
     if (event.pointerType !== "mouse") return;
 
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const x = Math.min(100, Math.max(0, ((event.clientX - bounds.left) / bounds.width) * 100));
-    const y = Math.min(100, Math.max(0, ((event.clientY - bounds.top) / bounds.height) * 100));
-    const image = event.currentTarget.querySelector<HTMLElement>(".product-pointer-zoom");
-    image?.style.setProperty("--product-zoom-x", `${x}%`);
-    image?.style.setProperty("--product-zoom-y", `${y}%`);
+    const button = event.currentTarget;
+    boundsRef.current ??= button.getBoundingClientRect();
+    pointerRef.current = { x: event.clientX, y: event.clientY };
+    if (frameRef.current) return;
+
+    frameRef.current = requestAnimationFrame(() => {
+      frameRef.current = 0;
+      const bounds = boundsRef.current;
+      if (!bounds) return;
+      const { x: px, y: py } = pointerRef.current;
+      const x = Math.min(100, Math.max(0, ((px - bounds.left) / bounds.width) * 100));
+      const y = Math.min(100, Math.max(0, ((py - bounds.top) / bounds.height) * 100));
+      const image = button.querySelector<HTMLElement>(".product-pointer-zoom");
+      image?.style.setProperty("--product-zoom-x", `${x}%`);
+      image?.style.setProperty("--product-zoom-y", `${y}%`);
+    });
   }
 
   function resetZoomOrigin(event: ReactPointerEvent<HTMLButtonElement>) {
+    cancelAnimationFrame(frameRef.current);
+    frameRef.current = 0;
+    boundsRef.current = null;
     const image = event.currentTarget.querySelector<HTMLElement>(".product-pointer-zoom");
     image?.style.setProperty("--product-zoom-x", "50%");
     image?.style.setProperty("--product-zoom-y", "50%");
   }
+
+  useEffect(() => {
+    // Cached bounds go stale when the page scrolls or resizes under a still pointer.
+    const drop = () => {
+      boundsRef.current = null;
+    };
+    window.addEventListener("scroll", drop, { passive: true });
+    window.addEventListener("resize", drop);
+    return () => {
+      window.removeEventListener("scroll", drop);
+      window.removeEventListener("resize", drop);
+      cancelAnimationFrame(frameRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -143,9 +184,11 @@ export function ProductImageZoom({
         </span>
       </button>
 
-      {open ? (
+      {/* Stays mounted through the exit fade; see usePresence. */}
+      {mounted ? (
         <div
-          className="fixed inset-0 z-[60] grid place-items-center bg-ink/92 p-16 sm:p-32"
+          className="overlay-backdrop fixed inset-0 z-[60] grid place-items-center bg-ink/92 p-16 sm:p-32"
+          data-state={visible ? "open" : "closed"}
           role="dialog"
           aria-modal="true"
           aria-label={copy.dialog}
@@ -169,7 +212,8 @@ export function ProductImageZoom({
             alt={label}
             loading="eager"
             decoding="async"
-            className="max-h-[86vh] max-w-[94vw] object-contain"
+            className="overlay-panel max-h-[86vh] max-w-[94vw] object-contain"
+            data-state={visible ? "open" : "closed"}
           />
         </div>
       ) : null}

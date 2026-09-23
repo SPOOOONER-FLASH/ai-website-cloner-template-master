@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { OVERLAY_EXIT_MS, usePresence } from "@/lib/use-presence";
 import {
   suggestedCategories,
   suggestedProducts,
@@ -57,6 +58,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
   locale?: Locale;
 }) {
   const router = useRouter();
+  const { mounted, visible } = usePresence(open, OVERLAY_EXIT_MS);
   const [query, setQuery] = useState("");
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -141,6 +143,9 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
       if (event.key === "Escape") {
         event.preventDefault();
         onClose();
+        // Same focus return as the close button. Escape used to skip it and leave focus
+        // on <body>, so a keyboard user was thrown back to the top of the page.
+        if (restoreFocusTo.current instanceof HTMLElement) restoreFocusTo.current.focus();
         return;
       }
       if (event.key !== "Tab") return;
@@ -315,10 +320,20 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     return index.filter((e) => score(e, terms) > 0).length;
   }, [index, query]);
 
-  if (!open) return null;
+  /*
+    Stays mounted through its exit fade (usePresence). `inert` follows `open`, not
+    `visible`: it has to be off on the very first frame so the input can take focus,
+    and on for the whole exit so a half-faded panel cannot be typed into or tabbed to.
+  */
+  if (!mounted) return null;
+  const state = visible ? "open" : "closed";
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center" role="presentation">
+    <div
+      className="fixed inset-0 z-50 flex items-start justify-center"
+      inert={!open}
+      role="presentation"
+    >
       {/*
         Light grey, not the promo dialog's near-black. That difference is in the
         reference too, and it is the right call: a search panel is a tool the visitor
@@ -330,7 +345,8 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         aria-hidden="true"
         tabIndex={-1}
         onClick={close}
-        className="absolute inset-0 cursor-pointer bg-[rgba(246,246,246,0.92)]"
+        className="overlay-backdrop absolute inset-0 cursor-pointer bg-[rgba(246,246,246,0.92)]"
+        data-state={state}
       />
 
       {/*
@@ -348,7 +364,8 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
           role="dialog"
           aria-modal="true"
           aria-labelledby="search-heading"
-          className="hard-shadow-panel max-h-[92vh] overflow-y-auto bg-surface p-24 sm:max-h-[76vh] sm:p-32"
+          className="overlay-panel hard-shadow-panel max-h-[92vh] overflow-y-auto bg-surface p-24 sm:max-h-[76vh] sm:p-32"
+          data-state={state}
         >
           <div className="flex items-start justify-between gap-24">
             <h2 id="search-heading" className="text-h3 text-ink">
@@ -358,7 +375,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
               type="button"
               onClick={close}
               aria-label={t.close}
-              className="flex h-24 w-24 flex-none items-center justify-center text-ink transition-colors duration-200 hover:text-ink-secondary"
+              className="hit-44 flex h-24 w-24 flex-none items-center justify-center text-ink transition-colors duration-fast hover:text-ink-secondary"
             >
               <svg viewBox="0 0 24 24" className="h-24 w-24" aria-hidden="true" focusable="false">
                 <path
@@ -408,7 +425,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
               <button
                 type="submit"
                 aria-label={t.label}
-                className="flex h-24 w-16 flex-none items-center justify-center text-ink"
+                className="hit-44 flex h-24 w-16 flex-none items-center justify-center text-ink"
               >
                 <svg viewBox="0 0 6 10" className="h-16 w-auto" aria-hidden="true">
                   <path d="M0.8 0.6 L5.2 5 L0.8 9.4 L0.8 0.6 Z" fill="currentColor" />

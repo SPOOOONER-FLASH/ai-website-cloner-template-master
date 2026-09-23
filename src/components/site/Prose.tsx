@@ -26,7 +26,7 @@ export function Prose({ markdown, className }: { markdown: string; className?: s
         // a prose plugin's defaults would quietly introduce a second one.
         "text-c1 text-ink-secondary",
         "[&_p]:mb-16 [&_p:last-child]:mb-0",
-        "[&_h2]:mb-8 [&_h2]:mt-32 [&_h2]:text-h4 [&_h2]:text-ink [&_h2:first-child]:mt-0",
+        "[&_h2]:mb-8 [&_h2]:mt-32 [&_h2]:text-h3 [&_h2]:text-ink [&_h2:first-child]:mt-0",
         "[&_h3]:mb-8 [&_h3]:mt-24 [&_h3]:text-c1 [&_h3]:font-bold [&_h3]:text-ink",
         "[&_strong]:font-bold [&_strong]:text-ink",
         "[&_ul]:mb-16 [&_ul]:list-disc [&_ul]:pl-20",

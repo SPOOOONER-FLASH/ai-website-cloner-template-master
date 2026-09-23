@@ -115,7 +115,7 @@ export function WelcomeIntro({
                 <h2 className="text-h3 text-ink">{text.more}</h2>
                 <span
                   className={cn(
-                    "flex h-[var(--leading-h3)] place-items-center transition-transform duration-300",
+                    "flex h-[var(--leading-h3)] place-items-center transition-transform duration-medium",
                     expanded && "rotate-180",
                   )}
                 >

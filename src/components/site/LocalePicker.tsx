@@ -107,7 +107,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
           aria-expanded={open}
           aria-controls={panelId}
           aria-label={text.trigger}
-          className="nav-marker flex h-24 items-center text-ink no-underline transition-colors duration-200 hover:text-brand-hover"
+          className="nav-marker flex h-24 items-center text-ink no-underline transition-colors duration-fast hover:text-brand-hover"
         >
           <GlobeIcon className="h-20 w-20 shrink-0 text-ink-tertiary" />
         </button>
@@ -142,7 +142,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
                     hrefLang={language.code}
                     lang={language.code}
                     title={language.label}
-                    className="text-ink-secondary no-underline transition-colors duration-200 hover:text-brand-hover"
+                    className="text-ink-secondary no-underline transition-colors duration-fast hover:text-brand-hover"
                   >
                     {language.code.toUpperCase()}
                   </Link>
@@ -166,7 +166,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
           aria-label={text.title}
           className={[
             "absolute left-0 right-0 top-full z-40 border-t border-line bg-surface shadow-sm",
-            "motion-safe:animate-[locale-picker-in_180ms_ease-out]",
+            "motion-safe:animate-[locale-picker-in_var(--motion-fast)_var(--motion-ease)]",
           ].join(" ")}
         >
           <div className="layout py-40">

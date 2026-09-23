@@ -7,7 +7,7 @@ import {
   featureColumnsLede,
 } from "@/data/feature-columns";
 import { cn } from "@/lib/utils";
-import { ArrowLink } from "./ArrowLink";
+import { ArrowRightIcon } from "./icons";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { localised } from "@/lib/localised";
 
@@ -81,8 +81,19 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                     {localised(column.figure, locale)}
                   </p>
                 ) : null}
+                {/*
+                  Drawn like an ArrowLink but NOT a link. The whole card is already an <a>
+                  to the same address, and an <a> inside an <a> is invalid HTML: the
+                  browser's parser closes the outer link early, the DOM no longer matches
+                  what the server sent, and React discarded the server HTML and re-rendered
+                  the entire homepage on the client ("Hydration failed", found 2026-09-22 —
+                  live since this module shipped). One link per card, one tab stop.
+                */}
                 <p className="mt-auto pt-24">
-                  <ArrowLink href={localised(column.href, locale)}>{featureColumnsCta(locale)}</ArrowLink>
+                  <span className="relative inline-block pl-12 text-c1 text-brand">
+                    <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" />
+                    <span>{featureColumnsCta(locale)}</span>
+                  </span>
                 </p>
                 {/*
                   The take-away file, under the reading rather than above it. A form

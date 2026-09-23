@@ -161,7 +161,7 @@ export function NewsDetail({
             {title}
           </h1>
 
-          <p className="col-span-full max-w-[72ch] text-h4 text-ink-secondary xl:col-span-16">
+          <p className="col-span-full max-w-[72ch] text-lead text-ink-secondary xl:col-span-16">
             {summary}
           </p>
 

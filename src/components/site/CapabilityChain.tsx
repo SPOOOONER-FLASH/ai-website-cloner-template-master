@@ -162,7 +162,7 @@ export function CapabilityChain({
             </p>
             <div className="mt-12 h-px w-full bg-line">
               <div
-                className="h-px bg-ink motion-safe:transition-[width] motion-safe:duration-300"
+                className="h-px bg-ink motion-safe:transition-[width] motion-safe:duration-medium"
                 style={{ width: `${((active + 1) / steps.length) * 100}%` }}
               />
             </div>
@@ -183,7 +183,7 @@ export function CapabilityChain({
                 <div className="flex gap-24">
                   <span
                     className={[
-                      "shrink-0 text-c2 tabular-nums motion-safe:transition-colors motion-safe:duration-300",
+                      "shrink-0 text-c2 tabular-nums motion-safe:transition-colors motion-safe:duration-medium",
                       isActive ? "text-ink" : "text-ink-secondary",
                     ].join(" ")}
                   >

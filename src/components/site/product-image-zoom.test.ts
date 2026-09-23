@@ -35,7 +35,13 @@ test("zoom opens an on-demand dialog and supports keyboard dismissal", () => {
   assert.match(zoom, /role="dialog"/);
   assert.match(zoom, /aria-modal="true"/);
   assert.match(zoom, /event\.key === "Escape"/);
-  assert.match(zoom, /open \? \(/);
+  /*
+    Still mounted on demand — the large image is not in the page until someone asks for
+    it. The flag is `mounted` rather than `open` since 2026-09-22 so the dialog can stay
+    in the tree for its exit fade (usePresence); it is false again once that has run.
+  */
+  assert.match(zoom, /usePresence\(open, OVERLAY_EXIT_MS\)/);
+  assert.match(zoom, /mounted \? \(/);
   assert.match(zoom, /loading="eager"/);
 });
 

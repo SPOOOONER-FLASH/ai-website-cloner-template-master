@@ -315,7 +315,13 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt sm:aspect-[1920/754]"
+        /*
+          `xs:` (640px), not `sm:` (744px). The <source>, the preloads and `sizes` above all
+          switch from the phone crop to the panorama at 640px; the frame used to switch at
+          744. Between the two — most Android tablets held upright — a 4:3 box was filled
+          with the 2.55:1 panorama, cropped to its middle third.
+        */
+        className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt xs:aspect-[1920/754]"
         onPointerDown={(event) => {
           pointerStart.current = event.clientX;
         }}
@@ -463,18 +469,46 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
         */}
       </div>
 
-      <div aria-live="polite" className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24">
-        <div className="col-span-full grid grid-cols-subgrid gap-x gap-y-16">
-          <div className="col-span-full md:col-span-5 xl:col-span-6">
-            <h2 className="text-heading-3 font-semibold">{activeSlide.title}</h2>
-            <p className="mt-4 max-w-[36rem] text-copy">{activeSlide.body}</p>
+      {/*
+        EVERY CAPTION IS RENDERED, STACKED IN ONE GRID CELL; ONLY THE ACTIVE ONE IS VISIBLE.
+
+        The image has always crossfaded over 560ms while the words beside it were swapped
+        in a single frame, and the caption box took the height of whichever slide was
+        showing — so a two-line body followed by a four-line one pushed the next module
+        down mid-read. Stacking gives the cell the height of the LONGEST caption in every
+        language with no measuring code, and lets the text fade on its own shorter clock
+        (.hero-caption in globals.css).
+
+        Inactive captions are `inert` and aria-hidden, so neither a keyboard nor a screen
+        reader meets the three it cannot see. The live region is a separate sr-only line
+        that announces only the active slide.
+
+        Classes: `text-h3` / `text-c1`. This used `text-heading-3` / `text-copy`, which are
+        defined nowhere — the caption was rendering at whatever size it inherited.
+      */}
+      <p aria-live="polite" className="sr-only">
+        {activeSlide.title}. {activeSlide.body}
+      </p>
+      <div className="col-content grid w-full pb-32 pt-16 md:pb-48 md:pt-24">
+        {content.slides.map((slide, index) => (
+          <div
+            aria-hidden={index !== activeIndex}
+            className="hero-caption grid grid-cols gap-x gap-y-16 [grid-area:1/1]"
+            data-active={index === activeIndex}
+            inert={index !== activeIndex}
+            key={`${slide.title}-${index}`}
+          >
+            <div className="col-span-full md:col-span-5 xl:col-span-6">
+              <h2 className="text-h3 font-semibold">{slide.title}</h2>
+              <p className="mt-4 max-w-[36rem] text-c1">{slide.body}</p>
+            </div>
+            <div className="col-span-full md:[grid-column:span_3/-1] xl:[grid-column:span_6/-1]">
+              <ArrowLink href={slide.href} prefetch={false}>
+                {slide.linkLabel}
+              </ArrowLink>
+            </div>
           </div>
-          <div className="col-span-full md:[grid-column:span_3/-1] xl:[grid-column:span_6/-1]">
-            <ArrowLink href={activeSlide.href} prefetch={false}>
-              {activeSlide.linkLabel}
-            </ArrowLink>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
