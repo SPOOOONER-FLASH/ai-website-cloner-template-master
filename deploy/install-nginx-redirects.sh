@@ -61,6 +61,11 @@ if [ "${1:-}" = "--no-pull" ]; then
   say "skipping git pull (--no-pull)"
 else
   say "pulling latest…"
+  # Same lock as the cron deploy job. Without it this pull and the cron fetch can run at
+  # once, and two git processes touching .git/shallow is what left the stale shallow.lock
+  # that stopped every deploy (server log, 2026-09-22).
+  exec 9>/tmp/cantonlock-deploy.lock
+  flock -w 300 9 || { say "!! deploy lock busy for 5 minutes — nothing changed, try again."; exit 1; }
   git -C "$REPO_DIR" pull --ff-only || {
     say ""
     say "!! git pull failed. NOTHING has been changed."
@@ -102,7 +107,7 @@ cp "$REPO_DIR/deploy/nginx/taxonomy-redirects.conf" "$EXT_DIR/10-taxonomy-redire
 cp "$REPO_DIR/deploy/nginx/legacy-redirects.conf" "$HTTP_DIR/0.legacy-redirects.conf"
 say "installed:"
 say "  $EXT_DIR/10-taxonomy-redirects.conf   ($(grep -c 'return 301' "$EXT_DIR/10-taxonomy-redirects.conf") rules)"
-say "  $HTTP_DIR/0.legacy-redirects.conf     ($(grep -cE '^\s+[0-9]+ \"/' "$HTTP_DIR/0.legacy-redirects.conf") ids)"
+say "  $HTTP_DIR/0.legacy-redirects.conf     ($(grep -cE '^\s+[0-9]+ "/' "$HTTP_DIR/0.legacy-redirects.conf") ids)"
 if [ "$CHANGED" = "0" ]; then
   say ""
   say "  (both files were already identical — nothing actually changed)"
@@ -144,8 +149,11 @@ say "verifying at the origin (bypassing Cloudflare):"
 FAIL=0
 while IFS='|' read -r path expect want; do
   [ -n "$path" ] || continue
+  # The trailing \n matters. Without it `read` hits EOF, returns 1, and `set -e` ends the
+  # script silently right here — which is why the 2026-09-22 run printed "verifying…" and
+  # then nothing: not one redirect was actually checked, and no failure was reported.
   read -r code location < <(
-    curl -s -o /dev/null -w '%{http_code} %{redirect_url}' \
+    curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' \
       -H 'Host: cantonlock.com' "http://127.0.0.1${path}" || echo "000 -"
   )
   if [ "$code" = "$expect" ] && { [ -z "$want" ] || [ "${location%"$want"}" != "$location" ]; }; then
