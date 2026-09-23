@@ -4,6 +4,7 @@ import { useId, useState } from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, Search } from 'lucide-react';
 import type { Locale } from '@/data/site';
+import { localisedHref } from '@/lib/spanish-mirror';
 import { filterGuides, type GuideLibraryEntry, type GuideTopic } from '@/lib/guide-library';
 import styles from './GuideEditorial.module.css';
 
@@ -16,7 +17,6 @@ const COPY = {
 export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]; locale: Locale }) {
   const t = COPY[locale];
   const id = useId();
-  const base = locale === 'en' ? '' : `/${locale}`;
   const [query, setQuery] = useState('');
   const [topic, setTopic] = useState<GuideTopic | 'all'>('all');
   const results = filterGuides(entries, query, topic);
@@ -47,11 +47,11 @@ export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]
         {/* All links are server-rendered: filtering must not make this catalogue an orphaned client-only index. */}
         {results.map(entry => <article key={entry.slug} className={styles.result}>
           <div><p className={styles.topic}>{t[entry.topic]}</p>
-            <h3><Link href={`${base}/guides/${entry.slug}/`}>{entry.title}</Link></h3>
+            <h3><Link href={localisedHref(`/guides/${entry.slug}/`, locale)}>{entry.title}</Link></h3>
             <p className={styles.summary}>{entry.summary}</p>
-            <Link href={`${base}/guides/${entry.slug}/`} className={styles.textLink}>{t.read}<ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.textLink}>{t.read}<ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
-          {entry.image && <Link href={`${base}/guides/${entry.slug}/`} className={styles.thumbnail} tabIndex={-1} aria-hidden="true">
+          {entry.image && <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.thumbnail} tabIndex={-1} aria-hidden="true">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={entry.image.src} alt="" width="200" height="160" loading="lazy" />
           </Link>}

@@ -4,7 +4,7 @@ import { absoluteUrl } from "@/data/site";
 import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 import { NewsDetail } from "@/components/site/NewsDetail";
 import { ArticleFaqJsonLd, NewsArticleJsonLd } from "@/components/site/JsonLd";
-import { getAllGuideParams, getGuideBySlug, getPublishedGuides } from "@/data/guides";
+import { getAllGuideParams, getGuideBySlug } from "@/data/guides";
 
 /**
  * 指南栏目，2026-09-21 新开。见 src/data/guides.ts 的注释：
@@ -16,7 +16,7 @@ type GuidePageProps = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getAllGuideParams();
+  return getAllGuideParams("pt");
 }
 
 export async function generateMetadata({ params }: GuidePageProps): Promise<Metadata> {
@@ -60,7 +60,8 @@ export default async function GuideArticlePage({ params }: GuidePageProps) {
   const article = getGuideBySlug(slug);
 
   // generateStaticParams 只产出已发布的 slug，这一行同时挡住草稿和未来日期。
-  if (!article || !getPublishedGuides().some((a) => a.slug === slug)) notFound();
+  // 未译的指南在这个语种没有页面（见 getAllGuideParams）。
+  if (!article || !getAllGuideParams("pt").some((a) => a.slug === slug)) notFound();
 
   return (
     <>

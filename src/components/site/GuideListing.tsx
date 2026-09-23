@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
-import { getPublishedGuides } from '@/data/guides';
+import { getAllGuideParams, getPublishedGuides } from '@/data/guides';
+import { localisedHref } from '@/lib/spanish-mirror';
 import type { Locale } from '@/data/site';
 import { guideTopic, isGuideProductPhoto, type GuideLibraryEntry } from '@/lib/guide-library';
 import { GuideLibrary } from './GuideLibrary';
@@ -42,7 +43,10 @@ const COPY = {
 export function GuideListing({ locale = 'en' }: { locale?: Locale } = {}) {
   const t = COPY[locale];
   const base = locale === 'en' ? '' : `/${locale}`;
-  const entries: GuideLibraryEntry[] = getPublishedGuides().map(article => ({
+  /* A guide not yet translated into this page's language is left out of its library rather
+     than listed under an English title (see getAllGuideParams). */
+  const available = new Set(getAllGuideParams(locale).map(p => p.slug));
+  const entries: GuideLibraryEntry[] = getPublishedGuides().filter(article => available.has(article.slug)).map(article => ({
     slug: article.slug,
     title: (locale === 'es' ? article.titleEs : locale === 'pt' ? article.titlePt : undefined) || article.title,
     summary: (locale === 'es' ? article.summaryEs : locale === 'pt' ? article.summaryPt : undefined) || article.summary,
@@ -62,7 +66,7 @@ export function GuideListing({ locale = 'en' }: { locale?: Locale } = {}) {
         <p className={styles.intro}>{t.intro}</p>
         <a href="#guide-library" className={styles.textLink}>{t.find}<ArrowUpRight size={18} aria-hidden="true" /></a>
       </div>
-      {featured && <Link href={`${base}/guides/${featured.slug}/`} className={styles.heroFeature}>
+      {featured && <Link href={localisedHref(`/guides/${featured.slug}/`, locale)} className={styles.heroFeature}>
         {featured.image && <div className={styles.heroPhoto}>
           {/* Catalogue photograph, never a generated product. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -75,9 +79,9 @@ export function GuideListing({ locale = 'en' }: { locale?: Locale } = {}) {
     <GuideLibrary entries={entries} locale={locale} />
     {material && <section className={styles.material}>
       <div><h2>{t.material}</h2><p>{t.materialText}</p>
-        <Link href={`${base}/guides/${material.slug}/`} className={styles.textLink}>{t.read}<ArrowUpRight size={18} aria-hidden="true" /></Link>
+        <Link href={localisedHref(`/guides/${material.slug}/`, locale)} className={styles.textLink}>{t.read}<ArrowUpRight size={18} aria-hidden="true" /></Link>
       </div>
-      {material.image && <Link href={`${base}/guides/${material.slug}/`} className={styles.materialPhoto} aria-label={material.title}>
+      {material.image && <Link href={localisedHref(`/guides/${material.slug}/`, locale)} className={styles.materialPhoto} aria-label={material.title}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={material.image.src} alt={material.image.label} width="640" height="480" loading="lazy" />
       </Link>}

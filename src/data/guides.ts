@@ -1,5 +1,6 @@
 import type { NewsArticle } from "./types";
 import { guides as generatedGuides } from "./generated/guides";
+import { GUIDES_WITHOUT_ES, GUIDES_WITHOUT_PT } from "./generated/guide-locales";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 
 /**
@@ -69,7 +70,16 @@ export function getGuideBySlug(slug: string): NewsArticle | undefined {
   return guides.find((article) => article.slug === slug);
 }
 
-/** 只覆盖已发布的，草稿因此没有页面可以被 URL 猜到。 */
-export function getAllGuideParams(): { slug: string }[] {
-  return getPublishedGuides().map((article) => ({ slug: article.slug }));
+/**
+ * 只覆盖已发布的，草稿因此没有页面可以被 URL 猜到。
+ *
+ * es / pt 只产出已有该语种译文的指南（2026-09-22：先写英文、译文另批）。判断与
+ * hasSpanishMirror / hasPortugueseMirror 同源 —— 都读 generated/guide-locales.ts ——
+ * 所以页面、sitemap、hreflang 和语言切换不会各说各话。
+ */
+export function getAllGuideParams(locale: "en" | "es" | "pt" = "en"): { slug: string }[] {
+  const lacking = locale === "es" ? GUIDES_WITHOUT_ES : locale === "pt" ? GUIDES_WITHOUT_PT : [];
+  return getPublishedGuides()
+    .filter((article) => !lacking.includes(article.slug))
+    .map((article) => ({ slug: article.slug }));
 }
