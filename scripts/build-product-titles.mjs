@@ -509,6 +509,10 @@ const overLong = [];
 for (const file of files) {
   const path = join(DIR, file);
   const product = JSON.parse(readFileSync(path, "utf8"));
+  // The same content directory also feeds Rayen. Its /zh and /en pages build
+  // their own metadata; Canton Hyland titles are only for HYDE catalogue routes.
+  // Keep this predicate aligned with onHydeCatalogue in src/data/products.ts.
+  if (product.sites && !product.sites.includes("hyde")) continue;
   let touched = false;
 
   for (const [locale, titleKey, descKey] of FIELDS) {

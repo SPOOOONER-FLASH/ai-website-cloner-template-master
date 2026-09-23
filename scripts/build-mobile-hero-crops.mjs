@@ -35,22 +35,44 @@
 import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import sharp from "sharp";
+import ts from "typescript";
 
 const OUT_DIR = "public/images/editorial/mobile-hero";
 const MOBILE_WIDTHS = [400, 800];
 const FRAME = 4 / 3;
 
 /**
- * The carousel slides, read from the homepage data rather than listed here.
- *
- * Listing them would go stale the first time somebody changes a slide, and the failure
- * would be silent: the `<picture>` source would 404 and the browser would fall back to
- * the panorama, which looks exactly like success.
+ * Read the actual slide declarations in each locale. Text-matching src literals
+ * inside `heroCarousel` missed the second slide because it is a `hero1`
+ * reference; both missing crops then 404ed and the carousel stalled on phones.
  */
 function carouselSources() {
-  const home = readFileSync("src/data/home.ts", "utf8");
-  const block = home.match(/heroCarousel[\s\S]{0,3000}/)?.[0] ?? "";
-  return [...block.matchAll(/src: "(\/images\/editorial\/[^"]+\.webp)"/g)].map((m) => m[1]);
+  const sources = new Set();
+  for (const file of ["src/data/home.ts", "src/data/home-es.ts", "src/data/home-pt.ts"]) {
+    const tree = ts.createSourceFile(file, readFileSync(file, "utf8"), ts.ScriptTarget.Latest, true);
+    const declarations = new Map();
+    for (const statement of tree.statements) {
+      if (!ts.isVariableStatement(statement)) continue;
+      for (const declaration of statement.declarationList.declarations) {
+        if (ts.isIdentifier(declaration.name)) declarations.set(declaration.name.text, declaration.initializer);
+      }
+    }
+    const property = (object, name) => {
+      if (!object || !ts.isObjectLiteralExpression(object)) throw new Error(`${file}: expected ${name} object`);
+      return object.properties.find((entry) => ts.isPropertyAssignment(entry) && entry.name.getText(tree).replaceAll('"', "") === name)?.initializer;
+    };
+    const slides = property(declarations.get("heroCarousel"), "slides");
+    if (!slides || !ts.isArrayLiteralExpression(slides)) throw new Error(`${file}: missing carousel slides`);
+    for (const item of slides.elements) {
+      const slide = ts.isIdentifier(item) ? declarations.get(item.text) : item;
+      const src = property(property(slide, "media"), "src");
+      if (!src || !ts.isStringLiteral(src) || !src.text.startsWith("/images/editorial/") || !src.text.endsWith(".webp")) {
+        throw new Error(`${file}: carousel slide has no supported editorial WebP source`);
+      }
+      sources.add(src.text);
+    }
+  }
+  return [...sources];
 }
 
 const check = process.argv.includes("--check");

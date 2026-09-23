@@ -19,10 +19,9 @@ const MOBILE_HERO_WIDTHS = [400, 800];
 /**
  * The 4:3 crops of a slide, for the phone frame that is 4:3.
  *
- * Returns candidates only; if the files are absent the `<source>` simply fails to match
- * anything useful and the panorama below it is used — which is the old behaviour, not a
- * broken page. `build-mobile-hero-crops.mjs --check` runs in `test:export` so that
- * fallback never ships silently.
+ * Returns candidates only. A network 404 does not cause `<picture>` to try the
+ * panorama `<img>` source; the broken mobile source stalls slide preloading.
+ * `build-mobile-hero-crops.mjs --check` must therefore cover every real slide.
  */
 function mobileHeroSrcSet(src: string): string {
   const stem = src.slice(src.lastIndexOf("/") + 1).replace(/\.webp$/i, "");
