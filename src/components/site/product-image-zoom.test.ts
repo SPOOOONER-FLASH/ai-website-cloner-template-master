@@ -35,7 +35,8 @@ test("zoom opens an on-demand dialog and supports keyboard dismissal", () => {
   assert.match(zoom, /role="dialog"/);
   assert.match(zoom, /aria-modal="true"/);
   assert.match(zoom, /event\.key === "Escape"/);
-  assert.match(zoom, /open \? \(/);
+  assert.match(zoom, /useOverlayPresence\(open\)/);
+  assert.match(zoom, /rendered \? \(/);
   assert.match(zoom, /loading="eager"/);
 });
 

@@ -239,8 +239,14 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Latão acetinado",
     family: "plated",
     evidence: "client",
-    note: "Client confirmation, 2026-09-15: 铜砂光 — brass, brushed rather than polished. The satin counterpart to BP/PB.",
-    noteEs: "Confirmación del cliente, 2026-09-15: 铜砂光 — latón cepillado en lugar de pulido. La versión satinada de BP/PB.",
+    /*
+      The client's own term was 铜砂光. It is kept here as the provenance, not in the note:
+      client rule 2026-09-23, the public site never shows Chinese — "官网永远不要显示中文的
+      任何东西，你可以做镜像或者留存数据". The note used to quote it and printed it on
+      /finishes/ and /es/finishes/.
+    */
+    note: "Client confirmation, 2026-09-15: brass, brushed rather than polished. The satin counterpart to BP/PB.",
+    noteEs: "Confirmación del cliente, 2026-09-15: latón cepillado en lugar de pulido. La versión satinada de BP/PB.",
   },
   {
     code: "BP",

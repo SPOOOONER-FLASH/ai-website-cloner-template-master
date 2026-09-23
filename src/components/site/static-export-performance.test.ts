@@ -8,13 +8,17 @@ const homeExport = join(repositoryRoot, "out", "index.html");
 
 test("the initial home export renders one carousel frame", () => {
   const html = readFileSync(homeExport, "utf8");
-  const renderedSlides = html.match(/data-active="(?:true|false)"/g) ?? [];
+  const divs = html.match(/<div\b[^>]*>/g) ?? [];
+  const renderedSlides = divs.filter((tag) =>
+    /\bhero-slide\b/.test(tag) && /\bdata-active="(?:true|false)"/.test(tag),
+  );
 
   assert.equal(
     renderedSlides.length,
     1,
     `expected one initial carousel frame, found ${renderedSlides.length}`,
   );
+  assert.match(renderedSlides[0], /data-active="true"/);
 });
 
 /*

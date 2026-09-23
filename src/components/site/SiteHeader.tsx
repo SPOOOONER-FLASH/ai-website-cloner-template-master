@@ -299,10 +299,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
               </Link>
 
               {/*
-                Alignment: every control sits in the same 24px-tall flex box and every icon
-                is drawn at 20x20, so the language link, search and menu share one optical
-                baseline. They previously used 16 / 20 / 16x22 icons, which is why the row
-                read as crooked on small screens.
+                Icons keep their 20px visual footprint and baseline. A transparent
+                pseudo-element extends each hit target to 44px without crowding the
+                wordmark and language links on a 375px screen.
               */}
               <nav className="flex flex-grow items-center justify-end gap-24 sm:gap-32">
                 {/*
@@ -324,7 +323,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     setOpenShelf(null);
                     setSearchOpen(true);
                   }}
-                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
+                  className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
                 >
                   <SearchIcon className="h-20 w-20" />
                 </button>
@@ -339,7 +338,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                     setOpenShelf(null);
                     setMenuOpen(true);
                   }}
-                  className="flex h-24 w-20 items-center justify-center text-ink-tertiary transition-colors duration-200 hover:text-ink"
+                  className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
                 >
                   <MenuIcon className="h-20 w-20" />
                 </button>

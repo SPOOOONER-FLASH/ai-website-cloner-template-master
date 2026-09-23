@@ -850,7 +850,6 @@
     border-width: 1px;
     box-shadow: none;
     transition:
-      transform var(--motion-fast) var(--motion-ease-crisp),
       box-shadow var(--motion-fast) var(--motion-ease-crisp),
       border-color var(--motion-fast) var(--motion-ease-crisp);
   }
@@ -918,7 +917,6 @@
   .hard-shadow-card:focus-visible {
     border-color: var(--color-frame);
     box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
-    transform: translate(-0.2rem, -0.2rem);
     outline: 0.2rem solid var(--color-frame);
     outline-offset: 0.5rem;
   }
@@ -963,7 +961,6 @@
 
     .hard-shadow-card:hover {
       border-color: var(--color-frame);
-      transform: translate(-0.2rem, -0.2rem);
       box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
     }
 
@@ -1145,6 +1142,14 @@
     transition: outline-color var(--motion-fast) var(--motion-ease-crisp);
   }
 
+  /* Preserve the compact header grid while making its two icon buttons easy
+     to hit. Their neighbours are 24px apart, leaving 12px per side. */
+  .header-icon-hit::before {
+    content: "";
+    position: absolute;
+    inset: -1rem -1.2rem;
+  }
+
   /* -- Hero carousel ----------------------------------------------------- */
   /* The crossfade is the one piece of motion on the site with real surface area,
      so it gets the slow token and a very small scale settle. The incoming frame
@@ -1168,6 +1173,44 @@
     transform: scale(1);
   }
 
+  /* Every caption occupies the same grid cell. The longest translated copy
+     reserves the row, so a slide change cannot move the next module. */
+  .hero-caption-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity var(--motion-fast) var(--motion-ease-crisp),
+      visibility 0s linear var(--motion-fast);
+  }
+  .hero-caption-slide[data-active="true"] {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity var(--motion-fast) var(--motion-ease-crisp),
+      visibility 0s;
+  }
+
+  /* Search and image inspection share the same entrance and exit rhythm. The
+     overlays remain in the DOM for the short exit, then the hook unmounts them. */
+  .overlay-presence {
+    opacity: 1;
+    transition: opacity var(--motion-medium) var(--motion-ease);
+  }
+  .overlay-presence[data-state="closed"] {
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: var(--motion-fast);
+  }
+  .overlay-panel {
+    transform: translateY(0);
+    transition: transform var(--motion-medium) var(--motion-ease);
+  }
+  [data-state="closed"] > .overlay-panel,
+  [data-state="closed"] .overlay-panel {
+    transform: translateY(0.8rem);
+    transition-duration: var(--motion-fast);
+  }
+
   /* Dots: the fill grows from the centre rather than snapping between two colours. */
   .hero-dot {
     transition:
@@ -1183,9 +1226,7 @@
      click-to-dialog path, so the enhancement never blocks inspection. */
   .product-pointer-zoom {
     transform-origin: var(--product-zoom-x, 50%) var(--product-zoom-y, 50%);
-    transition:
-      transform 560ms var(--motion-ease),
-      transform-origin 150ms linear;
+    transition: transform var(--motion-slow) var(--motion-ease);
     will-change: transform;
   }
 
@@ -1250,7 +1291,14 @@
     }
 
     .hero-slide,
+    .hero-caption-slide,
     .hero-dot {
+      transition: none;
+      transform: none;
+    }
+
+    .overlay-presence,
+    .overlay-panel {
       transition: none;
       transform: none;
     }

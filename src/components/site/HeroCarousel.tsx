@@ -287,7 +287,6 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
     finishTransition();
   };
 
-  const activeSlide = content.slides[activeIndex];
   const renderedIndexes = getRenderedSlideIndexes({
     activeIndex,
     stagedIndex,
@@ -315,7 +314,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt sm:aspect-[1920/754]"
+        className="col-content relative aspect-[4/3] touch-pan-y overflow-hidden bg-surface-alt xs:aspect-[1920/754]"
         onPointerDown={(event) => {
           pointerStart.current = event.clientX;
         }}
@@ -326,7 +325,7 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
           const responsive = slide.media.src
             ? getResponsiveEditorialImageProps(
                 slide.media.src,
-                // Below `sm` the frame is 4:3 while the source is ~2.55:1. The
+                // Below `xs` the frame is 4:3 while the source is ~2.55:1. The
                 // object-cover crop therefore needs ~1.9x the frame width to
                 // avoid upscaling the source vertically on phones.
                 "(min-width: 1440px) 1376px, (min-width: 640px) 96vw, 184vw",
@@ -464,17 +463,25 @@ export function HeroCarousel({ content }: HeroCarouselProps) {
       </div>
 
       <div aria-live="polite" className="col-content grid w-full grid-cols gap-x pb-32 pt-16 md:pb-48 md:pt-24">
-        <div className="col-span-full grid grid-cols-subgrid gap-x gap-y-16">
-          <div className="col-span-full md:col-span-5 xl:col-span-6">
-            <h2 className="text-heading-3 font-semibold">{activeSlide.title}</h2>
-            <p className="mt-4 max-w-[36rem] text-copy">{activeSlide.body}</p>
+        {content.slides.map((slide, index) => (
+          <div
+            aria-hidden={index !== activeIndex}
+            className="hero-caption-slide col-span-full row-start-1 grid grid-cols-subgrid gap-x gap-y-16"
+            data-active={index === activeIndex}
+            inert={index !== activeIndex}
+            key={`${slide.title}-${index}`}
+          >
+            <div className="col-span-full md:col-span-5 xl:col-span-6">
+              <h2 className="text-h3 font-semibold">{slide.title}</h2>
+              <p className="mt-4 max-w-[36rem] text-c1">{slide.body}</p>
+            </div>
+            <div className="col-span-full md:[grid-column:span_3/-1] xl:[grid-column:span_6/-1]">
+              <ArrowLink href={slide.href} prefetch={false}>
+                {slide.linkLabel}
+              </ArrowLink>
+            </div>
           </div>
-          <div className="col-span-full md:[grid-column:span_3/-1] xl:[grid-column:span_6/-1]">
-            <ArrowLink href={activeSlide.href} prefetch={false}>
-              {activeSlide.linkLabel}
-            </ArrowLink>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

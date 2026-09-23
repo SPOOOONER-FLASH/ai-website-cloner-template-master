@@ -8,11 +8,11 @@
     "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
     "而那个长窗口正是另一个会话重命名时撞车的原因。"
   ],
-  "generated": "2026-09-18",
+  "generated": "2026-09-23",
   "counts": {
-    "refused": 441,
+    "refused": 447,
     "cleanable": 1222,
-    "already-clean": 2943
+    "already-clean": 3188
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -50,6 +50,11 @@
     "303-panic-exit-device-5.webp",
     "305-fire-door-panic-exit-device-4.webp",
     "305-fire-door-panic-exit-device-8.webp",
+    "306-d-panic-exit-device-8.webp",
+    "306-d-panic-exit-device-9.webp",
+    "306-ps-panic-exit-device-9.webp",
+    "306-s-panic-exit-device-6.webp",
+    "306-s-panic-exit-device-7.webp",
     "307-panic-exit-device-4.webp",
     "307-panic-exit-device-6.webp",
     "307-panic-exit-device-8.webp",
@@ -248,6 +253,7 @@
     "9082e-stainless-steel-handle-4.webp",
     "9082e-stainless-steel-handle-5.webp",
     "9082e-stainless-steel-handle-8.webp",
+    "9088-ss-stainless-steel-handle-5.webp",
     "9210-ssbk-tubular-lock-5.webp",
     "9210-ssbk-tubular-lock-6.webp",
     "9210-sset-tubular-lock-5.webp",
@@ -1972,6 +1978,123 @@
     "305-fire-door-panic-exit-device.webp": {
       "source": "4bfd8fc189b3eadbba7ca6bb290ee9e5c0088eb5ad17ddd39985ce1d8c83e974",
       "status": "cleanable"
+    },
+    "306-d-panic-exit-device-2.webp": {
+      "source": "53d90f8ccc93fbb15497d21b639ef96df0e7d97aee716f0881aa9d019de54491",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-3.webp": {
+      "source": "5a90aa2455115bc121be4fb5a038fafa31400b0146ea35bf64d212de0ccb0ac0",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-4.webp": {
+      "source": "7dbf9e90a2a863ef8aae0d6d4f7d2363712d1f7acb131be1baf516375c496a8e",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-5.webp": {
+      "source": "454ae81bd01fb5b0fa93ad0b2c79ceb9f21c7d9fe5e1f6e840b031f4dc79459b",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-6.webp": {
+      "source": "97daf8a725a1304046790f4378fa35569b6350621ab6b80224a6a2af4864465c",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-7.webp": {
+      "source": "6df8695336115c467f2d4fb612671a3169b707f27b1895d97e9c648ff18c5e8d",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device-8.webp": {
+      "source": "b39720290d9608bd63dcba9e71cc3831652ddbd2e2a18df22b0e0699e81db8ef",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "306-d-panic-exit-device-9.webp": {
+      "source": "ae1b98681c6345c1d64a7ff81b5f3dc76527fddd559c8be08e7ea5ec6bfeeeec",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "306-d-panic-exit-device-video.webp": {
+      "source": "c4830344563d2852c32fe0a3566969963df4790933ee148db32907e3625ec34e",
+      "status": "already-clean"
+    },
+    "306-d-panic-exit-device.webp": {
+      "source": "0f045f1a1c5ae049eb5d2ac4fc319d56e34696a5911789f1d5deb7e9e70ba4fc",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-2.webp": {
+      "source": "90e03a158589ae2091b71b4a27f360d24f47093c1b71cee8f74e0380b6c737ff",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-3.webp": {
+      "source": "3ce6c6f8ca9489ebe7f7a81acc205044846924e0ef768f61de621684452aba24",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-4.webp": {
+      "source": "e5bba649d16ffe689eff1284dac535a94ece7f3b9dd52e8c2d534190cc6b2ac9",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-5.webp": {
+      "source": "43cce2075ad3bada4085eeb634b7c146e0b925081570be864c236558ba29e3a1",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-6.webp": {
+      "source": "5c50208dbabbd2b3a4fd6661f6f8a604a6687d3542af45c004c8a9908b2537fa",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-7.webp": {
+      "source": "2fb6d6fcaaefca738efc14a4f10e7d2ee521fc086133f2d5798d3e841d95e1ff",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-8.webp": {
+      "source": "7aa8bc4c9cb3f0e4c0b5c05b9d73f9a80257683a37786e95298f9cf8f17a6756",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device-9.webp": {
+      "source": "e9b82d7a2dca5986e604a4c0aae1b470ed09cb81cd4d6c25dc8d50290fc0ef72",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "306-ps-panic-exit-device-video.webp": {
+      "source": "1996cb090dd0a0c3056ec843203f443e5a7ec72a03bbe66390de4cf9d095a51f",
+      "status": "already-clean"
+    },
+    "306-ps-panic-exit-device.webp": {
+      "source": "6c91235368153c2b8ebecc71dc5f37195bba543a1f7c176370a967a8a9be31dc",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device-2.webp": {
+      "source": "6404454dd285218a4758f56a5ca0dcd7177327a668919f98186e002e07c3e619",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device-3.webp": {
+      "source": "59a46d484d9c92c73d7f003f531a3560f15c6de7eeaa75fac187a921ee1154a6",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device-4.webp": {
+      "source": "a2b844e888ca76e1156d0323e7d4c90568d3a54118c0f3d57b4527ab4291eee4",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device-5.webp": {
+      "source": "47147641c88b218a628c4f1a0deca2c21793b5123185432ce46f2a50874a7a95",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device-6.webp": {
+      "source": "08d5b312b10ad8d18254146a519a6bfcfd2b499f216ef37adefb088ab06aee7d",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "306-s-panic-exit-device-7.webp": {
+      "source": "2c5509666c1d23e2af74cdd40c0eb6757447435689ae9f84056810dc18afb2c4",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "306-s-panic-exit-device-video.webp": {
+      "source": "3b38296d3a5f7c38360a1acc18615c031230d8a7a44050ab1a5e0caa9e35425c",
+      "status": "already-clean"
+    },
+    "306-s-panic-exit-device.webp": {
+      "source": "92178df5fa003a2b6c6bc7de48e96c1b27f2d73039d6d0485ace8d8c5d342d23",
+      "status": "already-clean"
     },
     "307-panic-exit-device-10.webp": {
       "source": "969fb78e278a4424e564b3c9b7128ca67e193a10c78ab33e7158af5ed5ea90d0",
@@ -7223,6 +7346,39 @@
       "source": "f10b9c24875ad6b715ca91d5912fbc35f2e1c56a67cefa749027fd6ad094ca58",
       "status": "cleanable"
     },
+    "9088-ss-stainless-steel-handle-2.webp": {
+      "source": "194e88b1edba3cc81953566cfb2d8eb6908eff37c760057016353afa1849aeaf",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle-3.webp": {
+      "source": "14574b282e46d1db2f81854fdbd3fb12c312a1e8694e54af8edfc839180e09f4",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle-4.webp": {
+      "source": "3835883a081b7614e594434653693c8a228c0cf133a95b062a5d5e344e2db38f",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle-5.webp": {
+      "source": "5fa7736be7d655f1507fb6bbf636b7fac94fdb5cebc8c4e633c5626a3af368ac",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "9088-ss-stainless-steel-handle-6.webp": {
+      "source": "f8e4cc992b836d4e8ee10e11c125442618b81de8815da9cefb78211b5e6ce63a",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle-7.webp": {
+      "source": "b1c3a3bd7f33a2dec27ab6a49222f1aa6ecc66da6f6d2e81d182ad19094cb037",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle-video.webp": {
+      "source": "52836e2f775033f51e360e4a67797ff49a47907921736f2552d1e027e6ea0fc7",
+      "status": "already-clean"
+    },
+    "9088-ss-stainless-steel-handle.webp": {
+      "source": "4f3c27cdebe8df8695f8c259e83e734718dcf8fca562505bfe67b6d9b48d1ebc",
+      "status": "already-clean"
+    },
     "9210-pbbk-tubular-lock-2.webp": {
       "source": "a57c2a43e5c49903f5222108e36d50207091ebb7464d173fbf8ba61af1f0efd4",
       "status": "already-clean"
@@ -7293,6 +7449,818 @@
     "9210-sset-tubular-lock.webp": {
       "source": "28635a0fbfb2d62a950ae2b579bba471c8cb520dbdd44657c687eddeb01f4165",
       "status": "cleanable"
+    },
+    "a-666-lever-handle-2.webp": {
+      "source": "5275f354727fcfdc92202c98bc25c78544f5f57ade88f7efcc1ea325df6a2674",
+      "status": "already-clean"
+    },
+    "a-666-lever-handle-3.webp": {
+      "source": "d6460295f48df2cb9718c059375c663360d65d875430abd8adfdbb8db3440732",
+      "status": "already-clean"
+    },
+    "a-666-lever-handle-4.webp": {
+      "source": "95f3e6f81c872db93522aa05261e83ef30ce01317d84fe24173f28c26272f912",
+      "status": "already-clean"
+    },
+    "a-666-lever-handle-5.webp": {
+      "source": "e82ed39faa4ce2ec6f0a3d050823d17e9f7ab3ffe201d451bccc06903ae85948",
+      "status": "already-clean"
+    },
+    "a-666-lever-handle.webp": {
+      "source": "d5497aafab699759b8612d6d06f865d0ca720e87857099d62acbdb325cefc3d7",
+      "status": "already-clean"
+    },
+    "a38-786-lever-handle-2.webp": {
+      "source": "46c4b103ad569d5b8ed9f032a5ccea908e1c2a7e308cfcc0c280b66dc291fc9d",
+      "status": "already-clean"
+    },
+    "a38-786-lever-handle-3.webp": {
+      "source": "65bfa96c6cd71a4cf581259db9a10c664c0c239789eb30be2808aa9ec5ab60b8",
+      "status": "already-clean"
+    },
+    "a38-786-lever-handle-4.webp": {
+      "source": "19de9188e71f4ac4c0b6428ddb3a3497a76b1c22a2884e50a262b89ab7564a12",
+      "status": "already-clean"
+    },
+    "a38-786-lever-handle-5.webp": {
+      "source": "a606d3ed1de51303844069abb9b5ec607de2808bdcbd6d5a3e6b7b9849b65651",
+      "status": "already-clean"
+    },
+    "a38-786-lever-handle.webp": {
+      "source": "4f6fc4cf5cbf6a28832b979be2540790a6b3508e5304b9eb99144aecbc290705",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-2.webp": {
+      "source": "d981375d277c37109d8848246b09cb8682a3a81933db213c8ea4fdd456035fb8",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-3.webp": {
+      "source": "1419b19e9cb4657cc09b4eef77a29023430a8f5fc5d5c10b61923114f9d4831d",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-4.webp": {
+      "source": "d7f9651b83648fc557c65bba3af3018f9509d64341a29a4745d8ad5594491bfe",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-5.webp": {
+      "source": "42eedb0927b12ba87700e7bcb08835de139cceefe3e976361525524afc8dd769",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-6.webp": {
+      "source": "abb224c8ab2c62a4b91701d6db06fb222b29a2129ab02c2c43835848e8c82b56",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-7.webp": {
+      "source": "020c18a4bf966facb14006ce27e88768d4cb1b98140a931c6fc5d1c32f3b13a1",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle-8.webp": {
+      "source": "a4fa4a69bba4bbb3cb1cfd95a3179fca110708509dbf64a944dc6da088921cc9",
+      "status": "already-clean"
+    },
+    "a39-2010-lever-handle.webp": {
+      "source": "98617da25cbd7b80dee287c4bebf9ca8dc2c007af4087943b755263012eacffd",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle-2.webp": {
+      "source": "0624764ee51dcb143759f95b588e71740636520b385411a238d9d44f6d0b5a29",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle-3.webp": {
+      "source": "e8a29857e0a37c295579de91e664fee24d704bb7e12851242f48f05d029f863f",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle-4.webp": {
+      "source": "f5db456ab280bbf8d80e001cfeaf693d6d9ee190305966dca7e83624d635b043",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle-5.webp": {
+      "source": "50cdfa0eede872aa797e993828ba5218f47c5c4e7eb247ff875bbf44ada0ac45",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle-6.webp": {
+      "source": "a6ea7522aed311f86176e4a451657508b46286c446cc8194c123fd7c46674317",
+      "status": "already-clean"
+    },
+    "a40-2205-lever-handle.webp": {
+      "source": "9b1a6d837f228b37c17592af5cae182ab66a6e011b51c9d1f3f477950fc1192f",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle-2.webp": {
+      "source": "a09cd4acb8677d37886df9b54a9d0e3008774e6c5fc6bfee8574c464680bbbc1",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle-3.webp": {
+      "source": "33f9887335e45a945f0832e3fb6aa013c71a08c211fe343a389b48e0d31141bc",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle-4.webp": {
+      "source": "a19b44c68a9dc57e065f1256fb059506f9e4affe235f30e3e763c5597ab83321",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle-5.webp": {
+      "source": "6552e6b8924ee7464613bf1faaac0cb07eec075c5dac885b9d3f1506d5f8a023",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle-6.webp": {
+      "source": "e69b19bd2df428666d77cf52b2db07f238629d24306ad96f33eecfe1f795b837",
+      "status": "already-clean"
+    },
+    "a40-2206-lever-handle.webp": {
+      "source": "c6985fc6e9a849f31ee5490f8fc3a30d069d3e8a7d05364a1d87361ee3425a25",
+      "status": "already-clean"
+    },
+    "a5-2009-lever-handle-2.webp": {
+      "source": "dc4ae8af8ce715b2f9d09381bf8a258dc448b92bb00c4a02fedf7abef1c45e88",
+      "status": "already-clean"
+    },
+    "a5-2009-lever-handle-3.webp": {
+      "source": "754acf313c017ff4a7b6b9859d73daac3abcb39fa79d50160080712ab363af31",
+      "status": "already-clean"
+    },
+    "a5-2009-lever-handle.webp": {
+      "source": "afaca0d08198c1e92b3ce441065ee07d6de9640ed0a0844c8c94069d3a6b0b54",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-2.webp": {
+      "source": "70348ff6d36c4268ea12222d67a0fb3b5388bfe34f3979af93089cdb6f2157f4",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-3.webp": {
+      "source": "a30a003b64253a576d647d7b07321b394d4842b59fe08f60cdb973e4c5bb4271",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-4.webp": {
+      "source": "95bf9a8c109ada1a33ebc5c35156e47cc95c40d73fda485a961169e6569a0b3e",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-5.webp": {
+      "source": "70945e53c3e389d9c546b7c6bd343c9f37cf44a922c40c4bab16a950b70b0332",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-6.webp": {
+      "source": "d8f28257456a1b6db2af04fbd120d58f69a4bf64a5501f2cf3633b91cd38e0c4",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle-7.webp": {
+      "source": "75da98e397309e74a249ebe095dd249fdae249830a4b2bb9009719afbbb2bc0c",
+      "status": "already-clean"
+    },
+    "a5-2011-lever-handle.webp": {
+      "source": "cf2c6ef20072c04cf08bb8e7a81cd31829762554111b42a7b8ea9fcac3805d74",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-2.webp": {
+      "source": "36aedf0fd6b310e4cac4d125fa2f6537d04b6d77ac0eaacea8d95d52cac8046b",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-3.webp": {
+      "source": "b9022628fe109082710dfbe7682e5a922260a12285b6890fc08ab93cfa1fdf9c",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-4.webp": {
+      "source": "2f0d2448b57359262095c1b1eac366d9bc802d6f4f9ef91d0f4d96a0f77f6319",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-5.webp": {
+      "source": "fafe3b39b7c748a00d2f01fd6226fd1b6195f9c2421dc6b2aa83b575382db4f8",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-6.webp": {
+      "source": "820986b4f4df370514c71112e35211b1dfb4ed7c3f2947fa78095c0ec1e58e0e",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-7.webp": {
+      "source": "95887e32de711bf36614d97760e6717783dc0878cadb75f09fb81a56489c99e2",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-8.webp": {
+      "source": "bd2229d110c6d04378edccab59739f8a2daba1d90f73cad1c8026365abdb8450",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle-9.webp": {
+      "source": "5eaf9b3dbdc541462e60b6f568e22701c71345da370d5bf7e2eb1762fa92043e",
+      "status": "already-clean"
+    },
+    "a5-2012-lever-handle.webp": {
+      "source": "95bc396595a99fc5a69a8338bee38231ddf810499be43a5736a7d7208a31ecaa",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-2.webp": {
+      "source": "d0bab3a955b6ea73a77877fa1f4152eac22d409e58fb69c3cc4e9f0b8bc55523",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-3.webp": {
+      "source": "f5f0dc11a0564df75a12805c063cfba7488d510deb3569ab20c6923afc3f6c6a",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-4.webp": {
+      "source": "fd1629eef21a95c14294b7834164e796a8f49a5d9de30c11936054ab8be3ec99",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-5.webp": {
+      "source": "1484c4c24a159fe05250889fdaf71885230953c7ba4e82bae06246fdf6ccddec",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-6.webp": {
+      "source": "2b65ea22f9939def348dee5fadd9ef46b15d3c9406d2a466b3eb1cf851d21ee3",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-7.webp": {
+      "source": "07b29875f07188e102b07aa07e360538587a559bcfce2187e8ff8950f12092e6",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-8.webp": {
+      "source": "4217b88ea77545b6bcb661067cf5d93a175753c7ccb8c1f42ee1f5c59b39245a",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle-9.webp": {
+      "source": "12348d33a736ef3594523ad5e6c66bc980eb7b81e63414cd79810a0226849549",
+      "status": "already-clean"
+    },
+    "a5-2014-lever-handle.webp": {
+      "source": "2406713c18b3ceb0b884b5251c4403bccbb4fd6f1b6081d5591d3594fafa8dfb",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle-2.webp": {
+      "source": "2756228e880545a99cd858989db31456509d94a23d6ce74c96b04618879f915e",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle-3.webp": {
+      "source": "3eb8f4c37562c5b7b71e8b8d3f8c5331074966f0a53817a530fd60d32f38954d",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle-4.webp": {
+      "source": "0c356037c59700fd8818819d77ad19ef38586f34989990f0c37526fde06e090d",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle-5.webp": {
+      "source": "4a60b8838cc02841e9f830988347bfeaa92cf484f81797ca42bb41bb83268728",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle-6.webp": {
+      "source": "de4d814c4d190666a515d4c2451416b62dcedee3c3de1792f1a365b9fdd9e56b",
+      "status": "already-clean"
+    },
+    "a5-343-lever-handle.webp": {
+      "source": "f5d3d3853e191a05a1e32172ddb8969ea26ddee842b359451f41bec147eda59d",
+      "status": "already-clean"
+    },
+    "a5-344-lever-handle-2.webp": {
+      "source": "6946316c768fecc18f6d5d37a186440cc0d99dff7d344ec6f8dd85b35761f3b4",
+      "status": "already-clean"
+    },
+    "a5-344-lever-handle-3.webp": {
+      "source": "7f3099f83114061aa8e9506cfdd143022dfb5d9c93b3607965804946f534755c",
+      "status": "already-clean"
+    },
+    "a5-344-lever-handle-4.webp": {
+      "source": "36a11c841f6a24a086dd5a70f9b20621738f0e1d062473b0defed82763b237a3",
+      "status": "already-clean"
+    },
+    "a5-344-lever-handle-5.webp": {
+      "source": "1139a9b4734b2d9d47528b35e0638d4ec1a172ba842c08d27e93a18a0b5657ab",
+      "status": "already-clean"
+    },
+    "a5-344-lever-handle.webp": {
+      "source": "991c0aabc62261377b5e652c0913defd1012f1a612d6b6946cad0ccff5cc4202",
+      "status": "already-clean"
+    },
+    "a5-348-lever-handle-2.webp": {
+      "source": "dd7deaef91033928a9086c5fd851a4f2a030a373b74f84cf36147e8119c6febb",
+      "status": "already-clean"
+    },
+    "a5-348-lever-handle-3.webp": {
+      "source": "65ab604c39a4a95e24c576e1a64929eacd1fd62841239f46da01d3ab19833334",
+      "status": "already-clean"
+    },
+    "a5-348-lever-handle-4.webp": {
+      "source": "681c1038863597a3dddf95e9d95aac249f0f3eed7b850dcf8ad9a9e54a63fcff",
+      "status": "already-clean"
+    },
+    "a5-348-lever-handle-5.webp": {
+      "source": "972927a60e67d51eac097535153c9f45af46268c4dbbfa3f4db8e8b93d733d3e",
+      "status": "already-clean"
+    },
+    "a5-348-lever-handle.webp": {
+      "source": "a70cefad22ce0ef9db2d3570409d4706bd0f5ace285d16794c27fd2218367496",
+      "status": "already-clean"
+    },
+    "a5-350-lever-handle-2.webp": {
+      "source": "278c87897aa488c6a36cda46af3d90a34432f23981f229e4e066b2024e960c38",
+      "status": "already-clean"
+    },
+    "a5-350-lever-handle-3.webp": {
+      "source": "66f404fd464497536e8312713bbbdd1dca346ded3cb345b822516a04631065bd",
+      "status": "already-clean"
+    },
+    "a5-350-lever-handle-4.webp": {
+      "source": "df5454e536b82526c0ad0731b304e68a439ab002928e90f30d0509a7c975f8ad",
+      "status": "already-clean"
+    },
+    "a5-350-lever-handle-5.webp": {
+      "source": "553032697280805e66ab42fcc71f375fa301543f1fd8632fefc4264a535f6c9c",
+      "status": "already-clean"
+    },
+    "a5-350-lever-handle.webp": {
+      "source": "23b60ad9fff2a772e67548f90a5f4d08016188e63f9b52a76709edb16db99f73",
+      "status": "already-clean"
+    },
+    "a5-559-lever-handle-2.webp": {
+      "source": "b2e2e0c9feb9c868dd6c77e2f12b1ab0538541eb24b7d82670ed04d9ba8a08bb",
+      "status": "already-clean"
+    },
+    "a5-559-lever-handle-3.webp": {
+      "source": "7995e9bd6ca2be66d62616850671dc5ede786c91cac1c47144bc97b15ea2f3aa",
+      "status": "already-clean"
+    },
+    "a5-559-lever-handle-4.webp": {
+      "source": "5d2cfedc5c8b2bce9e172e7f194dbe7a6a229aa25e77f0f2332ddd167cc50148",
+      "status": "already-clean"
+    },
+    "a5-559-lever-handle.webp": {
+      "source": "88b20be2f1e1d8c0058518363a6c8a5e48280efd1cb895d6f2d1f4da6594cb9d",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle-2.webp": {
+      "source": "d9b75b2f89c77208d6fcbca3eb040b8868c574fa967c71752de66c6c38e21a6a",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle-3.webp": {
+      "source": "f3280a80886b3908f0df9225a34dde0375ae48794b70c96f4cdbee777ec0fa92",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle-4.webp": {
+      "source": "271c1a5a8b810eb8055810a0e620c3d52a21cad43d45b1d4fbcb2ca4e3ee641f",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle-5.webp": {
+      "source": "ae7a9347e6bc2d3ca72262bc69c780160bb5679c41a353c4cb6d49d4e3176ec2",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle-6.webp": {
+      "source": "db8647ac2fe43e0524c65119b54bfd5c3e4e4e8ebd081dd25df05b7a602c3ab5",
+      "status": "already-clean"
+    },
+    "a5-592-lever-handle.webp": {
+      "source": "c9ba90541d2d80fe10c55fec00a2b67d257ecad17cd39c0f4f0787f2886502f7",
+      "status": "already-clean"
+    },
+    "a5-653-lever-handle-2.webp": {
+      "source": "15a3ee57c9bafac9a59dcf3523a614fa473644d641196a93657486b4bee7cfe6",
+      "status": "already-clean"
+    },
+    "a5-653-lever-handle-3.webp": {
+      "source": "7c4637524afc0ed18b666807d2959557d326343727d389e520974e2c9902c119",
+      "status": "already-clean"
+    },
+    "a5-653-lever-handle.webp": {
+      "source": "508982454966c37dd88659b7fb53843f0b152bb6a8cddb801659c57f9ce41025",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle-2.webp": {
+      "source": "23584742a6ac70fb42c0eaae000cbf2f35943f35ff2a51ca01c036595b5cf8a1",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle-3.webp": {
+      "source": "cf1bcb9a32c7b9c863afb14628bdd1dfa29c0ef300b0bebe8469b8daa229a048",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle-4.webp": {
+      "source": "ac6bdd356780fa877acc3eb98e5bf5c13c020e3eb6b14fe266c327ad1150a7b4",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle-5.webp": {
+      "source": "918143427c147fe86b0f5545291094d20a5b25bdf0588ac7682dc4626cc0683f",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle-6.webp": {
+      "source": "59f61eeef863f1ceab0540227a7fed49a5ea4a477c4485d706d322b2d86ef6cd",
+      "status": "already-clean"
+    },
+    "a5-704-lever-handle.webp": {
+      "source": "5e8cd55da7fbd76dd75a0b47993019a618d9b6d3bb9cc56777baba624bacc93c",
+      "status": "already-clean"
+    },
+    "a5-814-lever-handle-2.webp": {
+      "source": "733e5859666a33f12e48b27c47d13b0fa51b77ecb4693c692d090c3c25170696",
+      "status": "already-clean"
+    },
+    "a5-814-lever-handle-3.webp": {
+      "source": "577bfa5235a6f61fa976ed6de2940550559911b4e55d52cb9575b2376f0af484",
+      "status": "already-clean"
+    },
+    "a5-814-lever-handle-4.webp": {
+      "source": "8e0c07b6a72489057f872565ac2222570453ec4507782b64e9b5c5e685455997",
+      "status": "already-clean"
+    },
+    "a5-814-lever-handle-5.webp": {
+      "source": "1d5faed80009ee78504c03a9e1b77fbd71e486d106a05db53cff609f35e88dcb",
+      "status": "already-clean"
+    },
+    "a5-814-lever-handle.webp": {
+      "source": "3085100dc4cce25fc93706d7dbfa544c2e0486ef3f2461283146a9fbc47e49d2",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle-2.webp": {
+      "source": "94cecb2bc9740719659e655a2d28e460742ef8bc85c20755881a8f9ecd0bb87c",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle-3.webp": {
+      "source": "a6399cc98b5a37bb905edf4fd97215b63a8b8fa06e60a12e5baecb7080609e9a",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle-4.webp": {
+      "source": "82dedacec205a02cfbc0a268ce46330aee6bd313a0c5ecf68a5ebcc2f33f4604",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle-5.webp": {
+      "source": "f2100739c6823f541605be84013e02318cac8ff99d301db50998f3144f3d86ff",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle-6.webp": {
+      "source": "f2475d2b93912cfd974f9fc4681ad6299ec531a956afbe3b5219984ae66a7f1c",
+      "status": "already-clean"
+    },
+    "a5-832-lever-handle.webp": {
+      "source": "4ca45257f296acc4099ca6850d7a839957186f6ec6ea18cd4b404ef7f86f3657",
+      "status": "already-clean"
+    },
+    "a5-863-lever-handle-2.webp": {
+      "source": "b68a6ee2e9711367778b38554ea0f060c55559ce121a54ba0880fca4336f2910",
+      "status": "already-clean"
+    },
+    "a5-863-lever-handle-3.webp": {
+      "source": "2ccf02b581818ec212ed05e2e7463f7b4c7f2e85c0a1ef3e07c735de830c5b00",
+      "status": "already-clean"
+    },
+    "a5-863-lever-handle-4.webp": {
+      "source": "863c683cbc5fac02c80b84ea8d5728a73b6dee1955928ebc85d508aa97bd3679",
+      "status": "already-clean"
+    },
+    "a5-863-lever-handle-5.webp": {
+      "source": "7beb7d1dc6773e8209e3d040ed5b09dbd7b2bf60011924a245267fab61469b68",
+      "status": "already-clean"
+    },
+    "a5-863-lever-handle.webp": {
+      "source": "1704490e05ed704607e54c5e8243d67bcaf1b7fc5ee7818836aff51c1cd8af16",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle-2.webp": {
+      "source": "a42e54d7c407c4e32dcd86229ca8d3ca1d38330291c85db0d67f9d5c537b9cfe",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle-3.webp": {
+      "source": "a66672b3eb80326a59ff76d02c52f3a4f9c4ea2eb08f5b8cf9cdbe6fdaba3ccf",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle-4.webp": {
+      "source": "937f3f8c937fc0cb151b16eab057b3dd6bf9e36b84705fc09941cb36b0592579",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle-5.webp": {
+      "source": "cc8bc9df91ba501f7fd9d1f0357958ec8229e19f0f2718c1b4d86e677d33ea65",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle-6.webp": {
+      "source": "cbab9a2a6ae87a6ba419c760ecd6b87d723a8095f5ebfbf2f4325ad8ad0abf89",
+      "status": "already-clean"
+    },
+    "a5-908-lever-handle.webp": {
+      "source": "c7b768195eec5c0fe4ffc82fca77ea6f5d901a5c475bffb51f836d755aa4440d",
+      "status": "already-clean"
+    },
+    "a5-917-lever-handle-2.webp": {
+      "source": "0282f2b1e9d3bb0e1b6b69f102a523c95cd4923e2e3af3c92d409876675550c3",
+      "status": "already-clean"
+    },
+    "a5-917-lever-handle-3.webp": {
+      "source": "daf7d517991ed4141b4acb3516abf43fc5914e65ce0bc3c673f311b05a2d0849",
+      "status": "already-clean"
+    },
+    "a5-917-lever-handle-4.webp": {
+      "source": "d82a6cdbfbbead9a53161176d4f4eea24f483b0839cf93119b8396427c26dba1",
+      "status": "already-clean"
+    },
+    "a5-917-lever-handle.webp": {
+      "source": "33f243232fc65688fe6b51a3c39d3a0addc3136f3bab3a5d8f3db2dbb5d48e0f",
+      "status": "already-clean"
+    },
+    "a5-928-lever-handle-2.webp": {
+      "source": "6a5f0c0f042f3cb8ea46bf927f19c2dd6c4f122f3a1604fdcb52524c522eac4a",
+      "status": "already-clean"
+    },
+    "a5-928-lever-handle-3.webp": {
+      "source": "e14ee08240a9a1e68c877ade9c89faaf8840447db5171532d924c753d07784ec",
+      "status": "already-clean"
+    },
+    "a5-928-lever-handle-4.webp": {
+      "source": "2f1d2677747b91c32c6fa1783d87f7cb23dd613c04c713eb6ec0bcae3d4fa632",
+      "status": "already-clean"
+    },
+    "a5-928-lever-handle.webp": {
+      "source": "5cb5451e1119bc10b976556a14ee81f7293d15adb8e51a6dfd0b194710497f1f",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-2.webp": {
+      "source": "0a3bc19cc83ffd35ccae0a6ef51276cdb6aa301f278a74fea51cf7d2af388abd",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-3.webp": {
+      "source": "0acf1b8e5edccae6f51bcd726befde9952e4493072f6dab04e8bd056433a0d4f",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-4.webp": {
+      "source": "c8494ab7e54cf39e1099d458f20be6470030a764cdb3a98e3807ea9bec8781e8",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-5.webp": {
+      "source": "1cf7045826865c0984118194405e60eb9ca8d42a5f0c4f2ca2cb526aff1cf7db",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-6.webp": {
+      "source": "8f7a73077a05ee2a1a0e96fb9986d1ae402192f687b98af01f7fb70b3f587189",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-7.webp": {
+      "source": "2291ef5ed224166ecf70652ca335a3d414010d752f869a982e0c8d673e27dc13",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle-8.webp": {
+      "source": "59169960dae66de939284fb443e484a251c57c49e0081ad21926c7abdf576ecc",
+      "status": "already-clean"
+    },
+    "a5-965-lever-handle.webp": {
+      "source": "667279e12bca181dfee5080733c543dec44b6c9150bf5941fbe0a7f3eb77a462",
+      "status": "already-clean"
+    },
+    "a5-988-lever-handle-2.webp": {
+      "source": "08eaa03dcea73f3401b67deba149a43d3dd0a50ce2516a75e40bff40dad3b6ee",
+      "status": "already-clean"
+    },
+    "a5-988-lever-handle-3.webp": {
+      "source": "3cf5547093651bb44520abe78079ec6b4218f2f38d1120728bc73a538c9ce4e3",
+      "status": "already-clean"
+    },
+    "a5-988-lever-handle-4.webp": {
+      "source": "96f07dcdcc6c0b7290b7bd2725dfcff0c5eb315e5a83a9c31c83900f012e677a",
+      "status": "already-clean"
+    },
+    "a5-988-lever-handle-5.webp": {
+      "source": "3ea736e91df52ba105d7acfc82fc9e540ef5c8ae8a660da736b47a8b434e0d16",
+      "status": "already-clean"
+    },
+    "a5-988-lever-handle.webp": {
+      "source": "d029602bb2622a584634a0e74a893958fce95289406adf8d62d4cd6c1d66b7b3",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle-2.webp": {
+      "source": "25d97ea34754f28c68618a9119ecb3acde9699b91af3f2f0bd65801fb89db4b4",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle-3.webp": {
+      "source": "1f613cd422549eb51d698bbb0578aeacd4f8357d83bf7704c5cce9287474c44f",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle-4.webp": {
+      "source": "028ef61ba39ea5532d1a72764f32159ec3ba5a8804cfadcb5db9c2096abab276",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle-5.webp": {
+      "source": "577039b24525f25cffe9280c4015a4fc4210bdf6a939d48353bcbe62bbcbd914",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle-6.webp": {
+      "source": "e1e3ae687b025daedd5ecf0518e32a9fb3b662d65df676ef9510de7a341a5de9",
+      "status": "already-clean"
+    },
+    "a9-2009-lever-handle.webp": {
+      "source": "f4d77c7a4f5203971601d41f50713eeb4088ad141299908982bcd4ddb01d5139",
+      "status": "already-clean"
+    },
+    "a9-653-lever-handle-2.webp": {
+      "source": "234c623c6863472bfbf446a73c107cdd86932c164b704390e065142313e7499d",
+      "status": "already-clean"
+    },
+    "a9-653-lever-handle-3.webp": {
+      "source": "122e7c4ee8c4ab4312bc357ef6ca3531ae976cc888cc16bc59a569b525d8c4ce",
+      "status": "already-clean"
+    },
+    "a9-653-lever-handle-4.webp": {
+      "source": "81336138d1824b78f054d4f3ce45bb58f017acff513d278f849b96e78f9f65e0",
+      "status": "already-clean"
+    },
+    "a9-653-lever-handle-5.webp": {
+      "source": "4818b675b005a8814b22caacb8d63acae0f2d72bf5aa871753f631ad1cd13068",
+      "status": "already-clean"
+    },
+    "a9-653-lever-handle.webp": {
+      "source": "15c21f39392023bf1d176f4b2a4645baad21438168874f676c05ec491a386970",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle-2.webp": {
+      "source": "050b287bed479ed81d5530eb2edcae5cff52a28b47aff5e82040627786c66ee2",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle-3.webp": {
+      "source": "ee6c971b8cc07fabd0581c7e3b9027ceeb4f7e5976b824251a4120c4120461fd",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle-4.webp": {
+      "source": "e4a4491230fc12e67d7ce56c238c1920256439a18d02b9dc5f9ff91ddaffed2c",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle-5.webp": {
+      "source": "3444642429d3eb514257d67e4886f20ad4d5713e0d74a5d29625f2d97a95070c",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle-6.webp": {
+      "source": "45667d369952777dac5766a3e9d87537df67ec8fe0f416dc24b8acda24493e74",
+      "status": "already-clean"
+    },
+    "a9-766-lever-handle.webp": {
+      "source": "5aaa5de6b5a693209c9a08a31f34a55b3a9e7b0664d50e477af77571e3df1380",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle-2.webp": {
+      "source": "8f7052318524c0a75941c0b0f7bde904ee61a6c9367e93460bb18b24c4ec01c1",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle-3.webp": {
+      "source": "a85c3653099a47b9f58f98a37df106d3248fddc84830f013db74fa5e80593660",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle-4.webp": {
+      "source": "8a63f9b6a5488c381a468625ed27a0bc96ff9f1109f53c8746ab8a5101cc08fd",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle-5.webp": {
+      "source": "e599c47e0d0502e72b670a892059aa7e01a8ea79a3bfd41658c6165e2f2eda32",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle-6.webp": {
+      "source": "532966964d2b4438d88c4dda8dc865365146cf7110ae022528de356f48c50770",
+      "status": "already-clean"
+    },
+    "a9-845-lever-handle.webp": {
+      "source": "98fae008920b28ff2d54a71b7e02e89eb88c951a66f7d834ca5d6f21cfd1b1f4",
+      "status": "already-clean"
+    },
+    "a9-894-lever-handle-2.webp": {
+      "source": "8e5fb0e0e86184d69e9312dfa991fbb4cb835270aa034f7fd78273a4f09fefb0",
+      "status": "already-clean"
+    },
+    "a9-894-lever-handle-3.webp": {
+      "source": "4b947650333a83c8ca0e6004d24f4eff1248cd220dbf60cbbb2fefd252c0b18e",
+      "status": "already-clean"
+    },
+    "a9-894-lever-handle-4.webp": {
+      "source": "2dba85857f043ca8584e82512853f42628b51b682265a62e717a232e4d26f70c",
+      "status": "already-clean"
+    },
+    "a9-894-lever-handle-5.webp": {
+      "source": "583c03402369979bd120f3157b92ce2655b0c6030a7dbc178eec366356ce8911",
+      "status": "already-clean"
+    },
+    "a9-894-lever-handle.webp": {
+      "source": "7a319dd7b3bb5c43f2d8b1f9b90744bfffe7f2fd015c873ac8e094f5cffb627d",
+      "status": "already-clean"
+    },
+    "a9-921-lever-handle-2.webp": {
+      "source": "bc213a3c22d99898e3e31d2f8d629d408e325e244694caa5895e9f898ad6c6aa",
+      "status": "already-clean"
+    },
+    "a9-921-lever-handle-3.webp": {
+      "source": "d8143e3598574044c5a8f5f9b202cfde58bdca95f0e02375d3a0363fe41579a3",
+      "status": "already-clean"
+    },
+    "a9-921-lever-handle-4.webp": {
+      "source": "fef97088b07c892b3b46f5f54ffa2ab30ab0524f4b6b0cb0e7536f841b571872",
+      "status": "already-clean"
+    },
+    "a9-921-lever-handle.webp": {
+      "source": "4e88bfdc386b3f8ca76b43f092b64a9255f695a1e9ff5f97dad727b87b9572e3",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle-2.webp": {
+      "source": "9ebafc9e9daf150e55b6d40d3c71426c05fc12b149f93d79700f9cec4d104ced",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle-3.webp": {
+      "source": "9e9212b36ccdd2884c7579471e51ef30d9559b2675ae0d2067855163076d5baf",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle-4.webp": {
+      "source": "1d87ac303b90b789e178a8be479c43414185c63fb6592df216084aa968db537f",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle-5.webp": {
+      "source": "29be26d286662152726405b683d652206b222767e8682d237cebc48be92cf8ea",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle-6.webp": {
+      "source": "f49d445386a1167b48f30f38d4c6c8eabe80ef13519083d50b60ae82da4eab7f",
+      "status": "already-clean"
+    },
+    "a9-933-lever-handle.webp": {
+      "source": "ffd81a26ec8dc70d3a0a1f1dd0cd0282bbd595c077aa0507bcf217a7ce74b0c3",
+      "status": "already-clean"
+    },
+    "a9-940-lever-handle-2.webp": {
+      "source": "d5e799a04666b10db469db4b62b93df0b881b80257fe425a5179471828c4b5a9",
+      "status": "already-clean"
+    },
+    "a9-940-lever-handle-3.webp": {
+      "source": "9d95aa51864c10729bcaf07ed2d4db946acbe98c6d5f3d70300a4f9dd84ed3bf",
+      "status": "already-clean"
+    },
+    "a9-940-lever-handle-4.webp": {
+      "source": "2c4446ed2cd9f1f1c82966f9f11f2a871a001d81c2867a539a7a84e36ef58158",
+      "status": "already-clean"
+    },
+    "a9-940-lever-handle-5.webp": {
+      "source": "755b6dd9be1b849dc042b619e8213c4f4e64fb042ed1c2d437ff3b7723424321",
+      "status": "already-clean"
+    },
+    "a9-940-lever-handle.webp": {
+      "source": "5a35c3339ec7e3654d7aa17e5141d2cfa2593dd0512e45b27ed75c7effc6b677",
+      "status": "already-clean"
+    },
+    "a9-953-lever-handle-2.webp": {
+      "source": "90f385b324841a92c4fafbf639525ea3a243bbe0f93d70594b53483dd72dce3a",
+      "status": "already-clean"
+    },
+    "a9-953-lever-handle-3.webp": {
+      "source": "5ede48f225c136e3aaedeab3f4547111536d8016ffeca789b3aa1749234daf95",
+      "status": "already-clean"
+    },
+    "a9-953-lever-handle-4.webp": {
+      "source": "f225769ead16187f7e6b06de9398f7a7cedd748a6f22e4bdec39c2aa5e22b7af",
+      "status": "already-clean"
+    },
+    "a9-953-lever-handle-5.webp": {
+      "source": "1c59ec6a78940b98be19098c328fe79ac5375825ef0e3c96dcc0cd5c21278c27",
+      "status": "already-clean"
+    },
+    "a9-953-lever-handle.webp": {
+      "source": "3407541e25dd6966b77b21514457203253fb2ae2981a7ad3d41a18e5d09c77a2",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-2.webp": {
+      "source": "28cf757608fbce3a631d9a47d56ae4f603200e619fc39cf15a9a6cc9552fb6c3",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-3.webp": {
+      "source": "b2b2a42ecd9e88d871a060a10fb4fcc27b708fd046d3532f2b97160b58f71d6e",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-4.webp": {
+      "source": "a69adfc4c35006022fe32816ad2c665167bd1d6ac0f8e9df106e52147341c6a9",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-5.webp": {
+      "source": "74e4fd7c4667e54ff73811dd4293c3ea8d5666c198e6cb3ee4586d5bb3941ef3",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-6.webp": {
+      "source": "d88d32f8af1f6f84dfe00d5b9550f4ed08db05b0f7812605f9f1fa9a1884c88a",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-7.webp": {
+      "source": "1fbc8dd8d36b5efd06340e0bd5ef5eb20adb51a5dbc9f4910a4c786075f8fbb1",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle-8.webp": {
+      "source": "05bb00a7109633a5e9167e668431b3ba3f3ae4089fb343e76ec8d011bf45de49",
+      "status": "already-clean"
+    },
+    "a9-965-lever-handle.webp": {
+      "source": "93d6b1fffb4c6bf20db7aee803afbb24fb5c2e9fdd12607195cb3c20dd594bda",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle-2.webp": {
+      "source": "798108fe1a8c893a25689247212ceefee574825d8b4dcf2ec8b02f7d6b668b30",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle-3.webp": {
+      "source": "835fe0734d94c0a4d851dfec88aa9ac5b07c67d1f68c2741aabf066eac426893",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle-4.webp": {
+      "source": "2f66196c9bb08f91a6ed29eb6f219ffdcebad40113f2f8ed671773520b58f914",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle-5.webp": {
+      "source": "9a7d8d7963c2948626397dd05be19eec09c9aba6498e0b5a154538ecd0804f67",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle-6.webp": {
+      "source": "505666088253afad122ab2f986d0d40936e573a072b7b8ae3e98dc71638283fe",
+      "status": "already-clean"
+    },
+    "a9-987-lever-handle.webp": {
+      "source": "96a783f71c8469cbe28efef191b80a337b5993344595ee723b4134eb9f58809d",
+      "status": "already-clean"
     },
     "aah024-brass-and-steel-hinges-2.webp": {
       "source": "90ce269d560baeb7eb4c0395a8a494010370045ca56bc82a045503aa3e228f3b",
@@ -13030,6 +13998,22 @@
       "source": "cef411d28c340caae47ebe6ee03e49bcd9d422634d133bae79571babe4d860a3",
       "status": "already-clean"
     },
+    "ka29-9769-lever-handle-2.webp": {
+      "source": "0169b8638596295a34cc7671bf53c899b698f7a9e7c84500a90991ae64ef6ed6",
+      "status": "already-clean"
+    },
+    "ka29-9769-lever-handle-3.webp": {
+      "source": "08c28972b22dd00b7113350d5d6b96074b04840bcf72772c648956b07ef3f65c",
+      "status": "already-clean"
+    },
+    "ka29-9769-lever-handle-4.webp": {
+      "source": "ba62c98dda7f5f77ff07d3408173e92d121de560a3ed1e55c505c30c0416a8f3",
+      "status": "already-clean"
+    },
+    "ka29-9769-lever-handle.webp": {
+      "source": "3958824d6e292b453476baf9e1fb40c6c3debc23b11983f8b086f7d95c4daa5c",
+      "status": "already-clean"
+    },
     "ka5-2007-lever-handle-10.webp": {
       "source": "8b5397202fe6e37cc95f63215ea34c2b0f9a7e03a16196b96de0bcf9c4b9b075",
       "status": "already-clean"
@@ -13330,6 +14314,22 @@
       "source": "4cfd153704b9c0a0b7c91493c45c1b83e8192e3838d061dd6e610c6e7981f24e",
       "status": "already-clean"
     },
+    "ka82-9910-lever-handle-2.webp": {
+      "source": "ba1c8c13f17553be7b5115bb7f1a8906b14213a0dc4dc5005e8a9517e23ed181",
+      "status": "already-clean"
+    },
+    "ka82-9910-lever-handle-3.webp": {
+      "source": "a4903c2f55ef4e2ec2e524c33418021eb573fe17f3c3f32c3ab11e5deb0a9baa",
+      "status": "already-clean"
+    },
+    "ka82-9910-lever-handle-4.webp": {
+      "source": "d1814ef5d27c436c7d5e2a27db66bf3928ad2ec352011cfd5534213d39d477b2",
+      "status": "already-clean"
+    },
+    "ka82-9910-lever-handle.webp": {
+      "source": "ff879d9711fa6b5e598e11fb215905a867a5108787b254dd775521de3362cd6f",
+      "status": "already-clean"
+    },
     "ka87-9931-lever-handle-2.webp": {
       "source": "1f75b7703cb42671e1311f7b7762febb2deeda5cc70652f18e842ad8e8be2e77",
       "status": "already-clean"
@@ -13396,6 +14396,22 @@
     },
     "ka9-2005-lever-handle.webp": {
       "source": "b6c16baa17923fca700b80680492270983fa9d08e51538ca3eb077d4657a3d63",
+      "status": "already-clean"
+    },
+    "ka9-9905-lever-handle-2.webp": {
+      "source": "a0365df4771cbdbe7b6d9905bb66a1e6995f0bff4b1ed937ae328c96cea1b671",
+      "status": "already-clean"
+    },
+    "ka9-9905-lever-handle-3.webp": {
+      "source": "8b0c2934080fd2da91f7bef532b67e96bd1e4322ddc59df673f2ce40a3a50cd9",
+      "status": "already-clean"
+    },
+    "ka9-9905-lever-handle-4.webp": {
+      "source": "9077b59674a1f42599e7468101277d3bc2998c71023d7427f4874fdc7b40b5e5",
+      "status": "already-clean"
+    },
+    "ka9-9905-lever-handle.webp": {
+      "source": "a72535d9aaf2745abdd3e15857e452907953881b419a4078fde24cd58b322a3e",
       "status": "already-clean"
     },
     "ka9-9906-lever-handle-2.webp": {

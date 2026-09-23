@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useOverlayPresence } from "@/hooks/useOverlayPresence";
 import {
   suggestedCategories,
   suggestedProducts,
@@ -63,6 +64,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
   const fetchStarted = useRef(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const restoreFocusTo = useRef<Element | null>(null);
+  const { rendered, visible } = useOverlayPresence(open);
 
   const t = locale === "es"
     ? {
@@ -132,15 +134,22 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     };
   }, [open, index]);
 
+  const close = useCallback(() => {
+    onClose();
+    if (restoreFocusTo.current instanceof HTMLElement) restoreFocusTo.current.focus();
+  }, [onClose]);
+
   useEffect(() => {
-    if (!open) return;
-    restoreFocusTo.current = document.activeElement;
+    if (!open || !rendered) return;
+    if (!dialogRef.current?.contains(document.activeElement)) {
+      restoreFocusTo.current = document.activeElement;
+    }
     inputRef.current?.focus();
 
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
         event.preventDefault();
-        onClose();
+        close();
         return;
       }
       if (event.key !== "Tab") return;
@@ -166,12 +175,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = "";
     };
-  }, [open, onClose]);
-
-  const close = useCallback(() => {
-    onClose();
-    if (restoreFocusTo.current instanceof HTMLElement) restoreFocusTo.current.focus();
-  }, [onClose]);
+  }, [close, open, rendered]);
 
   const results = useMemo(() => {
     if (!index) return [];
@@ -315,10 +319,16 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     return index.filter((e) => score(e, terms) > 0).length;
   }, [index, query]);
 
-  if (!open) return null;
+  if (!rendered) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center" role="presentation">
+    <div
+      aria-hidden={!open}
+      className="overlay-presence fixed inset-0 z-50 flex items-start justify-center"
+      data-state={visible ? "open" : "closed"}
+      inert={!open}
+      role="presentation"
+    >
       {/*
         Light grey, not the promo dialog's near-black. That difference is in the
         reference too, and it is the right call: a search panel is a tool the visitor
@@ -342,7 +352,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
         4vh on a phone rather than 12vh for the same reason: vertical room is the scarce
         thing there, and the panel is the only thing on screen.
       */}
-      <div className="relative mt-[4vh] w-full max-w-[720px] px-16 sm:mt-[12vh] sm:px-24">
+      <div className="overlay-panel relative mt-[4vh] w-full max-w-[720px] px-16 sm:mt-[12vh] sm:px-24">
         <div
           ref={dialogRef}
           role="dialog"
@@ -358,7 +368,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
               type="button"
               onClick={close}
               aria-label={t.close}
-              className="flex h-24 w-24 flex-none items-center justify-center text-ink transition-colors duration-200 hover:text-ink-secondary"
+              className="-m-10 flex size-44 flex-none items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
             >
               <svg viewBox="0 0 24 24" className="h-24 w-24" aria-hidden="true" focusable="false">
                 <path

@@ -183,6 +183,18 @@ const FINISHES: Record<string, FinishEntry> = {
     match: ["brushed satin nickel", "哑光镍拉丝"],
   },
   /*
+    锌合金分体门锁系列 adds one code the earlier books never printed: CS, printed 「铬拉丝」 on A9-894
+    (p51). The shot is a cool blue-grey satin, visibly bluer than 哑光镍拉丝 beside it — the
+    colour is read off that photograph. Its own entry, because without one "brushed chrome"
+    would fall through to nothing and the swatch would be blank.
+  */
+  "brushed-chrome": {
+    colors: ["#aeb6bd"],
+    zh: "铬拉丝",
+    en: "Brushed chrome",
+    match: ["brushed chrome", "铬拉丝"],
+  },
+  /*
     《雷茵-铰链和门吸》的表面处理词汇。颜色取自图册的产品照片本身，不是猜的。
 
     这一批里有五个名字原来会**误中**别的条目：LOOKUP 按拼写由长到短匹配，

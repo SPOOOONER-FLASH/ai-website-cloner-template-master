@@ -1,14 +1,14 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
-  "totalProducts": 924,
+  "totalProducts": 964,
   "fields": {
     "backset": {
       "title": "Backset",
       "labels": [
         "Backset"
       ],
-      "products": 175,
-      "rows": 175,
+      "products": 176,
+      "rows": 176,
       "distinctValues": 32
     },
     "centreDistance": {
@@ -20,9 +20,9 @@
         "Centre distance, horizontal",
         "Centre distance, vertical"
       ],
-      "products": 41,
-      "rows": 41,
-      "distinctValues": 16
+      "products": 42,
+      "rows": 42,
+      "distinctValues": 17
     },
     "pullHandlePitch": {
       "title": "Pull handle fixing pitch (P=)",
@@ -50,8 +50,8 @@
         "Applicable Door Thickness",
         "Glass door thickness"
       ],
-      "products": 285,
-      "rows": 285,
+      "products": 318,
+      "rows": 318,
       "distinctValues": 42
     },
     "handing": {
@@ -70,9 +70,9 @@
         "Faceplate",
         "Face plate"
       ],
-      "products": 10,
-      "rows": 10,
-      "distinctValues": 10
+      "products": 11,
+      "rows": 11,
+      "distinctValues": 11
     },
     "finish": {
       "title": "Finish",
@@ -85,9 +85,9 @@
         "Surface Finish",
         "Surface Finish Options"
       ],
-      "products": 325,
-      "rows": 334,
-      "distinctValues": 84
+      "products": 326,
+      "rows": 335,
+      "distinctValues": 85
     }
   },
   "unregisteredLabels": {}
