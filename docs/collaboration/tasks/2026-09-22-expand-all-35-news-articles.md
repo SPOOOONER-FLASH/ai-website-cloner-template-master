@@ -43,9 +43,9 @@
 | 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | **已做** 批7 EN 1626（ES/PT 待多语言批） |
 | 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | **已做** 批7 EN 1631（ES/PT 待多语言批） |
 | 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | **已做** 批7 EN 1702（ES/PT 待多语言批） |
-| 22 | what-oem-actually-changes | 0 | 700 | 900 | 待做 |
-| 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | 待做 |
-| 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | 待做 |
+| 22 | what-oem-actually-changes | 0 | 700 | 900 | **已做** 批8 EN 1607（ES/PT 待多语言批） |
+| 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | **已做** 批8 EN 1664（ES/PT 待多语言批） |
+| 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | **已做** 批8 EN 1622（ES/PT 待多语言批） |
 | 25 | exit-device-push-bar-length | 0 | 692 | 908 | 待做 |
 | 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | 待做 |
 | 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | 待做 |
