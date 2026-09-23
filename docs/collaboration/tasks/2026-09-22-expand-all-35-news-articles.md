@@ -37,7 +37,7 @@
 | 13 | ansi-grade-1-vs-en-1125-exit-devices | 0 | 840 | 760 | **已做** 批5 1868/1953/1931 |
 | 14 | what-a-frameless-glass-door-needs | 0 | 828 | 772 | **已做** 批5 1938/2083/2011 |
 | 15 | what-it-takes-to-tool-a-new-exit-device | 0 | 807 | 793 | **已做** 批5 1877/1954/1908 |
-| 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | **已做** 批6 EN 1790（ES/PT 待多语言批） |
+| 16 | choosing-a-cylindrical-lock-entrance-privacy-passage | 0 | 767 | 833 | **已做** 批6 EN 1832（ES/PT 待多语言批） |
 | 17 | why-the-catalogue-is-this-wide | 0 | 760 | 840 | **已做** 批6 EN 1642（ES/PT 待多语言批） |
 | 18 | en-1125-or-ansi-which-standard-your-project-needs | 0 | 720 | 880 | **已做** 批6 EN 1792（ES/PT 待多语言批） |
 | 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | **已做** 批7 EN 1626（ES/PT 待多语言批） |
@@ -52,11 +52,11 @@
 | 28 | door-hardware-schedule-guide | 0 | 659 | 941 | **已做** 批10 EN 1644（ES/PT 待多语言批） |
 | 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | **已做** 批10 EN 1672（ES/PT 待多语言批） |
 | 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | **已做** 批10 EN 1658（ES/PT 待多语言批） |
-| 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | 待做 |
-| 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | 待做 |
-| 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | 待做 |
-| 34 | trim-handle-or-panic-bar | 0 | 551 | 1049 | 待做 |
-| 35 | six-values-an-order-needs | 0 | 526 | 1074 | 待做 |
+| 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | **已做** 批11 EN 1637（ES/PT 待多语言批） |
+| 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | **已做** 批11 EN 1608（ES/PT 待多语言批） |
+| 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | **已做** 批11 EN 1605（ES/PT 待多语言批） |
+| 34 | trim-handle-or-panic-bar | 0 | 551 | 1049 | **已做** 批11 EN 1623（ES/PT 待多语言批） |
+| 35 | six-values-an-order-needs | 0 | 526 | 1074 | **已做** 批11 EN 1632（ES/PT 待多语言批） |
 
 **做完一篇就把状态改成「已做 + 提交号」。** 这张表是进度的唯一记录。
 
