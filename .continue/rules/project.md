@@ -207,7 +207,7 @@ of all optional undocumented features. Verify orthographic geometry before beaut
   renames. The HTML returned 200, the chunks 404'd, and the client's browser showed
   "This page couldn't load". The pathspec exists to avoid sweeping up the other agent's
   work; it does not protect you from omitting your own new files. Stage explicitly
-  (`git add out/ out-rayen/`), then `git commit` — and check
+  (`git add out/` — never together with `out-rayen/`; `npm run release:hyde` does this for you), then `git commit` — and check
   `git status --short out/ | grep -c '^??'` reads 0 before pushing a release.
 
 - **Write the commit message to a file first, then `git commit -F <file>`.** Never chain a
@@ -469,13 +469,45 @@ different things, and none of them is a purge.
 | `src/app/es/**` (Spanish copy) | Codex |
 | `content/**`, `scripts/**`, `src/data/**`, `src/lib/**` | Claude |
 | `content/promo.json` | Codex: card copy only. Claude: timing only. |
-| Building and committing `out/` | **The current release builder; use the rule below** |
+| Building and committing `out/` | **HYDE release: `npm run release:hyde`** — see the wall below |
+| Building and committing `out-rayen/` | **RAYEN release: `npm run release:rayen`** — RAYEN's side only |
+| Article copy and localisation (`content/news`, `content/guides`, all three languages) | **Claude.** Client 2026-09-23: Kimi assists only; Claude owns polish and localisation |
 
-`out/` is committed and a rebuild touches ~2350 files. Normal work should commit source
-first. If `out/` is already dirty, that agent has the release-build baton; the other agent
-must not rebuild or touch `out/`. The release builder incorporates the latest committed
-source from both agents, runs `npm run deploy:prep`, commits the complete generated diff,
-and records production verification separately. This is a soft handoff, not a lock.
+
+Normal work commits source first. Releases go through `npm run release:hyde` /
+`release:rayen` (below); production verification is recorded separately.
+
+### The RAYEN / HYDE wall — two sites, two lanes, two releases
+
+Client instruction, 2026-09-23: 「雷茵和 hyde 请设立一个墙或者分界线，让两边不要互相干扰，
+各自独立工作推送部署，必须设置一个好办法。雷茵的东西你不管，不要动。」
+
+Both sites build from one Next app, so one build rewrites `out/` AND `out-rayen/`, and in a
+shared working tree one `git add` sweeps up the other side's uncommitted work. Both happened
+on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`:
+
+| Lane | Owns | Releases with |
+|---|---|---|
+| RAYEN | `out-rayen/`, `content/rayen/`, `src/app/zh*/`, `src/components/rayen/`, `*rayen*` scripts/data/libs, `public/images/products-rayen*/`, RAYEN search indexes and PDF | `npm run release:rayen` |
+| HYDE | `out/`, `src/app/(en)/`, `src/app/es/`, `src/app/pt/`, `content/news/`, `content/guides/`, `public/images/products-hyde/`, `public/search-index.json` | `npm run release:hyde` |
+| Neutral | everything else — shared components, `content/products/` (587 records serve both sites), config, docs | either side, carefully |
+
+1. **Release in a clean checkout, commit only your own output.** `npm run release:hyde` builds
+   `origin/main` in `tmp/release-hyde-<time>/`, runs `deploy:prep`, stages **only `out/`**,
+   commits, pushes (rebasing if the other side just pushed — the directories are disjoint, so
+   it cannot conflict), and deletes the checkout. The main working tree is never touched, so
+   nobody's uncommitted work can be baked in or swept up. `release:rayen` does the same for
+   `out-rayen/`. **Do not build and commit `out/` or `out-rayen/` by hand any more.**
+2. **A commit may not cross the wall.** `.githooks/pre-commit` runs `scripts/site-wall.mjs`
+   and rejects any commit that stages files from both lanes. Installed once with
+   `npm run wall:install`; it applies to every worktree of this repo. Genuine exceptions:
+   `SITE_WALL_OVERRIDE="reason" git commit …`, with the same reason in the message.
+3. **Two batons in NOW.md.** "HYDE 发布棒" and "雷茵发布棒" are separate rows. Holding one
+   says nothing about the other.
+
+**Claude does not touch the RAYEN lane** (client, 2026-09-23). Neutral changes that alter what
+RAYEN renders — a shared component, a product record without `sites` — are announced in the
+agent-update so RAYEN's side can release when it chooses.
 
 ### A regenerator that has fallbacks will quietly undo work it cannot see
 

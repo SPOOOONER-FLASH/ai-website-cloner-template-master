@@ -1,0 +1,3 @@
+#!/bin/sh
+# 雷茵 / HYDE 分界墙。见 scripts/site-wall.mjs。
+exec node scripts/site-wall.mjs
