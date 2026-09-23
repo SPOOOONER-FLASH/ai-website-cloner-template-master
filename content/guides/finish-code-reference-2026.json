@@ -20,7 +20,11 @@
     "labelEs": "Una manilla LH851 — la misma pieza se sirve bajo nueve códigos de acabado distintos",
     "labelPt": "Uma maçaneta LH851 — a mesma peça é fornecida sob nove códigos de acabamento diferentes"
   },
-  "relatedModels": ["LH851", "LH852 BNBK", "70SN"],
+  "relatedModels": [
+    "LH851",
+    "LH852 BNBK",
+    "70SN"
+  ],
   "seoTitle": "Finish Code Reference 2026: BHMA, US26x and Factory Codes | Canton Hyland",
   "seoDescription": "Door hardware finish codes: the 23 codes in our catalogue, BHMA 600-series and US26x equivalents, the four pairs that reverse (NB/BN, PB/BP, CB/BC), and why a code says nothing about corrosion.",
   "body": [
@@ -29,22 +33,22 @@
     "THE TWENTY-THREE CODES WE USE",
     "AB antique brass. AC antique copper. BC and CB, both polished chrome. BL black. BN and NB, both black nickel. BP and PB, both polished brass. BS satin brass. CP chrome plated. MB matt black. N nickel. NP nickel plated. ORB a dark finish. PSS polished stainless steel. PVD physical vapour deposition. SB satin brass. SC satin chrome. SN satin nickel. SP bright polished. SS stainless steel. SSS satin stainless steel.",
     "THE FOUR PAIRS THAT REVERSE",
-    "NB and BN are both black nickel. PB and BP are both polished brass. CB and BC are both polished chrome. These are the pairs that produce an order that is correct on paper and wrong in the carton, because a transposition is invisible to a proofreader — both strings are valid codes.",
+    "NB and BN are both black nickel. PB and BP are both polished brass. CB and BC are both polished chrome. These are the pairs that produce an order that is correct on paper and wrong in the carton, because a transposition is invisible to a proofreader, both strings are valid codes.",
     "The fourth trap is not a reversal but a collision: BL, BRN and ORB all describe a black or near-black finish, and a schedule that uses one while the factory quotes another reads as a discrepancy when it is not. Confirm which black is meant by naming it, not by code alone.",
     "ORB deserves its own line. In North America ORB conventionally means oil-rubbed bronze, a dark brown with copper showing through the wear points. Ours is not that. If a specification calls for oil-rubbed bronze in the North American sense, say so in words, because the code alone will not carry the meaning across.",
     "HOW THE CODES LINE UP WITH BHMA AND US NUMBERS",
     "The BHMA 600-series and the older US26x numbers are the two numbering systems a North American specification uses. They map onto factory letter codes by appearance, and the mapping is one of naming rather than performance.",
     "Satin stainless steel is BHMA 630 and US32D; our code is SSS. Polished stainless steel is BHMA 629 and US32; ours is PSS. Satin chrome is BHMA 626 and US26D; ours is SC. Polished chrome is BHMA 625 and US26; ours is CP or CB. Polished brass is BHMA 605 and US3; ours is PB. Satin brass is BHMA 606 and US4; ours is SB or BS. Satin nickel is BHMA 619 and US15; ours is SN.",
-    "Two things about that list matter more than the list. First, US26D and BHMA 626 are the same satin chrome under two numbering systems, not two finishes — that single confusion accounts for a large share of finish queries. Second, a BHMA number describes the finish, not its durability, which is the next section.",
+    "Two things about that list matter more than the list. First, US26D and BHMA 626 are the same satin chrome under two numbering systems, not two finishes, that single confusion accounts for a large share of finish queries. Second, a BHMA number describes the finish, not its durability, which is the next section.",
     "A FINISH CODE SAYS NOTHING ABOUT CORROSION",
     "None of these codes, in either system, states how long the finish survives. That is a separate classification: EN 1670 grades corrosion resistance by exposure, and a finish code carries no EN 1670 class with it.",
     "This matters on any opening that sees weather, salt air or cleaning chemicals. A satin nickel handle and a satin stainless handle can look identical on delivery and behave completely differently after two coastal winters, and the finish code is the same length either way. If corrosion is a project requirement, it has to be specified as one.",
     "BS IS A SURFACE, NOT A METAL",
-    "BS means a satin surface and says nothing about what is underneath. Satin brass and satin stainless are both satin and they are different materials at different prices with different corrosion behaviour. The same caution applies to SS, which names stainless steel without naming the grade — and 201, 304 and 316 are three different answers to the question of how long it lasts.",
+    "BS means a satin surface and says nothing about what is underneath. Satin brass and satin stainless are both satin and they are different materials at different prices with different corrosion behaviour. The same caution applies to SS, which names stainless steel without naming the grade, and 201, 304 and 316 are three different answers to the question of how long it lasts.",
     "Ask for the base material alongside the finish code on anything where either the price or the environment matters.",
     "WHAT OUR OWN CATALOGUE ACTUALLY SAYS",
     "Across the 589 published models, the finish field contains 94 distinct strings. That is not 94 finishes. It is one vocabulary written three ways.",
-    "Twenty-three of the 94 are clean codes of the kind listed above. Fifty-three are written out as names — Antique Brass, Matt Black, Black Powder Coat — and several of those duplicate a code that already exists, so the same finish is counted twice. Matt Black and Matte Black both appear, which is one finish under two spellings.",
+    "Twenty-three of the 94 are clean codes of the kind listed above. Fifty-three are written out as names (Antique Brass, Matt Black, Black Powder Coat) and several of those duplicate a code that already exists, so the same finish is counted twice. Matt Black and Matte Black both appear, which is one finish under two spellings.",
     "The remaining eighteen are neither: fragments such as a code followed by other finish to order, a list of five codes separated by full stops in a single field, and at least one misspelling. These are the residue of a catalogue assembled over years from several sources, and they are stated here rather than quietly cleaned, because a buyer reading a product page today sees them.",
     "The practical consequence for anyone ordering: quote the code and the name together. Antique Brass (AB) is unambiguous in a way that neither half is on its own, and it survives being retyped into a system that only accepts one of the two."
   ],
@@ -178,11 +182,11 @@
     "Nenhum destes códigos, em qualquer dos dois sistemas, declara quanto o acabamento sobrevive. Isso é uma classificação à parte: a EN 1670 gradua a resistência à corrosão por exposição, e um código de acabamento não carrega nenhuma classe EN 1670 consigo.",
     "Isso importa em qualquer vão exposto ao tempo, ao ar salino ou a produtos de limpeza. Uma maçaneta de níquel acetinado e uma de inox acetinado podem parecer idênticas na entrega e comportar-se de forma completamente diferente depois de dois invernos de costa, e o código de acabamento tem o mesmo comprimento nos dois casos. Se a corrosão é um requisito da obra, tem de ser especificada como tal.",
     "BS É UMA SUPERFÍCIE, NÃO UM METAL",
-    "BS significa superfície acetinada e não diz nada sobre o que está por baixo. Latão acetinado e aço inoxidável acetinado são ambos acetinados, e são materiais diferentes a preços diferentes com comportamentos diferentes frente à corrosão. A mesma cautela vale para SS, que nomeia aço inoxidável sem nomear o grau — e 201, 304 e 316 são três respostas diferentes para quanto tempo dura.",
+    "BS significa superfície acetinada e não diz nada sobre o que está por baixo. Latão acetinado e aço inoxidável acetinado são ambos acetinados, e são materiais diferentes a preços diferentes com comportamentos diferentes frente à corrosão. A mesma cautela vale para SS, que nomeia aço inoxidável sem nomear o grau, e 201, 304 e 316 são três respostas diferentes para quanto tempo dura.",
     "Peça o material base junto ao código de acabamento em tudo onde o preço ou o ambiente importem.",
     "O QUE O NOSSO PRÓPRIO CATÁLOGO REALMENTE DIZ",
     "Nos 589 modelos publicados, o campo de acabamento contém 94 sequências distintas. Isso não são 94 acabamentos. É um vocabulário escrito de três maneiras.",
-    "Vinte e três das 94 são códigos limpos do tipo listado acima. Cinquenta e três estão escritas como nomes — Antique Brass, Matt Black, Black Powder Coat — e várias duplicam um código que já existe, de modo que o mesmo acabamento é contado duas vezes. Aparecem ao mesmo tempo Matt Black e Matte Black, que é um acabamento com duas grafias.",
+    "Vinte e três das 94 são códigos limpos do tipo listado acima. Cinquenta e três estão escritas como nomes (Antique Brass, Matt Black, Black Powder Coat) e várias duplicam um código que já existe, de modo que o mesmo acabamento é contado duas vezes. Aparecem ao mesmo tempo Matt Black e Matte Black, que é um acabamento com duas grafias.",
     "As dezoito restantes não são nem uma coisa nem outra: fragmentos como um código seguido de other finish to order, uma lista de cinco códigos separados por pontos num só campo, e pelo menos um erro de grafia. São o resíduo de um catálogo montado durante anos a partir de várias fontes, e são ditos aqui em vez de limpos em silêncio, porque o comprador que hoje lê uma página de produto os vê.",
     "A consequência prática para quem pede: cite o código e o nome juntos. Antique Brass (AB) é inequívoco de um modo que nenhuma das duas metades é sozinha, e sobrevive a ser redigitado num sistema que só aceita uma das duas."
   ]
