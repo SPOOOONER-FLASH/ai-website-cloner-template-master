@@ -7,7 +7,7 @@ import {
   featureColumnsLede,
 } from "@/data/feature-columns";
 import { cn } from "@/lib/utils";
-import { ArrowLink } from "./ArrowLink";
+import { ArrowRightIcon } from "./icons";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { localised } from "@/lib/localised";
 
@@ -57,7 +57,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
             <Link
               key={column.id}
               href={localised(column.href, locale)}
-              className="hard-shadow-card group flex w-[82%] min-w-[82%] flex-none snap-start flex-col bg-surface sm:w-auto sm:min-w-0"
+              className="hard-shadow-card short-marker-surface group flex w-[82%] min-w-[82%] flex-none snap-start flex-col bg-surface sm:w-auto sm:min-w-0"
             >
               <MediaPlaceholder
                 src={column.image.src}
@@ -82,7 +82,12 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                   </p>
                 ) : null}
                 <p className="mt-auto pt-24">
-                  <ArrowLink href={localised(column.href, locale)}>{featureColumnsCta(locale)}</ArrowLink>
+                  {/* The entire card is one link. A second anchor here caused invalid
+                      nesting and a hydration mismatch on every homepage load. */}
+                  <span className="short-marker-group short-marker-arrow relative inline-block pl-12 text-c1 text-brand py-10 sm:py-0">
+                    <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" aria-hidden="true" />
+                    <span>{featureColumnsCta(locale)}</span>
+                  </span>
                 </p>
                 {/*
                   The take-away file, under the reading rather than above it. A form
