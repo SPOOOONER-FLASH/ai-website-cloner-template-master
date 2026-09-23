@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Master Key Hierarchy Planning 2026: Levels and Capacity | Canton Hyland",
   "seoDescription": "How to plan a master key hierarchy: the levels explained, why cross-keying consumes capacity, expansion allowance, construction keying, and what to decide before cutting.",
@@ -77,15 +77,15 @@
     "en": [
       {
         "question": "How many master key levels does a building need?",
-        "answer": "Usually three at most. The number should follow how the organisation actually delegates authority, not how the floor plan is drawn. A two-storey office with one facilities manager needs a master and differs, not a grand master — extra levels cost capacity and money and create keys somebody has to track."
+        "answer": "Usually three at most. The number should follow how the organisation actually delegates authority, not how the floor plan is drawn. A two-storey office with one facilities manager needs a master and differs, not a grand master, extra levels cost capacity and money and create keys somebody has to track."
       },
       {
         "question": "Why does a master key system run out of capacity?",
-        "answer": "Because mastering is subtractive. A keyway has a finite pool of usable differs, and giving a cylinder extra shear points so a master key also works removes other bittings from that pool — they would now open the cylinder by accident. Every level and every cross-key shrinks what is left."
+        "answer": "Because mastering is subtractive. A keyway has a finite pool of usable differs, and giving a cylinder extra shear points so a master key also works removes other bittings from that pool, they would now open the cylinder by accident. Every level and every cross-key shrinks what is left."
       },
       {
         "question": "What is cross-keying and why is it discouraged?",
-        "answer": "A cylinder operated by keys from more than one branch of the hierarchy, such as a meeting room both the sales and marketing masters open. Each one adds shear points and consumes disproportionately from the pool, so a system with cross-keying sprinkled through it exhausts long before its nominal capacity — and can be opened by more keys than intended."
+        "answer": "A cylinder operated by keys from more than one branch of the hierarchy, such as a meeting room both the sales and marketing masters open. Each one adds shear points and consumes disproportionately from the pool, so a system with cross-keying sprinkled through it exhausts long before its nominal capacity, and can be opened by more keys than intended."
       },
       {
         "question": "Can expansion capacity be added to an existing system?",

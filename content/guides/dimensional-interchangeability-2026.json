@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Lock Interchangeability 2026: The Seven Dimensions That Decide | Canton Hyland",
   "seoDescription": "Which dimensions must match for a lock to be a drop-in replacement, why backset alone is not enough, and what to send a factory to get a true interchangeable part.",
@@ -78,15 +78,15 @@
       },
       {
         "question": "If the backset matches, will the lock fit?",
-        "answer": "Not necessarily. The backset locates only the spindle relative to the door edge. The centre distance locates the cylinder relative to the spindle, and two locks can share a 60mm backset with different centre distances — which puts the cylinder hole in the wrong place on a door already prepped for the other."
+        "answer": "Not necessarily. The backset locates only the spindle relative to the door edge. The centre distance locates the cylinder relative to the spindle, and two locks can share a 60mm backset with different centre distances, which puts the cylinder hole in the wrong place on a door already prepped for the other."
       },
       {
         "question": "Why does the forend matter if the lock works?",
-        "answer": "Because it decides whether the installation looks planned. A replacement with a shorter forend leaves the old mortise visible above and below the new faceplate, on every door, at eye level. The corner radius matters too — a routed mortise has radiused corners and a chiselled one square, and a mismatch shows as four crescents or four squares."
+        "answer": "Because it decides whether the installation looks planned. A replacement with a shorter forend leaves the old mortise visible above and below the new faceplate, on every door, at eye level. The corner radius matters too, a routed mortise has radiused corners and a chiselled one square, and a mismatch shows as four crescents or four squares."
       },
       {
         "question": "How many of your locks publish these dimensions?",
-        "answer": "Of 258 lock products: backset 106 (41%), door thickness 77 (30%), centre distance 29 (11%), forend 6 (2%), case size 0. The two dimensions that cause the most expensive failures are the two we publish least. A missing dimension can be measured on request — it is missing because nobody has measured that model yet, not because it is withheld."
+        "answer": "Of 258 lock products: backset 106 (41%), door thickness 77 (30%), centre distance 29 (11%), forend 6 (2%), case size 0. The two dimensions that cause the most expensive failures are the two we publish least. A missing dimension can be measured on request, it is missing because nobody has measured that model yet, not because it is withheld."
       },
       {
         "question": "What should I send to get a drop-in replacement?",
@@ -94,7 +94,7 @@
       },
       {
         "question": "Is copying the existing lock always the right approach?",
-        "answer": "No. On a door that has been rehung, re-skinned or refinished, the installed lock is often a part somebody made fit — copying it copies the compromise into every future order. Measure the door preparation rather than the lock in it. And on a fire door, dimensional matching does not answer the certificate question."
+        "answer": "No. On a door that has been rehung, re-skinned or refinished, the installed lock is often a part somebody made fit, copying it copies the compromise into every future order. Measure the door preparation rather than the lock in it. And on a fire door, dimensional matching does not answer the certificate question."
       }
     ],
     "es": [
@@ -130,7 +130,7 @@
       },
       {
         "question": "Se a distância ao eixo coincide, a fechadura encaixa?",
-        "answer": "Não necessariamente. A distância ao eixo situa apenas o quadrado em relação ao topo. A distância entre centros situa o cilindro em relação ao quadrado, e duas fechaduras podem partilhar 60 mm de distância ao eixo com distâncias entre centros diferentes — o que deixa o furo do cilindro no sítio errado numa porta já preparada para a outra."
+        "answer": "Não necessariamente. A distância ao eixo situa apenas o quadrado em relação ao topo. A distância entre centros situa o cilindro em relação ao quadrado, e duas fechaduras podem partilhar 60 mm de distância ao eixo com distâncias entre centros diferentes, o que deixa o furo do cilindro no sítio errado numa porta já preparada para a outra."
       },
       {
         "question": "Por que a testa importa se a fechadura funciona?",

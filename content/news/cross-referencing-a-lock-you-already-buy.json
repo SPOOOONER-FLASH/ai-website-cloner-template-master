@@ -48,7 +48,7 @@
   "heroImage": {
     "src": "/images/editorial/hyde-real-lock-plate.webp",
     "ratio": "3 / 2",
-    "label": "A lock case photographed with its faceplate visible — the dimensions on this face are what decide whether a substitution fits a door that is already cut.",
+    "label": "A lock case photographed with its faceplate visible, the dimensions on this face are what decide whether a substitution fits a door that is already cut.",
     "labelEs": "Una caja de cerradura fotografiada con el frente a la vista —las cotas de esta cara son las que deciden si una sustitución encaja en una puerta ya mecanizada."
   },
   "relatedModels": [
@@ -80,15 +80,15 @@
       },
       {
         "question": "Which dimensions have to match on a mortise lock?",
-        "answer": "Six. Backset, from the face of the door to the centre of the spindle; centre distance, between the spindle and the cylinder or keyhole; faceplate length and width; case height and depth; spindle size, almost always 8mm (5/16\") square but worth confirming; and door thickness range. Miss the centre distance and the handle and the cylinder will not both line up with the holes already cut in the door — and the door is the thing you cannot change."
+        "answer": "Six. Backset, from the face of the door to the centre of the spindle; centre distance, between the spindle and the cylinder or keyhole; faceplate length and width; case height and depth; spindle size, almost always 8mm (5/16\") square but worth confirming; and door thickness range. Miss the centre distance and the handle and the cylinder will not both line up with the holes already cut in the door, and the door is the thing you cannot change."
       },
       {
         "question": "What should be ignored when cross-referencing?",
-        "answer": "The model number itself, the finish name and the grade designation. Finish naming is not standardised between factories — one supplier's satin nickel is another's brushed nickel is another's SN — so match a finish against a sample rather than a word. Grade designations are standard-specific: an ANSI grade and an EN classification measure different things under different tests, and neither translates into the other by arithmetic."
+        "answer": "The model number itself, the finish name and the grade designation. Finish naming is not standardised between factories (one supplier's satin nickel is another's brushed nickel is another's SN) so match a finish against a sample rather than a word. Grade designations are standard-specific: an ANSI grade and an EN classification measure different things under different tests, and neither translates into the other by arithmetic."
       },
       {
         "question": "What most often makes a replacement fail on a retrofit?",
-        "answer": "Not the lock body — the strike plate cutout, which was made for the old part and will not be remade. In a retrofit the frame is the constraint rather than the door, so check the strike and the keep before you order the lock. On a rim lock the same applies to the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them."
+        "answer": "Not the lock body, the strike plate cutout, which was made for the old part and will not be remade. In a retrofit the frame is the constraint rather than the door, so check the strike and the keep before you order the lock. On a rim lock the same applies to the strike type, because a rim strike and a rim deadbolt keeper are different castings and the frame is already prepared for one of them."
       },
       {
         "question": "How do I measure a mortise lock for a replacement?",
@@ -106,15 +106,15 @@
       },
       {
         "question": "Quais dimensões têm de bater numa fechadura de embutir?",
-        "answer": "Seis. Distância ao eixo, da face da porta até o centro do quadrado; distância entre centros, entre o quadrado e o cilindro ou a fechadura; comprimento e largura da testa; altura e profundidade da caixa; tamanho do quadrado, quase sempre 8 mm mas vale confirmar; e faixa de espessura de porta. Erre a distância entre centros e a maçaneta e o cilindro não vão os dois coincidir com os furos já feitos na porta — e a porta é a coisa que você não pode trocar."
+        "answer": "Seis. Distância ao eixo, da face da porta até o centro do quadrado; distância entre centros, entre o quadrado e o cilindro ou a fechadura; comprimento e largura da testa; altura e profundidade da caixa; tamanho do quadrado, quase sempre 8 mm mas vale confirmar; e faixa de espessura de porta. Erre a distância entre centros e a maçaneta e o cilindro não vão os dois coincidir com os furos já feitos na porta, e a porta é a coisa que você não pode trocar."
       },
       {
         "question": "O que deve ser ignorado ao buscar equivalência?",
-        "answer": "O próprio código de modelo, o nome do acabamento e a designação de grau. A nomenclatura de acabamento não é padronizada entre fábricas — o níquel acetinado de um fornecedor é o níquel escovado de outro e o SN de um terceiro — então compare acabamento contra uma amostra e não contra uma palavra. Designações de grau são específicas de cada norma: um grau ANSI e uma classificação EN medem coisas diferentes sob ensaios diferentes, e nenhum se traduz no outro por aritmética."
+        "answer": "O próprio código de modelo, o nome do acabamento e a designação de grau. A nomenclatura de acabamento não é padronizada entre fábricas (o níquel acetinado de um fornecedor é o níquel escovado de outro e o SN de um terceiro) então compare acabamento contra uma amostra e não contra uma palavra. Designações de grau são específicas de cada norma: um grau ANSI e uma classificação EN medem coisas diferentes sob ensaios diferentes, e nenhum se traduz no outro por aritmética."
       },
       {
         "question": "O que mais faz uma substituição falhar numa reforma?",
-        "answer": "Não o corpo da fechadura — o recorte do contra-testa, que foi feito para a peça antiga e não será refeito. Numa reforma o marco é a restrição e não a porta, então confira o contra-testa e o receptor antes de pedir a fechadura. Numa fechadura de sobrepor o mesmo vale para o tipo de contra-testa, porque um contra-testa de sobrepor e um receptor de trava de sobrepor são peças fundidas diferentes e o marco já está preparado para uma delas."
+        "answer": "Não o corpo da fechadura, o recorte do contra-testa, que foi feito para a peça antiga e não será refeito. Numa reforma o marco é a restrição e não a porta, então confira o contra-testa e o receptor antes de pedir a fechadura. Numa fechadura de sobrepor o mesmo vale para o tipo de contra-testa, porque um contra-testa de sobrepor e um receptor de trava de sobrepor são peças fundidas diferentes e o marco já está preparado para uma delas."
       }
     ],
     "es": [
@@ -124,15 +124,15 @@
       },
       {
         "question": "¿Qué dimensiones tienen que coincidir en una cerradura de embutir?",
-        "answer": "Seis. Distancia al eje, de la cara de la puerta al centro del cuadradillo; distancia entre ejes, entre el cuadradillo y el cilindro o la llave; largo y ancho del frente; alto y fondo de la caja; medida del cuadradillo, casi siempre 8 mm pero conviene confirmarlo; y rango de espesor de puerta. Falle la distancia entre ejes y la manija y el cilindro no coincidirán los dos con los taladros ya hechos en la puerta — y la puerta es lo que no se puede cambiar."
+        "answer": "Seis. Distancia al eje, de la cara de la puerta al centro del cuadradillo; distancia entre ejes, entre el cuadradillo y el cilindro o la llave; largo y ancho del frente; alto y fondo de la caja; medida del cuadradillo, casi siempre 8 mm pero conviene confirmarlo; y rango de espesor de puerta. Falle la distancia entre ejes y la manija y el cilindro no coincidirán los dos con los taladros ya hechos en la puerta, y la puerta es lo que no se puede cambiar."
       },
       {
         "question": "¿Qué hay que ignorar al buscar una equivalencia?",
-        "answer": "El propio código de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas — el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero — así que compare acabado contra una muestra y no contra una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas bajo ensayos distintos, y ninguno se traduce al otro por aritmética."
+        "answer": "El propio código de modelo, el nombre del acabado y la designación de grado. La nomenclatura de acabados no está normalizada entre fábricas (el níquel satinado de un proveedor es el níquel cepillado de otro y el SN de un tercero) así que compare acabado contra una muestra y no contra una palabra. Las designaciones de grado son propias de cada norma: un grado ANSI y una clasificación EN miden cosas distintas bajo ensayos distintos, y ninguno se traduce al otro por aritmética."
       },
       {
         "question": "¿Qué hace fallar más a menudo una sustitución en una reforma?",
-        "answer": "No el cuerpo de la cerradura — el recorte del cerradero, que se hizo para la pieza antigua y no se va a rehacer. En una reforma la restricción es el marco y no la puerta, así que compruebe el cerradero antes de pedir la cerradura. En una cerradura de sobreponer pasa lo mismo con el tipo de cerradero, porque un cerradero de sobreponer y un receptor de condena son piezas fundidas distintas y el marco ya está preparado para una de ellas."
+        "answer": "No el cuerpo de la cerradura, el recorte del cerradero, que se hizo para la pieza antigua y no se va a rehacer. En una reforma la restricción es el marco y no la puerta, así que compruebe el cerradero antes de pedir la cerradura. En una cerradura de sobreponer pasa lo mismo con el tipo de cerradero, porque un cerradero de sobreponer y un receptor de condena son piezas fundidas distintas y el marco ya está preparado para una de ellas."
       }
     ]
   },

@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Brass Hardware 2026: Alloys, Lead, and Dezincification (DZR) | Canton Hyland",
   "seoDescription": "Which brass alloys door hardware uses, why lead is added, what dezincification is and when DZR brass is required, brass versus bronze, and what to specify.",
@@ -86,15 +86,15 @@
       },
       {
         "question": "Why is there lead in brass hardware?",
-        "answer": "Because it is what makes the alloy machine. Lead forms small discrete particles that break the chip, letting a lathe cut cleanly at speed and leaving the smooth surface plating needs. Remove it and you get stringy chips, more tool wear and slower cycles — which is why low-lead brass costs more in machining rather than in material."
+        "answer": "Because it is what makes the alloy machine. Lead forms small discrete particles that break the chip, letting a lathe cut cleanly at speed and leaving the smooth surface plating needs. Remove it and you get stringy chips, more tool wear and slower cycles, which is why low-lead brass costs more in machining rather than in material."
       },
       {
         "question": "What is dezincification and when does it matter?",
-        "answer": "Zinc being selectively leached out of brass by sustained moisture, especially warm, chloride-bearing or slightly acidic water. What remains is porous copper that keeps the shape and loses the strength, so the part looks right until it fails suddenly. It matters on coastal sites, pools, water contact, poorly ventilated wet rooms and embedded components — where DZR brass is required."
+        "answer": "Zinc being selectively leached out of brass by sustained moisture, especially warm, chloride-bearing or slightly acidic water. What remains is porous copper that keeps the shape and loses the strength, so the part looks right until it fails suddenly. It matters on coastal sites, pools, water contact, poorly ventilated wet rooms and embedded components, where DZR brass is required."
       },
       {
         "question": "Is bronze hardware the same as bronze-coloured hardware?",
-        "answer": "No, and the confusion is expensive. Bronze is copper and tin. \"Antique bronze\", \"oil-rubbed bronze\" and \"dark bronze\" are almost always finishes — a coating or patina over brass, zinc alloy or steel. Specifying bronze for what the alloy would do and receiving a bronze-coloured coating is the error; write a finish code, not a colour name."
+        "answer": "No, and the confusion is expensive. Bronze is copper and tin. \"Antique bronze\", \"oil-rubbed bronze\" and \"dark bronze\" are almost always finishes, a coating or patina over brass, zinc alloy or steel. Specifying bronze for what the alloy would do and receiving a bronze-coloured coating is the error; write a finish code, not a colour name."
       },
       {
         "question": "Should brass be lacquered?",
@@ -102,7 +102,7 @@
       },
       {
         "question": "Do your product pages name the brass alloy?",
-        "answer": "No. Brass appears on 57 of 564 material rows (10%), and those rows say \"Brass\" or \"Solid Brass\" without naming CZ121, C36000 or any designation, and without saying whether the alloy is DZR. Ask per order and get it in writing — and if the answer is unavailable, treat the part as non-DZR rather than assuming."
+        "answer": "No. Brass appears on 57 of 564 material rows (10%), and those rows say \"Brass\" or \"Solid Brass\" without naming CZ121, C36000 or any designation, and without saying whether the alloy is DZR. Ask per order and get it in writing, and if the answer is unavailable, treat the part as non-DZR rather than assuming."
       }
     ],
     "es": [

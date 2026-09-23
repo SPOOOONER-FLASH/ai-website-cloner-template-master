@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Door Hardware Specification 08 71 00 (2026): How to Write It | Canton Hyland",
   "seoDescription": "How a door hardware specification section is structured, what belongs in Parts 1, 2 and 3, how to write a hardware set a factory can quote, and the four clauses that decide price.",
@@ -75,11 +75,11 @@
     "en": [
       {
         "question": "What goes in Part 1, Part 2 and Part 3 of a hardware specification?",
-        "answer": "Part 1 is obligations — references, submittals, warranty, the keying process. Part 2 is the things themselves, by type and performance, including the hardware sets. Part 3 is what happens on site: installation, mounting heights, adjustment sequencing and handover. A sentence in the wrong part is either ignored or priced twice."
+        "answer": "Part 1 is obligations, references, submittals, warranty, the keying process. Part 2 is the things themselves, by type and performance, including the hardware sets. Part 3 is what happens on site: installation, mounting heights, adjustment sequencing and handover. A sentence in the wrong part is either ignored or priced twice."
       },
       {
         "question": "Which clauses actually decide the price?",
-        "answer": "Four, and they all look procedural. The substitution procedure, the keying clause, when test evidence is required — at tender or at submittal — and the warranty terms. \"Manufacturer's standard warranty\" is not a term; it is a promise to accept whatever that standard turns out to be."
+        "answer": "Four, and they all look procedural. The substitution procedure, the keying clause, when test evidence is required (at tender or at submittal) and the warranty terms. \"Manufacturer's standard warranty\" is not a term; it is a promise to accept whatever that standard turns out to be."
       },
       {
         "question": "How should a hardware set be written?",
@@ -95,7 +95,7 @@
       },
       {
         "question": "What do you need to quote a specification without asking questions?",
-        "answer": "The hardware sets with finish code, function, handing and thickness per line; the opening schedule mapping sets to doors; the fire-rated openings marked as such; and the door types and thicknesses — because a lock suiting a 45mm timber leaf may not suit a 45mm hollow metal one."
+        "answer": "The hardware sets with finish code, function, handing and thickness per line; the opening schedule mapping sets to doors; the fire-rated openings marked as such; and the door types and thicknesses, because a lock suiting a 45mm timber leaf may not suit a 45mm hollow metal one."
       }
     ],
     "es": [
@@ -131,7 +131,7 @@
       },
       {
         "question": "Que cláusulas realmente decidem o preço?",
-        "answer": "Quatro, e as quatro parecem de trâmite. O procedimento de substituição, a cláusula de chaveamento, quando a evidência de ensaio é exigida — na licitação ou no submittal — e os termos de garantia. «Garantia padrão do fabricante» não é um termo: é uma promessa de aceitar o que esse padrão vier a ser."
+        "answer": "Quatro, e as quatro parecem de trâmite. O procedimento de substituição, a cláusula de chaveamento, quando a evidência de ensaio é exigida (na licitação ou no submittal) e os termos de garantia. «Garantia padrão do fabricante» não é um termo: é uma promessa de aceitar o que esse padrão vier a ser."
       },
       {
         "question": "Como deve ser escrito um jogo de ferragens?",
@@ -147,7 +147,7 @@
       },
       {
         "question": "O que precisam para cotar uma especificação sem fazer perguntas?",
-        "answer": "Os jogos de ferragens com código de acabamento, função, mão e espessura por linha; o mapa que relaciona jogos a portas; os vãos corta-fogo marcados como tais; e os tipos e espessuras de porta — porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm."
+        "answer": "Os jogos de ferragens com código de acabamento, função, mão e espessura por linha; o mapa que relaciona jogos a portas; os vãos corta-fogo marcados como tais; e os tipos e espessuras de porta, porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm."
       }
     ]
   },

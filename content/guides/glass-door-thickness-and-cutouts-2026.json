@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Glass Door Hardware 2026: Thickness, Cut-Outs, Sequence | Canton Hyland",
   "seoDescription": "Glass door hardware thickness ranges from 8mm to 14mm, the glass gap dimension, cut-out corner radius, and why every hole must be cut before the glass is toughened.",
@@ -64,7 +64,7 @@
     "en": [
       {
         "question": "Can toughened glass be drilled after toughening?",
-        "answer": "No. Toughening locks the surfaces into compression and the core into tension, and cutting or drilling releases that balance — the pane disintegrates completely and immediately. Every hole, notch and cut-out has to exist before the glass goes into the furnace. After toughening the pane is finished."
+        "answer": "No. Toughening locks the surfaces into compression and the core into tension, and cutting or drilling releases that balance, the pane disintegrates completely and immediately. Every hole, notch and cut-out has to exist before the glass goes into the furnace. After toughening the pane is finished."
       },
       {
         "question": "What glass thicknesses do your fittings accept?",
@@ -72,19 +72,19 @@
       },
       {
         "question": "What is the glass gap dimension?",
-        "answer": "The clear opening between the clamping faces before the gasket goes in — 7mm and 7.5mm across our catalogue. Read it alongside the thickness range: a 7.5mm gap taking 8mm glass is compressing a gasket as intended, while a gap larger than the glass plus its gaskets has nothing to grip."
+        "answer": "The clear opening between the clamping faces before the gasket goes in, 7mm and 7.5mm across our catalogue. Read it alongside the thickness range: a 7.5mm gap taking 8mm glass is compressing a gasket as intended, while a gap larger than the glass plus its gaskets has nothing to grip."
       },
       {
         "question": "Why do glass cut-outs have a corner radius?",
-        "answer": "Because a rotating tool cannot produce a sharp internal corner, and a sharp internal corner in glass would be a stress concentration where a crack starts. The radius has to be specified — R6 means a 6mm radius. A processor given no radius will use their own standard, which may not match the fitting."
+        "answer": "Because a rotating tool cannot produce a sharp internal corner, and a sharp internal corner in glass would be a stress concentration where a crack starts. The radius has to be specified, R6 means a 6mm radius. A processor given no radius will use their own standard, which may not match the fitting."
       },
       {
         "question": "Does laminated glass change the hardware selection?",
-        "answer": "Yes. A laminated pane includes an interlayer, so the fitting has to accept the actual assembled thickness rather than the glass alone. State the full build-up on the order — for example 5+5 with a 1.5mm interlayer — rather than a nominal figure, because the fitting grips what is physically there."
+        "answer": "Yes. A laminated pane includes an interlayer, so the fitting has to accept the actual assembled thickness rather than the glass alone. State the full build-up on the order (for example 5+5 with a 1.5mm interlayer) rather than a nominal figure, because the fitting grips what is physically there."
       },
       {
         "question": "What order should I do things in?",
-        "answer": "Select the hardware, obtain its drawings or templates, give those to the glass processor, have them produce a shop drawing, check it against the hardware drawings, approve it in writing, then cut and toughen. The common sequence — order glass, choose hardware, discover the cut-outs are wrong — costs the price of the glass."
+        "answer": "Select the hardware, obtain its drawings or templates, give those to the glass processor, have them produce a shop drawing, check it against the hardware drawings, approve it in writing, then cut and toughen. The common sequence (order glass, choose hardware, discover the cut-outs are wrong) costs the price of the glass."
       }
     ],
     "es": [
@@ -132,11 +132,11 @@
       },
       {
         "question": "O vidro laminado muda a seleção de ferragem?",
-        "answer": "Sim. Uma folha laminada leva um intercalar, então a ferragem tem de aceitar a espessura real do conjunto e não só a do vidro. Indique a composição completa no pedido — por exemplo 5+5 com intercalar de 1,5 mm — em vez de uma cifra nominal, porque a ferragem agarra o que fisicamente está lá."
+        "answer": "Sim. Uma folha laminada leva um intercalar, então a ferragem tem de aceitar a espessura real do conjunto e não só a do vidro. Indique a composição completa no pedido (por exemplo 5+5 com intercalar de 1,5 mm) em vez de uma cifra nominal, porque a ferragem agarra o que fisicamente está lá."
       },
       {
         "question": "Em que ordem devo fazer as coisas?",
-        "answer": "Escolha a ferragem, obtenha os seus desenhos ou gabaritos, entregue-os ao transformador de vidro, peça-lhe um desenho de oficina, confronte-o com os desenhos de ferragem, aprove-o por escrito, e só então corte e têmpere. A sequência habitual — pedir o vidro, escolher a ferragem, descobrir que os recortes estão errados — custa o preço do vidro."
+        "answer": "Escolha a ferragem, obtenha os seus desenhos ou gabaritos, entregue-os ao transformador de vidro, peça-lhe um desenho de oficina, confronte-o com os desenhos de ferragem, aprove-o por escrito, e só então corte e têmpere. A sequência habitual (pedir o vidro, escolher a ferragem, descobrir que os recortes estão errados) custa o preço do vidro."
       }
     ]
   },

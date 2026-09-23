@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Samples and Incoming Inspection 2026: The Golden Sample | Canton Hyland",
   "seoDescription": "How to use hardware samples properly: the three sample types, the golden sample procedure, what to measure on arrival, and the three things a sample cannot demonstrate.",
@@ -71,7 +71,7 @@
       },
       {
         "question": "What kind of sample should I ask for?",
-        "answer": "A stock sample if you are evaluating a supplier. A pre-production sample if anything differs from the catalogue — a finish, a backset, a spindle length, a printed box — because it proves the specification was understood. A production sample drawn from the actual run is what an inspection is carried out against."
+        "answer": "A stock sample if you are evaluating a supplier. A pre-production sample if anything differs from the catalogue (a finish, a backset, a spindle length, a printed box) because it proves the specification was understood. A production sample drawn from the actual run is what an inspection is carried out against."
       },
       {
         "question": "When should I take a sample?",
@@ -79,11 +79,11 @@
       },
       {
         "question": "What can a sample not tell me?",
-        "answer": "Three things. Batch consistency — one sample shows what the factory can make, not what it will make across five thousand pieces. Corrosion resistance — you cannot see 240 hours of salt spray. And cycle life — a lock that turns sweetly at ten cycles says nothing about two hundred thousand. All three need tests, not impressions."
+        "answer": "Three things. Batch consistency, one sample shows what the factory can make, not what it will make across five thousand pieces. Corrosion resistance, you cannot see 240 hours of salt spray. And cycle life, a lock that turns sweetly at ten cycles says nothing about two hundred thousand. All three need tests, not impressions."
       },
       {
         "question": "What should I measure on a lock sample?",
-        "answer": "Backset, centre distance between spindle and cylinder, forend length and width, case dimensions, spindle square and the door thickness range — against the drawing rather than your memory of it, recording the readings rather than only pass or fail. Check the finish against a physical reference, not a code or a photograph."
+        "answer": "Backset, centre distance between spindle and cylinder, forend length and width, case dimensions, spindle square and the door thickness range, against the drawing rather than your memory of it, recording the readings rather than only pass or fail. Check the finish against a physical reference, not a code or a photograph."
       },
       {
         "question": "How do I write an inspection instruction a third party can use?",
@@ -123,7 +123,7 @@
       },
       {
         "question": "Que tipo de amostra devo pedir?",
-        "answer": "Uma amostra de estoque se está avaliando um fornecedor. Uma amostra de pré-série se algo difere do catálogo — um acabamento, uma distância ao eixo, um comprimento de quadrado, uma caixa impressa —, porque prova que a especificação foi entendida. Uma amostra de produção tirada da série real é contra o que uma inspeção é feita."
+        "answer": "Uma amostra de estoque se está avaliando um fornecedor. Uma amostra de pré-série se algo difere do catálogo, um acabamento, uma distância ao eixo, um comprimento de quadrado, uma caixa impressa —, porque prova que a especificação foi entendida. Uma amostra de produção tirada da série real é contra o que uma inspeção é feita."
       },
       {
         "question": "Quando devo tirar uma amostra?",

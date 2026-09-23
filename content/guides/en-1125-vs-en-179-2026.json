@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "EN 1125 vs EN 179 (2026): Panic or Emergency Exit Hardware | Canton Hyland",
   "seoDescription": "How to choose between EN 1125 panic exit devices and EN 179 emergency exit devices, the occupancy test that decides it, the classification digits, and three compliance mistakes.",
@@ -78,7 +78,7 @@
     "en": [
       {
         "question": "What is the difference between EN 1125 and EN 179?",
-        "answer": "EN 1125 covers panic exit devices — horizontal or touch bars — for people who may be unfamiliar with the building and where panic is foreseeable. EN 179 covers emergency exit devices operated by a lever or push pad, for people who are familiar with the building and the exit. The choice is about the people, not the importance of the door."
+        "answer": "EN 1125 covers panic exit devices (horizontal or touch bars) for people who may be unfamiliar with the building and where panic is foreseeable. EN 179 covers emergency exit devices operated by a lever or push pad, for people who are familiar with the building and the exit. The choice is about the people, not the importance of the door."
       },
       {
         "question": "How do I decide which standard applies?",
@@ -90,15 +90,15 @@
       },
       {
         "question": "What makes an escape opening non-compliant after it is built?",
-        "answer": "Most often something added to the inside face — a secondary bolt, a padlock hasp, a chain, a keyed override — fitted later by somebody solving a security problem. Each adds an action between a person and the outside, and both standards exist to guarantee exactly one action. Write it into the handover documents."
+        "answer": "Most often something added to the inside face (a secondary bolt, a padlock hasp, a chain, a keyed override) fitted later by somebody solving a security problem. Each adds an action between a person and the outside, and both standards exist to guarantee exactly one action. Write it into the handover documents."
       },
       {
         "question": "Can flush bolts secure the inactive leaf of an escape pair?",
-        "answer": "Only if the active leaf alone gives the required clear width. If the inactive leaf must open, it needs its own device — a bolt requires a second action, which is the thing both standards are built to remove. A pair also needs a coordinator so the leaves close in the right order."
+        "answer": "Only if the active leaf alone gives the required clear width. If the inactive leaf must open, it needs its own device, a bolt requires a second action, which is the thing both standards are built to remove. A pair also needs a coordinator so the leaves close in the right order."
       },
       {
         "question": "Do your exit devices hold EN 1125 or EN 179?",
-        "answer": "Our 307 and 311 are in testing. Until certificate numbers exist, nothing we publish will imply they hold EN 1125, EN 179, a fire rating, an ANSI grade or a UL listing. On a project requiring certification today, ask and we will say plainly whether we can meet it — on several models the answer is currently no."
+        "answer": "Our 307 and 311 are in testing. Until certificate numbers exist, nothing we publish will imply they hold EN 1125, EN 179, a fire rating, an ANSI grade or a UL listing. On a project requiring certification today, ask and we will say plainly whether we can meet it, on several models the answer is currently no."
       }
     ],
     "es": [
@@ -130,7 +130,7 @@
     "pt": [
       {
         "question": "Qual é a diferença entre a EN 1125 e a EN 179?",
-        "answer": "A EN 1125 cobre dispositivos antipânico — barras horizontais ou de toque — para pessoas que podem não conhecer o edifício e onde o pânico é previsível. A EN 179 cobre dispositivos de emergência acionados por maçaneta ou botoneira, para pessoas que conhecem o edifício e a saída. A escolha é sobre as pessoas, não sobre a importância da porta."
+        "answer": "A EN 1125 cobre dispositivos antipânico (barras horizontais ou de toque) para pessoas que podem não conhecer o edifício e onde o pânico é previsível. A EN 179 cobre dispositivos de emergência acionados por maçaneta ou botoneira, para pessoas que conhecem o edifício e a saída. A escolha é sobre as pessoas, não sobre a importância da porta."
       },
       {
         "question": "Como decido que norma se aplica?",

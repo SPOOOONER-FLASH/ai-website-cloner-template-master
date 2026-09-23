@@ -16,9 +16,9 @@
   "heroImage": {
     "src": "/images/editorial/guides-reference-desk-1600.webp",
     "ratio": "16 / 10",
-    "label": "Reference desk — an empty drawing surface; this article's figures are in the tables below",
-    "labelEs": "Mesa de consulta — una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
-    "labelPt": "Mesa de consulta — uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
+    "label": "Reference desk, an empty drawing surface; this article's figures are in the tables below",
+    "labelEs": "Mesa de consulta, una superficie de dibujo vacía; las cifras de este artículo están en las tablas",
+    "labelPt": "Mesa de consulta, uma superfície de desenho vazia; os números deste artigo estão nas tabelas"
   },
   "seoTitle": "Door Thickness to Cylinder Length 2026: Lookup Table | Canton Hyland",
   "seoDescription": "How to calculate euro cylinder length from door thickness, a worked lookup table against nine published lengths, and why thin doors still get a protruding cylinder.",
@@ -79,23 +79,23 @@
       },
       {
         "question": "What cylinder does a 40mm door need?",
-        "answer": "With a 4mm escutcheon each side and a centred case, each half calculates to 24mm — below the 27.5mm minimum the profile allows. So it rounds up to 27.5/27.5, a 55mm arithmetic total, and from our published range that is a 56mm cylinder. The cylinder will protrude slightly, which a raised escutcheon takes up."
+        "answer": "With a 4mm escutcheon each side and a centred case, each half calculates to 24mm, below the 27.5mm minimum the profile allows. So it rounds up to 27.5/27.5, a 55mm arithmetic total, and from our published range that is a 56mm cylinder. The cylinder will protrude slightly, which a raised escutcheon takes up."
       },
       {
         "question": "Why does a thin door still get a protruding cylinder?",
-        "answer": "Because 27.5mm is the smallest half the euro profile allows and there is no shorter cylinder to order. On doors below about 45mm the question is how to handle the protrusion, not how to avoid it — a raised escutcheon or security rose is the better answer, and the working limit is that a cylinder should never stand more than about 3mm proud."
+        "answer": "Because 27.5mm is the smallest half the euro profile allows and there is no shorter cylinder to order. On doors below about 45mm the question is how to handle the protrusion, not how to avoid it, a raised escutcheon or security rose is the better answer, and the working limit is that a cylinder should never stand more than about 3mm proud."
       },
       {
         "question": "When are the two halves different?",
-        "answer": "Whenever the cylinder hole is not at the middle of the leaf thickness — a lock designed to sit closer to one face, a door with an applied panel on one side, a rebated pair. Measure each half separately from the fixing screw centre and round each up on its own. That is why a euro cylinder is specified as two numbers rather than one."
+        "answer": "Whenever the cylinder hole is not at the middle of the leaf thickness, a lock designed to sit closer to one face, a door with an applied panel on one side, a rebated pair. Measure each half separately from the fixing screw centre and round each up on its own. That is why a euro cylinder is specified as two numbers rather than one."
       },
       {
         "question": "Is a 30/40 the same as a 40/30?",
-        "answer": "Same overall length, not interchangeable. On the 30/40 the short half faces out. State which half is which when ordering — \"70mm, 30 outside / 40 inside\" cannot be misread, while \"70mm 30/40\" relies on both parties using the same convention."
+        "answer": "Same overall length, not interchangeable. On the 30/40 the short half faces out. State which half is which when ordering, \"70mm, 30 outside / 40 inside\" cannot be misread, while \"70mm 30/40\" relies on both parties using the same convention."
       },
       {
         "question": "Do your product pages give the split?",
-        "answer": "No. We publish 45 cylinder models across nine overall lengths — 45, 47, 54, 56, 60, 65, 70, 80 and 90mm — with the length carried in the model number. Across all 45 records, the number stating an inside and outside half is zero. Ask for the split per order and get it in writing rather than assuming an even division."
+        "answer": "No. We publish 45 cylinder models across nine overall lengths (45, 47, 54, 56, 60, 65, 70, 80 and 90mm) with the length carried in the model number. Across all 45 records, the number stating an inside and outside half is zero. Ask for the split per order and get it in writing rather than assuming an even division."
       }
     ],
     "es": [
@@ -147,7 +147,7 @@
       },
       {
         "question": "As vossas páginas dão a repartição?",
-        "answer": "Não. Publicamos 45 modelos de cilindro em nove comprimentos totais — 45, 47, 54, 56, 60, 65, 70, 80 e 90 mm — com o comprimento no número de modelo. Nos 45 registros, o número de linhas que indicam metade interna e externa é zero. Peça a repartição pedido a pedido e obtenha-a por escrito em vez de supor uma divisão igual."
+        "answer": "Não. Publicamos 45 modelos de cilindro em nove comprimentos totais (45, 47, 54, 56, 60, 65, 70, 80 e 90 mm) com o comprimento no número de modelo. Nos 45 registros, o número de linhas que indicam metade interna e externa é zero. Peça a repartição pedido a pedido e obtenha-a por escrito em vez de supor uma divisão igual."
       }
     ]
   },
