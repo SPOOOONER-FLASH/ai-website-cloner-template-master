@@ -93,7 +93,7 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
     Bing's index.
   */
   /*
-    `/*/__next.` blocks the exported RSC sidecar payloads (`__next._tree.txt`,
+    The __next. disallow rule blocks the exported RSC sidecar payloads (`__next._tree.txt`,
     `__next._full.txt`, …) that sit beside every page. The blanket `/*.txt$` above
     relies on the `$` anchor, which some crawlers ignore — server logs 2026-09-23
     showed ~3,000 fetches of these files anyway. Deliberately NOT `Disallow: /_next/`:
