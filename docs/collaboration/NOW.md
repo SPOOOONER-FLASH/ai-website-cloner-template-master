@@ -12,7 +12,6 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Claude rayen zinc | content/products/a5-*,a9-*,a38-*,a39-*,a40-*,a-666*,ka29-*,ka82-9910*,ka9-9905* ; public/images/products{,-rayen,-rayen-en,-hyde}/ 这些型号 ; content/rayen/rayen-catalogue-zinc.json | 《雷茵五金》p33–p52 锌合金分体门锁 39 个型号上架 | 2026-09-23 |
 | Claude release build | out/, out-rayen/（在 tmp/claude-release-wt 干净检出里构建） | 持棒：发布 79ff38e337d（9088 SS）。**不含** Codex 未提交的 motion 改动 | 2026-09-23 |
 | Codex motion 2026-09-23 | HeroCarousel, SiteHeader, LocalePicker, SearchDialog, ProductImageZoom, GuideEditorial CSS, motion guard, SPEC_COVERAGE, four numeric guides, out/ out-rayen/ | 已批准的轮播与浮层优化；同期目录增长使覆盖报告和四篇文章数字过期，一并修复；当前持有发布构建 | 2026-09-23 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |

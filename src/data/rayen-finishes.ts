@@ -190,9 +190,10 @@ const FINISHES: Record<string, FinishEntry> = {
   */
   "brushed-chrome": {
     colors: ["#aeb6bd"],
-    zh: "铬拉丝",
+    zh: "拉丝铬",
     en: "Brushed chrome",
-    match: ["brushed chrome", "铬拉丝"],
+    /* 甲方 2026-09-23 定名「拉丝铬」（与合页那本、zh-terms.json 一致）；图册 p51 印的「铬拉丝」也认。 */
+    match: ["brushed chrome", "拉丝铬", "铬拉丝"],
   },
   /*
     《雷茵-铰链和门吸》的表面处理词汇。颜色取自图册的产品照片本身，不是猜的。
