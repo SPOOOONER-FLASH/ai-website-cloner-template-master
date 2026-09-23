@@ -49,9 +49,9 @@
 | 25 | exit-device-push-bar-length | 0 | 692 | 908 | **已做** 批9 EN 1635（ES/PT 待多语言批） |
 | 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | **已做** 批9 EN 1639（ES/PT 待多语言批） |
 | 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | **已做** 批9 EN 1620（ES/PT 待多语言批） |
-| 28 | door-hardware-schedule-guide | 0 | 659 | 941 | 待做 |
-| 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | 待做 |
-| 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | 待做 |
+| 28 | door-hardware-schedule-guide | 0 | 659 | 941 | **已做** 批10 EN 1644（ES/PT 待多语言批） |
+| 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | **已做** 批10 EN 1672（ES/PT 待多语言批） |
+| 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | **已做** 批10 EN 1658（ES/PT 待多语言批） |
 | 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | 待做 |
 | 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | 待做 |
 | 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | 待做 |
