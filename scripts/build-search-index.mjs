@@ -19,6 +19,19 @@ import { writeFileAtomic } from "./lib/write-atomic.mjs";
 
 const OUT = "public/search-index.json";
 
+/*
+  --site=hyde | --site=rayen writes only that site's index; no flag writes both.
+
+  WHY (2026-09-23, the RAYEN / HYDE wall): `npm run content` is what a HYDE session runs
+  after editing an article, and it used to rewrite public/search-index-rayen-*.json as
+  well. Those files are RAYEN-lane, so the next commit either crossed the wall (and the
+  pre-commit guard refused it) or the HYDE session had to revert RAYEN files by hand —
+  twice on 2026-09-23 alone. The prebuild hook still runs with no flag, so every release
+  build of either site regenerates both indexes exactly as before.
+*/
+const SITE = (process.argv.find((a) => a.startsWith("--site=")) ?? "").slice("--site=".length) || "both";
+if (!["hyde", "rayen", "both"].includes(SITE)) throw new Error(`--site must be hyde or rayen, got "${SITE}"`);
+
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 
 const readCollection = (dir) => {
@@ -114,7 +127,20 @@ const categories = Array.isArray(categoriesFile)
   ? categoriesFile
   : (categoriesFile.categories ?? []);
 
+/*
+  Only categories that have at least one published HYDE product. The empty-category rule
+  gives care-grab-bars and floor-springs-and-pivots no page on cantonlock.com (their
+  products are all RAYEN-only), but this loop listed every category in the shared file, so
+  two of the seventeen category results led to a 404 — the same defect as the RAYEN
+  products above, found again 2026-09-23 for categories.
+*/
+const hydeCategorySlugs = new Set(
+  allProducts
+    .filter((p) => p.heroImage?.src && onHyde(p))
+    .map((p) => [].concat(p.categoryPath ?? [])[0]),
+);
 for (const c of categories) {
+  if (!hydeCategorySlugs.has(c.slug)) continue;
   entries.push(
     entry("category", c.name, "Product category", `/products/${c.slug}/`, [
       c.name,
@@ -156,6 +182,27 @@ for (const n of readCollection("content/news")) {
   );
 }
 
+/*
+  Guides. /guides/ opened on 2026-09-21 and this script was never taught about it, so 40
+  long-form buying guides, the pages written to answer exactly what people type into a
+  search box, could not be found from the site's own search (found 2026-09-23).
+  Indexed with the "news" entry type so SearchDialog needs no change; the subtitle says
+  "Guide" so the result reads correctly.
+*/
+for (const g of readCollection("content/guides")) {
+  if (g.draft || g.publishedAt > todayIso) continue;
+  entries.push(
+    entry("news", g.title, "Guide", `/guides/${g.slug}/`, [
+      g.title,
+      g.summary,
+      // Headings only, not the whole body: full guide text grew the lazily fetched index
+      // from 633KB to 969KB. The headings carry the terms people search for.
+      ...(g.body ?? []).filter((para) => /^## |^[A-Z0-9][A-Z0-9 ,:&()/'-]{6,}$/.test(para)),
+      ...(g.relatedModels ?? []),
+    ]),
+  );
+}
+
 // ── Downloads ───────────────────────────────────────────────────────────────────
 const downloadsFile = readJson("content/downloads.json");
 const downloads = Array.isArray(downloadsFile)
@@ -191,17 +238,19 @@ for (const [title, subtitle, href, terms] of PAGES) {
 
 mkdirSync("public", { recursive: true });
 
-/* Atomic: see scripts/lib/write-atomic.mjs for why a plain write fails here. */
-writeFileAtomic(OUT, JSON.stringify(entries));
+if (SITE !== "rayen") {
+  /* Atomic: see scripts/lib/write-atomic.mjs for why a plain write fails here. */
+  writeFileAtomic(OUT, JSON.stringify(entries));
 
-const kb = Math.round(statSync(OUT).size / 1024);
-const byType = entries.reduce((acc, e) => ({ ...acc, [e.type]: (acc[e.type] ?? 0) + 1 }), {});
-console.log(
-  `search index: ${entries.length} entries, ${kb}KB — ` +
-    Object.entries(byType)
-      .map(([t, n]) => `${t} ${n}`)
-      .join(", "),
-);
+  const kb = Math.round(statSync(OUT).size / 1024);
+  const byType = entries.reduce((acc, e) => ({ ...acc, [e.type]: (acc[e.type] ?? 0) + 1 }), {});
+  console.log(
+    `search index: ${entries.length} entries, ${kb}KB — ` +
+      Object.entries(byType)
+        .map(([t, n]) => `${t} ${n}`)
+        .join(", "),
+  );
+}
 
 /* ── RAYEN 雷茵 ────────────────────────────────────────────────────────────────────
   A separate index per language, rather than one file carrying both.
@@ -236,7 +285,7 @@ const RAYEN_LOCALES = [
   { locale: "en", out: "public/search-index-rayen-en.json" },
 ];
 
-for (const { locale, out } of RAYEN_LOCALES) {
+for (const { locale, out } of SITE === "hyde" ? [] : RAYEN_LOCALES) {
   const zh = locale === "zh";
   const rayenEntries = [];
 

@@ -505,6 +505,29 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
 RAYEN renders — a shared component, a product record without `sites` — are announced in the
 agent-update so RAYEN's side can release when it chooses.
 
+**The wall has a second half: shared DATA must be read through the right site's filter.**
+The three rules above stop commits and builds colliding. They do not stop a HYDE page from
+quoting RAYEN's products, and on 2026-09-23 that happened in four places at once, none of
+which any lane rule could see:
+
+4. **Count with the site filter.** `content/products` holds both sites' records; a record
+   whose `sites` omits `"hyde"` never appears on cantonlock.com (rule: `onHydeCatalogue` in
+   `src/data/products.ts`). Five HYDE articles quoted whole-directory counts — 924 entries,
+   105 hinges, 120 lever handles — against 590, 29 and 64 on the site, and recommended RAYEN
+   door stops by model number. `src/data/article-catalogue-claims.test.ts` now fails if a HYDE
+   article names a RAYEN-only model, or if a registered count sentence stops matching a count
+   taken with the HYDE filter. **Any new count you write into HYDE prose: register it there.**
+5. **Shared text is HYDE-facing unless it says otherwise.** `content/categories.json` is read
+   by both sites, but RAYEN renders only its Chinese sub-category names; the English, Spanish
+   and Portuguese `summary` fields are what cantonlock.com prints under each category heading
+   and in llms.txt. Write them about HYDE's stock (the door-closer summary promised "concealed
+   floor-spring applications" — every floor spring is RAYEN-only).
+6. **HYDE's daily commands touch only HYDE files.** `npm run content` runs
+   `build-search-index.mjs --site=hyde`, so editing an article no longer rewrites
+   `public/search-index-rayen-*.json` (which the pre-commit wall then rejected, twice on
+   2026-09-23). The `prebuild` hook runs it with no flag and still regenerates both indexes for
+   either release. RAYEN's own equivalent is `node scripts/build-search-index.mjs --site=rayen`.
+
 ### A regenerator that has fallbacks will quietly undo work it cannot see
 
 Client instruction, 2026-09-11: write these three into the rules.

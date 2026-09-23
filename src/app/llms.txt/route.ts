@@ -157,7 +157,14 @@ function body(): string {
     "## Key facts",
     "",
     `- Manufacturer, not a trading company. Operating since 1998.`,
-    `- ${publishedProducts.length} published models across ${categories.length} categories.`,
+    /*
+      categoryLines.length, not categories.length: the category file is shared with the
+      RAYEN site and holds two families (grab bars, floor springs) that have nothing on
+      cantonlock.com. This line said "17 categories" directly above a list of 15, and a
+      file written for AI summarisers that contradicts itself in its first ten lines is a
+      file they learn to distrust (found 2026-09-23).
+    */
+    `- ${publishedProducts.length} published models across ${categoryLines.length} categories.`,
     "- Quality management certified to ISO 9001.",
     "- Test reports are published per model, not per range — see the download centre.",
     "",

@@ -196,6 +196,9 @@ git 于是认为全部文件被动过，**每次有新提交就把 16,000 个文
 robots 加 `Disallow: /*/__next.`（`7f3e1cbe8ac`，没有用会拦 CSS/JS 的 `/_next/`）；
 llms.txt 加厚成有摘要的简报（`1426b8fb4fc`）。下面是原始记录。
 
+**09-23 Claude 复查留一个尾巴**：`/*/__next.` 拦不住根目录的 `/__next._tree.txt`（首页那层），
+需在 `seo-policy.ts` 加 `/__next.`，随下一次 HYDE 发布做。llms.txt 的品类数矛盾与雷茵货描述已修。
+
 `robots.txt` 已写 `Disallow: /*.txt$`，但这些 Next.js 内部文件仍被抓了约三千次。
 **不致命，是纯浪费。**
 
