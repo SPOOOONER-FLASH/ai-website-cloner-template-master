@@ -10,9 +10,9 @@
   ],
   "generated": "2026-09-23",
   "counts": {
-    "refused": 447,
+    "refused": 448,
     "cleanable": 1222,
-    "already-clean": 3224
+    "already-clean": 3248
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -336,6 +336,7 @@
     "g559-night-latch-and-rim-lock-7.webp",
     "g620-glass-door-handle-16.webp",
     "g620-glass-door-handle-17.webp",
+    "g999-glass-door-handle-15.webp",
     "gl125-ss-glass-door-patch-fittings-3.webp",
     "h101-night-latch-and-rim-lock-5.webp",
     "h101-night-latch-and-rim-lock-7.webp",
@@ -13481,6 +13482,67 @@
       "source": "9d11a450596ab6babfd44a45b9b3464432f276973e6827a5575cad3c59142cd9",
       "status": "already-clean"
     },
+    "g999-glass-door-handle-10.webp": {
+      "source": "24d0a4823355d512a3662bf3b61388753bd56004c7f00ec8a59dee7dc4344aa0",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-11.webp": {
+      "source": "a818b3e7ab461d31ef1f729ebf37520fe4e1cf539b9641bfcaf123a1e09bab5d",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-12.webp": {
+      "source": "8bc230e3b44e041be5915eb3b6465f8dedc68f79d4d10047dfa42fe46b45a244",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-13.webp": {
+      "source": "abd3fa91cd54a8d723ffa679706d1f3b26c2290f9bc0cbb2f9c9899e4e8fae35",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-14.webp": {
+      "source": "e2bcb2ed776ccedceb2d1e6c99ba629558342d1523538d167708de2109ca45eb",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-15.webp": {
+      "source": "229ea9258b32291430c6a3e45fe668ecf97239679db7c8a693736e8d8e79d19b",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "g999-glass-door-handle-2.webp": {
+      "source": "26e0916edd24e91fedc7c4981b6795bf794825b529b27253d941dc45df189495",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-3.webp": {
+      "source": "c71d0466c347355aff0258c0726d342d6f90d4da839364fe84bbae7bb92b44f7",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-4.webp": {
+      "source": "b71c87631fc291cd66f25ac89f8a05d59304fca4c7a8ade6ea508abdd2cedbd5",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-5.webp": {
+      "source": "3e67ab0db31c4335aafe6992eb0ce94c23b26f9c56b17ac73e99d486d8ede00d",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-6.webp": {
+      "source": "8edbaa64203c8f989319aed2c7356d481ff234025feb9b89e494399460c86a6d",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-7.webp": {
+      "source": "6305f33841b7e1efc94b83dc32741374e061fe42958653ee852572fd90427ced",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-8.webp": {
+      "source": "578a6a9d3f3af429ec248ae35bfd2e6d775a1078d576a16db3c18ecb4185f194",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle-9.webp": {
+      "source": "f352fb20724355e191e9db14ad843df5fe616948db14a08f02041e192b9de1bf",
+      "status": "already-clean"
+    },
+    "g999-glass-door-handle.webp": {
+      "source": "ba4bfbd16832ded1543c9c3491714f2887bca00de0e765992a14931bb21319f3",
+      "status": "already-clean"
+    },
     "gl125-ss-glass-door-patch-fittings-2.webp": {
       "source": "636256663183e00d7678ae53d396c07220a04f542a575ee62040cb861b8ea5b8",
       "status": "cleanable"
@@ -18958,6 +19020,46 @@
     },
     "t2930-stainless-steel-handle.webp": {
       "source": "177edcd6f093c629a8237825fd9de20bae681fa6dfdaaafddf730f7845622ada",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-10.webp": {
+      "source": "0190cb042dc7f72ad5c43d38b08c2f2a493d03e57aa76a0bba9bc926b5eb7207",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-2.webp": {
+      "source": "abbe3e48efc91bb0acd924df56fda8c07d750fecf4b537e750e8af64a60a73b9",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-3.webp": {
+      "source": "d70dc2d205d4d1c778717812e43e4e763059bcba2361787318b58db2174a88b1",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-4.webp": {
+      "source": "6b2d580e55fac60c1570d964ff5d3202e9399c9c01e160cd707c9938af16b991",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-5.webp": {
+      "source": "5c0d6abbda7d5975422485e4178037bb155816b01464efbb4c821867fad2cb7b",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-6.webp": {
+      "source": "380dce045ebaa1b052927be6ae57845fbca5717947cbd84df663230b0e56edf6",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-7.webp": {
+      "source": "3ad09cb1e7710ed45377c8f7e8616580a9eb8181c3288bc4491cb40a83870cc8",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-8.webp": {
+      "source": "527888716731c001cd789844481d8933d27e203eac6e4ceedce7557bbf3ae02e",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle-9.webp": {
+      "source": "194ed28af99b3dee978c0d31487af5d9c53cd55f3f453c0e913d8b359b871649",
+      "status": "already-clean"
+    },
+    "t2955-stainless-steel-handle.webp": {
+      "source": "ad5a5979990a1b65f0b86ac0a30df090272feb566f501776d6b020ca838bc5c6",
       "status": "already-clean"
     },
     "t2973-stainless-steel-handle-2.webp": {

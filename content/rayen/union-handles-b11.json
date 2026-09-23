@@ -1,0 +1,112 @@
+{
+  "_readme": [
+    "第十一批：UNION 拉手包里最后两个还没上的，G999 和 T2955（甲方 2026-09-17/18 发来）。目录里原本都没有，先查过再写的。",
+    "移交文件说剩 G999、T1550、T2955 三个包；这次只收到前后两个，**T1550 那一包还没到**。",
+    "",
+    "== 剔掉的图 ==",
+    "· G999xD406ZHP (1)/(2)/(3)、G999xD407ZHP (1)/(2)：与不带编号的那张逐字节同大小，是重复副本。",
+    "· G999xD502CHrP：公寓外立面，立柱上是楼名「Cordelia Ogikubo」，门边有 SECOM 贴标，左侧车头露出雷克萨斯车标 —— 三家别人的牌子。",
+    "· G999xD501FHqP：立柱上有日文标牌「三階展示室 Exhibition hall」。",
+    "和锌合金那批剔掉 KINFOLK 书脊是同一条：别人的名字、中文/日文字样都不烤进雷茵的产品页。",
+    "",
+    "== 读数 ==",
+    "G999（图纸 D922，L1640–2140 档）：两端立柱中心距 P=1640–2140（可订长度），中间两柱 P1=700，",
+    "握持段 600，握杆 Ø30，突出 70。总长图上没印（两端各 30 是到立柱中心，不等于印出来的总长），不写。",
+    "T2955（图纸 D920）：总长 2000。其余几个数（25.2 截面、16/80、侧视 57、P=90×3 对 + P=760）",
+    "说不清各量的是哪一段，按规矩进 heldBack，不编标签。"
+  ],
+  "sourceRoot": "C:/Users/johns/rayen-batch11-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [
+    "G999xD406ZHP (1).jpg",
+    "G999xD406ZHP (2).jpg",
+    "G999xD406ZHP (3).jpg",
+    "G999xD407ZHP (1).jpg",
+    "G999xD407ZHP (2).jpg",
+    "G999xD502CHrP.jpg",
+    "G999xD501FHqP.jpg"
+  ],
+  "heldBack": [
+    {
+      "model": "G999 的嵌条款",
+      "reason": "D001–D003 三张是同一支拉手中段换了红棕、黑、浅青三种嵌条，图册/包里没印材质也没印名称；照片照常上，表面名不替它编。D001 文件名写的是 L1460–2140，和图纸的 L1640–2140 不一致 —— 嵌条款的可订长度是否不同，等甲方确认。"
+    },
+    {
+      "model": "T2955 的截面与安装孔距",
+      "reason": "图纸 D920 上 25.2（L 形截面）、16 / 80、侧视 57、P=90 ×3 对与 P=760 —— 能读出数字，读不准各自量的是哪一段；只写了总长 2000。"
+    },
+    {
+      "model": "T1550",
+      "reason": "包「大拉手T1550-L500-L750」这次没发来。"
+    }
+  ],
+  "models": [
+    {
+      "model": "G999",
+      "slug": "g999-glass-door-handle",
+      "name": "Glass Door Handle",
+      "nameZh": "玻璃门拉手",
+      "categoryPath": [
+        "glass-door-accessories",
+        "glass-door-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless"
+      ],
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=1640–2140mm"
+        },
+        {
+          "label": "Fixing centre",
+          "value": "P1=700mm"
+        },
+        {
+          "label": "Grip length",
+          "value": "600mm"
+        },
+        {
+          "label": "Grip section",
+          "value": "Ø30mm"
+        },
+        {
+          "label": "Projection",
+          "value": "70mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        }
+      ]
+    },
+    {
+      "model": "T2955",
+      "slug": "t2955-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "2000mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        }
+      ]
+    }
+  ]
+}
