@@ -105,7 +105,7 @@
       },
       {
         "question": "¿Qué cláusulas deciden realmente el precio?",
-        "answer": "Cuatro, y las cuatro parecen de trámite. El procedimiento de sustitución, la cláusula de amaestramiento, cuándo se exige la evidencia de ensayo —en licitación o en submittal— y los términos de garantía. «Garantía estándar del fabricante» no es un término: es una promesa de aceptar lo que ese estándar resulte ser."
+        "answer": "Cuatro, y las cuatro parecen de trámite. El procedimiento de sustitución, la cláusula de amaestramiento, cuándo se exige la evidencia de ensayo (en licitación o en submittal) y los términos de garantía. «Garantía estándar del fabricante» no es un término: es una promesa de aceptar lo que ese estándar resulte ser."
       },
       {
         "question": "¿Cómo debe escribirse un juego de herrajes?",
@@ -121,7 +121,7 @@
       },
       {
         "question": "¿Qué necesitan para cotizar una especificación sin hacer preguntas?",
-        "answer": "Los juegos de herrajes con código de acabado, función, mano y espesor por línea; el cuadro que mapea juegos a puertas; los huecos cortafuego marcados como tales; y los tipos y espesores de puerta —porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm."
+        "answer": "Los juegos de herrajes con código de acabado, función, mano y espesor por línea; el cuadro que mapea juegos a puertas; los huecos cortafuego marcados como tales; y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm."
       }
     ],
     "pt": [
@@ -175,14 +175,14 @@
     "## Especificar por prestación frente a especificar por marca",
     "Dos enfoques legítimos, y mezclarlos mal es donde las secciones se estropean.",
     "Una especificación por marca nombra fabricantes y números de catálogo. Es precisa y estrecha el campo, que puede ser exactamente la intención.",
-    "Una especificación por prestación indica qué debe lograr el producto —un grado de durabilidad, una clase de corrosión, una clasificación al fuego, una fuerza máxima de apertura— y deja competir a cualquier producto que lo demuestre.",
+    "Una especificación por prestación indica qué debe lograr el producto (un grado de durabilidad, una clase de corrosión, una clasificación al fuego, una fuerza máxima de apertura) y deja competir a cualquier producto que lo demuestre.",
     "El híbrido habitual, «Fabricante X modelo Y, o equivalente aprobado», solo sirve si la sección dice además qué significa equivalente. Sin eso, «equivalente» se decide en value engineering comparando características compartidas en vez de diferencias, que es el modo de fallo descrito en nuestra página de submittal.",
     "El híbrido fuerte nombra el producto y las dos o tres propiedades que lo hicieron la elección. Entonces un sustituto se puede evaluar contra algo.",
     "## Parte 3: las cláusulas que el instalador realmente necesita",
-    "Alturas de montaje, indicadas una vez y con unidades. Donde se especifique un eje de manilla, dé la cota en las unidades con las que trabaja la obra y diga desde qué referencia —sobre suelo acabado es lo habitual, y «acabado» importa donde todavía falta una capa de mortero o una moqueta.",
+    "Alturas de montaje, indicadas una vez y con unidades. Donde se especifique un eje de manilla, dé la cota en las unidades con las que trabaja la obra y diga desde qué referencia, sobre suelo acabado es lo habitual, y «acabado» importa donde todavía falta una capa de mortero o una moqueta.",
     "Secuencia de ajuste. Los cierrapuertas deben ajustarse después de equilibrar la climatización del edificio, porque la presión del aire cambia la fuerza que necesita una puerta. Un cierrapuertas ajustado a la perfección en un edificio sin presurizar es un cierrapuertas del que se quejarán.",
     "Instrucción de cortafuego. Que ningún componente de un conjunto clasificado puede sustituirse ni taladrarse más allá de la configuración ensayada, y que cualquier variación exige evidencia.",
-    "Entrega. El registro de llaves, las instrucciones de uso, y la lista de lo realmente instalado frente a lo previsto —porque esas dos listas difieren en todas las obras y la diferencia merece registrarse mientras alguien todavía recuerda por qué.",
+    "Entrega. El registro de llaves, las instrucciones de uso, y la lista de lo realmente instalado frente a lo previsto, porque esas dos listas difieren en todas las obras y la diferencia merece registrarse mientras alguien todavía recuerda por qué.",
     "## La cláusula de referencias, y cómo citar una norma para que obligue",
     "La parte 1 enumera las normas en las que se apoya la sección, y una cláusula de referencias descuidada es la forma más común de que una especificación deje de ser exigible sin que nadie se dé cuenta.",
     "Cite la norma por su designación completa e indique qué parte o clasificación se exige. «Cumplir EN 1935» no es un requisito: EN 1935 clasifica bisagras en ocho campos, y una bisagra de cualquier grado la cumple. «EN 1935 grado 13, corrosión grado 4, apta para cortafuego» sí lo es, porque un producto lo cumple o no.",
@@ -201,7 +201,7 @@
     "Conserve las emisiones superadas en vez de sobrescribirlas. Cuando dentro de dieciocho meses llegue la pregunta de por qué un hueco tiene el herraje que tiene, la respuesta está en la versión que estaba vigente cuando se pidió.",
     "## Qué necesitamos para cotizar una sección sin hacer preguntas",
     "Los juegos de herrajes, con los cuatro valores de arriba por línea. El cuadro de huecos que mapea juegos a puertas. Los códigos de acabado. Los huecos cortafuego, marcados como tales. Y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm.",
-    "Con eso, una cotización vuelve como cotización. Sin eso, vuelve como lista de preguntas —y el ida y vuelta suele ser una semana por ronda, que es la razón de que esta sección merezca la hora que cuesta escribirla bien.",
+    "Con eso, una cotización vuelve como cotización. Sin eso, vuelve como lista de preguntas, y el ida y vuelta suele ser una semana por ronda, que es la razón de que esta sección merezca la hora que cuesta escribirla bien.",
     "Donde nuestro catálogo no puede cumplir una cláusula, decimos cuál en vez de cotizar rodeándola. Un proveedor que cotiza una especificación por prestación sin tener la evidencia no ha ganado el paquete: ha aplazado la conversación a la fase de submittal, donde cuesta más a todo el mundo."
   ],
   "titlePt": "Escrever a seção de ferragens 08 71 00 em 2026: as três partes, o que vai em cada uma e as cláusulas que custam dinheiro",

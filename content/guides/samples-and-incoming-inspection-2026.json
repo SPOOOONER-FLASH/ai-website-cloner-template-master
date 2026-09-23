@@ -97,7 +97,7 @@
       },
       {
         "question": "¿Qué tipo de muestra debo pedir?",
-        "answer": "Una muestra de stock si está evaluando a un proveedor. Una muestra de preserie si algo difiere del catálogo —un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa—, porque demuestra que la especificación se entendió. Una muestra de producción sacada de la serie real es contra lo que se hace una inspección."
+        "answer": "Una muestra de stock si está evaluando a un proveedor. Una muestra de preserie si algo difiere del catálogo (un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa) , porque demuestra que la especificación se entendió. Una muestra de producción sacada de la serie real es contra lo que se hace una inspección."
       },
       {
         "question": "¿Cuándo debo tomar una muestra?",
@@ -123,7 +123,7 @@
       },
       {
         "question": "Que tipo de amostra devo pedir?",
-        "answer": "Uma amostra de estoque se está avaliando um fornecedor. Uma amostra de pré-série se algo difere do catálogo, um acabamento, uma distância ao eixo, um comprimento de quadrado, uma caixa impressa —, porque prova que a especificação foi entendida. Uma amostra de produção tirada da série real é contra o que uma inspeção é feita."
+        "answer": "Uma amostra de estoque se está avaliando um fornecedor. Uma amostra de pré-série se algo difere do catálogo, um acabamento, uma distância ao eixo, um comprimento de quadrado, uma caixa impressa, , porque prova que a especificação foi entendida. Uma amostra de produção tirada da série real é contra o que uma inspeção é feita."
       },
       {
         "question": "Quando devo tirar uma amostra?",
@@ -152,7 +152,7 @@
     "Una muestra es la única herramienta que atrapa eso antes de que se convierta en un contenedor. Convierte una descripción en un objeto, y un objeto no se puede malinterpretar de dos formas a la vez.",
     "LOS TRES TIPOS DE MUESTRA",
     "Una muestra de stock es un producto existente sacado de la estantería. Le enseña el modelo, la calidad del acabado y la construcción general. Es rápida y barata y es lo correcto que pedir cuando está evaluando a un proveedor y no una especificación.",
-    "Una muestra de preserie se hace según su especificación antes de arrancar la serie. Es la que importa cuando algo difiere del catálogo —un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa— porque demuestra que la especificación se entendió, no solo que se recibió.",
+    "Una muestra de preserie se hace según su especificación antes de arrancar la serie. Es la que importa cuando algo difiere del catálogo (un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa) porque demuestra que la especificación se entendió, no solo que se recibió.",
     "Una muestra de producción se saca de la serie real. Demuestra lo que hay en las cajas, y es contra la que se hace una inspección.",
     "El error habitual es tratar una muestra de stock como si fuera de preserie. Una muestra de stock en acabado de stock no le dice nada sobre el acabado a medida que usted pidió, y aprobarla es aprobar otro producto.",
     "LA MUESTRA PATRÓN SELLADA",
@@ -179,7 +179,7 @@
     "Cite la referencia de muestra patrón. Indique las medidas a tomar y la tolerancia de cada una: una tolerancia es lo que convierte una medida en una decisión. Indique el plan de muestreo: cuántas cajas se abren, cuántas piezas se miden y qué constituye un rechazo.",
     "Indique qué se comprueba funcionalmente y cuántas veces. «Accionar la cerradura» no es una instrucción; «accionar la cerradura diez veces y confirmar que el picaporte se retrae del todo y la manilla vuelve a la horizontal cada vez» sí lo es.",
     "Indique las comprobaciones de embalaje: marcado de cajas, cantidad por caja, embalaje interior, y si las dimensiones de caja coinciden con la lista de empaque, porque una caja que no mide lo que dice la lista no cargará como se planificó el envío.",
-    "E indique qué pasa ante un rechazo —retener el envío, reinspeccionar tras retrabajo, o aceptar con concesión—, porque un inspector que encuentra un problema y no tiene instrucción no hará nada, que es el peor de los tres desenlaces.",
+    "E indique qué pasa ante un rechazo (retener el envío, reinspeccionar tras retrabajo, o aceptar con concesión) , porque un inspector que encuentra un problema y no tiene instrucción no hará nada, que es el peor de los tres desenlaces.",
     "CUÁNDO TOMAR LA MUESTRA",
     "Mientras la especificación sigue abierta. Este es el punto de calendario que más afecta al resultado y el que más se equivoca.",
     "Una muestra tomada tras pagar la señal y programar la serie es una muestra cuyos únicos desenlaces posibles son el alivio y la discusión. Una muestra tomada mientras la especificación aún se puede editar es una conversación, y un malentendido encontrado ahí cuesta un correo.",
@@ -224,7 +224,7 @@
     "Cite a referência de amostra padrão. Indique as medidas a tomar e a tolerância de cada uma: uma tolerância é o que converte uma medida numa decisão. Indique o plano de amostragem: quantas caixas se abrem, quantas peças se medem e o que constitui uma reprovação.",
     "Indique o que é verificado funcionalmente e quantas vezes. «Acionar a fechadura» não é uma instrução; «acionar a fechadura dez vezes e confirmar que o trinco recolhe por completo e a maçaneta volta à horizontal de cada vez» é.",
     "Indique as verificações de embalagem: marcação de caixas, quantidade por caixa, embalagem interna, e se as dimensões de caixa coincidem com a lista de embalagem, porque uma caixa que não mede o que a lista diz não vai carregar como o embarque foi planejado.",
-    "E indique o que acontece numa reprovação, reter o embarque, reinspecionar após retrabalho, ou aceitar com concessão —, porque um inspetor que encontra um problema e não tem instrução não fará nada, que é o pior dos três desfechos.",
+    "E indique o que acontece numa reprovação, reter o embarque, reinspecionar após retrabalho, ou aceitar com concessão, , porque um inspetor que encontra um problema e não tem instrução não fará nada, que é o pior dos três desfechos.",
     "QUANDO TIRAR A AMOSTRA",
     "Enquanto a especificação ainda está aberta. Este é o ponto de calendário que mais afeta o resultado e o que mais se erra.",
     "Uma amostra tirada depois de pago o sinal e programada a série é uma amostra cujos únicos desfechos possíveis são o alívio e a discussão. Uma amostra tirada enquanto a especificação ainda pode ser editada é uma conversa, e um mal-entendido encontrado ali custa um e-mail.",

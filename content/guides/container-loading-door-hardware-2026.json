@@ -144,7 +144,7 @@
     "Un importador que planifica un primer pedido pregunta cuánto cabe en un contenedor, y casi siempre lo pregunta como una cuestión de volumen. Para herrajes esa es la pregunta equivocada, y responderla en términos de volumen produce un pedido que no cargará.",
     "Las cifras de abajo salen de una hoja de embarque con 26 artículos embalados, de los cuales 19 llevan medida de caja, cantidad por caja y peso bruto. Son nuestras propias cajas y no una media del sector, y la aritmética se puede reproducir con los números impresos aquí.",
     "LOS TRES CONTENEDORES",
-    "Un 20GP tiene unos 33,2 metros cúbicos de volumen interior y una carga útil en torno a 28.200 kg. Un 40GP tiene unos 67,7 metros cúbicos y unos 26.600 kg. Un 40HQ —el high cube— tiene unos 76,4 metros cúbicos y unos 26.500 kg.",
+    "Un 20GP tiene unos 33,2 metros cúbicos de volumen interior y una carga útil en torno a 28.200 kg. Un 40GP tiene unos 67,7 metros cúbicos y unos 26.600 kg. Un 40HQ (el high cube) tiene unos 76,4 metros cúbicos y unos 26.500 kg.",
     "Lea esas tres parejas juntas y aparece la forma del problema. Pasar de 20GP a 40GP duplica el volumen y reduce ligeramente la carga útil. Pasar de 40GP a 40HQ añade un 13 % de volumen y vuelve a reducirla un poco. El volumen escala; el peso no.",
     "LA DENSIDAD CRÍTICA",
     "Para cualquier carga existe una densidad a la que el contenedor agota peso y volumen a la vez. Por debajo, el contenedor se llena y sobra carga útil. Por encima, alcanza el peso legal y sobra espacio.",

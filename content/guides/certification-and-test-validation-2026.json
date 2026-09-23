@@ -105,7 +105,7 @@
     "es": [
       {
         "question": "¿Qué debe contener un certificado de ensayo auténtico?",
-        "answer": "Siete cosas: el laboratorio u organismo emisor con dirección, una referencia de acreditación, la norma con su designación completa y año, un número de informe o certificado, la fecha y validez, el campo de aplicación, y una descripción de la configuración ensayada. El que más falta —y el que más importa— es el campo de aplicación."
+        "answer": "Siete cosas: el laboratorio u organismo emisor con dirección, una referencia de acreditación, la norma con su designación completa y año, un número de informe o certificado, la fecha y validez, el campo de aplicación, y una descripción de la configuración ensayada. El que más falta (y el que más importa) es el campo de aplicación."
       },
       {
         "question": "¿Qué diferencia hay entre acreditación y certificación?",
@@ -113,7 +113,7 @@
       },
       {
         "question": "¿Qué es una Declaración de Prestaciones?",
-        "answer": "Para productos de construcción en el sistema europeo —incluido el herraje bajo normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209— el fabricante emite una DoP declarando prestaciones contra esa norma, respaldada por un organismo notificado con un número de cuatro dígitos, y aplica el marcado CE. Un marcado CE sin DoP detrás es una pegatina."
+        "answer": "Para productos de construcción en el sistema europeo (incluido el herraje bajo normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209) el fabricante emite una DoP declarando prestaciones contra esa norma, respaldada por un organismo notificado con un número de cuatro dígitos, y aplica el marcado CE. Un marcado CE sin DoP detrás es una pegatina."
       },
       {
         "question": "¿Cómo compruebo que un certificado es real?",
@@ -161,22 +161,22 @@
   "seoDescriptionEs": "Cómo comprobar un certificado de ensayo de herraje: las siete partes que debe llevar, acreditación frente a certificación, Declaraciones de Prestaciones y marcado CE, y seis señales de alarma.",
   "bodyEs": [
     "Casi nadie comprueba un certificado. Llega como un PDF con un logotipo, satisface la línea del submittal, y se archiva.",
-    "Por eso funcionan los malos. No porque sean falsificaciones sofisticadas —casi ninguno lo es— sino porque nunca los abre alguien que busque las siete cosas de abajo.",
+    "Por eso funcionan los malos. No porque sean falsificaciones sofisticadas (casi ninguno lo es) sino porque nunca los abre alguien que busque las siete cosas de abajo.",
     "## Las siete partes de un certificado de ensayo auténtico",
     "| Parte | Qué le dice | Si falta significa |\n| --- | --- | --- |\n| Laboratorio u organismo emisor, con dirección | Quién hizo o certificó el ensayo | El documento no tiene autor |\n| Referencia de acreditación | Que una autoridad competente audita a ese laboratorio | Un laboratorio que responde solo por sí mismo |\n| La norma, con designación completa y año | Contra qué se ensayó realmente | Una afirmación inverificable |\n| Número de informe o certificado | El registro contra el que puede contrastar | No se puede buscar nada |\n| Fecha de emisión y validez o revisión | Si está vigente | Puede haber caducado |\n| Campo de aplicación | Qué tamaños y configuraciones cubre | Puede no cubrir su producto |\n| La configuración ensayada, descrita | Exactamente qué había en el banco de ensayo | El resultado no se adhiere a nada identificable |",
-    "Seis de esas siete suelen estar en cualquier documento real. La que más falta, y la que más suele importar, es el campo de aplicación —el rango de tamaños, materiales, tipos de cerco y conjuntos de herraje a los que se extiende el resultado.",
+    "Seis de esas siete suelen estar en cualquier documento real. La que más falta, y la que más suele importar, es el campo de aplicación, el rango de tamaños, materiales, tipos de cerco y conjuntos de herraje a los que se extiende el resultado.",
     "Un certificado sin campo de aplicación es un resultado para un objeto. Con campo, es un resultado para una familia, y su producto está dentro de esa familia o no lo está.",
     "## La acreditación no es la certificación, y la diferencia es quién vigila",
     "Estas dos palabras se usan indistintamente en conversaciones comerciales y significan cosas distintas.",
-    "La certificación es un organismo afirmando que un producto cumple una norma. La acreditación es una autoridad de nivel superior afirmando que ese organismo certificador es competente para hacer esa afirmación —mediante una auditoría de sus métodos, equipos y personal.",
+    "La certificación es un organismo afirmando que un producto cumple una norma. La acreditación es una autoridad de nivel superior afirmando que ese organismo certificador es competente para hacer esa afirmación, mediante una auditoría de sus métodos, equipos y personal.",
     "Un certificado de un organismo no acreditado es una declaración de una organización a la que nadie ha comprobado. Puede ser perfectamente sólida. No es evidencia en el sentido que quiere decir una especificación, y un revisor que conoce la diferencia la tratará como una carta.",
     "Así que la pregunta útil no es «¿está certificado?» sino «¿quién acredita al organismo que lo certificó, y cuál es el número de acreditación?». Un certificado auténtico lo lleva en su cara.",
     "## El marcado CE y la Declaración de Prestaciones",
-    "Para productos de construcción en el sistema europeo —y el herraje de puerta cubierto por normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209 está en ese sistema— el fabricante emite una Declaración de Prestaciones y aplica el marcado CE.",
+    "Para productos de construcción en el sistema europeo (y el herraje de puerta cubierto por normas armonizadas como EN 1125, EN 179, EN 1154, EN 1935 y EN 12209 está en ese sistema) el fabricante emite una Declaración de Prestaciones y aplica el marcado CE.",
     "Esa estructura merece entenderse porque cambia qué debe pedir.",
-    "La DoP es la prestación que declara el fabricante contra la norma armonizada, respaldada por ensayos realizados o evaluados por un organismo notificado —una organización designada por un estado miembro para ese fin, con un número identificativo de cuatro dígitos.",
+    "La DoP es la prestación que declara el fabricante contra la norma armonizada, respaldada por ensayos realizados o evaluados por un organismo notificado, una organización designada por un estado miembro para ese fin, con un número identificativo de cuatro dígitos.",
     "Así que en un producto con marcado CE hay tres cosas que buscar, y están conectadas: el propio marcado CE, el número del organismo notificado, y la DoP que indica la clasificación declarada. Un marcado CE sin DoP detrás es una pegatina.",
-    "El Reino Unido opera un esquema paralelo con marcado UKCA y organismos aprobados. Otros mercados tienen sus propios sistemas, y un certificado de uno no es automáticamente evidencia en otro —el mismo punto que hace nuestra página de cortafuego sobre EN 1634-1 y UL 10C.",
+    "El Reino Unido opera un esquema paralelo con marcado UKCA y organismos aprobados. Otros mercados tienen sus propios sistemas, y un certificado de uno no es automáticamente evidencia en otro, el mismo punto que hace nuestra página de cortafuego sobre EN 1634-1 y UL 10C.",
     "## Cómo comprobar un certificado de forma independiente, en cinco minutos",
     "Busque el registro del propio organismo emisor: la mayoría de los organismos de certificación publican una lista consultable de certificados vigentes. Esa es la fuente autorizada; el PDF que le mandaron es una copia.",
     "Busque por el número de certificado, no por el nombre de la empresa. Un nombre de empresa encontrará la empresa. Un número encuentra el documento concreto, y su ausencia del registro es la respuesta que buscaba.",
@@ -194,19 +194,19 @@
     "Un certificado es una fotografía de un producto en un momento. Dos mecanismos deben mantenerlo cierto después, y conocer sus nombres hace mucho más fácil valorar la respuesta de un proveedor.",
     "El ensayo inicial de tipo es el ensayo en sí: la muestra fue a un laboratorio, se ensayó contra la norma, y se registró un resultado. Ese es el hecho que describe el certificado.",
     "El control de producción en fábrica es la parte continua: el sistema documentado del fabricante para asegurar que lo que sale de la línea hoy sigue coincidiendo con lo que se ensayó. En el sistema europeo de productos de construcción, el CPF se audita, y un certificado de esas familias de producto lo referencia.",
-    "Esa distinción explica algo que desconcierta a los compradores. Un producto puede estar genuinamente ensayado y aun así derivar —un proveedor cambia un subcomponente, una línea de recubrimiento, una fuente de fundición— y el certificado no se vuelve falso automáticamente, pero deja de describir el producto con exactitud.",
+    "Esa distinción explica algo que desconcierta a los compradores. Un producto puede estar genuinamente ensayado y aun así derivar (un proveedor cambia un subcomponente, una línea de recubrimiento, una fuente de fundición) y el certificado no se vuelve falso automáticamente, pero deja de describir el producto con exactitud.",
     "Así que en una relación de suministro larga la pregunta útil no es solo «¿tiene certificado?» sino «¿ha cambiado algo de la configuración ensayada desde que se emitió?». Un proveedor honesto tiene un registro de qué cambió y cuándo, porque ese registro es lo que es el CPF.",
     "## Qué preguntar cuando un proyecto necesita evidencia que no le han dado",
     "La situación es común: una especificación nombra una clasificación, el proveedor no ha ofrecido certificado, y nadie quiere ser quien pregunte mal. Cuatro frases lo cubren.",
-    "«¿Qué norma y qué clasificación tiene este modelo, y cuál es el número de certificado?» —una sola pregunta que un proveedor responde con un número o no responde.",
-    "«¿Qué organismo lo emitió, y quién los acredita?» —la pregunta de acreditación de más arriba en esta página.",
-    "«¿El campo de aplicación cubre este tamaño y esta configuración?» —cite su tamaño de hoja, su tipo de cerco, su conjunto de herraje.",
-    "«¿Podemos tener también el informe de ensayo además del certificado?» —la petición que separa a quien lo tiene de quien lo reenvía.",
+    "«¿Qué norma y qué clasificación tiene este modelo, y cuál es el número de certificado?», una sola pregunta que un proveedor responde con un número o no responde.",
+    "«¿Qué organismo lo emitió, y quién los acredita?», la pregunta de acreditación de más arriba en esta página.",
+    "«¿El campo de aplicación cubre este tamaño y esta configuración?», cite su tamaño de hoja, su tipo de cerco, su conjunto de herraje.",
+    "«¿Podemos tener también el informe de ensayo además del certificado?», la petición que separa a quien lo tiene de quien lo reenvía.",
     "Si la respuesta a la primera es que el producto no está certificado, esa es una respuesta utilizable y a menudo la correcta para la aplicación. El modo de fallo no es un producto sin certificar: es un producto sin certificar descrito como si lo estuviera, que es lo que detectan las seis señales de alarma de arriba.",
     "## Qué tenemos, dicho sin rodeos",
     "Donde uno de nuestros productos se ha ensayado y existe certificado, la ficha nombra la norma, la clasificación y el campo de aplicación, y el certificado está disponible a petición. Nuestra página de documentos indica los documentos de ensayo como a petición y no como publicados, y eso es literal: mandamos lo que existe para los modelos exactos por los que pregunte.",
     "Nuestras barras antipánico 307 y 311 están en ensayo: hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen clasificación al fuego, grado ANSI o listado UL: ni en una descripción, ni en una comparación, ni colocando el número de una norma cerca de un producto que no se ha ensayado a ella.",
-    "Tampoco reproducimos el certificado de otro fabricante para describir un producto nuestro. Un certificado pertenece al conjunto para el que se emitió, y tomarlo prestado es la misma categoría de error que inventar una cota —que es el argumento de nuestras páginas dimensionales, aplicado al papel.",
+    "Tampoco reproducimos el certificado de otro fabricante para describir un producto nuestro. Un certificado pertenece al conjunto para el que se emitió, y tomarlo prestado es la misma categoría de error que inventar una cota, que es el argumento de nuestras páginas dimensionales, aplicado al papel.",
     "## Por qué un proveedor debería agradecer la comprobación",
     "La comprobación de cinco minutos de arriba se lee a veces como desconfianza. Es lo contrario: es lo único que hace que un certificado auténtico valga más que una frase segura.",
     "Una fábrica que tiene evidencia real no pierde nada cuando un comprador la verifica, y gana lo único que no se puede afirmar: un comprador que ha comprobado. Una fábrica que no la tiene es la razón de que la comprobación tenga que existir.",

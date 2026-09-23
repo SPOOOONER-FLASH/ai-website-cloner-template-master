@@ -117,7 +117,7 @@
       },
       {
         "question": "¿Cuándo tengo que pedir un 3.1?",
-        "answer": "Antes de producir. Un 3.1 sobre un lote concreto cambia cómo maneja la fábrica el material —los lotes separados no se pueden mezclar— así que hay que planificarlo y tiene coste. Pedirlo después de que la mercancía haya salido y se haya mezclado con el stock es pedir algo que ya no existe."
+        "answer": "Antes de producir. Un 3.1 sobre un lote concreto cambia cómo maneja la fábrica el material (los lotes separados no se pueden mezclar) así que hay que planificarlo y tiene coste. Pedirlo después de que la mercancía haya salido y se haya mezclado con el stock es pedir algo que ya no existe."
       }
     ],
     "pt": [
@@ -153,7 +153,7 @@
   "seoDescriptionEs": "Tipos de documento de inspección EN 10204 2.1, 2.2, 3.1 y 3.2 comparados, qué traza un número de colada, y qué puede certificar honestamente una fábrica de herrajes sobre su material.",
   "bodyEs": [
     "«¿Me mandas el certificado de material?» se pregunta en casi toda consulta seria de herraje, y se responde con cuatro documentos genuinamente distintos según quién responda.",
-    "Las diferencias no son matices de rigor. Son diferencias en quién hizo el ensayo, en si se hizo sobre su material, y en qué firma hay en la página —y un comprador que no sabe cuál ha recibido no puede saber si tiene evidencia o una carta.",
+    "Las diferencias no son matices de rigor. Son diferencias en quién hizo el ensayo, en si se hizo sobre su material, y en qué firma hay en la página, y un comprador que no sabe cuál ha recibido no puede saber si tiene evidencia o una carta.",
     "## Los cuatro tipos de documento de EN 10204",
     "EN 10204 es la norma europea de documentos de inspección para productos metálicos. Define cuatro tipos, y los dos ejes que los separan son ensayo específico frente a no específico, y quién valida el resultado.",
     "| Tipo | Qué es | ¿Ensayado sobre su material? | Firmado por |\n| --- | --- | --- | --- |\n| 2.1 | Declaración de conformidad con el pedido | Sin resultados de ensayo | El fabricante |\n| 2.2 | Informe de ensayo | No (resultados de ensayo no específico | El fabricante |\n| 3.1 | Certificado de inspección | Sí) ensayo específico sobre el producto suministrado | El representante de inspección del fabricante, independiente de producción |\n| 3.2 | Certificado de inspección | Sí | Ese representante y el inspector del comprador o uno designado por reglamentación |",
@@ -163,10 +163,10 @@
     "Un número de colada identifica una única fusión en la acería. Cada kilo colado de esa fusión comparte una composición química, y un certificado 3.1 de esa colada indica el análisis y las propiedades mecánicas medidas sobre ella.",
     "Esa es una cadena fuerte mientras el material es grande y poco numeroso: una chapa, una barra, una bobina. Cada pieza puede llevar el número estampado o grabado, y el certificado sigue a la pieza.",
     "Donde se debilita es exactamente donde vive el herraje de puerta. Una sola fusión se convierte en toneladas de barra; la barra se corta en cientos de miles de piezas pequeñas; las piezas van a cajones. Cuando una manilla es una entre cuarenta mil idénticas en un cajón, ya no lleva número de colada y nada que no sea segregar el lote entero se lo devuelve.",
-    "Así que la afirmación honesta para herraje pequeño es esta: la trazabilidad a colada es una propiedad de un *lote que se mantuvo separado*, no de una pieza. Si un proyecto la necesita, hay que especificarla antes de producir, porque cambia cómo maneja la fábrica el material —y cuesta, porque los lotes separados no se pueden mezclar.",
+    "Así que la afirmación honesta para herraje pequeño es esta: la trazabilidad a colada es una propiedad de un *lote que se mantuvo separado*, no de una pieza. Si un proyecto la necesita, hay que especificarla antes de producir, porque cambia cómo maneja la fábrica el material, y cuesta, porque los lotes separados no se pueden mezclar.",
     "## Otros dos puntos donde se rompe la cadena, y ninguno es deshonestidad",
     "El acabado: una pieza se galvaniza o se recubre a menudo en un especialista fuera de la fábrica. La colada del metal base puede conocerse; la química del baño es un registro aparte que lleva otra empresa, y un certificado que cubra ambos son dos documentos y no uno.",
-    "Los conjuntos de varias piezas: una cerradura de embutir es caja, frente, picaporte, cuadradillo hembra, muelles y fijaciones —con frecuencia de proveedores y coladas distintos. Un único «certificado de material» para una cerradura es un error de categoría; lo que existe es un certificado por componente, para los componentes que tienen uno.",
+    "Los conjuntos de varias piezas: una cerradura de embutir es caja, frente, picaporte, cuadradillo hembra, muelles y fijaciones, con frecuencia de proveedores y coladas distintos. Un único «certificado de material» para una cerradura es un error de categoría; lo que existe es un certificado por componente, para los componentes que tienen uno.",
     "Ninguna de las dos cosas es una fábrica escurriendo el bulto. Son la forma de la cadena de suministro, y un proveedor que dice «sí, trazabilidad completa» de una cerradura montada sin matizarlo le ha dicho algo que no puede ser cierto.",
     "## La trazabilidad de material no es RoHS, y no es REACH",
     "Estos tres se piden en una sola frase y se responden como si fueran una sola cosa. No lo son.",
@@ -192,7 +192,7 @@
     "Donde un proyecto necesita EN 10204 3.1 sobre un componente concreto, eso es una conversación antes de producir y no una casilla que se marca después, y el coste de separar el lote se indica en lugar de absorberse en silencio y descubrirse luego en el precio.",
     "## Por qué somos así de cuidadosos con un papel",
     "Porque el modo de fallo es diferido y caro. Un certificado prestado, un 2.2 presentado como 3.1, o un número de colada adherido a una pieza que nunca se segregó, los tres pasan la inspección del día.",
-    "Fallan después, en una auditoría, en una obra donde alguien comprueba —y lo que falla no es un documento. Es cualquier otra cifra que el proveedor haya publicado, porque un comprador que encuentra un papel que no se sostiene no tiene forma de saber cuáles de los demás sí.",
+    "Fallan después, en una auditoría, en una obra donde alguien comprueba, y lo que falla no es un documento. Es cualquier otra cifra que el proveedor haya publicado, porque un comprador que encuentra un papel que no se sostiene no tiene forma de saber cuáles de los demás sí.",
     "Es el mismo razonamiento que el guion donde falta una cota. Un documento ausente cuesta una consulta; uno inventado cuesta la cuenta.",
     "Por eso las cinco comprobaciones de arriba están escritas como preguntas para mandar y no como motivos para irse. Un proveedor que las contesta con precisión vale más que uno cuyos papeles estaban ordenados a la primera, porque ahora usted sabe qué pasa cuando pregunta."
   ],

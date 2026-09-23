@@ -121,7 +121,7 @@
       },
       {
         "question": "¿Sus fichas dan el reparto?",
-        "answer": "No. Publicamos 45 modelos de cilindro en nueve longitudes totales —45, 47, 54, 56, 60, 65, 70, 80 y 90 mm— con la longitud en el número de modelo. En los 45 registros, el número de filas que indican mitad interior y exterior es cero. Pida el reparto pedido a pedido y consígalo por escrito en vez de suponer una división igual."
+        "answer": "No. Publicamos 45 modelos de cilindro en nueve longitudes totales (45, 47, 54, 56, 60, 65, 70, 80 y 90 mm) con la longitud en el número de modelo. En los 45 registros, el número de filas que indican mitad interior y exterior es cero. Pida el reparto pedido a pedido y consígalo por escrito en vez de suponer una división igual."
       }
     ],
     "pt": [
@@ -156,9 +156,9 @@
   "seoTitleEs": "Espesor de puerta a longitud de cilindro 2026: tabla | Canton Hyland",
   "seoDescriptionEs": "Cómo calcular la longitud de cilindro europeo desde el espesor de puerta, una tabla trabajada contra nueve longitudes publicadas, y por qué las puertas finas llevan cilindro saliente.",
   "bodyEs": [
-    "Un cilindro europeo se dimensiona con aritmética, y la aritmética es genuinamente simple. Lo que hace que la gente se equivoque es que la respuesta que da la aritmética casi nunca es un cilindro que exista, así que el último paso es una decisión de redondeo —y redondear en el sentido equivocado produce o un cilindro que no llega o uno que sobresale lo suficiente para agarrarlo.",
+    "Un cilindro europeo se dimensiona con aritmética, y la aritmética es genuinamente simple. Lo que hace que la gente se equivoque es que la respuesta que da la aritmética casi nunca es un cilindro que exista, así que el último paso es una decisión de redondeo, y redondear en el sentido equivocado produce o un cilindro que no llega o uno que sobresale lo suficiente para agarrarlo.",
     "## El cálculo",
-    "Mida cada mitad desde el centro del agujero del tornillo de fijación hasta la cara exterior del escudo o la roseta de ese lado. El centro de ese agujero es también el centro de la leva, y es la referencia desde la que se citan las dos mitades —por eso nuestra página de cilindro europeo insiste en que medir un cilindro viejo de punta a punta le dice lo que no es.",
+    "Mida cada mitad desde el centro del agujero del tornillo de fijación hasta la cara exterior del escudo o la roseta de ese lado. El centro de ese agujero es también el centro de la leva, y es la referencia desde la que se citan las dos mitades, por eso nuestra página de cilindro europeo insiste en que medir un cilindro viejo de punta a punta le dice lo que no es.",
     "Para una caja de cerradura centrada en la hoja, cada mitad es por tanto:",
     "mitad = (espesor de puerta ÷ 2) + profundidad de escudo o roseta de ese lado + una pequeña holgura para que la cara del cilindro sea alcanzable sin sobresalir",
     "Después redondee cada mitad hacia arriba a la semilongitud disponible más cercana, y las dos mitades sumadas dan el cilindro que pide.",
@@ -175,7 +175,7 @@
     "Lo que no es una respuesta es elegir una mitad más corta de la que ofrece el perfil. No existe.",
     "## Qué cambia cuando la caja de cerradura no está centrada",
     "El cálculo de arriba supone que el agujero del cilindro está en el medio del espesor de la hoja, que es cierto para la mayoría de las cajas de embutir en la mayoría de las puertas.",
-    "Donde no lo está —una cerradura diseñada para quedar más cerca de una cara, una puerta con panel aplicado por un lado, un par con rebaje— las dos mitades son distintas y el cilindro es asimétrico. Esa es toda la razón de que un cilindro europeo se especifique con dos números en vez de uno.",
+    "Donde no lo está (una cerradura diseñada para quedar más cerca de una cara, una puerta con panel aplicado por un lado, un par con rebaje) las dos mitades son distintas y el cilindro es asimétrico. Esa es toda la razón de que un cilindro europeo se especifique con dos números en vez de uno.",
     "En ese caso, mida cada mitad por separado desde el centro del tornillo de fijación, redondee cada una por su cuenta, y pida el reparto. Recuerde que el reparto tiene dirección: un 30/40 y un 40/30 son la misma longitud total y no son intercambiables, porque en el 30/40 la mitad corta mira hacia fuera.",
     "Indique qué mitad es cuál al pedir. «70 mm, 30 fuera / 40 dentro» no se puede malinterpretar; «70 mm 30/40» depende de que las dos partes usen la misma convención.",
     "## Medir una puerta que no puede desmontar",
@@ -195,7 +195,7 @@
     "Así que esta tabla le lleva a una longitud total de nuestra gama, que es el número que lleva el código de modelo. El reparto es una cuestión de pedido, y en una puerta asimétrica es la cuestión que importa: pídalo por escrito en vez de suponer una división igual.",
     "Ese es un hueco real y esta página lo indica en vez de rellenarlo, por la razón que da nuestra página de intercambiabilidad: un reparto es fácil de escribir y caro de equivocar, y un cilindro que sobra 5 mm por fuera es una superficie de ataque y no un problema estético.",
     "## Las tres líneas que van en la consulta",
-    "El espesor de puerta, medido en el canto de la cerradura con calibre y no con cinta —una cinta sobre un canto rebajado lee el rebaje.",
+    "El espesor de puerta, medido en el canto de la cerradura con calibre y no con cinta, una cinta sobre un canto rebajado lee el rebaje.",
     "El escudo o la roseta de seguridad que va a usar, por modelo o por profundidad, porque es el término del cálculo que más varía entre proyectos.",
     "Si el interior necesita llave o pomo de giro, porque un pomo cambia la geometría de la mitad interior y no es una opción de acabado.",
     "Con esas tres, una longitud y un reparto vuelven como recomendación y no como pregunta. Sin ellas, cualquier longitud de cilindro cotizada es una conjetura con forma plausible."
