@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -9,8 +10,21 @@ import type { MenuCategory } from "@/data/categories";
 import { localeFromPath } from "@/data/locales";
 import { headerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { MenuIcon, SearchIcon, Wordmark } from "./icons";
-import { SearchDialog } from "./SearchDialog";
-import { SiteMenuDrawer } from "./SiteMenuDrawer";
+/*
+  Both overlays load on demand. The header sits in the root layout, so anything it
+  imports statically is hydrated on every page of the site — including plain articles
+  that never open a menu or a search box. The dialog alone drags in the whole
+  search-matching library. `ssr: false` is safe here because a closed overlay renders
+  nothing, so there is no server HTML to lose; the chunk arrives on first open instead.
+*/
+const SearchDialog = dynamic(() =>
+  import("./SearchDialog").then((module) => module.SearchDialog),
+  { ssr: false },
+);
+const SiteMenuDrawer = dynamic(() =>
+  import("./SiteMenuDrawer").then((module) => module.SiteMenuDrawer),
+  { ssr: false },
+);
 import navigationStyles from "./HeaderNavigation.module.css";
 
 /**
@@ -112,6 +126,12 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const menuOpenerRef = useRef<HTMLButtonElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  /*
+    The dialog stays mounted after its first open so its exit animation
+    (useOverlayPresence) still runs; before that first open it is not mounted at all,
+    which is what keeps its chunk out of the initial page load.
+  */
+  const [searchEverOpened, setSearchEverOpened] = useState(false);
   const [openShelf, setOpenShelf] = useState<ShelfName | null>(null);
   /*
     Read off the path, for all three locales. This was `pathname.startsWith("/es/")` until
@@ -321,6 +341,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                   aria-expanded={searchOpen}
                   onClick={() => {
                     setOpenShelf(null);
+                    setSearchEverOpened(true);
                     setSearchOpen(true);
                   }}
                   className="header-icon-hit relative flex h-24 w-20 flex-none items-center justify-center text-ink-tertiary transition-colors duration-[var(--motion-fast)] hover:text-ink"
@@ -630,7 +651,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
           onClose={closeMenu}
         />
       ) : null}
-      <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} locale={locale} />
+      {searchEverOpened ? (
+        <SearchDialog open={searchOpen} onClose={() => setSearchOpen(false)} locale={locale} />
+      ) : null}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "../globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getMenuCategories } from "@/data/categories";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { PromoDialog } from "@/components/site/PromoDialog";
+import { LazyPromoDialog } from "@/components/site/LazyPromoDialog";
 import { JsonLd, organisationSchema, websiteSchema } from "@/components/site/JsonLd";
 import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import {
@@ -94,7 +94,7 @@ export default function EnglishRootLayout({
         </div>
         {/* Last in the body so it cannot appear above the page's own content in the
             reading order before a visitor has even seen the page. */}
-        <PromoDialog />
+        <LazyPromoDialog />
         <Analytics />
       </body>
     </html>
