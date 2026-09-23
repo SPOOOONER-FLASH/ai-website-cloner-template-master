@@ -1,0 +1,9 @@
+# Codex — Guides D+C+B acceptance
+
+- Client-approved D visual + C search/filter + B article reading shipped in source commit `a04df5de724`; Claude committed the source with attribution after Codex ran out of session budget, then released the 40-guide export in `1b55999ba77`. No further design source change in this session.
+- `npm run check` passed on this implementation: 361 unit tests, 26 export tests; 2,218 pages, 178,126 internal links and 53,005 asset references audited. Impeccable changed-file detector returned no findings.
+- `scripts/verify-guides-editorial.mjs` ran with the existing local Playwright Core cache (no package installation). EN/ES/PT each displayed 40 articles and six material guides; LC04 search returned one match, topic and empty states worked, 1440/768/390/320px had no horizontal page overflow, article TOC anchors resolved, and tables plus FAQ stayed present. The final run captured no browser page errors. Screenshots and machine report are in ignored `tmp/codex-guides-editorial-qa/`.
+- The GTM hydration issue was reproduced against the older export and traced to moving a body script into the head after React had rendered it. `AnalyticsHead` now renders directly in all three root-layout heads. The export hoist check found 2,213 pages already correct and rewrote zero. The 2026-09-22 NOW note claiming the fix was absent was superseded after source commit was identified.
+- Direct-origin HTTPS (43.131.27.225 with cantonlock.com SNI) returned HTTP 200 for `/guides/`, with the new editorial hero and guide search, no repeated desk image, and GTM in `<head>`. This is origin evidence, not a Cloudflare purge.
+- As of this note Claude owns the currently dirty `out/` and `out-rayen/` rebuild for newer content. Codex did not touch or commit those files. Existing 35 news URLs and product data were not changed by the guide design.
+
