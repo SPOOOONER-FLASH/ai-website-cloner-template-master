@@ -61,7 +61,6 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
   const [query, setQuery] = useState("");
   const [index, setIndex] = useState<IndexEntry[] | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const fetchStarted = useRef(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const restoreFocusTo = useRef<Element | null>(null);
   const { rendered, visible } = useOverlayPresence(open);
@@ -108,18 +107,19 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
     two to disagree — and setting it inside the effect was a synchronous state update
     that cascaded a render before the fetch had even begun.
 
-    The in-flight guard is a ref for the same reason.
+    A request belongs to the current opening. Closing before it completes aborts the
+    request, so the next opening can start a fresh one instead of waiting forever.
   */
   const loading = open && index === null;
 
   useEffect(() => {
-    if (!open || index || fetchStarted.current) return;
-    fetchStarted.current = true;
+    if (!open || index) return;
+    const controller = new AbortController();
     let cancelled = false;
 
     (async () => {
       try {
-        const response = await fetch("/search-index.json");
+        const response = await fetch("/search-index.json", { signal: controller.signal });
         const data: IndexEntry[] = response.ok ? await response.json() : [];
         if (!cancelled) setIndex(data);
       } catch {
@@ -131,6 +131,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
 
     return () => {
       cancelled = true;
+      controller.abort();
     };
   }, [open, index]);
 
