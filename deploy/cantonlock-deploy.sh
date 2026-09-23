@@ -32,23 +32,50 @@
 #
 #    修法：没有 git 进程在跑时，清掉残留锁；install 脚本拿同一把 flock（见那边）。
 # ---------------------------------------------------------------------------
-set -euo pipefail
+# ---------------------------------------------------------------------------
+# 2026-09-23 第三处修正，来自服务器日志：
+#
+# 3. 每一轮都是 `fatal: shallow file has changed since we read it`，而此时没有任何
+#    git 进程、也没有锁文件 —— 不是抢锁，是 `fetch --depth 1` 本身在这台机器上
+#    必然失败：带 --depth 的拉取每次都要重写 .git/shallow，这一步坏了。
+#    现在拉取不带 --depth。浅仓库照样能增量拉新提交，只是不再每次改写 shallow，
+#    出错的那一步就不存在了。同时关掉会在后台改仓库的自动 gc / maintenance。
+#
+# 4. `chown: .user.ini: Operation not permitted`。宝塔给站点目录下的 .user.ini 加了
+#    不可改属性，chown 必然失败；配上 set -e，脚本在 reset 之后、写日志之前退出 ——
+#    网站其实更新了，日志里却永远看不到 "updated to"。现在跳过 .user.ini 和 .git，
+#    chown 失败也不中断。
+#
+# 每一行输出都带时间，出事时能看出是哪一轮。
+# ---------------------------------------------------------------------------
+set -uo pipefail
 D=/www/wwwroot/cantonlock.com
-cd "$D"
+cd "$D" || exit 1
+log() { echo "$(date '+%F %T') $*"; }
 
 if ! pgrep -x git >/dev/null; then
   for lock in .git/shallow.lock .git/index.lock; do
     if [ -e "$lock" ]; then
       rm -f "$lock"
-      echo "$(date '+%F %T') removed stale $lock"
+      log "removed stale $lock"
     fi
   done
 fi
 
-git fetch origin main --depth 1 --quiet
+if ! out=$(git fetch origin main --quiet 2>&1); then
+  sleep 5
+  if ! out=$(git fetch origin main --quiet 2>&1); then
+    log "fetch failed: $(echo "$out" | tail -1)"
+    exit 1
+  fi
+fi
+
 if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-  git reset --hard origin/main --quiet
-  find "$D" ! -user www -exec chown www:www {} +
+  if ! out=$(git reset --hard origin/main --quiet 2>&1); then
+    log "reset failed: $(echo "$out" | tail -1)"
+    exit 1
+  fi
+  find "$D" -path "$D/.git" -prune -o ! -user www ! -name .user.ini -exec chown www:www {} + 2>/dev/null || true
   git update-index -q --refresh || true
-  echo "$(date '+%F %T') updated to $(git rev-parse --short HEAD)"
+  log "updated to $(git rev-parse --short HEAD)"
 fi

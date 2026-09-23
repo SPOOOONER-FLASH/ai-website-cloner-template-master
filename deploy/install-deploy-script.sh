@@ -57,6 +57,14 @@ echo "→ git 比较文件时不看属主和 ctime"
 git -C "$REPO" config core.checkStat minimal
 git -C "$REPO" config core.trustctime false
 
+# 2026-09-23：后台自动 gc / maintenance / commit-graph 都会在 cron 两轮之间改写仓库文件。
+# 这台机器上拉取已经因为「shallow file has changed since we read it」连续失败，
+# 能在后台动仓库的东西一律关掉；这个检出只用来部署，不需要它们。
+echo "→ 关掉会在后台改仓库的自动维护"
+git -C "$REPO" config gc.auto 0
+git -C "$REPO" config maintenance.auto false
+git -C "$REPO" config fetch.writeCommitGraph false
+
 echo "→ 刷新索引（让下一次发布只写真正变了的文件）"
 git -C "$REPO" update-index -q --refresh || true
 
