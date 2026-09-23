@@ -46,9 +46,9 @@
 | 22 | what-oem-actually-changes | 0 | 700 | 900 | **已做** 批8 EN 1607（ES/PT 待多语言批） |
 | 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | **已做** 批8 EN 1664（ES/PT 待多语言批） |
 | 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | **已做** 批8 EN 1622（ES/PT 待多语言批） |
-| 25 | exit-device-push-bar-length | 0 | 692 | 908 | 待做 |
-| 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | 待做 |
-| 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | 待做 |
+| 25 | exit-device-push-bar-length | 0 | 692 | 908 | **已做** 批9 EN 1635（ES/PT 待多语言批） |
+| 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | **已做** 批9 EN 1639（ES/PT 待多语言批） |
+| 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | **已做** 批9 EN 1620（ES/PT 待多语言批） |
 | 28 | door-hardware-schedule-guide | 0 | 659 | 941 | 待做 |
 | 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | 待做 |
 | 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | 待做 |
