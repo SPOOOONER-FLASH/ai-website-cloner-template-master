@@ -324,6 +324,17 @@ export const SPEC_LABELS_ES: Record<string, string> = {
  */
 export const SPEC_VALUES_ES: Record<string, string> = {
   /*
+    Added 2026-09-24 with the bathroom-accessory spec clean-up. The catalogue stated one
+    fact four ways ("bathroom", "bathroom, living room", "Living room/Bathroom",
+    "living room,bathroom..."); each spelling already had a key here, so normalising the
+    English would have orphaned all of them. These are the canonical forms, carrying the
+    same Spanish/Portuguese those keys already held.
+  */
+  "Bathroom, living room": "Baño y sala",
+  "Wall-mount": "Montaje en pared",
+  "1–8 hooks available": "De 1 a 8 ganchos",
+  "Panic exit devices": "Barras antipánico",
+  /*
     Harvested 2026-09-24 from the Spanish already sitting in specsEs, not translated afresh.
 
     AGENTS.md names this as its own task, and it is the precondition it says must be met before
@@ -446,6 +457,9 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Satin Stainless Steel": "Acero inoxidable satinado",
   "Polished Stainless Steel": "Acero inoxidable pulido",
   Chrome: "Cromo",
+  /* Generic surface treatment on HY006DK/ET, not a specific plating: "Galvanizado" would
+     name zinc and "Cromado" chrome, neither of which the record claims. */
+  Electroplating: "Electrodeposición",
   "Chrome Plated": "Cromado",
   /*
     The rest of the finish set, in the title case scripts/expand-finish-codes.mjs writes.
