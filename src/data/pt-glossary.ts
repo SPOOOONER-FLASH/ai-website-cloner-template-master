@@ -1420,8 +1420,8 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "0,8 mm ou 1,0 mm",
   "10–12 mm glass doors":
     "Portas de vidro de 10–12 mm",
-  "149mm at the head, 133mm at the foot — tapered":
-    "149 mm na cabeça, 133 mm no pé — cônico",
+  "149mm at the head, 133mm at the foot, tapered":
+    "149 mm na cabeça, 133 mm no pé, cônico",
   "32mm, tapering to 19mm":
     "32 mm, afinando para 19 mm",
   "32mm, tapering to 18.5mm":
@@ -1478,8 +1478,8 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Serve para portas de mão direita e esquerda.",
 
   /* function */
-  "Entrance — keyed outside": "Entrada — com chave pelo lado de fora",
-  "Privacy — bathroom, turn button inside": "Condena — banheiro, botão de trava por dentro",
+  "Entrance, keyed outside": "Entrada, com chave pelo lado de fora",
+  "Privacy, bathroom, turn button inside": "Condena, banheiro, botão de trava por dentro",
   Passage: "Passagem",
   "Entrance, privacy, passage or dummy": "Entrada, condena, passagem ou cega",
   "Entrance and communication": "Entrada e comunicação",
@@ -1535,8 +1535,8 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Contra-testa angular de série para portas que abrem para dentro; contra-testa plana disponível",
   "57mm curved lip standard; 70mm available on request":
     "Lábio curvo de 57 mm de série; 70 mm sob pedido",
-  "51mm — replaces most existing locksets":
-    "51 mm — substitui a maioria das fechaduras existentes",
+  "51mm, replaces most existing locksets":
+    "51 mm, substitui a maioria das fechaduras existentes",
   "Brass rolling latch": "Lingueta rolante de latão",
   "Square latch": "Lingueta quadrada",
   "Beveled latch structure": "Lingueta chanfrada",
@@ -1640,7 +1640,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   Painting: "Pintura",
   "CF60 lift-to-lock": "CF60 levantar para travar",
   "Satin nickel, chrome, antique brass, polished brass,all available":
-    "Níquel acetinado, cromado, latão antigo, latão polido — todos disponíveis",
+    "Níquel acetinado, cromado, latão antigo, latão polido, todos disponíveis",
   "60mm / 70mm adjustable, latch and deadbolt both":
     "60 mm / 70 mm ajustável, lingueta e trinco",
   "Solid brass/Zinc & brass cylinder": "Latão maciço / cilindro de zamak e latão",
@@ -1650,7 +1650,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Iron, nickel-plated brass, solid brass, brushed nickel":
     "Ferro, latão niquelado, latão maciço, níquel escovado",
   "Satin nickel, chrome, antique brass, polished brass, black nickel, antique copper – multiple options available":
-    "Níquel acetinado, cromado, latão antigo, latão polido, níquel preto, cobre antigo — várias opções disponíveis",
+    "Níquel acetinado, cromado, latão antigo, latão polido, níquel preto, cobre antigo, várias opções disponíveis",
   "Zinc-plated, black or chrome-plated.": "Zincado, preto ou cromado.",
   "Copper-plated zinc alloy or brass": "Zamak cobreado ou latão",
   "Gray spray painted, other available": "Pintado de cinza, outras cores disponíveis",

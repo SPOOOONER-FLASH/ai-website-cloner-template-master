@@ -270,7 +270,7 @@ for (const want of WANTED) {
     description:
       `${want.model} is a ${name.toLowerCase()} manufactured by Canton Hyland Hardware ` +
       `(Group) Co., Ltd. in Guangdong, China. Photographs of the actual product are shown ` +
-      `above. Full specifications for this model are being confirmed with the factory — ` +
+      `above. Full specifications for this model are being confirmed with the factory; ` +
       `ask our export team and you will get the measured figures rather than an estimate.`,
     specs: [],
     features: [],

@@ -13,8 +13,8 @@
  * Comparing those three, and the LH852 and 607 families independently, the pattern is
  * exact and the client's own data states it:
  *
- *     ET  Entrance — keyed outside
- *     BK  Privacy — bathroom, turn button inside
+ *     ET  Entrance, keyed outside
+ *     BK  Privacy, bathroom, turn button inside
  *     PS  Passage
  *
  * Across all three families the ONLY spec row that differs with the suffix is `Function`.
@@ -101,8 +101,8 @@ const CLIENT_CONFIRMED = {
 
 /** Verified against the 587, LH852 and 607 families — see the header. */
 const FUNCTION_BY_SUFFIX = {
-  ET: "Entrance — keyed outside",
-  BK: "Privacy — bathroom, turn button inside",
+  ET: "Entrance, keyed outside",
+  BK: "Privacy, bathroom, turn button inside",
   PS: "Passage",
 };
 

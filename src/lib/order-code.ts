@@ -12,8 +12,8 @@ import {
  *
  * It was not documented anywhere. It fell out of counting suffixes across the catalogue
  * on 2026-09-14: 78 models ending `ET`, 28 ending `BK`, 12 ending `PS` — and every one
- * of those with a `Function` spec row saying, respectively, "Entrance — keyed outside",
- * "Privacy — bathroom, turn button inside" and "Passage". The first two letters of the
+ * of those with a `Function` spec row saying, respectively, "Entrance, keyed outside",
+ * "Privacy, bathroom, turn button inside" and "Passage". The first two letters of the
  * same suffixes were the finish codes already in use elsewhere in the record.
  *
  *   587 SSBK   →   587  ·  SS (stainless)      ·  BK (privacy)

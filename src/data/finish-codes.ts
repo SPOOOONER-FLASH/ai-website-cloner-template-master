@@ -393,7 +393,7 @@ export interface FunctionCode {
 export const FUNCTION_CODES: readonly FunctionCode[] = [
   {
     code: "ET",
-    name: "Entrance — keyed outside",
+    name: "Entrance, keyed outside",
     nameEs: "Entrada — con llave por fuera",
     namePt: "Entrada — chaveada por fora",
     evidence: "catalogue",
@@ -402,7 +402,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
   },
   {
     code: "BK",
-    name: "Privacy — bathroom, turn button inside",
+    name: "Privacy, bathroom, turn button inside",
     nameEs: "Privacidad — baño, botón interior",
     namePt: "Banheiro — botão de giro por dentro",
     evidence: "catalogue",
@@ -411,7 +411,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
   },
   {
     code: "PS",
-    name: "Passage — no locking",
+    name: "Passage, no locking",
     nameEs: "Paso — sin bloqueo",
     namePt: "Passagem — sem travamento",
     evidence: "catalogue",

@@ -137,7 +137,7 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   if (!product.seoDescriptionEs) {
     product.seoDescriptionEs =
       `${nameEs} ${product.model} de Canton Hyland. ` +
-      "Fabricado en Guangdong, China y exportado a más de treinta mercados — solicite una cotización.";
+      "Fabricado en Guangdong, China y exportado a más de treinta mercados. Solicite una cotización.";
     filled.seoDescriptionEs += 1;
     changed = true;
   }

@@ -146,7 +146,7 @@ function spaceUnits(text) {
  * half-translated list never ships.
  */
 function translateFinishList(text) {
-  const tail = /—\s*(all available|other available)$/i.exec(text);
+  const tail = /(?:—|,)\s*(all available|other available)$/i.exec(text);
   const head = tail ? text.slice(0, tail.index).trim() : text;
 
   const parts = head.split(/,\s*/).filter(Boolean);
@@ -173,8 +173,8 @@ function translateFinishList(text) {
 
   const suffix = tail
     ? /all available/i.test(tail[1])
-      ? " — todos disponíveis"
-      : " — outros disponíveis"
+      ? ", todos disponíveis"
+      : ", outros disponíveis"
     : "";
   return translated.join(", ") + suffix;
 }

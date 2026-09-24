@@ -499,13 +499,13 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Ivory painted": "Pintado en marfil",
   "Black painted": "Pintado en negro",
   "Red painted": "Pintado en rojo",
-  "Classroom — key releases the outside knob": "Aula — la llave libera la perilla exterior",
-  "Storeroom — outside knob always rigid": "Bodega — la perilla exterior siempre fijo",
-  "Patio — locked by inside button": "Patio — se bloquea con el botón interior",
+  "Classroom, key releases the outside knob": "Aula, la llave libera la perilla exterior",
+  "Storeroom, outside knob always rigid": "Bodega, la perilla exterior siempre fijo",
+  "Patio, locked by inside button": "Patio, se bloquea con el botón interior",
   // decoded function suffixes
-  "Entrance — keyed outside": "Entrada — con llave por fuera",
-  "Passage — latch only, no cylinder": "Paso libre — solo picaporte, sin cilindro",
-  "Privacy — bathroom, turn button inside": "Privacidad — baño, botón de giro interior",
+  "Entrance, keyed outside": "Entrada, con llave por fuera",
+  "Passage, latch only, no cylinder": "Paso libre, solo picaporte, sin cilindro",
+  "Privacy, bathroom, turn button inside": "Privacidad, baño, botón de giro interior",
 
   // door types and applications
   "Fire Door": "Puerta cortafuego",
@@ -645,8 +645,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
     "25 mm, de zamak inyectado con rodillo de acero templado",
   "25mm on rim deadbolt versions":
     "25 mm en las versiones con cerrojo de sobreponer",
-  "51mm — replaces most existing locksets":
-    "51 mm — sustituye a la mayoría de las cerraduras existentes",
+  "51mm, replaces most existing locksets":
+    "51 mm, sustituye a la mayoría de las cerraduras existentes",
   "No exposed exterior fixings; free-turning cylinder ring resists wrenching":
     "Sin tornillería exterior a la vista; el anillo giratorio del cilindro resiste el arranque",
   "Free-turning cylinder trim prevents wrenching; cylinder removable for rekeying":
@@ -1009,7 +1009,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "900 mm (adjustable)": "900 mm (regulable)",
   "3 mm （Customizable）": "3 mm (personalizable)",
   "6*3*3mm（Customizable）": "6 × 3 × 3 mm (personalizable)",
-  "149mm at the head, 133mm at the foot — tapered":
+  "149mm at the head, 133mm at the foot, tapered":
     "149 mm en la cabeza y 133 mm en el pie, en forma cónica",
   "32mm, tapering to 19mm": "32 mm, con reducción cónica a 19 mm",
   "32mm, tapering to 18.5mm": "32 mm, con reducción cónica a 18,5 mm",

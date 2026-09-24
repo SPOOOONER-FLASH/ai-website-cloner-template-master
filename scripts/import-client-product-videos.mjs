@@ -253,7 +253,7 @@ for (const [index, item] of matched.entries()) {
     product's name repeated, and a person hearing it would not know a demonstration is on
     offer.
   */
-  const label = `${product.model} ${product.name} — product demonstration`;
+  const label = `${product.model} ${product.name}, product demonstration`;
   const record = JSON.parse(readFileSync(join(PRODUCTS_DIR, product.file), "utf8"));
   record.videos = [
     {

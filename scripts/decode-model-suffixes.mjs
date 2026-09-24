@@ -89,9 +89,9 @@ const FINISHES = [
  * assumed to mean them.
  */
 const FUNCTIONS = [
-  ["ET", "Entrance — keyed outside"],
-  ["PS", "Passage — latch only, no cylinder"],
-  ["BK", "Privacy — bathroom, turn button inside"],
+  ["ET", "Entrance, keyed outside"],
+  ["PS", "Passage, latch only, no cylinder"],
+  ["BK", "Privacy, bathroom, turn button inside"],
   ["CR", "Classroom — key releases the outside knob"],
   ["SR", "Storeroom — outside knob always rigid"],
   ["PT", "Patio — locked by inside button"],
@@ -171,7 +171,7 @@ const SUPERSEDED = {
     "Antique copper",
     "Satin chrome",
   ]),
-  Function: new Set(["Privacy — bathroom, turn button inside"]),
+  Function: new Set(["Privacy, bathroom, turn button inside"]),
 };
 
 const wasOurs = (row) => SUPERSEDED[row.label]?.has(row.value) ?? false;

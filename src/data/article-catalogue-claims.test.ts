@@ -210,8 +210,8 @@ claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
   return `Only ${lockCd.length} of the ${hyde.length} records in our catalogue publish a lock centre distance, and ${lockCd.filter((p) => mm(spec(p, "Centre distance")) === 85).length} of those ${lockCd.length} say 85mm`;
 });
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `Function counts across the ${hyde.length} records in our catalogue`);
-claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Entrance, keyed outside | ${hyde.filter((p) => /^Entrance — keyed outside$/.test(spec(p, "Function") ?? "")).length} |`);
-claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Privacy, bathroom, turn button inside | ${hyde.filter((p) => /^Privacy — bathroom/.test(spec(p, "Function") ?? "")).length} |`);
+claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Entrance, keyed outside | ${hyde.filter((p) => /^Entrance, keyed outside$/.test(spec(p, "Function") ?? "")).length} |`);
+claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Privacy, bathroom, turn button inside | ${hyde.filter((p) => /^Privacy, bathroom/.test(spec(p, "Function") ?? "")).length} |`);
 claim(GUIDE("cycle-testing-durability-grades-2026"), () => {
   const c = hyde.filter((p) => /200,000/.test(spec(p, "Cycle life") ?? ""));
   return `appears on ${c.length} records in our catalogue, ${c.filter((p) => p.heroImage?.src).length} of them on published product pages`;

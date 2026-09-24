@@ -67,13 +67,13 @@ function buildTitle(p) {
 
   const candidates = [];
   if (material && !core.toLowerCase().includes(material.toLowerCase())) {
-    candidates.push(`${core} — ${material}`);
+    candidates.push(`${core}, ${material}`);
   }
   // Where the material is blank — several accessories have none recorded — the category
   // is the next most useful qualifier, and it is a fact already on the record. Without
   // it these come out as "L001 Latch | Canton Hyland", using a third of the budget.
   if (category && !core.toLowerCase().includes(category.toLowerCase())) {
-    candidates.push(`${core} — ${category}`);
+    candidates.push(`${core}, ${category}`);
   }
   candidates.push(core);
 
@@ -208,7 +208,7 @@ function buildDescription(p) {
 
   // Published boilerplate, longest that still fits, then progressively shorter.
   const tails = [
-    "Manufactured in Guangdong, China and exported to over thirty markets — request a quotation.",
+    "Manufactured in Guangdong, China and exported to over thirty markets. Request a quotation.",
     "Manufactured in Guangdong, China and exported to over thirty markets.",
     "Manufactured in Guangdong, China. Request a quotation.",
     "Made in Guangdong, China.",
@@ -271,7 +271,7 @@ function buildTitleEs(p) {
     // The model is an English descriptor, not a confirmed order code, but it is the only
     // thing that makes the title unique: two knob-locks and two lever sets otherwise
     // share one title each. It trails the Spanish name rather than leading it.
-    candidates.push(`${name} — ${model}`, `${model} ${name}`, model);
+    candidates.push(`${name}, ${model}`, `${model} ${name}`, model);
   } else {
     const head = `${model} ${name}`;
     const material = isValueLike(p.material) ? esTerm(p.material) : "";
