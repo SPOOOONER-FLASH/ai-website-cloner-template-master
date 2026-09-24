@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 507 次提交
+最近 30 天 · 共 509 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:12 | 中立 | 长尾词成果汇报：生成器 + 首期报告（md 与桌面 docx） | `3074eb903c9` |
+| 09:09 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `6798b6d91cc` |
 | 09:09 | 中立 | 品类页长尾标题补齐：15 个品类三语 seoTitle（按各语种买家用语） | `9408f6c0f19` |
 | 09:02 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 6e13a606ea1 | `8aeb18bd0b5` |
 | 09:01 | 中立 · 发布 雷茵 | Merge remote-tracking branch 'origin/main' into HEAD | `ebc18a54191` |
