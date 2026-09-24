@@ -56,6 +56,26 @@ const POSITIONING = JSON.parse(
 );
 
 /**
+ * 「for / para」接场景。名字里已经有一个「para」时换成「en / em / on」：
+ * 「001 guarnición exterior para barra antipánico para puertas de evacuación」读起来像机翻，
+ * 09-24 数到西语 29 条、葡语 30 条（015 有三个 para）。
+ */
+function connector(name, locale) {
+  const FOR = { en: "for", es: "para", pt: "para" };
+  const ALT = { en: "on", es: "en", pt: "em" };
+  return new RegExp(`\\b${FOR[locale]}\\b`, "i").test(name) ? ALT[locale] : FOR[locale];
+}
+
+/** 同理：门厚短语「para portas de 12mm」跟在带 para 的名字后面时，改说「门厚 12mm」。 */
+function thicknessAfter(name, dim, locale) {
+  if (!dim || connector(name, locale) !== { en: "on", es: "en", pt: "em" }[locale]) return dim;
+  const m = dim.match(/^(?:for|para) (?:puertas|portas) de (.+)$|^for (.+) doors$/);
+  if (!m) return dim;
+  const v = m[1] ?? m[2];
+  return { en: `${v} door thickness`, es: `espesor de puerta ${v}`, pt: `espessura de porta ${v}` }[locale];
+}
+
+/**
  * 品类定位。子品类没登记就退到父品类，两者都没有就返回 null。
  *
  * 单个产品可以用 `positioning` 字段整体覆盖（同样的六个键）。2026-09-23 加的：
@@ -63,6 +83,9 @@ const POSITIONING = JSON.parse(
  * 定位是「入户门与玻璃门、全截面实心不锈钢」—— 插芯锁装不上无框玻璃门，
  * 执手本体的材质图上也没写。品类文案对大多数成员成立，对它不成立，
  * 就给它自己的一份，而不是把 114 个产品的品类文案改成最小公约数。
+ *
+ * 2026-09-24：306 PS 是通道推杠，自己没有锁舌，靠另配的插芯锁体锁闭。品类场景
+ * 「逃生与出口门」会把它说成逃生装置 —— 安全问题，所以它有自己的一份。
  */
 function positioning(product) {
   if (product.positioning) return product.positioning;
@@ -127,7 +150,7 @@ const MODEL_SUFFIX_GLOSS = {
   美标: { en: "US Standard", es: "norma EE.UU.", pt: "norma EUA" },
   圆角: { en: "Radiused", es: "esquina redonda", pt: "canto redondo" },
   偏轴: { en: "Offset Pivot", es: "eje descentrado", pt: "eixo descentrado" },
-  中轴: { en: "Centre Pivot", es: "eje central", pt: "eixo central" },
+  中轴: { en: "Center Pivot", es: "eje central", pt: "eixo central" },
   焊头: { en: "Welded Knuckle", es: "nudillo soldado", pt: "nó soldado" },
   拉手: { en: "Pull", es: "tirador", pt: "puxador" },
   双钉防盗合页: { en: "Twin-Pin Security", es: "antirrobo 2 pasadores", pt: "antirroubo 2 pinos" },
@@ -250,13 +273,13 @@ function dimensionPhrase(product, locale, full = false) {
   */
   if ([].concat(product.categoryPath ?? [])[0] === "lock-cases") {
     const mm = (label) => (String(spec(product, label)?.value ?? "").match(/^(\d+(?:\.\d+)?)\s*mm$/i) ?? [])[1];
-    const c = mm("Centre distance");
+    const c = mm("Center distance");
     const b = mm("Backset");
     if (c && b) {
       /* 标题用短写（西葡的品类名长，全称放不进 60 个字符），描述用全称 */
       return (full
-        ? { en: `${c}mm centre distance, ${b}mm backset`, es: `distancia entre ejes de ${c} mm, entrada de ${b} mm`, pt: `distância entre centros de ${c} mm, distância ao eixo de ${b} mm` }
-        : { en: `${c}mm centre, ${b}mm backset`, es: `ejes ${c} mm, entrada ${b} mm`, pt: `centros ${c} mm, eixo ${b} mm` })[locale];
+        ? { en: `${c}mm center distance, ${b}mm backset`, es: `distancia entre ejes de ${c} mm, entrada de ${b} mm`, pt: `distância entre centros de ${c} mm, distância ao eixo de ${b} mm` }
+        : { en: `${c}mm center, ${b}mm backset`, es: `ejes ${c} mm, entrada ${b} mm`, pt: `centros ${c} mm, eixo ${b} mm` })[locale];
     }
   }
   for (const source of DIMENSION_SOURCES) {
@@ -403,7 +426,7 @@ function composeTitle(product, locale) {
     就成了「Tubular Knob Lock Cerradura tubular de perilla」。这种只用本语言的名字。
   */
   const head = modelIsName(product) || name.toLowerCase().startsWith(model.toLowerCase()) ? name : `${model} ${name}`;
-  const dim = dimensionPhrase(product, locale);
+  const dim = thicknessAfter(displayName(product, locale), dimensionPhrase(product, locale), locale);
   const mat = unlessNamed(materialPhrase(product, locale), name);
   const tail = ` | ${BRAND[locale]}`;
 
@@ -426,7 +449,7 @@ function composeTitle(product, locale) {
     if (words.length && overlap / words.length >= 0.4) useRaw = null;
   }
 
-  const use = useRaw ? `${FOR[locale]} ${useRaw}` : null;
+  const use = useRaw ? `${connector(name, locale)} ${useRaw}` : null;
   // 场景接在品类名后面，用空格而不是破折号 —— 它读起来是名字的一部分。
   const withUse = use ? `${head} ${use}` : head;
   /*
@@ -444,7 +467,7 @@ function composeTitle(product, locale) {
     const pick = fromDoor ?? (parts.length === 1 ? parts[0].split(" ").slice(1).join(" ") : parts[0]);
     if (pick && pick !== useRaw) useShortRaw = pick;
   }
-  const withUseShort = useShortRaw ? `${head} ${FOR[locale]} ${useShortRaw}` : null;
+  const withUseShort = useShortRaw ? `${head} ${connector(name, locale)} ${useShortRaw}` : null;
 
   const build = (stem, parts) => stem + (parts.length ? `, ${parts.join(", ")}` : "") + tail;
 
@@ -538,7 +561,7 @@ function composeDescription(product, locale) {
     if (v && facts.length < 3) facts.push(v);
   };
 
-  const dim = dimensionPhrase(product, locale, true);
+  const dim = thicknessAfter(name, dimensionPhrase(product, locale, true), locale);
   const mat = unlessNamed(materialPhrase(product, locale), name);
 
   const row = (label) => {
@@ -593,7 +616,7 @@ function composeDescription(product, locale) {
   }
 
   const lead = modelIsName(product) ? cap0(name) : `${model} ${name.toLowerCase()}`;
-  const opener = useRaw ? `${lead} ${FOR[locale]} ${useRaw.toLowerCase()}.` : `${lead}.`;
+  const opener = useRaw ? `${lead} ${connector(name, locale)} ${useRaw.toLowerCase()}.` : `${lead}.`;
 
   /*
     事实在前，卖点在后。卖点是整个品类共享的一句话，如果排在前面，同品类的
@@ -664,10 +687,18 @@ function audit(product, locale, title, desc) {
   const cylinder = [].concat(product.categoryPath ?? [])[0] === "lock-cylinders";
   const rest = cylinder ? body.slice(0, MAX) : body.slice(0, MAX).replace(model, "");
   const hasData = dimensionPhrase(product, locale) || materialPhrase(product, locale) || positioning(product);
-  if (hasData && !(/\d/.test(rest) || / (for|para) /i.test(rest) || rest.includes(","))) {
-    /* 型号 + 名字本身已超过 40 个字符，剩不到 20 个字符放长尾：这是命名问题，列出来但不拦发布 */
-    const head = modelIsName(product) ? displayName(product, locale) : `${model} ${displayName(product, locale)}`;
-    (head.length > 40 ? warnings : issues).push(`前 60 字符无长尾成分  ${tag}`);
+  if (hasData && !(/\d/.test(rest) || / (for|para|on|en|em) /i.test(rest) || rest.includes(","))) {
+    /*
+      命名问题（警告，不拦发布）：型号 + 名字 + 连接词 + 这个产品真实的场景，本来就放不进 60 个字符。
+      原来是固定的「名字超过 40 个字符」，306 PS 的西语名 36 个字符、真实场景 32 个字符，
+      两者相加放不下，却被当成生成器错误拦住发布（2026-09-24）。
+    */
+    const name = displayName(product, locale);
+    const head = modelIsName(product) ? name : `${model} ${name}`;
+    const pos = positioning(product);
+    const use = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : "";
+    const fits = !use || head.length + connector(name, locale).length + use.length + 2 <= MAX;
+    (head.length > 40 || !fits ? warnings : issues).push(`前 60 字符无长尾成分  ${tag}`);
   }
   if (CERT.test(title) || CERT.test(desc)) issues.push(`出现认证/等级措辞  ${tag}`);
 }

@@ -172,7 +172,7 @@ function seriesEn(series, fallbackName) {
  * ------------------------------------------------------------------------ */
 const SUMMARY_SPEC_PRIORITY = [
   "Backset",
-  "Centre distance",
+  "Center distance",
   "Center Distance",
   "Plate size",
   "Size",

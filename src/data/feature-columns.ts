@@ -163,7 +163,7 @@ export function featureColumns(): FeatureColumn[] {
       },
       eyebrow: { en: "Column · Drawings", es: "Columna · Planos", pt: "Coluna · Desenhos" },
       title: {
-        en: "Backset and centre distance: reading a lock case number",
+        en: "Backset and center distance: reading a lock case number",
         es: "Entrada y distancia entre ejes: leer una referencia de cerradura",
         pt: "Backset e distância entre eixos: como ler o número de uma caixa de fechadura",
       },
@@ -195,7 +195,7 @@ export function featureColumnsHeading(locale: Locale = "en"): string {
 export function featureColumnsLede(locale: Locale = "en"): string {
   if (locale === "es") return "Temas que el catálogo puede responder a fondo, no productos sueltos.";
   if (locale === "pt") return "Temas que o catálogo responde a fundo, e não produtos soltos.";
-  return "Subjects the catalogue can answer in depth, rather than products on their own.";
+  return "Subjects the catalog can answer in depth, rather than products on their own.";
 }
 
 export function featureColumnsCta(locale: Locale = "en"): string {

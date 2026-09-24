@@ -40,7 +40,7 @@ const COPY = {
     stepsLabel: "questions",
     modelsLabel: "models it selects from",
     outValue: "A model number",
-    outNote: "with backset, centre distance, finish and handing.",
+    outNote: "with backset, center distance, finish and handing.",
     cta: "Open the configurator",
     reassure: "No account, no email, nothing saved.",
   },

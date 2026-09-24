@@ -93,7 +93,7 @@ test("gibberish suggests nothing rather than something arbitrary", () => {
 
 test("a product href resolves to its category href", () => {
   const product = index.find((e) => e.model === "d101 ab");
-  assert.ok(product, "the fixture model still exists in the catalogue");
+  assert.ok(product, "the fixture model still exists in the catalog");
   const href = categoryHrefOf(product.href);
   assert.equal(href, "/products/deadbolts/");
   assert.ok(

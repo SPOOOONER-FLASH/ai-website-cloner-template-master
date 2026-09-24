@@ -36,10 +36,10 @@ const FROM_DRAWINGS = {
     remove: ["Size"],
     specs: [
       ["Length", "600mm"],
-      ["Centre distance", "148mm"],
+      ["Center distance", "148mm"],
       ["Tube diameter", "32mm"],
       ["Standoff", "26mm"],
-      ["Fixing centre", "30mm"],
+      ["Fixing center", "30mm"],
       ["Glass gap", "7.5mm"],
     ],
   },
@@ -48,10 +48,10 @@ const FROM_DRAWINGS = {
     remove: ["Size"],
     specs: [
       ["Length", "600mm"],
-      ["Centre distance", "147mm"],
+      ["Center distance", "147mm"],
       ["Tube diameter", "32mm"],
       ["Standoff", "26mm"],
-      ["Fixing centre", "30mm"],
+      ["Fixing center", "30mm"],
       ["Glass gap", "8mm"],
     ],
   },
@@ -60,10 +60,10 @@ const FROM_DRAWINGS = {
     remove: ["Size"],
     specs: [
       ["Length", "600mm"],
-      ["Centre distance", "149mm at the head, 133mm at the foot — tapered"],
+      ["Center distance", "149mm at the head, 133mm at the foot — tapered"],
       ["Tube diameter", "32mm, tapering to 19mm"],
       ["Standoff", "26mm"],
-      ["Fixing centre", "34mm"],
+      ["Fixing center", "34mm"],
       ["Glass gap", "8mm"],
     ],
   },
@@ -72,11 +72,11 @@ const FROM_DRAWINGS = {
     remove: ["Size"],
     specs: [
       ["Length", "600mm"],
-      ["Centre distance", "125mm"],
+      ["Center distance", "125mm"],
       ["Grip length", "140mm"],
       ["Tube diameter", "32mm, tapering to 18.5mm"],
       ["Standoff", "26mm"],
-      ["Fixing centre", "30mm"],
+      ["Fixing center", "30mm"],
       ["Glass gap", "7mm"],
     ],
   },
@@ -85,10 +85,10 @@ const FROM_DRAWINGS = {
     remove: ["Size"],
     specs: [
       ["Length", "600mm"],
-      ["Centre distance", "148mm"],
+      ["Center distance", "148mm"],
       ["Tube diameter", "32mm"],
       ["Standoff", "26mm"],
-      ["Fixing centre", "30mm"],
+      ["Fixing center", "30mm"],
       ["Glass gap", "8mm"],
     ],
   },
@@ -97,7 +97,7 @@ const FROM_DRAWINGS = {
     specs: [
       ["Plate size", "200 × 65mm"],
       ["Plate thickness", "1.2mm"],
-      ["Grip centre distance", "148mm"],
+      ["Grip center distance", "148mm"],
       ["Projection", "60mm"],
       ["Grip section", "19mm"],
       ["Slot width", "20mm"],
@@ -208,8 +208,8 @@ const FROM_DRAWINGS = {
       rather than labelled "backset", because the drawing does not label it either.
     */
     specs: [
-      ["Faceplate to cylinder centre", "90mm"],
-      ["Cylinder centre to back", "45mm"],
+      ["Faceplate to cylinder center", "90mm"],
+      ["Cylinder center to back", "45mm"],
     ],
   },
   "027-panic-exit-device": {
@@ -217,7 +217,7 @@ const FROM_DRAWINGS = {
     specs: [
       ["Lever length", "122mm"],
       ["Plate width", "75mm"],
-      ["Fixing centres", "52.5mm"],
+      ["Fixing centers", "52.5mm"],
       ["Plate height", "77.5mm"],
       ["Lever drop", "58mm"],
       ["Spindle length", "60mm"],
@@ -268,7 +268,7 @@ const FROM_DRAWINGS = {
     specs: [
       ["Plate size", "300 × 75mm"],
       ["Plate thickness", "1.5mm"],
-      ["Grip centre distance", "179mm"],
+      ["Grip center distance", "179mm"],
       ["Projection", "60mm"],
       ["Cylinder cutout", "Ø32mm"],
     ],

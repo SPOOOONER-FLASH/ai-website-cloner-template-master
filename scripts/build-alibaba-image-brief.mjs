@@ -45,7 +45,7 @@ const MODEL_RULES = [
   {
     what: "round tube",
     categories: /glass-door-accessories|stainless-steel-handles/,
-    needs: ["Tube diameter", "Tube Thickness", "Length", "Centre distance", "Standoff"],
+    needs: ["Tube diameter", "Tube Thickness", "Length", "Center distance", "Standoff"],
   },
   {
     what: "flat plate",

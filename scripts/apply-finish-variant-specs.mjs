@@ -65,10 +65,10 @@ const GEOMETRY = new Set([
   "Rose diameter",
   "Rose thickness",
   "Projection",
-  "Centre distance",
+  "Center distance",
   "Overall length",
   "Grip section",
-  "Fixing centre",
+  "Fixing center",
   "Backset",
   "Spindle",
 ]);

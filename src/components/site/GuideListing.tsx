@@ -13,7 +13,7 @@ const COPY = {
     intro: 'Hardware guides for the decisions before a purchase order. Dimensions, materials, standards and the questions worth asking.',
     find: 'Find a guide', read: 'Read the guide',
     material: 'Material. Surface. Character.',
-    materialText: 'A finish code is more than a colour. Explore the published codes and the differences that matter when specifying hardware.',
+    materialText: 'A finish code is more than a color. Explore the published codes and the differences that matter when specifying hardware.',
     evidence: 'Start with the evidence.',
     evidenceText: 'Every figure should lead back to a published source. Where a value is not published, we say so rather than estimate it.',
     documents: 'Explore available documents', contact: 'Discuss your requirements',

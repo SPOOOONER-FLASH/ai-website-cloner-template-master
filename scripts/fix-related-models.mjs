@@ -85,7 +85,7 @@ for (const r of repaired) {
   console.log(`${WRITE ? "fixed " : "would fix "}${r.path}: "${r.from}" → "${r.to}"`);
 }
 for (const u of unresolved) {
-  const why = u.matches.length ? `ambiguous: ${u.matches.join(", ")}` : "no catalogue model";
+  const why = u.matches.length ? `ambiguous: ${u.matches.join(", ")}` : "no catalog model";
   console.log(`LEFT   ${u.path}: "${u.entry}" — ${why}`);
 }
 

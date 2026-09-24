@@ -109,7 +109,7 @@ test("the model figure is whatever it was handed, never a literal", () => {
   alone would let the regression back in — a parent that passes a literal, or a child that
   ignores the prop.
 */
-test("the capability figure is counted from the catalogue, on the server", () => {
+test("the capability figure is counted from the catalog, on the server", () => {
   const child = readFileSync(
     new URL("../components/site/CapabilityChain.tsx", import.meta.url),
     "utf8",
@@ -122,7 +122,7 @@ test("the capability figure is counted from the catalogue, on the server", () =>
   assert.match(
     parent,
     /<CapabilityChain[^>]*models=\{publishedProducts\.length\}/,
-    "CompanyOverview must pass publishedProducts.length, so the page updates with the catalogue",
+    "CompanyOverview must pass publishedProducts.length, so the page updates with the catalog",
   );
   assert.match(
     child,
@@ -132,7 +132,7 @@ test("the capability figure is counted from the catalogue, on the server", () =>
   assert.doesNotMatch(
     child,
     /from "@\/data\/products"/,
-    "CapabilityChain is a client component: importing the catalogue ships it to the browser",
+    "CapabilityChain is a client component: importing the catalog ships it to the browser",
   );
 });
 

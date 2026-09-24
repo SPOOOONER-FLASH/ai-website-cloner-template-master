@@ -27,7 +27,7 @@ for (const job of jobs) {
     const name = entry.src.split('/').at(-1);
     const snapshot = resolve(output, 'references', name);
     if (!existsSync(snapshot)) copyFileSync(file, snapshot);
-    if (sha(file) !== sha(snapshot)) throw Error(`Catalogue source drift: ${entry.src}; keep old snapshot and review explicitly.`);
+    if (sha(file) !== sha(snapshot)) throw Error(`Catalog source drift: ${entry.src}; keep old snapshot and review explicitly.`);
     const metadata = await sharp(snapshot).metadata();
     records.push({ source: entry.src, snapshot: rel(snapshot), sha256: sha(snapshot), width: metadata.width, height: metadata.height });
   }

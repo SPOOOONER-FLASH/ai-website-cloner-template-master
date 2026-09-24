@@ -85,7 +85,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Aço inoxidável acetinado",
     family: "solid",
     evidence: "catalogue",
-    note: "Written out in full on 42 catalogue records as “Satin Stainless Steel (SSS)”. Solid stainless, not a plating — the colour goes all the way through.",
+    note: "Written out in full on 42 catalog records as “Satin Stainless Steel (SSS)”. Solid stainless, not a plating — the color goes all the way through.",
     noteEs: "Escrito en 42 fichas del catálogo como «Satin Stainless Steel (SSS)». Inoxidable macizo, no un recubrimiento.",
   },
   {
@@ -195,7 +195,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "Metal escurecido",
     family: "coated",
     evidence: "client",
-    note: "Written out as “Gun metal (GM)” in the catalogue and confirmed by the client on 2026-09-13 for LH852 GMBK. A dark grey, not a black.",
+    note: "Written out as “Gun metal (GM)” in the catalog and confirmed by the client on 2026-09-13 for LH852 GMBK. A dark gray, not a black.",
     noteEs: "Escrito como «Gun metal (GM)» y confirmado por el cliente el 2026-09-13 para LH852 GMBK. Un gris oscuro, no un negro.",
   },
   {
@@ -225,7 +225,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: "PVD",
     family: "process",
     evidence: "catalogue",
-    note: "A deposition process rather than a colour — PVD names how the layer is applied, and still needs a colour beside it.",
+    note: "A deposition process rather than a color — PVD names how the layer is applied, and still needs a color beside it.",
     noteEs: "Un proceso de deposición, no un color: PVD indica cómo se aplica la capa y necesita un color al lado.",
   },
 
@@ -256,7 +256,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "plated",
     evidence: "client",
     // Client's own term (kept as data, never rendered — client rule 2026-09-23): 铜亮光
-    note: "Client confirmation, 2026-09-15: ⚠ Same finish as PB, with the letters reversed — and PB is the form written out in full on five catalogue records. BP/PB and NB/BN are the two reversal pairs in this table; they are the most likely place for a finish to be ordered wrong.",
+    note: "Client confirmation, 2026-09-15: ⚠ Same finish as PB, with the letters reversed — and PB is the form written out in full on five catalog records. BP/PB and NB/BN are the two reversal pairs in this table; they are the most likely place for a finish to be ordered wrong.",
     noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Es el mismo acabado que PB con las letras invertidas, y PB es la forma escrita en cinco fichas del catálogo. BP/PB y NB/BN son los dos pares invertidos de esta tabla: el punto donde es más probable pedir un acabado equivocado.",
   },
   {
@@ -267,7 +267,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "plated",
     evidence: "client",
     // Client's own term (kept as data, never rendered — client rule 2026-09-23): 黑镍
-    note: "Client confirmation, 2026-09-15: ⚠ This is the same finish as BN, two rows above, with the letters the other way round. Both are in use on catalogue records. Quote the model's own code as printed and do not normalise it.",
+    note: "Client confirmation, 2026-09-15: ⚠ This is the same finish as BN, two rows above, with the letters the other way round. Both are in use on catalog records. Quote the model's own code as printed and do not normalise it.",
     noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Es el mismo acabado que BN, dos filas más arriba, con las letras invertidas. Ambos se usan en el catálogo. Cite el código tal y como aparece en la ficha del modelo y no lo normalice.",
   },
   {
@@ -300,7 +300,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "plated",
     evidence: "client",
     // Client's own term (kept as data, never rendered — client rule 2026-09-23): 光铬
-    note: "Client confirmation, 2026-09-15: the same words given for CB. See that row. Both spellings appear in the catalogue and neither is being retired, so read whichever the model prints.",
+    note: "Client confirmation, 2026-09-15: the same words given for CB. See that row. Both spellings appear in the catalog and neither is being retired, so read whichever the model prints.",
     noteEs: "Confirmación del cliente, 2026-09-15: las mismas palabras dadas para CB. Vea esa fila. Ambas grafías están en el catálogo y ninguna se retira, así que lea la que imprima el modelo.",
   },
   {
@@ -311,7 +311,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "coated",
     evidence: "client",
     // Client's own term (kept as data, never rendered — client rule 2026-09-23): 黑色
-    note: "Client confirmation, 2026-09-15: ⚠ Read this one carefully if you know the letters from elsewhere: in general trade use BRN reads as brown or bronze, and here it does not — the factory uses it for black. ORB and BL are also black in this catalogue. Three codes, one colour.",
+    note: "Client confirmation, 2026-09-15: ⚠ Read this one carefully if you know the letters from elsewhere: in general trade use BRN reads as brown or bronze, and here it does not — the factory uses it for black. ORB and BL are also black in this catalog. Three codes, one color.",
     noteEs: "Confirmación del cliente, 2026-09-15: ⚠ Atención si conoce estas letras de otro sitio: en el sector BRN suele leerse como marrón o bronce, y aquí no — la fábrica lo usa para negro. ORB y BL también son negros en este catálogo. Tres códigos, un color.",
   },
   {
@@ -354,7 +354,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     namePt: null,
     family: null,
     evidence: "unconfirmed",
-    note: "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalogue's vocabulary.",
+    note: "A single letter, on five records. Too short to guess from — Nickel, Natural and Nylon are all live in this catalog's vocabulary.",
     noteEs: "Una sola letra, en cinco fichas. Demasiado corta para deducirla: «Nickel», «Natural» y «Nylon» existen en el vocabulario de este catálogo.",
   },
   {
@@ -365,7 +365,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "coated",
     evidence: "client",
     // Client's own term (kept as data, never rendered — client rule 2026-09-23): 白色
-    note: "Client confirmation, 2026-09-15: A coating, so the colour is on the surface — treat it as you would MB for wear at the strike and around the fixings.",
+    note: "Client confirmation, 2026-09-15: A coating, so the color is on the surface — treat it as you would MB for wear at the strike and around the fixings.",
     noteEs: "Confirmación del cliente, 2026-09-15: Es un recubrimiento, así que el color está en la superficie: trátelo como MB en cuanto al desgaste en el cerradero y alrededor de las fijaciones.",
   },
 ];
@@ -397,7 +397,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     nameEs: "Entrada — con llave por fuera",
     namePt: "Entrada — chaveada por fora",
     evidence: "catalogue",
-    note: "The most common suffix in the catalogue. Key outside, turn or lever inside.",
+    note: "The most common suffix in the catalog. Key outside, turn or lever inside.",
     noteEs: "El sufijo más frecuente del catálogo. Llave por fuera, perilla o manija por dentro.",
   },
   {
@@ -460,7 +460,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     nameEs: "Doble llave",
     namePt: "Chave dupla",
     evidence: "client",
-    note: "Eight cylinders and one lock case carry it (counted 2026-09-22). Confirmed by the client in writing, 2026-09-21: DK is the cylinder that opens with a key from both sides. He added the caveat himself, and it belongs here: different customers use this code differently and there is no industry-wide standard for it. So treat DK on an incoming enquiry as a question rather than an instruction — confirm which function the buyer means before quoting, because the code alone does not settle it.",
+    note: "Eight cylinders and one lock case carry it (counted 2026-09-22). Confirmed by the client in writing, 2026-09-21: DK is the cylinder that opens with a key from both sides. He added the caveat himself, and it belongs here: different customers use this code differently and there is no industry-wide standard for it. So treat DK on an incoming inquiry as a question rather than an instruction — confirm which function the buyer means before quoting, because the code alone does not settle it.",
     noteEs: "Lo llevan ocho cilindros y una caja de cerradura (contados el 2026-09-22). Confirmado por el cliente por escrito el 2026-09-21: DK es el cilindro que abre con llave por ambos lados. Él mismo añadió la advertencia, y va aquí: distintos clientes usan este código de forma distinta y no hay un estándar del sector. Así que un DK en una consulta entrante es una pregunta, no una instrucción: confirme qué función quiere el comprador antes de cotizar.",
   },
   {

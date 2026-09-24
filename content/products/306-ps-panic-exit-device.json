@@ -101,12 +101,12 @@
     "306-S",
     "306-D"
   ],
-  "seoTitle": "306 PS Passage Push Bar for Fire Escape & Exit Doors | Canton Hyland",
-  "seoDescription": "306 PS passage push bar for fire escape & exit doors. Passage function. Factory direct, samples and quotation on request.",
+  "seoTitle": "306 PS Passage Push Bar for Doors Latched by a Mortise Lock | Canton Hyland",
+  "seoDescription": "306 PS passage push bar for doors latched by a mortise lock. Passage function. Factory direct, samples and quotation on request.",
   "seoTitleEs": "306 PS Barra de empuje de paso libre | Canton Hyland",
-  "seoDescriptionEs": "Barra de empuje 306 PS de paso libre, sin picaporte propio: el enclavamiento corre a cargo de una caja de cerradura independiente. No es un dispositivo antipánico.",
+  "seoDescriptionEs": "306 PS barra de empuje de paso libre para puertas con cerradura de embutir. Directo de fábrica, muestras y cotización a pedido.",
   "seoTitlePt": "306 PS Barra de empurrar de passagem livre | Canton Hyland",
-  "seoDescriptionPt": "Barra de empurrar 306 PS de passagem livre, sem lingueta própria: o travamento fica a cargo de uma caixa de fechadura separada. Não é dispositivo antipânico.",
+  "seoDescriptionPt": "306 PS barra de empurrar de passagem livre para portas com fechadura de embutir. Direto da fábrica, amostras e orçamento sob consulta.",
   "nameEs": "Barra de empuje de paso libre",
   "specsEs": [
     {
@@ -130,5 +130,13 @@
       "label": "Equipado com",
       "value": "Caixa de fechadura separada, fornecida conforme a aplicação"
     }
-  ]
+  ],
+  "positioning": {
+    "use": "Doors Latched by a Mortise Lock",
+    "useEs": "puertas con cerradura de embutir",
+    "usePt": "portas com fechadura de embutir",
+    "pitch": "It has no latch bolt of its own. A separate mortise lock case does the latching, so order the two together.",
+    "pitchEs": "No tiene pestillo propio. El cierre lo hace una cerradura de embutir aparte, así que se piden juntas.",
+    "pitchPt": "Não tem trinco próprio. Quem trava é uma fechadura de embutir separada, por isso as duas vão no mesmo pedido."
+  }
 }

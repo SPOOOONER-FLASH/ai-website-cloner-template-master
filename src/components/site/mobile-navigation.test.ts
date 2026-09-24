@@ -67,7 +67,7 @@ test("the drawer opens on the approved buyer question before utility navigation"
   assert.match(drawer, /experience\.primary\.map/);
 });
 
-test("the drawer lists the catalogue itself, not just a Products hub link", () => {
+test("the drawer lists the catalog itself, not just a Products hub link", () => {
   assert.match(drawer, /categories\.map/);
   assert.match(drawer, /categories: MenuCategory\[\]/);
 

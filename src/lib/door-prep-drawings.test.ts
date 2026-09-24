@@ -85,7 +85,7 @@ describe("door preparation drawings", () => {
       );
       assert.ok(
         values.includes(entry.source.centre),
-        `${slug}: centre figure "${entry.source.centre}" is not a spec row any more`,
+        `${slug}: center figure "${entry.source.centre}" is not a spec row any more`,
       );
 
       /* The drawn numbers must be the numbers in those rows, not a rounding of them. */
@@ -95,7 +95,7 @@ describe("door preparation drawings", () => {
       );
       assert.ok(
         entry.source.centre.includes(String(entry.centres)),
-        `${slug}: drew ${entry.centres} centres from "${entry.source.centre}"`,
+        `${slug}: drew ${entry.centres} centers from "${entry.source.centre}"`,
       );
     }
   });
@@ -108,7 +108,7 @@ describe("door preparation drawings", () => {
         /Not a product outline/,
         `${slug} does not disclaim being an outline drawing`,
       );
-      assert.match(svg, /millimetres/, `${slug} does not state its units`);
+      assert.match(svg, /(?:millimeters|millimetres)/, `${slug} does not state its units`);
     }
   });
 

@@ -44,7 +44,7 @@ function publishedCount(): number {
   return published;
 }
 
-test("every model count written into the FAQ matches the published catalogue", () => {
+test("every model count written into the FAQ matches the published catalog", () => {
   const faq = readFileSync("content/faq.json", "utf8");
   const expected = publishedCount();
 

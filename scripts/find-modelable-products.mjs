@@ -83,7 +83,7 @@ const ARCHETYPES = [
     like: "T2973",
     slots: [
       ["Overall length", "Available lengths", "Grip length"],
-      ["Centre distance"],
+      ["Center distance"],
       ["Grip section"],
       ["Projection"],
     ],

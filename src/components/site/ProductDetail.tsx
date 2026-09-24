@@ -59,7 +59,7 @@ const COPY = {
     onRequest: "Information available on request",
     referenceOnRequest: "Reference available on request",
     quote: "Request a quote",
-    downloadCatalogue: "Download the export catalogue (PDF)",
+    downloadCatalogue: "Download the export catalog (PDF)",
     images: "Product images",
     watch: "Watch it work",
     breadcrumb: "Breadcrumb",
@@ -72,7 +72,7 @@ const COPY = {
     noViews:
       "Additional product views are not yet available. Request drawings or samples from our export team.",
     noSpecs:
-      "Verified dimensions are pending the current technical catalogue. No values have been inferred from similar products.",
+      "Verified dimensions are pending the current technical catalog. No values have been inferred from similar products.",
     noCertificates:
       "No product-specific certificate is published for this model. Company credentials remain available through the export team.",
     noDownloads:

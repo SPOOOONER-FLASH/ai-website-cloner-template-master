@@ -73,7 +73,7 @@ const COPY = {
     quoteHelp:
       "The link carries your selections, so the export team sees the same configuration you do.",
     yourChoices: "Your selection",
-    allProducts: "Every model in the catalogue",
+    allProducts: "Every model in the catalog",
     step: "Step",
     of: "of",
     noPhoto: "Photography for this model is being prepared.",

@@ -193,7 +193,7 @@ export const UNMAPPED_FINISHES: Record<string, string> = {
   AB: "Antique Brass is a family of relieved finishes, not one A156.18 number",
   AC: "Antique Copper has no A156.18 equivalent and copper is not a base group",
   BN: "Black Nickel has no A156.18 equivalent",
-  SP: "Bright Polished names a process, not a colour or a base metal",
+  SP: "Bright Polished names a process, not a color or a base metal",
   SS: "Stainless Steel does not state satin or polished — 630 and 629 both fit",
   NP: "Nickel Plated does not state bright or satin — 618 and 619 both fit",
   "MB over brass or stainless":

@@ -49,9 +49,9 @@ import type { Product } from "../data/types.ts";
  */
 const FIGURE_LABELS = [
   "Backset",
-  "Centre distance",
+  "Center distance",
   "Center Distance",
-  "Grip centre distance",
+  "Grip center distance",
   "Plate length",
   "Bar Length",
   "Length",

@@ -448,7 +448,7 @@ export const OPTION_NOTES: Record<string, string> = {
   latches: "The sprung bolt that holds a door closed without locking it.",
   "door-stoppers": "Stops the leaf, and the handle on it, before either reaches the wall.",
   "security-door-guards":
-    "Lets the door open a few centimetres on a restrictor, so a caller can be spoken to before being let in.",
+    "Lets the door open a few centimeters on a restrictor, so a caller can be spoken to before being let in.",
   indicators: "Shows occupied or vacant from outside, for a cubicle or a washroom.",
   "exterior-trim":
     "The outside handle for a panic device: the escape bar works from inside regardless, and this decides whether the door can also be opened from outside.",

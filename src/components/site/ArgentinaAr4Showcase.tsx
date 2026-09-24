@@ -13,7 +13,7 @@ const copy = {
   en: {
     eyebrow: "Seasonal market focus · Argentina",
     title: "HYDE Argentina AR-4",
-    body: "Four compact mortise lock bodies selected for Argentina-market distributors, private-label programmes and OEM enquiries.",
+    body: "Four compact mortise lock bodies selected for Argentina-market distributors, private-label programs and OEM inquiries.",
     cta: "Explore the AR-4 collection",
     model: "Model",
     material: "Nickel-plated iron lock case",

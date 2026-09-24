@@ -39,7 +39,7 @@ const COPY = {
     home: "Home",
     news: "News + Press",
     back: "← Back to all news",
-    pressEnquiries: "Press enquiries",
+    pressEnquiries: "Press inquiries",
     contact: "Contact us",
     mentioned: "Products mentioned",
     pressKit: "Press kit",

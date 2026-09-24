@@ -94,7 +94,7 @@ describe("hardware glossary", () => {
     }
   });
 
-  it("names spec labels that exist in the catalogue", () => {
+  it("names spec labels that exist in the catalog", () => {
     for (const term of HARDWARE_TERMS) {
       for (const label of term.specLabels) {
         assert.ok(

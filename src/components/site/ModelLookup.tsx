@@ -86,12 +86,12 @@ const COPY = {
       "The part did not change. Its name did, so that the name and the specification agree. Every old address below still resolves — it returns a permanent redirect to the page named beside it, so a link in an old email keeps working.",
     oldAddress: "Old address",
     nowCalled: "Now",
-    retiredTitle: "Retired catalogue paths",
+    retiredTitle: "Retired catalog paths",
     retiredIntro: "A whole category was withdrawn and everything under it moved.",
     movedProducts: (n: number) => (n === 1 ? "1 product moved" : `${n} products moved`),
-    notShownTitle: "In the catalogue, not on the site",
+    notShownTitle: "In the catalog, not on the site",
     notShownIntro: (n: number) =>
-      `${n} models are in the catalogue and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.`,
+      `${n} models are in the catalog and have no published photograph, so the site does not list them. They are not discontinued — we will not use that word about a product we are still making. Send the model number and we will send the photograph and the specification.`,
     notShownNote:
       "These are printed as text rather than links on purpose: the page behind each one has no photograph on it yet, and sending you to a blank page is not an answer.",
     ask: "Ask about a model number",

@@ -160,6 +160,6 @@ export function svgDocument({ body, width, height, title, note }) {
 }
 
 /** The units note every drawing carries once, bottom-left. */
-export function unitsNote(x, y, text = "All dimensions in millimetres") {
+export function unitsNote(x, y, text = "All dimensions in millimeters") {
   return `<text x="${x}" y="${y}" font-size="10" fill="${THIN}" font-family="'Archivo','Helvetica Neue',Arial,sans-serif">${esc(text)}</text>`;
 }

@@ -364,7 +364,7 @@ if (process.argv.includes("--write")) {
   console.log(`  ${uncovered.length} uncovered long-tail terms`);
   console.log(`  ${selected.length} selected models, ${totalVariants} variants, ${totalPhotos} with a photo`);
   const missing = selected.filter((s) => s.variants === 0);
-  if (missing.length) console.log(`  ⚠ not in the catalogue: ${missing.map((m) => m.stem).join(", ")}`);
+  if (missing.length) console.log(`  ⚠ not in the catalog: ${missing.map((m) => m.stem).join(", ")}`);
 } else {
   console.log(doc);
 }

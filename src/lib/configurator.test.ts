@@ -39,7 +39,7 @@ const ALL = readdirSync(DIR)
   .map((file) => JSON.parse(readFileSync(`${DIR}/${file}`, "utf8")) as FinderProduct);
 const catalogue = ALL.filter((product) => product.heroImage?.src);
 
-test("the catalogue is big enough for this test to mean anything", () => {
+test("the catalog is big enough for this test to mean anything", () => {
   assert.ok(catalogue.length > 300, `only ${catalogue.length} products`);
 });
 
@@ -227,7 +227,7 @@ test("every category and sub-category the configurator can offer has a definitio
   for (const key of ["category", "subCategory"] as const) {
     for (const option of optionsFor(catalogue, {}, key)) offered.add(option.value);
   }
-  assert.ok(offered.size > 20, "expected the catalogue to offer both levels of taxonomy");
+  assert.ok(offered.size > 20, "expected the catalog to offer both levels of taxonomy");
 
   const undefinedTerms = [...offered].filter((value) => !noteFor(value));
   assert.deepEqual(

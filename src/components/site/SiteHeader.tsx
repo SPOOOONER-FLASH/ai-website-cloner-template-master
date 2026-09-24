@@ -93,7 +93,7 @@ const buyShelfLinks = {
   en: [
     { label: "Contact", detail: "Quotes, pricing and export specialists", href: "/contact" },
     { label: "FAQ", detail: "Minimum order, lead time, samples, payment, OEM", href: "/faq" },
-    { label: "Downloads", detail: "Catalogue and verified documents", href: "/downloads" },
+    { label: "Downloads", detail: "Catalog and verified documents", href: "/downloads" },
   ],
   es: [
     { label: "Contacto", detail: "Cotizaciones, precios y especialistas de exportación", href: "/contact" },

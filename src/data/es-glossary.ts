@@ -69,7 +69,7 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Latch extension": "Salida del picaporte",
   Thickness: "Espesor",
   Installation: "Instalación",
-  "Centre distance": "Distancia entre ejes",
+  "Center distance": "Distancia entre ejes",
   Color: "Color",
   "Cross bore": "Perforación principal",
   "Door Type": "Tipo de puerta",
@@ -225,15 +225,15 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Lever drop": "Caída de la manija",
   Projection: "Saliente",
   Standoff: "Separador",
-  "Fixing centre": "Centro de fijación",
-  "Fixing centres": "Centros de fijación",
+  "Fixing center": "Centro de fijación",
+  "Fixing centers": "Centros de fijación",
   "Fixing screws": "Tornillos de fijación",
   "Glass gap": "Luz para el vidrio",
   "Plate size": "Medida de la placa",
   "Plate width": "Ancho de la placa",
   "Plate height": "Alto de la placa",
   "Plate thickness": "Espesor de la placa",
-  "Grip centre distance": "Distancia entre centros del asa",
+  "Grip center distance": "Distancia entre centros del asa",
   "Grip section": "Sección del asa",
   "Grip length": "Longitud del asa",
   "Slot width": "Ancho de la ranura",
@@ -256,8 +256,8 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Bolt projection": "Salida del pestillo",
   "Spindle length": "Longitud del cuadradillo",
   Spindle: "Cuadradillo",
-  "Faceplate to cylinder centre": "Del frente al centro del cilindro",
-  "Cylinder centre to back": "Del centro del cilindro al fondo",
+  "Faceplate to cylinder center": "Del frente al centro del cilindro",
+  "Cylinder center to back": "Del centro del cilindro al fondo",
   // arrived with the stahlock import
   "Key options": "Opciones de llave",
   "Spindle hole construction": "Construcción del orificio del cuadradillo",
@@ -348,8 +348,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Solid brass": "Latón macizo",
   Iron: "Hierro",
   "Iron case": "Cuerpo de hierro",
-  "Aluminium case": "Cuerpo de aluminio",
-  "Aluminium and steel": "Aluminio y acero",
+  "Aluminum case": "Cuerpo de aluminio",
+  "Aluminum and steel": "Aluminio y acero",
   Steel: "Acero",
   "Stainless steel body": "Cuerpo de acero inoxidable",
   "Aluminum alloy": "Aleación de aluminio",
@@ -520,7 +520,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Bright nickel": "Níquel brillante",
   "Antique black": "Negro antiguo",
   "White painted": "Pintado en blanco",
-  "Grey painted": "Pintado en gris",
+  "Gray painted": "Pintado en gris",
   "Brown painted": "Pintado en marrón",
   "Blue painted": "Pintado en azul",
   "Golden painted": "Pintado en dorado",
@@ -542,7 +542,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Wooden doors": "Puertas de madera",
   "Wooden and metal doors": "Puertas de madera y metálicas",
   "Interior wooden and metal doors": "Puertas interiores de madera y metálicas",
-  "Aluminium, wooden and metal doors": "Puertas de aluminio, madera y metálicas",
+  "Aluminum, wooden and metal doors": "Puertas de aluminio, madera y metálicas",
   "Security doors": "Puertas de seguridad",
   "Entrance doors": "Puertas de entrada",
   "Sliding doors": "Puertas corredizas",
@@ -565,7 +565,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Stainless Steel+Brass": "Acero inoxidable y latón",
   "Stainless steel/Brass/Solid steel": "Acero inoxidable, latón o acero macizo",
   "Solid brass/Zinc & brass cylinder": "Latón macizo; cilindro de zamak y latón",
-  "Zinc alloy, Aluminium": "Zamak y aluminio",
+  "Zinc alloy, Aluminum": "Zamak y aluminio",
 
   // applications, as the client writes them
   "Bathroom Hotel": "Baños de hotel",
@@ -698,7 +698,6 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "ABS material with Aluminum push bar": "ABS con barra de empuje de aluminio",
   "ABS plastic material with Aluminum": "ABS con aluminio",
   "Aluminum alloy and iron": "Aleación de aluminio y hierro",
-  "Aluminium alloy and iron": "Aleación de aluminio y hierro",
   "Iron + ABS body": "Cuerpo de hierro y ABS",
   "Iron+Iron tube": "Hierro con tubo de hierro",
   "Iron and Brass": "Hierro y latón",
@@ -737,7 +736,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Zinc die-cast outer case, zinc-plated steel internal components":
     "Caja exterior de zamak inyectado; componentes internos de acero zincado",
   "case is made of zinc alloy die-casting,": "Caja de zamak inyectado",
-  "Aluminum alloy / Aluminium alloy for lock body, brass cylinder":
+  "Aluminum alloy / Aluminum alloy for lock body, brass cylinder":
     "Aleación de aluminio para el cuerpo de la cerradura; cilindro de latón",
   "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.":
     "Acero inoxidable 304 con recubrimiento, apto para barra antipánico",
@@ -1234,7 +1233,7 @@ export const MATERIAL_NAMES_ES: Record<string, string> = {
     "Tubo de hierro",
   "ABS Body":
     "Cuerpo de ABS",
-  "Aluminium case":
+  "Aluminum case":
     "Caja de aluminio",
   "Aluminum":
     "Aluminio",
@@ -1242,7 +1241,7 @@ export const MATERIAL_NAMES_ES: Record<string, string> = {
     "Aleación de aluminio",
   "Aluminum alloy":
     "Aleación de aluminio",
-  "Aluminium and steel":
+  "Aluminum and steel":
     "Aluminio y acero",
   "Stainless steel body":
     "Cuerpo de acero inoxidable",

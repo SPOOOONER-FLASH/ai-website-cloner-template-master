@@ -10,9 +10,9 @@ import { getProductsByCategory, publishedProducts } from "@/data/products";
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
   locale: "en",
-  title: "Products — Door Hardware Catalogue",
+  title: "Products — Door Hardware Catalog",
   description:
-    "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalogue.",
+    "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalog.",
 });
 
 /**
@@ -95,7 +95,7 @@ export default function ProductsPage() {
           <div className="col-span-full">
             <p className="max-w-[68ch] text-c1 text-ink-secondary">
               Every model in a range on one row each, across the specifications that
-              differ between them — backset, centre distance, door thickness, finish.
+              differ between them — backset, center distance, door thickness, finish.
             </p>
             <ul className="mt-24 grid grid-cols-1 gap-x-24 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
               {categories
@@ -137,7 +137,7 @@ export default function ProductsPage() {
               {publishedProducts.length} models. Narrow them by what is on your schedule.
             </h2>
             <p className="mt-24 max-w-[54ch] text-c1 text-ink-secondary">
-              The Product Finder filters the full catalogue by category, type, series,
+              The Product Finder filters the full catalog by category, type, series,
               material, finish, door type and certification. Filters combine, counts
               update as you go, and the address bar keeps your selection — so a narrowed
               view can be pasted straight into an email to a colleague.

@@ -41,7 +41,7 @@ const TARGETS = [
     source: "public/images/rayen/factory-laser-cutter.webp",
     name: "factory-laser-cutter",
     lift: 0.55,
-    why: "Fibre laser cutter. The only capital-equipment photograph in the set, and the one thing the press/polish/assembly trio does not show.",
+    why: "Fiber laser cutter. The only capital-equipment photograph in the set, and the one thing the press/polish/assembly trio does not show.",
   },
 ];
 

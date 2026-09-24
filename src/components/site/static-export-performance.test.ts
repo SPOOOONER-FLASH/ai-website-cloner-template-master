@@ -157,7 +157,7 @@ test("project editorial images are responsive while technical product anchors st
   incidental mention". A chunk legitimately contains a slug or two (a link, a redirect
   map). It never legitimately contains dozens.
 */
-test("the homepage bundle does not contain the product catalogue", () => {
+test("the homepage bundle does not contain the product catalog", () => {
   const html = readFileSync(homeExport, "utf8");
   const chunks = [...new Set(html.match(/\/_next\/static\/chunks\/[a-z0-9_-]+\.js/g) ?? [])];
 
@@ -191,6 +191,6 @@ test("the homepage bundle does not contain the product catalogue", () => {
   */
   assert.ok(
     totalKb < 1200,
-    `homepage JavaScript is ${Math.round(totalKb)} KB; it was 669 KB on 2026-09-11 after removing the catalogue`,
+    `homepage JavaScript is ${Math.round(totalKb)} KB; it was 669 KB on 2026-09-11 after removing the catalog`,
   );
 });

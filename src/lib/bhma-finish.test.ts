@@ -54,7 +54,7 @@ test("stainless is not classified as steel", () => {
   assert.equal(bhmaFinish("PSS", "304 stainless steel")?.bhma, "629");
 });
 
-test("zinc alloy and aluminium get no designation, because A156.18 has no group for them", () => {
+test("zinc alloy and aluminum get no designation, because A156.18 has no group for them", () => {
   /*
     92 published products are zinc alloy — the second largest material group. A156.18's
     base materials are steel, brass/bronze and stainless only. A specification calling for
@@ -63,7 +63,7 @@ test("zinc alloy and aluminium get no designation, because A156.18 has no group 
   */
   assert.equal(bhmaBase("Zinc alloy"), null);
   assert.equal(bhmaBase("Aluminum"), null);
-  assert.equal(bhmaBase("Aluminium"), null);
+  assert.equal(bhmaBase("Aluminum"), null);
   assert.equal(bhmaFinish("SC", "Zinc alloy"), null);
   assert.equal(bhmaFinish("CP", "Zinc alloy"), null);
 });
@@ -139,7 +139,7 @@ test("a product's dotted finish list is split, and duplicates collapse", () => {
   assert.deepEqual(bhmaFinishesFor({ finishes: ["SC", "CP", "MB"], material: "Zinc alloy" }), []);
 });
 
-test("case and whitespace in the catalogue do not change the answer", () => {
+test("case and whitespace in the catalog do not change the answer", () => {
   assert.equal(bhmaFinish(" sss ", "Stainless steel")?.bhma, "630");
   assert.equal(bhmaFinish("sc", "SOLID BRASS")?.bhma, "626");
 });

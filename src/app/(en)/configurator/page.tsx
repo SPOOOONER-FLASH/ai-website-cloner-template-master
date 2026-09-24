@@ -33,7 +33,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Configurator — Find the Right Model",
   description:
-    "Answer a few questions about the door and we narrow the catalogue to the models that fit. Material, door type and finish, ending at a model number you can quote.",
+    "Answer a few questions about the door and we narrow the catalog to the models that fit. Material, door type and finish, ending at a model number you can quote.",
 });
 
 export default function ConfiguratorPage() {

@@ -28,19 +28,19 @@ import { STEPS, STEPS_ES, STEPS_PT } from "@/lib/configurator";
 
 const COPY = {
   en: {
-    lede: "A few questions about the door, and the catalogue narrows to the models that fit. Every option shown leads somewhere — you cannot reach an empty result.",
+    lede: "A few questions about the door, and the catalog narrows to the models that fit. Every option shown leads somewhere — you cannot reach an empty result.",
     stepsLabel: "questions about the opening",
     modelsLabel: "models it selects from",
     outValue: "A model number",
-    outNote: "with its backset, centre distance, finish and handing — the six values an order needs.",
+    outNote: "with its backset, center distance, finish and handing — the six values an order needs.",
     how: "How it works",
     steps: [
       ["Answer only what applies", "Each answer removes the models that cannot be installed on that door. Options that would lead nowhere are not offered."],
       ["Watch the count fall", "The number of matching models updates as you go, so you can see how much each choice actually decides."],
-      ["Leave with a model number", "The result is a published model with its specification, not a category — ready to paste into an enquiry or a door schedule."],
+      ["Leave with a model number", "The result is a published model with its specification, not a category — ready to paste into an inquiry or a door schedule."],
     ],
     shortcut: "Already know what you need?",
-    shortcutLink: "Filter the catalogue directly",
+    shortcutLink: "Filter the catalog directly",
     reassure: "No account, no email, nothing saved. Change any answer at any point and the list re-forms.",
   },
   es: {

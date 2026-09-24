@@ -48,9 +48,9 @@ export const SPEC_LABELS_PT: Record<string, string> = {
     "Espessura máxima da porta",
   "Grip width":
     "Largura do punho",
-  "Centre distance, horizontal":
+  "Center distance, horizontal":
     "Distância entre centros, horizontal",
-  "Centre distance, vertical":
+  "Center distance, vertical":
     "Distância entre centros, vertical",
   "Corner offset":
     "Recuo do canto",
@@ -137,7 +137,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Cover": "Tampa",
   "Lengths": "Comprimentos",
   "End to fixing": "Da ponta à fixação",
-  "Second centre": "Segundo centro",
+  "Second center": "Segundo centro",
   "Model": "Modelo",
   "Base width": "Largura da base",
   "Bracket": "Suporte",
@@ -162,9 +162,9 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Latch throw": "Curso da lingueta",
   "Latch extension": "Saída da lingueta",
   "Bolt projection": "Saída do trinco",
-  "Centre distance": "Distância entre eixos",
+  "Center distance": "Distância entre eixos",
   "Center Distance": "Distância entre eixos",
-  "Centre distances": "Distâncias entre eixos",
+  "Center distances": "Distâncias entre eixos",
   "2. Dual center distances": "2. Distâncias entre eixos duplas",
   "Cross bore": "Furo transversal",
   "Tube diameter": "Diâmetro do tubo",
@@ -178,15 +178,15 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Lever length": "Comprimento da maçaneta",
   "Lever section": "Secção da maçaneta",
   "Lever drop": "Queda da maçaneta",
-  "Fixing centre": "Distância entre fixações",
-  "Fixing centres": "Distâncias entre fixações",
+  "Fixing center": "Distância entre fixações",
+  "Fixing centers": "Distâncias entre fixações",
   "Fixing screws": "Parafusos de fixação",
   "Glass gap": "Folga do vidro",
   "Plate size": "Dimensões da placa",
   "Plate width": "Largura da placa",
   "Plate height": "Altura da placa",
   "Plate thickness": "Espessura da placa",
-  "Grip centre distance": "Distância entre eixos do puxador",
+  "Grip center distance": "Distância entre eixos do puxador",
   "Grip section": "Secção do puxador",
   "Grip length": "Comprimento do puxador",
   "Slot width": "Largura da ranhura",
@@ -208,8 +208,8 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Spindle length": "Comprimento do quadrado",
   "Spindle hole construction": "Construção do furo do quadrado",
   "Spindle Material": "Material do quadrado",
-  "Faceplate to cylinder centre": "Da testa ao centro do cilindro",
-  "Cylinder centre to back": "Do centro do cilindro ao fundo",
+  "Faceplate to cylinder center": "Da testa ao centro do cilindro",
+  "Cylinder center to back": "Do centro do cilindro ao fundo",
   "Hole Count": "Número de furos",
   "Door Width": "Largura da porta",
   Size: "Dimensões",
@@ -363,7 +363,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Closing force": "Força de fechamento",
   Standoff: "Afastamento",
   Spindle: "Quadrado",
-  "Spindle centre": "Centro do quadrado",
+  "Spindle center": "Centro do quadrado",
   Capacity: "Capacidade",
   Lens: "Lente",
   Faceplate: "Testa",
@@ -570,11 +570,11 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
   Iron: "Ferro",
   iron: "ferro",
   "Iron case": "Caixa de ferro",
-  "Aluminium case": "Caixa de alumínio",
+  "Aluminum case": "Caixa de alumínio",
   Aluminum: "Alumínio",
   "Aluminum Alloy": "Liga de alumínio",
   "Aluminum alloy": "Liga de alumínio",
-  "Aluminium and steel": "Alumínio e aço",
+  "Aluminum and steel": "Alumínio e aço",
   "Stainless steel body": "Corpo em aço inoxidável",
   "Thickened Iron": "Ferro reforçado",
   "Flame-Retardant ABS": "ABS retardante de chama",
@@ -1234,7 +1234,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Várias cores disponíveis (sob medida)",
   "Optional":
     "Opcional",
-  "Aluminium":
+  "Aluminum":
     "Alumínio",
   "Iron+Iron tube":
     "Ferro + tubo de ferro",
@@ -1325,11 +1325,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Banheiro",
   "Wall Mounted":
     "Fixação na parede",
-  "Aluminium Alloy":
+  "Aluminum Alloy":
     "Liga de alumínio",
   "Aluminum alloy and iron":
-    "Liga de alumínio e ferro",
-  "Aluminium alloy and iron":
     "Liga de alumínio e ferro",
   "Iron and aluminum":
     "Ferro e alumínio",
@@ -1361,7 +1359,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Níquel acetinado, cromado, latão antigo, latão polido etc.",
   "Satin SS +Middle Part Acrylic":
     "Inox acetinado + centro em acrílico",
-  "Aluminium, wooden and metal doors":
+  "Aluminum, wooden and metal doors":
     "Portas de alumínio, madeira e metal",
   "Wooden doors":
     "Portas de madeira",
@@ -1397,7 +1395,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Guarnição externa com chave",
   "Zinc alloy Cylinder":
     "Cilindro em zamac",
-  "Aluminum alloy / Aluminium alloy for lock body, brass cylinder":
+  "Aluminum alloy / Aluminum alloy for lock body, brass cylinder":
     "Liga de alumínio no corpo da fechadura, cilindro de latão",
   "Spray painting":
     "Pintura a pó",

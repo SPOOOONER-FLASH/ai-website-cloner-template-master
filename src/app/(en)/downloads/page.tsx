@@ -12,14 +12,14 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Service + Downloads",
   description:
-    "Download the 46-page Canton Hyland catalogue covering locks, handles, panic exit devices, glass hardware and closers, plus model-scoped test reports.",
+    "Download the 46-page Canton Hyland catalog covering locks, handles, panic exit devices, glass hardware and closers, plus model-scoped test reports.",
 });
 
 const visibleGroups: Array<{ kind: DownloadKind; title: string; note: string }> = [
   {
     kind: "catalogue",
-    title: "Product catalogue",
-    note: "The current English product catalogue supplied by Canton Hyland.",
+    title: "Product catalog",
+    note: "The current English product catalog supplied by Canton Hyland.",
   },
   /*
     A planning sheet is not a document to read, it is a form to send back, so it gets its
@@ -48,7 +48,7 @@ export default function ServiceDownloadsPage() {
             <h1 id="downloads-title" className="mt-8 text-h1 text-ink">Service + Downloads</h1>
           </div>
           <div className="col-span-full xl:col-span-10 xl:col-start-13">
-            <p className="text-h3 text-ink">Catalogues and evidence files for project review.</p>
+            <p className="text-h3 text-ink">Catalogs and evidence files for project review.</p>
             <p className="mt-24 text-c1 text-ink-secondary">
               {downloads.length} client-supplied files are available locally. Datasheets,
               installation guides, CAD and BIM files are issued against a confirmed project brief.
@@ -107,7 +107,7 @@ export default function ServiceDownloadsPage() {
                 </h2>
                 <p className="mt-16 text-c1 text-ink-secondary">
                   Three HYDE records are available for verification. Each record retains its exact
-                  model scope; it does not certify other catalogue products.
+                  model scope; it does not certify other catalog products.
                 </p>
               </div>
               <ul className="col-span-full divide-y divide-line border-t border-line xl:col-span-15 xl:col-start-10">

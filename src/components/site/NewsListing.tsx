@@ -18,7 +18,7 @@ const COPY = {
       "Company announcements, certification news and technical notes from Canton Hyland.",
     emptyTitle: "No releases published yet.",
     empty:
-      "This is where Canton Hyland publishes company announcements and technical notes. Press enquiries and requests for product imagery are answered directly in the meantime.",
+      "This is where Canton Hyland publishes company announcements and technical notes. Press inquiries and requests for product imagery are answered directly in the meantime.",
     contact: "Contact us",
     contactHref: "/contact/",
   },

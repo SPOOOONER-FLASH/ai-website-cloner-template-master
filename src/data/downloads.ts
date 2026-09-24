@@ -10,7 +10,7 @@ import type { DownloadFile, DownloadKind } from "./types";
 export const downloads = downloadsFile.downloads as DownloadFile[];
 
 export const downloadKindLabels: Record<DownloadKind, string> = {
-  catalogue: "Product catalogues",
+  catalogue: "Product catalogs",
   datasheet: "Technical datasheets",
   certificate: "Test reports and certificates",
   cad: "CAD files",

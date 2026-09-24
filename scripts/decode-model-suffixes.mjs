@@ -67,7 +67,7 @@ const FINISHES = [
   ["MB", "Matt black"],
   // painted and sprayed coatings rather than platings
   ["WL", "White painted"],
-  ["GRL", "Grey painted"],
+  ["GRL", "Gray painted"],
   ["BRL", "Brown painted"],
   ["BLL", "Blue painted"],
   ["HGL", "Golden finish"],

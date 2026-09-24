@@ -95,7 +95,7 @@ describe("parseFinishValue", () => {
     assert.deepEqual(parseFinishValue("Antique Brass").codes, ["AB"]);
   });
 
-  it("drops commentary that qualifies the offer rather than the colour", () => {
+  it("drops commentary that qualifies the offer rather than the color", () => {
     assert.deepEqual(parseFinishValue("PB Are Available").codes, ["PB"]);
     assert.deepEqual(parseFinishValue("SC (Custom Available)").codes, ["SC"]);
   });

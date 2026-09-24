@@ -15,7 +15,7 @@ const SERVICES = [
   {
     number: "01",
     title: "Product selection + schedule review",
-    body: "Match door type, function, dimensions, finish and market requirements to catalogue products before quotation.",
+    body: "Match door type, function, dimensions, finish and market requirements to catalog products before quotation.",
     outcome: "Start with a schedule, product list or marked-up drawing.",
   },
   {
@@ -39,7 +39,7 @@ const SERVICES = [
   {
     number: "05",
     title: "Export coordination",
-    body: "Organise confirmed product lines, finishes, quantities and destination information into a clearer quotation and shipment discussion.",
+    body: "Organize confirmed product lines, finishes, quantities and destination information into a clearer quotation and shipment discussion.",
     outcome: "Share the requested Incoterm and destination port when known.",
   },
   {
@@ -98,7 +98,7 @@ export default function ServicesPage() {
             className="home-accent-surface short-marker-surface group col-span-full flex flex-col justify-between border border-line p-24 text-ink no-underline outline-offset-4 lg:col-span-4 lg:col-start-9 xl:col-span-8 xl:col-start-17"
           >
             <div>
-              <p className="text-kicker text-ink-secondary">Prepare your enquiry</p>
+              <p className="text-kicker text-ink-secondary">Prepare your inquiry</p>
               <h2 className="mt-24 text-h2 text-ink">Start with these four details</h2>
             </div>
             <div className="mt-48 border-t border-line pt-16">
@@ -140,14 +140,14 @@ export default function ServicesPage() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink-secondary">
-              Browse catalogues, technical files and model-bound evidence before requesting a new
+              Browse catalogs, technical files and model-bound evidence before requesting a new
               document. Unknown or unverified specifications remain blank until the right source is supplied.
             </p>
             <Link
               href="/downloads"
               className="short-marker short-marker-compact mt-24 text-c1 text-brand hover:text-brand-hover"
             >
-              Open download centre
+              Open download center
             </Link>
           </div>
         </section>

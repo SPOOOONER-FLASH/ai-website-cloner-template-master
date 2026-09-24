@@ -74,11 +74,11 @@
         "Bolts",
         "Cylinder"
       ],
-      "note": "Counted and identified from the two photographs the client supplied on 2026-09-15: three square deadbolts and a latch are countable on the plate, and the cylinder cut-out is unmistakably euro profile. NO DIMENSION was taken from the photographs, backset, centre distance and faceplate width are still unpublished and must come from the factory.",
+      "note": "Counted and identified from the two photographs the client supplied on 2026-09-15: three square deadbolts and a latch are countable on the plate, and the cylinder cut-out is unmistakably euro profile. NO DIMENSION was taken from the photographs, backset, center distance and faceplate width are still unpublished and must come from the factory.",
       "fetchedAt": "2026-09-15"
     }
   },
-  "_note": "NO PHOTOGRAPH YET, SO THIS RECORD IS DELISTED BY DESIGN. heroImage has no `src`, which is what isPublished() reads (src/data/products.ts:92), so the product stays out of every browse surface and its page carries noindex, the same treatment as the other 67 photo-less models. It exists as a record because the demand is the strongest unserved signal we have (119 Alibaba impressions, 3 enquiries, 23% enquiry conversion in the 90 days to 2026-09-11) and because the client has already published four facts about it on their own storefront. The moment a photograph lands in public/images/products/, add `src` and it goes live. Everything not listed above is genuinely unknown, backset, centre distance, door thickness, handing, finishes, and is omitted rather than guessed, per the dash rule in AGENTS.md. Do NOT infer backset or centre distance from the model number.",
+  "_note": "NO PHOTOGRAPH YET, SO THIS RECORD IS DELISTED BY DESIGN. heroImage has no `src`, which is what isPublished() reads (src/data/products.ts:92), so the product stays out of every browse surface and its page carries noindex, the same treatment as the other 67 photo-less models. It exists as a record because the demand is the strongest unserved signal we have (119 Alibaba impressions, 3 inquiries, 23% inquiry conversion in the 90 days to 2026-09-11) and because the client has already published four facts about it on their own storefront. The moment a photograph lands in public/images/products/, add `src` and it goes live. Everything not listed above is genuinely unknown, backset, center distance, door thickness, handing, finishes, and is omitted rather than guessed, per the dash rule in AGENTS.md. Do NOT infer backset or center distance from the model number.",
   "namePt": "Fechadura com maçaneta em inox",
   "summaryPt": "Fechadura com maçaneta em inox em aço inoxidável 304.",
   "specsPt": [

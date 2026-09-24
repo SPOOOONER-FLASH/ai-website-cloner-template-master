@@ -70,7 +70,7 @@ for (const row of rows) {
   for (const model of row.appliesTo ?? []) {
     const hit = byModel.get(normalise(model));
     if (!hit) {
-      refused.push({ ...row, status: "no-such-model", note: `${model} is not in the catalogue` });
+      refused.push({ ...row, status: "no-such-model", note: `${model} is not in the catalog` });
       continue;
     }
 

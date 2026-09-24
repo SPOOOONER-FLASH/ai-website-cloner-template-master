@@ -49,7 +49,7 @@ test("a category result remembers its page, filter, product and scroll position 
   );
 });
 
-test("a product detail URL cannot be recorded as if it were a catalogue listing", () => {
+test("a product detail URL cannot be recorded as if it were a catalog listing", () => {
   const storage = new MemoryStorage();
 
   rememberCatalogueReturn(storage, {

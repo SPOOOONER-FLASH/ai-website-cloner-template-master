@@ -28,7 +28,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Model Number Lookup",
   description:
-    "What happened to a Canton Hyland model number that no longer resolves: renamed records with their permanent redirects, retired catalogue paths, and models in the catalogue that have no published photograph.",
+    "What happened to a Canton Hyland model number that no longer resolves: renamed records with their permanent redirects, retired catalog paths, and models in the catalog that have no published photograph.",
 });
 
 export default function ModelLookupPage() {
@@ -49,10 +49,10 @@ export default function ModelLookupPage() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              A quotation outlives the catalogue that produced it. If a number on an old
+              A quotation outlives the catalog that produced it. If a number on an old
               schedule no longer finds a page, one of three things happened to it, and this
               page says which — {renamedRecords.length} records were renamed,{" "}
-              {notShownModels.length} are in the catalogue without a published photograph,
+              {notShownModels.length} are in the catalog without a published photograph,
               and one category path was retired.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">

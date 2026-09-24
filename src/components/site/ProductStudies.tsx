@@ -37,10 +37,10 @@ const studies = [...studioStudies, ...rawStudies] as ProductStudy[];
 /** Every string on this page, in all three locales. */
 const COPY = {
   en: {
-    back: "Back to the catalogue",
+    back: "Back to the catalog",
     title: "Hardware in focus",
     intro:
-      "Locks, cylinders and handles from our catalogue, presented in studio compositions. Open each model to explore its original photographs, dimensions and finish options.",
+      "Locks, cylinders and handles from our catalog, presented in studio compositions. Open each model to explore its original photographs, dimensions and finish options.",
     explore: "Explore the gallery",
     material: "Material & finish",
     models: "Models & components",
@@ -52,7 +52,7 @@ const COPY = {
       "307 with lock case 072 and handle 015. The 307 specification also lists handle 9080E. Cylinder length is selected for the door thickness.",
     captionModels:
       "Individual models for selection. Confirm compatibility and the complete configuration before ordering; the composition does not represent installation scale.",
-    captionDefault: "Catalogue product photograph in a studio composition.",
+    captionDefault: "Catalog product photograph in a studio composition.",
     specifyTitle: "Specify your door configuration",
     specifyBody:
       "Share the models, door thickness and required finish to confirm the parts for your order.",

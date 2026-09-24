@@ -15,7 +15,7 @@ const make = (model: string, series: string, category = "handles"): Product =>
 
 const group = ["A", "B", "C", "D", "E"].map((m) => make(m, "S"));
 
-test("neighbours follow the product and wrap past the end", () => {
+test("neighbors follow the product and wrap past the end", () => {
   assert.deepEqual(
     rotatingNeighbours(group[0], group).map((p) => p.model),
     ["B", "C", "D"],
@@ -47,7 +47,7 @@ test("a group smaller than LIMIT+1 returns what it has, without repeats", () => 
   assert.deepEqual(items.map((p) => p.model), ["B"]);
 });
 
-test("curated relations win and are labelled as such", () => {
+test("curated relations win and are labeled as such", () => {
   const product = make("A", "S");
   const block = relatedBlock({
     product,

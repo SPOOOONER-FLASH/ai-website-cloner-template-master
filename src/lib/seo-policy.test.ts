@@ -53,7 +53,7 @@ test("sitemap entries omit invented freshness unless a real date is supplied", (
   than data rendering, and a machine-translated article about EN 1125 is worse than an
   English one.
 */
-test("the Spanish catalogue mirrors /products, and hreflang stops where the routes do", () => {
+test("the Spanish catalog mirrors /products, and hreflang stops where the routes do", () => {
   assert.equal(hasSpanishMirror("/products"), true);
   assert.equal(hasSpanishMirror("/products/lock-cases"), true);
   assert.equal(hasSpanishMirror("/products/lock-cases/lc8520ps-lock-case"), true);

@@ -19,7 +19,7 @@
     "use": "Entrance & Shopfront Doors",
     "useEs": "puertas de entrada y de local",
     "usePt": "portas de entrada e de loja",
-    "pitch": "Specified by centre distance, so the fixings meet the holes already in the door.",
+    "pitch": "Specified by center distance, so the fixings meet the holes already in the door.",
     "pitchEs": "Se especifica por distancia entre centros, para que las fijaciones coincidan con los agujeros de la puerta.",
     "pitchPt": "Especificado pela distância entre centros, para que as fixações coincidam com os furos da porta."
   },
@@ -59,12 +59,12 @@
     "use": "Timber & Metal Doors",
     "useEs": "puertas de madera y metal",
     "usePt": "portas de madeira e metal",
-    "pitch": "Backset and centre distance decide whether a replacement drops into the existing preparation.",
+    "pitch": "Backset and center distance decide whether a replacement drops into the existing preparation.",
     "pitchEs": "La entrada y la distancia entre ejes deciden si un recambio entra en la preparación existente.",
     "pitchPt": "A distância ao eixo e a distância entre centros decidem se uma substituição entra na preparação existente."
   },
   "lock-cylinders": {
-    "use": "Mortice & Rim Locks",
+    "use": "Mortise & Rim Locks",
     "useEs": "cerraduras de embutir y sobreponer",
     "usePt": "fechaduras de embutir e de sobrepor",
     "pitch": "Euro profile. Tell us the door thickness and we size the two halves instead of guessing.",
@@ -155,7 +155,7 @@
     "use": "Surface Fitting, Timber & Metal",
     "useEs": "sobreponer, madera y metal",
     "usePt": "sobrepor, madeira e metal",
-    "pitch": "Fits to the face of the door, so it goes on a leaf that was never prepared for a mortice lock.",
+    "pitch": "Fits to the face of the door, so it goes on a leaf that was never prepared for a mortise lock.",
     "pitchEs": "Se monta en la cara de la puerta, así que sirve en una hoja nunca preparada para cerradura de embutir.",
     "pitchPt": "Monta na face da porta, então serve numa folha nunca preparada para fechadura de embutir."
   },
@@ -171,7 +171,7 @@
     "use": "Front & Entrance Doors",
     "useEs": "puertas principales y de entrada",
     "usePt": "portas principais e de entrada",
-    "pitch": "Grip and lock as one set, so the fixing centres agree before anything is cut.",
+    "pitch": "Grip and lock as one set, so the fixing centers agree before anything is cut.",
     "pitchEs": "Tirador y cerradura como un solo juego, para que los centros de fijación coincidan antes de cortar.",
     "pitchPt": "Puxador e fechadura como um só conjunto, para que os centros de fixação coincidam antes de qualquer corte."
   },

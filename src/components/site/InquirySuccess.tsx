@@ -7,7 +7,7 @@ import { Button } from "./Button";
 import styles from "./InquirySuccess.module.css";
 
 const copy = {
-  en: { title: "Thank you. Your inquiry is on its way.", detail: "Your message has been sent to our export team. We look forward to learning about your project.", received: "Inquiry submitted", browse: "Explore the catalogue", another: "Send another inquiry", stop: "Stop celebration" },
+  en: { title: "Thank you. Your inquiry is on its way.", detail: "Your message has been sent to our export team. We look forward to learning about your project.", received: "Inquiry submitted", browse: "Explore the catalog", another: "Send another inquiry", stop: "Stop celebration" },
   es: { title: "Gracias. Su consulta está en camino.", detail: "Su mensaje se ha enviado a nuestro equipo de exportación. Esperamos conocer más sobre su proyecto.", received: "Consulta enviada", browse: "Explorar el catálogo", another: "Enviar otra consulta", stop: "Detener animación" },
   pt: { title: "Obrigado. Sua consulta está a caminho.", detail: "Sua mensagem foi enviada à nossa equipe de exportação. Queremos conhecer melhor o seu projeto.", received: "Consulta enviada", browse: "Explorar o catálogo", another: "Enviar outra consulta", stop: "Parar animação" },
 };

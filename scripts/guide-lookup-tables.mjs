@@ -547,7 +547,7 @@ const EDITS = [
           t([
             "| Door thickness range | Imperial | Records | Note |",
             "| --- | --- | --- | --- |",
-            "| 35 to 45mm adjustable | 1-3/8\" to 1-3/4\" | 106 | the standard range; covers the great majority of interior and entrance doors in the markets this catalogue serves |",
+            "| 35 to 45mm adjustable | 1-3/8\" to 1-3/4\" | 106 | the standard range; covers the great majority of interior and entrance doors in the markets this catalog serves |",
             "| 35 to 50mm | 1-3/8\" to 1-15/16\" | 34 | — |",
             "| 35 to 55mm standard, 30 to 60mm on request | 1-3/8\" to 2-3/16\" (1-3/16\" to 2-3/8\") | 22 | — |",
             "| 8 to 12mm | 5/16\" to 1/2\" | 7 | glass door fittings — the number describes toughened glass, not a door leaf |",

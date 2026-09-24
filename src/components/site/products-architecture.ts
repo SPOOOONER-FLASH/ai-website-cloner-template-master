@@ -115,7 +115,7 @@ export const PRODUCT_STORY: readonly ProductStoryDefinition[] = [
     role: "range",
     title: { en: "Range", es: "Gama", pt: "Linha" },
     description: {
-      en: "See the product families first, with complete silhouettes from our catalogue.",
+      en: "See the product families first, with complete silhouettes from our catalog.",
       es: "Vea primero las familias de productos, con siluetas completas del catálogo.",
       pt: "Veja primeiro as famílias de produto, com silhuetas completas do nosso catálogo.",
     },
@@ -137,7 +137,7 @@ export const PRODUCT_STORY: readonly ProductStoryDefinition[] = [
     },
     image: "/images/editorial/hyde-real-application-detail.webp",
     alt: {
-      en: "Client catalogue photograph of a storefront push/pull lock mechanism",
+      en: "Client catalog photograph of a storefront push/pull lock mechanism",
       es: "Fotografía del catálogo del cliente de un mecanismo de cerradura de empuje y tracción",
       pt: "Fotografia do catálogo do cliente de um mecanismo de fechadura de empurrar e puxar",
     },
@@ -147,13 +147,13 @@ export const PRODUCT_STORY: readonly ProductStoryDefinition[] = [
     role: "technical",
     title: { en: "Technical", es: "Construcción", pt: "Construção" },
     description: {
-      en: "Check the backset, centres and fixing details before choosing a lock case.",
+      en: "Check the backset, centers and fixing details before choosing a lock case.",
       es: "Compruebe la entrada, los entre-ejes y las fijaciones antes de elegir la cerradura.",
       pt: "Confira o backset, as distâncias entre eixos e as fixações antes de escolher a caixa de fechadura.",
     },
     image: "/images/editorial/hyde-real-lock-plate.webp",
     alt: {
-      en: "Original catalogue photograph of the LC14 lock case with its faceplate and bolts",
+      en: "Original catalog photograph of the LC14 lock case with its faceplate and bolts",
       es: "Fotografía original de la cerradura LC14 con su frente y pestillos",
       pt: "Fotografia original da caixa de fechadura LC14 com a sua testa e as linguetas",
     },
@@ -194,13 +194,13 @@ const COPY = {
     title: "Door & Window Hardware",
     intro:
       "Start with the complete system, then move from a hardware family to an exact published model.",
-    rangeMeta: "Nine coordinated families · one catalogue",
-    familiesHeading: "Nine ways into the catalogue",
+    rangeMeta: "Nine coordinated families · one catalog",
+    familiesHeading: "Nine ways into the catalog",
     familiesBody:
-      "Choose a family to explore its models. Use the complete catalogue below for additional ranges and side-by-side specifications.",
+      "Choose a family to explore its models. Use the complete catalog below for additional ranges and side-by-side specifications.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
-      "From the handle you touch to the mechanism inside the door, specify each part around the opening. Explore the construction, material and finish options in our published catalogue.",
+      "From the handle you touch to the mechanism inside the door, specify each part around the opening. Explore the construction, material and finish options in our published catalog.",
     storyEyebrow: "Selection and specification",
     storyTitle: "From range to installed opening.",
     storyBody:
@@ -210,7 +210,7 @@ const COPY = {
     conversionEyebrow: "Specify and source",
     conversionTitle: "Finish with evidence, then talk to the factory.",
     downloads: "Open technical downloads",
-    contact: "Send a project enquiry",
+    contact: "Send a project inquiry",
     finder: "Don’t know the model? Find by door type and material",
     configurator: "Build a hardware set",
     representative: "Canton Hyland product photography",

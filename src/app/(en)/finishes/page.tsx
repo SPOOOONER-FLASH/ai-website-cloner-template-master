@@ -96,7 +96,7 @@ export default function FinishesPage() {
             <p className="text-c1 text-ink-secondary">
               North American specifications are written in ANSI/BHMA numbers, and those
               encode the base metal as well as the appearance — 626 is satin chrome on
-              brass, 652 is the same colour on steel, and substituting one for the other is
+              brass, 652 is the same color on steel, and substituting one for the other is
               a rejected submittal. So our finish code alone cannot be converted. Each
               product page carries the BHMA number where the material is stated and a dash
               where it is not.

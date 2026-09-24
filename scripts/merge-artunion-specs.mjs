@@ -256,7 +256,7 @@ for (const file of readdirSync(PRODUCTS)) {
     continue;
   }
 
-  const drawnPitch = pickSpec(product, ["Centre distance", "Fixing centre", "Fixing pitch"]);
+  const drawnPitch = pickSpec(product, ["Center distance", "Fixing center", "Fixing pitch"]);
   const confirmed = record.variants.find((v) => pitchAgrees(v.spec.pitch, drawnPitch) === true);
   const sole = record.variants.length === 1 ? record.variants[0] : null;
   const chosen = confirmed ?? sole;

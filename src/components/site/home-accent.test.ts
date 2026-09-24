@@ -67,7 +67,7 @@ test("homepage editorial heroes use image motion without a framed surface", () =
   through the CMS without a cover is caught too. Children are deliberately excluded —
   they are a filter dimension, never a tile.
 */
-test("all catalogue category tiles ship with a real cover image", () => {
+test("all catalog category tiles ship with a real cover image", () => {
   const uncovered = categories
     .filter((category) => !category.image?.src)
     .map((category) => category.slug);

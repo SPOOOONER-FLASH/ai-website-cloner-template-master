@@ -45,8 +45,8 @@ const SURFACED: { labels: string[]; en: string; es: string; pt: string }[] = [
   { labels: ["Fire Rating"], en: "Fire rating", es: "Resistencia al fuego", pt: "Resistência ao fogo" },
   { labels: ["Bar Length", "Size"], en: "Bar length", es: "Longitud de barra", pt: "Comprimento da barra" },
   {
-    labels: ["2. Dual center distances", "Dual center distances", "Centre distance"],
-    en: "Centre distances",
+    labels: ["2. Dual center distances", "Dual center distances", "Center distance"],
+    en: "Center distances",
     es: "Distancias entre ejes",
     pt: "Distâncias entre centros",
   },
@@ -105,7 +105,7 @@ export const flagshipCopy = {
     eyebrow: "Tooled here",
     title: "307 and 311",
     intro:
-      "Two panic exit devices built on moulds we cut ourselves. That is the difference a specifier feels rather than reads: the bar length, the centres and the fire rating are ours to hold to, and a change to any of them is a production decision made by people who can walk to the press.",
+      "Two panic exit devices built on moulds we cut ourselves. That is the difference a specifier feels rather than reads: the bar length, the centers and the fire rating are ours to hold to, and a change to any of them is a production decision made by people who can walk to the press.",
     cta: "See the full panic exit range",
     ctaHref: "/products/panic-exit-devices/",
   },
