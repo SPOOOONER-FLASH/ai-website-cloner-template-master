@@ -13,8 +13,8 @@
 | 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 09-24 完成（「More on backset」「Más sobre …」「Mais sobre …」） |
 | 6 | 标题生成器加 `--only <models>`，只重写指定型号 | 09-24 完成（--write --only LC04,140） |
 | 7 | 标题生成器去掉「Door Hinge for Doors」这类场景和名字重复 | 09-24 完成（短场景不再截成光秃的 Doors；7 条标题更正） |
-| 8 | 复查 306-D / 306-S 西葡重复标题是否已消除（seo:graph） | 待做 |
-| 9 | 多语种准备：RTL 扫描脚本，数出全站物理方向类名（阿拉伯语工程量） | 待做 |
+| 8 | 复查 306-D / 306-S 西葡重复标题是否已消除（seo:graph） | 09-24 完成（最新构建 seo:graph：无重复标题、无孤立页、全部从首页可达） |
+| 9 | 多语种准备：RTL 扫描脚本，数出全站物理方向类名（阿拉伯语工程量） | 09-24 完成（89 处、21 个文件，docs/research/RTL-READINESS.md，可重跑） |
 | 10 | 查询语料脚本加国家筛选，单列德国、法国、沙特、阿联酋、土耳其的查询 | 待做 |
 | 11 | 发给 Hyde 文案：finishes / glossary / model-lookup / documents 的 H1 不含搜索词，给出建议写法 | 待做 |
 | 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 等待（规则与守卫已写好并有单元测试；剩 2 句产品卖点冲突 hy008、s564 由 Hyde 文案手改，改完跑 --write） |
