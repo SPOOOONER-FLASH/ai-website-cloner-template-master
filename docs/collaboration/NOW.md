@@ -12,7 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Codex HYDE fluidity | `out/`, `out-rayen/`, `docs/research/SPEC_COVERAGE.json`, 4 篇数字指南（独立 `hyde-release` worktree） | 从当前主线重做发布；纳入搜索快速重开修复及目录 973 项的覆盖数字 | 2026-09-23 |
+| Codex HYDE fluidity | `out/`, `scripts/spec-coverage.mjs`, `docs/research/SPEC_COVERAGE.json`, `src/data/article-catalogue-claims.test.ts`, 4 篇数字指南（独立 `hyde-release` worktree） | 按 HYDE 站点过滤纠正规格统计和指南数字，再用 `release:hyde` 发布搜索快速重开修复；不碰雷茵发布目录 | 2026-09-23 |
 | Claude release build | out/, out-rayen/（在 tmp/claude-release-wt 干净检出里构建） | 持棒：发布 79ff38e337d（9088 SS）。**不含** Codex 未提交的 motion 改动 | 2026-09-23 |
 | Codex motion 2026-09-23 | HeroCarousel, SiteHeader, LocalePicker, SearchDialog, ProductImageZoom, GuideEditorial CSS, motion guard, SPEC_COVERAGE, four numeric guides, out/ out-rayen/ | 已批准的轮播与浮层优化；同期目录增长使覆盖报告和四篇文章数字过期，一并修复；当前持有发布构建 | 2026-09-23 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |
