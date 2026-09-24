@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 16:09 | 中立 | 标题生成器：西葡小数用逗号、单位统一小写（7 个产品） | `c8452b83ab3` |
-| 16:05 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 1c1d0f6a874 | `7d342751363` |
+| 16:08 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `5995a4d2db4` |
+| 16:08 | HYDE | 第 2、3 批复核收尾：背距表过期数字修正并登记测试，万能钥匙西语术语统一，饰板 FAQ 对齐 | `47124a58818` |
 | 16:03 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `726f521c76c` |
 | 16:03 | HYDE | 葡语文章：葡萄牙用词改巴西用词（25 个文件 59 处），火门指南西语空格修正 | `d164696c2fc` |
 | 15:59 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `cc1ad418bb2` |
