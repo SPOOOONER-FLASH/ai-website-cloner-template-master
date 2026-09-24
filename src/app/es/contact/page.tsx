@@ -122,6 +122,24 @@ export default function ContactoPage() {
             </div>
 
             <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Compre por Alibaba o directamente</h2>
+              <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
+                Las dos vías funcionan. Algunos compradores hacen su primer pedido por Alibaba, con la protección de pago de la plataforma, y después pasan al pedido directo cuando ya nos conocen. Otros compran directamente desde el primer contenedor.
+              </p>
+              <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
+                El mismo equipo de exportación atiende ambas vías, con los mismos precios y la misma especificación.
+              </p>
+              <a
+                href={siteSettings.alibaba.storefront}
+                rel="noopener"
+                target="_blank"
+                className="short-marker short-marker-compact mt-16 inline-block text-c1 text-brand hover:text-brand-hover"
+              >
+                Visitar nuestra tienda en Alibaba
+              </a>
+            </div>
+
+            <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Catálogo actual</h2>
               <a
                 className="short-marker short-marker-compact mt-16 text-c1 text-brand hover:text-brand-hover"

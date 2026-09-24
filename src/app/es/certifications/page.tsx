@@ -52,10 +52,7 @@ export default function CertificacionesPage() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Estos tres registros son de Canton Hyland y se publican con el alcance exacto
-              de modelo que figura impreso en el documento de respaldo. El informe de un
-              modelo no se presenta como aprobación de otro producto ni de toda una familia
-              del catálogo.
+              Los registros de abajo se publican con el alcance exacto de modelo que figura impreso en cada documento, y el informe de un modelo nunca se presenta como aprobación de otro. Buena parte de lo que fabricamos para clientes de marca propia se certifica a nombre de esos clientes, a petición y a cargo de ellos, por lo que esos certificados les corresponde compartirlos a ellos. Estamos preparando los ensayos CE y ANSI a nombre de Canton Hyland para nuestras gamas principales; cada informe nuevo aparecerá aquí, con su alcance, a medida que se emita.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
               Las copias completas de los informes se facilitan a través del equipo de
