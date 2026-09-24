@@ -31,81 +31,81 @@ export const PRODUCT_FAMILIES: readonly ProductFamilyDefinition[] = [
     slug: "lever-handles",
     label: { en: "Lever handles", es: "Manijas de palanca", pt: "Maçanetas" },
     description: {
-      en: "Lever sets for commercial and residential openings.",
-      es: "Juegos de manija para puertas comerciales y residenciales.",
-      pt: "Conjuntos de maçaneta para portas comerciais e residenciais.",
+      en: "The first handshake a building gives. Lever sets in stainless steel, brass and matte black.",
+      es: "El primer apretón de manos de un edificio. Manijas en acero inoxidable, latón y negro mate.",
+      pt: "O primeiro aperto de mão de um prédio. Maçanetas em aço inoxidável, latão e preto fosco.",
     },
   },
   {
     slug: "panic-exit-devices",
     label: { en: "Panic exit devices", es: "Barras antipánico", pt: "Barras antipânico" },
     description: {
-      en: "Push-bar devices for escape and fire doors, single-point to multi-point.",
-      es: "Barras de empuje para puertas de evacuación y cortafuego, de un punto a multipunto.",
-      pt: "Barras de empurrar para portas de saída de emergência e corta-fogo, de um ponto a multiponto.",
+      en: "Made for the day nobody plans for. Push bars for escape and fire doors, single-point to multi-point.",
+      es: "Hechas para el día que nadie planea. Barras de empuje para puertas de evacuación y cortafuego, de un punto a multipunto.",
+      pt: "Feitas para o dia que ninguém planeja. Barras de empurrar para portas de saída de emergência e corta-fogo, de um ponto a multiponto.",
     },
   },
   {
     slug: "lock-cases",
     label: { en: "Lock cases", es: "Cerraduras de embutir", pt: "Fechaduras de embutir" },
     description: {
-      en: "Mortise cases across backset and bolt configurations.",
-      es: "Cajas de embutir con distintas entradas y configuraciones de pestillo.",
-      pt: "Caixas de embutir com várias distâncias ao eixo e configurações de lingueta.",
+      en: "The part inside the door that keeps its word. Mortise cases by backset and bolt.",
+      es: "La pieza de dentro que cumple su palabra. Cajas de embutir por entrada y pestillo.",
+      pt: "A peça lá dentro que cumpre a palavra. Caixas de embutir por distância ao eixo e lingueta.",
     },
   },
   {
     slug: "door-closers",
     label: { en: "Door control", es: "Control de puertas", pt: "Controle de porta" },
     description: {
-      en: "Surface-mounted door closers, sized by leaf weight and width.",
-      es: "Cierrapuertas de superficie, elegidos por el peso y el ancho de la hoja.",
-      pt: "Molas aéreas de sobrepor, escolhidas pelo peso e pela largura da folha.",
+      en: "Every door, closed at the right speed. Surface closers sized by leaf weight and width.",
+      es: "Cada puerta, cerrada a la velocidad justa. Cierrapuertas de superficie según el peso y el ancho de la hoja.",
+      pt: "Cada porta fechada na velocidade certa. Molas aéreas de sobrepor pelo peso e pela largura da folha.",
     },
   },
   {
     slug: "brass-steel-hinges",
     label: { en: "Door hinges", es: "Bisagras para puertas", pt: "Dobradiças" },
     description: {
-      en: "Brass, stainless-steel and steel hinge ranges.",
-      es: "Gamas de bisagras de latón, acero inoxidable y acero.",
-      pt: "Linhas de dobradiça em latão, aço inoxidável e aço.",
+      en: "Carrying the door, quietly, for years. Brass, stainless steel and steel hinges.",
+      es: "Sostienen la puerta en silencio, año tras año. Bisagras de latón, acero inoxidable y acero.",
+      pt: "Sustentam a porta em silêncio, ano após ano. Dobradiças de latão, aço inoxidável e aço.",
     },
   },
   {
     slug: "glass-door-accessories",
     label: { en: "Glass door hardware", es: "Herrajes para puertas de vidrio", pt: "Ferragens para porta de vidro" },
     description: {
-      en: "Patch fittings and pull handles for frameless assemblies.",
-      es: "Patch fittings y tiradores para conjuntos de vidrio sin marco.",
-      pt: "Ferragens de aperto e puxadores para conjuntos sem caixilho.",
+      en: "Holding glass without hiding it. Patch fittings and pulls for frameless doors.",
+      es: "Sujetan el vidrio sin taparlo. Herrajes de fijación y tiradores para puertas de vidrio sin marco.",
+      pt: "Seguram o vidro sem escondê-lo. Ferragens de fixação e puxadores para portas de vidro sem moldura.",
     },
   },
   {
     slug: "grip-handle-sets",
     label: { en: "Pull handles", es: "Tiradores", pt: "Puxadores" },
     description: {
-      en: "Grip, pull and concealed handles for entrance and sliding doors.",
-      es: "Tiradores y manijas ocultas para accesos y puertas corredizas.",
-      pt: "Puxadores de pegar, de tubo e embutidos para entradas e portas de correr.",
+      en: "What people reach for first. Grip, pull and concealed handles for entrance and sliding doors.",
+      es: "Lo primero que busca la mano. Tiradores y manijas ocultas para accesos y puertas corredizas.",
+      pt: "A primeira coisa que a mão procura. Puxadores de pegar, de tubo e embutidos para entradas e portas de correr.",
     },
   },
   {
     slug: "lock-cylinders",
     label: { en: "Lock cylinders", es: "Cilindros", pt: "Cilindros" },
     description: {
-      en: "Profile and keyed cylinders, including master-key applications.",
-      es: "Cilindros de perfil y con llave, incluso para sistemas amaestrados.",
-      pt: "Cilindros de perfil e com chave, inclusive para sistemas de chave-mestra.",
+      en: "One key, the right doors. Profile and keyed cylinders, master-key systems included.",
+      es: "Una llave, las puertas correctas. Cilindros de perfil y con llave, también para sistemas amaestrados.",
+      pt: "Uma chave, as portas certas. Cilindros de perfil e com chave, também para sistemas de chave-mestra.",
     },
   },
   {
     slug: "hardware-accessories",
     label: { en: "Hardware accessories", es: "Accesorios de herrajes", pt: "Acessórios de ferragem" },
     description: {
-      en: "Viewers, stoppers, transfer devices, bolts, indicators and latches.",
-      es: "Mirillas, topes, pasacables, pasadores, indicadores y picaportes.",
-      pt: "Olho mágico, batentes, passa-fios, ferrolhos, indicadores e trincos.",
+      en: "The small parts that finish the job. Viewers, stops, transfer devices, bolts, indicators and latches.",
+      es: "Las piezas pequeñas que rematan el trabajo. Mirillas, topes, pasacables, pasadores, indicadores y pestillos.",
+      pt: "As peças pequenas que completam o serviço. Olhos mágicos, batentes, passa-fios, ferrolhos, indicadores e trincos.",
     },
   },
 ] as const;
@@ -193,7 +193,7 @@ const COPY = {
     collection: "Canton Product Collection",
     title: "Door & Window Hardware",
     intro:
-      "Nine families of door hardware, from the lever in the hand to the lock case inside the door. Much of it ships under our customers' own names, so every dimension is written down: the part in the tenth container has to match the sample.",
+      "Everything a door needs, from the lever in the hand to the lock case inside the leaf. Nine families, one standard: every dimension written down, every part made to work with the ones around it.",
     rangeMeta: "Nine coordinated families · one catalog",
     familiesHeading: "Nine ways into the catalog",
     familiesBody:
@@ -219,7 +219,7 @@ const COPY = {
     collection: "Colección Canton",
     title: "Herrajes para puertas y ventanas",
     intro:
-      "Nueve familias de herrajes para puertas, desde la manija en la mano hasta la caja de cerradura dentro de la hoja. Buena parte sale con la marca de nuestros clientes, por eso cada medida queda por escrito: la pieza del décimo contenedor tiene que ser igual a la muestra.",
+      "Todo lo que necesita una puerta, desde la manija en la mano hasta la caja de cerradura dentro de la hoja. Nueve familias y un mismo criterio: cada medida por escrito y cada pieza hecha para trabajar con las que la rodean.",
     rangeMeta: "Nueve familias coordinadas · un catálogo",
     familiesHeading: "Nueve entradas al catálogo",
     familiesBody:
@@ -245,7 +245,7 @@ const COPY = {
     collection: "Coleção Canton",
     title: "Ferragens para portas e janelas",
     intro:
-      "Nove famílias de ferragens para portas, da maçaneta na mão à caixa de fechadura dentro da folha. Boa parte sai com a marca dos nossos clientes, por isso cada medida fica registrada: a peça do décimo contêiner tem que ser igual à amostra.",
+      "Tudo o que uma porta precisa, da maçaneta na mão à caixa de fechadura dentro da folha. Nove famílias e um mesmo critério: cada medida registrada e cada peça feita para trabalhar com as que estão ao redor.",
     rangeMeta: "Nove famílias coordenadas · um catálogo",
     familiesHeading: "Nove entradas no catálogo",
     familiesBody:
