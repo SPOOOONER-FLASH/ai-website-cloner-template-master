@@ -197,7 +197,8 @@ const SRC_ES_FILES = ["src/data/es-glossary.ts", "src/data/capability.ts", "src/
 const SRC_ES_RULES = [word("manillas", "manijas"), word("manilla", "manija"), genderSwap({ lang: "es", from: "pomo", fromPl: "pomos", to: "perilla", toPl: "perillas", map: ES_M2F }), word("distancia al eje", "entrada")];
 
 function rulesFor(lang, file) {
-  const prose = /content[\\/](news|guides)[\\/]/.test(file);
+  /* category-positioning.json is prose too: its sentences end up in every product description */
+  const prose = /content[\\/](news|guides)[\\/]|category-positioning\.json$/.test(file);
   if (lang === "es") return prose ? [...ES_RULES, ...ES_PROSE_RULES] : ES_RULES;
   return prose ? [...PT_RULES, ...PT_PROSE_RULES] : PT_RULES;
 }

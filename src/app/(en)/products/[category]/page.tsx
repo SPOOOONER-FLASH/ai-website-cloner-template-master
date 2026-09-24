@@ -57,8 +57,8 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   // actually type — "panic exit device manufacturer" — and it is a plain statement of
   // what this company is, not a claim. Long names that overflow with the full qualifier
   // fall back to the short "— Manufacturer" form rather than shipping bare.
-  const withRole = `${category.name} — Manufacturer & Supplier`;
-  const withManufacturer = `${category.name} — Manufacturer`;
+  const withRole = `${category.name}, Manufacturer & Supplier`;
+  const withManufacturer = `${category.name}, Manufacturer`;
   const titleBudget = 62 - " | Canton Hyland".length;
   // A written seoTitle wins (content/categories.json): the generic role suffix carries no
   // long-tail term, and these pages were being seen in search and not clicked.

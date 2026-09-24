@@ -78,9 +78,14 @@ const sampleAt = process.argv.indexOf("--sample");
 const SAMPLE = sampleAt !== -1 ? Number(process.argv[sampleAt + 1]) : 12;
 
 /** 标题目标长度。Google 大约 600px 截断,拉丁文约 60–65 字符。 */
-const MAX = 65;
-/** 描述目标长度。Google 大约 920px,约 155–160 字符。 */
-const DESC_MAX = 158;
+/*
+  标题正文（不含「 | Canton Hyland」）的上限。2026-09-24 起按方案第七节：型号和最关键的长尾词
+  必须落在前 60 个字符里，站名放最后，被 Google 截掉也无妨。原来是整条 65（含站名 16 个字符），
+  正文只剩 49 个字符，LC04 的标题因此装不下「85mm centre」。
+*/
+const MAX = 60;
+/** 描述上限（方案 7.3）：完整句子、≤150 字符、以下一步收尾，不用「…」截断。 */
+const DESC_MAX = 150;
 
 const BRAND = { en: "Canton Hyland", es: "Canton Hyland", pt: "Canton Hyland" };
 
@@ -237,8 +242,23 @@ function shortMaterial(value) {
 }
 
 /** 该产品在这个语言里的尺寸短语,没有就 null。 */
-function dimensionPhrase(product, locale) {
+function dimensionPhrase(product, locale, full = false) {
   const key = locale === "en" ? "specs" : locale === "es" ? "specsEs" : "specsPt";
+  /*
+    锁体：中心距和 backset 一起写（方案 7.2，插芯锁体 57% 的查询是数字型）。瑞士买家从 ChatGPT
+    落到 LC04 85×60，问的就是这两个数；原来只取第一个可用尺寸，标题里只有 backset。
+  */
+  if ([].concat(product.categoryPath ?? [])[0] === "lock-cases") {
+    const mm = (label) => (String(spec(product, label)?.value ?? "").match(/^(\d+(?:\.\d+)?)\s*mm$/i) ?? [])[1];
+    const c = mm("Centre distance");
+    const b = mm("Backset");
+    if (c && b) {
+      /* 标题用短写（西葡的品类名长，全称放不进 60 个字符），描述用全称 */
+      return (full
+        ? { en: `${c}mm centre distance, ${b}mm backset`, es: `distancia entre ejes de ${c} mm, entrada de ${b} mm`, pt: `distância entre centros de ${c} mm, distância ao eixo de ${b} mm` }
+        : { en: `${c}mm centre, ${b}mm backset`, es: `ejes ${c} mm, entrada ${b} mm`, pt: `centros ${c} mm, eixo ${b} mm` })[locale];
+    }
+  }
   for (const source of DIMENSION_SOURCES) {
     // 尺寸的**数值**永远取自英文 specs(唯一权威),只有读法按语言换
     const row = spec(product, source.label);
@@ -267,6 +287,61 @@ function titleCaseEn(v) {
     .join("")
     .replace(/\bSs\b/g, "SS")
     .replace(/\bPvd\b/g, "PVD");
+}
+
+/*
+  产品名只是品类名时，换成买家搜的叫法（方案 7.4 第 2 条）。
+  47 个锁体三语都只叫「Lock Case」，27 个合页都叫品类名「Brass and Steel Hinges」，其中大半是不锈钢
+  （SSH018 就是 —— 标题写着 Brass and Steel，材质行写着 Stainless Steel）。
+  只换名字里的叫法；型号、材质都来自记录本身。
+*/
+const GENERIC_NAMES = {
+  "lock-cases": {
+    match: { en: "Lock Case", es: "Cerradura de embutir", pt: "Caixa de fechadura" },
+    buyer: () => ({ en: "Mortise Lock Case", es: "Cerradura de embutir", pt: "Fechadura de embutir" }),
+  },
+  "brass-steel-hinges": {
+    match: { en: "Brass and Steel Hinges", es: "Bisagras de latón y acero", pt: "Dobradiças de latão e aço" },
+    buyer: (m) => ({
+      en: m.en ? `${m.en} Door Hinge` : "Door Hinge",
+      es: m.es ? `Bisagra de ${m.es.toLowerCase()}` : "Bisagra de puerta",
+      pt: m.pt ? `Dobradiça de ${m.pt.toLowerCase()}` : "Dobradiça de porta",
+    }),
+  },
+};
+
+/** 型号字段填的其实是英文名（没有型号的记录）。 */
+const modelIsName = (product) => String(product.model ?? "").trim().toLowerCase() === String(product.name ?? "").trim().toLowerCase();
+const cap0 = (s) => String(s).charAt(0).toUpperCase() + String(s).slice(1);
+
+/** 名字里已经有这个材质（「9015 Stainless Steel Handle」），标题和描述就不再重复一遍。 */
+function unlessNamed(mat, name) {
+  if (!mat) return mat;
+  const n = String(name).toLowerCase();
+  const m = String(mat).toLowerCase();
+  if (n.includes(m)) return null;
+  /* 同一种材质的不同写法：Puxador em inox ↔ Aço inoxidável，Brass ↔ Solid Brass */
+  const ROOTS = [/inox|stainless/, /brass|lat[óã]o?n?|latão/, /zinc|zamak|zamac/, /alumin/];
+  return ROOTS.some((r) => r.test(n) && r.test(m)) ? null : mat;
+}
+
+function displayName(product, locale) {
+  const raw =
+    locale === "en"
+      ? String(product.name ?? "").trim()
+      : String(product[locale === "es" ? "nameEs" : "namePt"] ?? product.name ?? "").trim();
+  /* 西葡品类名里最长的两个，标题放不下任何规格；换成同义的短写 */
+  const SHORT = {
+    "Cerradura cilíndrica de servicio ligero": "Cerradura cilíndrica ligera",
+    "Cerradura cilíndrica de servicio pesado": "Cerradura cilíndrica reforzada",
+    "Fechadura cilíndrica de serviço leve": "Fechadura cilíndrica leve",
+    "Fechadura cilíndrica de serviço pesado": "Fechadura cilíndrica reforçada",
+  };
+  if (SHORT[raw]) return SHORT[raw];
+  const rule = GENERIC_NAMES[[].concat(product.categoryPath ?? [])[0]];
+  if (!rule || raw !== rule.match[locale]) return raw;
+  const mat = { en: materialPhrase(product, "en"), es: materialPhrase(product, "es"), pt: materialPhrase(product, "pt") };
+  return rule.buyer(mat)[locale];
 }
 
 function materialPhrase(product, locale) {
@@ -320,15 +395,16 @@ function materialPhrase(product, locale) {
  */
 function composeTitle(product, locale) {
   const model = glossModel(product.model, locale).trim();
-  const name =
-    locale === "en"
-      ? String(product.name ?? "").trim()
-      : String(product[locale === "es" ? "nameEs" : "namePt"] ?? product.name ?? "").trim();
+  const name = displayName(product, locale);
   if (!model || !name) return null;
 
-  const head = name.toLowerCase().startsWith(model.toLowerCase()) ? name : `${model} ${name}`;
+  /*
+    有些记录没有型号，model 填的就是英文名（「Tubular Knob Lock」）。西葡标题里再把它放在前面，
+    就成了「Tubular Knob Lock Cerradura tubular de perilla」。这种只用本语言的名字。
+  */
+  const head = modelIsName(product) || name.toLowerCase().startsWith(model.toLowerCase()) ? name : `${model} ${name}`;
   const dim = dimensionPhrase(product, locale);
-  const mat = materialPhrase(product, locale);
+  const mat = unlessNamed(materialPhrase(product, locale), name);
   const tail = ` | ${BRAND[locale]}`;
 
   const pos = positioning(product);
@@ -353,6 +429,22 @@ function composeTitle(product, locale) {
   const use = useRaw ? `${FOR[locale]} ${useRaw}` : null;
   // 场景接在品类名后面，用空格而不是破折号 —— 它读起来是名字的一部分。
   const withUse = use ? `${head} ${use}` : head;
+  /*
+    短场景：整句场景放不进 60 个字符时，只取含「门」的那一段（「entradas y puertas de vidrio」→
+    「puertas de vidrio」，「Fire Escape & Exit Doors」→「Exit Doors」），都没有就取第一段。
+    09-24 加：否则 186 条标题只剩型号和品类名，没有任何长尾成分（方案 7.4 第 3 条）。
+  */
+  let useShortRaw = null;
+  if (useRaw) {
+    const parts = useRaw.split(/\s*(?:,|&|\by\b|\be\b|\band\b)\s*/).filter(Boolean);
+    const door = parts.find((p) => /door|puerta|porta/i.test(p));
+    /* 段内含「门」时从门字起取（「seguridad en puertas de entrada」→「puertas de entrada」） */
+    const fromDoor = door ? door.slice(door.search(/doors?|puertas?|portas?/i)) : null;
+    /* 没有「门」字且只有一段时，去掉第一个修饰词（「Frameless Glass Entrances」→「Glass Entrances」） */
+    const pick = fromDoor ?? (parts.length === 1 ? parts[0].split(" ").slice(1).join(" ") : parts[0]);
+    if (pick && pick !== useRaw) useShortRaw = pick;
+  }
+  const withUseShort = useShortRaw ? `${head} ${FOR[locale]} ${useShortRaw}` : null;
 
   const build = (stem, parts) => stem + (parts.length ? `, ${parts.join(", ")}` : "") + tail;
 
@@ -360,27 +452,35 @@ function composeTitle(product, locale) {
     退让顺序。场景 + 尺寸最好；装不下时先保尺寸（产品独有），再保场景（品类共享）。
     规格永远排在营销限定词前面。
   */
+  /*
+    2026-09-24（方案 7.1）：供应商限定词（China Factory / OEM）不再和规格、场景抢标题位置，
+    「工厂直供」改由描述最后一句承担。只有一个产品既没有尺寸、材质，也没有场景可写时，
+    标题才用限定词补位，免得只剩型号和品类名。
+  */
   const candidates = [];
   if (use) {
     candidates.push([withUse, [dim, mat]]);
     candidates.push([withUse, [dim]]);
   }
-  for (const q of QUALIFIER[locale]) candidates.push([head, [dim, mat, q]]);
-  candidates.push([head, [dim, mat]]);
-  for (const q of QUALIFIER[locale]) candidates.push([head, [dim, q]]);
-  candidates.push([head, [dim]]);
+  if (dim || mat) {
+    candidates.push([head, [dim, mat]]);
+    candidates.push([head, [dim]]);
+  }
   if (use) {
     candidates.push([withUse, [mat]]);
     candidates.push([withUse, []]);
   }
-  for (const q of QUALIFIER[locale]) candidates.push([head, [mat, q]]);
-  candidates.push([head, [mat]]);
-  for (const q of QUALIFIER[locale]) candidates.push([head, [q]]);
+  if (withUseShort) {
+    candidates.push([withUseShort, [mat]]);
+    candidates.push([withUseShort, []]);
+  }
+  if (mat) candidates.push([head, [mat]]);
+  if (!dim && !mat && !use) for (const q of QUALIFIER[locale]) candidates.push([head, [q]]);
   candidates.push([head, []]);
 
   for (const [stem, parts] of candidates) {
     const title = build(stem, parts.filter(Boolean));
-    if (title.length <= MAX) return title;
+    if (title.length - tail.length <= MAX) return title;
   }
   return build(head, []);
 }
@@ -410,16 +510,27 @@ function composeTitle(product, locale) {
  * 既是重复内容，又把最值钱的一百个字符浪费在一句谁都能说的话上。
  * 现在开头就分岔：品类给一句卖点，产品给自己的规格。
  */
+/** 材质进句子：普通单词转小写，全大写缩写（ABS、304SS、PVD）保留原样。 */
+const inSentence = (m) => String(m).split(/(\s+)/).map((w) => (/^[A-ZÀ-Ý][a-zà-ÿ]+$/.test(w) ? w.toLowerCase() : w)).join("");
+
 function composeDescription(product, locale) {
   const model = glossModel(product.model, locale).trim();
-  const name =
-    locale === "en"
-      ? String(product.name ?? "").trim()
-      : String(product[locale === "es" ? "nameEs" : "namePt"] ?? product.name ?? "").trim();
+  const name = displayName(product, locale);
 
   const pos = positioning(product);
   const pitch = pos ? pos[locale === "en" ? "pitch" : locale === "es" ? "pitchEs" : "pitchPt"] : null;
-  const useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
+  let useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
+  /*
+    和标题一样去掉同义反复：名字里已经说了场景，开头句就不再「for …」一遍。
+    09-24 之前描述没有这一步，出现过「barra antipánico para puerta cortafuego para puertas cortafuegos」。
+  */
+  if (useRaw) {
+    const STOP = new Set(["for", "and", "&", "the", "of", "para", "y", "e", "de", "la", "las", "los", "do", "da", "das", "dos"]);
+    const stem = (w) => w.replace(/e?s$/, "");
+    const inName = new Set(name.toLowerCase().split(/[^a-zà-ɏ]+/).filter((w) => w && !STOP.has(w)).map(stem));
+    const words = useRaw.toLowerCase().split(/[^a-zà-ɏ]+/).filter((w) => w && !STOP.has(w));
+    if (words.length && words.filter((w) => inName.has(stem(w))).length / words.length >= 0.4) useRaw = null;
+  }
   const FOR = { en: "for", es: "para", pt: "para" };
 
   const facts = [];
@@ -427,8 +538,8 @@ function composeDescription(product, locale) {
     if (v && facts.length < 3) facts.push(v);
   };
 
-  const dim = dimensionPhrase(product, locale);
-  const mat = materialPhrase(product, locale);
+  const dim = dimensionPhrase(product, locale, true);
+  const mat = unlessNamed(materialPhrase(product, locale), name);
 
   const row = (label) => {
     const r = spec(product, label);
@@ -447,49 +558,77 @@ function composeDescription(product, locale) {
 
   const finishRaw = row("Finish");
   const finishCount = finishRaw ? finishRaw.split(/\s*[/,]\s*/).filter((x) => x.trim()).length : 0;
-  const fn = short(row("Function"));
+  /*
+    功能值形如「Entrance, keyed outside」「Privacy, bathroom, turn button inside」。放进逗号分隔的
+    事实句里会读成三件事，所以只取功能名，写成「entrance function」（仅英文句用到）。
+  */
+  const fnRaw = short(row("Function"));
+  const fn = fnRaw
+    ? /^(entrance|privacy|passage|classroom|storeroom|communication|dummy)\b/i.test(fnRaw)
+      ? `${fnRaw.split(/[,;(]/)[0].trim().toLowerCase()} function`
+      : fnRaw
+    : null;
   const handing = short(row("Handing"), 38);
   const backset = short(row("Backset"), 24);
 
   if (locale === "en") {
-    push(mat ? `${mat.toLowerCase()}` : null);
+    push(mat ? inSentence(mat) : null);
     push(dim);
     push(fn);
     push(backset && !String(dim ?? "").includes("backset") ? `${backset} backset` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "fully reversible" : null);
     push(finishCount > 1 ? `${finishCount} finishes` : null);
   } else if (locale === "es") {
-    push(mat ? mat.toLowerCase() : null);
+    push(mat ? inSentence(mat) : null);
     push(dim);
     push(backset && !String(dim ?? "").includes("entrada") ? `entrada ${backset}` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "totalmente reversible" : null);
     push(finishCount > 1 ? `${finishCount} acabados` : null);
   } else {
-    push(mat ? mat.toLowerCase() : null);
+    push(mat ? inSentence(mat) : null);
     push(dim);
     push(backset && !String(dim ?? "").includes("distância") ? `distância ${backset}` : null);
     push(handing && /revers|non-?hand/i.test(handing) ? "totalmente reversível" : null);
     push(finishCount > 1 ? `${finishCount} acabamentos` : null);
   }
 
-  const opener = useRaw
-    ? `${model} ${name.toLowerCase()} ${FOR[locale]} ${useRaw.toLowerCase()}.`
-    : `${model} ${name.toLowerCase()}.`;
+  const lead = modelIsName(product) ? cap0(name) : `${model} ${name.toLowerCase()}`;
+  const opener = useRaw ? `${lead} ${FOR[locale]} ${useRaw.toLowerCase()}.` : `${lead}.`;
 
   /*
     事实在前，卖点在后。卖点是整个品类共享的一句话，如果排在前面，同品类的
     三十七条描述前一百个字符就一模一样 —— 那正是旧版的毛病。
     产品自己的规格必须先出现，卖点被截断没关系。
   */
-  const parts = [opener];
-  if (facts.length) parts.push(`${facts.join(", ")}.`);
-  if (pitch) parts.push(pitch);
-
-  let out = parts.join(" ").replace(/\s{2,}/g, " ").replace(/\.\./g, ".").trim();
-  if (out.length > DESC_MAX) {
-    out = `${out.slice(0, DESC_MAX - 1).replace(/[\s,;:—-]+$/, "")}…`;
+  /*
+    2026-09-24（方案 7.3）：描述只由完整句子组成。原来是「拼好再在第 158 个字符处砍一刀加 …」，
+    1,217 条描述断在半个单词上（「…not a plated shell, the finis…」）；事实句以小写材质开头，
+    1,109 条出现「句号 + 小写」。现在按句取舍：开头 + 事实 + 卖点 + 下一步，装不下先丢卖点，
+    再丢下一步，再从后往前丢事实。任何情况下都不截断句子。
+  */
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const NEXT = {
+    en: "Factory direct, samples and quotation on request.",
+    es: "Directo de fábrica, muestras y cotización a pedido.",
+    pt: "Direto da fábrica, amostras e orçamento sob consulta.",
+  };
+  const join = (...s) => s.filter(Boolean).join(" ").replace(/\s{2,}/g, " ").replace(/\.\./g, ".").trim();
+  for (let f = facts.slice(); ; f = f.slice(0, -1)) {
+    const factSentence = f.length ? `${cap(f.join(", "))}.` : "";
+    for (const combo of [
+      [opener, factSentence, pitch, NEXT[locale]],
+      [opener, factSentence, NEXT[locale]],
+      [opener, factSentence, pitch],
+      [opener, factSentence],
+    ]) {
+      const out = join(...combo);
+      if (out.length <= DESC_MAX) return out;
+    }
+    if (!f.length) break;
   }
-  return out;
+  /* 只有开头一句且仍超长（极少见）：在词边界收住，句号结尾，不加 … */
+  const o = join(opener);
+  return o.length <= DESC_MAX ? o : `${o.slice(0, DESC_MAX - 1).replace(/[\s,;:]+\S*$/, "")}.`;
 }
 
 
@@ -498,6 +637,40 @@ const FIELDS = [
   ["es", "seoTitleEs", "seoDescriptionEs"],
   ["pt", "seoTitlePt", "seoDescriptionPt"],
 ];
+
+/*
+  方案 7.4 的四条断言，只看已发布的 HYDE 产品，任何一条不过 `--check` 就失败、发布停下：
+    1. 标题含型号；
+    2. 标题含买家用语的品类名；
+    3. 前 60 个字符里有长尾成分（型号以外的数字、「for / para」场景、或逗号后的规格/材质），
+       产品本身没有尺寸、材质、场景可写时除外（那是数据缺口，要工厂补，不是生成器的错）；
+    4. 标题和描述不出现认证、防火等级、小时数、标准号 —— 这些只有证书在手才写。
+*/
+const BUYER_NOUN = {
+  en: /lock|latch|hinge|handle|lever|knob|bar|device|trim|closer|cylinder|bolt|stop|viewer|number|accessor|grab|hook|guard|indicator|fitting|pull|patch|spring|pivot|set|case|body|plate|escutcheon|rose|chain|key|damper|holder|bracket|sign|house no|numeral|coordinator|hook/i,
+  es: /cerradura|picaporte|bisagra|manija|perilla|barra|guarnici|cierrapuertas|cilindro|cerrojo|pasador|tope|mirilla|n[úu]mero|accesorio|agarradera|gancho|indicador|herraje|tirador|pinza|pivote|juego|caja|cuerpo|placa|roseta|cadena|llave|amortiguador|soporte|se[ñn]al|selector|pasacables|percha|numeral|coordinador/i,
+  pt: /fechadura|lingueta|dobradi|ma[çc]aneta|barra|guarni|mola|cilindro|trava|ferrolho|fecho|batedor|olho|n[úu]mero|acess[óo]rio|gancho|indicador|ferragem|puxador|pin[çc]a|piv[ôo]|conjunto|caixa|corpo|placa|roseta|corrente|chave|amortecedor|suporte|espelho|trinco|ferragens|batedor|transfer[êe]ncia|coordenador|numera/i,
+};
+const CERT = /\b(EN\s?\d{3,5}|UL\s?\d{2,4}|ANSI|BHMA|ISO\s?\d{3,5}|CE[- ]certified|fire[- ]?rated|\d+(?:\.\d+)?\s?(?:hours?|hrs?|horas?)\b)/i;
+const issues = [];
+const warnings = [];
+function audit(product, locale, title, desc) {
+  const body = title.replace(/ \| [^|]+$/, "");
+  const model = glossModel(product.model, locale).trim();
+  const tag = `${locale} ${product.model}: ${title}`;
+  if (model && !modelIsName(product) && !body.toLowerCase().includes(model.toLowerCase())) issues.push(`标题缺型号  ${tag}`);
+  if (!BUYER_NOUN[locale].test(body)) issues.push(`标题缺品类名  ${tag}`);
+  /* 锁芯的长度写在型号里（70PBDK），方案 7.2 定为「标题照旧」，型号里的数字即长尾成分 */
+  const cylinder = [].concat(product.categoryPath ?? [])[0] === "lock-cylinders";
+  const rest = cylinder ? body.slice(0, MAX) : body.slice(0, MAX).replace(model, "");
+  const hasData = dimensionPhrase(product, locale) || materialPhrase(product, locale) || positioning(product);
+  if (hasData && !(/\d/.test(rest) || / (for|para) /i.test(rest) || rest.includes(","))) {
+    /* 型号 + 名字本身已超过 40 个字符，剩不到 20 个字符放长尾：这是命名问题，列出来但不拦发布 */
+    const head = modelIsName(product) ? displayName(product, locale) : `${model} ${displayName(product, locale)}`;
+    (head.length > 40 ? warnings : issues).push(`前 60 字符无长尾成分  ${tag}`);
+  }
+  if (CERT.test(title) || CERT.test(desc)) issues.push(`出现认证/等级措辞  ${tag}`);
+}
 
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
 let changed = 0;
@@ -519,6 +692,7 @@ for (const file of files) {
     const title = composeTitle(product, locale);
     if (!title) continue;
     const desc = composeDescription(product, locale);
+    if (product.heroImage?.src) audit(product, locale, title, desc);
     if (product[titleKey] !== title || product[descKey] !== desc) {
       if (locale === "en" && samples.length < SAMPLE) {
         samples.push({ before: product[titleKey], after: title, desc });
@@ -530,7 +704,7 @@ for (const file of files) {
     if (locale === "en") {
       if (dimensionPhrase(product, "en")) withDim++;
       if (QUALIFIER.en.some((q) => title.includes(q))) withQual++;
-      if (title.length > MAX) overLong.push(`${title.length}  ${title}`);
+      if (title.replace(/ \| [^|]+$/, "").length > MAX) overLong.push(`${title.length}  ${title}`);
     }
   }
 
@@ -538,6 +712,13 @@ for (const file of files) {
     changed++;
     if (WRITE) writeFileSync(path, `${JSON.stringify(product, null, 2)}\n`);
   }
+}
+
+if (warnings.length) console.warn(`product-titles: ${warnings.length} 条命名过长、放不下长尾成分（警告，不拦发布）`);
+if (issues.length) {
+  console.error(`product-titles: ${issues.length} 条标题/描述不符合方案 7.4：`);
+  for (const i of issues.slice(0, process.argv.includes("--all-issues") ? issues.length : 25)) console.error(`  ${i}`);
+  if (CHECK) process.exit(1);
 }
 
 if (CHECK) {
