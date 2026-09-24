@@ -35,3 +35,10 @@ out-rayen/ 由 `npm run release:rayen` 构建发布。
 
 09-21 那 7 个本地提交保存在分支 `backup/rayen-local-2026-09-22`；09-22 重复做的锌合金分体
 （origin 已由 `616223882f4` 发布 46 个）在 stash，确认无用后可删。
+
+## 追记 2026-09-24：发布检出改放 E 盘
+
+`release:rayen` 第一次跑在 `git worktree add` 就失败：C 盘只剩 2.8GB，一份检出约 4GB。
+这次改在 D 盘建外层 worktree 再发布。甲方随后指示「改为 E 盘」：`release-site.mjs` 加了
+`--root`（或环境变量 `RELEASE_ROOT`），默认仍是 tmp/；AGENTS.md 分界墙一节写明本机用
+`npm run release:rayen -- --root E:/release`。

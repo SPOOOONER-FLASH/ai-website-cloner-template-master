@@ -27,6 +27,7 @@
  *   npm run release:rayen
  *   node scripts/release-site.mjs --site hyde --trailer "Co-Authored-By: …"   追加提交说明尾行
  *   node scripts/release-site.mjs --site hyde --keep                           保留检出以便排查
+ *   npm run release:rayen -- --root E:/release                              检出建在 E 盘（本机 C 盘满，甲方 09-24）
  *
  * 各站的检查：
  *   hyde   npm run deploy:prep（构建 + 全部导出检查）
@@ -75,7 +76,20 @@ function must(label, r) {
 }
 
 const stamp = new Date().toISOString().replace(/[-:]/g, "").replace("T", "-").slice(0, 15);
-const WT = join("tmp", `release-${site}-${stamp}`);
+/*
+  检出放哪。默认是仓库里的 tmp/。
+
+  甲方 2026-09-24：「改为 E 盘」。86132 这台的 C 盘满了（发布当天只剩 2.8GB），一份干净检出
+  60,197 个文件约 4GB，再加依赖和构建，建到一半就报 No space left on device —— 而且报的是
+  git worktree add 失败，看上去像仓库坏了。所以检出位置可以指定：
+
+    npm run release:rayen -- --root E:/release
+    RELEASE_ROOT=E:/release npm run release:hyde
+
+  只影响检出建在哪；构建、只提交本站目录、推送、删除检出，全部照旧。
+*/
+const RELEASE_ROOT = opt("--root") ?? process.env.RELEASE_ROOT ?? "tmp";
+const WT = join(RELEASE_ROOT, `release-${site}-${stamp}`);
 let ok = false;
 
 try {

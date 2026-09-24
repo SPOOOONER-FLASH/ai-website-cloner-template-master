@@ -491,6 +491,18 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    it cannot conflict), and deletes the checkout. The main working tree is never touched, so
    nobody's uncommitted work can be baked in or swept up. `release:rayen` does the same for
    `out-rayen/`. **Do not build and commit `out/` or `out-rayen/` by hand any more.**
+
+   **On this machine, put the checkout on E:** (client, 2026-09-24: 「改为 E 盘」). C: is full —
+   on 2026-09-24 it had 2.8 GB left, a clean checkout is ~4 GB before dependencies, and the
+   release died inside `git worktree add` with `No space left on device`, which reads like a
+   broken repository rather than a full disk. So:
+
+   ```bash
+   npm run release:rayen -- --root E:/release
+   npm run release:hyde  -- --root E:/release     # or set RELEASE_ROOT=E:/release
+   ```
+
+   `--root` only moves where the checkout is built; staging, pushing and cleanup are unchanged.
 2. **A commit may not cross the wall.** `.githooks/pre-commit` runs `scripts/site-wall.mjs`
    and rejects any commit that stages files from both lanes. Installed once with
    `npm run wall:install`; it applies to every worktree of this repo. Genuine exceptions:
