@@ -34,6 +34,22 @@ export function filterGuides(entries: readonly GuideLibraryEntry[], query: strin
   });
 }
 
+const GUIDE_SCENE_NAMES = new Set([
+  'certification-and-test-validation', 'corrosion-resistance-en-1670',
+  'en-1125-vs-en-179', 'exit-device-outside-trim-functions',
+  'fire-door-hardware-what-must-be-rated', 'hardware-refurbishment-survey',
+  'lever-return-and-en-1906', 'master-key-hierarchy-planning',
+  'powder-coating-and-ral', 'qualifying-a-hardware-supplier',
+  'specification-section-08-71-00', 'submittal-package-contents',
+  'technical-drawings-what-to-expect',
+]);
+
 export function isGuideProductPhoto(src?: string): src is string {
+  if (!src || src.includes('guides-reference-desk-')) return false;
+  return !GUIDE_SCENE_NAMES.has(src.split('/').pop()?.replace(/\.webp$/, '') ?? '');
+}
+
+/** A scene is an editorial illustration, usable as a cover but not product evidence. */
+export function isGuideVisual(src?: string): src is string {
   return Boolean(src && !src.includes('guides-reference-desk-'));
 }

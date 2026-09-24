@@ -1,0 +1,9 @@
+# Codex — Guides visual refresh — 2026-09-23
+
+Scope: `/guides/` listing and guide article covers in English, Spanish and Portuguese. Replaced the white, padded featured photograph with a dark editorial hero using the existing real-product studio composition for the door-preparation guide. The library now uses restrained topic labels, row numbers and image frames that preserve the aspect ratio of real hardware. The materials panel features the existing brass-alloy photograph instead of another white-background cutout. No hardware geometry was generated or changed.
+
+Corrected three guide hero subjects: the strike-plate article now shows an LC04 lock case alongside its matching strike, dimensional interchangeability shows a dimensioned LC04 case, and chrome finishes shows a real chrome 5831 lock (the catalogue does not establish a more specific finish code). Generated *empty* architectural scenes carry visible conceptual labels in the library and article, do not open as bare images, and are no longer classified as product photographs. Their provenance lives beside each image in `public/images/editorial/guides/*.webp.json`.
+
+Verification: desktop and 390 px mobile previews of the Guides landing page, Spanish landing page, a conceptual-scene guide and the strike-plate guide; `npm run typecheck` passed; `npm run lint` passed with 12 unrelated existing warnings; `npm run motion:check` passed; `npm test` passed 367/367; `git diff --check` passed.
+
+Untouched: shared checkout, `SiteHeader`, `SearchDialog`, product geometry, the News pages and `out/` / `out-rayen/`. The two release-build claims in `docs/collaboration/NOW.md` were present when this work began, so generated export is left to the current release builder. Next useful action: integrate this source on main and include it in the next complete export before production verification.

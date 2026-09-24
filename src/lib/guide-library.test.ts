@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterGuides, guideTopic, isGuideProductPhoto, type GuideLibraryEntry } from './guide-library.ts';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { filterGuides, guideTopic, isGuideProductPhoto, isGuideVisual, type GuideLibraryEntry } from './guide-library.ts';
 
 const entries: GuideLibraryEntry[] = [
   { slug: 'cylinder', title: 'Cilindros: dimensiones', summary: 'Medición de la puerta', topic: 'fit', models: ['45BN'] },
@@ -24,4 +26,15 @@ test('decorative fallback backgrounds never masquerade as product thumbnails', (
   assert.equal(isGuideProductPhoto('/images/editorial/guides-reference-desk-1600.webp'), false);
   assert.equal(isGuideProductPhoto(undefined), false);
   assert.equal(isGuideProductPhoto('/images/products-hyde/45-bnik-lock-cylinder-2.webp'), true);
+  assert.equal(isGuideProductPhoto('/images/editorial/guides/corrosion-resistance-en-1670.webp'), false);
+  assert.equal(isGuideVisual('/images/editorial/guides/corrosion-resistance-en-1670.webp'), true);
+});
+test('every generated architectural scene is labelled as illustration rather than product evidence', () => {
+  const directory = join(process.cwd(), 'public/images/editorial/guides');
+  for (const file of readdirSync(directory).filter(name => name.endsWith('.webp.json'))) {
+    const provenance = JSON.parse(readFileSync(join(directory, file), 'utf8')) as { kind: string };
+    if (provenance.kind === 'generated-architectural-scene') {
+      assert.equal(isGuideProductPhoto(`/images/editorial/guides/${file.replace(/\.json$/, '')}`), false, file);
+    }
+  }
 });

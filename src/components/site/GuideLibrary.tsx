@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { ArrowUpRight, Search } from 'lucide-react';
 import type { Locale } from '@/data/site';
 import { localisedHref } from '@/lib/spanish-mirror';
-import { filterGuides, type GuideLibraryEntry, type GuideTopic } from '@/lib/guide-library';
+import { filterGuides, isGuideProductPhoto, type GuideLibraryEntry, type GuideTopic } from '@/lib/guide-library';
 import styles from './GuideEditorial.module.css';
 
 const COPY = {
-  en: { title: 'Find your next answer.', search: 'Search guides', placeholder: 'Cylinder, LC04, finish, EN 1125…', all: 'All guides', fit: 'Dimensions & fit', materials: 'Materials & finishes', standards: 'Standards & testing', buying: 'Ordering & delivery', other: 'More topics', count: 'guides', topics: 'Browse by topic', clear: 'Clear filters', empty: 'No guides match these filters.', emptyText: 'Try a model, a shorter keyword, or choose another topic.', read: 'Read guide' },
-  es: { title: 'Encuentre la respuesta.', search: 'Buscar guías', placeholder: 'Cilindro, LC04, acabado, EN 1125…', all: 'Todas las guías', fit: 'Medidas y compatibilidad', materials: 'Materiales y acabados', standards: 'Normas y ensayos', buying: 'Pedidos y entrega', other: 'Más temas', count: 'guías', topics: 'Explorar por tema', clear: 'Borrar filtros', empty: 'No hay guías con estos filtros.', emptyText: 'Pruebe un modelo, una palabra más corta u otro tema.', read: 'Leer guía' },
-  pt: { title: 'Encontre a resposta.', search: 'Buscar guias', placeholder: 'Cilindro, LC04, acabamento, EN 1125…', all: 'Todos os guias', fit: 'Medidas e compatibilidade', materials: 'Materiais e acabamentos', standards: 'Normas e ensaios', buying: 'Pedidos e entrega', other: 'Mais temas', count: 'guias', topics: 'Explorar por tema', clear: 'Limpar filtros', empty: 'Nenhum guia corresponde aos filtros.', emptyText: 'Tente um modelo, uma palavra mais curta ou outro tema.', read: 'Ler guia' },
+  en: { title: 'Find your next answer.', search: 'Search guides', placeholder: 'Cylinder, LC04, finish, EN 1125…', all: 'All guides', fit: 'Dimensions & fit', materials: 'Materials & finishes', standards: 'Standards & testing', buying: 'Ordering & delivery', other: 'More topics', count: 'guides', topics: 'Browse by topic', clear: 'Clear filters', empty: 'No guides match these filters.', emptyText: 'Try a model, a shorter keyword, or choose another topic.', read: 'Read guide', conceptual: 'Concept image' },
+  es: { title: 'Encuentre la respuesta.', search: 'Buscar guías', placeholder: 'Cilindro, LC04, acabado, EN 1125…', all: 'Todas las guías', fit: 'Medidas y compatibilidad', materials: 'Materiales y acabados', standards: 'Normas y ensayos', buying: 'Pedidos y entrega', other: 'Más temas', count: 'guías', topics: 'Explorar por tema', clear: 'Borrar filtros', empty: 'No hay guías con estos filtros.', emptyText: 'Pruebe un modelo, una palabra más corta u otro tema.', read: 'Leer guía', conceptual: 'Imagen conceptual' },
+  pt: { title: 'Encontre a resposta.', search: 'Buscar guias', placeholder: 'Cilindro, LC04, acabamento, EN 1125…', all: 'Todos os guias', fit: 'Medidas e compatibilidade', materials: 'Materiais e acabamentos', standards: 'Normas e ensaios', buying: 'Pedidos e entrega', other: 'Mais temas', count: 'guias', topics: 'Explorar por tema', clear: 'Limpar filtros', empty: 'Nenhum guia corresponde aos filtros.', emptyText: 'Tente um modelo, uma palavra mais curta ou outro tema.', read: 'Ler guia', conceptual: 'Imagem conceitual' },
 } as const;
 
 export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]; locale: Locale }) {
@@ -45,15 +45,17 @@ export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]
           {(query || topic !== 'all') && <button type="button" onClick={clear}>{t.clear}</button>}
         </div>
         {/* All links are server-rendered: filtering must not make this catalogue an orphaned client-only index. */}
-        {results.map(entry => <article key={entry.slug} className={styles.result}>
+        {results.map((entry, index) => <article key={entry.slug} className={styles.result} data-topic={entry.topic}>
+          <span className={styles.rowNumber} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
           <div><p className={styles.topic}>{t[entry.topic]}</p>
             <h3><Link href={localisedHref(`/guides/${entry.slug}/`, locale)}>{entry.title}</Link></h3>
             <p className={styles.summary}>{entry.summary}</p>
             <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.textLink}>{t.read}<ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
-          {entry.image && <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.thumbnail} tabIndex={-1} aria-hidden="true">
+          {entry.image && <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.thumbnail} data-catalogue={entry.image.src.startsWith('/images/products-')} tabIndex={-1} aria-hidden="true">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={entry.image.src} alt="" width="200" height="160" loading="lazy" />
+            {!isGuideProductPhoto(entry.image.src) && <span className={styles.conceptBadge}>{t.conceptual}</span>}
           </Link>}
         </article>)}
         {results.length === 0 && <div className={styles.empty}><h3>{t.empty}</h3><p>{t.emptyText}</p><button type="button" onClick={clear}>{t.clear}</button></div>}
