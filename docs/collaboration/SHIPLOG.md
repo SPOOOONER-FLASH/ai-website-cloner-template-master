@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 534 次提交
+最近 30 天 · 共 535 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 14:54 | HYDE | D1：文章西语正文 picaporte 清零（按 RAE：斜舌 pestillo、方舌 cerrojo、插销 pasador） | `c00048bfc32` |
 | 14:50 | 中立 | 服务页西语、葡语文案（SERVICES_COPY.es / .pt） | `f407c3763e8` |
 | 14:48 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e63e0f9a3f9` |
 | 14:48 | HYDE | 认证页如实写现状；联系页写明可走阿里巴巴或直接下单（三语） | `9313eca805c` |
