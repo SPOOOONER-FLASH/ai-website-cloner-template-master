@@ -586,7 +586,9 @@
     "60kg (3 hinges)": "60kg（3 只）",
     "80kg (3 hinges)": "80kg（3 只）",
     "110mm (+0.3 / −0.4)": "110mm（+0.3 / −0.4）",
-    "129.8mm (+0.3 / −0.4)": "129.8mm（+0.3 / −0.4）"
+    "129.8mm (+0.3 / −0.4)": "129.8mm（+0.3 / −0.4）",
+    "Timber entrance doors and room doors": "各种木质大门、房门",
+    "Cushioned at small opening angles": "小角度缓冲"
   },
   "tokens": [
     [
@@ -1476,6 +1478,18 @@
     [
       "Anodised Sand Gold",
       "铝氧化砂金"
+    ],
+    [
+      "Sand White",
+      "砂白"
+    ],
+    [
+      "Soft White",
+      "雅白"
+    ],
+    [
+      "Gunmetal",
+      "枪灰"
     ]
   ]
 }
