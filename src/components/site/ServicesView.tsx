@@ -54,7 +54,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "01",
         title: "New tooling to your design",
-        body: "Send a drawing, a sample or a reference model. Our engineers work out the part, we cut the tooling, and you approve samples before a single production piece is made.",
+        body: "Send a drawing, a sample or a reference model. Our engineers work out the part, we cut the tooling, and you approve samples before a single production piece is made. Tooling cost and the minimum run are quoted per part; on our standard models, most minimums fall between 300 and 5,000 pieces.",
         outcome: "Send the drawing or sample, the target market and your expected annual quantity.",
       },
       {
@@ -72,7 +72,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "04",
         title: "Samples that decide the order",
-        body: "Samples of the exact model, function and finish you will order, so the sample you approve is the product that ships, container after container.",
+        body: "Samples of the exact model, function and finish you will order, so the sample you approve is the product that ships, container after container. Samples are charged and the cost is credited against your first production order; a stocked model usually ships within days.",
         outcome: "Include the destination, the quantity and what the sample has to prove.",
       },
       {
@@ -115,7 +115,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "01",
         title: "Moldes nuevos a partir de su diseño",
-        body: "Envíenos un plano, una muestra o un modelo de referencia. Nuestros ingenieros resuelven la pieza, hacemos el molde y usted aprueba las muestras antes de fabricar una sola unidad de serie.",
+        body: "Envíenos un plano, una muestra o un modelo de referencia. Nuestros ingenieros resuelven la pieza, hacemos el molde y usted aprueba las muestras antes de fabricar una sola unidad de serie. El costo del molde y la serie mínima se cotizan por pieza; en nuestros modelos estándar, la mayoría de los mínimos está entre 300 y 5.000 piezas.",
         outcome: "Envíe el plano o la muestra, el mercado de destino y la cantidad anual prevista.",
       },
       {
@@ -133,7 +133,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "04",
         title: "Muestras que deciden el pedido",
-        body: "Muestras del modelo, la función y el acabado exactos que va a pedir, para que la muestra que usted aprueba sea el producto que se envía, contenedor tras contenedor.",
+        body: "Muestras del modelo, la función y el acabado exactos que va a pedir, para que la muestra que usted aprueba sea el producto que se envía, contenedor tras contenedor. Las muestras se cobran y su costo se descuenta de su primer pedido de producción; un modelo en stock suele despacharse en pocos días.",
         outcome: "Indique el destino, la cantidad y qué tiene que demostrar la muestra.",
       },
       {
@@ -175,7 +175,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "01",
         title: "Moldes novos a partir do seu projeto",
-        body: "Envie um desenho, uma amostra ou um modelo de referência. Nossos engenheiros resolvem a peça, fazemos o molde e você aprova as amostras antes de fabricarmos uma única peça de série.",
+        body: "Envie um desenho, uma amostra ou um modelo de referência. Nossos engenheiros resolvem a peça, fazemos o molde e você aprova as amostras antes de fabricarmos uma única peça de série. O custo do ferramental e o lote mínimo são cotados por peça; nos nossos modelos padrão, a maioria dos mínimos fica entre 300 e 5.000 peças.",
         outcome: "Envie o desenho ou a amostra, o mercado de destino e a quantidade anual prevista.",
       },
       {
@@ -193,7 +193,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
       {
         number: "04",
         title: "Amostras que decidem o pedido",
-        body: "Amostras do modelo, da função e do acabamento exatos que você vai pedir, para que a amostra aprovada seja o produto embarcado, contêiner após contêiner.",
+        body: "Amostras do modelo, da função e do acabamento exatos que você vai pedir, para que a amostra aprovada seja o produto embarcado, contêiner após contêiner. As amostras são cobradas e o valor é abatido do seu primeiro pedido de produção; um modelo em estoque costuma ser despachado em poucos dias.",
         outcome: "Informe o destino, a quantidade e o que a amostra precisa comprovar.",
       },
       {
