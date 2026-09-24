@@ -11,3 +11,7 @@
 | 术语 | zh-terms 新增：Brushed Gold、Magnetic Pin，以及 7 条「高 / 吸头 / 底座」尺寸串。英文残留从 424 降回 417（和本批之前一样） |
 | 测试 | `npm test` 373/373；`rayen:images:check` 0 |
 | 下一步 | p81 地吸（D3770、D3867、D3769、D3776）和装饰小五金（D3869、D3870、D3759、D3760、D3871、D3872）；p82 门碰、猫眼、防尘器、插销，以及 SC-901/903/904 移门扣盒；然后是 p83–p84 |
+
+## 追加：分界墙放行合并提交
+
+`npm run ship` 的旁路合并遇到 SHIPLOG.md 冲突时，043a1e1d595 已经能自动解决冲突，但收尾的 `git commit` 会触发 pre-commit 分界墙。合并提交里天然同时带着 out-rayen/ 和 out/，于是被拒，结果仍然是 75（本批第一次推送时复现）。现在 `site-wall.mjs` 在 MERGE_HEAD 存在时直接放行：被合并进来的每个提交在各自那一边都已经过墙。已在 tmp/ship-merge 里复现并验证。
