@@ -80,9 +80,7 @@ export default function ProductFinderPage() {
               <FinderModeSwitch active="catalogue" />
             </div>
             <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-              Narrow the catalog by the attributes that appear on a hardware schedule.
-              Filters combine, counts update as you go, and the address bar keeps your
-              selection so you can send it to a colleague.
+              Search the way you already write a door schedule: by category, material, finish and door type. Your selection stays in the link, so a colleague opens exactly the list you see.
             </p>
             {/*
               Honest scope note. The catalogue here is a subset and most records have no
@@ -91,8 +89,7 @@ export default function ProductFinderPage() {
               options from the data rather than from a hard-coded list.
             */}
             <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-              Showing {publishedProducts.length} published products. Dimensional filters (backset,
-              center distance, door thickness) arrive with the full technical catalog.
+              Showing {publishedProducts.length} published products. Filters for backset, center distance and door thickness arrive with the full technical catalog; until then, each product page lists the figures it has.
             </p>
           </div>
           <div className="col-span-full xl:col-span-9 xl:col-start-16">
