@@ -6,7 +6,16 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "specs": [],
+  "specs": [
+    {
+      "label": "Center distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "50mm"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -36,8 +45,38 @@
   "seoDescriptionEs": "LC06 85_50PS cerradura de embutir para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Caixa de fechadura",
   "summaryPt": "Caixa de fechadura de embutir de passagem, com entre-eixos de 85 mm e distância ao eixo de 50 mm.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "85 mm"
+    },
+    {
+      "label": "Distância ao eixo (broca)",
+      "value": "50 mm"
+    }
+  ],
   "seoTitlePt": "LC06 85_50PS Fechadura de embutir para portas de madeira | Canton Hyland",
   "seoDescriptionPt": "LC06 85_50PS fechadura de embutir para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cerradura de embutir."
+  "summaryEs": "Cerradura de embutir.",
+  "specSources": {
+    "modelCode": {
+      "basis": "confirmed-against-model-code",
+      "fields": [
+        "Center distance",
+        "Backset"
+      ],
+      "note": "85/50, which is what the model code 85_50 spells out.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Distancia entre ejes",
+      "value": "85 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "50 mm"
+    }
+  ]
 }

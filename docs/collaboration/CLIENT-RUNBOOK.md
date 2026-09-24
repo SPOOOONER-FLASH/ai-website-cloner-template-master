@@ -23,7 +23,7 @@
 `archive/2026-09-22-ga4-www-gsc-video-nginx.md`，**不要再照着做**。
 每一件的实测结果写在那份存档的开头。
 
-**两件。② 是 09-24 新加的。** 09-23 的「服务器停止更新」已经修好，移进了 `archive/2026-09-24-server-deploy-v2.md`。
+**三件。②③ 是 09-24 新加的。** 09-23 的「服务器停止更新」已经修好，移进了 `archive/2026-09-24-server-deploy-v2.md`。
 
 ---
 
@@ -110,6 +110,24 @@ https://cantonlock.com/guides/hardware-warranty-what-it-covers-2026/
 **成功的样子**：「自定义定义」列表里出现这 6 行。数据从登记之后开始积累，**24–48 小时后**报表里才看得到。
 **Clarity 不用你做任何事**：录像里可以直接按标签 `read_style = skim / read` 筛选（筛选 → 自定义标签）。
 **看不到「创建自定义维度」按钮**：你的账号权限不是「编辑者」，截图发我。
+
+---
+
+### ③ 装一次新的跳转规则 —— 2 分钟（2026-09-24）
+
+**为什么**：有个产品网址写着「ansi-grade-3」（`/products/grip-handle-sets/ansi-grade-3-keyed-deadbolt-lock-set/`），
+我们没有 ANSI 认证，网址不能这么写。已改成 `keyed-deadbolt-lock-set`。旧网址已被 Google 收录，
+要在服务器上装一条 301，旧链接才会正式跳到新网址（现在浏览器里也会跳，但搜索引擎要的是 301）。
+
+**在宝塔终端贴这一行**：
+
+```bash
+bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
+```
+
+**成功的样子**：最后一行是 `All redirects live. Now purge Cloudflare — it caches 301s.`
+**然后 purge**（Cloudflare 会缓存 301）。
+**失败时**脚本会自己把旧配置还原、不重载，网站不受影响 —— 整屏截图发我。
 
 ---
 
