@@ -16,7 +16,14 @@
     "A5-A011 / A5-A012 与凯撒页的 KA5-A011 / KA5-A012 是同一款旋钮（包皮 / 竖纹，表面组合也相同）：",
     "凯撒版配 8550 锁体与锁孔盖，p77 版配隐形门。图册给了两个货号，下单要分清，所以两条都留，不合并。",
     "",
-    "EK 型「枪灰」用英文 Gunmetal：词条里已有的 Gunmetal Grey 对应「枪灰色」，别的产品在用，没改它。"
+    "EK 型「枪灰」用英文 Gunmetal：词条里已有的 Gunmetal Grey 对应「枪灰色」，别的产品在用，没改它。",
+    "",
+    "p78–p80 门吸 / 磁力插销。和已上架的 12 个门吸（《雷茵-铰链和门吸》273-1、273、275、271、272、270、280、220、274、1328、209、215）逐张比过：货号全不重合。",
+    "长得像的四对 —— D3701≈1328、D3867≈270、D3891≈271、D3863≈274 —— 头型、底座台阶都有差别，材质也不全同（D3701 不锈钢、1328 锌合金），按不同货号各自上架，同 Kaiser A5-A011/A012 的先例。是不是同一件换了编号，请甲方确认。",
+    "各卡的英文代号（SN/BL/PVD、SS/DAB/COF …）与中文表面处理一一对应，取中文：亚黑 = 哑黑；青古铜 = Antique Bronze（照片标 DAB、英文栏写 AB，都是它）；金拉丝 = Brushed Gold。",
+    "D3701 有两张卡：D3701 SS（不锈钢拉丝，高 75、头 Ø34、座 Ø45，和 SD3702 SS、D3703 SS 同一张尺寸图）和 D3701 BL（哑黑/黑镍拉丝/黄古铜，高 79、头 Ø35）。尺寸不同，按图册标题分两页。",
+    "p79–p80 页眉「锌合金无磁防风门吸」→ 类型写 Non-magnetic windproof floor stop（与已上架 271 同一写法）。D3891/D3890 只有照片和单格材质表面，没有尺寸图，规格只写材质。",
+    "p79 左半页整幅实景图是 D3891 BL 装在门边，作为 D3891 最后一张（9-scene）。"
   ],
   "sourceRoot": "C:/Users/johns/rayen-catalogue-p76-p84",
   "sites": [
@@ -40,6 +47,18 @@
     {
       "model": "旋钮 5 个型号（尺寸、材质）",
       "reason": "p77 右半页只有代号和照片。"
+    },
+    {
+      "model": "D3701 BL（底座直径）",
+      "reason": "图上底座标 Φ22，但画出来的底座比 Φ35 的吸头还宽，数字和图对不上，不写。"
+    },
+    {
+      "model": "D3811 / D3810（吸头尺寸 25、12）",
+      "reason": "这两个数标的是吸头的一段长度，从图上判断不了它量的是哪两点，不写，只写高度和底座。"
+    },
+    {
+      "model": "p80 磁力插销大图（带钢丝绳的一组）",
+      "reason": "在「Magnetic Pin Series」页眉下、D3873 上方，没有货号，和 D3873 的外形也不一样，不挂到任何型号。"
     }
   ],
   "models": [
@@ -296,6 +315,359 @@
         "Polished Chrome / Brown Leather"
       ],
       "specs": []
+    },
+    {
+      "model": "D3811",
+      "slug": "d3811-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Matt Black",
+        "Zirconium Gold",
+        "Brushed Black Nickel",
+        "Antique Yellow Brass",
+        "Antique Bronze"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 74mm; base Ø44mm"
+        }
+      ]
+    },
+    {
+      "model": "D3810",
+      "slug": "d3810-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze",
+        "Brushed Gold"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; base Ø50mm"
+        }
+      ]
+    },
+    {
+      "model": "D3701 SS",
+      "slug": "d3701-ss-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; head Ø34mm; base Ø45mm"
+        }
+      ]
+    },
+    {
+      "model": "SD3702 SS",
+      "slug": "sd3702-ss-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; head Ø34mm; base Ø45mm"
+        }
+      ]
+    },
+    {
+      "model": "D3703 SS",
+      "slug": "d3703-ss-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 75mm; head Ø34mm; base Ø45mm"
+        }
+      ]
+    },
+    {
+      "model": "D3701 BL",
+      "slug": "d3701-bl-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 79mm; head Ø35mm"
+        }
+      ]
+    },
+    {
+      "model": "D3771",
+      "slug": "d3771-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 83mm; head Ø35mm; base Ø50mm"
+        }
+      ]
+    },
+    {
+      "model": "D3772",
+      "slug": "d3772-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze",
+        "Antique Yellow Brass"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 84mm; head Ø35mm; base Ø48mm"
+        }
+      ]
+    },
+    {
+      "model": "D3891",
+      "slug": "d3891-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Polished Chrome",
+        "Brushed Satin Nickel",
+        "Brushed Black Nickel",
+        "Antique Yellow Brass",
+        "True Gold",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Non-magnetic windproof floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "D3890",
+      "slug": "d3890-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Polished Chrome",
+        "Brushed Satin Nickel",
+        "Brushed Black Nickel",
+        "Antique Yellow Brass",
+        "True Gold",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Non-magnetic windproof floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "D3884",
+      "slug": "d3884-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "White"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Non-magnetic windproof floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 65mm; base 42mm"
+        }
+      ]
+    },
+    {
+      "model": "D3889",
+      "slug": "d3889-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "White",
+        "Brushed Brass",
+        "Matt Black",
+        "Brushed Black Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Type",
+          "value": "Non-magnetic windproof floor stop"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height 42mm; base Ø30mm"
+        }
+      ]
+    },
+    {
+      "model": "D3873",
+      "slug": "d3873-magnetic-pin",
+      "name": "Magnetic Pin",
+      "nameZh": "磁力插销",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-flush-bolts"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "White",
+        "Brushed Brass",
+        "Matt Black",
+        "Brushed Black Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "65 × 22mm"
+        }
+      ]
     }
   ]
 }

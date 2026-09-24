@@ -64,11 +64,12 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     the title alone. Seven category titles were over budget before this. Names that
     overflow with the full qualifier fall back to the short "— Fabricante" form.
   */
-  const qualified = `${name} — Fabricante y proveedor`;
-  const qualifiedShort = `${name} — Fabricante`;
+  const qualified = `${name}, Fabricante y proveedor`;
+  const qualifiedShort = `${name}, Fabricante`;
   const titleBudget = 62 - " | Canton Hyland".length;
-  const title =
-    qualified.length <= titleBudget
+  const title = category.seoTitleEs
+    ? category.seoTitleEs
+    : qualified.length <= titleBudget
       ? qualified
       : qualifiedShort.length <= titleBudget
         ? qualifiedShort

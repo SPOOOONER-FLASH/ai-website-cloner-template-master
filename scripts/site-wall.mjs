@@ -22,6 +22,23 @@ import { laneOf } from "./lib/site-lanes.mjs";
   release at `git commit`, right after a clean build: the first release run with the hook actually
   installed (core.hooksPath had never been set on the old C: repo).
 */
+/*
+  A merge commit is exempt. Everything it brings in was committed — and walled — on its own
+  side already; the index of a merge naturally holds both lanes, because the two sides each
+  released. Git skips pre-commit for a clean merge, but a merge that stopped on a conflict is
+  finished with `git commit`, which runs this hook. On 2026-09-24 that turned every
+  `npm run ship` side merge with a SHIPLOG.md conflict into "真冲突" (exit 75): the conflict
+  was resolved, then the concluding commit was rejected for carrying out-rayen/ and out/.
+*/
+let merging = false;
+try {
+  execFileSync("git", ["rev-parse", "-q", "--verify", "MERGE_HEAD"], { stdio: "ignore" });
+  merging = true;
+} catch {
+  // not a merge
+}
+if (merging) process.exit(0);
+
 const staged = execFileSync("git", ["diff", "--cached", "--name-only", "-z"], { encoding: "utf8", maxBuffer: 256 * 1024 * 1024 })
   .split("\0")
   .filter(Boolean);
