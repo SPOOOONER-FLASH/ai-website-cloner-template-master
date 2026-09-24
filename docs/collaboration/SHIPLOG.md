@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 521 次提交
+最近 30 天 · 共 523 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 10:07 | 中立 | 覆盖报告重生成（发布被过期拦下）；锁体对照表 --check 进 test:export | `101db4afe14` |
+| 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
 | 10:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `be9f0f274e2` |
 | 10:05 | HYDE | why-the-catalogue 三语 FAQ 同步 114；任务第 0 项完成 | `7887739f892` |
 | 09:58 | HYDE | 文章目录数量跟上规格补全；锁体对比表改由生成器产出 | `b7c96cbd7e2` |
