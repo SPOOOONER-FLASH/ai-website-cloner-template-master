@@ -45,12 +45,14 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     title gets. Spanish runs longer than English almost everywhere, so the fallback is
     reached more often here, and the informative half is the range name.
   */
-  const withQualifier = `Comparar ${name} — Especificaciones`;
+  // Count first, like the English side (2026-09-24). "Comparativa/Comparativo" is how a buyer
+  // there names a side-by-side table.
+  const withQualifier = `Comparativa de ${count} ${name.toLowerCase()}`;
 
   return pageMetadata({
     enPath: `/compare/${category.slug}`,
     locale: "es",
-    title: withQualifier.length <= 46 ? withQualifier : `Comparar ${name}`,
+    title: withQualifier.length <= 60 ? withQualifier : `Comparar ${name}`,
     description: `${count} ${name.toLowerCase()} comparados en las especificaciones que los distinguen. Plazo desde 30 días, fabricación en Guangdong, China.`,
     image: category.image.src,
     imageAlt: category.image.label,
