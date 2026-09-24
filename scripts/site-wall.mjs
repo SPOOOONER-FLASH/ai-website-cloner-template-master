@@ -16,7 +16,13 @@
 import { execFileSync } from "node:child_process";
 import { laneOf } from "./lib/site-lanes.mjs";
 
-const staged = execFileSync("git", ["diff", "--cached", "--name-only", "-z"], { encoding: "utf8" })
+/*
+  maxBuffer: a release commit stages ~13,000 files under out/ and the name list runs past 1 MB,
+  Node's default. On 2026-09-24 that killed this hook with SIGTERM (ENOBUFS) and aborted the HYDE
+  release at `git commit`, right after a clean build: the first release run with the hook actually
+  installed (core.hooksPath had never been set on the old C: repo).
+*/
+const staged = execFileSync("git", ["diff", "--cached", "--name-only", "-z"], { encoding: "utf8", maxBuffer: 256 * 1024 * 1024 })
   .split("\0")
   .filter(Boolean);
 
