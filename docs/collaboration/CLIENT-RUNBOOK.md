@@ -118,6 +118,8 @@ https://cantonlock.com/guides/hardware-warranty-what-it-covers-2026/
 **为什么**：有个产品网址写着「ansi-grade-3」（`/products/grip-handle-sets/ansi-grade-3-keyed-deadbolt-lock-set/`），
 我们没有 ANSI 认证，网址不能这么写。已改成 `keyed-deadbolt-lock-set`。旧网址已被 Google 收录，
 要在服务器上装一条 301。**装好之前旧网址是 404**（09-24 实测），Google 已收录的那一条会变成死链，所以今天就装。
+同一次安装还会带上另外两条（09-24 加）：8827、8828 两个空壳重复页已并入 8827 SSET / 8828 SSET，
+旧网址 `/products/lever-handles/8827-lever-handle/`、`/products/lever-handles/8828-lever-handle/` 也会 301 过去。
 
 **在宝塔终端贴这一行**：
 
