@@ -48,7 +48,7 @@ const top = (p: Record) => ([] as string[]).concat(p.categoryPath ?? [])[0];
 const spec = (p: Record, label: string) => p.specs?.find((s) => s.label === label)?.value;
 const inFamily = (family: string) => hyde.filter((p) => top(p) === family);
 
-test("the published spec coverage report uses the HYDE catalogue", () => {
+test("the published spec coverage report uses the HYDE catalog", () => {
   assert.equal(coverage.site, "hyde");
   assert.equal(coverage.totalProducts, hyde.length);
 });
@@ -135,7 +135,7 @@ claim(NEWS("what-documents-you-can-actually-get"), () => `Dimensioned SVG assets
 function lockCasesWithBoth() {
   const mm = (v?: string) => Number((v ?? "").match(/(\d+(?:\.\d+)?)\s*mm/)?.[1] ?? NaN);
   return inFamily("lock-cases")
-    .map((p) => ({ c: mm(spec(p, "Centre distance")), b: mm(spec(p, "Backset")) }))
+    .map((p) => ({ c: mm(spec(p, "Center distance")), b: mm(spec(p, "Backset")) }))
     .filter((r) => r.c && r.b);
 }
 claim(GUIDE("mortise-lock-case-comparison-2026"), () => `${lockCasesWithBoth().length} of the ${inFamily("lock-cases").length} lock-case records`);
@@ -206,8 +206,8 @@ claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
   return `${withBackset.length} of the ${hyde.length} records in our catalog publish a backset. Of those, ${withBackset.filter((p) => isAdjustable6070(spec(p, "Backset")!)).length} are 60mm / 70mm adjustable`;
 });
 claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
-  const lockCd = hyde.filter((p) => spec(p, "Centre distance") && (top(p) === "lock-cases" || /lock case/i.test(spec(p, "Type") ?? "")));
-  return `Only ${lockCd.length} of the ${hyde.length} records in our catalog publish a lock center distance, and ${lockCd.filter((p) => mm(spec(p, "Centre distance")) === 85).length} of those ${lockCd.length} say 85mm`;
+  const lockCd = hyde.filter((p) => spec(p, "Center distance") && (top(p) === "lock-cases" || /lock case/i.test(spec(p, "Type") ?? "")));
+  return `Only ${lockCd.length} of the ${hyde.length} records in our catalog publish a lock center distance, and ${lockCd.filter((p) => mm(spec(p, "Center distance")) === 85).length} of those ${lockCd.length} say 85mm`;
 });
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `Function counts across the ${hyde.length} records in our catalog`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Entrance, keyed outside | ${hyde.filter((p) => /^Entrance, keyed outside$/.test(spec(p, "Function") ?? "")).length} |`);
@@ -221,19 +221,19 @@ claim(GUIDE("dimensional-interchangeability-2026"), () => {
   const locks = hyde.filter((p) => lockCats.has(top(p)) || /\b(lock|latch|cylinder|deadbolt)\b/i.test((p as { name?: string }).name ?? ""));
   const has = (p: Record, re: RegExp) => (p.specs ?? []).some((s) => re.test(s.label));
   const pct = (n: number) => `${Math.round((100 * n) / locks.length)}%`;
-  const cd = locks.filter((p) => has(p, /^centre distances?$/i)).length;
+  const cd = locks.filter((p) => has(p, /^(?:center|centre) distances?$/i)).length;
   const cs = locks.filter((p) => has(p, /^case (size|height|depth)/i)).length;
   return `${locks.length} lock products: backset ${locks.filter((p) => has(p, /^backset$/i)).length} (${pct(locks.filter((p) => has(p, /^backset$/i)).length)}), door thickness ${locks.filter((p) => has(p, /^door thickness$/i)).length} (${pct(locks.filter((p) => has(p, /^door thickness$/i)).length)}), center distance ${cd} (${pct(cd)}), forend ${locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length} (${pct(locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length)}), case size ${cs} (${pct(cs)})`;
 });
 
-test("every counted catalogue claim in an article matches the catalogue as this site sees it", () => {
+test("every counted catalog claim in an article matches the catalog as this site sees it", () => {
   const wrong: string[] = [];
   for (const { where, expect } of claims) {
     const [dir, slug] = where.split(/\/(?=[^/]+$)/);
     const expected = expect();
     if (!articleText(dir, slug).includes(expected)) wrong.push(`${where}\n    should now read: "${expected}"`);
   }
-  assert.deepEqual(wrong, [], "update these sentences (and their date) to the current catalogue");
+  assert.deepEqual(wrong, [], "update these sentences (and their date) to the current catalog");
 });
 
 test("HYDE coverage articles use site-filtered counts in all three languages", () => {

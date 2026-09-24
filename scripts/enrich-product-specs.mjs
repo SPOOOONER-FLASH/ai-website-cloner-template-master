@@ -60,11 +60,11 @@ function dimensionsFromModel(model) {
 const CITED = {
   "lc02-85-40mm-lock-case": {
     src: "worldbid i383089",
-    specs: [["Material", "Aluminium case"], ["Application", "Wooden and metal doors"]],
+    specs: [["Material", "Aluminum case"], ["Application", "Wooden and metal doors"]],
   },
   "lc03-85-45mm-lock-case": {
     src: "worldbid i383092",
-    specs: [["Material", "Aluminium case"], ["Cylinder", "Euro profile"], ["Application", "Aluminium, wooden and metal doors"]],
+    specs: [["Material", "Aluminum case"], ["Cylinder", "Euro profile"], ["Application", "Aluminum, wooden and metal doors"]],
   },
   "lc04-85-60-lock-case": {
     src: "worldbid i383091",
@@ -92,7 +92,7 @@ const CITED = {
   },
   "lc17-lock-case": {
     src: "worldbid i383145",
-    specs: [["Backset", "16mm"], ["Material", "Aluminium and steel"], ["Function", "Sliding hook"], ["Application", "Sliding doors"]],
+    specs: [["Backset", "16mm"], ["Material", "Aluminum and steel"], ["Function", "Sliding hook"], ["Application", "Sliding doors"]],
   },
   "lc21-85-50mm-lock-case": {
     src: "worldbid i383151",
@@ -124,7 +124,7 @@ const CITED = {
   },
   "ai8530-lock-case": {
     src: "worldbid i383093",
-    specs: [["Material", "Aluminium case"], ["Cylinder", "Euro profile"], ["Application", "Aluminium, wooden and metal doors"]],
+    specs: [["Material", "Aluminum case"], ["Cylinder", "Euro profile"], ["Application", "Aluminum, wooden and metal doors"]],
   },
   "309-d-double-door-panic-exit-device": {
     src: "worldbid i383002",
@@ -221,7 +221,7 @@ const article = (phrase) => (/^[aeiou]/i.test(phrase) ? "An" : "A");
 /** One honest sentence built only from the rows the record now holds. */
 function summaryFrom(product, rows) {
   const get = (label) => rows.find((r) => r.label === label)?.value;
-  const centre = get("Centre distance");
+  const centre = get("Center distance");
   const backset = get("Backset");
   const material = get("Material");
   const cylinder = get("Cylinder");
@@ -249,7 +249,7 @@ function summaryFrom(product, rows) {
   // steel" is worse than saying it once.
   const finishAdds = finish && !material?.toLowerCase().includes(finish.toLowerCase());
   if (finish && finishAdds && short(finish)) head.push(`in ${soften(finish)}`);
-  if (centre && backset) head.push(`with ${centre} centre distance and ${backset} backset`);
+  if (centre && backset) head.push(`with ${centre} center distance and ${backset} backset`);
   else if (backset) head.push(`with ${backset} backset`);
   else {
     /*
@@ -295,8 +295,8 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
 
   const dims = dimensionsFromModel(product.model);
   if (dims) {
-    if (!rows.some((r) => r.label === "Centre distance")) {
-      rows.push({ label: "Centre distance", value: `${dims.centre}mm` });
+    if (!rows.some((r) => r.label === "Center distance")) {
+      rows.push({ label: "Center distance", value: `${dims.centre}mm` });
     }
     if (!rows.some((r) => r.label === "Backset")) {
       rows.push({ label: "Backset", value: `${dims.backset}mm` });

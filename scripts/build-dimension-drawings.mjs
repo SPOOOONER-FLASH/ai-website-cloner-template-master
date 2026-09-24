@@ -116,7 +116,7 @@ const RECIPES = {
   */
   lockCase: (specs) => {
     const backset = mm(get(specs, "Backset"));
-    const centre = mm(get(specs, "Centre distance", "Center Distance"));
+    const centre = mm(get(specs, "Center distance", "Center Distance"));
     const caseH = mm(get(specs, "Case height"));
     const caseD = mm(get(specs, "Case depth"));
     const faceplate = pair(get(specs, "Faceplate"));
@@ -162,7 +162,7 @@ const RECIPES = {
       width: PLATE_T + caseD,
       height,
       offsetX: 0,
-      note: `Faceplate ${plateL} × ${plateW}mm. Backset ${backset}mm, centre distance ${centre}mm.`,
+      note: `Faceplate ${plateL} × ${plateW}mm. Backset ${backset}mm, center distance ${centre}mm.`,
     };
   },
 
@@ -279,7 +279,7 @@ const RECIPES = {
       partial: true,
       padBottom: 26 + bolts.length * 26,
       note: [
-        `Backset ${backset}mm to the cylinder centre.`,
+        `Backset ${backset}mm to the cylinder center.`,
         latch ? `Latch throw ${latch}mm.` : "",
         dead ? `Deadbolt throw ${dead}mm.` : "",
         "Case outline is not published and is therefore not drawn.",
@@ -289,9 +289,9 @@ const RECIPES = {
 
   pullHandle: (specs) => {
     const length = mm(get(specs, "Length"));
-    const centre = mm(get(specs, "Centre distance", "Center Distance"));
+    const centre = mm(get(specs, "Center distance", "Center Distance"));
     const tube = dia(get(specs, "Tube diameter"));
-    const fixing = mm(get(specs, "Fixing centre", "Fixing centres"));
+    const fixing = mm(get(specs, "Fixing center", "Fixing centers"));
     if (!length || !centre || !tube) return null;
 
     const standoff = fixing ?? tube;
@@ -316,7 +316,7 @@ const RECIPES = {
       width: midX + tube / 2,
       height: length,
       offsetX: 0,
-      note: `Length ${length}mm, centre distance ${centre}mm, tube Ø${tube}mm.`,
+      note: `Length ${length}mm, center distance ${centre}mm, tube Ø${tube}mm.`,
     };
   },
 
@@ -329,7 +329,7 @@ const RECIPES = {
   */
   platedTrim: (specs) => {
     const plate = pair(get(specs, "Plate size"));
-    const grip = mm(get(specs, "Grip centre distance"));
+    const grip = mm(get(specs, "Grip center distance"));
     const cut = dia(get(specs, "Cylinder cutout"));
     if (!plate || !grip) return null;
 
@@ -359,7 +359,7 @@ const RECIPES = {
       height: h,
       offsetX: 0,
       note: [
-        `Plate ${w} × ${h}mm, grip centres ${grip}mm.`,
+        `Plate ${w} × ${h}mm, grip centers ${grip}mm.`,
         cut ? `Cylinder cutout Ø${cut}mm.` : "",
         projection ? `Projection ${projection}mm.` : "",
       ].filter(Boolean).join(" "),

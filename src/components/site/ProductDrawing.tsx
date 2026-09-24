@@ -49,7 +49,7 @@ const PREP_COPY = {
   en: {
     heading: "Door preparation",
     pattern: (diameter: number, centres: number) =>
-      `Two holes, Ø${diameter}mm, at ${centres}mm centres.`,
+      `Two holes, Ø${diameter}mm, at ${centres}mm centers.`,
     caution:
       "Hole positions only — this is not a product outline. Confirm door thickness and the material you are drilling before cutting.",
   },

@@ -57,7 +57,7 @@ const FAMILIES = [
     key: "tube",
     title: "Round-tube pull handles — the outside is fully determined",
     match: (product) => /glass-door-accessories|stainless-steel-handles/.test(product.categoryPath?.[0] ?? ""),
-    needs: ["Tube diameter", "Tube Thickness", "Length", "Centre distance", "Standoff"],
+    needs: ["Tube diameter", "Tube Thickness", "Length", "Center distance", "Standoff"],
     verdict: "complete external model possible",
   },
   {

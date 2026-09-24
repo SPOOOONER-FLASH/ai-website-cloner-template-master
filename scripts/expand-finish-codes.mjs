@@ -104,7 +104,7 @@ console.log(`products with an expanded Finish row : ${changed}`);
 if (missing.size) {
   console.log(`codes with no sourced name (left as-is): ${[...missing.entries()].map(([c, n]) => `${c}×${n}`).join(", ")}`);
 } else {
-  console.log("every code in the catalogue is in the table");
+  console.log("every code in the catalog is in the table");
 }
 console.log("");
 for (const e of examples) console.log(`   ${e}\n`);

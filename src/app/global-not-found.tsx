@@ -32,11 +32,11 @@ export default function GlobalNotFound() {
                 <div className="col-span-full xl:col-span-12">
                   <p className="text-c1 text-ink">
                     The address may be mistyped, or the page may have moved. The product
-                    catalogue is the best place to start.
+                    catalog is the best place to start.
                   </p>
                   <div className="mt-48 flex flex-col gap-24 sm:flex-row sm:gap-64">
                     <ArrowLink href="/">Back to the homepage</ArrowLink>
-                    <ArrowLink href="/products">Product catalogue</ArrowLink>
+                    <ArrowLink href="/products">Product catalog</ArrowLink>
                     <ArrowLink href="/contact">Contact us</ArrowLink>
                   </div>
                 </div>

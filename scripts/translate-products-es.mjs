@@ -363,7 +363,7 @@ function summaryEs(product) {
     text += ` de ${soften(value(material)).replace(/^(cuerpo|juego|caja) de /, "")}`;
   }
 
-  const centre = get("Centre distance");
+  const centre = get("Center distance");
   const backset = get("Backset");
   if (centre && backset) {
     text += `, distancia entre ejes de ${value(centre)} y entrada de ${value(backset)}`;

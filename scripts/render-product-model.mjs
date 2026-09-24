@@ -89,7 +89,7 @@ const MODELS = {
     script: "scripts/blender/lock-case.py",
     /* label → param, and how to read it. Every one of these is required. */
     required: {
-      centreDistance: { labels: ["Centre distance", "Center Distance"], read: firstMm },
+      centreDistance: { labels: ["Center distance", "Center Distance"], read: firstMm },
       backset: { labels: ["Backset"], read: firstMm },
       caseHeight: { labels: ["Case height"], read: firstMm },
       caseDepth: { labels: ["Case depth"], read: firstMm },
@@ -150,7 +150,7 @@ const spindle = firstMm(specs.get("Spindle") ?? "");
 if (spindle) params.spindle = spindle;
 
 if (missing.length) {
-  console.error(`${slug}: cannot render — the catalogue does not publish ${missing.join(", ")}.`);
+  console.error(`${slug}: cannot render — the catalog does not publish ${missing.join(", ")}.`);
   console.error("Ask the factory for those figures. Nothing is substituted.");
   process.exit(2);
 }
@@ -174,7 +174,7 @@ const paramFile = join(outDir, `${slug}.params.json`);
 const image = resolve(outDir, `${slug}.png`);
 writeFileSync(paramFile, `${JSON.stringify(params, null, 1)}\n`);
 
-console.log(`${slug} — every figure below is published by the catalogue:`);
+console.log(`${slug} — every figure below is published by the catalog:`);
 for (const [k, v] of Object.entries(params)) {
   if (k === "samples") continue;
   console.log(`  ${k.padEnd(18)} ${v}mm`);

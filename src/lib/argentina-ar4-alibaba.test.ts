@@ -13,7 +13,7 @@ const fixtures = [
   ["hyde-ar4-1121-hook-bolt-lock.json", "1121"],
 ] as const;
 
-test("AR-4 Alibaba exits use the confirmed numeric catalogue lookup", () => {
+test("AR-4 Alibaba exits use the confirmed numeric catalog lookup", () => {
   for (const [file, query] of fixtures) {
     const product = JSON.parse(
       readFileSync(`content/products/${file}`, "utf8"),

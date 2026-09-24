@@ -39,7 +39,7 @@ function rowCopy(locale: Locale, drawings: number, specified: number, cat: Retur
     drawings: {
       en: [
         `Dimensioned line drawings — ${drawings} of them`,
-        "Drawn 1:1 from the dimensions the catalogue publishes for that model: backset, centre distance, faceplate, case size, fixing centres. Orthographic, so nothing is foreshortened and a measurement taken off one is a real measurement. They exist for these models and not the whole catalogue for one reason — those are the models where the factory has given us enough published dimensions to draw without inventing anything. A drawing with a guessed hole position is worse than no drawing, because it will be believed.",
+        "Drawn 1:1 from the dimensions the catalog publishes for that model: backset, center distance, faceplate, case size, fixing centers. Orthographic, so nothing is foreshortened and a measurement taken off one is a real measurement. They exist for these models and not the whole catalog for one reason — those are the models where the factory has given us enough published dimensions to draw without inventing anything. A drawing with a guessed hole position is worse than no drawing, because it will be believed.",
       ],
       es: [
         `Planos acotados — ${drawings}`,
@@ -53,7 +53,7 @@ function rowCopy(locale: Locale, drawings: number, specified: number, cat: Retur
     specifications: {
       en: [
         `Specification tables — on ${specified} product pages`,
-        "A table, not prose. Backset, centre distance, material, finish codes, cycle life where it has been tested, door thickness range, handing. Where a value is missing it is missing, not estimated.",
+        "A table, not prose. Backset, center distance, material, finish codes, cycle life where it has been tested, door thickness range, handing. Where a value is missing it is missing, not estimated.",
       ],
       es: [
         `Tablas de especificación — en ${specified} fichas de producto`,
@@ -66,7 +66,7 @@ function rowCopy(locale: Locale, drawings: number, specified: number, cat: Retur
     },
     catalogue: {
       en: [
-        `Product catalogue — one PDF, ${size}`,
+        `Product catalog — one PDF, ${size}`,
         "A text PDF, not a scan: the words in it are selectable and searchable, which means a search engine and an AI assistant can read it. It carries every published model with its spec table, bookmarks by family, and an index at the back.",
       ],
       es: [
@@ -142,7 +142,7 @@ const NOTES = {
     heading: "Two things to put in the email",
     items: [
       "Ask by model number in the configuration you are buying, finish and function suffix included. A drawing of the 60mm (2-3/8\") backset version is not a drawing of the 45mm (1-3/4\") one.",
-      "Tell us what the document is for. A cutsheet for a client approval, a drawing for a door manufacturer's machining setup and a specification for a tender each need a different thing emphasised, and we would rather send the right one than the largest one.",
+      "Tell us what the document is for. A cutsheet for a client approval, a drawing for a door manufacturer's machining setup and a specification for a tender each need a different thing emphasized, and we would rather send the right one than the largest one.",
     ],
     ask: "Ask for a document",
     article: "The longer version, with the reasoning",

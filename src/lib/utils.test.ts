@@ -13,14 +13,14 @@ import { cn } from "./utils.ts";
 
 const SCALE = ["d1", "h1", "h2", "h3", "c1", "c2", "lead"];
 
-test("a type-scale class survives being combined with a colour", () => {
+test("a type-scale class survives being combined with a color", () => {
   for (const step of SCALE) {
     const out = cn(`text-${step} text-ink`);
     assert.ok(
       out.includes(`text-${step}`),
-      `cn() dropped text-${step} — tailwind-merge is treating it as a colour again`,
+      `cn() dropped text-${step} — tailwind-merge is treating it as a color again`,
     );
-    assert.ok(out.includes("text-ink"), `cn() dropped the colour alongside text-${step}`);
+    assert.ok(out.includes("text-ink"), `cn() dropped the color alongside text-${step}`);
   }
 });
 
@@ -29,7 +29,7 @@ test("two type-scale classes still conflict, last one wins", () => {
   assert.equal(cn("text-c1", "text-d1"), "text-d1");
 });
 
-test("real colour conflicts are still resolved", () => {
+test("real color conflicts are still resolved", () => {
   assert.equal(cn("text-ink text-brand"), "text-brand");
 });
 

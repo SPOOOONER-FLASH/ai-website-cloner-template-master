@@ -80,7 +80,7 @@ export const teaser1: PageTeaserContent = {
           "A complete tubular lever lockset laid out on a dark ground: two levers on roses with the spindle and mechanism visible, the tubular latch, the strike box, the strike plate and three fixing screws — every part in one finish",
       },
       title: "For distributors",
-      subtitle: "Order from the Canton Hyland export catalogue",
+      subtitle: "Order from the Canton Hyland export catalog",
       href: "/contact",
     },
     {
@@ -148,11 +148,11 @@ export const hero3: HeroModuleContent = {
   media: {
     ratio: "3 / 2",
     src: "/images/editorial/hyde-real-product-atlas.webp",
-    label: "Real catalogue photographs presenting selected door hardware",
+    label: "Real catalog photographs presenting selected door hardware",
   },
   title: "Designed for",
   body: "Selected hardware, one coordinated schedule",
-  linkLabel: "Browse the catalogue",
+  linkLabel: "Browse the catalog",
   href: "/products",
 };
 
@@ -183,7 +183,7 @@ export const teaser3: PageTeaserContent = {
       media: {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-hero-lockcase.webp",
-        label: "Original catalogue photograph of door-control hardware",
+        label: "Original catalog photograph of door-control hardware",
       },
       title: "Send us your hardware requirements",
       subtitle: "We'll match your project with the right export engineer",

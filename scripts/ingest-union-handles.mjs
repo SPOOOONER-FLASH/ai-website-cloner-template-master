@@ -193,7 +193,7 @@ function buildSummary(entry) {
       : HANDLE.has(entry.categoryPath[0])
         ? "pull handle"
         : entry.name.toLowerCase();
-  const centre = entry.specs.find((s) => s.label === "Centre distance")?.value;
+  const centre = entry.specs.find((s) => s.label === "Center distance")?.value;
   const length = entry.specs.find((s) => s.label === "Overall length")?.value;
   const lever = entry.specs.find((s) => s.label === "Lever length")?.value;
 
@@ -205,8 +205,8 @@ function buildSummary(entry) {
   const head = entry.material
     ? `${entry.material} ${kind}`
     : kind.charAt(0).toUpperCase() + kind.slice(1);
-  if (centre && length) return `${head}, ${length} overall on ${centre} fixing centres.`;
-  if (centre) return `${head} on ${centre} fixing centres.`;
+  if (centre && length) return `${head}, ${length} overall on ${centre} fixing centers.`;
+  if (centre) return `${head} on ${centre} fixing centers.`;
   if (lever) return `${head}, ${lever} lever.`;
   return `${head}.`;
 }

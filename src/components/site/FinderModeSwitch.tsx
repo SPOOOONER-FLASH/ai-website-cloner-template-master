@@ -37,8 +37,8 @@ import type { Locale } from "@/data/site";
 
 const COPY = {
   en: {
-    label: "How to browse the catalogue",
-    catalogue: "Catalogue",
+    label: "How to browse the catalog",
+    catalogue: "Catalog",
     catalogueHint: "Search and filter all models",
     configurator: "Configurator",
     configuratorHint: "Answer a few questions",

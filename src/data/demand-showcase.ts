@@ -96,7 +96,7 @@ export const demandShowcaseCopy = {
   en: {
     eyebrow: "What buyers asked for this quarter",
     title: "Most-requested models",
-    body: "Selected from ninety days of enquiries on our own Alibaba storefront rather than from a shortlist we drew up ourselves — the two do not agree, which is the point of looking.",
+    body: "Selected from ninety days of inquiries on our own Alibaba storefront rather than from a shortlist we drew up ourselves — the two do not agree, which is the point of looking.",
     cta: "Ask about any of these",
   },
   es: {

@@ -42,7 +42,7 @@ async function provenance(file, sources, operation) {
   await writeFile(output + file + ".json", JSON.stringify({
     kind: "real-photograph-composition", operation, sources: records,
     productGeometry: "Original pixels retained; uniform resize and complete-object crop only.",
-    scope: "Catalogue overview, not an assembled set or dimension drawing.",
+    scope: "Catalog overview, not an assembled set or dimension drawing.",
   }, null, 2) + "\n");
 }
 const atlas = "hyde-real-product-atlas.webp";
@@ -50,7 +50,7 @@ await sharp({ create: { width: 1800, height: 1300, channels: 3, background: "#ff
   .composite(await Promise.all(layers.map(async ([name, left, top, w, h]) => ({
     input: await crop(name, w, h), left, top,
   })))).webp({ quality: 92 }).toFile(output + atlas);
-await provenance(atlas, Object.values(photos).map(([file]) => root + file), "Independent complete catalogue products composed on white; crops defined in script.");
+await provenance(atlas, Object.values(photos).map(([file]) => root + file), "Independent complete catalog products composed on white; crops defined in script.");
 
 for (const name of ["lever", "hinge", "pull", "control", "lock", "panic", "cylinder"]) {
   const file = `hyde-real-${name}-plate.webp`;

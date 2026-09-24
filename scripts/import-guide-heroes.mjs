@@ -119,7 +119,7 @@ for (const { slug, pick, guidePath } of rows) {
       sources: [{ model: product.model, slug: e.slug, original: e.source, sha256: e.sourceSha256 }],
       stage: { file: e.scene, sha256: e.sceneSha256, note: "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated." },
       method: e.method,
-      scope: "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+      scope: "One catalog photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
       usedFor: `/guides/${slug}/ hero`,
       library: `${LIB}/README.md`,
     };

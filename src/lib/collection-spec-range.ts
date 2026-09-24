@@ -43,7 +43,7 @@ export interface SpecRange {
 /** The fields worth summarising, in the order a specifier checks them. */
 const FIELDS: Array<{ labels: string[]; numeric: boolean }> = [
   { labels: ["Backset"], numeric: true },
-  { labels: ["Centre distance", "Center Distance", "Grip centre distance"], numeric: true },
+  { labels: ["Center distance", "Center Distance", "Grip center distance"], numeric: true },
   { labels: ["Door thickness", "Suitable Door Thickness"], numeric: true },
   { labels: ["Deadbolt throw", "Latch extension", "Projection"], numeric: true },
   /*

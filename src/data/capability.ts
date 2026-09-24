@@ -75,7 +75,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       titleEs: "Utillaje",
       titlePt: "Ferramental",
       body:
-        "The moulds and dies behind the catalogue are ours. That is why changing a lever profile, a rosette, a plate or a backset is a normal order here rather than a special project — and why an OEM part starts from a sample, a drawing or a photograph instead of from a catalogue page. Where no mould exists for the form you want, we cut one.",
+        "The moulds and dies behind the catalog are ours. That is why changing a lever profile, a rosette, a plate or a backset is a normal order here rather than a special project — and why an OEM part starts from a sample, a drawing or a photograph instead of from a catalog page. Where no mould exists for the form you want, we cut one.",
       bodyEs:
         "Los moldes y matrices que hay detrás del catálogo son nuestros. Por eso cambiar el perfil de una manija, una roseta, una placa o una entrada es aquí un pedido normal y no un proyecto especial — y por eso una pieza OEM parte de una muestra, un plano o una fotografía, no de una página de catálogo. Si no existe molde para la forma que usted quiere, lo fabricamos.",
       bodyPt:
@@ -93,7 +93,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       titleEs: "Estampación",
       titlePt: "Estampagem",
       body:
-        "Plate, rose and lever blanks are pressed in house from brass, stainless steel and zinc alloy. Working from our own tooling is what keeps the hole positions on the hundredth plate identical to the first — which matters more than it sounds, because a fixing centre that has drifted two millimetres cannot be corrected on site.",
+        "Plate, rose and lever blanks are pressed in house from brass, stainless steel and zinc alloy. Working from our own tooling is what keeps the hole positions on the hundredth plate identical to the first — which matters more than it sounds, because a fixing center that has drifted two millimeters cannot be corrected on site.",
       bodyEs:
         "Las placas, rosetas y cuerpos de manija se estampan en planta a partir de latón, acero inoxidable y zamak. Trabajar con utillaje propio es lo que mantiene la posición de los taladros idéntica en la placa número cien y en la primera — algo más importante de lo que parece, porque una distancia entre fijaciones desviada dos milímetros no se corrige en obra.",
       bodyPt:
@@ -155,7 +155,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       titleEs: "Inspección",
       titlePt: "Inspeção",
       body:
-        "Dimensional and functional checks run against the same drawings the catalogue publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.",
+        "Dimensional and functional checks run against the same drawings the catalog publishes, under a quality system audited to ISO 9001. Third-party inspection before shipment is welcome and does not need to be negotiated — tell us the inspector and we will book the date.",
       bodyEs:
         "Los controles dimensionales y funcionales se hacen contra los mismos planos que publica el catálogo, bajo un sistema de calidad auditado según ISO 9001. La inspección por tercero antes del embarque es bienvenida y no hay que negociarla: díganos qué inspector y reservamos la fecha.",
       bodyPt:

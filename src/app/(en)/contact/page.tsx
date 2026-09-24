@@ -221,7 +221,7 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-48 border-t border-line pt-24">
-              <h2 className="text-h3 text-ink">Current product catalogue</h2>
+              <h2 className="text-h3 text-ink">Current product catalog</h2>
               <p className="mt-8 text-c1 text-ink-secondary">
                 79 pages, every published model with its spec table and an index at the back.
                 Searchable text, bookmarks by family, and it opens as a spread.
@@ -231,7 +231,7 @@ export default function ContactPage() {
                 href="/downloads/hyde-export-catalogue-2026.pdf"
                 download
               >
-                Download catalogue (PDF, 6.1 MB)
+                Download catalog (PDF, 6.1 MB)
               </a>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function ContactPage() {
           <p className="col-span-full border-t border-line pt-16 text-c2 text-ink-secondary">
             The form reaches the same export desks as the addresses above. If it cannot send,
             the page keeps everything you typed and offers it as a ready-addressed email — your
-            enquiry is not lost either way.
+            inquiry is not lost either way.
           </p>
         </section>
       </div>

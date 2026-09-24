@@ -237,7 +237,7 @@ export const companyEditorialStudies: ImageRef[] = [
     src: "/images/company/factory-laser-cutter.webp",
     ratio: "3 / 2",
     label:
-      "The fibre laser cutter on our shop floor, cutting the steel plate that becomes lock cases and backplates",
+      "The fiber laser cutter on our shop floor, cutting the steel plate that becomes lock cases and backplates",
     labelEs:
       "La cortadora láser de fibra en nuestra planta, que corta la chapa de acero de la que salen cajas de cerradura y placas",
     labelPt:

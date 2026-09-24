@@ -160,7 +160,7 @@ const payload = {
     "One line per door. Fill in what you know and leave the rest — we would rather have the schedule with gaps than wait for a complete one.",
     "Sheet 3 is a worked example of a small three-level building. Copy its pattern rather than inventing a format.",
     "Two things decide the whole chart and are worth settling first: every cylinder in one system shares a keyway, and that cannot be changed later; and the number of keys each level needs, including the spares the building owner holds.",
-    `Cylinder lengths in the dropdown are the ${cylinderLengths.length} the catalogue carries. Only ${cylindersStatingLength} of the ${cylinders.length} published cylinders state the length as a specification, so confirm the exact overall length with us for the model you settle on.`,
+    `Cylinder lengths in the dropdown are the ${cylinderLengths.length} the catalog carries. Only ${cylindersStatingLength} of the ${cylinders.length} published cylinders state the length as a specification, so confirm the exact overall length with us for the model you settle on.`,
   ],
   columns,
   dropdowns: {

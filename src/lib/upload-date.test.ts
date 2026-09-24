@@ -49,7 +49,7 @@ test("an unusable value returns null so the caller can drop the video", () => {
   assert.equal(isoUploadDate("2026/09/04"), null);
 });
 
-test("every uploadDate in the catalogue normalises", () => {
+test("every uploadDate in the catalog normalises", () => {
   /*
     The real assertion. If any record carries a format this function cannot read, its
     video silently disappears from the markup — so the catalogue itself is the fixture.
@@ -63,5 +63,5 @@ test("every uploadDate in the catalogue normalises", () => {
       if (!isoUploadDate(video.uploadDate)) bad.push(`${file}: ${video.uploadDate}`);
     }
   }
-  assert.deepEqual(bad, [], "these uploadDate values cannot be normalised");
+  assert.deepEqual(bad, [], "these uploadDate values cannot be normalized");
 });

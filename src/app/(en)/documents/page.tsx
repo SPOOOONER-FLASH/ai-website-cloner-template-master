@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
   enPath: "/documents",
   locale: "en",
   title: "Documents We Can Supply",
-  description: "Dimensioned drawings, specification tables, the catalogue and test documents — what is published today, what we send on request, and the two things we do not have.",
+  description: "Dimensioned drawings, specification tables, the catalog and test documents — what is published today, what we send on request, and the two things we do not have.",
 });
 
 export default function DocumentsPage() {

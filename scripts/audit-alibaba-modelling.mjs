@@ -45,7 +45,7 @@ const RULES = [
     tier: "COMPLETE",
     what: "round-tube pull handle",
     categories: /glass-door-accessories|stainless-steel-handles/,
-    needs: ["Tube diameter", "Tube Thickness", "Length", "Centre distance", "Standoff"],
+    needs: ["Tube diameter", "Tube Thickness", "Length", "Center distance", "Standoff"],
   },
   {
     tier: "COMPLETE",
@@ -89,7 +89,7 @@ for (const entry of alibaba) {
       model: entry.model ?? `(unmapped) ${String(entry.title ?? "").slice(0, 48)}`,
       inquiries,
       verdict: "NO RECORD",
-      detail: entry.model ? "not in the catalogue under this number" : "Alibaba listing carries no model number",
+      detail: entry.model ? "not in the catalog under this number" : "Alibaba listing carries no model number",
     });
     continue;
   }
@@ -150,7 +150,7 @@ for (const row of rows.filter((r) => r.verdict === "NEEDS DATA" && r.inquiries >
   }
 }
 if (asks.size) {
-  console.log("\nASK THE FACTORY FOR THESE — models with real enquiries, grouped by what is missing:");
+  console.log("\nASK THE FACTORY FOR THESE — models with real inquiries, grouped by what is missing:");
   for (const [field, models] of [...asks].sort((a, b) => b[1].length - a[1].length)) {
     console.log(`  ${field.padEnd(16)} ${models.join(", ")}`);
   }

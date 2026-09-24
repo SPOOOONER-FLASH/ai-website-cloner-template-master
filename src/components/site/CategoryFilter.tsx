@@ -46,12 +46,12 @@ const COPY = {
     all: "All products",
     filterBy: "Filter by type",
     filters: "Product filters",
-    order: "Catalogue order",
+    order: "Catalog order",
     pages: "Product pages",
     showing: (from: number, to: number) => ` · showing ${from}–${to}`,
     count: (n: number) => `${n} product${n === 1 ? "" : "s"}`,
     empty:
-      "Verified product records for this filter are still being prepared. Contact the export team for the current catalogue.",
+      "Verified product records for this filter are still being prepared. Contact the export team for the current catalog.",
   },
   es: {
     all: "Todos los productos",

@@ -62,7 +62,7 @@ const OUT_DIR = "public/images/door-prep";
 const dry = process.argv.includes("--dry");
 
 const HOLE_LABELS = ["Fixing hole", "Fixing hole (flush door)", "Fixing hole (glass door)"];
-const CENTRE_LABELS = ["Centre distance", "Center Distance", "Grip centre distance"];
+const CENTRE_LABELS = ["Center distance", "Center Distance", "Grip center distance"];
 const THICKNESS_LABELS = ["Door thickness", "Suitable Door Thickness", "Glass thickness"];
 
 /** First millimetre figure in a recorded string. "φ12mm" gives 12; "P=640mm" gives 640. */
@@ -141,7 +141,7 @@ function drawPattern({ diameter, centres, thickness, holeLabel }) {
     ),
   ];
 
-  const notes = [`${holeLabel}. Centres ${centres}mm.`];
+  const notes = [`${holeLabel}. Centers ${centres}mm.`];
   if (thickness) notes.push(`For door thickness ${thickness} — confirm before drilling.`);
   notes.push("Hole positions only. Not a product outline.");
 
@@ -221,6 +221,6 @@ if (!dry) writeFileSync(join(OUT_DIR, "index.json"), `${JSON.stringify(index, nu
 
 console.log(`${dry ? "Would draw" : "Drew"} ${drawn} door preparation drawings.`);
 console.log(`  skipped: ${skipped.noHole} with no fixing-hole diameter,`);
-console.log(`           ${skipped.noCentre} with a diameter but no centre distance,`);
+console.log(`           ${skipped.noCentre} with a diameter but no center distance,`);
 console.log(`           ${skipped.unparsable} whose figures would not parse,`);
 console.log(`           ${skipped.unpublished} unpublished.`);

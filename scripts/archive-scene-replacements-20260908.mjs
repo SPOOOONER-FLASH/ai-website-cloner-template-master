@@ -30,6 +30,6 @@ writeFileSync(resolve(dest, 'archive.json'), `${JSON.stringify({
   method: 'Built-in imagegen photographic edits; archived without pixel processing',
   generatedImagesAreNotCAD: true,
   sources: records, drafts,
-  note: 'Catalogue snapshots captured 2026-09-08 for the box and wood retries. Earlier stone generation used mutable catalogue paths; its exact prior source bytes are not asserted.',
+  note: 'Catalog snapshots captured 2026-09-08 for the box and wood retries. Earlier stone generation used mutable catalog paths; its exact prior source bytes are not asserted.',
 }, null, 2)}\n`);
 console.log(`Archived ${records.length} source snapshots and ${drafts.length} scene drafts.`);

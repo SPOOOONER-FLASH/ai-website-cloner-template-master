@@ -232,8 +232,8 @@ for (const d of downloads) {
 // make the index depend on a previous build.
 const PAGES = [
   ["Company", "About Canton Hyland", "/company/", "company about us factory manufacturing iso 9001 guangdong 1998"],
-  ["Contact", "Get in touch", "/contact/", "contact enquiry quote request email phone export"],
-  ["Downloads", "Catalogues and documents", "/downloads/", "downloads catalogue pdf datasheet certificate cad"],
+  ["Contact", "Get in touch", "/contact/", "contact inquiry quote request email phone export"],
+  ["Downloads", "Catalogs and documents", "/downloads/", "downloads catalog pdf datasheet certificate cad"],
   ["Product Finder", "Find the right hardware", "/product-finder/", "product finder selector filter choose"],
   ["Projects", "Applications", "/projects/", "projects applications case studies references"],
   ["News", "Press and insight", "/news/", "news press release insight article"],

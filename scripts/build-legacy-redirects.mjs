@@ -242,7 +242,7 @@ const conf = lines.join("\n");
 if (check) {
   if (readFileSync(OUT, "utf8") !== conf) {
     console.error(`${OUT} is out of date — run: npm run redirects:legacy`);
-    console.error("  The catalogue moved and these 301s did not follow it.");
+    console.error("  The catalog moved and these 301s did not follow it.");
     process.exit(1);
   }
   console.log(`${OUT} — up to date (${pairs.length} product ids, no chains)`);

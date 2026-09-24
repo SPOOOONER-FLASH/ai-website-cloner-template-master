@@ -72,7 +72,7 @@ const HERO_SET = [
 */
 const GEOMETRY_LABELS = [
   "Plate size", "Plate thickness", "Plate width", "Plate height",
-  "Backset", "Centre distance", "Center Distance", "Grip centre distance", "Fixing centre", "Fixing centres",
+  "Backset", "Center distance", "Center Distance", "Grip center distance", "Fixing center", "Fixing centers",
   /*
     "Spindle Hole" used to sit here and never belonged. Its value across all fifteen lock
     cases that carried it was "Copper Construction" — a material, not a dimension — so it
@@ -85,16 +85,16 @@ const GEOMETRY_LABELS = [
   "Tube diameter", "Tube Thickness", "Rose diameter", "Rosette Diameter", "Rose thickness", "Rose depth",
   "Lever length", "Lever section", "Lever drop", "Drop",
   "Bar section", "Bar Length", "Case depth", "Case height", "Door thickness",
-  "Faceplate to cylinder centre", "Cylinder centre to back", "Hole Count", "Opening Angle",
+  "Faceplate to cylinder center", "Cylinder center to back", "Hole Count", "Opening Angle",
 ];
 
 /* Dimensions without which a part cannot be installed, by family. */
 const MUST_HAVE = {
-  "panic-exit-devices": ["Plate size", "Grip centre distance", "Projection", "Cylinder cutout"],
-  "lock-cases": ["Backset", "Centre distance", "Deadbolt throw", "Faceplate"],
+  "panic-exit-devices": ["Plate size", "Grip center distance", "Projection", "Cylinder cutout"],
+  "lock-cases": ["Backset", "Center distance", "Deadbolt throw", "Faceplate"],
   "night-latches-rim-locks": ["Size", "Backset", "Cylinder"],
   "knob-locks": ["Backset", "Cross bore", "Door thickness"],
-  "stainless-steel-handles": ["Length", "Tube diameter", "Fixing centre", "Projection"],
+  "stainless-steel-handles": ["Length", "Tube diameter", "Fixing center", "Projection"],
   "brass-steel-hinges": ["Size", "Thickness", "Hole Count"],
   "lever-handles": ["Backset", "Rose diameter", "Lever length", "Spindle"],
 };

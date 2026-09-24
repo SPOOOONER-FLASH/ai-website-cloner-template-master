@@ -13,7 +13,7 @@ import {
   shouldUseBoundaryFill,
 } from "./watermark-product-images.mjs";
 
-test("watermark geometry stays proportional on catalogue images", () => {
+test("watermark geometry stays proportional on catalog images", () => {
   assert.deepEqual(getWatermarkGeometry(800, 800), {
     margin: 20,
     logoWidth: 112,

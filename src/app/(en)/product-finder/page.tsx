@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   // ("stainless steel panic bar 1000mm") rather than for a model number.
   title: `Product Finder — ${publishedProducts.length} Door Hardware Models`,
   description:
-    "Filter the Canton Hyland catalogue by category, series, material, finish, door type and certification to build a hardware schedule.",
+    "Filter the Canton Hyland catalog by category, series, material, finish, door type and certification to build a hardware schedule.",
 });
 
 /** slug -> display name for every category and sub-category, so facets read as labels. */
@@ -80,7 +80,7 @@ export default function ProductFinderPage() {
               <FinderModeSwitch active="catalogue" />
             </div>
             <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-              Narrow the catalogue by the attributes that appear on a hardware schedule.
+              Narrow the catalog by the attributes that appear on a hardware schedule.
               Filters combine, counts update as you go, and the address bar keeps your
               selection so you can send it to a colleague.
             </p>
@@ -92,7 +92,7 @@ export default function ProductFinderPage() {
             */}
             <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
               Showing {publishedProducts.length} published products. Dimensional filters (backset,
-              centre distance, door thickness) arrive with the full technical catalogue.
+              center distance, door thickness) arrive with the full technical catalog.
             </p>
           </div>
           <div className="col-span-full xl:col-span-9 xl:col-start-16">

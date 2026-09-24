@@ -60,7 +60,7 @@ for (const record of published) {
     const material = (record.material ?? "").trim();
     if (!material) bump(gaps, "material field empty → ask the factory");
     else if (/zinc|zamak/i.test(material)) bump(gaps, "zinc alloy — A156.18 has no base group for it");
-    else if (/alumin/i.test(material)) bump(gaps, "aluminium — A156.18 has no base group for it");
+    else if (/alumin/i.test(material)) bump(gaps, "aluminum — A156.18 has no base group for it");
     else bump(gaps, "material names more than one metal → buyer has not chosen a base yet");
     continue;
   }

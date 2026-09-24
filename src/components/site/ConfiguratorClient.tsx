@@ -50,7 +50,7 @@ const Configurator = dynamic(() => import("./Configurator").then((m) => m.Config
   ssr: false,
   loading: () => (
     <p className="text-c1 text-ink-secondary" role="status">
-      Loading the catalogue…
+      Loading the catalog…
     </p>
   ),
 });

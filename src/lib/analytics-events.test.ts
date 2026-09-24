@@ -51,6 +51,6 @@ test("a throwing gtag never reaches the buyer", () => {
   }) as never;
   assert.doesNotThrow(
     () => trackLead({ locale: "en" }, exploding),
-    "the enquiry is already sent by the time this runs; failing to count it is our problem, not theirs",
+    "the inquiry is already sent by the time this runs; failing to count it is our problem, not theirs",
   );
 });

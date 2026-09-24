@@ -37,7 +37,7 @@ export default function CertificationsPage() {
             <p className="text-c1 text-ink">
               These three records belong to Canton Hyland and are listed with the exact model scope
               printed on the supporting document. A report for one model is not presented as approval
-              for another product or an entire catalogue family.
+              for another product or an entire catalog family.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
               Complete report copies are supplied through the export team only when document

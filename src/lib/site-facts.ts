@@ -60,7 +60,7 @@ export interface SiteFact {
 const COPY = {
   en: {
     models: "verified product records",
-    families: "catalogue categories",
+    families: "catalog categories",
     withVideo: "models with a demonstration video",
     founded: "manufacturing since",
     quality: "quality system",

@@ -59,7 +59,7 @@ const IMPORTS = [
     views: [
       { file: "2-260FQ62F9518.jpg", label: "Hyland 317 cold room push bar, angled view" },
       { file: "2-260FQ62G2251.jpg", label: "317 push bar from the reverse angle, showing the release mechanism" },
-      { file: "2-260FQ62GHL.jpg", label: "317 dimensional drawing showing bar length and mounting centres" },
+      { file: "2-260FQ62GHL.jpg", label: "317 dimensional drawing showing bar length and mounting centers" },
       { file: "2-260FQ62H4247.jpg", label: "317 inside-release bar being operated on a cold storage door" },
       { file: "2-260FQ62H2942.jpg", label: "317 supplied accessories: mounting bracket, connector, screw set and exit label" },
     ],

@@ -75,7 +75,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     group: "dimensions",
     specLabels: ["Backset"],
     definition:
-      "The distance from the edge of the door to the centre of the spindle — the hole the handle turns in. 60mm is much the commonest figure in our range and a great many models are field-adjustable between 60 and 70mm; the full published span runs from 16 to 90mm. North America writes the same two figures as 2-3/8″ and 2-3/4″.",
+      "The distance from the edge of the door to the center of the spindle — the hole the handle turns in. 60mm is much the commonest figure in our range and a great many models are field-adjustable between 60 and 70mm; the full published span runs from 16 to 90mm. North America writes the same two figures as 2-3/8″ and 2-3/4″.",
     definitionEs:
       "La distancia desde el canto de la puerta hasta el centro del eje, el agujero donde gira la manija. 60 mm es con diferencia la cifra más frecuente en nuestra gama y muchos modelos son regulables en obra entre 60 y 70 mm; el rango publicado completo va de 16 a 90 mm. Norteamérica escribe esas dos mismas cifras como 2-3/8″ y 2-3/4″.",
     definitionPt:
@@ -90,19 +90,19 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
   },
   {
     id: "centre-distance",
-    term: "Centre distance",
+    term: "Center distance",
     termEs: "Distancia entre ejes",
     termPt: "Distância entre eixos",
     group: "dimensions",
-    specLabels: ["Centre distance", "Grip centre distance"],
+    specLabels: ["Center distance", "Grip center distance"],
     definition:
-      "Our catalogue uses this label for two different measurements, and it is worth knowing which one you are reading. On a mortise lock case it is the distance from the cylinder centre to the spindle centre — we publish 45, 65, 68, 72, 85 and 92mm, of which 72 and 85 are the common European figures. On a pull handle or a glass-door fitting it is the distance between the two fixing points, and our range runs from 125 to 179mm.",
+      "Our catalog uses this label for two different measurements, and it is worth knowing which one you are reading. On a mortise lock case it is the distance from the cylinder center to the spindle center — we publish 45, 65, 68, 72, 85 and 92mm, of which 72 and 85 are the common European figures. On a pull handle or a glass-door fitting it is the distance between the two fixing points, and our range runs from 125 to 179mm.",
     definitionEs:
       "Nuestro catálogo usa esta etiqueta para dos medidas distintas, y conviene saber cuál está leyendo. En una caja de cerradura es la distancia del centro del cilindro al centro del eje — publicamos 45, 65, 68, 72, 85 y 92 mm, de las cuales 72 y 85 son las cifras europeas habituales. En un tirador o un herraje para puerta de vidrio es la distancia entre los dos puntos de fijación, de 125 a 179 mm en nuestra gama.",
     definitionPt:
       "O nosso catálogo usa este rótulo para duas medidas diferentes, e vale saber qual delas você está lendo. Numa caixa de fechadura de embutir é a distância do centro do cilindro ao centro do eixo — publicamos 45, 65, 68, 72, 85 e 92 mm, das quais 72 e 85 são as medidas europeias usuais. Num puxador ou numa ferragem para porta de vidro é a distância entre os dois pontos de fixação, de 125 a 179 mm na nossa linha.",
     consequence:
-      "On a lock case, the centres decide where the two holes go in the door face. Get them wrong and the cylinder hole and the handle hole do not line up with the lock — the door is scrap, not the lock.",
+      "On a lock case, the centers decide where the two holes go in the door face. Get them wrong and the cylinder hole and the handle hole do not line up with the lock — the door is scrap, not the lock.",
     consequenceEs:
       "En una caja de cerradura, la distancia entre ejes decide dónde van los dos taladros en la hoja. Si se equivoca, el agujero del cilindro y el de la manija no coinciden con la cerradura: lo que se pierde es la puerta, no la cerradura.",
     consequencePt:
@@ -123,7 +123,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionPt:
       "A faixa de espessura de folha para a qual o produto foi construído. É uma faixa, e não um número, porque o eixo e os parafusos de fixação têm curso.",
     consequence:
-      "Below the range the screws bottom out and the roses stand proud; above it the spindle does not reach through, and no amount of force will make it. This is the figure to check first on a glass or aluminium door, where leaves are thinner than the joinery a lock was designed around.",
+      "Below the range the screws bottom out and the roses stand proud; above it the spindle does not reach through, and no amount of force will make it. This is the figure to check first on a glass or aluminum door, where leaves are thinner than the joinery a lock was designed around.",
     consequenceEs:
       "Por debajo del rango los tornillos topan y los embellecedores quedan salidos; por encima, el eje no llega a atravesar. Es la cifra que hay que comprobar primero en puertas de vidrio o aluminio, cuyas hojas son más finas que la carpintería para la que se diseñó la cerradura.",
     consequencePt:
@@ -211,19 +211,19 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
   },
   {
     id: "fixing-centre",
-    term: "Fixing centre",
+    term: "Fixing center",
     termEs: "Entre-ejes de fijación",
     termPt: "Entre-eixos de fixação",
     group: "dimensions",
-    specLabels: ["Fixing centre", "Fixing hole"],
+    specLabels: ["Fixing center", "Fixing hole"],
     definition:
-      "The distance between the centres of the screw holes that hold a fitting to the door.",
+      "The distance between the centers of the screw holes that hold a fitting to the door.",
     definitionEs:
       "La distancia entre los centros de los agujeros de tornillo que sujetan un herraje a la puerta.",
     definitionPt:
       "A distância entre os centros dos furos dos parafusos que prendem uma ferragem à porta.",
     consequence:
-      "It is the figure that decides whether a replacement fitting lands on the holes already in the door. It is also the figure our catalogue is thinnest on, and we would rather say that than print an approximate one — ask, and we will measure the part.",
+      "It is the figure that decides whether a replacement fitting lands on the holes already in the door. It is also the figure our catalog is thinnest on, and we would rather say that than print an approximate one — ask, and we will measure the part.",
     consequenceEs:
       "Es la cifra que decide si un herraje de recambio cae sobre los agujeros que ya tiene la puerta. Es también la cifra con menos cobertura en nuestro catálogo, y preferimos decirlo antes que publicar una aproximada: pregúntenos y medimos la pieza.",
     consequencePt:
@@ -328,7 +328,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionPt:
       "A chapa embutida no batente em que a lingueta ou a trava entra. O lábio dela guia a lingueta enquanto a porta fecha.",
     consequence:
-      "A strike fitted a few millimetres out is the usual reason a new door does not latch, and it is the cheapest thing on the opening to correct. The material matters on an entrance: a thin strike is what gives way first under force, not the lock.",
+      "A strike fitted a few millimeters out is the usual reason a new door does not latch, and it is the cheapest thing on the opening to correct. The material matters on an entrance: a thin strike is what gives way first under force, not the lock.",
     consequenceEs:
       "Un cerradero desplazado unos milímetros es la causa habitual de que una puerta nueva no enclave, y es lo más barato de corregir del hueco. En una entrada el material importa: bajo fuerza cede antes un cerradero fino que la cerradura.",
     consequencePt:
@@ -389,7 +389,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionPt:
       "As peças da face externa — maçaneta, bola, puxador ou espelho — fornecidas separadamente do mecanismo que acionam. Numa barra antipânico, a barra é o lado de dentro e a guarnição é o lado de fora, e são duas linhas de pedido.",
     consequence:
-      "This is the most common misreading of our own catalogue, which is why fourteen records were renamed on 2026-09-14: a record called “035 Panic Exit Device” was the outside trim, not the bar. An order for the wrong one arrives as half a door.",
+      "This is the most common misreading of our own catalog, which is why fourteen records were renamed on 2026-09-14: a record called “035 Panic Exit Device” was the outside trim, not the bar. An order for the wrong one arrives as half a door.",
     consequenceEs:
       "Es la confusión más habitual con nuestro propio catálogo, y por eso el 2026-09-14 se renombraron catorce fichas: «035 Panic Exit Device» era la guarnición exterior, no la barra. Pedir la equivocada llega como media puerta.",
     consequencePt:
@@ -409,7 +409,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
       "Rose depth",
     ],
     definition:
-      "The round plate behind a lever or knob that covers the fixings and the bore. Ours run 36 to 75mm in diameter, depending on the range — the catalogue calls it a rose on the handle ranges and a rosette on the knob and bathroom ranges, and they are the same part.",
+      "The round plate behind a lever or knob that covers the fixings and the bore. Ours run 36 to 75mm in diameter, depending on the range — the catalog calls it a rose on the handle ranges and a rosette on the knob and bathroom ranges, and they are the same part.",
     definitionEs:
       "La placa redonda tras la manija o la perilla que tapa las fijaciones y el taladro. Las nuestras van de 36 a 75 mm de diámetro según la gama — el catálogo la llama roseta en unas gamas y embellecedor en otras, y son la misma pieza.",
     definitionPt:
@@ -500,7 +500,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definitionPt:
       "Uma classe de desempenho conferida por uma norma de ensaio — ANSI/BHMA Grau 1, 2 e 3 na América do Norte, EN 1125 e EN 179 para ferragens de saída de emergência na Europa. Um grau pertence sempre a um modelo nomeado, ensaiado como conjunto completo.",
     consequence:
-      "A grade is not a property of a factory or of a catalogue. If a supplier says the range is Grade 2, ask which model number the report names — that is the only form of the claim that survives a submittal.",
+      "A grade is not a property of a factory or of a catalog. If a supplier says the range is Grade 2, ask which model number the report names — that is the only form of the claim that survives a submittal.",
     consequenceEs:
       "Un grado no es una propiedad de una fábrica ni de un catálogo. Si un proveedor dice que la gama es grado 2, pregunte qué número de modelo nombra el informe: es la única forma de la afirmación que sobrevive a una aprobación en obra.",
     consequencePt:
@@ -542,7 +542,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     */
     specLabels: [],
     definition:
-      "An aluminium door whose vertical frame member is too slim to take an ordinary mortise lock — commonly around 30 to 50mm of usable depth. It needs a lock case built for that depth rather than a standard one cut down.",
+      "An aluminum door whose vertical frame member is too slim to take an ordinary mortise lock — commonly around 30 to 50mm of usable depth. It needs a lock case built for that depth rather than a standard one cut down.",
     definitionEs:
       "Una puerta de aluminio cuyo montante vertical es demasiado estrecho para una cerradura de embutir corriente — habitualmente de unos 30 a 50 mm de fondo útil. Necesita una caja fabricada para ese fondo, no una estándar recortada.",
     definitionPt:

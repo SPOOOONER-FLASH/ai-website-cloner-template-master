@@ -66,7 +66,7 @@ describe("cardFigure", () => {
     assert.equal(es?.value, "60mm");
   });
 
-  it("every figure it returns for the real catalogue contains a digit", () => {
+  it("every figure it returns for the real catalog contains a digit", () => {
     /*
       The whole point is printing a number. A row like "Available on request" satisfies
       the label match and says nothing, so the guard is asserted against real content
@@ -83,6 +83,6 @@ describe("cardFigure", () => {
       checked += 1;
     }
 
-    assert.ok(checked > 300, `expected the catalogue to yield figures, got ${checked}`);
+    assert.ok(checked > 300, `expected the catalog to yield figures, got ${checked}`);
   });
 });

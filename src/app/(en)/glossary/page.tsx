@@ -40,7 +40,7 @@ export const metadata: Metadata = pageMetadata({
   locale: "en",
   title: "Door Hardware Glossary",
   description:
-    "Backset, centre distance, handing, chassis, spindle, deadbolt throw and cross bore — the terms on Canton Hyland specification tables, defined with what ordering each one wrong costs.",
+    "Backset, center distance, handing, chassis, spindle, deadbolt throw and cross bore — the terms on Canton Hyland specification tables, defined with what ordering each one wrong costs.",
 });
 
 export default function GlossaryPage() {

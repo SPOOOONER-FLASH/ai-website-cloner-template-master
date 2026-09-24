@@ -72,7 +72,7 @@ test("the promo shows on every section the client asked for", () => {
   );
 });
 
-test("every listed surface is a route promoSurfaceFor can actually recognise", () => {
+test("every listed surface is a route promoSurfaceFor can actually recognize", () => {
   // This pairing is the failure mode worth guarding. A surface listed here that
   // promoSurfaceFor cannot produce is silently dead — the config looks right, the CMS
   // shows it ticked, and the dialog simply never appears. That is exactly what happened

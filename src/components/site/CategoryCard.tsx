@@ -22,7 +22,7 @@ export function CategoryCard({ category, productCount, index, locale = "en" }: C
     : pt
       ? `${productCount} ficha${productCount === 1 ? "" : "s"} verificada${productCount === 1 ? "" : "s"}`
       : `${productCount} verified product${productCount === 1 ? "" : "s"}`;
-  const pending = es ? "Fichas en preparación" : "Catalogue records pending";
+  const pending = es ? "Fichas en preparación" : "Catalog records pending";
   return (
     <Link
       href={`${base}/products/${category.slug}/`}

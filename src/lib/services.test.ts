@@ -31,7 +31,7 @@ test("the service hub is crawlable and reachable without crowding the header", (
   assert.match(header, /href: "\/services"/);
 });
 
-test("service copy routes buyers to existing enquiry and selection tools", () => {
+test("service copy routes buyers to existing inquiry and selection tools", () => {
   const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
 
   assert.match(page, /href="\/contact"/);
@@ -39,11 +39,11 @@ test("service copy routes buyers to existing enquiry and selection tools", () =>
   assert.match(page, /href="\/downloads"/);
 });
 
-test("the service brief is written plainly and the whole panel opens an enquiry", () => {
+test("the service brief is written plainly and the whole panel opens an inquiry", () => {
   const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
 
   assert.doesNotMatch(page, /The first useful package/);
-  assert.match(page, /Prepare your enquiry/);
+  assert.match(page, /Prepare your (?:inquiry|enquiry)/);
   assert.match(page, /Start with these four details/);
   assert.match(page, /Send this brief/);
   assert.match(

@@ -19,14 +19,14 @@ const COPY = {
   en: {
     home: "Home",
     products: "Products",
-    photographs: "Original photographs from our catalogue.",
+    photographs: "Original photographs from our catalog.",
     families: "Families",
     nextStep: "Next step",
     publishedModels: "published models. Select a product to explore.",
     models: "models",
     everyPart: "Every part, in context.",
-    leverLabel: "9001 catalogue lever handle",
-    mechanismDetail: "Mechanism detail from the catalogue.",
+    leverLabel: "9001 catalog lever handle",
+    mechanismDetail: "Mechanism detail from the catalog.",
   },
   es: {
     home: "Inicio",

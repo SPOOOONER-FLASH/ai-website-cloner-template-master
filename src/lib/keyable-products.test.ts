@@ -32,7 +32,7 @@ describe("keyableProducts", () => {
     assert.equal(found.length, 1);
   });
 
-  it("counts a feature line, which is where half the catalogue states it", () => {
+  it("counts a feature line, which is where half the catalog states it", () => {
     const found = keyableProducts([
       product({ specs: [], features: ["Can be keyed alike or master keyed"] }),
     ]);
@@ -63,7 +63,7 @@ describe("keyableProducts", () => {
     assert.equal(found.length, 0);
   });
 
-  it("the real catalogue supports the claim the homepage makes", () => {
+  it("the real catalog supports the claim the homepage makes", () => {
     /*
       Not asserted as a fixed number — the catalogue grows, and a test that has to be
       edited on every import is a test people start editing without reading. What must

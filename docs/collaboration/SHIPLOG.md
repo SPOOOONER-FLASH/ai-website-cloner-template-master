@@ -6,18 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 496 次提交
+最近 30 天 · 共 494 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:34 | HYDE | 西葡改写第 1 批（二）：推杠文章、方轴指南；三语删去“持有自有测试文件”的不实说法 | `138e9d41196` |
-| 08:23 | 中立 · 发布 雷茵 | Merge remote-tracking branch 'origin/main' into claude/copy | `0abec240b69` |
-| 08:23 | HYDE | 西葡改写第 1 批（一）：顺序器文章重写；18 条执手/锁体被写成“逃生推杠”的西语摘要纠错 | `1932d354e95` |
-| 08:12 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `65aee51042a` |
-| 08:11 | HYDE+雷茵 | Merge remote-tracking branch 'origin/main' into claude/copy | `7439ff2eb67` |
-| 08:04 | 中立 | 文案方向改为 B 端；三语文字归 Claude，Codex 只负责视觉 | `65929622d19` |
+| 08:34 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `d8c1303ad15` |
+| 08:34 | HYDE | 美式拼写第二批：产品记录、界面、术语表键同步；标题生成器修 306 PS 安全措辞与同句双 para | `e834ca7c4df` |
+| 08:21 | HYDE+雷茵 · 发布 雷茵 | 合并 origin/main：英文 SEO 取远端新生成器，西/葡取本地 | `6259314d57e` |
+| 08:16 | 中立 | 规格术语表补齐西 10 葡 6；306 三条补西葡；译者加 --only 做定向重写 | `a74b910b066` |
 | 07:45 | 中立 | 四个数据看板进仓库共享（导入脚本 + 首期报告 + 结论）；分工表；多语种扩展准备（含阿拉伯语） | `fc45ebe0b18` |
 | 07:35 | 中立 | 文风指南对齐 voice 文件与术语表：三份改为市场补充，删掉重复的 locale 审计 | `24f84bc0e67` |
 | 07:35 | 中立 | 合并本地提交：文风调研 | `8d038d81510` |
