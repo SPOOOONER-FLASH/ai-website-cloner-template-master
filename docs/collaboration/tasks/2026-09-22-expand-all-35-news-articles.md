@@ -43,9 +43,9 @@
 | 19 | euro-cylinder-range-45-to-90 | 0 | 713 | 887 | **已做** 批7 EN 1626 · ES 1636 · PT 1604 ✅ 三语 |
 | 20 | rim-night-latch-564-and-1073 | 0 | 711 | 889 | **已做** 批7 EN 1631 · ES 1687 · PT 1660 ✅ 三语 |
 | 21 | door-stop-holder-or-flush-bolt | 0 | 704 | 896 | **已做** 批7 EN 1702 · ES 1699 · PT 1704 ✅ 三语 |
-| 22 | what-oem-actually-changes | 0 | 700 | 900 | **已做** 批8 EN 1607（ES/PT 待多语言批） |
-| 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | **已做** 批8 EN 1664（ES/PT 待多语言批） |
-| 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | **已做** 批8 EN 1622（ES/PT 待多语言批） |
+| 22 | what-oem-actually-changes | 0 | 700 | 900 | **已做** 批8 EN 1607 · ES 1684 · PT 1671 ✅ 三语 |
+| 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | **已做** 批8 EN 1664 · ES 1732 · PT 1669 ✅ 三语 |
+| 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | **已做** 批8 EN 1622 · ES 1668 · PT 1669 ✅ 三语 |
 | 25 | exit-device-push-bar-length | 0 | 692 | 908 | **已做** 批9 EN 1635（ES/PT 待多语言批） |
 | 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | **已做** 批9 EN 1639（ES/PT 待多语言批） |
 | 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | **已做** 批9 EN 1620（ES/PT 待多语言批） |
