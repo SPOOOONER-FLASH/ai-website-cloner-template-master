@@ -18,3 +18,13 @@
 下一次 `npm run ship` 成功时这些会一起推上去。
 
 **已解决（2026-09-24）**：共用工作区有人在重建 out/，合并被挡；旁路检出里又遇到 scripts/release-site.mjs 真冲突（另一会话同时修了它）。手工合并两边改动后推送 `1eb49b135b9`，上面列的提交全部已在远端。
+
+## 2026/9/24 03:59:56 · 三次推送失败
+
+原因：旁路合并也失败：fatal: unable to access 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git/': Recv failure: Connection was reset
+
+未推送的提交：
+
+- `d0ca5d29d2e` ship：失败原因过滤 CRLF 警告；积压记录标注已解决
+
+下一次 `npm run ship` 成功时这些会一起推上去。

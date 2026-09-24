@@ -180,7 +180,7 @@ export function PromoDialog() {
       sits at bottom-right on desktop and stays inset from both mobile edges.
     */
     <aside
-      aria-label={locale === "es" ? "Oferta destacada" : "Featured offer"}
+      aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
       className="fixed bottom-16 left-16 right-16 z-[5] xs:bottom-24 xs:left-auto xs:right-24 xs:w-[360px]"
