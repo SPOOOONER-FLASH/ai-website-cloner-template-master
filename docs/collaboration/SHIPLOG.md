@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 500 次提交
+最近 30 天 · 共 502 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:51 | 中立 | GTM/GA4/Clarity：阅读深度、阅读方式（快速滑过/认真读）、产品与联系点击事件；手册加 GA4 自定义维度步骤 | `4448b30f8ca` |
+| 08:43 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `39a3f529592` |
 | 08:43 | 中立 | release：推送前先对齐远端；被别的会话抢先推送不计入三次失败 | `6e6e13c46e8` |
 | 08:41 | 中立 | 葡语「estar a + 不定式」规则排除非动词（maior 被改成 maiondo） | `15de670963d` |
 | 08:36 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `eac9c99865c` |
