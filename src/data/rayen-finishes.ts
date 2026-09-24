@@ -196,6 +196,30 @@ const FINISHES: Record<string, FinishEntry> = {
     match: ["brushed chrome", "拉丝铬", "铬拉丝"],
   },
   /*
+    豪华氧化铝门锁系列（《雷茵五金》p57–p60）的三个表面。图册印的是「铝氧化亚黑 / 砂白 / 砂金」，
+    颜色取自那三页的产品照片：亚黑比锌合金的哑黑略灰、砂白是冷银白、砂金偏橙。
+    「砂白+亚黑」（OXB）是两种材料，按上面的双色规则拆成两半各取一个颜色，不单列。
+    各给一条自己的条目，否则「砂金」会落进别的金色、「亚黑」认不出来。
+  */
+  "anodised-matt-black": {
+    colors: ["#343537"],
+    zh: "铝氧化亚黑",
+    en: "Anodised matt black",
+    match: ["anodised matt black", "铝氧化亚黑"],
+  },
+  "anodised-sand-white": {
+    colors: ["#d5d8da"],
+    zh: "铝氧化砂白",
+    en: "Anodised sand white",
+    match: ["anodised sand white", "铝氧化砂白"],
+  },
+  "anodised-sand-gold": {
+    colors: ["#d2a24c"],
+    zh: "铝氧化砂金",
+    en: "Anodised sand gold",
+    match: ["anodised sand gold", "铝氧化砂金"],
+  },
+  /*
     《雷茵-铰链和门吸》的表面处理词汇。颜色取自图册的产品照片本身，不是猜的。
 
     这一批里有五个名字原来会**误中**别的条目：LOOKUP 按拼写由长到短匹配，

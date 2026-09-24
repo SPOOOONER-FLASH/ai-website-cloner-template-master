@@ -8,11 +8,11 @@
     "就直接复用上次的判定，不重算 —— 加 90 张图不该把 2600 张全部重新分析一遍，",
     "而那个长窗口正是另一个会话重命名时撞车的原因。"
   ],
-  "generated": "2026-09-23",
+  "generated": "2026-09-24",
   "counts": {
-    "refused": 462,
+    "refused": 464,
     "cleanable": 1224,
-    "already-clean": 3369
+    "already-clean": 3442
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -476,7 +476,9 @@
     "t51-stainless-steel-handle-13.webp",
     "t51-stainless-steel-handle-16.webp",
     "t51-stainless-steel-handle-20.webp",
-    "ul1110-lever-handle-5.webp"
+    "ul1110-lever-handle-5.webp",
+    "al-115-lever-handle-4.webp",
+    "t1550-stainless-steel-handle-18.webp"
   ],
   "hashes": {
     "001-panic-exit-device-trim-2.webp": {
@@ -21159,6 +21161,308 @@
     },
     "ulst1278-stainless-steel-handle.webp": {
       "source": "4917286e73d563c304652f862fb21b2648f656e90f5c5463840cb0fd0dd191e5",
+      "status": "already-clean"
+    },
+    "al-10-lever-handle-2.webp": {
+      "source": "53194cd2b0a9d378cc8981532b7c6719e294ab4475147439a896c537df7d6aa5",
+      "status": "already-clean"
+    },
+    "al-10-lever-handle.webp": {
+      "source": "ac72c9cc37abd51aad67feb04bd8b70c407970c4ef89c1a3c193c5f1d1ca23f1",
+      "status": "already-clean"
+    },
+    "al-11-lever-handle-2.webp": {
+      "source": "1e678d9bd6aa3bc902782fa07179c368be2abca10416c05d9b918a4d762e986b",
+      "status": "already-clean"
+    },
+    "al-11-lever-handle.webp": {
+      "source": "dcba1993799c7f1981b6371d5645021190495b6571a3a45ee2f3f691e433e97a",
+      "status": "already-clean"
+    },
+    "al-111-lever-handle-2.webp": {
+      "source": "be1eb900a44dbd7738d30b4a406f3fda2fdb4f7831e827a652f78028900c9114",
+      "status": "already-clean"
+    },
+    "al-111-lever-handle-3.webp": {
+      "source": "685b16157e479db62f7b0e6ec20e9f32403260d1ddcb3893d630d180f3132b6b",
+      "status": "already-clean"
+    },
+    "al-111-lever-handle-4.webp": {
+      "source": "1b8905bc6228db8324518391c0721c45c242d14e4d21a134b83a3c42c19b6eb1",
+      "status": "already-clean"
+    },
+    "al-111-lever-handle.webp": {
+      "source": "8123ade500f05fe5252f2c1d58fdf397a685e540446d6356f9c1860885820b1c",
+      "status": "already-clean"
+    },
+    "al-113-lever-handle-2.webp": {
+      "source": "8b2efebf79dd2441d5deef2e7e7ca504db5a87663766971cbcaed0e946c7b8e8",
+      "status": "already-clean"
+    },
+    "al-113-lever-handle-3.webp": {
+      "source": "96033501b3c093111213d0922be7bfc3c0514817ba477c7668a04e7cab4339ca",
+      "status": "already-clean"
+    },
+    "al-113-lever-handle.webp": {
+      "source": "652e4eb227439b0994b7b23a27f64e2d9abe7c9eb9286541f36e6ab3b438d2f8",
+      "status": "already-clean"
+    },
+    "al-114-lever-handle-2.webp": {
+      "source": "4f345198543f6592dd8e301029ba1a0194f34f9b6859f46f388fdc456164f2ec",
+      "status": "already-clean"
+    },
+    "al-114-lever-handle-3.webp": {
+      "source": "031ca2dd9eb0e62b6c82a6460b92653e64177d41b03d7cd5c418fb48f1c59c78",
+      "status": "already-clean"
+    },
+    "al-114-lever-handle-4.webp": {
+      "source": "bbabff6088fff312a6a7447494909c4c7a660559eba8079e5bfacee95d05a485",
+      "status": "already-clean"
+    },
+    "al-114-lever-handle.webp": {
+      "source": "0ae7f26915606a9cc7c3623a6a3f072e5fc79619f52eb8612f7c9a190becccb0",
+      "status": "already-clean"
+    },
+    "al-115-lever-handle-2.webp": {
+      "source": "16999e0887ccfc708c97a618180830213d127a0501210b4e3c181a01795e44ff",
+      "status": "already-clean"
+    },
+    "al-115-lever-handle-3.webp": {
+      "source": "60a9b987c50e985a32e57c139cc3ba92b5637ef09af90ab09d46bd8be791a16e",
+      "status": "already-clean"
+    },
+    "al-115-lever-handle-4.webp": {
+      "source": "7e08a5768dc9aa7621284c49c5ef72b7d6cab51ec837addd5d595135ef9c85c4",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "al-115-lever-handle.webp": {
+      "source": "2e53952a4261abec6b86f8da2d00b868168b32d8cc0324a0af33fe40230349fd",
+      "status": "already-clean"
+    },
+    "al-117-lever-handle-2.webp": {
+      "source": "9e8b9d0f11ceb662dd9424209122cefd959798c3db3716f510f507c8ee1dda0b",
+      "status": "already-clean"
+    },
+    "al-117-lever-handle.webp": {
+      "source": "3275dad769e1830225760ba716b81f73bb67407fc93ae6e41dc7d0509e5385ed",
+      "status": "already-clean"
+    },
+    "al-120-lever-handle-2.webp": {
+      "source": "d76d9b2cba6eca53a7e222c0c78abd1a8f3f046eddd08ebc8feee7d9ce60d656",
+      "status": "already-clean"
+    },
+    "al-120-lever-handle.webp": {
+      "source": "23facb63c6c8f1127c96d175407be62637f91b4b4ae5611bc588f404a7dcf0d6",
+      "status": "already-clean"
+    },
+    "al-122-lever-handle-2.webp": {
+      "source": "6e947c3c6219579675ed30d14f0ea0056818f85b51a7d4dad4ec140c6698143b",
+      "status": "already-clean"
+    },
+    "al-122-lever-handle.webp": {
+      "source": "2770538cf801ab350804faaced86e7717e5e7b9e975f48eb526799f46a314719",
+      "status": "already-clean"
+    },
+    "al-124-lever-handle-2.webp": {
+      "source": "e2d990b892394cefc213ca690fdd67e82b47942e6feae68ce6e2e308cfb71269",
+      "status": "already-clean"
+    },
+    "al-124-lever-handle.webp": {
+      "source": "d66790297fc4961d2e5939a1f74a191bcae91ae10964b1883c6159feeb1675ea",
+      "status": "already-clean"
+    },
+    "al-126-lever-handle-2.webp": {
+      "source": "944f5f708f611041f43f502ffe35a7eebe1436c3a5b690d4c3f2ce928c15ac77",
+      "status": "already-clean"
+    },
+    "al-126-lever-handle.webp": {
+      "source": "7c8b929239cd6e63af977e8aa995fc302cc2de120d9a2825c9b7ebdf4d2a8e01",
+      "status": "already-clean"
+    },
+    "al-138-lever-handle-2.webp": {
+      "source": "be379e6acc66a52d324bd6202b4fcded46b9dd42838dcb120339f7e7dbb69507",
+      "status": "already-clean"
+    },
+    "al-138-lever-handle.webp": {
+      "source": "def33f0b09a3c3bfd10c917c8977fd9f278c4eb6e756e8743d304f6fc8b30af6",
+      "status": "already-clean"
+    },
+    "al-139-lever-handle-2.webp": {
+      "source": "31ec3841a69960743a374efb9d90928c3dd58fdf3c836a5042f505ece9083104",
+      "status": "already-clean"
+    },
+    "al-139-lever-handle.webp": {
+      "source": "b47a0d3dc33b98c0b52b8392c1d816e5712800b37d9bbfe409d8c63bde412254",
+      "status": "already-clean"
+    },
+    "al-142-lever-handle-2.webp": {
+      "source": "339e70c65d60fedeb2a5b67528272228a956fc923424b55865fdd9da614afbfd",
+      "status": "already-clean"
+    },
+    "al-142-lever-handle.webp": {
+      "source": "ec60a5edfca080a4ee7996ceebbe8179bf6db50289aaa4764e84ce0d37313fbe",
+      "status": "already-clean"
+    },
+    "al-143-lever-handle-2.webp": {
+      "source": "eaa984274ef5e5027433bc77cae8d2f49be0f60f06b2af10a328b9a64452d1cc",
+      "status": "already-clean"
+    },
+    "al-143-lever-handle.webp": {
+      "source": "78177e88ecf3e97ac7b21eca16638c60a79d8f5610825c61fa329e10271c9dfc",
+      "status": "already-clean"
+    },
+    "al1-114-lever-handle-2.webp": {
+      "source": "4ff818dbd22a309bd7f7b9e99ae87b0cd72a62c8f6e9c24a37ea79d3bfc2d788",
+      "status": "already-clean"
+    },
+    "al1-114-lever-handle.webp": {
+      "source": "669372027a2419c9fb2600b53b853fb2c7acebb671364a93c51b995892c6c5e2",
+      "status": "already-clean"
+    },
+    "al1-141-lever-handle-2.webp": {
+      "source": "3b0345002778c56c2f73fdcff20c09ffb7766f85ce0d48a02a39f6f06ea976f0",
+      "status": "already-clean"
+    },
+    "al1-141-lever-handle.webp": {
+      "source": "079d92568fe16f306f841cffd8c3f60c32a643411b480e46c38ed3cb40e4040d",
+      "status": "already-clean"
+    },
+    "al1-144-lever-handle-2.webp": {
+      "source": "c822c7a629e7d8736dad6edf000711a781ecba9d88225225e35013fafffc163f",
+      "status": "already-clean"
+    },
+    "al1-144-lever-handle.webp": {
+      "source": "e6cabb334394071e225b00398b1b758e9029f90ed8abe954255174e2fcd75ea2",
+      "status": "already-clean"
+    },
+    "al5801-117-lever-handle-2.webp": {
+      "source": "54ab6b6642ac65452044a7c2a71406b25652a01cc6906896ad6fc6ae848c7e56",
+      "status": "already-clean"
+    },
+    "al5801-117-lever-handle.webp": {
+      "source": "2f4a49c2090c9416cd0a71a3676aea65c66392108fbea60e27a4df86ed0194aa",
+      "status": "already-clean"
+    },
+    "al5802-111-lever-handle-2.webp": {
+      "source": "3ec9ea10dc94a25ed67b3517b620e14b5b8195c88938d8903bc5567d80db80b9",
+      "status": "already-clean"
+    },
+    "al5802-111-lever-handle-3.webp": {
+      "source": "e71081d93408f1fb569158b5962958738e3b72ef2ae7816233fded7c24a2b82e",
+      "status": "already-clean"
+    },
+    "al5802-111-lever-handle.webp": {
+      "source": "cdeae61e6e658d1a08bffa51fc1515f3ed6f10e975ba5620f7f94e40f3de3eb6",
+      "status": "already-clean"
+    },
+    "al5802-113-lever-handle-2.webp": {
+      "source": "189a963d2fdd1eef1af2b79d2237d9650832fac43a6a30648181578557a6c023",
+      "status": "already-clean"
+    },
+    "al5802-113-lever-handle.webp": {
+      "source": "57fc3ace01b34b4fb1476b871433b4a8cf9ccd072c91f99ecd6d3cd9deb7cf23",
+      "status": "already-clean"
+    },
+    "al5802-115-lever-handle-2.webp": {
+      "source": "b6477946dc9211c284d97629c7415b0d23ca0b226e01ce7b9b2fbae0fb42a207",
+      "status": "already-clean"
+    },
+    "al5802-115-lever-handle.webp": {
+      "source": "1e8ed91873c324329d237b28847a44c375eace7f5318909d4420fe1a113b9d35",
+      "status": "already-clean"
+    },
+    "al5803-114-lever-handle-2.webp": {
+      "source": "33a3f154223cb592a42c9004ae764969f067f171e5ca788a63e0c72e00706daf",
+      "status": "already-clean"
+    },
+    "al5803-114-lever-handle-3.webp": {
+      "source": "1d9c06f57c9a5844bc0c31c8a834378a94cdea8147824318cfe24c147312f228",
+      "status": "already-clean"
+    },
+    "al5803-114-lever-handle.webp": {
+      "source": "01a90b9f93466e114b33ecd6d098fc8b01dd44cf6f2239fad0881a5fe1bd1842",
+      "status": "already-clean"
+    },
+    "al5803-141-lever-handle-2.webp": {
+      "source": "d69edbb5fba4338b45baa3d089034ab517dc7f5c50c13e26af73ef5f5d97f37d",
+      "status": "already-clean"
+    },
+    "al5803-141-lever-handle.webp": {
+      "source": "06bb27114197e72081227e477714ee25da247bb9aca6fec777de0444842a1941",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-10.webp": {
+      "source": "e0cf9efb505f418a964c9bf17183b6a217f4ba8e723f7a84dd9d6f81f0acc092",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-11.webp": {
+      "source": "a10b07e2d8afc73408f3106b73acf97fac8822e82aabba3e2361a92b15a8c38b",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-12.webp": {
+      "source": "37c013835dcc73df39e3e59e8b121ae23c23baa04faec8feeabd84fe123d7fe0",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-13.webp": {
+      "source": "4a9a7106a0717f77f6d45c8b51f85bf8e4b738f4a9be66655e16029435873dfe",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-14.webp": {
+      "source": "751a686a7db1b94f242f354a1ffe1c8c5f72a97522a80e7c295bda7dcc71a159",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-15.webp": {
+      "source": "87b70fcc3c1ac94ed1fb46ea0c2cf617937f3a6195e6eda60e11cfd7082cf029",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-16.webp": {
+      "source": "ccfc0476625afdd2e1ae6dccd43736f7cf55c03f15526a3589c02e9a333babaa",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-17.webp": {
+      "source": "b501d7a8a032b8017c579869b9aa777bc7a56d1a941264196e4778f9045e6fbe",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-18.webp": {
+      "source": "3a0f9d5d8bfef7cc896a83f4447dc4718189faf3314f9c4d5039d737a7fd44b8",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "t1550-stainless-steel-handle-2.webp": {
+      "source": "8d52dbe69b0cd99a06a86576fc1c7a8dc52ac5fbd67fbdc61819d834b44bc2ed",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-3.webp": {
+      "source": "3f23570ca3dd9fa7f3e0511f8d5bd208c3c6883d56e0f7dfba2a8c2ed8b4b997",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-4.webp": {
+      "source": "a4cf7454a2cf0ca9feae69358330775dcadab63d0695ecc511c334549214be37",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-5.webp": {
+      "source": "035d3e1c1ca62f1fd8f203855c3ef647da3ace0baa41aad5e838f82396efeb16",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-6.webp": {
+      "source": "11e85c603a721bbe81914ad9c72ab9f532369be5c1398e012f8ec340b6e92d99",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-7.webp": {
+      "source": "a1164fbf5b93679968ec85e4389db5cad63987b4af60374368cf5b03696f58f2",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-8.webp": {
+      "source": "341a8ef0a6d135922d29ec1b52e83d8bff9260f1e1e4874c35f37726deda26f0",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle-9.webp": {
+      "source": "be9e89f0d0ee233fd53c175822204928c5d5652f5a5edf16fb26429b5bea87c1",
+      "status": "already-clean"
+    },
+    "t1550-stainless-steel-handle.webp": {
+      "source": "64d8d3020376dd174c3f669f7d0d695176a5e324749bcd6944eab8930b717a71",
       "status": "already-clean"
     }
   }

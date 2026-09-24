@@ -1,0 +1,830 @@
+{
+  "_readme": [
+    "豪华氧化铝门锁系列（Alluminum alloy door locks series），甲方《雷茵五金》图册 p57–p60。",
+    "",
+    "== 版式 ==",
+    "一格 = 一个型号的一个表面：AL-114 BL（p57）、AL-114 OX（p58）、AL-114 SG（p59）是三格、一个型号。",
+    "33 格合成 24 个型号：圆座 15、方座 3（AL1- 开头）、长面板 6（AL58xx-）。每格自带规格栏和尺寸图。",
+    "切图：scripts/catalogue-cutters/cut-aluminium.mjs，按格子坐标切、格内按墨迹找边界；",
+    "长面板那一页尺寸图画在面板右下的空白里，产品图要把那一块涂白。",
+    "p57 左半页是 5845 磁力消音锁体、5806H-45 防插消音锁体与锁芯的技术页，不是执手，不上架。",
+    "",
+    "== 尺寸 ==",
+    "每格尺寸图：上面横着的是执手总长；圆座下面是锁盖直径（全部 Ø54），方座是锁盖边长（AL1-141 = 54，",
+    "AL1-114 / AL1-144 = 55）。长面板：面板 185 × 45，执手中心到锁芯中心 58。",
+    "同一型号出现在几格的，几格的数全部一致（AL-114 / 111 / 113 / 115 三页都核过）。",
+    "面板款与同号圆座款各按各自印的写：AL5801-117 印 127，AL-117 印 133，不互相借数。",
+    "",
+    "== 表面代号 → 英文名（本系列新词，zh-terms 与 rayen-finishes 同步加） ==",
+    "BL 铝氧化亚黑 Anodised Matt Black · OX 铝氧化砂白 Anodised Sand White ·",
+    "SG 铝氧化砂金 Anodised Sand Gold · OXB 铝氧化砂白+亚黑 Anodised Sand White / Matt Black。",
+    "材质图册印「氧化铝 / Aluminum Alloy」，记录写目录通用的 Aluminium Alloy（中文镜像为铝合金）。"
+  ],
+  "sourceRoot": "E:/rayen-sources/rayen-catalogue-aluminium",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "全部型号的适用门厚",
+      "reason": "大格规格栏里中文印「35-50mm」、英文印「40-55mm」，同一格两个数；不替甲方选一个，等确认"
+    },
+    {
+      "model": "适用标准 QB/T2474-2000、GB21556-2008",
+      "reason": "图册印的是「适用标准」不是检测报告；和认证同一类说法，没有报告不上规格表"
+    },
+    {
+      "model": "适用范围（户外门、房门、大门）",
+      "reason": "只印在大格，是系列通用说明不是型号参数；前几个系列也没收这一行"
+    },
+    {
+      "model": "AL-143 图纸上的 58",
+      "reason": "执手中心到锁芯中心，是锁体参数（5806H-45 中心距 58），只这一格画了；面板款的 58 画在面板上、收了"
+    },
+    {
+      "model": "p57 左半页 5845 / 5806H-45 锁体与锁芯",
+      "reason": "锁体不是执手，该另起锁体记录；和锌合金那本 p32 的 7255 锁体一起做"
+    }
+  ],
+  "models": [
+    {
+      "model": "AL-114",
+      "slug": "al-114-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black",
+        "Anodised Sand White",
+        "Anodised Sand Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-111",
+      "slug": "al-111-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black",
+        "Anodised Sand White",
+        "Anodised Sand Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-113",
+      "slug": "al-113-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black",
+        "Anodised Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-115",
+      "slug": "al-115-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black",
+        "Anodised Sand White",
+        "Anodised Sand Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "127mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-122",
+      "slug": "al-122-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "127mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-139",
+      "slug": "al-139-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "140mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-138",
+      "slug": "al-138-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "132mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-142",
+      "slug": "al-142-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "140mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-120",
+      "slug": "al-120-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-143",
+      "slug": "al-143-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "127mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-126",
+      "slug": "al-126-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "120mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-117",
+      "slug": "al-117-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-124",
+      "slug": "al-124-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-10",
+      "slug": "al-10-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White / Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL-11",
+      "slug": "al-11-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White / Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "142mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL1-141",
+      "slug": "al1-141-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "125mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "54 × 54mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL1-114",
+      "slug": "al1-114-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "55 × 55mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL1-144",
+      "slug": "al1-144-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "55 × 55mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845 / 7250"
+        }
+      ]
+    },
+    {
+      "model": "AL5802-111",
+      "slug": "al5802-111-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black",
+        "Anodised Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    },
+    {
+      "model": "AL5802-115",
+      "slug": "al5802-115-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "127mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    },
+    {
+      "model": "AL5803-114",
+      "slug": "al5803-114-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White",
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "131mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    },
+    {
+      "model": "AL5803-141",
+      "slug": "al5803-141-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    },
+    {
+      "model": "AL5801-117",
+      "slug": "al5801-117-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "127mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    },
+    {
+      "model": "AL5802-113",
+      "slug": "al5802-113-lever-handle",
+      "name": "Lever Handle on Backplate",
+      "nameZh": "面板执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Anodised Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "Centre distance",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "5845"
+        }
+      ]
+    }
+  ]
+}

@@ -400,7 +400,8 @@
     "Ball Bearing Hinge": "轴承合页",
     "Concealed Hinge": "隐藏铰链",
     "Concealed Hydraulic Hinge": "暗藏液压铰链",
-    "Hydraulic Hinge": "液压合页"
+    "Hydraulic Hinge": "液压合页",
+    "Lever Handle on Backplate": "面板执手锁"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -1447,6 +1448,18 @@
     [
       "Concealed Hydraulic Hinge",
       "暗藏液压铰链"
+    ],
+    [
+      "Anodised Matt Black",
+      "铝氧化亚黑"
+    ],
+    [
+      "Anodised Sand White",
+      "铝氧化砂白"
+    ],
+    [
+      "Anodised Sand Gold",
+      "铝氧化砂金"
     ]
   ]
 }

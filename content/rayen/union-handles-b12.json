@@ -1,0 +1,72 @@
+{
+  "_readme": [
+    "第十二批：UNION 大拉手的最后一个包 T1550（大拉手T1550-L500-L750.zip，甲方 09-13 发来）。",
+    "54 个 UNION 包至此全部上架。",
+    "",
+    "包里 23 张，4 张是「(1)」「(2)」重复副本（md5 相同），拷进源目录前已去掉，剩 19 张：",
+    "6 张两种长度、不同表面的底图，2 张图纸（D922 = L500，D923 = L750），1 张特写，10 张安装场景。",
+    "",
+    "== 尺寸 ==",
+    "D922：P=475，总长 500；D923：P=725，总长 750。侧视图 60 标的是整个 L 形支脚的高度，即离门面突出，",
+    "与前几批「侧视图那个数是总突出」一致。两端各 50（贴门面的占位）不编标签，同第十一批。",
+    "",
+    "== 剔除 ==",
+    "D504：左墙上红色消防栓标牌印着日文。其余场景（含 D508 门上的英文 PULL、D503 的电视画面）可用。"
+  ],
+  "sourceRoot": "E:/rayen-sources/rayen-batch12-by-model",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [
+    "T1550xD504FHrP.jpg"
+  ],
+  "heldBack": [
+    {
+      "model": "T1550 侧视图上的 25",
+      "reason": "只标了支脚的一段，是握杆截面还是某一段厚度说不清，不编「截面」标签"
+    },
+    {
+      "model": "T1550 的古铜色表面",
+      "reason": "D001 / D003 / D006 是古铜色调，包里和缓存里都没有它的表面名；只写看得出、前几批已用的两种（缎面不锈钢、哑黑）"
+    },
+    {
+      "model": "T1550 的安装螺钉与开孔直径",
+      "reason": "图纸上没印，artunion-specs 缓存里也没有这个型号"
+    }
+  ],
+  "models": [
+    {
+      "model": "T1550",
+      "slug": "t1550-stainless-steel-handle",
+      "name": "Stainless Steel Handle",
+      "nameZh": "门拉手",
+      "categoryPath": [
+        "stainless-steel-handles"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Satin stainless",
+        "Matt black"
+      ],
+      "specs": [
+        {
+          "label": "Centre distance",
+          "value": "P=475mm (L500) / P=725mm (L750)"
+        },
+        {
+          "label": "Overall length",
+          "value": "500mm / 750mm"
+        },
+        {
+          "label": "Projection",
+          "value": "60mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        }
+      ]
+    }
+  ]
+}
