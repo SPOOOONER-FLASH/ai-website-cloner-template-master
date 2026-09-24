@@ -144,7 +144,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       body:
         "Cases, cylinders, springs, spindles and trim are brought together and function-tested as a set. A lock is not the sum of parts that each pass on their own — a latch and a strike that are both in tolerance can still bind, and that is only found by turning the handle.",
       bodyEs:
-        "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un picaporte y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manija.",
+        "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un pestillo y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manija.",
       bodyPt:
         "Caixas, cilindros, molas, eixos quadrados e guarnições são montados e testados funcionando como conjunto. Uma fechadura não é a soma de peças que passam separadamente: uma lingueta e uma contratesta ambas dentro da tolerância ainda podem emperrar, e isso só se descobre girando a maçaneta.",
       figure: null,

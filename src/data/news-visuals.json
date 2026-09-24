@@ -220,5 +220,31 @@
     ],
     "angle": 0,
     "tone": "cool"
+  },
+  "double-fire-exit-door-hardware-set": {
+    "src": "/images/products-hyde/309-d-double-door-panic-exit-device-2.webp",
+    "width": 1000,
+    "height": 1000,
+    "crop": [
+      400,
+      20,
+      360,
+      960
+    ],
+    "angle": 0,
+    "tone": "cool"
+  },
+  "brazil-nbr-11742-nbr-11785-fire-door-hardware": {
+    "src": "/images/products-hyde/320-two-point-locking-exit-device-2.webp",
+    "width": 1000,
+    "height": 1000,
+    "crop": [
+      25,
+      150,
+      950,
+      740
+    ],
+    "angle": 0,
+    "tone": "warm"
   }
 }

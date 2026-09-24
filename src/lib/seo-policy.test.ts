@@ -73,8 +73,10 @@ test("the Spanish catalog mirrors /products, and hreflang stops where the routes
   assert.equal(hasSpanishMirror("/news"), true);
   assert.equal(hasSpanishMirror("/news/stainless-steel-grades-304-201-316"), true);
 
+  // OEM services gained Spanish and Portuguese on 2026-09-24.
+  assert.equal(hasSpanishMirror("/services"), true);
   // Still English-only. An hreflang pointing at a 404 is worse than no hreflang.
-  assert.equal(hasSpanishMirror("/services"), false);
+  assert.equal(hasSpanishMirror("/events"), false);
 });
 
 /*
@@ -100,6 +102,7 @@ test("the navigation prefixes exactly the paths that have a Spanish mirror", () 
     "/configurator",
     "/product-finder",
     "/news",
+    "/services",
   ];
   for (const href of mirrored) {
     assert.equal(hasSpanishMirror(href), true, `${href} should mirror`);
@@ -108,7 +111,7 @@ test("the navigation prefixes exactly the paths that have a Spanish mirror", () 
   }
 
   // No Spanish route: a Spanish visitor gets the English page, never a 404.
-  for (const href of ["/services"]) {
+  for (const href of ["/events"]) {
     assert.equal(hasSpanishMirror(href), false, `${href} should not mirror`);
     assert.equal(localisedHref(href, "es"), href, `${href} must stay English`);
   }

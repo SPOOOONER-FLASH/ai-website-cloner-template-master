@@ -9,7 +9,7 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "es",
-  title: "Contacto — Equipo de exportación",
+  title: "Fábrica de herrajes en China: contacto con exportación",
   description:
     "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos. Indique tipo de puerta, acabado, norma y cantidad.",
 });
@@ -20,13 +20,12 @@ export default function ContactoPage() {
       <div className="layout">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">
-            <h1 className="text-h1 text-ink">Contacto</h1>
+            <h1 className="text-h1 text-ink">Contacto con la fábrica. Hable con quien lo fabrica.</h1>
             <p className="mt-24 text-c1 text-ink">
-              Hable con nuestro equipo de exportación sobre selección de producto, muestras,
-              trabajo OEM o una cotización de proyecto.
+              Escriba al equipo de exportación sobre un modelo, una muestra, una pieza OEM o la cotización de un proyecto. Lo lee un ingeniero, en español o en inglés.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              Indique el tipo de puerta, acabado, norma aplicable, cantidad y mercado de destino.
+              Indíquenos el tipo de puerta, el acabado, la norma, la cantidad y el mercado de destino, y nuestra primera respuesta ya podrá serle útil.
             </p>
 
             {/*
@@ -119,6 +118,24 @@ export default function ContactoPage() {
                 vigentes de lo que realmente pide, en vez de un PDF que después tiene que
                 traducir a su propia relación.
               </p>
+            </div>
+
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Compre por Alibaba o directamente</h2>
+              <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
+                Las dos vías funcionan. Algunos compradores hacen su primer pedido por Alibaba, con la protección de pago de la plataforma, y después pasan al pedido directo cuando ya nos conocen. Otros compran directamente desde el primer contenedor.
+              </p>
+              <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
+                El mismo equipo de exportación atiende ambas vías, con los mismos precios y la misma especificación.
+              </p>
+              <a
+                href={siteSettings.alibaba.storefront}
+                rel="noopener"
+                target="_blank"
+                className="short-marker short-marker-compact mt-16 inline-block text-c1 text-brand hover:text-brand-hover"
+              >
+                Visitar nuestra tienda en Alibaba
+              </a>
             </div>
 
             <div className="mt-48 border-t border-line pt-24">

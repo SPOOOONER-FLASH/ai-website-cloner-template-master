@@ -45,13 +45,12 @@ export default function ServiceDownloadsPage() {
           </div>
           <div className="col-span-full xl:col-span-10">
             <p className="text-c1 text-ink-secondary">Technical library</p>
-            <h1 id="downloads-title" className="mt-8 text-h1 text-ink">Service + Downloads</h1>
+            <h1 id="downloads-title" className="mt-8 text-h1 text-ink">Catalog and technical downloads</h1>
           </div>
           <div className="col-span-full xl:col-span-10 xl:col-start-13">
-            <p className="text-h3 text-ink">Catalogs and evidence files for project review.</p>
+            <p className="text-h3 text-ink">What you can have now, and what we send on request.</p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              {downloads.length} client-supplied files are available locally. Datasheets,
-              installation guides, CAD and BIM files are issued against a confirmed project brief.
+              {downloads.length} files are here to download now. Datasheets, installation guides and CAD or BIM files are sent for a named model on a real project, so we can check them against current production first.
             </p>
           </div>
         </div>
@@ -103,11 +102,10 @@ export default function ServiceDownloadsPage() {
             <div className="grid grid-cols gap-x gap-y-24">
               <div className="col-span-full xl:col-span-7">
                 <h2 id="certificate-title" className="text-h3 text-ink">
-                  Test reports and certificates
+                  What is tested, and in whose name
                 </h2>
                 <p className="mt-16 text-c1 text-ink-secondary">
-                  Three HYDE records are available for verification. Each record retains its exact
-                  model scope; it does not certify other catalog products.
+                  {certificates.length} records, each listed with the one model it covers. A report on one model does not cover another. Ask for a copy and we will send it in full, as the issuer requires.
                 </p>
               </div>
               <ul className="col-span-full divide-y divide-line border-t border-line xl:col-span-15 xl:col-start-10">
@@ -153,8 +151,7 @@ export default function ServiceDownloadsPage() {
               </div>
               <div className="col-span-full xl:col-span-15 xl:col-start-10">
                 <p className="max-w-[68rem] text-c1 text-ink">
-                  Send the product model, door preparation and required format. Our team will
-                  confirm whether a datasheet, installation guide, CAD drawing or BIM object is available.
+                  Send the model, the door preparation and the format you need. We will tell you whether a datasheet, installation guide, CAD drawing or BIM object exists for it, and say so plainly if it does not.
                 </p>
                 <Link href="/contact/?subject=technical-document" className="btn btn-primary mt-32">
                   Request technical documents

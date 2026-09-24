@@ -47,20 +47,15 @@ export default function CertificacionesPage() {
               Evidencia de calidad
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              La evidencia pertenece a un modelo, no a una afirmación comercial.
+              Certificados e informes de ensayo. Qué está ensayado, y a nombre de quién.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              Estos tres registros son de Canton Hyland y se publican con el alcance exacto
-              de modelo que figura impreso en el documento de respaldo. El informe de un
-              modelo no se presenta como aprobación de otro producto ni de toda una familia
-              del catálogo.
+              Los registros de abajo se publican con el alcance exacto de modelo que figura impreso en cada documento, y el informe de un modelo nunca se presenta como aprobación de otro. Buena parte de lo que fabricamos para clientes de marca propia se certifica a nombre de esos clientes, a petición y a cargo de ellos, por lo que esos certificados les corresponde compartirlos a ellos. Estamos preparando los ensayos CE y ANSI a nombre de Canton Hyland para nuestras gamas principales; cada informe nuevo aparecerá aquí, con su alcance, a medida que se emita.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              Las copias completas de los informes se facilitan a través del equipo de
-              exportación únicamente cuando se ha confirmado el permiso de redistribución
-              del documento y la correspondencia con el modelo solicitado.
+              Los emisores restringen cómo se copian sus informes, así que enviamos una copia completa a pedido, para un modelo concreto, en lugar de publicar extractos.
             </p>
           </div>
         </section>
@@ -88,8 +83,7 @@ export default function CertificacionesPage() {
               <div className="col-span-full sm:col-span-3 md:col-span-5 xl:col-span-10">
                 <h2 className="text-h2 text-ink">{certificate.title}</h2>
                 <p className="mt-16 max-w-[60ch] text-c1 text-ink-secondary">
-                  Los datos de registro son públicos; el documento completo se obtiene
-                  mediante una solicitud controlada de documentación técnica.
+                  Los datos son públicos. El informe completo se envía a pedido, íntegro, como exige el emisor.
                 </p>
               </div>
               <dl className="col-span-full grid grid-cols-1 gap-16 md:col-span-5 md:col-start-8 xl:col-span-9 xl:col-start-16">
@@ -106,13 +100,11 @@ export default function CertificacionesPage() {
 
         <section className="col-content grid grid-cols gap-x gap-y-32 border-t border-line pt-32">
           <h2 className="col-span-full text-h2 text-ink lg:col-span-5 xl:col-span-9">
-            Compruebe el informe antes de especificar el herraje.
+            Compruebe el informe antes de especificar la pieza.
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Indíquenos la norma exigida, el número de modelo y el mercado de destino. El
-              equipo de exportación confirmará si el documento nombra ese modelo exacto
-              antes de facilitar una copia.
+              Envíenos la norma que necesita, el número de modelo y el mercado de destino. Le diremos si un informe nombra ese modelo exacto antes de enviárselo, y si ninguno lo nombra, también se lo diremos.
             </p>
             <div className="mt-24">
               <ArrowLink href="/es/contact/">Solicitar documentación técnica</ArrowLink>

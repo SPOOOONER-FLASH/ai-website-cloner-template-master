@@ -29,7 +29,7 @@ export default function GlossaryPt() {
               Referência
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              As palavras das nossas fichas técnicas, e o que custa errar em cada uma.
+              Glossário de ferragens. As palavras das nossas fichas técnicas, e o que custa errar em cada uma.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">

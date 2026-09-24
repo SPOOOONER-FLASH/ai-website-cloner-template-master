@@ -83,7 +83,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     consequence:
       "It is the single most common wrong number on a door-hardware order. A door already bored for 60mm will not take a 70mm lock: the handle lands in the wrong place and the latch does not reach the strike. Metal cannot be adjusted on site, so a wrong backset is a container that gets stored rather than fitted.",
     consequenceEs:
-      "Es el número equivocado más habitual en un pedido de herrajes. Una puerta ya taladrada a 60 mm no admite una cerradura de 70: la manija queda fuera de sitio y el picaporte no llega al cerradero. El metal no se ajusta en obra, así que un backset equivocado es un contenedor que se almacena en vez de instalarse.",
+      "Es el número equivocado más habitual en un pedido de herrajes. Una puerta ya taladrada a 60 mm no admite una cerradura de 70: la manija queda fuera de sitio y el pestillo no llega al cerradero. El metal no se ajusta en obra, así que un backset equivocado es un contenedor que se almacena en vez de instalarse.",
     consequencePt:
       "É o número errado mais comum num pedido de ferragens. Uma porta já furada para 60 mm não aceita uma fechadura de 70: a maçaneta fica fora de lugar e a lingueta não alcança a contratesta. O metal não se ajusta em obra, então um backset errado é um contêiner que acaba estocado em vez de instalado.",
     article: "mortise-lock-backset-and-centre-distance-guide",
@@ -132,20 +132,20 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
   {
     id: "deadbolt-throw",
     term: "Deadbolt throw",
-    termEs: "Recorrido del pestillo",
+    termEs: "Recorrido del cerrojo",
     termPt: "Curso da trava",
     group: "dimensions",
     specLabels: ["Deadbolt throw"],
     definition:
       "How far the deadbolt projects from the lock face when fully thrown. Our published figure is 25mm.",
     definitionEs:
-      "Cuánto sobresale el pestillo desde el frente de la cerradura cuando está completamente echado. Nuestra cifra publicada es 25 mm.",
+      "Cuánto sobresale el cerrojo desde el frente de la cerradura cuando está completamente echado. Nuestra cifra publicada es 25 mm.",
     definitionPt:
       "Quanto a trava avança para fora da testa da fechadura quando totalmente lançada. A nossa medida publicada é 25 mm.",
     consequence:
       "The throw sets the depth of the pocket that has to be cut in the frame, and several markets write a minimum throw into the building code for entrance doors. A short throw in a deep-rebated frame leaves a bolt that can be levered.",
     consequenceEs:
-      "El recorrido determina la profundidad de la caja que hay que abrir en el marco, y varios mercados fijan un recorrido mínimo por normativa en puertas de entrada. Un recorrido corto en un marco muy rebajado deja un pestillo que se puede palanquear.",
+      "El recorrido determina la profundidad de la caja que hay que abrir en el marco, y varios mercados fijan un recorrido mínimo por normativa en puertas de entrada. Un recorrido corto en un marco muy rebajado deja un cerrojo que se puede palanquear.",
     consequencePt:
       "O curso define a profundidade do rebaixo que precisa ser aberto no batente, e vários mercados fixam um curso mínimo em norma para portas de entrada. Um curso curto num batente muito rebaixado deixa uma trava que pode ser alavancada.",
   },
@@ -283,7 +283,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The working body of a cylindrical lock — the part that sits inside the cross bore and turns handle movement into latch movement. The trim bolts onto it from both faces.",
     definitionEs:
-      "El cuerpo mecánico de una cerradura cilíndrica: la parte que va dentro del taladro pasante y convierte el giro de la manija en movimiento del picaporte. La guarnición se atornilla a él por ambas caras.",
+      "El cuerpo mecánico de una cerradura cilíndrica: la parte que va dentro del taladro pasante y convierte el giro de la manija en movimiento del pestillo. La guarnición se atornilla a él por ambas caras.",
     definitionPt:
       "O corpo mecânico de uma fechadura cilíndrica — a parte que fica dentro do furo passante e transforma o giro da maçaneta em movimento da lingueta. As guarnições são parafusadas nele pelas duas faces.",
     consequence:
@@ -296,20 +296,20 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
   {
     id: "latch",
     term: "Latch",
-    termEs: "Picaporte",
+    termEs: "Pestillo",
     termPt: "Lingueta",
     group: "mechanism",
     specLabels: ["Latch", "Latch extension"],
     definition:
       "The sprung bolt with one angled face that holds a closed door shut and pulls back when the handle turns. It is not a deadbolt: a latch can be pushed back, a deadbolt cannot.",
     definitionEs:
-      "El resbalón con una cara inclinada que mantiene cerrada la puerta y se recoge al girar la manija. No es un pestillo: un resbalón se puede empujar hacia dentro, un pestillo no.",
+      "La pieza con resorte y una cara inclinada que mantiene cerrada la puerta y se recoge al girar la manija. No es un cerrojo: el pestillo se puede empujar hacia dentro, el cerrojo no.",
     definitionPt:
       "A lingueta com mola e uma face chanfrada que mantém fechada uma porta encostada e recolhe quando a maçaneta gira. Não é uma trava: uma lingueta pode ser empurrada para dentro, uma trava não.",
     consequence:
       "A fire door has to latch, not merely close. If the latch does not engage the strike the leaf is held by nothing, and a door held by nothing is not a fire door however it is rated.",
     consequenceEs:
-      "Una puerta cortafuegos tiene que enclavar, no sólo cerrar. Si el resbalón no entra en el cerradero la hoja no está sujeta por nada, y una hoja sujeta por nada no es una puerta cortafuegos por mucha clasificación que tenga.",
+      "Una puerta cortafuegos tiene que enclavar, no sólo cerrar. Si el pestillo no entra en el cerradero la hoja no está sujeta por nada, y una hoja sujeta por nada no es una puerta cortafuegos por mucha clasificación que tenga.",
     consequencePt:
       "Uma porta corta-fogo precisa travar, não apenas encostar. Se a lingueta não entra na contratesta, a folha não está presa por nada, e uma folha presa por nada não é uma porta corta-fogo por mais classificada que seja.",
     article: "door-coordinator-double-fire-door",
@@ -324,7 +324,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The plate let into the frame that the latch or bolt enters. Its lip guides the latch in as the door closes.",
     definitionEs:
-      "La placa embutida en el marco en la que entra el resbalón o el pestillo. Su labio guía al resbalón mientras la puerta se cierra.",
+      "La placa embutida en el marco en la que entra el pestillo o el cerrojo. Su labio guía al pestillo mientras la puerta se cierra.",
     definitionPt:
       "A chapa embutida no batente em que a lingueta ou a trava entra. O lábio dela guia a lingueta enquanto a porta fecha.",
     consequence:
@@ -475,7 +475,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "What the lock does rather than what it looks like: entrance (keyed outside), privacy (turn button inside, emergency release outside), passage (latch only, no locking), classroom, communication. The function is the last two letters of our order code.",
     definitionEs:
-      "Lo que hace la cerradura, no su aspecto: entrada (con llave por fuera), privacidad (botón interior y desbloqueo de emergencia exterior), paso (sólo picaporte, sin bloqueo), aula, comunicación. La función son las dos últimas letras de nuestro código de pedido.",
+      "Lo que hace la cerradura, no su aspecto: entrada (con llave por fuera), privacidad (botón interior y desbloqueo de emergencia exterior), paso (solo pestillo, sin bloqueo), aula, comunicación. La función son las dos últimas letras de nuestro código de pedido.",
     definitionPt:
       "O que a fechadura faz, e não com o que ela se parece: entrada (com chave por fora), banheiro (botão de giro por dentro, destrave de emergência por fora), passagem (só lingueta, sem travamento), sala de aula, comunicação. A função são as duas últimas letras do nosso código de pedido.",
     consequence:

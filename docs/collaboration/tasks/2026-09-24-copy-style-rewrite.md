@@ -59,22 +59,31 @@
 
 | # | 事项 | 状态 |
 |---|---|---|
-| 0 | **急**：文章里登记的 6 句目录数量已过期（西语规格表会话 09-24 补齐规格数据后连带变化），`article-catalogue-claims` 测试为红。why-the-catalogue（123→114）、mortise-lock-backset（175→180、28/18→34/22）、dimensional-interchangeability FAQ（257 个锁：backset 106→111 等），三语一起改。**mortise-lock-case-comparison 不能只改句子**：同时具备两个尺寸的锁体从 27 变成 32，表格要补 5 行，窄框锁体从 9 变成 12 | 待做（下一项） |
-| 0b | D1 手改（进度：规格会话已把 `specsEs` 的 229 处和术语表的 29 处改完，`9e2bdf2a6a0`；**HYDE 产品 `summaryEs` 37 处已改，还剩 0 处**，Claude 09-24）。还没改的：文章正文里的 picaporte 逐处改成 pestillo（原来当 deadbolt 用的 pestillo 改成 cerrojo）；另外还有 `src/data/hardware-terms.ts` 约第 306、312、327 行，原句用 resbalón 和 pestillo 对比，要改成 pestillo 和 cerrojo 对比，否则意思会反过来；以及 `src/data/es-features.ts` 第 996 行。改完告诉工程会话，由他们加 picaporte → pestillo 规则和守卫 | 待做 |
+| 0 | **急**：文章里登记的 6 句目录数量已过期（西语规格表会话 09-24 补齐规格数据后连带变化），`article-catalogue-claims` 测试为红。why-the-catalogue（123→114）、mortise-lock-backset（175→180、28/18→34/22）、dimensional-interchangeability FAQ（257 个锁：backset 106→111 等），三语一起改。**mortise-lock-case-comparison 不能只改句子**：同时具备两个尺寸的锁体从 27 变成 32，表格要补 5 行，窄框锁体从 9 变成 12 | 09-24 完成（生成器 `scripts/build-lock-case-tables.mjs`） |
+| 0b | D1 手改（进度：规格会话已把 `specsEs` 的 229 处和术语表的 29 处改完，`9e2bdf2a6a0`；**HYDE 产品 `summaryEs` 37 处已改，还剩 0 处**，Claude 09-24）。还没改的：文章正文里的 picaporte 逐处改成 pestillo（原来当 deadbolt 用的 pestillo 改成 cerrojo）；另外还有 `src/data/hardware-terms.ts` 约第 306、312、327 行，原句用 resbalón 和 pestillo 对比，要改成 pestillo 和 cerrojo 对比，否则意思会反过来；以及 `src/data/es-features.ts` 第 996 行。改完告诉工程会话，由他们加 picaporte → pestillo 规则和守卫 | 09-24 完成：文章西语正文 picaporte 清零（42 个文件；原来指插销的 pestillo 改为 pasador，指方舌的改为 cerrojo，再把 picaporte 改为 pestillo）。hardware-terms.ts 和 es-features.ts 另见第 0d 项 |
+| 0d | `src/data/hardware-terms.ts` 约第 306、312、327 行（原句拿 resbalón 和 pestillo 作对比）和 `src/data/es-features.ts` 第 996 行，按 D1 改 | 09-24 完成：术语页、卖点对照表、83 个产品的 featuresEs、capability、finish-codes、首页图片说明全部改完；src 中只剩规则脚本和葡语术语表注释里的 picaporte |
 | 0c | **先问巴西买家：葡语斜舌和方舌分别叫 trinco 还是 lingueta**。术语表表头、术语表第 630 行、Papaiz 和已上线的文章四处互相矛盾，详见 `pt-br.md` 第 5 节。确认后在术语表层面统一，全部葡语一次改完 | 待问 |
 | 1 | 栏目文案第一轮：产品页、首页卡片、产品查找、配置器，三语，按 `docs/copy/style-guides/section-voice.md` | 09-24 完成 |
-| 2 | OEM / 服务页（`src/app/(en)/services` 及西葡）：按 A 重写，写开新模具和绕开专利冲突，另写打样流程 | 待做。起订量、打样周期待甲方给数字；没有数字之前不写数字 |
-| 3 | 认证页（`certifications` 三语）：按 B 如实写，现有报告在客户名下、自有名下的 CE 和 ANSI 正在准备 | 待做 |
-| 4 | 联系页和询盘页（三语）：按 C 写明可以走阿里巴巴平台或直接交易 | 待做 |
-| 5 | 文章 D：双开防火门整套配置（推杠、执手、顺序器、闭门器），三语 | 待做 |
-| 6 | 文章 E：葡语巴西 NBR 11742 / NBR 11785 解释文 | 待做 |
-| 7 | 栏目文案第二轮：公司页、服务页其余部分、联系页、FAQ、下载页、资质页，三语 | 待做 |
-| 8 | 文章改写第 2 批和第 3 批（见第二节） | 待做 |
+| 2 | OEM / 服务页（`src/app/(en)/services` 及西葡）：按 A 重写，写开新模具和绕开专利冲突，另写打样流程 | 09-24 完成（三语；起订量和样品条款引用 FAQ 里已有的数字：多数型号 300–5,000 件，样品收费、从首单扣回、有库存的几天内发出；西葡路由已由工程会话建好） |
+| 3 | 认证页（`certifications` 三语）：按 B 如实写，现有报告在客户名下、自有名下的 CE 和 ANSI 正在准备 | 09-24 完成（去掉“三份记录属于 Canton Hyland”的无法核实说法；CELAB 证书在谁名下待甲方确认） |
+| 4 | 联系页和询盘页（三语）：按 C 写明可以走阿里巴巴平台或直接交易 | 09-24 完成（联系页三语加“阿里巴巴或直接下单”，链接用 site-settings 里的店铺地址） |
+| 5 | 文章 D：双开防火门整套配置（推杠、执手、顺序器、闭门器），三语 | 09-24 完成：`news/double-fire-exit-door-hardware-set`，六条线按顺序定、五处互相矛盾的对照表、贴牌商按“一个门洞”下单。SEO 字段是草稿，归工程会话改 |
+| 6 | 文章 E：葡语巴西 NBR 11742 / NBR 11785 解释文 | 09-24 完成：`news/brazil-nbr-11742-nbr-11785-fire-door-hardware`，葡语为主、三语。标准事实只用两家以上巴西厂商公开写过的（P 级、C/F/H、推杆长度 ≥ 50%、2018 版双扇要顺序器、AVCB 常见五类不合格）；写明我们名下没有 NBR 11785 测试。避开 trinco/lingueta（见 0c） |
+| 7 | 栏目文案第二轮：公司页、服务页其余部分、联系页、FAQ、下载页、资质页，三语；另加各品类页导语 `src/data/category-positioning.json`（品牌平台第八节第 2 步） | 09-24 完成：公司页、FAQ、下载页、资质页、联系页 09-24 完成（资质页和联系页：H1 搜索词在前，“controlled technical-document requests”这类公文腔改成直说；下载页：H1 改成“Catalog and technical downloads”等搜索词开头；写死的“三份记录”改为按实际条数显示；FAQ：删掉 RAYEN 才有的地弹簧和未经核实的“三十多个出口市场”，补上专利改型（A）和自己名下测试的现状（B）；标题、导语、简介四段、资质段；EN/ES 把真实工厂照误称为“editorial concepts”的说明已改正；葡语的葡萄牙写法已改成巴西写法）。品类导语已由工程会话在 1fcc885 三语重写，和品牌平台的方向一致，而且这些导语会进入约 500 条产品描述，所以本轮复核后不改 |
+| 8 | 文章改写第 2 批和第 3 批（见第二节） | 进行中：en-1125-vs-en-179 西语已逐段通读并修正；全站西葡用词已扫描修正；fire-door-hardware-what-must-be-rated、trim-handle-or-panic-bar、master-key-systems、mortise-lock-backset 四篇的西葡逐段通读待做。`mortise-lock-case-comparison-2026` 09-24 先做，原来没有西语和葡语，现已补齐三语。英文的摘要和 FAQ 已经过期（写的是 27 款、18 款、9 款），现在和表格一起由 `build-lock-case-tables.mjs` 生成。其余 5 篇待做 |
 | 9 | 约 160 条太短的西语产品摘要，外加一条守卫测试。数字对照 `summaryPt`（E 盘会话 09-24 第二轮，`80457982db7`，每个数字都能在该产品页的实拍图或尺寸图上找到）。**误归到指示器类的 14 条（锁舌、插销、门镜），材质字段写的 Zinc Alloy 很可能是错的：西语不要写 zamak** | 待做 |
 | 10 | 雷茵“品质与认证”栏目的改写建议已写进 section-voice.md 第五节，交给雷茵会话去改；本会话不改雷茵 | 已转交 |
+| 11 | 四个参考页的 H1 前面加买家会搜的词（/finishes、/glossary、/model-lookup、/documents，三语），工程会话 09-24 提出 | 09-24 完成：搜索词在前，原句保留（Finish codes / Códigos de acabado / Códigos de acabamento 等）；葡语 model-lookup 顺带改成巴西说法 |
 
+
+## 待甲方确认（文案）
+
+- **德国**：09-01 的决定写在 `src/data/representatives.ts`，说海外没有子公司，Remagen 只是“联系点”，不是办公室。09-24 甲方又说“德国有办公室、有常驻公司”，首页和服务页已按这句写成“在德国有办公室”。请甲方二选一：(a) Remagen 可以写成我们的办公室，公司页的“Where we are”改为 Office；(b) 仍然只写联系点，那么首页和服务页的“德国办公室”改成“在德国有联系人”。定之前公司页不改。
+
+- **地弹簧**：工厂做地弹簧（D-1031 到 D-1067 在 `content/products` 里都有），但全部只标给雷茵，HYDE 站上看不到。无框玻璃门那篇文章原来说“our floor springs sit in the door-closers category”，这在 HYDE 上不成立，09-24 已改成“本站暂未列出，请直接询问”。请甲方定：地弹簧要不要上 HYDE？如果要，归工程会话在 `sites` 里加上 hyde，文章再改回来。
 
 ## 边界
 
 - 雷茵那一侧不动。`content/products` 是两站共用的，改了要在 agent-update 里公告。
 - 不编造任何尺寸、材质、认证或年份。
+- 新文章用 1000×1000 的正方形产品图做首图时，要在 `src/data/news-visuals.json` 登记取景框（格式照现有条目），发布前跑 `node scripts/audit-image-fit.mjs --check`。否则新闻宽画幅会裁掉 44%，HYDE 发布会被拦下（工程会话 09-24）。

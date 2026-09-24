@@ -30,6 +30,14 @@ GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站�
 3. 同一会话：在下面「本期结论」写三到六条结论（带日期、带数字出处），提交，`npm run ship`，
    然后**通知所有会话**（Claude Desktop 里用 SendMessage 发给每个活跃会话，一句话 + 本文件路径）。
 
+**按国家看查询（多语种准备用，每月一次即可）**：GSC 导出的查询表不带国家列，脚本拆不出来，
+所以要在导出时就筛好。Search Console → 效果 → 「+ 新增」→ 国家/地区 → 选德国 → 导出，放进
+`SEOGEO 1001-de` 这样的文件夹；法国、沙特、阿联酋、土耳其各一份。然后：
+```bash
+node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --out docs/research/QUERY-CORPUS-2026-10-01-de.md
+```
+德语、法语、阿拉伯语、土耳其语上线前，标题里的买家用语就从这几份里取。
+
 以后如果甲方愿意，可以换成 API 自动拉取（Clarity 数据导出令牌、GSC / GA4 服务账号）。那需要甲方自己在
 各后台生成凭据、放在本机 `.env` 里，**永远不进 git**。在此之前，CSV 这条路已经够用。
 

@@ -416,7 +416,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     namePt: "Passagem — sem travamento",
     evidence: "catalogue",
     note: "Latch only. Specified for corridors and rooms that must never be lockable.",
-    noteEs: "Sólo picaporte. Se especifica en pasillos y estancias que nunca deben poder cerrarse con llave.",
+    noteEs: "Solo pestillo. Se especifica en pasillos y estancias que nunca deben poder cerrarse con llave.",
   },
   {
     code: "CL",
@@ -448,7 +448,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
   {
     code: "EL",
     name: "Exit latch",
-    nameEs: "Picaporte de salida",
+    nameEs: "Pestillo de salida",
     namePt: "Trinco de saída",
     evidence: "catalogue",
     note: "Named on model 5807 SSEL.",

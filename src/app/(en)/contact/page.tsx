@@ -9,7 +9,7 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "en",
-  title: "Contact the Export Team",
+  title: "Door Hardware Factory in China: Contact the Export Team",
   description:
     "Talk to an export engineer about a specification, a sample or a quotation. Include door type, finish, applicable standard, quantity and destination market.",
 });
@@ -20,14 +20,12 @@ export default function ContactPage() {
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">
-            <h1 className="text-h1 text-ink">Contact</h1>
+            <h1 className="text-h1 text-ink">Contact the factory. Talk to the people who make it.</h1>
             <p className="mt-24 text-c1 text-ink">
-              Talk to our export team about product selection, specifications, samples, OEM work
-              or a project quotation.
+              Write to the export team about a model, a sample, an OEM part or a project quotation. An engineer reads it, in English or Spanish.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              Include the door type, required finish, applicable standard, quantity and destination
-              market so we can prepare a useful first response.
+              Tell us the door type, the finish, the standard, the quantity and the destination market, and our first reply can already be a useful one.
             </p>
 
             {/*
@@ -131,6 +129,24 @@ export default function ContactPage() {
                 what you actually order rather than a PDF you have to translate into your
                 own schedule.
               </p>
+            </div>
+
+            <div className="mt-48 border-t border-line pt-24">
+              <h2 className="text-h3 text-ink">Order through Alibaba, or directly</h2>
+              <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
+                Both work. Some buyers place their first order through Alibaba, with the platform's payment protection, and move to direct orders once they know us. Others order directly from the first container.
+              </p>
+              <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
+                The same export team handles both, at the same prices and the same specification.
+              </p>
+              <a
+                href={siteSettings.alibaba.storefront}
+                rel="noopener"
+                target="_blank"
+                className="short-marker short-marker-compact mt-16 inline-block text-c1 text-brand hover:text-brand-hover"
+              >
+                Visit our Alibaba storefront
+              </a>
             </div>
 
             {/*

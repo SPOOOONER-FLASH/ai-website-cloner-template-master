@@ -112,7 +112,7 @@ test("every declared Spanish mirror exists on disk", () => {
  * destinations, in the one component every page renders.
  *
  * The rule is narrow on purpose. It fires only when the link target HAS a mirror in that
- * locale, so /services/ and /events/ — which exist in English only — stay linkable from
+ * locale, so /events/ — which exists in English only — stays linkable from
  * every tree, exactly as they are today.
  */
 function localeHrefLeaks(locale: "es" | "pt", source: string, file: string): string[] {

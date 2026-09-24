@@ -2,6 +2,9 @@ import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { termsByGroup } from "@/lib/hardware-term-usage";
 
+/** "Backset" → "backset" inside a sentence; "UL listing" and "BHMA code" keep their capitals. */
+const soft = (t: string) => (/^\p{Lu}\p{Ll}/u.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
+
 /**
  * The glossary body.
  *
@@ -36,7 +39,7 @@ const COPY = {
     models: (n: number) =>
       n === 1 ? "1 model states it" : `${n} models state it`,
     notPublished: "a term, not a spec row",
-    read: "Read more",
+    read: (term: string) => `More on ${soft(term)}`,
   },
   es: {
     groups: {
@@ -47,7 +50,7 @@ const COPY = {
     models: (n: number) =>
       n === 1 ? "1 modelo la indica" : `${n} modelos la indican`,
     notPublished: "un término, no una fila de ficha",
-    read: "Leer más",
+    read: (term: string) => `Más sobre ${soft(term)}`,
   },
   pt: {
     groups: {
@@ -58,7 +61,7 @@ const COPY = {
     models: (n: number) =>
       n === 1 ? "1 modelo a indica" : `${n} modelos a indicam`,
     notPublished: "um termo, não uma linha de ficha",
-    read: "Ler mais",
+    read: (term: string) => `Mais sobre ${soft(term)}`,
   },
 } as const;
 
@@ -121,7 +124,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                         href={`${prefix}/news/${term.article}/`}
                         className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
                       >
-                        {copy.read}
+                        {copy.read(pick(term.term, term.termEs, term.termPt))}
                       </Link>
                     </p>
                   ) : null}

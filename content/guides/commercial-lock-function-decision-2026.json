@@ -48,7 +48,7 @@
     "A teacher needs to secure a door against the corridor. With a storeroom or entrance function, they have to step into the corridor to use the key, which is the one place the threat might be. Classroom function lets the outside trim be locked and unlocked from inside the room, so the door is secured without anyone leaving it. The inside handle always retracts the latch, so the room can still be evacuated.",
     "It is a function worth knowing by name, because a specification that describes the behavior in words usually receives an entrance function and a note.",
     "## What our catalog actually carries",
-    "Function counts across the 590 records in our catalog, from the specification rows themselves.",
+    "Function counts across the 588 records in our catalog, from the specification rows themselves.",
     "| Function | Models |\n| --- | --- |\n| Entrance, keyed outside | 78 |\n| Privacy, bathroom, turn button inside | 27 |\n| Passage | 18 |\n| Single, double cylinder or self-locking | 21 |\n| Entrance, privacy, passage or dummy (selectable) | 8 |\n| Classroom | 1 |\n| Storeroom | 1 |\n| Communication | 1 |\n| Entrance and communication | 1 |\n| Exit latch | 1 |",
     "Read that honestly and it says something specific: we are strong on entrance, privacy and passage, and we are not a broad institutional function range. If a project needs classroom and storeroom functions across forty openings, we have one model of each and you should ask before designing around us.",
     "Publishing that table is more useful than implying a full function set and discovering the gap at the schedule stage. The order-code suffix carries the function on the models that have one (`ET` entrance, `BK` privacy, `PS` passage) so `201 PBET` is model 201, polished brass, entrance.",
@@ -92,7 +92,7 @@
       },
       {
         "question": "Which functions does your catalog actually carry?",
-        "answer": "Across the 590 records in our catalog: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
+        "answer": "Across the 588 records in our catalog: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
       }
     ],
     "es": [
@@ -106,7 +106,7 @@
       },
       {
         "question": "¿Por qué existe la función de aula?",
-        "answer": "Para poder asegurar una puerta contra el pasillo sin que nadie salga al pasillo a hacerlo, que es justo donde podría estar la amenaza. La guarnición exterior se bloquea y desbloquea desde dentro de la sala, y la manija interior siempre abre el picaporte para que la sala se pueda evacuar."
+        "answer": "Para poder asegurar una puerta contra el pasillo sin que nadie salga al pasillo a hacerlo, que es justo donde podría estar la amenaza. La guarnición exterior se bloquea y desbloquea desde dentro de la sala, y la manija interior siempre abre el pestillo para que la sala se pueda evacuar."
       },
       {
         "question": "¿Es aceptable alguna vez un cerrojo de doble cilindro en un espacio ocupado?",
@@ -118,7 +118,7 @@
       },
       {
         "question": "¿Qué funciones lleva realmente su catálogo?",
-        "answer": "Sobre los 590 registros del catálogo: entrada 78, privacidad 27, paso 18, cilindro simple/doble o autobloqueo 21, función seleccionable 8, y aula, almacén, comunicación, entrada y comunicación, y salida un modelo cada una. Somos fuertes en entrada, privacidad y paso y no somos una gama institucional amplia; pregunte antes de diseñar cuarenta huecos con nosotros."
+        "answer": "Sobre los 588 registros del catálogo: entrada 78, privacidad 27, paso 18, cilindro simple/doble o autobloqueo 21, función seleccionable 8, y aula, almacén, comunicación, entrada y comunicación, y salida un modelo cada una. Somos fuertes en entrada, privacidad y paso y no somos una gama institucional amplia; pregunte antes de diseñar cuarenta huecos con nosotros."
       }
     ],
     "pt": [
@@ -144,7 +144,7 @@
       },
       {
         "question": "Que funções o seu catálogo realmente leva?",
-        "answer": "Sobre os 590 registros do catálogo: entrada 78, privacidade 27, passagem 18, cilindro simples/duplo ou autotrancamento 21, função selecionável 8, e sala de aula, depósito, comunicação, entrada e comunicação, e saída um modelo cada. Somos fortes em entrada, privacidade e passagem e não somos uma linha institucional ampla; pergunte antes de projetar quarenta vãos conosco."
+        "answer": "Sobre os 588 registros do catálogo: entrada 78, privacidade 27, passagem 18, cilindro simples/duplo ou autotrancamento 21, função selecionável 8, e sala de aula, depósito, comunicação, entrada e comunicação, e saída um modelo cada. Somos fortes em entrada, privacidade e passagem e não somos uma linha institucional ampla; pergunte antes de projetar quarenta vãos conosco."
       }
     ]
   },
@@ -161,30 +161,30 @@
     "Cualquier función que falle la segunda pregunta está mal aunque responda la primera a la perfección. Un almacén que cierra bien desde el pasillo y además encierra a alguien no es un almacén seguro: es un peligro con un buen cilindro.",
     "## La tabla de decisión",
     "Léala por sala y después contraste la función con las dos preguntas de arriba antes de escribirla en una planilla.",
-    "| Sala | Desde fuera | Desde dentro | Función |\n| --- | --- | --- | --- |\n| Pasillo, vestíbulo, circulación | Cualquiera | Siempre libre | Paso: solo picaporte, sin cierre |\n| Despacho, sala de reuniones | Cualquiera, o con llave | Siempre libre | Paso, o entrada si la sala llega a asegurarse |\n| Baño, vestuario | Indicación de ocupado | Giro para cerrar, apertura de emergencia fuera | Privacidad |\n| Entrada principal | Con llave | Siempre libre | Entrada: llave fuera, salida libre |\n| Almacén, sala técnica, servidores | Con llave, siempre cerrado | Siempre libre | Almacén, guarnición exterior siempre bloqueada, manija interior siempre abre |\n| Aula | Con llave desde dentro, para asegurar sin salir al pasillo | Siempre libre | Función de aula |\n| Escalera, vía de evacuación cortafuego | Normalmente cerrada, a veces con llave | Siempre libre, en un gesto | Barra antipánico |\n| Habitación de hotel | Llave o credencial | Siempre libre | Entrada, a menudo con anulación de privacidad |",
+    "| Sala | Desde fuera | Desde dentro | Función |\n| --- | --- | --- | --- |\n| Pasillo, vestíbulo, circulación | Cualquiera | Siempre libre | Paso: solo pestillo, sin cierre |\n| Despacho, sala de reuniones | Cualquiera, o con llave | Siempre libre | Paso, o entrada si la sala llega a asegurarse |\n| Baño, vestuario | Indicación de ocupado | Giro para cerrar, apertura de emergencia fuera | Privacidad |\n| Entrada principal | Con llave | Siempre libre | Entrada: llave fuera, salida libre |\n| Almacén, sala técnica, servidores | Con llave, siempre cerrado | Siempre libre | Almacén, guarnición exterior siempre bloqueada, manija interior siempre abre |\n| Aula | Con llave desde dentro, para asegurar sin salir al pasillo | Siempre libre | Función de aula |\n| Escalera, vía de evacuación cortafuego | Normalmente cerrada, a veces con llave | Siempre libre, en un gesto | Barra antipánico |\n| Habitación de hotel | Llave o credencial | Siempre libre | Entrada, a menudo con anulación de privacidad |",
     "## Los tres errores que son problemas de seguridad, no incomodidades",
     "Un cerrojo de doble cilindro en una vía de evacuación de espacio ocupado. Un cerrojo con llave por ambos lados exige llave para salir. A veces se especifica en una puerta vidriada para evitar que alguien rompa el vidrio y alcance la perilla interior, una amenaza real, respondida de una forma que puede atrapar personas. Donde el riesgo del vidrio es genuino, la respuesta es vidrio laminado u otra cerradura, no una llave en el interior de una vía de evacuación.",
     "Función de almacén elegida para una sala donde se trabaja: almacén es correcta precisamente porque su guarnición exterior está siempre bloqueada. Es errónea en cuanto la sala se convierte en un sitio donde alguien pasa tiempo con la puerta cerrada y un compañero la cierra detrás, no porque lo atrape, sino porque genera la costumbre de calzar la puerta, que después anula una cortafuego.",
-    "Cualquier función añadida después del ensayo de fuego: si el hueco es cortafuego, la cerradura forma parte de un conjunto ensayado, y un cambio de función que altere el picaporte es un cambio del conjunto. Nuestra página de herraje cortafuego explica qué significa eso para el certificado.",
+    "Cualquier función añadida después del ensayo de fuego: si el hueco es cortafuego, la cerradura forma parte de un conjunto ensayado, y un cambio de función que altere el pestillo es un cambio del conjunto. Nuestra página de herraje cortafuego explica qué significa eso para el certificado.",
     "## El paso es una función, no la ausencia de una",
     "El desliz más común en una puerta de pasillo es dejar la función en blanco porque la puerta no cierra con llave. En blanco no es una especificación: produce el valor por defecto del proveedor, y ese defecto lleva bocallave con frecuencia.",
-    "Paso significa que el picaporte mantiene la puerta cerrada y que ambas manijas siempre lo abren. No hay cilindro, no hay giro y no hay nada que cerrar. En una puerta que nunca debe poder asegurarse (una vía de evacuación que atraviesa una planta ocupada) especificar paso explícitamente es una decisión de seguridad y no un ahorro.",
+    "Paso significa que el pestillo mantiene la puerta cerrada y que ambas manijas siempre lo abren. No hay cilindro, no hay giro y no hay nada que cerrar. En una puerta que nunca debe poder asegurarse (una vía de evacuación que atraviesa una planta ocupada) especificar paso explícitamente es una decisión de seguridad y no un ahorro.",
     "## Privacidad: qué es realmente la apertura de emergencia exterior",
     "Un juego de privacidad cierra desde dentro con un giro o un botón y se puede abrir desde fuera en una emergencia, normalmente con una ranura para moneda, un destornillador pequeño o un pasador.",
     "Dos cosas se pasan por alto. La primera es que la apertura tiene que estar al alcance y entenderse: una que exige una herramienta que nadie en el edificio tiene es una apertura que se responderá con una palanca.",
     "La segunda es el indicador. En un baño de un edificio público, un indicador de ocupado/libre hace más trabajo que la cerradura: evita el intento en lugar de resistirlo, y es lo que impide que se forme una cola contra una puerta con alguien detrás.",
     "## La función de aula, y por qué existe",
     "Es la única función de la tabla que no se deduce de su comportamiento, y existe por un escenario concreto.",
-    "Un profesor necesita asegurar una puerta contra el pasillo. Con una función de almacén o de entrada tendría que salir al pasillo a usar la llave, que es justo el sitio donde podría estar la amenaza. La función de aula permite bloquear y desbloquear la guarnición exterior desde dentro de la sala, de modo que la puerta se asegura sin que nadie la abandone. La manija interior siempre abre el picaporte, así que la sala se puede evacuar igualmente.",
+    "Un profesor necesita asegurar una puerta contra el pasillo. Con una función de almacén o de entrada tendría que salir al pasillo a usar la llave, que es justo el sitio donde podría estar la amenaza. La función de aula permite bloquear y desbloquear la guarnición exterior desde dentro de la sala, de modo que la puerta se asegura sin que nadie la abandone. La manija interior siempre abre el pestillo, así que la sala se puede evacuar igualmente.",
     "Es una función que conviene conocer por su nombre, porque una especificación que describe el comportamiento con palabras normalmente recibe una función de entrada y una nota.",
     "## Qué lleva realmente nuestro catálogo",
-    "Recuento de funciones sobre los 590 registros de nuestro catálogo, sacado de las propias filas de especificación.",
+    "Recuento de funciones sobre los 588 registros de nuestro catálogo, sacado de las propias filas de especificación.",
     "| Función | Modelos |\n| --- | --- |\n| Entrada, llave por fuera | 78 |\n| Privacidad, baño, botón de giro por dentro | 27 |\n| Paso | 18 |\n| Cilindro simple, doble o autobloqueo | 21 |\n| Entrada, privacidad, paso o falsa (seleccionable) | 8 |\n| Aula | 1 |\n| Almacén | 1 |\n| Comunicación | 1 |\n| Entrada y comunicación | 1 |\n| Salida (exit latch) | 1 |",
     "Léalo con honestidad y dice algo concreto: somos fuertes en entrada, privacidad y paso, y no somos una gama institucional amplia. Si un proyecto necesita funciones de aula y almacén en cuarenta huecos, tenemos un modelo de cada una y conviene que pregunte antes de diseñar contando con nosotros.",
     "Publicar esa tabla es más útil que insinuar un juego completo de funciones y descubrir el hueco en la fase de planilla. El sufijo del código de pedido lleva la función en los modelos que la tienen (`ET` entrada, `BK` privacidad, `PS` paso) así que `201 PBET` es modelo 201, latón pulido, entrada.",
     "## Qué pasa cuando llega el control de accesos",
     "Una credencial electrónica no sustituye a la decisión de función: añade una segunda respuesta a la primera pregunta y deja la segunda exactamente donde estaba.",
-    "El control de accesos decide quién pasa desde fuera, una tarjeta, un código, un móvil. No decide por sí solo qué le pasa a quien está dentro, y eso lo sigue gobernando la función mecánica de la cerradura y la exigencia de que la salida sea libre, inmediata y sin necesitar nada.",
+    "El control de accesos decide quién pasa desde fuera, una tarjeta, un código, un celular. No decide por sí solo qué le pasa a quien está dentro, y eso lo sigue gobernando la función mecánica de la cerradura y la exigencia de que la salida sea libre, inmediata y sin necesitar nada.",
     "Así que el fallo que hay que vigilar es un proyecto donde la electrónica responde tan convincentemente a la primera pregunta que nadie vuelve a hacer la segunda. Una puerta bloqueada eléctricamente en una vía de evacuación necesita una salida mecánica que funcione cuando la corriente, la red y el servidor hayan desaparecido, porque esas son exactamente las condiciones en que se evacúa un edificio.",
     "Tres cosas que resolver en la especificación y no en la puesta en marcha.",
     "Fail-safe o fail-secure, hueco por hueco: el fail-safe abre al perder corriente; el fail-secure permanece cerrado. Cuál es el correcto es una decisión de seguridad de las personas y del edificio para esa puerta concreta, y dos puertas del mismo pasillo pueden ser legítimamente opuestas. No es una preferencia de producto ni una decisión de obra.",
@@ -227,7 +227,7 @@
     "Um professor precisa de trancar uma porta contra o corredor. Com uma função de armazém ou de entrada teria que sair ao corredor para usar a chave, que é justamente o lugar onde a ameaça poderia estar. A função de sala de aula permite trancar e destrancar a guarnição externa de dentro da sala, de modo que a porta é trancada sem que ninguém a abandone. A maçaneta interna sempre recolhe o trinco, então a sala pode ser evacuada na mesma.",
     "É uma função que convém conhecer pelo nome, porque uma especificação que descreve o comportamento por palavras normalmente recebe uma função de entrada e uma nota.",
     "## O que o nosso catálogo realmente leva",
-    "Contagem de funções sobre os 590 registros do nosso catálogo, tirada das próprias linhas de especificação.",
+    "Contagem de funções sobre os 588 registros do nosso catálogo, tirada das próprias linhas de especificação.",
     "| Função | Modelos |\n| --- | --- |\n| Entrada, chave pelo lado de fora | 78 |\n| Privacidade, banheiro, botão de trava por dentro | 27 |\n| Passagem | 18 |\n| Cilindro simples, duplo ou autotrancamento | 21 |\n| Entrada, privacidade, passagem ou falsa (selecionável) | 8 |\n| Sala de aula | 1 |\n| Depósito | 1 |\n| Comunicação | 1 |\n| Entrada e comunicação | 1 |\n| Saída (exit latch) | 1 |",
     "Leia isso com honestidade e diz algo concreto: somos fortes em entrada, privacidade e passagem, e não somos uma linha institucional ampla. Se um projeto precisa de funções de sala de aula e armazém em quarenta vãos, temos um modelo de cada e convém perguntar antes de projetar contando conosco.",
     "Publicar essa tabela é mais útil do que insinuar um jogo completo de funções e descobrir a lacuna na fase de planilha. O sufixo do código de pedido leva a função nos modelos que a têm (`ET` entrada, `BK` privacidade, `PS` passagem) então `201 PBET` é modelo 201, latão polido, entrada.",

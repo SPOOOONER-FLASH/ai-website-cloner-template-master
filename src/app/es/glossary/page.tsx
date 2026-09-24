@@ -29,8 +29,7 @@ export default function GlossaryPageEs() {
               Referencia
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              Las palabras de nuestras fichas técnicas, y lo que cuesta equivocarse en cada
-              una.
+              Glosario de herrajes. Las palabras de nuestras fichas técnicas, y lo que cuesta equivocarse en cada una.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">

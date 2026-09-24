@@ -87,6 +87,8 @@ const SPANISH_MIRROR_PREFIXES = [
   "/guides",
   "/documents",
   "/glossary",
+  // OEM / private-label services, 2026-09-24: Spanish copy written by the copy session.
+  "/services",
 ];
 
 /** Exact paths that mirror without their whole prefix doing so. Empty today. */
@@ -171,6 +173,8 @@ const PORTUGUESE_MIRROR_PREFIXES = [
   "/glossary",
   "/documents",
   "/guides",
+  // OEM / private-label services, 2026-09-24: Portuguese copy written by the copy session.
+  "/services",
   /*
     The newsroom, added 2026-09-17.
 

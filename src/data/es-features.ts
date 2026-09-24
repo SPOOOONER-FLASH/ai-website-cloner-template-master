@@ -29,7 +29,7 @@
  * ---------------------------------------------------------------------------
  * THE TRADE WORDS, DECIDED ONCE
  *
- *   latch bolt   → picaporte        deadbolt     → pestillo / cerrojo
+ *   latch bolt   → pestillo         deadbolt     → cerrojo   (RAE; client D1, 2026-09-24)
  *   strike       → cerradero        spindle      → cuadradillo
  *   backset      → entrada          trim         → guarnición
  *   rose         → roseta           knob         → pomo
@@ -37,7 +37,7 @@
  *   master key   → amaestramiento   cross bore   → taladro pasante
  *   zinc die-cast → zamak           thumb-turn   → botón giratorio
  *
- * These match src/data/es-glossary.ts. A second spelling of "picaporte" on the same page
+ * These match src/data/es-glossary.ts. A second spelling of "pestillo" on the same page
  * as the spec table is how a reader stops trusting both.
  */
 export const FEATURE_LINES_ES: Record<string, string> = {
@@ -63,8 +63,8 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Push Bar Features:": "Características de la barra de empuje:",
   "Multifunctional Locking Options:": "Opciones de bloqueo multifunción:",
   "Cylinder & Keys": "Cilindro y llaves",
-  "Deadbolt Mechanism": "Mecanismo de pestillo",
-  "Secure Deadbolt": "Pestillo de seguridad",
+  "Deadbolt Mechanism": "Mecanismo de cerrojo",
+  "Secure Deadbolt": "Cerrojo de seguridad",
   "Precision Cylinder": "Cilindro de precisión",
   "Reversible Design": "Diseño reversible",
 
@@ -81,15 +81,15 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Exposed trim available in stainless steel or brass":
     "Guarnición vista disponible en acero inoxidable o latón",
   "Zinc-plated steel chassis and latch for corrosion resistance":
-    "Chasis y picaporte de acero cincado, resistentes a la corrosión",
+    "Chasis y pestillo de acero cincado, resistentes a la corrosión",
   "Zinc-plated steel chassis and latch case for corrosion resistance":
-    "Chasis y caja de picaporte de acero cincado, resistentes a la corrosión",
+    "Chasis y caja de pestillo de acero cincado, resistentes a la corrosión",
   "Zinc-plated steel latch and chassis for corrosion resistance":
-    "Picaporte y chasis de acero cincado, resistentes a la corrosión",
+    "Pestillo y chasis de acero cincado, resistentes a la corrosión",
   "Zinc-plated steel latch and chassis for enhanced durability":
-    "Picaporte y chasis de acero cincado para mayor durabilidad",
+    "Pestillo y chasis de acero cincado para mayor durabilidad",
   "Zinc-plated steel chassis and latch for enhanced corrosion resistance":
-    "Chasis y picaporte de acero cincado para mayor resistencia a la corrosión",
+    "Chasis y pestillo de acero cincado para mayor resistencia a la corrosión",
   "Door Thickness: Adjustable 35–45mm (1-3/8” to 1-3/4”)":
     "Espesor de puerta: regulable de 35 a 45 mm (1-3/8” a 1-3/4”)",
   "Door Thickness: Adjustable for 35–50mm (1-3/8” to 2”) doors":
@@ -157,7 +157,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Various color options": "Distintas opciones de color",
   "Available in various colors": "Disponible en distintos colores",
   "Key-operated locking/unlocking": "Bloqueo y desbloqueo con llave",
-  "– 1/2” (13mm) latch bolt extension": "– Salida de picaporte de 1/2” (13 mm)",
+  "– 1/2” (13mm) latch bolt extension": "– Salida de pestillo de 1/2” (13 mm)",
   "– Adjustable backset: 2-3/8” or 2-3/4” (60mm or 70mm)":
     "– Entrada regulable: 2-3/8” o 2-3/4” (60 o 70 mm)",
   "– Fits standard 2” (51mm) cross bore":
@@ -191,18 +191,18 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Adjustable length to fit door width":
     "Longitud regulable para ajustarse al ancho de la puerta",
   "Latch Bolt: 12mm (1/2”) throw, dead-locking on keyed models":
-    "Picaporte: salida de 12 mm (1/2”), con bloqueo en los modelos con llave",
+    "Pestillo: salida de 12 mm (1/2”), con bloqueo en los modelos con llave",
   "Latch Bolt: 12mm (1/2”) throw, dead-locking for keyed models":
-    "Picaporte: salida de 12 mm (1/2”), con bloqueo en los modelos con llave",
+    "Pestillo: salida de 12 mm (1/2”), con bloqueo en los modelos con llave",
   "Latch Bolt: 1/2” (12mm) throw with deadlocking for keyed functions":
-    "Picaporte: salida de 1/2” (12 mm) con bloqueo en las funciones con llave",
+    "Pestillo: salida de 1/2” (12 mm) con bloqueo en las funciones con llave",
   "Latch Bolt: 12mm (1/2”) throw, deadlocking for keyed functions":
-    "Picaporte: salida de 12 mm (1/2”) con bloqueo en las funciones con llave",
+    "Pestillo: salida de 12 mm (1/2”) con bloqueo en las funciones con llave",
   "Latch Bolt: 12mm (1/2”) throw; dead-locking for keyed versions":
-    "Picaporte: salida de 12 mm (1/2”); con bloqueo en las versiones con llave",
+    "Pestillo: salida de 12 mm (1/2”); con bloqueo en las versiones con llave",
   "Latch: 12mm (1/2”) throw, dead-locking for keyed functions":
-    "Picaporte: salida de 12 mm (1/2”), con bloqueo en las funciones con llave",
-  "Deadlocking latch bolt": "Picaporte con bloqueo",
+    "Pestillo: salida de 12 mm (1/2”), con bloqueo en las funciones con llave",
+  "Deadlocking latch bolt": "Pestillo con bloqueo",
   "• Keyed alike with deadbolt series": "• Misma llave que la serie de cerrojos",
   "• Group keying for convenience": "• Llave por grupos, para mayor comodidad",
   "• Master keyed for facility or family use":
@@ -214,9 +214,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
     "• Amaestramiento disponible para uso familiar o de edificio",
   "Flexible Keying –": "Sistema de llaves flexible:",
   "Corrosion Resistance – Zinc-plated solid steel chassis & latch case":
-    "Resistencia a la corrosión: chasis y caja de picaporte de acero macizo cincado",
+    "Resistencia a la corrosión: chasis y caja de pestillo de acero macizo cincado",
   "Corrosion Resistant – Zinc-plated steel chassis and latch case":
-    "Resistente a la corrosión: chasis y caja de picaporte de acero cincado",
+    "Resistente a la corrosión: chasis y caja de pestillo de acero cincado",
   "High-Security Cylinder – 5-pin tumbler with brass plug and 2 nickel-plated brass keys":
     "Cilindro de alta seguridad: 5 pitones, núcleo de latón y 2 llaves de latón niquelado",
   "Secure Cylinder – 5-pin tumbler with brass plug and 2 nickel-plated brass keys":
@@ -226,13 +226,13 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Refined Appearance – Zinc die-cast or solid brass trim with electroplated finish":
     "Acabado cuidado: guarnición de zamak o latón macizo con acabado electrochapado",
   "Optional: 1” round drive-in 4-way latch":
-    "Opcional: picaporte redondo de 1” de clavar, de 4 posiciones",
+    "Opcional: pestillo redondo de 1” de clavar, de 4 posiciones",
   "Optional: 1” round drive-in 4-way latch available":
-    "Opcional: disponible picaporte redondo de 1” de clavar, de 4 posiciones",
+    "Opcional: disponible pestillo redondo de 1” de clavar, de 4 posiciones",
   "Optional Latch: 1” round drive-in 4-way latch (upon request)":
-    "Picaporte opcional: redondo de 1” de clavar, de 4 posiciones (bajo pedido)",
+    "Pestillo opcional: redondo de 1” de clavar, de 4 posiciones (bajo pedido)",
   "Drive-In Latch: Optional 1” round 4-way latch":
-    "Picaporte de clavar: opcional, redondo de 1” y 4 posiciones",
+    "Pestillo de clavar: opcional, redondo de 1” y 4 posiciones",
   "Interior parts: Zinc-plated steel": "Piezas interiores: acero cincado",
   "Internal parts made of zinc-plated steel for durability":
     "Piezas internas de acero cincado, para mayor durabilidad",
@@ -244,9 +244,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
     "La guarnición del cilindro gira libremente y resiste los ataques con llave de tubo",
   "Free-spinning cylinder trim protects against wrench attacks":
     "La guarnición del cilindro gira loca y protege frente a ataques con llave de tubo",
-  "1” (25mm) zinc die-cast bolt": "Pestillo de zamak de 1” (25 mm)",
+  "1” (25mm) zinc die-cast bolt": "Cerrojo de zamak de 1” (25 mm)",
   "1-inch (25mm) throw bolt made of zinc alloy":
-    "Pestillo de 1 pulgada (25 mm) de recorrido, en aleación de zinc",
+    "Cerrojo de 1 pulgada (25 mm) de recorrido, en aleación de zinc",
   "Hardened steel roller insert enhances resistance to sawing":
     "El rodillo de acero templado mejora la resistencia al serrado",
   "Hardened steel roller insert improves anti-sawing performance":
@@ -315,7 +315,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Suitable for wooden or metal doors (interior/exterior)":
     "Apta para puertas de madera o metálicas (interiores o exteriores)",
   "Secure deadbolt and bronze slide latch system":
-    "Pestillo de seguridad y sistema de pasador de bronce",
+    "Cerrojo de seguridad y sistema de pasador de bronce",
   "Includes rectangular steel pin for added strength":
     "Incluye pasador rectangular de acero para mayor resistencia",
   "Classic key operation with separate cylinder":
@@ -331,7 +331,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
     "Varios acabados disponibles para combinar con el interiorismo",
 
   "US type 3-latch construction, long-lasting performance":
-    "Construcción americana de 3 picaportes, de larga duración",
+    "Construcción americana de 3 pestillos, de larga duración",
   "Zinc alloy handle & rose, strong and durable":
     "Manija y roseta de aleación de zinc, resistentes y duraderas",
   "Corrosion-resistant plated finish":
@@ -357,7 +357,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "• American-style brass cylinder for smooth key operation":
     "• Cilindro de latón de tipo americano, de giro suave",
   "• Multiple bolt configurations to meet different door requirements":
-    "• Varias configuraciones de pestillo, para distintas exigencias de puerta",
+    "• Varias configuraciones de cerrojo, para distintas exigencias de puerta",
   "• Concealed structure for clean appearance and secure installation":
     "• Estructura oculta, de aspecto limpio e instalación segura",
   "• Suitable for aluminum narrow doors and commercial door systems":
@@ -501,7 +501,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Exposed half-arm steel body design":
     "Diseño de cuerpo de acero visto, de medio brazo",
   "Adjustable length and bolt height to fit various door sizes":
-    "Longitud y altura del pestillo regulables para distintos tamaños de puerta",
+    "Longitud y altura del cerrojo regulables para distintos tamaños de puerta",
   "Safety lock mechanism":
     "Mecanismo de bloqueo de seguridad",
   "Exposed type design":
@@ -555,7 +555,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "• Key locks from outside only; unlocks via handle/key outside and panic device inside":
     "• La llave bloquea solo desde fuera; se desbloquea con manija o llave desde fuera y con el dispositivo antipánico desde dentro",
   "• Key retracts latch bolt from outside; opens with panic bar from inside":
-    "• La llave recoge el picaporte desde fuera; desde dentro se abre con la barra antipánico",
+    "• La llave recoge el pestillo desde fuera; desde dentro se abre con la barra antipánico",
   "• Center distance optional 72mm / 92mm":
     "• Distancia entre ejes opcional de 72 mm / 92 mm",
   "• Spindle size 9mm.":
@@ -612,7 +612,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Angled strike (standard) for inward-opening doors":
     "Cerradero angular (de serie) para puertas de apertura hacia dentro",
   "Single Cylinder: Key and inside knob operate latch, with anti-pick slide gate":
-    "Cilindro simple: la llave y la perilla interior accionan el picaporte, con pletina antiganzúa",
+    "Cilindro simple: la llave y la perilla interior accionan el pestillo, con pletina antiganzúa",
   "Double Cylinder: Key operation from both sides":
     "Doble cilindro: accionamiento con llave por ambos lados",
   "Double Cylinder: Operated by key on both sides":
@@ -656,13 +656,13 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Full turn of key locks or unlocks":
     "Una vuelta completa de llave bloquea o desbloquea",
   "Latch operated by both knobs; inside knob always free":
-    "El picaporte se acciona con ambas perillas; la perilla interior queda siempre libre",
+    "El pestillo se acciona con ambas perillas; la perilla interior queda siempre libre",
   "Outside knob locked/unlocked by key in inside cylinder":
     "La perilla exterior se bloquea y desbloquea con llave desde el cilindro interior",
   "Latch automatically deadlocks when door is closed":
-    "El picaporte se autobloquea al cerrar la puerta",
+    "El pestillo se autobloquea al cerrar la puerta",
   "Latch automatically deadlocks when closed":
-    "El picaporte se autobloquea al cerrarse",
+    "El pestillo se autobloquea al cerrarse",
   "Ideal for communicating or exit doors with one-side operation":
     "Ideal para puertas de comunicación o de salida con accionamiento por un solo lado",
   "Suitable for doors with limited space near switch panels":
@@ -672,7 +672,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Recommended for rooms with multiple entrances":
     "Recomendada para estancias con varias entradas",
   "Inside knob operates latch":
-    "La perilla interior acciona el picaporte",
+    "La perilla interior acciona el pestillo",
   "Outside knob always fixed; operated by key only":
     "La perilla exterior está siempre fijo; solo se acciona con llave",
   "Security: 5-pin tumbler brass cylinder with two nickel-plated brass keys":
@@ -702,21 +702,21 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Supports master keying for family or facility needs":
     "Admite amaestramiento para necesidades familiares o de edificio",
   "Solid steel chassis and zinc-plated latch case for corrosion resistance":
-    "Chasis de acero macizo y caja de picaporte cincada, resistentes a la corrosión",
+    "Chasis de acero macizo y caja de pestillo cincada, resistentes a la corrosión",
   "Solid steel chassis and latch case, zinc-plated for corrosion resistance":
-    "Chasis y caja de picaporte de acero macizo, cincados para resistir la corrosión",
+    "Chasis y caja de pestillo de acero macizo, cincados para resistir la corrosión",
   "Latch bolt operated by key (outside) or knob (inside)":
-    "El picaporte se acciona con llave (desde fuera) o con la perilla (desde dentro)",
+    "El pestillo se acciona con llave (desde fuera) o con la perilla (desde dentro)",
   "Outside knob remains fixed":
     "La perilla exterior permanece fijo",
   "Inside knob locked/unlocked by key from inside":
     "La perilla interior se bloquea y desbloquea con llave desde dentro",
   "Latch bolt auto-deadlocks when door is closed":
-    "El picaporte se autobloquea al cerrar la puerta",
+    "El pestillo se autobloquea al cerrar la puerta",
   "Latch Bolt: 12mm (1/2”) throw with deadlocking":
-    "Picaporte: salida de 12 mm (1/2”) con bloqueo",
+    "Pestillo: salida de 12 mm (1/2”) con bloqueo",
   "Latch Bolt: 12mm (1/2”) throw; dead-locking for keyed function":
-    "Picaporte: salida de 12 mm (1/2”); con bloqueo en la función con llave",
+    "Pestillo: salida de 12 mm (1/2”); con bloqueo en la función con llave",
   "Door Thickness: 35–50mm (1-3/8” to 2”), adjustable":
     "Espesor de puerta: 35–50 mm (1-3/8” a 2”), regulable",
   "Door Thickness: 35–45mm (1-3/8” to 1-3/4”)":
@@ -754,7 +754,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Easy exposed mounting for versatile use":
     "Montaje visto sencillo, para usos muy diversos",
   "Optional Latch: 1” round drive-in 4-way latch upon request":
-    "Picaporte opcional: redondo de 1” de clavar y 4 posiciones, bajo pedido",
+    "Pestillo opcional: redondo de 1” de clavar y 4 posiciones, bajo pedido",
   "Economical and easy-to-install lockset, ideal for residential use":
     "Juego de cerradura económico y fácil de instalar, ideal para uso residencial",
   "Economical, easy-to-install lockset for residential use":
@@ -762,13 +762,13 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Economical and easy-to-install, ideal for residential use":
     "Económico y fácil de instalar, ideal para uso residencial",
   "– 1” (25mm) deadbolt with hardened steel insert resists sawing":
-    "– Pestillo de 1” (25 mm) con inserto de acero templado que resiste el serrado",
+    "– Cerrojo de 1” (25 mm) con inserto de acero templado que resiste el serrado",
   "– 1” (25mm) deadbolt with hardened steel insert":
-    "– Pestillo de 1” (25 mm) con inserto de acero templado",
+    "– Cerrojo de 1” (25 mm) con inserto de acero templado",
   "– 1” (25mm) solid deadbolt with hardened steel insert":
-    "– Pestillo macizo de 1” (25 mm) con inserto de acero templado",
+    "– Cerrojo macizo de 1” (25 mm) con inserto de acero templado",
   "– 1” (25mm) steel-reinforced deadbolt":
-    "– Pestillo de 1” (25 mm) reforzado con acero",
+    "– Cerrojo de 1” (25 mm) reforzado con acero",
   "– Free-spinning cylinder collar prevents wrenching":
     "– El collarín del cilindro gira libremente e impide arrancarlo con llave de tubo",
   "– Free-spinning cylinder ring prevents wrenching":
@@ -837,7 +837,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Locking: turn thumb-turn counter-clockwise or key clockwise; unlock in reverse":
     "Bloqueo: gire el botón en sentido antihorario o la llave en sentido horario; para desbloquear, al revés",
   "Zinc-plated steel chassis and latch for durability and corrosion resistance":
-    "Chasis y picaporte de acero cincado, para durabilidad y resistencia a la corrosión",
+    "Chasis y pestillo de acero cincado, para durabilidad y resistencia a la corrosión",
   "Trim options: stainless steel or brass":
     "Opciones de guarnición: acero inoxidable o latón",
   "Trim available in stainless steel or brass":
@@ -879,9 +879,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Economical and durable auxiliary deadbolt":
     "Cerrojo auxiliar económico y duradero",
   "25mm (1”) zinc die-cast deadbolt with hardened steel roller insert for anti-saw protection":
-    "Pestillo de zamak de 25 mm (1”) con inserto de rodillo de acero templado, como protección frente al serrado",
+    "Cerrojo de zamak de 25 mm (1”) con inserto de rodillo de acero templado, como protección frente al serrado",
   "25mm (1”) zinc die-cast bolt with hardened steel roller insert for anti-saw protection":
-    "Pestillo de zamak de 25 mm (1”) con inserto de rodillo de acero templado, como protección frente al serrado",
+    "Cerrojo de zamak de 25 mm (1”) con inserto de rodillo de acero templado, como protección frente al serrado",
   "Free-turning cylinder trim prevents wrenching":
     "La guarnición del cilindro gira libremente e impide arrancarlo con llave de tubo",
   "Free-turning cylinder trim to prevent wrenching":
@@ -903,15 +903,15 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Deadbolt Series":
     "Serie de cerrojos",
   "A durable and cost-effective auxiliary lock featuring a 25mm (1”) zinc die-cast bolt with a hardened steel roller insert for added resistance against sawing and forced entry.":
-    "Cerradura auxiliar duradera y de buena relación calidad-precio, con pestillo de zamak de 25 mm (1”) e inserto de rodillo de acero templado que añade resistencia al serrado y a la entrada forzada.",
+    "Cerradura auxiliar duradera y de buena relación calidad-precio, con cerrojo de zamak de 25 mm (1”) e inserto de rodillo de acero templado que añade resistencia al serrado y a la entrada forzada.",
   "•Reinforced Construction":
     "•Construcción reforzada",
   "Internal components are made of zinc-plated steel. External trims are available in stainless steel, brass, or steel options. The free-turning trim design helps resist wrenching and tampering.":
     "Los componentes internos son de acero cincado. Las guarniciones exteriores están disponibles en acero inoxidable, latón o acero. El diseño de guarnición de giro libre ayuda a resistir el arranque y la manipulación.",
   "•Heavy-Duty Deadbolt":
-    "•Pestillo de uso intensivo",
+    "•Cerrojo de uso intensivo",
   "Equipped with a full 25mm throw deadbolt and hardened steel roller, engineered to withstand high-impact attacks and sawing.":
-    "Lleva un pestillo con 25 mm de salida completa y rodillo de acero templado, calculado para aguantar golpes fuertes y el serrado.",
+    "Lleva un cerrojo con 25 mm de salida completa y rodillo de acero templado, calculado para aguantar golpes fuertes y el serrado.",
   "•Secure Cylinder & Key System":
     "•Cilindro y sistema de llave seguros",
   "Features a 5-pin tumbler mechanism with a solid brass plug, allowing for easy rekeying. Comes with two nickel-plated brass keys.":
@@ -959,7 +959,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Adjustment: Latch speed and closing speed adjustable via built-in screws":
     "Regulación: velocidad de acuñado y velocidad de cierre regulables mediante tornillos integrados",
   "Function: 13mm latch extension with inside deadlocking button to prevent outside key operation and latch picking":
-    "Funcionamiento: picaporte con 13 mm de salida y botón de bloqueo interior, que impide el accionamiento con llave desde fuera y la manipulación del picaporte",
+    "Funcionamiento: pestillo con 13 mm de salida y botón de bloqueo interior, que impide el accionamiento con llave desde fuera y la manipulación del pestillo",
   "Packing: Blister or color box":
     "Embalaje: blíster o caja de color",
   "G.W.: 16kg / N.W.: 15kg":
@@ -975,7 +975,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Clean Surface: Wipe the installation area on the glass with a damp cloth.":
     "Limpie la superficie: pase un paño húmedo por la zona del vidrio donde se va a instalar.",
   "Position the Lock: Select the correct position and check that the latch operates smoothly.":
-    "Sitúe la cerradura: elija la posición correcta y compruebe que el picaporte se mueve con suavidad.",
+    "Sitúe la cerradura: elija la posición correcta y compruebe que el pestillo se mueve con suavidad.",
   "Attach Plate A:":
     "Coloque la placa A:",
   "Use the clamp plates to secure the lock.":
@@ -989,11 +989,11 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Push forward firmly, then secure with two screws.":
     "Empuje con firmeza hacia delante y fíjela después con dos tornillos.",
   "Stainless Steel Door Latch Guard, durable material with satin finish, strong and corrosion resistant for long term use":
-    "Protector de picaporte de acero inoxidable, material duradero con acabado satinado, resistente y anticorrosión para un uso prolongado",
+    "Protector de pestillo de acero inoxidable, material duradero con acabado satinado, resistente y anticorrosión para un uso prolongado",
   "Anti Pry Door Security Plate, reinforces the latch area to prevent forced entry and improve door security":
-    "Placa de seguridad antipalanca, refuerza la zona del picaporte para impedir la entrada forzada y mejorar la seguridad de la puerta",
+    "Placa de seguridad antipalanca, refuerza la zona del pestillo para impedir la entrada forzada y mejorar la seguridad de la puerta",
   "Full Latch Coverage Design, effectively blocks latch bolt access and makes it difficult to pry open the door":
-    "Diseño de cobertura completa del picaporte, que bloquea el acceso al resbalón y dificulta apalancar la puerta",
+    "Diseño de cobertura completa del pestillo, que bloquea el acceso al pestillo y dificulta apalancar la puerta",
   "Heavy Duty Construction, thick and solid structure provides reliable protection for residential and commercial doors":
     "Construcción de uso intensivo, estructura gruesa y sólida que protege con fiabilidad puertas residenciales y comerciales",
   "Easy Installation, quick screw fixing installation, suitable for most outswing doors without complex tools":
@@ -1007,9 +1007,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Key Features：":
     "Características principales:",
   "• Deadlatch security design for enhanced anti-pry protection":
-    "• Diseño de picaporte con bloqueo, para una mayor protección antipalanca",
+    "• Diseño de pestillo con bloqueo, para una mayor protección antipalanca",
   "• Durable iron body with zinc alloy + ABS latch":
-    "• Cuerpo de hierro duradero con picaporte de aleación de zinc y ABS",
+    "• Cuerpo de hierro duradero con pestillo de aleación de zinc y ABS",
   "• Double & single cylinder configurations available":
     "• Disponible en configuración de cilindro simple y doble cilindro",
   "• Hold-back function for smooth door operation":
@@ -1017,15 +1017,15 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "• Ideal for aluminum storefront and narrow frame doors":
     "• Ideal para puertas de escaparate de aluminio y de perfil estrecho",
   "This narrow stile deadlatch lock is designed for aluminum storefront doors and narrow frame systems, offering reliable security and smooth operation for commercial applications.":
-    "Esta cerradura de picaporte con bloqueo para perfil estrecho está pensada para puertas de escaparate de aluminio y sistemas de perfil estrecho, y ofrece seguridad fiable y un accionamiento suave en aplicaciones comerciales.",
+    "Esta cerradura de pestillo con bloqueo para perfil estrecho está pensada para puertas de escaparate de aluminio y sistemas de perfil estrecho, y ofrece seguridad fiable y un accionamiento suave en aplicaciones comerciales.",
   "Built with a durable iron body, zinc alloy + ABS latch, and auxiliary deadlatch structure, it provides strong anti-pry performance and long service life.":
-    "Construida con cuerpo de hierro duradero, picaporte de aleación de zinc y ABS y estructura auxiliar de bloqueo, ofrece un buen comportamiento antipalanca y una larga vida útil.",
+    "Construida con cuerpo de hierro duradero, pestillo de aleación de zinc y ABS y estructura auxiliar de bloqueo, ofrece un buen comportamiento antipalanca y una larga vida útil.",
   "Widely used in storefront doors, glass doors, and commercial entry systems.":
     "Muy utilizada en puertas de escaparate, puertas de vidrio y accesos comerciales.",
   "This commercial aluminum storefront door push-pull paddle lock set is designed for aluminum glass doors, shop doors, office doors, and commercial entrances.":
     "Este juego de cerradura de manetas de empujar y tirar para puerta de escaparate de aluminio está pensado para puertas de vidrio con perfil de aluminio, puertas de tienda, puertas de oficina y accesos comerciales.",
   "Left-hand and right-hand options are available. The hold-back function keeps the latch retracted when needed, allowing convenient access during business hours and high-traffic periods.":
-    "Hay versión de mano izquierda y de mano derecha. La función de retención mantiene el picaporte recogido cuando hace falta, lo que facilita el paso en horario comercial y en momentos de mucho tránsito.",
+    "Hay versión de mano izquierda y de mano derecha. La función de retención mantiene el pestillo recogido cuando hace falta, lo que facilita el paso en horario comercial y en momentos de mucho tránsito.",
   "With complete accessories and easy installation, this lock set is ideal for storefront door replacement, project installation, commercial door hardware, and aluminum glass door applications.":
     "Con accesorios completos e instalación sencilla, este juego es ideal para sustituir cerraduras de puerta de escaparate, para montaje en obra, como herraje de puerta comercial y en puertas de vidrio con perfil de aluminio.",
   "American-style storefront door lock body with durable iron construction for reliable and stable commercial security performance.":
@@ -1033,7 +1033,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Equipped with an American-style brass mortise cylinder for smooth key operation and dependable locking performance.":
     "Equipada con cilindro de embutir de latón de tipo americano, de giro de llave suave y cierre fiable.",
   "Available with Flat Swing Bolt, Hook Bolt, and Spring Loaded Deadlatch options for different aluminum door applications.":
-    "Disponible con pestillo basculante plano, pestillo de gancho y picaporte con bloqueo por muelle, para distintas aplicaciones de puerta de aluminio.",
+    "Disponible con cerrojo basculante plano, cerrojo de gancho y pestillo con bloqueo por muelle, para distintas aplicaciones de puerta de aluminio.",
   "Suitable for storefront doors, narrow stile aluminum doors, sliding doors, fast-food restaurant door systems such as KFC doors, and commercial glass door systems.":
     "Apta para puertas de escaparate, puertas de aluminio de perfil estrecho, puertas correderas, sistemas de puerta de restaurantes de comida rápida como los de KFC y sistemas de puerta de vidrio comercial.",
   "Anti-pry lock body design enhances security for shops, offices, commercial buildings, and storefront entrances.":
@@ -1047,15 +1047,15 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Compatible with narrow stile aluminum door frames and commercial storefront door systems.":
     "Compatible con marcos de puerta de aluminio de perfil estrecho y con sistemas de puerta de escaparate comercial.",
   "OEM & ODM customization supported for lock body size, bolt structure, finish, and packaging.":
-    "Se admite personalización OEM y ODM del tamaño del cuerpo de cerradura, la estructura del pestillo, el acabado y el embalaje.",
+    "Se admite personalización OEM y ODM del tamaño del cuerpo de cerradura, la estructura del cerrojo, el acabado y el embalaje.",
   "Suitable for wooden doors, metal doors, fire doors, windows, and cabinet doors, this hinge is widely used in residential, commercial, hotel, office, warehouse, and industrial applications.":
     "Apta para puertas de madera, puertas metálicas, puertas cortafuego, ventanas y puertas de mueble, esta bisagra se utiliza ampliamente en aplicaciones residenciales, comerciales, hoteleras, de oficina, de almacén e industriales.",
   "Multiple sizes and customization options are available for OEM and ODM projects.":
     "Hay varias medidas y opciones de personalización disponibles para proyectos OEM y ODM.",
   "Structure: Beveled latch design with 13mm latch throw and 25mm full-throw deadbolt":
-    "Estructura: picaporte biselado con 13 mm de salida y pestillo de 25 mm de salida completa",
+    "Estructura: pestillo biselado con 13 mm de salida y cerrojo de 25 mm de salida completa",
   "Function: Inside deadlocking button prevents external key operation and latch picking":
-    "Funcionamiento: el botón de bloqueo interior impide el accionamiento con llave desde fuera y la manipulación del picaporte",
+    "Funcionamiento: el botón de bloqueo interior impide el accionamiento con llave desde fuera y la manipulación del pestillo",
   "Finish: Painted":
     "Acabado: pintado",
   "Application: Economical and secure solution for exterior wooden doors":

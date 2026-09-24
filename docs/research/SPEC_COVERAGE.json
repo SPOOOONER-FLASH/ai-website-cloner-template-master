@@ -1,15 +1,15 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
   "site": "hyde",
-  "totalProducts": 590,
+  "totalProducts": 588,
   "fields": {
     "backset": {
       "title": "Backset",
       "labels": [
         "Backset"
       ],
-      "products": 175,
-      "rows": 175,
+      "products": 180,
+      "rows": 180,
       "distinctValues": 31
     },
     "centreDistance": {
@@ -21,9 +21,9 @@
         "Center distance, horizontal",
         "Center distance, vertical"
       ],
-      "products": 36,
-      "rows": 71,
-      "distinctValues": 13
+      "products": 42,
+      "rows": 83,
+      "distinctValues": 14
     },
     "pullHandlePitch": {
       "title": "Pull handle fixing pitch (P=)",
@@ -71,9 +71,9 @@
         "Faceplate",
         "Face plate"
       ],
-      "products": 6,
-      "rows": 6,
-      "distinctValues": 6
+      "products": 8,
+      "rows": 8,
+      "distinctValues": 8
     },
     "finish": {
       "title": "Finish",

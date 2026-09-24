@@ -55,17 +55,15 @@ export default function ServicioDescargasPage() {
           <div className="col-span-full xl:col-span-10">
             <p className="text-c1 text-ink-secondary">Biblioteca técnica</p>
             <h1 id="downloads-title" className="mt-8 text-h1 text-ink">
-              Servicio y descargas
+              Catálogo y descargas técnicas
             </h1>
           </div>
           <div className="col-span-full xl:col-span-10 xl:col-start-13">
             <p className="text-h3 text-ink">
-              Catálogos y documentos de respaldo para la revisión de proyecto.
+              Lo que puede descargar ahora, y lo que enviamos a pedido.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              Hay {downloads.length} archivo(s) disponible(s) para descarga directa. Las
-              fichas técnicas, guías de instalación y archivos CAD y BIM se emiten contra
-              un pliego de proyecto confirmado.
+              Aquí hay {downloads.length} archivos para descargar ahora. Las fichas técnicas, guías de instalación y archivos CAD o BIM se envían para un modelo concreto de un proyecto real, para poder comprobarlos antes contra la producción actual.
             </p>
           </div>
         </div>
@@ -119,11 +117,10 @@ export default function ServicioDescargasPage() {
             <div className="grid grid-cols gap-x gap-y-24">
               <div className="col-span-full xl:col-span-7">
                 <h2 id="certificate-title" className="text-h3 text-ink">
-                  Informes de ensayo y certificados
+                  Qué está ensayado, y a nombre de quién
                 </h2>
                 <p className="mt-16 text-c1 text-ink-secondary">
-                  Hay tres registros HYDE disponibles para verificación. Cada uno conserva
-                  su alcance exacto de modelo; no certifica otros productos del catálogo.
+                  {certificates.length} registros, cada uno con el único modelo que cubre. El informe de un modelo no cubre otro. Pida una copia y se la enviaremos completa, como exige el emisor.
                 </p>
               </div>
               <ul className="col-span-full divide-y divide-line border-t border-line xl:col-span-15 xl:col-start-10">
@@ -172,9 +169,7 @@ export default function ServicioDescargasPage() {
               </div>
               <div className="col-span-full xl:col-span-15 xl:col-start-10">
                 <p className="max-w-[68rem] text-c1 text-ink">
-                  Envíe el modelo, la preparación de puerta y el formato que necesita.
-                  Nuestro equipo confirmará si existe ficha técnica, guía de instalación,
-                  plano CAD u objeto BIM.
+                  Envíe el modelo, la preparación de puerta y el formato que necesita. Le diremos si existe ficha técnica, guía de instalación, plano CAD u objeto BIM para ese modelo, y si no existe, se lo diremos claramente.
                 </p>
                 <Link
                   href="/es/contact/?subject=technical-document"

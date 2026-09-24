@@ -5,9 +5,9 @@ import { CompanyOverview } from "@/components/site/CompanyOverview";
 export const metadata: Metadata = pageMetadata({
   enPath: "/company",
   locale: "en",
-  title: "Company — Door Hardware Manufacturer",
+  title: "Door Hardware Manufacturer in Xiaolan, China, Since 1998",
   description:
-    "Door lock and architectural hardware manufacturing in Guangdong, China since 1998. ISO 9001 certified since 2002, with OEM production for export markets.",
+    "Door lock and architectural hardware made in Xiaolan since 1998. ISO 9001 certified since 2002, with OEM and private-label production for export.",
 });
 
 export default function CompanyPage() {
