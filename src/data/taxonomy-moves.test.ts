@@ -27,7 +27,7 @@ test("the 2026-09-02 review placements still hold", () => {
   assert.deepEqual(product("600-concealed-sliding-door-handle").categoryPath, [
     "stainless-steel-handles",
   ]);
-  assert.deepEqual(product("ansi-grade-3-keyed-deadbolt-lock-set").categoryPath, [
+  assert.deepEqual(product("keyed-deadbolt-lock-set").categoryPath, [
     "grip-handle-sets",
   ]);
 });

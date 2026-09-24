@@ -235,7 +235,10 @@ for (const p of JSON_FILES) {
   const next = walk(JSON.parse(raw));
   if (JSON.stringify(JSON.parse(raw)) !== JSON.stringify(next)) put(p, raw, `${JSON.stringify(next, null, 2)}\n`);
 }
-for (const p of KEYED_FILES) {
+// Write mode only. RAYEN adds atlas-spelled keys here in its own daily work; a HYDE spelling
+// check failing their commits would put our rule in their lane. The mirror test
+// (src/lib/chinese-mirror.test.ts) already fails if a label the site uses has no entry.
+for (const p of CHECK ? [] : KEYED_FILES) {
   // Line-level, so the file's own layout survives: after each `"British key": value` line,
   // add the same line with the American key unless it already exists. Both are kept
   // (RAYEN session, 2026-09-24): RAYEN-only records keep the atlas spelling.
