@@ -37,6 +37,41 @@ import { join } from "node:path";
 const DIR = "content/products";
 const write = process.argv.includes("--write");
 const namesOnly = process.argv.includes("--names-only");
+
+/*
+  --only <models>: restrict the run to a comma-separated list of models or slugs.
+
+  Added 2026-09-24. The block at the write below explains at length why a full re-run is
+  unsafe on this catalogue, and then leaves the reader with no way to do the safe thing:
+  until now the only switches were everything or --names-only, so a three-record fix meant
+  regenerating 1,089 records and reading the diff to prove it had not undone anything. That
+  is the operation that reverted 830 spec rows on 2026-09-11.
+
+  "A targeted change gets a targeted write" needs a targeted write to exist. This is it.
+  Records outside the list are not read, not composed and not written, so they cannot be
+  touched however stale the glossary is relative to what review has since improved.
+*/
+const only = (() => {
+  const i = process.argv.indexOf("--only");
+  if (i === -1) return null;
+  const list = (process.argv[i + 1] ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (!list.length) {
+    throw new Error("--only needs a comma-separated list of models or slugs, e.g. --only 306-D,306-S");
+  }
+  return new Set(list.map((s) => s.toLowerCase()));
+})();
+
+/** True when --only was not given, or when this record is one of the ones named. */
+function selected(product) {
+  if (!only) return true;
+  return (
+    only.has(String(product.model ?? "").toLowerCase()) ||
+    only.has(String(product.slug ?? "").toLowerCase())
+  );
+}
 const showAll = process.argv.includes("--all");
 
 /* ------------------------------------------------------------------ glossary ---- */
@@ -254,6 +289,7 @@ const unnamed = [];
 for (const file of files) {
   const path = join(DIR, file);
   const product = JSON.parse(readFileSync(path, "utf8"));
+  if (!selected(product)) continue;
 
   const name = String(product.name ?? "").trim();
   const namePt = glossary.names[name];
