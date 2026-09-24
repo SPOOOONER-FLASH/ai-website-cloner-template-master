@@ -53,8 +53,8 @@ test("menu variants keep the real bilingual discovery and evidence routes", () =
       assert.ok(hrefs.includes(`${prefix}/company/`));
       assert.ok(hrefs.includes(`${prefix}/downloads/`));
       assert.ok(hrefs.includes(`${prefix}/certifications/`));
-      assert.ok(hrefs.includes("/services/"));
-      assert.doesNotMatch(hrefs.join("\n"), /\/es\/services\//);
+      // Services gained a Spanish page on 2026-09-24, so the Spanish drawer stays in /es/.
+      assert.ok(hrefs.includes(`${prefix}/services/`));
     }
   }
 });
