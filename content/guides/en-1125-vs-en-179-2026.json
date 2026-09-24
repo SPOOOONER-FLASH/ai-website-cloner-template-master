@@ -116,11 +116,11 @@
       },
       {
         "question": "¿Qué hace que un hueco de evacuación deje de cumplir después de construido?",
-        "answer": "Casi siempre algo añadido a la cara interior: un pestillo secundario, una hembrilla para candado, una cadena, una anulación con llave, montados después por alguien resolviendo un problema de seguridad. Cada uno añade un gesto entre una persona y la salida, y las dos normas existen para garantizar exactamente un gesto. Escríbalo en los documentos de entrega."
+        "answer": "Casi siempre algo añadido a la cara interior: un pasador adicional, una hembrilla para candado, una cadena, una anulación con llave, montados después por alguien resolviendo un problema de seguridad. Cada uno añade un gesto entre una persona y la salida, y las dos normas existen para garantizar exactamente un gesto. Escríbalo en los documentos de entrega."
       },
       {
-        "question": "¿Pueden los pestillos embutidos asegurar la hoja pasiva de una salida de dos hojas?",
-        "answer": "Solo si la hoja activa por sí sola da el ancho libre exigido. Si la pasiva debe abrir, necesita su propio dispositivo: un pestillo exige un segundo gesto, que es justo lo que las dos normas existen para eliminar. Un par necesita además un selector para que las hojas cierren en el orden correcto."
+        "question": "¿Pueden los pasadores embutidos asegurar la hoja pasiva de una salida de dos hojas?",
+        "answer": "Solo si la hoja activa por sí sola da el ancho libre exigido. Si la pasiva debe abrir, necesita su propio dispositivo: un pasador exige un segundo gesto, que es justo lo que las dos normas existen para eliminar. Un par necesita además un selector para que las hojas cierren en el orden correcto."
       },
       {
         "question": "¿Sus barras antipánico tienen EN 1125 o EN 179?",
@@ -180,8 +180,8 @@
     "La aptitud a fuego y humos: como expone nuestra página de cortafuego, esto es una propiedad del conjunto ensayado y no del dispositivo por sí solo, y un dispositivo sin esa clasificación en una cortafuego saca el hueco de su certificado.",
     "## Los tres errores que producen un hueco no conforme",
     "Herraje EN 179 en una vía de evacuación de pública concurrencia. El más común, y normalmente se comete por costo. Produce una puerta que funciona perfectamente en todas las pruebas que alguien haga y que falla en la única situación para la que existe.",
-    "Dogging en una salida cortafuego: tratado por extenso en nuestra página de guarniciones antipánico. El dogging mantiene el picaporte retraído; una cortafuego funciona permaneciendo enclavada. Los dispositivos para cortafuego se fabrican sin esa función, y montar uno que la tiene es no conforme por muy correcto que sea todo lo demás.",
-    "Cualquier cosa añadida a la cara interior: un pestillo secundario, una hembrilla de candado, una cadena, una anulación con llave, montados después por alguien resolviendo un problema de seguridad. Cada uno añade un gesto entre una persona y el exterior, y todo el sentido de las dos normas es que haya exactamente un gesto.",
+    "Dogging en una salida cortafuego: tratado por extenso en nuestra página de guarniciones antipánico. El dogging mantiene el pestillo retraído; una cortafuego funciona permaneciendo enclavada. Los dispositivos para cortafuego se fabrican sin esa función, y montar uno que la tiene es no conforme por muy correcto que sea todo lo demás.",
+    "Cualquier cosa añadida a la cara interior: un pasador adicional, una hembrilla de candado, una cadena, una anulación con llave, montados después por alguien resolviendo un problema de seguridad. Cada uno añade un gesto entre una persona y el exterior, y todo el sentido de las dos normas es que haya exactamente un gesto.",
     "El tercero no es un fallo de especificación: es lo que le pasa a un edificio después de la entrega. Merece escribirse en los documentos de entrega que no se puede añadir nada al interior de una puerta de evacuación, porque quien lo va a hacer no ha leído la especificación.",
     "## Las dos cifras que debe llevar una especificación, y por qué son restricciones y no preferencias",
     "Las dos normas definen límites sobre cómo se comporta el dispositivo bajo una mano, y son las dos cifras que una especificación más a menudo deja al proveedor.",
@@ -202,8 +202,8 @@
     "Y, donde el hueco tenga cierre eléctrico, el estado de fallo y la anulación mecánica, en la planilla, no en un documento de control de accesos aparte que el proveedor de herraje no verá nunca.",
     "## Hoja simple, pares, y la hoja pasiva",
     "Un par de puertas en una vía de evacuación plantea una pregunta que el dispositivo no puede responder solo: si la hoja pasiva debe abrir.",
-    "Si debe (porque el ancho libre con una sola hoja abierta es insuficiente) entonces la hoja pasiva necesita su propio dispositivo. Los pestillos embutidos no son equivalentes: un pestillo exige un segundo gesto, y un segundo gesto es justo lo que las dos normas están construidas para eliminar.",
-    "Si la hoja activa por sí sola da el ancho libre exigido, la pasiva se puede asegurar con pestillos, y el par necesita además un selector para que las hojas cierren en el orden correcto. Nuestra página de barras antipánico explica por qué un par cuesta más del doble que una puerta simple en herraje.",
+    "Si debe (porque el ancho libre con una sola hoja abierta es insuficiente) entonces la hoja pasiva necesita su propio dispositivo. Los pasadores embutidos no son equivalentes: un pasador exige un segundo gesto, y un segundo gesto es justo lo que las dos normas están construidas para eliminar.",
+    "Si la hoja activa por sí sola da el ancho libre exigido, la pasiva se puede asegurar con pasadores, y el par necesita además un selector para que las hojas cierren en el orden correcto. Nuestra página de barras antipánico explica por qué un par cuesta más del doble que una puerta simple en herraje.",
     "## Qué tenemos y qué no",
     "Nuestro catálogo lleva 46 productos nombrados como herraje antipánico o de salida: 30 dispositivos, 15 guarniciones exteriores y una caja de cerradura.",
     "Nuestras barras 307 y 311 están en ensayo: hasta que existan números de certificado, nada de lo que publiquemos dará a entender que tienen EN 1125, EN 179, clasificación al fuego, grado ANSI o listado UL: ni en una descripción, ni en una comparación, ni colocando el número de una norma cerca de un producto que no se ha ensayado a ella.",
