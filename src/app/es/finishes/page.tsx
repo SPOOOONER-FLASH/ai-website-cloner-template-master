@@ -40,7 +40,7 @@ export default function AcabadosPage() {
               Referencia
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              Un número de modelo son tres datos, no un nombre.
+              Códigos de acabado. Un número de modelo son tres datos, no un nombre.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">

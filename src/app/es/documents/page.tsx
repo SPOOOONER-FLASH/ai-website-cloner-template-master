@@ -28,7 +28,7 @@ export default function DocumentsPage() {
             <Breadcrumbs items={[{ label: "Inicio", href: "/es/" }, { label: "Documentos" }]} />
           </div>
           <div className="col-span-full lg:col-span-5 xl:col-span-9">
-            <h1 className="mt-16 text-h1 text-ink">Qué podemos enviarle y qué no.</h1>
+            <h1 className="mt-16 text-h1 text-ink">Documentos técnicos de herrajes. Qué podemos enviarle y qué no.</h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">Aquí llega gente que busca un archivo más que un producto: una ficha de una cerradura, un DWG, un objeto BIM, una ficha técnica. Esta página es el inventario honesto, en orden de cuánto existe de cada cosa.</p>

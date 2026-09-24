@@ -73,7 +73,7 @@
 | 8 | 文章改写第 2 批和第 3 批（见第二节） | 待做 |
 | 9 | 约 160 条太短的西语产品摘要，外加一条守卫测试。数字对照 `summaryPt`（E 盘会话 09-24 第二轮，`80457982db7`，每个数字都能在该产品页的实拍图或尺寸图上找到）。**误归到指示器类的 14 条（锁舌、插销、门镜），材质字段写的 Zinc Alloy 很可能是错的：西语不要写 zamak** | 待做 |
 | 10 | 雷茵“品质与认证”栏目的改写建议已写进 section-voice.md 第五节，交给雷茵会话去改；本会话不改雷茵 | 已转交 |
-| 11 | 四个参考页的 H1 前面加买家会搜的词（/finishes、/glossary、/model-lookup、/documents，三语），工程会话 09-24 提出 | 待做 |
+| 11 | 四个参考页的 H1 前面加买家会搜的词（/finishes、/glossary、/model-lookup、/documents，三语），工程会话 09-24 提出 | 09-24 完成：搜索词在前，原句保留（Finish codes / Códigos de acabado / Códigos de acabamento 等）；葡语 model-lookup 顺带改成巴西说法 |
 
 
 ## 边界

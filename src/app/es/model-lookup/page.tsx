@@ -32,7 +32,7 @@ export default function ModelLookupPageEs() {
               Referencia
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              Un número de modelo antiguo aquí sigue significando algo.
+              Buscar por modelo. Un número de modelo antiguo aquí sigue significando algo.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">

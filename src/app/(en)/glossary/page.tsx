@@ -56,7 +56,7 @@ export default function GlossaryPage() {
               Reference
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              The words on our specification tables, and what each one costs to get wrong.
+              Door hardware glossary. The words on our specification tables, and what each one costs to get wrong.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
