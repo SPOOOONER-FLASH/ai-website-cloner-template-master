@@ -1,0 +1,50 @@
+{
+  "model": "EDA-20",
+  "slug": "eda-20-concealed-hydraulic-hinge",
+  "name": "Concealed Hydraulic Hinge",
+  "nameZh": "三维可调液压暗铰链",
+  "series": "Concealed Hydraulic Hinge",
+  "categoryPath": [
+    "floor-springs-and-pivots",
+    "hydraulic-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Zinc Alloy concealed hydraulic hinge.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "Maximum door weight",
+      "value": "80kg (3 hinges)"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "Matt Black"
+  ],
+  "doorTypes": [
+    "Wooden Door",
+    "Metal Door"
+  ],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/eda-20-concealed-hydraulic-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "EDA-20 Concealed Hydraulic Hinge, Matt Black"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/eda-20-concealed-hydraulic-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "EDA-20 Concealed Hydraulic Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "EDA-20 Concealed Hydraulic Hinge | RAYEN",
+  "seoDescription": "Zinc Alloy concealed hydraulic hinge."
+}

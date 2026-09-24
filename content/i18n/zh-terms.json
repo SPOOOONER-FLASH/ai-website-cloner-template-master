@@ -335,7 +335,8 @@
     "Door leaves": "门扇数",
     "Fitted with": "配用",
     "Plate depth": "面板深度",
-    "Supplied with": "随附配件"
+    "Supplied with": "随附配件",
+    "Knuckle width": "轴宽"
   },
   "productNames": {
     "Bathroom Accessories": "浴室配件",
@@ -401,7 +402,9 @@
     "Concealed Hinge": "隐藏铰链",
     "Concealed Hydraulic Hinge": "暗藏液压铰链",
     "Hydraulic Hinge": "液压合页",
-    "Lever Handle on Backplate": "面板执手锁"
+    "Lever Handle on Backplate": "面板执手锁",
+    "Tubular Lever Lock": "三杆执手锁",
+    "3D Adjustable Hinge": "三维可调节合页"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -575,7 +578,15 @@
     "Mirror Polished Stainless": "不锈钢镜面抛光",
     "Brushed Zirconium Gold": "锆金拉丝",
     "Rose Gold": "玫瑰金",
-    "Stainless Steel 304 / 316": "304 / 316 不锈钢"
+    "Stainless Steel 304 / 316": "304 / 316 不锈钢",
+    "Zinc Alloy / Stainless Steel": "锌合金 / 不锈钢",
+    "Iron / Zinc Alloy": "铁 / 锌合金",
+    "Sand White": "砂白",
+    "Tea Brown": "茶色",
+    "60kg (3 hinges)": "60kg（3 只）",
+    "80kg (3 hinges)": "80kg（3 只）",
+    "110mm (+0.3 / −0.4)": "110mm（+0.3 / −0.4）",
+    "129.8mm (+0.3 / −0.4)": "129.8mm（+0.3 / −0.4）"
   },
   "tokens": [
     [

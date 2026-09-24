@@ -1,0 +1,778 @@
+{
+  "_readme": [
+    "《雷茵五金》p71–p75：三杆门锁 10、三维可调节合页 1、三维可调暗铰链 11、三维可调液压暗铰链 3，共 25 个型号。",
+    "切图坐标：scripts/catalogue-cutters/regions/rayen-wujin-p71-p75.json（cut-regions.mjs）。",
+    "",
+    "== p71 三杆门锁 ==",
+    "ET = 带钥匙款（格里配的是锁舌照片），BK = 保险钮款（格里配尺寸图：执手长、锁盖）。ET 和同号 BK 看着是同一支执手，",
+    "但 ET 那格没印尺寸 —— 不借。80 系列表面「拉丝 / 镍拉丝」两种、照片只一张，分不出是哪种，照片不标表面名。",
+    "规格：适装门厚 30-50mm（仅 80 系列印）、安装中心距 60-70mm（= 背距 Backset）、适用木门 / 金属门。",
+    "",
+    "== p72 三维可调节合页 4\"×4\"×2.5mm ==",
+    "四格四表面：OX 砂白、SG 砂金、TP 茶色、BL 哑黑。中文行印这四种；英文行印「SS/PSS/AB/AC/PVD」，与中文对不上，按中文（甲方 09-24）。",
+    "图纸 103 × 102，轴宽 15；厚 2.5 取自型号名。材质「铁 / 锌」。",
+    "",
+    "== p72–p75 暗铰链 ==",
+    "每格：主要材质、表面处理、承重（「2 只 40 公斤」= 两个铰链最大承重 40kg）。总长取图纸上最长那个竖向尺寸；",
+    "EDA-36 / 37 / 38B 图上带公差，照写。EDA-06D、EDA-09 只有多色摆拍照 + 图纸，照片不标表面名。",
+    "p75 三款是液压款，承重印「3 只」，写进 Maximum door weight，和已上架的 RY8001 同一写法。"
+  ],
+  "sourceRoot": "E:/rayen-sources/rayen-wujin-p71-p75",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "ET801 / ET802 / ET901 / ET902 / ET903 的执手长与锁盖",
+      "reason": "ET 格只配锁舌照片、没有图纸；不从同号 BK 借"
+    },
+    {
+      "model": "BK902 的锁盖直径",
+      "reason": "图上那个数放大后仍分不清是 69 还是 60"
+    },
+    {
+      "model": "4\"×4\"×2.5mm 合页英文行的 SS/PSS/AB/AC/PVD",
+      "reason": "与中文行的四种表面对不上，按中文"
+    },
+    {
+      "model": "EDA-09C、EDA-20 的总长",
+      "reason": "图上有 217 / 140 / 135、165 / 130 等几段，哪个是总长说不清"
+    },
+    {
+      "model": "各暗铰链图纸上的页片宽、开槽深度等分段尺寸",
+      "reason": "图纸随图发布；不逐段编标签"
+    },
+    {
+      "model": "p73 / p75 右半页场景照（多色、多型号）",
+      "reason": "只有 EDA-06D / EDA-09 那两张能确定是哪个型号，其余不用"
+    }
+  ],
+  "models": [
+    {
+      "model": "ET801",
+      "slug": "et801-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy / Stainless Steel",
+      "finishes": [
+        "Brushed Stainless",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy / Stainless Steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "30-50mm"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "BK801",
+      "slug": "bk801-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy / Stainless Steel",
+      "finishes": [
+        "Brushed Stainless",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "106mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø65mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy / Stainless Steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "30-50mm"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "ET802",
+      "slug": "et802-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy / Stainless Steel",
+      "finishes": [
+        "Brushed Stainless",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy / Stainless Steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "30-50mm"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "BK802",
+      "slug": "bk802-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy / Stainless Steel",
+      "finishes": [
+        "Brushed Stainless",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "120mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø65mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy / Stainless Steel"
+        },
+        {
+          "label": "Door thickness",
+          "value": "30-50mm"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "ET901",
+      "slug": "et901-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "BK901",
+      "slug": "bk901-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "125mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø75mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "ET902",
+      "slug": "et902-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "BK902",
+      "slug": "bk902-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "120mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "ET903",
+      "slug": "et903-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "BK903",
+      "slug": "bk903-tubular-lever-lock",
+      "name": "Tubular Lever Lock",
+      "nameZh": "三杆执手锁",
+      "categoryPath": [
+        "knob-locks",
+        "tubular-locks"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "125mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø65mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Backset",
+          "value": "60-70mm"
+        }
+      ]
+    },
+    {
+      "model": "4x4x2.5-3D",
+      "slug": "4x4x2-5-3d-adjustable-hinge",
+      "name": "3D Adjustable Hinge",
+      "nameZh": "三维可调节合页",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Iron / Zinc Alloy",
+      "finishes": [
+        "Sand White",
+        "Satin Gold",
+        "Tea Brown",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Leaf size",
+          "value": "103 × 102mm"
+        },
+        {
+          "label": "Thickness",
+          "value": "2.5mm"
+        },
+        {
+          "label": "Knuckle width",
+          "value": "15mm"
+        },
+        {
+          "label": "Material",
+          "value": "Iron / Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "EDA-09",
+      "slug": "eda-09-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "White",
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Antique Bronze",
+        "PVD",
+        "Polished Chrome"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "60kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-06D",
+      "slug": "eda-06d-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "White",
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Antique Bronze",
+        "PVD",
+        "Polished Chrome",
+        "Brushed Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "160mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-08A",
+      "slug": "eda-08a-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "106mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-34",
+      "slug": "eda-34-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "159.8mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "80kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-11",
+      "slug": "eda-11-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "190mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "100kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-08",
+      "slug": "eda-08-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-36",
+      "slug": "eda-36-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "110mm (+0.3 / −0.4)"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-37",
+      "slug": "eda-37-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "115 ± 0.2mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "40kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-38B",
+      "slug": "eda-38b-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "129.8mm (+0.3 / −0.4)"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "50kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-39",
+      "slug": "eda-39-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "160mm"
+        },
+        {
+          "label": "Material",
+          "value": "304 Stainless Steel"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "120kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-40",
+      "slug": "eda-40-concealed-hinge",
+      "name": "Concealed Hinge",
+      "nameZh": "三维可调暗铰链",
+      "categoryPath": [
+        "brass-steel-hinges"
+      ],
+      "material": "304 Stainless Steel",
+      "finishes": [
+        "Matt Black",
+        "Silver"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "240mm"
+        },
+        {
+          "label": "Material",
+          "value": "304 Stainless Steel"
+        },
+        {
+          "label": "Maximum load capacity (2 hinges)",
+          "value": "200kg"
+        }
+      ]
+    },
+    {
+      "model": "EDA-09C",
+      "slug": "eda-09c-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "60kg (3 hinges)"
+        }
+      ]
+    },
+    {
+      "model": "EDA-20",
+      "slug": "eda-20-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "80kg (3 hinges)"
+        }
+      ]
+    },
+    {
+      "model": "EDA-23",
+      "slug": "eda-23-concealed-hydraulic-hinge",
+      "name": "Concealed Hydraulic Hinge",
+      "nameZh": "三维可调液压暗铰链",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Zinc Alloy + Aviation aluminium",
+      "finishes": [
+        "Matt Black",
+        "Black Nickel"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "198mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy + Aviation aluminium"
+        },
+        {
+          "label": "Maximum door weight",
+          "value": "80kg (3 hinges)"
+        }
+      ]
+    }
+  ]
+}

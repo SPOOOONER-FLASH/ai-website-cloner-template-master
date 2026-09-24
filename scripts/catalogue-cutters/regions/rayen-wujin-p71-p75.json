@@ -1,0 +1,673 @@
+{
+ "pdf": "雷茵五金.pdf",
+ "note": "坐标 = 1700px 宽缩略页像素",
+ "items": [
+  {
+   "model": "ET801",
+   "page": 71,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    75,
+    225,
+    365,
+    432
+   ],
+   "blank": []
+  },
+  {
+   "model": "ET801",
+   "page": 71,
+   "kind": "finish",
+   "file": "4-latch.jpg",
+   "box": [
+    270,
+    496,
+    390,
+    590
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK801",
+   "page": 71,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    462,
+    225,
+    748,
+    432
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK801",
+   "page": 71,
+   "kind": "drawing",
+   "keep": [
+    [
+     645,
+     492,
+     790,
+     590
+    ]
+   ]
+  },
+  {
+   "model": "ET802",
+   "page": 71,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    75,
+    683,
+    392,
+    888
+   ],
+   "blank": []
+  },
+  {
+   "model": "ET802",
+   "page": 71,
+   "kind": "finish",
+   "file": "4-latch.jpg",
+   "box": [
+    270,
+    946,
+    390,
+    1047
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK802",
+   "page": 71,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    460,
+    683,
+    770,
+    888
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK802",
+   "page": 71,
+   "kind": "drawing",
+   "keep": [
+    [
+     645,
+     948,
+     790,
+     1042
+    ]
+   ]
+  },
+  {
+   "model": "ET901",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    945,
+    165,
+    1197,
+    333
+   ],
+   "blank": []
+  },
+  {
+   "model": "ET901",
+   "page": 71,
+   "kind": "finish",
+   "file": "4-latch.jpg",
+   "box": [
+    1136,
+    340,
+    1270,
+    440
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK901",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    1318,
+    165,
+    1567,
+    333
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK901",
+   "page": 71,
+   "kind": "drawing",
+   "keep": [
+    [
+     1496,
+     341,
+     1644,
+     440
+    ]
+   ]
+  },
+  {
+   "model": "ET902",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    945,
+    468,
+    1207,
+    642
+   ],
+   "blank": []
+  },
+  {
+   "model": "ET902",
+   "page": 71,
+   "kind": "finish",
+   "file": "4-latch.jpg",
+   "box": [
+    1136,
+    648,
+    1270,
+    747
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK902",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    1318,
+    468,
+    1577,
+    642
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK902",
+   "page": 71,
+   "kind": "drawing",
+   "keep": [
+    [
+     1496,
+     650,
+     1644,
+     747
+    ]
+   ]
+  },
+  {
+   "model": "ET903",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    945,
+    783,
+    1207,
+    946
+   ],
+   "blank": []
+  },
+  {
+   "model": "ET903",
+   "page": 71,
+   "kind": "finish",
+   "file": "4-latch.jpg",
+   "box": [
+    1136,
+    953,
+    1270,
+    1052
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK903",
+   "page": 71,
+   "kind": "finish",
+   "box": [
+    1318,
+    783,
+    1577,
+    946
+   ],
+   "blank": []
+  },
+  {
+   "model": "BK903",
+   "page": 71,
+   "kind": "drawing",
+   "keep": [
+    [
+     1496,
+     953,
+     1644,
+     1050
+    ]
+   ]
+  },
+  {
+   "model": "4x4x2.5-3D",
+   "page": 72,
+   "kind": "drawing",
+   "keep": [
+    [
+     360,
+     206,
+     490,
+     350
+    ]
+   ]
+  },
+  {
+   "model": "4x4x2.5-3D",
+   "page": 72,
+   "kind": "finish",
+   "box": [
+    103,
+    170,
+    312,
+    380
+   ],
+   "blank": []
+  },
+  {
+   "model": "4x4x2.5-3D",
+   "page": 72,
+   "kind": "finish",
+   "box": [
+    103,
+    403,
+    312,
+    610
+   ],
+   "blank": []
+  },
+  {
+   "model": "4x4x2.5-3D",
+   "page": 72,
+   "kind": "finish",
+   "box": [
+    103,
+    630,
+    312,
+    837
+   ],
+   "blank": []
+  },
+  {
+   "model": "4x4x2.5-3D",
+   "page": 72,
+   "kind": "finish",
+   "box": [
+    103,
+    863,
+    302,
+    1070
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-09",
+   "page": 72,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    934,
+    173,
+    1617,
+    807
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-09",
+   "page": 72,
+   "kind": "drawing",
+   "keep": [
+    [
+     1180,
+     848,
+     1560,
+     1066
+    ]
+   ]
+  },
+  {
+   "model": "EDA-06D",
+   "page": 73,
+   "kind": "finish",
+   "file": "3-photo.jpg",
+   "box": [
+    84,
+    173,
+    767,
+    807
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-06D",
+   "page": 73,
+   "kind": "drawing",
+   "keep": [
+    [
+     338,
+     846,
+     697,
+     1070
+    ]
+   ]
+  },
+  {
+   "model": "EDA-08A",
+   "page": 73,
+   "kind": "finish",
+   "box": [
+    953,
+    200,
+    1080,
+    424
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-08A",
+   "page": 73,
+   "kind": "drawing",
+   "keep": [
+    [
+     1306,
+     201,
+     1614,
+     424
+    ]
+   ]
+  },
+  {
+   "model": "EDA-34",
+   "page": 73,
+   "kind": "finish",
+   "box": [
+    953,
+    503,
+    1080,
+    744
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-34",
+   "page": 73,
+   "kind": "drawing",
+   "keep": [
+    [
+     1306,
+     513,
+     1614,
+     732
+    ]
+   ]
+  },
+  {
+   "model": "EDA-11",
+   "page": 73,
+   "kind": "finish",
+   "box": [
+    953,
+    818,
+    1080,
+    1084
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-11",
+   "page": 73,
+   "kind": "drawing",
+   "keep": [
+    [
+     1306,
+     838,
+     1614,
+     1062
+    ]
+   ]
+  },
+  {
+   "model": "EDA-08",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    103,
+    193,
+    232,
+    437
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-08",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     466,
+     203,
+     582,
+     427
+    ]
+   ]
+  },
+  {
+   "model": "EDA-36",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    98,
+    533,
+    237,
+    714
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-36",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     453,
+     538,
+     772,
+     732
+    ]
+   ]
+  },
+  {
+   "model": "EDA-37",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    98,
+    833,
+    237,
+    1067
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-37",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     463,
+     843,
+     772,
+     1062
+    ]
+   ]
+  },
+  {
+   "model": "EDA-38B",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    953,
+    213,
+    1077,
+    414
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-38B",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     1313,
+     213,
+     1617,
+     412
+    ]
+   ]
+  },
+  {
+   "model": "EDA-39",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    953,
+    503,
+    1080,
+    744
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-39",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     1318,
+     513,
+     1622,
+     732
+    ]
+   ]
+  },
+  {
+   "model": "EDA-40",
+   "page": 74,
+   "kind": "finish",
+   "box": [
+    953,
+    813,
+    1080,
+    1092
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-40",
+   "page": 74,
+   "kind": "drawing",
+   "keep": [
+    [
+     1303,
+     843,
+     1617,
+     1062
+    ]
+   ]
+  },
+  {
+   "model": "EDA-09C",
+   "page": 75,
+   "kind": "finish",
+   "box": [
+    103,
+    213,
+    737,
+    407
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-09C",
+   "page": 75,
+   "kind": "drawing",
+   "keep": [
+    [
+     310,
+     450,
+     687,
+     584
+    ]
+   ]
+  },
+  {
+   "model": "EDA-20",
+   "page": 75,
+   "kind": "finish",
+   "box": [
+    103,
+    683,
+    722,
+    872
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-20",
+   "page": 75,
+   "kind": "drawing",
+   "keep": [
+    [
+     258,
+     908,
+     747,
+     1060
+    ]
+   ]
+  },
+  {
+   "model": "EDA-23",
+   "page": 75,
+   "kind": "finish",
+   "box": [
+    963,
+    650,
+    1362,
+    870
+   ],
+   "blank": []
+  },
+  {
+   "model": "EDA-23",
+   "page": 75,
+   "kind": "drawing",
+   "keep": [
+    [
+     948,
+     938,
+     1592,
+     1060
+    ]
+   ]
+  }
+ ]
+}
