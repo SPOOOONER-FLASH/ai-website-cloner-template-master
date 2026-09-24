@@ -6,7 +6,16 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "specs": [],
+  "specs": [
+    {
+      "label": "Center distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "60mm"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -72,8 +81,38 @@
   "seoDescriptionEs": "LC05 8560 cerradura de embutir para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Caixa de fechadura",
   "summaryPt": "Caixa de fechadura de embutir com entre-eixos de 85 mm e distância ao eixo de 60 mm; testa de aço inoxidável de 240 mm, caixa de 173 mm, trinco silencioso e três linguetas quadradas maciças.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "85 mm"
+    },
+    {
+      "label": "Distância ao eixo (broca)",
+      "value": "60 mm"
+    }
+  ],
   "seoTitlePt": "LC05 8560 Fechadura de embutir para portas de madeira | Canton Hyland",
   "seoDescriptionPt": "LC05 8560 fechadura de embutir para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cerradura de embutir."
+  "summaryEs": "Cerradura de embutir.",
+  "specSources": {
+    "modelCode": {
+      "basis": "confirmed-against-model-code",
+      "fields": [
+        "Center distance",
+        "Backset"
+      ],
+      "note": "85/60, which is what the model code 8560 spells out.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Distancia entre ejes",
+      "value": "85 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "60 mm"
+    }
+  ]
 }

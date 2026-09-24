@@ -7,7 +7,12 @@
     "lock-cylinders"
   ],
   "summary": "60 BSKT lock cylinder manufactured by Canton Hyland.",
-  "specs": [],
+  "specs": [
+    {
+      "label": "Size",
+      "value": "60mm"
+    }
+  ],
   "material": "Solid Brass",
   "finishes": [],
   "doorTypes": [],
@@ -41,8 +46,29 @@
   "seoDescriptionEs": "60 BSKT cilindro de cerradura para cerraduras de embutir y sobreponer. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Cilindro",
   "summaryPt": "Cilindro europeu chave e botão de latão maciço, 60 mm assimétrico (16 + 10 + 34 mm), com botão redondo.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Dimensões",
+      "value": "60 mm"
+    }
+  ],
   "seoTitlePt": "60 BSKT Cilindro para fechaduras de embutir e de sobrepor | Canton Hyland",
   "seoDescriptionPt": "60 BSKT cilindro para fechaduras de embutir e de sobrepor. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cilindro de cerradura de latón macizo."
+  "summaryEs": "Cilindro de cerradura de latón macizo.",
+  "specSources": {
+    "modelCode": {
+      "basis": "confirmed-against-model-code",
+      "fields": [
+        "Size"
+      ],
+      "note": "16 + 10 + 34 = 60, matching the model code, so the total length is confirmed. The 16/34 split is NOT published: the source does not say which section is the outside one, and on an offset cylinder that is the whole meaning of the figure.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Medidas",
+      "value": "60 mm"
+    }
+  ]
 }

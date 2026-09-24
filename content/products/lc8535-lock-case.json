@@ -6,7 +6,16 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "specs": [],
+  "specs": [
+    {
+      "label": "Center distance",
+      "value": "85mm"
+    },
+    {
+      "label": "Backset",
+      "value": "35mm"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -57,8 +66,38 @@
   "seoDescriptionEs": "LC8535 cerradura de embutir para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Caixa de fechadura",
   "summaryPt": "Caixa de fechadura de embutir com entre-eixos de 85 mm e distância ao eixo de 35 mm; testa de 240 mm e caixa de 173 mm de altura, para cilindro perfil europeu.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "85 mm"
+    },
+    {
+      "label": "Distância ao eixo (broca)",
+      "value": "35 mm"
+    }
+  ],
   "seoTitlePt": "LC8535 Fechadura de embutir para portas de madeira e metal | Canton Hyland",
   "seoDescriptionPt": "LC8535 fechadura de embutir para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cerradura de embutir."
+  "summaryEs": "Cerradura de embutir.",
+  "specSources": {
+    "modelCode": {
+      "basis": "confirmed-against-model-code",
+      "fields": [
+        "Center distance",
+        "Backset"
+      ],
+      "note": "85/35, which is what the model code 8535 spells out.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Distancia entre ejes",
+      "value": "85 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "35 mm"
+    }
+  ]
 }
