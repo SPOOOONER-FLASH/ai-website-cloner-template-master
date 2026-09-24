@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 524 次提交
+最近 30 天 · 共 525 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 10:12 | HYDE | 服务页改为贴牌视角：Bring us a drawing. Leave with a product. | `fe0768dd139` |
 | 10:09 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `0af80ebeb81` |
 | 10:08 | 中立 | 品牌宣言 v3：OEM 开模能力、出口市场、科隆展与利马/布宜诺斯艾利斯参展、德国办公室（三语） | `6d5376e260c` |
 | 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
