@@ -52,3 +52,9 @@
 - `a74b910b066` 规格术语表补齐西 10 葡 6；306 三条补西葡；译者加 --only 做定向重写
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/24 08:24:36 · HYDE（cantonlock.com）发布三次推送失败
+
+构建好的发布提交 `f4175e4360b`（源码 101f83baa3f）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
+
+> 已解决 2026-09-24（Claude Hyde 视觉）：不是网络问题。三次都是 `fetch first`，因为别的会话在推送大包 out/ 的几分钟里往 main 推了提交。在 E:\release\release-hyde 里 fetch、rebase、立即 push，第一次就成功：`32871f5eb0c`（源码 101f83baa3f）。
