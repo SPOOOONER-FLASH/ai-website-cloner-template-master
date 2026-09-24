@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 556 次提交
+最近 30 天 · 共 558 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 15:58 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3e49105ca31` |
+| 15:57 | HYDE | 西葡用词排查：葡语欧式进行时、西语 móvil/pillar/la web、dogging 补译 | `cb44817fbed` |
 | 15:54 | HYDE | 文章失实排查：删“自有 EN 1125 文件”和“我们的地弹簧在闭门器类目”，三语 | `94cfb161307` |
 | 15:50 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `58108571358` |
 | 15:50 | HYDE | 锁体对比指南：补西语、葡语；生成器接管三语的表格、计数句、摘要和 FAQ（修正过期的 27/18/9） | `6322a70ef29` |
