@@ -209,6 +209,16 @@ claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
   const lockCd = hyde.filter((p) => spec(p, "Center distance") && (top(p) === "lock-cases" || /lock case/i.test(spec(p, "Type") ?? "")));
   return `Only ${lockCd.length} of the ${hyde.length} records in our catalog publish a lock center distance, and ${lockCd.filter((p) => mm(spec(p, "Center distance")) === 85).length} of those ${lockCd.length} say 85mm`;
 });
+// Its backset table was typed by hand and drifted (60mm fixed 22→23, 50mm 6→7, others 8→11) before
+// anyone noticed; these three rows are the ones that move. The Spanish and Portuguese tables carry
+// the same numbers and are fixed alongside when one of these fails.
+const fixedBacksets = hyde.map((p) => spec(p, "Backset")).filter((v): v is string => !!v && !isAdjustable6070(v))
+  .map((v) => [...v.matchAll(/(\d+(?:\.\d+)?)\s*mm/gi)].map((m) => Number(m[1])))
+  .filter((n) => n.length === 1).map((n) => n[0]);
+const fixedAt = (b: number) => fixedBacksets.filter((n) => n === b).length;
+claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => `| 60mm fixed | ${fixedAt(60)} |`);
+claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => `| 50mm | ${fixedAt(50)} |`);
+claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => `| Other: 16, 20, 25, 35 and 55mm | ${[16, 20, 25, 35, 55].reduce((s, b) => s + fixedAt(b), 0)} |`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `Function counts across the ${hyde.length} records in our catalog`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Entrance, keyed outside | ${hyde.filter((p) => /^Entrance, keyed outside$/.test(spec(p, "Function") ?? "")).length} |`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Privacy, bathroom, turn button inside | ${hyde.filter((p) => /^Privacy, bathroom/.test(spec(p, "Function") ?? "")).length} |`);
