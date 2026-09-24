@@ -80,6 +80,8 @@
 
 - **德国**：09-01 的决定写在 `src/data/representatives.ts`，说海外没有子公司，Remagen 只是“联系点”，不是办公室。09-24 甲方又说“德国有办公室、有常驻公司”，首页和服务页已按这句写成“在德国有办公室”。请甲方二选一：(a) Remagen 可以写成我们的办公室，公司页的“Where we are”改为 Office；(b) 仍然只写联系点，那么首页和服务页的“德国办公室”改成“在德国有联系人”。定之前公司页不改。
 
+- **地弹簧**：工厂做地弹簧（D-1031 到 D-1067 在 `content/products` 里都有），但全部只标给雷茵，HYDE 站上看不到。无框玻璃门那篇文章原来说“our floor springs sit in the door-closers category”，这在 HYDE 上不成立，09-24 已改成“本站暂未列出，请直接询问”。请甲方定：地弹簧要不要上 HYDE？如果要，归工程会话在 `sites` 里加上 hyde，文章再改回来。
+
 ## 边界
 
 - 雷茵那一侧不动。`content/products` 是两站共用的，改了要在 agent-update 里公告。
