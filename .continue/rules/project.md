@@ -493,9 +493,9 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
 | Neutral | everything else — shared components, `content/products/` (587 records serve both sites), config, docs | either side, carefully |
 
 1. **Release in a clean checkout, commit only your own output.** `npm run release:hyde` builds
-   `origin/main` in `tmp/release-hyde-<time>/`, runs `deploy:prep`, stages **only `out/`**,
+   `origin/main` in `tmp/release-hyde/` (kept and reused), runs `deploy:prep`, stages **only `out/`**,
    commits, pushes (rebasing if the other side just pushed — the directories are disjoint, so
-   it cannot conflict), and deletes the checkout. The main working tree is never touched, so
+   it cannot conflict). The main working tree is never touched, so
    nobody's uncommitted work can be baked in or swept up. `release:rayen` does the same for
    `out-rayen/`. **Do not build and commit `out/` or `out-rayen/` by hand any more.**
 
@@ -565,6 +565,25 @@ which any lane rule could see:
    `public/search-index-rayen-*.json` (which the pre-commit wall then rejected, twice on
    2026-09-23). The `prebuild` hook runs it with no flag and still regenerates both indexes for
    either release. RAYEN's own equivalent is `node scripts/build-search-index.mjs --site=rayen`.
+
+### Push with `npm run ship`; three failures means move on, not wait
+
+Client instruction, 2026-09-23: 「服务器总是掉线，让 agent 一直在等待，能不能设置推送三次上不去就
+提交报告我，或者完成其他工作的纪律」 and 「永远 push 一个立即写进一个文档，上线存档，方便我换电脑工作」.
+
+- **Push with `npm run ship`, not bare `git push`.** It regenerates
+  `docs/collaboration/SHIPLOG.md` (the online archive the client reads on GitHub from any
+  computer — generated from git history, so it can neither miss a push nor invent one), commits
+  it as `shiplog: …`, then pushes: at most **three attempts, five minutes each**. If the remote moved it merges
+  (never rebases: this tree always holds other agents' uncommitted work); if the shared tree
+  cannot take the merge it merges in a side checkout, `tmp/ship-merge/`, and pushes from there.
+- **Exit 75 = not pushed, recorded, go do something else.** After three failures `ship` appends
+  the unpushed commits to `docs/collaboration/PUSH-PENDING.md`. Tell the client in one line, then
+  continue with the next item. The next `npm run ship` carries the backlog up. Never sit in a
+  retry loop; never `sleep` waiting for the network.
+- `release:hyde` / `release:rayen` follow the same rule, and reuse `<root>/release-<site>/`
+  between runs (`--root E:/release` where C: is full; `--clean` deletes it afterwards): dependencies are reinstalled only when `package-lock.json` changes (`--fresh`
+  rebuilds the checkout from scratch). The wall is a rule, not a lock: nothing waits on anything.
 
 ### A regenerator that has fallbacks will quietly undo work it cannot see
 

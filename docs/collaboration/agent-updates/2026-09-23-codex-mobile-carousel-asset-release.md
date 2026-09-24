@@ -1,0 +1,6 @@
+# Codex — HYDE mobile carousel asset-only release
+
+- The already-published mobile carousel requested two missing warm-entry 4:3 crops and stalled on the first slide. Source generator and `public/` crops were committed in `48c7ce1864d`; an isolated checkout at `0791cfe8816` with those exact changes passed `npm run check` (365 unit and 26 export tests).
+- This release adds **only** `out/images/editorial/mobile-hero/hero-warm-residential-entry-{400,800}w-4x3.webp`, byte-identical to the two reviewed `public/` files. No HTML, JS, catalogue, guide or Rayen output is staged. Local 390px browser QA showed the second slide loading and the third slide following, with no 404 or console errors.
+- Used a narrowly scoped asset-only hotfix because the new `release:hyde` full-build path currently stops at `SPEC_COVERAGE.json`: other sessions are adding products while Claude owns the four guides that quote coverage figures. A full export release must wait for that factual data to be synchronized. This hotfix changes no page or product content.
+- Next: verify both public crop URLs and 390px rotation after server pull and client Cloudflare purge; then resolve the coverage report/guide mismatch with the article owner before the next full HYDE release. The range-to-upper-bound title defect identified in the prior handoff remains a separate focused follow-up.
