@@ -7,7 +7,7 @@
 | # | 事项 | 状态 |
 |---|---|---|
 | 1 | HYDE 发布本轮积压（picaporte、计数、9 条新尺寸标题、zh-terms），上线后实测 | 待做 |
-| 2 | 比较页（/compare/*）标题带长尾词：夜锁比较页 70 次展示、排名 9.7、0 点击 | 待做 |
+| 2 | 比较页（/compare/*）标题带长尾词：夜锁比较页 70 次展示、排名 9.7、0 点击 | 09-24 完成（「25 Night Latches & Rim Locks Compared Side by Side」，西葡「Comparativa/Comparativo de N …」） |
 | 3 | GSC 机会清单里的其余页面：/contact/（98 展示）、背距与中心距文章（31 展示）的搜索标题和描述 | 待做 |
 | 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 待做 |
 | 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 待做 |

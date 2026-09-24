@@ -51,10 +51,16 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
       "Night Latches & Rim Locks" reached 83. Same ladder as the category pages: the
       informative half is the category name, so the qualifier is what gets shortened.
     */
+    /*
+      2026-09-24 (long-tail plan §7): the count leads, because it is the one thing a search
+      result can promise that a category page cannot — the night-latch comparison was seen
+      70 times at position 9.7 and clicked 0 times as "Compare Night Latches & Rim Locks".
+      Body ≤ 60 characters; the brand is allowed to be cut off.
+    */
     title:
-      `Compare ${category.name} — Specifications`.length <= 46
-        ? `Compare ${category.name} — Specifications`
-        : `Compare ${category.name}`,
+      `${count} ${category.name} Compared Side by Side`.length <= 60
+        ? `${count} ${category.name} Compared Side by Side`
+        : `${count} ${category.name} Compared`,
     description: `${count} ${category.name.toLowerCase()} compared on the specifications that differ between them. Lead time from 30 days, manufactured in Guangdong, China.`,
     image: category.image.src,
     imageAlt: category.image.label,
