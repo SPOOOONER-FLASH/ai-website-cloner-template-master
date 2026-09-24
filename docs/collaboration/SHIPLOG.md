@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:53 | HYDE+雷茵 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `8c3a54d3a55` |
-| 08:53 | 中立 | 卫浴配件规格统一：同一个事实原来有四种写法，21 条记录 | `dda960cd064` |
+| 08:55 | HYDE+雷茵 · 发布 雷茵 | Merge remote-tracking branch 'origin/main' into claude/copy | `1d962e17c5b` |
+| 08:54 | 中立 | 任务文件：记下西语短摘要待办、重新生成会覆盖人工文案（已确认）、卫浴 21 条同名 | `effa7a76e4e` |
 | 08:45 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `eb515dba289` |
 | 08:44 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `ee79612a47f` |
 | 08:44 | 中立 | 英文产品摘要：6082 SN、BH05–BH07 去掉双句号和省略号，按规格行重写 | `978931910b0` |
