@@ -1,9 +1,9 @@
 {
   "slug": "powder-coating-and-ral-2026",
-  "title": "Powder Coating and RAL 2026: Why a Colour Number Does Not Specify a Finish, What Pretreatment Decides, and What to Write on the Order",
+  "title": "Powder Coating and RAL 2026: Why a Color Number Does Not Specify a Finish, What Pretreatment Decides, and What to Write on the Order",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "A RAL number names a colour and nothing else, not gloss, not texture, not process, not durability. This page explains what RAL specifies and what it leaves open, why pretreatment decides whether a coating survives, where powder coating fails on hardware geometry, which tests are worth citing, and the four lines that make a finish orderable.",
+  "summary": "A RAL number names a color and nothing else, not gloss, not texture, not process, not durability. This page explains what RAL specifies and what it leaves open, why pretreatment decides whether a coating survives, where powder coating fails on hardware geometry, which tests are worth citing, and the four lines that make a finish orderable.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -20,16 +20,16 @@
     "labelEs": "Un patio de revoque terracota",
     "labelPt": "Um pátio de reboco terracota"
   },
-  "seoTitle": "Powder Coating and RAL 2026: Colour, Gloss, Pretreatment | Canton Hyland",
+  "seoTitle": "Powder Coating and RAL 2026: Color, Gloss, Pretreatment | Canton Hyland",
   "seoDescription": "What a RAL number does and does not specify on door hardware, why pretreatment decides coating life, where powder fails on threads and edges, and the four lines to put on an order.",
   "body": [
-    "Two parts arrive, both coated to the same RAL number, and they do not match. Neither supplier is wrong, and that is the whole problem: RAL specifies a colour, and a finish is made of five things of which colour is one.",
+    "Two parts arrive, both coated to the same RAL number, and they do not match. Neither supplier is wrong, and that is the whole problem: RAL specifies a color, and a finish is made of five things of which color is one.",
     "This matters more on hardware than on a flat panel, because hardware has threads, recesses and edges (the three places a coating fails first) and because two pieces of hardware on the same door are seen side by side in the same light.",
     "## What a RAL number does and does not specify",
     "| Property | Set by RAL? | Set by what instead |\n| --- | --- | --- |\n| Hue | Yes | The RAL number itself |\n| Gloss level | No | A separate gloss specification, measured to ISO 2813 |\n| Texture | No | Smooth, fine texture, wrinkle: named separately |\n| Metallic or effect | No | The powder grade; RAL Effect is a separate collection |\n| Process | No | Powder, wet paint, anodising, PVD: all can hit a RAL |\n| Film thickness | No | A specified range in µm |\n| Corrosion resistance | No | A test class, e.g. to EN 1670 |\n| Batch-to-batch match | No | A tolerance, and an agreed reference sample |",
-    "The most common real-world mismatch is the second row. RAL 9005 in matt and RAL 9005 in satin are both correctly RAL 9005, and on a door they look like two different blacks, because gloss changes how much of the surrounding room you see reflected in the part, which reads to the eye as a change in colour.",
+    "The most common real-world mismatch is the second row. RAL 9005 in matt and RAL 9005 in satin are both correctly RAL 9005, and on a door they look like two different blacks, because gloss changes how much of the surrounding room you see reflected in the part, which reads to the eye as a change in color.",
     "The second most common is the fifth. A powder-coated black lever and a wet-painted black escutcheon can both hit the number and will age differently, chip differently and feel different under the hand.",
-    "So a colour number alone is not a specification. It is the first of four lines.",
+    "So a color number alone is not a specification. It is the first of four lines.",
     "## Pretreatment is where coatings actually fail",
     "Almost no coating failure on hardware is a failure of the coating film. It is a failure of the bond underneath it, and that bond is made before any powder is sprayed.",
     "The sequence is degrease, rinse, etch or convert, rinse, dry, and the rinses matter as much as the chemistry. A part that carries drawing lubricant, polishing compound or salt residue into the oven gets a coating that looks perfect on day one and lifts from the edge in a year.",
@@ -37,12 +37,12 @@
     "Each substrate needs a different answer, which is the point of asking:",
     "Steel takes a zinc phosphate or an iron phosphate conversion coat. Cheap, well understood, and the baseline against which everything else is compared.",
     "Zinc die-cast (zamak) is the hard one. It needs a gentler chemistry than steel, and it outgasses in the oven, porosity in the casting releases gas through the curing film and leaves pinholes. A degassing bake before coating is the usual answer, and whether a line does one is a real differentiator. Our zamak page covers what the grade behind that porosity is.",
-    "Aluminium needs chromate or a chrome-free conversion coat; this is the substrate the architectural quality labels such as Qualicoat and GSB were written around, and their requirements are a reasonable benchmark even outside architecture.",
-    "Stainless steel is the awkward one, because the passive layer that makes it corrosion resistant also makes it a poor thing to bond to. Mechanical keying is usually required. Coating stainless is often the wrong answer, if the colour is the goal, PVD holds it better; if corrosion resistance is the goal, the stainless already had it. Our stainless grades page covers what is under the coating.",
+    "Aluminum needs chromate or a chrome-free conversion coat; this is the substrate the architectural quality labels such as Qualicoat and GSB were written around, and their requirements are a reasonable benchmark even outside architecture.",
+    "Stainless steel is the awkward one, because the passive layer that makes it corrosion resistant also makes it a poor thing to bond to. Mechanical keying is usually required. Coating stainless is often the wrong answer, if the color is the goal, PVD holds it better; if corrosion resistance is the goal, the stainless already had it. Our stainless grades page covers what is under the coating.",
     "## Where hardware geometry defeats a coating",
     "Threads: a typical powder film adds material to both flanks of a thread, and a coated M5 thread may not accept an M5 screw. Threads are therefore masked, and masking is manual work that either happens or does not. A supplier who has not thought about your threaded holes will send you parts you cannot assemble.",
     "Recesses and internal corners: electrostatic spray follows field lines, and field lines do not enter a deep recess, the Faraday cage effect. The bottom of a pocket gets a thinner film than the face beside it, and thin film is where corrosion starts. On hardware this typically means the inside of a handle return, the bottom of a cylinder pocket, the underside of a rose.",
-    "Edges: powder pulls back from a sharp edge as it flows during cure, so the edge ends up thinner than the face. A radiused edge holds coating; a sharp one does not. This is a tooling decision, taken long before anybody chose a colour.",
+    "Edges: powder pulls back from a sharp edge as it flows during cure, so the edge ends up thinner than the face. A radiused edge holds coating; a sharp one does not. This is a tooling decision, taken long before anybody chose a color.",
     "Fixing points and contact faces: a coated face that is then clamped by a screw will mark, and a coated contact face between two parts changes the assembled dimension. Both are normal and both need to be decided rather than discovered.",
     "Typical film thickness for architectural powder sits in the region of 60–80 µm, and that is a range rather than a target: too thin and edge coverage fails, too thick and threads and close-fitting parts stop assembling. If the assembly is tight, the thickness range belongs on the drawing.",
     "## Which tests are worth citing, and what each one proves",
@@ -53,19 +53,19 @@
     "ISO 1520, cupping, and impact tests, which tell you whether the film moves with the substrate or cracks off it, relevant on any part that is bent, staked or pressed after coating.",
     "Cite the ones the application justifies. A black lever in an office corridor does not need a 480-hour salt spray class; an exterior handle in a coastal town does, and a supplier who cannot say which grade their coating meets has answered that question by not answering it.",
     "## Touch-up, which is the question nobody asks until site",
-    "Powder cannot be touched up with powder: it cures at oven temperature, on a bare part, and neither condition exists on a fitted door. Every powder-coated part on a building is touched up with air-dry paint, which means a different binder, a different gloss curve and a different ageing rate in the same nominal colour.",
-    "So the practical questions are: does a matched touch-up pen exist for this colour and gloss, who supplies it, and has anybody looked at a touched-up part two years later. On a large project the honest answer is often to hold a small number of spare parts rather than to touch up at all.",
+    "Powder cannot be touched up with powder: it cures at oven temperature, on a bare part, and neither condition exists on a fitted door. Every powder-coated part on a building is touched up with air-dry paint, which means a different binder, a different gloss curve and a different ageing rate in the same nominal color.",
+    "So the practical questions are: does a matched touch-up pen exist for this color and gloss, who supplies it, and has anybody looked at a touched-up part two years later. On a large project the honest answer is often to hold a small number of spare parts rather than to touch up at all.",
     "## The four lines that make a finish orderable",
-    "Colour, as a RAL number and collection, RAL Classic 9005 is a different specification from a RAL Design or RAL Effect reference.",
+    "Color, as a RAL number and collection, RAL Classic 9005 is a different specification from a RAL Design or RAL Effect reference.",
     "Gloss, as a number to ISO 2813, with the measurement angle named.",
     "Texture, named: smooth, fine texture, or a specific powder reference.",
     "A physical reference sample, signed by both parties, which is the line that actually settles disputes. Every batch is then compared to the sample rather than to a memory of the last batch.",
     "Add the corrosion class and the film thickness range when the application justifies them, and name which surfaces are masked.",
     "## What we publish, and what we do not",
-    "Across the 590 HYDE catalogue records, 326 carry a finish row. The finish names are not fully normalised: the same finish appears as \"Satin Nickel (SN)\", \"Satin nickel\" and \"SN\" in different records. This is a data problem before it is a specification problem.",
+    "Across the 590 HYDE catalog records, 326 carry a finish row. The finish names are not fully normalized: the same finish appears as \"Satin Nickel (SN)\", \"Satin nickel\" and \"SN\" in different records. This is a data problem before it is a specification problem.",
     "Some rows name powder coating, others say only \"paint\" or \"painting\", and others name a black finish without stating whether it is powder coat, wet paint, black nickel plating or PVD. Those processes have different repair routes, so the process needs to be confirmed for an order.",
-    "There is not a single RAL number in the 590 HYDE records. If a specific colour matters, ask us to confirm the code and process against production records.",
-    "That is the gap, stated as counts rather than adjectives, and it is being closed the same way the stainless and zamak grades are: from production records, not from what the rows ought to say. Until then, if a finish matters on your order, ask for it in the four lines above and ask us to confirm each one against the part rather than against the catalogue."
+    "There is not a single RAL number in the 590 HYDE records. If a specific color matters, ask us to confirm the code and process against production records.",
+    "That is the gap, stated as counts rather than adjectives, and it is being closed the same way the stainless and zamak grades are: from production records, not from what the rows ought to say. Until then, if a finish matters on your order, ask for it in the four lines above and ask us to confirm each one against the part rather than against the catalog."
   ],
   "faq": {
     "en": [
@@ -91,7 +91,7 @@
       },
       {
         "question": "How is a powder-coated part touched up on site?",
-        "answer": "Not with powder, powder cures at oven temperature on a bare part, and neither condition exists on a fitted door. Touch-up is always air-dry paint, so a different binder, gloss curve and ageing rate in the same nominal colour. On a large project, holding spare parts is often more honest than touching up."
+        "answer": "Not with powder, powder cures at oven temperature on a bare part, and neither condition exists on a fitted door. Touch-up is always air-dry paint, so a different binder, gloss curve and ageing rate in the same nominal color. On a large project, holding spare parts is often more honest than touching up."
       }
     ],
     "es": [

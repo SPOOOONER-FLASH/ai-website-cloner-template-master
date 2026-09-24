@@ -28,16 +28,16 @@
     "This page is what goes in the package, in the order a reviewer reads it.",
     "## The shape of a complete package",
     "A hardware submittal has five parts, and a reviewer looks for them in this order.",
-    "| Part | What it is | Who produces it |\n| --- | --- | --- |\n| Hardware schedule | Every opening, its set number, and every item in that set | Supplier or hardware consultant |\n| Product data | A datasheet per catalogue number, with dimensions and finish | Manufacturer |\n| Shop drawings | Dimensioned drawings and door/frame preparation | Manufacturer |\n| Test evidence | Certificates and reports for anything the specification requires | Accredited laboratory |\n| Keying schedule | The key system, where the project has one | Supplier with the client's security officer |",
+    "| Part | What it is | Who produces it |\n| --- | --- | --- |\n| Hardware schedule | Every opening, its set number, and every item in that set | Supplier or hardware consultant |\n| Product data | A datasheet per catalog number, with dimensions and finish | Manufacturer |\n| Shop drawings | Dimensioned drawings and door/frame preparation | Manufacturer |\n| Test evidence | Certificates and reports for anything the specification requires | Accredited laboratory |\n| Keying schedule | The key system, where the project has one | Supplier with the client's security officer |",
     "The schedule comes first because it is the index. A reviewer reads it to find out what the project is buying, then checks each line against the other four parts. A package without a schedule forces them to build one themselves, which is the most common reason a package sits unreviewed for a fortnight.",
     "## The hardware schedule, opening by opening",
-    "A schedule is organised by opening, not by product. Each opening carries a number that matches the drawings, a hardware set reference, and the full item list for that set.",
-    "Each line item needs the manufacturer, the catalogue number, the finish code, the quantity, and the function where the product has one. A line that says \"lever handle, SSS\" has named a shape and a finish and left out the model, which is the information the whole document exists to carry.",
+    "A schedule is organized by opening, not by product. Each opening carries a number that matches the drawings, a hardware set reference, and the full item list for that set.",
+    "Each line item needs the manufacturer, the catalog number, the finish code, the quantity, and the function where the product has one. A line that says \"lever handle, SSS\" has named a shape and a finish and left out the model, which is the information the whole document exists to carry.",
     "The schedule is also where handing lives, and handing is the single most expensive thing to get wrong at this stage because it cannot be corrected on site for most products. State the convention you are using as well as the hand itself, our page on handing covers why the European and North American conventions can describe the same door with different words.",
     "## Product data: what a datasheet has to carry",
     "A datasheet is the manufacturer's statement of what the product is. For a reviewer it has to answer four questions without a phone call.",
-    "What are its dimensions, in the units the specification uses. A specification written in inches and a datasheet published only in millimetres is a conversion the reviewer has to do and then take responsibility for, which is why our English pages carry both.",
-    "What finish is it, stated as a code rather than a colour name. \"Satin stainless\" is a description; US32D / 630 is a code that two parties can check against the same standard.",
+    "What are its dimensions, in the units the specification uses. A specification written in inches and a datasheet published only in millimeters is a conversion the reviewer has to do and then take responsibility for, which is why our English pages carry both.",
+    "What finish is it, stated as a code rather than a color name. \"Satin stainless\" is a description; US32D / 630 is a code that two parties can check against the same standard.",
     "What does it fit, door thickness range, backset, preparation type, glass thickness where relevant.",
     "What is its function, where the product has functions. A lock model number without a function suffix is incomplete, and the reviewer cannot tell whether the storeroom door will lock behind somebody.",
     "## Test evidence is not product data, and the difference is the whole point",
@@ -50,19 +50,19 @@
     "No finish codes, only finish names: a schedule saying \"polished chrome\" across forty openings is unverifiable. Two manufacturers' polished chrome are visibly different products, and the reviewer has no way to confirm the project gets the one specified. Our finish code reference covers the codes and why the same code from two suppliers can still differ.",
     "Handing absent or stated without its convention: covered above. It is the most expensive of the four because the correction is usually new product rather than a resubmittal.",
     "Test evidence replaced by a marketing claim: \"Fire rated\", \"ANSI Grade 1\", \"UL listed\" written next to a product with no certificate number behind it. A reviewer who catches one of these does not merely reject that line; they start checking the others, and the package's credibility is gone for the rest of the project.",
-    "No preparation information: the schedule names a mortise lock; the door manufacturer needs the pocket dimensions, the spindle and cylinder hole positions and the centre distance. Our door preparation page sets out what \"prepped for\" does and does not guarantee, and the short version is that a preparation type is not a template.",
+    "No preparation information: the schedule names a mortise lock; the door manufacturer needs the pocket dimensions, the spindle and cylinder hole positions and the center distance. Our door preparation page sets out what \"prepped for\" does and does not guarantee, and the short version is that a preparation type is not a template.",
     "## Who signs what, and why it matters",
     "A submittal carries responsibility as well as information, and the reviewer is checking that too.",
     "The manufacturer stands behind the product data and the drawings. The accredited laboratory stands behind the test evidence. The supplier or hardware consultant stands behind the schedule, that the right product is on the right opening. The reviewer approves against the specification, which is not the same as approving the product's fitness for purpose.",
     "A package where the supplier has written all of it, including a paraphrase of a test result, has collapsed three of those roles into one. That is exactly what a reviewer is trained to spot.",
     "## What we publish, what we send on request, and what we do not have",
     "This is the part suppliers normally leave vague, so here it is as a table. It is the same inventory our documents page carries.",
-    "| Document | Status |\n| --- | --- |\n| Dimensioned drawings | Published |\n| Specifications | Published |\n| Catalogue | Published |\n| Spec export (structured data for your schedule) | On request |\n| Test documents | On request |\n| BIM / Revit families | Not available |\n| Native CAD (editable DWG source) | Not available |",
+    "| Document | Status |\n| --- | --- |\n| Dimensioned drawings | Published |\n| Specifications | Published |\n| Catalog | Published |\n| Spec export (structured data for your schedule) | On request |\n| Test documents | On request |\n| BIM / Revit families | Not available |\n| Native CAD (editable DWG source) | Not available |",
     "The last two rows are the ones worth reading carefully. We do not have BIM families and we do not have editable native CAD, and saying so here costs us fewer projects than discovering it three weeks into a submittal cycle costs you.",
     "A supplier who answers \"yes, we can provide BIM\" and then sends a PDF renamed with a .rvt extension has not solved anything; they have moved the discovery to the point where a model is already being built around the assumption.",
     "## Two things that make a resubmittal unnecessary",
     "Send the specification section to the factory before the quotation, not after the order. Almost every rejected package contains a product that was correctly quoted against an incomplete question. If the specification says EN 1634-1 EI 30, that constraint should reach the factory while a substitution is still free.",
-    "Ask for the evidence before you need it. A test report either exists or it does not, and finding out at submittal stage converts a documentation question into a programme delay. Our page on what documents you can actually get lists what to ask for and how to read the answer.",
+    "Ask for the evidence before you need it. A test report either exists or it does not, and finding out at submittal stage converts a documentation question into a program delay. Our page on what documents you can actually get lists what to ask for and how to read the answer.",
     "## Substitution requests, and why most of them are refused",
     "A substitution request asks the specifier to accept a product other than the one named. It is a normal part of the process, and it is refused far more often than it needs to be for a reason that is entirely fixable.",
     "A refused request almost always compares the wrong things. It asserts that the substitute is equivalent and then lists the features the two products share. What the specifier needs is the opposite: every respect in which they differ, and evidence that each difference is acceptable on this opening.",
@@ -70,13 +70,13 @@
     "A request that hides a difference is refused the moment the reviewer finds it, and every later request from the same supplier is read with that in mind. The shared features were never the question.",
     "## Where our own gaps are",
     "Some of our products are in testing and do not yet hold certificates. Where that is true we say so on the product page rather than implying a rating, and a submittal that needs a certificate we do not hold is a submittal we will tell you we cannot complete.",
-    "That is a smaller number of lost enquiries than it sounds, and it is the only position compatible with the rest of this page. A supplier who will write an unsupported \"fire rated\" on a submittal will also write an unsupported dimension on a drawing, and the reviewer knows it."
+    "That is a smaller number of lost inquiries than it sounds, and it is the only position compatible with the rest of this page. A supplier who will write an unsupported \"fire rated\" on a submittal will also write an unsupported dimension on a drawing, and the reviewer knows it."
   ],
   "faq": {
     "en": [
       {
         "question": "What goes in a door hardware submittal package?",
-        "answer": "Five parts, read in this order: the hardware schedule (the index, organised by opening), product data per catalogue number, shop drawings with door and frame preparation, test evidence for anything the specification requires, and a keying schedule where the project has a key system."
+        "answer": "Five parts, read in this order: the hardware schedule (the index, organized by opening), product data per catalog number, shop drawings with door and frame preparation, test evidence for anything the specification requires, and a keying schedule where the project has a key system."
       },
       {
         "question": "What is the difference between a datasheet and test evidence?",
@@ -88,15 +88,15 @@
       },
       {
         "question": "Can I use a certificate from a similar product in the same range?",
-        "answer": "No. Test results attach to the configuration that was tested, within the scope of application printed on the certificate. A certificate for a neighbouring model is not evidence for this one, the same principle that makes substituting a same-size hinge take a fire door outside its certificate."
+        "answer": "No. Test results attach to the configuration that was tested, within the scope of application printed on the certificate. A certificate for a neighboring model is not evidence for this one, the same principle that makes substituting a same-size hinge take a fire door outside its certificate."
       },
       {
         "question": "Do you supply BIM families or editable CAD?",
-        "answer": "No to both, and we would rather say so here than three weeks into a submittal cycle. We publish dimensioned drawings, specifications and the catalogue; spec exports and test documents are available on request. BIM/Revit families and native editable CAD we do not have."
+        "answer": "No to both, and we would rather say so here than three weeks into a submittal cycle. We publish dimensioned drawings, specifications and the catalog; spec exports and test documents are available on request. BIM/Revit families and native editable CAD we do not have."
       },
       {
         "question": "How do I avoid a resubmittal?",
-        "answer": "Send the specification section to the factory before the quotation rather than after the order, so a constraint like EN 1634-1 EI 30 arrives while a substitution is still free. And ask for test evidence early, a report either exists or it does not, and finding out at submittal stage turns a paperwork question into a programme delay."
+        "answer": "Send the specification section to the factory before the quotation rather than after the order, so a constraint like EN 1634-1 EI 30 arrives while a substitution is still free. And ask for test evidence early, a report either exists or it does not, and finding out at submittal stage turns a paperwork question into a program delay."
       }
     ],
     "es": [

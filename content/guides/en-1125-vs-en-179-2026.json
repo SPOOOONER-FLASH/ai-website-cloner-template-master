@@ -55,7 +55,7 @@
     "## Electrically locked escape doors",
     "The hardest case in this whole category, and the one where a specification most needs to be explicit.",
     "An escape door can be electrically locked (for access control, for a secure ward, for a retail exit that also needs to resist theft) but doing so introduces a dependency the mechanical device does not have. The lock now needs power, a controller, and a release path, and an evacuation is exactly the moment when all three may be unavailable.",
-    "So an electrically locked escape opening needs a mechanical route out that works when the power, the network and the controller are all gone, plus whatever the jurisdiction requires by way of emergency break-glass release, alarm interface and fail-safe behaviour. Our lock function page covers fail-safe versus fail-secure and why the choice belongs to the opening rather than to the product.",
+    "So an electrically locked escape opening needs a mechanical route out that works when the power, the network and the controller are all gone, plus whatever the jurisdiction requires by way of emergency break-glass release, alarm interface and fail-safe behavior. Our lock function page covers fail-safe versus fail-secure and why the choice belongs to the opening rather than to the product.",
     "This is not a decision to leave to commissioning. It has to be drawn, specified and signed off with the fire strategy, because the people who commission the access control and the people who own the escape route are frequently not the same people.",
     "## What to write on the schedule",
     "The standard (EN 1125 or EN 179) and the full classification, not just the standard number.",
@@ -69,7 +69,7 @@
     "If it must (because the clear width with one leaf open is insufficient) then the inactive leaf needs its own device. Flush bolts are not an equivalent: a bolt requires a second action, and a second action is the thing both standards are built to remove.",
     "If the active leaf alone gives the required clear width, the inactive leaf can be secured with bolts, and the pair also needs a coordinator so the leaves close in the right order. Our exit device page covers why a pair costs more than twice a single door in hardware terms.",
     "## What we hold, and what we do not",
-    "Our catalogue carries 46 products named as panic or exit hardware, 30 devices, 15 outside trims and one lock case.",
+    "Our catalog carries 46 products named as panic or exit hardware, 30 devices, 15 outside trims and one lock case.",
     "Our 307 and 311 exit devices are in testing: until certificate numbers exist, nothing we publish will imply that they hold EN 1125, EN 179, a fire rating, an ANSI grade or a UL listing, not in a description, not in a comparison, and not by putting a standard's number near a product that has not been tested to it.",
     "That is a real commercial cost on this category more than any other, because escape hardware is bought on certification. We would rather carry it than write a classification we cannot produce a certificate number for, and our certificate validation page explains exactly how a buyer should check anybody's claim, including ours.",
     "Where a project requires EN 1125 or EN 179 certification today, ask us and we will tell you plainly whether we can meet it. On several models the answer is currently no, and that answer is more useful to you than a quotation would be."

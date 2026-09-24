@@ -26,23 +26,23 @@
     "A buyer asks whether a lock is interchangeable with one they already buy. The answer is never yes or no; it is a list of seven dimensions, and the honest reply names which ones match, which do not, and which nobody has measured.",
     "The order below is the order in which they cause failures on site, which is not the order in which people check them.",
     "## The seven, in order of what they cost",
-    "| # | Dimension | If it is wrong |\n| --- | --- | --- |\n| 1 | Backset | The lock does not reach the spindle hole, or the handle sits off the door edge |\n| 2 | Centre distance, spindle to cylinder | The cylinder hole in the door is in the wrong place, the door is scrap |\n| 3 | Case size, height and depth | The case does not enter the pocket, or rattles in it |\n| 4 | Forend length, width and corner radius | The faceplate does not cover the mortise; a visible gap on every door |\n| 5 | Spindle square and follower | The handle will not fit, or fits with play that rounds off |\n| 6 | Fixing centres | The screws do not land on the existing holes |\n| 7 | Door thickness range | The fixings do not reach, or protrude |",
+    "| # | Dimension | If it is wrong |\n| --- | --- | --- |\n| 1 | Backset | The lock does not reach the spindle hole, or the handle sits off the door edge |\n| 2 | Center distance, spindle to cylinder | The cylinder hole in the door is in the wrong place, the door is scrap |\n| 3 | Case size, height and depth | The case does not enter the pocket, or rattles in it |\n| 4 | Forend length, width and corner radius | The faceplate does not cover the mortise; a visible gap on every door |\n| 5 | Spindle square and follower | The handle will not fit, or fits with play that rounds off |\n| 6 | Fixing centers | The screws do not land on the existing holes |\n| 7 | Door thickness range | The fixings do not reach, or protrude |",
     "The pattern in that table is worth stating plainly: the expensive failures are near the top, and the top two are the two people check least.",
     "## Why matching the backset is not enough",
-    "The backset is the dimension everybody knows, and it is the one that gets quoted in an enquiry as though it settled the question. It does not, because it locates only one hole.",
-    "On a mortise lock, the backset places the spindle relative to the door edge. The centre distance places the cylinder relative to the spindle. Two locks can share a 60mm backset and have different centre distances, and a door prepped for one has its cylinder hole in the wrong place for the other.",
+    "The backset is the dimension everybody knows, and it is the one that gets quoted in an inquiry as though it settled the question. It does not, because it locates only one hole.",
+    "On a mortise lock, the backset places the spindle relative to the door edge. The center distance places the cylinder relative to the spindle. Two locks can share a 60mm backset and have different center distances, and a door prepped for one has its cylinder hole in the wrong place for the other.",
     "That is not a minor mismatch. The spindle hole and the cylinder hole are both through the face of the door; moving one is not possible, and a cover plate over a hole in the middle of a door face is not an outcome anybody accepts.",
-    "Our backset and centre distance page covers the two dimensions in detail. For an interchangeability question, the rule is simply that they are two questions and both have to be asked.",
+    "Our backset and center distance page covers the two dimensions in detail. For an interchangeability question, the rule is simply that they are two questions and both have to be asked.",
     "## The forend is the dimension nobody measures",
     "The forend (the faceplate on the door edge) has three properties: length, width, and whether its corners are square or radiused.",
     "It does not affect whether the lock works. It entirely decides whether the installation looks like it was planned. A replacement lock with a shorter forend leaves the old mortise visible above and below the new plate, on every door in the building, at eye level for anybody standing at it.",
     "The corner radius matters for the same reason it matters on a strike plate: a mortise cut with a router has radiused corners, one cut with a chisel has square ones, and the mismatch shows as four crescents or four squares.",
     "This is the dimension most often discovered after the first door is fitted, which is also the point at which the decision to proceed has already been made.",
     "## How much of this we actually publish",
-    "Interchangeability is a question about published dimensions, so the honest thing is to say how many we publish. Counted from the specification rows of the 257 products in our catalogue whose category or name identifies them as locks, latches, cylinders or deadbolts.",
-    "| Dimension | Lock products publishing it | Share |\n| --- | --- | --- |\n| Backset | 106 | 41% |\n| Door thickness range | 77 | 30% |\n| Centre distance | 28 | 11% |\n| Forend / faceplate | 6 | 2% |\n| Case size | 4 | 2% |",
-    "Those last three rows are the point of this page. The two dimensions that cause the most expensive failures (centre distance and forend) are the two we publish least, and case size appears on only four of them.",
-    "We would rather print that table than describe our data as comprehensive. A buyer who knows the gap can ask for the measurement; a buyer who assumes the catalogue is complete finds out after cutting.",
+    "Interchangeability is a question about published dimensions, so the honest thing is to say how many we publish. Counted from the specification rows of the 257 products in our catalog whose category or name identifies them as locks, latches, cylinders or deadbolts.",
+    "| Dimension | Lock products publishing it | Share |\n| --- | --- | --- |\n| Backset | 106 | 41% |\n| Door thickness range | 77 | 30% |\n| Center distance | 28 | 11% |\n| Forend / faceplate | 6 | 2% |\n| Case size | 4 | 2% |",
+    "Those last three rows are the point of this page. The two dimensions that cause the most expensive failures (center distance and forend) are the two we publish least, and case size appears on only four of them.",
+    "We would rather print that table than describe our data as comprehensive. A buyer who knows the gap can ask for the measurement; a buyer who assumes the catalog is complete finds out after cutting.",
     "Where a dimension is missing, it is missing because nobody has measured that model to a drawing yet, not because it is withheld. Ask for the model you need and it can be measured; that is a short conversation, and much shorter than the one after a container of doors.",
     "## What to send when you want a drop-in for a lock you already buy",
     "A sample is worth more than a photograph and far more than a description. Failing that, send these, in this order.",
@@ -53,15 +53,15 @@
     "The finish and the function, because a drop-in that is dimensionally perfect and functionally wrong is still a rejected delivery.",
     "## Measuring an installed lock without taking the door off",
     "Most interchangeability questions are asked about a lock that is already in service, in a building that cannot be shut while somebody measures it. All seven dimensions can be taken with a caliper, a steel rule and about ten minutes per door type, and three of them do not require removing anything.",
-    "Backset, without removal: measure from the face of the forend to the centre of the spindle, along the door edge. The spindle is visible where it passes through the case, and its centre is the same centre the handle turns on, so measuring from the door edge to the middle of the handle's rose, on the face of the door, gives the same number and is easier to do accurately.",
-    "Centre distance, without removal: measure between the centre of the spindle and the centre of the cylinder on the face of the door. Both are visible. This is the dimension that decides whether a door can be reused, and it costs nothing to take.",
+    "Backset, without removal: measure from the face of the forend to the center of the spindle, along the door edge. The spindle is visible where it passes through the case, and its center is the same center the handle turns on, so measuring from the door edge to the middle of the handle's rose, on the face of the door, gives the same number and is easier to do accurately.",
+    "Center distance, without removal: measure between the center of the spindle and the center of the cylinder on the face of the door. Both are visible. This is the dimension that decides whether a door can be reused, and it costs nothing to take.",
     "Forend length and width, without removal: measure the visible plate on the door edge, and look at its corners. Photograph them against the rule rather than describing them, \"radiused\" without a radius is not a dimension.",
-    "The remaining four need the lock out, or a drawing. Case size and fixing centres are inside the door. Spindle square can be measured on the spindle itself if a handle is removed, which is two screws rather than a whole lock. Door thickness range is a property of the lock rather than the door, so it comes from the manufacturer, but measure the door itself while you are there, at the lock edge, with a caliper rather than a tape, because a tape across a rebated edge reads the rebate.",
+    "The remaining four need the lock out, or a drawing. Case size and fixing centers are inside the door. Spindle square can be measured on the spindle itself if a handle is removed, which is two screws rather than a whole lock. Door thickness range is a property of the lock rather than the door, so it comes from the manufacturer, but measure the door itself while you are there, at the lock edge, with a caliper rather than a tape, because a tape across a rebated edge reads the rebate.",
     "Take the measurements on more than one door. A building rarely has one door type, and the second door is where you find out whether the first was representative or was the one somebody had already adjusted.",
     "## What \"compatible\" means in a quotation, and what it does not",
     "The word does real damage in this category because it has no agreed definition and sounds like it does.",
     "A quotation that says a product is compatible has usually established that it belongs to the same family, a mortise lock for a mortise pocket, a euro cylinder for a euro profile. That is a statement about category, not about the seven dimensions, and it is true of thousands of products that will not fit your door.",
-    "The phrase to use instead is a list. \"Matches on backset, centre distance, forend length and width, and spindle square; differs on forend corner radius, which is square rather than 6mm radiused; case size not measured.\" That sentence is longer, and it is the difference between a purchase decision and a hope.",
+    "The phrase to use instead is a list. \"Matches on backset, center distance, forend length and width, and spindle square; differs on forend corner radius, which is square rather than 6mm radiused; case size not measured.\" That sentence is longer, and it is the difference between a purchase decision and a hope.",
     "If a supplier will not produce that sentence, the useful question is which of the seven they have measured. An honest answer to that is more valuable than a confident answer to the original question.",
     "## When a drop-in is not the right answer",
     "Two situations where matching the old lock is the expensive choice rather than the safe one.",
@@ -74,11 +74,11 @@
     "en": [
       {
         "question": "Which dimensions decide whether a lock is interchangeable?",
-        "answer": "Seven: backset; centre distance from spindle to cylinder; case size; forend length, width and corner radius; spindle square and follower; fixing centres; and door thickness range. The expensive failures cluster at the top of that list, and the top two are the ones people check least."
+        "answer": "Seven: backset; center distance from spindle to cylinder; case size; forend length, width and corner radius; spindle square and follower; fixing centers; and door thickness range. The expensive failures cluster at the top of that list, and the top two are the ones people check least."
       },
       {
         "question": "If the backset matches, will the lock fit?",
-        "answer": "Not necessarily. The backset locates only the spindle relative to the door edge. The centre distance locates the cylinder relative to the spindle, and two locks can share a 60mm backset with different centre distances, which puts the cylinder hole in the wrong place on a door already prepped for the other."
+        "answer": "Not necessarily. The backset locates only the spindle relative to the door edge. The center distance locates the cylinder relative to the spindle, and two locks can share a 60mm backset with different center distances, which puts the cylinder hole in the wrong place on a door already prepped for the other."
       },
       {
         "question": "Why does the forend matter if the lock works?",
@@ -86,7 +86,7 @@
       },
       {
         "question": "How many of your locks publish these dimensions?",
-        "answer": "Of 257 lock products: backset 106 (41%), door thickness 77 (30%), centre distance 28 (11%), forend 6 (2%), case size 4 (2%). The two dimensions that cause the most expensive failures are the two we publish least. A missing dimension can be measured on request: it is missing because nobody has measured that model yet, not because it is withheld."
+        "answer": "Of 257 lock products: backset 106 (41%), door thickness 77 (30%), center distance 28 (11%), forend 6 (2%), case size 4 (2%). The two dimensions that cause the most expensive failures are the two we publish least. A missing dimension can be measured on request: it is missing because nobody has measured that model yet, not because it is withheld."
       },
       {
         "question": "What should I send to get a drop-in replacement?",

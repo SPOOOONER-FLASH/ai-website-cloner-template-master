@@ -3,7 +3,7 @@
   "title": "Master Key Hierarchy Planning 2026: The Levels, What Cross-Keying Really Costs, and How to Leave Room for the Building You Will Have",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "A master key system is designed once and lived with for twenty years, and almost every system that runs out of room ran out for the same two reasons: too many levels for the building, and cross-keying granted door by door as favours. This page sets out the hierarchy, explains why every master level and every cross-key consumes capacity from a finite pool, and gives the questions to answer before a single cylinder is cut.",
+  "summary": "A master key system is designed once and lived with for twenty years, and almost every system that runs out of room ran out for the same two reasons: too many levels for the building, and cross-keying granted door by door as favors. This page sets out the hierarchy, explains why every master level and every cross-key consumes capacity from a finite pool, and gives the questions to answer before a single cylinder is cut.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -27,7 +27,7 @@
     "Almost every system that becomes unworkable becomes unworkable for one of two reasons, and both are design decisions made in the first week rather than failures that develop later.",
     "## The levels, from the top down",
     "| Level | Opens | Typically held by |\n| --- | --- | --- |\n| Grand grand master (GGMK) | Everything in every system below it | A very small number of people, often none day to day |\n| Grand master (GMK) | Everything in one system | Estate or facilities management |\n| Master (MK) | One department, floor or building | A department head, a duty manager |\n| Sub-master (SMK) | A group within that department | A team lead, a cleaning supervisor |\n| Change key / differ | One door, or one small group | The person who uses that door |",
-    "A system does not need all five. Most buildings need three at most, and the number of levels should follow the way the organisation actually delegates authority, not the way the floor plan is drawn.",
+    "A system does not need all five. Most buildings need three at most, and the number of levels should follow the way the organization actually delegates authority, not the way the floor plan is drawn.",
     "That distinction is the first design decision and the one most often got wrong. A two-storey office with one facilities manager does not need a grand master; it needs a master and differs. Adding levels it does not use costs capacity, costs money, and creates keys somebody has to track.",
     "## Why every level costs capacity",
     "This is the part that is rarely explained and explains everything else.",
@@ -35,7 +35,7 @@
     "Mastering works by giving a cylinder more than one shear point, so that both a change key and a master key operate it. Every additional shear point removes other bittings from the usable pool, because those bittings would now also operate the cylinder by accident.",
     "So the arithmetic is not additive, it is subtractive. Every master level you add, and every door you master into more than one group, shrinks the number of genuinely unique change keys the system can still issue.",
     "That is why a system \"runs out\", not because somebody used the last number in a list, but because the combinations that remain would conflict with combinations already issued.",
-    "## Cross-keying is the expensive favour",
+    "## Cross-keying is the expensive favor",
     "Cross-keying means a cylinder is operated by keys from more than one branch of the hierarchy, the classic case being a meeting room that the sales master and the marketing master both open.",
     "It is requested as a small convenience and granted the same way, one door at a time. It is neither small nor one-time: each cross-keyed cylinder adds shear points and consumes disproportionately from the pool, and a system with cross-keying sprinkled through it exhausts long before its nominal capacity.",
     "It also weakens key control in a way nobody notices. A cylinder with many shear points can be opened by more keys than intended, including by keys that were never meant to work anywhere near it.",
@@ -55,7 +55,7 @@
     "## Expansion allowance, designed in or not at all",
     "A system cut to exactly today's building has no room, and buildings change: floors get subdivided, departments merge, a new wing arrives.",
     "Expansion has to be reserved at design time, by deliberately leaving groups and differs unissued. It cannot be added afterwards, because the unissued combinations that would have been the expansion have by then been issued as ordinary differs.",
-    "A reasonable starting point is to design the hierarchy around the organisation as it will plausibly be in five to ten years, then reserve capacity on top of that. What that means numerically depends on the platform, and it is a question for whoever designs the system, but the decision to reserve, and roughly how much, is the client's and belongs in the specification.",
+    "A reasonable starting point is to design the hierarchy around the organization as it will plausibly be in five to ten years, then reserve capacity on top of that. What that means numerically depends on the platform, and it is a question for whoever designs the system, but the decision to reserve, and roughly how much, is the client's and belongs in the specification.",
     "Our specification page puts the keying clause among the four that decide the price, for exactly this reason: it costs nothing to write and cannot be retrofitted.",
     "## Construction keying, and the handover that has to happen",
     "During construction, the building is full of people who need access and will not hold keys afterwards. Construction keying solves this with a temporary key that works until the permanent key is first used in each cylinder, which then permanently invalidates the construction key in that cylinder.",
@@ -63,21 +63,21 @@
     "Nobody runs the permanent keys through every cylinder at handover. A cylinder that never saw its permanent key still accepts the construction key, and there is no way to tell by looking. The handover has to include somebody physically turning the permanent key in every lock and recording that they did.",
     "The construction keys are not collected: they are worthless once every cylinder has been converted and dangerous until then, which makes the collection worth doing before the conversion rather than after.",
     "## What to decide before a single cylinder is cut",
-    "How many levels, and what each corresponds to in the organisation rather than on the floor plan.",
-    "Who owns the system, and who may authorise a cut. This is the control that operates day to day and the one most often left undefined until somebody needs a spare urgently.",
+    "How many levels, and what each corresponds to in the organization rather than on the floor plan.",
+    "Who owns the system, and who may authorize a cut. This is the control that operates day to day and the one most often left undefined until somebody needs a spare urgently.",
     "What the expansion allowance is, and that it is reserved rather than notional.",
     "Which doors are genuinely cross-keyed, decided now and as few as possible, rather than accumulated later.",
     "Whether the register is a deliverable, in a format you can read without the supplier's software, covered on our key blanks page, where the register is argued to be the real lasting product of the whole exercise.",
     "And the profile and its status, open, restricted or patented, because that decision constrains everything above it and is the hardest of all of them to change later.",
     "## What we confirm, and what we do not",
     "We confirm the cylinder range, the lengths and splits, the finishes and the quantities, and we confirm the profile and what is committed on key control, per order and in writing.",
-    "The hierarchy design itself is normally done by whoever holds the system (a locksmith, a security consultant, or the manufacturer of a patented platform) because it depends on the platform's own mastering rules and on an organisation chart we are not party to. We would rather say that plainly than draw a hierarchy that looks right and conflicts with the platform it has to be cut on."
+    "The hierarchy design itself is normally done by whoever holds the system (a locksmith, a security consultant, or the manufacturer of a patented platform) because it depends on the platform's own mastering rules and on an organization chart we are not party to. We would rather say that plainly than draw a hierarchy that looks right and conflicts with the platform it has to be cut on."
   ],
   "faq": {
     "en": [
       {
         "question": "How many master key levels does a building need?",
-        "answer": "Usually three at most. The number should follow how the organisation actually delegates authority, not how the floor plan is drawn. A two-storey office with one facilities manager needs a master and differs, not a grand master, extra levels cost capacity and money and create keys somebody has to track."
+        "answer": "Usually three at most. The number should follow how the organization actually delegates authority, not how the floor plan is drawn. A two-storey office with one facilities manager needs a master and differs, not a grand master, extra levels cost capacity and money and create keys somebody has to track."
       },
       {
         "question": "Why does a master key system run out of capacity?",
@@ -97,7 +97,7 @@
       },
       {
         "question": "Do you design master key hierarchies?",
-        "answer": "Normally not. We confirm the cylinder range, lengths, splits, finishes, quantities, the profile and what is committed on key control, per order in writing. The hierarchy itself depends on the platform's own mastering rules and on an organisation chart we are not party to, so it belongs with whoever holds the system."
+        "answer": "Normally not. We confirm the cylinder range, lengths, splits, finishes, quantities, the profile and what is committed on key control, per order in writing. The hierarchy itself depends on the platform's own mastering rules and on an organization chart we are not party to, so it belongs with whoever holds the system."
       }
     ],
     "es": [

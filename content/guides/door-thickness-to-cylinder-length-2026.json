@@ -3,7 +3,7 @@
   "title": "Door Thickness to Cylinder Length 2026: The Arithmetic, a Lookup Table, and Why the Answer Is Often Rounded Up",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "Sizing a euro cylinder is one subtraction and one rounding, and the rounding is where it goes wrong. This page gives the calculation, a door-thickness lookup table worked against the nine lengths we actually publish, explains why a thin door still gets a protruding cylinder, and shows what changes when the lock case is not centred in the leaf.",
+  "summary": "Sizing a euro cylinder is one subtraction and one rounding, and the rounding is where it goes wrong. This page gives the calculation, a door-thickness lookup table worked against the nine lengths we actually publish, explains why a thin door still gets a protruding cylinder, and shows what changes when the lock case is not centered in the leaf.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -25,13 +25,13 @@
   "body": [
     "A euro cylinder is sized by arithmetic, and the arithmetic is genuinely simple. What makes people get it wrong is that the answer the arithmetic gives is almost never a cylinder that exists, so the last step is a rounding decision, and rounding the wrong way produces either a cylinder that does not reach or one that sticks out far enough to be gripped.",
     "## The calculation",
-    "Measure each half from the centre of the fixing screw hole to the outside face of the escutcheon or rose on that side. The centre of that hole is also the centre of the cam, and it is the datum both halves are quoted from, which is why our euro cylinder page insists that an end-to-end measurement of an old cylinder tells you the wrong thing.",
-    "For a lock case centred in the leaf, each half is therefore:",
+    "Measure each half from the center of the fixing screw hole to the outside face of the escutcheon or rose on that side. The center of that hole is also the center of the cam, and it is the datum both halves are quoted from, which is why our euro cylinder page insists that an end-to-end measurement of an old cylinder tells you the wrong thing.",
+    "For a lock case centered in the leaf, each half is therefore:",
     "half = (door thickness ÷ 2) + escutcheon or rose depth on that side + a small allowance so the cylinder face is reachable but not proud",
     "Then round each half up to the nearest available half-length, and the two halves added together give the cylinder you order.",
     "Half-lengths run in 5mm steps from a minimum of 27.5mm (1-1/16\"), which is the smallest half the profile geometry allows: 27.5, 30, 35, 40, 45, 50, 55, 60mm and upwards.",
     "## The lookup table",
-    "Worked with a 4mm (5/32\") escutcheon each side and a centred lock case, and rounded up to the nine overall lengths our catalogue actually publishes. Change the escutcheon figure and the middle column moves; the method does not.",
+    "Worked with a 4mm (5/32\") escutcheon each side and a centered lock case, and rounded up to the nine overall lengths our catalog actually publishes. Change the escutcheon figure and the middle column moves; the method does not.",
     "| Door thickness | Calculated half | Nearest standard half | Arithmetic total | Order from our range |\n| --- | --- | --- | --- | --- |\n| 35mm (1-3/8\") | 21.5mm | 27.5mm | 55mm | 56mm |\n| 40mm (1-9/16\") | 24mm | 27.5mm | 55mm | 56mm |\n| 45mm (1-3/4\") | 26.5mm | 27.5mm | 55mm | 56mm |\n| 50mm (1-15/16\") | 29mm | 30mm | 60mm | 60mm |\n| 55mm (2-3/16\") | 31.5mm | 35mm | 70mm | 70mm |\n| 60mm (2-3/8\") | 34mm | 35mm | 70mm | 70mm |\n| 70mm (2-3/4\") | 39mm | 40mm | 80mm | 80mm |\n| 80mm (3-1/8\") | 44mm | 45mm | 90mm | 90mm |",
     "Two things in that table are worth reading twice.",
     "## Why a thin door still gets a protruding cylinder",
@@ -40,34 +40,34 @@
     "A raised escutcheon or security rose takes up the difference, the cylinder face sits flush with the rose rather than proud of the door, which is both better looking and better for security, because a protruding cylinder is a cylinder that can be gripped.",
     "Or accept the protrusion and keep it small. Our euro cylinder page sets the working rule: a cylinder should never stand more than about 3mm proud. Beyond that it becomes a handle for an attack.",
     "What is not an answer is choosing a shorter half than the profile offers. There isn't one.",
-    "## What changes when the lock case is not centred",
+    "## What changes when the lock case is not centered",
     "The calculation above assumes the cylinder hole sits at the middle of the leaf thickness, which is true for most mortise cases in most doors.",
     "Where it is not (a lock designed to sit closer to one face, a door with an applied panel on one side, a rebated pair) the two halves are different and the cylinder is asymmetric. That is the entire reason a euro cylinder is specified as two numbers rather than one.",
-    "In that case, measure each half separately from the fixing screw centre, round each up on its own, and order the split. Remember that the split has a direction: a 30/40 and a 40/30 are the same overall length and are not interchangeable, because on the 30/40 the short half faces out.",
+    "In that case, measure each half separately from the fixing screw center, round each up on its own, and order the split. Remember that the split has a direction: a 30/40 and a 40/30 are the same overall length and are not interchangeable, because on the 30/40 the short half faces out.",
     "State which half is which when you order. \"70mm, 30 outside / 40 inside\" cannot be misread; \"70mm 30/40\" relies on both parties using the same convention.",
     "## Measuring a door you cannot take apart",
     "Most cylinder sizing happens on a building that is occupied, with the existing cylinder still in the door. Three measurements, none of which needs anything removed.",
-    "Door thickness at the lock edge: use a caliper. A tape hooked over a rebated or lipped edge measures the rebate rather than the leaf, and on a rebated pair that error is consistently several millimetres in the direction that produces a short cylinder.",
-    "Escutcheon depth, each side: measure from the door face to the outer face of the escutcheon. The two sides are frequently different, a security rose outside and a plain one inside is a common and entirely sensible arrangement, and it makes the cylinder asymmetric even on a centred lock case.",
+    "Door thickness at the lock edge: use a caliper. A tape hooked over a rebated or lipped edge measures the rebate rather than the leaf, and on a rebated pair that error is consistently several millimeters in the direction that produces a short cylinder.",
+    "Escutcheon depth, each side: measure from the door face to the outer face of the escutcheon. The two sides are frequently different, a security rose outside and a plain one inside is a common and entirely sensible arrangement, and it makes the cylinder asymmetric even on a centered lock case.",
     "How far the existing cylinder stands proud, each side: not to copy it, but to know what you are correcting. A cylinder sitting 6mm proud outside tells you the current one is oversized on that half and that a shorter outside half is available to you.",
     "What not to do is measure the old cylinder end to end and order that number. It gives the overall length while discarding the split, which is the information that decides whether the new one fits the same way round. Our euro cylinder page sets out why that measurement fails in more detail.",
     "## Three cases the table does not cover",
     "A thumbturn inside: a thumbturn half is measured the same way to the same datum, but the turn itself projects beyond the escutcheon and that projection is not part of the cylinder length. Do not add it, and do not subtract it either, size the half to the escutcheon face as normal and let the turn stand proud, which is what it is designed to do.",
     "A door with an applied panel or cladding on one face: the panel adds to the thickness on that side only. Measure the total from face to face including the panel, then split the calculation at the lock case rather than at the middle of the total, the cylinder hole did not move when somebody added the panel.",
     "A glazed door with a patch lock: the arithmetic above is for a leaf; a patch fitting on glass has its own cylinder housing and its own dimension, published by the fitting rather than derived from the glass thickness. Our glass door page covers what a glass fitting publishes and what has to come from a drawing.",
-    "In all three, the safe move is the same: measure to the fixing screw centre, treat each half separately, and confirm the result in writing before anything is cut or ordered in quantity.",
+    "In all three, the safe move is the same: measure to the fixing screw center, treat each half separately, and confirm the result in writing before anything is cut or ordered in quantity.",
     "## What we publish against this table",
-    "Our catalogue carries 45 cylinder models across nine overall lengths: 45, 47, 54, 56, 60, 65, 70, 80 and 90mm. The length is in the model number rather than in a separate specification row, which our euro cylinder page explains.",
+    "Our catalog carries 45 cylinder models across nine overall lengths: 45, 47, 54, 56, 60, 65, 70, 80 and 90mm. The length is in the model number rather than in a separate specification row, which our euro cylinder page explains.",
     "What we do not publish is the split for each model: across all 45 cylinder records, the number of rows stating an inside and an outside half is zero.",
     "So this table gets you to an overall length from our range, which is the number the model code carries. The split is a per-order question, and on an asymmetric door it is the question that matters, ask for it in writing rather than assuming an even division.",
     "That is a real gap and this page states it rather than filling it, for the reason our interchangeability page gives: a split is easy to write and expensive to be wrong about, and a cylinder that is 5mm long on the outside is an attack surface rather than a cosmetic problem.",
-    "## The three lines to put in the enquiry",
+    "## The three lines to put in the inquiry",
     "Door thickness, measured at the lock edge with a caliper rather than a tape, a tape across a rebated edge reads the rebate.",
     "The escutcheon or security rose you are using, by model or by depth, because it is the term in the calculation that varies most between projects.",
     "Whether the inside needs a key or a thumbturn, because a thumbturn changes the inside half's geometry and is not a finish option.",
     "With those three, a length and a split come back as a recommendation rather than as a question. Without them, any cylinder length quoted is a guess with a plausible shape.",
     "## One more reason to round up rather than down",
-    "A cylinder that is slightly too long protrudes, and a protruding cylinder can be corrected afterwards, a security rose absorbs a few millimetres, and the part still works while somebody decides.",
+    "A cylinder that is slightly too long protrudes, and a protruding cylinder can be corrected afterwards, a security rose absorbs a few millimeters, and the part still works while somebody decides.",
     "A cylinder that is slightly too short does not reach the cam properly, or leaves the fixing screw with nothing solid to pull against. It does not work, it cannot be corrected, and it is discovered by an installer at the door rather than by anybody at a desk. On a mixed order that arrives short, every door is short by the same amount, which turns one wrong number into the whole delivery.",
     "That asymmetry is the reason the rounding rule in this page only goes one way."
   ],
@@ -75,11 +75,11 @@
     "en": [
       {
         "question": "How do I calculate euro cylinder length from door thickness?",
-        "answer": "For a centred lock case, each half is (door thickness ÷ 2) plus the escutcheon depth on that side plus a small allowance, measured from the centre of the fixing screw hole. Round each half up to the nearest available half-length and add them. Half-lengths run in 5mm steps from a 27.5mm minimum."
+        "answer": "For a centered lock case, each half is (door thickness ÷ 2) plus the escutcheon depth on that side plus a small allowance, measured from the center of the fixing screw hole. Round each half up to the nearest available half-length and add them. Half-lengths run in 5mm steps from a 27.5mm minimum."
       },
       {
         "question": "What cylinder does a 40mm door need?",
-        "answer": "With a 4mm escutcheon each side and a centred case, each half calculates to 24mm, below the 27.5mm minimum the profile allows. So it rounds up to 27.5/27.5, a 55mm arithmetic total, and from our published range that is a 56mm cylinder. The cylinder will protrude slightly, which a raised escutcheon takes up."
+        "answer": "With a 4mm escutcheon each side and a centered case, each half calculates to 24mm, below the 27.5mm minimum the profile allows. So it rounds up to 27.5/27.5, a 55mm arithmetic total, and from our published range that is a 56mm cylinder. The cylinder will protrude slightly, which a raised escutcheon takes up."
       },
       {
         "question": "Why does a thin door still get a protruding cylinder?",
@@ -87,7 +87,7 @@
       },
       {
         "question": "When are the two halves different?",
-        "answer": "Whenever the cylinder hole is not at the middle of the leaf thickness, a lock designed to sit closer to one face, a door with an applied panel on one side, a rebated pair. Measure each half separately from the fixing screw centre and round each up on its own. That is why a euro cylinder is specified as two numbers rather than one."
+        "answer": "Whenever the cylinder hole is not at the middle of the leaf thickness, a lock designed to sit closer to one face, a door with an applied panel on one side, a rebated pair. Measure each half separately from the fixing screw center and round each up on its own. That is why a euro cylinder is specified as two numbers rather than one."
       },
       {
         "question": "Is a 30/40 the same as a 40/30?",

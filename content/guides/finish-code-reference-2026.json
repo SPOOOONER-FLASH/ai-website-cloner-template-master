@@ -3,7 +3,7 @@
   "title": "Finish Code Reference 2026: The 23 Codes, the BHMA Numbers, and the Four Pairs That Reverse",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "A finish code on a purchase order decides what arrives, and four pairs of codes in common use are reversals of each other. This is the reference: the 23 codes our catalogue uses, how they line up with BHMA 600-series and US26x numbers, the pairs that get transposed, and a count of how inconsistently our own catalogue spells them.",
+  "summary": "A finish code on a purchase order decides what arrives, and four pairs of codes in common use are reversals of each other. This is the reference: the 23 codes our catalog uses, how they line up with BHMA 600-series and US26x numbers, the pairs that get transposed, and a count of how inconsistently our own catalog spells them.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -26,10 +26,10 @@
     "70SN"
   ],
   "seoTitle": "Finish Code Reference 2026: BHMA, US26x and Factory Codes | Canton Hyland",
-  "seoDescription": "Door hardware finish codes: the 23 codes in our catalogue, BHMA 600-series and US26x equivalents, the four pairs that reverse (NB/BN, PB/BP, CB/BC), and why a code says nothing about corrosion.",
+  "seoDescription": "Door hardware finish codes: the 23 codes in our catalog, BHMA 600-series and US26x equivalents, the four pairs that reverse (NB/BN, PB/BP, CB/BC), and why a code says nothing about corrosion.",
   "body": [
-    "A finish code is two or three letters on a purchase order, and it is the line most likely to make the right product arrive in the wrong colour. The reason is not carelessness. It is that four pairs of codes in ordinary use are letter-reversals of each other, that the same finish is written three different ways across the industry, and that a code names an appearance without saying anything about how long it lasts.",
-    "This page is the reference for all three problems, and it ends with a count of how inconsistently our own catalogue spells its finishes, because a reference that does not audit itself is not a reference.",
+    "A finish code is two or three letters on a purchase order, and it is the line most likely to make the right product arrive in the wrong color. The reason is not carelessness. It is that four pairs of codes in ordinary use are letter-reversals of each other, that the same finish is written three different ways across the industry, and that a code names an appearance without saying anything about how long it lasts.",
+    "This page is the reference for all three problems, and it ends with a count of how inconsistently our own catalog spells its finishes, because a reference that does not audit itself is not a reference.",
     "THE TWENTY-THREE CODES WE USE",
     "AB antique brass. AC antique copper. BC and CB, both polished chrome. BL black. BN and NB, both black nickel. BP and PB, both polished brass. BS satin brass. CP chrome plated. MB matt black. N nickel. NP nickel plated. ORB a dark finish. PSS polished stainless steel. PVD physical vapour deposition. SB satin brass. SC satin chrome. SN satin nickel. SP bright polished. SS stainless steel. SSS satin stainless steel.",
     "THE FOUR PAIRS THAT REVERSE",
@@ -44,12 +44,12 @@
     "None of these codes, in either system, states how long the finish survives. That is a separate classification: EN 1670 grades corrosion resistance by exposure, and a finish code carries no EN 1670 class with it.",
     "This matters on any opening that sees weather, salt air or cleaning chemicals. A satin nickel handle and a satin stainless handle can look identical on delivery and behave completely differently after two coastal winters, and the finish code is the same length either way. If corrosion is a project requirement, it has to be specified as one.",
     "BS IS A SURFACE, NOT A METAL",
-    "BS means a satin surface and says nothing about what is underneath. Satin brass and satin stainless are both satin and they are different materials at different prices with different corrosion behaviour. The same caution applies to SS, which names stainless steel without naming the grade, and 201, 304 and 316 are three different answers to the question of how long it lasts.",
+    "BS means a satin surface and says nothing about what is underneath. Satin brass and satin stainless are both satin and they are different materials at different prices with different corrosion behavior. The same caution applies to SS, which names stainless steel without naming the grade, and 201, 304 and 316 are three different answers to the question of how long it lasts.",
     "Ask for the base material alongside the finish code on anything where either the price or the environment matters.",
-    "WHAT OUR OWN CATALOGUE ACTUALLY SAYS",
+    "WHAT OUR OWN CATALOG ACTUALLY SAYS",
     "Across the 589 published models, the finish field contains 94 distinct strings. That is not 94 finishes. It is one vocabulary written three ways.",
     "Twenty-three of the 94 are clean codes of the kind listed above. Fifty-three are written out as names (Antique Brass, Matt Black, Black Powder Coat) and several of those duplicate a code that already exists, so the same finish is counted twice. Matt Black and Matte Black both appear, which is one finish under two spellings.",
-    "The remaining eighteen are neither: fragments such as a code followed by other finish to order, a list of five codes separated by full stops in a single field, and at least one misspelling. These are the residue of a catalogue assembled over years from several sources, and they are stated here rather than quietly cleaned, because a buyer reading a product page today sees them.",
+    "The remaining eighteen are neither: fragments such as a code followed by other finish to order, a list of five codes separated by full stops in a single field, and at least one misspelling. These are the residue of a catalog assembled over years from several sources, and they are stated here rather than quietly cleaned, because a buyer reading a product page today sees them.",
     "The practical consequence for anyone ordering: quote the code and the name together. Antique Brass (AB) is unambiguous in a way that neither half is on its own, and it survives being retyped into a system that only accepts one of the two."
   ],
   "faq": {
@@ -72,10 +72,10 @@
       },
       {
         "question": "What does BS mean as a finish code?",
-        "answer": "A satin surface, with no statement about the metal underneath. Satin brass and satin stainless are both satin, and they differ in price, in corrosion behaviour and in what they are. Ask for the base material alongside the code wherever either matters."
+        "answer": "A satin surface, with no statement about the metal underneath. Satin brass and satin stainless are both satin, and they differ in price, in corrosion behavior and in what they are. Ask for the base material alongside the code wherever either matters."
       },
       {
-        "question": "Why does your catalogue list 94 different finishes?",
+        "question": "Why does your catalog list 94 different finishes?",
         "answer": "It does not list 94 finishes; it spells one vocabulary three ways. Twenty-three entries are clean codes, fifty-three are the same finishes written out as names, and eighteen are fragments or misspellings left by years of assembly from several sources. Quote the code and the name together and neither ambiguity can reach the order."
       }
     ],

@@ -129,7 +129,7 @@ claim(NEWS("euro-cylinder-range-45-to-90"), () => {
 
 // what-documents-you-can-actually-get
 claim(NEWS("what-documents-you-can-actually-get"), () => `HYDE currently publishes ${hydePrepDrawings} door-preparation SVGs`);
-claim(NEWS("what-documents-you-can-actually-get"), () => `Dimensioned SVG assets: ${hydeDrawings} for HYDE model slugs among ${hyde.length} catalogue records`);
+claim(NEWS("what-documents-you-can-actually-get"), () => `Dimensioned SVG assets: ${hydeDrawings} for HYDE model slugs among ${hyde.length} catalog records`);
 
 // mortise-lock-case-comparison-2026
 function lockCasesWithBoth() {
@@ -183,7 +183,7 @@ claim(GUIDE("cylindrical-and-tubular-lock-comparison-2026"), () => {
 claim(GUIDE("door-closer-power-size-2026"), () => {
   const pub = inFamily("door-closers").filter((p) => p.heroImage?.src);
   const ju = pub.filter((p) => /^JU-/.test(p.model));
-  return `Our catalogue publishes ${word(pub.length)} door closer records: ${word(ju.length)} JU overhead closers`;
+  return `Our catalog publishes ${word(pub.length)} door closer records: ${word(ju.length)} JU overhead closers`;
 });
 for (const model of ["JU-051", "JU-061", "JU-072", "JU-073", "JU-088", "JU-093"]) {
   claim(GUIDE("door-closer-power-size-2026"), () => {
@@ -203,18 +203,18 @@ const mm = (v?: string) => Number((v ?? "").match(/(\d+(?:\.\d+)?)\s*mm/)?.[1] ?
 const isAdjustable6070 = (v: string) => /60\s*(mm)?\s*\/\s*70|60\s*(mm)?\s*(or|and|-|–)\s*70/i.test(v) && !/80/.test(v);
 claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
   const withBackset = hyde.filter((p) => spec(p, "Backset"));
-  return `${withBackset.length} of the ${hyde.length} records in our catalogue publish a backset. Of those, ${withBackset.filter((p) => isAdjustable6070(spec(p, "Backset")!)).length} are 60mm / 70mm adjustable`;
+  return `${withBackset.length} of the ${hyde.length} records in our catalog publish a backset. Of those, ${withBackset.filter((p) => isAdjustable6070(spec(p, "Backset")!)).length} are 60mm / 70mm adjustable`;
 });
 claim(NEWS("mortise-lock-backset-and-centre-distance-guide"), () => {
   const lockCd = hyde.filter((p) => spec(p, "Centre distance") && (top(p) === "lock-cases" || /lock case/i.test(spec(p, "Type") ?? "")));
-  return `Only ${lockCd.length} of the ${hyde.length} records in our catalogue publish a lock centre distance, and ${lockCd.filter((p) => mm(spec(p, "Centre distance")) === 85).length} of those ${lockCd.length} say 85mm`;
+  return `Only ${lockCd.length} of the ${hyde.length} records in our catalog publish a lock center distance, and ${lockCd.filter((p) => mm(spec(p, "Centre distance")) === 85).length} of those ${lockCd.length} say 85mm`;
 });
-claim(GUIDE("commercial-lock-function-decision-2026"), () => `Function counts across the ${hyde.length} records in our catalogue`);
+claim(GUIDE("commercial-lock-function-decision-2026"), () => `Function counts across the ${hyde.length} records in our catalog`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Entrance, keyed outside | ${hyde.filter((p) => /^Entrance, keyed outside$/.test(spec(p, "Function") ?? "")).length} |`);
 claim(GUIDE("commercial-lock-function-decision-2026"), () => `| Privacy, bathroom, turn button inside | ${hyde.filter((p) => /^Privacy, bathroom/.test(spec(p, "Function") ?? "")).length} |`);
 claim(GUIDE("cycle-testing-durability-grades-2026"), () => {
   const c = hyde.filter((p) => /200,000/.test(spec(p, "Cycle life") ?? ""));
-  return `appears on ${c.length} records in our catalogue, ${c.filter((p) => p.heroImage?.src).length} of them on published product pages`;
+  return `appears on ${c.length} records in our catalog, ${c.filter((p) => p.heroImage?.src).length} of them on published product pages`;
 });
 claim(GUIDE("dimensional-interchangeability-2026"), () => {
   const lockCats = new Set(["knob-locks", "lock-cases", "lock-cylinders", "deadbolts", "night-latches-rim-locks", "sliding-hook-locks"]);
@@ -223,7 +223,7 @@ claim(GUIDE("dimensional-interchangeability-2026"), () => {
   const pct = (n: number) => `${Math.round((100 * n) / locks.length)}%`;
   const cd = locks.filter((p) => has(p, /^centre distances?$/i)).length;
   const cs = locks.filter((p) => has(p, /^case (size|height|depth)/i)).length;
-  return `${locks.length} lock products: backset ${locks.filter((p) => has(p, /^backset$/i)).length} (${pct(locks.filter((p) => has(p, /^backset$/i)).length)}), door thickness ${locks.filter((p) => has(p, /^door thickness$/i)).length} (${pct(locks.filter((p) => has(p, /^door thickness$/i)).length)}), centre distance ${cd} (${pct(cd)}), forend ${locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length} (${pct(locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length)}), case size ${cs} (${pct(cs)})`;
+  return `${locks.length} lock products: backset ${locks.filter((p) => has(p, /^backset$/i)).length} (${pct(locks.filter((p) => has(p, /^backset$/i)).length)}), door thickness ${locks.filter((p) => has(p, /^door thickness$/i)).length} (${pct(locks.filter((p) => has(p, /^door thickness$/i)).length)}), center distance ${cd} (${pct(cd)}), forend ${locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length} (${pct(locks.filter((p) => has(p, /^(faceplate|face plate|forend)/i)).length)}), case size ${cs} (${pct(cs)})`;
 });
 
 test("every counted catalogue claim in an article matches the catalogue as this site sees it", () => {

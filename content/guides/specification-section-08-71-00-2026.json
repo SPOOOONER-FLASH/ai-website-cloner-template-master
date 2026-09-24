@@ -31,22 +31,22 @@
     "## Part 1: the four clauses that decide the price",
     "These are the ones that look procedural and are not.",
     "Substitution procedure: whether substitutions are permitted, what evidence is required, and by when. A section that is silent on this gets substitutions anyway, decided by whoever is under the most cost pressure. Our submittal page covers what a substitution request has to contain to be assessable.",
-    "Keying: who owns the key system, who may authorise a cut, and whether the register is a deliverable. This clause decides whether the building has a documented key system in ten years or an archaeological problem. It costs nothing to write and cannot be added later.",
+    "Keying: who owns the key system, who may authorize a cut, and whether the register is a deliverable. This clause decides whether the building has a documented key system in ten years or an archaeological problem. It costs nothing to write and cannot be added later.",
     "Test evidence: which certificates are required, to which standard, and whether they are required at tender or at submittal. Asking at tender narrows the bidders to those who hold the evidence; asking at submittal finds out after a price is fixed, which is where the pressure to accept a marketing claim comes from.",
     "Warranty: length, what it covers, and whether it survives a change of building owner. \"Manufacturer's standard warranty\" is not a term; it is a promise to accept whatever the manufacturer's standard turns out to be.",
     "## Part 2: how to write a hardware set",
     "A hardware set is the unit a factory quotes. It should be written so that somebody who has never seen the building can price it.",
-    "Give the set a number, list every item with quantity, manufacturer, catalogue number, finish code and function, and state the openings the set applies to. The schedule then maps openings to set numbers rather than repeating the items.",
+    "Give the set a number, list every item with quantity, manufacturer, catalog number, finish code and function, and state the openings the set applies to. The schedule then maps openings to set numbers rather than repeating the items.",
     "The four values that get left out, in order of how expensive they are: the finish code (a name is not a code), the function (a description is not a function), the handing with its convention named, and the door thickness and backset for anything mortised or bored.",
     "Write performance requirements next to the product they constrain, not in a general paragraph. \"Grade 1\" at the top of Part 2 and a lever at the bottom leaves it ambiguous whether the lever is included.",
     "## Performance specifying versus proprietary specifying",
     "Two legitimate approaches, and mixing them badly is where sections go wrong.",
-    "A proprietary specification names manufacturers and catalogue numbers. It is precise and it narrows the field, which may be exactly the intent.",
+    "A proprietary specification names manufacturers and catalog numbers. It is precise and it narrows the field, which may be exactly the intent.",
     "A performance specification states what the product must achieve (a durability grade, a corrosion class, a fire classification, a maximum opening force) and lets any product that demonstrably meets it compete.",
     "The common hybrid, \"Manufacturer X model Y, or approved equal\", is only useful if the section also says what equal means. Without that, \"equal\" is decided during value engineering by comparing shared features rather than differences, which is the failure mode described on our submittal page.",
     "The stronger hybrid names the product and the two or three properties that made it the choice. Then a substitute can be assessed against something.",
     "## Part 3: the clauses installers actually need",
-    "Mounting heights, stated once with units. Where a lever centre is specified, give it in the units the site works in and say from what datum, above finished floor is the usual, and \"finished\" matters where a screed or a carpet is still to come.",
+    "Mounting heights, stated once with units. Where a lever center is specified, give it in the units the site works in and say from what datum, above finished floor is the usual, and \"finished\" matters where a screed or a carpet is still to come.",
     "Adjustment sequencing. Door closers should be adjusted after the building's air handling is balanced, because air pressure changes the force a door needs. A closer set perfectly in an unpressurised building is a closer that will be complained about.",
     "Fire door instruction. That no component of a fire-rated assembly may be substituted or drilled beyond the tested configuration, and that any variation requires evidence.",
     "Handover. The key register, the operating instructions, and the list of what was actually installed against what was scheduled, because those two lists differ on every project and the difference is worth recording while somebody still remembers why.",
@@ -59,7 +59,7 @@
     "## Mounting heights, and the datum that decides them",
     "Heights belong in Part 3 because the installer is the reader. Two things have to be stated: the number, and what it is measured from.",
     "The datum is the part that goes wrong. \"Above finished floor\" means above the floor as it will finally exist, after the screed, after the tile, after the carpet. On a project where the hardware is installed before the floor finish, a height set from the slab is wrong by the thickness of whatever arrives later, and it is wrong consistently across every door in the building.",
-    "Common practice puts a lever centre around 1050mm (41-3/8\") above finished floor, with exit device push bars and pull handles falling in a band roughly between 900mm (35-7/16\") and 1100mm (43-5/16\") depending on the device and the jurisdiction. Treat those as a starting point rather than a requirement: accessibility rules set the binding figures and they differ by country, so confirm the number that applies to the building before writing it.",
+    "Common practice puts a lever center around 1050mm (41-3/8\") above finished floor, with exit device push bars and pull handles falling in a band roughly between 900mm (35-7/16\") and 1100mm (43-5/16\") depending on the device and the jurisdiction. Treat those as a starting point rather than a requirement: accessibility rules set the binding figures and they differ by country, so confirm the number that applies to the building before writing it.",
     "Where a project is bound by an accessibility standard, cite the standard in Part 1 and repeat the resulting height in Part 3. The installer works from Part 3 and will not read the reference list, and the reference list is what makes the height defensible.",
     "## Revisions, and the one habit that prevents the worst arguments",
     "A hardware section is revised, by addendum at tender, by instruction during construction, and by substitution after award. Each revision is a chance for two parties to end up holding different documents.",
@@ -69,7 +69,7 @@
     "## What we need to quote a section without asking questions",
     "The hardware sets, with the four values above per line. The opening schedule that maps sets to doors. The finish codes. The fire-rated openings, marked as such. And the door types and thicknesses, because a lock that suits a 45mm timber leaf may not suit a 45mm hollow metal one.",
     "With those, a quotation comes back as a quotation. Without them, it comes back as a list of questions, and the round trip is usually a week per round, which is why this section is worth the hour it takes to write properly.",
-    "Where our catalogue cannot meet a clause, we say which clause rather than quoting around it. A supplier who quotes a performance specification without holding the evidence has not won the package; they have deferred the conversation to the submittal stage, where it costs everybody more."
+    "Where our catalog cannot meet a clause, we say which clause rather than quoting around it. A supplier who quotes a performance specification without holding the evidence has not won the package; they have deferred the conversation to the submittal stage, where it costs everybody more."
   ],
   "faq": {
     "en": [
@@ -83,7 +83,7 @@
       },
       {
         "question": "How should a hardware set be written?",
-        "answer": "So somebody who has never seen the building can price it: a set number, every item with quantity, manufacturer, catalogue number, finish code and function, and the openings the set applies to. The schedule then maps openings to set numbers instead of repeating items."
+        "answer": "So somebody who has never seen the building can price it: a set number, every item with quantity, manufacturer, catalog number, finish code and function, and the openings the set applies to. The schedule then maps openings to set numbers instead of repeating items."
       },
       {
         "question": "Is \"or approved equal\" enough?",

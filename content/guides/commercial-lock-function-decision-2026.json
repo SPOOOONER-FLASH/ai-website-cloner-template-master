@@ -3,7 +3,7 @@
   "title": "Lock Function Selection 2026: A Decision Table by Room Type, and the Two Questions That Settle Every Opening",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "Choosing a lock function is not a catalogue problem, it is a two-question problem: who is allowed through, and what happens to the person already inside. This page turns that into a decision table covering the room types a commercial building actually contains, names the three function errors that create life-safety problems rather than inconvenience, and states how many models of each function our own catalogue carries.",
+  "summary": "Choosing a lock function is not a catalog problem, it is a two-question problem: who is allowed through, and what happens to the person already inside. This page turns that into a decision table covering the room types a commercial building actually contains, names the three function errors that create life-safety problems rather than inconvenience, and states how many models of each function our own catalog carries.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -23,7 +23,7 @@
   "seoTitle": "Lock Function Selection 2026: Decision Table by Room Type | Canton Hyland",
   "seoDescription": "How to choose a commercial lock function by room type, the two questions that settle every opening, and the three function errors that become life-safety problems.",
   "body": [
-    "Most lock function errors are not made by people choosing badly between options. They are made by people who never realised a choice existed, ticked the default, and found out at handover.",
+    "Most lock function errors are not made by people choosing badly between options. They are made by people who never realized a choice existed, ticked the default, and found out at handover.",
     "The whole decision reduces to two questions, and they are worth asking in this order because the second one outranks the first.",
     "## The two questions",
     "Who is allowed through from outside? Everybody, some people with a key or credential, or nobody.",
@@ -44,11 +44,11 @@
     "Two things get missed. The first is that the release has to be reachable and understood, a release that needs a tool nobody in the building owns is a release that will be answered with a crowbar.",
     "The second is the indicator. On a WC in a public building, an occupied/vacant indicator does more work than the lock: it prevents the attempt rather than resisting it, and it is what stops a queue forming against a door somebody is behind.",
     "## Classroom function, and why it exists",
-    "It is the one function on the table that is not obvious from its behaviour, and it exists because of a specific scenario.",
+    "It is the one function on the table that is not obvious from its behavior, and it exists because of a specific scenario.",
     "A teacher needs to secure a door against the corridor. With a storeroom or entrance function, they have to step into the corridor to use the key, which is the one place the threat might be. Classroom function lets the outside trim be locked and unlocked from inside the room, so the door is secured without anyone leaving it. The inside handle always retracts the latch, so the room can still be evacuated.",
-    "It is a function worth knowing by name, because a specification that describes the behaviour in words usually receives an entrance function and a note.",
-    "## What our catalogue actually carries",
-    "Function counts across the 590 records in our catalogue, from the specification rows themselves.",
+    "It is a function worth knowing by name, because a specification that describes the behavior in words usually receives an entrance function and a note.",
+    "## What our catalog actually carries",
+    "Function counts across the 590 records in our catalog, from the specification rows themselves.",
     "| Function | Models |\n| --- | --- |\n| Entrance, keyed outside | 78 |\n| Privacy, bathroom, turn button inside | 27 |\n| Passage | 18 |\n| Single, double cylinder or self-locking | 21 |\n| Entrance, privacy, passage or dummy (selectable) | 8 |\n| Classroom | 1 |\n| Storeroom | 1 |\n| Communication | 1 |\n| Entrance and communication | 1 |\n| Exit latch | 1 |",
     "Read that honestly and it says something specific: we are strong on entrance, privacy and passage, and we are not a broad institutional function range. If a project needs classroom and storeroom functions across forty openings, we have one model of each and you should ask before designing around us.",
     "Publishing that table is more useful than implying a full function set and discovering the gap at the schedule stage. The order-code suffix carries the function on the models that have one (`ET` entrance, `BK` privacy, `PS` passage) so `201 PBET` is model 201, polished brass, entrance.",
@@ -62,7 +62,7 @@
     "Whether the door is a fire door: an electric strike or electrified lock on a fire door has to be suitable for that use, because the hardware is part of what keeps the leaf latched, and a fire door that does not latch has failed. Our fire door page covers why this is a certificate question rather than a product question.",
     "The mechanical function stays on the schedule either way. A card reader on a storeroom door does not turn it into a passage door, and writing only the reader into the schedule leaves the lock itself to a default.",
     "## What to write on the schedule",
-    "The function by name, not by description. \"Locks from the corridor\" is a behaviour that three functions satisfy differently.",
+    "The function by name, not by description. \"Locks from the corridor\" is a behavior that three functions satisfy differently.",
     "The egress requirement explicitly, even when it feels obvious. A line that says \"free egress, no key inside\" survives a substitution; a line that assumes it does not.",
     "Whether the opening is a fire door, because that constrains the function before any other consideration.",
     "And the handing and finish code, because a function is only one of the six values an order needs to be complete.",
@@ -91,8 +91,8 @@
         "answer": "Yes. Blank is not a specification, it produces whatever the supplier's default is, and the default frequently has a keyway in it. On a door that must never be securable, such as a fire escape route through an occupied floor, writing passage explicitly is a safety decision rather than a cost saving."
       },
       {
-        "question": "Which functions does your catalogue actually carry?",
-        "answer": "Across the 590 records in our catalogue: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
+        "question": "Which functions does your catalog actually carry?",
+        "answer": "Across the 590 records in our catalog: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
       }
     ],
     "es": [

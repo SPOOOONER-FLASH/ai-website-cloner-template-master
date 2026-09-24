@@ -3,7 +3,7 @@
   "title": "Container Loading for Door Hardware 2026: Why a 40HQ Does Not Hold More Than a 40GP",
   "kind": "insight",
   "publishedAt": "2026-09-21",
-  "summary": "Door hardware is a weight-limited cargo, not a volume-limited one. Worked from our own shipping worksheet: the median carton density is 614 kg per cubic metre, which is above the point where a 40-foot container runs out of payload before it runs out of space. The high cube buys 15 per cent more volume and, for this cargo, no more hardware.",
+  "summary": "Door hardware is a weight-limited cargo, not a volume-limited one. Worked from our own shipping worksheet: the median carton density is 614 kg per cubic meter, which is above the point where a 40-foot container runs out of payload before it runs out of space. The high cube buys 15 per cent more volume and, for this cargo, no more hardware.",
   "author": {
     "name": "Johnson Liu",
     "nameZh": "柳雷博",
@@ -31,36 +31,36 @@
     "An importer planning a first order asks how much fits in a container, and almost always asks it as a volume question. For door hardware that is the wrong question, and answering it in volume terms produces an order that will not load.",
     "The figures below are worked from a shipping worksheet covering 26 packed items, of which 19 carry a carton size, a per-carton count and a gross weight. They are our own cartons rather than an industry average, and the arithmetic is reproducible from the numbers printed here.",
     "THE THREE CONTAINERS",
-    "A 20GP has roughly 33.2 cubic metres of internal volume and a payload around 28,200 kg. A 40GP has roughly 67.7 cubic metres and a payload around 26,600 kg. A 40HQ (the high cube) has roughly 76.4 cubic metres and a payload around 26,500 kg.",
+    "A 20GP has roughly 33.2 cubic meters of internal volume and a payload around 28,200 kg. A 40GP has roughly 67.7 cubic meters and a payload around 26,600 kg. A 40HQ (the high cube) has roughly 76.4 cubic meters and a payload around 26,500 kg.",
     "Read those three pairs together and the shape of the problem appears. Going from a 20GP to a 40GP doubles the volume and slightly reduces the payload. Going from a 40GP to a 40HQ adds 13 per cent more volume and again reduces the payload marginally. Volume scales; weight does not.",
     "THE CRITICAL DENSITY",
     "For any cargo there is a density at which a container runs out of weight and volume at the same moment. Below it, the container cubes out, you fill the space and have payload to spare. Above it, the container weighs out, you hit the legal weight with space left over.",
-    "At a realistic 85 per cent stuffing efficiency, that critical density is about 999 kg per cubic metre for a 20GP, about 462 for a 40GP and about 408 for a 40HQ. The 20GP number is high because a twenty-foot box carries almost the same payload as a forty in half the space.",
+    "At a realistic 85 per cent stuffing efficiency, that critical density is about 999 kg per cubic meter for a 20GP, about 462 for a 40GP and about 408 for a 40HQ. The 20GP number is high because a twenty-foot box carries almost the same payload as a forty in half the space.",
     "WHERE DOOR HARDWARE SITS",
-    "Across the 19 fully documented rows, the packed density runs from 234 kg per cubic metre at the light end to over 2,100 at the heavy end, with a median of 614.",
-    "The light end is a bulky exit device or a large lockset in a part-empty carton. The heavy end is hinges, which are solid metal packed tight and reach over 2,100 kg per cubic metre, six times the point at which a forty-foot container weighs out.",
+    "Across the 19 fully documented rows, the packed density runs from 234 kg per cubic meter at the light end to over 2,100 at the heavy end, with a median of 614.",
+    "The light end is a bulky exit device or a large lockset in a part-empty carton. The heavy end is hinges, which are solid metal packed tight and reach over 2,100 kg per cubic meter, six times the point at which a forty-foot container weighs out.",
     "A median of 614 against a 40GP critical density of 462 means the typical door hardware order weighs out in a forty-foot container. It does not fill the space. It reaches the legal weight with space to spare.",
     "A WORKED EXAMPLE",
-    "Take a real row: a cylindrical lockset packed 30 to a carton, carton 49 × 20 × 35 cm, which is 0.0343 cubic metres, at 18 kg gross.",
+    "Take a real row: a cylindrical lockset packed 30 to a carton, carton 49 × 20 × 35 cm, which is 0.0343 cubic meters, at 18 kg gross.",
     "In a 20GP at 85 per cent fill, volume allows 822 cartons and payload allows 1,566. Volume binds first, so the answer is 822 cartons, 24,660 pieces.",
     "In a 40GP, volume allows 1,677 cartons and payload allows 1,477. Payload binds first: 1,477 cartons, 44,310 pieces.",
     "In a 40HQ, volume allows 1,893 cartons and payload still allows 1,477. Payload binds again: 1,472 cartons, 44,160 pieces.",
     "The 40HQ holds marginally fewer pieces than the 40GP, because the extra volume it offers cannot be used and its payload is 100 kg lower. For this cargo the high cube premium buys nothing at all.",
     "WHEN THE HIGH CUBE IS WORTH IT",
-    "When the order is mixed with something light. A container of hinges and exit device cartons weighs out; a container of hinges, exit devices and their packaging displays, or one shared with a lighter product line, may reach the ceiling on volume instead. The high cube earns its premium exactly when the average density of the whole load falls below about 408 kg per cubic metre.",
+    "When the order is mixed with something light. A container of hinges and exit device cartons weighs out; a container of hinges, exit devices and their packaging displays, or one shared with a lighter product line, may reach the ceiling on volume instead. The high cube earns its premium exactly when the average density of the whole load falls below about 408 kg per cubic meter.",
     "The practical rule for a mixed order: compute the total gross weight and the total carton volume, divide one by the other, and compare the result to 462 for a 40GP and 408 for a 40HQ. Above both, order the 40GP.",
     "THE THING THAT BREAKS THE ESTIMATE",
     "A packing row cannot be spread across a model's finish variants, and this is not a theoretical caution. On our own worksheet, model 808 in satin stainless packs at 57.2 × 19.1 × 47.5 cm and the same lock in polished brass packs at 42 × 35 × 31.8 cm. Same product, same per-carton count, completely different carton.",
     "A finish change can mean a different plating line, a different protective wrap and a different carton on the shelf. Any estimate built by taking one finish's packing data and applying it across the family is wrong by an unknown amount, and the direction of the error is not predictable.",
-    "So the arithmetic here is a method, not a lookup table for your order. Send the model numbers in the finishes you are actually buying and we will give the carton data for those, or say that a row does not exist yet rather than substitute a neighbouring one.",
+    "So the arithmetic here is a method, not a lookup table for your order. Send the model numbers in the finishes you are actually buying and we will give the carton data for those, or say that a row does not exist yet rather than substitute a neighboring one.",
     "WHAT WE DO NOT PUBLISH",
-    "Packing data for the whole catalogue. The worksheet this page is worked from covers 26 items out of several hundred, and seven of those 26 rows are partly obscured in the source photograph and are excluded from every figure above. Where a row does not exist we will say so rather than interpolate, for the reason in the previous section."
+    "Packing data for the whole catalog. The worksheet this page is worked from covers 26 items out of several hundred, and seven of those 26 rows are partly obscured in the source photograph and are excluded from every figure above. Where a row does not exist we will say so rather than interpolate, for the reason in the previous section."
   ],
   "faq": {
     "en": [
       {
         "question": "How much door hardware fits in a 40-foot container?",
-        "answer": "It depends on weight, not space. A 40GP has a payload around 26,600 kg, and typical door hardware packs at a median 614 kg per cubic metre, which means the container reaches its legal weight with volume to spare. One worked example: a cylindrical lockset at 30 per carton loads 1,477 cartons, or 44,310 pieces, before the payload runs out."
+        "answer": "It depends on weight, not space. A 40GP has a payload around 26,600 kg, and typical door hardware packs at a median 614 kg per cubic meter, which means the container reaches its legal weight with volume to spare. One worked example: a cylindrical lockset at 30 per carton loads 1,477 cartons, or 44,310 pieces, before the payload runs out."
       },
       {
         "question": "Is a 40HQ better than a 40GP for door hardware?",
@@ -68,11 +68,11 @@
       },
       {
         "question": "What is the critical density for a shipping container?",
-        "answer": "The density at which weight and volume run out together. At 85 per cent stuffing efficiency it is about 999 kg per cubic metre for a 20GP, 462 for a 40GP and 408 for a 40HQ. Above those figures the container weighs out; below them it cubes out."
+        "answer": "The density at which weight and volume run out together. At 85 per cent stuffing efficiency it is about 999 kg per cubic meter for a 20GP, 462 for a 40GP and 408 for a 40HQ. Above those figures the container weighs out; below them it cubes out."
       },
       {
         "question": "How dense is packed door hardware?",
-        "answer": "Across 19 fully documented rows of our own shipping worksheet, from 234 kg per cubic metre at the light end to over 2,100 for hinges, with a median of 614. Hinges are the densest cargo in the catalogue and weigh out immediately."
+        "answer": "Across 19 fully documented rows of our own shipping worksheet, from 234 kg per cubic meter at the light end to over 2,100 for hinges, with a median of 614. Hinges are the densest cargo in the catalog and weigh out immediately."
       },
       {
         "question": "Can I use one model's packing data for its other finishes?",
@@ -80,7 +80,7 @@
       },
       {
         "question": "Do you publish packing data for every model?",
-        "answer": "No. The worksheet behind this page covers 26 items, of which 19 are complete enough to use; the other seven are partly obscured in the source and are excluded from every figure here. Where a row does not exist we say so rather than interpolate from a neighbouring model."
+        "answer": "No. The worksheet behind this page covers 26 items, of which 19 are complete enough to use; the other seven are partly obscured in the source and are excluded from every figure here. Where a row does not exist we say so rather than interpolate from a neighboring model."
       }
     ],
     "es": [
