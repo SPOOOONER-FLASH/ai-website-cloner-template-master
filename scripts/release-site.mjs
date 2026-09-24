@@ -196,10 +196,31 @@ try {
     run("git", ["checkout", "--", "."], WT, { capture: true });
     run("git", ["clean", "-fdq"], WT, { capture: true });
 
-    for (let attempt = 1; ; attempt++) {
-      console.log(`→ 推送（第 ${attempt}/3 次，最多等 5 分钟）`);
-      if (run("git", ["push", "origin", "HEAD:main"], WT, NET).status === 0) break;
-      if (attempt >= 3) {
+    /*
+      Two kinds of failure, counted separately (2026-09-24). Uploading out/ takes minutes, and
+      in that window another session usually pushes: the push comes back "fetch first". That is
+      not the network failing, and it used up all three attempts in one afternoon while the
+      network was fine. So: rebase onto the newest main right before every push (the window
+      shrinks to the upload itself), and give the race its own budget. Only real failures —
+      timeouts, disconnects — count toward the client's three-strikes rule.
+    */
+    let races = 0;
+    for (let attempt = 1; ; ) {
+      if (run("git", ["fetch", "origin", "main"], WT, NET).status === 0 &&
+          run("git", ["rebase", "origin/main"], WT).status !== 0) {
+        run("git", ["rebase", "--abort"], WT);
+        throw new Error(`rebase 冲突：有人同时改了 ${OUT}/。检出保留在 ${WT}，重新跑一次发布即可`);
+      }
+      console.log(`→ 推送（第 ${attempt}/3 次${races ? `，被抢先 ${races} 次` : ""}，最多等 5 分钟）`);
+      const push = run("git", ["push", "origin", "HEAD:main"], WT, { ...NET, capture: true });
+      process.stdout.write(push.out);
+      if (push.status === 0) break;
+      if (/fetch first|non-fast-forward|rejected/i.test(push.out) && races < 8) {
+        races++;
+        console.log("  被别的会话抢先推送（不是网络问题），立刻 rebase 重推");
+        continue;
+      }
+      if (attempt++ >= 3) {
         // 甲方 2026-09-23：推三次推不上就报告、先做别的。记下来，退出码 75。
         const sha = run("git", ["rev-parse", "--short", "HEAD"], WT, { capture: true }).out.trim();
         const pending = "docs/collaboration/PUSH-PENDING.md";
@@ -207,12 +228,7 @@ try {
         writeFileSync(pending, (existsSync(pending) ? readFileSync(pending, "utf8") : "# 未推送积压\n") + note);
         throw new Error(`PENDING：三次推送都失败，已记入 ${pending}。先去做别的，稍后重跑 npm run release:${site}`);
       }
-      console.log("  远端有更新（另一边刚发布过？），rebase 后重试");
-      if (run("git", ["fetch", "origin", "main"], WT, NET).status !== 0) continue;
-      if (run("git", ["rebase", "origin/main"], WT).status !== 0) {
-        run("git", ["rebase", "--abort"], WT);
-        throw new Error(`rebase 冲突：有人同时改了 ${OUT}/。检出保留在 ${WT}，重新跑一次发布即可`);
-      }
+      console.log("  推送失败（网络），下一次推送前会先对齐远端");
     }
 
     must("git fetch", run("git", ["fetch", "origin", "main"], WT, NET));
