@@ -90,7 +90,9 @@ for (const file of files) {
   }
 
   const images = [...html.matchAll(/<img\b[^>]*>/gi)].map((m) => m[0]);
-  const noAlt = images.filter((tag) => !/\balt="[^"]/.test(tag)).length;
+  // alt="" is correct for a decorative image that is also hidden from assistive tech (the
+  // news cards' brand logo); only count images that carry meaning and have no text.
+  const noAlt = images.filter((tag) => !/\balt="[^"]/.test(tag) && !/aria-hidden="true"|role="presentation"/.test(tag)).length;
 
   pages.set(route, { route, file, title, description, noindex, links, images: images.length, noAlt });
 }

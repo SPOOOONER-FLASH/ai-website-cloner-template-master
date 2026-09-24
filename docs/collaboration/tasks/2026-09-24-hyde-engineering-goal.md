@@ -9,15 +9,15 @@
 | 1 | HYDE 发布本轮积压（picaporte、计数、9 条新尺寸标题、zh-terms），上线后实测 | 09-24 完成（996a209b6df 上线，L001 Pestillo、LC05 85/60 标题实测） |
 | 2 | 比较页（/compare/*）标题带长尾词：夜锁比较页 70 次展示、排名 9.7、0 点击 | 09-24 完成（「25 Night Latches & Rim Locks Compared Side by Side」，西葡「Comparativa/Comparativo de N …」） |
 | 3 | GSC 机会清单里的其余页面：/contact/（98 展示）、背距与中心距文章（31 展示）的搜索标题和描述 | 09-24 完成（联系页三语标题带「工厂在中国」；背距文章标题带 85mm vs 72mm） |
-| 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 待做 |
-| 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 待做 |
+| 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 09-24 完成（指南缩略图用产品图 label 作 alt；新闻卡片的装饰 logo 本来就对，审计不再误报 aria-hidden 图） |
+| 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 09-24 完成（「More on backset」「Más sobre …」「Mais sobre …」） |
 | 6 | 标题生成器加 `--only <models>`，只重写指定型号 | 待做 |
 | 7 | 标题生成器去掉「Door Hinge for Doors」这类场景和名字重复 | 待做 |
 | 8 | 复查 306-D / 306-S 西葡重复标题是否已消除（seo:graph） | 待做 |
 | 9 | 多语种准备：RTL 扫描脚本，数出全站物理方向类名（阿拉伯语工程量） | 待做 |
 | 10 | 查询语料脚本加国家筛选，单列德国、法国、沙特、阿联酋、土耳其的查询 | 待做 |
 | 11 | 发给 Hyde 文案：finishes / glossary / model-lookup / documents 的 H1 不含搜索词，给出建议写法 | 待做 |
-| 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 等待（Hyde 文案手改正文） |
+| 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 等待（规则与守卫已写好并有单元测试；剩 2 句产品卖点冲突 hy008、s564 由 Hyde 文案手改，改完跑 --write） |
 | 13 | 10 个产品名字太长放不下长尾词 | 等待（改名归文案/规格会话） |
 | 14 | 服务器装跳转规则（ANSI 网址 301） | 待甲方（手册 ③） |
 | 15 | GA4 登记自定义维度 | 待甲方（手册 ②） |
@@ -28,4 +28,5 @@
 | 21 | 8827、8828 是空壳重复页（无规格，主图与 8827 SSET / 8828 SSET 相同）：301 到 SSET 款 | 09-24 完成（并入 SSET，两张装门图随迁，productMerges 301；计数句交文案会话） |
 | 22 | HY006 应用字段写着「KFC 锁体」，他人商标，删掉 | 09-24 完成（三语去商标名，保留用途） |
 | 23 | 559 画集 5 张带 STAHLOCK 水印的图（已撤下）是否可用 | 待甲方 |
+| 24 | 葡语 trinco / lingueta 用法相反：术语表 Deadbolt=Trinco、Latch=Lingueta，文章里 trinco 指斜舌。要一个像 D1 的决定 | 待甲方 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

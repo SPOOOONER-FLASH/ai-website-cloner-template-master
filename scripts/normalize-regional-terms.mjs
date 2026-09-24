@@ -53,6 +53,28 @@ function word(from, to) {
   return { re: new RegExp(`(?<![${L}])${from}(?![${L}])`, "giu"), fn: (m) => keepCase(m, to), label: `${from} → ${to}` };
 }
 
+/**
+ * picaporte → pestillo, one sentence at a time, and REFUSING when the sentence already says
+ * "pestillo". A sentence with both words names two different parts (the spec session found
+ * "Tres pestillos cuadrados, más picaporte" = three deadbolts plus a latch); swapping would
+ * give both parts one word and the row could no longer tell them apart. So it stops the run
+ * and a person rewrites that sentence (deadbolt → cerrojo, flush bolt → pasador) first.
+ */
+function picaporteRule() {
+  return {
+    re: new RegExp(`[^.;!?\\n]*(?<![${L}])picaportes?(?![${L}])[^.;!?\\n]*`, "giu"),
+    fn: (sentence) => {
+      if (new RegExp(`(?<![${L}])pestillos?(?![${L}])`, "iu").test(sentence)) {
+        throw new Error(
+          `picaporte and pestillo in one sentence — rewrite it by hand (D1): «${sentence.trim()}»`,
+        );
+      }
+      return sentence.replace(new RegExp(`(?<![${L}])(p)icaporte(s?)(?![${L}])`, "giu"), (_m, p, s) => `${p}estillo${s}`);
+    },
+    label: "picaporte → pestillo (D1)",
+  };
+}
+
 /*
   Gender-carrying swap. `det` maps a determiner before the old noun to the one the new noun needs;
   `adj` turns a following adjective that agreed with the old gender into the new one.
@@ -105,12 +127,14 @@ const ES_RULES = [
   /*
     Client decision D1 (2026-09-24): lock terms follow the RAE. Latch bolt = "pestillo",
     deadbolt = "cerrojo", lever = "manija". "picaporte" is retired: it is the lever handle in
-    Argentina and the latch or the knocker elsewhere. The picaporte → pestillo rule is added
-    only after Hyde 文案 has rewritten the article bodies by hand, because in some paragraphs
-    "pestillo" already means the deadbolt and a blind swap would give two parts one word.
+    Argentina and the latch or the knocker elsewhere. Hyde 文案 rewrote the article bodies by
+    hand first (2026-09-24), because "pestillo" had meant the deadbolt in some paragraphs.
   */
   word("picaporte de resbalón", "pestillo"),
   word("resbalón", "pestillo"),
+  // picaporteRule() — switched on once Hyde 文案 has rewritten the two feature sentences (hy008, s564)
+  // that name a latch and a deadbolt together; then --write converts the rest (≈96 featuresEs).
+  // picaporteRule(),
   word("albercas", "piscinas"),
   word("alberca", "piscina"),
   word("aseos", "baños"),
@@ -297,4 +321,4 @@ if (isMain) {
     else if (changes.length) process.exitCode = 1;
   }
 }
-export { genderSwap, ES_M2F, PT_M2F, applyRules };
+export { genderSwap, ES_M2F, PT_M2F, applyRules, picaporteRule };
