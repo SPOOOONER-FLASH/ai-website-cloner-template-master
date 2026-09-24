@@ -468,7 +468,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Pry Latch": "Lingueta antialavanca",
   "Door Flush Bolt": "Ferrolho embutido",
   "Stainless Steel Flush Bolt": "Ferrolho embutido em inox",
-  "Door Stopper": "Batente de porta",
+  "Door Stopper": "Batedor de porta",
   "Door viewer": "Olho mágico",
   "Security Door Guard": "Trava de segurança",
   "Door Power Transfer Devices": "Transferência de energia para porta",
