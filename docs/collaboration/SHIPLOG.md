@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 16:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c66c53385ab` |
-| 16:19 | 中立 | 西语产品摘要：60 条一行字补成完整摘要，加守卫测试 | `9c4e477471c` |
+| 16:19 | HYDE | 推杠、筒式锁横评三语 SEO 定稿（去掉会过期的个数，收进长度预算） | `edfb80de6ca` |
+| 16:14 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 978879e2b11 | `1bc10632f01` |
 | 16:15 | HYDE | 筒形/管状锁对比指南：补西语、葡语；全部指南三语齐全 | `f899d9650b1` |
 | 16:12 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `2d6dbbb3339` |
 | 16:12 | HYDE | 推杠对比指南：补西语、葡语（表格、FAQ、首图说明） | `5cc1eb15e0d` |
