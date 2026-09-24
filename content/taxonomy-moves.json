@@ -197,6 +197,20 @@
       "category": "deadbolts",
       "why": "同上；2026-09-02 之前它在 deadbolts 下，那个旧网址也要跟过来。",
       "reason": "renamed-no-certification"
+    },
+    {
+      "from": "8827-lever-handle",
+      "to": "8827-sset-lever-handle",
+      "category": "lever-handles",
+      "why": "2026-09-24：8827 是空壳记录（无规格，主图与 8827 SSET 同一张照片，只差尺寸），重复页。它独有的两张装门图并入 SSET 款。视觉普查发现。",
+      "reason": "duplicate-merged"
+    },
+    {
+      "from": "8828-lever-handle",
+      "to": "8828-sset-lever-handle",
+      "category": "lever-handles",
+      "why": "2026-09-24：8828 是空壳记录（无规格，主图与 8828 SSET 同一张照片，只差尺寸），重复页。它独有的两张装门图并入 SSET 款。视觉普查发现。",
+      "reason": "duplicate-merged"
     }
   ]
 }
