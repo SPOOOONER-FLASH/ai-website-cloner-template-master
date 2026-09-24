@@ -260,6 +260,49 @@ for (const [k, v] of Object.entries(byIntent).sort((a, b) => b[1].weight - a[1].
   say();
 }
 
+/*
+  按品类拆「数字型」与「场景型」—— 决定标题里数字先还是场景先（方案 2026-09-24 第七节）。
+  数字型：查询里有数字（型号、尺寸、backset）。场景型：查询里有用途或门型词。
+  两者都有的记数字型，因为那位买家已经知道要什么规格。
+*/
+const FAMILIES = [
+  ["推杠 / 逃生", /panic|exit|push ?bar|crash ?bar|antip[aá]nico|antip[aâ]nico|barra/i],
+  ["插芯锁体", /mortis|lock ?case|lockcase|embutir|fechadura de encaixe|cerradura/i],
+  ["合页", /hinge|bisagra|dobradi[cç]a|pivot/i],
+  ["锁芯", /cylinder|cilindro|master ?key|key(ed)? alike/i],
+  ["外装锁 / 夜锁", /rim|night ?latch/i],
+  ["把手 / 执手", /lever|handle|pull|manija|manilla|ma[cç]aneta|puxador|tirador/i],
+  ["闭门器 / 门挡 / 插销", /closer|cierrapuertas|door ?stop|bolt|flush|pasador|fechos?/i],
+];
+const SCENE =
+  /fire|double|single|hospital|clean ?room|school|office|commercial|residential|exterior|outdoor|glass|alumin|wood|timber|metal door|steel door|heavy|bath|toilet|marine|hotel|puerta|porta|door/i;
+
+const fam = {};
+for (const q of queries) {
+  if (q.intent === "brand" || q.intent === "noise") continue;
+  const hit = FAMILIES.find(([, re]) => re.test(q.q));
+  if (!hit) continue;
+  const f = (fam[hit[0]] ??= { n: 0, weight: 0, number: 0, scene: 0, plain: 0 });
+  const kind = /\d/.test(q.q) ? "number" : SCENE.test(q.q) ? "scene" : "plain";
+  f.n += 1;
+  f.weight += q.weight;
+  f[kind] += q.weight;
+}
+
+say(`## 按品类：买家先打数字，还是先打场景`);
+say();
+say(`加权占比。数字型 = 查询含数字；场景型 = 含用途或门型词（fire、double、glass…）；泛称 = 只有品类名。`);
+say(`样本小的行只能当方向，不能当定论。`);
+say();
+say(`| 品类 | 查询数 | 加权 | 数字型 | 场景型 | 泛称 | 标题先放 |`);
+say(`| --- | --- | --- | --- | --- | --- | --- |`);
+const pct = (a, b) => (b ? `${Math.round((a / b) * 100)}%` : "—");
+for (const [k, v] of Object.entries(fam).sort((a, b) => b[1].weight - a[1].weight)) {
+  const lead = v.n < 5 ? "样本不足，默认数字" : v.number >= v.scene ? "数字" : "场景";
+  say(`| ${k} | ${v.n} | ${v.weight} | ${pct(v.number, v.weight)} | ${pct(v.scene, v.weight)} | ${pct(v.plain, v.weight)} | ${lead} |`);
+}
+say();
+
 say(`## 读到了哪些文件`);
 say();
 say(`| 文件 | 取到查询 |`);
