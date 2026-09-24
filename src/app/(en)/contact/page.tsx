@@ -20,14 +20,12 @@ export default function ContactPage() {
       <div className="layout space-y-96 lg:space-y-136">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">
-            <h1 className="text-h1 text-ink">Contact</h1>
+            <h1 className="text-h1 text-ink">Contact the factory. Talk to the people who make it.</h1>
             <p className="mt-24 text-c1 text-ink">
-              Talk to our export team about product selection, specifications, samples, OEM work
-              or a project quotation.
+              Write to the export team about a model, a sample, an OEM part or a project quotation. An engineer reads it, in English or Spanish.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              Include the door type, required finish, applicable standard, quantity and destination
-              market so we can prepare a useful first response.
+              Tell us the door type, the finish, the standard, the quantity and the destination market, and our first reply can already be a useful one.
             </p>
 
             {/*

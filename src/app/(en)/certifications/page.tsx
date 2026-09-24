@@ -31,15 +31,14 @@ export default function CertificationsPage() {
             <p className="text-kicker uppercase tracking-[0.14em] text-ink-secondary">
               Quality evidence
             </p>
-            <h1 className="mt-16 text-h1 text-ink">Evidence belongs to a model, not a marketing claim.</h1>
+            <h1 className="mt-16 text-h1 text-ink">Certificates and test reports. What is tested, and in whose name.</h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
               The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers' own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland's own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              Complete report copies are supplied through the export team only when document
-              redistribution permission and the requested model mapping have been confirmed.
+              The issuers restrict how their reports may be copied, so we send a complete copy on request, for a named model, rather than publishing extracts.
             </p>
           </div>
         </section>
@@ -60,8 +59,7 @@ export default function CertificationsPage() {
               <div className="col-span-full sm:col-span-3 md:col-span-5 xl:col-span-10">
                 <h2 className="text-h2 text-ink">{certificate.title}</h2>
                 <p className="mt-16 max-w-[60ch] text-c1 text-ink-secondary">
-                  Registry details are public; the full document is available through controlled
-                  technical-document requests.
+                  The details are public. The full report is sent on request, complete, as the issuer requires.
                 </p>
               </div>
               <dl className="col-span-full grid grid-cols-1 gap-16 md:col-span-5 md:col-start-8 xl:col-span-9 xl:col-start-16">
@@ -78,12 +76,11 @@ export default function CertificationsPage() {
 
         <section className="col-content grid grid-cols gap-x gap-y-32 border-t border-line pt-32">
           <h2 className="col-span-full text-h2 text-ink lg:col-span-5 xl:col-span-9">
-            Match the report before specifying the hardware.
+            Check the report before you specify the part.
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Send the required standard, model number and destination market. The export team will
-              confirm whether the document names that exact model before supplying a copy.
+              Send the standard you need, the model number and the destination market. We will tell you whether a report names that exact model before we send it, and say so if none does.
             </p>
             <div className="mt-24">
               <ArrowLink href="/contact/">Request technical documents</ArrowLink>
