@@ -9,8 +9,8 @@
 | 1 | HYDE 发布本轮积压（picaporte、计数、9 条新尺寸标题、zh-terms），上线后实测 | 09-24 完成（996a209b6df 上线，L001 Pestillo、LC05 85/60 标题实测） |
 | 2 | 比较页（/compare/*）标题带长尾词：夜锁比较页 70 次展示、排名 9.7、0 点击 | 09-24 完成（「25 Night Latches & Rim Locks Compared Side by Side」，西葡「Comparativa/Comparativo de N …」） |
 | 3 | GSC 机会清单里的其余页面：/contact/（98 展示）、背距与中心距文章（31 展示）的搜索标题和描述 | 09-24 完成（联系页三语标题带「工厂在中国」；背距文章标题带 85mm vs 72mm） |
-| 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 待做 |
-| 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 待做 |
+| 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 09-24 完成（指南缩略图用产品图 label 作 alt；新闻卡片的装饰 logo 本来就对，审计不再误报 aria-hidden 图） |
+| 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 09-24 完成（「More on backset」「Más sobre …」「Mais sobre …」） |
 | 6 | 标题生成器加 `--only <models>`，只重写指定型号 | 待做 |
 | 7 | 标题生成器去掉「Door Hinge for Doors」这类场景和名字重复 | 待做 |
 | 8 | 复查 306-D / 306-S 西葡重复标题是否已消除（seo:graph） | 待做 |

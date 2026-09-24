@@ -53,7 +53,8 @@ export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]
           </div>
           {entry.image && <Link href={localisedHref(`/guides/${entry.slug}/`, locale)} className={styles.thumbnail} tabIndex={-1} aria-hidden="true">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={entry.image.src} alt="" width="200" height="160" loading="lazy" />
+            {/* The label, not "": these are product photographs Google Images can index; the link itself is aria-hidden. */}
+            <img src={entry.image.src} alt={entry.image.label} width="200" height="160" loading="lazy" />
           </Link>}
         </article>)}
         {results.length === 0 && <div className={styles.empty}><h3>{t.empty}</h3><p>{t.emptyText}</p><button type="button" onClick={clear}>{t.clear}</button></div>}
