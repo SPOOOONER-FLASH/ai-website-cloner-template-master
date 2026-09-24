@@ -98,7 +98,11 @@ const DRAWING_FIRST = manifest.imageOrder === "drawing-first";
    (window image); the G1255 pack that arrived 2026-09-17 writes 「主图」 instead. Same
    intent, different word — and without this the hero silently falls back to the first
    product plate, which is a quieter failure than it sounds: the card still looks fine. */
-const isWindowShot = (file) => file.includes("窗图") || file.includes("主图");
+/* …and 「首图」 is the third word for it, on the 2026-09-21 batch: G1110, G1189, G1240,
+   T1278 and T51 all mark their thumbnail that way. Keep adding spellings here rather than
+   renaming the supplier's files — the files are the evidence and get re-delivered. */
+const isWindowShot = (file) =>
+  file.includes("窗图") || file.includes("窗図") || file.includes("主图") || file.includes("首图");
 /*
   UNION encodes the shot type in the filename (D9xxSZ = drawing). The RAYEN catalogue
   batch has no such convention — its pictures are cut out of the printed book by
