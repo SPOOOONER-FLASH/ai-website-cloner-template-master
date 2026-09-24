@@ -12,6 +12,7 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Claude HYDE工程交接配置（johns 机器，tmp/ship-merge） | SEO/GEO 审计、死链、JS、GTM 事件、数据看板；全站长尾词（所有 seoTitle*/seoDescription*、scripts/build-product-titles.mjs —— **从 Hyde 文案移交**，见 tasks/2026-09-24-division-of-labour.md）；美式拼写（content/products 规格标签 + 术语表键、src/app/(en)、src/components）；HYDE 发布棒 | 分工见 tasks/2026-09-24-division-of-labour.md | 2026-09-24 |
 | Claude 雷茵（johns 机器，tmp/claude-rayen-work） | 《雷茵五金》**p76–p84**；《不锈钢把手.pdf》全本；新品类 FH 抽屉拉手 / SP 标志牌（甲方 09-24 批准）；content/rayen/rayen-catalogue-p76*.json 等 | **E:/rayen 那边做到 p75 为止，p76 起归这边**，避免两边重复转录 | 2026-09-24 |
 | Claude HYDE（**E:/cantonlock-hyde** 独立克隆） | scripts/build-product-titles.mjs, src/data/category-positioning.json, content/products（SEO 字段） | 方案第一阶段：标题/描述公式、品类卖点重写、198 条葡语短摘要。第 13 项等甲方定数据与预算，定之前不动 src/data/locales.ts | 2026-09-24 |
 | Codex HYDE fluidity | `src/components/site/SearchDialog.tsx`、搜索 UX 相关测试与协作文档 | 搜索快速重开修复和 HYDE 统计已推主线；我方 `release:hyde` 因 `titles:check` 的 182 条西葡 SEO 字段过期而中止，未提交 `out/`。Claude HYDE 当前持有发布；本线继续处理搜索语言与跳转，不碰 `out/` | 2026-09-24 |
