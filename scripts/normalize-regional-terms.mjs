@@ -131,7 +131,13 @@ const ES_PROSE_RULES = [
 ];
 
 /* Portuguese ----------------------------------------------------------------------------- */
-const INF = "\\p{L}+(?:ar|er|ir|or|ôr)(?:-se)?";
+/*
+  Words ending in -ar/-er/-ir/-or that are not verbs. Without this, "está a maior parte" became
+  "está maiondo parte" and shipped in the push-bar article (Hyde 文案 found it, 2026-09-24).
+*/
+const NOT_VERB =
+  "maior|melhor|pior|menor|anterior|posterior|exterior|interior|superior|inferior|valor|cor|calor|setor|motor|fator|favor|lugar|par|bar|mar|colher|mulher|qualquer|particular|similar|regular|popular|familiar|singular|circular|solar|militar|pilar|dólar|radar";
+const INF = `(?!(?:${NOT_VERB})(?![\\p{L}]))\\p{L}+(?:ar|er|ir|or|ôr)(?:-se)?`;
 const gerund = (inf) => inf.replace(/-se$/, "").replace(/ar$/u, "ando").replace(/er$/u, "endo").replace(/ir$/u, "indo").replace(/[oô]r$/u, "ondo") + (inf.endsWith("-se") ? "-se" : "");
 const PT_RULES = [
   { label: "« » → \" \"", re: /[«»]/g, fn: () => '"' },
