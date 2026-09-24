@@ -16,7 +16,10 @@
 | HYDE 上架 **590** 个产品，覆盖一扇门需要的全部五金：插芯锁体 58、执手 64、球锁 92、锁芯 45、逃生推杠 49、合页 29、闭门器 9、玻璃门五金 26 等 | `content/products`（按 HYDE 过滤） |
 | 主力是**逃生推杠**：一扇门在火灾里能不能打开，靠的就是它 | 首页主推、42 款推杠 |
 | 最大的生产能力：**按客户要求开新模具**；如果设计碰到别人的专利，就改配件或外观，改到不再冲突 | 甲方 09-24 原话 |
-| 买家是经销商、门厂、防火门安装和维保公司、贴牌品牌商 | 巴塞罗那 Serraller、巴西 SAGA、ChatGPT 送来的瑞士和澳大利亚客户 |
+| 出口覆盖欧洲、俄罗斯、北美和南美、土耳其、东南亚 | 甲方 09-24 |
+| 多年参加科隆五金展；西语团队在秘鲁（利马）和阿根廷（布宜诺斯艾利斯）参过展；熟悉俄罗斯市场 | 甲方 09-24 |
+| 现在德国有自己的办公室和常驻公司 | 甲方 09-24 |
+| **最终买单的是贴牌厂家**（甲方 09-24：「我们最终还是卖给贴牌厂家」），其次是经销商、门厂、防火门安装和维保公司 | 甲方 09-24；巴塞罗那 Serraller、巴西 SAGA、ChatGPT 送来的瑞士和澳大利亚客户 |
 
 ## 二、核心洞察
 
@@ -47,21 +50,24 @@
 
 > **Made in Xiaolan. Since 1998.**
 > Nobody praises door hardware on a good day, and that is the job. A lever should feel the same on its last turn as on its first. A lock case should hold its line for years. And on the one day a corridor fills with smoke, a push bar should open the door at the first touch, for whoever reaches it first.
-> We have made that hardware since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports. ISO 9001 certified since 2002. Panic exit devices, lock cases, locks and cylinders, levers, hinges and glass door fittings, for distributors, door makers and brands that sell them under their own name. When your name goes on it, we want you to sleep well.
+> We have made that hardware since 1998 in Xiaolan, the Zhongshan town that ships close to a third of China's lock exports, ISO 9001 certified since 2002. It is on doors across Europe, Russia, North and South America, Turkey and Southeast Asia. For years we met our buyers at the Cologne hardware fair; our Spanish-speaking team has exhibited in Lima and Buenos Aires; today we have our own office in Germany.
+> Much of what we make leaves under our customers' brands, and that is the work we are best at. Bring us a drawing or a sample and we will tool it. If a design runs into someone else's patent, our engineers rework the parts or the look until it doesn't. When your name goes on it, we want you to sleep well.
 > *Hardware you can stand behind.*
 
 **ES**
 
 > **Hecho en Xiaolan. Desde 1998.**
 > Nadie elogia un herraje en un día normal, y justamente ese es su trabajo. Una manija tiene que sentirse igual en su último giro que en el primero. Una cerradura tiene que aguantar años sin ceder. Y el día que un pasillo se llena de humo, una barra antipánico tiene que abrir la puerta al primer toque, para quien llegue primero.
-> Fabricamos esos herrajes desde 1998 en Xiaolan, la localidad de Zhongshan de donde sale casi un tercio de las cerraduras que exporta China. Certificación ISO 9001 desde 2002. Barras antipánico, cajas de cerradura, cerraduras y cilindros, manijas, bisagras y herrajes para vidrio, para distribuidores, fabricantes de puertas y marcas que los venden con su propio nombre. Cuando su nombre va en ellos, queremos que duerma tranquilo.
+> Fabricamos esos herrajes desde 1998 en Xiaolan, la localidad de Zhongshan de donde sale casi un tercio de las cerraduras que exporta China, con certificación ISO 9001 desde 2002. Están en puertas de Europa, Rusia, Norteamérica y Sudamérica, Turquía y el Sudeste Asiático. Durante años recibimos a nuestros compradores en la feria de ferretería de Colonia; nuestro equipo, que habla español, ha expuesto en Lima y en Buenos Aires; hoy tenemos oficina propia en Alemania.
+> Buena parte de lo que fabricamos sale con la marca de nuestros clientes, y es el trabajo que mejor hacemos. Tráiganos un plano o una muestra y hacemos el molde. Si un diseño choca con la patente de otro fabricante, nuestros ingenieros modifican las piezas o el aspecto hasta que deja de chocar. Cuando su nombre va en ellos, queremos que duerma tranquilo.
 > *Herrajes que dan la cara.*
 
 **PT**
 
 > **Feito em Xiaolan. Desde 1998.**
 > Ninguém elogia uma ferragem num dia comum, e esse é justamente o trabalho dela. Uma maçaneta precisa ter no último giro a mesma sensação do primeiro. Uma fechadura precisa aguentar anos sem ceder. E no dia em que um corredor se enche de fumaça, uma barra antipânico precisa abrir a porta no primeiro toque, para quem chegar primeiro.
-> Fabricamos essas ferragens desde 1998 em Xiaolan, a cidade de Zhongshan de onde sai quase um terço das fechaduras que a China exporta. Certificação ISO 9001 desde 2002. Barras antipânico, caixas de fechadura, fechaduras e cilindros, maçanetas, dobradiças e ferragens para vidro, para distribuidores, fabricantes de portas e marcas que as vendem com o próprio nome. Quando o seu nome vai nelas, queremos que você durma tranquilo.
+> Fabricamos essas ferragens desde 1998 em Xiaolan, a cidade de Zhongshan de onde sai quase um terço das fechaduras que a China exporta, com certificação ISO 9001 desde 2002. Elas estão em portas da Europa, da Rússia, das Américas do Norte e do Sul, da Turquia e do Sudeste Asiático. Durante anos recebemos nossos compradores na feira de ferragens de Colônia; nossa equipe, que fala espanhol, já expôs em Lima e em Buenos Aires; hoje temos escritório próprio na Alemanha.
+> Boa parte do que fabricamos sai com a marca dos nossos clientes, e é o trabalho que fazemos melhor. Traga um desenho ou uma amostra e nós fazemos o molde. Se um projeto esbarrar na patente de outro fabricante, nossos engenheiros alteram as peças ou a aparência até que deixe de esbarrar. Quando o seu nome vai nelas, queremos que você durma tranquilo.
 > *Ferragem que você assina embaixo.*
 
 ## 五、五根支柱（每根都有证据）
@@ -70,9 +76,14 @@
 |---|---|---|
 | 1 为最坏的那一天而造 | *Made for the day nobody plans for.* | 42 款推杠，从单点明装到双开门多点；成套配顺序器、闭门器 |
 | 2 你画出来，我们开模 | *Bring us a drawing. Leave with a product.* | 按客户图纸或样品开新模具；碰到别人的专利就改配件或外观，改到不再冲突 |
+| 2b 走过的市场 | *We know your market.* | 出口欧洲、俄罗斯、美洲、土耳其、东南亚；多年参加科隆展；西语团队在利马、布宜诺斯艾利斯参展；德国有办公室 |
 | 3 一扇门，一个供应商 | *Everything a door needs.* | 590 个型号，从执手到锁体、锁芯、合页、闭门器 |
 | 4 数字说话 | *Every dimension, written down.* | 规格表写到毫米；ISO 9001 始于 2002 年 |
 | 5 实话实说 | *Straight answers, before the container ships.* | 测试报告在谁名下就说在谁名下；自己名下的 CE、ANSI 正在准备（甲方 09-24） |
+
+## 五之二、不能写的
+
+甲方另外给了一些不公开的背景，只用来把握语气和底气，**不上页面，也不进仓库**。不写“TÜV 认证”或“TÜV 测试”：有 TÜV 的工程师朋友，不等于拿到了 TÜV 认证。
 
 ## 六、语气
 
