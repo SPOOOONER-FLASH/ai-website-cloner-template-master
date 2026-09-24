@@ -6,16 +6,21 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 502 次提交
+最近 30 天 · 共 507 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:51 | 中立 | GTM/GA4/Clarity：阅读深度、阅读方式（快速滑过/认真读）、产品与联系点击事件；手册加 GA4 自定义维度步骤 | `4448b30f8ca` |
-| 08:43 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `39a3f529592` |
-| 08:43 | 中立 | release：推送前先对齐远端；被别的会话抢先推送不计入三次失败 | `6e6e13c46e8` |
-| 08:41 | 中立 | 葡语「estar a + 不定式」规则排除非动词（maior 被改成 maiondo） | `15de670963d` |
+| 08:48 | 中立 | 雷茵镜像：跟进 HYDE 美式拼写改动，重生成 products-zh.json 与雷茵搜索索引 | `4c3427293a0` |
+| 08:45 | HYDE | HYDE 侧：雷茵 p81 新型号的 products-hyde 水印图（24 张） | `44fedb59a2c` |
+| 08:45 | 雷茵 | 雷茵 p81：地吸 4 款、安全门扣 5 款、指示器 1 款 | `5f17f81b4b6` |
+| 08:45 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `eb515dba289` |
+| 08:44 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `ee79612a47f` |
+| 08:44 | 中立 | 英文产品摘要：6082 SN、BH05–BH07 去掉双句号和省略号，按规格行重写 | `978931910b0` |
+| 08:39 | 中立 | NOW.md：HYDE 发布 32871f5eb0c 上线，发布棒交还工程会话；葡语短摘要完成 | `492d8849a7c` |
+| 08:35 | 中立 | 033 葡语短摘要去掉双句号；PUSH-PENDING：HYDE 发布 32871f5eb0c 已推送 | `cac5bfbfc41` |
+| 08:17 | 中立 | 产品：补齐 198 条葡语短摘要（summaryPt） | `39f5ae07ba2` |
 | 08:36 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `eac9c99865c` |
 | 08:35 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `39ac0671717` |
 | 08:34 | HYDE | 西葡改写第 1 批（二）：推杠文章、方轴指南；三语删去“持有自有测试文件”的不实说法 | `138e9d41196` |

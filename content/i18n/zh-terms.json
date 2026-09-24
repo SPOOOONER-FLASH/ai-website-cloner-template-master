@@ -612,7 +612,12 @@
     "Height 83mm; head Ø35mm; base Ø50mm": "高 83mm；吸头 Ø35mm；底座 Ø50mm",
     "Height 84mm; head Ø35mm; base Ø48mm": "高 84mm；吸头 Ø35mm；底座 Ø48mm",
     "Height 65mm; base 42mm": "高 65mm；底座 42mm",
-    "Height 42mm; base Ø30mm": "高 42mm；底座 Ø30mm"
+    "Height 42mm; base Ø30mm": "高 42mm；底座 Ø30mm",
+    "56 × 55mm; fixing centres 38.5mm": "56 × 55mm；孔距 38.5mm",
+    "Catch 20 × 59mm; base Ø57mm": "吸座 20 × 59mm；底座 Ø57mm",
+    "Chain length 180mm": "链长 180mm",
+    "Bolt 66 × 40.8mm; indicator plate 42 × 62mm": "插销 66 × 40.8mm；显示牌 42 × 62mm",
+    "Brushed PVD": "PVD拉丝"
   },
   "tokens": [
     [
@@ -1518,6 +1523,10 @@
     [
       "Brushed Gold",
       "金拉丝"
+    ],
+    [
+      "Brushed Steel",
+      "钢拉丝"
     ]
   ]
 }

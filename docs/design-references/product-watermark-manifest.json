@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5385,
+  "count": 5409,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -63057,6 +63057,186 @@
       "outputSha256": "391f5c2d8f928c1ecb85eeb701570d47065bb322963a59baaf91b38a66105304"
     },
     {
+      "source": "public/images/products/d3759-ss-security-door-guard-2.webp",
+      "output": "public/images/products-hyde/d3759-ss-security-door-guard-2.webp",
+      "width": 555,
+      "height": 555,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 67,
+        "logoHeight": 17
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3c3a86150ecfb09c76e764eab78a5ba9c547f72b14badc1a06db4a1fc2d69e8f",
+      "outputSha256": "693a4c6ed63dc5307495c830acb0a84280da0904173af7625a994a0bf61f66ae"
+    },
+    {
+      "source": "public/images/products/d3759-ss-security-door-guard.webp",
+      "output": "public/images/products-hyde/d3759-ss-security-door-guard.webp",
+      "width": 701,
+      "height": 701,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 84,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "25bd1e8c83843169c319cac9eee140665afbd1e9e26249ebbd3c33f7474b1002",
+      "outputSha256": "95efe9cee6c19086d7174099f64227a2b2fb1a07c10b0d404eff6d4c4b053c82"
+    },
+    {
+      "source": "public/images/products/d3760-ss-security-door-guard-2.webp",
+      "output": "public/images/products-hyde/d3760-ss-security-door-guard-2.webp",
+      "width": 431,
+      "height": 431,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e1b3c0613e3a18e76d2498cb056a27b5b4b4c1d6e06569835e77ffb7a2133a15",
+      "outputSha256": "2b17faa68531607f457a197ee77ac0e054c024cef6af9b6349e6c497c41fb95b"
+    },
+    {
+      "source": "public/images/products/d3760-ss-security-door-guard.webp",
+      "output": "public/images/products-hyde/d3760-ss-security-door-guard.webp",
+      "width": 709,
+      "height": 709,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 85,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "632bb409a21ff639136c60a40f729e75da7a39bd34838e90e2627e16b1e533fd",
+      "outputSha256": "f408440f1483f277837622e9194b155c42d9d58f460f9c634c1edee40067e350"
+    },
+    {
+      "source": "public/images/products/d3769-ss-door-stopper-2.webp",
+      "output": "public/images/products-hyde/d3769-ss-door-stopper-2.webp",
+      "width": 413,
+      "height": 413,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "114c3c75b7b92ddfe4825d548c46924adc1ffd3d90f9e03e4a4bb45a658401f3",
+      "outputSha256": "06f2ac19ed9352d8e74174a78b7e0e17c859102065319f1cd9a24382a68f9d76"
+    },
+    {
+      "source": "public/images/products/d3769-ss-door-stopper.webp",
+      "output": "public/images/products-hyde/d3769-ss-door-stopper.webp",
+      "width": 717,
+      "height": 717,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 86,
+        "logoHeight": 22
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "825e9c0a2a50fd62046afb2b10e5096ae967312dfb9e129d292e3212319ebc62",
+      "outputSha256": "2c3fea7a9f85ad335f3d8b185789a7eab3b8b13acc92e45cbd60910ac2780c25"
+    },
+    {
+      "source": "public/images/products/d3770-door-stopper-2.webp",
+      "output": "public/images/products-hyde/d3770-door-stopper-2.webp",
+      "width": 343,
+      "height": 343,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2d2ca750e2c4eea8eff215d746af3f087b6214fed78ac5bffec85f64b3618fe9",
+      "outputSha256": "26edf776b449a2c4a115824cd5a1b25f3853a5eb9e7c0ce1aa9adac7b566b039"
+    },
+    {
+      "source": "public/images/products/d3770-door-stopper-3.webp",
+      "output": "public/images/products-hyde/d3770-door-stopper-3.webp",
+      "width": 530,
+      "height": 530,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "24dd14a6a74b2192170858aa7162a8b34e6da8b14098947c312f5a6423f495fe",
+      "outputSha256": "82023c8c09184a14f274bb9bc2eca1f990c66ef64c2e843abb8926ac6a088cc5"
+    },
+    {
+      "source": "public/images/products/d3770-door-stopper-4.webp",
+      "output": "public/images/products-hyde/d3770-door-stopper-4.webp",
+      "width": 532,
+      "height": 532,
+      "geometry": {
+        "margin": 13,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "41bf13626f0261ab56469a23d25d7644d35550ff829a4a8cee514f6334c4ecb8",
+      "outputSha256": "11f9f1ba93d001467fbb47e704b9cd2ffd444d6648595c218502d1695a184a49"
+    },
+    {
+      "source": "public/images/products/d3770-door-stopper.webp",
+      "output": "public/images/products-hyde/d3770-door-stopper.webp",
+      "width": 540,
+      "height": 540,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f396635786b27eadba7d580c37dd42b896a290fe49e6bd3e84affbfae7b5c8ba",
+      "outputSha256": "0aab0deae6781f8363704556987fad979f24e846f0b03798f6ec025627e0f4af"
+    },
+    {
       "source": "public/images/products/d3771-door-stopper-2.webp",
       "output": "public/images/products-hyde/d3771-door-stopper-2.webp",
       "width": 327,
@@ -63199,6 +63379,42 @@
       },
       "sourceSha256": "f5f39edfa3c7712feca7c907c428428e94ebc1471d030ec1dcb013439222b557",
       "outputSha256": "795fbe1340afd4f7b146a2c072fbdedb7ef086a40f42a7293198149de3b40d2d"
+    },
+    {
+      "source": "public/images/products/d3776-ss-door-stopper-2.webp",
+      "output": "public/images/products-hyde/d3776-ss-door-stopper-2.webp",
+      "width": 438,
+      "height": 438,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fadf5ac0803eacc01b95ab523377cb1d7d01d5515725f44f22a04a757209a70d",
+      "outputSha256": "493ae387469ef6c8fd62e634aaf2abd36173b7b2440b9ed4ac8b5928c77c03c8"
+    },
+    {
+      "source": "public/images/products/d3776-ss-door-stopper.webp",
+      "output": "public/images/products-hyde/d3776-ss-door-stopper.webp",
+      "width": 717,
+      "height": 717,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 86,
+        "logoHeight": 22
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "22f5747fe27fde0386496774ffcbc7624e1fb22082a8262f74623c8684ddce3c",
+      "outputSha256": "c832d7e9dd939a8899f249e0b6ab16ff868308a27c1c0080750238881b794629"
     },
     {
       "source": "public/images/products/d3810-door-stopper-2.webp",
@@ -63397,6 +63613,222 @@
       },
       "sourceSha256": "c195b504ca5bd8b9d2eb3406271d9f226708848ca1054154f15f29f998ce246c",
       "outputSha256": "4e64e930c826134f38a7811f8a4b8ce3194f9dce07b72f83086d9557bdbef8da"
+    },
+    {
+      "source": "public/images/products/d3867-door-stopper-2.webp",
+      "output": "public/images/products-hyde/d3867-door-stopper-2.webp",
+      "width": 338,
+      "height": 338,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3afcf990b248d9e891531a9ce56b8b4db2b835f1996f5ac6309209415ced62a8",
+      "outputSha256": "033eab2a71882695ae164c776540b926a1628c5332045ebc6e2875e319b55ec5"
+    },
+    {
+      "source": "public/images/products/d3867-door-stopper-3.webp",
+      "output": "public/images/products-hyde/d3867-door-stopper-3.webp",
+      "width": 484,
+      "height": 484,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fd70216f6f73ef7ca4463dbec5605c07333d07c898265b713abd7be436c7beb0",
+      "outputSha256": "86fd42899c8dcde753aeabf0770ef9b445f3f7f1a4bc2a989884b36568ca251d"
+    },
+    {
+      "source": "public/images/products/d3867-door-stopper-4.webp",
+      "output": "public/images/products-hyde/d3867-door-stopper-4.webp",
+      "width": 474,
+      "height": 474,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f6a3a959d8c8bf92a51212f82b94cdb76008a97b6248e4493170b1381e9efd97",
+      "outputSha256": "9e0f9fbe1ed75829a6291a3129170d0298d032afe403ff57089baec73ea4002d"
+    },
+    {
+      "source": "public/images/products/d3867-door-stopper.webp",
+      "output": "public/images/products-hyde/d3867-door-stopper.webp",
+      "width": 497,
+      "height": 497,
+      "geometry": {
+        "margin": 12,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9fa5716960f5eae581447603fadf2910498a221af0e0a080e911c66f45b46d1a",
+      "outputSha256": "5eafe140b030c0ea1d32e2f2325131f16f10c65866c34bf3380fa5428f45641d"
+    },
+    {
+      "source": "public/images/products/d3869-sn-security-door-guard-2.webp",
+      "output": "public/images/products-hyde/d3869-sn-security-door-guard-2.webp",
+      "width": 569,
+      "height": 569,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 68,
+        "logoHeight": 17
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a406fed5f39481755a4fcffa03e26b158468df55601929afb42d2843db8cadc4",
+      "outputSha256": "f035b827e08d8bb4bf2dd6a9b170615eddcb34fca527c00ab402052c80f6f40d"
+    },
+    {
+      "source": "public/images/products/d3869-sn-security-door-guard.webp",
+      "output": "public/images/products-hyde/d3869-sn-security-door-guard.webp",
+      "width": 630,
+      "height": 630,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 76,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d630c907f1cb8289462da2cfe87b30fd2d7b64094524af2cfb48a3f39e6d1ff7",
+      "outputSha256": "bcaaa47198c6bf39ae503d458924992f9392c71e77865a2baad8ef93bb7573b3"
+    },
+    {
+      "source": "public/images/products/d3870-sn-security-door-guard-2.webp",
+      "output": "public/images/products-hyde/d3870-sn-security-door-guard-2.webp",
+      "width": 638,
+      "height": 638,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 77,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "34f239403a39fed080452b1d94ac4e5f8dd0c52d31763e07bdcfbc9e6d46d87f",
+      "outputSha256": "235aef6c23868ba62d3a332c859c629d58c2646696668375410bb82934a06df9"
+    },
+    {
+      "source": "public/images/products/d3870-sn-security-door-guard.webp",
+      "output": "public/images/products-hyde/d3870-sn-security-door-guard.webp",
+      "width": 636,
+      "height": 636,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 76,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f58d5da136fbb6fb2064ced623eb4baada2a1f3f7650e493f7ed019620ce42af",
+      "outputSha256": "55acd4dba6b3a56af22e70b03383aa10d75e12bec595393d36069617ea47dcdb"
+    },
+    {
+      "source": "public/images/products/d3871-sn-security-door-guard-2.webp",
+      "output": "public/images/products-hyde/d3871-sn-security-door-guard-2.webp",
+      "width": 426,
+      "height": 426,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "06cb9214a1bff87962c58b13829f1e57eaad96cf9437c6c94ca5285fee9a2aad",
+      "outputSha256": "bbd2e73ab1bbd9138c36caa5b8a717ab175271e26df79fc358a7b93ae32afd70"
+    },
+    {
+      "source": "public/images/products/d3871-sn-security-door-guard.webp",
+      "output": "public/images/products-hyde/d3871-sn-security-door-guard.webp",
+      "width": 600,
+      "height": 600,
+      "geometry": {
+        "margin": 15,
+        "logoWidth": 72,
+        "logoHeight": 18
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3546ac2d86f7a7a60ce2b7ff6bd264b6d960fcaac55a448d04385b0afee6ef5c",
+      "outputSha256": "db67a83e7b4b109ab25bd14be64983622743c6f9d58a72aa6e9910e0faaeefec"
+    },
+    {
+      "source": "public/images/products/d3872-cp-indicator-2.webp",
+      "output": "public/images/products-hyde/d3872-cp-indicator-2.webp",
+      "width": 667,
+      "height": 667,
+      "geometry": {
+        "margin": 17,
+        "logoWidth": 80,
+        "logoHeight": 20
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "30e06961df66b673790459ffb1d2513090b11b6a2e8505c06c1fac621b86af52",
+      "outputSha256": "d00a8ba285ee42e111ba6192ad3851b7af3ca932f3c9880d0853bf1047493f40"
+    },
+    {
+      "source": "public/images/products/d3872-cp-indicator.webp",
+      "output": "public/images/products-hyde/d3872-cp-indicator.webp",
+      "width": 540,
+      "height": 540,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 65,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bd91efde92e261b485b46ca41d5a4f2a16ac745b2cc37c8ca44481c7ec34bf70",
+      "outputSha256": "b2b81c0a58a3044d1a90a32c5d4c03b21d27557919548e33f7eeeaa59d234924"
     },
     {
       "source": "public/images/products/d3873-magnetic-pin-2.webp",
