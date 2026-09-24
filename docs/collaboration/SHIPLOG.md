@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 15:58 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3e49105ca31` |
-| 15:57 | HYDE | 西葡用词排查：葡语欧式进行时、西语 móvil/pillar/la web、dogging 补译 | `cb44817fbed` |
+| 15:58 | HYDE | 锁体横评三语 SEO 定稿（去掉过期的个数） | `b7464c4d03f` |
+| 15:54 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 4ff6db0c9a1 | `9a7aae0ded6` |
 | 15:54 | HYDE | 文章失实排查：删“自有 EN 1125 文件”和“我们的地弹簧在闭门器类目”，三语 | `94cfb161307` |
 | 15:50 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `58108571358` |
 | 15:50 | HYDE | 锁体对比指南：补西语、葡语；生成器接管三语的表格、计数句、摘要和 FAQ（修正过期的 27/18/9） | `6322a70ef29` |
