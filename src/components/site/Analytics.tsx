@@ -1,5 +1,6 @@
 import Script from "next/script";
 import { analytics, indexable } from "@/data/site";
+import { EngagementTracker } from "./EngagementTracker";
 
 /** Render in each root layout's real head. Moving this node after export breaks React hydration. */
 export function AnalyticsHead() {
@@ -33,6 +34,8 @@ export function Analytics() {
 
   return (
     <>
+      {/* Reading depth, read style, product and contact clicks (src/lib/engagement.ts). */}
+      <EngagementTracker />
       {ga4Id ? (
         <>
           {/*
