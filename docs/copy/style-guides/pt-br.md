@@ -27,7 +27,9 @@ B 端方向和真实买家，见 [README](README.md)；SAGA 的背景见 `docs/r
 
 LC07：
 
-> Caixa de fechadura de embutir, entre-eixos de 85 mm e distância ao eixo de 45 mm; testa de 240 × 23 mm, caixa com 173 mm de altura e 72 mm de profundidade; avanço do trinco de 26 mm e da lingueta de 18,5 mm.
+> Caixa de fechadura de embutir, entre-eixos de 85 mm e distância ao eixo de 45 mm; testa de 240 × 23 mm, caixa com 173 mm de altura e 72 mm de profundidade; curso da lingueta de 26 mm e saída do trinco de 18,5 mm.
+
+（术语按 `src/data/pt-glossary.ts`：lingueta = 斜舌，trinco = 方舌。LC07 的规格行是 *Latch throw 26mm* 和 *Bolt projection 18.5mm*。）
 
 这个句式可以用来补 198 条太短的葡语摘要（现在很多只有“Fechadura de sobrepor.”，即“明装锁。”）。目录里没有的材质不写。
 
@@ -35,6 +37,9 @@ LC07：
 
 家里防盗、*proteja sua família* 这类话 · 感叹号 · *líder de mercado* · tu 的动词形式 · 没有测过的认证。
 
-## 5. 待确认
+## 5. 待问巴西买家（例如 SAGA），确认前不批量改
 
-backset 叫什么：Papaiz 写 *distância de broca*，我们的术语表用 *distância ao eixo*。voice 文件已定为**先问巴西买家**，可以请 SAGA 看一眼。
+| 问题 | 现状 |
+|---|---|
+| 斜舌和方舌哪个叫 trinco、哪个叫 lingueta | 术语表表头：lingueta = 斜舌、trinco = 方舌（依据 ABNT NBR 11742）。但 Papaiz 和 Aliança 的写法相反；术语表第 630 行 *Latch and square deadbolt → Trinco e lingueta quadrada* 和表头也矛盾；已上线的葡语文章（包括 09-24 第一批）多数用 trinco 表示斜舌。**这件事牵动全站葡语，确认后只统一改一次**；在那之前以术语表为准 |
+| backset | 术语表 09-24 已定为 *Distância ao eixo (broca)*，两个词都保留，不用再问 |
