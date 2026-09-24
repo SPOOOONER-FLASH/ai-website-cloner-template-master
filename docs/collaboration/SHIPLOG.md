@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 441 次提交
+最近 30 天 · 共 436 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 06:40 | 中立 | 弹窗：目录下载换成配置器，葡语页面恢复弹窗 | `1ae899aca79` |
 | 03:59 | 中立 | ship：失败原因过滤 CRLF 警告；积压记录标注已解决 | `d0ca5d29d2e` |
 | 03:55 | 中立 | Reject mismatched product composites as publication assets | `7bf30d9223d` |
 | 03:46 | 中立 | ship：共用工作区合并被挡住时，改在旁路检出 tmp/ship-merge 里合并并推送 | `1e9a61730d0` |
@@ -557,10 +558,4 @@
 | 07:28 | 中立 | 记录 webhook 方案 B 为未实施的后续可选项 | `bb7f734488a` |
 | 07:18 | 中立 | 记录生产 5 秒全量重写循环的根因与修复方案 | `c06a57381aa` |
 | 07:16 | 中立 · 发布 HYDE | 弹窗加入 Company / Downloads 页 | `9159835f04a` |
-| 06:32 | 发布 HYDE | Rebuild export after semantic audit hardening | `aa4640f304f` |
-| 06:30 | 中立 | Deepen structured data export validation | `839cb185b1c` |
-| 05:46 | 发布 HYDE | Rebuild static export for bilingual SEO fixes | `20698cb15df` |
-| 05:46 | HYDE | Harden bilingual SEO and semantic export auditing | `c18e690b46f` |
-| 05:02 | 中立 · 发布 HYDE | 弹窗：取消冷却、加入选型器页面 | `72027d5dbce` |
-| 04:21 | 中立 · 发布 HYDE | 产品页直达阿里对应型号；/products 改为 Finder 入口；首屏图片优先加载 | `be5316c86d3` |
 
