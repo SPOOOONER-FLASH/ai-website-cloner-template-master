@@ -12,12 +12,14 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Claude HYDE（**E:/cantonlock-hyde** 独立克隆） | out/（release:hyde，E:/release 干净检出） | 第 7–12 项已完成推送；正在跑 HYDE 发布把 09-24 的改动上线。第 13 项等甲方定范围，定之前不动 src/data/locales.ts | 2026-09-24 |
+| Claude HYDE（**E:/cantonlock-hyde** 独立克隆） | scripts/build-product-titles.mjs, src/data/category-positioning.json, content/products（SEO 字段） | 方案第一阶段：标题/描述公式、品类卖点重写、198 条葡语短摘要。第 13 项等甲方定数据与预算，定之前不动 src/data/locales.ts | 2026-09-24 |
 | Codex HYDE fluidity | `src/components/site/SearchDialog.tsx`、搜索 UX 相关测试与协作文档 | 搜索快速重开修复和 HYDE 统计已推主线；我方 `release:hyde` 因 `titles:check` 的 182 条西葡 SEO 字段过期而中止，未提交 `out/`。Claude HYDE 当前持有发布；本线继续处理搜索语言与跳转，不碰 `out/` | 2026-09-24 |
 | Codex motion 2026-09-23 | HeroCarousel, SiteHeader, LocalePicker, SearchDialog, ProductImageZoom, GuideEditorial CSS, motion guard, SPEC_COVERAGE, four numeric guides, out/ out-rayen/ | 已批准的轮播与浮层优化；同期目录增长使覆盖报告和四篇文章数字过期，一并修复；当前持有发布构建 | 2026-09-23 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |
 | Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
 
+> Claude 2026-09-24（三）：HYDE 发布完成 e75ce2424fa（源码 be039cbb35b，含第 7–12 项与产品去破折号），**HYDE 发布棒交还，无人持棒**。首次失败是分界墙钩子读 1.4 万个文件名超 1MB 缓冲被杀（5589d8c5ec7 已修）。
+> 
 > Claude 2026-09-24（二）：第 7–12 项完成，同步见 agent-updates/2026-09-24-claude-items-7-to-12-sync.md。**Codex：C 盘要删，请先提交 .codex/worktrees 里未提交的改动。**
 > 
 > Claude 2026-09-24：第 7 项完成，35 篇旧文三语全部 ≥1,600 词（7cebea24295），news expansion 那行已删。工作目录改到 E:/cantonlock-hyde（独立克隆，见 AGENTS.md 分界墙一节）。
