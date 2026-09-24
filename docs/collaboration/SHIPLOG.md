@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 526 次提交
+最近 30 天 · 共 530 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 14:42 | HYDE | 维修调查三语计数跟上规格补全；EH01–EH03 西语摘要按实拍区分 | `b9082fb82ac` |
+| 12:15 | 中立 | NOW：雷茵已迁到独立仓 SPOOOONER-FLASH/rayen，本仓雷茵车道冻结 | `c3d535a297e` |
+| 10:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 f48d2187354 | `996a209b6df` |
+| 10:12 | 中立 | 画集：S03 删去与主图字节相同的第 3 张 | `8ab430f8d43` |
 | 10:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d1c561f2183` |
 | 10:12 | HYDE | 服务页改为贴牌视角：Bring us a drawing. Leave with a product. | `fe0768dd139` |
 | 10:09 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `0af80ebeb81` |
