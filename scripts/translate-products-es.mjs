@@ -111,7 +111,7 @@ const NUMERIC_RULES = [
   [/^([\d]+(?:\s*\/\s*[\d]+)+)\s*mm$/i, (m) => `${m[1].replace(/\s*\/\s*/g, "/")} mm`],
   [
     /^([\d\s./]+mm(?:\s*\/\s*[\d\s./]+mm)?) adjustable, latch and deadbolt both$/i,
-    (m, sp) => `${sp(m[1])} regulable, tanto el picaporte como el cerrojo`,
+    (m, sp) => `${sp(m[1])} regulable, tanto el pestillo como el cerrojo`,
   ],
   // "35–50mm" / "8-12mm" — a range; Spanish spells it out rather than keeping the dash.
   [/^([\d.]+)\s*[–-]\s*([\d.]+)\s*mm$/i, (m) => `de ${DIM(m[1])} a ${DIM(m[2])} mm`],
