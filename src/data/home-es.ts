@@ -64,7 +64,7 @@ export const teaser1: PageTeaserContent = {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-real-lever-set-dark.webp",
         label:
-          "Juego completo de cerradura tubular de manija sobre fondo oscuro: dos manijas sobre roseta con el cuadradillo y el mecanismo a la vista, el picaporte tubular, el cerradero, la placa y tres tornillos de fijación —todas las piezas en un mismo acabado",
+          "Juego completo de cerradura tubular de manija sobre fondo oscuro: dos manijas sobre roseta con el cuadradillo y el mecanismo a la vista, el pestillo tubular, el cerradero, la placa y tres tornillos de fijación —todas las piezas en un mismo acabado",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
