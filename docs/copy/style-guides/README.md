@@ -1,7 +1,15 @@
 # 三个市场的文风调研：本地五金厂商怎么写（2026-09-24，Claude）
 
 目的：HYDE 英、西、葡三语文案按**目标市场本地厂商的写法**重写，而不是按“翻译得对”重写。
-本文件列出调研的公司、拆出的写法规律；三份指南是它的结论：
+**这组文件在整套文案规则里的位置**（不一致时，以排在前面的为准）：
+
+1. `docs/collaboration/2026-09-24-copy-longtail-multilingual-plan.md`：总方案、总声音、执行顺序
+2. `docs/collaboration/2026-09-24-voice-en-es-pt.md` 和 `src/data/es-glossary.ts` / `pt-glossary.ts`：每种语言怎么落地，以及术语
+3. **本目录**：24 家本地公司的调研，外加三份指南（只补前两份没写的内容）
+
+同一天另一个会话读的是另一批来源（Von Duprin、I Dig Hardware、Travex、Battaglia、Jako、La Fonte、PCF Brasil），两边合起来覆盖面更广。
+
+三份指南：
 
 | 指南 | 服务的读者 | 文件 |
 |---|---|---|
@@ -9,12 +17,12 @@
 | 西语（拉美中性） | 墨西哥、阿根廷、秘鲁的进口商和经销商 | [es-latam.md](es-latam.md) |
 | 葡语（巴西） | 巴西的经销商和门厂 | [pt-br.md](pt-br.md) |
 
-执行计划：[`docs/collaboration/tasks/2026-09-24-copy-style-rewrite.md`](../../collaboration/tasks/2026-09-24-copy-style-rewrite.md)
+本次新增的待办和待决：[`docs/collaboration/tasks/2026-09-24-copy-style-rewrite.md`](../../collaboration/tasks/2026-09-24-copy-style-rewrite.md)
 
 **重跑语料**：`node scripts/collect-copy-corpus.mjs`，输出到 `tmp/claude-copy-corpus/`，该目录已被 gitignore。
 语料是别家受版权保护的文字，只供分析，**不进仓库，也不上我们的页面**。指南里的例句全部是用 HYDE 自己的产品写的。
 
-**量化**：`node scripts/audit-copy-locale.mjs` 统计不符合目标市场用词的地方，指南里的规则都能在这里数出来。
+**量化**：`node scripts/normalize-us-spelling.mjs --check` 和 `node scripts/normalize-regional-terms.mjs`（不加参数时只报告，不修改）。
 
 ---
 
@@ -95,7 +103,7 @@
 
 美国商用品牌（Detex、Marks）换了一种写法：**标准等级 + 适用场景 + 系列号**，比如 Grade 1、UL、适用学校或高频使用场景。
 
-→ HYDE 的产品数据本来就是按部件整理的，**这是最该学、成本也最低的一条**。
+→ HYDE 的规格行本来就是按部件列尺寸的（面板、锁体、锁舌伸出量），**这是最该学、成本也最低的一条**。材质只写目录公开了的。
 
 ### 3. 历史写成具体年份，不写“多年经验”
 
@@ -137,21 +145,18 @@ Kallay 写 1946，Currao 写 1964，Papaiz 写 1952，Aliança 写 1927，Trabex
 
 ---
 
-## 四、HYDE 现状（2026-09-24 实测，`audit-copy-locale.mjs`）
+## 四、HYDE 现状（2026-09-24）
 
-范围：`content/news`（35 篇）和 `content/guides`（40 篇），三种语言分字段统计。
+早上用旧的检出统计过一次：英语有 620 处英式拼写；西语有 manilla 215、picaporte 85、cortafuegos 21。
+同一天，另一个会话的 `normalize-us-spelling.mjs` 和 `normalize-regional-terms.mjs` 已经改掉其中大部分，并加了测试守住。**现在还剩的**：
 
-| 语言 | 问题 | 处数 | 说明 |
-|---|---|---|---|
-| 英语 | 英式拼写 | 569 | centre 203、catalogue 188、colour 45、aluminium 40 |
-| 英语 | -ise 拼法 | 51 | organised、standardised 等 |
-| 西语 | manilla | 215 | 西班牙和智利的说法；三个目标国通用 manija |
-| 西语 | picaporte | 85 | 现在指锁舌，**阿根廷读者会理解成执手** |
-| 西语 | cortafuegos | 21 | 西班牙拼法；拉美写 cortafuego |
-| 葡语 | 葡萄牙葡语用法 | 7 | registar 3 处、tu 形式 4 处，基本干净 |
-
-**结论**：现有西语是**西班牙西语**，不是拉美西语；英语是**英式英语**。葡语在用词上已基本是巴西口吻，要补的是第二节第 2 条那种按部件写的产品描述。
-这些数字只统计了用词。句子写得像不像翻译腔，由另一个脚本 `audit-copy-register.mjs` 统计。
+| 语言 | 剩什么 | 处理 |
+|---|---|---|
+| 西语 | cortafuegos 21 处 | voice 文件已定 puerta cortafuego → 在 normalize-regional-terms 里加一条规则 |
+| 西语 | picaporte 106 处（指锁舌） | 在阿根廷口语里指执手 → 待甲方决定，见 es-latam.md 第 4 节 |
+| 英语 | tonnes、labour、recognised、authorisation 等十几处 | 补进 normalize-us-spelling 的词表 |
+| 葡语 | tens 4 处（tu 的动词形式） | 看上下文，逐处改 |
+| 葡语 | 产品规格里的小数点（产品层） | 并入总方案的产品层；文章里已经用逗号 |
 
 ---
 

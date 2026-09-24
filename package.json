@@ -92,7 +92,6 @@
     "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check && node scripts/delocalize-drawings.mjs --check && node scripts/square-rayen-plates.mjs --check && node scripts/brand-rayen-images.mjs --check",
     "copy:parity": "node scripts/audit-translation-parity.mjs",
     "copy:register": "node scripts/audit-copy-register.mjs",
-    "copy:locale": "node scripts/audit-copy-locale.mjs",
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",
     "assets:mobilehero": "node scripts/build-mobile-hero-crops.mjs",
