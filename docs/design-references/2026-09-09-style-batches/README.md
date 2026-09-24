@@ -1,10 +1,12 @@
 # Two reference-derived image libraries
 
-Created for Spooner's two local style folders, with 20 final images in each library. The original folders are used only as visual references. This directory is a design library, not a published product catalogue or a list of real architectural projects.
+Created for Spooner's two local style folders, with 20 images in each library. The original folders are used only as visual references. This directory is a design library, not a published product catalogue or a list of real architectural projects.
+
+> **Product composites rejected, 2026-09-24.** The client found all 20 `product-final-composites/` images visually false: cut-out catalogue products do not share the generated scene's lighting, contact shadows, or perspective. They are failed experiments, **not approved product photography and not assets to copy into `public/`, pages, presentations, or releases**. Provenance of the underlying product pixels does not make the *composite* an honest photograph. Keep them only as a record of what not to repeat. The architectural scenes remain fictional editorial references and require separate review before any use.
 
 ## Review
 
-- [20 real-product still lifes](products-contact.webp) — final files in `product-final-composites/`.
+- [20 rejected product composites](products-contact.webp) — failed experiments in `product-final-composites/`; do not publish.
 - [20 original architectural scenes](architecture-originals-contact.webp) — final files in `architecture-originals/`.
 - [20 empty studio stages](product-stage-backgrounds-contact.webp) — compositing intermediates in `product-stage-backgrounds/`.
 - [Real product source selection](product-sources-contact.webp) and [SHA-256 provenance](product-provenance.json).
@@ -59,4 +61,4 @@ The architecture prompt used the second reference folder only for quiet material
 19. Frosted-glass stairwell and terrazzo.
 20. Sea-facing concrete gallery.
 
-`node scripts/build-codex-style-library.mjs --prepare` rebuilds the contact sheets from the preserved generated files. `node scripts/build-codex-style-library.mjs --compose` rebuilds the 20 product composites and their provenance manifest from the real catalogue photographs and staged backgrounds. The 20 architecture originals and 20 stages are preserved here, so the contact sheets do not require an image service to rerun. This imagery is for review and selection; site integration needs a separate visual and factual QA pass.
+`node scripts/build-codex-style-library.mjs --prepare` rebuilds the contact sheets from the preserved files. `node scripts/build-codex-style-library.mjs --compose` can reproduce the **rejected** product composites for audit only; do not use its output in the site. The 20 architecture originals and 20 stages are preserved here, so the contact sheets do not require an image service to rerun. Architecture imagery is fictional and needs separate visual and factual QA before any site use.

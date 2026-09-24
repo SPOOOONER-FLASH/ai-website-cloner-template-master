@@ -1,0 +1,6 @@
+# 2026-09-24 Codex — reject false-background product composites
+
+- **Changed:** Marked all 20 `docs/design-references/2026-09-09-style-batches/product-final-composites/` images rejected in the library README and corrected the 2026-09-23 handoff's misleading “ready to use” sentence. Files touched: those two Markdown files and this note. No image pixels, site source, `public/`, `out/`, or `out-rayen/` changed.
+- **Reason:** The client identified mismatched scene lighting, contact shadow and perspective. Although the cut-out product pixels came from real catalogue photos, the assembled picture does not read as a real photograph and must not be published.
+- **Verification:** Product-image provenance was checked; the two dark-ground alternatives in `public/images/editorial/` are documented as client-supplied real photographs taken on that ground. `git diff --check` passed. No site build is needed for a documentation-only correction.
+- **Next:** Codex may create a bounded real-photo motion study outside `public/`. Claude and all agents should exclude the 20 rejected composites from site and sales use; if new product images are needed, request consistent real reshoots or exact approved CAD, not AI-imagined metal geometry.
