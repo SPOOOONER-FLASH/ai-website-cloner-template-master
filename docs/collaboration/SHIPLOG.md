@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 504 次提交
+最近 30 天 · 共 505 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:53 | 中立 | 卫浴配件规格统一：同一个事实原来有四种写法，21 条记录 | `dda960cd064` |
 | 08:45 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `eb515dba289` |
 | 08:44 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `ee79612a47f` |
 | 08:44 | 中立 | 英文产品摘要：6082 SN、BH05–BH07 去掉双句号和省略号，按规格行重写 | `978931910b0` |
