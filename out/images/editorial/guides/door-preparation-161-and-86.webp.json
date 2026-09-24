@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "3431 SSET",
+      "slug": "3431-sset-lever-handle",
+      "original": "public\\images\\products\\3431-sset-lever-handle.webp",
+      "sha256": "078f9a7b8a6078bedb37e304d4e85cc1bf64ce9d9e6da4ba284c273b8014b557"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\02-product-stage.png",
+    "sha256": "b6c4ed6b10a60a5e0a665fa0adf7b0acedf9f1e1c3b4c104f7978a2578b75952",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/door-preparation-161-and-86-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "83f3eedb05bb044303f29d376d02980e7c9eafbe44b6d8f7240ac222b4eb0baf"
+}

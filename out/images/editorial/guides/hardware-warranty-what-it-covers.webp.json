@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "JU-051",
+      "slug": "ju-051-door-closer",
+      "original": "public\\images\\products\\ju-051-door-closer.webp",
+      "sha256": "29f16c77f5f7b4c42fb5c7536013eb592f4f32580a39da36edc1133061a01af5"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\04-product-stage.png",
+    "sha256": "62423fc3d0618d51542b4b00f157a62ad2902e8e10c106b7f14a28c8c6f40c02",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/hardware-warranty-what-it-covers-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "bbcbd5c9cd458f5e2db820ee5be7be9f9096a05fc189db5d602e0ceca4b55dcb"
+}

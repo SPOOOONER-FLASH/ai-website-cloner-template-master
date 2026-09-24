@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "600",
+      "slug": "600-concealed-sliding-door-handle",
+      "original": "public\\images\\products\\600-concealed-sliding-door-handle.webp",
+      "sha256": "36128dd71eb83551413e10cfa31afb907364085261d64b0e737479fab583b338"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\14-product-stage.png",
+    "sha256": "c312a05bf755aecfdb50423fce398389bee0366e0ddbb609d8632bd64ea17893",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/material-traceability-mill-certs-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "5993ae94056bec93b1b88cdc36288cf5157992ee1ab82e6fc16d374be8d5ace7"
+}

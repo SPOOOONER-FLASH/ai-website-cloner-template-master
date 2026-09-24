@@ -5,6 +5,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: GPTBot
@@ -14,6 +15,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: ClaudeBot
@@ -23,6 +25,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: Claude-User
@@ -32,6 +35,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: PerplexityBot
@@ -41,6 +45,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: Google-Extended
@@ -50,6 +55,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 User-Agent: CCBot
@@ -59,6 +65,7 @@ Allow: /6bb09b9b67d0e605a292835469627988.txt
 Disallow: /admin/
 Disallow: /cdn-cgi/
 Disallow: /*.txt$
+Disallow: /__next.
 Disallow: /*/__next.
 
 Sitemap: https://cantonlock.com/sitemap.xml

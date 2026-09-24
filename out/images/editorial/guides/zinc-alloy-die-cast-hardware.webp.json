@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "F001",
+      "slug": "f001-security-door-guard",
+      "original": "public\\images\\products\\f001-security-door-guard.webp",
+      "sha256": "949fb30793b9cdb62a3286faf254808d11999c9d59167ff293f592bf6f5a9f34"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\15-product-stage.png",
+    "sha256": "cd2efd52f7efa8066aa9fb8f9d1feb930270b89eda347b742522dc917ad4cd13",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/zinc-alloy-die-cast-hardware-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "083c1fb30c1e6ed9769d240e951b6f5e28655ab6a9226f1465085ae835d7f936"
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "54 DK",
+      "slug": "54-dk-lock-cylinder",
+      "original": "public\\images\\products\\54-dk-lock-cylinder.webp",
+      "sha256": "687278b7338ebddd825dcf87c0d28edc82a36bf56a37ed86e157a744e971712c"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\19-product-stage.png",
+    "sha256": "94079cb45199af288e104e077357bd87682a7deeaba3d0a03aac408b4626328a",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/door-thickness-to-cylinder-length-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "4b073259539cd89767f0adb6812fe384458baa4dc9c8049284c79587895c4e2d"
+}

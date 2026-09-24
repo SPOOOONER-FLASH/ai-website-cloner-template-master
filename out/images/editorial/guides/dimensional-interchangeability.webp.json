@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "1073D MB",
+      "slug": "1073d-mb-night-latch-and-rim-lock",
+      "original": "public\\images\\products\\1073d-mb-night-latch-and-rim-lock.webp",
+      "sha256": "7fcc599987b6131cc973eda745b57b6faa2cf4cbf574efd3a35dab6fe6bc1f33"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\11-product-stage.png",
+    "sha256": "63691ed4eb019798fd5cf45ee3965f491f646afe120e69c2ac77429237073584",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/dimensional-interchangeability-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "1a5815fa05706edb74fd6800698bef9daad5e0036373faaa07180d3155279af0"
+}

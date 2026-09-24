@@ -1,0 +1,21 @@
+{
+  "kind": "real-photograph-composition",
+  "sources": [
+    {
+      "model": "DS01",
+      "slug": "ds01-door-stopper",
+      "original": "public\\images\\products\\ds01-door-stopper.webp",
+      "sha256": "24990589da218aec48c213a04a1dbcd0f34b0964956f4dd89d12732fb7a0529e"
+    }
+  ],
+  "stage": {
+    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\13-product-stage.png",
+    "sha256": "bc259fad049e203edbb00cff08a0e6ff39e64fc88c5b42cd37bd7e0b03c94e75",
+    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
+  },
+  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
+  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "usedFor": "/guides/moq-tooling-and-lead-time-2026/ hero",
+  "library": "docs/design-references/2026-09-09-style-batches/README.md",
+  "librarySha256": "047c8e71d76daf7e9dfd8b7e89213099f817cca168e20a18cd5f9714b52927bb"
+}
