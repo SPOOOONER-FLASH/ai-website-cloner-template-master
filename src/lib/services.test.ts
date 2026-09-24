@@ -3,15 +3,17 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 test("the service hub is crawlable and reachable without crowding the header", () => {
-  const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
+  // Copy moved into the component on 2026-09-24 so Spanish and Portuguese are one edit.
+  const page = readFileSync("src/components/site/ServicesView.tsx", "utf8");
   const navigation = JSON.parse(readFileSync("content/navigation.json", "utf8")) as {
     header: Array<{ href: string }>;
     footer: Array<{ href: string }>;
   };
   const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
 
-  assert.match(page, /Product selection|hardware schedule/i);
-  assert.match(page, /OEM|private-label/i);
+  // OEM / private label leads (client steer 2026-09-24), in the copy and in the title.
+  assert.match(page, /private-label brand/i);
+  assert.match(readFileSync("src/app/(en)/services/page.tsx", "utf8"), /OEM & Private-Label/);
   assert.equal(navigation.header.some((link) => link.href === "/services"), false);
   assert.match(sitemap, /entry\("\/services"/);
 
@@ -32,22 +34,21 @@ test("the service hub is crawlable and reachable without crowding the header", (
 });
 
 test("service copy routes buyers to existing inquiry and selection tools", () => {
-  const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
+  const page = readFileSync("src/components/site/ServicesView.tsx", "utf8");
 
-  assert.match(page, /href="\/contact"/);
-  assert.match(page, /href="\/product-finder"/);
-  assert.match(page, /href="\/downloads"/);
+  // Through localisedHref, so a Spanish or Portuguese page stays in its own tree.
+  assert.match(page, /href\("\/contact"\)/);
+  assert.match(page, /href\("\/product-finder"\)/);
+  assert.match(page, /href\("\/downloads"\)/);
 });
 
 test("the service brief is written plainly and the whole panel opens an inquiry", () => {
-  const page = readFileSync("src/app/(en)/services/page.tsx", "utf8");
+  const page = readFileSync("src/components/site/ServicesView.tsx", "utf8");
 
+  // Wording rewritten for OEM buyers by the copy session (2026-09-24); the intent is kept:
+  // four plain items, and the whole panel is one link to the contact form.
   assert.doesNotMatch(page, /The first useful package/);
-  assert.match(page, /Prepare your (?:inquiry|enquiry)/);
-  assert.match(page, /Start with these four details/);
-  assert.match(page, /Send this brief/);
-  assert.match(
-    page,
-    /<Link[\s\S]*?href="\/contact"[\s\S]*?Start with these four details[\s\S]*?<\/Link>/,
-  );
+  assert.match(page, /We need four things from you/);
+  assert.match(page, /Send your brief/);
+  assert.match(page, /<Link[\s\S]*?href=\{href\("\/contact"\)\}[\s\S]*?c\.briefHeading[\s\S]*?<\/Link>/);
 });

@@ -23,6 +23,9 @@
 | 15 | GA4 登记自定义维度 | 待甲方（手册 ②） |
 | 16 | 隐私政策页内容 | 待甲方 |
 | 17 | 路由收敛为 `[locale]`、构建产物不进 git | 待甲方 |
-| 19 | /services 元数据改为 OEM / 私人品牌领头（Hyde 文案 09-24 请求） | 待做 |
-| 20 | 西葡 services 路由（/es/services、/pt/services：hreflang、前缀、locale-route-parity），建好通知 Hyde 文案写西葡文案 | 待做 |
+| 19 | /services 元数据改为 OEM / 私人品牌领头（Hyde 文案 09-24 请求） | 09-24 完成（标题「OEM & Private-Label Door Hardware Manufacturer in China」） |
+| 20 | 西葡 services 路由（/es/services、/pt/services：hreflang、前缀、locale-route-parity），建好通知 Hyde 文案写西葡文案 | 等待（第一步已完成：文案集中在 ServicesView 的 SERVICES_COPY；Hyde 文案填 es/pt 后我建路由、登记镜像） |
+| 21 | 8827、8828 是空壳重复页（无规格，主图与 8827 SSET / 8828 SSET 相同）：301 到 SSET 款 | 待做 |
+| 22 | HY006 应用字段写着「KFC 锁体」，他人商标，删掉 | 待做 |
+| 23 | 559 画集 5 张带 STAHLOCK 水印的图（已撤下）是否可用 | 待甲方 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
