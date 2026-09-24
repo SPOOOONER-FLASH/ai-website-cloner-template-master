@@ -12,7 +12,7 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 10:08 | 中立 | 品牌宣言 v3：OEM 开模能力、出口市场、科隆展与利马/布宜诺斯艾利斯参展、德国办公室（三语） | `6d5376e260c` |
+| 10:07 | 中立 | 覆盖报告重生成（发布被过期拦下）；锁体对照表 --check 进 test:export | `101db4afe14` |
 | 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
 | 10:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `be9f0f274e2` |
 | 10:05 | HYDE | why-the-catalogue 三语 FAQ 同步 114；任务第 0 项完成 | `7887739f892` |
