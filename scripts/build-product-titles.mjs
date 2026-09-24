@@ -67,6 +67,24 @@ function connector(name, locale) {
   return new RegExp(`\\b${FOR[locale]}\\b`, "i").test(name) ? ALT[locale] : FOR[locale];
 }
 
+/**
+ * 西葡的小数用逗号（2,5 mm），尺寸却是从英文规格行取的（2.5mm）。只换「数字.数字」，
+ * 型号原样保留（型号是订货依据，带点的型号不能动）。2026-09-24：规格会话把 specsPt 的
+ * 数字格式修好后，标题和描述里还剩 16 处点号，因为它们不读 specsPt。
+ */
+function decimalComma(text, model, locale) {
+  if (!text) return text;
+  const m = String(model ?? "");
+  const parts = m && text.includes(m) ? text.split(m) : [text];
+  return parts
+    .map((p) => {
+      // Units in lower case everywhere ("2.5MM" came through from one spec row).
+      const q = p.replace(/(\d)\s?MM\b/g, "$1mm");
+      return locale === "en" ? q : q.replace(/(\d)\.(\d)/g, "$1,$2");
+    })
+    .join(m);
+}
+
 /** 同理：门厚短语「para portas de 12mm」跟在带 para 的名字后面时，改说「门厚 12mm」。 */
 function thicknessAfter(name, dim, locale) {
   if (!dim || connector(name, locale) !== { en: "on", es: "en", pt: "em" }[locale]) return dim;
@@ -744,9 +762,10 @@ for (const file of files) {
   let touched = false;
 
   for (const [locale, titleKey, descKey] of FIELDS) {
-    const title = composeTitle(product, locale);
-    if (!title) continue;
-    const desc = composeDescription(product, locale);
+    const rawTitle = composeTitle(product, locale);
+    if (!rawTitle) continue;
+    const title = decimalComma(rawTitle, product.model, locale);
+    const desc = decimalComma(composeDescription(product, locale), product.model, locale);
     if (product.heroImage?.src) audit(product, locale, title, desc);
     if (product[titleKey] !== title || product[descKey] !== desc) {
       if (locale === "en" && samples.length < SAMPLE) {
