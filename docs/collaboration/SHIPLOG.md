@@ -6,17 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 516 次提交
+最近 30 天 · 共 515 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 09:32 | 中立 | 西语术语按 RAE（甲方 D1）：resbalón 映射改为 pestillo；picaporte 规则待正文手改后再加 | `5db71a1eb83` |
-| 09:29 | 中立 | 标题重生成：9 条新尺寸进入锁体、锁芯标题；汇报脚本措辞 | `41879ef53ff` |
-| 09:28 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cf0046fccac` |
-| 09:25 | 中立 | 手册：装一次新的跳转规则（ANSI 网址改名的 301） | `c27958c5d13` |
-| 09:18 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 8aeb18bd0b5 | `2248e84e8f1` |
+| 09:36 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e0af1937820` |
+| 09:36 | 中立 | 品牌平台上线：Hardware you can stand behind（首页宣言、产品页、九个家族，三语） | `cce0932b8c0` |
+| 09:30 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `0a744ecedb5` |
+| 09:30 | 中立 | wip: brand platform | `d7e3f31abbd` |
 | 09:13 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `81d1e065053` |
 | 09:12 | 中立 | 任务文件：西语短摘要以 summaryPt 第二轮为数字依据；14 条误归类记录材质存疑 | `0dc4254503b` |
 | 09:11 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fea28a9077c` |
