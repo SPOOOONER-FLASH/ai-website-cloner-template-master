@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 546 次提交
+最近 30 天 · 共 547 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 15:27 | HYDE | 两篇新文章首图登记取景框（修发布被拦）；巴西 NBR 文章三语标题定稿 | `aadd0ae9976` |
 | 15:24 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `636b2ef1a8d` |
 | 15:24 | HYDE | 文章 E：巴西 NBR 11742 / NBR 11785 与 AVCB 验收，葡语为主、三语 | `3c0a7239871` |
 | 15:18 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e3ac4f00a6c` |
