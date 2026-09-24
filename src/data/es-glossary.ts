@@ -70,6 +70,15 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   Thickness: "Espesor",
   Installation: "Instalación",
   "Center distance": "Distancia entre ejes",
+  /*
+    Plural, and deliberately not "Distancias entre ejes". 311 carries two cylinder positions
+    (72mm and 92mm) on one lock body, and review had already written "Doble distancia entre
+    ejes" into that record's specsEs — it says what the row means rather than pluralising the
+    singular. The key is added with review's wording, not a fresh translation, so the next
+    regeneration reproduces what is already on the page instead of reverting it. That reversion
+    is what happened on 2026-09-11; this row was the example quoted in the script's own comment.
+  */
+  "Center distances": "Doble distancia entre ejes",
   Color: "Color",
   "Cross bore": "Perforación principal",
   "Door Type": "Tipo de puerta",
@@ -285,17 +294,20 @@ export const SPEC_LABELS_ES: Record<string, string> = {
     "Door leaves" is the whole spec table on 306-D / 306 PS / 306-S, which is why those three
     records had no Spanish specs at all: one unmapped label there means zero translated rows.
 
-    NOT added: "Follower" on 072. Its value is "9 × 9 × 130mm" — a 9mm square bar 130mm long,
-    which is a spindle (already here as "Cuadradillo"), not the cam a follower names. Either
-    the label or the value on that record is wrong, and a buyer specifies from this table, so
-    it stays English and reported until the factory says which. See the rule at the top of
-    this file.
+    "Follower" on 072 is entered as review already wrote it. The English label and its value
+    disagree — the value is "9 × 9 × 130mm", a 9mm square bar 130mm long, which is a spindle
+    (below as "Cuadradillo") rather than the cam a follower names — and that is a question for
+    the factory about the RECORD, not about this table. Leaving the key out does not hold the
+    question open; it only means the next regeneration reverts the live "Seguidor" row to
+    English. Two separate things: what the page says in Spanish, and whether the English row
+    is right. Fix the second in the record once the factory answers.
   */
+  Follower: "Seguidor",
   "Door leaves": "Hojas de puerta",
   "Case size": "Medidas de la caja de cerradura",
   "Keys supplied": "Llaves incluidas",
   "Cylinder apertures": "Aberturas para cilindro",
-  "Used with": "Se utiliza con",
+  "Used with": "Se usa con",
   "Fitted with": "Equipado con",
   "Supplied with": "Se suministra con",
   "Plate depth": "Profundidad de la placa",
@@ -311,6 +323,77 @@ export const SPEC_LABELS_ES: Record<string, string> = {
  * number must survive untouched and only the qualifier is language.
  */
 export const SPEC_VALUES_ES: Record<string, string> = {
+  /*
+    Harvested 2026-09-24 from the Spanish already sitting in specsEs, not translated afresh.
+
+    AGENTS.md names this as its own task, and it is the precondition it says must be met before
+    a full regeneration is safe again: "SPEC_LABELS_ES / SPEC_VALUES_ES must first catch up with
+    what already exists in specsEs". Measured before this block went in, a full HYDE re-run left
+    39 values unmapped across 75 rows, and 74 of those rows currently hold Spanish that review
+    produced later by hand — so the run would have reverted them to English, exactly as it did on
+    2026-09-11. Every entry below is the string already on the page; where one English value had
+    two Spanish renderings anywhere in the catalogue the harvest would have flagged it, and none
+    did. Only "6068 Mortise Lock Series" had no Spanish anywhere and is newly translated.
+  */
+  "1\", 1-1/4\", 2\", 3\"": "1”, 1-1/4”, 2”, 3”",
+  "1000 pieces": "1000 unidades",
+  "175mm long": "175 mm de largo",
+  "200 pieces": "200 unidades",
+  "307 panic exit device": "Barra antipánico 307",
+  "50 pieces": "50 unidades",
+  "500 pieces": "500 unidades",
+  "55–100kg": "55–100 kg",
+  "58mm (lever to cylinder)": "58 mm (manija a cilindro)",
+  "6068 Mortise Lock Series": "Serie de cerraduras de embutir 6068",
+  "72mm and 92mm (cylinder hole)": "72 y 92 mm (con perforación para cilindro)",
+  "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), all available":
+    "Latón antiguo (AB), Cobre antiguo (AC), Latón pulido (PB), Latón satinado (SB), Acero inoxidable (SS), Pulido brillante (SP), Cromo satinado (SC), todos disponibles",
+  "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available":
+    "Latón antiguo (AB), Cobre antiguo (AC), Latón pulido (PB), Latón satinado (SB), Acero inoxidable (SS), Pulido brillante (SP), Cromo satinado (SC), otros disponibles",
+  "BP, Antique Brass (AB), Antique Copper (AC), Nickel Plated (NP), NB, CB, Chrome Plated (CP), Satin Nickel (SN), BC":
+    "BP, Latón antiguo (AB), Cobre antiguo (AC), Niquelado (NP), NB, CB, Cromado (CP), Níquel satinado (SN), BC",
+  "Brass, two/three-throw": "Latón, de dos o tres vueltas",
+  "Brushed with polished edges": "Cepillado con cantos pulidos",
+  "Chrome Plated (CP), Polished Brass (PB), Satin Chrome (SC), Satin Nickel (SN), N, Antique Brass (AB), Antique Copper (AC), Oil Rubbed Bronze (ORB)":
+    "Cromado (CP), Latón pulido (PB), Cromo satinado (SC), Níquel satinado (SN), N, Latón antiguo (AB), Cobre antiguo (AC), Bronce envejecido (ORB)",
+  "Color zinc-plated iron, two/three-throw":
+    "Hierro con zincado de color, de dos o tres vueltas",
+  "Continuous hinge (piano hinge)": "Bisagra continua (bisagra de piano)",
+  "Double cylinder, double throw": "Doble cilindro, doble vuelta",
+  "Euro profile, key outside / thumbturn inside, zinc alloy":
+    "Perfil europeo, llave por fuera / botón por dentro, aleación de zinc",
+  "GP, NB, Antique Brass (AB), Antique Copper (AC), Satin Nickel (SN), BRN, BC, Nickel Plated (NP), Chrome Plated (CP), CB":
+    "GP, NB, Latón antiguo (AB), Cobre antiguo (AC), Níquel satinado (SN), BRN, BC, Niquelado (NP), Cromado (CP), CB",
+  "GP, NB, Antique Brass (AB), Chrome Plated (CP)": "GP, NB, Latón antiguo (AB), Cromado (CP)",
+  "Gun metal (GM)": "Metal oscurecido (GM)",
+  "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or outwards, with stops at 0, 88 and 116 in both directions.":
+    "Incluye regulación de la velocidad de apertura y de cierre; tensión del resorte totalmente regulable; la puerta abre hasta 116° hacia adentro o hacia afuera, con retenciones a 0°, 88° y 116° en ambos sentidos.",
+  "Latch and square deadbolt": "Picaporte y cerrojo cuadrado",
+  "Matt black or polished brass finish over the iron leaf":
+    "Negro mate o acabado latón pulido sobre la pletina de hierro",
+  "Mortise lock body, iron": "Caja de embutir, hierro",
+  "Pair of lever plates, mortise lock body, euro cylinder with keys, spindle, strike plate, fixing screws and fittings":
+    "Par de placas con manija, caja de embutir, cilindro europeo con llaves, cuadradillo, cerradero, tornillos y accesorios de fijación",
+  "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available":
+    "Latón pulido (PB), Latón antiguo (AB), Cobre antiguo (AC), Acero inoxidable (SS), Níquel satinado (SN), todos disponibles",
+  "Return spring cassette behind each plate":
+    "Cartucho de resorte de retorno detrás de cada placa",
+  "Screws or welding; installation accessories included":
+    "Con tornillos o soldadura; incluye accesorios de montaje",
+  "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available":
+    "Acero inoxidable (SS), Latón antiguo (AB), Níquel satinado (SN), Cobre antiguo (AC), Latón pulido (PB), todos disponibles",
+  "Stainless Steel (SS), BC, Chrome Plated (CP), GP, CB, Antique Brass (AB), Antique Copper (AC)":
+    "Acero inoxidable (SS), BC, Cromado (CP), GP, CB, Latón antiguo (AB), Cobre antiguo (AC)",
+  "Stainless Steel (SS), Polished Stainless Steel (PSS), Antique Brass (AB), Antique Copper (AC), PVD":
+    "Acero inoxidable (SS), Acero inoxidable pulido (PSS), Latón antiguo (AB), Cobre antiguo (AC), PVD",
+  "Steel sheet 1.2mm case; zinc alloy and copper alloy internal components; solid brass cylinders; iron":
+    "Chapa de acero de 1,2 mm; componentes internos de aleación de zinc y de aleación de cobre; cilindros de latón macizo; hierro",
+  "Steel sheet 1.5mm case; zinc alloy and copper alloy internal components; solid brass cylinders; iron":
+    "Chapa de acero de 1,5 mm; componentes internos de aleación de zinc y de aleación de cobre; cilindros de latón macizo; hierro",
+  "SUS 304 stainless steel plate (stamped on the plate)":
+    "Placa de acero inoxidable SUS 304 (marcado en la placa)",
+  "Two euro-profile apertures on the fire-rated case":
+    "Dos aberturas de perfil europeo en la caja cortafuego",
   /* 306 PS, added 2026-09-24. "Paso libre" is the function; "picaporte" is this file's latch. */
   "Passage, no latch bolt": "Paso libre, sin picaporte",
   "A separate lock case, supplied to suit":
