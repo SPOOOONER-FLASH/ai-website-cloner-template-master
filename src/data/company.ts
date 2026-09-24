@@ -11,17 +11,17 @@ import type { ImageRef } from "./types";
  */
 
 export const profile: string[] = [
-  "Canton Hyland Hardware (Group) Co., Ltd. was founded in 1998 and brings decades of manufacturing expertise to the commercial and residential hardware industry. Our production facilities house equipment for stamping, polishing, assembly and quality control.",
-  "We specialize in comprehensive door security and building hardware solutions, including panic devices, cylindrical locks, tubular locks, deadbolts, lock cases, profile cylinders, door handles, patch fittings, and a complete range of building and bedroom hardware accessories. Supplied credentials include model-specific Intertek test reports and a CE conformity certificate for panic exit devices.",
-  "As recognized experts in master key and construction key systems, we provide sophisticated access control solutions for complex commercial and institutional projects. Since achieving ISO 9001 certification in 2002, we have maintained our commitment to quality excellence and continuous improvement.",
-  "We welcome OEM partnerships and specialize in developing custom solutions tailored to specific client requirements. We invite you to visit our facilities to explore how our expertise can meet your hardware needs.",
+  "Canton Hyland Hardware (Group) Co., Ltd. was founded in 1998 in Xiaolan, Zhongshan, the town that ships close to a third of China's lock exports. We stamp, polish, assemble and inspect our own parts, and our quality system has been certified to ISO 9001 since 2002.",
+  "The range covers most of what a door needs: panic exit devices, cylindrical and tubular locks, deadbolts, mortise lock cases, profile cylinders, levers, glass door fittings, hinges, closers and the small parts that finish the job. Master key and construction key systems are a specialty. They are what a hospital, a school or an office tower asks of a lock supplier, and they are where a supplier's records either hold up or do not.",
+  "Much of what we make leaves Xiaolan under our customers' brands. Bring us a drawing or a sample and we tool it. If a design runs into another maker's patent, our engineers change the parts or the appearance until it no longer does. We ship to brands and distributors in Europe, Russia, the Americas, Turkey and Southeast Asia. We exhibited at the Cologne hardware fair for years, and our Spanish-speaking team has exhibited in Lima and Buenos Aires.",
+  "The best way to judge a factory is to stand in it. Buyers who want to see the floor before the first container are welcome in Zhongshan, and those who cannot travel can start with a sample.",
 ];
 
 export const profileEs: string[] = [
-  "Canton Hyland Hardware (Group) Co., Ltd. fue fundada en 1998 y aporta décadas de experiencia a la fabricación de herrajes para edificios comerciales y residenciales. Nuestras instalaciones integran estampación, pulido, montaje y control de calidad.",
-  "Nos especializamos en soluciones completas de seguridad y herrajes para puertas: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura, cilindros de perfil, manijas, herrajes para vidrio y accesorios para edificios y dormitorios.",
-  "Como especialistas en sistemas de llave maestra y llave de obra, apoyamos proyectos comerciales e institucionales complejos. Desde la certificación ISO 9001 en 2002, mantenemos un enfoque de mejora continua y control de calidad.",
-  "Trabajamos con distribuidores, arquitectos, contratistas y socios OEM, desarrollando soluciones adaptadas a requisitos técnicos y mercados de exportación.",
+  "Canton Hyland Hardware (Group) Co., Ltd. se fundó en 1998 en Xiaolan, Zhongshan, la localidad de donde sale cerca de un tercio de las cerraduras que exporta China. Estampamos, pulimos, montamos e inspeccionamos nuestras propias piezas, y nuestro sistema de calidad está certificado según ISO 9001 desde 2002.",
+  "La gama cubre casi todo lo que necesita una puerta: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura de embutir, cilindros de perfil, manijas, herrajes para puertas de vidrio, bisagras, cierrapuertas y las piezas pequeñas que rematan el trabajo. Los sistemas de llave maestra y llave de obra son una especialidad. Es lo que un hospital, una escuela o una torre de oficinas pide a un proveedor de cerraduras, y es donde los registros de un proveedor se sostienen o no.",
+  "Buena parte de lo que fabricamos sale de Xiaolan con la marca de nuestros clientes. Tráiganos un plano o una muestra y hacemos el molde. Si un diseño choca con la patente de otro fabricante, nuestros ingenieros cambian las piezas o el aspecto hasta que deja de chocar. Enviamos a marcas y distribuidores de Europa, Rusia, América, Turquía y el Sudeste Asiático. Expusimos durante años en la feria de ferretería de Colonia, y nuestro equipo de habla hispana ha expuesto en Lima y en Buenos Aires.",
+  "La mejor manera de juzgar una fábrica es entrar en ella. Los compradores que quieran ver la planta antes del primer contenedor son bienvenidos en Zhongshan, y quienes no puedan viajar pueden empezar con una muestra.",
 ];
 
 /**
@@ -32,10 +32,10 @@ export const profileEs: string[] = [
  * client confirmed that on 2026-08-16 and it is not a translation decision.
  */
 export const profilePt: string[] = [
-  "A Canton Hyland Hardware (Group) Co., Ltd. foi fundada em 1998 e traz décadas de experiência de fabricação ao setor de ferragens comerciais e residenciais. As nossas instalações reúnem estamparia, polimento, montagem e controle de qualidade.",
-  "Somos especializados em soluções completas de segurança e ferragens para portas: barras antipânico, fechaduras cilíndricas e tubulares, travas, caixas de fechadura, cilindros de perfil, maçanetas, ferragens para vidro e uma linha completa de acessórios para edifícios e dormitórios. As credenciais fornecidas incluem relatórios de ensaio Intertek por modelo e um certificado CE de conformidade para barras antipânico.",
-  "Como especialistas reconhecidos em sistemas de chave-mestra e chave de obra, oferecemos soluções de controle de acesso para obras comerciais e institucionais complexas. Desde a certificação ISO 9001 em 2002, mantemos o compromisso com a qualidade e a melhoria contínua.",
-  "Trabalhamos com parcerias OEM e desenvolvemos soluções sob medida para exigências específicas de cada cliente. Convidamos você a visitar as nossas instalações para ver como a nossa experiência pode atender às suas necessidades de ferragem.",
+  "A Canton Hyland Hardware (Group) Co., Ltd. foi fundada em 1998 em Xiaolan, Zhongshan, a cidade de onde sai perto de um terço das fechaduras que a China exporta. Estampamos, polimos, montamos e inspecionamos as nossas próprias peças, e o nosso sistema de qualidade é certificado pela ISO 9001 desde 2002.",
+  "A linha cobre quase tudo o que uma porta precisa: barras antipânico, fechaduras cilíndricas e tubulares, travas, caixas de fechadura de embutir, cilindros de perfil, maçanetas, ferragens para portas de vidro, dobradiças, molas aéreas e as peças pequenas que completam o serviço. Sistemas de chave-mestra e chave de obra são uma especialidade. É o que um hospital, uma escola ou um prédio de escritórios pede a um fornecedor de fechaduras, e é onde os registros de um fornecedor se sustentam ou não.",
+  "Boa parte do que fabricamos sai de Xiaolan com a marca dos nossos clientes. Traga um desenho ou uma amostra e fazemos o ferramental. Se um projeto esbarra na patente de outro fabricante, nossos engenheiros alteram as peças ou a aparência até que deixe de esbarrar. Enviamos para marcas e distribuidores da Europa, da Rússia, das Américas, da Turquia e do Sudeste Asiático. Expusemos durante anos na feira de ferragens de Colônia, e nossa equipe que fala espanhol já expôs em Lima e em Buenos Aires.",
+  "A melhor forma de julgar uma fábrica é entrar nela. Compradores que queiram ver a fábrica antes do primeiro contêiner são bem-vindos em Zhongshan, e quem não puder viajar pode começar com uma amostra.",
 ];
 
 /**
@@ -193,7 +193,7 @@ export const companyEditorialStudies: ImageRef[] = [
     labelEs:
       "Nuestra sección de prensas: una fila de prensas mecánicas con su utillaje montado, donde se estampan cajas de cerradura, placas y piezas en bruto de manijas",
     labelPt:
-      "A nossa secção de prensas: uma fila de prensas mecânicas com a ferramenta montada, onde se estampam caixas de fechadura, espelhos e peças em bruto de maçanetas",
+      "Nosso setor de prensas: uma fila de prensas mecânicas com a ferramenta montada, onde são estampadas caixas de fechadura, espelhos e peças brutas de maçanetas",
   },
   {
     src: "/images/company/polishing-line.webp",
@@ -203,7 +203,7 @@ export const companyEditorialStudies: ImageRef[] = [
     labelEs:
       "Nuestra línea de pulido, con su extracción aérea — la etapa que decide si un acabado satinado es uniforme en toda una serie de producción",
     labelPt:
-      "A nossa linha de polimento, com a extracção aérea — a etapa que decide se um acabamento acetinado é uniforme em toda uma série de produção",
+      "Nossa linha de polimento, com a exaustão aérea: a etapa que decide se um acabamento acetinado sai uniforme em todo um lote de produção",
   },
   {
     src: "/images/company/assembly-line.webp",
@@ -213,7 +213,7 @@ export const companyEditorialStudies: ImageRef[] = [
     labelEs:
       "Nuestra nave de montaje: operarios montando y embolsando juegos en los puestos, con producto terminado paletizado detrás",
     labelPt:
-      "A nossa nave de montagem: operários a montar e a ensacar conjuntos nos postos, com produto acabado paletizado atrás",
+      "Nosso galpão de montagem: operários montando e ensacando conjuntos nas bancadas, com produto acabado paletizado atrás",
   },
   /*
     The fourth, added 2026-09-16 at the client's request to use the photographs in the
