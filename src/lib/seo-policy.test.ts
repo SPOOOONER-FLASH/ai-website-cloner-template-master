@@ -14,6 +14,8 @@ test("the launch robots policy keeps render assets crawlable and the CMS private
 
   assert.ok(disallow.includes("/admin/"));
   assert.equal(disallow.includes("/_next/"), false);
+  // the root payload (/__next._tree.txt) is not matched by /*/__next., which needs a directory level
+  assert.ok(disallow.includes("/__next.") && disallow.includes("/*/__next."));
 });
 
 test("sitemap entries omit invented freshness unless a real date is supplied", () => {

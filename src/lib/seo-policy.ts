@@ -98,9 +98,11 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
     relies on the `$` anchor, which some crawlers ignore — server logs 2026-09-23
     showed ~3,000 fetches of these files anyway. Deliberately NOT `Disallow: /_next/`:
     that path holds the CSS/JS crawlers need to render pages, and the payloads are
-    not under it.
+    not under it. The wildcard rule needs at least one directory level before `__next.`,
+    so the home page's own `/__next._tree.txt` slipped past it (found 2026-09-23); the
+    plain `/__next.` rule covers the root.
   */
-  const disallow = ["/admin/", "/cdn-cgi/", "/*.txt$", "/*/__next."];
+  const disallow = ["/admin/", "/cdn-cgi/", "/*.txt$", "/__next.", "/*/__next."];
 
   return [
     { userAgent: "*", allow, disallow },
