@@ -30,7 +30,7 @@ export const hero1: HeroModuleContent = {
     label: "Soleira residencial em madeira e pedra calcária aberta para um pátio ajardinado",
   },
   title: "Maçanetas de alavanca",
-  body: "Conjuntos de maçaneta tubulares e de embutir em aço inoxidável, latão e preto fosco para portas residenciais e comerciais leves.",
+  body: "Conjuntos de maçanetas tubulares e de embutir em aço inoxidável, latão e preto fosco, para residências e portas comerciais leves.",
   linkLabel: "Ver maçanetas",
   href: "/pt/products/lever-handles",
 };
@@ -47,7 +47,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Estudo representativo de portas corta-fogo comerciais com barras antipânico bem visíveis",
       },
       title: "Barras antipânico",
-      body: "Ferragens de barra que libertam o trinco num único movimento, para portas de evacuação e corta-fogo.",
+      body: "Um empurrão e a porta abre. Barras antipânico, guarnições externas e caixas de fechadura para portas de saída de emergência e corta-fogo, pensadas como um conjunto.",
       linkLabel: "Explorar barras antipânico",
       href: "/pt/products/panic-exit-devices",
     },
@@ -60,7 +60,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Corredor de edifício público com divisórias envidraçadas e portas de evacuação",
       },
       title: "Caixas de fechadura",
-      body: "Corpos de fechadura com várias distâncias à testa, distâncias entre eixos e configurações de trinco para quadros de ferragens comerciais.",
+      body: "Caixas de fechadura por distância ao eixo, entre-eixos e tipo de lingueta, com cada medida escrita no milímetro para que a maçaneta, o cilindro e a contra-testa encaixem de primeira.",
       linkLabel: "Ver caixas de fechadura",
       href: "/pt/products/lock-cases",
     },
@@ -103,14 +103,14 @@ export const hero2: HeroModuleContent = {
     label: "Arquitectura de rota de evacuação comercial com portas duplas e corredor tranquilo",
   },
   title: "Barras antipânico",
-  body: "A nossa gama principal de segurança para saídas rápidas em edifícios comerciais.",
-  linkLabel: "Explorar a gama principal",
+  body: "A nossa linha principal, e a que conhecemos melhor: barras antipânico para portas de saída de emergência e corta-fogo, de dispositivos de sobrepor de um ponto a conjuntos multiponto para portas de duas folhas.",
+  linkLabel: "Ver as barras antipânico",
   href: "/pt/products/panic-exit-devices",
 };
 
 export const text1: TextModuleContent = {
   heading: "Aplicações da Canton Hyland",
-  body: "Barras antipânico, fechaduras, maçanetas e molas aéreas para edifícios comerciais, institucionais e residenciais em mercados de exportação.",
+  body: "Nossas barras antipânico, fechaduras, maçanetas e molas aéreas são instaladas em prédios comerciais, institucionais e residenciais nos mercados para onde exportamos, muitas vezes com a marca dos nossos clientes.",
   linkLabel: "Ver aplicações",
   href: "/pt/projects",
 };
@@ -161,14 +161,14 @@ export const hero4: HeroModuleContent = {
     label: "Fechadura de embutir com quatro trincos, contra-testa e caixa de cerradero",
   },
   title: "Materiais + engenharia",
-  body: "A coordenação de acabamentos, o planeamento de chaves-mestras e a documentação de exportação apoiam quadros de ferragens comerciais e residenciais em mercados internacionais.",
+  body: "Acabamentos iguais em toda a planilha de portas, sistemas de chave-mestra planejados antes de cortar o primeiro cilindro e documentação de exportação pronta quando o contêiner sai.",
   linkLabel: "Como trabalhamos",
   href: "/pt/company",
 };
 
 export const text2: TextModuleContent = {
   heading: "Serviço + Downloads",
-  body: "Desenvolvemos soluções OEM adaptadas a cada mercado e apoiamos o comprador com documentação técnica e de exportação.",
+  body: "Moldes novos a partir do seu desenho ou da sua amostra, e a sua marca na peça. Se o projeto que você traz estiver protegido pela patente de outro fabricante, nossos engenheiros alteram as peças ou a aparência até que ele deixe de conflitar com essa patente.",
   linkLabel: "Downloads",
   href: "/pt/downloads",
 };

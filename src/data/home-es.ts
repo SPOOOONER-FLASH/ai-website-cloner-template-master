@@ -16,7 +16,7 @@ export const hero1: HeroModuleContent = {
     label: "Umbral residencial de madera y piedra caliza abierto hacia un patio ajardinado",
   },
   title: "Manijas de palanca",
-  body: "Juegos de manija tubulares y de embutir en acero inoxidable, latón y negro mate para puertas residenciales y comerciales ligeras.",
+  body: "Juegos de manijas tubulares y de embutir en acero inoxidable, latón y negro mate, para vivienda y puertas comerciales ligeras.",
   linkLabel: "Ver manijas de palanca",
   href: "/es/products/lever-handles",
 };
@@ -36,7 +36,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Estudio representativo de puertas cortafuego comerciales con barras antipánico claramente visibles",
       },
       title: "Dispositivos antipánico",
-      body: "Herrajes de barra que liberan el pestillo en un solo movimiento, para puertas de evacuación y cortafuegos.",
+      body: "Un empujón y la puerta se abre. Barras antipánico, guarniciones exteriores y cajas de cerradura para puertas de evacuación y cortafuego, pensadas como un conjunto.",
       linkLabel: "Explorar dispositivos",
       href: "/es/products/panic-exit-devices",
     },
@@ -49,7 +49,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Pasillo de edificio público con particiones acristaladas y puertas de evacuación",
       },
       title: "Cajas de cerradura",
-      body: "Cuerpos de cerradura con distintas entradas, distancias entre ejes y configuraciones de bulones para cuadros de puertas comerciales.",
+      body: "Cajas de cerradura por entrada, distancia entre ejes y tipo de pestillo, con cada medida escrita al milímetro para que la manija, el cilindro y el cerradero encajen a la primera.",
       linkLabel: "Ver cajas de cerradura",
       href: "/es/products/lock-cases",
     },
@@ -92,14 +92,14 @@ export const hero2: HeroModuleContent = {
     label: "Arquitectura de ruta de evacuación comercial con puertas dobles y pasillo tranquilo",
   },
   title: "Dispositivos antipánico",
-  body: "Nuestra gama principal de seguridad para salidas rápidas en edificios comerciales.",
+  body: "Nuestra gama principal, y la que mejor conocemos: barras antipánico para puertas de evacuación y cortafuego, desde dispositivos de sobreponer de un punto hasta juegos multipunto para puertas de dos hojas.",
   linkLabel: "Explorar la gama principal",
   href: "/es/products/panic-exit-devices",
 };
 
 export const text1: TextModuleContent = {
   heading: "Aplicaciones de Canton Hyland",
-  body: "Dispositivos antipánico, cerraduras, manijas y cierrapuertas para edificios comerciales, institucionales y residenciales en mercados de exportación.",
+  body: "Nuestras barras antipánico, cerraduras, manijas y cierrapuertas se instalan en edificios comerciales, institucionales y residenciales de los mercados a los que exportamos, muchas veces con la marca de nuestros clientes.",
   linkLabel: "Ver proyectos",
   href: "/es/projects",
 };
@@ -150,14 +150,14 @@ export const hero4: HeroModuleContent = {
     label: "Cerradura de embutir con cuatro pestillos, cerradero y caja de cerradero",
   },
   title: "Materiales + ingeniería",
-  body: "La coordinación de acabados, la planificación de llaves maestras y la documentación de exportación apoyan cuadros de herrajes comerciales y residenciales en mercados internacionales.",
+  body: "Acabados iguales en toda una planilla de puertas, sistemas de llave maestra planificados antes de cortar el primer cilindro y documentación de exportación lista cuando sale el contenedor.",
   linkLabel: "Cómo trabajamos",
   href: "/es/company",
 };
 
 export const text2: TextModuleContent = {
   heading: "Servicio + Descargas",
-  body: "Desarrollamos soluciones OEM adaptadas a cada mercado y apoyamos al comprador con documentación técnica y de exportación.",
+  body: "Moldes nuevos a partir de su plano o su muestra, y su marca en la pieza. Si el diseño que nos trae está protegido por la patente de otro fabricante, nuestros ingenieros modifican las piezas o el aspecto hasta que deja de chocar con esa patente.",
   linkLabel: "Descargas",
   href: "/es/downloads",
 };

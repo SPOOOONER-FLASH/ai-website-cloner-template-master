@@ -83,10 +83,7 @@ export default function BuscadorDeProductosPage() {
               <FinderModeSwitch active="catalogue" locale="es" />
             </div>
             <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-              Acote el catálogo por los atributos que aparecen en una relación de herrajes.
-              Los filtros se combinan, los recuentos se actualizan sobre la marcha, y la
-              barra de direcciones conserva su selección para que pueda enviarla a un
-              colega.
+              Busque como ya escribe una planilla de puertas: por categoría, material, acabado y tipo de puerta. Su selección queda en el enlace, así un colega abre exactamente la misma lista.
             </p>
             {/*
               Honest scope note, same as the English route: most records carry no
@@ -95,9 +92,7 @@ export default function BuscadorDeProductosPage() {
               options from the data rather than from a hard-coded list.
             */}
             <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-              Mostrando {publishedProducts.length} productos publicados. Los filtros dimensionales
-              (distancia al eje, entre-ejes, espesor de puerta) llegan con el catálogo
-              técnico completo.
+              Mostrando {publishedProducts.length} productos publicados. Los filtros por entrada, distancia entre ejes y espesor de puerta llegan con el catálogo técnico completo; mientras tanto, cada ficha muestra las medidas que tiene.
             </p>
           </div>
           <div className="col-span-full xl:col-span-9 xl:col-start-16">

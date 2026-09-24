@@ -40,9 +40,9 @@ export const PRODUCT_FAMILIES: readonly ProductFamilyDefinition[] = [
     slug: "panic-exit-devices",
     label: { en: "Panic exit devices", es: "Barras antipánico", pt: "Barras antipânico" },
     description: {
-      en: "Push and touch-bar families for escape routes.",
-      es: "Familias de barras de empuje y de toque para evacuación.",
-      pt: "Famílias de barra de empurrar e de toque para rotas de fuga.",
+      en: "Push-bar devices for escape and fire doors, single-point to multi-point.",
+      es: "Barras de empuje para puertas de evacuación y cortafuego, de un punto a multipunto.",
+      pt: "Barras de empurrar para portas de saída de emergência e corta-fogo, de um ponto a multiponto.",
     },
   },
   {
@@ -51,16 +51,16 @@ export const PRODUCT_FAMILIES: readonly ProductFamilyDefinition[] = [
     description: {
       en: "Mortise cases across backset and bolt configurations.",
       es: "Cajas de embutir con distintas entradas y configuraciones de pestillo.",
-      pt: "Caixas de embutir em vários backsets e configurações de lingueta.",
+      pt: "Caixas de embutir com várias distâncias ao eixo e configurações de lingueta.",
     },
   },
   {
     slug: "door-closers",
     label: { en: "Door control", es: "Control de puertas", pt: "Controle de porta" },
     description: {
-      en: "Surface closers and concealed floor-spring applications.",
-      es: "Cierrapuertas de superficie y aplicaciones con bisagra de piso oculta.",
-      pt: "Molas aéreas de sobrepor e aplicações com mola de piso embutida.",
+      en: "Surface-mounted door closers, sized by leaf weight and width.",
+      es: "Cierrapuertas de superficie, elegidos por el peso y el ancho de la hoja.",
+      pt: "Molas aéreas de sobrepor, escolhidas pelo peso e pela largura da folha.",
     },
   },
   {
@@ -193,18 +193,18 @@ const COPY = {
     collection: "Canton Product Collection",
     title: "Door & Window Hardware",
     intro:
-      "Start with the complete system, then move from a hardware family to an exact published model.",
+      "Nine families of door hardware, from the lever in the hand to the lock case inside the door. Much of it ships under our customers' own names, so every dimension is written down: the part in the tenth container has to match the sample.",
     rangeMeta: "Nine coordinated families · one catalog",
     familiesHeading: "Nine ways into the catalog",
     familiesBody:
-      "Choose a family to explore its models. Use the complete catalog below for additional ranges and side-by-side specifications.",
+      "Each family opens onto its models and the figures that decide whether they fit. The complete catalog below compares them side by side.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
-      "From the handle you touch to the mechanism inside the door, specify each part around the opening. Explore the construction, material and finish options in our published catalog.",
+      "A door is a set of parts that have to agree with each other: lever, lock case, cylinder, strike. We supply them together, each specified against the others, so the opening works the day it is fitted.",
     storyEyebrow: "Selection and specification",
     storyTitle: "From range to installed opening.",
     storyBody:
-      "Door type and operating conditions shape the hardware choice. Review the application, compare the technical details and send your door schedule for selection support.",
+      "The door decides the hardware: what it is made of, how it opens, who uses it and how often. Send us your door schedule and our engineers will match each opening to a model.",
     applicationLink: "Explore applications",
     technicalLink: "Explore lock cases",
     conversionEyebrow: "Specify and source",
@@ -219,18 +219,18 @@ const COPY = {
     collection: "Colección Canton",
     title: "Herrajes para puertas y ventanas",
     intro:
-      "Empiece por el sistema completo y avance desde una familia de herrajes hasta un modelo publicado exacto.",
+      "Nueve familias de herrajes para puertas, desde la manija en la mano hasta la caja de cerradura dentro de la hoja. Buena parte sale con la marca de nuestros clientes, por eso cada medida queda por escrito: la pieza del décimo contenedor tiene que ser igual a la muestra.",
     rangeMeta: "Nueve familias coordinadas · un catálogo",
     familiesHeading: "Nueve entradas al catálogo",
     familiesBody:
-      "Elija una familia para explorar sus modelos. Consulte el catálogo completo más abajo para ver otras gamas y comparar especificaciones.",
+      "Cada familia lleva a sus modelos y a las cifras que deciden si encajan. El catálogo completo, más abajo, los compara uno al lado del otro.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
-      "Desde la manija hasta el mecanismo interior, especifique cada pieza según la abertura. Explore las opciones de construcción, material y acabado en nuestro catálogo.",
+      "Una puerta es un conjunto de piezas que tienen que entenderse entre sí: manija, caja de cerradura, cilindro y cerradero. Las suministramos juntas, cada una especificada en función de las demás, para que la puerta funcione el día que se monta.",
     storyEyebrow: "Selección y especificación",
     storyTitle: "De la gama a la abertura instalada.",
     storyBody:
-      "El tipo de puerta y las condiciones de uso determinan la elección. Revise la aplicación, compare los detalles técnicos y envíe su cuadro de puertas para recibir apoyo.",
+      "La puerta decide los herrajes: de qué está hecha, cómo abre, quién la usa y cuántas veces al día. Envíenos su planilla de puertas y nuestros ingenieros asignarán un modelo a cada hueco.",
     applicationLink: "Explorar aplicaciones",
     technicalLink: "Explorar cerraduras de embutir",
     conversionEyebrow: "Especificar y abastecer",
@@ -245,18 +245,18 @@ const COPY = {
     collection: "Coleção Canton",
     title: "Ferragens para portas e janelas",
     intro:
-      "Comece pelo sistema completo e avance de uma família de ferragens até um modelo publicado exato.",
+      "Nove famílias de ferragens para portas, da maçaneta na mão à caixa de fechadura dentro da folha. Boa parte sai com a marca dos nossos clientes, por isso cada medida fica registrada: a peça do décimo contêiner tem que ser igual à amostra.",
     rangeMeta: "Nove famílias coordenadas · um catálogo",
     familiesHeading: "Nove entradas no catálogo",
     familiesBody:
-      "Escolha uma família para explorar os seus modelos. Use o catálogo completo abaixo para ver outras linhas e comparar especificações lado a lado.",
+      "Cada família leva aos seus modelos e aos números que decidem se eles servem. O catálogo completo, logo abaixo, compara todos lado a lado.",
     brandLine: "Engineered by Canton Hyland",
     brandBody:
-      "Da maçaneta que você toca ao mecanismo dentro da porta, especifique cada peça em torno do vão. Explore as opções de construção, material e acabamento no nosso catálogo publicado.",
+      "Uma porta é um conjunto de peças que precisam conversar entre si: maçaneta, caixa de fechadura, cilindro e contra-testa. Fornecemos tudo junto, cada peça especificada em função das outras, para que a porta funcione no dia da instalação.",
     storyEyebrow: "Seleção e especificação",
     storyTitle: "Da linha ao vão instalado.",
     storyBody:
-      "O tipo de porta e as condições de uso determinam a escolha da ferragem. Veja a aplicação, compare os detalhes técnicos e envie o seu quadro de portas para apoio na seleção.",
+      "A porta decide a ferragem: do que é feita, como abre, quem usa e quantas vezes por dia. Envie a sua planilha de portas e nossos engenheiros indicam um modelo para cada vão.",
     applicationLink: "Explorar aplicações",
     technicalLink: "Explorar fechaduras de embutir",
     conversionEyebrow: "Especificar e abastecer",
