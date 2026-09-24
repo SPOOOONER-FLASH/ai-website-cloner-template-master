@@ -176,7 +176,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Rosette Size": "Dimensões da roseta",
   "Rosette Diameter": "Diâmetro da roseta",
   "Lever length": "Comprimento da maçaneta",
-  "Lever section": "Secção da maçaneta",
+  "Lever section": "Seção da maçaneta",
   "Lever drop": "Queda da maçaneta",
   "Fixing center": "Distância entre fixações",
   "Fixing centers": "Distâncias entre fixações",
@@ -187,7 +187,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Plate height": "Altura da placa",
   "Plate thickness": "Espessura da placa",
   "Grip center distance": "Distância entre eixos do puxador",
-  "Grip section": "Secção do puxador",
+  "Grip section": "Seção do puxador",
   "Grip length": "Comprimento do puxador",
   "Slot width": "Largura da ranhura",
   "Cylinder cutout": "Recorte do cilindro",
@@ -195,7 +195,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Body diameter": "Diâmetro do corpo",
   "Stem diameter": "Diâmetro da haste",
   "Diameter size": "Diâmetro",
-  "Bar section": "Secção da barra",
+  "Bar section": "Seção da barra",
   "Bar Length": "Comprimento da barra",
   "Overall length": "Comprimento total",
   "Available lengths": "Comprimentos disponíveis",
@@ -605,6 +605,17 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  /*
+    Added 2026-09-24 with the bathroom-accessory spec clean-up. The catalogue stated one
+    fact four ways ("bathroom", "bathroom, living room", "Living room/Bathroom",
+    "living room,bathroom..."); each spelling already had a key here, so normalising the
+    English would have orphaned all of them. These are the canonical forms, carrying the
+    same Spanish/Portuguese those keys already held.
+  */
+  "Bathroom, living room": "Banheiro e sala",
+  "Wall-mount": "Fixação na parede",
+  "1–8 hooks available": "De 1 a 8 ganchos",
+  "Panic exit devices": "Barras antipânico",
   /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch; "Porta dupla" is below. */
   "Passage, no latch bolt": "Passagem livre, sem lingueta",
   "A separate lock case, supplied to suit":

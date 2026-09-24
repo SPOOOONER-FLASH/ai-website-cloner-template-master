@@ -1,0 +1,48 @@
+{
+  "model": "D3872 CP",
+  "slug": "d3872-cp-indicator",
+  "name": "Indicator",
+  "nameZh": "指示器",
+  "series": "Indicator",
+  "categoryPath": [
+    "hardware-accessories",
+    "indicators"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Zinc Alloy indicator.",
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Bolt 66 × 40.8mm; indicator plate 42 × 62mm"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "Brushed Nickel",
+    "Polished Chrome"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/d3872-cp-indicator.webp",
+    "ratio": "1 / 1",
+    "label": "D3872 CP Indicator, Brushed Nickel"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/d3872-cp-indicator-2.webp",
+      "ratio": "1 / 1",
+      "label": "D3872 CP Indicator, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "D3872 CP Indicator | RAYEN",
+  "seoDescription": "Zinc Alloy indicator."
+}
