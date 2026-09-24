@@ -265,9 +265,23 @@ mkdirSync(TARGET_DIR, { recursive: true });
   real ovals elsewhere. Provenance is the better discriminator: we know exactly which
   files this import produced, because it produced them.
 */
-const importedSlugs = JSON.parse(
-  readFileSync(join(root, "content", "rayen", "union-handles.json"), "utf8"),
-).models.map((model) => model.slug);
+/*
+  The same holds for every page cut from the factory's own catalogue PDF
+  (content/rayen/rayen-catalogue-*.json). On 2026-09-24 the red test refused four of those
+  white-background plates, and each was a gold or satin-gold finish in the corner: E-type
+  hinge -3, RY8005 -6, AL-115 -4, 4x4x2.5 -3. A red-gold finish matches the red-lettering
+  test, so in the gold rows it is the finish that gets refused, not a logo.
+
+  The Union (优恩) scene packs are NOT added here. Their refusals are warm timber and red
+  walls as well, but some of those photographs carry signage with Chinese or Japanese text
+  (t1111-6 shows a school's name), so they need a look one by one before they publish.
+*/
+const importedSlugs = [
+  "union-handles.json",
+  ...readdirSync(join(root, "content", "rayen")).filter((f) => /^rayen-catalogue-.*\.json$/.test(f)),
+].flatMap((name) =>
+  JSON.parse(readFileSync(join(root, "content", "rayen", name), "utf8")).models.map((model) => model.slug),
+);
 
 const neverWatermarked = (file) =>
   importedSlugs.some((slug) => file === `${slug}.webp` || file.startsWith(`${slug}-`));
@@ -352,6 +366,8 @@ for (const file of files) {
     prior &&
     prior.source === sourceHash &&
     !staleRefusal &&
+    // Provenance overrides a refusal remembered from before the file joined that list.
+    !(prior.status === "refused" && neverWatermarked(file)) &&
     (prior.status === "refused" || existsSync(target))
   ) {
     results.push({ file, status: prior.status, reason: prior.reason });

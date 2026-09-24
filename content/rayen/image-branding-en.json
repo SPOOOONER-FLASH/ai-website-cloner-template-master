@@ -5,8 +5,8 @@
     "对不上就说明上游重新生成过，需要重新打 —— 用布尔开关记「打过了」，",
     "去水印那一步一重跑就失效，而每次都打会把标一层层叠上去。"
   ],
-  "ranAt": "2026-09-24T06:26:35.996Z",
-  "count": 2440,
+  "ranAt": "2026-09-24T13:52:51.988Z",
+  "count": 2479,
   "stamped": {
     "023-etan-anti-pick-panic-exit-device.webp": "089e7a0090fdcdf5c3cf446594ad0898313b9f4729bc12d699dd321d621a4d45",
     "317-cold-room-push-bar-exit-device.webp": "06b2beb70642759b75f578959395d880af401de9d19d639efceb0e22d64cd5cf",
@@ -2482,7 +2482,11 @@
     "ek-type-multifunction-hydraulic-hinge-2.webp": "c29cb3c006bc4051ffadddc90b094caeb42ee3160fe7e86078bd686875c79cb1",
     "ek-type-multifunction-hydraulic-hinge-3.webp": "47f3dd3fac4f6004e2422101791f4039806f1411172bb4220394df99acb7624d",
     "ek-type-multifunction-hydraulic-hinge-4.webp": "e197dbf1268de7435897a8cd4bf3ca101eaf655749f12d22ac003d58fbec6eee",
-    "ek-type-multifunction-hydraulic-hinge.webp": "6f302775556419c4a4ebe0a5a4fc6417e369847c03f4d25bcedf20cbf40286e0"
+    "ek-type-multifunction-hydraulic-hinge.webp": "6f302775556419c4a4ebe0a5a4fc6417e369847c03f4d25bcedf20cbf40286e0",
+    "4x4x2-5-3d-adjustable-hinge-3.webp": "9c81be3ae149921aea2337751b02ba584a705ffba4a231f73f685c696cb24772",
+    "al-115-lever-handle-4.webp": "71d2473a3a334f9d34c8e8af86bf5fce638e07fb45ea22317f79b879a34076c0",
+    "e-type-multifunction-hydraulic-hinge-3.webp": "3035c1765d1c932e1e8ad4d149c8d111fe37d7f9c04f9060bcd213812fcc9817",
+    "ry8005-hydraulic-hinge-6.webp": "16463b9e122c2786243e3a097977becc85af7b2f536e834ef3a555de5826f374"
   },
   "seededFrom": {
     "023-etan-anti-pick-panic-exit-device.webp": "837c98d0194616e10a45a2086556967b0a4ec2bc05b0e5da9548ab916e5a7399",
@@ -4959,6 +4963,10 @@
     "ek-type-multifunction-hydraulic-hinge-2.webp": "37ad4c65570814ea4716b8c5bbaaf285caff35a74a1ea341cd8e02412d11755e",
     "ek-type-multifunction-hydraulic-hinge-3.webp": "225de9142a068e40c9f839c9f2cc05a6dc9ce4f4159abf36975bd3e4eebc3b96",
     "ek-type-multifunction-hydraulic-hinge-4.webp": "def7494be57ca961980724fa8fa5b47642892f380bb67f3fff5f73e65c9d91d4",
-    "ek-type-multifunction-hydraulic-hinge.webp": "b364c05a0f8ab58b7fb151154494162438d4a38aac3a92004a9ccdcd5815a52e"
+    "ek-type-multifunction-hydraulic-hinge.webp": "b364c05a0f8ab58b7fb151154494162438d4a38aac3a92004a9ccdcd5815a52e",
+    "4x4x2-5-3d-adjustable-hinge-3.webp": "4bcc773f76bf63d03fb6f2b24ffb2f1d02117a4e08b8eb02b8d42a485e3cebc6",
+    "al-115-lever-handle-4.webp": "90e891061fa08ae45f20989f843834e7eb3c14f371a3a169436e4c93fee5154f",
+    "e-type-multifunction-hydraulic-hinge-3.webp": "35180744984016342245970c330a07b01c33bd06c1580412b1bbe99cac9a3af1",
+    "ry8005-hydraulic-hinge-6.webp": "7e0b4ed4be7d3179ace0e27e272d8f3c42d693df52d016d37d98bc147b393080"
   }
 }
