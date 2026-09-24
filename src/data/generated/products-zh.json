@@ -478,7 +478,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "钢材喷涂，可选多种表面处理",
@@ -553,7 +553,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "steel material with spray painting , different finishes are available .",
@@ -2823,7 +2823,7 @@
         "玻璃门夹具",
         "玻璃门拉手"
       ],
-      "summary": "304 不锈钢玻璃门拉手。中心距 149mm at the head, 133mm at the foot — tapered，长度 600mm。",
+      "summary": "304 不锈钢玻璃门拉手。中心距 149mm at the head, 133mm at the foot, tapered，长度 600mm。",
       "specs": [
         {
           "label": "材质",
@@ -2847,7 +2847,7 @@
         },
         {
           "label": "中心距",
-          "value": "149mm at the head, 133mm at the foot — tapered"
+          "value": "149mm at the head, 133mm at the foot, tapered"
         },
         {
           "label": "管径",
@@ -2895,7 +2895,7 @@
       "sites": [],
       "styleFamily": "",
       "seoTitle": "104 玻璃门拉手",
-      "seoDescription": "304 不锈钢玻璃门拉手。中心距 149mm at the head, 133mm at the foot — tapered，长度 600mm。",
+      "seoDescription": "304 不锈钢玻璃门拉手。中心距 149mm at the head, 133mm at the foot, tapered，长度 600mm。",
       "en": {
         "name": "Glass Door Handle",
         "series": "Glass Door Handle",
@@ -2903,7 +2903,7 @@
           "Glass Door Accessories",
           "Glass Door Handles"
         ],
-        "summary": "304 Stainless Steel glass door handle. Centre distance 149mm at the head, 133mm at the foot — tapered, length 600mm.",
+        "summary": "304 Stainless Steel glass door handle. Centre distance 149mm at the head, 133mm at the foot, tapered, length 600mm.",
         "specs": [
           {
             "label": "Material",
@@ -2927,7 +2927,7 @@
           },
           {
             "label": "Centre distance",
-            "value": "149mm at the head, 133mm at the foot — tapered"
+            "value": "149mm at the head, 133mm at the foot, tapered"
           },
           {
             "label": "Tube diameter",
@@ -2952,7 +2952,7 @@
         ],
         "doorTypes": [],
         "seoTitle": "104 Glass Door Handle",
-        "seoDescription": "304 Stainless Steel glass door handle. Centre distance 149mm at the head, 133mm at the foot — tapered, length 600mm."
+        "seoDescription": "304 Stainless Steel glass door handle. Centre distance 149mm at the head, 133mm at the foot, tapered, length 600mm."
       }
     },
     {
@@ -4956,7 +4956,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -5019,7 +5019,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -7516,7 +7516,7 @@
       "specs": [
         {
           "label": "功能",
-          "value": "Passage — no latch bolt"
+          "value": "Passage, no latch bolt"
         },
         {
           "label": "配用",
@@ -7596,7 +7596,7 @@
         "specs": [
           {
             "label": "Function",
-            "value": "Passage — no latch bolt"
+            "value": "Passage, no latch bolt"
           },
           {
             "label": "Fitted with",
@@ -8034,7 +8034,7 @@
           "src": "/images/products-rayen/308-s-s-panic-exit-device-2.webp",
           "ratio": "1 / 1",
           "label": "雷茵 308-S S 型逃生推杠 第 2 张",
-          "labelEn": "Hyland 308-S single-point panic exit device, three-quarter view — the side latch is visible at the left-hand case"
+          "labelEn": "Hyland 308-S single-point panic exit device, three-quarter view, the side latch is visible at the left-hand case"
         },
         {
           "src": "/images/products-rayen/308-s-s-panic-exit-device-3.webp",
@@ -9842,7 +9842,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -9900,7 +9900,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -9962,7 +9962,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -10041,7 +10041,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -13733,6 +13733,105 @@
       }
     },
     {
+      "slug": "5039-340-lever-handle",
+      "model": "5039-340",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 50mm，面板尺寸 230 × 50mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "230 × 50mm"
+        },
+        {
+          "label": "中心距",
+          "value": "50mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5045"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/5039-340-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 5039-340 面板执手锁，黄古铜",
+        "labelEn": "5039-340 Lever Handle on Backplate, Antique Yellow Brass"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/5039-340-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5039-340 面板执手锁，尺寸图",
+          "labelEn": "5039-340 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "5039-340 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 50mm，面板尺寸 230 × 50mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 50mm, plate size 230 × 50mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "230 × 50mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "50mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5045"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "5039-340 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 50mm, plate size 230 × 50mm."
+      }
+    },
+    {
       "slug": "54-dk-lock-cylinder",
       "model": "54 DK",
       "name": "锁芯",
@@ -15847,7 +15946,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -15910,7 +16009,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -15978,7 +16077,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -16041,7 +16140,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -16077,7 +16176,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
         },
         {
           "label": "背距",
@@ -16113,7 +16212,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -16182,7 +16281,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
           },
           {
             "label": "Backset",
@@ -16218,7 +16317,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -16303,7 +16402,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -16382,7 +16481,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -16424,7 +16523,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
         },
         {
           "label": "背距",
@@ -16460,7 +16559,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -16531,7 +16630,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
           },
           {
             "label": "Backset",
@@ -16567,7 +16666,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -16648,7 +16747,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -16727,7 +16826,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -16936,7 +17035,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -17024,7 +17123,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -17092,7 +17191,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "不锈钢",
@@ -17188,7 +17287,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Stainless Steel",
@@ -17258,7 +17357,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -17354,7 +17453,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -17424,7 +17523,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -17508,7 +17607,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -18247,6 +18346,744 @@
       }
     },
     {
+      "slug": "58150-704-lever-handle",
+      "model": "58150-704",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "120mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "青古铜",
+        "哑黑",
+        "镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58150-704-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58150-704 面板执手锁，青古铜",
+        "labelEn": "58150-704 Lever Handle on Backplate, Antique Bronze"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58150-704-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58150-704 面板执手锁，尺寸图",
+          "labelEn": "58150-704 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58150-704-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58150-704 面板执手锁，哑黑",
+          "labelEn": "58150-704 Lever Handle on Backplate, Matt Black"
+        },
+        {
+          "src": "/images/products-rayen/58150-704-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58150-704 面板执手锁，镍拉丝",
+          "labelEn": "58150-704 Lever Handle on Backplate, Brushed Nickel"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58150-704 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "120mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "185 × 45mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Bronze",
+          "Matt Black",
+          "Brushed Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58150-704 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm."
+      }
+    },
+    {
+      "slug": "58172-783-lever-handle",
+      "model": "58172-783",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "230 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黑红古",
+        "黄古铜",
+        "青古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58172-783-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58172-783 面板执手锁，黑红古",
+        "labelEn": "58172-783 Lever Handle on Backplate, Black Antique Copper"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58172-783-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58172-783 面板执手锁，尺寸图",
+          "labelEn": "58172-783 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58172-783-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58172-783 面板执手锁，黄古铜",
+          "labelEn": "58172-783 Lever Handle on Backplate, Antique Yellow Brass"
+        },
+        {
+          "src": "/images/products-rayen/58172-783-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58172-783 面板执手锁，青古铜",
+          "labelEn": "58172-783 Lever Handle on Backplate, Antique Bronze"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58172-783 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "230 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Black Antique Copper",
+          "Antique Yellow Brass",
+          "Antique Bronze"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58172-783 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 48mm."
+      }
+    },
+    {
+      "slug": "58177-785-lever-handle",
+      "model": "58177-785",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 55mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "230 × 55mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黄古铜",
+        "青古铜",
+        "黑红古"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58177-785-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58177-785 面板执手锁，黄古铜",
+        "labelEn": "58177-785 Lever Handle on Backplate, Antique Yellow Brass"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58177-785-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58177-785 面板执手锁，尺寸图",
+          "labelEn": "58177-785 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58177-785-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58177-785 面板执手锁，青古铜",
+          "labelEn": "58177-785 Lever Handle on Backplate, Antique Bronze"
+        },
+        {
+          "src": "/images/products-rayen/58177-785-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58177-785 面板执手锁，黑红古",
+          "labelEn": "58177-785 Lever Handle on Backplate, Black Antique Copper"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58177-785 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 55mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 55mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "230 × 55mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Yellow Brass",
+          "Antique Bronze",
+          "Black Antique Copper"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58177-785 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 55mm."
+      }
+    },
+    {
+      "slug": "58181-745-lever-handle",
+      "model": "58181-745",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "120mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑光镍拉丝 / 亮铬",
+        "黑镍拉丝 / 亮铬"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58181-745-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58181-745 面板执手锁，哑光镍拉丝 / 亮铬",
+        "labelEn": "58181-745 Lever Handle on Backplate, Brushed Satin Nickel / Polished Chrome"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58181-745-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58181-745 面板执手锁，尺寸图",
+          "labelEn": "58181-745 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58181-745-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58181-745 面板执手锁，黑镍拉丝 / 亮铬",
+          "labelEn": "58181-745 Lever Handle on Backplate, Brushed Black Nickel / Polished Chrome"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58181-745 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "120mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "185 × 45mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Satin Nickel / Polished Chrome",
+          "Brushed Black Nickel / Polished Chrome"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58181-745 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm."
+      }
+    },
+    {
+      "slug": "58181-811-lever-handle",
+      "model": "58181-811",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "120mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑光镍拉丝 / 亮铬",
+        "黑镍拉丝 / 亮铬"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58181-811-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58181-811 面板执手锁，哑光镍拉丝 / 亮铬",
+        "labelEn": "58181-811 Lever Handle on Backplate, Brushed Satin Nickel / Polished Chrome"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58181-811-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58181-811 面板执手锁，尺寸图",
+          "labelEn": "58181-811 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58181-811-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58181-811 面板执手锁，黑镍拉丝 / 亮铬",
+          "labelEn": "58181-811 Lever Handle on Backplate, Brushed Black Nickel / Polished Chrome"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58181-811 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "120mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "185 × 45mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Satin Nickel / Polished Chrome",
+          "Brushed Black Nickel / Polished Chrome"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58181-811 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm."
+      }
+    },
+    {
+      "slug": "58200-2010-lever-handle",
+      "model": "58200-2010",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 50mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "135mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "230 × 50mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "哑黑",
+        "青古铜",
+        "黑镍拉丝",
+        "黄古铜",
+        "淡金拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/58200-2010-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 58200-2010 面板执手锁，哑黑",
+        "labelEn": "58200-2010 Lever Handle on Backplate, Matt Black"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/58200-2010-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58200-2010 面板执手锁，尺寸图",
+          "labelEn": "58200-2010 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/58200-2010-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58200-2010 面板执手锁，青古铜",
+          "labelEn": "58200-2010 Lever Handle on Backplate, Antique Bronze"
+        },
+        {
+          "src": "/images/products-rayen/58200-2010-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58200-2010 面板执手锁，黑镍拉丝",
+          "labelEn": "58200-2010 Lever Handle on Backplate, Brushed Black Nickel"
+        },
+        {
+          "src": "/images/products-rayen/58200-2010-lever-handle-5.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58200-2010 面板执手锁，黄古铜",
+          "labelEn": "58200-2010 Lever Handle on Backplate, Antique Yellow Brass"
+        },
+        {
+          "src": "/images/products-rayen/58200-2010-lever-handle-6.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 58200-2010 面板执手锁，淡金拉丝",
+          "labelEn": "58200-2010 Lever Handle on Backplate, Brushed Light Gold"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "58200-2010 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 50mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 50mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "135mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "230 × 50mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Matt Black",
+          "Antique Bronze",
+          "Brushed Black Nickel",
+          "Antique Yellow Brass",
+          "Brushed Light Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "58200-2010 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 50mm."
+      }
+    },
+    {
       "slug": "5831-90mm-black-tubular-lock",
       "model": "5831-90mm black",
       "name": "管状锁",
@@ -18586,7 +19423,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "可选表面处理",
@@ -18692,7 +19529,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Finishes Available",
@@ -18827,6 +19664,121 @@
         "doorTypes": [],
         "seoTitle": "5832 PBBSET Heavy Duty Cylindrical Lock",
         "seoDescription": "Stainless Steel heavy duty cylindrical lock. Cycle life 200,000 cycles."
+      }
+    },
+    {
+      "slug": "5833-524-lever-handle",
+      "model": "5833-524",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "131mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "230 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黄古铜",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/5833-524-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 5833-524 面板执手锁，黄古铜",
+        "labelEn": "5833-524 Lever Handle on Backplate, Antique Yellow Brass"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/5833-524-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5833-524 面板执手锁，尺寸图",
+          "labelEn": "5833-524 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/5833-524-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5833-524 面板执手锁，锆金",
+          "labelEn": "5833-524 Lever Handle on Backplate, Zirconium Gold"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "5833-524 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 230 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "131mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "230 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Yellow Brass",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "5833-524 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 230 × 48mm."
       }
     },
     {
@@ -19049,7 +20001,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -19112,7 +20064,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -19648,7 +20600,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -19711,7 +20663,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -19779,7 +20731,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -19848,7 +20800,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -19922,7 +20874,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -19991,7 +20943,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -20065,7 +21017,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙类型",
@@ -20165,7 +21117,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Key Types",
@@ -20239,7 +21191,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙类型",
@@ -20337,7 +21289,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Key Types",
@@ -20415,7 +21367,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙选项",
@@ -20519,7 +21471,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Key options",
@@ -20597,7 +21549,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙选项",
@@ -20683,7 +21635,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Key options",
@@ -20918,7 +21870,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙类型",
@@ -21016,7 +21968,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Key Types",
@@ -21094,7 +22046,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -21188,7 +22140,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -21322,7 +22274,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -21391,7 +22343,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -21465,7 +22417,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -21528,7 +22480,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -21600,7 +22552,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "表面处理",
@@ -21714,7 +22666,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Finishes",
@@ -21962,7 +22914,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -22062,7 +23014,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -22273,7 +23225,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -22349,7 +23301,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -22421,7 +23373,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "表面处理",
@@ -22541,7 +23493,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Finishes",
@@ -22689,6 +23641,129 @@
       }
     },
     {
+      "slug": "5881-592-lever-handle",
+      "model": "5881-592",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "120mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "185 × 45mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        },
+        {
+          "label": "适用门厚",
+          "value": "38-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "锆金",
+        "哑黑",
+        "镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/5881-592-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 5881-592 面板执手锁，锆金",
+        "labelEn": "5881-592 Lever Handle on Backplate, Zirconium Gold"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/5881-592-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5881-592 面板执手锁，尺寸图",
+          "labelEn": "5881-592 Lever Handle on Backplate, dimension drawing"
+        },
+        {
+          "src": "/images/products-rayen/5881-592-lever-handle-3.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5881-592 面板执手锁，哑黑",
+          "labelEn": "5881-592 Lever Handle on Backplate, Matt Black"
+        },
+        {
+          "src": "/images/products-rayen/5881-592-lever-handle-4.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 5881-592 面板执手锁，镍拉丝",
+          "labelEn": "5881-592 Lever Handle on Backplate, Brushed Nickel"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "5881-592 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 58mm，面板尺寸 185 × 45mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "120mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "185 × 45mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          },
+          {
+            "label": "Door thickness",
+            "value": "38-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Zirconium Gold",
+          "Matt Black",
+          "Brushed Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "5881-592 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 58mm, plate size 185 × 45mm."
+      }
+    },
+    {
       "slug": "592-abet-tubular-lock",
       "model": "592 ABET",
       "name": "管状锁",
@@ -22746,7 +23821,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -22809,7 +23884,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -22877,7 +23952,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -22955,7 +24030,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -23025,7 +24100,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -23101,7 +24176,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -23169,7 +24244,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -23238,7 +24313,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -23443,7 +24518,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -23537,7 +24612,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -23605,7 +24680,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -23693,7 +24768,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -23761,7 +24836,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "黄铜或不锈钢",
@@ -23855,7 +24930,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Brass Or Stainless Steel",
@@ -23927,7 +25002,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -24002,7 +25077,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -24076,7 +25151,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "不锈钢",
@@ -24170,7 +25245,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Stainless Steel",
@@ -24244,7 +25319,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -24338,7 +25413,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -24412,7 +25487,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢",
@@ -24487,7 +25562,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel",
@@ -24525,7 +25600,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
         },
         {
           "label": "背距",
@@ -24622,7 +25697,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
           },
           {
             "label": "Backset",
@@ -26540,7 +27615,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -26651,7 +27726,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -26848,7 +27923,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -26915,7 +27990,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -26987,7 +28062,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "锁舌",
@@ -27085,7 +28160,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Latch",
@@ -27163,7 +28238,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -27230,7 +28305,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -27302,7 +28377,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -27369,7 +28444,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -27564,7 +28639,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "锁舌",
@@ -27666,7 +28741,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Latch",
@@ -27742,7 +28817,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -27844,7 +28919,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -28059,7 +29134,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -28161,7 +29236,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -28237,7 +29312,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "锁舌",
@@ -28339,7 +29414,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Latch",
@@ -28415,7 +29490,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁舌",
@@ -28535,7 +29610,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Latch",
@@ -28768,7 +29843,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -28835,7 +29910,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -28907,7 +29982,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -28974,7 +30049,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -29169,7 +30244,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -29261,7 +30336,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -29333,7 +30408,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "不锈钢 / 黄铜 / 实心钢",
@@ -29427,7 +30502,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless steel/Brass/Solid steel",
@@ -29497,7 +30572,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "201/304 不锈钢",
@@ -29564,7 +30639,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Stainless Steel201/304",
@@ -29636,7 +30711,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "201/304 不锈钢",
@@ -29703,7 +30778,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Stainless Steel201/304",
@@ -29900,7 +30975,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -29997,7 +31072,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -30061,7 +31136,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -30119,7 +31194,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -30181,7 +31256,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -30270,7 +31345,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -31528,7 +32603,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -31629,7 +32704,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -31697,7 +32772,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -31780,7 +32855,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -31905,7 +32980,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -31982,7 +33057,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32050,7 +33125,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32133,7 +33208,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32197,7 +33272,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32286,7 +33361,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32354,7 +33429,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32437,7 +33512,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32503,7 +33578,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32610,7 +33685,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32678,7 +33753,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32755,7 +33830,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32823,7 +33898,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32912,7 +33987,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -32976,7 +34051,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -32996,7 +34071,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         }
       ],
       "material": "铝",
@@ -33038,7 +34113,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -33058,7 +34133,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           }
         ],
         "material": "Aluminum",
@@ -33104,7 +34179,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -33124,7 +34199,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         }
       ],
       "material": "铝",
@@ -33166,7 +34241,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -33186,7 +34261,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           }
         ],
         "material": "Aluminum",
@@ -33232,7 +34307,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -33252,7 +34327,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "表面处理",
@@ -33331,7 +34406,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -33351,7 +34426,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Finish",
@@ -33403,7 +34478,7 @@
         },
         {
           "label": "锁孔直径",
-          "value": "51mm —— 可替换大多数现有锁具"
+          "value": "51mm, replaces most existing locksets"
         },
         {
           "label": "锁芯座",
@@ -33423,7 +34498,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "表面处理",
@@ -33490,7 +34565,7 @@
           },
           {
             "label": "Cross bore",
-            "value": "51mm — replaces most existing locksets"
+            "value": "51mm, replaces most existing locksets"
           },
           {
             "label": "Chassis",
@@ -33510,7 +34585,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Finish",
@@ -34424,6 +35499,354 @@
       }
     },
     {
+      "slug": "72133-712-lever-handle",
+      "model": "72133-712",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 72mm，面板尺寸 285 × 62mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "134mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "285 × 62mm"
+        },
+        {
+          "label": "中心距",
+          "value": "72mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/72133-712-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 72133-712 面板执手锁，黄古铜",
+        "labelEn": "72133-712 Lever Handle on Backplate, Antique Yellow Brass"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/72133-712-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 72133-712 面板执手锁，尺寸图",
+          "labelEn": "72133-712 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "72133-712 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 72mm，面板尺寸 285 × 62mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 285 × 62mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "134mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "285 × 62mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "72mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "72133-712 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 285 × 62mm."
+      }
+    },
+    {
+      "slug": "72150-704-lever-handle",
+      "model": "72150-704",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 72mm，面板尺寸 240 × 48mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "240 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "72mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/72150-704-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 72150-704 面板执手锁，镍拉丝",
+        "labelEn": "72150-704 Lever Handle on Backplate, Brushed Nickel"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/72150-704-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 72150-704 面板执手锁，尺寸图",
+          "labelEn": "72150-704 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "72150-704 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 72mm，面板尺寸 240 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 240 × 48mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "240 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "72mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "72150-704 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 240 × 48mm."
+      }
+    },
+    {
+      "slug": "7281-592-lever-handle",
+      "model": "7281-592",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 72mm，面板尺寸 240 × 48mm。",
+      "specs": [
+        {
+          "label": "面板尺寸",
+          "value": "240 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "72mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "镍拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/7281-592-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 7281-592 面板执手锁，镍拉丝",
+        "labelEn": "7281-592 Lever Handle on Backplate, Brushed Nickel"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/7281-592-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 7281-592 面板执手锁，尺寸图",
+          "labelEn": "7281-592 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "7281-592 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 72mm，面板尺寸 240 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 240 × 48mm.",
+        "specs": [
+          {
+            "label": "Plate size",
+            "value": "240 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "72mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Brushed Nickel"
+        ],
+        "doorTypes": [],
+        "seoTitle": "7281-592 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 240 × 48mm."
+      }
+    },
+    {
+      "slug": "7284-578-lever-handle",
+      "model": "7284-578",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "锌合金面板执手锁。中心距 72mm，面板尺寸 288 × 55mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "135mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "288 × 55mm"
+        },
+        {
+          "label": "中心距",
+          "value": "72mm"
+        },
+        {
+          "label": "材质",
+          "value": "锌合金"
+        }
+      ],
+      "material": "锌合金",
+      "finishes": [
+        "黄古铜"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/7284-578-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 7284-578 面板执手锁，黄古铜",
+        "labelEn": "7284-578 Lever Handle on Backplate, Antique Yellow Brass"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/7284-578-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 7284-578 面板执手锁，尺寸图",
+          "labelEn": "7284-578 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "7284-578 面板执手锁",
+      "seoDescription": "锌合金面板执手锁。中心距 72mm，面板尺寸 288 × 55mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 288 × 55mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "135mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "288 × 55mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "72mm"
+          },
+          {
+            "label": "Material",
+            "value": "Zinc Alloy"
+          }
+        ],
+        "material": "Zinc Alloy",
+        "finishes": [
+          "Antique Yellow Brass"
+        ],
+        "doorTypes": [],
+        "seoTitle": "7284-578 Lever Handle on Backplate",
+        "seoDescription": "Zinc Alloy lever handle on backplate. Centre distance 72mm, plate size 288 × 55mm."
+      }
+    },
+    {
       "slug": "80-bsdk-lock-cylinder",
       "model": "80 BSDK",
       "name": "锁芯",
@@ -34746,7 +36169,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -34804,7 +36227,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -34866,7 +36289,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -34937,7 +36360,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -34999,7 +36422,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35076,7 +36499,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -35114,7 +36537,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — all available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), all available"
         },
         {
           "label": "背距",
@@ -35142,7 +36565,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35180,7 +36603,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — all available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), all available"
           },
           {
             "label": "Backset",
@@ -35208,7 +36631,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -35250,7 +36673,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — all available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), all available"
         },
         {
           "label": "背距",
@@ -35278,7 +36701,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35316,7 +36739,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — all available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), all available"
           },
           {
             "label": "Backset",
@@ -35344,7 +36767,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -35410,7 +36833,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -35505,7 +36928,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -35573,7 +36996,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35635,7 +37058,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -35705,7 +37128,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35816,7 +37239,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -35888,7 +37311,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -35981,7 +37404,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -36053,7 +37476,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -36144,7 +37567,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -36381,7 +37804,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -36439,7 +37862,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -36501,7 +37924,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -36559,7 +37982,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -36732,7 +38155,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -36815,7 +38238,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -36877,7 +38300,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -36966,7 +38389,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -37028,7 +38451,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -37117,7 +38540,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -37230,7 +38653,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -37288,7 +38711,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -37350,7 +38773,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -37408,7 +38831,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -37613,7 +39036,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -37704,7 +39127,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -37768,7 +39191,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -37857,7 +39280,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -37919,7 +39342,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -38004,7 +39427,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -38473,7 +39896,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -38562,7 +39985,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -38624,7 +40047,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -38725,7 +40148,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -38850,7 +40273,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -38944,7 +40367,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -39080,7 +40503,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -39174,7 +40597,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -41131,7 +42554,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "适用门厚",
@@ -41212,7 +42635,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Door thickness",
@@ -41254,7 +42677,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "适用门厚",
@@ -41337,7 +42760,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Door thickness",
@@ -48652,7 +50075,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -48712,7 +50135,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -58910,7 +60333,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+          "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
         },
         {
           "label": "尺寸",
@@ -58982,7 +60405,7 @@
           },
           {
             "label": "Finish",
-            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC) — other available"
+            "value": "Antique Brass (AB), Antique Copper (AC), Polished Brass (PB), Satin Brass (SB), Stainless Steel (SS), Bright Polished (SP), Satin Chrome (SC), other available"
           },
           {
             "label": "Size",
@@ -69927,7 +71350,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
         },
         {
           "label": "材质",
@@ -70010,7 +71433,7 @@
           },
           {
             "label": "Finish",
-            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
           },
           {
             "label": "Material",
@@ -70061,7 +71484,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
         },
         {
           "label": "材质",
@@ -70144,7 +71567,7 @@
           },
           {
             "label": "Finish",
-            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
           },
           {
             "label": "Material",
@@ -70307,7 +71730,7 @@
         },
         {
           "label": "表面处理",
-          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+          "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
         },
         {
           "label": "材质",
@@ -70396,7 +71819,7 @@
           },
           {
             "label": "Finish",
-            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB) — all available"
+            "value": "Stainless Steel (SS), Antique Brass (AB), Satin Nickel (SN), Antique Copper (AC), Polished Brass (PB), all available"
           },
           {
             "label": "Material",
@@ -83765,7 +85188,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "锁型",
@@ -83861,7 +85284,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Lock Type",
@@ -91935,7 +93358,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -92028,7 +93451,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -92520,7 +93943,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -92597,7 +94020,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -92825,7 +94248,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         },
         {
           "label": "定制",
@@ -92903,7 +94326,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           },
           {
             "label": "Customization",
@@ -92960,7 +94383,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93021,7 +94444,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93071,7 +94494,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93136,7 +94559,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93198,7 +94621,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93262,7 +94685,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93312,7 +94735,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93371,7 +94794,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93469,7 +94892,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93525,7 +94948,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93583,7 +95006,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93662,7 +95085,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93712,7 +95135,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93783,7 +95206,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93877,7 +95300,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -93929,7 +95352,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -93979,7 +95402,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -94031,7 +95454,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -94085,7 +95508,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -94141,7 +95564,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -94264,7 +95687,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -94320,7 +95743,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -94370,7 +95793,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         },
         {
           "label": "面板至锁芯中心",
@@ -94437,7 +95860,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           },
           {
             "label": "Faceplate to cylinder centre",
@@ -94495,7 +95918,7 @@
         },
         {
           "label": "表面处理",
-          "value": "抛光铜（PB）、仿古铜（AB）、仿古红铜（AC）、不锈钢（SS）、缎面镍（SN）均可选"
+          "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
         }
       ],
       "material": "",
@@ -94547,7 +95970,7 @@
           },
           {
             "label": "Finish",
-            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN) — all available"
+            "value": "Polished Brass (PB), Antique Brass (AB), Antique Copper (AC), Stainless Steel (SS), Satin Nickel (SN), all available"
           }
         ],
         "material": "",
@@ -95230,7 +96653,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -95341,7 +96764,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -95419,7 +96842,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -95526,7 +96949,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -95783,7 +97206,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -95894,7 +97317,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -95972,7 +97395,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -96030,7 +97453,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -96092,7 +97515,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -96146,7 +97569,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -96204,7 +97627,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -96262,7 +97685,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -96324,7 +97747,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -96394,7 +97817,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -96712,7 +98135,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -96807,7 +98230,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -96875,7 +98298,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -96968,7 +98391,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -97340,7 +98763,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -97425,7 +98848,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -97489,7 +98912,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -97584,7 +99007,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -97813,7 +99236,7 @@
         },
         {
           "label": "功能",
-          "value": "浴室功能 —— 内侧旋钮，无钥匙"
+          "value": "Privacy, bathroom, turn button inside"
         },
         {
           "label": "钥匙系统",
@@ -97906,7 +99329,7 @@
           },
           {
             "label": "Function",
-            "value": "Privacy — bathroom, turn button inside"
+            "value": "Privacy, bathroom, turn button inside"
           },
           {
             "label": "Keying",
@@ -97972,7 +99395,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -98061,7 +99484,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -108082,7 +109505,7 @@
         },
         {
           "label": "功能",
-          "value": "入户功能 —— 外侧用钥匙"
+          "value": "Entrance, keyed outside"
         },
         {
           "label": "钥匙系统",
@@ -108146,7 +109569,7 @@
           },
           {
             "label": "Function",
-            "value": "Entrance — keyed outside"
+            "value": "Entrance, keyed outside"
           },
           {
             "label": "Keying",
@@ -108162,6 +109585,450 @@
         "doorTypes": [],
         "seoTitle": "S802 SNET Lever Handle",
         "seoDescription": "Zinc Alloy lever handle. Backset 60/70mm, door thickness 35mm to 45mm adjustable."
+      }
+    },
+    {
+      "slug": "sa-217-lever-handle",
+      "model": "SA-217",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 / 316 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "32-50mm"
+        },
+        {
+          "label": "耐久次数",
+          "value": "100,000 次"
+        },
+        {
+          "label": "锁体",
+          "value": "7255 / 7855"
+        }
+      ],
+      "material": "304 / 316 不锈钢",
+      "finishes": [
+        "不锈钢拉丝",
+        "不锈钢镜面抛光",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sa-217-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SA-217 执手锁，不锈钢拉丝",
+        "labelEn": "SA-217 Lever Handle, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sa-217-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SA-217 执手锁，尺寸图",
+          "labelEn": "SA-217 Lever Handle, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SA-217 执手锁",
+      "seoDescription": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304 / 316"
+          },
+          {
+            "label": "Door thickness",
+            "value": "32-50mm"
+          },
+          {
+            "label": "Cycle life",
+            "value": "100,000 cycles"
+          },
+          {
+            "label": "Lock case",
+            "value": "7255 / 7855"
+          }
+        ],
+        "material": "Stainless Steel 304 / 316",
+        "finishes": [
+          "Brushed Stainless",
+          "Mirror Polished Stainless",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SA-217 Lever Handle",
+        "seoDescription": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles."
+      }
+    },
+    {
+      "slug": "sa-219-lever-handle",
+      "model": "SA-219",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 / 316 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "32-50mm"
+        },
+        {
+          "label": "耐久次数",
+          "value": "100,000 次"
+        },
+        {
+          "label": "锁体",
+          "value": "7255 / 7855"
+        }
+      ],
+      "material": "304 / 316 不锈钢",
+      "finishes": [
+        "不锈钢拉丝",
+        "不锈钢镜面抛光",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sa-219-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SA-219 执手锁，不锈钢拉丝",
+        "labelEn": "SA-219 Lever Handle, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sa-219-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SA-219 执手锁，尺寸图",
+          "labelEn": "SA-219 Lever Handle, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SA-219 执手锁",
+      "seoDescription": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304 / 316"
+          },
+          {
+            "label": "Door thickness",
+            "value": "32-50mm"
+          },
+          {
+            "label": "Cycle life",
+            "value": "100,000 cycles"
+          },
+          {
+            "label": "Lock case",
+            "value": "7255 / 7855"
+          }
+        ],
+        "material": "Stainless Steel 304 / 316",
+        "finishes": [
+          "Brushed Stainless",
+          "Mirror Polished Stainless",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SA-219 Lever Handle",
+        "seoDescription": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles."
+      }
+    },
+    {
+      "slug": "sa-243-lever-handle",
+      "model": "SA-243",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "124mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 / 316 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "32-50mm"
+        },
+        {
+          "label": "耐久次数",
+          "value": "100,000 次"
+        },
+        {
+          "label": "锁体",
+          "value": "7255 / 7855"
+        }
+      ],
+      "material": "304 / 316 不锈钢",
+      "finishes": [
+        "不锈钢拉丝",
+        "不锈钢镜面抛光",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sa-243-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SA-243 执手锁，不锈钢拉丝",
+        "labelEn": "SA-243 Lever Handle, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sa-243-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SA-243 执手锁，尺寸图",
+          "labelEn": "SA-243 Lever Handle, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SA-243 执手锁",
+      "seoDescription": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "124mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304 / 316"
+          },
+          {
+            "label": "Door thickness",
+            "value": "32-50mm"
+          },
+          {
+            "label": "Cycle life",
+            "value": "100,000 cycles"
+          },
+          {
+            "label": "Lock case",
+            "value": "7255 / 7855"
+          }
+        ],
+        "material": "Stainless Steel 304 / 316",
+        "finishes": [
+          "Brushed Stainless",
+          "Mirror Polished Stainless",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SA-243 Lever Handle",
+        "seoDescription": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles."
+      }
+    },
+    {
+      "slug": "sa-305-lever-handle",
+      "model": "SA-305",
+      "name": "执手锁",
+      "nameEn": "Lever Handle",
+      "series": "执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "95mm"
+        },
+        {
+          "label": "圆盖直径",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 / 316 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "32-50mm"
+        },
+        {
+          "label": "耐久次数",
+          "value": "100,000 次"
+        },
+        {
+          "label": "锁体",
+          "value": "7255 / 7855"
+        }
+      ],
+      "material": "304 / 316 不锈钢",
+      "finishes": [
+        "不锈钢拉丝",
+        "不锈钢镜面抛光",
+        "锆金"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sa-305-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SA-305 执手锁，不锈钢拉丝",
+        "labelEn": "SA-305 Lever Handle, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sa-305-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SA-305 执手锁，尺寸图",
+          "labelEn": "SA-305 Lever Handle, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SA-305 执手锁",
+      "seoDescription": "304 / 316 不锈钢执手锁。适用门厚 32-50mm，耐久次数 100,000 次。",
+      "en": {
+        "name": "Lever Handle",
+        "series": "Lever Handle",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "95mm"
+          },
+          {
+            "label": "Rose diameter",
+            "value": "Ø53mm"
+          },
+          {
+            "label": "Material",
+            "value": "Stainless Steel 304 / 316"
+          },
+          {
+            "label": "Door thickness",
+            "value": "32-50mm"
+          },
+          {
+            "label": "Cycle life",
+            "value": "100,000 cycles"
+          },
+          {
+            "label": "Lock case",
+            "value": "7255 / 7855"
+          }
+        ],
+        "material": "Stainless Steel 304 / 316",
+        "finishes": [
+          "Brushed Stainless",
+          "Mirror Polished Stainless",
+          "Zirconium Gold"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SA-305 Lever Handle",
+        "seoDescription": "Stainless Steel 304 / 316 lever handle. Door thickness 32-50mm, cycle life 100,000 cycles."
       }
     },
     {
@@ -110804,6 +112671,1012 @@
         ],
         "seoTitle": "Stainless Steel Wall Hook Stainless Steel Wall Hook",
         "seoDescription": "Stainless Steel Wall Hook for wall-mounted interior accessory."
+      }
+    },
+    {
+      "slug": "sy5801-100-lever-handle",
+      "model": "SY5801-100",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5801-100-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5801-100 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5801-100 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5801-100-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5801-100 面板执手锁，尺寸图",
+          "labelEn": "SY5801-100 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5801-100 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5801-100 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5801-104-lever-handle",
+      "model": "SY5801-104",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5801-104-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5801-104 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5801-104 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5801-104-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5801-104 面板执手锁，尺寸图",
+          "labelEn": "SY5801-104 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5801-104 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5801-104 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5801-109-lever-handle",
+      "model": "SY5801-109",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5801-109-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5801-109 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5801-109 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5801-109-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5801-109 面板执手锁，尺寸图",
+          "labelEn": "SY5801-109 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5801-109 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Door thickness",
+            "value": "35-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5801-109 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5802-101-lever-handle",
+      "model": "SY5802-101",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "适用门厚",
+          "value": "35-50mm"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5802-101-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5802-101 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5802-101 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5802-101-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5802-101 面板执手锁，尺寸图",
+          "labelEn": "SY5802-101 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5802-101 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Door thickness",
+            "value": "35-50mm"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5802-101 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5805-102-lever-handle",
+      "model": "SY5805-102",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5805-102-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5805-102 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5805-102 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5805-102-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5805-102 面板执手锁，尺寸图",
+          "labelEn": "SY5805-102 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5805-102 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5805-102 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5805-108-lever-handle",
+      "model": "SY5805-108",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5805-108-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5805-108 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5805-108 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5805-108-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5805-108 面板执手锁，尺寸图",
+          "labelEn": "SY5805-108 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5805-108 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5805-108 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5806-104-lever-handle",
+      "model": "SY5806-104",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5806-104-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5806-104 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5806-104 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5806-104-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5806-104 面板执手锁，尺寸图",
+          "labelEn": "SY5806-104 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5806-104 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5806-104 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5806-107-lever-handle",
+      "model": "SY5806-107",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5806-107-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5806-107 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5806-107 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5806-107-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5806-107 面板执手锁，尺寸图",
+          "labelEn": "SY5806-107 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5806-107 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5806-107 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5882-103-lever-handle",
+      "model": "SY5882-103",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5882-103-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5882-103 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5882-103 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5882-103-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5882-103 面板执手锁，尺寸图",
+          "labelEn": "SY5882-103 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5882-103 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5882-103 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
+      }
+    },
+    {
+      "slug": "sy5882-107-lever-handle",
+      "model": "SY5882-107",
+      "name": "面板执手锁",
+      "nameEn": "Lever Handle on Backplate",
+      "series": "面板执手锁系列",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "categoryNames": [
+        "执手锁"
+      ],
+      "summary": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "specs": [
+        {
+          "label": "总长",
+          "value": "125mm"
+        },
+        {
+          "label": "面板尺寸",
+          "value": "200 × 48mm"
+        },
+        {
+          "label": "中心距",
+          "value": "58mm"
+        },
+        {
+          "label": "材质",
+          "value": "304 不锈钢"
+        },
+        {
+          "label": "锁体",
+          "value": "5845"
+        }
+      ],
+      "material": "304 不锈钢",
+      "finishes": [
+        "不锈钢拉丝"
+      ],
+      "doorTypes": [],
+      "heroImage": {
+        "src": "/images/products-rayen/sy5882-107-lever-handle.webp",
+        "ratio": "1 / 1",
+        "label": "雷茵 SY5882-107 面板执手锁，不锈钢拉丝",
+        "labelEn": "SY5882-107 Lever Handle on Backplate, Brushed Stainless"
+      },
+      "gallery": [
+        {
+          "src": "/images/products-rayen/sy5882-107-lever-handle-2.webp",
+          "ratio": "1 / 1",
+          "label": "雷茵 SY5882-107 面板执手锁，尺寸图",
+          "labelEn": "SY5882-107 Lever Handle on Backplate, dimension drawing"
+        }
+      ],
+      "relatedModels": [],
+      "sites": [
+        "rayen"
+      ],
+      "styleFamily": "",
+      "seoTitle": "SY5882-107 面板执手锁",
+      "seoDescription": "304 不锈钢面板执手锁。中心距 58mm，面板尺寸 200 × 48mm。",
+      "en": {
+        "name": "Lever Handle on Backplate",
+        "series": "Lever Handle on Backplate",
+        "categoryNames": [
+          "Lever Handles"
+        ],
+        "summary": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm.",
+        "specs": [
+          {
+            "label": "Overall length",
+            "value": "125mm"
+          },
+          {
+            "label": "Plate size",
+            "value": "200 × 48mm"
+          },
+          {
+            "label": "Centre distance",
+            "value": "58mm"
+          },
+          {
+            "label": "Material",
+            "value": "304 Stainless Steel"
+          },
+          {
+            "label": "Lock case",
+            "value": "5845"
+          }
+        ],
+        "material": "304 Stainless Steel",
+        "finishes": [
+          "Brushed Stainless"
+        ],
+        "doorTypes": [],
+        "seoTitle": "SY5882-107 Lever Handle on Backplate",
+        "seoDescription": "304 Stainless Steel lever handle on backplate. Centre distance 58mm, plate size 200 × 48mm."
       }
     },
     {
