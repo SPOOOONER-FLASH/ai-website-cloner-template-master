@@ -6,7 +6,24 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "specs": [],
+  "specs": [
+    {
+      "label": "Case size",
+      "value": "164 × 44mm"
+    },
+    {
+      "label": "Faceplate",
+      "value": "160mm"
+    },
+    {
+      "label": "Faceplate to cylinder center",
+      "value": "67mm"
+    },
+    {
+      "label": "Center distance",
+      "value": "66.8mm"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -47,8 +64,56 @@
   "seoDescriptionEs": "7066 cerradura de embutir para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Caixa de fechadura",
   "summaryPt": "Caixa de fechadura horizontal de 164 × 44 mm com testa de 160 mm; furo de cilindro oval a 67 mm da testa e quadrado a 66,8 mm do cilindro.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Dimensões da caixa da fechadura",
+      "value": "164 × 44 mm"
+    },
+    {
+      "label": "Testa",
+      "value": "160 mm"
+    },
+    {
+      "label": "Da testa ao centro do cilindro",
+      "value": "67 mm"
+    },
+    {
+      "label": "Distância entre eixos",
+      "value": "66.8 mm"
+    }
+  ],
   "seoTitlePt": "7066 Fechadura de embutir para portas de madeira e metal | Canton Hyland",
   "seoDescriptionPt": "7066 fechadura de embutir para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cerradura de embutir."
+  "summaryEs": "Cerradura de embutir.",
+  "specSources": {
+    "drawing": {
+      "basis": "client-supplied-dimension-drawing",
+      "fields": [
+        "Case size",
+        "Faceplate",
+        "Faceplate to cylinder center",
+        "Center distance"
+      ],
+      "note": "Read off the dimensioned drawing on this product's own gallery (7066-lock-case-3.webp): case 164 long × 44 high, faceplate 160, faceplate to cylinder center 67, cylinder center to spindle center 66.8. That last figure is the center distance and was not in the hand-off list; it is the number a specifier matches when cross-referencing a horizontal case.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Medidas de la caja de cerradura",
+      "value": "164 × 44 mm"
+    },
+    {
+      "label": "Frente",
+      "value": "160 mm"
+    },
+    {
+      "label": "Del frente al centro del cilindro",
+      "value": "67 mm"
+    },
+    {
+      "label": "Distancia entre ejes",
+      "value": "66,8 mm"
+    }
+  ]
 }

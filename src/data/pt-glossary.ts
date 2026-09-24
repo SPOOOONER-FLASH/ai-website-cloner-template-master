@@ -162,6 +162,8 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Latch throw": "Curso da lingueta",
   "Latch extension": "Saída da lingueta",
   "Bolt projection": "Saída do trinco",
+  /* Seções do cilindro europeu, escritas 30 / 10 / 30. */
+  "Cylinder split": "Divisão do cilindro",
   "Center distance": "Distância entre eixos",
   "Center Distance": "Distância entre eixos",
   "Center distances": "Distâncias entre eixos",

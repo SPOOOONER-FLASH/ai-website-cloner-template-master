@@ -69,6 +69,8 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Latch extension": "Salida del picaporte",
   Thickness: "Espesor",
   Installation: "Instalación",
+  /* Euro-cylinder sections, written 30 / 10 / 30. Published only where symmetric — see 70 SNKT-2. */
+  "Cylinder split": "Reparto del cilindro",
   "Center distance": "Distancia entre ejes",
   /*
     Plural, and deliberately not "Distancias entre ejes". 311 carries two cylinder positions

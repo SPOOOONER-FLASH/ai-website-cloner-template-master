@@ -6,7 +6,24 @@
   "categoryPath": [
     "lock-cases"
   ],
-  "specs": [],
+  "specs": [
+    {
+      "label": "Center distance",
+      "value": "72mm"
+    },
+    {
+      "label": "Backset",
+      "value": "25mm"
+    },
+    {
+      "label": "Faceplate",
+      "value": "183.5 × 20mm"
+    },
+    {
+      "label": "Case size",
+      "value": "125.7 × 41.7mm"
+    }
+  ],
   "material": "",
   "finishes": [],
   "doorTypes": [],
@@ -74,8 +91,56 @@
   "seoDescriptionEs": "140 cerradura de embutir para puertas de madera y metal. Directo de fábrica, muestras y cotización a pedido.",
   "namePt": "Caixa de fechadura",
   "summaryPt": "Caixa de fechadura de embutir com entre-eixos de 72 mm e distância ao eixo de 25 mm; testa de 183,5 × 20 mm e caixa de 125,7 mm de altura, com trinco e lingueta.",
-  "specsPt": [],
+  "specsPt": [
+    {
+      "label": "Distância entre eixos",
+      "value": "72 mm"
+    },
+    {
+      "label": "Distância ao eixo (broca)",
+      "value": "25 mm"
+    },
+    {
+      "label": "Testa",
+      "value": "183.5 × 20 mm"
+    },
+    {
+      "label": "Dimensões da caixa da fechadura",
+      "value": "125.7 × 41.7 mm"
+    }
+  ],
   "seoTitlePt": "140 Fechadura de embutir para portas de madeira e metal | Canton Hyland",
   "seoDescriptionPt": "140 fechadura de embutir para portas de madeira e metal. Direto da fábrica, amostras e orçamento sob consulta.",
-  "summaryEs": "Cerradura de embutir."
+  "summaryEs": "Cerradura de embutir.",
+  "specSources": {
+    "drawing": {
+      "basis": "client-supplied-dimension-drawing",
+      "fields": [
+        "Center distance",
+        "Backset",
+        "Faceplate",
+        "Case size"
+      ],
+      "note": "Read off the dimensioned drawing on this product's own gallery (140-lock-case-6.webp, 'Modelo 140'): center distance 72, backset 25, faceplate 183.5 long × 20 wide, case outline 125.7 × 41.7. The drawing also carries 2, 9.5, 13, 22.5, 33.2, 38.45, 10.8, 29.85, 23.5, 13.9, 8, 33.8, 37.6, 10.3 and Ø8.1; those are not published because the view does not make clear what each one measures, and a mislabelled number is worse than none.",
+      "readAt": "2026-09-24"
+    }
+  },
+  "specsEs": [
+    {
+      "label": "Distancia entre ejes",
+      "value": "72 mm"
+    },
+    {
+      "label": "Entrada",
+      "value": "25 mm"
+    },
+    {
+      "label": "Frente",
+      "value": "183,5 × 20 mm"
+    },
+    {
+      "label": "Medidas de la caja de cerradura",
+      "value": "125,7 × 41,7 mm"
+    }
+  ]
 }
