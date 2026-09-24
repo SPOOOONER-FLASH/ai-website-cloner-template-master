@@ -212,7 +212,8 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   Lengths: "Longitudes",
   Model: "Modelo",
   "Nominal lock body": "Cuerpo nominal",
-  "Hook bolt": "Pestillo de gancho",
+  /* AR4-1121 is a hook-bolt mortise lock and the hook is keyed: deadlocking, not sprung. */
+  "Hook bolt": "Cerrojo de gancho",
   "Lock case": "Caja de cerradura",
   "Hole Count": "Número de perforaciones",
   "Center Distance": "Distancia entre ejes",
@@ -264,7 +265,7 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Case height": "Alto del cuerpo",
   "Case depth": "Fondo del cuerpo",
   "Latch throw": "Salida del pestillo",
-  "Bolt projection": "Salida del pestillo",
+  "Bolt projection": "Salida del cerrojo",
   "Spindle length": "Longitud del cuadradillo",
   Spindle: "Cuadradillo",
   "Faceplate to cylinder center": "Del frente al centro del cilindro",
@@ -721,7 +722,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Sliding hook": "Gancho corredizo",
   "Euro profile": "Perfil europeo",
   "Square latch": "Pestillo cuadrado",
-  "Four round bolts": "Cuatro pestillos redondos",
+  "Four round bolts": "Cuatro cerrojos redondos",
   "Horizontal case": "Cuerpo horizontal",
   "Entrance, privacy, passage or dummy":
     "Entrada, privacidad, paso libre o falsa",

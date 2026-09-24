@@ -141,13 +141,13 @@ const IS_NUMERIC =
  * string rather than per-number so a range keeps its shape.
  */
 const NUMERIC_RULES = [
-  [/^(.*?)\s*adjustable$/i, (m) => `${spaceUnits(m[1])} ajustável`],
-  [/^Adjustable\s+(.*)$/i, (m) => `Ajustável ${spaceUnits(m[1])}`],
-  [/^(.*?)\s*standard;\s*(.*?)\s*on request$/i, (m) => `${spaceUnits(m[1])} de série; ${spaceUnits(m[2])} sob pedido`],
-  [/^(.*?)\s*available on request$/i, (m) => `${spaceUnits(m[1])} sob pedido`],
-  [/^(.*?)\s*\(length can be adjusted\)$/i, (m) => `${spaceUnits(m[1])} (comprimento ajustável)`],
-  [/^(.*?)\s*cycles$/i, (m) => `${spaceUnits(m[1])} ciclos`],
-  [/^(.*?)\s*hours?$/i, (m) => `${spaceUnits(m[1])} horas`],
+  [/^(.*?)\s*adjustable$/i, (m) => `${enMeasure(m[1])} ajustável`],
+  [/^Adjustable\s+(.*)$/i, (m) => `Ajustável ${enMeasure(m[1])}`],
+  [/^(.*?)\s*standard;\s*(.*?)\s*on request$/i, (m) => `${enMeasure(m[1])} de série; ${enMeasure(m[2])} sob pedido`],
+  [/^(.*?)\s*available on request$/i, (m) => `${enMeasure(m[1])} sob pedido`],
+  [/^(.*?)\s*\(length can be adjusted\)$/i, (m) => `${enMeasure(m[1])} (comprimento ajustável)`],
+  [/^(.*?)\s*cycles$/i, (m) => `${enMeasure(m[1])} ciclos`],
+  [/^(.*?)\s*hours?$/i, (m) => `${enMeasure(m[1])} horas`],
   [/^(.*?)\s*hooks?(\s+available)?$/i, (m) => `${m[1]} ganchos${m[2] ? " disponíveis" : ""}`],
   [/^(.*?)\s*Rotation$/i, (m) => `rotação de ${m[1]}`],
 ];
@@ -168,9 +168,45 @@ const NUMERIC_RULES = [
  */
 function spaceUnits(text) {
   return text
-    .replace(/(\d)\s*(mm|cm|kg|MM)\b/g, "$1 $2")
-    .replace(/\b(\d+(?:\s*mm|\s*cm)?)\s+to\s+(\d)/gi, "$1 a $2")
-    .replace(/\b\d{1,3}(?:,\d{3})+\b/g, (match) => match.replace(/,/g, "."));
+    // Brazilian trade writes the unit in lower case; the English side shouts it as MM.
+    .replace(/(\d)\s*(mm|cm|kg|MM)\b/g, (_, n, unit) => `${n} ${unit === "MM" ? "mm" : unit}`)
+    .replace(/\b(\d+(?:\s*mm|\s*cm)?)\s+to\s+(\d)/gi, "$1 a $2");
+}
+
+/**
+ * English figures into Brazilian figures. ONLY ever called on English source text.
+ *
+ * English writes 1,250.75 and Brazil writes 1.250,75 — the two separators swap roles, so a
+ * single pass that exchanges them inside a numeric token converts the grouping mark and the
+ * decimal mark at once and cannot disagree with itself:
+ *
+ *   "200,000 cycles" -> "200.000 ciclos"   grouping comma becomes a full stop
+ *   "22.5mm"         -> "22,5 mm"          decimal point becomes a comma
+ *   "0.044"          -> "0,044"            right at three decimal places, where counting
+ *                                          digits cannot tell a decimal from a group
+ *
+ * WHY THIS IS NOT IN spaceUnits: spaceUnits also runs on the Portuguese that comes straight
+ * out of the glossary, and that text is ALREADY Brazilian ("Chapa de aço de 1,2 mm"). Doing
+ * the swap there would turn a correct comma back into a point — the same defect in the other
+ * direction. So the conversion lives here and is applied only where the input is still
+ * English.
+ *
+ * The grouping rule this replaces had exactly that bug. It matched \d{1,3},\d{3}, so a
+ * Brazilian "0,044" arriving from the glossary was rewritten to "0.044".
+ *
+ * Safe on this catalogue because no HYDE spec value uses a comma as a list separator between
+ * bare digits — "300mm,400mm" has the unit in between — checked across every value before
+ * this landed. A value like "30,40,50" would have to be split into a list first.
+ */
+function brNumbers(text) {
+  return text.replace(/\d+(?:[.,]\d+)+/g, (n) =>
+    n.replace(/[.,]/g, (c) => (c === "," ? "." : ",")),
+  );
+}
+
+/** An English measurement in Brazilian form: spacing, then the range word, then figures. */
+function enMeasure(text) {
+  return brNumbers(spaceUnits(text));
 }
 
 /**
@@ -223,8 +259,16 @@ function translateValue(input) {
     needs Brazilian spacing and thousands grouping, so it goes through the formatter even
     though no word in it changes.
   */
-  if (IS_CODE.test(text)) return text;
-  if (IS_NUMERIC.test(text)) return spaceUnits(text);
+  /*
+    A code must contain a letter. IS_CODE also matches a bare decimal — "19.6" parses as
+    19 + . + 6 — and because this test runs before the numeric one, every such value was
+    returned byte for byte and kept its English decimal point. The ten that did so are all
+    plainly measurements (carton volume, gross and net weight, thickness), not identifiers.
+    The unit does not save it either: "2.0-3.5MM" has letters and still is not a code, so a
+    string that reads as a plain measurement is excluded as well.
+  */
+  if (IS_CODE.test(text) && /[A-Za-z]/.test(text) && !IS_NUMERIC.test(text)) return text;
+  if (IS_NUMERIC.test(text)) return enMeasure(text);
 
   const direct =
     glossary.values[text] ?? glossary.materials[text] ?? glossary.finishes[text];
@@ -242,10 +286,10 @@ function translateValue(input) {
 
   /* "60mm (2-3/8”)" — a metric figure with its imperial twin. Both are numbers. */
   if (/^[\d\s.,/×x*-]+\s*(mm|cm|kg)?\s*\([\d\s./-]+["”']*\)\.?$/i.test(text)) {
-    return spaceUnits(text);
+    return enMeasure(text);
   }
   /* "P=425mm", "CF60 lift-to-lock" — a factory code with an optional English tail. */
-  if (/^[A-Z]{1,3}\s*=\s*\d/.test(text)) return spaceUnits(text);
+  if (/^[A-Z]{1,3}\s*=\s*\d/.test(text)) return enMeasure(text);
 
   const list = translateFinishList(text);
   if (list) return list;
