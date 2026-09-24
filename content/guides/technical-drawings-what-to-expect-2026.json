@@ -121,7 +121,7 @@
     "pt": [
       {
         "question": "Qual é a diferença entre um desenho de conjunto, um desenho cotado e um gabarito?",
-        "answer": "Respondem a três perguntas diferentes. O de conjunto diz que aspeto tem e quanto mede aproximadamente. O cotado diz exatamente quanto mede cada parte. O gabarito diz onde vão os furos. Com um desenho de conjunto não se corta uma porta, e um gabarito não diz se a maçaneta ultrapassa um retorno de parede."
+        "answer": "Respondem a três perguntas diferentes. O de conjunto diz que aspecto tem e quanto mede aproximadamente. O cotado diz exatamente quanto mede cada parte. O gabarito diz onde vão os furos. Com um desenho de conjunto não se corta uma porta, e um gabarito não diz se a maçaneta ultrapassa um retorno de parede."
       },
       {
         "question": "Que formato de desenho devo pedir?",
@@ -201,7 +201,7 @@
     "O custo da ambiguidade é uma semana. O comprador pede, a fábrica manda o que tem, o comprador descobre que não serve para o que precisava, e a troca recomeça com palavras melhores que podiam ter sido usadas da primeira vez.",
     "## Três desenhos que respondem a três perguntas diferentes",
     "Antes do formato, decida que pergunta está fazendo. Quase todo pedido mal encaixado está-o na verdade aqui.",
-    "| Desenho | Pergunta que responde | Uso típico |\n| --- | --- | --- |\n| De conjunto | Que aspeto tem e quanto mede aproximadamente | Seleção, uma planilha, uma apresentação ao cliente |\n| Cotado | Exatamente quanto mede cada parte | Verificar encaixe, escrever especificação, comparar dois produtos |\n| Gabarito de montagem | Onde vão os furos | Cortar uma porta ou um marco |",
+    "| Desenho | Pergunta que responde | Uso típico |\n| --- | --- | --- |\n| De conjunto | Que aspecto tem e quanto mede aproximadamente | Seleção, uma planilha, uma apresentação ao cliente |\n| Cotado | Exatamente quanto mede cada parte | Verificar encaixe, escrever especificação, comparar dois produtos |\n| Gabarito de montagem | Onde vão os furos | Cortar uma porta ou um marco |",
     "Com um desenho de conjunto não se corta uma porta. Um gabarito não diz se a maçaneta ultrapassa um retorno de parede. Pedir \"um desenho\" e receber o que não era destes três não é a fábrica não colaborar: é a pergunta ter três respostas.",
     "## Os formatos, e para que serve cada um honestamente",
     "| Formato | O que é | Bom para | Não pode |\n| --- | --- | --- | --- |\n| PDF | Uma página fixa que qualquer um abre | Desenhos cotados e gabaritos com autoridade | Ser editado nem medido com confiança no tela |\n| SVG | Vetorial, escala sem perder nitidez | Desenhos web, imprimir a qualquer tamanho | Levar metadados nem camadas de CAD |\n| DXF | Formato de intercâmbio que quase todo CAD lê | Levar geometria 2D para o seu próprio CAD | Garantir que camadas e anotação sobrevivam |\n| DWG | Arquivo nativo 2D/3D do AutoCAD | Editar no AutoCAD | Abrir em toda a parte; as versões diferem |\n| STEP / IGES | Geometria sólida 3D | Deteção de interferências, usinagem, montagem 3D | Existir se ninguém modelou a peça em 3D |\n| Revit / IFC | Um objeto BIM com dados associados | Modelos de edifício, coordenação | Sair de um desenho 2D sem trabalho real de modelação |",

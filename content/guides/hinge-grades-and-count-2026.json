@@ -113,7 +113,7 @@
       },
       {
         "question": "Posso pôr uma quarta dobradiça em vez de especificar uma mais forte?",
-        "answer": "Não. A carga de uma porta pendurada não se reparte por igual: a dobradiça superior suporta a maior força de arranque porque o peso age como alavanca em relação ao pé do batente. Uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que falha."
+        "answer": "Não. A carga de uma porta pendurada não se reparte por igual: a dobradiça superior suporta a maior força de arranque porque o peso age como alavanca em relação à base do batente. Uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que falha."
       },
       {
         "question": "O que significam os graus EN 1935 de 1 a 14?",
@@ -188,7 +188,7 @@
     "Essa é a regra de altura. A regra de massa corre em paralelo: se a massa da porta ultrapassa o que o grau escolhido cobre com o número que a regra de altura dá, a resposta é um grau superior, não mais uma dobradiça.",
     "POR QUE MAIS UMA DOBRADIÇA NÃO É MAIS UM GRAU",
     "Este é o erro que merece ser nomeado, porque é cometido por gente cuidadosa e não descuidada. Uma porta é pesada demais para as dobradiças especificadas, então acrescenta-se uma quarta para repartir a carga.",
-    "Não funciona como a intuição sugere. A carga de uma porta pendurada não se reparte por igual entre as dobradiças: a superior suporta a maior parte da força de arranque porque o peso age como alavanca em relação ao pé do marco. Acrescentar uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que vai falhar, e continua subdimensionada.",
+    "Não funciona como a intuição sugere. A carga de uma porta pendurada não se reparte por igual entre as dobradiças: a superior suporta a maior parte da força de arranque porque o peso age como alavanca em relação à base do marco. Acrescentar uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que vai falhar, e continua subdimensionada.",
     "Uma dobradiça intermédia faz trabalho real (resiste ao empeno da folha e enrijece uma porta alta) mas não substitui um grau que cubra a massa.",
     "OS TRÊS MODOS DE FALHA",
     "Arranque de parafusos na dobradiça superior. A dobradiça está intacta, o marco cedeu. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa, e é a que faz a porta cair e raspar contra o batente.",

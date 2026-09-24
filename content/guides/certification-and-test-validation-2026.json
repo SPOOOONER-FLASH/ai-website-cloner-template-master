@@ -131,7 +131,7 @@
     "pt": [
       {
         "question": "O que um certificado de ensaio autêntico deve conter?",
-        "answer": "Sete coisas: o laboratório ou organismo emissor com morada, uma referência de acreditação, a norma com a sua designação completa e ano, um número de relatório ou certificado, a data e validade, o campo de aplicação, e uma descrição da configuração ensaiada. O que mais falta (e o que mais importa) é o campo de aplicação."
+        "answer": "Sete coisas: o laboratório ou organismo emissor com endereço, uma referência de acreditação, a norma com a sua designação completa e ano, um número de relatório ou certificado, a data e validade, o campo de aplicação, e uma descrição da configuração ensaiada. O que mais falta (e o que mais importa) é o campo de aplicação."
       },
       {
         "question": "Qual é a diferença entre acreditação e certificação?",
@@ -220,7 +220,7 @@
     "Quase ninguém verifica um certificado. Chega como um PDF com um logótipo, satisfaz a linha do submittal, e é arquivado.",
     "É por isso que os maus funcionam. Não porque sejam falsificações sofisticadas (quase nenhum é) mas porque nunca são abertos por alguém à procura das sete coisas abaixo.",
     "## As sete partes de um certificado de ensaio autêntico",
-    "| Parte | O que lhe diz | Se faltar significa |\n| --- | --- | --- |\n| Laboratório ou organismo emissor, com morada | Quem fez ou certificou o ensaio | O documento não tem autor |\n| Referência de acreditação | Que uma autoridade competente audita esse laboratório | Um laboratório que responde só por si |\n| A norma, com designação completa e ano | Contra o que foi realmente ensaiado | Uma afirmação inverificável |\n| Número de relatório ou certificado | O registro contra o qual pode confrontar | Não se pode procurar nada |\n| Data de emissão e validade ou revisão | Se está vigente | Pode ter caducado |\n| Campo de aplicação | Que tamanhos e configurações cobre | Pode não cobrir o seu produto |\n| A configuração ensaiada, descrita | Exatamente o que estava na bancada de ensaio | O resultado não adere a nada identificável |",
+    "| Parte | O que lhe diz | Se faltar significa |\n| --- | --- | --- |\n| Laboratório ou organismo emissor, com endereço | Quem fez ou certificou o ensaio | O documento não tem autor |\n| Referência de acreditação | Que uma autoridade competente audita esse laboratório | Um laboratório que responde só por si |\n| A norma, com designação completa e ano | Contra o que foi realmente ensaiado | Uma afirmação inverificável |\n| Número de relatório ou certificado | O registro contra o qual pode confrontar | Não se pode procurar nada |\n| Data de emissão e validade ou revisão | Se está vigente | Pode ter caducado |\n| Campo de aplicação | Que tamanhos e configurações cobre | Pode não cobrir o seu produto |\n| A configuração ensaiada, descrita | Exatamente o que estava na bancada de ensaio | O resultado não adere a nada identificável |",
     "Seis dessas sete costumam estar em qualquer documento real. A que mais falta, e a que mais costuma importar, é o campo de aplicação, a faixa de tamanhos, materiais, tipos de marco e conjuntos de ferragem a que o resultado se estende.",
     "Um certificado sem campo de aplicação é um resultado para um objeto. Com campo, é um resultado para uma família, e o seu produto está dentro dessa família ou não está.",
     "## A acreditação não é a certificação, e a diferença é quem vigia",
@@ -249,7 +249,7 @@
     "Recusar-se a facultar o relatório: o certificado existe ou não existe, e o relatório existe ou o certificado merece perguntas mais duras.",
     "## Ensaio inicial de tipo, CPF, e por que um certificado pode ficar obsoleto sem nada mudar",
     "Um certificado é uma fotografia de um produto num momento. Dois mecanismos devem mantê-lo verdadeiro depois, e conhecer os seus nomes torna muito mais fácil avaliar a resposta de um fornecedor.",
-    "O ensaio inicial de tipo é o ensaio em si: a amostra foi a um laboratório, foi ensaiada contra a norma, e um resultado foi registado. Esse é o fato que o certificado descreve.",
+    "O ensaio inicial de tipo é o ensaio em si: a amostra foi a um laboratório, foi ensaiada contra a norma, e um resultado foi registrado. Esse é o fato que o certificado descreve.",
     "O controle de produção em fábrica é a parte contínua: o sistema documentado do fabricante para garantir que o que sai da linha hoje continua a coincidir com o que foi ensaiado. No sistema europeu de produtos de construção, o CPF é auditado, e um certificado dessas famílias de produto referencia-o.",
     "Essa distinção explica algo que desconcerta os compradores. Um produto pode estar genuinamente ensaiado e ainda assim derivar (um fornecedor muda um subcomponente, uma linha de revestimento, uma fonte de fundição) e o certificado não se torna falso automaticamente, mas deixa de descrever o produto com exatidão.",
     "Então numa relação de fornecimento longa a pergunta útil não é só \"tem certificado?\" mas \"mudou alguma coisa da configuração ensaiada desde que foi emitido?\". Um fornecedor honesto tem um registro do que mudou e quando, porque esse registro é o que o CPF é.",
