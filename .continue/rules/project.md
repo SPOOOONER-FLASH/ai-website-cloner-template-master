@@ -521,7 +521,7 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    | Lane | Working folder | Notes |
    |---|---|---|
    | HYDE (Claude) | `E:/cantonlock-hyde` | independent clone, own `.git` |
-   | RAYEN | its own clone, e.g. `E:/cantonlock-rayen` | RAYEN side creates and owns it |
+   | RAYEN | `E:/rayen` | independent clone, own `.git`; created 2026-09-24, hooks installed |
    | Releases | `E:/release` | `--root E:/release`, created and deleted by the script |
 
    Make a lane clone from a local copy, not from GitHub (the proxy runs at tens of KB/s):

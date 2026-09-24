@@ -36,7 +36,7 @@
  */
 import { spawnSync } from "node:child_process";
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { OUTPUT_DIR, laneOf } from "./lib/site-lanes.mjs";
 
 const args = process.argv.slice(2);
@@ -89,7 +89,15 @@ const stamp = new Date().toISOString().replace(/[-:]/g, "").replace("T", "-").sl
   只影响检出建在哪；构建、只提交本站目录、推送、删除检出，全部照旧。
 */
 const RELEASE_ROOT = opt("--root") ?? process.env.RELEASE_ROOT ?? "tmp";
-const WT = join(RELEASE_ROOT, `release-${site}-${stamp}`);
+/*
+  Absolute, always. Every command below runs with cwd = WT, so a relative WT is resolved TWICE:
+  `git commit -F tmp/release-…/.release-message.txt` from inside tmp/release-… looks for
+  tmp/release-…/tmp/release-…/.release-message.txt. That is why no release had ever got past the
+  commit step before 2026-09-24 (the first rayen release built fine and died on "could not
+  read log file"). With --root E:/release the path happened to be absolute and it would have
+  worked, which is exactly the kind of bug that hides.
+*/
+const WT = resolve(RELEASE_ROOT, `release-${site}-${stamp}`);
 let ok = false;
 
 try {
@@ -148,6 +156,14 @@ try {
       ].join("\n"),
     );
     must("git commit", run("git", ["commit", "-q", "-F", msgFile], WT));
+    /*
+      The build rewrote the OTHER site's tree too (and a few generated files). None of it is
+      committed, but it leaves the checkout dirty, and a dirty checkout makes the rebase below
+      refuse to start ("cannot rebase: You have unstaged changes") the first time the other
+      side has pushed. Everything worth keeping is in the commit above; drop the rest.
+    */
+    run("git", ["checkout", "--", "."], WT, { capture: true });
+    run("git", ["clean", "-fdq"], WT, { capture: true });
 
     for (let attempt = 1; ; attempt++) {
       console.log(`→ 推送（第 ${attempt} 次）`);
