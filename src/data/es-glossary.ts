@@ -65,8 +65,8 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   Size: "Medidas",
   Length: "Longitud",
   "Deadbolt throw": "Salida del cerrojo",
-  Latch: "Picaporte",
-  "Latch extension": "Salida del picaporte",
+  Latch: "Pestillo",
+  "Latch extension": "Salida del pestillo",
   Thickness: "Espesor",
   Installation: "Instalación",
   /* Euro-cylinder sections, written 30 / 10 / 30. Published only where symmetric — see 70 SNKT-2. */
@@ -133,10 +133,10 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Fire Rating": "Clasificación al fuego",
   Handling: "Manipulación",
   "Push Bar Material": "Material de la barra de empuje",
-  "Latch Material": "Material del picaporte",
+  "Latch Material": "Material del pestillo",
   "Latch Bolt Material": "Material del pestillo",
-  "Latch Components": "Componentes del picaporte",
-  "Latch & Puller": "Picaporte y tirador",
+  "Latch Components": "Componentes del pestillo",
+  "Latch & Puller": "Pestillo y tirador",
   "Suitable for": "Apto para",
   "Suitable For": "Apto para",
   "Suitable Door Thickness": "Espesor de puerta admitido",
@@ -263,7 +263,7 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   Faceplate: "Frente",
   "Case height": "Alto del cuerpo",
   "Case depth": "Fondo del cuerpo",
-  "Latch throw": "Salida del picaporte",
+  "Latch throw": "Salida del pestillo",
   "Bolt projection": "Salida del pestillo",
   "Spindle length": "Longitud del cuadradillo",
   Spindle: "Cuadradillo",
@@ -284,7 +284,7 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Tube Thickness": "Espesor del tubo",
   Opening: "Apertura",
   Includes: "Incluye",
-  "Latch options": "Opciones de picaporte",
+  "Latch options": "Opciones de pestillo",
   "Spindle Material": "Material del cuadradillo",
   "Key Material": "Material de la llave",
   /*
@@ -306,14 +306,14 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   */
   Follower: "Seguidor",
   "Door leaves": "Hojas de puerta",
-  "Case size": "Medidas de la caja de cerradura",
+  "Case size": "Medidas del cuerpo",
   "Keys supplied": "Llaves incluidas",
   "Cylinder apertures": "Aberturas para cilindro",
   "Used with": "Se usa con",
   "Fitted with": "Equipado con",
-  "Supplied with": "Se suministra con",
+  "Supplied with": "Incluye",
   "Plate depth": "Profundidad de la placa",
-  "Max door weight": "Peso máximo de puerta",
+  "Max door weight": "Peso máximo de hoja",
   Series: "Serie",
 };
 
@@ -381,7 +381,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Gun metal (GM)": "Metal oscurecido (GM)",
   "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or outwards, with stops at 0, 88 and 116 in both directions.":
     "Incluye regulación de la velocidad de apertura y de cierre; tensión del resorte totalmente regulable; la puerta abre hasta 116° hacia adentro o hacia afuera, con retenciones a 0°, 88° y 116° en ambos sentidos.",
-  "Latch and square deadbolt": "Picaporte y cerrojo cuadrado",
+  "Latch and square deadbolt": "Pestillo y cerrojo cuadrado",
   "Matt black or polished brass finish over the iron leaf":
     "Negro mate o acabado latón pulido sobre la pletina de hierro",
   "Mortise lock body, iron": "Caja de embutir, hierro",
@@ -407,8 +407,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
     "Placa de acero inoxidable SUS 304 (marcado en la placa)",
   "Two euro-profile apertures on the fire-rated case":
     "Dos aberturas de perfil europeo en la caja cortafuego",
-  /* 306 PS, added 2026-09-24. "Paso libre" is the function; "picaporte" is this file's latch. */
-  "Passage, no latch bolt": "Paso libre, sin picaporte",
+  /* 306 PS, added 2026-09-24. "Paso libre" is the function. */
+  "Passage, no latch bolt": "Paso libre, sin pestillo",
   "A separate lock case, supplied to suit":
     "Caja de cerradura independiente, suministrada según la aplicación",
   "35mm to 45mm adjustable":
@@ -416,11 +416,11 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "60mm / 70mm adjustable":
     "60 / 70 mm, regulable",
   "60mm / 70mm adjustable, latch and deadbolt both":
-    "60 / 70 mm regulable, picaporte y pestillo",
+    "60 / 70 mm regulable, pestillo y cerrojo",
   "100 pieces":
     "100 piezas",
   "Three square deadbolts, plus latch":
-    "Tres pestillos cuadrados, más picaporte",
+    "Tres cerrojos cuadrados, más pestillo",
   "Nickel-plated brass, solid brass, brushed nickel":
     "Latón niquelado, latón macizo, níquel cepillado",
   "Trim handle · outside lever for panic exit devices":
@@ -506,7 +506,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Multiple finish": "Varios acabados",
   "1.0 mm (optional: 0.8 mm)": "1,0 mm (opcional: 0,8 mm)",
   "Gray spray painted, other available": "Pintado en gris; otros colores bajo pedido",
-  "Brass rolling latch": "Picaporte de rodillo de latón",
+  "Brass rolling latch": "Pestillo de rodillo de latón",
   "1.5 hours": "1,5 horas",
   "Suitable for both left a right-handed doors.": "Apto para puertas de mano izquierda y derecha",
   "Powder-coated (static paint)": "Pintura electrostática en polvo",
@@ -632,7 +632,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Patio, locked by inside button": "Patio, se bloquea con el botón interior",
   // decoded function suffixes
   "Entrance, keyed outside": "Entrada, con llave por fuera",
-  "Passage, latch only, no cylinder": "Paso libre, solo picaporte, sin cilindro",
+  "Passage, latch only, no cylinder": "Paso libre, solo pestillo, sin cilindro",
   "Privacy, bathroom, turn button inside": "Privacidad, baño, botón de giro interior",
 
   // door types and applications
@@ -708,9 +708,9 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Box Packing": "Embalaje en caja",
   "OEM / ODM Available": "OEM / ODM disponible",
   "Push / Pull Operation": "Accionamiento de empujar y tirar",
-  "Deadlatch + Hold-Back Function": "Picaporte con bloqueo y función de retención",
+  "Deadlatch + Hold-Back Function": "Pestillo con bloqueo y función de retención",
   "Deadlatch Lock with Hold-Back Function":
-    "Cerradura de picaporte con bloqueo y función de retención",
+    "Cerradura de pestillo con bloqueo y función de retención",
   "1-8 hooks available": "De 1 a 8 ganchos",
   "3M or Screws": "Adhesivo 3M o tornillos",
 
@@ -720,7 +720,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Single cylinder": "Cilindro simple",
   "Sliding hook": "Gancho corredizo",
   "Euro profile": "Perfil europeo",
-  "Square latch": "Picaporte cuadrado",
+  "Square latch": "Pestillo cuadrado",
   "Four round bolts": "Cuatro pestillos redondos",
   "Horizontal case": "Cuerpo horizontal",
   "Entrance, privacy, passage or dummy":
@@ -733,7 +733,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   // the family rows added from the client's own write-ups
   "200,000 cycles": "200.000 ciclos",
   "Solid steel chassis and latch case, zinc plated":
-    "Chasis y caja de picaporte de acero macizo, zincados",
+    "Chasis y caja de pestillo de acero macizo, zincados",
   "Solid steel, zinc plated for corrosion resistance":
     "Acero macizo zincado para resistir la corrosión",
   "Solid steel internal construction, corrosion protected":
@@ -831,7 +831,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Iron body and 304 SS outer plates":
     "Cuerpo de hierro con placas exteriores de acero inoxidable 304",
   "Iron Body, Zinc Alloy Latch, ABS Components":
-    "Cuerpo de hierro, picaporte de zamak y componentes de ABS",
+    "Cuerpo de hierro, pestillo de zamak y componentes de ABS",
   "Zinc die-cast outer case, zinc-plated steel internal components":
     "Caja exterior de zamak inyectado; componentes internos de acero zincado",
   "case is made of zinc alloy die-casting,": "Caja de zamak inyectado",
@@ -840,15 +840,15 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "304SS / 304 Stainless Steel with Plated and suit for Panic Exit Device.":
     "Acero inoxidable 304 con recubrimiento, apto para barra antipánico",
   "Iron case, steel base internal components with zinc plated, 3 pcs brass keys , brass latch and cylinder":
-    "Caja de hierro; componentes internos de acero zincado; 3 llaves de latón; picaporte y cilindro de latón",
+    "Caja de hierro; componentes internos de acero zincado; 3 llaves de latón; pestillo y cilindro de latón",
   "Iron case, steel base internal components with zinc plated finish, 3 pcs brass keys , brass latch and cylinder":
-    "Caja de hierro; componentes internos de acero zincado; 3 llaves de latón; picaporte y cilindro de latón",
+    "Caja de hierro; componentes internos de acero zincado; 3 llaves de latón; pestillo y cilindro de latón",
   "Iron case, steel base internal components with zinc plated finish":
     "Caja de hierro con componentes internos de acero zincado",
   "Iron case, with 3 pcs brass keys , brass latch.":
-    "Caja de hierro con 3 llaves de latón y picaporte de latón",
+    "Caja de hierro con 3 llaves de latón y pestillo de latón",
   "Iron case, with 3 pcs brass keys , zinc alloy latch and cylinder":
-    "Caja de hierro con 3 llaves de latón; picaporte y cilindro de zamak",
+    "Caja de hierro con 3 llaves de latón; pestillo y cilindro de zamak",
   "Iron lock body, brass Cylinder(double cylinder), with 3pcs iron key.":
     "Cuerpo de cerradura de hierro; cilindro de latón de doble cilindro; 3 llaves de hierro",
   "Aluminum Door Lock Body /American-Style/Lock Cylinder /Lock Case (Door Bolt)/Locks and Keys.":
@@ -927,7 +927,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   // functions
   "COMMUNICATION LOCK": "Cerradura de comunicación",
   "CLASSROOM LOCK": "Cerradura de aula",
-  "EXIT LATCH": "Picaporte de salida",
+  "EXIT LATCH": "Pestillo de salida",
   STOREROOM: "Cerradura de bodega",
   "Entrance and communication": "Acceso y comunicación",
   "Emergency Escape, Quick Release": "Escape de emergencia con liberación rápida",
@@ -942,7 +942,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "lever handle": "Manija de palanca",
   "Entrance door lock": "Cerradura de puerta de acceso",
   "Lever Handle Lock": "Cerradura con manija de palanca",
-  "Deadlatch Lock": "Cerradura de picaporte con retén",
+  "Deadlatch Lock": "Cerradura de pestillo con retén",
   "Slide Bolt Lock": "Pasador corredizo",
   "Anti-Theft Rim Lock / Night Latch":
     "Cerradura de sobreponer antirrobo / cerradura de golpe",
@@ -996,13 +996,13 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "2 nickel-plated brass keys included": "Incluye 2 llaves de latón niquelado",
   "3 or 5 keys available": "Disponible con 3 o 5 llaves",
   "Normal key / Computer key optional": "Llave normal o llave de computadora, a elección",
-  "Beveled latch design": "Picaporte biselado",
-  "Beveled latch structure": "Estructura de picaporte biselado",
+  "Beveled latch design": "Pestillo biselado",
+  "Beveled latch structure": "Estructura de pestillo biselado",
   "25mm full-throw rim deadbolt": "Cerrojo de sobreponer de 25 mm de salida total",
   "12mm throw, deadlocking for keyed functions":
     "12 mm de salida; con bloqueo en las funciones con llave",
-  "60/70mm adjustable tubular latch": "Picaporte tubular regulable de 60 / 70 mm",
-  "Full Latch Coverage": "Cubre todo el picaporte",
+  "60/70mm adjustable tubular latch": "Pestillo tubular regulable de 60 / 70 mm",
+  "Full Latch Coverage": "Cubre todo el pestillo",
   "Anti-Drill & Anti-Pry Cylinder Protection":
     "Protección del cilindro antitaladro y antipalanca",
   "Anti Pry Anti Theft Reinforced Heavy Duty":
@@ -1037,7 +1037,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
     "Ofrece visión exterior de gran angular para mayor seguridad",
   "Available with or without cover": "Disponible con o sin cubierta",
   "The Rim door looks with double cylinder double throw. Dead bolt and latch bolt have triple guaranteed function which avoid prizing off the door, opening the door from inside. Without keys and removing the lock from inside when closed so as to ensure security. They are suitable for various kinds of wooden or iron doors.":
-    "Cerradura de sobreponer de doble cilindro y doble vuelta. El cerrojo y el picaporte cuentan con triple seguro, que impide apalancar la puerta, abrirla desde el interior sin llave o desmontar la cerradura desde adentro con la puerta cerrada. Apta para puertas de madera y de hierro de distintos tipos.",
+    "Cerradura de sobreponer de doble cilindro y doble vuelta. El cerrojo y el pestillo cuentan con triple seguro, que impide apalancar la puerta, abrirla desde el interior sin llave o desmontar la cerradura desde adentro con la puerta cerrada. Apta para puertas de madera y de hierro de distintos tipos.",
   "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or out wards, with stops at 0, 88 and 116 in both directions.":
     "Incluye regulación de la velocidad de apertura y de cierre; tensión del resorte totalmente regulable; la puerta abre hasta 116° hacia adentro o hacia afuera, con retenciones a 0°, 88° y 116° en ambos sentidos.",
 
@@ -1537,8 +1537,8 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Door Coordinator": "Selector de cierre",
 
   // Accessories
-  Latch: "Picaporte",
-  "Pry Latch": "Picaporte antipalanca",
+  Latch: "Pestillo",
+  "Pry Latch": "Pestillo antipalanca",
   "Door Flush Bolt": "Pasador embutido",
   "Stainless Steel Flush Bolt": "Pasador embutido de acero inoxidable",
   "Door Stopper": "Tope de puerta",
