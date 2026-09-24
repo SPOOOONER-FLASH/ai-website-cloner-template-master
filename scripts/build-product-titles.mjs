@@ -671,7 +671,7 @@ const FIELDS = [
 */
 const BUYER_NOUN = {
   en: /lock|latch|hinge|handle|lever|knob|bar|device|trim|closer|cylinder|bolt|stop|viewer|number|accessor|grab|hook|guard|indicator|fitting|pull|patch|spring|pivot|set|case|body|plate|escutcheon|rose|chain|key|damper|holder|bracket|sign|house no|numeral|coordinator|hook/i,
-  es: /cerradura|picaporte|bisagra|manija|perilla|barra|guarnici|cierrapuertas|cilindro|cerrojo|pasador|tope|mirilla|n[úu]mero|accesorio|agarradera|gancho|indicador|herraje|tirador|pinza|pivote|juego|caja|cuerpo|placa|roseta|cadena|llave|amortiguador|soporte|se[ñn]al|selector|pasacables|percha|numeral|coordinador/i,
+  es: /cerradura|pestillo|picaporte|bisagra|manija|perilla|barra|guarnici|cierrapuertas|cilindro|cerrojo|pasador|tope|mirilla|n[úu]mero|accesorio|agarradera|gancho|indicador|herraje|tirador|pinza|pivote|juego|caja|cuerpo|placa|roseta|cadena|llave|amortiguador|soporte|se[ñn]al|selector|pasacables|percha|numeral|coordinador/i,
   pt: /fechadura|lingueta|dobradi|ma[çc]aneta|barra|guarni|mola|cilindro|trava|ferrolho|fecho|batedor|olho|n[úu]mero|acess[óo]rio|gancho|indicador|ferragem|puxador|pin[çc]a|piv[ôo]|conjunto|caixa|corpo|placa|roseta|corrente|chave|amortecedor|suporte|espelho|trinco|ferragens|batedor|transfer[êe]ncia|coordenador|numera/i,
 };
 const CERT = /\b(EN\s?\d{3,5}|UL\s?\d{2,4}|ANSI|BHMA|ISO\s?\d{3,5}|CE[- ]certified|fire[- ]?rated|\d+(?:\.\d+)?\s?(?:hours?|hrs?|horas?)\b)/i;

@@ -383,7 +383,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Case size": "Dimensões da caixa da fechadura",
   "Keys supplied": "Chaves incluídas",
   "Fitted with": "Equipado com",
-  "Supplied with": "Fornecido com",
+  "Supplied with": "Acompanha",
   "Plate depth": "Profundidade da placa",
 };
 
@@ -627,7 +627,13 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "Perfil europeu, chave por fora / botão por dentro, liga de zinco",
   "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or outwards, with stops at 0, 88 and 116 in both directions.":
     "Inclui regulagem da velocidade de abertura e de fechamento, tensão de mola totalmente ajustável, a porta gira 116° para dentro ou para fora, com paradas em 0°, 88° e 116° nos dois sentidos.",
-  "Latch and square deadbolt": "Trinco e lingueta quadrada",
+  /*
+    Was "Trinco e lingueta quadrada", which swapped the two parts: by this file's own
+    header (and ABNT NBR 11742) the sprung latch is the lingueta and the deadbolt the
+    trinco, so that row told a Brazilian reader the opposite of the English. Gender
+    follows the noun: trinco quadrado, not quadrada.
+  */
+  "Latch and square deadbolt": "Lingueta e trinco quadrado",
   "Mortise lock body, iron": "Caixa de embutir, ferro",
   "Pair of lever plates, mortise lock body, euro cylinder with keys, spindle, strike plate, fixing screws and fittings":
     "Par de placas com maçaneta, caixa de embutir, cilindro europeu com chaves, quadrado, contra-testa, parafusos e acessórios de fixação",
@@ -1175,7 +1181,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "3M adhesive or screw fixed":
     "Fixação com fita 3M ou parafusos",
   "Three square deadbolts, plus latch":
-    "Três ferrolhos quadrados, mais o trinco",
+    // "mais o trinco" said "plus the deadbolt" where the English says latch. ferrolho is
+    // left alone: the header does not claim that word, and the Bolts label uses it.
+    "Três ferrolhos quadrados, mais a lingueta",
   "6068 Mortise Lock Series":
     "Série de fechadura de embutir 6068",
   "100 pieces":
