@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5238,
+  "count": 5291,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -16071,6 +16071,96 @@
       },
       "sourceSha256": "b5cb9e979aeedad6f49bcfcbe865f34f36d552aae009b98820d9d00fb12abf57",
       "outputSha256": "820c3111fea50bed5a56c1de164cfcb4ab5174e360bd6675f67c15505316cea7"
+    },
+    {
+      "source": "public/images/products/4x4x2-5-3d-adjustable-hinge-2.webp",
+      "output": "public/images/products-hyde/4x4x2-5-3d-adjustable-hinge-2.webp",
+      "width": 435,
+      "height": 435,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ef4a4202833a16b38b28d8ddf16568a21e743857a1f94a0c8fa3e2852be953a1",
+      "outputSha256": "4b1505f2703ac29baea08603d36357288258893bc12c524c5c3281eb82a678a5"
+    },
+    {
+      "source": "public/images/products/4x4x2-5-3d-adjustable-hinge-3.webp",
+      "output": "public/images/products-hyde/4x4x2-5-3d-adjustable-hinge-3.webp",
+      "width": 653,
+      "height": 653,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 78,
+        "logoHeight": 20
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f22116f72b86b5e8aa5ca1b6a527cdda9a7dfb71117b5a26c311aebd3eb36413",
+      "outputSha256": "d9e10463434951a5559b40f5b3b3622cda499fb91599c0cc87d9701c83e21c4a"
+    },
+    {
+      "source": "public/images/products/4x4x2-5-3d-adjustable-hinge-4.webp",
+      "output": "public/images/products-hyde/4x4x2-5-3d-adjustable-hinge-4.webp",
+      "width": 647,
+      "height": 647,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 78,
+        "logoHeight": 20
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d693b89007e19faf6d6d0042b58c8a58d7c5f3a1232269da4065f2cb8facb37d",
+      "outputSha256": "7a0f7baea116ed2e2fefaade83220e838d5c29aea4ca48947e0de5fe21921d97"
+    },
+    {
+      "source": "public/images/products/4x4x2-5-3d-adjustable-hinge-5.webp",
+      "output": "public/images/products-hyde/4x4x2-5-3d-adjustable-hinge-5.webp",
+      "width": 650,
+      "height": 650,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 78,
+        "logoHeight": 20
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2ea7c8167e3bc3f3039be2edc662db9439de6648fa0be61747681894d3e8ad15",
+      "outputSha256": "fc34d3cc1e1e98cd1b7979677eedf97e06c9e09db3d5ea28419b37cc1a3eabb6"
+    },
+    {
+      "source": "public/images/products/4x4x2-5-3d-adjustable-hinge.webp",
+      "output": "public/images/products-hyde/4x4x2-5-3d-adjustable-hinge.webp",
+      "width": 645,
+      "height": 645,
+      "geometry": {
+        "margin": 16,
+        "logoWidth": 77,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "98ba63d9f5db2f62d0e7fbcfca32386c2ac9f741c04f2aaf8fafd4bc402c4e8c",
+      "outputSha256": "0947b9e7a161b0ebdc55a76fa9027b156b7aa0de157924423aa2bc6942a488a4"
     },
     {
       "source": "public/images/products/4x4x3-0-2bb-us-standard-stainless-hinge-2.webp",
@@ -58857,6 +58947,186 @@
       "outputSha256": "e0b337ee9be8afe15beca2551e7ba65b6ab3427c20a315b1c33bf4294a3a4711"
     },
     {
+      "source": "public/images/products/bk801-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/bk801-tubular-lever-lock-2.webp",
+      "width": 436,
+      "height": 436,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "134209446b60aca9439c5aef5f0cdcb7f27ea9adc2d3ab5468fb3291e9973000",
+      "outputSha256": "125df9079bace5de29343275e5d8508f25a75423d0533b54e53c4975192c60ec"
+    },
+    {
+      "source": "public/images/products/bk801-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/bk801-tubular-lever-lock.webp",
+      "width": 882,
+      "height": 882,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 106,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "693bd2a79366c06b40bc5b984cf09a466148bd63f7adaac302c3cc36f2dfec7c",
+      "outputSha256": "331aff41e7efc075b712917f1de494e573874fb89d64edb04b66413d2a1a7b97"
+    },
+    {
+      "source": "public/images/products/bk802-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/bk802-tubular-lever-lock-2.webp",
+      "width": 437,
+      "height": 437,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1af1aed2de9d952764c66ea2da82e978fa3037511da1ac8c97c69319873fa8b9",
+      "outputSha256": "729ae9a497ca3c816ff37b7fdf16562ba686c84170f033611ec6c5a951e87c9a"
+    },
+    {
+      "source": "public/images/products/bk802-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/bk802-tubular-lever-lock.webp",
+      "width": 983,
+      "height": 983,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 118,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d66d4d0b3f3df5081933e7225ae3a26bb117d006944ca580d8a24f69fb5cb0a9",
+      "outputSha256": "6f3f373d3b73c7ce5c6199fe30a8fe9f768b0b22d02efd5adb448bb1e3b5b9ca"
+    },
+    {
+      "source": "public/images/products/bk901-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/bk901-tubular-lever-lock-2.webp",
+      "width": 437,
+      "height": 437,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ab176c5955442894d9162721eab4144d3f62b1a08bdade0a85007195b1589151",
+      "outputSha256": "8e8aadc11a6487b75094bc30e11c768e97342927496b48865311467b073d97bf"
+    },
+    {
+      "source": "public/images/products/bk901-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/bk901-tubular-lever-lock.webp",
+      "width": 785,
+      "height": 785,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 94,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b3d463c36ad2c2a0c25aa2e2a3b9a1852fba5a89a371ed2611b84d0a55433a22",
+      "outputSha256": "3fc02febf61e91db088a89903dd8865de21e658a75220f71d5a88c7dcfb0873b"
+    },
+    {
+      "source": "public/images/products/bk902-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/bk902-tubular-lever-lock-2.webp",
+      "width": 437,
+      "height": 437,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e72be9808491751036ce0e25ac7589042f87f27971b83f44dd564f3522db0f61",
+      "outputSha256": "dec84ed1eb723dfd9ffe1aff8238a339c4328677504022ef587b1fdd010787f9"
+    },
+    {
+      "source": "public/images/products/bk902-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/bk902-tubular-lever-lock.webp",
+      "width": 813,
+      "height": 813,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 98,
+        "logoHeight": 25
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4c5debd4b45c6d4a083fcefebd8bbb3de0f88cd00547c56963e8bcf91c89b067",
+      "outputSha256": "3281958f9fc38991a042ca1a7e6a3f726f1a48630d08193e1aa97444879c7041"
+    },
+    {
+      "source": "public/images/products/bk903-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/bk903-tubular-lever-lock-2.webp",
+      "width": 437,
+      "height": 437,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "30a27c2a9da00e322f5feb1b9b01da8890cb9349d4e0d63bb5fb6e8650da1d47",
+      "outputSha256": "12036541a4c9f424173a3543b6c13574076f14a1b33d33ad0d56fc827bfb942a"
+    },
+    {
+      "source": "public/images/products/bk903-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/bk903-tubular-lever-lock.webp",
+      "width": 831,
+      "height": 831,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 100,
+        "logoHeight": 25
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "94070474bdc5e81cbaf15ab38f68bb941760589dee9f148d50f4ce80ba7c9927",
+      "outputSha256": "0102017e162ab6fc20459f93ba626b87b0ac5b163fff95721bec3bb9719036f2"
+    },
+    {
       "source": "public/images/products/bl027-brass-and-steel-hinges-2.webp",
       "output": "public/images/products-hyde/bl027-brass-and-steel-hinges-2.webp",
       "width": 1000,
@@ -65059,6 +65329,510 @@
       "outputSha256": "31f236a801ff95a6d7f933cf0de57a3e8f4109652d98000ef91e897711c1201e"
     },
     {
+      "source": "public/images/products/eda-06d-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-06d-concealed-hinge-2.webp",
+      "width": 1122,
+      "height": 1122,
+      "geometry": {
+        "margin": 28,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bcaa40a6b45fbfaab47026a0ef32a33abfdcaa1cf835d9dd527224d2dba4eeac",
+      "outputSha256": "0b6d6878ad2c24523e42197ef14f70127c4405274186de6141ae4cf19cf48453"
+    },
+    {
+      "source": "public/images/products/eda-06d-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-06d-concealed-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "35fc9a47bc4076dea2a896d48a1f0c8132fdf9d88986539fd817f1c59b5c896e",
+      "outputSha256": "1efa6c62e834e15ed4726618239a757ac7ed63a990323e44a26bc62f06015904"
+    },
+    {
+      "source": "public/images/products/eda-08-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-08-concealed-hinge-2.webp",
+      "width": 688,
+      "height": 688,
+      "geometry": {
+        "margin": 17,
+        "logoWidth": 83,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "580ba8f8ff7a7b59860484177e86b2b84e7790ef5a27af6d34da517c66ea87f2",
+      "outputSha256": "771fb9fa35d22971bdf5e76fd0590b206d2acdae14dd7e4c46ce6104a128ed3e"
+    },
+    {
+      "source": "public/images/products/eda-08-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-08-concealed-hinge.webp",
+      "width": 754,
+      "height": 754,
+      "geometry": {
+        "margin": 19,
+        "logoWidth": 90,
+        "logoHeight": 23
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "827a029678d979cfdfad75439f6d7d72e34b70d509cd6e75e96f5db86de581eb",
+      "outputSha256": "360f4baeb65f597039459ecccfd6f7bf544904d48dde07e5fee30ccd7a9315ea"
+    },
+    {
+      "source": "public/images/products/eda-08a-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-08a-concealed-hinge-2.webp",
+      "width": 941,
+      "height": 941,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 113,
+        "logoHeight": 28
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "06b19701eeff8d55fd6784ceda819d7d6877932dab0cd713a106e617455b66b4",
+      "outputSha256": "a8a98ab8e8961222609bfede869fdd4dff8814dc6141f446bb938069a8191042"
+    },
+    {
+      "source": "public/images/products/eda-08a-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-08a-concealed-hinge.webp",
+      "width": 685,
+      "height": 685,
+      "geometry": {
+        "margin": 17,
+        "logoWidth": 82,
+        "logoHeight": 21
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "22844e6afd4c0095ee614ed18cc4b758b9d5be80043a6142cf5a9db4205718b2",
+      "outputSha256": "413b5c79a84a143c7367d7b357c7ceb196aa6526a59be73201ea1d7679e6548d"
+    },
+    {
+      "source": "public/images/products/eda-09-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-09-concealed-hinge-2.webp",
+      "width": 1170,
+      "height": 1170,
+      "geometry": {
+        "margin": 29,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "094c52419c30923e9a2147bd70462db226b8c2ddabbe9eed49cc4ba65c211875",
+      "outputSha256": "a2971dd0ecdfd3b6495498cb2bbccf3d431c6105273b5268bf42d039b3a93ee7"
+    },
+    {
+      "source": "public/images/products/eda-09-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-09-concealed-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1318fbcb543845fe661080cdcdda1e490f1b0c780840e6fe06fd5c520f67c50e",
+      "outputSha256": "01c77e690c4c0d9face3cb85f3e4d880daa0a8718e9d7fcfb417d072cd37bdac"
+    },
+    {
+      "source": "public/images/products/eda-09c-concealed-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-09c-concealed-hydraulic-hinge-2.webp",
+      "width": 1180,
+      "height": 1180,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5f6f5dbb436afd4a7f4080af5d0037c9bf8c8da9481fb49672ceb790083e2ae5",
+      "outputSha256": "5d0ecadf0ac78c01663ab7dba201965e9157f53841b19d251a976946e2bbf5f4"
+    },
+    {
+      "source": "public/images/products/eda-09c-concealed-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/eda-09c-concealed-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "dd3b687d7cb4209183c8c4366b57ed245e8ae88838d253a1712624cf30dc6f15",
+      "outputSha256": "200c2e40f8d2186c55ce33f60eaff5414a3bf87418345322dc532a95c6863abd"
+    },
+    {
+      "source": "public/images/products/eda-11-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-11-concealed-hinge-2.webp",
+      "width": 905,
+      "height": 905,
+      "geometry": {
+        "margin": 23,
+        "logoWidth": 109,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "d8dc566f9bfd4e4d01a864eda71c030ab1cf8b8c13e43d5a79e21cb1eb03ad25",
+      "outputSha256": "61249b8ea419e0f502f40a9419df1b54aa103ba0c20e12e7d9bffa6034ee005f"
+    },
+    {
+      "source": "public/images/products/eda-11-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-11-concealed-hinge.webp",
+      "width": 833,
+      "height": 833,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 100,
+        "logoHeight": 25
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5578dea3bb200c629c6be852c90f10bb6dabb6e0a41ebe1a941673b9bdadba5b",
+      "outputSha256": "3073cab6ce309cef0dac089a19d35a303fa292e3fa8baefe0bbf816cf183f299"
+    },
+    {
+      "source": "public/images/products/eda-20-concealed-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-20-concealed-hydraulic-hinge-2.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "07ae842bbc3fd11f6f923bbe41d391e2a96d23acb879b80a40bc4c6833755c5a",
+      "outputSha256": "9595ef1cb1dd32a6af90b04df0873334cf37c73c18397c54c92739aabbba4283"
+    },
+    {
+      "source": "public/images/products/eda-20-concealed-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/eda-20-concealed-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2e2fd0ce2f0010a2bc9a9ac9773c4dc52927d0cc959335fde4b506b7ce6483b3",
+      "outputSha256": "7e039b92a6ffd844ab75c8779e6c531fa5ba8da410549d169aa83450c3468849"
+    },
+    {
+      "source": "public/images/products/eda-23-concealed-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-23-concealed-hydraulic-hinge-2.webp",
+      "width": 1400,
+      "height": 1400,
+      "geometry": {
+        "margin": 30,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b6fe8295a53331e06f3c7f8b95edd98da57750f6e24b003243d37157ebc41124",
+      "outputSha256": "26c139798cfb8ea37e619f2f752588a1aa2bd310fe62be0aee0e9fe4c8a9012c"
+    },
+    {
+      "source": "public/images/products/eda-23-concealed-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/eda-23-concealed-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "aae4bf525a355ea4a8981d63ab2ec99e6d23afaabb1c8d7b00716b9f71827326",
+      "outputSha256": "f67b5ec7477c8e8b05a1d0cf30fe3aca9db9a5156db13303b98cc72e952b8303"
+    },
+    {
+      "source": "public/images/products/eda-34-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-34-concealed-hinge-2.webp",
+      "width": 943,
+      "height": 943,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 113,
+        "logoHeight": 28
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bb2b65403241033429f717d30bcf5bbc32120bcb25ae344848bdd7e034facfee",
+      "outputSha256": "f9f3daf0b6f4ef958f89797321e9ef4b0cdd686b5d16dac9749a3bd826ab16b9"
+    },
+    {
+      "source": "public/images/products/eda-34-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-34-concealed-hinge.webp",
+      "width": 752,
+      "height": 752,
+      "geometry": {
+        "margin": 19,
+        "logoWidth": 90,
+        "logoHeight": 23
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "eef283d88bfb6b95ee96aaf818e96e1b334049174887413a0da1135bc33468bc",
+      "outputSha256": "9910e8329f1a3a57d5a30fb78efa417e53fde324833d8e1ccfb0b537527d5551"
+    },
+    {
+      "source": "public/images/products/eda-36-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-36-concealed-hinge-2.webp",
+      "width": 993,
+      "height": 993,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 119,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2d2f5934a7ec61f9bf88693e50b9ac5a290e782bd52eeb057559494453a51065",
+      "outputSha256": "b1e07b36e738f510e1721a9e4ff9ca2d481b2b716695c3aed95970e947818b15"
+    },
+    {
+      "source": "public/images/products/eda-36-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-36-concealed-hinge.webp",
+      "width": 558,
+      "height": 558,
+      "geometry": {
+        "margin": 14,
+        "logoWidth": 67,
+        "logoHeight": 17
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0f1d3d9b88e770f7fac68852188fa71e420ac117b5208cf24265122ad9b72d1a",
+      "outputSha256": "fe6a2aae04efe54b1b27dce5ffcaba9194f5ecc771c8e6e0f1b3e01fe996221a"
+    },
+    {
+      "source": "public/images/products/eda-37-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-37-concealed-hinge-2.webp",
+      "width": 946,
+      "height": 946,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 114,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e37bab6cc6529879ba8e55e7f34040ea00ca133a67199015f359ef8325112df3",
+      "outputSha256": "1791c5c975478097ac97ea952a7b5ee5b2cfc137639d62ba3266aabaf14d1685"
+    },
+    {
+      "source": "public/images/products/eda-37-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-37-concealed-hinge.webp",
+      "width": 729,
+      "height": 729,
+      "geometry": {
+        "margin": 18,
+        "logoWidth": 87,
+        "logoHeight": 22
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b3d4e2fdcefa387b0ddca65e20146f059a33b51afcbdb61364a480c514617523",
+      "outputSha256": "6901c5a2bf566aa50514eb582dd8c0abe8929c3722ca8ee3e117b5a9c91cc981"
+    },
+    {
+      "source": "public/images/products/eda-38b-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-38b-concealed-hinge-2.webp",
+      "width": 963,
+      "height": 963,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 116,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "af9cfec8f7467c8939abdf245c11121870e2da6ab85960bf54062e448abd78d7",
+      "outputSha256": "e6a25bf6cf86fb85bdf4b9bf0824c56008fd0212ff6ad5c6bcde8313b65c3c54"
+    },
+    {
+      "source": "public/images/products/eda-38b-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-38b-concealed-hinge.webp",
+      "width": 618,
+      "height": 618,
+      "geometry": {
+        "margin": 15,
+        "logoWidth": 74,
+        "logoHeight": 19
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4ec83d914fb672ea2d52f8a2094c01e6e8a35ef301b7c7816bb6dc573b619c29",
+      "outputSha256": "abf56f0683d070ad681f5c5d1361e54154bb36fbb9f8cf8d42823bc7e959f37c"
+    },
+    {
+      "source": "public/images/products/eda-39-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-39-concealed-hinge-2.webp",
+      "width": 940,
+      "height": 940,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 113,
+        "logoHeight": 28
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "32406927d5c767aee84b26d90c839145eda36885bbe67b3f78af8adfd8dd44db",
+      "outputSha256": "51004e80c879f4c7ffe68ec92736cbc3b6ee54fb934ea406b5736b4b9e9865ef"
+    },
+    {
+      "source": "public/images/products/eda-39-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-39-concealed-hinge.webp",
+      "width": 748,
+      "height": 748,
+      "geometry": {
+        "margin": 19,
+        "logoWidth": 90,
+        "logoHeight": 23
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "90c90fc01ceb2ddc02c8847016f545c11cd483b167c8144666a9921713d64975",
+      "outputSha256": "da31e7f8a25da73e1efa0c920b09ef13b66876c2d1d9ebf3b6ad09378a04d505"
+    },
+    {
+      "source": "public/images/products/eda-40-concealed-hinge-2.webp",
+      "output": "public/images/products-hyde/eda-40-concealed-hinge-2.webp",
+      "width": 948,
+      "height": 948,
+      "geometry": {
+        "margin": 24,
+        "logoWidth": 114,
+        "logoHeight": 29
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bb1919e095a43cc4157111e5daf1702bb24f8e5f8c2f5cc654db98ac1948d75a",
+      "outputSha256": "adb50e377782f84bc8716fefc304f19e759f3ef4ba2046052a6f890363b613c5"
+    },
+    {
+      "source": "public/images/products/eda-40-concealed-hinge.webp",
+      "output": "public/images/products-hyde/eda-40-concealed-hinge.webp",
+      "width": 881,
+      "height": 881,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 106,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a6b80ee295b3d86e89584aadf62a4c3f7d82d382a131d661014916d980e4349f",
+      "outputSha256": "4393e909dd6fdd6d26e88cf85b18bcfc4731c6735d4522057afc12d5862f2b26"
+    },
+    {
       "source": "public/images/products/eh01-lever-handle-10.webp",
       "output": "public/images/products-hyde/eh01-lever-handle-10.webp",
       "width": 1000,
@@ -66971,6 +67745,186 @@
       },
       "sourceSha256": "669e2d0546a0e1af1fe787adeb671c0f6ea1c9ba2fc4a6fafe7388a4a8713b16",
       "outputSha256": "9f993a95ce6176e597e423884773dc2f72a1496fd718a3f098d6004b02db9def"
+    },
+    {
+      "source": "public/images/products/et801-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/et801-tubular-lever-lock-2.webp",
+      "width": 360,
+      "height": 360,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1915ddc67f7ebe017d5e34226caeaf83516c223a0c2ba95e880bbc845f425c55",
+      "outputSha256": "144c2091afd20125e339a5f158c347cd0acaa91eb92d6bdae97a9791ae1ddb19"
+    },
+    {
+      "source": "public/images/products/et801-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/et801-tubular-lever-lock.webp",
+      "width": 881,
+      "height": 881,
+      "geometry": {
+        "margin": 22,
+        "logoWidth": 106,
+        "logoHeight": 27
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0ab027b3cfc4cd31859fe5c3fc05b22e0ce12d7b46f1b8c63035114989badbd3",
+      "outputSha256": "5dec77659501ccb6ca1f0b61911db77460552350e2298cd62368dcfbad86ea24"
+    },
+    {
+      "source": "public/images/products/et802-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/et802-tubular-lever-lock-2.webp",
+      "width": 359,
+      "height": 359,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "81d32ef248f868eb1c2036a8601e3586972a9b257865e2ae25c436553f6ad851",
+      "outputSha256": "07befbb9748c07089bb7cb458a6c4e679b14f015943e2fa70688fd49d6c91276"
+    },
+    {
+      "source": "public/images/products/et802-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/et802-tubular-lever-lock.webp",
+      "width": 984,
+      "height": 984,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 118,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "731c4c662dd43b38a096b1f9cf4800a57ffa8d6ef74cb3486a5693e21e6b73e4",
+      "outputSha256": "c9ce563ff23e8512a378b3315b3c77d566ce08d6933855d9c11ac5c3420d9202"
+    },
+    {
+      "source": "public/images/products/et901-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/et901-tubular-lever-lock-2.webp",
+      "width": 396,
+      "height": 396,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "df79c4463bce7e3cd287227e48fe3a422553215ee25413cc5880af47ed558b31",
+      "outputSha256": "898a49edc9a3db6a744eb60d91b97c3dd9fd402e5afe05d6434e78ccaaf52b1e"
+    },
+    {
+      "source": "public/images/products/et901-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/et901-tubular-lever-lock.webp",
+      "width": 784,
+      "height": 784,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 94,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "0602a59320e8025945858f0c75e41fdda5f5513c58e27f0cfbb4cffdbc3ea487",
+      "outputSha256": "59bc2d512e8ec2171fa1a8b28ba6f87043d8bbb7bdc0f0ba9e231a05aacb5547"
+    },
+    {
+      "source": "public/images/products/et902-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/et902-tubular-lever-lock-2.webp",
+      "width": 395,
+      "height": 395,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6c91abe4af55d4e2a4a62520e91bca4574506a35e9626cf99ebc2a7eefe4135e",
+      "outputSha256": "40e37c1a4e106c4365c3eb5a2ea9423a571e548e0a32d0286dc52c15a8f184ef"
+    },
+    {
+      "source": "public/images/products/et902-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/et902-tubular-lever-lock.webp",
+      "width": 810,
+      "height": 810,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 97,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c923bc4ff6a7840046162d6ef9bdee4a584829771f8c244b9a7e38213cf94247",
+      "outputSha256": "6ff49800eb384e57575add4f618ac5d652f25af23c9991d1a3faaaa6abc3c7c4"
+    },
+    {
+      "source": "public/images/products/et903-tubular-lever-lock-2.webp",
+      "output": "public/images/products-hyde/et903-tubular-lever-lock-2.webp",
+      "width": 396,
+      "height": 396,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "76a5a7ec5c055973847c2d0865fdb80ea39decd0db5e3d76b194ef20c866cbc2",
+      "outputSha256": "dc722d9c36a96b5c3573022d778e07ab5bfb99f9d345f9e1cecace282d6903eb"
+    },
+    {
+      "source": "public/images/products/et903-tubular-lever-lock.webp",
+      "output": "public/images/products-hyde/et903-tubular-lever-lock.webp",
+      "width": 830,
+      "height": 830,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 100,
+        "logoHeight": 25
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8a016a88fb29295c7cb66541c2af0630be8792f3865f9fdcea0d607fb2da9cce",
+      "outputSha256": "8093100beb4ba5d67753a11b7115b1a3d8390f4dce18edc3f86866da91522740"
     },
     {
       "source": "public/images/products/f001-security-door-guard-2.webp",
