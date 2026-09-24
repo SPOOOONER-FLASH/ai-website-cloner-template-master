@@ -181,8 +181,14 @@ function buildSummary(entry) {
     "grip-handle-sets",
     "night-latches-rim-locks",
   ]);
+  /*
+    lever-handles also holds things that are not levers: p77's concealed door locks and its
+    sixteen knobs. Calling a knob a "lever handle" in its SEO description is the same defect
+    as the hinges above, so "lever handle" is kept only for records whose own name says
+    lever — which is every one published before 2026-09-24, so none of them churn.
+  */
   const kind =
-    entry.categoryPath[0] === "lever-handles"
+    entry.categoryPath[0] === "lever-handles" && /lever/i.test(entry.name)
       ? "lever handle"
       : HANDLE.has(entry.categoryPath[0])
         ? "pull handle"
@@ -191,7 +197,14 @@ function buildSummary(entry) {
   const length = entry.specs.find((s) => s.label === "Overall length")?.value;
   const lever = entry.specs.find((s) => s.label === "Lever length")?.value;
 
-  const head = `${entry.material} ${kind}`;
+  /*
+    No material printed means none written. p77's knobs have only a code and a photograph,
+    and the first ingest of them produced "undefined lever handle." as both summary and SEO
+    description. A sentence that starts with the noun is less informative, not wrong.
+  */
+  const head = entry.material
+    ? `${entry.material} ${kind}`
+    : kind.charAt(0).toUpperCase() + kind.slice(1);
   if (centre && length) return `${head}, ${length} overall on ${centre} fixing centres.`;
   if (centre) return `${head} on ${centre} fixing centres.`;
   if (lever) return `${head}, ${lever} lever.`;

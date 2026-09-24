@@ -479,7 +479,8 @@
     "ul1110-lever-handle-5.webp",
     "al-115-lever-handle-4.webp",
     "t1550-stainless-steel-handle-18.webp",
-    "4x4x2-5-3d-adjustable-hinge-3.webp"
+    "4x4x2-5-3d-adjustable-hinge-3.webp",
+    "e-type-multifunction-hydraulic-hinge-3.webp"
   ],
   "hashes": {
     "001-panic-exit-device-trim-2.webp": {
@@ -22081,6 +22082,151 @@
     },
     "et903-tubular-lever-lock.webp": {
       "source": "8a016a88fb29295c7cb66541c2af0630be8792f3865f9fdcea0d607fb2da9cce",
+      "status": "already-clean"
+    },
+    "a5-a002-concealed-door-lock-2.webp": {
+      "source": "f8c81319d8aac8268e8c7d88ef7cae805fbdfab09c52b6caad9541aedd9ad1ff",
+      "status": "already-clean"
+    },
+    "a5-a002-concealed-door-lock-3.webp": {
+      "source": "3404b3946de30486323379b4c2c96f980696a415a4d7429a4fab6343b2a9b4b5",
+      "status": "already-clean"
+    },
+    "a5-a002-concealed-door-lock-4.webp": {
+      "source": "9ad8d1de3eeedcc3f841cb7646480f0975d36011583d10e597f3242f820a3c45",
+      "status": "already-clean"
+    },
+    "a5-a002-concealed-door-lock.webp": {
+      "source": "79bdf0f97cbac45466e0fa703fad1b44f05a284bfc25e2b576e265382ce15fc7",
+      "status": "already-clean"
+    },
+    "a5-a008-knob-2.webp": {
+      "source": "5d814bc1b8cbd0281cf5bdcf7f680c16f26fd5d3b684f6389114b455af670e8c",
+      "status": "already-clean"
+    },
+    "a5-a008-knob.webp": {
+      "source": "e5bfa278a652dd3f8dcb7434e25dc868b3d6f00074a9605f3a62cfe6a18eb1e4",
+      "status": "already-clean"
+    },
+    "a5-a009-knob-2.webp": {
+      "source": "80c248df2bc91ec1057bbda72fa62851df2955812413381a2f1ab22900c0fbec",
+      "status": "already-clean"
+    },
+    "a5-a009-knob.webp": {
+      "source": "6bf2b4955661fa209ec2b108085116c102d60735742830f898c9bd34d438ace9",
+      "status": "already-clean"
+    },
+    "a5-a011-knob-2.webp": {
+      "source": "7f5b1903d3056966ad8f9d7b09ad824b416d7c60d84af7ad32d0dac442d8d02b",
+      "status": "already-clean"
+    },
+    "a5-a011-knob-3.webp": {
+      "source": "fd8f61bc71630e34c70b3bd9abe3ca6dfacfd1e56202e46c37f71256caeac85b",
+      "status": "already-clean"
+    },
+    "a5-a011-knob-4.webp": {
+      "source": "bf6a09c5ef281913bc4c5632d2aeb4452ea255c2379e1b01ff42b3ef74f2be57",
+      "status": "already-clean"
+    },
+    "a5-a011-knob.webp": {
+      "source": "f331a240e78080ff2855b0f07fb1e6211310ef0b94ec258cf09dc422c5fd7f43",
+      "status": "already-clean"
+    },
+    "a5-a012-knob-2.webp": {
+      "source": "51cfcc9fbc427ca0946df3cc52f57cfab0d78fb56f8e583df16fb11fee0c2373",
+      "status": "already-clean"
+    },
+    "a5-a012-knob-3.webp": {
+      "source": "96cf0eed3cd9911e43bdc233622120c27fe429afcf82e11052e2dd8237dde36a",
+      "status": "already-clean"
+    },
+    "a5-a012-knob-4.webp": {
+      "source": "4b2f3d42176cdc02e6357789c28875566c9391f13bb322af58c7d4d1265e3d7b",
+      "status": "already-clean"
+    },
+    "a5-a012-knob-5.webp": {
+      "source": "90c2e0ecfbdeb04b1cc2f30b69311e81fac58432c6181042a2926c4ebbb8bfae",
+      "status": "already-clean"
+    },
+    "a5-a012-knob-6.webp": {
+      "source": "9005b4c115fa5dd877b3bd24dc97591c6743ff395df361d2edbac1aff4d4ae31",
+      "status": "already-clean"
+    },
+    "a5-a012-knob.webp": {
+      "source": "a5fe485dfb673435da89fb583930c22c145fea9ffdb3a904e74a8a45b4a8ba8a",
+      "status": "already-clean"
+    },
+    "a9-987-bl-concealed-door-lock-2.webp": {
+      "source": "f9c980f0ad3181ac0e7a8758b88081ef7365a4f5d0553e20eb30fcc1065af0f2",
+      "status": "already-clean"
+    },
+    "a9-987-bl-concealed-door-lock-3.webp": {
+      "source": "7f1fd0227d7cc851f0ef86b2a9b379af4e259ccfe66cfbb72af260ab503a664a",
+      "status": "already-clean"
+    },
+    "a9-987-bl-concealed-door-lock.webp": {
+      "source": "c23d9c44b9629663746480f77616bc5c3dc180ff5babf6c982b2ac25439f1d84",
+      "status": "already-clean"
+    },
+    "a9-a010-knob-2.webp": {
+      "source": "ec116c29d4cc926195961cd422fed92ec661bcb4affbc5dea7c8202f87950960",
+      "status": "already-clean"
+    },
+    "a9-a010-knob.webp": {
+      "source": "5f1c5c451a258a44cffae8691e9122752518cec1b51b18e8d82345a2783a45e9",
+      "status": "already-clean"
+    },
+    "d-type-no-mortise-hydraulic-hinge-2.webp": {
+      "source": "56a5bed2069100611e05ebd97599aea7f80d8574a90535ddbf4efc6ede970b25",
+      "status": "already-clean"
+    },
+    "d-type-no-mortise-hydraulic-hinge-3.webp": {
+      "source": "e75dec65673c0ff4fb2b5a6107328912db70e5674a12a259bc7b81087de49f7d",
+      "status": "already-clean"
+    },
+    "d-type-no-mortise-hydraulic-hinge-4.webp": {
+      "source": "68a3f4894037d9b3bf73709aec01f0357eddbb9d4518727f2176e95c9709982c",
+      "status": "already-clean"
+    },
+    "d-type-no-mortise-hydraulic-hinge.webp": {
+      "source": "cf066695f2636c5b47028bb02e048bd46354bf71d934c3ae3e6e43b4a351ac2b",
+      "status": "already-clean"
+    },
+    "e-type-multifunction-hydraulic-hinge-2.webp": {
+      "source": "b0cd0482e1c0b3916cc26775da24fdd227cbc984c38b2c04e163b8c2b09892d9",
+      "status": "already-clean"
+    },
+    "e-type-multifunction-hydraulic-hinge-3.webp": {
+      "source": "2b41fe2e396ade3eed28108dc817fe7e87995e69cf46f54a46704edc69bbc5ab",
+      "status": "refused",
+      "reason": "水印四周不是纯净背景，填充会盖住画面内容"
+    },
+    "e-type-multifunction-hydraulic-hinge-4.webp": {
+      "source": "445a1f0938baecd15c41f29a3fd32e5ed4eaeb560b29120c7d65c1602c947b15",
+      "status": "already-clean"
+    },
+    "e-type-multifunction-hydraulic-hinge-5.webp": {
+      "source": "6e1d73afb3b630436b5d9ca85b630bf17fc9868c8b67d95623b3f03025964ef3",
+      "status": "already-clean"
+    },
+    "e-type-multifunction-hydraulic-hinge.webp": {
+      "source": "efdd78ec3bf65fa45a7e25076c5c3d620c52b23b3a83e0dc0f4d81f9d3cc6353",
+      "status": "already-clean"
+    },
+    "ek-type-multifunction-hydraulic-hinge-2.webp": {
+      "source": "1a13abde8adbcff40da8a10ac990ae25f8dd5c059fe319ef4ed782e1bbcb574c",
+      "status": "already-clean"
+    },
+    "ek-type-multifunction-hydraulic-hinge-3.webp": {
+      "source": "a0e3e8e3084d40c7dbead8a3f6b9b5a07761d6f2d432143efdcb4e89db8e9137",
+      "status": "already-clean"
+    },
+    "ek-type-multifunction-hydraulic-hinge-4.webp": {
+      "source": "8130d0875dd9d3ef4c495deb962c6530d751aaa10a8825949fafdfc1b55072bc",
+      "status": "already-clean"
+    },
+    "ek-type-multifunction-hydraulic-hinge.webp": {
+      "source": "f4f65303e5c289d398d52e1a06188f816dc8178dff1b8d864f5555f4fbb24ab4",
       "status": "already-clean"
     }
   }

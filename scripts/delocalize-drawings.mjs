@@ -40,6 +40,7 @@
  *   node scripts/delocalize-drawings.mjs --check  # CI: fail if any edit could not be applied
  */
 
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -48,6 +49,18 @@ import sharp from "sharp";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = join(root, "public", "images", "products-rayen");
 const CHECK = process.argv.includes("--check");
+
+/* What brand-rayen-images last wrote to each zh file — see the "already finished" guard in main(). */
+const sha = (buf) => createHash("sha256").update(buf).digest("hex");
+const finished = (() => {
+  const ledger = join(root, "content", "rayen", "image-branding.json");
+  if (!existsSync(ledger)) return new Map();
+  try {
+    return new Map(Object.entries(JSON.parse(readFileSync(ledger, "utf8")).stamped ?? {}));
+  } catch {
+    return new Map();
+  }
+})();
 
 /*
   Every edit, measured on the canvas named in `canvas`.
@@ -241,6 +254,25 @@ async function main() {
       meta = await sharp(source).metadata();
     } catch (error) {
       skipped.push(`${edit.file}：读不到（${error.code ?? "unknown"}）`);
+      continue;
+    }
+
+    /*
+      ALREADY FINISHED → LEAVE IT ALONE.
+
+      Every step of rayen:images writes in place, and this one runs BEFORE branding. On an
+      incremental run the file here is usually not a fresh copy of the source but last run's
+      finished, branded output. Repainting it changed its bytes, brand-rayen-images saw a
+      changed file, and stamped the mark again on top of the one already there: every run
+      made the corner mark on these drawings one layer darker (found 2026-09-24 by comparing
+      oas-pth01 against HEAD — mean diff 3.9, max 95 in the mark's corner).
+
+      A file whose bytes match what the branding ledger last wrote IS that finished output,
+      and it was relabelled before it was branded. Only a file regenerated from source — which
+      no longer matches the ledger — needs this step.
+    */
+    if (!CHECK && finished.get(edit.file) === sha(source)) {
+      applied.push(`${edit.file}：已是成品，跳过`);
       continue;
     }
 

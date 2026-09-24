@@ -1,0 +1,301 @@
+{
+  "_readme": [
+    "《雷茵五金》p76 起（johns 机器；E:/rayen 那边做到 p75）。切图坐标：scripts/catalogue-cutters/regions/rayen-wujin-p76-p84.json。",
+    "",
+    "p76 多功能液压合页：和已上架的 RY8001–8006（三维暗藏液压铰链 / 5、6 寸液压合页）逐一比过，不重复。",
+    "图册没给这三款印货号，只印「EK 型 / E 型 / D 型」，型号照印的写，不替甲方编。",
+    "英文 Finish 栏四张卡都是 OX/SG/AB/AC/BL 套话，和各自中文不符 —— 按「同一格中英不一致按中文」（甲方 09-24）取中文：",
+    "EK 哑黑/枪灰/雅白，E 砂白/砂金/亚黑，D 砂白/亚黑/白色。亚黑 = 哑黑，写作 Matt Black。",
+    "规格「157X103XΦ23」拆成外形尺寸 157×103 + 轴筒直径 Ø23。",
+    "",
+    "p77 暗门锁：A9-987 BL 隐形门锁 = 已上架的 A9-987 执手 + K55F 暗门锁体 + 锁芯；A5-A002 = 椭圆球头 + K58 暗门锁体。",
+    "右半页 16 格旋钮（5 个型号）只印了代号和照片，没有尺寸、没有材质 —— 就只写这两样有的，规格表空着。",
+    "SN/CP 的 SN = 镍拉丝（本书 p32 印过）。",
+    "执行标准 QB/T2474-2000、GB21556-2008 两款都印了；p65–p70 那批同样的标准没收，这里保持一致也不收。",
+    "",
+    "A5-A011 / A5-A012 与凯撒页的 KA5-A011 / KA5-A012 是同一款旋钮（包皮 / 竖纹，表面组合也相同）：",
+    "凯撒版配 8550 锁体与锁孔盖，p77 版配隐形门。图册给了两个货号，下单要分清，所以两条都留，不合并。",
+    "",
+    "EK 型「枪灰」用英文 Gunmetal：词条里已有的 Gunmetal Grey 对应「枪灰色」，别的产品在用，没改它。"
+  ],
+  "sourceRoot": "C:/Users/johns/rayen-catalogue-p76-p84",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "A9-987 BL（尺寸）",
+      "reason": "p77 图上执手 145、方座 53，p45 同一型号印 146、方座 52。同型号两处数不一致不选，总长和座尺寸都不写。"
+    },
+    {
+      "model": "A5-937 BL",
+      "reason": "p77 只有一张换装执手小图，没有型号页、没有尺寸图，不单独建页。"
+    },
+    {
+      "model": "E型 DBN",
+      "reason": "第二张 E 型卡标题写 DBN，但它自己的表面处理只列砂白/砂金/亚黑。那张大图照上（第 4 张），不给它起表面名。"
+    },
+    {
+      "model": "旋钮 5 个型号（尺寸、材质）",
+      "reason": "p77 右半页只有代号和照片。"
+    }
+  ],
+  "models": [
+    {
+      "model": "EK型",
+      "slug": "ek-type-multifunction-hydraulic-hinge",
+      "name": "Multifunction Hydraulic Hinge",
+      "nameZh": "多功能液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Matt Black",
+        "Gunmetal",
+        "Soft White"
+      ],
+      "specs": [
+        {
+          "label": "Overall size",
+          "value": "157 × 103mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø23mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Timber entrance doors and room doors"
+        },
+        {
+          "label": "Main feature",
+          "value": "Cushioned at small opening angles"
+        }
+      ]
+    },
+    {
+      "model": "E型",
+      "slug": "e-type-multifunction-hydraulic-hinge",
+      "name": "Multifunction Hydraulic Hinge",
+      "nameZh": "多功能液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Matt Black",
+        "Satin Gold",
+        "Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall size",
+          "value": "155 × 97mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø24mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Timber entrance doors and room doors"
+        }
+      ]
+    },
+    {
+      "model": "D型",
+      "slug": "d-type-no-mortise-hydraulic-hinge",
+      "name": "No-Mortise Multifunction Hydraulic Hinge",
+      "nameZh": "免开槽多功能液压合页",
+      "categoryPath": [
+        "floor-springs-and-pivots",
+        "hydraulic-hinges"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "White",
+        "Matt Black",
+        "Sand White"
+      ],
+      "specs": [
+        {
+          "label": "Overall size",
+          "value": "155 × 88mm"
+        },
+        {
+          "label": "Knuckle diameter",
+          "value": "Ø24mm"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Suitable for",
+          "value": "Timber entrance doors and room doors"
+        }
+      ]
+    },
+    {
+      "model": "A9-987 BL",
+      "slug": "a9-987-bl-concealed-door-lock",
+      "name": "Concealed Door Lock",
+      "nameZh": "隐形门锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "K55F"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5-A002",
+      "slug": "a5-a002-concealed-door-lock",
+      "name": "Concealed Door Lock",
+      "nameZh": "隐形门锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Matt Black",
+        "Antique Bronze",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Rose diameter",
+          "value": "Ø54mm"
+        },
+        {
+          "label": "Projection",
+          "value": "58mm"
+        },
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Lock case",
+          "value": "K58"
+        },
+        {
+          "label": "Backset",
+          "value": "58mm"
+        },
+        {
+          "label": "Face plate",
+          "value": "23 × 78mm"
+        },
+        {
+          "label": "Door thickness",
+          "value": "38-50mm"
+        }
+      ]
+    },
+    {
+      "model": "A5-A008",
+      "slug": "a5-a008-knob",
+      "name": "Knob",
+      "nameZh": "旋钮",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black"
+      ],
+      "specs": []
+    },
+    {
+      "model": "A5-A009",
+      "slug": "a5-a009-knob",
+      "name": "Knob",
+      "nameZh": "旋钮",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black"
+      ],
+      "specs": []
+    },
+    {
+      "model": "A9-A010",
+      "slug": "a9-a010-knob",
+      "name": "Knob",
+      "nameZh": "旋钮",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "finishes": [
+        "Brushed Black Nickel",
+        "Matt Black"
+      ],
+      "specs": []
+    },
+    {
+      "model": "A5-A012",
+      "slug": "a5-a012-knob",
+      "name": "Knob",
+      "nameZh": "旋钮",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "finishes": [
+        "Matt Black",
+        "Brushed Black Nickel",
+        "Brushed Light Gold",
+        "Brushed Nickel / Polished Chrome",
+        "Brushed Satin Nickel",
+        "Brushed Rose Gold"
+      ],
+      "specs": []
+    },
+    {
+      "model": "A5-A011",
+      "slug": "a5-a011-knob",
+      "name": "Knob",
+      "nameZh": "旋钮",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "finishes": [
+        "Brushed Black Nickel / Brown Leather",
+        "Matt Black / Brown Leather",
+        "Brushed Light Gold / Brown Leather",
+        "Polished Chrome / Brown Leather"
+      ],
+      "specs": []
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "sourceRoot": "public/images/products",
   "logo": "public/images/brand/hyde/hyde-logo-horizontal-black.svg",
-  "count": 5291,
+  "count": 5327,
   "files": [
     {
       "source": "public/images/products/001-panic-exit-device-trim-2.webp",
@@ -50175,6 +50175,330 @@
       "outputSha256": "9f0d7de8c5852b84c418e04f3c8264375db5d68d848c1939c4f8f8dd001088d1"
     },
     {
+      "source": "public/images/products/a5-a002-concealed-door-lock-2.webp",
+      "output": "public/images/products-hyde/a5-a002-concealed-door-lock-2.webp",
+      "width": 848,
+      "height": 848,
+      "geometry": {
+        "margin": 21,
+        "logoWidth": 102,
+        "logoHeight": 26
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f8c81319d8aac8268e8c7d88ef7cae805fbdfab09c52b6caad9541aedd9ad1ff",
+      "outputSha256": "3bcb48501194a53d201605aa3282aeefdd75e5f1f0f296186b4d10c34d5a5cdc"
+    },
+    {
+      "source": "public/images/products/a5-a002-concealed-door-lock-3.webp",
+      "output": "public/images/products-hyde/a5-a002-concealed-door-lock-3.webp",
+      "width": 292,
+      "height": 292,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "3404b3946de30486323379b4c2c96f980696a415a4d7429a4fab6343b2a9b4b5",
+      "outputSha256": "98c11501eb7f5148ab0e5b51491360a9e1149c21da7085c60e2bd38e2de09f39"
+    },
+    {
+      "source": "public/images/products/a5-a002-concealed-door-lock-4.webp",
+      "output": "public/images/products-hyde/a5-a002-concealed-door-lock-4.webp",
+      "width": 292,
+      "height": 292,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9ad8d1de3eeedcc3f841cb7646480f0975d36011583d10e597f3242f820a3c45",
+      "outputSha256": "640fcecbc015538327de5a17418fbfe8fcdd39071804ec045aef5b273173b790"
+    },
+    {
+      "source": "public/images/products/a5-a002-concealed-door-lock.webp",
+      "output": "public/images/products-hyde/a5-a002-concealed-door-lock.webp",
+      "width": 799,
+      "height": 799,
+      "geometry": {
+        "margin": 20,
+        "logoWidth": 96,
+        "logoHeight": 24
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "79bdf0f97cbac45466e0fa703fad1b44f05a284bfc25e2b576e265382ce15fc7",
+      "outputSha256": "a6e8a01359652ed5aa5b42f8d596e0ae3c73399b833b5835a749227568b2ab88"
+    },
+    {
+      "source": "public/images/products/a5-a008-knob-2.webp",
+      "output": "public/images/products-hyde/a5-a008-knob-2.webp",
+      "width": 323,
+      "height": 323,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5d814bc1b8cbd0281cf5bdcf7f680c16f26fd5d3b684f6389114b455af670e8c",
+      "outputSha256": "a53a5abd532a413a72c5feee5b6741be24a367cad7ffb8121dd7610f816a148e"
+    },
+    {
+      "source": "public/images/products/a5-a008-knob.webp",
+      "output": "public/images/products-hyde/a5-a008-knob.webp",
+      "width": 326,
+      "height": 326,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e5bfa278a652dd3f8dcb7434e25dc868b3d6f00074a9605f3a62cfe6a18eb1e4",
+      "outputSha256": "9d4f92f2760f07b0352003c22b231a6e3ecee0dbee0449cad2992da07faa6f79"
+    },
+    {
+      "source": "public/images/products/a5-a009-knob-2.webp",
+      "output": "public/images/products-hyde/a5-a009-knob-2.webp",
+      "width": 310,
+      "height": 310,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "80c248df2bc91ec1057bbda72fa62851df2955812413381a2f1ab22900c0fbec",
+      "outputSha256": "1e8b06cc83a2a0b6b36c2e9a28f5ef7ecab61f2a23e3f70f39d6e36a5eda8968"
+    },
+    {
+      "source": "public/images/products/a5-a009-knob.webp",
+      "output": "public/images/products-hyde/a5-a009-knob.webp",
+      "width": 323,
+      "height": 323,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6bf2b4955661fa209ec2b108085116c102d60735742830f898c9bd34d438ace9",
+      "outputSha256": "63769c565acbf396738ce489a8a86461bdeb0c5d7eddbd5d02b30ceceecd0deb"
+    },
+    {
+      "source": "public/images/products/a5-a011-knob-2.webp",
+      "output": "public/images/products-hyde/a5-a011-knob-2.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7f5b1903d3056966ad8f9d7b09ad824b416d7c60d84af7ad32d0dac442d8d02b",
+      "outputSha256": "4812e67e3d408b822ae9e60d1b19e0738593aa56cd2f082c3b80c380ad3f05c0"
+    },
+    {
+      "source": "public/images/products/a5-a011-knob-3.webp",
+      "output": "public/images/products-hyde/a5-a011-knob-3.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "fd8f61bc71630e34c70b3bd9abe3ca6dfacfd1e56202e46c37f71256caeac85b",
+      "outputSha256": "3d54f6ff98b12d8ece5b1f5a2b1f5faaf811689f77e4c65db46761c0b8c33b27"
+    },
+    {
+      "source": "public/images/products/a5-a011-knob-4.webp",
+      "output": "public/images/products-hyde/a5-a011-knob-4.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "bf6a09c5ef281913bc4c5632d2aeb4452ea255c2379e1b01ff42b3ef74f2be57",
+      "outputSha256": "2d115563894fd5ffd2f4ac6a17a52c215c14e8f24721505ae844960b1c014646"
+    },
+    {
+      "source": "public/images/products/a5-a011-knob.webp",
+      "output": "public/images/products-hyde/a5-a011-knob.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f331a240e78080ff2855b0f07fb1e6211310ef0b94ec258cf09dc422c5fd7f43",
+      "outputSha256": "c3542544fce627bc9030d87210ff6b4c23cbdd7f0341d7a18cdce779c6ea4ecb"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob-2.webp",
+      "output": "public/images/products-hyde/a5-a012-knob-2.webp",
+      "width": 380,
+      "height": 380,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "51cfcc9fbc427ca0946df3cc52f57cfab0d78fb56f8e583df16fb11fee0c2373",
+      "outputSha256": "9474ca6b44819949b052d5715404d1e2f067b1450a9ffeb5d97ef1c085643c6d"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob-3.webp",
+      "output": "public/images/products-hyde/a5-a012-knob-3.webp",
+      "width": 380,
+      "height": 380,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "96cf0eed3cd9911e43bdc233622120c27fe429afcf82e11052e2dd8237dde36a",
+      "outputSha256": "9711d99f221504f57b5a6a9b962968be07ae14d61490eb9c2dd9c154ed48e7e7"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob-4.webp",
+      "output": "public/images/products-hyde/a5-a012-knob-4.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "4b2f3d42176cdc02e6357789c28875566c9391f13bb322af58c7d4d1265e3d7b",
+      "outputSha256": "8c1b2d13e94af676475795b66dd22cbf4ae4d08c863918ea75490e19fec340b2"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob-5.webp",
+      "output": "public/images/products-hyde/a5-a012-knob-5.webp",
+      "width": 378,
+      "height": 378,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "90c2e0ecfbdeb04b1cc2f30b69311e81fac58432c6181042a2926c4ebbb8bfae",
+      "outputSha256": "fa8b84ba3a4c853af7901220dcc1e7b9de3079fa53859ef31f604d3af1fa8078"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob-6.webp",
+      "output": "public/images/products-hyde/a5-a012-knob-6.webp",
+      "width": 380,
+      "height": 380,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "9005b4c115fa5dd877b3bd24dc97591c6743ff395df361d2edbac1aff4d4ae31",
+      "outputSha256": "47552af10f7c746d9529aab59ea9edf5ede3ea9a170a904673d4c6eb4bcbb973"
+    },
+    {
+      "source": "public/images/products/a5-a012-knob.webp",
+      "output": "public/images/products-hyde/a5-a012-knob.webp",
+      "width": 377,
+      "height": 377,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a5fe485dfb673435da89fb583930c22c145fea9ffdb3a904e74a8a45b4a8ba8a",
+      "outputSha256": "7ef1b0513d2cfcee86280e1d044bee7a1a4ab13af354c3e8b008842602992e1e"
+    },
+    {
       "source": "public/images/products/a5r-381-lever-handle-2.webp",
       "output": "public/images/products-hyde/a5r-381-lever-handle-2.webp",
       "width": 385,
@@ -51831,6 +52155,60 @@
       "outputSha256": "74e773c3dccb36e9210ac5746ba40fa01a336f4f68d2528777aefa99dba6baf0"
     },
     {
+      "source": "public/images/products/a9-987-bl-concealed-door-lock-2.webp",
+      "output": "public/images/products-hyde/a9-987-bl-concealed-door-lock-2.webp",
+      "width": 761,
+      "height": 761,
+      "geometry": {
+        "margin": 19,
+        "logoWidth": 91,
+        "logoHeight": 23
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f9c980f0ad3181ac0e7a8758b88081ef7365a4f5d0553e20eb30fcc1065af0f2",
+      "outputSha256": "df0da01556c63505fe456bfc64e3cedee7e2cbc1c5005aabb7a4045079ea90eb"
+    },
+    {
+      "source": "public/images/products/a9-987-bl-concealed-door-lock-3.webp",
+      "output": "public/images/products-hyde/a9-987-bl-concealed-door-lock-3.webp",
+      "width": 441,
+      "height": 441,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "7f1fd0227d7cc851f0ef86b2a9b379af4e259ccfe66cfbb72af260ab503a664a",
+      "outputSha256": "966cc1c28d3483006ead16fdc76a21be2d4fd45e73cc768f540818d11cbe25f2"
+    },
+    {
+      "source": "public/images/products/a9-987-bl-concealed-door-lock.webp",
+      "output": "public/images/products-hyde/a9-987-bl-concealed-door-lock.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "c23d9c44b9629663746480f77616bc5c3dc180ff5babf6c982b2ac25439f1d84",
+      "outputSha256": "c03cbfc3fa87f582e913ab4c4fb8faac129397dfe8644a1d986489fb4cfdce53"
+    },
+    {
       "source": "public/images/products/a9-987-lever-handle-2.webp",
       "output": "public/images/products-hyde/a9-987-lever-handle-2.webp",
       "width": 384,
@@ -51937,6 +52315,42 @@
       },
       "sourceSha256": "96a783f71c8469cbe28efef191b80a337b5993344595ee723b4134eb9f58809d",
       "outputSha256": "f18f38a28ce88c5b3615478bc1ecca6da3f8369bfd82a13fd893ce6791fe7b74"
+    },
+    {
+      "source": "public/images/products/a9-a010-knob-2.webp",
+      "output": "public/images/products-hyde/a9-a010-knob-2.webp",
+      "width": 304,
+      "height": 304,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "ec116c29d4cc926195961cd422fed92ec661bcb4affbc5dea7c8202f87950960",
+      "outputSha256": "82c6957999ed3f1d241cd1e60bd53a60fb6031b382c5425940f5d2998f8782f5"
+    },
+    {
+      "source": "public/images/products/a9-a010-knob.webp",
+      "output": "public/images/products-hyde/a9-a010-knob.webp",
+      "width": 304,
+      "height": 304,
+      "geometry": {
+        "margin": 10,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "5f1c5c451a258a44cffae8691e9122752518cec1b51b18e8d82345a2783a45e9",
+      "outputSha256": "7142e619e3c9d82ad496785be290afc2b06c9dad0862fafe2292994ad78ea267"
     },
     {
       "source": "public/images/products/aah024-brass-and-steel-hinges-2.webp",
@@ -61123,6 +61537,78 @@
       "outputSha256": "1023283559d742e282ad02d9e1c6bd0bcee5e6caaa79cf7345ac0c4d72d30962"
     },
     {
+      "source": "public/images/products/d-type-no-mortise-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/d-type-no-mortise-hydraulic-hinge-2.webp",
+      "width": 593,
+      "height": 593,
+      "geometry": {
+        "margin": 15,
+        "logoWidth": 71,
+        "logoHeight": 18
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "56a5bed2069100611e05ebd97599aea7f80d8574a90535ddbf4efc6ede970b25",
+      "outputSha256": "ddb26bbd93797456d665af8bb9e97c73539ad0747d703acc8985020db9989794"
+    },
+    {
+      "source": "public/images/products/d-type-no-mortise-hydraulic-hinge-3.webp",
+      "output": "public/images/products-hyde/d-type-no-mortise-hydraulic-hinge-3.webp",
+      "width": 455,
+      "height": 455,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "e75dec65673c0ff4fb2b5a6107328912db70e5674a12a259bc7b81087de49f7d",
+      "outputSha256": "909aadede2304c9e9eb96c6fe519471e190effbc98eac91f577d8baf90125622"
+    },
+    {
+      "source": "public/images/products/d-type-no-mortise-hydraulic-hinge-4.webp",
+      "output": "public/images/products-hyde/d-type-no-mortise-hydraulic-hinge-4.webp",
+      "width": 455,
+      "height": 455,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "68a3f4894037d9b3bf73709aec01f0357eddbb9d4518727f2176e95c9709982c",
+      "outputSha256": "84147190751249b0cce531795b67fb5c8a152e2eb31ebd5558e7a7409f8367e3"
+    },
+    {
+      "source": "public/images/products/d-type-no-mortise-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/d-type-no-mortise-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "cf066695f2636c5b47028bb02e048bd46354bf71d934c3ae3e6e43b4a351ac2b",
+      "outputSha256": "fcf091402af0d74dc1c34b2a1b03b7059af46a934a2cdd06d97b8d42e9318735"
+    },
+    {
       "source": "public/images/products/d01-ab-deadbolts-2.webp",
       "output": "public/images/products-hyde/d01-ab-deadbolts-2.webp",
       "width": 1000,
@@ -65329,6 +65815,96 @@
       "outputSha256": "31f236a801ff95a6d7f933cf0de57a3e8f4109652d98000ef91e897711c1201e"
     },
     {
+      "source": "public/images/products/e-type-multifunction-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/e-type-multifunction-hydraulic-hinge-2.webp",
+      "width": 596,
+      "height": 596,
+      "geometry": {
+        "margin": 15,
+        "logoWidth": 72,
+        "logoHeight": 18
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "b0cd0482e1c0b3916cc26775da24fdd227cbc984c38b2c04e163b8c2b09892d9",
+      "outputSha256": "f627f7b2d2ce03a434d063ce9eb2d712bc7ec6bb2ac9d060916e28eb71d828f2"
+    },
+    {
+      "source": "public/images/products/e-type-multifunction-hydraulic-hinge-3.webp",
+      "output": "public/images/products-hyde/e-type-multifunction-hydraulic-hinge-3.webp",
+      "width": 456,
+      "height": 456,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "2b41fe2e396ade3eed28108dc817fe7e87995e69cf46f54a46704edc69bbc5ab",
+      "outputSha256": "1e892a0627127a119713122e6febf44c3e3870e7a8add0e930c6e5c2deccaa4f"
+    },
+    {
+      "source": "public/images/products/e-type-multifunction-hydraulic-hinge-4.webp",
+      "output": "public/images/products-hyde/e-type-multifunction-hydraulic-hinge-4.webp",
+      "width": 455,
+      "height": 455,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "445a1f0938baecd15c41f29a3fd32e5ed4eaeb560b29120c7d65c1602c947b15",
+      "outputSha256": "cb670ce4d26e6d4991f2ced2217fdc47814546849b148e60ed24ba7412fb3d33"
+    },
+    {
+      "source": "public/images/products/e-type-multifunction-hydraulic-hinge-5.webp",
+      "output": "public/images/products-hyde/e-type-multifunction-hydraulic-hinge-5.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "6e1d73afb3b630436b5d9ca85b630bf17fc9868c8b67d95623b3f03025964ef3",
+      "outputSha256": "3835f7f9f159e6f9ad9fef960aadf9ee70acd1ed2eaae8980dd79cceeb7274d6"
+    },
+    {
+      "source": "public/images/products/e-type-multifunction-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/e-type-multifunction-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "efdd78ec3bf65fa45a7e25076c5c3d620c52b23b3a83e0dc0f4d81f9d3cc6353",
+      "outputSha256": "af9a17080c1d09abcade4348e5ed0090a0f7c3475fa656187777a4d26291771b"
+    },
+    {
       "source": "public/images/products/eda-06d-concealed-hinge-2.webp",
       "output": "public/images/products-hyde/eda-06d-concealed-hinge-2.webp",
       "width": 1122,
@@ -66795,6 +67371,78 @@
       },
       "sourceSha256": "3e90f6ff46cdf6449df9e8595fe9b8099d0454a08c5569ec6762d998896f6e8c",
       "outputSha256": "6f18ae2f02ab3a59dfe977e70b314404fe86be61172f95e133d42ea4612262fd"
+    },
+    {
+      "source": "public/images/products/ek-type-multifunction-hydraulic-hinge-2.webp",
+      "output": "public/images/products-hyde/ek-type-multifunction-hydraulic-hinge-2.webp",
+      "width": 585,
+      "height": 585,
+      "geometry": {
+        "margin": 15,
+        "logoWidth": 70,
+        "logoHeight": 18
+      },
+      "placement": {
+        "corner": "top-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "1a13abde8adbcff40da8a10ac990ae25f8dd5c059fe319ef4ed782e1bbcb574c",
+      "outputSha256": "11a76da3a6f95bfdc2ca50f8d2a6fff629c796a92474627d56e0af198ef10142"
+    },
+    {
+      "source": "public/images/products/ek-type-multifunction-hydraulic-hinge-3.webp",
+      "output": "public/images/products-hyde/ek-type-multifunction-hydraulic-hinge-3.webp",
+      "width": 456,
+      "height": 456,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "top-right",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "a0e3e8e3084d40c7dbead8a3f6b9b5a07761d6f2d432143efdcb4e89db8e9137",
+      "outputSha256": "bddcc98750f5e09050d59640f7bf3c61cb6dc2963c167af376020bda2ba06938"
+    },
+    {
+      "source": "public/images/products/ek-type-multifunction-hydraulic-hinge-4.webp",
+      "output": "public/images/products-hyde/ek-type-multifunction-hydraulic-hinge-4.webp",
+      "width": 455,
+      "height": 455,
+      "geometry": {
+        "margin": 11,
+        "logoWidth": 64,
+        "logoHeight": 16
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "8130d0875dd9d3ef4c495deb962c6530d751aaa10a8825949fafdfc1b55072bc",
+      "outputSha256": "8a539902a8ec471a9dab86e3b5cec43c77fd79e0f68456d92b82555802734485"
+    },
+    {
+      "source": "public/images/products/ek-type-multifunction-hydraulic-hinge.webp",
+      "output": "public/images/products-hyde/ek-type-multifunction-hydraulic-hinge.webp",
+      "width": 1000,
+      "height": 1000,
+      "geometry": {
+        "margin": 25,
+        "logoWidth": 120,
+        "logoHeight": 30
+      },
+      "placement": {
+        "corner": "bottom-left",
+        "strategy": "adaptive-mark",
+        "variant": "black"
+      },
+      "sourceSha256": "f4f65303e5c289d398d52e1a06188f816dc8178dff1b8d864f5555f4fbb24ab4",
+      "outputSha256": "b763055d999398c867c31d15c2fe95f6e458e760f2faf899f360b2d39a6a2d8d"
     },
     {
       "source": "public/images/products/ept01-door-power-transfer-devices-2.webp",
