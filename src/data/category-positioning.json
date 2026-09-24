@@ -100,7 +100,7 @@
     "useEs": "puertas de dos hojas y hojas altas",
     "usePt": "portas de duas folhas e folhas altas",
     "pitch": "Latches the leaf at more than one point, for double doors and leaves too tall for a single latch.",
-    "pitchEs": "Cierra la hoja en más de un punto, para puertas dobles y hojas demasiado altas para un solo picaporte.",
+    "pitchEs": "Cierra la hoja en más de un punto, para puertas dobles y hojas demasiado altas para un solo pestillo.",
     "pitchPt": "Trava a folha em mais de um ponto, para portas duplas e folhas altas demais para uma só lingueta."
   },
   "panic-exit-devices/fire-door": {
@@ -260,7 +260,7 @@
     "useEs": "puertas interiores y de paso",
     "usePt": "portas internas e de passagem",
     "pitch": "The bolt that actually holds the door shut. The bevel direction decides which way the leaf closes.",
-    "pitchEs": "El picaporte que realmente sujeta la puerta. El bisel decide en qué sentido cierra la hoja.",
+    "pitchEs": "El pestillo que realmente sujeta la puerta. El bisel decide en qué sentido cierra la hoja.",
     "pitchPt": "A lingueta que realmente segura a porta. O chanfro decide em que sentido a folha fecha."
   },
   "hardware-accessories/security-door-guards": {
@@ -316,7 +316,7 @@
     "useEs": "puertas correderas y empotradas",
     "usePt": "portas de correr e embutidas",
     "pitch": "A hook bolt, because a sliding leaf gives a straight latch nothing to catch.",
-    "pitchEs": "Cerrojo de gancho, porque una hoja corrediza no le da a un picaporte recto dónde agarrar.",
+    "pitchEs": "Cerrojo de gancho, porque una hoja corrediza no le da a un pestillo recto dónde agarrar.",
     "pitchPt": "Ferrolho de gancho, porque uma folha de correr não dá a uma lingueta reta onde agarrar."
   }
 }
