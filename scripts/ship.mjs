@@ -17,7 +17,7 @@
  * 退出码：0 已推送 · 75 未推送已记录（去做别的）· 1 其他错误（rebase 冲突等，需要人看）
  */
 import { spawnSync } from "node:child_process";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const PENDING = "docs/collaboration/PUSH-PENDING.md";
 const TIMEOUT = 5 * 60 * 1000;
@@ -35,6 +35,42 @@ function git(args, { timeout = TIMEOUT } = {}) {
   return { ok: r.status === 0 && !timedOut, out, timedOut };
 }
 const now = () => new Date().toLocaleString("zh-CN", { hour12: false });
+
+/*
+  Two sessions that each ran ship both committed a new SHIPLOG.md, so every concurrent push
+  conflicted on it — and the side merge reported that as "真冲突，需要人看" (2026-09-24, twice
+  in one hour). It is not a real conflict: SHIPLOG is generated from git history, and
+  PUSH-PENDING is append-only. Regenerate the first, keep both sides' lines of the second,
+  and conclude the merge. Any OTHER conflicted file still stops the run.
+*/
+const SHIPLOG = "docs/collaboration/SHIPLOG.md";
+function resolveLogConflicts(cwd) {
+  const run = (args) => spawnSync("git", args, { cwd, encoding: "utf8", timeout: TIMEOUT });
+  const conflicted = (run(["diff", "--name-only", "--diff-filter=U"]).stdout ?? "").split("\n").filter(Boolean);
+  if (!conflicted.length || conflicted.some((f) => f !== SHIPLOG && f !== PENDING)) return false;
+  if (conflicted.includes(PENDING)) {
+    const stage = (n) => run(["show", `:${n}:${PENDING}`]).stdout ?? "";
+    const [base, ours, theirs] = [1, 2, 3].map(stage);
+    const tmp = `${cwd}/.git-ship-union-`;
+    writeFileSync(`${tmp}o`, ours);
+    writeFileSync(`${tmp}b`, base);
+    writeFileSync(`${tmp}t`, theirs);
+    const u = spawnSync("git", ["merge-file", "-p", "--union", `${tmp}o`, `${tmp}b`, `${tmp}t`], { encoding: "utf8" });
+    writeFileSync(`${cwd}/${PENDING}`, u.stdout ?? ours);
+    for (const s of "obt") rmSync(`${tmp}${s}`, { force: true });
+  }
+  if (conflicted.includes(SHIPLOG)) {
+    run(["checkout", "--theirs", "--", SHIPLOG]);
+    // Regenerated again after the merge commit exists, below; this only clears the markers.
+  }
+  run(["add", "--", ...conflicted]);
+  if (run(["commit", "--no-edit", "-q"]).status !== 0) return false;
+  const gen = spawnSync("node", ["scripts/build-shiplog.mjs"], { cwd, encoding: "utf8" });
+  if (gen.status === 0 && run(["diff", "--quiet", "--", SHIPLOG]).status !== 0) {
+    run(["commit", "-q", "-m", "shiplog: 更新上线存档", "--", SHIPLOG]);
+  }
+  return true;
+}
 
 /** Merge local HEAD onto origin/main in tmp/ship-merge (reused) and push from there. */
 function sideMerge() {
@@ -55,7 +91,7 @@ function sideMerge() {
     inWt(["clean", "-fdq"]);
   }
   const mg = inWt(["merge", "--no-edit", "-m", "合并本地提交（ship 旁路合并）", local]);
-  if (!mg.ok) {
+  if (!mg.ok && !resolveLogConflicts(WT)) {
     inWt(["merge", "--abort"]);
     return { ok: false, why: `真冲突，需要人看：${mg.out.split("\n").slice(-2).join(" / ")}` };
   }
@@ -79,7 +115,8 @@ if (dirty) {
 }
 
 // 2. 推送，最多三次
-const ahead = () => git(["rev-list", "--count", "@{u}..HEAD"]).out || "?";
+// origin/main, not @{u}: the side checkout is a detached HEAD and has no upstream.
+const ahead = () => git(["rev-list", "--count", "origin/main..HEAD"]).out || "?";
 let last = "";
 for (let attempt = 1; attempt <= 3; attempt++) {
   console.log(`→ 推送（第 ${attempt}/3 次，最多等 5 分钟）`);
@@ -102,7 +139,7 @@ for (let attempt = 1; attempt <= 3; attempt++) {
     const f = git(["fetch", "origin", "main"]);
     if (!f.ok) continue;
     const m = git(["merge", "--no-edit", "origin/main"]);
-    if (!m.ok) {
+    if (!m.ok && !resolveLogConflicts(".")) {
       git(["merge", "--abort"]);
       /*
         The shared tree cannot take the merge — typically someone is mid-rebuild of out/ and
