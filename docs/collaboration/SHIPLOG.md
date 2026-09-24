@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 569 次提交
+最近 30 天 · 共 570 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 16:22 | 中立 | 葡语摘要：cylindrical-knob-lock 材质按规格改正（原写不锈钢） | `1799803478d` |
 | 16:21 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e2901aac0b4` |
 | 16:19 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c66c53385ab` |
 | 16:19 | 中立 | 西语产品摘要：60 条一行字补成完整摘要，加守卫测试 | `9c4e477471c` |
