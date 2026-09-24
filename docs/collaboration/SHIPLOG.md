@@ -6,12 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 498 次提交
+最近 30 天 · 共 502 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:44 | 中立 | 英文产品摘要：6082 SN、BH05–BH07 去掉双句号和省略号，按规格行重写 | `978931910b0` |
+| 08:39 | 中立 | NOW.md：HYDE 发布 32871f5eb0c 上线，发布棒交还工程会话；葡语短摘要完成 | `492d8849a7c` |
+| 08:35 | 中立 | 033 葡语短摘要去掉双句号；PUSH-PENDING：HYDE 发布 32871f5eb0c 已推送 | `cac5bfbfc41` |
+| 08:17 | 中立 | 产品：补齐 198 条葡语短摘要（summaryPt） | `39f5ae07ba2` |
 | 08:36 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `eac9c99865c` |
 | 08:35 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `39ac0671717` |
 | 08:34 | HYDE | 西葡改写第 1 批（二）：推杠文章、方轴指南；三语删去“持有自有测试文件”的不实说法 | `138e9d41196` |
