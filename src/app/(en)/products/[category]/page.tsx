@@ -60,8 +60,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const withRole = `${category.name} — Manufacturer & Supplier`;
   const withManufacturer = `${category.name} — Manufacturer`;
   const titleBudget = 62 - " | Canton Hyland".length;
-  const title =
-    withRole.length <= titleBudget
+  // A written seoTitle wins (content/categories.json): the generic role suffix carries no
+  // long-tail term, and these pages were being seen in search and not clicked.
+  const title = category.seoTitle
+    ? category.seoTitle
+    : withRole.length <= titleBudget
       ? withRole
       : withManufacturer.length <= titleBudget
         ? withManufacturer

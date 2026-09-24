@@ -582,6 +582,13 @@ export interface Category {
   summaryPt?: string;
   /** Short description for the category landing page. */
   summary: string;
+  /**
+   * English search title for the landing page, without the brand suffix, ≤60 characters.
+   * Written from the query corpus (buyer's own noun + a true long-tail qualifier) for pages
+   * Search Console shows being seen and not clicked. Absent → the generic
+   * "<name>, Manufacturer & Supplier" form. Plan 2026-09-24 §7.
+   */
+  seoTitle?: string;
   /** Lead image for the category card. */
   image: ImageRef;
   /** Sub-categories. Absent or empty means this is a leaf that holds products. */
