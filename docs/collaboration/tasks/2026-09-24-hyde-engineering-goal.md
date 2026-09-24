@@ -17,7 +17,7 @@
 | 9 | 多语种准备：RTL 扫描脚本，数出全站物理方向类名（阿拉伯语工程量） | 09-24 完成（89 处、21 个文件，docs/research/RTL-READINESS.md，可重跑） |
 | 10 | 查询语料脚本加国家筛选，单列德国、法国、沙特、阿联酋、土耳其的查询 | 待做 |
 | 11 | 发给 Hyde 文案：finishes / glossary / model-lookup / documents 的 H1 不含搜索词，给出建议写法 | 待做 |
-| 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 等待（规则与守卫已写好并有单元测试；剩 2 句产品卖点冲突 hy008、s564 由 Hyde 文案手改，改完跑 --write） |
+| 12 | 同句出现 pestillo/cerrojo（葡语 trinco/lingueta）就报错的规则 + picaporte → pestillo | 09-24 完成（规则启用，13 处自动转换，0 冲突；葡语见 #24） |
 | 13 | 10 个产品名字太长放不下长尾词 | 等待（改名归文案/规格会话） |
 | 14 | 服务器装跳转规则（ANSI 网址 301） | 待甲方（手册 ③） |
 | 15 | GA4 登记自定义维度 | 待甲方（手册 ②） |

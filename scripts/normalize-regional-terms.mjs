@@ -132,9 +132,9 @@ const ES_RULES = [
   */
   word("picaporte de resbalón", "pestillo"),
   word("resbalón", "pestillo"),
-  // picaporteRule() — switched on once Hyde 文案 has rewritten the two feature sentences (hy008, s564)
-  // that name a latch and a deadbolt together; then --write converts the rest (≈96 featuresEs).
-  // picaporteRule(),
+  // picaporteRule(): switched on 2026-09-24 after Hyde 文案 rewrote the two feature sentences (hy008, s564)
+  // that named a latch and a deadbolt together.
+  picaporteRule(),
   word("albercas", "piscinas"),
   word("alberca", "piscina"),
   word("aseos", "baños"),
