@@ -28,7 +28,7 @@ export const hero1: HeroModuleContent = {
     label: "Warm timber and limestone residential threshold opening to a planted courtyard",
   },
   title: "Lever Handles",
-  body: "Tubular and mortise lever sets in stainless steel, brass and matt-black finishes for residential and light commercial doors.",
+  body: "Tubular and mortise lever sets in stainless steel, brass and matte black, for homes and light commercial doors.",
   linkLabel: "View lever handles",
   href: "/products/lever-handles",
 };
@@ -49,7 +49,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Representative commercial fire-exit doors with clearly visible panic push bars",
       },
       title: "Panic Exit Devices",
-      body: "Push-bar hardware that releases the latch in one motion, for commercial escape and fire doors.",
+      body: "One push, and the door opens. Push bars, outside trims and lock cases for escape and fire doors, specified as a set.",
       linkLabel: "Explore exit devices",
       href: "/products/panic-exit-devices",
     },
@@ -62,7 +62,7 @@ export const heroCarousel: HeroCarouselContent = {
         label: "Public-building corridor with glazed partitions and fire-egress doors",
       },
       title: "Mortise Lock Cases",
-      body: "Lock bodies in multiple backset, centre-distance and bolt configurations for commercial door schedules.",
+      body: "Lock cases by backset, center distance and bolt, written down to the millimeter so the lever, cylinder and strike you order around them fit the first time.",
       linkLabel: "View lock cases",
       href: "/products/lock-cases",
     },
@@ -106,14 +106,14 @@ export const hero2: HeroModuleContent = {
   },
   title: "Panic Exit Devices",
   // 4 lines at the 332px caption column, matching the measured module height
-  body: "Our flagship safety-hardware range for fast release on commercial and emergency escape doors.",
-  linkLabel: "Explore the flagship range",
+  body: "Our flagship range, and the one we know best: push bars for escape and fire doors, from single-point rim devices to multi-point sets for double doors.",
+  linkLabel: "See the exit devices",
   href: "/products/panic-exit-devices",
 };
 
 export const text1: TextModuleContent = {
-  heading: "Projects – Where Canton Hyland Takes Shape",
-  body: "Our panic devices, lock cases, lever sets and floor springs are specified in commercial, institutional and residential buildings across more than thirty export markets, backed by master key and construction key systems.",
+  heading: "Where our hardware is fitted",
+  body: "Our panic devices, lock cases and lever sets are fitted in commercial, institutional and residential buildings in the markets we export to, often under our customers' own names, with master-key and construction-key systems planned for each building.",
   linkLabel: "Overview",
   href: "/projects",
 };
@@ -164,7 +164,7 @@ export const hero4: HeroModuleContent = {
     label: "Four-bolt mortise lock case with strike plate and strike box",
   },
   title: "Materials + Engineering",
-  body: "Finish coordination, master-key planning and export documentation support commercial and residential hardware schedules across international markets.",
+  body: "Finishes matched across a whole door schedule, master-key systems planned before the first cylinder is cut, and export documents ready when the container is.",
   linkLabel: "How we work",
   href: "/company",
 };
@@ -172,8 +172,8 @@ export const hero4: HeroModuleContent = {
 export const text2: TextModuleContent = {
   heading: "Service + Downloads",
   // 2 lines at the 680px copy column, matching the measured module height
-  body: "We welcome OEM partnerships and develop custom solutions to specific client requirements, with technical support from our own engineering team.",
-  linkLabel: "Our Services at a Glance",
+  body: "New tooling to your drawing or sample, and your name on the part. If a design you bring us is covered by someone else's patent, our engineers rework the parts or the appearance until it no longer conflicts with that patent.",
+  linkLabel: "See what we develop",
   href: "/downloads",
 };
 

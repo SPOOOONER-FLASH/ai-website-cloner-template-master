@@ -79,9 +79,7 @@ export default function LocalizadorDeProdutosPage() {
               <FinderModeSwitch active="catalogue" locale="pt" />
             </div>
             <p className="mt-24 max-w-[68ch] text-c1 text-ink-secondary">
-              Reduza o catálogo pelos atributos que aparecem numa planilha de ferragens. Os
-              filtros se combinam, as contagens se atualizam na hora, e a barra de endereços
-              guarda a sua seleção para você poder enviá-la a um colega.
+              Pesquise do jeito que você já monta uma planilha de portas: por categoria, material, acabamento e tipo de porta. A sua seleção fica no link, então um colega abre exatamente a mesma lista.
             </p>
             {/*
               Honest scope note, same as the English route: most records carry no dimensional
@@ -90,9 +88,7 @@ export default function LocalizadorDeProdutosPage() {
               data rather than from a hard-coded list.
             */}
             <p className="mt-12 max-w-[68ch] text-c2 text-ink-tertiary">
-              Mostrando {publishedProducts.length} produtos publicados. Os filtros dimensionais
-              (distância ao eixo, entre centros, espessura de porta) chegam com o catálogo
-              técnico completo.
+              Mostrando {publishedProducts.length} produtos publicados. Os filtros por distância ao eixo, entre-eixos e espessura de porta chegam com o catálogo técnico completo; até lá, cada ficha mostra as medidas que tem.
             </p>
           </div>
           <div className="col-span-full xl:col-span-9 xl:col-start-16">
