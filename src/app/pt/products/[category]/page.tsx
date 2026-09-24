@@ -64,11 +64,14 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     the title alone. Seven category titles were over budget before this. Names that
     overflow with the full qualifier fall back to the short "— Fabricante" form.
   */
-  const qualified = `${name} — Fabricante y proveedor`;
-  const qualifiedShort = `${name} — Fabricante`;
+  // Was the SPANISH suffix "Fabricante y proveedor" on every Portuguese category title until
+  // 2026-09-24 (seo:graph found it as a duplicate title against /es/). No dash either (plan 09-24).
+  const qualified = `${name}, Fabricante e fornecedor`;
+  const qualifiedShort = `${name}, Fabricante`;
   const titleBudget = 62 - " | Canton Hyland".length;
-  const title =
-    qualified.length <= titleBudget
+  const title = category.seoTitlePt
+    ? category.seoTitlePt
+    : qualified.length <= titleBudget
       ? qualified
       : qualifiedShort.length <= titleBudget
         ? qualifiedShort

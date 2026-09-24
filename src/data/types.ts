@@ -589,6 +589,8 @@ export interface Category {
    * "<name>, Manufacturer & Supplier" form. Plan 2026-09-24 §7.
    */
   seoTitle?: string;
+  seoTitleEs?: string;
+  seoTitlePt?: string;
   /** Lead image for the category card. */
   image: ImageRef;
   /** Sub-categories. Absent or empty means this is a leaf that holds products. */
