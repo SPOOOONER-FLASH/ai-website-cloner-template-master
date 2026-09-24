@@ -46,8 +46,8 @@
     "What does not make a drawing authoritative: being a screenshot, being a photograph of a printed drawing, or arriving with no revision number. A drawing with no revision cannot be superseded, which means nobody can tell whether it is the current one.",
     "## Our own coverage, as a number",
     "Suppliers describe drawing availability in adjectives. Here it is in figures, counted from what is actually on the site.",
-    "| What | Count |\n| --- | --- |\n| HYDE catalog records | 590 |\n| Visible product listings with photographs | 523 |\n| Dimensioned SVG assets for HYDE models | 84 |\n| Those assets on visible listings | 72 |\n| HYDE door-preparation SVGs | 0 |\n| Native editable CAD (DWG source) | none |\n| BIM / Revit families | none |",
-    "The 84 dimensioned SVG assets map to HYDE model records, but only 72 appear on the 523 visible product listings: roughly 14 per cent of what a buyer can browse. The other 12 assets belong to records without a listed product photo. For most visible models, the specification table is what exists and a drawing must be requested or produced.",
+    "| What | Count |\n| --- | --- |\n| HYDE catalog records | 588 |\n| Visible product listings with photographs | 521 |\n| Dimensioned SVG assets for HYDE models | 84 |\n| Those assets on visible listings | 72 |\n| HYDE door-preparation SVGs | 0 |\n| Native editable CAD (DWG source) | none |\n| BIM / Revit families | none |",
+    "The 84 dimensioned SVG assets map to HYDE model records, but only 72 appear on the 521 visible product listings: roughly 14 per cent of what a buyer can browse. The other 12 assets belong to records without a listed product photo. For most visible models, the specification table is what exists and a drawing must be requested or produced.",
     "The published drawings are SVG, which means they scale to any size without going soft and print cleanly at A3 or A0. They are not CAD source and we do not describe them as CAD.",
     "## How to ask so that the first answer is the right one",
     "Name the question, not the format. \"I need to check the lever clears a 90mm return wall\" gets you a dimensioned elevation; \"send the CAD\" gets you whatever is nearest to hand.",
@@ -63,7 +63,7 @@
     "Both are the difference between a part that fits on paper and a part that fits. Neither takes more than a minute with the sample in your hand, and both are cheaper to establish now than to discover after a container of doors has been machined.",
     "## The gap we are not going to paper over",
     "Fourteen per cent coverage of visible listings is not a boast. It is the number, and the missing drawings have to be produced from the real part rather than generated from a description.",
-    "We would rather publish that figure than publish 590 plausible drawings. A drawing is the specification's second draft (the photograph is the first), and a drawn dimension that nobody measured is the same error as an invented figure in a spec table, with the added weight that somebody may cut a door to it."
+    "We would rather publish that figure than publish 588 plausible drawings. A drawing is the specification's second draft (the photograph is the first), and a drawn dimension that nobody measured is the same error as an invented figure in a spec table, with the added weight that somebody may cut a door to it."
   ],
   "faq": {
     "en": [
@@ -85,7 +85,7 @@
       },
       {
         "question": "How many of your products have drawings?",
-        "answer": "Across 590 HYDE records there are 84 dimensioned SVG assets, but only 72 appear on the 523 visible product listings, about 14 per cent. HYDE has 0 door-preparation SVGs. A dimensioned product view is not a door-cutting template; request the model-specific preparation dimensions before machining."
+        "answer": "Across 588 HYDE records there are 84 dimensioned SVG assets, but only 72 appear on the 521 visible product listings, about 14 per cent. HYDE has 0 door-preparation SVGs. A dimensioned product view is not a door-cutting template; request the model-specific preparation dimensions before machining."
       },
       {
         "question": "What makes a drawing authoritative?",
@@ -111,7 +111,7 @@
       },
       {
         "question": "¿Cuántos de sus productos tienen plano?",
-        "answer": "En 590 registros HYDE hay 84 archivos SVG acotados, pero solo 72 aparecen en las 523 fichas visibles, cerca del 14 por ciento. HYDE tiene 0 SVG de preparación de puerta. Un plano de producto acotado no es una plantilla de corte; pida las cotas de preparación del modelo antes de mecanizar."
+        "answer": "En 588 registros HYDE hay 84 archivos SVG acotados, pero solo 72 aparecen en las 521 fichas visibles, cerca del 14 por ciento. HYDE tiene 0 SVG de preparación de puerta. Un plano de producto acotado no es una plantilla de corte; pida las cotas de preparación del modelo antes de mecanizar."
       },
       {
         "question": "¿Qué hace que un plano tenga autoridad?",
@@ -137,7 +137,7 @@
       },
       {
         "question": "Quantos dos seus produtos têm desenho?",
-        "answer": "Em 590 registros HYDE há 84 arquivos SVG cotados, mas apenas 72 aparecem nas 523 fichas visíveis, cerca de 14 por cento. HYDE tem 0 SVG de preparação de porta. Um desenho cotado do produto não é um gabarito de corte; peça as cotas de preparação do modelo antes de usinar."
+        "answer": "Em 588 registros HYDE há 84 arquivos SVG cotados, mas apenas 72 aparecem nas 521 fichas visíveis, cerca de 14 por cento. HYDE tem 0 SVG de preparação de porta. Um desenho cotado do produto não é um gabarito de corte; peça as cotas de preparação do modelo antes de usinar."
       },
       {
         "question": "O que faz um desenho ter autoridade?",
@@ -173,8 +173,8 @@
     "Qué no da autoridad a un plano: ser una captura de pantalla, ser una foto de un plano impreso, o llegar sin número de revisión. Un plano sin revisión no puede ser sustituido, lo que significa que nadie sabe si es el vigente.",
     "## Nuestra propia cobertura, como número",
     "Los proveedores describen la disponibilidad de planos con adjetivos. Aquí va en cifras, contadas de lo que realmente hay en el sitio.",
-    "| Qué | Cantidad |\n| --- | --- |\n| Registros del catálogo HYDE | 590 |\n| Fichas visibles con fotografía | 523 |\n| Archivos SVG acotados de modelos HYDE | 84 |\n| De ellos, en fichas visibles | 72 |\n| SVG de preparación de puerta HYDE | 0 |\n| CAD nativo editable (fuente DWG) | ninguno |\n| Familias BIM / Revit | ninguna |",
-    "Los 84 archivos SVG acotados corresponden a registros de modelos HYDE, pero solo 72 aparecen en las 523 fichas de producto visibles: cerca del 14 por ciento de lo que un comprador puede consultar. Los otros 12 archivos pertenecen a registros sin foto de producto publicada. Para la mayoría de los modelos visibles existe la tabla de especificación, y el plano hay que pedirlo o producirlo.",
+    "| Qué | Cantidad |\n| --- | --- |\n| Registros del catálogo HYDE | 588 |\n| Fichas visibles con fotografía | 521 |\n| Archivos SVG acotados de modelos HYDE | 84 |\n| De ellos, en fichas visibles | 72 |\n| SVG de preparación de puerta HYDE | 0 |\n| CAD nativo editable (fuente DWG) | ninguno |\n| Familias BIM / Revit | ninguna |",
+    "Los 84 archivos SVG acotados corresponden a registros de modelos HYDE, pero solo 72 aparecen en las 521 fichas de producto visibles: cerca del 14 por ciento de lo que un comprador puede consultar. Los otros 12 archivos pertenecen a registros sin foto de producto publicada. Para la mayoría de los modelos visibles existe la tabla de especificación, y el plano hay que pedirlo o producirlo.",
     "Los planos publicados son SVG, lo que significa que escalan a cualquier tamaño sin emborronarse e imprimen limpios en A3 o A0. No son fuente CAD y no los describimos como CAD.",
     "## Cómo preguntar para que la primera respuesta sea la correcta",
     "Nombre la pregunta, no el formato. «Necesito comprobar que la manija salva un retorno de pared de 90 mm» le consigue un alzado acotado; «mándame el CAD» le consigue lo que hubiera más a mano.",
@@ -190,7 +190,7 @@
     "Las dos son la diferencia entre una pieza que encaja sobre el papel y una pieza que encaja.",
     "## El hueco que no vamos a tapar con palabras",
     "Un 14 por ciento de cobertura de las fichas visibles no es un mérito. Es la cifra, y los planos que faltan hay que producirlos a partir de la pieza real y no generarlos desde una descripción.",
-    "Preferimos publicar esa cifra antes que publicar 590 planos plausibles. Un plano es el segundo borrador de la especificación (el primero es la fotografía), y una cota dibujada que nadie midió es el mismo error que una cifra inventada en una tabla, con el agravante de que alguien puede cortar una puerta con ella."
+    "Preferimos publicar esa cifra antes que publicar 588 planos plausibles. Un plano es el segundo borrador de la especificación (el primero es la fotografía), y una cota dibujada que nadie midió es el mismo error que una cifra inventada en una tabla, con el agravante de que alguien puede cortar una puerta con ella."
   ],
   "titlePt": "Desenhos de ferragens 2026: PDF, DWG, STEP e BIM comparados, e o que uma fábrica pode realmente dar",
   "summaryPt": "Pedir \"o CAD\" a uma fábrica de ferragens produz um arquivo diferente em cada país, e metade das vezes o que chega não serve para o que você o queria. Esta página separa os três tipos de desenho que respondem a três perguntas diferentes, compara os formatos e para que serve cada um de verdade, explica por que muitas vezes não existe um sólido 3D nem numa fábrica competente, e indica a nossa própria cobertura de desenhos como número e não como promessa.",
@@ -220,8 +220,8 @@
     "O que não dá autoridade a um desenho: ser uma captura de tela, ser uma foto de um desenho impresso, ou chegar sem número de revisão. Um desenho sem revisão não pode ser substituído, o que significa que ninguém sabe se é o vigente.",
     "## A nossa própria cobertura, como número",
     "Os fornecedores descrevem a disponibilidade de desenhos com adjetivos. Aqui vai em cifras, contadas do que realmente está no site.",
-    "| O quê | Quantidade |\n| --- | --- |\n| Registros do catálogo HYDE | 590 |\n| Fichas visíveis com fotografia | 523 |\n| Arquivos SVG cotados de modelos HYDE | 84 |\n| Desses, em fichas visíveis | 72 |\n| SVG de preparação de porta HYDE | 0 |\n| CAD nativo editável (fonte DWG) | nenhum |\n| Famílias BIM / Revit | nenhuma |",
-    "Os 84 arquivos SVG cotados correspondem a registros de modelos HYDE, mas apenas 72 aparecem nas 523 fichas de produto visíveis: cerca de 14 por cento do que um comprador pode consultar. Os outros 12 arquivos pertencem a registros sem fotografia de produto publicada. Para a maioria dos modelos visíveis existe a tabela de especificação, e o desenho tem que ser pedido ou produzido.",
+    "| O quê | Quantidade |\n| --- | --- |\n| Registros do catálogo HYDE | 588 |\n| Fichas visíveis com fotografia | 521 |\n| Arquivos SVG cotados de modelos HYDE | 84 |\n| Desses, em fichas visíveis | 72 |\n| SVG de preparação de porta HYDE | 0 |\n| CAD nativo editável (fonte DWG) | nenhum |\n| Famílias BIM / Revit | nenhuma |",
+    "Os 84 arquivos SVG cotados correspondem a registros de modelos HYDE, mas apenas 72 aparecem nas 521 fichas de produto visíveis: cerca de 14 por cento do que um comprador pode consultar. Os outros 12 arquivos pertencem a registros sem fotografia de produto publicada. Para a maioria dos modelos visíveis existe a tabela de especificação, e o desenho tem que ser pedido ou produzido.",
     "Os desenhos publicados são SVG, o que significa que escalam a qualquer tamanho sem borrar e imprimem limpos em A3 ou A0. Não são fonte CAD e não os descrevemos como CAD.",
     "## Como perguntar para que a primeira resposta seja a certa",
     "Nomeie a pergunta, não o formato. \"Preciso de verificar se a maçaneta ultrapassa um retorno de parede de 90 mm\" consegue-lhe um alçado cotado; \"mandem o CAD\" consegue-lhe o que estiver mais à mão.",
@@ -237,6 +237,6 @@
     "As duas são a diferença entre uma peça que encaixa no papel e uma peça que encaixa.",
     "## A lacuna que não vamos tapar com palavras",
     "Uma cobertura de 14 por cento das fichas visíveis não é um mérito. É a cifra, e os desenhos que faltam têm que ser produzidos a partir da peça real e não gerados a partir de uma descrição.",
-    "Preferimos publicar essa cifra a publicar 590 desenhos plausíveis. Um desenho é o segundo rascunho da especificação (o primeiro é a fotografia), e uma cota desenhada que ninguém mediu é o mesmo erro que uma cifra inventada numa tabela, com o agravante de que alguém pode cortar uma porta com ela."
+    "Preferimos publicar essa cifra a publicar 588 desenhos plausíveis. Um desenho é o segundo rascunho da especificação (o primeiro é a fotografia), e uma cota desenhada que ninguém mediu é o mesmo erro que uma cifra inventada numa tabela, com o agravante de que alguém pode cortar uma porta com ela."
   ]
 }
