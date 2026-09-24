@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 15:20 | HYDE | 新文章双开防火门五金：三语 SEO 标题与描述定稿 | `bff160fe753` |
-| 15:19 | 中立 | 手册 ③ 补上 8827/8828 的 301；目标清单 #25 完成 | `b30c21cf8be` |
+| 15:24 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `636b2ef1a8d` |
+| 15:24 | HYDE | 文章 E：巴西 NBR 11742 / NBR 11785 与 AVCB 验收，葡语为主、三语 | `3c0a7239871` |
 | 15:18 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e3ac4f00a6c` |
 | 15:18 | HYDE | 四个参考页 H1：搜索词在前、原句保留，三语 | `1ba26f7875c` |
 | 15:15 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d94aecacfcd` |
