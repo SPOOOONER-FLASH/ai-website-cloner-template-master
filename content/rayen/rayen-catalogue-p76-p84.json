@@ -23,7 +23,13 @@
     "各卡的英文代号（SN/BL/PVD、SS/DAB/COF …）与中文表面处理一一对应，取中文：亚黑 = 哑黑；青古铜 = Antique Bronze（照片标 DAB、英文栏写 AB，都是它）；金拉丝 = Brushed Gold。",
     "D3701 有两张卡：D3701 SS（不锈钢拉丝，高 75、头 Ø34、座 Ø45，和 SD3702 SS、D3703 SS 同一张尺寸图）和 D3701 BL（哑黑/黑镍拉丝/黄古铜，高 79、头 Ø35）。尺寸不同，按图册标题分两页。",
     "p79–p80 页眉「锌合金无磁防风门吸」→ 类型写 Non-magnetic windproof floor stop（与已上架 271 同一写法）。D3891/D3890 只有照片和单格材质表面，没有尺寸图，规格只写材质。",
-    "p79 左半页整幅实景图是 D3891 BL 装在门边，作为 D3891 最后一张（9-scene）。"
+    "p79 左半页整幅实景图是 D3891 BL 装在门边，作为 D3891 最后一张（9-scene）。",
+    "",
+    "p81 左半页「地吸系列」D3770、D3867、D3769 SS、D3776 SS；右半页「装饰小五金」—— 图册没给具体品名，按已上架品类归：",
+    "D3869、D3870、D3759、D3760、D3871 → 安全门扣（Security Door Guard，同 F001–F006）；D3872 有 VACANT/ENGAGED 显示窗 → 指示器（Indicator）。",
+    "D3867 材质印的是铝合金（Aluminium Alloy），与同页其他锌合金/不锈钢不同，照印。PVD拉丝 = Brushed PVD，钢拉丝 = Brushed Steel（新增术语，照中文直译，不改写成「不锈钢拉丝」）。",
+    "右半页每款只有一张照片，拍的是标题代号那一种（SN/SS/CP）；其余表面只写在表面处理里，不配图。",
+    "尺寸只写图上意思明确的：D3870、D3871 图上数字多、各段所指不清，只放尺寸图不抄数；D3760 只写图上明写的「链长度=180」。"
   ],
   "sourceRoot": "C:/Users/johns/rayen-catalogue-p76-p84",
   "sites": [
@@ -59,6 +65,10 @@
     {
       "model": "p80 磁力插销大图（带钢丝绳的一组）",
       "reason": "在「Magnetic Pin Series」页眉下、D3873 上方，没有货号，和 D3873 的外形也不一样，不挂到任何型号。"
+    },
+    {
+      "model": "D3870 / D3871（尺寸）",
+      "reason": "图上数字多（92/70/51/42…、129.5/82.5/35.5…），各量哪一段判断不了，规格表不抄，尺寸图照上。"
     }
   ],
   "models": [
@@ -666,6 +676,247 @@
         {
           "label": "Dimensions",
           "value": "65 × 22mm"
+        }
+      ]
+    },
+    {
+      "model": "D3770",
+      "slug": "d3770-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Antique Bronze",
+        "Brushed PVD",
+        "Brushed Steel"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "56 × 55mm; fixing centres 38.5mm"
+        }
+      ]
+    },
+    {
+      "model": "D3867",
+      "slug": "d3867-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Aluminium Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze",
+        "Matt Black"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Aluminium Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Catch 20 × 59mm; base Ø57mm"
+        }
+      ]
+    },
+    {
+      "model": "D3769 SS",
+      "slug": "d3769-ss-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "45 × 160mm"
+        }
+      ]
+    },
+    {
+      "model": "D3776 SS",
+      "slug": "d3776-ss-door-stopper",
+      "name": "Door Stopper",
+      "nameZh": "门吸",
+      "categoryPath": [
+        "hardware-accessories",
+        "door-stoppers"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "45 × 160mm"
+        }
+      ]
+    },
+    {
+      "model": "D3869 SN",
+      "slug": "d3869-sn-security-door-guard",
+      "name": "Security Door Guard",
+      "nameZh": "安全门扣",
+      "categoryPath": [
+        "hardware-accessories",
+        "security-door-guards"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "110 × 86.5mm"
+        }
+      ]
+    },
+    {
+      "model": "D3870 SN",
+      "slug": "d3870-sn-security-door-guard",
+      "name": "Security Door Guard",
+      "nameZh": "安全门扣",
+      "categoryPath": [
+        "hardware-accessories",
+        "security-door-guards"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "D3759 SS",
+      "slug": "d3759-ss-security-door-guard",
+      "name": "Security Door Guard",
+      "nameZh": "安全门扣",
+      "categoryPath": [
+        "hardware-accessories",
+        "security-door-guards"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "138 × 66mm"
+        }
+      ]
+    },
+    {
+      "model": "D3760 SS",
+      "slug": "d3760-ss-security-door-guard",
+      "name": "Security Door Guard",
+      "nameZh": "安全门扣",
+      "categoryPath": [
+        "hardware-accessories",
+        "security-door-guards"
+      ],
+      "material": "Stainless Steel",
+      "finishes": [
+        "Brushed Stainless"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Chain length 180mm"
+        }
+      ]
+    },
+    {
+      "model": "D3871 SN",
+      "slug": "d3871-sn-security-door-guard",
+      "name": "Security Door Guard",
+      "nameZh": "安全门扣",
+      "categoryPath": [
+        "hardware-accessories",
+        "security-door-guards"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Antique Bronze",
+        "Brushed Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        }
+      ]
+    },
+    {
+      "model": "D3872 CP",
+      "slug": "d3872-cp-indicator",
+      "name": "Indicator",
+      "nameZh": "指示器",
+      "categoryPath": [
+        "hardware-accessories",
+        "indicators"
+      ],
+      "material": "Zinc Alloy",
+      "finishes": [
+        "Brushed Nickel",
+        "Polished Chrome"
+      ],
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Zinc Alloy"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Bolt 66 × 40.8mm; indicator plate 42 × 62mm"
         }
       ]
     }

@@ -12,7 +12,7 @@
   "counts": {
     "refused": 462,
     "cleanable": 1224,
-    "already-clean": 3692
+    "already-clean": 3716
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -10715,6 +10715,46 @@
       "source": "7cf6ec651a43677416069145c930935fe40d9e41f76627a54d53a4fac432dda4",
       "status": "already-clean"
     },
+    "d3759-ss-security-door-guard-2.webp": {
+      "source": "3c3a86150ecfb09c76e764eab78a5ba9c547f72b14badc1a06db4a1fc2d69e8f",
+      "status": "already-clean"
+    },
+    "d3759-ss-security-door-guard.webp": {
+      "source": "25bd1e8c83843169c319cac9eee140665afbd1e9e26249ebbd3c33f7474b1002",
+      "status": "already-clean"
+    },
+    "d3760-ss-security-door-guard-2.webp": {
+      "source": "e1b3c0613e3a18e76d2498cb056a27b5b4b4c1d6e06569835e77ffb7a2133a15",
+      "status": "already-clean"
+    },
+    "d3760-ss-security-door-guard.webp": {
+      "source": "632bb409a21ff639136c60a40f729e75da7a39bd34838e90e2627e16b1e533fd",
+      "status": "already-clean"
+    },
+    "d3769-ss-door-stopper-2.webp": {
+      "source": "114c3c75b7b92ddfe4825d548c46924adc1ffd3d90f9e03e4a4bb45a658401f3",
+      "status": "already-clean"
+    },
+    "d3769-ss-door-stopper.webp": {
+      "source": "825e9c0a2a50fd62046afb2b10e5096ae967312dfb9e129d292e3212319ebc62",
+      "status": "already-clean"
+    },
+    "d3770-door-stopper-2.webp": {
+      "source": "2d2ca750e2c4eea8eff215d746af3f087b6214fed78ac5bffec85f64b3618fe9",
+      "status": "already-clean"
+    },
+    "d3770-door-stopper-3.webp": {
+      "source": "24dd14a6a74b2192170858aa7162a8b34e6da8b14098947c312f5a6423f495fe",
+      "status": "already-clean"
+    },
+    "d3770-door-stopper-4.webp": {
+      "source": "41bf13626f0261ab56469a23d25d7644d35550ff829a4a8cee514f6334c4ecb8",
+      "status": "already-clean"
+    },
+    "d3770-door-stopper.webp": {
+      "source": "f396635786b27eadba7d580c37dd42b896a290fe49e6bd3e84affbfae7b5c8ba",
+      "status": "already-clean"
+    },
     "d3771-door-stopper-2.webp": {
       "source": "6f705cd94182219a49ca09adcdbe2c710716f34a2aa2c8e70b2ada35b6cb37c1",
       "status": "already-clean"
@@ -10745,6 +10785,14 @@
     },
     "d3772-door-stopper.webp": {
       "source": "f5f39edfa3c7712feca7c907c428428e94ebc1471d030ec1dcb013439222b557",
+      "status": "already-clean"
+    },
+    "d3776-ss-door-stopper-2.webp": {
+      "source": "fadf5ac0803eacc01b95ab523377cb1d7d01d5515725f44f22a04a757209a70d",
+      "status": "already-clean"
+    },
+    "d3776-ss-door-stopper.webp": {
+      "source": "22f5747fe27fde0386496774ffcbc7624e1fb22082a8262f74623c8684ddce3c",
       "status": "already-clean"
     },
     "d3810-door-stopper-2.webp": {
@@ -10789,6 +10837,54 @@
     },
     "d3811-door-stopper.webp": {
       "source": "c195b504ca5bd8b9d2eb3406271d9f226708848ca1054154f15f29f998ce246c",
+      "status": "already-clean"
+    },
+    "d3867-door-stopper-2.webp": {
+      "source": "3afcf990b248d9e891531a9ce56b8b4db2b835f1996f5ac6309209415ced62a8",
+      "status": "already-clean"
+    },
+    "d3867-door-stopper-3.webp": {
+      "source": "fd70216f6f73ef7ca4463dbec5605c07333d07c898265b713abd7be436c7beb0",
+      "status": "already-clean"
+    },
+    "d3867-door-stopper-4.webp": {
+      "source": "f6a3a959d8c8bf92a51212f82b94cdb76008a97b6248e4493170b1381e9efd97",
+      "status": "already-clean"
+    },
+    "d3867-door-stopper.webp": {
+      "source": "9fa5716960f5eae581447603fadf2910498a221af0e0a080e911c66f45b46d1a",
+      "status": "already-clean"
+    },
+    "d3869-sn-security-door-guard-2.webp": {
+      "source": "a406fed5f39481755a4fcffa03e26b158468df55601929afb42d2843db8cadc4",
+      "status": "already-clean"
+    },
+    "d3869-sn-security-door-guard.webp": {
+      "source": "d630c907f1cb8289462da2cfe87b30fd2d7b64094524af2cfb48a3f39e6d1ff7",
+      "status": "already-clean"
+    },
+    "d3870-sn-security-door-guard-2.webp": {
+      "source": "34f239403a39fed080452b1d94ac4e5f8dd0c52d31763e07bdcfbc9e6d46d87f",
+      "status": "already-clean"
+    },
+    "d3870-sn-security-door-guard.webp": {
+      "source": "f58d5da136fbb6fb2064ced623eb4baada2a1f3f7650e493f7ed019620ce42af",
+      "status": "already-clean"
+    },
+    "d3871-sn-security-door-guard-2.webp": {
+      "source": "06cb9214a1bff87962c58b13829f1e57eaad96cf9437c6c94ca5285fee9a2aad",
+      "status": "already-clean"
+    },
+    "d3871-sn-security-door-guard.webp": {
+      "source": "3546ac2d86f7a7a60ce2b7ff6bd264b6d960fcaac55a448d04385b0afee6ef5c",
+      "status": "already-clean"
+    },
+    "d3872-cp-indicator-2.webp": {
+      "source": "30e06961df66b673790459ffb1d2513090b11b6a2e8505c06c1fac621b86af52",
+      "status": "already-clean"
+    },
+    "d3872-cp-indicator.webp": {
+      "source": "bd91efde92e261b485b46ca41d5a4f2a16ac745b2cc37c8ca44481c7ec34bf70",
       "status": "already-clean"
     },
     "d3873-magnetic-pin-2.webp": {
