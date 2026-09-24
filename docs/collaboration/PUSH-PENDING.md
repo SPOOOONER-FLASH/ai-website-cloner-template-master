@@ -28,3 +28,16 @@
 - `d0ca5d29d2e` ship：失败原因过滤 CRLF 警告；积压记录标注已解决
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/24 06:43:58 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in content/promo.json / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `d73f0524ebe` shiplog: 更新上线存档
+- `1ae899aca79` 弹窗：目录下载换成配置器，葡语页面恢复弹窗
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+> 已解决 2026-09-24：旁路检出手动合并 promo.json（保留配置器卡 + 远端西语「planilla de puertas」），`e99d85f59ac` 已推送。
