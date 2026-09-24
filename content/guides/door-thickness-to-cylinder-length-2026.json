@@ -135,7 +135,7 @@
       },
       {
         "question": "Por que uma porta fina leva na mesma um cilindro que sobressai?",
-        "answer": "Porque 27,5 mm é a menor metade que o perfil europeu permite e não há cilindro mais curto para pedir. Em portas abaixo de cerca de 45 mm a pergunta é como gerir a saliência, não como a evitar: um espelho elevado ou uma roseta de segurança é a melhor resposta, e o limite de trabalho é que um cilindro nunca deve sobressair mais de cerca de 3 mm."
+        "answer": "Porque 27,5 mm é a menor metade que o perfil europeu permite e não há cilindro mais curto para pedir. Em portas abaixo de cerca de 45 mm a pergunta é como gerenciar a saliência, não como a evitar: um espelho elevado ou uma roseta de segurança é a melhor resposta, e o limite de trabalho é que um cilindro nunca deve sobressair mais de cerca de 3 mm."
       },
       {
         "question": "Quando as duas metades são diferentes?",
@@ -143,10 +143,10 @@
       },
       {
         "question": "Um 30/40 é o mesmo que um 40/30?",
-        "answer": "O mesmo comprimento total, não intercambiáveis. No 30/40 a metade curta fica virada para fora. Indique que metade é qual ao pedir: «70 mm, 30 fora / 40 dentro» não pode ser mal lido, enquanto «70 mm 30/40» depende de ambas as partes usarem a mesma convenção."
+        "answer": "O mesmo comprimento total, não intercambiáveis. No 30/40 a metade curta fica virada para fora. Indique que metade é qual ao pedir: \"70 mm, 30 fora / 40 dentro\" não pode ser mal lido, enquanto \"70 mm 30/40\" depende de ambas as partes usarem a mesma convenção."
       },
       {
-        "question": "As vossas páginas dão a repartição?",
+        "question": "As suas páginas dão a repartição?",
         "answer": "Não. Publicamos 45 modelos de cilindro em nove comprimentos totais (45, 47, 54, 56, 60, 65, 70, 80 e 90 mm) com o comprimento no número de modelo. Nos 45 registros, o número de linhas que indicam metade interna e externa é zero. Peça a repartição pedido a pedido e obtenha-a por escrito em vez de supor uma divisão igual."
       }
     ]
@@ -185,7 +185,7 @@
     "Cuánto sobresale el cilindro existente, por cada lado: no para copiarlo, sino para saber qué está corrigiendo. Un cilindro que sobresale 6 mm por fuera le dice que el actual está largo en esa mitad y que tiene disponible una mitad exterior más corta.",
     "Lo que no debe hacer es medir el cilindro viejo de punta a punta y pedir esa cifra. Da la longitud total descartando el reparto, que es la información que decide si el nuevo encaja en el mismo sentido. Nuestra página de cilindro europeo explica con más detalle por qué falla esa medición.",
     "## Tres casos que la tabla no cubre",
-    "Pomo de giro por dentro: la mitad con pomo se mide igual y a la misma referencia, pero el pomo en sí sobresale del escudo y ese saliente no forma parte de la longitud del cilindro. No lo sume, y tampoco lo reste: dimensione la mitad hasta la cara del escudo como siempre y deje que el pomo sobresalga, que es para lo que está diseñado.",
+    "Perilla de giro por dentro: la mitad con perilla se mide igual y a la misma referencia, pero la perilla en sí sobresale del escudo y ese saliente no forma parte de la longitud del cilindro. No lo sume, y tampoco lo reste: dimensione la mitad hasta la cara del escudo como siempre y deje que la perilla sobresalga, que es para lo que está diseñado.",
     "Una puerta con panel aplicado o revestimiento en una cara: el panel añade espesor solo por ese lado. Mida el total de cara a cara incluyendo el panel, y después reparta el cálculo en la caja de cerradura y no en la mitad del total: el agujero del cilindro no se movió cuando alguien añadió el panel.",
     "Una puerta vidriada con cerradura de pinza: la aritmética de arriba es para una hoja; un herraje de pinza sobre vidrio tiene su propio alojamiento de cilindro y su propia cota, publicada por el herraje y no deducida del espesor del vidrio. Nuestra página de puerta de vidrio explica qué publica un herraje de vidrio y qué tiene que venir de un plano.",
     "En los tres, el movimiento seguro es el mismo: mida hasta el centro del tornillo de fijación, trate cada mitad por separado, y confirme el resultado por escrito antes de cortar nada o pedir en cantidad.",
@@ -197,7 +197,7 @@
     "## Las tres líneas que van en la consulta",
     "El espesor de puerta, medido en el canto de la cerradura con calibre y no con cinta, una cinta sobre un canto rebajado lee el rebaje.",
     "El escudo o la roseta de seguridad que va a usar, por modelo o por profundidad, porque es el término del cálculo que más varía entre proyectos.",
-    "Si el interior necesita llave o pomo de giro, porque un pomo cambia la geometría de la mitad interior y no es una opción de acabado.",
+    "Si el interior necesita llave o perilla de giro, porque una perilla cambia la geometría de la mitad interior y no es una opción de acabado.",
     "Con esas tres, una longitud y un reparto vuelven como recomendación y no como pregunta. Sin ellas, cualquier longitud de cilindro cotizada es una conjetura con forma plausible."
   ],
   "titlePt": "De espessura de porta a comprimento de cilindro 2026: a aritmética, uma tabela de consulta, e por que a resposta é arredondada para cima",
@@ -218,7 +218,7 @@
     "Duas coisas dessa tabela merecem ser lidas duas vezes.",
     "## Por que uma porta fina leva na mesma um cilindro que sobressai",
     "Olhe para as três primeiras linhas. Uma porta de 35 mm calcula uma metade de 21,5 mm e recebe uma de 27,5, porque 27,5 mm é a menor metade que o perfil europeu permite. Não há um cilindro mais curto para pedir.",
-    "Então em portas abaixo de cerca de 45 mm o cilindro vai sobressair, e a pergunta deixa de ser «como o evito» e passa a ser «como o giro». Duas respostas, por ordem de preferência.",
+    "Então em portas abaixo de cerca de 45 mm o cilindro vai sobressair, e a pergunta deixa de ser \"como o evito\" e passa a ser \"como o giro\". Duas respostas, por ordem de preferência.",
     "Um espelho elevado ou uma roseta de segurança absorve a diferença: a face do cilindro fica à face da roseta em vez de sobressair da porta, o que é melhor esteticamente e melhor para a segurança, porque um cilindro que sobressai é um cilindro que se pode agarrar.",
     "Ou aceite a saliência e mantenha-a pequena. A nossa página de cilindro europeu fixa a regra de trabalho: um cilindro nunca deve sobressair mais de cerca de 3 mm. Além disso torna-se uma pega para um ataque.",
     "O que não é uma resposta é escolher uma metade mais curta do que a que o perfil oferece. Não existe.",
@@ -226,17 +226,17 @@
     "O cálculo acima supõe que o furo do cilindro está no meio da espessura da folha, o que é verdade para a maioria das caixas de embutir na maioria das portas.",
     "Onde não está (uma fechadura projetada para ficar mais perto de uma face, uma porta com painel aplicado de um lado, um par com rebaixo) as duas metades são diferentes e o cilindro é assimétrico. Essa é toda a razão de um cilindro europeu ser especificado com dois números em vez de um.",
     "Nesse caso, meça cada metade separadamente a partir do centro do parafuso de fixação, arredonde cada uma por si, e peça a repartição. Lembre-se de que a repartição tem direção: um 30/40 e um 40/30 são o mesmo comprimento total e não são intercambiáveis, porque no 30/40 a metade curta fica virada para fora.",
-    "Indique que metade é qual ao pedir. «70 mm, 30 fora / 40 dentro» não pode ser mal lido; «70 mm 30/40» depende de as duas partes usarem a mesma convenção.",
+    "Indique que metade é qual ao pedir. \"70 mm, 30 fora / 40 dentro\" não pode ser mal lido; \"70 mm 30/40\" depende de as duas partes usarem a mesma convenção.",
     "## Medir uma porta que não pode desmontar",
     "A maior parte do dimensionamento de cilindros acontece num edifício ocupado, com o cilindro existente ainda na porta. Três medidas, nenhuma das quais exige tirar seja o que for.",
     "A espessura de porta no topo da fechadura: use paquímetro. Uma fita enganchada sobre um topo rebaixado ou com moldura mede o rebaixo e não a folha, e num par com rebaixo esse erro é sistematicamente de vários milímetros na direção que produz um cilindro curto.",
     "A profundidade de espelho, por cada lado: meça desde a face da porta até à face exterior do espelho. Os dois lados são com frequência diferentes: uma roseta de segurança fora e uma lisa dentro é uma disposição comum e perfeitamente sensata, e torna o cilindro assimétrico mesmo com caixa centrada.",
-    "Quanto o cilindro existente sobressai, por cada lado: não para o copiar, mas para saber o que está corrigindo. Um cilindro que sobressai 6 mm por fora diz-lhe que o atual está comprido nessa metade e que tem disponível uma metade externa mais curta.",
+    "Quanto o cilindro existente sobressai, por cada lado: não para o copiar, mas para saber o que está corrigindo. Um cilindro que sobressai 6 mm por fora indica que o atual está comprido nessa metade e que tem disponível uma metade externa mais curta.",
     "O que não deve fazer é medir o cilindro velho de ponta a ponta e pedir essa cifra. Dá o comprimento total descartando a repartição, que é a informação que decide se o novo encaixa no mesmo sentido. A nossa página de cilindro europeu explica com mais detalhe por que essa medição falha.",
     "## Três casos que a tabela não cobre",
     "Botão de giro por dentro: a metade com botão mede-se igual e à mesma referência, mas o botão em si sobressai do espelho e essa saliência não faz parte do comprimento do cilindro. Não a some, e também não a subtraia: dimensione a metade até à face do espelho como sempre e deixe o botão sobressair, que é para o que foi projetado.",
     "Uma porta com painel aplicado ou revestimento numa face: o painel acrescenta espessura só desse lado. Meça o total de face a face incluindo o painel, e depois reparta o cálculo na caixa de fechadura e não a meio do total: o furo do cilindro não se moveu quando alguém acrescentou o painel.",
-    "Uma porta envidraçada com fechadura de pinça: a aritmética acima é para uma folha; uma ferragem de pinça sobre vidro tem o seu próprio alojamento de cilindro e a sua própria cota, publicada pela ferragem e não deduzida da espessura do vidro. A nossa página de porta de vidro explica o que uma ferragem de vidro publica e o que tem de vir de um desenho.",
+    "Uma porta envidraçada com fechadura de pinça: a aritmética acima é para uma folha; uma ferragem de pinça sobre vidro tem o seu próprio alojamento de cilindro e a sua própria cota, publicada pela ferragem e não deduzida da espessura do vidro. A nossa página de porta de vidro explica o que uma ferragem de vidro publica e o que tem que vir de um desenho.",
     "Nos três, o movimento seguro é o mesmo: meça até ao centro do parafuso de fixação, trate cada metade separadamente, e confirme o resultado por escrito antes de cortar seja o que for ou pedir em quantidade.",
     "## O que publicamos perante esta tabela",
     "O nosso catálogo tem 45 modelos de cilindro em nove comprimentos totais: 45, 47, 54, 56, 60, 65, 70, 80 e 90 mm. O comprimento vai no número de modelo e não numa linha de especificação à parte, o que a nossa página de cilindro europeu explica.",

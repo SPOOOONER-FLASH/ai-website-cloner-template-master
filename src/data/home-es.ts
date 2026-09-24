@@ -64,7 +64,7 @@ export const teaser1: PageTeaserContent = {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-real-lever-set-dark.webp",
         label:
-          "Juego completo de cerradura tubular de manilla sobre fondo oscuro: dos manillas sobre roseta con el cuadradillo y el mecanismo a la vista, el picaporte tubular, el cerradero, la placa y tres tornillos de fijación —todas las piezas en un mismo acabado",
+          "Juego completo de cerradura tubular de manija sobre fondo oscuro: dos manijas sobre roseta con el cuadradillo y el mecanismo a la vista, el picaporte tubular, el cerradero, la placa y tres tornillos de fijación —todas las piezas en un mismo acabado",
       },
       title: "Para distribuidores",
       subtitle: "Suministro desde el catálogo de exportación de Canton Hyland",
@@ -75,7 +75,7 @@ export const teaser1: PageTeaserContent = {
         ratio: "1 / 1",
         src: "/images/editorial/hyde-real-cylinder-dark.webp",
         label:
-          "Cilindro de perfil europeo con pomo fotografiado sobre fondo oscuro junto a su tornillo de fijación y tres llaves —el tornillo atraviesa la leva, el punto desde el que se miden las dos mitades del cilindro",
+          "Cilindro de perfil europeo con perilla fotografiada sobre fondo oscuro junto a su tornillo de fijación y tres llaves —el tornillo atraviesa la leva, el punto desde el que se miden las dos mitades del cilindro",
       },
       title: "Para prescriptores",
       subtitle: "Prepare un cuadro de herrajes con nuestro equipo técnico",
@@ -99,7 +99,7 @@ export const hero2: HeroModuleContent = {
 
 export const text1: TextModuleContent = {
   heading: "Aplicaciones de Canton Hyland",
-  body: "Dispositivos antipánico, cerraduras, manillas y cierrapuertas para edificios comerciales, institucionales y residenciales en mercados de exportación.",
+  body: "Dispositivos antipánico, cerraduras, manijas y cierrapuertas para edificios comerciales, institucionales y residenciales en mercados de exportación.",
   linkLabel: "Ver proyectos",
   href: "/es/projects",
 };

@@ -70,20 +70,20 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
   {
     id: "backset",
     term: "Backset",
-    termEs: "Distancia al eje (backset)",
+    termEs: "Entrada (backset)",
     termPt: "Backset",
     group: "dimensions",
     specLabels: ["Backset"],
     definition:
       "The distance from the edge of the door to the centre of the spindle — the hole the handle turns in. 60mm is much the commonest figure in our range and a great many models are field-adjustable between 60 and 70mm; the full published span runs from 16 to 90mm. North America writes the same two figures as 2-3/8″ and 2-3/4″.",
     definitionEs:
-      "La distancia desde el canto de la puerta hasta el centro del eje, el agujero donde gira la manilla. 60 mm es con diferencia la cifra más frecuente en nuestra gama y muchos modelos son regulables en obra entre 60 y 70 mm; el rango publicado completo va de 16 a 90 mm. Norteamérica escribe esas dos mismas cifras como 2-3/8″ y 2-3/4″.",
+      "La distancia desde el canto de la puerta hasta el centro del eje, el agujero donde gira la manija. 60 mm es con diferencia la cifra más frecuente en nuestra gama y muchos modelos son regulables en obra entre 60 y 70 mm; el rango publicado completo va de 16 a 90 mm. Norteamérica escribe esas dos mismas cifras como 2-3/8″ y 2-3/4″.",
     definitionPt:
       "A distância entre a borda da porta e o centro do eixo — o furo em que a maçaneta gira. 60 mm é de longe a medida mais frequente na nossa linha e muitos modelos são reguláveis em obra entre 60 e 70 mm; a faixa publicada completa vai de 16 a 90 mm. A América do Norte escreve esses mesmos dois números como 2-3/8″ e 2-3/4″.",
     consequence:
       "It is the single most common wrong number on a door-hardware order. A door already bored for 60mm will not take a 70mm lock: the handle lands in the wrong place and the latch does not reach the strike. Metal cannot be adjusted on site, so a wrong backset is a container that gets stored rather than fitted.",
     consequenceEs:
-      "Es el número equivocado más habitual en un pedido de herrajes. Una puerta ya taladrada a 60 mm no admite una cerradura de 70: la manilla queda fuera de sitio y el picaporte no llega al cerradero. El metal no se ajusta en obra, así que un backset equivocado es un contenedor que se almacena en vez de instalarse.",
+      "Es el número equivocado más habitual en un pedido de herrajes. Una puerta ya taladrada a 60 mm no admite una cerradura de 70: la manija queda fuera de sitio y el picaporte no llega al cerradero. El metal no se ajusta en obra, así que un backset equivocado es un contenedor que se almacena en vez de instalarse.",
     consequencePt:
       "É o número errado mais comum num pedido de ferragens. Uma porta já furada para 60 mm não aceita uma fechadura de 70: a maçaneta fica fora de lugar e a lingueta não alcança a contratesta. O metal não se ajusta em obra, então um backset errado é um contêiner que acaba estocado em vez de instalado.",
     article: "mortise-lock-backset-and-centre-distance-guide",
@@ -104,7 +104,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     consequence:
       "On a lock case, the centres decide where the two holes go in the door face. Get them wrong and the cylinder hole and the handle hole do not line up with the lock — the door is scrap, not the lock.",
     consequenceEs:
-      "En una caja de cerradura, la distancia entre ejes decide dónde van los dos taladros en la hoja. Si se equivoca, el agujero del cilindro y el de la manilla no coinciden con la cerradura: lo que se pierde es la puerta, no la cerradura.",
+      "En una caja de cerradura, la distancia entre ejes decide dónde van los dos taladros en la hoja. Si se equivoca, el agujero del cilindro y el de la manija no coinciden con la cerradura: lo que se pierde es la puerta, no la cerradura.",
     consequencePt:
       "Numa caixa de fechadura, a distância entre eixos decide onde ficam os dois furos na face da porta. Se ela estiver errada, o furo do cilindro e o da maçaneta não coincidem com a fechadura: o que se perde é a porta, não a fechadura.",
     article: "mortise-lock-backset-and-centre-distance-guide",
@@ -159,7 +159,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "How far the handle, bar or fitting stands out from the face of the door.",
     definitionEs:
-      "Cuánto sobresale la manilla, la barra o el herraje respecto a la cara de la puerta.",
+      "Cuánto sobresale la manija, la barra o el herraje respecto a la cara de la puerta.",
     definitionPt:
       "Quanto a maçaneta, a barra ou a ferragem avança para fora da face da porta.",
     consequence:
@@ -283,13 +283,13 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The working body of a cylindrical lock — the part that sits inside the cross bore and turns handle movement into latch movement. The trim bolts onto it from both faces.",
     definitionEs:
-      "El cuerpo mecánico de una cerradura cilíndrica: la parte que va dentro del taladro pasante y convierte el giro de la manilla en movimiento del picaporte. La guarnición se atornilla a él por ambas caras.",
+      "El cuerpo mecánico de una cerradura cilíndrica: la parte que va dentro del taladro pasante y convierte el giro de la manija en movimiento del picaporte. La guarnición se atornilla a él por ambas caras.",
     definitionPt:
       "O corpo mecânico de uma fechadura cilíndrica — a parte que fica dentro do furo passante e transforma o giro da maçaneta em movimento da lingueta. As guarnições são parafusadas nele pelas duas faces.",
     consequence:
       "Grade is a property of the chassis, not of the lever you can see. Two locks with identical handles and different chassis are different products, and it is the chassis that the cycle-life number belongs to.",
     consequenceEs:
-      "El grado es una propiedad del chasis, no de la manilla que se ve. Dos cerraduras con manillas idénticas y chasis distintos son productos distintos, y el número de ciclos pertenece al chasis.",
+      "El grado es una propiedad del chasis, no de la manija que se ve. Dos cerraduras con manijas idénticas y chasis distintos son productos distintos, y el número de ciclos pertenece al chasis.",
     consequencePt:
       "O grau é uma propriedade do chassi, não da maçaneta que se vê. Duas fechaduras com maçanetas idênticas e chassis diferentes são produtos diferentes, e o número de ciclos pertence ao chassi.",
   },
@@ -303,7 +303,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The sprung bolt with one angled face that holds a closed door shut and pulls back when the handle turns. It is not a deadbolt: a latch can be pushed back, a deadbolt cannot.",
     definitionEs:
-      "El resbalón con una cara inclinada que mantiene cerrada la puerta y se recoge al girar la manilla. No es un pestillo: un resbalón se puede empujar hacia dentro, un pestillo no.",
+      "El resbalón con una cara inclinada que mantiene cerrada la puerta y se recoge al girar la manija. No es un pestillo: un resbalón se puede empujar hacia dentro, un pestillo no.",
     definitionPt:
       "A lingueta com mola e uma face chanfrada que mantém fechada uma porta encostada e recolhe quando a maçaneta gira. Não é uma trava: uma lingueta pode ser empurrada para dentro, uma trava não.",
     consequence:
@@ -344,13 +344,13 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The square steel bar that passes through the lock and carries the turn of the handle from one side of the door to the other. Ours are 8mm and 9mm square.",
     definitionEs:
-      "La barra cuadrada de acero que atraviesa la cerradura y transmite el giro de la manilla de un lado al otro de la puerta. Los nuestros son de 8 y 9 mm.",
+      "La barra cuadrada de acero que atraviesa la cerradura y transmite el giro de la manija de un lado al otro de la puerta. Los nuestros son de 8 y 9 mm.",
     definitionPt:
       "A barra quadrada de aço que atravessa a fechadura e leva o giro da maçaneta de um lado da porta ao outro. Os nossos são de 8 mm e 9 mm.",
     consequence:
       "8mm and 9mm look alike in a photograph and are not interchangeable — a 8mm spindle in a 9mm follower has play in it, and play becomes a handle that droops and then a mechanism that wears. Check the square before mixing a handle from one supplier with a lock from another.",
     consequenceEs:
-      "8 y 9 mm se parecen en una fotografía y no son intercambiables: un eje de 8 en un cuadradillo de 9 tiene holgura, y la holgura acaba en una manilla caída y en un mecanismo desgastado. Compruebe el cuadradillo antes de mezclar manilla de un proveedor con cerradura de otro.",
+      "8 y 9 mm se parecen en una fotografía y no son intercambiables: un eje de 8 en un cuadradillo de 9 tiene holgura, y la holgura acaba en una manija caída y en un mecanismo desgastado. Compruebe el cuadradillo antes de mezclar manija de un proveedor con cerradura de otro.",
     consequencePt:
       "8 mm e 9 mm se parecem numa fotografia e não são intercambiáveis: um eixo de 8 num seguidor de 9 tem folga, e a folga vira uma maçaneta caída e depois um mecanismo gasto. Confira o quadrado antes de misturar maçaneta de um fornecedor com fechadura de outro.",
   },
@@ -385,7 +385,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The furniture on the outside face — lever, knob, pull or plate — supplied separately from the device it operates. On a panic exit device the bar is the inside and the trim is the outside, and they are two order lines.",
     definitionEs:
-      "La guarnición de la cara exterior — manilla, pomo, tirador o placa — que se suministra por separado del mecanismo que acciona. En una barra antipánico, la barra es el interior y la guarnición el exterior: son dos líneas de pedido.",
+      "La guarnición de la cara exterior — manija, perilla, tirador o placa — que se suministra por separado del mecanismo que acciona. En una barra antipánico, la barra es el interior y la guarnición el exterior: son dos líneas de pedido.",
     definitionPt:
       "As peças da face externa — maçaneta, bola, puxador ou espelho — fornecidas separadamente do mecanismo que acionam. Numa barra antipânico, a barra é o lado de dentro e a guarnição é o lado de fora, e são duas linhas de pedido.",
     consequence:
@@ -411,7 +411,7 @@ export const HARDWARE_TERMS: readonly HardwareTerm[] = [
     definition:
       "The round plate behind a lever or knob that covers the fixings and the bore. Ours run 36 to 75mm in diameter, depending on the range — the catalogue calls it a rose on the handle ranges and a rosette on the knob and bathroom ranges, and they are the same part.",
     definitionEs:
-      "La placa redonda tras la manilla o el pomo que tapa las fijaciones y el taladro. Las nuestras van de 36 a 75 mm de diámetro según la gama — el catálogo la llama roseta en unas gamas y embellecedor en otras, y son la misma pieza.",
+      "La placa redonda tras la manija o la perilla que tapa las fijaciones y el taladro. Las nuestras van de 36 a 75 mm de diámetro según la gama — el catálogo la llama roseta en unas gamas y embellecedor en otras, y son la misma pieza.",
     definitionPt:
       "A chapa redonda atrás da maçaneta ou da bola que cobre as fixações e o furo. As nossas vão de 36 a 75 mm de diâmetro conforme a linha — o catálogo a chama de roseta nas linhas de maçaneta e de rosette nas linhas de bola e de banheiro, e é a mesma peça.",
     consequence:

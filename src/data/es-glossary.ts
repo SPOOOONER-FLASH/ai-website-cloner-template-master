@@ -13,6 +13,13 @@
  * Latin wins — `manija` and `cerradura de embutir` rather than `manilla` and
  * `cerradura de embutir` alone, `entrada` for backset rather than the Iberian `retranqueo`.
  *
+ * Neutral Latin American, not Mexican (2026-09-24): `tirador` and `cerradero` stay, because
+ * `jaladera` and `contrachapa` are Mexican — those live only as search synonyms in
+ * scripts/lib/search-regional-terms.mjs. The whole register, for every Spanish string on the
+ * site, is enforced by scripts/normalize-regional-terms.mjs and guarded by
+ * src/data/regional-terms.test.ts; the header above had said `manija` for months while 805
+ * strings, dozens of them in this file, said `manilla`.
+ *
  * A term with no entry here is LEFT IN ENGLISH by the generator and reported, rather
  * than guessed at. An invented Spanish spec term is the same class of error as an
  * invented dimension: a buyer specifies from it.
@@ -292,13 +299,13 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Nickel-plated brass, solid brass, brushed nickel":
     "Latón niquelado, latón macizo, níquel cepillado",
   "Trim handle · outside lever for panic exit devices":
-    "Manilla exterior · para barras antipánico",
+    "Manija exterior · para barras antipánico",
   "Trim handle · anti-pick outside lever for panic exit devices":
-    "Manilla exterior antiganzúa · para barras antipánico",
+    "Manija exterior antiganzúa · para barras antipánico",
   "Trim handle · outside lever with key for panic exit devices":
-    "Manilla exterior · con llave, para barras antipánico",
+    "Manija exterior · con llave, para barras antipánico",
   "Trim handle · external handle for panic bar systems":
-    "Manilla exterior · para sistemas de barra antipánico",
+    "Manija exterior · para sistemas de barra antipánico",
   "Profile lock case for panic exit devices":
     "Caja de cerradura de perfil para barras antipánico",
   // materials
@@ -492,8 +499,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Ivory painted": "Pintado en marfil",
   "Black painted": "Pintado en negro",
   "Red painted": "Pintado en rojo",
-  "Classroom — key releases the outside knob": "Aula — la llave libera el pomo exterior",
-  "Storeroom — outside knob always rigid": "Bodega — el pomo exterior siempre fijo",
+  "Classroom — key releases the outside knob": "Aula — la llave libera la perilla exterior",
+  "Storeroom — outside knob always rigid": "Bodega — la perilla exterior siempre fijo",
   "Patio — locked by inside button": "Patio — se bloquea con el botón interior",
   // decoded function suffixes
   "Entrance — keyed outside": "Entrada — con llave por fuera",
@@ -1256,7 +1263,7 @@ export const CATEGORY_NAMES_ES: Record<string, string> = {
   "panic-exit-devices": "Barras antipánico",
   "lock-cases": "Cerraduras de embutir",
   "lever-handles": "Manijas de palanca",
-  "knob-locks": "Cerraduras de pomo",
+  "knob-locks": "Cerraduras de perilla",
   "stainless-steel-handles": "Manijas de acero inoxidable",
   "glass-door-accessories": "Herrajes para puertas de vidrio",
   deadbolts: "Cerrojos",
@@ -1342,11 +1349,11 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
 
   // Cylindrical and tubular locks
   "Tubular Lock": "Cerradura tubular",
-  "Tubular Knob Lock": "Cerradura tubular de pomo",
-  "Black Tubular Lever Lock Set": "Juego de cerradura tubular de manilla en negro",
+  "Tubular Knob Lock": "Cerradura tubular de perilla",
+  "Black Tubular Lever Lock Set": "Juego de cerradura tubular de manija en negro",
   "Heavy Duty Cylindrical Lock": "Cerradura cilíndrica de servicio pesado",
   "Light Duty Cylindrical Lock": "Cerradura cilíndrica de servicio ligero",
-  "Cylindrical Knob Lock": "Cerradura cilíndrica de pomo",
+  "Cylindrical Knob Lock": "Cerradura cilíndrica de perilla",
   "Commercial Lock": "Cerradura comercial",
 
   // Deadbolts, rim locks, cylinders
@@ -1357,9 +1364,9 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Lock Cylinder": "Cilindro de cerradura",
 
   // Handles and levers
-  "Lever Handle": "Manilla de palanca",
-  "Stainless Steel Handle": "Manilla de acero inoxidable",
-  "Stainless Steel Lever Handle Lock": "Cerradura con manilla de acero inoxidable",
+  "Lever Handle": "Manija de palanca",
+  "Stainless Steel Handle": "Manija de acero inoxidable",
+  "Stainless Steel Lever Handle Lock": "Cerradura con manija de acero inoxidable",
   "Grip Handle Set": "Juego de manillón",
   "Concealed Sliding Door Handle": "Tirador oculto para puerta corredera",
 
@@ -1423,5 +1430,5 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
     `Cerrojos` would have replaced `Cerrojo de seguridad`. A gap-finder that cannot see
     half the file is worse than none.
   */
-  "Door Knob": "Pomo de puerta",
+  "Door Knob": "Perilla de puerta",
 };

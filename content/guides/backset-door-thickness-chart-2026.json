@@ -17,7 +17,7 @@
     "src": "/images/products-hyde/lc02-85-40mm-lock-case-2.webp",
     "ratio": "16 / 9",
     "label": "An LC02 mortise lock case, the backset is measured from the door edge to the spindle centre",
-    "labelEs": "Una caja de cerradura LC02, la distancia al eje se mide del canto de la puerta al centro del cuadradillo",
+    "labelEs": "Una caja de cerradura LC02, la entrada se mide del canto de la puerta al centro del cuadradillo",
     "labelPt": "Uma caixa de fechadura LC02, a distância ao eixo mede-se do canto da porta ao centro do quadrado"
   },
   "relatedModels": [
@@ -79,16 +79,16 @@
     ],
     "es": [
       {
-        "question": "¿Qué es la distancia al eje en una cerradura?",
-        "answer": "La distancia desde el canto de la puerta hasta el centro del taladro del cuadradillo. Se mide al centro del taladro, no a su borde, ni al centro de la caja. Decide si la cerradura entra en un cajeado existente."
+        "question": "¿Qué es la entrada en una cerradura?",
+        "answer": "La distancia desde el canto de la puerta hasta el centro de la perforación del cuadradillo. Se mide al centro de la perforación, no a su borde, ni al centro de la caja. Decide si la cerradura entra en un cajeado existente."
       },
       {
-        "question": "¿Qué distancias al eje publica Canton Hyland?",
+        "question": "¿Qué entradas publica Canton Hyland?",
         "answer": "Ajustable 60/70 mm en 100 registros, fija de 60 mm en 16, de 50 mm en 6, de 70 mm en 5, de 45 mm en 4 y de 30 mm en 4. Las de 30 mm son aplicaciones de perfil estrecho y puerta de vidrio, no versiones pequeñas de una cerradura estándar."
       },
       {
-        "question": "¿Qué diferencia hay entre distancia al eje y distancia entre centros?",
-        "answer": "La distancia al eje sitúa el cuadradillo respecto al canto; la distancia entre centros sitúa el cilindro respecto al cuadradillo. Una cerradura puede tener la distancia al eje correcta y la entre centros equivocada: entra en el cajeado y la placa o el escudo no coinciden."
+        "question": "¿Qué diferencia hay entre entrada y distancia entre centros?",
+        "answer": "La entrada sitúa el cuadradillo respecto al canto; la distancia entre centros sitúa el cilindro respecto al cuadradillo. Una cerradura puede tener la entrada correcta y la entre centros equivocada: entra en el cajeado y la placa o el escudo no coinciden."
       },
       {
         "question": "¿Qué espesor de puerta admiten la mayoría de sus cerraduras?",
@@ -100,7 +100,7 @@
       },
       {
         "question": "¿Mido la cerradura vieja o la puerta?",
-        "answer": "El cajeado de la puerta. Si la cerradura anterior ya era un apaño (frecuente en puertas rehechas o forradas) medirla traslada el apaño a la pieza nueva. Tome el espesor con calibre en el canto de la cerradura, y la distancia al eje del canto al centro del taladro del cuadradillo."
+        "answer": "El cajeado de la puerta. Si la cerradura anterior ya era un apaño (frecuente en puertas rehechas o forradas) medirla traslada el apaño a la pieza nueva. Tome el espesor con calibre en el canto de la cerradura, y la entrada del canto al centro de la perforación del cuadradillo."
       }
     ],
     "pt": [
@@ -130,31 +130,31 @@
       }
     ]
   },
-  "titleEs": "Tabla de distancia al eje y espesor de puerta 2026: qué admiten realmente 589 modelos publicados",
-  "summaryEs": "Dos números deciden si una cerradura de repuesto entra en una puerta ya cajeada: la distancia al eje y el rango de espesor. Esto es lo que lleva de verdad nuestro catálogo publicado (contado sobre los registros, no citado de un folleto) con los equivalentes en pulgadas, el método de medida y la cota que no es distancia al eje y se confunde con ella.",
-  "seoTitleEs": "Tabla de distancia al eje y espesor de puerta 2026 | Canton Hyland",
-  "seoDescriptionEs": "Distancias al eje y rangos de espesor en 589 modelos publicados, contados del catálogo: 60/70 mm ajustable, 60, 50, 45 y 30 mm, con equivalentes en pulgadas y el método de medida.",
+  "titleEs": "Tabla de entrada y espesor de puerta 2026: qué admiten realmente 589 modelos publicados",
+  "summaryEs": "Dos números deciden si una cerradura de repuesto entra en una puerta ya cajeada: la entrada y el rango de espesor. Esto es lo que lleva de verdad nuestro catálogo publicado (contado sobre los registros, no citado de un folleto) con los equivalentes en pulgadas, el método de medida y la cota que no es entrada y se confunde con ella.",
+  "seoTitleEs": "Tabla de entrada y espesor de puerta 2026 | Canton Hyland",
+  "seoDescriptionEs": "Entradas y rangos de espesor en 589 modelos publicados, contados del catálogo: 60/70 mm ajustable, 60, 50, 45 y 30 mm, con equivalentes en pulgadas y el método de medida.",
   "bodyEs": [
-    "Una cerradura de repuesto entra en la puerta o no entra, y lo deciden dos números. La distancia al eje, medida del canto de la puerta al centro del taladro del cuadradillo, y el rango de espesor de puerta para el que está construida. Equivóquese en cualquiera de los dos sobre una puerta ya cajeada y las opciones son volver a mecanizar la hoja o devolver el herraje.",
+    "Una cerradura de repuesto entra en la puerta o no entra, y lo deciden dos números. La entrada, medida del canto de la puerta al centro de la perforación del cuadradillo, y el rango de espesor de puerta para el que está construida. Equivóquese en cualquiera de los dos sobre una puerta ya cajeada y las opciones son volver a mecanizar la hoja o devolver el herraje.",
     "Esta página es un recuento, no una afirmación. Las cifras salen de los 589 registros publicados de nuestro propio catálogo y no de un resumen de folleto, lo que significa que describen lo que se fabrica y no lo que teóricamente existe.",
-    "DESDE DÓNDE SE MIDE LA DISTANCIA AL EJE",
-    "Desde el canto de ataque de la puerta (la cara donde asienta el frente de la cerradura) hasta el centro del taladro del cuadradillo. No hasta el borde del taladro, ni al centro de la caja: los dos se equivocan lo bastante como para importar.",
-    "En una cerradura de embutir, distancia al eje y distancia entre centros son dos cotas distintas y se confunden constantemente. La primera sitúa el cuadradillo respecto al canto. La segunda sitúa el cilindro respecto al cuadradillo, y es la que decide si una placa de manilla o un escudo van a coincidir. Una cerradura puede tener bien la primera y mal la segunda: entra en el cajeado mientras la guarnición no encaja en la cerradura.",
+    "DESDE DÓNDE SE MIDE LA Entrada",
+    "Desde el canto de ataque de la puerta (la cara donde asienta el frente de la cerradura) hasta el centro de la perforación del cuadradillo. No hasta el borde de la perforación, ni al centro de la caja: los dos se equivocan lo bastante como para importar.",
+    "En una cerradura de embutir, entrada y distancia entre centros son dos cotas distintas y se confunden constantemente. La primera sitúa el cuadradillo respecto al canto. La segunda sitúa el cilindro respecto al cuadradillo, y es la que decide si una placa de manija o un escudo van a coincidir. Una cerradura puede tener bien la primera y mal la segunda: entra en el cajeado mientras la guarnición no encaja en la cerradura.",
     "LO QUE LLEVA EL CATÁLOGO",
-    "| Distancia al eje | Registros | Nota |\n| --- | --- | --- |\n| Ajustable 60/70 mm | 100 | la configuración más publicada; el ajuste es físico en la caja, así que un número de pieza cubre las dos |\n| Fija 60 mm | 16 | (|\n| Fija 70 mm | 5 |) |\n| Fija 50 mm | 6 |, |\n| Fija 45 mm | 4 |, |\n| Fija 30 mm | 4 | perfil estrecho y puerta de vidrio, donde no cabe nada más largo |",
+    "| Entrada | Registros | Nota |\n| --- | --- | --- |\n| Ajustable 60/70 mm | 100 | la configuración más publicada; el ajuste es físico en la caja, así que un número de pieza cubre las dos |\n| Fija 60 mm | 16 | (|\n| Fija 70 mm | 5 |) |\n| Fija 50 mm | 6 |, |\n| Fija 45 mm | 4 |, |\n| Fija 30 mm | 4 | perfil estrecho y puerta de vidrio, donde no cabe nada más largo |",
     "La caja ajustable 60/70 existe porque esas dos distancias cubren la mayor parte del parque de puertas de madera y metal de los mercados a los que enviamos.",
     "Lo que hay que llevarse de ese reparto es que 60 y 70 cubren entre las dos casi todo, y que las distancias cortas existen por una razón estructural concreta y no por preferencia. Una de 30 mm no es una versión pequeña de una de 60: es lo que se usa cuando el perfil es demasiado estrecho para aceptar otra cosa.",
     "RANGOS DE ESPESOR DE PUERTA",
     "| Rango de espesor de puerta | Registros | Nota |\n| --- | --- | --- |\n| De 35 a 45 mm ajustable | 106 | el rango estándar; cubre la gran mayoría de puertas interiores y de entrada de los mercados de este catálogo |\n| De 35 a 50 mm | 34 | (|\n| De 35 a 55 mm estándar, 30 a 60 mm bajo pedido | 22 |) |\n| De 8 a 12 mm | 7 | herrajes de vidrio, la cifra describe vidrio templado, no una hoja de puerta |",
     "Un rango de espesor no es una tolerancia. Es el tramo en el que cuadradillo, tornillos de fijación y cilindro siguen alcanzando, y los tres no se agotan en el mismo punto. Una cerradura citada hasta 45 mm puede aceptar mecánicamente una puerta de 48 y dejar los tornillos dos hilos cortos, y eso aguanta hasta que deja de aguantar.",
     "MEDIR UNA PUERTA YA COLGADA",
-    "Mida la distancia al eje sobre el cajeado existente, no sobre la cerradura existente. Si la cerradura anterior ya era un apaño (y en una puerta rehecha o forrada a menudo lo era) medirla traslada el apaño hacia delante.",
-    "La secuencia práctica es esta. Tome el espesor en el canto de la cerradura con calibre y no con cinta, porque una cinta sobre un canto rebajado o laminado lee de más. Tome la distancia al eje del canto al centro del taladro del cuadradillo. Tome la distancia entre centros del cuadradillo al cilindro. Esas tres, más la mano y las cotas del frente existente, son lo que una fábrica necesita para decirle si la pieza encaja antes de que salga nada.",
+    "Mida la entrada sobre el cajeado existente, no sobre la cerradura existente. Si la cerradura anterior ya era un apaño (y en una puerta rehecha o forrada a menudo lo era) medirla traslada el apaño hacia delante.",
+    "La secuencia práctica es esta. Tome el espesor en el canto de la cerradura con calibre y no con cinta, porque una cinta sobre un canto rebajado o laminado lee de más. Tome la entrada del canto al centro de la perforación del cuadradillo. Tome la distancia entre centros del cuadradillo al cilindro. Esas tres, más la mano y las cotas del frente existente, son lo que una fábrica necesita para decirle si la pieza encaja antes de que salga nada.",
     "POR QUÉ LA DISTANCIA AJUSTABLE VALE MÁS DE LO QUE PARECE",
-    "Una caja ajustable 60/70 elimina la causa más común de pedido equivocado en esta categoría: un cuadro que dice 60 mm para una puerta cajeada a 70. Las dos son estándar, las dos son frecuentes, y la diferencia son 10 mm, lo bastante pequeña para leerse mal y lo bastante grande para inutilizar la cerradura.",
+    "Una caja ajustable 60/70 elimina la causa más común de pedido equivocado en esta categoría: una planilla que dice 60 mm para una puerta cajeada a 70. Las dos son estándar, las dos son frecuentes, y la diferencia son 10 mm, lo bastante pequeña para leerse mal y lo bastante grande para inutilizar la cerradura.",
     "Además reduce dos números de pieza a uno para un distribuidor con stock, que es la razón de que las versiones ajustables dominen nuestra gama publicada y no las fijas.",
     "LO QUE AQUÍ NO PUBLICAMOS",
-    "Las cotas del frente (largo y ancho de la placa que se ve en el canto) no están indicadas para todas las cajas del catálogo. Donde sí lo están, las lleva el plano acotado. Donde no, las confirmaremos contra el modelo concreto en vez de citar una cifra de familia, porque el frente varía dentro de una familia más que la distancia al eje.",
+    "Las cotas del frente (largo y ancho de la placa que se ve en el canto) no están indicadas para todas las cajas del catálogo. Donde sí lo están, las lleva el plano acotado. Donde no, las confirmaremos contra el modelo concreto en vez de citar una cifra de familia, porque el frente varía dentro de una familia más que la entrada.",
     "Es un hueco y se dice aquí en lugar de rellenarlo con un valor típico. Un frente citado de familia y mecanizado en una puerta es un rebaje en el sitio equivocado, y un rebaje no se deshace."
   ],
   "titlePt": "Tabela de distância ao eixo e espessura de porta 2026: o que 589 modelos publicados realmente aceitam",
@@ -178,7 +178,7 @@
     "Meça a distância ao eixo sobre o rasgo existente, não sobre a fechadura existente. Se a fechadura anterior já era um improviso (e numa porta reassentada ou revestida muitas vezes era) medi-la leva o improviso adiante.",
     "A sequência prática é esta. Tire a espessura no canto da fechadura com paquímetro e não com trena, porque uma trena sobre um canto rebaixado ou laminado lê a mais. Tire a distância ao eixo do canto ao centro do furo do quadrado. Tire a distância entre centros do quadrado ao cilindro. Essas três, mais a mão e as cotas da testa existente, são o que uma fábrica precisa para dizer se a peça encaixa antes de qualquer envio.",
     "POR QUE A DISTÂNCIA AJUSTÁVEL VALE MAIS DO QUE PARECE",
-    "Uma caixa ajustável 60/70 elimina a causa mais comum de pedido errado nesta categoria: um mapa que diz 60 mm para uma porta rasgada a 70. As duas são padrão, as duas são frequentes, e a diferença são 10 mm, pequena o bastante para ser lida errado e grande o bastante para inutilizar a fechadura.",
+    "Uma caixa ajustável 60/70 elimina a causa mais comum de pedido errado nesta categoria: uma planilha que diz 60 mm para uma porta rasgada a 70. As duas são padrão, as duas são frequentes, e a diferença são 10 mm, pequena o bastante para ser lida errado e grande o bastante para inutilizar a fechadura.",
     "Além disso reduz dois códigos a um para um distribuidor com estoque, que é a razão de as versões ajustáveis dominarem a nossa linha publicada e não as fixas.",
     "O QUE AQUI NÃO PUBLICAMOS",
     "As cotas da testa (comprimento e largura da chapa que aparece no canto) não estão indicadas para todas as caixas do catálogo. Onde estão, o desenho cotado as traz. Onde não estão, confirmaremos contra o modelo específico em vez de citar um número de família, porque a testa varia dentro de uma família mais do que a distância ao eixo.",

@@ -27,7 +27,7 @@ const introCopy = {
   es: {
     welcome: "Barras antipánico, cerraduras y herrajes para puertas",
     title: "Fabricados en Guangdong desde 1998",
-    body: "Canton Hyland fabrica herrajes para puertas comerciales y residenciales desde 1998. Producimos dispositivos antipánico, cerraduras tubulares y cilíndricas, cerrojos, cajas de cerradura, cilindros, manillas y herrajes para vidrio. ISO 9001 desde 2002.",
+    body: "Canton Hyland fabrica herrajes para puertas comerciales y residenciales desde 1998. Producimos dispositivos antipánico, cerraduras tubulares y cilíndricas, cerrojos, cajas de cerradura, cilindros, manijas y herrajes para vidrio. ISO 9001 desde 2002.",
     more: "Más enlaces",
     company: "Canton Hyland Hardware\n(Group) Co., Ltd",
     tagline: "Soluciones integrales para la industria de la construcción",

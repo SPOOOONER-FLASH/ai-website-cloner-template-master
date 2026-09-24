@@ -16,6 +16,7 @@
  */
 import { readFileSync, readdirSync, mkdirSync, statSync } from "node:fs";
 import { writeFileAtomic } from "./lib/write-atomic.mjs";
+import { regionalTermsFor } from "./lib/search-regional-terms.mjs";
 
 const OUT = "public/search-index.json";
 
@@ -115,6 +116,8 @@ for (const p of allProducts) {
         ...(p.doorTypes ?? []),
         ...specTerms,
         ...p.categoryPath,
+        // The /es/ and /pt/ pages search this same index: see scripts/lib/search-regional-terms.mjs.
+        regionalTermsFor([].concat(p.categoryPath ?? [])[0]),
       ],
       p.modelTbc ? null : p.model,
     ),
@@ -146,6 +149,9 @@ for (const c of categories) {
       c.name,
       c.nameZh,
       c.summary,
+      c.nameEs,
+      c.namePt,
+      regionalTermsFor(c.slug),
       // Child names matter: someone searching "fire door" should reach the parent
       // category even though no top-level category is called that.
       ...(c.children ?? []).flatMap((child) => [child.name, child.nameZh, child.summary]),

@@ -77,7 +77,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       body:
         "The moulds and dies behind the catalogue are ours. That is why changing a lever profile, a rosette, a plate or a backset is a normal order here rather than a special project — and why an OEM part starts from a sample, a drawing or a photograph instead of from a catalogue page. Where no mould exists for the form you want, we cut one.",
       bodyEs:
-        "Los moldes y matrices que hay detrás del catálogo son nuestros. Por eso cambiar el perfil de una manilla, una roseta, una placa o una distancia al eje es aquí un pedido normal y no un proyecto especial — y por eso una pieza OEM parte de una muestra, un plano o una fotografía, no de una página de catálogo. Si no existe molde para la forma que usted quiere, lo fabricamos.",
+        "Los moldes y matrices que hay detrás del catálogo son nuestros. Por eso cambiar el perfil de una manija, una roseta, una placa o una entrada es aquí un pedido normal y no un proyecto especial — y por eso una pieza OEM parte de una muestra, un plano o una fotografía, no de una página de catálogo. Si no existe molde para la forma que usted quiere, lo fabricamos.",
       bodyPt:
         "Os moldes e as matrizes por trás do catálogo são nossos. É por isso que mudar o perfil de uma maçaneta, uma roseta, um espelho ou um backset aqui é um pedido normal e não um projeto especial — e por isso uma peça OEM parte de uma amostra, de um desenho ou de uma fotografia, e não de uma página de catálogo. Se não existe molde para a forma que você quer, nós fazemos um.",
       figure: {
@@ -95,7 +95,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       body:
         "Plate, rose and lever blanks are pressed in house from brass, stainless steel and zinc alloy. Working from our own tooling is what keeps the hole positions on the hundredth plate identical to the first — which matters more than it sounds, because a fixing centre that has drifted two millimetres cannot be corrected on site.",
       bodyEs:
-        "Las placas, rosetas y cuerpos de manilla se estampan en planta a partir de latón, acero inoxidable y zamak. Trabajar con utillaje propio es lo que mantiene la posición de los taladros idéntica en la placa número cien y en la primera — algo más importante de lo que parece, porque una distancia entre fijaciones desviada dos milímetros no se corrige en obra.",
+        "Las placas, rosetas y cuerpos de manija se estampan en planta a partir de latón, acero inoxidable y zamak. Trabajar con utillaje propio es lo que mantiene la posición de los taladros idéntica en la placa número cien y en la primera — algo más importante de lo que parece, porque una distancia entre fijaciones desviada dos milímetros no se corrige en obra.",
       bodyPt:
         "Espelhos, rosetas e corpos de maçaneta são estampados aqui dentro, a partir de latão, aço inoxidável e zamak. Trabalhar com ferramental próprio é o que mantém a posição dos furos idêntica no espelho número cem e no primeiro — o que importa mais do que parece, porque um entre-eixos de fixação dois milímetros fora não se corrige em obra.",
       figure: null,
@@ -121,7 +121,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       body:
         "Polished brass, antique brass, satin nickel, satin chrome, black nickel, satin and polished stainless. A finish code is not decoration — it is what decides whether a handle survives a coastal doorway or a wet room, and it is the one specification most often left off a purchase order.",
       bodyEs:
-        "Latón pulido, latón antiguo, níquel satinado, cromo satinado, níquel negro, inoxidable satinado y pulido. Un código de acabado no es decoración: decide si una manilla sobrevive en una puerta costera o en una zona húmeda, y es la especificación que más veces falta en un pedido.",
+        "Latón pulido, latón antiguo, níquel satinado, cromo satinado, níquel negro, inoxidable satinado y pulido. Un código de acabado no es decoración: decide si una manija sobrevive en una puerta costera o en una zona húmeda, y es la especificación que más veces falta en un pedido.",
       bodyPt:
         "Latão polido, latão antigo, níquel acetinado, cromo acetinado, níquel preto, inoxidável acetinado e polido. Um código de acabamento não é enfeite: é o que decide se uma maçaneta sobrevive numa porta de orla marítima ou numa área molhada, e é a especificação que mais falta num pedido de compra.",
       /*
@@ -144,7 +144,7 @@ export function capabilitySteps({ models }: { models: number }): CapabilityStep[
       body:
         "Cases, cylinders, springs, spindles and trim are brought together and function-tested as a set. A lock is not the sum of parts that each pass on their own — a latch and a strike that are both in tolerance can still bind, and that is only found by turning the handle.",
       bodyEs:
-        "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un picaporte y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manilla.",
+        "Cajas, cilindros, muelles, cuadradillos y guarniciones se montan y se prueban funcionando como conjunto. Una cerradura no es la suma de piezas que aprueban por separado: un picaporte y un cerradero ambos dentro de tolerancia pueden agarrotarse, y eso sólo se descubre girando la manija.",
       bodyPt:
         "Caixas, cilindros, molas, eixos quadrados e guarnições são montados e testados funcionando como conjunto. Uma fechadura não é a soma de peças que passam separadamente: uma lingueta e uma contratesta ambas dentro da tolerância ainda podem emperrar, e isso só se descobre girando a maçaneta.",
       figure: null,

@@ -166,7 +166,7 @@ export const FINISH_CODES: readonly FinishCode[] = [
     family: "plated",
     evidence: "catalogue",
     note: "Written out as “SN=Satin Nickel”. The most common finish in the lever and cylinder ranges.",
-    noteEs: "Escrito como «SN=Satin Nickel». El acabado más frecuente en manillas y cilindros.",
+    noteEs: "Escrito como «SN=Satin Nickel». El acabado más frecuente en manijas y cilindros.",
   },
   {
     code: "NP",
@@ -398,7 +398,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     namePt: "Entrada — chaveada por fora",
     evidence: "catalogue",
     note: "The most common suffix in the catalogue. Key outside, turn or lever inside.",
-    noteEs: "El sufijo más frecuente del catálogo. Llave por fuera, pomo o manilla por dentro.",
+    noteEs: "El sufijo más frecuente del catálogo. Llave por fuera, perilla o manija por dentro.",
   },
   {
     code: "BK",
@@ -443,7 +443,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     namePt: "Sala de aula",
     evidence: "catalogue",
     note: "Named on model 5807 SSCR. Keyed outside only; the inside lever is always free.",
-    noteEs: "Indicado en el modelo 5807 SSCR. Con llave sólo por fuera; la manilla interior queda siempre libre.",
+    noteEs: "Indicado en el modelo 5807 SSCR. Con llave sólo por fuera; la manija interior queda siempre libre.",
   },
   {
     code: "EL",
@@ -470,7 +470,7 @@ export const FUNCTION_CODES: readonly FunctionCode[] = [
     namePt: null,
     evidence: "unconfirmed",
     note: "Twelve cylinders, on the 60, 65, 70, 80 and 90mm lengths (counted 2026-09-22). Key-and-Turn — key one side, thumbturn the other — fits the pattern beside DK, and is not confirmed.",
-    noteEs: "Doce cilindros, en las longitudes de 60, 65, 70, 80 y 90 mm (contados el 2026-09-22). «Llave y pomo» encaja con el patrón junto a DK, pero no está confirmado.",
+    noteEs: "Doce cilindros, en las longitudes de 60, 65, 70, 80 y 90 mm (contados el 2026-09-22). «Llave y perilla» encaja con el patrón junto a DK, pero no está confirmado.",
   },
   {
     code: "IK",

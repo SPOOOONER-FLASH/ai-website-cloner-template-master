@@ -90,7 +90,7 @@
       },
       {
         "question": "¿Por qué la mayoría de los cierrapuertas comerciales son regulables?",
-        "answer": "Porque una potencia fija tiene que estar bien antes de salir de fábrica, y que el cuadro y la puerta difieran en una potencia solo se descubre el día del montaje. Un cierrapuertas regulable cubre una banda, por ejemplo de 2 a 4, y se ajusta en obra. Además reduce los números de pieza que un distribuidor tiene que almacenar."
+        "answer": "Porque una potencia fija tiene que estar bien antes de salir de fábrica, y que la planilla y la puerta difieran en una potencia solo se descubre el día del montaje. Un cierrapuertas regulable cubre una banda, por ejemplo de 2 a 4, y se ajusta en obra. Además reduce los números de pieza que un distribuidor tiene que almacenar."
       },
       {
         "question": "Mi puerta no cierra el picaporte. ¿Subo la velocidad de golpe final?",
@@ -116,7 +116,7 @@
       },
       {
         "question": "Por que a maioria das molas comerciais é regulável?",
-        "answer": "Porque uma potência fixa precisa estar certa antes de sair da fábrica, e o mapa e a porta divergirem numa potência só é descoberto no dia da montagem. Uma mola regulável cobre uma faixa, por exemplo de 2 a 4, e é ajustada na obra. Além disso reduz os códigos que um distribuidor precisa estocar."
+        "answer": "Porque uma potência fixa precisa estar certa antes de sair da fábrica, e a planilha e a porta divergirem numa potência só é descoberto no dia da montagem. Uma mola regulável cobre uma faixa, por exemplo de 2 a 4, e é ajustada na obra. Além disso reduz os códigos que um distribuidor precisa estocar."
       },
       {
         "question": "A minha porta não trava. Devo aumentar a velocidade de travamento?",
@@ -128,7 +128,7 @@
       },
       {
         "question": "É permitido retardo de fecho numa porta corta-fogo?",
-        "answer": "Não como ajuste mecânico. O retardo mantém a porta aberta em ângulo amplo, e qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem de ser um dispositivo eletromagnético liberado pela central de alarme."
+        "answer": "Não como ajuste mecânico. O retardo mantém a porta aberta em ângulo amplo, e qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem que ser um dispositivo eletromagnético liberado pela central de alarme."
       }
     ]
   },
@@ -145,11 +145,11 @@
     "Aparecen un ancho y una masa por una razón: el brazo de palanca. Una puerta ancha y ligera y otra estrecha y pesada pueden plantear el mismo problema de cierre por motivos distintos, y la potencia que resuelve una no resuelve necesariamente la otra. Tome la mayor de las dos respuestas.",
     "Un cierrapuertas por debajo de la potencia de la puerta no la cerrará ni enclavará de forma fiable contra una junta o una corriente de aire. Uno por encima cerrará la puerta con más fuerza de la que nadie en el edificio quiere, y en un hueco accesible puede dejarla fuera de norma.",
     "POR QUÉ CASI TODOS LOS COMERCIALES SON REGULABLES",
-    "Un cierrapuertas de potencia fija tiene que estar bien especificado antes de salir. Uno regulable cubre una banda (a menudo de 2 a 4, o de 3 a 6) y se ajusta en obra, lo que elimina el fallo en el que el cuadro y la puerta difieren en una potencia y nadie se entera hasta el día del montaje.",
+    "Un cierrapuertas de potencia fija tiene que estar bien especificado antes de salir. Uno regulable cubre una banda (a menudo de 2 a 4, o de 3 a 6) y se ajusta en obra, lo que elimina el fallo en el que la planilla y la puerta difieren en una potencia y nadie se entera hasta el día del montaje.",
     "También reduce varios números de pieza a uno para un distribuidor con stock, y por eso las potencias regulables dominan las gamas comerciales. La contrapartida es que un regulable ajustado al mínimo no es idéntico a un fijo de esa potencia: es un mecanismo mayor bajado de punto.",
     "EN QUÉ DIFIERE EL ENFOQUE NORTEAMERICANO",
     "ANSI/BHMA A156.4 cubre los controles de puerta y los gradúa, pero la convención de selección norteamericana se apoya más en el tamaño del muelle y en la configuración del brazo que en un número de potencia publicado, y los límites de accesibilidad los fija el código de edificación y no la norma de herraje.",
-    "La consecuencia práctica para quien especifica en los dos mercados: una potencia EN es un valor que se puede escribir en un cuadro y que un proveedor puede igualar. En el lado americano no hay un número equivalente único, así que un cuadro transfronterizo debe indicar ancho de hoja, masa y fuerza de apertura requerida, y dejar que el proveedor de cada mercado seleccione con eso.",
+    "La consecuencia práctica para quien especifica en los dos mercados: una potencia EN es un valor que se puede escribir en una planilla y que un proveedor puede igualar. En el lado americano no hay un número equivalente único, así que una planilla transfronteriza debe indicar ancho de hoja, masa y fuerza de apertura requerida, y dejar que el proveedor de cada mercado seleccione con eso.",
     "LA RESTRICCIÓN QUE MANDA SOBRE LA POTENCIA",
     "La accesibilidad. En un hueco que debe poder usar alguien con fuerza limitada existe una fuerza máxima admisible para abrir, y ese límite puede entrar en conflicto con la potencia que la hoja pediría.",
     "Cuando chocan, el cierrapuertas no se puede simplemente bajar hasta cumplir, porque uno ajustado por debajo de lo que pide la puerta no la cerrará ni enclavará, y en una cortafuego, no enclavar es un fallo de la puerta cortafuego, no una molestia. La solución suele ser otra clase de dispositivo: un cierrapuertas de menor fuerza de apertura y mayor momento de cierre, o un operador motorizado.",
@@ -176,21 +176,21 @@
     "Aparecem uma largura e uma massa por uma razão: o braço de alavanca. Uma porta larga e leve e outra estreita e pesada podem colocar o mesmo problema de fecho por motivos diferentes, e a potência que resolve uma não resolve necessariamente a outra. Tome a maior das duas respostas.",
     "Uma mola abaixo da potência da porta não vai fechá-la nem travá-la de forma confiável contra uma vedação ou uma corrente de ar. Uma acima vai fechar a porta com mais força do que qualquer pessoa no edifício quer, e num vão acessível pode deixá-la fora de norma.",
     "POR QUE QUASE TODAS AS COMERCIAIS SÃO REGULÁVEIS",
-    "Uma mola de potência fixa tem de estar bem especificada antes de sair. Uma regulável cobre uma faixa (muitas vezes de 2 a 4, ou de 3 a 6) e é ajustada na obra, o que elimina a falha em que o mapa e a porta divergem numa potência e ninguém descobre até ao dia da montagem.",
+    "Uma mola de potência fixa tem que estar bem especificada antes de sair. Uma regulável cobre uma faixa (muitas vezes de 2 a 4, ou de 3 a 6) e é ajustada na obra, o que elimina a falha em que a planilha e a porta divergem numa potência e ninguém descobre até ao dia da montagem.",
     "Também reduz vários códigos a um para um distribuidor com estoque, e por isso as potências reguláveis dominam as linhas comerciais. A contrapartida é que uma regulável ajustada ao mínimo não é idêntica a uma fixa dessa potência: é um mecanismo maior baixado de ponto.",
     "EM QUE A ABORDAGEM NORTE-AMERICANA DIFERE",
     "A ANSI/BHMA A156.4 cobre os controles de porta e os gradua, mas a convenção de seleção norte-americana apoia-se mais no tamanho da mola e na configuração do braço do que num número de potência publicado, e os limites de acessibilidade são fixados pelo código de edificação e não pela norma de ferragem.",
-    "A consequência prática para quem especifica nos dois mercados: uma potência EN é um valor que se pode escrever num mapa e que um fornecedor pode igualar. No lado americano não há um número equivalente único, então um mapa transfronteiriço deve indicar largura de folha, massa e força de abertura exigida, e deixar o fornecedor de cada mercado selecionar com isso.",
+    "A consequência prática para quem especifica nos dois mercados: uma potência EN é um valor que se pode escrever numa planilha e que um fornecedor pode igualar. No lado americano não há um número equivalente único, então uma planilha transfronteiriça deve indicar largura de folha, massa e força de abertura exigida, e deixar o fornecedor de cada mercado selecionar com isso.",
     "A RESTRIÇÃO QUE MANDA SOBRE A POTÊNCIA",
-    "A acessibilidade. Num vão que tem de poder ser usado por alguém com força limitada existe uma força máxima admissível para abrir, e esse limite pode entrar em conflito com a potência que a folha pediria.",
-    "Quando se chocam, a mola não pode simplesmente ser baixada até cumprir, porque uma ajustada abaixo do que a porta pede não vai fechá-la nem travá-la, e numa corta-fogo, não travar é uma falha da porta corta-fogo, não um incómodo. A solução costuma ser outra classe de dispositivo: uma mola de menor força de abertura e maior momento de fecho, ou um operador motorizado.",
+    "A acessibilidade. Num vão que tem que poder ser usado por alguém com força limitada existe uma força máxima admissível para abrir, e esse limite pode entrar em conflito com a potência que a folha pediria.",
+    "Quando se chocam, a mola não pode simplesmente ser baixada até cumprir, porque uma ajustada abaixo do que a porta pede não vai fechá-la nem travá-la, e numa corta-fogo, não travar é uma falha da porta corta-fogo, não um incômodo. A solução costuma ser outra classe de dispositivo: uma mola de menor força de abertura e maior momento de fecho, ou um operador motorizado.",
     "Os limites concretos de força variam por jurisdição e são fixados pela regulamentação de edificação, não pela EN 1154 nem pela A156.4. Confirme a cifra aplicável ao edifício antes de selecionar, porque é a única restrição que não se pode ajustar na obra.",
     "OS TRÊS AJUSTES QUE NÃO SÃO A POTÊNCIA",
-    "A velocidade de fecho governa a maior parte do percurso. A velocidade de travamento governa os últimos graus, onde o trinco tem de entrar no batente. A retenção de abertura trava a porta lançada contra uma parede ou uma pessoa.",
+    "A velocidade de fecho governa a maior parte do percurso. A velocidade de travamento governa os últimos graus, onde o trinco tem que entrar no batente. A retenção de abertura trava a porta lançada contra uma parede ou uma pessoa.",
     "São ajustados na obra com as válvulas do corpo, e nenhum muda a potência. Uma porta que não trava não se resolve subindo o travamento se a potência é baixa; uma que bate não se resolve baixando a velocidade de fecho se a potência é alta. Diagnostique primeiro a potência.",
     "O RETARDO DE FECHO, E ONDE ELE NÃO ENTRA",
     "O retardo mantém a porta aberta em ângulo amplo durante um tempo antes de fechar, útil onde passam carrinhos, cadeiras de rodas ou entregas. É uma função de válvula, não um retentor de porta.",
-    "Não entra numa porta corta-fogo a não ser que o conjunto completo seja classificado para isso, porque qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem de ser um dispositivo eletromagnético liberado pela central de alarme, não um ajuste mecânico.",
+    "Não entra numa porta corta-fogo a não ser que o conjunto completo seja classificado para isso, porque qualquer coisa que mantenha uma corta-fogo aberta muda o que o conjunto faz num incêndio. Uma retenção em corta-fogo tem que ser um dispositivo eletromagnético liberado pela central de alarme, não um ajuste mecânico.",
     "O QUE PUBLICAMOS",
     "O nosso catálogo tem nove modelos de mola de porta. Onde um modelo publica uma potência ou uma faixa regulável, está na tabela de especificação da sua página. Onde não, a linha falta em vez de ser preenchida com uma cifra típica: uma mola especificada uma potência a mais ou a menos é uma porta que bate ou que não trava, e as duas coisas são descobertas depois da montagem."
   ]

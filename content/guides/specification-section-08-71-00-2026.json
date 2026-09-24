@@ -109,7 +109,7 @@
       },
       {
         "question": "¿Cómo debe escribirse un juego de herrajes?",
-        "answer": "De forma que alguien que nunca ha visto el edificio pueda cotizarlo: un número de juego, cada artículo con cantidad, fabricante, número de catálogo, código de acabado y función, y los huecos a los que aplica. El cuadro después mapea huecos a números de juego en lugar de repetir los artículos."
+        "answer": "De forma que alguien que nunca ha visto el edificio pueda cotizarlo: un número de juego, cada artículo con cantidad, fabricante, número de catálogo, código de acabado y función, y los huecos a los que aplica. La planilla después mapea huecos a números de juego en lugar de repetir los artículos."
       },
       {
         "question": "¿Basta con «o equivalente aprobado»?",
@@ -121,7 +121,7 @@
       },
       {
         "question": "¿Qué necesitan para cotizar una especificación sin hacer preguntas?",
-        "answer": "Los juegos de herrajes con código de acabado, función, mano y espesor por línea; el cuadro que mapea juegos a puertas; los huecos cortafuego marcados como tales; y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm."
+        "answer": "Los juegos de herrajes con código de acabado, función, mano y espesor por línea; la planilla que mapea juegos a puertas; los huecos cortafuego marcados como tales; y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm."
       }
     ],
     "pt": [
@@ -131,15 +131,15 @@
       },
       {
         "question": "Que cláusulas realmente decidem o preço?",
-        "answer": "Quatro, e as quatro parecem de trâmite. O procedimento de substituição, a cláusula de chaveamento, quando a evidência de ensaio é exigida (na licitação ou no submittal) e os termos de garantia. «Garantia padrão do fabricante» não é um termo: é uma promessa de aceitar o que esse padrão vier a ser."
+        "answer": "Quatro, e as quatro parecem de trâmite. O procedimento de substituição, a cláusula de chaveamento, quando a evidência de ensaio é exigida (na licitação ou no submittal) e os termos de garantia. \"Garantia padrão do fabricante\" não é um termo: é uma promessa de aceitar o que esse padrão vier a ser."
       },
       {
         "question": "Como deve ser escrito um jogo de ferragens?",
-        "answer": "De forma que alguém que nunca viu o edifício consiga cotá-lo: um número de jogo, cada item com quantidade, fabricante, número de catálogo, código de acabamento e função, e os vãos a que se aplica. O mapa depois relaciona vãos a números de jogo em vez de repetir os itens."
+        "answer": "De forma que alguém que nunca viu o edifício consiga cotá-lo: um número de jogo, cada item com quantidade, fabricante, número de catálogo, código de acabamento e função, e os vãos a que se aplica. A planilha depois relaciona vãos a números de jogo em vez de repetir os itens."
       },
       {
-        "question": "«Ou equivalente aprovado» basta?",
-        "answer": "Só se a seção disser também o que equivalente significa. Caso contrário, «equivalente» é decidido em value engineering comparando o que dois produtos partilham e não em que diferem. A forma forte nomeia o produto e as duas ou três propriedades que o tornaram a escolha, para que um substituto possa ser avaliado contra algo."
+        "question": "\"Ou equivalente aprovado\" basta?",
+        "answer": "Só se a seção disser também o que equivalente significa. Caso contrário, \"equivalente\" é decidido em value engineering comparando o que dois produtos partilham e não em que diferem. A forma forte nomeia o produto e as duas ou três propriedades que o tornaram a escolha, para que um substituto possa ser avaliado contra algo."
       },
       {
         "question": "Quando as molas de porta devem ser ajustadas?",
@@ -147,7 +147,7 @@
       },
       {
         "question": "O que precisam para cotar uma especificação sem fazer perguntas?",
-        "answer": "Os jogos de ferragens com código de acabamento, função, mão e espessura por linha; o mapa que relaciona jogos a portas; os vãos corta-fogo marcados como tais; e os tipos e espessuras de porta, porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm."
+        "answer": "Os jogos de ferragens com código de acabamento, função, mão e espessura por linha; a planilha que relaciona jogos a portas; os vãos corta-fogo marcados como tais; e os tipos e espessuras de porta, porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm."
       }
     ]
   },
@@ -159,19 +159,19 @@
     "El herraje de puerta es la sección 08 71 00 de MasterFormat, y la sección tiene una forma fija de tres partes que todo prescriptor, contratista y proveedor lee en el mismo orden. Conocer la forma no es pedantería: es la diferencia entre un paquete que se cotiza y uno que genera cuatro rondas de preguntas.",
     "La regla que explica la mayoría de los errores: la parte 1 son obligaciones, la parte 2 son cosas, la parte 3 es lo que pasa en obra. Una frase en la parte equivocada se ignora o se cotiza dos veces.",
     "## Qué va en cada parte",
-    "| Parte | Contiene | Ejemplos |\n| --- | --- | --- |\n| 1 (General | Obligaciones, referencias, submittals, garantía, proceso de amaestramiento | «Presentar el plan de llaves para aprobación antes de cortar», «Cumplir EN 1634-1 donde se indique» |\n| 2) Productos | Las cosas en sí, por tipo y prestación | Manillas, cierrapuertas, bisagras, acabados, los juegos de herrajes |\n| 3, Ejecución | Montaje, alturas, ajuste, entrega | «Montar manillas a 1050 mm sobre suelo acabado», «Ajustar cierrapuertas tras equilibrar la climatización» |",
+    "| Parte | Contiene | Ejemplos |\n| --- | --- | --- |\n| 1 (General | Obligaciones, referencias, submittals, garantía, proceso de amaestramiento | «Presentar el plan de llaves para aprobación antes de cortar», «Cumplir EN 1634-1 donde se indique» |\n| 2) Productos | Las cosas en sí, por tipo y prestación | Manijas, cierrapuertas, bisagras, acabados, los juegos de herrajes |\n| 3, Ejecución | Montaje, alturas, ajuste, entrega | «Montar manijas a 1050 mm sobre piso acabado», «Ajustar cierrapuertas tras equilibrar la climatización» |",
     "Los dos traslados más comunes merecen nombrarse. Una cláusula de garantía escrita en la parte 2 se adhiere a un producto y no al paquete. Y una altura de montaje escrita en la parte 2 llega con la ficha técnica en vez de con el instalador, que es justo quien la necesitaba.",
     "## Parte 1: las cuatro cláusulas que deciden el precio",
     "Son las que parecen de trámite y no lo son.",
-    "Procedimiento de sustitución: si se permiten sustituciones, qué evidencia se exige y hasta cuándo. Una sección callada sobre esto tiene sustituciones igualmente, decididas por quien más presión de coste tenga. Nuestra página de submittal explica qué debe contener una solicitud de sustitución para poder evaluarse.",
+    "Procedimiento de sustitución: si se permiten sustituciones, qué evidencia se exige y hasta cuándo. Una sección callada sobre esto tiene sustituciones igualmente, decididas por quien más presión de costo tenga. Nuestra página de submittal explica qué debe contener una solicitud de sustitución para poder evaluarse.",
     "Amaestramiento: quién es dueño del sistema de llaves, quién puede autorizar un corte, y si el registro es un entregable. Esta cláusula decide si el edificio tiene un sistema documentado dentro de diez años o un problema arqueológico. No cuesta nada escribirla y no se puede añadir después.",
     "Evidencia de ensayo: qué certificados se exigen, contra qué norma, y si se exigen en licitación o en submittal. Pedirlos en licitación reduce los licitadores a quienes tienen la evidencia; pedirlos en submittal lo descubre cuando el precio ya está cerrado, que es de donde viene la presión para aceptar una afirmación comercial.",
     "Garantía: duración, qué cubre, y si sobrevive a un cambio de propietario. «Garantía estándar del fabricante» no es un término: es una promesa de aceptar lo que ese estándar resulte ser.",
     "## Parte 2: cómo escribir un juego de herrajes",
     "Un juego de herrajes es la unidad que cotiza una fábrica. Debe escribirse de forma que alguien que nunca ha visto el edificio pueda ponerle precio.",
-    "Dé al juego un número, liste cada artículo con cantidad, fabricante, número de catálogo, código de acabado y función, e indique los huecos a los que aplica. El cuadro después mapea huecos a números de juego en lugar de repetir los artículos.",
-    "Los cuatro valores que más se omiten, por orden de lo que cuestan: el código de acabado (un nombre no es un código), la función (una descripción no es una función), la mano con su convención nombrada, y el espesor de puerta y la distancia al eje para cualquier cosa embutida o taladrada.",
-    "Escriba los requisitos de prestación junto al producto que restringen, no en un párrafo general. Un «Grade 1» al principio de la parte 2 y una manilla al final deja ambiguo si la manilla está incluida.",
+    "Dé al juego un número, liste cada artículo con cantidad, fabricante, número de catálogo, código de acabado y función, e indique los huecos a los que aplica. La planilla después mapea huecos a números de juego en lugar de repetir los artículos.",
+    "Los cuatro valores que más se omiten, por orden de lo que cuestan: el código de acabado (un nombre no es un código), la función (una descripción no es una función), la mano con su convención nombrada, y el espesor de puerta y la entrada para cualquier cosa embutida o taladrada.",
+    "Escriba los requisitos de prestación junto al producto que restringen, no en un párrafo general. Un «Grade 1» al principio de la parte 2 y una manija al final deja ambiguo si la manija está incluida.",
     "## Especificar por prestación frente a especificar por marca",
     "Dos enfoques legítimos, y mezclarlos mal es donde las secciones se estropean.",
     "Una especificación por marca nombra fabricantes y números de catálogo. Es precisa y estrecha el campo, que puede ser exactamente la intención.",
@@ -179,7 +179,7 @@
     "El híbrido habitual, «Fabricante X modelo Y, o equivalente aprobado», solo sirve si la sección dice además qué significa equivalente. Sin eso, «equivalente» se decide en value engineering comparando características compartidas en vez de diferencias, que es el modo de fallo descrito en nuestra página de submittal.",
     "El híbrido fuerte nombra el producto y las dos o tres propiedades que lo hicieron la elección. Entonces un sustituto se puede evaluar contra algo.",
     "## Parte 3: las cláusulas que el instalador realmente necesita",
-    "Alturas de montaje, indicadas una vez y con unidades. Donde se especifique un eje de manilla, dé la cota en las unidades con las que trabaja la obra y diga desde qué referencia, sobre suelo acabado es lo habitual, y «acabado» importa donde todavía falta una capa de mortero o una moqueta.",
+    "Alturas de montaje, indicadas una vez y con unidades. Donde se especifique un eje de manija, dé la cota en las unidades con las que trabaja la obra y diga desde qué referencia, sobre piso acabado es lo habitual, y «acabado» importa donde todavía falta una capa de mortero o una moqueta.",
     "Secuencia de ajuste. Los cierrapuertas deben ajustarse después de equilibrar la climatización del edificio, porque la presión del aire cambia la fuerza que necesita una puerta. Un cierrapuertas ajustado a la perfección en un edificio sin presurizar es un cierrapuertas del que se quejarán.",
     "Instrucción de cortafuego. Que ningún componente de un conjunto clasificado puede sustituirse ni taladrarse más allá de la configuración ensayada, y que cualquier variación exige evidencia.",
     "Entrega. El registro de llaves, las instrucciones de uso, y la lista de lo realmente instalado frente a lo previsto, porque esas dos listas difieren en todas las obras y la diferencia merece registrarse mientras alguien todavía recuerda por qué.",
@@ -191,16 +191,16 @@
     "Y no cite una norma del mercado equivocado. EN 1634-1 y UL 10C ensayan cosas solapadas pero distintas, como explica nuestra página de cortafuego, y una sección que nombra las dos sin decir cuál manda ha pedido algo que ningún producto tiene.",
     "## Las alturas de montaje, y la referencia que las decide",
     "Las alturas van en la parte 3 porque el lector es el instalador. Hay que indicar dos cosas: la cifra y desde dónde se mide.",
-    "La referencia es lo que sale mal. «Sobre suelo acabado» significa sobre el suelo tal como existirá al final: después del mortero, después de la baldosa, después de la moqueta. En una obra donde el herraje se monta antes del pavimento, una altura tomada desde la losa está equivocada en el espesor de lo que llegue después, y lo está de forma consistente en todas las puertas del edificio.",
-    "La práctica habitual sitúa el eje de manilla en torno a 1050 mm sobre suelo acabado, y las barras antipánico y los tiradores caen en una banda aproximada entre 900 y 1100 mm según el dispositivo y la jurisdicción. Trátelas como punto de partida y no como requisito: las reglas de accesibilidad fijan las cifras vinculantes y varían por país, así que confirme la que aplica al edificio antes de escribirla.",
+    "La referencia es lo que sale mal. «Sobre piso acabado» significa sobre el piso tal como existirá al final: después del mortero, después de la baldosa, después de la moqueta. En una obra donde el herraje se monta antes del pavimento, una altura tomada desde la losa está equivocada en el espesor de lo que llegue después, y lo está de forma consistente en todas las puertas del edificio.",
+    "La práctica habitual sitúa el eje de manija en torno a 1050 mm sobre piso acabado, y las barras antipánico y los tiradores caen en una banda aproximada entre 900 y 1100 mm según el dispositivo y la jurisdicción. Trátelas como punto de partida y no como requisito: las reglas de accesibilidad fijan las cifras vinculantes y varían por país, así que confirme la que aplica al edificio antes de escribirla.",
     "Donde un proyecto esté sujeto a una norma de accesibilidad, cite la norma en la parte 1 y repita la altura resultante en la parte 3. El instalador trabaja con la parte 3 y no leerá la lista de referencias, y la lista de referencias es lo que hace defendible la altura.",
     "## Revisiones, y el hábito que evita las peores discusiones",
     "Una sección de herrajes se revisa: por adenda en licitación, por instrucción durante la obra y por sustitución después de la adjudicación. Cada revisión es una oportunidad de que dos partes acaben con documentos distintos.",
-    "Dé a cada emisión un número de revisión y una fecha, póngalos en el encabezado del cuadro además de en la sección, e indique en la parte 1 que solo manda la última emisión. Suena a burocracia y es la prevención de litigios más barata del paquete.",
-    "La discusión que evita es concreta y frecuente: un juego cambiado por adenda, la adenda llegando al contratista pero no al proveedor, y cuarenta huecos llegando con el juego superado. Nadie en esa secuencia hizo nada irrazonable, y el coste cae sobre quien no pueda demostrar con qué emisión trabajaba.",
+    "Dé a cada emisión un número de revisión y una fecha, póngalos en el encabezado de la planilla además de en la sección, e indique en la parte 1 que solo manda la última emisión. Suena a burocracia y es la prevención de litigios más barata del paquete.",
+    "La discusión que evita es concreta y frecuente: un juego cambiado por adenda, la adenda llegando al contratista pero no al proveedor, y cuarenta huecos llegando con el juego superado. Nadie en esa secuencia hizo nada irrazonable, y el costo cae sobre quien no pueda demostrar con qué emisión trabajaba.",
     "Conserve las emisiones superadas en vez de sobrescribirlas. Cuando dentro de dieciocho meses llegue la pregunta de por qué un hueco tiene el herraje que tiene, la respuesta está en la versión que estaba vigente cuando se pidió.",
     "## Qué necesitamos para cotizar una sección sin hacer preguntas",
-    "Los juegos de herrajes, con los cuatro valores de arriba por línea. El cuadro de huecos que mapea juegos a puertas. Los códigos de acabado. Los huecos cortafuego, marcados como tales. Y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm.",
+    "Los juegos de herrajes, con los cuatro valores de arriba por línea. La planilla de huecos que mapea juegos a puertas. Los códigos de acabado. Los huecos cortafuego, marcados como tales. Y los tipos y espesores de puerta, porque una cerradura que vale para una hoja de madera de 45 mm puede no valer para una metálica de 45 mm.",
     "Con eso, una cotización vuelve como cotización. Sin eso, vuelve como lista de preguntas, y el ida y vuelta suele ser una semana por ronda, que es la razón de que esta sección merezca la hora que cuesta escribirla bien.",
     "Donde nuestro catálogo no puede cumplir una cláusula, decimos cuál en vez de cotizar rodeándola. Un proveedor que cotiza una especificación por prestación sin tener la evidencia no ha ganado el paquete: ha aplazado la conversación a la fase de submittal, donde cuesta más a todo el mundo."
   ],
@@ -212,48 +212,48 @@
     "A ferragem de porta é a seção 08 71 00 do MasterFormat, e a seção tem uma forma fixa de três partes que todo prescritor, empreiteiro e fornecedor lê na mesma ordem. Conhecer a forma não é pedantismo: é a diferença entre um pacote que é cotado e um que gera quatro rondas de perguntas.",
     "A regra que explica a maioria dos erros: a parte 1 são obrigações, a parte 2 são coisas, a parte 3 é o que acontece na obra. Uma frase na parte errada é ignorada ou cotada duas vezes.",
     "## O que vai em cada parte",
-    "| Parte | Contém | Exemplos |\n| --- | --- | --- |\n| 1 (Geral | Obrigações, referências, submittals, garantia, processo de chaveamento | «Apresentar o plano de chaves para aprovação antes de cortar», «Cumprir a EN 1634-1 onde indicado» |\n| 2) Produtos | As coisas em si, por tipo e desempenho | Maçanetas, molas, dobradiças, acabamentos, os jogos de ferragens |\n| 3, Execução | Montagem, alturas, ajuste, entrega | «Montar maçanetas a 1050 mm acima do piso acabado», «Ajustar molas após equilibrar a climatização» |",
+    "| Parte | Contém | Exemplos |\n| --- | --- | --- |\n| 1 (Geral | Obrigações, referências, submittals, garantia, processo de chaveamento | \"Apresentar o plano de chaves para aprovação antes de cortar\", \"Cumprir a EN 1634-1 onde indicado\" |\n| 2) Produtos | As coisas em si, por tipo e desempenho | Maçanetas, molas, dobradiças, acabamentos, os jogos de ferragens |\n| 3, Execução | Montagem, alturas, ajuste, entrega | \"Montar maçanetas a 1050 mm acima do piso acabado\", \"Ajustar molas após equilibrar a climatização\" |",
     "As duas trocas mais comuns merecem ser nomeadas. Uma cláusula de garantia escrita na parte 2 adere a um produto e não ao pacote. E uma altura de montagem escrita na parte 2 chega com a ficha técnica em vez de com o instalador, que é justamente quem precisava dela.",
     "## Parte 1: as quatro cláusulas que decidem o preço",
     "São as que parecem de trâmite e não são.",
     "Procedimento de substituição: se são permitidas substituições, que evidência é exigida e até quando. Uma seção calada sobre isto tem substituições na mesma, decididas por quem tiver mais pressão de custo. A nossa página de submittal explica o que um pedido de substituição deve conter para poder ser avaliado.",
     "Chaveamento: quem é dono do sistema de chaves, quem pode autorizar um corte, e se o registro é um entregável. Esta cláusula decide se o edifício tem um sistema documentado daqui a dez anos ou um problema arqueológico. Não custa nada escrevê-la e não pode ser acrescentada depois.",
     "Evidência de ensaio: que certificados são exigidos, contra que norma, e se são exigidos na licitação ou no submittal. Pedi-los na licitação reduz os concorrentes a quem tem a evidência; pedi-los no submittal descobre isso quando o preço já está fechado, que é de onde vem a pressão para aceitar uma afirmação comercial.",
-    "Garantia: duração, o que cobre, e se sobrevive a uma mudança de proprietário. «Garantia padrão do fabricante» não é um termo: é uma promessa de aceitar o que esse padrão vier a ser.",
+    "Garantia: duração, o que cobre, e se sobrevive a uma mudança de proprietário. \"Garantia padrão do fabricante\" não é um termo: é uma promessa de aceitar o que esse padrão vier a ser.",
     "## Parte 2: como escrever um jogo de ferragens",
     "Um jogo de ferragens é a unidade que uma fábrica cota. Deve ser escrito de forma que alguém que nunca viu o edifício lhe consiga pôr preço.",
-    "Dê ao jogo um número, liste cada item com quantidade, fabricante, número de catálogo, código de acabamento e função, e indique os vãos a que se aplica. O mapa depois relaciona vãos a números de jogo em vez de repetir os itens.",
+    "Dê ao jogo um número, liste cada item com quantidade, fabricante, número de catálogo, código de acabamento e função, e indique os vãos a que se aplica. A planilha depois relaciona vãos a números de jogo em vez de repetir os itens.",
     "Os quatro valores que mais são omitidos, por ordem do que custam: o código de acabamento (um nome não é um código), a função (uma descrição não é uma função), a mão com a sua convenção nomeada, e a espessura de porta e a distância ao eixo para tudo o que seja embutido ou furado.",
-    "Escreva os requisitos de desempenho ao lado do produto que restringem, não num parágrafo geral. Um «Grade 1» no início da parte 2 e uma maçaneta no fim deixa ambíguo se a maçaneta está incluída.",
+    "Escreva os requisitos de desempenho ao lado do produto que restringem, não num parágrafo geral. Um \"Grade 1\" no início da parte 2 e uma maçaneta no fim deixa ambíguo se a maçaneta está incluída.",
     "## Especificar por desempenho contra especificar por marca",
     "Duas abordagens legítimas, e misturá-las mal é onde as seções se estragam.",
     "Uma especificação por marca nomeia fabricantes e números de catálogo. É precisa e estreita o campo, o que pode ser exatamente a intenção.",
     "Uma especificação por desempenho indica o que o produto deve alcançar (um grau de durabilidade, uma classe de corrosão, uma classificação ao fogo, uma força máxima de abertura) e deixa competir qualquer produto que o demonstre.",
-    "O híbrido habitual, «Fabricante X modelo Y, ou equivalente aprovado», só serve se a seção disser também o que equivalente significa. Sem isso, «equivalente» é decidido em value engineering comparando características partilhadas em vez de diferenças, que é o modo de falha descrito na nossa página de submittal.",
+    "O híbrido habitual, \"Fabricante X modelo Y, ou equivalente aprovado\", só serve se a seção disser também o que equivalente significa. Sem isso, \"equivalente\" é decidido em value engineering comparando características partilhadas em vez de diferenças, que é o modo de falha descrito na nossa página de submittal.",
     "O híbrido forte nomeia o produto e as duas ou três propriedades que o tornaram a escolha. Então um substituto pode ser avaliado contra algo.",
     "## Parte 3: as cláusulas de que o instalador realmente precisa",
-    "Alturas de montagem, indicadas uma vez e com unidades. Onde for especificado um eixo de maçaneta, dê a cota nas unidades com que a obra trabalha e diga a partir de que referência, acima do piso acabado é o habitual, e «acabado» importa onde ainda falta uma camada de argamassa ou uma carpete.",
+    "Alturas de montagem, indicadas uma vez e com unidades. Onde for especificado um eixo de maçaneta, dê a cota nas unidades com que a obra trabalha e diga a partir de que referência, acima do piso acabado é o habitual, e \"acabado\" importa onde ainda falta uma camada de argamassa ou uma carpete.",
     "Sequência de ajuste. As molas devem ser ajustadas depois de equilibrar a climatização do edifício, porque a pressão do ar muda a força que uma porta precisa. Uma mola ajustada na perfeição num edifício sem pressurização é uma mola de que vão reclamar.",
     "Instrução de corta-fogo. Que nenhum componente de um conjunto classificado pode ser substituído nem furado além da configuração ensaiada, e que qualquer variação exige evidência.",
     "Entrega. O registro de chaves, as instruções de uso, e a lista do que foi realmente instalado perante o que estava previsto, porque essas duas listas diferem em todas as obras e a diferença merece ser registada enquanto alguém ainda se lembra porquê.",
     "## A cláusula de referências, e como citar uma norma para que obrigue",
     "A parte 1 enumera as normas em que a seção se apoia, e uma cláusula de referências descuidada é a forma mais comum de uma especificação deixar de ser exigível sem que ninguém repare.",
-    "Cite a norma pela designação completa e indique que parte ou classificação é exigida. «Cumprir a EN 1935» não é um requisito: a EN 1935 classifica dobradiças em oito campos, e uma dobradiça de qualquer grau cumpre-a. «EN 1935 grau 13, corrosão grau 4, apta para corta-fogo» já é, porque um produto cumpre ou não.",
+    "Cite a norma pela designação completa e indique que parte ou classificação é exigida. \"Cumprir a EN 1935\" não é um requisito: a EN 1935 classifica dobradiças em oito campos, e uma dobradiça de qualquer grau cumpre-a. \"EN 1935 grau 13, corrosão grau 4, apta para corta-fogo\" já é, porque um produto cumpre ou não.",
     "Diga se se refere à norma tal como está publicada ou tal como venha a ser alterada. Uma referência datada congela o requisito num texto conhecido; uma sem data move-se com a norma, o que costuma ser o que um projeto longo quer e de vez em quando não é.",
     "Não cite uma norma que não vai verificar. Uma seção que nomeia onze normas e não recebe evidência de nenhuma ensinou à cadeia de fornecimento que a lista de referências é decoração, e essa lição aplica-se também às normas que importavam.",
     "E não cite uma norma do mercado errado. A EN 1634-1 e a UL 10C ensaiam coisas sobrepostas mas diferentes, como explica a nossa página de corta-fogo, e uma seção que nomeia as duas sem dizer qual manda pediu algo que nenhum produto tem.",
     "## As alturas de montagem, e a referência que as decide",
     "As alturas vão na parte 3 porque o leitor é o instalador. Há duas coisas a indicar: a cifra e a partir de onde se mede.",
-    "A referência é o que corre mal. «Acima do piso acabado» significa acima do piso tal como existirá no fim: depois da argamassa, depois do ladrilho, depois da carpete. Numa obra onde a ferragem é montada antes do pavimento, uma altura tirada da laje está errada pela espessura do que chegar depois, e está errada de forma consistente em todas as portas do edifício.",
+    "A referência é o que corre mal. \"Acima do piso acabado\" significa acima do piso tal como existirá no fim: depois da argamassa, depois do ladrilho, depois da carpete. Numa obra onde a ferragem é montada antes do pavimento, uma altura tirada da laje está errada pela espessura do que chegar depois, e está errada de forma consistente em todas as portas do edifício.",
     "A prática habitual situa o eixo de maçaneta em torno de 1050 mm acima do piso acabado, e as barras antipânico e os puxadores caem numa faixa aproximada entre 900 e 1100 mm conforme o dispositivo e a jurisdição. Trate-as como ponto de partida e não como requisito: as regras de acessibilidade fixam as cifras vinculativas e variam por país, então confirme a que se aplica ao edifício antes de a escrever.",
     "Onde um projeto esteja sujeito a uma norma de acessibilidade, cite a norma na parte 1 e repita a altura resultante na parte 3. O instalador trabalha com a parte 3 e não vai ler a lista de referências, e a lista de referências é o que torna a altura defensável.",
     "## Revisões, e o hábito que evita as piores discussões",
     "Uma seção de ferragens é revista: por adenda na licitação, por instrução durante a obra e por substituição depois da adjudicação. Cada revisão é uma oportunidade de duas partes acabarem com documentos diferentes.",
-    "Dê a cada emissão um número de revisão e uma data, ponha-os no cabeçalho do mapa além da seção, e indique na parte 1 que só a última emissão manda. Soa a burocracia e é a prevenção de litígios mais barata do pacote.",
+    "Dê a cada emissão um número de revisão e uma data, ponha-os no cabeçalho da planilha além da seção, e indique na parte 1 que só a última emissão manda. Soa a burocracia e é a prevenção de litígios mais barata do pacote.",
     "A discussão que evita é concreta e frequente: um jogo alterado por adenda, a adenda a chegar ao empreiteiro mas não ao fornecedor, e quarenta vãos a chegar com o jogo superado. Ninguém nessa sequência fez nada irrazoável, e o custo cai sobre quem não conseguir provar com que emissão trabalhava.",
     "Guarde as emissões superadas em vez de as sobrescrever. Quando daqui a dezoito meses chegar a pergunta de por que um vão tem a ferragem que tem, a resposta está na versão que estava vigente quando foi pedido.",
     "## O que precisamos para cotar uma seção sem fazer perguntas",
-    "Os jogos de ferragens, com os quatro valores acima por linha. O mapa de vãos que relaciona jogos a portas. Os códigos de acabamento. Os vãos corta-fogo, marcados como tais. E os tipos e espessuras de porta, porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm.",
+    "Os jogos de ferragens, com os quatro valores acima por linha. A planilha de vãos que relaciona jogos a portas. Os códigos de acabamento. Os vãos corta-fogo, marcados como tais. E os tipos e espessuras de porta, porque uma fechadura que serve para uma folha de madeira de 45 mm pode não servir para uma metálica de 45 mm.",
     "Com isso, uma cotação volta como cotação. Sem isso, volta como lista de perguntas, e a ida e volta costuma ser uma semana por ronda, que é a razão de esta seção merecer a hora que custa escrevê-la bem.",
     "Onde o nosso catálogo não consegue cumprir uma cláusula, dizemos qual em vez de cotar contornando-a. Um fornecedor que cota uma especificação por desempenho sem ter a evidência não ganhou o pacote: adiou a conversa para a fase de submittal, onde custa mais a toda a gente."
   ]

@@ -105,7 +105,7 @@
       },
       {
         "question": "¿Una pieza pequeña de herraje puede llevar número de colada?",
-        "answer": "Solo si su lote se mantuvo separado a propósito. Una colada se convierte en toneladas de barra y después en cientos de miles de piezas pequeñas en cajones; cuando una manilla es una entre cuarenta mil idénticas, nada le devuelve el número. La trazabilidad a colada es una propiedad del lote segregado, no de la pieza."
+        "answer": "Solo si su lote se mantuvo separado a propósito. Una colada se convierte en toneladas de barra y después en cientos de miles de piezas pequeñas en cajones; cuando una manija es una entre cuarenta mil idénticas, nada le devuelve el número. La trazabilidad a colada es una propiedad del lote segregado, no de la pieza."
       },
       {
         "question": "¿Puedo obtener un certificado de material para una cerradura de embutir completa?",
@@ -117,7 +117,7 @@
       },
       {
         "question": "¿Cuándo tengo que pedir un 3.1?",
-        "answer": "Antes de producir. Un 3.1 sobre un lote concreto cambia cómo maneja la fábrica el material (los lotes separados no se pueden mezclar) así que hay que planificarlo y tiene coste. Pedirlo después de que la mercancía haya salido y se haya mezclado con el stock es pedir algo que ya no existe."
+        "answer": "Antes de producir. Un 3.1 sobre un lote concreto cambia cómo maneja la fábrica el material (los lotes separados no se pueden mezclar) así que hay que planificarlo y tiene costo. Pedirlo después de que la mercancía haya salido y se haya mezclado con el stock es pedir algo que ya no existe."
       }
     ],
     "pt": [
@@ -127,7 +127,7 @@
       },
       {
         "question": "Um relatório 2.2 basta?",
-        "answer": "Depende do que pediu. O 2.2 relata ensaios não específicos: diz-lhe como é em geral o material do fabricante, não como é concretamente o seu. Se a especificação nomeia um 3.1, um 2.2 bem apresentado não a cumpre, porque toda a distinção está em se o seu lote foi ensaiado."
+        "answer": "Depende do que pediu. O 2.2 relata ensaios não específicos: indica como é em geral o material do fabricante, não como é concretamente o seu. Se a especificação nomeia um 3.1, um 2.2 bem apresentado não a cumpre, porque toda a distinção está em se o seu lote foi ensaiado."
       },
       {
         "question": "Uma peça pequena de ferragem pode levar número de corrida?",
@@ -143,7 +143,7 @@
       },
       {
         "question": "Quando tenho de pedir um 3.1?",
-        "answer": "Antes de produzir. Um 3.1 sobre um lote concreto muda como a fábrica lida com o material (lotes separados não podem ser misturados) então tem de ser planejado e tem custo. Pedi-lo depois de a mercadoria ter saído e sido misturada com o estoque é pedir algo que já não existe."
+        "answer": "Antes de produzir. Um 3.1 sobre um lote concreto muda como a fábrica lida com o material (lotes separados não podem ser misturados) então tem que ser planejado e tem custo. Pedi-lo depois de a mercadoria ter saído e sido misturada com o estoque é pedir algo que já não existe."
       }
     ]
   },
@@ -162,7 +162,7 @@
     "## Qué traza realmente un número de colada",
     "Un número de colada identifica una única fusión en la acería. Cada kilo colado de esa fusión comparte una composición química, y un certificado 3.1 de esa colada indica el análisis y las propiedades mecánicas medidas sobre ella.",
     "Esa es una cadena fuerte mientras el material es grande y poco numeroso: una chapa, una barra, una bobina. Cada pieza puede llevar el número estampado o grabado, y el certificado sigue a la pieza.",
-    "Donde se debilita es exactamente donde vive el herraje de puerta. Una sola fusión se convierte en toneladas de barra; la barra se corta en cientos de miles de piezas pequeñas; las piezas van a cajones. Cuando una manilla es una entre cuarenta mil idénticas en un cajón, ya no lleva número de colada y nada que no sea segregar el lote entero se lo devuelve.",
+    "Donde se debilita es exactamente donde vive el herraje de puerta. Una sola fusión se convierte en toneladas de barra; la barra se corta en cientos de miles de piezas pequeñas; las piezas van a cajones. Cuando una manija es una entre cuarenta mil idénticas en un cajón, ya no lleva número de colada y nada que no sea segregar el lote entero se lo devuelve.",
     "Así que la afirmación honesta para herraje pequeño es esta: la trazabilidad a colada es una propiedad de un *lote que se mantuvo separado*, no de una pieza. Si un proyecto la necesita, hay que especificarla antes de producir, porque cambia cómo maneja la fábrica el material, y cuesta, porque los lotes separados no se pueden mezclar.",
     "## Otros dos puntos donde se rompe la cadena, y ninguno es deshonestidad",
     "El acabado: una pieza se galvaniza o se recubre a menudo en un especialista fuera de la fábrica. La colada del metal base puede conocerse; la química del baño es un registro aparte que lleva otra empresa, y un certificado que cubra ambos son dos documentos y no uno.",
@@ -189,7 +189,7 @@
     "## Qué podemos decir de nuestro propio material",
     "Publicamos el material y el acabado de cada producto tal como los suministramos: la familia de aleación, el código de acabado, y donde un modelo se suministra en más de uno, todos.",
     "Lo que no hacemos es publicar una reivindicación general de trazabilidad, porque la respuesta honesta depende del componente y de si el lote se mantuvo separado. Nuestra página de documentos indica los documentos de ensayo como disponibles a petición, y «a petición» ahí significa que le decimos, pedido a pedido, qué existe para esos componentes concretos, en vez de mandarle un documento que se parece al que pidió.",
-    "Donde un proyecto necesita EN 10204 3.1 sobre un componente concreto, eso es una conversación antes de producir y no una casilla que se marca después, y el coste de separar el lote se indica en lugar de absorberse en silencio y descubrirse luego en el precio.",
+    "Donde un proyecto necesita EN 10204 3.1 sobre un componente concreto, eso es una conversación antes de producir y no una casilla que se marca después, y el costo de separar el lote se indica en lugar de absorberse en silencio y descubrirse luego en el precio.",
     "## Por qué somos así de cuidadosos con un papel",
     "Porque el modo de fallo es diferido y caro. Un certificado prestado, un 2.2 presentado como 3.1, o un número de colada adherido a una pieza que nunca se segregó, los tres pasan la inspección del día.",
     "Fallan después, en una auditoría, en una obra donde alguien comprueba, y lo que falla no es un documento. Es cualquier otra cifra que el proveedor haya publicado, porque un comprador que encuentra un papel que no se sostiene no tiene forma de saber cuáles de los demás sí.",
@@ -197,47 +197,47 @@
     "Por eso las cinco comprobaciones de arriba están escritas como preguntas para mandar y no como motivos para irse. Un proveedor que las contesta con precisión vale más que uno cuyos papeles estaban ordenados a la primera, porque ahora usted sabe qué pasa cuando pregunta."
   ],
   "titlePt": "Rastreabilidade de material 2026: EN 10204 tipos 2.1, 2.2, 3.1 e 3.2, números de corrida, e o que uma fábrica de ferragens pode honestamente rastrear",
-  "summaryPt": "«Mandem o certificado de material» significa quatro documentos diferentes, e o que os separa é quem o assinou e se o ensaio foi feito sobre o seu metal. Esta página estabelece os tipos de documento da EN 10204, explica os números de corrida e onde a cadeia de custódia realmente se quebra em ferragem pequena, separa a rastreabilidade de material da RoHS e da REACH, e indica quais destes uma fábrica de ferragens pode honestamente fornecer.",
+  "summaryPt": "\"Mandem o certificado de material\" significa quatro documentos diferentes, e o que os separa é quem o assinou e se o ensaio foi feito sobre o seu metal. Esta página estabelece os tipos de documento da EN 10204, explica os números de corrida e onde a cadeia de custódia realmente se quebra em ferragem pequena, separa a rastreabilidade de material da RoHS e da REACH, e indica quais destes uma fábrica de ferragens pode honestamente fornecer.",
   "seoTitlePt": "Rastreabilidade de material 2026: EN 10204 3.1 contra 3.2 | Canton Hyland",
   "seoDescriptionPt": "Tipos de documento de inspeção EN 10204 2.1, 2.2, 3.1 e 3.2 comparados, o que um número de corrida rastreia, e o que uma fábrica de ferragens pode honestamente certificar sobre o seu material.",
   "bodyPt": [
-    "«Podem mandar o certificado de material?» é perguntado em quase toda consulta séria de ferragem, e é respondido com quatro documentos genuinamente diferentes conforme quem responde.",
+    "\"Podem mandar o certificado de material?\" é perguntado em quase toda consulta séria de ferragem, e é respondido com quatro documentos genuinamente diferentes conforme quem responde.",
     "As diferenças não são nuances de rigor. São diferenças em quem fez o ensaio, em se ele foi feito sobre o seu material, e em que assinatura está na página, e um comprador que não sabe qual recebeu não consegue saber se tem evidência ou uma carta.",
     "## Os quatro tipos de documento da EN 10204",
     "A EN 10204 é a norma europeia de documentos de inspeção para produtos metálicos. Define quatro tipos, e os dois eixos que os separam são ensaio específico contra não específico, e quem valida o resultado.",
     "| Tipo | O que é | Ensaiado sobre o seu material? | Assinado por |\n| --- | --- | --- | --- |\n| 2.1 | Declaração de conformidade com o pedido | Sem resultados de ensaio | O fabricante |\n| 2.2 | Relatório de ensaio | Não (resultados de ensaio não específico | O fabricante |\n| 3.1 | Certificado de inspeção | Sim) ensaio específico sobre o produto fornecido | O representante de inspeção do fabricante, independente da produção |\n| 3.2 | Certificado de inspeção | Sim | Esse representante e o inspetor do comprador ou um designado por regulamentação |",
-    "A linha que importa passa entre o 2.2 e o 3.1. Tudo o que é 2.x diz-lhe como é em geral o material do fabricante; tudo o que é 3.x diz-lhe como é concretamente o seu, ensaiado e assinado por alguém que não depende de quem o fabricou.",
+    "A linha que importa passa entre o 2.2 e o 3.1. Tudo o que é 2.x indica como é em geral o material do fabricante; tudo o que é 3.x indica como é concretamente o seu, ensaiado e assinado por alguém que não depende de quem o fabricou.",
     "Um 2.1 não é sem valor: é uma declaração contratual de que o pedido foi cumprido, e para muitíssimos produtos é proporcionado. Simplesmente não é um resultado de ensaio, e uma especificação que pede 3.1 não se satisfaz com um 2.1 bem apresentado.",
     "## O que um número de corrida realmente rastreia",
     "Um número de corrida identifica uma única fusão na aciaria. Cada quilo vazado dessa fusão partilha uma composição química, e um certificado 3.1 dessa corrida indica a análise e as propriedades mecânicas medidas sobre ela.",
     "Essa é uma cadeia forte enquanto o material é grande e pouco numeroso: uma chapa, uma barra, uma bobina. Cada peça pode levar o número estampado ou gravado, e o certificado segue a peça.",
     "Onde ela enfraquece é exatamente onde vive a ferragem de porta. Uma só fusão transforma-se em toneladas de barra; a barra é cortada em centenas de milhares de peças pequenas; as peças vão para caixas. Quando uma maçaneta é uma entre quarenta mil idênticas numa caixa, já não leva número de corrida e nada que não seja segregar o lote inteiro lho devolve.",
-    "Então a afirmação honesta para ferragem pequena é esta: a rastreabilidade à corrida é uma propriedade de um *lote que foi mantido separado*, não de uma peça. Se um projeto precisa dela, tem de ser especificada antes de produzir, porque muda como a fábrica lida com o material, e custa, porque lotes separados não podem ser misturados.",
+    "Então a afirmação honesta para ferragem pequena é esta: a rastreabilidade à corrida é uma propriedade de um *lote que foi mantido separado*, não de uma peça. Se um projeto precisa dela, tem que ser especificada antes de produzir, porque muda como a fábrica lida com o material, e custa, porque lotes separados não podem ser misturados.",
     "## Mais dois pontos onde a cadeia se quebra, e nenhum é desonestidade",
     "O acabamento: uma peça é muitas vezes galvanizada ou revestida num especialista fora da fábrica. A corrida do metal base pode ser conhecida; a química do banho é um registro à parte mantido por outra empresa, e um certificado que cubra ambos são dois documentos e não um.",
-    "Os conjuntos de várias peças: uma fechadura de embutir é caixa, testa, trinco, alojamento, molas e fixações, com frequência de fornecedores e corridas diferentes. Um único «certificado de material» para uma fechadura é um erro de categoria; o que existe é um certificado por componente, para os componentes que têm um.",
-    "Nenhuma das duas coisas é uma fábrica a fugir. São a forma da cadeia de fornecimento, e um fornecedor que diz «sim, rastreabilidade completa» de uma fechadura montada sem o qualificar disse-lhe algo que não pode ser verdade.",
+    "Os conjuntos de várias peças: uma fechadura de embutir é caixa, testa, trinco, alojamento, molas e fixações, com frequência de fornecedores e corridas diferentes. Um único \"certificado de material\" para uma fechadura é um erro de categoria; o que existe é um certificado por componente, para os componentes que têm um.",
+    "Nenhuma das duas coisas é uma fábrica a fugir. São a forma da cadeia de fornecimento, e um fornecedor que diz \"sim, rastreabilidade completa\" de uma fechadura montada sem o qualificar disse-lhe algo que não pode ser verdade.",
     "## A rastreabilidade de material não é RoHS, e não é REACH",
     "Estes três são pedidos numa só frase e respondidos como se fossem uma só coisa. Não são.",
-    "| Documento | Responde | Forma habitual |\n| --- | --- | --- |\n| EN 10204 3.1 | O que é este metal, química e mecanicamente | Certificado de corrida com o seu número |\n| Declaração RoHS | Se as substâncias perigosas restritas estão abaixo dos limites | Declaração, muitas vezes com relatórios de ensaio de apoio |\n| Declaração REACH | Se há substâncias altamente preocupantes acima do limiar | Declaração contra a lista de candidatas vigente |\n| Minerais de conflito | De onde vêm estanho, tântalo, tungsténio e ouro | Declaração de cadeia de fornecimento |",
-    "Uma declaração RoHS não diz nada sobre resistência à tração. Um certificado de corrida não diz nada sobre substâncias restritas. Pedir «os certificados» e receber um deles não é uma resposta parcial à sua pergunta: é uma resposta completa a outra.",
-    "A linha da REACH leva uma armadilha que merece ser nomeada: a lista de candidatas é revista periodicamente, então uma declaração REACH é verdadeira numa data. Uma sem data não serve, e uma de há três anos tem de ser renovada em vez de arquivada.",
+    "| Documento | Responde | Forma habitual |\n| --- | --- | --- |\n| EN 10204 3.1 | O que é este metal, química e mecanicamente | Certificado de corrida com o seu número |\n| Declaração RoHS | Se as substâncias perigosas restritas estão abaixo dos limites | Declaração, muitas vezes com relatórios de ensaio de apoio |\n| Declaração REACH | Se há substâncias altamente preocupantes acima do limiar | Declaração contra a lista de candidatas vigente |\n| Minerais de conflito | De onde vêm estanho, tântalo, tungstênio e ouro | Declaração de cadeia de fornecimento |",
+    "Uma declaração RoHS não diz nada sobre resistência à tração. Um certificado de corrida não diz nada sobre substâncias restritas. Pedir \"os certificados\" e receber um deles não é uma resposta parcial à sua pergunta: é uma resposta completa a outra.",
+    "A linha da REACH leva uma armadilha que merece ser nomeada: a lista de candidatas é revista periodicamente, então uma declaração REACH é verdadeira numa data. Uma sem data não serve, e uma de há três anos tem que ser renovada em vez de arquivada.",
     "## O que pedir, na ordem que consegue resposta",
-    "Nomeie o tipo de documento explicitamente. «EN 10204 3.1 da caixa de fechadura» é respondível; «o certificado de material» produz o que a fábrica tiver mais à mão.",
+    "Nomeie o tipo de documento explicitamente. \"EN 10204 3.1 da caixa de fechadura\" é respondível; \"o certificado de material\" produz o que a fábrica tiver mais à mão.",
     "Nomeie o componente, não o produto. Ver o ponto dos conjuntos, acima.",
-    "Diga se precisa dele antes ou depois de produzir. Um 3.1 sobre um lote concreto tem de ser planejado; um 2.1 pode ser emitido contra um pedido existente. Pedir um 3.1 quando a mercadoria já saiu e foi misturada com o estoque é pedir algo que já não existe.",
+    "Diga se precisa dele antes ou depois de produzir. Um 3.1 sobre um lote concreto tem que ser planejado; um 2.1 pode ser emitido contra um pedido existente. Pedir um 3.1 quando a mercadoria já saiu e foi misturada com o estoque é pedir algo que já não existe.",
     "Diga de onde vem o requisito. Uma cláusula de especificação, um requisito aduaneiro e uma política interna de qualidade levam a documentos diferentes, e uma fábrica que sabe qual está respondendo pode dizer-lhe se um documento mais barato o satisfaz.",
     "## Cinco verificações sobre um certificado que lhe mandaram",
     "A maioria dos certificados maus não são falsificações. São documentos reais de outra coisa, reencaminhados porque eram o mais parecido que havia à mão. Estas cinco verificações apanham quase todos e levam cerca de dois minutos.",
     "O grau de material do certificado coincide com o do seu pedido? Um certificado de inox 201 anexado a um pedido de 304 é o desencontro mais comum, e os dois são visualmente idênticos na mão. As nossas páginas de inox explicam por quê.",
     "A quantidade ou o lote do certificado cobrem de forma plausível o seu pedido? Um 3.1 que nomeia uma corrida de duas toneladas não pode ser evidência de um pedido tirado de uma caixa que continha cinco corridas diferentes.",
     "Quem o emite está nomeado, com morada? Um certificado de corrida é emitido pela aciaria. Um documento emitido pela empresa comercial que lhe vendeu as peças, repetindo cifras que lhe passaram, é uma transcrição e não um certificado.",
-    "Tem data, e é anterior à sua produção? Um certificado datado depois de a mercadoria ter saído foi escrito para responder à sua pergunta, não para registar um ensaio.",
+    "Tem data, e é anterior à sua produção? Um certificado datado depois de a mercadoria ter saído foi escrito para responder à sua pergunta, não para registrar um ensaio.",
     "O documento diz que norma o ensaio seguiu? Uma tabela de números sem método ao lado não pode ser verificada por ninguém, incluindo quem a escreveu.",
-    "Se um certificado falha uma destas, a resposta útil é uma pergunta concreta e não uma recusa. «Isto está datado depois do nosso embarque, há um anterior da corrida de onde saíram as nossas peças?» é respondível, e a resposta diz-lhe que tipo de fornecedor tem.",
+    "Se um certificado falha uma destas, a resposta útil é uma pergunta concreta e não uma recusa. \"Isto está datado depois do nosso embarque, há um anterior da corrida de onde saíram as nossas peças?\" é respondível, e a resposta indica que tipo de fornecedor tem.",
     "## O que podemos dizer do nosso próprio material",
     "Publicamos o material e o acabamento de cada produto tal como os fornecemos: a família de liga, o código de acabamento, e onde um modelo é fornecido em mais de um, todos.",
-    "O que não fazemos é publicar uma reivindicação geral de rastreabilidade, porque a resposta honesta depende do componente e de se o lote foi mantido separado. A nossa página de documentos indica os documentos de ensaio como disponíveis mediante pedido, e «mediante pedido» ali significa que lhe dizemos, pedido a pedido, o que existe para aqueles componentes concretos, em vez de lhe mandar um documento parecido com o que pediu.",
+    "O que não fazemos é publicar uma reivindicação geral de rastreabilidade, porque a resposta honesta depende do componente e de se o lote foi mantido separado. A nossa página de documentos indica os documentos de ensaio como disponíveis mediante pedido, e \"mediante pedido\" ali significa que lhe dizemos, pedido a pedido, o que existe para aqueles componentes concretos, em vez de lhe mandar um documento parecido com o que pediu.",
     "Onde um projeto precisa de EN 10204 3.1 sobre um componente concreto, isso é uma conversa antes de produzir e não uma casinha que se marca depois, e o custo de separar o lote é indicado em vez de absorvido em silêncio e descoberto depois no preço.",
     "## Por que somos assim de cuidadosos com um papel",
     "Porque o modo de falha é diferido e caro. Um certificado emprestado, um 2.2 apresentado como 3.1, ou um número de corrida colado a uma peça que nunca foi segregada, os três passam na inspeção do dia.",

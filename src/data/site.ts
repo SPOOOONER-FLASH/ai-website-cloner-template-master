@@ -92,7 +92,7 @@ export const defaultTitle: Record<Locale, string> = {
 
 export const defaultDescription: Record<Locale, string> = {
   en: "Chinese manufacturer of panic exit devices, mortise locks, lever handles, hinges and architectural door hardware. ISO 9001 certified, exporting to 30+ markets.",
-  es: "Fabricante chino de barras antipánico, cerraduras de embutir, manillas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
+  es: "Fabricante chino de barras antipánico, cerraduras de embutir, manijas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
   pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
 };
 

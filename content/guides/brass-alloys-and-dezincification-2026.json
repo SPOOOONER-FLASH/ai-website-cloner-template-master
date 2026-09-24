@@ -108,7 +108,7 @@
     "es": [
       {
         "question": "¿Qué diferencia hay entre los latones usados en herraje?",
-        "answer": "Sobre todo la proporción cobre-zinc y las adiciones. El latón de fácil mecanizado (CZ121, C36000) es para piezas torneadas como cuerpos de cilindro. El de forja (CZ122, C37700) es para manillas forjadas en caliente. El de conformado en frío (CZ108, C27200) es para piezas estampadas y embutidas. Y el resistente a la descincificación (CZ132, CW602N) es para uso húmedo, costero o en contacto con agua."
+        "answer": "Sobre todo la proporción cobre-zinc y las adiciones. El latón de fácil mecanizado (CZ121, C36000) es para piezas torneadas como cuerpos de cilindro. El de forja (CZ122, C37700) es para manijas forjadas en caliente. El de conformado en frío (CZ108, C27200) es para piezas estampadas y embutidas. Y el resistente a la descincificación (CZ132, CW602N) es para uso húmedo, costero o en contacto con agua."
       },
       {
         "question": "¿Por qué lleva plomo el latón de herraje?",
@@ -124,7 +124,7 @@
       },
       {
         "question": "¿Hay que lacar el latón?",
-        "answer": "Es una decisión deliberada, no un valor por defecto. El latón sin lacar desarrolla una pátina viva que el trabajo patrimonial a menudo quiere. La laca retrasa el empañado y se desgasta donde tocan las manos, dando un resultado a manchas claro y oscuro que en una manilla de tráfico alto suele verse peor que cualquiera de las alternativas. El PVD es la respuesta duradera y nunca desarrolla pátina."
+        "answer": "Es una decisión deliberada, no un valor por defecto. El latón sin lacar desarrolla una pátina viva que el trabajo patrimonial a menudo quiere. La laca retrasa el empañado y se desgasta donde tocan las manos, dando un resultado a manchas claro y oscuro que en una manija de tráfico alto suele verse peor que cualquiera de las alternativas. El PVD es la respuesta duradera y nunca desarrolla pátina."
       },
       {
         "question": "¿Sus fichas nombran la aleación de latón?",
@@ -134,7 +134,7 @@
     "pt": [
       {
         "question": "Qual é a diferença entre os latões usados em ferragem?",
-        "answer": "Sobretudo a proporção cobre-zinco e as adições. O latão de fácil usinagem (CZ121, C36000) é para peças torneadas como corpos de cilindro. O de forja (CZ122, C37700) é para maçanetas forjadas a quente. O de conformação a frio (CZ108, C27200) é para peças estampadas e estiradas. E o resistente à deszincificação (CZ132, CW602N) é para uso húmido, costeiro ou em contato com água."
+        "answer": "Sobretudo a proporção cobre-zinco e as adições. O latão de fácil usinagem (CZ121, C36000) é para peças torneadas como corpos de cilindro. O de forja (CZ122, C37700) é para maçanetas forjadas a quente. O de conformação a frio (CZ108, C27200) é para peças estampadas e estiradas. E o resistente à deszincificação (CZ132, CW602N) é para uso úmido, costeiro ou em contato com água."
       },
       {
         "question": "Por que o latão de ferragem leva chumbo?",
@@ -146,15 +146,15 @@
       },
       {
         "question": "A ferragem de bronze é o mesmo que ferragem cor de bronze?",
-        "answer": "Não, e a confusão sai cara. O bronze é cobre e estanho. «Bronze antigo», «bronze envelhecido» e «bronze escuro» são quase sempre acabamentos: um revestimento ou uma pátina sobre latão, zamak ou aço. O erro é especificar bronze pelo que a liga faria e receber um revestimento cor de bronze; escreva um código de acabamento e não um nome de cor."
+        "answer": "Não, e a confusão sai cara. O bronze é cobre e estanho. \"Bronze antigo\", \"bronze envelhecido\" e \"bronze escuro\" são quase sempre acabamentos: um revestimento ou uma pátina sobre latão, zamak ou aço. O erro é especificar bronze pelo que a liga faria e receber um revestimento cor de bronze; escreva um código de acabamento e não um nome de cor."
       },
       {
-        "question": "O latão deve ser lacado?",
+        "question": "O latão deve ser laqueado?",
         "answer": "É uma decisão deliberada, não um valor padrão. O latão sem laca desenvolve uma pátina viva que o trabalho patrimonial muitas vezes quer. A laca atrasa o embaciamento e gasta-se onde as mãos tocam, dando um resultado às manchas claro e escuro que numa maçaneta de tráfego alto costuma ficar pior do que qualquer das alternativas. O PVD é a resposta duradoura e nunca desenvolve pátina."
       },
       {
-        "question": "As vossas páginas nomeiam a liga de latão?",
-        "answer": "Não. O latão aparece em 57 de 564 linhas de material (10%), e essas linhas dizem «Brass» ou «Solid Brass» sem nomear CZ121, C36000 nem designação nenhuma, e sem dizer se a liga é DZR. Pergunte pedido a pedido e obtenha por escrito; e se a resposta não estiver disponível, trate a peça como não DZR em vez de o supor."
+        "question": "As suas páginas nomeiam a liga de latão?",
+        "answer": "Não. O latão aparece em 57 de 564 linhas de material (10%), e essas linhas dizem \"Brass\" ou \"Solid Brass\" sem nomear CZ121, C36000 nem designação nenhuma, e sem dizer se a liga é DZR. Pergunte pedido a pedido e obtenha por escrito; e se a resposta não estiver disponível, trate a peça como não DZR em vez de o supor."
       }
     ]
   },
@@ -166,14 +166,14 @@
     "«Latón macizo» es una de las expresiones más tranquilizadoras de un catálogo de herrajes y una de las menos concretas. El latón es cobre y zinc en una proporción, más adiciones, y la proporción y las adiciones deciden casi todo sobre cómo se mecaniza la pieza, cómo se desgasta y si sobrevive veinte años en una puerta costera.",
     "Esta página va de qué latón, y del único modo de fallo que convierte una buena especificación en una mala.",
     "## Qué es el latón, y por qué importa la proporción",
-    "El latón es cobre aleado con zinc. Más cobre da un color más rojizo, mejor resistencia a la corrosión y mejor conformado en frío. Más zinc da un color más amarillo, mayor resistencia y menor coste, y por encima de aproximadamente un 37% de zinc la estructura de la aleación cambia de una forma que la hace más resistente y trabajable en caliente pero más vulnerable a la corrosión que se describe abajo.",
-    "Ese único umbral explica por qué los latones de herraje se dividen en dos grupos, y por qué una manilla y un cilindro a menudo no son la misma aleación ni siquiera dentro de la misma gama.",
+    "El latón es cobre aleado con zinc. Más cobre da un color más rojizo, mejor resistencia a la corrosión y mejor conformado en frío. Más zinc da un color más amarillo, mayor resistencia y menor costo, y por encima de aproximadamente un 37% de zinc la estructura de la aleación cambia de una forma que la hace más resistente y trabajable en caliente pero más vulnerable a la corrosión que se describe abajo.",
+    "Ese único umbral explica por qué los latones de herraje se dividen en dos grupos, y por qué una manija y un cilindro a menudo no son la misma aleación ni siquiera dentro de la misma gama.",
     "## Los latones que usa realmente el herraje de puerta",
-    "| Familia de aleación | Designaciones habituales | Para qué sirve |\n| --- | --- | --- |\n| Latón de fácil mecanizado | CZ121, C36000 | Piezas mecanizadas: cuerpos de cilindro, pasadores, torneados |\n| Latón de forja | CZ122, C37700 | Manillas, tiradores y escudos forjados en caliente |\n| Latón de conformado en frío | CZ108, C27200 | Piezas estampadas y embutidas, chapa y pletina |\n| Resistente a la descincificación | CZ132, CW602N | Donde hay humedad, cloruros o contacto con agua sostenidos |",
+    "| Familia de aleación | Designaciones habituales | Para qué sirve |\n| --- | --- | --- |\n| Latón de fácil mecanizado | CZ121, C36000 | Piezas mecanizadas: cuerpos de cilindro, pasadores, torneados |\n| Latón de forja | CZ122, C37700 | Manijas, tiradores y escudos forjados en caliente |\n| Latón de conformado en frío | CZ108, C27200 | Piezas estampadas y embutidas, chapa y pletina |\n| Resistente a la descincificación | CZ132, CW602N | Donde hay humedad, cloruros o contacto con agua sostenidos |",
     "Las designaciones varían entre sistemas nacionales, así que tómelas como los nombres comunes y no como una equivalencia completa. La pregunta útil a una fábrica no es «¿es latón?» sino «¿qué aleación, y es DZR?».",
     "## Por qué la mayoría del latón de herraje lleva plomo",
     "El latón de fácil mecanizado suele contener alrededor de un 3% de plomo, y el plomo no es un contaminante: es la razón de que la aleación se mecanice como lo hace. El plomo es insoluble en el latón y forma partículas pequeñas y discretas que rompen la viruta, lo que permite a un torno cortar limpio a velocidad y da la superficie lisa que necesita el recubrimiento.",
-    "Quite el plomo y la misma operación de mecanizado produce viruta fibrosa, más desgaste de herramienta, ciclos más lentos y una superficie más rugosa. Esa es toda la historia del coste del latón bajo en plomo: la aleación en sí es solo algo más cara, y el mecanizado lo es bastante.",
+    "Quite el plomo y la misma operación de mecanizado produce viruta fibrosa, más desgaste de herramienta, ciclos más lentos y una superficie más rugosa. Esa es toda la historia del costo del latón bajo en plomo: la aleación en sí es solo algo más cara, y el mecanizado lo es bastante.",
     "Donde el plomo está restringido, lo está por una razón concreta y no en general. El contacto con agua potable es la principal y la gobiernan normas nacionales sobre materiales en contacto con agua de consumo. Algunas jurisdicciones y algunas especificaciones de proyecto también lo restringen de forma más amplia.",
     "La consecuencia práctica: si un proyecto tiene restricción de plomo, hay que indicarlo en la consulta. No es una sustitución que se pueda hacer tarde: es otra aleación, mecanizada en otro ciclo, y en un pedido grande es otro precio.",
     "## La descincificación, y las obras que decide",
@@ -190,13 +190,13 @@
     "El latón sin lacar se oxida. Oscurece, de forma desigual, más rápido donde lo tocan las manos, y al cabo de unos años tiene una pátina que algunas especificaciones quieren y otras tratan como defecto.",
     "Es una decisión que hay que tomar deliberadamente, en la fase de especificación, y dejar escrita. Tres opciones.",
     "Sin lacar, pátina viva: cambiará y no se puede detener. En un edificio patrimonial ese es justamente el punto.",
-    "Lacado: una capa transparente retrasa el empañado y se desgasta en los puntos más manoseados, lo que da un resultado a manchas: brillante donde aguanta la laca, oscuro donde se ha ido. En una manilla de tráfico alto esto suele verse peor que cualquiera de las otras dos opciones.",
+    "Lacado: una capa transparente retrasa el empañado y se desgasta en los puntos más manoseados, lo que da un resultado a manchas: brillante donde aguanta la laca, oscuro donde se ha ido. En una manija de tráfico alto esto suele verse peor que cualquiera de las otras dos opciones.",
     "PVD: un recubrimiento duro en color latón que no se empaña y no se desgasta en uso normal. Es la respuesta duradera y no desarrolla pátina, que es la contrapartida.",
     "## Latón forjado, fundido y mecanizado",
-    "La forja en caliente alinea el grano y produce una pieza densa sin huecos internos. Es la forma más resistente de hacer una manilla de latón y necesita su propio utillaje.",
-    "La fundición da libertad de forma con menor coste de utillaje y, como con el zamak, lleva un riesgo de porosidad que un buen control de proceso gestiona.",
-    "El mecanizado a partir de barra da la mejor tolerancia y superficie y el mayor desperdicio, y por eso se usa para cuerpos de cilindro y piezas torneadas y no para manillas enteras.",
-    "Una especificación rara vez necesita nombrar el proceso, pero merece preguntarlo en una pieza cargada: una manilla forjada y una fundida en la misma aleación no son igual de resistentes.",
+    "La forja en caliente alinea el grano y produce una pieza densa sin huecos internos. Es la forma más resistente de hacer una manija de latón y necesita su propio utillaje.",
+    "La fundición da libertad de forma con menor costo de utillaje y, como con el zamak, lleva un riesgo de porosidad que un buen control de proceso gestiona.",
+    "El mecanizado a partir de barra da la mejor tolerancia y superficie y el mayor desperdicio, y por eso se usa para cuerpos de cilindro y piezas torneadas y no para manijas enteras.",
+    "Una especificación rara vez necesita nombrar el proceso, pero merece preguntarlo en una pieza cargada: una manija forjada y una fundida en la misma aleación no son igual de resistentes.",
     "## Cómo saber si una pieza es realmente latón macizo",
     "«Latón macizo» también se usa con laxitud, y tres comprobaciones separan lo auténtico del acero o el zamak latonado en cosa de un minuto.",
     "Un imán: el latón no es magnético. Si el imán se pega, hay acero bajo el acabado, dijera lo que dijera la descripción. Es la única prueba de esta página genuinamente concluyente, y es la razón de que el acero latonado sea fácil de pillar y el zamak latonado no.",
@@ -219,23 +219,23 @@
     "Y si «bronce» en cualquier punto de la especificación significa una aleación o un acabado, porque en esa sola palabra las dos lecturas llevan a productos distintos a precios distintos."
   ],
   "titlePt": "Ferragem de latão 2026: que latão, por que leva chumbo, e o único modo de falha que decide as obras costeiras",
-  "summaryPt": "«Latão maciço» nomeia uma família de ligas que se comportam de forma diferente, e a diferença que mais importa é se a liga resiste à deszincificação. Esta página estabelece os latões usados em ferragem de porta, explica por que a maioria leva chumbo e o que custam as alternativas baixas em chumbo, descreve a deszincificação e onde o latão DZR é realmente exigido, separa o latão do bronze, e conta o que o nosso próprio catálogo publica.",
+  "summaryPt": "\"Latão maciço\" nomeia uma família de ligas que se comportam de forma diferente, e a diferença que mais importa é se a liga resiste à deszincificação. Esta página estabelece os latões usados em ferragem de porta, explica por que a maioria leva chumbo e o que custam as alternativas baixas em chumbo, descreve a deszincificação e onde o latão DZR é realmente exigido, separa o latão do bronze, e conta o que o nosso próprio catálogo publica.",
   "seoTitlePt": "Ferragem de latão 2026: ligas, chumbo e deszincificação (DZR) | Canton Hyland",
   "seoDescriptionPt": "Que ligas de latão a ferragem de porta usa, por que se acrescenta chumbo, o que é a deszincificação e quando se exige DZR, latão contra bronze, e o que especificar.",
   "bodyPt": [
-    "«Latão maciço» é uma das expressões mais tranquilizadoras de um catálogo de ferragens e uma das menos concretas. O latão é cobre e zinco numa proporção, mais adições, e a proporção e as adições decidem quase tudo sobre como a peça usina, como se desgasta e se sobrevive vinte anos numa porta costeira.",
+    "\"Latão maciço\" é uma das expressões mais tranquilizadoras de um catálogo de ferragens e uma das menos concretas. O latão é cobre e zinco numa proporção, mais adições, e a proporção e as adições decidem quase tudo sobre como a peça usina, como se desgasta e se sobrevive vinte anos numa porta costeira.",
     "Esta página é sobre que latão, e sobre o único modo de falha que transforma uma boa especificação numa má.",
     "## O que é o latão, e por que a proporção importa",
     "O latão é cobre ligado com zinco. Mais cobre dá uma cor mais avermelhada, melhor resistência à corrosão e melhor conformação a frio. Mais zinco dá uma cor mais amarela, maior resistência e menor custo, e acima de aproximadamente 37% de zinco a estrutura da liga muda de uma forma que a torna mais resistente e trabalhável a quente mas mais vulnerável à corrosão descrita abaixo.",
     "Esse único limiar explica por que os latões de ferragem se dividem em dois grupos, e por que uma maçaneta e um cilindro muitas vezes não são a mesma liga nem sequer dentro da mesma linha.",
     "## Os latões que a ferragem de porta realmente usa",
     "| Família de liga | Designações habituais | Para que serve |\n| --- | --- | --- |\n| Latão de fácil usinagem | CZ121, C36000 | Peças usinadas: corpos de cilindro, pinos, torneados |\n| Latão de forja | CZ122, C37700 | Maçanetas, puxadores e espelhos forjados a quente |\n| Latão de conformação a frio | CZ108, C27200 | Peças estampadas e estiradas, chapa e platina |\n| Resistente à deszincificação | CZ132, CW602N | Onde há umidade, cloretos ou contato com água sustentados |",
-    "As designações variam entre sistemas nacionais, então tome-as como os nomes comuns e não como uma equivalência completa. A pergunta útil a uma fábrica não é «é latão?» mas «que liga, e é DZR?».",
+    "As designações variam entre sistemas nacionais, então tome-as como os nomes comuns e não como uma equivalência completa. A pergunta útil a uma fábrica não é \"é latão?\" mas \"que liga, e é DZR?\".",
     "## Por que a maioria do latão de ferragem leva chumbo",
     "O latão de fácil usinagem costuma conter cerca de 3% de chumbo, e o chumbo não é um contaminante: é a razão de a liga usinar como usina. O chumbo é insolúvel no latão e forma partículas pequenas e discretas que quebram a apara, o que permite a um torno cortar limpo a velocidade e dá a superfície lisa de que o revestimento precisa.",
     "Tire o chumbo e a mesma operação de usinagem produz apara fibrosa, mais desgaste de ferramenta, ciclos mais lentos e uma superfície mais rugosa. Essa é toda a história do custo do latão baixo em chumbo: a liga em si é só um pouco mais cara, e a usinagem é bastante.",
     "Onde o chumbo é restringido, é-o por uma razão concreta e não em geral. O contato com água potável é a principal e é governado por normas nacionais sobre materiais em contato com água de consumo. Algumas jurisdições e algumas especificações de projeto também o restringem de forma mais ampla.",
-    "A consequência prática: se um projeto tem restrição de chumbo, tem de o indicar na consulta. Não é uma substituição que se possa fazer tarde: é outra liga, usinada noutro ciclo, e num pedido grande é outro preço.",
+    "A consequência prática: se um projeto tem restrição de chumbo, tem de o indicar na consulta. Não é uma substituição que se possa fazer tarde: é outra liga, usinada em outro ciclo, e num pedido grande é outro preço.",
     "## A deszincificação, e as obras que decide",
     "Este é o modo de falha que merece ser bem entendido, porque é invisível até ser grave e porque se evita por completo escolhendo liga.",
     "Na presença de umidade sustentada (sobretudo água morna, com cloretos ou ligeiramente ácida) o zinco pode ser lixiviado seletivamente da liga. O que resta é uma estrutura de cobre porosa e esponjosa que mantém a forma original e perde quase toda a resistência.",
@@ -244,13 +244,13 @@
     "Onde é preciso: exposição costeira, piscinas e as suas casas de máquinas, qualquer coisa em contato com água, banheiros e salas húmidas mal ventiladas, e componentes enterrados ou embebidos. A nossa página de corrosão faz o mesmo argumento para os graus de inox, e a lógica é idêntica: o ambiente escolhe a liga, não o orçamento.",
     "## O latão não é bronze, e a confusão sai cara",
     "O latão é cobre e zinco. O bronze é cobre e estanho, às vezes com alumínio, silício ou fósforo.",
-    "Em ferragem a palavra «bronze» é usada de duas formas, e não são a mesma coisa. Há o bronze a sério (uma liga) e há o «bronze» como nome de acabamento, que normalmente é um revestimento ou uma pátina sobre latão, zamak ou aço. Bronze antigo, bronze envelhecido e bronze escuro são quase sempre acabamentos.",
-    "O erro que custa dinheiro é especificar «bronze» para um ambiente pelo que a liga faria, e receber um revestimento cor de bronze sobre um substrato que não faz nada disso. A nossa página de códigos de acabamento explica como escrever um acabamento para que isto não possa acontecer: um código, não um nome de cor.",
+    "Em ferragem a palavra \"bronze\" é usada de duas formas, e não são a mesma coisa. Há o bronze a sério (uma liga) e há o \"bronze\" como nome de acabamento, que normalmente é um revestimento ou uma pátina sobre latão, zamak ou aço. Bronze antigo, bronze envelhecido e bronze escuro são quase sempre acabamentos.",
+    "O erro que custa dinheiro é especificar \"bronze\" para um ambiente pelo que a liga faria, e receber um revestimento cor de bronze sobre um substrato que não faz nada disso. A nossa página de códigos de acabamento explica como escrever um acabamento para que isto não possa acontecer: um código, não um nome de cor.",
     "## Embaciamento, laca e a pátina viva",
     "O latão sem laca oxida. Escurece, de forma desigual, mais depressa onde as mãos lhe tocam, e ao fim de alguns anos tem uma pátina que algumas especificações querem e outras tratam como defeito.",
     "É uma decisão a tomar deliberadamente, na fase de especificação, e a deixar escrita. Três opções.",
     "Sem laca, pátina viva: vai mudar e não se pode parar. Num edifício patrimonial esse é justamente o ponto.",
-    "Lacado: uma camada transparente atrasa o embaciamento e gasta-se nos pontos mais manuseados, o que dá um resultado às manchas: brilhante onde a laca aguenta, escuro onde se foi. Numa maçaneta de tráfego alto isto costuma ficar pior do que qualquer das outras duas opções.",
+    "Laqueado: uma camada transparente atrasa o embaciamento e gasta-se nos pontos mais manuseados, o que dá um resultado às manchas: brilhante onde a laca aguenta, escuro onde se foi. Numa maçaneta de tráfego alto isto costuma ficar pior do que qualquer das outras duas opções.",
     "PVD: um revestimento duro em cor de latão que não embacia e não se gasta em uso normal. É a resposta duradoura e não desenvolve pátina, que é a contrapartida.",
     "## Latão forjado, fundido e usinado",
     "A forja a quente alinha o grão e produz uma peça densa sem vazios internos. É a forma mais resistente de fazer uma maçaneta de latão e precisa da sua própria ferramentaria.",
@@ -258,24 +258,24 @@
     "A usinagem a partir de barra dá a melhor tolerância e superfície e o maior desperdício, e por isso é usada para corpos de cilindro e peças torneadas e não para maçanetas inteiras.",
     "Uma especificação raramente precisa de nomear o processo, mas vale a pena perguntá-lo numa peça carregada: uma maçaneta forjada e uma fundida na mesma liga não são igualmente resistentes.",
     "## Como saber se uma peça é realmente latão maciço",
-    "«Latão maciço» também é usado com frouxidão, e três verificações separam o autêntico do aço ou do zamak latonado em cerca de um minuto.",
+    "\"Latão maciço\" também é usado com frouxidão, e três verificações separam o autêntico do aço ou do zamak latonado em cerca de um minuto.",
     "Um íman: o latão não é magnético. Se o íman colar, há aço sob o acabamento, dissesse o que dissesse a descrição. É o único teste desta página genuinamente conclusivo, e é a razão de o aço latonado ser fácil de apanhar e o zamak latonado não.",
     "Peso contra tamanho: o latão e o zamak têm densidades próximas, então o peso não os separa, mas os dois são muito mais pesados do que o alumínio ou o plástico, e claramente mais do que uma chapa fina estampada. O peso descarta os leves e não prova nada entre latão e zamak.",
-    "Uma aresta sem acabamento ou o interior de um vazio: onde o revestimento não chega, o latão mostra o seu próprio amarelo em toda a secção. Uma peça revestida mostra outra cor por baixo (cinzento para zamak ou aço) assim que encontra uma aresta cortada, uma saliência usinada ou um furo de parafuso.",
+    "Uma aresta sem acabamento ou o interior de um vazio: onde o revestimento não chega, o latão mostra o seu próprio amarelo em toda a seção. Uma peça revestida mostra outra cor por baixo (cinzento para zamak ou aço) assim que encontra uma aresta cortada, uma saliência usinada ou um furo de parafuso.",
     "A terceira verificação é a que separa o latão do zamak, e é por isso que a nossa página de zamak defende que o interior de uma fundição diz a verdade: é a superfície que ninguém pole.",
     "## Duas perguntas que vale a pena fazer sobre um cilindro de latão em concreto",
     "Os cilindros concentram mais preocupações desta página do que qualquer outra peça de latão, porque são usinados, são manuseados, estão ao tempo numa porta exterior, e são o componente sobre o qual um ataque trabalha.",
     "O corpo é de latão ou de zamak latonado? Os dois existem, montados parecem idênticos, e comportam-se de forma muito diferente perante um ataque de furação ou de quebra. Um corpo de latão é além disso o que permite recodificar um cilindro muitas vezes ao longo da sua vida.",
     "É DZR se a porta é exterior? Um cilindro numa porta de entrada costeira é exatamente a condição de umidade sustentada com cloretos de que a deszincificação precisa, e é uma peça cuja falha repentina deixa alguém fora do seu próprio edifício.",
-    "Nenhuma das duas perguntas é respondida por «latão maciço», e as duas são respondidas numa linha por uma fábrica que tenha a informação.",
+    "Nenhuma das duas perguntas é respondida por \"latão maciço\", e as duas são respondidas numa linha por uma fábrica que tenha a informação.",
     "## O que o nosso catálogo publica",
     "Contado a partir das linhas de material de todos os produtos que têm uma: o latão aparece em 57 de 564 linhas, 10%, atrás do inox com 262 e do zamak com 156.",
-    "O que essas linhas dizem é «Brass» ou «Solid Brass». Nenhuma nomeia CZ121, C36000 nem qualquer outra designação, e nenhuma diz se a liga é DZR.",
-    "É a mesma lacuna que as nossas páginas de inox e de zamak reportam, e aqui importa mais, porque o DZR é a única propriedade do latão sem a qual uma obra costeira ou de zona húmida realmente não pode avançar. Até as linhas o levarem, pergunte pedido a pedido e obtenha a resposta por escrito, e se a resposta não estiver disponível, trate a peça como não DZR em vez de o supor.",
+    "O que essas linhas dizem é \"Brass\" ou \"Solid Brass\". Nenhuma nomeia CZ121, C36000 nem qualquer outra designação, e nenhuma diz se a liga é DZR.",
+    "É a mesma lacuna que as nossas páginas de inox e de zamak reportam, e aqui importa mais, porque o DZR é a única propriedade do latão sem a qual uma obra costeira ou de zona úmida realmente não pode avançar. Até as linhas o levarem, pergunte pedido a pedido e obtenha a resposta por escrito, e se a resposta não estiver disponível, trate a peça como não DZR em vez de o supor.",
     "## O que pôr no pedido",
-    "A designação de liga, ou no mínimo «exige-se DZR» onde o ambiente o pedir.",
+    "A designação de liga, ou no mínimo \"exige-se DZR\" onde o ambiente o pedir.",
     "Se se aplica uma restrição de chumbo, indicada na consulta e não depois da cotação.",
-    "A decisão de acabamento: sem laca e aceite como pátina viva, lacado, ou PVD, e se for lacado, um reconhecimento de que se vai gastar às manchas nas superfícies manuseadas.",
-    "E se «bronze» em qualquer ponto da especificação significa uma liga ou um acabamento, porque nessa só palavra as duas leituras levam a produtos diferentes a preços diferentes."
+    "A decisão de acabamento: sem laca e aceite como pátina viva, laqueado, ou PVD, e se for laqueado, um reconhecimento de que se vai gastar às manchas nas superfícies manuseadas.",
+    "E se \"bronze\" em qualquer ponto da especificação significa uma liga ou um acabamento, porque nessa só palavra as duas leituras levam a produtos diferentes a preços diferentes."
   ]
 }

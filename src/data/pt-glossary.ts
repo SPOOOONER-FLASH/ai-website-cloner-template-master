@@ -24,6 +24,12 @@
  * `trinco` is the deadbolt and `picaporte`/`lingueta` the sprung latch — Brazilian usage
  * varies, and `lingueta` is used here because it is the word on ABNT NBR 11742's own
  * vocabulary for the sprung element.
+ *
+ * Backset is `Distância ao eixo (broca)` (2026-09-24): the articles already said "distância ao
+ * eixo" 141 times while this table said "Distância à testa", and `broca` is the word a Brazilian
+ * catalogue prints ("broca 55 mm"). The Brazilian register of all Portuguese copy (aspas, "tem
+ * que", gerund, `planilha`, `marco`, ô/ê) is enforced by scripts/normalize-regional-terms.mjs
+ * and guarded by src/data/regional-terms.test.ts.
  */
 
 /** Spec row labels. Keyed on the exact English label as it appears in content/products. */
@@ -145,7 +151,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Minimum order": "Pedido mínimo",
 
   /* the dimensions that decide whether a part fits */
-  Backset: "Distância à testa",
+  Backset: "Distância ao eixo (broca)",
   "Door thickness": "Espessura da porta",
   "Door Thickness": "Espessura da porta",
   "Suitable Door Thickness": "Espessura de porta indicada",

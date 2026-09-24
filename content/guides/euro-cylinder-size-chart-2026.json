@@ -88,7 +88,7 @@
     "es": [
       {
         "question": "¿Qué significan los dos números de un cilindro europeo?",
-        "answer": "La mitad exterior y la mitad interior, en ese orden, medidas cada una en milímetros desde el centro del taladro del tornillo de fijación hasta la cara de esa mitad. Un 30/40 tiene 30 mm por fuera y 40 mm por dentro, y una longitud total de 70 mm."
+        "answer": "La mitad exterior y la mitad interior, en ese orden, medidas cada una en milímetros desde el centro de la perforación del tornillo de fijación hasta la cara de esa mitad. Un 30/40 tiene 30 mm por fuera y 40 mm por dentro, y una longitud total de 70 mm."
       },
       {
         "question": "¿30/40 es lo mismo que 40/30?",
@@ -108,7 +108,7 @@
       },
       {
         "question": "¿Puedo medir mi cilindro viejo y pedir el mismo tamaño?",
-        "answer": "Mida cada mitad por separado desde el centro del taladro del tornillo, no el cilindro de punta a punta. Una medida de punta a punta da la longitud total y descarta el reparto, y un 30/40 y un 40/30 miden igual. Si el cilindro viejo ya era del tamaño equivocado, medirlo copia el error."
+        "answer": "Mida cada mitad por separado desde el centro de la perforación del tornillo, no el cilindro de punta a punta. Una medida de punta a punta da la longitud total y descarta el reparto, y un 30/40 y un 40/30 miden igual. Si el cilindro viejo ya era del tamaño equivocado, medirlo copia el error."
       }
     ],
     "pt": [
@@ -146,7 +146,7 @@
     "Un cilindro de perfil europeo se pide con dos números (30/40, 35/35, 40/50) y esos dos números son lo que más se equivoca al comprar. No son una medida y una tolerancia. Son la mitad exterior y la mitad interior, medidas por separado, y un cilindro pedido 40/30 cuando la puerta necesitaba 30/40 entra en el hueco, gira la llave y sobresale 10 mm por la cara equivocada.",
     "Esta página es la tabla. Cubre la geometría que describen los dos números, las nueve longitudes totales que publicamos en 45 modelos de cilindro, las combinaciones que suman cada una, la medida que decide cuál necesita, y el único valor que no publicamos y no vamos a suponer.",
     "DÓNDE EMPIEZA LA MEDIDA",
-    "Ambas mitades se miden desde el mismo punto: el eje del taladro del tornillo de fijación, que es también el centro de la leva. Ese centro no es el centro del cilindro. Es el punto de referencia, y toda semilongitud de todo catálogo del mundo del perfil europeo se mide desde ahí hacia fuera hasta la cara de esa mitad.",
+    "Ambas mitades se miden desde el mismo punto: el eje de la perforación del tornillo de fijación, que es también el centro de la leva. Ese centro no es el centro del cilindro. Es el punto de referencia, y toda semilongitud de todo catálogo del mundo del perfil europeo se mide desde ahí hacia fuera hasta la cara de esa mitad.",
     "Por eso los dos números de un cilindro europeo suman su longitud total y por eso las mitades se citan por separado. Un 30/40 y un 40/30 tienen la misma longitud total (70 mm) y no son intercambiables, porque en el 30/40 la mitad corta queda al exterior.",
     "La geometría sigue DIN 18252, que es la norma dimensional de la que procede el propio perfil, mientras que EN 1303 es la norma de prestaciones que clasifica la seguridad de la llave, la durabilidad y la resistencia al ataque. Las dos se citan juntas a menudo y responden a preguntas distintas: DIN 18252 dice si encaja, EN 1303 dice cómo se comporta.",
     "LAS SEMILONGITUDES",
@@ -154,23 +154,23 @@
     "En la práctica unas pocas combinaciones cubren la mayoría de las puertas, porque la mitad interior suele ser más larga que la exterior. La razón es física y no de costumbre: la mitad exterior solo tiene que atravesar la cara exterior de la puerta y su escudo, mientras que la interior tiene que atravesar además la caja de la cerradura.",
     "LAS NUEVE LONGITUDES QUE PUBLICAMOS",
     "Nuestro catálogo lleva 45 modelos de cilindro en nueve longitudes totales. La longitud va en el número de modelo y no en una fila aparte, por eso el número aparece delante: el 70 de 70 SNKT son 70 mm. Estas son las nueve longitudes, cuántos modelos hay en cada una y las combinaciones que suman.",
-    "| Longitud total | Modelos publicados | Repartos de la escala de 5 mm |\n| --- | --- | --- |\n| 45 mm | 3 | ninguno por encima del mínimo de 27,5 (medio cilindro o cuerpo solo con pomo |\n| 47 mm | 1 |) |\n| 54 mm | 2 |, |\n| 56 mm | 1 |, |\n| 60 mm | 5 | 30/30 |\n| 65 mm | 2 | 30/35 |\n| 70 mm | 19 | 30/40, 35/35 |\n| 80 mm | 6 | 30/50, 35/45, 40/40 |\n| 90 mm | 4 | 35/55, 40/50, 45/45 |",
+    "| Longitud total | Modelos publicados | Repartos de la escala de 5 mm |\n| --- | --- | --- |\n| 45 mm | 3 | ninguno por encima del mínimo de 27,5 (medio cilindro o cuerpo solo con perilla |\n| 47 mm | 1 |) |\n| 54 mm | 2 |, |\n| 56 mm | 1 |, |\n| 60 mm | 5 | 30/30 |\n| 65 mm | 2 | 30/35 |\n| 70 mm | 19 | 30/40, 35/35 |\n| 80 mm | 6 | 30/50, 35/45, 40/40 |\n| 90 mm | 4 | 35/55, 40/50, 45/45 |",
     "70 mm es con diferencia la longitud más fabricada: 19 de los 45 modelos.",
     "Las combinaciones de arriba son aritmética, no una lista de existencias. Son los pares de la escala de semilongitudes que suman cada longitud total, y se imprimen aquí porque quien ha recibido la instrucción de comprar un cilindro de 70 mm necesita saber que 30/40 y 35/35 son ambos de 70 mm y son piezas distintas.",
     "LO QUE NO PUBLICAMOS, Y POR QUÉ EL HUECO ESTÁ AQUÍ Y NO ESCONDIDO",
     "No publicamos el reparto de cada modelo. En los 45 registros de cilindro, el número de filas que indican mitad interior y exterior es cero. La longitud total está en el número de modelo; su división no está en el catálogo.",
     "Es un hueco real y esta página lo dice en lugar de rellenarlo. Un reparto es de esos valores fáciles de escribir y caros de equivocar: decide si el cilindro queda enrasado, y un cilindro que sobresale es la única condición que hace practicable un ataque por rotura. Si necesita un reparto concreto, pídalo por longitud total más el reparto que quiere y le confirmaremos cómo se sirve ese modelo antes de que salga nada.",
     "MEDIR UNA PUERTA QUE YA TIENE",
-    "Para una sustitución, no mida el cilindro viejo de punta a punta y pida ese número. Mida cada mitad desde el centro del taladro del tornillo hasta la cara exterior de esa mitad, y pida los dos números en ese orden, primero el exterior.",
+    "Para una sustitución, no mida el cilindro viejo de punta a punta y pida ese número. Mida cada mitad desde el centro de la perforación del tornillo hasta la cara exterior de esa mitad, y pida los dos números en ese orden, primero el exterior.",
     "La medida de punta a punta falla porque da la longitud total y descarta la única información que importa para el encaje. Dos cilindros de la misma longitud total, uno 30/40 y otro 40/30, miden igual de punta a punta y se comportan distinto en la puerta.",
-    "Si el cilindro existente ya es incorrecto (y en una puerta rehecha, repintada o forrada a menudo lo es) medirlo copia el error a la pieza nueva. En ese caso mida la puerta: desde el eje del taladro del tornillo en la caja hacia delante hasta la cara exterior incluyendo el escudo, y hacia atrás hasta la cara interior incluyendo el escudo interior.",
+    "Si el cilindro existente ya es incorrecto (y en una puerta rehecha, repintada o forrada a menudo lo es) medirlo copia el error a la pieza nueva. En ese caso mida la puerta: desde el eje de la perforación del tornillo en la caja hacia delante hasta la cara exterior incluyendo el escudo, y hacia atrás hasta la cara interior incluyendo el escudo interior.",
     "LA REGLA DEL SOBRESALIENTE",
     "Un cilindro europeo debe quedar tan enrasado con el escudo como permita la escala de semilongitudes, y nunca sobresalir más de unos 3 mm. No es una preferencia estética. Un cilindro que sobresale ofrece agarre para un ataque por rotura, que es el modo de fallo por el que se conoce al perfil europeo y contra el que existen los diseños antirrotura.",
     "Si la cuenta le deja entre dos semilongitudes, lo correcto es la mitad más corta más un escudo de seguridad o un escudo recrecido que absorba la diferencia, no la mitad más larga. Un cilindro ligeramente rehundido es más difícil de atacar que uno ligeramente saliente, y es la misma llave.",
     "LEER UN NÚMERO DE MODELO DE CILINDRO",
     "Los nuestros se construyen como longitud, luego acabado, luego función. El 70 de 70 SNKT es la longitud total en milímetros; SN es níquel satinado; KT es un código de función. El 45 de 45 BNIK son 45 mm y BN es níquel negro. Nuestra referencia de códigos de pedido recoge las letras de acabado y función, incluidos los pares que se invierten (NB y BN son ambos níquel negro, PB y BP son ambos latón pulido) , que es el otro punto donde se tuerce un pedido de cilindros.",
     "UNA COSA QUE PONER EN LA CONSULTA",
-    "Indique el espesor de puerta, el escudo o roseta de seguridad que va a usar, y si el interior lleva llave o pomo. Esas tres cosas deciden el reparto, y son tres líneas que ahorran una semana de planos de ida y vuelta. Si la obra tiene amaestramiento, dígalo en el mismo mensaje: los cilindros iguales y amaestrados se fabrican bajo pedido y el plazo forma parte de la respuesta."
+    "Indique el espesor de puerta, el escudo o roseta de seguridad que va a usar, y si el interior lleva llave o perilla. Esas tres cosas deciden el reparto, y son tres líneas que ahorran una semana de planos de ida y vuelta. Si la obra tiene amaestramiento, dígalo en el mismo mensaje: los cilindros iguales y amaestrados se fabrican bajo pedido y el plazo forma parte de la respuesta."
   ],
   "titlePt": "Tabela de medidas de cilindro europeu 2026: cada comprimento e divisão, e como medir o seu",
   "summaryPt": "Um cilindro europeu é descrito por dois números, e invertê-los é o erro de pedido mais comum em ferragens. Esta é a tabela completa segundo a geometria da EN 1303 e da DIN 18252, os nove comprimentos totais que publicamos, as combinações que somam cada um e a medida que decide qual você precisa.",

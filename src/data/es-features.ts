@@ -70,7 +70,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
 
   /* The most repeated body line in the catalogue — 32 records. */
   "Made from high-quality 304 stainless steel with material certification, this door handle is ideal for modern entry door locks. Contact us for more details.":
-    "Fabricada en acero inoxidable 304 de alta calidad y con certificado de material, esta manilla es ideal para cerraduras de puerta de entrada modernas. Consúltenos para más detalles.",
+    "Fabricada en acero inoxidable 304 de alta calidad y con certificado de material, esta manija es ideal para cerraduras de puerta de entrada modernas. Consúltenos para más detalles.",
 
   "Functions: Entrance, Anti-Panic, Privacy, Passage, Storeroom, Deadlock, Classroom, Multi-Function":
     "Funciones: entrada, antipánico, privacidad, paso libre, almacén, bloqueo, aula y multifunción",
@@ -97,13 +97,13 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Door Thickness: Adjustable 35–50mm (1-3/8” to 2”)":
     "Espesor de puerta: regulable de 35 a 50 mm (1-3/8” a 2”)",
   "Key or thumb-turn locks/unlocks both knobs":
-    "La llave o el botón giratorio bloquean y desbloquean ambos pomos",
+    "La llave o el botón giratorio bloquean y desbloquean ambas perillas",
   "Key or thumb-turn simultaneously locks/unlocks both knobs":
-    "La llave o el botón giratorio bloquean y desbloquean ambos pomos a la vez",
+    "La llave o el botón giratorio bloquean y desbloquean ambas perillas a la vez",
   "Key or thumb-turn locks/unlocks both handles":
-    "La llave o el botón giratorio bloquean y desbloquean ambas manillas",
+    "La llave o el botón giratorio bloquean y desbloquean ambas manijas",
   "Lock/unlock both knobs via key or thumb-turn":
-    "Bloqueo y desbloqueo de ambos pomos con llave o botón giratorio",
+    "Bloqueo y desbloqueo de ambas perillas con llave o botón giratorio",
   "Handing: Reversible for left or right hand doors":
     "Mano: reversible para puertas de mano izquierda o derecha",
   "Handing: Reversible for left or right-hand doors":
@@ -272,8 +272,8 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Adjustable to fit a wide range of door thicknesses and backsets":
     "Regulable para un amplio rango de espesores de puerta y entradas",
   "• Iron backplate with aluminum alloy lever handle":
-    "• Placa posterior de hierro con manilla de aleación de aluminio",
-  "• Elegant twisted handle design": "• Diseño de manilla con torsión, elegante",
+    "• Placa posterior de hierro con manija de aleación de aluminio",
+  "• Elegant twisted handle design": "• Diseño de manija con torsión, elegante",
   "• Matte black finish, durable and corrosion-resistant":
     "• Acabado negro mate, duradero y resistente a la corrosión",
   "• Compatible with Euro profile cylinder mortise locks":
@@ -281,7 +281,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "• Suitable for wooden and metal doors":
     "• Apta para puertas de madera y metálicas",
   "• Reversible handle for left or right opening doors":
-    "• Manilla reversible para puertas de apertura izquierda o derecha",
+    "• Manija reversible para puertas de apertura izquierda o derecha",
   "• Easy installation and maintenance": "• Instalación y mantenimiento sencillos",
   "Trim options: wrought stainless steel or brass":
     "Opciones de guarnición: acero inoxidable forjado o latón",
@@ -300,9 +300,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
     "Diseño europeo tradicional, sin mano",
   "Square spindle: 8×8mm or 9×9mm": "Cuadradillo: 8×8 mm o 9×9 mm",
   "Single Cylinder: Operated by key and inside knob, with anti-pick slide gate":
-    "Cilindro simple: accionado con llave y con el pomo interior, con pletina antiganzúa",
+    "Cilindro simple: accionado con llave y con la perilla interior, con pletina antiganzúa",
   "Single Cylinder: Operated by key and inside knob; includes anti-pick slide gate":
-    "Cilindro simple: accionado con llave y con el pomo interior; incluye pletina antiganzúa",
+    "Cilindro simple: accionado con llave y con la perilla interior; incluye pletina antiganzúa",
   "Double Cylinder: Operated by key from both inside and outside":
     "Doble cilindro: accionado con llave desde dentro y desde fuera",
   "Durable construction with an attractive finish":
@@ -333,7 +333,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "US type 3-latch construction, long-lasting performance":
     "Construcción americana de 3 picaportes, de larga duración",
   "Zinc alloy handle & rose, strong and durable":
-    "Manilla y roseta de aleación de zinc, resistentes y duraderas",
+    "Manija y roseta de aleación de zinc, resistentes y duraderas",
   "Corrosion-resistant plated finish":
     "Acabado galvánico resistente a la corrosión",
   "Smooth turning, comfortable to operate":
@@ -375,23 +375,23 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Durable plated 304SS construction for corrosion resistance and fire door compatibility":
     "Construcción duradera en acero inoxidable 304 recubierto, resistente a la corrosión y apta para puertas cortafuego",
   "Made of durable zinc alloy with a painted finish, the body and lever handle offer excellent strength and durability. The iron spindle ensures smooth, reliable operation.":
-    "Fabricados en aleación de zinc con acabado pintado, el cuerpo y la manilla ofrecen una resistencia y una durabilidad excelentes. El cuadradillo de hierro asegura un accionamiento suave y fiable.",
+    "Fabricados en aleación de zinc con acabado pintado, el cuerpo y la manija ofrecen una resistencia y una durabilidad excelentes. El cuadradillo de hierro asegura un accionamiento suave y fiable.",
   "External lever handle for panic exit device":
-    "Manilla exterior para barra antipánico",
+    "Manija exterior para barra antipánico",
   "External lever handle for panic exit devices":
-    "Manilla exterior para barras antipánico",
+    "Manija exterior para barras antipánico",
   "External lever handle for panic device":
-    "Manilla exterior para dispositivo antipánico",
+    "Manija exterior para dispositivo antipánico",
   "External lever handle for panic bar":
-    "Manilla exterior para barra antipánico",
+    "Manija exterior para barra antipánico",
   "External handle for panic bar systems":
-    "Manilla exterior para sistemas de barra antipánico",
+    "Manija exterior para sistemas de barra antipánico",
   "Key-operated lock/unlock":
     "Bloqueo y desbloqueo con llave",
   "Standards: ANSI Grade 2":
     "Normas: ANSI grado 2",
   "Durable security handle for panic exit devices":
-    "Manilla de seguridad duradera para barras antipánico",
+    "Manija de seguridad duradera para barras antipánico",
   "Compatible with cylinder lock/unlock systems":
     "Compatible con sistemas de bloqueo y desbloqueo por cilindro",
   "Suitable for various push bar types":
@@ -511,11 +511,11 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "90-minute fire resistance tested":
     "Ensayada a 90 minutos de resistencia al fuego",
   "Turn handle for locking/unlocking":
-    "Manilla giratoria para bloquear y desbloquear",
+    "Manija giratoria para bloquear y desbloquear",
   "Integrated lock and counter lock system":
     "Sistema integrado de cerradura y contracerradura",
   "1. Lock/unlock via turn handle":
-    "1. Bloqueo y desbloqueo mediante manilla giratoria",
+    "1. Bloqueo y desbloqueo mediante manija giratoria",
   "2. Adjustable length to fit door width":
     "2. Longitud regulable para ajustarse al ancho de la puerta",
   "3. Multiple color options":
@@ -525,7 +525,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "• Lock Case: 072":
     "• Caja de cerradura: 072",
   "• Handle Options: 015 or 9080E":
-    "• Opciones de manilla: 015 o 9080E",
+    "• Opciones de manija: 015 o 9080E",
   "• Cylinder: Customized length per door thickness":
     "• Cilindro: longitud a medida según el espesor de la puerta",
   "Suitable for steel, aluminum, or wooden double-leaf and fire doors":
@@ -551,9 +551,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Suitable for handed or non-handed installation":
     "Apta para montaje con mano o sin mano",
   "• Key-operated locking from both sides; handle and key access from outside, panic push-bar from inside":
-    "• Bloqueo con llave por ambos lados; desde fuera se abre con manilla y llave, desde dentro con la barra antipánico",
+    "• Bloqueo con llave por ambos lados; desde fuera se abre con manija y llave, desde dentro con la barra antipánico",
   "• Key locks from outside only; unlocks via handle/key outside and panic device inside":
-    "• La llave bloquea solo desde fuera; se desbloquea con manilla o llave desde fuera y con el dispositivo antipánico desde dentro",
+    "• La llave bloquea solo desde fuera; se desbloquea con manija o llave desde fuera y con el dispositivo antipánico desde dentro",
   "• Key retracts latch bolt from outside; opens with panic bar from inside":
     "• La llave recoge el picaporte desde fuera; desde dentro se abre con la barra antipánico",
   "• Center distance optional 72mm / 92mm":
@@ -599,7 +599,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Ideal for shopping malls, schools, hospitals, hotels, office buildings, factories, warehouses, and other commercial or public facilities.":
     "Ideal para centros comerciales, colegios, hospitales, hoteles, edificios de oficinas, fábricas, almacenes y otras instalaciones comerciales o públicas.",
   "It helps reduce the risk of people being trapped inside cold rooms. An optional outside handle is available for daily door operation.":
-    "Ayuda a reducir el riesgo de que alguien quede atrapado dentro de una cámara frigorífica. Existe una manilla exterior opcional para el uso diario de la puerta.",
+    "Ayuda a reducir el riesgo de que alguien quede atrapado dentro de una cámara frigorífica. Existe una manija exterior opcional para el uso diario de la puerta.",
 
   "3-point locking system":
     "Sistema de cierre en tres puntos",
@@ -612,7 +612,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Angled strike (standard) for inward-opening doors":
     "Cerradero angular (de serie) para puertas de apertura hacia dentro",
   "Single Cylinder: Key and inside knob operate latch, with anti-pick slide gate":
-    "Cilindro simple: la llave y el pomo interior accionan el picaporte, con pletina antiganzúa",
+    "Cilindro simple: la llave y la perilla interior accionan el picaporte, con pletina antiganzúa",
   "Double Cylinder: Key operation from both sides":
     "Doble cilindro: accionamiento con llave por ambos lados",
   "Double Cylinder: Operated by key on both sides":
@@ -652,13 +652,13 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Anti-theft design with high security":
     "Diseño antirrobo de alta seguridad",
   "Operated by key or rotating knob":
-    "Se acciona con llave o con pomo giratorio",
+    "Se acciona con llave o con perilla giratoria",
   "Full turn of key locks or unlocks":
     "Una vuelta completa de llave bloquea o desbloquea",
   "Latch operated by both knobs; inside knob always free":
-    "El picaporte se acciona con ambos pomos; el pomo interior queda siempre libre",
+    "El picaporte se acciona con ambas perillas; la perilla interior queda siempre libre",
   "Outside knob locked/unlocked by key in inside cylinder":
-    "El pomo exterior se bloquea y desbloquea con llave desde el cilindro interior",
+    "La perilla exterior se bloquea y desbloquea con llave desde el cilindro interior",
   "Latch automatically deadlocks when door is closed":
     "El picaporte se autobloquea al cerrar la puerta",
   "Latch automatically deadlocks when closed":
@@ -672,9 +672,9 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Recommended for rooms with multiple entrances":
     "Recomendada para estancias con varias entradas",
   "Inside knob operates latch":
-    "El pomo interior acciona el picaporte",
+    "La perilla interior acciona el picaporte",
   "Outside knob always fixed; operated by key only":
-    "El pomo exterior está siempre fijo; solo se acciona con llave",
+    "La perilla exterior está siempre fijo; solo se acciona con llave",
   "Security: 5-pin tumbler brass cylinder with two nickel-plated brass keys":
     "Seguridad: cilindro de latón de 5 pitones con dos llaves de latón niquelado",
   "Standards: ANSI Grade 3, tested for over 200,000 cycles":
@@ -706,11 +706,11 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Solid steel chassis and latch case, zinc-plated for corrosion resistance":
     "Chasis y caja de picaporte de acero macizo, cincados para resistir la corrosión",
   "Latch bolt operated by key (outside) or knob (inside)":
-    "El picaporte se acciona con llave (desde fuera) o con el pomo (desde dentro)",
+    "El picaporte se acciona con llave (desde fuera) o con la perilla (desde dentro)",
   "Outside knob remains fixed":
-    "El pomo exterior permanece fijo",
+    "La perilla exterior permanece fijo",
   "Inside knob locked/unlocked by key from inside":
-    "El pomo interior se bloquea y desbloquea con llave desde dentro",
+    "La perilla interior se bloquea y desbloquea con llave desde dentro",
   "Latch bolt auto-deadlocks when door is closed":
     "El picaporte se autobloquea al cerrar la puerta",
   "Latch Bolt: 12mm (1/2”) throw with deadlocking":
@@ -805,7 +805,7 @@ export const FEATURE_LINES_ES: Record<string, string> = {
     "Mayor seguridad",
 
   "Elegant entrance handle set crafted from durable zinc alloy with polished brass finish. Designed to fit standard door preparations, offering an easy upgrade for residential entry doors.":
-    "Juego de manilla de entrada elegante, fabricado en aleación de zinc duradera con acabado latón pulido. Diseñado para encajar en los mecanizados de puerta estándar, es una mejora sencilla para puertas de entrada residenciales.",
+    "Juego de manija de entrada elegante, fabricado en aleación de zinc duradera con acabado latón pulido. Diseñado para encajar en los mecanizados de puerta estándar, es una mejora sencilla para puertas de entrada residenciales.",
   "Stylish grip handle set designed to enhance the appearance and security of entrance doors. Made of durable zinc alloy with satin nickel finish, compatible with standard door preps and easy to install.":
     "Juego de tirador con placa de línea cuidada, pensado para mejorar el aspecto y la seguridad de las puertas de entrada. Fabricado en aleación de zinc duradera con acabado níquel satinado, compatible con los mecanizados de puerta estándar y fácil de instalar.",
   "Premium Construction: Durable zinc alloy with polished brass finish; external components crafted from forged brass or electroplated zinc die-cast.":
@@ -821,19 +821,19 @@ export const FEATURE_LINES_ES: Record<string, string> = {
   "Intuitive locking: turn to lock, reverse to unlock":
     "Bloqueo intuitivo: girar para bloquear, al revés para desbloquear",
   "Key or thumb-turn locks/unlocks both levers":
-    "La llave o el botón giratorio bloquean y desbloquean ambas manillas",
+    "La llave o el botón giratorio bloquean y desbloquean ambas manijas",
   "Key or thumb-turn operates both knobs":
-    "La llave o el botón giratorio accionan ambos pomos",
+    "La llave o el botón giratorio accionan ambas perillas",
   "Locks/unlocks both knobs via key or thumb-turn":
-    "Bloquea y desbloquea ambos pomos con llave o botón giratorio",
+    "Bloquea y desbloquea ambas perillas con llave o botón giratorio",
   "Lock/unlock via key or thumb-turn":
     "Bloqueo y desbloqueo con llave o botón giratorio",
   "Synchronized locking for both knobs":
-    "Bloqueo sincronizado de ambos pomos",
+    "Bloqueo sincronizado de ambas perillas",
   "Internal thumb-turn or key rotation locks/unlocks simultaneously":
     "El botón giratorio interior o el giro de llave bloquean y desbloquean a la vez",
   "Turning thumb-turn counter-clockwise or key clockwise locks the knobs; reverse to unlock":
-    "Girando el botón en sentido antihorario o la llave en sentido horario se bloquean los pomos; al revés para desbloquear",
+    "Girando el botón en sentido antihorario o la llave en sentido horario se bloquean las perillas; al revés para desbloquear",
   "Locking: turn thumb-turn counter-clockwise or key clockwise; unlock in reverse":
     "Bloqueo: gire el botón en sentido antihorario o la llave en sentido horario; para desbloquear, al revés",
   "Zinc-plated steel chassis and latch for durability and corrosion resistance":

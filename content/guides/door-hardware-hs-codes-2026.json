@@ -82,15 +82,15 @@
     "es": [
       {
         "question": "¿Cuál es el código HS de una cerradura de puerta?",
-        "answer": "Las cerraduras de arquitectura (embutir, cilíndricas, de sobreponer, cerrojos, cilindros y picaportes de resbalón) caen en general en 8301.40, «las demás cerraduras». Las de mueble son 8301.30 y los candados 8301.10. Los seis primeros dígitos son internacionales; el código arancelario completo de su país va más allá."
+        "answer": "Las cerraduras de arquitectura (embutir, cilíndricas, de sobreponer, cerrojos, cilindros y picaportes de picaporte) caen en general en 8301.40, «las demás cerraduras». Las de mueble son 8301.30 y los candados 8301.10. Los seis primeros dígitos son internacionales; el código arancelario completo de su país va más allá."
       },
       {
         "question": "¿Cuál es el código HS de un cierrapuertas?",
         "answer": "8302.60, que existe específicamente para cierrapuertas automáticos. Un cierrapuertas no va en 8301 porque no cierra con llave, y ponerlo en 8302.41 como herraje de edificio es un error de clasificación aunque la partida sea la correcta."
       },
       {
-        "question": "¿Cuál es el código HS de bisagras y manillas?",
-        "answer": "Las bisagras tienen subpartida propia, 8302.10. Manillas, tiradores, placas de empuje, pestillos embutidos, topes y la mayoría de los herrajes de arquitectura caen en 8302.41, guarniciones y herrajes para edificios."
+        "question": "¿Cuál es el código HS de bisagras y manijas?",
+        "answer": "Las bisagras tienen subpartida propia, 8302.10. Manijas, tiradores, placas de empuje, pestillos embutidos, topes y la mayoría de los herrajes de arquitectura caen en 8302.41, guarniciones y herrajes para edificios."
       },
       {
         "question": "¿Las llaves se clasifican aparte de la cerradura?",
@@ -108,7 +108,7 @@
     "pt": [
       {
         "question": "Qual é o código HS de uma fechadura de porta?",
-        "answer": "As fechaduras de arquitetura (de embutir, cilíndricas, de sobrepor, trancas, cilindros e trincos de mola) caem em geral em 8301.40, «outras fechaduras». As de móvel são 8301.30 e os cadeados 8301.10. Os seis primeiros dígitos são internacionais; o código tarifário completo do seu país vai além."
+        "answer": "As fechaduras de arquitetura (de embutir, cilíndricas, de sobrepor, trancas, cilindros e trincos de mola) caem em geral em 8301.40, \"outras fechaduras\". As de móvel são 8301.30 e os cadeados 8301.10. Os seis primeiros dígitos são internacionais; o código tarifário completo do seu país vai além."
       },
       {
         "question": "Qual é o código HS de uma mola de porta?",
@@ -128,7 +128,7 @@
       },
       {
         "question": "Como obtenho uma classificação juridicamente segura?",
-        "answer": "Solicite uma decisão antecipada à sua própria administração aduaneira: Informação Pautal Vinculativa na UE, ruling letter do CBP nos EUA, equivalentes noutros países. Vincula a administração por um prazo. Uma linha de fatura, o hábito de um despachante e um código copiado de um embarque anterior são prática, não autoridade."
+        "answer": "Solicite uma decisão antecipada à sua própria administração aduaneira: Informação Pautal Vinculativa na UE, ruling letter do CBP nos EUA, equivalentes em outros países. Vincula a administração por um prazo. Uma linha de fatura, o hábito de um despachante e um código copiado de um embarque anterior são prática, não autoridade."
       }
     ]
   },
@@ -142,11 +142,11 @@
     "LA LÍNEA: 8301 FRENTE A 8302",
     "La partida 8301 cubre candados y cerraduras de metal común, junto con sus llaves y partes. La prueba es si el artículo cierra con llave.",
     "La partida 8302 cubre guarniciones, herrajes y artículos similares de metal común. La prueba es si el artículo monta, cuelga, cierra o sujeta algo sin cerrar con llave.",
-    "Así, un cuerpo de cerradura de embutir es 8301 y una bisagra es 8302. Una manilla sin función de cierre es 8302. Un cierrapuertas es 8302, y eso sorprende, porque un cierrapuertas es un mecanismo y parece que debería ir con las cerraduras.",
+    "Así, un cuerpo de cerradura de embutir es 8301 y una bisagra es 8302. Una manija sin función de cierre es 8302. Un cierrapuertas es 8302, y eso sorprende, porque un cierrapuertas es un mecanismo y parece que debería ir con las cerraduras.",
     "LAS SUBPARTIDAS DE 8301",
     "| Subpartida | Cubre |\n| --- | --- |\n| 8301.10 | candados |\n| 8301.20 | cerraduras para vehículos automóviles |\n| 8301.30 | cerraduras para muebles |\n| 8301.40 | las demás cerraduras, embutir, cilíndricas, sobreponer, cerrojos, cilindros, picaportes |\n| 8301.50 | cierres y monturas cierre con cerradura incorporada |\n| 8301.60 | partes |\n| 8301.70 | llaves presentadas aisladamente |",
     "LAS SUBPARTIDAS DE 8302",
-    "| Subpartida | Cubre |\n| --- | --- |\n| 8302.10 | bisagras de cualquier clase |\n| 8302.20 | ruedas |\n| 8302.30 | las demás guarniciones y herrajes para vehículos automóviles |\n| 8302.41 | las demás guarniciones y herrajes para edificios, manillas, tiradores, placas de empuje, pestillos, topes, guarniciones de barra antipánico |\n| 8302.42 | los demás, para muebles |\n| 8302.49 | los demás |\n| 8302.50 | cuelgasombreros, perchas, soportes y similares |\n| 8302.60 | cierrapuertas automáticos |",
+    "| Subpartida | Cubre |\n| --- | --- |\n| 8302.10 | bisagras de cualquier clase |\n| 8302.20 | ruedas |\n| 8302.30 | las demás guarniciones y herrajes para vehículos automóviles |\n| 8302.41 | las demás guarniciones y herrajes para edificios, manijas, tiradores, placas de empuje, pestillos, topes, guarniciones de barra antipánico |\n| 8302.42 | los demás, para muebles |\n| 8302.49 | los demás |\n| 8302.50 | cuelgasombreros, perchas, soportes y similares |\n| 8302.60 | cierrapuertas automáticos |",
     "LAS CUATRO QUE MÁS SE EQUIVOCAN",
     "Los cierrapuertas. La 8302.60 existe específicamente para ellos. Un cierrapuertas automático no va en 8301 porque no cierra con llave, y no va en 8302.41 porque tiene subpartida propia. Un cierrapuertas clasificado como herraje de edificio es un error aunque la partida sea la correcta.",
     "Las llaves enviadas por separado. La 8301.70 cubre llaves presentadas solas. Las llaves suministradas con la cerradura que abren viajan con la cerradura bajo su código, porque forman parte de ese artículo tal como se presenta. Una remesa de llaves de repuesto sin cerraduras es 8301.70.",
@@ -184,7 +184,7 @@
     "AS QUATRO QUE MAIS SE ERRAM",
     "As molas de porta. A 8302.60 existe especificamente para elas. Uma mola automática não entra em 8301 porque não tranca, e não entra em 8302.41 porque tem subposição própria. Uma mola classificada como ferragem de edifício é um erro mesmo com a posição certa.",
     "As chaves enviadas separadamente. A 8301.70 cobre chaves apresentadas sozinhas. As chaves fornecidas com a fechadura que abrem viajam com a fechadura sob o seu código, porque fazem parte desse artigo tal como apresentado. Uma remessa de chaves de reposição sem fechaduras é 8301.70.",
-    "As partes. A 8301.60 cobre partes de fechadura; as partes de artigos da 8302 seguem em geral as disposições de partes dessa posição. O erro recorrente é tratar um artigo completo como parte porque depois será montado noutra coisa. O que importa é o que cruza a fronteira, não o que lhe acontece depois.",
+    "As partes. A 8301.60 cobre partes de fechadura; as partes de artigos da 8302 seguem em geral as disposições de partes dessa posição. O erro recorrente é tratar um artigo completo como parte porque depois será montado em outra coisa. O que importa é o que cruza a fronteira, não o que lhe acontece depois.",
     "Móvel contra edifício. 8301.30 e 8302.42 são móvel; 8301.40 e 8302.41 são edifício. Uma fechadura de armário e uma de porta são subposições distintas com alíquotas potencialmente distintas. A distinção é o tipo de artigo para o qual foi projetado, não o edifício onde acaba.",
     "ONDE OS SEIS DÍGITOS PARAM",
     "Esta é a parte que mais confusão causa entre fornecedor e comprador, e merece precisão.",
@@ -192,7 +192,7 @@
     "Além de seis, o código é nacional. A União Europeia estende-o a oito na Nomenclatura Combinada; os Estados Unidos estendem-no a dez no HTSUS; outros países têm os seus próprios comprimentos e aberturas. Esses dígitos adicionais carregam a alíquota, e não são algo que um fornecedor de outro país possa consultar com autoridade.",
     "A consequência prática: peça a um fornecedor o código HS de seis dígitos e ele poderá dar uma resposta confiável. Peça o código tarifário completo do seu país e a resposta honesta é que ele pode sugerir um e você deve confirmá-lo. Classificar na própria tarifa é responsabilidade legal do importador na maioria das jurisdições, venha de onde vier a sugestão.",
     "COMO OBTER UMA RESPOSTA QUE VINCULE",
-    "A maioria das administrações aduaneiras emite decisões antecipadas: uma resolução escrita de classificação, obtida antes de importar, que vincula a administração durante um prazo. Os nomes mudam: Informação Pautal Vinculativa na UE, ruling letter do CBP nos Estados Unidos, e equivalentes noutros países.",
+    "A maioria das administrações aduaneiras emite decisões antecipadas: uma resolução escrita de classificação, obtida antes de importar, que vincula a administração durante um prazo. Os nomes mudam: Informação Pautal Vinculativa na UE, ruling letter do CBP nos Estados Unidos, e equivalentes em outros países.",
     "É a única resposta que o protege numa auditoria. Uma linha de fatura de um fornecedor, o hábito de um despachante e um código copiado de um embarque anterior são prova de prática, não autoridade.",
     "Para um produto que importará repetidamente em volume, a resolução compensa a papelada. Para um embarque de amostra pontual, em geral não.",
     "O QUE COLOCAMOS NOS DOCUMENTOS",

@@ -463,13 +463,13 @@ export const OPTION_NOTES: Record<string, string> = {
 
 export const OPTION_NOTES_ES: Record<string, string> = {
   "panic-exit-devices":
-    "Una barra en la cara interior de la puerta que abre al ser empujada, de modo que quien sale entre una multitud no necesita manilla, ni llave, ni instrucciones.",
+    "Una barra en la cara interior de la puerta que abre al ser empujada, de modo que quien sale entre una multitud no necesita manija, ni llave, ni instrucciones.",
   "lock-cases":
-    "El mecanismo en sí, embutido en una caja abierta en el canto de la puerta. Las manillas y los cilindros se piden aparte y se montan sobre él.",
+    "El mecanismo en sí, embutido en una caja abierta en el canto de la puerta. Las manijas y los cilindros se piden aparte y se montan sobre él.",
   "knob-locks":
-    "Cerradura y pomo en un solo conjunto, taladrado a través de la hoja. Es la cerradura más común en puerta interior porque necesita dos taladros y ningún rebaje.",
+    "Cerradura y perilla en un solo conjunto, taladrado a través de la hoja. Es la cerradura más común en puerta interior porque necesita dos taladros y ningún rebaje.",
   "lever-handles":
-    "Manillas sobre roseta o placa, para una cerradura que se compra por separado. Una manilla se abre con el codo o con el puño cerrado; un pomo no.",
+    "Manijas sobre roseta o placa, para una cerradura que se compra por separado. Una manija se abre con el codo o con el puño cerrado; una perilla no.",
   "stainless-steel-handles":
     "Tiradores y manillones en acero inoxidable, para accesos y puertas de vidrio donde el tirador es el herraje visible.",
   "night-latches-rim-locks":
@@ -483,7 +483,7 @@ export const OPTION_NOTES_ES: Record<string, string> = {
   "lock-cylinders":
     "La parte con llave. Cambiar el cilindro amaestra de nuevo la puerta sin tocar la cerradura.",
   deadbolts:
-    "Un pestillo accionado por llave o pomo giratorio, sin muelle detrás, de modo que no puede empujarse hacia dentro. Se instala sobre el resbalón, no en su lugar.",
+    "Un pestillo accionado por llave o perilla giratoria, sin muelle detrás, de modo que no puede empujarse hacia dentro. Se instala sobre el resbalón, no en su lugar.",
   "bathroom-accessories":
     "Barras de apoyo, perchas, portarrollos y repisas — los accesorios que un aseo necesita más allá de su puerta.",
   "hardware-accessories":
@@ -518,12 +518,12 @@ export const OPTION_NOTES_ES: Record<string, string> = {
   "glass-door-patch-fittings":
     "Herrajes de esquina que aprietan el vidrio templado y alojan el pivote, la cerradura o el travesaño.",
   latches: "El pestillo de muelle que mantiene la puerta cerrada sin bloquearla.",
-  "door-stoppers": "Detiene la hoja, y la manilla que lleva, antes de que ninguna alcance la pared.",
+  "door-stoppers": "Detiene la hoja, y la manija que lleva, antes de que ninguna alcance la pared.",
   "security-door-guards":
     "Permite abrir unos centímetros sobre un limitador, para hablar con quien llama antes de dejarle pasar.",
   indicators: "Indica libre u ocupado desde fuera, para una cabina o un aseo.",
   "exterior-trim":
-    "La manilla exterior de un dispositivo antipánico: la barra funciona desde dentro en cualquier caso, y esto decide si además se puede abrir desde fuera.",
+    "La manija exterior de un dispositivo antipánico: la barra funciona desde dentro en cualquier caso, y esto decide si además se puede abrir desde fuera.",
   "multi-point": "Lanza varios puntos arriba y abajo de la hoja con un solo giro, apretando una puerta alta.",
   "fire-door": "Dispositivos para huecos que deben contener el fuego y aun así dejar salir a la gente.",
   alarmed: "Suena al empujar la barra, para una puerta que es salida legal pero no de uso normal.",
@@ -583,7 +583,7 @@ export const OPTION_NOTES_PT: Record<string, string> = {
   "lever-handles":
     "Maçanetas de alavanca sobre roseta ou espelho. A altura da alavanca e a projeção decidem se a mão cabe atrás dela.",
   "knob-locks":
-    "Fechaduras de pomo ou de alavanca que se instalam em dois furos broqueados em vez de num alojamento embutido.",
+    "Fechaduras de perilla ou de alavanca que se instalam em dois furos broqueados em vez de num alojamento embutido.",
   "stainless-steel-handles":
     "Puxadores em inox para porta de vidro ou porta pesada. A distância entre furos é a medida que importa.",
   "glass-door-accessories":

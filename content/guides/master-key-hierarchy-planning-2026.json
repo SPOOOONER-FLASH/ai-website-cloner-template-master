@@ -129,7 +129,7 @@
     "pt": [
       {
         "question": "Quantos níveis de chave mestra um edifício precisa?",
-        "answer": "Normalmente três no máximo. O número deve seguir como a organização delega autoridade na prática, não como a planta está desenhada. Um escritório de dois pisos com um único responsável de manutenção precisa de uma mestra e diferentes, não de uma grande mestra: os níveis a mais custam capacidade e dinheiro e criam chaves que alguém tem de controlar."
+        "answer": "Normalmente três no máximo. O número deve seguir como a organização delega autoridade na prática, não como a planta está desenhada. Um escritório de dois pisos com um único responsável de manutenção precisa de uma mestra e diferentes, não de uma grande mestra: os níveis a mais custam capacidade e dinheiro e criam chaves que alguém tem que controlar."
       },
       {
         "question": "Por que um sistema de chave mestra fica sem capacidade?",
@@ -141,7 +141,7 @@
       },
       {
         "question": "Pode acrescentar-se capacidade de ampliação a um sistema existente?",
-        "answer": "Não. A ampliação tem de ser reservada no projeto deixando grupos e diferentes deliberadamente por emitir. Não pode ser acrescentada depois porque as combinações que teriam sido a ampliação já foram entretanto emitidas como chaves normais."
+        "answer": "Não. A ampliação tem que ser reservada no projeto deixando grupos e diferentes deliberadamente por emitir. Não pode ser acrescentada depois porque as combinações que teriam sido a ampliação já foram entretanto emitidas como chaves normais."
       },
       {
         "question": "O que é o chaveamento de obra e o que falha nele?",
@@ -208,7 +208,7 @@
     "Confirmamos la gama de cilindro, las longitudes y los repartos, los acabados y las cantidades, y confirmamos el perfil y lo que se compromete en control de llave, pedido a pedido y por escrito.",
     "El diseño de la jerarquía lo hace normalmente quien posee el sistema (un cerrajero, un consultor de seguridad, o el fabricante de una plataforma patentada) porque depende de las reglas de amaestramiento de esa plataforma y de un organigrama del que no somos parte. Preferimos decirlo sin rodeos antes que dibujar una jerarquía que parezca correcta y entre en conflicto con la plataforma sobre la que hay que cortarla."
   ],
-  "titlePt": "Planeamento de hierarquia de chave mestra 2026: os níveis, o que o cruzamento realmente custa, e como deixar espaço para o edifício que vai ter",
+  "titlePt": "Planejamento de hierarquia de chave mestra 2026: os níveis, o que o cruzamento realmente custa, e como deixar espaço para o edifício que vai ter",
   "summaryPt": "Um sistema de chave mestra é projetado uma vez e convive-se com ele vinte anos, e quase todo sistema que fica sem espaço ficou pelas mesmas duas razões: níveis a mais para o edifício, e cruzamentos concedidos porta a porta como favores. Esta página estabelece a hierarquia, explica por que cada nível e cada cruzamento consome capacidade de um conjunto finito, e dá as perguntas a responder antes de cortar um único cilindro.",
   "seoTitlePt": "Hierarquia de chave mestra 2026: níveis e capacidade | Canton Hyland",
   "seoDescriptionPt": "Como planear uma hierarquia de chave mestra: os níveis explicados, por que o cruzamento consome capacidade, margem de ampliação, chaveamento de obra, e o que decidir antes de cortar.",
@@ -216,15 +216,15 @@
     "Um sistema de chave mestra é uma peça de arquitetura. É projetado uma vez, antes de cortar qualquer cilindro, e depois o edifício vive dentro desse projeto enquanto os cilindros durarem.",
     "Quase todo sistema que se torna inviável fá-lo por uma de duas razões, e as duas são decisões de projeto tomadas na primeira semana e não falhas que apareçam depois.",
     "## Os níveis, de cima para baixo",
-    "| Nível | Abre | Normalmente detida por |\n| --- | --- | --- |\n| Grande grande mestra (GGMK) | Tudo em todos os sistemas abaixo | Muito poucas pessoas, muitas vezes nenhuma no dia a dia |\n| Grande mestra (GMK) | Tudo dentro de um sistema | Direção de património ou manutenção |\n| Mestra (MK) | Um departamento, piso ou edifício | Um chefe de departamento, um responsável de turno |\n| Submestra (SMK) | Um grupo dentro desse departamento | Um chefe de equipe, um supervisor de limpeza |\n| Chave diferente | Uma porta, ou um grupo pequeno | Quem usa essa porta |",
+    "| Nível | Abre | Normalmente detida por |\n| --- | --- | --- |\n| Grande grande mestra (GGMK) | Tudo em todos os sistemas abaixo | Muito poucas pessoas, muitas vezes nenhuma no dia a dia |\n| Grande mestra (GMK) | Tudo dentro de um sistema | Direção de patrimônio ou manutenção |\n| Mestra (MK) | Um departamento, piso ou edifício | Um chefe de departamento, um responsável de turno |\n| Submestra (SMK) | Um grupo dentro desse departamento | Um chefe de equipe, um supervisor de limpeza |\n| Chave diferente | Uma porta, ou um grupo pequeno | Quem usa essa porta |",
     "Um sistema não precisa dos cinco. A maioria dos edifícios precisa de três no máximo, e o número de níveis deve seguir a forma como a organização delega autoridade de verdade, não a forma como a planta está desenhada.",
-    "Essa distinção é a primeira decisão de projeto e a que mais se erra. Um escritório de dois pisos com um único responsável de manutenção não precisa de grande mestra: precisa de mestra e diferentes. Acrescentar níveis que não usa custa capacidade, custa dinheiro, e cria chaves que alguém tem de controlar.",
+    "Essa distinção é a primeira decisão de projeto e a que mais se erra. Um escritório de dois pisos com um único responsável de manutenção não precisa de grande mestra: precisa de mestra e diferentes. Acrescentar níveis que não usa custa capacidade, custa dinheiro, e cria chaves que alguém tem que controlar.",
     "## Por que cada nível custa capacidade",
     "Esta é a parte que raramente é explicada e que explica todo o resto.",
     "Um palhetão tem um número finito de diferentes utilizáveis, dentados distintos que acionam um cilindro e nenhum outro. Esse conjunto é fixado pela plataforma: o número de posições de pino, o número de profundidades disponíveis em cada uma, e as regras do fabricante sobre que combinações são permitidas.",
     "Mestrar funciona dando a um cilindro mais de um ponto de corte, para que tanto a chave diferente como a mestra o acionem. Cada ponto de corte adicional retira outros dentados do conjunto utilizável, porque esses dentados agora acionariam o cilindro por acidente.",
     "Então a aritmética não é aditiva, é subtrativa. Cada nível de mestra que acrescenta, e cada porta que mestra em mais de um grupo, reduz o número de chaves diferentes genuinamente únicas que o sistema ainda pode emitir.",
-    "Por isso um sistema «esgota-se»: não porque alguém usou o último número de uma lista, mas porque as combinações que restam entrariam em conflito com combinações já emitidas.",
+    "Por isso um sistema \"esgota-se\": não porque alguém usou o último número de uma lista, mas porque as combinações que restam entrariam em conflito com combinações já emitidas.",
     "## O cruzamento é o favor caro",
     "O chaveamento cruzado significa que um cilindro é acionado por chaves de mais de um ramo da hierarquia, o caso clássico é uma sala de reuniões que a mestra de vendas e a de marketing abrem.",
     "É pedido como uma pequena comodidade e concedido da mesma forma, porta a porta. Não é nem pequeno nem pontual: cada cilindro cruzado acrescenta pontos de corte e consome de forma desproporcionada do conjunto, e um sistema com cruzamentos espalhados esgota-se muito antes da sua capacidade nominal.",
@@ -244,13 +244,13 @@
     "O útil é decidir qual eixo é o principal antes de desenhar seja o que for. Um sistema principalmente horizontal com algumas exceções geográficas é coerente. Um sistema que é as duas coisas ao mesmo tempo, decidido porta a porta, é o sistema que se esgota.",
     "## A margem de ampliação, projetada ou inexistente",
     "Um sistema cortado exatamente para o edifício de hoje não tem espaço, e os edifícios mudam: os pisos subdividem-se, os departamentos fundem-se, chega uma ala nova.",
-    "A ampliação tem de ser reservada no projeto, deixando grupos e diferentes deliberadamente por emitir. Não pode ser acrescentada depois, porque as combinações por emitir que teriam sido a ampliação já foram entretanto emitidas como diferentes normais.",
+    "A ampliação tem que ser reservada no projeto, deixando grupos e diferentes deliberadamente por emitir. Não pode ser acrescentada depois, porque as combinações por emitir que teriam sido a ampliação já foram entretanto emitidas como diferentes normais.",
     "Um ponto de partida razoável é projetar a hierarquia em torno da organização tal como plausivelmente será daqui a cinco a dez anos, e reservar capacidade acima disso. O que isso significa em números depende da plataforma, e é uma pergunta para quem projetar o sistema, mas a decisão de reservar, e aproximadamente quanto, é do cliente e vai na especificação.",
     "A nossa página de especificação coloca a cláusula de chaveamento entre as quatro que decidem o preço, exatamente por isto: não custa nada escrevê-la e não pode ser acrescentada depois.",
-    "## O chaveamento de obra, e a entrega que tem de acontecer",
+    "## O chaveamento de obra, e a entrega que tem que acontecer",
     "Durante a obra o edifício está cheio de gente que precisa de acesso e que depois não terá chaves. O chaveamento de obra resolve isso com uma chave temporária que funciona até a chave definitiva ser usada pela primeira vez em cada cilindro, o que anula permanentemente a de obra nesse cilindro.",
     "Duas coisas falham, e as duas são de procedimento.",
-    "Ninguém passa as chaves definitivas por todos os cilindros na entrega. Um cilindro que nunca viu a sua chave definitiva continua a aceitar a de obra, e não há forma de o saber olhando. A entrega tem de incluir alguém a girar fisicamente a chave definitiva em cada fechadura e a registar que o fez.",
+    "Ninguém passa as chaves definitivas por todos os cilindros na entrega. Um cilindro que nunca viu a sua chave definitiva continua a aceitar a de obra, e não há forma de o saber olhando. A entrega tem que incluir alguém a girar fisicamente a chave definitiva em cada fechadura e a registrar que o fez.",
     "As chaves de obra não são recolhidas: não valem nada uma vez convertidos todos os cilindros e são perigosas até lá, o que faz com que a recolha mereça ser feita antes da conversão e não depois.",
     "## O que decidir antes de cortar um único cilindro",
     "Quantos níveis, e a que corresponde cada um na organização e não na planta.",
@@ -261,6 +261,6 @@
     "E o perfil e o seu estado, aberto, restrito ou patenteado, porque essa decisão restringe tudo o anterior e é a mais difícil de mudar depois.",
     "## O que confirmamos e o que não",
     "Confirmamos a linha de cilindro, os comprimentos e as repartições, os acabamentos e as quantidades, e confirmamos o perfil e o que é comprometido em controle de chave, pedido a pedido e por escrito.",
-    "O projeto da hierarquia é normalmente feito por quem detém o sistema (um serralheiro, um consultor de segurança, ou o fabricante de uma plataforma patenteada) porque depende das regras de mestragem dessa plataforma e de um organograma de que não fazemos parte. Preferimos dizê-lo sem rodeios a desenhar uma hierarquia que pareça correta e entre em conflito com a plataforma sobre a qual tem de ser cortada."
+    "O projeto da hierarquia é normalmente feito por quem detém o sistema (um serralheiro, um consultor de segurança, ou o fabricante de uma plataforma patenteada) porque depende das regras de mestragem dessa plataforma e de um organograma de que não fazemos parte. Preferimos dizê-lo sem rodeios a desenhar uma hierarquia que pareça correta e entre em conflito com a plataforma sobre a qual tem que ser cortada."
   ]
 }

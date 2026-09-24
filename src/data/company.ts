@@ -19,7 +19,7 @@ export const profile: string[] = [
 
 export const profileEs: string[] = [
   "Canton Hyland Hardware (Group) Co., Ltd. fue fundada en 1998 y aporta décadas de experiencia a la fabricación de herrajes para edificios comerciales y residenciales. Nuestras instalaciones integran estampación, pulido, montaje y control de calidad.",
-  "Nos especializamos en soluciones completas de seguridad y herrajes para puertas: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura, cilindros de perfil, manillas, herrajes para vidrio y accesorios para edificios y dormitorios.",
+  "Nos especializamos en soluciones completas de seguridad y herrajes para puertas: dispositivos antipánico, cerraduras cilíndricas y tubulares, cerrojos, cajas de cerradura, cilindros de perfil, manijas, herrajes para vidrio y accesorios para edificios y dormitorios.",
   "Como especialistas en sistemas de llave maestra y llave de obra, apoyamos proyectos comerciales e institucionales complejos. Desde la certificación ISO 9001 en 2002, mantenemos un enfoque de mejora continua y control de calidad.",
   "Trabajamos con distribuidores, arquitectos, contratistas y socios OEM, desarrollando soluciones adaptadas a requisitos técnicos y mercados de exportación.",
 ];
@@ -191,7 +191,7 @@ export const companyEditorialStudies: ImageRef[] = [
     label:
       "Our press shop: a row of mechanical punch presses with their tooling set, where lock cases, plates and handle blanks are stamped",
     labelEs:
-      "Nuestra sección de prensas: una fila de prensas mecánicas con su utillaje montado, donde se estampan cajas de cerradura, placas y piezas en bruto de manillas",
+      "Nuestra sección de prensas: una fila de prensas mecánicas con su utillaje montado, donde se estampan cajas de cerradura, placas y piezas en bruto de manijas",
     labelPt:
       "A nossa secção de prensas: uma fila de prensas mecânicas com a ferramenta montada, onde se estampam caixas de fechadura, espelhos e peças em bruto de maçanetas",
   },

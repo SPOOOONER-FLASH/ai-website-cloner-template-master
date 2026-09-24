@@ -87,7 +87,7 @@
       },
       {
         "question": "¿Puedo poner una cuarta bisagra en vez de especificar una más fuerte?",
-        "answer": "No. La carga de una puerta colgada no se reparte por igual: la bisagra superior soporta la mayor fuerza de arranque porque el peso actúa como palanca respecto al pie del cerco. Una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que falla."
+        "answer": "No. La carga de una puerta colgada no se reparte por igual: la bisagra superior soporta la mayor fuerza de arranque porque el peso actúa como palanca respecto al pie del marco. Una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que falla."
       },
       {
         "question": "¿Qué significan los grados EN 1935 del 1 al 14?",
@@ -95,7 +95,7 @@
       },
       {
         "question": "¿Un grado EN 1935 equivale a una clase ANSI/BHMA A156.1?",
-        "answer": "No, y no hay conversión limpia. EN da un grado ascendente único; A156.1 da una clase de peso combinada con una frecuencia de uso. Para un cuadro que cubra ambos mercados, indique masa, altura, ciclos diarios previstos y condición cortafuego, y deje que cada proveedor lo traduzca a su clasificación."
+        "answer": "No, y no hay conversión limpia. EN da un grado ascendente único; A156.1 da una clase de peso combinada con una frecuencia de uso. Para una planilla que cubra ambos mercados, indique masa, altura, ciclos diarios previstos y condición cortafuego, y deje que cada proveedor lo traduzca a su clasificación."
       },
       {
         "question": "¿Cuándo compensa una bisagra con rodamiento de bolas?",
@@ -103,7 +103,7 @@
       },
       {
         "question": "Mi puerta ha caído y roza el cerradero. ¿Qué ha fallado?",
-        "answer": "Lo más frecuente es el arranque de tornillos en la bisagra superior, donde cede el cerco y no la bisagra. Es la firma de una bisagra o una fijación infradimensionada para la masa. Revise las fijaciones superiores antes de mover el cerradero, porque moverlo esconde el fallo en lugar de repararlo."
+        "answer": "Lo más frecuente es el arranque de tornillos en la bisagra superior, donde cede el marco y no la bisagra. Es la firma de una bisagra o una fijación infradimensionada para la masa. Revise las fijaciones superiores antes de mover el cerradero, porque moverlo esconde el fallo en lugar de repararlo."
       }
     ],
     "pt": [
@@ -121,7 +121,7 @@
       },
       {
         "question": "Um grau EN 1935 equivale a uma classe ANSI/BHMA A156.1?",
-        "answer": "Não, e não há conversão limpa. A EN dá um grau crescente único; a A156.1 dá uma classe de peso combinada com uma frequência de uso. Para um mapa que cubra os dois mercados, indique massa, altura, ciclos diários previstos e condição corta-fogo, e deixe cada fornecedor traduzir isso para a sua classificação."
+        "answer": "Não, e não há conversão limpa. A EN dá um grau crescente único; a A156.1 dá uma classe de peso combinada com uma frequência de uso. Para uma planilha que cubra os dois mercados, indique massa, altura, ciclos diários previstos e condição corta-fogo, e deixe cada fornecedor traduzir isso para a sua classificação."
       },
       {
         "question": "Quando compensa uma dobradiça com rolamento de esferas?",
@@ -129,7 +129,7 @@
       },
       {
         "question": "A minha porta caiu e raspa no batente. O que falhou?",
-        "answer": "Na maioria das vezes o arranque de parafusos na dobradiça superior, onde cede o aro e não a dobradiça. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa. Verifique as fixações superiores antes de mexer no batente, porque mexer nele esconde a falha em vez de a reparar."
+        "answer": "Na maioria das vezes o arranque de parafusos na dobradiça superior, onde cede o marco e não a dobradiça. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa. Verifique as fixações superiores antes de mexer no batente, porque mexer nele esconde a falha em vez de a reparar."
       }
     ]
   },
@@ -146,19 +146,19 @@
     "Junto al grado, la clasificación lleva una categoría de uso, una durabilidad en ciclos, una masa de puerta, una aptitud cortafuego, una clase de seguridad de uso, un grado de resistencia a la corrosión y un grado de seguridad. Una especificación que cita solo el dígito de grado ha citado uno de ocho.",
     "EL ENFOQUE DE ANSI/BHMA A156.1",
     "A156.1 cubre palas y bisagras y las clasifica por clase de peso y por frecuencia de uso, no por un único número ascendente. En la práctica es una matriz: bisagra de peso estándar o pesado, en aplicación de alta o baja frecuencia, en un tamaño indicado.",
-    "La consecuencia para el trabajo transfronterizo es la misma que con los cierrapuertas. Un grado EN es un valor único que un proveedor puede igualar. Una clasificación norteamericana es una combinación. Un cuadro para ambos mercados debe indicar masa de la puerta, altura, ciclos diarios previstos y si es cortafuego, y dejar que el proveedor de cada mercado lo traduzca.",
+    "La consecuencia para el trabajo transfronterizo es la misma que con los cierrapuertas. Un grado EN es un valor único que un proveedor puede igualar. Una clasificación norteamericana es una combinación. Una planilla para ambos mercados debe indicar masa de la puerta, altura, ciclos diarios previstos y si es cortafuego, y dejar que el proveedor de cada mercado lo traduzca.",
     "CUÁNTAS BISAGRAS NECESITA UNA PUERTA",
     "El número lo gobierna primero la altura de la hoja y después su masa, y la convención está asentada.",
     "| Altura de hoja hasta | Bisagras |\n| --- | --- |\n| 1524 mm | 2 |\n| 2286 mm | 3 |\n| 3048 mm | 4 |\n| cada 762 mm adicionales o fracción | una más |",
     "Esa es la regla de altura. La regla de masa corre en paralelo: si la masa de la puerta supera lo que cubre el grado elegido con el número que da la regla de altura, la respuesta es un grado superior, no una bisagra más.",
     "POR QUÉ UNA BISAGRA MÁS NO ES UN GRADO MÁS",
     "Este es el error que merece nombrarse, porque lo comete gente cuidadosa y no descuidada. Una puerta es demasiado pesada para las bisagras especificadas, así que se añade una cuarta para repartir la carga.",
-    "No funciona como sugiere la intuición. La carga de una puerta colgada no se reparte por igual entre las bisagras: la superior soporta la mayor parte de la fuerza de arranque porque el peso actúa como palanca respecto al pie del cerco. Añadir una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que fallará, y sigue infradimensionada.",
+    "No funciona como sugiere la intuición. La carga de una puerta colgada no se reparte por igual entre las bisagras: la superior soporta la mayor parte de la fuerza de arranque porque el peso actúa como palanca respecto al pie del marco. Añadir una bisagra intermedia añade apoyo donde menos fuerza hay. La superior sigue siendo la que fallará, y sigue infradimensionada.",
     "Una bisagra intermedia sí hace trabajo real (resiste el alabeo de la hoja y rigidiza una puerta alta) pero no sustituye a un grado que cubra la masa.",
     "LOS TRES MODOS DE FALLO",
-    "Arranque de tornillos en la bisagra superior. La bisagra está intacta, el cerco ha cedido. Es la firma de una bisagra o una fijación infradimensionada para la masa, y es la que hace caer la puerta y rozar contra el cerradero.",
-    "Desgaste del nudillo. El pasador y el nudillo se aflojan con los ciclos y la puerta coge holgura: traquetea, y el picaporte deja de entrar recto en el cerradero. Es la firma de una clase de durabilidad por debajo del tráfico real, y por eso la cifra de ciclos de la clasificación importa tanto como la masa.",
-    "Corrosión en el pasador. En una puerta exterior o en obra costera, una bisagra con grado de corrosión inferior a su exposición se agarrota o sangra óxido por el cerco. Es un dígito aparte en la clasificación EN 1935, y especificar un grado de carga alto no hace nada por él.",
+    "Arranque de tornillos en la bisagra superior. La bisagra está intacta, el marco ha cedido. Es la firma de una bisagra o una fijación infradimensionada para la masa, y es la que hace caer la puerta y rozar contra el cerradero.",
+    "Desgaste del nudillo. El pasador y el nudillo se aflojan con los ciclos y la puerta toma holgura: traquetea, y el picaporte deja de entrar recto en el cerradero. Es la firma de una clase de durabilidad por debajo del tráfico real, y por eso la cifra de ciclos de la clasificación importa tanto como la masa.",
+    "Corrosión en el pasador. En una puerta exterior o en obra costera, una bisagra con grado de corrosión inferior a su exposición se agarrota o sangra óxido por el marco. Es un dígito aparte en la clasificación EN 1935, y especificar un grado de carga alto no hace nada por él.",
     "RODAMIENTOS, Y DÓNDE COMPENSAN",
     "Una bisagra de nudillo simple trabaja metal contra metal. Una de rodamiento de bolas o arandela coloca un rodamiento entre nudillos, lo que reduce fricción y desgaste a cambio de un paquete de nudillos algo más grueso.",
     "Donde compensa su precio es en la combinación de puerta pesada y tráfico alto: una entrada principal, una puerta de escalera concurrida, cualquier puerta con cierrapuertas, porque el cierrapuertas cicla la puerta al margen de cómo la traten. En una puerta interior ligera de poco tráfico, la bisagra simple es la especificación correcta, no la barata.",
@@ -173,7 +173,7 @@
   "seoTitlePt": "Graus e número de dobradiças 2026: EN 1935, A156.1, quantas | Canton Hyland",
   "seoDescriptionPt": "Graus EN 1935 de 1 a 14 com as massas ensaiadas, classes de peso ANSI/BHMA A156.1, quantas dobradiças por altura de porta, e por que o número não substitui o grau.",
   "bodyPt": [
-    "Uma especificação de dobradiça que diz «dobradiça de aba inox, 4 polegadas» nomeou um tamanho e um material e omitiu as duas coisas que decidem se a porta continuará reta daqui a cinco anos. As duas que importam são o grau e o número.",
+    "Uma especificação de dobradiça que diz \"dobradiça de aba inox, 4 polegadas\" nomeou um tamanho e um material e omitiu as duas coisas que decidem se a porta continuará reta daqui a cinco anos. As duas que importam são o grau e o número.",
     "A ESCALA DA EN 1935",
     "A EN 1935 é a norma europeia de dobradiças de eixo único. Classifica uma dobradiça em oito dígitos, e o que se cita é o grau: de 1 a 14, crescente, cada um ligado a uma massa máxima de porta ensaiada quando a dobradiça é usada na configuração de ensaio.",
     "Os graus baixos cobrem portas internas leves. O meio da escala cobre portas comerciais internas e de entrada normais. Os graus altos cobrem portas pesadas, incluindo as faixas de massa onde cai uma corta-fogo ou uma porta de segurança.",
@@ -181,24 +181,24 @@
     "Ao lado do grau, a classificação leva uma categoria de uso, uma durabilidade em ciclos, uma massa de porta, uma aptidão corta-fogo, uma classe de segurança de uso, um grau de resistência à corrosão e um grau de segurança. Uma especificação que cita só o dígito do grau citou um de oito.",
     "A ABORDAGEM DA ANSI/BHMA A156.1",
     "A A156.1 cobre abas e dobradiças e classifica-as por classe de peso e por frequência de uso, não por um único número crescente. Na prática é uma matriz: dobradiça de peso padrão ou pesado, em aplicação de alta ou baixa frequência, num tamanho indicado.",
-    "A consequência para o trabalho transfronteiriço é a mesma que com as molas de porta. Um grau EN é um valor único que um fornecedor pode igualar. Uma classificação norte-americana é uma combinação. Um mapa para os dois mercados deve indicar massa da porta, altura, ciclos diários previstos e se é corta-fogo, e deixar o fornecedor de cada mercado traduzir isso.",
+    "A consequência para o trabalho transfronteiriço é a mesma que com as molas de porta. Um grau EN é um valor único que um fornecedor pode igualar. Uma classificação norte-americana é uma combinação. Uma planilha para os dois mercados deve indicar massa da porta, altura, ciclos diários previstos e se é corta-fogo, e deixar o fornecedor de cada mercado traduzir isso.",
     "QUANTAS DOBRADIÇAS UMA PORTA PRECISA",
     "O número é governado primeiro pela altura da folha e depois pela sua massa, e a convenção está assente.",
     "| Altura de folha até | Dobradiças |\n| --- | --- |\n| 1524 mm | 2 |\n| 2286 mm | 3 |\n| 3048 mm | 4 |\n| a cada 762 mm adicionais ou fração | mais uma |",
     "Essa é a regra de altura. A regra de massa corre em paralelo: se a massa da porta ultrapassa o que o grau escolhido cobre com o número que a regra de altura dá, a resposta é um grau superior, não mais uma dobradiça.",
     "POR QUE MAIS UMA DOBRADIÇA NÃO É MAIS UM GRAU",
     "Este é o erro que merece ser nomeado, porque é cometido por gente cuidadosa e não descuidada. Uma porta é pesada demais para as dobradiças especificadas, então acrescenta-se uma quarta para repartir a carga.",
-    "Não funciona como a intuição sugere. A carga de uma porta pendurada não se reparte por igual entre as dobradiças: a superior suporta a maior parte da força de arranque porque o peso age como alavanca em relação ao pé do aro. Acrescentar uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que vai falhar, e continua subdimensionada.",
+    "Não funciona como a intuição sugere. A carga de uma porta pendurada não se reparte por igual entre as dobradiças: a superior suporta a maior parte da força de arranque porque o peso age como alavanca em relação ao pé do marco. Acrescentar uma dobradiça intermédia acrescenta apoio onde há menos força. A superior continua sendo a que vai falhar, e continua subdimensionada.",
     "Uma dobradiça intermédia faz trabalho real (resiste ao empeno da folha e enrijece uma porta alta) mas não substitui um grau que cubra a massa.",
     "OS TRÊS MODOS DE FALHA",
-    "Arranque de parafusos na dobradiça superior. A dobradiça está intacta, o aro cedeu. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa, e é a que faz a porta cair e raspar contra o batente.",
+    "Arranque de parafusos na dobradiça superior. A dobradiça está intacta, o marco cedeu. É a assinatura de uma dobradiça ou de uma fixação subdimensionada para a massa, e é a que faz a porta cair e raspar contra o batente.",
     "Desgaste do nó. O pino e o nó afrouxam com os ciclos e a porta ganha folga: chocalha, e o trinco deixa de entrar reto no batente. É a assinatura de uma classe de durabilidade abaixo do tráfego real, e por isso a cifra de ciclos da classificação importa tanto quanto a massa.",
-    "Corrosão no pino. Numa porta externa ou em obra costeira, uma dobradiça com grau de corrosão inferior à sua exposição emperra ou sangra ferrugem pelo aro. É um dígito à parte na classificação EN 1935, e especificar um grau de carga alto não faz nada por ele.",
+    "Corrosão no pino. Numa porta externa ou em obra costeira, uma dobradiça com grau de corrosão inferior à sua exposição emperra ou sangra ferrugem pelo marco. É um dígito à parte na classificação EN 1935, e especificar um grau de carga alto não faz nada por ele.",
     "ROLAMENTOS, E ONDE COMPENSAM",
     "Uma dobradiça de nó simples trabalha metal contra metal. Uma de rolamento de esferas ou arruela coloca um rolamento entre nós, o que reduz atrito e desgaste em troca de um pacote de nós um pouco mais grosso.",
     "Onde compensa o seu preço é na combinação de porta pesada e tráfego alto: uma entrada principal, uma porta de escada movimentada, qualquer porta com mola, porque a mola cicla a porta independentemente de como a tratem. Numa porta interna leve de pouco tráfego, a dobradiça simples é a especificação correta, não a barata.",
     "PORTAS CORTA-FOGO",
-    "Uma dobradiça de corta-fogo tem de ser apta para esse uso, e a aptidão não é uma propriedade do material. O aço e o inox são habituais em corta-fogo e o latão em geral não, mas a decisão é tomada pelo ensaio de fogo do conjunto completo, não pelo ponto de fusão da dobradiça.",
+    "Uma dobradiça de corta-fogo tem que ser apta para esse uso, e a aptidão não é uma propriedade do material. O aço e o inox são habituais em corta-fogo e o latão em geral não, mas a decisão é tomada pelo ensaio de fogo do conjunto completo, não pelo ponto de fusão da dobradiça.",
     "A regra prática: as dobradiças de uma corta-fogo fazem parte do seu conjunto ensaiado. Substituir uma dobradiça do mesmo tamanho e classificação diferente é uma mudança do conjunto, e o certificado cobre o que foi ensaiado.",
     "O QUE PUBLICAMOS",
     "As nossas páginas de dobradiça levam as dimensões de aba, a espessura, o material e o acabamento tal como os medimos e fornecemos, com equivalências imperiais nas páginas em inglês. Onde um modelo foi ensaiado a um grau EN 1935 ou a uma classificação A156.1, isso é indicado. Onde não, não aparece grau: um grau de dobradiça é um resultado de ensaio, e um resultado de ensaio tem-se ou não se tem."

@@ -97,7 +97,7 @@
       },
       {
         "question": "¿Qué tipo de muestra debo pedir?",
-        "answer": "Una muestra de stock si está evaluando a un proveedor. Una muestra de preserie si algo difiere del catálogo (un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa) , porque demuestra que la especificación se entendió. Una muestra de producción sacada de la serie real es contra lo que se hace una inspección."
+        "answer": "Una muestra de stock si está evaluando a un proveedor. Una muestra de preserie si algo difiere del catálogo (un acabado, una entrada, una longitud de cuadradillo, una caja impresa) , porque demuestra que la especificación se entendió. Una muestra de producción sacada de la serie real es contra lo que se hace una inspección."
       },
       {
         "question": "¿Cuándo debo tomar una muestra?",
@@ -109,7 +109,7 @@
       },
       {
         "question": "¿Qué debo medir en una muestra de cerradura?",
-        "answer": "Distancia al eje, distancia entre centros de cuadradillo y cilindro, largo y ancho de frente, dimensiones de caja, cuadrado de cuadradillo y rango de espesor de puerta, contra el plano y no contra su recuerdo del plano, anotando las lecturas y no solo el apto o no apto. Compruebe el acabado contra una referencia física, no contra un código ni una foto."
+        "answer": "Entrada, distancia entre centros de cuadradillo y cilindro, largo y ancho de frente, dimensiones de caja, cuadrado de cuadradillo y rango de espesor de puerta, contra el plano y no contra su recuerdo del plano, anotando las lecturas y no solo el apto o no apto. Compruebe el acabado contra una referencia física, no contra un código ni una foto."
       },
       {
         "question": "¿Cómo redacto una instrucción de inspección que pueda usar un tercero?",
@@ -119,7 +119,7 @@
     "pt": [
       {
         "question": "O que é uma amostra padrão selada?",
-        "answer": "Duas amostras idênticas, ambas assinadas e datadas por comprador e fábrica, cada uma lacrada e guardada por uma das partes, com um número de referência que consta do pedido. A partir daí «conforme amostra padrão 2026-0147» é uma linha de especificação, e uma divergência resolve-se abrindo duas caixas em vez de trocando adjetivos."
+        "answer": "Duas amostras idênticas, ambas assinadas e datadas por comprador e fábrica, cada uma lacrada e guardada por uma das partes, com um número de referência que consta do pedido. A partir daí \"conforme amostra padrão 2026-0147\" é uma linha de especificação, e uma divergência resolve-se abrindo duas caixas em vez de trocando adjetivos."
       },
       {
         "question": "Que tipo de amostra devo pedir?",
@@ -152,7 +152,7 @@
     "Una muestra es la única herramienta que atrapa eso antes de que se convierta en un contenedor. Convierte una descripción en un objeto, y un objeto no se puede malinterpretar de dos formas a la vez.",
     "LOS TRES TIPOS DE MUESTRA",
     "Una muestra de stock es un producto existente sacado de la estantería. Le enseña el modelo, la calidad del acabado y la construcción general. Es rápida y barata y es lo correcto que pedir cuando está evaluando a un proveedor y no una especificación.",
-    "Una muestra de preserie se hace según su especificación antes de arrancar la serie. Es la que importa cuando algo difiere del catálogo (un acabado, una distancia al eje, una longitud de cuadradillo, una caja impresa) porque demuestra que la especificación se entendió, no solo que se recibió.",
+    "Una muestra de preserie se hace según su especificación antes de arrancar la serie. Es la que importa cuando algo difiere del catálogo (un acabado, una entrada, una longitud de cuadradillo, una caja impresa) porque demuestra que la especificación se entendió, no solo que se recibió.",
     "Una muestra de producción se saca de la serie real. Demuestra lo que hay en las cajas, y es contra la que se hace una inspección.",
     "El error habitual es tratar una muestra de stock como si fuera de preserie. Una muestra de stock en acabado de stock no le dice nada sobre el acabado a medida que usted pidió, y aprobarla es aprobar otro producto.",
     "LA MUESTRA PATRÓN SELLADA",
@@ -162,8 +162,8 @@
     "Guarde la suya hasta que el pedido se haya embarcado, recibido y aceptado. Una muestra patrón tirada tras la aprobación es una muestra patrón que no existe cuando hace falta.",
     "QUÉ MEDIR CUANDO LLEGA UNA MUESTRA",
     "Mida contra el plano, no contra su recuerdo del plano, y anote las lecturas y no solo el apto o no apto.",
-    "En una cerradura: distancia al eje, distancia entre centros de cuadradillo y cilindro, largo y ancho de frente, dimensiones de caja, cuadrado de cuadradillo y rango de espesor de puerta.",
-    "En una manilla: longitud desde el eje del cuadradillo, vuelo desde la cara de la puerta, huella de roseta o placa, cuadrado y centro de cuadradillo, y la geometría de retorno.",
+    "En una cerradura: entrada, distancia entre centros de cuadradillo y cilindro, largo y ancho de frente, dimensiones de caja, cuadrado de cuadradillo y rango de espesor de puerta.",
+    "En una manija: longitud desde el eje del cuadradillo, vuelo desde la cara de la puerta, huella de roseta o placa, cuadrado y centro de cuadradillo, y la geometría de retorno.",
     "En una bisagra: dimensiones de pala, espesor, longitud de nudillo, diámetro de pasador, posición de agujeros de fijación y tipo de avellanado.",
     "En un cierrapuertas: dimensiones de cuerpo, entrejes de fijación, longitud de brazo y los montajes que admite el juego de brazo.",
     "En herraje para vidrio: el rango de espesor, el hueco de vidrio y todas las cotas de vaciado incluidos los radios de esquina.",
@@ -177,7 +177,7 @@
     "REDACTAR UNA NORMA DE INSPECCIÓN QUE OTRO PUEDA APLICAR",
     "Si usa un inspector externo, la calidad de la inspección la fija por completo la calidad de la instrucción, porque el inspector no conoce su edificio y no le llamará desde la nave.",
     "Cite la referencia de muestra patrón. Indique las medidas a tomar y la tolerancia de cada una: una tolerancia es lo que convierte una medida en una decisión. Indique el plan de muestreo: cuántas cajas se abren, cuántas piezas se miden y qué constituye un rechazo.",
-    "Indique qué se comprueba funcionalmente y cuántas veces. «Accionar la cerradura» no es una instrucción; «accionar la cerradura diez veces y confirmar que el picaporte se retrae del todo y la manilla vuelve a la horizontal cada vez» sí lo es.",
+    "Indique qué se comprueba funcionalmente y cuántas veces. «Accionar la cerradura» no es una instrucción; «accionar la cerradura diez veces y confirmar que el picaporte se retrae del todo y la manija vuelve a la horizontal cada vez» sí lo es.",
     "Indique las comprobaciones de embalaje: marcado de cajas, cantidad por caja, embalaje interior, y si las dimensiones de caja coinciden con la lista de empaque, porque una caja que no mide lo que dice la lista no cargará como se planificó el envío.",
     "E indique qué pasa ante un rechazo (retener el envío, reinspeccionar tras retrabajo, o aceptar con concesión) , porque un inspector que encuentra un problema y no tiene instrucción no hará nada, que es el peor de los tres desenlaces.",
     "CUÁNDO TOMAR LA MUESTRA",
@@ -189,7 +189,7 @@
     "Donde una muestra difiere del catálogo en cualquier aspecto, lo decimos por escrito junto con la muestra en vez de dejar que la diferencia se descubra. Un proveedor que envía una muestra silenciosamente mejor que la intención de producción no ha ganado una aprobación: ha fijado un estándar contra el que va a suspender, que es peor desenlace para ambas partes que una muestra honesta y una conversación corta."
   ],
   "titlePt": "Amostras e inspeção de entrada 2026: a amostra padrão, o que medir e o que uma amostra não lhe pode dizer",
-  "summaryPt": "Uma amostra é o sítio mais barato para descobrir que um fornecedor entendeu algo diferente do que você quis dizer. Esta página estabelece os três tipos de amostra e qual pedir, o procedimento de amostra padrão que a torna exigível em vez de decorativa, o que medir exatamente quando uma chega, as três propriedades que uma amostra realmente não pode demonstrar, e como redigir uma norma de inspeção que um inspetor externo possa aplicar sem lhe telefonar.",
+  "summaryPt": "Uma amostra é o lugar mais barato para descobrir que um fornecedor entendeu algo diferente do que você quis dizer. Esta página estabelece os três tipos de amostra e qual pedir, o procedimento de amostra padrão que a torna exigível em vez de decorativa, o que medir exatamente quando uma chega, as três propriedades que uma amostra realmente não pode demonstrar, e como redigir uma norma de inspeção que um inspetor externo possa aplicar sem lhe telefonar.",
   "seoTitlePt": "Amostras e inspeção 2026: a amostra padrão selada | Canton Hyland",
   "seoDescriptionPt": "Como usar bem as amostras de ferragem: os três tipos, o procedimento de amostra padrão, o que medir à chegada, e as três coisas que uma amostra não pode demonstrar.",
   "bodyPt": [
@@ -203,7 +203,7 @@
     "A AMOSTRA PADRÃO SELADA",
     "Este é o procedimento que converte uma amostra de cortesia em instrumento, e não custa quase nada.",
     "Preparam-se duas amostras idênticas. As duas são assinadas e datadas por ambas as partes. Uma é lacrada e guardada pelo comprador; a outra é lacrada e guardada pela fábrica. As duas levam um número de referência que consta do pedido.",
-    "A partir daí, «conforme amostra padrão 2026-0147» é uma linha de especificação, e uma divergência sobre acabamento ou encaixe resolve-se abrindo duas caixas em vez de trocando adjetivos. É a medida de controle de qualidade mais eficaz de que dispõe um comprador que não está de pé na fábrica.",
+    "A partir daí, \"conforme amostra padrão 2026-0147\" é uma linha de especificação, e uma divergência sobre acabamento ou encaixe resolve-se abrindo duas caixas em vez de trocando adjetivos. É a medida de controle de qualidade mais eficaz de que dispõe um comprador que não está de pé na fábrica.",
     "Guarde a sua até o pedido ter sido embarcado, recebido e aceite. Uma amostra padrão deitada fora após a aprovação é uma amostra padrão que não existe quando é precisa.",
     "O QUE MEDIR QUANDO UMA AMOSTRA CHEGA",
     "Meça contra o desenho, não contra a sua lembrança do desenho, e anote as leituras e não só o aprovado ou reprovado.",
@@ -215,14 +215,14 @@
     "Em todos: o acabamento, contra uma referência física e não contra uma foto ou um código. Como explica a nossa página de códigos de acabamento, o mesmo código de dois fornecedores pode ser visivelmente diferente.",
     "AS TRÊS COISAS QUE UMA AMOSTRA NÃO LHE PODE MOSTRAR",
     "Ser honesto sobre os limites de uma amostra é o que torna credível o resto do procedimento.",
-    "A homogeneidade de lote. Uma amostra é uma amostra. Diz-lhe o que a fábrica sabe fazer; não lhe diz o que a fábrica fará ao longo de cinco mil peças. É para isso que serve uma inspeção com plano de amostragem.",
-    "A resistência à corrosão. Não se conseguem ver 240 horas de névoa salina. Uma amostra que parece perfeita e uma que vai raiar dentro de um ano são indistinguíveis na mão, e por isso o grau de corrosão tem de vir de um ensaio e não de uma impressão.",
+    "A homogeneidade de lote. Uma amostra é uma amostra. Indica o que a fábrica sabe fazer; não lhe diz o que a fábrica fará ao longo de cinco mil peças. É para isso que serve uma inspeção com plano de amostragem.",
+    "A resistência à corrosão. Não se conseguem ver 240 horas de névoa salina. Uma amostra que parece perfeita e uma que vai raiar dentro de um ano são indistinguíveis na mão, e por isso o grau de corrosão tem que vir de um ensaio e não de uma impressão.",
     "A vida em ciclos. Uma fechadura que gira suave a dez ciclos não lhe diz nada sobre o seu estado a duzentos mil. A durabilidade é um resultado de ensaio, e uma amostra não é um ensaio.",
     "Quem lhe disser que uma amostra encerra estas três coisas ou está enganado ou está vendendo.",
     "REDIGIR UMA NORMA DE INSPEÇÃO QUE OUTRO POSSA APLICAR",
     "Se usa um inspetor externo, a qualidade da inspeção é fixada por completo pela qualidade da instrução, porque o inspetor não conhece o seu edifício e não lhe vai telefonar do pavilhão.",
     "Cite a referência de amostra padrão. Indique as medidas a tomar e a tolerância de cada uma: uma tolerância é o que converte uma medida numa decisão. Indique o plano de amostragem: quantas caixas se abrem, quantas peças se medem e o que constitui uma reprovação.",
-    "Indique o que é verificado funcionalmente e quantas vezes. «Acionar a fechadura» não é uma instrução; «acionar a fechadura dez vezes e confirmar que o trinco recolhe por completo e a maçaneta volta à horizontal de cada vez» é.",
+    "Indique o que é verificado funcionalmente e quantas vezes. \"Acionar a fechadura\" não é uma instrução; \"acionar a fechadura dez vezes e confirmar que o trinco recolhe por completo e a maçaneta volta à horizontal de cada vez\" é.",
     "Indique as verificações de embalagem: marcação de caixas, quantidade por caixa, embalagem interna, e se as dimensões de caixa coincidem com a lista de embalagem, porque uma caixa que não mede o que a lista diz não vai carregar como o embarque foi planejado.",
     "E indique o que acontece numa reprovação, reter o embarque, reinspecionar após retrabalho, ou aceitar com concessão, , porque um inspetor que encontra um problema e não tem instrução não fará nada, que é o pior dos três desfechos.",
     "QUANDO TIRAR A AMOSTRA",
