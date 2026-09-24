@@ -13,7 +13,7 @@
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
 | Claude HYDE工程交接配置（johns 机器，tmp/ship-merge） | SEO/GEO 审计、死链、JS、GTM 事件、数据看板；全站长尾词（所有 seoTitle*/seoDescription*、scripts/build-product-titles.mjs —— **从 Hyde 文案移交**，见 tasks/2026-09-24-division-of-labour.md）；美式拼写（content/products 规格标签 + 术语表键、src/app/(en)、src/components）；HYDE 发布棒 | 分工见 tasks/2026-09-24-division-of-labour.md | 2026-09-24 |
-| Claude 雷茵（johns 机器，tmp/claude-rayen-work） | 《雷茵五金》**p76–p84**；《不锈钢把手.pdf》全本；新品类 FH 抽屉拉手 / SP 标志牌（甲方 09-24 批准）；content/rayen/rayen-catalogue-p76*.json 等 | **E:/rayen 那边做到 p75 为止，p76 起归这边**，避免两边重复转录 | 2026-09-24 |
+| **雷茵已迁出本仓（2026-09-24）** | 甲方：「把雷茵放到另一个仓库，不要再互相影响」。雷茵的一切现在在私有仓 **SPOOOONER-FLASH/rayen**（本地 `C:UsersjohnsDownloads雷茵`），在那里构建、发布 | 本仓里的雷茵车道（out-rayen/、content/rayen/、zh 路由、rayen 脚本、products-rayen 图）**冻结**：不要再改，也不要在这里 release:rayen。服务器把 rayen.cn 切到新仓之前，本仓的 out-rayen/ 仍是线上源，**别删**；切换后再清理（步骤见新仓 CLIENT-RUNBOOK） | 2026-09-24 |
 | Claude Hyde 视觉工作图片生成（**E:/cantonlock-hyde**） | 视觉：只用真实照片 | HYDE 发布 32871f5eb0c 已上线（源码 101f83baa3f，含 1fcc8854060），IndexNow 已提交，**发布棒交还工程会话**。198 条葡语短摘要已完成（bfe7d169765 起）；文案其余归「Hyde 文案」 | 2026-09-24 |
 | Claude HYDE 文案（johns 机器，tmp/claude-copy） | content/news、content/guides 的 bodyEs / bodyPt（逐篇改写，每批 3 篇）；docs/copy/style-guides/ | 甲方 09-24：B 端方向，西葡逐篇改写，三语页面文字归 Claude。批次见 tasks/2026-09-24-copy-style-rewrite.md。**不碰** seoTitle*/seoDescription*、category-positioning.json；198 条葡语短摘要由 E: 会话做（09-24 两会话商定） | 2026-09-24 |
 | Codex HYDE fluidity | `src/components/site/SearchDialog.tsx`、搜索 UX 相关测试与协作文档 | 搜索快速重开修复和 HYDE 统计已推主线；我方 `release:hyde` 因 `titles:check` 的 182 条西葡 SEO 字段过期而中止，未提交 `out/`。Claude HYDE 当前持有发布；本线继续处理搜索语言与跳转，不碰 `out/` | 2026-09-24 |
