@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:43 | 中立 | release：推送前先对齐远端；被别的会话抢先推送不计入三次失败 | `6e6e13c46e8` |
-| 08:41 | 中立 | 葡语「estar a + 不定式」规则排除非动词（maior 被改成 maiondo） | `15de670963d` |
+| 08:44 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `6614483eaa7` |
+| 08:44 | 中立 | 西语规格值术语表追平已审校文本：39 条，74 行不再退回英文 | `bd0a6a5a27c` |
 | 08:36 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `eac9c99865c` |
 | 08:35 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `39ac0671717` |
 | 08:34 | HYDE | 西葡改写第 1 批（二）：推杠文章、方轴指南；三语删去“持有自有测试文件”的不实说法 | `138e9d41196` |
