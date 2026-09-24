@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 520 次提交
+最近 30 天 · 共 521 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:58 | 中立 | zh-terms 补「Cylinder split」（雷茵会话请求）与一条美式键 | `a0d98c84ab1` |
 | 09:57 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `5572d720ac9` |
 | 09:56 | 中立 | 葡语 trinco/lingueta 反了：两条，不是一条 | `82868375c2d` |
 | 09:49 | 中立 | 1073D MB 西语对齐为电控锁；葡语指南改为以术语表为准，trinco/lingueta 列入问巴西买家 | `7f330956116` |
