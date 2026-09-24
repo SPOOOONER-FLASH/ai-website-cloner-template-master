@@ -91,6 +91,7 @@
     "rayen:images": "node scripts/build-rayen-product-images.mjs && node scripts/delocalize-drawings.mjs && node scripts/square-rayen-plates.mjs && node scripts/brand-rayen-images.mjs",
     "rayen:images:check": "node scripts/build-rayen-product-images.mjs --check && node scripts/delocalize-drawings.mjs --check && node scripts/square-rayen-plates.mjs --check && node scripts/brand-rayen-images.mjs --check",
     "copy:parity": "node scripts/audit-translation-parity.mjs",
+    "copy:drift": "node scripts/audit-glossary-drift.mjs",
     "copy:register": "node scripts/audit-copy-register.mjs",
     "seo:anchors": "node scripts/audit-anchor-text.mjs",
     "assets:drawings": "node scripts/build-dimension-drawings.mjs",

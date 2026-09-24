@@ -380,7 +380,7 @@ export const SPEC_LABELS_PT: Record<string, string> = {
     table on 306-D / 306 PS / 306-S.
   */
   "Door leaves": "Folhas de porta",
-  "Case size": "Dimensões da caixa da fechadura",
+  "Case size": "Dimensões do corpo",
   "Keys supplied": "Chaves incluídas",
   "Fitted with": "Equipado com",
   "Supplied with": "Acompanha",
