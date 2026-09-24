@@ -60,7 +60,8 @@
 | # | 事项 | 状态 |
 |---|---|---|
 | 0 | **急**：文章里登记的 6 句目录数量已过期（西语规格表会话 09-24 补齐规格数据后连带变化），`article-catalogue-claims` 测试为红。why-the-catalogue（123→114）、mortise-lock-backset（175→180、28/18→34/22）、dimensional-interchangeability FAQ（257 个锁：backset 106→111 等），三语一起改。**mortise-lock-case-comparison 不能只改句子**：同时具备两个尺寸的锁体从 27 变成 32，表格要补 5 行，窄框锁体从 9 变成 12 | 09-24 完成（生成器 `scripts/build-lock-case-tables.mjs`） |
-| 0b | D1 手改（进度：规格会话已把 `specsEs` 的 229 处和术语表的 29 处改完，`9e2bdf2a6a0`；**HYDE 产品 `summaryEs` 37 处已改，还剩 0 处**，Claude 09-24）。还没改的：文章正文里的 picaporte 逐处改成 pestillo（原来当 deadbolt 用的 pestillo 改成 cerrojo）；另外还有 `src/data/hardware-terms.ts` 约第 306、312、327 行，原句用 resbalón 和 pestillo 对比，要改成 pestillo 和 cerrojo 对比，否则意思会反过来；以及 `src/data/es-features.ts` 第 996 行。改完告诉工程会话，由他们加 picaporte → pestillo 规则和守卫 | 待做 |
+| 0b | D1 手改（进度：规格会话已把 `specsEs` 的 229 处和术语表的 29 处改完，`9e2bdf2a6a0`；**HYDE 产品 `summaryEs` 37 处已改，还剩 0 处**，Claude 09-24）。还没改的：文章正文里的 picaporte 逐处改成 pestillo（原来当 deadbolt 用的 pestillo 改成 cerrojo）；另外还有 `src/data/hardware-terms.ts` 约第 306、312、327 行，原句用 resbalón 和 pestillo 对比，要改成 pestillo 和 cerrojo 对比，否则意思会反过来；以及 `src/data/es-features.ts` 第 996 行。改完告诉工程会话，由他们加 picaporte → pestillo 规则和守卫 | 09-24 完成：文章西语正文 picaporte 清零（42 个文件；原来指插销的 pestillo 改为 pasador，指方舌的改为 cerrojo，再把 picaporte 改为 pestillo）。hardware-terms.ts 和 es-features.ts 另见第 0d 项 |
+| 0d | `src/data/hardware-terms.ts` 约第 306、312、327 行（原句拿 resbalón 和 pestillo 作对比）和 `src/data/es-features.ts` 第 996 行，按 D1 改 | 待做 |
 | 0c | **先问巴西买家：葡语斜舌和方舌分别叫 trinco 还是 lingueta**。术语表表头、术语表第 630 行、Papaiz 和已上线的文章四处互相矛盾，详见 `pt-br.md` 第 5 节。确认后在术语表层面统一，全部葡语一次改完 | 待问 |
 | 1 | 栏目文案第一轮：产品页、首页卡片、产品查找、配置器，三语，按 `docs/copy/style-guides/section-voice.md` | 09-24 完成 |
 | 2 | OEM / 服务页（`src/app/(en)/services` 及西葡）：按 A 重写，写开新模具和绕开专利冲突，另写打样流程 | 09-24 完成（英文页；起订量和打样周期等甲方给数字后补；西葡服务页路由待工程会话建） |

@@ -99,7 +99,7 @@
         "answer": "Porque una potencia fija tiene que estar bien antes de salir de fábrica, y que la planilla y la puerta difieran en una potencia solo se descubre el día del montaje. Un cierrapuertas regulable cubre una banda, por ejemplo de 2 a 4, y se ajusta en obra. Además reduce los números de pieza que un distribuidor tiene que almacenar."
       },
       {
-        "question": "Mi puerta no cierra el picaporte. ¿Subo la velocidad de golpe final?",
+        "question": "Mi puerta no cierra el pestillo. ¿Subo la velocidad de golpe final?",
         "answer": "No es lo primero. La velocidad de golpe final gobierna los últimos grados; no añade fuerza de cierre. Si la potencia es baja para la hoja, la puerta no cerrará de forma fiable con ningún ajuste de velocidad. Diagnostique la potencia antes de tocar las válvulas."
       },
       {
@@ -161,7 +161,7 @@
     "Cuando chocan, el cierrapuertas no se puede simplemente bajar hasta cumplir, porque uno ajustado por debajo de lo que pide la puerta no la cerrará ni enclavará, y en una cortafuego, no enclavar es un fallo de la puerta cortafuego, no una molestia. La solución suele ser otra clase de dispositivo: un cierrapuertas de menor fuerza de apertura y mayor momento de cierre, o un operador motorizado.",
     "Los límites concretos de fuerza varían por jurisdicción y los fija la reglamentación de edificación, no EN 1154 ni A156.4. Confirme la cifra aplicable al edificio antes de seleccionar, porque es la única restricción que no se puede ajustar en obra.",
     "LOS TRES AJUSTES QUE NO SON LA POTENCIA",
-    "La velocidad de cierre gobierna la mayor parte del recorrido. La velocidad de golpe final gobierna los últimos grados, donde el picaporte tiene que entrar en el cerradero. El retén de apertura frena la puerta lanzada contra una pared o una persona.",
+    "La velocidad de cierre gobierna la mayor parte del recorrido. La velocidad de golpe final gobierna los últimos grados, donde el pestillo tiene que entrar en el cerradero. El retén de apertura frena la puerta lanzada contra una pared o una persona.",
     "Se ajustan en obra con las válvulas del cuerpo, y ninguno cambia la potencia. Una puerta que no enclava no se arregla subiendo el golpe final si la potencia es baja; una que golpea no se arregla bajando la velocidad de cierre si la potencia es alta. Diagnostique primero la potencia.",
     "LA RETENCIÓN HIDRÁULICA, Y DÓNDE NO VA",
     "La retención mantiene la puerta abierta en ángulo amplio durante un tiempo antes de cerrar, útil donde pasan carros, sillas de ruedas o repartos. Es una función de válvula, no un retenedor de puerta.",

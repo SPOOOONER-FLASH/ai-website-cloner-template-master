@@ -89,7 +89,7 @@
       },
       {
         "question": "¿Qué diferencia hay entre cuadradillo macizo y partido?",
-        "answer": "El macizo es una barra única que une ambas manijas, así que al girar una gira la otra. El partido son dos medias barras que no engranan entre sí dentro de la cerradura, así que cada manija trabaja por su cuenta. El partido es lo que permite que la manija interior siempre abra el picaporte mientras la exterior queda bloqueada."
+        "answer": "El macizo es una barra única que une ambas manijas, así que al girar una gira la otra. El partido son dos medias barras que no engranan entre sí dentro de la cerradura, así que cada manija trabaja por su cuenta. El partido es lo que permite que la manija interior siempre abra el pestillo mientras la exterior queda bloqueada."
       },
       {
         "question": "¿Qué longitud debe tener un cuadradillo?",
@@ -101,7 +101,7 @@
       },
       {
         "question": "¿Qué pasa si monto un cuadradillo macizo en una cerradura diseñada para partido?",
-        "answer": "Se anula la función de la cerradura. La manija exterior abrirá el picaporte esté o no bloqueada. Pasa cualquier inspección visual y solo se descubre probando la puerta, y por eso el tipo de cuadradillo va en el pedido en lugar de suponerse."
+        "answer": "Se anula la función de la cerradura. La manija exterior abrirá el pestillo esté o no bloqueada. Pasa cualquier inspección visual y solo se descubre probando la puerta, y por eso el tipo de cuadradillo va en el pedido en lugar de suponerse."
       },
       {
         "question": "¿Qué tres cosas debo poner en un pedido de manijas?",
@@ -150,8 +150,8 @@
     "El orificio cuadrado de la cerradura que recibe el cuadradillo es la nuez. Nuez y cuadradillo tienen que ser del mismo tamaño, y la nuez es de la cerradura, no de la manija. Por eso quien pide manijas a un proveedor y cerraduras a otro tiene que indicar el tamaño a los dos.",
     "MACIZO FRENTE A PARTIDO",
     "Un cuadradillo macizo es una barra que atraviesa la cerradura, así que ambas manijas quedan unidas mecánicamente. Gire una y gira la otra.",
-    "Un cuadradillo partido son dos medias barras que se encuentran dentro de la cerradura sin engranar entre sí, así que cada manija trabaja de forma independiente. Eso es lo que hace posible una función de un solo lado: la manija interior siempre abre el picaporte mientras la exterior queda bloqueada, que es la disposición de la mayoría de las funciones de entrada.",
-    "Pedir un cuadradillo macizo para una cerradura diseñada alrededor de uno partido anula por completo la función: la manija exterior abrirá el picaporte esté o no bloqueada. Es un fallo que pasa toda inspección visual y solo se descubre probando la puerta.",
+    "Un cuadradillo partido son dos medias barras que se encuentran dentro de la cerradura sin engranar entre sí, así que cada manija trabaja de forma independiente. Eso es lo que hace posible una función de un solo lado: la manija interior siempre abre el pestillo mientras la exterior queda bloqueada, que es la disposición de la mayoría de las funciones de entrada.",
+    "Pedir un cuadradillo macizo para una cerradura diseñada alrededor de uno partido anula por completo la función: la manija exterior abrirá el pestillo esté o no bloqueada. Es un fallo que pasa toda inspección visual y solo se descubre probando la puerta.",
     "CÓMO CALCULAR LA LONGITUD",
     "El cuadradillo tiene que atravesar todo el conjunto y dejar encaje suficiente en las dos manijas. La fórmula de trabajo es el espesor de la puerta, más la profundidad de las dos rosetas o placas, más el encaje que necesita cada manija dentro de su cubo.",
     "Para un caso habitual (una puerta de 40 mm con rosetas planas) eso queda cerca de los 60 mm que publicamos como longitud de cuadradillo en los modelos que indican una.",

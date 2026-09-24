@@ -82,7 +82,7 @@
     "es": [
       {
         "question": "¿Cuál es el código HS de una cerradura de puerta?",
-        "answer": "Las cerraduras de arquitectura (embutir, cilíndricas, de sobreponer, cerrojos, cilindros y picaportes de picaporte) caen en general en 8301.40, «las demás cerraduras». Las de mueble son 8301.30 y los candados 8301.10. Los seis primeros dígitos son internacionales; el código arancelario completo de su país va más allá."
+        "answer": "Las cerraduras de arquitectura (embutir, cilíndricas, de sobreponer, cerrojos, cilindros y pestillos) caen en general en 8301.40, «las demás cerraduras». Las de mueble son 8301.30 y los candados 8301.10. Los seis primeros dígitos son internacionales; el código arancelario completo de su país va más allá."
       },
       {
         "question": "¿Cuál es el código HS de un cierrapuertas?",
@@ -90,7 +90,7 @@
       },
       {
         "question": "¿Cuál es el código HS de bisagras y manijas?",
-        "answer": "Las bisagras tienen subpartida propia, 8302.10. Manijas, tiradores, placas de empuje, pestillos embutidos, topes y la mayoría de los herrajes de arquitectura caen en 8302.41, guarniciones y herrajes para edificios."
+        "answer": "Las bisagras tienen subpartida propia, 8302.10. Manijas, tiradores, placas de empuje, pasadores embutidos, topes y la mayoría de los herrajes de arquitectura caen en 8302.41, guarniciones y herrajes para edificios."
       },
       {
         "question": "¿Las llaves se clasifican aparte de la cerradura?",
@@ -144,9 +144,9 @@
     "La partida 8302 cubre guarniciones, herrajes y artículos similares de metal común. La prueba es si el artículo monta, cuelga, cierra o sujeta algo sin cerrar con llave.",
     "Así, un cuerpo de cerradura de embutir es 8301 y una bisagra es 8302. Una manija sin función de cierre es 8302. Un cierrapuertas es 8302, y eso sorprende, porque un cierrapuertas es un mecanismo y parece que debería ir con las cerraduras.",
     "LAS SUBPARTIDAS DE 8301",
-    "| Subpartida | Cubre |\n| --- | --- |\n| 8301.10 | candados |\n| 8301.20 | cerraduras para vehículos automóviles |\n| 8301.30 | cerraduras para muebles |\n| 8301.40 | las demás cerraduras, embutir, cilíndricas, sobreponer, cerrojos, cilindros, picaportes |\n| 8301.50 | cierres y monturas cierre con cerradura incorporada |\n| 8301.60 | partes |\n| 8301.70 | llaves presentadas aisladamente |",
+    "| Subpartida | Cubre |\n| --- | --- |\n| 8301.10 | candados |\n| 8301.20 | cerraduras para vehículos automóviles |\n| 8301.30 | cerraduras para muebles |\n| 8301.40 | las demás cerraduras, embutir, cilíndricas, sobreponer, cerrojos, cilindros, pestillos |\n| 8301.50 | cierres y monturas cierre con cerradura incorporada |\n| 8301.60 | partes |\n| 8301.70 | llaves presentadas aisladamente |",
     "LAS SUBPARTIDAS DE 8302",
-    "| Subpartida | Cubre |\n| --- | --- |\n| 8302.10 | bisagras de cualquier clase |\n| 8302.20 | ruedas |\n| 8302.30 | las demás guarniciones y herrajes para vehículos automóviles |\n| 8302.41 | las demás guarniciones y herrajes para edificios, manijas, tiradores, placas de empuje, pestillos, topes, guarniciones de barra antipánico |\n| 8302.42 | los demás, para muebles |\n| 8302.49 | los demás |\n| 8302.50 | cuelgasombreros, perchas, soportes y similares |\n| 8302.60 | cierrapuertas automáticos |",
+    "| Subpartida | Cubre |\n| --- | --- |\n| 8302.10 | bisagras de cualquier clase |\n| 8302.20 | ruedas |\n| 8302.30 | las demás guarniciones y herrajes para vehículos automóviles |\n| 8302.41 | las demás guarniciones y herrajes para edificios, manijas, tiradores, placas de empuje, pasadores, topes, guarniciones de barra antipánico |\n| 8302.42 | los demás, para muebles |\n| 8302.49 | los demás |\n| 8302.50 | cuelgasombreros, perchas, soportes y similares |\n| 8302.60 | cierrapuertas automáticos |",
     "LAS CUATRO QUE MÁS SE EQUIVOCAN",
     "Los cierrapuertas. La 8302.60 existe específicamente para ellos. Un cierrapuertas automático no va en 8301 porque no cierra con llave, y no va en 8302.41 porque tiene subpartida propia. Un cierrapuertas clasificado como herraje de edificio es un error aunque la partida sea la correcta.",
     "Las llaves enviadas por separado. La 8301.70 cubre llaves presentadas solas. Las llaves suministradas con la cerradura que abren viajan con la cerradura bajo su código, porque forman parte de ese artículo tal como se presenta. Una remesa de llaves de repuesto sin cerraduras es 8301.70.",
