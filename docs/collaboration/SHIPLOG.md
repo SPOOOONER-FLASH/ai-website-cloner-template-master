@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 498 次提交
+最近 30 天 · 共 499 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:44 | 中立 | 西语规格值术语表追平已审校文本：39 条，74 行不再退回英文 | `bd0a6a5a27c` |
 | 08:36 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `eac9c99865c` |
 | 08:35 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `39ac0671717` |
 | 08:34 | HYDE | 西葡改写第 1 批（二）：推杠文章、方轴指南；三语删去“持有自有测试文件”的不实说法 | `138e9d41196` |
