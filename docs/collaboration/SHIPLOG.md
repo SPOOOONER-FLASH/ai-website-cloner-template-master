@@ -6,17 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 527 次提交
+最近 30 天 · 共 526 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 10:12 | HYDE | 比较页标题：型号数领头 + 并排对比（三语，去破折号） | `0a0e551c831` |
-| 10:10 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9800f1a2db8` |
-| 10:09 | 中立 | 工程会话目标清单（Stop hook 读取，甲方 09-24「持续工作直到完成」） | `2ed97c428c5` |
-| 10:08 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f48d2187354` |
-| 10:07 | 中立 | 覆盖报告重生成（发布被过期拦下）；锁体对照表 --check 进 test:export | `101db4afe14` |
+| 10:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d1c561f2183` |
+| 10:12 | HYDE | 服务页改为贴牌视角：Bring us a drawing. Leave with a product. | `fe0768dd139` |
+| 10:09 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `0af80ebeb81` |
+| 10:08 | 中立 | 品牌宣言 v3：OEM 开模能力、出口市场、科隆展与利马/布宜诺斯艾利斯参展、德国办公室（三语） | `6d5376e260c` |
 | 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
 | 10:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `be9f0f274e2` |
 | 10:05 | HYDE | why-the-catalogue 三语 FAQ 同步 114；任务第 0 项完成 | `7887739f892` |
