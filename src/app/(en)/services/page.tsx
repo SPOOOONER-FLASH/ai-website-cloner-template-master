@@ -6,9 +6,10 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   enPath: "/services",
   locale: "en",
-  title: "Door Hardware Services",
+  // OEM / private label leads (client steer 2026-09-24: the buyers who pay are private-label brands).
+  title: "OEM & Private-Label Door Hardware Manufacturer in China",
   description:
-    "Product selection, hardware schedule review, OEM development, samples, technical documents and export coordination from Canton Hyland.",
+    "OEM and private-label door hardware from Xiaolan, China: new tooling to your drawing, patent-conscious redesign, your brand and packaging.",
 });
 
 const SERVICES = [
