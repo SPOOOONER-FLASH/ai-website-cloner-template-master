@@ -6,17 +6,55 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 523 次提交
+最近 30 天 · 共 561 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 16:02 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `228b9c6bb74` |
-| 16:01 | 中立 | 葡语数字格式修在结构上；D1 漏改三处；加 copy:drift 审计 | `1c18a2be714` |
-| 09:58 | 中立 | zh-terms 补「Cylinder split」（雷茵会话请求）与一条美式键 | `a0d98c84ab1` |
-| 09:57 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `5572d720ac9` |
-| 09:56 | 中立 | 葡语 trinco/lingueta 反了：两条，不是一条 | `82868375c2d` |
+| 16:03 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `726f521c76c` |
+| 16:03 | HYDE | 葡语文章：葡萄牙用词改巴西用词（25 个文件 59 处），火门指南西语空格修正 | `d164696c2fc` |
+| 15:59 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `cc1ad418bb2` |
+| 15:58 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `3e49105ca31` |
+| 15:57 | HYDE | 西葡用词排查：葡语欧式进行时、西语 móvil/pillar/la web、dogging 补译 | `cb44817fbed` |
+| 15:54 | HYDE | 文章失实排查：删“自有 EN 1125 文件”和“我们的地弹簧在闭门器类目”，三语 | `94cfb161307` |
+| 15:50 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `58108571358` |
+| 15:50 | HYDE | 锁体对比指南：补西语、葡语；生成器接管三语的表格、计数句、摘要和 FAQ（修正过期的 27/18/9） | `6322a70ef29` |
+| 15:43 | HYDE | 资质页、联系页第二轮：H1 搜索词在前，正文去公文腔，三语 | `86259e83790` |
+| 15:39 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b53cdb71869` |
+| 15:34 | HYDE | 下载页第二轮：H1 搜索词在前、导语与测试记录段三语重写 | `93a8a258808` |
+| 15:32 | 中立 | 服务页：起订量与样品条款（取自 FAQ 已有数字），三语 | `a2d484da4c1` |
+| 15:31 | 中立 | FAQ 第二轮：删地弹簧和“三十个市场”，补专利改型与自有名下测试现状，三语 | `f3e1922c31a` |
+| 15:29 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b0c4612454a` |
+| 15:29 | 中立 | 公司页第二轮：三语重写；工厂实拍图不再被称作概念图；葡语改巴西写法 | `f49a3338b31` |
+| 15:24 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `636b2ef1a8d` |
+| 15:24 | HYDE | 文章 E：巴西 NBR 11742 / NBR 11785 与 AVCB 验收，葡语为主、三语 | `3c0a7239871` |
+| 15:18 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e3ac4f00a6c` |
+| 15:18 | HYDE | 四个参考页 H1：搜索词在前、原句保留，三语 | `1ba26f7875c` |
+| 15:15 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d94aecacfcd` |
+| 15:14 | HYDE | 文章 D：双开防火门整套配置，三语（一个门洞一张单） | `4f331b2e390` |
+| 15:07 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `ec021680bb6` |
+| 15:05 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `15c35bc5f1a` |
+| 15:05 | HYDE | 计数：8827/8828 合并后 588 条记录、521 个型号、62 款执手（三语） | `5f231eafe06` |
+| 15:00 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `539a381e263` |
+| 15:00 | 中立 | D1 收尾：术语页、卖点对照表、产品 featuresEs 与零散页面文字 | `f3b02a8671c` |
+| 14:54 | HYDE | D1：文章西语正文 picaporte 清零（按 RAE：斜舌 pestillo、方舌 cerrojo、插销 pasador） | `c00048bfc32` |
+| 14:50 | 中立 | 服务页西语、葡语文案（SERVICES_COPY.es / .pt） | `f407c3763e8` |
+| 14:48 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e63e0f9a3f9` |
+| 14:48 | HYDE | 认证页如实写现状；联系页写明可走阿里巴巴或直接下单（三语） | `9313eca805c` |
+| 14:43 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `942026c69ee` |
+| 14:42 | HYDE | 维修调查三语计数跟上规格补全；EH01–EH03 西语摘要按实拍区分 | `b9082fb82ac` |
+| 12:15 | 中立 | NOW：雷茵已迁到独立仓 SPOOOONER-FLASH/rayen，本仓雷茵车道冻结 | `c3d535a297e` |
+| 10:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 f48d2187354 | `996a209b6df` |
+| 10:12 | 中立 | 画集：S03 删去与主图字节相同的第 3 张 | `8ab430f8d43` |
+| 10:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d1c561f2183` |
+| 10:12 | HYDE | 服务页改为贴牌视角：Bring us a drawing. Leave with a product. | `fe0768dd139` |
+| 10:09 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `0af80ebeb81` |
+| 10:08 | 中立 | 品牌宣言 v3：OEM 开模能力、出口市场、科隆展与利马/布宜诺斯艾利斯参展、德国办公室（三语） | `6d5376e260c` |
+| 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
+| 10:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `be9f0f274e2` |
+| 10:05 | HYDE | why-the-catalogue 三语 FAQ 同步 114；任务第 0 项完成 | `7887739f892` |
+| 09:58 | HYDE | 文章目录数量跟上规格补全；锁体对比表改由生成器产出 | `b7c96cbd7e2` |
 | 09:49 | 中立 | 1073D MB 西语对齐为电控锁；葡语指南改为以术语表为准，trinco/lingueta 列入问巴西买家 | `7f330956116` |
 | 09:44 | 中立 | D1：HYDE 产品西语摘要 37 处 picaporte → pestillo / cerrojo（按 RAE） | `184885fab49` |
 | 09:39 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `f6d5dce8d26` |
