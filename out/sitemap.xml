@@ -423,6 +423,28 @@
 </url>
 <url>
 <loc>https://cantonlock.com/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/services/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/es/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/services/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://cantonlock.com/pt/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/services/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
@@ -20617,69 +20639,6 @@
 <priority>0.9</priority>
 </url>
 <url>
-<loc>https://cantonlock.com/products/lever-handles/8827-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8827-lever-handle/" />
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
-</image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://cantonlock.com/es/products/lever-handles/8827-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8827-lever-handle/" />
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
-</image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://cantonlock.com/pt/products/lever-handles/8827-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8827-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8827-lever-handle/" />
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
-</image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
 <loc>https://cantonlock.com/products/lever-handles/8827-sset-lever-handle/</loc>
 <xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8827-sset-lever-handle/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8827-sset-lever-handle/" />
@@ -20690,6 +20649,12 @@
 </image:image>
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8827-sset-lever-handle-2.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
 </image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
@@ -20706,6 +20671,12 @@
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8827-sset-lever-handle-2.webp</image:loc>
 </image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
+</image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -20721,68 +20692,11 @@
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8827-sset-lever-handle-2.webp</image:loc>
 </image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://cantonlock.com/products/lever-handles/8828-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8828-lever-handle/" />
 <image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle.webp</image:loc>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-3.webp</image:loc>
 </image:image>
 <image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
-</image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://cantonlock.com/es/products/lever-handles/8828-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8828-lever-handle/" />
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
-</image:image>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://cantonlock.com/pt/products/lever-handles/8828-lever-handle/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://cantonlock.com/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="es" href="https://cantonlock.com/es/products/lever-handles/8828-lever-handle/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://cantonlock.com/pt/products/lever-handles/8828-lever-handle/" />
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
+<image:loc>https://cantonlock.com/images/products-hyde/8827-lever-handle-4.webp</image:loc>
 </image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
@@ -20799,6 +20713,12 @@
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8828-sset-lever-handle-2.webp</image:loc>
 </image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
+</image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -20814,6 +20734,12 @@
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8828-sset-lever-handle-2.webp</image:loc>
 </image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
+</image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -20828,6 +20754,12 @@
 </image:image>
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/8828-sset-lever-handle-2.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-3.webp</image:loc>
+</image:image>
+<image:image>
+<image:loc>https://cantonlock.com/images/products-hyde/8828-lever-handle-4.webp</image:loc>
 </image:image>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
@@ -35037,7 +34969,7 @@
 <video:video>
 <video:title>HY006DK Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006dk-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006dk-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -35084,7 +35016,7 @@
 <video:video>
 <video:title>HY006DK Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006dk-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006dk-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -35131,7 +35063,7 @@
 <video:video>
 <video:title>HY006DK Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006dk-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006dk-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -35181,7 +35113,7 @@
 <video:video>
 <video:title>HY006ET Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006et-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006et-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -35231,7 +35163,7 @@
 <video:video>
 <video:title>HY006ET Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006et-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006et-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -35281,7 +35213,7 @@
 <video:video>
 <video:title>HY006ET Lock Case, product demonstration</video:title>
 <video:thumbnail_loc>https://cantonlock.com/images/products-hyde/hy006et-lock-case-video.webp</video:thumbnail_loc>
-<video:description>A mortise lock case, for kfc lock bodies, aluminum narrow door lock bodies.</video:description>
+<video:description>A mortise lock case for aluminum narrow-stile doors.</video:description>
 <video:content_loc>https://cantonlock.com/videos/products/hy006et-lock-case.mp4</video:content_loc>
 <video:duration>45</video:duration>
 <video:publication_date>2026-09-08T00:00:00+08:00</video:publication_date>
@@ -42553,9 +42485,6 @@
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-2.webp</image:loc>
 </image:image>
 <image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-3.webp</image:loc>
-</image:image>
-<image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-4.webp</image:loc>
 </image:image>
 <image:image>
@@ -42594,9 +42523,6 @@
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-2.webp</image:loc>
 </image:image>
 <image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-3.webp</image:loc>
-</image:image>
-<image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-4.webp</image:loc>
 </image:image>
 <image:image>
@@ -42633,9 +42559,6 @@
 </image:image>
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-2.webp</image:loc>
-</image:image>
-<image:image>
-<image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-3.webp</image:loc>
 </image:image>
 <image:image>
 <image:loc>https://cantonlock.com/images/products-hyde/s03-sliding-hook-lock-4.webp</image:loc>
