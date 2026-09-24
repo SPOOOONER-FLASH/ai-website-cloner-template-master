@@ -1,0 +1,577 @@
+{
+  "_readme": [
+    "不锈钢空管分体锁系列（Stainless Steel door locks series），甲方《雷茵五金》图册 p61–p64。13 个型号。",
+    "",
+    "== 版式 ==",
+    "p61 / p62 / p64：每半页上下两个型号，各一张照片和一张尺寸图，共用右侧一栏中英规格（两种语言的数一致）。",
+    "p63：一格一个表面，S-K210 四格（镜光 / 锆金 / 砂光 / 玫瑰金）、S-K401 四格（砂光 / 锆金拉丝 / 镜光 / 锆金）。",
+    "切图：scripts/catalogue-cutters/cut-stainless-tube.mjs。尺寸图和照片挨得很近，产品图里只清理",
+    "紧贴尺寸图的零碎线头；第一版对整图清理，误删过 S-K401 镜光锁盖的暗部，已改。",
+    "",
+    "== 规格（规格栏，中英一致） ==",
+    "门厚 32-50mm；SUS304 或 316；开合测试 10 万次；表面 SS 不锈钢拉丝 / PSS 镜面抛光 / PVD 锆金；",
+    "锁体 7255/7855（p63 两款只印 7255）。尺寸图：执手总长，锁盖 53（圆座 Ø53、SF 方座 53 × 53）。",
+    "只拍了 SS 的型号，finishes 仍列规格栏写明的三种 —— 那是图册说的可选表面，图片只有 SS 那一张。",
+    "",
+    "== 表面英文名（按这本的中文原文） ==",
+    "SS 不锈钢拉丝 Brushed Stainless · PSS 不锈钢镜面抛光 Mirror Polished Stainless · PVD 锆金 Zirconium Gold ·",
+    "SPVD 锆金拉丝 Brushed Zirconium Gold · RG 玫瑰金 Rose Gold。"
+  ],
+  "sourceRoot": "E:/rayen-sources/rayen-catalogue-stainless-tube",
+  "sites": [
+    "rayen"
+  ],
+  "imageOrder": "drawing-first",
+  "excludeImages": [],
+  "heldBack": [
+    {
+      "model": "S-K401 的总长与尺寸图",
+      "reason": "四格里砂光那格印 136、另外三格印 135。同一型号两个长度，不替甲方选；尺寸图也不放（放哪张都等于选了一个数）"
+    },
+    {
+      "model": "执手直径 19mm / 22mm",
+      "reason": "每一栏都印这一句，连方管 SF 系列和椭圆的 K401 也印 —— 是系列通用套话，不是型号参数"
+    },
+    {
+      "model": "有弹簧 / 非弹簧两种结构、防拆对接螺丝、隐藏式安装",
+      "reason": "特性说明，不是尺寸；前几个系列也没收这类行"
+    },
+    {
+      "model": "页底 SN-01 / SN-02 / SW02 / SW03 / SN-04 / SN-06 / SW-07 / SW-08 配件",
+      "reason": "规格栏「下圈附件」写的是 OE / EE / ER / T 四种（椭圆葫芦孔、葫芦孔、应急开门旋钮、标准保险钮），配件条印的是 SN / SW 编号，两套代号怎么对应图册没印。要上就得替甲方起名，等确认"
+    }
+  ],
+  "models": [
+    {
+      "model": "S-01",
+      "slug": "s-01-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-02",
+      "slug": "s-02-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-03",
+      "slug": "s-03-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-04",
+      "slug": "s-04-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-09",
+      "slug": "s-09-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-10",
+      "slug": "s-10-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "140mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-K400",
+      "slug": "s-k400-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "133mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "S-K210",
+      "slug": "s-k210-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Mirror Polished Stainless",
+        "Zirconium Gold",
+        "Brushed Stainless",
+        "Rose Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "130mm"
+        },
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255"
+        }
+      ]
+    },
+    {
+      "model": "S-K401",
+      "slug": "s-k401-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Brushed Zirconium Gold",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Rose diameter",
+          "value": "Ø53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255"
+        }
+      ]
+    },
+    {
+      "model": "SF-15",
+      "slug": "sf-15-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "SF-18",
+      "slug": "sf-18-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "SF-22",
+      "slug": "sf-22-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "135mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    },
+    {
+      "model": "SF-24",
+      "slug": "sf-24-lever-handle",
+      "name": "Lever Handle",
+      "nameZh": "执手锁",
+      "categoryPath": [
+        "lever-handles"
+      ],
+      "material": "Stainless Steel 304 / 316",
+      "finishes": [
+        "Brushed Stainless",
+        "Mirror Polished Stainless",
+        "Zirconium Gold"
+      ],
+      "specs": [
+        {
+          "label": "Overall length",
+          "value": "128mm"
+        },
+        {
+          "label": "Plate size",
+          "value": "53 × 53mm"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel 304 / 316"
+        },
+        {
+          "label": "Door thickness",
+          "value": "32-50mm"
+        },
+        {
+          "label": "Cycle life",
+          "value": "100,000 cycles"
+        },
+        {
+          "label": "Lock case",
+          "value": "7255 / 7855"
+        }
+      ]
+    }
+  ]
+}

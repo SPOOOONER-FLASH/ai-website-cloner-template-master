@@ -1,0 +1,64 @@
+{
+  "model": "SF-15",
+  "slug": "sf-15-lever-handle",
+  "name": "Lever Handle",
+  "nameZh": "执手锁",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304 / 316 lever handle.",
+  "specs": [
+    {
+      "label": "Overall length",
+      "value": "135mm"
+    },
+    {
+      "label": "Plate size",
+      "value": "53 × 53mm"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304 / 316"
+    },
+    {
+      "label": "Door thickness",
+      "value": "32-50mm"
+    },
+    {
+      "label": "Cycle life",
+      "value": "100,000 cycles"
+    },
+    {
+      "label": "Lock case",
+      "value": "7255 / 7855"
+    }
+  ],
+  "material": "Stainless Steel 304 / 316",
+  "finishes": [
+    "Brushed Stainless",
+    "Mirror Polished Stainless",
+    "Zirconium Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/sf-15-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "SF-15 Lever Handle, Brushed Stainless"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/sf-15-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "SF-15 Lever Handle, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "SF-15 Lever Handle | RAYEN",
+  "seoDescription": "Stainless Steel 304 / 316 lever handle."
+}

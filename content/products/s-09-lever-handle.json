@@ -1,0 +1,64 @@
+{
+  "model": "S-09",
+  "slug": "s-09-lever-handle",
+  "name": "Lever Handle",
+  "nameZh": "执手锁",
+  "series": "Lever Handle",
+  "categoryPath": [
+    "lever-handles"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Stainless Steel 304 / 316 lever handle.",
+  "specs": [
+    {
+      "label": "Overall length",
+      "value": "135mm"
+    },
+    {
+      "label": "Rose diameter",
+      "value": "Ø53mm"
+    },
+    {
+      "label": "Material",
+      "value": "Stainless Steel 304 / 316"
+    },
+    {
+      "label": "Door thickness",
+      "value": "32-50mm"
+    },
+    {
+      "label": "Cycle life",
+      "value": "100,000 cycles"
+    },
+    {
+      "label": "Lock case",
+      "value": "7255 / 7855"
+    }
+  ],
+  "material": "Stainless Steel 304 / 316",
+  "finishes": [
+    "Brushed Stainless",
+    "Mirror Polished Stainless",
+    "Zirconium Gold"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/s-09-lever-handle.webp",
+    "ratio": "1 / 1",
+    "label": "S-09 Lever Handle, Brushed Stainless"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/s-09-lever-handle-2.webp",
+      "ratio": "1 / 1",
+      "label": "S-09 Lever Handle, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "S-09 Lever Handle | RAYEN",
+  "seoDescription": "Stainless Steel 304 / 316 lever handle."
+}

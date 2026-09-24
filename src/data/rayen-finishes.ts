@@ -201,6 +201,23 @@ const FINISHES: Record<string, FinishEntry> = {
     「砂白+亚黑」（OXB）是两种材料，按上面的双色规则拆成两半各取一个颜色，不单列。
     各给一条自己的条目，否则「砂金」会落进别的金色、「亚黑」认不出来。
   */
+  /*
+    不锈钢空管分体锁系列（《雷茵五金》p61–p64）按这本的中文叫法：SS「不锈钢拉丝」、RG「玫瑰金」。
+    镜面抛光（Mirror Polished Stainless）已经落在 polished-stainless 上，锆金拉丝落在 zirconium-gold 上，
+    不另加。拉丝不锈钢的颜色同缎面不锈钢；玫瑰金取自 p63 S-K210 RG 的照片。
+  */
+  "brushed-stainless": {
+    colors: ["#c9ccce"],
+    zh: "不锈钢拉丝",
+    en: "Brushed stainless",
+    match: ["brushed stainless", "不锈钢拉丝"],
+  },
+  "rose-gold": {
+    colors: ["#c99078"],
+    zh: "玫瑰金",
+    en: "Rose gold",
+    match: ["rose gold", "玫瑰金"],
+  },
   "anodised-matt-black": {
     colors: ["#343537"],
     zh: "铝氧化亚黑",
