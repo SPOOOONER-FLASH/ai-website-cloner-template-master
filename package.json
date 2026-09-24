@@ -130,6 +130,8 @@
     "seo:digest": "node scripts/build-seo-geo-report.mjs",
     "report:docx": "node scripts/build-client-runbook-docx.mjs --src",
     "todo:docx": "node scripts/build-client-runbook-docx.mjs --src docs/collaboration/TODO-MASTER.md",
+    "ship": "node scripts/ship.mjs",
+    "shiplog": "node scripts/build-shiplog.mjs",
     "release:hyde": "node scripts/release-site.mjs --site hyde",
     "release:rayen": "node scripts/release-site.mjs --site rayen",
     "wall:install": "git config core.hooksPath .githooks",

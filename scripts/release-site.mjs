@@ -15,7 +15,7 @@
  *   1. 在 tmp/release-<站>-<时间>/ 建一个 origin/main 的干净检出（不含任何人未提交的东西）
  *   2. 在那里安装依赖、构建、跑本站的检查
  *   3. **只 git add 本站的输出目录**（HYDE → out/，雷茵 → out-rayen/），提交、推送
- *   4. 删掉那个检出
+ *   4. 保留那个检出，下一次发布复用（依赖只在 lock 文件变时重装；--fresh 从零开始）
  *
  * 主工作区一个文件都不碰。另一边的输出目录在检出里也被重写了，但不提交，随检出一起丢弃。
  * 推送被拒（另一边刚推过）就 rebase 再推：两边提交的是不相交的目录，rebase 不会冲突。
@@ -34,6 +34,7 @@
  *          雷茵的检查由雷茵那边定 —— 这个脚本不替它决定。
  */
 import { spawnSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { OUTPUT_DIR, laneOf } from "./lib/site-lanes.mjs";
@@ -56,15 +57,19 @@ const NAME = site === "hyde" ? "HYDE（cantonlock.com）" : "雷茵";
 const ROOT = process.cwd();
 
 /** Runs a command and returns its OWN exit status — never a pipe's. */
-function run(cmd, cmdArgs, cwd, { capture = false } = {}) {
+function run(cmd, cmdArgs, cwd, { capture = false, timeout } = {}) {
   const r = spawnSync(cmd, cmdArgs, {
     cwd,
     stdio: capture ? ["ignore", "pipe", "pipe"] : "inherit",
     encoding: "utf8",
     shell: process.platform === "win32",
+    timeout,
   });
+  if (r.error?.code === "ETIMEDOUT") return { status: 124, out: "超时" };
   return { status: r.status ?? 1, out: `${r.stdout ?? ""}${r.stderr ?? ""}` };
 }
+/** 网络操作一律限时。服务器与 GitHub 都会掉线；干等是甲方 2026-09-23 点名要停的。 */
+const NET = { timeout: 5 * 60 * 1000 };
 function must(label, r) {
   if (r.status !== 0) {
     console.error(`✗ ${label} 失败（退出码 ${r.status}）`);
@@ -74,21 +79,45 @@ function must(label, r) {
   return r;
 }
 
-const stamp = new Date().toISOString().replace(/[-:]/g, "").replace("T", "-").slice(0, 15);
-const WT = join("tmp", `release-${site}-${stamp}`);
+/*
+  固定目录、反复使用（甲方 2026-09-23：「提高效率……不要降低速度」）。第一次建检出并装依赖；
+  之后每次只把它切到最新的 origin/main、清掉未跟踪文件（保留 node_modules 与 .next 缓存），
+  依赖只在 package-lock.json 变了时才重装。--fresh 从零开始。
+*/
+const WT = join("tmp", `release-${site}`);
+const fresh = args.includes("--fresh");
 let ok = false;
 
 try {
   console.log(`→ ${NAME} 发布：拉取 origin/main（大仓库，可能要两三分钟）`);
-  must("git fetch", run("git", ["fetch", "origin", "main"], ROOT));
+  must("git fetch", run("git", ["fetch", "origin", "main"], ROOT, NET));
   const base = run("git", ["rev-parse", "--short", "origin/main"], ROOT, { capture: true }).out.trim();
 
-  console.log(`→ 在 ${WT} 建干净检出（${base}）`);
-  must("git worktree add", run("git", ["worktree", "add", "--detach", WT, "origin/main"], ROOT));
+  if (fresh && existsSync(WT)) {
+    run("git", ["worktree", "remove", "--force", WT], ROOT, { capture: true });
+    if (existsSync(WT)) rmSync(WT, { recursive: true, force: true });
+  }
+  const reusable = existsSync(join(WT, ".git"));
+  if (reusable) {
+    console.log(`→ 复用检出 ${WT}，切到 ${base}`);
+    must("git checkout", run("git", ["checkout", "-q", "--detach", "-f", "origin/main"], WT));
+    must("git clean", run("git", ["clean", "-fdq"], WT));
+  } else {
+    console.log(`→ 在 ${WT} 建干净检出（${base}）`);
+    run("git", ["worktree", "prune"], ROOT, { capture: true });
+    must("git worktree add", run("git", ["worktree", "add", "--detach", WT, "origin/main"], ROOT));
+  }
   if (existsSync(".env.local")) copyFileSync(".env.local", join(WT, ".env.local"));
 
-  console.log("→ 安装依赖（用本机缓存）");
-  must("npm ci", run("npm", ["ci", "--prefer-offline", "--no-audit", "--no-fund"], WT));
+  const lockHash = createHash("sha256").update(readFileSync(join(WT, "package-lock.json"))).digest("hex");
+  const stampFile = join(WT, "node_modules", ".release-lock-sha256");
+  if (existsSync(stampFile) && readFileSync(stampFile, "utf8").trim() === lockHash) {
+    console.log("→ 依赖没变，跳过安装");
+  } else {
+    console.log("→ 安装依赖（用本机缓存）");
+    must("npm ci", run("npm", ["ci", "--prefer-offline", "--no-audit", "--no-fund"], WT, NET));
+    writeFileSync(stampFile, lockHash);
+  }
 
   // Windows 新检出是 CRLF，这三个生成器的 --check 会误报过期；先各跑一遍（见 AGENTS.md）。
   for (const s of [
@@ -136,18 +165,28 @@ try {
     must("git commit", run("git", ["commit", "-q", "-F", msgFile], WT));
 
     for (let attempt = 1; ; attempt++) {
-      console.log(`→ 推送（第 ${attempt} 次）`);
-      if (run("git", ["push", "origin", "HEAD:main"], WT).status === 0) break;
-      if (attempt >= 3) throw new Error("推送三次都被拒");
+      console.log(`→ 推送（第 ${attempt}/3 次，最多等 5 分钟）`);
+      if (run("git", ["push", "origin", "HEAD:main"], WT, NET).status === 0) break;
+      if (attempt >= 3) {
+        const sha = run("git", ["rev-parse", "--short", "HEAD"], WT, { capture: true }).out.trim();
+        const pending = "docs/collaboration/PUSH-PENDING.md";
+        const note = `\n## ${new Date().toLocaleString("zh-CN", { hour12: false })} · ${NAME}发布三次推送失败\n\n构建好的发布提交 \`${sha}\`（源码 ${base}）没推上去。\n网络恢复后重跑 \`npm run release:${site}\` 即可 —— 检出和依赖都已缓存，比第一次快。\n`;
+        writeFileSync(pending, (existsSync(pending) ? readFileSync(pending, "utf8") : "# 未推送积压\n") + note);
+        console.error(`⚠ 三次推送都失败，已记入 ${pending}。先去做别的，稍后重跑 npm run release:${site}。`);
+        process.exitCode = 75;
+        ok = true;
+        break;
+      }
       console.log("  远端有更新（另一边刚发布过？），rebase 后重试");
-      must("git fetch", run("git", ["fetch", "origin", "main"], WT));
+      if (run("git", ["fetch", "origin", "main"], WT, NET).status !== 0) continue;
       if (run("git", ["rebase", "origin/main"], WT).status !== 0) {
         run("git", ["rebase", "--abort"], WT);
         throw new Error(`rebase 冲突：有人同时改了 ${OUT}/。检出保留在 ${WT}，重新跑一次发布即可`);
       }
     }
 
-    must("git fetch", run("git", ["fetch", "origin", "main"], WT));
+    if (process.exitCode === 75) throw new Error("PENDING");
+    must("git fetch", run("git", ["fetch", "origin", "main"], WT, NET));
     const head = run("git", ["rev-parse", "HEAD"], WT, { capture: true }).out.trim();
     const remote = run("git", ["rev-parse", "origin/main"], WT, { capture: true }).out.trim();
     if (head !== remote) throw new Error(`推送后远端不是本次提交（远端 ${remote.slice(0, 11)}）`);
@@ -156,14 +195,10 @@ try {
     ok = true;
   }
 } catch (error) {
-  console.error(`✗ ${NAME} 发布中止：${error.message}`);
-  process.exitCode = 1;
-} finally {
-  if (existsSync(WT) && ok && !keep) {
-    console.log(`→ 删除检出 ${WT}`);
-    run("git", ["worktree", "remove", "--force", WT], ROOT, { capture: true });
-    if (existsSync(WT)) rmSync(WT, { recursive: true, force: true });
-  } else if (existsSync(WT)) {
-    console.log(`  检出保留在 ${WT}，排查完用 git worktree remove --force ${WT} 删除。`);
+  if (error.message !== "PENDING") {
+    console.error(`✗ ${NAME} 发布中止：${error.message}`);
+    process.exitCode = 1;
   }
 }
+// 检出保留，下一次发布复用（--fresh 可从零开始）。
+void keep;
