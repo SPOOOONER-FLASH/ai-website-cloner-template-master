@@ -31,4 +31,6 @@
 | 24 | 葡语 trinco / lingueta 用法相反：术语表 Deadbolt=Trinco、Latch=Lingueta，文章里 trinco 指斜舌。要一个像 D1 的决定 | 待甲方 |
 | 25 | HYDE 发布本轮（services 三语、8827/8828 合并、picaporte、alt、锚文本、比较页标题），上线后实测 | 09-24 完成（336102c786c 上线；/es/services、/pt/services 与 hreflang、比较页与联系页新标题实测） |
 | 26 | 新文章 double-fire-exit-door-hardware-set 的三语 SEO 字段（Hyde 文案草稿） | 09-24 完成（标题带「with Panic Bars」买家原话，描述收进 150） |
+| 27 | 新文章 brazil-nbr-11742-nbr-11785 的 SEO 标题；两篇新文章首图登记取景框（发布被图片适配检查拦下） | 09-24 完成（标题带 NBR 11785 / barra antipânico / AVCB；news-visuals 两条） |
+| 28 | HYDE 发布（参考页 H1、两篇新文章），上线后实测 | 待做 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
