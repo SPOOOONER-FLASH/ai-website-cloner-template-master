@@ -41,3 +41,14 @@
 下一次 `npm run ship` 成功时这些会一起推上去。
 
 > 已解决 2026-09-24：旁路检出手动合并 promo.json（保留配置器卡 + 远端西语「planilla de puertas」），`e99d85f59ac` 已推送。
+
+## 2026/9/24 08:19:23 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging src/data/pt-glossary.ts / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `c52bd67bcb5` shiplog: 更新上线存档
+- `a74b910b066` 规格术语表补齐西 10 葡 6；306 三条补西葡；译者加 --only 做定向重写
+
+下一次 `npm run ship` 成功时这些会一起推上去。
