@@ -16,3 +16,5 @@
 - `2012aacb05f` Release two missing HYDE mobile carousel crops
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+**已解决（2026-09-24）**：共用工作区有人在重建 out/，合并被挡；旁路检出里又遇到 scripts/release-site.mjs 真冲突（另一会话同时修了它）。手工合并两边改动后推送 `1eb49b135b9`，上面列的提交全部已在远端。

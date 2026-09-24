@@ -25,7 +25,14 @@ const TIMEOUT = 5 * 60 * 1000;
 function git(args, { timeout = TIMEOUT } = {}) {
   const r = spawnSync("git", args, { encoding: "utf8", timeout });
   const timedOut = r.error?.code === "ETIMEDOUT";
-  return { ok: r.status === 0 && !timedOut, out: `${r.stdout ?? ""}${r.stderr ?? ""}`.trim(), timedOut };
+  // Drop git's CRLF "warning:" lines: on this Windows tree there are thousands, and they pushed
+  // the real error out of the one-line reason recorded in PUSH-PENDING.md (2026-09-24).
+  const out = `${r.stdout ?? ""}${r.stderr ?? ""}`
+    .split("\n")
+    .filter((l) => !/^warning: in the working copy of /.test(l))
+    .join("\n")
+    .trim();
+  return { ok: r.status === 0 && !timedOut, out, timedOut };
 }
 const now = () => new Date().toLocaleString("zh-CN", { hour12: false });
 
