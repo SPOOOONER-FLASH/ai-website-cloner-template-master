@@ -29,5 +29,6 @@
 | 22 | HY006 应用字段写着「KFC 锁体」，他人商标，删掉 | 09-24 完成（三语去商标名，保留用途） |
 | 23 | 559 画集 5 张带 STAHLOCK 水印的图（已撤下）是否可用 | 待甲方 |
 | 24 | 葡语 trinco / lingueta 用法相反：术语表 Deadbolt=Trinco、Latch=Lingueta，文章里 trinco 指斜舌。要一个像 D1 的决定 | 待甲方 |
-| 25 | HYDE 发布本轮（services 三语、8827/8828 合并、picaporte、alt、锚文本、比较页标题），上线后实测 | 待做 |
+| 25 | HYDE 发布本轮（services 三语、8827/8828 合并、picaporte、alt、锚文本、比较页标题），上线后实测 | 09-24 完成（336102c786c 上线；/es/services、/pt/services 与 hreflang、比较页与联系页新标题实测） |
+| 26 | 新文章 double-fire-exit-door-hardware-set 的三语 SEO 字段（Hyde 文案草稿） | 09-24 完成（标题带「with Panic Bars」买家原话，描述收进 150） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
