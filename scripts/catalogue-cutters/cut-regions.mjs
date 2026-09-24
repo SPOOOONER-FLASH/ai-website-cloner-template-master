@@ -136,13 +136,15 @@ for (const it of config.items) {
     if (!box) throw new Error(`${it.model}: 尺寸图区域里没有墨迹`);
     await write(P, box, `${dir}/2-drawing.jpg`, (x, y) => !inAny(keep, x, y), null, 1400);
   } else {
-    const k = (count[it.model] = (count[it.model] ?? -1) + 1);
+    /* file：不按表面编号的照片（多色摆拍、锁舌、场景），照原名写；ingest 不会给它标表面名。 */
+    const k = it.file ? -1 : (count[it.model] = (count[it.model] ?? -1) + 1);
+
     const blank = (it.blank ?? []).map((r) => scale(P, r));
     const m = Math.round(12 * P.k);
     const nearRects = blank.map(([a, b, c, d]) => [a - m, b - m, c + m, d + m]);
     const box = inkBox(P, scale(P, it.box), (x, y) => !inAny(blank, x, y));
     if (!box) throw new Error(`${it.model} 第 ${k + 1} 张：区域里没有墨迹`);
-    await write(P, box, `${dir}/${k + 3}-finish-${"abcdefghi"[k]}.jpg`, (x, y) => inAny(blank, x, y), blank.length ? (x, y) => inAny(nearRects, x, y) : null, 1000);
+    await write(P, box, it.file ? `${dir}/${it.file}` : `${dir}/${k + 3}-finish-${"abcdefghi"[k]}.jpg`, (x, y) => inAny(blank, x, y), blank.length ? (x, y) => inAny(nearRects, x, y) : null, 1000);
   }
 }
 console.log(`${new Set(config.items.map((i) => i.model)).size} 个型号，${config.items.length} 张`);

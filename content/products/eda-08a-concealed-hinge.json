@@ -1,0 +1,51 @@
+{
+  "model": "EDA-08A",
+  "slug": "eda-08a-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "三维可调暗铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Zinc Alloy concealed hinge.",
+  "specs": [
+    {
+      "label": "Overall length",
+      "value": "106mm"
+    },
+    {
+      "label": "Material",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "40kg"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "Matt Black",
+    "Silver"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/eda-08a-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "EDA-08A Concealed Hinge, Matt Black"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/eda-08a-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "EDA-08A Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "EDA-08A Concealed Hinge | RAYEN",
+  "seoDescription": "Zinc Alloy concealed hinge."
+}

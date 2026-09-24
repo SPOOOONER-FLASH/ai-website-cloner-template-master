@@ -218,6 +218,9 @@ const FINISHES: Record<string, FinishEntry> = {
     en: "Rose gold",
     match: ["rose gold", "玫瑰金"],
   },
+  /* 三维可调节合页（《雷茵五金》p72）：砂白、茶色。颜色取自那一页的产品照片。砂金落在 satin-gold 上。 */
+  "sand-white": { colors: ["#e4e5e3"], zh: "砂白", en: "Sand white", match: ["sand white", "砂白"] },
+  "tea-brown": { colors: ["#8c7b67"], zh: "茶色", en: "Tea brown", match: ["tea brown", "茶色"] },
   "anodised-matt-black": {
     colors: ["#343537"],
     zh: "铝氧化亚黑",

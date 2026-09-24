@@ -1,0 +1,51 @@
+{
+  "model": "EDA-38B",
+  "slug": "eda-38b-concealed-hinge",
+  "name": "Concealed Hinge",
+  "nameZh": "三维可调暗铰链",
+  "series": "Concealed Hinge",
+  "categoryPath": [
+    "brass-steel-hinges"
+  ],
+  "sites": [
+    "rayen"
+  ],
+  "summary": "Zinc Alloy concealed hinge.",
+  "specs": [
+    {
+      "label": "Overall length",
+      "value": "129.8mm (+0.3 / −0.4)"
+    },
+    {
+      "label": "Material",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "Maximum load capacity (2 hinges)",
+      "value": "50kg"
+    }
+  ],
+  "material": "Zinc Alloy",
+  "finishes": [
+    "Matt Black",
+    "Silver"
+  ],
+  "doorTypes": [],
+  "certifications": [],
+  "heroImage": {
+    "src": "/images/products/eda-38b-concealed-hinge.webp",
+    "ratio": "1 / 1",
+    "label": "EDA-38B Concealed Hinge, Matt Black"
+  },
+  "gallery": [
+    {
+      "src": "/images/products/eda-38b-concealed-hinge-2.webp",
+      "ratio": "1 / 1",
+      "label": "EDA-38B Concealed Hinge, dimension drawing"
+    }
+  ],
+  "attachmentIds": [],
+  "relatedModels": [],
+  "seoTitle": "EDA-38B Concealed Hinge | RAYEN",
+  "seoDescription": "Zinc Alloy concealed hinge."
+}
