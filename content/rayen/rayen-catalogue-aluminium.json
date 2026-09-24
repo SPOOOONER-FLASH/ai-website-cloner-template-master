@@ -18,7 +18,11 @@
     "== 表面代号 → 英文名（本系列新词，zh-terms 与 rayen-finishes 同步加） ==",
     "BL 铝氧化亚黑 Anodised Matt Black · OX 铝氧化砂白 Anodised Sand White ·",
     "SG 铝氧化砂金 Anodised Sand Gold · OXB 铝氧化砂白+亚黑 Anodised Sand White / Matt Black。",
-    "材质图册印「氧化铝 / Aluminum Alloy」，记录写目录通用的 Aluminium Alloy（中文镜像为铝合金）。"
+    "材质图册印「氧化铝 / Aluminum Alloy」，记录写目录通用的 Aluminium Alloy（中文镜像为铝合金）。",
+    "",
+    "== 适用门厚（2026-09-24 甲方定） ==",
+    "大格里中文印「35-50mm」、英文印「40-55mm」。甲方：同一格中英文不一致时以中文为准。",
+    "所以只给印了这一行的 4 个型号（AL-114、AL-139、AL1-141、AL-117）写 35-50mm；其余 20 个的格子里没印，不写。"
   ],
   "sourceRoot": "E:/rayen-sources/rayen-catalogue-aluminium",
   "sites": [
@@ -28,8 +32,8 @@
   "excludeImages": [],
   "heldBack": [
     {
-      "model": "全部型号的适用门厚",
-      "reason": "大格规格栏里中文印「35-50mm」、英文印「40-55mm」，同一格两个数；不替甲方选一个，等确认"
+      "model": "其余 20 个型号的适用门厚",
+      "reason": "小格的规格栏只印三行（表面、材质、锁体），没有门厚；不从大格借"
     },
     {
       "model": "适用标准 QB/T2474-2000、GB21556-2008",
@@ -79,6 +83,10 @@
         {
           "label": "Lock case",
           "value": "5845 / 7250"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-50mm"
         }
       ]
     },
@@ -239,6 +247,10 @@
         {
           "label": "Lock case",
           "value": "5845 / 7250"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-50mm"
         }
       ]
     },
@@ -425,6 +437,10 @@
         {
           "label": "Lock case",
           "value": "5845 / 7250"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-50mm"
         }
       ]
     },
@@ -549,6 +565,10 @@
         {
           "label": "Lock case",
           "value": "5845 / 7250"
+        },
+        {
+          "label": "Door thickness",
+          "value": "35-50mm"
         }
       ]
     },
