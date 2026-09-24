@@ -354,7 +354,7 @@ function composeTitle(product, locale) {
   // 场景接在品类名后面，用空格而不是破折号 —— 它读起来是名字的一部分。
   const withUse = use ? `${head} ${use}` : head;
 
-  const build = (stem, parts) => stem + (parts.length ? ` — ${parts.join(", ")}` : "") + tail;
+  const build = (stem, parts) => stem + (parts.length ? `, ${parts.join(", ")}` : "") + tail;
 
   /*
     退让顺序。场景 + 尺寸最好；装不下时先保尺寸（产品独有），再保场景（品类共享）。

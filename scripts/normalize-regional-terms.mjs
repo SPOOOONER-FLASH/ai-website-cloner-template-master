@@ -241,7 +241,8 @@ function jsonFiles(dir) {
 /** Returns [{ file, tally, next }] for every file that would change. */
 export function scan() {
   const changes = [];
-  for (const file of jsonFiles(path.join(ROOT, "content"))) {
+  /* category-positioning.json feeds the product titles and descriptions (build-product-titles.mjs) */
+  for (const file of [...jsonFiles(path.join(ROOT, "content")), path.join(ROOT, "src/data/category-positioning.json")]) {
     const raw = fs.readFileSync(file, "utf8");
     const tally = {};
     const data = walk(JSON.parse(raw), null, file, tally);

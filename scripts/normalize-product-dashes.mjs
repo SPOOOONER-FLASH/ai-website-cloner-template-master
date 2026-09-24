@@ -60,6 +60,13 @@ function walk(v, tally) {
 }
 
 const GLOSSARIES = ["src/data/es-glossary.ts", "src/data/pt-glossary.ts"];
+/*
+  Data files whose sentences build-product-titles.mjs stitches into seoTitle / seoDescription.
+  Found 2026-09-24 when the HYDE release failed `titles:check`: the records had been cleaned but
+  the generator's own phrases ("from any point along the bar — the only…") still carried dashes,
+  so every regenerated description disagreed with the stored one.
+*/
+const SOURCE_JSON = ["src/data/category-positioning.json"];
 
 /** [{ file, n, next }] for every file that would change. */
 export function scan() {
@@ -74,6 +81,15 @@ export function scan() {
     if (record.sites && !record.sites.includes("hyde")) continue;
     const tally = { n: 0 };
     const data = walk(record, tally);
+    const eol = raw.includes("\r\n") ? "\r\n" : "\n";
+    if (tally.n) out.push({ file, n: tally.n, next: JSON.stringify(data, null, 2).split("\n").join(eol) + eol });
+  }
+  for (const rel of SOURCE_JSON) {
+    const file = path.join(ROOT, rel);
+    const raw = fs.readFileSync(file, "utf8");
+    if (!raw.includes(D)) continue;
+    const tally = { n: 0 };
+    const data = walk(JSON.parse(raw), tally);
     const eol = raw.includes("\r\n") ? "\r\n" : "\n";
     if (tally.n) out.push({ file, n: tally.n, next: JSON.stringify(data, null, 2).split("\n").join(eol) + eol });
   }
