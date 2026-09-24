@@ -46,17 +46,17 @@
 | 22 | what-oem-actually-changes | 0 | 700 | 900 | **已做** 批8 EN 1607 · ES 1684 · PT 1671 ✅ 三语 |
 | 23 | brass-piano-hinge-is-a-finish-not-a-metal | 0 | 694 | 906 | **已做** 批8 EN 1664 · ES 1732 · PT 1669 ✅ 三语 |
 | 24 | deadbolt-d101-d102-and-the-rim-alternative | 0 | 693 | 907 | **已做** 批8 EN 1622 · ES 1668 · PT 1669 ✅ 三语 |
-| 25 | exit-device-push-bar-length | 0 | 692 | 908 | **已做** 批9 EN 1635（ES/PT 待多语言批） |
-| 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | **已做** 批9 EN 1639（ES/PT 待多语言批） |
-| 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | **已做** 批9 EN 1620（ES/PT 待多语言批） |
-| 28 | door-hardware-schedule-guide | 0 | 659 | 941 | **已做** 批10 EN 1644（ES/PT 待多语言批） |
-| 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | **已做** 批10 EN 1672（ES/PT 待多语言批） |
-| 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | **已做** 批10 EN 1658（ES/PT 待多语言批） |
-| 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | **已做** 批11 EN 1637（ES/PT 待多语言批） |
-| 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | **已做** 批11 EN 1608（ES/PT 待多语言批） |
-| 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | **已做** 批11 EN 1605（ES/PT 待多语言批） |
-| 34 | trim-handle-or-panic-bar | 0 | 551 | 1049 | **已做** 批11 EN 1623（ES/PT 待多语言批） |
-| 35 | six-values-an-order-needs | 0 | 526 | 1074 | **已做** 批11 EN 1632（ES/PT 待多语言批） |
+| 25 | exit-device-push-bar-length | 0 | 692 | 908 | **已做** 批9 EN 1620 · ES 1731 · PT 1743 ✅ 三语 |
+| 26 | ul-305-is-a-listing-not-a-grade | 0 | 675 | 925 | **已做** 批9 EN 1626 · ES 1659 · PT 1650 ✅ 三语 |
+| 27 | lever-handle-range-lh852-lh853-lh855 | 0 | 665 | 935 | **已做** 批9 EN 1643 · ES 1711 · PT 1698 ✅ 三语 |
+| 28 | door-hardware-schedule-guide | 0 | 659 | 941 | **已做** 批10 EN 1628 · ES 1762 · PT 1725 ✅ 三语 |
+| 29 | occupied-vacant-washroom-indicator-bolt | 0 | 645 | 955 | **已做** 批10 EN 1660 · ES 1774 · PT 1717 ✅ 三语 |
+| 30 | stainless-lever-range-9007-9008-9014 | 0 | 638 | 962 | **已做** 批10 EN 1621 · ES 1715 · PT 1674 ✅ 三语 |
+| 31 | what-documents-you-can-actually-get | 0 | 632 | 968 | **已做** 批11 EN 1620 · ES 1707 · PT 1685 ✅ 三语 |
+| 32 | what-a-test-report-actually-covers | 0 | 629 | 971 | **已做** 批11 EN 1601 · ES 1677 · PT 1672 ✅ 三语 |
+| 33 | cross-referencing-a-lock-you-already-buy | 0 | 599 | 1001 | **已做** 批11 EN 1612 · ES 1691 · PT 1637 ✅ 三语 |
+| 34 | trim-handle-or-panic-bar | 0 | 551 | 1049 | **已做** 批11 EN 1603 · ES 1735 · PT 1709 ✅ 三语 |
+| 35 | six-values-an-order-needs | 0 | 526 | 1074 | **已做** 批11 EN 1603 · ES 1682 · PT 1683 ✅ 三语 |
 
 **做完一篇就把状态改成「已做 + 提交号」。** 这张表是进度的唯一记录。
 
