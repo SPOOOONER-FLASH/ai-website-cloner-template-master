@@ -12,12 +12,12 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 15:06 | 中立 | 标题生成器：--only 定向重写；短场景不再截成光秃的 Doors（7 条标题更正） | `263a3382c51` |
-| 15:04 | 中立 | 指南缩略图 alt 用产品图描述；术语表链接文字带术语名；审计不再误报装饰图 | `3ae558290b4` |
-| 15:00 | HYDE | D1：picaporte → pestillo 规则与同句冲突守卫（带单元测试，待两句卖点手改后启用）；两处西语 SEO 描述按 D1 改写并收进 150 字符 | `c0ae869eed7` |
-| 14:55 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `a173eb713b5` |
-| 14:54 | HYDE | 合并 8827/8828 空壳重复页到 SSET 款（301，装门图随迁）；HY006 去掉他人商标 KFC | `8d9bbf59df2` |
-| 14:54 | HYDE | 西葡 services 路由上线：镜像登记、菜单链接、测试更新；西葡标题 OEM / 自有品牌领头 | `76a70518378` |
+| 15:07 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `ec021680bb6` |
+| 15:05 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `15c35bc5f1a` |
+| 15:05 | HYDE | 计数：8827/8828 合并后 588 条记录、521 个型号、62 款执手（三语） | `5f231eafe06` |
+| 15:00 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `539a381e263` |
+| 15:00 | 中立 | D1 收尾：术语页、卖点对照表、产品 featuresEs 与零散页面文字 | `f3b02a8671c` |
+| 14:54 | HYDE | D1：文章西语正文 picaporte 清零（按 RAE：斜舌 pestillo、方舌 cerrojo、插销 pasador） | `c00048bfc32` |
 | 14:50 | 中立 | 服务页西语、葡语文案（SERVICES_COPY.es / .pt） | `f407c3763e8` |
 | 14:48 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `e63e0f9a3f9` |
 | 14:48 | HYDE | 认证页如实写现状；联系页写明可走阿里巴巴或直接下单（三语） | `9313eca805c` |
