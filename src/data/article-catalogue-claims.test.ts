@@ -27,7 +27,7 @@ import test from "node:test";
  * article (and its date) — do not loosen the test.
  */
 
-type Record = { model: string; sites?: string[]; categoryPath?: string | string[]; specs?: { label: string; value: string }[]; heroImage?: { src?: string } };
+type Record = { model: string; slug: string; sites?: string[]; categoryPath?: string | string[]; specs?: { label: string; value: string }[]; heroImage?: { src?: string } };
 
 const products: Record[] = readdirSync("content/products")
   .filter((f) => f.endsWith(".json"))
@@ -37,6 +37,13 @@ const products: Record[] = readdirSync("content/products")
 const onHyde = (p: Record) => !p.sites || p.sites.includes("hyde");
 const hyde = products.filter(onHyde);
 const coverage = JSON.parse(readFileSync("docs/research/SPEC_COVERAGE.json", "utf8"));
+const hydeSlugs = new Set(hyde.map((p) => p.slug));
+const visibleSlugs = new Set(hyde.filter((p) => p.heroImage?.src).map((p) => p.slug));
+const drawingSlugs = Object.keys(JSON.parse(readFileSync("public/images/drawings/index.json", "utf8")));
+const prepSlugs = Object.keys(JSON.parse(readFileSync("public/images/door-prep/index.json", "utf8")));
+const hydeDrawings = drawingSlugs.filter((slug) => hydeSlugs.has(slug)).length;
+const visibleHydeDrawings = drawingSlugs.filter((slug) => visibleSlugs.has(slug)).length;
+const hydePrepDrawings = prepSlugs.filter((slug) => hydeSlugs.has(slug)).length;
 const top = (p: Record) => ([] as string[]).concat(p.categoryPath ?? [])[0];
 const spec = (p: Record, label: string) => p.specs?.find((s) => s.label === label)?.value;
 const inFamily = (family: string) => hyde.filter((p) => top(p) === family);
@@ -121,8 +128,8 @@ claim(NEWS("euro-cylinder-range-45-to-90"), () => {
 });
 
 // what-documents-you-can-actually-get
-claim(NEWS("what-documents-you-can-actually-get"), () => `there are ${readdirSync("public/images/door-prep").filter((f) => f.endsWith(".svg")).length} door-preparation drawings`);
-claim(NEWS("what-documents-you-can-actually-get"), () => `Alongside the ${readdirSync("public/images/drawings").filter((f) => f.endsWith(".svg")).length} dimensioned product drawings`);
+claim(NEWS("what-documents-you-can-actually-get"), () => `HYDE currently publishes ${hydePrepDrawings} door-preparation SVGs`);
+claim(NEWS("what-documents-you-can-actually-get"), () => `Dimensioned SVG assets: ${hydeDrawings} for HYDE model slugs among ${hyde.length} catalogue records`);
 
 // mortise-lock-case-comparison-2026
 function lockCasesWithBoth() {
@@ -145,4 +152,42 @@ test("every counted catalogue claim in an article matches the catalogue as this 
     if (!articleText(dir, slug).includes(expected)) wrong.push(`${where}\n    should now read: "${expected}"`);
   }
   assert.deepEqual(wrong, [], "update these sentences (and their date) to the current catalogue");
+});
+
+test("HYDE coverage articles use site-filtered counts in all three languages", () => {
+  const inventory = [
+    hyde.length,
+    visibleSlugs.size,
+    hydeDrawings,
+    visibleHydeDrawings,
+    hydePrepDrawings,
+  ];
+  const targets = [
+    { dir: "content/guides", slug: "hardware-refurbishment-survey-2026", counts: [
+      hyde.length,
+      coverage.fields.doorThickness.products,
+      coverage.fields.handing.products,
+      coverage.fields.backset.products,
+      coverage.fields.centreDistance.products,
+      coverage.fields.forend.products,
+    ] },
+    { dir: "content/guides", slug: "powder-coating-and-ral-2026", counts: [
+      hyde.length,
+      coverage.fields.finish.products,
+    ] },
+    { dir: "content/guides", slug: "qualifying-a-hardware-supplier-2026", counts: inventory },
+    { dir: "content/guides", slug: "technical-drawings-what-to-expect-2026", counts: inventory },
+    { dir: "content/news", slug: "what-documents-you-can-actually-get", counts: inventory },
+  ];
+  const bodyKeys = { en: "body", es: "bodyEs", pt: "bodyPt" } as const;
+
+  for (const { dir, slug, counts } of targets) {
+    const article = JSON.parse(readFileSync(join(dir, `${slug}.json`), "utf8"));
+    assert.doesNotMatch(JSON.stringify(article), /\b(?:964|973|95|79)\b/, `${slug} still quotes a shared-site or stale drawing count`);
+    for (const [locale, bodyKey] of Object.entries(bodyKeys)) {
+      const body = (article[bodyKey] as string[]).join("\n");
+      const missing = counts.filter((count) => !new RegExp(`(?<!\\d)${count}(?!\\d)`).test(body));
+      assert.deepEqual(missing, [], `${slug}/${locale} must state the current HYDE counts`);
+    }
+  }
 });
