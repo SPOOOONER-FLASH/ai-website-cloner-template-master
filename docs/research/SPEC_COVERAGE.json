@@ -1,15 +1,16 @@
 {
   "generatedBy": "scripts/spec-coverage.mjs",
-  "totalProducts": 973,
+  "site": "hyde",
+  "totalProducts": 590,
   "fields": {
     "backset": {
       "title": "Backset",
       "labels": [
         "Backset"
       ],
-      "products": 176,
-      "rows": 176,
-      "distinctValues": 32
+      "products": 175,
+      "rows": 175,
+      "distinctValues": 31
     },
     "centreDistance": {
       "title": "Centre distance (lever to cylinder/keyhole)",
@@ -20,9 +21,9 @@
         "Centre distance, horizontal",
         "Centre distance, vertical"
       ],
-      "products": 42,
-      "rows": 42,
-      "distinctValues": 17
+      "products": 36,
+      "rows": 36,
+      "distinctValues": 13
     },
     "pullHandlePitch": {
       "title": "Pull handle fixing pitch (P=)",
@@ -33,9 +34,9 @@
         "Centre distance, horizontal",
         "Centre distance, vertical"
       ],
-      "products": 105,
-      "rows": 106,
-      "distinctValues": 60
+      "products": 0,
+      "rows": 0,
+      "distinctValues": 0
     },
     "doorThickness": {
       "title": "Door thickness",
@@ -50,9 +51,9 @@
         "Applicable Door Thickness",
         "Glass door thickness"
       ],
-      "products": 325,
-      "rows": 325,
-      "distinctValues": 42
+      "products": 201,
+      "rows": 201,
+      "distinctValues": 20
     },
     "handing": {
       "title": "Handing",
@@ -70,9 +71,9 @@
         "Faceplate",
         "Face plate"
       ],
-      "products": 11,
-      "rows": 11,
-      "distinctValues": 11
+      "products": 6,
+      "rows": 6,
+      "distinctValues": 6
     },
     "finish": {
       "title": "Finish",

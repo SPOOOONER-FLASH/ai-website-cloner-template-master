@@ -36,9 +36,15 @@ const products: Record[] = readdirSync("content/products")
 /** Same rule as src/data/products.ts: absent `sites` means every site. */
 const onHyde = (p: Record) => !p.sites || p.sites.includes("hyde");
 const hyde = products.filter(onHyde);
+const coverage = JSON.parse(readFileSync("docs/research/SPEC_COVERAGE.json", "utf8"));
 const top = (p: Record) => ([] as string[]).concat(p.categoryPath ?? [])[0];
 const spec = (p: Record, label: string) => p.specs?.find((s) => s.label === label)?.value;
 const inFamily = (family: string) => hyde.filter((p) => top(p) === family);
+
+test("the published spec coverage report uses the HYDE catalogue", () => {
+  assert.equal(coverage.site, "hyde");
+  assert.equal(coverage.totalProducts, hyde.length);
+});
 
 const WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
 const word = (n: number) => WORDS[n] ?? String(n);

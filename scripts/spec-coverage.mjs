@@ -1,5 +1,7 @@
 /**
- * 规格覆盖率:目录里每个关键字段有多少产品真的发布了。
+ * 规格覆盖率:HYDE 目录里每个关键字段有多少产品真的发布了。
+ * content/products 同时包含雷茵专属记录；本报告给 cantonlock.com 的指南引用，
+ * 因此必须采用与 src/data/products.ts 相同的 HYDE 站点过滤规则。
  *
  * 为什么要有这个脚本,而不是临时敲个正则:
  * 2026-09-21 我用 /hand/i 量 handing,把 "Handle Material" 和 "Handle Design"
@@ -145,6 +147,7 @@ function collect() {
   const products = {};
   const rows = {};
   const distinctValues = {};
+  let totalProducts = 0;
   for (const key of Object.keys(FIELDS)) {
     products[key] = 0;
     rows[key] = 0;
@@ -155,6 +158,8 @@ function collect() {
 
   for (const file of files) {
     const product = JSON.parse(readFileSync(join(PRODUCTS, file), "utf8"));
+    if (product.sites && !product.sites.includes("hyde")) continue;
+    totalProducts += 1;
     const seen = new Set();
     for (const row of product.specs ?? []) {
       const keys = (wanted.get(lower(row.label)) ?? []).filter((k) => valueFits(k, row.value));
@@ -185,7 +190,8 @@ function collect() {
 
   return {
     generatedBy: "scripts/spec-coverage.mjs",
-    totalProducts: files.length,
+    site: "hyde",
+    totalProducts,
     fields: Object.fromEntries(
       Object.entries(FIELDS).map(([key, def]) => [
         key,
