@@ -22,6 +22,16 @@ import { execFileSync } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PAGES = {
+  // B2B, added after the client's correction (2026-09-24): we sell to trade buyers, OEM.
+  // serraller.es is a real Barcelona buyer who ordered after browsing; portacortafogo.com is
+  // SAGA, the Brazilian enquiry. Häfele, Yale/ASSA ABLOY commercial sit behind a bot check.
+  b2b: [
+    "https://serraller.es/",
+    "https://portacortafogo.com/servicos",
+    "https://www.hettich.com/en-de",
+    "https://www.hettich.com/en-de/services",
+    "https://www.hettich.com/es-es",
+  ],
   us: [
     "https://www.baldwinhardware.com/",
     "https://www.baldwinhardware.com/products/c/door-knobs-levers-roses",

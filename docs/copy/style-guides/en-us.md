@@ -2,6 +2,7 @@
 
 **本文件只是补充。** 总声音（“一位把数字说清楚的工厂工程师”）见 `docs/collaboration/2026-09-24-copy-longtail-multilingual-plan.md` 第二节；每种语言怎么落地、拼写和行业叫法见 `docs/collaboration/2026-09-24-voice-en-es-pt.md`。两处和本文件不一致时，**以那两份为准**。
 本文件只补 [README](README.md) 那批美国公司（Baldwin、Emtek、Detex、Marks USA、TownSteel、PBB、Deltana）身上学到、那两份还没写的东西。
+**读者是 B 端**：进口商、经销商、规格顾问，不是终端家庭。B 端方向和真实买家见 README 第一节。英语读者也不只在美国：澳大利亚那位客户就是 ChatGPT 送来的。
 
 ## 1. 读者，和我们对他承诺什么
 

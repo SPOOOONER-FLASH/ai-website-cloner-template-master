@@ -1,169 +1,83 @@
-# 三个市场的文风调研：本地五金厂商怎么写（2026-09-24，Claude）
+# HYDE 文案方向：写给 B 端采购（2026-09-24，Claude）
 
-目的：HYDE 英、西、葡三语文案按**目标市场本地厂商的写法**重写，而不是按“翻译得对”重写。
-**这组文件在整套文案规则里的位置**（不一致时，以排在前面的为准）：
+## 〇、先纠正方向
 
-1. `docs/collaboration/2026-09-24-copy-longtail-multilingual-plan.md`：总方案、总声音、执行顺序
+上午的第一版调研看的多是面向消费者的锁具品牌，结论落在“安心”这个词上，也就是“家里安全”。**这是错的。**
+甲方老板说的“让买家睡得安稳”，是**采购方**的安心：相信这家工厂专业、资深，代工质量稳定，价格合适。
+我们是 B2B：给经销商、门厂、防火门安装和维保公司、进口商做 OEM 贴牌供货，不卖给终端家庭。
+
+所以本目录的规则只有一条总纲：**每一句话都要让一个谨慎的采购更愿意下单。** 家里防盗、守护家人这类话，一句都不写。
+
+**文案规则的优先级**（不一致时，以排在前面的为准）：
+
+1. `docs/collaboration/2026-09-24-copy-longtail-multilingual-plan.md`：总方案，“工程师口吻”十条
 2. `docs/collaboration/2026-09-24-voice-en-es-pt.md` 和 `src/data/es-glossary.ts` / `pt-glossary.ts`：每种语言怎么落地，以及术语
-3. **本目录**：24 家本地公司的调研，外加三份指南（只补前两份没写的内容）
+3. **本目录**：B 端买家是谁、他们在问什么，以及三份市场补充 [en-us](en-us.md) · [es-latam](es-latam.md) · [pt-br](pt-br.md)
 
-同一天另一个会话读的是另一批来源（Von Duprin、I Dig Hardware、Travex、Battaglia、Jako、La Fonte、PCF Brasil），两边合起来覆盖面更广。
-
-三份指南：
-
-| 指南 | 服务的读者 | 文件 |
-|---|---|---|
-| 英语（美国） | 美国进口商、经销商、五金规格顾问（specifier） | [en-us.md](en-us.md) |
-| 西语（拉美中性） | 墨西哥、阿根廷、秘鲁的进口商和经销商 | [es-latam.md](es-latam.md) |
-| 葡语（巴西） | 巴西的经销商和门厂 | [pt-br.md](pt-br.md) |
-
-本次新增的待办和待决：[`docs/collaboration/tasks/2026-09-24-copy-style-rewrite.md`](../../collaboration/tasks/2026-09-24-copy-style-rewrite.md)
-
-**重跑语料**：`node scripts/collect-copy-corpus.mjs`，输出到 `tmp/claude-copy-corpus/`，该目录已被 gitignore。
-语料是别家受版权保护的文字，只供分析，**不进仓库，也不上我们的页面**。指南里的例句全部是用 HYDE 自己的产品写的。
-
-**量化**：`node scripts/normalize-us-spelling.mjs --check` 和 `node scripts/normalize-regional-terms.mjs`（不加参数时只报告，不修改）。
+执行计划：[`docs/collaboration/tasks/2026-09-24-copy-style-rewrite.md`](../../collaboration/tasks/2026-09-24-copy-style-rewrite.md)
 
 ---
 
-## 一、调研了哪些公司
+## 一、四个真实买家告诉我们的事
 
-挑选标准：当地的**门锁、五金制造商或品牌方**优先，零售商只作补充；每家至少看首页，再看一页产品页或类目页。
+| 买家 | 怎么来的 | 第一封信问什么 | 结果 |
+|---|---|---|---|
+| **D.P. Serraller**（巴塞罗那，1982 年创立，金属门锁和五金的制造兼分销商，只卖给专业客户） | 在 Clarity 里看到他们浏览了网站，随后发来询盘 | 四款推杠能不能统一用 **9×9 mm 方轴**（他们所有的防火门锁和执手都用这个尺寸）；能否附**西语说明书**、在侧壳上贴他们的**标签**；侧壳是不是**金属**的；有没有**有效的 CE 证书** | 按型号要了 7 项报价，50 到 250 件不等，说明是**反复采购的消耗品**，可以走阿里巴巴也可以直接交易 |
+| **SAGA Portas**（圣保罗，防火门维保公司兼五金网店） | 在 Clarity 里看到浏览，随后主动联系 | 我们在巴西有没有经销商，想谈合作 | 在谈；他们的服务页围绕 **NBR 11742**（巴西防火门逃生五金标准）和 **AVCB**（消防验收证书）写 |
+| 瑞士用户 | ChatGPT 直接把他送到 LC04 85×60 产品页 | 他问的是带参数的问题；页面上中心距、backset、锁芯都写成了文字 | 落到了具体产品页 |
+| 澳大利亚用户 | ChatGPT 送到产品总目录 | 自己点进合页，看了 SSH018，下载了目录 PDF | 发来询盘 |
 
-### 美国
+**共同点**：
 
-| 公司 | 定位 | 看了什么 |
+1. 先按**具体型号和尺寸**找过来，数字写成文字的页面才会被搜到、被 AI 引用。
+2. 第一轮问的是**能不能配上**（方轴、材质）、**能不能贴牌**（标签、说明书语种、包装）、**有什么文件**（CE、测试报告），没有人问“你们的产品好不好”。
+3. 下单是**成组、反复**的：推杠、执手、顺序器一起要，这是双开防火门的一整套配置。
+4. 他们要一条**低风险的交易路径**：阿里巴巴平台或直接交易。
+
+## 二、向 B2B 大公司学什么
+
+| 学什么 | 谁在这么做 | 用到 HYDE |
 |---|---|---|
-| Baldwin | 高端住宅，80 年历史 | 首页、执手/玫瑰底座类目页 |
-| Emtek | 高端住宅，可定制 | 首页、Deadbolt 类目页 |
-| Detex | 商用逃生装置，百年厂 | 首页、Advantex 与 Value Series 系列页 |
-| Marks USA | 商用锁、逃生装置，对标大牌 | 首页 |
-| TownSteel | 商用锁，项目与规格支持 | 首页、Rejuvenator 页 |
-| PBB | 合页专业厂 | 首页 |
-| Deltana | 建筑五金，库存型 | 首页 |
-| FSB（德国） | 甲方点名的克制标杆 | 英文首页 |
-| ASSA ABLOY US | 行业集团 | 美国首页 |
+| **按身份分入口** | Hettich 首页让访客先选“工业客户、经销商、木工、建筑师、安装商” | 分成三个入口：经销商和进口商 / 门厂（OEM）/ 防火门安装和维保 |
+| **把服务说具体** | Hettich 列出 CAD 设计工具、招标规格文本、安装视频、技术助手 | 我们能给的：图纸、规格文本、西语和葡语安装说明、标签和包装选项、打样流程 |
+| **说明只卖给专业客户** | Serraller 首页写“只卖给行业专业客户” | 写明我们只供行业客户，写清最小起订量（数字待甲方给） |
+| **懂标准** | Serraller 写自己是 AENOR 标准委员会成员、按 EN 13241 做 CE；SAGA 写 NBR 11742 和 AVCB | 每个市场用一篇文章讲清当地标准管什么；**不声称符合我们没拿到的认证** |
+| **物流说具体** | Serraller 写条码标签、24 到 72 小时到货 | 纸箱标签、交期、装柜方式：数字要工厂给 |
+| **强调合作伙伴关系** | Hettich 给经销商那一栏的口号是“以 Hettich 为伙伴，因为信任对我们很重要” | 对经销商写：稳定供货、同一型号每批一致、贴牌不外泄 |
 
-### 墨西哥
+Häfele、Yale 和 ASSA ABLOY 的商用站点有机器人验证，没有抓取，也没有绕过。
 
-| 公司 | 定位 | 看了什么 |
+## 三、“安心”对 B 端采购意味着什么，以及怎么写出来
+
+| 采购心里的问题 | 用文案怎么回答 |
+|---|---|
+| 这家厂懂不懂自己的零件？ | 尺寸精确到毫米，写成文字；不知道的写“待确认”，不编 |
+| 他们做了多久，给别人代工过吗？ | 写能核实的年份、年产量、出口国家数；不点客户名字 |
+| 每一批都一样吗？ | 写检验流程、打样和首件确认、批次追溯 |
+| 价格合不合适？ | 不写“低价”；写“同一套模具多家品牌共用，所以起订量低”这类能让人理解成本结构的事实 |
+| 出了问题找谁？ | 写报价、下单、验货、售后各一步谁负责、多久回复 |
+
+## 四、三个语种的读者
+
+| 语种 | 读者 | 要特别注意 |
 |---|---|---|
-| Truper | 墨西哥最大的五金工具集团 | 首页、两份门锁技术规格页（ficha técnica） |
-| Phillips（ASSA ABLOY） | 墨西哥门锁国民品牌 | 首页、X-1100 产品页 |
-| Helvex | 高端卫浴 | 首页（只作反例） |
-
-### 阿根廷
-
-| 公司 | 定位 | 看了什么 |
-|---|---|---|
-| Kallay | 1946 年创立的锁厂 | 首页、门锁类目与筛选项 |
-| Trabex | 70 多年的门锁品牌 | 首页 |
-| Fratelli Currao | 1964 年创立的建筑五金厂 | 首页、产品线页 |
-| Easy（Cencosud） | 建材零售 | 首页（只看称呼方式） |
-
-### 秘鲁
-
-| 公司 | 定位 | 看了什么 |
-|---|---|---|
-| Cantol | 秘鲁本土锁厂，约 50 年 | 首页、公司介绍、挂锁产品页 |
-| Forte（ASSA ABLOY） | 秘鲁门锁品牌 | 首页 |
-
-### 巴西
-
-| 公司 | 定位 | 看了什么 |
-|---|---|---|
-| Papaiz（ASSA ABLOY） | 1952 年创立的门锁品牌 | 首页、门锁产品线页 |
-| Aliança Metalúrgica | 1927 年创立的门锁厂 | 首页、LINIE 5051 产品页 |
-| Soprano | 门锁、五金、电工，面向经销商 | 首页、玻璃门锁类目页 |
-
-**因为有机器人验证而没抓到的**（没有绕过）：Hager、Allegion 旗下品牌（Von Duprin、Ives）、Grainger、National Hardware、Don-Jo、Accurate、Home Depot México、Lock（墨西哥）、Pado、Stam、IMAB。
-已经用定位相同、页面公开的公司替代，结论不受影响。
+| 英语 | 美国、澳大利亚、东南亚、中东的进口商和经销商 | 美式拼写（已有脚本和测试守住） |
+| 西语 | **西班牙**、秘鲁、乌拉圭、阿根廷、墨西哥 | Search Console 里西班牙有 60 次展示，AI 摘要里也有 15 次；下单的 Serraller 用的是西班牙西语（manilla、puerta cortafuegos、coordinador de hoja）。拉美中性西语的写法，**西班牙读者也必须读得懂**，见 es-latam.md |
+| 葡语 | 巴西的经销商、门厂、防火门维保公司 | NBR 11742 和 AVCB 是他们的日常词汇 |
 
 ---
 
-## 二、拆分：五条跨市场规律
+## 附：上午的消费端调研（方向偏了，只留用词参考）
 
-### 1. 品牌承诺落在“安心”这个词上，而且三个语种用的是同一个词
+上午调研了 24 家：美国 Baldwin、Emtek、Detex、Marks USA、TownSteel、PBB、Deltana；墨西哥 Truper、Phillips；阿根廷 Kallay、Trabex、Fratelli Currao；秘鲁 Cantol、Forte；巴西 Papaiz、Aliança、Soprano。
+还能用的只有三条：
 
-- 阿根廷 Kallay：品牌口号和使命里都用 *tranquilidad*（安心）。
-- 秘鲁 Cantol：口号是 *Vive tranquilo*（安心过日子）。
-- 巴西 Papaiz：口号用 *tranquilo*（放心）。
+- **按部件写材质**（Papaiz、Phillips、Truper），B 端一样适用。
+- **产地直说**：Truper 在每份规格页上写明在中国制造、按 Truper 的规格生产。
+- **历史写具体年份**，不写“多年经验”。
 
-这和甲方老板那句“工厂给人专业感觉，他们会睡得安稳”说的是同一件事。
-**不同的是，本地品牌对终端消费者说“家里安心”，HYDE 要对采购商说“下单安心”**：型号不会错、孔位不会错、柜子到港不用返工。
-这个词可以用，但对象要换，见各指南第 1 节。
-
-### 2. 产品描述 = 按部件列材质
-
-写法最成熟的三家不约而同：
-
-- **Papaiz**：一整句名词短语，依次写功能、backset（distância de broca）、每个部件用什么材料、钥匙和锁芯用什么材料、锁芯长度。
-- **Phillips**：逐条列点，每条是“部件 + 材料 + 起什么作用”。
-- **Truper**：规格优先，英寸和毫米并写，适配门厚写成区间。
-
-美国商用品牌（Detex、Marks）换了一种写法：**标准等级 + 适用场景 + 系列号**，比如 Grade 1、UL、适用学校或高频使用场景。
-
-→ HYDE 的规格行本来就是按部件列尺寸的（面板、锁体、锁舌伸出量），**这是最该学、成本也最低的一条**。材质只写目录公开了的。
-
-### 3. 历史写成具体年份，不写“多年经验”
-
-Kallay 写 1946，Currao 写 1964，Papaiz 写 1952，Aliança 写 1927，Trabex 写 70 多年，Baldwin 写 80 年，Detex 写百年。**没有一家写“many years of experience”**。
-→ HYDE 只写能核实的年份和数字；不知道的空着，问甲方。
-
-### 4. 产地直说
-
-- Truper 在每份技术规格页上写明**在中国制造、按 Truper 规格生产**。墨西哥第一大五金品牌不回避产地，把“按谁的规格”当成质量保证。
-- Cantol 把“秘鲁制造”做成卖点。
-
-→ HYDE 写“在中国自有工厂生产”时语气平实就行，重点落在**按什么规格、谁来检验**。
-
-### 5. 本地品牌也有 HYDE 不能学的写法
-
-| 写法 | 谁在用 | 为什么不学 |
-|---|---|---|
-| 感叹号标题 | Phillips | 面向零售；采购商读到会觉得不专业 |
-| 数字清单式标题党（“15 个真相”） | Aliança 的博客 | 给搜索引擎写的，会降低信任 |
-| 生活方式散文（水、仪式感、宇宙） | Helvex、Baldwin | 高端消费品的写法，和 FSB 式的克制相反 |
-| 自称“行业领导者” | Trabex、Kallay、Detex、Baldwin | 每家都这么说，等于什么也没说 |
-| 优惠、限时促销话术 | Forte、Easy、Tramontina | 零售话术 |
-
----
-
-## 三、各市场的差异
-
-| | 美国 | 墨西哥 | 阿根廷 | 秘鲁 | 巴西 |
-|---|---|---|---|---|---|
-| 怎么称呼读者 | you，或不用人称的祈使句 | tú（零售）；规格页用无人称 | **vos**（Explorá、podés） | tú | você，或无人称 |
-| 尺寸单位 | 英寸为主，商用规格带 ANSI 等级 | **英寸（毫米）并写** | 毫米 | 毫米 | 毫米 |
-| 标准与认证 | ANSI/BHMA、UL 放在显眼处 | 少 | 少，写“安全等级” | 少 | 少，写获奖和 Top of Mind |
-| 表面处理叫什么 | finish | acabado | **terminación** | acabado | acabamento |
-| 执手叫什么 | lever | manija | manija（**picaporte 在这里指执手**） | manija | maçaneta |
-| 语气 | 短而笃定，用法先行 | 规格优先 | 讲历史，有温度 | 讲本地制造和安全 | 讲部件和耐用，强调“适合海边的防腐” |
-
-西语一个 `/es/` 要同时服务三个国家，所以西语指南定的是**中性拉美西语**：
-不用 vos，避开只在一个国家通用的词，某个词在各国意思不同时，第一次出现写成“通用词（地区词）”。
-
----
-
-## 四、HYDE 现状（2026-09-24）
-
-早上用旧的检出统计过一次：英语有 620 处英式拼写；西语有 manilla 215、picaporte 85、cortafuegos 21。
-同一天，另一个会话的 `normalize-us-spelling.mjs` 和 `normalize-regional-terms.mjs` 已经改掉其中大部分，并加了测试守住。**现在还剩的**：
-
-| 语言 | 剩什么 | 处理 |
-|---|---|---|
-| 西语 | cortafuegos 21 处 | voice 文件已定 puerta cortafuego → 在 normalize-regional-terms 里加一条规则 |
-| 西语 | picaporte 106 处（指锁舌） | 在阿根廷口语里指执手 → 待甲方决定，见 es-latam.md 第 4 节 |
-| 英语 | tonnes、labour、recognised、authorisation 等十几处 | 补进 normalize-us-spelling 的词表 |
-| 葡语 | tens 4 处（tu 的动词形式） | 看上下文，逐处改 |
-| 葡语 | 产品规格里的小数点（产品层） | 并入总方案的产品层；文章里已经用逗号 |
-
----
+重跑语料：`node scripts/collect-copy-corpus.mjs`，输出到 `tmp/claude-copy-corpus/`，已 gitignore，不进仓库，也不上页面。
 
 ## 来源
 
-美国：[Baldwin](https://www.baldwinhardware.com/) · [Emtek](https://www.emtek.com/) · [Detex](https://www.detex.com/) · [Marks USA](https://marksusa.com/) · [TownSteel](https://www.townsteel.com/) · [PBB](https://pbbinc.com/) · [Deltana](https://deltana.net/) · [FSB](https://www.fsb.de/en/) · [ASSA ABLOY US](https://www.assaabloy.com/us/en)
-墨西哥：[Truper](https://www.truper.com/) · [Truper 技术规格页](https://www.truper.com/ficha_tecnica/Cerraduras-de-sobreponer-clasicas.html) · [Phillips](https://www.phillips.com.mx/) · [Helvex](https://www.helvex.com.mx/)
-阿根廷：[Kallay](https://www.kallay.com/) · [Trabex](https://trabex.com/) · [Fratelli Currao](https://www.fratellicurrao.com.ar/) · [Easy](https://www.easy.com.ar/)
-秘鲁：[Cantol](https://cantol.com.pe/) · [Forte](https://forte.com.pe/)
-巴西：[Papaiz](https://www.papaiz.com.br/pt/index) · [Aliança](https://www.aliancametalurgica.com.br/) · [Soprano](https://www.soprano.com.br/)
+[Serraller](https://serraller.es/) · [SAGA 服务页](https://portacortafogo.com/servicos) · [Hettich](https://www.hettich.com/en-de) · [Hettich 服务页](https://www.hettich.com/en-de/services) · [Detex](https://www.detex.com/) · [TownSteel](https://www.townsteel.com/) · [Truper 规格页](https://www.truper.com/ficha_tecnica/Cerraduras-de-sobreponer-clasicas.html) · [Papaiz](https://www.papaiz.com.br/pt/produtos/linha-de-fechaduras)

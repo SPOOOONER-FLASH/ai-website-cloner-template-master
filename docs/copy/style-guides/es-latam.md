@@ -1,39 +1,39 @@
-# 西语（拉美）市场补充：墨西哥、阿根廷、秘鲁
+# 西语市场补充：拉美和西班牙的 B 端采购都读得懂
 
-**本文件只是补充。** 称呼（usted，产品页不用人称）、句法、单位（小数用逗号）、术语，全部以 `docs/collaboration/2026-09-24-voice-en-es-pt.md` 和 `src/data/es-glossary.ts` 为准；地区用语由 `scripts/normalize-regional-terms.mjs` 统一，并由测试守住（manija、perilla、entrada、cerradero、planilla）。
-本文件只补 [README](README.md) 那批本地公司（Truper、Phillips、Kallay、Trabex、Fratelli Currao、Cantol、Forte）身上学到、那两份还没写的东西。
+**本文件只是补充。** 称呼（usted，产品页不用人称）、句法、单位（小数用逗号）、术语，以 `docs/collaboration/2026-09-24-voice-en-es-pt.md` 和 `src/data/es-glossary.ts` 为准；地区用语由 `scripts/normalize-regional-terms.mjs` 统一，并由测试守住。
+B 端方向和真实买家，见 [README](README.md)。
 
-## 1. 读者，和我们对他承诺什么
+## 1. 读者
 
-读者是进口商、五金批发商、建筑商的采购。
-三国本地品牌的承诺都落在同一个词上，*tranquilidad*（安心）：Kallay 写在品牌口号和使命里，Cantol 的口号是 *Vive tranquilo*。它们是对家庭说“家里安全”；我们对采购商说的是**订单上的尺寸、材质和文件都不会出错**。
-这个词可以用，但对象要换：例如写 `tranquilidad en el pedido`（下单安心），不要写成“守护您的家人”。
+进口商、五金批发商（distribuidor）、门厂、防火门安装商（instalador de puertas cortafuego）。
+**西班牙也是读者**：巴塞罗那的 Serraller 是看了网站以后下单的，Search Console 里西班牙有 60 次展示。所以规则是：
 
-## 2. 从本地厂商学什么
+> **写拉美中性西语，但每个关键词都要让西班牙读者一眼看懂。** 两边说法不同的零件，在每篇文章或每个产品页**第一次出现**时写成“通用词（西班牙说法）”，之后只用通用词。
 
-| 学什么 | 谁在这么写 | 怎么用到 HYDE |
-|---|---|---|
-| **按部件写材质** | Phillips 的产品页逐条列“部件 + 材料 + 作用” | 产品有公开材质时，按部件列；没有就不写 |
-| **规格优先，门厚写成区间** | Truper 的技术规格页 | 适用门厚写在第一行 |
-| **产地直说** | Truper 在每份规格页写明在中国制造、按 Truper 的规格生产 | 平实地写在中国自有工厂生产，重点写按什么规格、谁来检验 |
-| **历史写具体年份** | Kallay 1946、Currao 1964、Trabex 70 多年 | 只写能核实的年份；不知道的问甲方 |
-| **产品线按材质分** | Currao：高端黄铜、经典黄铜、铝和不锈钢 | 类目页可以这样组织 |
+## 2. D1 的答案：锁舌、死舌、执手用哪个词
 
-## 3. 不学什么
+| 零件 | 用 | 为什么两边都读得懂 | 不用 |
+|---|---|---|---|
+| latch bolt（斜舌） | **pestillo** | RAE（西班牙皇家学院词典）对 pestillo 的释义就是“靠钥匙或弹簧伸出、进入锁扣的锁舌”，西班牙、墨西哥、阿根廷、秘鲁都这么用；阿根廷 Kallay 的筛选项写 *pestillo reversible*（可换向锁舌）。需要强调弹簧斜舌时写 *pestillo de resbalón* | **picaporte**：墨西哥指锁舌，**阿根廷指执手**，西班牙多指门拉手或锁舌总成，三地理解各不相同 |
+| deadbolt（方舌） | **cerrojo** | 各地通用；Kallay、Trabex、Phillips 都这么写 | 把 pestillo 当作 deadbolt 用 |
+| lever handle（执手） | **manija**，第一次出现写 **manija (manilla)** | 拉美通用 manija；西班牙说 manilla，Serraller 的询盘里就写 *Manilla 9080E* | 正文只写 manilla（拉美读者会以为是手环或表针） |
+| fire door（防火门） | **puerta cortafuego**，第一次出现写 **puerta cortafuego (cortafuegos)** | 拉美写 cortafuego，西班牙写 cortafuegos，两种都认得 | — |
+| door coordinator（顺序器） | **selector de cierre**，第一次出现写 **selector de cierre (coordinador de hoja)** | Serraller 写 *coordinador hoja* | — |
+| panic exit device（逃生推杠） | **barra antipánico** | 两边通用 | — |
 
-- 感叹号标题（Phillips 的零售文案）
-- vos（Trabex、Currao、Easy 都用）：墨西哥和秘鲁读者会觉得这是一条阿根廷本地广告
-- “líder del mercado”、“la más alta calidad”（Trabex、Kallay）
-- 生活方式散文（Helvex）
+**执行边界**：picaporte 改成 pestillo，要改 `normalize-regional-terms.mjs` 里 `resbalón → picaporte` 这条规则，还要逐处读上下文，把原来当作 deadbolt 用的 pestillo 改成 cerrojo。**这个脚本归工程会话**，先发消息商量，不直接改。
+“通用词（西班牙说法）”这种括注，测试会不会误判为西班牙用词回潮，也要先和工程会话对好。
 
-## 4. 待甲方决定：picaporte
+## 3. B 端文章和产品页怎么写
 
-`normalize-regional-terms.mjs` 把西班牙的 *resbalón*（锁舌）统一成了 *picaporte*，现在文章里有 106 处。
-**在阿根廷口语里，picaporte 指的是门执手**（包括 Kallay 的母语市场）。阿根廷读者读到“picaporte 的伸出量”，可能会以为说的是执手。
-
-| 选项 | 效果 |
+| 写 | 例 |
 |---|---|
-| A. 保持 picaporte | 墨西哥和秘鲁读者读得顺；阿根廷读者可能误解 |
-| B. 改成 pestillo（Kallay 的筛选项就写 pestillo reversible，可换向锁舌） | 三国都不会误解，但要确认 pestillo 在别处没有被当作 deadbolt 用 |
+| 先写兼容尺寸 | `Eje cuadrado de 9 mm; bajo pedido, 8 mm.`（9 mm 方轴，可按要求做 8 mm。）只写工厂确认过的规格。Serraller 就是先问这个 |
+| 写清贴牌能做什么 | 说明书的语种、标签位置、包装：**只写甲方确认过可以做的项** |
+| 如实写认证现状 | 不写“认证齐全”。现状怎么对外说，要甲方先定措辞 |
+| 写成套配置 | 双开防火门要推杠、执手、顺序器、闭门器一起配，文章里直接链到这几个型号 |
+| 写交易路径 | 走阿里巴巴平台还是直接交易，**甲方确认后再写** |
 
-Claude 建议选 B，但要先找一位阿根廷买家看一眼再批量改。
+## 4. 不写
+
+家里防盗、守护家人、*tranquilidad para su familia* 这类话 · 感叹号 · *líder del mercado* · vos 和 tú · 没有测过的认证。
