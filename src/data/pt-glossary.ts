@@ -515,6 +515,8 @@ export const FINISH_NAMES_PT: Record<string, string> = {
   "Antique brass": "Latão antigo",
   "Antique Copper": "Cobre antigo",
   "Antique copper": "Cobre antigo",
+  /* Generic surface treatment on HY006DK/ET; not zinc ("Zincado") nor chrome ("Cromado"). */
+  Electroplating: "Eletrodeposição",
   "Chrome Plated": "Cromado",
   "Chrome plated": "Cromado",
   "Satin Chrome": "Cromo acetinado",
@@ -605,6 +607,37 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  /*
+    Harvested 2026-09-24 from the Portuguese already in specsPt, the same pass the Spanish
+    side had earlier the same day. Before this block, a HYDE re-run left 18 values unmapped
+    across 20 rows, and 18 of those rows held Portuguese produced later by review — so the
+    run reverted them to English. Every entry is the string already on the page; no English
+    value had two Portuguese renderings anywhere in the catalogue.
+  */
+  "175mm long": "175 mm de comprimento",
+  "58mm (lever to cylinder)": "58 mm (maçaneta ao cilindro)",
+  "aluminum": "alumínio",
+  "Brass, two/three-throw": "Latão, duas ou três voltas",
+  "Brushed with polished edges": "Escovado com bordas polidas",
+  "Color zinc-plated iron, two/three-throw": "Ferro com zincagem colorida, duas ou três voltas",
+  "Double cylinder, double throw": "Cilindro duplo, duplo avanço",
+  "Euro profile, key outside / thumbturn inside, zinc alloy":
+    "Perfil europeu, chave por fora / botão por dentro, liga de zinco",
+  "Includes opening and closing speed regulation, spring tension is fully adjustable, door can swing 116 inwards or outwards, with stops at 0, 88 and 116 in both directions.":
+    "Inclui regulagem da velocidade de abertura e de fechamento, tensão de mola totalmente ajustável, a porta gira 116° para dentro ou para fora, com paradas em 0°, 88° e 116° nos dois sentidos.",
+  "Latch and square deadbolt": "Trinco e lingueta quadrada",
+  "Mortise lock body, iron": "Caixa de embutir, ferro",
+  "Pair of lever plates, mortise lock body, euro cylinder with keys, spindle, strike plate, fixing screws and fittings":
+    "Par de placas com maçaneta, caixa de embutir, cilindro europeu com chaves, quadrado, contra-testa, parafusos e acessórios de fixação",
+  "Return spring cassette behind each plate": "Cartucho de mola de retorno atrás de cada placa",
+  "Screws or welding; installation accessories included":
+    "Com parafusos ou solda; inclui acessórios de montagem",
+  "Steel sheet 1.2mm case; zinc alloy and copper alloy internal components; solid brass cylinders; iron":
+    "Chapa de aço de 1,2 mm; componentes internos em liga de zinco e liga de cobre; cilindros em latão maciço; ferro",
+  "Steel sheet 1.5mm case; zinc alloy and copper alloy internal components; solid brass cylinders; iron":
+    "Chapa de aço de 1,5 mm; componentes internos em liga de zinco e liga de cobre; cilindros em latão maciço; ferro",
+  "SUS 304 stainless steel plate (stamped on the plate)":
+    "Placa em aço inoxidável SUS 304 (gravado na placa)",
   /*
     Added 2026-09-24 with the bathroom-accessory spec clean-up. The catalogue stated one
     fact four ways ("bathroom", "bathroom, living room", "Living room/Bathroom",

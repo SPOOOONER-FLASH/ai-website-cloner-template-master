@@ -44,7 +44,7 @@
       "why": "美工 review 2026-09-02: 这个放在不锈钢拉手的类目. A recessed stainless flush pull, not a grip handle set."
     },
     {
-      "slug": "ansi-grade-3-keyed-deadbolt-lock-set",
+      "slug": "keyed-deadbolt-lock-set",
       "from": "deadbolts",
       "to": "grip-handle-sets",
       "why": "美工 review 2026-09-02: 这个调回大拉手的类目. The set is an entrance handleset — grip handle, thumb latch and deadbolt together — so it belongs with the handlesets rather than among the bare deadbolt bodies."
@@ -183,6 +183,20 @@
       "category": "panic-exit-devices",
       "why": "Renamed Panic Exit Device → Panic Exit Device Trim; the record's own Type row reads outside lever trim.",
       "reason": "renamed-to-match-type"
+    },
+    {
+      "from": "ansi-grade-3-keyed-deadbolt-lock-set",
+      "to": "keyed-deadbolt-lock-set",
+      "category": "grip-handle-sets",
+      "why": "2026-09-24：网址里写着 ANSI Grade 3，我们没有 ANSI 认证（客户规则：不得暗示 ANSI/UL/EN 认证）。只改网址，图片文件名不动（雷茵车道也引用它）。",
+      "reason": "renamed-no-certification"
+    },
+    {
+      "from": "ansi-grade-3-keyed-deadbolt-lock-set",
+      "to": "keyed-deadbolt-lock-set",
+      "category": "deadbolts",
+      "why": "同上；2026-09-02 之前它在 deadbolts 下，那个旧网址也要跟过来。",
+      "reason": "renamed-no-certification"
     }
   ]
 }

@@ -457,6 +457,9 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Satin Stainless Steel": "Acero inoxidable satinado",
   "Polished Stainless Steel": "Acero inoxidable pulido",
   Chrome: "Cromo",
+  /* Generic surface treatment on HY006DK/ET, not a specific plating: "Galvanizado" would
+     name zinc and "Cromado" chrome, neither of which the record claims. */
+  Electroplating: "Electrodeposición",
   "Chrome Plated": "Cromado",
   /*
     The rest of the finish set, in the title case scripts/expand-finish-codes.mjs writes.
