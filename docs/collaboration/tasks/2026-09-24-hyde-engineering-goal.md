@@ -6,9 +6,9 @@
 
 | # | 事项 | 状态 |
 |---|---|---|
-| 1 | HYDE 发布本轮积压（picaporte、计数、9 条新尺寸标题、zh-terms），上线后实测 | 待做 |
+| 1 | HYDE 发布本轮积压（picaporte、计数、9 条新尺寸标题、zh-terms），上线后实测 | 09-24 完成（996a209b6df 上线，L001 Pestillo、LC05 85/60 标题实测） |
 | 2 | 比较页（/compare/*）标题带长尾词：夜锁比较页 70 次展示、排名 9.7、0 点击 | 09-24 完成（「25 Night Latches & Rim Locks Compared Side by Side」，西葡「Comparativa/Comparativo de N …」） |
-| 3 | GSC 机会清单里的其余页面：/contact/（98 展示）、背距与中心距文章（31 展示）的搜索标题和描述 | 待做 |
+| 3 | GSC 机会清单里的其余页面：/contact/（98 展示）、背距与中心距文章（31 展示）的搜索标题和描述 | 09-24 完成（联系页三语标题带「工厂在中国」；背距文章标题带 85mm vs 72mm） |
 | 4 | 219 张无 alt 的图片（指南、新闻列表页的封面图） | 待做 |
 | 5 | 术语表页 12 处「Read more / Leer más」空锚文本改成有内容的链接文字 | 待做 |
 | 6 | 标题生成器加 `--only <models>`，只重写指定型号 | 待做 |
@@ -23,4 +23,6 @@
 | 15 | GA4 登记自定义维度 | 待甲方（手册 ②） |
 | 16 | 隐私政策页内容 | 待甲方 |
 | 17 | 路由收敛为 `[locale]`、构建产物不进 git | 待甲方 |
+| 19 | /services 元数据改为 OEM / 私人品牌领头（Hyde 文案 09-24 请求） | 待做 |
+| 20 | 西葡 services 路由（/es/services、/pt/services：hreflang、前缀、locale-route-parity），建好通知 Hyde 文案写西葡文案 | 待做 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

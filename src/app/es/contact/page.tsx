@@ -9,7 +9,7 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "es",
-  title: "Contacto — Equipo de exportación",
+  title: "Fábrica de herrajes en China: contacto con exportación",
   description:
     "Consulte a nuestro equipo de exportación sobre producto, muestras, OEM o proyectos. Indique tipo de puerta, acabado, norma y cantidad.",
 });

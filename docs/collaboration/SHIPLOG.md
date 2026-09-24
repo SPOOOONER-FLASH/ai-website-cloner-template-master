@@ -6,20 +6,19 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 530 次提交
+最近 30 天 · 共 529 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 14:42 | HYDE | 维修调查三语计数跟上规格补全；EH01–EH03 西语摘要按实拍区分 | `b9082fb82ac` |
-| 12:15 | 中立 | NOW：雷茵已迁到独立仓 SPOOOONER-FLASH/rayen，本仓雷茵车道冻结 | `c3d535a297e` |
-| 10:16 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 f48d2187354 | `996a209b6df` |
-| 10:12 | 中立 | 画集：S03 删去与主图字节相同的第 3 张 | `8ab430f8d43` |
-| 10:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `d1c561f2183` |
-| 10:12 | HYDE | 服务页改为贴牌视角：Bring us a drawing. Leave with a product. | `fe0768dd139` |
-| 10:09 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `0af80ebeb81` |
-| 10:08 | 中立 | 品牌宣言 v3：OEM 开模能力、出口市场、科隆展与利马/布宜诺斯艾利斯参展、德国办公室（三语） | `6d5376e260c` |
+| 14:41 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `38b151c0ed8` |
+| 14:38 | HYDE | 联系页三语标题带品类词；背距文章标题带 85mm vs 72mm | `32bed913c25` |
+| 10:12 | HYDE | 比较页标题：型号数领头 + 并排对比（三语，去破折号） | `0a0e551c831` |
+| 10:10 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9800f1a2db8` |
+| 10:09 | 中立 | 工程会话目标清单（Stop hook 读取，甲方 09-24「持续工作直到完成」） | `2ed97c428c5` |
+| 10:08 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `f48d2187354` |
+| 10:07 | 中立 | 覆盖报告重生成（发布被过期拦下）；锁体对照表 --check 进 test:export | `101db4afe14` |
 | 10:06 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `cf48605167d` |
 | 10:05 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `be9f0f274e2` |
 | 10:05 | HYDE | why-the-catalogue 三语 FAQ 同步 114；任务第 0 项完成 | `7887739f892` |

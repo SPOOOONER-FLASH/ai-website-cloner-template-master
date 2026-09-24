@@ -9,7 +9,7 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "en",
-  title: "Contact the Export Team",
+  title: "Door Hardware Factory in China: Contact the Export Team",
   description:
     "Talk to an export engineer about a specification, a sample or a quotation. Include door type, finish, applicable standard, quantity and destination market.",
 });
