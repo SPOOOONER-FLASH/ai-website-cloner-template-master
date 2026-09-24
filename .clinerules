@@ -506,6 +506,28 @@ on 2026-09-23. The wall has three parts, defined in `scripts/lib/site-lanes.mjs`
    ```
 
    `--root` only moves where the checkout is built; staging, pushing and cleanup are unchanged.
+
+   **Each lane works in its own clone on E:, not in a shared C: repo** (client, 2026-09-24:
+   「以后在E盘运作，和rayen分开工作，分开文件夹，分开提交，并线互不打扰」). Until that day every
+   checkout on this machine (the main one, all Codex worktrees, the Claude worktree) was a
+   worktree of `C:/Users/86132/Downloads/cantonlock/.git`: one 4.3 GB object store on a full
+   disk, one shared index lock, and deleting that folder would have broken all of them at once.
+   Now:
+
+   | Lane | Working folder | Notes |
+   |---|---|---|
+   | HYDE (Claude) | `E:/cantonlock-hyde` | independent clone, own `.git` |
+   | RAYEN | its own clone, e.g. `E:/cantonlock-rayen` | RAYEN side creates and owns it |
+   | Releases | `E:/release` | `--root E:/release`, created and deleted by the script |
+
+   Make a lane clone from a local copy, not from GitHub (the proxy runs at tens of KB/s):
+   `git clone --no-hardlinks E:/cantonlock-hyde E:/cantonlock-rayen`, then
+   `git remote set-url origin https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git`,
+   `git fetch origin main && git checkout -B main origin/main`, set `user.name`/`user.email`,
+   and **run `npm run wall:install` in the new clone**: `core.hooksPath` is per repository,
+   and on 2026-09-24 it turned out never to have been set on the C: repo, so the site-wall hook
+   had not been running at all. Separate clones share nothing but `origin`; the lanes meet only
+   at `git pull --rebase`, where disjoint files cannot conflict.
 2. **A commit may not cross the wall.** `.githooks/pre-commit` runs `scripts/site-wall.mjs`
    and rejects any commit that stages files from both lanes. Installed once with
    `npm run wall:install`; it applies to every worktree of this repo. Genuine exceptions:

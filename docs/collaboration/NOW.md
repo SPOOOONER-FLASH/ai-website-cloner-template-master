@@ -12,13 +12,14 @@
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
+| Claude HYDE（**E:/cantonlock-hyde** 独立克隆） | content/news, content/guides, src/data/es-glossary.ts, src/data/pt-glossary.ts, src/lib/seo-policy.ts, scripts/check-*.mjs | TODO 第 8–12 项：西葡拉美/巴西用词归一、对比指南、HYDE 口径数字核对、robots；第 13 项新语言最后做。不碰雷茵目录 | 2026-09-24 |
 | Codex HYDE fluidity | `out/`, `scripts/spec-coverage.mjs`, `docs/research/SPEC_COVERAGE.json`, `src/data/article-catalogue-claims.test.ts`, 4 篇数字指南（独立 `hyde-release` worktree） | 按 HYDE 站点过滤纠正规格统计和指南数字，再用 `release:hyde` 发布搜索快速重开修复；不碰雷茵发布目录 | 2026-09-23 |
-| Claude release build | out/, out-rayen/（在 tmp/claude-release-wt 干净检出里构建） | 持棒：发布 79ff38e337d（9088 SS）。**不含** Codex 未提交的 motion 改动 | 2026-09-23 |
 | Codex motion 2026-09-23 | HeroCarousel, SiteHeader, LocalePicker, SearchDialog, ProductImageZoom, GuideEditorial CSS, motion guard, SPEC_COVERAGE, four numeric guides, out/ out-rayen/ | 已批准的轮播与浮层优化；同期目录增长使覆盖报告和四篇文章数字过期，一并修复；当前持有发布构建 | 2026-09-23 |
 | Codex guides DCB | GuideListing, GuideLibrary, GuideEditorial CSS, GuideCover, GuideArticleIntro, NewsDetail guide branch, guide-library helper/tests, out/ out-rayen/ | Approved D visual + C search/filter + B technical reading; tree/export clean at start | 2026-09-22 |
 | Codex news studio | NewsVisual, news image selections, EditorialAtlas, background asset, out/ out-rayen/ | Catalogue-inspired real-photo framing; remove marked rejected and heavy hardware images | 2026-09-15 |
-| Claude news expansion | content/news/*.json — **只动 body / bodyEs / bodyPt / faq**，不碰 heroImage | 35 篇旧文全部扩写到 ≥1,600 词三语；按 AI 引用排序分批提交 | 2026-09-22 |
 
+> Claude 2026-09-24：第 7 项完成，35 篇旧文三语全部 ≥1,600 词（7cebea24295），news expansion 那行已删。工作目录改到 E:/cantonlock-hyde（独立克隆，见 AGENTS.md 分界墙一节）。
+> 
 > Claude 2026-09-23：发布完成，接力棒交还，无人持棒。从 12c09abe6f3 重出，带上 3ec845be539 之后的 8 个源码提交（扩写批6–11 英文、西葡段落回退修复、指南英文先发）。
 >
 > Claude 2026-09-22：发布完成，接力棒交还，无人持棒。3ec845be539 已推送；线上 /contact/ /certifications/ /news/ 引用的 JS/CSS 块与本次构建逐个一致（上一版只重合 14/16），表单密钥已内联上线。⚠ 线上 HTML 不能逐字节比对：Cloudflare 会剥掉 <!--email_off--> 等标记，要比块哈希。
