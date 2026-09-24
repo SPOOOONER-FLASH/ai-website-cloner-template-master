@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 514 次提交
+最近 30 天 · 共 515 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:38 | 中立 | 甲方决定 D1：西语锁具术语按 RAE，picaporte 退役 | `9e2bdf2a6a0` |
 | 09:28 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cf0046fccac` |
 | 09:25 | 中立 | 手册：装一次新的跳转规则（ANSI 网址改名的 301） | `c27958c5d13` |
 | 09:18 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 8aeb18bd0b5 | `2248e84e8f1` |
