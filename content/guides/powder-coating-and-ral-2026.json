@@ -62,9 +62,9 @@
     "A physical reference sample, signed by both parties, which is the line that actually settles disputes. Every batch is then compared to the sample rather than to a memory of the last batch.",
     "Add the corrosion class and the film thickness range when the application justifies them, and name which surfaces are masked.",
     "## What we publish, and what we do not",
-    "Across the 590 HYDE catalog records, 326 carry a finish row. The finish names are not fully normalized: the same finish appears as \"Satin Nickel (SN)\", \"Satin nickel\" and \"SN\" in different records. This is a data problem before it is a specification problem.",
+    "Across the 588 HYDE catalog records, 326 carry a finish row. The finish names are not fully normalized: the same finish appears as \"Satin Nickel (SN)\", \"Satin nickel\" and \"SN\" in different records. This is a data problem before it is a specification problem.",
     "Some rows name powder coating, others say only \"paint\" or \"painting\", and others name a black finish without stating whether it is powder coat, wet paint, black nickel plating or PVD. Those processes have different repair routes, so the process needs to be confirmed for an order.",
-    "There is not a single RAL number in the 590 HYDE records. If a specific color matters, ask us to confirm the code and process against production records.",
+    "There is not a single RAL number in the 588 HYDE records. If a specific color matters, ask us to confirm the code and process against production records.",
     "That is the gap, stated as counts rather than adjectives, and it is being closed the same way the stainless and zamak grades are: from production records, not from what the rows ought to say. Until then, if a finish matters on your order, ask for it in the four lines above and ask us to confirm each one against the part rather than against the catalog."
   ],
   "faq": {
@@ -191,9 +191,9 @@
     "Una muestra física de referencia, firmada por ambas partes, que es la línea que de verdad zanja las discusiones. Cada lote se compara entonces con la muestra y no con el recuerdo del lote anterior.",
     "Añada la clase de corrosión y el rango de espesor cuando la aplicación lo justifique, e indique qué superficies van enmascaradas.",
     "## Qué publicamos y qué no",
-    "De los 590 registros del catálogo HYDE, 326 llevan una fila de acabado. Los nombres no están totalmente normalizados: el mismo acabado aparece como «Satin Nickel (SN)», «Satin nickel» y «SN» en registros diferentes. Es un problema de datos antes que de especificación.",
+    "De los 588 registros del catálogo HYDE, 326 llevan una fila de acabado. Los nombres no están totalmente normalizados: el mismo acabado aparece como «Satin Nickel (SN)», «Satin nickel» y «SN» en registros diferentes. Es un problema de datos antes que de especificación.",
     "Algunas filas nombran el recubrimiento en polvo, otras dicen solo «paint» o «painting», y otras indican un acabado negro sin aclarar si es polvo, pintura líquida, niquelado negro o PVD. Esos procesos se reparan de formas distintas, por lo que hay que confirmar el proceso antes del pedido.",
-    "No hay un solo número RAL en los 590 registros HYDE. Si importa un color concreto, pídanos que confirmemos el código y el proceso con los registros de producción.",
+    "No hay un solo número RAL en los 588 registros HYDE. Si importa un color concreto, pídanos que confirmemos el código y el proceso con los registros de producción.",
     "Ese es el hueco, expresado en recuentos y no en adjetivos, y se está cerrando igual que los grados de inoxidable y de zamak: desde registros de producción y no desde lo que las filas deberían decir. Mientras tanto, si un acabado importa en su pedido, pídalo con las cuatro líneas de arriba y pídanos que confirmemos cada una contra la pieza y no contra el catálogo."
   ],
   "titlePt": "Revestimento a pó e RAL 2026: por que um número de cor não especifica um acabamento, o que o pré-tratamento decide, e o que escrever no pedido",
@@ -240,9 +240,9 @@
     "Uma amostra física de referência, assinada por ambas as partes, que é a linha que de fato resolve as discussões. Cada lote é então comparado com a amostra e não com a memória do lote anterior.",
     "Acrescente a classe de corrosão e o intervalo de espessura quando a aplicação o justificar, e indique que superfícies vão mascaradas.",
     "## O que publicamos e o que não",
-    "Dos 590 registros do catálogo HYDE, 326 levam uma linha de acabamento. Os nomes não estão totalmente normalizados: o mesmo acabamento aparece como \"Satin Nickel (SN)\", \"Satin nickel\" e \"SN\" em registros diferentes. É um problema de dados antes de ser de especificação.",
+    "Dos 588 registros do catálogo HYDE, 326 levam uma linha de acabamento. Os nomes não estão totalmente normalizados: o mesmo acabamento aparece como \"Satin Nickel (SN)\", \"Satin nickel\" e \"SN\" em registros diferentes. É um problema de dados antes de ser de especificação.",
     "Algumas linhas nomeiam o revestimento a pó, outras dizem apenas \"paint\" ou \"painting\", e outras indicam um acabamento preto sem esclarecer se é pó, tinta líquida, niquelagem preta ou PVD. Esses processos exigem reparações diferentes, por isso o processo deve ser confirmado antes da encomenda.",
-    "Não há um único número RAL nos 590 registros HYDE. Se uma cor específica importa, peça-nos para confirmar o código e o processo nos registros de produção.",
+    "Não há um único número RAL nos 588 registros HYDE. Se uma cor específica importa, peça-nos para confirmar o código e o processo nos registros de produção.",
     "Essa é a lacuna, expressa em contagens e não em adjetivos, e está sendo fechada da mesma forma que os graus de inoxidável e de zamak: a partir de registros de produção e não do que as linhas deveriam dizer. Entretanto, se um acabamento importa no seu pedido, peça-o com as quatro linhas acima e peça-nos que confirmemos cada uma contra a peça e não contra o catálogo."
   ]
 }

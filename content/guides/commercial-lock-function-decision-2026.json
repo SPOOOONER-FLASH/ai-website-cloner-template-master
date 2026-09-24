@@ -48,7 +48,7 @@
     "A teacher needs to secure a door against the corridor. With a storeroom or entrance function, they have to step into the corridor to use the key, which is the one place the threat might be. Classroom function lets the outside trim be locked and unlocked from inside the room, so the door is secured without anyone leaving it. The inside handle always retracts the latch, so the room can still be evacuated.",
     "It is a function worth knowing by name, because a specification that describes the behavior in words usually receives an entrance function and a note.",
     "## What our catalog actually carries",
-    "Function counts across the 590 records in our catalog, from the specification rows themselves.",
+    "Function counts across the 588 records in our catalog, from the specification rows themselves.",
     "| Function | Models |\n| --- | --- |\n| Entrance, keyed outside | 78 |\n| Privacy, bathroom, turn button inside | 27 |\n| Passage | 18 |\n| Single, double cylinder or self-locking | 21 |\n| Entrance, privacy, passage or dummy (selectable) | 8 |\n| Classroom | 1 |\n| Storeroom | 1 |\n| Communication | 1 |\n| Entrance and communication | 1 |\n| Exit latch | 1 |",
     "Read that honestly and it says something specific: we are strong on entrance, privacy and passage, and we are not a broad institutional function range. If a project needs classroom and storeroom functions across forty openings, we have one model of each and you should ask before designing around us.",
     "Publishing that table is more useful than implying a full function set and discovering the gap at the schedule stage. The order-code suffix carries the function on the models that have one (`ET` entrance, `BK` privacy, `PS` passage) so `201 PBET` is model 201, polished brass, entrance.",
@@ -92,7 +92,7 @@
       },
       {
         "question": "Which functions does your catalog actually carry?",
-        "answer": "Across the 590 records in our catalog: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
+        "answer": "Across the 588 records in our catalog: entrance 78, privacy 27, passage 18, single/double cylinder or self-locking 21, selectable function 8, and classroom, storeroom, communication, entrance-and-communication and exit latch one model each. We are strong on entrance, privacy and passage and are not a broad institutional function range; ask before designing forty openings around us."
       }
     ],
     "es": [
@@ -118,7 +118,7 @@
       },
       {
         "question": "¿Qué funciones lleva realmente su catálogo?",
-        "answer": "Sobre los 590 registros del catálogo: entrada 78, privacidad 27, paso 18, cilindro simple/doble o autobloqueo 21, función seleccionable 8, y aula, almacén, comunicación, entrada y comunicación, y salida un modelo cada una. Somos fuertes en entrada, privacidad y paso y no somos una gama institucional amplia; pregunte antes de diseñar cuarenta huecos con nosotros."
+        "answer": "Sobre los 588 registros del catálogo: entrada 78, privacidad 27, paso 18, cilindro simple/doble o autobloqueo 21, función seleccionable 8, y aula, almacén, comunicación, entrada y comunicación, y salida un modelo cada una. Somos fuertes en entrada, privacidad y paso y no somos una gama institucional amplia; pregunte antes de diseñar cuarenta huecos con nosotros."
       }
     ],
     "pt": [
@@ -144,7 +144,7 @@
       },
       {
         "question": "Que funções o seu catálogo realmente leva?",
-        "answer": "Sobre os 590 registros do catálogo: entrada 78, privacidade 27, passagem 18, cilindro simples/duplo ou autotrancamento 21, função selecionável 8, e sala de aula, depósito, comunicação, entrada e comunicação, e saída um modelo cada. Somos fortes em entrada, privacidade e passagem e não somos uma linha institucional ampla; pergunte antes de projetar quarenta vãos conosco."
+        "answer": "Sobre os 588 registros do catálogo: entrada 78, privacidade 27, passagem 18, cilindro simples/duplo ou autotrancamento 21, função selecionável 8, e sala de aula, depósito, comunicação, entrada e comunicação, e saída um modelo cada. Somos fortes em entrada, privacidade e passagem e não somos uma linha institucional ampla; pergunte antes de projetar quarenta vãos conosco."
       }
     ]
   },
@@ -178,7 +178,7 @@
     "Un profesor necesita asegurar una puerta contra el pasillo. Con una función de almacén o de entrada tendría que salir al pasillo a usar la llave, que es justo el sitio donde podría estar la amenaza. La función de aula permite bloquear y desbloquear la guarnición exterior desde dentro de la sala, de modo que la puerta se asegura sin que nadie la abandone. La manija interior siempre abre el pestillo, así que la sala se puede evacuar igualmente.",
     "Es una función que conviene conocer por su nombre, porque una especificación que describe el comportamiento con palabras normalmente recibe una función de entrada y una nota.",
     "## Qué lleva realmente nuestro catálogo",
-    "Recuento de funciones sobre los 590 registros de nuestro catálogo, sacado de las propias filas de especificación.",
+    "Recuento de funciones sobre los 588 registros de nuestro catálogo, sacado de las propias filas de especificación.",
     "| Función | Modelos |\n| --- | --- |\n| Entrada, llave por fuera | 78 |\n| Privacidad, baño, botón de giro por dentro | 27 |\n| Paso | 18 |\n| Cilindro simple, doble o autobloqueo | 21 |\n| Entrada, privacidad, paso o falsa (seleccionable) | 8 |\n| Aula | 1 |\n| Almacén | 1 |\n| Comunicación | 1 |\n| Entrada y comunicación | 1 |\n| Salida (exit latch) | 1 |",
     "Léalo con honestidad y dice algo concreto: somos fuertes en entrada, privacidad y paso, y no somos una gama institucional amplia. Si un proyecto necesita funciones de aula y almacén en cuarenta huecos, tenemos un modelo de cada una y conviene que pregunte antes de diseñar contando con nosotros.",
     "Publicar esa tabla es más útil que insinuar un juego completo de funciones y descubrir el hueco en la fase de planilla. El sufijo del código de pedido lleva la función en los modelos que la tienen (`ET` entrada, `BK` privacidad, `PS` paso) así que `201 PBET` es modelo 201, latón pulido, entrada.",
@@ -227,7 +227,7 @@
     "Um professor precisa de trancar uma porta contra o corredor. Com uma função de armazém ou de entrada teria que sair ao corredor para usar a chave, que é justamente o lugar onde a ameaça poderia estar. A função de sala de aula permite trancar e destrancar a guarnição externa de dentro da sala, de modo que a porta é trancada sem que ninguém a abandone. A maçaneta interna sempre recolhe o trinco, então a sala pode ser evacuada na mesma.",
     "É uma função que convém conhecer pelo nome, porque uma especificação que descreve o comportamento por palavras normalmente recebe uma função de entrada e uma nota.",
     "## O que o nosso catálogo realmente leva",
-    "Contagem de funções sobre os 590 registros do nosso catálogo, tirada das próprias linhas de especificação.",
+    "Contagem de funções sobre os 588 registros do nosso catálogo, tirada das próprias linhas de especificação.",
     "| Função | Modelos |\n| --- | --- |\n| Entrada, chave pelo lado de fora | 78 |\n| Privacidade, banheiro, botão de trava por dentro | 27 |\n| Passagem | 18 |\n| Cilindro simples, duplo ou autotrancamento | 21 |\n| Entrada, privacidade, passagem ou falsa (selecionável) | 8 |\n| Sala de aula | 1 |\n| Depósito | 1 |\n| Comunicação | 1 |\n| Entrada e comunicação | 1 |\n| Saída (exit latch) | 1 |",
     "Leia isso com honestidade e diz algo concreto: somos fortes em entrada, privacidade e passagem, e não somos uma linha institucional ampla. Se um projeto precisa de funções de sala de aula e armazém em quarenta vãos, temos um modelo de cada e convém perguntar antes de projetar contando conosco.",
     "Publicar essa tabela é mais útil do que insinuar um jogo completo de funções e descobrir a lacuna na fase de planilha. O sufixo do código de pedido leva a função nos modelos que a têm (`ET` entrada, `BK` privacidade, `PS` passagem) então `201 PBET` é modelo 201, latão polido, entrada.",
