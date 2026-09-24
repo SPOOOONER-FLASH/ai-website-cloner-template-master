@@ -9,7 +9,7 @@
  *
  * 做三件事：
  *   1. 重新生成 docs/collaboration/SHIPLOG.md（上线存档），有变化就单独提交一次「shiplog:」
- *   2. 推送，最多三次，每次限时 5 分钟；被拒（别人刚推过）就 rebase 再推
+ *   2. 推送，最多三次，每次限时 5 分钟；被拒（别人刚推过）就合并再推（共用工作区不能 rebase）
  *   3. 三次都失败：把未推送的提交记进 docs/collaboration/PUSH-PENDING.md（本地文件，
  *      下一次成功推送时一起带上去），打印报告，退出码 75 —— 意思是「稍后再推，先去做别的」。
  *      **不要原地重试等待。** 下一个提交做完再跑 npm run ship，积压的会一起推上去。
@@ -56,14 +56,21 @@ for (let attempt = 1; attempt <= 3; attempt++) {
   }
   last = p.timedOut ? "超时（5 分钟无响应）" : p.out.split("\n").slice(-2).join(" / ");
   if (/rejected|fetch first|non-fast-forward/i.test(p.out)) {
-    console.log("  远端有新提交，rebase 后重试");
+    /*
+      merge, not rebase. This is a SHARED working tree: other agents' uncommitted edits are
+      always present, and rebase refuses to start over them (first real run, 2026-09-24:
+      "cannot rebase: You have unstaged changes"). Stashing their work to make room is
+      forbidden. A merge works over a dirty tree, and when an incoming change touches a file
+      somebody has open it stops BEFORE changing anything — nothing is lost either way.
+    */
+    console.log("  远端有新提交，合并后重试");
     const f = git(["fetch", "origin", "main"]);
     if (!f.ok) continue;
-    const rb = git(["rebase", "origin/main"]);
-    if (!rb.ok) {
-      git(["rebase", "--abort"]);
-      console.error(`✗ rebase 冲突，需要人看：${rb.out.split("\n").slice(-3).join(" / ")}`);
-      process.exit(1);
+    const m = git(["merge", "--no-edit", "origin/main"]);
+    if (!m.ok) {
+      git(["merge", "--abort"]);
+      last = `合并停下（远端改了有人正在编辑的文件）：${m.out.split("\n").slice(-2).join(" / ")}`;
+      break;
     }
   }
 }
