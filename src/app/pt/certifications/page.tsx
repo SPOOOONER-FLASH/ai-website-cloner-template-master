@@ -47,7 +47,7 @@ export default function CertificacoesPagePt() {
               Evidência de qualidade
             </p>
             <h1 className="mt-16 text-h1 text-ink">
-              A evidência pertence a um modelo, não a uma afirmação comercial.
+              Certificados e relatórios de ensaio. O que foi ensaiado, e em nome de quem.
             </h1>
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
@@ -55,9 +55,7 @@ export default function CertificacoesPagePt() {
               Os registros abaixo são publicados com o escopo de modelo exato que está impresso em cada documento, e o relatório de um modelo nunca é apresentado como aprovação de outro. Boa parte do que fabricamos para clientes de marca própria é certificada em nome desses clientes, a pedido e às custas deles, então cabe a eles compartilhar esses certificados. Estamos preparando os ensaios CE e ANSI em nome da Canton Hyland para as nossas linhas principais; cada relatório novo vai aparecer aqui, com o seu escopo, à medida que for emitido.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
-              As cópias completas dos relatórios são fornecidas pela equipe de exportação
-              somente depois de confirmadas a permissão de redistribuição do documento e a
-              correspondência com o modelo solicitado.
+              Os emissores restringem a cópia dos seus relatórios, por isso enviamos uma cópia completa sob pedido, para um modelo específico, em vez de publicar trechos.
             </p>
           </div>
         </section>
@@ -85,8 +83,7 @@ export default function CertificacoesPagePt() {
               <div className="col-span-full sm:col-span-3 md:col-span-5 xl:col-span-10">
                 <h2 className="text-h2 text-ink">{certificate.title}</h2>
                 <p className="mt-16 max-w-[60ch] text-c1 text-ink-secondary">
-                  Os dados de registro são públicos; o documento completo é obtido por
-                  meio de uma solicitação controlada de documentação técnica.
+                  Os dados são públicos. O relatório completo é enviado sob pedido, na íntegra, como exige o emissor.
                 </p>
               </div>
               <dl className="col-span-full grid grid-cols-1 gap-16 md:col-span-5 md:col-start-8 xl:col-span-9 xl:col-start-16">
@@ -103,13 +100,11 @@ export default function CertificacoesPagePt() {
 
         <section className="col-content grid grid-cols gap-x gap-y-32 border-t border-line pt-32">
           <h2 className="col-span-full text-h2 text-ink lg:col-span-5 xl:col-span-9">
-            Verifique o relatório antes de especificar a ferragem.
+            Confira o relatório antes de especificar a peça.
           </h2>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-9 xl:col-start-16">
             <p className="text-c1 text-ink-secondary">
-              Diga qual norma é exigida, o número do modelo e o mercado de destino. A
-              equipe de exportação confirma se o documento nomeia esse modelo exato antes
-              de enviar uma cópia.
+              Envie a norma de que precisa, o número do modelo e o mercado de destino. Diremos se algum relatório cita esse modelo exato antes de enviá-lo e, se nenhum citar, também diremos.
             </p>
             <div className="mt-24">
               <ArrowLink href="/pt/contact/">Pedir documentação técnica</ArrowLink>

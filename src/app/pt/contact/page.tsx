@@ -20,13 +20,12 @@ export default function ContactoPagePt() {
       <div className="layout">
         <section className="col-content grid w-full grid-cols gap-x gap-y-48">
           <div className="col-span-full lg:col-span-4 xl:col-span-7">
-            <h1 className="text-h1 text-ink">Contato</h1>
+            <h1 className="text-h1 text-ink">Contato com a fábrica. Fale com quem fabrica.</h1>
             <p className="mt-24 text-c1 text-ink">
-              Fale com a nossa equipe de exportação sobre seleção de produto, amostras,
-              trabalho OEM ou uma cotação de obra.
+              Escreva para a equipe de exportação sobre um modelo, uma amostra, uma peça OEM ou a cotação de uma obra. Quem lê é um engenheiro, em inglês ou em espanhol.
             </p>
             <p className="mt-24 text-c1 text-ink-secondary">
-              Indique o tipo de porta, o acabamento, a norma aplicável, a quantidade e o mercado de destino.
+              Informe o tipo de porta, o acabamento, a norma, a quantidade e o mercado de destino, e a nossa primeira resposta já pode ser útil.
             </p>
 
             {/*
