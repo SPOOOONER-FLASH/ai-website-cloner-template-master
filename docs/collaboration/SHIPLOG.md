@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 509 次提交
+最近 30 天 · 共 510 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:12 | 中立 | 任务文件：西语短摘要以 summaryPt 第二轮为数字依据；14 条误归类记录材质存疑 | `0dc4254503b` |
 | 09:11 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `fea28a9077c` |
 | 09:11 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `9c8b7d40c50` |
 | 09:07 | HYDE | 栏目文案第一轮：去掉说明书口吻，写成有立场的声音；修首页与产品页三处不实说法 | `d01e7c9cb28` |
