@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 09:49 | 中立 | 1073D MB 西语对齐为电控锁；葡语指南改为以术语表为准，trinco/lingueta 列入问巴西买家 | `7f330956116` |
-| 09:44 | 中立 | D1：HYDE 产品西语摘要 37 处 picaporte → pestillo / cerrojo（按 RAE） | `184885fab49` |
+| 09:56 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `5239737cc2a` |
+| 09:55 | HYDE | SEO 字段去 picaporte（D1）；新尺寸带来的文章计数与锁体对照表更新 | `be1a4a80146` |
 | 09:39 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `f6d5dce8d26` |
 | 09:38 | 中立 | 甲方决定 D1：西语锁具术语按 RAE，picaporte 退役 | `9e2bdf2a6a0` |
 | 09:28 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `cf0046fccac` |
