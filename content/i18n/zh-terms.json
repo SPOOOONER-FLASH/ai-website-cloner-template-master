@@ -404,7 +404,8 @@
     "Hydraulic Hinge": "液压合页",
     "Lever Handle on Backplate": "面板执手锁",
     "Tubular Lever Lock": "三杆执手锁",
-    "3D Adjustable Hinge": "三维可调节合页"
+    "3D Adjustable Hinge": "三维可调节合页",
+    "Magnetic Pin": "磁力插销"
   },
   "series": {
     "Hyland 300": "300 系列",
@@ -586,9 +587,16 @@
     "60kg (3 hinges)": "60kg（3 只）",
     "80kg (3 hinges)": "80kg（3 只）",
     "110mm (+0.3 / −0.4)": "110mm（+0.3 / −0.4）",
-    "129.8mm (+0.3 / −0.4)": "129.8mm（+0.3 / −0.4）",
+    "129.8mm (+0.3 / −0.4)": "129.8mm（+0.3 / −0.4）",
     "Timber entrance doors and room doors": "各种木质大门、房门",
-    "Cushioned at small opening angles": "小角度缓冲"
+    "Cushioned at small opening angles": "小角度缓冲",
+    "Height 74mm; base Ø44mm": "高 74mm；底座 Ø44mm",
+    "Height 75mm; base Ø50mm": "高 75mm；底座 Ø50mm",
+    "Height 79mm; head Ø35mm": "高 79mm；吸头 Ø35mm",
+    "Height 83mm; head Ø35mm; base Ø50mm": "高 83mm；吸头 Ø35mm；底座 Ø50mm",
+    "Height 84mm; head Ø35mm; base Ø48mm": "高 84mm；吸头 Ø35mm；底座 Ø48mm",
+    "Height 65mm; base 42mm": "高 65mm；底座 42mm",
+    "Height 42mm; base Ø30mm": "高 42mm；底座 Ø30mm"
   },
   "tokens": [
     [
@@ -1490,6 +1498,10 @@
     [
       "Gunmetal",
       "枪灰"
+    ],
+    [
+      "Brushed Gold",
+      "金拉丝"
     ]
   ]
 }
