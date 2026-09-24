@@ -38,6 +38,13 @@
 3. **不动** `seoTitle*` / `seoDescription*`（归工程会话）、型号、数字、标准编号。
 4. 验收：`npm test`（包括地区用语、美式拼写、文章数量和型号的测试）、`node scripts/audit-copy-register.mjs`、`npm run copy:parity`，然后提交，用 `npm run ship` 推送。
 
+## 二之二、产品摘要（西语）：下一项，以及一条已确认的风险
+
+- **约 160 条 HYDE 产品的 `summaryEs` 只有两三个词**，例如 *Cerradura de embutir.*（插芯锁。）。事实依据用 `content/products` 里的 `summaryPt`（E 盘会话 09-24 已补齐 198 条）和英文规格行。
+- **已确认：重新生成会覆盖人工改过的文案。** 西语规格表会话 09-24 用 `translate-products-es.mjs --only` 只跑 22 条，生成器照样改写了 039 的 `summaryEs` 和 22 条葡语 SEO 字段。全量重跑会把 **240 条 `summaryEs`** 打回半句话（我修的那 18 条就是这种）。在生成器改成“不覆盖已有值”之前，任何重新生成都要先备份 `summary*` 和 SEO 字段。
+- **补完后加一条测试**：`summaryEs` 只等于品类名或远短于英文 `summary` 时失败。在全部补完之前，先按“数量不许增加”执行。
+- **待命名轮处理**：卫浴配件里有 21 个产品的名称都叫 *Bathroom Accessories*，互相区分不开。名称会影响标题生成器，需要和工程会话一起定，不在本轮改。
+
 ## 三、待甲方决定或提供
 
 | # | 事项 |
