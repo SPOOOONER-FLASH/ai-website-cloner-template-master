@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 503 次提交
+最近 30 天 · 共 504 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 09:00 | HYDE | 数据修正：14 条误归指示器的记录回到正确子类；产品网址去掉 ANSI Grade 3（301） | `507da67e2dc` |
 | 08:52 | HYDE+雷茵 | Merge remote-tracking branch 'origin/main' into HEAD | `c610c32e36c` |
 | 08:51 | 中立 | GTM/GA4/Clarity：阅读深度、阅读方式（快速滑过/认真读）、产品与联系点击事件；手册加 GA4 自定义维度步骤 | `4448b30f8ca` |
 | 08:43 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `39a3f529592` |
