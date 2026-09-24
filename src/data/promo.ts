@@ -16,7 +16,9 @@ export const promoDialog = config as unknown as PromoDialogConfig;
  * has to be tested first or every product page would report as a listing.
  */
 export function promoSurfaceFor(pathname: string): PromoSurface | null {
-  const path = pathname.replace(/^\/es(?=\/|$)/, "") || "/";
+  // /pt/ added 2026-09-24: until then every Portuguese page returned null and the rail
+  // never appeared for Brazilian visitors at all.
+  const path = pathname.replace(/^\/(?:es|pt)(?=\/|$)/, "") || "/";
 
   if (path === "/") return "home";
   // Checked before the /products rules: /product-finder is its own section, and without

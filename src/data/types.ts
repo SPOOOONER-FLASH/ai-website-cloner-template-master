@@ -378,14 +378,18 @@ export interface PromoCard {
   /** Second line, set in the lighter weight. */
   titleLight?: string;
   titleLightEs?: string;
+  titleLightPt?: string;
   body: string;
   bodyEs?: string;
+  bodyPt?: string;
   /** Call to action. `href` may be internal or a file under /downloads. */
   ctaLabel: string;
   ctaLabelEs?: string;
+  ctaLabelPt?: string;
   ctaHref: string;
   /** Optional locale-specific destination for campaigns whose target has a Spanish route. */
   ctaHrefEs?: string;
+  ctaHrefPt?: string;
   /**
    * What fills the left panel.
    *

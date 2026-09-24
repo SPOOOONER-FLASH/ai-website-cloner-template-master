@@ -97,3 +97,15 @@ test("a promo card is never offered on the page it links to", () => {
   // No pathname given: unchanged behaviour for callers that do not pass one.
   assert.equal(selectActivePromoCard(cards, [])?.ctaHref, "/contact/");
 });
+
+// 2026-09-24: /pt/ pages were not a promo surface at all, and the copy fell back to English.
+test("Portuguese copy and routes, and the card is hidden on its own Portuguese page", () => {
+  assert.equal(selectActivePromoCard([{ ctaHref: "/configurator/" }] as PromoCard[], [], "/pt/configurator/"), undefined);
+  const copy = localisePromoCardCopy(
+    { title: "Talk to us", titlePt: "Fale conosco", body: "b", bodyPt: "bp", ctaLabel: "Go", ctaHref: "/contact/", ctaHrefPt: "/pt/contact/" },
+    "pt",
+  );
+  assert.equal(copy.title, "Fale conosco");
+  assert.equal(copy.ctaHref, "/pt/contact/");
+  assert.equal(copy.closeLabel, "Fechar: Fale conosco");
+});

@@ -2,10 +2,10 @@ import type { PromoCard } from "@/data/types";
 import type { Locale } from "@/data/site";
 
 /** Select one compact promotion so campaign cards never stack over page imagery. */
-/** `/es/contact/` and `/contact` both normalise to `/contact/`. */
+/** `/es/contact/`, `/pt/contact/` and `/contact` all normalise to `/contact/`. */
 function samePage(href: string, pathname: string): boolean {
   const strip = (value: string) =>
-    (value.replace(/^\/es(?=\/|$)/, "") || "/").replace(/\/*$/, "/");
+    (value.replace(/^\/(?:es|pt)(?=\/|$)/, "") || "/").replace(/\/*$/, "/");
   return strip(href) === strip(pathname);
 }
 
@@ -39,15 +39,22 @@ export function selectActivePromoCard(
 }
 
 export function localisePromoCardCopy(card: PromoCard, locale: Locale) {
-  const spanish = locale === "es";
-  const title = spanish ? card.titleEs ?? card.title : card.title;
+  /*
+    Portuguese added 2026-09-24. Until then this read only `es`, so every /pt/ page showed
+    the English card and the contact card sent Brazilian buyers to the English /contact/.
+    Each field falls back to English, never to the other translation (src/lib/localised.ts).
+  */
+  const pick = (en?: string, es?: string, pt?: string) =>
+    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
+  const title = pick(card.title, card.titleEs, card.titlePt) ?? card.title;
+  const close = locale === "es" ? "Cerrar" : locale === "pt" ? "Fechar" : "Close";
   return {
     title,
-    titleLight: spanish ? card.titleLightEs ?? card.titleLight : card.titleLight,
-    body: spanish ? card.bodyEs ?? card.body : card.body,
-    ctaLabel: spanish ? card.ctaLabelEs ?? card.ctaLabel : card.ctaLabel,
-    ctaHref: spanish ? card.ctaHrefEs ?? card.ctaHref : card.ctaHref,
-    closeLabel: `${spanish ? "Cerrar" : "Close"}: ${title}`,
+    titleLight: pick(card.titleLight, card.titleLightEs, card.titleLightPt),
+    body: pick(card.body, card.bodyEs, card.bodyPt) ?? card.body,
+    ctaLabel: pick(card.ctaLabel, card.ctaLabelEs, card.ctaLabelPt) ?? card.ctaLabel,
+    ctaHref: pick(card.ctaHref, card.ctaHrefEs, card.ctaHrefPt) ?? card.ctaHref,
+    closeLabel: `${close}: ${title}`,
   };
 }
 
