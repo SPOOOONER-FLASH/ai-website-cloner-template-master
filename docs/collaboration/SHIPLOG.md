@@ -12,9 +12,9 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 15:43 | HYDE | 资质页、联系页第二轮：H1 搜索词在前，正文去公文腔，三语 | `86259e83790` |
-| 15:39 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b53cdb71869` |
-| 15:34 | HYDE | 下载页第二轮：H1 搜索词在前、导语与测试记录段三语重写 | `93a8a258808` |
+| 15:48 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `eebe033c8ce` |
+| 15:48 | HYDE | 公司页三语标题与描述：带小榄与 1998、OEM 与自有品牌，去破折号，葡语改巴西拼法 | `dc8dfc97497` |
+| 15:35 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 97e807d3ca3 | `baa9b0c904a` |
 | 15:32 | 中立 | 服务页：起订量与样品条款（取自 FAQ 已有数字），三语 | `a2d484da4c1` |
 | 15:31 | 中立 | FAQ 第二轮：删地弹簧和“三十个市场”，补专利改型与自有名下测试现状，三语 | `f3e1922c31a` |
 | 15:29 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b0c4612454a` |

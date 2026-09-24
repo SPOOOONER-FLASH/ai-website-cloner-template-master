@@ -5,9 +5,9 @@ import { CompanyOverview } from "@/components/site/CompanyOverview";
 export const metadata: Metadata = pageMetadata({
   enPath: "/company",
   locale: "pt",
-  title: "Empresa — Fabricante de ferragens",
+  title: "Fabricante de ferragens em Xiaolan, China, desde 1998",
   description:
-    "Fabricação de fechaduras e ferragens arquitetónicas em Guangdong desde 1998. ISO 9001 desde 2002, com produção OEM para mercados de exportação.",
+    "Fechaduras e ferragens arquitetônicas feitas em Xiaolan desde 1998. ISO 9001 desde 2002, com produção OEM e de marca própria para exportação.",
 });
 
 export default function EmpresaPagePt() {
