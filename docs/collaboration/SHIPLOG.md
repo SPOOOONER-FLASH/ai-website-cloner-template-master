@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 550 次提交
+最近 30 天 · 共 552 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 15:39 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b53cdb71869` |
+| 15:34 | HYDE | 下载页第二轮：H1 搜索词在前、导语与测试记录段三语重写 | `93a8a258808` |
 | 15:32 | 中立 | 服务页：起订量与样品条款（取自 FAQ 已有数字），三语 | `a2d484da4c1` |
 | 15:31 | 中立 | FAQ 第二轮：删地弹簧和“三十个市场”，补专利改型与自有名下测试现状，三语 | `f3e1922c31a` |
 | 15:29 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b0c4612454a` |
