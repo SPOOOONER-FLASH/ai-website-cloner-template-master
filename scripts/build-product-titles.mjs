@@ -47,6 +47,7 @@
  *   node scripts/build-product-titles.mjs --write    实际写入
  *   node scripts/build-product-titles.mjs --check    CI:检查是否过期
  *   node scripts/build-product-titles.mjs --sample 40  多看几条样例
+ *   node scripts/build-product-titles.mjs --write --only LC04,140  只重写这几个型号
  */
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
@@ -462,7 +463,15 @@ function composeTitle(product, locale) {
     const parts = useRaw.split(/\s*(?:,|&|\by\b|\be\b|\band\b)\s*/).filter(Boolean);
     const door = parts.find((p) => /door|puerta|porta/i.test(p));
     /* 段内含「门」时从门字起取（「seguridad en puertas de entrada」→「puertas de entrada」） */
-    const fromDoor = door ? door.slice(door.search(/doors?|puertas?|portas?/i)) : null;
+    /*
+      Slice from the door word only when something follows it (Spanish/Portuguese put the
+      noun first: "seguridad en puertas de entrada" → "puertas de entrada"). In English the
+      noun comes last, and slicing "Metal Doors" from "Doors" left "for Doors" on 7 titles
+      ("Stainless Steel Door Hinge for Doors", 2026-09-24).
+    */
+    const at = door ? door.search(/doors?|puertas?|portas?/i) : -1;
+    const sliced = door && /\S\s+\S/.test(door.slice(at)) ? door.slice(at) : door;
+    const fromDoor = sliced && !/^(doors?|puertas?|portas?)$/i.test(sliced.trim()) ? sliced : null;
     /* 没有「门」字且只有一段时，去掉第一个修饰词（「Frameless Glass Entrances」→「Glass Entrances」） */
     const pick = fromDoor ?? (parts.length === 1 ? parts[0].split(" ").slice(1).join(" ") : parts[0]);
     if (pick && pick !== useRaw) useShortRaw = pick;
@@ -703,6 +712,20 @@ function audit(product, locale, title, desc) {
   if (CERT.test(title) || CERT.test(desc)) issues.push(`出现认证/等级措辞  ${tag}`);
 }
 
+/*
+  --only <models or slugs, comma-separated>: rewrite just those records (same switch as
+  translate-products-es/-pt). The spec session asked for it on 2026-09-24: after adding rows
+  to a handful of products there was no way to regenerate their titles without a full run.
+  --check ignores it; the check is always over the whole catalog.
+*/
+const only = (() => {
+  const i = process.argv.indexOf("--only");
+  if (i === -1 || CHECK) return null;
+  const list = (process.argv[i + 1] ?? "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
+  if (!list.length) throw new Error("--only needs a comma-separated list of models or slugs, e.g. --only LC04,140");
+  return new Set(list);
+})();
+
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
 let changed = 0;
 let withDim = 0;
@@ -717,6 +740,7 @@ for (const file of files) {
   // their own metadata; Canton Hyland titles are only for HYDE catalogue routes.
   // Keep this predicate aligned with onHydeCatalogue in src/data/products.ts.
   if (product.sites && !product.sites.includes("hyde")) continue;
+  if (only && !only.has(String(product.model ?? "").toLowerCase()) && !only.has(String(product.slug ?? "").toLowerCase())) continue;
   let touched = false;
 
   for (const [locale, titleKey, descKey] of FIELDS) {
