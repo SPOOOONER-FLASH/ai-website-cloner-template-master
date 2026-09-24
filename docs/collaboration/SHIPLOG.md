@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 561 次提交
+最近 30 天 · 共 563 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 16:08 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `5995a4d2db4` |
+| 16:08 | HYDE | 第 2、3 批复核收尾：背距表过期数字修正并登记测试，万能钥匙西语术语统一，饰板 FAQ 对齐 | `47124a58818` |
 | 16:03 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `726f521c76c` |
 | 16:03 | HYDE | 葡语文章：葡萄牙用词改巴西用词（25 个文件 59 处），火门指南西语空格修正 | `d164696c2fc` |
 | 15:59 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `cc1ad418bb2` |
