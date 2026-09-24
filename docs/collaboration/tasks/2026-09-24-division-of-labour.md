@@ -7,9 +7,9 @@
 | 会话 | 负责 | 不碰 |
 |---|---|---|
 | **HYDE工程交接配置**（Claude，johns 机器） | SEO / GEO 审计（sitemap、robots、llms.txt、H1、结构化数据）；死链；JS 报错；GTM / GA4 / Clarity 事件；**四个数据看板的导入、报告和每周结论**；**全站长尾词**：所有 `seoTitle*` / `seoDescription*`、`scripts/build-product-titles.mjs`、品类页和文章的搜索标题；美式拼写（脚本 + 守卫，含产品记录和界面）；多语种工程准备；HYDE 发布 | 正文文案的润色和本地化；雷茵一切 |
-| **Hyde 文案** | **全部文案润色与本地化**，英西葡三语：新闻、指南正文；产品 `summary*`、`description*`、`features*`；`src/data/category-positioning.json`（品类卖点）；198 条葡语短摘要；同族卖点矛盾（SSH018 类）；按口吻文件改写 | `seoTitle*` / `seoDescription*` 字段和标题生成器（改了会被生成器覆盖）；拼写脚本管的词 |
+| **Hyde 文案** | **全部文案润色与本地化**，英西葡三语：新闻、指南正文；产品 `summary*`、`description*`、`features*`；`src/data/category-positioning.json`（品类卖点）；198 条葡语短摘要；同族卖点矛盾（SSH018 类）；按口吻文件改写；**三语页面文字**（`src/app/(en)`、`es`、`pt`，甲方 09-24：「D2 交给你……由你负责而不是codex」） | `seoTitle*` / `seoDescription*` 字段和标题生成器（改了会被生成器覆盖）；拼写脚本管的词 |
 | **西语规格表 / 产品规格补全** | 规格数据补全、`specsEs` / `specsPt`、术语表 `es-glossary.ts` / `pt-glossary.ts` 的新词条 | 规格**标签**改美式拼写那一次由工程会话统一做（术语表键要同时改），期间不动这两个术语表的键 |
-| **Hyde 视觉** | 图片：只用真实照片清理，不合成（见 AGENTS.md 与记忆「no composited product photos」） | 文案、SEO 字段 |
+| **Hyde 视觉 / Codex** | **只负责生图和视觉**（甲方 09-24：「codex以后只负责生图和视觉」）。图片：只用真实照片清理，不合成（见 AGENTS.md 与记忆「no composited product photos」） | 文案、SEO 字段 |
 | **雷茵各会话** | 雷茵站一切 | HYDE 车道 |
 
 ## 交给 Hyde 文案的文档（按阅读顺序）

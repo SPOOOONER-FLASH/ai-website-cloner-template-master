@@ -12,7 +12,7 @@
   "counts": {
     "refused": 462,
     "cleanable": 1224,
-    "already-clean": 3634
+    "already-clean": 3692
   },
   "refused": [
     "001-panic-exit-device-trim-2.webp",
@@ -10683,6 +10683,230 @@
       "source": "f15cbe9881156474b29c1ebf5c32fd330d165c485723389543a5453494d1e405",
       "status": "cleanable"
     },
+    "d3701-bl-door-stopper-2.webp": {
+      "source": "95af7f373c86c9b42278616eecd972b609682a3aa67fa1aeeaca8ccac1792009",
+      "status": "already-clean"
+    },
+    "d3701-bl-door-stopper-3.webp": {
+      "source": "dfd86acb9f4ea59fc96106503bd10e13141f00ef463fd50fb706afb8225393e6",
+      "status": "already-clean"
+    },
+    "d3701-bl-door-stopper-4.webp": {
+      "source": "3db67d01ffc56c250d9634a8d82912c296fa4265d46ac4d511ca9ff89570cbba",
+      "status": "already-clean"
+    },
+    "d3701-bl-door-stopper.webp": {
+      "source": "c2f35613dc5a3c52fb3d088b7c1630635b9dbd29ef0616ea22ca49906a85c784",
+      "status": "already-clean"
+    },
+    "d3701-ss-door-stopper-2.webp": {
+      "source": "bd32a8ac818f406abc03e9b79bb11f74e390dcd04f317491dc1198efd3fd2b9b",
+      "status": "already-clean"
+    },
+    "d3701-ss-door-stopper.webp": {
+      "source": "abf3d342871629a030e61eea1b20030edb36dfade8dc3d8ba551fb601009e2a8",
+      "status": "already-clean"
+    },
+    "d3703-ss-door-stopper-2.webp": {
+      "source": "19a21442ed18b1be6ee64b34b7d44accff6ac52eab246f9e3e4c017608850202",
+      "status": "already-clean"
+    },
+    "d3703-ss-door-stopper.webp": {
+      "source": "7cf6ec651a43677416069145c930935fe40d9e41f76627a54d53a4fac432dda4",
+      "status": "already-clean"
+    },
+    "d3771-door-stopper-2.webp": {
+      "source": "6f705cd94182219a49ca09adcdbe2c710716f34a2aa2c8e70b2ada35b6cb37c1",
+      "status": "already-clean"
+    },
+    "d3771-door-stopper-3.webp": {
+      "source": "70d04c729c38b2225b059b3547006a4f4563ed6c39ab7dcc202ca92921933fde",
+      "status": "already-clean"
+    },
+    "d3771-door-stopper-4.webp": {
+      "source": "93615ece6d9c9a0cd66f9acc9d5d9e61aa3bb852ec134ec68bab4a47b95439ba",
+      "status": "already-clean"
+    },
+    "d3771-door-stopper.webp": {
+      "source": "df767d3e4d7d9ef3d4ebac483fb0d1305e01091ec7fdaf84e7a75c651904c172",
+      "status": "already-clean"
+    },
+    "d3772-door-stopper-2.webp": {
+      "source": "f8699edd67f8a0200049fc67afe0c89cc6e3d55e252a4e41a3d9e6d87762cb95",
+      "status": "already-clean"
+    },
+    "d3772-door-stopper-3.webp": {
+      "source": "db6d70ebec26061f4ded17a5db0b040a2ecbbf893bd2f2dcea5b8d0c634d7265",
+      "status": "already-clean"
+    },
+    "d3772-door-stopper-4.webp": {
+      "source": "1a6929ebed3e28a7c14b7d7aa63745db26d92a9bc6b19a26b824c0bd42a1642f",
+      "status": "already-clean"
+    },
+    "d3772-door-stopper.webp": {
+      "source": "f5f39edfa3c7712feca7c907c428428e94ebc1471d030ec1dcb013439222b557",
+      "status": "already-clean"
+    },
+    "d3810-door-stopper-2.webp": {
+      "source": "9f62cf4f5a6a03e7b5dcf4520a084f178ecd08e66095c1bfd4eb921a23b53159",
+      "status": "already-clean"
+    },
+    "d3810-door-stopper-3.webp": {
+      "source": "fcb1a4eb11c5c898bfb84a517d39465ceafee20e8e310c98feef0f991611d60f",
+      "status": "already-clean"
+    },
+    "d3810-door-stopper-4.webp": {
+      "source": "56e37dab3df7a1e7477b9dacb9f92624bab95da0568f3a0ccdb857a1f8caeedc",
+      "status": "already-clean"
+    },
+    "d3810-door-stopper.webp": {
+      "source": "bed47a781d1df18bf4effc34b1c0593e398c9317c48df1518176a759a3962801",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-2.webp": {
+      "source": "8dc09e3eca19520b032fcd2c9ac7750736f470147e86a53653ff372286df506f",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-3.webp": {
+      "source": "7ffaebfaf6d5cd000b129c8a83ceb288b5004847ffc8d4a74befb65b8e6d4595",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-4.webp": {
+      "source": "dacd57174b8462243520593709b6af3cce04edc74819e91f0886c29b3e5caa9b",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-5.webp": {
+      "source": "05c31500a8e1f261f10a7dd6a9b46b0200103006211f0698a11fa3e910c8821c",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-6.webp": {
+      "source": "a9e08a5c3471f75dc7c986f109819b2a840e642e01b7aeca29477c1c101241fa",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper-7.webp": {
+      "source": "ffc83d2185a287639169e7882ab5bc02ab016fea4e66ea67a7af7d4b75e803a0",
+      "status": "already-clean"
+    },
+    "d3811-door-stopper.webp": {
+      "source": "c195b504ca5bd8b9d2eb3406271d9f226708848ca1054154f15f29f998ce246c",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin-2.webp": {
+      "source": "081e5a403915d688c98c064b1b39d6abd35598387cc8d2db15cbf8a54e9b3c46",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin-3.webp": {
+      "source": "d5b55bdb3ba66288f30a8a85c3fa6a0760def01230771ee0d5b252b5d47f4dcb",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin-4.webp": {
+      "source": "a148c4841739938435991fca14990be66254df792f0c98f009a64d5bd5eaf8dd",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin-5.webp": {
+      "source": "7c49b4145edefc4c2bf94630edbadb8c62344c5744960c0b04488753f6cc88c8",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin-6.webp": {
+      "source": "b4900dfb6d5e8e8b96f3c76d4751ca7b7622959988c9e1e4fa81542596416537",
+      "status": "already-clean"
+    },
+    "d3873-magnetic-pin.webp": {
+      "source": "6e9b6811c7617cfda1d582a2981f634accd3d1a4c83a62decb0292c751aa05f4",
+      "status": "already-clean"
+    },
+    "d3884-door-stopper-2.webp": {
+      "source": "40d2ca1265e55e84154dfe9508c2cc30d089e656936edcd4b8182a0f57558a82",
+      "status": "already-clean"
+    },
+    "d3884-door-stopper-3.webp": {
+      "source": "623f511b79d94d27045cf48313b1ce992d57760f126b289f3a4699f679473086",
+      "status": "already-clean"
+    },
+    "d3884-door-stopper-4.webp": {
+      "source": "b0c44696618862cc5e3e1f9014caaf79aea53ae62429467a362b140cea181541",
+      "status": "already-clean"
+    },
+    "d3884-door-stopper.webp": {
+      "source": "e2413c7113455073c790764a6e2c9decf8baf61831ac7ae3d90bf997fc5adf4e",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper-2.webp": {
+      "source": "a1caa1df49f540a37ef92537d49df0cf2742cdd481707354770d0aba20c59670",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper-3.webp": {
+      "source": "557b96b928061754f947962a6218ae3a7215fe95c3228dcb196a7e0291973105",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper-4.webp": {
+      "source": "6d3ff050ebc88787522dfefd4e0402382d6171bfe0815f9516ff69ff1b0d8f7d",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper-5.webp": {
+      "source": "3ffba66f25267a23f8594e7b19e924df380aac9d839e226d7c104731e8fbb84e",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper-6.webp": {
+      "source": "0f837af4b28b5dba54062ed4e84aee936919e6cf56dbb0a3bc0faf7758611f7a",
+      "status": "already-clean"
+    },
+    "d3889-door-stopper.webp": {
+      "source": "5e93f8b446af5dd17eaf022ab0724a8fd58e7350be2945c0d8832ef9a605c46c",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper-2.webp": {
+      "source": "dde63bd85b8d1f732e4a9801ed10af870861dcbdf2eb11e3fb8ca8c99a4a6204",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper-3.webp": {
+      "source": "82ae0b883da4576446e23c73d9e86f00dc360f872d0fda079c186005559a4925",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper-4.webp": {
+      "source": "9142f4ea5b2aff509a4052c05c5cbdbe9245dca6098e30fecb2c2ecddfc7a5d7",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper-5.webp": {
+      "source": "2899b312ceed931c0de12caac338841a5ada72df594b705ca6fc6ba6ef788a70",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper-6.webp": {
+      "source": "90d3adef66483a917b55b2e4cdd8e56c449ace732c016470af7230e7a1d00028",
+      "status": "already-clean"
+    },
+    "d3890-door-stopper.webp": {
+      "source": "f9dea5c1d7ede5a27d6be558dfea56c46946fb94a4b9bb6b48ee4de013a87dc2",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-2.webp": {
+      "source": "92bf2df712a9ba019b89860ce72809a73a9e88ef9eb647e528e7c5f406bd48d4",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-3.webp": {
+      "source": "8be504418b6ecf4f7bc1c92eedefb73d95ce534bd97da1940c443908fdb97daf",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-4.webp": {
+      "source": "b66dccab6738caa1be56b55a6094dd9421874a5d2ad5a66d7d77a9a9f9e52e51",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-5.webp": {
+      "source": "5015e1ac73c17ed3ba725e42cf2c69d38396f88015a6bd7bbb667c9c95827f6f",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-6.webp": {
+      "source": "e975ad8b00f7b566796d3a1e6e82c6a8c294991a30c3ea49edca2c0dd55bdb64",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper-7.webp": {
+      "source": "d424c99b0a750eb7ace13a1ebeb60003a526a997f6a090fc22eacae734a6769a",
+      "status": "already-clean"
+    },
+    "d3891-door-stopper.webp": {
+      "source": "63743f6cce46aeb0b7b4ff88100a8873c3fbc76dfb8b2180186136e80071c4b6",
+      "status": "already-clean"
+    },
     "dc01-panic-exit-device-2.webp": {
       "source": "2fe60ac833f047033b956313e4689b061ac3fd8a2dd12ec928f66680779e3c30",
       "status": "cleanable"
@@ -18793,6 +19017,14 @@
     },
     "sa-305-lever-handle.webp": {
       "source": "0173d6ec880adab7e194740504557b5c70de347bf75890f81cea324dc29a3e75",
+      "status": "already-clean"
+    },
+    "sd3702-ss-door-stopper-2.webp": {
+      "source": "3bb72ddcc7047afd956cfd36baecae176beb838f3a23cb0bcf87e257683e16b1",
+      "status": "already-clean"
+    },
+    "sd3702-ss-door-stopper.webp": {
+      "source": "b31e5245b88dfc0436bbfcd191f5a1482963a000fe051baa15283bc9695a58dc",
       "status": "already-clean"
     },
     "sf-15-lever-handle-2.webp": {

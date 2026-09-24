@@ -458,10 +458,11 @@ different things, and none of them is a purge.
 
 | Area | Owner |
 |---|---|
-| Design, editorial imagery, brand assets | Codex |
-| `src/app/es/**` (Spanish copy) | Codex |
+| Image generation, editorial imagery, visual design, brand assets | **Codex — visuals only** (client 2026-09-24: 「codex以后只负责生图和视觉」). Real photographs only for products; see the image rules above |
+| All HYDE copy text, EN / ES / PT — pages (`src/app/(en)`, `src/app/es/**`, `src/app/pt/**`), articles, product `summary*` / `description*` / `features*`, `src/data/category-positioning.json`, `content/promo.json` card copy | **Claude** (client 2026-09-24: 「D2 交给你……由你负责而不是codex」). Codex changes layout and styling in those files, never the wording |
+| `seoTitle*` / `seoDescription*` and `scripts/build-product-titles.mjs` | The engineering session — see `docs/collaboration/tasks/2026-09-24-division-of-labour.md` |
 | `content/**`, `scripts/**`, `src/data/**`, `src/lib/**` | Claude |
-| `content/promo.json` | Codex: card copy only. Claude: timing only. |
+| `content/promo.json` | Claude: copy and timing. Codex: card visuals. |
 | Building and committing `out/` | **HYDE release: `npm run release:hyde`** — see the wall below |
 | Building and committing `out-rayen/` | **RAYEN release: `npm run release:rayen`** — RAYEN's side only |
 | Article copy and localisation (`content/news`, `content/guides`, all three languages) | **Claude.** Client 2026-09-23: Kimi assists only; Claude owns polish and localisation |

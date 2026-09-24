@@ -31,6 +31,34 @@ const LEGAL_LINKS = {
   ],
 } as const;
 
+/*
+  Reference pages, linked from every footer since 2026-09-24. `npm run seo:graph` found them
+  unreachable from the homepage in all three languages — in the sitemap, but no rendered
+  link led there, so crawlers and buyers could only arrive by search. The Portuguese fire-door
+  landing page was an orphan for the same reason; it has no English or Spanish twin.
+*/
+const REFERENCE_LINKS = {
+  en: [
+    { label: "Finish codes", href: "/finishes" },
+    { label: "Glossary", href: "/glossary" },
+    { label: "Model lookup", href: "/model-lookup" },
+    { label: "Documents", href: "/documents" },
+  ],
+  es: [
+    { label: "Códigos de acabado", href: "/es/finishes" },
+    { label: "Glosario", href: "/es/glossary" },
+    { label: "Buscar por modelo", href: "/es/model-lookup" },
+    { label: "Documentos", href: "/es/documents" },
+  ],
+  pt: [
+    { label: "Códigos de acabamento", href: "/pt/finishes" },
+    { label: "Glossário", href: "/pt/glossary" },
+    { label: "Busca por modelo", href: "/pt/model-lookup" },
+    { label: "Documentos", href: "/pt/documents" },
+    { label: "Ferragens para porta corta-fogo", href: "/pt/ferragens-porta-corta-fogo" },
+  ],
+} as const;
+
 /** The endonym each language link carries — a reader scans for their own word for it. */
 const LANGUAGE_LABELS: Record<Locale, string> = {
   en: "English",
@@ -100,7 +128,7 @@ export function SiteFooter() {
           <div className="grid grid-cols grid-rows gap-x gap-y-48 md:gap-y-96">
             <nav className="col-span-full grid grid-cols-subgrid md:col-span-7 md:block lg:col-span-8 xl:col-span-12">
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
-                {LEGAL_LINKS[locale].map((link) => (
+                {[...LEGAL_LINKS[locale], ...REFERENCE_LINKS[locale]].map((link) => (
                   <li key={link.label} className="col-span-2 md:col-span-3">
                     {isCurrent(link.href) ? (
                       <span aria-current="page" className="text-c1 text-ink-secondary">
