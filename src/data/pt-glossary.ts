@@ -370,6 +370,19 @@ export const SPEC_LABELS_PT: Record<string, string> = {
   "Face plate": "Testa",
   "Lever thickness": "Espessura da maçaneta",
   "Pairs with": "Combina com",
+  /*
+    Added 2026-09-24, same pass as the Spanish side. "Case size" is the rim-lock case on
+    5835/5836, so it follows "Lock case" ("Caixa da fechadura") rather than the carton.
+    "Plate depth" follows its siblings "Plate size" / "Plate thickness", which use "placa"
+    here even though "Plate length" above uses "espelho". "Door leaves" is the entire spec
+    table on 306-D / 306 PS / 306-S.
+  */
+  "Door leaves": "Folhas de porta",
+  "Case size": "Dimensões da caixa da fechadura",
+  "Keys supplied": "Chaves incluídas",
+  "Fitted with": "Equipado com",
+  "Supplied with": "Fornecido com",
+  "Plate depth": "Profundidade da placa",
 };
 
 /** Category slugs → the Portuguese name of the category. */
@@ -406,6 +419,9 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Panic Exit Device": "Barra antipânico",
   "Fire Door Panic Exit Device": "Barra antipânico para porta corta-fogo",
   "Double Door Panic Exit Device": "Barra antipânico para porta de duas folhas",
+  "Single Door Panic Exit Device": "Barra antipânico para porta de uma folha",
+  /* 306 PS has no latch bolt of its own: a passage device, not a panic device. */
+  "Passage Push Bar": "Barra de empurrar de passagem livre",
   "S-Panic Exit Device": "Barra antipânico S",
   "D-Panic Exit Device": "Barra antipânico D",
   "Alarm Panic Bar Exit Device": "Barra antipânico com alarme",
@@ -589,6 +605,11 @@ export const MATERIAL_NAMES_PT: Record<string, string> = {
  * what a throw resists — so they are translated in full rather than assembled from parts.
  */
 export const SPEC_VALUES_PT: Record<string, string> = {
+  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch; "Porta dupla" is below. */
+  "Passage, no latch bolt": "Passagem livre, sem lingueta",
+  "A separate lock case, supplied to suit":
+    "Caixa de fechadura separada, fornecida conforme a aplicação",
+  "Single door": "Porta simples",
   "AB / AC / PB / SB / SS / SP / SC (Custom Available)":
     "AB / AC / PB / SB / SS / SP / SC (personalizado disponível)",
   "Fire Door": "Porta corta-fogo",

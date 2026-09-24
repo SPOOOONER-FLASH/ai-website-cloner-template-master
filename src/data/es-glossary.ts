@@ -276,6 +276,31 @@ export const SPEC_LABELS_ES: Record<string, string> = {
   "Latch options": "Opciones de picaporte",
   "Spindle Material": "Material del cuadradillo",
   "Key Material": "Material de la llave",
+  /*
+    Added 2026-09-24 to close the last gaps between the spec labels in use and this table.
+    Each one was read in the record that uses it rather than translated from the label alone:
+    "Case size" is the rim-lock case on 5835/5836, not the carton, so it cannot reuse
+    "Medidas de la caja" — that string already belongs to "Carton size". "Plate depth" takes
+    "de la placa" to match its siblings "Plate size" and "Plate thickness" on 9088 SS.
+    "Door leaves" is the whole spec table on 306-D / 306 PS / 306-S, which is why those three
+    records had no Spanish specs at all: one unmapped label there means zero translated rows.
+
+    NOT added: "Follower" on 072. Its value is "9 × 9 × 130mm" — a 9mm square bar 130mm long,
+    which is a spindle (already here as "Cuadradillo"), not the cam a follower names. Either
+    the label or the value on that record is wrong, and a buyer specifies from this table, so
+    it stays English and reported until the factory says which. See the rule at the top of
+    this file.
+  */
+  "Door leaves": "Hojas de puerta",
+  "Case size": "Medidas de la caja de cerradura",
+  "Keys supplied": "Llaves incluidas",
+  "Cylinder apertures": "Aberturas para cilindro",
+  "Used with": "Se utiliza con",
+  "Fitted with": "Equipado con",
+  "Supplied with": "Se suministra con",
+  "Plate depth": "Profundidad de la placa",
+  "Max door weight": "Peso máximo de puerta",
+  Series: "Serie",
 };
 
 /**
@@ -286,6 +311,10 @@ export const SPEC_LABELS_ES: Record<string, string> = {
  * number must survive untouched and only the qualifier is language.
  */
 export const SPEC_VALUES_ES: Record<string, string> = {
+  /* 306 PS, added 2026-09-24. "Paso libre" is the function; "picaporte" is this file's latch. */
+  "Passage, no latch bolt": "Paso libre, sin picaporte",
+  "A separate lock case, supplied to suit":
+    "Caja de cerradura independiente, suministrada según la aplicación",
   "35mm to 45mm adjustable":
     "35 a 45 mm, regulable",
   "60mm / 70mm adjustable":
@@ -1329,6 +1358,14 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Panic Exit Device": "Barra antipánico",
   "Fire Door Panic Exit Device": "Barra antipánico para puerta cortafuego",
   "Double Door Panic Exit Device": "Barra antipánico para puerta de dos hojas",
+  "Single Door Panic Exit Device": "Barra antipánico para puerta de una hoja",
+  /*
+    306 PS is a push bar with no latch bolt of its own — a separate lock case carries the
+    latch — so it is a passage device, not a panic device, and naming it "barra antipánico"
+    would tell a specifier it certifies for an escape route when it does not. "Paso libre"
+    is the trade term for the function.
+  */
+  "Passage Push Bar": "Barra de empuje de paso libre",
   "S-Panic Exit Device": "Barra antipánico serie S",
   "D-Panic Exit Device": "Barra antipánico serie D",
   "Alarm Panic Bar Exit Device": "Barra antipánico con alarma",
