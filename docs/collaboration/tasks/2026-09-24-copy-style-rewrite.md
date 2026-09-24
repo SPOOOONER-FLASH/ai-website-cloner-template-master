@@ -53,12 +53,14 @@
 | B | 「如实，但是 ANSI、CE 还要其他的都准备去做」 | 如实写：现有测试报告出具在客户名下，我们自己名下的 CE、ANSI 等测试正在准备。推杠文章第 17 段已改为教买家核对报告名下和型号（09-24）；认证页的正式表述待写（见下方待办 B） |
 | C | 「写明可以走阿里巴巴平台下单，也可以直接交易」 | 在联系页和询盘页写明两种方式都可以 |
 | D、E | 「DE 你自己把握」 | D：双开防火门整套配置文章；E：葡语巴西防火门和推杠标准解释文。按本文件第一节的做法写 |
-| D1 | 待定 | 西语锁舌改用 pestillo、死舌用 cerrojo、执手写 manija 并括注 manilla。等甲方点头，再和工程会话一起改规则 |
+| D1 | 「D1 用西班牙皇家学院词典」（09-24） | **已定**：锁舌 = **pestillo**（RAE 第 2 义项：由钥匙或弹簧推出、进入锁扣的锁舌），死舌 = **cerrojo**，执手 = **manija**（西班牙页面第一次出现括注 manilla）。**不再用 picaporte**。规则脚本 `normalize-regional-terms.mjs` 归工程会话，规格标签 Latch → Picaporte 的术语表键归西语规格表会话，已发消息请他们改。文章正文由 Claude 按上下文逐处改，原来当 deadbolt 用的 pestillo 改为 cerrojo |
 
 ## 四、没做完的，按顺序（每做完一项就从这里划掉）
 
 | # | 事项 | 状态 |
 |---|---|---|
+| 0 | **急**：文章里登记的 6 句目录数量已过期（西语规格表会话 09-24 补齐规格数据后连带变化），`article-catalogue-claims` 测试为红。why-the-catalogue（123→114）、mortise-lock-backset（175→180、28/18→34/22）、dimensional-interchangeability FAQ（257 个锁：backset 106→111 等），三语一起改。**mortise-lock-case-comparison 不能只改句子**：同时具备两个尺寸的锁体从 27 变成 32，表格要补 5 行，窄框锁体从 9 变成 12 | 待做（下一项） |
+| 0b | D1 手改：文章正文里的 picaporte 逐处改成 pestillo（原来当 deadbolt 用的 pestillo 改成 cerrojo）；另外还有 `src/data/hardware-terms.ts` 约第 306、312、327 行，原句用 resbalón 和 pestillo 对比，要改成 pestillo 和 cerrojo 对比，否则意思会反过来；以及 `src/data/es-features.ts` 第 996 行。改完告诉工程会话，由他们加 picaporte → pestillo 规则和守卫 | 待做 |
 | 1 | 栏目文案第一轮：产品页、首页卡片、产品查找、配置器，三语，按 `docs/copy/style-guides/section-voice.md` | 09-24 完成 |
 | 2 | OEM / 服务页（`src/app/(en)/services` 及西葡）：按 A 重写，写开新模具和绕开专利冲突，另写打样流程 | 待做。起订量、打样周期待甲方给数字；没有数字之前不写数字 |
 | 3 | 认证页（`certifications` 三语）：按 B 如实写，现有报告在客户名下、自有名下的 CE 和 ANSI 正在准备 | 待做 |

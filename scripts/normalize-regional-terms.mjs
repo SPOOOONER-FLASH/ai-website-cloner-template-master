@@ -102,8 +102,15 @@ const ES_RULES = [
   word("relación de puertas", "planilla de puertas"),
   word("cédulas", "planillas"),
   word("cédula", "planilla"),
-  word("picaporte de resbalón", "picaporte"),
-  word("resbalón", "picaporte"),
+  /*
+    Client decision D1 (2026-09-24): lock terms follow the RAE. Latch bolt = "pestillo",
+    deadbolt = "cerrojo", lever = "manija". "picaporte" is retired: it is the lever handle in
+    Argentina and the latch or the knocker elsewhere. The picaporte → pestillo rule is added
+    only after Hyde 文案 has rewritten the article bodies by hand, because in some paragraphs
+    "pestillo" already means the deadbolt and a blind swap would give two parts one word.
+  */
+  word("picaporte de resbalón", "pestillo"),
+  word("resbalón", "pestillo"),
   word("albercas", "piscinas"),
   word("alberca", "piscina"),
   word("aseos", "baños"),

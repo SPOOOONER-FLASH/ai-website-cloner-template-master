@@ -113,11 +113,11 @@ https://cantonlock.com/guides/hardware-warranty-what-it-covers-2026/
 
 ---
 
-### ③ 装一次新的跳转规则 —— 2 分钟（2026-09-24）
+### ③ 装一次新的跳转规则 —— 2 分钟，今天做（2026-09-24）
 
 **为什么**：有个产品网址写着「ansi-grade-3」（`/products/grip-handle-sets/ansi-grade-3-keyed-deadbolt-lock-set/`），
 我们没有 ANSI 认证，网址不能这么写。已改成 `keyed-deadbolt-lock-set`。旧网址已被 Google 收录，
-要在服务器上装一条 301，旧链接才会正式跳到新网址（现在浏览器里也会跳，但搜索引擎要的是 301）。
+要在服务器上装一条 301。**装好之前旧网址是 404**（09-24 实测），Google 已收录的那一条会变成死链，所以今天就装。
 
 **在宝塔终端贴这一行**：
 

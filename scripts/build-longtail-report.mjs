@@ -164,7 +164,7 @@ say("| 14 条门闩、插销、猫眼被归在「指示器」下，描述里写�
 say("| 夜锁品类介绍写「60mm backset」，实际还有 50mm、40mm 的型号 | 三语改为「大多数 60mm」 |");
 say("| 所有葡语品类页标题后缀是西语「Fabricante y proveedor」 | 改为「Fabricante e fornecedor」 |");
 say("| 西葡描述里同一句出现两次 para（「guarnición exterior para barra antipánico para puertas…」） | 59 处 → 0 |");
-say("| 英文全站是英式拼写（centre、catalogue、aluminium），面向美国买家 | 全站改美式，npm test 守着 |");
+say("| 英文全站原来按英国拼法写，面向的却是美国买家 | 全站改美式（中心距、目录、铝等 70 多个词），npm test 守着 |");
 say();
 say("## 怎么知道有没有用");
 say();

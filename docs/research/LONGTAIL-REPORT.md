@@ -83,8 +83,8 @@ Search Console 2026-06-24 → 09-22 的数据（`docs/research/analytics/2026-09
 | Grip Handle Sets | 16 | 81% | 19% | 81% | 70610 AB Grip Handle Set, 60–70mm backset, Zinc Alloy |
 | Glass Door Accessories | 26 | 65% | 31% | 42% | 100-30MM Glass Door Handle, Stainless Steel |
 | Hardware Accessories | 63 | 49% | 86% | 37% | 200 Indicator for Washroom & Cubicle Doors, Zinc Alloy |
-| Lock Cases | 58 | 53% | 47% | 3% | 6068 Stainless Steel Lever Handle Lock, 330mm plate |
-| Lock Cylinders | 45 | 20% | 100% | 7% | 45BN Lock Cylinder for Mortise & Rim Locks, 45mm |
+| Lock Cases | 58 | 62% | 38% | 3% | 140 Mortise Lock Case, 72mm center, 25mm backset |
+| Lock Cylinders | 45 | 27% | 100% | 7% | 45BN Lock Cylinder for Mortise & Rim Locks, 45mm |
 | Sliding Hook Locks | 3 | 100% | 100% | 0% | 881 SS Sliding Hook Lock for Sliding & Pocket Doors, 160mm |
 
 三语对照（每类一例）：
@@ -94,13 +94,13 @@ Search Console 2026-06-24 → 09-22 的数据（`docs/research/analytics/2026-09
 | 001 | 001 Panic Exit Device Trim, 300×75mm, 304SS | 001 Guarnición exterior para barra antipánico, 300×75mm | 001 Maçaneta externa para barra antipânico, 300×75mm |
 | 100-30MM | 100-30MM Glass Door Handle, Stainless Steel | 100-30MM Tirador para puerta de vidrio, Acero inoxidable | 100-30MM Puxador para porta de vidro, Aço inoxidável |
 | 1073D | 1073D Night Latch And Rim Lock, 60mm backset, Iron Case | 1073D Cerradura de sobreponer, entrada 60mm, Caja de hierro | 1073D Fechadura de sobrepor, distância 60mm, Caixa de ferro |
+| 140 | 140 Mortise Lock Case, 72mm center, 25mm backset | 140 Cerradura de embutir, ejes 72 mm, entrada 25 mm | 140 Fechadura de embutir, centros 72 mm, eixo 25 mm |
 | 200 | 200 Indicator for Washroom & Cubicle Doors, Zinc Alloy | 200 Indicador de libre y ocupado, Zamak | 200 Indicador para portas de banheiro e de box, Zamak |
 | 3431 SNET | 3431 SNET Lever Handle, 60/70mm backset, Zinc Alloy | 3431 SNET Manija de palanca, entrada 60/70mm, Zamak | 3431 SNET Maçaneta de alavanca, distância 60/70mm, Zamak |
 | 45BN | 45BN Lock Cylinder for Mortise & Rim Locks, 45mm | 45BN Cilindro de cerradura, 45mm, Latón macizo | 45BN Cilindro para fechaduras de embutir e de sobrepor, 45mm |
 | 575 ABET | 575 ABET Tubular Lock, 60–70mm backset, Stainless Steel | 575 ABET Cerradura tubular, entrada 60–70mm | 575 ABET Fechadura tubular, distância 60–70mm |
 | 6*3*3mm | 6*3*3mm 201 / 304 Stainless Steel Door Hinge for Doors | 6*3*3mm Bisagra de acero inoxidable 201 / 304 | 6*3*3mm Dobradiça de aço inoxidável 201 / 304 |
 | 600 | 600 Concealed Sliding Door Handle, 60–70mm backset | 600 Tirador oculto para puerta corredera, entrada 60–70mm | 600 Puxador embutido para porta de correr, distância 60–70mm |
-| 6068 | 6068 Stainless Steel Lever Handle Lock, 330mm plate | 6068 Cerradura con manija de acero inoxidable, placa 330mm | 6068 Fechadura com maçaneta em inox, placa 330mm |
 | 70610 AB | 70610 AB Grip Handle Set, 60–70mm backset, Zinc Alloy | 70610 AB Juego de manillón, entrada 60–70mm, Zamak | 70610 AB Conjunto de puxador, distância 60–70mm, Zamak |
 | 881 SS | 881 SS Sliding Hook Lock for Sliding & Pocket Doors, 160mm | 881 SS Cerradura de gancho para puerta corredera, 160mm | 881 SS Fechadura de gancho para porta de correr, 160mm |
 | BH01 | BH01 Bathroom Accessories, 300–1000mm, Stainless Steel | BH01 Accesorios de baño, 300–1000mm, Acero inoxidable | BH01 Acessórios de banheiro, 300–1000mm, Aço inoxidável |
@@ -116,7 +116,7 @@ Search Console 2026-06-24 → 09-22 的数据（`docs/research/analytics/2026-09
 | 夜锁品类介绍写「60mm backset」，实际还有 50mm、40mm 的型号 | 三语改为「大多数 60mm」 |
 | 所有葡语品类页标题后缀是西语「Fabricante y proveedor」 | 改为「Fabricante e fornecedor」 |
 | 西葡描述里同一句出现两次 para（「guarnición exterior para barra antipánico para puertas…」） | 59 处 → 0 |
-| 英文全站是英式拼写（centre、catalogue、aluminium），面向美国买家 | 全站改美式，npm test 守着 |
+| 英文全站原来按英国拼法写，面向的却是美国买家 | 全站改美式（中心距、目录、铝等 70 多个词），npm test 守着 |
 
 ## 怎么知道有没有用
 
