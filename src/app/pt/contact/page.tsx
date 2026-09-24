@@ -9,7 +9,7 @@ import { EmailLink } from "@/components/site/EmailLink";
 export const metadata: Metadata = pageMetadata({
   enPath: "/contact",
   locale: "pt",
-  title: "Contato — Equipe de exportação",
+  title: "Fábrica de ferragens na China: fale com a exportação",
   description:
     "Fale com a nossa equipe de exportação sobre produto, amostras, OEM ou obras. Indique o tipo de porta, o acabamento, a norma e a quantidade.",
 });
