@@ -39,7 +39,7 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
     kicker: "Services",
     heading: "Bring us a drawing. Leave with a product.",
     intro:
-      "Much of what we make leaves Xiaolan under our customers' brands, and it is the work we are best at. We tool new parts to your drawing or sample, rework a design that runs into someone else's patent, and put your name, your instructions and your packaging on the result. Since 1998, for brands and distributors across Europe, the Americas, Turkey and Southeast Asia.",
+      "Much of the door hardware and ironmongery we make leaves Xiaolan under our customers' brands, and it is the work we are best at. We tool new parts to your drawing or sample, rework a design that runs into someone else's patent, and put your name, your instructions and your packaging on the result. Since 1998, for brands and distributors across Europe, the Americas, Turkey and Southeast Asia.",
     primaryCta: "Send your drawing or sample",
     secondaryCta: "Or start from our catalog",
     imageLabel: "Representative architectural entrance combining glass, metal and coordinated door hardware",

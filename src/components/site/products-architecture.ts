@@ -193,7 +193,7 @@ const COPY = {
     collection: "Canton Product Collection",
     title: "Door & Window Hardware",
     intro:
-      "Everything a door needs, from the lever in the hand to the lock case inside the leaf. Nine families, one standard: every dimension written down, every part made to work with the ones around it.",
+      "Everything a door needs, from the lever in the hand to the lock case inside the leaf: door hardware in American terms, architectural ironmongery in British ones. Nine families, one standard: every dimension written down, every part made to work with the ones around it.",
     rangeMeta: "Nine coordinated families · one catalog",
     familiesHeading: "Nine ways into the catalog",
     familiesBody:
