@@ -9,10 +9,11 @@
 的调查，成本是几千 token 加一次停工 —— 2026-08-31 Codex 就为此中断过一次展会任务。
 
 ## 正在进行
+> Claude 多语种 2026-09-25：七语种市场落地站已发布 0d18e0c82dd（源码 fa0613a1fcd），**HYDE 发布棒交还，无人持棒**。记得 purge。
+
 
 | agent | 路径 | 在做什么 | 开始时间 |
 |---|---|---|---|
-| Claude 多语种 | src/data/market/**, src/data/market-locales.ts, src/lib/market*.ts, src/components/market/**, src/app/{fr,de,ja,ko,tr,ru,ar}/**, scripts/scaffold-market-routes.mjs；小改 seo.ts、sitemap.ts、seo-policy.ts、language-choices.ts、SiteFooter.tsx、三个根 layout、audit-no-chinese.mjs、seo-audit.mjs、normalize-us-spelling.mjs、globals.css、llms.txt；**HYDE 发布棒（本次）** | 七语种市场落地站（法德日韩土俄阿，各七页），见 agent-updates/2026-09-24-claude-market-locales.md | 2026-09-24 |
 | Claude HYDE工程交接配置（johns 机器，tmp/ship-merge） | SEO/GEO 审计、死链、JS、GTM 事件、数据看板；全站长尾词（所有 seoTitle*/seoDescription*、scripts/build-product-titles.mjs —— **从 Hyde 文案移交**，见 tasks/2026-09-24-division-of-labour.md）；美式拼写（content/products 规格标签 + 术语表键、src/app/(en)、src/components）；HYDE 发布棒 | 分工见 tasks/2026-09-24-division-of-labour.md | 2026-09-24 |
 | **雷茵已迁出本仓（2026-09-24）** | 甲方：「把雷茵放到另一个仓库，不要再互相影响」。雷茵的一切现在在私有仓 **SPOOOONER-FLASH/rayen**（本地 `C:UsersjohnsDownloads雷茵`），在那里构建、发布 | 本仓里的雷茵车道（out-rayen/、content/rayen/、zh 路由、rayen 脚本、products-rayen 图）**冻结**：不要再改，也不要在这里 release:rayen。服务器把 rayen.cn 切到新仓之前，本仓的 out-rayen/ 仍是线上源，**别删**；切换后再清理（步骤见新仓 CLIENT-RUNBOOK） | 2026-09-24 |
 | Claude Hyde 视觉工作图片生成（**E:/cantonlock-hyde**） | **浏览速度、动画、页面连贯性**（甲方 09-24 直接指派）：HeroCarousel、SiteHeader / HeaderNavigation、LocalePicker、SearchDialog 的动效与加载、ProductImageZoom、globals.css 的过渡与动效令牌、scripts/check-motion-tokens.mjs、static-export-performance 测试；**接手下面两行停在半途的 Codex 动效 / 流畅度认领** | 先测线上（Lighthouse 移动端 + 桌面端），再按数据改。图片文件不动（甲方：STAHLOCK 是子品牌，其图片不用、不动）。视觉普查已完成，报告 https://claude.ai/artifact/HvYbw4jtEd8Pk4A9RUWBCb | 2026-09-24 |
