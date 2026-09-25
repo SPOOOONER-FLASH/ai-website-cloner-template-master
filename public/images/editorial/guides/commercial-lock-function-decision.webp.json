@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "575 SSET",
@@ -8,14 +9,10 @@
       "sha256": "757ab5e6a52ba0ca375c0b17380790c36f4bcab9455c4019d9d0237952d5d2b6"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\12-product-stage.png",
-    "sha256": "d8f32643717622e749006287ba80cb8f7679f4bec104eb450a4697cac3ed2fd6",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/commercial-lock-function-decision-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "769a61073625a901db9f5bf4cab46863e9f313c14cdae4c572da0098c4978fd1"
+  "sourceSha256": "757ab5e6a52ba0ca375c0b17380790c36f4bcab9455c4019d9d0237952d5d2b6",
+  "rejectedCompositeSha256": "f9415284b4690c1eb419fa8fba3e5cf8869e5db0f8e555806e601c3f1e6b9848",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

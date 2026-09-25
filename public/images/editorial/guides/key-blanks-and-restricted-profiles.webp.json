@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "45 BNIK",
@@ -8,14 +9,10 @@
       "sha256": "60c5cb78bdd07066c44e2aca44d5fbd84fd08e41591470bd397a7abb56b68f54"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\06-product-stage.png",
-    "sha256": "ef85186f99d63f69ce2a59d324e009fc374e928244351c4ffcc5f9e74847ca9b",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/key-blanks-and-restricted-profiles-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "cb00e4d02ad1010e4290b325722a343c4695523befd70260e7e8729cf5f6bd66"
+  "sourceSha256": "60c5cb78bdd07066c44e2aca44d5fbd84fd08e41591470bd397a7abb56b68f54",
+  "rejectedCompositeSha256": "c4842d871d5fa3eddb5af5a7bf3b934824fd39a5ce0cc9993aceeeabd940a41b",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

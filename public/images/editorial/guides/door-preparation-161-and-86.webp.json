@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "3431 SSET",
@@ -8,14 +9,10 @@
       "sha256": "078f9a7b8a6078bedb37e304d4e85cc1bf64ce9d9e6da4ba284c273b8014b557"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\02-product-stage.png",
-    "sha256": "b6c4ed6b10a60a5e0a665fa0adf7b0acedf9f1e1c3b4c104f7978a2578b75952",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/door-preparation-161-and-86-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "83f3eedb05bb044303f29d376d02980e7c9eafbe44b6d8f7240ac222b4eb0baf"
+  "sourceSha256": "078f9a7b8a6078bedb37e304d4e85cc1bf64ce9d9e6da4ba284c273b8014b557",
+  "rejectedCompositeSha256": "d2e99b434c39ec0da72e77e522f14072ecbf32376fdaf4d5277713d3553c5504",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

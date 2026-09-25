@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 /**
- * 指南首图：用 Codex 2026-09-23 交付的两套图库，给 32 篇还在用同一张占位图的指南配首图。
+ * HISTORICAL IMPORTER — product composites rejected by the client on 2026-09-24.
+ * The prior run placed all 20 rejected composites in public guide covers. A separate
+ * corrective script restored the exact photographed catalogue sources. Keep this file
+ * for provenance, but --write is disabled so it cannot regress the published images.
+ * 原用途：用 Codex 2026-09-23 交付的两套图库，给 32 篇指南配首图。
  *
  *   node scripts/import-guide-heroes.mjs            只打印计划
- *   node scripts/import-guide-heroes.mjs --write    写图、写说明文件、改 content/guides
+ *   node scripts/import-guide-heroes.mjs --write    禁止：会重生被否决的合成图
  *
  * 甲方 2026-09-23：「把 guide 里面用 codex 共享的图片填上首图」。
  * 图库与规矩：docs/design-references/2026-09-09-style-batches/README.md
@@ -35,6 +39,12 @@ import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 const WRITE = process.argv.includes("--write");
+if (WRITE) {
+  throw new Error(
+    "The 20 product-stage composites were rejected by the client on 2026-09-24. " +
+    "Do not regenerate guide heroes from this library; see docs/design-references/2026-09-24-guide-photo-correction/README.md."
+  );
+}
 const LIB = "docs/design-references/2026-09-09-style-batches";
 const OUT_DIR = "public/images/editorial/guides";
 const WIDTH = 1600;

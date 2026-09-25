@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "70610 AB",
@@ -8,14 +9,10 @@
       "sha256": "c7970951314acfd1237fca13c1a2574c8528de5ce3db50d0bb358698883d3c6b"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\05-product-stage.png",
-    "sha256": "8f77bfbfc225aa20cba58e290e9464940a9410bf28ce2f24581b2dd84711982c",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/universal-vs-handed-hardware-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "97bbef18e692cedbb59949bc18f03f5af501bab2a162185e31a6c8b581db61e9"
+  "sourceSha256": "c7970951314acfd1237fca13c1a2574c8528de5ce3db50d0bb358698883d3c6b",
+  "rejectedCompositeSha256": "633e883358ec6a0ac63b00fefe3cf38f4106a6e1abad633c2d3e54dfd01f88cb",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }
