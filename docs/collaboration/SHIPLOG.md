@@ -12,13 +12,9 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 01:35 | HYDE | Fix HYDE copy lint and record verified integration | `f9002df3e12` |
-| 01:25 | 中立 | Merge HYDE guide image correction and home motion with current main | `369ed066a9a` |
-
-## 2026-09-25
-
-| 时间 | 哪一边 | 做了什么 | 提交 |
-|---|---|---|---|
+| 03:29 | 中立 | GTM 改回 Google 原样代码、立即执行：延后包装导致安装检测报未检测到（甲方 09-25） | `7cb0383b6a4` |
+| 03:20 | 中立 | 任务：Ironmongery 与定制（甲方 09-25）——行业名、开模能力、定制故事的落地清单与分工 | `46eeb36fa52` |
+| 03:20 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `74ee58458bc` |
 | 03:20 | 中立 | 跳转规则随 cron 自动安装（甲方 09-25：为啥总要去终端贴） | `f6655abaf5a` |
 
 ## 2026-09-24
@@ -730,5 +726,4 @@
 | 06:51 | 中立 | 记录 cantonlock.com 正式站部署（等 DNS 切换） | `f272d934ce6` |
 | 05:02 | 中立 | 记录轮询间隔定为 5 分钟；新增托管方案对照 | `3b809c92e57` |
 | 04:05 | 中立 · 发布 HYDE | 筛选栏独立滚动，不再带动右侧产品网格 | `0a0fc3bfa8e` |
-| 03:21 | 中立 | 护栏已生效：5 秒重写循环修复完成并验证 | `8e295f349f3` |
 
