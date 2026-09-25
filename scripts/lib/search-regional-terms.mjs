@@ -33,8 +33,19 @@ export const REGIONAL_TERMS = {
   "sliding-hook-locks": "cerradura de gancho puerta corrediza fechadura de gancho porta de correr",
 };
 
-/** Terms for a product or category whose top-level category slug is `slug` (empty if none). */
-export const regionalTermsFor = (slug) => REGIONAL_TERMS[slug] ?? "";
+/**
+ * The trade's own name for everything in this catalogue (2026-09-25).
+ *
+ * UK, Irish, Australian, New Zealand and Gulf project buyers call door hardware "ironmongery"
+ * (the specification section is the Ironmongery Schedule); the client asked for the word to be
+ * learnt and used. It named no product, so a search for it found nothing. Every HYDE product and
+ * category is ironmongery, so every one carries it. See
+ * docs/collaboration/tasks/2026-09-25-ironmongery-customize-brief.md.
+ */
+const TRADE_TERMS = "ironmongery architectural ironmongery";
+
+/** Terms for a product or category whose top-level category slug is `slug`. */
+export const regionalTermsFor = (slug) => `${REGIONAL_TERMS[slug] ?? ""} ${TRADE_TERMS}`.trim();
 
 /**
  * Words buyers type for a material that are not the material's name (2026-09-24).
