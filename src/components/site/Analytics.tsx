@@ -8,12 +8,17 @@ import { EngagementTracker } from "./EngagementTracker";
  * GOOGLE'S SNIPPET, VERBATIM — line breaks included — AND IT RUNS IMMEDIATELY.
  *
  * 2026-09-24 it was wrapped in `window.addEventListener('load', …)` so gtm.js would not
- * compete with the hero photograph. On 2026-09-25 the client ran GTM's "Test your website"
- * against the live site and got "Your Google tag wasn't detected", with the snippet sitting
- * in <head> at byte 4,786. The only thing that had changed was the wrapper. The client's
- * requirement was 「一定要装上去」, so detection wins: this is Google's text exactly as the
- * install dialog shows it for GTM-MQHHPGJL. gtm.js is still fetched async and never blocks
- * rendering. Do not wrap, minify or reorder it again without re-running that test.
+ * compete with the hero photograph; 2026-09-25 it went back to Google's text, exactly as the
+ * install dialog shows it for GTM-MQHHPGJL. The client's reasoning: GTM's triggers are meant
+ * to run before load, so the bandwidth has to be saved somewhere else.
+ *
+ * ⚠ "YOUR GOOGLE TAG WASN'T DETECTED" IS NOT ABOUT THIS CODE. It was first blamed on the
+ * wrapper, wrongly. Measured 2026-09-25: a request to cantonlock.com from Google's own
+ * servers (via translate.goog) gets Cloudflare's 403 "Just a moment..." challenge — Bot
+ * Fight Mode, switched on 2026-09-17, lets verified crawlers such as Googlebot through but
+ * not GTM's install checker. The checker never sees the page. Real browsers load GTM fine
+ * (headless Chrome: gtm.js requested at 2.6 s, container active). Verify an install with
+ * GTM Preview / Tag Assistant, which runs in your own browser — see CLIENT-RUNBOOK ⑤.
  */
 export function AnalyticsHead() {
   if (!indexable || !analytics.gtmId) return null;

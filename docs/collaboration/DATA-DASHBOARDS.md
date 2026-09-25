@@ -21,7 +21,8 @@ GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站�
 同一个 Google 代码在 GA 后台还挂了第二个目标 **G-X7EMRX2V2X**，每次访问也发给它一份。
 那两次带 `&cx=c` 的 gtag.js 请求就是它引起的，不是重复安装。甲方 09-24：重复无用，删掉。
 删除步骤在 CLIENT-RUNBOOK ④（GA 后台操作，会话做不了）。删掉之前的数据里，G-X7EMRX2V2X 是 G-RBTE7KF82P 的副本，不要把两边的数加在一起。
-**GTM 用 Google 原样代码、立即加载**（09-25 改回）：09-24 包了一层「load 后再装」，GTM 的安装检测就报未检测到；甲方要求一定装上，所以改回原样。gtm.js 仍是异步，不挡页面显示。
+**GTM 用 Google 原样代码、立即加载**（09-25 改回，甲方：GTM 的触发逻辑就是要在 load 之前）。gtm.js 仍是异步，不挡页面显示。
+**GTM 后台的「Test your website」会一直报 wasn't detected，原因不是代码**：09-25 实测，从 Google 的服务器请求本站拿到的是 Cloudflare 的 403「Just a moment...」质询页（Bot Fight Mode 只放行 Googlebot 等已验证爬虫）。验证安装用 GTM 的 Preview（Tag Assistant，在自己浏览器里跑），见 CLIENT-RUNBOOK ⑤。
 复测方法：用无头 Chrome 打开任意页，等 20 秒，数 `/g/collect` 里 `en=page_view` 的请求，按 `tid` 分组计数。
 
 ## 怎么更新（每周一次，建议周一）
