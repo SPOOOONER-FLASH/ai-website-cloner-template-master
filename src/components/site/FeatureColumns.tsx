@@ -9,7 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "./icons";
 import { MediaPlaceholder } from "./MediaPlaceholder";
-import { localised } from "@/lib/localised";
+import { dict } from "@/lib/i18n";
 
 /**
  * A rail of columns, sitting directly under the flagship pair.
@@ -56,7 +56,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
           {columns.map((column) => (
             <Link
               key={column.id}
-              href={localised(column.href, locale)}
+              href={dict(column.href, locale)}
               className="hard-shadow-card short-marker-surface group flex w-[82%] min-w-[82%] flex-none snap-start flex-col bg-surface sm:w-auto sm:min-w-0"
             >
               <MediaPlaceholder
@@ -67,10 +67,10 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
               />
               <div className="flex flex-1 flex-col border-t border-line p-24">
                 <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
-                  {localised(column.eyebrow, locale)}
+                  {dict(column.eyebrow, locale)}
                 </p>
-                <h3 className="title-marker mt-12 text-h3 text-ink">{localised(column.title, locale)}</h3>
-                <p className="mt-16 text-c1 text-ink-secondary">{localised(column.body, locale)}</p>
+                <h3 className="title-marker mt-12 text-h3 text-ink">{dict(column.title, locale)}</h3>
+                <p className="mt-16 text-c1 text-ink-secondary">{dict(column.body, locale)}</p>
                 {/*
                   The take-away file, under the reading rather than above it. A form
                   offered before the explanation reads as a lead-capture form; offered
@@ -79,7 +79,7 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                   pushed that one card's arrow upwards, and the row stopped lining up.
                 */}
                 {column.extra ? (
-                  <p className="mt-12 text-c2 text-ink-secondary">{localised(column.extra, locale)}</p>
+                  <p className="mt-12 text-c2 text-ink-secondary">{dict(column.extra, locale)}</p>
                 ) : null}
                 {/*
                   Figure and call to action travel together at the foot of the card, so the
@@ -94,14 +94,14 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                   */}
                   {column.figure ? (
                     <p className="border-t border-line pb-24 pt-16 text-c2 tabular-nums text-ink">
-                      {localised(column.figure, locale)}
+                      {dict(column.figure, locale)}
                     </p>
                   ) : null}
                   <p>
                     {/* The entire card is one link. A second anchor here caused invalid
                         nesting and a hydration mismatch on every homepage load. */}
-                    <span className="short-marker-group short-marker-arrow relative inline-block pl-12 text-c1 text-brand py-10 sm:py-0">
-                      <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" aria-hidden="true" />
+                    <span className="short-marker-group short-marker-arrow relative inline-block ps-12 text-c1 text-brand py-10 sm:py-0">
+                      <ArrowRightIcon className="absolute start-0 top-[.3rem] h-auto w-8" aria-hidden="true" />
                       <span>{featureColumnsCta(locale)}</span>
                     </span>
                   </p>

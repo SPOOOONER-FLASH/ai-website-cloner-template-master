@@ -173,7 +173,7 @@ export function ProductImageZoom({
         onPointerMove={moveZoomOrigin}
         onPointerLeave={resetZoomOrigin}
         className={cn(
-          "group relative block w-full cursor-zoom-in overflow-hidden text-left outline-offset-4 focus-visible:outline-2 focus-visible:outline-ink",
+          "group relative block w-full cursor-zoom-in overflow-hidden text-start outline-offset-4 focus-visible:outline-2 focus-visible:outline-ink",
           className,
         )}
       >
@@ -207,7 +207,7 @@ export function ProductImageZoom({
             type="button"
             aria-label={copy.close}
             onClick={() => setOpen(false)}
-            className="absolute right-16 top-16 grid size-48 place-items-center border border-surface bg-ink text-surface outline-offset-4 hover:bg-surface hover:text-ink focus-visible:outline-2 focus-visible:outline-surface sm:right-32 sm:top-24"
+            className="absolute end-16 top-16 grid size-48 place-items-center border border-surface bg-ink text-surface outline-offset-4 hover:bg-surface hover:text-ink focus-visible:outline-2 focus-visible:outline-surface sm:end-32 sm:top-24"
           >
             <X aria-hidden="true" size={26} strokeWidth={1.25} />
           </button>

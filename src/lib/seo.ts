@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl, defaultDescription, type Locale } from "@/data/site";
 import { mirrorsOf } from "./spanish-mirror.ts";
-import { marketAlternates } from "./market-mirror.ts";
 
 /**
  * Builds canonical + hreflang + Open Graph for a page, from its ENGLISH path.
@@ -33,25 +32,18 @@ export const defaultOgImage = "/seo/og-default.png";
  * Returns undefined when only English exists, because a `languages` map of one entry is
  * noise rather than a signal.
  */
+/** The absolute URL of a clean English path ("" for home, "/company") in a locale. */
+function localeUrl(locale: Locale, clean: string): string {
+  return absoluteUrl(locale === "en" ? `${clean}/` : `/${locale}${clean}/`);
+}
+
 export function alternateLanguages(enPath: string): Record<string, string> | undefined {
   const clean = enPath === "/" ? "" : `/${enPath.replace(/^\/|\/$/g, "")}`;
-  const href: Record<Locale, string> = {
-    en: absoluteUrl(`${clean}/`),
-    es: absoluteUrl(`/es${clean}/`),
-    pt: absoluteUrl(`/pt${clean}/`),
-  };
   const available = mirrorsOf(enPath);
-  /*
-    The seven market locales (src/data/market-locales.ts) mirror seven English paths.
-    They are added here, not to `mirrorsOf`, because `Locale` keys the copy dictionaries
-    and a market locale is deliberately not one of those.
-  */
-  const market = marketAlternates(enPath);
-  if (available.length < 2 && !market) return undefined;
+  if (available.length < 2) return undefined;
   return Object.fromEntries([
-    ...available.map((locale) => [locale, href[locale]]),
-    ...Object.entries(market ?? {}),
-    ["x-default", href.en],
+    ...available.map((locale) => [locale, localeUrl(locale, clean)]),
+    ["x-default", localeUrl("en", clean)],
   ]);
 }
 
@@ -65,11 +57,8 @@ export function pageMetadata(opts: {
   imageAlt?: string;
 }): Metadata {
   const clean = opts.enPath === "/" ? "" : `/${opts.enPath.replace(/^\/|\/$/g, "")}`;
-  const en = absoluteUrl(`${clean}/`);
-  const es = absoluteUrl(`/es${clean}/`);
-  const pt = absoluteUrl(`/pt${clean}/`);
-  const href = { en, es, pt } as const;
-  const self = href[opts.locale];
+  const en = localeUrl("en", clean);
+  const self = localeUrl(opts.locale, clean);
   const description = opts.description ?? defaultDescription[opts.locale];
 
   /*
@@ -82,14 +71,11 @@ export function pageMetadata(opts: {
     which is the state most of this site is in and will be for a while.
   */
   const available = mirrorsOf(opts.enPath);
-  /* Plus the market locales, where this path has them — see alternateLanguages(). */
-  const market = marketAlternates(opts.enPath) ?? {};
   const languages = Object.fromEntries([
-    ...available.map((locale) => [locale, href[locale]]),
-    ...Object.entries(market),
+    ...available.map((locale) => [locale, localeUrl(locale, clean)]),
     ["x-default", en],
   ]);
-  const declared = available.length + Object.keys(market).length;
+  const declared = available.length;
 
   const image = opts.image ?? defaultOgImage;
   const imageAlt = opts.image ? (opts.imageAlt ?? opts.title) : "HYDE architectural door hardware";
@@ -108,7 +94,7 @@ export function pageMetadata(opts: {
       title: opts.title,
       description,
       locale: opts.locale,
-      alternateLocale: [...available.filter((locale) => locale !== opts.locale), ...Object.keys(market)],
+      alternateLocale: available.filter((locale) => locale !== opts.locale),
       images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: imageAlt }],
     },
     // X/Twitter ignores og:image sizing hints and wants its own card type; without this

@@ -1,7 +1,9 @@
 import type { NewsArticle } from "./types";
+import type { Locale } from "./locales.ts";
 import { guides as generatedGuides } from "./generated/guides";
 import { GUIDES_WITHOUT_ES, GUIDES_WITHOUT_PT } from "./generated/guide-locales";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
+import { withOverlays } from "../lib/i18n.ts";
 
 /**
  * 指南栏目 —— 买家该怎么判断，而不是这家工厂发生了什么。
@@ -41,7 +43,7 @@ import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overr
  * 只是抄的对象不同 —— 而「说得出处」是我们相对他们唯一的结构性优势。
  */
 
-export const guides: NewsArticle[] = generatedGuides.map((article) => ({
+export const guides: NewsArticle[] = withOverlays(generatedGuides, "guides", (a) => a.slug).map((article) => ({
   ...article,
   heroImage: applyImageAltOverride(article.heroImage),
   gallery: article.gallery ? applyImageAltOverrides(article.gallery) : undefined,
@@ -77,7 +79,12 @@ export function getGuideBySlug(slug: string): NewsArticle | undefined {
  * hasSpanishMirror / hasPortugueseMirror 同源 —— 都读 generated/guide-locales.ts ——
  * 所以页面、sitemap、hreflang 和语言切换不会各说各话。
  */
-export function getAllGuideParams(locale: "en" | "es" | "pt" = "en"): { slug: string }[] {
+export function getAllGuideParams(locale: Locale = "en"): { slug: string }[] {
+  /*
+    Spanish and Portuguese guides are listed only once translated (client, 2026-09-22).
+    The seven overlay locales list every guide: the page exists in the tree and renders
+    English until its translation lands, which scripts/track-locale-mirror.mjs counts.
+  */
   const lacking = locale === "es" ? GUIDES_WITHOUT_ES : locale === "pt" ? GUIDES_WITHOUT_PT : [];
   return getPublishedGuides()
     .filter((article) => !lacking.includes(article.slug))

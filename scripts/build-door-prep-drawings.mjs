@@ -62,7 +62,7 @@ const OUT_DIR = "public/images/door-prep";
 const dry = process.argv.includes("--dry");
 
 const HOLE_LABELS = ["Fixing hole", "Fixing hole (flush door)", "Fixing hole (glass door)"];
-const CENTRE_LABELS = ["Center distance", "Center Distance", "Grip center distance"];
+const CENTRE_LABELS = ["Center distance", "Center Distance", "Grip center distance", "Centre distance", "Centre Distance", "Grip centre distance"];
 const THICKNESS_LABELS = ["Door thickness", "Suitable Door Thickness", "Glass thickness"];
 
 /** First millimetre figure in a recorded string. "φ12mm" gives 12; "P=640mm" gives 640. */

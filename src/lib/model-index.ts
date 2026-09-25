@@ -1,5 +1,6 @@
 import { publishedProducts } from "@/data/products";
 import type { Locale } from "@/data/site";
+import { t } from "./i18n.ts";
 
 /**
  * A complete A–Z index of every published model number, and the page each one resolves to.
@@ -64,7 +65,7 @@ export function modelIndex(locale: Locale): ModelIndexEntry[] {
     .map((product) => ({
       model: String(product.model),
       name: String(
-        (locale === "es" && product.nameEs) || (locale === "pt" && product.namePt) || product.name,
+        t(product, "name", locale),
       ),
       category: product.categoryPath[0],
       href: `${localePrefix(locale)}/products/${product.categoryPath[0]}/${product.slug}/`,

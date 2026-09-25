@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/data/site";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * The switch between the two ways into the same catalogue.
@@ -68,7 +69,7 @@ export function FinderModeSwitch({
   locale?: Locale;
   className?: string;
 }) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const base = locale === "en" ? "" : `/${locale}`;
 
   const items = [

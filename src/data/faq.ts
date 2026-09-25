@@ -1,5 +1,7 @@
 import faq from "../../content/faq.json";
 import type { Locale } from "@/data/site";
+import { t } from "../lib/i18n.ts";
+import { overlayFor, tx } from "../lib/i18n.ts";
 
 /**
  * The FAQ.
@@ -48,20 +50,24 @@ export function getAnsweredFaq(locale: Locale = "en"): FaqGroup[] {
     Spanish looks finished and is not, and the two are close enough that a reader
     notices the wrongness before they notice the language.
   */
-  const pick = (en: string, es?: string, pt?: string) =>
-    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
+  /* The seven overlay locales keep their FAQ in content/i18n/<code>/faq.json, keyed by
+     the English question, so a question reworded in English visibly loses its answer. */
+  const overlay = overlayFor(locale)?.faq;
 
   return faqGroups
     .map((group) => ({
       ...group,
-      title: pick(group.title, group.titleEs, group.titlePt),
+      title: tx(locale, group.title, { es: group.titleEs, pt: group.titlePt }),
       items: group.items
         .filter((item) => item.answer.trim().length > 0)
-        .map((item) => ({
-          ...item,
-          question: pick(item.question, item.questionEs, item.questionPt),
-          answer: pick(item.answer, item.answerEs, item.answerPt),
-        })),
+        .map((item) => {
+          const translated = overlay?.[item.question];
+          return {
+            ...item,
+            question: translated?.question ?? t(item, "question", locale),
+            answer: translated?.answer ?? t(item, "answer", locale),
+          };
+        }),
     }))
     .filter((group) => group.items.length > 0);
 }

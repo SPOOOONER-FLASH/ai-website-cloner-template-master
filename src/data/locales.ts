@@ -23,7 +23,27 @@
  * behaviour — see src/lib/localised.ts for what happens to the fields the compiler cannot
  * reach — and it is why the list is short and deliberate rather than a config value.
  */
-export const locales = ["en", "es", "pt"] as const;
+/*
+  2026-09-25: the seven market locales joined the list (client: 「需要全量全栈模仿英西葡，
+  一个完整的一样的站点」). They do not carry `nameFr`-style fields on every record — that
+  pattern stops at three — but an OVERLAY read through src/lib/i18n.ts: `t(record, "name",
+  locale)` looks in content/i18n/<code>/ first and falls back to English, visibly, for the
+  same reason src/lib/localised.ts gives. `fullLocales` is the three whose translations
+  live on the records themselves.
+*/
+export const locales = ["en", "es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"] as const;
+
+/** The three locales whose translations sit on the records as `…Es` / `…Pt` fields. */
+export const fullLocales = ["en", "es", "pt"] as const;
+export type FullLocale = (typeof fullLocales)[number];
+
+/** The seven whose translations live in content/i18n/<code>/ — see src/lib/i18n.ts. */
+export const overlayLocales = ["fr", "de", "ja", "ko", "tr", "ru", "ar"] as const;
+export type OverlayLocale = (typeof overlayLocales)[number];
+
+export function isOverlayLocale(locale: string): locale is OverlayLocale {
+  return (overlayLocales as readonly string[]).includes(locale);
+}
 
 export type Locale = (typeof locales)[number];
 

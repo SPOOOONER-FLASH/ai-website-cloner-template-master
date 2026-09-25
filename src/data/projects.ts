@@ -12,8 +12,9 @@ import type { Project } from "./types";
 import { projects as generatedProjects } from "./generated/projects";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 import { brandProductImageRef, brandProductImageRefs } from "./product-image-branding";
+import { withOverlays } from "../lib/i18n.ts";
 
-export const projects: Project[] = generatedProjects.map((project) => ({
+export const projects: Project[] = withOverlays(generatedProjects, "projects", (p) => p.slug).map((project) => ({
   ...project,
   heroImage: brandProductImageRef(applyImageAltOverride(project.heroImage)),
   gallery: brandProductImageRefs(applyImageAltOverrides(project.gallery)),

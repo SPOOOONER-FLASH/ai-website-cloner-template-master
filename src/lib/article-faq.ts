@@ -1,5 +1,7 @@
 import type { Locale } from "../data/locales.ts";
 import type { NewsArticle } from "../data/types.ts";
+import { dict } from "./i18n.ts";
+import type { Overlayed } from "./i18n.ts";
 
 /**
  * The question-and-answer block on a technical article.
@@ -58,7 +60,7 @@ export function articleFaqHeading(locale: Locale): string {
 export function articleFaqItems(article: NewsArticle, locale: Locale): ArticleFaqItem[] {
   const faq = article.faq;
   if (!faq) return [];
-  return faq[locale] ?? faq.en;
+  return dict(faq, locale) ?? faq.en;
 }
 
 /**
@@ -78,7 +80,21 @@ export function articleFaqItems(article: NewsArticle, locale: Locale): ArticleFa
  * Portuguese page — which is honest, and which is the state that gets fixed.
  */
 export function articleFaqLocale(article: NewsArticle, locale: Locale): Locale {
-  return article.faq?.[locale]?.length ? locale : "en";
+  return articleFaqItemsFor(article, locale)?.length ? locale : "en";
+}
+
+/**
+ * The FAQ list of an article in a locale, or undefined. Spanish and Portuguese sit on the
+ * record under `faq.es` / `faq.pt`; the seven overlay locales carry theirs in the article
+ * overlay (`i18n.<code>.faq`, from content/i18n/<code>/news.json or guides.json).
+ */
+export function articleFaqItemsFor(
+  article: NewsArticle,
+  locale: Locale,
+): { question: string; answer: string }[] | undefined {
+  if (locale === "en" || locale === "es" || locale === "pt") return article.faq?.[locale];
+  const overlay = (article as Overlayed).i18n?.[locale]?.faq;
+  return Array.isArray(overlay) ? (overlay as { question: string; answer: string }[]) : undefined;
 }
 
 /**

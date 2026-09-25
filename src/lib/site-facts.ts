@@ -2,6 +2,7 @@ import { categories } from "../data/categories.ts";
 import { stats } from "../data/company.ts";
 import { publishedProducts } from "../data/products.ts";
 import type { Locale } from "../data/site.ts";
+import { dict } from "./i18n.ts";
 
 export { ROLL_MS, STAGGER_MS, rollFrame } from "./fact-roll.ts";
 
@@ -90,7 +91,7 @@ function stat(label: string): string | null {
 }
 
 export function siteFacts(locale: Locale = "en"): SiteFact[] {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const products = publishedProducts;
   const withVideo = products.filter((p) => (p.videos ?? []).length).length;
 

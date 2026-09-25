@@ -1,0 +1,171 @@
+{
+  "bathroom-accessories": {
+    "name": "Accessoires de salle de bains",
+    "summary": "Accessoires de salle de bains, en acier inoxydable pour la plupart, dans des finitions assorties à la quincaillerie de porte."
+  },
+  "brass-steel-hinges": {
+    "name": "Paumelles laiton et acier",
+    "summary": "Gammes de paumelles en laiton, acier inoxydable et acier pour portes de bâtiment, à nœuds sur roulements à billes ou à nœuds lisses."
+  },
+  "care-grab-bars": {
+    "name": "Barres d'appui PMR",
+    "summary": "Barres d'appui et siège de douche rabattable pour salles de bains accessibles : barres droites, moletées et coudées fixées au mur, et barres relevables qui s'escamotent.",
+    "children": {
+      "flip-up-grab-bars": {
+        "name": "Barres d'appui relevables"
+      },
+      "fixed-grab-bars": {
+        "name": "Barres d'appui fixes"
+      }
+    }
+  },
+  "deadbolts": {
+    "name": "Verrous à pêne dormant",
+    "summary": "Verrous à pêne dormant à simple et double cylindre, course de 25 mm, insert rotatif anti-sciage et axe de 60 ou 70 mm."
+  },
+  "door-closers": {
+    "name": "Ferme-portes",
+    "summary": "Ferme-portes à corps aluminium pour portes de locaux commerciaux, plus un pivot de sol pour portes bois."
+  },
+  "floor-springs-and-pivots": {
+    "name": "Pivots de sol et pivots de porte",
+    "summary": "Pivots de sol, pivots hauts, ferme-portes en imposte et charnières hydrauliques pour portes pivotantes en bois, en métal et en verre sans cadre.",
+    "children": {
+      "floor-springs": {
+        "name": "Pivots de sol hydrauliques"
+      },
+      "top-pivots": {
+        "name": "Pivots hauts"
+      },
+      "pivot-top-patches": {
+        "name": "Pinces hautes pour portes en verre"
+      },
+      "overhead-door-closers": {
+        "name": "Ferme-portes en imposte"
+      },
+      "hydraulic-hinges": {
+        "name": "Charnières hydrauliques"
+      }
+    }
+  },
+  "glass-door-accessories": {
+    "name": "Ferrures pour portes en verre",
+    "summary": "Pinces et poignées de tirage pour ensembles de portes en verre sans cadre.",
+    "children": {
+      "glass-door-patch-fittings": {
+        "name": "Pinces pour portes en verre"
+      },
+      "glass-door-handles": {
+        "name": "Poignées pour portes en verre"
+      }
+    }
+  },
+  "grip-handle-sets": {
+    "name": "Poignées de tirage",
+    "summary": "Ensembles de poignées de tirage, bâtons de maréchal et poignées encastrées pour portes d'entrée et coulissantes."
+  },
+  "hardware-accessories": {
+    "name": "Accessoires de quincaillerie",
+    "summary": "Judas, butoirs, passe-câbles de porte, verrous, voyants, loqueteaux et entrebâilleurs.",
+    "children": {
+      "armoured-lock-covers": {
+        "name": "Protections de serrure blindées"
+      },
+      "door-viewers": {
+        "name": "Judas"
+      },
+      "door-stoppers": {
+        "name": "Butoirs de porte"
+      },
+      "power-transfer-devices": {
+        "name": "Passe-câbles de porte"
+      },
+      "door-flush-bolts": {
+        "name": "Verrous à encastrer"
+      },
+      "house-numbers": {
+        "name": "Numéros de maison"
+      },
+      "indicators": {
+        "name": "Voyants libre / occupé"
+      },
+      "latches": {
+        "name": "Loqueteaux"
+      },
+      "security-door-guards": {
+        "name": "Entrebâilleurs de sécurité"
+      }
+    }
+  },
+  "knob-locks": {
+    "name": "Serrures à bouton",
+    "summary": "Serrures à bouton cylindriques et tubulaires pour les fonctions entrée, condamnation, passage et communication.",
+    "children": {
+      "commercial-locks": {
+        "name": "Serrures pour locaux commerciaux"
+      },
+      "heavy-duty-cylindrical-locks": {
+        "name": "Serrures cylindriques usage intensif"
+      },
+      "light-duty-cylindrical-locks": {
+        "name": "Serrures cylindriques usage léger"
+      },
+      "tubular-locks": {
+        "name": "Serrures tubulaires"
+      },
+      "wafer-locks": {
+        "name": "Serrures à paillettes"
+      }
+    }
+  },
+  "lever-handles": {
+    "name": "Ensembles de béquilles",
+    "summary": "Ensembles de béquilles à serrure tubulaire, principalement en zamak, pour portes d'entrée, de toilettes et de passage, avec pênes et gâches assortis."
+  },
+  "lock-cases": {
+    "name": "Serrures à mortaiser",
+    "summary": "Coffres de serrure à mortaiser en plusieurs configurations d'axe, d'entraxe et de pêne, pour portes bois et métal."
+  },
+  "lock-cylinders": {
+    "name": "Cylindres de serrure",
+    "summary": "Cylindres européens et cylindres à clé, y compris organigrammes de clés et clés de chantier."
+  },
+  "night-latches-rim-locks": {
+    "name": "Serrures en applique et verrous de sûreté",
+    "summary": "Serrures en applique et verrous de sûreté montés en surface, la plupart avec un axe de 60 mm, posés à travers un seul perçage de cylindre."
+  },
+  "panic-exit-devices": {
+    "name": "Fermetures anti-panique",
+    "summary": "Barres de poussée et barres à pression pour issues de secours, en versions coupe-feu, avec alarme, pour portes à deux vantaux et à verrouillage deux points.",
+    "children": {
+      "fire-door": {
+        "name": "Dispositifs pour portes coupe-feu"
+      },
+      "alarmed": {
+        "name": "Dispositifs avec alarme"
+      },
+      "multi-point": {
+        "name": "Verrouillage multipoint"
+      },
+      "exterior-trim": {
+        "name": "Garnitures extérieures"
+      },
+      "special-applications": {
+        "name": "Applications spéciales"
+      }
+    }
+  },
+  "sliding-hook-locks": {
+    "name": "Serrures à crochet pour coulissants",
+    "summary": "Serrures à pêne crochet pour portes coulissantes et profilés étroits."
+  },
+  "stainless-steel-handles": {
+    "name": "Béquilles en acier inoxydable",
+    "summary": "Béquilles en acier inoxydable, dont la série 9000 pour portes de 35 à 50 mm, et une poignée encastrée pour porte coulissante.",
+    "children": {
+      "brass-pull-handles": {
+        "name": "Poignées de tirage en laiton"
+      }
+    }
+  }
+}

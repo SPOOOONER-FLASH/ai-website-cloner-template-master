@@ -4,7 +4,8 @@ import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
-import { marketLocaleMeta, marketLocales } from "@/data/market-locales";
+import { overlayLocales } from "@/data/locales";
+import { LANGUAGE_LABELS } from "@/lib/i18n";
 
 /**
  * Emits /llms.txt at build time (works under `output: "export"`).
@@ -193,12 +194,9 @@ function body(): string {
     */
     "## Other languages",
     "",
-    `- Español (full catalog): ${absoluteUrl("/es/")}`,
-    `- Português (full catalog): ${absoluteUrl("/pt/")}`,
-    ...marketLocales.map(
-      (code) =>
-        `- ${marketLocaleMeta[code].label} (company, catalog overview, OEM services, certifications, FAQ, contact): ${absoluteUrl(`/${code}/`)}`,
-    ),
+    `- Español: ${absoluteUrl("/es/")}`,
+    `- Português: ${absoluteUrl("/pt/")}`,
+    ...overlayLocales.map((code) => `- ${LANGUAGE_LABELS[code]}: ${absoluteUrl(`/${code}/`)}`),
     "",
     "## Guides and articles",
     "",

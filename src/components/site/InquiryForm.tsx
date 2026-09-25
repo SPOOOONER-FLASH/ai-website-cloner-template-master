@@ -1,6 +1,5 @@
 "use client";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
 
 import { useEffect, useRef, useState } from "react";
 import { submitInquiry } from "@/lib/inquiry-submit";
@@ -11,6 +10,7 @@ import { useSearchParams } from "next/navigation";
 import { Button } from "./Button";
 import { EmailLink } from "./EmailLink";
 import { siteSettings } from "@/data/navigation";
+import { dict } from "@/lib/i18n-client";
 
 /** Where a failed enquiry goes instead. The orders desk, not the technical one. */
 const INQUIRY_ADDRESS = siteSettings.contact.email;
@@ -123,7 +123,7 @@ function queryValue(params: URLSearchParams, key: string): string {
  * required by Next.js when a statically rendered Client Component reads search params.
  */
 export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
-  const text = localised(formCopy, locale);
+  const text = dict(formCopy, locale);
   const searchParams = useSearchParams();
   const [product, setProduct] = useState(() => queryValue(searchParams, "product"));
   const [model, setModel] = useState(() => queryValue(searchParams, "model"));
@@ -232,7 +232,7 @@ export function InquiryForm({ locale = "en" }: { locale?: Locale }) {
         the next line does.
       */
       fail(error instanceof DOMException && error.name === "TimeoutError"
-        ? localised({ en: "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.", es: "No hemos podido confirmar la entrega. Es posible que su mensaje se haya recibido. Puede consultarnos por correo antes de volver a enviarlo.", pt: "Não foi possível confirmar a entrega. Sua mensagem pode ter sido recebida. Consulte-nos por e-mail antes de enviar novamente." }, locale)
+        ? dict({ en: "We could not confirm delivery. Your message may have been received. You can contact us by email to check before sending again.", es: "No hemos podido confirmar la entrega. Es posible que su mensaje se haya recibido. Puede consultarnos por correo antes de volver a enviarlo.", pt: "Não foi possível confirmar a entrega. Sua mensagem pode ter sido recebida. Consulte-nos por e-mail antes de enviar novamente." }, locale)
         : text.failure);
     } finally {
       submitting.current = false;

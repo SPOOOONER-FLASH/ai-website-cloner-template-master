@@ -19,7 +19,7 @@
 .libraryBody { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 7%; align-items: start; }
 .filters { position: sticky; top: 144px; }
 .filters h3 { font-size: 14px; font-weight: 500; margin-bottom: 16px; }
-.filterButtons button { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 48px; padding: 14px 12px; font-size: 14px; line-height: 1.4; text-align: left; border-bottom: 1px solid #d9ded7; cursor: pointer; }
+.filterButtons button { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 48px; padding: 14px 12px; font-size: 14px; line-height: 1.4; text-align: start; border-bottom: 1px solid #d9ded7; cursor: pointer; }
 .filterButtons button span { font-size: 12px; font-variant-numeric: tabular-nums; }
 .filterButtons button:hover { background: #eff1eb; }
 .filterButtons button[aria-pressed='true'] { background: #465246; color: #fff; }

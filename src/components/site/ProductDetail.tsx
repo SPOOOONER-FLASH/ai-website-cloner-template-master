@@ -19,6 +19,7 @@ import { localiseProductValues } from "@/lib/spanish-product";
 import { EmailLink } from "./EmailLink";
 import { productModelFor } from "@/data/product-models";
 import { ProductModel } from "./ProductModel";
+import { dict, t as tr } from "@/lib/i18n";
 
 /** Target for the "watch it work" cue in the text column. One per page. */
 const VIDEO_ANCHOR = "demonstration";
@@ -222,7 +223,7 @@ function ProductFact({
  * but unverified dimension is more damaging than an honest empty state.
  */
 export function ProductDetail({ product, categoryName, locale = "en" }: ProductDetailProps) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const es = locale === "es";
   const referenceModel = productModelFor(product.slug);
   /*
@@ -231,10 +232,9 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     on 24 pages for the summary alone. English is the fallback, never Spanish.
   */
   const name =
-    (es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name;
+    tr(product, "name", locale);
   const summary =
-    (es ? product.summaryEs : locale === "pt" ? product.summaryPt : undefined) ??
-    product.summary;
+    tr(product, "summary", locale);
   /*
     Was `es ? specsEs : specs`. With a third locale that silently served the ENGLISH table
     on every Portuguese page while the title beside it was Portuguese — the page looked
@@ -242,19 +242,18 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     has to be right. Picking by locale, with English as the fallback, fixes it for every
     locale added after this one too.
   */
-  const localeSpecs = locale === "es" ? product.specsEs : locale === "pt" ? product.specsPt : undefined;
+  const localeSpecs = tr(product, "specs", locale);
   const specs = (localeSpecs?.length ? localeSpecs : product.specs) ?? [];
   const base = locale === "en" ? "" : `/${locale}`;
   const heroImage = {
     ...product.heroImage,
     label:
-      (es ? product.heroImage.labelEs : locale === "pt" ? product.heroImage.labelPt : undefined) ??
-      product.heroImage.label,
+      tr(product.heroImage, "label", locale),
   };
   const gallery = product.gallery.map((image) => ({
     ...image,
     label:
-      (es ? image.labelEs : locale === "pt" ? image.labelPt : undefined) ?? image.label,
+      tr(image, "label", locale),
   }));
   const material = localiseProductValues([product.material].filter(Boolean), locale);
   const finishes = localiseProductValues(product.finishes, locale);

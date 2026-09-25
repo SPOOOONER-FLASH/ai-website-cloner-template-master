@@ -12,6 +12,7 @@ import { getMenuExperience, MENU_VARIANT } from "./menu-experience";
 import { ArrowUpRight } from "lucide-react";
 import { EditorialAtlas } from "./EditorialAtlas";
 import styles from "./EditorialCatalogue.module.css";
+import { dict } from "@/lib/i18n-client";
 
 const buyingLinks = {
   en: [
@@ -149,21 +150,21 @@ export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: Sit
               <ul className="mt-12">
                 {categories.map((category) => {
                   const href = `${prefix}/products/${category.slug}/`;
-                  const label = say(category.label, category.labelEs, category.labelPt);
+                  const label = category.labels[locale];
                   if (!category.children.length) return renderLink({ label, href, count: category.count });
                   const expanded = openCategory === category.slug;
                   return (
                     <li key={category.slug}>
                       <button type="button" aria-expanded={expanded} aria-controls={`drawer-sub-${category.slug}`}
                         onClick={() => setOpenCategory(expanded ? null : category.slug)}
-                        className="drawer-link w-full bg-transparent text-left">
+                        className="drawer-link w-full bg-transparent text-start">
                         <span>{label}</span><span className="drawer-count">{category.count} {expanded ? "−" : "+"}</span>
                       </button>
                       {expanded ? (
                         <ul id={`drawer-sub-${category.slug}`} className="drawer-sublist">
                           {renderLink({ label: say(`All ${label}`, `Todo: ${label}`, `Tudo: ${label}`), href, count: category.count })}
                           {category.children.map((child) => renderLink({
-                            label: say(child.label, child.labelEs, child.labelPt),
+                            label: child.labels[locale],
                             href: `${prefix}/collections/${category.slug}-${child.slug}/`,
                             count: child.count,
                           }))}
@@ -180,7 +181,7 @@ export function SiteMenuDrawer({ locale, currentPath, categories, onClose }: Sit
         <footer className={styles.menuFooter}>
           <a href={siteSettings.alibaba.storefront} target="_blank" rel="noopener noreferrer" onClick={onClose}
             className="short-marker font-semibold text-ink">{siteSettings.alibaba.label}</a>
-          {buyingLinks[locale].map((link) => <Link key={link.href} href={link.href} onClick={onClose}>{link.label}</Link>)}
+          {dict(buyingLinks, locale).map((link) => <Link key={link.href} href={link.href} onClick={onClose}>{link.label}</Link>)}
           <ul className={styles.social}>
             {socialLinks.map((link) => <li key={link.label}><a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a></li>)}
           </ul>

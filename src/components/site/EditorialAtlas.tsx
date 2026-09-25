@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import styles from "./EditorialCatalogue.module.css";
 import type { Locale } from "@/data/site";
+import { dict, type LocaleDict } from "@/lib/i18n-client";
 
 // Existing catalogue photographs, composed in HTML without redrawing any product.
 export const atlasSubjects = [
@@ -16,7 +17,7 @@ export const atlasSubjects = [
 ] as const;
 
 /** Every product in the atlas exists in all three trees, so only the label changes. */
-const VIEW_PRODUCT: Record<Locale, string> = {
+const VIEW_PRODUCT: LocaleDict<string> = {
   en: "View product",
   es: "Ver producto",
   pt: "Ver produto",
@@ -28,7 +29,7 @@ export function EditorialAtlas({ locale, priority = false, onNavigate }: { local
       <Link key={slug} href={`${locale === "en" ? "" : `/${locale}`}/products/${category}/${slug}/`}
         className={styles[position]} title={model} onClick={onNavigate}>
         <MediaPlaceholder src={image.startsWith("/") ? image : `/images/editorial/${image}.webp`}
-          ratio="3 / 2" label={`${VIEW_PRODUCT[locale]}: ${model}`}
+          ratio="3 / 2" label={`${dict(VIEW_PRODUCT, locale)}: ${model}`}
           sizes="(max-width: 767px) 40vw, 30vw" priority={priority} />
       </Link>
     ))}

@@ -8,6 +8,7 @@ import {
   modelSearchKey,
   type ModelIndexEntry,
 } from "@/lib/model-index";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * The model-code index: every published model number, and the page it resolves to.
@@ -66,7 +67,7 @@ export function ModelIndex({
   locale: Locale;
   entries: ModelIndexEntry[];
 }) {
-  const copy = COPY[locale] ?? COPY.en;
+  const copy = dict(COPY, locale) ?? COPY.en;
   const [query, setQuery] = useState("");
 
   const key = modelSearchKey(query);

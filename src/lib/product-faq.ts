@@ -3,6 +3,8 @@ import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
 import { bhmaFinishesFor } from "./bhma-finish.ts";
+import { t } from "./i18n.ts";
+import { specLabels } from "./i18n.ts";
 
 /**
  * The questions a product page can answer from facts it already states.
@@ -207,7 +209,7 @@ const MIN_ITEMS = 3;
 export function productFaqItems(product: Product, locale: Locale = "en"): ProductFaqItem[] {
   const es = locale === "es";
   const pt = locale === "pt";
-  const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+  const localeRows = t(product, "specs", locale);
   const rows = localeRows?.length ? localeRows : product.specs;
   const byLabel = new Map<string, string>();
   for (const row of rows) {
@@ -221,7 +223,7 @@ export function productFaqItems(product: Product, locale: Locale = "en"): Produc
     back to the product name.
   */
   const subject = product.modelTbc
-    ? ((es && product.nameEs) || (pt && product.namePt) || product.name)
+    ? (t(product, "name", locale))
     : product.model;
 
   /*
@@ -349,7 +351,5 @@ export function productFaqHeading(locale: Locale = "en"): string {
  * Exported so a caller never reaches into the glossary and invents a second spelling.
  */
 export function specLabel(label: string, locale: Locale = "en"): string {
-  if (locale === "es") return SPEC_LABELS_ES[label] ?? label;
-  if (locale === "pt") return SPEC_LABELS_PT[label] ?? label;
-  return label;
+  return specLabels(locale)[label] ?? label;
 }

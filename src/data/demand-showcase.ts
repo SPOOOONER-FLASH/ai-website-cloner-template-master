@@ -2,6 +2,7 @@ import demand from "../../docs/research/2026-09-11-alibaba-product-performance.j
 import { products, isPublished } from "./products";
 import type { Product } from "./types";
 import type { Locale } from "./site";
+import { dict } from "../lib/i18n.ts";
 
 /**
  * The models buyers actually asked about, as a homepage rail.
@@ -114,5 +115,5 @@ export const demandShowcaseCopy = {
 } as const;
 
 export function demandShowcaseText(locale: Locale = "en") {
-  return demandShowcaseCopy[locale];
+  return dict(demandShowcaseCopy, locale);
 }

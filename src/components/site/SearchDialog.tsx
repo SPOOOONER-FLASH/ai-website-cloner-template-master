@@ -538,7 +538,7 @@ export function SearchDialog({ open, onClose, locale = "en" }: {
                   {/* The hint says where Enter actually goes, because where it goes
                       depends on how specific the query was. */}
                   {enterTarget ? (
-                    <span className="ml-8 text-ink-secondary">
+                    <span className="ms-8 text-ink-secondary">
                       ·{" "}
                       {enterTarget.broad
                         ? t.enterBroad(enterTarget.entry.title)

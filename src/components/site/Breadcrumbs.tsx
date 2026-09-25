@@ -10,7 +10,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
     <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-8 text-c2 text-ink-secondary">
       {items.map((item, index) => (
         <span key={`${item.label}-${index}`} className="flex items-center gap-8">
-          {index ? <span aria-hidden="true">&gt;</span> : null}
+          {index ? <span aria-hidden="true" className="rtl:rotate-180">&gt;</span> : null}
           {item.href ? (
             <Link href={item.href} className="short-marker short-marker-compact hover:text-brand-hover">
               {item.label}

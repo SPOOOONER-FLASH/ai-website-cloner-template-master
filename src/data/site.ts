@@ -88,12 +88,26 @@ export const defaultTitle: Record<Locale, string> = {
   en: "Canton Hyland — Panic Exit Devices & Door Hardware Factory",
   es: "Canton Hyland — Fabricante de barras antipánico y herrajes",
   pt: "Canton Hyland — Fabricante de barras antipânico e ferragens",
+  fr: "Canton Hyland — Usine de fermetures anti-panique et de quincaillerie de porte",
+  de: "Canton Hyland — Panikverschlüsse und Türbeschläge ab Werk",
+  ja: "Canton Hyland — パニックバー・錠前・ドア金物メーカー",
+  ko: "Canton Hyland — 패닉바·자물쇠·도어 철물 제조사",
+  tr: "Canton Hyland — Panik Bar ve Kapı Donanımı Fabrikası",
+  ru: "Canton Hyland — завод устройств «антипаника» и дверной фурнитуры",
+  ar: "Canton Hyland — مصنع أجهزة الخروج الطارئ وأجهزة الأبواب",
 };
 
 export const defaultDescription: Record<Locale, string> = {
   en: "Chinese manufacturer of panic exit devices, mortise locks, lever handles, hinges and architectural door hardware. ISO 9001 certified, exporting to 30+ markets.",
   es: "Fabricante chino de barras antipánico, cerraduras de embutir, manijas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
   pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
+  fr: "Fabricant chinois de fermetures anti-panique, serrures à mortaiser, béquilles, paumelles et quincaillerie de porte. Certifié ISO 9001, exportant vers plus de trente marchés.",
+  de: "Chinesischer Hersteller von Panikverschlüssen, Einsteckschlössern, Drückern, Bändern und Türbeschlägen. ISO 9001 zertifiziert, Export in mehr als dreißig Märkte.",
+  ja: "パニックバー、箱錠、レバーハンドル、丁番、建築用ドア金物の中国メーカー。ISO 9001 認証、30 以上の市場へ輸出。",
+  ko: "패닉바, 모티스 락, 레버 핸들, 경첩, 건축용 도어 철물의 중국 제조사. ISO 9001 인증, 30개 이상 시장에 수출.",
+  tr: "Panik bar, gömme kilit, kapı kolu, menteşe ve mimari kapı donanımı üreten Çinli üretici. ISO 9001 sertifikalı, 30'dan fazla pazara ihracat.",
+  ru: "Китайский производитель устройств «антипаника», врезных замков, нажимных ручек, петель и дверной фурнитуры. Сертификат ISO 9001, экспорт более чем в 30 стран.",
+  ar: "مصنّع صيني لأجهزة الخروج الطارئ والأقفال الغاطسة ومقابض الذراع والمفصلات وأجهزة الأبواب المعمارية. حاصل على ISO 9001، ويصدّر إلى أكثر من 30 سوقًا.",
 };
 
 /** Absolute URL helper — path must start with "/". */

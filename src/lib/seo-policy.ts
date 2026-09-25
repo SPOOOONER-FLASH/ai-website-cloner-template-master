@@ -120,29 +120,22 @@ export function buildRobotsRules(indexable: boolean, indexNowKey = ""): RobotsPo
 }
 
 export function buildLocaleSitemapEntries({
-  en,
-  es,
-  pt,
-  bilingual,
-  portuguese = false,
-  market,
+  languages,
   priority,
   changeFrequency = "monthly",
   lastModified,
   images,
   videos,
 }: {
-  en: string;
-  es: string;
-  /** The Portuguese URL. Only emitted when `portuguese` says the page exists. */
-  pt?: string;
-  bilingual: boolean;
-  portuguese?: boolean;
   /**
-   * Market-locale URLs for this path, keyed by locale code (de, fr, ar…), or undefined
-   * where the path has none. Each is emitted as its own <url> with the shared cluster.
+   * Absolute URL per locale code whose page EXISTS for this path, English included and
+   * first. One entry per locale is emitted, and every entry carries the whole map as its
+   * hreflang cluster, which is what makes the cluster reciprocal. Built from `mirrorsOf`
+   * by the caller, so a locale with no page for this path is simply absent and no 404 is
+   * ever advertised. Replaced the en/es/pt/market parameters on 2026-09-25 when the
+   * locale count went from three to ten.
    */
-  market?: Record<string, string>;
+  languages: Record<string, string>;
   priority: number;
   changeFrequency?: SitemapChangeFrequency;
   lastModified?: Date;
@@ -153,19 +146,12 @@ export function buildLocaleSitemapEntries({
    * index the photograph on it. That matters here more than on most sites, because the
    * people buying door hardware routinely search Google Images for a shape they can
    * recognise — a patch fitting, a lock case forend — before they know a model number.
-   * Both locales get the same list; the image is the same file either way.
+   * Every locale gets the same list; the image is the same file either way.
    */
   images?: string[];
   /**
-   * Demonstration clips on this page, emitted as <video:video>.
-   *
-   * Same argument as images, one step further: a video sitemap is how a clip becomes
-   * eligible for a video result at all, and this catalogue's clips answer the question a
-   * spec table cannot — what the part does when a person's hand is on it.
-   *
-   * Both locales list the same file. The clip has no spoken commentary, so there is
-   * nothing in it that is English rather than Spanish; only the title and description
-   * differ, and those come from the page.
+   * Demonstration clips on this page, emitted as <video:video>. Same argument as images,
+   * one step further: a video sitemap is how a clip becomes eligible for a video result.
    */
   videos?: SitemapVideo[];
 }): SitemapPolicyEntry[] {
@@ -177,28 +163,9 @@ export function buildLocaleSitemapEntries({
     priority,
   };
 
-  const marketUrls = Object.entries(market ?? {});
-  if (!bilingual && !portuguese && !marketUrls.length) return [{ url: en, ...shared }];
+  const urls = Object.values(languages);
+  if (urls.length < 2) return [{ url: languages.en ?? urls[0]!, ...shared }];
 
-  /*
-    The alternate set is built from the locales that EXIST for this path, not from a fixed
-    pair. Portuguese arrived on 2026-09-16 as a partial mirror, so most paths are en+es and
-    some are en+es+pt — and listing pt on a path with no Portuguese page would put a 404 in
-    every sitemap entry for that path, in all three languages at once.
-
-    Every URL in the group carries the same `languages` map, which is what makes the
-    cluster reciprocal: a crawler that finds any one of them finds the others.
-  */
-  const languages: Record<string, string> = { en, "x-default": en };
-  if (bilingual) languages.es = es;
-  if (portuguese && pt) languages.pt = pt;
-  for (const [code, url] of marketUrls) languages[code] = url;
-
-  const urls = [
-    en,
-    ...(bilingual ? [es] : []),
-    ...(portuguese && pt ? [pt] : []),
-    ...marketUrls.map(([, url]) => url),
-  ];
-  return urls.map((url) => ({ url, ...shared, alternates: { languages } }));
+  const cluster: Record<string, string> = { ...languages, "x-default": languages.en ?? urls[0]! };
+  return urls.map((url) => ({ url, ...shared, alternates: { languages: cluster } }));
 }

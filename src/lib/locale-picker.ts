@@ -1,6 +1,7 @@
 import { representatives } from "../data/representatives.ts";
 import { siteSettings } from "../data/navigation.ts";
 import { type Locale } from "../data/locales.ts";
+import { tx } from "./i18n-client.ts";
 
 /*
   The language column and the trigger label live in ./language-choices.ts and are
@@ -63,12 +64,10 @@ export interface ContactChoice {
  */
 export function contactChoices(locale: Locale = "en"): ContactChoice[] {
   /* English, never the other translation — see the note in src/lib/localised.ts. */
-  const pick = (en: string, es?: string, pt?: string) =>
-    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
   const grouped = new Map<string, ContactChoice>();
 
   for (const rep of representatives) {
-    const region = pick(rep.region, rep.regionEs, rep.regionPt);
+    const region = tx(locale, rep.region, { es: rep.regionEs, pt: rep.regionPt });
     const existing = grouped.get(region);
     if (existing) {
       existing.cities.push(rep.city);
@@ -80,7 +79,7 @@ export function contactChoices(locale: Locale = "en"): ContactChoice[] {
       cities: [rep.city],
       phone: rep.phone,
       email: rep.email,
-      note: rep.note ? pick(rep.note, rep.noteEs, rep.notePt) : undefined,
+      note: rep.note ? tx(locale, rep.note, { es: rep.noteEs, pt: rep.notePt }) : undefined,
     });
   }
 

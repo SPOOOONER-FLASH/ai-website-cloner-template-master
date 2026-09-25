@@ -1,4 +1,5 @@
 import type { Locale } from "@/data/site";
+import { tx } from "../lib/i18n-client.ts";
 /**
  * What the search panel offers before anyone types.
  *
@@ -106,7 +107,5 @@ export function suggestionHref(suggestion: SearchSuggestion, locale: Locale): st
 
 /** English, never Spanish, where a Portuguese label is missing — see src/lib/localised.ts. */
 export function suggestionLabel(suggestion: SearchSuggestion, locale: Locale): string {
-  if (locale === "es") return suggestion.labelEs;
-  if (locale === "pt") return suggestion.labelPt ?? suggestion.label;
-  return suggestion.label;
+  return tx(locale, suggestion.label, { es: suggestion.labelEs, pt: suggestion.labelPt });
 }

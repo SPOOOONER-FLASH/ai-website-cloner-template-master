@@ -1,0 +1,171 @@
+{
+  "bathroom-accessories": {
+    "name": "Badaccessoires",
+    "summary": "Badaccessoires, überwiegend aus Edelstahl, in Oberflächen passend zum Türbeschlag."
+  },
+  "brass-steel-hinges": {
+    "name": "Türbänder aus Messing und Stahl",
+    "summary": "Bandreihen aus Messing, Edelstahl und Stahl für Objekttüren, mit Kugellager- und Gleitlagergelenken."
+  },
+  "care-grab-bars": {
+    "name": "Haltegriffe für den Pflegebereich",
+    "summary": "Haltegriffe und ein klappbarer Duschsitz für barrierefreie Bäder: gerade, gerändelte und abgewinkelte Griffe zur festen Wandmontage sowie hochklappbare Griffe.",
+    "children": {
+      "flip-up-grab-bars": {
+        "name": "Klappbare Haltegriffe"
+      },
+      "fixed-grab-bars": {
+        "name": "Feste Haltegriffe"
+      }
+    }
+  },
+  "deadbolts": {
+    "name": "Riegelschlösser",
+    "summary": "Riegelschlösser mit einem oder zwei Zylindern, 25 mm Riegelausschluss, Sägeschutz-Rollstift und 60 oder 70 mm Dornmaß."
+  },
+  "door-closers": {
+    "name": "Türschließer",
+    "summary": "Türschließer mit Aluminiumgehäuse für Objekttüren sowie ein Bodentürschließer für Holztüren."
+  },
+  "floor-springs-and-pivots": {
+    "name": "Bodentürschließer und Zapfenbänder",
+    "summary": "Bodentürschließer, obere Zapfenbänder, Obentürschließer und Hydraulikbänder für zapfengelagerte Holz-, Metall- und Glastüren.",
+    "children": {
+      "floor-springs": {
+        "name": "Bodentürschließer"
+      },
+      "top-pivots": {
+        "name": "Obere Zapfenbänder"
+      },
+      "pivot-top-patches": {
+        "name": "Obere Glastür-Klemmbeschläge"
+      },
+      "overhead-door-closers": {
+        "name": "Obentürschließer"
+      },
+      "hydraulic-hinges": {
+        "name": "Hydraulikbänder"
+      }
+    }
+  },
+  "glass-door-accessories": {
+    "name": "Glastürbeschläge",
+    "summary": "Klemmbeschläge und Stoßgriffe für rahmenlose Ganzglastüren.",
+    "children": {
+      "glass-door-patch-fittings": {
+        "name": "Glastür-Klemmbeschläge"
+      },
+      "glass-door-handles": {
+        "name": "Glastürgriffe"
+      }
+    }
+  },
+  "grip-handle-sets": {
+    "name": "Stoßgriffe und Griffgarnituren",
+    "summary": "Stoßgriffe, Ziehgriffe und Muschelgriffe für Eingangs- und Schiebetüren."
+  },
+  "hardware-accessories": {
+    "name": "Beschlagzubehör",
+    "summary": "Türspione, Türstopper, Kabelübergänge, Riegel, WC-Anzeiger, Fallen und Türsicherungen.",
+    "children": {
+      "armoured-lock-covers": {
+        "name": "Zylinderschutz für Panzertüren"
+      },
+      "door-viewers": {
+        "name": "Türspione"
+      },
+      "door-stoppers": {
+        "name": "Türstopper"
+      },
+      "power-transfer-devices": {
+        "name": "Kabelübergänge"
+      },
+      "door-flush-bolts": {
+        "name": "Kantenriegel"
+      },
+      "house-numbers": {
+        "name": "Hausnummern"
+      },
+      "indicators": {
+        "name": "WC-Anzeiger"
+      },
+      "latches": {
+        "name": "Fallen"
+      },
+      "security-door-guards": {
+        "name": "Türsicherungen"
+      }
+    }
+  },
+  "knob-locks": {
+    "name": "Knaufschlösser",
+    "summary": "Zylindrische und Tubular-Knaufschlösser mit Eingangs-, WC-, Durchgangs- und Kommunikationsfunktion.",
+    "children": {
+      "commercial-locks": {
+        "name": "Objektschlösser"
+      },
+      "heavy-duty-cylindrical-locks": {
+        "name": "Zylindrische Schlösser für hohe Beanspruchung"
+      },
+      "light-duty-cylindrical-locks": {
+        "name": "Zylindrische Schlösser für leichte Beanspruchung"
+      },
+      "tubular-locks": {
+        "name": "Tubular-Schlösser"
+      },
+      "wafer-locks": {
+        "name": "Plättchenschlösser"
+      }
+    }
+  },
+  "lever-handles": {
+    "name": "Drückergarnituren",
+    "summary": "Drückergarnituren mit Tubular-Falle, überwiegend aus Zinkdruckguss, für Eingangs-, WC- und Durchgangstüren, mit passenden Fallen und Schließblechen."
+  },
+  "lock-cases": {
+    "name": "Einsteckschlösser",
+    "summary": "Einsteckschlösser in mehreren Dornmaßen, Entfernungen und Riegelausführungen, für Holz- und Metalltüren."
+  },
+  "lock-cylinders": {
+    "name": "Schließzylinder",
+    "summary": "Profil- und Schlüsselzylinder, auch als Schließanlage und mit Bauschlüsselfunktion."
+  },
+  "night-latches-rim-locks": {
+    "name": "Nachtriegel und Aufschraubschlösser",
+    "summary": "Aufliegende Nachtriegel und Aufschraubschlösser, meist mit 60 mm Dornmaß, montiert durch eine einzige Zylinderbohrung."
+  },
+  "panic-exit-devices": {
+    "name": "Panikverschlüsse",
+    "summary": "Panikstangen und Touch-Bars für Fluchtwege – auch für Feuerschutztüren, mit Alarm, für zweiflügelige Türen und mit Zweipunktverriegelung.",
+    "children": {
+      "fire-door": {
+        "name": "Panikverschlüsse für Feuerschutztüren"
+      },
+      "alarmed": {
+        "name": "Panikverschlüsse mit Alarm"
+      },
+      "multi-point": {
+        "name": "Mehrpunktverriegelung"
+      },
+      "exterior-trim": {
+        "name": "Außenbeschläge"
+      },
+      "special-applications": {
+        "name": "Sonderanwendungen"
+      }
+    }
+  },
+  "sliding-hook-locks": {
+    "name": "Hakenriegelschlösser",
+    "summary": "Hakenriegelschlösser für Schiebetüren und schmale Rahmenprofile."
+  },
+  "stainless-steel-handles": {
+    "name": "Edelstahl-Drücker",
+    "summary": "Edelstahl-Drücker, darunter die Serie 9000 für Türstärken von 35–50 mm, sowie ein verdeckter Schiebetürgriff.",
+    "children": {
+      "brass-pull-handles": {
+        "name": "Messing-Stoßgriffe"
+      }
+    }
+  }
+}
