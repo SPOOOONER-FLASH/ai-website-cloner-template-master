@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 import type { Locale } from "@/data/site";
+import { dict } from "@/lib/i18n";
 
 /*
   Applications, not projects.
@@ -38,7 +39,7 @@ const copy = {
 } as const;
 
 export function ProjectListing({ locale = "en" }: { locale?: Locale }) {
-  const text = copy[locale];
+  const text = dict(copy, locale);
   return (
     <main className="isolate mt-48 flex-grow justify-self-start lg:mt-192">
       <div className="layout space-y-96 lg:space-y-136">

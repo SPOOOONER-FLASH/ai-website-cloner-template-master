@@ -4,6 +4,8 @@ import { brandProductImageRef } from "./product-image-branding";
 // Safe: products.ts does not import this module, so there is no cycle.
 import { publishedProducts } from "./products";
 import type { Category } from "./types";
+import { t, withOverlays, type Overlayed } from "../lib/i18n.ts";
+import { locales, type Locale, type OverlayLocale } from "./locales.ts";
 
 /**
  * Product category tree — mirrors the client's own cantonlock.com catalogue,
@@ -24,9 +26,26 @@ function applyCategoryImageAltOverrides(category: Category): Category {
   };
 }
 
-export const categories = (categoriesFile.categories as Category[]).map(
-  applyCategoryImageAltOverrides,
-);
+export const categories: Category[] = withOverlays(
+  (categoriesFile.categories as Category[]).map(applyCategoryImageAltOverrides),
+  "categories",
+  (c) => c.slug,
+).map((category) => ({
+  ...category,
+  /*
+    A child's overlay sits under its parent in content/i18n/<code>/categories.json
+    (`children: { <slug>: { name } }`), so it is lifted onto the child here and
+    `t(child, "name", locale)` works for a sub-category exactly as for its parent.
+  */
+  children: category.children?.map((child) => {
+    const i18n: Overlayed["i18n"] = {};
+    for (const [code, translated] of Object.entries(category.i18n ?? {})) {
+      const nested = (translated as { children?: Record<string, Record<string, unknown>> }).children?.[child.slug];
+      if (nested) i18n[code as OverlayLocale] = nested;
+    }
+    return Object.keys(i18n).length ? { ...child, i18n } : child;
+  }),
+}));
 
 /* -------------------------------------------------------------------------
  * Lookup helpers — pure functions over the tree, no side effects.
@@ -65,6 +84,8 @@ export interface MenuCategory {
   label: string;
   labelEs: string;
   labelPt: string;
+  /** The label in every locale, English where a translation is missing — see src/lib/i18n.ts. */
+  labels: Record<Locale, string>;
   /**
    * Sub-categories, for the menu's second level.
    *
@@ -73,7 +94,7 @@ export interface MenuCategory {
    * query the filter rail on the category page writes. Only four of the fifteen
    * categories have any; the rest link straight through.
    */
-  children: { slug: string; label: string; labelEs: string; labelPt: string; count: number }[];
+  children: { slug: string; label: string; labelEs: string; labelPt: string; labels: Record<Locale, string>; count: number }[];
   count: number;
 }
 
@@ -86,6 +107,9 @@ export interface MenuCategory {
  * code, so importing it there would ship all of that to every visitor to render fifteen
  * labels.
  */
+const labelsOf = (record: object & { name: string }): Record<Locale, string> =>
+  Object.fromEntries(locales.map((code) => [code, t(record, "name", code)])) as Record<Locale, string>;
+
 export function getMenuCategories(): MenuCategory[] {
   /*
     Built from getTopLevelCategories(), not the raw declaration, so the drawer cannot
@@ -120,6 +144,7 @@ export function getMenuCategories(): MenuCategory[] {
         label: child.name,
         labelEs: child.nameEs ?? child.name,
         labelPt: child.namePt ?? child.name,
+        labels: labelsOf(child),
         count: inCategory.filter((p) => p.categoryPath[1] === child.slug).length,
       }))
       .filter((child) => child.count > 0);
@@ -129,6 +154,7 @@ export function getMenuCategories(): MenuCategory[] {
       label: category.name,
       labelEs: category.nameEs ?? category.name,
       labelPt: category.namePt ?? category.name,
+      labels: labelsOf(category),
       count: inCategory.length,
       children,
     };

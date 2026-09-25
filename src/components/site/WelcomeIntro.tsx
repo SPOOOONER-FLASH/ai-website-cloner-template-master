@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ChevronDownIcon, HydeLockup } from "./icons";
+import { dict } from "@/lib/i18n-client";
 
 const introCopy = {
   en: {
@@ -72,7 +73,7 @@ export function WelcomeIntro({
   homeAccent?: boolean;
 }) {
   const [expanded, setExpanded] = useState(false);
-  const text = introCopy[locale];
+  const text = dict(introCopy, locale);
 
   return (
     <div className="layout">
@@ -115,7 +116,7 @@ export function WelcomeIntro({
                 type="button"
                 onClick={() => setExpanded((v) => !v)}
                 aria-expanded={expanded}
-                className="mb-24 flex w-full justify-between gap-x-24 text-left sm:hidden sm:cursor-default"
+                className="mb-24 flex w-full justify-between gap-x-24 text-start sm:hidden sm:cursor-default"
               >
                 <h2 className="text-h3 text-ink">{text.more}</h2>
                 <span

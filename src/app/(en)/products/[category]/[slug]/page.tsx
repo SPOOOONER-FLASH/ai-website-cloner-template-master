@@ -5,7 +5,7 @@ import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug, isPublished, products } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
-import { defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 import {
   canonicalProductCategory,
   canonicalProductSlug,
@@ -52,7 +52,6 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const path = `/products/${canonicalCategory}/${slug}/`;
   const url = absoluteUrl(path);
-  const spanishUrl = absoluteUrl(`/es${path}`);
 
   return {
     // seoTitle already carries the brand, so opt out of the layout's "%s | Canton Hyland".
@@ -88,12 +87,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         en/es/pt; these two still said en/es, so the pt page pointed at neighbours that did
         not point back. The built HTML is the only place that shows it.
       */
-      languages: {
-        en: url,
-        es: spanishUrl,
-        pt: absoluteUrl(`/pt/products/${category}/${slug}/`),
-        "x-default": url,
-      },
+      /* Ten locales since 2026-09-25: the seven overlay trees name this page, so it must name
+         them back. alternateLanguages() derives the set from mirrorsOf(), same as every other route. */
+      languages: alternateLanguages(`/products/${category}/${slug}/`),
     },
     openGraph: {
       type: "website",

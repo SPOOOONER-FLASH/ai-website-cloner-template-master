@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 import { capabilityCopy, capabilitySteps } from "@/data/capability";
+import { dict, tx } from "@/lib/i18n-client";
 
 /**
  * The production chain, advanced by scrolling.
@@ -61,10 +62,8 @@ export function CapabilityChain({
   locale?: Locale;
   models: number;
 }) {
-  const text = capabilityCopy[locale];
+  const text = dict(capabilityCopy, locale);
   /* English, never the other translation — see the note in src/lib/localised.ts. */
-  const pickCopy = (en: string, es: string, pt: string) =>
-    locale === "es" ? es : locale === "pt" ? pt : en;
   const steps = capabilitySteps({ models });
   const [active, setActive] = useState(0);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
@@ -191,10 +190,10 @@ export function CapabilityChain({
                   </span>
                   <div>
                     <h3 className="text-h3 text-ink">
-                      {pickCopy(step.title, step.titleEs, step.titlePt)}
+                      {tx(locale, step.title, { es: step.titleEs, pt: step.titlePt })}
                     </h3>
                     <p className="mt-16 max-w-[58ch] text-c1 text-ink-secondary">
-                      {pickCopy(step.body, step.bodyEs, step.bodyPt)}
+                      {tx(locale, step.body, { es: step.bodyEs, pt: step.bodyPt })}
                     </p>
                     {/*
                       A step without a countable fact shows nothing here. That gap is
@@ -206,7 +205,7 @@ export function CapabilityChain({
                       <p className="mt-24 text-c2 text-ink">
                         <span className="text-lead tabular-nums">{step.figure.value}</span>{" "}
                         <span className="text-ink-secondary">
-                          {pickCopy(step.figure.label, step.figure.labelEs, step.figure.labelPt)}
+                          {tx(locale, step.figure.label, { es: step.figure.labelEs, pt: step.figure.labelPt })}
                         </span>
                       </p>
                     ) : null}

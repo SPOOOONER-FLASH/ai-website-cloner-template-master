@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { termsByGroup } from "@/lib/hardware-term-usage";
+import { dict, t } from "@/lib/i18n";
 
 /** "Backset" → "backset" inside a sentence; "UL listing" and "BHMA code" keep their capitals. */
 const soft = (t: string) => (/^\p{Lu}\p{Ll}/u.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
@@ -66,7 +67,7 @@ const COPY = {
 } as const;
 
 export function HardwareTerms({ locale }: { locale: Locale }) {
-  const copy = COPY[locale];
+  const copy = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
   /*
     English is the fallback, never the other translation. A Portuguese entry that quietly
@@ -97,7 +98,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
               >
                 <dt className="col-span-full lg:col-span-3 xl:col-span-6">
                   <span className="text-h3 text-ink">
-                    {pick(term.term, term.termEs, term.termPt)}
+                    {t(term, "term", locale)}
                   </span>
                   <span className="mt-8 block text-c2 text-ink-secondary">
                     {models > 0 ? copy.models(models) : copy.notPublished}
@@ -124,7 +125,7 @@ export function HardwareTerms({ locale }: { locale: Locale }) {
                         href={`${prefix}/news/${term.article}/`}
                         className="short-marker short-marker-compact text-c2 text-brand hover:text-brand-hover"
                       >
-                        {copy.read(pick(term.term, term.termEs, term.termPt))}
+                        {copy.read(t(term, "term", locale))}
                       </Link>
                     </p>
                   ) : null}

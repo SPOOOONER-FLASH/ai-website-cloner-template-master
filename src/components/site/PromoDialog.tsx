@@ -183,7 +183,7 @@ export function PromoDialog() {
       aria-label={locale === "es" ? "Oferta destacada" : locale === "pt" ? "Oferta em destaque" : "Featured offer"}
       // Passive promotion stays below the sticky header's z-10 stacking context, so
       // user-requested search and menu overlays inside that header always remain usable.
-      className="fixed bottom-16 left-16 right-16 z-[5] xs:bottom-24 xs:left-auto xs:right-24 xs:w-[360px]"
+      className="fixed bottom-16 start-16 end-16 z-[5] xs:bottom-24 xs:start-auto xs:end-24 xs:w-[360px]"
     >
       <PromoCardBlock card={activeCard} locale={locale} onDismiss={dismissCard} />
     </aside>
@@ -216,7 +216,7 @@ function PromoCardBlock({
         type="button"
         onClick={() => onDismiss(dismissalKey)}
         aria-label={closeLabel}
-        className="absolute right-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
+        className="absolute end-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
       >
         <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">
           <path
@@ -236,7 +236,7 @@ function PromoCardBlock({
         )}
 
         <div className="flex flex-col justify-between">
-          <div className="px-16 pb-12 pt-14 pr-40">
+          <div className="px-16 pb-12 pt-14 pe-40">
             <p className="text-c1 font-bold text-ink">
               {title}
               {titleLight ? <span className="font-normal"> {titleLight}</span> : null}

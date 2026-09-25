@@ -1,4 +1,5 @@
 import type { Locale } from "@/data/site";
+import { dict, type LocaleDict } from "../../lib/i18n-client.ts";
 export type MenuLocale = Locale;
 export type MenuVariant = "rfq-concierge" | "specify-source-company";
 
@@ -37,7 +38,7 @@ export interface SpecifyExperience {
 
 export type MenuExperience = ConciergeExperience | SpecifyExperience;
 
-const concierge: Record<MenuLocale, ConciergeExperience> = {
+const concierge: LocaleDict<ConciergeExperience> = {
   en: {
     kind: "rfq-concierge",
     eyebrow: "Specify, source, enquire",
@@ -178,7 +179,7 @@ const concierge: Record<MenuLocale, ConciergeExperience> = {
   },
 };
 
-const specify: Record<MenuLocale, SpecifyExperience> = {
+const specify: LocaleDict<SpecifyExperience> = {
   en: {
     kind: "specify-source-company",
     eyebrow: "Direct routes",
@@ -375,5 +376,5 @@ export function getMenuExperience(
   locale: MenuLocale,
   variant: MenuVariant = MENU_VARIANT,
 ): MenuExperience {
-  return variant === "rfq-concierge" ? concierge[locale] : specify[locale];
+  return variant === "rfq-concierge" ? dict(concierge, locale) : dict(specify, locale);
 }

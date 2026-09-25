@@ -16,6 +16,7 @@ import {
 } from "@/data/company";
 import { siteSettings } from "@/data/navigation";
 import { EmailLink } from "./EmailLink";
+import { dict, tx } from "@/lib/i18n";
 const copy = {
   en: {
     eyebrow: "Canton Hyland",
@@ -86,7 +87,7 @@ const copy = {
 } as const;
 
 export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
-  const text = copy[locale];
+  const text = dict(copy, locale);
   /*
     Three two-way switches, generalised on 2026-09-16 when /pt/company shipped.
 
@@ -99,8 +100,8 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
     src/lib/localised.ts: an English caption reads as unfinished, a Spanish one reads as
     finished and wrong.
   */
-  const paragraphs = locale === "es" ? profileEs : locale === "pt" ? profilePt : profile;
-  const companyStats = locale === "es" ? statsEs : locale === "pt" ? statsPt : stats;
+  const paragraphs = dict({ en: profile, es: profileEs, pt: profilePt }, locale);
+  const companyStats = dict({ en: stats, es: statsEs, pt: statsPt }, locale);
   const contactHref = locale === "en" ? "/contact" : `/${locale}/contact`;
   const localiseImageLabel = (label: string, labelEs?: string, labelPt?: string) =>
     locale === "es" ? (labelEs ?? label) : locale === "pt" ? (labelPt ?? label) : label;
@@ -196,7 +197,7 @@ export function CompanyOverview({ locale = "en" }: { locale?: Locale }) {
             {representatives.map((rep) => (
               <div key={`${rep.region}-${rep.city}`} className="border-t border-line pt-16">
                 <p className="text-c2 text-ink-secondary">
-                  {(locale === "es" ? rep.regionEs : locale === "pt" ? rep.regionPt : undefined) ?? rep.region}
+                  {tx(locale, rep.region, { es: rep.regionEs, pt: rep.regionPt })}
                 </p>
                 <p className="mt-8 text-c1 text-ink">{rep.city}</p>
                 <address className="mt-4 not-italic text-c2 text-ink-secondary">

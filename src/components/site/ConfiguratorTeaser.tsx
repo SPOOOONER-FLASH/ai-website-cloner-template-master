@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { publishedProducts } from "@/data/products";
 import { STEPS, STEPS_ES, STEPS_PT } from "@/lib/configurator";
+import { dict } from "@/lib/i18n";
 
 /**
  * The configurator, offered from inside the catalogue.
@@ -69,7 +70,7 @@ const COPY = {
 } as const;
 
 export function ConfiguratorTeaser({ locale = "en" }: { locale?: Locale }) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const steps = (locale === "es" ? STEPS_ES : locale === "pt" ? STEPS_PT : STEPS).length;
   const models = publishedProducts.length;
   const href = `${locale === "en" ? "" : `/${locale}`}/configurator/`;

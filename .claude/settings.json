@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/track-locale-mirror.mjs --quiet",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

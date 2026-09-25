@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { sortForDisplay } from "@/lib/product-finder";
+import { t } from "@/lib/i18n";
 
 interface ProductIndexListProps {
   products: Product[];
@@ -27,7 +28,7 @@ export function ProductIndexList({ products, label, locale = "en" }: ProductInde
   const pt = locale === "pt";
   /* English is the fallback, never Spanish — see src/lib/localised.ts. */
   const nameOf = (product: { name: string; nameEs?: string; namePt?: string }) =>
-    (es ? product.nameEs : pt ? product.namePt : undefined) ?? product.name;
+    t(product, "name", locale);
   const base = locale === "en" ? "" : `/${locale}`;
   if (!products.length) return null;
   const items = sortForDisplay(products);

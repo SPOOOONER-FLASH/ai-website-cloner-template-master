@@ -1,7 +1,7 @@
-import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
-import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
+import { t } from "./i18n.ts";
+import { specLabels } from "./i18n.ts";
 
 /**
  * What a whole collection spans, computed from the products in it.
@@ -109,13 +109,13 @@ export function collectionSpecRanges(products: Product[], locale: Locale = "en")
   const es = locale === "es";
   const pt = locale === "pt";
   /* One table per locale, so the row lookup and the heading cannot disagree. */
-  const labels = pt ? SPEC_LABELS_PT : SPEC_LABELS_ES;
+  const labels = specLabels(locale);
   const out: SpecRange[] = [];
 
   for (const field of FIELDS) {
     const values: string[] = [];
     for (const product of products) {
-      const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+      const localeRows = t(product, "specs", locale);
       const rows = localeRows?.length ? localeRows : product.specs;
       /*
         Spanish records are keyed by Spanish labels, so the English label is expanded
