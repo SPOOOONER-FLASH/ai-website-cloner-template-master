@@ -6,3 +6,4 @@
 - **测试**：tsc 通过。发布后实测：HTML 有这段代码、load 后 gtm.js 下载、dataLayer 有 gtm.js 事件。
 - **影响雷茵**：AnalyticsHead 只在 HYDE 三个 layout 里用；out-rayen 没有 GTM。
 - **上线实测（069a44f1ae8，/products/care-grab-bars/）**：3714ms window load，同一刻请求 gtm.js（GTM-MQHHPGJL）；`google_tag_manager` 里有该容器；dataLayer 事件依次为 gtm.js、gtag js/config、gtm.dom、gtm.load。G-RBTE7KF82P page_view 1 次；G-X7EMRX2V2X 仍在收，等甲方按手册 ④ 删除。
+- **2026-09-25 撤回延后加载**：甲方在 GTM 里点「Test your website」，结果是「Your Google tag wasn't detected」。线上 HTML 的 head 里有代码（第 4,786 字节），唯一的变化就是外面那层 load 包装。Analytics.tsx 的注释早就写着检测器是抓原文、按原样代码格式去找，所以改回 Google 安装对话框里的原样代码，连换行也一样，立即执行。gtm.js 仍是异步下载，不挡页面显示；容器目前是空的，性能代价很小。hoist 正则两种写法都认（已用原样文本验证）。
