@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 603 次提交
+最近 30 天 · 共 604 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 01:35 | HYDE | Fix HYDE copy lint and record verified integration | `f9002df3e12` |
 | 01:25 | 中立 | Merge HYDE guide image correction and home motion with current main | `369ed066a9a` |
 
 ## 2026-09-24
