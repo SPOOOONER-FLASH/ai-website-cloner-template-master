@@ -34,7 +34,7 @@ test("the 2026-09-02 review placements still hold", () => {
 });
 
 test("BH01 does not claim a door type, because it mounts on a wall", () => {
-  const bh01 = product("bh01-bathroom-accessories");
+  const bh01 = product("bh01-grab-bar");
   assert.ok(
     !bh01.doorTypes.includes("Bathroom"),
     '"Bathroom" is a room, not a door type — it told buyers a grab bar goes on a door',

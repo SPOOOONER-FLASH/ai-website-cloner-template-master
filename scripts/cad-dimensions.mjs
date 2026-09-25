@@ -135,8 +135,8 @@ const FROM_DRAWINGS = {
       ["Spindle", "8mm"],
     ],
   },
-  "bh38-bathroom-accessories": {
-    drawing: "bh38-bathroom-accessories-4.webp",
+  "bh38-robe-hook": {
+    drawing: "bh38-robe-hook-4.webp",
     specs: [
       ["Rose diameter", "48mm"],
       ["Projection", "48mm"],
@@ -145,8 +145,8 @@ const FROM_DRAWINGS = {
       ["Rose depth", "20mm"],
     ],
   },
-  "bh39-bathroom-accessories": {
-    drawing: "bh39-bathroom-accessories-2.webp",
+  "bh39-robe-hook": {
+    drawing: "bh39-robe-hook-2.webp",
     specs: [
       ["Rose size", "45mm square"],
       ["Projection", "45mm"],
@@ -155,8 +155,8 @@ const FROM_DRAWINGS = {
       ["Rose depth", "18.5mm"],
     ],
   },
-  "bh42-bathroom-accessories": {
-    drawing: "bh42-bathroom-accessories-3.webp",
+  "bh42-robe-hook": {
+    drawing: "bh42-robe-hook-3.webp",
     specs: [
       ["Rose diameter", "48mm"],
       ["Projection", "48mm"],
@@ -164,8 +164,8 @@ const FROM_DRAWINGS = {
       ["Rose depth", "20mm"],
     ],
   },
-  "bh54-bathroom-accessories": {
-    drawing: "bh54-bathroom-accessories-3.webp",
+  "bh54-double-robe-hook": {
+    drawing: "bh54-double-robe-hook-3.webp",
     specs: [
       ["Overall length", "82mm"],
       ["Projection", "56mm"],
@@ -175,8 +175,8 @@ const FROM_DRAWINGS = {
       ["Tube diameter", "22mm, 8mm at the tip"],
     ],
   },
-  "bh21-bathroom-accessories": {
-    drawing: "bh21-bathroom-accessories-4.webp",
+  "bh21-toilet-roll-holder": {
+    drawing: "bh21-toilet-roll-holder-4.webp",
     specs: [
       ["Width", "152mm"],
       ["Drop", "96mm"],
@@ -319,8 +319,8 @@ const FROM_DRAWINGS = {
       ["Spindle", "8mm"],
     ],
   },
-  "bh41-bathroom-accessories": {
-    drawing: "bh41-bathroom-accessories-2.webp",
+  "bh41-robe-hook": {
+    drawing: "bh41-robe-hook-2.webp",
     specs: [
       ["Height", "45mm"],
       ["Projection", "45mm"],
@@ -378,8 +378,8 @@ const FROM_DRAWINGS = {
     */
   },
 
-  "bh33-bathroom-accessories": {
-    drawing: "bh33-bathroom-accessories-3.webp",
+  "bh33-towel-shelf": {
+    drawing: "bh33-towel-shelf-3.webp",
     specs: [
       ["Tube diameter", "12mm"],
       ["Projection", "200mm"],

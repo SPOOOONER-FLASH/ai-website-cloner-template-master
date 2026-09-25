@@ -120,7 +120,15 @@ test("models sharing a letter prefix in one category share a product name", () =
     behind this one (p9's 4017, the Kaiser knobs, the 暗门锁 A5-A009/A011/A012), and once
     they are in, 旋钮 earns a leaf of its own and this set goes back to empty.
   */
-  const DIFFERENT_PART_TYPE = new Set<string>(["lever-handles::ET::ET4017"]);
+  /*
+      BH57 — named from its photograph on 2026-09-24 (docs/copy/naming-bathroom-accessories.md):
+      two parallel rails on one hinge, where BH56 and BH58 each have one. "Double" is what the
+      picture shows, not a name taken off the category.
+  */
+  const DIFFERENT_PART_TYPE = new Set<string>([
+    "lever-handles::ET::ET4017",
+    "care-grab-bars/flip-up-grab-bars::BH::BH57",
+  ]);
 
   const disagreements: string[] = [];
   for (const [key, group] of groups) {

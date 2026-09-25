@@ -23,7 +23,7 @@
 `archive/2026-09-22-ga4-www-gsc-video-nginx.md`，**不要再照着做**。
 每一件的实测结果写在那份存档的开头。
 
-**三件。②③ 是 09-24 新加的。** 09-23 的「服务器停止更新」已经修好，移进了 `archive/2026-09-24-server-deploy-v2.md`。
+**四件。②③④ 是 09-24 新加的。** 09-23 的「服务器停止更新」已经修好，移进了 `archive/2026-09-24-server-deploy-v2.md`。
 
 ---
 
@@ -120,6 +120,9 @@ https://cantonlock.com/guides/hardware-warranty-what-it-covers-2026/
 要在服务器上装一条 301。**装好之前旧网址是 404**（09-24 实测），Google 已收录的那一条会变成死链，所以今天就装。
 同一次安装还会带上另外两条（09-24 加）：8827、8828 两个空壳重复页已并入 8827 SSET / 8828 SSET，
 旧网址 `/products/lever-handles/8827-lever-handle/`、`/products/lever-handles/8828-lever-handle/` 也会 301 过去。
+再加 54 条（09-24 晚加）：卫浴 54 个产品按实拍图改了名，网址跟着改（`bh01-bathroom-accessories` → `bh01-grab-bar` 这种），
+其中扶手和淋浴凳移到 care-grab-bars，BH15/16/17 插销和弹簧舌移到 hardware-accessories。旧网址一律一跳到新网址。
+**等我说「卫浴那次已部署」之后再贴**（脚本装的是服务器上已拉到的规则，早贴会漏掉这 54 条）；已经贴过也没关系，再贴一次就行。
 
 **在宝塔终端贴这一行**：
 
@@ -130,6 +133,18 @@ bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
 **成功的样子**：最后一行是 `All redirects live. Now purge Cloudflare — it caches 301s.`
 **然后 purge**（Cloudflare 会缓存 301）。
 **失败时**脚本会自己把旧配置还原、不重载，网站不受影响 —— 整屏截图发我。
+
+### ④ GA4：第二个媒体资源 G-X7EMRX2V2X 是谁加的？—— 回我一句话（2026-09-24）
+
+**不用操作，回答就行。** 09-24 实测：网站每次访问发 1 次 page_view 给我们的资源 G-RBTE7KF82P（没有重复计数），
+**同时还发 1 次给另一个资源 G-X7EMRX2V2X**。它不是网站代码加的，也不在 GTM 里，是 GA 后台
+「管理 → 数据流 → 配置代码设置 → 管理 Google 代码」里把 G-X7EMRX2V2X 加成了同一个代码的目标。
+
+- **是你或同事有意加的**（比如另一个账号也要看数据）→ 回我「保留」，什么都不用改。
+- **不知道是谁加的** → 回我「不知道」，我写步骤给你删掉。删掉以后每次访问少下载两次 Google 脚本，手机上页面会快一点。
+
+另外，发布会话建议把 GTM 改成页面加载完再装（手机更快），代价是「页面还没加载完就离开」的访客不再被 GTM 记录。
+GTM 里现在没有任何代码，所以目前没有实际损失。**要不要改，你定**，回「改」或「不改」。
 
 ---
 

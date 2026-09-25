@@ -697,9 +697,9 @@ const FIELDS = [
     4. 标题和描述不出现认证、防火等级、小时数、标准号 —— 这些只有证书在手才写。
 */
 const BUYER_NOUN = {
-  en: /lock|latch|hinge|handle|lever|knob|bar|device|trim|closer|cylinder|bolt|stop|viewer|number|accessor|grab|hook|guard|indicator|fitting|pull|patch|spring|pivot|set|case|body|plate|escutcheon|rose|chain|key|damper|holder|bracket|sign|house no|numeral|coordinator|hook/i,
-  es: /cerradura|pestillo|picaporte|bisagra|manija|perilla|barra|guarnici|cierrapuertas|cilindro|cerrojo|pasador|tope|mirilla|n[úu]mero|accesorio|agarradera|gancho|indicador|herraje|tirador|pinza|pivote|juego|caja|cuerpo|placa|roseta|cadena|llave|amortiguador|soporte|se[ñn]al|selector|pasacables|percha|numeral|coordinador/i,
-  pt: /fechadura|lingueta|dobradi|ma[çc]aneta|barra|guarni|mola|cilindro|trava|ferrolho|fecho|batedor|olho|n[úu]mero|acess[óo]rio|gancho|indicador|ferragem|puxador|pin[çc]a|piv[ôo]|conjunto|caixa|corpo|placa|roseta|corrente|chave|amortecedor|suporte|espelho|trinco|ferragens|batedor|transfer[êe]ncia|coordenador|numera/i,
+  en: /lock|latch|hinge|handle|lever|knob|bar|device|trim|closer|cylinder|bolt|stop|viewer|number|accessor|grab|hook|guard|indicator|fitting|pull|patch|spring|pivot|set|case|body|plate|escutcheon|rose|chain|key|damper|holder|bracket|sign|house no|numeral|coordinator|hook|towel|ring|dispenser|dish|basket|shelf|seat|rail/i, // 卫浴 32 个名字（2026-09-24）
+  es: /cerradura|pestillo|picaporte|bisagra|manija|perilla|barra|guarnici|cierrapuertas|cilindro|cerrojo|pasador|tope|mirilla|n[úu]mero|accesorio|agarradera|gancho|indicador|herraje|tirador|pinza|pivote|juego|caja|cuerpo|placa|roseta|cadena|llave|amortiguador|soporte|se[ñn]al|selector|pasacables|percha|numeral|coordinador|perchero|toallero|portarrollos|dispensador|jabonera|canasta|repisa|asiento/i,
+  pt: /fechadura|lingueta|dobradi|ma[çc]aneta|barra|guarni|mola|cilindro|trava|ferrolho|fecho|batedor|olho|n[úu]mero|acess[óo]rio|gancho|indicador|ferragem|puxador|pin[çc]a|piv[ôo]|conjunto|caixa|corpo|placa|roseta|corrente|chave|amortecedor|suporte|espelho|trinco|ferragens|batedor|transfer[êe]ncia|coordenador|numera|cabideiro|porta-toalha|porta-papel|dispenser|saboneteira|cesto|prateleira|assento/i,
 };
 const CERT = /\b(EN\s?\d{3,5}|UL\s?\d{2,4}|ANSI|BHMA|ISO\s?\d{3,5}|CE[- ]certified|fire[- ]?rated|\d+(?:\.\d+)?\s?(?:hours?|hrs?|horas?)\b)/i;
 const issues = [];

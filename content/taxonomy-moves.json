@@ -195,6 +195,7 @@
       "from": "ansi-grade-3-keyed-deadbolt-lock-set",
       "to": "keyed-deadbolt-lock-set",
       "category": "deadbolts",
+      "toCategory": "grip-handle-sets",
       "why": "同上；2026-09-02 之前它在 deadbolts 下，那个旧网址也要跟过来。",
       "reason": "renamed-no-certification"
     },
@@ -211,6 +212,343 @@
       "category": "lever-handles",
       "why": "2026-09-24：8828 是空壳记录（无规格，主图与 8828 SSET 同一张照片，只差尺寸），重复页。它独有的两张装门图并入 SSET 款。视觉普查发现。",
       "reason": "duplicate-merged"
+    },
+    {
+      "from": "bh01-bathroom-accessories",
+      "to": "bh01-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Grab Bar；refiled to care-grab-bars/fixed-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh02-bathroom-accessories",
+      "to": "bh02-knurled-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Knurled Grab Bar；refiled to care-grab-bars/fixed-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh03-bathroom-accessories",
+      "to": "bh03-angled-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Angled Grab Bar；refiled to care-grab-bars/fixed-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh04-bathroom-accessories",
+      "to": "bh04-angled-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Angled Grab Bar；refiled to care-grab-bars/fixed-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh05-bathroom-accessories",
+      "to": "bh05-hook-rail",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Hook Rail"
+    },
+    {
+      "from": "bh06-bathroom-accessories",
+      "to": "bh06-hook-rail",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Hook Rail"
+    },
+    {
+      "from": "bh07-bathroom-accessories",
+      "to": "bh07-hook-rail",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Hook Rail"
+    },
+    {
+      "from": "bh08-bathroom-accessories",
+      "to": "bh08-hook-rail",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Hook Rail"
+    },
+    {
+      "from": "bh09-bathroom-accessories",
+      "to": "bh09-hook-rail",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Hook Rail"
+    },
+    {
+      "from": "bh10-bathroom-accessories",
+      "to": "bh10-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh11-bathroom-accessories",
+      "to": "bh11-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh12-bathroom-accessories",
+      "to": "bh12-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh13-bathroom-accessories",
+      "to": "bh13-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh14-bathroom-accessories",
+      "to": "bh14-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh15-100mm-bathroom-accessories",
+      "to": "bh15-100mm-barrel-bolt",
+      "category": "bathroom-accessories",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Barrel Bolt；refiled to hardware-accessories/latches (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh15-80mm-bathroom-accessories",
+      "to": "bh15-80mm-barrel-bolt",
+      "category": "bathroom-accessories",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Barrel Bolt；refiled to hardware-accessories/latches (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh15-bathroom-accessories",
+      "to": "bh15-barrel-bolt",
+      "category": "bathroom-accessories",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Barrel Bolt；refiled to hardware-accessories/latches (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh16-bathroom-accessories",
+      "to": "bh16-flat-slide-bolt",
+      "category": "bathroom-accessories",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Flat Slide Bolt；refiled to hardware-accessories/latches (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh17-bathroom-accessories",
+      "to": "bh17-spring-latch",
+      "category": "bathroom-accessories",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Spring Latch；refiled to hardware-accessories/latches (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh18-bathroom-accessories",
+      "to": "bh18-towel-ring",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Towel Ring"
+    },
+    {
+      "from": "bh19-bathroom-accessories",
+      "to": "bh19-toilet-roll-holder",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder"
+    },
+    {
+      "from": "bh20-bathroom-accessories",
+      "to": "bh20-toilet-roll-holder-with-cover",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder with Cover"
+    },
+    {
+      "from": "bh21-bathroom-accessories",
+      "to": "bh21-toilet-roll-holder",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder"
+    },
+    {
+      "from": "bh22-bathroom-accessories",
+      "to": "bh22-toilet-roll-holder",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder"
+    },
+    {
+      "from": "bh23-bathroom-accessories",
+      "to": "bh23-toilet-roll-holder-with-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder with Shelf"
+    },
+    {
+      "from": "bh24-bathroom-accessories",
+      "to": "bh24-paper-towel-dispenser",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Paper Towel Dispenser"
+    },
+    {
+      "from": "bh25-bathroom-accessories",
+      "to": "bh25-jumbo-roll-dispenser",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Jumbo Roll Dispenser"
+    },
+    {
+      "from": "bh26-bathroom-accessories",
+      "to": "bh26-soap-dish",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Soap Dish"
+    },
+    {
+      "from": "bh27-bathroom-accessories",
+      "to": "bh27-wire-soap-dish",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Wire Soap Dish"
+    },
+    {
+      "from": "bh28-bathroom-accessories",
+      "to": "bh28-shower-basket",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Shower Basket"
+    },
+    {
+      "from": "bh29-bathroom-accessories",
+      "to": "bh29-corner-shower-basket",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Corner Shower Basket"
+    },
+    {
+      "from": "bh30-bathroom-accessories",
+      "to": "bh30-two-tier-corner-shower-basket",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Two-Tier Corner Shower Basket"
+    },
+    {
+      "from": "bh31-bathroom-accessories",
+      "to": "bh31-two-tier-corner-shower-basket",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Two-Tier Corner Shower Basket"
+    },
+    {
+      "from": "bh32-bathroom-accessories",
+      "to": "bh32-towel-shelf-with-hooks",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Towel Shelf with Hooks"
+    },
+    {
+      "from": "bh33-bathroom-accessories",
+      "to": "bh33-towel-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Towel Shelf"
+    },
+    {
+      "from": "bh34-bathroom-accessories",
+      "to": "bh34-towel-bar",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Towel Bar"
+    },
+    {
+      "from": "bh35-bathroom-accessories",
+      "to": "bh35-soap-dispenser",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Soap Dispenser"
+    },
+    {
+      "from": "bh36-bathroom-accessories",
+      "to": "bh36-coat-and-hat-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Coat and Hat Hook"
+    },
+    {
+      "from": "bh37-bathroom-accessories",
+      "to": "bh37-coat-and-hat-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Coat and Hat Hook"
+    },
+    {
+      "from": "bh38-bathroom-accessories",
+      "to": "bh38-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh39-bathroom-accessories",
+      "to": "bh39-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh40-bathroom-accessories",
+      "to": "bh40-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh41-bathroom-accessories",
+      "to": "bh41-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh42-bathroom-accessories",
+      "to": "bh42-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Robe Hook"
+    },
+    {
+      "from": "bh43-bathroom-accessories",
+      "to": "bh43-toilet-roll-holder",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Toilet Roll Holder"
+    },
+    {
+      "from": "bh50-bathroom-accessories",
+      "to": "bh50-two-tier-shower-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Two-Tier Shower Shelf"
+    },
+    {
+      "from": "bh51-bathroom-accessories",
+      "to": "bh51-shower-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Shower Shelf"
+    },
+    {
+      "from": "bh52-bathroom-accessories",
+      "to": "bh52-two-tier-corner-shower-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Two-Tier Corner Shower Shelf"
+    },
+    {
+      "from": "bh53-bathroom-accessories",
+      "to": "bh53-corner-shower-shelf",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Corner Shower Shelf"
+    },
+    {
+      "from": "bh54-bathroom-accessories",
+      "to": "bh54-double-robe-hook",
+      "category": "bathroom-accessories",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Double Robe Hook"
+    },
+    {
+      "from": "bh55-bathroom-accessories",
+      "to": "bh55-fold-down-shower-seat",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Fold-Down Shower Seat；refiled to care-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh56-bathroom-accessories",
+      "to": "bh56-flip-up-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Flip-Up Grab Bar；refiled to care-grab-bars/flip-up-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh57-bathroom-accessories",
+      "to": "bh57-double-flip-up-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Double Flip-Up Grab Bar；refiled to care-grab-bars/flip-up-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "bh58-bathroom-accessories",
+      "to": "bh58-flip-up-grab-bar",
+      "category": "bathroom-accessories",
+      "toCategory": "care-grab-bars",
+      "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Flip-Up Grab Bar；refiled to care-grab-bars/flip-up-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
     }
   ]
 }
