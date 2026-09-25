@@ -102,7 +102,7 @@ export function ConfiguratorTeaser({ locale = "en" }: { locale?: Locale }) {
       <Link href={href} className="btn btn-primary mt-24">
         {t.cta}
       </Link>
-      <p className="mt-12 text-c2 text-ink-tertiary">{t.reassure}</p>
+      <p className="mt-12 text-c2 text-ink-secondary">{t.reassure}</p>
     </aside>
   );
 }

@@ -207,7 +207,7 @@ export function DocumentInventory({ locale }: { locale: Locale }) {
                         {row.purposes.map((p) => (
                           <span
                             key={p}
-                            className="text-kicker uppercase tracking-[0.14em] text-ink-tertiary"
+                            className="text-kicker uppercase tracking-[0.14em] text-ink-secondary"
                           >
                             {PURPOSE[p][locale] ?? PURPOSE[p].en}
                           </span>

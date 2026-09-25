@@ -116,7 +116,7 @@ export function ModelIndex({
           ) : null}
         </div>
 
-        <p aria-live="polite" className="mt-12 text-c2 text-ink-tertiary">
+        <p aria-live="polite" className="mt-12 text-c2 text-ink-secondary">
           {copy.showing(shown.length, entries.length)}
         </p>
 
@@ -129,7 +129,7 @@ export function ModelIndex({
           ) : (
             groups.map(([letter, rows]) => (
               <div key={letter} className="mb-40">
-                <p className="border-b border-line pb-8 text-kicker uppercase tracking-[0.14em] text-ink-tertiary">
+                <p className="border-b border-line pb-8 text-kicker uppercase tracking-[0.14em] text-ink-secondary">
                   {letter}
                 </p>
                 <ul className="mt-12">

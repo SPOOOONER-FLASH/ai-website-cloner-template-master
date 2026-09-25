@@ -96,7 +96,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
                 : "Reference available on request"
             : `${es || pt ? "Modelo" : "Model"} ${product.model}`}
           {product.videos?.length ? (
-            <span className="text-ink-tertiary"> · {es || pt ? "Vídeo" : "Video"}</span>
+            <span className="text-ink-secondary"> · {es || pt ? "Vídeo" : "Video"}</span>
           ) : null}
         </p>
         <p className="mt-24 border-t border-line pt-16 text-c2 text-ink-secondary">

@@ -124,7 +124,7 @@ export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?:
       </a>
 
       <p className="mt-12 text-c2 text-ink-secondary">{entry.note}</p>
-      <p className="mt-4 text-c2 text-ink-tertiary">
+      <p className="mt-4 text-c2 text-ink-secondary">
         {t.scale}
         {entry.partial ? ` · ${t.partialNote}` : ""}
       </p>
@@ -175,7 +175,7 @@ export function DoorPreparation({ slug, locale = "en" }: { slug: string; locale?
       <p className="mt-12 text-c2 text-ink-secondary">
         {t.pattern(entry.diameter, entry.centres)}
       </p>
-      <p className="mt-4 text-c2 text-ink-tertiary">{t.caution}</p>
+      <p className="mt-4 text-c2 text-ink-secondary">{t.caution}</p>
     </div>
   );
 }

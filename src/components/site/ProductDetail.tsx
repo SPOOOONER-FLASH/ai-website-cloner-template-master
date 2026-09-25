@@ -439,7 +439,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                         <figcaption className="mt-8 text-c2 text-ink-secondary">
                           {video.label}
                           {video.durationSeconds ? (
-                            <span className="text-ink-tertiary">
+                            <span className="text-ink-secondary">
                               {" · "}
                               {Math.floor(video.durationSeconds / 60)}:
                               {String(video.durationSeconds % 60).padStart(2, "0")}
@@ -534,7 +534,7 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                     >
                       {t.watch}
                       {product.videos[0].durationSeconds ? (
-                        <span className="text-c2 tabular-nums text-ink-tertiary">
+                        <span className="text-c2 tabular-nums text-ink-secondary">
                           {Math.floor(product.videos[0].durationSeconds / 60)}:
                           {String(product.videos[0].durationSeconds % 60).padStart(2, "0")}
                         </span>

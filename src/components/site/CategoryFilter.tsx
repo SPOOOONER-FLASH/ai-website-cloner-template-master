@@ -163,7 +163,7 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
           <p className="text-c2 text-ink-secondary" aria-live="polite">
             {t.count(current.total)}
             {current.pageCount > 1 && (
-              <span className="text-ink-tertiary">
+              <span className="text-ink-secondary">
                 {t.showing(current.from, current.to)}
               </span>
             )}

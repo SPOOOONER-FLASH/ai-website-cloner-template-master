@@ -18,7 +18,7 @@ import { Button } from "./Button";
 type Status = "idle" | "sending" | "sent" | "error";
 
 const FIELD =
-  "mt-8 w-full appearance-none border-b border-line bg-transparent pb-8 text-c1 text-ink outline-none transition-colors duration-200 focus:border-ink";
+  "mt-8 w-full appearance-none border-b border-line bg-transparent pb-8 text-c1 text-ink outline-none transition-colors duration-[var(--motion-fast)] focus:border-ink";
 
 export function AssetRequestForm({
   /** What the visitor is asking for. Goes into the email subject. */

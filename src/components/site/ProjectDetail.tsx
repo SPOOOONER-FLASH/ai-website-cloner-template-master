@@ -170,7 +170,7 @@ export function ProjectDetail({
                   >
                     <dt className="text-c2 text-ink-secondary">{range.label}</dt>
                     <dd className="text-c1 tabular-nums text-ink">{range.value}</dd>
-                    <dd className="text-c2 text-ink-tertiary">
+                    <dd className="text-c2 text-ink-secondary">
                       {statedOn(range.stated, relatedProducts.length, locale)}
                     </dd>
                   </div>

@@ -224,7 +224,7 @@ export function ProductFinder({
               <span className={cn("flex-1", checked && "text-brand")}>
                 {label(facet.key, option.value)}
               </span>
-              <span className="text-c2 text-ink-tertiary">{option.count}</span>
+              <span className="text-c2 text-ink-secondary">{option.count}</span>
             </label>
           );
         })}
@@ -344,7 +344,7 @@ export function ProductFinder({
           {current.total} {current.total === 1 ? t.product : t.products}
           {activeCount > 0 || query ? t.matching : t.inCatalogue}
           {current.pageCount > 1 && (
-            <span className="text-ink-tertiary">
+            <span className="text-ink-secondary">
               {" "}
               {t.showing(current.from, current.to)}
             </span>
