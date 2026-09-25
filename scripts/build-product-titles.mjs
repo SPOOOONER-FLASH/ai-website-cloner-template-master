@@ -568,7 +568,16 @@ function composeDescription(product, locale) {
   const name = displayName(product, locale);
 
   const pos = positioning(product);
-  const pitch = pos ? pos[locale === "en" ? "pitch" : locale === "es" ? "pitchEs" : "pitchPt"] : null;
+  let copperNote = false;
+  let pitch = pos ? pos[locale === "en" ? "pitch" : locale === "es" ? "pitchEs" : "pitchPt"] : null;
+  /*
+    2026-09-25（甲方）：买家搜 "copper hinge" 找的就是黄铜合页。只在材质字段确实是 Brass 的合页上说明这个叫法，
+    替换品类卖点；绝不写 pure copper / 纯铜 —— 黄铜是铜锌合金，说成纯铜就是虚假材质。
+  */
+  if (/^brass$/i.test(String(product.material ?? "").trim()) && [].concat(product.categoryPath ?? [])[0] === "brass-steel-hinges") {
+    copperNote = true;
+    pitch = { en: "Brass, the hinge many buyers search for as a copper hinge.", es: "Latón: la bisagra que muchos compradores buscan como bisagra de cobre.", pt: "Latão: a dobradiça que muitos compradores procuram como dobradiça de cobre." }[locale];
+  }
   let useRaw = pos ? pos[locale === "en" ? "use" : locale === "es" ? "useEs" : "usePt"] : null;
   /*
     和标题一样去掉同义反复：名字里已经说了场景，开头句就不再「for …」一遍。
@@ -612,7 +621,8 @@ function composeDescription(product, locale) {
     功能值形如「Entrance, keyed outside」「Privacy, bathroom, turn button inside」。放进逗号分隔的
     事实句里会读成三件事，所以只取功能名，写成「entrance function」（仅英文句用到）。
   */
-  const fnRaw = short(row("Function"));
+  /* 「fix the door」这类随手写的不是功能名，不进描述（B024 等 7 条，2026-09-25）。 */
+  const fnRaw = /^fix(ing)? the door$/i.test(String(row("Function") ?? "").trim()) ? null : short(row("Function"));
   const fn = fnRaw
     ? /^(entrance|privacy|passage|classroom|storeroom|communication|dummy)\b/i.test(fnRaw)
       ? `${fnRaw.split(/[,;(]/)[0].trim().toLowerCase()} function`
@@ -667,8 +677,9 @@ function composeDescription(product, locale) {
     const factSentence = f.length ? `${cap(f.join(", "))}.` : "";
     for (const combo of [
       [opener, factSentence, pitch, NEXT[locale]],
-      [opener, factSentence, NEXT[locale]],
-      [opener, factSentence, pitch],
+      ...(copperNote
+        ? [[opener, factSentence, pitch], [opener, factSentence, NEXT[locale]]] // the copper sentence is the point here
+        : [[opener, factSentence, NEXT[locale]], [opener, factSentence, pitch]]),
       [opener, factSentence],
     ]) {
       const out = join(...combo);
