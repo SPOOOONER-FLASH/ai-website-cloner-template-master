@@ -69,3 +69,14 @@
 - `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 08:06:02 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging scripts/build-taxonomy-redirects.mjs / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `30ff59603d4` shiplog: 更新上线存档
+- `ea1b3550713` Cloudflare 报告处理：security.txt 上线、改名视频 18 条 301、手册 ⑥、AI 抓取数据进看板
+
+下一次 `npm run ship` 成功时这些会一起推上去。
