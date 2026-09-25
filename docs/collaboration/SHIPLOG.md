@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 599 次提交
+最近 30 天 · 共 602 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 22:03 | 中立 | 目标清单：#45 七语种产品标题（等多语言会话 M2） | `9c70e3c9a35` |
+| 21:59 | 中立 | 审计：七语种对齐改读多语言会话的旁挂格式 content/i18n/<code>/<kind>.json（slug 为键） | `0a26af34493` |
+| 21:49 | 中立 | 审计：七个新语种与西语全站对齐（routes / pages / products / articles），供多语言会话和 Stop hook 共用 | `7cd41ef0b35` |
 | 21:15 | 中立 · 发布 HYDE | Merge remote-tracking branch 'origin/main' | `43fdd086096` |
 | 21:13 | 中立 | NOW.md：七语种市场页已发布，HYDE 发布棒交还 | `7f408d4f54b` |
 | 20:37 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `fa0613a1fcd` |
