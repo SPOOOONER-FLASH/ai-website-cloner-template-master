@@ -21,7 +21,7 @@
  *      一类一个文件，以记录的 slug 为键，值里字段名不带后缀（name / summary / specs / title / body）。
  *      也认每条一个文件的写法 content/i18n/<code>/<kind>/<file>.json。
  *
- * 「翻译全对」机器只能查一部分：这里另外报告译文里残留的英文句子数（连续 6 个以上英文单词），
+ * 「翻译全对」机器只能查一部分：这里另外报告译文里残留的英文句子数（英文虚词占四分之一以上的句子），
  * 作为警示，不计入及格判定；准确性靠母语审校。
  *
  * 用法:
@@ -118,11 +118,20 @@ function articleCoverage(code) {
 }
 // English leftovers inside translated product summaries and article bodies (warning only)
 function englishLeftovers(code) {
-  const re = /\b(?:[A-Za-z]{2,}[ ,]+){5,}[A-Za-z]{2,}\b/g;
-  const skip = /\b(HYDE|Canton Hyland|EN \d|ISO \d|mm\b)/;
+  // A sentence counts as English when at least a quarter of its words are English function
+  // words. (A plain ASCII-run test flagged ordinary French and German; function words do not.)
+  const EN = new Set("the and with for of is are to from this that which our we your it be by on as an at or into its their can will".split(" "));
   let n = 0;
+  const scanText = (t) => {
+    for (const sentence of t.split(/[.;:!?\n]+/)) {
+      const words = sentence.toLowerCase().match(/[a-z]+/g) ?? [];
+      if (words.length < 6) continue;
+      const hits = words.filter((w) => EN.has(w)).length;
+      if (hits >= 2 && hits / words.length >= 0.25) n += 1;
+    }
+  };
   const scan = (v) => {
-    if (typeof v === "string") n += (v.match(re) ?? []).filter((m) => !skip.test(m)).length;
+    if (typeof v === "string") scanText(v);
     else if (Array.isArray(v)) v.forEach(scan);
     else if (v && typeof v === "object") Object.values(v).forEach(scan);
   };
@@ -155,7 +164,8 @@ const rows = TARGETS.map((code) => {
   r.pass = {
     registered: r.registered,
     routes: r.routes >= base.routes,
-    pages: r.pages >= Math.floor(base.pages * 0.98),
+    // A baseline of 0 means out/ is being rebuilt right now: unknown, so not a pass.
+    pages: base.pages > 0 && r.pages >= Math.floor(base.pages * 0.98),
     products: r.products >= base.products - 1e-9,
     articles: r.articles >= base.articles - 1e-9,
   };
