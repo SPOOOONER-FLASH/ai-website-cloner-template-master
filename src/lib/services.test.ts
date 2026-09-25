@@ -11,9 +11,13 @@ test("the service hub is crawlable and reachable without crowding the header", (
   };
   const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
 
-  // OEM / private label leads (client steer 2026-09-24), in the copy and in the title.
+  // OEM / private label leads (client steer 2026-09-24), in the copy and the metadata.
+  // 2026-09-25 the title took "custom" and "bespoke ironmongery" (client: 开模定制 is the specialty,
+  // ironmongery the trade's name); OEM stays in the title, private-label moved to the description.
+  const meta = readFileSync("src/app/(en)/services/page.tsx", "utf8");
   assert.match(page, /private-label brand/i);
-  assert.match(readFileSync("src/app/(en)/services/page.tsx", "utf8"), /OEM & Private-Label/);
+  assert.match(meta, /title: "OEM & Custom Door Hardware/);
+  assert.match(meta, /description:\s*"OEM, private-label and custom/);
   assert.equal(navigation.header.some((link) => link.href === "/services"), false);
   assert.match(sitemap, /entry\("\/services"/);
 

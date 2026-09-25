@@ -10,9 +10,9 @@ import { getProductsByCategory, publishedProducts } from "@/data/products";
 export const metadata: Metadata = pageMetadata({
   enPath: "/products",
   locale: "en",
-  title: "Products — Door Hardware Catalog",
+  title: "Door Hardware & Architectural Ironmongery Catalog",
   description:
-    "Mortise locks, lever handles, glass door fittings, panic exit devices, cylinders and accessories — the full Canton Hyland catalog.",
+    "Mortise locks, lever handles, hinges, door closers, panic exit devices and cylinders: door hardware and architectural ironmongery from our factory.",
 });
 
 /**
