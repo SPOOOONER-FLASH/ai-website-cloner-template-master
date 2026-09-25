@@ -8,7 +8,7 @@
 | 部分 | 负责 | 状态 |
 |---|---|---|
 | 站内搜索：黄铜记录的索引补 copper / cobre / latón / latão | Hyde 视觉（E:） | 已做，3dbd0ff3660 |
-| 三语指南：「Copper hinges or brass hinges? What “copper hinge” means when you order door hinges」 | Hyde 文案 | 待写 |
+| 三语指南：「Copper hinges or brass hinges? What “copper hinge” means when you order door hinges」 | Hyde 文案 | 已做，content/guides/copper-or-brass-hinges-2026.json；SEO 与上线归工程会话 |
 | B024、B025 三语描述加「the hinge many buyers search for as a copper hinge」 | 工程会话 | 已做 |
 | 合页品类页描述 | Hyde 文案 | 待写 |
 | 雷茵 17 条「纯铜」合页 → 黄铜 | 雷茵会话（新仓） | 已做，aa0ca577b2f |
@@ -19,4 +19,4 @@
 - 「仿古铜 antique copper（AC）」只是表面处理颜色，不是材质。
 - 沿海和潮湿环境：黄铜脱锌问题，链接现有 guides/brass-alloys-and-dezincification-2026。
 - 可引用的 HYDE 事实：材质确为黄铜的合页只有 B024、B025。
-- 「Brass Piano Hinge」是铁叶片加抛光黄铜色表面（规格行写明 polished brass finish over the iron leaf），材质 Iron 是对的，错在名字；改名归文案会话。写指南时可以拿它举例：看起来是铜色的，未必是铜合金。
+- 「Brass Piano Hinge」是铁叶片加抛光黄铜色表面，已由文案会话改名为 Piano Hinge；model 字段里的 Brass 由工程会话定。
