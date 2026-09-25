@@ -141,7 +141,7 @@ export default function ContactPage() {
             <div className="mt-48 border-t border-line pt-24">
               <h2 className="text-h3 text-ink">Order through Alibaba, or directly</h2>
               <p className="mt-8 max-w-[52ch] text-c1 text-ink-secondary">
-                Both work. Some buyers place their first order through Alibaba, with the platform's payment protection, and move to direct orders once they know us. Others order directly from the first container.
+                Both work. Some buyers place their first order through Alibaba, with the platform&apos;s payment protection, and move to direct orders once they know us. Others order directly from the first container.
               </p>
               <p className="mt-16 max-w-[52ch] text-c1 text-ink-secondary">
                 The same export team handles both, at the same prices and the same specification.
