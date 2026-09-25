@@ -13,7 +13,8 @@ const NON_PUBLIC_ROUTES = new Set(["/admin/", "/status/", "/404/", "/_not-found/
  * TypeScript build, so it cannot read the source of truth. It is two strings, and the lang
  * check below is the only thing that consults it.
  */
-const LOCALE_PREFIXES = new Set(["es", "pt"]);
+/* es/pt are the full mirrors; the rest are the market locales of src/data/market-locales.ts. */
+const LOCALE_PREFIXES = new Set(["es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"]);
 
 function decodeHtml(value = "") {
   return value

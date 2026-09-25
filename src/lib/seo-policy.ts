@@ -125,6 +125,7 @@ export function buildLocaleSitemapEntries({
   pt,
   bilingual,
   portuguese = false,
+  market,
   priority,
   changeFrequency = "monthly",
   lastModified,
@@ -137,6 +138,11 @@ export function buildLocaleSitemapEntries({
   pt?: string;
   bilingual: boolean;
   portuguese?: boolean;
+  /**
+   * Market-locale URLs for this path, keyed by locale code (de, fr, ar…), or undefined
+   * where the path has none. Each is emitted as its own <url> with the shared cluster.
+   */
+  market?: Record<string, string>;
   priority: number;
   changeFrequency?: SitemapChangeFrequency;
   lastModified?: Date;
@@ -171,7 +177,8 @@ export function buildLocaleSitemapEntries({
     priority,
   };
 
-  if (!bilingual && !portuguese) return [{ url: en, ...shared }];
+  const marketUrls = Object.entries(market ?? {});
+  if (!bilingual && !portuguese && !marketUrls.length) return [{ url: en, ...shared }];
 
   /*
     The alternate set is built from the locales that EXIST for this path, not from a fixed
@@ -185,7 +192,13 @@ export function buildLocaleSitemapEntries({
   const languages: Record<string, string> = { en, "x-default": en };
   if (bilingual) languages.es = es;
   if (portuguese && pt) languages.pt = pt;
+  for (const [code, url] of marketUrls) languages[code] = url;
 
-  const urls = [en, ...(bilingual ? [es] : []), ...(portuguese && pt ? [pt] : [])];
+  const urls = [
+    en,
+    ...(bilingual ? [es] : []),
+    ...(portuguese && pt ? [pt] : []),
+    ...marketUrls.map(([, url]) => url),
+  ];
   return urls.map((url) => ({ url, ...shared, alternates: { languages } }));
 }

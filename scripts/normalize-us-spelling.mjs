@@ -129,6 +129,12 @@ const KEYED_FILES = ["content/i18n/zh-terms.json"];
  * supplier site (Artunion). Their string keys must match the source as published there.
  */
 const EXTERNAL = /^scripts\/(stahlock-|scrape-)/;
+/*
+  The market-locale copy (2026-09-24) is French, German, Japanese, Korean, Turkish, Russian
+  and Arabic — "centre" and "catalogue" are French words there, not British ones. Only the
+  English source in that directory is scanned.
+*/
+const FOREIGN_COPY = /^src\/data\/market\/(?!source\.en\.ts$)[a-z]{2}\.ts$/;
 function codeFiles(dir) {
   return readdirSync(dir).flatMap((n) => {
     const p = join(dir, n).replace(/\\/g, "/");
@@ -136,6 +142,7 @@ function codeFiles(dir) {
     if (statSync(p).isDirectory()) return codeFiles(p);
     if (!/\.(tsx?|mjs)$/.test(n) || /\.d\.ts$/.test(n)) return [];
     if (p === "scripts/normalize-us-spelling.mjs" || laneOf(p) === "rayen" || EXTERNAL.test(p)) return [];
+    if (FOREIGN_COPY.test(p)) return [];
     return [p];
   });
 }

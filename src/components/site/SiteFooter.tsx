@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { mirrorHref } from "@/lib/spanish-mirror";
 import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
+import { hasMarketMirror, marketLocaleMeta, marketLocales } from "@/data/market-locales";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
@@ -107,13 +108,25 @@ export function SiteFooter() {
     function the header panel uses and it reads the same mirror lists as the hreflang tags.
   */
   const englishPath = englishPathOf(pathname);
-  const languageLinks = locales
-    .filter((code) => code !== locale)
-    .map((code) => ({
-      code,
-      label: LANGUAGE_LABELS[code],
-      href: mirrorHref(englishPath, code).href,
-    }));
+  const languageLinks = [
+    ...locales
+      .filter((code) => code !== locale)
+      .map((code) => ({
+        code: code as string,
+        label: LANGUAGE_LABELS[code],
+        href: mirrorHref(englishPath, code).href,
+      })),
+    /*
+      The seven market locales, same rule: this page's counterpart where one exists
+      (seven paths — src/data/market-locales.ts), that language's home otherwise. Never
+      a 404 out of the footer.
+    */
+    ...marketLocales.map((code) => ({
+      code: code as string,
+      label: marketLocaleMeta[code].label,
+      href: hasMarketMirror(englishPath) && englishPath !== "/" ? `/${code}${englishPath}` : `/${code}`,
+    })),
+  ];
 
   const isCurrent = (href: string) => {
     const strip = (value: string) => (value.replace(/\/*$/, "") || "/");

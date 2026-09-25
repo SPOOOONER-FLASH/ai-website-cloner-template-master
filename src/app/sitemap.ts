@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
 import { hasPortugueseMirror } from "@/lib/spanish-mirror";
 import { isoUploadDate } from "@/lib/upload-date";
+import { marketAlternates } from "@/lib/market-mirror";
 import { getTopLevelCategories } from "@/data/categories";
 import {
   getAllProductParams,
@@ -94,6 +95,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       pt,
       bilingual: hasSpanishMirror(path),
       portuguese: hasPortugueseMirror(path),
+      /* The seven market landing pages share the cluster on their seven paths. */
+      market: marketAlternates(path),
       priority,
       changeFrequency,
       lastModified,

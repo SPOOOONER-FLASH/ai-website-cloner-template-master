@@ -4,6 +4,7 @@ import { publishedProducts } from "@/data/products";
 import { getAnsweredFaq } from "@/data/faq";
 import { getPublishedGuides } from "@/data/guides";
 import { getPublishedNews } from "@/data/news";
+import { marketLocaleMeta, marketLocales } from "@/data/market-locales";
 
 /**
  * Emits /llms.txt at build time (works under `output: "export"`).
@@ -184,6 +185,21 @@ function body(): string {
     `- [Contact](${absoluteUrl("/contact/")}): inquiry form routed to the export team.`,
     "",
     ...(faqLines.length ? ["## Questions answered on this site", "", ...faqLines, ""] : []),
+    /*
+      The other languages, 2026-09-24. Spanish and Portuguese are full mirrors; the seven
+      market locales are landing sites of seven pages each (src/data/market-locales.ts).
+      Named here so an assistant asked in German or Arabic has a page in that language to
+      cite, rather than translating this English file on the fly.
+    */
+    "## Other languages",
+    "",
+    `- Español (full catalog): ${absoluteUrl("/es/")}`,
+    `- Português (full catalog): ${absoluteUrl("/pt/")}`,
+    ...marketLocales.map(
+      (code) =>
+        `- ${marketLocaleMeta[code].label} (company, catalog overview, OEM services, certifications, FAQ, contact): ${absoluteUrl(`/${code}/`)}`,
+    ),
+    "",
     "## Guides and articles",
     "",
     "### Buying guides — dimension charts, code cross-references and selection",

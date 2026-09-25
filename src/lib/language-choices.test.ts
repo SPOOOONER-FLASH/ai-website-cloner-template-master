@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { locales } from "../data/locales.ts";
+import { marketLocales } from "../data/market-locales.ts";
 import { soleLocaleOf } from "./spanish-mirror.ts";
 import { languageChoices } from "./language-choices.ts";
 
@@ -31,7 +32,8 @@ import { languageChoices } from "./language-choices.ts";
 test("the panel offers every locale, on every kind of path", () => {
   for (const pathname of ["/", "/products/", "/es/products/", "/pt/products/", "/news/x/"]) {
     const codes = languageChoices(pathname, "en").map((choice) => choice.code);
-    assert.deepEqual(codes, [...locales], `${pathname} offered ${codes.join(", ")}`);
+    /* The three full mirrors first, then the seven market locales (2026-09-24). */
+    assert.deepEqual(codes, [...locales, ...marketLocales], `${pathname} offered ${codes.join(", ")}`);
   }
 });
 

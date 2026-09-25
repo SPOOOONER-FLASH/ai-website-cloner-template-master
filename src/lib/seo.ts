@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { absoluteUrl, defaultDescription, type Locale } from "@/data/site";
 import { mirrorsOf } from "./spanish-mirror.ts";
+import { marketAlternates } from "./market-mirror.ts";
 
 /**
  * Builds canonical + hreflang + Open Graph for a page, from its ENGLISH path.
@@ -40,9 +41,16 @@ export function alternateLanguages(enPath: string): Record<string, string> | und
     pt: absoluteUrl(`/pt${clean}/`),
   };
   const available = mirrorsOf(enPath);
-  if (available.length < 2) return undefined;
+  /*
+    The seven market locales (src/data/market-locales.ts) mirror seven English paths.
+    They are added here, not to `mirrorsOf`, because `Locale` keys the copy dictionaries
+    and a market locale is deliberately not one of those.
+  */
+  const market = marketAlternates(enPath);
+  if (available.length < 2 && !market) return undefined;
   return Object.fromEntries([
     ...available.map((locale) => [locale, href[locale]]),
+    ...Object.entries(market ?? {}),
     ["x-default", href.en],
   ]);
 }
@@ -74,10 +82,14 @@ export function pageMetadata(opts: {
     which is the state most of this site is in and will be for a while.
   */
   const available = mirrorsOf(opts.enPath);
+  /* Plus the market locales, where this path has them — see alternateLanguages(). */
+  const market = marketAlternates(opts.enPath) ?? {};
   const languages = Object.fromEntries([
     ...available.map((locale) => [locale, href[locale]]),
+    ...Object.entries(market),
     ["x-default", en],
   ]);
+  const declared = available.length + Object.keys(market).length;
 
   const image = opts.image ?? defaultOgImage;
   const imageAlt = opts.image ? (opts.imageAlt ?? opts.title) : "HYDE architectural door hardware";
@@ -88,7 +100,7 @@ export function pageMetadata(opts: {
     alternates: {
       // Self-referencing canonical. Prevents a mirror from being folded into /en.
       canonical: opts.locale === "en" ? `${clean}/` || "/" : `/${opts.locale}${clean}/`,
-      ...(available.length > 1 ? { languages } : {}),
+      ...(declared > 1 ? { languages } : {}),
     },
     openGraph: {
       type: "website",
@@ -96,7 +108,7 @@ export function pageMetadata(opts: {
       title: opts.title,
       description,
       locale: opts.locale,
-      alternateLocale: available.filter((locale) => locale !== opts.locale),
+      alternateLocale: [...available.filter((locale) => locale !== opts.locale), ...Object.keys(market)],
       images: [{ url: absoluteUrl(image), width: 1200, height: 630, alt: imageAlt }],
     },
     // X/Twitter ignores og:image sizing hints and wants its own card type; without this

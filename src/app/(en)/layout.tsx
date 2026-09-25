@@ -15,6 +15,7 @@ import {
   siteName,
   siteUrl,
 } from "@/data/site";
+import { marketAlternates } from "@/lib/market-mirror";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,6 +39,8 @@ export const metadata: Metadata = {
       en: absoluteUrl("/"),
       es: absoluteUrl("/es/"),
       pt: absoluteUrl("/pt/"),
+      /* The seven market home pages (src/data/market-locales.ts), reciprocally. */
+      ...marketAlternates("/"),
       "x-default": absoluteUrl("/"),
     },
   },

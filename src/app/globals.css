@@ -255,6 +255,31 @@
     font-family: var(--font-sans);
   }
 
+  /*
+    The market locales whose script Archivo does not cover (src/data/market-locales.ts).
+
+    Archivo ships Latin and Latin Extended only, so on /ja/, /ko/, /ar/ and /ru/ every
+    glyph would fall through to whatever the browser picked. Naming the platform fonts
+    here means Japanese renders in Hiragino / Yu Gothic / Noto Sans CJK, Korean in Apple
+    SD Gothic / Malgun Gothic, Arabic in Segoe UI / Noto Naskh and Cyrillic in the
+    system UI face — with Archivo still first for the Latin model numbers and units in
+    the same paragraph. No font file is downloaded: a self-hosted CJK face is 4–8 MB per
+    weight, and these pages are read by buyers on the same mobile networks as the rest
+    of the site.
+  */
+  html[lang="ja"] {
+    font-family: var(--font-archivo), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", system-ui, sans-serif;
+  }
+  html[lang="ko"] {
+    font-family: var(--font-archivo), "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", system-ui, sans-serif;
+  }
+  html[lang="ar"] {
+    font-family: var(--font-archivo), "Segoe UI", "Noto Naskh Arabic", "Noto Sans Arabic", Tahoma, system-ui, sans-serif;
+  }
+  html[lang="ru"] {
+    font-family: var(--font-archivo), "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", system-ui, sans-serif;
+  }
+
   body {
     background-color: var(--color-surface);
     color: var(--color-ink);
