@@ -138,9 +138,10 @@ for (const move of moves.productMoves) {
   not have existed twice.
 */
 for (const merge of moves.productMerges ?? []) {
+  const dest = merge.toCategory ?? merge.category; // renamed AND moved: still one hop
   lines.push(`# merged duplicate: ${merge.from} -> ${merge.to}`);
   lines.push(
-    ...rule(`/products/${merge.category}/${merge.from}`, `/products/${merge.category}/${merge.to}/`),
+    ...rule(`/products/${merge.category}/${merge.from}`, `/products/${dest}/${merge.to}/`),
   );
 }
 

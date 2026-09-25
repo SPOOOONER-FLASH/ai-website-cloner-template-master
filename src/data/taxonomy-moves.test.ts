@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import moves from "../../content/taxonomy-moves.json" with { type: "json" };
 import {
   canonicalProductCategory,
+  canonicalProductSlug,
   getLegacyProductParams,
 } from "./category-aliases.ts";
 
@@ -73,5 +74,28 @@ test("the nginx conf is in step with the move table", () => {
     assert.ok(conf.includes(`location = ${from} {`), `missing 301 for ${from}`);
     assert.ok(conf.includes(`location = ${from}/ {`), `missing 301 for ${from}/`);
     assert.ok(conf.includes(`return 301 ${to};`), `missing destination ${to}`);
+  }
+});
+
+test("a rename that also refiled the product redirects in one hop", () => {
+  for (const merge of moves.productMerges.filter((m) => "toCategory" in m)) {
+    const to = (merge as { toCategory: string }).toCategory;
+    assert.notEqual(to, merge.category, `${merge.from}: toCategory only when the category changed`);
+    // Old URL → final URL directly, not via /<old category>/<new slug>/.
+    assert.equal(canonicalProductCategory(merge.category, merge.from), to);
+    assert.equal(canonicalProductSlug(merge.category, merge.from), merge.to);
+    assert.equal(canonicalProductCategory(to, merge.to), to, "the new path must not redirect");
+    assert.ok(
+      getLegacyProductParams().some(
+        (p) => p.category === merge.category && p.slug === merge.from && p.to === to,
+      ),
+      `${merge.from} must still be built at its old path`,
+    );
+    assert.ok(
+      readFileSync("deploy/nginx/taxonomy-redirects.conf", "utf8").includes(
+        `return 301 /products/${to}/${merge.to}/;`,
+      ),
+      `nginx conf missing the one-hop 301 for ${merge.from}`,
+    );
   }
 });

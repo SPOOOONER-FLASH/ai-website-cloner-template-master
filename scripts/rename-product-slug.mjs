@@ -25,6 +25,8 @@
  *
  * Usage:
  *   node scripts/rename-product-slug.mjs --model "DS011" --name "Door Stopper" [--write]
+ *   … --category-path "care-grab-bars/fixed-grab-bars"   also refile it; the 301 still takes one hop
+ *                                                        (`toCategory` on the productMerges entry)
  */
 
 import { existsSync, readFileSync, readdirSync, renameSync, writeFileSync } from "node:fs";
@@ -45,6 +47,7 @@ const arg = (flag) => {
 const model = arg("--model");
 const newName = arg("--name");
 const why = arg("--why") ?? "";
+const categoryPath = arg("--category-path")?.split("/").filter(Boolean) ?? null;
 if (!model || !newName) {
   console.error('Usage: node scripts/rename-product-slug.mjs --model "DS011" --name "Door Stopper" [--write]');
   process.exit(1);
@@ -66,7 +69,7 @@ const record = JSON.parse(readFileSync(join(DIR, file), "utf8"));
 const oldSlug = record.slug;
 const newSlug = `${slugify(record.model)}-${slugify(newName)}`;
 
-if (oldSlug === newSlug) {
+if (oldSlug === newSlug) { // a pure category change is a productMoves entry, not this script
   console.log(`${model} 已经是 ${newSlug}，无需改动`);
   process.exit(0);
 }
@@ -115,12 +118,17 @@ const retarget = (value) => {
   every new name appends "Trim" — hit it 13 times at once, and `npm run content`'s
   slug/filename check is what caught it.
 */
-const updated = { ...retarget(record), name: newName, slug: newSlug };
+const updated = {
+  ...retarget(record),
+  name: newName,
+  slug: newSlug,
+  ...(categoryPath ? { categoryPath } : {}),
+};
 
 console.log(`${model}: ${record.name} → ${newName}`);
 console.log(`  slug   ${oldSlug} → ${newSlug}`);
 console.log(`  assets ${assetMoves.length} 个文件`);
-console.log(`  301    /products/${record.categoryPath[0]}/${oldSlug}/ → ${newSlug}/`);
+console.log(`  301    /products/${record.categoryPath[0]}/${oldSlug}/ → /products/${updated.categoryPath[0]}/${newSlug}/`);
 
 if (!write) {
   console.log("\n--write not given; nothing changed.");
@@ -140,6 +148,7 @@ moves.productMerges.push({
   from: oldSlug,
   to: newSlug,
   category: record.categoryPath[0],
+  ...(updated.categoryPath[0] !== record.categoryPath[0] ? { toCategory: updated.categoryPath[0] } : {}),
   why: why || `Renamed ${record.name} → ${newName}.`,
 });
 writeFileSync(MOVES, `${JSON.stringify(moves, null, 2)}\n`);
