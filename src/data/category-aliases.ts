@@ -57,6 +57,13 @@ interface ProductMerge {
   from: string;
   to: string;
   category: string;
+  /**
+   * Set when the renamed product also changed category (BH01 "Bathroom Accessories" →
+   * care-grab-bars "Grab Bar", 2026-09-24). One entry, one hop: a rename entry plus a
+   * separate move entry would send the old URL through two 301s, and would build a stub
+   * at a new-slug-in-old-category path that never existed.
+   */
+  toCategory?: string;
   why: string;
 }
 
@@ -65,9 +72,16 @@ const PRODUCT_MOVES: readonly ProductMove[] = moves.productMoves;
 const PRODUCT_MERGES: readonly ProductMerge[] = moves.productMerges ?? [];
 
 /** The surviving slug for a retired duplicate, or the slug unchanged. */
+/** Pass the category from the URL, not the canonical one: a merge is keyed by where the old page lived. */
+const findMerge = (category: string, slug: string) =>
+  PRODUCT_MERGES.find(
+    (m) =>
+      m.from === slug &&
+      (m.category === category || m.category === canonicalCategorySlug(category)),
+  );
+
 export function canonicalProductSlug(category: string, slug: string): string {
-  const merged = PRODUCT_MERGES.find((m) => m.from === slug && m.category === category);
-  return merged ? merged.to : slug;
+  return findMerge(category, slug)?.to ?? slug;
 }
 
 export function canonicalCategorySlug(slug: string): string {
@@ -84,6 +98,8 @@ export function canonicalCategorySlug(slug: string): string {
 export function canonicalProductCategory(category: string, slug: string): string {
   const moved = PRODUCT_MOVES.find((m) => m.slug === slug && m.from === category);
   if (moved) return moved.to;
+  const merged = findMerge(category, slug);
+  if (merged?.toCategory) return merged.toCategory;
   return canonicalCategorySlug(category);
 }
 
@@ -130,7 +146,7 @@ export function getLegacyProductParams(): {
     ...PRODUCT_MERGES.map((m) => ({
       category: m.category,
       slug: m.from,
-      to: m.category,
+      to: m.toCategory ?? m.category,
       toSlug: m.to,
     })),
   ];

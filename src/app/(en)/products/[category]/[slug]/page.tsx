@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     caught once already. A retired path is a redirect stub whether or not the product is
     findable at the old address, so answer that first.
   */
-  const canonicalSlug = canonicalProductSlug(canonicalCategory, slug);
+  const canonicalSlug = canonicalProductSlug(category, slug);
 
   if (canonicalCategory !== category || canonicalSlug !== slug) {
     return {
@@ -129,7 +129,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     the survivor — and a 404 throws away every link and every impression the retired URL
     had earned, which is the opposite of why the records were merged.
   */
-  const canonicalSlug = canonicalProductSlug(canonicalCategory, slug);
+  const canonicalSlug = canonicalProductSlug(category, slug);
 
   if (canonicalCategory !== category || canonicalSlug !== slug) {
     permanentRedirect(`/products/${canonicalCategory}/${canonicalSlug}/`);
