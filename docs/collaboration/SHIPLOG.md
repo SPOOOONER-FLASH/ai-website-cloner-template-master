@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 580 次提交
+最近 30 天 · 共 581 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 19:25 | 中立 | care-grab-bars 葡语类目标题：articuladas → rebatíveis（跟文案会话统一用词） | `f601429a859` |
+| 19:27 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c2fbd39df66` |
+| 19:27 | HYDE | 卫浴拆分后续：16 个品类计数三语、关怀扶手类目简介、10 条描述、葡语统一 rebatível | `347f227c479` |
 | 19:24 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `7f33d902750` |
 | 19:24 | HYDE | 卫浴 54 条改 slug + 一跳 301、扶手/淋浴凳移 care-grab-bars、插销移 latches、重跑标题 | `a1223c8d831` |
 | 19:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `442344ba955` |
