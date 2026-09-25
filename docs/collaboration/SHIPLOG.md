@@ -6,15 +6,18 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 610 次提交
+最近 30 天 · 共 613 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 07:31 | 中立 | 门孔图生成器两种拼写都认：美式拼写第二批（e834ca7c4df）后画 0 张 | `40150338333` |
-| 04:01 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9c7a8a0a615` |
-| 04:01 | 中立 | GTM「Test」未检测到的真正原因：Cloudflare 对 Google 服务器出质询页（更正 09-25 早先的归因） | `303aba48df1` |
+| 07:20 | 中立 | Document HYDE photo release and live verification | `6e22607d57f` |
+| 07:01 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 0e8f7649e2f | `905823293bc` |
+| 03:56 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 438b2a5d5ad | `0e8f7649e2f` |
+| 04:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `7b2c63bc9a2` |
+| 04:02 | HYDE | 合页英文摘要：B024/B025 改为黄铜，同族 23 条去掉误导的 brass and steel | `3d5f17bea16` |
+| 04:00 | 中立 | 审计：英文残留改按英文虚词占比判定（旧法把纯 ASCII 的法德语误判）；基准页数为 0（正在重建）时不算通过 | `f05176116f7` |
 | 03:57 | 中立 | 审计：统计导出页时容忍并发构建删除文件（避免 ENOENT 中断） | `a94fd884103` |
 | 03:54 | HYDE | 定制指南三语 SEO 定稿（brief 第 3 项）；头图登记取景框 | `289edd373d7` |
 | 03:51 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `950edf759c1` |
