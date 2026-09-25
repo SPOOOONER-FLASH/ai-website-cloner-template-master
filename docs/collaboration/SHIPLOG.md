@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 611 次提交
+最近 30 天 · 共 612 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 07:38 | 中立 | 目标清单：#49 ironmongery 与定制指南上线实测 | `59053732132` |
 | 07:32 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `48eb711354d` |
 | 07:31 | 中立 | 门孔图生成器两种拼写都认：美式拼写第二批（e834ca7c4df）后画 0 张 | `40150338333` |
 | 04:01 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9c7a8a0a615` |
