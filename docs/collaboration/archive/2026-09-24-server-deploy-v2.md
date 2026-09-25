@@ -46,3 +46,30 @@ tail -5 /var/log/cantonlock-deploy.log
 
 装好之后，线上会一次性追上今天所有的改动。**然后记得 purge。**
 
+
+
+---
+
+## 存档：手册 ③（2026-09-24 写，09-25 甲方已执行）——记录，不要照着做
+
+### ③ 装一次新的跳转规则 —— 2 分钟，今天做（2026-09-24）
+
+**为什么**：有个产品网址写着「ansi-grade-3」（`/products/grip-handle-sets/ansi-grade-3-keyed-deadbolt-lock-set/`），
+我们没有 ANSI 认证，网址不能这么写。已改成 `keyed-deadbolt-lock-set`。旧网址已被 Google 收录，
+要在服务器上装一条 301。**装好之前旧网址是 404**（09-24 实测），Google 已收录的那一条会变成死链，所以今天就装。
+同一次安装还会带上另外两条（09-24 加）：8827、8828 两个空壳重复页已并入 8827 SSET / 8828 SSET，
+旧网址 `/products/lever-handles/8827-lever-handle/`、`/products/lever-handles/8828-lever-handle/` 也会 301 过去。
+再加 54 条（09-24 晚加）：卫浴 54 个产品按实拍图改了名，网址跟着改（`bh01-bathroom-accessories` → `bh01-grab-bar` 这种），
+其中扶手和淋浴凳移到 care-grab-bars，BH15/16/17 插销和弹簧舌移到 hardware-accessories。旧网址一律一跳到新网址。
+**等我说「卫浴那次已部署」之后再贴**（脚本装的是服务器上已拉到的规则，早贴会漏掉这 54 条）；已经贴过也没关系，再贴一次就行。
+
+**在宝塔终端贴这一行**：
+
+```bash
+bash /www/wwwroot/cantonlock.com/deploy/install-nginx-redirects.sh
+```
+
+**成功的样子**：最后一行是 `All redirects live. Now purge Cloudflare — it caches 301s.`
+**然后 purge**（Cloudflare 会缓存 301）。
+**失败时**脚本会自己把旧配置还原、不重载，网站不受影响 —— 整屏截图发我。
+

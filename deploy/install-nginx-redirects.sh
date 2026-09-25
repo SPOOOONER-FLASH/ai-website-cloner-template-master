@@ -136,7 +136,9 @@ say "reloaded."
 #
 # Cloudflare caches 301 responses. Asking the public URL right after a reload can report
 # the state from before it, so these hit 127.0.0.1 with the Host header set — that is the
-# origin's own answer, with no cache in front of it.
+# origin's own answer, with no cache in front of it. Over HTTPS (2026-09-25): on port 80 the
+# http→https redirect answers first for some paths, and the 09-25 run reported 8 working
+# rules as BAD because it saw that hop instead of the rule.
 
 say ""
 say "verifying at the origin (bypassing Cloudflare):"
@@ -154,7 +156,7 @@ while IFS='|' read -r path expect want; do
   # then nothing: not one redirect was actually checked, and no failure was reported.
   read -r code location < <(
     curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' \
-      -H 'Host: cantonlock.com' "http://127.0.0.1${path}" || echo "000 -"
+      -k --resolve cantonlock.com:443:127.0.0.1 "https://cantonlock.com${path}" || echo "000 -"
   )
   if [ "$code" = "$expect" ] && { [ -z "$want" ] || [ "${location%"$want"}" != "$location" ]; }; then
     say "  OK   $code  $path"
