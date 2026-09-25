@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 614 次提交
+最近 30 天 · 共 615 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 08:22 | HYDE | 视频观看页 /video/<slug>/：Google 只从主体是视频的页面编视频索引（97 个视频「不在观看页面上」） | `8f5618eaac7` |
 | 08:10 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `86bf5ac7240` |
 | 08:09 | HYDE | Merge origin/main（七语种 M1–M4）；跳转规则取远端 1660 条并接上 18 条视频跳转 | `f708983ba62` |
 | 08:04 | 中立 | Cloudflare 报告处理：security.txt 上线、改名视频 18 条 301、手册 ⑥、AI 抓取数据进看板 | `ea1b3550713` |
