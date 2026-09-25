@@ -78,7 +78,7 @@ export function WelcomeIntro({
     <div className="layout">
       <div
         className={cn(
-          "col-content grid w-full grid-cols gap-x gap-y-24 xl:gap-y-96",
+          "col-content grid w-full grid-cols gap-x gap-y-24 xl:gap-y-48",
           homeAccent && "home-accent-surface home-accent-module",
         )}
       >
@@ -95,15 +95,20 @@ export function WelcomeIntro({
           </div>
         </div>
 
-        {/* slot-2 — copy */}
-        <div className="col-span-full grid grid-cols-subgrid gap sm:col-span-4 md:col-span-6 xl:col-span-6 xl:row-span-2">
-          <section className="copy col-span-full text-ink xl:col-span-5">
+        {/*
+          slot-2 — copy. Under the headline on the same left edge (2026-09-24). It used to
+          sit in its own 5-of-24 column beside the headline: fine for three sentences, but the
+          copy grew to a full paragraph and became a 271px-wide, 750px-tall ribbon with an
+          empty column under the headline. Eleven columns is about 65 characters a line.
+        */}
+        <div className="col-span-full grid grid-cols-subgrid gap sm:col-span-4 md:col-span-6 xl:col-span-12 xl:col-start-1 xl:row-start-2">
+          <section className="copy col-span-full text-ink xl:col-span-11">
             <div>{text.body}</div>
           </section>
         </div>
 
         {/* slot-4 — "More links" accordion */}
-        <div className="col-span-full grid grid-cols-subgrid gap [grid-column-end:-1] sm:col-span-4 md:col-span-6 xl:col-span-6 xl:row-span-2">
+        <div className="col-span-full grid grid-cols-subgrid gap [grid-column-end:-1] sm:col-span-4 md:col-span-6 xl:col-span-6 xl:col-start-19 xl:row-span-2 xl:row-start-1">
           <section className="col-span-full">
             <div className="w-full">
               <button

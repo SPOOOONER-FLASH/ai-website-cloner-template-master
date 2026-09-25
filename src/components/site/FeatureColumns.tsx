@@ -72,31 +72,40 @@ export function FeatureColumns({ locale = "en" }: { locale?: Locale }) {
                 <h3 className="title-marker mt-12 text-h3 text-ink">{localised(column.title, locale)}</h3>
                 <p className="mt-16 text-c1 text-ink-secondary">{localised(column.body, locale)}</p>
                 {/*
-                  The counted fact sits on the border above the call to action, where a
-                  spec table would put it — a number is the reason to read the column, not
-                  decoration on top of it.
-                */}
-                {column.figure ? (
-                  <p className="mt-24 border-t border-line pt-16 text-c2 tabular-nums text-ink">
-                    {localised(column.figure, locale)}
-                  </p>
-                ) : null}
-                <p className="mt-auto pt-24">
-                  {/* The entire card is one link. A second anchor here caused invalid
-                      nesting and a hydration mismatch on every homepage load. */}
-                  <span className="short-marker-group short-marker-arrow relative inline-block pl-12 text-c1 text-brand py-10 sm:py-0">
-                    <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" aria-hidden="true" />
-                    <span>{featureColumnsCta(locale)}</span>
-                  </span>
-                </p>
-                {/*
                   The take-away file, under the reading rather than above it. A form
                   offered before the explanation reads as a lead-capture form; offered
                   after it, it is the next step the article just described.
+                  Directly under the body since 2026-09-24: below the call to action it
+                  pushed that one card's arrow upwards, and the row stopped lining up.
                 */}
                 {column.extra ? (
-                  <p className="mt-8 text-c2 text-ink-secondary">{localised(column.extra, locale)}</p>
+                  <p className="mt-12 text-c2 text-ink-secondary">{localised(column.extra, locale)}</p>
                 ) : null}
+                {/*
+                  Figure and call to action travel together at the foot of the card, so the
+                  figure rule and the arrow sit on the same lines in every card of the row,
+                  whatever the length of the copy above them.
+                */}
+                <div className="mt-auto pt-24">
+                  {/*
+                    The counted fact sits on the border above the call to action, where a
+                    spec table would put it — a number is the reason to read the column, not
+                    decoration on top of it.
+                  */}
+                  {column.figure ? (
+                    <p className="border-t border-line pb-24 pt-16 text-c2 tabular-nums text-ink">
+                      {localised(column.figure, locale)}
+                    </p>
+                  ) : null}
+                  <p>
+                    {/* The entire card is one link. A second anchor here caused invalid
+                        nesting and a hydration mismatch on every homepage load. */}
+                    <span className="short-marker-group short-marker-arrow relative inline-block pl-12 text-c1 text-brand py-10 sm:py-0">
+                      <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" aria-hidden="true" />
+                      <span>{featureColumnsCta(locale)}</span>
+                    </span>
+                  </p>
+                </div>
               </div>
             </Link>
           ))}
