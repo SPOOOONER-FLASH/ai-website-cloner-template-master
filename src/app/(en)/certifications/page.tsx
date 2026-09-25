@@ -35,7 +35,7 @@ export default function CertificationsPage() {
           </div>
           <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
             <p className="text-c1 text-ink">
-              The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers' own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland's own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.
+              The records below are listed with the exact model scope printed on each document, and a report for one model is never presented as approval for another. Much of what we make for private-label customers is certified in our customers&apos; own names, at their request and their cost, so those certificates are theirs to share. CE and ANSI testing in Canton Hyland&apos;s own name is being prepared for our core ranges; each new report will appear here, with its scope, as it is issued.
             </p>
             <p className="mt-24 text-c2 text-ink-secondary">
               The issuers restrict how their reports may be copied, so we send a complete copy on request, for a named model, rather than publishing extracts.

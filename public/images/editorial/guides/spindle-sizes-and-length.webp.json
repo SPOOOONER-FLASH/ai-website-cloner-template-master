@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "812 SSET",
@@ -8,14 +9,10 @@
       "sha256": "69b05af48fe915ec35088d21a5c27b392df0c24070a2fd4e7ff7eed7963c464d"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\01-product-stage.png",
-    "sha256": "bba1395b799e7074ee13a8e3807495d0027628c92fea12954fec41622c3f65ee",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/spindle-sizes-and-length-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "200e4811aedd3316974774762f6918272d20359a7c64c6acba7dbcea803e3d28"
+  "sourceSha256": "69b05af48fe915ec35088d21a5c27b392df0c24070a2fd4e7ff7eed7963c464d",
+  "rejectedCompositeSha256": "1a00c6ff75830993cc831bf4984a55ca3f455373e657ccdbcec882c9f0452b11",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

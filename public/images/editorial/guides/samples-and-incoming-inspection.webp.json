@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "DV08 SN",
@@ -8,14 +9,10 @@
       "sha256": "84b7ca46bb6f70fd81c696b370f38d1e81664ef8c65509d5a55ce6ef1304e482"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\20-product-stage.png",
-    "sha256": "906a0350f47411e7b24408becc15e1c576762d2aff34e813af777817bae56e3d",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/samples-and-incoming-inspection-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "8e14c79256bc92c7b670e279934e947a7ac82e12ad718f0e2d1caec3f86b57a0"
+  "sourceSha256": "84b7ca46bb6f70fd81c696b370f38d1e81664ef8c65509d5a55ce6ef1304e482",
+  "rejectedCompositeSha256": "fe6680ceb848bdef12e06835e3b7e9b08aac60ad9424d16d565953e78b5233d4",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

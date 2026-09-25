@@ -894,7 +894,6 @@
     border-width: 1px;
     box-shadow: none;
     transition:
-      transform var(--motion-fast) var(--motion-ease-crisp),
       box-shadow var(--motion-fast) var(--motion-ease-crisp),
       border-color var(--motion-fast) var(--motion-ease-crisp);
   }
@@ -955,7 +954,6 @@
   .home-accent-surface:has(:focus-visible) {
     border-color: var(--color-frame);
     box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
-    transform: translate(-0.2rem, -0.2rem);
   }
 
   .home-accent-surface:focus-visible {
@@ -996,7 +994,6 @@
 
     .home-accent-surface:hover {
       border-color: var(--color-frame);
-      transform: translate(-0.2rem, -0.2rem);
       box-shadow: 0.9rem 0.9rem 0 var(--color-shadow-hard);
     }
 

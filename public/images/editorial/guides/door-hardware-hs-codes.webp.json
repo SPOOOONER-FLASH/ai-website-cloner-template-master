@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "FB001 SS",
@@ -8,14 +9,10 @@
       "sha256": "57e48dce15f8594cc671bfd9068fa96704c0cbe6610219b5865c2498472f0c7c"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\07-product-stage.png",
-    "sha256": "c099a28584aa8023b6d673b3fec6079b0eaa8ad31eb66f5797ec4f65e9425a0a",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/door-hardware-hs-codes-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "e240f5ec64633e3295908707a8fc1bbb63b54f8dc9dcaab2de5a70bdaac957fd"
+  "sourceSha256": "57e48dce15f8594cc671bfd9068fa96704c0cbe6610219b5865c2498472f0c7c",
+  "rejectedCompositeSha256": "b75c8f0399ef1f4fab98fdadd2ea88c357e9acc333959440837bcdb02e7e8d47",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }
