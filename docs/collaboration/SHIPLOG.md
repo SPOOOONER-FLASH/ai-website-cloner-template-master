@@ -6,14 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 576 次提交
+最近 30 天 · 共 577 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 19:10 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `861f579cd09` |
-| 19:09 | HYDE | 改名同时移类的一跳 301：productMerges.toCategory | `f68ed6e509d` |
+| 19:12 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `442344ba955` |
+| 19:12 | HYDE | 卫浴 54 个产品改名（32 个名字，三语＋中文术语）并重写三语摘要 | `49cb9912283` |
+| 19:06 | 中立 | 卫浴命名：上翻扶手葡语沿用术语表的 rebatível | `4ac576321f0` |
 | 19:05 | 中立 | 卫浴 54 个 Bathroom Accessories 命名方案（看图逐个定，三语） | `91cb0ebc905` |
 | 18:29 | 中立 | NOW.md：本会话接管浏览速度、动画与连贯性（甲方指派），接手 Codex 停在半途的动效认领 | `8ee639fccc8` |
 | 16:39 | 中立 | 目标清单：#36 完成 | `5ba5fabe206` |
