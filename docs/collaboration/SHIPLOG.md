@@ -6,12 +6,15 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 604 次提交
+最近 30 天 · 共 607 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:39 | 中立 | 目标清单：#46 GTM 原样代码上线实测；#41 G-X7EMRX2V2X 已不再收数据 | `5fe990c6346` |
+| 03:34 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 bf52cdcda5a | `632155768cd` |
+| 03:34 | 中立 | 站内搜索：全部门五金产品与品类加入行业名 ironmongery / architectural ironmongery（甲方 09-25） | `2b7fbea76b9` |
 | 03:29 | 中立 | GTM 改回 Google 原样代码、立即执行：延后包装导致安装检测报未检测到（甲方 09-25） | `7cb0383b6a4` |
 | 03:20 | 中立 | 任务：Ironmongery 与定制（甲方 09-25）——行业名、开模能力、定制故事的落地清单与分工 | `46eeb36fa52` |
 | 03:20 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `74ee58458bc` |
