@@ -25,6 +25,10 @@ export interface ServicesCopy {
   briefCta: string;
   listHeading: string;
   services: readonly { number: string; title: string; body: string; outcome: string }[];
+  toolingHeading: string;
+  toolingBody: string;
+  toolingNote: string;
+  toolingCta: string;
   docsHeading: string;
   docsBody: string;
   docsCta: string;
@@ -88,6 +92,10 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
         outcome: "Share the Incoterm and destination port when you know them.",
       },
     ],
+    toolingHeading: "Custom tooling",
+    toolingBody: "We make the metal moulds for our own hardware, which is why a part can be shaped to one market: a hole spacing that matches local frames, a backset for one country's doors, a lever the buyer owns. In the UK and Commonwealth the trade calls this architectural ironmongery; the work is the same. Our 311 exit device was tooled here from a customer's sample, and our AR-4 lock bodies were configured for Argentina.",
+    toolingNote: "Tooling cost and the minimum run for a new part are quoted per project, and who owns the mould is written into the same document as the price.",
+    toolingCta: "How we tool a part for your market",
     docsHeading: "Documents already available",
     docsBody:
       "Catalogs, drawings and technical files for our standard range are ready to download. For a part we develop with you, the drawings are yours as well.",
@@ -149,6 +157,10 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
         outcome: "Indique el Incoterm y el puerto de destino cuando los conozca.",
       },
     ],
+    toolingHeading: "Moldes a medida",
+    toolingBody: "Fabricamos los moldes metálicos de nuestros propios herrajes, y por eso una pieza se puede adaptar a un mercado: una separación de agujeros que coincide con los marcos locales, una entrada para las puertas de un país, una manija que es del comprador. Nuestra barra antipánico 311 se desarrolló aquí a partir de la muestra de un cliente, y nuestras cajas de cerradura AR-4 se configuraron para Argentina.",
+    toolingNote: "El costo del molde y la serie mínima de una pieza nueva se cotizan por proyecto, y de quién es el molde se escribe en el mismo documento que el precio.",
+    toolingCta: "Cómo hacemos el molde de una pieza para su mercado",
     docsHeading: "Documentos ya disponibles",
     docsBody: "Los catálogos, planos y archivos técnicos de nuestra gama estándar se pueden descargar. Si desarrollamos una pieza con usted, los planos también son suyos.",
     docsCta: "Abrir el centro de descargas",
@@ -209,6 +221,10 @@ export const SERVICES_COPY: Partial<Record<Locale, ServicesCopy>> & { en: Servic
         outcome: "Informe o Incoterm e o porto de destino quando souber.",
       },
     ],
+    toolingHeading: "Moldes sob medida",
+    toolingBody: "Fabricamos os moldes metálicos das nossas próprias ferragens, e é por isso que uma peça pode ser adaptada a um mercado: um espaçamento de furos que coincide com os batentes locais, uma distância ao eixo para as portas de um país, uma maçaneta que é do comprador. Nossa barra antipânico 311 foi desenvolvida aqui a partir da amostra de um cliente, e nossas caixas de fechadura AR-4 foram configuradas para a Argentina.",
+    toolingNote: "O custo do molde e o lote mínimo de uma peça nova são cotados por projeto, e de quem é o molde fica escrito no mesmo documento que o preço.",
+    toolingCta: "Como fazemos o molde de uma peça para o seu mercado",
     docsHeading: "Documentos já disponíveis",
     docsBody: "Catálogos, desenhos e arquivos técnicos da nossa linha padrão estão prontos para download. Se desenvolvemos uma peça com você, os desenhos também são seus.",
     docsCta: "Abrir a central de downloads",
@@ -292,6 +308,22 @@ export function ServicesView({ locale }: { locale: Locale }) {
               <p className="mt-24 border-t border-line pt-16 text-c2 text-ink">{service.outcome}</p>
             </article>
           ))}
+        </section>
+
+        <section className="col-content grid grid-cols gap-x gap-y-24 border-t border-line pt-32">
+          <div className="col-span-full lg:col-span-5 xl:col-span-8">
+            <h2 className="text-h2 text-ink">{c.toolingHeading}</h2>
+          </div>
+          <div className="col-span-full lg:col-span-5 lg:col-start-7 xl:col-span-10 xl:col-start-15">
+            <p className="text-c1 text-ink-secondary">{c.toolingBody}</p>
+            <p className="mt-16 text-c1 text-ink-secondary">{c.toolingNote}</p>
+            <Link
+              href={href("/guides/custom-door-hardware-tooling-2026")}
+              className="short-marker short-marker-compact mt-24 text-c1 text-brand hover:text-brand-hover"
+            >
+              {c.toolingCta}
+            </Link>
+          </div>
         </section>
 
         <section className="col-content grid grid-cols gap-x gap-y-24 border-t border-line pt-32">
