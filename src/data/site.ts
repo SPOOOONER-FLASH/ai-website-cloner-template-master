@@ -91,7 +91,9 @@ export const defaultTitle: Record<Locale, string> = {
 };
 
 export const defaultDescription: Record<Locale, string> = {
-  en: "Chinese manufacturer of panic exit devices, mortise locks, lever handles, hinges and architectural door hardware. ISO 9001 certified, exporting to 30+ markets.",
+  // "architectural ironmongery" is what UK, Irish, Gulf and ANZ project buyers call this trade (client 2026-09-25,
+  // docs/collaboration/tasks/2026-09-25-ironmongery-customize-brief.md). Once here, not in every title.
+  en: "Door hardware and architectural ironmongery from China: panic exit devices, mortise locks, levers and hinges, tooled to your drawing. ISO 9001.",
   es: "Fabricante chino de barras antipánico, cerraduras de embutir, manijas y herrajes arquitectónicos. Certificado ISO 9001, exportando a más de treinta mercados.",
   pt: "Fabricante chinês de barras antipânico, fechaduras de embutir, maçanetas, dobradiças e ferragens arquitetónicas. Certificado ISO 9001, exportando para mais de trinta mercados.",
 };

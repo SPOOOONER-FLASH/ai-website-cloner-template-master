@@ -6,9 +6,11 @@ export const metadata: Metadata = pageMetadata({
   enPath: "/services",
   locale: "en",
   // OEM / private label leads (client steer 2026-09-24: the buyers who pay are private-label brands).
-  title: "OEM & Private-Label Door Hardware Manufacturer in China",
+  // 2026-09-25: custom tooling is the specialty the client wants found (开模定制); "bespoke ironmongery" is
+  // the Commonwealth project buyer's phrase for it. Private label stays in the description.
+  title: "OEM & Custom Door Hardware, Bespoke Ironmongery from China",
   description:
-    "OEM and private-label door hardware from Xiaolan, China: new tooling to your drawing, patent-conscious redesign, your brand and packaging.",
+    "OEM, private-label and custom door hardware from Xiaolan, China: new tooling to your drawing or sample, patent-conscious redesign, your brand.",
 });
 
 /** Copy lives in ServicesView (one object per language). */
