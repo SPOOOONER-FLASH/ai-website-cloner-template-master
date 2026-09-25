@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 592 次提交
+最近 30 天 · 共 593 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 20:28 | 中立 | 黄铜合页描述带上 copper hinge 叫法（甲方 09-25）；「fix the door」不再当功能写进描述 | `47f94273f87` |
+| 20:29 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `9ee408f8eaa` |
+| 20:29 | HYDE | 指南：copper hinge 还是 brass hinge，三语 | `14a1ab0ecd3` |
 | 20:24 | 中立 | 站内搜索：黄铜产品加入 copper / cobre / latón / latão 同义词（只进索引，不上页面） | `3dbd0ff3660` |
 | 20:17 | HYDE | 七语种市场落地站：法 德 日 韩 土 俄 阿，各七页，十语 hreflang 互指 | `366e445afa4` |
 | 19:58 | 中立 | 跳转规则已装（甲方 09-25）；安装脚本的验证改走 https，消除 8 条误报 | `1708043bd73` |
