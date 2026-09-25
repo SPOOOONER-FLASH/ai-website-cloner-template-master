@@ -1966,7 +1966,6 @@
   },
   "3431-sset-lever-handle": {
     "name": "Kapı Kolu",
-    "summary": "Saten paslanmaz çelik (US32D) kaplamalı kapı kolu, giriş fonksiyonu.",
     "features": [],
     "specs": [
       {
@@ -2009,7 +2008,8 @@
         "label": "Finish",
         "value": "Saten paslanmaz çelik (US32D)"
       }
-    ]
+    ],
+    "summary": "Saten paslanmaz çelik (US32D) kaplamalı zamak (çinko alaşımı) kapı kolu, giriş fonksiyonu."
   },
   "410-glass-door-handle": {
     "name": "Cam Kapı Kolu",
@@ -3701,7 +3701,6 @@
   },
   "587-mbbk-light-duty-cylindrical-lock": {
     "name": "Hafif Hizmet Tipi Silindirik Kilit",
-    "summary": "Saten nikel, krom, antik pirinç ve parlak pirinç kaplamalı (tümü mevcut) hafif hizmet tipi silindirik kilit, mahremiyet (banyo) fonksiyonu.",
     "features": [
       "Teknik özellikler",
       "Dil: 12 mm (1/2\") çıkış, anahtarlı modellerde emniyet dilli",
@@ -3768,7 +3767,8 @@
         "label": "Key Types",
         "value": "Nikel kaplı pirinç, masif pirinç, fırçalanmış nikel"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik hafif hizmet tipi silindirik kilit, mahremiyet fonksiyonu; saten nikel, krom, antik pirinç veya parlak pirinç kaplama seçenekleriyle."
   },
   "587-mbet-light-duty-cylindrical-lock": {
     "name": "Hafif Hizmet Tipi Silindirik Kilit",
@@ -5153,7 +5153,6 @@
   },
   "6-3-3mm-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "201 / 304 paslanmaz çelik kapı menteşesi, 6 × 3 × 3 mm (özelleştirilebilir).",
     "features": [
       "1. Dünya genelindeki farklı pazar ihtiyaçları için geniş menteşe yelpazesi.",
       "2. Toz boya, boya, eloksal ve ahşap desen dahil çok sayıda yüzey kaplama seçeneği.",
@@ -5200,7 +5199,8 @@
         "label": "Opening Angle",
         "value": "180 derece"
       }
-    ]
+    ],
+    "summary": "201 / 304 paslanmaz çelik kapı menteşesi, 6*3*3mm (ölçüye göre üretilebilir)."
   },
   "60-bskt-lock-cylinder": {
     "name": "Kilit Silindiri",
@@ -6382,7 +6382,6 @@
   },
   "70720-pb-grip-handle-set": {
     "name": "Çekme Kol Takımı",
-    "summary": "Parlak pirinç (US3) kaplamalı çekme kol takımı.",
     "features": [],
     "specs": [
       {
@@ -6429,7 +6428,8 @@
         "label": "Finish",
         "value": "Parlak pirinç (US3)"
       }
-    ]
+    ],
+    "summary": "Parlak pirinç (US3) kaplamalı zamak (çinko alaşımı) çekme kol takımı."
   },
   "70720-sm-grip-handle-set": {
     "name": "Çekme Kol Takımı",
@@ -7027,7 +7027,6 @@
   },
   "807-abbk-lever-handle": {
     "name": "Kapı Kolu",
-    "summary": "Antik pirinç (US5) kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
     "features": [
       "Yatak odaları ve mahremiyet gerektiren odalar için ideal",
       "Düğmeli kilit mekanizması: basınca kilitlenir, bırakınca açılır",
@@ -7079,11 +7078,11 @@
         "label": "Surface Finish Options",
         "value": "AB, AC, PB, SB, SS, SP, SC (ör. antik pirinç, parlak pirinç, saten nikel, mat siyah vb.)"
       }
-    ]
+    ],
+    "summary": "Antik pirinç (US5) kaplamalı zamak (çinko alaşımı) kapı kolu, mahremiyet fonksiyonu."
   },
   "808-abet-lever-handle": {
     "name": "Kapı Kolu",
-    "summary": "Antik pirinç (US5) kaplamalı kapı kolu, giriş fonksiyonu.",
     "features": [
       "Ekonomik ve kolay montaj",
       "200.000'in üzerinde çevrim ömrüyle dayanıklı tasarım",
@@ -7141,7 +7140,8 @@
         "label": "Application",
         "value": "Konut kullanımı"
       }
-    ]
+    ],
+    "summary": "Antik pirinç (US5) kaplamalı zamak (çinko alaşımı) kapı kolu, giriş fonksiyonu."
   },
   "808-mbet-lever-handle": {
     "name": "Kapı Kolu",
@@ -7269,7 +7269,6 @@
   },
   "808-snps-lever-handle": {
     "name": "Kapı Kolu",
-    "summary": "Saten nikel, krom, antik pirinç ve parlak pirinç kaplamalı (tümü mevcut) kapı kolu, geçiş fonksiyonu.",
     "features": [
       "Ekonomik ve kolay montaj",
       "200.000'in üzerinde çevrim ömrüyle dayanıklı tasarım",
@@ -7327,7 +7326,8 @@
         "label": "Application",
         "value": "Konut kullanımı"
       }
-    ]
+    ],
+    "summary": "Zamak (çinko alaşımı) kapı kolu, geçiş fonksiyonu; saten nikel, krom, antik pirinç veya parlak pirinç kaplama seçenekleriyle."
   },
   "80sn-lock-cylinder": {
     "name": "Kilit Silindiri",
@@ -7660,7 +7660,6 @@
   },
   "853-ssbk-lever-handle": {
     "name": "Kapı Kolu",
-    "summary": "Saten paslanmaz çelik (US32D) kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
     "features": [
       "Uygun maliyetli ve kolay montaj; konut kullanımı için ideal",
       "Anahtar veya içteki mandal her iki kolu kilitler/açar",
@@ -7709,7 +7708,8 @@
         "label": "Finish",
         "value": "Saten paslanmaz çelik (US32D)"
       }
-    ]
+    ],
+    "summary": "Saten paslanmaz çelik (US32D) kaplamalı zamak (çinko alaşımı) kapı kolu, mahremiyet fonksiyonu."
   },
   "8803-snbk-lever-handle": {
     "name": "Kapı Kolu",
@@ -8826,10 +8826,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Canton Hyland tarafından üretilen AAH024 model pirinç ve çelik menteşeler.",
     "description": "AAH024 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Canton Hyland tarafından üretilen AAH024 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
   },
   "ai8530-lock-case": {
     "name": "Kilit Gövdesi",
@@ -8880,7 +8880,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik menteşe (çıkarılabilir pimli). Pirinç veya SUS304 paslanmaz çelikten tam kapı menteşesi yelpazesi sunuyoruz.",
     "features": [
       "Genel bilgi",
       "Paslanmaz çelik menteşe (çıkarılabilir pimli)"
@@ -8906,11 +8905,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı menteşesi; 2.0–3.5 mm kalınlık, 90–180 derece açılma. Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre."
   },
   "b025-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik menteşe (çıkarılabilir pimli). Pirinç veya SUS304 paslanmaz çelikten tam kapı menteşesi yelpazesi sunuyoruz.",
     "features": [
       "Genel bilgi",
       "Paslanmaz çelik menteşe (çıkarılabilir pimli)"
@@ -8940,7 +8939,8 @@
         "label": "Size",
         "value": "Müşteri talebine göre özelleştirilebilir"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı menteşesi, 90–180 derece açılma. Antik pirinç, antik bakır, parlak pirinç, saten pirinç, paslanmaz çelik, ayna parlak veya saten krom kaplama; ölçü siparişe göre üretilir."
   },
   "bh01-grab-bar": {
     "name": "Tutunma Barı",
@@ -10287,7 +10287,6 @@
   },
   "bl027-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Demir kapı menteşesi, 3,5\" × 2,28\" × 1,6 mm.",
     "features": [],
     "specs": [
       {
@@ -10302,11 +10301,11 @@
         "label": "Finish",
         "value": "Siyah (BL)"
       }
-    ]
+    ],
+    "summary": "Demir kapı menteşesi, 3.5\"x2.28\"x1.6MM."
   },
   "bl028-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "304/201 paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "features": [
       "Genel bilgi",
       "Paslanmaz çelik menteşe (çıkarılabilir pimli)"
@@ -10328,18 +10327,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "304/201 paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM."
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Canton Hyland tarafından üretilen BL029 model pirinç ve çelik menteşeler.",
     "description": "BL029 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Canton Hyland tarafından üretilen BL029 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "304 paslanmaz çelik kapı menteşesi; özel ölçü yapılabilir.",
     "features": [
       "1. Korozyona çok dayanıklı, uzun ömürlü birinci sınıf 304 paslanmaz çelik.",
       "2. Gerginliği ayarlanabilen yaylı, kendiliğinden kapanan menteşe; kapanma kuvveti esnek biçimde ayarlanır.",
@@ -10404,11 +10403,11 @@
         "label": "LOGO",
         "value": "Özel logo kabul edilir"
       }
-    ]
+    ],
+    "summary": "304 paslanmaz çelik kapı menteşesi; özel ölçüde üretim mümkündür."
   },
   "bl031-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "304 paslanmaz çelik kapı menteşesi.",
     "features": [],
     "specs": [
       {
@@ -10463,7 +10462,8 @@
         "label": "OEM /ODM",
         "value": "Mevcut"
       }
-    ]
+    ],
+    "summary": "304 paslanmaz çelik kapı menteşesi."
   },
   "black-tubular-lever-lock-set": {
     "name": "Siyah Tübüler Kollu Kilit Takımı",
@@ -10508,7 +10508,6 @@
   },
   "ch01-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Zamak / 304 paslanmaz çelik menteşe; ölçüler 34 × 140 × 28 mm / 28 × 118 × 22 mm / 25 × 118 × 18 mm / 19 × 95 × 13 mm / 16 × 70 × 11 mm.",
     "features": [
       "Başlıca özellikler:",
       "• Birçok profil sistemiyle uyumlu",
@@ -10540,7 +10539,8 @@
         "label": "Application",
         "value": "Pencere bağlantısı"
       }
-    ]
+    ],
+    "summary": "Zamak / 304 paslanmaz çelik kapı menteşesi; 34*140*28mm / 28*118*22mm / 25*118*18mm / 19*95*13mm / 16*70*11mm ölçüleri."
   },
   "cylindrical-knob-lock": {
     "name": "Silindirik Topuzlu Kilit",
@@ -13313,7 +13313,6 @@
   },
   "hy008-lock-case": {
     "name": "Kilit Gövdesi",
-    "summary": "KFC tipi ve alüminyum dar kapı kilit gövdeleri için gömme kilit gövdesi.",
     "features": [
       "Dayanıklı demir yapılı Amerikan tipi mağaza kapısı kilit gövdesi; ticari kullanımda güvenilir ve kararlı emniyet sağlar.",
       "Anahtarın yumuşak dönmesi ve güvenilir kilitleme için Amerikan tipi pirinç gömme silindirle donatılmıştır.",
@@ -13347,7 +13346,8 @@
         "label": "Included Accessories",
         "value": "Alüminyum kapı kilit gövdesi, Amerikan tipi kilit silindiri / kilit gövdesi (kapı sürgüsü), kilit ve anahtarlar."
       }
-    ]
+    ],
+    "summary": "KFC tipi kilit gövdeleri ve alüminyum dar profil kapı kilit gövdeleri için gömme kilit gövdesi."
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "Standart Gömme Kilit Gövdesi",
@@ -13459,7 +13459,6 @@
   },
   "ih01-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Demir kapı menteşesi; özel ölçü yapılabilir.",
     "features": [
       "Ahşap kapılar, metal kapılar, yangın kapıları, pencereler ve dolap kapıları için uygundur; konut, ticari, otel, ofis, depo ve endüstriyel uygulamalarda yaygın olarak kullanılır.",
       "OEM ve ODM projeleri için çok sayıda ölçü ve özelleştirme seçeneği sunulur."
@@ -13509,7 +13508,8 @@
         "label": "Features",
         "value": "Sökülebilir, yumuşak dönüş, kolay montaj"
       }
-    ]
+    ],
+    "summary": "Demir kapı menteşesi; özel ölçülerde üretim mümkündür."
   },
   "ju-051-door-closer": {
     "name": "Kapı Kapatıcı",
@@ -16460,18 +16460,17 @@
   },
   "ss026-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Paslanmaz çelik"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi."
   },
   "ss027-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 4,0\" × 3,0\" × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16482,11 +16481,11 @@
         "label": "Size",
         "value": "4,0\" × 3,0\" × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 4.0''x3.0''x2.0mm."
   },
   "ssh011-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "304 paslanmaz çelik kapı menteşesi, 4,0\" × 3,0\" × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16497,11 +16496,11 @@
         "label": "Size",
         "value": "4,0\" × 3,0\" × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "304 paslanmaz çelik kapı menteşesi, 4.0''x3.0''x2.0mm."
   },
   "ssh012-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "304 paslanmaz çelik kapı menteşesi.",
     "features": [],
     "specs": [
       {
@@ -16536,11 +16535,11 @@
         "label": "Size5",
         "value": "5\" × 3\" × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "304 paslanmaz çelik kapı menteşesi."
   },
   "ssh013-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi.",
     "features": [],
     "specs": [
       {
@@ -16575,11 +16574,11 @@
         "label": "Size5",
         "value": "5\" × 3\" × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi."
   },
   "ssh015-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 2 × 2 × 2.",
     "features": [],
     "specs": [
       {
@@ -16598,7 +16597,8 @@
         "label": "Size",
         "value": "2 × 2 × 2"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 2x2x2."
   },
   "ssh016-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
@@ -16656,7 +16656,6 @@
   },
   "ssh017-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16679,11 +16678,11 @@
         "label": "Opening Angle",
         "value": "90°–180°"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM."
   },
   "ssh018-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16706,11 +16705,11 @@
         "label": "Type",
         "value": "Bilyasız / 2BB düz yatak (seçenekler mevcut)"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 102x72.5x2.5MM."
   },
   "ssh019-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16733,11 +16732,11 @@
         "label": "Type",
         "value": "Düz yatak / Bilyasız / 2BB (opsiyonel)"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 102x72.5x2.5MM."
   },
   "ssh020-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi.",
     "features": [],
     "specs": [
       {
@@ -16752,18 +16751,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi."
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Canton Hyland tarafından üretilen SSH021 model pirinç ve çelik menteşeler.",
     "description": "SSH021 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Canton Hyland tarafından üretilen SSH021 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16782,11 +16781,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM."
   },
   "ssh023-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "201/304 paslanmaz çelik kapı menteşesi; 3,5\" × 3,5\" × 3,0 mm / 4\" × 3\" × 3,0 mm / 4\" × 4\" × 3,0 mm (özel üretim mümkün).",
     "features": [
       "Paslanmaz çelik yaylı menteşe – kendiliğinden kapanır (gerginlik ayarlı)"
     ],
@@ -16827,11 +16826,11 @@
         "label": "Opening Angle",
         "value": "180°"
       }
-    ]
+    ],
+    "summary": "201/304 paslanmaz çelik kapı menteşesi; 3.5”×3.5”×3.0mm / 4”×3”×3.0mm / 4”×4”×3.0mm (özel ölçü mümkündür)."
   },
   "ssh031-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "summary": "Paslanmaz çelik kapı menteşesi, 4\" × 3\".",
     "features": [
       "Paslanmaz çelik yapı",
       "Dayanıklılık ve korozyon direnci için fırçalanmış yüzeyli, yüksek kaliteli paslanmaz çelikten üretilmiştir.",
@@ -16887,7 +16886,8 @@
         "label": "OEM",
         "value": "Mevcut"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı menteşesi, 4” × 3”."
   },
   "stainless-steel-door-hinge": {
     "name": "Paslanmaz Çelik Kapı Menteşesi",
