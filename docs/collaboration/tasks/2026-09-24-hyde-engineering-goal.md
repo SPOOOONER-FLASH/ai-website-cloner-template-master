@@ -45,10 +45,10 @@
 | 38 | 卫浴 54 条：改 slug + 301、BH15/16/17 移 latches、扶手和淋浴凳移 care-grab-bars、重跑标题、care-grab-bars 类目的 HYDE 封面和三语标题 | 09-24 完成 |
 | 39 | HYDE 发布（#38 + 发布会话的动效令牌、对比度两个提交），上线后实测 | 09-24 完成（6ee2cf87ba0 上线；care-grab-bars 类目页、bh01/bh56/bh17 三语 200，标题正确；旧网址等甲方装 nginx，Next 跳转页按设计被 prune 掉） |
 | 40 | GA4 是否双计（发布会话报告）：实测 page_view 只 1 次；第二资源 G-X7EMRX2V2X 来自 GA 后台的代码目标，已写进手册 ④ 问甲方 | 09-24 完成 |
-| 41 | 甲方回复 ④：G-X7EMRX2V2X 删（手册 ④ 写了后台步骤，甲方操作后实测只剩一个资源）；GTM 改为 load 后加载 | 待甲方（删除）；GTM 见 #42 |
+| 41 | 甲方回复 ④：G-X7EMRX2V2X 删（手册 ④ 写了后台步骤，甲方操作后实测只剩一个资源）；GTM 改为 load 后加载 | 09-25 实测已不再发往 G-X7EMRX2V2X（page_view 只发 G-RBTE7KF82P），甲方似已删除 |
 | 42 | GTM 改为页面 load 后加载（官方代码原样保留在 head，hoist 正则兼容），发布后实测 HTML 有代码、gtm.js 下载、dataLayer 有 gtm.js 事件 | 09-24 完成（069a44f1ae8 上线；无头 Chrome 实测：gtm.js 在 window load 同一刻请求，GTM-MQHHPGJL 生效，dataLayer 有 gtm.js / gtm.dom / gtm.load；G-RBTE7KF82P page_view 1 次） |
 | 43 | 甲方要 copper hinge 搜索导到黄铜合页：材质字段为 Brass 的合页（B024、B025）描述加三语「买家常叫 copper hinge」，不写纯铜；「fix the door」不再当功能进描述（7 条） | 09-25 完成 |
 | 44 | HYDE 发布（#43 + 发布会话 b795cc38ac9 邮箱统一 tec@、6fd3c2025d7 首页对齐），上线后实测 | 09-25 完成（77895fcdd16 上线；piano-hinge、铜合页指南 EN/ES、B024 描述、tec@ 实测正确） |
 | 45 | 七语种产品标题：生成器扩 fr/de/ja/ko/tr/ru/ar，结果合并写入 content/i18n/<code>/products.json 的 seoTitle / seoDescription（以 slug 为键，不加后缀字段，不覆盖同文件其他字段） | 等待（多语言会话术语表 M2 和 categories.json 就位后通知） |
-| 46 | GTM 安装检测报未检测到（09-25 甲方截图）：改回 Google 原样代码（含换行、立即执行），发布后请甲方在 GTM 里重新点 Test | 待做 |
+| 46 | GTM 安装检测报未检测到（09-25 甲方截图）：改回 Google 原样代码（含换行、立即执行），发布后请甲方在 GTM 里重新点 Test | 09-25 完成（632155768cd 上线：head 里是 Google 原样代码，gtm.js 2.6s 请求、早于 load；等甲方 purge 后在 GTM 点 Test 确认） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
