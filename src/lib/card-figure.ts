@@ -1,7 +1,6 @@
-import { SPEC_LABELS_ES } from "../data/es-glossary.ts";
-import { SPEC_LABELS_PT } from "../data/pt-glossary.ts";
 import type { Locale } from "../data/site.ts";
 import type { Product } from "../data/types.ts";
+import { specLabel } from "./i18n-client.ts";
 
 /**
  * The one figure worth printing on a catalogue card.
@@ -94,7 +93,7 @@ export function cardFigure(
         to its size: "Door thickness" was English on 78 Portuguese pages because this
         function knew about Spanish and not about a third locale.
       */
-      const localeLabel = (pt ? SPEC_LABELS_PT[label] : SPEC_LABELS_ES[label]) ?? label;
+      const localeLabel = specLabel(label, locale);
       const localeRows = pt ? product.specsPt : product.specsEs;
       const localeRow = localeRows?.find(
         (spec) => spec.label === localeLabel && hasDigit(spec.value),

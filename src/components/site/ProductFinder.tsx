@@ -26,6 +26,7 @@ import {
   type Selection,
   type FinderProduct,
 } from "@/lib/product-finder";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * Product Finder.
@@ -124,7 +125,7 @@ export function ProductFinder({
   categoryNames: Record<string, string>;
   locale?: Locale;
 }) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   // Seeded lazily from the address bar. This component is loaded with ssr: false, so it
   // only ever renders in the browser — there is no server pass to disagree with, and no
   // setState-in-an-effect needed to catch up afterwards.
@@ -248,7 +249,7 @@ export function ProductFinder({
         fixed-height scrolling box would trap the page scroll on touch, and the rail is
         short anyway because it collapses.
       */}
-      <aside className="col-span-full xl:sticky xl:col-span-6 xl:self-start xl:top-96 xl:max-h-[calc(100vh-12rem)] xl:overflow-y-auto xl:overscroll-contain xl:pr-16 xl:[scrollbar-width:thin]">
+      <aside className="col-span-full xl:sticky xl:col-span-6 xl:self-start xl:top-96 xl:max-h-[calc(100vh-12rem)] xl:overflow-y-auto xl:overscroll-contain xl:pe-16 xl:[scrollbar-width:thin]">
         <div className="flex items-baseline justify-between gap-16 border-b border-line pb-16">
           <h2 className="text-h3 text-ink">{t.filters}</h2>
           {activeCount > 0 && (

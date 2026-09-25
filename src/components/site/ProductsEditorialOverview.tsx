@@ -6,7 +6,7 @@ import { MediaPlaceholder } from "./MediaPlaceholder";
 import { EditorialAtlas } from "./EditorialAtlas";
 import { getProductsArchitecture, type ProductsLocale } from "./products-architecture";
 import styles from "./EditorialCatalogue.module.css";
-import { localised } from "@/lib/localised";
+import { dict } from "@/lib/i18n";
 
 interface ProductsEditorialOverviewProps {
   locale: ProductsLocale;
@@ -57,7 +57,7 @@ const COPY = {
 export function ProductsEditorialOverview({ locale, totalProducts, categoryCounts }: ProductsEditorialOverviewProps) {
   const architecture = getProductsArchitecture(locale);
   const [rangeChapter, applicationChapter, technicalChapter] = architecture.story;
-  const t = localised(COPY, locale);
+  const t = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
 
   return <div className={styles.page}>

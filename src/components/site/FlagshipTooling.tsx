@@ -2,6 +2,7 @@ import type { Locale } from "@/data/site";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { flagshipCopy, flagshipTooling } from "@/lib/flagship-tooling";
+import { dict } from "@/lib/i18n";
 
 /**
  * 307 and 311 — the two exit devices built on the factory's own moulds.
@@ -32,7 +33,7 @@ export function FlagshipTooling({ locale = "en" }: { locale?: Locale }) {
   const cards = flagshipTooling(locale);
   if (!cards) return null;
 
-  const text = flagshipCopy[locale];
+  const text = dict(flagshipCopy, locale);
 
   return (
     <section className="layout" aria-labelledby="flagship-tooling-heading">

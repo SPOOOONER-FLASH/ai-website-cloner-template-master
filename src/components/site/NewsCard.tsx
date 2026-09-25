@@ -4,6 +4,7 @@ import { newsKindLabels, formatNewsDate } from "@/data/news";
 import { NewsVisual } from "./NewsVisual";
 import type { Locale } from "@/data/site";
 import { GuideCover } from "./GuideCover";
+import { t } from "@/lib/i18n";
 
 /**
  * Listing card. Image on top, text below — the arrangement FSB uses on /en/press.
@@ -40,9 +41,9 @@ export function NewsCard({
     Spanish, which is the same class of miss as the language picker on the same day.
     English is the fallback, never the other translation: see src/lib/localised.ts.
   */
-  const title = (locale === "es" && article.titleEs) || (locale === "pt" && article.titlePt) || article.title;
+  const title = t(article, "title", locale);
   const summary =
-    (locale === "es" && article.summaryEs) || (locale === "pt" && article.summaryPt) || article.summary;
+    t(article, "summary", locale);
   return (
     <Link
       href={`${base}/${section}/${article.slug}/`}

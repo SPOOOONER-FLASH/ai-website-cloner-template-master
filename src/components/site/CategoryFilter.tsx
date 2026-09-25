@@ -9,6 +9,7 @@ import { paginate, sortForDisplay } from "@/lib/product-finder";
 import { CatalogueReturnRestorer } from "./CatalogueNavigation";
 import { ProductCard } from "./ProductCard";
 import { Pagination } from "./Pagination";
+import { dict } from "@/lib/i18n-client";
 
 interface FilterOption {
   slug: string;
@@ -86,7 +87,7 @@ const COPY = {
  * each having their own idea of what a page is.
  */
 export function CategoryFilter({ products, options, locale = "en" }: CategoryFilterProps) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const search = useSyncExternalStore(subscribeToLocation, browserSearch, serverSearch);
   const validTypes = useMemo(() => new Set(options.map((option) => option.slug)), [options]);
   const { active, page } = useMemo(
@@ -132,7 +133,7 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
     <div className="col-span-full grid grid-cols gap-x gap-y-64">
       {/* Same independent scroll as the Product Finder rail — see the note there. */}
       <aside
-        className="col-span-full xl:sticky xl:top-96 xl:col-span-6 xl:max-h-[calc(100vh-12rem)] xl:self-start xl:overflow-y-auto xl:overscroll-contain xl:pr-16 xl:[scrollbar-width:thin]"
+        className="col-span-full xl:sticky xl:top-96 xl:col-span-6 xl:max-h-[calc(100vh-12rem)] xl:self-start xl:overflow-y-auto xl:overscroll-contain xl:pe-16 xl:[scrollbar-width:thin]"
         aria-label={t.filters}
       >
         <p className="border-b border-line pb-16 text-c2 text-ink-secondary">{t.filterBy}</p>
@@ -146,7 +147,7 @@ export function CategoryFilter({ products, options, locale = "en" }: CategoryFil
                 aria-pressed={selected}
                 onClick={() => choose(option.slug)}
                 className={cn(
-                  "short-marker short-marker-compact text-left text-c1 hover:text-brand-hover",
+                  "short-marker short-marker-compact text-start text-c1 hover:text-brand-hover",
                   selected ? "font-semibold text-brand" : "text-ink",
                 )}
               >

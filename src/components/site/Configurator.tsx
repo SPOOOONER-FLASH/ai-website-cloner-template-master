@@ -27,6 +27,7 @@ import {
   type ConfiguratorStep,
   type StepKey,
 } from "@/lib/configurator";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * The guided configurator.
@@ -239,7 +240,7 @@ function useResolvedText(text: string, ms = 360): string {
 export function Configurator({ products, locale = "en" }: ConfiguratorProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const steps = locale === "es" ? STEPS_ES : locale === "pt" ? STEPS_PT : STEPS;
   const base = locale === "en" ? "" : `/${locale}`;
 

@@ -387,16 +387,16 @@
   }
   .copy ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-inline-start: 0;
   }
   .copy ul > li {
     position: relative;
-    padding-left: 2rem;
+    padding-inline-start: 2rem;
   }
   .copy ul > li::before {
     content: "–";
     position: absolute;
-    left: 0;
+    inset-inline-start: 0;
     color: currentColor;
   }
   /* Inline copy needs to keep natural wrapping, so it uses the same short-line
@@ -471,12 +471,12 @@
      Tailwind arbitrary values in PageTeaserModule, so that `pointer-fine:` can vary them. */
 
   .px-outset {
-    padding-left: var(--layout-outset);
-    padding-right: var(--layout-outset);
+    padding-inline-start: var(--layout-outset);
+    padding-inline-end: var(--layout-outset);
   }
   .scroll-px-outset {
-    scroll-padding-left: var(--layout-outset);
-    scroll-padding-right: var(--layout-outset);
+    scroll-padding-inline-start: var(--layout-outset);
+    scroll-padding-inline-end: var(--layout-outset);
   }
   .outline-offset {
     outline-offset: max(-0.1rem, -1px);
@@ -601,7 +601,7 @@
     content: "";
     position: absolute;
     bottom: var(--marker-bottom);
-    left: var(--marker-left);
+    inset-inline-start: var(--marker-left);
     width: var(--marker-width);
     height: 0.2rem;
     background-color: currentColor;
@@ -749,9 +749,9 @@
   /* The second level. Indented and ruled on the left so a sub-category reads as
      belonging to the row above it rather than as another top-level entry. */
   .drawer-sublist {
-    margin-left: 0.2rem;
-    border-left: 1px solid var(--color-line);
-    padding-left: 1.6rem;
+    margin-inline-start: 0.2rem;
+    border-inline-start: 1px solid var(--color-line);
+    padding-inline-start: 1.6rem;
   }
 
   .drawer-sublist .drawer-link {
@@ -786,7 +786,7 @@
   .header-shelf {
     position: absolute;
     top: 100%;
-    left: 0;
+    inset-inline-start: 0;
     z-index: 20;
     display: grid;
     width: 100%;
@@ -938,7 +938,7 @@
 
   .hard-shadow-drawer {
     border-bottom: 0;
-    border-right: 0;
+    border-inline-end: 0;
     border-top: 0;
     box-shadow: -1rem 1rem 0 var(--color-shadow-hard);
   }
@@ -1540,7 +1540,7 @@
     width: 100%;
     min-height: 8.8rem;
     padding: 1.2rem;
-    text-align: left;
+    text-align: start;
     text-decoration: none;
     background: var(--color-surface);
     border: 1px solid var(--color-line);
@@ -1707,7 +1707,7 @@
   }
 
   .finder-mode > * + * {
-    border-left: 1px solid var(--color-line);
+    border-inline-start: 1px solid var(--color-line);
   }
 
   .finder-mode-item {
@@ -2017,7 +2017,7 @@
     margin-top: auto;
     font-size: var(--text-c1);
     line-height: var(--leading-c1);
-    text-align: left;
+    text-align: start;
     color: var(--color-ink);
   }
 

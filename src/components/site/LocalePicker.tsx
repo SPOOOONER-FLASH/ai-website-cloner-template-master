@@ -7,6 +7,7 @@ import type { Locale } from "@/data/site";
 import { EmailLink } from "./EmailLink";
 import { GlobeIcon } from "./icons";
 import { contactChoices, languageChoices, localePickerCopy } from "@/lib/locale-picker";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * The location-and-language panel.
@@ -48,7 +49,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
     2026-09-17, which rendered the Portuguese panel in English — the same hard-coded
     two-language assumption that hid /pt/ from the language list entirely.
   */
-  const text = localePickerCopy[locale];
+  const text = dict(localePickerCopy, locale);
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -132,7 +133,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
               <span key={language.code} className="flex items-center gap-4">
                 {index ? <span className="text-line">·</span> : null}
                 {language.current ? (
-                  <span aria-current="true" className="text-ink">
+                  <span aria-current="true" className="inline-flex min-h-24 items-center px-2 text-ink">
                     {language.code.toUpperCase()}
                   </span>
                 ) : (
@@ -141,7 +142,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
                     hrefLang={language.code}
                     lang={language.code}
                     title={language.label}
-                    className="text-ink-secondary no-underline transition-colors duration-[var(--motion-fast)] hover:text-brand-hover"
+                    className="inline-flex min-h-24 min-w-24 items-center justify-center px-2 text-ink-secondary no-underline transition-colors duration-[var(--motion-fast)] hover:text-brand-hover"
                   >
                     {language.code.toUpperCase()}
                   </Link>
@@ -220,7 +221,7 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
                       >
                         {language.label}
                         {language.current ? (
-                          <span className="ml-8 text-c2 text-ink-secondary">({text.current})</span>
+                          <span className="ms-8 text-c2 text-ink-secondary">({text.current})</span>
                         ) : null}
                       </Link>
                       {/*

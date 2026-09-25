@@ -6,6 +6,7 @@ import type { Locale } from '@/data/site';
 import { guideTopic, isGuideProductPhoto, type GuideLibraryEntry } from '@/lib/guide-library';
 import { GuideLibrary } from './GuideLibrary';
 import styles from './GuideEditorial.module.css';
+import { dict, t as tr } from "@/lib/i18n";
 
 const COPY = {
   en: {
@@ -41,20 +42,20 @@ const COPY = {
 } as const;
 
 export function GuideListing({ locale = 'en' }: { locale?: Locale } = {}) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const base = locale === 'en' ? '' : `/${locale}`;
   /* A guide not yet translated into this page's language is left out of its library rather
      than listed under an English title (see getAllGuideParams). */
   const available = new Set(getAllGuideParams(locale).map(p => p.slug));
   const entries: GuideLibraryEntry[] = getPublishedGuides().filter(article => available.has(article.slug)).map(article => ({
     slug: article.slug,
-    title: (locale === 'es' ? article.titleEs : locale === 'pt' ? article.titlePt : undefined) || article.title,
-    summary: (locale === 'es' ? article.summaryEs : locale === 'pt' ? article.summaryPt : undefined) || article.summary,
+    title: tr(article, "title", locale),
+    summary: tr(article, "summary", locale),
     topic: guideTopic(article.slug),
     models: article.relatedModels ?? [],
     image: isGuideProductPhoto(article.heroImage.src) ? {
       src: article.heroImage.src,
-      label: (locale === 'es' ? article.heroImage.labelEs : locale === 'pt' ? article.heroImage.labelPt : undefined) || article.heroImage.label,
+      label: tr(article.heroImage, "label", locale),
     } : undefined,
   }));
   const featured = entries.find(entry => entry.slug === 'euro-cylinder-size-chart-2026');

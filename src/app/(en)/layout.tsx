@@ -15,7 +15,7 @@ import {
   siteName,
   siteUrl,
 } from "@/data/site";
-import { marketAlternates } from "@/lib/market-mirror";
+import { alternateLanguages } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -35,14 +35,8 @@ export const metadata: Metadata = {
       pointed nowhere back; `audit-seo` reports that as `hreflang-not-reciprocal`, and
       Google's response to a one-way cluster is to ignore the whole thing.
     */
-    languages: {
-      en: absoluteUrl("/"),
-      es: absoluteUrl("/es/"),
-      pt: absoluteUrl("/pt/"),
-      /* The seven market home pages (src/data/market-locales.ts), reciprocally. */
-      ...marketAlternates("/"),
-      "x-default": absoluteUrl("/"),
-    },
+    /* Every home page that exists, reciprocally — ten since 2026-09-25. */
+    languages: alternateLanguages("/"),
   },
   openGraph: {
     type: "website",

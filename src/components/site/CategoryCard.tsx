@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Category } from "@/data/types";
 import type { Locale } from "@/data/site";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { t } from "@/lib/i18n";
 
 interface CategoryCardProps {
   category: Category;
@@ -14,9 +15,9 @@ export function CategoryCard({ category, productCount, index, locale = "en" }: C
   const es = locale === "es";
   const base = locale === "en" ? "" : `/${locale}`;
   const pt = locale === "pt";
-  const name = (es ? category.nameEs : pt ? category.namePt : undefined) ?? category.name;
+  const name = t(category, "name", locale);
   const summary =
-    (es ? category.summaryEs : pt ? category.summaryPt : undefined) ?? category.summary;
+    t(category, "summary", locale);
   const count = es
     ? `${productCount} ficha${productCount === 1 ? "" : "s"} verificada${productCount === 1 ? "" : "s"}`
     : pt

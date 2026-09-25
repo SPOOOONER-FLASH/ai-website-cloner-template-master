@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/data/site";
 import { doorUsage, finishUsage, functionUsage, type CodeUsage } from "@/lib/finish-usage";
 import type { CodeEvidence } from "@/data/finish-codes";
+import { dict, tx } from "@/lib/i18n";
 
 /**
  * The order-code reference, rendered as three tables.
@@ -79,14 +80,14 @@ function toRows(
 ): Row[] {
   return usage.map(({ entry, models, example }) => ({
     code: entry.code,
-    name: locale === "es" ? entry.nameEs : locale === "pt" ? entry.namePt : entry.name,
+    name: entry.name === null ? null : tx(locale, entry.name, { es: entry.nameEs ?? undefined, pt: entry.namePt ?? undefined }),
     /*
       The note is shown only in the locale that HAS one — English never leaks into a
       Portuguese table. The names are translated and the commentary is not yet, and a
       table of Portuguese names over English commentary is the mixed state this repo
       keeps refusing. Missing reads as unfinished, which is the state that gets fixed.
     */
-    note: locale === "es" ? entry.noteEs : locale === "pt" ? entry.notePt : entry.note,
+    note: entry.note === undefined ? undefined : tx(locale, entry.note, { es: entry.noteEs, pt: entry.notePt }),
     evidence: entry.evidence,
     models,
     example,
@@ -104,7 +105,7 @@ function CodeTable({
   rows: Row[];
   locale: Locale;
 }) {
-  const copy = COPY[locale];
+  const copy = dict(COPY, locale);
 
   return (
     <section className="col-content" aria-labelledby={id}>
@@ -112,16 +113,16 @@ function CodeTable({
         {title}
       </h2>
       <div className="mt-24 overflow-x-auto">
-        <table className="w-full min-w-[46rem] border-collapse text-left">
+        <table className="w-full min-w-[46rem] border-collapse text-start">
           <thead>
             <tr className="border-b border-line">
-              <th scope="col" className="py-12 pr-16 text-c2 font-semibold text-ink-secondary">
+              <th scope="col" className="py-12 pe-16 text-c2 font-semibold text-ink-secondary">
                 {copy.codeHead}
               </th>
-              <th scope="col" className="py-12 pr-16 text-c2 font-semibold text-ink-secondary">
+              <th scope="col" className="py-12 pe-16 text-c2 font-semibold text-ink-secondary">
                 {copy.meaningHead}
               </th>
-              <th scope="col" className="py-12 pr-16 text-c2 font-semibold text-ink-secondary">
+              <th scope="col" className="py-12 pe-16 text-c2 font-semibold text-ink-secondary">
                 {copy.modelsHead}
               </th>
               <th scope="col" className="py-12 text-c2 font-semibold text-ink-secondary">
@@ -134,11 +135,11 @@ function CodeTable({
               <tr key={row.code} className="border-b border-line align-top">
                 <th
                   scope="row"
-                  className="py-16 pr-16 font-mono text-c1 font-semibold whitespace-nowrap text-ink"
+                  className="py-16 pe-16 font-mono text-c1 font-semibold whitespace-nowrap text-ink"
                 >
                   {row.code}
                 </th>
-                <td className="py-16 pr-16 text-c1 text-ink">
+                <td className="py-16 pe-16 text-c1 text-ink">
                   {/*
                     An unconfirmed code prints the invitation to ask, never a guess. The
                     note below it says what the candidate readings are and why none of
@@ -152,7 +153,7 @@ function CodeTable({
                     </span>
                   ) : null}
                 </td>
-                <td className="py-16 pr-16 text-c2 whitespace-nowrap text-ink-secondary">
+                <td className="py-16 pe-16 text-c2 whitespace-nowrap text-ink-secondary">
                   {row.models > 0 ? copy.models(row.models) : copy.notPublished}
                 </td>
                 <td className="py-16 font-mono text-c2 whitespace-nowrap text-ink-secondary">
@@ -232,7 +233,7 @@ export function WorkedOrderCode({ locale }: { locale: Locale }) {
 }
 
 export function OrderCodeTables({ locale }: { locale: Locale }) {
-  const titles = TITLES[locale];
+  const titles = dict(TITLES, locale);
   return (
     <>
       <CodeTable

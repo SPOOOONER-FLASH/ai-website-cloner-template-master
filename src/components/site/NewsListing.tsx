@@ -1,6 +1,7 @@
 import { getPublishedNews } from "@/data/news";
 import { NewsCard } from "./NewsCard";
 import type { Locale } from "@/data/site";
+import { dict } from "@/lib/i18n";
 
 /**
  * The newsroom listing.
@@ -45,7 +46,7 @@ const COPY = {
 } as const;
 
 export function NewsListing({ locale = "en" }: { locale?: Locale } = {}) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const articles = getPublishedNews();
 
   return (
