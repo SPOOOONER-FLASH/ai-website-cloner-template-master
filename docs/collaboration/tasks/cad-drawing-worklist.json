@@ -11,11 +11,11 @@
     "9082e-stainless-steel-handle",
     "9005e-stainless-steel-handle",
     "9004s-stainless-steel-handle",
-    "bh38-bathroom-accessories",
-    "bh39-bathroom-accessories",
-    "bh42-bathroom-accessories",
-    "bh54-bathroom-accessories",
-    "bh21-bathroom-accessories",
+    "bh38-robe-hook",
+    "bh39-robe-hook",
+    "bh42-robe-hook",
+    "bh54-double-robe-hook",
+    "bh21-toilet-roll-holder",
     "lc07-85-45mm-lock-case",
     "lc9045-lock-case",
     "027-panic-exit-device",
@@ -136,13 +136,13 @@
     },
     {
       "model": "BH41",
-      "slug": "bh41-bathroom-accessories",
+      "slug": "bh41-robe-hook",
       "category": "bathroom-accessories",
       "specRows": 3,
       "dimensionalRows": [],
       "candidateImages": [
-        "public/images/products/bh41-bathroom-accessories-2.webp",
-        "public/images/products/bh41-bathroom-accessories-3.webp"
+        "public/images/products/bh41-robe-hook-2.webp",
+        "public/images/products/bh41-robe-hook-3.webp"
       ]
     },
     {
@@ -359,16 +359,16 @@
     },
     {
       "model": "BH34",
-      "slug": "bh34-bathroom-accessories",
+      "slug": "bh34-towel-bar",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh34-bathroom-accessories-3.webp",
-        "public/images/products/bh34-bathroom-accessories.webp",
-        "public/images/products/bh34-bathroom-accessories-4.webp"
+        "public/images/products/bh34-towel-bar-3.webp",
+        "public/images/products/bh34-towel-bar.webp",
+        "public/images/products/bh34-towel-bar-4.webp"
       ]
     },
     {
@@ -398,7 +398,7 @@
     },
     {
       "model": "BH10",
-      "slug": "bh10-bathroom-accessories",
+      "slug": "bh10-robe-hook",
       "category": "bathroom-accessories",
       "specRows": 7,
       "dimensionalRows": [
@@ -406,12 +406,12 @@
         "Diameter"
       ],
       "candidateImages": [
-        "public/images/products/bh10-bathroom-accessories-3.webp"
+        "public/images/products/bh10-robe-hook-3.webp"
       ]
     },
     {
       "model": "BH11",
-      "slug": "bh11-bathroom-accessories",
+      "slug": "bh11-robe-hook",
       "category": "bathroom-accessories",
       "specRows": 7,
       "dimensionalRows": [
@@ -419,7 +419,7 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh11-bathroom-accessories-3.webp"
+        "public/images/products/bh11-robe-hook-3.webp"
       ]
     },
     {
@@ -438,14 +438,14 @@
     },
     {
       "model": "BH13",
-      "slug": "bh13-bathroom-accessories",
+      "slug": "bh13-robe-hook",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh13-bathroom-accessories-3.webp"
+        "public/images/products/bh13-robe-hook-3.webp"
       ]
     },
     {
@@ -465,20 +465,20 @@
     },
     {
       "model": "BH19",
-      "slug": "bh19-bathroom-accessories",
+      "slug": "bh19-toilet-roll-holder",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh19-bathroom-accessories-3.webp",
-        "public/images/products/bh19-bathroom-accessories-5.webp"
+        "public/images/products/bh19-toilet-roll-holder-3.webp",
+        "public/images/products/bh19-toilet-roll-holder-5.webp"
       ]
     },
     {
       "model": "BH37",
-      "slug": "bh37-bathroom-accessories",
+      "slug": "bh37-coat-and-hat-hook",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -486,8 +486,8 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh37-bathroom-accessories-3.webp",
-        "public/images/products/bh37-bathroom-accessories.webp"
+        "public/images/products/bh37-coat-and-hat-hook-3.webp",
+        "public/images/products/bh37-coat-and-hat-hook.webp"
       ]
     },
     {
@@ -504,28 +504,28 @@
     },
     {
       "model": "BH14",
-      "slug": "bh14-bathroom-accessories",
+      "slug": "bh14-robe-hook",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh14-bathroom-accessories-5.webp"
+        "public/images/products/bh14-robe-hook-5.webp"
       ]
     },
     {
       "model": "BH18",
-      "slug": "bh18-bathroom-accessories",
+      "slug": "bh18-towel-ring",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Size"
       ],
       "candidateImages": [
-        "public/images/products/bh18-bathroom-accessories-5.webp",
-        "public/images/products/bh18-bathroom-accessories.webp",
-        "public/images/products/bh18-bathroom-accessories-4.webp"
+        "public/images/products/bh18-towel-ring-5.webp",
+        "public/images/products/bh18-towel-ring.webp",
+        "public/images/products/bh18-towel-ring-4.webp"
       ]
     },
     {
@@ -607,14 +607,14 @@
     },
     {
       "model": "BH22",
-      "slug": "bh22-bathroom-accessories",
+      "slug": "bh22-toilet-roll-holder",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh22-bathroom-accessories-3.webp"
+        "public/images/products/bh22-toilet-roll-holder-3.webp"
       ]
     },
     {
@@ -631,7 +631,7 @@
     },
     {
       "model": "BH36",
-      "slug": "bh36-bathroom-accessories",
+      "slug": "bh36-coat-and-hat-hook",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -639,8 +639,8 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh36-bathroom-accessories-3.webp",
-        "public/images/products/bh36-bathroom-accessories.webp"
+        "public/images/products/bh36-coat-and-hat-hook-3.webp",
+        "public/images/products/bh36-coat-and-hat-hook.webp"
       ]
     },
     {
@@ -659,7 +659,7 @@
     },
     {
       "model": "BH09",
-      "slug": "bh09-bathroom-accessories",
+      "slug": "bh09-hook-rail",
       "category": "bathroom-accessories",
       "specRows": 7,
       "dimensionalRows": [
@@ -667,47 +667,47 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh09-bathroom-accessories-3.webp",
-        "public/images/products/bh09-bathroom-accessories-4.webp"
+        "public/images/products/bh09-hook-rail-3.webp",
+        "public/images/products/bh09-hook-rail-4.webp"
       ]
     },
     {
       "model": "BH20",
-      "slug": "bh20-bathroom-accessories",
+      "slug": "bh20-toilet-roll-holder-with-cover",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh20-bathroom-accessories-4.webp"
+        "public/images/products/bh20-toilet-roll-holder-with-cover-4.webp"
       ]
     },
     {
       "model": "BH02",
-      "slug": "bh02-bathroom-accessories",
+      "slug": "bh02-knurled-grab-bar",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh02-bathroom-accessories.webp",
-        "public/images/products/bh02-bathroom-accessories-6.webp",
-        "public/images/products/bh02-bathroom-accessories-4.webp",
-        "public/images/products/bh02-bathroom-accessories-5.webp"
+        "public/images/products/bh02-knurled-grab-bar.webp",
+        "public/images/products/bh02-knurled-grab-bar-6.webp",
+        "public/images/products/bh02-knurled-grab-bar-4.webp",
+        "public/images/products/bh02-knurled-grab-bar-5.webp"
       ]
     },
     {
       "model": "BH23",
-      "slug": "bh23-bathroom-accessories",
+      "slug": "bh23-toilet-roll-holder-with-shelf",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh23-bathroom-accessories-3.webp"
+        "public/images/products/bh23-toilet-roll-holder-with-shelf-3.webp"
       ]
     },
     {
@@ -727,7 +727,7 @@
     },
     {
       "model": "BH25",
-      "slug": "bh25-bathroom-accessories",
+      "slug": "bh25-jumbo-roll-dispenser",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -735,7 +735,7 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh25-bathroom-accessories-3.webp"
+        "public/images/products/bh25-jumbo-roll-dispenser-3.webp"
       ]
     },
     {
@@ -753,7 +753,7 @@
     },
     {
       "model": "BH08",
-      "slug": "bh08-bathroom-accessories",
+      "slug": "bh08-hook-rail",
       "category": "bathroom-accessories",
       "specRows": 8,
       "dimensionalRows": [
@@ -761,33 +761,33 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh08-bathroom-accessories-3.webp"
+        "public/images/products/bh08-hook-rail-3.webp"
       ]
     },
     {
       "model": "BH26",
-      "slug": "bh26-bathroom-accessories",
+      "slug": "bh26-soap-dish",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Size"
       ],
       "candidateImages": [
-        "public/images/products/bh26-bathroom-accessories-4.webp"
+        "public/images/products/bh26-soap-dish-4.webp"
       ]
     },
     {
       "model": "BH04",
-      "slug": "bh04-bathroom-accessories",
+      "slug": "bh04-angled-grab-bar",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh04-bathroom-accessories-4.webp",
-        "public/images/products/bh04-bathroom-accessories.webp",
-        "public/images/products/bh04-bathroom-accessories-3.webp"
+        "public/images/products/bh04-angled-grab-bar-4.webp",
+        "public/images/products/bh04-angled-grab-bar.webp",
+        "public/images/products/bh04-angled-grab-bar-3.webp"
       ]
     },
     {
@@ -804,7 +804,7 @@
     },
     {
       "model": "BH05",
-      "slug": "bh05-bathroom-accessories",
+      "slug": "bh05-hook-rail",
       "category": "bathroom-accessories",
       "specRows": 8,
       "dimensionalRows": [
@@ -812,22 +812,22 @@
         "Width"
       ],
       "candidateImages": [
-        "public/images/products/bh05-bathroom-accessories-2.webp",
-        "public/images/products/bh05-bathroom-accessories-7.webp",
-        "public/images/products/bh05-bathroom-accessories-5.webp",
-        "public/images/products/bh05-bathroom-accessories.webp"
+        "public/images/products/bh05-hook-rail-2.webp",
+        "public/images/products/bh05-hook-rail-7.webp",
+        "public/images/products/bh05-hook-rail-5.webp",
+        "public/images/products/bh05-hook-rail.webp"
       ]
     },
     {
       "model": "BH35",
-      "slug": "bh35-bathroom-accessories",
+      "slug": "bh35-soap-dispenser",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Size"
       ],
       "candidateImages": [
-        "public/images/products/bh35-bathroom-accessories-3.webp"
+        "public/images/products/bh35-soap-dispenser-3.webp"
       ]
     },
     {
@@ -856,20 +856,20 @@
     },
     {
       "model": "BH03",
-      "slug": "bh03-bathroom-accessories",
+      "slug": "bh03-angled-grab-bar",
       "category": "bathroom-accessories",
       "specRows": 6,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh03-bathroom-accessories-3.webp",
-        "public/images/products/bh03-bathroom-accessories-4.webp"
+        "public/images/products/bh03-angled-grab-bar-3.webp",
+        "public/images/products/bh03-angled-grab-bar-4.webp"
       ]
     },
     {
       "model": "BH16",
-      "slug": "bh16-bathroom-accessories",
+      "slug": "bh16-flat-slide-bolt",
       "category": "bathroom-accessories",
       "specRows": 6,
       "dimensionalRows": [
@@ -878,7 +878,7 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh16-bathroom-accessories-4.webp"
+        "public/images/products/bh16-flat-slide-bolt-4.webp"
       ]
     },
     {
@@ -896,7 +896,7 @@
     },
     {
       "model": "BH17",
-      "slug": "bh17-bathroom-accessories",
+      "slug": "bh17-spring-latch",
       "category": "bathroom-accessories",
       "specRows": 6,
       "dimensionalRows": [
@@ -905,12 +905,12 @@
         "Thickness"
       ],
       "candidateImages": [
-        "public/images/products/bh17-bathroom-accessories-3.webp"
+        "public/images/products/bh17-spring-latch-3.webp"
       ]
     },
     {
       "model": "BH07",
-      "slug": "bh07-bathroom-accessories",
+      "slug": "bh07-hook-rail",
       "category": "bathroom-accessories",
       "specRows": 9,
       "dimensionalRows": [
@@ -918,9 +918,9 @@
         "Width"
       ],
       "candidateImages": [
-        "public/images/products/bh07-bathroom-accessories-5.webp",
-        "public/images/products/bh07-bathroom-accessories.webp",
-        "public/images/products/bh07-bathroom-accessories-4.webp"
+        "public/images/products/bh07-hook-rail-5.webp",
+        "public/images/products/bh07-hook-rail.webp",
+        "public/images/products/bh07-hook-rail-4.webp"
       ]
     },
     {
@@ -1087,15 +1087,15 @@
     },
     {
       "model": "BH01",
-      "slug": "bh01-bathroom-accessories",
+      "slug": "bh01-grab-bar",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh01-bathroom-accessories-5.webp",
-        "public/images/products/bh01-bathroom-accessories-2.webp"
+        "public/images/products/bh01-grab-bar-5.webp",
+        "public/images/products/bh01-grab-bar-2.webp"
       ]
     },
     {
@@ -1201,7 +1201,7 @@
     },
     {
       "model": "BH52",
-      "slug": "bh52-bathroom-accessories",
+      "slug": "bh52-two-tier-corner-shower-shelf",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -1209,7 +1209,7 @@
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh52-bathroom-accessories-3.webp"
+        "public/images/products/bh52-two-tier-corner-shower-shelf-3.webp"
       ]
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
       "model": "BH50",
-      "slug": "bh50-bathroom-accessories",
+      "slug": "bh50-two-tier-shower-shelf",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -1274,25 +1274,25 @@
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh50-bathroom-accessories-3.webp"
+        "public/images/products/bh50-two-tier-shower-shelf-3.webp"
       ]
     },
     {
       "model": "BH33",
-      "slug": "bh33-bathroom-accessories",
+      "slug": "bh33-towel-shelf",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh33-bathroom-accessories.webp",
-        "public/images/products/bh33-bathroom-accessories-3.webp"
+        "public/images/products/bh33-towel-shelf.webp",
+        "public/images/products/bh33-towel-shelf-3.webp"
       ]
     },
     {
       "model": "BH06",
-      "slug": "bh06-bathroom-accessories",
+      "slug": "bh06-hook-rail",
       "category": "bathroom-accessories",
       "specRows": 9,
       "dimensionalRows": [
@@ -1300,7 +1300,7 @@
         "Width"
       ],
       "candidateImages": [
-        "public/images/products/bh06-bathroom-accessories-4.webp"
+        "public/images/products/bh06-hook-rail-4.webp"
       ]
     },
     {
@@ -1329,7 +1329,7 @@
     },
     {
       "model": "BH30",
-      "slug": "bh30-bathroom-accessories",
+      "slug": "bh30-two-tier-corner-shower-basket",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -1337,7 +1337,7 @@
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh30-bathroom-accessories-6.webp"
+        "public/images/products/bh30-two-tier-corner-shower-basket-6.webp"
       ]
     },
     {
@@ -1355,19 +1355,19 @@
     },
     {
       "model": "BH29",
-      "slug": "bh29-bathroom-accessories",
+      "slug": "bh29-corner-shower-basket",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
         "Size"
       ],
       "candidateImages": [
-        "public/images/products/bh29-bathroom-accessories.webp"
+        "public/images/products/bh29-corner-shower-basket.webp"
       ]
     },
     {
       "model": "BH31",
-      "slug": "bh31-bathroom-accessories",
+      "slug": "bh31-two-tier-corner-shower-basket",
       "category": "bathroom-accessories",
       "specRows": 5,
       "dimensionalRows": [
@@ -1375,7 +1375,7 @@
         "Length"
       ],
       "candidateImages": [
-        "public/images/products/bh31-bathroom-accessories-3.webp"
+        "public/images/products/bh31-two-tier-corner-shower-basket-3.webp"
       ]
     },
     {
@@ -1418,14 +1418,14 @@
     },
     {
       "model": "BH27",
-      "slug": "bh27-bathroom-accessories",
+      "slug": "bh27-wire-soap-dish",
       "category": "bathroom-accessories",
       "specRows": 4,
       "dimensionalRows": [
         "Size"
       ],
       "candidateImages": [
-        "public/images/products/bh27-bathroom-accessories.webp"
+        "public/images/products/bh27-wire-soap-dish.webp"
       ]
     },
     {

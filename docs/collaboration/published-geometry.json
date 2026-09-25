@@ -1419,35 +1419,35 @@
    "Size": "Customizable upon customer request"
   }
  },
- "bh01-bathroom-accessories": {
+ "bh01-grab-bar": {
   "model": "BH01",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "300mm/400mm/500m/600mm/700mm/800mm/900mm/1000mm"
   }
  },
- "bh02-bathroom-accessories": {
+ "bh02-knurled-grab-bar": {
   "model": "BH02",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "300mm/400mm/500m/600mm/700mm/800mm/900mm/1000mm"
   }
  },
- "bh03-bathroom-accessories": {
+ "bh03-angled-grab-bar": {
   "model": "BH03",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "415mm"
   }
  },
- "bh04-bathroom-accessories": {
+ "bh04-angled-grab-bar": {
   "model": "BH04",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "415mm"
   }
  },
- "bh05-bathroom-accessories": {
+ "bh05-hook-rail": {
   "model": "BH05",
   "family": "bathroom-accessories",
   "dims": {
@@ -1455,7 +1455,7 @@
    "Width": "30 mm"
   }
  },
- "bh06-bathroom-accessories": {
+ "bh06-hook-rail": {
   "model": "BH06",
   "family": "bathroom-accessories",
   "dims": {
@@ -1463,7 +1463,7 @@
    "Width": "30 mm"
   }
  },
- "bh07-bathroom-accessories": {
+ "bh07-hook-rail": {
   "model": "BH07",
   "family": "bathroom-accessories",
   "dims": {
@@ -1471,7 +1471,7 @@
    "Width": "25 mm"
   }
  },
- "bh08-bathroom-accessories": {
+ "bh08-hook-rail": {
   "model": "BH08",
   "family": "bathroom-accessories",
   "dims": {
@@ -1479,7 +1479,7 @@
    "Thickness": "2.0mm"
   }
  },
- "bh09-bathroom-accessories": {
+ "bh09-hook-rail": {
   "model": "BH09",
   "family": "bathroom-accessories",
   "dims": {
@@ -1487,7 +1487,7 @@
    "Thickness": "2.0mm"
   }
  },
- "bh10-bathroom-accessories": {
+ "bh10-robe-hook": {
   "model": "BH10",
   "family": "bathroom-accessories",
   "dims": {
@@ -1495,7 +1495,7 @@
    "Diameter": "48 mm"
   }
  },
- "bh11-bathroom-accessories": {
+ "bh11-robe-hook": {
   "model": "BH11",
   "family": "bathroom-accessories",
   "dims": {
@@ -1503,21 +1503,21 @@
    "Thickness": "2.0mm"
   }
  },
- "bh13-bathroom-accessories": {
+ "bh13-robe-hook": {
   "model": "BH13",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "2.8mm"
   }
  },
- "bh14-bathroom-accessories": {
+ "bh14-robe-hook": {
   "model": "BH14",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "0.8mm"
   }
  },
- "bh15-bathroom-accessories": {
+ "bh15-barrel-bolt": {
   "model": "BH15",
   "family": "bathroom-accessories",
   "dims": {
@@ -1526,7 +1526,7 @@
    "Size": "80mm / 100mm (L) × 38mm (W) × 1.2mm (T)"
   }
  },
- "bh16-bathroom-accessories": {
+ "bh16-flat-slide-bolt": {
   "model": "BH16",
   "family": "bathroom-accessories",
   "dims": {
@@ -1535,7 +1535,7 @@
    "Size": "70mm (L) × 48mm (W) × 1.0mm (T)"
   }
  },
- "bh17-bathroom-accessories": {
+ "bh17-spring-latch": {
   "model": "BH17",
   "family": "bathroom-accessories",
   "dims": {
@@ -1544,28 +1544,28 @@
    "Size": "44 × 42 × 2.5mm"
   }
  },
- "bh18-bathroom-accessories": {
+ "bh18-towel-ring": {
   "model": "BH18",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "165 × 55 × 45mm"
   }
  },
- "bh19-bathroom-accessories": {
+ "bh19-toilet-roll-holder": {
   "model": "BH19",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "1.0mm"
   }
  },
- "bh20-bathroom-accessories": {
+ "bh20-toilet-roll-holder-with-cover": {
   "model": "BH20",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "1.0mm"
   }
  },
- "bh21-bathroom-accessories": {
+ "bh21-toilet-roll-holder": {
   "model": "BH21",
   "family": "bathroom-accessories",
   "dims": {
@@ -1573,28 +1573,28 @@
    "Rose diameter": "45mm"
   }
  },
- "bh22-bathroom-accessories": {
+ "bh22-toilet-roll-holder": {
   "model": "BH22",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "2.0mm"
   }
  },
- "bh23-bathroom-accessories": {
+ "bh23-toilet-roll-holder-with-shelf": {
   "model": "BH23",
   "family": "bathroom-accessories",
   "dims": {
    "Thickness": "1.5mm"
   }
  },
- "bh24-bathroom-accessories": {
+ "bh24-paper-towel-dispenser": {
   "model": "BH24",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "280*215*100mm"
   }
  },
- "bh25-bathroom-accessories": {
+ "bh25-jumbo-roll-dispenser": {
   "model": "BH25",
   "family": "bathroom-accessories",
   "dims": {
@@ -1602,28 +1602,28 @@
    "Thickness": "0.8mm"
   }
  },
- "bh26-bathroom-accessories": {
+ "bh26-soap-dish": {
   "model": "BH26",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "110*55mm"
   }
  },
- "bh27-bathroom-accessories": {
+ "bh27-wire-soap-dish": {
   "model": "BH27",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "130*55*50mm"
   }
  },
- "bh28-bathroom-accessories": {
+ "bh28-shower-basket": {
   "model": "BH28",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "300*135*60mm / 300*135*100mm / 400*135*60mm / 400*135*100mm"
   }
  },
- "bh29-bathroom-accessories": {
+ "bh29-corner-shower-basket": {
   "model": "BH29",
   "family": "bathroom-accessories",
   "dims": {
@@ -1631,7 +1631,7 @@
    "Sizes": "200 × 200 mm, 250 × 250 mm"
   }
  },
- "bh30-bathroom-accessories": {
+ "bh30-two-tier-corner-shower-basket": {
   "model": "BH30",
   "family": "bathroom-accessories",
   "dims": {
@@ -1639,7 +1639,7 @@
    "Size": "335 × 320 mm"
   }
  },
- "bh31-bathroom-accessories": {
+ "bh31-two-tier-corner-shower-basket": {
   "model": "BH31",
   "family": "bathroom-accessories",
   "dims": {
@@ -1647,14 +1647,14 @@
    "Size": "285mm (L) × 410mm (H)"
   }
  },
- "bh32-bathroom-accessories": {
+ "bh32-towel-shelf-with-hooks": {
   "model": "BH32",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "600mm"
   }
  },
- "bh33-bathroom-accessories": {
+ "bh33-towel-shelf": {
   "model": "BH33",
   "family": "bathroom-accessories",
   "dims": {
@@ -1664,21 +1664,21 @@
    "Height": "110mm"
   }
  },
- "bh34-bathroom-accessories": {
+ "bh34-towel-bar": {
   "model": "BH34",
   "family": "bathroom-accessories",
   "dims": {
    "Length": "300mm,400mm,500mm,600mm"
   }
  },
- "bh35-bathroom-accessories": {
+ "bh35-soap-dispenser": {
   "model": "BH35",
   "family": "bathroom-accessories",
   "dims": {
    "Size": "162*92mm"
   }
  },
- "bh36-bathroom-accessories": {
+ "bh36-coat-and-hat-hook": {
   "model": "BH36",
   "family": "bathroom-accessories",
   "dims": {
@@ -1686,7 +1686,7 @@
    "Thickness": "3.5mm"
   }
  },
- "bh37-bathroom-accessories": {
+ "bh37-coat-and-hat-hook": {
   "model": "BH37",
   "family": "bathroom-accessories",
   "dims": {
@@ -1694,7 +1694,7 @@
    "Thickness": "3.5mm"
   }
  },
- "bh38-bathroom-accessories": {
+ "bh38-robe-hook": {
   "model": "BH38",
   "family": "bathroom-accessories",
   "dims": {
@@ -1703,7 +1703,7 @@
    "Tube diameter": "8mm"
   }
  },
- "bh39-bathroom-accessories": {
+ "bh39-robe-hook": {
   "model": "BH39",
   "family": "bathroom-accessories",
   "dims": {
@@ -1711,7 +1711,7 @@
    "Tube diameter": "8mm"
   }
  },
- "bh41-bathroom-accessories": {
+ "bh41-robe-hook": {
   "model": "BH41",
   "family": "bathroom-accessories",
   "dims": {
@@ -1719,7 +1719,7 @@
    "Projection": "45mm"
   }
  },
- "bh42-bathroom-accessories": {
+ "bh42-robe-hook": {
   "model": "BH42",
   "family": "bathroom-accessories",
   "dims": {
@@ -1728,7 +1728,7 @@
    "Tube diameter": "8mm"
   }
  },
- "bh50-bathroom-accessories": {
+ "bh50-two-tier-shower-shelf": {
   "model": "BH50",
   "family": "bathroom-accessories",
   "dims": {
@@ -1736,7 +1736,7 @@
    "Size": "400×355 mm"
   }
  },
- "bh52-bathroom-accessories": {
+ "bh52-two-tier-corner-shower-shelf": {
   "model": "BH52",
   "family": "bathroom-accessories",
   "dims": {
@@ -1744,7 +1744,7 @@
    "Size": "350 × 320 mm"
   }
  },
- "bh54-bathroom-accessories": {
+ "bh54-double-robe-hook": {
   "model": "BH54",
   "family": "bathroom-accessories",
   "dims": {
