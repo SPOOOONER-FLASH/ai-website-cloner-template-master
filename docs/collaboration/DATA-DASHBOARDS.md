@@ -15,6 +15,8 @@
 | Microsoft Clarity | 项目 hyde（`y8utyrgvv0`） | 真人怎么看页面：滚动深度、死点击、怒点、JS 错误、录像；AI 爬虫与机器人流量 | 仪表板 → 导出；Bot / AI 可见性两页各导出一次 |
 | GA4 | 账号「hyde数据看板」/ 媒体资源 cantonlock（`G-RBTE7KF82P`） | 来源、国家、语言、着陆页、事件（询盘 `generate_lead`、阅读深度等） | 报告 → 各页右上角分享 → 下载 CSV |
 
+**第五个来源：Cloudflare AI Crawl Control**（2026-09-25 起）。Cloudflare → AI Crawl Control 导出两份：AI answer volume（各家 AI 的请求数）、AEO demand signals（AI 爬虫请求了哪些路径）。放进同一个文件夹，原始 CSV 存在 `docs/research/analytics/<日期>/cloudflare/`。
+
 GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站代码直接加载，GTM 里不要再加这两个。
 
 **09-24 实测：G-RBTE7KF82P 每次访问只收 1 次 page_view，没有重复计数。** GTM 容器是空的（版本 1）。
@@ -66,6 +68,15 @@ node scripts/build-query-corpus.mjs "C:/Users/johns/Downloads/SEOGEO 1001-de" --
    Clarity 录像可按 `read_style` 标签筛选。
 6. **旧站 URL 仍在 Google 里有展示**（`index.php?m=home&c=View&a=index&aid=1605` 71 次，
    `tid=131` 63 次）。09-24 实测：都 301 到对应新页（aid=1605 → 316-S，tid=131 → 合页品类，tid=89 → 公司，tid=91 → 联系）。
+
+### Cloudflare AI 抓取（2026-09-25，近 7 天）
+
+7. **OpenAI 是最大的 AI 访客**：OpenAI 2,517 次请求，Apple 1,402，Perplexity 683，Anthropic 241，Mistral 101。
+   AI 爬虫请求最多的页面：装欧标锁芯文章（英文 54 次、西语 22 次）、HS 编码指南 18、锁体对比页 17、欧标锁芯尺寸表 16、
+   主钥匙层级文章 16。又一次印证第 3 条：查表文和对比文最容易被 AI 取用。
+8. **AI 请求过的产品页和文章页全部是 200 或 301，没有页面 404**（09-25 逐条实测）。404 只剩三类：扫描器的乱码路径、
+   旧站 `/uploads/allimg/` 图片、改名前的产品视频地址。视频那类已补 18 条跳转（`scripts/build-taxonomy-redirects.mjs`）。
+9. `auth.cantonlock.com` 上的 `.env`、密钥类请求是扫描器试探，实测全部是空的 404，没有任何泄露。
 
 | 期 | 报告 | 结论写于 |
 |---|---|---|

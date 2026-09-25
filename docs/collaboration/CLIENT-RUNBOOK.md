@@ -172,6 +172,21 @@ HTML 里有这段代码、加载完 gtm.js 确实下载了、dataLayer 里有 gt
 **如果一定要让「Test」那个按钮变绿**：Cloudflare → Security → Bots → 暂时关掉 **Bot Fight Mode** → 回 GTM 点 Test →
 变绿后**马上再打开** Bot Fight Mode。关着的这几分钟，机器人流量会进来，不影响网站。
 
+### ⑥ Cloudflare「Security Insights」6 条：1 条要你做，4 条点 Archive，1 条我已修（2026-09-25）
+
+你 09-25 导出的那 6 条，逐条实测过：
+
+| 那一条 | 怎么处理 | 为什么 |
+|---|---|---|
+| **Users without MFA**（Moderate） | **要你做**：Cloudflare 右上角头像 → My Profile → Authentication → 开两步验证（手机装 Google Authenticator 扫码） | 这个账号管着网站和邮箱的 DNS，密码泄露就能改 DNS。这一条最重要 |
+| Unproxied CNAME mail.cantonlock.com（Moderate） | **不要改**，点那一行右边 … → **Archive** | 它指向网易企业邮箱（mailhz.qiye.163.com）。Cloudflare 代理只转网页，不转 IMAP/SMTP；按它说的开橙色云，公司邮件客户端就连不上了 |
+| Security.txt not configured | 已修：网站加了 /.well-known/security.txt（联系邮箱 tec@），**等我说已发布后**点 Archive | 它是给发现漏洞的人找联系方式的标准文件；到期前一个月测试会提醒续期 |
+| AI Labyrinth（cantonlock.com） | 点 **Archive**，不要开 | 我们的策略是欢迎 AI 抓取、被 AI 引用（本周 OpenAI 抓了 2,517 次）。它只对不守规矩的爬虫起作用，但会往页面里塞 AI 生成的假链接，没必要冒这个险 |
+| AI Labyrinth（rayen.cn） | 雷茵站的事，问雷茵那边 | — |
+| No Turnstile enabled | 点 **Archive**，以后询盘垃圾多了再说 | Turnstile 是表单人机验证，要改询盘表单和后端；现在没有垃圾询盘的问题 |
+
+**Signals 页那 535 条「违规」不用管**：全是 Meta 的爬虫在抓 `/pt/…/__next._tree.txt` 这类网站内部数据文件，robots.txt 里我们写了不许抓，它不守。那些文件对 SEO 没有价值，也不影响网站。
+
 ---
 
 ## 只有这两件是常规动作

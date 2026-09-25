@@ -34,6 +34,9 @@ function rules(): { from: string; to: string }[] {
   return out;
 }
 
+/** A file rather than a page — the renamed product videos (2026-09-25). No locale, no index.html. */
+const isFile = (url: string) => /\.[a-z0-9]+$/i.test(url);
+
 /** "/es/products/x/y" → { locale: "es", path: "/products/x/y" } */
 function split(url: string): { locale: string; path: string } {
   const prefix = url.split("/")[1];
@@ -85,7 +88,9 @@ test("no taxonomy redirect points at a page the export does not have", () => {
   for (const { from, to } of rules()) {
     /* The site root always exists and is not an exported directory. */
     if (to === "/") continue;
-    const page = path.join(process.cwd(), "out", to, "index.html");
+    const page = isFile(to)
+      ? path.join(process.cwd(), "out", to)
+      : path.join(process.cwd(), "out", to, "index.html");
     if (!fs.existsSync(page)) broken.push(`${from} -> ${to}`);
   }
 
