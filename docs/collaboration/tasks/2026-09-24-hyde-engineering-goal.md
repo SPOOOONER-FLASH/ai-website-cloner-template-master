@@ -55,4 +55,6 @@
 | 48 | 定制指南（文案会话写）的三语 seoTitle / seoDescription：custom door hardware / bespoke ironmongery | 09-25 完成（EN Custom Door Hardware & Bespoke Ironmongery: Tooling Guide；ES/PT 定稿；头图沿用 311 文章的取景框） |
 | 49 | HYDE 发布（#47） + #48 指南，上线后实测 | 09-25 完成（0e8f7649e2f 上线：定制指南三语、服务页、产品目录页、首页描述实测正确；第八次发布构建进程崩溃 0xC0000409，未重发，因为剩下的门孔图修复不影响 HYDE 页面） |
 | 50 | GTM「Test」一直报未检测到：查明是 Cloudflare Bot Fight Mode 对 Google 服务器出 403 质询页（translate.goog 实测），与代码无关；手册 ⑤ 写了用 Preview 验证 | 09-25 完成 |
+| 51 | Cloudflare Security Insights / AI 抓取报告（甲方 09-25）：security.txt 上线、改名视频 18 条 301、mail CNAME 不代理（网易企业邮箱）、MFA 与 Archive 写进手册 ⑥、AI 抓取数据进看板 | 09-25 完成（源码；随下一次发布上线） |
+| 52 | 七语种产品 seoTitle / seoDescription（#45）：多语言会话 M1–M4 已给出 glossary 与 categories | 待做 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

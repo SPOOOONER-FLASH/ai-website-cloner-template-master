@@ -18,7 +18,7 @@
  * Usage: node scripts/build-taxonomy-redirects.mjs [--check]
  */
 
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
 
 const SOURCE = "content/taxonomy-moves.json";
 const OUT = "deploy/nginx/taxonomy-redirects.conf";
@@ -144,6 +144,32 @@ for (const merge of moves.productMerges ?? []) {
     ...rule(`/products/${merge.category}/${merge.from}`, `/products/${dest}/${merge.to}/`),
   );
 }
+
+/*
+  Renamed product videos. rename-product-slug.mjs renames the .mp4 with the slug, so every
+  rename also retires a video URL — and those are indexed separately (Google video results,
+  AI crawlers). Cloudflare's AI crawler report for 2026-09-25 showed bots still requesting
+  /videos/products/026-panic-exit-device.mp4 and two others from the 09-10 renames, all 404.
+  One exact-match rule per file, no locale prefix (videos live at the root), and only when
+  the destination file is really in the export.
+*/
+const VIDEO_DIR = "public/videos/products";
+const videoFiles = existsSync(VIDEO_DIR) ? readdirSync(VIDEO_DIR) : [];
+const videoRules = [];
+for (const merge of moves.productMerges ?? []) {
+  for (const file of videoFiles) {
+    if (!file.startsWith(`${merge.to}.`)) continue;
+    const old = merge.from + file.slice(merge.to.length);
+    if (videoFiles.includes(old)) continue;
+    const target = `/videos/products/${file}`;
+    if (hasExport && !existsSync(`${EXPORT}${target}`)) {
+      skipped.push(`/videos/products/${old} -> ${target} (video not in the export)`);
+      continue;
+    }
+    videoRules.push(`location = /videos/products/${old} {`, `    return 301 ${target};`, "}", "");
+  }
+}
+if (videoRules.length) lines.push("# Renamed product videos", ...videoRules);
 
 const conf = lines.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
 
