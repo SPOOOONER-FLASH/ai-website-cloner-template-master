@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "5807 SSCR",
@@ -8,14 +9,10 @@
       "sha256": "0be77b96647bfffed882f92bac7a6b2e3218ce63d1232bfe4e8f96d6b59d6db6"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\09-product-stage.png",
-    "sha256": "18911d9968de8bf530b3a84e6db0b7bb560205c56e0d1b0dadfeb79e84094512",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/stainless-grade-selection-201-304-316-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "8569798a361889a1b0514f12b6760069c8340360f3ba080a83ee53ede8a41e4c"
+  "sourceSha256": "0be77b96647bfffed882f92bac7a6b2e3218ce63d1232bfe4e8f96d6b59d6db6",
+  "rejectedCompositeSha256": "81e1ad115ee6290bab9b334b24af4e793578a6cbb844abbaedde952106ee230a",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

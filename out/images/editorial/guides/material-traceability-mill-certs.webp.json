@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "600",
@@ -8,14 +9,10 @@
       "sha256": "36128dd71eb83551413e10cfa31afb907364085261d64b0e737479fab583b338"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\14-product-stage.png",
-    "sha256": "c312a05bf755aecfdb50423fce398389bee0366e0ddbb609d8632bd64ea17893",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/material-traceability-mill-certs-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "5993ae94056bec93b1b88cdc36288cf5157992ee1ab82e6fc16d374be8d5ace7"
+  "sourceSha256": "36128dd71eb83551413e10cfa31afb907364085261d64b0e737479fab583b338",
+  "rejectedCompositeSha256": "f4e8ab24e4c4fcc714f230e18b7bf29cbaf9054c8142ff42825513193f0f04d9",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "B024",
@@ -8,14 +9,10 @@
       "sha256": "0e42bee65f4a612d2f20c95ddd25f57d05eecc27d2c04c638985a33c3017a2b1"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\03-product-stage.png",
-    "sha256": "7b8da94a61a3b1c2c8512f0a3b8d69c95ae41b26080746d4b368242ccc99b3b8",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/brass-alloys-and-dezincification-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "b224b2b1bea05a6e1a0bd62cf62794345b08814d281610b00ee11da7eae7db3a"
+  "sourceSha256": "0e42bee65f4a612d2f20c95ddd25f57d05eecc27d2c04c638985a33c3017a2b1",
+  "rejectedCompositeSha256": "24c2e5265a35b66e8b7b9c879db7c690b8c1518a681fc1a5a89a6c734abf3181",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }

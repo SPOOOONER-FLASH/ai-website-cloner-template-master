@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "JU-061",
@@ -8,14 +9,10 @@
       "sha256": "021c6eaf0e7e0753bd6b7d650a08c42ae0946456a3005d282999314d4fb4f598"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\18-product-stage.png",
-    "sha256": "444148a2ccb0f63dfa885763e80b34f36e23e26b8bd4ebc525c1ebc03392423b",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/door-closer-mounting-positions-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "4d34cc8b4eea157b08e73ab53f77fe936da9808e4a36b3c9998bf92271465023"
+  "sourceSha256": "021c6eaf0e7e0753bd6b7d650a08c42ae0946456a3005d282999314d4fb4f598",
+  "rejectedCompositeSha256": "327ad3254d0a4d8e84f339481e50c70f0ed19bf085d4ca5058facccab2172bf9",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }
