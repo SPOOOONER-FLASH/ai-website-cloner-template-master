@@ -35,3 +35,15 @@ export const REGIONAL_TERMS = {
 
 /** Terms for a product or category whose top-level category slug is `slug` (empty if none). */
 export const regionalTermsFor = (slug) => REGIONAL_TERMS[slug] ?? "";
+
+/**
+ * Words buyers type for a material that are not the material's name (2026-09-24).
+ *
+ * Buyers in many markets call brass hardware "copper" — a "copper hinge" is a brass hinge in
+ * their vocabulary (the client, 2026-09-24: 「brass hinge 也叫 copper hinge，不同国家人叫法不同」).
+ * Pure copper is too soft to carry a door, so no product of ours is copper and no page says so.
+ * Search should still meet the buyer's word: a brass record gets "copper" (and the Spanish and
+ * Portuguese words) in its haystack only, never in its visible copy.
+ */
+export const materialTermsFor = (material) =>
+  /\bbrass\b/i.test(material ?? "") ? "copper cobre latón latão" : "";

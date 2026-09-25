@@ -16,7 +16,7 @@
  */
 import { readFileSync, readdirSync, mkdirSync, statSync } from "node:fs";
 import { writeFileAtomic } from "./lib/write-atomic.mjs";
-import { regionalTermsFor } from "./lib/search-regional-terms.mjs";
+import { materialTermsFor, regionalTermsFor } from "./lib/search-regional-terms.mjs";
 
 const OUT = "public/search-index.json";
 
@@ -118,6 +118,8 @@ for (const p of allProducts) {
         ...p.categoryPath,
         // The /es/ and /pt/ pages search this same index: see scripts/lib/search-regional-terms.mjs.
         regionalTermsFor([].concat(p.categoryPath ?? [])[0]),
+        // "copper hinge" is what many buyers call a brass hinge: haystack only, never shown.
+        materialTermsFor(p.material),
       ],
       p.modelTbc ? null : p.model,
     ),
