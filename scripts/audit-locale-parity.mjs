@@ -45,9 +45,14 @@ const nonEmpty = (v) =>
 function count(dir, test) {
   if (!existsSync(dir)) return 0;
   let n = 0;
-  for (const e of readdirSync(dir)) {
+  let entries;
+  try { entries = readdirSync(dir); } catch { return 0; }
+  for (const e of entries) {
     const p = join(dir, e);
-    if (statSync(p).isDirectory()) n += count(p, test);
+    // A build running at the same time can delete a file between readdir and stat.
+    let st;
+    try { st = statSync(p); } catch { continue; }
+    if (st.isDirectory()) n += count(p, test);
     else if (test(e)) n += 1;
   }
   return n;
