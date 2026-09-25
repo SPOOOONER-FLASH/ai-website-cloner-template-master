@@ -41,3 +41,14 @@
 下一次 `npm run ship` 成功时这些会一起推上去。
 
 > 已解决 2026-09-24：旁路检出手动合并 promo.json（保留配置器卡 + 远端西语「planilla de puertas」），`e99d85f59ac` 已推送。
+
+## 2026/9/25 00:22:57 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging scripts/import-guide-heroes.mjs / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `9c9ea120666` shiplog: 更新上线存档
+- `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
+
+下一次 `npm run ship` 成功时这些会一起推上去。
