@@ -153,6 +153,25 @@ sudo bash /www/wwwroot/cantonlock.com/deploy/install-deploy-script.sh
 Google 官方那段代码原样保留在 head 里（检测器认的就是它），只是等页面加载完才执行。发布后我实测三件事：
 HTML 里有这段代码、加载完 gtm.js 确实下载了、dataLayer 里有 gtm.js 事件。你不用做任何事。
 
+### ⑤ GTM：「Test」报 wasn't detected 不是没装上 —— 用 Preview 验证，2 分钟（2026-09-25）
+
+**为什么 Test 永远不过**：GTM 的「Test your website」是从 Google 的服务器去抓网页。我 09-25 实测：
+从 Google 服务器请求 cantonlock.com，拿到的是 Cloudflare 的 **403「Just a moment...」质询页**，不是网页。
+这是 09-17 打开的 **Bot Fight Mode** 在起作用：它放行 Googlebot 这类已验证爬虫，但不放行 GTM 的检测器。
+检测器看不到网页，就报没检测到。**真实访客的浏览器里 GTM 是正常加载的**（实测第 2.6 秒加载，容器已生效）。
+09-24 我以为是代码写法的问题，这个判断是错的。
+
+**用这个办法确认已装好（不用动 Cloudflare）**：
+1. 打开 https://tagmanager.google.com ，进 cantonlock.com 这个容器，点右上角 **Preview**（预览）。
+2. 在弹出的框里填 `https://cantonlock.com`，点 **Connect**。
+3. 会新开一个窗口打开网站，右下角出现 Tag Assistant 的小标记；回到原来那个标签页，显示 **Connected** 就是装好了。
+
+**成功的样子**：Tag Assistant 页面左侧能看到 Container Loaded（容器已加载）这类事件。
+**连不上**：整屏截图发我。
+
+**如果一定要让「Test」那个按钮变绿**：Cloudflare → Security → Bots → 暂时关掉 **Bot Fight Mode** → 回 GTM 点 Test →
+变绿后**马上再打开** Bot Fight Mode。关着的这几分钟，机器人流量会进来，不影响网站。
+
 ---
 
 ## 只有这两件是常规动作

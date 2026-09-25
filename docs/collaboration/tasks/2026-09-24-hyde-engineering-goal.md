@@ -53,5 +53,6 @@
 | 46 | GTM 安装检测报未检测到（09-25 甲方截图）：改回 Google 原样代码（含换行、立即执行），发布后请甲方在 GTM 里重新点 Test | 09-25 完成（632155768cd 上线：head 里是 Google 原样代码，gtm.js 2.6s 请求、早于 load；等甲方 purge 后在 GTM 点 Test 确认） |
 | 47 | ironmongery / 开模定制（brief 2026-09-25 第 3 项）：首页描述、服务页标题描述、产品目录总页标题描述带 architectural / bespoke ironmongery 与 custom tooling；英文 only，不塞进每个品类标题 | 09-25 完成（源码） |
 | 48 | 定制指南（文案会话写）的三语 seoTitle / seoDescription：custom door hardware / bespoke ironmongery | 09-25 完成（EN Custom Door Hardware & Bespoke Ironmongery: Tooling Guide；ES/PT 定稿；头图沿用 311 文章的取景框） |
-| 49 | HYDE 发布（#47） + #48 指南，上线后实测 | 待做 |
+| 49 | HYDE 发布（#47） + #48 指南，上线后实测 | 等待（第七次发布构建中，完成后第八次带指南） |
+| 50 | GTM「Test」一直报未检测到：查明是 Cloudflare Bot Fight Mode 对 Google 服务器出 403 质询页（translate.goog 实测），与代码无关；手册 ⑤ 写了用 Preview 验证 | 09-25 完成 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |
