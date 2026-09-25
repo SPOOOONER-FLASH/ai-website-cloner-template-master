@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 587 次提交
+最近 30 天 · 共 589 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 19:58 | 中立 | 跳转规则已装（甲方 09-25）；安装脚本的验证改走 https，消除 8 条误报 | `1708043bd73` |
+| 19:48 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `6bbb13a7bab` |
 | 19:47 | 中立 | 目标清单：#39 卫浴发布、#42 GTM 延后加载 上线实测完成 | `f65a552a627` |
 | 19:44 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 5bb889ef671 | `069a44f1ae8` |
 | 19:38 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `5bb889ef671` |
