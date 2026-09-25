@@ -79,3 +79,41 @@ if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
   git update-index -q --refresh || true
   log "updated to $(git rev-parse --short HEAD)"
 fi
+
+# ---------------------------------------------------------------------------
+# 2026-09-25 第五处：跳转规则跟着自动装，不再要人去宝塔终端贴命令。
+#
+# 甲方问「为啥总是要去终端写这个」。原因是 nginx 读的规则文件在宝塔的目录里
+# （/www/server/panel/vhost/nginx/…），不在仓库里；上面的拉取只更新网站文件，
+# 所以每次规则变了都要有人 cp + nginx -t + reload。这个 cron 本来就是 root 在跑，
+# 能做这件事，只是以前没让它做。
+#
+# 只在仓库里的规则和已装的不一样时才装；装的动作仍是 install-nginx-redirects.sh
+# （先 nginx -t，失败就还原旧配置、不重载），--no-pull 因为这一轮刚拉过，而且它的
+# pull 会去拿这把 cron 正拿着的锁。同一份内容装失败过就不再每 5 分钟重试，等下一次
+# 规则变化；失败原因写在 /var/log/cantonlock-redirects.log。
+# ---------------------------------------------------------------------------
+EXT_CONF=/www/server/panel/vhost/nginx/extension/cantonlock.com/10-taxonomy-redirects.conf
+HTTP_CONF=/www/server/panel/vhost/nginx/0.legacy-redirects.conf
+SRC_TAX="$D/deploy/nginx/taxonomy-redirects.conf"
+SRC_LEG="$D/deploy/nginx/legacy-redirects.conf"
+FAILED_MARK=/var/tmp/cantonlock-redirects.failed
+if [ -f "$SRC_TAX" ] && [ -f "$SRC_LEG" ] && { ! cmp -s "$SRC_TAX" "$EXT_CONF" || ! cmp -s "$SRC_LEG" "$HTTP_CONF"; }; then
+  want=$(cat "$SRC_TAX" "$SRC_LEG" | md5sum | cut -d' ' -f1)
+  if [ "$(cat "$FAILED_MARK" 2>/dev/null)" = "$want" ]; then
+    : # this exact content already failed nginx -t; wait for the next change
+  else
+    export PATH="/www/server/nginx/sbin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+    if bash "$D/deploy/install-nginx-redirects.sh" --no-pull >>/var/log/cantonlock-redirects.log 2>&1; then
+      rm -f "$FAILED_MARK"
+      log "redirects installed ($(grep -c 'return 301' "$SRC_TAX") taxonomy rules)"
+    elif cmp -s "$SRC_TAX" "$EXT_CONF" && cmp -s "$SRC_LEG" "$HTTP_CONF"; then
+      # Installed and reloaded; only the spot-check afterwards complained.
+      rm -f "$FAILED_MARK"
+      log "redirects installed, but a spot check failed — see /var/log/cantonlock-redirects.log"
+    else
+      echo "$want" > "$FAILED_MARK"
+      log "redirect install FAILED, previous rules kept — see /var/log/cantonlock-redirects.log"
+    fi
+  fi
+fi
