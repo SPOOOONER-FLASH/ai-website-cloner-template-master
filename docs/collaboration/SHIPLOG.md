@@ -6,19 +6,17 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 613 次提交
+最近 30 天 · 共 611 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 07:58 | 中立 | 七语种：33 条产品摘要按改正后的英文重译；案例 5 篇（ja/ko/tr/ru/ar）；新闻首批（每语种 10–20 篇） | `85d024a03a6` |
-| 07:45 | HYDE | 合并本地提交（七语种 M1–M4 与 origin/main）：门孔图生成器取工程会话的正则版；SHIPLOG 取远端后重生成 | `3646f05c5e2` |
-| 07:38 | 中立 | 目标清单：#49 ironmongery 与定制指南上线实测 | `59053732132` |
-| 07:32 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `48eb711354d` |
-| 07:31 | 中立 | 门孔图生成器两种拼写都认：美式拼写第二批（e834ca7c4df）后画 0 张 | `40150338333` |
-| 04:01 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9c7a8a0a615` |
-| 04:01 | 中立 | GTM「Test」未检测到的真正原因：Cloudflare 对 Google 服务器出质询页（更正 09-25 早先的归因） | `303aba48df1` |
+| 07:49 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b896e7268be` |
+| 07:48 | HYDE | 摘要材质守卫：8 条摘要按规格改正（表面颜色不再冒充材质），加测试 | `00a53f3e6d9` |
+| 04:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `7b2c63bc9a2` |
+| 04:02 | HYDE | 合页英文摘要：B024/B025 改为黄铜，同族 23 条去掉误导的 brass and steel | `3d5f17bea16` |
+| 04:00 | 中立 | 审计：英文残留改按英文虚词占比判定（旧法把纯 ASCII 的法德语误判）；基准页数为 0（正在重建）时不算通过 | `f05176116f7` |
 | 03:57 | 中立 | 审计：统计导出页时容忍并发构建删除文件（避免 ENOENT 中断） | `a94fd884103` |
 | 03:54 | HYDE | 定制指南三语 SEO 定稿（brief 第 3 项）；头图登记取景框 | `289edd373d7` |
 | 03:51 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `950edf759c1` |
