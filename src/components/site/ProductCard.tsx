@@ -1,11 +1,11 @@
 import type { FinderProduct } from "@/lib/product-finder";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { localiseProductValues } from "@/lib/spanish-product";
 import { cn } from "@/lib/utils";
 import { CatalogueProductLink } from "./CatalogueNavigation";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { cardFigure } from "@/lib/card-figure";
+import { localiseProductValues, t } from "@/lib/i18n-client";
 
 interface ProductCardProps {
   /* The narrow shape, not the full record: this card reads a dozen fields and a full
@@ -38,8 +38,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
   const heroImage = {
     ...product.heroImage,
     label:
-      (es ? product.heroImage.labelEs : pt ? product.heroImage.labelPt : undefined) ??
-      product.heroImage.label,
+      t(product.heroImage, "label", locale),
   };
   return (
     <CatalogueProductLink
@@ -70,7 +69,7 @@ export function ProductCard({ product, className, priority, locale = "en" }: Pro
       </div>
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="title-marker text-h3 text-ink">
-          {(es && product.nameEs) || (pt && product.namePt) || product.name}
+          {t(product, "name", locale)}
         </p>
         {/*
           SAY THAT A DEMONSTRATION CLIP EXISTS, IN WORDS.

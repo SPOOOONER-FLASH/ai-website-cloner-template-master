@@ -7,6 +7,7 @@ import { Button } from "./Button";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import { ProductCard } from "./ProductCard";
 import type { Locale } from "@/data/site";
+import { dict, t } from "@/lib/i18n";
 
 const copy = {
   en: {
@@ -58,20 +59,18 @@ export function ProjectDetail({
   locale?: Locale;
 }) {
   const spanish = locale === "es";
-  const text = copy[locale];
+  const text = dict(copy, locale);
   /*
     Three locales. `buildingTypeEs` and the image labels have no Portuguese field yet, so
     those fall back to English — visibly, which is the rule in src/lib/localised.ts.
   */
-  const pick = <T,>(es: T | undefined, pt: T | undefined, en: T): T =>
-    (spanish ? es : locale === "pt" ? pt : undefined) ?? en;
 
-  const name = pick(project.nameEs, project.namePt, project.name);
-  const buildingType = pick(project.buildingTypeEs, project.buildingTypePt, project.buildingType);
-  const summary = pick(project.summaryEs, project.summaryPt, project.summary);
+  const name = t(project, "name", locale);
+  const buildingType = t(project, "buildingType", locale);
+  const summary = t(project, "summary", locale);
   /* Paragraph for paragraph or the whole English body — a half-translated page reads as
      a rendering bug rather than as a gap. Same rule as NewsDetail. */
-  const localeBody = spanish ? project.bodyEs : locale === "pt" ? project.bodyPt : undefined;
+  const localeBody = t(project, "body", locale);
   const body = localeBody?.length === project.body.length ? localeBody : project.body;
   const prefix = locale === "en" ? "" : `/${locale}`;
   const projectsHref = `${prefix}/projects/`;

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Project } from "@/data/types";
 import { MediaPlaceholder } from "./MediaPlaceholder";
 import type { Locale } from "@/data/site";
+import { t } from "@/lib/i18n";
 
 export function ProjectCard({
   project,
@@ -20,13 +21,13 @@ export function ProjectCard({
     (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
 
   const prefix = locale === "en" ? "" : `/${locale}`;
-  const name = pick(project.name, project.nameEs, project.namePt);
+  const name = t(project, "name", locale);
   const buildingType = pick(
     project.buildingType,
     project.buildingTypeEs,
     project.buildingTypePt,
   );
-  const summary = pick(project.summary, project.summaryEs, project.summaryPt);
+  const summary = t(project, "summary", locale);
   const href = `${prefix}/projects/${project.slug}/`;
   const imageLabel = pick(project.heroImage.label, project.heroImage.labelEs);
   const eyebrow =

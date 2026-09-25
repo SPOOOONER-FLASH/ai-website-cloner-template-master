@@ -41,6 +41,7 @@ import { canonicalCategorySlug } from "./category-aliases";
 import { products as generatedProducts } from "./generated/products";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
 import { brandProductImageRef, brandProductImageRefs } from "./product-image-branding";
+import { withOverlays } from "../lib/i18n.ts";
 
 /**
  * True when a record belongs on the HYDE English/Spanish catalogue.
@@ -55,7 +56,12 @@ function onHydeCatalogue(product: Product): boolean {
   return !product.sites || product.sites.includes("hyde");
 }
 
-export const products: Product[] = generatedProducts.filter(onHydeCatalogue).map((product) => ({
+/*
+  The seven overlay locales' translations (content/i18n/<code>/products.json) are stitched
+  on as `i18n` here, once, so `t(product, "name", locale)` reads any of the ten locales
+  the same way. See src/lib/i18n.ts.
+*/
+export const products: Product[] = withOverlays(generatedProducts.filter(onHydeCatalogue), "products", (p) => p.slug).map((product) => ({
   ...product,
   heroImage: brandProductImageRef(applyImageAltOverride(product.heroImage)),
   gallery: brandProductImageRefs(applyImageAltOverrides(product.gallery)),

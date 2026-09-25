@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { mirrorHref } from "@/lib/spanish-mirror";
 import { englishPathOf, locales, localeFromPath, type Locale } from "@/data/locales";
-import { hasMarketMirror, marketLocaleMeta, marketLocales } from "@/data/market-locales";
+import { LANGUAGE_LABELS as FOOTER_LANGUAGE_LABELS, dict } from "@/lib/i18n-client";
 import { socialLinks } from "@/data/site";
 import { footerNav, localisedHref, navLabel, siteSettings } from "@/data/navigation";
 import { ArrowLink } from "./ArrowLink";
@@ -61,11 +61,7 @@ const REFERENCE_LINKS = {
 } as const;
 
 /** The endonym each language link carries — a reader scans for their own word for it. */
-const LANGUAGE_LABELS: Record<Locale, string> = {
-  en: "English",
-  es: "Español",
-  pt: "Português",
-};
+const LANGUAGE_LABELS: Record<Locale, string> = FOOTER_LANGUAGE_LABELS;
 
 /**
  * Footer — 313px, `py-48`, full-bleed top rule.
@@ -108,25 +104,13 @@ export function SiteFooter() {
     function the header panel uses and it reads the same mirror lists as the hreflang tags.
   */
   const englishPath = englishPathOf(pathname);
-  const languageLinks = [
-    ...locales
-      .filter((code) => code !== locale)
-      .map((code) => ({
-        code: code as string,
-        label: LANGUAGE_LABELS[code],
-        href: mirrorHref(englishPath, code).href,
-      })),
-    /*
-      The seven market locales, same rule: this page's counterpart where one exists
-      (seven paths — src/data/market-locales.ts), that language's home otherwise. Never
-      a 404 out of the footer.
-    */
-    ...marketLocales.map((code) => ({
-      code: code as string,
-      label: marketLocaleMeta[code].label,
-      href: hasMarketMirror(englishPath) && englishPath !== "/" ? `/${code}${englishPath}` : `/${code}`,
-    })),
-  ];
+  const languageLinks = locales
+    .filter((code) => code !== locale)
+    .map((code) => ({
+      code,
+      label: LANGUAGE_LABELS[code],
+      href: mirrorHref(englishPath, code).href,
+    }));
 
   const isCurrent = (href: string) => {
     const strip = (value: string) => (value.replace(/\/*$/, "") || "/");
@@ -141,7 +125,7 @@ export function SiteFooter() {
           <div className="grid grid-cols grid-rows gap-x gap-y-48 md:gap-y-96">
             <nav className="col-span-full grid grid-cols-subgrid md:col-span-7 md:block lg:col-span-8 xl:col-span-12">
               <ul className="col-span-full grid grid-cols-subgrid items-start gap-x gap-y-20 md:flex md:flex-wrap md:gap-x-64">
-                {[...LEGAL_LINKS[locale], ...REFERENCE_LINKS[locale]].map((link) => (
+                {[...dict(LEGAL_LINKS, locale), ...dict(REFERENCE_LINKS, locale)].map((link) => (
                   <li key={link.label} className="col-span-2 md:col-span-3">
                     {isCurrent(link.href) ? (
                       <span aria-current="page" className="text-c1 text-ink-secondary">
@@ -189,7 +173,7 @@ export function SiteFooter() {
                       href={language.href}
                       hrefLang={language.code}
                       lang={language.code}
-                      className="short-marker short-marker-compact text-c1 text-brand no-underline hover:text-brand-hover"
+                      className="short-marker short-marker-compact inline-flex min-h-24 items-center text-c1 text-brand no-underline hover:text-brand-hover"
                     >
                       {language.label}
                     </Link>
@@ -304,9 +288,9 @@ export function SiteFooter() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="short-marker short-marker-arrow relative pl-12 text-c1 text-brand hover:text-brand-hover"
+                      className="short-marker short-marker-arrow relative ps-12 text-c1 text-brand hover:text-brand-hover"
                     >
-                      <span aria-hidden="true" className="absolute left-0 top-0">›</span>
+                      <span aria-hidden="true" className="absolute start-0 top-0">›</span>
                       {link.label}
                     </a>
                   </li>

@@ -53,7 +53,7 @@ const moves = JSON.parse(readFileSync(SOURCE, "utf8"));
  * rename by a build — so each rule is checked against the EXPORT before it is written.
  * A destination that is not there is skipped and named in the run's output.
  */
-const LOCALES = ["en", "es", "pt"];
+const LOCALES = ["en", "es", "pt", "fr", "de", "ja", "ko", "tr", "ru", "ar"];
 
 /** The URL prefix for a locale, and where its pages live in the export. */
 const prefixFor = (locale) => (locale === "en" ? "" : `/${locale}`);

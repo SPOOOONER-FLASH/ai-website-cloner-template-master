@@ -13,8 +13,9 @@ import type { Locale } from "@/data/site";
 /** Records live in content/news/*.json — see products.ts for the rationale. */
 import { news as generatedNews } from "./generated/news";
 import { applyImageAltOverride, applyImageAltOverrides } from "./image-alt-overrides";
+import { withOverlays } from "../lib/i18n.ts";
 
-export const news: NewsArticle[] = generatedNews.map((article) => ({
+export const news: NewsArticle[] = withOverlays(generatedNews, "news", (a) => a.slug).map((article) => ({
   ...article,
   heroImage: applyImageAltOverride(article.heroImage),
   gallery: article.gallery ? applyImageAltOverrides(article.gallery) : undefined,

@@ -1,0 +1,171 @@
+{
+  "bathroom-accessories": {
+    "name": "Banyo aksesuarları",
+    "summary": "Çoğu paslanmaz çelik banyo aksesuarları; kaplaması kapı aksesuarıyla uyumlu."
+  },
+  "brass-steel-hinges": {
+    "name": "Pirinç ve çelik kapı menteşeleri",
+    "summary": "Mimari kapı uygulamaları için pirinç, paslanmaz çelik ve çelik menteşe serileri; bilyalı ve düz yataklı."
+  },
+  "care-grab-bars": {
+    "name": "Tutunma barları",
+    "summary": "Engelli banyoları için tutunma barları ve katlanır duş oturağı: duvara sabit düz, tırtıllı ve açılı barlar ile yukarı katlanarak yol açan barlar.",
+    "children": {
+      "flip-up-grab-bars": {
+        "name": "Katlanır tutunma barları"
+      },
+      "fixed-grab-bars": {
+        "name": "Sabit tutunma barları"
+      }
+    }
+  },
+  "deadbolts": {
+    "name": "Sürgü kilitler (deadbolt)",
+    "summary": "25 mm sürgü çıkışlı, testereye dayanıklı makara pimli, 60 veya 70 mm backset'li tek ve çift silindirli sürgü kilitler."
+  },
+  "door-closers": {
+    "name": "Kapı kapatıcılar",
+    "summary": "Ticari kapılar için alüminyum gövdeli hidrolik kapı kapatıcılar ve ahşap kapılar için bir yer menteşesi."
+  },
+  "floor-springs-and-pivots": {
+    "name": "Yer menteşeleri ve kapı pivotları",
+    "summary": "Pivotlu ahşap, metal ve çerçevesiz cam kapılar için yer menteşeleri, üst pivotlar, üstten kapı kapatıcılar ve hidrolik menteşeler.",
+    "children": {
+      "floor-springs": {
+        "name": "Yer menteşeleri"
+      },
+      "top-pivots": {
+        "name": "Üst pivotlar"
+      },
+      "pivot-top-patches": {
+        "name": "Cam kapı üst patch'leri"
+      },
+      "overhead-door-closers": {
+        "name": "Üstten kapı kapatıcılar"
+      },
+      "hydraulic-hinges": {
+        "name": "Hidrolik menteşeler"
+      }
+    }
+  },
+  "glass-door-accessories": {
+    "name": "Cam kapı aksesuarları",
+    "summary": "Çerçevesiz cam kapı uygulamaları için patch fitting'ler ve çekme kolları.",
+    "children": {
+      "glass-door-patch-fittings": {
+        "name": "Cam kapı patch fitting'leri"
+      },
+      "glass-door-handles": {
+        "name": "Cam kapı kolları"
+      }
+    }
+  },
+  "grip-handle-sets": {
+    "name": "Çekme kol takımları",
+    "summary": "Giriş ve sürme kapılar için çekme, tutamak ve gizli kol takımları."
+  },
+  "hardware-accessories": {
+    "name": "Yardımcı aksesuarlar",
+    "summary": "Kapı dürbünleri, stoperler, kablo transfer elemanları, sürgüler, boş/dolu göstergeleri, diller ve emniyet zincirleri.",
+    "children": {
+      "armoured-lock-covers": {
+        "name": "Zırhlı kilit koruyucuları"
+      },
+      "door-viewers": {
+        "name": "Kapı dürbünleri"
+      },
+      "door-stoppers": {
+        "name": "Kapı stoperleri"
+      },
+      "power-transfer-devices": {
+        "name": "Kablo transfer elemanları"
+      },
+      "door-flush-bolts": {
+        "name": "Gömme kapı sürgüleri"
+      },
+      "house-numbers": {
+        "name": "Kapı numaraları"
+      },
+      "indicators": {
+        "name": "Boş/dolu göstergeleri"
+      },
+      "latches": {
+        "name": "Diller"
+      },
+      "security-door-guards": {
+        "name": "Kapı emniyet zincirleri"
+      }
+    }
+  },
+  "knob-locks": {
+    "name": "Topuzlu kilitler",
+    "summary": "Giriş, mahremiyet (banyo), geçiş ve komünikasyon fonksiyonlu silindirik ve tübüler topuzlu kilitler.",
+    "children": {
+      "commercial-locks": {
+        "name": "Ticari kilitler"
+      },
+      "heavy-duty-cylindrical-locks": {
+        "name": "Ağır hizmet tipi silindirik kilitler"
+      },
+      "light-duty-cylindrical-locks": {
+        "name": "Hafif hizmet tipi silindirik kilitler"
+      },
+      "tubular-locks": {
+        "name": "Tübüler kilitler"
+      },
+      "wafer-locks": {
+        "name": "Plakalı (wafer) kilitler"
+      }
+    }
+  },
+  "lever-handles": {
+    "name": "Kapı kolları",
+    "summary": "Giriş, banyo ve geçiş kapıları için çoğu zamak (çinko alaşım) tübüler kapı kolu takımları; uyumlu dilleri ve karşılıklarıyla."
+  },
+  "lock-cases": {
+    "name": "Kilit gövdeleri",
+    "summary": "Ahşap ve metal kapılar için farklı backset, aks mesafesi ve sürgü konfigürasyonlarında gömme kilit gövdeleri."
+  },
+  "lock-cylinders": {
+    "name": "Kilit silindirleri",
+    "summary": "Profil ve anahtarlı silindirler; master anahtar ve şantiye anahtarı sistemleri dahil."
+  },
+  "night-latches-rim-locks": {
+    "name": "Gece kilitleri ve sıva üstü kilitler",
+    "summary": "Sıva üstü gece kilitleri ve rim kilitler; çoğu 60 mm backset ile tek silindir deliğinden monte edilir."
+  },
+  "panic-exit-devices": {
+    "name": "Panik çıkış cihazları",
+    "summary": "Kaçış yolları için panik barlar ve touch barlar; yangın kapısı, alarmlı, çift kanatlı ve iki noktadan kilitlemeli versiyonlar dahil.",
+    "children": {
+      "fire-door": {
+        "name": "Yangın kapısı cihazları"
+      },
+      "alarmed": {
+        "name": "Alarmlı cihazlar"
+      },
+      "multi-point": {
+        "name": "Çok noktadan kilitleme"
+      },
+      "exterior-trim": {
+        "name": "Dış kollar"
+      },
+      "special-applications": {
+        "name": "Özel uygulamalar"
+      }
+    }
+  },
+  "sliding-hook-locks": {
+    "name": "Sürme kapı kancalı kilitleri",
+    "summary": "Sürme kapılar ve dar profil uygulamaları için kancalı kilit donanımı."
+  },
+  "stainless-steel-handles": {
+    "name": "Paslanmaz çelik kapı kolları",
+    "summary": "35–50 mm kapılar için 9000 serisi dahil paslanmaz çelik kapı kolları ve gizli sürme kapı kolu.",
+    "children": {
+      "brass-pull-handles": {
+        "name": "Pirinç çekme kolları"
+      }
+    }
+  }
+}

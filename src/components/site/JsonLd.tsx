@@ -20,6 +20,7 @@ import type {
   WebSite,
   WithContext,
 } from "schema-dts";
+import { t } from "@/lib/i18n";
 
 /**
  * Schema.org structured data.
@@ -171,21 +172,19 @@ export function productSchema(
   locale: Locale = "en",
   categoryName?: string,
 ): WithContext<SchemaProduct> {
-  const es = locale === "es";
-  const pt = locale === "pt";
   /*
     The markup has to say what the page says. A Portuguese page whose Product schema
     carries the English name and the English spec table is telling a search engine the
     visible text is something else — the same class of mismatch Google treats FAQ markup
     for, one schema over.
   */
-  const localeSpecs = pt ? product.specsPt : es ? product.specsEs : undefined;
+  const localeSpecs = t(product, "specs", locale);
   const specs = (localeSpecs?.length ? localeSpecs : product.specs).filter(
     (spec) => spec.value,
   );
-  const name = (es ? product.nameEs : pt ? product.namePt : undefined) ?? product.name;
+  const name = t(product, "name", locale);
   const description =
-    (es ? product.summaryEs : pt ? product.summaryPt : undefined) ?? product.summary;
+    t(product, "summary", locale);
   const videos = videoObjects(product);
 
   return {
@@ -311,11 +310,9 @@ export function newsArticleSchema(
       If the two ever disagree the markup becomes the spam signal it is meant to avoid.
     */
     headline:
-      (locale === "es" && article.titleEs) || (locale === "pt" && article.titlePt) || article.title,
+      t(article, "title", locale),
     description:
-      (locale === "es" && article.summaryEs) ||
-      (locale === "pt" && article.summaryPt) ||
-      article.summary,
+      t(article, "summary", locale),
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: article.publishedAt,
@@ -332,9 +329,7 @@ export function newsArticleSchema(
           "@type": "Person",
           name: article.author.name,
           jobTitle:
-            (locale === "es" && article.author.roleEs) ||
-            (locale === "pt" && article.author.rolePt) ||
-            article.author.role,
+            t(article.author, "role", locale),
           worksFor: { "@id": `${siteUrl}/#organization` },
           ...(article.author.url ? { url: article.author.url, sameAs: [article.author.url] } : {}),
           ...(article.author.credential

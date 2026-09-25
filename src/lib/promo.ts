@@ -1,5 +1,7 @@
 import type { PromoCard } from "@/data/types";
 import type { Locale } from "@/data/site";
+import { tx } from "./i18n-client.ts";
+import { localisedHref } from "./spanish-mirror.ts";
 
 /** Select one compact promotion so campaign cards never stack over page imagery. */
 /** `/es/contact/`, `/pt/contact/` and `/contact` all normalise to `/contact/`. */
@@ -44,16 +46,14 @@ export function localisePromoCardCopy(card: PromoCard, locale: Locale) {
     the English card and the contact card sent Brazilian buyers to the English /contact/.
     Each field falls back to English, never to the other translation (src/lib/localised.ts).
   */
-  const pick = (en?: string, es?: string, pt?: string) =>
-    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
-  const title = pick(card.title, card.titleEs, card.titlePt) ?? card.title;
+  const title = tx(locale, card.title, { es: card.titleEs, pt: card.titlePt });
   const close = locale === "es" ? "Cerrar" : locale === "pt" ? "Fechar" : "Close";
   return {
     title,
-    titleLight: pick(card.titleLight, card.titleLightEs, card.titleLightPt),
-    body: pick(card.body, card.bodyEs, card.bodyPt) ?? card.body,
-    ctaLabel: pick(card.ctaLabel, card.ctaLabelEs, card.ctaLabelPt) ?? card.ctaLabel,
-    ctaHref: pick(card.ctaHref, card.ctaHrefEs, card.ctaHrefPt) ?? card.ctaHref,
+    titleLight: (card.titleLight ? tx(locale, card.titleLight, { es: card.titleLightEs, pt: card.titleLightPt }) : undefined),
+    body: tx(locale, card.body, { es: card.bodyEs, pt: card.bodyPt }),
+    ctaLabel: tx(locale, card.ctaLabel, { es: card.ctaLabelEs, pt: card.ctaLabelPt }),
+    ctaHref: (locale === "es" ? card.ctaHrefEs : locale === "pt" ? card.ctaHrefPt : undefined) ?? localisedHref(card.ctaHref, locale),
     closeLabel: `${close}: ${title}`,
   };
 }

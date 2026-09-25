@@ -2,6 +2,7 @@ import navigation from "../../content/navigation.json";
 import settings from "../../content/site-settings.json";
 import { localisedHref } from "../lib/spanish-mirror";
 import type { Locale } from "@/data/site";
+import { tx } from "../lib/i18n-client.ts";
 
 /**
  * Navigation and site settings, editable from the CMS.
@@ -110,8 +111,7 @@ export function navLabel(link: NavLink, locale: Locale): string {
     English, not the other translation, when a label is missing — see src/lib/localised.ts.
     A Portuguese menu with one Spanish item in it looks finished and is not.
   */
-  if (locale === "es") return link.labelEs ?? link.label;
-  if (locale === "pt") return link.labelPt ?? link.label;
+  return tx(locale, link.label, { es: link.labelEs, pt: link.labelPt });
   return link.label;
 }
 

@@ -5,6 +5,7 @@ import { getProductByModel } from "@/data/products";
 import { cn } from "@/lib/utils";
 import { ArrowLink } from "./ArrowLink";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { dict, t } from "@/lib/i18n";
 
 const ar4Models = ["AR4-110", "AR4-140", "AR4-101", "AR4-1121"] as const;
 type LocalizedProduct = Product & { nameEs?: string; namePt?: string };
@@ -49,7 +50,7 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
   const localized = product as LocalizedProduct;
   /* English, never Spanish, for a locale with no name of its own yet. */
   const name =
-    (locale === "es" ? localized.nameEs : locale === "pt" ? localized.namePt : undefined) ??
+    (t(localized, "name", locale)) ??
     product.name;
 
   return (
@@ -67,11 +68,11 @@ function Ar4ProductCard({ product, locale }: { product: Product; locale: Locale 
       />
       <div className="flex flex-1 flex-col border-t border-line p-24">
         <p className="text-c2 uppercase tracking-[0.08em] text-ink-secondary">
-          {copy[locale].model} {product.model}
+          {dict(copy, locale).model} {product.model}
         </p>
         <h3 className="title-marker mt-8 text-h3 text-ink">{name}</h3>
         <p className="mt-auto border-t border-line pt-16 text-c2 text-ink-secondary">
-          {copy[locale].material}
+          {dict(copy, locale).material}
         </p>
       </div>
     </Link>
@@ -86,7 +87,7 @@ export function ArgentinaAr4Showcase({
   pageHeading?: boolean;
 }) {
   const products = ar4Products();
-  const text = copy[locale];
+  const text = dict(copy, locale);
   /* Argentina AR4 is a market collection built in English and Spanish only — it is the
      one documented exception in PORTUGUESE_MIRROR_PREFIXES — so Portuguese goes to the
      English page rather than to a /pt/ URL that does not exist. */

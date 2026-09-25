@@ -2,9 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
 import { Button } from "./Button";
 import styles from "./InquirySuccess.module.css";
+import { dict } from "@/lib/i18n-client";
 
 const copy = {
   en: { title: "Thank you. Your inquiry is on its way.", detail: "Your message has been sent to our export team. We look forward to learning about your project.", received: "Inquiry submitted", browse: "Explore the catalog", another: "Send another inquiry", stop: "Stop celebration" },
@@ -13,7 +13,7 @@ const copy = {
 };
 
 export function InquirySuccess({ locale, onAnother }: { locale: Locale; onAnother: () => void }) {
-  const text = localised(copy, locale);
+  const text = dict(copy, locale);
   const heading = useRef<HTMLHeadingElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const stopAnimation = useRef<() => void>(() => {});

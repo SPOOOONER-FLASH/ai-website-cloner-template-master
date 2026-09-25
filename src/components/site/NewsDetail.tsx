@@ -16,6 +16,7 @@ import { ArticleContents } from "./ArticleContents";
 import reading from "./ArticleReading.module.css";
 import { GuideArticleIntro } from "./GuideArticleIntro";
 import editorial from "./GuideEditorial.module.css";
+import { dict, t as tr, tx } from "@/lib/i18n";
 
 /**
  * A single release, laid out on FSB's press skeleton: breadcrumb → title → back link →
@@ -97,8 +98,8 @@ export function NewsDetail({
   locale?: Locale;
   section?: "news" | "guides";
 }) {
-  const t = COPY[locale];
-  const sectionLabel = SECTION_LABEL[section][locale] ?? SECTION_LABEL[section].en;
+  const t = dict(COPY, locale);
+  const sectionLabel = dict(SECTION_LABEL[section], locale) ?? SECTION_LABEL[section].en;
   const base = locale === "en" ? "" : `/${locale}`;
   /*
     Falls back to the English field when a translation is missing rather than rendering
@@ -113,16 +114,15 @@ export function NewsDetail({
   /* One place that knows this page only has Spanish for the author, product and attachment
      strings. Portuguese falls back to English until those fields exist, which is the rule
      in src/lib/localised.ts and not an oversight. */
-  const es = locale === "es";
   /* English, never Spanish, for the fields that have no Portuguese yet. */
   const pickText = (en?: string, esText?: string, ptText?: string) =>
     (locale === "es" ? esText : locale === "pt" ? ptText : undefined) ?? en;
   const titleFor = { en: article.title, es: article.titleEs, pt: article.titlePt };
   const summaryFor = { en: article.summary, es: article.summaryEs, pt: article.summaryPt };
   const bodyFor = { en: article.body, es: article.bodyEs, pt: article.bodyPt };
-  const title = titleFor[locale] || article.title;
-  const summary = summaryFor[locale] || article.summary;
-  const localeBody = bodyFor[locale];
+  const title = dict(titleFor, locale) || article.title;
+  const summary = dict(summaryFor, locale) || article.summary;
+  const localeBody = dict(bodyFor, locale);
   /*
     A translated body is used whenever one exists — NOT only when its paragraph count
     matches the English.
@@ -139,7 +139,7 @@ export function NewsDetail({
   */
   const body = localeBody?.length ? localeBody : article.body;
   const blocks = articleBlocks(body);
-  const overview = { en: "Overview", es: "Resumen", pt: "Visão geral" }[locale];
+  const overview = tx(locale, "Overview", { es: "Resumen", pt: "Visão geral" });
 
   const attachments = getDownloadsByIds(article.attachmentIds ?? []);
   /*
@@ -186,7 +186,7 @@ export function NewsDetail({
               href={`${base}/${section}/`}
               className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
             >
-              {section === "guides" ? { en: "← Back to all guides", es: "← Volver a todas las guías", pt: "← Voltar a todos os guias" }[locale] : t.back}
+              {section === "guides" ? tx(locale, "← Back to all guides", { es: "← Volver a todas las guías", pt: "← Voltar a todos os guias" }) : t.back}
             </Link>
           </div>
         </section>
@@ -230,7 +230,7 @@ export function NewsDetail({
                   )}
                 </span>
                 <span className="mt-4 block">
-                  {(es && article.author.roleEs) || (locale === "pt" && article.author.rolePt) || article.author.role}
+                  {tr(article.author, "role", locale)}
                 </span>
                 {article.author.credential ? (
                   <span className="block text-ink-secondary">{article.author.credential}</span>
@@ -268,7 +268,7 @@ export function NewsDetail({
                         href={`${base}/products/${product.categoryPath[0]}/${product.slug}/`}
                         className="short-marker short-marker-compact text-c1 text-brand hover:text-brand-hover"
                       >
-                        {product.model} — {(es ? product.nameEs : locale === "pt" ? product.namePt : undefined) ?? product.name}
+                        {product.model} — {tr(product, "name", locale)}
                       </Link>
                     </li>
                   ))}
@@ -314,7 +314,7 @@ export function NewsDetail({
                   <div key={index} className="mt-24">
                     <DataTable
                       locale={locale}
-                      caption={block.caption || { en: "Reference table", es: "Tabla de consulta", pt: "Tabela de consulta" }[locale]}
+                      caption={block.caption || tx(locale, "Reference table", { es: "Tabla de consulta", pt: "Tabela de consulta" })}
                       columns={block.headers.map((label, column) => ({ label, sort: numeric[column] ? "number" : "text" }))}
                       rows={block.rows.map((row) =>
                         row.map((text, column) => ({ text, value: numeric[column] ? Number(text) : undefined })),
@@ -387,7 +387,7 @@ export function NewsDetail({
                   {article.attachment.format.toUpperCase()} ·{" "}
                   {Math.round(article.attachment.sizeBytes / 1024)} KB
                 </span>
-                <span className="short-marker short-marker-arrow relative mt-8 block pl-12 text-c1 text-brand">
+                <span className="short-marker short-marker-arrow relative mt-8 block ps-12 text-c1 text-brand">
                   {pickText(
                     article.attachment.title,
                     article.attachment.titleEs,

@@ -7,6 +7,7 @@ import type { Locale } from '@/data/site';
 import { localisedHref } from '@/lib/spanish-mirror';
 import { filterGuides, type GuideLibraryEntry, type GuideTopic } from '@/lib/guide-library';
 import styles from './GuideEditorial.module.css';
+import { dict } from "@/lib/i18n-client";
 
 const COPY = {
   en: { title: 'Find your next answer.', search: 'Search guides', placeholder: 'Cylinder, LC04, finish, EN 1125…', all: 'All guides', fit: 'Dimensions & fit', materials: 'Materials & finishes', standards: 'Standards & testing', buying: 'Ordering & delivery', other: 'More topics', count: 'guides', topics: 'Browse by topic', clear: 'Clear filters', empty: 'No guides match these filters.', emptyText: 'Try a model, a shorter keyword, or choose another topic.', read: 'Read guide' },
@@ -15,7 +16,7 @@ const COPY = {
 } as const;
 
 export function GuideLibrary({ entries, locale }: { entries: GuideLibraryEntry[]; locale: Locale }) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const id = useId();
   const [query, setQuery] = useState('');
   const [topic, setTopic] = useState<GuideTopic | 'all'>('all');

@@ -1,0 +1,64 @@
+{
+  "commercial-fire-egress-hardware": {
+    "name": "Ticari Yangın Kaçış Donanımı Paketi",
+    "buildingType": "Ticari + Kurumsal",
+    "summary": "Kontrollü kaçış yolları için tek noktalı, çift kanatlı ve alarmlı panik donanımını bir araya getiren örnek bir donanım listesi.",
+    "seoTitle": "Ticari Yangın Kaçış Donanımı Uygulaması | Canton Hyland",
+    "seoDescription": "Ticari kaçış yolları için panik çıkış donanımı paketi: Canton Hyland 305, 309-D, 314 ve 320 modelleri. Örnek uygulama çalışması.",
+    "body": [
+      "Bu uygulama kurgusu kaçış stratejisiyle başlar. Donanım seçilmeden önce kapı yönü, aktif ve pasif kanatlar, yangın kapısı gereklilikleri ve dışarıdan erişim koşulu netleştirilir.",
+      "Ürün grubunda tek kanat için 305 modeli, çift kanatlı kapılar için 309-D ve alarmlı çıkış gereken yerlerde 314 modeli birlikte kullanılabilir. Nihai uygunluk, test edilmiş kapı setinin tamamına ve raporun tam kapsamına bağlıdır.",
+      "Canton Hyland, distribütörlere ve proje alıcılarına donanım listesi incelemesi, yüzey uyumu, numune ve ihracat belgeleri konusunda destek verebilir."
+    ]
+  },
+  "double-leaf-fire-door-set": {
+    "name": "Çift Kanatlı Yangın Kapısı Seti",
+    "buildingType": "Ticari + Kurumsal",
+    "summary": "Çift kanatlı bir yangın kapısının kilitlenmesi için gereken uyumlu donanım: her kanatta bir kapı kapatıcı ve kanatların doğru sırayla kapanmasını sağlayan bir sıralayıcı.",
+    "seoTitle": "Çift Kanatlı Yangın Kapısı Seti: Sıralayıcı + Kapatıcı",
+    "seoDescription": "Çift kanatlı yangın kapısı için uyumlu donanım: DC02 kapı kapanma sıralayıcı ve JU serisi kapatıcılar. Ortak kanat ağırlığı 55–85kg, 397 × 120mm, mekanik.",
+    "body": [
+      "İki kapı kapatıcısı olup sıralayıcısı olmayan çift kanatlı bir yangın kapısı, yayların belirlediği sırayla kapanır. Aktif kanat önce gelirse açık kalan pasif kanadın kenarına oturur, dil karşılığa hiç ulaşmaz ve kapı, sınıflandırılmış bir yangın kapısı olmaktan çıkar. Her yangın testi sertifikası kapının kilitli olduğunu varsayar.",
+      "Bu set üç parçalı cevaptır: her kanada göre boyutlandırılmış bir kapı kapatıcı ve pasif kanat yerine oturana kadar aktif kanadı tutan, kasa başlığı boyunca takılan DC02 sıralayıcı. Sıralayıcı mekaniktir: elektrik yok, sinyal yok, ayarı kayacak bir şey yok.",
+      "Böyle bir setin en sık yanlış belirlendiği yer boyutlandırmadır. Kanat ağırlığı, kapatıcı kapasitesi ve sıralayıcı aralığı birbirini tutmalıdır. DC02, 55–100kg kanatları karşılar; aşağıdaki kapatıcılar 40–85kg aralığındadır. Dolayısıyla uyumlu bir kanat çifti için kullanılabilir ortak aralık 55kg ile 85kg arasıdır. 85kg üzerinde şu anda bir kapatıcı üretmiyoruz; açık konuşmak gerekirse sınırı sıralayıcı değil, kapatıcı belirler.",
+      "Sipariş vermeden önce netleştirin: her iki kanadın ağırlığı ve genişliği, kapı kalınlığı, kanatların bindirmeli mi yoksa eklenmiş bir orta kayıtla mı birleştiği, pasif kanatta hangi donanımın bulunduğu ve kapının sağlaması gereken yangın dayanım sınıfı."
+    ]
+  },
+  "glass-entrance-hardware-package": {
+    "name": "Cam Giriş Donanımı Paketi",
+    "buildingType": "Perakende + Ofis",
+    "summary": "Patch fitting'leri, çekme kollarını ve gizli zemin donanımını bir araya getiren, çerçevesiz cam giriş için örnek bir paket.",
+    "seoTitle": "Cam Giriş Donanımı Uygulaması | Canton Hyland",
+    "seoDescription": "Çerçevesiz cam giriş donanımı paketi: patch fitting'ler, çekme kolları ve gizli yer menteşesi; delik şablonları onaylı ürün setinden alınır.",
+    "body": [
+      "Patch fitting'ler ve zemin donanımı seçilmeden önce cam kalınlığı, kapı ağırlığı, açılma açısı ve zemin katmanları birlikte değerlendirilmelidir.",
+      "Çekme kolu aks mesafeleri ve çıkıntısı mimari görünüş çizimine göre kontrol edilir; görünen paslanmaz parçalar tek bir yüzey ailesinde tutulur.",
+      "Nihai delik şablonları ve cam hazırlık çizimleri genel bir detaydan değil, onaylanmış ürün setinden alınmalıdır."
+    ]
+  },
+  "hospitality-residential-door-package": {
+    "name": "Otel + Konut Kapı Paketi",
+    "buildingType": "Otel + Konut",
+    "summary": "Otel odaları, daireler ve iç mekân özel kapıları için uyumlu kapı kolu, tübüler kilit ve sürgü kilit paleti.",
+    "seoTitle": "Otel ve Konut Kapı Donanımı | Canton Hyland",
+    "seoDescription": "Otel ve konut kapı listeleri için uyumlu kapı kolu, tübüler kilit ve sürgü kilit paketi. Canton Hyland örnek uygulama çalışması.",
+    "body": [
+      "Bu örnek paket, her kapıyı aynı kapı gibi ele almak yerine donanımı oda işlevine, mahremiyet ihtiyacına ve yüzeye göre gruplar.",
+      "Mat siyah tübüler kapı kolları görsel dili belirleyebilir; paslanmaz kol takımları ve anahtarlı sürgü kilitler ise yoğun kullanılan veya dış çevre kapılarını karşılar. Silindirler listeye alınmadan önce anahtarlama gereksinimleri netleştirilir.",
+      "Seri üretim miktarları serbest bırakılmadan önce numuneler ve yüzey panoları projenin gerçek aydınlatması altında onaylanmalıdır."
+    ]
+  },
+  "panic-bar-with-outside-trim-set": {
+    "name": "Dış Kollu Panik Bar Seti",
+    "buildingType": "Ticari + Kurumsal",
+    "summary": "İçeriden serbestçe açılması, dışarıdan ise kontrollü kalması gereken bir yangın kapısı tek parça değil, iki parça ister: panik bar ve onun üzerinden çalışan anahtarlı kol. Bu set o ikilidir; aralarında nelerin uyması gerektiğini de anlatır.",
+    "seoTitle": "Dış Kollu Panik Bar: 310 + 015 Donanım Seti",
+    "seoDescription": "Canton Hyland 310 panik çıkış cihazı ve 015 anahtarlı dış kol: 900mm bar, 1,5 saat yangın dayanımı, üç pirinç anahtar, 80mm'ye kadar kapılar.",
+    "body": [
+      "Panik bar tek başına şartnamenin yalnızca yarısını karşılar. Baskı altında dili içeriden serbest bırakır; kaçış yolunun istediği de budur. Ancak dış yüzü boş bırakır. Dış yüzü boş bir kapı ise personel, bakım ekibi ya da itfaiye yetkilisi tarafından ancak takozla açık tutularak kullanılabilir; sınıflandırılmış bir kapının takozla sabitlenmiş hâle gelmesi de böyle olur.",
+      "Dış kol diğer yarıdır. 015 modeli, 310 barın dilini dışarıdan çalıştıran anahtarlı bir koldur; üç pirinç anahtarla gelir ve 80mm kalınlığa kadar kapılara uygundur. İç tarafta 310, 1,5 saat yangın dayanımına sahip, 900mm boyunda boyalı demir bir bardır; kırmızı veya siyah renkte sunulur.",
+      "Bu ikisinin ayrı ayrı değil birlikte belirlenmesinin nedeni, dış kolun üzerinden çalıştığı bara uyması gerekmesidir. Kilit gövdesini, mili ve montaj aks mesafelerini kol değil, bar belirler. Başka bir bara göre alınmış bir dış kol monte edilir ama çalışmaz; hata da mal kabulde değil, montaj sırasında ortaya çıkar.",
+      "Sipariş vermeden önce netleştirin: kapı kalınlığı, kanat genişliği, kapı yönü, dış kolun binadaki diğer kapılarla aynı anahtara (keyed alike) bağlanıp bağlanmayacağı ve kapının sağlaması gereken yangın dayanım sınıfı. Renk de bir karardır: bar stokta kırmızı ve siyah olarak bulunur; geri kalanı siyah olan bir koridorda kırmızı bar sonradan akla gelmiş gibi durur."
+    ]
+  }
+}

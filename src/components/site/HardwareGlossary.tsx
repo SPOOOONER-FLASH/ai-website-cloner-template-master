@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTopLevelCategories } from "@/data/categories";
 import { OPTION_NOTES, OPTION_NOTES_ES, OPTION_NOTES_PT } from "@/lib/configurator";
 import type { Locale } from "@/data/site";
+import { dict, t as tr } from "@/lib/i18n";
 
 /**
  * The trade definitions, rendered on the server.
@@ -52,7 +53,7 @@ const COPY = {
 } as const;
 
 export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   /* Portuguese notes where they exist, English where they do not — never Spanish. */
   const notes =
     locale === "es"
@@ -80,7 +81,7 @@ export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
     if (note) {
       entries.push({
         slug: category.slug,
-        name: (locale === "es" ? category.nameEs : locale === "pt" ? category.namePt : undefined) ?? category.name,
+        name: tr(category, "name", locale),
         note,
         href: `${base}/products/${category.slug}/`,
         child: false,
@@ -91,7 +92,7 @@ export function HardwareGlossary({ locale = "en" }: { locale?: Locale }) {
       if (!subNote) continue;
       entries.push({
         slug: sub.slug,
-        name: (locale === "es" ? sub.nameEs : locale === "pt" ? sub.namePt : undefined) ?? sub.name,
+        name: tr(sub, "name", locale),
         note: subNote,
         href: `${base}/products/${category.slug}/`,
         child: true,

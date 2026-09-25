@@ -1,0 +1,171 @@
+{
+  "bathroom-accessories": {
+    "name": "욕실 액세서리",
+    "summary": "대부분 스테인리스 재질의 욕실 액세서리입니다. 문 철물과 같은 마감으로 공급합니다."
+  },
+  "brass-steel-hinges": {
+    "name": "황동·스틸 경첩",
+    "summary": "건축용 문에 쓰는 황동, 스테인리스, 스틸 경첩입니다. 볼베어링 타입과 일반 베어링 타입이 있습니다."
+  },
+  "care-grab-bars": {
+    "name": "안전 손잡이",
+    "summary": "무장애 욕실용 안전 손잡이와 접이식 샤워 의자입니다. 벽에 고정하는 일자형, 널링형, 각형 손잡이와 위로 접어 올리는 손잡이가 있습니다.",
+    "children": {
+      "flip-up-grab-bars": {
+        "name": "접이식 안전 손잡이"
+      },
+      "fixed-grab-bars": {
+        "name": "고정식 안전 손잡이"
+      }
+    }
+  },
+  "deadbolts": {
+    "name": "데드볼트",
+    "summary": "싱글 및 더블 실린더 데드볼트입니다. 볼트 돌출량 25 mm, 절단 방지 롤러 삽입, 백셋 60 mm 또는 70 mm입니다."
+  },
+  "door-closers": {
+    "name": "도어 클로저",
+    "summary": "상업용 문을 위한 알루미늄 몸체 도어 클로저와 목재문용 플로어 힌지입니다."
+  },
+  "floor-springs-and-pivots": {
+    "name": "플로어 스프링과 피벗",
+    "summary": "피벗으로 다는 목재문, 금속문, 프레임 없는 유리문용 플로어 스프링, 상부 피벗, 오버헤드 도어 클로저, 유압 힌지입니다.",
+    "children": {
+      "floor-springs": {
+        "name": "플로어 스프링"
+      },
+      "top-pivots": {
+        "name": "상부 피벗"
+      },
+      "pivot-top-patches": {
+        "name": "유리문 상부 패치"
+      },
+      "overhead-door-closers": {
+        "name": "오버헤드 도어 클로저"
+      },
+      "hydraulic-hinges": {
+        "name": "유압 힌지"
+      }
+    }
+  },
+  "glass-door-accessories": {
+    "name": "유리문 철물",
+    "summary": "프레임 없는 유리문 조립용 패치 피팅과 풀 핸들입니다.",
+    "children": {
+      "glass-door-patch-fittings": {
+        "name": "유리문 패치 피팅"
+      },
+      "glass-door-handles": {
+        "name": "유리문 핸들"
+      }
+    }
+  },
+  "grip-handle-sets": {
+    "name": "그립 핸들 세트",
+    "summary": "현관문과 미닫이문용 그립 핸들, 풀 핸들, 매립형 핸들 세트입니다."
+  },
+  "hardware-accessories": {
+    "name": "철물 액세서리",
+    "summary": "도어 뷰어, 도어 스토퍼, 전원 전달 장치, 볼트, 사용 표시기, 래치, 도어 가드입니다.",
+    "children": {
+      "armoured-lock-covers": {
+        "name": "방탄문용 락 커버"
+      },
+      "door-viewers": {
+        "name": "도어 뷰어"
+      },
+      "door-stoppers": {
+        "name": "도어 스토퍼"
+      },
+      "power-transfer-devices": {
+        "name": "전원 전달 장치"
+      },
+      "door-flush-bolts": {
+        "name": "플러시 볼트"
+      },
+      "house-numbers": {
+        "name": "주택 번지 표지"
+      },
+      "indicators": {
+        "name": "사용 표시기"
+      },
+      "latches": {
+        "name": "래치"
+      },
+      "security-door-guards": {
+        "name": "방범 도어 가드"
+      }
+    }
+  },
+  "knob-locks": {
+    "name": "노브 락",
+    "summary": "현관용, 프라이버시용, 통로용, 커뮤니케이션용 기능의 실린드리컬 및 튜블러 노브 락입니다.",
+    "children": {
+      "commercial-locks": {
+        "name": "상업용 락"
+      },
+      "heavy-duty-cylindrical-locks": {
+        "name": "고하중 실린드리컬 락"
+      },
+      "light-duty-cylindrical-locks": {
+        "name": "경하중 실린드리컬 락"
+      },
+      "tubular-locks": {
+        "name": "튜블러 락"
+      },
+      "wafer-locks": {
+        "name": "웨이퍼 락"
+      }
+    }
+  },
+  "lever-handles": {
+    "name": "레버 핸들",
+    "summary": "현관, 욕실, 통로용 튜블러 레버 핸들 세트입니다. 대부분 아연 합금이며 래치와 스트라이크를 함께 공급합니다."
+  },
+  "lock-cases": {
+    "name": "락 케이스",
+    "summary": "목재문과 금속문용 모티스 락 케이스입니다. 백셋, 센터 거리, 볼트 구성을 여러 종류로 갖추고 있습니다."
+  },
+  "lock-cylinders": {
+    "name": "락 실린더",
+    "summary": "프로파일 실린더와 키 실린더입니다. 마스터키 및 건설용 키 시스템을 포함합니다."
+  },
+  "night-latches-rim-locks": {
+    "name": "나이트 래치와 림 락",
+    "summary": "면 부착형 나이트 래치와 림 락입니다. 대부분 백셋 60 mm이며 실린더 구멍 하나로 설치합니다."
+  },
+  "panic-exit-devices": {
+    "name": "패닉 엑시트 디바이스",
+    "summary": "피난 경로용 푸시바와 터치바입니다. 방화문용, 경보형, 양개문용, 2점 잠금형을 갖추고 있습니다.",
+    "children": {
+      "fire-door": {
+        "name": "방화문용 디바이스"
+      },
+      "alarmed": {
+        "name": "경보형 디바이스"
+      },
+      "multi-point": {
+        "name": "다점 잠금형"
+      },
+      "exterior-trim": {
+        "name": "외측 트림"
+      },
+      "special-applications": {
+        "name": "특수 용도"
+      }
+    }
+  },
+  "sliding-hook-locks": {
+    "name": "슬라이딩 훅 락",
+    "summary": "미닫이문과 좁은 프레임용 훅 락 철물입니다."
+  },
+  "stainless-steel-handles": {
+    "name": "스테인리스 핸들",
+    "summary": "문 두께 35~50 mm용 9000 시리즈를 포함한 스테인리스 스틸 레버 핸들과 은폐형 미닫이문 핸들입니다.",
+    "children": {
+      "brass-pull-handles": {
+        "name": "황동 풀 핸들"
+      }
+    }
+  }
+}

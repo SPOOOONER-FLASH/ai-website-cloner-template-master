@@ -1,0 +1,171 @@
+{
+  "bathroom-accessories": {
+    "name": "浴室アクセサリー",
+    "summary": "浴室アクセサリー。多くはステンレス製で、ドア金物と揃う仕上げです。"
+  },
+  "brass-steel-hinges": {
+    "name": "真鍮・スチール丁番",
+    "summary": "建築用ドア向けの真鍮、ステンレス、スチール丁番シリーズ。ベアリング入りと平軸受のナックルがあります。"
+  },
+  "care-grab-bars": {
+    "name": "介護用手すり",
+    "summary": "バリアフリーの浴室・トイレ向けの手すりと折りたたみ式シャワーチェアです。壁に固定するストレート型、ローレット加工型、アングル型の手すりと、使わないときに跳ね上げておける手すりを揃えています。",
+    "children": {
+      "flip-up-grab-bars": {
+        "name": "跳ね上げ式手すり"
+      },
+      "fixed-grab-bars": {
+        "name": "固定式手すり"
+      }
+    }
+  },
+  "deadbolts": {
+    "name": "本締錠",
+    "summary": "シングルシリンダーおよびダブルシリンダーの本締錠。デッドボルト出寸法25 mm、鋸引き防止ローラー入り、バックセット60 mmまたは70 mm。"
+  },
+  "door-closers": {
+    "name": "ドアクローザー",
+    "summary": "商業用ドア向けのアルミボディのドアクローザーと、木製ドア用のフロアヒンジ。"
+  },
+  "floor-springs-and-pivots": {
+    "name": "フロアヒンジ・ピボット",
+    "summary": "ピボット吊りの木製扉、金属扉、枠なしガラスドア用のフロアヒンジ、トップピボット、オーバーヘッドクローザー、油圧ヒンジです。",
+    "children": {
+      "floor-springs": {
+        "name": "フロアヒンジ"
+      },
+      "top-pivots": {
+        "name": "トップピボット"
+      },
+      "pivot-top-patches": {
+        "name": "ガラスドア用上部パッチ"
+      },
+      "overhead-door-closers": {
+        "name": "オーバーヘッドドアクローザー"
+      },
+      "hydraulic-hinges": {
+        "name": "油圧ヒンジ"
+      }
+    }
+  },
+  "glass-door-accessories": {
+    "name": "ガラスドア金物",
+    "summary": "枠なしガラスドア用のパッチ金物とプルハンドルです。",
+    "children": {
+      "glass-door-patch-fittings": {
+        "name": "ガラスドア用パッチ金物"
+      },
+      "glass-door-handles": {
+        "name": "ガラスドアハンドル"
+      }
+    }
+  },
+  "grip-handle-sets": {
+    "name": "グリップハンドルセット",
+    "summary": "玄関ドア・引き戸用のグリップハンドル、プルハンドル、埋込ハンドルのセット。"
+  },
+  "hardware-accessories": {
+    "name": "金物付属品",
+    "summary": "ドアスコープ、ドアストッパー、通電金物、ボルト、表示錠、ラッチ、ドアガードです。",
+    "children": {
+      "armoured-lock-covers": {
+        "name": "防犯シリンダーガード"
+      },
+      "door-viewers": {
+        "name": "ドアスコープ"
+      },
+      "door-stoppers": {
+        "name": "ドアストッパー"
+      },
+      "power-transfer-devices": {
+        "name": "通電金物"
+      },
+      "door-flush-bolts": {
+        "name": "フランス落とし"
+      },
+      "house-numbers": {
+        "name": "ハウスナンバー"
+      },
+      "indicators": {
+        "name": "表示錠"
+      },
+      "latches": {
+        "name": "ラッチ"
+      },
+      "security-door-guards": {
+        "name": "防犯ドアガード"
+      }
+    }
+  },
+  "knob-locks": {
+    "name": "ノブ錠",
+    "summary": "円筒錠とチューブラー錠のノブ錠です。玄関用、プライバシー用、空錠、コミュニケーション用の各機能を揃えています。",
+    "children": {
+      "commercial-locks": {
+        "name": "商業施設用の錠"
+      },
+      "heavy-duty-cylindrical-locks": {
+        "name": "ヘビーデューティー円筒錠"
+      },
+      "light-duty-cylindrical-locks": {
+        "name": "ライトデューティー円筒錠"
+      },
+      "tubular-locks": {
+        "name": "チューブラー錠"
+      },
+      "wafer-locks": {
+        "name": "ディスクタンブラー錠"
+      }
+    }
+  },
+  "lever-handles": {
+    "name": "レバーハンドル",
+    "summary": "チューブラー式のレバーハンドルセット。主に亜鉛合金製で、玄関用、プライバシー用、空錠用。対応するラッチとストライクを揃えています。"
+  },
+  "lock-cases": {
+    "name": "箱錠",
+    "summary": "木製ドア・金属ドア用の箱錠。バックセット、芯々距離、ボルト構成を複数用意しています。"
+  },
+  "lock-cylinders": {
+    "name": "シリンダー",
+    "summary": "プロファイルシリンダーと鍵付きシリンダー。マスターキーシステム、コンストラクションキーシステムを含みます。"
+  },
+  "night-latches-rim-locks": {
+    "name": "ナイトラッチ・面付錠",
+    "summary": "面付タイプのナイトラッチと面付錠。多くはバックセット60 mmで、シリンダー穴1か所で取り付けられます。"
+  },
+  "panic-exit-devices": {
+    "name": "パニックデバイス",
+    "summary": "避難経路用のプッシュバーとタッチバーです。防火戸用、警報付き、両開き扉用、2点ロック式を揃えています。",
+    "children": {
+      "fire-door": {
+        "name": "防火戸用デバイス"
+      },
+      "alarmed": {
+        "name": "警報付きデバイス"
+      },
+      "multi-point": {
+        "name": "多点ロック式"
+      },
+      "exterior-trim": {
+        "name": "外側トリム"
+      },
+      "special-applications": {
+        "name": "特殊用途向け"
+      }
+    }
+  },
+  "sliding-hook-locks": {
+    "name": "引き戸用鎌錠",
+    "summary": "引き戸および框幅の狭いドア向けの鎌錠金物。"
+  },
+  "stainless-steel-handles": {
+    "name": "ステンレスハンドル",
+    "summary": "ステンレス製のレバーハンドルです。扉厚35～50 mmに対応する9000シリーズと、引き戸用の埋込ハンドルを含みます。",
+    "children": {
+      "brass-pull-handles": {
+        "name": "真鍮製プルハンドル"
+      }
+    }
+  }
+}

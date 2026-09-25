@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, hasSpanishMirror, indexable } from "@/data/site";
-import { hasPortugueseMirror } from "@/lib/spanish-mirror";
+import { absoluteUrl, indexable } from "@/data/site";
+import { mirrorsOf } from "@/lib/spanish-mirror";
 import { isoUploadDate } from "@/lib/upload-date";
-import { marketAlternates } from "@/lib/market-mirror";
 import { getTopLevelCategories } from "@/data/categories";
 import {
   getAllProductParams,
@@ -85,18 +84,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     videos?: SitemapVideo[],
   ): MetadataRoute.Sitemap => {
     const clean = path === "/" ? "" : `/${path.replace(/^\/|\/$/g, "")}`;
-    const en = absoluteUrl(`${clean}/`);
-    const es = absoluteUrl(`/es${clean}/`);
-    const pt = absoluteUrl(`/pt${clean}/`);
+    /* Every locale whose tree holds this path, in list order — ten since 2026-09-25. */
+    const languages = Object.fromEntries(
+      mirrorsOf(path).map((locale) => [
+        locale,
+        absoluteUrl(locale === "en" ? `${clean}/` : `/${locale}${clean}/`),
+      ]),
+    );
 
     return buildLocaleSitemapEntries({
-      en,
-      es,
-      pt,
-      bilingual: hasSpanishMirror(path),
-      portuguese: hasPortugueseMirror(path),
-      /* The seven market landing pages share the cluster on their seven paths. */
-      market: marketAlternates(path),
+      languages,
       priority,
       changeFrequency,
       lastModified,

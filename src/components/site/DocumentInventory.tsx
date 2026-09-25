@@ -11,6 +11,7 @@ import {
   specifiedProductCount,
   type Availability,
 } from "@/lib/document-inventory";
+import { dict, tx, type LocaleDict } from "@/lib/i18n";
 
 /**
  * 「我们能给你什么文件」的站点区块。见 src/lib/document-inventory.ts 的长注释：
@@ -21,13 +22,13 @@ import {
 
 const prefix = (locale: Locale) => (locale === "en" ? "" : `/${locale}`);
 
-const STATE: Record<Availability, Record<Locale, string>> = {
+const STATE: Record<Availability, LocaleDict<string>> = {
   published: { en: "Published now", es: "Publicado ahora", pt: "Publicado agora" },
   "on-request": { en: "Sent on request", es: "Se envía a petición", pt: "Enviado mediante pedido" },
   absent: { en: "We do not have this", es: "Esto no lo tenemos", pt: "Isto não temos" },
 };
 
-const PURPOSE: Record<string, Record<Locale, string>> = {
+const PURPOSE: Record<string, LocaleDict<string>> = {
   approval: { en: "Client approval", es: "Aprobación del cliente", pt: "Aprovação do cliente" },
   machining: { en: "Door machining", es: "Mecanizado de la puerta", pt: "Usinagem da porta" },
   tender: { en: "Tender / submittal", es: "Licitación / dossier", pt: "Licitação / dossiê" },
@@ -134,7 +135,7 @@ function rowCopy(locale: Locale, drawings: number, specified: number, cat: Retur
         "Publicamos os desenhos em SVG, que qualquer programa de CAD importa e que é dimensionalmente exato. Não mantemos arquivos DWG nativos modelo a modelo.",
       ],
     },
-  } as Record<string, Record<Locale, [string, string]>>;
+  } as Record<string, LocaleDict<[string, string]>>;
 }
 
 const NOTES = {
@@ -172,15 +173,15 @@ export function DocumentInventory({ locale }: { locale: Locale }) {
   const specified = specifiedProductCount();
   const cat = catalogue();
   const copy = rowCopy(locale, drawings, specified, cat);
-  const notes = NOTES[locale] ?? NOTES.en;
+  const notes = dict(NOTES, locale) ?? NOTES.en;
 
   const groups: Availability[] = ["published", "on-request", "absent"];
 
   return (
     <>
       <div className="col-content min-w-0">
-        <nav className={reading.documentNav} aria-label={{ en: "Document availability", es: "Disponibilidad de documentos", pt: "Disponibilidade de documentos" }[locale]}>{groups.map(state => <a key={state} href={`#documents-${state}`}>{STATE[state][locale]}</a>)}</nav>
-        <DataTable locale={locale} caption={{ en: "Find the right document", es: "Encuentre el documento adecuado", pt: "Encontre o documento certo" }[locale]} columns={[{ label: { en: "Document", es: "Documento", pt: "Documento" }[locale], sort: "text" }, { label: { en: "Availability", es: "Disponibilidad", pt: "Disponibilidade" }[locale], sort: "text" }, { label: { en: "Purpose", es: "Uso", pt: "Uso" }[locale], sort: "text" }]} rows={DOCUMENT_ROWS.map(row => [{ text: copy[row.id][locale][0] }, { text: STATE[row.availability][locale] }, { text: row.purposes.map(p => PURPOSE[p][locale]).join(" · ") }])} />
+        <nav className={reading.documentNav} aria-label={tx(locale, "Document availability", { es: "Disponibilidad de documentos", pt: "Disponibilidade de documentos" })}>{groups.map(state => <a key={state} href={`#documents-${state}`}>{dict(STATE[state], locale)}</a>)}</nav>
+        <DataTable locale={locale} caption={tx(locale, "Find the right document", { es: "Encuentre el documento adecuado", pt: "Encontre o documento certo" })} columns={[{ label: tx(locale, "Document", { es: "Documento", pt: "Documento" }), sort: "text" }, { label: tx(locale, "Availability", { es: "Disponibilidad", pt: "Disponibilidade" }), sort: "text" }, { label: tx(locale, "Purpose", { es: "Uso", pt: "Uso" }), sort: "text" }]} rows={DOCUMENT_ROWS.map(row => [{ text: dict(copy[row.id], locale)[0] }, { text: dict(STATE[row.availability], locale) }, { text: row.purposes.map(p => dict(PURPOSE[p], locale)).join(" · ") }])} />
         {cat && <DocumentPreview url={cat.url} title={cat.title} locale={locale} />}
       </div>
       {groups.map((state) => {
@@ -193,12 +194,12 @@ export function DocumentInventory({ locale }: { locale: Locale }) {
             className="col-content grid scroll-mt-128 grid-cols gap-x gap-y-32 border-t border-line pt-32"
           >
             <h2 className="col-span-full text-h2 text-ink lg:col-span-4 xl:col-span-7">
-              {STATE[state][locale] ?? STATE[state].en}
+              {dict(STATE[state], locale) ?? STATE[state].en}
             </h2>
             <div className="col-span-full lg:col-span-7 lg:col-start-6 xl:col-span-15 xl:col-start-10">
               <dl>
                 {rows.map((row) => {
-                  const [title, body] = copy[row.id][locale] ?? copy[row.id].en;
+                  const [title, body] = dict(copy[row.id], locale) ?? copy[row.id].en;
                   return (
                     <div key={row.id} className="border-b border-line py-24 first:pt-0">
                       <dt className="text-h3 text-ink">{title}</dt>
@@ -209,7 +210,7 @@ export function DocumentInventory({ locale }: { locale: Locale }) {
                             key={p}
                             className="text-kicker uppercase tracking-[0.14em] text-ink-secondary"
                           >
-                            {PURPOSE[p][locale] ?? PURPOSE[p].en}
+                            {dict(PURPOSE[p], locale) ?? PURPOSE[p].en}
                           </span>
                         ))}
                       </dd>

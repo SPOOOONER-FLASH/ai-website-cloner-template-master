@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import type { Locale } from "@/data/site";
-import { SPEC_LABELS_ES } from "@/data/es-glossary";
-import { SPEC_LABELS_PT } from "@/data/pt-glossary";
+import { dict, specLabel, t as tr } from "@/lib/i18n";
 
 /**
  * A side-by-side spec table for one category.
@@ -77,9 +76,7 @@ export function SpecMatrix({
   showCompareLink?: boolean;
 }) {
   if (products.length < MIN_ROWS) return null;
-  const t = COPY[locale];
-  const es = locale === "es";
-  const pt = locale === "pt";
+  const t = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
   /*
     The column HEADING is the English label until it is translated. Positional lookup gets
@@ -88,7 +85,7 @@ export function SpecMatrix({
     for exactly this reason: the values beside it were already Portuguese.
   */
   const labelFor = (label: string) =>
-    es ? (SPEC_LABELS_ES[label] ?? label) : pt ? (SPEC_LABELS_PT[label] ?? label) : label;
+    specLabel(label, locale);
 
   /*
     Pick the columns from the data.
@@ -134,7 +131,7 @@ export function SpecMatrix({
         */
         const index = (product.specs ?? []).findIndex((r) => r.label === label);
         if (index < 0) return null;
-        const localeRows = pt ? product.specsPt : es ? product.specsEs : undefined;
+        const localeRows = tr(product, "specs", locale);
         return (localeRows?.[index]?.value ?? product.specs?.[index]?.value) ?? null;
       });
       return { product, cells, filled: cells.filter(Boolean).length };
@@ -160,14 +157,14 @@ export function SpecMatrix({
           <table className="w-full min-w-[64rem] border-collapse text-c1">
             <thead>
               <tr className="border-y border-line">
-                <th scope="col" className="py-12 pr-16 text-left font-regular text-ink-secondary">
+                <th scope="col" className="py-12 pe-16 text-start font-regular text-ink-secondary">
                   {t.model}
                 </th>
                 {columns.map((label) => (
                   <th
                     key={label}
                     scope="col"
-                    className="py-12 pr-16 text-left font-regular text-ink-secondary"
+                    className="py-12 pe-16 text-start font-regular text-ink-secondary"
                   >
                     {labelFor(label)}
                   </th>
@@ -177,7 +174,7 @@ export function SpecMatrix({
             <tbody>
               {shown.map(({ product, cells }) => (
                 <tr key={product.slug} className="border-b border-line">
-                  <th scope="row" className="py-12 pr-16 text-left font-regular">
+                  <th scope="row" className="py-12 pe-16 text-start font-regular">
                     <Link
                       href={href(product.slug)}
                       className="short-marker short-marker-compact text-ink hover:text-brand-hover"
@@ -188,7 +185,7 @@ export function SpecMatrix({
                   {cells.map((cell, i) => (
                     <td
                       key={columns[i]}
-                      className="py-12 pr-16 tabular-nums text-ink"
+                      className="py-12 pe-16 tabular-nums text-ink"
                     >
                       {cell ?? <span className="text-ink-tertiary">—</span>}
                     </td>

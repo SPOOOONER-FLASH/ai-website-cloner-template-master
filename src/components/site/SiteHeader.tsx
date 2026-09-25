@@ -26,6 +26,7 @@ const SiteMenuDrawer = dynamic(() =>
   { ssr: false },
 );
 import navigationStyles from "./HeaderNavigation.module.css";
+import { dict } from "@/lib/i18n-client";
 
 /**
  * 导航现在来自 content/navigation.json，由后台「导航菜单」栏目维护。
@@ -144,10 +145,10 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
   const say = (en: string, es: string, pt: string) =>
     locale === "es" ? es : locale === "pt" ? pt : en;
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
-  const companyCurrent = companyShelfLinks[locale].some((link) =>
+  const companyCurrent = dict(companyShelfLinks, locale).some((link) =>
     isCurrent(localisedHref(link.href, locale)),
   );
-  const buyCurrent = buyShelfLinks[locale].some((link) =>
+  const buyCurrent = dict(buyShelfLinks, locale).some((link) =>
     isCurrent(localisedHref(link.href, locale)),
   );
 
@@ -315,7 +316,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
 
             <div className={cn("col-span-full grid grid-cols-2 content-start justify-between gap-x gap-y-24 xl:col-span-12", navigationStyles.controls)}>
               <Link href={homeHref} className="flex min-w-0 flex-shrink-0 items-center text-ink">
-                <Wordmark className="pr-8" />
+                <Wordmark className="pe-8" />
               </Link>
 
               {/*
@@ -510,9 +511,9 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                         className="header-shelf-link block border-t border-line pt-12 text-ink no-underline"
                       >
                         <span className="short-marker text-c1">
-                          {say(category.label, category.labelEs, category.labelPt)}
+                          {category.labels[locale]}
                         </span>
-                        <span className="ml-8 text-c2 tabular-nums text-ink-secondary">
+                        <span className="ms-8 text-c2 tabular-nums text-ink-secondary">
                           {category.count}
                         </span>
                       </Link>
@@ -543,7 +544,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                                 onClick={() => setOpenShelf(null)}
                                 className="block py-2 text-c2 text-ink-secondary no-underline hover:text-ink"
                               >
-                                {say(child.label, child.labelEs, child.labelPt)}
+                                {child.labels[locale]}
                               </Link>
                             </li>
                           ))}
@@ -580,7 +581,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                 </p>
               </div>
               <nav className="grid gap-x-24 gap-y-24 sm:grid-cols-2 xl:grid-cols-5">
-                {companyShelfLinks[locale].map((link) => {
+                {dict(companyShelfLinks, locale).map((link) => {
                   const href = localisedHref(link.href, locale);
                   return (
                     <Link
@@ -610,7 +611,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
         <div className="header-shelf-clip">
           <div className="layout py-32">
             <div className="col-content grid gap-24 xl:grid-cols-4">
-              {buyShelfLinks[locale].map((link) => {
+              {dict(buyShelfLinks, locale).map((link) => {
                 const href = localisedHref(link.href, locale);
                 return (
                   <Link

@@ -15,7 +15,7 @@ import {
   siteName,
   siteUrl,
 } from "@/data/site";
-import { marketAlternates } from "@/lib/market-mirror";
+import { alternateLanguages } from "@/lib/seo";
 
 /**
  * The Portuguese tree.
@@ -47,14 +47,8 @@ export const metadata: Metadata = {
   applicationName: siteName,
   alternates: {
     canonical: "/pt/",
-    languages: {
-      en: absoluteUrl("/"),
-      es: absoluteUrl("/es/"),
-      pt: absoluteUrl("/pt/"),
-      /* The seven market home pages (src/data/market-locales.ts), reciprocally. */
-      ...marketAlternates("/"),
-      "x-default": absoluteUrl("/"),
-    },
+    /* Every home page that exists, reciprocally — ten since 2026-09-25. */
+    languages: alternateLanguages("/"),
   },
   openGraph: {
     type: "website",

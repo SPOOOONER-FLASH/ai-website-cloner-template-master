@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Locale } from "@/data/site";
-import { localised } from "@/lib/localised";
 import {
   notShownByCategory,
   notShownModels,
@@ -8,6 +7,7 @@ import {
   retiredPaths,
   type MergeReason,
 } from "@/lib/superseded-models";
+import { dict, tx } from "@/lib/i18n";
 
 /**
  * The three tables of /model-lookup. See src/lib/superseded-models.ts for why they are
@@ -131,11 +131,9 @@ const COPY = {
 } as const;
 
 export function ModelLookup({ locale }: { locale: Locale }) {
-  const copy = COPY[locale];
+  const copy = dict(COPY, locale);
   const prefix = locale === "en" ? "" : `/${locale}`;
   /* English, never the other translation — see the note in src/lib/localised.ts. */
-  const pick = (en: string, es?: string, pt?: string) =>
-    (locale === "es" ? es : locale === "pt" ? pt : undefined) ?? en;
 
   return (
     <>
@@ -148,7 +146,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
         {REASON_ORDER.map((reason) => {
           const group = renamedRecords.filter((record) => record.reason === reason);
           if (!group.length) return null;
-          const [heading, explanation] = localised(REASONS[reason], locale);
+          const [heading, explanation] = dict(REASONS[reason], locale);
 
           return (
             <div key={reason} className="mt-48 first:mt-32">
@@ -158,12 +156,12 @@ export function ModelLookup({ locale }: { locale: Locale }) {
               </h3>
               <p className="mt-12 max-w-[68ch] text-c2 text-ink-secondary">{explanation}</p>
               <div className="mt-16 overflow-x-auto">
-                <table className="w-full min-w-[42rem] border-collapse text-left">
+                <table className="w-full min-w-[42rem] border-collapse text-start">
                   <thead>
                     <tr className="border-b border-line">
                       <th
                         scope="col"
-                        className="py-12 pr-16 text-c2 font-semibold text-ink-secondary"
+                        className="py-12 pe-16 text-c2 font-semibold text-ink-secondary"
                       >
                         {copy.oldAddress}
                       </th>
@@ -177,7 +175,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                       <tr key={record.fromPath} className="border-b border-line align-top">
                         <th
                           scope="row"
-                          className="py-12 pr-16 font-mono text-c2 font-normal break-all text-ink-secondary"
+                          className="py-12 pe-16 font-mono text-c2 font-normal break-all text-ink-secondary"
                         >
                           {record.fromPath}
                         </th>
@@ -187,7 +185,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                             className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                           >
                             <span className="font-mono font-semibold">{record.model}</span>{" "}
-                            {pick(record.name, record.nameEs, record.namePt)}
+                            {tx(locale, record.name, { es: record.nameEs, pt: record.namePt })}
                           </Link>
                         </td>
                       </tr>
@@ -215,7 +213,7 @@ export function ModelLookup({ locale }: { locale: Locale }) {
                     href={`${prefix}${path.toPath}`}
                     className="short-marker short-marker-compact text-brand hover:text-brand-hover"
                   >
-                    {pick(path.categoryName, path.categoryNameEs, path.categoryNamePt)}
+                    {tx(locale, path.categoryName, { es: path.categoryNameEs, pt: path.categoryNamePt })}
                   </Link>
                   <span className="mt-4 block text-c2 text-ink-secondary">
                     {copy.movedProducts(path.moved)}
@@ -240,14 +238,14 @@ export function ModelLookup({ locale }: { locale: Locale }) {
           {notShownByCategory.map((group) => (
             <div key={group.category} className="border-t border-line pt-12">
               <h3 className="text-c1 font-semibold text-ink">
-                {pick(group.category, group.categoryEs, group.categoryPt)}
+                {tx(locale, group.category, { es: group.categoryEs, pt: group.categoryPt })}
               </h3>
               <ul className="mt-12 space-y-8">
                 {group.models.map((model) => (
                   <li key={`${model.categorySlug}-${model.model}`} className="text-c2">
                     <span className="font-mono text-ink">{model.model}</span>{" "}
                     <span className="text-ink-secondary">
-                      {pick(model.name, model.nameEs, model.namePt)}
+                      {tx(locale, model.name, { es: model.nameEs, pt: model.namePt })}
                     </span>
                   </li>
                 ))}

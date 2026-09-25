@@ -1,5 +1,6 @@
-import type { Locale } from "../data/locales.ts";
+import { isOverlayLocale, type Locale } from "../data/locales.ts";
 import { GUIDES_WITHOUT_ES, GUIDES_WITHOUT_PT } from "../data/generated/guide-locales.ts";
+import { locales as allLocales } from "../data/locales.ts";
 /**
  * Which English paths have a Spanish twin.
  *
@@ -132,8 +133,35 @@ export function hasSpanishMirror(enPath: string): boolean {
  */
 export function localisedHref(href: string, locale: Locale): string {
   if (locale === "en") return href;
-  if (locale === "pt") return hasPortugueseMirror(href) ? `/pt${href}` : href;
-  return hasSpanishMirror(href) ? `/es${href}` : href;
+  return hasMirror(locale, href) ? `/${locale}${href}` : href;
+}
+
+/**
+ * Which English paths have a twin in one of the seven overlay locales.
+ *
+ * The seven trees (fr de ja ko tr ru ar, 2026-09-25) are generated from one template set
+ * by scripts/scaffold-locale-routes.mjs and carry exactly the Portuguese route set — the
+ * 22 routes, minus /pt/ferragens-porta-corta-fogo which is Brazilian and has no English
+ * original. So they share the Portuguese prefix list and exception, and a route added to
+ * one is added to all seven or to none. Translation completeness is NOT a condition
+ * here: an overlay page whose text has not been translated yet renders English and is
+ * counted by scripts/track-locale-mirror.mjs; it exists, so hreflang may point at it.
+ */
+export function hasOverlayMirror(enPath: string): boolean {
+  const clean = enPath === "/" ? "/" : `/${enPath.replace(/^\/|\/$/g, "")}`;
+  if (clean === "/") return true;
+  /* Unlike Portuguese, the seven carry /products/argentina-ar4: the home page links to it. */
+  return PORTUGUESE_MIRROR_PREFIXES.some(
+    (prefix) => prefix !== "/" && (clean === prefix || clean.startsWith(`${prefix}/`)),
+  );
+}
+
+/** True when the given ENGLISH path exists under /<locale>. English always exists. */
+export function hasMirror(locale: Locale, enPath: string): boolean {
+  if (locale === "en") return true;
+  if (locale === "es") return hasSpanishMirror(enPath);
+  if (locale === "pt") return hasPortugueseMirror(enPath);
+  return isOverlayLocale(locale) ? hasOverlayMirror(enPath) : false;
 }
 
 /**
@@ -262,10 +290,8 @@ export function soleLocaleOf(enPath: string): Locale | null {
 export function mirrorsOf(enPath: string): Locale[] {
   const sole = soleLocaleOf(enPath);
   if (sole) return [sole];
-  const locales: Locale[] = ["en"];
-  if (hasSpanishMirror(enPath)) locales.push("es");
-  if (hasPortugueseMirror(enPath)) locales.push("pt");
-  return locales;
+  /* Every locale in list order: the three record-level ones, then the seven overlays. */
+  return allLocales.filter((locale) => hasMirror(locale, enPath));
 }
 
 /**

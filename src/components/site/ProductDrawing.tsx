@@ -1,6 +1,7 @@
 import drawings from "../../../public/images/drawings/index.json";
 import doorPrep from "../../../public/images/door-prep/index.json";
 import type { Locale } from "@/data/site";
+import { dict } from "@/lib/i18n";
 
 /**
  * The dimensioned drawing, where the record publishes enough geometry to draw one.
@@ -97,7 +98,7 @@ const COPY = {
 export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
   const entry = INDEX[slug];
   if (!entry) return null;
-  const t = COPY[locale];
+  const t = dict(COPY, locale);
   const href = `/images/drawings/${slug}.svg`;
 
   return (
@@ -154,7 +155,7 @@ export function ProductDrawing({ slug, locale = "en" }: { slug: string; locale?:
 export function DoorPreparation({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
   const entry = PREP_INDEX[slug];
   if (!entry) return null;
-  const t = PREP_COPY[locale];
+  const t = dict(PREP_COPY, locale);
   const href = `/images/door-prep/${slug}.svg`;
 
   return (

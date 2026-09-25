@@ -5,7 +5,7 @@ import { findCategoryByPath } from "@/data/categories";
 import { getAllProductParams, getProductBySlug, isPublished, products } from "@/data/products";
 import { absoluteUrl } from "@/data/site";
 import { JsonLd, ProductFaqJsonLd, breadcrumbSchema, productSchema } from "@/components/site/JsonLd";
-import { defaultOgImage } from "@/lib/seo";
+import { alternateLanguages, defaultOgImage } from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -81,12 +81,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     */
     alternates: {
       canonical: path,
-      languages: {
-        en: absoluteUrl(`/products/${category}/${slug}/`),
-        es: absoluteUrl(`/es/products/${category}/${slug}/`),
-        pt: url,
-        "x-default": absoluteUrl(`/products/${category}/${slug}/`),
-      },
+      /* Ten locales since 2026-09-25: the seven overlay trees name this page, so it must name
+         them back. alternateLanguages() derives the set from mirrorsOf(), same as every other route. */
+      languages: alternateLanguages(`/products/${category}/${slug}/`),
     },
     openGraph: {
       type: "website",

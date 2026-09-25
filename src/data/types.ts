@@ -567,6 +567,8 @@ export interface DownloadFile {
  * ---------------------------------------------------------------------- */
 
 export interface Category {
+  /** Overlay translations (fr de ja ko tr ru ar), attached by src/data/categories.ts. */
+  i18n?: Partial<Record<"fr" | "de" | "ja" | "ko" | "tr" | "ru" | "ar", Record<string, unknown>>>;
   /** URL segment, unique among its siblings. e.g. "locks". */
   slug: string;
   /** Display name, e.g. "Mortise Locks". */

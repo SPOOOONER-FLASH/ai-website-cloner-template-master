@@ -20,9 +20,10 @@ test("the launch robots policy keeps render assets crawlable and the CMS private
 
 test("sitemap entries omit invented freshness unless a real date is supplied", () => {
   const common = {
-    en: "https://example.test/projects/example/",
-    es: "https://example.test/es/projects/example/",
-    bilingual: true,
+    languages: {
+      en: "https://example.test/projects/example/",
+      es: "https://example.test/es/projects/example/",
+    },
     priority: 0.6,
     changeFrequency: "monthly" as const,
   };

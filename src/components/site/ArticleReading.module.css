@@ -5,31 +5,31 @@
 .body h2 { font-size: clamp(26px,2.4vw,34px); font-weight: 500; line-height: 1.25; margin: 56px 0 24px; }
 .body h3 { font-size: 22px; font-weight: 500; line-height: 1.35; margin: 36px 0 18px; }
 .body :first-child { margin-top: 0; }
-.contents { position: sticky; top: 132px; align-self: start; max-height: calc(100vh - 160px); overflow: auto; padding-right: 16px; }
+.contents { position: sticky; top: 132px; align-self: start; max-height: calc(100vh - 160px); overflow: auto; padding-inline-end: 16px; }
 .contentsTitle { margin: 0 0 18px; color: var(--color-ink); font-size: 16px; font-weight: 600; }
 .contents nav { display: grid; gap: 12px; font-size: 14px; line-height: 1.5; }
-.contents a { color: var(--color-ink-secondary); text-decoration: none; border-left: 1px solid var(--color-line); padding-left: 16px; }
+.contents a { color: var(--color-ink-secondary); text-decoration: none; border-inline-start: 1px solid var(--color-line); padding-inline-start: 16px; }
 .contents a:hover,.contents a[aria-current="location"] { color: var(--color-ink); border-color: var(--color-ink); text-decoration: underline; text-underline-offset: 4px; }
-.contents .subheading { margin-left: 12px; }
+.contents .subheading { margin-inline-start: 12px; }
 .mobileContents { display: none; }
 .tableFigure { margin: 36px 0; max-width: 100%; min-width: 0; }
 .tableHint { font-size: 13px!important; color: var(--color-ink-secondary); line-height: 1.5!important; margin: 10px 0!important; font-weight: 400!important; }
 .tableScroll { overflow: auto; max-height: 560px; border: 1px solid var(--color-line); overscroll-behavior: contain; }
-.table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 15px; line-height: 1.55; text-align: left; }
-.table caption { text-align: left; padding: 18px 20px; color: var(--color-ink); background: var(--color-surface); font-size: 17px; font-weight: 500; }
+.table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 15px; line-height: 1.55; text-align: start; }
+.table caption { text-align: start; padding: 18px 20px; color: var(--color-ink); background: var(--color-surface); font-size: 17px; font-weight: 500; }
 .table th,.table td { padding: 16px 20px; min-width: 150px; max-width: 360px; vertical-align: top; border-bottom: 1px solid var(--color-line); overflow-wrap: break-word; }
 .table thead th { position: sticky; top: 0; z-index: 2; background: #efede7; font-weight: 600; color: #25241e; }
-.table th:first-child { position: sticky; left: 0; border-right: 1px solid var(--color-line); min-width: 160px; max-width: 240px; }
+.table th:first-child { position: sticky; inset-inline-start: 0; border-inline-end: 1px solid var(--color-line); min-width: 160px; max-width: 240px; }
 .table thead th:first-child { z-index: 3; }
 .table tbody th { z-index: 1; font-weight: 500; }
 .table tbody th,.table tbody td { background: var(--color-surface); }
 .table tbody tr:nth-child(even) th,.table tbody tr:nth-child(even) td { background: #f8f8f6; }
 .table tbody tr:hover th,.table tbody tr:hover td { background: #f0efe9; }
-.table th button { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; border: 0; background: none; text-align: left; color: inherit; font: inherit; cursor: pointer; }
+.table th button { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; border: 0; background: none; text-align: start; color: inherit; font: inherit; cursor: pointer; }
 .table th button svg { flex-shrink: 0; }
 .faq { margin-top: 64px; scroll-margin-top: 144px; border-top: 1px solid var(--color-line); padding-top: 32px; }
 .faq details { border-bottom: 1px solid var(--color-line); padding: 24px 0; }
-.faq summary { display: list-item; cursor: pointer; padding-right: 12px; font-size: 18px; line-height: 1.5; color: var(--color-ink); }
+.faq summary { display: list-item; cursor: pointer; padding-inline-end: 12px; font-size: 18px; line-height: 1.5; color: var(--color-ink); }
 .faq summary h3 { display: inline; font: inherit; font-weight: 500; }
 .faq details p { max-width: 68ch; margin-top: 18px; color: var(--color-ink-secondary); font-size: 17px; line-height: 1.8; }
 .faq h2 { scroll-margin-top: 144px; }

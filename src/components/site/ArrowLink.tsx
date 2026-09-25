@@ -33,7 +33,7 @@ export function ArrowLink({
       href={href}
       prefetch={prefetch}
       className={cn(
-        "short-marker short-marker-arrow relative inline-block pl-12 text-c1 text-brand",
+        "short-marker short-marker-arrow relative inline-block ps-12 text-c1 text-brand",
         /*
           TOUCH HEIGHT.
 
@@ -54,7 +54,7 @@ export function ArrowLink({
         className,
       )}
     >
-      <ArrowRightIcon className="absolute left-0 top-[.3rem] h-auto w-8" />
+      <ArrowRightIcon className="absolute start-0 top-[.3rem] h-auto w-8 rtl:rotate-180" />
       <span>{children}</span>
     </Link>
   );
