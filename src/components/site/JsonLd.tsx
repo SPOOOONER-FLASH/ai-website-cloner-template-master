@@ -5,7 +5,7 @@ import { isoUploadDate } from "@/lib/upload-date";
 import { siteSettings } from "@/data/navigation";
 import { getAnsweredFaq } from "@/data/faq";
 import { stats } from "@/data/company";
-import type { NewsArticle, Product } from "@/data/types";
+import type { NewsArticle, Product, VideoRef } from "@/data/types";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { productFaqItems } from "@/lib/product-faq";
 import type {
@@ -17,6 +17,7 @@ import type {
   Organization,
   Product as SchemaProduct,
   Thing,
+  VideoObject,
   WebSite,
   WithContext,
 } from "schema-dts";
@@ -185,7 +186,6 @@ export function productSchema(
   const name = t(product, "name", locale);
   const description =
     t(product, "summary", locale);
-  const videos = videoObjects(product);
 
   return {
     "@context": "https://schema.org",
@@ -213,6 +213,12 @@ export function productSchema(
         }
       : {}),
     /*
+      NO VideoObject HERE ANY MORE (2026-09-25). It moved to the clip's watch page,
+      /video/<slug>/ — see src/lib/video-pages.ts. Google indexes a video only from a page
+      whose main purpose is the video; declared here, 97 clips sat under "Video isn't on a
+      watch page" and validation failed twice. The note below is kept for the reasoning
+      about required fields, which still applies on the watch page.
+
       The demonstration clip, declared so it can appear as a video result and so an answer
       engine knows a moving picture of this part exists.
 
@@ -225,7 +231,6 @@ export function productSchema(
       VideoObject missing them is a block of markup that earns nothing and can be reported
       as an error in Search Console — worse than no markup at all.
     */
-    ...(videos.length ? { subjectOf: videos } : {}),
   };
 }
 
@@ -236,34 +241,46 @@ function isoDuration(seconds: number): string {
   return `PT${m ? `${m}M` : ""}${s || !m ? `${s}S` : ""}`;
 }
 
-function videoObjects(product: Product) {
-  return (product.videos ?? [])
-    /*
-      isoUploadDate() rather than the raw field. Google reported both
-      「uploadDate 缺少时区信息」and「uploadDate 的日期时间值无效」against this exact
-      property on 2026-09-10 — one cause, a bare "2026-09-04" where VideoObject requires
-      an ISO 8601 DateTime with an offset. A VideoObject Google will not parse earns no
-      video result, and 191 product clips ride on this one string.
+/**
+ * VideoObject for one clip, emitted on that clip's watch page (/video/<slug>/).
+ * Returns null unless every field Google requires is present — a VideoObject missing any
+ * of them earns nothing and is reported as an error, worse than no markup.
+ */
+export function videoObjectSchema(
+  product: Product,
+  video: VideoRef,
+  pageUrl: string,
+): WithContext<VideoObject> | null {
+  /*
+    isoUploadDate() rather than the raw field. Google reported both
+    「uploadDate 缺少时区信息」and「uploadDate 的日期时间值无效」against this exact
+    property on 2026-09-10 — one cause, a bare "2026-09-04" where VideoObject requires
+    an ISO 8601 DateTime with an offset. A VideoObject Google will not parse earns no
+    video result, and 191 product clips ride on this one string.
 
-      A value that cannot be normalised drops the whole video from the markup: absent is
-      a lost rich result, malformed is an error on the page.
+    A value that cannot be normalised drops the whole video from the markup: absent is
+    a lost rich result, malformed is an error on the page.
+  */
+  const uploadDate = isoUploadDate(video.uploadDate);
+  if (!video.src.startsWith("/") || !video.poster?.src || !video.durationSeconds || !uploadDate) {
+    return null;
+  }
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: video.label,
+    /*
+      The product's own summary, because the clip shows the product doing the thing the
+      summary describes. Writing a second description here would be inventing copy no
+      person has checked, on a page where the checked version is already sitting.
     */
-    .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds)
-    .filter((v) => isoUploadDate(v.uploadDate))
-    .map((v) => ({
-      "@type": "VideoObject" as const,
-      name: v.label,
-      /*
-        The product's own summary, because the clip shows the product doing the thing the
-        summary describes. Writing a second description here would be inventing copy no
-        person has checked, on a page where the checked version is already sitting.
-      */
-      description: product.summary || v.label,
-      thumbnailUrl: absoluteUrl(v.poster!.src ?? ""),
-      contentUrl: absoluteUrl(v.src),
-      uploadDate: isoUploadDate(v.uploadDate)!,
-      duration: isoDuration(v.durationSeconds!),
-    }));
+    description: product.summary || video.label,
+    thumbnailUrl: absoluteUrl(video.poster.src),
+    contentUrl: absoluteUrl(video.src),
+    uploadDate,
+    duration: isoDuration(video.durationSeconds),
+    url: pageUrl,
+  };
 }
 
 /**

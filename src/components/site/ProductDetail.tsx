@@ -13,6 +13,7 @@ import { CatalogueReturnLink } from "./CatalogueNavigation";
 import { ProductDrawing, DoorPreparation } from "./ProductDrawing";
 import { ProductImageZoom } from "./ProductImageZoom";
 import { ProductVideo } from "./ProductVideo";
+import { watchPagePath, watchVideo } from "@/lib/video-pages";
 import { specValueFor } from "@/lib/imperial";
 import { Prose } from "./Prose";
 import { localiseProductValues } from "@/lib/spanish-product";
@@ -436,7 +437,17 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
                       <figure key={video.src} className="m-0">
                         <ProductVideo video={video} />
                         <figcaption className="mt-8 text-c2 text-ink-secondary">
-                          {video.label}
+                          {/* English only: the watch pages are English-only (src/lib/video-pages.ts). */}
+                          {locale === "en" && watchVideo(product)?.src === video.src ? (
+                            <Link
+                              href={watchPagePath(product)}
+                              className="text-brand hover:text-brand-hover"
+                            >
+                              {video.label}
+                            </Link>
+                          ) : (
+                            video.label
+                          )}
                           {video.durationSeconds ? (
                             <span className="text-ink-secondary">
                               {" · "}

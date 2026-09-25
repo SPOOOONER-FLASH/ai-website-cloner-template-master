@@ -14,6 +14,7 @@ import { getAllProjectParams } from "@/data/projects";
 import { getPublishedNews } from "@/data/news";
 import { getPublishedGuides } from "@/data/guides";
 import { buildLocaleSitemapEntries, type SitemapVideo } from "@/lib/seo-policy";
+import { productsWithWatchPage, watchPagePath, watchVideo } from "@/lib/video-pages";
 
 /**
  * Emits /sitemap.xml at build time (works under `output: "export"`).
@@ -231,19 +232,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       invalidates the whole <url> block, taking the page listing with it. Products with a
       clip but incomplete metadata are simply listed without one.
     */
-    const videos: SitemapVideo[] = (product.videos ?? [])
+    /* Watch pages carry the video entries since 2026-09-25 (src/lib/video-pages.ts).
+       Left on the product page, Google keeps filing the clip under "not on a watch page". */
+    const videos: SitemapVideo[] = []
       /* Same normalisation as the JSON-LD — see src/lib/upload-date.ts. A bare date
          here is what Google's video report rejected. */
-      .filter((v) => v.src.startsWith("/") && v.poster?.src && v.durationSeconds)
-      .filter((v) => isoUploadDate(v.uploadDate))
-      .map((v) => ({
-        title: xmlText(v.label),
-        thumbnail_loc: absoluteUrl(v.poster!.src ?? ""),
-        description: xmlText(product.summary || v.label),
-        content_loc: absoluteUrl(v.src),
-        duration: v.durationSeconds!,
-        publication_date: isoUploadDate(v.uploadDate)!,
-      }));
+;
     urls.push(
       ...entry(
         `/products/${category}/${slug}`,
@@ -252,6 +246,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
         undefined,
         images.length ? images.map(absoluteUrl) : undefined,
         videos.length ? videos : undefined,
+      ),
+    );
+  }
+
+  /* One watch page per clip, carrying its <video:video> entry. */
+  urls.push(...entry("/video", PRIORITY.support, "weekly"));
+  for (const product of productsWithWatchPage()) {
+    const v = watchVideo(product)!;
+    urls.push(
+      ...entry(
+        watchPagePath(product),
+        PRIORITY.productDetail,
+        "monthly",
+        undefined,
+        [absoluteUrl(v.poster!.src ?? "")],
+        [
+          {
+            title: xmlText(v.label),
+            thumbnail_loc: absoluteUrl(v.poster!.src ?? ""),
+            description: xmlText(product.summary || v.label),
+            content_loc: absoluteUrl(v.src),
+            duration: v.durationSeconds!,
+            publication_date: isoUploadDate(v.uploadDate)!,
+          },
+        ],
       ),
     );
   }
