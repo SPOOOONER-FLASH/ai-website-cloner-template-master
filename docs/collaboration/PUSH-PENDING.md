@@ -58,3 +58,14 @@
 构建好的发布提交 `f4175e4360b`（源码 101f83baa3f）没推上去。网络恢复后重跑 `npm run release:hyde` —— 检出和依赖都已缓存。
 
 > 已解决 2026-09-24（Claude Hyde 视觉）：不是网络问题。三次都是 `fetch first`，因为别的会话在推送大包 out/ 的几分钟里往 main 推了提交。在 E:\release\release-hyde 里 fetch、rebase、立即 push，第一次就成功：`32871f5eb0c`（源码 101f83baa3f）。
+
+## 2026/9/25 00:22:57 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：Auto-merging scripts/import-guide-heroes.mjs / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `9c9ea120666` shiplog: 更新上线存档
+- `c8e012f4309` Replace rejected guide composites with genuine catalogue photos
+
+下一次 `npm run ship` 成功时这些会一起推上去。

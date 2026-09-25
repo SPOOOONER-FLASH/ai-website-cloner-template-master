@@ -1,5 +1,6 @@
 {
-  "kind": "real-photograph-composition",
+  "kind": "catalogue-photograph-as-supplied",
+  "status": "Truthful temporary guide image; premium dark-ground reshoot still required.",
   "sources": [
     {
       "model": "F110",
@@ -8,14 +9,10 @@
       "sha256": "8f7cd36f3812c7b0783cd9e5a13e6b1250cff6e205011f616a580af53e742b3b"
     }
   ],
-  "stage": {
-    "file": "docs\\design-references\\2026-09-09-style-batches\\product-stage-backgrounds\\08-product-stage.png",
-    "sha256": "c5391dbb4cc4e6844f5894978d9b262ad48469f5936dc60f0fee3b6dc0ef50d4",
-    "note": "AI-generated EMPTY studio stage: no hardware, tools, text or logos were generated."
-  },
-  "method": "Real photograph cutout; uniform resize, limited exposure and white balance, silhouette shadows. Generated stage contains no product.",
-  "scope": "One catalogue photograph placed on a studio backdrop. No installation, scale, kit or compatibility claim.",
+  "method": "Copied byte-for-byte from the photographed catalogue source; no cutout, generated stage, added shadow, relighting, or product geometry edit.",
+  "scope": "One photographed catalogue product. This image is not proof of a certification, dimension, installation, or separately orderable set.",
   "usedFor": "/guides/glass-door-thickness-and-cutouts-2026/ hero",
-  "library": "docs/design-references/2026-09-09-style-batches/README.md",
-  "librarySha256": "d2b6ee02847cc818a7685105b4cd1ea761f45aa80c20fc11bbca7c17b8b366aa"
+  "sourceSha256": "8f7cd36f3812c7b0783cd9e5a13e6b1250cff6e205011f616a580af53e742b3b",
+  "rejectedCompositeSha256": "076b0470abb007345dfefbf31fa5db8acadb405227ad2653ae731d55ec2af19e",
+  "correction": "2026-09-24 client rejected the mismatched generated-stage composites."
 }
