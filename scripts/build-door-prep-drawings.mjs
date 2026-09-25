@@ -62,7 +62,13 @@ const OUT_DIR = "public/images/door-prep";
 const dry = process.argv.includes("--dry");
 
 const HOLE_LABELS = ["Fixing hole", "Fixing hole (flush door)", "Fixing hole (glass door)"];
-const CENTRE_LABELS = ["Center distance", "Center Distance", "Grip center distance"];
+/*
+  Both spellings. The 2026-09-24 US-spelling pass renamed this list to "Center distance" but, by design,
+  left RAYEN-only records alone — and all 96 records carrying a hole centre distance are RAYEN's,
+  still labelled the British way. The generator drew 0 drawings until this matched both (09-25).
+  A regex, because a literal British label here would be rewritten by the spelling pass again.
+*/
+const CENTRE_LABELS = /^(?:grip )?cent(?:er|re) distance$/i;
 const THICKNESS_LABELS = ["Door thickness", "Suitable Door Thickness", "Glass thickness"];
 
 /** First millimetre figure in a recorded string. "φ12mm" gives 12; "P=640mm" gives 640. */
@@ -74,7 +80,7 @@ function firstFigure(value) {
 }
 
 function row(product, labels) {
-  return (product.specs ?? []).find((spec) => labels.includes(spec.label) && /\d/.test(spec.value));
+  return (product.specs ?? []).find((spec) => (labels instanceof RegExp ? labels.test(spec.label) : labels.includes(spec.label)) && /\d/.test(spec.value));
 }
 
 /**
