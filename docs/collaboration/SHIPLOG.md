@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 609 次提交
+最近 30 天 · 共 610 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 03:54 | HYDE | 定制指南三语 SEO 定稿（brief 第 3 项）；头图登记取景框 | `289edd373d7` |
 | 03:51 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `950edf759c1` |
 | 03:51 | HYDE | 定制指南（custom door hardware / ironmongery）三语，服务页加 Custom tooling 段 | `2cb5747d571` |
 | 03:39 | 中立 | 目标清单：#46 GTM 原样代码上线实测；#41 G-X7EMRX2V2X 已不再收数据 | `5fe990c6346` |
