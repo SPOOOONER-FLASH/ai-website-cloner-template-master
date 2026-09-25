@@ -1966,7 +1966,6 @@
   },
   "3431-sset-lever-handle": {
     "name": "Drücker",
-    "summary": "Drücker in Edelstahl matt (US32D), Eingangsfunktion.",
     "features": [],
     "specs": [
       {
@@ -2009,7 +2008,8 @@
         "label": "Finish",
         "value": "Edelstahl matt (US32D)"
       }
-    ]
+    ],
+    "summary": "Drücker in der Oberfläche Edelstahl matt (US32D), mit Eingangsfunktion."
   },
   "410-glass-door-handle": {
     "name": "Glastürgriff",
@@ -3701,7 +3701,6 @@
   },
   "587-mbbk-light-duty-cylindrical-lock": {
     "name": "Zylindrisches Schloss für leichte Beanspruchung",
-    "summary": "Zylindrisches Schloss für leichte Beanspruchung in Nickel matt, Chrom, Messing antik oder Messing poliert – alle lieferbar; WC-Funktion.",
     "features": [
       "Technische Merkmale",
       "Falle: 12 mm (1/2”) Ausschluss, Fallensperre bei Schlüsselmodellen",
@@ -3768,7 +3767,8 @@
         "label": "Key Types",
         "value": "Vernickeltes Messing, Massivmessing, Nickel gebürstet"
       }
-    ]
+    ],
+    "summary": "Zylindrisches Schloss für leichte Beanspruchung, lieferbar in Nickel matt, Chrom, Messing antik und Messing poliert, mit WC-Funktion."
   },
   "587-mbet-light-duty-cylindrical-lock": {
     "name": "Zylindrisches Schloss für leichte Beanspruchung",
@@ -5153,7 +5153,6 @@
   },
   "6-3-3mm-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 201 / 304, 6 × 3 × 3 mm (anpassbar).",
     "features": [
       "1. Große Auswahl an Bandtypen für die unterschiedlichen Märkte weltweit.",
       "2. Zahlreiche Oberflächen lieferbar, u. a. Pulverbeschichtung, Lackierung, Eloxierung und Holzoptik.",
@@ -5200,7 +5199,8 @@
         "label": "Opening Angle",
         "value": "180 Grad"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 201 / 304, 6*3*3 mm (auf Wunsch anpassbar)."
   },
   "60-bskt-lock-cylinder": {
     "name": "Schließzylinder",
@@ -6382,7 +6382,6 @@
   },
   "70720-pb-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
-    "summary": "Stoßgriffgarnitur in Messing poliert (US3).",
     "features": [],
     "specs": [
       {
@@ -6429,7 +6428,8 @@
         "label": "Finish",
         "value": "Messing poliert (US3)"
       }
-    ]
+    ],
+    "summary": "Stoßgriffgarnitur in der Oberfläche Messing poliert (US3)."
   },
   "70720-sm-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
@@ -7027,7 +7027,6 @@
   },
   "807-abbk-lever-handle": {
     "name": "Drücker",
-    "summary": "Drücker in Messing antik (US5), WC-Funktion.",
     "features": [
       "Ideal für Schlafzimmer und Räume mit Sperrfunktion",
       "Druckknopfverriegelung: drücken zum Verriegeln, lösen zum Entriegeln",
@@ -7079,11 +7078,11 @@
         "label": "Surface Finish Options",
         "value": "AB, AC, PB, SB, SS, SP, SC (z. B. Messing antik, Messing poliert, Nickel matt, Schwarz matt usw.)"
       }
-    ]
+    ],
+    "summary": "Drücker in der Oberfläche Messing antik (US5), mit WC-Funktion."
   },
   "808-abet-lever-handle": {
     "name": "Drücker",
-    "summary": "Drücker in Messing antik (US5), Eingangsfunktion.",
     "features": [
       "Wirtschaftlich und einfach zu montieren",
       "Langlebige Bauweise mit über 200.000 Zyklen",
@@ -7141,7 +7140,8 @@
         "label": "Application",
         "value": "Wohnbereich"
       }
-    ]
+    ],
+    "summary": "Drücker in der Oberfläche Messing antik (US5), mit Eingangsfunktion."
   },
   "808-mbet-lever-handle": {
     "name": "Drücker",
@@ -7269,7 +7269,6 @@
   },
   "808-snps-lever-handle": {
     "name": "Drücker",
-    "summary": "Drücker in Nickel matt, Chrom, Messing antik oder Messing poliert – alle lieferbar; Durchgangsfunktion.",
     "features": [
       "Wirtschaftlich und einfach zu montieren",
       "Langlebige Bauweise mit über 200.000 Zyklen",
@@ -7327,7 +7326,8 @@
         "label": "Application",
         "value": "Wohnbereich"
       }
-    ]
+    ],
+    "summary": "Drücker, lieferbar in Nickel matt, Chrom, Messing antik und Messing poliert, mit Durchgangsfunktion."
   },
   "80sn-lock-cylinder": {
     "name": "Schließzylinder",
@@ -7660,7 +7660,6 @@
   },
   "853-ssbk-lever-handle": {
     "name": "Drücker",
-    "summary": "Drücker in Edelstahl matt (US32D), WC-Funktion.",
     "features": [
       "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
       "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
@@ -7709,7 +7708,8 @@
         "label": "Finish",
         "value": "Edelstahl matt (US32D)"
       }
-    ]
+    ],
+    "summary": "Drücker in der Oberfläche Edelstahl matt (US32D), mit WC-Funktion."
   },
   "8803-snbk-lever-handle": {
     "name": "Drücker",
@@ -8826,10 +8826,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband AAH024, hergestellt von Canton Hyland.",
     "description": "Das Modell AAH024 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Türband AAH024 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
   },
   "ai8530-lock-case": {
     "name": "Schlosskasten",
@@ -8880,7 +8880,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Edelstahl-Türband mit losem Stift. Wir liefern ein vollständiges Sortiment an Türbändern aus Messing oder Edelstahl SUS304.",
     "features": [
       "Beschreibung",
       "Edelstahl-Türband mit losem Stift"
@@ -8906,11 +8905,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Türband aus Messing, 2,0 bis 3,5 mm stark, Öffnungswinkel 90 bis 180 Grad, in Messing poliert, Messing matt, Messing antik, Kupfer antik oder verchromt; weitere Oberflächen auf Bestellung."
   },
   "b025-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Edelstahl-Türband mit losem Stift. Wir liefern ein vollständiges Sortiment an Türbändern aus Messing oder Edelstahl SUS304.",
     "features": [
       "Beschreibung",
       "Edelstahl-Türband mit losem Stift"
@@ -8940,7 +8939,8 @@
         "label": "Size",
         "value": "Anpassung nach Kundenwunsch"
       }
-    ]
+    ],
+    "summary": "Türband aus Messing, Öffnungswinkel 90 bis 180 Grad, in den Oberflächen Messing antik, Kupfer antik, Messing poliert, Messing matt, Edelstahl, hochglanzpoliert oder Chrom matt; Größe nach Kundenwunsch."
   },
   "bh01-grab-bar": {
     "name": "Haltegriff",
@@ -10287,7 +10287,6 @@
   },
   "bl027-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Eisen, 3,5\" × 2,28\" × 1,6 mm.",
     "features": [],
     "specs": [
       {
@@ -10302,11 +10301,11 @@
         "label": "Finish",
         "value": "BL"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Eisen, 3,5” × 2,28” × 1,6 mm."
   },
   "bl028-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 304/201, 4\" × 3\" × 2,5 mm.",
     "features": [
       "Beschreibung",
       "Edelstahl-Türband mit losem Stift"
@@ -10328,18 +10327,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 304/201, 4” × 3” × 2,5 mm."
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband BL029, hergestellt von Canton Hyland.",
     "description": "Das Modell BL029 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Türband BL029 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 304, Sondermaße lieferbar.",
     "features": [
       "1. Hochwertiger Edelstahl 304 mit sehr guter Korrosionsbeständigkeit und langer Lebensdauer.",
       "2. Selbstschließendes Federband mit einstellbarer Federkraft zur flexiblen Anpassung der Schließkraft.",
@@ -10404,11 +10403,11 @@
         "label": "LOGO",
         "value": "Kundenlogo möglich"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 304, Sondergrößen auf Anfrage."
   },
   "bl031-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 304.",
     "features": [],
     "specs": [
       {
@@ -10463,7 +10462,8 @@
         "label": "OEM /ODM",
         "value": "Lieferbar"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 304."
   },
   "black-tubular-lever-lock-set": {
     "name": "Tubular-Drückerschloss, schwarz",
@@ -10508,7 +10508,6 @@
   },
   "ch01-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Zinklegierung bzw. Edelstahl 304, 34 × 140 × 28 mm / 28 × 118 × 22 mm / 25 × 118 × 18 mm / 19 × 95 × 13 mm / 16 × 70 × 11 mm.",
     "features": [
       "Hauptmerkmale:",
       "• Kompatibel mit mehreren Profilsystemen",
@@ -10540,7 +10539,8 @@
         "label": "Application",
         "value": "Fensteranschluss"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Zinklegierung oder Edelstahl 304, in den Größen 34*140*28 mm, 28*118*22 mm, 25*118*18 mm, 19*95*13 mm und 16*70*11 mm."
   },
   "cylindrical-knob-lock": {
     "name": "Zylindrisches Knaufschloss",
@@ -13313,7 +13313,6 @@
   },
   "hy008-lock-case": {
     "name": "Schlosskasten",
-    "summary": "Einsteckschlosskasten für KFC-Schlosskästen und schmale Aluminiumtüren.",
     "features": [
       "Schlosskasten für Ladeneingangstüren in amerikanischer Ausführung, robuste Eisenkonstruktion für zuverlässige, stabile Sicherheit im Objektbereich.",
       "Mit Einsteck-Messingzylinder in amerikanischer Ausführung für leichtgängige Schlüsselbetätigung und verlässliche Verriegelung.",
@@ -13347,7 +13346,8 @@
         "label": "Included Accessories",
         "value": "Schlosskasten für Aluminiumtüren, Schließzylinder in amerikanischer Ausführung / Schlosskasten (Türriegel) sowie Schlösser und Schlüssel."
       }
-    ]
+    ],
+    "summary": "Einsteckschlosskasten für KFC-Schlosskörper und Schlosskörper für schmale Aluminiumtüren."
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "Standard-Einsteckschloss",
@@ -13459,7 +13459,6 @@
   },
   "ih01-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Eisen, Sondermaße lieferbar.",
     "features": [
       "Dieses Band eignet sich für Holztüren, Metalltüren, Feuerschutztüren, Fenster und Schranktüren und ist im Wohnbau, im Gewerbe, in Hotels, Büros, Lagern und in der Industrie weit verbreitet.",
       "Für OEM- und ODM-Projekte sind mehrere Größen und Anpassungen möglich."
@@ -13509,7 +13508,8 @@
         "label": "Features",
         "value": "Abnehmbar, leichtgängig drehbar, einfache Montage"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Eisen, Sondergrößen auf Anfrage."
   },
   "ju-051-door-closer": {
     "name": "Türschließer",
@@ -16460,18 +16460,17 @@
   },
   "ss026-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Edelstahl"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl."
   },
   "ss027-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 4,0\" × 3,0\" × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16482,11 +16481,11 @@
         "label": "Size",
         "value": "4,0” × 3,0” × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 4,0” × 3,0” × 2,0 mm."
   },
   "ssh011-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 304, 4,0\" × 3,0\" × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16497,11 +16496,11 @@
         "label": "Size",
         "value": "4,0” × 3,0” × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 304, 4,0” × 3,0” × 2,0 mm."
   },
   "ssh012-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 304.",
     "features": [],
     "specs": [
       {
@@ -16536,11 +16535,11 @@
         "label": "Size5",
         "value": "5” × 3” × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 304."
   },
   "ssh013-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl.",
     "features": [],
     "specs": [
       {
@@ -16575,11 +16574,11 @@
         "label": "Size5",
         "value": "5” × 3” × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl."
   },
   "ssh015-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 2 × 2 × 2.",
     "features": [],
     "specs": [
       {
@@ -16598,7 +16597,8 @@
         "label": "Size",
         "value": "2 × 2 × 2"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 2 × 2 × 2."
   },
   "ssh016-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
@@ -16656,7 +16656,6 @@
   },
   "ssh017-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 4\" × 3\" × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16679,11 +16678,11 @@
         "label": "Opening Angle",
         "value": "90°–180°"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 4” × 3” × 2,5 mm."
   },
   "ssh018-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16706,11 +16705,11 @@
         "label": "Type",
         "value": "Ohne Kugellager / 2 Gleitlager (2BB) (optional)"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 102 × 72,5 × 2,5 mm."
   },
   "ssh019-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16733,11 +16732,11 @@
         "label": "Type",
         "value": "Gleitlager / Ohne Kugellager / 2BB (optional)"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 102 × 72,5 × 2,5 mm."
   },
   "ssh020-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl.",
     "features": [],
     "specs": [
       {
@@ -16752,18 +16751,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl."
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband SSH021, hergestellt von Canton Hyland.",
     "description": "Das Modell SSH021 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Türband SSH021 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 4\" × 3\" × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16782,11 +16781,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 4” × 3” × 2,5 mm."
   },
   "ssh023-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl 201/304, 3,5” × 3,5” × 3,0 mm / 4” × 3” × 3,0 mm / 4” × 4” × 3,0 mm (Sondermaße lieferbar).",
     "features": [
       "Edelstahl-Federband – automatisch selbstschließend (Federkraft einstellbar)"
     ],
@@ -16827,11 +16826,11 @@
         "label": "Opening Angle",
         "value": "180°"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl 201/304, 3,5” × 3,5” × 3,0 mm / 4” × 3” × 3,0 mm / 4” × 4” × 3,0 mm (Sonderanfertigung möglich)."
   },
   "ssh031-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "summary": "Türband aus Edelstahl, 4” × 3”.",
     "features": [
       "Edelstahlausführung",
       "Aus hochwertigem Edelstahl mit gebürsteter Oberfläche – langlebig und korrosionsbeständig.",
@@ -16887,7 +16886,8 @@
         "label": "OEM",
         "value": "Lieferbar"
       }
-    ]
+    ],
+    "summary": "Türbänder aus Edelstahl, 4” × 3”."
   },
   "stainless-steel-door-hinge": {
     "name": "Edelstahl-Türband",

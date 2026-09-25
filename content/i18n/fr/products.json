@@ -1966,7 +1966,6 @@
   },
   "3431-sset-lever-handle": {
     "name": "Béquille",
-    "summary": "Béquille en acier inoxydable satiné (US32D), fonction entrée.",
     "features": [],
     "specs": [
       {
@@ -2009,7 +2008,8 @@
         "label": "Finish",
         "value": "Acier inoxydable satiné (US32D)"
       }
-    ]
+    ],
+    "summary": "Béquille en acier inoxydable satiné (US32D), fonction entrée."
   },
   "410-glass-door-handle": {
     "name": "Poignée pour porte en verre",
@@ -3701,7 +3701,6 @@
   },
   "587-mbbk-light-duty-cylindrical-lock": {
     "name": "Serrure cylindrique usage léger",
-    "summary": "Serrure cylindrique usage léger, fonction condamnation (WC) ; finitions nickel satiné, chrome, laiton vieilli et laiton poli toutes disponibles.",
     "features": [
       "Caractéristiques techniques",
       "Pêne demi-tour : course de 12 mm (1/2 po), condamnable sur les modèles à clé",
@@ -3768,7 +3767,8 @@
         "label": "Key Types",
         "value": "Laiton nickelé, laiton massif, nickel brossé"
       }
-    ]
+    ],
+    "summary": "Serrure cylindrique usage léger, fonction condamnation (WC), en nickel satiné, chromé, laiton vieilli ou laiton poli, toutes finitions disponibles."
   },
   "587-mbet-light-duty-cylindrical-lock": {
     "name": "Serrure cylindrique usage léger",
@@ -5153,7 +5153,6 @@
   },
   "6-3-3mm-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 201 / 304, 6 × 3 × 3 mm (personnalisables).",
     "features": [
       "1. Large gamme de paumelles adaptée aux besoins des différents marchés.",
       "2. Nombreuses finitions possibles : thermolaquage, peinture, anodisation, aspect bois.",
@@ -5200,7 +5199,8 @@
         "label": "Opening Angle",
         "value": "180 degrés"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 201 / 304, 6*3*3mm, dimensions personnalisables."
   },
   "60-bskt-lock-cylinder": {
     "name": "Cylindre de serrure",
@@ -6382,7 +6382,6 @@
   },
   "70720-pb-grip-handle-set": {
     "name": "Ensemble de poignées de tirage",
-    "summary": "Ensemble de poignées de tirage en laiton poli (US3).",
     "features": [],
     "specs": [
       {
@@ -6429,7 +6428,8 @@
         "label": "Finish",
         "value": "Laiton poli (US3)"
       }
-    ]
+    ],
+    "summary": "Ensemble de poignées de tirage en laiton poli (US3)."
   },
   "70720-sm-grip-handle-set": {
     "name": "Ensemble de poignées de tirage",
@@ -7027,7 +7027,6 @@
   },
   "807-abbk-lever-handle": {
     "name": "Béquille",
-    "summary": "Béquille en laiton vieilli (US5), fonction condamnation (WC).",
     "features": [
       "Pour chambres et pièces privatives",
       "Verrouillage par bouton-poussoir : appuyer pour verrouiller, relâcher pour déverrouiller",
@@ -7079,11 +7078,11 @@
         "label": "Surface Finish Options",
         "value": "AB, AC, PB, SB, SS, SP, SC (par ex. laiton vieilli, laiton poli, nickel satiné, noir mat, etc.)"
       }
-    ]
+    ],
+    "summary": "Béquille en laiton vieilli (US5), fonction condamnation (WC)."
   },
   "808-abet-lever-handle": {
     "name": "Béquille",
-    "summary": "Béquille en laiton vieilli (US5), fonction entrée.",
     "features": [
       "Économique et simple à poser",
       "Conception durable, plus de 200 000 cycles",
@@ -7141,7 +7140,8 @@
         "label": "Application",
         "value": "Usage résidentiel"
       }
-    ]
+    ],
+    "summary": "Béquille en laiton vieilli (US5), fonction entrée."
   },
   "808-mbet-lever-handle": {
     "name": "Béquille",
@@ -7269,7 +7269,6 @@
   },
   "808-snps-lever-handle": {
     "name": "Béquille",
-    "summary": "Béquille, fonction passage ; finitions nickel satiné, chrome, laiton vieilli et laiton poli toutes disponibles.",
     "features": [
       "Économique et simple à poser",
       "Conception durable, plus de 200 000 cycles",
@@ -7327,7 +7326,8 @@
         "label": "Application",
         "value": "Usage résidentiel"
       }
-    ]
+    ],
+    "summary": "Béquille fonction passage, en nickel satiné, chromé, laiton vieilli ou laiton poli, toutes finitions disponibles."
   },
   "80sn-lock-cylinder": {
     "name": "Cylindre de serrure",
@@ -7660,7 +7660,6 @@
   },
   "853-ssbk-lever-handle": {
     "name": "Béquille",
-    "summary": "Béquille en acier inoxydable satiné (US32D), fonction condamnation (WC).",
     "features": [
       "Économique et simple à poser, idéale en résidentiel",
       "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
@@ -7709,7 +7708,8 @@
         "label": "Finish",
         "value": "Acier inoxydable satiné (US32D)"
       }
-    ]
+    ],
+    "summary": "Béquille en acier inoxydable satiné (US32D), fonction condamnation (WC)."
   },
   "8803-snbk-lever-handle": {
     "name": "Béquille",
@@ -8826,10 +8826,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles laiton et acier AAH024, fabrication Canton Hyland.",
     "description": "Le modèle AAH024 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Paumelle de porte AAH024 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
   },
   "ai8530-lock-case": {
     "name": "Coffre de serrure",
@@ -8880,7 +8880,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelle en acier inoxydable (broche démontable). Nous proposons une gamme complète de paumelles de porte en laiton ou en acier inoxydable SUS304.",
     "features": [
       "Présentation",
       "Paumelle en acier inoxydable (broche démontable)"
@@ -8906,11 +8905,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paumelle de porte en laiton, épaisseur de 2.0 à 3.5 mm, ouverture de 90 à 180 degrés, en laiton poli, laiton satiné, laiton vieilli, cuivre vieilli ou chromé ; autres finitions sur demande."
   },
   "b025-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelle en acier inoxydable (broche démontable). Nous proposons une gamme complète de paumelles de porte en laiton ou en acier inoxydable SUS304.",
     "features": [
       "Présentation",
       "Paumelle en acier inoxydable (broche démontable)"
@@ -8940,7 +8939,8 @@
         "label": "Size",
         "value": "Personnalisable à la demande du client"
       }
-    ]
+    ],
+    "summary": "Paumelle de porte en laiton, ouverture de 90 à 180 degrés, en finition laiton vieilli, cuivre vieilli, laiton poli, laiton satiné, acier inoxydable, poli brillant ou chrome satiné ; dimensions fabriquées sur commande."
   },
   "bh01-grab-bar": {
     "name": "Barre d'appui",
@@ -10287,7 +10287,6 @@
   },
   "bl027-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en fer, 3,5 po × 2,28 po × 1,6 mm.",
     "features": [],
     "specs": [
       {
@@ -10302,11 +10301,11 @@
         "label": "Finish",
         "value": "BL (noir)"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en fer, 3.5\"x2.28\"x1.6MM."
   },
   "bl028-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 304/201, 4 po × 3 po × 2,5 mm.",
     "features": [
       "Présentation",
       "Paumelle en acier inoxydable (broche démontable)"
@@ -10328,18 +10327,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 304/201, 4\"x3\"x2.5MM."
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles laiton et acier BL029, fabrication Canton Hyland.",
     "description": "Le modèle BL029 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Paumelle de porte BL029 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 304, dimensions sur mesure possibles.",
     "features": [
       "1. Acier inoxydable 304 de qualité, excellente résistance à la corrosion et longue durée de vie.",
       "2. Paumelle à ressort à fermeture automatique, tension réglable pour ajuster la force de fermeture.",
@@ -10404,11 +10403,11 @@
         "label": "LOGO",
         "value": "Logo personnalisé accepté"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 304, dimensions sur mesure possibles."
   },
   "bl031-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 304.",
     "features": [],
     "specs": [
       {
@@ -10463,7 +10462,8 @@
         "label": "OEM /ODM",
         "value": "Disponible"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 304."
   },
   "black-tubular-lever-lock-set": {
     "name": "Ensemble de béquilles à serrure tubulaire, noir",
@@ -10508,7 +10508,6 @@
   },
   "ch01-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en alliage de zinc / acier inoxydable 304, 34 × 140 × 28 mm / 28 × 118 × 22 mm / 25 × 118 × 18 mm / 19 × 95 × 13 mm / 16 × 70 × 11 mm.",
     "features": [
       "Points clés :",
       "• Compatibles avec de nombreux systèmes de profilés",
@@ -10540,7 +10539,8 @@
         "label": "Application",
         "value": "Liaison de fenêtre"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en alliage de zinc / acier inoxydable 304, 34*140*28mm / 28*118*22mm / 25*118*18mm / 19*95*13mm / 16*70*11mm."
   },
   "cylindrical-knob-lock": {
     "name": "Serrure cylindrique à bouton",
@@ -13313,7 +13313,6 @@
   },
   "hy008-lock-case": {
     "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser pour serrures de type KFC et portes en aluminium à montants étroits.",
     "features": [
       "Coffre de serrure de vitrine de type américain, construction robuste en fer, pour une sécurité commerciale fiable et stable.",
       "Équipé d'un cylindre à mortaiser en laiton de type américain : manœuvre de clé souple, verrouillage fiable.",
@@ -13347,7 +13346,8 @@
         "label": "Included Accessories",
         "value": "Coffre de serrure pour porte aluminium, cylindre type américain / coffre (pêne), serrures et clés."
       }
-    ]
+    ],
+    "summary": "Coffre de serrure à larder pour serrures type KFC et coffres de serrure pour portes aluminium à profil étroit."
   },
   "hyde-ar4-101-mortise-lock": {
     "name": "Coffre de serrure à mortaiser standard",
@@ -13459,7 +13459,6 @@
   },
   "ih01-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en fer, dimensions sur mesure possibles.",
     "features": [
       "Pour portes en bois, portes métalliques, portes coupe-feu, fenêtres et portes de meubles, cette paumelle est très utilisée en résidentiel, commerce, hôtellerie, bureaux, entrepôts et industrie.",
       "Nombreuses tailles et options de personnalisation pour les projets OEM et ODM."
@@ -13509,7 +13508,8 @@
         "label": "Features",
         "value": "Démontable, rotation fluide, pose facile"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en fer, dimensions sur mesure possibles."
   },
   "ju-051-door-closer": {
     "name": "Ferme-porte",
@@ -16460,18 +16460,17 @@
   },
   "ss026-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Acier inoxydable"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable."
   },
   "ss027-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 4,0 po × 3,0 po × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16482,11 +16481,11 @@
         "label": "Size",
         "value": "4,0 po × 3,0 po × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 4.0''x3.0''x2.0mm."
   },
   "ssh011-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 304, 4,0 po × 3,0 po × 2,0 mm.",
     "features": [],
     "specs": [
       {
@@ -16497,11 +16496,11 @@
         "label": "Size",
         "value": "4,0 po × 3,0 po × 2,0 mm"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 304, 4.0''x3.0''x2.0mm."
   },
   "ssh012-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 304.",
     "features": [],
     "specs": [
       {
@@ -16536,11 +16535,11 @@
         "label": "Size5",
         "value": "5 po × 3 po × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 304."
   },
   "ssh013-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable.",
     "features": [],
     "specs": [
       {
@@ -16575,11 +16574,11 @@
         "label": "Size5",
         "value": "5 po × 3 po × 2,5 mm"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable."
   },
   "ssh015-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 2 × 2 × 2.",
     "features": [],
     "specs": [
       {
@@ -16598,7 +16597,8 @@
         "label": "Size",
         "value": "2 × 2 × 2"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 2x2x2."
   },
   "ssh016-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
@@ -16656,7 +16656,6 @@
   },
   "ssh017-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 4 po × 3 po × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16679,11 +16678,11 @@
         "label": "Opening Angle",
         "value": "90°–180°"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 4\"x3\"x2.5MM."
   },
   "ssh018-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16706,11 +16705,11 @@
         "label": "Type",
         "value": "Sans roulement à billes / 2BB à bague lisse (au choix)"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 102x72.5x2.5MM."
   },
   "ssh019-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 102 × 72,5 × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16733,11 +16732,11 @@
         "label": "Type",
         "value": "Bague lisse / sans roulement à billes / 2BB (en option)"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 102x72.5x2.5MM."
   },
   "ssh020-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable.",
     "features": [],
     "specs": [
       {
@@ -16752,18 +16751,18 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable."
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles laiton et acier SSH021, fabrication Canton Hyland.",
     "description": "Le modèle SSH021 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "summary": "Paumelle de porte SSH021 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 4 po × 3 po × 2,5 mm.",
     "features": [],
     "specs": [
       {
@@ -16782,11 +16781,11 @@
         "label": "Opening Angle",
         "value": "90-180°"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 4\"x3\"x2.5MM."
   },
   "ssh023-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable 201/304, 3,5 po × 3,5 po × 3,0 mm / 4 po × 3 po × 3,0 mm / 4 po × 4 po × 3,0 mm (sur mesure possible).",
     "features": [
       "Paumelle à ressort en acier inoxydable : fermeture automatique, tension réglable"
     ],
@@ -16827,11 +16826,11 @@
         "label": "Opening Angle",
         "value": "180°"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable 201/304, 3.5”×3.5”×3.0mm / 4”×3”×3.0mm / 4”×4”×3.0mm (sur mesure possible)."
   },
   "ssh031-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "summary": "Paumelles en acier inoxydable, 4 po × 3 po.",
     "features": [
       "Fabrication en acier inoxydable",
       "Acier inoxydable de qualité à finition brossée, durable et résistant à la corrosion.",
@@ -16887,7 +16886,8 @@
         "label": "OEM",
         "value": "Disponible"
       }
-    ]
+    ],
+    "summary": "Paumelles de porte en acier inoxydable, 4” × 3”."
   },
   "stainless-steel-door-hinge": {
     "name": "Paumelle en acier inoxydable",
