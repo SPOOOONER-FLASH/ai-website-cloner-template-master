@@ -5,3 +5,4 @@
 - **G-X7EMRX2V2X**：它是 GA 后台 Google 代码 GT-PL3V5HF9 的第二个目标，不在网站代码里，会话删不了。步骤写进 CLIENT-RUNBOOK ④，由甲方操作；删除只停止转发，不删历史数据。
 - **测试**：tsc 通过。发布后实测：HTML 有这段代码、load 后 gtm.js 下载、dataLayer 有 gtm.js 事件。
 - **影响雷茵**：AnalyticsHead 只在 HYDE 三个 layout 里用；out-rayen 没有 GTM。
+- **上线实测（069a44f1ae8，/products/care-grab-bars/）**：3714ms window load，同一刻请求 gtm.js（GTM-MQHHPGJL）；`google_tag_manager` 里有该容器；dataLayer 事件依次为 gtm.js、gtag js/config、gtm.dom、gtm.load。G-RBTE7KF82P page_view 1 次；G-X7EMRX2V2X 仍在收，等甲方按手册 ④ 删除。
