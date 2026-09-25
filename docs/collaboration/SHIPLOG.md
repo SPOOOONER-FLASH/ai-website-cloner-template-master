@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 593 次提交
+最近 30 天 · 共 594 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 20:31 | HYDE | Brass Piano Hinge 改名 Piano Hinge，摘要写明铁叶片、黄铜色表面 | `9ee6cd3d91a` |
 | 20:29 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `9ee408f8eaa` |
 | 20:29 | HYDE | 指南：copper hinge 还是 brass hinge，三语 | `14a1ab0ecd3` |
 | 20:24 | 中立 | 站内搜索：黄铜产品加入 copper / cobre / latón / latão 同义词（只进索引，不上页面） | `3dbd0ff3660` |
