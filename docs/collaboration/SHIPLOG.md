@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 581 次提交
+最近 30 天 · 共 582 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 19:28 | 中立 | BH55 葡语标题/描述随 namePt（rebatível）重新生成 | `b11309019dd` |
 | 19:27 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `c2fbd39df66` |
 | 19:27 | HYDE | 卫浴拆分后续：16 个品类计数三语、关怀扶手类目简介、10 条描述、葡语统一 rebatível | `347f227c479` |
 | 19:24 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `7f33d902750` |
