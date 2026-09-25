@@ -19,7 +19,9 @@ GTM（`GTM-MQHHPGJL`）是装载器，不是看板；GA4 和 Clarity 由网站�
 
 **09-24 实测：G-RBTE7KF82P 每次访问只收 1 次 page_view，没有重复计数。** GTM 容器是空的（版本 1）。
 同一个 Google 代码在 GA 后台还挂了第二个目标 **G-X7EMRX2V2X**，每次访问也发给它一份。
-那两次带 `&cx=c` 的 gtag.js 请求就是它引起的，不是重复安装。它是谁加的、要不要留，已写进 CLIENT-RUNBOOK ④ 问甲方。
+那两次带 `&cx=c` 的 gtag.js 请求就是它引起的，不是重复安装。甲方 09-24：重复无用，删掉。
+删除步骤在 CLIENT-RUNBOOK ④（GA 后台操作，会话做不了）。删掉之前的数据里，G-X7EMRX2V2X 是 G-RBTE7KF82P 的副本，不要把两边的数加在一起。
+**GTM 从 09-24 起等页面 load 之后才加载**（甲方同意）。load 之前离开的访客 GTM 看不到；GA4 本来就是 lazyOnload，同样看不到。
 复测方法：用无头 Chrome 打开任意页，等 20 秒，数 `/g/collect` 里 `en=page_view` 的请求，按 `tid` 分组计数。
 
 ## 怎么更新（每周一次，建议周一）

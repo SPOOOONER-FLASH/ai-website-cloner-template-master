@@ -43,7 +43,8 @@
 | 36 | HYDE 发布（#35、三篇横评西葡页），上线后实测 | 09-24 完成（e5d0020d0e6 上线；/es/guides/exit-device-comparison-2026/ 源站 200，Cloudflare 缓存着旧 404，等 purge） |
 | 37 | 改名同时移类的一跳 301（productMerges.toCategory；rename-product-slug --category-path） | 09-24 完成（f68ed6e509d） |
 | 38 | 卫浴 54 条：改 slug + 301、BH15/16/17 移 latches、扶手和淋浴凳移 care-grab-bars、重跑标题、care-grab-bars 类目的 HYDE 封面和三语标题 | 09-24 完成 |
-| 39 | HYDE 发布（#38 + 发布会话的动效令牌、对比度两个提交），上线后实测 | 待做 |
+| 39 | HYDE 发布（#38 + 发布会话的动效令牌、对比度两个提交），上线后实测 | 等待（第二次发布构建进行中，完成后实测） |
 | 40 | GA4 是否双计（发布会话报告）：实测 page_view 只 1 次；第二资源 G-X7EMRX2V2X 来自 GA 后台的代码目标，已写进手册 ④ 问甲方 | 09-24 完成 |
-| 41 | 甲方回复 ④（保留 / 删除 G-X7EMRX2V2X；GTM 是否延后） | 待甲方 |
+| 41 | 甲方回复 ④：G-X7EMRX2V2X 删（手册 ④ 写了后台步骤，甲方操作后实测只剩一个资源）；GTM 改为 load 后加载 | 待甲方（删除）；GTM 见 #42 |
+| 42 | GTM 改为页面 load 后加载（官方代码原样保留在 head，hoist 正则兼容），发布后实测 HTML 有代码、gtm.js 下载、dataLayer 有 gtm.js 事件 | 待做 |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

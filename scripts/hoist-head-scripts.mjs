@@ -31,9 +31,13 @@ import { join } from "node:path";
 const ROOTS = ["out", "out-rayen"];
 const CHECK = process.argv.includes("--check");
 
-/** The rendered GTM stub, whatever container ID it carries. */
+/**
+ * The rendered GTM stub, whatever container ID it carries. Since 2026-09-24 Google's snippet
+ * sits inside a `window.addEventListener('load', …)` wrapper (see AnalyticsHead); the
+ * unwrapped form still matches, so an old export is recognised too.
+ */
 const GTM_RE =
-  /<script>\(function\(w,d,s,l,i\)\{w\[l\]=w\[l\]\|\|\[\];w\[l\]\.push\(\{'gtm\.start'[\s\S]*?\}\)\(window,document,'script','dataLayer','[^']+'\);<\/script>/;
+  /<script>(?:window\.dataLayer=window\.dataLayer\|\|\[\];window\.addEventListener\('load',function\(\)\{)?\(function\(w,d,s,l,i\)\{w\[l\]=w\[l\]\|\|\[\];w\[l\]\.push\(\{'gtm\.start'[\s\S]*?\}\)\(window,document,'script','dataLayer','[^']+'\);(?:\}\);)?<\/script>/;
 
 function* htmlFiles(dir) {
   let entries;

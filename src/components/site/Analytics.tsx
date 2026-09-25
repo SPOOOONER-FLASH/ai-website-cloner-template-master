@@ -2,11 +2,22 @@ import Script from "next/script";
 import { analytics, indexable } from "@/data/site";
 import { EngagementTracker } from "./EngagementTracker";
 
-/** Render in each root layout's real head. Moving this node after export breaks React hydration. */
+/**
+ * Render in each root layout's real head. Moving this node after export breaks React hydration.
+ *
+ * GTM STARTS AFTER window load (client, 2026-09-24: 「GTM 改成页面加载完再装但是一定要装上去」).
+ * gtm.js is ~118 KB and was competing with the hero photograph on phones. Google's own
+ * snippet is kept byte-for-byte inside the wrapper, because the installation checker looks
+ * for that snippet in <head> (see scripts/hoist-head-scripts.mjs for the three times it
+ * failed to find it). `dataLayer` is created immediately, outside the wrapper, so reading
+ * and click events that fire before load queue up and GTM replays them when it arrives;
+ * GTM also fires its DOM-ready and window-loaded triggers at once when it starts late.
+ * The cost, accepted by the client: a visitor who leaves before `load` is not seen by GTM.
+ */
 export function AnalyticsHead() {
   if (!indexable || !analytics.gtmId) return null;
   return <script dangerouslySetInnerHTML={{
-    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${analytics.gtmId}');`,
+    __html: `window.dataLayer=window.dataLayer||[];window.addEventListener('load',function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${analytics.gtmId}');});`,
   }} />;
 }
 
