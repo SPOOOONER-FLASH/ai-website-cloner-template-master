@@ -521,7 +521,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Shower Shelf": "Prateleira para box",
   "Two-Tier Corner Shower Shelf": "Prateleira de canto dupla para box",
   "Corner Shower Shelf": "Prateleira de canto para box",
-  "Fold-Down Shower Seat": "Assento de banho articulado",
+  "Fold-Down Shower Seat": "Assento de banho rebatível",
   "Double Flip-Up Grab Bar": "Barra de apoio rebatível dupla",
   "Grab Bar": "Barra de apoio",
   "Flip-Up Grab Bar": "Barra de apoio rebatível",

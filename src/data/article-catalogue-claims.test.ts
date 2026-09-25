@@ -102,7 +102,8 @@ claim(NEWS("why-the-catalogue-is-this-wide"), () => {
 });
 claim(NEWS("why-the-catalogue-is-this-wide"), () => `${hyde.filter((p) => !(p.specs ?? []).length).length} of those ${hyde.length} entries carry no specification rows at all, and ${hyde.filter((p) => !p.heroImage?.src).length} have no photograph`);
 claim(NEWS("why-the-catalogue-is-this-wide"), () => `knob locks (${inFamily("knob-locks").length} entries), lever handles (${inFamily("lever-handles").length}), hardware accessories such as stops, flush bolts and viewers (${inFamily("hardware-accessories").length}), lock cases (${inFamily("lock-cases").length}), bathroom accessories (${inFamily("bathroom-accessories").length}) and panic exit devices (${inFamily("panic-exit-devices").length})`);
-claim(NEWS("why-the-catalogue-is-this-wide"), () => `sliding hook locks (${inFamily("sliding-hook-locks").length}), door closers (${inFamily("door-closers").length}) and deadbolts (${inFamily("deadbolts").length})`);
+// care-grab-bars joined the small end on 2026-09-24, when the grab bars and shower seat left bathroom-accessories.
+claim(NEWS("why-the-catalogue-is-this-wide"), () => `sliding hook locks (${inFamily("sliding-hook-locks").length}), grab bars and shower seats (${inFamily("care-grab-bars").length}), door closers (${inFamily("door-closers").length}) and deadbolts (${inFamily("deadbolts").length})`);
 
 // brass-piano-hinge-is-a-finish-not-a-metal
 claim(NEWS("brass-piano-hinge-is-a-finish-not-a-metal"), () => {

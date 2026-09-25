@@ -258,7 +258,7 @@
       "seoTitleEs": "Barras de apoyo fijas y abatibles para baños accesibles",
       "seoTitlePt": "Barras de apoio fixas e articuladas para banheiros acessíveis",
       "nameZh": "关怀扶手",
-      "summary": "Grab bars for accessible WCs and bathrooms — flip-up, fixed and L-shaped.",
+      "summary": "Grab bars and a fold-down shower seat for accessible bathrooms: straight, knurled and angled bars fixed to the wall, and bars that flip up out of the way.",
       "nameEs": "Barras de apoyo",
       "image": {
         "src": "/images/products/bh56-flip-up-grab-bar.webp",
@@ -277,24 +277,29 @@
             "label": "Hyland BH56 flip-up grab bar"
           },
           "nameEs": "Barras de apoyo abatibles",
-          "namePt": "Barras de apoio rebatíveis"
+          "namePt": "Barras de apoio rebatíveis",
+          "summaryEs": "Barras de apoyo que se pliegan contra la pared para dejar libre el paso de transferencia.",
+          "summaryPt": "Barras de apoio que se dobram contra a parede para liberar o espaço de transferência."
         },
         {
           "slug": "fixed-grab-bars",
           "name": "Fixed Grab Bars",
           "nameZh": "固定扶手",
-          "summary": "Straight and L-shaped grab bars bolted to the wall.",
+          "summary": "Straight, knurled and angled grab bars fixed to the wall on round roses.",
           "image": {
             "src": "/images/products/bh01-grab-bar-3.webp",
             "ratio": "1 / 1",
             "label": "Hyland BH01 grab bar"
           },
           "nameEs": "Barras de apoyo fijas",
-          "namePt": "Barras de apoio fixas"
+          "namePt": "Barras de apoio fixas",
+          "summaryEs": "Barras de apoyo rectas, moleteadas y en ángulo, fijas a la pared sobre rosetas redondas.",
+          "summaryPt": "Barras de apoio retas, recartilhadas e angulares, fixas na parede sobre canoplas redondas."
         }
       ],
       "namePt": "Barras de apoio",
-      "summaryPt": "Barras de apoio para banheiros acessíveis — articuladas, fixas e em L."
+      "summaryPt": "Barras de apoio e um assento de banho rebatível para banheiros acessíveis: barras retas, recartilhadas e angulares fixas na parede, e barras que se levantam para liberar a passagem.",
+      "summaryEs": "Barras de apoyo y un asiento de ducha abatible para baños accesibles: barras rectas, moleteadas y en ángulo fijas a la pared, y barras que se levantan para dejar paso."
     },
     {
       "slug": "brass-steel-hinges",
