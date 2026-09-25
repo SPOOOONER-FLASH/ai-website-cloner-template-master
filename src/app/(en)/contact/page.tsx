@@ -85,6 +85,13 @@ export default function ContactPage() {
                     guarantees is better than asserting it away at the call site.
                   */
                   .filter((row): row is { label: string; email: string } => Boolean(row.email))
+                  /* One row per mailbox: orders and drawings share tec@ since 2026-09-24. */
+                  .reduce<{ label: string; email: string }[]>((rows, row) => {
+                    const same = rows.find((r) => r.email === row.email);
+                    if (same) same.label = `${same.label}; ${row.label.charAt(0).toLowerCase()}${row.label.slice(1)}`;
+                    else rows.push({ ...row });
+                    return rows;
+                  }, [])
                   .map((row) => (
                     <div
                       key={row.email}

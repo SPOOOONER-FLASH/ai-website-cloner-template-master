@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
  * not ours: Cloudflare's **Email Address Obfuscation** rewrites every `mailto:` in the
  * HTML as it passes through the edge, turning
  *
- *     <a href="mailto:lock@cantonlock.com">lock@cantonlock.com</a>
+ *     <a href="mailto:tec@cantonlock.com">tec@cantonlock.com</a>
  *
  * into
  *
@@ -23,7 +23,7 @@ import { cn } from "@/lib/utils";
  * a 404, which is what Bing reported. The larger problem is that **the address itself
  * disappears from the page** for anything that does not run JavaScript — which includes
  * the answer engines this site spent weeks becoming legible to. The `ContactPoint` in our
- * Organization schema publishes `lock@cantonlock.com` as structured, quotable data, and
+ * Organization schema publishes `tec@cantonlock.com` as structured, quotable data, and
  * the visible page beside it was saying `[email protected]`. Markup and text disagreeing
  * is the exact failure the SEO audit checks for elsewhere.
  *
