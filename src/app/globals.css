@@ -102,12 +102,17 @@
        fast    180ms  links, icons, small hover states
        medium  260ms  cards, menu panels, filters
        slow    560ms  hero crossfades — the only large surface on the site
+       enter   380ms  content arriving in place: configurator steps, spec slots
+                      (was 320 / 380 / 420ms in three places, 2026-09-24)
      Easing: decelerating quint. It leaves the start quickly and lands very softly,
      which is what reads as "smooth" rather than "mechanical". The old
-     cubic-bezier(0.4, 0, 0.2, 1) decelerates far more abruptly at the end. */
+     cubic-bezier(0.4, 0, 0.2, 1) decelerates far more abruptly at the end.
+     Every duration on the site comes from these four; scripts/check-motion-tokens.mjs
+     fails the build on a bare millisecond value or a Tailwind duration-NNN. */
   --motion-fast: 180ms;
   --motion-medium: 260ms;
   --motion-slow: 560ms;
+  --motion-enter: 380ms;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
   /* For things that must feel crisp rather than soft — outlines, underlines. */
   --motion-ease-crisp: cubic-bezier(0.33, 0, 0.2, 1);
@@ -1455,8 +1460,8 @@
     border: 1px solid var(--color-line);
     background: var(--color-surface);
     transition:
-      color 180ms var(--motion-ease-crisp),
-      border-color 180ms var(--motion-ease-crisp);
+      color var(--motion-fast) var(--motion-ease-crisp),
+      border-color var(--motion-fast) var(--motion-ease-crisp);
   }
 
   .config-crumb-current {
@@ -1518,9 +1523,9 @@
     background: var(--color-surface);
     border: 1px solid var(--color-line);
     transition:
-      border-color 180ms var(--motion-ease-crisp),
-      transform 180ms var(--motion-ease-crisp),
-      box-shadow 180ms var(--motion-ease-crisp);
+      border-color var(--motion-fast) var(--motion-ease-crisp),
+      transform var(--motion-fast) var(--motion-ease-crisp),
+      box-shadow var(--motion-fast) var(--motion-ease-crisp);
   }
 
   .config-option:hover,
@@ -1593,7 +1598,7 @@
   }
 
   .config-preview-media {
-    animation: config-fade 420ms var(--motion-ease-crisp) both;
+    animation: config-fade var(--motion-enter) var(--motion-ease-crisp) both;
   }
 
   .config-count {
@@ -1614,8 +1619,8 @@
     text-decoration: none;
     box-shadow: 0.6rem 0.6rem 0 var(--color-shadow-hard);
     transition:
-      transform 180ms var(--motion-ease-crisp),
-      box-shadow 180ms var(--motion-ease-crisp);
+      transform var(--motion-fast) var(--motion-ease-crisp),
+      box-shadow var(--motion-fast) var(--motion-ease-crisp);
   }
 
   .config-cta:hover,
@@ -1625,7 +1630,7 @@
   }
 
   .config-option-in {
-    animation: config-rise 380ms var(--motion-ease-crisp) both;
+    animation: config-rise var(--motion-enter) var(--motion-ease-crisp) both;
   }
 
   @keyframes config-rise {
@@ -1691,8 +1696,8 @@
     color: var(--color-ink-secondary);
     text-decoration: none;
     transition:
-      color 180ms var(--motion-ease-crisp),
-      background-color 180ms var(--motion-ease-crisp);
+      color var(--motion-fast) var(--motion-ease-crisp),
+      background-color var(--motion-fast) var(--motion-ease-crisp);
   }
 
   .finder-mode-item:hover,
@@ -1751,7 +1756,7 @@
   */
   @media (prefers-reduced-motion: no-preference) {
     .spec-slot-resolved {
-      animation: spec-slot-in 320ms var(--motion-ease-crisp) both;
+      animation: spec-slot-in var(--motion-enter) var(--motion-ease-crisp) both;
     }
   }
 
@@ -2003,7 +2008,7 @@
     text-decoration: underline;
     text-decoration-color: var(--color-line);
     text-underline-offset: 0.4rem;
-    transition: text-decoration-color 180ms var(--motion-ease-crisp);
+    transition: text-decoration-color var(--motion-fast) var(--motion-ease-crisp);
   }
 
   .config-rail-value-set:hover,

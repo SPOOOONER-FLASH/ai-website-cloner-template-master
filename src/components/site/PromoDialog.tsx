@@ -208,7 +208,7 @@ function PromoCardBlock({
   const isExternal = /^https?:/i.test(ctaHref);
 
   const ctaClass =
-    "short-marker short-marker-compact text-c1 text-surface transition-opacity duration-200 hover:opacity-80";
+    "short-marker short-marker-compact text-c1 text-surface transition-opacity duration-[var(--motion-fast)] hover:opacity-80";
 
   return (
     <div className="hard-shadow-panel relative bg-surface">
@@ -216,7 +216,7 @@ function PromoCardBlock({
         type="button"
         onClick={() => onDismiss(dismissalKey)}
         aria-label={closeLabel}
-        className="absolute right-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-200 hover:text-ink-secondary"
+        className="absolute right-12 top-12 z-10 flex h-24 w-24 items-center justify-center text-ink transition-colors duration-[var(--motion-fast)] hover:text-ink-secondary"
       >
         <svg viewBox="0 0 24 24" className="h-16 w-16" aria-hidden="true" focusable="false">
           <path
