@@ -17,8 +17,9 @@
  *
  * 译文可以放在两种位置，脚本都认：
  *   a. 记录里的后缀字段：nameFr / summaryFr / specsFr / titleFr / bodyFr（沿用西葡的做法）
- *   b. 旁挂文件：content/i18n/<code>/products/<file>.json、content/i18n/<code>/guides/<file>.json、
- *      content/i18n/<code>/news/<file>.json，字段名不带后缀（name / summary / specs / title / body）
+ *   b. 旁挂文件（多语言会话 2026-09-25 的方案）：content/i18n/<code>/products.json、guides.json、news.json，
+ *      一类一个文件，以记录的 slug 为键，值里字段名不带后缀（name / summary / specs / title / body）。
+ *      也认每条一个文件的写法 content/i18n/<code>/<kind>/<file>.json。
  *
  * 「翻译全对」机器只能查一部分：这里另外报告译文里残留的英文句子数（连续 6 个以上英文单词），
  * 作为警示，不计入及格判定；准确性靠母语审校。
@@ -62,7 +63,21 @@ function field(record, sidecar, base, code) {
   if (nonEmpty(v)) return v;
   return sidecar?.[base];
 }
-const sidecarOf = (kind, code, file) => {
+const bundles = new Map();
+function bundle(kind, code) {
+  const key = kind + "/" + code;
+  if (!bundles.has(key)) {
+    const p = join("content/i18n", code, kind + ".json");
+    let data = null;
+    if (existsSync(p)) { try { data = readJson(p); } catch { data = null; } }
+    bundles.set(key, data);
+  }
+  return bundles.get(key);
+}
+const sidecarOf = (kind, code, file, record) => {
+  const b = bundle(kind, code);
+  const slug = record?.slug ?? file.replace(/\.json$/, "");
+  if (b && b[slug]) return b[slug];
   const p = join("content/i18n", code, kind, file);
   return existsSync(p) ? readJson(p) : null;
 };
@@ -83,7 +98,7 @@ const articles = ["guides", "news"].flatMap((kind) =>
 function productCoverage(code) {
   let ok = 0;
   for (const [f, p] of products) {
-    const s = code === "en" ? null : sidecarOf("products", code, f);
+    const s = code === "en" ? null : sidecarOf("products", code, f, p);
     if (["name", "summary", "specs"].every((k) => nonEmpty(field(p, s, k, code)))) ok += 1;
   }
   return ok / products.length;
@@ -91,7 +106,7 @@ function productCoverage(code) {
 function articleCoverage(code) {
   let ok = 0;
   for (const [kind, f, a] of articles) {
-    const s = code === "en" ? null : sidecarOf(kind, code, f);
+    const s = code === "en" ? null : sidecarOf(kind, code, f, a);
     if (["title", "summary", "body"].every((k) => nonEmpty(field(a, s, k, code)))) ok += 1;
   }
   return ok / articles.length;
@@ -107,8 +122,8 @@ function englishLeftovers(code) {
     else if (v && typeof v === "object") Object.values(v).forEach(scan);
   };
   if (code === "en") return 0;
-  for (const [f, p] of products) scan(field(p, sidecarOf("products", code, f), "summary", code));
-  for (const [kind, f, a] of articles) scan(field(a, sidecarOf(kind, code, f), "body", code));
+  for (const [f, p] of products) scan(field(p, sidecarOf("products", code, f, p), "summary", code));
+  for (const [kind, f, a] of articles) scan(field(a, sidecarOf(kind, code, f, a), "body", code));
   return n;
 }
 
