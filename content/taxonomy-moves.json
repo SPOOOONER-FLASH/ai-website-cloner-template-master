@@ -549,6 +549,12 @@
       "category": "bathroom-accessories",
       "toCategory": "care-grab-bars",
       "why": "2026-09-24 卫浴 54 条逐图命名（docs/copy/naming-bathroom-accessories.md）：Bathroom Accessories → Flip-Up Grab Bar；refiled to care-grab-bars/flip-up-grab-bars (a door bolt/latch, or a care product, not a bathroom accessory)"
+    },
+    {
+      "from": "brass-piano-hinge-brass-and-steel-hinges",
+      "to": "piano-hinge",
+      "category": "brass-steel-hinges",
+      "why": "2026-09-25：规格行写明铁叶片、黄铜色表面，「Brass Piano Hinge」会被读成黄铜材质。工厂没有型号，按 modelTbc 惯例 model=名字、slug=名字。"
     }
   ]
 }

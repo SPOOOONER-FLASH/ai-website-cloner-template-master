@@ -52,6 +52,9 @@ const LEGACY_AID_OVERRIDES = {
      there is no 024 in the catalogue — this one really is discontinued. The category is
      the nearest true page; the generic hub would be a worse answer, not a safer one. */
   1608: "/products/panic-exit-devices/",
+  /* Label "Brass Piano Hinge". Renamed "Piano Hinge" on 2026-09-25: its own spec row says
+     the leaf is iron and brass is only the finish, so the old name read as a brass part. */
+  401: "/products/brass-steel-hinges/piano-hinge/",
 };
 
 /**

@@ -97,7 +97,10 @@ export default function Market${p.name}Page() {
 let changed = 0;
 const emit = (file, content) => {
   const current = existsSync(file) ? readFileSync(file, "utf8") : null;
-  if (current === content) return;
+  // Compare line endings out: a Windows checkout (* text=auto) holds these as CRLF while the
+  // template renders LF, and a byte compare called all 56 files stale (HYDE release, 2026-09-25).
+  const lf = (s) => s.replace(/\r\n/g, "\n");
+  if (current !== null && lf(current) === lf(content)) return;
   changed++;
   if (check) {
     console.error(`✗ stale: ${file}`);

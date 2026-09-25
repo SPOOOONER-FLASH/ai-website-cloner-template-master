@@ -1,6 +1,7 @@
 {
-  "model": "Brass Piano Hinge",
-  "slug": "brass-piano-hinge-brass-and-steel-hinges",
+  "model": "Piano Hinge",
+  "modelTbc": true,
+  "slug": "piano-hinge",
   "name": "Piano Hinge",
   "series": "Brass and Steel Hinges",
   "categoryPath": [
@@ -33,15 +34,15 @@
   "doorTypes": [],
   "certifications": [],
   "heroImage": {
-    "src": "/images/products/brass-piano-hinge-brass-and-steel-hinges.webp",
+    "src": "/images/products/piano-hinge.webp",
     "ratio": "1 / 1",
-    "label": "Hyland Brass Piano Hinge Brass and Steel Hinges"
+    "label": "Hyland Piano Hinge Brass and Steel Hinges"
   },
   "gallery": [],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "Brass Piano Hinge Iron Door Hinge for Timber & Metal Doors | Canton Hyland",
-  "seoDescription": "Brass Piano Hinge iron door hinge for timber & metal doors. Factory direct, samples and quotation on request.",
+  "seoTitle": "Piano Hinge for Timber & Metal Doors, Iron | Canton Hyland",
+  "seoDescription": "Piano Hinge for timber & metal doors. Iron. Factory direct, samples and quotation on request.",
   "nameEs": "Bisagra de piano",
   "specsEs": [
     {
@@ -62,8 +63,8 @@
     }
   ],
   "summaryEs": "Bisagra continua de piano con pletina de hierro, de 1\" a 3\" de ancho, en acabado negro mate o latón pulido. El latón es el color del acabado, no el metal.",
-  "seoTitleEs": "Brass Piano Hinge Bisagra de hierro para puertas de madera | Canton Hyland",
-  "seoDescriptionEs": "Brass Piano Hinge bisagra de hierro para puertas de madera y metálicas. Directo de fábrica, muestras y cotización a pedido.",
+  "seoTitleEs": "Bisagra de piano para puertas de madera y metálicas, Hierro | Canton Hyland",
+  "seoDescriptionEs": "Bisagra de piano para puertas de madera y metálicas. Hierro. Directo de fábrica, muestras y cotización a pedido.",
   "description": "",
   "namePt": "Dobradiça piano",
   "summaryPt": "Dobradiça piano contínua com folha de ferro, de 1\" a 3\" de largura, em acabamento preto fosco ou latão polido. O latão é a cor do acabamento, não o metal.",
@@ -85,6 +86,6 @@
       "value": "Acabamento preto fosco ou latão polido sobre a asa de ferro"
     }
   ],
-  "seoTitlePt": "Brass Piano Hinge Dobradiça de ferro para portas de madeira | Canton Hyland",
-  "seoDescriptionPt": "Brass Piano Hinge dobradiça de ferro para portas de madeira e metálicas. Direto da fábrica, amostras e orçamento sob consulta."
+  "seoTitlePt": "Dobradiça piano para portas de madeira e metálicas, Ferro | Canton Hyland",
+  "seoDescriptionPt": "Dobradiça piano para portas de madeira e metálicas. Ferro. Direto da fábrica, amostras e orçamento sob consulta."
 }
