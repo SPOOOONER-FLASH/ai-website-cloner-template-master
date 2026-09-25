@@ -48,5 +48,5 @@
 | 41 | 甲方回复 ④：G-X7EMRX2V2X 删（手册 ④ 写了后台步骤，甲方操作后实测只剩一个资源）；GTM 改为 load 后加载 | 待甲方（删除）；GTM 见 #42 |
 | 42 | GTM 改为页面 load 后加载（官方代码原样保留在 head，hoist 正则兼容），发布后实测 HTML 有代码、gtm.js 下载、dataLayer 有 gtm.js 事件 | 09-24 完成（069a44f1ae8 上线；无头 Chrome 实测：gtm.js 在 window load 同一刻请求，GTM-MQHHPGJL 生效，dataLayer 有 gtm.js / gtm.dom / gtm.load；G-RBTE7KF82P page_view 1 次） |
 | 43 | 甲方要 copper hinge 搜索导到黄铜合页：材质字段为 Brass 的合页（B024、B025）描述加三语「买家常叫 copper hinge」，不写纯铜；「fix the door」不再当功能进描述（7 条） | 09-25 完成 |
-| 44 | HYDE 发布（#43 + 发布会话 b795cc38ac9 邮箱统一 tec@、6fd3c2025d7 首页对齐），上线后实测 | 待做 |
+| 44 | HYDE 发布（#43 + 发布会话 b795cc38ac9 邮箱统一 tec@、6fd3c2025d7 首页对齐），上线后实测 | 09-25 完成（77895fcdd16 上线；piano-hinge、铜合页指南 EN/ES、B024 描述、tec@ 实测正确） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

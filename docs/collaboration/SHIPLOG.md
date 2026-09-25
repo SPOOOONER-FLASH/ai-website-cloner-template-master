@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 598 次提交
+最近 30 天 · 共 599 次提交
 
 ## 2026-09-24
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 21:13 | 中立 | NOW.md：七语种市场页已发布，HYDE 发布棒交还 | `7f408d4f54b` |
+| 20:45 | 中立 | 目标清单：#44 发布上线实测完成 | `ff2c6cbe011` |
+| 20:42 | 发布 HYDE | 发布（HYDE（cantonlock.com））：构建 fa0613a1fcd | `77895fcdd16` |
 | 20:37 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `fa0613a1fcd` |
 | 20:36 | HYDE | Piano Hinge：model/slug 按 modelTbc 惯例改名（旧网址 301、aid 401 跟过来）；铜合页指南 SEO 定稿；市场路由检查不再因 CRLF 误报 | `8f32fe1a232` |
 | 20:32 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `5fec0703286` |
