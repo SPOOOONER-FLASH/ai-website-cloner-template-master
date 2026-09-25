@@ -246,5 +246,18 @@
     ],
     "angle": 0,
     "tone": "warm"
+  },
+  "custom-door-hardware-tooling-2026": {
+    "src": "/images/products-hyde/311-panic-exit-device.webp",
+    "width": 1000,
+    "height": 1000,
+    "crop": [
+      50,
+      230,
+      860,
+      565
+    ],
+    "angle": 0,
+    "tone": "cool"
   }
 }
