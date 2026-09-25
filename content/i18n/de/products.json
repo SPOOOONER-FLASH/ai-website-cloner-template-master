@@ -551,15 +551,6 @@
   },
   "072-panic-exit-device-lock-case": {
     "name": "Schlosskasten für Panikverschlüsse",
-    "summary": "• Passend für Einsteckschlosskästen",
-    "features": [
-      "Beschreibung:",
-      "• Passend für Einsteckschlosskästen",
-      "• Eisenstange: 9 × 9 × 130 mm",
-      "• Dornmaß: 65 mm",
-      "• Entfernung: 72 mm",
-      "• Farbe: Lackierung optional"
-    ],
     "specs": [
       {
         "label": "Type",
@@ -601,6 +592,14 @@
         "label": "Used with",
         "value": "Panikverschluss 307"
       }
+    ],
+    "summary": "Schlosskasten aus Eisen für den Panikverschluss 307: Dornmaß 65 mm, Entfernung 72 mm, Vierkantstift 9 × 9 × 130 mm und zwei Profilzylinderlochungen.",
+    "features": [
+      "Passend für Einsteckschlosskästen",
+      "Vierkantstift aus Eisen: 9 × 9 × 130 mm",
+      "Dornmaß: 65 mm",
+      "Entfernung: 72 mm",
+      "Farbe: Lackierung optional"
     ]
   },
   "100-glass-door-handle": {
@@ -1151,16 +1150,6 @@
   },
   "260-night-latch-and-rim-lock": {
     "name": "Nachtriegel und Aufschraubschloss",
-    "summary": "Einfachzylinder: Betätigung per Schlüssel und Innenknauf; mit Aufsperrschutz-Schieber.",
-    "features": [
-      "Schließblech:",
-      "Standardmäßig Winkelschließblech für nach innen öffnende Türen",
-      "Flaches Schließblech für nach außen öffnende Türen optional (nicht empfohlen)",
-      "Funktionen:",
-      "Einfachzylinder: Betätigung per Schlüssel und Innenknauf; mit Aufsperrschutz-Schieber",
-      "Doppelzylinder: Betätigung per Schlüssel von innen und außen",
-      "Sicherheit: Hochsichere Bauweise mit Einbruchschutz"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1202,6 +1191,14 @@
         "label": "Backset",
         "value": "60 mm (2-3/8”)"
       }
+    ],
+    "summary": "Nachtriegel- und Aufschraubschloss aus Eisen für Türstärken von 35 bis 55 mm, mit Einzel- oder Doppelzylinder, 13-mm-Falle, innenliegendem Verriegelungsknopf und Schiebesperre gegen Manipulation.",
+    "features": [
+      "Schließblech mit Anlaufschräge serienmäßig für nach innen öffnende Türen",
+      "Optional flaches Schließblech für nach außen öffnende Türen (nicht empfohlen)",
+      "Einzelzylinder: Bedienung per Schlüssel und Innenknauf; mit Schiebesperre gegen Manipulation",
+      "Doppelzylinder: Bedienung per Schlüssel von innen und außen",
+      "Sicherheit: hochsichere Ausführung mit Einbruchschutz"
     ]
   },
   "300-panic-exit-device": {
@@ -1311,16 +1308,6 @@
   },
   "303-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus Stahl oder Edelstahl für Maschinen der Bauindustrie.",
-    "features": [
-      "Einpunktverriegelung",
-      "Sicherheits-Schließmechanismus",
-      "Aufliegende Bauweise",
-      "Durchgehende Druckstange",
-      "Länge nach Türbreite einstellbar",
-      "In mehreren Farben lieferbar",
-      "Feuerwiderstand von 90 Minuten geprüft"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1342,6 +1329,15 @@
         "label": "Application",
         "value": "Baumaschinen"
       }
+    ],
+    "summary": "Panikverschluss aus Stahl oder Edelstahl mit 900 mm langer Druckstange, in Nickel matt, verchromt, Messing antik oder Messing poliert.",
+    "features": [
+      "Einpunktverriegelung",
+      "Sicherheits-Schließmechanismus",
+      "Aufliegende Ausführung",
+      "Druckstange über die volle Türbreite",
+      "Länge an die Türbreite anpassbar",
+      "Mehrere Farben lieferbar"
     ]
   },
   "305-fire-door-panic-exit-device": {
@@ -1457,9 +1453,9 @@
   "308-d-d-panic-exit-device": {
     "name": "D-Panikverschluss",
     "summary": "D-Panikverschluss.",
-    "description": "Das Modell 308-D ist ein D-Panikverschluss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Das Modell 308-D ist ein Panikverschluss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "308-panic-exit-device": {
     "name": "Panikverschluss",
@@ -1484,9 +1480,9 @@
   "308-s-s-panic-exit-device": {
     "name": "S-Panikverschluss",
     "summary": "S-Panikverschluss.",
-    "description": "Das Modell 308-S ist ein S-Panikverschluss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Das Modell 308-S ist ein Panikverschluss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "309-d-double-door-panic-exit-device": {
     "name": "Panikverschluss für zweiflügelige Türen",
@@ -1625,29 +1621,6 @@
   },
   "313-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "• Für Stangenverriegelung oben und unten an zweiflügeligen Türanlagen",
-    "features": [
-      "Grunddaten",
-      "• Entfernung wahlweise 72 mm / 92 mm",
-      "• Vierkant 9 mm",
-      "• Nach EN1125 zertifiziert, Dauerprüfung > 300.000 Zyklen",
-      "• Für ein- und zweiflügelige Türen",
-      "• Umstellbar für DIN links/rechts, keine Anschlagrichtung erforderlich",
-      "Technische Daten",
-      "• Max. Türgewicht: ≥ 200 kg",
-      "• Max. Türhöhe: 2520 mm",
-      "• Max. Türbreite: 1500 mm",
-      "• Betriebstemperatur: −10 °C bis +60 °C",
-      "• Montage an DIN-linken und DIN-rechten Türen",
-      "Hauptmerkmale",
-      "• Ein Druck genügt – schnelle Evakuierung",
-      "• Robuste, hoch belastbare Konstruktion für dauerhafte Zuverlässigkeit",
-      "• Einfache Montage, breite Kompatibilität",
-      "• Für Stangenverriegelung oben und unten an zweiflügeligen Türanlagen",
-      "Für Notausgangstüren, Feuerschutztüren und Rauchschutztüren",
-      "Empfohlen für stark frequentierte öffentliche Bereiche:",
-      "Einkaufszentren / Krankenhäuser / Schulen / Kinos / Stadien / Bürogebäude / Messezentren / Flughäfen / U-Bahn- und Verkehrsknotenpunkte"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1669,6 +1642,25 @@
         "label": "Color Options",
         "value": "Verschiedene Farben lieferbar (anpassbar)"
       }
+    ],
+    "summary": "Panikverschluss mit Druckstange, Gehäuse aus Eisen und ABS und Druckstange aus Aluminium, für einflügelige Türen und – mit Treibriegeln oben und unten – für zweiflügelige Türen.",
+    "features": [
+      "Entfernung wahlweise 72 mm / 92 mm",
+      "Vierkant 9 mm.",
+      "Für ein- und zweiflügelige Türen geeignet",
+      "Umstellbar für DIN links/rechts, keine feste Einbaurichtung",
+      "Max. Türgewicht: ≥ 200 kg",
+      "Max. Türhöhe: 2520 mm",
+      "Max. Türbreite: 1500 mm",
+      "Betriebstemperatur: -10 °C bis +60 °C",
+      "Einbau an DIN-links- und DIN-rechts-Türen möglich",
+      "Öffnen mit einem Druck – schnelle Evakuierung",
+      "Robuste, hoch belastbare Konstruktion für dauerhafte Zuverlässigkeit",
+      "Einfache Montage mit breiter Kompatibilität",
+      "Kopplung mit Treibriegeln oben und unten für zweiflügelige Türen",
+      "Geeignet für Notausgangstüren, Feuerschutztüren und Rauchschutztüren",
+      "Empfohlen für stark frequentierte öffentliche Bereiche:",
+      "Einkaufszentren / Krankenhäuser / Schulen / Kinos / Stadien / Bürogebäude / Messezentren / Flughäfen / U-Bahn und Verkehrsknotenpunkte"
     ]
   },
   "314-alarm-panic-bar-exit-device": {
@@ -5962,12 +5954,6 @@
   "6491abet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Messing antik (US5), Dornmaß 60/70 mm, Eingangsfunktion.",
-    "features": [
-      "Wirtschaftliche, einfach zu montierende Schlossgarnitur – ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Chassis und Fallengehäuse aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6009,6 +5995,12 @@
         "label": "Finish",
         "value": "Messing antik (US5)"
       }
+    ],
+    "features": [
+      "Preiswerte, einfach zu montierende Drückergarnitur, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Chassis und Fallengehäuse aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in geschmiedetem Edelstahl oder Messing lieferbar"
     ]
   },
   "65-snkt-lock-cylinder": {
@@ -6532,22 +6524,6 @@
   "70750-pb-grip-handle-set": {
     "name": "Stoßgriffgarnitur",
     "summary": "Stoßgriffgarnitur aus Zinklegierung in Messing poliert (PB); Dornmaß von Falle und Riegel jeweils verstellbar 60 mm / 70 mm.",
-    "features": [
-      "Hauptmerkmale:",
-      "Hochwertige Ausführung: robuste Zinklegierung in Messing poliert; Außenteile aus geschmiedetem Messing oder galvanisiertem Zinkdruckguss.",
-      "Erhöhte Sicherheit:",
-      "– 1” (25 mm) stahlverstärkter Riegel",
-      "– 1/2” (13 mm) Fallenausschluss",
-      "– Drehbarer Zylinderring gegen Abdrehen",
-      "– Keine außenliegenden Befestigungen",
-      "Einfache Montage:",
-      "– Passend für Standard-Querbohrung 2” (51 mm)",
-      "– Dornmaß einstellbar: 2-3/8” oder 2-3/4” (60 mm oder 70 mm)",
-      "– Umstellbar für DIN-linke oder DIN-rechte Türen",
-      "– Für Türstärken von 1-3/8” bis 1-3/4” (35–45 mm)",
-      "Beschreibung:",
-      "Stoßgriffgarnitur in Messing poliert, die Eingangstüren elegant und funktional aufwertet. Kompatibel mit Standard-Türvorrichtungen – ideal für Austausch und Neumontage."
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6593,6 +6569,18 @@
         "label": "Feature",
         "value": "Keine außenliegenden Befestigungen; frei drehender Zylinderring gegen Abdrehen"
       }
+    ],
+    "features": [
+      "Hochwertige Ausführung: robuste Zinklegierung mit Oberfläche Messing poliert; Außenteile aus geschmiedetem Messing oder galvanisiertem Zinkdruckguss.",
+      "1” (25 mm) Riegel mit Stahlverstärkung",
+      "1/2” (13 mm) Fallenvorsprung",
+      "Drehbarer Zylinderring gegen Abdrehen",
+      "Keine sichtbaren Befestigungen außen",
+      "Passend für Standard-Querbohrung 2” (51 mm)",
+      "Verstellbares Dornmaß: 2-3/8” oder 2-3/4” (60 mm oder 70 mm)",
+      "Umstellbar für DIN-links- oder DIN-rechts-Türen",
+      "Für Türstärken von 1-3/8” bis 1-3/4” (35–45 mm)",
+      "Stoßgriffgarnitur in Messing poliert, die Eingangstüren elegant und funktional aufwertet. Passend für Standard-Türvorbereitungen, ideal für Austausch und Neumontage."
     ]
   },
   "70780-ab-grip-handle-set": {
@@ -7405,13 +7393,6 @@
   "816-pbet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Messing poliert (US3), Dornmaß 60/70 mm, Eingangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Ver- und Entriegeln per Schlüssel oder Drehknauf",
-      "Beide Knäufe werden gemeinsam verriegelt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7453,18 +7434,18 @@
         "label": "Finish",
         "value": "Messing poliert (US3)"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Verriegeln/Entriegeln per Schlüssel oder Drehknauf",
+      "Synchrone Verriegelung beider Drücker",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "816-snet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, Eingangsfunktion.",
-    "features": [
-      "Wirtschaftliche, einfach zu montierende Schlossgarnitur für den Wohnbereich",
-      "Schlüssel oder Drehknauf betätigen beide Knäufe",
-      "Innerer Drehknauf oder Schlüssel ver- und entriegeln gleichzeitig",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7506,6 +7487,13 @@
         "label": "Finish",
         "value": "Nickel matt"
       }
+    ],
+    "features": [
+      "Preiswerte, einfach zu montierende Drückergarnitur für den Wohnbereich",
+      "Schlüssel oder Drehknauf betätigt beide Drücker",
+      "Drehknauf innen oder Schlüssel verriegelt/entriegelt beide Seiten gleichzeitig",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "819-pbet-lever-handle": {
@@ -7608,13 +7596,6 @@
   "853-snbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, WC-Funktion.",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7656,17 +7637,17 @@
         "label": "Finish",
         "value": "Nickel matt"
       }
+    ],
+    "features": [
+      "Kostengünstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "853-ssbk-lever-handle": {
     "name": "Drücker",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7709,7 +7690,14 @@
         "value": "Edelstahl matt (US32D)"
       }
     ],
-    "summary": "Drücker aus Zinklegierung mit Oberfläche Edelstahl matt (US32D), WC-Funktion."
+    "summary": "Drücker aus Zinklegierung mit Oberfläche Edelstahl matt (US32D), WC-Funktion.",
+    "features": [
+      "Kostengünstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
+    ]
   },
   "8803-snbk-lever-handle": {
     "name": "Drücker",
@@ -7761,13 +7749,6 @@
   "8826-snbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, WC-Funktion.",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Beide Knäufe per Schlüssel oder Drehknauf ver- und entriegeln",
-      "Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn verriegelt die Knäufe; umgekehrt wird entriegelt",
-      "Chassis und Falle aus verzinktem Stahl für besseren Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7809,18 +7790,18 @@
         "label": "Finish",
         "value": "Nickel matt"
       }
+    ],
+    "features": [
+      "Kostengünstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Verriegelt/entriegelt beide Drücker per Schlüssel oder Drehknauf",
+      "Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn verriegelt die Drücker; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl für erhöhte Korrosionsbeständigkeit",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "8826-snet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, Eingangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7862,6 +7843,13 @@
         "label": "Finish",
         "value": "Nickel matt"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "8827-sset-lever-handle": {
@@ -8276,14 +8264,14 @@
   },
   "9007-stainless-steel-handle": {
     "name": "Edelstahl-Drücker",
-    "summary": "Edelstahl-Drücker aus Edelstahl.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Edelstahl"
       }
-    ]
+    ],
+    "summary": "Türdrücker aus Edelstahl."
   },
   "9007e-stainless-steel-handle": {
     "name": "Edelstahl-Drücker",
@@ -8731,7 +8719,6 @@
   "9088-ss-stainless-steel-handle": {
     "name": "Edelstahl-Drücker",
     "summary": "Edelstahl-Drückergarnitur auf Langschildern 200 × 50 mm aus SUS 304, mit Einsteckschlosskasten (Entfernung 58 mm, Dornmaß 45 mm), Profilzylinder mit Schlüssel außen und Knauf innen sowie einer Rückholfeder hinter jedem Schild. Lieferung als Komplettset.",
-    "description": "Die 9088 SS ist eine Edelstahl-Drückergarnitur auf Langschildern von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Langschilder messen 200 × 50 mm, bestehen aus Edelstahl SUS 304, sind 1 mm stark und haben einen Lochabstand von 170 mm. Zum Set gehören ein Einsteckschlosskasten mit 175-mm-Stulp, 45 mm Dornmaß und 58 mm Entfernung zwischen Drücker und Zylinder, eine Falle und ein Vierkantriegel sowie ein Profilzylinder aus Zinklegierung mit Schlüssel außen und Knauf innen. Alle Maße auf dieser Seite stammen aus den bemaßten Werksfotos. Türstärkenbereich und Drückerausladung sind noch nicht veröffentlicht – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
     "specs": [
       {
@@ -8794,7 +8781,8 @@
         "label": "Supplied with",
         "value": "Paar Drückerschilder, Einsteckschlosskasten, Profilzylinder mit Schlüsseln, Vierkantstift, Schließblech, Befestigungsschrauben und Kleinteile"
       }
-    ]
+    ],
+    "description": "Das Modell 9088 SS ist eine Edelstahl-Drückergarnitur auf Langschild von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Schilder messen 200 × 50 mm, bestehen aus 1 mm starkem Edelstahl SUS 304 und haben einen Lochabstand von 170 mm. Zur Garnitur gehören ein Einsteckschloss mit 175 mm Stulp, 45 mm Dornmaß und 58 mm Entfernung zwischen Drücker und Zylinder, mit Falle und Vierkantriegel, sowie ein Profilzylinder aus Zinklegierung mit Schlüssel außen und Drehknauf innen. Alle Maße auf dieser Seite sind den bemaßten Fotos des Werks entnommen. Türstärkenbereich und Drückerausladung sind noch nicht veröffentlicht – fragen Sie unser Exportteam nach den gemessenen Werten statt einer Schätzung."
   },
   "9210-pbbk-tubular-lock": {
     "name": "Tubular-Schloss",
@@ -8826,10 +8814,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "description": "Das Modell AAH024 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
     "specs": [],
-    "summary": "Türband AAH024 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
+    "summary": "Türband AAH024 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt.",
+    "description": "Das Modell AAH024 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "ai8530-lock-case": {
     "name": "Schlosskasten",
@@ -8880,10 +8868,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "features": [
-      "Beschreibung",
-      "Edelstahl-Türband mit losem Stift"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8906,14 +8890,15 @@
         "value": "90-180°"
       }
     ],
-    "summary": "Türband aus Messing, 2,0 bis 3,5 mm stark, Öffnungswinkel 90 bis 180 Grad, in Messing poliert, Messing matt, Messing antik, Kupfer antik oder verchromt; weitere Oberflächen auf Bestellung."
+    "summary": "Türband aus Messing, 2,0 bis 3,5 mm stark, Öffnungswinkel 90 bis 180 Grad, in Messing poliert, Messing matt, Messing antik, Kupfer antik oder verchromt; weitere Oberflächen auf Bestellung.",
+    "features": [
+      "Bandlappen aus Messing, 2,0 bis 3,5 mm stark",
+      "Öffnungswinkel 90 bis 180 Grad",
+      "Messing poliert, Messing matt, Messing antik, Kupfer antik oder verchromt; weitere Oberflächen auf Bestellung"
+    ]
   },
   "b025-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "features": [
-      "Beschreibung",
-      "Edelstahl-Türband mit losem Stift"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8940,7 +8925,12 @@
         "value": "Anpassung nach Kundenwunsch"
       }
     ],
-    "summary": "Türband aus Messing, Öffnungswinkel 90 bis 180 Grad, in den Oberflächen Messing antik, Kupfer antik, Messing poliert, Messing matt, Edelstahl, hochglanzpoliert oder Chrom matt; Größe nach Kundenwunsch."
+    "summary": "Türband aus Messing, Öffnungswinkel 90 bis 180 Grad, in den Oberflächen Messing antik, Kupfer antik, Messing poliert, Messing matt, Edelstahl, hochglanzpoliert oder Chrom matt; Größe nach Kundenwunsch.",
+    "features": [
+      "Bandlappen aus Messing, Größe nach Bestellung",
+      "Öffnungswinkel 90 bis 180 Grad",
+      "Messing antik, Kupfer antik, Messing poliert, Messing matt, Edelstahl, hochglanzpoliert oder Chrom matt"
+    ]
   },
   "bh01-grab-bar": {
     "name": "Haltegriff",
@@ -10332,10 +10322,10 @@
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "description": "Das Modell BL029 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
     "specs": [],
-    "summary": "Türband BL029 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
+    "summary": "Türband BL029 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt.",
+    "description": "Das Modell BL029 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
@@ -10584,9 +10574,9 @@
   "d01-ab-deadbolts": {
     "name": "Riegelschlösser",
     "summary": "Riegelschloss D01 AB, hergestellt von Canton Hyland.",
-    "description": "Das Modell D01 AB ist ein Riegelschloss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Das Modell D01 AB ist ein Riegelschloss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "d101-ab-deadbolts": {
     "name": "Riegelschlösser",
@@ -11200,13 +11190,12 @@
   "d103-ac-deadbolts": {
     "name": "Riegelschlösser",
     "summary": "Riegelschloss D103 AC, hergestellt von Canton Hyland.",
-    "description": "Das Modell D103 AC ist ein Riegelschloss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Das Modell D103 AC ist ein Riegelschloss von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "dc01-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Panikverschluss aus verzinktem Eisen.",
     "features": [
       "Stabile Eisenkonstruktion mit verzinkter Oberfläche – sehr korrosionsbeständig und langlebig. Für den Dauereinsatz in Gewerbe und Industrie geeignet."
     ],
@@ -11227,7 +11216,8 @@
         "label": "Installation",
         "value": "Aufgeschraubt, verschraubt"
       }
-    ]
+    ],
+    "summary": "Schließfolgeregler aus verzinktem Eisen für zweiflügelige Feuerschutztüren, aufliegend montiert und verschraubt; regelt Schließgeschwindigkeit und Schließkraft."
   },
   "dc02-door-coordinator": {
     "name": "Schließfolgeregler",
@@ -11360,7 +11350,6 @@
   },
   "ds011-door-stopper": {
     "name": "Türstopper",
-    "summary": "Kantenriegel aus Messing.",
     "features": [],
     "specs": [
       {
@@ -11371,7 +11360,8 @@
         "label": "Finish",
         "value": "BP, Messing antik (AB), Kupfer antik (AC), vernickelt (NP), NB, CB, verchromt (CP), Nickel matt (SN), BC"
       }
-    ]
+    ],
+    "summary": "Türstopper aus Messing, in Oberflächen wie Messing antik, Kupfer antik, verchromt und Nickel matt."
   },
   "ds013-door-stopper": {
     "name": "Türstopper",
@@ -11424,7 +11414,6 @@
   },
   "ds05-door-stopper": {
     "name": "Türstopper",
-    "summary": "Türstopper aus Edelstahl, Ø 44 × 24 mm.",
     "features": [],
     "specs": [
       {
@@ -11439,7 +11428,8 @@
         "label": "Finish",
         "value": "Edelstahl (SS), BC, verchromt (CP), GP, CB, Messing antik (AB), Kupfer antik (AC)"
       }
-    ]
+    ],
+    "summary": "Türstopper aus Edelstahl, Ø 44 × 24 mm."
   },
   "ds09-door-stopper": {
     "name": "Türstopper",
@@ -11466,7 +11456,6 @@
   },
   "dsl02-panic-exit-device": {
     "name": "Panikverschluss",
-    "summary": "Präzisionsfedermechanik und Spannschraube erlauben eine fein einstellbare Schließkraft; die Nylonrolle mindert den Verschleiß und sorgt für eine lange Lebensdauer.",
     "features": [
       "Dieser Schließfolgeregler ist für zweiflügelige Feuerschutz- und Objekttüren ausgelegt.",
       "Aus robustem Edelstahl 304 gefertigt, regelt er die Schließfolge automatisch – leichtgängig, stabil und leise.",
@@ -11498,7 +11487,8 @@
         "label": "Roller Material",
         "value": "Nylon (Polyamid)"
       }
-    ]
+    ],
+    "summary": "Schließfolgeregler aus Edelstahl 304 für zweiflügelige Türen, mit einstellbarer Schließkraft und Nylonrollen."
   },
   "dust-proof-01-door-viewer": {
     "name": "Türspion",
@@ -11547,10 +11537,6 @@
   },
   "dv05-bl-door-viewer": {
     "name": "Türspion",
-    "summary": "Türspion aus Messing in CP, PB, SC, SN, AB, AC oder ORB – für die Überwachung des Außenbereichs.",
-    "features": [
-      "Beschreibung:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11564,14 +11550,12 @@
         "label": "Function",
         "value": "Außenüberwachung"
       }
-    ]
+    ],
+    "summary": "Türspion aus Messing, verchromt, Messing poliert, Chrom matt, Nickel matt, Messing antik, Kupfer antik oder Bronze geölt.",
+    "features": []
   },
   "dv05-door-viewer": {
     "name": "Türspion",
-    "summary": "Türspion aus Messing in CP, PB, SC, SN, AB, AC oder ORB – für die Überwachung des Außenbereichs.",
-    "features": [
-      "Beschreibung:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11601,14 +11585,12 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Türspion aus Messing, verchromt, Messing poliert, Chrom matt, Nickel matt, Messing antik, Kupfer antik oder Bronze geölt.",
+    "features": []
   },
   "dv06-door-viewer": {
     "name": "Türspion",
-    "summary": "Türspion aus Messing in CP, PB, SC, SN, AB, AC oder ORB – für die Überwachung des Außenbereichs.",
-    "features": [
-      "Beschreibung:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11638,7 +11620,9 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Türspion aus Messing, verchromt, Messing poliert, Chrom matt, Nickel matt, Messing antik, Kupfer antik oder Bronze geölt.",
+    "features": []
   },
   "dv07-door-viewer": {
     "name": "Türspion",
@@ -12371,7 +12355,6 @@
   },
   "f100-ss-door-hinge": {
     "name": "Türband",
-    "summary": "Funktion: Öffnungs- und Schließgeschwindigkeit sowie Federkraft einstellbar.",
     "features": [
       "Einsatz: für Küchen-, Flur- und Wohnungstüren.",
       "Funktion: Öffnungs- und Schließgeschwindigkeit sowie Federkraft einstellbar. Schwenkbereich 116° in beide Richtungen mit Feststellung bei 0°, 88° und 116°."
@@ -12405,7 +12388,8 @@
         "label": "Closing Force",
         "value": "25 N·m"
       }
-    ]
+    ],
+    "summary": "Pendeltürband aus Eisen mit einstellbarer Geschwindigkeit und Federspannung, Öffnungswinkel 116° in beide Richtungen, Rastpunkte bei 0°, 88° und 116°, für Holztüren bis 80 kg."
   },
   "f101-glass-door-patch-fittings": {
     "name": "Glastür-Klemmbeschläge",
@@ -13071,7 +13055,6 @@
   },
   "hy-0ss-lock-case": {
     "name": "Schlosskasten",
-    "summary": "Fallenschutz aus Edelstahl mit matter Oberfläche – stabil, korrosionsbeständig und langlebig.",
     "features": [
       "Fallenschutz aus Edelstahl mit matter Oberfläche – stabil, korrosionsbeständig und langlebig",
       "Aufhebelschutz-Platte: verstärkt den Fallenbereich gegen gewaltsames Eindringen und erhöht die Türsicherheit",
@@ -13119,7 +13102,8 @@
         "label": "Design",
         "value": "Vollständige Fallenabdeckung"
       }
-    ]
+    ],
+    "summary": "Fallenschutz aus Edelstahl 304 für nach außen öffnende Türen: deckt die Falle gegen Aufhebeln ab; für den australischen Markt gefertigt und mit Schrauben aus Edelstahl 304 geliefert."
   },
   "hy006dk-lock-case": {
     "name": "Schlosskasten",
@@ -13254,7 +13238,6 @@
   },
   "hy007-s-lock-case": {
     "name": "Schlosskasten",
-    "summary": "Einsteckschlosskasten mit Schnappfalle und Tagfallenfunktion.",
     "features": [
       "Diese Push-Pull-Paddelschlossgarnitur ist für Aluminium-Glastüren, Ladentüren, Bürotüren und Objekteingänge ausgelegt.",
       "Für DIN-links und DIN-rechts lieferbar. Die Tagfallenfunktion hält die Falle bei Bedarf eingezogen – für bequemen Zugang während der Öffnungszeiten und bei hohem Publikumsverkehr.",
@@ -13309,7 +13292,8 @@
         "label": "Suitable For",
         "value": "Läden, Büros, Einkaufszentren, Supermärkte, Geschäftsgebäude"
       }
-    ]
+    ],
+    "summary": "Push-Pull-Paddelschloss mit Eisenkasten, Sperrfalle und Falle-Feststellfunktion, für Aluminium-Schaufensterfronten und Glastüren, in DIN links oder rechts."
   },
   "hy008-lock-case": {
     "name": "Schlosskasten",
@@ -13405,7 +13389,6 @@
   },
   "hyde-ar4-1121-hook-bolt-lock": {
     "name": "Hakenriegel-Einsteckschloss",
-    "summary": "Einsteckschlosskasten mit 40 mm Dornmaß.",
     "features": [],
     "specs": [
       {
@@ -13428,7 +13411,8 @@
         "label": "Key options",
         "value": "Zinklegierung oder Messing; zwei Schlüssel"
       }
-    ]
+    ],
+    "summary": "Hakenriegel-Einsteckschlosskasten mit 40 mm Dornmaß und Stulp 25 × 140 mm, mit zwei Schlüsseln geliefert."
   },
   "hyde-ar4-140-mortise-lock": {
     "name": "Schmales Einsteckschloss",
@@ -14894,7 +14878,6 @@
   },
   "lc9045-lock-case": {
     "name": "Schlosskasten",
-    "summary": "Einsteckschlosskasten aus Eisen in PB/AB/AC/SS/SN – alle lieferbar –, mit 45 mm Entfernung und 90 mm Dornmaß.",
     "features": [
       "Funktionen: Eingang, Panik, WC, Durchgang, Lagerraum, Riegel, Klassenzimmer, Multifunktion",
       "Optionen: 85er-Serie, 72er-Serie und kleine Schlosskästen lieferbar",
@@ -14937,7 +14920,8 @@
         "label": "Cylinder center to back",
         "value": "45 mm"
       }
-    ]
+    ],
+    "summary": "Einsteckschlosskasten aus Eisen; angegeben sind 45 mm und 90 mm als Entfernung und Dornmaß; in Messing poliert, Messing antik, Kupfer antik, Edelstahl oder Nickel matt."
   },
   "lc9230-lock-case": {
     "name": "Schlosskasten",
@@ -15127,13 +15111,6 @@
   "lh852-bnbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Schwarznickel, Dornmaß 60/70 mm, WC-Funktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe gleichzeitig",
-      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Falle und Chassis aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15191,18 +15168,18 @@
         "label": "Application",
         "value": "Für Türen mit WC-Funktion"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker gleichzeitig",
+      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
+      "Falle und Chassis aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh852-bnet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker in Schwarznickel, Eingangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe gleichzeitig",
-      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Falle und Chassis aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15260,18 +15237,18 @@
         "label": "Application",
         "value": "Für Türen mit WC-Funktion"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker gleichzeitig",
+      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
+      "Falle und Chassis aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh852-bnps-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Schwarznickel, Dornmaß 60/70 mm, Durchgangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe gleichzeitig",
-      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Falle und Chassis aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15329,18 +15306,18 @@
         "label": "Application",
         "value": "Für Durchgangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker gleichzeitig",
+      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
+      "Falle und Chassis aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh852-gmbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Gunmetal-Grau, Dornmaß 60/70 mm, WC-Funktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe gleichzeitig",
-      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Falle und Chassis aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15398,18 +15375,18 @@
         "label": "Application",
         "value": "Für Türen mit WC-Funktion"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker gleichzeitig",
+      "Verriegeln: Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; Entriegeln umgekehrt",
+      "Falle und Chassis aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh853-cpbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker, verchromt, WC-Funktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15455,18 +15432,18 @@
         "label": "Application",
         "value": "Für Eingangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh853-cpps-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker, verchromt, Durchgangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15512,18 +15489,18 @@
         "label": "Application",
         "value": "Für Eingangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh853-snbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker in Nickel matt, WC-Funktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15569,18 +15546,18 @@
         "label": "Application",
         "value": "Für Eingangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh853-snet-lever-handle": {
     "name": "Drücker",
     "summary": "Zum Verriegeln den Knauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15626,18 +15603,18 @@
         "label": "Application",
         "value": "Für Eingangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh853-snps-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker in Nickel matt, Durchgangsfunktion.",
-    "features": [
-      "Wirtschaftlich und einfach zu montieren, ideal für den Wohnbereich",
-      "Schlüssel oder Drehknauf ver- und entriegeln beide Knäufe",
-      "Zum Verriegeln den Drehknauf gegen den Uhrzeigersinn oder den Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
-      "Chassis und Falle aus verzinktem Stahl für Korrosionsschutz",
-      "Sichtbarer Beschlag aus Edelstahl oder Messing lieferbar"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15683,6 +15660,13 @@
         "label": "Application",
         "value": "Für Eingangstüren"
       }
+    ],
+    "features": [
+      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
+      "Schlüssel oder Drehknauf verriegelt/entriegelt beide Drücker",
+      "Zum Verriegeln Drehknauf gegen den Uhrzeigersinn oder Schlüssel im Uhrzeigersinn drehen; zum Entriegeln umgekehrt",
+      "Chassis und Falle aus verzinktem Stahl, korrosionsbeständig",
+      "Sichtbare Beschläge in Edelstahl oder Messing lieferbar"
     ]
   },
   "lh854-lever-handle": {
@@ -15778,13 +15762,6 @@
   "lh855-bnbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker in Schwarznickel, WC-Funktion.",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Beide Knäufe per Schlüssel oder Drehknauf ver- und entriegeln",
-      "Einfache Bedienung: zum Ver- oder Entriegeln drehen",
-      "Falle und Chassis aus verzinktem Stahl für mehr Langlebigkeit",
-      "Beschlagvarianten: Edelstahl oder Messing"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15830,6 +15807,13 @@
         "label": "Application",
         "value": "Für Türen mit WC-Funktion"
       }
+    ],
+    "features": [
+      "Günstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Beide Drücker per Schlüssel oder Drehknauf verriegeln/entriegeln",
+      "Einfache Bedienung: Drehen zum Verriegeln oder Entriegeln",
+      "Falle und Chassis aus verzinktem Stahl für höhere Haltbarkeit",
+      "Beschlagvarianten: geschmiedeter Edelstahl oder Messing"
     ]
   },
   "lh855-lever-handle": {
@@ -15878,13 +15862,6 @@
   "lh855-snbk-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, WC-Funktion.",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Beide Knäufe per Schlüssel oder Drehknauf ver- und entriegeln",
-      "Einfache Bedienung: zum Ver- oder Entriegeln drehen",
-      "Falle und Chassis aus verzinktem Stahl für mehr Langlebigkeit",
-      "Beschlagvarianten: Edelstahl oder Messing"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15930,18 +15907,18 @@
         "label": "Application",
         "value": "Für Türen mit WC-Funktion"
       }
+    ],
+    "features": [
+      "Günstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Beide Drücker per Schlüssel oder Drehknauf verriegeln/entriegeln",
+      "Einfache Bedienung: Drehen zum Verriegeln oder Entriegeln",
+      "Falle und Chassis aus verzinktem Stahl für höhere Haltbarkeit",
+      "Beschlagvarianten: geschmiedeter Edelstahl oder Messing"
     ]
   },
   "lh855-snet-lever-handle": {
     "name": "Drücker",
     "summary": "Drücker aus Zinklegierung in Nickel matt, Dornmaß 60/70 mm, Eingangsfunktion.",
-    "features": [
-      "Preiswert und einfach zu montieren, ideal für den Wohnbereich",
-      "Beide Knäufe per Schlüssel oder Drehknauf ver- und entriegeln",
-      "Einfache Bedienung: zum Ver- oder Entriegeln drehen",
-      "Falle und Chassis aus verzinktem Stahl für mehr Langlebigkeit",
-      "Beschlagvarianten: Edelstahl oder Messing"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15983,6 +15960,13 @@
         "label": "Finish",
         "value": "Nickel matt"
       }
+    ],
+    "features": [
+      "Günstig und einfach zu montieren, ideal für den Wohnbereich",
+      "Beide Drücker per Schlüssel oder Drehknauf verriegeln/entriegeln",
+      "Einfache Bedienung: Drehen zum Verriegeln oder Entriegeln",
+      "Falle und Chassis aus verzinktem Stahl für höhere Haltbarkeit",
+      "Beschlagvarianten: geschmiedeter Edelstahl oder Messing"
     ]
   },
   "nc013-stainless-steel-handle": {
@@ -16756,10 +16740,10 @@
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",
-    "description": "Das Modell SSH021 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung.",
     "features": [],
     "specs": [],
-    "summary": "Türband SSH021 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt."
+    "summary": "Türband SSH021 von Canton Hyland; Material und Abmessungen werden vor der Bestellung bestätigt.",
+    "description": "Das Modell SSH021 ist ein Türband von Canton Hyland Hardware (Group) Co., Ltd. aus Guangdong, China. Die Fotos oben zeigen das tatsächliche Produkt. Die vollständigen technischen Daten dieses Modells werden derzeit mit dem Werk abgestimmt – fragen Sie unser Exportteam, dann erhalten Sie gemessene Werte statt einer Schätzung."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Türbänder aus Messing und Stahl",

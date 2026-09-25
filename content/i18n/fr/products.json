@@ -551,15 +551,6 @@
   },
   "072-panic-exit-device-lock-case": {
     "name": "Coffre de serrure pour fermeture anti-panique",
-    "summary": "• Pour coffre de serrure à mortaiser",
-    "features": [
-      "Présentation :",
-      "• Pour coffre de serrure à mortaiser",
-      "• Carré en fer : 9 × 9 × 130 mm",
-      "• Axe : 65 mm",
-      "• Entraxe : 72 mm",
-      "• Couleur : peinture en option"
-    ],
     "specs": [
       {
         "label": "Type",
@@ -601,6 +592,14 @@
         "label": "Used with",
         "value": "Fermeture anti-panique 307"
       }
+    ],
+    "summary": "Coffre de serrure en fer pour la fermeture anti-panique 307 : axe de 65 mm, entraxe de 72 mm, fouillot de 9 × 9 × 130 mm et deux découpes pour cylindre européen.",
+    "features": [
+      "Adapté aux corps de serrure à mortaiser",
+      "Barre en fer : 9 × 9 × 130 mm",
+      "Axe : 65 mm",
+      "Entraxe : 72 mm",
+      "Couleur : laquage en option"
     ]
   },
   "100-glass-door-handle": {
@@ -1151,16 +1150,6 @@
   },
   "260-night-latch-and-rim-lock": {
     "name": "Verrou de sûreté et serrure en applique",
-    "summary": "Simple cylindre : manœuvre par clé et bouton intérieur ; volet coulissant anti-crochetage",
-    "features": [
-      "Gâche :",
-      "Gâche coudée en standard pour les portes ouvrant vers l'intérieur",
-      "Gâche plate en option pour les portes ouvrant vers l'extérieur (déconseillée)",
-      "Fonctions :",
-      "Simple cylindre : manœuvre par clé et bouton intérieur ; volet coulissant anti-crochetage",
-      "Double cylindre : manœuvre par clé côté intérieur comme côté extérieur",
-      "Sécurité : conception haute sécurité avec protection anti-effraction"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1202,6 +1191,14 @@
         "label": "Backset",
         "value": "60 mm (2-3/8”)"
       }
+    ],
+    "summary": "Serrure en applique à verrou de sûreté en fer pour portes de 35 à 55 mm, à simple ou double cylindre, avec pêne de 13 mm, bouton de condamnation intérieur et coulisseau anti-crochetage.",
+    "features": [
+      "Gâche inclinée de série pour les portes ouvrant vers l'intérieur",
+      "Gâche plate en option pour les portes ouvrant vers l'extérieur (déconseillée)",
+      "Simple cylindre : manœuvre par clé et par bouton intérieur ; coulisseau anti-crochetage inclus",
+      "Double cylindre : manœuvre par clé des deux côtés, intérieur comme extérieur",
+      "Sécurité : conception haute sécurité avec protection antivol"
     ]
   },
   "300-panic-exit-device": {
@@ -1311,16 +1308,6 @@
   },
   "303-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en acier ou en acier inoxydable, pour le bâtiment.",
-    "features": [
-      "Verrouillage en un point",
-      "Mécanisme de verrouillage de sécurité",
-      "Modèle apparent",
-      "Barre de poussée pleine longueur",
-      "Longueur adaptable à la largeur de la porte",
-      "Plusieurs coloris disponibles",
-      "Résistance au feu de 90 minutes testée"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1342,6 +1329,15 @@
         "label": "Application",
         "value": "Engins pour le bâtiment"
       }
+    ],
+    "summary": "Fermeture anti-panique en acier ou en acier inoxydable avec barre de poussée de 900 mm, en nickel satiné, chromé, laiton vieilli ou laiton poli.",
+    "features": [
+      "Système de verrouillage en un point",
+      "Mécanisme de verrouillage de sécurité",
+      "Modèle apparent",
+      "Barre de poussée pleine largeur",
+      "Longueur adaptable à la largeur de la porte",
+      "Plusieurs coloris disponibles"
     ]
   },
   "305-fire-door-panic-exit-device": {
@@ -1457,9 +1453,9 @@
   "308-d-d-panic-exit-device": {
     "name": "Fermeture anti-panique type D",
     "summary": "Fermeture anti-panique type D.",
-    "description": "Le modèle 308-D (fermeture anti-panique type D) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Le modèle 308-D (fermeture anti-panique) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "308-panic-exit-device": {
     "name": "Fermeture anti-panique",
@@ -1484,9 +1480,9 @@
   "308-s-s-panic-exit-device": {
     "name": "Fermeture anti-panique type S",
     "summary": "Fermeture anti-panique type S.",
-    "description": "Le modèle 308-S (fermeture anti-panique type S) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Le modèle 308-S (fermeture anti-panique) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "309-d-double-door-panic-exit-device": {
     "name": "Fermeture anti-panique pour porte à deux vantaux",
@@ -1625,29 +1621,6 @@
   },
   "313-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "• Tringles haute et basse pour les portes à deux vantaux",
-    "features": [
-      "Caractéristiques de base",
-      "• Entraxe au choix : 72 mm / 92 mm",
-      "• Carré de 9 mm.",
-      "• Certifiée EN1125, endurance testée à plus de 300 000 cycles",
-      "• Pour portes à un ou deux vantaux",
-      "• Réversible gauche / droite, sans sens de montage imposé",
-      "Paramètres techniques",
-      "• Poids de porte max. : ≥ 200 kg",
-      "• Hauteur de porte max. : 2520 mm",
-      "• Largeur de porte max. : 1500 mm",
-      "• Température d'utilisation : -10 °C à +60 °C",
-      "• Pose sur porte DIN gauche ou droite",
-      "Points clés",
-      "• Une simple poussée pour ouvrir : évacuation rapide",
-      "• Structure robuste à forte résistance à la charge, fiable dans la durée",
-      "• Pose facile, large compatibilité",
-      "• Tringles haute et basse pour les portes à deux vantaux",
-      "Pour portes de sortie de secours, portes coupe-feu et portes de désenfumage",
-      "Recommandée pour les lieux publics très fréquentés :",
-      "Centres commerciaux / hôpitaux / écoles / cinémas / stades / immeubles de bureaux / centres d'exposition / aéroports / métro et pôles de transport"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1669,6 +1642,25 @@
         "label": "Color Options",
         "value": "Plusieurs couleurs disponibles (personnalisables)"
       }
+    ],
+    "summary": "Fermeture anti-panique à barre de poussée, corps en fer et ABS et barre en aluminium, pour portes simples et, avec verrous haut et bas, pour portes à deux vantaux.",
+    "features": [
+      "Entraxe au choix : 72 mm / 92 mm",
+      "Carré de 9 mm.",
+      "Convient aux portes simples et doubles",
+      "Réversible gauche/droite, sans sens de montage imposé",
+      "Poids de porte max. : ≥ 200 kg",
+      "Hauteur de porte max. : 2520 mm",
+      "Largeur de porte max. : 1500 mm",
+      "Température de fonctionnement : -10 °C à +60 °C",
+      "Montage sur porte DIN gauche ou droite",
+      "Ouverture d'une simple poussée pour une évacuation rapide",
+      "Structure robuste à forte résistance à la charge, fiable dans la durée",
+      "Installation facile et large compatibilité",
+      "Compatible avec les verrous haut et bas des portes à deux vantaux",
+      "Pour issues de secours, portes coupe-feu et portes de désenfumage",
+      "Recommandé pour les lieux publics à forte fréquentation :",
+      "Centres commerciaux / hôpitaux / écoles / cinémas / stades / immeubles de bureaux / centres d'exposition / aéroports / métro et pôles de transport"
     ]
   },
   "314-alarm-panic-bar-exit-device": {
@@ -5962,12 +5954,6 @@
   "6491abet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition laiton vieilli (US5), axe 60/70 mm, fonction entrée.",
-    "features": [
-      "Serrure économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Châssis et boîtier de pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6009,6 +5995,12 @@
         "label": "Finish",
         "value": "Laiton vieilli (US5)"
       }
+    ],
+    "features": [
+      "Ensemble économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Châssis et boîtier de pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable corroyé ou en laiton"
     ]
   },
   "65-snkt-lock-cylinder": {
@@ -6532,22 +6524,6 @@
   "70750-pb-grip-handle-set": {
     "name": "Ensemble de poignées de tirage",
     "summary": "Ensemble de poignées de tirage en alliage de zinc, finition PB (laiton poli), axe réglable 60 mm / 70 mm pour le pêne demi-tour comme pour le pêne dormant.",
-    "features": [
-      "Points clés :",
-      "Construction soignée : alliage de zinc robuste, finition laiton poli ; pièces extérieures en laiton forgé ou en zinc moulé sous pression électrolytique.",
-      "Sécurité renforcée :",
-      "– Pêne dormant de 1 po (25 mm) renforcé acier",
-      "– Course du pêne demi-tour de 1/2 po (13 mm)",
-      "– Bague de cylindre rotative anti-arrachement",
-      "– Aucune fixation apparente côté extérieur",
-      "Pose facile :",
-      "– S'adapte au perçage transversal standard de 2 po (51 mm)",
-      "– Axe réglable : 2-3/8 po ou 2-3/4 po (60 mm ou 70 mm)",
-      "– Réversible pour portes gauches ou droites",
-      "– Épaisseur de porte : 1-3/8 po à 1-3/4 po (35–45 mm)",
-      "Description :",
-      "Ensemble de poignées de tirage en laiton poli, élégant et fonctionnel pour les portes d'entrée. Compatible avec les préparations de porte standard, en remplacement comme en installation neuve."
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6593,6 +6569,18 @@
         "label": "Feature",
         "value": "Aucune fixation apparente à l'extérieur ; bague de cylindre libre en rotation contre l'arrachement à la pince"
       }
+    ],
+    "features": [
+      "Fabrication haut de gamme : alliage de zinc robuste, finition laiton poli ; éléments extérieurs en laiton forgé ou en zinc moulé sous pression à revêtement électrolytique.",
+      "Pêne dormant de 1” (25 mm) renforcé acier",
+      "Pêne demi-tour à sortie de 1/2” (13 mm)",
+      "Rosace de cylindre tournante anti-arrachement",
+      "Aucune fixation apparente côté extérieur",
+      "Compatible avec un perçage transversal standard de 2” (51 mm)",
+      "Axe réglable : 2-3/8” ou 2-3/4” (60 mm ou 70 mm)",
+      "Réversible pour portes gauches ou droites",
+      "Pour portes de 1-3/8” à 1-3/4” d'épaisseur (35–45 mm)",
+      "Ensemble de poignée de tirage en laiton poli qui apporte élégance et fonctionnalité aux portes d'entrée. Compatible avec les préparations de porte standard, il convient aussi bien au remplacement qu'aux installations neuves."
     ]
   },
   "70780-ab-grip-handle-set": {
@@ -7405,13 +7393,6 @@
   "816-pbet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition laiton poli (US3), axe 60/70 mm, fonction entrée.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "Verrouillage et déverrouillage par clé ou bouton moleté",
-      "Verrouillage simultané des deux côtés",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7453,18 +7434,18 @@
         "label": "Finish",
         "value": "Laiton poli (US3)"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "Verrouillage et déverrouillage par clé ou bouton moleté",
+      "Verrouillage synchronisé des deux béquilles",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "816-snet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction entrée.",
-    "features": [
-      "Serrure économique et simple à poser pour l'usage résidentiel",
-      "La clé ou le bouton moleté commande les deux côtés",
-      "Le bouton moleté intérieur ou la clé verrouille et déverrouille les deux côtés à la fois",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7506,6 +7487,13 @@
         "label": "Finish",
         "value": "Nickel satiné"
       }
+    ],
+    "features": [
+      "Ensemble économique et facile à poser, pour l'habitat",
+      "La clé ou le bouton moleté commande les deux béquilles",
+      "La rotation du bouton moleté intérieur ou de la clé verrouille et déverrouille simultanément",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures en acier inoxydable ou en laiton"
     ]
   },
   "819-pbet-lever-handle": {
@@ -7608,13 +7596,6 @@
   "853-snbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7656,17 +7637,17 @@
         "label": "Finish",
         "value": "Nickel satiné"
       }
+    ],
+    "features": [
+      "D'un bon rapport qualité-prix et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "853-ssbk-lever-handle": {
     "name": "Béquille",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7709,7 +7690,14 @@
         "value": "Acier inoxydable satiné (US32D)"
       }
     ],
-    "summary": "Béquille en alliage de zinc, finition acier inoxydable satiné (US32D), fonction condamnation."
+    "summary": "Béquille en alliage de zinc, finition acier inoxydable satiné (US32D), fonction condamnation.",
+    "features": [
+      "D'un bon rapport qualité-prix et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
+    ]
   },
   "8803-snbk-lever-handle": {
     "name": "Béquille",
@@ -7761,13 +7749,6 @@
   "8826-snbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "Verrouillage et déverrouillage des deux côtés par clé ou bouton moleté",
-      "Le bouton moleté tourné dans le sens antihoraire, ou la clé dans le sens horaire, verrouille ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué pour une meilleure résistance à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7809,18 +7790,18 @@
         "label": "Finish",
         "value": "Nickel satiné"
       }
+    ],
+    "features": [
+      "D'un bon rapport qualité-prix et facile à poser, idéal pour l'habitat",
+      "Verrouillage et déverrouillage des deux béquilles par clé ou bouton moleté",
+      "Le bouton moleté tourné dans le sens antihoraire ou la clé tournée dans le sens horaire verrouille les béquilles ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué pour une meilleure résistance à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "8826-snet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction entrée.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Verrouillage : bouton moleté dans le sens antihoraire ou clé dans le sens horaire ; déverrouillage en sens inverse",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7862,6 +7843,13 @@
         "label": "Finish",
         "value": "Nickel satiné"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Verrouillage : tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "8827-sset-lever-handle": {
@@ -8276,14 +8264,14 @@
   },
   "9007-stainless-steel-handle": {
     "name": "Poignée en acier inoxydable",
-    "summary": "Poignée en acier inoxydable.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Acier inoxydable"
       }
-    ]
+    ],
+    "summary": "Poignée de porte en acier inoxydable."
   },
   "9007e-stainless-steel-handle": {
     "name": "Poignée en acier inoxydable",
@@ -8731,7 +8719,6 @@
   "9088-ss-stainless-steel-handle": {
     "name": "Poignée en acier inoxydable",
     "summary": "Ensemble de béquilles en acier inoxydable sur plaques SUS 304 de 200 × 50 mm, avec coffre de serrure à mortaiser (entraxe 58 mm, axe 45 mm), cylindre européen à clé côté extérieur et bouton moleté côté intérieur, et ressort de rappel derrière chaque plaque. Livré en ensemble complet.",
-    "description": "Le 9088 SS est un ensemble de béquilles en acier inoxydable sur plaques longues, fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les plaques mesurent 200 × 50 mm, en acier inoxydable SUS 304 de 1 mm d'épaisseur, avec des trous de fixation espacés de 170 mm. L'ensemble comprend un coffre de serrure à mortaiser avec têtière de 175 mm, axe de 45 mm et entraxe béquille-cylindre de 58 mm, un pêne demi-tour et un pêne dormant carré, ainsi qu'un cylindre européen en alliage de zinc, à clé côté extérieur et bouton moleté côté intérieur. Toutes les cotes de cette page sont relevées sur les photographies cotées de l'usine. La plage d'épaisseur de porte et la saillie de la béquille ne sont pas encore publiées : demandez à notre équipe export les valeurs mesurées plutôt qu'une estimation.",
     "features": [],
     "specs": [
       {
@@ -8794,7 +8781,8 @@
         "label": "Supplied with",
         "value": "Paire de plaques à béquille, coffre de serrure à mortaiser, cylindre européen avec clés, carré, gâche, vis de fixation et accessoires"
       }
-    ]
+    ],
+    "description": "Le modèle 9088 SS est un ensemble de béquilles en acier inoxydable sur plaques longues, fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les plaques de 200 × 50 mm sont en acier inoxydable SUS 304 de 1 mm d'épaisseur, avec des trous de fixation espacés de 170 mm. L'ensemble comprend un corps de serrure à mortaiser avec têtière de 175 mm, axe de 45 mm et entraxe béquille-cylindre de 58 mm, un pêne demi-tour et un pêne dormant carré, ainsi qu'un cylindre européen en alliage de zinc avec clé côté extérieur et bouton moleté côté intérieur. Toutes les cotes de cette page sont relevées sur les photos cotées de l'usine. La plage d'épaisseur de porte et la saillie de la béquille ne sont pas encore publiées : demandez à notre équipe export les valeurs mesurées plutôt qu'une estimation."
   },
   "9210-pbbk-tubular-lock": {
     "name": "Serrure tubulaire",
@@ -8826,10 +8814,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "description": "Le modèle AAH024 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
     "specs": [],
-    "summary": "Paumelle de porte AAH024 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
+    "summary": "Paumelle de porte AAH024 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande.",
+    "description": "Le modèle AAH024 (paumelle de porte) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "ai8530-lock-case": {
     "name": "Coffre de serrure",
@@ -8880,10 +8868,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "features": [
-      "Présentation",
-      "Paumelle en acier inoxydable (broche démontable)"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8906,14 +8890,15 @@
         "value": "90-180°"
       }
     ],
-    "summary": "Paumelle de porte en laiton, épaisseur de 2.0 à 3.5 mm, ouverture de 90 à 180 degrés, en laiton poli, laiton satiné, laiton vieilli, cuivre vieilli ou chromé ; autres finitions sur demande."
+    "summary": "Paumelle de porte en laiton, épaisseur de 2.0 à 3.5 mm, ouverture de 90 à 180 degrés, en laiton poli, laiton satiné, laiton vieilli, cuivre vieilli ou chromé ; autres finitions sur demande.",
+    "features": [
+      "Lames en laiton, de 2,0 à 3,5 mm d'épaisseur",
+      "Ouverture de 90 à 180 degrés",
+      "Laiton poli, laiton satiné, laiton vieilli, cuivre vieilli ou chromé ; autres finitions sur demande"
+    ]
   },
   "b025-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "features": [
-      "Présentation",
-      "Paumelle en acier inoxydable (broche démontable)"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8940,7 +8925,12 @@
         "value": "Personnalisable à la demande du client"
       }
     ],
-    "summary": "Paumelle de porte en laiton, ouverture de 90 à 180 degrés, en finition laiton vieilli, cuivre vieilli, laiton poli, laiton satiné, acier inoxydable, poli brillant ou chrome satiné ; dimensions fabriquées sur commande."
+    "summary": "Paumelle de porte en laiton, ouverture de 90 à 180 degrés, en finition laiton vieilli, cuivre vieilli, laiton poli, laiton satiné, acier inoxydable, poli brillant ou chrome satiné ; dimensions fabriquées sur commande.",
+    "features": [
+      "Lames en laiton, dimensions sur mesure",
+      "Ouverture de 90 à 180 degrés",
+      "Laiton vieilli, cuivre vieilli, laiton poli, laiton satiné, acier inoxydable, poli brillant ou chrome satiné"
+    ]
   },
   "bh01-grab-bar": {
     "name": "Barre d'appui",
@@ -10332,10 +10322,10 @@
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "description": "Le modèle BL029 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
     "specs": [],
-    "summary": "Paumelle de porte BL029 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
+    "summary": "Paumelle de porte BL029 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande.",
+    "description": "Le modèle BL029 (paumelle de porte) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
@@ -10584,9 +10574,9 @@
   "d01-ab-deadbolts": {
     "name": "Verrous à pêne dormant",
     "summary": "Verrou à pêne dormant D01 AB, fabrication Canton Hyland.",
-    "description": "Le modèle D01 AB (verrou à pêne dormant) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Le modèle D01 AB (verrou à pêne dormant) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "d101-ab-deadbolts": {
     "name": "Verrous à pêne dormant",
@@ -11200,13 +11190,12 @@
   "d103-ac-deadbolts": {
     "name": "Verrous à pêne dormant",
     "summary": "Verrou à pêne dormant D103 AC, fabrication Canton Hyland.",
-    "description": "Le modèle D103 AC (verrou à pêne dormant) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "Le modèle D103 AC (verrou à pêne dormant) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "dc01-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Fermeture anti-panique en fer à finition zinguée.",
     "features": [
       "Structure en fer de qualité avec traitement de surface zingué : excellente résistance à la corrosion et longue durée de vie. Adaptée aux environnements commerciaux et industriels, dans la durée."
     ],
@@ -11227,7 +11216,8 @@
         "label": "Installation",
         "value": "En applique, fixation par vis"
       }
-    ]
+    ],
+    "summary": "Sélecteur de fermeture en fer zingué pour portes coupe-feu à deux vantaux, en applique et fixé par vis, qui régule la vitesse et la force de fermeture."
   },
   "dc02-door-coordinator": {
     "name": "Sélecteur de fermeture",
@@ -11360,7 +11350,6 @@
   },
   "ds011-door-stopper": {
     "name": "Butoir de porte",
-    "summary": "Verrou à encastrer en laiton.",
     "features": [],
     "specs": [
       {
@@ -11371,7 +11360,8 @@
         "label": "Finish",
         "value": "BP, laiton vieilli (AB), cuivre vieilli (AC), nickelé (NP), NB, CB, chromé (CP), nickel satiné (SN), BC"
       }
-    ]
+    ],
+    "summary": "Butoir de porte en laiton, disponible notamment en laiton vieilli, cuivre vieilli, chromé et nickel satiné."
   },
   "ds013-door-stopper": {
     "name": "Butoir de porte",
@@ -11424,7 +11414,6 @@
   },
   "ds05-door-stopper": {
     "name": "Butoir de porte",
-    "summary": "Butoir de porte en acier inoxydable, Ø44 × 24 mm.",
     "features": [],
     "specs": [
       {
@@ -11439,7 +11428,8 @@
         "label": "Finish",
         "value": "Acier inoxydable (SS), BC, chromé (CP), GP, CB, laiton vieilli (AB), cuivre vieilli (AC)"
       }
-    ]
+    ],
+    "summary": "Butoir de porte en acier inoxydable, Ø44 × 24 mm."
   },
   "ds09-door-stopper": {
     "name": "Butoir de porte",
@@ -11466,7 +11456,6 @@
   },
   "dsl02-panic-exit-device": {
     "name": "Fermeture anti-panique",
-    "summary": "Le ressort de précision et la vis de réglage de tension permettent de doser la force de fermeture ; le galet en nylon limite l'usure et prolonge la durée de vie.",
     "features": [
       "Ce sélecteur de fermeture équipe les portes à deux vantaux coupe-feu et commerciales.",
       "En acier inoxydable 304 robuste, il assure un ordre de fermeture automatique régulier, stable et silencieux.",
@@ -11498,7 +11487,8 @@
         "label": "Roller Material",
         "value": "Polyamide (nylon)"
       }
-    ]
+    ],
+    "summary": "Sélecteur de fermeture en acier inoxydable 304 pour portes à deux vantaux, avec force de fermeture réglable et galets en nylon."
   },
   "dust-proof-01-door-viewer": {
     "name": "Judas",
@@ -11547,10 +11537,6 @@
   },
   "dv05-bl-door-viewer": {
     "name": "Judas",
-    "summary": "Judas en laiton, finitions CP, PB, SC, SN, AB, AC, ORB, pour voir l'extérieur.",
-    "features": [
-      "Présentation :"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11564,14 +11550,12 @@
         "label": "Function",
         "value": "Surveillance extérieure"
       }
-    ]
+    ],
+    "summary": "Judas de porte en laiton, en finition chromé, laiton poli, chrome satiné, nickel satiné, laiton vieilli, cuivre vieilli ou bronze huilé.",
+    "features": []
   },
   "dv05-door-viewer": {
     "name": "Judas",
-    "summary": "Judas en laiton, finitions CP, PB, SC, SN, AB, AC, ORB, pour voir l'extérieur.",
-    "features": [
-      "Présentation :"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11601,14 +11585,12 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Judas de porte en laiton, en finition chromé, laiton poli, chrome satiné, nickel satiné, laiton vieilli, cuivre vieilli ou bronze huilé.",
+    "features": []
   },
   "dv06-door-viewer": {
     "name": "Judas",
-    "summary": "Judas en laiton, finitions CP, PB, SC, SN, AB, AC, ORB, pour voir l'extérieur.",
-    "features": [
-      "Présentation :"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11638,7 +11620,9 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Judas de porte en laiton, en finition chromé, laiton poli, chrome satiné, nickel satiné, laiton vieilli, cuivre vieilli ou bronze huilé.",
+    "features": []
   },
   "dv07-door-viewer": {
     "name": "Judas",
@@ -12371,7 +12355,6 @@
   },
   "f100-ss-door-hinge": {
     "name": "Paumelle de porte",
-    "summary": "Fonction : vitesse d'ouverture et de fermeture et tension du ressort réglables.",
     "features": [
       "Usage : cuisines, couloirs et portes résidentielles.",
       "Fonction : vitesse d'ouverture et de fermeture et tension du ressort réglables. Débattement de 116° dans les deux sens, avec arrêts à 0°, 88° et 116°."
@@ -12405,7 +12388,8 @@
         "label": "Closing Force",
         "value": "25 N·m"
       }
-    ]
+    ],
+    "summary": "Paumelle à ressort double action en fer, à vitesse et tension réglables, pivotant à 116° de chaque côté avec arrêts à 0°, 88° et 116°, pour portes en bois jusqu'à 80 kg."
   },
   "f101-glass-door-patch-fittings": {
     "name": "Pinces pour portes en verre",
@@ -13071,7 +13055,6 @@
   },
   "hy-0ss-lock-case": {
     "name": "Coffre de serrure",
-    "summary": "Protège-pêne en acier inoxydable, finition satinée, solide et résistant à la corrosion dans la durée",
     "features": [
       "Protège-pêne en acier inoxydable, finition satinée, solide et résistant à la corrosion dans la durée",
       "Plaque de sécurité anti-pince : renforce la zone du pêne contre l'effraction",
@@ -13119,7 +13102,8 @@
         "label": "Design",
         "value": "Recouvrement complet du pêne"
       }
-    ]
+    ],
+    "summary": "Protège-pêne en acier inoxydable 304 pour portes ouvrant vers l'extérieur, qui recouvre le pêne pour résister au forçage ; conçu pour le marché australien et livré avec des vis en inox 304."
   },
   "hy006dk-lock-case": {
     "name": "Coffre de serrure",
@@ -13254,7 +13238,6 @@
   },
   "hy007-s-lock-case": {
     "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser, pêne demi-tour condamnable avec fonction de maintien en position ouverte.",
     "features": [
       "Cet ensemble de serrure à palette pousser-tirer pour vitrines commerciales en aluminium équipe les portes en verre à cadre aluminium, les portes de boutiques, de bureaux et les entrées commerciales.",
       "Versions gauche et droite disponibles. La fonction de maintien garde le pêne rentré au besoin, pour un passage libre pendant les heures d'ouverture et les périodes d'affluence.",
@@ -13309,7 +13292,8 @@
         "label": "Suitable For",
         "value": "Boutiques, bureaux, centres commerciaux, supermarchés, bâtiments commerciaux"
       }
-    ]
+    ],
+    "summary": "Serrure à palette pousser-tirer avec coffre en fer, pêne demi-tour condamnable et fonction de maintien en position ouverte, pour portes de vitrine en aluminium et portes vitrées, en version gauche ou droite."
   },
   "hy008-lock-case": {
     "name": "Coffre de serrure",
@@ -13405,7 +13389,6 @@
   },
   "hyde-ar4-1121-hook-bolt-lock": {
     "name": "Serrure à mortaiser à pêne crochet",
-    "summary": "Coffre de serrure à mortaiser, axe 40.",
     "features": [],
     "specs": [
       {
@@ -13428,7 +13411,8 @@
         "label": "Key options",
         "value": "Alliage de zinc ou laiton ; deux clés"
       }
-    ]
+    ],
+    "summary": "Coffre de serrure à mortaiser à pêne crochet, avec axe de 40 mm et têtière de 25 × 140 mm, livré avec deux clés."
   },
   "hyde-ar4-140-mortise-lock": {
     "name": "Coffre de serrure à mortaiser étroit",
@@ -14894,7 +14878,6 @@
   },
   "lc9045-lock-case": {
     "name": "Coffre de serrure",
-    "summary": "Coffre de serrure à mortaiser en fer, finitions PB/AB/AC/SS/SN toutes disponibles, entraxe 45 mm, axe 90 mm.",
     "features": [
       "Fonctions : entrée, anti-panique, condamnation (WC), passage, local de rangement, pêne dormant seul, salle de classe, multifonction",
       "Variantes : série 85, série 72 et coffres de petite taille",
@@ -14937,7 +14920,8 @@
         "label": "Cylinder center to back",
         "value": "45 mm"
       }
-    ]
+    ],
+    "summary": "Coffre de serrure à mortaiser en fer, dont les cotes publiées de 45 mm et 90 mm correspondent à l'entraxe et à l'axe, en laiton poli, laiton vieilli, cuivre vieilli, acier inoxydable ou nickel satiné."
   },
   "lc9230-lock-case": {
     "name": "Coffre de serrure",
@@ -15127,13 +15111,6 @@
   "lh852-bnbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel noir, axe 60/70 mm, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux côtés à la fois",
-      "Verrouillage : bouton moleté dans le sens antihoraire ou clé dans le sens horaire ; déverrouillage en sens inverse",
-      "Pêne et châssis en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15191,18 +15168,18 @@
         "label": "Application",
         "value": "Pour portes à condamnation"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour les applications résidentielles",
+      "La clé ou le bouton moleté verrouille et déverrouille simultanément les deux béquilles",
+      "Verrouillage : tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
+      "Pêne et châssis en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh852-bnet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en nickel noir, fonction entrée.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux côtés à la fois",
-      "Verrouillage : bouton moleté dans le sens antihoraire ou clé dans le sens horaire ; déverrouillage en sens inverse",
-      "Pêne et châssis en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15260,18 +15237,18 @@
         "label": "Application",
         "value": "Pour portes à condamnation"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour les applications résidentielles",
+      "La clé ou le bouton moleté verrouille et déverrouille simultanément les deux béquilles",
+      "Verrouillage : tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
+      "Pêne et châssis en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh852-bnps-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel noir, axe 60/70 mm, fonction passage.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux côtés à la fois",
-      "Verrouillage : bouton moleté dans le sens antihoraire ou clé dans le sens horaire ; déverrouillage en sens inverse",
-      "Pêne et châssis en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15329,18 +15306,18 @@
         "label": "Application",
         "value": "Pour portes de passage"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour les applications résidentielles",
+      "La clé ou le bouton moleté verrouille et déverrouille simultanément les deux béquilles",
+      "Verrouillage : tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
+      "Pêne et châssis en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh852-gmbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition gris canon de fusil (gun metal), axe 60/70 mm, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux côtés à la fois",
-      "Verrouillage : bouton moleté dans le sens antihoraire ou clé dans le sens horaire ; déverrouillage en sens inverse",
-      "Pêne et châssis en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15398,18 +15375,18 @@
         "label": "Application",
         "value": "Pour portes à condamnation"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour les applications résidentielles",
+      "La clé ou le bouton moleté verrouille et déverrouille simultanément les deux béquilles",
+      "Verrouillage : tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
+      "Pêne et châssis en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh853-cpbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille chromée, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15455,18 +15432,18 @@
         "label": "Application",
         "value": "Pour portes d'entrée"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh853-cpps-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille chromée, fonction passage.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15512,18 +15489,18 @@
         "label": "Application",
         "value": "Pour portes d'entrée"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh853-snbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en nickel satiné, fonction condamnation (WC).",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15569,18 +15546,18 @@
         "label": "Application",
         "value": "Pour portes d'entrée"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh853-snet-lever-handle": {
     "name": "Béquille",
     "summary": "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15626,18 +15603,18 @@
         "label": "Application",
         "value": "Pour portes d'entrée"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh853-snps-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en nickel satiné, fonction passage.",
-    "features": [
-      "Économique et simple à poser, idéale en résidentiel",
-      "La clé ou le bouton moleté verrouille et déverrouille les deux boutons",
-      "Pour verrouiller, tourner le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire ; en sens inverse pour déverrouiller",
-      "Châssis et pêne en acier zingué, résistants à la corrosion",
-      "Garnitures apparentes en acier inoxydable ou en laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15683,6 +15660,13 @@
         "label": "Application",
         "value": "Pour portes d'entrée"
       }
+    ],
+    "features": [
+      "Économique et facile à poser, idéal pour l'habitat",
+      "La clé ou le bouton moleté verrouille et déverrouille les deux béquilles",
+      "Tournez le bouton moleté dans le sens antihoraire ou la clé dans le sens horaire pour verrouiller ; en sens inverse pour déverrouiller",
+      "Châssis et pêne en acier zingué, résistants à la corrosion",
+      "Garnitures apparentes en acier inoxydable ou en laiton"
     ]
   },
   "lh854-lever-handle": {
@@ -15778,13 +15762,6 @@
   "lh855-bnbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en nickel noir, fonction condamnation (WC).",
-    "features": [
-      "Abordable et simple à poser, idéale en résidentiel",
-      "Verrouillage et déverrouillage des deux côtés par clé ou bouton moleté",
-      "Manœuvre simple : tourner pour verrouiller ou déverrouiller",
-      "Pêne et châssis en acier zingué pour plus de durabilité",
-      "Garnitures : acier inoxydable ou laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15830,6 +15807,13 @@
         "label": "Application",
         "value": "Pour portes à condamnation"
       }
+    ],
+    "features": [
+      "Abordable et facile à poser, idéal pour les applications résidentielles",
+      "Verrouillage et déverrouillage des deux béquilles par clé ou bouton moleté",
+      "Utilisation simple : tournez pour verrouiller ou déverrouiller",
+      "Pêne et châssis en acier zingué pour une durabilité accrue",
+      "Garnitures : acier inoxydable corroyé ou laiton"
     ]
   },
   "lh855-lever-handle": {
@@ -15878,13 +15862,6 @@
   "lh855-snbk-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction condamnation (WC).",
-    "features": [
-      "Abordable et simple à poser, idéale en résidentiel",
-      "Verrouillage et déverrouillage des deux côtés par clé ou bouton moleté",
-      "Manœuvre simple : tourner pour verrouiller ou déverrouiller",
-      "Pêne et châssis en acier zingué pour plus de durabilité",
-      "Garnitures : acier inoxydable ou laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15930,18 +15907,18 @@
         "label": "Application",
         "value": "Pour portes à condamnation"
       }
+    ],
+    "features": [
+      "Abordable et facile à poser, idéal pour les applications résidentielles",
+      "Verrouillage et déverrouillage des deux béquilles par clé ou bouton moleté",
+      "Utilisation simple : tournez pour verrouiller ou déverrouiller",
+      "Pêne et châssis en acier zingué pour une durabilité accrue",
+      "Garnitures : acier inoxydable corroyé ou laiton"
     ]
   },
   "lh855-snet-lever-handle": {
     "name": "Béquille",
     "summary": "Béquille en alliage de zinc, finition nickel satiné, axe 60/70 mm, fonction entrée.",
-    "features": [
-      "Abordable et simple à poser, idéale en résidentiel",
-      "Verrouillage et déverrouillage des deux côtés par clé ou bouton moleté",
-      "Manœuvre simple : tourner pour verrouiller ou déverrouiller",
-      "Pêne et châssis en acier zingué pour plus de durabilité",
-      "Garnitures : acier inoxydable ou laiton"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15983,6 +15960,13 @@
         "label": "Finish",
         "value": "Nickel satiné"
       }
+    ],
+    "features": [
+      "Abordable et facile à poser, idéal pour les applications résidentielles",
+      "Verrouillage et déverrouillage des deux béquilles par clé ou bouton moleté",
+      "Utilisation simple : tournez pour verrouiller ou déverrouiller",
+      "Pêne et châssis en acier zingué pour une durabilité accrue",
+      "Garnitures : acier inoxydable corroyé ou laiton"
     ]
   },
   "nc013-stainless-steel-handle": {
@@ -16756,10 +16740,10 @@
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
-    "description": "Le modèle SSH021 (paumelles laiton et acier) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation.",
     "features": [],
     "specs": [],
-    "summary": "Paumelle de porte SSH021 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande."
+    "summary": "Paumelle de porte SSH021 fabriquée par Canton Hyland ; matière et dimensions confirmées avant commande.",
+    "description": "Le modèle SSH021 (paumelle de porte) est fabriqué par Canton Hyland Hardware (Group) Co., Ltd., dans le Guangdong, en Chine. Les photos ci-dessus montrent le produit réel. Ses spécifications complètes sont en cours de confirmation avec l'usine : interrogez notre équipe export, elle vous communiquera les cotes mesurées plutôt qu'une estimation."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Paumelles laiton et acier",
