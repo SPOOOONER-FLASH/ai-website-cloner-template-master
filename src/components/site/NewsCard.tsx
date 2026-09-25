@@ -54,7 +54,7 @@ export function NewsCard({
           <p className="text-c2 font-semibold uppercase tracking-[0.08em] text-ink-secondary">
             {newsKindLabels(locale)[article.kind]}
           </p>
-          <time dateTime={article.publishedAt} className="text-c2 text-ink-tertiary">
+          <time dateTime={article.publishedAt} className="text-c2 text-ink-secondary">
             {formatNewsDate(article.publishedAt, locale)}
           </time>
         </div>

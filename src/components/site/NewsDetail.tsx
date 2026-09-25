@@ -233,7 +233,7 @@ export function NewsDetail({
                   {(es && article.author.roleEs) || (locale === "pt" && article.author.rolePt) || article.author.role}
                 </span>
                 {article.author.credential ? (
-                  <span className="block text-ink-tertiary">{article.author.credential}</span>
+                  <span className="block text-ink-secondary">{article.author.credential}</span>
                 ) : null}
               </p>
             ) : null}
@@ -426,7 +426,7 @@ export function NewsDetail({
                         className="group short-marker-surface flex items-baseline justify-between gap-16 py-16 text-c1 text-brand hover:text-brand-hover"
                       >
                         <span className="short-marker short-marker-group">{file.title}</span>
-                        <span className="whitespace-nowrap text-c2 text-ink-tertiary">
+                        <span className="whitespace-nowrap text-c2 text-ink-secondary">
                           {file.format.toUpperCase()}, {formatDownloadSize(file.sizeBytes)}
                         </span>
                       </a>

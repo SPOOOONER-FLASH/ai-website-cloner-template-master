@@ -512,7 +512,7 @@ export function SiteHeader({ categories }: { categories: MenuCategory[] }) {
                         <span className="short-marker text-c1">
                           {say(category.label, category.labelEs, category.labelPt)}
                         </span>
-                        <span className="ml-8 text-c2 tabular-nums text-ink-tertiary">
+                        <span className="ml-8 text-c2 tabular-nums text-ink-secondary">
                           {category.count}
                         </span>
                       </Link>

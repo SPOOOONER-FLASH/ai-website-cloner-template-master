@@ -81,7 +81,7 @@
   /* Text ladder. None of these is ever red. */
   --color-ink: #11110f; /* headings, body copy */
   --color-ink-secondary: #6e6e73; /* captions, descriptions */
-  --color-ink-tertiary: #8e8e93; /* decorative grey: icons, display glyphs */
+  --color-ink-tertiary: #8e8e93; /* decorative grey: icons, display glyphs, index numerals, disabled — 3.3:1 on white, so NEVER for text a reader needs (dates, counts, captions): use ink-secondary (5.0:1). 2026-09-24 */
 
   /* Structure */
   --color-line: #deddd8; /* rules, borders, dividers */
@@ -706,7 +706,7 @@
 
   /* Tabular figures so the counts form a straight column instead of a ragged one. */
   .drawer-count {
-    color: var(--color-ink-tertiary);
+    color: var(--color-ink-secondary);
     font-size: 1.3rem;
     font-variant-numeric: tabular-nums;
     line-height: 1.8rem;
