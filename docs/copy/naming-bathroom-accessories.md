@@ -36,8 +36,8 @@
 | BH52 | 双层转角置物架 | Two-Tier Corner Shower Shelf | Repisa esquinera doble para ducha | Prateleira de canto dupla para box |
 | BH53 | 单层转角置物架 | Corner Shower Shelf | Repisa esquinera para ducha | Prateleira de canto para box |
 | BH55 | 翻折淋浴凳 | Fold-Down Shower Seat | Asiento de ducha abatible | Assento de banho articulado |
-| BH56、BH58 | 上翻扶手 | Flip-Up Grab Bar | Barra de apoyo abatible | Barra de apoio articulada |
-| BH57 | 双杆上翻扶手 | Double Flip-Up Grab Bar | Barra de apoyo abatible doble | Barra de apoio articulada dupla |
+| BH56、BH58 | 上翻扶手 | Flip-Up Grab Bar | Barra de apoyo abatible | Barra de apoio rebatível |
+| BH57 | 双杆上翻扶手 | Double Flip-Up Grab Bar | Barra de apoyo abatible doble | Barra de apoio rebatível dupla |
 
 合计 54 个型号，32 个名字。
 
