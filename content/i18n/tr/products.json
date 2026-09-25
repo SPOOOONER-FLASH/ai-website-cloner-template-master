@@ -551,15 +551,6 @@
   },
   "072-panic-exit-device-lock-case": {
     "name": "Panik Çıkış Cihazı Kilit Gövdesi",
-    "summary": "Gömme tip kilit gövdesine uygun panik çıkış cihazı kilit gövdesi.",
-    "features": [
-      "Genel bilgi:",
-      "Gömme tip kilit gövdesine uygun panik çıkış cihazı kilit gövdesi.",
-      "• Demir kare mil: 9 × 9 × 130 mm",
-      "• Backset: 65 mm",
-      "• Aks mesafesi: 72 mm",
-      "• Renk: opsiyonel boyalı"
-    ],
     "specs": [
       {
         "label": "Type",
@@ -601,6 +592,14 @@
         "label": "Used with",
         "value": "307 panik çıkış cihazı"
       }
+    ],
+    "summary": "307 panik çıkış cihazı için demir kilit gövdesi: 65 mm backset, 72 mm aks mesafesi, 9 × 9 × 130 mm kare mil ve iki Avrupa profil silindir deliği.",
+    "features": [
+      "Gömme tip kilit gövdesine uygundur",
+      "Demir kare mil: 9×9×130 mm",
+      "Backset ölçüsü: 65 mm",
+      "Aks mesafesi: 72 mm",
+      "Renk: opsiyonel boyalı"
     ]
   },
   "100-glass-door-handle": {
@@ -1151,16 +1150,6 @@
   },
   "260-night-latch-and-rim-lock": {
     "name": "Gece Kilidi ve Sıva Üstü Kilit",
-    "summary": "Tek silindirli: dışarıdan anahtarla, içeriden topuzla çalışır; maymuncuğa karşı kayar koruma plakası içerir.",
-    "features": [
-      "Karşılık:",
-      "İçe açılan kapılar için açılı karşılık standarttır",
-      "Dışa açılan kapılar için opsiyonel düz karşılık (önerilmez)",
-      "Fonksiyon:",
-      "Tek silindirli: dışarıdan anahtarla, içeriden topuzla çalışır; maymuncuğa karşı kayar koruma plakası içerir.",
-      "Çift silindirli: hem içeriden hem dışarıdan anahtarla çalışır",
-      "Güvenlik: hırsızlığa karşı korumalı yüksek güvenlikli tasarım"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1202,6 +1191,14 @@
         "label": "Backset",
         "value": "60 mm (2-3/8”)"
       }
+    ],
+    "summary": "35–55 mm kapılar için demir gece kilidi ve sıva üstü kilit; tek veya çift silindirli, 13 mm dil, içte kilitleme butonu ve maymuncuk önleyici sürgülü kapak.",
+    "features": [
+      "İçe açılan kapılar için standart olarak eğimli karşılık",
+      "Dışa açılan kapılar için opsiyonel düz karşılık (önerilmez)",
+      "Tek silindirli: anahtar ve içteki topuzla çalışır; maymuncuk önleyici sürgülü kapak dahildir",
+      "Çift silindirli: hem içeriden hem dışarıdan anahtarla çalışır",
+      "Güvenlik: hırsızlığa karşı korumalı, yüksek güvenlikli tasarım"
     ]
   },
   "300-panic-exit-device": {
@@ -1311,16 +1308,6 @@
   },
   "303-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Çelik veya paslanmaz çelik panik çıkış cihazı, bina uygulamaları için.",
-    "features": [
-      "Tek noktadan kilitleme sistemi",
-      "Emniyet kilidi mekanizması",
-      "Açıkta montaj tipi tasarım",
-      "Tam boy panik bar",
-      "Uzunluk kapı genişliğine göre ayarlanabilir",
-      "Birden fazla renk seçeneği mevcuttur",
-      "90 dakika yangın dayanımı testinden geçmiştir"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1342,6 +1329,15 @@
         "label": "Application",
         "value": "İnşaat sektörü makineleri"
       }
+    ],
+    "summary": "900 mm itme barlı, çelik veya paslanmaz çelik panik çıkış cihazı; saten nikel, krom, antik pirinç veya parlak pirinç kaplama.",
+    "features": [
+      "Tek noktadan kilitleme sistemi",
+      "Emniyet kilit mekanizması",
+      "Açıkta (sıva üstü) tip tasarım",
+      "Tam boy itme barı",
+      "Kapı genişliğine göre ayarlanabilir uzunluk",
+      "Birden fazla renk seçeneği mevcuttur"
     ]
   },
   "305-fire-door-panic-exit-device": {
@@ -1457,9 +1453,9 @@
   "308-d-d-panic-exit-device": {
     "name": "D Serisi Panik Çıkış Cihazı",
     "summary": "D serisi panik çıkış cihazı.",
-    "description": "308-D model d serisi panik çıkış cihazı, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "308-D model panik çıkış cihazı, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "308-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
@@ -1484,9 +1480,9 @@
   "308-s-s-panic-exit-device": {
     "name": "S Serisi Panik Çıkış Cihazı",
     "summary": "S serisi panik çıkış cihazı.",
-    "description": "308-S model s serisi panik çıkış cihazı, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "308-S model panik çıkış cihazı, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "309-d-double-door-panic-exit-device": {
     "name": "Çift Kanatlı Kapı Panik Çıkış Cihazı",
@@ -1625,29 +1621,6 @@
   },
   "313-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "• Çift kanatlı kapı sistemleri için üst ve alt sürgü bağlantısını destekler",
-    "features": [
-      "Temel özellikler",
-      "• Aks mesafesi seçeneği: 72 mm / 92 mm",
-      "• Kare mil ölçüsü: 9 mm",
-      "• EN1125 sertifikalı, >300.000 çevrim dayanıklılık testi",
-      "• Tek ve çift kanatlı kapılara uygun",
-      "• Sağ/sol yöne çevrilebilir, yön seçimi gerekmez",
-      "Teknik parametreler",
-      "• Maks. kapı ağırlığı: ≥200 kg",
-      "• Maks. kapı yüksekliği: 2520 mm",
-      "• Maks. kapı genişliği: 1500 mm",
-      "• Çalışma sıcaklığı: -10 °C – +60 °C",
-      "• DIN sol/sağ kapı montajını destekler",
-      "Başlıca özellikler",
-      "• Tek basışta açılır – hızlı tahliye",
-      "• Yüksek yük dayanımlı sağlam yapı, uzun süreli güvenilirlik",
-      "• Kolay montaj, geniş uyumluluk",
-      "• Çift kanatlı kapı sistemleri için üst ve alt sürgü bağlantısını destekler",
-      "Acil çıkış kapıları, yangın kapıları ve duman kontrol kapıları için uygundur",
-      "Yoğun kullanılan kamusal alanlar için önerilir:",
-      "Alışveriş merkezleri / Hastaneler / Okullar / Sinemalar / Stadyumlar / Ofis binaları / Fuar merkezleri / Havalimanları / Metro ve ulaşım aktarma merkezleri"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -1669,6 +1642,25 @@
         "label": "Color Options",
         "value": "Farklı renkler mevcut (özelleştirilebilir)"
       }
+    ],
+    "summary": "Demir ve ABS gövdeli, alüminyum itme barlı panik bar; tek kanatlı kapılar ve üst-alt sürgülerle çift kanatlı kapılar için.",
+    "features": [
+      "Aks mesafesi opsiyonel: 72 mm / 92 mm",
+      "Kare mil ölçüsü: 9 mm.",
+      "Tek ve çift kanatlı kapılara uygundur",
+      "Sol/sağ yön için çevrilebilir, yön seçimi gerekmez",
+      "Maks. kapı ağırlığı: ≥200 kg",
+      "Maks. kapı yüksekliği: 2520 mm",
+      "Maks. kapı genişliği: 1500 mm",
+      "Çalışma sıcaklığı: -10°C ~ +60°C",
+      "DIN sol/sağ kapı montajını destekler",
+      "Tek itişle açılır – hızlı tahliye",
+      "Yüksek yük dayanımlı sağlam yapı, uzun süreli güvenilirlik",
+      "Kolay montaj, geniş uyumluluk",
+      "Çift kanatlı kapı sistemleri için üst ve alt sürgü bağlantısını destekler",
+      "Acil çıkış kapıları, yangın kapıları ve duman kontrol kapıları için uygundur",
+      "Yoğun trafikli kamusal alanlar için önerilir:",
+      "Alışveriş merkezleri / Hastaneler / Okullar / Sinemalar / Stadyumlar / Ofis binaları / Fuar merkezleri / Havalimanları / Metro ve ulaşım merkezleri"
     ]
   },
   "314-alarm-panic-bar-exit-device": {
@@ -5962,12 +5954,6 @@
   "6491abet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Antik pirinç (US5) kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay monte edilen kilit takımı; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Korozyona karşı çinko kaplı çelik şasi ve dil gövdesi",
-      "Görünen parçalar dövme paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6009,6 +5995,12 @@
         "label": "Finish",
         "value": "Antik pirinç (US5)"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilen kilit takımı, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil gövdesi",
+      "Görünür trim dövme paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "65-snkt-lock-cylinder": {
@@ -6532,22 +6524,6 @@
   "70750-pb-grip-handle-set": {
     "name": "Çekme Kol Takımı",
     "summary": "Parlak pirinç (PB) kaplamalı zamak çekme kol takımı; dil ve sürgü için 60 mm / 70 mm ayarlanabilir backset.",
-    "features": [
-      "Başlıca özellikler:",
-      "Kaliteli yapı: parlak pirinç kaplamalı dayanıklı zamak; dış parçalar dövme pirinç veya elektrolitik kaplamalı zamak döküm.",
-      "Daha yüksek güvenlik:",
-      "– Çelik takviyeli 1\" (25 mm) sürgü",
-      "– 1/2\" (13 mm) dil çıkışı",
-      "– Zorlamaya karşı dönen silindir rozeti",
-      "– Dışarıda görünen bağlantı elemanı yok",
-      "Kolay montaj:",
-      "– Standart 2\" (51 mm) ana deliğe uyar",
-      "– Ayarlanabilir backset: 2-3/8\" veya 2-3/4\" (60 mm veya 70 mm)",
-      "– Sağ veya sol kapılar için çevrilebilir",
-      "– Kapı kalınlığı: 1-3/8\" – 1-3/4\" (35–45 mm)",
-      "Ürün açıklaması:",
-      "Giriş kapılarına şıklık ve işlevsellik katan parlak pirinç çekme kol takımı. Standart kapı delikleriyle uyumludur; hem değişim hem yeni montaj için idealdir."
-    ],
     "specs": [
       {
         "label": "Material",
@@ -6593,6 +6569,18 @@
         "label": "Feature",
         "value": "Dışta görünür bağlantı yok; serbest dönen silindir halkası zorlamaya karşı direnir"
       }
+    ],
+    "features": [
+      "Üstün yapı: parlak pirinç kaplamalı dayanıklı zamak (çinko alaşımı); dış parçalar dövme pirinçten veya elektrolitik kaplı zamak dökümden üretilir.",
+      "1” (25 mm) çelik takviyeli sürgü dili",
+      "1/2” (13 mm) dil uzantısı",
+      "Zorlamaya karşı dönen silindir halkası",
+      "Dış yüzde açıkta vida yok",
+      "Standart 2” (51 mm) kapı yüzü deliğine uygundur",
+      "Ayarlanabilir backset: 2-3/8” veya 2-3/4” (60 mm veya 70 mm)",
+      "Sol veya sağ yönlü kapılar için çevrilebilir",
+      "Uygun kapı kalınlığı: 1-3/8” – 1-3/4” (35–45 mm)",
+      "Giriş kapılarına zarafet ve işlevsellik katmak için tasarlanmış parlak pirinç tutamaklı kol takımı. Standart kapı hazırlıklarıyla uyumludur; hem değişim hem de yeni montaj için idealdir."
     ]
   },
   "70780-ab-grip-handle-set": {
@@ -7405,13 +7393,6 @@
   "816-pbet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Parlak pirinç (US3) kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandalla kilitleme/açma",
-      "Her iki taraf aynı anda kilitlenir",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7453,18 +7434,18 @@
         "label": "Finish",
         "value": "Parlak pirinç (US3)"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesiyle kilitleme/açma",
+      "Her iki kol eşzamanlı kilitlenir",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "816-snet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
-    "features": [
-      "Konut kullanımı için ekonomik, kolay monte edilen kilit takımı",
-      "Anahtar veya içteki mandal her iki tarafı çalıştırır",
-      "İçteki mandal ya da anahtar çevrildiğinde iki taraf aynı anda kilitlenir/açılır",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7506,6 +7487,13 @@
         "label": "Finish",
         "value": "Saten nikel"
       }
+    ],
+    "features": [
+      "Konut kullanımı için ekonomik, kolay monte edilen kilit takımı",
+      "Anahtar veya çevirme düğmesi her iki kolu çalıştırır",
+      "İçteki çevirme düğmesi veya anahtar çevrildiğinde kilitleme/açma eşzamanlı gerçekleşir",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "819-pbet-lever-handle": {
@@ -7608,13 +7596,6 @@
   "853-snbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Uygun maliyetli ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7656,17 +7637,17 @@
         "label": "Finish",
         "value": "Saten nikel"
       }
+    ],
+    "features": [
+      "Uygun maliyetli ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "853-ssbk-lever-handle": {
     "name": "Kapı Kolu",
-    "features": [
-      "Uygun maliyetli ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7709,7 +7690,14 @@
         "value": "Saten paslanmaz çelik (US32D)"
       }
     ],
-    "summary": "Saten paslanmaz çelik (US32D) kaplamalı zamak (çinko alaşımı) kapı kolu, mahremiyet fonksiyonu."
+    "summary": "Saten paslanmaz çelik (US32D) kaplamalı zamak (çinko alaşımı) kapı kolu, mahremiyet fonksiyonu.",
+    "features": [
+      "Uygun maliyetli ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+    ]
   },
   "8803-snbk-lever-handle": {
     "name": "Kapı Kolu",
@@ -7761,13 +7749,6 @@
   "8826-snbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Uygun maliyetli ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki tarafı kilitler/açar",
-      "Mandal saat yönünün tersine veya anahtar saat yönünde çevrildiğinde kilitlenir; ters yöne çevrildiğinde açılır",
-      "Daha yüksek korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7809,18 +7790,18 @@
         "label": "Finish",
         "value": "Saten nikel"
       }
+    ],
+    "features": [
+      "Uygun maliyetli ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesiyle her iki kol kilitlenir/açılır",
+      "Çevirme düğmesi saat yönünün tersine veya anahtar saat yönünde çevrildiğinde kollar kilitlenir; açmak için ters yönde çevirin",
+      "Daha yüksek korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "8826-snet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitleme: mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -7862,6 +7843,13 @@
         "label": "Finish",
         "value": "Saten nikel"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "8827-sset-lever-handle": {
@@ -8276,14 +8264,14 @@
   },
   "9007-stainless-steel-handle": {
     "name": "Paslanmaz Çelik Kapı Kolu",
-    "summary": "Paslanmaz çelik kapı kolu.",
     "features": [],
     "specs": [
       {
         "label": "Material",
         "value": "Paslanmaz çelik"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı kolu."
   },
   "9007e-stainless-steel-handle": {
     "name": "Paslanmaz Çelik Kapı Kolu",
@@ -8731,7 +8719,6 @@
   "9088-ss-stainless-steel-handle": {
     "name": "Paslanmaz Çelik Kapı Kolu",
     "summary": "200 × 50 mm SUS 304 aynalar üzerinde paslanmaz çelik kapı kolu takımı; gömme kilit gövdesi (58 mm aks mesafesi, 45 mm backset), dışta anahtarlı, içte mandallı Avrupa silindir ve her aynanın arkasında geri dönüş yayı. Komple set olarak verilir.",
-    "description": "9088 SS model paslanmaz çelik kapı kolu, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Aynalar 200 × 50 mm, 1 mm kalınlığında SUS 304 paslanmaz çeliktir; bağlantı delikleri arası 170 mm'dir. Sette 175 mm alın plakalı, 45 mm backset ve 58 mm kol-silindir aks mesafeli gömme kilit gövdesi, dil ve kare sürgü ile dışta anahtarlı, içte mandallı zamak Avrupa silindir bulunur. Bu sayfadaki her ölçü fabrikanın kendi ölçülendirilmiş fotoğraflarından okunmuştur. Kapı kalınlığı aralığı ve kol çıkıntısı henüz yayımlanmadı; tahmini değil, ölçülmüş değerler için ihracat ekibimize sorun.",
     "features": [],
     "specs": [
       {
@@ -8794,7 +8781,8 @@
         "label": "Supplied with",
         "value": "Bir çift aynalı kol, gömme kilit gövdesi, anahtarlı Avrupa silindir, kare mil, karşılık, bağlantı vidaları ve montaj parçaları"
       }
-    ]
+    ],
+    "description": "9088 SS, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilen, uzun aynalı paslanmaz çelik kapı kolu takımıdır. Aynalar 200 × 50 mm ölçüsünde, 1 mm kalınlığında SUS 304 paslanmaz çeliktir; vida delikleri arası 170 mm'dir. Set; 175 mm alın plakalı, 45 mm backset ve 58 mm kol-silindir aks mesafesine sahip, dil ve kare sürgü dilli gömme kilit gövdesi ile dışta anahtarlı, içte mandallı zamak Avrupa silindirden oluşur. Bu sayfadaki her değer fabrikanın kendi ölçülü fotoğraflarından okunmuştur. Kapı kalınlığı aralığı ve kol çıkıntısı henüz yayımlanmadı; tahmin yerine ölçülmüş değerler için ihracat ekibimize sorun."
   },
   "9210-pbbk-tubular-lock": {
     "name": "Tübüler Kilit",
@@ -8826,10 +8814,10 @@
   },
   "aah024-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "description": "AAH024 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
-    "summary": "Canton Hyland tarafından üretilen AAH024 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
+    "summary": "Canton Hyland tarafından üretilen AAH024 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir.",
+    "description": "AAH024 model kapı menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "ai8530-lock-case": {
     "name": "Kilit Gövdesi",
@@ -8880,10 +8868,6 @@
   },
   "b024-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "features": [
-      "Genel bilgi",
-      "Paslanmaz çelik menteşe (çıkarılabilir pimli)"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8906,14 +8890,15 @@
         "value": "90-180°"
       }
     ],
-    "summary": "Pirinç kapı menteşesi; 2.0–3.5 mm kalınlık, 90–180 derece açılma. Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre."
+    "summary": "Pirinç kapı menteşesi; 2.0–3.5 mm kalınlık, 90–180 derece açılma. Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre.",
+    "features": [
+      "Pirinç kanatlar, 2.0–3.5 mm kalınlıkta",
+      "90 ila 180 derece açılır",
+      "Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre"
+    ]
   },
   "b025-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "features": [
-      "Genel bilgi",
-      "Paslanmaz çelik menteşe (çıkarılabilir pimli)"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -8940,7 +8925,12 @@
         "value": "Müşteri talebine göre özelleştirilebilir"
       }
     ],
-    "summary": "Pirinç kapı menteşesi, 90–180 derece açılma. Antik pirinç, antik bakır, parlak pirinç, saten pirinç, paslanmaz çelik, ayna parlak veya saten krom kaplama; ölçü siparişe göre üretilir."
+    "summary": "Pirinç kapı menteşesi, 90–180 derece açılma. Antik pirinç, antik bakır, parlak pirinç, saten pirinç, paslanmaz çelik, ayna parlak veya saten krom kaplama; ölçü siparişe göre üretilir.",
+    "features": [
+      "Pirinç kanatlar, ölçü siparişe göre",
+      "90 ila 180 derece açılır",
+      "Antik pirinç, antik bakır, parlak pirinç, saten pirinç, paslanmaz çelik, ayna parlak veya saten krom"
+    ]
   },
   "bh01-grab-bar": {
     "name": "Tutunma Barı",
@@ -10332,10 +10322,10 @@
   },
   "bl029-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "description": "BL029 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
-    "summary": "Canton Hyland tarafından üretilen BL029 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
+    "summary": "Canton Hyland tarafından üretilen BL029 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir.",
+    "description": "BL029 model kapı menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "bl030-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
@@ -10584,9 +10574,9 @@
   "d01-ab-deadbolts": {
     "name": "Sürgü Kilitler",
     "summary": "Canton Hyland tarafından üretilen D01 AB model sürgü kilitler.",
-    "description": "D01 AB model sürgü kilitler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "D01 AB model sürgü kilit, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "d101-ab-deadbolts": {
     "name": "Sürgü Kilitler",
@@ -11200,13 +11190,12 @@
   "d103-ac-deadbolts": {
     "name": "Sürgü Kilitler",
     "summary": "Canton Hyland tarafından üretilen D103 AC model sürgü kilitler.",
-    "description": "D103 AC model sürgü kilitler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
-    "specs": []
+    "specs": [],
+    "description": "D103 AC model sürgü kilit, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "dc01-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Çinko kaplı demir panik çıkış cihazı.",
     "features": [
       "Çinko kaplamalı yüksek kaliteli demir yapı; korozyona çok dayanıklıdır ve uzun ömürlüdür. Uzun süreli ticari ve endüstriyel kullanıma uygundur."
     ],
@@ -11227,7 +11216,8 @@
         "label": "Installation",
         "value": "Sıva üstü, vidalı sabitleme"
       }
-    ]
+    ],
+    "summary": "Çift kanatlı yangın kapıları için çinko kaplı demir kapı sıralayıcı; yüzeye monte, vidalı sabitleme, kapanma hızını ve kuvvetini kontrol eder."
   },
   "dc02-door-coordinator": {
     "name": "Kapı Kapanma Sıralayıcı",
@@ -11360,7 +11350,6 @@
   },
   "ds011-door-stopper": {
     "name": "Kapı Stoperi",
-    "summary": "Pirinç gömme kapı sürgüsü.",
     "features": [],
     "specs": [
       {
@@ -11371,7 +11360,8 @@
         "label": "Finish",
         "value": "BP, antik pirinç (AB), antik bakır (AC), nikel kaplama (NP), NB, CB, krom kaplama (CP), saten nikel (SN), BC"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı stoperi; antik pirinç, antik bakır, krom ve saten nikel dahil kaplama seçenekleriyle."
   },
   "ds013-door-stopper": {
     "name": "Kapı Stoperi",
@@ -11424,7 +11414,6 @@
   },
   "ds05-door-stopper": {
     "name": "Kapı Stoperi",
-    "summary": "Paslanmaz çelik kapı stoperi, Ø44 × 24 mm.",
     "features": [],
     "specs": [
       {
@@ -11439,7 +11428,8 @@
         "label": "Finish",
         "value": "Paslanmaz çelik (SS), BC, krom kaplama (CP), GP, CB, antik pirinç (AB), antik bakır (AC)"
       }
-    ]
+    ],
+    "summary": "Paslanmaz çelik kapı stoperi, Ø44 × 24 mm."
   },
   "ds09-door-stopper": {
     "name": "Kapı Stoperi",
@@ -11466,7 +11456,6 @@
   },
   "dsl02-panic-exit-device": {
     "name": "Panik Çıkış Cihazı",
-    "summary": "Hassas yay mekanizması ve ayarlanabilir gerginlik vidası kapanma kuvvetini esnek biçimde kontrol eder; naylon makara tasarımı aşınmayı azaltır ve ömrü uzatır.",
     "features": [
       "Bu çift kanat kapanma sıralayıcı, yangın dayanımlı ve ticari çift kanatlı kapı sistemleri için tasarlanmıştır.",
       "Dayanıklı 304 paslanmaz çelikten üretilir; kanatları yumuşak, kararlı ve sessiz biçimde otomatik sıralar.",
@@ -11498,7 +11487,8 @@
         "label": "Roller Material",
         "value": "Naylon"
       }
-    ]
+    ],
+    "summary": "Çift kanatlı kapılar için 304 paslanmaz çelik kapı sıralayıcı; ayarlanabilir kapanma kuvveti ve naylon makaralar."
   },
   "dust-proof-01-door-viewer": {
     "name": "Kapı Dürbünü",
@@ -11547,10 +11537,6 @@
   },
   "dv05-bl-door-viewer": {
     "name": "Kapı Dürbünü",
-    "summary": "CP, PB, SC, SN, AB, AC ve ORB kaplama seçenekli pirinç kapı dürbünü; dışarıyı izleme fonksiyonu.",
-    "features": [
-      "Genel bilgi:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11564,14 +11550,12 @@
         "label": "Function",
         "value": "Dış mekân gözetimi"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı dürbünü; krom, parlak pirinç, saten krom, saten nikel, antik pirinç, antik bakır veya eskitme bronz kaplama.",
+    "features": []
   },
   "dv05-door-viewer": {
     "name": "Kapı Dürbünü",
-    "summary": "CP, PB, SC, SN, AB, AC ve ORB kaplama seçenekli pirinç kapı dürbünü; dışarıyı izleme fonksiyonu.",
-    "features": [
-      "Genel bilgi:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11601,14 +11585,12 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı dürbünü; krom, parlak pirinç, saten krom, saten nikel, antik pirinç, antik bakır veya eskitme bronz kaplama.",
+    "features": []
   },
   "dv06-door-viewer": {
     "name": "Kapı Dürbünü",
-    "summary": "CP, PB, SC, SN, AB, AC ve ORB kaplama seçenekli pirinç kapı dürbünü; dışarıyı izleme fonksiyonu.",
-    "features": [
-      "Genel bilgi:"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -11638,7 +11620,9 @@
         "label": "Viewing Angle",
         "value": "180° / 200°"
       }
-    ]
+    ],
+    "summary": "Pirinç kapı dürbünü; krom, parlak pirinç, saten krom, saten nikel, antik pirinç, antik bakır veya eskitme bronz kaplama.",
+    "features": []
   },
   "dv07-door-viewer": {
     "name": "Kapı Dürbünü",
@@ -12371,7 +12355,6 @@
   },
   "f100-ss-door-hinge": {
     "name": "Kapı Menteşesi",
-    "summary": "Açılma/kapanma hızı ve yay gerginliği ayarlanabilen menteşe.",
     "features": [
       "Uygulama: mutfaklar, koridorlar ve konut kapıları için uygun.",
       "Fonksiyon: açılma/kapanma hızı ve yay gerginliği ayarlanabilir. Her iki yönde 116° açılır; 0°, 88° ve 116°'de durma noktaları vardır."
@@ -12405,7 +12388,8 @@
         "label": "Closing Force",
         "value": "25 N·m"
       }
-    ]
+    ],
+    "summary": "80 kg'a kadar ahşap kapılar için demir çift yönlü yaylı menteşe; hız ve gerginlik ayarlanabilir, her iki yöne 116° açılır, 0°, 88° ve 116°'de durur."
   },
   "f101-glass-door-patch-fittings": {
     "name": "Cam Kapı Patch Fitting'leri",
@@ -13071,7 +13055,6 @@
   },
   "hy-0ss-lock-case": {
     "name": "Kilit Gövdesi",
-    "summary": "Paslanmaz çelik kapı dili koruma plakası; saten kaplamalı, sağlam ve korozyona dayanıklı malzeme, uzun süreli kullanım için.",
     "features": [
       "Paslanmaz çelik kapı dili koruma plakası; saten kaplamalı, sağlam ve korozyona dayanıklı malzeme, uzun süreli kullanım için.",
       "Kanırtmaya karşı kapı güvenlik plakası: dil bölgesini güçlendirerek zorla girişi önler, kapı güvenliğini artırır",
@@ -13119,7 +13102,8 @@
         "label": "Design",
         "value": "Dili tamamen kaplar"
       }
-    ]
+    ],
+    "summary": "Dışa açılan kapılar için 304 paslanmaz çelik dil koruyucu; dili örterek kanırtmaya karşı korur. Avustralya pazarı için üretilir ve 304 paslanmaz vidalarla birlikte verilir."
   },
   "hy006dk-lock-case": {
     "name": "Kilit Gövdesi",
@@ -13254,7 +13238,6 @@
   },
   "hy007-s-lock-case": {
     "name": "Kilit Gövdesi",
-    "summary": "Açık tutma fonksiyonlu emniyet dilli gömme kilit gövdesi.",
     "features": [
       "Bu ticari alüminyum mağaza kapısı itme-çekme kollu kilit takımı; alüminyum cam kapılar, dükkân kapıları, ofis kapıları ve ticari girişler için tasarlanmıştır.",
       "Sağ ve sol yön seçenekleri mevcuttur. Açık tutma fonksiyonu gerektiğinde dili içeride tutar; mesai saatlerinde ve yoğun dönemlerde rahat geçiş sağlar.",
@@ -13309,7 +13292,8 @@
         "label": "Suitable For",
         "value": "Mağazalar, ofisler, AVM'ler, süpermarketler, ticari binalar"
       }
-    ]
+    ],
+    "summary": "Alüminyum vitrin ve cam kapılar için demir gövdeli, itme-çekme kulplu kilit seti; otomatik kilitlenen dil ve açık tutma fonksiyonu, sol veya sağ yön."
   },
   "hy008-lock-case": {
     "name": "Kilit Gövdesi",
@@ -13405,7 +13389,6 @@
   },
   "hyde-ar4-1121-hook-bolt-lock": {
     "name": "Kancalı Gömme Kilit",
-    "summary": "40 mm backset'li gömme kilit gövdesi.",
     "features": [],
     "specs": [
       {
@@ -13428,7 +13411,8 @@
         "label": "Key options",
         "value": "Zamak veya pirinç; iki anahtar"
       }
-    ]
+    ],
+    "summary": "40 mm backset ve 25 × 140 mm alın plakalı kancalı dil gömme kilit gövdesi; iki anahtarla birlikte verilir."
   },
   "hyde-ar4-140-mortise-lock": {
     "name": "Dar Profil Gömme Kilit Gövdesi",
@@ -14894,7 +14878,6 @@
   },
   "lc9045-lock-case": {
     "name": "Kilit Gövdesi",
-    "summary": "PB/AB/AC/SS/SN kaplama seçenekli (tümü mevcut) demir gömme kilit gövdesi; 45 mm aks mesafesi, 90 mm backset.",
     "features": [
       "Fonksiyonlar: giriş, panik, mahremiyet, geçiş, depo, sürgü kilit, sınıf, çok fonksiyonlu",
       "Seçenekler: 85 serisi, 72 serisi ve küçük ölçülü kilit gövdeleri",
@@ -14937,7 +14920,8 @@
         "label": "Cylinder center to back",
         "value": "45 mm"
       }
-    ]
+    ],
+    "summary": "Aks mesafesi ve backset olarak 45 mm ve 90 mm yayımlanan demir gömme kilit gövdesi; parlak pirinç, antik pirinç, antik bakır, paslanmaz çelik veya saten nikel kaplama."
   },
   "lc9230-lock-case": {
     "name": "Kilit Gövdesi",
@@ -15127,13 +15111,6 @@
   "lh852-bnbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Siyah nikel kaplamalı zamak kapı kolu; 60/70 mm backset, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandal her iki tarafı aynı anda kilitler/açar",
-      "Kilitleme: mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik dil ve şasi",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15191,18 +15168,18 @@
         "label": "Application",
         "value": "Mahremiyet (WC) kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
+      "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik dil ve şasi",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh852-bnet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Siyah nikel kaplamalı kapı kolu, giriş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandal her iki tarafı aynı anda kilitler/açar",
-      "Kilitleme: mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik dil ve şasi",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15260,18 +15237,18 @@
         "label": "Application",
         "value": "Mahremiyet (WC) kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
+      "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik dil ve şasi",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh852-bnps-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Siyah nikel kaplamalı zamak kapı kolu; 60/70 mm backset, geçiş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandal her iki tarafı aynı anda kilitler/açar",
-      "Kilitleme: mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik dil ve şasi",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15329,18 +15306,18 @@
         "label": "Application",
         "value": "Geçiş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
+      "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik dil ve şasi",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh852-gmbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Füme metal kaplamalı zamak kapı kolu; 60/70 mm backset, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandal her iki tarafı aynı anda kilitler/açar",
-      "Kilitleme: mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik dil ve şasi",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15398,18 +15375,18 @@
         "label": "Application",
         "value": "Mahremiyet (WC) kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
+      "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik dil ve şasi",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh853-cpbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Krom kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15455,18 +15432,18 @@
         "label": "Application",
         "value": "Giriş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh853-cpps-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Krom kaplamalı kapı kolu, geçiş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15512,18 +15489,18 @@
         "label": "Application",
         "value": "Giriş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh853-snbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15569,18 +15546,18 @@
         "label": "Application",
         "value": "Giriş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh853-snet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15626,18 +15603,18 @@
         "label": "Application",
         "value": "Giriş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh853-snps-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı kapı kolu, geçiş fonksiyonu.",
-    "features": [
-      "Ekonomik ve kolay montaj; konut kullanımı için ideal",
-      "Anahtar veya içteki mandal her iki kolu kilitler/açar",
-      "Kilitlemek için mandalı saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yöne çevirin",
-      "Korozyon dayanımı için çinko kaplı çelik şasi ve dil",
-      "Görünen parçalar paslanmaz çelik veya pirinç olarak sunulur"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15683,6 +15660,13 @@
         "label": "Application",
         "value": "Giriş kapıları için"
       }
+    ],
+    "features": [
+      "Ekonomik ve kolay monte edilir, konut kullanımı için ideal",
+      "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
+      "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
+      "Korozyon direnci için çinko kaplı çelik şasi ve dil",
+      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
     ]
   },
   "lh854-lever-handle": {
@@ -15778,13 +15762,6 @@
   "lh855-bnbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Siyah nikel kaplamalı kapı kolu, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Uygun fiyatlı ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandalla her iki tarafı kilitleme/açma",
-      "Basit kullanım: çevirerek kilitleme veya açma",
-      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
-      "Görünen parça seçenekleri: dövme paslanmaz çelik veya pirinç"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15830,6 +15807,13 @@
         "label": "Application",
         "value": "Mahremiyet (WC) kapıları için"
       }
+    ],
+    "features": [
+      "Uygun fiyatlı ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesiyle her iki kolu kilitleme/açma",
+      "Basit kullanım: kilitlemek veya açmak için çevirin",
+      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
+      "Trim seçenekleri: dövme paslanmaz çelik veya pirinç"
     ]
   },
   "lh855-lever-handle": {
@@ -15878,13 +15862,6 @@
   "lh855-snbk-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, mahremiyet (banyo) fonksiyonu.",
-    "features": [
-      "Uygun fiyatlı ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandalla her iki tarafı kilitleme/açma",
-      "Basit kullanım: çevirerek kilitleme veya açma",
-      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
-      "Görünen parça seçenekleri: dövme paslanmaz çelik veya pirinç"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15930,18 +15907,18 @@
         "label": "Application",
         "value": "Mahremiyet (WC) kapıları için"
       }
+    ],
+    "features": [
+      "Uygun fiyatlı ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesiyle her iki kolu kilitleme/açma",
+      "Basit kullanım: kilitlemek veya açmak için çevirin",
+      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
+      "Trim seçenekleri: dövme paslanmaz çelik veya pirinç"
     ]
   },
   "lh855-snet-lever-handle": {
     "name": "Kapı Kolu",
     "summary": "Saten nikel kaplamalı zamak kapı kolu; 60/70 mm backset, giriş fonksiyonu.",
-    "features": [
-      "Uygun fiyatlı ve kolay montaj; konut uygulamaları için ideal",
-      "Anahtar veya içteki mandalla her iki tarafı kilitleme/açma",
-      "Basit kullanım: çevirerek kilitleme veya açma",
-      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
-      "Görünen parça seçenekleri: dövme paslanmaz çelik veya pirinç"
-    ],
     "specs": [
       {
         "label": "Material",
@@ -15983,6 +15960,13 @@
         "label": "Finish",
         "value": "Saten nikel"
       }
+    ],
+    "features": [
+      "Uygun fiyatlı ve kolay monte edilir, konut uygulamaları için ideal",
+      "Anahtar veya çevirme düğmesiyle her iki kolu kilitleme/açma",
+      "Basit kullanım: kilitlemek veya açmak için çevirin",
+      "Daha yüksek dayanıklılık için çinko kaplı çelik dil ve şasi",
+      "Trim seçenekleri: dövme paslanmaz çelik veya pirinç"
     ]
   },
   "nc013-stainless-steel-handle": {
@@ -16756,10 +16740,10 @@
   },
   "ssh021-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",
-    "description": "SSH021 model pirinç ve çelik menteşeler, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
-    "summary": "Canton Hyland tarafından üretilen SSH021 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir."
+    "summary": "Canton Hyland tarafından üretilen SSH021 kapı menteşesi; malzeme ve ölçü sipariş öncesinde teyit edilir.",
+    "description": "SSH021 model kapı menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız."
   },
   "ssh022-brass-and-steel-hinges": {
     "name": "Pirinç ve Çelik Menteşeler",

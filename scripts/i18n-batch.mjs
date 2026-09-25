@@ -31,7 +31,7 @@ const index = Number(opt("index", "1"));
 const section = opt("section");
 const LOCALES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"];
 if (!LOCALES.includes(locale) || !kind) {
-  console.error("usage: node scripts/i18n-batch.mjs --locale <fr|de|ja|ko|tr|ru|ar> --kind <products|categories|ui|glossary|news|guides|projects|faq> [--size 60] [--index 1] [--section specLabels]");
+  console.error("usage: node scripts/i18n-batch.mjs --locale <fr|de|ja|ko|tr|ru|ar> --kind <products|categories|ui|glossary|news|guides|projects|faq> [--size 60] [--index 1] [--section specLabels] [--slugs map.json]");
   process.exit(2);
 }
 const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
@@ -49,18 +49,29 @@ function records(folder) {
 }
 
 let items = [];
+/*
+  --slugs <json>: a `{ slug: ["summary", "features"] }` map (or a plain array of slugs) that
+  forces those products into the job regardless of what is already translated, carrying the
+  field list as `retranslate` so the writer redoes exactly those fields and copies the rest.
+  Cut by comparing content/products between two commits after the English side edits copy
+  (2026-09-25: 47 records, summaries / features / template descriptions).
+*/
+const slugsFile = opt("slugs");
+const forced = slugsFile ? readJson(slugsFile) : null;
+const forcedMap = Array.isArray(forced) ? Object.fromEntries(forced.map((s) => [s, ["name", "summary", "description", "features", "specs"]])) : forced;
 if (kind === "products") {
   const done = overlay("products");
   const complete = (t) => t && t.name && t.summary && Array.isArray(t.specs);
   items = records("products")
     .filter(published)
-    .filter((p) => !complete(done[p.slug]))
+    .filter((p) => (forcedMap ? Boolean(forcedMap[p.slug]) : !complete(done[p.slug])))
     .sort((a, b) => a.slug.localeCompare(b.slug))
     .map((p) => ({
       key: p.slug,
       model: p.model,
       category: p.categoryPath[0],
       material: p.material ?? "",
+      ...(forcedMap ? { retranslate: forcedMap[p.slug] } : {}),
       source: {
         name: p.name,
         summary: p.summary,
