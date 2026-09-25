@@ -493,6 +493,7 @@ export const PRODUCT_NAMES_PT: Record<string, string> = {
   "Gate House No": "Número de porta",
   "Stainless Steel Wall Hook": "Gancho de parede em inox",
   "Bathroom Accessories": "Acessórios de banheiro",
+  "Piano Hinge": "Dobradiça piano",
   "Knurled Grab Bar": "Barra de apoio recartilhada",
   "Angled Grab Bar": "Barra de apoio angular",
   "Hook Rail": "Cabideiro de parede",

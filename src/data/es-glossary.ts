@@ -1552,6 +1552,7 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
 
   // Bathroom
   "Bathroom Accessories": "Accesorios de baño",
+  "Piano Hinge": "Bisagra de piano",
   "Knurled Grab Bar": "Barra de apoyo moleteada",
   "Angled Grab Bar": "Barra de apoyo en ángulo",
   "Hook Rail": "Perchero de pared",
