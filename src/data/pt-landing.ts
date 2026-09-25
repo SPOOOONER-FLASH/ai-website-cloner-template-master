@@ -97,9 +97,9 @@ export const ptLanding = {
   ] satisfies PtSection[],
 
   contact: {
-    heading: "Falar connosco",
+    heading: "Fale conosco",
     body: "Escreva em português — respondemos em inglês ou espanhol, o que for mais claro para a parte técnica.",
-    email: "lock@cantonlock.com",
+    email: "tec@cantonlock.com",
     technicalEmail: "tec@cantonlock.com",
   },
 

@@ -125,7 +125,8 @@ export function organisationSchema(): WithContext<Organization> {
               areaServed: "Worldwide",
               availableLanguage: ["en", "es", "zh-CN"],
             },
-            ...(siteSettings.contact.technicalEmail
+            ...(siteSettings.contact.technicalEmail &&
+            siteSettings.contact.technicalEmail !== siteSettings.contact.email
               ? [
                   {
                     "@type": "ContactPoint" as const,

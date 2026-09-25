@@ -112,10 +112,12 @@ export default function FerragensPortaCortaFogoPage() {
                 subject="Ferragens para porta corta-fogo — consulta"
               />
             </p>
-            <p className="text-c2 text-ink-secondary">
+            {ptLanding.contact.technicalEmail !== ptLanding.contact.email ? (
+              <p className="text-c2 text-ink-secondary">
               Perguntas técnicas, desenhos e dimensões:{" "}
               <EmailLink address={ptLanding.contact.technicalEmail} />
             </p>
+            ) : null}
             <div className="pt-8">
               <ArrowLink href="/pt/contact/">Formulário de contato</ArrowLink>
             </div>
