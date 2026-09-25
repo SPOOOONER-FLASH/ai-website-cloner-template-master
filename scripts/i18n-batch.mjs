@@ -60,6 +60,7 @@ if (kind === "products") {
       key: p.slug,
       model: p.model,
       category: p.categoryPath[0],
+      material: p.material ?? "",
       source: {
         name: p.name,
         summary: p.summary,

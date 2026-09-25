@@ -22,6 +22,7 @@
  * the writer can fix and re-run. `--dry` validates without writing.
  */
 import { untranslatable } from "./lib/i18n-untranslatable.mjs";
+import { materialConflict } from "./lib/i18n-material.mjs";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -119,6 +120,16 @@ for (const item of items) {
       delete got.description;
     }
     if (!checkShape(key, en, got)) continue;
+    /*
+      B024 (2026-09-25): a brass hinge whose summary said stainless, in seven languages. Summary
+      only — descriptions still carry the English template's category name ("brass and steel
+      hinges"), which is the English side's defect, not the translator's.
+    */
+    const clash = materialConflict(locale, item.material, got.summary);
+    if (clash) {
+      fail(key, `summary ${clash}`);
+      continue;
+    }
     overlay[key] = { ...(overlay[key] ?? {}), ...got };
     merged++;
   } else {

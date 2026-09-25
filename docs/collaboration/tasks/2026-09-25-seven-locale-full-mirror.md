@@ -63,7 +63,7 @@ downloads、finishes、model-lookup、glossary、documents、faq、certification
 - [ ] M5 新闻 37 篇 × 7。
 - [ ] M6 指南 44 篇 × 7。
 - [ ] M7 应用案例 5 篇 × 7（ja/ko/tr/ru/ar 已合入，fr/de 待重派）、首页文案、下载中心。
-- [ ] M4b 合并校验补一条（发布会话 09-25 抽查 B024 提出）：`i18n-batch` 产品作业带 `material`，`i18n-merge` 检查译文摘要/描述里的材质词（stainless / brass / zinc / aluminium 的各语种写法）不与 `material` 字段矛盾。B024 的英文摘要本身写错（Brass 写成 Stainless），七语种跟着错；英文源由文案会话改，改完按其给的 slug 重切重译。等文章子代理跑完再改 merge 脚本（它们正在调用它）。
+- [x] M4b 材质一致性校验（09-25）：`i18n-batch` 产品作业带 `material`，`i18n-merge` 用 `scripts/lib/i18n-material.mjs` 拒绝「摘要提到别的金属却从不提本品材质」的译文（只查 summary；description 的模板句嵌类目名是英文源的问题，已转文案会话）。首轮跑出 42 条——8 条「颜色当材质」产品的摘要丢了 Zinc alloy——已重译。
 - [ ] M8 母语抽查（阿、土、俄、日、韩）与页面级英文残留清零；Search Console 提交。
 
 ## 五、分工与守门
