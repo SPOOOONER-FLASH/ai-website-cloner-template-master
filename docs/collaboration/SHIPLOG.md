@@ -6,21 +6,25 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 615 次提交
+最近 30 天 · 共 619 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 08:17 | 中立 | 8826 SNBK 卖点：the knobs 改为 the levers | `b65e691a656` |
-| 08:10 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `86bf5ac7240` |
-| 08:09 | HYDE | Merge origin/main（七语种 M1–M4）；跳转规则取远端 1660 条并接上 18 条视频跳转 | `f708983ba62` |
-| 08:04 | 中立 | Cloudflare 报告处理：security.txt 上线、改名视频 18 条 301、手册 ⑥、AI 抓取数据进看板 | `ea1b3550713` |
-| 07:38 | 中立 | 目标清单：#49 ironmongery 与定制指南上线实测 | `59053732132` |
-| 07:32 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `48eb711354d` |
-| 07:31 | 中立 | 门孔图生成器两种拼写都认：美式拼写第二批（e834ca7c4df）后画 0 张 | `40150338333` |
-| 04:01 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `9c7a8a0a615` |
-| 04:01 | 中立 | GTM「Test」未检测到的真正原因：Cloudflare 对 Google 服务器出质询页（更正 09-25 早先的归因） | `303aba48df1` |
+| 08:18 | 中立 | Merge remote-tracking branch 'origin/main' | `b36844b73c4` |
+| 08:17 | 中立 | Merge remote-tracking branch 'origin/main' | `f9d270bbdf1` |
+| 08:16 | 中立 | 七语种：47 条改动产品按字段重译（摘要 17 / 卖点 29 / 模板描述 8）；新闻 37 篇六语种齐；i18n-batch 加 --slugs | `d11bb26b967` |
+| 08:09 | HYDE | search-index: rebuild (HYDE) | `db3a6791368` |
+| 08:08 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `897c0818d1b` |
+| 08:08 | 中立 | 模板描述里的类目名改成产品通用名（8 条） | `11781215902` |
+| 08:08 | 中立 | 英文源缺陷：17 条摘要重写，删掉两条无据认证，特性去标题并保持三语对齐 | `ea927737fec` |
+| 07:56 | 中立 | 英文页面同时写 door hardware 和 ironmongery：首页、产品页导语、服务页各一处 | `16ce1cc72f4` |
+| 07:49 | HYDE · 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `b896e7268be` |
+| 07:48 | HYDE | 摘要材质守卫：8 条摘要按规格改正（表面颜色不再冒充材质），加测试 | `00a53f3e6d9` |
+| 04:02 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `7b2c63bc9a2` |
+| 04:02 | HYDE | 合页英文摘要：B024/B025 改为黄铜，同族 23 条去掉误导的 brass and steel | `3d5f17bea16` |
+| 04:00 | 中立 | 审计：英文残留改按英文虚词占比判定（旧法把纯 ASCII 的法德语误判）；基准页数为 0（正在重建）时不算通过 | `f05176116f7` |
 | 03:57 | 中立 | 审计：统计导出页时容忍并发构建删除文件（避免 ENOENT 中断） | `a94fd884103` |
 | 03:54 | HYDE | 定制指南三语 SEO 定稿（brief 第 3 项）；头图登记取景框 | `289edd373d7` |
 | 03:51 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `950edf759c1` |
