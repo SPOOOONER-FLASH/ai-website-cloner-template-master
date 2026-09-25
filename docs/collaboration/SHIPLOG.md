@@ -6,12 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 610 次提交
+最近 30 天 · 共 612 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 04:01 | 中立 | GTM「Test」未检测到的真正原因：Cloudflare 对 Google 服务器出质询页（更正 09-25 早先的归因） | `303aba48df1` |
+| 03:57 | 中立 | 审计：统计导出页时容忍并发构建删除文件（避免 ENOENT 中断） | `a94fd884103` |
 | 03:54 | HYDE | 定制指南三语 SEO 定稿（brief 第 3 项）；头图登记取景框 | `289edd373d7` |
 | 03:51 | HYDE | Merge remote-tracking branch 'origin/main' into claude/copy | `950edf759c1` |
 | 03:51 | HYDE | 定制指南（custom door hardware / ironmongery）三语，服务页加 Custom tooling 段 | `2cb5747d571` |
