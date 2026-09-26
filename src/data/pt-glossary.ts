@@ -990,9 +990,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Fire double door":
     "Porta corta-fogo de duas folhas",
   "Fire doors / double doors":
-    "Portas corta-fogo / portas duplas",
+    "Portas corta-fogo / portas de duas folhas",
   "Fire Doors / Commercial Double Doors / Schools / Hospitals / Office Buildings / Commercial Projects":
-    "Portas corta-fogo / portas duplas comerciais / escolas / hospitais / edifícios de escritórios / obras comerciais",
+    "Portas corta-fogo / portas comerciais de duas folhas / escolas / hospitais / edifícios de escritórios / obras comerciais",
   "Zinc-Plated Steel":
     "Aço zincado",
   "Iron with zinc-plated finish":
@@ -1455,7 +1455,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "For fire-rated metal or wood doors":
     "Para portas corta-fogo de metal ou madeira",
   "Fire-rated double escape doors":
-    "Portas duplas de saída corta-fogo",
+    "Portas corta-fogo de saída de duas folhas",
   "Door lock":
     "Fechadura de porta",
   "Four round bolts":

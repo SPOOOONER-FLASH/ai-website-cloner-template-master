@@ -654,7 +654,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Entrance doors": "Puertas de entrada",
   "Sliding doors": "Puertas corredizas",
   "Emergency and escape doors": "Puertas de emergencia y evacuación",
-  "Fire-rated double escape doors": "Puertas dobles de evacuación cortafuego",
+  "Fire-rated double escape doors": "Puertas cortafuego de evacuación de dos hojas",
   "Residential and Commercial Use": "Uso residencial y comercial",
   "Standard residential use": "Uso residencial estándar",
   "Residential use": "Uso residencial",
@@ -682,8 +682,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "bathroom, living room": "Baño y sala",
   "Monitoring Outdoor": "Vigilancia en exteriores",
   "fix the door": "Fijación de puerta",
-  "Single Door": "Puerta simple",
-  "Double Door": "Puerta doble",
+  "Single Door": "Puerta de una hoja",
+  "Double Door": "Puerta de dos hojas",
   "wall-mount": "Montaje en pared",
   "Wall mounted": "Montaje en pared",
 
@@ -875,8 +875,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Room door, Entrance door.": "Puerta de habitación y puerta de acceso",
   "Fireproof doors": "Puertas cortafuego",
   "For fire-rated metal or wood doors": "Para puertas cortafuego metálicas o de madera",
-  "Fire doors / double doors": "Puertas cortafuego y puertas de doble hoja",
-  "Fire double door": "Puerta cortafuego de doble hoja",
+  "Fire doors / double doors": "Puertas cortafuego y puertas de dos hojas",
+  "Fire double door": "Puerta cortafuego de dos hojas",
   "Bathroom Bath Partition Hardware": "Herrajes para mamparas de baño",
   "Household/ Hotel Bathroom": "Baños residenciales y de hotel",
   "Window Connection": "Unión de ventana",
@@ -906,13 +906,13 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Wooden Door / Metal Door / Furniture Door / Commercial Door / Residential / Commercial / Hotel / Office / Hospital / School / Warehouse":
     "Puertas de madera, metálicas, de mueble y comerciales: residencial, comercial, hotelería, oficinas, hospitales, escuelas y bodegas",
   "Fire Doors / Commercial Double Doors / Schools / Hospitals / Office Buildings / Commercial Projects":
-    "Puertas cortafuego y puertas comerciales de doble hoja: escuelas, hospitales, edificios de oficinas y proyectos comerciales",
+    "Puertas cortafuego y puertas comerciales de dos hojas: escuelas, hospitales, edificios de oficinas y proyectos comerciales",
   "Interior Door / Commercial Door / Fire Door / Passage Door":
     "Puerta interior, comercial, cortafuego o de paso",
   "Armored Doors / Security Doors / Entrance Doors":
     "Puertas acorazadas, de seguridad y de acceso",
-  "Double-Leaf Doors": "Puertas de doble hoja",
-  "Single Door / Double Door": "Puerta de una hoja o de doble hoja",
+  "Double-Leaf Doors": "Puertas de dos hojas",
+  "Single Door / Double Door": "Puerta de una hoja o de dos hojas",
   "Ideal for bathrooms, living rooms, and more": "Ideal para baños, salas y otros ambientes",
   "Suitable for bathrooms, living rooms, and more": "Apto para baños, salas y otros ambientes",
   "Wooden Gates,window": "Portones de madera y ventanas",
