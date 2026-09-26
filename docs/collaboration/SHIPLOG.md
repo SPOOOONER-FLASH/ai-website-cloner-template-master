@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 618 次提交
+最近 30 天 · 共 619 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 17:57 | 中立 | 命名测试：HY-0SS 改名后在移类前登记为不同部件类型 | `ad6e349a076` |
 | 17:56 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `20131ccec2e` |
 | 17:55 | HYDE | DSL02/DC01 改名 Door Coordinator，HY-0SS 改名 Latch Guard（三语、中文术语、西葡摘要） | `eb3d35199ca` |
 | 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `8d9485369d2` |
