@@ -668,5 +668,694 @@
         "answer": "Hiçbir sınıf iddia edilmez. ANSI/BHMA sertifikamız yoktur ve bu sayfalardaki 200.000 çevrim sınıflandırılmış bir test sonucu değil, yayımladığımız beklentidir. Bir şartname BHMA sınıfı gerektiriyorsa, bir sertifika oluşana kadar bu gereklilik bu kilitlerle karşılanamaz."
       }
     ]
+  },
+  "dimensional-interchangeability-2026": {
+    "title": "2026'da Ölçüsel Değiştirilebilirlik: Bir Kilidin Yerine Oturup Oturmayacağını Belirleyen Yedi Ölçü ve Kaçını Yayımladığımız",
+    "summary": "\"Birbirinin yerine geçer mi?\" sorusunu yedi ölçü cevaplar ve bunların ikisi neredeyse kimsenin yayımlamadığı ölçülerdir. Bu sayfa onları arızaya yol açtıkları sırayla listeliyor, backset'i eşleştirmenin neden yetmediğini açıklıyor, üretimi durmuş bir kilidin birebir muadilini istediğinizde bir fabrikaya ne göndermeniz gerektiğini anlatıyor ve kendi 258 kilit ürünümüzden kaçının her ölçüyü yayımladığını, yüzde ikide kalan dahil, sayıyor.",
+    "seoTitle": "Kilit Değiştirilebilirliği 2026: Belirleyici Yedi Ölçü",
+    "seoDescription": "Bir kilidin birebir yedek olması için hangi ölçüler tutmalı, backset neden tek başına yetmez ve gerçek bir muadil için fabrikaya ne gönderilmeli?",
+    "body": [
+      "Bir alıcı bir kilidin zaten satın aldığı bir kilitle birbirinin yerine geçip geçmediğini sorar. Cevap asla evet ya da hayır değildir; yedi ölçüden oluşan bir listedir ve dürüst yanıt hangilerinin tuttuğunu, hangilerinin tutmadığını ve hangilerini kimsenin ölçmediğini söyler.",
+      "Aşağıdaki sıra, şantiyede arızaya yol açtıkları sıradır; insanların onları kontrol ettiği sıra değil.",
+      "## Maliyetlerine göre sıralanmış yedi ölçü",
+      "| # | Ölçü | Yanlışsa |\n| --- | --- | --- |\n| 1 | Backset | Kilit mil deliğine ulaşmaz ya da kol kapı kenarının dışında kalır |\n| 2 | Aks mesafesi, milden silindire | Kapıdaki silindir deliği yanlış yerdedir; kapı hurdadır |\n| 3 | Gövde ölçüsü, yükseklik ve derinlik | Gövde cebe girmez ya da içinde tıkırdar |\n| 4 | Ön plaka boyu, eni ve köşe yarıçapı | Ön plaka gömme cebi örtmez; her kapıda görünen bir boşluk |\n| 5 | Kare mil ve göbek | Kol takılmaz ya da boşluklu takılır ve köşeleri yuvarlanır |\n| 6 | Sabitleme aralıkları | Vidalar mevcut deliklere denk gelmez |\n| 7 | Kapı kalınlığı aralığı | Bağlantı elemanları yetişmez ya da taşar |",
+      "Bu tablodaki örüntüyü açıkça söylemeye değer: pahalı arızalar üst sıralardadır ve en üstteki ikisi insanların en az kontrol ettiği ikisidir.",
+      "## Backset'i eşleştirmek neden yetmez",
+      "Backset herkesin bildiği ölçüdür ve bir talepte, soruyu çözüyormuş gibi verilen ölçüdür. Çözmez; çünkü yalnızca bir deliğin yerini belirler.",
+      "Gömme kilitte backset, mili kapı kenarına göre konumlandırır. Aks mesafesi ise silindiri mile göre konumlandırır. İki kilit aynı 60 mm backset'i paylaşıp farklı aks mesafelerine sahip olabilir; birine göre hazırlanmış bir kapının silindir deliği, diğeri için yanlış yerdedir.",
+      "Bu küçük bir uyumsuzluk değildir. Mil deliği de silindir deliği de kapının yüzünden geçer; birini taşımak mümkün değildir ve bir kapı yüzünün ortasındaki bir deliği örten kapak plakası kimsenin kabul ettiği bir sonuç değildir.",
+      "Backset ve aks mesafesi sayfamız bu iki ölçüyü ayrıntılı ele alıyor. Bir değiştirilebilirlik sorusu için kural basittir: bunlar iki ayrı sorudur ve ikisi de sorulmalıdır.",
+      "## Ön plaka, kimsenin ölçmediği ölçüdür",
+      "Ön plakanın (kapı kenarındaki yüz plakası) üç özelliği vardır: boy, en ve köşelerinin köşeli mi yuvarlatılmış mı olduğu.",
+      "Kilidin çalışıp çalışmadığını etkilemez. Montajın planlanmış gibi görünüp görünmeyeceğini ise tamamen belirler. Ön plakası daha kısa olan bir yedek kilit, eski gömme cebi binadaki her kapıda, yeni plakanın altında ve üstünde, önünde duran herkesin göz hizasında açıkta bırakır.",
+      "Köşe yarıçapı, bir karşılık plakasında önemli olduğu nedenle önemlidir: frezeyle açılmış bir cebin köşeleri yuvarlaktır, keskiyle açılmış olanınki köşelidir ve uyumsuzluk dört hilal ya da dört kare olarak görünür.",
+      "En sık ilk kapı takıldıktan sonra keşfedilen ölçü budur; bu da devam etme kararının zaten verilmiş olduğu andır.",
+      "## Bunun ne kadarını gerçekten yayımlıyoruz",
+      "Değiştirilebilirlik yayımlanmış ölçülerle ilgili bir sorudur; dolayısıyla dürüst olan, kaçını yayımladığımızı söylemektir. Kataloğumuzda kategorisi ya da adı onları kilit, dil, silindir ya da sürgü kilit olarak tanımlayan 258 ürünün özellik satırlarından sayılmıştır.",
+      "| Ölçü | Yayımlayan kilit ürünü | Oran |\n| --- | --- | --- |\n| Backset | 111 | %43 |\n| Kapı kalınlığı aralığı | 77 | %30 |\n| Aks mesafesi | 35 | %14 |\n| Ön plaka | 8 | %3 |\n| Gövde ölçüsü | 6 | %2 |",
+      "Bu sayfanın amacı son üç satırdır. En pahalı arızalara yol açan iki ölçü (aks mesafesi ve ön plaka) en az yayımladığımız iki ölçüdür; gövde ölçüsü ise yalnızca dördünde görünür.",
+      "Verimizi kapsamlı diye tarif etmektense bu tabloyu basmayı tercih ederiz. Boşluğu bilen bir alıcı ölçüyü isteyebilir; kataloğun eksiksiz olduğunu varsayan bir alıcı bunu kestikten sonra öğrenir.",
+      "Bir ölçü eksikse bunun nedeni saklanması değil, o modeli henüz kimsenin bir çizime göre ölçmemiş olmasıdır. İhtiyacınız olan modeli sorun, ölçülebilir; bu kısa bir konuşmadır ve bir konteyner dolusu kapıdan sonraki konuşmadan çok daha kısadır.",
+      "## Zaten satın aldığınız bir kilidin birebir muadilini istediğinizde ne göndermelisiniz",
+      "Bir numune bir fotoğraftan, bir fotoğraf da bir tariften çok daha değerlidir. Numune yoksa şunları, bu sırayla gönderin.",
+      "Mevcut kilidin markası ve model numarası; stoklamadığımız bir marka olsa bile. Bir model numarası, kimse bir şey ölçmeden önce yayımlanmış veriye bakmamızı sağlar.",
+      "Kilit yerindeyken kapı kenarının ve kapı yüzünün fotoğrafları; her birinde ölçek okunabilsin diye karede bir cetvel ya da kumpas.",
+      "Yukarıdaki yedi ölçü, ölçülmüş olarak; hangilerini ölçtüğünüzü ve hangilerini bir belgeden kopyaladığınızı belirten bir notla. Bu ayrım önemlidir; çizimler sayfamız, sizin ölçtüğünüz bir ölçünün bir fabrika yazılı olarak teyit edene kadar sizin ölçümünüz olduğunu açıklıyor.",
+      "Kapı kalınlığı ve kapının ahşap mı, içi boş metal mi yoksa kompozit mi olduğu; çünkü 45 mm'lik ahşap bir kanat ile 45 mm'lik içi boş metal bir kanat bağlantı elemanlarını farklı alır.",
+      "Kaplama ve fonksiyon; çünkü ölçüsel olarak kusursuz ama fonksiyonel olarak yanlış bir muadil yine de reddedilen bir teslimattır.",
+      "## Takılı bir kilidi kapıyı sökmeden ölçmek",
+      "Değiştirilebilirlik sorularının çoğu, zaten kullanımda olan ve biri ölçüm yaparken kapatılamayan bir binadaki bir kilit hakkında sorulur. Yedi ölçünün hepsi bir kumpas, çelik bir cetvel ve kapı tipi başına yaklaşık on dakikayla alınabilir; üçü hiçbir şeyi sökmeyi gerektirmez.",
+      "Backset, sökmeden: kapı kenarı boyunca ön plakanın yüzünden mil merkezine ölçün. Mil gövdeden geçtiği yerde görünür ve merkezi kolun döndüğü merkezle aynıdır; bu yüzden kapı yüzünde kapı kenarından kol rozetinin ortasına ölçmek aynı sayıyı verir ve doğru ölçmesi daha kolaydır.",
+      "Aks mesafesi, sökmeden: kapı yüzünde mil merkezi ile silindir merkezi arasını ölçün. İkisi de görünür. Bir kapının yeniden kullanılıp kullanılamayacağını belirleyen ölçü budur ve almak hiçbir şeye mal olmaz.",
+      "Ön plaka boyu ve eni, sökmeden: kapı kenarındaki görünen plakayı ölçün ve köşelerine bakın. Onları tarif etmek yerine cetvele karşı fotoğraflayın; yarıçapı verilmemiş bir \"yuvarlatılmış\" bir ölçü değildir.",
+      "Kalan dördü kilidin çıkarılmasını ya da bir çizimi gerektirir. Gövde ölçüsü ve sabitleme aralıkları kapının içindedir. Bir kol sökülürse kare mil, milin kendisi üzerinde ölçülebilir; bu da bütün bir kilit değil iki vidadır. Kapı kalınlığı aralığı kapının değil kilidin bir özelliğidir, dolayısıyla üreticiden gelir; ama oradayken kapının kendisini kilit kenarında şeritle değil kumpasla ölçün, çünkü lambalı bir kenar boyunca şerit metre lambayı okur.",
+      "Ölçümleri birden fazla kapıda alın. Bir binada nadiren tek kapı tipi olur ve ikinci kapı, birincinin temsil edici olup olmadığını ya da birinin daha önce ayarladığı kapı olup olmadığını öğrendiğiniz yerdir.",
+      "## Bir teklifte \"uyumlu\" ne demektir, ne demek değildir",
+      "Bu kelime bu kategoride gerçek hasar verir; çünkü üzerinde anlaşılmış bir tanımı yoktur ve varmış gibi görünür.",
+      "Bir ürünün uyumlu olduğunu söyleyen bir teklif genellikle onun aynı aileye ait olduğunu tespit etmiştir: gömme cep için gömme kilit, Avrupa profili için Avrupa tipi silindir. Bu, yedi ölçü hakkında değil kategori hakkında bir beyandır ve kapınıza uymayacak binlerce ürün için de doğrudur.",
+      "Bunun yerine kullanılacak ifade bir listedir. \"Backset, aks mesafesi, ön plaka boyu ve eni ve kare milde tutuyor; ön plaka köşe yarıçapında farklı, 6 mm yuvarlatılmış yerine köşeli; gövde ölçüsü ölçülmedi.\" Bu cümle daha uzundur ve bir satın alma kararı ile bir umut arasındaki farktır.",
+      "Bir tedarikçi bu cümleyi kurmuyorsa işe yarayan soru, yedi ölçüden hangilerini ölçtüğüdür. Buna verilen dürüst bir cevap, özgün soruya verilen kendinden emin bir cevaptan daha değerlidir.",
+      "## Birebir muadil doğru cevap olmadığında",
+      "Eski kilidi eşleştirmenin güvenli değil pahalı seçim olduğu iki durum.",
+      "Eski kilit zaten bir uzlaşmaydı: yeniden asılmış, yeniden kaplanmış ya da yeniden boyanmış bir kapıda takılı kilit çoğu zaman birinin uydurduğu bir parçadır. Onu kopyalamak, uzlaşmayı gelecekteki her siparişe kopyalar. İçindeki kilidi değil, kapı hazırlığını ölçün.",
+      "Açıklık bir yangın kapısıdır: ölçüsel olarak aynı bir yedek, yedek o montajın kapsamının parçası olmadıkça yine de test edilmiş bir montajda bir değişikliktir. Yangın kapısı sayfamız bunun ne anlama geldiğini anlatıyor; kısaca, değiştirilebilirlik ölçüsel bir soru, yangın uygunluğu ise belgesel bir sorudur ve birincisini geçmek ikincisini cevaplamaz.",
+      "## Tek satırlık özet",
+      "Birbirinin yerine geçmek bir değil yedi ölçünün tutması demektir. Bir tedarikçi soruyu tek bir sayıyla cevaplıyorsa başka bir soruyu cevaplamıştır ve dışarıda bıraktığı ikisi en pahalıya mal olan ikisidir."
+    ],
+    "faq": [
+      {
+        "question": "Bir kilidin birbirinin yerine geçip geçmeyeceğini hangi ölçüler belirler?",
+        "answer": "Yedi ölçü: backset; milden silindire aks mesafesi; gövde ölçüsü; ön plaka boyu, eni ve köşe yarıçapı; kare mil ve göbek; sabitleme aralıkları; ve kapı kalınlığı aralığı. Pahalı arızalar bu listenin üstünde toplanır ve en üstteki ikisi insanların en az kontrol ettiği ikisidir."
+      },
+      {
+        "question": "Backset tutuyorsa kilit uyar mı?",
+        "answer": "Mutlaka değil. Backset yalnızca mili kapı kenarına göre konumlandırır. Aks mesafesi ise silindiri mile göre konumlandırır; iki kilit aynı 60 mm backset'i paylaşıp farklı aks mesafelerine sahip olabilir ve bu, diğerine göre zaten hazırlanmış bir kapıda silindir deliğini yanlış yere koyar."
+      },
+      {
+        "question": "Kilit çalışıyorsa ön plaka neden önemli?",
+        "answer": "Çünkü montajın planlanmış gibi görünüp görünmeyeceğini belirler. Ön plakası daha kısa bir yedek, eski gömme cebi her kapıda, yeni ön plakanın altında ve üstünde, göz hizasında açıkta bırakır. Köşe yarıçapı da önemlidir: frezeyle açılmış bir cebin köşeleri yuvarlak, keskiyle açılmışınki köşelidir ve uyumsuzluk dört hilal ya da dört kare olarak görünür."
+      },
+      {
+        "question": "Kilitlerinizin kaçı bu ölçüleri yayımlıyor?",
+        "answer": "258 kilit ürününden: backset 111 (%43), kapı kalınlığı 77 (%30), aks mesafesi 35 (%14), ön plaka 8 (%3), gövde ölçüsü 6 (%2). En pahalı arızalara yol açan iki ölçü en az yayımladığımız ikisidir. Eksik bir ölçü talep üzerine ölçülebilir: saklandığı için değil, o modeli henüz kimse ölçmediği için eksiktir."
+      },
+      {
+        "question": "Birebir yedek almak için ne göndermeliyim?",
+        "answer": "Mümkünse bir numune. Değilse: mevcut marka ve model numarası, karede cetvel bulunan kapı kenarı ve yüzü fotoğrafları, hangilerini ölçtüğünüzü ve hangilerini kopyaladığınızı belirten bir notla ölçülmüş yedi ölçü, kapı kalınlığı ve yapısı, kaplama ve fonksiyon."
+      },
+      {
+        "question": "Mevcut kilidi kopyalamak her zaman doğru yaklaşım mı?",
+        "answer": "Hayır. Yeniden asılmış, yeniden kaplanmış ya da yeniden boyanmış bir kapıda takılı kilit çoğu zaman birinin uydurduğu bir parçadır; onu kopyalamak uzlaşmayı gelecekteki her siparişe kopyalar. İçindeki kilidi değil kapı hazırlığını ölçün. Bir yangın kapısında ise ölçüsel eşleşme sertifika sorusunu cevaplamaz."
+      }
+    ]
+  },
+  "door-closer-mounting-positions-2026": {
+    "title": "2026'da Kapı Kapatıcı Montajı: Standart Kol, Kasa Üstü, Paralel Kol ve Kızaklı Kol Karşılaştırması",
+    "summary": "Aynı kapı kapatıcı nereye monte edildiğine göre farklı performans gösterir ve montaj şekli genellikle şantiyede, matkabı tutan kişi tarafından seçilir. Bu sayfa dört standart düzeni önemli olan üç şey (mekanik verim, açıklığa çıkıntı ve hasara açıklık) üzerinden karşılaştırıyor, paralel kolun neden size bir güç sınıfına mal olabileceğini açıklıyor ve her birinin kapının hangi tarafında durduğunu belirtiyor.",
+    "seoTitle": "Kapı Kapatıcı Montajı 2026: Standart, Kasa Üstü, Paralel Kol",
+    "seoDescription": "Kapı kapatıcı montaj şekilleri: standart kol, kasa üstü, paralel kol ve kızaklı kol; verim, çıkıntı, hasara açıklık ve güç sınıfına etkisi.",
+    "body": [
+      "Bir kapı kapatıcı güç sınıfıyla belirtilir, sonra monte edilir ve montaj doğru bir şartnameyi boşa çıkarabilir. Aynı kapıdaki aynı kapatıcı, dört düzenden hangisine takıldığına bağlı olarak farklı bir cihazdır.",
+      "Seçim çoğu zaman şantiyede, duvarın, kasa pervazının ve yandaki kapı açıklığının gerçekte nerede olduğuna bakan bir montajcı tarafından yapılır. Bu makuldür. Makul olmayan, kimsenin bunu önceden bilmemesidir; çünkü dört düzenden ikisi kapının ihtiyaç duyduğu güç sınıfını etkiler.",
+      "ÖNCE: ÇEKME TARAFI HANGİSİ",
+      "Aşağıdaki her tarif buna bağlıdır ve en sık belirsiz ifade edilen şey budur.",
+      "Çekme tarafı, açmak için kendinize doğru çektiğiniz kapı yüzüdür. İtme tarafı ise ittiğiniz yüzdür. Tek kanatlı bir kapının her birinden bir tane vardır; \"koridor tarafı\" ya da \"dış taraf\" bu terimlerin yerini tutmaz, çünkü kapıyı değil binayı tarif ederler.",
+      "STANDART KOL",
+      "Kapatıcı gövdesi kapının çekme tarafı yüzüne, üst kısma yakın monte edilir. Kol, kasanın alt yüzündeki ya da yüzündeki bir brakete uzanır.",
+      "Mekanik olarak verimli düzen budur. Geometri kapatıcıya iyi bir kaldıraç sağlar; bu da belirli bir güç sınıfının burada başka her yerden daha fazla iş yapması demektir.",
+      "Bedeli çıkıntı ve açıkta kalmaktır. Kol, çekme tarafında insanların yürüdüğü açıklığa doğru çıkar ve tutulma, üzerine asılma ya da bir arabanın çarpması ihtimali en yüksek düzendir. İç mekândaki bir ofis kapısında sorun değildir. Bir okul koridorunda ise bir bakım kalemidir.",
+      "KASA ÜSTÜ",
+      "Kapatıcı gövdesi itme tarafında, kapının üstündeki kasa yüzüne monte edilir. Kol aşağıya, kapı üzerindeki bir brakete uzanır.",
+      "Kendi yüzünde kapatıcıya yer olmayan bir kapı için düzen budur: tamamen camlı bir kanat, dar kayıtlı bir alüminyum kapı ya da yüzü kimsenin delmek istemediği bir kaplama olan bir kapı.",
+      "Kapının üstünde gövdeyi alacak kadar kasa yüzü gerektirir; onu en sık eleyen kısıt budur. Şartnameye yazmadan önce kasa yüzü yüksekliğini ölçün; çünkü kapatıcı gövdesi düz, takviyeli bir yüzey ister ve dekoratif bir pervaz ikisi de değildir.",
+      "PARALEL KOL",
+      "Kapatıcı gövdesi kapının itme tarafı yüzüne monte edilir ve kol, kapı kapalıyken kapı yüzüne kabaca paralel duracak şekilde geriye katlanır ve kasa alt yüzündeki bir pabuca bağlanır.",
+      "Kurumsal binalara (okullar, hastaneler, umumi koridorlar) hâkim olan düzen budur ve tek bir nedeni vardır: kolu kapıya yaslanmış ve açıklığın dışında tutar; orada tutulamaz ve hasar görmesi çok daha zordur.",
+      "Bunun bedelini verimle öder. Paralel geometri kapatıcıya standart koldan daha az mekanik avantaj sağlar; bu da standart kolda doğru boyutlandırılacak bir kapatıcının paralel kolda yetersiz güçte kalabileceği anlamına gelir. Bazı ürünlerde etki, üreticinin bir güç sınıfı yükselmeyi önereceği kadar büyüktür.",
+      "Bu sayfadaki en faydalı tek bilgi budur: bir kapı için bir güç sınıfı belirtip sonra biri onu paralel kolla monte ederse, artık dile oturmayan bir kapınız olabilir. Paralel kol olasıysa bunu güç sınıfı seçilirken söyleyin.",
+      "KIZAKLI KOL",
+      "Mafsallı bir kol yerine, kasaya ya da kapıya monte edilmiş bir ray içinde bir makara çalışır. Kapatıcı gövdesi ürüne bağlı olarak iki tarafta da olabilir.",
+      "Fiyatını hak etmesini iki şey sağlar. En düz düzendir (ray, çıkıntılı bir dirsek değil ince bir profildir) ve geometrisi daha düşük bir açma kuvveti verecek şekilde tasarlanabilir; kızaklı ve kam hareketli kapatıcıların, açma kuvveti sınırının dar olduğu erişilebilir açıklıklarda karşımıza çıkmasının nedeni budur.",
+      "Bedeli maliyettir ve bazı ürünlerde, standart koldaki aynı kapatıcıdan daha düşük bir azami kapı kütlesidir.",
+      "MONTAJ ŞEKLİ OLMAYAN İKİ ŞEY",
+      "Gizli kapatıcılar ve yer menteşeleri, aynı cihazın farklı montajları değil, farklı cihaz sınıflarıdır. Gizli bir kapatıcı kapı kanadının ya da üst kasanın içinde durur ve üretim sırasında kapıya planlanmalıdır. Bir yer menteşesi zeminde durur ve döşemeye planlanmalıdır. Hiçbiri buna göre hazırlanmamış bir kapıya sonradan takılamaz.",
+      "Açık tutma kolları, yukarıdaki düzenlerin birkaçında bir seçenektir, kendi başına bir düzen değildir. Güç sınıfı sayfamızda anlatıldığı gibi, mekanik bir açık tutma yangın kapısına ait değildir; orada yangın alarm sistemi tarafından serbest bırakılan elektromanyetik bir cihaz gerekir.",
+      "MONTAJIN PERFORMANS DIŞINDA BELİRLEDİKLERİ",
+      "Takviye. Bir kapatıcının bağlantı elemanları sağlam bir şeye tutunmalıdır. İçi boş metal bir kapıda takviye üretimde kaynaklanır ve bir montaj pozisyonuna özgüdür; standart kol için takviye edilmiş bir kapının, paralel kollu bir kapatıcının sabitlenmek istediği yüzün arkasında hiçbir şeyi olmayabilir. Montaj şeklinin kapatıcı takılırken değil, kapı sipariş edilirken bilinmesi gerekmesinin nedeni budur.",
+      "Kapı yönü. Standart kol ve kasa üstü montajlar birçok kapatıcı gövdesinde yönden bağımsızdır. Paralel kol genellikle değildir, çünkü kol düzeneği yöne bağlıdır. Varsaymak yerine ürünü kontrol edin.",
+      "Açılma frenlemesinin (backcheck) faydası. Açılma frenlemesi kapının hızla savrulup açılmasına direnir ve en çok bir kapının bir duvara ya da insanlara çarpabileceği yerde işe yarar. Bu daha çok bir çekme tarafı koşuludur ve montaj seçimiyle etkileşir.",
+      "LİSTEYE NE YAZILMALI",
+      "Adıyla montaj şekli: standart kol, kasa üstü, paralel kol ya da kızaklı kol. Gövdenin kapının hangi tarafında durduğu. Montaj göz önünde tutularak seçilmiş güç sınıfı ya da ayarlanabilir aralık. Açık tutma gerekip gerekmediği ve kapı bir yangın kapısıysa bunun elektromanyetik olması gerektiği. Geçerli olan her erişilebilirlik açma kuvveti sınırı.",
+      "Kapı kapatıcı sayfalarımız bir modelin desteklediği montaj şekillerini ve modelin yayımladığı yerde güç sınıfını ya da aralığı belirtir. Bir model bir değer yayımlamıyorsa satır yoktur; kapatıcı, bir sınıf yanlış olmanın binayı kullanan herkes tarafından keşfedildiği az sayıdaki üründen biridir."
+    ],
+    "faq": [
+      {
+        "question": "Standart kol ile paralel kol montajı arasındaki fark nedir?",
+        "answer": "Standart kol, kapatıcı gövdesini kapının çekme tarafı yüzüne koyar ve kol açıklığa doğru çıkar; mekanik olarak verimli düzen budur. Paralel kol ise gövdeyi itme tarafına koyar ve kol kapıya doğru geriye katlanır; hasara çok daha az açıktır ama kapatıcıya daha az mekanik avantaj sağlar."
+      },
+      {
+        "question": "Paralel kol montajı ihtiyaç duyduğum güç sınıfını etkiler mi?",
+        "answer": "Evet ve en sık gözden kaçan nokta budur. Paralel geometri daha az mekanik avantaj sağlar; bu yüzden standart kol için doğru boyutlandırılmış bir kapatıcı paralel kolda yetersiz güçte kalabilir; bazı ürünlerde üreticinin bir sınıf yükselmeyi önereceği kadar. Paralel kol olasıysa sınıf seçilirken bunu söyleyin."
+      },
+      {
+        "question": "Kasa üstü montajı ne zaman kullanmalıyım?",
+        "answer": "Kapı yüzü kapatıcı gövdesini alamadığında: tamamen camlı bir kanat, dar kayıtlı bir alüminyum kapı ya da kimsenin delmek istemediği bir kaplama. Kapının üstünde yeterince düz, takviyeli kasa yüzü gerektirir; onu en sık eleyen kısıt budur, bu yüzden şartnameye yazmadan önce ölçün."
+      },
+      {
+        "question": "Erişilebilir kapılarda neden kızaklı kollu kapatıcılar kullanılır?",
+        "answer": "Çünkü ray geometrisi daha düşük bir açma kuvveti verecek şekilde tasarlanabilir; bu da bir erişilebilirlik kuvvet sınırının dar olduğu yerde önemlidir. Aynı zamanda en düz düzendir. Bedeli maliyettir ve bazı ürünlerde, standart koldaki aynı kapatıcıdan daha düşük bir azami kapı kütlesidir."
+      },
+      {
+        "question": "Kapı takıldıktan sonra montaj şeklini değiştirebilir miyim?",
+        "answer": "Çoğu zaman hayır. Bir kapatıcının bağlantı elemanları takviyeye tutunmalıdır ve içi boş metal bir kapıda bu takviye üretimde belirli bir montaj pozisyonu için kaynaklanır. Standart kol için takviye edilmiş bir kapının, paralel kollu bir kapatıcının sabitlenmesi gereken yüzün arkasında hiçbir şeyi olmayabilir."
+      },
+      {
+        "question": "Gizli kapatıcı yalnızca başka bir montaj pozisyonu mu?",
+        "answer": "Hayır, farklı bir cihaz sınıfıdır. Gizli bir kapatıcı kapı kanadının ya da üst kasanın içinde durur ve üretim sırasında kapıya planlanmalıdır; bir yer menteşesi ise döşemeye planlanmalıdır. Hiçbiri buna göre hazırlanmamış bir kapıya ya da zemine sonradan takılamaz."
+      }
+    ]
+  },
+  "door-closer-power-size-2026": {
+    "title": "2026'da Kapı Kapatıcı Güç Sınıfı: EN 1154 Sınıf 1–7, A156.4 ve Kapıdan Yola Çıkarak Seçim",
+    "summary": "Bir kapı kapatıcı güç sınıfıyla belirtilir ve güç sınıfı açıklıktan ya da bina tipinden değil, kapıdan (kanat genişliği ve kütlesi) türetilir. Bu sayfa EN 1154 sınıf basamaklarını her birinin kapsadığı kanat genişlikleriyle veriyor, ANSI/BHMA A156.4 yaklaşımının nasıl farklılaştığını, güç sınıfı olmayan üç ayarı ve hepsini geçersiz kılan erişilebilirlik kısıtını anlatıyor.",
+    "seoTitle": "Kapı Kapatıcı Güç Sınıfı 2026: EN 1154 Sınıfları ve Seçim",
+    "seoDescription": "EN 1154 kapı kapatıcı güç sınıfları 1–7, kapsadıkları kanat genişliği ve kütlesi, ANSI/BHMA A156.4 farkı, ayarlanabilir sınıf ve açma kuvveti sınırı.",
+    "body": [
+      "Bir kapı kapatıcı güç sınıfına göre seçilir ve en yaygın tek şartname hatası onu odaya göre seçmektir. Küçük bir ofisteki ağır bir kapı ile görkemli bir girişteki hafif bir kapı, mekânların düşündürdüğü kapatıcılara değil, kapılarının gerektirdiği kapatıcılara ihtiyaç duyar.",
+      "Güç sınıfı kanadın iki özelliğinden türetilir: genişliği ve kütlesi. Geri kalan her şey (montaj pozisyonu, açılma frenlemesi, gecikmeli kapanma) sınıf doğru olduktan sonra yapılan bir ayardır.",
+      "EN 1154 SINIF BASAMAKLARI",
+      "EN 1154, artan sırayla 1'den 7'ye güç sınıfları tanımlar. Her sınıf azami bir kapı kanadı genişliğine ve azami bir kanat kütlesine karşılık gelir; kapatıcı, ikisinden hangisi onu daha yüksek sınıfa koyuyorsa ona göre seçilir.",
+      "| EN 1154 güç sınıfı | Azami kanat genişliği | İnç | Azami kanat kütlesi |\n| --- | --- | --- | --- |\n| 1 | 750 mm | 29-1/2\" | 20 kg |\n| 2 | 850 mm | 33-1/2\" | 40 kg |\n| 3 | 950 mm | 37-3/8\" | 60 kg |\n| 4 | 1100 mm | 43-1/4\" | 80 kg |\n| 5 | 1250 mm | 49-1/4\" | 100 kg |\n| 6 | 1400 mm | 55-1/8\" | 120 kg |\n| 7 | 1600 mm | 63\" | 160 kg |",
+      "Hem genişliğin hem kütlenin yer almasının nedeni kaldıraçtır. Geniş ve hafif bir kapı ile dar ve ağır bir kapı farklı nedenlerle aynı kapanma sorununu gösterebilir ve birini karşılayan sınıf diğerini mutlaka karşılamaz. İki cevaptan yüksek olanı alın.",
+      "Kapının sınıfının altındaki bir kapatıcı, kapıyı bir contaya ya da hava akımına karşı güvenilir biçimde kapatıp dile oturtamaz. Üstündeki bir kapatıcı ise kapıyı binadaki herkesin istediğinden sert kapatır ve erişilebilir bir açıklıkta kapıyı mevzuata aykırı hâle getirebilir.",
+      "TİCARİ KAPATICILARIN ÇOĞU NEDEN AYARLANABİLİR",
+      "Sabit sınıflı bir kapatıcı sevk edilmeden önce doğru belirtilmelidir. Ayarlanabilir bir kapatıcı ise bir aralığı kapsar (genellikle 2–4 ya da 3–6) ve şantiyede ayarlanır; bu da bir liste ile bir kapının bir sınıf farkla uyuşmadığı ve kimsenin bunu montaj gününe kadar fark etmediği arıza biçimini ortadan kaldırır.",
+      "Ayrıca stok tutan bir distribütör için birkaç parça numarasını teke indirir; ayarlanabilir sınıfların ticari yelpazelere hâkim olmasının nedeni budur. Bedeli, en düşük ayarına getirilmiş ayarlanabilir bir kapatıcının o sınıftaki sabit bir kapatıcıyla aynı olmamasıdır; kısılmış daha büyük bir mekanizmadır.",
+      "KUZEY AMERİKA YAKLAŞIMI NASIL FARKLILAŞIR",
+      "ANSI/BHMA A156.4 kapı kontrol cihazlarını kapsar ve sınıflandırır; ama Kuzey Amerika'daki seçim geleneği tek bir yayımlanmış güç numarasından çok yay büyüklüğüne ve kol yapılandırmasına dayanır ve erişilebilirlik sınırları donanım standardıyla değil yönetmelikle belirlenir.",
+      "İki pazarda şartname yazan herkes için pratik sonuç: EN güç sınıfı bir listeye yazabileceğiniz ve bir tedarikçinin eşleştirebileceği bir değerdir. Amerikan tarafında tek bir eşdeğer sayı yoktur; bu yüzden pazarlar arası bir liste kanat genişliğini, kanat kütlesini ve gereken açma kuvvetini belirtmeli ve her pazarın tedarikçisinin bunlardan seçim yapmasına izin vermelidir.",
+      "SINIFI GEÇERSİZ KILAN KISIT",
+      "Erişilebilirlik. Sınırlı güce sahip biri tarafından kullanılabilmesi gereken bir açıklıkta kapıyı açmak için izin verilen azami bir kuvvet vardır ve bu sınır, kanadın aksi hâlde gerektireceği güç sınıfıyla çelişebilir.",
+      "İkisi çeliştiğinde kapatıcı uygun hâle gelene kadar kısılamaz; çünkü kapının gereksiniminin altına ayarlanmış bir kapatıcı onu kapatıp dile oturtamaz ve bir yangın kapısında dile oturmamak bir rahatsızlık değil, yangın kapısının başarısızlığıdır. Çözüm genellikle farklı bir cihaz sınıfıdır: açma kuvveti daha düşük ve kapanma momenti takviyeli bir kapatıcı ya da motorlu bir kapı otomatiği.",
+      "Belirli kuvvet sınırları ülkeye göre değişir ve EN 1154 ya da A156.4 ile değil yapı mevzuatıyla belirlenir. Seçim yapmadan önce binaya uygulanan sayıyı teyit edin; çünkü şantiyede ayarla ortadan kaldırılamayacak tek kısıt budur.",
+      "GÜÇ SINIFI OLMAYAN ÜÇ AYAR",
+      "Kapanma hızı, kapının yayının çoğu boyunca ne kadar hızlı hareket ettiğini kontrol eder. Dile oturma hızı, dilin karşılığa girmesi gereken son birkaç dereceyi kontrol eder. Açılma frenlemesi (backcheck), kapının bir duvara ya da bir kişiye doğru hızla savrulup açılmasına direnir.",
+      "Bunlar gövdedeki valflerle şantiyede ayarlanır ve hiçbiri güç sınıfını değiştirmez. Güç sınıfı çok düşükse dile oturmayan bir kapı dile oturma hızını artırarak düzeltilemez; güç sınıfı çok yüksekse çarpan bir kapı kapanma hızını yavaşlatarak düzeltilemez. Önce sınıfı teşhis edin.",
+      "GECİKMELİ KAPANMA VE AİT OLMADIĞI YER",
+      "Gecikmeli kapanma, kapıyı kapanmadan önce bir süre geniş bir açıda açık tutar; bu, arabaların, tekerlekli sandalyelerin ya da teslimatların geçtiği yerlerde işe yarar. Bir valf fonksiyonudur, bir açık tutma cihazı değildir.",
+      "Montajın tamamı buna göre derecelendirilmedikçe yangın kapısına ait değildir; çünkü bir yangın kapısını açık tutan her şey montajın yangında ne yaptığını değiştirir. Yangın kapısındaki açık tutma, mekanik bir ayar değil, alarm sistemi tarafından serbest bırakılan elektromanyetik bir cihaz olmalıdır.",
+      "NEYİ YAYIMLIYORUZ",
+      "Kataloğumuz yedi kapı kapatıcı kaydı yayımlar: altı JU üstten kapatıcı ve henüz hiçbir özellik satırı yayımlamayan, ahşap kapılar için bir yer menteşesi. Altısının hiçbiri bir EN 1154 güç sınıfı belirtmez ve hiçbiri EN 1154'e göre belgelendirilmemiştir. Her birinin yayımladığı şey yapıldığı kapıdır: azami kanat genişliği ve bir kanat kütlesi aralığı. Yukarıdaki basamaklara yerleştirildiğinde bu iki değer her kapatıcının hangi kapı için tasarlandığını söyler.",
+      "| Model | Azami kapı genişliği | Kanat kütlesi | Genişliğe göre kapı sınıfı | Kütleye göre kapı sınıfı | Uygun olduğu kapı |\n| --- | --- | --- | --- | --- | --- |\n| JU-051 | 800 mm (31-1/2\") | 15–30 kg | 2 | 2 | sınıf 2 kapı |\n| JU-061 | 850 mm (33-1/2\") | 25–45 kg | 2 | 3 | sınıf 3 kapı |\n| JU-073 | 850 mm (33-1/2\") | 40–65 kg | 2 | 4 | sınıf 4 kapı, dar ve ağır |\n| JU-088 | 950 mm (37-3/8\") | 40–65 kg | 3 | 4 | sınıf 4 kapı |\n| JU-072 | 1050 mm (41-5/16\") | 40–65 kg | 4 | 4 | sınıf 4 kapı |\n| JU-093 | 1050 mm (41-5/16\") | 45–85 kg | 4 | 5 | sınıf 5 kapı |",
+      "Son sütunu kapatıcının bir derecelendirmesi olarak değil, kapı hakkında bir beyan olarak okuyun: yayımlanan genişlik ve kütlenin karşılık geldiği iki sınıftan yüksek olanıdır; basamaklar da böyle kullanılır. Buradan iki pratik nokta çıkar. JU-073 ve JU-072 aynı kütle aralığını ama farklı genişlikleri taşır; dolayısıyla aynı zamanda dar olan ağır bir kapı daha geniş kapatıcıya ihtiyaç duymaz. JU-093 ise 65 kg'ın üzerindeki bir kanat için yayımlanan tek modeldir. Altısı da 180 derece azami açılma ve alüminyum gövde yayımlar.",
+      "Bir şartname belirtilmiş bir EN 1154 sınıfı ya da yangın kapısı veya erişilebilirlik uygunluğu istiyorsa, gerekliliği kapıyla birlikte gönderin; bir genişlik ve bir ağırlığın bir sertifikanın yerini tutmasına izin vermek yerine bir modelin bunu karşılayıp karşılayamayacağını açıkça söyleriz. Bir sınıf yanlış belirtilmiş bir kapatıcı, ya çarpan ya da dile oturmayan bir kapıdır ve ikisi de montajdan sonra keşfedilir."
+    ],
+    "faq": [
+      {
+        "question": "Kapı kapatıcı güç sınıfını nasıl seçerim?",
+        "answer": "Odaya değil kanada göre. Kapının genişliğini ve kütlesini alın, her birini kapsayan EN 1154 sınıfını bulun ve ikisinden yüksek olanı kullanın. Geniş ve hafif bir kapı ile dar ve ağır bir kapı farklı nedenlerle aynı sınıfa ihtiyaç duyabilir."
+      },
+      {
+        "question": "EN 1154 güç sınıfları nelerdir?",
+        "answer": "Artan sırayla 1'den 7'ye sınıflar. Yaklaşık olarak: sınıf 1 750 mm'ye (29-1/2\") ve 20 kg'a, sınıf 2 850 mm'ye ve 40 kg'a, sınıf 3 950 mm'ye ve 60 kg'a, sınıf 4 1100 mm'ye (43-1/4\") ve 80 kg'a, sınıf 5 1250 mm'ye ve 100 kg'a, sınıf 6 1400 mm'ye ve 120 kg'a, sınıf 7 1600 mm'ye (63\") ve 160 kg'a kadar."
+      },
+      {
+        "question": "Ticari kapı kapatıcıların çoğu neden ayarlanabilir?",
+        "answer": "Çünkü sabit bir sınıf sevk edilmeden önce doğru olmalıdır ve bir liste ile bir kapının bir sınıf farkla uyuşmadığı ancak montaj gününde keşfedilir. Ayarlanabilir bir kapatıcı 2–4 gibi bir aralığı kapsar ve şantiyede ayarlanır. Ayrıca bir distribütörün stoklaması gereken parça numarası sayısını azaltır."
+      },
+      {
+        "question": "Kapım dile oturmuyor. Dile oturma hızını artırmalı mıyım?",
+        "answer": "İlk iş olarak değil. Dile oturma hızı hareketin son birkaç derecesini kontrol eder; kapama kuvveti eklemez. Güç sınıfı kanat için çok düşükse kapı hiçbir hız ayarında güvenilir biçimde dile oturmaz. Valfleri ayarlamadan önce sınıfı teşhis edin."
+      },
+      {
+        "question": "Erişilebilirlik açma kuvveti sınırını karşılamak için kapatıcıyı kısabilir miyim?",
+        "answer": "Güvenli biçimde değil. Kapının gereksiniminin altına ayarlanmış bir kapatıcı onu kapatıp dile oturtamaz ve bir yangın kapısında dile oturmamak montajın başarısızlığıdır. Erişilebilir açma kuvveti ile güç sınıfı çeliştiğinde cevap daha düşük bir ayar değil, farklı bir cihaz sınıfıdır."
+      },
+      {
+        "question": "Yangın kapısında gecikmeli kapanmaya izin verilir mi?",
+        "answer": "Mekanik bir ayar olarak değil. Gecikmeli kapanma kapıyı geniş bir açıda açık tutar ve bir yangın kapısını açık tutan her şey montajın yangında ne yaptığını değiştirir. Yangın kapısındaki açık tutma, alarm sistemi tarafından serbest bırakılan elektromanyetik bir cihaz olmalıdır."
+      }
+    ]
+  },
+  "door-hardware-hs-codes-2026": {
+    "title": "2026'da Kapı Donanımı HS Kodları: 8301 ve 8302 Pozisyonları ve Altı Hanenin Bittiği Yer",
+    "summary": "Bir kapı donanımı kataloğundaki neredeyse her ürün iki HS pozisyonundan birinde sınıflandırılır: kilitler ve anahtarlar için 8301, bağlantı parçaları ve aksesuarlar için 8302. Bu sayfa her birinin altındaki alt pozisyonları veriyor, en sık yanlış yapılan dördünü (kapı kapatıcılar, ayrı sevk edilen anahtarlar, parçalar ve mobilya ile bina aksesuarı ayrımı) adlandırıyor ve uluslararası kabul görmüş kodun tam olarak nerede bitip kendi ülkenizin kodunun nerede başladığını açıklıyor.",
+    "seoTitle": "Kapı Donanımı HS Kodları 2026: 8301 ve 8302 Açıklaması",
+    "seoDescription": "Kilit, anahtar, menteşe, kapatıcı ve kapı aksesuarları için 8301 ve 8302 HS pozisyonları, alt pozisyon alt pozisyon; altı haneli kod nerede biter?",
+    "body": [
+      "Sınıflandırmayı yanlış yapan bir ithalatçı bunu genellikle sınırda öğrenmez. Yıllar sonra bir denetimde, o zamandan beri sevk edilen her şey için vergi farkı talebiyle öğrenir. On dakikaya değmesinin nedeni budur.",
+      "Kapı donanımı neredeyse tamamen Armonize Sistem'in iki pozisyonunda yer alır ve aralarındaki ayrım ürünlerin kendisinden anlaşılmaz.",
+      "AYRIM: 8301 VE 8302",
+      "8301 pozisyonu adi metallerden asma kilitleri ve kilitleri, anahtarları ve parçalarıyla birlikte kapsar. Ölçüt, eşyanın kilitleyip kilitlemediğidir.",
+      "8302 pozisyonu adi metallerden bağlantı parçalarını, aksesuarları ve benzeri eşyaları kapsar. Ölçüt, eşyanın bir şeyi kilitlemeden monte edip etmediği, asıp asmadığı, kapatıp kapatmadığı ya da tutup tutmadığıdır.",
+      "Dolayısıyla bir gömme kilit gövdesi 8301, bir menteşe 8302'dir. Kilitleme fonksiyonu olmayan bir kapı kolu 8302'dir. Kapı kapatıcı 8302'dir ve bu insanları şaşırtır; çünkü kapatıcı bir mekanizmadır ve kilitlerin yanına aitmiş gibi görünür.",
+      "8301 ALTINDAKİ ALT POZİSYONLAR",
+      "| Alt pozisyon | Kapsamı |\n| --- | --- |\n| 8301.10 | asma kilitler |\n| 8301.20 | motorlu taşıtlarda kullanılan türden kilitler |\n| 8301.30 | mobilyalarda kullanılan türden kilitler |\n| 8301.40 | diğer kilitler: gömme, silindirik, sıva üstü, sürgü kilitler, silindirler, gece kilitleri |\n| 8301.50 | kilitli klipsler ve klipsli çerçeveler |\n| 8301.60 | parçalar |\n| 8301.70 | ayrı olarak sunulan anahtarlar |",
+      "8302 ALTINDAKİ ALT POZİSYONLAR",
+      "| Alt pozisyon | Kapsamı |\n| --- | --- |\n| 8302.10 | menteşeler |\n| 8302.20 | tekerlekler |\n| 8302.30 | motorlu taşıtlar için diğer bağlantı parçaları ve aksesuarlar |\n| 8302.41 | binalar için uygun diğer bağlantı parçaları ve aksesuarlar: kollar, çekme kolları, itme plakaları, gömme sürgüler, kapı stoperleri, panik cihazı dış kolları |\n| 8302.42 | diğerleri, mobilya için uygun |\n| 8302.49 | diğerleri |\n| 8302.50 | şapkalıklar, askılar, konsollar ve benzeri eşyalar |\n| 8302.60 | otomatik kapı kapatıcılar |",
+      "EN SIK YANLIŞ YAPILAN DÖRDÜ",
+      "Kapı kapatıcılar. 8302.60 özellikle onlar için vardır. Otomatik bir kapı kapatıcı kilitlemediği için 8301 altına girmez ve kendi alt pozisyonu olduğu için 8302.41 altına da girmez. Bina aksesuarı olarak sınıflandırılmış bir kapatıcı, doğru pozisyonda olsa bile bir sınıflandırma hatasıdır.",
+      "Ayrı sevk edilen anahtarlar. 8301.70 tek başına sunulan anahtarları kapsar. Çalıştırdıkları kilitle birlikte tedarik edilen anahtarlar, sunulduğu hâliyle o eşyanın parçası oldukları için kilidin kendi koduyla birlikte gider. Kilitsiz yedek anahtarlardan oluşan bir sevkiyat 8301.70'tir.",
+      "Parçalar. 8301.60 kilit parçalarını kapsar; 8302 eşyalarının parçaları ise genellikle o pozisyonun parça hükümlerini izler. Tekrarlanan hata, sonradan bir şeye monte edilecek diye eksiksiz bir eşyayı parça saymaktır. Önemli olan sonradan ona ne olduğu değil, sınırdan neyin geçtiğidir.",
+      "Mobilya ve bina ayrımı. 8301.30 ve 8302.42 mobilya, 8301.40 ve 8302.41 binalar içindir. Bir dolap kilidi ile bir kapı kilidi, vergi oranları farklı olabilecek farklı alt pozisyonlardır. Ayrım, eşyanın sonunda hangi binaya gittiği değil, hangi tür eşya için tasarlandığıdır.",
+      "ALTI HANENİN BİTTİĞİ YER",
+      "Bir tedarikçi ile bir alıcı arasındaki yazışmalarda en fazla karışıklığa yol açan kısım budur ve kesin olmaya değer.",
+      "Bir HS kodunun ilk altı hanesi uluslararası olarak kabul görmüştür. 8302.60, Armonize Sistem'i kullanan her ülkede otomatik kapı kapatıcılar demektir; iki farklı ülkedeki bir tedarikçi ve bir alıcı altı hane üzerinde anlaşabilir ve ikisi de haklı olabilir.",
+      "Altı hanenin ötesinde kod ulusaldır. Avrupa Birliği bunu Kombine Nomenklatür'de sekiz haneye, Amerika Birleşik Devletleri HTSUS'ta on haneye uzatır; diğer ülkelerin kendi uzunlukları ve kendi ayrımları vardır. Bu ek haneler vergi oranını taşır ve başka bir ülkedeki bir tedarikçinin yetkili biçimde bakabileceği bir şey değildir.",
+      "Pratik sonuç: bir tedarikçiden altı haneli HS kodunu isteyin; size güvenilir bir cevap verebilir. Ülkenizin tam tarife kodunu isteyin; dürüst cevap, birini önerebileceği ve sizin teyit etmeniz gerektiğidir. Kendi tarifenize göre sınıflandırma, öneriyi kim yapmış olursa olsun, çoğu ülkede ithalatçının yasal sorumluluğudur.",
+      "BAĞLAYICI BİR CEVAP NASIL ALINIR",
+      "Çoğu gümrük idaresi önceden karar verir: ithalattan önce alınan ve idareyi belirli bir süre bağlayan yazılı bir sınıflandırma kararı. Adları farklıdır: AB'de Bağlayıcı Tarife Bilgisi, Amerika Birleşik Devletleri'nde CBP'den bir karar yazısı ve başka yerlerde eşdeğerleri.",
+      "Sizi denetimde koruyan tek cevap budur. Bir tedarikçinin fatura satırı, bir nakliye komisyoncusunun alışkanlığı ve önceki bir sevkiyattan kopyalanmış bir kod, uygulamanın kanıtıdır; yetkinin değil.",
+      "Yüksek hacimde tekrar tekrar ithal edeceğiniz bir ürün için karar evrak işine değer. Tek seferlik bir numune sevkiyatı için genellikle değmez.",
+      "BELGELERE NE YAZIYORUZ",
+      "Ticari faturalara ve çeki listelerine altı haneli HS pozisyonunu ve alt pozisyonunu yazarız; çünkü o kısım uluslararasıdır ve arkasında durabiliriz.",
+      "Müşteri hangisini kullanacağımızı söylemedikçe müşterinin ulusal tarife kodunu yazmayız. Tarifesini yönetmediği bir ülke için bir faturaya on haneli bir HTSUS kodu yazan tedarikçi, tahminin vergi sonucu doğurduğu bir yerde tahmin yürütüyordur ve sonuç bize değil ithalatçıya düşer. Belgelerimizde tam kodunuzu istiyorsanız gönderin, basalım.",
+      "Menşe ülke, malzeme bileşimi ve net ve brüt ağırlıklar aynı belgelerde yer alır; çünkü bir sınıflandırma sorusu çoğu zaman aslında bir tercih ya da menşe sorusudur ve onun cevabı yoruma değil kanıta dayanır."
+    ],
+    "faq": [
+      {
+        "question": "Kapı kilidinin HS kodu nedir?",
+        "answer": "Mimari kilitler (gömme, silindirik, sıva üstü, sürgü kilitler, silindirler ve gece kilitleri) genellikle 8301.40, \"diğer kilitler\" altına girer. Mobilya kilitleri 8301.30, asma kilitler 8301.10'dur. İlk altı hane uluslararasıdır; ülkenizin tam tarife kodu bunların ötesine uzanır."
+      },
+      {
+        "question": "Kapı kapatıcının HS kodu nedir?",
+        "answer": "Özellikle otomatik kapı kapatıcılar için var olan 8302.60. Kapatıcı kilitlemediği için 8301 altına girmez ve onu bina aksesuarı olarak 8302.41 altına koymak, pozisyon doğru olsa bile bir sınıflandırma hatasıdır."
+      },
+      {
+        "question": "Menteşelerin ve kapı kollarının HS kodu nedir?",
+        "answer": "Menteşelerin kendi alt pozisyonu vardır: 8302.10. Kapı kolları, çekme kolları, itme plakaları, gömme sürgüler, kapı stoperleri ve diğer mimari aksesuarların çoğu 8302.41, yani binalar için uygun bağlantı parçaları ve aksesuarlar altına girer."
+      },
+      {
+        "question": "Anahtarlar kilitten ayrı mı sınıflandırılır?",
+        "answer": "Yalnızca ayrı sunulduklarında. 8301.70, bir yedek anahtar sevkiyatı gibi tek başına sevk edilen anahtarları kapsar. Çalıştırdıkları kilitle birlikte tedarik edilen anahtarlar, sunulduğu hâliyle o eşyanın parçası oldukları için kilidin koduyla gider."
+      },
+      {
+        "question": "Tedarikçim bana ülkemin tarife kodunu verebilir mi?",
+        "answer": "Altı haneli HS kodunu güvenilir biçimde verebilir, çünkü bu altı hane uluslararası olarak kabul görmüştür. Altı hanenin ötesinde kod ulusaldır (AB'nin Kombine Nomenklatür'ünde sekiz, ABD HTSUS'ta on hane) ve bu haneler vergi oranını taşır. Kendi tarifenize göre sınıflandırma normalde ithalatçının yasal sorumluluğudur."
+      },
+      {
+        "question": "Yasal olarak güvenli bir sınıflandırmayı nasıl alırım?",
+        "answer": "Kendi gümrük idarenizden önceden karar isteyin: AB'de Bağlayıcı Tarife Bilgisi, ABD'de bir CBP karar yazısı, başka yerlerde eşdeğerleri. İdareyi belirli bir süre bağlar. Bir fatura satırı, bir komisyoncunun alışkanlığı ve geçmiş bir sevkiyattan kopyalanmış bir kod uygulamadır, yetki değildir."
+      }
+    ]
+  },
+  "door-preparation-161-and-86-2026": {
+    "title": "2026'da Kapı Hazırlığı: 161 Delme, 86 Gömme Cep ve \"Hazırlanmış\" İfadesinin Gerçekte Neyi Garanti Ettiği",
+    "summary": "Bir kapı şantiyeye \"hazırlanmış\" olarak gelir ve kilidin uyup uymayacağı, haftalar önce başka bir fabrikada açılmış deliklerle belirlenir. Bu sayfa standart delme kilit ve gömme kilit hazırlıklarını ölçüleriyle veriyor, bunları yöneten ANSI/BHMA A115 serisini açıklıyor ve bir kapı üreticisi herhangi bir şey kesmeden önce bir satın alma siparişinin söylemesi gereken beş şeyi sıralıyor.",
+    "seoTitle": "Kapı Hazırlığı 2026: 161 Delme, 86 Gömme Cep, A115",
+    "seoDescription": "Delme ve gömme kilitler için standart kapı hazırlıkları: 2-1/8 inç yüz deliği, 1 inç kenar deliği, 1-1/8 x 8 inç gömme cep ve siparişe yazılacaklar.",
+    "body": [
+      "Bir kapı donanım gelmeden önce kesilir. Bu tek olgu bu sayfadaki her şeyi belirler; çünkü şartnamenin kilit sipariş edildiğinde değil, kapı sipariş edildiğinde eksiksiz olması gerektiği anlamına gelir.",
+      "Yanlış kesilmiş bir kapı ayarlanamaz. Konumundan 6 mm kaymış bir delik taşınamaz; kapı ya hurdadır ya da bir kapak plakası alır ve şartnamesi yazılmış bir binadaki kapak plakası kimsenin yapmak istemediği bir konuşmadır.",
+      "HAZIRLIK ADLARI NE ANLAMA GELİR",
+      "Kuzey Amerika sektörü kapı hazırlıklarını kısaltma numaralarla anar ve bunlardan ikisi mimari açıklıkların çoğunu kapsar.",
+      "161 hazırlığı standart delme tip ya da silindirik kilit hazırlığıdır. Kapının yüzünden geçen bir yüz deliği, kapının kenarından ona uzanan daha küçük bir kenar deliği ve bir dil ön plakası oyuğundan oluşur.",
+      "86 hazırlığı standart gömme kilit hazırlığıdır. Kilit gövdesini almak için kapının kenarına açılan dikdörtgen bir cep, mil ve silindir için yüzden geçen delikler ve ön plaka için bir oyuktan oluşur.",
+      "Bu hazırlıklar ve onlarla birlikte gelen kasa hazırlıkları, ANSI/BHMA A115 kapı ve kasa hazırlığı standartları serisiyle yönetilir. Burada bir standardın değeri sayının kendisi değil, bir ülkedeki bir kapı üreticisi ile başka bir ülkedeki bir kilit üreticisinin konuşmadan aynı standarda göre çalışabilmesidir.",
+      "161 DELME, ÖLÇÜ ÖLÇÜ",
+      "Yüz deliği 2-1/8\" (54 mm) çapındadır ve kapının yüzünden delinir. Kilit şasesinin geçtiği delik budur ve dünya genelinde delme kilitlerde fiilen evrensel hâle gelmiş ölçüdür.",
+      "Kenar deliği 1\" (25,4 mm) çapındadır ve yüz deliğine ulaşana kadar kapının kenarına delinir. Dili bu delik alır.",
+      "Backset, yüz deliğinin merkezini kapı kenarından konumlandırır. Kuzey Amerika'da 2-3/8\" (60 mm) ya da 2-3/4\" (70 mm)'dir; başka yerlerde 60 mm ve 70 mm, diğer yönden varılmış aynı iki konumdur.",
+      "Dil ön plakası oyuğu, kapı kenarında dil ön plakası için açılan sığ bir cep ve karşılık plakalarıyla aynı nedenle iki biçimde gelir (köşeli ya da yuvarlak köşeli): freze keskin bir iç köşe kesemez. Bunu yanlış yapmak kapının çalışmasını engellemez; görünen bir boşluk bırakır.",
+      "86 GÖMME CEBİ",
+      "Cep kapı kenarında dikdörtgen bir boşluktur ve normalde verilen değer 1-1/8\" (29 mm) genişlik ile 8\" (203 mm) yüksekliktir; derinliği kilit gövdesi belirler.",
+      "En önemli sayı genişliktir; çünkü çalışma boşluğu kadar payla, fazlası olmadan kilit gövdesi kalınlığına uymalıdır. Fazla geniş açılmış bir cep kapının içinde sallanabilen bir kilit bırakır; fazla dar olanına gövde girmez.",
+      "Ardından kapının yüzünden mil ve kilit anahtarlıysa silindir için delikler açılır. Konumlarını kilidin kendi geometrisi (backset ve mil ile silindir arasındaki aks mesafesi) belirler; bir gömme kilidin ikisini de kontrol etmeden başka bir markanınkiyle değiştirilememesinin nedeni budur.",
+      "İnsanları yakalayan belirli ölçü aks mesafesidir. Aynı backset'e sahip iki gömme kilit, mil ile silindir arasında farklı mesafelere sahip olabilir ve birine göre hazırlanmış bir kapının silindir deliği diğeri için yanlış yerde olur. Backset ve aks mesafesi sayfamız bunu daha ayrıntılı ele alıyor.",
+      "HAZIRLIK YALNIZCA KİLİT DEĞİLDİR",
+      "Eksiksiz bir kapı hazırlığı kilitten fazlasını kapsar ve unutulan kalemler, belirgin bir sahibi olmayanlardır.",
+      "Menteşe hazırlığı: menteşe yuvalarının sayısı, ölçüsü, kapının üstünden konumları ve köşe işlemi. Sayıyı yanlış yaparsanız liste dört derken kapı üç yuvayla gelir.",
+      "Kapatıcı hazırlığı: kapatıcının bağlantı elemanları için kapının içinde takviye; içi boş metal bir kapıda bu takviye üretim sırasında kaynaklanır ve sonradan eklenemez.",
+      "Panik çıkış cihazı hazırlığı: belirli cihaza göre konumlandırılmış boydan boya cıvata delikleri ve takviye. Panik çıkış cihazları katalogdaki birbirinin yerine en az geçebilen ürünler arasındadır.",
+      "Çift kanatlarda gömme sürgü ve sıralayıcı hazırlığı. Görüş paneli oyukları. Zemin kaplamaları ve hava geçişi için alt boşluk.",
+      "\"HAZIRLANMIŞ\" NEYİ GARANTİ EDER, NEYİ ETMEZ",
+      "\"161'e göre hazırlanmış\" diye tarif edilen bir kapı, belirtilen delik ölçülerini ve backset'i garanti eder. Belirli bir kilidin uyacağını garanti etmez; çünkü bir kilit 161 ailesinin içinde olup yine de hazırlığın tarif etmediği şeylerde farklı olabilir: rozetin ya da aynanın kapladığı alan, boydan boya cıvata konumları, şasenin kapsadığı kapı kalınlığı aralığı.",
+      "\"Gömme kilide göre hazırlanmış\" diye tarif edilen bir kapı bir cebi garanti eder. Belirli bir gömme kilidin uyacağını garanti etmez; çünkü yüz delikleri kilide özgüdür.",
+      "Güvenli yöntem, abartılı gibi görünen ama olmayan yöntemdir: kilit üreticisinin şablonunu ya da kilidin ölçülendirilmiş çizimini kapı üreticisine gönderin ve kapı üreticisinden buna göre yazılı teyit alın. Şablon tek sayfalık bir belgedir. Yanlış aks mesafesine göre kesilmiş bir konteyner dolusu kapı ise telafi edilemez.",
+      "BİR KAPI SİPARİŞİNİN İHTİYAÇ DUYDUĞU BEŞ SATIR",
+      "Milimetre ya da inç cinsinden kapı kalınlığı. Kilit şasesinin ulaşıp ulaşmayacağını ve milin yeterince uzun olup olmadığını belirler.",
+      "Backset. Deliğin kapı kenarından konumu.",
+      "Adıyla hazırlık tipi: 161 düzenine göre delme, belirtilmiş cep ölçüsüne göre gömme ya da belirli bir üreticinin şablonu.",
+      "Kullandığınız gelenekle ve bir gelenek olarak belirtilmiş kapı yönü. Kapı yönü sayfamız AB ve Kuzey Amerika geleneklerinin aynı kapıyı neden farklı kelimelerle tarif edebildiğini anlatıyor.",
+      "Varsa yangın dayanımı. Yangın dayanımlı bir kapının hazırlığı test edilmiş konfigürasyonunun parçasıdır ve testin içermediği bir deliği ona açmak montajda bir değişikliktir.",
+      "NEDEN TARİF DEĞİL ÇİZİM YAYIMLIYORUZ",
+      "Yukarıdaki her şey, bir ürün tarifinin neden yetmediğinin bir nedenidir. Bir tarif \"gömme kilit, 60 mm backset\" der. Bir çizim ise her deliğin nereye gittiğini söyler.",
+      "Ürün sayfalarımız ölçtüğümüz ve tedarik ettiğimiz ölçüleri taşır; bir çizim varsa yetkili kaynak odur. Yayımlanmış bir ölçümüz yoksa satır yoktur: bir kapı bir kez kesilir ve bir teknik tablodaki makul bir sayı eksik bir sayıdan daha kötüdür; çünkü eksik bir sayı sorulur, makul bir sayı ise delinir."
+    ],
+    "faq": [
+      {
+        "question": "161 kapı hazırlığı nedir?",
+        "answer": "Standart delme tip ya da silindirik kilit hazırlığı: kapının yüzünden geçen 2-1/8\" (54 mm) bir yüz deliği, kapı kenarından ona uzanan 1\" (25,4 mm) bir kenar deliği ve bir dil ön plakası oyuğu. Backset yüz deliğini kenardan 2-3/8\" (60 mm) ya da 2-3/4\" (70 mm) mesafeye konumlandırır."
+      },
+      {
+        "question": "Bir gömme kilit cebinin ölçüleri nelerdir?",
+        "answer": "Genellikle verilen değer 1-1/8\" (29 mm) genişlik ile 8\" (203 mm) yüksekliktir; derinliği kilit gövdesi belirler. En önemlisi genişliktir: çalışma boşluğu kadar payla, fazlası olmadan gövde kalınlığına uymalıdır, yoksa kilit kapının içinde sallanır."
+      },
+      {
+        "question": "\"Gömme kilide göre hazırlanmış\" her gömme kilidin uyacağı anlamına mı gelir?",
+        "answer": "Hayır. Bir cebi garanti eder, yüzden geçen delikleri değil. Mil ve silindir deliklerini kilidin kendi backset'i ve aks mesafesi belirler ve aynı backset'e sahip iki gömme kilit farklı aks mesafelerine sahip olabilir. Kilidin şablonunu kapı üreticisine gönderin ve yazılı teyit alın."
+      },
+      {
+        "question": "ANSI/BHMA A115 serisi neyi kapsar?",
+        "answer": "Kapı ve kasa hazırlığı standartlarını. Değerleri sayıların kendisinde değil, bir ülkedeki bir kapı üreticisi ile başka bir ülkedeki bir kilit üreticisinin birbiriyle konuşmaya gerek kalmadan aynı hazırlığa göre çalışabilmesindedir."
+      },
+      {
+        "question": "Bir kapı hazırlığı siparişinde neler unutulur?",
+        "answer": "Belirgin bir sahibi olmayan kalemler: menteşe sayısı ve konumları, kapatıcı takviyesi (içi boş metal kapılarda üretimde kaynaklanır ve sonradan eklenemez), panik çıkış cihazı boydan boya cıvataları ve takviyesi, çift kanatlarda gömme sürgü ve sıralayıcı hazırlığı, görüş panelleri ve alt boşluk."
+      },
+      {
+        "question": "Yanlış kesilmiş bir kapı düzeltilebilir mi?",
+        "answer": "Nadiren iyi biçimde. Konumundan 6 mm kaymış bir delik taşınamaz; kapı ya hurdadır ya da bir kapak plakası alır. Şartnamenin kilit sipariş edildiğinde değil kapı sipariş edildiğinde eksiksiz olması gerekmesinin ve kilit şablonunu kapı üreticisine göndermenin ucuz bir sigorta olmasının nedeni budur."
+      }
+    ]
+  },
+  "door-thickness-to-cylinder-length-2026": {
+    "title": "2026'da Kapı Kalınlığından Silindir Boyuna: Hesap, Başvuru Tablosu ve Cevabın Neden Çoğu Zaman Yukarı Yuvarlandığı",
+    "summary": "Bir Avrupa tipi silindiri boyutlandırmak bir çıkarma ve bir yuvarlamadır; işin ters gittiği yer de yuvarlamadır. Bu sayfa hesabı veriyor, gerçekten yayımladığımız dokuz boya göre hesaplanmış bir kapı kalınlığı başvuru tablosu sunuyor, ince bir kapının neden yine de dışarı taşan bir silindir aldığını açıklıyor ve kilit gövdesi kanatta ortalanmadığında neyin değiştiğini gösteriyor.",
+    "seoTitle": "Kapı Kalınlığından Silindir Boyuna 2026: Başvuru Tablosu",
+    "seoDescription": "Kapı kalınlığından Avrupa tipi silindir boyu nasıl hesaplanır, yayımlanan dokuz boya göre tablo ve ince kapılarda silindirin neden yine de taştığı.",
+    "body": [
+      "Bir Avrupa tipi silindir aritmetikle boyutlandırılır ve aritmetik gerçekten basittir. İnsanların yanılmasına yol açan şey, aritmetiğin verdiği cevabın neredeyse hiçbir zaman var olan bir silindir olmamasıdır; bu yüzden son adım bir yuvarlama kararıdır ve yanlış yöne yuvarlamak ya yetişmeyen ya da tutulabilecek kadar dışarı taşan bir silindir üretir.",
+      "## Hesap",
+      "Her yarımı, sabitleme vidası deliğinin merkezinden o taraftaki rozetin ya da aynanın dış yüzüne kadar ölçün. O deliğin merkezi aynı zamanda kamın merkezidir ve iki yarımın da ondan verildiği referans noktasıdır; Avrupa tipi silindir sayfamızın eski bir silindirin uçtan uca ölçümünün size yanlış şeyi söylediğinde ısrar etmesinin nedeni budur.",
+      "Kanatta ortalanmış bir kilit gövdesi için her yarım dolayısıyla şudur:",
+      "yarım = (kapı kalınlığı ÷ 2) + o taraftaki rozet ya da ayna derinliği + silindir yüzü erişilebilir ama dışarı taşmayacak kadar küçük bir pay",
+      "Ardından her yarımı mevcut en yakın yarım boya yukarı yuvarlayın; iki yarımın toplamı sipariş edeceğiniz silindiri verir.",
+      "Yarım boylar, profil geometrisinin izin verdiği en küçük yarım olan 27,5 mm'lik (1-1/16\") bir minimumdan başlayarak 5 mm'lik adımlarla ilerler: 27,5, 30, 35, 40, 45, 50, 55, 60 mm ve yukarısı.",
+      "## Başvuru tablosu",
+      "Her iki tarafta 4 mm'lik (5/32\") bir rozet ve ortalanmış bir kilit gövdesiyle hesaplanmış ve kataloğumuzun gerçekten yayımladığı dokuz toplam boya yukarı yuvarlanmıştır. Rozet değerini değiştirirseniz ortadaki sütun değişir; yöntem değişmez.",
+      "| Kapı kalınlığı | Hesaplanan yarım | En yakın standart yarım | Aritmetik toplam | Yelpazemizden sipariş |\n| --- | --- | --- | --- | --- |\n| 35 mm (1-3/8\") | 21,5 mm | 27,5 mm | 55 mm | 56 mm |\n| 40 mm (1-9/16\") | 24 mm | 27,5 mm | 55 mm | 56 mm |\n| 45 mm (1-3/4\") | 26,5 mm | 27,5 mm | 55 mm | 56 mm |\n| 50 mm (1-15/16\") | 29 mm | 30 mm | 60 mm | 60 mm |\n| 55 mm (2-3/16\") | 31,5 mm | 35 mm | 70 mm | 70 mm |\n| 60 mm (2-3/8\") | 34 mm | 35 mm | 70 mm | 70 mm |\n| 70 mm (2-3/4\") | 39 mm | 40 mm | 80 mm | 80 mm |\n| 80 mm (3-1/8\") | 44 mm | 45 mm | 90 mm | 90 mm |",
+      "Bu tablodaki iki şeyi iki kez okumaya değer.",
+      "## İnce bir kapı neden yine de dışarı taşan bir silindir alır",
+      "İlk üç satıra bakın. 35 mm'lik bir kapı 21,5 mm'lik bir yarıma hesaplanır ve 27,5 mm'lik bir yarım alır; çünkü 27,5 mm Avrupa profilinin izin verdiği en küçük yarımdır. Sipariş edilecek daha kısa bir silindir yoktur.",
+      "Dolayısıyla yaklaşık 45 mm'nin altındaki kapılarda silindir dışarı taşar ve soru \"bundan nasıl kaçınırım\" olmaktan çıkıp \"bununla nasıl başa çıkarım\" olur. Tercih sırasına göre iki cevap var.",
+      "Yükseltilmiş bir rozet ya da güvenlik rozeti farkı alır: silindir yüzü kapıdan dışarı taşmak yerine rozetle aynı hizada durur. Bu hem daha iyi görünür hem de güvenlik için daha iyidir; çünkü dışarı taşan bir silindir tutulabilen bir silindirdir.",
+      "Ya da taşmayı kabul edip küçük tutun. Avrupa tipi silindir sayfamız çalışma kuralını koyar: bir silindir asla yaklaşık 3 mm'den fazla dışarı taşmamalıdır. Bunun ötesinde bir saldırı için tutamak hâline gelir.",
+      "Cevap olmayan şey, profilin sunduğundan daha kısa bir yarım seçmektir. Öyle bir yarım yoktur.",
+      "## Kilit gövdesi ortalanmadığında ne değişir",
+      "Yukarıdaki hesap silindir deliğinin kanat kalınlığının ortasında olduğunu varsayar; bu, çoğu kapıdaki çoğu gömme gövde için doğrudur.",
+      "Olmadığı yerde (bir yüze daha yakın durmak üzere tasarlanmış bir kilit, bir tarafında ek panel bulunan bir kapı, lambalı bir çift) iki yarım farklıdır ve silindir asimetriktir. Bir Avrupa tipi silindirin bir değil iki sayıyla belirtilmesinin bütün nedeni budur.",
+      "Bu durumda her yarımı sabitleme vidası merkezinden ayrı ölçün, her birini kendi başına yukarı yuvarlayın ve bölünmeyi sipariş edin. Bölünmenin bir yönü olduğunu unutmayın: 30/40 ile 40/30 aynı toplam boydadır ve birbirinin yerine geçmez; çünkü 30/40'ta kısa yarım dışa bakar.",
+      "Sipariş verirken hangi yarımın hangisi olduğunu belirtin. \"70 mm, dışarıda 30 / içeride 40\" yanlış okunamaz; \"70 mm 30/40\" ise iki tarafın aynı geleneği kullanmasına dayanır.",
+      "## Sökemeyeceğiniz bir kapıyı ölçmek",
+      "Silindir boyutlandırmanın çoğu, mevcut silindir hâlâ kapıdayken kullanımdaki bir binada yapılır. Hiçbiri bir şey sökmeyi gerektirmeyen üç ölçüm.",
+      "Kilit kenarında kapı kalınlığı: kumpas kullanın. Lambalı ya da pervazlı bir kenara takılan şerit metre kanadı değil lambayı ölçer ve lambalı bir çiftte bu hata sürekli olarak, kısa silindir üreten yönde birkaç milimetredir.",
+      "Her taraftaki rozet derinliği: kapı yüzünden rozetin dış yüzüne ölçün. İki taraf çoğu zaman farklıdır; dışarıda güvenlik rozeti, içeride düz rozet yaygın ve tamamen mantıklı bir düzendir ve ortalanmış bir kilit gövdesinde bile silindiri asimetrik yapar.",
+      "Mevcut silindirin her tarafta ne kadar dışarı taştığı: kopyalamak için değil, neyi düzelttiğinizi bilmek için. Dışarıda 6 mm taşan bir silindir, mevcut olanın o yarımda büyük olduğunu ve daha kısa bir dış yarımın elinizde olduğunu söyler.",
+      "Yapılmaması gereken şey, eski silindiri uçtan uca ölçüp o sayıyı sipariş etmektir. Bölünmeyi atarak toplam boyu verir; oysa yenisinin aynı yönde uyup uymayacağını belirleyen bilgi bölünmedir. Avrupa tipi silindir sayfamız bu ölçümün neden başarısız olduğunu daha ayrıntılı anlatıyor.",
+      "## Tablonun kapsamadığı üç durum",
+      "İçeride mandal: mandallı yarım aynı referansa göre aynı şekilde ölçülür; ama mandalın kendisi rozetin ötesine çıkar ve bu çıkıntı silindir boyunun parçası değildir. Onu eklemeyin, çıkarmayın da; yarımı her zamanki gibi rozet yüzüne göre boyutlandırın ve mandalın tasarlandığı gibi dışarıda durmasına izin verin.",
+      "Bir yüzünde ek panel ya da kaplama bulunan bir kapı: panel kalınlığa yalnızca o tarafta ekler. Paneli de içeren yüzden yüze toplamı ölçün, sonra hesabı toplamın ortasında değil kilit gövdesinde bölün; biri paneli eklediğinde silindir deliği yerinden oynamadı.",
+      "Yama kilitli camlı kapı: yukarıdaki aritmetik bir kanat içindir; cam üzerindeki bir patch fitting'in kendi silindir yuvası ve kendi ölçüsü vardır ve bu ölçü cam kalınlığından türetilmez, bağlantı parçası tarafından yayımlanır. Cam kapı sayfamız bir cam bağlantı parçasının neyi yayımladığını ve neyin bir çizimden gelmesi gerektiğini anlatıyor.",
+      "Üçünde de güvenli hamle aynıdır: sabitleme vidası merkezine göre ölçün, her yarımı ayrı ele alın ve herhangi bir şey kesilmeden ya da miktarla sipariş edilmeden önce sonucu yazılı olarak teyit edin.",
+      "## Bu tabloya karşı neyi yayımlıyoruz",
+      "Kataloğumuz dokuz toplam boyda 45 silindir modeli taşır: 45, 47, 54, 56, 60, 65, 70, 80 ve 90 mm. Boy, ayrı bir özellik satırında değil model numarasındadır; Avrupa tipi silindir sayfamız bunu açıklıyor.",
+      "Yayımlamadığımız şey her modelin bölünmesidir: 45 silindir kaydının tamamında iç ve dış yarımı belirten satır sayısı sıfırdır.",
+      "Dolayısıyla bu tablo sizi yelpazemizden bir toplam boya, yani model kodunun taşıdığı sayıya ulaştırır. Bölünme sipariş başına bir sorudur ve asimetrik bir kapıda önemli olan soru odur; eşit bir bölünmeyi varsaymak yerine yazılı olarak isteyin.",
+      "Bu gerçek bir boşluktur ve bu sayfa, değiştirilebilirlik sayfamızın verdiği nedenle onu doldurmak yerine belirtir: bir bölünmeyi yazmak kolay, yanılmak pahalıdır ve dış tarafta 5 mm uzun bir silindir kozmetik bir sorun değil bir saldırı yüzeyidir.",
+      "## Talebe yazılacak üç satır",
+      "Kilit kenarında şeritle değil kumpasla ölçülmüş kapı kalınlığı; lambalı bir kenar boyunca şerit metre lambayı okur.",
+      "Kullandığınız rozet ya da güvenlik rozeti, model ya da derinlik olarak; çünkü hesapta projeler arasında en çok değişen terim odur.",
+      "İç tarafın anahtar mı yoksa mandal mı gerektirdiği; çünkü mandal iç yarımın geometrisini değiştirir ve bir kaplama seçeneği değildir.",
+      "Bu üçüyle bir boy ve bir bölünme soru olarak değil öneri olarak geri gelir. Bunlar olmadan verilen her silindir boyu, makul bir biçime sahip bir tahmindir.",
+      "## Aşağı değil yukarı yuvarlamak için bir neden daha",
+      "Biraz uzun bir silindir dışarı taşar ve dışarı taşan bir silindir sonradan düzeltilebilir: bir güvenlik rozeti birkaç milimetreyi alır ve biri karar verirken parça çalışmaya devam eder.",
+      "Biraz kısa bir silindir kama düzgün ulaşmaz ya da sabitleme vidasını çekecek sağlam hiçbir şey olmadan bırakır. Çalışmaz, düzeltilemez ve bir masadaki biri tarafından değil, kapıdaki bir montajcı tarafından keşfedilir. Kısa gelen karışık bir siparişte her kapı aynı miktarda kısadır; bu da tek bir yanlış sayıyı teslimatın tamamına dönüştürür.",
+      "Bu sayfadaki yuvarlama kuralının yalnızca tek yöne gitmesinin nedeni bu asimetridir."
+    ],
+    "faq": [
+      {
+        "question": "Kapı kalınlığından Avrupa tipi silindir boyunu nasıl hesaplarım?",
+        "answer": "Ortalanmış bir kilit gövdesi için her yarım, sabitleme vidası deliğinin merkezinden ölçülen (kapı kalınlığı ÷ 2) artı o taraftaki rozet derinliği artı küçük bir paydır. Her yarımı mevcut en yakın yarım boya yukarı yuvarlayın ve toplayın. Yarım boylar 27,5 mm'lik bir minimumdan 5 mm'lik adımlarla ilerler."
+      },
+      {
+        "question": "40 mm'lik bir kapı hangi silindiri ister?",
+        "answer": "Her iki tarafta 4 mm rozet ve ortalanmış bir gövdeyle her yarım 24 mm'ye hesaplanır; bu da profilin izin verdiği 27,5 mm minimumun altındadır. Dolayısıyla 27,5/27,5'e, yani 55 mm aritmetik toplama yuvarlanır ve yayımlanan yelpazemizden bu 56 mm'lik bir silindirdir. Silindir biraz dışarı taşar; yükseltilmiş bir rozet bunu alır."
+      },
+      {
+        "question": "İnce bir kapı neden yine de dışarı taşan bir silindir alır?",
+        "answer": "Çünkü 27,5 mm Avrupa profilinin izin verdiği en küçük yarımdır ve sipariş edilecek daha kısa bir silindir yoktur. Yaklaşık 45 mm'nin altındaki kapılarda soru taşmadan nasıl kaçınılacağı değil, onunla nasıl başa çıkılacağıdır; yükseltilmiş bir rozet ya da güvenlik rozeti daha iyi cevaptır ve çalışma sınırı, bir silindirin asla yaklaşık 3 mm'den fazla dışarı taşmamasıdır."
+      },
+      {
+        "question": "İki yarım ne zaman farklıdır?",
+        "answer": "Silindir deliği kanat kalınlığının ortasında olmadığında: bir yüze daha yakın durmak üzere tasarlanmış bir kilit, bir tarafında ek panel bulunan bir kapı, lambalı bir çift. Her yarımı sabitleme vidası merkezinden ayrı ölçün ve her birini kendi başına yukarı yuvarlayın. Bir Avrupa tipi silindirin bir değil iki sayıyla belirtilmesinin nedeni budur."
+      },
+      {
+        "question": "30/40 ile 40/30 aynı şey mi?",
+        "answer": "Toplam boy aynı, birbirinin yerine geçmez. 30/40'ta kısa yarım dışa bakar. Sipariş verirken hangi yarımın hangisi olduğunu belirtin; \"70 mm, dışarıda 30 / içeride 40\" yanlış okunamaz, \"70 mm 30/40\" ise iki tarafın aynı geleneği kullanmasına dayanır."
+      },
+      {
+        "question": "Ürün sayfalarınız bölünmeyi veriyor mu?",
+        "answer": "Hayır. Dokuz toplam boyda (45, 47, 54, 56, 60, 65, 70, 80 ve 90 mm) 45 silindir modeli yayımlıyoruz ve boy model numarasında taşınıyor. 45 kaydın tamamında iç ve dış yarımı belirten kayıt sayısı sıfırdır. Bölünmeyi sipariş başına isteyin ve eşit bir bölünme varsaymak yerine yazılı olarak alın."
+      }
+    ]
+  },
+  "en-1125-vs-en-179-2026": {
+    "title": "2026'da EN 1125 mi EN 179 mu: Panik Bar mı Acil Çıkış Kolu mu ve Kararı Veren İnsanlarla İlgili Tek Soru",
+    "summary": "Kaçış donanımını iki Avrupa standardı kapsar ve aralarındaki seçim kapının ne kadar önemli olduğuna göre değil, binayı kimin kullandığına göre yapılır. Bu sayfa EN 1125'i EN 179'dan neyin ayırdığını açıklıyor, aralarında karar veren kullanım testini veriyor, sınıflandırma hanelerini çözüyor, uygunsuz bir açıklık üreten üç hatayı sıralıyor ve kendi çıkış yelpazemizin neye sahip olup neye sahip olmadığını belirtiyor.",
+    "seoTitle": "EN 1125 ve EN 179 (2026): Panik ve Acil Çıkış Donanımı",
+    "seoDescription": "EN 1125 panik çıkış cihazları ile EN 179 acil çıkış cihazları arasında seçim, kararı veren kullanım testi, sınıflandırma haneleri ve üç uygunluk hatası.",
+    "body": [
+      "İki standart, aynı işi yapıyor gibi görünen iki ürün ve kapı hakkında değil insanlar hakkında soru sorarak yapılan bir seçim.",
+      "Bunu ters yaparsanız, eksiksiz şartnamesi yazılmış, düzgün monte edilmiş, pahalıya belgelendirilmiş ve uygunsuz bir açıklık üretebilirsiniz.",
+      "## İki standardı ne ayırır",
+      "| | EN 1125 | EN 179 |\n| --- | --- | --- |\n| Ürün | Panik çıkış cihazı: yatay bar ya da dokunmatik bar | Acil çıkış cihazı: kapı kolu ya da itme pedi |\n| Hedef kullanıcılar | Binayı tanımayabilecek insanlar | Binayı ve çıkışı tanıyan insanlar |\n| Varsayılan durum | Kalabalıklar; panik öngörülebilir | Panik beklenmez; düşük kullanım yoğunluğu |\n| Çalışma | Bar boyunca herhangi bir noktaya yapılan baskı kapıyı açar | Kol üzerinde tek bir aşağı bastırma ya da itme hareketi |\n| Tipik binalar | Sinemalar, mağazalar, stadyumlar, okullar, toplanma yerleri | Ofisler, teknik odalar, küçük arka servis alanları |",
+      "Barın var olmasının nedeni kalabalıktır. Yatay bir bar, kapıya itilmiş ve kolunu kaldıramayan biri, arkadan sıkıştırılan biri ve binayı daha önce hiç görmemiş ve bir kol aramayan biri tarafından çalıştırılabilir. Bir kol bunların hiçbirini güvenilir biçimde yapamaz.",
+      "Dolayısıyla seçim çıkışın önemiyle değil insanlarla ilgilidir. Bir stadyumda nadiren kullanılan bir yangın çıkışı EN 1125'tir; küçük bir ofisin ana kapısı EN 179 olabilir.",
+      "## Kullanım testi",
+      "Üç soru neredeyse her durumu çözer.",
+      "Bu çıkışı kullanan insanlar binayı tanıyacak mı? Her gün orada çalışan personel, evet. Halk, müşteriler, ziyaretçiler, büyük bir kurumdaki öğrenciler, hayır.",
+      "Aynı anda kaç kişi içinden geçiyor olabilir? Eşik ülkeye ve bina tipine göre değişir ve donanım standartlarıyla değil yapı mevzuatıyla belirlenir. Önemli sayıda insanın aynı noktada toplanabileceği yerde EN 1125.",
+      "Panik öngörülebilir mi? İnsanlar hakkında değil, durum hakkında bir değerlendirme. Karanlık, kalabalık bir mekân, tanıdık olmayan bir güzergâh, insanların çıkışı ona ulaşana kadar göremediği bir durum.",
+      "Cevaplar \"tanıdık, az, hayır\" ise EN 179 kullanılabilir. Herhangi bir cevap öbür yöne giderse EN 1125. Gerçekten sınırda olduğunda belirleyici kural: EN 179'un yeteceği yerde EN 1125 donanımı kabul edilebilir, tersi doğru değildir. İkisi yakın olduğunda güvenli cevap bardır.",
+      "Bağlayıcı olan sayı iki donanım standardında da yoktur. O yargı bölgesinin yapı mevzuatındadır; bu sayfanın bir eşik değil bir test vermesinin nedeni budur. Şartnameye yazmadan önce binaya uygulanan değeri teyit edin.",
+      "## Sınıflandırmayı okumak",
+      "İki standart da bir cihazı, EN ve ANSI karşılık sayfamızda ele alınan diğer EN donanım standartlarıyla aynı biçimde, bir dizi hane üzerinden sınıflandırır.",
+      "Alanlar kullanım kategorisini, çevrim cinsinden dayanıklılığı, kapı kütlesini, yangın ve duman kapılarına uygunluğu, kullanım emniyetini, korozyon direncini, güvenliği, çıkıntıyı, çalışma tipini ve kapı uygulama alanını, yani tek kanatlı bir kapıya mı, aktif kanada mı yoksa pasif kanada mı uygun olduğunu kapsar.",
+      "Bunlardan ikisi ayrıca öne çıkarılmaya değer; çünkü bir şartnamenin en sık atladıkları onlardır.",
+      "Kapı uygulama alanı: tek kanatlı bir kapı için sınıflandırılmış bir cihaz, bir çiftin pasif kanadı için otomatik olarak uygun değildir. Çiftlerde kontrol edilecek hane budur.",
+      "Yangın ve duman uygunluğu: yangın kapısı sayfamızda anlatıldığı gibi bu, tek başına cihazın değil test edilmiş montajın bir özelliğidir ve bir yangın kapısında bu sınıflandırmaya sahip olmayan bir cihaz, açıklığı sertifikasının dışına çıkarır.",
+      "## Uygunsuz bir açıklık üreten üç hata",
+      "Halkın kullandığı bir kaçış yolunda EN 179 donanımı: en yaygın olanıdır ve genellikle maliyet nedeniyle yapılır. Birinin yaptığı her testte kusursuz çalışan ve var olma nedeni olan tek durumda başarısız olan bir kapı üretir.",
+      "Yangın çıkışında açık tutma (dogging): panik cihazı dış kolu sayfamızda tam olarak ele alınmıştır. Açık tutma dili geri çekilmiş tutar; bir yangın kapısı ise dile oturmuş kalarak çalışır. Yangın kapıları için cihazlar bu özellik olmadan üretilir ve ona sahip olanı takmak, geri kalan her şey doğru olsa bile uygunsuzdur.",
+      "İç yüze eklenen her şey: sonradan bir güvenlik sorununu çözen biri tarafından eklenen ikinci bir sürgü, bir asma kilit kulakçığı, bir zincir, anahtarlı bir geçersiz kılma. Her biri bir kişi ile dışarısı arasına bir hareket ekler ve iki standardın da bütün amacı tam olarak tek bir hareket olmasıdır.",
+      "Üçüncüsü bir şartname başarısızlığı değildir; teslimden sonra bir binaya olan şeydir. Bir kaçış kapısının iç tarafına hiçbir şey eklenemeyeceğini teslim belgelerine yazmaya değer; çünkü bunu yapacak kişi şartnameyi okumamıştır.",
+      "## Bir şartnamenin taşıması gereken iki sayı ve neden tercih değil kısıt oldukları",
+      "İki standart da cihazın bir elin altında nasıl davranacağına dair sınırlar tanımlar ve bunlar bir şartnamenin en sık tedarikçiye bıraktığı iki değerdir.",
+      "Çalıştırma kuvveti: kapıyı açmak için gereken kuvvetin bir üst sınırı vardır. Mesele konfor değildir; cihazın, küçük yapılı biri, yaralı biri ya da bilerek itmek yerine bir kalabalık tarafından ona bastırılan biri tarafından çalıştırıldığında da çalışması gerekir.",
+      "Çalıştırma yönü ve çalıştırma alanının büyüklüğü: bir panik cihazında bar, üzerinde herhangi bir noktaya temasın kapıyı açacağı kadar kanat boyunca uzanmalıdır. Geniş bir kanattaki kısa bir bar, baskının hiçbir şey yapmadığı bir alan bırakır ve o alan birinin geleceği yerdir.",
+      "Kesin değerler standartlara ve belirli cihazın sertifikasına aittir; bu yüzden onları bu sayfa dahil herhangi bir sayfadan almak yerine kendi modelinize karşı isteyin. Şartnamenin taşıması gereken şey gerekliliktir (cihazın standarda göre belgelendirilmiş olması ve sınıflandırma hanelerinin belirtilmesi); çünkü bir değerlendiricinin kontrol edebileceği biçim budur.",
+      "## Elektrikle kilitlenen kaçış kapıları",
+      "Bu kategorinin tamamındaki en zor durum ve bir şartnamenin en açık olması gereken yer.",
+      "Bir kaçış kapısı elektrikle kilitlenebilir (geçiş kontrolü için, güvenli bir servis için, hırsızlığa da direnmesi gereken bir mağaza çıkışı için); ama bunu yapmak mekanik cihazın sahip olmadığı bir bağımlılık getirir. Kilit artık elektriğe, bir denetleyiciye ve bir serbest bırakma yoluna ihtiyaç duyar ve bir tahliye, üçünün de mevcut olmayabileceği andır.",
+      "Dolayısıyla elektrikle kilitlenen bir kaçış açıklığı; elektrik, ağ ve denetleyici tamamen gittiğinde çalışan mekanik bir çıkış yoluna, ayrıca yargı bölgesinin acil kırılabilir cam serbest bırakma, alarm arayüzü ve fail-safe davranış olarak ne istiyorsa ona ihtiyaç duyar. Kilit fonksiyonu sayfamız fail-safe ve fail-secure'ü ve seçimin neden ürüne değil açıklığa ait olduğunu anlatıyor.",
+      "Bu devreye almaya bırakılacak bir karar değildir. Yangın stratejisiyle birlikte çizilmeli, şartnameye yazılmalı ve onaylanmalıdır; çünkü geçiş kontrolünü devreye alan insanlar ile kaçış yolunun sahibi olan insanlar çoğu zaman aynı insanlar değildir.",
+      "## Listeye ne yazılmalı",
+      "Standart (EN 1125 ya da EN 179) ve yalnızca standart numarası değil, sınıflandırmanın tamamı.",
+      "Cihaz tipi: sıva üstü, gömme, yüzeyden dikey çubuklu ya da gizli dikey çubuklu; panik çıkış cihazı sayfamız bunları karşılaştırıyor.",
+      "Dış kol ve fonksiyonu, adıyla; çünkü asıl soru hiçbir zaman cihaz yarısı değildi.",
+      "Açıklığın yangın dayanımlı olup olmadığı; bu, açık tutma özelliğini tamamen dışarıda bırakır ve cihazı buna göre sınıflandırılmış olanlarla sınırlar.",
+      "Çiftler için: hangi kanadın aktif olduğu, pasif kanadın açılması gerekip gerekmediği ve sıralayıcı.",
+      "Ve açıklığın elektrikle kilitlendiği yerde, arıza durumu ve mekanik geçersiz kılma; donanım tedarikçisinin asla görmeyeceği ayrı bir geçiş kontrolü belgesinde değil, listede.",
+      "## Tek kanat, çiftler ve pasif kanat",
+      "Bir kaçış yolundaki çift kanatlı bir kapı, cihazın tek başına cevaplayamayacağı bir soru doğurur: pasif kanadın açılması gerekip gerekmediği.",
+      "Gerekiyorsa (tek kanat açıkken net genişlik yetersiz olduğu için) pasif kanadın kendi cihazına ihtiyacı vardır. Gömme sürgüler bir eşdeğer değildir: sürgü ikinci bir hareket gerektirir ve ikinci bir hareket, iki standardın da ortadan kaldırmak için kurulduğu şeydir.",
+      "Aktif kanat tek başına gereken net genişliği sağlıyorsa pasif kanat sürgülerle sabitlenebilir; çiftin ayrıca kanatların doğru sırayla kapanması için bir sıralayıcıya ihtiyacı vardır. Panik çıkış cihazı sayfamız bir çiftin donanım açısından neden tek bir kapının iki katından fazlasına mal olduğunu anlatıyor.",
+      "## Neye sahibiz, neye sahip değiliz",
+      "Kataloğumuz panik ya da çıkış donanımı olarak adlandırılan 46 ürün taşır: 30 cihaz, 15 dış kol ve bir kilit gövdesi.",
+      "307 ve 311 panik çıkış cihazlarımız test aşamasındadır: sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek; ne bir açıklamada, ne bir karşılaştırmada, ne de bir standardın numarasını ona göre test edilmemiş bir ürünün yanına koyarak.",
+      "Bu, bu kategoride diğerlerinden daha fazla gerçek bir ticari bedeldir; çünkü kaçış donanımı belgelendirmeye göre satın alınır. Sertifika numarasını gösteremeyeceğimiz bir sınıflandırma yazmaktansa bu bedeli taşımayı tercih ederiz; sertifika doğrulama sayfamız bir alıcının bizimki dahil herkesin iddiasını nasıl kontrol etmesi gerektiğini tam olarak anlatıyor.",
+      "Bir proje bugün EN 1125 ya da EN 179 belgelendirmesi gerektiriyorsa bize sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim. Birkaç modelde cevap şu anda hayırdır ve bu cevap sizin için bir tekliften daha faydalıdır."
+    ],
+    "faq": [
+      {
+        "question": "EN 1125 ile EN 179 arasındaki fark nedir?",
+        "answer": "EN 1125, binayı tanımayabilecek insanlar için ve paniğin öngörülebildiği yerlerde panik çıkış cihazlarını (yatay ya da dokunmatik barlar) kapsar. EN 179 ise binayı ve çıkışı tanıyan insanlar için, bir kol ya da itme pediyle çalışan acil çıkış cihazlarını kapsar. Seçim kapının önemiyle değil insanlarla ilgilidir."
+      },
+      {
+        "question": "Hangi standardın uygulanacağına nasıl karar veririm?",
+        "answer": "Üç soru. Kullanıcılar binayı tanıyacak mı? Aynı anda kaç kişi içinden geçiyor olabilir? Durum göz önüne alındığında panik öngörülebilir mi? Cevaplar tanıdık, az ve hayır ise EN 179 kullanılabilir. Değilse EN 1125. Bağlayıcı kullanım yoğunluğu değeri iki donanım standardından da değil, yapı mevzuatından gelir."
+      },
+      {
+        "question": "EN 179'un yeteceği yerde EN 1125 donanımı kullanabilir miyim?",
+        "answer": "Evet; bir durum sınırda olduğunda belirleyici kural budur. EN 179'un yeteceği yerde EN 1125 donanımı kabul edilebilir; tersi doğru değildir. İkisi yakın olduğunda güvenli cevap bardır."
+      },
+      {
+        "question": "Bir kaçış açıklığını yapıldıktan sonra uygunsuz hâle ne getirir?",
+        "answer": "Çoğu zaman iç yüze eklenen bir şey (ikinci bir sürgü, bir asma kilit kulakçığı, bir zincir, anahtarlı bir geçersiz kılma); bunları sonradan bir güvenlik sorununu çözen biri takar. Her biri bir kişi ile dışarısı arasına bir hareket ekler ve iki standart da tam olarak tek bir hareketi garanti etmek için vardır. Bunu teslim belgelerine yazın."
+      },
+      {
+        "question": "Bir kaçış çiftinin pasif kanadı gömme sürgülerle sabitlenebilir mi?",
+        "answer": "Yalnızca aktif kanat tek başına gereken net genişliği sağlıyorsa. Pasif kanadın açılması gerekiyorsa kendi cihazına ihtiyaç duyar; sürgü ikinci bir hareket gerektirir, bu da iki standardın ortadan kaldırmak için kurulduğu şeydir. Bir çiftin ayrıca kanatların doğru sırayla kapanması için bir sıralayıcıya ihtiyacı vardır."
+      },
+      {
+        "question": "Panik çıkış cihazlarınız EN 1125 ya da EN 179 belgeli mi?",
+        "answer": "307 ve 311 modellerimiz test aşamasındadır. Sertifika numaraları oluşana kadar yayımladığımız hiçbir şey onların EN 1125'e, EN 179'a, bir yangın dayanımına, bir ANSI sınıfına ya da bir UL listelemesine sahip olduğunu ima etmeyecek. Bugün belgelendirme gerektiren bir projede sorun, karşılayıp karşılayamayacağımızı açıkça söyleyelim; birkaç modelde cevap şu anda hayırdır."
+      }
+    ]
+  },
+  "en-ansi-bhma-cross-reference-2026": {
+    "title": "2026'da EN ile ANSI/BHMA Karşılık Tablosu: Neyin Eşleştiği, Neyin Eşleşmediği ve Neden",
+    "summary": "Şartname yazarları EN ve ANSI/BHMA kapı donanımı standartları arasında bir dönüşüm tablosu ister. Var olan şey bir eşdeğerlik değil, bir kapsam haritasıdır: iki sistem farklı özellikleri sınıflandırır ve birine göre belgelendirilmiş bir ürün diğeri kapsamında otomatik bir iddia taşımaz. Bu sayfa her iki tarafta hangi standardın hangi ürün ailesini kapsadığını, her birinin neyi ölçtüğünü ve eşlemenin gerçekten bozulduğu dört yeri anlatıyor.",
+    "seoTitle": "EN ile ANSI/BHMA Karşılık Tablosu 2026 | Canton Hyland",
+    "seoDescription": "EN ve ANSI/BHMA kapı donanımı standartlarının kapsam haritası: EN 1125, EN 179, EN 1154, EN 1906, EN 1935, EN 1303, EN 12209 ve A156.1–A156.18.",
+    "body": [
+      "Talep neredeyse her seferinde aynı kelimelerle gelir: bize Avrupa standartları ile Amerikan standartları arasında bir dönüşüm tablosu gönderin. İstenmesi makul bir şeydir ve onu dürüstçe sağlamanın bir yolu yoktur; çünkü iki sistem aynı şeyi tarif eden iki lehçe değildir. Farklı özellikleri, farklı yöntemlerle sınıflandırır ve sonucu yapısal olarak farklı biçimlerde ifade ederler.",
+      "Sağlanabilecek olan ve bu sayfanın olduğu şey bir kapsam haritasıdır: her iki tarafta hangi standardın hangi ürün ailesini yönettiği, her birinin gerçekte neyi ölçtüğü ve eşdeğerlik varsayan bir okuyucunun yanılacağı dört yer.",
+      "HER SİSTEMİN BİÇİMİ",
+      "ANSI/BHMA bir ürünü sınıflandırır. Bir kilit takımı Grade 1, Grade 2 ya da Grade 3'tür: azalan tek bir sayı, birlikte test edilen bir performans ölçütleri demetini kapsar. Bir şartname yazarı Grade 1 yazar ve bir üretici ya ona sahiptir ya değildir.",
+      "EN sistemi ise bir ürünü birkaç bağımsız hane üzerinden sınıflandırır. Bir EN 1906 kapı kolu, ayrı pozisyonların kullanım kategorisini, dayanıklılığı, kapı kütlesini, yangına uygunluğu, emniyeti, korozyon direncini, güvenliği ve çalışma tipini tarif ettiği çok haneli bir kod taşır. Tek bir sayı yoktur. Başlıktaki standardı aynı olan iki ürün sekiz pozisyonun altısında farklı olabilir.",
+      "Bir eşdeğerlik tablosunun var olmamasının nedeni bu farktır. Grade 1, herhangi bir EN hanesinin taşıdığı bir değer değildir ve bir EN sınıflandırması söylediklerinin çoğu atılmadan tek bir sınıfa indirgenemez.",
+      "KAPSAM HARİTASI",
+      "Panik ve acil çıkış donanımı. EN 1125, halkın bulunabileceği ve donanım konusunda eğitimsiz olabileceği yerler için yatay barla çalışan panik çıkış cihazlarını kapsar. EN 179, kullanıcıların çıkışı tanıdığı yerler için kol ya da itme pediyle çalışan acil çıkış cihazlarını kapsar. ANSI/BHMA tarafında A156.3 panik çıkış cihazlarını kapsar ve EN 1125'i EN 179'dan ayıran eğitimli-eğitimsiz ayrımı, donanım standardıyla değil yapı yönetmeliğinin kullanım kurallarıyla ele alınır.",
+      "Mekanik olarak çalışan kilitler ve diller. EN 12209 kilit gövdesini ve dil ve kilitleme fonksiyonlarını kapsar. ANSI/BHMA ise bunun yerine kilit mimarisine göre ayırır: gömme kilitler için A156.13, delme ve önceden monte edilmiş kilitler için A156.2. Bir Avrupa gömme kilidi ile bir Amerikan gömme kilidi, kategoriyi aynı şekilde bölmeyen standartlara göre sınıflandırılır.",
+      "Kapı kolları ve topuzlar. EN 1906 kol takımını kendi sekiz pozisyonlu sınıflandırmasıyla kendi başına bir ürün olarak kapsar. ANSI/BHMA sistemi ise trimi genellikle ayrıca sınıflandırılan bir kalem olarak değil, ait olduğu kilit takımının parçası olarak ele alır; bir Avrupa kolunun kendine ait bir sınıflandırma taşıması, bir Amerikan kolunun ise genellikle taşımamasının nedeni budur.",
+      "Kapı kapatıcılar. EN 1154, kapı genişliği ve kütlesinden türetilen bir güç sınıfı dahil, kontrollü kapı kapatma cihazlarını kapsar. A156.4 kapı kontrol cihazlarını kapsar. Güç sınıfı kavramı iki sistemin gerçekten karşılaştırılabilir bir değere en çok yaklaştığı yerdir ve orada bile boyutlandırma girdisi farklıdır.",
+      "Menteşeler. EN 1935, dayanıklılık ve kapı kütlesini içeren bir sınıflandırmayla tek eksenli menteşeleri kapsar. A156.1 menteşeleri kapsar. İkisi de yükü ve çevrimi sınıflandırır; hiçbiri bunları diğerinin birimleriyle ifade etmez.",
+      "Silindirler. EN 1303, anahtarla ilgili güvenlik, dayanıklılık ve saldırı direnci üzerinden sınıflandırılan kilit silindirlerini kapsar. A156.5 yardımcı kilitleri ve ilgili ürünleri kapsar; silindir güvenliği de yanında ele alınır. Avrupa silindirinin ölçüsel tarafı ise EN 1303'te hiç yer almaz; profilin kendisini tarif eden DIN 18252'dedir.",
+      "Kaplamalar ve korozyon. EN 1670 korozyon direncini maruziyet sınıfına göre sınıflandırır. A156.18 malzemeleri ve kaplamaları kapsar ve 600 serisi kaplama numaraları oradadır. Bu ikisi eşdeğer değil tamamlayıcıdır: biri bir kaplamanın tuz püskürtmeye ne kadar dayandığını sınıflandırır, diğeri kaplamanın ne olduğunu adlandırır.",
+      "Yangın dayanımı. EN 1634-1, kapı montajlarının yangın dayanımı için Avrupa testidir. UL 10C ve NFPA 252 Kuzey Amerika testleridir. Üçü de eksiksiz bir montajı fırına sokar ve basınç rejiminde ayrışırlar; birine göre alınmış bir sonucun diğerine göre sonuç olarak kabul edilmemesinin nedeni budur.",
+      "EŞLEMENİN BOZULDUĞU DÖRT YER",
+      "Birincisi, montaj kuralı. İki sistem de bir kapıyı, tek tek onaylanmış parçalardan oluşan bir torba olarak değil, eksiksiz bir montaj (kanat, kasa, donanım, contalar, camlar) olarak belgelendirir. Bir montajda test edilmiş bir menteşe, dayanımını başka bir montaja taşımaz. Bu, başka herhangi bir yanlış anlamadan daha fazla projeyi yakalar ve Atlantik'in iki yakasında da doğrudur.",
+      "İkincisi, listeleme sınıflandırma değildir. Bir UL listelemesi, bir ürünün belirli bir yapı için test edildiğini ve süregelen fabrika denetimine tabi olduğunu beyan eder. Bir ANSI/BHMA sınıfı ise bir test setine karşı performansı beyan eder. Farklı türden beyanlardır ve bir ürün biri olmadan diğerine sahip olabilir. UL 305'in neden bir sınıf değil bir listeleme olduğu üzerine ayrı bir yazı yayımlıyoruz.",
+      "Üçüncüsü, yangın testi basıncı farklıdır. Avrupa ve Kuzey Amerika fırın testlerinde kullanılan nötr basınç düzlemi aynı değildir; bu yüzden bir EN 1634-1 sonucu, aynı montaj için bile UL 10C'ye ya da NFPA 252'ye aktarılamaz. Bir Avrupa yangın kapısı sertifikasının bir Kuzey Amerika yetkili kurumunu tatmin etmemesinin teknik özü budur.",
+      "Dördüncüsü, kaplama kodları bir performans sınıfı değil bir adlandırma sistemidir. US26D, BHMA 626 ve SN gibi bir fabrika kodu aynı saten kaplamayı tarif edebilir ve hiçbiri korozyon performansını belirtmez. Bu EN 1670'in işidir ve bir kaplama kodu yanında hiçbir EN 1670 sınıfı taşımaz.",
+      "NEYE SAHİP OLDUĞUMUZ, AÇIKÇA",
+      "Panik çıkış cihazı yelpazemiz EN 1125'e göre belgelendirilmiştir ve CE işaretlidir. Bu yelpazede bugün ANSI/BHMA sınıflarına ya da UL listelemelerine sahip değiliz. İki model, 307 ve 311, Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur.",
+      "Bu cümle böyle yazıldı; çünkü UL Product iQ ve BHMA belgelendirilmiş ürün dizini kamuya açık olarak aranabilir ve bir şartname yazarı onay belgelerine sertifika numaralarını yazar. Bir aramadan sağ çıkamayan bir iddia, kazanmak için yapıldığı siparişten daha pahalıya mal olur.",
+      "Bir proje bugün bir ANSI/BHMA sınıfı ya da bir UL listelemesi gerektiriyorsa dürüst cevap, EN 1125 belgelendirmemizin onun yerini tutmadığıdır ve bunu bir konteyner yola çıktıktan sonra değil, şimdi söylemeyi tercih ederiz.",
+      "İKİ PAZARDA DA İŞE YARAYAN BİR ŞARTNAME NASIL YAZILIR",
+      "Davranışı belirtin, sonra binanın bulunduğu pazar için standardı adlandırın. Bir cihazın dili kaçış yönünde tek bir hareketle serbest bırakması gerektiğini söyleyen bir liste, iki sistemin de test ettiği bir gerekliliği tarif eder. Grade 1 diyen bir liste ise yalnızca birinin cevaplayabileceği bir gerekliliği tarif eder.",
+      "Bir proje gerçekten iki pazarı kapsıyorsa işe yarayan düzen, iki sertifikalı tek bir set değil, tek bir fonksiyonel tarifle iki donanım setidir. Bu daha fazla evrak işi ve daha az yeniden iş demektir; donanımda yeniden iş ise kapanmayan bir kapı demektir."
+    ],
+    "faq": [
+      {
+        "question": "EN ve ANSI/BHMA kapı donanımı standartları arasında bir dönüşüm tablosu var mı?",
+        "answer": "Hayır ve dürüstçe var olamaz. ANSI/BHMA performansı tek bir sınıfa sıkıştırır; EN sistemi ise onu birkaç bağımsız sınıflandırma hanesine yayar. Hangi standardın hangi ürün ailesini kapsadığını gösteren bir kapsam haritası mümkündür ve bu sayfa öyle bir haritadır. Bir eşdeğerlik tablosu ise değildir."
+      },
+      {
+        "question": "ANSI/BHMA A156.3'e hangi EN standardı karşılık gelir?",
+        "answer": "A156.3 panik çıkış cihazlarını kapsar. EN tarafında kategori ikiye ayrılır: halkın bulunabileceği ve eğitimsiz olabileceği yerler için yatay barlı panik çıkış cihazlarında EN 1125, kullanıcıların çıkışı bildiği yerler için kol ya da pedli acil çıkış cihazlarında EN 179."
+      },
+      {
+        "question": "EN 1125 belgelendirmesi bir Kuzey Amerika yetkili kurumunu tatmin eder mi?",
+        "answer": "Genellikle hayır. Yangın testi fırın basınç rejimleri EN 1634-1 ile UL 10C ya da NFPA 252 arasında farklıdır; bu yüzden sonuçlar aktarılamaz ve Kuzey Amerika yönetmelikleri genellikle adıyla bir UL listelemesi ya da ANSI/BHMA sınıfı ister. Bir ikameyi varsaymadan önce yetkili kurumla teyit edin."
+      },
+      {
+        "question": "UL listelemesi ANSI Grade 1 ile aynı şey mi?",
+        "answer": "Hayır. Bir listeleme, belirli bir yapının test edildiğini ve fabrika denetimi altında kaldığını beyan eder. Bir sınıf ise bir test setine karşı performansı beyan eder. Bir ürün biri olmadan diğerine sahip olabilir ve ikisini birden isteyen bir şartname iki ayrı kanıt istiyordur."
+      },
+      {
+        "question": "BHMA 626 kaplama kodu bana korozyon direnci hakkında bir şey söyler mi?",
+        "answer": "Hayır. Kaplama kodları bir kaplamayı adlandırır; ne kadar dayanacağını sınıflandırmaz. Korozyon performansı Avrupa tarafında EN 1670 ile sınıflandırılır ve bir kaplama kodu yanında hiçbir EN 1670 sınıfı taşımaz. Korozyon proje için önemliyse ayrıca belirtin."
+      },
+      {
+        "question": "Canton Hyland'ın ANSI ya da UL belgesi var mı?",
+        "answer": "Panik çıkış cihazı yelpazesinde bugün yok. Bu yelpaze EN 1125'e göre belgelendirilmiştir ve CE işaretlidir. 307 ve 311 modelleri Kuzey Amerika belgelendirmesi için test aşamasındadır ve henüz bir sertifika numarası yoktur. UL Product iQ ve BHMA dizini kamuya açık olarak aranabilir; bunun ima edilmek yerine açıkça söylenmesinin nedeni budur."
+      }
+    ]
+  },
+  "euro-cylinder-size-chart-2026": {
+    "title": "2026 Avrupa Tipi Silindir Ölçü Tablosu: Tüm Boylar ve Bölünmeler, Kendinizinkini Nasıl Ölçersiniz",
+    "summary": "Bir Avrupa tipi silindir iki sayıyla tarif edilir ve bunları ters yazmak kapı donanımındaki en yaygın sipariş hatasıdır. Bu, EN 1303 ve DIN 18252 geometrisine göre eksiksiz ölçü tablosudur: yayımladığımız dokuz toplam boy, her birini oluşturan bölünme kombinasyonları ve hangisine ihtiyacınız olduğunu belirleyen ölçüm.",
+    "seoTitle": "Avrupa Tipi Silindir Ölçü Tablosu 2026: Boy, Bölünme, Ölçüm",
+    "seoDescription": "Avrupa tipi silindir ölçü tablosu: 45–90 mm arası dokuz toplam boy, her birini oluşturan bölünmeler, EN 1303 ve DIN 18252 ölçüm geometrisi ve taşma kuralı.",
+    "body": [
+      "Avrupa profilli bir silindir iki sayıyla sipariş edilir (30/40, 35/35, 40/50) ve bu iki sayı bir alıcının en sık yanlış yaptığı şeydir. Bir ölçü ve bir tolerans değildirler. Ayrı ayrı ölçülmüş dış yarım ve iç yarımdır; kapı 30/40 gerektirirken 40/30 olarak sipariş edilmiş bir silindir deliğe uyar, anahtarı çevirir ve yanlış yüzde 10 mm (3/8\") dışarı taşar.",
+      "Bu sayfa tablodur. İki sayının tarif ettiği geometriyi, 45 silindir modelinde yayımladığımız dokuz toplam boyu, her birini oluşturan bölünme kombinasyonlarını, hangisine ihtiyacınız olduğunu belirleyen ölçümü ve yayımlamadığımız ve tahmin etmeyeceğimiz tek değeri kapsıyor.",
+      "ÖLÇÜM NEREDEN BAŞLAR",
+      "İki yarım da aynı yerden ölçülür: aynı zamanda kamın merkezi olan sabitleme vidası deliğinin merkez çizgisi. O merkez silindirin merkezi değildir. Referans noktasıdır ve Avrupa profili dünyasındaki her katalogdaki her yarım boy, ondan o yarımın yüzüne doğru dışarıya ölçülür.",
+      "Bir Avrupa tipi silindirin iki sayısının toplam boyunu vermesinin ve yarımların ayrı ayrı verilmesinin nedeni budur. 30/40 ile 40/30 aynı toplam boydadır (70 mm (2-3/4\")) ve birbirinin yerine geçmez; çünkü 30/40'ta kısa yarım dışa bakar.",
+      "Geometri, profilin kendisinin kaynağı olan ölçü standardı DIN 18252'yi izler; EN 1303 ise silindirin anahtar güvenliğini, dayanıklılığını ve saldırı direncini sınıflandıran performans standardıdır. İkisi sık sık birlikte anılır ve farklı soruları cevaplar: DIN 18252 uyup uymayacağını, EN 1303 nasıl davranacağını söyler.",
+      "YARIM BOYLAR",
+      "Yarım boylar, profil geometrisinin izin verdiği en küçük yarım olan 27,5 mm'lik (1-1/16\") bir minimumdan 5 mm'lik adımlarla ilerler. Dizi 27,5, 30, 35, 40, 45, 50, 55, 60 mm ve yukarısıdır. Bir silindir, önce dış yarım olmak üzere bunlardan ikisi adlandırılarak tarif edilir.",
+      "Pratikte kapıların çoğunu az sayıda kombinasyon karşılar; çünkü iç yarım genellikle dış yarımdan uzundur. Nedeni bir gelenek değil fiziksel bir nedendir: dış yarımın yalnızca kapının dış yüzünden ve rozetinden geçmesi gerekir, iç yarımın ise kilit gövdesinden de geçmesi gerekir.",
+      "YAYIMLADIĞIMIZ DOKUZ BOY",
+      "Kataloğumuz dokuz toplam boyda 45 silindir modeli taşır. Boy ayrı bir satırda değil model numarasında belirtilir; sayının başta durmasının nedeni budur: 70 SNKT'deki 70, 70 mm'dir (2-3/4\"). Dokuz boy, her birindeki model sayısı ve bunları oluşturan bölünme kombinasyonları şunlardır.",
+      "| Toplam boy | İnç | Yayımladığımız model | 5 mm'lik diziden bölünmeler |\n| --- | --- | --- | --- |\n| 45 mm | 1-3/4\" | 3 | 27,5 minimumunun üstünde yok: yarım silindir ya da yalnızca mandallı gövde |\n| 47 mm | 1-7/8\" | 1 | – |\n| 54 mm | 2-1/8\" | 2 | – |\n| 56 mm | 2-3/16\" | 1 | – |\n| 60 mm | 2-3/8\" | 5 | 30/30 |\n| 65 mm | 2-9/16\" | 2 | 30/35 |\n| 70 mm | 2-3/4\" | 19 | 30/40, 35/35 |\n| 80 mm | 3-1/8\" | 6 | 30/50, 35/45, 40/40 |\n| 90 mm | 3-9/16\" | 4 | 35/55, 40/50, 45/45 |",
+      "70 mm, 45 modelin 19'uyla en sık ürettiğimiz tek boydur.",
+      "Yukarıdaki bölünme kombinasyonları bir stok listesi değil aritmetiktir. Standart yarım boy dizisinden her toplam boyu veren çiftlerdir ve burada basılmışlardır; çünkü 70 mm'lik bir silindir bulması söylenen bir alıcının 30/40 ile 35/35'in ikisinin de 70 mm olduğunu ve farklı parçalar olduğunu bilmesi gerekir.",
+      "NEYİ YAYIMLAMIYORUZ VE BOŞLUK NEDEN GİZLENMEK YERİNE BURADA",
+      "Her modelin bölünmesini yayımlamıyoruz. 45 silindir kaydının tamamında iç ve dış yarımı belirten satır sayısı sıfırdır. Toplam boy model numarasındadır; onun bölünüşü katalogda yoktur.",
+      "Bu gerçek bir boşluktur ve bu sayfa onu doldurmak yerine belirtir. Bölünme, yazması kolay ve yanılması pahalı türden bir değerdir: silindirin rozetle aynı hizada durup durmayacağını belirler ve dışarı taşan bir silindir, kırma saldırısını uygulanabilir kılan tek koşuldur. Belirli bir bölünmeye ihtiyacınız varsa onu toplam boy artı istediğiniz bölünme olarak isteyin; herhangi bir şey sevk edilmeden önce modelin hangi bölünmeyle tedarik edildiğini teyit edelim.",
+      "ZATEN SAHİP OLDUĞUNUZ BİR KAPIYI ÖLÇMEK",
+      "Değişim için eski silindiri uçtan uca ölçüp o sayıyı sipariş etmeyin. Her yarımı sabitleme vidası deliğinin merkezinden o yarımın dış yüzüne kadar ölçün ve iki sayıyı bu sırayla, önce dış yarım olmak üzere sipariş edin.",
+      "Uçtan uca ölçümün başarısız olmasının nedeni, size toplam boyu söylerken uyum için önemli olan tek bilgiyi atmasıdır. Aynı toplam boydaki iki silindir, biri 30/40 ve biri 40/30, uçtan uca aynı ölçülür ve kapıda farklı davranır.",
+      "Mevcut silindir zaten yanlışsa (ve yeniden asılmış, yeniden boyanmış ya da yeniden kaplanmış bir kapıda çoğu zaman öyledir) onu ölçmek hatayı yedeğe kopyalar. Bu durumda kapıyı ölçün: kilit gövdesindeki sabitleme vidası deliğinin merkezinden öne, rozet dahil kapının dış yüzüne ve geriye, iç rozet dahil iç yüze.",
+      "TAŞMA KURALI",
+      "Bir Avrupa tipi silindir, yarım boy dizisinin izin verdiği ölçüde rozetle aynı hizaya yakın durmalı ve asla yaklaşık 3 mm'den (1/8\") fazla dışarı taşmamalıdır. Bu kozmetik bir tercih değildir. Dışarı taşan bir silindir kırma saldırısı için tutunacak yer verir; bu, Avrupa profillerinin bilinen arıza biçimidir ve kırılmaya dayanıklı tasarımların direnmek için var olduğu biçimdir.",
+      "Aritmetik sizi iki yarım boy arasında bırakıyorsa doğru hamle uzun yarım değil, kısa yarım artı farkı alan bir güvenlik rozeti ya da yükseltilmiş bir rozettir. Biraz içeride duran bir silindire saldırmak, biraz dışarıda durana saldırmaktan zordur ve anahtar aynıdır.",
+      "BİR SİLİNDİR MODEL NUMARASINI OKUMAK",
+      "Bizimkiler önce boy, sonra kaplama, sonra fonksiyon olarak kurulur. 70 SNKT'deki 70 milimetre cinsinden toplam boydur; SN saten nikeldir; KT bir fonksiyon kodudur. 45 BNIK'teki 45, 45 mm'dir ve BN siyah nikeldir. Eksiksiz sipariş kodu başvurumuz, ters çevrilen çiftler dahil (NB ve BN ikisi de siyah nikel, PB ve BP ikisi de parlak pirinç) kaplama ve fonksiyon harflerini veriyor; bir silindir siparişinin ters gittiği diğer yer de burasıdır.",
+      "TALEBE YAZILACAK TEK ŞEY",
+      "Kapı kalınlığını, kullandığınız rozeti ya da güvenlik rozetini ve iç tarafın anahtar mı mandal mı gerektirdiğini verin. Bölünmeyi bu üçü belirler ve bir haftalık çizim gidip gelmesinden kurtaran üç satırdır. Projede bir master anahtar hiyerarşisi varsa bunu aynı mesajda söyleyin: aynı anahtarlı ve master anahtarlı silindirler siparişe göre üretilir ve teslim süresi cevabın parçasıdır."
+    ],
+    "faq": [
+      {
+        "question": "Bir Avrupa tipi silindirdeki iki sayı ne anlama gelir?",
+        "answer": "Bu sırayla dış yarım ve iç yarım; her biri milimetre cinsinden, sabitleme vidası deliğinin merkezinden o yarımın yüzüne ölçülür. Bir 30/40'ın 30 mm (1-3/16\") dış yarımı, 40 mm (1-9/16\") iç yarımı ve 70 mm (2-3/4\") toplam boyu vardır."
+      },
+      {
+        "question": "30/40 ile 40/30 aynı mı?",
+        "answer": "Hayır. İkisi de 70 mm (2-3/4\") toplam boydadır ve farklı parçalardır. 30/40'ta kısa yarım dışa bakar; 40/30'da ise uzun yarım dışa bakar, böylece silindir dış yüzde, yani güvenlik açısından önemli olan yüzde dışarı taşar."
+      },
+      {
+        "question": "Canton Hyland hangi Avrupa tipi silindir boylarını üretiyor?",
+        "answer": "45 modelde dokuz toplam boy: 45, 47, 54, 56, 60, 65, 70, 80 ve 90 mm. En yaygını 19 modelle 70 mm'dir (2-3/4\"). Boy model numarasında belirtilir; yani 70 SNKT'deki 70 toplam boydur."
+      },
+      {
+        "question": "Hangi bölünmeler 70 mm'lik bir Avrupa tipi silindir verir?",
+        "answer": "30/40 ve 35/35. İkisi de 70 mm (2-3/4\") toplam boydadır ve birbirinin yerine geçmez. Kapınız kısa yarımı dışarıda istiyorsa doğru olan 30/40'tır; 35/35 simetrik durur ve iki yüzü eşit biçimde kalınlaştırılmış bir kapıya uyar."
+      },
+      {
+        "question": "Bir Avrupa tipi silindir ne kadar dışarı taşmalı?",
+        "answer": "Yarım boy dizisinin izin verdiği kadar az ve rozetten asla yaklaşık 3 mm'den (1/8\") fazla değil. Dışarı taşan bir silindir kırma saldırısı için tutunacak yer verir. Aritmetik iki yarım boy arasına düşüyorsa uzun yarım yerine güvenlik rozetiyle kısa yarımı kullanın."
+      },
+      {
+        "question": "Eski silindirimi ölçüp aynı boyu sipariş edebilir miyim?",
+        "answer": "Silindiri uçtan uca değil, her yarımı sabitleme vidası deliğinin merkezinden ayrı ayrı ölçün. Uçtan uca ölçüm toplam boyu verir ve bölünmeyi atar; 30/40 ile 40/30 da aynı ölçülür. Eski silindirin kendisi yanlış boydaysa onu ölçmek hatayı kopyalar."
+      }
+    ]
+  },
+  "exit-device-comparison-2026": {
+    "title": "2026 Panik Çıkış Cihazı Karşılaştırması: Yelpazedeki Her Panik Bar Boy, Kilitleme ve Kapıya Göre",
+    "summary": "Panik çıkış cihazı ailemizde 46 kayıt var ve bunların yalnızca 27'si panik çıkış cihazı. Burada, özellik satırlarından kurulmuş üç tabloda (tek kanatlı kapılar, çift kanatlar, özel amaçlar) yer alıyorlar; eksik satırlar ve birbiriyle çelişen satırlar da adlarıyla belirtilmiş.",
+    "seoTitle": "Panik Çıkış Cihazı ve Panik Bar Karşılaştırması: Boy, Kilit",
+    "seoDescription": "Tüm panik çıkış cihazları yan yana: 650–1110 mm bar boyları, tek kanatlı kapılar, üst ve alt kilitlemeli çiftler, alarmlı ve soğuk oda modelleri.",
+    "body": [
+      "Bir tedarikçinin sitesinde panik bar araması genellikle birbirine neredeyse tıpatıp benzeyen bir fotoğraf duvarı döndürür: kırmızı ya da gümüş bir bar, gri bir muhafaza, bir model numarası. Bir cihazın kapıya uyup uymayacağını belirleyen farklar özellik satırlarındadır ve çoğu sitede düzinelerce sayfaya dağılmıştır. Bu rehber, 23 Eylül 2026 itibarıyla kataloğumuzdaki her panik çıkış cihazını tek bir sayfaya koyuyor; böylece karşılaştırma bir öğleden sonra yerine birkaç dakikada yapılabilir.",
+      "Önce ailenin gerçekte ne içerdiği. Panik çıkış cihazı ailemizde 46 yayımlanmış kayıt var ve bunların 27'si panik çıkış cihazı. Diğer 19'u onlarla birlikte kullanılan parçalardır: 16 dış kol (kapının çekme tarafındaki kol ya da tutamak), 307 için bir kilit gövdesi ve çiftler için iki kapanma sıralayıcı. Dış kolların bu sitede kendi rehberi, sıralayıcıların kendi yazısı var; bu sayfa cihazlarla ilgili.",
+      "TABLOLAR NASIL OKUNUR",
+      "Her hücre ürün sayfasındaki bir özellik satırından gelir. Bir cihaz bir satır yayımlıyorsa tablo onu kaydın kullandığı kelimelerle gösterir; yayımlamıyorsa hücre \"yayımlanmadı\" der. Boylar yayımlanmış bar boylarıdır; milimetre olarak, yanında inç. Malzeme, yayımlandığı hâliyle malzeme satırıdır ve bu her zaman sayfanın üstündeki tek satırlık malzeme alanıyla aynı değildir; ikisi uyuşmadığında bu rehber birini seçmek yerine bunu söyler.",
+      "27 cihazın 13'ü bir boy yayımlar. Bir panik bar için en önemli tek satır budur; çünkü bar takıldığı kanada uymalıdır ve alıcıların bize en sık onsuz gönderdiği satır da budur. Panik bar boyu üzerine yazımız, boy sorusunun bir cevabı olsun diye kanadın nasıl ölçüleceğini anlatıyor.",
+      "TEK KANATLI KAPILAR: BOYU YAYIMLANMIŞ CİHAZLAR",
+      "Bunlar tek kanat için, boyunu yayımlayan sıva üstü tip panik barlardır. Sıva üstü bir cihaz kilit kenarında kasadaki bir karşılığa, tek noktadan kilitlenir ve tek kanatlı bir kaçış kapısı için olağan seçimdir.",
+      "| Model | Bar boyu | Boyun belirlenmesi | Malzeme satırı | Ayrıca yayımlanan |\n| --- | --- | --- | --- | --- |\n| 300 | 900 mm (35-7/16\") | ayarlanabilir | ABS'li demir | kırmızı kaplama; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 302 | 1040 mm (40-15/16\") | ayarlanabilir | paslanmaz çelik ve demir | sağ ya da sol kapıya çevrilebilir |\n| 303 | 900 mm (35-7/16\") | sabit | çelik ya da paslanmaz çelik, demir iç | saten nikel, krom, antik pirinç, parlak pirinç |\n| 305 | 1040 mm (40-15/16\") | sabit | demir ve alüminyum | püskürtme boyalı; yangın kapıları altında listelenir |\n| 307 | 1000 mm (39-3/8\") | sabit | alüminyum panik barlı ABS | 072 kilit gövdesiyle eşleşir; kayıt 2,5 saat belirtir; çevrilebilir |\n| 308 | 1050 mm (41-5/16\") | sabit | 304 paslanmaz çelik | plaka 165 × 55 mm, çıkıntı 99 mm |\n| 310 | 900 mm (35-7/16\") | sabit | demir | kırmızı ya da siyah; kayıt 1,5 saatlik yangın dayanımı belirtir |\n| 311 | 900 mm (35-7/16\") | sabit | alüminyumlu ABS | kilit gövdesi, pirinç silindir ve paslanmaz kolla set olarak satılır; silindir aks mesafeleri 72 ve 92 mm |\n| 330 | boya göre yapılır | siparişe göre | demir boru ile demir | kırmızı ya da siyah |",
+      "İki gruplamaya dikkat çekmeye değer. 307 ve 311 olağan anlamda sıva üstü cihazlar değildir: her biri kapıdaki bir gömme kilit gövdesiyle çalışır; 307 bizim 072 gövdemizle (65 mm backset, 72 mm aks mesafesi, iki Avrupa tipi silindir yuvası), 311 ise eksiksiz bir set olarak. Kapıda zaten bir gömme kilit ve dışarıda anahtarlı bir silindir varsa ya da gerekiyorsa bunlardan birini seçin. 308 ise çıkıntısını, 99 mm, yayımlayan paslanmaz çelik tek kanatlı cihazdır; dar bir koridora açılan bir kapıya karşı kontrol edilecek değer budur.",
+      "Bir projede birçok kapı genişliği varsa ekonomik cevap genellikle ayarlanabilir 300 ve 302'dir: her açıklık için farklı sabit bir boy yerine, her kanada göre kesilen ya da ayarlanan tek bir parça numarası. Yalnızca ayarlanabilir olarak yayımlanan ya da 330 gibi boya göre yapılan cihazlar kısaltılmalıdır; şantiyede kesilmiş sabit boylu bir cihaz artık tedarik edilen cihaz değildir.",
+      "ÇİFT KANATLI KAPILAR VE ÇOK NOKTALI KİLİTLEME",
+      "Panik çıkış cihazlarının en çok ayrıştığı ve yanlış seçimin en pahalıya mal olduğu yer çift kanatlı kapılardır. Her kanatta sıva üstü bir cihaz, ancak karşılıklar için bir orta kayıt varsa çalışır. Yoksa pasif kanadın üstten ve alttan tutulması gerekir; dikey çubuklu ve çok noktalı cihazların yaptığı budur.",
+      "| Model | Kapı | Kilitleme | Boy | Malzeme ve yayımlanan diğer satırlar |\n| --- | --- | --- | --- | --- |\n| 309-D | çift | aktif ve pasif kanat | 1110 mm (43-11/16\") | alüminyum alaşımı ve demir; toz boyalı |\n| 316-D | çift | üstten ve alttan kilitleme | yayımlanmadı | alev geciktirici ABS muhafaza, alüminyum alaşımı gövde, demir panik bar, kalınlaştırılmış demir dil; yüzeye monte; çevrilebilir; dış kol isteğe bağlı |\n| 320 | çift | iki noktadan kilitleme | boya göre yapılır | demir; kırmızı ya da siyah |\n| 306-D | çift | yayımlanmadı | yayımlanmadı | başka satır yok |\n| 308-D | çift | yayımlanmadı | yayımlanmadı | henüz satır yok |",
+      "316-D en fazla bilgi yayımlayan çift setidir ve kilitlemesini kelimelerle belirtir: üstten ve alttan. 309-D aktif ve pasif kanadı çalıştırdığını belirtir ve yelpazedeki en uzun barı yayımlar. Her çiftte cihaz cevabın yalnızca yarısıdır: kanatların doğru sırayla da kapanması gerekir; bu sıralayıcının işidir ve çift kanatlı yangın kapıları için kapanma sıralayıcılar yazımız bunu ele alıyor. Bu ailedeki iki sıralayıcı, DC01 ve DSL02, tam da bu nedenle oradadır.",
+      "Bu tablodaki iki kayıt neredeyse hiçbir şey yayımlamaz. 306-D'ye ya da 308-D'ye komşularının satırlarını vermeyeceğiz: sorun, şartnameye yazmadan önce kilitlemelerini ve boylarını çizime göre teyit edelim.",
+      "ÖZEL AMAÇLAR",
+      "Dört cihaz her biri tek bir durum için yapılmıştır ve her biri yalnızca orada doğru cevaptır.",
+      "| Model | Ne için | Yayımlanan satırlar |\n| --- | --- | --- |\n| 314 | alarmlı çıkış kapısı | 650, 800 ya da 1000 mm (25-5/8\", 31-1/2\" ya da 39-3/8\"), özel üretimle; dahili alarm; dışarıdan anahtarla erişim; seçenek olarak dış kol ya da açık tutma; yüzeye monte |\n| 315 | kanırtmaya dayanıklı dil, iterek açılan acil çıkış | 800 ya da 1000 mm; demir, boyalı; ticari acil çıkış kapıları |\n| 317 | soğuk oda ve dondurucu kapıları | içeriden anahtarsız açılır; dış kol isteğe bağlı; demir; kapının içine monte edilir |\n| 306 PS | geçiş tipi panik bar | dil yok; ayrı bir kilit gövdesiyle takılır, uygun şekilde tedarik edilir |",
+      "314, kaçılabilir olması gereken ama gelişigüzel kullanılmaması gereken bir kapının cihazıdır; örneğin bir mağaza katından yangın çıkışı: bara basmak kapıyı açar ve alarmı çaldırır. 317, sıradan donanımın cevaplamadığı bir güvenlik sorusunu cevaplar: bir soğuk depoda içeride kalmış bir kişi soğukta, içeriden, anahtarsız çıkabilmelidir. 315 bir kanırtmaya dayanıklı dildir, ticari çıkışlar için iterek açılan bir dil; katalog onu bu ailede listeler, ama onu bir panik cihazı olarak ele almadan önce kapınızın karşılaması gereken standarda göre kontrol edin.",
+      "KARŞILAŞTIRMAYA YETECEK KADAR YAYIMLAMAYAN KAYITLAR",
+      "Dokuz cihazın bir fotoğrafı ve bir sayfası var ama bir tabloya yerleştirmek için çok az satırı var: 036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01. Bazıları bir malzeme yayımlar ve başka bir şey yayımlamaz; 312 ve SH01 hiç satır yayımlamaz. 316-S yapı satırlarını 316-D ile paylaşır (alev geciktirici ABS muhafaza, alüminyum alaşımı gövde, demir panik bar, yüzeye monte, çevrilebilir) ama boyunu paylaşmaz. İstediğiniz cihaz bunlardan biriyse bize kanadı söyleyin, teklif vermeden önce satırları teyit edelim.",
+      "İki kayıt ayrıca kendi içinde çelişir ve bunu bir alıcının keşfetmesine bırakmaktansa söylemek daha iyidir. 305, malzeme alanında çelik ya da paslanmaz çelik, özellik satırında ise demir ve alüminyum listeler. 309-D de aynısını yapar: bir yerde çelik ya da paslanmaz çelik, diğerinde alüminyum alaşımı ve demir. Fabrika teyit edene kadar özellik satırını çalışma cevabı olarak kabul edin ve ikisinden birini korozif bir yer için sipariş etmeden önce sorun.",
+      "BU SAYFALARDAKİ YANGIN DAYANIMLARI",
+      "Üç kayıt bir yangın süresi taşır: 300 ve 310'da 1,5 saat, 307'de 2,5 saat. Bunları kanıt olarak değil, kaydın belirttiği gibi okuyun. Bir yangın süresi ancak bir raporda ya da listelemede tanımlanmış, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bu üçünden hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 teste gönderildi ve sertifika numaraları oluşana kadar onlar için bir listeleme ya da dayanım ima etmeyeceğiz. UL 305 üzerine yazımız bir listelemenin ne olduğunu ve nasıl kontrol edileceğini anlatıyor.",
+      "DÖRT SORUDA SEÇİM",
+      "Tek kanat mı, çift mi? Orta kaydı olmayan bir çift, üstten ve alttan kilitleme ve bir sıralayıcı ister; bu da seçimi ikinci tabloya daraltır. Kanat ne kadar geniş? Bu boyu ve ayarlanabilir mi yoksa boya göre yapılan bir cihazın mı ekonomik cevap olduğunu belirler. Dış tarafın anahtara ya da kola ihtiyacı var mı? O zaman ihtiyacınız olan dış kolla çalışan bir cihaz ya da onu içeren 311 gibi bir set seçin. Kapı sıradan bir koridordan başka bir şeye mi bakıyor: bir soğuk depo, alarmlı bir çıkış, bir kıyı girişi? O zaman başlanacak yer özel amaç tablosu ya da paslanmaz 308'dir.",
+      "Bu dört cevabı kanat ölçüsü ve kapı kalınlığıyla gönderin; ilk yanıt bir cihaz ve bir dış kol adlandırabilir. Kırmızı bir barın fotoğrafını gönderin; ilk yanıt bu dört soru olur."
+    ],
+    "faq": [
+      {
+        "question": "Panik çıkış cihazlarınız hangi boylarda geliyor?",
+        "answer": "Yayımlanan boylar 650 ile 1110 mm arasındadır. Tek kanatlı cihazlar 900 mm (300, 303, 310, 311), 1000 mm (307), 1040 mm (302, 305) ve 1050 mm'dir (308); 309-D çift seti 1110 mm; alarmlı 314 650, 800 ya da 1000 mm; 315 kanırtmaya dayanıklı dil 800 ya da 1000 mm'dir. 300 ve 302 ayarlanabilir; 320 ve 330 istenen boya göre yapılır. 27 cihazın 13'ü bir boy yayımlar."
+      },
+      {
+        "question": "Orta kaydı olmayan çift kanatlı bir kapıda hangi panik barı kullanmalıyım?",
+        "answer": "Pasif kanadı üstten ve alttan kilitleyen bir cihaz, artı kanatların sırayla kapanması için bir sıralayıcı. Yelpazemizde 316-D üstten ve alttan kilitleme yayımlar, 309-D aktif ve pasif kanadı 1110 mm'lik bir barla çalıştırır ve 320 boya göre yapılan iki noktadan kilitlemeli bir cihazdır. DC01 ve DSL02 sıralayıcılar aynı ailededir."
+      },
+      {
+        "question": "Panik çıkış cihazlarınızdan hangileri gömme kilitle çalışır?",
+        "answer": "307, 072 kilit gövdemizle (65 mm backset, 72 mm aks mesafesi, iki Avrupa tipi silindir yuvası) çalışır; 311 ise kendi kilit gövdesi, pirinç silindiri ve paslanmaz koluyla, 72 ve 92 mm silindir aks mesafeleriyle set olarak satılır. Kapının dışarıda anahtarlı bir silindire ihtiyacı varsa bunlardan birini seçin."
+      },
+      {
+        "question": "Alarmlı ya da soğuk oda için bir panik çıkış cihazınız var mı?",
+        "answer": "Evet. 314, dahili alarm, dışarıdan anahtarla erişim ve isteğe bağlı dış kol ya da açık tutma fonksiyonuyla 650, 800 ya da 1000 mm olarak gelir. 317, soğuk depo ve dondurucu kapıları için içeriden açılan bir panik bardır: içeriden anahtar gerekmez ve dış kol isteğe bağlıdır."
+      },
+      {
+        "question": "Panik çıkış cihazı sayfalarınızdaki yangın dayanımları belgeli mi?",
+        "answer": "Hayır. 300 ve 310 kayıtları 1,5 saat, 307 ise 2,5 saat belirtir; ama bir yangın süresi ancak bir raporda ya da listelemede adı geçen, test edilmiş bir kapı montajının dayanımı olarak anlam taşır ve bunların hiçbiri böyle bir şey yayımlamaz. UL listelememiz yok; 307 ve 311 teste gönderildi ve sertifika numaraları oluşana kadar bir dayanım ima etmeyeceğiz."
+      },
+      {
+        "question": "Bazı panik çıkış cihazlarınız neden neredeyse hiç teknik özellik göstermiyor?",
+        "answer": "Dokuz cihaz (036, 301, 306-S, 308-S, 309-S, 312, 313, 316-S ve SH01) karşılaştırmaya yetecek kadar satır yayımlamaz; 312 ve SH01 hiç yayımlamaz. Benzer modellerden satır kopyalamayız. Bize kanat ölçüsünü ve kapı kalınlığını söyleyin, teklif vermeden önce cihazın satırlarını çizime göre teyit edelim."
+      }
+    ]
   }
 }

@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 614 次提交
+最近 30 天 · 共 615 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 17:53 | HYDE | DS011 门吸移到 hardware-accessories/door-stoppers（原在 door-flush-bolts，文案会话 09-25 发现）；标题重生成 | `705b16c0624` |
+| 17:52 | 中立 | 合并本地提交（ship 旁路合并） | `fdef0ae99a6` |
+| 17:51 | 中立 | 站内搜索：door hardware 与 ironmongery 互通（甲方 09-25：美国与英联邦市场都要） | `cdd5fa1cebb` |
 | 17:51 | 中立 | ironmongery 分工文档：英文标题词序 door hardware 在前、ironmongery 第二（甲方 09-25） | `71b2c8c6bce` |
 | 08:23 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `98becb3853e` |
 | 08:22 | HYDE | 视频观看页 /video/<slug>/：Google 只从主体是视频的页面编视频索引（97 个视频「不在观看页面上」） | `8f5618eaac7` |
