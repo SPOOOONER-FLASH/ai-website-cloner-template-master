@@ -103,3 +103,15 @@
 - `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:19:00 · 三次推送失败
+
+原因：旁路合并也失败：hint: before pushing again. / hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+未推送的提交：
+
+- `3c50b33579a` shiplog: 更新上线存档
+- `031b3c481a3` shiplog: 更新上线存档
+- `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
+
+下一次 `npm run ship` 成功时这些会一起推上去。

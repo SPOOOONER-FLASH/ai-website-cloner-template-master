@@ -692,11 +692,11 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Wall-mount": "Fixação na parede",
   "1–8 hooks available": "De 1 a 8 ganchos",
   "Panic exit devices": "Barras antipânico",
-  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch; "Porta dupla" is below. */
+  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch. */
   "Passage, no latch bolt": "Passagem livre, sem lingueta",
   "A separate lock case, supplied to suit":
     "Caixa de fechadura separada, fornecida conforme a aplicação",
-  "Single door": "Porta simples",
+  "Single door": "Porta de uma folha",
   "AB / AC / PB / SB / SS / SP / SC (Custom Available)":
     "AB / AC / PB / SB / SS / SP / SC (personalizado disponível)",
   "Fire Door": "Porta corta-fogo",
@@ -986,9 +986,9 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Double-Leaf Doors":
     "Portas de duas folhas",
   "Double door":
-    "Porta dupla",
+    "Porta de duas folhas",
   "Fire double door":
-    "Porta dupla corta-fogo",
+    "Porta corta-fogo de duas folhas",
   "Fire doors / double doors":
     "Portas corta-fogo / portas duplas",
   "Fire Doors / Commercial Double Doors / Schools / Hospitals / Office Buildings / Commercial Projects":
@@ -1306,7 +1306,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Top & Bottom Latching":
     "Travamento superior e inferior",
   "Single Door / Double Door":
-    "Porta simples / porta dupla",
+    "Porta de uma folha / porta de duas folhas",
   "650mm / 800mm / 1000mm, Customizable":
     "650 mm / 800 mm / 1000 mm, sob medida",
   "Painted":
@@ -1696,7 +1696,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Panic Exit Device / Panic Bar": "Barra antipânico",
   "Glass door": "Porta de vidro",
   "For entrance doors": "Para portas de entrada",
-  "For Privacy doors": "Para portas de condena",
+  "For Privacy doors": "Para portas de banheiro",
   "for lavatory or other privacy doors": "para banheiros e outras portas de condena",
   "Suit for toilet door or other doors": "Indicado para portas de banheiro e outras portas",
   "Suitable for all types of doors": "Indicado para todos os tipos de porta",

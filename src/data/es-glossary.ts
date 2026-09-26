@@ -423,7 +423,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Three square deadbolts, plus latch":
     "Tres cerrojos cuadrados, más pestillo",
   "Nickel-plated brass, solid brass, brushed nickel":
-    "Latón niquelado, latón macizo, níquel cepillado",
+    "Latón niquelado, latón macizo o níquel cepillado",
   "Trim handle · outside lever for panic exit devices":
     "Manija exterior · para barras antipánico",
   "Trim handle · anti-pick outside lever for panic exit devices":
