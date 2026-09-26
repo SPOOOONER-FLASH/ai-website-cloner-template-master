@@ -6,12 +6,13 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 616 次提交
+最近 30 天 · 共 613 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
+| 17:51 | 中立 | ironmongery 分工文档：英文标题词序 door hardware 在前、ironmongery 第二（甲方 09-25） | `71b2c8c6bce` |
 | 08:23 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `98becb3853e` |
 | 08:22 | HYDE | 视频观看页 /video/<slug>/：Google 只从主体是视频的页面编视频索引（97 个视频「不在观看页面上」） | `8f5618eaac7` |
 | 08:10 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `86bf5ac7240` |
@@ -734,8 +735,4 @@
 | 23:46 | 中立 · 发布 HYDE | 上线正式域名并开启索引 | `cb2752a6a8f` |
 | 21:01 | 发布 HYDE | 重建全站短线动效正式导出 | `3917e814dec` |
 | 21:00 | HYDE | 统一全站黑白短线交互动效 | `fe47eb0ea93` |
-| 09:25 | 发布 HYDE | 重建 A+D 黑白交互正式导出 | `f4c79d67232` |
-| 08:56 | HYDE | 上线 A+D 黑白交互视觉源码 | `82ca9fa8b7f` |
-| 08:41 | 中立 | 修复回滚文档里被 shell 吃掉的代码片段 | `87507a9917c` |
-| 08:29 | 中立 | cantonlock.com HTTPS 上线；标注证书与回滚风险 | `3dd4dd8c47e` |
 
