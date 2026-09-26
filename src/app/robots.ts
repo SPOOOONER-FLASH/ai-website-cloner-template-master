@@ -1,3 +1,4 @@
+import { locales } from "@/data/locales";
 import type { MetadataRoute } from "next";
 import { absoluteUrl, analytics, indexable } from "@/data/site";
 import { buildRobotsRules } from "@/lib/seo-policy";
@@ -21,6 +22,7 @@ export default function robots(): MetadataRoute.Robots {
   // already state the preferred host.
   return {
     rules,
-    sitemap: absoluteUrl("/sitemap.xml"),
+    /* The full map first, then one per non-English locale for their Search Console properties. */
+    sitemap: [absoluteUrl("/sitemap.xml"), ...locales.filter((l) => l !== "en").map((l) => absoluteUrl(`/${l}/sitemap.xml`))],
   };
 }

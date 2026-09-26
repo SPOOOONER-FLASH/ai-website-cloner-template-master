@@ -22,14 +22,14 @@
   "double-leaf-fire-door-set": {
     "name": "Çift Kanatlı Yangın Kapısı Seti",
     "buildingType": "Ticari + Kurumsal",
-    "summary": "Çift kanatlı bir yangın kapısının kilitlenmesi için gereken uyumlu donanım: her kanatta bir kapı kapatıcı ve kanatların doğru sırayla kapanmasını sağlayan bir sıralayıcı.",
+    "summary": "Çift kanatlı bir yangın kapısının dile oturması için gereken uyumlu donanım: her kanatta bir kapı kapatıcı ve kanatların doğru sırayla kapanmasını sağlayan bir sıralayıcı.",
     "seoTitle": "Çift Kanatlı Yangın Kapısı Seti: Sıralayıcı + Kapatıcı",
     "seoDescription": "Çift kanatlı yangın kapısı için uyumlu donanım: DC02 kapı kapanma sıralayıcı ve JU serisi kapatıcılar. Ortak kanat ağırlığı 55–85kg, 397 × 120mm, mekanik.",
     "body": [
-      "İki kapı kapatıcısı olup sıralayıcısı olmayan çift kanatlı bir yangın kapısı, yayların belirlediği sırayla kapanır. Aktif kanat önce gelirse açık kalan pasif kanadın kenarına oturur, dil karşılığa hiç ulaşmaz ve kapı, sınıflandırılmış bir yangın kapısı olmaktan çıkar. Her yangın testi sertifikası kapının kilitli olduğunu varsayar.",
-      "Bu set üç parçalı cevaptır: her kanada göre boyutlandırılmış bir kapı kapatıcı ve pasif kanat yerine oturana kadar aktif kanadı tutan, kasa başlığı boyunca takılan DC02 sıralayıcı. Sıralayıcı mekaniktir: elektrik yok, sinyal yok, ayarı kayacak bir şey yok.",
-      "Böyle bir setin en sık yanlış belirlendiği yer boyutlandırmadır. Kanat ağırlığı, kapatıcı kapasitesi ve sıralayıcı aralığı birbirini tutmalıdır. DC02, 55–100kg kanatları karşılar; aşağıdaki kapatıcılar 40–85kg aralığındadır. Dolayısıyla uyumlu bir kanat çifti için kullanılabilir ortak aralık 55kg ile 85kg arasıdır. 85kg üzerinde şu anda bir kapatıcı üretmiyoruz; açık konuşmak gerekirse sınırı sıralayıcı değil, kapatıcı belirler.",
-      "Sipariş vermeden önce netleştirin: her iki kanadın ağırlığı ve genişliği, kapı kalınlığı, kanatların bindirmeli mi yoksa eklenmiş bir orta kayıtla mı birleştiği, pasif kanatta hangi donanımın bulunduğu ve kapının sağlaması gereken yangın dayanım sınıfı."
+      "İki kapı kapatıcısı olup sıralayıcısı olmayan çift kanatlı bir yangın kapısı, yayların belirlediği sırayla kapanır. Aktif kanat önce gelirse açık kalan pasif kanadın kenarına çarpar, dil karşılığa hiç ulaşmaz ve kapı, sınıflandırılmış bir yangın kapısı olmaktan çıkar. Her yangın testi sertifikası kapının dile oturmuş olduğunu varsayar.",
+      "Bu set üç parçalı cevaptır: her kanada göre boyutlandırılmış bir kapı kapatıcı ve pasif kanat yerine oturana kadar aktif kanadı tutan, kasa başlığı boyunca takılan DC02 kapanma sıralayıcısı. Sıralayıcı mekaniktir: elektrik yok, sinyal yok, ayarı kayacak bir şey yok.",
+      "Böyle bir setin en sık yanlış belirlendiği yer boyutlandırmadır. Kanat ağırlığı, kapatıcı kapasitesi ve sıralayıcı aralığı birbirini tutmalıdır. DC02, 55–100 kg kanatları karşılar; aşağıdaki kapatıcılar 40–85 kg aralığındadır. Dolayısıyla uyumlu bir kanat çifti için kullanılabilir ortak aralık 55 kg ile 85 kg arasıdır. 85 kg üzerinde şu anda bir kapatıcı üretmiyoruz; açık konuşmak gerekirse sınırı sıralayıcı değil, kapatıcı belirler.",
+      "Sipariş vermeden önce netleştirin: her iki kanadın ağırlığı ve genişliği, kapı kalınlığı, kanatların lambalı mı yoksa ek kapı çıtalı mı olduğu, pasif kanatta hangi donanımın bulunduğu ve kapının sağlaması gereken yangın dayanım sınıfı."
     ],
     "sourceHash": {
       "name": "6bd6bfdbf1d9",
@@ -48,7 +48,7 @@
     "seoDescription": "Çerçevesiz cam giriş donanımı paketi: patch fitting'ler, çekme kolları ve gizli yer menteşesi; delik şablonları onaylı ürün setinden alınır.",
     "body": [
       "Patch fitting'ler ve zemin donanımı seçilmeden önce cam kalınlığı, kapı ağırlığı, açılma açısı ve zemin katmanları birlikte değerlendirilmelidir.",
-      "Çekme kolu aks mesafeleri ve çıkıntısı mimari görünüş çizimine göre kontrol edilir; görünen paslanmaz parçalar tek bir yüzey ailesinde tutulur.",
+      "Çekme kolu aks mesafeleri ve çıkıntısı mimari görünüş çizimine göre kontrol edilir; görünen paslanmaz parçalar tek bir kaplama ailesinde tutulur.",
       "Nihai delik şablonları ve cam hazırlık çizimleri genel bir detaydan değil, onaylanmış ürün setinden alınmalıdır."
     ],
     "sourceHash": {

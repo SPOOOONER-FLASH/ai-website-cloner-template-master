@@ -1,15 +1,15 @@
 {
   "Are your panic exit devices EN 1125 certified?": {
     "question": "Panik çıkış cihazlarınız EN 1125 sertifikalı mı?",
-    "answer": "Test raporları serinin tamamı için değil, belirli modeller için vardır; bir modelin raporunu kardeş bir ürüne genişletmeyiz. Raporlar yalnızca eksiksiz olarak iletilebilir; bu yüzden alıntı yayımlamak yerine, adı belirtilen bir model için talep üzerine gönderiyoruz. Şartnameye yazmayı düşündüğünüz modeli söyleyin; onu kapsayan raporu gönderelim ya da yoksa bunu açıkça söyleyelim. Ürettiklerimizin büyük bölümü müşterilerimizin adına, kendi masraflarıyla test edilir; kendi adımıza testler hazırlanıyor."
+    "answer": "Test raporları serinin tamamı için değil, belirli modeller için vardır ve bir modelin raporunu kardeş bir ürüne genişletmeyiz. Raporlar yalnızca testi yaptıran tarafın kullanımı için düzenlenir ve yalnızca eksiksiz olarak iletilebilir; bu yüzden alıntı yayımlamak yerine, adı belirtilen bir model için talep üzerine gönderiyoruz. Şartnameye yazmayı düşündüğünüz modeli söyleyin; onu kapsayan raporu gönderelim ya da olmadığını açıkça söyleyelim. Ürettiklerimizin önemli bir kısmı müşterilerimiz adına ve onların masrafıyla test edilir; kendi adımıza testler hazırlanıyor."
   },
   "Can I order samples before placing a production order?": {
     "question": "Seri siparişten önce numune alabilir miyim?",
-    "answer": "Evet; numuneler normalde ücretlidir. Numune fiyatını adresinize navlunla birlikte veririz; numune bedeli ilk seri siparişinizden düşülür, yani numune işe dönüşürse size sonuçta hiçbir maliyeti olmaz. Stoktaki bir modelin numunesi genellikle birkaç gün içinde çıkar; elimizde olmayan bir kaplamadaki numune ise kısa bir üretim partisi kadar sürer."
+    "answer": "Evet; numuneler normalde ücretlidir. Numune fiyatını adresinize navlunla birlikte veririz; numune bedeli ilk seri siparişinizden düşülür — yani numune işe dönüşürse size sonuçta hiçbir maliyeti olmaz. Görmek istediğiniz modelleri ve kaplamaları ihracat ekibine bildirin; fiyatı ve sevk tarihini teyit etsinler. Stoktaki bir modelin numunesi genellikle birkaç gün içinde yola çıkar; stokta tutmadığımız bir kaplamadaki numune ise kısa bir üretim partisi kadar sürer."
   },
   "Can I order through Alibaba instead of by email?": {
     "question": "Sipariş vermek için e-posta yerine Alibaba'yı kullanabilir miyim?",
-    "answer": "Evet. Doğrulanmış Alibaba mağazamızda aynı katalog yer alır; zaten Alibaba üzerinden alım yapıyorsanız çoğu zaman daha hızlı yoldur — ticari güvence (Trade Assurance), yazışma ve ödeme orada yürütülür. Proje takvimleri, özel kaplamalar veya master anahtar sistemleri için ise e-posta genellikle daha uygundur; çünkü bunlar önce teknik bir görüşme gerektirir.",
+    "answer": "Evet. Doğrulanmış Alibaba mağazamızda aynı katalog yer alır; zaten Alibaba üzerinden alım yapıyorsanız çoğu zaman daha hızlı yoldur — ticari güvence (Trade Assurance), yazışma ve ödeme orada yürütülür. Proje kapı listeleri, özel kaplamalar veya master anahtar sistemleri için ise e-posta genellikle daha uygundur; çünkü bunlar önce teknik bir görüşme gerektirir.",
     "sourceHash": {
       "question": "a7e30c1c97a8",
       "answer": "d6bd8e21ca5d"
@@ -17,7 +17,7 @@
   },
   "Can you produce to our own design or branding (OEM / ODM)?": {
     "question": "Kendi tasarımımıza veya markamıza göre üretim yapabiliyor musunuz (OEM / ODM)?",
-    "answer": "Evet. Fabrikanın işinin büyük bölümü budur. Müşterilerimizin markasıyla ve çizimlerine göre üretiyoruz: üründe ve ambalajda logonuz, sizin kaplamanız, sizin paketlemeniz ve koli işaretleriniz. İstediğiniz form için bir kalıp varsa üretebiliriz; yoksa kalıbını açarız. Tasarım başka bir üreticinin patentiyle korunuyorsa mühendislerimiz iç parçaları veya görünümü, çakışma kalmayana kadar değiştirir ve neyin değiştiğini tam olarak bildirir. Kalıp maliyeti, numune süresi ve özel bir üretimi anlamlı kılan minimum adet parçaya bağlıdır; bu yüzden proje bazında teklif edilir."
+    "answer": "Evet — fabrikanın işinin büyük bölümü budur. Müşterilerimizin kendi markalarıyla ve çizimlerine göre üretiyoruz: üründe ve ambalajda logonuz, sizin kaplamanız, sizin paketlemeniz ve koli işaretleriniz. İstediğiniz form için kalıp varsa üretebiliriz; yoksa kalıbını yaparız. İstediğiniz tasarım başka bir üreticinin patentiyle korunuyorsa mühendislerimiz iç parçaları veya görünümü, çakışma kalmayana kadar değiştirir ve neyin değiştiğini tam olarak bildirir; böylece kendi patent incelemenizin kontrol edeceği somut bir şey olur. 17 ürün ailesinde 521 model yayımlıyoruz ve arkalarındaki kalıplar bize aittir; bu yüzden kol profili, rozet, ayna veya kaplama değişikliği burada özel bir proje değil, olağan bir taleptir. İhtiyacınız olan parçanın numunesini, çizimini, hatta fotoğrafını gönderin; mühendislik ekibimiz onu üretmek için neyin gerektiğini söylesin. Kalıp maliyeti, numune süresi ve özel üretimi anlamlı kılan minimum adet tamamen parçaya bağlıdır; bu yüzden proje bazında teklif edilir — sorun, bir aralık yerine gerçek rakamlar alın."
   },
   "Can you supply master key and construction key systems?": {
     "question": "Master anahtar ve şantiye anahtarı sistemi sağlayabiliyor musunuz?",
@@ -36,8 +36,8 @@
     "answer": "Ürünlerin çoğu için ölçülü çizim talep üzerine verilir. Model numarasını gönderin; elimizde o model için ne varsa onunla yanıtlarız. Bir çizim sitede henüz yayımlanmamışsa bunun nedeni güncel üretim kalıbıyla doğrulamamış olmamızdır, çizimin olmaması değil."
   },
   "How is shipping quoted, and can you ship duty paid?": {
-    "question": "Navlun nasıl fiyatlandırılır, gümrüklü teslim yapabiliyor musunuz?",
-    "answer": "Navlun sevkiyat bazında fiyatlandırılır; hedef ülkeye, siparişin ağırlığına ve hacmine ve hava mı deniz mi gideceğine bağlıdır. Numuneler ve acil ikmal için hava, tam seri siparişler için deniz yolu. Gümrüklü teslim (DDP) ABD ve Avrupa'nın büyük bölümü dahil birçok hatta mümkündür; diğer yerlerde varsayılan DAP'tir, gümrük vergisi ve gümrükleme sizin adınıza yapılır. İhracat ekibine hedef şehri ve miktarı söyleyin; seçenekleri yan yana fiyatlandırırlar."
+    "question": "Navlun nasıl fiyatlandırılır, gümrük vergisi ödenmiş (DDP) teslim yapabiliyor musunuz?",
+    "answer": "Navlun sevkiyat bazında fiyatlandırılır; çünkü varış yerine, siparişin ağırlığına ve hacmine, havayolu mu denizyolu mu gideceğine bağlıdır. İkisi de mümkündür: numuneler ve acil ikmal için havayolu, tam seri siparişler için denizyolu. Alibaba mağazamızda ana varış ülkeleri için navlun ödeme adımında otomatik hesaplanır; varış yerine teslim maliyetini görmenin en hızlı yolu budur. Gümrük vergisi ödenmiş teslim (DDP), ABD ve Avrupa'nın büyük bölümü dahil birçok hatta mümkündür; diğer yerlerde varsayılan DAP'tir, gümrük vergileri ve gümrükleme sizin adınıza yapılır. Varış şehrini ve miktarı ihracat ekibine bildirin; taşıma seçeneklerini yan yana fiyatlandırsınlar."
   },
   "Is Canton Hyland ISO 9001 certified?": {
     "question": "Canton Hyland ISO 9001 belgeli mi?",
@@ -49,7 +49,7 @@
   },
   "What happens if something arrives wrong or damaged?": {
     "question": "Mal hatalı veya hasarlı gelirse ne olur?",
-    "answer": "Alibaba mağazamız üzerinden verilen siparişlerde Alibaba'nın alıcı koruması geçerlidir; iade, kanıt ve geri ödeme orada yürütülür. Doğrudan bize verilen siparişlerde ise çözüm, ödemeden önce proforma faturaya yazılı olarak kararlaştırılır; çünkü bir konteyner kapı aksesuarı bir koli değildir: 200 adette yanlış kaplama için makul olan, 5.000 adette yanlış backset için makul olan değildir. Hiçbir şey yerinden oynatılmadan önce malı ve koli işaretlerini fotoğraflayın, sipariş numarasıyla birlikte gönderin. Paketleme fotoğrafları olan bir talep günler içinde sonuçlanır."
+    "answer": "Nereden satın aldığınıza bağlıdır. Alibaba mağazamız üzerinden verilen siparişler Alibaba'nın kendi alıcı koruması kapsamındadır — bu ilanlarda Easy Return vardır; iade, kanıt ve geri ödeme bizim tarafımızdan değil, Alibaba içinde yürütülür. İlk siparişi e-posta yerine orada vermenin en güçlü nedeni de budur. Doğrudan bize verilen bir siparişte ise çözüm, ödemeden önce proforma faturada yazılı olarak kararlaştırılır; çünkü bir konteyner kapı donanımı bir koli değildir: 200 adette yanlış kaplama için makul olan, 5.000 adette yanlış backset için makul olan değildir. Hiçbir şey yerinden oynatılmadan önce malı ve koli işaretlerini fotoğraflayın ve sipariş numarasıyla birlikte gönderin — paketleme fotoğrafları olan bir talep günler içinde sonuçlanır; fotoğrafsız bir talep ise kimin düşürdüğü tartışmasına döner."
   },
   "What is your minimum order quantity?": {
     "question": "Minimum sipariş miktarınız nedir?",
@@ -57,14 +57,14 @@
   },
   "What payment terms do you accept?": {
     "question": "Hangi ödeme koşullarını kabul ediyorsunuz?",
-    "answer": "Sektörün kullandığı araçlar: avanslı T/T, bakiye sevk evraklarına karşı veya sevkiyattan önce; büyük siparişlerde gayri kabili rücu görüldüğünde ödemeli L/C. Avans oranı sipariş tutarına, üretim süresine, malzeme ve kaplamalara ve malın ülkenize nasıl sevk edileceğine göre değişir. Tercih ettiğiniz teslim şekline göre teklif veririz: fabrikamızda EXW, limanda FOB veya teslim edilmiş DDP; seçtiğiniz şekil hem fiyatı hem de sorumluluğunuzun nerede başladığını değiştirir. Koşullar, siz herhangi bir taahhütte bulunmadan önce proforma faturaya yazılı olarak işlenir."
+    "answer": "Sektörün kullandığı araçlarla çalışıyoruz: avanslı T/T, bakiyesi sevk evraklarına karşı veya sevkiyattan önce; büyük siparişlerde gayri kabili rücu, görüldüğünde ödemeli L/C. Avans ile bakiye oranı sabit bir kural değildir: sipariş tutarına, modellerin gerektirdiği üretim süresine, malzeme ve kaplamalara ve malın ülkenize nasıl gümrüklenip sevk edileceğine göre değişir. Tercih ettiğiniz teslim şekline göre de teklif veririz — fabrikamızda EXW, limanda FOB veya teslim edilmiş DDP; seçtiğiniz şekil hem fiyatı hem de sorumluluğunuzun nerede başladığını değiştirir. Modelleri, miktarları ve varış yerini gönderin; ihracat ekibi, siz herhangi bir taahhütte bulunmadan önce koşulları proforma faturaya yazılı olarak geçirsin."
   },
   "Where are your products manufactured?": {
     "question": "Ürünleriniz nerede üretiliyor?",
-    "answer": "Zhongshan, Guangdong, Çin'de. Canton Hyland Hardware (Group) Co., Ltd. 1998'de, Çin'in kilit ihracatının üçte birine yakınının çıktığı Zhongshan kasabası Xiaolan'da kuruldu ve o günden beri ticari ve konut tipi kapı aksesuarını orada üretiyor."
+    "answer": "Zhongshan, Guangdong, Çin'de. Canton Hyland Hardware (Group) Co., Ltd. 1998'de, Çin'in kilit ihracatının üçte birine yakınının çıktığı Zhongshan'a bağlı Xiaolan kasabasında kuruldu ve o günden beri ticari ve konut tipi kapı donanımını orada üretiyor."
   },
   "Which finishes are available?": {
     "question": "Hangi kaplamalar mevcut?",
-    "answer": "Mevcut kaplamalar İngilizce katalogda her ürün sayfasında listelenir. Bir ürün sayfasında kaplama görünmüyorsa o bilgi o model için henüz doğrulanmamıştır; tahmin etmektense boş bırakmayı tercih ederiz."
+    "answer": "Mevcut kaplamalar her ürün sayfasında Konfigürasyon başlığı altında listelenir. Bir ürün sayfasında kaplama görünmüyorsa o bilgi o model için henüz doğrulanmamıştır; tahmin etmektense boş bırakmayı tercih ederiz."
   }
 }
