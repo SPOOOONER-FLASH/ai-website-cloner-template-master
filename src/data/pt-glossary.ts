@@ -550,7 +550,10 @@ export const FINISH_NAMES_PT: Record<string, string> = {
   "Antique Copper": "Cobre antigo",
   "Antique copper": "Cobre antigo",
   /* Generic surface treatment on HY006DK/ET; not zinc ("Zincado") nor chrome ("Cromado"). */
-  Electroplating: "Eletrodeposição",
+  Electroplating: "Galvanoplastia",
+  /* Harvested from the records on 2026-09-25; see the note on the Spanish side. */
+  "Aluminum narrow-stile door lock bodies":
+    "Corpos de fechadura para porta estreita de alumínio",
   "Chrome Plated": "Cromado",
   "Chrome plated": "Cromado",
   "Satin Chrome": "Cromo acetinado",
@@ -846,8 +849,6 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "1600–3100 mm (sob encomenda)",
   "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)":
     "AB, AC, PB, SB, SS, SP, SC (por exemplo: latão antigo, latão polido, níquel acetinado, preto fosco etc.)",
-  "Electroplating.":
-    "Galvanoplastia.",
   "Outswing Doors":
     "Portas de abertura para fora",
   "Anti Pry Protection":
@@ -1702,7 +1703,6 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Used in combination with push bar and lock":
     "Utilizado em conjunto com a barra e a fechadura",
   bathroom: "banheiro",
-  "bathroom, living room": "banheiro, sala",
   "Bathroom Hotel": "Banheiro, hotel",
   "Living room/Bathroom": "Sala / banheiro",
   "living room,bathroom...": "sala, banheiro…",
@@ -1710,7 +1710,6 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Door Security": "Segurança da porta",
   "Monitoring Outdoor": "Vigilância externa",
   "fix the door": "fixar a porta",
-  "wall-mount": "de parede",
   "Toilet Cubicle Door / Restroom Door / Hotel / Office / Hospital / Public Restroom":
     "Porta de cabine sanitária / porta de banheiro / hotel / escritório / hospital / banheiro público",
 

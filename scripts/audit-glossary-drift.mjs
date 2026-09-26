@@ -99,6 +99,51 @@ for (const { name, labels, field } of LANGS) {
 
 if (!drifted) console.log("\n✓ every glossary label matches the wording already on the page");
 
+/*
+  Second pass: two English VALUE keys that are the same term apart from punctuation or case,
+  but carry different translations.
+
+  Found on 2026-09-25. "Electroplating" and "Electroplating." differed by one full stop and
+  had been given two different Spanish words — "Electrodeposición" on two records and review's
+  "Galvanoplastia" on a third. One process, three products, two words, and nothing reported it:
+  both keys were present, so the translator was silent and the first pass above was clean.
+
+  Near-duplicate keys are the blind spot of an exact-match glossary. They do not drift over
+  time, they are born apart, and they can only be seen by comparing keys to each other rather
+  than to the records.
+*/
+const NORMAL = (s) => s.toLowerCase().replace(/[\s.,;:!?"'()·–—-]+/g, "");
+
+for (const { name, values } of [
+  { name: "es", values: es.SPEC_VALUES_ES },
+  { name: "pt", values: pt.SPEC_VALUES_PT },
+]) {
+  const byShape = new Map();
+  for (const [key, value] of Object.entries(values ?? {})) {
+    const shape = NORMAL(key);
+    if (!shape) continue;
+    if (!byShape.has(shape)) byShape.set(shape, []);
+    byShape.get(shape).push({ key, value });
+  }
+
+  /*
+    Compare the translations by shape too. "Aluminum"/"aluminum" mapping to
+    "Alumínio"/"alumínio" is the generator mirroring the English case, which is correct and
+    not worth a line of output. Only a difference that survives normalisation is a real
+    disagreement about WHICH WORDS to use.
+  */
+  const clashes = [...byShape.values()].filter(
+    (group) => group.length > 1 && new Set(group.map((g) => NORMAL(g.value))).size > 1,
+  );
+  drifted += clashes.length;
+
+  console.log(`\n${name}: ${clashes.length} near-duplicate value key(s) translated two ways`);
+  for (const group of clashes) {
+    for (const { key, value } of group) console.log(`  ${JSON.stringify(key)} → ${JSON.stringify(value)}`);
+    console.log("");
+  }
+}
+
 if (check && drifted) {
   console.error(
     "\n✗ a glossary entry would overwrite reviewed wording on the next run.\n" +

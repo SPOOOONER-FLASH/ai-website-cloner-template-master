@@ -462,7 +462,14 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   Chrome: "Cromo",
   /* Generic surface treatment on HY006DK/ET, not a specific plating: "Galvanizado" would
      name zinc and "Cromado" chrome, neither of which the record claims. */
-  Electroplating: "Electrodeposición",
+  Electroplating: "Galvanoplastia",
+  /*
+    Harvested from the records on 2026-09-25, not translated afresh: the English value was
+    renamed to "Aluminum narrow-stile door lock bodies" after these rows were reviewed, which
+    left the glossary without a key for it, and the next run put both rows back into English.
+  */
+  "Aluminum narrow-stile door lock bodies":
+    "Cuerpos de cerradura para puertas de aluminio de perfil estrecho",
   "Chrome Plated": "Cromado",
   /*
     The rest of the finish set, in the title case scripts/expand-finish-codes.mjs writes.
@@ -671,7 +678,6 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Bathroom Hotel": "Baños de hotel",
   bathroom: "Baño",
   Bathroom: "Baño",
-  "living room, bathroom": "Sala y baño",
   "Living room/Bathroom": "Sala y baño",
   "bathroom, living room": "Baño y sala",
   "Monitoring Outdoor": "Vigilancia en exteriores",
@@ -683,7 +689,6 @@ export const SPEC_VALUES_ES: Record<string, string> = {
 
   "Satin nickel, chrome, antique brass, polished brass,all available":
     "Níquel satinado, cromo, latón antiguo y latón pulido; todos disponibles",
-  "living room,bathroom...": "Sala, baño y otros ambientes",
   "Door Security": "Seguridad de puertas",
   "Door Safety": "Seguridad de puertas",
   "Iron+stainless steel": "Hierro y acero inoxidable",
@@ -860,14 +865,6 @@ export const SPEC_VALUES_ES: Record<string, string> = {
     "Barra de empuje 311, cuerpo de cerradura, cilindro de latón y manija de acero inoxidable",
   "Push bar, active and inactive leaf": "Barra de empuje para hoja activa y hoja pasiva",
   "40 hook-bolt lock body": "Cuerpo de cerradura con cerrojo de gancho 40",
-  /*
-    "Electroplatingbhgh." is a keyboard slip in the source record, not a finish name. The
-    Spanish states the finish; the English side is left as the client wrote it.
-  */
-  "Electroplating.": "Galvanoplastia",
-  "Electroplatingbhgh.": "Galvanoplastia",
-  "Fabricada en lámina de acero 1.2 mm,componentes internos aleación de zinc, aleación de cobre,cilindros en latón sólido,4 llaves. Permite instalación con tornillos o soldadura.Incluye accesorios de instalación.Acabado pintura electrostática. / Iron.":
-    "Fabricada en lámina de acero de 1,2 mm; componentes internos de zamak y aleación de cobre; cilindros de latón macizo y 4 llaves. Permite instalación con tornillos o soldadura e incluye accesorios de montaje. Acabado en pintura electrostática. Hierro.",
 
   // applications
   Residential: "Residencial",
