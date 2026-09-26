@@ -6,13 +6,16 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 630 次提交
+最近 30 天 · 共 633 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:36 | 中立 | 七语种：译文记英文源哈希，英文改了自动只重译变过的字段；指南 44 篇七语种齐；14 条产品与 5 篇指南的改动字段重译 | `ac7d9485525` |
+| 18:41 | 中立 | 合并本地提交（ship 旁路合并） | `88052457d43` |
+| 18:37 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `89df03d48ec` |
+| 18:34 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `d5495ddb726` |
+| 18:33 | 中立 | 门叶数量统一为 de dos hojas / de duas folhas（含七处复合值）；葡语补上大小写折叠 | `73de868825d` |
 | 18:24 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `89d50ff9f7a` |
 | 18:24 | HYDE | 指南三处：删去“整条推杠线 EN 1125 认证并 CE”无据说法，forend 计数 6→8，B117 写全称，三语 | `ef0b927b583` |
 | 18:20 | 中立 | 合并本地提交（七语种指南批次与 origin/main） | `67deaf3ea1e` |
