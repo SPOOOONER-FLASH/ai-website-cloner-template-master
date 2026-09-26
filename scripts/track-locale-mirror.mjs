@@ -16,6 +16,7 @@
  *   node scripts/track-locale-mirror.mjs --check   exit 1 unless every cell is 100%
  */
 import { untranslatable } from "./lib/i18n-untranslatable.mjs";
+import { staleFields } from "./lib/i18n-source-hash.mjs";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 
@@ -78,6 +79,12 @@ for (const code of LOCALES) {
     glossary: cell(glossaryDone, glossaryTotal),
     categories: cell(categoriesDone + childrenDone, categories.length + childCount),
     ui: cell(uiKeys.filter((k) => full(U[k])).length, uiKeys.length),
+    /* Entries whose English moved since they were merged (scripts/lib/i18n-source-hash.mjs). */
+    stale:
+      products.filter((p) => P[p.slug] && staleFields("products", p, P[p.slug]).length).length +
+      news.filter((a) => N[a.slug] && staleFields("news", { ...a, faq: a.faq?.en ?? [] }, N[a.slug]).length).length +
+      guides.filter((g) => G[g.slug] && staleFields("guides", { ...g, faq: g.faq?.en ?? [] }, G[g.slug]).length).length +
+      projects.filter((j) => J[j.slug] && staleFields("projects", j, J[j.slug]).length).length,
     faq: cell(faqItems.filter((i) => full(F[i.question]?.answer)).length, faqItems.length),
     products: cell(productsDone, products.length),
     productFields: cell(productFieldCount, products.length * productFields.length),
@@ -97,16 +104,17 @@ const lines = [
   "",
   `基准：${products.length} 个在售 HYDE 产品，${categories.length} 个品类 + ${categories.reduce((n, c) => n + (c.children ?? []).length, 0)} 个子类，${news.length} 篇新闻，${guides.length} 篇指南，${projects.length} 个案例，${faqItems.length} 条问答，${uiKeys.length} 句界面文案，${Object.values(GLOSSARY).reduce((n, name) => n + glossaryKeys(name).length, 0)} 条术语。`,
   "",
-  "| 语种 | 路由 | 术语表 | 品类 | 界面 | 问答 | 产品（三字段齐） | 产品字段 | 新闻 | 指南 | 案例 | 页面英文残留 |",
-  "|---|---|---|---|---|---|---|---|---|---|---|---|",
+  "| 语种 | 路由 | 术语表 | 品类 | 界面 | 问答 | 产品（三字段齐） | 产品字段 | 新闻 | 指南 | 案例 | 过期 | 页面英文残留 |",
+  "|---|---|---|---|---|---|---|---|---|---|---|---|---|",
   ...rows.map((r) =>
-    `| ${r.code} | ${r.routes} | ${pct(r.glossary)} | ${pct(r.categories)} | ${pct(r.ui)} | ${pct(r.faq)} | ${pct(r.products)} | ${pct(r.productFields)} | ${pct(r.news)} | ${pct(r.guides)} | ${pct(r.projects)} | ${r.leftovers ? `${r.leftovers.phrases} 句 / ${r.leftovers.withEnglish} 页（共 ${r.leftovers.pages} 页）` : "未构建"} |`,
+    `| ${r.code} | ${r.routes} | ${pct(r.glossary)} | ${pct(r.categories)} | ${pct(r.ui)} | ${pct(r.faq)} | ${pct(r.products)} | ${pct(r.productFields)} | ${pct(r.news)} | ${pct(r.guides)} | ${pct(r.projects)} | ${r.stale} | ${r.leftovers ? `${r.leftovers.phrases} 句 / ${r.leftovers.withEnglish} 页（共 ${r.leftovers.pages} 页）` : "未构建"} |`,
   ),
   "",
   "## 读法",
   "",
   "- **术语表**：`content/i18n/<code>/glossary.json` 六张表相对 `es-glossary.ts` 的键。规格值在构建时查表，所以这一列先于产品。",
   "- **产品（三字段齐）**：name + summary + specs 都有译文的在售产品；**产品字段**把 features、seoTitle、seoDescription 也算进去。",
+  "- **过期**：英文源在译文合入后又改过的记录数（`sourceHash` 对不上）；`node scripts/i18n-batch.mjs --locale <code> --kind <kind> --stale --all` 只切变过的字段（数组精确到下标）。",
   "- **页面英文残留**：`scripts/audit-locale-pages.mjs --locale <code>`，以西语为对照组读构建出的 HTML；只有构建过（out/<code>/ 存在）才有数字。",
   "- 下一批怎么切：`node scripts/i18n-batch.mjs --locale <code> --kind <kind>`；合并：`node scripts/i18n-merge.mjs tmp/i18n/<job>.json`。",
   "",
@@ -114,7 +122,7 @@ const lines = [
 writeFileSync(OUT, lines.join("\n"));
 if (!quiet) console.log(lines.slice(6, 8 + rows.length).join("\n"));
 if (check) {
-  const incomplete = rows.filter((r) => [r.glossary, r.categories, r.ui, r.faq, r.products, r.productFields, r.news, r.guides, r.projects].some((c) => c.pct < 100));
+  const incomplete = rows.filter((r) => r.stale > 0 || [r.glossary, r.categories, r.ui, r.faq, r.products, r.productFields, r.news, r.guides, r.projects].some((c) => c.pct < 100));
   if (incomplete.length) {
     console.error(`✗ ${incomplete.map((r) => r.code).join(", ")} below 100%`);
     process.exit(1);

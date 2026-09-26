@@ -93,13 +93,37 @@
 
 下一次 `npm run ship` 成功时这些会一起推上去。
 
-## 2026/9/25 18:47:38 · 三次推送失败
+## 2026/9/25 18:11:24 · 三次推送失败
 
-原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+原因：旁路合并也失败： ! [remote rejected]         HEAD -> main (cannot lock ref 'refs/heads/main': is at edaf8533ee3e44d28557d250aaec120b895213d1 but expected a4c49f93999fa88867a5e18127f2ad6b0ab60538) / error: failed to push some refs to 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git'
 
 未推送的提交：
 
-- `93f9e9ba618` shiplog: 更新上线存档
-- `71490f6047b` 七语种锁体标题带上中心距与背距（译名取自各语种 glossary.specLabels）
+- `031b3c481a3` shiplog: 更新上线存档
+- `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:19:00 · 三次推送失败
+
+原因：旁路合并也失败：hint: before pushing again. / hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+未推送的提交：
+
+- `3c50b33579a` shiplog: 更新上线存档
+- `031b3c481a3` shiplog: 更新上线存档
+- `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
+
+下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:37:02 · 三次推送失败
+
+原因：旁路合并也失败：hint: before pushing again. / hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+未推送的提交：
+
+- `d5495ddb726` Merge remote-tracking branch 'origin/main' into claude-spec-work
+- `21aeafe584e` shiplog: 更新上线存档
+- `73de868825d` 门叶数量统一为 de dos hojas / de duas folhas（含七处复合值）；葡语补上大小写折叠
 
 下一次 `npm run ship` 成功时这些会一起推上去。

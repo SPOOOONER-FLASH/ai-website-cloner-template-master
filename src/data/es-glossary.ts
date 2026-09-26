@@ -423,7 +423,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Three square deadbolts, plus latch":
     "Tres cerrojos cuadrados, más pestillo",
   "Nickel-plated brass, solid brass, brushed nickel":
-    "Latón niquelado, latón macizo, níquel cepillado",
+    "Latón niquelado, latón macizo o níquel cepillado",
   "Trim handle · outside lever for panic exit devices":
     "Manija exterior · para barras antipánico",
   "Trim handle · anti-pick outside lever for panic exit devices":
@@ -462,7 +462,14 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   Chrome: "Cromo",
   /* Generic surface treatment on HY006DK/ET, not a specific plating: "Galvanizado" would
      name zinc and "Cromado" chrome, neither of which the record claims. */
-  Electroplating: "Electrodeposición",
+  Electroplating: "Galvanoplastia",
+  /*
+    Harvested from the records on 2026-09-25, not translated afresh: the English value was
+    renamed to "Aluminum narrow-stile door lock bodies" after these rows were reviewed, which
+    left the glossary without a key for it, and the next run put both rows back into English.
+  */
+  "Aluminum narrow-stile door lock bodies":
+    "Cuerpos de cerradura para puertas de aluminio de perfil estrecho",
   "Chrome Plated": "Cromado",
   /*
     The rest of the finish set, in the title case scripts/expand-finish-codes.mjs writes.
@@ -647,7 +654,7 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Entrance doors": "Puertas de entrada",
   "Sliding doors": "Puertas corredizas",
   "Emergency and escape doors": "Puertas de emergencia y evacuación",
-  "Fire-rated double escape doors": "Puertas dobles de evacuación cortafuego",
+  "Fire-rated double escape doors": "Puertas cortafuego de evacuación de dos hojas",
   "Residential and Commercial Use": "Uso residencial y comercial",
   "Standard residential use": "Uso residencial estándar",
   "Residential use": "Uso residencial",
@@ -671,19 +678,17 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Bathroom Hotel": "Baños de hotel",
   bathroom: "Baño",
   Bathroom: "Baño",
-  "living room, bathroom": "Sala y baño",
   "Living room/Bathroom": "Sala y baño",
   "bathroom, living room": "Baño y sala",
   "Monitoring Outdoor": "Vigilancia en exteriores",
   "fix the door": "Fijación de puerta",
-  "Single Door": "Puerta simple",
-  "Double Door": "Puerta doble",
+  "Single Door": "Puerta de una hoja",
+  "Double Door": "Puerta de dos hojas",
   "wall-mount": "Montaje en pared",
   "Wall mounted": "Montaje en pared",
 
   "Satin nickel, chrome, antique brass, polished brass,all available":
     "Níquel satinado, cromo, latón antiguo y latón pulido; todos disponibles",
-  "living room,bathroom...": "Sala, baño y otros ambientes",
   "Door Security": "Seguridad de puertas",
   "Door Safety": "Seguridad de puertas",
   "Iron+stainless steel": "Hierro y acero inoxidable",
@@ -860,14 +865,6 @@ export const SPEC_VALUES_ES: Record<string, string> = {
     "Barra de empuje 311, cuerpo de cerradura, cilindro de latón y manija de acero inoxidable",
   "Push bar, active and inactive leaf": "Barra de empuje para hoja activa y hoja pasiva",
   "40 hook-bolt lock body": "Cuerpo de cerradura con cerrojo de gancho 40",
-  /*
-    "Electroplatingbhgh." is a keyboard slip in the source record, not a finish name. The
-    Spanish states the finish; the English side is left as the client wrote it.
-  */
-  "Electroplating.": "Galvanoplastia",
-  "Electroplatingbhgh.": "Galvanoplastia",
-  "Fabricada en lámina de acero 1.2 mm,componentes internos aleación de zinc, aleación de cobre,cilindros en latón sólido,4 llaves. Permite instalación con tornillos o soldadura.Incluye accesorios de instalación.Acabado pintura electrostática. / Iron.":
-    "Fabricada en lámina de acero de 1,2 mm; componentes internos de zamak y aleación de cobre; cilindros de latón macizo y 4 llaves. Permite instalación con tornillos o soldadura e incluye accesorios de montaje. Acabado en pintura electrostática. Hierro.",
 
   // applications
   Residential: "Residencial",
@@ -878,8 +875,8 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Room door, Entrance door.": "Puerta de habitación y puerta de acceso",
   "Fireproof doors": "Puertas cortafuego",
   "For fire-rated metal or wood doors": "Para puertas cortafuego metálicas o de madera",
-  "Fire doors / double doors": "Puertas cortafuego y puertas de doble hoja",
-  "Fire double door": "Puerta cortafuego de doble hoja",
+  "Fire doors / double doors": "Puertas cortafuego y puertas de dos hojas",
+  "Fire double door": "Puerta cortafuego de dos hojas",
   "Bathroom Bath Partition Hardware": "Herrajes para mamparas de baño",
   "Household/ Hotel Bathroom": "Baños residenciales y de hotel",
   "Window Connection": "Unión de ventana",
@@ -909,13 +906,13 @@ export const SPEC_VALUES_ES: Record<string, string> = {
   "Wooden Door / Metal Door / Furniture Door / Commercial Door / Residential / Commercial / Hotel / Office / Hospital / School / Warehouse":
     "Puertas de madera, metálicas, de mueble y comerciales: residencial, comercial, hotelería, oficinas, hospitales, escuelas y bodegas",
   "Fire Doors / Commercial Double Doors / Schools / Hospitals / Office Buildings / Commercial Projects":
-    "Puertas cortafuego y puertas comerciales de doble hoja: escuelas, hospitales, edificios de oficinas y proyectos comerciales",
+    "Puertas cortafuego y puertas comerciales de dos hojas: escuelas, hospitales, edificios de oficinas y proyectos comerciales",
   "Interior Door / Commercial Door / Fire Door / Passage Door":
     "Puerta interior, comercial, cortafuego o de paso",
   "Armored Doors / Security Doors / Entrance Doors":
     "Puertas acorazadas, de seguridad y de acceso",
-  "Double-Leaf Doors": "Puertas de doble hoja",
-  "Single Door / Double Door": "Puerta de una hoja o de doble hoja",
+  "Double-Leaf Doors": "Puertas de dos hojas",
+  "Single Door / Double Door": "Puerta de una hoja o de dos hojas",
   "Ideal for bathrooms, living rooms, and more": "Ideal para baños, salas y otros ambientes",
   "Suitable for bathrooms, living rooms, and more": "Apto para baños, salas y otros ambientes",
   "Wooden Gates,window": "Portones de madera y ventanas",

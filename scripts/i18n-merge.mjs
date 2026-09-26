@@ -23,6 +23,7 @@
  */
 import { untranslatable } from "./lib/i18n-untranslatable.mjs";
 import { materialConflict } from "./lib/i18n-material.mjs";
+import { hashRecord } from "./lib/i18n-source-hash.mjs";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -130,11 +131,12 @@ for (const item of items) {
       fail(key, `summary ${clash}`);
       continue;
     }
-    overlay[key] = { ...(overlay[key] ?? {}), ...got };
+    /* Fields not in this job keep their old hash; fields it carried get the hash of THIS source. */
+    overlay[key] = { ...(overlay[key] ?? {}), ...got, sourceHash: { ...(overlay[key]?.sourceHash ?? {}), ...hashRecord(kind, source) } };
     merged++;
   } else {
     if (!checkShape(key, source, out)) continue;
-    overlay[key] = { ...(overlay[key] ?? {}), ...out };
+    overlay[key] = { ...(overlay[key] ?? {}), ...out, sourceHash: { ...(overlay[key]?.sourceHash ?? {}), ...hashRecord(kind, source) } };
     merged++;
   }
 }

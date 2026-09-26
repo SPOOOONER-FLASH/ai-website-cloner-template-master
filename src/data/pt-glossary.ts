@@ -550,7 +550,10 @@ export const FINISH_NAMES_PT: Record<string, string> = {
   "Antique Copper": "Cobre antigo",
   "Antique copper": "Cobre antigo",
   /* Generic surface treatment on HY006DK/ET; not zinc ("Zincado") nor chrome ("Cromado"). */
-  Electroplating: "Eletrodeposição",
+  Electroplating: "Galvanoplastia",
+  /* Harvested from the records on 2026-09-25; see the note on the Spanish side. */
+  "Aluminum narrow-stile door lock bodies":
+    "Corpos de fechadura para porta estreita de alumínio",
   "Chrome Plated": "Cromado",
   "Chrome plated": "Cromado",
   "Satin Chrome": "Cromo acetinado",
@@ -689,11 +692,11 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Wall-mount": "Fixação na parede",
   "1–8 hooks available": "De 1 a 8 ganchos",
   "Panic exit devices": "Barras antipânico",
-  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch; "Porta dupla" is below. */
+  /* 306 PS / 306-S, added 2026-09-24. "Lingueta" is this file's latch. */
   "Passage, no latch bolt": "Passagem livre, sem lingueta",
   "A separate lock case, supplied to suit":
     "Caixa de fechadura separada, fornecida conforme a aplicação",
-  "Single door": "Porta simples",
+  "Single door": "Porta de uma folha",
   "AB / AC / PB / SB / SS / SP / SC (Custom Available)":
     "AB / AC / PB / SB / SS / SP / SC (personalizado disponível)",
   "Fire Door": "Porta corta-fogo",
@@ -846,8 +849,6 @@ export const SPEC_VALUES_PT: Record<string, string> = {
     "1600–3100 mm (sob encomenda)",
   "AB, AC, PB, SB, SS, SP, SC (e.g., antique brass, polished brass, satin nickel, matte black, etc.)":
     "AB, AC, PB, SB, SS, SP, SC (por exemplo: latão antigo, latão polido, níquel acetinado, preto fosco etc.)",
-  "Electroplating.":
-    "Galvanoplastia.",
   "Outswing Doors":
     "Portas de abertura para fora",
   "Anti Pry Protection":
@@ -985,13 +986,13 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Double-Leaf Doors":
     "Portas de duas folhas",
   "Double door":
-    "Porta dupla",
+    "Porta de duas folhas",
   "Fire double door":
-    "Porta dupla corta-fogo",
+    "Porta corta-fogo de duas folhas",
   "Fire doors / double doors":
-    "Portas corta-fogo / portas duplas",
+    "Portas corta-fogo / portas de duas folhas",
   "Fire Doors / Commercial Double Doors / Schools / Hospitals / Office Buildings / Commercial Projects":
-    "Portas corta-fogo / portas duplas comerciais / escolas / hospitais / edifícios de escritórios / obras comerciais",
+    "Portas corta-fogo / portas comerciais de duas folhas / escolas / hospitais / edifícios de escritórios / obras comerciais",
   "Zinc-Plated Steel":
     "Aço zincado",
   "Iron with zinc-plated finish":
@@ -1305,7 +1306,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Top & Bottom Latching":
     "Travamento superior e inferior",
   "Single Door / Double Door":
-    "Porta simples / porta dupla",
+    "Porta de uma folha / porta de duas folhas",
   "650mm / 800mm / 1000mm, Customizable":
     "650 mm / 800 mm / 1000 mm, sob medida",
   "Painted":
@@ -1454,7 +1455,7 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "For fire-rated metal or wood doors":
     "Para portas corta-fogo de metal ou madeira",
   "Fire-rated double escape doors":
-    "Portas duplas de saída corta-fogo",
+    "Portas corta-fogo de saída de duas folhas",
   "Door lock":
     "Fechadura de porta",
   "Four round bolts":
@@ -1695,14 +1696,13 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Panic Exit Device / Panic Bar": "Barra antipânico",
   "Glass door": "Porta de vidro",
   "For entrance doors": "Para portas de entrada",
-  "For Privacy doors": "Para portas de condena",
+  "For Privacy doors": "Para portas de banheiro",
   "for lavatory or other privacy doors": "para banheiros e outras portas de condena",
   "Suit for toilet door or other doors": "Indicado para portas de banheiro e outras portas",
   "Suitable for all types of doors": "Indicado para todos os tipos de porta",
   "Used in combination with push bar and lock":
     "Utilizado em conjunto com a barra e a fechadura",
   bathroom: "banheiro",
-  "bathroom, living room": "banheiro, sala",
   "Bathroom Hotel": "Banheiro, hotel",
   "Living room/Bathroom": "Sala / banheiro",
   "living room,bathroom...": "sala, banheiro…",
@@ -1710,7 +1710,6 @@ export const SPEC_VALUES_PT: Record<string, string> = {
   "Door Security": "Segurança da porta",
   "Monitoring Outdoor": "Vigilância externa",
   "fix the door": "fixar a porta",
-  "wall-mount": "de parede",
   "Toilet Cubicle Door / Restroom Door / Hotel / Office / Hospital / Public Restroom":
     "Porta de cabine sanitária / porta de banheiro / hotel / escritório / hospital / banheiro público",
 

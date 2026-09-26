@@ -294,6 +294,33 @@ function translateValue(input) {
   const list = translateFinishList(text);
   if (list) return list;
 
+  /*
+    Casing is not meaning. The Spanish side has had this fallback all along; Portuguese did
+    not, and that single asymmetry produced a whole class of defect.
+
+    Because an exact match was the only match, every casing variant in the English needed
+    its OWN key here — and whoever added the second key translated it afresh instead of
+    copying the first. By 2026-09-25 that had produced four pairs saying different things:
+
+        "Single door" / "Single Door"        Porta simples      / Porta de uma folha
+        "Double door" / "Double Door"        Porta dupla        / Porta de duas folhas
+        "wall-mount"  / "Wall-mount"         de parede          / Fixação na parede
+        "For privacy doors" / "For Privacy doors"
+                                             Para portas de banheiro / Para portas de condena
+
+    The last pair is the one that shows why it matters: "condena" is the thumbturn, a part,
+    not a type of door, so two product lines were describing different things from one
+    English phrase that differed by a capital P.
+
+    All four are now unified and scripts/audit-glossary-drift.mjs fails on a new pair, so
+    folding here is safe: no two keys differ only in case with different values. It stops
+    the next casing variant from needing a key at all.
+  */
+  const folded = Object.keys(glossary.values).find(
+    (key) => key.toLowerCase() === text.toLowerCase(),
+  );
+  if (folded) return spaceUnits(glossary.values[folded]);
+
   note(text);
   return text;
 }

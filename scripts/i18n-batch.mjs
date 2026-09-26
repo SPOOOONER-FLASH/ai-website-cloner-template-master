@@ -18,6 +18,8 @@
  * never render here (release session, 2026-09-25). Articles are the published ones.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { staleFields } from "./lib/i18n-source-hash.mjs";
+import { execFileSync } from "node:child_process";
 
 const args = process.argv.slice(2);
 const opt = (name, fallback) => {
@@ -31,7 +33,7 @@ const index = Number(opt("index", "1"));
 const section = opt("section");
 const LOCALES = ["fr", "de", "ja", "ko", "tr", "ru", "ar"];
 if (!LOCALES.includes(locale) || !kind) {
-  console.error("usage: node scripts/i18n-batch.mjs --locale <fr|de|ja|ko|tr|ru|ar> --kind <products|categories|ui|glossary|news|guides|projects|faq> [--size 60] [--index 1] [--section specLabels] [--slugs map.json]");
+  console.error("usage: node scripts/i18n-batch.mjs --locale <fr|de|ja|ko|tr|ru|ar> --kind <products|categories|ui|glossary|news|guides|projects|faq> [--size 60] [--index 1] [--section specLabels] [--slugs map.json] [--stale [--base <rev>]]");
   process.exit(2);
 }
 const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
@@ -58,7 +60,62 @@ let items = [];
 */
 const slugsFile = opt("slugs");
 const forced = slugsFile ? readJson(slugsFile) : null;
-const forcedMap = Array.isArray(forced) ? Object.fromEntries(forced.map((s) => [s, ["name", "summary", "description", "features", "specs"]])) : forced;
+let forcedMap = Array.isArray(forced) ? Object.fromEntries(forced.map((s) => [s, ["name", "summary", "description", "features", "specs"]])) : forced;
+/*
+  --stale: the same map, computed — every published record whose English moved since its
+  translation was merged (scripts/lib/i18n-source-hash.mjs), with exactly the moved fields.
+*/
+const stale = args.includes("--stale");
+/*
+  The archived job files hold the English each translation was made from. For an array field
+  (body, faq, features) that moved, they let the job say WHICH entries moved, so a one-paragraph
+  edit to a forty-paragraph guide costs one paragraph, not forty: `changedIndices: { body: [21, 23] }`.
+*/
+const archivedSource = (() => {
+  const map = {};
+  for (const dir of ["tmp/i18n-done", "tmp/i18n"]) {
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir).filter((n) => n.startsWith(`${locale}-${kind}-`) && n.endsWith(".json"))) {
+      let job;
+      try { job = JSON.parse(readFileSync(`${dir}/${f}`, "utf8")); } catch { continue; }
+      for (const it of job.items ?? []) if (it.source) map[it.key] = it.source;
+    }
+  }
+  return map;
+})();
+/* --base <rev>: when no job file holds the old English, read it from that commit. */
+const baseRev = opt("base");
+const fromBase = (key) => {
+  if (!baseRev) return undefined;
+  try {
+    const r = JSON.parse(execFileSync("git", ["show", `${baseRev}:content/${kind === "products" ? "products" : kind}/${key}.json`], { encoding: "utf8", maxBuffer: 1e8 }));
+    return kind === "news" || kind === "guides" ? { ...r, faq: r.faq?.en ?? [] } : r;
+  } catch {
+    return undefined;
+  }
+};
+const changedIndices = (key, source, moved) => {
+  const old = archivedSource[key] ?? fromBase(key);
+  if (!old) return undefined;
+  const out = {};
+  for (const f of moved) {
+    if (!Array.isArray(source[f]) || !Array.isArray(old[f]) || source[f].length !== old[f].length) continue;
+    out[f] = source[f].map((v, i) => (JSON.stringify(v) === JSON.stringify(old[f][i]) ? -1 : i)).filter((i) => i >= 0);
+  }
+  return Object.keys(out).length ? out : undefined;
+};
+if (stale && ["products", "news", "guides", "projects"].includes(kind)) {
+  const done = overlay(kind);
+  const folder = kind === "products" ? "products" : kind;
+  const isLive = (r) => (kind === "products" ? published(r) : !r.draft && r.publishedAt <= today);
+  forcedMap = {};
+  for (const r of records(folder)) {
+    if (!isLive(r) || !done[r.slug]) continue;
+    const src = kind === "news" || kind === "guides" ? { ...r, faq: r.faq?.en ?? [] } : r;
+    const moved = staleFields(kind, src, done[r.slug]);
+    if (moved.length) forcedMap[r.slug] = moved;
+  }
+}
 if (kind === "products") {
   const done = overlay("products");
   const complete = (t) => t && t.name && t.summary && Array.isArray(t.specs);
@@ -71,7 +128,7 @@ if (kind === "products") {
       model: p.model,
       category: p.categoryPath[0],
       material: p.material ?? "",
-      ...(forcedMap ? { retranslate: forcedMap[p.slug] } : {}),
+      ...(forcedMap ? { retranslate: forcedMap[p.slug], changedIndices: changedIndices(p.slug, p, forcedMap[p.slug]) } : {}),
       source: {
         name: p.name,
         summary: p.summary,
@@ -123,19 +180,21 @@ if (kind === "products") {
   const complete = (t) => t && t.title && t.summary && Array.isArray(t.body) && t.body.length;
   items = records(kind)
     .filter((a) => !a.draft && a.publishedAt <= today)
-    .filter((a) => !complete(done[a.slug]))
+    .filter((a) => (forcedMap ? Boolean(forcedMap[a.slug]) : !complete(done[a.slug])))
     .sort((a, b) => a.slug.localeCompare(b.slug))
     .map((a) => ({
       key: a.slug,
+      ...(forcedMap ? { retranslate: forcedMap[a.slug], changedIndices: changedIndices(a.slug, { ...a, faq: a.faq?.en ?? [] }, forcedMap[a.slug]) } : {}),
       source: { title: a.title, summary: a.summary, seoTitle: a.seoTitle, seoDescription: a.seoDescription, body: a.body, faq: a.faq?.en ?? [] },
       target: { title: "", summary: "", seoTitle: "", seoDescription: "", body: a.body.map(() => ""), faq: (a.faq?.en ?? []).map(() => ({ question: "", answer: "" })) },
     }));
 } else if (kind === "projects") {
   const done = overlay("projects");
   items = records("projects")
-    .filter((p) => !(done[p.slug]?.name && done[p.slug]?.body))
+    .filter((p) => (forcedMap ? Boolean(forcedMap[p.slug]) : !(done[p.slug]?.name && done[p.slug]?.body)))
     .map((p) => ({
       key: p.slug,
+      ...(forcedMap ? { retranslate: forcedMap[p.slug], changedIndices: changedIndices(p.slug, p, forcedMap[p.slug]) } : {}),
       source: { name: p.name, buildingType: p.buildingType, summary: p.summary, seoTitle: p.seoTitle, seoDescription: p.seoDescription, body: p.body },
       target: { name: "", buildingType: "", summary: "", seoTitle: "", seoDescription: "", body: p.body.map(() => "") },
     }));

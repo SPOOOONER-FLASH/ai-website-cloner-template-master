@@ -6,14 +6,21 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 626 次提交
+最近 30 天 · 共 633 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:44 | 中立 | 七语种锁体标题带上中心距与背距（译名取自各语种 glossary.specLabels） | `71490f6047b` |
-| 18:11 | 中立 | 目标清单：#59 等 HY-0SS 七语种译文 | `add23a78486` |
+| 18:41 | 中立 | 合并本地提交（ship 旁路合并） | `88052457d43` |
+| 18:37 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `89df03d48ec` |
+| 18:34 | 发布 HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `d5495ddb726` |
+| 18:33 | 中立 | 门叶数量统一为 de dos hojas / de duas folhas（含七处复合值）；葡语补上大小写折叠 | `73de868825d` |
+| 18:24 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `89d50ff9f7a` |
+| 18:24 | HYDE | 指南三处：删去“整条推杠线 EN 1125 认证并 CE”无据说法，forend 计数 6→8，B117 写全称，三语 | `ef0b927b583` |
+| 18:20 | 中立 | 合并本地提交（七语种指南批次与 origin/main） | `67deaf3ea1e` |
+| 18:16 | 中立 | Merge remote-tracking branch 'origin/main' into claude-spec-work | `f1f7fa76b78` |
+| 18:16 | 中立 | 删六个死键；Electroplating 三条记录统一成一个词；审计加近似键检查 | `4c882908aec` |
 | 18:07 | 中立 | 目标清单：#54 等七语种发布；#58 cron 自动装跳转规则已实测生效 | `980aeb2b49b` |
 | 18:07 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `a50725f2107` |
 | 18:07 | HYDE | 计数随移类更新：五金配件 71、锁体 57、推杠 47；推杠指南改写顺序器所在类目，三语 | `9522d3c3875` |
