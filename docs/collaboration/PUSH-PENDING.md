@@ -92,3 +92,14 @@
 - `ea1b3550713` Cloudflare 报告处理：security.txt 上线、改名视频 18 条 301、手册 ⑥、AI 抓取数据进看板
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:11:24 · 三次推送失败
+
+原因：旁路合并也失败： ! [remote rejected]         HEAD -> main (cannot lock ref 'refs/heads/main': is at edaf8533ee3e44d28557d250aaec120b895213d1 but expected a4c49f93999fa88867a5e18127f2ad6b0ab60538) / error: failed to push some refs to 'https://github.com/SPOOOONER-FLASH/ai-website-cloner-template-master.git'
+
+未推送的提交：
+
+- `031b3c481a3` shiplog: 更新上线存档
+- `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
+
+下一次 `npm run ship` 成功时这些会一起推上去。
