@@ -1536,6 +1536,7 @@ export const PRODUCT_NAMES_ES: Record<string, string> = {
   "Hydraulic Hinge": "Bisagra hidráulica",
   "Door Closer": "Cierrapuertas",
   "Door Coordinator": "Selector de cierre",
+  "Latch Guard": "Protector antipalanca para cerradura",
 
   // Accessories
   Latch: "Pestillo",
