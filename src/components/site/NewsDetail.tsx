@@ -117,12 +117,16 @@ export function NewsDetail({
   /* English, never Spanish, for the fields that have no Portuguese yet. */
   const pickText = (en?: string, esText?: string, ptText?: string) =>
     (locale === "es" ? esText : locale === "pt" ? ptText : undefined) ?? en;
-  const titleFor = { en: article.title, es: article.titleEs, pt: article.titlePt };
-  const summaryFor = { en: article.summary, es: article.summaryEs, pt: article.summaryPt };
-  const bodyFor = { en: article.body, es: article.bodyEs, pt: article.bodyPt };
-  const title = dict(titleFor, locale) || article.title;
-  const summary = dict(summaryFor, locale) || article.summary;
-  const localeBody = dict(bodyFor, locale);
+  /*
+    `tr` (i18n `t`) reads the `…Es` / `…Pt` fields AND the overlay sidecar
+    (content/i18n/<code>/{news,guides}.json). Until 2026-09-26 this read a `{ en, es, pt }`
+    dict, which for the seven overlay locales mapped the English body through ui.json —
+    i.e. printed it in English: 2,662 English lines on every locale's guides, although
+    every guide body had been translated in the sidecar.
+  */
+  const title = tr(article, "title", locale) || article.title;
+  const summary = tr(article, "summary", locale) || article.summary;
+  const localeBody = tr(article, "body", locale);
   /*
     A translated body is used whenever one exists — NOT only when its paragraph count
     matches the English.
