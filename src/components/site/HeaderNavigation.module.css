@@ -3,5 +3,7 @@
 @media (min-width: 86rem) and (max-width: 99.999rem) {
   .wideNavigation { display: none; }
   .controls { grid-column: 1 / -1; }
-  .compactNavigation { display: block; }
+  /* grid, not block: this element is also .layout, and the page gutters ARE that grid.
+     display:block dropped them — the rail ran from x=0 on every 1376–1599px screen (09-25). */
+  .compactNavigation { display: grid; }
 }
