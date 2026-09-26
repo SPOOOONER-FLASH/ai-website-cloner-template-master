@@ -66,6 +66,7 @@ import { Analytics, AnalyticsHead } from "@/components/site/Analytics";
 import { absoluteUrl, defaultDescription, defaultTitle, indexable, siteName, siteUrl } from "@/data/site";
 import { LOCALE_DIR, LOCALE_TAG, OG_LOCALE } from "@/lib/i18n";
 import { alternateLanguages } from "@/lib/seo";
+import { I18nClientBundle } from "@/data/generated/i18n-client/${code}";
 
 ${HEADER}
 const LOCALE = "${code}" as const;
@@ -123,6 +124,8 @@ export default function LocaleRootLayout({ children }: Readonly<{ children: Reac
         <JsonLd data={websiteSchema()} />
       </head>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
+        {/* This locale's client dictionary — one chunk, this locale only (src/lib/i18n-client.ts). */}
+        <I18nClientBundle />
         <div className="flex min-h-screen flex-col justify-between">
           <SiteHeader categories={getMenuCategories()} />
           {children}

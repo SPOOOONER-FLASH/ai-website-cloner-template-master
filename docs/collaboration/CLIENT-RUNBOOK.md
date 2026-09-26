@@ -1,6 +1,6 @@
 # Spooner 操作手册
 
-**最后更新：2026-09-24 · 更新人：Claude**
+**最后更新：2026-09-25 · 更新人：Claude**
 
 这份文件只写**现在要做什么**。做完的、过时的一律移进
 `docs/collaboration/archive/`，不留在这里。
@@ -14,6 +14,46 @@
 >
 > 从今天起的规矩：**你要动手的事，永远只在这份文件的第一屏，带日期**。
 > 做完一条我就把它移走。你在这里读到一条已经做完的事，是我的错，告诉我。
+
+---
+
+## 现在要做的（2026-09-25 新增）：七个语种上线后，Search Console 里做两件事
+
+七个新语种（法 德 日 韩 土 俄 阿）已经是和西语一样的完整站点（每个语种 746 页），发布会话从 E:/release 发布后即上线。
+sitemap.xml 已经包含全部十个语种的网址，**不用再提交新的 sitemap**。要做的只有：
+
+**① 给 /de/ 建一个「网址前缀」资源（甲方 09-25 的要求：赶 BAU 2027）**
+
+1. 打开 https://search.google.com/search-console → 左上角资源下拉 → 最底下 **添加资源**。
+2. 右边「**网址前缀**」那一栏填 `https://cantonlock.com/de/` → **继续**。
+3. 验证：因为 cantonlock.com 这个域名资源你已经验证过，这里通常会**自动通过**，显示「所有权已自动验证」。
+   如果没有自动通过，选「HTML 标记」以外的任何方式都不用管，直接截图发我，我来处理。
+4. 建好后，左侧 **站点地图** → 填 `https://cantonlock.com/sitemap.xml` → 提交。成功的样子是状态列显示「成功」。
+
+这样德国属性里能单独看 /de/ 的曝光和点击，和主资源不冲突。
+
+**② 请求收录七个语种的首页和目录页（14 条，每天 10 条上限，分两天）**
+
+和之前一样：主资源 cantonlock.com → 顶部长条搜索框粘网址 → 回车 → 等 30 秒 → **请求编入索引**。
+
+```
+https://cantonlock.com/de/
+https://cantonlock.com/de/products/
+https://cantonlock.com/fr/
+https://cantonlock.com/fr/products/
+https://cantonlock.com/ja/
+https://cantonlock.com/ja/products/
+https://cantonlock.com/ko/
+https://cantonlock.com/ko/products/
+https://cantonlock.com/tr/
+https://cantonlock.com/tr/products/
+https://cantonlock.com/ru/
+https://cantonlock.com/ru/products/
+https://cantonlock.com/ar/
+https://cantonlock.com/ar/products/
+```
+
+其余 5,000 多页 Google 会顺着 hreflang 和 sitemap 自己抓，不用一条条点。如果某条显示「网址不在 Google 中」并且按钮是灰的，说明还没抓到，跳过，明天再点。
 
 ---
 

@@ -7,7 +7,7 @@ import {
   groupModelIndex,
   modelSearchKey,
   type ModelIndexEntry,
-} from "@/lib/model-index";
+} from "@/lib/model-index-core";
 import { dict } from "@/lib/i18n-client";
 
 /**

@@ -15,7 +15,7 @@
  *   node scripts/track-locale-mirror.mjs --quiet   same, no console output
  *   node scripts/track-locale-mirror.mjs --check   exit 1 unless every cell is 100%
  */
-import { untranslatable } from "./lib/i18n-untranslatable.mjs";
+import { cognate, untranslatable } from "./lib/i18n-untranslatable.mjs";
 import { staleFields } from "./lib/i18n-source-hash.mjs";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
@@ -41,7 +41,7 @@ const glossaryKeysRaw = (name) => {
   const m = esGlossary.match(new RegExp(`export const ${name}: Record<string, string> = \\{([\\s\\S]*?)\\n\\};`));
   return m ? [...m[1].matchAll(/^\s*(?:"((?:[^"\\]|\\.)*)"|([A-Za-z_]\w*)):\s*\n?\s*"/gm)].map((x) => (x[1] ?? x[2]).replace(/\\"/g, '"')) : [];
 };
-const glossaryKeys = (name) => glossaryKeysRaw(name).filter((k) => !untranslatable(k));
+const glossaryKeys = (name) => glossaryKeysRaw(name).filter((k) => !untranslatable(k) && !cognate(k));
 const GLOSSARY = { specLabels: "SPEC_LABELS_ES", specValues: "SPEC_VALUES_ES", finishNames: "FINISH_NAMES_ES", materialNames: "MATERIAL_NAMES_ES", categoryNames: "CATEGORY_NAMES_ES", productNames: "PRODUCT_NAMES_ES" };
 
 const full = (t) => t && typeof t === "string" && t.trim();

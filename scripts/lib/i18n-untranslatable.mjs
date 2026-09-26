@@ -9,3 +9,12 @@ export const BRAND = /^(HYDE|STAHLOCK|Canton Hyland(?: Hardware\s*\(Group\) Co\.
 /* Tokens that are not words to translate: SI and trade units, standards bodies, alloy codes. */
 export const UNIT_WORDS = /\b(mm|cm|m|kg|g|N·?m|Nm|N|kN|dB|°C|inch|inches|EN|DIN|ANSI|BHMA|UL|CE|ISO|SS|SUS|AISI|PVD|OEM|ODM|MOQ|PC|PCS|CTN|USD|RMB|HRC|IP\d+)\b/g;
 export const untranslatable = (en) => BRAND.test(en.trim()) || !/\p{L}/u.test(en.replace(UNIT_WORDS, ""));
+
+/*
+  Ordinary words that some languages spell exactly as English does — "Aluminium" in French
+  and German, "Nylon" nearly everywhere. The merge accepts them unchanged and the board leaves
+  them out of the denominator; the pruner does NOT touch them, because in Japanese or Arabic
+  they are real translations.
+*/
+export const COGNATES = /^(Aluminium|Aluminum|Nylon|Chrome|Zamak|Inox|Polyamide|Nickel)$/iu;
+export const cognate = (en) => COGNATES.test(en.trim());

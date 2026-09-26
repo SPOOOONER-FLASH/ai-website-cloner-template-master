@@ -21,7 +21,7 @@
  * Refusals are printed with the key and the reason and the job file is left as it is, so
  * the writer can fix and re-run. `--dry` validates without writing.
  */
-import { untranslatable } from "./lib/i18n-untranslatable.mjs";
+import { cognate, untranslatable } from "./lib/i18n-untranslatable.mjs";
 import { materialConflict } from "./lib/i18n-material.mjs";
 import { hashRecord } from "./lib/i18n-source-hash.mjs";
 import { execFileSync } from "node:child_process";
@@ -58,7 +58,7 @@ function checkText(key, en, out, path = "") {
     ("80 kilogram"), which is worse than the English. Untranslatable strings may also
     simply be left out — the page then shows the English, which is the same text.
   */
-  if (en.trim().length > 2 && out.trim() === en.trim() && !untranslatable(en)) return fail(key, `${path} identical to English`);
+  if (en.trim().length > 2 && out.trim() === en.trim() && !untranslatable(en) && !cognate(en)) return fail(key, `${path} identical to English`);
   if (locale === "ja" ? HAN_RUN.test(out) : HAN.test(out)) return fail(key, `${path} has Chinese characters`);
   if (EASTERN_DIGITS.test(out)) return fail(key, `${path} uses Eastern Arabic digits`);
   if (BIDI.test(out)) return fail(key, `${path} carries a bidi control`);
