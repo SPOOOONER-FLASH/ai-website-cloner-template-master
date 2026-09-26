@@ -283,12 +283,12 @@ export function ProductDetail({ product, categoryName, locale = "en" }: ProductD
     another language's, and never a half-translated one. All three are filled in as of
     2026-09-17 (216/216 records each).
   */
-  const featureList =
-    locale === "en"
-      ? product.features
-      : locale === "pt"
-        ? product.featuresPt
-        : product.featuresEs;
+  /*
+    `tr` reads `featuresEs` / `featuresPt` and the overlay sidecar. The ternary it replaced
+    (2026-09-26) sent every overlay locale to `featuresEs`: French, German, Japanese… product
+    pages printed the Spanish bullets although their own were in content/i18n/<code>/products.json.
+  */
+  const featureList = tr(product, "features", locale);
 
   const faqItems = productFaqItems(product, locale);
 
