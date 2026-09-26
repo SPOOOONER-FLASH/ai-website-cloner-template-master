@@ -12,8 +12,8 @@
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 17:58 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `881e5f83be3` |
-| 17:57 | 中立 | 七语种产品 seoTitle / seoDescription：生成器扩到 fr de ja ko tr ru ar（3,647 条） | `7f441723dbf` |
+| 18:02 | HYDE | Merge remote-tracking branch 'origin/main' into claude-spec-work | `b90728ac8c1` |
+| 18:01 | 中立 | 英文规格值修四处；N 不是多余的代号；还原文案字段做成脚本 | `e75b239637a` |
 | 17:54 | 中立 | 目标清单：#55–#57 | `c74fdc911a7` |
 | 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `8d9485369d2` |
 | 17:53 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `65285e19984` |
