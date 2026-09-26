@@ -115,3 +115,15 @@
 - `41368600df7` 七语种：指南第二批（fr/ko/tr/ar 30，ru 20，ja 18，de 10）；术语表删两个死键
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:37:02 · 三次推送失败
+
+原因：旁路合并也失败：hint: before pushing again. / hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+未推送的提交：
+
+- `d5495ddb726` Merge remote-tracking branch 'origin/main' into claude-spec-work
+- `21aeafe584e` shiplog: 更新上线存档
+- `73de868825d` 门叶数量统一为 de dos hojas / de duas folhas（含七处复合值）；葡语补上大小写折叠
+
+下一次 `npm run ship` 成功时这些会一起推上去。
