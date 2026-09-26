@@ -6,13 +6,14 @@
 「推送」不等于「已上线」：服务器每 5 分钟拉一次；源码提交要等下一次「发布」提交才出现在网站上。
 推送失败、还没上去的，记在 [PUSH-PENDING.md](PUSH-PENDING.md)。
 
-最近 30 天 · 共 622 次提交
+最近 30 天 · 共 623 次提交
 
 ## 2026-09-25
 
 | 时间 | 哪一边 | 做了什么 | 提交 |
 |---|---|---|---|
-| 18:06 | 中立 | DS05、AR4-1121 标题随规格修正重跑（ф→Ø、背距补单位）；目标清单 #57 | `4e3abe0717d` |
+| 18:07 | 中立 | Merge remote-tracking branch 'origin/main' into claude/copy | `a50725f2107` |
+| 18:07 | HYDE | 计数随移类更新：五金配件 71、锁体 57、推杠 47；推杠指南改写顺序器所在类目，三语 | `9522d3c3875` |
 | 18:05 | 中立 | Merge remote-tracking branch 'origin/main' into HEAD | `3a8ea5f05ef` |
 | 18:05 | HYDE | DSL02、DC01、HY-0SS 改名改 slug、301、移类（文案会话定名后） | `3f729ee4850` |
 | 17:58 | HYDE | Merge remote-tracking branch 'origin/main' into HEAD | `881e5f83be3` |
