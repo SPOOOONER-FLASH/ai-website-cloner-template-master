@@ -64,7 +64,7 @@ downloads、finishes、model-lookup、glossary、documents、faq、certification
 - [ ] M6 指南 44 篇 × 7。
 - [x] M7 应用案例 5 篇 × 7（09-25 合入）；首页文案与下载中心走 ui.json（M3 已含）。
 - [x] M4b 材质一致性校验（09-25）：`i18n-batch` 产品作业带 `material`，`i18n-merge` 用 `scripts/lib/i18n-material.mjs` 拒绝「摘要提到别的金属却从不提本品材质」的译文（只查 summary；description 的模板句嵌类目名是英文源的问题，已转文案会话）。首轮跑出 42 条——8 条「颜色当材质」产品的摘要丢了 Zinc alloy——已重译。
-- [ ] M8 母语抽查（阿、土、俄、日、韩）与页面级英文残留清零；Search Console 提交。
+- [ ] M8 母语抽查（阿、土、俄、日、韩）进行中（09-25 派出五个母语审校子代理，直接改 overlay，`scripts/i18n-lint.mjs` 守门）；页面级英文残留以发布会话的审计为准；Search Console 步骤已写进 CLIENT-RUNBOOK 首屏。
 
 ## 五、分工与守门
 

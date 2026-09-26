@@ -1,11 +1,11 @@
 {
   "bathroom-accessories": {
     "name": "Banyo aksesuarları",
-    "summary": "Çoğu paslanmaz çelik banyo aksesuarları; kaplaması kapı aksesuarıyla uyumlu."
+    "summary": "Banyo aksesuarları; yayımlanan modellerin çoğu paslanmaz çeliktir."
   },
   "brass-steel-hinges": {
     "name": "Pirinç ve çelik kapı menteşeleri",
-    "summary": "Mimari kapı uygulamaları için pirinç, paslanmaz çelik ve çelik menteşe serileri; bilyalı ve düz yataklı."
+    "summary": "Mimari kapı uygulamaları için pirinç, paslanmaz çelik ve çelik menteşe serileri."
   },
   "care-grab-bars": {
     "name": "Tutunma barları",
@@ -26,7 +26,7 @@
   },
   "deadbolts": {
     "name": "Sürgü kilitler (deadbolt)",
-    "summary": "25 mm sürgü çıkışlı, testereye dayanıklı makara pimli, 60 veya 70 mm backset'li tek ve çift silindirli sürgü kilitler."
+    "summary": "25 mm sürgü çıkışlı, testere kesimine karşı makara takviyeli, 60/70 mm ayarlanabilir backset'li tek ve çift silindirli sürgü kilitler."
   },
   "door-closers": {
     "name": "Kapı kapatıcılar",
@@ -81,7 +81,7 @@
   },
   "hardware-accessories": {
     "name": "Yardımcı aksesuarlar",
-    "summary": "Kapı dürbünleri, stoperler, kablo transfer elemanları, sürgüler, boş/dolu göstergeleri, diller ve emniyet zincirleri.",
+    "summary": "Kapı dürbünleri, stoperler, kablo transfer elemanları, sürgüler, boş/dolu göstergeleri, kilit dilleri ve emniyet zincirleri.",
     "children": {
       "armoured-lock-covers": {
         "name": "Zırhlı kilit koruyucuları"
@@ -105,7 +105,7 @@
         "name": "Boş/dolu göstergeleri"
       },
       "latches": {
-        "name": "Diller"
+        "name": "Kilit dilleri"
       },
       "security-door-guards": {
         "name": "Kapı emniyet zincirleri"
@@ -119,7 +119,7 @@
   },
   "knob-locks": {
     "name": "Topuzlu kilitler",
-    "summary": "Giriş, mahremiyet (banyo), geçiş ve komünikasyon fonksiyonlu silindirik ve tübüler topuzlu kilitler.",
+    "summary": "Giriş, mahremiyet (banyo), geçiş ve ara kapı fonksiyonlu silindirik ve tübüler topuzlu kilitler.",
     "children": {
       "commercial-locks": {
         "name": "Ticari kilitler"
@@ -145,7 +145,7 @@
   },
   "lever-handles": {
     "name": "Kapı kolları",
-    "summary": "Giriş, banyo ve geçiş kapıları için çoğu zamak (çinko alaşım) tübüler kapı kolu takımları; uyumlu dilleri ve karşılıklarıyla."
+    "summary": "Giriş, mahremiyet (banyo) ve geçiş kapıları için, çoğu zamak (çinko alaşımı) tübüler kapı kolu takımları; 60/70 mm backset'li, sürgü kilitlerle aynı anahtara göre yapılabilir."
   },
   "lock-cases": {
     "name": "Kilit gövdeleri",
@@ -157,7 +157,7 @@
   },
   "night-latches-rim-locks": {
     "name": "Gece kilitleri ve sıva üstü kilitler",
-    "summary": "Sıva üstü gece kilitleri ve rim kilitler; çoğu 60 mm backset ile tek silindir deliğinden monte edilir."
+    "summary": "Sıva üstü gece kilitleri ve kilitler; çoğu 60 mm backset'lidir ve mevcut kapıdaki tek bir silindir deliğinden monte edilir."
   },
   "panic-exit-devices": {
     "name": "Panik çıkış cihazları",
@@ -191,7 +191,7 @@
   },
   "stainless-steel-handles": {
     "name": "Paslanmaz çelik kapı kolları",
-    "summary": "35–50 mm kapılar için 9000 serisi dahil paslanmaz çelik kapı kolları ve gizli sürme kapı kolu.",
+    "summary": "35–50 mm kalınlığındaki kapılar için 9000 serisi dahil paslanmaz çelik kapı kolları ve gizli sürme kapı kolu.",
     "children": {
       "brass-pull-handles": {
         "name": "Pirinç çekme kolları"

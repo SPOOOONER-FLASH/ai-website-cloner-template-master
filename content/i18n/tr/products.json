@@ -1988,7 +1988,7 @@
       "Uzunluk kapı genişliğine göre ayarlanabilir",
       "Birden fazla renkte mevcuttur",
       "Tek noktadan kilitleme mekanizması",
-      "Yönlü veya yönsüz montaja uygun"
+      "Yönlü veya yön bağımsız montaja uygun"
     ],
     "specs": [
       {
@@ -2419,7 +2419,7 @@
     "features": [
       "Başlıca özellikler:",
       "İki noktadan kilitleme sistemi",
-      "Geleneksel Avrupa tasarımı, yönsüz",
+      "Geleneksel Avrupa tasarımı, yön bağımsız",
       "Kare mil: 8 × 8 mm veya 9 × 9 mm",
       "Yangın dayanımlı çift kanatlı kapılar için uygun"
     ],
@@ -2461,7 +2461,7 @@
     "features": [
       "Başlıca özellikler:",
       "3 noktadan kilitleme sistemi",
-      "Geleneksel Avrupa tasarımı, yönsüz",
+      "Geleneksel Avrupa tasarımı, yön bağımsız",
       "Kare mil: 8 × 8 mm veya 9 × 9 mm"
     ],
     "specs": [
@@ -3125,7 +3125,7 @@
       },
       {
         "label": "Minimum order",
-        "value": "1000 adet"
+        "value": "1.000 adet"
       }
     ],
     "seoTitle": "564 Gece Kilidi ve Sıva Üstü Kilit, zamak (çinko alaşımı) | Canton Hyland",
@@ -3396,19 +3396,19 @@
       },
       {
         "label": "Carton size",
-        "value": "30.2×26×40.4"
+        "value": "30,2 × 26 × 40,4"
       },
       {
         "label": "Carton volume",
-        "value": "0.0317"
+        "value": "0,0317"
       },
       {
         "label": "Gross weight",
-        "value": "19.6"
+        "value": "19,6"
       },
       {
         "label": "Net weight",
-        "value": "18.6"
+        "value": "18,6"
       }
     ],
     "seoTitle": "5688 Gece Kilidi ve Sıva Üstü Kilit, 100×100mm, demir gövde | Canton Hyland",
@@ -3497,19 +3497,19 @@
       },
       {
         "label": "Carton size",
-        "value": "30.2×26×40.4"
+        "value": "30,2 × 26 × 40,4"
       },
       {
         "label": "Carton volume",
-        "value": "0.0317"
+        "value": "0,0317"
       },
       {
         "label": "Gross weight",
-        "value": "19.6"
+        "value": "19,6"
       },
       {
         "label": "Net weight",
-        "value": "18.6"
+        "value": "18,6"
       }
     ],
     "seoTitle": "5689 Gece Kilidi ve Sıva Üstü Kilit, 100×100mm, demir gövde | Canton Hyland",
@@ -4047,7 +4047,7 @@
   },
   "5807-sscl-commercial-lock": {
     "name": "Ticari Kilit",
-    "summary": "304/201 paslanmaz çelik topuzlu kilit, komünikasyon kilidi fonksiyonu.",
+    "summary": "304/201 paslanmaz çelik topuzlu kilit, ara kapı kilidi fonksiyonu.",
     "features": [
       "Emniyet dilli",
       "Anahtar veya çevirmeli topuzla çalışır",
@@ -4060,7 +4060,7 @@
       },
       {
         "label": "Function",
-        "value": "KOMÜNİKASYON KİLİDİ"
+        "value": "ARA KAPI KİLİDİ"
       },
       {
         "label": "Finish",
@@ -4121,7 +4121,7 @@
     "name": "Ticari Kilit",
     "summary": "304/201 paslanmaz çelik topuzlu kilit, çıkış dili fonksiyonu.",
     "features": [
-      "Tek taraftan kullanılan komünikasyon veya çıkış kapıları için ideal",
+      "Tek taraftan kullanılan ara kapı veya çıkış kapıları için ideal",
       "Anahtar panellerinin yakınında dar alanı olan kapılara uygun",
       "Emniyet dilli",
       "Silindirsiz kör rozet tasarımı",
@@ -5270,7 +5270,7 @@
   },
   "5870-sscc-commercial-lock": {
     "name": "Ticari Kilit",
-    "summary": "304/201 paslanmaz çelik topuzlu kilit, giriş ve komünikasyon fonksiyonu.",
+    "summary": "304/201 paslanmaz çelik topuzlu kilit, giriş ve ara kapı fonksiyonu.",
     "features": [
       "Dil dışarıdan anahtarla veya içeriden topuzla çalışır",
       "Dış topuz sabit kalır",
@@ -5284,7 +5284,7 @@
       },
       {
         "label": "Function",
-        "value": "Giriş ve komünikasyon"
+        "value": "Giriş ve ara kapı"
       },
       {
         "label": "Finish",
@@ -6344,7 +6344,7 @@
         "value": "180 derece"
       }
     ],
-    "summary": "201 / 304 paslanmaz çelik kapı menteşesi, 6*3*3mm (ölçüye göre üretilebilir).",
+    "summary": "201 / 304 paslanmaz çelik kapı menteşesi, 6 × 3 × 3 mm (ölçüye göre üretilebilir).",
     "seoTitle": "6*3*3mm Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "6*3*3mm Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -7314,7 +7314,7 @@
       "Ekonomik ve kolay monte edilen kilit takımı, konut kullanımı için ideal",
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil gövdesi",
-      "Görünür trim dövme paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar dövme paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "6491ABET Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "6491ABET Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -7611,7 +7611,7 @@
       "Kolay montaj:",
       "– Standart 2\" (51 mm) ana deliğe uyar",
       "– Ayarlanabilir backset: 2-3/8\" veya 2-3/4\" (60 mm veya 70 mm)",
-      "– Yönsüz tasarım; sağ ve sol kapılara uygun",
+      "– Yön bağımsız tasarım; sağ ve sol kapılara uygun",
       "– Kapı kalınlığı: 1-3/8\" – 1-3/4\" (35–45 mm) arası ayarlanabilir",
       "Genel bilgi:"
     ],
@@ -9186,7 +9186,7 @@
       "Anahtar veya çevirme düğmesiyle kilitleme/açma",
       "Her iki kol eşzamanlı kilitlenir",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "816 PBET Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "816 PBET Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -9434,7 +9434,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "853 SNBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "853 SNBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -9496,7 +9496,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "853 SSBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "853 SSBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -9650,7 +9650,7 @@
       "Anahtar veya çevirme düğmesiyle her iki kol kilitlenir ve açılır",
       "Çevirme düğmesi saat yönünün tersine ya da anahtar saat yönünde çevrildiğinde kollar kilitlenir; açmak için ters yönde çevirin",
       "Daha yüksek korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "8826 SNBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "8826 SNBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -9712,7 +9712,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "8826 SNET Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "8826 SNET Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -9945,7 +9945,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -9976,7 +9976,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10007,7 +10007,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10062,7 +10062,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10093,7 +10093,7 @@
     "summary": "53 mm kare rozet üzerinde 135 mm kollu paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10148,7 +10148,7 @@
     "summary": "53 mm rozet üzerinde 130 mm kollu paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10203,7 +10203,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10234,7 +10234,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10301,7 +10301,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10356,7 +10356,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10387,7 +10387,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10434,7 +10434,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10465,7 +10465,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10496,7 +10496,7 @@
     "summary": "Saten paslanmaz çelik (US32D) kaplamalı paslanmaz çelik kapı kolu; pirinç silindire hazır, mahremiyet (banyo) fonksiyonu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10535,7 +10535,7 @@
     "summary": "Saten paslanmaz çelik (US32D) kaplamalı paslanmaz çelik kapı kolu, giriş fonksiyonu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10574,7 +10574,7 @@
     "summary": "53 mm rozet üzerinde 135 mm kollu paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10629,7 +10629,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10660,7 +10660,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10691,7 +10691,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10722,7 +10722,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -10753,7 +10753,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -11122,9 +11122,9 @@
         "value": "90-180°"
       }
     ],
-    "summary": "Pirinç kapı menteşesi; 2.0–3.5 mm kalınlık, 90–180 derece açılma. Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre.",
+    "summary": "Pirinç kapı menteşesi; 2,0–3,5 mm kalınlık, 90–180 derece açılma. Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre.",
     "features": [
-      "Pirinç kanatlar, 2.0–3.5 mm kalınlıkta",
+      "Pirinç kanatlar, 2,0–3,5 mm kalınlıkta",
       "90 ila 180 derece açılır",
       "Parlak pirinç, saten pirinç, antik pirinç, antik bakır veya krom kaplama; diğer kaplamalar siparişe göre"
     ],
@@ -13019,7 +13019,7 @@
         "value": "Siyah (BL)"
       }
     ],
-    "summary": "Demir kapı menteşesi, 3.5\"x2.28\"x1.6MM.",
+    "summary": "Demir kapı menteşesi, 3,5\" × 2,28\" × 1,6 mm.",
     "seoTitle": "BL027 Pirinç ve Çelik Menteşeler, demir | Canton Hyland",
     "seoDescription": "BL027 Pirinç ve Çelik Menteşeler: demir. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -13054,7 +13054,7 @@
         "value": "90-180°"
       }
     ],
-    "summary": "304/201 paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM.",
+    "summary": "304/201 paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "seoTitle": "BL028 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "BL028 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -13173,7 +13173,7 @@
       },
       {
         "label": "Thickness",
-        "value": "3.3 mm"
+        "value": "3,3 mm"
       },
       {
         "label": "Function",
@@ -13311,7 +13311,7 @@
         "value": "Pencere bağlantısı"
       }
     ],
-    "summary": "Zamak / 304 paslanmaz çelik kapı menteşesi; 34*140*28mm / 28*118*22mm / 25*118*18mm / 19*95*13mm / 16*70*11mm ölçüleri.",
+    "summary": "Zamak / 304 paslanmaz çelik kapı menteşesi; 34 × 140 × 28 mm / 28 × 118 × 22 mm / 25 × 118 × 18 mm / 19 × 95 × 13 mm / 16 × 70 × 11 mm ölçülerinde.",
     "seoTitle": "CH01 Pirinç ve Çelik Menteşeler, 34×140×28mm | Canton Hyland",
     "seoDescription": "CH01 Pirinç ve Çelik Menteşeler: 34×140×28mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -13402,7 +13402,7 @@
       "5 pimli sistem, anahtar değişimi kolay",
       "Masif pirinç göbek, iki adet nikel kaplı pirinç anahtar dahil",
       "Opsiyonel konfigürasyon: tek veya çift silindir",
-      "Yönsüz; sağ ve sol kapılara uygun",
+      "Yön bağımsız; sağ ve sol kapılara uygun",
       "Siparişte yön belirtmeye gerek yok, sahada çevrilebilir",
       "Standart ahşap veya metal kapılarla uyumlu",
       "Geniş bir kapı kalınlığı ve backset aralığına ayarlanabilir"
@@ -13553,7 +13553,7 @@
       "5 pimli sistem, anahtar değişimi kolay",
       "Masif pirinç göbek, iki adet nikel kaplı pirinç anahtar dahil",
       "Opsiyonel konfigürasyon: tek veya çift silindir",
-      "Yönsüz; sağ ve sol kapılara uygun",
+      "Yön bağımsız; sağ ve sol kapılara uygun",
       "Siparişte yön belirtmeye gerek yok, sahada çevrilebilir",
       "Standart ahşap veya metal kapılarla uyumlu",
       "Geniş bir kapı kalınlığı ve backset aralığına ayarlanabilir"
@@ -14093,7 +14093,7 @@
     }
   },
   "dc01-door-coordinator": {
-    "name": "Kapı Kapanma Sıralayıcı",
+    "name": "Kapı Kapanma Sıralayıcısı",
     "features": [
       "Çinko kaplamalı yüksek kaliteli demir yapı; korozyona çok dayanıklıdır ve uzun ömürlüdür. Uzun süreli ticari ve endüstriyel kullanıma uygundur."
     ],
@@ -14115,9 +14115,9 @@
         "value": "Sıva üstü, vidalı sabitleme"
       }
     ],
-    "summary": "Çift kanatlı yangın kapıları için çinko kaplı demir kapı kapanma sıralayıcı; yüzeye monte, vidalı sabitleme, kapanma hızını ve kuvvetini kontrol eder.",
-    "seoTitle": "DC01 Kapı Kapanma Sıralayıcı | Canton Hyland",
-    "seoDescription": "DC01 Kapı Kapanma Sıralayıcı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "summary": "Çift kanatlı yangın kapıları için çinko kaplı demir kapı kapanma sıralayıcısı; yüzeye monte, vidalı sabitleme, kapanma hızını ve kuvvetini kontrol eder.",
+    "seoTitle": "DC01 Kapı Kapanma Sıralayıcısı | Canton Hyland",
+    "seoDescription": "DC01 Kapı Kapanma Sıralayıcısı. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "2e994abccdba",
       "summary": "84bd5e3d91b8",
@@ -14127,10 +14127,10 @@
     }
   },
   "dc02-door-coordinator": {
-    "name": "Kapı Kapanma Sıralayıcı",
-    "summary": "Çinko kaplı çelik kapı kapanma sıralayıcı.",
+    "name": "Kapı Kapanma Sıralayıcısı",
+    "summary": "Çinko kaplı çelik kapı kapanma sıralayıcısı.",
     "features": [
-      "Bu mekanik kapanma sıralayıcı çift kanatlı kapı sistemleri için tasarlanmıştır. Doğru kapanma sırasını kontrol eder: önce pasif kanat, ardından aktif kanat kapanır."
+      "Bu mekanik kapanma sıralayıcısı çift kanatlı kapı sistemleri için tasarlanmıştır. Doğru kapanma sırasını kontrol eder: önce pasif kanat, ardından aktif kanat kapanır."
     ],
     "specs": [
       {
@@ -14186,8 +14186,8 @@
         "value": "Mevcut"
       }
     ],
-    "seoTitle": "DC02 Kapı Kapanma Sıralayıcı, 397×120mm | Canton Hyland",
-    "seoDescription": "DC02 Kapı Kapanma Sıralayıcı: 397×120mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "seoTitle": "DC02 Kapı Kapanma Sıralayıcısı, 397×120mm | Canton Hyland",
+    "seoDescription": "DC02 Kapı Kapanma Sıralayıcısı: 397×120mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "2e994abccdba",
       "summary": "a0b3fec5fde0",
@@ -14461,9 +14461,9 @@
     }
   },
   "dsl02-door-coordinator": {
-    "name": "Kapı Kapanma Sıralayıcı",
+    "name": "Kapı Kapanma Sıralayıcısı",
     "features": [
-      "Bu çift kanat kapanma sıralayıcı, yangın dayanımlı ve ticari çift kanatlı kapı sistemleri için tasarlanmıştır.",
+      "Bu çift kanat kapanma sıralayıcısı, yangın dayanımlı ve ticari çift kanatlı kapı sistemleri için tasarlanmıştır.",
       "Dayanıklı 304 paslanmaz çelikten üretilir; kanatları yumuşak, kararlı ve sessiz biçimde otomatik sıralar.",
       "Hassas yay mekanizması ve ayarlanabilir gerginlik vidası kapanma kuvvetini esnek biçimde kontrol eder; naylon makara tasarımı aşınmayı azaltır ve ömrü uzatır.",
       "Ticari binalar, hastaneler, okullar ve diğer yoğun kullanılan yerler için idealdir. OEM ve ODM özelleştirme hizmeti sunulur."
@@ -14494,9 +14494,9 @@
         "value": "Naylon"
       }
     ],
-    "summary": "Çift kanatlı kapılar için 304 paslanmaz çelik kapı kapanma sıralayıcı; ayarlanabilir kapanma kuvveti ve naylon makaralar.",
-    "seoTitle": "DSL02 Kapı Kapanma Sıralayıcı, paslanmaz çelik 304 | Canton Hyland",
-    "seoDescription": "DSL02 Kapı Kapanma Sıralayıcı: paslanmaz çelik 304. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
+    "summary": "Çift kanatlı kapılar için 304 paslanmaz çelik kapı kapanma sıralayıcısı; ayarlanabilir kapanma kuvveti ve naylon makaralar.",
+    "seoTitle": "DSL02 Kapı Kapanma Sıralayıcısı, paslanmaz çelik 304 | Canton Hyland",
+    "seoDescription": "DSL02 Kapı Kapanma Sıralayıcısı: paslanmaz çelik 304. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
       "name": "2e994abccdba",
       "summary": "3a4c7ce2c18a",
@@ -15342,7 +15342,7 @@
       },
       {
         "label": "Weight",
-        "value": "1.25"
+        "value": "1,25"
       },
       {
         "label": "Function",
@@ -15350,11 +15350,11 @@
       },
       {
         "label": "Width",
-        "value": "0.88”"
+        "value": "0,88”"
       },
       {
         "label": "Depth",
-        "value": "0.67”"
+        "value": "0,67”"
       },
       {
         "label": "Hardware Finish",
@@ -16401,7 +16401,7 @@
   "glass-door-patch-fitting-set": {
     "name": "Cam Kapı Patch Fitting Seti",
     "summary": "Çerçevesiz temperli cam kapılar için paslanmaz çelik patch fitting seti; uyumlu pivotlar ve kapak plakalarıyla.",
-    "description": "Glass Door Patch Fitting Set model cam kapı patch fitting seti, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
+    "description": "Bu cam kapı patch fitting seti, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
     "seoTitle": "Cam Kapı Patch Fitting Seti, paslanmaz çelik | Canton Hyland",
@@ -16519,12 +16519,12 @@
     }
   },
   "hy-0ss-latch-guard": {
-    "name": "Mandal Koruma Plakası",
-    "summary": "Dışa açılan kapılar için 304 paslanmaz çelik mandal koruma plakası; mandalı kapatarak kanırtmaya karşı direnç sağlar. Avustralya pazarı için üretilmiştir ve 304 paslanmaz çelik vidalarla birlikte sunulur.",
+    "name": "Dil Koruma Plakası",
+    "summary": "Dışa açılan kapılar için 304 paslanmaz çelik dil koruma plakası; dili kapatarak kanırtmaya karşı direnç sağlar. Avustralya pazarı için üretilmiştir ve 304 paslanmaz çelik vidalarla birlikte sunulur.",
     "features": [
-      "Paslanmaz çelik kapı mandalı koruyucu; saten yüzeyli dayanıklı malzeme, uzun süreli kullanım için sağlam ve korozyona dayanıklı",
-      "Kanırtmaya karşı kapı güvenlik plakası; mandal bölgesini güçlendirerek zorla girişi önler ve kapı güvenliğini artırır",
-      "Mandalı tamamen kaplayan tasarım; mandal diline erişimi etkili biçimde engeller ve kapının kanırtılarak açılmasını zorlaştırır",
+      "Paslanmaz çelik kapı dili koruyucu; saten yüzeyli dayanıklı malzeme, uzun süreli kullanım için sağlam ve korozyona dayanıklı",
+      "Kanırtmaya karşı kapı güvenlik plakası; dil bölgesini güçlendirerek zorla girişi önler ve kapı güvenliğini artırır",
+      "Dili tamamen kaplayan tasarım; kilit diline erişimi etkili biçimde engeller ve kapının kanırtılarak açılmasını zorlaştırır",
       "Ağır hizmet tipi yapı; kalın ve sağlam gövde, konut ve ticari kapılar için güvenilir koruma sağlar",
       "Kolay montaj; hızlı vidalı sabitleme ile karmaşık aletler gerektirmeden çoğu dışa açılan kapıya uygundur",
       "304 paslanmaz çelik vidalar dahildir; sağlam sabitleme ve uzun ömürlü dayanıklılık sağlar",
@@ -16576,8 +16576,8 @@
       "features": "062bec979323",
       "specs": "0e4ad1d41006"
     },
-    "seoTitle": "HY-0SS Mandal Koruma Plakası, 304 paslanmaz çelik | Canton Hyland",
-    "seoDescription": "HY-0SS Mandal Koruma Plakası: 304 paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine."
+    "seoTitle": "HY-0SS Dil Koruma Plakası, 304 paslanmaz çelik | Canton Hyland",
+    "seoDescription": "HY-0SS Dil Koruma Plakası: 304 paslanmaz çelik. Fabrikadan doğrudan; numune ve teklif talep üzerine."
   },
   "hy006dk-lock-case": {
     "name": "Kilit Gövdesi",
@@ -16587,9 +16587,9 @@
       "• Anahtarın yumuşak dönmesi için Amerikan tipi pirinç silindir",
       "• Farklı kapı gereksinimleri için çeşitli sürgü seçenekleri",
       "• Temiz görünüm ve güvenli montaj için gizli yapı",
-      "• Alüminyum dar kapılar ve ticari kapı sistemleri için uygun",
+      "• Alüminyum dar profilli kapılar ve ticari kapı sistemleri için uygun",
       "• OEM / ODM özelleştirme yapılabilir",
-      "Bu gizli kilit gövdesi alüminyum dar kapılar ve ticari uygulamalar için tasarlanmıştır.",
+      "Bu gizli kilit gövdesi alüminyum dar profilli kapılar ve ticari uygulamalar için tasarlanmıştır.",
       "Amerikan tipi pirinç silindir ve dayanıklı demir kilit gövdesiyle kararlı performans, yumuşak çalışma ve uzun ömür sunar.",
       "Fast food restoran girişleri dahil alüminyum ve dar çerçeveli kapılarda yaygın olarak kullanılır."
     ],
@@ -16641,9 +16641,9 @@
       "• Anahtarın yumuşak dönmesi için Amerikan tipi pirinç silindir",
       "• Farklı kapı gereksinimleri için çeşitli sürgü seçenekleri",
       "• Temiz görünüm ve güvenli montaj için gizli yapı",
-      "• Alüminyum dar kapılar ve ticari kapı sistemleri için uygun",
+      "• Alüminyum dar profilli kapılar ve ticari kapı sistemleri için uygun",
       "• OEM / ODM özelleştirme yapılabilir",
-      "Bu gizli kilit gövdesi alüminyum dar kapılar ve ticari uygulamalar için tasarlanmıştır.",
+      "Bu gizli kilit gövdesi alüminyum dar profilli kapılar ve ticari uygulamalar için tasarlanmıştır.",
       "Amerikan tipi pirinç silindir ve dayanıklı demir kilit gövdesiyle kararlı performans, yumuşak çalışma ve uzun ömür sunar.",
       "Fast food restoran girişleri dahil alüminyum ve dar çerçeveli kapılarda yaygın olarak kullanılır."
     ],
@@ -16949,7 +16949,7 @@
         "value": "Zamak veya pirinç; iki anahtar"
       }
     ],
-    "summary": "40 mm backset ve 25 × 140 mm alın plakalı kancalı dil gömme kilit gövdesi; iki anahtarla birlikte verilir.",
+    "summary": "40 mm backset ve 25 × 140 mm alın plakalı, kancalı sürgülü gömme kilit gövdesi; iki anahtarla birlikte verilir.",
     "seoTitle": "AR4-1121 Kancalı Gömme Kilit | Canton Hyland",
     "seoDescription": "AR4-1121 Kancalı Gömme Kilit. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -19080,7 +19080,7 @@
     "summary": "SSS/PSS kaplamalı paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -19131,7 +19131,7 @@
     "summary": "Saten paslanmaz çelik (US32D) kaplamalı paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -19190,7 +19190,7 @@
     "summary": "Saten paslanmaz çelik (US32D) kaplamalı paslanmaz çelik kapı kolu, pirinç silindire hazır.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -19350,7 +19350,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
       "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik dil ve şasi",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH852 BNBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH852 BNBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19428,7 +19428,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
       "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik dil ve şasi",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH852 BNET Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH852 BNET Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19506,7 +19506,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
       "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik dil ve şasi",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH852 BNPS Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH852 BNPS Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19584,7 +19584,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu eşzamanlı kilitler/açar",
       "Kilitleme: çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik dil ve şasi",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH852 GMBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH852 GMBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19650,7 +19650,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH853 CPBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH853 CPBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19716,7 +19716,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH853 CPPS Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH853 CPPS Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19782,7 +19782,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH853 SNBK Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH853 SNBK Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19848,7 +19848,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH853 SNET Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH853 SNET Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -19914,7 +19914,7 @@
       "Anahtar veya çevirme düğmesi her iki kolu kilitler/açar",
       "Kilitlemek için çevirme düğmesini saat yönünün tersine veya anahtarı saat yönünde çevirin; açmak için ters yönde çevirin",
       "Korozyon direnci için çinko kaplı çelik şasi ve dil",
-      "Görünür trim paslanmaz çelik veya pirinç olarak mevcuttur"
+      "Görünen dış parçalar paslanmaz çelik veya pirinç olarak mevcuttur"
     ],
     "seoTitle": "LH853 SNPS Kapı Kolu, zamak (çinko alaşımı) | Canton Hyland",
     "seoDescription": "LH853 SNPS Kapı Kolu: zamak (çinko alaşımı). Fabrikadan doğrudan; numune ve teklif talep üzerine.",
@@ -20285,7 +20285,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20316,7 +20316,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20347,7 +20347,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20378,7 +20378,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20409,7 +20409,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20440,7 +20440,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20487,7 +20487,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20518,7 +20518,7 @@
     "summary": "Pirinç silindire hazır paslanmaz çelik kapı kolu.",
     "features": [
       "Genel bilgi:",
-      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılı ölçüler için ihracat ekibimize yazın."
+      "Malzeme sertifikalı, yüksek kaliteli 304 paslanmaz çelikten üretilen bu kapı kolu, modern giriş kapısı kilitleri için idealdir. Ayrıntılar için bize ulaşın."
     ],
     "specs": [
       {
@@ -20948,7 +20948,7 @@
         "value": "4,0\" × 3,0\" × 2,0 mm"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 4.0''x3.0''x2.0mm.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 4,0\" × 3,0\" × 2,0 mm.",
     "seoTitle": "SS027 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "SS027 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -20972,7 +20972,7 @@
         "value": "4,0\" × 3,0\" × 2,0 mm"
       }
     ],
-    "summary": "304 paslanmaz çelik kapı menteşesi, 4.0''x3.0''x2.0mm.",
+    "summary": "304 paslanmaz çelik kapı menteşesi, 4,0\" × 3,0\" × 2,0 mm.",
     "seoTitle": "SSH011 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "SSH011 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21100,7 +21100,7 @@
         "value": "2 × 2 × 2"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 2x2x2.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 2 × 2 × 2.",
     "seoTitle": "SSH015 Pirinç ve Çelik Menteşeler, 2×2×2mm | Canton Hyland",
     "seoDescription": "SSH015 Pirinç ve Çelik Menteşeler: 2×2×2mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21199,7 +21199,7 @@
         "value": "90°–180°"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "seoTitle": "SSH017 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "SSH017 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21235,7 +21235,7 @@
         "value": "Bilyasız / 2BB düz yatak (seçenekler mevcut)"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 102x72.5x2.5MM.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 102 × 72,5 × 2,5 mm.",
     "seoTitle": "SSH018 Pirinç ve Çelik Menteşeler, 102×72,5×2,5mm | Canton Hyland",
     "seoDescription": "SSH018 Pirinç ve Çelik Menteşeler: 102×72,5×2,5mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21271,7 +21271,7 @@
         "value": "Düz yatak / Bilyasız / 2BB (opsiyonel)"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 102x72.5x2.5MM.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 102 × 72,5 × 2,5 mm.",
     "seoTitle": "SSH019 Pirinç ve Çelik Menteşeler, 102×72,5×2,5mm | Canton Hyland",
     "seoDescription": "SSH019 Pirinç ve Çelik Menteşeler: 102×72,5×2,5mm. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21347,7 +21347,7 @@
         "value": "90-180°"
       }
     ],
-    "summary": "Paslanmaz çelik kapı menteşesi, 4\"x3\"x2.5MM.",
+    "summary": "Paslanmaz çelik kapı menteşesi, 4\" × 3\" × 2,5 mm.",
     "seoTitle": "SSH022 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "SSH022 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21401,7 +21401,7 @@
         "value": "180°"
       }
     ],
-    "summary": "201/304 paslanmaz çelik kapı menteşesi; 3.5”×3.5”×3.0mm / 4”×3”×3.0mm / 4”×4”×3.0mm (özel ölçü mümkündür).",
+    "summary": "201/304 paslanmaz çelik kapı menteşesi; 3,5\" × 3,5\" × 3,0 mm / 4\" × 3\" × 3,0 mm / 4\" × 4\" × 3,0 mm (özel ölçü mümkündür).",
     "seoTitle": "SSH023 Pirinç ve Çelik Menteşeler | Canton Hyland",
     "seoDescription": "SSH023 Pirinç ve Çelik Menteşeler. Fabrikadan doğrudan; numune ve teklif talep üzerine.",
     "sourceHash": {
@@ -21484,7 +21484,7 @@
   "stainless-steel-door-hinge": {
     "name": "Paslanmaz Çelik Kapı Menteşesi",
     "summary": "Ahşap ve metal mimari kapılar için köşeli paslanmaz çelik kelebek menteşe.",
-    "description": "Stainless Steel Door Hinge model paslanmaz çelik kapı menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
+    "description": "Bu paslanmaz çelik kapı menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
     "seoTitle": "Paslanmaz Çelik Kapı Menteşesi | Canton Hyland",
@@ -21528,7 +21528,7 @@
   "stainless-steel-glass-door-pull-handle": {
     "name": "Paslanmaz Çelik Cam Kapı Çekme Kolu",
     "summary": "Çerçevesiz cam kapılar ve ticari giriş kapıları için karşılıklı monte edilen borulu çekme kolu takımı.",
-    "description": "Stainless Steel Glass Door Pull Handle model paslanmaz çelik cam kapı çekme kolu, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
+    "description": "Bu paslanmaz çelik cam kapı çekme kolu, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
     "seoTitle": "Paslanmaz Çelik Cam Kapı Çekme Kolu | Canton Hyland",
@@ -21660,7 +21660,7 @@
   "wooden-door-floor-hinge": {
     "name": "Ahşap Kapı Yer Menteşesi",
     "summary": "Ahşap kapılar için gizli yer menteşesi; pivot braketleri, kapak plakaları ve üst pivot ile birlikte verilir.",
-    "description": "Wooden Door Floor Hinge model ahşap kapı yer menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
+    "description": "Bu ahşap kapı yer menteşesi, Canton Hyland Hardware (Group) Co., Ltd. tarafından Çin'in Guangdong eyaletinde üretilmektedir. Yukarıdaki fotoğraflar ürünün kendisine aittir. Bu modelin tam teknik özellikleri fabrikayla teyit ediliyor; ihracat ekibimize sorduğunuzda tahmini değil, ölçülmüş değerleri alırsınız.",
     "features": [],
     "specs": [],
     "seoTitle": "Ahşap Kapı Yer Menteşesi | Canton Hyland",

@@ -60,7 +60,7 @@ DV05/DV06 表面列表里多一个 "n"；DS05 用西里尔字母 ф 当直径符
   `src/data/generated/i18n-client/<code>.{json,tsx}`，由该语种根 layout 渲染 `<I18nClientBundle />` 注册到 `src/lib/i18n-client.ts` 的注册表：
   英西葡页零字节，新语种页只带本语种约 30 KB。首页 JS：en 773 KB，de 798，ar 804（预算 1,200）。
 - `/model-lookup/` 的客户端组件经 `lib/model-index.ts` 拖进整本目录 + 七语种覆盖层，chunk 17 MB。纯函数拆到 `src/lib/model-index-core.ts`。
-- 待办：sitemap 按语种拆索引（需先改 `scripts/lib/seo-audit.mjs` 解析）。
+- sitemap：`/sitemap.xml` 保持全量（十几个脚本和审计都读它），另加 `/<locale>/sitemap.xml`（`src/lib/locale-sitemap-xml.ts` 从同一份 `src/lib/site-sitemap.ts` 条目按前缀切片；七语种路由由 scaffold 生成，es/pt 手写），robots.txt 全部列出。按语种建的 Search Console 资源只能收其路径下的 sitemap，这就是给它的。
 
 **hreflang 互惠修复**：`(en|es|pt)/products/[category]/[slug]/page.tsx` 三处硬编码 en/es/pt 的 `languages` 改为 `alternateLanguages()`，
 否则七语种产品页指向英西葡而对方不指回，`scripts/seo-audit.test.mjs` 报 10,841 处 `hreflang-not-reciprocal`。
