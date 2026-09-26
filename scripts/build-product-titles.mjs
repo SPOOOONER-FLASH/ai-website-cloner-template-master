@@ -884,6 +884,22 @@ for (const loc of OVERLAY_LOCALES) {
     // Whole phrase: the Turkish glossary title-cases every word ("Paslanmaz Çelik").
     if (mat && LOWER_IN_SENTENCE.has(loc)) mat = String(mat).toLocaleLowerCase(loc);
     let dim = numericDimension(p);
+    /*
+      Lock cases: center distance and backset are the two numbers the buyer orders by (plan 7.2),
+      and neither is a "Size" row. Labels come from the locale's own glossary (Entraxe, Dornmaß,
+      芯々距離 …); without both labels and both figures the case falls back to the generic path.
+    */
+    if ([].concat(p.categoryPath ?? [])[0] === "lock-cases") {
+      const mm = (label) => (String(spec(p, label)?.value ?? "").match(/^(\d+(?:\.\d+)?)\s*mm$/i) ?? [])[1];
+      const c = mm("Center distance");
+      const b = mm("Backset");
+      const labels = glossary.specLabels ?? {};
+      if (c && b && labels["Center distance"] && labels["Backset"]) {
+        const soft = (s) => (LOWER_IN_SENTENCE.has(loc) ? String(s).toLocaleLowerCase(loc) : String(s));
+        const gap = loc === "ja" ? "" : " ";
+        dim = `${soft(labels["Center distance"])}${gap}${c}mm${sep}${soft(labels["Backset"])}${gap}${b}mm`;
+      }
+    }
     if (dim && COMMA_DECIMAL.has(loc)) dim = dim.replace(/(\d)\.(\d)/g, "$1,$2");
 
     let title = null;
