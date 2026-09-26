@@ -126,12 +126,24 @@ export function LocalePicker({ locale = "en" }: { locale?: Locale }) {
           mirror exists; where it does not, the link goes to that language's home page and
           the panel says so.
         */}
+        {/*
+          TEN CODES DO NOT FIT BESIDE THE WORDMARK ON A PHONE (2026-09-25).
+
+          With three languages the row was about 90px. With ten it is 380px, and on a 375px
+          phone it overflowed leftwards across the logo: Lighthouse measured the logo link's
+          clickable area at 181.7 × 9.5px, and a reader saw codes printed over the wordmark.
+          Below `lg` only the current code shows; the globe beside it opens the panel with
+          all ten. From `lg` up there is room, and the one-click links stay as they were.
+        */}
         <span className="flex items-center gap-4 text-c2 leading-none">
           {[...languages]
             .sort((a, b) => Number(a.current) - Number(b.current))
             .map((language, index) => (
-              <span key={language.code} className="flex items-center gap-4">
-                {index ? <span className="text-line">·</span> : null}
+              <span
+                key={language.code}
+                className={language.current ? "flex items-center gap-4" : "hidden items-center gap-4 lg:flex"}
+              >
+                {index ? <span className="hidden text-line lg:inline">·</span> : null}
                 {language.current ? (
                   <span aria-current="true" className="inline-flex min-h-24 items-center px-2 text-ink">
                     {language.code.toUpperCase()}
