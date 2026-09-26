@@ -92,3 +92,14 @@
 - `ea1b3550713` Cloudflare 报告处理：security.txt 上线、改名视频 18 条 301、手册 ⑥、AI 抓取数据进看板
 
 下一次 `npm run ship` 成功时这些会一起推上去。
+
+## 2026/9/25 18:47:38 · 三次推送失败
+
+原因：旁路合并也失败：真冲突，需要人看：CONFLICT (content): Merge conflict in docs/collaboration/SHIPLOG.md / Automatic merge failed; fix conflicts and then commit the result.
+
+未推送的提交：
+
+- `93f9e9ba618` shiplog: 更新上线存档
+- `71490f6047b` 七语种锁体标题带上中心距与背距（译名取自各语种 glossary.specLabels）
+
+下一次 `npm run ship` 成功时这些会一起推上去。
