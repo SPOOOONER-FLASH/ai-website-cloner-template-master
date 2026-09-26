@@ -115,7 +115,7 @@
     "JU-073"
   ],
   "seoTitle": "DC02 Door Coordinator, 397×120mm, Zinc-Plated Steel | Canton Hyland",
-  "seoDescription": "DC02 door coordinator for door hardware accessories. Zinc-Plated steel, 397×120mm. Factory direct, samples and quotation on request.",
+  "seoDescription": "DC02 door coordinator. Zinc-Plated steel, 397×120mm. Factory direct, samples and quotation on request.",
   "nameEs": "Selector de cierre",
   "specsEs": [
     {
@@ -171,8 +171,8 @@
       "value": "Disponible"
     }
   ],
-  "seoTitleEs": "DC02 Selector de cierre, 397×120mm, Acero zincado | Canton Hyland",
-  "seoDescriptionEs": "DC02 selector de cierre para accesorios de herraje de puerta. Acero zincado, 397×120mm. Directo de fábrica, muestras y cotización a pedido.",
+  "seoTitleEs": "DC02 Selector de cierre para puertas dobles, 397×120mm | Canton Hyland",
+  "seoDescriptionEs": "DC02 selector de cierre para puertas dobles. Acero zincado, 397×120mm. Directo de fábrica, muestras y cotización a pedido.",
   "videos": [
     {
       "src": "/videos/products/dc02-door-coordinator.mp4",
@@ -263,13 +263,21 @@
       "value": "Disponível"
     }
   ],
-  "seoTitlePt": "DC02 Coordenador de fechamento, 397×120mm, Aço zincado | Canton Hyland",
-  "seoDescriptionPt": "DC02 coordenador de fechamento para acessórios de ferragem de porta. Aço zincado, 397×120mm. Direto da fábrica, amostras e orçamento sob consulta.",
+  "seoTitlePt": "DC02 Coordenador de fechamento para portas duplas, 397×120mm | Canton Hyland",
+  "seoDescriptionPt": "DC02 coordenador de fechamento para portas duplas. Aço zincado, 397×120mm. Direto da fábrica, amostras e orçamento sob consulta.",
   "summaryEs": "Selector de cierre de acero zincado.",
   "featuresPt": [
     "Este coordenador mecânico foi projetado para sistemas de porta de duas folhas. Ele impõe a sequência correta de fechamento, garantindo que a folha passiva feche primeiro e a ativa depois."
   ],
   "featuresEs": [
     "Este selector de cierre mecánico está pensado para sistemas de puerta de dos hojas. Controla el orden de cierre correcto, de modo que la hoja pasiva cierra primero y la hoja activa después."
-  ]
+  ],
+  "positioning": {
+    "use": "Double Doors",
+    "useEs": "puertas dobles",
+    "usePt": "portas duplas",
+    "pitch": "Holds the active leaf open until the inactive leaf has closed, so a pair of doors shuts in the right order.",
+    "pitchEs": "Retiene la hoja activa hasta que cierra la pasiva, para que la puerta doble cierre en el orden correcto.",
+    "pitchPt": "Segura a folha ativa até a passiva fechar, para que a porta dupla feche na ordem certa."
+  }
 }

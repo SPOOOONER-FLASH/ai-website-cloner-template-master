@@ -86,8 +86,6 @@ test("empty sub-categories are known and stay hidden from the menu", () => {
   }
 
   // Update this list deliberately when the client supplies or removes products.
-  assert.deepEqual(empty.sort(), [
-    "hardware-accessories/armoured-lock-covers",
-    "knob-locks/wafer-locks",
-  ]);
+  // armoured-lock-covers left this list 2026-09-25: HY-0SS, a latch guard misfiled as a lock case, moved in.
+  assert.deepEqual(empty.sort(), ["knob-locks/wafer-locks"]);
 });

@@ -1,10 +1,10 @@
 {
   "model": "DC01",
-  "slug": "dc01-panic-exit-device",
+  "slug": "dc01-door-coordinator",
   "name": "Door Coordinator",
-  "series": "Panic Exit Device",
+  "series": "Door Coordinator",
   "categoryPath": [
-    "panic-exit-devices"
+    "hardware-accessories"
   ],
   "summary": "Zinc-plated iron door coordinator for double fire doors, surface mounted and screw fixed, controlling closing speed and force.",
   "specs": [
@@ -33,41 +33,41 @@
   ],
   "certifications": [],
   "heroImage": {
-    "src": "/images/products/dc01-panic-exit-device.webp",
+    "src": "/images/products/dc01-door-coordinator.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DC01 Panic Exit Device"
+    "label": "Hyland DC01 Door Coordinator"
   },
   "gallery": [
     {
-      "src": "/images/products/dc01-panic-exit-device-2.webp",
+      "src": "/images/products/dc01-door-coordinator-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DC01 Panic Exit Device, view 2"
+      "label": "Hyland DC01 Door Coordinator, view 2"
     },
     {
-      "src": "/images/products/dc01-panic-exit-device-3.webp",
+      "src": "/images/products/dc01-door-coordinator-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DC01 Panic Exit Device, view 3"
+      "label": "Hyland DC01 Door Coordinator, view 3"
     },
     {
-      "src": "/images/products/dc01-panic-exit-device-4.webp",
+      "src": "/images/products/dc01-door-coordinator-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DC01 Panic Exit Device, view 4"
+      "label": "Hyland DC01 Door Coordinator, view 4"
     },
     {
-      "src": "/images/products/dc01-panic-exit-device-5.webp",
+      "src": "/images/products/dc01-door-coordinator-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DC01 Panic Exit Device, view 5"
+      "label": "Hyland DC01 Door Coordinator, view 5"
     },
     {
-      "src": "/images/products/dc01-panic-exit-device-6.webp",
+      "src": "/images/products/dc01-door-coordinator-6.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DC01 Panic Exit Device, view 6"
+      "label": "Hyland DC01 Door Coordinator, view 6"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "DC01 Panic Exit Device for Fire Escape & Exit Doors | Canton Hyland",
-  "seoDescription": "DC01 panic exit device for fire escape & exit doors. Automatic closing / speed & force control. Factory direct, samples and quotation on request.",
+  "seoTitle": "DC01 Door Coordinator, China Factory Direct | Canton Hyland",
+  "seoDescription": "DC01 door coordinator. Automatic closing / speed & force control. Factory direct, samples and quotation on request.",
   "nameEs": "Selector de cierre",
   "specsEs": [
     {
@@ -88,17 +88,17 @@
     }
   ],
   "summaryEs": "Selector de cierre de hierro zincado para puertas cortafuego de dos hojas, de sobreponer y fijado con tornillos, que controla la velocidad y la fuerza de cierre.",
-  "seoTitleEs": "DC01 Barra antipánico para puertas de evacuación y salida | Canton Hyland",
-  "seoDescriptionEs": "DC01 barra antipánico para puertas de evacuación y salida. Hierro zincado. Directo de fábrica, muestras y cotización a pedido.",
+  "seoTitleEs": "DC01 Selector de cierre para puertas dobles, Hierro zincado | Canton Hyland",
+  "seoDescriptionEs": "DC01 selector de cierre para puertas dobles. Hierro zincado. Directo de fábrica, muestras y cotización a pedido.",
   "videos": [
     {
-      "src": "/videos/products/dc01-panic-exit-device.mp4",
+      "src": "/videos/products/dc01-door-coordinator.mp4",
       "poster": {
-        "src": "/images/products/dc01-panic-exit-device-video.webp",
+        "src": "/images/products/dc01-door-coordinator-video.webp",
         "ratio": "16 / 9",
-        "label": "DC01 Panic Exit Device, demonstration still"
+        "label": "DC01 Door Coordinator, demonstration still"
       },
-      "label": "DC01 Panic Exit Device, product demonstration",
+      "label": "DC01 Door Coordinator, product demonstration",
       "durationSeconds": 32,
       "uploadDate": "2026-09-04"
     }
@@ -133,12 +133,20 @@
       "value": "De sobrepor, fixado por parafusos"
     }
   ],
-  "seoTitlePt": "DC01 Barra antipânico para portas de evacuação e saída | Canton Hyland",
-  "seoDescriptionPt": "DC01 barra antipânico para portas de evacuação e saída. Direto da fábrica, amostras e orçamento sob consulta.",
+  "seoTitlePt": "DC01 Coordenador de fechamento para portas duplas | Canton Hyland",
+  "seoDescriptionPt": "DC01 coordenador de fechamento para portas duplas. Direto da fábrica, amostras e orçamento sob consulta.",
   "featuresPt": [
     "Estrutura de ferro de alta qualidade com tratamento de superfície zincado, oferecendo excelente resistência à corrosão e longa vida útil. Indicada para ambientes comerciais e industriais de uso prolongado."
   ],
   "featuresEs": [
     "Fabricada con una estructura de hierro de alta calidad y tratamiento superficial cincado, que le da una excelente resistencia a la corrosión y una larga vida útil. Apta para entornos comerciales e industriales de uso prolongado."
-  ]
+  ],
+  "positioning": {
+    "use": "Double Doors",
+    "useEs": "puertas dobles",
+    "usePt": "portas duplas",
+    "pitch": "Holds the active leaf open until the inactive leaf has closed, so a pair of doors shuts in the right order.",
+    "pitchEs": "Retiene la hoja activa hasta que cierra la pasiva, para que la puerta doble cierre en el orden correcto.",
+    "pitchPt": "Segura a folha ativa até a passiva fechar, para que a porta dupla feche na ordem certa."
+  }
 }

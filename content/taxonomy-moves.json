@@ -555,6 +555,27 @@
       "to": "piano-hinge",
       "category": "brass-steel-hinges",
       "why": "2026-09-25：规格行写明铁叶片、黄铜色表面，「Brass Piano Hinge」会被读成黄铜材质。工厂没有型号，按 modelTbc 惯例 model=名字、slug=名字。"
+    },
+    {
+      "from": "dsl02-panic-exit-device",
+      "to": "dsl02-door-coordinator",
+      "category": "panic-exit-devices",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-25 renamed from its wrong catalogue name (文案会话): Panic Exit Device → Door Coordinator; a double-door closing sequencer, not an exit device"
+    },
+    {
+      "from": "dc01-panic-exit-device",
+      "to": "dc01-door-coordinator",
+      "category": "panic-exit-devices",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-25 renamed from its wrong catalogue name (文案会话): Panic Exit Device → Door Coordinator; a double-door closing sequencer, not an exit device"
+    },
+    {
+      "from": "hy-0ss-lock-case",
+      "to": "hy-0ss-latch-guard",
+      "category": "lock-cases",
+      "toCategory": "hardware-accessories",
+      "why": "2026-09-25 renamed from its wrong catalogue name (文案会话): Lock Case → Latch Guard; an anti-pry plate for outswing doors, not a lock case"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "model": "DSL02",
-  "slug": "dsl02-panic-exit-device",
+  "slug": "dsl02-door-coordinator",
   "name": "Door Coordinator",
-  "series": "Panic Exit Device",
+  "series": "Door Coordinator",
   "categoryPath": [
-    "panic-exit-devices"
+    "hardware-accessories"
   ],
   "summary": "Stainless steel 304 door coordinator for double doors, with an adjustable closing force and nylon rollers.",
   "specs": [
@@ -41,36 +41,36 @@
   ],
   "certifications": [],
   "heroImage": {
-    "src": "/images/products/dsl02-panic-exit-device.webp",
+    "src": "/images/products/dsl02-door-coordinator.webp",
     "ratio": "1 / 1",
-    "label": "Hyland DSL02 panic exit device"
+    "label": "Hyland DSL02 Door Coordinator"
   },
   "gallery": [
     {
-      "src": "/images/products/dsl02-panic-exit-device-2.webp",
+      "src": "/images/products/dsl02-door-coordinator-2.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DSL02 panic exit device, view 2"
+      "label": "Hyland DSL02 Door Coordinator, view 2"
     },
     {
-      "src": "/images/products/dsl02-panic-exit-device-3.webp",
+      "src": "/images/products/dsl02-door-coordinator-3.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DSL02 panic exit device, view 3"
+      "label": "Hyland DSL02 Door Coordinator, view 3"
     },
     {
-      "src": "/images/products/dsl02-panic-exit-device-4.webp",
+      "src": "/images/products/dsl02-door-coordinator-4.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DSL02 panic exit device, view 4"
+      "label": "Hyland DSL02 Door Coordinator, view 4"
     },
     {
-      "src": "/images/products/dsl02-panic-exit-device-5.webp",
+      "src": "/images/products/dsl02-door-coordinator-5.webp",
       "ratio": "1 / 1",
-      "label": "Hyland DSL02 panic exit device, view 5"
+      "label": "Hyland DSL02 Door Coordinator, view 5"
     }
   ],
   "attachmentIds": [],
   "relatedModels": [],
-  "seoTitle": "DSL02 Panic Exit Device for Fire Escape & Exit Doors | Canton Hyland",
-  "seoDescription": "DSL02 panic exit device for fire escape & exit doors. Stainless steel 304, Automatic Door Sequencing.",
+  "seoTitle": "DSL02 Door Coordinator, Stainless Steel 304 | Canton Hyland",
+  "seoDescription": "DSL02 door coordinator. Stainless steel 304, Automatic Door Sequencing. Factory direct, samples and quotation on request.",
   "nameEs": "Selector de cierre",
   "specsEs": [
     {
@@ -99,8 +99,8 @@
     }
   ],
   "summaryEs": "Selector de cierre de acero inoxidable 304 para puertas de dos hojas, con fuerza de cierre regulable y rodillos de nailon.",
-  "seoTitleEs": "DSL02 Barra antipánico para puertas de evacuación y salida | Canton Hyland",
-  "seoDescriptionEs": "DSL02 barra antipánico para puertas de evacuación y salida. Acero inoxidable 304. Directo de fábrica, muestras y cotización a pedido.",
+  "seoTitleEs": "DSL02 Selector de cierre para puertas dobles | Canton Hyland",
+  "seoDescriptionEs": "DSL02 selector de cierre para puertas dobles. Acero inoxidable 304. Directo de fábrica, muestras y cotización a pedido.",
   "summarySource": "https://stahlock.com/index.php?id=2422",
   "features": [
     "This double-door coordinator is designed for fire-rated and commercial double-door systems.",
@@ -143,8 +143,8 @@
       "value": "Náilon"
     }
   ],
-  "seoTitlePt": "DSL02 Barra antipânico para portas de evacuação e saída | Canton Hyland",
-  "seoDescriptionPt": "DSL02 barra antipânico para portas de evacuação e saída. Aço inoxidável 304. Direto da fábrica, amostras e orçamento sob consulta.",
+  "seoTitlePt": "DSL02 Coordenador de fechamento para portas duplas | Canton Hyland",
+  "seoDescriptionPt": "DSL02 coordenador de fechamento para portas duplas. Aço inoxidável 304. Direto da fábrica, amostras e orçamento sob consulta.",
   "featuresPt": [
     "Este coordenador foi projetado para sistemas de porta dupla corta-fogo e comerciais.",
     "Em aço inoxidável 304 durável, faz o sequenciamento automático das folhas de forma suave, estável e silenciosa.",
@@ -156,5 +156,13 @@
     "Fabricado en acero inoxidable 304 duradero, ordena el cierre de forma automática, suave, estable y silenciosa.",
     "El mecanismo de muelle de precisión y el tornillo de tensión regulable permiten controlar la fuerza de cierre, mientras que el rodillo de nailon reduce el desgaste y alarga la vida útil.",
     "Ideal para edificios comerciales, hospitales, colegios y otras aplicaciones de mucho tránsito. Hay servicios de personalización OEM y ODM disponibles."
-  ]
+  ],
+  "positioning": {
+    "use": "Double Doors",
+    "useEs": "puertas dobles",
+    "usePt": "portas duplas",
+    "pitch": "Holds the active leaf open until the inactive leaf has closed, so a pair of doors shuts in the right order.",
+    "pitchEs": "Retiene la hoja activa hasta que cierra la pasiva, para que la puerta doble cierre en el orden correcto.",
+    "pitchPt": "Segura a folha ativa até a passiva fechar, para que a porta dupla feche na ordem certa."
+  }
 }

@@ -11838,8 +11838,8 @@
     "seoTitle": "D103 AC Riegelschlösser | Canton Hyland",
     "seoDescription": "D103 AC Riegelschlösser. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
-  "dc01-panic-exit-device": {
-    "name": "Panikverschluss",
+  "dc01-door-coordinator": {
+    "name": "Schließfolgeregler",
     "features": [
       "Stabile Eisenkonstruktion mit verzinkter Oberfläche – sehr korrosionsbeständig und langlebig. Für den Dauereinsatz in Gewerbe und Industrie geeignet."
     ],
@@ -11862,8 +11862,8 @@
       }
     ],
     "summary": "Schließfolgeregler aus verzinktem Eisen für zweiflügelige Feuerschutztüren, aufliegend montiert und verschraubt; regelt Schließgeschwindigkeit und Schließkraft.",
-    "seoTitle": "DC01 Panikverschluss | Canton Hyland",
-    "seoDescription": "DC01 Panikverschluss. Direkt ab Werk, Muster und Angebot auf Anfrage."
+    "seoTitle": "DC01 Schließfolgeregler | Canton Hyland",
+    "seoDescription": "DC01 Schließfolgeregler. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "dc02-door-coordinator": {
     "name": "Schließfolgeregler",
@@ -12122,8 +12122,8 @@
     "seoTitle": "DS09 Türstopper, 42mm, Zinklegierung | Canton Hyland",
     "seoDescription": "DS09 Türstopper: Zinklegierung, 42mm. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
-  "dsl02-panic-exit-device": {
-    "name": "Panikverschluss",
+  "dsl02-door-coordinator": {
+    "name": "Schließfolgeregler",
     "features": [
       "Dieser Schließfolgeregler ist für zweiflügelige Feuerschutz- und Objekttüren ausgelegt.",
       "Aus robustem Edelstahl 304 gefertigt, regelt er die Schließfolge automatisch – leichtgängig, stabil und leise.",
@@ -12157,8 +12157,8 @@
       }
     ],
     "summary": "Schließfolgeregler aus Edelstahl 304 für zweiflügelige Türen, mit einstellbarer Schließkraft und Nylonrollen.",
-    "seoTitle": "DSL02 Panikverschluss, Edelstahl 304 | Canton Hyland",
-    "seoDescription": "DSL02 Panikverschluss: Edelstahl 304. Direkt ab Werk, Muster und Angebot auf Anfrage."
+    "seoTitle": "DSL02 Schließfolgeregler, Edelstahl 304 | Canton Hyland",
+    "seoDescription": "DSL02 Schließfolgeregler: Edelstahl 304. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "dust-proof-01-door-viewer": {
     "name": "Türspion",
@@ -13822,60 +13822,6 @@
     ],
     "seoTitle": "H102 Nachtriegel und Aufschraubschloss, Zinklegierung | Canton Hyland",
     "seoDescription": "H102 Nachtriegel und Aufschraubschloss: Zinklegierung. Direkt ab Werk, Muster und Angebot auf Anfrage."
-  },
-  "hy-0ss-lock-case": {
-    "name": "Schlosskasten",
-    "features": [
-      "Fallenschutz aus Edelstahl mit matter Oberfläche – stabil, korrosionsbeständig und langlebig",
-      "Aufhebelschutz-Platte: verstärkt den Fallenbereich gegen gewaltsames Eindringen und erhöht die Türsicherheit",
-      "Deckt die Falle vollständig ab: Die Falle ist nicht erreichbar, die Tür lässt sich nur schwer aufhebeln",
-      "Robuste Ausführung: dickes, massives Material schützt Wohnungs- und Objekttüren zuverlässig",
-      "Einfache Montage: schnell angeschraubt, passend für die meisten nach außen öffnenden Türen, ohne Spezialwerkzeug",
-      "Inklusive Schrauben aus Edelstahl 304 für eine feste, dauerhafte Befestigung",
-      "Für den australischen Markt entwickelt, abgestimmt auf nach außen öffnende Türsysteme",
-      "Vielseitig einsetzbar: ideal für die Türsicherung in Wohnungen, Büros und Objekten"
-    ],
-    "specs": [
-      {
-        "label": "Material",
-        "value": "Edelstahl 304"
-      },
-      {
-        "label": "Finish",
-        "value": "Edelstahl matt"
-      },
-      {
-        "label": "Color",
-        "value": "Edelstahl"
-      },
-      {
-        "label": "Door Type",
-        "value": "Nach außen öffnende Türen"
-      },
-      {
-        "label": "Function",
-        "value": "Aufhebelschutz"
-      },
-      {
-        "label": "Installation",
-        "value": "Verschraubung"
-      },
-      {
-        "label": "Application",
-        "value": "Wohn- und Objektbereich"
-      },
-      {
-        "label": "Accessories",
-        "value": "Schrauben aus Edelstahl 304"
-      },
-      {
-        "label": "Design",
-        "value": "Vollständige Fallenabdeckung"
-      }
-    ],
-    "summary": "Fallenschutz aus Edelstahl 304 für nach außen öffnende Türen: deckt die Falle gegen Aufhebeln ab; für den australischen Markt gefertigt und mit Schrauben aus Edelstahl 304 geliefert.",
-    "seoTitle": "HY-0SS Schlosskasten, Edelstahl 304 | Canton Hyland",
-    "seoDescription": "HY-0SS Schlosskasten: Edelstahl 304. Direkt ab Werk, Muster und Angebot auf Anfrage."
   },
   "hy006dk-lock-case": {
     "name": "Schlosskasten",

@@ -427,6 +427,8 @@ export const OPTION_NOTES: Record<string, string> = {
     "The same pattern, built for a residential opening rather than a corridor in constant use.",
   "commercial-locks":
     "Cylindrical locks in the function sets a commercial specification asks for — classroom, storeroom, entrance, passage.",
+  "armoured-lock-covers":
+    "A steel plate over the latch on the outside of the door, so the gap cannot be worked open with a pry bar.",
   "door-viewers": "A wide-angle lens through the door leaf, so the person inside can see the caller without opening.",
   "door-flush-bolts":
     "Holds the inactive leaf of a pair shut, let in flush so nothing stands proud of the edge.",
@@ -499,6 +501,8 @@ export const OPTION_NOTES_ES: Record<string, string> = {
     "El mismo modelo, dimensionado para una puerta de vivienda y no para un pasillo en uso constante.",
   "commercial-locks":
     "Cerraduras cilíndricas en las funciones que pide una especificación comercial — aula, almacén, acceso, paso libre.",
+  "armoured-lock-covers":
+    "Una placa de acero sobre el pestillo, por fuera de la puerta, para que la holgura no se pueda forzar con una palanca.",
   "door-viewers": "Una lente gran angular a través de la hoja, para ver quién llama sin abrir.",
   "door-flush-bolts":
     "Mantiene cerrada la hoja pasiva de una puerta de dos hojas, embutido a haces para que nada sobresalga del canto.",
@@ -620,6 +624,8 @@ export const OPTION_NOTES_PT: Record<string, string> = {
     "Ferrolhos embutidos na borda da folha passiva, para que a folha ativa tenha algo firme contra o que travar.",
   "door-stoppers":
     "Batedores de piso e de parede. Escolha pela projeção da maçaneta, não pela porta.",
+  "armoured-lock-covers":
+    "Uma placa de aço sobre a fechadura, do lado de fora da porta, para que a folga não possa ser forçada com um pé de cabra.",
   "door-viewers":
     "Olhos mágicos, com o ângulo de visão e a faixa de espessura de porta.",
   "indicators":
