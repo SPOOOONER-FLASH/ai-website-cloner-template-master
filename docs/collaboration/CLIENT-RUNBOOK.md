@@ -227,6 +227,34 @@ HTML 里有这段代码、加载完 gtm.js 确实下载了、dataLayer 里有 gt
 
 **Signals 页那 535 条「违规」不用管**：全是 Meta 的爬虫在抓 `/pt/…/__next._tree.txt` 这类网站内部数据文件，robots.txt 里我们写了不许抓，它不守。那些文件对 SEO 没有价值，也不影响网站。
 
+### ⑦ Bing 站长工具：重新提交 sitemap —— 3 分钟，等我说「sitemap 已发布」之后（2026-09-26）
+
+**为什么**：你 09-26 导出的 Bing SEO 报告里，「Important pages missing in sitemaps」那 5 页（5 篇指南）其实**都在** sitemap 里；
+「description missing」那 2 页是旧站的 index.php 网址，线上都在正确 301（aid=397 → X2，tid=23 → 产品目录），Bing 重新抓过就会消失。
+真正的问题是 sitemap.xml 有 **14 MB**（七语种上线后 7,010 个网址，每个带 10 个语种互指），Bing 读不完。
+现在改成：sitemap.xml 只放英文网址，每个语种各有一份 /es/sitemap.xml、/fr/sitemap.xml ……（都已写进 robots.txt）。
+
+**步骤**：https://www.bing.com/webmasters → 选 cantonlock.com → 左侧 **Sitemaps** → 右上 **Submit sitemap** →
+依次粘贴下面这些，每条点一次 Submit：
+
+```
+https://cantonlock.com/sitemap.xml
+https://cantonlock.com/es/sitemap.xml
+https://cantonlock.com/pt/sitemap.xml
+https://cantonlock.com/fr/sitemap.xml
+https://cantonlock.com/de/sitemap.xml
+https://cantonlock.com/ja/sitemap.xml
+https://cantonlock.com/ko/sitemap.xml
+https://cantonlock.com/tr/sitemap.xml
+https://cantonlock.com/ru/sitemap.xml
+https://cantonlock.com/ar/sitemap.xml
+```
+
+**成功的样子**：列表里每条状态变成 Success，「URLs discovered」有数字。
+然后回到 SEO 报告，点 **Scan now** 重新扫一次。
+**Inbound links from high-quality domains**（第三条）不是网站代码能修的：要靠展会、行业目录、客户网站链回来，
+docs/research/BACKLINK_DEEPLINKS.md 里有清单。
+
 ---
 
 ## 只有这两件是常规动作

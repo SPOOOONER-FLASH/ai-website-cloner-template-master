@@ -15,7 +15,7 @@ test("newsletter signup stays compatible with the static export and requires con
 test("newsletter has a crawlable route and the footer links directly to it", () => {
   const page = readFileSync("src/app/(en)/newsletter/page.tsx", "utf8");
   const footer = readFileSync("src/components/site/SiteFooter.tsx", "utf8");
-  const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
+  const sitemap = readFileSync("src/lib/site-sitemap.ts", "utf8");
 
   assert.match(page, /NewsletterForm/);
   assert.match(page, /pageMetadata/);

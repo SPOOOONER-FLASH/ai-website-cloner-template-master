@@ -679,7 +679,19 @@ export function auditBuild({ outDir }) {
   const robotsPath = resolve(absoluteOut, "robots.txt");
   const sitemapPath = resolve(absoluteOut, "sitemap.xml");
   const robots = parseRobots(existsSync(robotsPath) ? readFileSync(robotsPath, "utf8") : "");
-  const sitemapEntries = parseSitemap(existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "");
+  /*
+    Every sitemap robots.txt declares, not only /sitemap.xml — that is how a crawler reads them.
+    Since 2026-09-26 /sitemap.xml carries English only and each locale has /<code>/sitemap.xml.
+  */
+  const declared = robots.sitemaps
+    .map((url) => { try { return new URL(url).pathname; } catch { return null; } })
+    .filter(Boolean)
+    .map((path) => resolve(absoluteOut, `.${path}`))
+    .filter((file) => existsSync(file));
+  const sitemapFiles = declared.length ? declared : [sitemapPath];
+  const sitemapEntries = sitemapFiles.flatMap((file) =>
+    parseSitemap(existsSync(file) ? readFileSync(file, "utf8") : ""),
+  );
   const sitemapUrls = sitemapEntries.map(({ loc }) => loc);
   const sitemapCounts = new Map();
   for (const url of sitemapUrls) {

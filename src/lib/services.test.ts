@@ -9,7 +9,7 @@ test("the service hub is crawlable and reachable without crowding the header", (
     header: Array<{ href: string }>;
     footer: Array<{ href: string }>;
   };
-  const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
+  const sitemap = readFileSync("src/lib/site-sitemap.ts", "utf8");
 
   // OEM / private label leads (client steer 2026-09-24), in the copy and the metadata.
   // 2026-09-25 the title took "custom" and "bespoke ironmongery" (client: 开模定制 is the specialty,

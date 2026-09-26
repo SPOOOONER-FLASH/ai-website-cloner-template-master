@@ -66,4 +66,6 @@
 | 59 | HY-0SS 七语种译文（多语言会话本地已合入，排在指南第二批之后推送）推上来后，重跑 hy-0ss-latch-guard 的七语种标题 | 等待（多语言会话推送） |
 | 60 | 首页排版崩（甲方 09-25）：M1 的 compactNavigation display:block 覆盖 .layout 网格，1376–1599px 导航无边距；改 grid | 09-26 完成（线上实测） |
 | 61 | 甲方在 Search Console 视频索引报告点「验证修正」，观看页被抓取后复查已编入索引数 | 待甲方 |
+| 62 | Bing SEO 报告（09-26）：5 篇指南「不在 sitemap」实际在（14 MB sitemap 读不完）→ /sitemap.xml 只放英文，语种 sitemap 各自一份；audit-seo 改读 robots.txt 声明的全部 sitemap；2 个 index.php 缺 description 实为 301；修 M8 留下的 3 个测试 | 09-26 完成（源码；待发布） |
+| 63 | 甲方在 Bing 提交 10 个 sitemap 并重扫（手册 ⑦） | 待甲方（发布后） |
 | 18 | 10-08 前后复查改过标题的页面点击率 | 等待（日期未到） |

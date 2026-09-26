@@ -135,6 +135,8 @@ test("every Portuguese-only route is declared as one", () => {
   const ptRoutes = fs
     .readdirSync(path.join(process.cwd(), "src/app/pt"), { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && !entry.name.startsWith("[") && !entry.name.startsWith("("))
+    /* sitemap.xml/ and friends are file routes; the English counterpart is src/app/sitemap.ts. */
+    .filter((entry) => !entry.name.includes("."))
     .map((entry) => entry.name);
 
   const undeclared = ptRoutes.filter((route) => {
