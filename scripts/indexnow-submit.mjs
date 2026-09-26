@@ -30,7 +30,7 @@
  *
  * Run: node scripts/indexnow-submit.mjs [--dry] [--limit N] [--only <pattern>]
  */
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 
 const KEY = "6bb09b9b67d0e605a292835469627988";
 const HOST = "cantonlock.com";
@@ -50,9 +50,18 @@ if (onlyFlag > -1 && !only) {
   process.exit(1);
 }
 
-const all = [...readFileSync(SITEMAP, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)]
-  .map((m) => m[1])
-  .filter((u) => u.startsWith(`https://${HOST}/`));
+/*
+  Every sitemap robots.txt declares, not only /sitemap.xml. Since 2026-09-26 /sitemap.xml
+  carries the English URLs only (it was 14 MB and Bing stopped reading it) and each locale
+  has its own /<code>/sitemap.xml; reading the one file submitted 881 of ~7,000 URLs.
+*/
+const declared = existsSync("out/robots.txt")
+  ? [...readFileSync("out/robots.txt", "utf8").matchAll(/^Sitemap:\s*https?:\/\/[^/]+\/(\S+)$/gim)].map((m) => `out/${m[1]}`)
+  : [];
+const sitemaps = [...new Set([SITEMAP, ...declared])].filter((f) => existsSync(f));
+const all = [
+  ...new Set(sitemaps.flatMap((f) => [...readFileSync(f, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]))),
+].filter((u) => u.startsWith(`https://${HOST}/`) && !u.endsWith(".xml"));
 
 if (!all.length) {
   console.error(`no URLs in ${SITEMAP} — run npm run deploy:prep first`);
@@ -70,7 +79,7 @@ if (!urls.length) {
 
 if (only) console.log(`--only ${only}: ${urls.length} of ${all.length} URLs`);
 
-console.log(`${urls.length} URLs from ${SITEMAP}`);
+console.log(`${urls.length} URLs from ${sitemaps.length} sitemap(s)`);
 
 if (dry) {
   console.log("--dry: nothing submitted");
